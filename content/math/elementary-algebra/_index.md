@@ -55,8 +55,3 @@ This book is adapted from **OpenStax Elementary Algebra 2e**, used under the
 terms of its **Creative Commons Attribution-NonCommercial-ShareAlike
 (CC BY-NC-SA 4.0)** license. Reviewers who vet or adapt this material are
 credited in the `reviewed_by` field of each page.
-
-{{< callout type="warning" >}}
-  This book is an early scaffold. The overview and chapter outline are in
-  place; the chapters and their lesson content are being written next.
-{{< /callout >}}

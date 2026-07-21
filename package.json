@@ -30,6 +30,6 @@
     "mathlive": "0.110.0"
   },
   "devDependencies": {
-    "pagefind": "1.1.0"
+    "pagefind": "1.5.2"
   }
 }

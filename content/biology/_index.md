@@ -6,8 +6,6 @@ sidebar:
   hide: true
 ---
 
-# Biology
-
 No books on this shelf yet. The library is starting with mathematics, and
 biology is one of the first sciences planned after that.
 
