@@ -1,0 +1,41 @@
+{{- /*
+  multiplechoice — single-answer question with instant feedback. Hugo port of
+  <MultipleChoice>. Options are rendered at BUILD time; the <multiple-choice>
+  Web Component only wires click-grading (no heavy deps).
+
+  Two modes:
+    TEXT  (default): inner content = one option per line; `answer` = the correct
+                     option string (matched verbatim, delimiters and all).
+    GRAPH (mode="graph"): inner content = prerendered <svg> options separated by
+                     a line `===OPT===`; `answerIndex` = 0-based correct option.
+
+  Params: question (req), hint, answer | (mode + answerIndex).
+*/ -}}
+{{- $question := .Get "question" -}}
+{{- $mode := .Get "mode" | default "text" -}}
+{{- .Page.Store.Set "hasMath" true -}}
+{{- .Page.Store.Set "hasInteractive" true -}}
+<multiple-choice data-mode="{{ $mode }}"
+  {{- if eq $mode "graph" }} data-answer-index="{{ .Get "answerIndex" }}"{{ else }} data-answer="{{ .Get "answer" }}"{{ end }}>
+  <div class="ap-mc">
+    <p class="ap-mc-question">{{ partial "mathtext" $question }}</p>
+    <div class="ap-mc-options" role="group" aria-label="Answer choices">
+      {{- if eq $mode "graph" -}}
+        {{- range $i, $svg := split (trim .Inner "\n") "===OPT===" -}}
+          <button type="button" class="ap-mc-option ap-mc-option-graph" data-index="{{ $i }}">{{ $svg | safeHTML }}</button>
+        {{- end -}}
+      {{- else -}}
+        {{- range (split (trim .Inner "\n") "\n") -}}
+          {{- $opt := trim . " " -}}
+          {{- with $opt -}}
+            <button type="button" class="ap-mc-option" data-value="{{ . }}">{{ partial "mathtext" . }}</button>
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    </div>
+    <p class="ap-mc-feedback" role="status" aria-live="polite"></p>
+    {{- with .Get "hint" }}
+      <template data-slot="hint">{{ partial "mathtext" . }}</template>
+    {{- end }}
+  </div>
+</multiple-choice>

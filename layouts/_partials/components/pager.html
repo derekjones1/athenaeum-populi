@@ -1,0 +1,77 @@
+{{- /*
+  Athenaeum override — BOOK-LINEAR prev/next pager.
+
+  Hextra's default pager uses .PrevInSection/.NextInSection, which stops at
+  chapter boundaries. The old Nextra site paged linearly across the WHOLE book
+  (last section of a chapter → next chapter's first section). This rebuilds the
+  book's reading order (book cover → each chapter cover → its sections → next
+  chapter …, with book-level knowledge-checks interleaved by weight) and walks
+  that flat list. Labels come from utils/title, same as the theme.
+*/ -}}
+{{- $page := . -}}
+{{- $subject := $page.FirstSection -}}
+
+{{- /* the current book = the ancestor (or self) whose parent is the subject */ -}}
+{{- $book := "" -}}
+{{- range $p := ($page.Ancestors | append $page) -}}
+  {{- with $p.Parent -}}
+    {{- if eq .RelPermalink $subject.RelPermalink -}}{{- $book = $p -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $book -}}
+  {{- /* flatten the book into reading order via composite weight keys:
+         chapter -> "00003", its section -> "00003.00002", book-level KC ->
+         "00007". Book cover sorts first at "00000". */ -}}
+  {{- $flat := slice (dict "key" "00000" "page" $book) -}}
+  {{- range $child := sort (union $book.Sections $book.RegularPages) "Weight" -}}
+    {{- if $child.IsSection -}}
+      {{- $ck := printf "%05d" $child.Weight -}}
+      {{- $flat = $flat | append (dict "key" $ck "page" $child) -}}
+      {{- range $sec := sort (union $child.RegularPages $child.Sections) "Weight" -}}
+        {{- $flat = $flat | append (dict "key" (printf "%s.%05d" $ck $sec.Weight) "page" $sec) -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $flat = $flat | append (dict "key" (printf "%05d" $child.Weight) "page" $child) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $flat = sort $flat "key" -}}
+
+  {{- $idx := -1 -}}
+  {{- range $i, $e := $flat -}}
+    {{- if eq $e.page.RelPermalink $page.RelPermalink -}}{{- $idx = $i -}}{{- end -}}
+  {{- end -}}
+  {{- $prev := "" -}}
+  {{- $next := "" -}}
+  {{- if ge $idx 0 -}}
+    {{- if gt $idx 0 -}}{{- $prev = (index $flat (sub $idx 1)).page -}}{{- end -}}
+    {{- if lt $idx (sub (len $flat) 1) -}}{{- $next = (index $flat (add $idx 1)).page -}}{{- end -}}
+  {{- end -}}
+
+  {{- if or $prev $next -}}
+    <div class="hx:mb-8 hx:flex hx:items-center hx:border-t hx:pt-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-neutral-400 hx:dark:contrast-more:border-neutral-400 hx:print:hidden">
+      {{- with $prev -}}
+        {{- $linkTitle := partial "utils/title" . -}}
+        <a
+          href="{{ .RelPermalink }}"
+          title="{{ $linkTitle }}"
+          class="hx:flex hx:max-w-[50%] hx:items-center hx:gap-1 hx:py-4 hx:text-base hx:font-medium hx:text-gray-600 hx:transition-colors [word-break:break-word] hx:hover:text-primary-600 hx:dark:text-gray-300 hx:md:text-lg hx:ltr:pr-4 hx:rtl:pl-4"
+        >
+          {{- partial "utils/icon.html" (dict "name" "chevron-right" "attributes" "class=\"hx:inline hx:h-5 hx:shrink-0 hx:ltr:rotate-180\"") -}}
+          {{- $linkTitle -}}
+        </a>
+      {{- end -}}
+      {{- with $next -}}
+        {{- $linkTitle := partial "utils/title" . -}}
+        <a
+          href="{{ .RelPermalink }}"
+          title="{{ $linkTitle }}"
+          class="hx:flex hx:max-w-[50%] hx:items-center hx:gap-1 hx:py-4 hx:text-base hx:font-medium hx:text-gray-600 hx:transition-colors [word-break:break-word] hx:hover:text-primary-600 hx:dark:text-gray-300 hx:md:text-lg hx:ltr:ml-auto hx:ltr:pl-4 hx:ltr:text-right hx:rtl:mr-auto hx:rtl:pr-4 hx:rtl:text-left"
+        >
+          {{- $linkTitle -}}
+          {{- partial "utils/icon.html" (dict "name" "chevron-right" "attributes" "class=\"hx:inline hx:h-5 hx:shrink-0 hx:rtl:-rotate-180\"") -}}
+        </a>
+      {{- end -}}
+    </div>
+  {{- end -}}
+{{- end -}}

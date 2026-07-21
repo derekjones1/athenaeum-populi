@@ -1,0 +1,109 @@
+# Athenaeum Populi — Hugo site config (Phase 0 scaffold)
+#
+# Pinned Hugo: extended v0.164.0 (see MIGRATION-STATUS.md "Hugo version").
+# Theme: Hextra v0.12.3, VENDORED into themes/hextra (classic theme mode,
+# NOT Hugo Modules — no Go toolchain). Do not switch to module imports.
+#
+# Do NOT upgrade Hugo or Hextra mid-migration (MIGRATION.md hard rule 5).
+
+baseURL = "https://athenaeumpopuli.org/"
+title = "Athenaeum Populi"
+theme = "hextra"
+enableInlineShortcodes = true
+enableRobotsTXT = true
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+# Classic theme mode still needs a declared minimum; matches Hextra's floor.
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.146.0"
+
+# Per-book RSS/markdown outputs come later; keep minimal for the scaffold.
+[outputs]
+  home = ["html"]
+  section = ["html"]
+  page = ["html"]
+
+# --- Markup -----------------------------------------------------------------
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true          # required: content contains raw HTML / component markup
+  [markup.goldmark.extensions.passthrough]
+    enable = true
+    # The corpus uses $...$ inline and $$...$$ block (KaTeX/Nextra defaults).
+    # We MUST accept `$` inline for parity, plus the \(...\) / \[...\] forms.
+    [markup.goldmark.extensions.passthrough.delimiters]
+      block  = [['$$', '$$'], ['\[', '\]']]
+      inline = [['$', '$'],   ['\(', '\)']]
+
+# --- Params -----------------------------------------------------------------
+[params]
+  [params.math]
+    enable = true
+    engine = "katex"       # KaTeX both ways; do not switch to mathjax.
+    # CRITICAL: the build-time path (transform.ToMath) is rendered by the KaTeX
+    # embedded IN THE HUGO BINARY — v0.16.22 for Hugo 0.164.0. The CSS MUST match
+    # that exact version or fractions/roots mis-position. Hextra otherwise loads
+    # katex@latest (0.18.1), whose class contract differs → broken layout.
+    # This pin is dictated by Hugo, not a free choice; revisit only if Hugo is
+    # (deliberately) upgraded. Hextra self-hosts this CSS + fonts at build time.
+    [params.math.katex]
+      # Vendored under static/katex so clean/offline builds never depend on a CDN.
+      base = "/katex"
+    # BENCHMARK TOGGLE (MIGRATION.md Phase 1 math decision):
+    #   "build"  -> build-time KaTeX via transform.ToMath (flat page loads)
+    #   "client" -> ship raw delimiters, render with KaTeX auto-render in browser
+    # Override on the CLI without editing this file:
+    #   HUGO_PARAMS_MATH_RENDER=client hugo
+    render = "build"
+
+  [params.theme]
+    default = "system"
+    displayToggle = true
+
+  # Load our vanilla Web Components bundle (esbuild via Hugo Pipes js.Build).
+  # Phase 0 ships a trivial <ap-hello> element to prove the pipeline.
+  [params.components]
+    enable = true
+
+  [params.search]
+    enable = true
+    type = "pagefind"
+
+# Top navbar = subject categories, mirroring the old site's root _meta.js
+# (Home, Math, Biology, Chemistry, Physics, About). The logo also links home;
+# Home is listed explicitly to match the old nav.
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Math"
+    pageRef = "/math"
+    weight = 2
+  [[menu.main]]
+    name = "Biology"
+    pageRef = "/biology"
+    weight = 3
+  [[menu.main]]
+    name = "Chemistry"
+    pageRef = "/chemistry"
+    weight = 4
+  [[menu.main]]
+    name = "Physics"
+    pageRef = "/physics"
+    weight = 5
+  [[menu.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 6
+  [[menu.main]]
+    name = "Search"
+    weight = 7
+    [menu.main.params]
+      type = "search"

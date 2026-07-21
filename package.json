@@ -1,0 +1,35 @@
+{
+  "name": "athenaeum-populi-hugo",
+  "private": true,
+  "description": "Hugo build of Athenaeum Populi. Dependency list is deliberately tiny — this migration exists to cure dependency churn (MIGRATION.md). Do NOT add deps beyond these without recording why in MIGRATION-STATUS.",
+  "scripts": {
+    "build": "npm run build:hugo && npm run search:index",
+    "build:hugo": "hugo --gc --minify --cleanDestinationDir --cacheDir \"$(pwd)/.hugo_cache\"",
+    "search:index": "pagefind --site public --root-selector 'main#content' --exclude-selectors '.katex-mathml,svg,template'",
+    "check:routes": "node tools/check-route-parity.mjs",
+    "check:links": "node tools/check-links.mjs",
+    "check:search": "node tools/check-pagefind.mjs",
+    "audit:build": "node tools/audit-build.mjs",
+    "check:build": "npm run check:routes && npm run check:links && npm run check:search && npm run audit:build",
+    "ci": "npm test && npm run build && npm run check:build",
+    "preview": "npm run build:hugo && pagefind --site public --root-selector 'main#content' --exclude-selectors '.katex-mathml,svg,template' --serve",
+    "build:client-math": "HUGO_PARAMS_MATH_RENDER=client hugo --gc --minify --cleanDestinationDir --cacheDir \"$(pwd)/.hugo_cache\"",
+    "serve": "hugo server --cacheDir \"$(pwd)/.hugo_cache\"",
+    "test": "node assets/js/lib/check-answer.test.mjs && node assets/js/lib/check-graph.test.mjs && npm run validate && npm run lint",
+    "lint": "node tools/lint-all.mjs content",
+    "validate": "node tools/validate-content.mjs content/math/prealgebra 2",
+    "verify-section": "node tools/verify-section.mjs",
+    "convert-book": "node tools/convert-book.mjs",
+    "verify-conversion": "node tools/verify-conversion.mjs"
+  },
+  "//deps": "esbuild is NOT listed: Hugo Pipes js.Build embeds esbuild. katex/mathlive/pagefind are pinned: KaTeX assets are vendored for offline builds, MathLive supplies math input, and Pagefind builds one global site-wide search index.",
+  "//versions": "katex is pinned to 0.16.22 because that is the KaTeX embedded in the Hugo binary (0.164.0) that renders build-time math via transform.ToMath — the CSS/JS must match the HTML that engine emits, or fractions/roots mis-position. This overrides the old site's 0.16.47. mathlive + @cortex-js/compute-engine match the old site (parent package.json) EXACTLY — the grading equivalence ladder is compute-engine-version-sensitive. Do not upgrade mid-migration.",
+  "dependencies": {
+    "@cortex-js/compute-engine": "0.58.0",
+    "katex": "0.16.22",
+    "mathlive": "0.110.0"
+  },
+  "devDependencies": {
+    "pagefind": "1.1.0"
+  }
+}

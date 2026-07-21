@@ -1,0 +1,66 @@
+{{- /*
+  Athenaeum Populi — custom head-end hook (Hextra calls this at </head>).
+  Two jobs:
+    1. Client-side KaTeX renderer, ONLY when math.render == "client" and the
+       page actually has math. (Build-time mode needs no JS; Hextra already
+       loaded the KaTeX CSS.)
+    2. The interactive Web Components bundle, built from assets/js/main.js by
+       Hugo Pipes js.Build (esbuild). Phase 0 ships a trivial <ap-hello>.
+*/ -}}
+
+{{- /* 1. Client-side KaTeX (benchmark path) */ -}}
+{{- if .Page.Store.Get "mathClient" -}}
+  {{- /* MUST match the CSS version pinned in hugo.toml (params.math.katex.base),
+         which is dictated by Hugo's embedded KaTeX (0.16.22 for Hugo 0.164.0):
+         the shared katex CSS is loaded once, so the client JS has to agree with
+         it. Phase 1 will self-host this instead of using jsdelivr. */ -}}
+  {{- $katexVer := "0.16.22" -}}
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@{{ $katexVer }}/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@{{ $katexVer }}/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '\\[', right: '\\]', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false}
+      ],
+      throwOnError: false
+    });"></script>
+{{- end -}}
+
+{{- /* 2. Interactive Web Components (esbuild via Hugo Pipes js.Build).
+       Two bundles:
+         - fillin-engine.js : MathLive + Compute Engine grader (~1.9 MB). Built
+           on its own; loaded at RUNTIME only on pages with a <fill-in>.
+         - main.js (components entry): tiny; registers the custom elements. The
+           engine's URL is injected via `params` (read as @params) so the entry
+           never bundles MathLive.
+       js.Build has no working `splitting` option, hence the two-bundle split. */ -}}
+{{- if site.Params.components.enable -}}
+  {{- $engineURL := "" -}}
+  {{- with resources.Get "js/fillin-engine.js" -}}
+    {{- $eopts := dict "minify" hugo.IsProduction "targetPath" "js/fillin-engine.js" "format" "esm" -}}
+    {{- with try (. | js.Build $eopts) -}}
+      {{- with .Err -}}{{- errorf "js.Build failed for fillin-engine: %s" . -}}
+      {{- else -}}{{- $engineURL = .Value.RelPermalink -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $graphplotURL := "" -}}
+  {{- with resources.Get "js/graphplot-engine.js" -}}
+    {{- $gopts := dict "minify" hugo.IsProduction "targetPath" "js/graphplot-engine.js" "format" "esm" -}}
+    {{- with try (. | js.Build $gopts) -}}
+      {{- with .Err -}}{{- errorf "js.Build failed for graphplot-engine: %s" . -}}
+      {{- else -}}{{- $graphplotURL = .Value.RelPermalink -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with resources.Get "js/main.js" -}}
+    {{- $opts := dict "minify" hugo.IsProduction "targetPath" "js/components.js" "format" "esm" "params" (dict "engineUrl" $engineURL "graphplotEngineUrl" $graphplotURL) -}}
+    {{- with try (. | js.Build $opts) -}}
+      {{- with .Err -}}
+        {{- errorf "js.Build failed for components bundle: %s" . -}}
+      {{- else -}}
+        <script type="module" src="{{ .Value.RelPermalink }}"></script>
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

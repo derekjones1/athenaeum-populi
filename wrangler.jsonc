@@ -1,0 +1,11 @@
+// Production Cloudflare Worker: static Hugo output only, with no Worker script.
+// GitHub Actions builds ./public and deploys this existing Worker on main.
+{
+  "name": "athenaeum-populi",
+  "compatibility_date": "2026-07-20",
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
