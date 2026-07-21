@@ -4,8 +4,6 @@ description: A free, open-source library of openly licensed textbooks with inter
 toc: false
 ---
 
-# Athenaeum Populi
-
 **Under Construction**
 
 ## Browse the library

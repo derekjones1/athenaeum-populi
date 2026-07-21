@@ -6,8 +6,6 @@ sidebar:
   hide: true
 ---
 
-# Chemistry
-
 No books on this shelf yet. The library is starting with mathematics, and
 chemistry is one of the first sciences planned after that.
 

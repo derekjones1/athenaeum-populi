@@ -6,8 +6,6 @@ sidebar:
   hide: true
 ---
 
-# Physics
-
 No books on this shelf yet. The library is starting with mathematics, and
 physics is one of the first sciences planned after that.
 
