@@ -5,9 +5,6 @@ source_chapter: "3"
 weight: 3
 ---
 
-**Figure 3.1.** This odd-looking headgear provides the user with a virtual
-world. (Credit: fill/Pixabay.)
-
 Imagine visiting a faraway city or even outer space from the comfort of your
 living room. It could be possible using virtual reality. This technology
 creates realistic images that make you feel as if you are truly immersed in

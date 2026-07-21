@@ -5,9 +5,6 @@ source_chapter: "2"
 weight: 2
 ---
 
-**Figure 2.1.** This drone is flying high in the sky while its pilot remains
-safely on the ground. (Credit: “Unsplash” / Pixabay.)
-
 Imagine being a pilot, but not just any pilot—a drone pilot. Drones, or
 unmanned aerial vehicles, are devices that can be flown remotely. They
 contain sensors that can relay information to a command center where the
