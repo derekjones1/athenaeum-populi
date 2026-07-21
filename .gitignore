@@ -1,0 +1,29 @@
+# Hugo build output & caches
+/public/
+/resources/_gen/
+.hugo_cache/
+.hugo_build.lock
+.wrangler/
+
+# Node (esbuild/katex/mathlive/pagefind land here when installed)
+/node_modules/
+.env*
+
+# Pagefind index (generated at build time)
+/public/pagefind/
+
+# Broken partial theme clone left by the sandbox mount (see MIGRATION-STATUS).
+# Derek: safe to `rm -rf themes/_hextra_broken` locally.
+/themes/_hextra_broken/
+
+# Phase 5 authoring-workflow demo (safe to delete; not part of the book)
+/content/authoring-demo.md
+
+# OS cruft
+.DS_Store
+
+# IDE-local project state
+.idea/
+/MIGRATION.md
+/MIGRATION-STATUS.md
+/docs/main-branch-promotion-checklist.md

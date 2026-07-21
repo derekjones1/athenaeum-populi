@@ -1,0 +1,37 @@
+{{- /*
+  mathtext — render a prop string that mixes prose and inline $...$ math,
+  the way MathText.jsx did on the old site. Used by component shortcodes
+  (fillin, later multiplechoice, …) for their question / hint / answerDisplay
+  text so the math is typeset at BUILD time (no flash of raw LaTeX, and it
+  works even in build-time math mode where no client KaTeX JS is present).
+
+  Rules (identical to MathText.jsx):
+    - `$...$` runs are rendered with KaTeX (inline mode).
+    - `\$` is a literal dollar sign (money), never a delimiter.
+
+  Call:  {{ partial "mathtext" "Simplify $\tfrac{3}{4}$ for \$5" }}
+  Returns trusted HTML.
+*/ -}}
+{{- $src := . -}}
+{{- $NUL := "\x00" -}}
+{{- /* protect escaped dollars so they can't pair as delimiters */ -}}
+{{- $protected := replace $src "\\$" $NUL -}}
+{{- $parts := split $protected "$" -}}
+{{- $sb := slice -}}
+{{- range $i, $p := $parts -}}
+  {{- if eq (mod $i 2) 1 -}}
+    {{- $tex := replace $p $NUL "\\$" -}}
+    {{- $opts := dict "throwOnError" false "output" "htmlAndMathml" "displayMode" false -}}
+    {{- with try (transform.ToMath $tex $opts) -}}
+      {{- with .Err -}}
+        {{- errorf "mathtext: KaTeX failed on %q: %s" $tex . -}}
+      {{- else -}}
+        {{- $sb = $sb | append (printf "%s" .Value) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $txt := replace $p $NUL "$" -}}
+    {{- $sb = $sb | append (htmlEscape $txt) -}}
+  {{- end -}}
+{{- end -}}
+{{- return (delimit $sb "" | safeHTML) -}}

@@ -1,0 +1,187 @@
+/*
+ * Athenaeum Populi — parity layer on top of Hextra.
+ * Auto-loaded by Hextra (assets/css/custom.css). Phase 0: enough to make the
+ * scaffold "recognizably like the current site". Full token port lands later.
+ *
+ * Source of truth for these values: old site app/globals.css.
+ */
+
+:root {
+  /* Calm scholarly blue — matches the Nextra site's muted accent, not
+     Hextra's default 212deg/100%. */
+  --primary-hue: 214deg;
+  --primary-saturation: 66%;
+  --primary-lightness: 50%;
+
+  /* Design tokens consumed by interactive components (FillIn, etc.). */
+  --ap-border: #d8d5cf;
+  --ap-muted: #6f6e69;
+  --ap-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --ap-success: #1a7f37;
+  --ap-error: #b42318;
+  --ap-warning: #9a6700;
+}
+
+.dark {
+  --primary-hue: 209deg;
+  --primary-saturation: 78%;
+
+  --ap-border: #3a3a38;
+  --ap-muted: #a3a299;
+  --ap-success: #3fb950;
+  --ap-error: #f85149;
+  --ap-warning: #d29922;
+}
+
+/* Comfortable reading measure for long-form study material. */
+.hextra-content,
+.content {
+  line-height: 1.7;
+}
+
+/* Never let KaTeX inline math wrap mid-equation inside a table cell. */
+td .katex,
+th .katex {
+  white-space: nowrap;
+}
+
+/* Respect users who ask for less motion (WCAG 2.3.3). */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Clearly visible keyboard focus ring everywhere (WCAG 2.4.7). */
+:focus-visible {
+  outline: 2px solid hsl(var(--primary-hue) var(--primary-saturation) 50%);
+  outline-offset: 2px;
+}
+
+/* --- <fill-in> interactive component (ports FillIn.jsx's inline styles) --- */
+.ap-fillin {
+  border: 1px solid var(--ap-border, #d6d3cd);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  max-width: 560px;
+}
+.ap-fillin-question { display: block; font-size: 16px; margin: 0 0 12px; }
+.ap-fillin-row { display: flex; gap: 8px; align-items: stretch; }
+.ap-fillin-field {
+  flex: 1;
+  min-width: 0;
+  min-height: 42px;   /* keeps layout stable while MathLive loads */
+  box-sizing: border-box;
+  font-size: 17px;
+  border: 1px solid var(--ap-border, #d6d3cd);
+  border-radius: 6px;
+}
+.ap-fillin-check {
+  font: inherit;
+  font-size: 15px;
+  padding: 6px 14px;
+  border: 1px solid var(--ap-border, #d6d3cd);
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+.ap-fillin-check:disabled { cursor: default; opacity: 0.6; }
+.ap-fillin-feedback { font-size: 15px; margin: 10px 0 0; min-height: 22px; }
+.ap-fillin-hint-toggle {
+  font: inherit;
+  font-size: 13px;
+  color: var(--ap-muted, #6f6e69);
+  border: none;
+  background: none;
+  padding: 0;
+  margin-top: 8px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.ap-fillin-hint { font-size: 14px; color: var(--ap-muted, #6f6e69); margin: 8px 0 0; }
+
+/* --- Static figures (Graph, NumberLine, Figure) — prerendered SVG --------- */
+.ap-figure { margin: 1.5rem 0; }
+.ap-figure svg { display: block; margin: 0 auto; max-width: 100%; height: auto; }
+/* Figures draw with currentColor; inherit the page text color so they flip
+   with light/dark mode (graph-core's default #111 would vanish in dark mode). */
+.ap-figure svg,
+.ap-mc-option-graph svg,
+.ap-graphplot-svg { color: inherit; }
+
+/* Gridlines are deliberately thin (stroke-width 0.4) and faint (opacity 0.2),
+   the only lines graph-core draws that way. When the SVG is scaled to a
+   non-integer factor (GraphPlot stretches slightly; MC thumbnails shrink),
+   such lines can anti-alias onto fractional device pixels and disappear —
+   which showed up as a missing gridline at ±5. crispEdges snaps these
+   axis-aligned lines to whole pixels so they always render. Scoped to the
+   faint gridlines only, so the axes and the (often diagonal) plotted lines
+   keep their smooth anti-aliasing. */
+.ap-figure svg line[opacity="0.2"],
+.ap-graphplot-svg line[opacity="0.2"],
+.ap-mc-option-graph svg line[opacity="0.2"] {
+  /* Pin the gridlines to a real ~1px in SCREEN space at any SVG scale.
+     graph-core's 0.4 user-unit stroke sub-pixels away when the SVG is scaled
+     (GraphPlot enlarges, thumbnails shrink); non-scaling-stroke + a 1px width
+     keeps them a consistent hairline that never rounds to nothing. Kept faint
+     by the element's own opacity="0.2". Scoped to gridlines only. */
+  vector-effect: non-scaling-stroke;
+  stroke-width: 1px;
+}
+
+/* --- <multiple-choice> ---------------------------------------------------- */
+.ap-mc {
+  border: 1px solid var(--ap-border, #d6d3cd);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  max-width: 560px;
+}
+.ap-mc-question { display: block; font-size: 16px; margin: 0 0 12px; }
+.ap-mc-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.ap-mc-option {
+  font: inherit;
+  font-size: 15px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--ap-border, #d6d3cd);
+  background: transparent;
+  cursor: pointer;
+}
+.ap-mc-option:disabled { cursor: default; opacity: 0.55; }
+.ap-mc-option-graph { flex: 1 1 150px; max-width: 210px; padding: 6px; }
+.ap-mc-option-graph svg { width: 100%; height: auto; display: block; }
+.ap-mc-option.is-correct { border-color: var(--ap-success, #1a7f37); background: #eaf6ec; }
+.ap-mc-option.is-incorrect { border-color: var(--ap-error, #b42318); background: #fbeae8; }
+.dark .ap-mc-option.is-correct { background: rgba(63,185,80,0.12); }
+.dark .ap-mc-option.is-incorrect { background: rgba(248,81,73,0.12); }
+.ap-mc-feedback { font-size: 15px; margin: 10px 0 0; min-height: 22px; }
+
+/* --- <graph-plot> --------------------------------------------------------- */
+.ap-graphplot {
+  border: 1px solid var(--ap-border, #d6d3cd);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  max-width: 560px;
+}
+.ap-graphplot-question { display: block; font-size: 16px; margin: 0 0 4px; }
+.ap-graphplot-instructions { font-size: 13px; color: var(--ap-muted, #6f6e69); margin: 0 0 10px; }
+.ap-graphplot-svg { display: block; margin: 0 auto; max-width: 100%; height: auto; }
+.ap-graphplot-svg circle[role="button"]:focus-visible { outline: 2px solid hsl(var(--primary-hue) var(--primary-saturation) 50%); }
+.ap-graphplot-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
+.ap-graphplot-btn {
+  font: inherit;
+  font-size: 15px;
+  padding: 6px 14px;
+  border: 1px solid var(--ap-border, #d6d3cd);
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+.ap-graphplot-btn:disabled { cursor: default; opacity: 0.55; }
+.ap-graphplot-add { font-size: 13px; color: var(--ap-muted, #6f6e69); }

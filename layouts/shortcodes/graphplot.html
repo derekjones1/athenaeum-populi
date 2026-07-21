@@ -1,0 +1,25 @@
+{{- /*
+  graphplot — "graph it yourself" exercise. Hugo port of <GraphPlot>. The
+  <graph-plot> Web Component (lazy graphplot engine) handles all interaction
+  and grading. Config (answer + grid) travels as JSON in the shortcode's inner
+  content to sidestep quoting; question/hint/answerDisplay render at build time.
+
+  Params: question (req), answerDisplay, hint, ariaLabel (req), snap.
+  Inner:  JSON  {"answer": {…}, "grid": {…}}
+*/ -}}
+{{- .Page.Store.Set "hasMath" true -}}
+{{- .Page.Store.Set "hasInteractive" true -}}
+<graph-plot
+  data-config="{{ trim .Inner "\n" }}"
+  data-aria-label="{{ .Get "ariaLabel" }}"
+  data-snap="{{ .Get "snap" | default "1" }}">
+  <div class="ap-graphplot">
+    <p class="ap-graphplot-question">{{ partial "mathtext" (.Get "question") }}</p>
+    {{- with .Get "answerDisplay" }}
+      <template data-slot="answer-display">{{ partial "mathtext" . }}</template>
+    {{- end }}
+    {{- with .Get "hint" }}
+      <template data-slot="hint">{{ partial "mathtext" . }}</template>
+    {{- end }}
+  </div>
+</graph-plot>

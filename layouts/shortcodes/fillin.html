@@ -1,0 +1,47 @@
+{{- /*
+  fillin — free-response math question with instant client-side grading.
+  Hugo port of the old <FillIn> React component. The question IS the config.
+
+  Usage: a fillin shortcode with named params question / answer /
+  answerDisplay / hint / requireExpanded / placeholder (see the converted
+  pilot section for real examples).
+
+  Params:
+    question        (required) prompt; supports inline $...$ math and \$ money
+    answer          (required) correct answer as LaTeX, SINGLE backslash
+                    (Hugo passes shortcode strings verbatim — unlike MDX/JSX,
+                    no doubling needed; preprocess() tolerates both anyway)
+    answerDisplay   pretty form echoed on success (optional; inline math ok)
+    hint            optional hint (inline math ok)
+    requireExpanded "true" to reject answers containing parentheses
+    placeholder     empty-field prompt (default "Your answer")
+
+  Renders a static, readable block (question always visible) that the
+  <fill-in> Web Component upgrades with a MathLive field, Check button and
+  feedback. Display math is typeset at build time via the mathtext partial.
+*/ -}}
+{{- $answer := .Get "answer" -}}
+{{- $question := .Get "question" -}}
+{{- if or (not $answer) (not $question) -}}
+  {{- errorf "fillin shortcode needs both 'question' and 'answer' (%s)" .Position -}}
+{{- end -}}
+{{- .Page.Store.Set "hasMath" true -}}
+{{- .Page.Store.Set "hasFillIn" true -}}
+{{- $reqExp := eq (.Get "requireExpanded" | default "false") "true" -}}
+{{- $placeholder := .Get "placeholder" | default "Your answer" -}}
+{{- $qplain := replaceRE `\$` "" $question -}}
+<fill-in
+  data-answer="{{ $answer }}"
+  data-require-expanded="{{ $reqExp }}"
+  data-placeholder="{{ $placeholder }}"
+  data-question-plain="{{ $qplain }}">
+  <div class="ap-fillin">
+    <p class="ap-fillin-question">{{ partial "mathtext" $question }}</p>
+    {{- with .Get "answerDisplay" }}
+      <template data-slot="answer-display">{{ partial "mathtext" . }}</template>
+    {{- end }}
+    {{- with .Get "hint" }}
+      <template data-slot="hint">{{ partial "mathtext" . }}</template>
+    {{- end }}
+  </div>
+</fill-in>

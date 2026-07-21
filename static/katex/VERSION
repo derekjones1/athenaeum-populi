@@ -1,0 +1,4 @@
+KaTeX 0.16.22
+
+Vendored from the pinned npm dependency. This must match the KaTeX embedded in
+Hugo 0.164.0; see MIGRATION-STATUS.md.
