@@ -1,0 +1,3 @@
+# Exclude third-party vendored code from GitHub language statistics.
+themes/hextra/** linguist-vendored
+static/katex/** linguist-vendored
