@@ -9,8 +9,6 @@ source_chapter: "4"
 weight: 4
 ---
 
-**Figure 4.1.** In the future, car drivers may become passengers because cars
-will be able to drive themselves. (Credit: jingoba/Pixabay.)
 
 Climb into your car. Put on your seatbelt. Choose your destination and
 then&hellip;relax. That's right &mdash; you don't have to do anything else

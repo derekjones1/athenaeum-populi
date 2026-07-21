@@ -7,9 +7,6 @@ source_chapter: "6"
 weight: 6
 ---
 
-**Figure 6.1.** Scientists use factoring to calculate growth rates of
-infectious diseases such as viruses. (Credit: “FotoshopTofs” / Pixabay.)
-
 When an epidemic begins, epidemiologists ask where the disease started, how it
 is spreading, and what can be done to control it. They collect and analyze data
 to study the disease and possible control measures. Because diseases can spread

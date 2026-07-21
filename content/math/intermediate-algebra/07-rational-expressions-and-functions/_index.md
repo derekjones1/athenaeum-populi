@@ -7,10 +7,6 @@ source_chapter: "7"
 weight: 7
 ---
 
-**Figure 7.1.** American football is the most watched spectator sport in the
-United States. People around the country constantly track statistics for
-football and other sports. (Credit: “keij444” / Pixabay.)
-
 Twelve goals last season. Fifteen home runs. Nine touchdowns. Whatever the
 statistics, sports analysts know it. Their jobs depend on it. Compiling and
 analyzing sports data not only help fans appreciate their teams but also help

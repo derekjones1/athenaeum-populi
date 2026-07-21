@@ -8,9 +8,6 @@ source_chapter: "10"
 weight: 11
 ---
 
-*Figure 10.1 Fireworks accompany festive celebrations around the world.
-(Credit: modification of work by tlc, Flickr)*
-
 The trajectories of fireworks are modeled by quadratic equations. The
 equations can be used to predict the maximum height of a firework and the
 number of seconds it will take from launch to explosion. In this chapter, we

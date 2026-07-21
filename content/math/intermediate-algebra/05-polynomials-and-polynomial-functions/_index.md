@@ -7,10 +7,6 @@ source_chapter: "5"
 weight: 5
 ---
 
-**Figure 5.1.** There are many different kinds of coins in circulation, but
-a new type of coin exists only in the virtual world. It is the bitcoin.
-(Credit: Pixabay.)
-
 You may have coins and paper money in your wallet, but you may soon want to
 acquire a type of currency called bitcoins. They exist only in a digital wallet
 on your computer. You can use bitcoins to pay for goods and services at some
