@@ -79,25 +79,25 @@ Some people picture a balance scale when they solve equations: one mass on
 each side is balanced; two masses on each side is balanced; but one mass on
 one side and two masses on the other is unbalanced.
 
-<svg viewBox="0 0 420 130" role="img" aria-label="A balance scale illustration in three states. First: one mass on each side, balanced. Second: two masses on each side, balanced. Third: one mass on one side and two masses on the other, unbalanced." style={{ maxWidth: 420, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="40" y1="60" x2="140" y2="60" stroke="currentColor" strokeWidth="2" />
-  <line x1="90" y1="60" x2="90" y2="20" stroke="currentColor" strokeWidth="2" />
-  <circle cx="55" cy="60" r="7" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <circle cx="125" cy="60" r="7" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="90" y="100" textAnchor="middle" fontSize="12" fill="currentColor">balanced</text>
-  <line x1="170" y1="55" x2="270" y2="55" stroke="currentColor" strokeWidth="2" />
-  <line x1="220" y1="55" x2="220" y2="20" stroke="currentColor" strokeWidth="2" />
-  <circle cx="180" cy="55" r="7" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <circle cx="195" cy="55" r="7" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <circle cx="245" cy="55" r="7" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <circle cx="260" cy="55" r="7" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="220" y="100" textAnchor="middle" fontSize="12" fill="currentColor">balanced</text>
-  <line x1="300" y1="60" x2="400" y2="30" stroke="currentColor" strokeWidth="2" />
-  <line x1="345" y1="45" x2="345" y2="10" stroke="currentColor" strokeWidth="2" />
-  <circle cx="312" cy="57" r="7" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <circle cx="378" cy="35" r="7" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <circle cx="392" cy="31" r="7" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="345" y="100" textAnchor="middle" fontSize="12" fill="currentColor">unbalanced</text>
+<svg viewBox="0 0 420 130" role="img" aria-label="A balance scale illustration in three states. First: one mass on each side, balanced. Second: two masses on each side, balanced. Third: one mass on one side and two masses on the other, unbalanced." style="max-width: 420px; display: block; margin: 1.5rem auto">
+  <line x1="40" y1="60" x2="140" y2="60" stroke="currentColor" stroke-width="2" />
+  <line x1="90" y1="60" x2="90" y2="20" stroke="currentColor" stroke-width="2" />
+  <circle cx="55" cy="60" r="7" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <circle cx="125" cy="60" r="7" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="90" y="100" text-anchor="middle" font-size="12" fill="currentColor">balanced</text>
+  <line x1="170" y1="55" x2="270" y2="55" stroke="currentColor" stroke-width="2" />
+  <line x1="220" y1="55" x2="220" y2="20" stroke="currentColor" stroke-width="2" />
+  <circle cx="180" cy="55" r="7" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <circle cx="195" cy="55" r="7" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <circle cx="245" cy="55" r="7" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <circle cx="260" cy="55" r="7" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="220" y="100" text-anchor="middle" font-size="12" fill="currentColor">balanced</text>
+  <line x1="300" y1="60" x2="400" y2="30" stroke="currentColor" stroke-width="2" />
+  <line x1="345" y1="45" x2="345" y2="10" stroke="currentColor" stroke-width="2" />
+  <circle cx="312" cy="57" r="7" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <circle cx="378" cy="35" r="7" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <circle cx="392" cy="31" r="7" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="345" y="100" text-anchor="middle" font-size="12" fill="currentColor">unbalanced</text>
 </svg>
 
 The quantities on both sides of the equal sign in an equation are equal, or

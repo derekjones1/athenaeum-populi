@@ -1,8 +1,9 @@
 # Athenaeum Populi — Hugo agent notes
 
-Read `MIGRATION.md` and `MIGRATION-STATUS.md` before migration work. For content
-work, follow `docs/authoring-playbook.md`; for knowledge checks, also follow
-`docs/knowledge-check-playbook.md`.
+The Hugo migration is complete; this repository is the production
+architecture. For content work, follow `docs/authoring-playbook.md`; for
+knowledge checks, also follow `docs/knowledge-check-playbook.md`. See
+`docs/architecture.md` for the current build and deployment design.
 
 ## Stack and constraints
 

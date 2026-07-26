@@ -218,21 +218,21 @@ numbers sit inside whole numbers, which sit inside integers, which sit
 inside rational numbers; rational numbers and irrational numbers together
 make up the real numbers.
 
-<svg viewBox="0 0 480 320" role="img" aria-label="A nested diagram of the real numbers. The outer box, real numbers, splits into two regions: rational numbers and irrational numbers. Inside rational numbers is a smaller nested box for integers, inside that a box for whole numbers, and inside that a box for counting numbers." style={{ maxWidth: 420, display: 'block', margin: '1.5rem auto' }}>
-  <rect x="10" y="10" width="460" height="300" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="20" y="28" fontSize="14" fill="currentColor">Real Numbers</text>
-  <rect x="20" y="40" width="270" height="260" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="30" y="58" fontSize="13" fill="currentColor">Rational Numbers</text>
-  <rect x="30" y="70" width="220" height="220" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="40" y="88" fontSize="13" fill="currentColor">Integers</text>
-  <rect x="40" y="100" width="160" height="180" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="50" y="118" fontSize="13" fill="currentColor">Whole Numbers</text>
-  <rect x="50" y="130" width="100" height="130" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="100" y="192" fontSize="12" fill="currentColor" textAnchor="middle">Counting</text>
-  <text x="100" y="208" fontSize="12" fill="currentColor" textAnchor="middle">Numbers</text>
-  <rect x="300" y="40" width="160" height="260" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="380" y="162" fontSize="13" fill="currentColor" textAnchor="middle">Irrational</text>
-  <text x="380" y="180" fontSize="13" fill="currentColor" textAnchor="middle">Numbers</text>
+<svg viewBox="0 0 480 320" role="img" aria-label="A nested diagram of the real numbers. The outer box, real numbers, splits into two regions: rational numbers and irrational numbers. Inside rational numbers is a smaller nested box for integers, inside that a box for whole numbers, and inside that a box for counting numbers." style="max-width: 420px; display: block; margin: 1.5rem auto">
+  <rect x="10" y="10" width="460" height="300" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="20" y="28" font-size="14" fill="currentColor">Real Numbers</text>
+  <rect x="20" y="40" width="270" height="260" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="30" y="58" font-size="13" fill="currentColor">Rational Numbers</text>
+  <rect x="30" y="70" width="220" height="220" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="40" y="88" font-size="13" fill="currentColor">Integers</text>
+  <rect x="40" y="100" width="160" height="180" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="50" y="118" font-size="13" fill="currentColor">Whole Numbers</text>
+  <rect x="50" y="130" width="100" height="130" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="100" y="192" font-size="12" fill="currentColor" text-anchor="middle">Counting</text>
+  <text x="100" y="208" font-size="12" fill="currentColor" text-anchor="middle">Numbers</text>
+  <rect x="300" y="40" width="160" height="260" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="380" y="162" font-size="13" fill="currentColor" text-anchor="middle">Irrational</text>
+  <text x="380" y="180" font-size="13" fill="currentColor" text-anchor="middle">Numbers</text>
 </svg>
 
 {{< callout type="info" >}}

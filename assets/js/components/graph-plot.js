@@ -1,6 +1,6 @@
 /**
- * <graph-plot> — "graph it yourself" exercise. Vanilla port of GraphPlot.jsx.
- * The student places/drags points; the component rebuilds the object those
+ * <graph-plot> — framework-free "graph it yourself" exercise.
+ * The student places or drags points; the component rebuilds the object those
  * points determine (via buildGraph) and grades the OBJECT (checkGraphPlot),
  * with diagnostic feedback. Geometry + grader load lazily from the graphplot
  * engine (no MathLive).
@@ -8,6 +8,7 @@
  * Config arrives as JSON in a data-config attribute: { answer, grid }.
  */
 import { graphplotEngineUrl } from '@params';
+import { findFreeGridPoint, parseGraphPlotConfig } from '../lib/graph-plot-config.mjs';
 
 const SVGNS = 'http://www.w3.org/2000/svg';
 const camelToKebab = (s) => s.replace(/[A-Z]/g, (m) => '-' + m.toLowerCase());
@@ -33,21 +34,28 @@ const NEED_MORE = {
   system: 'Place four points — two for each line.',
   quadratic: 'Place the vertex, then a second point with a different x-value.',
 };
+let hintSequence = 0;
 
 class GraphPlotElement extends HTMLElement {
   connectedCallback() {
     if (this._built) return;
     this._built = true;
 
-    const cfg = JSON.parse(this.dataset.config || '{}');
-    this.answer = cfg.answer || {};
-    this.grid = cfg.grid || {};
+    let cfg;
+    try {
+      cfg = parseGraphPlotConfig(this.dataset.config || '{}', this.dataset.snap || 1);
+    } catch (error) {
+      this.querySelector('.ap-graphplot')?.append(this._errorMessage(error.message));
+      return;
+    }
+    this.answer = cfg.answer;
+    this.grid = cfg.grid;
     this.ariaLabel = this.dataset.ariaLabel || '';
-    this.snap = Number(this.dataset.snap || 1);
-    this.mode = this.answer.system ? 'system' : this.answer.quadratic ? 'quadratic' : 'line';
+    this.snap = cfg.snap;
+    this.mode = cfg.mode;
     this.maxPoints = this.mode === 'system' ? 4 : 2;
-    this.xMin = this.grid.xMin ?? -7; this.xMax = this.grid.xMax ?? 7;
-    this.yMin = this.grid.yMin ?? -7; this.yMax = this.grid.yMax ?? 7;
+    this.xMin = cfg.xMin; this.xMax = cfg.xMax;
+    this.yMin = cfg.yMin; this.yMax = cfg.yMax;
     this.pts = [];
     this.status = 'idle';
     this.done = false;
@@ -92,12 +100,15 @@ class GraphPlotElement extends HTMLElement {
     this.wrap.append(instr, this.svg, row, this.feedback);
 
     if (this.hintHTML) {
+      const hintId = `ap-graphplot-hint-${++hintSequence}`;
       const hintBtn = document.createElement('button');
       hintBtn.type = 'button';
       hintBtn.className = 'ap-fillin-hint-toggle';
       hintBtn.textContent = 'Show hint';
       hintBtn.setAttribute('aria-expanded', 'false');
+      hintBtn.setAttribute('aria-controls', hintId);
       const hint = document.createElement('p');
+      hint.id = hintId;
       hint.className = 'ap-fillin-hint';
       hint.hidden = true;
       hint.innerHTML = this.hintHTML;
@@ -120,19 +131,35 @@ class GraphPlotElement extends HTMLElement {
     return b;
   }
 
+  _errorMessage(detail = '') {
+    const error = document.createElement('p');
+    error.className = 'ap-fillin-feedback';
+    error.setAttribute('role', 'alert');
+    error.style.color = COLOR.incorrect;
+    error.textContent = detail
+      ? `This graph exercise is unavailable: ${detail}.`
+      : 'This graph exercise could not load. Please reload the page and try again.';
+    return error;
+  }
+
   async _loadEngine() {
-    const eng = await import(graphplotEngineUrl);
-    this.buildGraph = eng.buildGraph;
-    this.checkGraphPlot = eng.checkGraphPlot;
+    try {
+      const eng = await import(graphplotEngineUrl);
+      this.buildGraph = eng.buildGraph;
+      this.checkGraphPlot = eng.checkGraphPlot;
 
-    this.svg.addEventListener('pointerdown', (e) => this._onDown(e));
-    this.svg.addEventListener('pointermove', (e) => this._onMove(e));
-    this.svg.addEventListener('pointerup', () => (this.dragIndex = null));
-    this.svg.addEventListener('pointercancel', () => (this.dragIndex = null));
+      this.svg.addEventListener('pointerdown', (e) => this._onDown(e));
+      this.svg.addEventListener('pointermove', (e) => this._onMove(e));
+      this.svg.addEventListener('pointerup', () => (this.dragIndex = null));
+      this.svg.addEventListener('pointercancel', () => (this.dragIndex = null));
 
-    this.checkBtn.disabled = false;
-    this.addBtn.disabled = false;
-    this._render();
+      this.checkBtn.disabled = false;
+      this.addBtn.disabled = false;
+      this._render();
+    } catch (error) {
+      console.error('Graph exercise failed to load', error);
+      this.feedback.replaceWith(this._errorMessage());
+    }
   }
 
   // --- geometry helpers -----------------------------------------------------
@@ -169,7 +196,7 @@ class GraphPlotElement extends HTMLElement {
     return { lines, quadratics };
   }
 
-  _render() {
+  _render(focusIndex = null) {
     const { lines, quadratics } = this._objects();
     this.g = this.buildGraph({
       xMin: this.xMin, xMax: this.xMax, yMin: this.yMin, yMax: this.yMax,
@@ -199,6 +226,7 @@ class GraphPlotElement extends HTMLElement {
       this.svg.appendChild(el);
     }
     // focusable grab handles
+    this.handles = [];
     this.pts.forEach((p, i) => {
       const [X, Y] = g.map.toPx(p);
       const c = document.createElementNS(SVGNS, 'circle');
@@ -211,10 +239,12 @@ class GraphPlotElement extends HTMLElement {
       c.style.cursor = this.done ? 'default' : 'grab';
       c.addEventListener('keydown', (e) => this._onKey(e, i));
       this.svg.appendChild(c);
+      this.handles.push(c);
     });
 
     this.clearBtn.disabled = this.done || this.pts.length === 0;
     this.addBtn.disabled = this.done || this.pts.length >= this.maxPoints;
+    if (focusIndex !== null && this.handles[focusIndex]) this.handles[focusIndex].focus();
   }
 
   _handleName(i) {
@@ -255,23 +285,28 @@ class GraphPlotElement extends HTMLElement {
       const [dx, dy] = moves[e.key];
       this.pts[i] = this._snapPt([this.pts[i][0] + dx * this.snap, this.pts[i][1] + dy * this.snap]);
       this._resetStatus();
-      this._render();
+      this._render(i);
     } else if (e.key === 'Delete' || e.key === 'Backspace') {
       e.preventDefault();
       this.pts.splice(i, 1);
       this._resetStatus();
       this._render();
+      if (this.handles.length) this.handles[Math.min(i, this.handles.length - 1)].focus();
+      else this.addBtn.focus();
     }
   }
   _addPointKeyboard() {
     if (this.done || this.pts.length >= this.maxPoints) return;
-    const cx = Math.round((this.xMin + this.xMax) / 2);
-    const cy = Math.round((this.yMin + this.yMax) / 2);
-    let p = this._snapPt([cx, cy]);
-    while (this.pts.some((q) => q[0] === p[0] && q[1] === p[1])) p = this._snapPt([p[0] + this.snap, p[1]]);
+    const p = findFreeGridPoint(this, this.pts);
+    if (!p) {
+      this.feedback.textContent = 'No unused grid points are available.';
+      this.feedback.style.color = COLOR.needMore;
+      this.addBtn.disabled = true;
+      return;
+    }
     this.pts.push(p);
     this._resetStatus();
-    this._render();
+    this._render(this.pts.length - 1);
   }
   _clear() {
     if (this.done) return;

@@ -41,14 +41,14 @@ represents the number of equal parts the whole has been divided into, and
 the numerator $a$ represents how many of those parts are included. The
 denominator $b$ cannot equal zero because division by zero is undefined.
 
-<svg viewBox="0 0 120 90" role="img" aria-label="A circle divided into three equal parts, each labeled one-third." style={{ maxWidth: 160, display: 'block', margin: '1rem auto' }}>
-  <circle cx="60" cy="45" r="40" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="60" y1="5" x2="60" y2="45" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="60" y1="45" x2="94" y2="65" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="60" y1="45" x2="26" y2="65" stroke="currentColor" strokeWidth="1.5" />
-  <text x="79" y="38" textAnchor="middle" fontSize="12" fill="currentColor">1/3</text>
-  <text x="60" y="71" textAnchor="middle" fontSize="12" fill="currentColor">1/3</text>
-  <text x="41" y="38" textAnchor="middle" fontSize="12" fill="currentColor">1/3</text>
+<svg viewBox="0 0 120 90" role="img" aria-label="A circle divided into three equal parts, each labeled one-third." style="max-width: 160px; display: block; margin: 1rem auto">
+  <circle cx="60" cy="45" r="40" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <line x1="60" y1="5" x2="60" y2="45" stroke="currentColor" stroke-width="1.5" />
+  <line x1="60" y1="45" x2="94" y2="65" stroke="currentColor" stroke-width="1.5" />
+  <line x1="60" y1="45" x2="26" y2="65" stroke="currentColor" stroke-width="1.5" />
+  <text x="79" y="38" text-anchor="middle" font-size="12" fill="currentColor">1/3</text>
+  <text x="60" y="71" text-anchor="middle" font-size="12" fill="currentColor">1/3</text>
+  <text x="41" y="38" text-anchor="middle" font-size="12" fill="currentColor">1/3</text>
 </svg>
 
 The circle above has been divided into three parts of equal size. Each

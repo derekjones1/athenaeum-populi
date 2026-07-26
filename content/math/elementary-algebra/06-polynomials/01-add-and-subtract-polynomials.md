@@ -277,13 +277,6 @@ $$
   hint="Subtract $A$ from $B$ means $B - A$, so compute $(7z^2 + 6z - 4) - (5z^2 - 6z - 2)$."
 >}}
 
-{{< fillin
-  question="Find the sum: $(3x^2 - 4xy + 5y^2) + (2x^2 - xy)$."
-  answer="5x^2 - 5xy + 5y^2"
-  answerDisplay="$5x^2 - 5xy + 5y^2$"
-  hint="Only combine genuine like terms; $xy$ and $-4xy$ are like terms, but there is only one $y^2$ term."
->}}
-
 ## Evaluate a polynomial for a given value
 
 We have already learned how to evaluate expressions. Since polynomials are

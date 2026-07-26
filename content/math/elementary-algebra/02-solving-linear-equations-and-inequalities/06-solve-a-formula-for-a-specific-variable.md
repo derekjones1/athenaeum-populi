@@ -287,12 +287,6 @@ solid, $V = LWH$.
   hint="Divide both sides by pi to isolate d."
 >}}
 
-{{< fillin
-  question="Solve the formula V = LWH for H."
-  answer="\frac{V}{LW}"
-  hint="Divide both sides by the product LW to isolate H."
->}}
-
 ## Key terms
 
 **rate** — an equivalent word for speed; how fast an object moves per unit

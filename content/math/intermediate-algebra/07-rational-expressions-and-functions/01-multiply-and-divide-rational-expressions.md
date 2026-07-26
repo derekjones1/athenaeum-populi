@@ -114,27 +114,6 @@ Thus $\tfrac{x+4}{x^2+5x+6}$ is undefined for $x=-2$ or $x=-3$.
   hint="Factor the denominator as $(a+1)(a+3)$, then set each factor equal to zero."
 >}}
 
-{{< fillin
-  question="For what value is $\tfrac{4p}{5q}$ undefined?"
-  answer="0"
-  answerDisplay="$q=0$"
-  hint="Set the denominator $5q$ equal to zero."
->}}
-
-{{< fillin
-  question="For what value is $\tfrac{y-1}{3y+2}$ undefined?"
-  answer="-\frac{2}{3}"
-  answerDisplay="$y=-\tfrac{2}{3}$"
-  hint="Set $3y+2$ equal to zero and solve."
->}}
-
-{{< fillin
-  question="Enter, separated by commas, the values for which $\tfrac{m-5}{m^2+m-6}$ is undefined."
-  answer="2, -3"
-  answerDisplay="$2,-3$"
-  hint="Factor the denominator as $(m+3)(m-2)$."
->}}
-
 ## Simplify rational expressions
 
 A fraction is simplified if there are no common factors, other than $1$, in
@@ -516,6 +495,7 @@ The domain of $R(x)$ is all real numbers where $x\ne6$ and $x\ne-2$.
 {{< fillin
   question="Find the values excluded from the domain of $R(x)=\tfrac{2x^2-10x}{4x^2-16x-20}$. Enter them separated by commas."
   answer="-1, 5"
+  answerMode="unordered"
   answerDisplay="$-1,5$"
   hint="Set the denominator equal to zero, divide out its GCF, and factor."
 >}}
@@ -523,6 +503,7 @@ The domain of $R(x)$ is all real numbers where $x\ne6$ and $x\ne-2$.
 {{< fillin
   question="Find the values excluded from the domain of $R(x)=\tfrac{4x^2-16x}{8x^2-16x-64}$. Enter them separated by commas."
   answer="-2, 4"
+  answerMode="unordered"
   answerDisplay="$-2,4$"
   hint="Factor the denominator after removing the GCF."
 >}}

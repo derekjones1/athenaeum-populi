@@ -1,7 +1,7 @@
 /** Verify one global Pagefind index covers every migrated textbook. */
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { gunzipSync } from 'node:zlib';
-import { join } from 'node:path';
+import { join, relative, sep } from 'node:path';
 
 const root = process.argv[2] || 'public';
 const pagefindDir = join(root, 'pagefind');
@@ -19,12 +19,38 @@ const urls = fragmentFiles.map((name) => {
   const decoded = gunzipSync(readFileSync(join(fragmentDir, name))).toString('utf8');
   return JSON.parse(decoded.replace(/^pagefind_dcd/, '')).url;
 });
+const normalizedUrls = new Set(urls.map((url) => {
+  const pathname = new URL(url, 'https://athenaeumpopuli.org').pathname;
+  return pathname.endsWith('/') ? pathname : `${pathname}/`;
+}));
 const pageCount = languages[0][1].page_count;
 if (fragmentFiles.length !== pageCount) throw new Error(`Pagefind says ${pageCount} pages but emitted ${fragmentFiles.length} fragments`);
 
 for (const book of requiredBooks) {
   const prefix = `/math/${book}/`;
-  if (!urls.some((url) => url.startsWith(prefix))) throw new Error(`Global index has no results from ${prefix}`);
+  const bookRoot = join(root, 'math', book);
+  if (!existsSync(bookRoot)) throw new Error(`Built textbook directory missing: ${bookRoot}`);
+  const expected = [];
+  for (const file of (function walk(dir) {
+    const found = [];
+    for (const name of readdirSync(dir)) {
+      const path = join(dir, name);
+      if (statSync(path).isDirectory()) found.push(...walk(path));
+      else if (name === 'index.html') found.push(path);
+    }
+    return found;
+  }(bookRoot))) {
+    const html = readFileSync(file, 'utf8');
+    if (!/<main\b(?=[^>]*(?:^|\s)id\s*=\s*(?:"content"|'content'|content(?=[\s>])))[^>]*>/i.test(html)) {
+      continue;
+    }
+    const rel = relative(root, file).split(sep).join('/').replace(/index\.html$/, '');
+    expected.push(`/${rel}`);
+  }
+  const missing = expected.filter((url) => !normalizedUrls.has(url));
+  if (missing.length) {
+    throw new Error(`Global index is missing ${missing.length}/${expected.length} pages from ${prefix} (first: ${missing[0]})`);
+  }
 }
 
 function findNestedPagefind(dir) {

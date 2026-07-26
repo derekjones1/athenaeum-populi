@@ -408,12 +408,6 @@ $1\ \text{liter} = 1{,}000\ \text{milliliters}$.
   hint="1 hectoliter = 100 liters, so multiply 350 by 100."
 >}}
 
-{{< fillin
-  question="Convert 4.1 L to centiliters."
-  answer="410"
-  hint="1 liter = 100 centiliters, so multiply 4.1 by 100."
->}}
-
 ## Use mixed units of measurement in the metric system
 
 Performing arithmetic operations on measurements with mixed units of

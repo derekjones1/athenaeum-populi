@@ -322,13 +322,6 @@ $\tfrac{4}{3}$.
   hint="The opposite of a negative number is positive."
 >}}
 
-{{< fillin
-  question="Find the additive inverse of $-\tfrac{9}{4}$."
-  answer="\frac{9}{4}"
-  answerDisplay="$\tfrac{9}{4}$"
-  hint="The opposite of a negative number is positive."
->}}
-
 **Example.** Find the multiplicative inverse of (a) $9$ (b) $-\tfrac{1}{9}$
 (c) $0.9$.
 
@@ -484,15 +477,9 @@ left to right, look for reciprocals — their product is $1$.
 >}}
 
 {{< fillin
-  question="Simplify (a) $\tfrac{0}{m+7}$, where $m \ne -7$."
+  question="Simplify $\tfrac{0}{m+7}$, where $m \ne -7$."
   answer="0"
   hint="Zero divided by any nonzero real number is zero."
->}}
-
-{{< fillin
-  question="The expression $\tfrac{18 - 6c}{0}$ is undefined because it divides by zero no matter what $c$ is. What value of $c$ would make the numerator $18 - 6c$ equal to $0$ (the one case OpenStax's condition $18 - 6c \ne 0$ rules out)?"
-  answer="3"
-  hint="Set $18 - 6c$ equal to $0$ and solve for $c$."
 >}}
 
 **Example.** Simplify: $\tfrac{3}{4} \cdot \tfrac{4}{3}(6x + 12)$.

@@ -360,13 +360,13 @@ weight: 6
 >}}
 
 {{< fillin
-  question="Dotty bought a freezer on sale for \$486.50. The original price of the freezer was \$695. (a) Find the amount of discount."
+  question="Dotty bought a freezer on sale for \$486.50. The original price of the freezer was \$695. Find the amount of discount."
   answer="208.50"
   answerDisplay="\$208.50"
 >}}
 
 {{< fillin
-  question="Dotty bought a freezer on sale for \$486.50. The original price of the freezer was \$695. (b) Find the discount rate."
+  question="Dotty bought a freezer on sale for \$486.50. The original price of the freezer was \$695. Find the discount rate."
   answer="30"
   answerDisplay="30%"
 >}}
@@ -374,25 +374,25 @@ weight: 6
 ### 3.3 Solve Mixture Applications
 
 {{< fillin
-  question="Francie has \$4.35 in dimes and quarters. The number of dimes is five more than the number of quarters. (a) How many dimes does she have?"
+  question="Francie has \$4.35 in dimes and quarters. The number of dimes is five more than the number of quarters. How many dimes does she have?"
   answer="16"
   answerDisplay="16 dimes"
 >}}
 
 {{< fillin
-  question="Francie has \$4.35 in dimes and quarters. The number of dimes is five more than the number of quarters. (b) How many quarters does she have?"
+  question="Francie has \$4.35 in dimes and quarters. The number of dimes is five more than the number of quarters. How many quarters does she have?"
   answer="11"
   answerDisplay="11 quarters"
 >}}
 
 {{< fillin
-  question="At a concert, \$1,600 in tickets were sold. Adult tickets were \$9 each and children's tickets were \$4 each. If the number of adult tickets was 30 less than twice the number of children's tickets, (a) how many adult tickets were sold?"
+  question="At a concert, \$1,600 in tickets were sold. Adult tickets were \$9 each and children's tickets were \$4 each. If the number of adult tickets was 30 less than twice the number of children's tickets, how many adult tickets were sold?"
   answer="140"
   answerDisplay="140 adult tickets"
 >}}
 
 {{< fillin
-  question="At a concert, \$1,600 in tickets were sold. Adult tickets were \$9 each and children's tickets were \$4 each. If the number of adult tickets was 30 less than twice the number of children's tickets, (b) how many children's tickets were sold?"
+  question="At a concert, \$1,600 in tickets were sold. Adult tickets were \$9 each and children's tickets were \$4 each. If the number of adult tickets was 30 less than twice the number of children's tickets, how many children's tickets were sold?"
   answer="85"
   answerDisplay="85 children's tickets"
 >}}
@@ -414,13 +414,13 @@ weight: 6
 ### 3.5 Solve Uniform Motion Applications
 
 {{< fillin
-  question="When Gabe drives from Sacramento to Redding it takes him 2.2 hours. It takes Elsa 2 hours to drive the same distance. Elsa's speed is seven miles per hour faster than Gabe's speed. (a) Find Gabe's speed, in miles per hour."
+  question="When Gabe drives from Sacramento to Redding it takes him 2.2 hours. It takes Elsa 2 hours to drive the same distance. Elsa's speed is seven miles per hour faster than Gabe's speed. Find Gabe's speed, in miles per hour."
   answer="70"
   answerDisplay="Gabe 70 mph"
 >}}
 
 {{< fillin
-  question="When Gabe drives from Sacramento to Redding it takes him 2.2 hours. It takes Elsa 2 hours to drive the same distance. Elsa's speed is seven miles per hour faster than Gabe's speed. (b) Find Elsa's speed, in miles per hour."
+  question="When Gabe drives from Sacramento to Redding it takes him 2.2 hours. It takes Elsa 2 hours to drive the same distance. Elsa's speed is seven miles per hour faster than Gabe's speed. Find Elsa's speed, in miles per hour."
   answer="77"
   answerDisplay="Elsa 77 mph"
 >}}
@@ -728,13 +728,13 @@ weight: 6
 >}}
 
 {{< fillin
-  question="(a) LaVelle is making a pitcher of caffe mocha. For each ounce of chocolate syrup, she uses five ounces of coffee. How many ounces of chocolate syrup does she need to make 48 ounces of caffe mocha?"
+  question="LaVelle is making a pitcher of caffe mocha. For each ounce of chocolate syrup, she uses five ounces of coffee. How many ounces of chocolate syrup does she need to make 48 ounces of caffe mocha?"
   answer="8"
   answerDisplay="8 ounces of chocolate syrup"
 >}}
 
 {{< fillin
-  question="(b) LaVelle is making a pitcher of caffe mocha. For each ounce of chocolate syrup, she uses five ounces of coffee. How many ounces of coffee does she need to make 48 ounces of caffe mocha?"
+  question="LaVelle is making a pitcher of caffe mocha. For each ounce of chocolate syrup, she uses five ounces of coffee. How many ounces of coffee does she need to make 48 ounces of caffe mocha?"
   answer="40"
   answerDisplay="40 ounces of coffee"
 >}}
@@ -794,13 +794,13 @@ weight: 6
 >}}
 
 {{< fillin
-  question="(a) Two angles are complementary. The measure of the larger angle is six more than twice the measure of the smaller angle. Find the measure of the smaller angle, in degrees."
+  question="Two angles are complementary. The measure of the larger angle is six more than twice the measure of the smaller angle. Find the measure of the smaller angle, in degrees."
   answer="28"
   answerDisplay="28 degrees"
 >}}
 
 {{< fillin
-  question="(b) Two angles are complementary. The measure of the larger angle is six more than twice the measure of the smaller angle. Find the measure of the larger angle, in degrees."
+  question="Two angles are complementary. The measure of the larger angle is six more than twice the measure of the smaller angle. Find the measure of the larger angle, in degrees."
   answer="62"
   answerDisplay="62 degrees"
 >}}
@@ -814,25 +814,25 @@ weight: 6
 ### 5.5 Solve Mixture Applications with Systems of Equations
 
 {{< fillin
-  question="(a) Jack has \$12,000 to invest and wants to earn 7.5% interest per year. He will put some of the money into a savings account that earns 4% per year and the rest into a CD account that earns 9% per year. How much money, in dollars, should he put into the savings account?"
+  question="Jack has \$12,000 to invest and wants to earn 7.5% interest per year. He will put some of the money into a savings account that earns 4% per year and the rest into a CD account that earns 9% per year. How much money, in dollars, should he put into the savings account?"
   answer="3600"
   answerDisplay="\$3,600 into savings"
 >}}
 
 {{< fillin
-  question="(b) Jack has \$12,000 to invest and wants to earn 7.5% interest per year. He will put some of the money into a savings account that earns 4% per year and the rest into a CD account that earns 9% per year. How much money, in dollars, should he put into the CD account?"
+  question="Jack has \$12,000 to invest and wants to earn 7.5% interest per year. He will put some of the money into a savings account that earns 4% per year and the rest into a CD account that earns 9% per year. How much money, in dollars, should he put into the CD account?"
   answer="8400"
   answerDisplay="\$8,400 into the CD"
 >}}
 
 {{< fillin
-  question="(a) Liz paid \$160 for 28 tickets to take the Brownie troop to the science museum. Children's tickets cost \$5 and adult tickets cost \$9. How many children's tickets did Liz buy?"
+  question="Liz paid \$160 for 28 tickets to take the Brownie troop to the science museum. Children's tickets cost \$5 and adult tickets cost \$9. How many children's tickets did Liz buy?"
   answer="23"
   answerDisplay="23 children's tickets"
 >}}
 
 {{< fillin
-  question="(b) Liz paid \$160 for 28 tickets to take the Brownie troop to the science museum. Children's tickets cost \$5 and adult tickets cost \$9. How many adult tickets did Liz buy?"
+  question="Liz paid \$160 for 28 tickets to take the Brownie troop to the science museum. Children's tickets cost \$5 and adult tickets cost \$9. How many adult tickets did Liz buy?"
   answer="5"
   answerDisplay="5 adult tickets"
 >}}

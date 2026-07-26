@@ -82,7 +82,7 @@ graphs will be shaded on the graph of the solution of the compound inequality.
   <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="80.8" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">(</text>
+  <text x="80.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
   <text x="80.8" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &gt; −3</text>
 </svg>
 </div>
@@ -115,7 +115,7 @@ graphs will be shaded on the graph of the solution of the compound inequality.
   <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="212.8" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">]</text>
+  <text x="212.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
   <text x="212.8" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ 2</text>
 </svg>
 </div>
@@ -177,7 +177,7 @@ numbers shaded on *both* of the first two graphs.
   <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="212.8" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">)</text>
+  <text x="212.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">)</text>
   <text x="212.8" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &lt; 2</text>
 </svg>
 </div>
@@ -210,7 +210,7 @@ numbers shaded on *both* of the first two graphs.
   <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="80.8" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">[</text>
+  <text x="80.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
   <text x="80.8" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≥ −3</text>
 </svg>
 </div>
@@ -278,7 +278,7 @@ $$
   <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="173.2" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">]</text>
+  <text x="173.2" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
   <text x="173.2" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ 1/2</text>
 </svg>
 </div>
@@ -413,7 +413,7 @@ $$
   <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="120.4" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">]</text>
+  <text x="120.4" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
   <text x="120.4" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ −3/2</text>
 </svg>
 </div>
@@ -446,7 +446,7 @@ $$
   <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="212.8" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">[</text>
+  <text x="212.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
   <text x="212.8" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≥ 2</text>
 </svg>
 </div>

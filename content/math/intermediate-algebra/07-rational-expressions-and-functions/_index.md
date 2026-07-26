@@ -4,7 +4,7 @@ description: >-
   Simplifying and operating with rational expressions, solving rational
   equations and inequalities, and applying rational equations to problems.
 source_chapter: "7"
-weight: 7
+weight: 8
 ---
 
 Twelve goals last season. Fifteen home runs. Nine touchdowns. Whatever the

@@ -46,12 +46,14 @@ $$
   question="Multiply: $\left(5y^7\right)\left(-7y^4\right)$"
   answer="-35y^{11}"
   answerDisplay="$-35y^{11}$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 {{< fillin
   question="Multiply: $\left(\tfrac{2}{5}a^4b^3\right)\left(15ab^3\right)$"
   answer="6a^5b^6"
   answerDisplay="$6a^5b^6$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 ## Multiply a polynomial by a monomial
@@ -84,12 +86,14 @@ $$
   question="Multiply: $-3y\left(5y^2+8y-7\right)$"
   answer="-15y^3-24y^2+21y"
   answerDisplay="$-15y^3-24y^2+21y$"
+  hint="Distribute the monomial to every term, multiply coefficients, and add exponents on like bases."
 >}}
 
 {{< fillin
   question="Multiply: $4x^2\left(2x^2-3x+5\right)$"
   answer="8x^4-12x^3+20x^2"
   answerDisplay="$8x^4-12x^3+20x^2$"
+  hint="Distribute the monomial to every term, multiply coefficients, and add exponents on like bases."
 >}}
 
 ## Multiply a binomial by a binomial
@@ -112,12 +116,14 @@ $$
   question="Multiply: $(x+8)(x+9)$"
   answer="x^2+17x+72"
   answerDisplay="$x^2+17x+72$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 {{< fillin
   question="Multiply: $(3c+4)(5c-2)$"
   answer="15c^2+14c-8"
   answerDisplay="$15c^2+14c-8$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 ### The FOIL method
@@ -174,12 +180,14 @@ $$
   question="Multiply using FOIL: $(x-7)(x+5)$"
   answer="x^2-2x-35"
   answerDisplay="$x^2-2x-35$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 {{< fillin
   question="Multiply using FOIL: $(3x+7)(5x-2)$"
   answer="15x^2+29x-14"
   answerDisplay="$15x^2+29x-14$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 The final products in the last example were trinomials because we could
@@ -209,12 +217,14 @@ $$
   question="Multiply: $\left(x^2+6\right)(x-8)$"
   answer="x^3-8x^2+6x-48"
   answerDisplay="$x^3-8x^2+6x-48$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 {{< fillin
   question="Multiply: $(2ab+5)(4ab-4)$"
   answer="8a^2b^2+12ab-20"
   answerDisplay="$8a^2b^2+12ab-20$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 ### The Vertical Method
@@ -248,12 +258,14 @@ Notice the partial products are the same as the terms in the FOIL method.
   question="Multiply using the Vertical Method: $(5m-7)(3m-6)$"
   answer="15m^2-51m+42"
   answerDisplay="$15m^2-51m+42$"
+  hint="Align like powers in columns, multiply by each term of the second binomial, and add the partial products."
 >}}
 
 {{< fillin
   question="Multiply using the Vertical Method: $(6b-5)(7b-3)$"
   answer="42b^2-53b+15"
   answerDisplay="$42b^2-53b+15$"
+  hint="Align like powers in columns, multiply by each term of the second binomial, and add the partial products."
 >}}
 
 {{< callout type="info" >}}
@@ -298,12 +310,14 @@ $$
   question="Multiply $(y-3)\left(y^2-5y+2\right)$."
   answer="y^3-8y^2+17y-6"
   answerDisplay="$y^3-8y^2+17y-6$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 {{< fillin
   question="Multiply $(x+4)\left(2x^2-3x+5\right)$."
   answer="2x^3+5x^2-7x+20"
   answerDisplay="$2x^3+5x^2-7x+20$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 {{< callout type="info" >}}
@@ -363,12 +377,14 @@ $$
   question="Multiply: $(x+9)^2$"
   answer="x^2+18x+81"
   answerDisplay="$x^2+18x+81$"
+  hint="Multiply the coefficients and add the exponents of each common base."
 >}}
 
 {{< fillin
   question="Multiply: $(2c-d)^2$"
   answer="4c^2-4cd+d^2"
   answerDisplay="$4c^2-4cd+d^2$"
+  hint="Multiply the coefficients and add the exponents of each common base."
 >}}
 
 We just saw a pattern for squaring binomials. Similarly, there is a pattern
@@ -420,12 +436,14 @@ $$
   question="Multiply: $(6x+5)(6x-5)$"
   answer="36x^2-25"
   answerDisplay="$36x^2-25$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 {{< fillin
   question="Multiply: $(4p-7q)(4p+7q)$"
   answer="16p^2-49q^2"
   answerDisplay="$16p^2-49q^2$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 The special product patterns look similar, so it is important to recognize
@@ -477,24 +495,21 @@ $$
   question="Choose the appropriate pattern and find the product: $(9b-2)(2b+9)$"
   answer="18b^2+77b-18"
   answerDisplay="$18b^2+77b-18$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 {{< fillin
   question="Choose the appropriate pattern and find the product: $(9p-4)^2$"
   answer="81p^2-72p+16"
   answerDisplay="$81p^2-72p+16$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 {{< fillin
   question="Choose the appropriate pattern and find the product: $(7y+1)^2$"
   answer="49y^2+14y+1"
   answerDisplay="$49y^2+14y+1$"
->}}
-
-{{< fillin
-  question="Choose the appropriate pattern and find the product: $(4r-3)(4r+3)$"
-  answer="16r^2-9"
-  answerDisplay="$16r^2-9$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 ## Multiply polynomial functions
@@ -535,12 +550,14 @@ $$
   question="For $f(x)=x-5$ and $g(x)=x^2-2x+3$, find $(f\cdot g)(x)$."
   answer="x^3-7x^2+13x-15"
   answerDisplay="$x^3-7x^2+13x-15$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 {{< fillin
   question="For $f(x)=x-5$ and $g(x)=x^2-2x+3$, find $(f\cdot g)(2)$."
   answer="-9"
   answerDisplay="$-9$"
+  hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
 
 ## Key terms

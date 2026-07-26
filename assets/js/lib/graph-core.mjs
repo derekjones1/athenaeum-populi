@@ -1,18 +1,17 @@
 /**
  * Deterministic geometry engine for coordinate-plane figures.
  *
- * The authoring pipeline never writes SVG for graphs: MDX declares the
- * *mathematical objects* (lines, points, regions…) via <Graph …/> props,
+ * The import pipeline never hand-positions SVG for graphs: source declares
+ * the *mathematical objects* (lines, points, regions…) as structured props,
  * and this module computes every pixel — mapping, clipping, arrowheads,
  * shading polygons, and label placement. One shared implementation of the
  * playbook §"Coordinate-plane graphs" rules, instead of one hand-derived
  * copy per figure.
  *
  * buildGraph(props)  → { viewBox, width, height, ariaLabel, els }
- *   els: [{ tag, attrs, text? }] with camelCase (JSX-style) attrs.
- *   components/Graph.jsx renders els as React elements;
+ *   els: [{ tag, attrs, text? }] with JavaScript-style attribute names.
  *   toSvgString(props) serializes them to a plain SVG document so QA
- *   scripts can rasterize figures without React.
+ *   scripts can rasterize figures without a browser runtime.
  *
  * Props (all coordinates in MATH units, never pixels):
  *   xMin,xMax,yMin,yMax  axis ranges (integers; default -7..7)
@@ -63,6 +62,15 @@
 
 const FONT = 13
 const CHAR_W = 6.9 // ≈ px per character at fontSize 13
+const MAX_GENERATED_STEPS = 10_000
+
+function stepCount(min, max, step, label) {
+  const count = Math.floor((max - min) / step) + 1
+  if (!Number.isFinite(count) || count > MAX_GENERATED_STEPS) {
+    throw new Error(`${label} would generate too many elements`)
+  }
+  return count
+}
 
 // ---------------------------------------------------------------------------
 // small vector helpers
@@ -96,6 +104,17 @@ export function buildGraph(props) {
     points = [], lines = [], quadratics = [], cubics = [], smoothCurves = [], segments = [], guides = [],
     slopeTriangles = [], regions = [], texts = [],
   } = props
+
+  if (![xMin, xMax, yMin, yMax, ux, uy, margin].every(Number.isFinite)
+    || xMin >= xMax || yMin >= yMax || ux <= 0 || uy <= 0 || margin < 0) {
+    throw new Error('Graph needs finite increasing bounds, positive units, and a nonnegative margin')
+  }
+  if (grid && (!Number.isFinite(xGridStep) || xGridStep <= 0
+    || !Number.isFinite(yGridStep) || yGridStep <= 0)) {
+    throw new Error('Graph grid steps must be positive numbers')
+  }
+  const xGridCount = grid ? stepCount(xMin, xMax, xGridStep, 'xGridStep') : 0
+  const yGridCount = grid ? stepCount(yMin, yMax, yGridStep, 'yGridStep') : 0
 
   const mTop = margin + (caption ? 22 : 0)
   const W = (xMax - xMin) * ux + 2 * margin
@@ -170,11 +189,13 @@ export function buildGraph(props) {
 
   // --- 1. grid ------------------------------------------------------------
   if (grid) {
-    for (let mx = xMin; mx <= xMax; mx += xGridStep) {
+    for (let index = 0; index < xGridCount; index++) {
+      const mx = xMin + index * xGridStep
       if (mx === 0 && yMin <= 0 && yMax >= 0) continue
       add('line', segAttrs(px([mx, yMin]), px([mx, yMax]), { strokeWidth: '0.4', opacity: '0.2' }))
     }
-    for (let my = yMin; my <= yMax; my += yGridStep) {
+    for (let index = 0; index < yGridCount; index++) {
+      const my = yMin + index * yGridStep
       if (my === 0 && xMin <= 0 && xMax >= 0) continue
       add('line', segAttrs(px([xMin, my]), px([xMax, my]), { strokeWidth: '0.4', opacity: '0.2' }))
     }
@@ -208,8 +229,12 @@ export function buildGraph(props) {
   }
 
   // --- 3. axes --------------------------------------------------------------
-  const axisY = yMin <= 0 && yMax >= 0 ? px([0, 0])[1] : gy1 // y px of x-axis
-  const axisX = xMin <= 0 && xMax >= 0 ? px([0, 0])[0] : gx0 // x px of y-axis
+  const axisY = yMin <= 0 && yMax >= 0
+    ? px([0, 0])[1]
+    : yMax < 0 ? gy0 : gy1 // negative-only: zero is above; positive-only: below
+  const axisX = xMin <= 0 && xMax >= 0
+    ? px([0, 0])[0]
+    : xMax < 0 ? gx1 : gx0 // negative-only: zero is right; positive-only: left
   const xA0 = xMin < 0 ? gx0 - OVER + AH : axisX
   const yA1 = yMin < 0 ? gy1 + OVER - AH : axisY
   add('line', segAttrs([xA0, axisY], [gx1 + OVER - AH, axisY], { strokeWidth: '1' }))
@@ -229,7 +254,9 @@ export function buildGraph(props) {
     const fmtTick = (n) => mathMinus((+n.toFixed(6)).toLocaleString('en-US'))
     if (yMin <= 0 && yMax >= 0) {
       const first = Math.ceil(xMin / xTickStep) * xTickStep
-      for (let mx = first; mx <= xMax + 1e-9; mx += xTickStep) {
+      const count = first <= xMax ? stepCount(first, xMax, xTickStep, 'xTickStep') : 0
+      for (let index = 0; index < count; index++) {
+        const mx = first + index * xTickStep
         if (Math.abs(mx) < 1e-9) continue
         const p = px([mx, 0])
         add('line', segAttrs([p[0], p[1] - 3], [p[0], p[1] + 3], { strokeWidth: '1' }))
@@ -238,7 +265,9 @@ export function buildGraph(props) {
     }
     if (xMin <= 0 && xMax >= 0) {
       const first = Math.ceil(yMin / yTickStep) * yTickStep
-      for (let my = first; my <= yMax + 1e-9; my += yTickStep) {
+      const count = first <= yMax ? stepCount(first, yMax, yTickStep, 'yTickStep') : 0
+      for (let index = 0; index < count; index++) {
+        const my = first + index * yTickStep
         if (Math.abs(my) < 1e-9) continue
         const p = px([0, my])
         add('line', segAttrs([p[0] - 3, p[1]], [p[0] + 3, p[1]], { strokeWidth: '1' }))
@@ -292,6 +321,9 @@ export function buildGraph(props) {
   function drawPolynomialCurve(spec, { independentMin, independentMax, pointAt, errorName, unitPx = ux }) {
     if (!Number.isFinite(spec.a) || spec.a === 0) throw new Error(`${errorName} needs a nonzero numeric a`)
     const samples = Math.max(240, Math.ceil((independentMax - independentMin) * unitPx * 4))
+    if (!Number.isFinite(samples) || samples > MAX_GENERATED_STEPS) {
+      throw new Error(`${errorName} would generate too many curve samples`)
+    }
     const runs = []
     let run = []
     for (let i = 0; i <= samples; i++) {
@@ -555,8 +587,8 @@ export function buildGraph(props) {
     maxWidth: props.maxWidth ?? Math.min(W + 20, 360),
     ariaLabel: props.ariaLabel || 'A coordinate-plane graph.',
     els,
-    // px↔math mapping, so interactive overlays (components/GraphPlot.jsx)
-    // share the exact same coordinate transform as the renderer.
+    // px↔math mapping, so the <graph-plot> interactive overlay shares the
+    // exact same coordinate transform as the renderer.
     map: {
       toPx: px,
       toMath: ([X, Y]) => [(X - ox) / ux, (oy - Y) / uy],
@@ -587,9 +619,10 @@ export function buildGraph(props) {
  */
 export function buildNumberLine(props) {
   const { min, max, marker, shade, title, points = [] } = props
-  if (!Number.isFinite(min) || !Number.isFinite(max) || max <= min) {
+  if (!Number.isSafeInteger(min) || !Number.isSafeInteger(max) || max <= min) {
     throw new Error('NumberLine needs integer min < max')
   }
+  const tickCount = stepCount(min, max, 1, 'NumberLine range')
   const LINE = 264, X0 = 28, EXT = 12 // line overshoots ticks by EXT each side
   const u = LINE / (max - min)
   const X = (v) => X0 + (v - min) * u
@@ -615,7 +648,8 @@ export function buildNumberLine(props) {
   }
 
   // ticks + integer labels
-  for (let v = Math.ceil(min); v <= Math.floor(max); v++) {
+  for (let index = 0; index < tickCount; index++) {
+    const v = min + index
     add('line', { x1: fmtN(X(v)), y1: String(yLine - 6), x2: fmtN(X(v)), y2: String(yLine + 6), stroke: 'currentColor', strokeWidth: '1.5' })
     add('text', { x: fmtN(X(v)), y: String(yLine + 25), textAnchor: 'middle', fontSize: '12', fill: 'currentColor' }, mathMinus(String(v)))
   }
@@ -865,7 +899,19 @@ export function buildFigure(props) {
 
 // ---------------------------------------------------------------------------
 /** Serialize to a plain standalone SVG string (for QA rasterization). */
-const KEBAB = { strokeWidth: 'stroke-width', strokeDasharray: 'stroke-dasharray', textAnchor: 'text-anchor', fontSize: 'font-size', fontStyle: 'font-style', strokeLinecap: 'stroke-linecap' }
+const KEBAB = {
+  strokeWidth: 'stroke-width',
+  strokeDasharray: 'stroke-dasharray',
+  strokeLinecap: 'stroke-linecap',
+  strokeLinejoin: 'stroke-linejoin',
+  strokeMiterlimit: 'stroke-miterlimit',
+  textAnchor: 'text-anchor',
+  fontSize: 'font-size',
+  fontStyle: 'font-style',
+  fontWeight: 'font-weight',
+  fillRule: 'fill-rule',
+  clipRule: 'clip-rule',
+}
 const escXml = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
 export function toSvgString(props, { color = '#111', builder = buildGraph } = {}) {

@@ -2,11 +2,10 @@
   Athenaeum override — BOOK-LINEAR prev/next pager.
 
   Hextra's default pager uses .PrevInSection/.NextInSection, which stops at
-  chapter boundaries. The old Nextra site paged linearly across the WHOLE book
-  (last section of a chapter → next chapter's first section). This rebuilds the
-  book's reading order (book cover → each chapter cover → its sections → next
-  chapter …, with book-level knowledge-checks interleaved by weight) and walks
-  that flat list. Labels come from utils/title, same as the theme.
+  chapter boundaries. This project requires continuous book reading order
+  (last section of a chapter → next chapter's first section), so this rebuilds
+  the flat book sequence, including weighted knowledge checks. Labels come from
+  utils/title, the same helper used by the theme.
 */ -}}
 {{- $page := . -}}
 {{- $subject := $page.FirstSection -}}

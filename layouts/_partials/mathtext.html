@@ -1,11 +1,9 @@
 {{- /*
-  mathtext — render a prop string that mixes prose and inline $...$ math,
-  the way MathText.jsx did on the old site. Used by component shortcodes
-  (fillin, later multiplechoice, …) for their question / hint / answerDisplay
-  text so the math is typeset at BUILD time (no flash of raw LaTeX, and it
-  works even in build-time math mode where no client KaTeX JS is present).
+  mathtext — render a shortcode string that mixes prose and inline $...$ math.
+  Interactive exercise shortcodes use it for question, hint, and answerDisplay
+  text so math is typeset at build time with no flash of raw LaTeX.
 
-  Rules (identical to MathText.jsx):
+  Rules:
     - `$...$` runs are rendered with KaTeX (inline mode).
     - `\$` is a literal dollar sign (money), never a delimiter.
 

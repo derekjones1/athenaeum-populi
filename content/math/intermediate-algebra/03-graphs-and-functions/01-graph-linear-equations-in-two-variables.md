@@ -1015,7 +1015,7 @@ occurs when $x$ is zero.
 
 **Example.** Find the $x$- and $y$-intercepts on each graph shown.
 
-<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0.5rem' }}>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem">
   <div class="ap-figure">
 <svg role="img" aria-label="A line crossing the axes at (4, 0) and (0, 2)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 170" width="148" height="170" font-family="Helvetica, Arial, sans-serif">
   <line x1="22" y1="148" x2="22" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>

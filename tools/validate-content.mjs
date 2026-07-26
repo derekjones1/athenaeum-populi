@@ -1,16 +1,15 @@
 /**
  * Content-structure validator — Hugo edition.
- * Retarget of the old scripts/validate-content.mjs. Nextra's `_meta.js` is gone;
- * Hugo orders by frontmatter `weight`, so this checks weights instead of _meta
- * sync. Everything else (required frontmatter, sequential numeric prefixes,
- * source-number cross-checks) carries over.
+ * Hugo orders by frontmatter `weight`, so this checks weights, required
+ * frontmatter, sequential numeric prefixes, source-number cross-checks,
+ * landing-page inventories, and Knowledge Check coverage/ranges.
  *
  * Hierarchy: content/ (0) → subject/ (1) → book/ (2) → chapter/ (3).
  * Section landings are `_index.md`; sections are `NN-slug.md`.
  *
  * Zero deps. `npm run validate`. Exits non-zero with a list of problems.
  */
-import { readdirSync, readFileSync, statSync, existsSync } from 'node:fs';
+import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join, basename, dirname, relative } from 'node:path';
 
 // Roles are keyed off depth from the content root (content=0, subject=1,
@@ -24,6 +23,99 @@ const IGNORED = new Set(['.DS_Store']);
 const frontOf = (src) => (/^---\r?\n([\s\S]*?)\r?\n---/.exec(src) || [, null])[1];
 const hasKey = (fm, k) => new RegExp(`^${k}:\\s*\\S`, 'm').test(fm ?? '');
 const val = (fm, k) => (fm?.match(new RegExp(`^${k}:\\s*["']?([^"'\\n]+)["']?\\s*$`, 'm')) || [])[1];
+const rangeOf = (value) => {
+  const match = String(value || '').match(/^(\d+)-(\d+)$/);
+  if (!match) return null;
+  const range = [Number(match[1]), Number(match[2])];
+  return range[0] <= range[1] ? range : null;
+};
+const normalizedText = (value) => String(value || '').replace(/\s+/g, ' ').trim();
+
+function orderedLandingTitles(src, heading) {
+  const start = new RegExp(`^## ${heading}\\s*$`, 'm').exec(src);
+  if (!start) return null;
+  const remainder = src.slice(start.index + start[0].length);
+  const nextHeading = /^##\s+/m.exec(remainder);
+  const section = nextHeading ? remainder.slice(0, nextHeading.index) : remainder;
+  return [...section.matchAll(/^-\s+\*\*([\s\S]*?)\*\*\s+—/gm)]
+    .map((match) => normalizedText(match[1]));
+}
+
+function expectedChildTitles(dir, entries) {
+  return entries
+    .map((name) => {
+      const file = name.endsWith('.md') ? join(dir, name) : join(dir, name, '_index.md');
+      if (!existsSync(file)) return null;
+      const fm = frontOf(readFileSync(file, 'utf8'));
+      return { name, title: normalizedText(val(fm, 'title')) };
+    })
+    .filter((entry) => entry?.title)
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map((entry) => entry.title);
+}
+
+function checkKnowledgeCheck(file, fm, rel) {
+  const sourceRange = rangeOf(val(fm, 'source_chapters'));
+  if (!sourceRange) {
+    errors.push(`${rel}: knowledge check needs \`source_chapters:\` like "1-6"`);
+    return;
+  }
+
+  const filenameMatch = basename(file).match(/^knowledge-check-(\d{2})-(\d{2})\.md$/);
+  const filenameRange = filenameMatch
+    ? [Number(filenameMatch[1]), Number(filenameMatch[2])]
+    : null;
+  if (!filenameRange || filenameRange[0] !== sourceRange[0] || filenameRange[1] !== sourceRange[1]) {
+    errors.push(`${rel}: filename range must match source_chapters "${sourceRange.join('-')}"`);
+  }
+
+  const title = val(fm, 'title') || '';
+  const titleMatch = title.match(/Chapters?\s+(\d+)\s*[–-]\s*(\d+)/i);
+  const titleRange = titleMatch ? [Number(titleMatch[1]), Number(titleMatch[2])] : null;
+  if (!titleRange || titleRange[0] !== sourceRange[0] || titleRange[1] !== sourceRange[1]) {
+    errors.push(`${rel}: title range must match source_chapters "${sourceRange.join('-')}"`);
+  }
+
+  const src = readFileSync(file, 'utf8');
+  const chapterHeadings = [...src.matchAll(/^## Chapter\s+(\d+)\b/gm)].map((match) => Number(match[1]));
+  const expectedChapters = Array.from(
+    { length: sourceRange[1] - sourceRange[0] + 1 },
+    (_, index) => sourceRange[0] + index,
+  );
+  if (JSON.stringify(chapterHeadings) !== JSON.stringify(expectedChapters)) {
+    errors.push(`${rel}: chapter headings ${JSON.stringify(chapterHeadings)} must exactly cover ${JSON.stringify(expectedChapters)}`);
+  }
+
+  const sectionHeadings = [...src.matchAll(/^###\s+(\d+)\.(\d+)\s+(.+?)\s*$/gm)]
+    .map((match) => ({
+      id: `${Number(match[1])}.${Number(match[2])}`,
+      title: normalizedText(match[3]),
+    }));
+  const expectedSections = [];
+  const bookDir = dirname(file);
+  for (const chapter of expectedChapters) {
+    const chapterPrefix = String(chapter).padStart(2, '0') + '-';
+    const chapterDir = readdirSync(bookDir, { withFileTypes: true })
+      .find((entry) => entry.isDirectory() && entry.name.startsWith(chapterPrefix));
+    if (!chapterDir) {
+      errors.push(`${rel}: no authored chapter directory found for Chapter ${chapter}`);
+      continue;
+    }
+    for (const page of readdirSync(join(bookDir, chapterDir.name)).sort()) {
+      const match = page.match(/^(\d{2})-.*\.md$/);
+      if (match) {
+        const sectionFm = frontOf(readFileSync(join(bookDir, chapterDir.name, page), 'utf8'));
+        expectedSections.push({
+          id: `${chapter}.${Number(match[1])}`,
+          title: normalizedText(val(sectionFm, 'title')),
+        });
+      }
+    }
+  }
+  if (JSON.stringify(sectionHeadings) !== JSON.stringify(expectedSections)) {
+    errors.push(`${rel}: section headings and titles must exactly match the authored sections in Chapters ${sourceRange.join('-')}`);
+  }
+}
 
 function checkFront(file, { isBookRoot, isChapterIndex, isNumberedSection, isKnowledgeCheck }) {
   const rel = relative(ROOT, file);
@@ -39,7 +131,7 @@ function checkFront(file, { isBookRoot, isChapterIndex, isNumberedSection, isKno
       if (dirCh && got && Number(got) !== Number(dirCh)) errors.push(`${rel}: source_chapter "${got}" ≠ folder number ${Number(dirCh)}`);
     }
   }
-  if (isKnowledgeCheck && !/^source_chapters:\s*["']?\d+-\d+["']?\s*$/m.test(fm)) errors.push(`${rel}: knowledge check needs \`source_chapters:\` like "1-6"`);
+  if (isKnowledgeCheck) checkKnowledgeCheck(file, fm, rel);
   if (isNumberedSection) {
     if (!/^source_section:\s*["']?\d+\.\d+["']?\s*$/m.test(fm)) errors.push(`${rel}: numbered section needs \`source_section:\` like "1.1"`);
     else {
@@ -79,6 +171,40 @@ function checkDir(dir, depth) {
     weights.forEach((w, i) => { if (w !== i + 1) { errors.push(`${rel}: weights ${JSON.stringify(weights)} — expected sequential 1…${weights.length}`); } });
   }
 
+  // --- non-overlapping Knowledge Check ranges --------------------------------
+  if (depth === 2) {
+    const checks = pages
+      .filter((page) => isKC(page, depth))
+      .map((page) => {
+        const file = join(dir, page + '.md');
+        const fm = frontOf(readFileSync(file, 'utf8'));
+        return {
+          page,
+          range: rangeOf(val(fm, 'source_chapters')),
+          weight: Number(val(fm, 'weight')),
+        };
+      })
+      .filter((entry) => entry.range)
+      .sort((a, b) => a.range[0] - b.range[0]);
+    for (let i = 1; i < checks.length; i++) {
+      if (checks[i].range[0] <= checks[i - 1].range[1]) {
+        errors.push(`${rel}: Knowledge Check ranges overlap (${checks[i - 1].page} and ${checks[i].page})`);
+      }
+    }
+    for (const check of checks) {
+      const endingPrefix = String(check.range[1]).padStart(2, '0') + '-';
+      const endingChapter = folders.find((folder) => folder.startsWith(endingPrefix));
+      if (!endingChapter) continue;
+      const chapterFm = frontOf(readFileSync(join(dir, endingChapter, '_index.md'), 'utf8'));
+      const chapterWeight = Number(val(chapterFm, 'weight'));
+      if (Number.isFinite(chapterWeight)
+        && Number.isFinite(check.weight)
+        && check.weight !== chapterWeight + 1) {
+        errors.push(`${rel}/${check.page}: weight ${check.weight} must place it immediately after Chapter ${check.range[1]} (weight ${chapterWeight})`);
+      }
+    }
+  }
+
   // --- required frontmatter -------------------------------------------------
   for (const p of pages) checkFront(join(dir, p + '.md'), {
     isBookRoot: false,
@@ -86,12 +212,31 @@ function checkDir(dir, depth) {
     isNumberedSection: depth === 3 && /^\d{2}-/.test(p),
     isKnowledgeCheck: isKC(p, depth),
   });
-  if (existsSync(join(dir, '_index.md'))) checkFront(join(dir, '_index.md'), {
-    isBookRoot: depth === 2,
-    isChapterIndex: depth === 3,
-    isNumberedSection: false,
-    isKnowledgeCheck: false,
-  });
+  if (existsSync(join(dir, '_index.md'))) {
+    const indexFile = join(dir, '_index.md');
+    checkFront(indexFile, {
+      isBookRoot: depth === 2,
+      isChapterIndex: depth === 3,
+      isNumberedSection: false,
+      isKnowledgeCheck: false,
+    });
+
+    if (depth === 2 || depth === 3) {
+      const src = readFileSync(indexFile, 'utf8');
+      const heading = depth === 2 ? 'Chapters' : 'Sections';
+      const listed = orderedLandingTitles(src, heading);
+      const expected = depth === 2
+        ? expectedChildTitles(dir, folders.filter((name) => /^\d{2}-/.test(name)))
+        : expectedChildTitles(dir, entries
+          .filter((entry) => entry.isFile() && /^\d{2}-.*\.md$/.test(entry.name))
+          .map((entry) => entry.name));
+      if (listed == null) {
+        errors.push(`${rel}/_index.md: missing \`## ${heading}\` list`);
+      } else if (JSON.stringify(listed) !== JSON.stringify(expected)) {
+        errors.push(`${rel}/_index.md: ${heading.toLowerCase()} list ${JSON.stringify(listed)} must match authored titles ${JSON.stringify(expected)}`);
+      }
+    }
+  }
 
   for (const fdr of folders) checkDir(join(dir, fdr), depth + 1);
 }

@@ -53,13 +53,13 @@ weight: 13
 >}}
 
 {{< fillin
-  question="For the number $\tfrac{2}{5}$, find (a) the additive inverse."
+  question="For the number $\tfrac{2}{5}$, find the additive inverse."
   answer="-\frac{2}{5}"
   answerDisplay="$-\tfrac{2}{5}$"
 >}}
 
 {{< fillin
-  question="For the number $\tfrac{2}{5}$, find (b) the multiplicative inverse."
+  question="For the number $\tfrac{2}{5}$, find the multiplicative inverse."
   answer="\frac{5}{2}"
   answerDisplay="$\tfrac{5}{2}$"
 >}}
@@ -224,34 +224,34 @@ weight: 13
 >}}
 
 {{< fillin
-  question="One number is nine less than another. Their sum is twenty-seven. Find (a) the smaller number."
+  question="One number is nine less than another. Their sum is twenty-seven. Find the smaller number."
   answer="9"
 >}}
 
 {{< fillin
-  question="One number is nine less than another. Their sum is twenty-seven. Find (b) the larger number."
+  question="One number is nine less than another. Their sum is twenty-seven. Find the larger number."
   answer="18"
 >}}
 
 ### 9.2 Solve Money Applications
 
 {{< fillin
-  question="Bonita has \$2.95 in dimes and quarters in her pocket. If she has 5 more dimes than quarters, find (a) the number of quarters."
+  question="Bonita has \$2.95 in dimes and quarters in her pocket. If she has 5 more dimes than quarters, find the number of quarters."
   answer="7"
 >}}
 
 {{< fillin
-  question="Bonita has \$2.95 in dimes and quarters in her pocket. If she has 5 more dimes than quarters, find (b) the number of dimes."
+  question="Bonita has \$2.95 in dimes and quarters in her pocket. If she has 5 more dimes than quarters, find the number of dimes."
   answer="12"
 >}}
 
 {{< fillin
-  question="Paulette has \$140 in \$5 and \$10 bills. The number of \$10 bills is one less than twice the number of \$5 bills. Find (a) the number of \$5 bills."
+  question="Paulette has \$140 in \$5 and \$10 bills. The number of \$10 bills is one less than twice the number of \$5 bills. Find the number of \$5 bills."
   answer="6"
 >}}
 
 {{< fillin
-  question="Paulette has \$140 in \$5 and \$10 bills. The number of \$10 bills is one less than twice the number of \$5 bills. Find (b) the number of \$10 bills."
+  question="Paulette has \$140 in \$5 and \$10 bills. The number of \$10 bills is one less than twice the number of \$5 bills. Find the number of \$10 bills."
   answer="11"
 >}}
 
@@ -309,13 +309,13 @@ weight: 13
 >}}
 
 {{< fillin
-  question="A circular mosaic has radius 3 meters. Find (a) the circumference of the mosaic. Round to the nearest hundredth."
+  question="A circular mosaic has radius 3 meters. Find the circumference of the mosaic. Round to the nearest hundredth."
   answer="18.84"
   answerDisplay="18.84 m"
 >}}
 
 {{< fillin
-  question="A circular mosaic has radius 3 meters. Find (b) the area of the mosaic. Round to the nearest hundredth."
+  question="A circular mosaic has radius 3 meters. Find the area of the mosaic. Round to the nearest hundredth."
   answer="28.26"
   answerDisplay="28.26 sq. m"
 >}}
@@ -335,13 +335,13 @@ weight: 13
 >}}
 
 {{< fillin
-  question="A rectangular solid has length 14 centimeters, width 4.5 centimeters, and height 10 centimeters. Find (a) the volume."
+  question="A rectangular solid has length 14 centimeters, width 4.5 centimeters, and height 10 centimeters. Find the volume."
   answer="630"
   answerDisplay="630 cubic cm"
 >}}
 
 {{< fillin
-  question="A rectangular solid has length 14 centimeters, width 4.5 centimeters, and height 10 centimeters. Find (b) the surface area."
+  question="A rectangular solid has length 14 centimeters, width 4.5 centimeters, and height 10 centimeters. Find the surface area."
   answer="496"
   answerDisplay="496 sq. cm"
 >}}

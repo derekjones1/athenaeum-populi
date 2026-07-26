@@ -27,6 +27,10 @@
         await pagefind.options({ excerptLength: 24 });
         return pagefind;
       });
+      const attempt = pagefindPromise;
+      attempt.catch(() => {
+        if (pagefindPromise === attempt) pagefindPromise = undefined;
+      });
     }
     return pagefindPromise;
   }
@@ -46,9 +50,13 @@
 
   function hide(wrapper, clear = false) {
     const { input, results, shortcut } = parts(wrapper);
+    const sequence = (state.get(wrapper)?.sequence || 0) + 1;
+    state.set(wrapper, { sequence });
     results.classList.add('hx:hidden');
     results.replaceChildren();
     results.dataset.count = '0';
+    input.setAttribute('aria-expanded', 'false');
+    input.removeAttribute('aria-activedescendant');
     if (clear) {
       input.value = '';
       input.dispatchEvent(new Event('input'));
@@ -106,11 +114,18 @@
   }
 
   function setActive(results, index) {
-    results.querySelector('.hextra-search-active')?.classList.remove('hextra-search-active');
+    const input = results.closest('.hextra-search-wrapper')?.querySelector('.hextra-search-input');
+    const current = results.querySelector('.hextra-search-active');
+    current?.classList.remove('hextra-search-active');
+    current?.setAttribute('aria-selected', 'false');
     const next = results.querySelector(`[data-index="${index}"]`);
     if (next) {
       next.classList.add('hextra-search-active');
+      next.setAttribute('aria-selected', 'true');
+      input?.setAttribute('aria-activedescendant', next.id);
       next.scrollIntoView({ block: 'nearest' });
+    } else {
+      input?.removeAttribute('aria-activedescendant');
     }
   }
 
@@ -120,14 +135,16 @@
   }
 
   function render(wrapper, records, query, total) {
-    const { results, status } = parts(wrapper);
+    const { input, results, status } = parts(wrapper);
     results.replaceChildren();
     results.classList.remove('hx:hidden');
     results.dataset.count = String(records.length);
+    input.setAttribute('aria-expanded', 'true');
 
     if (!records.length) {
-      const empty = document.createElement('span');
+      const empty = document.createElement('li');
       empty.className = 'hextra-search-no-result';
+      empty.setAttribute('role', 'presentation');
       empty.textContent = 'No results found.';
       results.appendChild(empty);
       status.textContent = 'No results found.';
@@ -138,16 +155,22 @@
     let previousContext = null;
     records.forEach((record, index) => {
       if (record.context !== previousContext) {
-        const prefix = document.createElement('div');
+        const prefix = document.createElement('li');
         prefix.className = 'hextra-search-prefix';
+        prefix.setAttribute('role', 'presentation');
         prefix.textContent = record.context || 'Athenaeum Populi';
         fragment.appendChild(prefix);
         previousContext = record.context;
       }
 
       const item = document.createElement('li');
+      item.setAttribute('role', 'presentation');
       const link = document.createElement('a');
       link.dataset.index = String(index);
+      link.id = `${results.id}-option-${index}`;
+      link.setAttribute('role', 'option');
+      link.setAttribute('aria-selected', String(index === 0));
+      link.tabIndex = -1;
       link.href = record.url;
       if (index === 0) link.classList.add('hextra-search-active');
 
@@ -169,6 +192,7 @@
       fragment.appendChild(item);
     });
     results.appendChild(fragment);
+    setActive(results, 0);
     status.textContent = `${Math.min(records.length, total)} of ${total} results shown.`;
   }
 
@@ -183,7 +207,9 @@
     }
 
     results.classList.remove('hx:hidden');
-    results.innerHTML = '<span class="hextra-search-no-result">Searching…</span>';
+    input.setAttribute('aria-expanded', 'true');
+    input.removeAttribute('aria-activedescendant');
+    results.innerHTML = '<li class="hextra-search-no-result" role="presentation">Searching…</li>';
     status.textContent = 'Searching…';
 
     try {
@@ -204,8 +230,9 @@
       });
       render(wrapper, records, query, response.unfilteredResultCount);
     } catch (error) {
+      if (state.get(wrapper)?.sequence !== current) return;
       console.error('Pagefind search failed', error);
-      results.innerHTML = '<span class="hextra-search-no-result">Search is temporarily unavailable.</span>';
+      results.innerHTML = '<li class="hextra-search-no-result" role="presentation">Search is temporarily unavailable.</li>';
       status.textContent = 'Search is temporarily unavailable.';
     }
   }
@@ -236,13 +263,18 @@
   for (const wrapper of wrappers) {
     const { input, shortcut } = parts(wrapper);
     let timer;
-    input.addEventListener('focus', loadPagefind);
+    input.addEventListener('focus', () => {
+      loadPagefind().catch(() => {});
+    });
     input.addEventListener('input', () => {
       if (shortcut) shortcut.style.opacity = input.value ? 0 : 100;
       window.clearTimeout(timer);
       timer = window.setTimeout(() => search(wrapper), 80);
     });
     input.addEventListener('keydown', (event) => handleKeys(wrapper, event));
+    wrapper.addEventListener('focusout', (event) => {
+      if (!event.relatedTarget || !wrapper.contains(event.relatedTarget)) hide(wrapper);
+    });
   }
 
   document.addEventListener('keydown', (event) => {

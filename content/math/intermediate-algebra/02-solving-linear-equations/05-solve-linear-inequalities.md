@@ -58,7 +58,7 @@ It is not an actual number.
   <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="239.2" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">(</text>
+  <text x="239.2" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
   <text x="239.2" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &gt; 3</text>
 </svg>
 </div>
@@ -104,7 +104,7 @@ infinity.”
   <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="186.4" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">]</text>
+  <text x="186.4" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
   <text x="186.4" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ 1</text>
 </svg>
 </div>
@@ -133,7 +133,7 @@ notation: (a) $x\geq-3$ (b) $x<2.5$ (c) $x\leq-\tfrac35$.
   <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
-  <text x="116" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">[</text>
+  <text x="116" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
   <text x="116" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≥ −3</text>
 </svg>
 </div>
@@ -154,7 +154,7 @@ notation: (a) $x\geq-3$ (b) $x<2.5$ (c) $x\leq-\tfrac35$.
   <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <text x="248" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">)</text>
+  <text x="248" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">)</text>
   <text x="248" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &lt; 2.5</text>
 </svg>
 </div>
@@ -175,7 +175,7 @@ notation: (a) $x\geq-3$ (b) $x<2.5$ (c) $x\leq-\tfrac35$.
   <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">0</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">1</text>
-  <text x="151.2" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">]</text>
+  <text x="151.2" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
   <text x="151.2" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ −3/5</text>
 </svg>
 </div>
@@ -349,7 +349,7 @@ $$
   <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <text x="127" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">]</text>
+  <text x="127" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
   <text x="127" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≤ 9/8</text>
 </svg>
 </div>
@@ -378,7 +378,7 @@ $$
   <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">6</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">7</text>
-  <text x="204" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">)</text>
+  <text x="204" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">)</text>
   <text x="204" y="16" text-anchor="middle" font-size="14" fill="currentColor">y &lt; 6</text>
 </svg>
 </div>
@@ -408,7 +408,7 @@ $$
   <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">−24</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">−23</text>
-  <text x="116" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">(</text>
+  <text x="116" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
   <text x="116" y="16" text-anchor="middle" font-size="14" fill="currentColor">z &gt; −25</text>
 </svg>
 </div>
@@ -448,7 +448,7 @@ $$\frac{-13m}{-13}\leq\frac{65}{-13},\qquad m\leq-5.$$
   <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
-  <text x="204" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">]</text>
+  <text x="204" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
   <text x="204" y="16" text-anchor="middle" font-size="14" fill="currentColor">m ≤ −5</text>
 </svg>
 </div>
@@ -472,7 +472,7 @@ $$-2\left(\frac n{-2}\right)\leq-2(8),\qquad n\leq-16.$$
   <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">−16</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">−15</text>
-  <text x="204" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">]</text>
+  <text x="204" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">]</text>
   <text x="204" y="16" text-anchor="middle" font-size="14" fill="currentColor">n ≤ −16</text>
 </svg>
 </div>
@@ -518,7 +518,7 @@ $$
   <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
-  <text x="168.8" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">[</text>
+  <text x="168.8" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
   <text x="168.8" y="16" text-anchor="middle" font-size="14" fill="currentColor">y ≥ −17/5</text>
 </svg>
 </div>
@@ -569,7 +569,7 @@ $$
   <text x="204" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <text x="204" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">(</text>
+  <text x="204" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
   <text x="204" y="16" text-anchor="middle" font-size="14" fill="currentColor">p &gt; 2</text>
 </svg>
 </div>
@@ -682,7 +682,7 @@ $$x-27+27\geq48+27,\qquad x\geq75.$$
   <text x="226" y="70" text-anchor="middle" font-size="12" fill="currentColor">76</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">77</text>
-  <text x="160" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">[</text>
+  <text x="160" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
   <text x="160" y="16" text-anchor="middle" font-size="14" fill="currentColor">x ≥ 75</text>
 </svg>
 </div>

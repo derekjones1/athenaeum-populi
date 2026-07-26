@@ -77,13 +77,6 @@ so $\tfrac{1.50}{6} = \tfrac{2.25}{9}$.
   hint="Write the first ratio over the second, in the same order the sentence gives them."
 >}}
 
-{{< fillin
-  question="Write as a proportion: 8 adults for 36 children is the same as 12 adults for 54 children."
-  answer="\frac{8}{36}=\frac{12}{54}"
-  answerDisplay="$\tfrac{8}{36} = \tfrac{12}{54}$"
-  hint="Put adults in the numerators and children in the denominators."
->}}
-
 Look at the proportions $\tfrac{1}{2} = \tfrac{4}{8}$ and
 $\tfrac{2}{3} = \tfrac{6}{9}$. From our work with equivalent fractions we
 know these equations are true. But how do we know if an equation is a

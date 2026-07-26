@@ -1,7 +1,7 @@
 /**
- * <multiple-choice> — single-answer question with instant feedback. Vanilla
- * port of MultipleChoice.jsx. Grading is a plain comparison (string in text
- * mode, index in graph mode) — no heavy deps, so this lives in the shared
+ * <multiple-choice> — framework-free single-answer question with instant
+ * feedback. Grading is a plain comparison (string in text mode, index in
+ * graph mode), so this lives in the shared
  * components bundle. Options are already rendered (build-time); this class just
  * wires clicks, feedback, and the hint toggle.
  */
@@ -10,6 +10,7 @@ const COLOR = {
   correct: 'var(--ap-success, #1a7f37)',
   incorrect: 'var(--ap-error, #b42318)',
 };
+let hintSequence = 0;
 
 class MultipleChoiceElement extends HTMLElement {
   connectedCallback() {
@@ -31,12 +32,15 @@ class MultipleChoiceElement extends HTMLElement {
 
     const hintTpl = this.querySelector('template[data-slot="hint"]');
     if (hintTpl) {
+      const hintId = `ap-mc-hint-${++hintSequence}`;
       const hintBtn = document.createElement('button');
       hintBtn.type = 'button';
       hintBtn.className = 'ap-fillin-hint-toggle';
       hintBtn.textContent = 'Show hint';
       hintBtn.setAttribute('aria-expanded', 'false');
+      hintBtn.setAttribute('aria-controls', hintId);
       const hint = document.createElement('p');
+      hint.id = hintId;
       hint.className = 'ap-fillin-hint';
       hint.hidden = true;
       hint.innerHTML = hintTpl.innerHTML;

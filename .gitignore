@@ -12,18 +12,14 @@
 # Pagefind index (generated at build time)
 /public/pagefind/
 
-# Broken partial theme clone left by the sandbox mount (see MIGRATION-STATUS).
-# Derek: safe to `rm -rf themes/_hextra_broken` locally.
-/themes/_hextra_broken/
-
-# Phase 5 authoring-workflow demo (safe to delete; not part of the book)
-/content/authoring-demo.md
-
 # OS cruft
 .DS_Store
 
 # IDE-local project state
 .idea/
-/MIGRATION.md
-/MIGRATION-STATUS.md
-/docs/main-branch-promotion-checklist.md
+
+# Local source textbooks (reference material, not site assets)
+/sources/precalculus-2e_-_WEB.pdf
+/sources/elementary-algebra-2e_-_WEB.pdf
+/sources/intermediate-algebra-2e_-_WEB.pdf
+/sources/prealgebra-2e_-_WEB.pdf

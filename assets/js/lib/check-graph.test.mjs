@@ -1,5 +1,7 @@
 import assert from 'node:assert/strict';
 import { checkGraphPlot, quadraticVertex } from './check-graph.mjs';
+import { buildGraph, buildNumberLine, toSvgString } from './graph-core.mjs';
+import { findFreeGridPoint, parseGraphPlotConfig } from './graph-plot-config.mjs';
 
 const cases = [
   // --- LINE mode --------------------------------------------------------
@@ -7,6 +9,7 @@ const cases = [
   [[[0, 1], [1, 3]], { slope: 2, intercept: 1 }, 'correct'],
   [[[-2, -3], [3, 7]], { slope: 2, intercept: 1 }, 'correct'],
   [[[1, 3], [0, 1]], { slope: 2, intercept: 1 }, 'correct'],
+  [[[0, 0], [1, 2]], { slope: 2 }, 'correct'],
   // diagnostics: right slope / right intercept
   [[[0, 2], [1, 4]], { slope: 2, intercept: 1 }, 'slopeRight'],
   [[[0, 1], [1, 4]], { slope: 2, intercept: 1 }, 'interceptRight'],
@@ -76,4 +79,68 @@ for (const [pts, answer, expected] of cases) {
 assert.deepEqual(quadraticVertex({ a: 1, b: -4, c: 3 }), [2, -1]);
 const [h0, k0] = quadraticVertex({ a: -2 });
 assert.ok(h0 === 0 && k0 === 0, 'vertex of y = -2x² is the origin');
+
+// Negative-only ranges put zero on the top/right edges, not the bottom/left.
+const negative = buildGraph({ xMin: -8, xMax: -2, yMin: -6, yMax: -1, grid: false });
+const axisLines = negative.els.filter(({ tag, attrs }) => (
+  tag === 'line' && attrs.strokeWidth === '1'
+)).slice(0, 2);
+assert.equal(axisLines[0].attrs.y1, 26, 'negative-only x-axis belongs on the top edge');
+assert.equal(axisLines[0].attrs.y2, 26, 'negative-only x-axis stays horizontal');
+assert.equal(axisLines[1].attrs.x1, 146, 'negative-only y-axis belongs on the right edge');
+assert.equal(axisLines[1].attrs.x2, 146, 'negative-only y-axis stays vertical');
+
+assert.throws(
+  () => buildGraph({ xGridStep: 0 }),
+  /grid steps must be positive/,
+  'zero grid steps must fail instead of hanging',
+);
+assert.throws(
+  () => buildGraph({ xMin: 0, xMax: 1, xGridStep: 0.00001 }),
+  /too many elements/,
+  'an impractically small grid step must fail instead of monopolizing the renderer',
+);
+assert.throws(
+  () => buildNumberLine({ min: 0, max: 20_000 }),
+  /too many elements/,
+  'an impractically large number line must fail instead of monopolizing the renderer',
+);
+
+const serialized = toSvgString({}, {
+  builder: () => ({
+    viewBox: '0 0 10 10',
+    width: 10,
+    height: 10,
+    els: [{
+      tag: 'path',
+      attrs: { d: 'M0 0L1 1', strokeLinejoin: 'round', fontWeight: '600' },
+    }],
+  }),
+});
+assert.match(serialized, /stroke-linejoin="round"/);
+assert.match(serialized, /font-weight="600"/);
+assert.doesNotMatch(serialized, /strokeLinejoin|fontWeight/);
+
+const narrowConfig = parseGraphPlotConfig(
+  '{"answer":{"slope":1,"intercept":0},"grid":{"xMin":0,"xMax":1,"yMin":0,"yMax":1}}',
+  1,
+);
+const firstFree = findFreeGridPoint(narrowConfig, [[1, 1]]);
+assert.ok(firstFree, 'a narrow grid must return a different point instead of looping');
+assert.notDeepEqual(firstFree, [1, 1]);
+assert.equal(
+  findFreeGridPoint(narrowConfig, [[0, 0], [0, 1], [1, 0], [1, 1]]),
+  null,
+  'a full grid reports no free point',
+);
+for (const [raw, snap, pattern] of [
+  ['{', 1, /valid JSON/],
+  ['{"answer":{"slope":1},"grid":{"xMin":2,"xMax":1}}', 1, /minimum/],
+  ['{"answer":{"slope":1},"grid":{}}', 0, /snap/],
+  ['{"answer":{"quadratic":{"a":0}},"grid":{}}', 1, /nonzero/],
+  ['{"answer":{"x":1,"slope":2},"grid":{}}', 1, /exactly one/],
+  ['{"answer":{"slope":1},"grid":{"xMin":0,"xMax":1,"xGridStep":0.00001}}', 1, /too many/],
+]) {
+  assert.throws(() => parseGraphPlotConfig(raw, snap), pattern);
+}
 console.log(`check-graph: ${n} cases passed`);

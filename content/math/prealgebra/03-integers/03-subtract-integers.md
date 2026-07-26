@@ -30,10 +30,10 @@ $-5-3$, and $5-(-3)$.
 **Example.** Model $5 - 3$. Start with $5$ positives. Take away $3$
 positives. There are $2$ positives left, so $5 - 3 = 2$.
 
-<svg viewBox="0 0 220 70" role="img" aria-label="Five blue positive counters with three circled in red and removed, leaving two positives." style={{ maxWidth: 220, display: 'block', margin: '1.5rem auto' }}>
-  <ellipse cx="52" cy="35" rx="50" ry="22" fill="none" stroke="#c0392b" strokeWidth="1.5" />
-  {[0,1,2].map(i => <circle key={i} cx={20+i*32} cy="35" r="13" fill="none" stroke="#2b7fb8" strokeWidth="2" />)}
-  {[0,1].map(i => <circle key={i} cx={148+i*32} cy="35" r="13" fill="none" stroke="#2b7fb8" strokeWidth="2" />)}
+<svg viewBox="0 0 220 70" role="img" aria-label="Five blue positive counters with three circled in red and removed, leaving two positives." style="max-width: 220px; display: block; margin: 1.5rem auto">
+  <ellipse cx="52" cy="35" rx="50" ry="22" fill="none" stroke="#c0392b" stroke-width="1.5" />
+  <circle cx="20" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="52" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="84" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
+  <circle cx="148" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="180" cy="35" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
 </svg>
 
 {{< fillin

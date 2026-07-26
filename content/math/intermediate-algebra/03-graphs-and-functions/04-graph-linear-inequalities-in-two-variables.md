@@ -68,7 +68,7 @@ $3$, and putting an open parenthesis at $3$.
   <text x="265.6" y="55" text-anchor="middle" font-size="12" fill="currentColor">4</text>
   <line x1="292" y1="24" x2="292" y2="36" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="55" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="239.2" y="37" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">(</text>
+  <text x="239.2" y="37" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
 </svg>
 </div>
 
@@ -168,24 +168,6 @@ no
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Is $(-2,1)$ a solution to $y > x-3$?"
-  hint="Substitute $x=-2$ and $y=1$."
-  answer="yes"
->}}
-yes
-no
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Is $(-5,-3)$ a solution to $y > x-3$?"
-  hint="Substitute $x=-5$ and $y=-3$."
-  answer="yes"
->}}
-yes
-no
-{{< /multiplechoice >}}
-
-{{< multiplechoice
   question="Is $(5,1)$ a solution to $y > x-3$?"
   hint="Substitute $x=5$ and $y=1$."
   answer="no"
@@ -219,24 +201,6 @@ no
   question="Is $(-2,-1)$ a solution to $y < x+1$?"
   hint="Substitute $x=-2$ and $y=-1$."
   answer="no"
->}}
-yes
-no
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Is $(3,4)$ a solution to $y < x+1$?"
-  hint="Substitute $x=3$ and $y=4$."
-  answer="no"
->}}
-yes
-no
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Is $(-1,-4)$ a solution to $y < x+1$?"
-  hint="Substitute $x=-1$ and $y=-4$."
-  answer="yes"
 >}}
 yes
 no

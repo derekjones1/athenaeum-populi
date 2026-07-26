@@ -118,13 +118,6 @@ $0.54$ is equivalent to $\tfrac{5}{1}$.
   hint="Move both decimal points 1 place to the right ($34$ to $153$), then simplify."
 >}}
 
-{{< fillin
-  question="Write each ratio as a fraction of whole numbers, fully simplified: 3.4 to 0.68"
-  answer="5"
-  answerDisplay="$5$"
-  hint="Move both decimal points 2 places to the right ($340$ to $68$), then simplify — it reduces to a whole number."
->}}
-
 Some ratios compare two mixed numbers. Remember that to divide mixed
 numbers, you first rewrite them as improper fractions.
 

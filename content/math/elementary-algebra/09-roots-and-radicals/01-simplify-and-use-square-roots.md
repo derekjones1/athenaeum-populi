@@ -306,20 +306,6 @@ $$
   answerDisplay="$-10p$"
 >}}
 
-{{< fillin
-  question="Simplify $\sqrt{225m^2n^2}$."
-  answer="15mn"
-  hint="Take the square root of $225$, of $m^2$, and of $n^2$ separately."
-  answerDisplay="$15mn$"
->}}
-
-{{< fillin
-  question="Simplify $\sqrt{144p^{12}q^{20}}$."
-  answer="12p^6q^{10}"
-  hint="Take the square root of $144$ and halve each even exponent."
-  answerDisplay="$12p^6q^{10}$"
->}}
-
 ## Key terms
 
 **square** of a number — if $n^2 = m$, then $m$ is the square of $n$. **square

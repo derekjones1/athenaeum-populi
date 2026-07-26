@@ -9,7 +9,7 @@
  *   - every FillIn answer round-trips into the output
  *   - prose word-count delta within tolerance (warning only)
  *
- * Exit non-zero if any file fails a hard check. This is the Phase 3 gate.
+ * Exit non-zero if any file fails a hard check.
  *
  * Usage: node tools/verify-conversion.mjs <src-book-dir> <dest-book-dir>
  */
@@ -139,7 +139,7 @@ for (const srcFile of mdxFiles(srcDir).sort()) {
 
   // source hygiene: the source must be lint-clean going in (mechanical rules
   // in lints-source.mjs). A source error would convert into a latent bug, so
-  // it is a hard fail. (Lints get retargeted to shortcode syntax in Phase 5.)
+  // it is a hard fail.
   const lint = lintSource(src, srcFile);
   if (lint.errors.length) { hardFails++; console.error(`LINT ${rel}\n    ${lint.errors.join('\n    ')}`); }
   if (lint.warnings.length) { warns += lint.warnings.length; }

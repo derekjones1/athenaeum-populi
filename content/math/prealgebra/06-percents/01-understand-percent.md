@@ -32,107 +32,107 @@ of every $100$ community college students are female. Out of $100$ equal
 squares in a grid, $57$ would be shaded, which we write as the ratio
 $\tfrac{57}{100}$.
 
-<svg viewBox="0 0 220 220" role="img" aria-label="A 10 by 10 grid of 100 small squares. 57 of the squares, filling the first five full rows plus 7 squares of the sixth row, are shaded to represent 57 percent." style={{ maxWidth: 220, display: 'block', margin: '1.5rem auto' }}>
-  <rect x="0" y="0" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="22" y="0" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="44" y="0" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="66" y="0" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="88" y="0" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="110" y="0" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="132" y="0" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="154" y="0" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="176" y="0" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="198" y="0" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="0" y="22" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="22" y="22" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="44" y="22" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="66" y="22" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="88" y="22" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="110" y="22" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="132" y="22" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="154" y="22" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="176" y="22" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="198" y="22" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="0" y="44" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="22" y="44" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="44" y="44" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="66" y="44" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="88" y="44" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="110" y="44" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="132" y="44" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="154" y="44" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="176" y="44" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="198" y="44" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="0" y="66" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="22" y="66" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="44" y="66" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="66" y="66" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="88" y="66" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="110" y="66" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="132" y="66" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="154" y="66" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="176" y="66" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="198" y="66" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="0" y="88" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="22" y="88" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="44" y="88" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="66" y="88" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="88" y="88" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="110" y="88" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="132" y="88" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="154" y="88" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="176" y="88" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="198" y="88" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="0" y="110" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="22" y="110" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="44" y="110" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="66" y="110" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="88" y="110" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="110" y="110" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="132" y="110" width="20" height="20" fill="currentColor" fillOpacity="0.25" stroke="currentColor" strokeWidth="1" />
-  <rect x="154" y="110" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="176" y="110" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="198" y="110" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="0" y="132" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="22" y="132" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="44" y="132" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="66" y="132" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="88" y="132" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="110" y="132" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="132" y="132" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="154" y="132" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="176" y="132" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="198" y="132" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="0" y="154" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="22" y="154" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="44" y="154" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="66" y="154" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="88" y="154" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="110" y="154" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="132" y="154" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="154" y="154" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="176" y="154" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="198" y="154" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="0" y="176" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="22" y="176" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="44" y="176" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="66" y="176" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="88" y="176" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="110" y="176" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="132" y="176" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="154" y="176" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="176" y="176" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="198" y="176" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="0" y="198" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="22" y="198" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="44" y="198" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="66" y="198" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="88" y="198" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="110" y="198" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="132" y="198" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="154" y="198" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="176" y="198" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
-  <rect x="198" y="198" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1" />
+<svg viewBox="0 0 220 220" role="img" aria-label="A 10 by 10 grid of 100 small squares. 57 of the squares, filling the first five full rows plus 7 squares of the sixth row, are shaded to represent 57 percent." style="max-width: 220px; display: block; margin: 1.5rem auto">
+  <rect x="0" y="0" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="22" y="0" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="44" y="0" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="66" y="0" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="88" y="0" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="110" y="0" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="132" y="0" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="154" y="0" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="176" y="0" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="198" y="0" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="0" y="22" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="22" y="22" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="44" y="22" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="66" y="22" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="88" y="22" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="110" y="22" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="132" y="22" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="154" y="22" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="176" y="22" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="198" y="22" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="0" y="44" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="22" y="44" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="44" y="44" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="66" y="44" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="88" y="44" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="110" y="44" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="132" y="44" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="154" y="44" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="176" y="44" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="198" y="44" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="0" y="66" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="22" y="66" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="44" y="66" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="66" y="66" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="88" y="66" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="110" y="66" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="132" y="66" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="154" y="66" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="176" y="66" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="198" y="66" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="0" y="88" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="22" y="88" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="44" y="88" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="66" y="88" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="88" y="88" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="110" y="88" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="132" y="88" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="154" y="88" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="176" y="88" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="198" y="88" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="0" y="110" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="22" y="110" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="44" y="110" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="66" y="110" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="88" y="110" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="110" y="110" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="132" y="110" width="20" height="20" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1" />
+  <rect x="154" y="110" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="176" y="110" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="198" y="110" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="0" y="132" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="22" y="132" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="44" y="132" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="66" y="132" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="88" y="132" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="110" y="132" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="132" y="132" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="154" y="132" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="176" y="132" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="198" y="132" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="0" y="154" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="22" y="154" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="44" y="154" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="66" y="154" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="88" y="154" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="110" y="154" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="132" y="154" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="154" y="154" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="176" y="154" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="198" y="154" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="0" y="176" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="22" y="176" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="44" y="176" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="66" y="176" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="88" y="176" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="110" y="176" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="132" y="176" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="154" y="176" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="176" y="176" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="198" y="176" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="0" y="198" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="22" y="198" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="44" y="198" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="66" y="198" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="88" y="198" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="110" y="198" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="132" y="198" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="154" y="198" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="176" y="198" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
+  <rect x="198" y="198" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1" />
 </svg>
 
 Similarly, $25\%$ means a ratio of $\tfrac{25}{100}$, $3\%$ means a ratio of

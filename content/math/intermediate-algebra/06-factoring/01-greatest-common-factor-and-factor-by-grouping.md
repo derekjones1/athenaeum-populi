@@ -363,13 +363,6 @@ Check both results by multiplying their factors.
   hint="Group the first two terms and the last two terms. Factor a negative number from the second group."
 >}}
 
-{{< fillin
-  question="Factor by grouping: $42m^2-18m-35m+15$."
-  answer="(7m-3)(6m-5)"
-  answerDisplay="$(7m-3)(6m-5)$"
-  hint="After grouping, factor $6m$ from the first group and $-5$ from the second."
->}}
-
 ## Key terms
 
 **factoring** — splitting a product into its factors. **greatest common

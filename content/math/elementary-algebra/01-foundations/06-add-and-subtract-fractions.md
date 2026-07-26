@@ -426,13 +426,13 @@ with the LCD, $12$, and add:
 $$x + \frac{1}{3} = -\frac{3}{4} + \frac{1}{3} = -\frac{3 \cdot 3}{4 \cdot 3} + \frac{1 \cdot 4}{3 \cdot 4} = -\frac{9}{12} + \frac{4}{12} = -\frac{5}{12}$$
 
 {{< fillin
-  question="Evaluate $x + \tfrac{3}{4}$ when (a) $x = -\tfrac{7}{4}$."
+  question="Evaluate $x + \tfrac{3}{4}$ when $x = -\tfrac{7}{4}$."
   answer="-1"
   hint="Substitute $-\tfrac{7}{4}$ for $x$ — the denominators already match, so add the numerators directly."
 >}}
 
 {{< fillin
-  question="Evaluate $x + \tfrac{3}{4}$ when (b) $x = -\tfrac{5}{4}$."
+  question="Evaluate $x + \tfrac{3}{4}$ when $x = -\tfrac{5}{4}$."
   answer="-\frac{1}{2}"
   answerDisplay="$-\tfrac{1}{2}$"
   hint="Substitute $-\tfrac{5}{4}$ for $x$ — the denominators already match, so add the numerators directly, then simplify."

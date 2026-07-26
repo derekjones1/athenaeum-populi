@@ -83,24 +83,6 @@ $18$.
   hint="The digit to the right of the ones place is $5$, so add $1$ to the ones digit."
 >}}
 
-{{< fillin
-  question="Round $15.2175$ to the nearest thousandth."
-  answer="15.218"
-  hint="The digit to the right of the thousandths place is $5$, so add $1$ to the thousandths digit."
->}}
-
-{{< fillin
-  question="Round $15.2175$ to the nearest hundredth."
-  answer="15.22"
-  hint="The digit to the right of the hundredths place is $7$, which is greater than or equal to $5$."
->}}
-
-{{< fillin
-  question="Round $15.2175$ to the nearest tenth."
-  answer="15.2"
-  hint="The digit to the right of the tenths place is $1$, which is less than $5$."
->}}
-
 ## Add and subtract decimals
 
 To add or subtract decimals, we line up the decimal points. By lining up the
@@ -157,12 +139,6 @@ $$14.65 - 20 = -5.35$$
   question="Add or subtract: $-5.123 - 18.47$."
   answer="-23.593"
   hint="The difference is negative; use a placeholder zero so both numbers have three decimal places, then add."
->}}
-
-{{< fillin
-  question="Add or subtract: $37.42 - 50$."
-  answer="-12.58"
-  hint="Write $50$ as $50.00$, line up the decimal points, and subtract $37.42$ from $50.00$."
 >}}
 
 ## Multiply and divide decimals
@@ -255,24 +231,6 @@ right. A zero must be added to the end: $5.63(1000) = 5630$.
   question="Multiply $2.58$ by $1000$."
   answer="2580"
   hint="There are $3$ zeros in $1000$, so move the decimal point $3$ places to the right, adding a zero as needed."
->}}
-
-{{< fillin
-  question="Multiply $14.2$ by $10$."
-  answer="142"
-  hint="There is $1$ zero in $10$, so move the decimal point $1$ place to the right."
->}}
-
-{{< fillin
-  question="Multiply $14.2$ by $100$."
-  answer="1420"
-  hint="There are $2$ zeros in $100$, so move the decimal point $2$ places to the right, adding a zero as needed."
->}}
-
-{{< fillin
-  question="Multiply $14.2$ by $1000$."
-  answer="14200"
-  hint="There are $3$ zeros in $1000$, so move the decimal point $3$ places to the right, adding zeros as needed."
 >}}
 
 Just as with multiplication, division of signed decimals is very much like
@@ -383,12 +341,6 @@ So, $-\tfrac{5}{8} = -0.625$.
   hint="The final digit is in the thousandths place, so start with $\frac{24}{1000}$ and divide out the common factor of $8$."
 >}}
 
-{{< fillin
-  question="Write $-\tfrac{3}{8}$ as a decimal."
-  answer="-0.375"
-  hint="Divide $3$ by $8$, then attach the negative sign."
->}}
-
 A **percent** is a ratio whose denominator is $100$. Percent means per hundred.
 We use the percent symbol, $\%$, to show percent. Since a percent is a ratio, it
 can easily be expressed as a fraction. Percent means per $100$, so the
@@ -444,27 +396,6 @@ $$0.51 = 51\% \qquad 1.25 = 125\% \qquad 0.093 = 9.3\%$$
   question="Convert the percent $3.9\%$ to a decimal."
   answer="0.039"
   hint="Remove the percent sign and move the decimal point two places to the left, adding a placeholder zero."
->}}
-
-{{< fillin
-  question="Convert the decimal $0.17$ to a percent. Enter the percent value as a number (without the percent sign)."
-  answer="17"
-  answerDisplay="$17\%$"
-  hint="Move the decimal point two places to the right and add the percent sign."
->}}
-
-{{< fillin
-  question="Convert the decimal $1.75$ to a percent. Enter the percent value as a number (without the percent sign)."
-  answer="175"
-  answerDisplay="$175\%$"
-  hint="Move the decimal point two places to the right and add the percent sign."
->}}
-
-{{< fillin
-  question="Convert the decimal $0.0825$ to a percent. Enter the percent value as a number (without the percent sign)."
-  answer="8.25"
-  answerDisplay="$8.25\%$"
-  hint="Move the decimal point two places to the right and add the percent sign."
 >}}
 
 ## Simplify expressions with square roots
@@ -542,24 +473,6 @@ of the principal square root of $100$."
   hint="The negative sign is in front of the radical, so find the principal square root of $225$ and take its opposite."
 >}}
 
-{{< fillin
-  question="Simplify: $\sqrt{16}$."
-  answer="4"
-  hint="Find the positive number whose square is $16$."
->}}
-
-{{< fillin
-  question="Simplify: $\sqrt{196}$."
-  answer="14"
-  hint="Find the positive number whose square is $196$."
->}}
-
-{{< fillin
-  question="Simplify: $-\sqrt{100}$."
-  answer="-10"
-  hint="The negative sign is in front of the radical, so find the principal square root of $100$ and take its opposite."
->}}
-
 ## Identify integers, rational numbers, irrational numbers, and real numbers
 
 We have already described numbers as *counting numbers*, *whole numbers*, and
@@ -626,27 +539,27 @@ the counting numbers sit inside the whole numbers, which sit inside the
 integers, which sit inside the rational numbers; the rational numbers together
 with the irrational numbers make up the real numbers.
 
-<svg viewBox="0 0 320 300" role="img" aria-label="A nested diagram of the real number sets. Real numbers split into rational numbers and irrational numbers. Inside the rational numbers, the integers contain the whole numbers, which contain the counting numbers." style={{ maxWidth: 340, display: 'block', margin: '1.5rem auto' }}>
-  <rect x="100" y="8" width="120" height="30" rx="6" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="160" y="27" textAnchor="middle" fontSize="13" fill="currentColor">Real numbers</text>
-  <line x1="140" y1="38" x2="95" y2="62" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="180" y1="38" x2="235" y2="62" stroke="currentColor" strokeWidth="1.5" />
-  <rect x="18" y="62" width="140" height="30" rx="6" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="88" y="81" textAnchor="middle" fontSize="13" fill="currentColor">Rational numbers</text>
-  <rect x="178" y="62" width="140" height="30" rx="6" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="248" y="81" textAnchor="middle" fontSize="13" fill="currentColor">Irrational numbers</text>
-  <line x1="88" y1="118" x2="88" y2="92" stroke="currentColor" strokeWidth="1.5" />
-  <rect x="30" y="118" width="120" height="40" rx="6" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="90" y="134" textAnchor="middle" fontSize="13" fill="currentColor">Integers</text>
-  <text x="90" y="150" textAnchor="middle" fontSize="11" fill="currentColor">... −2, −1, 0, 1, 2...</text>
-  <line x1="90" y1="184" x2="90" y2="158" stroke="currentColor" strokeWidth="1.5" />
-  <rect x="30" y="184" width="120" height="40" rx="6" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="90" y="200" textAnchor="middle" fontSize="13" fill="currentColor">Whole numbers</text>
-  <text x="90" y="216" textAnchor="middle" fontSize="11" fill="currentColor">0, 1, 2, 3, ....</text>
-  <line x1="90" y1="250" x2="90" y2="224" stroke="currentColor" strokeWidth="1.5" />
-  <rect x="30" y="250" width="120" height="40" rx="6" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="90" y="266" textAnchor="middle" fontSize="13" fill="currentColor">Counting numbers</text>
-  <text x="90" y="282" textAnchor="middle" fontSize="11" fill="currentColor">1, 2, 3, ....</text>
+<svg viewBox="0 0 320 300" role="img" aria-label="A nested diagram of the real number sets. Real numbers split into rational numbers and irrational numbers. Inside the rational numbers, the integers contain the whole numbers, which contain the counting numbers." style="max-width: 340px; display: block; margin: 1.5rem auto">
+  <rect x="100" y="8" width="120" height="30" rx="6" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="160" y="27" text-anchor="middle" font-size="13" fill="currentColor">Real numbers</text>
+  <line x1="140" y1="38" x2="95" y2="62" stroke="currentColor" stroke-width="1.5" />
+  <line x1="180" y1="38" x2="235" y2="62" stroke="currentColor" stroke-width="1.5" />
+  <rect x="18" y="62" width="140" height="30" rx="6" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="88" y="81" text-anchor="middle" font-size="13" fill="currentColor">Rational numbers</text>
+  <rect x="178" y="62" width="140" height="30" rx="6" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="248" y="81" text-anchor="middle" font-size="13" fill="currentColor">Irrational numbers</text>
+  <line x1="88" y1="118" x2="88" y2="92" stroke="currentColor" stroke-width="1.5" />
+  <rect x="30" y="118" width="120" height="40" rx="6" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="90" y="134" text-anchor="middle" font-size="13" fill="currentColor">Integers</text>
+  <text x="90" y="150" text-anchor="middle" font-size="11" fill="currentColor">... −2, −1, 0, 1, 2...</text>
+  <line x1="90" y1="184" x2="90" y2="158" stroke="currentColor" stroke-width="1.5" />
+  <rect x="30" y="184" width="120" height="40" rx="6" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="90" y="200" text-anchor="middle" font-size="13" fill="currentColor">Whole numbers</text>
+  <text x="90" y="216" text-anchor="middle" font-size="11" fill="currentColor">0, 1, 2, 3, ....</text>
+  <line x1="90" y1="250" x2="90" y2="224" stroke="currentColor" stroke-width="1.5" />
+  <rect x="30" y="250" width="120" height="40" rx="6" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="90" y="266" text-anchor="middle" font-size="13" fill="currentColor">Counting numbers</text>
+  <text x="90" y="282" text-anchor="middle" font-size="11" fill="currentColor">1, 2, 3, ....</text>
 </svg>
 
 Does the term "real numbers" seem strange to you? Are there any numbers that are
@@ -737,31 +650,62 @@ improper fractions, convert to mixed numbers first: $\tfrac{6}{5} = 1\tfrac{1}{5
 $-\tfrac{5}{2} = -2\tfrac{1}{2}$, and $\tfrac{7}{3} = 2\tfrac{1}{3}$. Then plot
 each in its interval.
 
-<svg viewBox="0 0 620 90" role="img" aria-label="A number line from −6 to 6. Plotted and labeled points: −3, −5/2 (between −3 and −2), −1/4 (just left of 0), 3/4 (between 0 and 1), 6/5 (just past 1), 7/3 (between 2 and 3), and 4." style={{ maxWidth: 620, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="20" y1="55" x2="600" y2="55" stroke="currentColor" strokeWidth="1.5" />
+<svg viewBox="0 0 620 90" role="img" aria-label="A number line from −6 to 6. Plotted and labeled points: −3, −5/2 (between −3 and −2), −1/4 (just left of 0), 3/4 (between 0 and 1), 6/5 (just past 1), 7/3 (between 2 and 3), and 4." style="max-width: 620px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="55" x2="600" y2="55" stroke="currentColor" stroke-width="1.5" />
   <polygon points="20,55 30,50 30,60" fill="currentColor" />
   <polygon points="600,55 590,50 590,60" fill="currentColor" />
-  {[-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6].map((n) => {
-    const x = 60 + (n + 6) * 40;
-    return (
-      <g key={n}>
-        <line x1={x} y1="50" x2={x} y2="60" stroke="currentColor" strokeWidth="1.5" />
-        <text x={x} y="76" textAnchor="middle" fontSize="12" fill="currentColor">{n}</text>
+  <g>
+        <line x1="60" y1="50" x2="60" y2="60" stroke="currentColor" stroke-width="1.5" />
+        <text x="60" y="76" text-anchor="middle" font-size="12" fill="currentColor">-6</text>
+      </g><g>
+        <line x1="100" y1="50" x2="100" y2="60" stroke="currentColor" stroke-width="1.5" />
+        <text x="100" y="76" text-anchor="middle" font-size="12" fill="currentColor">-5</text>
+      </g><g>
+        <line x1="140" y1="50" x2="140" y2="60" stroke="currentColor" stroke-width="1.5" />
+        <text x="140" y="76" text-anchor="middle" font-size="12" fill="currentColor">-4</text>
+      </g><g>
+        <line x1="180" y1="50" x2="180" y2="60" stroke="currentColor" stroke-width="1.5" />
+        <text x="180" y="76" text-anchor="middle" font-size="12" fill="currentColor">-3</text>
+      </g><g>
+        <line x1="220" y1="50" x2="220" y2="60" stroke="currentColor" stroke-width="1.5" />
+        <text x="220" y="76" text-anchor="middle" font-size="12" fill="currentColor">-2</text>
+      </g><g>
+        <line x1="260" y1="50" x2="260" y2="60" stroke="currentColor" stroke-width="1.5" />
+        <text x="260" y="76" text-anchor="middle" font-size="12" fill="currentColor">-1</text>
+      </g><g>
+        <line x1="300" y1="50" x2="300" y2="60" stroke="currentColor" stroke-width="1.5" />
+        <text x="300" y="76" text-anchor="middle" font-size="12" fill="currentColor">0</text>
+      </g><g>
+        <line x1="340" y1="50" x2="340" y2="60" stroke="currentColor" stroke-width="1.5" />
+        <text x="340" y="76" text-anchor="middle" font-size="12" fill="currentColor">1</text>
+      </g><g>
+        <line x1="380" y1="50" x2="380" y2="60" stroke="currentColor" stroke-width="1.5" />
+        <text x="380" y="76" text-anchor="middle" font-size="12" fill="currentColor">2</text>
+      </g><g>
+        <line x1="420" y1="50" x2="420" y2="60" stroke="currentColor" stroke-width="1.5" />
+        <text x="420" y="76" text-anchor="middle" font-size="12" fill="currentColor">3</text>
+      </g><g>
+        <line x1="460" y1="50" x2="460" y2="60" stroke="currentColor" stroke-width="1.5" />
+        <text x="460" y="76" text-anchor="middle" font-size="12" fill="currentColor">4</text>
+      </g><g>
+        <line x1="500" y1="50" x2="500" y2="60" stroke="currentColor" stroke-width="1.5" />
+        <text x="500" y="76" text-anchor="middle" font-size="12" fill="currentColor">5</text>
+      </g><g>
+        <line x1="540" y1="50" x2="540" y2="60" stroke="currentColor" stroke-width="1.5" />
+        <text x="540" y="76" text-anchor="middle" font-size="12" fill="currentColor">6</text>
       </g>
-    );
-  })}
-  <circle cx={60 + (-3 + 6) * 40} cy="55" r="4" fill="currentColor" />
-  <circle cx={60 + (-2.5 + 6) * 40} cy="55" r="4" fill="currentColor" />
-  <circle cx={60 + (-0.25 + 6) * 40} cy="55" r="4" fill="currentColor" />
-  <circle cx={60 + (0.75 + 6) * 40} cy="55" r="4" fill="currentColor" />
-  <circle cx={60 + (1.2 + 6) * 40} cy="55" r="4" fill="currentColor" />
-  <circle cx={60 + (7/3 + 6) * 40} cy="55" r="4" fill="currentColor" />
-  <circle cx={60 + (4 + 6) * 40} cy="55" r="4" fill="currentColor" />
-  <text x={60 + (-2.5 + 6) * 40} y="38" textAnchor="middle" fontSize="12" fill="currentColor">−5/2</text>
-  <text x={60 + (-0.25 + 6) * 40} y="38" textAnchor="middle" fontSize="12" fill="currentColor">−1/4</text>
-  <text x={60 + (0.75 + 6) * 40} y="38" textAnchor="middle" fontSize="12" fill="currentColor">3/4</text>
-  <text x={60 + (1.2 + 6) * 40} y="38" textAnchor="middle" fontSize="12" fill="currentColor">6/5</text>
-  <text x={60 + (7/3 + 6) * 40} y="38" textAnchor="middle" fontSize="12" fill="currentColor">7/3</text>
+  <circle cx="180" cy="55" r="4" fill="currentColor" />
+  <circle cx="200" cy="55" r="4" fill="currentColor" />
+  <circle cx="290" cy="55" r="4" fill="currentColor" />
+  <circle cx="330" cy="55" r="4" fill="currentColor" />
+  <circle cx="348" cy="55" r="4" fill="currentColor" />
+  <circle cx="393.33333333333337" cy="55" r="4" fill="currentColor" />
+  <circle cx="460" cy="55" r="4" fill="currentColor" />
+  <text x="200" y="38" text-anchor="middle" font-size="12" fill="currentColor">−5/2</text>
+  <text x="290" y="38" text-anchor="middle" font-size="12" fill="currentColor">−1/4</text>
+  <text x="330" y="38" text-anchor="middle" font-size="12" fill="currentColor">3/4</text>
+  <text x="348" y="38" text-anchor="middle" font-size="12" fill="currentColor">6/5</text>
+  <text x="393.33333333333337" y="38" text-anchor="middle" font-size="12" fill="currentColor">7/3</text>
 </svg>
 
 **Example.** Locate on the number line: (a) $0.4$, (b) $-0.74$.
@@ -773,21 +717,45 @@ $0.2$, $0.3$, $0.4$, $0.5$, $0.6$, $0.7$, $0.8$, $0.9$, $1.0$. We write $0$ as
 $0.0$ and $1$ as $1.0$, so that the numbers are consistently in tenths. Finally,
 mark $0.4$ on the number line.
 
-<svg viewBox="0 0 620 70" role="img" aria-label="A number line from 0.0 to 1.0 in steps of 0.1. The point 0.4 is marked." style={{ maxWidth: 620, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="20" y1="35" x2="600" y2="35" stroke="currentColor" strokeWidth="1.5" />
+<svg viewBox="0 0 620 70" role="img" aria-label="A number line from 0.0 to 1.0 in steps of 0.1. The point 0.4 is marked." style="max-width: 620px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="35" x2="600" y2="35" stroke="currentColor" stroke-width="1.5" />
   <polygon points="20,35 30,30 30,40" fill="currentColor" />
   <polygon points="600,35 590,30 590,40" fill="currentColor" />
-  {[0,1,2,3,4,5,6,7,8,9,10].map((n) => {
-    const x = 60 + n * 50;
-    const label = n === 10 ? '1' : (n / 10).toFixed(1);
-    return (
-      <g key={n}>
-        <line x1={x} y1="30" x2={x} y2="40" stroke="currentColor" strokeWidth="1.5" />
-        <text x={x} y="56" textAnchor="middle" fontSize="12" fill="currentColor">{label}</text>
+  <g>
+        <line x1="60" y1="30" x2="60" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="60" y="56" text-anchor="middle" font-size="12" fill="currentColor">0.0</text>
+      </g><g>
+        <line x1="110" y1="30" x2="110" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="110" y="56" text-anchor="middle" font-size="12" fill="currentColor">0.1</text>
+      </g><g>
+        <line x1="160" y1="30" x2="160" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="160" y="56" text-anchor="middle" font-size="12" fill="currentColor">0.2</text>
+      </g><g>
+        <line x1="210" y1="30" x2="210" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="210" y="56" text-anchor="middle" font-size="12" fill="currentColor">0.3</text>
+      </g><g>
+        <line x1="260" y1="30" x2="260" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="260" y="56" text-anchor="middle" font-size="12" fill="currentColor">0.4</text>
+      </g><g>
+        <line x1="310" y1="30" x2="310" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="310" y="56" text-anchor="middle" font-size="12" fill="currentColor">0.5</text>
+      </g><g>
+        <line x1="360" y1="30" x2="360" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="360" y="56" text-anchor="middle" font-size="12" fill="currentColor">0.6</text>
+      </g><g>
+        <line x1="410" y1="30" x2="410" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="410" y="56" text-anchor="middle" font-size="12" fill="currentColor">0.7</text>
+      </g><g>
+        <line x1="460" y1="30" x2="460" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="460" y="56" text-anchor="middle" font-size="12" fill="currentColor">0.8</text>
+      </g><g>
+        <line x1="510" y1="30" x2="510" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="510" y="56" text-anchor="middle" font-size="12" fill="currentColor">0.9</text>
+      </g><g>
+        <line x1="560" y1="30" x2="560" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="560" y="56" text-anchor="middle" font-size="12" fill="currentColor">1</text>
       </g>
-    );
-  })}
-  <circle cx={60 + 4 * 50} cy="35" r="4" fill="currentColor" />
+  <circle cx="260" cy="35" r="4" fill="currentColor" />
 </svg>
 
 (b) The decimal $-0.74$ is equivalent to $-\tfrac{74}{100}$, so it is located
@@ -795,22 +763,46 @@ between $0$ and $-1$. On a number line, mark off and label the multiples of
 $0.10$ in the interval between $0$ and $-1$ and place $-0.74$ between $-0.70$ and
 $-0.80$, closer to $-0.70$.
 
-<svg viewBox="0 0 620 70" role="img" aria-label="A number line from −1.00 to 0.00 labeled in steps of 0.10. The point −0.74 is marked between −0.70 and −0.80." style={{ maxWidth: 620, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="20" y1="35" x2="600" y2="35" stroke="currentColor" strokeWidth="1.5" />
+<svg viewBox="0 0 620 70" role="img" aria-label="A number line from −1.00 to 0.00 labeled in steps of 0.10. The point −0.74 is marked between −0.70 and −0.80." style="max-width: 620px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="35" x2="600" y2="35" stroke="currentColor" stroke-width="1.5" />
   <polygon points="20,35 30,30 30,40" fill="currentColor" />
   <polygon points="600,35 590,30 590,40" fill="currentColor" />
-  {[-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0].map((n, i) => {
-    const x = 60 + i * 50;
-    const label = (n / 10).toFixed(2);
-    return (
-      <g key={n}>
-        <line x1={x} y1="30" x2={x} y2="40" stroke="currentColor" strokeWidth="1.5" />
-        <text x={x} y="56" textAnchor="middle" fontSize="11" fill="currentColor">{label}</text>
+  <g>
+        <line x1="60" y1="30" x2="60" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="60" y="56" text-anchor="middle" font-size="11" fill="currentColor">-1.00</text>
+      </g><g>
+        <line x1="110" y1="30" x2="110" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="110" y="56" text-anchor="middle" font-size="11" fill="currentColor">-0.90</text>
+      </g><g>
+        <line x1="160" y1="30" x2="160" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="160" y="56" text-anchor="middle" font-size="11" fill="currentColor">-0.80</text>
+      </g><g>
+        <line x1="210" y1="30" x2="210" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="210" y="56" text-anchor="middle" font-size="11" fill="currentColor">-0.70</text>
+      </g><g>
+        <line x1="260" y1="30" x2="260" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="260" y="56" text-anchor="middle" font-size="11" fill="currentColor">-0.60</text>
+      </g><g>
+        <line x1="310" y1="30" x2="310" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="310" y="56" text-anchor="middle" font-size="11" fill="currentColor">-0.50</text>
+      </g><g>
+        <line x1="360" y1="30" x2="360" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="360" y="56" text-anchor="middle" font-size="11" fill="currentColor">-0.40</text>
+      </g><g>
+        <line x1="410" y1="30" x2="410" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="410" y="56" text-anchor="middle" font-size="11" fill="currentColor">-0.30</text>
+      </g><g>
+        <line x1="460" y1="30" x2="460" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="460" y="56" text-anchor="middle" font-size="11" fill="currentColor">-0.20</text>
+      </g><g>
+        <line x1="510" y1="30" x2="510" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="510" y="56" text-anchor="middle" font-size="11" fill="currentColor">-0.10</text>
+      </g><g>
+        <line x1="560" y1="30" x2="560" y2="40" stroke="currentColor" stroke-width="1.5" />
+        <text x="560" y="56" text-anchor="middle" font-size="11" fill="currentColor">0.00</text>
       </g>
-    );
-  })}
-  <circle cx={60 + (2.6) * 50} cy="35" r="4" fill="currentColor" />
-  <text x={60 + (2.6) * 50} y="20" textAnchor="middle" fontSize="12" fill="currentColor">−0.74</text>
+  <circle cx="190" cy="35" r="4" fill="currentColor" />
+  <text x="190" y="20" text-anchor="middle" font-size="12" fill="currentColor">−0.74</text>
 </svg>
 
 {{< fillin

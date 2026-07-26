@@ -98,19 +98,17 @@ scale must equal the right side, but the counters in the envelopes are
 "hidden." To find how many are in each envelope, separate the $6$
 counters into $2$ equal groups: $6 \div 2 = 3$ counters in each envelope.
 
-<svg viewBox="0 0 260 110" role="img" aria-label="Two identical envelopes on the left, each holding an unknown number of counters, balanced against six loose counters on the right. The equation is 2x = 6." style={{ maxWidth: 260, display: 'block', margin: '1.5rem auto' }}>
-  <rect x="10" y="10" width="240" height="80" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="130" y1="10" x2="130" y2="90" stroke="currentColor" strokeWidth="1.5" />
-  <rect x="25" y="20" width="80" height="26" fill="none" stroke="#2b7fb8" strokeWidth="1.5" />
-  <path d="M25,20 L65,38 L105,20" fill="none" stroke="#2b7fb8" strokeWidth="1.5" />
-  <rect x="25" y="54" width="80" height="26" fill="none" stroke="#2b7fb8" strokeWidth="1.5" />
-  <path d="M25,54 L65,72 L105,54" fill="none" stroke="#2b7fb8" strokeWidth="1.5" />
-  {[[160,32],[190,25],[220,38],[160,62],[195,68]].map(([cx,cy],i) => (
-    <circle key={i} cx={cx} cy={cy} r="9" fill="none" stroke="#8a9a2b" strokeWidth="1.5" />
-  ))}
-  <text x="65" y="105" textAnchor="middle" fontSize="14" fill="currentColor">2x</text>
-  <text x="130" y="105" textAnchor="middle" fontSize="14" fill="currentColor">=</text>
-  <text x="195" y="105" textAnchor="middle" fontSize="14" fill="currentColor">6</text>
+<svg viewBox="0 0 260 110" role="img" aria-label="Two identical envelopes on the left, each holding an unknown number of counters, balanced against six loose counters on the right. The equation is 2x = 6." style="max-width: 260px; display: block; margin: 1.5rem auto">
+  <rect x="10" y="10" width="240" height="80" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <line x1="130" y1="10" x2="130" y2="90" stroke="currentColor" stroke-width="1.5" />
+  <rect x="25" y="20" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
+  <path d="M25,20 L65,38 L105,20" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
+  <rect x="25" y="54" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
+  <path d="M25,54 L65,72 L105,54" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
+  <circle cx="160" cy="32" r="9" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="190" cy="25" r="9" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="220" cy="38" r="9" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="160" cy="62" r="9" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="195" cy="68" r="9" fill="none" stroke="#8a9a2b" stroke-width="1.5" />
+  <text x="65" y="105" text-anchor="middle" font-size="14" fill="currentColor">2x</text>
+  <text x="130" y="105" text-anchor="middle" font-size="14" fill="currentColor">=</text>
+  <text x="195" y="105" text-anchor="middle" font-size="14" fill="currentColor">6</text>
 </svg>
 
 The equation modeling this is $2x = 6$. We divide both sides of the

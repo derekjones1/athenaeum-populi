@@ -483,13 +483,13 @@ called the bases. We call the length of the smaller base $b$, and the
 length of the bigger base $B$. The height, $h$, of a trapezoid is the
 distance between the two bases.
 
-<svg viewBox="0 0 240 140" role="img" aria-label="A trapezoid with smaller base b on top, larger base B on the bottom, and height h marked as the vertical distance between them." style={{ maxWidth: 240, display: 'block', margin: '1.5rem auto' }}>
-  <polygon points="70,20 170,20 220,110 20,110" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="120" y1="20" x2="120" y2="110" stroke="currentColor" strokeWidth="1" strokeDasharray="4,3" />
-  <rect x="120" y="98" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="1" />
-  <text x="120" y="12" textAnchor="middle" fontSize="14" fill="currentColor">b</text>
-  <text x="120" y="128" textAnchor="middle" fontSize="14" fill="currentColor">B</text>
-  <text x="108" y="68" textAnchor="middle" fontSize="14" fill="currentColor">h</text>
+<svg viewBox="0 0 240 140" role="img" aria-label="A trapezoid with smaller base b on top, larger base B on the bottom, and height h marked as the vertical distance between them." style="max-width: 240px; display: block; margin: 1.5rem auto">
+  <polygon points="70,20 170,20 220,110 20,110" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <line x1="120" y1="20" x2="120" y2="110" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3" />
+  <rect x="120" y="98" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1" />
+  <text x="120" y="12" text-anchor="middle" font-size="14" fill="currentColor">b</text>
+  <text x="120" y="128" text-anchor="middle" font-size="14" fill="currentColor">B</text>
+  <text x="108" y="68" text-anchor="middle" font-size="14" fill="currentColor">h</text>
 </svg>
 
 The formula for the area of a trapezoid is:

@@ -23,12 +23,12 @@ weight: 7
 ### 1.1 Introduction to Whole Numbers
 
 {{< fillin
-  question="(a) Write 'six hundred thirteen' as a whole number using digits."
+  question="Write 'six hundred thirteen' as a whole number using digits."
   answer="613"
 >}}
 
 {{< fillin
-  question="(b) Write 'fifty-five thousand two hundred eight' as a whole number using digits."
+  question="Write 'fifty-five thousand two hundred eight' as a whole number using digits."
   answer="55208"
   answerDisplay="55,208"
 >}}
@@ -199,12 +199,12 @@ weight: 7
 ### 3.1 Introduction to Integers
 
 {{< fillin
-  question="(a) Fill in < or > to make a true statement: $-6 \_\_ 3$. Enter the full inequality, e.g. $2>1$."
+  question="Fill in < or > to make a true statement: $-6 \_\_ 3$. Enter the full inequality, e.g. $2>1$."
   answer="-6<3"
 >}}
 
 {{< fillin
-  question="(b) Fill in < or > to make a true statement: $-1 \_\_ -4$. Enter the full inequality, e.g. $2>1$."
+  question="Fill in < or > to make a true statement: $-1 \_\_ -4$. Enter the full inequality, e.g. $2>1$."
   answer="-1>-4"
 >}}
 
@@ -421,12 +421,12 @@ weight: 7
 >}}
 
 {{< fillin
-  question="Round $16.749$ (a) to the nearest tenth."
+  question="Round $16.749$ to the nearest tenth."
   answer="16.7"
 >}}
 
 {{< fillin
-  question="Round $16.749$ (b) to the nearest hundredth."
+  question="Round $16.749$ to the nearest hundredth."
   answer="16.75"
 >}}
 
@@ -480,17 +480,17 @@ weight: 7
 ### 5.5 Averages and Probability
 
 {{< fillin
-  question="The ages, in months, of 10 children in a preschool class are: 55, 55, 50, 51, 52, 50, 53, 51, 55, 49. Find the (a) mean."
+  question="The ages, in months, of 10 children in a preschool class are: 55, 55, 50, 51, 52, 50, 53, 51, 55, 49. Find the mean."
   answer="52.1"
 >}}
 
 {{< fillin
-  question="The ages, in months, of 10 children in a preschool class are: 55, 55, 50, 51, 52, 50, 53, 51, 55, 49. Find the (b) median."
+  question="The ages, in months, of 10 children in a preschool class are: 55, 55, 50, 51, 52, 50, 53, 51, 55, 49. Find the median."
   answer="51.5"
 >}}
 
 {{< fillin
-  question="The ages, in months, of 10 children in a preschool class are: 55, 55, 50, 51, 52, 50, 53, 51, 55, 49. Find the (c) mode."
+  question="The ages, in months, of 10 children in a preschool class are: 55, 55, 50, 51, 52, 50, 53, 51, 55, 49. Find the mode."
   answer="55"
 >}}
 
@@ -503,13 +503,13 @@ weight: 7
 >}}
 
 {{< fillin
-  question="Laundry detergent comes in two sizes: 64 ounces for \$10.99 or 48 ounces for \$8.49. (a) Find the unit price, in dollars per ounce, of the 64-ounce size. Round to the nearest thousandth of a dollar."
+  question="Laundry detergent comes in two sizes: 64 ounces for \$10.99 or 48 ounces for \$8.49. Find the unit price, in dollars per ounce, of the 64-ounce size. Round to the nearest thousandth of a dollar."
   answer="0.172"
   answerDisplay="\$0.172 per ounce"
 >}}
 
 {{< fillin
-  question="Laundry detergent comes in two sizes: 64 ounces for \$10.99 or 48 ounces for \$8.49. (b) Find the unit price, in dollars per ounce, of the 48-ounce size. Round to the nearest thousandth of a dollar."
+  question="Laundry detergent comes in two sizes: 64 ounces for \$10.99 or 48 ounces for \$8.49. Find the unit price, in dollars per ounce, of the 48-ounce size. Round to the nearest thousandth of a dollar."
   answer="0.177"
   answerDisplay="\$0.177 per ounce"
 >}}
@@ -537,12 +537,12 @@ weight: 7
 ### 6.1 Understand Percent
 
 {{< fillin
-  question="(a) Convert $24\%$ to a decimal."
+  question="Convert $24\%$ to a decimal."
   answer="0.24"
 >}}
 
 {{< fillin
-  question="(b) Convert $24\%$ to a simplified fraction."
+  question="Convert $24\%$ to a simplified fraction."
   answer="\frac{6}{25}"
   answerDisplay="$\tfrac{6}{25}$"
 >}}

@@ -312,8 +312,8 @@ slope–intercept form ($y = mx + b$) and compare:
 | Same | Different | Parallel | No solution |
 | Same | Same | Coincident | Infinitely many solutions |
 
-<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1.5rem', margin: '1.5rem 0' }}>
-  <div style={{ textAlign: 'center' }}>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin: 1.5rem 0">
+  <div style="text-align: center">
     <div class="ap-figure">
 <svg role="img" aria-label="A coordinate grid showing two lines, y equals x plus 1 and y equals negative x plus 3, crossing at a single point." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 196" width="196" height="196" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="170" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -356,10 +356,10 @@ slope–intercept form ($y = mx + b$) and compare:
   <polygon points="56,20 66.6,23.5 59.5,30.6" fill="currentColor"/>
 </svg>
 </div>
-    <p style={{ fontWeight: 600, margin: '0.5rem 0 0' }}>Intersecting</p>
-    <p style={{ margin: 0, fontSize: '0.9rem' }}>One solution</p>
+    <p style="font-weight: 600; margin: 0.5rem 0 0">Intersecting</p>
+    <p style="margin: 0; font-size: 0.9rem">One solution</p>
   </div>
-  <div style={{ textAlign: 'center' }}>
+  <div style="text-align: center">
     <div class="ap-figure">
 <svg role="img" aria-label="A coordinate grid showing two parallel lines, y equals x plus 1 and y equals x minus 2, that never cross." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 196" width="196" height="196" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="170" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -402,10 +402,10 @@ slope–intercept form ($y = mx + b$) and compare:
   <polygon points="44,176 47.5,165.4 54.6,172.5" fill="currentColor"/>
 </svg>
 </div>
-    <p style={{ fontWeight: 600, margin: '0.5rem 0 0' }}>Parallel</p>
-    <p style={{ margin: 0, fontSize: '0.9rem' }}>No solution</p>
+    <p style="font-weight: 600; margin: 0.5rem 0 0">Parallel</p>
+    <p style="margin: 0; font-size: 0.9rem">No solution</p>
   </div>
-  <div style={{ textAlign: 'center' }}>
+  <div style="text-align: center">
     <div class="ap-figure">
 <svg role="img" aria-label="A coordinate grid showing a single line, since the equations y equals x plus 1 and 2x minus 2y equals negative 2 graph as the same line." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 196" width="196" height="196" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="170" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -445,8 +445,8 @@ slope–intercept form ($y = mx + b$) and compare:
   <polygon points="20,164 23.5,153.4 30.6,160.5" fill="currentColor"/>
 </svg>
 </div>
-    <p style={{ fontWeight: 600, margin: '0.5rem 0 0' }}>Coincident</p>
-    <p style={{ margin: 0, fontSize: '0.9rem' }}>Infinitely many solutions</p>
+    <p style="font-weight: 600; margin: 0.5rem 0 0">Coincident</p>
+    <p style="margin: 0; font-size: 0.9rem">Infinitely many solutions</p>
   </div>
 </div>
 

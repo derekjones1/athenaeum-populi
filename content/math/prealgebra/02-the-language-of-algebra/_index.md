@@ -30,6 +30,9 @@ confidence.
 - **Find Multiples and Factors** — identifying multiples of a number, using
   divisibility tests, finding all the factors of a number, and identifying
   prime and composite numbers.
+- **Prime Factorization and the Least Common Multiple** — writing composite
+  numbers as products of primes and finding least common multiples from prime
+  factorizations.
 
 ---
 

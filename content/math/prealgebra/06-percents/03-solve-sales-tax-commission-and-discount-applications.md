@@ -85,13 +85,6 @@ $\text{\textdollar}417.48$.
   hint="Sales tax = tax rate $\cdot$ purchase price = $0.082 \cdot 250$."
 >}}
 
-{{< fillin
-  question="Find the total cost: Kim bought a winter coat for \$250 in St. Louis, where the sales tax rate was 8.2% of the purchase price."
-  answer="270.50"
-  answerDisplay="\$270.50"
-  hint="Total cost = purchase price + sales tax = $250 + 20.50$."
->}}
-
 **Example.** Evelyn bought a new smartphone for $\text{\textdollar}499$
 plus tax. She was surprised when she got the receipt and saw that the tax
 was $\text{\textdollar}42.42$. What was the sales tax rate for this
@@ -274,13 +267,6 @@ dress was $\text{\textdollar}91$.
   hint="Amount of discount = discount rate $\cdot$ original price = $0.65 \cdot 395$."
 >}}
 
-{{< fillin
-  question="Find the sale price: Oscar bought a barbecue grill that was discounted 65% from an original price of \$395."
-  answer="138.25"
-  answerDisplay="\$138.25"
-  hint="Sale price = original price - discount = $395 - 256.75$."
->}}
-
 There may be times when you buy something on sale and want to know the
 discount rate.
 
@@ -320,13 +306,6 @@ discount was $55\%$.
   answer="60"
   answerDisplay="\$60"
   hint="Amount of discount = original price - sale price = $400 - 340$."
->}}
-
-{{< fillin
-  question="Find the discount rate: Nick bought a multi-room air conditioner at a sale price of \$340. The original price of the air conditioner was \$400."
-  answer="15"
-  answerDisplay="15%"
-  hint="Translate to $60 = r \cdot 400$, then divide and convert to a percent."
 >}}
 
 ## Solve mark-up applications
@@ -384,13 +363,6 @@ photograph was $\text{\textdollar}350$.
   answer="2975"
   answerDisplay="\$2,975"
   hint="Amount of mark-up = mark-up rate $\cdot$ wholesale price = $0.35 \cdot 8{,}500$."
->}}
-
-{{< fillin
-  question="Find the list price: The Auto Resale Store bought Pablo's Toyota for \$8,500. They marked the price up 35%."
-  answer="11475"
-  answerDisplay="\$11,475"
-  hint="List price = wholesale price + mark-up = $8{,}500 + 2{,}975$."
 >}}
 
 ## Key terms

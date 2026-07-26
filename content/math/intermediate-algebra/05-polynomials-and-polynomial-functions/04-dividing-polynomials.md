@@ -40,12 +40,14 @@ $$
   question="Find the quotient: $-72a^7b^3 \div \left(8a^{12}b^4\right)$."
   answer="-\frac{9}{a^5b}"
   answerDisplay="$-\tfrac{9}{a^5b}$"
+  hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
 
 {{< fillin
   question="Find the quotient: $-63c^8d^3 \div \left(7c^{12}d^2\right)$."
   answer="-\frac{9d}{c^4}"
   answerDisplay="$-\tfrac{9d}{c^4}$"
+  hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
 
 Once you become familiar with the process and have practiced it step by step
@@ -65,12 +67,14 @@ $$
   question="Find the quotient: $\tfrac{28x^5y^{14}}{49x^9y^{12}}$."
   answer="\frac{4y^2}{7x^4}"
   answerDisplay="$\tfrac{4y^2}{7x^4}$"
+  hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
 
 {{< fillin
   question="Find the quotient: $\tfrac{30m^5n^{11}}{48m^{10}n^{14}}$."
   answer="\frac{5}{8m^5n^3}"
   answerDisplay="$\tfrac{5}{8m^5n^3}$"
+  hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
 
 ## Divide a polynomial by a monomial
@@ -107,12 +111,14 @@ $$
   question="Find the quotient: $\left(32a^2b-16ab^2\right)\div(-8ab)$."
   answer="-4a+2b"
   answerDisplay="$-4a+2b$"
+  hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
 >}}
 
 {{< fillin
   question="Find the quotient: $\left(-48a^8b^4-36a^6b^5\right)\div\left(-6a^3b^3\right)$."
   answer="8a^5b+6a^3b^2"
   answerDisplay="$8a^5b+6a^3b^2$"
+  hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
 
 ## Divide polynomials using long division
@@ -160,12 +166,14 @@ quotient is $x+4$.
   question="Find the quotient: $\left(y^2+10y+21\right)\div(y+3)$."
   answer="y+7"
   answerDisplay="$y+7$"
+  hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
 >}}
 
 {{< fillin
   question="Find the quotient: $\left(m^2+9m+20\right)\div(m+4)$."
   answer="m+5"
   answerDisplay="$m+5$"
+  hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
 >}}
 
 Sometimes polynomial division leaves a remainder. We write the remainder as
@@ -206,12 +214,14 @@ $x^4-x^2+5x-6$.
   question="Find the quotient: $\left(x^4-7x^2+7x+6\right)\div(x+3)$."
   answer="x^3-3x^2+2x+1+\frac{3}{x+3}"
   answerDisplay="$x^3-3x^2+2x+1+\tfrac{3}{x+3}$"
+  hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
 >}}
 
 {{< fillin
   question="Find the quotient: $\left(x^4-11x^2-7x-6\right)\div(x+3)$."
   answer="x^3-3x^2-2x-1-\frac{3}{x+3}"
   answerDisplay="$x^3-3x^2-2x-1-\tfrac{3}{x+3}$"
+  hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
 >}}
 
 In the next example, we divide by $2a+3$. We must consider the constants as
@@ -241,12 +251,14 @@ quotient is $4a^2-6a+9$.
   question="Find the quotient: $\left(x^3-64\right)\div(x-4)$."
   answer="x^2+4x+16"
   answerDisplay="$x^2+4x+16$"
+  hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
 >}}
 
 {{< fillin
   question="Find the quotient: $\left(125x^3-8\right)\div(5x-2)$."
   answer="25x^2+10x+4"
   answerDisplay="$25x^2+10x+4$"
+  hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
 >}}
 
 ## Divide polynomials using synthetic division
@@ -299,6 +311,7 @@ $$
 {{< fillin
   question="Find the remainder when $3x^3+10x^2+6x-2$ is divided by $x+2$."
   answer="2"
+  hint="For division by $x-c$, evaluate the polynomial at $c$; that value is the remainder."
 >}}
 
 {{< fillin
@@ -306,11 +319,6 @@ $$
   answer="4x^2-3x+1"
   answerDisplay="$4x^2-3x+1$"
   hint="Use $c=-2$. The final row is $4,-3,1,1$; the last entry is the remainder."
->}}
-
-{{< fillin
-  question="Find the remainder when $4x^3+5x^2-5x+3$ is divided by $x+2$."
-  answer="1"
 >}}
 
 In the next example, we do all the steps together.
@@ -338,12 +346,14 @@ $x^3-4x^2+3$, and the remainder is $0$.
   question="Use synthetic division to find the quotient when $x^4-16x^2+5x+20$ is divided by $x+4$."
   answer="x^3-4x^2+5"
   answerDisplay="$x^3-4x^2+5$"
+  hint="Use the zero of the divisor in synthetic division, including zero coefficients for missing powers."
 >}}
 
 {{< fillin
   question="Use synthetic division to find the quotient when $x^4-9x^2+2x+6$ is divided by $x+3$."
   answer="x^3-3x^2+2"
   answerDisplay="$x^3-3x^2+2$"
+  hint="Use the zero of the divisor in synthetic division, including zero coefficients for missing powers."
 >}}
 
 ## Divide polynomial functions
@@ -379,22 +389,19 @@ $$
   question="For $f(x)=x^2-5x-24$ and $g(x)=x+3$, find $\left(\tfrac{f}{g}\right)(x)$."
   answer="x-8"
   answerDisplay="$x-8$"
+  hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
 
 {{< fillin
   question="For $f(x)=x^2-5x-24$ and $g(x)=x+3$, find $\left(\tfrac{f}{g}\right)(-3)$."
   answer="-11"
->}}
-
-{{< fillin
-  question="For $f(x)=x^2-5x-36$ and $g(x)=x+4$, find $\left(\tfrac{f}{g}\right)(x)$."
-  answer="x-9"
-  answerDisplay="$x-9$"
+  hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
 
 {{< multiplechoice
   question="For $f(x)=x^2-5x-36$ and $g(x)=x+4$, what is $\left(\tfrac{f}{g}\right)(-5)$?"
   answer="$-14$"
+  hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
 $-14$
 undefined
@@ -443,11 +450,13 @@ The remainder is $5$.
 {{< fillin
   question="Use the Remainder Theorem to find the remainder when $f(x)=x^3+4x+15$ is divided by $x+2$."
   answer="-1"
+  hint="For division by $x-c$, evaluate the polynomial at $c$; that value is the remainder."
 >}}
 
 {{< fillin
   question="Use the Remainder Theorem to find the remainder when $f(x)=x^3-7x+12$ is divided by $x+3$."
   answer="6"
+  hint="For division by $x-c$, evaluate the polynomial at $c$; that value is the remainder."
 >}}
 
 When we divided $8a^3+27$ by $2a+3$, the quotient was $4a^2-6a+9$ and the
@@ -480,6 +489,7 @@ Since $f(4)=0$, $x-4$ is a factor of $f(x)=x^3-64$.
 {{< multiplechoice
   question="Use the Factor Theorem to determine whether $x-5$ is a factor of $f(x)=x^3-125$."
   answer="yes"
+  hint="For a proposed factor $x-c$, evaluate $f(c)$; a remainder of zero confirms the factor."
 >}}
 yes
 no
@@ -488,6 +498,7 @@ no
 {{< multiplechoice
   question="Use the Factor Theorem to determine whether $x-6$ is a factor of $f(x)=x^3-216$."
   answer="yes"
+  hint="For a proposed factor $x-c$, evaluate $f(c)$; a remainder of zero confirms the factor."
 >}}
 yes
 no
