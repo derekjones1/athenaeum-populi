@@ -298,22 +298,21 @@ marks $0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0$. We write $0$ as
 $0.0$ and $1$ as $1.0$, so that the numbers are consistently in tenths.
 Finally, mark $0.4$ on the number line.
 
-<svg viewBox="0 0 620 90" role="img" aria-label="A number line from 0.0 to 1.0 marked in tenths, with 0.4 highlighted." style={{ maxWidth: 560, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" strokeWidth="1.5" />
+<svg viewBox="0 0 620 90" role="img" aria-label="A number line from 0.0 to 1.0 marked in tenths, with 0.4 highlighted." style="max-width: 560px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
   <polygon points="600,40 590,34 590,46" fill="currentColor" />
   <polygon points="20,40 30,34 30,46" fill="currentColor" />
-  {Array.from({ length: 11 }, (_, i) => {
-    const x = 30 + i * 54
-    const label = (i / 10).toFixed(1)
-    const isTarget = i === 4
-    return (
-      <g key={i}>
-        <line x1={x} y1="33" x2={x} y2="47" stroke="currentColor" strokeWidth={isTarget ? 2 : 1.5} />
-        <text x={x} y="66" textAnchor="middle" fontSize="15" fill="currentColor">{label}</text>
-        {isTarget && <circle cx={x} cy="40" r="6" fill="currentColor" />}
-      </g>
-    )
-  })}
+  <g><line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.0</text></g>
+  <g><line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="84" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.1</text></g>
+  <g><line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="138" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.2</text></g>
+  <g><line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="192" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.3</text></g>
+  <g><line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="2" /><text x="246" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.4</text><circle cx="246" cy="40" r="6" fill="currentColor" /></g>
+  <g><line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.5</text></g>
+  <g><line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="354" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.6</text></g>
+  <g><line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="408" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.7</text></g>
+  <g><line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="462" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.8</text></g>
+  <g><line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="516" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.9</text></g>
+  <g><line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">1.0</text></g>
 </svg>
 
 {{< fillin
@@ -329,21 +328,45 @@ between $0$ and $-1$. On a number line, mark off and label the multiples of
 $-0.10$ in the interval between $0$ and $-1$ ($-0.10, -0.20$, etc.) and
 mark $-0.74$ between $-0.70$ and $-0.80$, a little closer to $-0.70$.
 
-<svg viewBox="0 0 620 90" role="img" aria-label="A number line from -1.00 to 0.00 marked in tenths, with -0.74 highlighted between -0.70 and -0.80." style={{ maxWidth: 560, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" strokeWidth="1.5" />
+<svg viewBox="0 0 620 90" role="img" aria-label="A number line from -1.00 to 0.00 marked in tenths, with -0.74 highlighted between -0.70 and -0.80." style="max-width: 560px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
   <polygon points="600,40 590,34 590,46" fill="currentColor" />
   <polygon points="20,40 30,34 30,46" fill="currentColor" />
-  {Array.from({ length: 11 }, (_, i) => {
-    const x = 30 + i * 54
-    const label = (-1 + i / 10).toFixed(2)
-    return (
-      <g key={i}>
-        <line x1={x} y1="33" x2={x} y2="47" stroke="currentColor" strokeWidth="1.5" />
-        <text x={x} y="66" textAnchor="middle" fontSize="15" fill="currentColor">{label}</text>
+  <g>
+        <line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" />
+        <text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">-1.00</text>
+      </g><g>
+        <line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="1.5" />
+        <text x="84" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.90</text>
+      </g><g>
+        <line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" />
+        <text x="138" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.80</text>
+      </g><g>
+        <line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" />
+        <text x="192" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.70</text>
+      </g><g>
+        <line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" />
+        <text x="246" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.60</text>
+      </g><g>
+        <line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" />
+        <text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.50</text>
+      </g><g>
+        <line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" />
+        <text x="354" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.40</text>
+      </g><g>
+        <line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" />
+        <text x="408" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.30</text>
+      </g><g>
+        <line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="1.5" />
+        <text x="462" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.20</text>
+      </g><g>
+        <line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" />
+        <text x="516" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.10</text>
+      </g><g>
+        <line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" />
+        <text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.00</text>
       </g>
-    )
-  })}
-  <circle cx={30 + 2.6 * 54} cy="40" r="6" fill="currentColor" />
+  <circle cx="170.4" cy="40" r="6" fill="currentColor" />
 </svg>
 
 {{< fillin

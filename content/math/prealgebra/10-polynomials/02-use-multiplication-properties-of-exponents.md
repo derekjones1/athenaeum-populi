@@ -109,12 +109,6 @@ then find the opposite.
   hint="The parentheses mean the negative sign is part of the base, so all four factors are $-2$."
 >}}
 
-{{< fillin
-  question="Simplify: $-2^4$."
-  answer="-16"
-  hint="Without parentheses, the exponent applies only to $2$; the negative sign is applied after."
->}}
-
 ## Simplify expressions using the Product Property of Exponents
 
 You have seen that when you combine like terms by adding and subtracting,
@@ -287,12 +281,6 @@ $$(5^2)^3 \overset{?}{=} 5^{2 \cdot 3} \qquad\qquad (25)^3 \overset{?}{=} 5^6 \q
 {{< fillin
   question="Simplify: $(x^6)^9$."
   answer="x^{54}"
-  hint="To raise a power to a power, multiply the exponents."
->}}
-
-{{< fillin
-  question="Simplify: $(8^6)^7$."
-  answer="8^{42}"
   hint="To raise a power to a power, multiply the exponents."
 >}}
 

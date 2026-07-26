@@ -64,7 +64,7 @@ If an inequality gives $x>3$, there are many solutions. The number $3$ is a
   <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">4</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">5</text>
-  <text x="239.2" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">(</text>
+  <text x="239.2" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">(</text>
   <text x="239.2" y="16" text-anchor="middle" font-size="14" fill="currentColor">x &gt; 3</text>
 </svg>
 </div>
@@ -137,7 +137,7 @@ The two rays of the solution are shown separately:
   <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">2</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">3</text>
-  <text x="133.6" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">)</text>
+  <text x="133.6" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">)</text>
   <text x="133.6" y="16" text-anchor="middle" font-size="14" fill="currentColor">(−∞, −3)</text>
 </svg>
 </div>
@@ -170,7 +170,7 @@ The two rays of the solution are shown separately:
   <text x="265.6" y="70" text-anchor="middle" font-size="12" fill="currentColor">6</text>
   <line x1="292" y1="39" x2="292" y2="51" stroke="currentColor" stroke-width="1.5"/>
   <text x="292" y="70" text-anchor="middle" font-size="12" fill="currentColor">7</text>
-  <text x="133.6" y="52" text-anchor="middle" font-size="22" fontWeight="600" fill="currentColor">[</text>
+  <text x="133.6" y="52" text-anchor="middle" font-size="22" font-weight="600" fill="currentColor">[</text>
   <text x="133.6" y="16" text-anchor="middle" font-size="14" fill="currentColor">[1, ∞)</text>
 </svg>
 </div>
@@ -419,13 +419,6 @@ must be produced to keep the average cost below \$40 per item.
   answer="\tfrac{5x+900}{x}"
   answerDisplay="$\tfrac{5x+900}{x}$"
   hint="Divide $C(x)$ by $x$."
->}}
-
-{{< fillin
-  question="If $C(x)=5x+900$, how many items must be produced so that the average cost is less than \$20? Enter the least whole-number quantity that works."
-  answer="61"
-  answerDisplay="61 items"
-  hint="Solve $\tfrac{5x+900}{x}<20$ for positive $x$, then choose the least whole number."
 >}}
 
 **Key terms.** A **rational inequality** is an inequality that contains a

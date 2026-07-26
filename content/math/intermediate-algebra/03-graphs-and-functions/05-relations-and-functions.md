@@ -61,6 +61,7 @@ $\{1,4,9,16,25\}$.
 {{< fillin
   question="For the relation $\{(1,1),(2,8),(3,27),(4,64),(5,125)\}$, enter the domain as a comma-separated list."
   answer="1,2,3,4,5"
+  answerMode="unordered"
   answerDisplay="$1,2,3,4,5$"
   hint="The domain is the set of all $x$-values."
 >}}
@@ -68,6 +69,7 @@ $\{1,4,9,16,25\}$.
 {{< fillin
   question="For the relation $\{(1,3),(2,6),(3,9),(4,12),(5,15)\}$, enter the range as a comma-separated list."
   answer="3,6,9,12,15"
+  answerMode="unordered"
   answerDisplay="$3,6,9,12,15$"
   hint="The range is the set of all $y$-values."
 >}}
@@ -117,6 +119,7 @@ $\{\text{January 12},\text{February 3},\text{April 25},\text{May 10},
 {{< multiplechoice
   question="In the source mapping, Khanh Nguyen is paired with which student ID number?"
   answer="kn68413"
+  hint="Trace the arrow from the named input to the one output paired with it."
 >}}
 kn68413
 ab56781
@@ -127,6 +130,7 @@ sm32479
 {{< multiplechoice
   question="In the source mapping, Maria is paired with which birthday?"
   answer="November 6"
+  hint="Trace the arrow from the named input to the one output paired with it."
 >}}
 November 6
 January 18
@@ -199,6 +203,7 @@ $\{-2,-1,3,4,5\}$. Notice that while $-2$ repeats, it is only listed once.
 {{< fillin
   question="For the source graph with points $(-3,3),(-2,2),(-1,0),(0,-1),(2,-2),(4,-4)$, enter the domain as a comma-separated list."
   answer="-3,-2,-1,0,2,4"
+  answerMode="unordered"
   answerDisplay="$-3,-2,-1,0,2,4$"
   hint="List each distinct $x$-coordinate once."
 >}}
@@ -251,6 +256,7 @@ domain values twice. The range is $\{-3,-2,-1,0,1,2,3\}$.
 {{< multiplechoice
   question="Is the relation $\{(-3,-6),(-2,-4),(-1,-2),(0,0),(1,2),(2,4),(3,6)\}$ a function?"
   answer="Yes"
+  hint="A relation is a function only when every input is paired with exactly one output."
 >}}
 Yes
 No
@@ -259,6 +265,7 @@ No
 {{< multiplechoice
   question="Is the relation $\{(27,-3),(8,-2),(1,-1),(0,0),(1,1),(8,2),(27,3)\}$ a function?"
   answer="No"
+  hint="A relation is a function only when every input is paired with exactly one output."
 >}}
 No
 Yes
@@ -287,6 +294,7 @@ function.
 {{< multiplechoice
   question="The source mapping pairs NBC with three programs, HGTV with three programs, and HBO with three programs. Is the relation a function?"
   answer="No"
+  hint="Trace the arrow from the named input to the one output paired with it."
 >}}
 No
 Yes
@@ -295,6 +303,7 @@ Yes
 {{< multiplechoice
   question="In the source phone-number mapping, Neal, Krystal, Kelvin, George, Christa, and Mike are each paired with exactly one number. Is the relation a function?"
   answer="Yes"
+  hint="Trace the arrow from the named input to the one output paired with it."
 >}}
 Yes
 No
@@ -359,6 +368,7 @@ to only one value of $y$, the equation does not define a function.
 {{< multiplechoice
   question="Determine whether $4x+y=-3$ defines $y$ as a function of $x$."
   answer="Yes"
+  hint="Solve for $y$. A single output for each allowed $x$ means the equation defines a function."
 >}}
 Yes
 No
@@ -367,6 +377,7 @@ No
 {{< multiplechoice
   question="Determine whether $x+y^2=4$ defines $y$ as a function of $x$."
   answer="No"
+  hint="Solve for $y$. A single output for each allowed $x$ means the equation defines a function."
 >}}
 No
 Yes

@@ -31,11 +31,11 @@ the pattern continues endlessly.
 We can visualize counting numbers and whole numbers on a **number line**,
 which gets larger from left to right and smaller from right to left:
 
-<svg viewBox="0 0 560 90" role="img" aria-label="A number line from 0 to 6, marked at every whole number. An arrow labeled smaller points left from around 2; an arrow labeled larger points right from around 4." style={{ maxWidth: 560, width: '100%', display: 'block', margin: '1.5rem auto' }}>
-  <text x="140" y="16" textAnchor="middle" fontSize="14" fill="currentColor">smaller</text>
-  <line x1="270" y1="20" x2="60" y2="20" stroke="currentColor" strokeWidth="1.5" markerEnd="url(#arrowLeft)" />
-  <text x="440" y="16" textAnchor="middle" fontSize="14" fill="currentColor">larger</text>
-  <line x1="310" y1="20" x2="520" y2="20" stroke="currentColor" strokeWidth="1.5" markerEnd="url(#arrowRight)" />
+<svg viewBox="0 0 560 90" role="img" aria-label="A number line from 0 to 6, marked at every whole number. An arrow labeled smaller points left from around 2; an arrow labeled larger points right from around 4." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
+  <text x="140" y="16" text-anchor="middle" font-size="14" fill="currentColor">smaller</text>
+  <line x1="270" y1="20" x2="60" y2="20" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrowLeft)" />
+  <text x="440" y="16" text-anchor="middle" font-size="14" fill="currentColor">larger</text>
+  <line x1="310" y1="20" x2="520" y2="20" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrowRight)" />
   <defs>
     <marker id="arrowLeft" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="currentColor" />
@@ -44,13 +44,29 @@ which gets larger from left to right and smaller from right to left:
       <path d="M0,0 L8,4 L0,8 Z" fill="currentColor" />
     </marker>
   </defs>
-  <line x1="40" y1="55" x2="540" y2="55" stroke="currentColor" strokeWidth="1.5" markerEnd="url(#arrowRight)" />
-  {[0,1,2,3,4,5,6].map((n) => (
-    <g key={n}>
-      <line x1={40 + n*80} y1="48" x2={40 + n*80} y2="62" stroke="currentColor" strokeWidth="1.5" />
-      <text x={40 + n*80} y="80" textAnchor="middle" fontSize="14" fill="currentColor">{n}</text>
+  <line x1="40" y1="55" x2="540" y2="55" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrowRight)" />
+  <g>
+      <line x1="40" y1="48" x2="40" y2="62" stroke="currentColor" stroke-width="1.5" />
+      <text x="40" y="80" text-anchor="middle" font-size="14" fill="currentColor">0</text>
+    </g><g>
+      <line x1="120" y1="48" x2="120" y2="62" stroke="currentColor" stroke-width="1.5" />
+      <text x="120" y="80" text-anchor="middle" font-size="14" fill="currentColor">1</text>
+    </g><g>
+      <line x1="200" y1="48" x2="200" y2="62" stroke="currentColor" stroke-width="1.5" />
+      <text x="200" y="80" text-anchor="middle" font-size="14" fill="currentColor">2</text>
+    </g><g>
+      <line x1="280" y1="48" x2="280" y2="62" stroke="currentColor" stroke-width="1.5" />
+      <text x="280" y="80" text-anchor="middle" font-size="14" fill="currentColor">3</text>
+    </g><g>
+      <line x1="360" y1="48" x2="360" y2="62" stroke="currentColor" stroke-width="1.5" />
+      <text x="360" y="80" text-anchor="middle" font-size="14" fill="currentColor">4</text>
+    </g><g>
+      <line x1="440" y1="48" x2="440" y2="62" stroke="currentColor" stroke-width="1.5" />
+      <text x="440" y="80" text-anchor="middle" font-size="14" fill="currentColor">5</text>
+    </g><g>
+      <line x1="520" y1="48" x2="520" y2="62" stroke="currentColor" stroke-width="1.5" />
+      <text x="520" y="80" text-anchor="middle" font-size="14" fill="currentColor">6</text>
     </g>
-  ))}
 </svg>
 
 While this number line shows only the whole numbers $0$ through $6$, the
@@ -386,29 +402,29 @@ Since $2$ is prime, that branch is complete. $24$ is not prime, so we break
 it into $4$ and $6$. Neither is prime, so we break $4$ into $2$ and $2$, and
 $6$ into $2$ and $3$. All of these are prime, so we circle them:
 
-<svg viewBox="0 0 420 220" role="img" aria-label="A factor tree for 48. 48 branches into 2 (circled, prime) and 24. 24 branches into 4 and 6. 4 branches into 2 and 2, both circled. 6 branches into 2 and 3, both circled. Every branch ends in a circled prime." style={{ maxWidth: 420, display: 'block', margin: '1.5rem auto' }}>
-  <text x="200" y="20" textAnchor="middle" fontSize="16" fill="currentColor">48</text>
-  <line x1="190" y1="27" x2="124" y2="52" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="210" y1="27" x2="285" y2="64" stroke="currentColor" strokeWidth="1.5" />
-  <text x="110" y="75" textAnchor="middle" fontSize="16" fill="currentColor">2</text>
-  <circle cx="110" cy="69" r="13" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="295" y="75" textAnchor="middle" fontSize="16" fill="currentColor">24</text>
-  <line x1="285" y1="82" x2="240" y2="116" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="305" y1="82" x2="350" y2="116" stroke="currentColor" strokeWidth="1.5" />
-  <text x="235" y="130" textAnchor="middle" fontSize="16" fill="currentColor">4</text>
-  <text x="355" y="130" textAnchor="middle" fontSize="16" fill="currentColor">6</text>
-  <line x1="227" y1="137" x2="208" y2="160" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="243" y1="137" x2="262" y2="160" stroke="currentColor" strokeWidth="1.5" />
-  <text x="205" y="183" textAnchor="middle" fontSize="16" fill="currentColor">2</text>
-  <circle cx="205" cy="177" r="13" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="265" y="183" textAnchor="middle" fontSize="16" fill="currentColor">2</text>
-  <circle cx="265" cy="177" r="13" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="347" y1="137" x2="328" y2="160" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="363" y1="137" x2="382" y2="160" stroke="currentColor" strokeWidth="1.5" />
-  <text x="325" y="183" textAnchor="middle" fontSize="16" fill="currentColor">2</text>
-  <circle cx="325" cy="177" r="13" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="385" y="183" textAnchor="middle" fontSize="16" fill="currentColor">3</text>
-  <circle cx="385" cy="177" r="13" fill="none" stroke="currentColor" strokeWidth="1.5" />
+<svg viewBox="0 0 420 220" role="img" aria-label="A factor tree for 48. 48 branches into 2 (circled, prime) and 24. 24 branches into 4 and 6. 4 branches into 2 and 2, both circled. 6 branches into 2 and 3, both circled. Every branch ends in a circled prime." style="max-width: 420px; display: block; margin: 1.5rem auto">
+  <text x="200" y="20" text-anchor="middle" font-size="16" fill="currentColor">48</text>
+  <line x1="190" y1="27" x2="124" y2="52" stroke="currentColor" stroke-width="1.5" />
+  <line x1="210" y1="27" x2="285" y2="64" stroke="currentColor" stroke-width="1.5" />
+  <text x="110" y="75" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+  <circle cx="110" cy="69" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="295" y="75" text-anchor="middle" font-size="16" fill="currentColor">24</text>
+  <line x1="285" y1="82" x2="240" y2="116" stroke="currentColor" stroke-width="1.5" />
+  <line x1="305" y1="82" x2="350" y2="116" stroke="currentColor" stroke-width="1.5" />
+  <text x="235" y="130" text-anchor="middle" font-size="16" fill="currentColor">4</text>
+  <text x="355" y="130" text-anchor="middle" font-size="16" fill="currentColor">6</text>
+  <line x1="227" y1="137" x2="208" y2="160" stroke="currentColor" stroke-width="1.5" />
+  <line x1="243" y1="137" x2="262" y2="160" stroke="currentColor" stroke-width="1.5" />
+  <text x="205" y="183" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+  <circle cx="205" cy="177" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="265" y="183" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+  <circle cx="265" cy="177" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <line x1="347" y1="137" x2="328" y2="160" stroke="currentColor" stroke-width="1.5" />
+  <line x1="363" y1="137" x2="382" y2="160" stroke="currentColor" stroke-width="1.5" />
+  <text x="325" y="183" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+  <circle cx="325" cy="177" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="385" y="183" text-anchor="middle" font-size="16" fill="currentColor">3</text>
+  <circle cx="385" cy="177" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
 </svg>
 
 We say $2 \cdot 2 \cdot 2 \cdot 2 \cdot 3$ is the prime factorization of
@@ -440,29 +456,29 @@ We find two factors of $252$ that are not prime — $12$ and $21$ — and
 break each into two more factors. Continuing until all branches end in a
 prime:
 
-<svg viewBox="0 0 340 200" role="img" aria-label="A factor tree for 252. 252 branches into 12 and 21. 12 branches into 2 (circled) and 6; 6 branches into 2 and 3, both circled. 21 branches into 3 (circled) and 7 (circled)." style={{ maxWidth: 340, display: 'block', margin: '1.5rem auto' }}>
-  <text x="170" y="20" textAnchor="middle" fontSize="16" fill="currentColor">252</text>
-  <line x1="156" y1="27" x2="100" y2="55" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="184" y1="27" x2="240" y2="55" stroke="currentColor" strokeWidth="1.5" />
-  <text x="93" y="75" textAnchor="middle" fontSize="16" fill="currentColor">12</text>
-  <text x="247" y="75" textAnchor="middle" fontSize="16" fill="currentColor">21</text>
-  <line x1="83" y1="82" x2="58" y2="108" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="99" y1="82" x2="124" y2="108" stroke="currentColor" strokeWidth="1.5" />
-  <text x="52" y="128" textAnchor="middle" fontSize="16" fill="currentColor">2</text>
-  <circle cx="52" cy="122" r="13" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="130" y="128" textAnchor="middle" fontSize="16" fill="currentColor">6</text>
-  <line x1="122" y1="135" x2="100" y2="160" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="138" y1="135" x2="160" y2="160" stroke="currentColor" strokeWidth="1.5" />
-  <text x="94" y="180" textAnchor="middle" fontSize="16" fill="currentColor">2</text>
-  <circle cx="94" cy="174" r="13" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="166" y="180" textAnchor="middle" fontSize="16" fill="currentColor">3</text>
-  <circle cx="166" cy="174" r="13" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="237" y1="82" x2="215" y2="108" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="253" y1="82" x2="275" y2="108" stroke="currentColor" strokeWidth="1.5" />
-  <text x="209" y="128" textAnchor="middle" fontSize="16" fill="currentColor">3</text>
-  <circle cx="209" cy="122" r="13" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="281" y="128" textAnchor="middle" fontSize="16" fill="currentColor">7</text>
-  <circle cx="281" cy="122" r="13" fill="none" stroke="currentColor" strokeWidth="1.5" />
+<svg viewBox="0 0 340 200" role="img" aria-label="A factor tree for 252. 252 branches into 12 and 21. 12 branches into 2 (circled) and 6; 6 branches into 2 and 3, both circled. 21 branches into 3 (circled) and 7 (circled)." style="max-width: 340px; display: block; margin: 1.5rem auto">
+  <text x="170" y="20" text-anchor="middle" font-size="16" fill="currentColor">252</text>
+  <line x1="156" y1="27" x2="100" y2="55" stroke="currentColor" stroke-width="1.5" />
+  <line x1="184" y1="27" x2="240" y2="55" stroke="currentColor" stroke-width="1.5" />
+  <text x="93" y="75" text-anchor="middle" font-size="16" fill="currentColor">12</text>
+  <text x="247" y="75" text-anchor="middle" font-size="16" fill="currentColor">21</text>
+  <line x1="83" y1="82" x2="58" y2="108" stroke="currentColor" stroke-width="1.5" />
+  <line x1="99" y1="82" x2="124" y2="108" stroke="currentColor" stroke-width="1.5" />
+  <text x="52" y="128" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+  <circle cx="52" cy="122" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="130" y="128" text-anchor="middle" font-size="16" fill="currentColor">6</text>
+  <line x1="122" y1="135" x2="100" y2="160" stroke="currentColor" stroke-width="1.5" />
+  <line x1="138" y1="135" x2="160" y2="160" stroke="currentColor" stroke-width="1.5" />
+  <text x="94" y="180" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+  <circle cx="94" cy="174" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="166" y="180" text-anchor="middle" font-size="16" fill="currentColor">3</text>
+  <circle cx="166" cy="174" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <line x1="237" y1="82" x2="215" y2="108" stroke="currentColor" stroke-width="1.5" />
+  <line x1="253" y1="82" x2="275" y2="108" stroke="currentColor" stroke-width="1.5" />
+  <text x="209" y="128" text-anchor="middle" font-size="16" fill="currentColor">3</text>
+  <circle cx="209" cy="122" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="281" y="128" text-anchor="middle" font-size="16" fill="currentColor">7</text>
+  <circle cx="281" cy="122" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
 </svg>
 
 Writing $252$ as the product of all the circled primes:

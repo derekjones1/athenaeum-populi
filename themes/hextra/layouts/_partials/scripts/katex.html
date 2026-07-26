@@ -36,7 +36,9 @@
 {{- $isRemoteBase := or (strings.HasPrefix $katexBase "http://") (strings.HasPrefix $katexBase "https://") -}}
 
 {{- /* CSS retrieval consolidated: get raw CSS from either local asset or remote, then process once */ -}}
-{{- $minSuffix := cond hugo.IsProduction ".min" "" -}}
+{{- /* This project vendors only katex.min.css. Use it in development too so
+      `hugo server` never emits a link to the nonexistent katex.css file. */ -}}
+{{- $minSuffix := ".min" -}}
 {{- if $isRemoteBase -}}
   {{- $cssPath := cond (ne $katexCssAsset "") $katexCssAsset (printf "katex%s.css" $minSuffix) -}}
   {{- $katexCssUrl := urls.JoinPath $katexBase $cssPath -}}

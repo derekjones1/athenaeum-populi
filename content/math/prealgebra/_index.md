@@ -25,6 +25,23 @@ work through in order.
 
 - **Whole Numbers** — counting, place value, and the four operations.
 - **The Language of Algebra** — variables, expressions, and how we write math.
+- **Integers** — signed numbers, absolute value, integer operations, and
+  equations involving integers.
+- **Fractions** — visualizing, comparing, and computing with fractions and
+  mixed numbers.
+- **Decimals** — reading, rounding, comparing, and computing with decimals,
+  plus conversions, ratios, and rates.
+- **Percents** — connecting percents with fractions and decimals and solving
+  common percent applications.
+- **The Properties of Real Numbers** — rational and irrational numbers and the
+  properties used to simplify expressions.
+- **Solving Linear Equations** — equality properties, multi-step equations,
+  formulas, proportions, and equation-solving strategy.
+- **Math Models and Geometry** — translating applications into equations and
+  working with angles, polygons, circles, area, and volume.
+- **Polynomials** — exponent rules, scientific notation, and operations with
+  polynomial expressions.
+- **Graphs** — the coordinate plane, linear equations, intercepts, and slope.
 
 ## About this edition
 

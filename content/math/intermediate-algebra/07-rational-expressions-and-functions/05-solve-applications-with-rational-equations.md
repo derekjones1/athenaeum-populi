@@ -474,12 +474,6 @@ Raoul would burn 437.5 calories in 25 minutes.
   hint="Use $d=kt$ and solve $100=2k$."
 >}}
 
-{{< fillin
-  question="Using the train equation from the previous check, how many miles will it travel in 5 hours?"
-  answer="250"
-  hint="Substitute $t=5$ into $d=50t$."
->}}
-
 ## Solve inverse-variation problems
 
 Many applications have variables that vary inversely: as one increases, the
@@ -543,12 +537,6 @@ A 20-inch guitar string has a frequency of 572 vibrations per second.
   answer="\frac{3500}{p}"
   answerDisplay="$x=\tfrac{3{,}500}{p}$"
   hint="Use $x=\tfrac{k}{p}$ and substitute $x=700$, $p=5$."
->}}
-
-{{< fillin
-  question="Using the demand equation above, what is the demand when the price is \$7?"
-  answer="500"
-  hint="Substitute $p=7$ into $x=\tfrac{3{,}500}{p}$."
 >}}
 
 ## Key terms

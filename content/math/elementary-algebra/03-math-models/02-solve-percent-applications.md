@@ -507,13 +507,6 @@ discount and (b) the sale price of the dress?
   hint="The discount is 65% of the original \$395 price — multiply the rate by the original price."
 >}}
 
-{{< fillin
-  question="Oscar bought a barbecue that was discounted 65% from an original price of \$395. Find the sale price."
-  answer="138.25"
-  answerDisplay="\$138.25"
-  hint="The sale price is the original price minus the amount of discount: 395 minus 65% of 395."
->}}
-
 There may be times when we know the original price and the sale price, and
 we want to know the discount rate. To find the discount rate, first we will
 find the amount of discount and then use it to compute the rate as a percent
@@ -564,13 +557,6 @@ rate.
   question="Nick bought a multi-room air conditioner at a sale price of \$340. The original price of the air conditioner was \$400. Find the amount of discount."
   answer="60"
   hint="The discount is the original price minus the sale price: 400 minus 340."
->}}
-
-{{< fillin
-  question="Nick bought a multi-room air conditioner at a sale price of \$340. The original price of the air conditioner was \$400. Find the discount rate. Give the percent as a number (e.g. enter 40 for 40%)."
-  answer="15"
-  answerDisplay="15%"
-  hint="First find the discount (original minus sale price). Then find what percent that discount is of the original price."
 >}}
 
 Applications of mark-up are very common in retail settings. The price a
@@ -634,13 +620,6 @@ amount of mark-up and (b) the list price of the photograph.
   answer="2975"
   answerDisplay="\$2,975"
   hint="The mark-up is 35% of the original \$8,500 cost — multiply the rate by the original cost."
->}}
-
-{{< fillin
-  question="The Auto Resale Store bought Pablo's Toyota for \$8,500. They marked the price up 35%. Find the list price."
-  answer="11475"
-  answerDisplay="\$11,475"
-  hint="The list price is the original cost plus the mark-up: 8,500 plus 35% of 8,500."
 >}}
 
 ## Key terms

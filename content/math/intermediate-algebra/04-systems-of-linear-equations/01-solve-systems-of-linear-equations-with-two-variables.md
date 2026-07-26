@@ -115,8 +115,8 @@ numbers are solutions. Similarly, when we solve a system of two linear
 equations represented by a graph of two lines in the same plane, there are
 three possible cases.
 
-<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1.5rem', margin: '1.5rem 0' }}>
-  <div style={{ textAlign: 'center' }}>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin: 1.5rem 0">
+  <div style="text-align: center">
     <div class="ap-figure">
 <svg role="img" aria-label="A coordinate grid showing two lines, y equals x minus 1 and y equals negative x plus 3, crossing at a single point." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 196" width="196" height="196" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="170" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -159,10 +159,10 @@ three possible cases.
   <polygon points="56,20 66.6,23.5 59.5,30.6" fill="currentColor"/>
 </svg>
 </div>
-    <p style={{ fontWeight: 600, margin: '0.5rem 0 0' }}>The lines intersect.</p>
-    <p style={{ margin: 0, fontSize: '0.9rem' }}>One solution to the system.</p>
+    <p style="font-weight: 600; margin: 0.5rem 0 0">The lines intersect.</p>
+    <p style="margin: 0; font-size: 0.9rem">One solution to the system.</p>
   </div>
-  <div style={{ textAlign: 'center' }}>
+  <div style="text-align: center">
     <div class="ap-figure">
 <svg role="img" aria-label="A coordinate grid showing two parallel lines, y equals x minus 1 and y equals x plus 2, that never cross." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 196" width="196" height="196" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="170" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -205,10 +205,10 @@ three possible cases.
   <polygon points="20,152 23.5,141.4 30.6,148.5" fill="currentColor"/>
 </svg>
 </div>
-    <p style={{ fontWeight: 600, margin: '0.5rem 0 0' }}>The lines are parallel.</p>
-    <p style={{ margin: 0, fontSize: '0.9rem' }}>No solution to this system.</p>
+    <p style="font-weight: 600; margin: 0.5rem 0 0">The lines are parallel.</p>
+    <p style="margin: 0; font-size: 0.9rem">No solution to this system.</p>
   </div>
-  <div style={{ textAlign: 'center' }}>
+  <div style="text-align: center">
     <div class="ap-figure">
 <svg role="img" aria-label="A coordinate grid showing a single line, since both equations of the system graph as the same line." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 196" width="196" height="196" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="170" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -248,8 +248,8 @@ three possible cases.
   <polygon points="32,176 35.5,165.4 42.6,172.5" fill="currentColor"/>
 </svg>
 </div>
-    <p style={{ fontWeight: 600, margin: '0.5rem 0 0' }}>Both equations give the same line.</p>
-    <p style={{ margin: 0, fontSize: '0.9rem' }}>Infinitely many solutions.</p>
+    <p style="font-weight: 600; margin: 0.5rem 0 0">Both equations give the same line.</p>
+    <p style="margin: 0; font-size: 0.9rem">Infinitely many solutions.</p>
   </div>
 </div>
 

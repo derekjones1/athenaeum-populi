@@ -163,6 +163,7 @@ The solutions are $y=2$ and $y=3$.
 {{< fillin
   question="Solve $1-\tfrac{2}{x}=\tfrac{15}{x^2}$. Enter both solutions, separated by commas."
   answer="-3, 5"
+  answerMode="unordered"
   answerDisplay="$x=-3,\ 5$"
   hint="Clear fractions with $x^2$, write the quadratic in standard form, and factor."
 >}}
@@ -170,6 +171,7 @@ The solutions are $y=2$ and $y=3$.
 {{< fillin
   question="Solve $1-\tfrac{4}{y}=\tfrac{12}{y^2}$. Enter both solutions, separated by commas."
   answer="-2, 6"
+  answerMode="unordered"
   answerDisplay="$y=-2,\ 6$"
   hint="Clear fractions with $y^2$, then factor the resulting quadratic."
 >}}
@@ -445,6 +447,7 @@ $(7,1)$.
 {{< fillin
   question="For $f(x)=\tfrac{8-x}{x^2-7x+12}$, find the values excluded from the domain, separated by commas."
   answer="3, 4"
+  answerMode="unordered"
   answerDisplay="$x\ne3,\ x\ne4$"
   hint="Factor the denominator and set each factor equal to zero."
 >}}
@@ -452,6 +455,7 @@ $(7,1)$.
 {{< fillin
   question="For $f(x)=\tfrac{8-x}{x^2-7x+12}$, solve $f(x)=3$. Enter both solutions, separated by commas."
   answer="2, \frac{14}{3}"
+  answerMode="unordered"
   answerDisplay="$x=2,\ \tfrac{14}{3}$"
   hint="Set the rational expression equal to $3$, clear fractions, and discard excluded roots."
 >}}
@@ -461,27 +465,6 @@ $(7,1)$.
   answer="(2,3), (\frac{14}{3},3)"
   answerDisplay="$(2,3),\ (\tfrac{14}{3},3)$"
   hint="Use each input found when solving $f(x)=3$ as the first coordinate; the function value is the second coordinate."
->}}
-
-{{< fillin
-  question="For $f(x)=\tfrac{x-1}{x^2-6x+5}$, find the values excluded from the domain, separated by commas."
-  answer="1, 5"
-  answerDisplay="$x\ne1,\ x\ne5$"
-  hint="Factor the denominator."
->}}
-
-{{< fillin
-  question="For $f(x)=\tfrac{x-1}{x^2-6x+5}$, solve $f(x)=4$."
-  answer="\frac{21}{4}"
-  answerDisplay="$x=\tfrac{21}{4}$"
-  hint="Set the rational expression equal to $4$ and check the roots against the domain."
->}}
-
-{{< fillin
-  question="For $f(x)=\tfrac{x-1}{x^2-6x+5}$, find the point on the graph where $f(x)=4$."
-  answer="(\frac{21}{4},4)"
-  answerDisplay="$(\tfrac{21}{4},4)$"
-  hint="Use the input found when solving $f(x)=4$ as the first coordinate and the function value as the second coordinate."
 >}}
 
 ## Solve a rational equation for a specific variable

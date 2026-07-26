@@ -1,6 +1,6 @@
 /**
  * Pure answer-checking logic, shared by interactive components.
- * No React here — just math.
+ * This module is framework-independent and contains only grading logic.
  *
  * Dependency: @cortex-js/compute-engine (the CAS that ships with MathLive).
  * Input is LaTeX — exactly what a MathLive <math-field> emits as its .value —
@@ -22,7 +22,7 @@
  *      first two miss.
  *
  * This file is .mjs so `node lib/check-answer.test.mjs` runs it directly
- * (Node 22+ — the Compute Engine's floor). Next.js imports it fine.
+ * (Node 22+ — the Compute Engine's floor).
  */
 
 import { ComputeEngine } from '@cortex-js/compute-engine';
@@ -33,14 +33,49 @@ import { ComputeEngine } from '@cortex-js/compute-engine';
 export const ce = new ComputeEngine();
 
 /**
+ * Remove commas only when the whole numeric token is a conventionally
+ * grouped integer. Looking at the maximal token is important: the old
+ * character-at-a-time replacement turned `(8,125,2)` into `(8125,2)`.
+ *
+ * A token inside parentheses or square brackets is deliberately left alone
+ * because its comma may be a tuple/list separator. This includes spaced
+ * tuples such as `(8,125, 2)`, where a token-only check would otherwise turn
+ * the first two coordinates into `8125`. Authors can still write a grouped
+ * scalar outside tuple notation (`400,000`) or use `{,}` in display text.
+ */
+function insideTupleDelimiter(source, offset) {
+  const stack = [];
+  for (let index = 0; index < offset; index += 1) {
+    if (source[index] === '\\') {
+      index += 1;
+      continue;
+    }
+    if (source[index] === '(' || source[index] === '[') {
+      stack.push(source[index]);
+    } else if (source[index] === ')' && stack.at(-1) === '(') {
+      stack.pop();
+    } else if (source[index] === ']' && stack.at(-1) === '[') {
+      stack.pop();
+    }
+  }
+  return stack.length > 0;
+}
+
+function stripGroupingCommas(value) {
+  return value.replace(/\d+(?:(?:,|\{,\})\d+)*/g, (token, offset, source) => {
+    if (!/^\d{1,3}(?:(?:,|\{,\})\d{3})+$/.test(token)) return token;
+    if (insideTupleDelimiter(source, offset)) return token;
+    return token.replace(/,|\{,\}/g, '');
+  });
+}
+
+/**
  * Normalize student LaTeX before parsing.
  *  - collapses a doubled backslash before a LaTeX command letter
- *    ("\\frac{5}{6}" → "\frac{5}{6}"). Content authors write
- *    answer="\\frac{5}{6}" in .mdx files (per the authoring playbook), but
- *    JSX/MDX string attributes do NOT process backslash escapes, so the
- *    prop reaches the component with two literal backslashes — which made
- *    every fraction-based answer unparsable (silently graded "incorrect").
- *    Both "\\frac" and "\frac" in MDX now grade identically. A real LaTeX
+ *    ("\\frac{5}{6}" → "\frac{5}{6}"). Legacy imported answers can contain
+ *    two literal backslashes, which made every fraction-based answer
+ *    unparsable (silently graded "incorrect"). Both "\\frac" and "\frac"
+ *    now grade identically. A real LaTeX
  *    line break ("\\") is never meaningful in a single-line FillIn answer,
  *    so this is safe to normalize unconditionally.
  *  - strips digit-grouping commas ("400,000", "400{,}000" → "400000"),
@@ -55,10 +90,8 @@ export const ce = new ComputeEngine();
  *    "2x/9" are untouched.
  */
 export function preprocess(raw) {
-  return (raw ?? '')
+  return stripGroupingCommas(raw ?? '')
     .replace(/\\\\(?=[a-zA-Z])/g, '\\')
-    .replace(/(\d)\{,\}(?=\d{3})/g, '$1')
-    .replace(/(\d),(?=\d{3}(?:\D|$))/g, '$1')
     .replace(/\\[,;:!]/g, '')
     .replace(/~/g, ' ')
     .replace(/(^|[^\d.\w])(\d+) +(\d+)\/(\d+)/g, '$1$2\\frac{$3}{$4}')
@@ -84,12 +117,88 @@ function asVariableEquation(expr) {
   return null;
 }
 
-export function checkAnswer(studentRaw, answerRaw) {
+/**
+ * Split a comma-delimited answer without splitting commas nested in ordered
+ * pairs, intervals, function arguments, or TeX groups.
+ */
+function splitTopLevelCommas(raw) {
+  const parts = [];
+  let start = 0;
+  const stack = [];
+  let escaped = false;
+  for (let i = 0; i < raw.length; i += 1) {
+    const char = raw[i];
+    if (escaped) {
+      escaped = false;
+      continue;
+    }
+    if (char === '\\') {
+      escaped = true;
+      continue;
+    }
+    if (char === '{' || char === '(' || char === '[') stack.push(char);
+    else if (char === '}' || char === ')' || char === ']') stack.pop();
+    else if (char === ',' && stack.length === 0) {
+      parts.push(raw.slice(start, i).trim());
+      start = i + 1;
+    }
+  }
+  parts.push(raw.slice(start).trim());
+  return parts;
+}
+
+function equivalent(studentExpr, answerExpr) {
+  try {
+    if (studentExpr.isSame(answerExpr)) return true;
+    if (studentExpr.isEqual(answerExpr) === true) return true;
+    const diff = ce.box(['Subtract', studentExpr, answerExpr]).simplify();
+    return diff.isSame(ce.number(0));
+  } catch {
+    return false;
+  }
+}
+
+function parseValid(raw) {
+  try {
+    const expression = ce.parse(preprocess(raw));
+    return expression.isValid ? expression : null;
+  } catch {
+    return null;
+  }
+}
+
+function checkUnordered(studentRaw, answerRaw) {
+  const studentParts = splitTopLevelCommas(studentRaw);
+  const answerParts = splitTopLevelCommas(answerRaw);
+  if (studentParts.length < 2 || studentParts.length !== answerParts.length) return 'incorrect';
+
+  const students = studentParts.map(parseValid);
+  const answers = answerParts.map(parseValid);
+  if (students.some((part) => !part)) return 'invalid';
+  if (answers.some((part) => !part)) {
+    console.warn(`FillIn: unordered answer prop is not valid LaTeX math: ${answerRaw}`);
+    return 'incorrect';
+  }
+
+  const unused = [...students];
+  for (const expected of answers) {
+    const match = unused.findIndex((candidate) => equivalent(candidate, expected));
+    if (match === -1) return 'incorrect';
+    unused.splice(match, 1);
+  }
+  return 'correct';
+}
+
+export function checkAnswer(studentRaw, answerRaw, options = {}) {
   const student = preprocess(studentRaw);
   if (!student) return 'empty';
 
   // An unfilled box in a fraction/exponent shows up as \placeholder{}.
   if (student.includes('\\placeholder')) return 'invalid';
+
+  if (options.unordered === true || options.mode === 'unordered') {
+    return checkUnordered(studentRaw, answerRaw);
+  }
 
   let studentExpr;
   try {
@@ -132,13 +241,5 @@ export function checkAnswer(studentRaw, answerRaw) {
     answerExpr = answerEq.value;
   }
 
-  try {
-    if (studentExpr.isSame(answerExpr)) return 'correct';
-    if (studentExpr.isEqual(answerExpr) === true) return 'correct';
-    const diff = ce.box(['Subtract', studentExpr, answerExpr]).simplify();
-    if (diff.isSame(ce.number(0))) return 'correct';
-  } catch {
-    /* fall through */
-  }
-  return 'incorrect';
+  return equivalent(studentExpr, answerExpr) ? 'correct' : 'incorrect';
 }

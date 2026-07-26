@@ -11,9 +11,8 @@
  *   e.g. node tools/convert-book.mjs ../content/math/prealgebra content/math/prealgebra
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync } from 'node:fs';
-import { join, resolve, dirname } from 'node:path';
-import { pathToFileURL } from 'node:url';
-import { convertMdx } from './lib-convert.mjs';
+import { join, dirname } from 'node:path';
+import { convertMdx, parseLiteralExpression } from './lib-convert.mjs';
 
 const [, , srcDir, destDir] = process.argv;
 if (!srcDir || !destDir) {
@@ -24,15 +23,28 @@ if (!srcDir || !destDir) {
 async function loadMeta(dir) {
   const p = join(dir, '_meta.js');
   if (!existsSync(p)) return null;
-  const mod = await import(pathToFileURL(resolve(p)).href + '?t=' + Date.now());
-  return mod.default;
+  const source = readFileSync(p, 'utf8');
+  const match = /\bexport\s+default\s+([\s\S]*?);?\s*$/.exec(source);
+  if (!match) throw new Error(`${p}: expected a literal \`export default {…}\``);
+  return parseLiteralExpression(match[1].replace(/;\s*$/, ''));
 }
 
 /** Insert keys into a `---\n…\n---\n` frontmatter block if not already set. */
 function injectFront(front, lines) {
+  const existing = new Set([...front.matchAll(/^([A-Za-z_][\w-]*):/gm)].map((match) => match[1]));
+  const filtered = [];
+  for (let i = 0; i < lines.length; i++) {
+    const key = /^([A-Za-z_][\w-]*):/.exec(lines[i])?.[1];
+    if (key && existing.has(key)) {
+      while (i + 1 < lines.length && /^\s/.test(lines[i + 1])) i++;
+      continue;
+    }
+    filtered.push(lines[i]);
+  }
+  if (!filtered.length) return front || '';
   const close = front.lastIndexOf('\n---');
-  if (close === -1) return `---\n${lines.join('\n')}\n---\n`;
-  return front.slice(0, close) + '\n' + lines.join('\n') + front.slice(close);
+  if (close === -1) return `---\n${filtered.join('\n')}\n---\n`;
+  return front.slice(0, close) + '\n' + filtered.join('\n') + front.slice(close);
 }
 
 const frontTitle = (front) => {

@@ -48,18 +48,40 @@ negative numbers, we extend the number line to the left of zero, marking
 off intervals the same width as those on the positive side, and label
 them $-1, -2, -3,$ and so on:
 
-<svg viewBox="0 0 460 70" role="img" aria-label="A number line from -4 to 4 with zero in the middle. Negative numbers are labeled to the left of zero; positive numbers to the right." style={{ maxWidth: 460, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="20" y1="35" x2="440" y2="35" stroke="currentColor" strokeWidth="1.5" markerEnd="url(#arrow-intro)" markerStart="url(#arrow-intro-start)" />
+<svg viewBox="0 0 460 70" role="img" aria-label="A number line from -4 to 4 with zero in the middle. Negative numbers are labeled to the left of zero; positive numbers to the right." style="max-width: 460px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="35" x2="440" y2="35" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-intro)" marker-start="url(#arrow-intro-start)" />
   <defs>
     <marker id="arrow-intro" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
     <marker id="arrow-intro-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="currentColor" /></marker>
   </defs>
-  {[-4,-3,-2,-1,0,1,2,3,4].map((n,i) => (
-    <g key={n}>
-      <line x1={20+i*50} y1="28" x2={20+i*50} y2="42" stroke="currentColor" strokeWidth="1.5" />
-      <text x={20+i*50} y="60" textAnchor="middle" fontSize="15" fill="currentColor">{n}</text>
+  <g>
+      <line x1="20" y1="28" x2="20" y2="42" stroke="currentColor" stroke-width="1.5" />
+      <text x="20" y="60" text-anchor="middle" font-size="15" fill="currentColor">-4</text>
+    </g><g>
+      <line x1="70" y1="28" x2="70" y2="42" stroke="currentColor" stroke-width="1.5" />
+      <text x="70" y="60" text-anchor="middle" font-size="15" fill="currentColor">-3</text>
+    </g><g>
+      <line x1="120" y1="28" x2="120" y2="42" stroke="currentColor" stroke-width="1.5" />
+      <text x="120" y="60" text-anchor="middle" font-size="15" fill="currentColor">-2</text>
+    </g><g>
+      <line x1="170" y1="28" x2="170" y2="42" stroke="currentColor" stroke-width="1.5" />
+      <text x="170" y="60" text-anchor="middle" font-size="15" fill="currentColor">-1</text>
+    </g><g>
+      <line x1="220" y1="28" x2="220" y2="42" stroke="currentColor" stroke-width="1.5" />
+      <text x="220" y="60" text-anchor="middle" font-size="15" fill="currentColor">0</text>
+    </g><g>
+      <line x1="270" y1="28" x2="270" y2="42" stroke="currentColor" stroke-width="1.5" />
+      <text x="270" y="60" text-anchor="middle" font-size="15" fill="currentColor">1</text>
+    </g><g>
+      <line x1="320" y1="28" x2="320" y2="42" stroke="currentColor" stroke-width="1.5" />
+      <text x="320" y="60" text-anchor="middle" font-size="15" fill="currentColor">2</text>
+    </g><g>
+      <line x1="370" y1="28" x2="370" y2="42" stroke="currentColor" stroke-width="1.5" />
+      <text x="370" y="60" text-anchor="middle" font-size="15" fill="currentColor">3</text>
+    </g><g>
+      <line x1="420" y1="28" x2="420" y2="42" stroke="currentColor" stroke-width="1.5" />
+      <text x="420" y="60" text-anchor="middle" font-size="15" fill="currentColor">4</text>
     </g>
-  ))}
 </svg>
 
 The arrows at either end of the line show that the number line extends
@@ -72,21 +94,43 @@ To plot $3$, start at $0$ and count three units to the right. To plot
 $-3$, start at $0$ and count three units to the left. To plot $-2$, start
 at $0$ and count two units to the left.
 
-<svg viewBox="0 0 460 60" role="img" aria-label="A number line from -4 to 4 with points plotted at 3, -3, and -2." style={{ maxWidth: 460, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="20" y1="30" x2="440" y2="30" stroke="currentColor" strokeWidth="1.5" markerEnd="url(#arrow-ex1)" markerStart="url(#arrow-ex1-start)" />
+<svg viewBox="0 0 460 60" role="img" aria-label="A number line from -4 to 4 with points plotted at 3, -3, and -2." style="max-width: 460px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="30" x2="440" y2="30" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrow-ex1)" marker-start="url(#arrow-ex1-start)" />
   <defs>
     <marker id="arrow-ex1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="currentColor" /></marker>
     <marker id="arrow-ex1-start" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M8,0 L0,4 L8,8 Z" fill="currentColor" /></marker>
   </defs>
-  {[-4,-3,-2,-1,0,1,2,3,4].map((n,i) => (
-    <g key={n}>
-      <line x1={20+i*50} y1="23" x2={20+i*50} y2="37" stroke="currentColor" strokeWidth="1.5" />
-      <text x={20+i*50} y="55" textAnchor="middle" fontSize="15" fill="currentColor">{n}</text>
+  <g>
+      <line x1="20" y1="23" x2="20" y2="37" stroke="currentColor" stroke-width="1.5" />
+      <text x="20" y="55" text-anchor="middle" font-size="15" fill="currentColor">-4</text>
+    </g><g>
+      <line x1="70" y1="23" x2="70" y2="37" stroke="currentColor" stroke-width="1.5" />
+      <text x="70" y="55" text-anchor="middle" font-size="15" fill="currentColor">-3</text>
+    </g><g>
+      <line x1="120" y1="23" x2="120" y2="37" stroke="currentColor" stroke-width="1.5" />
+      <text x="120" y="55" text-anchor="middle" font-size="15" fill="currentColor">-2</text>
+    </g><g>
+      <line x1="170" y1="23" x2="170" y2="37" stroke="currentColor" stroke-width="1.5" />
+      <text x="170" y="55" text-anchor="middle" font-size="15" fill="currentColor">-1</text>
+    </g><g>
+      <line x1="220" y1="23" x2="220" y2="37" stroke="currentColor" stroke-width="1.5" />
+      <text x="220" y="55" text-anchor="middle" font-size="15" fill="currentColor">0</text>
+    </g><g>
+      <line x1="270" y1="23" x2="270" y2="37" stroke="currentColor" stroke-width="1.5" />
+      <text x="270" y="55" text-anchor="middle" font-size="15" fill="currentColor">1</text>
+    </g><g>
+      <line x1="320" y1="23" x2="320" y2="37" stroke="currentColor" stroke-width="1.5" />
+      <text x="320" y="55" text-anchor="middle" font-size="15" fill="currentColor">2</text>
+    </g><g>
+      <line x1="370" y1="23" x2="370" y2="37" stroke="currentColor" stroke-width="1.5" />
+      <text x="370" y="55" text-anchor="middle" font-size="15" fill="currentColor">3</text>
+    </g><g>
+      <line x1="420" y1="23" x2="420" y2="37" stroke="currentColor" stroke-width="1.5" />
+      <text x="420" y="55" text-anchor="middle" font-size="15" fill="currentColor">4</text>
     </g>
-  ))}
-  <circle cx={20+7*50} cy="30" r="5" fill="currentColor" />
-  <circle cx={20+1*50} cy="30" r="5" fill="currentColor" />
-  <circle cx={20+2*50} cy="30" r="5" fill="currentColor" />
+  <circle cx="370" cy="30" r="5" fill="currentColor" />
+  <circle cx="70" cy="30" r="5" fill="currentColor" />
+  <circle cx="120" cy="30" r="5" fill="currentColor" />
 </svg>
 
 {{< fillin

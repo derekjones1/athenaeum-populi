@@ -1,14 +1,11 @@
 /*
- * Athenaeum Populi — parity layer on top of Hextra.
- * Auto-loaded by Hextra (assets/css/custom.css). Phase 0: enough to make the
- * scaffold "recognizably like the current site". Full token port lands later.
- *
- * Source of truth for these values: old site app/globals.css.
+ * Athenaeum Populi — project theme overrides on top of vendored Hextra.
+ * Hextra auto-loads this file; it is the source of truth for site design
+ * tokens, content styling, and interactive-component presentation.
  */
 
 :root {
-  /* Calm scholarly blue — matches the Nextra site's muted accent, not
-     Hextra's default 212deg/100%. */
+  /* Calm scholarly blue used by the site's navigation and accents. */
   --primary-hue: 214deg;
   --primary-saturation: 66%;
   --primary-lightness: 50%;
@@ -61,7 +58,7 @@ th .katex {
   outline-offset: 2px;
 }
 
-/* --- <fill-in> interactive component (ports FillIn.jsx's inline styles) --- */
+/* --- Interactive exercise components ----------------------------------- */
 .ap-fillin {
   border: 1px solid var(--ap-border, #d6d3cd);
   border-radius: 8px;

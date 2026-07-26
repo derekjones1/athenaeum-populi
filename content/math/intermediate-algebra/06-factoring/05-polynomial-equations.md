@@ -106,6 +106,7 @@ The solutions are $n=\tfrac{2}{5}$ and $n=\tfrac{1}{6}$.
 {{< fillin
   question="Solve $(3m-2)(2m+1)=0$. Enter the two solutions separated by commas."
   answer="-\frac{1}{2}, \frac{2}{3}"
+  answerMode="unordered"
   answerDisplay="$-\tfrac{1}{2}, \tfrac{2}{3}$"
   hint="Use the Zero Product Property: set each factor equal to zero and solve both linear equations."
 >}}
@@ -113,6 +114,7 @@ The solutions are $n=\tfrac{2}{5}$ and $n=\tfrac{1}{6}$.
 {{< fillin
   question="Solve $(4p+3)(4p-3)=0$. Enter the two solutions separated by commas."
   answer="-\frac{3}{4}, \frac{3}{4}"
+  answerMode="unordered"
   answerDisplay="$-\tfrac{3}{4}, \tfrac{3}{4}$"
   hint="Set $4p+3=0$ and $4p-3=0$, then solve."
 >}}
@@ -148,6 +150,7 @@ Substituting each solution into the original equation verifies both answers.
 {{< fillin
   question="Solve $3c^2=10c-8$. Enter the two solutions separated by commas."
   answer="\frac{4}{3}, 2"
+  answerMode="unordered"
   answerDisplay="$\tfrac{4}{3}, 2$"
   hint="Write the equation in standard form, factor the trinomial, and use the Zero Product Property."
 >}}
@@ -155,6 +158,7 @@ Substituting each solution into the original equation verifies both answers.
 {{< fillin
   question="Solve $2d^2-5d=3$. Enter the two solutions separated by commas."
   answer="-\frac{1}{2}, 3"
+  answerMode="unordered"
   answerDisplay="$-\tfrac{1}{2}, 3$"
   hint="Move 3 to the left, then factor $2d^2-5d-3$."
 >}}
@@ -189,6 +193,7 @@ The check is left to you.
 {{< fillin
   question="Solve $25p^2=49$. Enter the two solutions separated by commas."
   answer="-\frac{7}{5}, \frac{7}{5}"
+  answerMode="unordered"
   answerDisplay="$-\tfrac{7}{5}, \tfrac{7}{5}$"
   hint="Move 49 to the left and factor the difference of squares."
 >}}
@@ -196,6 +201,7 @@ The check is left to you.
 {{< fillin
   question="Solve $36x^2=121$. Enter the two solutions separated by commas."
   answer="-\frac{11}{6}, \frac{11}{6}"
+  answerMode="unordered"
   answerDisplay="$-\tfrac{11}{6}, \tfrac{11}{6}$"
   hint="Write $36x^2-121=0$ and factor the difference of squares."
 >}}
@@ -221,6 +227,7 @@ The check is left to you.
 {{< fillin
   question="Solve $(2m+1)(m+3)=12m$. Enter the two solutions separated by commas."
   answer="1, \frac{3}{2}"
+  answerMode="unordered"
   answerDisplay="$1, \tfrac{3}{2}$"
   hint="Multiply the binomials, put the equation in standard form, and factor."
 >}}
@@ -228,6 +235,7 @@ The check is left to you.
 {{< fillin
   question="Solve $(k+1)(k-1)=8$. Enter the two solutions separated by commas."
   answer="-3, 3"
+  answerMode="unordered"
   answerDisplay="$-3, 3$"
   hint="Expand the left side and move 8 to the left before factoring."
 >}}
@@ -252,6 +260,7 @@ The constant factor $3$ is not zero and produces no solution.
 {{< fillin
   question="Solve $18a^2-30=-33a$. Enter the two solutions separated by commas."
   answer="-\frac{5}{2}, \frac{2}{3}"
+  answerMode="unordered"
   answerDisplay="$-\tfrac{5}{2}, \tfrac{2}{3}$"
   hint="Move every term to the left, factor the GCF, then factor the trinomial."
 >}}
@@ -259,6 +268,7 @@ The constant factor $3$ is not zero and produces no solution.
 {{< fillin
   question="Solve $123b=-6-60b^2$. Enter the two solutions separated by commas."
   answer="-2, -\frac{1}{20}"
+  answerMode="unordered"
   answerDisplay="$-2, -\tfrac{1}{20}$"
   hint="Write the equation in standard form and first factor out the GCF."
 >}}
@@ -282,6 +292,7 @@ $$
 {{< fillin
   question="Solve $8x^3=24x^2-18x$. Enter the distinct solutions separated by commas."
   answer="0, \frac{3}{2}"
+  answerMode="unordered"
   answerDisplay="$0, \tfrac{3}{2}$"
   hint="Put zero on one side, factor the GCF, and recognize the remaining perfect-square trinomial."
 >}}
@@ -289,6 +300,7 @@ $$
 {{< fillin
   question="Solve $16y^2=32y^3+2y$. Enter the distinct solutions separated by commas."
   answer="0, \frac{1}{4}"
+  answerMode="unordered"
   answerDisplay="$0, \tfrac{1}{4}$"
   hint="Move all terms to one side, factor out $2y$, and factor the remaining trinomial."
 >}}
@@ -322,6 +334,7 @@ graph.
 {{< fillin
   question="For $f(x)=x^2-2x-8$, find $x$ when $f(x)=7$. Enter the two values separated by commas."
   answer="-3, 5"
+  answerMode="unordered"
   answerDisplay="$-3, 5$"
   hint="Set $x^2-2x-8=7$, put the equation in standard form, and factor."
 >}}
@@ -329,6 +342,7 @@ graph.
 {{< fillin
   question="For $f(x)=x^2-8x+3$, find $x$ when $f(x)=-4$. Enter the two values separated by commas."
   answer="1, 7"
+  answerMode="unordered"
   answerDisplay="$1, 7$"
   hint="Set $x^2-8x+3=-4$, move all terms to one side, and factor."
 >}}
@@ -368,6 +382,7 @@ The $y$-intercept is $(0,-8)$.
 {{< fillin
   question="For $f(x)=2x^2-7x+5$, find the zeros of the function. Enter the two values separated by commas."
   answer="1, \frac{5}{2}"
+  answerMode="unordered"
   answerDisplay="$1, \tfrac{5}{2}$"
   hint="Set $f(x)=0$, factor the trinomial, and solve each factor."
 >}}
@@ -375,6 +390,7 @@ The $y$-intercept is $(0,-8)$.
 {{< fillin
   question="For $f(x)=6x^2+13x-15$, find the zeros of the function. Enter the two values separated by commas."
   answer="-3, \frac{5}{6}"
+  answerMode="unordered"
   answerDisplay="$-3, \tfrac{5}{6}$"
   hint="Set the function equal to zero and factor $(3x-?)(2x+?)$."
 >}}
@@ -592,13 +608,6 @@ After $2$ seconds, the ball is at $144$ feet.
   answer="4"
   answerDisplay="$4$ seconds"
   hint="Set the height equal to zero, factor, and reject the negative solution."
->}}
-
-{{< fillin
-  question="For the penny with $h(t)=-16t^2+32t+128$, find its height at $t=1$ second."
-  answer="144"
-  answerDisplay="$144$ feet"
-  hint="Substitute $t=1$ into the height function."
 >}}
 
 ## Key terms

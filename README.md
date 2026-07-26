@@ -36,17 +36,14 @@ Follow [docs/authoring-playbook.md](docs/authoring-playbook.md) for sections and
 cumulative knowledge checks. Content lives under `content/` in the hierarchy
 Subject → Book → Chapter → Section.
 
-## Repository cutover
-
-The migration was developed in a nested folder inside the original Next/Nextra
-repository. Follow [docs/main-branch-promotion-checklist.md](docs/main-branch-promotion-checklist.md)
-to move it into a fresh local repository, replace the existing GitHub `main`,
-and connect the production Cloudflare Worker.
+The active build, browser, search, verification, and deployment design is
+summarized in [docs/architecture.md](docs/architecture.md).
 
 ## Deployment
 
 `wrangler.jsonc` deploys `public/` as static assets to the existing
 `athenaeum-populi` Worker. On pushes to `main`, GitHub Actions runs the complete
 verification gate before deploying. It requires repository secrets
-`CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`; see the promotion checklist
-for setup, domain verification, smoke tests, and rollback.
+`CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`; see
+[docs/main-branch-promotion-checklist.md](docs/main-branch-promotion-checklist.md)
+for the current production verification, smoke-test, and rollback runbook.

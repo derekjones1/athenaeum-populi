@@ -85,12 +85,6 @@ product is *negative*. We'll put this all together in the chart below.
   hint="The signs are different, so the product is negative."
 >}}
 
-{{< fillin
-  question="Multiply: $5 \cdot 12$"
-  answer="60"
-  hint="The signs are the same, so the product is positive."
->}}
-
 When we multiply a number by $1$, the result is the same number. What
 happens when we multiply a number by $-1$? Let's multiply a positive number
 and then a negative number by $-1$ to see what we get.
@@ -296,13 +290,13 @@ inside the parenthesis: $(6)^2$. Simplify: $36$.
 (b) Substitute $-12$ for $z$ and subtract: $20 - z = 20 - (-12) = 32$.
 
 {{< fillin
-  question="Evaluate: $17 - k$ when (a) $k = 19$"
+  question="Evaluate: $17 - k$ when $k = 19$"
   answer="-2"
   hint="Substitute $19$ for $k$, then subtract."
 >}}
 
 {{< fillin
-  question="Evaluate: $17 - k$ when (b) $k = -19$"
+  question="Evaluate: $17 - k$ when $k = -19$"
   answer="36"
   hint="Substitute $-19$ for $k$. Subtracting a negative is the same as adding its opposite."
 >}}

@@ -134,6 +134,7 @@ $$
 {{< fillin
   question="Solve $|3x-5|-1=6$. Enter the two solutions separated by commas."
   answer="-\frac{2}{3},4"
+  answerMode="unordered"
   answerDisplay="$-\tfrac{2}{3}, 4$"
   hint="First add 1 to isolate the absolute value expression, and then write the two equivalent equations."
 >}}

@@ -25,10 +25,10 @@ Are you familiar with the phrase "do a $180$"? It means to turn so that you
 face the opposite direction — it comes from the fact that the measure of an
 angle that makes a straight line is $180$ degrees.
 
-<svg viewBox="0 0 260 90" role="img" aria-label="A straight line with an arc marking the 180 degree angle it forms." style={{ maxWidth: 260, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="20" y1="70" x2="240" y2="70" stroke="currentColor" strokeWidth="1.5" />
-  <path d="M 70 70 A 60 60 0 0 1 190 70" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="130" y="35" textAnchor="middle" fontSize="15" fill="currentColor">180°</text>
+<svg viewBox="0 0 260 90" role="img" aria-label="A straight line with an arc marking the 180 degree angle it forms." style="max-width: 260px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="70" x2="240" y2="70" stroke="currentColor" stroke-width="1.5" />
+  <path d="M 70 70 A 60 60 0 0 1 190 70" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="130" y="35" text-anchor="middle" font-size="15" fill="currentColor">180°</text>
 </svg>
 
 An **angle** is formed by two rays that share a common endpoint. Each ray
@@ -37,10 +37,10 @@ is called a side of the angle, and the common endpoint is called the
 $\angle A$ is the angle with vertex at point $A$. The measure of $\angle A$
 is written $m\angle A$.
 
-<svg viewBox="0 0 220 100" role="img" aria-label="Angle A: two rays sharing vertex A, one horizontal and one sloping upward." style={{ maxWidth: 220, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="30" y1="80" x2="200" y2="80" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="30" y1="80" x2="190" y2="20" stroke="currentColor" strokeWidth="1.5" />
-  <text x="20" y="90" textAnchor="middle" fontSize="15" fill="currentColor">A</text>
+<svg viewBox="0 0 220 100" role="img" aria-label="Angle A: two rays sharing vertex A, one horizontal and one sloping upward." style="max-width: 220px; display: block; margin: 1.5rem auto">
+  <line x1="30" y1="80" x2="200" y2="80" stroke="currentColor" stroke-width="1.5" />
+  <line x1="30" y1="80" x2="190" y2="20" stroke="currentColor" stroke-width="1.5" />
+  <text x="20" y="90" text-anchor="middle" font-size="15" fill="currentColor">A</text>
 </svg>
 
 We measure angles in degrees, using the symbol ° to represent degrees, and
@@ -139,14 +139,14 @@ vertices. The triangle below is called $\Delta ABC$, read "triangle ABC."
 Each side is labeled with a lowercase letter to match the uppercase letter
 of the opposite vertex.
 
-<svg viewBox="0 0 220 170" role="img" aria-label="Triangle ABC with vertices A, B, and C, and sides a (opposite A), b (opposite B), and c (opposite C)." style={{ maxWidth: 220, display: 'block', margin: '1.5rem auto' }}>
-  <polygon points="40,140 190,140 140,20" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="30" y="152" textAnchor="middle" fontSize="15" fill="currentColor">A</text>
-  <text x="200" y="152" textAnchor="middle" fontSize="15" fill="currentColor">C</text>
-  <text x="140" y="14" textAnchor="middle" fontSize="15" fill="currentColor">B</text>
-  <text x="115" y="157" textAnchor="middle" fontSize="14" fill="currentColor">b</text>
-  <text x="179" y="78" textAnchor="middle" fontSize="14" fill="currentColor">a</text>
-  <text x="73" y="78" textAnchor="middle" fontSize="14" fill="currentColor">c</text>
+<svg viewBox="0 0 220 170" role="img" aria-label="Triangle ABC with vertices A, B, and C, and sides a (opposite A), b (opposite B), and c (opposite C)." style="max-width: 220px; display: block; margin: 1.5rem auto">
+  <polygon points="40,140 190,140 140,20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="30" y="152" text-anchor="middle" font-size="15" fill="currentColor">A</text>
+  <text x="200" y="152" text-anchor="middle" font-size="15" fill="currentColor">C</text>
+  <text x="140" y="14" text-anchor="middle" font-size="15" fill="currentColor">B</text>
+  <text x="115" y="157" text-anchor="middle" font-size="14" fill="currentColor">b</text>
+  <text x="179" y="78" text-anchor="middle" font-size="14" fill="currentColor">a</text>
+  <text x="73" y="78" text-anchor="middle" font-size="14" fill="currentColor">c</text>
 </svg>
 
 The three angles of a triangle are related in a special way: the sum of
@@ -190,10 +190,10 @@ degrees.
 A **right triangle** has one $90^\circ$ angle, often marked with a small square
 in the corner.
 
-<svg viewBox="0 0 180 130" role="img" aria-label="A right triangle with the 90 degree angle marked at the bottom-left corner with a small square." style={{ maxWidth: 180, display: 'block', margin: '1.5rem auto' }}>
-  <polygon points="30,110 170,110 30,15" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <rect x="30" y="97" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="1.2" />
-  <text x="60" y="93" textAnchor="middle" fontSize="14" fill="currentColor">90°</text>
+<svg viewBox="0 0 180 130" role="img" aria-label="A right triangle with the 90 degree angle marked at the bottom-left corner with a small square." style="max-width: 180px; display: block; margin: 1.5rem auto">
+  <polygon points="30,110 170,110 30,15" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="30" y="97" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.2" />
+  <text x="60" y="93" text-anchor="middle" font-size="14" fill="currentColor">90°</text>
 </svg>
 
 If we know a triangle is a right triangle, one angle measures $90^\circ$, so we
@@ -329,12 +329,12 @@ mathematician Pythagoras. In a right triangle, the side opposite the $90^\circ$
 angle is called the **hypotenuse**, and the other two sides are called the
 **legs**.
 
-<svg viewBox="0 0 200 150" role="img" aria-label="A right triangle with legs a and b and hypotenuse c, the right angle marked at the bottom-left." style={{ maxWidth: 200, display: 'block', margin: '1.5rem auto' }}>
-  <polygon points="30,130 170,130 30,20" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <rect x="30" y="117" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="1.2" />
-  <text x="15" y="78" textAnchor="middle" fontSize="14" fill="currentColor">a</text>
-  <text x="100" y="146" textAnchor="middle" fontSize="14" fill="currentColor">b</text>
-  <text x="115" y="65" textAnchor="middle" fontSize="14" fill="currentColor">c</text>
+<svg viewBox="0 0 200 150" role="img" aria-label="A right triangle with legs a and b and hypotenuse c, the right angle marked at the bottom-left." style="max-width: 200px; display: block; margin: 1.5rem auto">
+  <polygon points="30,130 170,130 30,20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="30" y="117" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.2" />
+  <text x="15" y="78" text-anchor="middle" font-size="14" fill="currentColor">a</text>
+  <text x="100" y="146" text-anchor="middle" font-size="14" fill="currentColor">b</text>
+  <text x="115" y="65" text-anchor="middle" font-size="14" fill="currentColor">c</text>
 </svg>
 
 The Pythagorean Theorem tells how the lengths of the three sides of a right
@@ -415,13 +415,13 @@ distances from the corner to each end of the bracket are equal. How far
 below the corner should he fasten the bracket? Approximate to the nearest
 tenth of an inch.
 
-<svg viewBox="0 0 160 160" role="img" aria-label="A right angle at a gazebo corner with two equal legs labeled x meeting a 10-inch diagonal brace." style={{ maxWidth: 160, display: 'block', margin: '1.5rem auto' }}>
-  <polyline points="30,20 30,140 150,140" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="30" y1="20" x2="150" y2="140" stroke="currentColor" strokeWidth="1.5" strokeDasharray="5,4" />
-  <rect x="30" y="127" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="1.2" />
-  <text x="14" y="82" textAnchor="middle" fontSize="14" fill="currentColor">x</text>
-  <text x="90" y="156" textAnchor="middle" fontSize="14" fill="currentColor">x</text>
-  <text x="105" y="72" textAnchor="middle" fontSize="14" fill="currentColor">10 in</text>
+<svg viewBox="0 0 160 160" role="img" aria-label="A right angle at a gazebo corner with two equal legs labeled x meeting a 10-inch diagonal brace." style="max-width: 160px; display: block; margin: 1.5rem auto">
+  <polyline points="30,20 30,140 150,140" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <line x1="30" y1="20" x2="150" y2="140" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,4" />
+  <rect x="30" y="127" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.2" />
+  <text x="14" y="82" text-anchor="middle" font-size="14" fill="currentColor">x</text>
+  <text x="90" y="156" text-anchor="middle" font-size="14" fill="currentColor">x</text>
+  <text x="105" y="72" text-anchor="middle" font-size="14" fill="currentColor">10 in</text>
 </svg>
 
 Let $x =$ the distance from the corner along each side. Since both legs are

@@ -22,22 +22,22 @@ weight: 2
 A **negative number** is a number less than $0$. The negative numbers are to
 the left of zero on the number line. See the figure below.
 
-<svg viewBox="0 0 440 90" role="img" aria-label="A number line from negative 4 to 4 with 0 in the middle. The numbers to the left of zero are labeled negative numbers; the numbers to the right of zero are labeled positive numbers; zero is labeled in the middle." style={{ maxWidth: 440, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="40" y1="35" x2="360" y2="35" stroke="currentColor" strokeWidth="1.5" />
+<svg viewBox="0 0 440 90" role="img" aria-label="A number line from negative 4 to 4 with 0 in the middle. The numbers to the left of zero are labeled negative numbers; the numbers to the right of zero are labeled positive numbers; zero is labeled in the middle." style="max-width: 440px; display: block; margin: 1.5rem auto">
+  <line x1="40" y1="35" x2="360" y2="35" stroke="currentColor" stroke-width="1.5" />
   <polygon points="40,35 50,31 50,39" fill="currentColor" />
   <polygon points="360,35 350,31 350,39" fill="currentColor" />
-  <g fill="currentColor" fontSize="13" textAnchor="middle">
-    <line x1="80" y1="30" x2="80" y2="40" stroke="currentColor" strokeWidth="1.5" /><text x="80" y="55">-4</text>
-    <line x1="115" y1="30" x2="115" y2="40" stroke="currentColor" strokeWidth="1.5" /><text x="115" y="55">-3</text>
-    <line x1="150" y1="30" x2="150" y2="40" stroke="currentColor" strokeWidth="1.5" /><text x="150" y="55">-2</text>
-    <line x1="185" y1="30" x2="185" y2="40" stroke="currentColor" strokeWidth="1.5" /><text x="185" y="55">-1</text>
-    <line x1="220" y1="30" x2="220" y2="40" stroke="currentColor" strokeWidth="1.5" /><text x="220" y="55">0</text>
-    <line x1="255" y1="30" x2="255" y2="40" stroke="currentColor" strokeWidth="1.5" /><text x="255" y="55">1</text>
-    <line x1="290" y1="30" x2="290" y2="40" stroke="currentColor" strokeWidth="1.5" /><text x="290" y="55">2</text>
-    <line x1="325" y1="30" x2="325" y2="40" stroke="currentColor" strokeWidth="1.5" /><text x="325" y="55">3</text>
-    <line x1="350" y1="30" x2="350" y2="40" stroke="currentColor" strokeWidth="1.5" /><text x="350" y="55">4</text>
+  <g fill="currentColor" font-size="13" text-anchor="middle">
+    <line x1="80" y1="30" x2="80" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="80" y="55">-4</text>
+    <line x1="115" y1="30" x2="115" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="115" y="55">-3</text>
+    <line x1="150" y1="30" x2="150" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="150" y="55">-2</text>
+    <line x1="185" y1="30" x2="185" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="185" y="55">-1</text>
+    <line x1="220" y1="30" x2="220" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="220" y="55">0</text>
+    <line x1="255" y1="30" x2="255" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="255" y="55">1</text>
+    <line x1="290" y1="30" x2="290" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="290" y="55">2</text>
+    <line x1="325" y1="30" x2="325" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="325" y="55">3</text>
+    <line x1="350" y1="30" x2="350" y2="40" stroke="currentColor" stroke-width="1.5" /><text x="350" y="55">4</text>
   </g>
-  <g fill="currentColor" fontSize="11" textAnchor="middle">
+  <g fill="currentColor" font-size="11" text-anchor="middle">
     <text x="130" y="80">Negative numbers</text>
     <text x="220" y="80">Zero</text>
     <text x="310" y="80">Positive numbers</text>
@@ -57,32 +57,32 @@ $-2$ is $2$.
 
 The figure below illustrates the definition.
 
-<svg viewBox="0 0 360 90" role="img" aria-label="A number line from negative 4 to 4. Points are marked at negative 3 and at 3. A bracket labeled 3 spans from negative 3 to 0, and another bracket labeled 3 spans from 0 to 3, showing that negative 3 and 3 are each three units from zero." style={{ maxWidth: 360, display: 'block', margin: '1.5rem auto' }}>
-  <g fill="currentColor" fontSize="13" textAnchor="middle">
+<svg viewBox="0 0 360 90" role="img" aria-label="A number line from negative 4 to 4. Points are marked at negative 3 and at 3. A bracket labeled 3 spans from negative 3 to 0, and another bracket labeled 3 spans from 0 to 3, showing that negative 3 and 3 are each three units from zero." style="max-width: 360px; display: block; margin: 1.5rem auto">
+  <g fill="currentColor" font-size="13" text-anchor="middle">
     <text x="128" y="20">3</text>
     <text x="272" y="20">3</text>
   </g>
-  <path d="M95,28 v-4 h105 v4" fill="none" stroke="currentColor" strokeWidth="1.2" />
-  <path d="M200,28 v-4 h105 v4" fill="none" stroke="currentColor" strokeWidth="1.2" />
-  <line x1="20" y1="45" x2="340" y2="45" stroke="currentColor" strokeWidth="1.5" />
+  <path d="M95,28 v-4 h105 v4" fill="none" stroke="currentColor" stroke-width="1.2" />
+  <path d="M200,28 v-4 h105 v4" fill="none" stroke="currentColor" stroke-width="1.2" />
+  <line x1="20" y1="45" x2="340" y2="45" stroke="currentColor" stroke-width="1.5" />
   <polygon points="20,45 30,41 30,49" fill="currentColor" />
   <polygon points="340,45 330,41 330,49" fill="currentColor" />
-  <g fill="currentColor" fontSize="13" textAnchor="middle">
-    <line x1="60" y1="40" x2="60" y2="50" stroke="currentColor" strokeWidth="1.5" /><text x="60" y="65">-4</text>
-    <line x1="95" y1="40" x2="95" y2="50" stroke="currentColor" strokeWidth="1.5" /><text x="95" y="65">-3</text>
-    <line x1="130" y1="40" x2="130" y2="50" stroke="currentColor" strokeWidth="1.5" /><text x="130" y="65">-2</text>
-    <line x1="165" y1="40" x2="165" y2="50" stroke="currentColor" strokeWidth="1.5" /><text x="165" y="65">-1</text>
-    <line x1="200" y1="40" x2="200" y2="50" stroke="currentColor" strokeWidth="1.5" /><text x="200" y="65">0</text>
-    <line x1="235" y1="40" x2="235" y2="50" stroke="currentColor" strokeWidth="1.5" /><text x="235" y="65">1</text>
-    <line x1="270" y1="40" x2="270" y2="50" stroke="currentColor" strokeWidth="1.5" /><text x="270" y="65">2</text>
-    <line x1="305" y1="40" x2="305" y2="50" stroke="currentColor" strokeWidth="1.5" /><text x="305" y="65">3</text>
-    <line x1="330" y1="40" x2="330" y2="50" stroke="currentColor" strokeWidth="1.5" /><text x="330" y="65">4</text>
+  <g fill="currentColor" font-size="13" text-anchor="middle">
+    <line x1="60" y1="40" x2="60" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="60" y="65">-4</text>
+    <line x1="95" y1="40" x2="95" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="95" y="65">-3</text>
+    <line x1="130" y1="40" x2="130" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="130" y="65">-2</text>
+    <line x1="165" y1="40" x2="165" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="165" y="65">-1</text>
+    <line x1="200" y1="40" x2="200" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="200" y="65">0</text>
+    <line x1="235" y1="40" x2="235" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="235" y="65">1</text>
+    <line x1="270" y1="40" x2="270" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="270" y="65">2</text>
+    <line x1="305" y1="40" x2="305" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="305" y="65">3</text>
+    <line x1="330" y1="40" x2="330" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="330" y="65">4</text>
   </g>
   <circle cx="95" cy="45" r="3.5" fill="currentColor" />
   <circle cx="305" cy="45" r="3.5" fill="currentColor" />
 </svg>
 
-<p style={{ textAlign: 'center', fontStyle: 'italic', fontSize: '0.9em' }}>The opposite of $3$ is $-3$.</p>
+<p style="text-align: center; font-style: italic; font-size: 0.9em">The opposite of $3$ is $-3$.</p>
 
 {{< callout type="info" >}}
   **Opposite notation.**
@@ -113,20 +113,20 @@ $$\begin{array}{l} -5 \text{ is } 5 \text{ units away from } 0, \text{ so } |-5|
 
 The figure below illustrates this idea.
 
-<svg viewBox="0 0 360 90" role="img" aria-label="A number line with points marked at negative 5 and 5. A bracket labeled 5 units spans from negative 5 to 0, and another bracket labeled 5 units spans from 0 to 5, showing that 5 and negative 5 are each five units from zero." style={{ maxWidth: 360, display: 'block', margin: '1.5rem auto' }}>
-  <g fill="currentColor" fontSize="12" textAnchor="middle">
+<svg viewBox="0 0 360 90" role="img" aria-label="A number line with points marked at negative 5 and 5. A bracket labeled 5 units spans from negative 5 to 0, and another bracket labeled 5 units spans from 0 to 5, showing that 5 and negative 5 are each five units from zero." style="max-width: 360px; display: block; margin: 1.5rem auto">
+  <g fill="currentColor" font-size="12" text-anchor="middle">
     <text x="110" y="20">5 units</text>
     <text x="250" y="20">5 units</text>
   </g>
-  <path d="M50,28 v-4 h130 v4" fill="none" stroke="currentColor" strokeWidth="1.2" />
-  <path d="M180,28 v-4 h130 v4" fill="none" stroke="currentColor" strokeWidth="1.2" />
-  <line x1="20" y1="45" x2="340" y2="45" stroke="currentColor" strokeWidth="1.5" />
+  <path d="M50,28 v-4 h130 v4" fill="none" stroke="currentColor" stroke-width="1.2" />
+  <path d="M180,28 v-4 h130 v4" fill="none" stroke="currentColor" stroke-width="1.2" />
+  <line x1="20" y1="45" x2="340" y2="45" stroke="currentColor" stroke-width="1.5" />
   <polygon points="20,45 30,41 30,49" fill="currentColor" />
   <polygon points="340,45 330,41 330,49" fill="currentColor" />
-  <g fill="currentColor" fontSize="13" textAnchor="middle">
-    <line x1="50" y1="40" x2="50" y2="50" stroke="currentColor" strokeWidth="1.5" /><text x="50" y="65">-5</text>
-    <line x1="180" y1="40" x2="180" y2="50" stroke="currentColor" strokeWidth="1.5" /><text x="180" y="65">0</text>
-    <line x1="310" y1="40" x2="310" y2="50" stroke="currentColor" strokeWidth="1.5" /><text x="310" y="65">5</text>
+  <g fill="currentColor" font-size="13" text-anchor="middle">
+    <line x1="50" y1="40" x2="50" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="50" y="65">-5</text>
+    <line x1="180" y1="40" x2="180" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="180" y="65">0</text>
+    <line x1="310" y1="40" x2="310" y2="50" stroke="currentColor" stroke-width="1.5" /><text x="310" y="65">5</text>
   </g>
   <circle cx="50" cy="45" r="3.5" fill="currentColor" />
   <circle cx="310" cy="45" r="3.5" fill="currentColor" />
@@ -170,56 +170,6 @@ $=$
 {{< multiplechoice
   question="Fill in the blank with $<$, $>$, or $=$: $2 \_\_\_ -|-2|$"
   hint="Simplify the right side: $-|-2| = -2$. Then compare $2$ with $-2$."
-  answer="$>$"
->}}
-$<$
-$>$
-$=$
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Fill in the blank with $<$, $>$, or $=$: $-8 \_\_\_ -|-8|$"
-  hint="Simplify the right side: $-|-8| = -8$. Then compare the two values."
-  answer="$=$"
->}}
-$<$
-$>$
-$=$
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Fill in the blank with $<$, $>$, or $=$: $-(-9) \_\_\_ |-9|$"
-  hint="Simplify both sides: $-(-9) = 9$ and $|-9| = 9$."
-  answer="$=$"
->}}
-$<$
-$>$
-$=$
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Fill in the blank with $<$, $>$, or $=$: $7 \_\_\_ -|-7|$"
-  hint="Simplify the right side: $-|-7| = -7$. Then compare $7$ with $-7$."
-  answer="$>$"
->}}
-$<$
-$>$
-$=$
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Fill in the blank with $<$, $>$, or $=$: $-(-10) \_\_\_ |-10|$"
-  hint="Simplify both sides: $-(-10) = 10$ and $|-10| = 10$."
-  answer="$=$"
->}}
-$<$
-$>$
-$=$
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Fill in the blank with $<$, $>$, or $=$: $|-4| \_\_\_ -|-4|$"
-  hint="Simplify each side: $|-4| = 4$ and $-|-4| = -4$. Then compare."
   answer="$>$"
 >}}
 $<$
@@ -348,24 +298,6 @@ $$1 + (-5) = -4$$
   hint="The signs are different; there are more negatives, so the sum is negative."
 >}}
 
-{{< fillin
-  question="Add: $-2 + (-5)$."
-  answer="-7"
-  hint="Both signs are the same (both negative), so add and keep the negative sign."
->}}
-
-{{< fillin
-  question="Add: $-2 + 5$."
-  answer="3"
-  hint="The signs are different; there are more positives, so the sum is positive."
->}}
-
-{{< fillin
-  question="Add: $2 + (-5)$."
-  answer="-3"
-  hint="The signs are different; there are more negatives, so the sum is negative."
->}}
-
 We will continue to use counters to model the subtraction. Perhaps when you
 were younger, you read $5 - 3$ as "5 take away 3." When you use counters, you
 can think of subtraction the same way!
@@ -430,36 +362,6 @@ $$3 - (-1) = 4$$
   hint="Model 6 negatives, add 4 neutral pairs, then take away 4 positives."
 >}}
 
-{{< fillin
-  question="Subtract: $6 - (-4)$."
-  answer="10"
-  hint="Model 6 positives, add 4 neutral pairs, then take away 4 negatives."
->}}
-
-{{< fillin
-  question="Subtract: $7 - 4$."
-  answer="3"
-  hint="Take 4 positives away from 7 positives."
->}}
-
-{{< fillin
-  question="Subtract: $-7 - (-4)$."
-  answer="-3"
-  hint="Take 4 negatives away from 7 negatives."
->}}
-
-{{< fillin
-  question="Subtract: $-7 - 4$."
-  answer="-11"
-  hint="Model 7 negatives, add 4 neutral pairs, then take away 4 positives."
->}}
-
-{{< fillin
-  question="Subtract: $7 - (-4)$."
-  answer="11"
-  hint="Model 7 positives, add 4 neutral pairs, then take away 4 negatives."
->}}
-
 Have you noticed that *subtraction of signed numbers can be done by adding the
 opposite*? In the last example, $-3 - 1$ is the same as $-3 + (-1)$ and
 $3 - (-1)$ is the same as $3 + 1$. You will often see this idea, the
@@ -508,30 +410,6 @@ $$\begin{array}{rcl} -7 - (-4) &=& -3 \\[4pt] -7 + 4 &=& -3 \end{array}$$
   question="Simplify: $6 - (-13)$ (which equals $6 + 13$)."
   answer="19"
   hint="Subtracting a negative is the same as adding its opposite: $6 + 13$."
->}}
-
-{{< fillin
-  question="Simplify: $15 - 7$ (which equals $15 + (-7)$)."
-  answer="8"
-  hint="Subtract, or add the opposite: $15 + (-7)$."
->}}
-
-{{< fillin
-  question="Simplify: $-14 - 8$ (which equals $-14 + (-8)$)."
-  answer="-22"
-  hint="Adding two negatives: $-14 + (-8)$."
->}}
-
-{{< fillin
-  question="Simplify: $4 - (-19)$ (which equals $4 + 19$)."
-  answer="23"
-  hint="Subtracting a negative is the same as adding its opposite: $4 + 19$."
->}}
-
-{{< fillin
-  question="Simplify: $-4 - (-7)$ (which equals $-4 + 7$)."
-  answer="3"
-  hint="Subtracting a negative is the same as adding its opposite: $-4 + 7$."
 >}}
 
 What happens when there are more than three integers? We just use the order of
@@ -630,36 +508,6 @@ $$\begin{array}{lrcl} \text{(a) Divide, with signs that are the same the quotien
   hint="Different signs, so the product is negative."
 >}}
 
-{{< fillin
-  question="Simplify: $-63 \div 7$."
-  answer="-9"
-  hint="Different signs, so the quotient is negative."
->}}
-
-{{< fillin
-  question="Simplify: $-117 \div (-3)$."
-  answer="39"
-  hint="Same signs, so the quotient is positive."
->}}
-
-{{< fillin
-  question="Simplify: $3 \cdot 13$."
-  answer="39"
-  hint="Same signs, so the product is positive."
->}}
-
-{{< fillin
-  question="Simplify: $7(-4)$."
-  answer="-28"
-  hint="Different signs, so the product is negative."
->}}
-
-{{< fillin
-  question="Simplify: $-42 \div 6$."
-  answer="-7"
-  hint="Different signs, so the quotient is negative."
->}}
-
 When we multiply a number by $1$, the result is the same number. Each time we
 multiply a number by $-1$, we get its opposite!
 
@@ -714,12 +562,6 @@ $$\begin{array}{lrcl} & -2^4 &=& -(2 \cdot 2 \cdot 2 \cdot 2) \\[4pt] \text{Mult
   hint="The base in parentheses is $-7$; a negative squared is positive."
 >}}
 
-{{< fillin
-  question="Simplify: $-7^2$."
-  answer="-49"
-  hint="Only the $7$ is squared; then take the opposite."
->}}
-
 The last example showed us the difference between $(-2)^4$ and $-2^4$. This
 distinction is important to prevent future errors. The next example reminds us
 to multiply and divide in order left to right.
@@ -750,12 +592,6 @@ $$\begin{array}{lrcl} & && -30 \div 2 + (-3)(-7) \\[4pt] \text{Multiply and divi
   question="Simplify: $18(-4) \div (-2)^3$."
   answer="9"
   hint="Exponents first: $(-2)^3 = -8$. Then multiply and divide left to right."
->}}
-
-{{< fillin
-  question="Simplify: $-32 \div 4 + (-2)(-7)$."
-  answer="6"
-  hint="Divide and multiply before adding: $-8 + 14$."
 >}}
 
 ## Evaluate variable expressions with integers

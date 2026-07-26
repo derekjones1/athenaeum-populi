@@ -35,7 +35,7 @@ line.
 
 Let's look at the graphs of the lines in the figure below.
 
-<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'flex-start', gap: '0.5rem' }}>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 0.5rem">
   <div class="ap-figure">
 <svg role="img" aria-label="The line 2x + y = 6 crosses the y-axis at (0, 6) and the x-axis at (3, 0)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 183" width="135" height="183" font-family="Helvetica, Arial, sans-serif">
   <line x1="22" y1="161" x2="22" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -223,7 +223,7 @@ line. The $y$-intercept occurs when $x$ is zero.
 
 **Example.** Find the $x$- and $y$-intercepts on each graph.
 
-<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'flex-start', gap: '0.5rem' }}>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 0.5rem">
   <div class="ap-figure">
 <svg role="img" aria-label="The line x + 2y = 4 crosses the x-axis at (4, 0) and the y-axis at (0, 2)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 157" width="148" height="157" font-family="Helvetica, Arial, sans-serif">
   <line x1="22" y1="135" x2="22" y2="44" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
@@ -440,12 +440,6 @@ below.
   hint="Let $y = 0$ and solve for x."
 >}}
 
-{{< fillin
-  question="Find the intercepts of the line: $x + 4y = 8$. Give the y-intercept as an ordered pair."
-  answer="(0,2)"
-  hint="Let $x = 0$ and solve for y."
->}}
-
 **Example.** Find the intercepts of $4x - 3y = 12$.
 
 To find the $x$-intercept, let $y = 0$:
@@ -494,12 +488,6 @@ The intercepts are the points $(3, 0)$ and $(0, -4)$.
   question="Find the intercepts of the line: $2x - 4y = 8$. Give the x-intercept as an ordered pair."
   answer="(4,0)"
   hint="Let $y = 0$ and solve for x."
->}}
-
-{{< fillin
-  question="Find the intercepts of the line: $2x - 4y = 8$. Give the y-intercept as an ordered pair."
-  answer="(0,-2)"
-  hint="Let $x = 0$ and solve for y."
 >}}
 
 ## Graph a line using the intercepts

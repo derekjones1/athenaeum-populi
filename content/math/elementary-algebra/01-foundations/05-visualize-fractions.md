@@ -24,21 +24,21 @@ each part is one of the three equal parts. The fraction $\tfrac{2}{3}$
 represents two of three equal parts. In the fraction $\tfrac{2}{3}$, the $2$
 is called the **numerator** and the $3$ is called the **denominator**.
 
-<svg viewBox="0 0 300 130" role="img" aria-label="Two circles. The circle on the left is divided into 3 equal wedges, each labeled one third. The circle on the right is divided into 3 equal wedges with 2 of the 3 wedges shaded, representing two thirds." style={{ maxWidth: 300, display: 'block', margin: '1.5rem auto' }}>
-  <circle cx="75" cy="65" r="55" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="75" y1="65" x2="75" y2="10" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="75" y1="65" x2="27.4" y2="92.5" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="75" y1="65" x2="122.6" y2="92.5" stroke="currentColor" strokeWidth="1.5" />
-  <text x="98" y="57" textAnchor="middle" fontSize="13" fill="currentColor">1/3</text>
-  <text x="52" y="57" textAnchor="middle" fontSize="13" fill="currentColor">1/3</text>
-  <text x="75" y="98" textAnchor="middle" fontSize="13" fill="currentColor">1/3</text>
+<svg viewBox="0 0 300 130" role="img" aria-label="Two circles. The circle on the left is divided into 3 equal wedges, each labeled one third. The circle on the right is divided into 3 equal wedges with 2 of the 3 wedges shaded, representing two thirds." style="max-width: 300px; display: block; margin: 1.5rem auto">
+  <circle cx="75" cy="65" r="55" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <line x1="75" y1="65" x2="75" y2="10" stroke="currentColor" stroke-width="1.5" />
+  <line x1="75" y1="65" x2="27.4" y2="92.5" stroke="currentColor" stroke-width="1.5" />
+  <line x1="75" y1="65" x2="122.6" y2="92.5" stroke="currentColor" stroke-width="1.5" />
+  <text x="98" y="57" text-anchor="middle" font-size="13" fill="currentColor">1/3</text>
+  <text x="52" y="57" text-anchor="middle" font-size="13" fill="currentColor">1/3</text>
+  <text x="75" y="98" text-anchor="middle" font-size="13" fill="currentColor">1/3</text>
   <g>
     <path d="M 225 65 L 225 10 A 55 55 0 0 1 272.6 92.5 Z" fill="currentColor" opacity="0.3" />
     <path d="M 225 65 L 272.6 92.5 A 55 55 0 0 1 177.4 92.5 Z" fill="currentColor" opacity="0.3" />
-    <circle cx="225" cy="65" r="55" fill="none" stroke="currentColor" strokeWidth="1.5" />
-    <line x1="225" y1="65" x2="225" y2="10" stroke="currentColor" strokeWidth="1.5" />
-    <line x1="225" y1="65" x2="177.4" y2="92.5" stroke="currentColor" strokeWidth="1.5" />
-    <line x1="225" y1="65" x2="272.6" y2="92.5" stroke="currentColor" strokeWidth="1.5" />
+    <circle cx="225" cy="65" r="55" fill="none" stroke="currentColor" stroke-width="1.5" />
+    <line x1="225" y1="65" x2="225" y2="10" stroke="currentColor" stroke-width="1.5" />
+    <line x1="225" y1="65" x2="177.4" y2="92.5" stroke="currentColor" stroke-width="1.5" />
+    <line x1="225" y1="65" x2="272.6" y2="92.5" stroke="currentColor" stroke-width="1.5" />
   </g>
 </svg>
 

@@ -1,7 +1,7 @@
 /**
  * <fill-in> — free-response math question with instant, client-side feedback.
- * Vanilla Web Component port of the old FillIn.jsx (React). Same grading, same
- * UX, no framework.
+ * Vanilla Web Component for free-response grading. It keeps the interaction
+ * framework-free and progressively enhances the build-time HTML shell.
  *
  * The shortcode (layouts/shortcodes/fillin.html) renders the static shell:
  *   <fill-in data-answer="\frac{5}{6}" data-require-expanded="false" ...>
@@ -19,9 +19,11 @@
  * live in a SEPARATE bundle (assets/js/fillin-engine.js). This element loads it
  * at runtime by URL — injected at build time via js.Build `params` (@params) —
  * so it never touches the shared components bundle and loads only on pages that
- * actually use a <fill-in>, exactly as the old site did.
+ * actually use a <fill-in>.
  */
 import { engineUrl } from '@params';
+
+let hintSequence = 0;
 
 const MESSAGES = {
   idle: '',
@@ -46,6 +48,7 @@ class FillInElement extends HTMLElement {
     this._built = true;
 
     this.answer = this.dataset.answer || '';
+    this.answerMode = this.dataset.answerMode || 'expression';
     this.requireExpanded = this.dataset.requireExpanded === 'true';
     this.placeholder = this.dataset.placeholder || 'Your answer';
     this.status = 'idle';
@@ -90,13 +93,16 @@ class FillInElement extends HTMLElement {
 
     // --- optional hint toggle --------------------------------------------
     if (this.hintHTML) {
+      const hintId = `ap-fillin-hint-${++hintSequence}`;
       const hintBtn = document.createElement('button');
       hintBtn.type = 'button';
       hintBtn.className = 'ap-fillin-hint-toggle';
       hintBtn.textContent = 'Show hint';
       hintBtn.setAttribute('aria-expanded', 'false');
+      hintBtn.setAttribute('aria-controls', hintId);
 
       const hint = document.createElement('p');
+      hint.id = hintId;
       hint.className = 'ap-fillin-hint';
       hint.hidden = true;
       hint.innerHTML = this.hintHTML;
@@ -121,26 +127,33 @@ class FillInElement extends HTMLElement {
   async _loadEngine() {
     // Runtime import of the separate engine bundle (MathLive + grader). The
     // URL is a build-time constant, so esbuild leaves this as a real import().
-    const engine = await import(engineUrl);
-    const { mathlive, checkAnswer, ce } = engine;
-    // No sound assets are shipped — silence the virtual keyboard.
-    mathlive.MathfieldElement.soundsDirectory = null;
-    // Field and grader share ONE Compute Engine so they can never disagree
-    // about how input parses.
-    mathlive.MathfieldElement.computeEngine = ce;
-    this._check = checkAnswer;
+    try {
+      const engine = await import(engineUrl);
+      const { mathlive, checkAnswer, ce } = engine;
+      // No sound assets are shipped — silence the virtual keyboard.
+      mathlive.MathfieldElement.soundsDirectory = null;
+      // Field and grader share ONE Compute Engine so they can never disagree
+      // about how input parses.
+      mathlive.MathfieldElement.computeEngine = ce;
+      this._check = checkAnswer;
 
-    // Enter inside the field (incl. virtual keyboard) fires an input event
-    // with data "insertLineBreak" — route it to a check, like the old site.
-    this.field.addEventListener('input', (e) => {
-      if (e.data === 'insertLineBreak') {
-        this._runCheck();
-        return;
-      }
-      if (this.status !== 'idle') this._setStatus('idle');
-    });
+      // Enter inside the field (incl. virtual keyboard) fires an input event
+      // with data "insertLineBreak" — route it to a check.
+      this.field.addEventListener('input', (e) => {
+        if (e.data === 'insertLineBreak') {
+          this._runCheck();
+          return;
+        }
+        if (this.status !== 'idle') this._setStatus('idle');
+      });
 
-    this.button.disabled = false;
+      this.button.disabled = false;
+    } catch (error) {
+      console.error('Fill-in exercise failed to load', error);
+      this.feedback.setAttribute('role', 'alert');
+      this.feedback.textContent = 'This exercise could not load. Please reload the page and try again.';
+      this.feedback.style.color = COLOR.invalid;
+    }
   }
 
   _runCheck() {
@@ -150,7 +163,7 @@ class FillInElement extends HTMLElement {
       this._setStatus('form');
       return;
     }
-    this._setStatus(this._check(latex, this.answer));
+    this._setStatus(this._check(latex, this.answer, { mode: this.answerMode }));
   }
 
   _setStatus(status) {

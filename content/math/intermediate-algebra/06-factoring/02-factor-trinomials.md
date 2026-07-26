@@ -144,6 +144,7 @@ the trinomial is prime.
 {{< multiplechoice
   question="Factor $x^2-7xy-10y^2$."
   answer="prime"
+  hint="List the integer factor pairs of the constant term and test whether any pair has the required middle-term sum."
 >}}
 prime
 $(x-5y)(x-2y)$
@@ -153,6 +154,7 @@ $(x+5y)(x-2y)$
 {{< multiplechoice
   question="Factor $p^2+15pq+20q^2$."
   answer="prime"
+  hint="List the integer factor pairs of the constant term and test whether any pair has the required middle-term sum."
 >}}
 prime
 $(p+5q)(p+4q)$

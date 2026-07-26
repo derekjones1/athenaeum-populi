@@ -1,34 +1,10 @@
 {{- /*
   Athenaeum Populi — custom head-end hook (Hextra calls this at </head>).
-  Two jobs:
-    1. Client-side KaTeX renderer, ONLY when math.render == "client" and the
-       page actually has math. (Build-time mode needs no JS; Hextra already
-       loaded the KaTeX CSS.)
-    2. The interactive Web Components bundle, built from assets/js/main.js by
-       Hugo Pipes js.Build (esbuild). Phase 0 ships a trivial <ap-hello>.
+  Builds the interactive Web Components bundle from assets/js/main.js with
+  Hugo Pipes. Math is already rendered to static HTML+MathML at build time.
 */ -}}
 
-{{- /* 1. Client-side KaTeX (benchmark path) */ -}}
-{{- if .Page.Store.Get "mathClient" -}}
-  {{- /* MUST match the CSS version pinned in hugo.toml (params.math.katex.base),
-         which is dictated by Hugo's embedded KaTeX (0.16.22 for Hugo 0.164.0):
-         the shared katex CSS is loaded once, so the client JS has to agree with
-         it. Phase 1 will self-host this instead of using jsdelivr. */ -}}
-  {{- $katexVer := "0.16.22" -}}
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@{{ $katexVer }}/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@{{ $katexVer }}/dist/contrib/auto-render.min.js"
-    onload="renderMathInElement(document.body, {
-      delimiters: [
-        {left: '$$', right: '$$', display: true},
-        {left: '\\[', right: '\\]', display: true},
-        {left: '$', right: '$', display: false},
-        {left: '\\(', right: '\\)', display: false}
-      ],
-      throwOnError: false
-    });"></script>
-{{- end -}}
-
-{{- /* 2. Interactive Web Components (esbuild via Hugo Pipes js.Build).
+{{- /* Interactive Web Components (esbuild via Hugo Pipes js.Build).
        Two bundles:
          - fillin-engine.js : MathLive + Compute Engine grader (~1.9 MB). Built
            on its own; loaded at RUNTIME only on pages with a <fill-in>.

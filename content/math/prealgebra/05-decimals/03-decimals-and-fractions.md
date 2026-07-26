@@ -373,13 +373,6 @@ area.
   hint="Use $C = 2\pi r$ with $\pi \approx 3.14$ and $r = 100$."
 >}}
 
-{{< fillin
-  question="A circle has radius $100$ feet. Approximate its area. Use $3.14$ for $\pi$."
-  answer="31400"
-  answerDisplay="31,400 sq. ft"
-  hint="Use $A = \pi r^2$ with $\pi \approx 3.14$ and $r = 100$."
->}}
-
 **Example.** A circle has radius $42.5$ centimeters. Approximate its
 (a) circumference and (b) area.
 

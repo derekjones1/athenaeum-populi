@@ -36,13 +36,9 @@ discover how to find the slope of a line.
 We start by stretching a rubber band between two pegs to make a line, as
 shown below.
 
-<svg viewBox="0 0 160 160" role="img" aria-label="A geoboard with a rubber band stretched diagonally from the bottom-left peg to a peg up and to the right, forming a line." style={{ maxWidth: 200, display: 'block', margin: '1.5rem auto' }}>
-  {[0, 1, 2, 3, 4].map((row) =>
-    [0, 1, 2, 3, 4].map((col) => (
-      <circle key={`${row}-${col}`} cx={20 + col * 30} cy={20 + row * 30} r="3" fill="currentColor" opacity="0.5" />
-    ))
-  )}
-  <line x1="20" y1="140" x2="110" y2="50" stroke="currentColor" strokeWidth="4" opacity="0.7" />
+<svg viewBox="0 0 160 160" role="img" aria-label="A geoboard with a rubber band stretched diagonally from the bottom-left peg to a peg up and to the right, forming a line." style="max-width: 200px; display: block; margin: 1.5rem auto">
+  <circle cx="20" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="140" r="3" fill="currentColor" opacity="0.5" />
+  <line x1="20" y1="140" x2="110" y2="50" stroke="currentColor" stroke-width="4" opacity="0.7" />
 </svg>
 
 Does it look like a line? Now we stretch one part of the rubber band straight
@@ -50,26 +46,22 @@ up from the left peg and around a third peg to make the sides of a right
 triangle. We carefully make a $90°$ angle around the third peg, so that one
 side is vertical and the other is horizontal.
 
-<svg viewBox="0 0 160 160" role="img" aria-label="The same geoboard. The rubber band now forms a right triangle: a vertical side going up from the bottom-left peg, a horizontal side going right, and the diagonal hypotenuse connecting them." style={{ maxWidth: 200, display: 'block', margin: '1.5rem auto' }}>
-  {[0, 1, 2, 3, 4].map((row) =>
-    [0, 1, 2, 3, 4].map((col) => (
-      <circle key={`${row}-${col}`} cx={20 + col * 30} cy={20 + row * 30} r="3" fill="currentColor" opacity="0.5" />
-    ))
-  )}
-  <line x1="20" y1="140" x2="20" y2="50" stroke="currentColor" strokeWidth="4" opacity="0.7" />
-  <line x1="20" y1="50" x2="110" y2="50" stroke="currentColor" strokeWidth="4" opacity="0.7" />
-  <line x1="20" y1="140" x2="110" y2="50" stroke="currentColor" strokeWidth="4" opacity="0.7" />
+<svg viewBox="0 0 160 160" role="img" aria-label="The same geoboard. The rubber band now forms a right triangle: a vertical side going up from the bottom-left peg, a horizontal side going right, and the diagonal hypotenuse connecting them." style="max-width: 200px; display: block; margin: 1.5rem auto">
+  <circle cx="20" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="20" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="50" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="80" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="110" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="140" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="140" r="3" fill="currentColor" opacity="0.5" />
+  <line x1="20" y1="140" x2="20" y2="50" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="50" x2="110" y2="50" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="140" x2="110" y2="50" stroke="currentColor" stroke-width="4" opacity="0.7" />
 </svg>
 
 To find the slope of the line, we measure the distance along the vertical
 and horizontal legs of the triangle. The vertical distance is called the
 **rise** and the horizontal distance is called the **run**, as shown below.
 
-<svg viewBox="-20 0 220 110" role="img" aria-label="A right angle with an upward arrow labeled rise on the vertical side and a rightward arrow labeled run on the horizontal side, meeting at the corner." style={{ maxWidth: 220, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="30" y1="90" x2="30" y2="20" stroke="currentColor" strokeWidth="2" markerEnd="url(#arrow1)" />
-  <line x1="30" y1="20" x2="160" y2="20" stroke="currentColor" strokeWidth="2" markerEnd="url(#arrow2)" />
-  <text x="20" y="60" textAnchor="end" fontSize="15" fill="currentColor">rise</text>
-  <text x="95" y="12" textAnchor="middle" fontSize="15" fill="currentColor">run</text>
+<svg viewBox="-20 0 220 110" role="img" aria-label="A right angle with an upward arrow labeled rise on the vertical side and a rightward arrow labeled run on the horizontal side, meeting at the corner." style="max-width: 220px; display: block; margin: 1.5rem auto">
+  <line x1="30" y1="90" x2="30" y2="20" stroke="currentColor" stroke-width="2" marker-end="url(#arrow1)" />
+  <line x1="30" y1="20" x2="160" y2="20" stroke="currentColor" stroke-width="2" marker-end="url(#arrow2)" />
+  <text x="20" y="60" text-anchor="end" font-size="15" fill="currentColor">rise</text>
+  <text x="95" y="12" text-anchor="middle" font-size="15" fill="currentColor">run</text>
   <defs>
     <marker id="arrow1" markerWidth="8" markerHeight="8" refX="4" refY="7" orient="auto">
       <path d="M0,8 L4,0 L8,8 Z" fill="currentColor" />
@@ -89,17 +81,13 @@ spaces on the vertical leg. Be sure to count the spaces between the pegs
 rather than the pegs themselves! The rubber band goes across $3$ spaces on
 the horizontal leg, so the run is $3$ units.
 
-<svg viewBox="0 0 160 170" role="img" aria-label="The geoboard triangle with the horizontal leg labeled 3 above it and the vertical leg labeled 2 to its left." style={{ maxWidth: 200, display: 'block', margin: '1.5rem auto' }}>
-  {[0, 1, 2, 3, 4].map((row) =>
-    [0, 1, 2, 3, 4].map((col) => (
-      <circle key={`${row}-${col}`} cx={20 + col * 30} cy={30 + row * 30} r="3" fill="currentColor" opacity="0.5" />
-    ))
-  )}
-  <line x1="20" y1="150" x2="20" y2="60" stroke="currentColor" strokeWidth="4" opacity="0.7" />
-  <line x1="20" y1="60" x2="110" y2="60" stroke="currentColor" strokeWidth="4" opacity="0.7" />
-  <line x1="20" y1="150" x2="110" y2="60" stroke="currentColor" strokeWidth="4" opacity="0.7" />
-  <text x="65" y="48" textAnchor="middle" fontSize="14" fill="currentColor">3</text>
-  <text x="8" y="108" textAnchor="middle" fontSize="14" fill="currentColor">2</text>
+<svg viewBox="0 0 160 170" role="img" aria-label="The geoboard triangle with the horizontal leg labeled 3 above it and the vertical leg labeled 2 to its left." style="max-width: 200px; display: block; margin: 1.5rem auto">
+  <circle cx="20" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="150" r="3" fill="currentColor" opacity="0.5" />
+  <line x1="20" y1="150" x2="20" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="60" x2="110" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="150" x2="110" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <text x="65" y="48" text-anchor="middle" font-size="14" fill="currentColor">3</text>
+  <text x="8" y="108" text-anchor="middle" font-size="14" fill="currentColor">2</text>
 </svg>
 
 The slope of a line is the ratio of the rise to the run. So the slope of our
@@ -124,17 +112,13 @@ rise first and then the run.
 
 **Example.** What is the slope of the line on the geoboard shown?
 
-<svg viewBox="0 0 160 170" role="img" aria-label="A geoboard triangle: horizontal leg of 4 units on top and vertical leg of 3 units on the left, with the diagonal hypotenuse connecting the bottom-left peg to the top-right peg." style={{ maxWidth: 200, display: 'block', margin: '1.5rem auto' }}>
-  {[0, 1, 2, 3, 4].map((row) =>
-    [0, 1, 2, 3, 4].map((col) => (
-      <circle key={`${row}-${col}`} cx={20 + col * 30} cy={30 + row * 30} r="3" fill="currentColor" opacity="0.5" />
-    ))
-  )}
-  <line x1="20" y1="150" x2="20" y2="30" stroke="currentColor" strokeWidth="4" opacity="0.7" />
-  <line x1="20" y1="30" x2="140" y2="30" stroke="currentColor" strokeWidth="4" opacity="0.7" />
-  <line x1="20" y1="150" x2="140" y2="30" stroke="currentColor" strokeWidth="4" opacity="0.7" />
-  <text x="80" y="18" textAnchor="middle" fontSize="14" fill="currentColor">4</text>
-  <text x="8" y="92" textAnchor="middle" fontSize="14" fill="currentColor">3</text>
+<svg viewBox="0 0 160 170" role="img" aria-label="A geoboard triangle: horizontal leg of 4 units on top and vertical leg of 3 units on the left, with the diagonal hypotenuse connecting the bottom-left peg to the top-right peg." style="max-width: 200px; display: block; margin: 1.5rem auto">
+  <circle cx="20" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="150" r="3" fill="currentColor" opacity="0.5" />
+  <line x1="20" y1="150" x2="20" y2="30" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="30" x2="140" y2="30" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="150" x2="140" y2="30" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <text x="80" y="18" text-anchor="middle" font-size="14" fill="currentColor">4</text>
+  <text x="8" y="92" text-anchor="middle" font-size="14" fill="currentColor">3</text>
 </svg>
 
 Use the definition of slope, $m = \tfrac{\text{rise}}{\text{run}}$. Start at
@@ -175,11 +159,11 @@ Notice that the first line has positive slope and the second line has
 negative slope. As you read from left to right, a line with positive slope
 is going up, and a line with negative slope is going down.
 
-<svg viewBox="0 0 320 100" role="img" aria-label="Two arrows side by side: the left arrow points up and to the right, labeled positive slope; the right arrow points down and to the right, labeled negative slope." style={{ maxWidth: 340, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="30" y1="70" x2="110" y2="20" stroke="currentColor" strokeWidth="2" markerEnd="url(#arrowA)" />
-  <text x="70" y="95" textAnchor="middle" fontSize="14" fill="currentColor">Positive slope</text>
-  <line x1="210" y1="20" x2="290" y2="70" stroke="currentColor" strokeWidth="2" markerEnd="url(#arrowB)" />
-  <text x="250" y="95" textAnchor="middle" fontSize="14" fill="currentColor">Negative slope</text>
+<svg viewBox="0 0 320 100" role="img" aria-label="Two arrows side by side: the left arrow points up and to the right, labeled positive slope; the right arrow points down and to the right, labeled negative slope." style="max-width: 340px; display: block; margin: 1.5rem auto">
+  <line x1="30" y1="70" x2="110" y2="20" stroke="currentColor" stroke-width="2" marker-end="url(#arrowA)" />
+  <text x="70" y="95" text-anchor="middle" font-size="14" fill="currentColor">Positive slope</text>
+  <line x1="210" y1="20" x2="290" y2="70" stroke="currentColor" stroke-width="2" marker-end="url(#arrowB)" />
+  <text x="250" y="95" text-anchor="middle" font-size="14" fill="currentColor">Negative slope</text>
   <defs>
     <marker id="arrowA" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="currentColor" />
@@ -208,17 +192,13 @@ So the rise is $1$ unit and the run is $2$ units. Start at a peg in the
 lower left of the geoboard. Stretch the rubber band up $1$ unit, and then
 right $2$ units.
 
-<svg viewBox="0 0 160 170" role="img" aria-label="A geoboard triangle modeling slope one half: a rise of 1 unit up and a run of 2 units to the right, with the diagonal hypotenuse connecting the two ends." style={{ maxWidth: 200, display: 'block', margin: '1.5rem auto' }}>
-  {[0, 1, 2, 3, 4].map((row) =>
-    [0, 1, 2, 3, 4].map((col) => (
-      <circle key={`${row}-${col}`} cx={20 + col * 30} cy={30 + row * 30} r="3" fill="currentColor" opacity="0.5" />
-    ))
-  )}
-  <line x1="20" y1="150" x2="20" y2="120" stroke="currentColor" strokeWidth="4" opacity="0.7" />
-  <line x1="20" y1="120" x2="80" y2="120" stroke="currentColor" strokeWidth="4" opacity="0.7" />
-  <line x1="20" y1="150" x2="80" y2="120" stroke="currentColor" strokeWidth="4" opacity="0.7" />
-  <text x="50" y="108" textAnchor="middle" fontSize="14" fill="currentColor">2</text>
-  <text x="8" y="140" textAnchor="middle" fontSize="14" fill="currentColor">1</text>
+<svg viewBox="0 0 160 170" role="img" aria-label="A geoboard triangle modeling slope one half: a rise of 1 unit up and a run of 2 units to the right, with the diagonal hypotenuse connecting the two ends." style="max-width: 200px; display: block; margin: 1.5rem auto">
+  <circle cx="20" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="150" r="3" fill="currentColor" opacity="0.5" />
+  <line x1="20" y1="150" x2="20" y2="120" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="120" x2="80" y2="120" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="150" x2="80" y2="120" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <text x="50" y="108" text-anchor="middle" font-size="14" fill="currentColor">2</text>
+  <text x="8" y="140" text-anchor="middle" font-size="14" fill="currentColor">1</text>
 </svg>
 
 The hypotenuse of the right triangle formed by the rubber band represents a
@@ -238,17 +218,13 @@ So the rise is $-1$ and the run is $4$. Since the rise is negative, we
 choose a starting peg on the upper left that will give us room to count
 down. We stretch the rubber band down $1$ unit, then to the right $4$ units.
 
-<svg viewBox="0 0 190 170" role="img" aria-label="A geoboard triangle modeling slope negative one fourth: a rise of 1 unit going down and a run of 4 units to the right, with the diagonal hypotenuse connecting the two ends." style={{ maxWidth: 220, display: 'block', margin: '1.5rem auto' }}>
-  {[0, 1, 2, 3, 4].map((row) =>
-    [0, 1, 2, 3, 4, 5].map((col) => (
-      <circle key={`${row}-${col}`} cx={20 + col * 30} cy={30 + row * 30} r="3" fill="currentColor" opacity="0.5" />
-    ))
-  )}
-  <line x1="20" y1="30" x2="20" y2="60" stroke="currentColor" strokeWidth="4" opacity="0.7" />
-  <line x1="20" y1="60" x2="140" y2="60" stroke="currentColor" strokeWidth="4" opacity="0.7" />
-  <line x1="20" y1="30" x2="140" y2="60" stroke="currentColor" strokeWidth="4" opacity="0.7" />
-  <text x="80" y="76" textAnchor="middle" fontSize="14" fill="currentColor">4</text>
-  <text x="8" y="50" textAnchor="middle" fontSize="14" fill="currentColor">1</text>
+<svg viewBox="0 0 190 170" role="img" aria-label="A geoboard triangle modeling slope negative one fourth: a rise of 1 unit going down and a run of 4 units to the right, with the diagonal hypotenuse connecting the two ends." style="max-width: 220px; display: block; margin: 1.5rem auto">
+  <circle cx="20" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="170" cy="30" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="170" cy="60" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="170" cy="90" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="170" cy="120" r="3" fill="currentColor" opacity="0.5" /><circle cx="20" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="50" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="80" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="110" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="140" cy="150" r="3" fill="currentColor" opacity="0.5" /><circle cx="170" cy="150" r="3" fill="currentColor" opacity="0.5" />
+  <line x1="20" y1="30" x2="20" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="60" x2="140" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <line x1="20" y1="30" x2="140" y2="60" stroke="currentColor" stroke-width="4" opacity="0.7" />
+  <text x="80" y="76" text-anchor="middle" font-size="14" fill="currentColor">4</text>
+  <text x="8" y="50" text-anchor="middle" font-size="14" fill="currentColor">1</text>
 </svg>
 
 The hypotenuse of the right triangle formed by the rubber band represents a
@@ -538,13 +514,13 @@ So how do we find the slope of the horizontal line $y = 4$? We graph the
 line, find two points on it, and count the rise and the run. We'll use the
 points $(0, 4)$ and $(3, 4)$.
 
-<svg viewBox="0 0 260 140" role="img" aria-label="A horizontal line at y equals 4, passing through the points (0, 4) and (3, 4)." style={{ maxWidth: 300, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="20" y1="10" x2="20" y2="130" stroke="currentColor" strokeWidth="1" opacity="0.5" />
-  <line x1="10" y1="70" x2="250" y2="70" stroke="currentColor" strokeWidth="2.5" />
+<svg viewBox="0 0 260 140" role="img" aria-label="A horizontal line at y equals 4, passing through the points (0, 4) and (3, 4)." style="max-width: 300px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="10" x2="20" y2="130" stroke="currentColor" stroke-width="1" opacity="0.5" />
+  <line x1="10" y1="70" x2="250" y2="70" stroke="currentColor" stroke-width="2.5" />
   <circle cx="20" cy="70" r="4" fill="currentColor" />
   <circle cx="140" cy="70" r="4" fill="currentColor" />
-  <text x="20" y="55" textAnchor="middle" fontSize="13" fill="currentColor">(0, 4)</text>
-  <text x="140" y="55" textAnchor="middle" fontSize="13" fill="currentColor">(3, 4)</text>
+  <text x="20" y="55" text-anchor="middle" font-size="13" fill="currentColor">(0, 4)</text>
+  <text x="140" y="55" text-anchor="middle" font-size="13" fill="currentColor">(3, 4)</text>
 </svg>
 
 The rise is $0$ (the $y\text{-coordinates}$ don't change) and the run is
@@ -565,14 +541,14 @@ same, the rise is $0$.
 Now we'll consider a vertical line, such as the line $x = 3$. We'll use the
 points $(3, 0)$ and $(3, 2)$ to count the rise and run.
 
-<svg viewBox="0 0 200 200" role="img" aria-label="A vertical line at x equals 3, passing through the points (3, 0) and (3, 2)." style={{ maxWidth: 220, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="20" y1="10" x2="20" y2="190" stroke="currentColor" strokeWidth="1" opacity="0.5" />
-  <line x1="10" y1="150" x2="180" y2="150" stroke="currentColor" strokeWidth="1" opacity="0.5" />
-  <line x1="110" y1="20" x2="110" y2="180" stroke="currentColor" strokeWidth="2.5" />
+<svg viewBox="0 0 200 200" role="img" aria-label="A vertical line at x equals 3, passing through the points (3, 0) and (3, 2)." style="max-width: 220px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="10" x2="20" y2="190" stroke="currentColor" stroke-width="1" opacity="0.5" />
+  <line x1="10" y1="150" x2="180" y2="150" stroke="currentColor" stroke-width="1" opacity="0.5" />
+  <line x1="110" y1="20" x2="110" y2="180" stroke="currentColor" stroke-width="2.5" />
   <circle cx="110" cy="150" r="4" fill="currentColor" />
   <circle cx="110" cy="90" r="4" fill="currentColor" />
-  <text x="140" y="145" textAnchor="middle" fontSize="13" fill="currentColor">(3, 0)</text>
-  <text x="140" y="86" textAnchor="middle" fontSize="13" fill="currentColor">(3, 2)</text>
+  <text x="140" y="145" text-anchor="middle" font-size="13" fill="currentColor">(3, 0)</text>
+  <text x="140" y="86" text-anchor="middle" font-size="13" fill="currentColor">(3, 2)</text>
 </svg>
 
 The rise is $2$ and the run is $0$ (the $x\text{-coordinates}$ don't

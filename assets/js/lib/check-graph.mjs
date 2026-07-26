@@ -4,7 +4,7 @@
  * DIAGNOSTIC status, not just right/wrong, so the component can teach
  * ("right steepness, wrong intercept") instead of only judging.
  *
- * Answer forms (see components/GraphPlot.jsx for the MDX-facing docs):
+ * Answer forms (the GraphPlot shortcode passes these as JSON):
  *   { slope, intercept }            y = slope·x + intercept
  *   { y: b } / { x: a }             horizontal / vertical line
  *   { system: [<line>, <line>] }    two lines (4 points; order-agnostic)
@@ -39,7 +39,7 @@ function lineOf([x1, y1], [x2, y2]) {
 function normLine(t) {
   if (t.x !== undefined) return { x: t.x };
   if (t.y !== undefined) return { m: 0, b: t.y };
-  return { m: t.slope, b: t.intercept };
+  return { m: t.slope, b: t.intercept ?? 0 };
 }
 
 function gradeLine(s, t) {

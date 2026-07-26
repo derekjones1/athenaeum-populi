@@ -59,22 +59,14 @@ $17$ is $1$ ten and $7$ ones; $26$ is $2$ tens and $6$ ones. Combined, that's
 $3$ tens and $13$ ones. Exchange $10$ of those ones for another ten, leaving
 $4$ tens and $3$ ones — that is, $40 + 3 = 43$. So $17 + 26 = 43$.
 
-<svg viewBox="0 0 560 130" role="img" aria-label="Two groups of base-10 blocks being combined. The left group shows 17 as one tens rod and seven ones blocks, plus 26 as two tens rods and six ones blocks. The right group shows the combined result: four tens rods and three ones blocks, after exchanging ten of the thirteen ones blocks for one more tens rod, giving the sum 43." style={{ maxWidth: 560, width: '100%', display: 'block', margin: '1.5rem auto' }}>
-  <text x="10" y="20" fontSize="14" fill="currentColor">17 + 26 =</text>
-  {[0, 1, 2].map((i) => (
-    <rect key={`t1-${i}`} x={10 + i * 14} y="30" width="10" height="60" fill="none" stroke="currentColor" strokeWidth="1.2" />
-  ))}
-  {[0, 1, 2, 3, 4, 5, 6].map((i) => (
-    <rect key={`o1-${i}`} x={70 + i * 14} y="80" width="10" height="10" fill="none" stroke="currentColor" strokeWidth="1.2" />
-  ))}
-  <text x="230" y="60" fontSize="16" fill="currentColor">=</text>
-  <text x="260" y="20" fontSize="14" fill="currentColor">43</text>
-  {[0, 1, 2, 3].map((i) => (
-    <rect key={`t2-${i}`} x={260 + i * 14} y="30" width="10" height="60" fill="none" stroke="currentColor" strokeWidth="1.2" />
-  ))}
-  {[0, 1, 2].map((i) => (
-    <rect key={`o2-${i}`} x={330 + i * 14} y="80" width="10" height="10" fill="none" stroke="currentColor" strokeWidth="1.2" />
-  ))}
+<svg viewBox="0 0 560 130" role="img" aria-label="Two groups of base-10 blocks being combined. The left group shows 17 as one tens rod and seven ones blocks, plus 26 as two tens rods and six ones blocks. The right group shows the combined result: four tens rods and three ones blocks, after exchanging ten of the thirteen ones blocks for one more tens rod, giving the sum 43." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
+  <text x="10" y="20" font-size="14" fill="currentColor">17 + 26 =</text>
+  <rect x="10" y="30" width="10" height="60" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="24" y="30" width="10" height="60" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="38" y="30" width="10" height="60" fill="none" stroke="currentColor" stroke-width="1.2" />
+  <rect x="70" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="84" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="98" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="112" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="126" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="140" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="154" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" />
+  <text x="230" y="60" font-size="16" fill="currentColor">=</text>
+  <text x="260" y="20" font-size="14" fill="currentColor">43</text>
+  <rect x="260" y="30" width="10" height="60" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="274" y="30" width="10" height="60" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="288" y="30" width="10" height="60" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="302" y="30" width="10" height="60" fill="none" stroke="currentColor" stroke-width="1.2" />
+  <rect x="330" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="344" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" /><rect x="358" y="80" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.2" />
 </svg>
 
 {{< fillin

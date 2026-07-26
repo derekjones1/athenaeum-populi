@@ -412,12 +412,6 @@ $$(5x-6)(6x+5) = 30x^2 + 25x - 36x - 30 = 30x^2 - 11x - 30$$
   hint="This is a binomial square: square 7y, square 1, and add twice their product $2 \cdot 7y \cdot 1$."
 >}}
 
-{{< fillin
-  question="Choose the appropriate pattern and find the product: $(4r - 3)(4r + 3)$"
-  answer="16r^2 - 9"
-  hint="These are conjugates: square the first term 4r and the last term 3, then write the difference of squares."
->}}
-
 ## Key terms
 
 **conjugate pair** — two binomials of the form $(a-b)$, $(a+b)$ that have

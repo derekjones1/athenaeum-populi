@@ -40,7 +40,7 @@ you can work through in order.
 - **Systems of Linear Equations** — solving systems in two and three
   variables, applications, and solving systems using matrices and
   determinants.
-- **Polynomial and Polynomial Functions** — adding, subtracting, and
+- **Polynomials and Polynomial Functions** — adding, subtracting, and
   multiplying polynomials, exponent properties, polynomial functions,
   dividing, and factoring by greatest common factor and grouping.
 - **Factoring** — factoring trinomials, special products, a general strategy,
@@ -58,7 +58,7 @@ you can work through in order.
   exponential and logarithmic equations.
 - **Conics** — distance and midpoint, circles, parabolas, ellipses,
   hyperbolas, and solving systems of nonlinear equations.
-- **Sequences, Series, and the Binomial Theorem** — sequences, arithmetic and
+- **Sequences, Series and Binomial Theorem** — sequences, arithmetic and
   geometric sequences and series, and the Binomial Theorem.
 
 ## About this edition
@@ -67,8 +67,3 @@ This book is adapted from **OpenStax Intermediate Algebra 2e**, used under the
 terms of its **Creative Commons Attribution-NonCommercial-ShareAlike
 (CC BY-NC-SA 4.0)** license. Reviewers who vet or adapt this material are
 credited in the `reviewed_by` field of each page.
-
-{{< callout type="warning" >}}
-  This book is an early scaffold. The overview and chapter outline are in
-  place; the chapters and their lesson content are being written next.
-{{< /callout >}}

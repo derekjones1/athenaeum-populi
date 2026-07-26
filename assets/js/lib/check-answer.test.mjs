@@ -43,10 +43,17 @@ const extra = [
   ['400,000', '400000', 'correct'], // digit-grouping commas stripped
   ['400{,}000', '400000', 'correct'],
   ['53,809,051', '53809051', 'correct'],
+  ['(8,125,2)', '(8,125,2)', 'correct'], // tuple commas are not digit grouping
+  ['(8,125, 2)', '(8,125,2)', 'correct'], // whitespace does not turn tuple coordinates into grouping
+  ['(8125,2)', '(8,125,2)', 'incorrect'],
+  ['(8125, 2)', '(8,125,2)', 'incorrect'],
+  ['(8, 125, 2)', '(8,125,2)', 'correct'],
+  ['(8,125)', '(8,125)', 'correct'], // ambiguous two-value tuple stays ordered
+  ['(8125)', '(8,125)', 'incorrect'],
   ['100+70+6', '176', 'correct'],
-  // Doubled backslashes: MDX attributes like answer="\\frac{5}{6}" pass the
-  // two backslashes through literally (JSX doesn't process string escapes),
-  // so preprocess() must collapse them or every fraction answer fails.
+  ['400,000 + 25', '400025', 'correct'], // grouping still works in scalar expressions
+  // Doubled backslashes can arrive in copied or machine-generated answer data;
+  // preprocess() collapses them so the fraction remains gradeable.
   ['\\frac{5}{6}', '\\\\frac{5}{6}', 'correct'],
   ['\\frac56', '\\\\frac{5}{6}', 'correct'],
   ['\\frac{4}{6}', '\\\\frac{5}{6}', 'incorrect'], // wrong answer stays wrong
@@ -83,6 +90,34 @@ for (const [student, answer, expected] of extra) {
   const ok = got === expected;
   if (!ok) failures++;
   console.log(`${ok ? 'PASS' : 'FAIL'}  "${student}" vs "${answer}" -> ${got} (expected ${expected})`);
+}
+
+const unordered = [
+  // Root/solution collections accept any order when the author opts in.
+  ['-4\\sqrt{3},4\\sqrt{3}', '4\\sqrt{3},-4\\sqrt{3}', 'correct'],
+  ['5,-3', '-3,5', 'correct'],
+  ['1,1,2', '2,1,1', 'correct'], // multiset semantics preserve duplicates
+  ['1,2', '1,3', 'incorrect'],
+  ['1', '1,2', 'incorrect'],
+];
+for (const [student, answer, expected] of unordered) {
+  const got = checkAnswer(student, answer, { mode: 'unordered' });
+  const ok = got === expected;
+  if (!ok) failures++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  unordered "${student}" vs "${answer}" -> ${got} (expected ${expected})`);
+}
+
+// The default remains ordered, protecting coordinate tuples, application
+// answers, and sequence terms from accidental permutation acceptance.
+for (const [student, answer] of [
+  ['2,1', '1,2'],
+  ['1,4,9,16', '1,9,4,16'],
+  ['(2,1)', '(1,2)'],
+]) {
+  const got = checkAnswer(student, answer);
+  const ok = got === 'incorrect';
+  if (!ok) failures++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  ordered "${student}" vs "${answer}" -> ${got} (expected incorrect)`);
 }
 
 // Diagnostic only — printed but never fails the suite. These probe how far

@@ -194,29 +194,29 @@ $6$. Neither $4$ nor $6$ is prime, so we break each into two factors: $4$ into
 $2$ and $2$, and $6$ into $2$ and $3$. Now $2$, $2$, $2$, and $3$ are all
 prime, so we circle them.
 
-<svg viewBox="0 0 300 210" role="img" aria-label="A factor tree for 48. 48 branches into 2 and 24; the 2 is circled because it is prime. 24 branches into 4 and 6. 4 branches into 2 and 2, both circled. 6 branches into 2 and 3, both circled. Every branch ends in a circled prime." style={{ maxWidth: 300, display: 'block', margin: '1.5rem auto' }}>
-  <text x="150" y="25" textAnchor="middle" fontSize="16" fill="currentColor">48</text>
-  <line x1="140" y1="32" x2="96" y2="60" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="160" y1="32" x2="204" y2="60" stroke="currentColor" strokeWidth="1.5" />
-  <text x="90" y="80" textAnchor="middle" fontSize="16" fill="currentColor">2</text>
-  <circle cx="90" cy="74" r="13" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="210" y="80" textAnchor="middle" fontSize="16" fill="currentColor">24</text>
-  <line x1="195" y1="87" x2="167" y2="112" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="220" y1="87" x2="248" y2="112" stroke="currentColor" strokeWidth="1.5" />
-  <text x="160" y="132" textAnchor="middle" fontSize="16" fill="currentColor">4</text>
-  <text x="254" y="132" textAnchor="middle" fontSize="16" fill="currentColor">6</text>
-  <line x1="150" y1="139" x2="132" y2="162" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="170" y1="139" x2="188" y2="162" stroke="currentColor" strokeWidth="1.5" />
-  <text x="128" y="182" textAnchor="middle" fontSize="16" fill="currentColor">2</text>
-  <circle cx="128" cy="176" r="13" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="192" y="182" textAnchor="middle" fontSize="16" fill="currentColor">2</text>
-  <circle cx="192" cy="176" r="13" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="244" y1="139" x2="226" y2="162" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="264" y1="139" x2="282" y2="162" stroke="currentColor" strokeWidth="1.5" />
-  <text x="222" y="182" textAnchor="middle" fontSize="16" fill="currentColor">2</text>
-  <circle cx="222" cy="176" r="13" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  <text x="286" y="182" textAnchor="middle" fontSize="16" fill="currentColor">3</text>
-  <circle cx="286" cy="176" r="13" fill="none" stroke="currentColor" strokeWidth="1.5" />
+<svg viewBox="0 0 300 210" role="img" aria-label="A factor tree for 48. 48 branches into 2 and 24; the 2 is circled because it is prime. 24 branches into 4 and 6. 4 branches into 2 and 2, both circled. 6 branches into 2 and 3, both circled. Every branch ends in a circled prime." style="max-width: 300px; display: block; margin: 1.5rem auto">
+  <text x="150" y="25" text-anchor="middle" font-size="16" fill="currentColor">48</text>
+  <line x1="140" y1="32" x2="96" y2="60" stroke="currentColor" stroke-width="1.5" />
+  <line x1="160" y1="32" x2="204" y2="60" stroke="currentColor" stroke-width="1.5" />
+  <text x="90" y="80" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+  <circle cx="90" cy="74" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="210" y="80" text-anchor="middle" font-size="16" fill="currentColor">24</text>
+  <line x1="195" y1="87" x2="167" y2="112" stroke="currentColor" stroke-width="1.5" />
+  <line x1="220" y1="87" x2="248" y2="112" stroke="currentColor" stroke-width="1.5" />
+  <text x="160" y="132" text-anchor="middle" font-size="16" fill="currentColor">4</text>
+  <text x="254" y="132" text-anchor="middle" font-size="16" fill="currentColor">6</text>
+  <line x1="150" y1="139" x2="132" y2="162" stroke="currentColor" stroke-width="1.5" />
+  <line x1="170" y1="139" x2="188" y2="162" stroke="currentColor" stroke-width="1.5" />
+  <text x="128" y="182" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+  <circle cx="128" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="192" y="182" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+  <circle cx="192" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <line x1="244" y1="139" x2="226" y2="162" stroke="currentColor" stroke-width="1.5" />
+  <line x1="264" y1="139" x2="282" y2="162" stroke="currentColor" stroke-width="1.5" />
+  <text x="222" y="182" text-anchor="middle" font-size="16" fill="currentColor">2</text>
+  <circle cx="222" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <text x="286" y="182" text-anchor="middle" font-size="16" fill="currentColor">3</text>
+  <circle cx="286" cy="176" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
 </svg>
 
 We write the composite number as the product of all the circled primes:

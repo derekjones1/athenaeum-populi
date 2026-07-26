@@ -1,3 +1,7 @@
 # Exclude third-party vendored code from GitHub language statistics.
 themes/hextra/** linguist-vendored
 static/katex/** linguist-vendored
+
+# JavaScript modules are source text. This also keeps diffs readable when
+# replacing a historical literal NUL byte with an escaped string sentinel.
+*.mjs text diff

@@ -1,131 +1,24 @@
 ---
-title: 'Knowledge Check: Chapters 5–10'
+title: 'Knowledge Check: Chapters 6–10'
 description: >-
-  A cumulative self-test covering systems of linear equations, polynomials,
-  factoring, rational expressions and equations, roots and radicals, and
-  quadratic equations — adapted from the chapter Practice Tests of OpenStax
-  Elementary Algebra 2e and graded against the book's Answer Key.
-source_chapters: "5-10"
+  A cumulative self-test covering polynomials, factoring, rational expressions
+  and equations, roots and radicals, and quadratic equations — adapted from the
+  chapter Practice Tests of OpenStax Elementary Algebra 2e and graded against
+  the book's Answer Key.
+source_chapters: "6-10"
 weight: 12
+aliases:
+  - /math/elementary-algebra/knowledge-check-05-10/
 ---
 
 {{< callout type="info" >}}
-  **Test yourself on Chapters 5–10.** Every question comes from the source
+  **Test yourself on Chapters 6–10.** Every question comes from the source
   textbook's chapter Practice Tests (with a few drawn from its Review
   Exercises), and every answer is graded against the book's official
   Answer Key. There are no hints — treat it like a test. Questions are
   grouped by the section they cover, so a miss tells you exactly which
   section to review.
 {{< /callout >}}
-
-## Chapter 5: Systems of Linear Equations
-
-### 5.1 Solve Systems of Equations by Graphing
-
-{{< multiplechoice
-  question="For the system $x - 4y = -8$ and $2x + 5y = 10$, is the ordered pair $(0, 2)$ a solution?"
-  answer="yes"
->}}
-yes
-no
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="For the system $x - 4y = -8$ and $2x + 5y = 10$, is the ordered pair $(4, 3)$ a solution?"
-  answer="no"
->}}
-yes
-no
-{{< /multiplechoice >}}
-
-### 5.2 Solving Systems of Equations by Substitution
-
-{{< fillin
-  question="Solve the system of equations. Use either substitution or elimination: $x + y = -3$ and $x - y = 11$. Write the solution as an ordered pair $(x, y)$."
-  answer="(4, -7)"
-  answerDisplay="$(4, -7)$"
->}}
-
-{{< multiplechoice
-  question="Solve the system of equations. Use either substitution or elimination: $y = -\tfrac{4}{5}x + 1$ and $8x + 10y = 10$."
-  answer="infinitely many solutions"
->}}
-one solution
-no solution
-infinitely many solutions
-{{< /multiplechoice >}}
-
-### 5.3 Solve Systems of Equations by Elimination
-
-{{< fillin
-  question="Solve the system of equations by elimination: $x + y = 12$ and $x - y = -10$. Write the solution as an ordered pair $(x, y)$."
-  answer="(1, 11)"
-  answerDisplay="$(1, 11)$"
->}}
-
-{{< fillin
-  question="Solve the system of equations by elimination: $3x - 8y = 20$ and $x + 3y = 1$. Write the solution as an ordered pair $(x, y)$."
-  answer="(4, -1)"
-  answerDisplay="$(4, -1)$"
->}}
-
-### 5.4 Solve Applications with Systems of Equations
-
-{{< fillin
-  question="The sum of two numbers is $-24$. One number is 104 less than the other. Find the numbers. Enter them separated by commas, larger first."
-  answer="40, -64"
-  answerDisplay="$40$ and $-64$"
->}}
-
-{{< fillin
-  question="(a) Two angles are complementary. The measure of the larger angle is six more than twice the measure of the smaller angle. Find the measure of the smaller angle, in degrees."
-  answer="28"
-  answerDisplay="28 degrees"
->}}
-
-{{< fillin
-  question="(b) Two angles are complementary. The measure of the larger angle is six more than twice the measure of the smaller angle. Find the measure of the larger angle, in degrees."
-  answer="62"
-  answerDisplay="62 degrees"
->}}
-
-{{< fillin
-  question="Kathy left home to walk to the mall, walking quickly at a rate of 4 miles per hour. Her sister Abby left home 15 minutes later and rode her bike to the mall at a rate of 10 miles per hour. How long will it take Abby to catch up to Kathy? Give the time in hours."
-  answer="\frac{1}{6}"
-  answerDisplay="$\tfrac{1}{6}$ of an hour (10 minutes)"
->}}
-
-### 5.5 Solve Mixture Applications with Systems of Equations
-
-{{< fillin
-  question="(a) Liz paid \$160 for 28 tickets to take the Brownie troop to the science museum. Children's tickets cost \$5 and adult tickets cost \$9. How many children's tickets did Liz buy?"
-  answer="23"
-  answerDisplay="23 children's tickets"
->}}
-
-{{< fillin
-  question="(b) Liz paid \$160 for 28 tickets to take the Brownie troop to the science museum. Children's tickets cost \$5 and adult tickets cost \$9. How many adult tickets did Liz buy?"
-  answer="5"
-  answerDisplay="5 adult tickets"
->}}
-
-### 5.6 Graphing Systems of Linear Inequalities
-
-{{< multiplechoice
-  question="Andi wants to spend no more than \$50 on Halloween treats. She wants to buy candy bars that cost \$1 each and lollipops that cost \$0.50 each, and she wants the number of lollipops to be at least three times the number of candy bars. Can she buy 20 candy bars and 70 lollipops?"
-  answer="no"
->}}
-yes
-no
-{{< /multiplechoice >}}
-
-{{< multiplechoice
-  question="Andi wants to spend no more than \$50 on Halloween treats. She wants to buy candy bars that cost \$1 each and lollipops that cost \$0.50 each, and she wants the number of lollipops to be at least three times the number of candy bars. Can she buy 15 candy bars and 65 lollipops?"
-  answer="yes"
->}}
-yes
-no
-{{< /multiplechoice >}}
 
 ## Chapter 6: Polynomials
 
@@ -331,12 +224,14 @@ no
 {{< fillin
   question="Solve: $y^2 = y + 132$. Enter the solutions, separated by commas."
   answer="-11, 12"
+  answerMode="unordered"
   answerDisplay="$y = -11, y = 12$"
 >}}
 
 {{< fillin
   question="Solve: $4n^2 + 19n + 21 = 0$. Enter the solutions, separated by commas."
   answer="-\frac{7}{4}, -3"
+  answerMode="unordered"
   answerDisplay="$n = -\tfrac{7}{4}, n = -3$"
 >}}
 
@@ -559,7 +454,7 @@ no
 ### 9.7 Higher Roots
 
 {{< fillin
-  question="(a) Simplify: $\sqrt[4]{81x^{12}}$."
+  question="Simplify $\sqrt[4]{81x^{12}}$."
   answer="3|x^3|"
   answerDisplay="$3|x^3|$"
 >}}
@@ -587,14 +482,16 @@ no
 ### 10.1 Solve Quadratic Equations Using the Square Root Property
 
 {{< fillin
-  question="Use the Square Root Property to solve the quadratic equation: $3(w + 5)^2 = 27$. Enter both solutions separated by commas, in the order shown in the Answer Key."
+  question="Use the Square Root Property to solve the quadratic equation: $3(w + 5)^2 = 27$. Enter both solutions separated by commas."
   answer="-2,-8"
+  answerMode="unordered"
   answerDisplay="$w = -2, -8$"
 >}}
 
 {{< fillin
-  question="Solve using the Square Root Property: $x^2 = 100$. Enter both solutions separated by commas, least to greatest."
+  question="Solve using the Square Root Property: $x^2 = 100$. Enter both solutions separated by commas."
   answer="-10,10"
+  answerMode="unordered"
   answerDisplay="$x = \pm 10$"
 >}}
 
@@ -607,22 +504,25 @@ no
 >}}
 
 {{< fillin
-  question="Solve by completing the square: $c^2 + 20c = 21$. Enter both solutions separated by commas, in the order shown in the Answer Key."
+  question="Solve by completing the square: $c^2 + 20c = 21$. Enter both solutions separated by commas."
   answer="1,-21"
+  answerMode="unordered"
   answerDisplay="$c = 1, -21$"
 >}}
 
 ### 10.3 Solve Quadratic Equations Using the Quadratic Formula
 
 {{< fillin
-  question="Use the Quadratic Formula to solve the quadratic equation: $2m^2 - 5m + 3 = 0$. Enter both solutions separated by commas, in the order shown in the Answer Key."
+  question="Use the Quadratic Formula to solve the quadratic equation: $2m^2 - 5m + 3 = 0$. Enter both solutions separated by commas."
   answer="1,\frac{3}{2}"
+  answerMode="unordered"
   answerDisplay="$m = 1, \tfrac{3}{2}$"
 >}}
 
 {{< fillin
-  question="Solve the quadratic equation using any method: $3n^2 + 8n + 3 = 0$. Enter both solutions separated by commas, with the solution using $+$ first."
+  question="Solve the quadratic equation using any method: $3n^2 + 8n + 3 = 0$. Enter both solutions separated by commas."
   answer="\frac{-4+\sqrt{7}}{3},\frac{-4-\sqrt{7}}{3}"
+  answerMode="unordered"
   answerDisplay="$n = \tfrac{-4 \pm \sqrt{7}}{3}$"
 >}}
 
@@ -634,8 +534,9 @@ no
 ### 10.4 Solve Applications Modeled by Quadratic Equations
 
 {{< fillin
-  question="Find two consecutive even numbers whose product is 360. Enter the four numbers separated by commas, in the order shown in the Answer Key."
+  question="Find the two pairs of consecutive even numbers whose product is 360. Enter the four values separated by commas."
   answer="-20,-18,18,20"
+  answerMode="unordered"
   answerDisplay="$-20, -18, 18, 20$"
 >}}
 
@@ -648,7 +549,7 @@ no
 ### 10.5 Graphing Quadratic Equations in Two Variables
 
 {{< multiplechoice
-  question="For the parabola $y = 3x^2 + 6x + 8$, find (a) which way it opens."
+  question="For the parabola $y = 3x^2 + 6x + 8$, determine which way it opens."
   answer="up"
 >}}
 up
@@ -656,27 +557,27 @@ down
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="For the parabola $y = 3x^2 + 6x + 8$, find (b) the axis of symmetry. Enter the value of $x$."
+  question="For the parabola $y = 3x^2 + 6x + 8$, find the axis of symmetry. Enter the value of $x$."
   answer="-1"
   answerDisplay="$x = -1$"
 >}}
 
 {{< fillin
-  question="For the parabola $y = 3x^2 + 6x + 8$, find (c) the vertex."
+  question="For the parabola $y = 3x^2 + 6x + 8$, find the vertex."
   answer="(-1,5)"
   answerDisplay="$(-1, 5)$"
 >}}
 
 {{< fillin
-  question="For the parabola $y = x^2 + 10x + 24$, find (b) the axis of symmetry. Enter the value of $x$."
+  question="For the parabola $y = x^2 + 10x + 24$, find the axis of symmetry. Enter the value of $x$."
   answer="-5"
   answerDisplay="$x = -5$"
 >}}
 
 {{< fillin
-  question="For the parabola $y = x^2 + 10x + 24$, find (c) the vertex."
+  question="For the parabola $y = x^2 + 10x + 24$, find the vertex."
   answer="(-5,-1)"
   answerDisplay="$(-5, -1)$"
 >}}
 
-<small>This knowledge check is adapted from the Chapter 5–10 [Review Exercises and Practice Tests](https://openstax.org/books/elementary-algebra-2e/pages/5-review-exercises) of Elementary Algebra 2e by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked usable Practice Test questions), converted them to interactive exercises with instant feedback, split multi-part questions into separate exercises, rephrased word-answer and graph-reading questions as value, list, and multiple-choice questions, and took all answers from the book's Answer Key.</small>
+<small>This knowledge check is adapted from the Chapter 6–10 [Review Exercises and Practice Tests](https://openstax.org/books/elementary-algebra-2e/pages/6-review-exercises) of Elementary Algebra 2e by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked usable Practice Test questions), converted them to interactive exercises with instant feedback, split multi-part questions into separate exercises, rephrased word-answer and graph-reading questions as value, list, and multiple-choice questions, and took all answers from the book's Answer Key.</small>

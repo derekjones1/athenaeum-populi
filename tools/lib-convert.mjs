@@ -5,8 +5,9 @@
  *
  * Handles: nextra imports strip, leading-H1 drop, Callout, Cards, static
  * figures (Graph/NumberLine/Figure → inline SVG), MultipleChoice, GraphPlot,
- * FillIn, <small> collapse. Object/array props are parsed and evaluated.
- * See MIGRATION.md "Converter spec".
+ * FillIn, <small> collapse. Object/array props are parsed as literals without
+ * executing source JavaScript.
+ * Retained for controlled imports of legacy textbook source.
  */
 import { toSvgString, buildGraph, buildNumberLine, buildFigure } from '../assets/js/lib/graph-core.mjs';
 
@@ -36,7 +37,14 @@ export function parseJsxAttrs(s) {
     if (s[i] === '"' || s[i] === "'") {
       const q = s[i++];
       let val = '';
-      while (i < n && s[i] !== q) val += s[i++];
+      while (i < n) {
+        if (s[i] === '\\' && i + 1 < n) {
+          val += s[i++] + s[i++];
+          continue;
+        }
+        if (s[i] === q) break;
+        val += s[i++];
+      }
       i++;
       out[name] = { str: val };
     } else if (s[i] === '{') {
@@ -44,7 +52,12 @@ export function parseJsxAttrs(s) {
       for (; i < n; i++) {
         const c = s[i];
         expr += c;
-        if (str) { if (c === str && s[i - 1] !== '\\') str = null; continue; }
+        if (str) {
+          let slashes = 0;
+          for (let j = i - 1; j >= 0 && s[j] === '\\'; j--) slashes++;
+          if (c === str && slashes % 2 === 0) str = null;
+          continue;
+        }
         if (c === '"' || c === "'" || c === '`') str = c;
         else if (c === '{') depth++;
         else if (c === '}') { depth--; if (depth === 0) { i++; break; } }
@@ -55,14 +68,190 @@ export function parseJsxAttrs(s) {
   return out;
 }
 
-const evalExpr = (code) => Function('"use strict";return (' + code + ')')();
+/**
+ * Parse the literal-only subset used by converter props. This intentionally
+ * rejects identifiers, calls, member access, interpolation, and assignments;
+ * importing a textbook must never execute its JavaScript.
+ */
+export function parseLiteralExpression(code) {
+  let i = 0;
+  const fail = (message) => {
+    throw new Error(`unsupported converter expression at ${i}: ${message}`);
+  };
+  const ws = () => {
+    while (i < code.length) {
+      if (/\s/.test(code[i])) { i++; continue; }
+      if (code.slice(i, i + 2) === '//') {
+        i = code.indexOf('\n', i + 2);
+        if (i === -1) i = code.length;
+        continue;
+      }
+      if (code.slice(i, i + 2) === '/*') {
+        const end = code.indexOf('*/', i + 2);
+        if (end === -1) fail('unterminated comment');
+        i = end + 2;
+        continue;
+      }
+      break;
+    }
+  };
+  const string = () => {
+    const quote = code[i++];
+    let value = '';
+    while (i < code.length) {
+      const char = code[i++];
+      if (char === quote) return value;
+      if (char !== '\\') {
+        if (quote === '`' && char === '$' && code[i] === '{') fail('template interpolation is not allowed');
+        value += char;
+        continue;
+      }
+      if (i >= code.length) fail('unterminated string escape');
+      const escaped = code[i++];
+      const simple = { n: '\n', r: '\r', t: '\t', b: '\b', f: '\f', v: '\v', 0: '\0' };
+      if (Object.hasOwn(simple, escaped)) value += simple[escaped];
+      else if (escaped === '\n') { /* line continuation */ }
+      else if (escaped === 'x') {
+        const hex = code.slice(i, i + 2);
+        if (!/^[\da-f]{2}$/i.test(hex)) fail('invalid hexadecimal escape');
+        value += String.fromCharCode(Number.parseInt(hex, 16));
+        i += 2;
+      } else if (escaped === 'u') {
+        const hex = code.slice(i, i + 4);
+        if (!/^[\da-f]{4}$/i.test(hex)) fail('invalid Unicode escape');
+        value += String.fromCharCode(Number.parseInt(hex, 16));
+        i += 4;
+      } else value += escaped;
+    }
+    fail('unterminated string');
+  };
+  const number = () => {
+    const match = /^(?:0[xX][\da-fA-F]+|(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?)/.exec(code.slice(i));
+    if (!match) fail('expected a number');
+    i += match[0].length;
+    const value = Number(match[0]);
+    if (!Number.isFinite(value)) fail('number must be finite');
+    return value;
+  };
+  const identifier = () => {
+    const match = /^[A-Za-z_$][\w$]*/.exec(code.slice(i));
+    if (!match) fail('expected an identifier');
+    i += match[0].length;
+    return match[0];
+  };
+
+  let expression;
+  const primary = () => {
+    ws();
+    const char = code[i];
+    if (char === '"' || char === "'" || char === '`') return string();
+    if (char === '[') {
+      i++;
+      const out = [];
+      ws();
+      while (code[i] !== ']') {
+        out.push(expression());
+        ws();
+        if (code[i] === ',') { i++; ws(); if (code[i] === ']') break; }
+        else if (code[i] !== ']') fail('expected comma or ]');
+      }
+      if (code[i++] !== ']') fail('unterminated array');
+      return out;
+    }
+    if (char === '{') {
+      i++;
+      const out = {};
+      ws();
+      while (code[i] !== '}') {
+        let key;
+        if (code[i] === '"' || code[i] === "'" || code[i] === '`') key = string();
+        else key = identifier();
+        if (['__proto__', 'prototype', 'constructor'].includes(key)) fail('unsafe object key');
+        ws();
+        if (code[i++] !== ':') fail('expected colon');
+        out[key] = expression();
+        ws();
+        if (code[i] === ',') { i++; ws(); if (code[i] === '}') break; }
+        else if (code[i] !== '}') fail('expected comma or }');
+      }
+      if (code[i++] !== '}') fail('unterminated object');
+      return out;
+    }
+    if (char === '(') {
+      i++;
+      const value = expression();
+      ws();
+      if (code[i++] !== ')') fail('expected )');
+      return value;
+    }
+    if (/[\d.]/.test(char || '')) return number();
+    const name = identifier();
+    if (name === 'true') return true;
+    if (name === 'false') return false;
+    if (name === 'null') return null;
+    fail(`identifier ${JSON.stringify(name)} is not a literal`);
+  };
+  const unary = () => {
+    ws();
+    if (code[i] === '+' || code[i] === '-') {
+      const operator = code[i++];
+      const value = unary();
+      if (typeof value !== 'number') fail('unary arithmetic needs a number');
+      return operator === '-' ? -value : value;
+    }
+    return primary();
+  };
+  const power = () => {
+    let left = unary();
+    ws();
+    if (code.slice(i, i + 2) === '**') {
+      i += 2;
+      const right = power();
+      if (typeof left !== 'number' || typeof right !== 'number') fail('arithmetic needs numbers');
+      left **= right;
+    }
+    return left;
+  };
+  const product = () => {
+    let left = power();
+    while (true) {
+      ws();
+      const operator = code.slice(i, i + 2) === '**' ? '' : code[i];
+      if (!['*', '/', '%'].includes(operator)) break;
+      i++;
+      const right = power();
+      if (typeof left !== 'number' || typeof right !== 'number') fail('arithmetic needs numbers');
+      left = operator === '*' ? left * right : operator === '/' ? left / right : left % right;
+      if (!Number.isFinite(left)) fail('arithmetic result must be finite');
+    }
+    return left;
+  };
+  expression = () => {
+    let left = product();
+    while (true) {
+      ws();
+      const operator = code[i];
+      if (operator !== '+' && operator !== '-') break;
+      i++;
+      const right = product();
+      if (typeof left !== 'number' || typeof right !== 'number') fail('arithmetic needs numbers');
+      left = operator === '+' ? left + right : left - right;
+    }
+    return left;
+  };
+
+  const value = expression();
+  ws();
+  if (i !== code.length) fail('unexpected trailing input');
+  return value;
+}
 
 function resolveProps(attrs) {
   const p = {};
   for (const [k, v] of Object.entries(attrs)) {
     if (v === true) p[k] = true;
     else if ('str' in v) p[k] = v.str;
-    else p[k] = evalExpr(v.expr);
+    else p[k] = parseLiteralExpression(v.expr);
   }
   return p;
 }
@@ -80,7 +269,12 @@ function replaceSelfClosing(text, name, handler, counter) {
     let j = start + tag.length, str = null, depth = 0;
     for (; j < text.length; j++) {
       const c = text[j];
-      if (str) { if (c === str && text[j - 1] !== '\\') str = null; continue; }
+      if (str) {
+        let slashes = 0;
+        for (let k = j - 1; k >= 0 && text[k] === '\\'; k--) slashes++;
+        if (c === str && slashes % 2 === 0) str = null;
+        continue;
+      }
       if (c === '"' || c === "'" || c === '`') str = c;
       else if (c === '{') depth++;
       else if (c === '}') depth--;
@@ -162,8 +356,8 @@ export function convertMdx(input) {
       });
       return `{{< multiplechoice\n${params.join('\n')}\n>}}\n${opts.join('\n===OPT===\n')}\n{{< /multiplechoice >}}`;
     }
-    // `options={[…]}` is a JS array (its `\\` collapses to one backslash on
-    // eval), but `answer="…"` is a literal string attribute (JSX keeps `\\`).
+    // `options={[…]}` is a JavaScript string array (its `\\` escape represents
+    // one backslash), but `answer="…"` is a literal attribute (which keeps `\\`).
     // Collapse the answer so it matches its evaluated option — otherwise the
     // exact-string grade never fires (a latent source bug; the old lint compared
     // raw source and missed it). Same normalization FillIn does.

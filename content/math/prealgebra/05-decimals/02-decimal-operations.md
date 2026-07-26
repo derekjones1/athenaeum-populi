@@ -319,24 +319,6 @@ the right. A zero must be added at the end: $5.63(1000) = 5{,}630$.
   hint="1000 has three zeros, so move the decimal point three places to the right, adding a zero as a placeholder."
 >}}
 
-{{< fillin
-  question="Multiply 14.2 by 10."
-  answer="142"
-  hint="10 has one zero, so move the decimal point one place to the right."
->}}
-
-{{< fillin
-  question="Multiply 14.2 by 100."
-  answer="1420"
-  hint="100 has two zeros, so move the decimal point two places to the right, adding a zero as a placeholder."
->}}
-
-{{< fillin
-  question="Multiply 14.2 by 1000."
-  answer="14200"
-  hint="1000 has three zeros, so move the decimal point three places to the right, adding zeros as placeholders."
->}}
-
 ## Divide decimals
 
 Just as with multiplication, division of decimals is very much like
@@ -349,29 +331,29 @@ problem, so we can write $0.8 \div 4 = 0.2$. We can think of this as "if
 we divide $8$ tenths into four groups, how many are in each group?" There
 are four groups of two-tenths in eight-tenths, so $0.8 \div 4 = 0.2$.
 
-<svg viewBox="0 0 560 90" role="img" aria-label="A number line from 0 to 1 showing four equal jumps of 0.2 from 0 to 0.8." style={{ maxWidth: 480, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="20" y1="55" x2="540" y2="55" stroke="currentColor" strokeWidth="1.5" />
+<svg viewBox="0 0 560 90" role="img" aria-label="A number line from 0 to 1 showing four equal jumps of 0.2 from 0 to 0.8." style="max-width: 480px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="55" x2="540" y2="55" stroke="currentColor" stroke-width="1.5" />
   <polygon points="540,55 530,49 530,61" fill="currentColor" />
-  <line x1="30" y1="48" x2="30" y2="62" stroke="currentColor" strokeWidth="1.5" />
-  <text x="30" y="80" textAnchor="middle" fontSize="14" fill="currentColor">0</text>
-  <line x1="130" y1="48" x2="130" y2="62" stroke="currentColor" strokeWidth="1.5" />
-  <text x="130" y="80" textAnchor="middle" fontSize="14" fill="currentColor">0.2</text>
-  <line x1="230" y1="48" x2="230" y2="62" stroke="currentColor" strokeWidth="1.5" />
-  <text x="230" y="80" textAnchor="middle" fontSize="14" fill="currentColor">0.4</text>
-  <line x1="330" y1="48" x2="330" y2="62" stroke="currentColor" strokeWidth="1.5" />
-  <text x="330" y="80" textAnchor="middle" fontSize="14" fill="currentColor">0.6</text>
-  <line x1="430" y1="48" x2="430" y2="62" stroke="currentColor" strokeWidth="1.5" />
-  <text x="430" y="80" textAnchor="middle" fontSize="14" fill="currentColor">0.8</text>
-  <line x1="530" y1="48" x2="530" y2="62" stroke="currentColor" strokeWidth="1.5" />
-  <text x="530" y="80" textAnchor="middle" fontSize="14" fill="currentColor">1</text>
-  <path d="M 30 40 L 80 30 L 130 40" fill="none" stroke="currentColor" strokeWidth="1" />
-  <text x="80" y="22" textAnchor="middle" fontSize="13" fill="currentColor">0.2</text>
-  <path d="M 130 40 L 180 30 L 230 40" fill="none" stroke="currentColor" strokeWidth="1" />
-  <text x="180" y="22" textAnchor="middle" fontSize="13" fill="currentColor">0.2</text>
-  <path d="M 230 40 L 280 30 L 330 40" fill="none" stroke="currentColor" strokeWidth="1" />
-  <text x="280" y="22" textAnchor="middle" fontSize="13" fill="currentColor">0.2</text>
-  <path d="M 330 40 L 380 30 L 430 40" fill="none" stroke="currentColor" strokeWidth="1" />
-  <text x="380" y="22" textAnchor="middle" fontSize="13" fill="currentColor">0.2</text>
+  <line x1="30" y1="48" x2="30" y2="62" stroke="currentColor" stroke-width="1.5" />
+  <text x="30" y="80" text-anchor="middle" font-size="14" fill="currentColor">0</text>
+  <line x1="130" y1="48" x2="130" y2="62" stroke="currentColor" stroke-width="1.5" />
+  <text x="130" y="80" text-anchor="middle" font-size="14" fill="currentColor">0.2</text>
+  <line x1="230" y1="48" x2="230" y2="62" stroke="currentColor" stroke-width="1.5" />
+  <text x="230" y="80" text-anchor="middle" font-size="14" fill="currentColor">0.4</text>
+  <line x1="330" y1="48" x2="330" y2="62" stroke="currentColor" stroke-width="1.5" />
+  <text x="330" y="80" text-anchor="middle" font-size="14" fill="currentColor">0.6</text>
+  <line x1="430" y1="48" x2="430" y2="62" stroke="currentColor" stroke-width="1.5" />
+  <text x="430" y="80" text-anchor="middle" font-size="14" fill="currentColor">0.8</text>
+  <line x1="530" y1="48" x2="530" y2="62" stroke="currentColor" stroke-width="1.5" />
+  <text x="530" y="80" text-anchor="middle" font-size="14" fill="currentColor">1</text>
+  <path d="M 30 40 L 80 30 L 130 40" fill="none" stroke="currentColor" stroke-width="1" />
+  <text x="80" y="22" text-anchor="middle" font-size="13" fill="currentColor">0.2</text>
+  <path d="M 130 40 L 180 30 L 230 40" fill="none" stroke="currentColor" stroke-width="1" />
+  <text x="180" y="22" text-anchor="middle" font-size="13" fill="currentColor">0.2</text>
+  <path d="M 230 40 L 280 30 L 330 40" fill="none" stroke="currentColor" stroke-width="1" />
+  <text x="280" y="22" text-anchor="middle" font-size="13" fill="currentColor">0.2</text>
+  <path d="M 330 40 L 380 30 L 430 40" fill="none" stroke="currentColor" stroke-width="1" />
+  <text x="380" y="22" text-anchor="middle" font-size="13" fill="currentColor">0.2</text>
 </svg>
 
 Using long division notation, we would write $0.2$ over $4\overline{)0.8}$.

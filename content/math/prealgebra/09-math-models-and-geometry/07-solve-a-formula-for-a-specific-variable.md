@@ -233,12 +233,6 @@ So $y = \tfrac{18 - 3x}{2}$.
   hint="Substitute: $5(4) + 2y = 18$, then solve for $y$."
 >}}
 
-{{< fillin
-  question="Solve the formula $5x + 2y = 18$ for $y$, in general. Enter your answer as y = ___ (an expression in $x$)."
-  answer="y=(18-5x)/2"
-  hint="Subtract $5x$ from both sides, then divide both sides by 2."
->}}
-
 **Example.** Solve the formula $P = a + b + c$ for $a$.
 
 We want to isolate $a$, so we subtract $b$ and $c$ from both sides:

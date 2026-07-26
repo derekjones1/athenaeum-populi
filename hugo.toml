@@ -1,10 +1,10 @@
-# Athenaeum Populi — Hugo site config (Phase 0 scaffold)
+# Athenaeum Populi — Hugo site configuration
 #
-# Pinned Hugo: extended v0.164.0 (see MIGRATION-STATUS.md "Hugo version").
+# Pinned Hugo: extended v0.164.0.
 # Theme: Hextra v0.12.3, VENDORED into themes/hextra (classic theme mode,
 # NOT Hugo Modules — no Go toolchain). Do not switch to module imports.
 #
-# Do NOT upgrade Hugo or Hextra mid-migration (MIGRATION.md hard rule 5).
+# Upgrade Hugo or Hextra only with deliberate compatibility testing.
 
 baseURL = "https://athenaeumpopuli.org/"
 title = "Athenaeum Populi"
@@ -14,13 +14,15 @@ enableRobotsTXT = true
 enableEmoji = true
 disableKinds = ["taxonomy", "term"]
 
-# Classic theme mode still needs a declared minimum; matches Hextra's floor.
+# Keep Hugo exact because its embedded KaTeX renderer is version-coupled to the
+# vendored CSS. The Node toolchain test independently enforces this local pin.
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.146.0"
+    min = "0.164.0"
+    max = "0.164.0"
 
-# Per-book RSS/markdown outputs come later; keep minimal for the scaffold.
+# The site publishes HTML only.
 [outputs]
   home = ["html"]
   section = ["html"]
@@ -34,7 +36,7 @@ disableKinds = ["taxonomy", "term"]
     unsafe = true          # required: content contains raw HTML / component markup
   [markup.goldmark.extensions.passthrough]
     enable = true
-    # The corpus uses $...$ inline and $$...$$ block (KaTeX/Nextra defaults).
+    # The corpus uses $...$ inline and $$...$$ block delimiters.
     # We MUST accept `$` inline for parity, plus the \(...\) / \[...\] forms.
     [markup.goldmark.extensions.passthrough.delimiters]
       block  = [['$$', '$$'], ['\[', '\]']]
@@ -43,8 +45,7 @@ disableKinds = ["taxonomy", "term"]
 # --- Params -----------------------------------------------------------------
 [params]
   [params.math]
-    enable = true
-    engine = "katex"       # KaTeX both ways; do not switch to mathjax.
+    engine = "katex"       # Build-time KaTeX renderer; do not switch to MathJax.
     # CRITICAL: the build-time path (transform.ToMath) is rendered by the KaTeX
     # embedded IN THE HUGO BINARY — v0.16.22 for Hugo 0.164.0. The CSS MUST match
     # that exact version or fractions/roots mis-position. Hextra otherwise loads
@@ -54,19 +55,12 @@ disableKinds = ["taxonomy", "term"]
     [params.math.katex]
       # Vendored under static/katex so clean/offline builds never depend on a CDN.
       base = "/katex"
-    # BENCHMARK TOGGLE (MIGRATION.md Phase 1 math decision):
-    #   "build"  -> build-time KaTeX via transform.ToMath (flat page loads)
-    #   "client" -> ship raw delimiters, render with KaTeX auto-render in browser
-    # Override on the CLI without editing this file:
-    #   HUGO_PARAMS_MATH_RENDER=client hugo
-    render = "build"
 
   [params.theme]
     default = "system"
     displayToggle = true
 
-  # Load our vanilla Web Components bundle (esbuild via Hugo Pipes js.Build).
-  # Phase 0 ships a trivial <ap-hello> element to prove the pipeline.
+  # Load the vanilla Web Components bundle (esbuild via Hugo Pipes js.Build).
   [params.components]
     enable = true
 
@@ -74,9 +68,7 @@ disableKinds = ["taxonomy", "term"]
     enable = true
     type = "pagefind"
 
-# Top navbar = subject categories, mirroring the old site's root _meta.js
-# (Home, Math, Biology, Chemistry, Physics, About). The logo also links home;
-# Home is listed explicitly to match the old nav.
+# Top navbar = the published subject categories and project information.
 [menu]
   [[menu.main]]
     name = "Home"

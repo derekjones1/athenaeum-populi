@@ -146,15 +146,15 @@ line through $x = 2$. Then locate the $y$ value, $5$, on the $y$-axis, and
 sketch a horizontal line through $y = 5$. The point where these two lines
 meet is the point with coordinates $(2, 5)$.
 
-<svg viewBox="0 0 320 320" role="img" aria-label="A dashed vertical line at x = 2 and a dashed horizontal line at y = 5 meet at the point (2, 5), plotted and labeled." style={{ maxWidth: 320, display: 'block', margin: '1.5rem auto' }}>
-  <line x1="10" y1="160" x2="310" y2="160" stroke="currentColor" strokeWidth="1.5" />
-  <line x1="160" y1="10" x2="160" y2="310" stroke="currentColor" strokeWidth="1.5" />
-  <text x="300" y="152" fontSize="14" fill="currentColor">x</text>
-  <text x="168" y="20" fontSize="14" fill="currentColor">y</text>
-  <line x1="200" y1="80" x2="200" y2="160" stroke="currentColor" strokeWidth="1.5" strokeDasharray="4 3" />
-  <line x1="160" y1="80" x2="200" y2="80" stroke="currentColor" strokeWidth="1.5" strokeDasharray="4 3" />
+<svg viewBox="0 0 320 320" role="img" aria-label="A dashed vertical line at x = 2 and a dashed horizontal line at y = 5 meet at the point (2, 5), plotted and labeled." style="max-width: 320px; display: block; margin: 1.5rem auto">
+  <line x1="10" y1="160" x2="310" y2="160" stroke="currentColor" stroke-width="1.5" />
+  <line x1="160" y1="10" x2="160" y2="310" stroke="currentColor" stroke-width="1.5" />
+  <text x="300" y="152" font-size="14" fill="currentColor">x</text>
+  <text x="168" y="20" font-size="14" fill="currentColor">y</text>
+  <line x1="200" y1="80" x2="200" y2="160" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3" />
+  <line x1="160" y1="80" x2="200" y2="80" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3" />
   <circle cx="200" cy="80" r="4" fill="currentColor" />
-  <text x="212" y="76" fontSize="13" fill="currentColor">(2, 5)</text>
+  <text x="212" y="76" font-size="13" fill="currentColor">(2, 5)</text>
 </svg>
 
 **Example.** Plot $(1, 3)$ and $(3, 1)$ in the same rectangular coordinate

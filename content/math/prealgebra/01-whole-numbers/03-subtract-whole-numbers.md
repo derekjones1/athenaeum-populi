@@ -46,11 +46,9 @@ represents $10$. Let's model the expression we just considered, $7 - 3$. We
 start with $7$ ones blocks, circle $3$ of them to show we are taking them
 away, and count what remains:
 
-<svg viewBox="0 0 560 60" role="img" aria-label="Seven small squares in a row. The first three are circled to show they are taken away, leaving four squares." style={{ maxWidth: 420, width: '100%', display: 'block', margin: '1.5rem auto' }}>
-  {[0, 1, 2, 3, 4, 5, 6].map((n) => (
-    <rect key={n} x={20 + n * 75} y="15" width="30" height="30" fill="none" stroke="currentColor" strokeWidth="1.5" />
-  ))}
-  <ellipse cx="110" cy="30" rx="105" ry="26" fill="none" stroke="var(--ap-error, #b42318)" strokeWidth="1.5" />
+<svg viewBox="0 0 560 60" role="img" aria-label="Seven small squares in a row. The first three are circled to show they are taken away, leaving four squares." style="max-width: 420px; width: 100%; display: block; margin: 1.5rem auto">
+  <rect x="20" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="95" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="170" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="245" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="320" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="395" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="470" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <ellipse cx="110" cy="30" rx="105" ry="26" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
 </svg>
 
 There are $4$ ones blocks left. We have shown that $7 - 3 = 4$.
