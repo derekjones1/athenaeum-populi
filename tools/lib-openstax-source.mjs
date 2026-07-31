@@ -1,0 +1,864 @@
+import { createHash } from 'node:crypto';
+import {
+  existsSync,
+  readFileSync,
+  readdirSync,
+} from 'node:fs';
+import path from 'node:path';
+
+const EXCLUDED_CORE_SECTION_CLASSES = new Set([
+  'key-concepts',
+  'section-exercises',
+  'writing',
+]);
+
+const MATCH_STOPWORDS = new Set([
+  'a', 'an', 'and', 'are', 'as', 'at', 'be', 'by', 'each', 'for', 'from',
+  'in', 'is', 'it', 'of', 'on', 'or', 'that', 'the', 'their', 'this', 'to',
+  'use', 'using', 'with', 'you', 'your',
+]);
+
+export function sha256(value) {
+  return createHash('sha256').update(value).digest('hex');
+}
+
+export function decodeXmlEntities(value) {
+  return value
+    .replace(/&#x([\da-f]+);/gi, (_, digits) => String.fromCodePoint(Number.parseInt(digits, 16)))
+    .replace(/&#(\d+);/g, (_, digits) => String.fromCodePoint(Number.parseInt(digits, 10)))
+    .replaceAll('&lt;', '<')
+    .replaceAll('&gt;', '>')
+    .replaceAll('&quot;', '"')
+    .replaceAll('&apos;', "'")
+    .replaceAll('&amp;', '&')
+    .replaceAll('&nbsp;', ' ')
+    .replaceAll('&copy;', '©');
+}
+
+function findTagEnd(xml, start) {
+  let quote = null;
+  for (let index = start; index < xml.length; index++) {
+    const character = xml[index];
+    if (quote) {
+      if (character === quote) quote = null;
+    } else if (character === '"' || character === "'") {
+      quote = character;
+    } else if (character === '>') {
+      return index;
+    }
+  }
+  throw new Error(`unterminated XML tag starting at byte ${start - 1}`);
+}
+
+function parseAttributes(source) {
+  const attributes = {};
+  const nameMatch = source.match(/^\s*([^\s/>]+)/);
+  if (!nameMatch) return { name: '', attributes };
+  const name = nameMatch[1];
+  let index = nameMatch[0].length;
+
+  while (index < source.length) {
+    while (/\s/.test(source[index] || '')) index++;
+    if (index >= source.length || source[index] === '/') break;
+    const attributeMatch = source.slice(index).match(/^([^\s=/>]+)/);
+    if (!attributeMatch) break;
+    const attributeName = attributeMatch[1];
+    index += attributeMatch[0].length;
+    while (/\s/.test(source[index] || '')) index++;
+    if (source[index] !== '=') {
+      attributes[attributeName] = '';
+      continue;
+    }
+    index++;
+    while (/\s/.test(source[index] || '')) index++;
+    const quote = source[index];
+    if (quote !== '"' && quote !== "'") {
+      throw new Error(`unquoted XML attribute ${attributeName}`);
+    }
+    const end = source.indexOf(quote, index + 1);
+    if (end === -1) throw new Error(`unterminated XML attribute ${attributeName}`);
+    attributes[attributeName] = decodeXmlEntities(source.slice(index + 1, end));
+    index = end + 1;
+  }
+
+  return { name, attributes };
+}
+
+/**
+ * Parse the deliberately conservative XML used by OpenStax collections and
+ * CNXML modules. The parser keeps namespace prefixes on element/attribute
+ * names and does not perform DTD expansion or network access.
+ */
+export function parseXml(xml) {
+  const document = { name: '#document', attributes: {}, children: [] };
+  const stack = [document];
+  let index = 0;
+
+  while (index < xml.length) {
+    const opening = xml.indexOf('<', index);
+    if (opening === -1) {
+      const tail = decodeXmlEntities(xml.slice(index));
+      if (tail) stack.at(-1).children.push(tail);
+      break;
+    }
+    if (opening > index) {
+      const text = decodeXmlEntities(xml.slice(index, opening));
+      if (text) stack.at(-1).children.push(text);
+    }
+
+    if (xml.startsWith('<!--', opening)) {
+      const end = xml.indexOf('-->', opening + 4);
+      if (end === -1) throw new Error(`unterminated XML comment at byte ${opening}`);
+      index = end + 3;
+      continue;
+    }
+    if (xml.startsWith('<![CDATA[', opening)) {
+      const end = xml.indexOf(']]>', opening + 9);
+      if (end === -1) throw new Error(`unterminated CDATA at byte ${opening}`);
+      stack.at(-1).children.push(xml.slice(opening + 9, end));
+      index = end + 3;
+      continue;
+    }
+    if (xml.startsWith('<?', opening)) {
+      const end = xml.indexOf('?>', opening + 2);
+      if (end === -1) throw new Error(`unterminated XML processing instruction at byte ${opening}`);
+      index = end + 2;
+      continue;
+    }
+    if (xml.startsWith('<!', opening)) {
+      const end = findTagEnd(xml, opening + 2);
+      index = end + 1;
+      continue;
+    }
+
+    const end = findTagEnd(xml, opening + 1);
+    const tag = xml.slice(opening + 1, end);
+    if (tag.startsWith('/')) {
+      const closingName = tag.slice(1).trim();
+      const current = stack.pop();
+      if (!current || current.name !== closingName) {
+        throw new Error(`mismatched XML closing tag </${closingName}> at byte ${opening}; expected </${current?.name || '?'}>`);
+      }
+    } else {
+      const selfClosing = /\/\s*$/.test(tag);
+      const source = selfClosing ? tag.replace(/\/\s*$/, '') : tag;
+      const { name, attributes } = parseAttributes(source);
+      if (!name) throw new Error(`empty XML element at byte ${opening}`);
+      const element = { name, attributes, children: [] };
+      stack.at(-1).children.push(element);
+      if (!selfClosing) stack.push(element);
+    }
+    index = end + 1;
+  }
+
+  if (stack.length !== 1) {
+    throw new Error(`unclosed XML element <${stack.at(-1).name}>`);
+  }
+  return document;
+}
+
+export function localName(nodeOrName) {
+  const name = typeof nodeOrName === 'string' ? nodeOrName : nodeOrName?.name || '';
+  return name.includes(':') ? name.slice(name.lastIndexOf(':') + 1) : name;
+}
+
+export function elementChildren(node, wantedName = null) {
+  return (node?.children || []).filter((child) => (
+    typeof child !== 'string' && (wantedName == null || localName(child) === wantedName)
+  ));
+}
+
+export function firstElement(node, wantedName) {
+  return elementChildren(node, wantedName)[0] || null;
+}
+
+export function textContent(node) {
+  if (typeof node === 'string') return node;
+  return (node?.children || []).map(textContent).join(' ');
+}
+
+export function descendants(node, predicate, { prune = () => false } = {}) {
+  const matches = [];
+  const visit = (candidate) => {
+    if (typeof candidate === 'string') return;
+    if (predicate(candidate)) matches.push(candidate);
+    if (prune(candidate)) return;
+    for (const child of candidate.children || []) visit(child);
+  };
+  visit(node);
+  return matches;
+}
+
+export function normalizeText(value) {
+  return decodeXmlEntities(String(value || ''))
+    .normalize('NFKC')
+    .toLocaleLowerCase('en-US')
+    .replace(/[−–—]/g, '-')
+    .replace(/[“”]/g, '"')
+    .replace(/[‘’]/g, "'")
+    .replace(/\p{M}/gu, '')
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .trim()
+    .replace(/\s+/g, ' ');
+}
+
+/** Preserve mathematical operators while normalizing prose/TeX for source
+ * revision triage. This is deliberately stricter than normalizeText: a sign
+ * change such as −3/5 → +3/5 must remain visible. */
+export function normalizeSemanticText(value) {
+  let normalized = decodeXmlEntities(String(value || '')).normalize('NFKC');
+  let previous;
+  do {
+    previous = normalized;
+    normalized = normalized.replace(
+      /\\(?:tfrac|dfrac|cfrac|frac)\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g,
+      '($1)/($2)',
+    );
+  } while (normalized !== previous);
+  normalized = normalized
+    .replace(/\\(?:leq|le)\b/g, '≤')
+    .replace(/\\(?:geq|ge)\b/g, '≥')
+    .replace(/\\(?:neq|ne)\b/g, '≠')
+    .replace(/\\(?:cdot|times)\b/g, '*')
+    .replace(/\\text\{([^{}]*)\}/g, '$1')
+    .replace(/\\(?:left|right)\b/g, '')
+    .replace(/\\[A-Za-z]+\*?/g, ' ')
+    .replace(/[{}]/g, ' ')
+    .toLocaleLowerCase('en-US')
+    .replace(/[−–—]/g, '-')
+    .replace(/[“”]/g, '"')
+    .replace(/[‘’]/g, "'")
+    .replace(/[\u200b\u2060]/g, '')
+    .replace(/[^\p{L}\p{N}+\-*\/^<>=≤≥≠().]+/gu, ' ')
+    .trim()
+    .replace(/\s+/g, ' ')
+    .replace(/\s*([+\-*\/^<>=≤≥≠()])\s*/g, '$1');
+  return normalized;
+}
+
+function significantTokens(value) {
+  return normalizeText(value)
+    .split(' ')
+    .map((token) => ({
+      solving: 'solve',
+      graphing: 'graph',
+      factoring: 'factor',
+      dividing: 'divide',
+      finding: 'find',
+      evaluating: 'evaluate',
+    })[token] || token)
+    .map((token) => {
+      if (token.length > 4 && token.endsWith('ies')) return `${token.slice(0, -3)}y`;
+      if (token.length > 4 && token.endsWith('s') && !token.endsWith('ss')) return token.slice(0, -1);
+      return token;
+    })
+    .filter((token) => token && (!MATCH_STOPWORDS.has(token) || /^\d+$/.test(token)));
+}
+
+export function tokenSimilarity(left, right) {
+  const a = new Set(significantTokens(left));
+  const b = new Set(significantTokens(right));
+  if (!a.size && !b.size) return 1;
+  if (!a.size || !b.size) return 0;
+  let intersection = 0;
+  for (const token of a) if (b.has(token)) intersection++;
+  return intersection / (a.size + b.size - intersection);
+}
+
+export function phraseCoverage(needle, haystack) {
+  const normalizedNeedle = normalizeText(needle);
+  const normalizedHaystack = normalizeText(haystack);
+  if (!normalizedNeedle) return 1;
+  if (normalizedHaystack.includes(normalizedNeedle)) return 1;
+  // MathML sometimes represents an italic word as adjacent one-letter <mi>
+  // nodes (for example r-i-s-e). Those letters are formatting noise for prose
+  // objective matching, while numbers remain meaningful.
+  const useful = (token) => token && (!/^\p{L}$/u.test(token) || /^\d$/u.test(token));
+  const needleTokens = new Set(normalizedNeedle.split(' ').filter(useful));
+  const haystackTokens = new Set(normalizedHaystack.split(' ').filter(useful));
+  let found = 0;
+  for (const token of needleTokens) if (haystackTokens.has(token)) found++;
+  return needleTokens.size ? found / needleTokens.size : 1;
+}
+
+function shingleCoverage(source, local, width = 5) {
+  const sourceTokens = normalizeText(source).split(' ').filter(Boolean);
+  const localTokens = normalizeText(local).split(' ').filter(Boolean);
+  if (sourceTokens.length < width) return phraseCoverage(source, local);
+  const sourceShingles = new Set();
+  const localShingles = new Set();
+  for (let index = 0; index <= sourceTokens.length - width; index++) {
+    sourceShingles.add(sourceTokens.slice(index, index + width).join(' '));
+  }
+  for (let index = 0; index <= localTokens.length - width; index++) {
+    localShingles.add(localTokens.slice(index, index + width).join(' '));
+  }
+  let found = 0;
+  for (const shingle of sourceShingles) if (localShingles.has(shingle)) found++;
+  return sourceShingles.size ? found / sourceShingles.size : 1;
+}
+
+function directText(node, childName) {
+  const child = firstElement(node, childName);
+  return child ? normalizeWhitespace(textContent(child)) : '';
+}
+
+export function normalizeWhitespace(value) {
+  return String(value || '').replace(/\s+/g, ' ').trim();
+}
+
+export function parseCollectionXml(xml) {
+  const document = parseXml(xml);
+  const collection = firstElement(document, 'collection');
+  if (!collection) throw new Error('collection XML has no <collection> root');
+  const metadata = firstElement(collection, 'metadata');
+  const content = firstElement(collection, 'content');
+  if (!metadata || !content) throw new Error('collection XML needs metadata and content');
+
+  const chapters = elementChildren(content, 'subcollection').map((subcollection, index) => {
+    const chapterContent = firstElement(subcollection, 'content');
+    const moduleIds = elementChildren(chapterContent, 'module').map((module) => module.attributes.document);
+    if (moduleIds.some((moduleId) => !moduleId)) {
+      throw new Error(`collection chapter ${index + 1} contains a module without a document id`);
+    }
+    return {
+      chapter: index + 1,
+      title: directText(subcollection, 'title'),
+      moduleIds,
+      introModuleId: moduleIds[0] || null,
+      sectionModuleIds: moduleIds.slice(1),
+    };
+  });
+
+  return {
+    title: directText(metadata, 'title'),
+    slug: directText(metadata, 'slug'),
+    uuid: directText(metadata, 'uuid'),
+    license: directText(metadata, 'license'),
+    chapters,
+  };
+}
+
+function isExcludedCoreSection(section) {
+  const className = section.attributes.class || '';
+  if (EXCLUDED_CORE_SECTION_CLASSES.has(className)) return true;
+  const title = normalizeText(directText(section, 'title'));
+  return title === 'self check'
+    || /^chapter(?: \d+)? review exercises$/.test(title)
+    || /^(?:chapter(?: \d+)? )?practice test$/.test(title);
+}
+
+function coreInstructionalSections(content) {
+  return elementChildren(content, 'section').filter((section) => !isExcludedCoreSection(section));
+}
+
+function countWithin(nodes, wantedName, options = {}) {
+  return nodes.reduce((count, node) => count + descendants(
+    node,
+    (candidate) => localName(candidate) === wantedName,
+    options,
+  ).length, 0);
+}
+
+function instructionalTextFromSections(sections) {
+  const strings = [];
+  const visit = (node) => {
+    if (typeof node === 'string') {
+      strings.push(node);
+      return;
+    }
+    if (localName(node) === 'note' && node.attributes.class === 'try') return;
+    for (const child of node.children || []) visit(child);
+  };
+  for (const section of sections) visit(section);
+  return normalizeWhitespace(strings.join(' '));
+}
+
+function mathMlText(node) {
+  if (typeof node === 'string') return node;
+  const name = localName(node);
+  const children = elementChildren(node);
+  if (name === 'mfrac' && children.length >= 2) {
+    return `(${mathMlText(children[0])})/(${mathMlText(children[1])})`;
+  }
+  if (name === 'msup' && children.length >= 2) {
+    return `(${mathMlText(children[0])})^(${mathMlText(children[1])})`;
+  }
+  if (name === 'msub' && children.length >= 2) {
+    return `(${mathMlText(children[0])})_(${mathMlText(children[1])})`;
+  }
+  if (name === 'msubsup' && children.length >= 3) {
+    return `(${mathMlText(children[0])})_(${mathMlText(children[1])})^(${mathMlText(children[2])})`;
+  }
+  if (name === 'msqrt') return `sqrt(${(node.children || []).map(mathMlText).join('')})`;
+  if (name === 'mroot' && children.length >= 2) {
+    return `root(${mathMlText(children[1])},${mathMlText(children[0])})`;
+  }
+  if (name === 'mfenced') {
+    return `${node.attributes.open || '('}${(node.children || []).map(mathMlText).join('')}${node.attributes.close || ')'}`;
+  }
+  if (['mi', 'mn', 'mo', 'mtext'].includes(name)) {
+    return (node.children || []).map(mathMlText).join('');
+  }
+  return (node.children || []).map(mathMlText).join('');
+}
+
+function semanticTextContent(node) {
+  if (typeof node === 'string') return node;
+  if (localName(node) === 'math') return mathMlText(node);
+  if (localName(node) === 'media' && node.attributes.alt) return node.attributes.alt;
+  return (node?.children || []).map(semanticTextContent).join(' ');
+}
+
+export function parseModuleXml(xml) {
+  const parsed = parseXml(xml);
+  const document = firstElement(parsed, 'document');
+  if (!document) throw new Error('CNXML has no <document> root');
+  const metadata = firstElement(document, 'metadata');
+  const content = firstElement(document, 'content');
+  if (!metadata || !content) throw new Error('CNXML needs metadata and content');
+  const abstract = firstElement(metadata, 'abstract');
+  const objectives = abstract
+    ? descendants(abstract, (node) => localName(node) === 'item').map((item) => normalizeWhitespace(textContent(item)))
+    : [];
+  const sections = coreInstructionalSections(content);
+  const tryNotes = sections.flatMap((section) => descendants(
+    section,
+    (node) => localName(node) === 'note' && node.attributes.class === 'try',
+  ));
+  const tries = tryNotes.map((note) => {
+    const problem = descendants(note, (node) => localName(node) === 'problem')[0];
+    const solution = descendants(note, (node) => localName(node) === 'solution')[0];
+    return {
+      id: note.attributes.id || '',
+      problem: normalizeWhitespace(semanticTextContent(problem || note)),
+      solution: normalizeWhitespace(semanticTextContent(solution || '')),
+      problemMath: problem
+        ? descendants(problem, (node) => localName(node) === 'math')
+          .map((math) => normalizeSemanticText(mathMlText(math)))
+        : [],
+      solutionMath: solution
+        ? descendants(solution, (node) => localName(node) === 'math')
+          .map((math) => normalizeSemanticText(mathMlText(math)))
+        : [],
+    };
+  });
+
+  return {
+    moduleId: directText(metadata, 'content-id'),
+    uuid: directText(metadata, 'uuid'),
+    title: directText(document, 'title'),
+    objectives,
+    coreHeadings: sections.map((section) => directText(section, 'title')).filter(Boolean),
+    instructionalText: instructionalTextFromSections(sections),
+    tries,
+    counts: {
+      examples: countWithin(sections, 'example'),
+      figures: countWithin(sections, 'figure'),
+      tables: countWithin(sections, 'table'),
+      terms: countWithin(sections, 'term'),
+      tries: tries.length,
+    },
+  };
+}
+
+export function parseFrontmatter(markdown) {
+  const match = markdown.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/);
+  if (!match) return { attributes: {}, body: markdown };
+  const attributes = {};
+  for (const line of match[1].split(/\r?\n/)) {
+    const field = line.match(/^([A-Za-z_][\w-]*):\s*(.*?)\s*$/);
+    if (!field) continue;
+    let value = field[2];
+    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+      value = value.slice(1, -1);
+    }
+    attributes[field[1]] = value;
+  }
+  return { attributes, body: markdown.slice(match[0].length) };
+}
+
+function shortcodeParams(source) {
+  const params = {};
+  for (const match of source.matchAll(/([\w-]+)="([^"]*)"/g)) params[match[1]] = match[2];
+  return params;
+}
+
+function localInteractions(body) {
+  const interactions = [];
+  for (const match of body.matchAll(/\{\{<\s*(fillin|multiplechoice|graphplot)\b([\s\S]*?)>\}\}/g)) {
+    const params = shortcodeParams(match[2]);
+    const question = params.question || '';
+    const answer = params.answerDisplay || params.answer || '';
+    interactions.push({
+      type: match[1],
+      question,
+      answer,
+      semanticQuestion: normalizeSemanticText(question),
+      semanticAnswer: normalizeSemanticText(answer),
+      questionMath: [...question.matchAll(/\$([^$]+)\$/g)].map((math) => normalizeSemanticText(math[1])),
+      answerMath: [...answer.matchAll(/\$([^$]+)\$/g)].map((math) => normalizeSemanticText(math[1])),
+    });
+  }
+  return interactions;
+}
+
+function markdownPlainText(markdown) {
+  return decodeXmlEntities(markdown
+    .replace(/```[\s\S]*?```/g, ' ')
+    .replace(/<svg\b[\s\S]*?<\/svg>/gi, ' ')
+    .replace(/<style\b[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<script\b[\s\S]*?<\/script>/gi, ' ')
+    .replace(/!\[([^\]]*)\]\([^)]+\)/g, ' $1 ')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, ' $1 ')
+    .replace(/\{\{<\/?[^>]+>\}\}/g, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\\(?:tfrac|frac|dfrac|cfrac)\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g, ' $1 over $2 ')
+    .replace(/\\text\{([^{}]*)\}/g, ' $1 ')
+    .replace(/\\[A-Za-z]+\*?/g, ' ')
+    .replace(/[`*_~#$|>{}\[\]()]/g, ' '));
+}
+
+export function parseLocalSection(markdown) {
+  const { attributes, body } = parseFrontmatter(markdown);
+  const headings = [...body.matchAll(/^#{2,6}\s+(.+?)\s*$/gm)]
+    .map((match) => markdownPlainText(match[1]).trim())
+    .filter(Boolean)
+    .filter((heading) => normalizeText(heading) !== 'key terms');
+  const interactions = localInteractions(body);
+  const plainText = normalizeWhitespace(markdownPlainText(body));
+  return {
+    title: attributes.title || '',
+    sourceSection: attributes.source_section || '',
+    headings,
+    interactions,
+    plainText,
+    semanticText: normalizeSemanticText(body.replace(/<svg\b[\s\S]*?<\/svg>/gi, ' ')),
+    counts: {
+      fillins: (body.match(/\{\{<\s*fillin\b/g) || []).length,
+      multipleChoice: (body.match(/\{\{<\s*multiplechoice\b/g) || []).length,
+      graphPlots: (body.match(/\{\{<\s*graphplot\b/g) || []).length,
+      inlineSvgs: (body.match(/<svg\b/g) || []).length,
+      markdownTables: (body.match(/^\|.*\|\s*$/gm) || []).length,
+    },
+  };
+}
+
+function walkMarkdownFiles(root) {
+  const files = [];
+  const visit = (directory) => {
+    for (const entry of readdirSync(directory, { withFileTypes: true })) {
+      const absolute = path.join(directory, entry.name);
+      if (entry.isDirectory()) visit(absolute);
+      else if (entry.isFile() && entry.name.endsWith('.md')) files.push(absolute);
+    }
+  };
+  visit(root);
+  return files.sort();
+}
+
+export function loadSourceLock(repositoryRoot) {
+  const lockPath = path.join(repositoryRoot, 'data/openstax/math-source-lock.json');
+  const lock = JSON.parse(readFileSync(lockPath, 'utf8'));
+  if (lock.schemaVersion !== 1 || !/^[0-9a-f]{40}$/.test(lock.commit || '')) {
+    throw new Error(`${path.relative(repositoryRoot, lockPath)} has an unsupported schema or invalid commit`);
+  }
+  return lock;
+}
+
+function loadCollections(sourceRoot, lock) {
+  const collections = {};
+  for (const [book, config] of Object.entries(lock.books)) {
+    const collectionPath = path.join(sourceRoot, config.collectionPath);
+    if (!existsSync(collectionPath)) throw new Error(`missing OpenStax collection: ${collectionPath}`);
+    const collection = parseCollectionXml(readFileSync(collectionPath, 'utf8'));
+    if (collection.slug !== config.sourceSlug) {
+      throw new Error(`${config.collectionPath} slug ${JSON.stringify(collection.slug)} does not match lock ${JSON.stringify(config.sourceSlug)}`);
+    }
+    collections[book] = collection;
+  }
+  return collections;
+}
+
+export function buildSourceMap(repositoryRoot, sourceRoot, lock = loadSourceLock(repositoryRoot)) {
+  const contentRoot = path.join(repositoryRoot, 'content/math');
+  const collections = loadCollections(sourceRoot, lock);
+  const entries = [];
+  const errors = [];
+  const chapterLocalCounts = new Map();
+
+  for (const absolutePath of walkMarkdownFiles(contentRoot)) {
+    const relativePath = path.relative(repositoryRoot, absolutePath).split(path.sep).join('/');
+    const relativeParts = relativePath.split('/');
+    const book = relativeParts[2];
+    if (!lock.books[book]) continue;
+    const markdown = readFileSync(absolutePath, 'utf8');
+    const local = parseLocalSection(markdown);
+    if (!local.sourceSection) continue;
+    const sectionMatch = local.sourceSection.match(/^(\d+)\.(\d+)$/);
+    if (!sectionMatch) {
+      errors.push(`${relativePath}: invalid source_section ${JSON.stringify(local.sourceSection)}`);
+      continue;
+    }
+    const chapterNumber = Number(sectionMatch[1]);
+    const sectionNumber = Number(sectionMatch[2]);
+    const chapter = collections[book].chapters[chapterNumber - 1];
+    if (!chapter) {
+      errors.push(`${relativePath}: upstream collection has no chapter ${chapterNumber}`);
+      continue;
+    }
+    const moduleId = chapter.sectionModuleIds[sectionNumber - 1];
+    if (!moduleId) {
+      errors.push(`${relativePath}: upstream chapter ${chapterNumber} has no section ${sectionNumber}`);
+      continue;
+    }
+    const modulePath = path.join(sourceRoot, 'modules', moduleId, 'index.cnxml');
+    if (!existsSync(modulePath)) {
+      errors.push(`${relativePath}: missing modules/${moduleId}/index.cnxml`);
+      continue;
+    }
+    const moduleXml = readFileSync(modulePath, 'utf8');
+    const module = parseModuleXml(moduleXml);
+    if (module.moduleId !== moduleId) {
+      errors.push(`${relativePath}: ${modulePath} identifies itself as ${module.moduleId}, expected ${moduleId}`);
+    }
+    entries.push({
+      localPath: relativePath,
+      book,
+      sourceSection: local.sourceSection,
+      moduleId,
+      sourceTitle: module.title,
+      moduleSha256: sha256(moduleXml),
+    });
+    const chapterKey = `${book}:${chapterNumber}`;
+    chapterLocalCounts.set(chapterKey, (chapterLocalCounts.get(chapterKey) || 0) + 1);
+  }
+
+  for (const [book, collection] of Object.entries(collections)) {
+    for (const chapter of collection.chapters) {
+      const localCount = chapterLocalCounts.get(`${book}:${chapter.chapter}`) || 0;
+      if (localCount !== chapter.sectionModuleIds.length) {
+        errors.push(
+          `${book} chapter ${chapter.chapter}: ${localCount} local numbered sections but ${chapter.sectionModuleIds.length} upstream section modules`,
+        );
+      }
+    }
+  }
+
+  entries.sort((left, right) => left.localPath.localeCompare(right.localPath));
+  const ids = new Set();
+  for (const entry of entries) {
+    if (ids.has(entry.moduleId)) errors.push(`duplicate upstream module mapping: ${entry.moduleId}`);
+    ids.add(entry.moduleId);
+  }
+
+  return {
+    map: {
+      schemaVersion: 1,
+      sourceLock: 'data/openstax/math-source-lock.json',
+      repository: lock.repository,
+      commit: lock.commit,
+      sections: entries,
+    },
+    errors,
+    collections,
+  };
+}
+
+export function verifyCommittedSourceMap(repositoryRoot, lock = loadSourceLock(repositoryRoot)) {
+  const mapPath = path.join(repositoryRoot, 'data/openstax/math-source-map.json');
+  if (!existsSync(mapPath)) return { errors: ['data/openstax/math-source-map.json is missing'], map: null };
+  const map = JSON.parse(readFileSync(mapPath, 'utf8'));
+  const errors = [];
+  if (map.schemaVersion !== 1) errors.push('source map schemaVersion must be 1');
+  if (map.commit !== lock.commit) errors.push(`source map commit ${map.commit} does not match lock ${lock.commit}`);
+  if (map.repository !== lock.repository) errors.push('source map repository does not match source lock');
+
+  const expected = new Map();
+  for (const absolutePath of walkMarkdownFiles(path.join(repositoryRoot, 'content/math'))) {
+    const relativePath = path.relative(repositoryRoot, absolutePath).split(path.sep).join('/');
+    const book = relativePath.split('/')[2];
+    if (!lock.books[book]) continue;
+    const local = parseLocalSection(readFileSync(absolutePath, 'utf8'));
+    if (local.sourceSection) expected.set(relativePath, { book, sourceSection: local.sourceSection, title: local.title });
+  }
+  const actual = new Map();
+  for (const entry of map.sections || []) {
+    if (actual.has(entry.localPath)) errors.push(`duplicate local path in source map: ${entry.localPath}`);
+    actual.set(entry.localPath, entry);
+    if (!/^[a-z]\d+$/i.test(entry.moduleId || '')) errors.push(`${entry.localPath}: invalid module id ${entry.moduleId}`);
+    if (!/^[0-9a-f]{64}$/.test(entry.moduleSha256 || '')) errors.push(`${entry.localPath}: invalid module SHA-256`);
+  }
+  for (const [localPath, section] of expected) {
+    const entry = actual.get(localPath);
+    if (!entry) {
+      errors.push(`${localPath}: missing from source map`);
+      continue;
+    }
+    if (entry.book !== section.book) errors.push(`${localPath}: mapped book ${entry.book} should be ${section.book}`);
+    if (entry.sourceSection !== section.sourceSection) {
+      errors.push(`${localPath}: mapped source section ${entry.sourceSection} should be ${section.sourceSection}`);
+    }
+    if (tokenSimilarity(section.title, entry.sourceTitle) < 0.45) {
+      errors.push(`${localPath}: local title and mapped source title are unexpectedly different`);
+    }
+  }
+  for (const localPath of actual.keys()) {
+    if (!expected.has(localPath)) errors.push(`${localPath}: stale source-map entry (no local numbered section)`);
+  }
+  const moduleIds = new Set();
+  for (const entry of actual.values()) {
+    if (moduleIds.has(entry.moduleId)) errors.push(`duplicate mapped module id: ${entry.moduleId}`);
+    moduleIds.add(entry.moduleId);
+  }
+
+  return { errors, map, expectedCount: expected.size, actualCount: actual.size };
+}
+
+function matchHeadings(sourceHeadings, localHeadings) {
+  return sourceHeadings.map((sourceHeading) => {
+    let best = { heading: '', score: 0 };
+    for (const localHeading of localHeadings) {
+      const score = tokenSimilarity(sourceHeading, localHeading);
+      if (score > best.score) best = { heading: localHeading, score };
+    }
+    return { sourceHeading, localHeading: best.heading, score: best.score };
+  });
+}
+
+function tryMatchScore(sourceProblem, localQuestion) {
+  const sourceTokens = new Set(significantTokens(sourceProblem));
+  const localTokens = new Set(significantTokens(markdownPlainText(localQuestion)));
+  if (!sourceTokens.size || !localTokens.size) return 0;
+  let intersection = 0;
+  for (const token of sourceTokens) if (localTokens.has(token)) intersection++;
+  const denominator = Math.min(sourceTokens.size, localTokens.size);
+  const containment = denominator ? intersection / denominator : 0;
+  const specificity = Math.min(1, intersection / 4);
+  return containment * specificity;
+}
+
+function matchTries(sourceTries, localInteractionsList) {
+  return sourceTries.map((sourceTry) => {
+    let best = { index: -1, question: '', score: 0 };
+    localInteractionsList.forEach((interaction, index) => {
+      const score = tryMatchScore(sourceTry.problem, interaction.question);
+      if (score > best.score) best = { index, question: interaction.question, score };
+    });
+    return { sourceTryId: sourceTry.id, sourceProblem: sourceTry.problem, ...best };
+  });
+}
+
+export function auditExistingMath(repositoryRoot, sourceRoot, lock = loadSourceLock(repositoryRoot)) {
+  const committed = verifyCommittedSourceMap(repositoryRoot, lock);
+  if (committed.errors.length) {
+    return { structuralErrors: committed.errors, sections: [], summary: null };
+  }
+  const current = buildSourceMap(repositoryRoot, sourceRoot, lock);
+  if (current.errors.length) {
+    return { structuralErrors: current.errors, sections: [], summary: null };
+  }
+  const baselineByPath = new Map(committed.map.sections.map((entry) => [entry.localPath, entry]));
+  const decisionsPath = path.join(repositoryRoot, 'data/openstax/math-reconciliation-decisions.json');
+  const decisions = existsSync(decisionsPath)
+    ? JSON.parse(readFileSync(decisionsPath, 'utf8'))
+    : { metadataDecisions: [] };
+  if (decisions.targetCommit && decisions.targetCommit !== lock.commit) {
+    return {
+      structuralErrors: [`reconciliation decisions target ${decisions.targetCommit} does not match source lock ${lock.commit}`],
+      sections: [],
+      summary: null,
+    };
+  }
+  const decisionsByPath = new Map();
+  for (const decision of decisions.metadataDecisions || []) {
+    const list = decisionsByPath.get(decision.localPath) || [];
+    list.push(decision);
+    decisionsByPath.set(decision.localPath, list);
+  }
+  const sections = [];
+
+  for (const entry of current.map.sections) {
+    const baseline = baselineByPath.get(entry.localPath);
+    const markdown = readFileSync(path.join(repositoryRoot, entry.localPath), 'utf8');
+    const local = parseLocalSection(markdown);
+    const moduleXml = readFileSync(path.join(sourceRoot, 'modules', entry.moduleId, 'index.cnxml'), 'utf8');
+    const source = parseModuleXml(moduleXml);
+    const titleScore = tokenSimilarity(source.title, local.title);
+    const objectiveMatches = source.objectives.map((objective) => ({
+      objective,
+      coverage: phraseCoverage(objective, local.plainText),
+    }));
+    const headingMatches = matchHeadings(source.coreHeadings, local.headings);
+    const tryMatches = matchTries(source.tries, local.interactions);
+    const detectedFlags = [];
+
+    if (!baseline) detectedFlags.push('missing-baseline');
+    else {
+      if (baseline.moduleId !== entry.moduleId) detectedFlags.push('upstream-module-remapped');
+      if (baseline.moduleSha256 !== entry.moduleSha256) detectedFlags.push('upstream-module-changed');
+    }
+    if (titleScore < 0.75) detectedFlags.push('title-needs-review');
+    if (objectiveMatches.some((match) => match.coverage < 0.82)) detectedFlags.push('objective-needs-review');
+    if (headingMatches.some((match) => match.score < 0.60)) detectedFlags.push('heading-needs-review');
+    const adjudications = (decisionsByPath.get(entry.localPath) || []).filter((decision) => {
+      if (decision.moduleId !== entry.moduleId) return false;
+      return (decision.covers || []).some((flag) => detectedFlags.includes(flag));
+    });
+    const coveredFlags = new Set(adjudications.flatMap((decision) => decision.covers || []));
+    const reviewFlags = detectedFlags.filter((flag) => !coveredFlags.has(flag));
+
+    sections.push({
+      ...entry,
+      localTitle: local.title,
+      titleScore,
+      objectives: {
+        matched: objectiveMatches.filter((match) => match.coverage >= 0.82).length,
+        total: objectiveMatches.length,
+        details: objectiveMatches,
+      },
+      headings: {
+        matched: headingMatches.filter((match) => match.score >= 0.60).length,
+        total: headingMatches.length,
+        details: headingMatches,
+      },
+      proseTraceability: shingleCoverage(source.instructionalText, local.plainText),
+      sourceCounts: source.counts,
+      localCounts: {
+        ...local.counts,
+        interactions: local.interactions.length,
+      },
+      tryMatches: {
+        likely: tryMatches.filter((match) => match.score >= 0.55).length,
+        total: tryMatches.length,
+        details: tryMatches,
+      },
+      detectedFlags,
+      adjudications,
+      reviewFlags,
+      status: reviewFlags.length
+        ? 'needs-review'
+        : detectedFlags.length
+          ? 'adaptation-adjudicated'
+          : 'metadata-matched',
+    });
+  }
+
+  const summary = {
+    sections: sections.length,
+    metadataMatched: sections.filter((section) => section.status === 'metadata-matched').length,
+    adaptationsAdjudicated: sections.filter((section) => section.status === 'adaptation-adjudicated').length,
+    needsReview: sections.filter((section) => section.status === 'needs-review').length,
+    changedUpstream: sections.filter((section) => section.reviewFlags.includes('upstream-module-changed')).length,
+    mappedBooks: Object.keys(lock.books).length,
+    objectivesMatched: sections.reduce((sum, section) => sum + section.objectives.matched, 0),
+    objectivesTotal: sections.reduce((sum, section) => sum + section.objectives.total, 0),
+    headingsMatched: sections.reduce((sum, section) => sum + section.headings.matched, 0),
+    headingsTotal: sections.reduce((sum, section) => sum + section.headings.total, 0),
+    sourceTriesLikelyMatched: sections.reduce((sum, section) => sum + section.tryMatches.likely, 0),
+    sourceTriesTotal: sections.reduce((sum, section) => sum + section.tryMatches.total, 0),
+    localInteractions: sections.reduce((sum, section) => sum + section.localCounts.interactions, 0),
+  };
+
+  return { structuralErrors: [], sections, summary };
+}

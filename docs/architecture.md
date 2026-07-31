@@ -29,6 +29,21 @@ pages containing an interactive GraphPlot.
 There is no account system, application server, analytics pipeline,
 advertising, or learner-data store.
 
+## OpenStax source provenance
+
+The completed Prealgebra 2e, Elementary Algebra 2e, and Intermediate Algebra
+2e books remain reviewed Markdown, not generated output. A committed lock and
+201-section map under `data/openstax/` connect each page to a stable CNXML
+module in the official OpenStax source repository. The upstream checkout is a
+sparse, ignored cache under `sources/openstax/`.
+
+`npm run source:verify` validates the committed mapping without network
+access. After `npm run source:fetch`, `npm run source:check` performs a
+report-only comparison and `npm run source:history` distinguishes inferred
+PDF-era content from later upstream changes. None of these commands writes to
+`content/`; upstream changes require explicit review and the normal content
+verification gates. See `docs/openstax-source-workflow.md`.
+
 ## Search
 
 Pagefind 1.5.2 builds one global index from the completed `public/` tree.
@@ -37,10 +52,12 @@ that the generated bundle loads and that representative content is indexed.
 
 ## Verification
 
-`npm test` is the repository-wide source gate. It runs unit tests, validates
-the complete content hierarchy and frontmatter, verifies every authored page
-through the real answer grader and KaTeX, checks shortcode and graph
-configuration, and enforces the current documentation and authoring rules.
+`npm test` is the repository-wide checked-source gate. It runs unit tests,
+validates the complete content hierarchy and frontmatter, verifies every
+authored page through the real answer grader and KaTeX, checks shortcode and
+graph configuration, and enforces the current documentation and authoring
+rules. It also verifies the committed OpenStax map's integrity offline; it
+does not fetch upstream or run `source:check` or `source:history`.
 
 `npm run build` creates a clean Hugo production build and the Pagefind index.
 `npm run check:build` then verifies routes, internal links, search coverage,

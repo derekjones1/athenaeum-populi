@@ -13,6 +13,10 @@ no hints.**
 Read and follow `docs/authoring-playbook.md` first. Its source-fidelity,
 component, math, image, verification, and handoff rules all apply here.
 
+Like the authoring playbook, this playbook currently governs the OpenStax
+mathematics books; adapt both together, with a reviewed subject playbook,
+before building cumulative assessments for an image-dependent subject.
+
 ## Placement
 
 - File: `content/<subject>/<book>/knowledge-check-XX-YY.md` (book level, next to
@@ -60,19 +64,20 @@ component, math, image, verification, and handoff rules all apply here.
 
 Build a ledger before authoring. For every selected item record:
 
-- chapter and section;
-- Practice Test or Review Exercise number;
+- source module ID plus exercise, problem, and solution element IDs;
+- chapter and section, plus the printed Practice Test or Review Exercise
+  number;
 - visually inspected question page and Answer Key page;
-- exact printed prompt and official answer;
+- exact CNXML and printed prompts, plus the official answer;
 - independently computed answer;
 - chosen component and any unavoidable response-mode adaptation.
 
-Render the question and Answer Key pages from the PDF and inspect them
-visually. Text extraction is a locator only: it routinely drops mathematical
-notation, graph context, and part boundaries. Transcribe the prompt and key
-before solving it independently. If the printed prompt, official key, and
-calculation disagree, stop and document the discrepancy; do not silently
-change one to fit another.
+For a mapped OpenStax book, inspect the pinned CNXML module as the semantic
+source, then render the question and Answer Key pages from the PDF and inspect
+them visually. The PDF remains the edition and visual evidence for notation,
+graphs, part boundaries, and answer context. Solve the item independently. If
+the CNXML, printed prompt, official key, and calculation disagree, stop and
+document the discrepancy; do not silently change one to fit another.
 
 ## Verify
 

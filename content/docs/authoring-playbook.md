@@ -15,6 +15,17 @@ This playbook describes the repository's current Hugo architecture. Content is
 plain Markdown with Hugo shortcodes; React, JSX, MDX, and Nextra metadata are
 not valid authoring syntax.
 
+## Scope
+
+This playbook currently governs the OpenStax mathematics books (Prealgebra 2e,
+Elementary Algebra 2e, Intermediate Algebra 2e). Its structural, source-first,
+component, and verification rules are written to generalize to future
+subjects. Its mathematical-notation rules and the prohibition on file-backed
+instructional images are math-specific decisions: an image-dependent subject
+such as Biology will need a reviewed subject playbook derived from this one,
+with a deliberate media pipeline, image-accessibility policy, and matching
+lints before any authoring starts.
+
 ## 0. Source-first workflow (required for AI agents)
 
 Automated checks can prove that syntax renders and an authored answer grades
@@ -25,21 +36,29 @@ Before writing:
 
 1. Read `AGENTS.md`, this playbook, and—when applicable—the Knowledge Check
    playbook. Inspect `git status` and preserve unrelated work.
-2. Use the local source PDF as the content authority. Render and visually read
-   the relevant section pages and Answer Key pages. Extracted text or the web
-   edition may help locate prose, but neither is authoritative for formulas,
-   diagrams, part labels, or answer context.
-3. Keep a source ledger in working notes: PDF page range, source section,
-   every retained exercise number, its official answer location, and the
-   component used. Record any response-mode adaptation or source discrepancy.
+2. For an OpenStax math book listed in
+   `data/openstax/math-source-lock.json`, follow
+   `docs/openstax-source-workflow.md`: use the pinned CNXML as the
+   semantic/transcription authority and render the corresponding local PDF as
+   edition evidence and the visual authority. Numbered sections resolve to
+   modules through `data/openstax/math-source-map.json`; current upstream
+   `main` is only an update candidate. For a source not covered by the lock,
+   use the local source PDF as the content authority.
+3. Keep a source ledger in working notes. For locked OpenStax material, record
+   the module ID; IDs for retained or adapted exercises, problems, and
+   solutions; and IDs for any disputed source elements. Also record the PDF
+   page range, source section and exercise number, official answer location,
+   component used, and any response-mode adaptation.
 4. Preserve the source's objectives, exposition, definitions, procedures,
    examples, and mathematics. Omit only material explicitly allowed by the
    request/playbook. Never silently invent, condense, or “repair” source
-   content; flag a suspected source error and show the evidence.
+   content. If the CNXML, PDF, official answer, and independent calculation
+   disagree, stop and record the discrepancy with the evidence before choosing
+   a reviewed resolution.
 5. For chapter-sized work, divide by section. Each worker must read the same
-   playbook, inspect its own PDF pages, run its section verifier, and return its
-   source ledger. The parent reconciles every section and runs the book-wide
-   gates.
+   playbook, inspect its own source module and PDF pages, run its section
+   verifier, and return its source ledger. The parent reconciles every section
+   and runs the book-wide gates.
 
 Existing sections authored before July 22, 2026 whose attribution footer
 explicitly discloses light condensation are grandfathered. Do not rewrite them
@@ -252,9 +271,9 @@ valid accessible SVG can still be mathematically wrong.
 
 From the repository root:
 
-1. Reconcile the finished page against the source ledger and PDF images:
-   objectives, examples, math, figures, retained exercises, and official
-   answers must all match.
+1. Reconcile the finished page against the pinned CNXML, source ledger, and PDF
+   images: objectives, examples, math, figures, retained exercises, and
+   official answers must all match or have an explicit reviewed decision.
 2. Independently solve every touched interactive question and compare both the
    prompt and answer with the source Answer Key. Do not infer correctness from
    self-grading.
@@ -277,7 +296,7 @@ From the repository root:
 
 ## Done checklist
 
-- [ ] PDF section and Answer Key pages visually inspected; source ledger complete.
+- [ ] Pinned CNXML and PDF/Answer Key pages inspected; source ledger complete.
 - [ ] Source fidelity reconciled; any discrepancy/adaptation explicitly recorded.
 - [ ] Frontmatter complete (`title`, `description`, `source_section`, `weight`).
 - [ ] Chapter landing uses descriptive `**Title** — summary` section bullets.

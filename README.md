@@ -14,9 +14,9 @@ npx playwright install chromium # one-time browser install for accessibility tes
 npm run serve
 ```
 
-Open <http://localhost:1313>. npm is only the dependency/test runner for the
-interactive grader, MathLive, KaTeX validation, and the global Pagefind index;
-Hugo builds and serves the site.
+Open <http://localhost:1313>. npm supplies the browser dependencies and fronts
+verification, source-reconciliation, and Pagefind commands; Hugo builds and
+serves the site.
 
 ## Verification
 
@@ -37,6 +37,13 @@ Follow [docs/authoring-playbook.md](docs/authoring-playbook.md) for sections and
 [docs/knowledge-check-playbook.md](docs/knowledge-check-playbook.md) for
 cumulative knowledge checks. Content lives under `content/` in the hierarchy
 Subject → Book → Chapter → Section.
+
+The completed OpenStax math books also have a pinned, report-only source
+reconciliation workflow. See
+[docs/openstax-source-workflow.md](docs/openstax-source-workflow.md) before
+changing those books. `npm run source:verify` checks the committed 201-section
+map offline; after `npm run source:fetch`, `npm run source:check` audits the
+local pages without rewriting them.
 
 The active build, browser, search, verification, and deployment design is
 summarized in [docs/architecture.md](docs/architecture.md).

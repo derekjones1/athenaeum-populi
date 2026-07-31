@@ -3,7 +3,9 @@
 The Hugo migration is complete; this repository is the production
 architecture. For content work, follow `docs/authoring-playbook.md`; for
 knowledge checks, also follow `docs/knowledge-check-playbook.md`. See
-`docs/architecture.md` for the current build and deployment design.
+`docs/architecture.md` for the current build and deployment design. For the
+completed OpenStax math books, also follow
+`docs/openstax-source-workflow.md`.
 
 ## Stack and constraints
 
@@ -19,6 +21,10 @@ knowledge checks, also follow `docs/knowledge-check-playbook.md`. See
   every gate before its production deploy job. Do not create staging Workers.
 - Preserve accessibility, open-license attribution, stable published URLs,
   and the 20,000-file artifact ceiling.
+- For books covered by the OpenStax source lock, treat pinned CNXML as the
+  semantic/transcription source, the local PDF as edition and visual evidence,
+  and current upstream `main` as a review candidate. Never synchronize upstream
+  changes into `content/` automatically.
 
 ## Commands
 
@@ -27,6 +33,10 @@ knowledge checks, also follow `docs/knowledge-check-playbook.md`. See
 - `npm run build` — clean production build plus global Pagefind
 - `npm run check:build` — route, link, search, and file-count gates
 - `npm run ci` — complete local equivalent of CI
+- `npm run source:fetch` — fetch the ignored, sparse OpenStax source checkout
+- `npm run source:verify` — verify the committed 201-section map offline
+- `npm run source:check` — report-only comparison against pinned CNXML
+- `npm run source:history` — review changes since the inferred PDF-era commits
 
 Do not commit unless the user explicitly asks. Preserve unrelated worktree
 changes.

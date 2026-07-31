@@ -39,11 +39,17 @@ assert.match(authoring, /before July 22, 2026[\s\S]*grandfathered/);
 const knowledgeChecks = read('docs/knowledge-check-playbook.md');
 assert.match(knowledgeChecks, /must not overlap/);
 assert.match(knowledgeChecks, /filename, title,\s+`source_chapters`/);
+assert.match(knowledgeChecks, /exercise, problem, and solution element IDs/);
+
+const openStaxWorkflow = read('docs/openstax-source-workflow.md');
+assert.match(openStaxWorkflow, /report-only connection/);
+assert.match(openStaxWorkflow, /all 201 numbered sections map deterministically/);
+assert.match(openStaxWorkflow, /does not by itself\s+prove every local equation/);
 
 const architecture = read('docs/architecture.md');
 assert.match(architecture, /Pagefind 1\.5\.2 builds one global index/);
 assert.match(architecture, /loaded when a page containing a fill-in exercise initializes/);
-assert.match(architecture, /`npm test` is the repository-wide source gate/);
+assert.match(architecture, /`npm test` is the repository-wide checked-source gate/);
 
 const promotionChecklist = read('docs/main-branch-promotion-checklist.md');
 assert.match(promotionChecklist, /Hugo extended 0\.164\.0/);
@@ -64,5 +70,6 @@ const packageJson = JSON.parse(read('package.json'));
 assert.equal(packageJson.devDependencies.pagefind, '1.5.2');
 assert.match(packageJson.scripts.test, /verify:content/);
 assert.match(packageJson.scripts.test, /lint/);
+assert.equal(packageJson.scripts['source:verify'], 'node tools/openstax-source.mjs verify-map');
 
 console.log('documentation: published playbooks match the canonical Hugo guidance');

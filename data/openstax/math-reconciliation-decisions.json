@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "targetCommit": "38cae454e644abf9f0a623e876994553881597c9",
+  "metadataDecisions": [
+    {
+      "localPath": "content/math/elementary-algebra/04-graphs/04-understand-slope-of-a-line.md",
+      "moduleId": "m82483",
+      "covers": [
+        "objective-needs-review",
+        "heading-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Use geoboards to model slope"
+      ],
+      "rationale": "The attribution footer explicitly discloses that the geoboard activity was condensed into one accessible worked introduction to rise and run. The retained page still teaches the underlying objective."
+    },
+    {
+      "localPath": "content/math/elementary-algebra/07-factoring/04-factor-special-products.md",
+      "moduleId": "m82528",
+      "covers": [
+        "objective-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Choose method to factor a polynomial completely"
+      ],
+      "rationale": "OpenStax lists this fourth objective but has no corresponding fourth instructional section heading. The local page repeatedly asks learners to factor completely while retaining all three source method sections."
+    },
+    {
+      "localPath": "content/math/prealgebra/02-the-language-of-algebra/03-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md",
+      "moduleId": "m81271",
+      "covers": [
+        "heading-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Model the Subtraction Property of Equality"
+      ],
+      "rationale": "The attribution footer explicitly discloses replacement of the envelope-and-counters manipulative figures with a direct statement of the Subtraction Property."
+    },
+    {
+      "localPath": "content/math/prealgebra/03-integers/02-add-integers.md",
+      "moduleId": "m81276",
+      "covers": [
+        "heading-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Translate Word Phrases to Algebraic Expressions",
+        "Add Integers in Applications"
+      ],
+      "rationale": "The local page combines the two closely related source headings into one translated-phrases-and-applications section, consistent with its disclosed prose condensation."
+    },
+    {
+      "localPath": "content/math/prealgebra/09-math-models-and-geometry/06-solve-geometry-applications-volume-and-surface-area.md",
+      "moduleId": "m81328",
+      "covers": [
+        "heading-needs-review"
+      ],
+      "status": "omitted-approved",
+      "sourceItems": [
+        "Summary of Geometry Formulas"
+      ],
+      "rationale": "The attribution footer explicitly discloses omission of the end-of-chapter formula summary because every formula is retained where it is introduced."
+    }
+  ],
+  "upstreamDriftDecisions": [
+    {
+      "localPath": "content/math/elementary-algebra/01-foundations/02-use-the-language-of-algebra.md",
+      "moduleId": "m82453",
+      "sourceElementIds": [
+        "fs-id1170655121545",
+        "fs-id1170655120589",
+        "fs-id1170655162128"
+      ],
+      "status": "retain-local-equivalent",
+      "rationale": "Current upstream swaps which rectangle dimension is six less than the other. The local PDF-era version is mathematically equivalent and internally consistent; the current upstream summary table still describes the older orientation."
+    },
+    {
+      "localPath": "content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/07-solve-linear-inequalities.md",
+      "moduleId": "m82470",
+      "sourceElementIds": [
+        "fs-id1168345426388",
+        "fs-id1168345440730",
+        "fs-id1168341917017",
+        "fs-id1168345667902"
+      ],
+      "status": "retain-local-upstream-inconsistent",
+      "rationale": "Current upstream changes the right side from negative three-fifths to positive three-fifths but leaves a solution graphic saying contradiction/no solution. Positive three-fifths makes the inequality an identity. The local negative-three-fifths prompt and contradiction answer are mathematically correct and match the PDF-era source."
+    },
+    {
+      "localPath": "content/math/intermediate-algebra/01-foundations/01-use-the-language-of-algebra.md",
+      "moduleId": "m81422",
+      "sourceElementIds": [
+        "fs-id1167836606933",
+        "fs-id1167836606939",
+        "fs-id1167836606950"
+      ],
+      "status": "retain-local-equivalent",
+      "rationale": "Current upstream swaps which rectangle dimension is fourteen less than the other. The local PDF-era version is mathematically equivalent and internally consistent; the current upstream summary remains phrased for the older orientation."
+    }
+  ]
+}

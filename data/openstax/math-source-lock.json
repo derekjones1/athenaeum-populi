@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/openstax/osbooks-prealgebra-bundle",
+  "gitUrl": "https://github.com/openstax/osbooks-prealgebra-bundle.git",
+  "branch": "main",
+  "commit": "38cae454e644abf9f0a623e876994553881597c9",
+  "commitDate": "2026-06-29T23:52:34Z",
+  "license": {
+    "name": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
+    "spdx": "CC-BY-NC-SA-4.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  },
+  "books": {
+    "prealgebra": {
+      "sourceSlug": "prealgebra-2e",
+      "collectionId": "col30939",
+      "collectionPath": "collections/prealgebra-2e.collection.xml",
+      "authoredBaselineCommit": "d2cea8f95118f0eb436d4406a8fc8a8e0e00e8c8",
+      "authoredBaselineConfidence": "inferred-from-local-pdf-metadata"
+    },
+    "elementary-algebra": {
+      "sourceSlug": "elementary-algebra-2e",
+      "collectionId": "col31130",
+      "collectionPath": "collections/elementary-algebra-2e.collection.xml",
+      "authoredBaselineCommit": "d2cea8f95118f0eb436d4406a8fc8a8e0e00e8c8",
+      "authoredBaselineConfidence": "inferred-from-local-pdf-metadata"
+    },
+    "intermediate-algebra": {
+      "sourceSlug": "intermediate-algebra-2e",
+      "collectionId": "col31234",
+      "collectionPath": "collections/intermediate-algebra-2e.collection.xml",
+      "authoredBaselineCommit": "c1bbed4b86ff5c80686d339a6ca5e4e48fae2483",
+      "authoredBaselineConfidence": "inferred-from-local-pdf-metadata"
+    }
+  }
+}
