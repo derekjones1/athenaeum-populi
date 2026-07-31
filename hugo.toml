@@ -44,6 +44,11 @@ disableKinds = ["taxonomy", "term"]
 
 # --- Params -----------------------------------------------------------------
 [params]
+  # Let the documentation rails use the viewport edges. The article itself
+  # keeps Hextra's readable max-width inside the space between the two rails.
+  [params.page]
+    width = "full"
+
   [params.math]
     engine = "katex"       # Build-time KaTeX renderer; do not switch to MathJax.
     # CRITICAL: the build-time path (transform.ToMath) is rendered by the KaTeX

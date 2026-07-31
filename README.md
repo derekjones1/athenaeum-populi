@@ -10,6 +10,7 @@ Requirements: Hugo extended 0.164.0, Node.js 22, and npm.
 
 ```sh
 npm ci
+npx playwright install chromium # one-time browser install for accessibility tests
 npm run serve
 ```
 
@@ -23,6 +24,7 @@ Hugo builds and serves the site.
 npm test              # grader, graph, content, and math checks
 npm run build         # clean Hugo production build + global Pagefind index
 npm run check:build   # routes, links, search coverage, and artifact audit
+npm run test:a11y     # axe WCAG checks in Chromium, light and dark themes
 npm run ci            # all of the above
 ```
 

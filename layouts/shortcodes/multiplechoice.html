@@ -28,7 +28,8 @@
         {{- range (split (trim .Inner "\n") "\n") -}}
           {{- $opt := trim . " " -}}
           {{- with $opt -}}
-            <button type="button" class="ap-mc-option" data-value="{{ . }}">{{ partial "mathtext" . }}</button>
+            {{- $optionLabel := replace . "$" "" -}}
+            <button type="button" class="ap-mc-option" data-value="{{ . }}" aria-label="Answer choice: {{ $optionLabel }}">{{ partial "mathtext" . }}</button>
           {{- end -}}
         {{- end -}}
       {{- end -}}

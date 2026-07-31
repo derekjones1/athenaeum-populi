@@ -11,7 +11,8 @@
     "check:search": "node tools/check-pagefind.mjs",
     "audit:build": "node tools/audit-build.mjs",
     "check:build": "npm run check:routes && npm run check:links && npm run check:search && npm run audit:build",
-    "ci": "npm test && npm run build && npm run check:build",
+    "test:a11y": "playwright test tests/accessibility.spec.mjs",
+    "ci": "npm test && npm run build && npm run check:build && npm run test:a11y",
     "preview": "npm run build:hugo && pagefind --site public --root-selector 'main#content' --exclude-selectors '.katex-mathml,svg,template' --serve",
     "serve": "hugo server --cacheDir \"$(pwd)/.hugo_cache\"",
     "test": "node --test && npm run validate && npm run verify:content && npm run lint",
@@ -30,6 +31,8 @@
     "mathlive": "0.110.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.11.1",
+    "@playwright/test": "1.58.2",
     "pagefind": "1.5.2"
   }
 }

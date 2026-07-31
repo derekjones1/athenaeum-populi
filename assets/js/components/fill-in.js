@@ -69,7 +69,16 @@ class FillInElement extends HTMLElement {
 
     const field = document.createElement('math-field');
     field.className = 'ap-fillin-field';
-    field.setAttribute('aria-label', this.dataset.questionPlain || 'Your answer');
+    const fieldLabel = this.dataset.questionPlain || 'Your answer';
+    field.setAttribute('aria-label', fieldLabel);
+    // MathLive focuses a separate textbox inside its shadow root. Label that
+    // sink when MathLive mounts so it has the same accessible name as the host.
+    // Keep this listener for reconnects because MathLive can rebuild the sink.
+    field.addEventListener('mount', () => {
+      field.shadowRoot
+        ?.querySelector('[part~="keyboard-sink"]')
+        ?.setAttribute('aria-label', field.getAttribute('aria-label') || fieldLabel);
+    });
     // MathLive reads the placeholder as LaTeX \text{...}.
     field.setAttribute('placeholder', `\\text{${this.placeholder}}`);
     this.field = field;

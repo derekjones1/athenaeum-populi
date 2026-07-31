@@ -36,6 +36,20 @@
   line-height: 1.7;
 }
 
+/* Keep wide display equations inside the article instead of letting their
+   intrinsic KaTeX width paint over the right-hand table of contents. */
+.content .katex-display {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-inline: contain;
+}
+
+.content .katex-display > .katex {
+  width: max-content;
+  min-width: 100%;
+}
+
 /* Never let KaTeX inline math wrap mid-equation inside a table cell. */
 td .katex,
 th .katex {
@@ -77,6 +91,24 @@ th .katex {
   border: 1px solid var(--ap-border, #d6d3cd);
   border-radius: 6px;
 }
+math-field.ap-fillin-field::part(placeholder) {
+  color: #6f6e69;
+}
+.dark math-field.ap-fillin-field::part(placeholder) {
+  color: #b0afa6;
+}
+
+/* Hextra's primary-600 and gray-500 tones are too subdued on its #111 dark
+   surfaces at normal text sizes. Keep interactive text above WCAG AA. */
+.dark .content :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)),
+.dark .hextra-sidebar-active-item {
+  color: #60a5fa;
+}
+
+.dark .hextra-search-wrapper kbd {
+  color: #9ca3af;
+}
+
 .ap-fillin-check {
   font: inherit;
   font-size: 15px;

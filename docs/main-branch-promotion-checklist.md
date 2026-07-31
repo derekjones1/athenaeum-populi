@@ -16,6 +16,7 @@ equivalent:
 
 ```sh
 npm ci
+npx playwright install chromium
 npm run ci
 ```
 
@@ -24,7 +25,9 @@ npm run ci
 - unit, content-structure, authoring, math-rendering, and real-grader checks;
 - a clean Hugo production build;
 - the global Pagefind index;
-- route-parity, internal-link, search-coverage, and artifact audits.
+- route-parity, internal-link, search-coverage, and artifact audits;
+- axe browser scans of representative pages in light and dark themes, with
+  serious or critical WCAG violations blocking promotion.
 
 Review `git status --short` and the diff before publishing a branch. Do not
 commit `node_modules/`, `public/`, `.hugo_cache/`, `resources/_gen/`, source
@@ -53,7 +56,8 @@ workflow uses:
 - Node.js 22;
 - Hugo extended 0.164.0;
 - the lockfile-pinned dependencies, including Pagefind 1.5.2;
-- the same `npm test`, build, and post-build checks used locally.
+- a lockfile-matched Chromium installed by Playwright;
+- the same `npm test`, build, post-build, and axe checks used locally.
 
 The production deploy job must be skipped for pull-request events. Resolve all
 verification failures before merging; do not use a manual deployment to work

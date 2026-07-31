@@ -44,8 +44,10 @@ configuration, and enforces the current documentation and authoring rules.
 
 `npm run build` creates a clean Hugo production build and the Pagefind index.
 `npm run check:build` then verifies routes, internal links, search coverage,
-generated assets, and the 20,000-file ceiling. `npm run ci` combines both
-source and built-artifact gates.
+generated assets, and the 20,000-file ceiling. `npm run test:a11y` runs
+axe-core in Chromium against representative pages in light and dark themes,
+failing on serious or critical WCAG violations. `npm run ci` combines the
+source, built-artifact, and browser-accessibility gates.
 
 ## Deployment
 

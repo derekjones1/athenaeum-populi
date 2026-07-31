@@ -7,6 +7,8 @@
 
 # Node (esbuild/katex/mathlive/pagefind land here when installed)
 /node_modules/
+/playwright-report/
+/test-results/
 .env*
 
 # Pagefind index (generated at build time)
