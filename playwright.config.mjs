@@ -31,11 +31,17 @@ export default defineConfig({
       ? { executablePath: chromiumExecutablePath }
       : undefined,
   },
+  // `channel: 'chrome'` drives the Chrome already installed on the machine, so
+  // `npm run ci` never needs `npx playwright install` — the bundled-browser
+  // download is unreliable here and its absence otherwise fails every test at
+  // launch. PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH above still overrides this when
+  // a specific binary is required.
   projects: [
     {
       name: 'chromium-light',
       use: {
         ...devices['Desktop Chrome'],
+        channel: 'chrome',
         colorScheme: 'light',
       },
     },
@@ -43,6 +49,7 @@ export default defineConfig({
       name: 'chromium-dark',
       use: {
         ...devices['Desktop Chrome'],
+        channel: 'chrome',
         colorScheme: 'dark',
       },
     },
