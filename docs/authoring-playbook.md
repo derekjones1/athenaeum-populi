@@ -113,7 +113,11 @@ The content lint enforces the descriptive bullet shape.
 
 - **Math:** KaTeX — `$...$` inline, `$$...$$` display (multi-line `$$` fenced on
   their own lines). Group digits with `{,}`: `$37{,}519{,}248$`. Plain prose
-  numbers need no `$`. A literal dollar sign (money) is `\$`.
+  numbers need no `$`. A literal dollar sign (money) is `\$`, and it only
+  works in prose or inside a `$$…$$` block — inside inline `$…$` Hugo's
+  passthrough ends the run at the escaped dollar and hands KaTeX a truncated
+  expression. Write money amounts outside the inline math (`\$10{,}000`), or
+  name the unit in the surrounding sentence.
 - **Fractions: `\tfrac` everywhere** — inline, in **Check:** sentences, and
   inside `$$` arrays. `\dfrac` is banned and plain `\frac` inside an array
   renders too tall; the lint enforces both. Nested fractions use `\cfrac` in a
@@ -250,6 +254,58 @@ The accepted JSON properties map to the `buildGraph`, `buildNumberLine`, and
 `buildFigure` helpers in `assets/js/lib/graph-core.mjs`. Every figure MUST
 carry an `ariaLabel`.
 
+**Draw known shapes with their analytic primitive, never a spline
+approximation.** `buildGraph` has exact primitives: `lines`, `quadratics`
+(including `sideways`), `cubics`, `polynomials` (a `coeffs` array
+$[a_0,a_1,\dots]$ for any degree, so a fitted quartic or quintic renders
+from its exact formula), `rationals` (a `num`/`den` coefficient pair, whose
+branches split at each pole on their own), `circles` (a real SVG ellipse),
+`polylines`
+(straight joins — required for corners such as $y=\lvert x\rvert$), and
+`curves` with kinds `sqrt`, `cbrt`, `reciprocal`, `reciprocal-squared`,
+`sine`, `exp`, and `log` (each accepts `a`, `h`, `k` for $a\,f(x-h)+k$;
+`sine` adds `b` and draws $k+a\sin\bigl(b(x-h)\bigr)$, while `exp` and `log`
+take `b` as the base and draw $k+a\,b^{x-h}$ and $k+a\log_b(x-h)$). Quadratics, cubics, polynomials, and
+curves accept `from`/`to` to trim the drawn domain, e.g. to end a curve with
+an arrow mid-grid the way source art does. Match the source's arrow
+conventions: no arrowhead where a domain actually ends (the origin of
+$\sqrt{x}$), and helper/test lines (`lines` entries used as guides) usually
+render plain in the PDF — pass `arrows: false` on them. `segments` take
+`arrows` too, for the labelled "Domain"/"Range" extent rays drawn beside a
+graph.
+
+When a graph's window never reaches the origin — a year axis, a dollar axis —
+`tickLabels` still labels both axes along the drawn edges. Turn digit
+grouping off per axis with `xTickGrouping: false` so a year reads 1975 rather
+than 1,975.
+
+`buildNumberLine` draws a single boundary with `marker` + `shade`, and any
+compound set — $(-\infty,2)\cup(2,\infty)$, $[1,3]\cup(5,\infty)$ — with
+`intervals`: one entry per heavy stretch, each `{ from?, to?, fromType?,
+toType? }`. Omit `from` or `to` to run that end to the arrow, and mark
+excluded endpoints `'open'` so they render hollow.
+
+**A "generic" source curve is still a function: fit a formula, then render
+the formula.** When the source shows a freeform-looking curve (a wavy
+vertical-line-test graph, a smooth curve through labeled points), model it
+with an explicit analytic function — fit a cubic through the labeled points
+and stated extrema, or use a `sine` curve for a wave — and record the fitted
+formula in the source ledger. Do not trace it with `smoothCurves`: its
+shape-preserving spline pins a zero tangent at every extremum and is only
+$C^1$ at the knots, which renders visible flat plateaus and curvature kinks
+— the "hand-drawn" look. `smoothCurves` is a last resort for source art
+that truly has no formula; it now requires `freeform: true` in each entry,
+and the content lint warns on its rendered output and rejects an
+unacknowledged `smoothCurves` in a figure spec. Passing a circle or a V
+through it rounds corners and flattens extremes, and
+`tools/graph-core.test.mjs` guards this geometry.
+
+The helper prints the figure with its generating JSON in a `data-spec`
+attribute on the `ap-figure` div. Paste the whole block verbatim and keep
+the attribute: it makes every figure reproducible, reviewable against the
+PDF, and lintable. The lint validates a present `data-spec` (it must parse,
+and any `smoothCurves` entry must carry `freeform: true`).
+
 Do not paste or download textbook equation images into content. Write equations
 as KaTeX, recreate tabular relationships as Markdown tables, and use the figure
 helper for diagrams and graphs so its accessible SVG is embedded directly in
@@ -285,6 +341,11 @@ From the repository root:
 6. Open every changed page with `npm run serve`. Confirm real components
    render and grade, prose/math spacing is visible, formulas appear once, and
    figures match the PDF. Also open a changed chapter landing page.
+   `node tools/screenshot-page.mjs <route>` captures light/dark full-page
+   shots plus a high-zoom crop of every figure and fails on duplicate KaTeX
+   or unlabelled SVGs — use the crops for the figure-vs-PDF comparison, and
+   inspect curve tips and corners at zoom, where spline and stroke defects
+   hide.
 7. Run `git diff --check` and report the changed/untracked files plus the
    source ledger and pages visually checked. Do not commit unless asked.
 
