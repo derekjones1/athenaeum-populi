@@ -41,7 +41,7 @@ Subject → Book → Chapter → Section.
 The completed OpenStax math books also have a pinned, report-only source
 reconciliation workflow. See
 [docs/openstax-source-workflow.md](docs/openstax-source-workflow.md) before
-changing those books. `npm run source:verify` checks the committed 201-section
+changing those books. `npm run source:verify` checks the committed 212-section
 map offline; after `npm run source:fetch`, `npm run source:check` audits the
 local pages without rewriting them.
 

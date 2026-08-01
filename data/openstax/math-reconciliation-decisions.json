@@ -6,6 +6,18 @@
   },
   "metadataDecisions": [
     {
+      "localPath": "content/math/precalculus/02-linear-functions/04-fitting-linear-models-to-data.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49327",
+      "covers": [],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "CNX_Precalc_Figure_02_04_007"
+      ],
+      "rationale": "Figure 7 is a 21-panel Wikimedia correlation composite (credit: DenisBoigelot) plotting thousands of points per panel. It cannot be reproduced as accessible inline SVG under the no-file-backed-images rule, and it has no formula to render from. It is replaced by eight panels built from explicit point sets recorded in each figure's data-spec, spanning the same pedagogical range: r = 1 and r = -1 drawn exactly from y = 0.8x + 1 and y = 9 - 0.8x; r = 0.8, 0.4, 0.0, -0.4, -0.8 generated as y = 5 + 1.9(rho*z_x + sqrt(1-rho^2)*z_e) with z_e orthogonal to z_x, rounded to 0.1, and verified at r = 0.8065, 0.4009, 0.0082, -0.3908, -0.7984; and a nonlinear r = 0 panel from y = 8 - 0.28(x-5)^2 with symmetric jitter. The Wikimedia credit is retained in the attribution footer, which also discloses the substitution. This is a deliberate local replacement, not a transcription of the source figure: do not reverse it toward the composite in a later audit.",
+      "covers_note": "Empty by design. This adaptation is a figure substitution, not a title/objective/heading flag, so no audit flag adjudicates it; the entry exists as a durable record."
+    },
+    {
       "localPath": "content/math/elementary-algebra/04-graphs/04-understand-slope-of-a-line.md",
       "bundle": "prealgebra-bundle",
       "moduleId": "m82483",

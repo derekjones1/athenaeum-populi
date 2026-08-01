@@ -1828,7 +1828,7 @@ certain value. Tax brackets are another real-world example of piecewise
 functions. For example, consider a simple tax system in which incomes up to
 \$10,000 are taxed at 10%, and any additional income is taxed at 20%. Writing
 a total income of $S$ dollars, the tax is $0.1S$ dollars if
-$S\le 10{,}000$ and $1000+0.2(S-10{,}000)$ dollars if $S>10{,}000$.
+$S\le 10{,}000$ and $1{,}000+0.2(S-10{,}000)$ dollars if $S>10{,}000$.
 
 {{< callout type="info" >}}
   **Piecewise function.** A piecewise function is a function in which more

@@ -793,14 +793,14 @@ is more easily visualized with the use of a table.
 | Puppy | 0.008 |
 | Adult dog | 0.083 |
 | Cat | 16 |
-| Goldfish | 2160 |
-| Beta fish | 3600 |
+| Goldfish | 2,160 |
+| Beta fish | 3,600 |
 
 At times, evaluating a function in table form may be more useful than using
 equations. Here let us call the function $P$. The **domain** of the function
 is the type of pet and the range is a real number representing the number of
 hours the pet's memory span lasts. We can evaluate the function $P$ at the
-input value of "goldfish." We would write $P(\text{goldfish})=2160$. Notice
+input value of "goldfish." We would write $P(\text{goldfish})=2{,}160$. Notice
 that, to evaluate the function in table form, we identify the input value and
 the corresponding output value from the pertinent row of the table. The
 tabular form for function $P$ seems ideally suited to this function, more so

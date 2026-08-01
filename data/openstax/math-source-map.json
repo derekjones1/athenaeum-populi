@@ -42,7 +42,7 @@
       "upstreamChapters": 12,
       "upstreamSections": 73,
       "localChapters": 12,
-      "mappedSections": 7
+      "mappedSections": 11
     }
   },
   "sections": [
@@ -1917,6 +1917,42 @@
       "moduleId": "m49320",
       "sourceTitle": "Inverse Functions",
       "moduleSha256": "ea72bbc8985a690e64628b5d00b5838e2b0fa464eec08a97a08c16c59e6ccb93"
+    },
+    {
+      "localPath": "content/math/precalculus/02-linear-functions/01-linear-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "2.1",
+      "moduleId": "m49324",
+      "sourceTitle": "Linear Functions",
+      "moduleSha256": "db87d66cfbe4b0058b30cf91bae829b7202c0c0579bcf942a4f1c35135c822aa"
+    },
+    {
+      "localPath": "content/math/precalculus/02-linear-functions/02-graphs-of-linear-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "2.2",
+      "moduleId": "m50389",
+      "sourceTitle": "Graphs of Linear Functions",
+      "moduleSha256": "13f1dbb0f4450537c081e39169a7f2977b0689bac726acb21ad8519b125f924f"
+    },
+    {
+      "localPath": "content/math/precalculus/02-linear-functions/03-modeling-with-linear-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "2.3",
+      "moduleId": "m49326",
+      "sourceTitle": "Modeling with Linear Functions",
+      "moduleSha256": "7676e49303e8cc6e34aaf1ac62a75fdff47c6fe0b413aec049fbf9d3499c97e2"
+    },
+    {
+      "localPath": "content/math/precalculus/02-linear-functions/04-fitting-linear-models-to-data.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "2.4",
+      "moduleId": "m49327",
+      "sourceTitle": "Fitting Linear Models to Data",
+      "moduleSha256": "8765c38377604e4eec697cf583f5ed977fe1e14fe12813c9e82c9733decd9681"
     }
   ]
 }

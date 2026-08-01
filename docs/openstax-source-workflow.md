@@ -98,7 +98,7 @@ not a publishing instruction.
 - `data/openstax/math-source-lock.json` (schema 2) records each bundle's
   official repository, current reviewed commit, module scope, and license,
   plus every book's collection, inferred PDF-era commit, and authoring status.
-- `data/openstax/math-source-map.json` (schema 2) connects all 201 authored
+- `data/openstax/math-source-map.json` (schema 2) connects all 212 authored
   local section paths to stable OpenStax module IDs and module SHA-256
   fingerprints, attributes each section to its bundle, and records per-book
   chapter and section coverage against the upstream collection.
@@ -147,9 +147,10 @@ target is `789b54099106b071d1d32bfcee454fed72eb4768` in the college-algebra
 bundle, and `content/math/precalculus` holds the book cover page and all
 twelve chapter landings mapped to the upstream chapter structure. All seven
 sections of chapter 1 are authored (modules `m49301`, `m49304`, `m49306`,
-`m49308`, `m49312`, `m49314`, and `m49320`), so the book currently
-contributes 7 of 73 upstream sections to the map and the audit's section
-matrix.
+`m49308`, `m49312`, `m49314`, and `m49320`), as are all four sections of
+chapter 2 (modules `m49324`, `m50389`, `m49326`, and `m49327`), so the book
+currently contributes 11 of 73 upstream sections to the map and the audit's
+section matrix.
 
 Its authored baseline is `d1bd19c69107ba7f45775670809ae161d63db864`, the last
 upstream commit on or before the local `sources/precalculus-2e_-_WEB.pdf`
@@ -196,6 +197,27 @@ Two smaller upstream errata were found in Precalculus 2e module `m49301`
 - `Table_01_01_10`'s `summary` attribute says the goldfish memory span is
   2100 hours, while the table cell and the surrounding prose
   ($P(\text{goldfish})=2160$) both say 2160. The local table says 2160.
+
+Chapter 2 authoring found six more, none propagated. In `m49324` (section
+2.1) three figure alt texts name points that are not on the line they
+describe, or belong to a different figure: `..._013` puts $(2,-7)$ and
+$(3,0)$ on $y=2x-7$ (neither satisfies it; the $x$-intercept is $3.5$),
+`..._012` describes the Analysis line instead of the maglev-train graph, and
+`..._008a` repeats the points of `..._014`. In `m49326` (section 2.3) the
+truck-rental rate row labels the second function $P(d)$ although the module
+defines only $K(d)$ and $M(d)$; that same table's `summary` describes an
+entirely different table (Indiana and Alabama house values, apparently copied
+from section 2.4); and the sentence setting up the comparison names Move It
+Your Way where the inequality $K(d)<M(d)$, the surrounding sentences, and the
+question all mean Keep on Trucking. The local pages follow the PDF and the
+modules' own mathematics, and the 2.3 page carries a visible source note
+beside the corrected sentence.
+
+A caution learned the same way: `tools/cnxml-preview.py` drops the spaces
+between adjacent TeX tokens, so correct source mathematics can look mangled in
+the preview. One reported "defect" — a domain rendering as `0\let\le8.75` —
+was a preview artifact over well-formed CNXML. Confirm any suspected markup
+defect against the raw `index.cnxml` before recording it.
 
 Upstream defects worth reporting to OpenStax are collected in
 `docs/openstax-errata.md` — a gitignored local file holding
