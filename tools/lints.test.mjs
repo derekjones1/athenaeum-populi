@@ -226,6 +226,37 @@ assert.equal(
   0,
   'chapter landing accepts descriptive multiline section bullets',
 );
+const scaffoldedChapterFrontmatter = `---
+title: Functions
+description: A chapter about functions.
+source_chapter: "3"
+authoring_status: scaffolded
+weight: 3
+---
+`;
+assert.equal(
+  lintHugo(
+    `${scaffoldedChapterFrontmatter}\n## Sections\n\nNo section pages are published yet.\n`,
+    'content/math/book/03-functions/_index.md',
+  ).errors.length,
+  0,
+  'a scaffolded chapter landing may carry an empty Sections overview',
+);
+assert(
+  lintHugo(
+    `${chapterFrontmatter}\n## Sections\n\nNo section pages are published yet.\n`,
+    'content/math/book/03-functions/_index.md',
+  ).errors.some((error) => error.includes('has no section bullets')),
+  'an undeclared chapter landing still needs section bullets',
+);
+assert(
+  lintHugo(
+    `${scaffoldedChapterFrontmatter}\n## Sections\n\n- **Understand Functions**\n`,
+    'content/math/book/03-functions/_index.md',
+  ).errors.some((error) => error.includes('must be `- **Title** — concise description`')),
+  'a scaffolded chapter landing still validates any bullets it does have',
+);
+
 for (const [source, expected] of [
   [chapterFrontmatter, 'missing a `## Sections`'],
   [`${chapterFrontmatter}\n## Sections\n\n- **Understand Functions**\n`, 'must be `- **Title** — concise description`'],
@@ -260,6 +291,46 @@ for (const source of [
     0,
     `unexpected TeX prose-spacing lint for ${JSON.stringify(source)}`,
   );
+}
+
+// ---- figure curve precision ------------------------------------------------
+
+// smoothCurves spline output (a cubic-bezier path) warns; analytic output does not.
+{
+  const spline = '<svg role="img" aria-label="A curve"><path d="M 26 100 C 30 90 40 80 50 80" fill="none"/></svg>';
+  const { warnings } = lintHugo(spline, 'content/test.md');
+  assert(
+    warnings.some((w) => w.includes('spline-interpolated')),
+    `expected spline warning, got ${JSON.stringify(warnings)}`,
+  );
+  const analytic = '<svg role="img" aria-label="A curve"><polyline points="26,100 27,99 28,97" fill="none"/><path d="M 10 10 L 20 20 L 30 10" fill="none"/></svg>';
+  assert.equal(
+    lintHugo(analytic, 'content/test.md').warnings.filter((w) => w.includes('spline')).length,
+    0,
+    'analytic polylines and straight-segment paths must not warn',
+  );
+}
+
+// data-spec provenance must parse and must acknowledge freeform spline use.
+{
+  const svg = '<svg role="img" aria-label="A curve"><polyline points="0,0 1,1"/></svg>';
+  const good = `<div class="ap-figure" data-spec='{"type":"graph","cubics":[{"a":1}]}'>${svg}</div>`;
+  assert.equal(lintHugo(good, 'content/test.md').errors.length, 0);
+  const acknowledged = `<div class="ap-figure" data-spec='{"type":"graph","smoothCurves":[{"through":[[0,0],[1,1]],"freeform":true}]}'>${svg}</div>`;
+  assert.equal(lintHugo(acknowledged, 'content/test.md').errors.length, 0);
+  const unacknowledged = `<div class="ap-figure" data-spec='{"type":"graph","smoothCurves":[{"through":[[0,0],[1,1]]}]}'>${svg}</div>`;
+  assert(
+    lintHugo(unacknowledged, 'content/test.md').errors.some((e) => e.includes('freeform')),
+    'smoothCurves without freeform: true must be rejected when the spec is present',
+  );
+  const broken = `<div class="ap-figure" data-spec='{"type":'>${svg}</div>`;
+  assert(
+    lintHugo(broken, 'content/test.md').errors.some((e) => e.includes('not valid JSON')),
+    'unparseable data-spec must be rejected',
+  );
+  // entity-escaped specs (as emitted for aria labels with apostrophes) decode
+  const escaped = `<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"The line&#39;s graph &amp; grid","lines":[{"slope":1}]}'>${svg}</div>`;
+  assert.equal(lintHugo(escaped, 'content/test.md').errors.length, 0);
 }
 
 console.log(`lints: ${imageCases.length} image embeddings plus authoring-regression cases passed`);

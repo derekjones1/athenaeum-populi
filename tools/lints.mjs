@@ -306,6 +306,38 @@ export function lintHugo(src, filename = '') {
     }
   }
 
+  // ---- figure curve precision ----------------------------------------------
+  // A cubic-bezier <path> inside a figure is the smoothCurves spline output:
+  // C¹ knots and zero-slope extrema render visible flat plateaus — the
+  // "hand-drawn" look. Only the spline interpolator emits C commands; every
+  // analytic primitive emits polylines, lines, or ellipses.
+  for (const m of htmlMediaSrc.matchAll(/<path\b[^>]*>/gi)) {
+    if (/(?:^|[\s\d.])C[\s\d.]/.test(htmlAttribute(m[0], 'd'))) {
+      wrn(m.index, 'figure curve is spline-interpolated (smoothCurves output) — regenerate it from an analytic primitive (quadratics, cubics, circles, polylines, or curves kind sqrt/cbrt/reciprocal/reciprocal-squared/sine); reserve smoothCurves (freeform: true) for source art with no formula');
+    }
+  }
+  // Figures rendered by tools/render-figure.mjs carry their generating JSON in
+  // a data-spec attribute. When present it must parse, and any smoothCurves
+  // use must carry the explicit freeform acknowledgment.
+  const decodeEntities = (value) => value
+    .replace(/&quot;/g, '"').replace(/&#0*39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+  for (const m of htmlMediaSrc.matchAll(/<div\b[^>]*\bclass\s*=\s*(?:"[^"]*\bap-figure\b[^"]*"|'[^']*\bap-figure\b[^']*')[^>]*>/gi)) {
+    const raw = htmlAttribute(m[0], 'data-spec');
+    if (!raw) continue;
+    let spec;
+    try {
+      spec = JSON.parse(decodeEntities(raw));
+    } catch {
+      err(m.index, 'ap-figure data-spec is not valid JSON — regenerate the figure with tools/render-figure.mjs and paste its output verbatim');
+      continue;
+    }
+    for (const curve of Array.isArray(spec.smoothCurves) ? spec.smoothCurves : []) {
+      if (curve && curve.freeform !== true) {
+        err(m.index, 'ap-figure data-spec uses smoothCurves without freeform: true — model the curve with an analytic primitive (fit a polynomial or sinusoid through the labeled points) instead of spline interpolation');
+      }
+    }
+  }
+
   for (const m of mediaSrc.matchAll(/\*\*Solution\.\*\*[ \t]*(?:\r?\n[ \t]*)+(?=(?:\{\{<\s*(?:fillin|multiplechoice|graphplot)\b|#{1,6}\s|---[ \t]*$|(?![\s\S])))/gm)) {
     wrn(m.index, 'worked example appears to have an empty Solution block — confirm that no source solution was dropped');
   }
@@ -317,6 +349,9 @@ export function lintHugo(src, filename = '') {
   // A chapter landing is a reader-facing map, not a copied print outline.
   // Keep every entry consistent: bold title, em dash, concise description.
   if (/[/\\]_index\.md$/.test(filename) && /^source_chapter:\s*\S/m.test(src)) {
+    // A chapter whose pages are not written yet declares itself; its Sections
+    // overview is legitimately empty until the first section page lands.
+    const scaffolded = /^authoring_status:\s*["']?(?:scaffolded|in-progress)["']?[ \t]*$/m.test(src);
     const heading = /^## Sections[ \t]*$/m.exec(src);
     if (!heading) {
       err(0, 'chapter landing is missing a `## Sections` overview');
@@ -326,7 +361,7 @@ export function lintHugo(src, filename = '') {
       const blockEndMatch = /^(?:##\s|---[ \t]*$)/m.exec(tail);
       const block = tail.slice(0, blockEndMatch?.index ?? tail.length);
       const starts = [...block.matchAll(/^- /gm)].map((match) => match.index);
-      if (!starts.length) err(heading.index, 'chapter `## Sections` overview has no section bullets');
+      if (!starts.length && !scaffolded) err(heading.index, 'chapter `## Sections` overview has no section bullets');
       for (let i = 0; i < starts.length; i += 1) {
         const item = block
           .slice(starts[i], starts[i + 1] ?? block.length)

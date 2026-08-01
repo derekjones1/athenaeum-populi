@@ -30,6 +30,9 @@
  *   tickStep             spacing between labeled ticks (default gridStep)
  *   xTickStep,yTickStep  per-axis tick spacing (default tickStep or the
  *                        matching grid step)
+ *   tickGrouping         false → no thousands separators in tick labels;
+ *                        xTickGrouping/yTickGrouping override per axis, so a
+ *                        year axis reads 1975 while a count axis reads 2,200
  *   maxWidth             CSS max-width (default viewBox width + 20)
  *
  *   points:   [{ at:[x,y], label?, labelSide?, open? }]
@@ -47,13 +50,47 @@
  *             graphs y = ax^3 + bx^2 + cx + d; b, c, and d default to 0
  *             Polynomial curves are clipped to the grid; arrows default true.
  *             arrows may also be 'start' or 'end' for a one-ended curve
- *   smoothCurves: [{ through:[[x,y],...], dashed?, arrows? }]
+ *   polynomials: [{ coeffs:[a0, a1, …], from?, to?, dashed?, arrows? }]
+ *             graphs y = a0 + a1·x + a2·x^2 + … for any degree, so a source
+ *             curve fitted to a quartic or higher renders from its exact
+ *             formula instead of a spline. The leading (last) coefficient
+ *             must be nonzero; quadratics/cubics remain the readable shorthand
+ *             for degrees 2 and 3.
+ *   rationals: [{ num:[a0,…], den:[b0,…], from?, to?, dashed?, arrows? }]
+ *             graphs num(x)/den(x) from the exact quotient. Branches split at
+ *             each pole on their own, because a run already ends wherever the
+ *             curve leaves the grid. Use this for slant- and
+ *             vertical-asymptote shapes such as 2/x + x/3 = (x^2+6)/(3x).
+ *   smoothCurves: [{ through:[[x,y],...], freeform:true, dashed?, arrows? }]
  *             shape-preserving smooth interpolation through increasing x-values;
+ *             REQUIRES freeform:true — an explicit acknowledgment that the
+ *             curve is source art with no formula. Known shapes (including
+ *             "generic" textbook curves, which should be fitted to an exact
+ *             polynomial or sinusoid) must use an analytic primitive:
+ *             quadratics, cubics, circles, polylines, or curves.
  *             arrows default false and may be true, 'start', or 'end'
- *   segments: [{ from:[x,y], to:[x,y], dashed?, label?, labelSide? }]
+ *   curves:   [{ kind:'sqrt'|'cbrt'|'reciprocal'|'reciprocal-squared'|'sine'
+ *                     |'exp'|'log',
+ *                a?, h?, k?, b?, from?, to?, dashed?, arrows? }]
+ *             named analytic curves a·f(x−h)+k sampled from their exact
+ *             equations. 'sine' draws k + a·sin(b·(x−h)) with angular
+ *             frequency b (default 1); 'exp' draws k + a·b^(x−h) and 'log'
+ *             draws k + a·log_b(x−h), both with base b (default e), the log
+ *             sampled in y so its vertical tangent stays smooth. Quadratics,
+ *             cubics, polynomials, and curves accept
+ *             from/to (math x; y for sideways quadratics) to trim the drawn
+ *             domain, e.g. to end a curve with an arrow mid-grid.
+ *   segments: [{ from:[x,y], to:[x,y], dashed?, label?, labelSide?, arrows? }]
+ *             arrows: true | 'start' | 'end' — an indicator ray, e.g. the
+ *             "Domain" extent drawn above a graph to show it continues
  *   guides:   [[x,y], …]  dashed axis crosshair to each point
  *   slopeTriangles: [{ from:[x,y], to:[x,y], riseLabel?, runLabel?,
  *                      order? ('vh' vertical-first default, or 'hv') }]
+ *   circles:  [{ at:[x,y], r | rx+ry, from?, to?, dashed? }]
+ *             a real SVG ellipse, never a spline. rx/ry give unequal
+ *             semi-axes in MATH units; from/to (degrees counter-clockwise
+ *             from the positive x-axis) draw an exact elliptical arc instead
+ *             of the closed curve, e.g. from:0 to:180 for an upper semicircle
  *   regions:  [{ line:<line spec>, side:[x,y] test point, dashed? }]
  *             boundary drawn dashed for strict inequalities
  *   texts:    [{ at:[x,y], text, anchor?, dx?, dy?, fontSize? }]
@@ -100,8 +137,11 @@ export function buildGraph(props) {
     grid = true, gridStep = 1, xGridStep = gridStep, yGridStep = gridStep,
     tickLabels = false, tickStep,
     xTickStep = tickStep ?? xGridStep, yTickStep = tickStep ?? yGridStep,
+    tickGrouping = true, xTickGrouping = tickGrouping, yTickGrouping = tickGrouping,
     quadrantLabels = false,
-    points = [], lines = [], quadratics = [], cubics = [], smoothCurves = [], segments = [], guides = [],
+    points = [], lines = [], quadratics = [], cubics = [], polynomials = [], rationals = [],
+    smoothCurves = [], segments = [], guides = [],
+    circles = [], polylines = [], curves = [],
     slopeTriangles = [], regions = [], texts = [],
   } = props
 
@@ -181,6 +221,49 @@ export function buildGraph(props) {
     add('polygon', { points: p, fill: 'currentColor' })
   }
 
+  /** Drop the final ~arrowhead length of a px polyline so the stroke's round
+      cap cannot poke past the arrowhead apex as a stray dot. The arrowhead
+      itself is still drawn with its tip at the ORIGINAL endpoint. */
+  function trimTailForArrow(pts) {
+    let need = AH - 2 // keep a little overlap under the arrowhead base
+    for (let i = pts.length - 1; i > 0; i--) {
+      const d = len(sub(pts[i], pts[i - 1]))
+      if (d >= need) {
+        const t = need / d
+        const cut = [
+          pts[i][0] + (pts[i - 1][0] - pts[i][0]) * t,
+          pts[i][1] + (pts[i - 1][1] - pts[i][1]) * t,
+        ]
+        return [...pts.slice(0, i), cut]
+      }
+      need -= d
+    }
+    return pts
+  }
+
+  /** Draw a px polyline with optional arrowheads at either end, trimming the
+      stroke back under each arrowhead. Shared by every curve family. */
+  function strokePolyline(pts, { dashed = false, startArrow = false, endArrow = false } = {}) {
+    let drawn = pts
+    if (endArrow && drawn.length > 1) drawn = trimTailForArrow(drawn)
+    if (startArrow && drawn.length > 1) drawn = trimTailForArrow([...drawn].reverse()).reverse()
+    add('polyline', {
+      points: drawn.map((p) => p.map(fmt).join(',')).join(' '),
+      fill: 'none', stroke: 'currentColor', strokeWidth: '1.8',
+      strokeLinejoin: 'round', strokeLinecap: 'round',
+      ...(dashed ? { strokeDasharray: '6 5' } : {}),
+    })
+    for (let i = 1; i < pts.length; i++) obstacles.push([pts[i - 1], pts[i]])
+    // Orient each head along the chord it covers — from the trimmed stroke
+    // end to the true endpoint — not the endpoint tangent. On a curving path
+    // (e.g. a curve ending near an extremum) the tangent can differ visibly
+    // from the covered stretch, leaving the head sitting beside the stroke
+    // instead of flowing out of it.
+    const chordDir = (tip, base, fallback) => (len(sub(tip, base)) > 0.5 ? sub(tip, base) : fallback)
+    if (startArrow) arrowhead(pts[0], chordDir(pts[0], drawn[0], sub(pts[0], pts[1])))
+    if (endArrow) arrowhead(pts.at(-1), chordDir(pts.at(-1), drawn.at(-1), sub(pts.at(-1), pts.at(-2))))
+  }
+
   const fmt = (n) => +n.toFixed(1)
   const segAttrs = (a, b, extra = {}) => ({
     x1: fmt(a[0]), y1: fmt(a[1]), x2: fmt(b[0]), y2: fmt(b[1]),
@@ -251,28 +334,33 @@ export function buildGraph(props) {
   if (tickLabels) {
     if (!Number.isFinite(xTickStep) || xTickStep <= 0) throw new Error('xTickStep must be a positive number')
     if (!Number.isFinite(yTickStep) || yTickStep <= 0) throw new Error('yTickStep must be a positive number')
-    const fmtTick = (n) => mathMinus((+n.toFixed(6)).toLocaleString('en-US'))
-    if (yMin <= 0 && yMax >= 0) {
-      const first = Math.ceil(xMin / xTickStep) * xTickStep
-      const count = first <= xMax ? stepCount(first, xMax, xTickStep, 'xTickStep') : 0
-      for (let index = 0; index < count; index++) {
-        const mx = first + index * xTickStep
-        if (Math.abs(mx) < 1e-9) continue
-        const p = px([mx, 0])
-        add('line', segAttrs([p[0], p[1] - 3], [p[0], p[1] + 3], { strokeWidth: '1' }))
-        add('text', { x: fmt(p[0]), y: fmt(p[1] + 15), fontSize: '11', fill: 'currentColor', textAnchor: 'middle' }, fmtTick(mx))
-      }
+    // Digit grouping is right for counts and money and wrong for years, so
+    // each axis can opt out: 1975 must not render as 1,975.
+    const fmtTick = (n, grouped) => mathMinus(grouped
+      ? (+n.toFixed(6)).toLocaleString('en-US')
+      : String(+n.toFixed(6)))
+    // Ticks ride the drawn axis, not the line y = 0 / x = 0, so data ranges
+    // that never reach the origin (years 1973..2008, barrels 0..2200) still
+    // get labeled axes. The origin label is dropped only when both axes
+    // actually cross there and the single "0" would be ambiguous.
+    const originShown = xMin <= 0 && xMax >= 0 && yMin <= 0 && yMax >= 0
+    const firstX = Math.ceil(xMin / xTickStep) * xTickStep
+    const xCount = firstX <= xMax ? stepCount(firstX, xMax, xTickStep, 'xTickStep') : 0
+    for (let index = 0; index < xCount; index++) {
+      const mx = firstX + index * xTickStep
+      if (originShown && Math.abs(mx) < 1e-9) continue
+      const cx = px([mx, 0])[0]
+      add('line', segAttrs([cx, axisY - 3], [cx, axisY + 3], { strokeWidth: '1' }))
+      add('text', { x: fmt(cx), y: fmt(axisY + 15), fontSize: '11', fill: 'currentColor', textAnchor: 'middle' }, fmtTick(mx, xTickGrouping))
     }
-    if (xMin <= 0 && xMax >= 0) {
-      const first = Math.ceil(yMin / yTickStep) * yTickStep
-      const count = first <= yMax ? stepCount(first, yMax, yTickStep, 'yTickStep') : 0
-      for (let index = 0; index < count; index++) {
-        const my = first + index * yTickStep
-        if (Math.abs(my) < 1e-9) continue
-        const p = px([0, my])
-        add('line', segAttrs([p[0] - 3, p[1]], [p[0] + 3, p[1]], { strokeWidth: '1' }))
-        add('text', { x: fmt(p[0] - 6), y: fmt(p[1] + 4), fontSize: '11', fill: 'currentColor', textAnchor: 'end' }, fmtTick(my))
-      }
+    const firstY = Math.ceil(yMin / yTickStep) * yTickStep
+    const yCount = firstY <= yMax ? stepCount(firstY, yMax, yTickStep, 'yTickStep') : 0
+    for (let index = 0; index < yCount; index++) {
+      const my = firstY + index * yTickStep
+      if (originShown && Math.abs(my) < 1e-9) continue
+      const cy = px([0, my])[1]
+      add('line', segAttrs([axisX - 3, cy], [axisX + 3, cy], { strokeWidth: '1' }))
+      add('text', { x: fmt(axisX - 6), y: fmt(cy + 4), fontSize: '11', fill: 'currentColor', textAnchor: 'end' }, fmtTick(my, yTickGrouping))
     }
   }
 
@@ -318,8 +406,16 @@ export function buildGraph(props) {
   // Sample densely enough that curves remain visually smooth even where their
   // slope changes quickly. Runs are split whenever a curve leaves the grid,
   // preventing an off-canvas point from stretching a polyline across it.
-  function drawPolynomialCurve(spec, { independentMin, independentMax, pointAt, errorName, unitPx = ux }) {
+  function drawPolynomialCurve(spec, { independentMin, independentMax, pointAt, errorName, unitPx = ux, toIndependent = (v) => v }) {
     if (!Number.isFinite(spec.a) || spec.a === 0) throw new Error(`${errorName} needs a nonzero numeric a`)
+    for (const [key, clamp] of [['from', Math.max], ['to', Math.min]]) {
+      if (spec[key] === undefined) continue
+      if (!Number.isFinite(spec[key])) throw new Error(`${errorName} ${key} must be a finite number`)
+      const t = toIndependent(spec[key])
+      if (key === 'from') independentMin = clamp(independentMin, t)
+      else independentMax = clamp(independentMax, t)
+    }
+    if (!(independentMax > independentMin)) throw new Error(`${errorName} from/to leave no domain to draw`)
     const samples = Math.max(240, Math.ceil((independentMax - independentMin) * unitPx * 4))
     if (!Number.isFinite(samples) || samples > MAX_GENERATED_STEPS) {
       throw new Error(`${errorName} would generate too many curve samples`)
@@ -334,19 +430,12 @@ export function buildGraph(props) {
     }
     if (run.length > 1) runs.push(run)
     for (const pts of runs) {
-      const dash = spec.dashed ? { strokeDasharray: '6 5' } : {}
-      add('polyline', {
-        points: pts.map((p) => p.map(fmt).join(',')).join(' '),
-        fill: 'none', stroke: 'currentColor', strokeWidth: '1.8',
-        strokeLinejoin: 'round', strokeLinecap: 'round', ...dash,
+      const wantArrows = pts.length > 2
+      strokePolyline(pts, {
+        dashed: !!spec.dashed,
+        startArrow: wantArrows && spec.arrows !== false && spec.arrows !== 'end',
+        endArrow: wantArrows && spec.arrows !== false && spec.arrows !== 'start',
       })
-      for (let i = 1; i < pts.length; i++) obstacles.push([pts[i - 1], pts[i]])
-      const startArrow = spec.arrows !== false && spec.arrows !== 'end'
-      const endArrow = spec.arrows !== false && spec.arrows !== 'start'
-      if ((startArrow || endArrow) && pts.length > 2) {
-        if (startArrow) arrowhead(pts[0], sub(pts[0], pts[1]))
-        if (endArrow) arrowhead(pts.at(-1), sub(pts.at(-1), pts.at(-2)))
-      }
     }
   }
 
@@ -380,10 +469,54 @@ export function buildGraph(props) {
     })
   }
 
+  // General-degree polynomials. A textbook curve that is "generic" only in
+  // appearance is still a function: fit it, then draw the fitted formula here
+  // rather than spline-tracing it through smoothCurves.
+  for (const p of polynomials) {
+    const { coeffs } = p
+    if (!Array.isArray(coeffs) || coeffs.length < 2 || !coeffs.every(Number.isFinite)) {
+      throw new Error('polynomial needs a coeffs array [a0, a1, …] of at least two finite numbers')
+    }
+    if (coeffs.at(-1) === 0) {
+      throw new Error('polynomial leading coefficient must be nonzero — drop the trailing zero term')
+    }
+    // Horner evaluation: fewer operations and less floating-point drift than
+    // summing x**i term by term across the dense sample grid.
+    const at = (x) => coeffs.reduceRight((acc, c) => acc * x + c, 0)
+    drawPolynomialCurve({ ...p, a: coeffs.at(-1) }, {
+      independentMin: xMin,
+      independentMax: xMax,
+      pointAt: (x) => [x, at(x)],
+      errorName: 'polynomial',
+    })
+  }
+
+  // Rational functions, num(x)/den(x). Each branch is drawn from the exact
+  // quotient; runs already split wherever the curve leaves the grid, so a pole
+  // separates the branches without any special casing.
+  for (const r of rationals) {
+    for (const [key, coeffs] of [['num', r.num], ['den', r.den]]) {
+      if (!Array.isArray(coeffs) || !coeffs.length || !coeffs.every(Number.isFinite)) {
+        throw new Error(`rational ${key} must be a coeffs array [a0, a1, …] of finite numbers`)
+      }
+      if (coeffs.every((c) => c === 0)) throw new Error(`rational ${key} cannot be identically zero`)
+    }
+    const evalAt = (coeffs, x) => coeffs.reduceRight((acc, c) => acc * x + c, 0)
+    drawPolynomialCurve({ ...r, a: r.num.at(-1) || 1 }, {
+      independentMin: xMin,
+      independentMax: xMax,
+      pointAt: (x) => [x, evalAt(r.num, x) / evalAt(r.den, x)],
+      errorName: 'rational',
+    })
+  }
+
   // Shape-preserving piecewise cubic interpolation. Interior tangents use a
   // weighted harmonic mean of adjacent slopes and become zero at extrema, so
   // the rendered curve cannot overshoot a stated minimum or maximum.
   for (const curve of smoothCurves) {
+    if (curve.freeform !== true) {
+      throw new Error('smoothCurves is spline interpolation for genuinely freeform source art and requires an explicit freeform: true — draw a known or generic shape from an analytic primitive instead (quadratics, cubics, circles, polylines, or curves with kind sqrt/cbrt/reciprocal/reciprocal-squared/sine)')
+    }
     const through = curve.through
     if (!Array.isArray(through) || through.length < 2) throw new Error('smoothCurve needs at least two through points')
     if (through.some((p) => !Array.isArray(p) || p.length !== 2 || p.some((n) => !Number.isFinite(n)))) {
@@ -425,16 +558,144 @@ export function buildGraph(props) {
         ])
       }
     }
-    add('path', {
-      d: path.join(' '), fill: 'none', stroke: 'currentColor', strokeWidth: '1.8',
-      strokeLinejoin: 'round', strokeLinecap: 'round',
-      ...(curve.dashed ? { strokeDasharray: '6 5' } : {}),
-    })
-    for (let i = 1; i < sampled.length; i++) obstacles.push([sampled[i - 1], sampled[i]])
     const startArrow = curve.arrows === true || curve.arrows === 'start'
     const endArrow = curve.arrows === true || curve.arrows === 'end'
-    if (startArrow) arrowhead(sampled[0], sub(sampled[0], sampled[1]))
-    if (endArrow) arrowhead(sampled.at(-1), sub(sampled.at(-1), sampled.at(-2)))
+    if (startArrow || endArrow) {
+      // arrows need the stroke trimmed under the head; draw the dense sample
+      // polyline (visually identical at these sizes) instead of the bezier
+      strokePolyline(sampled, { dashed: !!curve.dashed, startArrow, endArrow })
+    } else {
+      add('path', {
+        d: path.join(' '), fill: 'none', stroke: 'currentColor', strokeWidth: '1.8',
+        strokeLinejoin: 'round', strokeLinecap: 'round',
+        ...(curve.dashed ? { strokeDasharray: '6 5' } : {}),
+      })
+      for (let i = 1; i < sampled.length; i++) obstacles.push([sampled[i - 1], sampled[i]])
+    }
+  }
+
+  // --- 6b. straight polylines (piecewise-linear graphs such as y = |x|) ------
+  // Corners are preserved exactly; smoothCurves would round them off.
+  for (const p of polylines) {
+    const through = p.through
+    if (!Array.isArray(through) || through.length < 2) throw new Error('polyline needs at least two through points')
+    if (through.some((q) => !Array.isArray(q) || q.length !== 2 || q.some((n) => !Number.isFinite(n)))) {
+      throw new Error('polyline through points must be finite [x,y] pairs')
+    }
+    strokePolyline(through.map(px), {
+      dashed: !!p.dashed,
+      startArrow: p.arrows === true || p.arrows === 'start',
+      endArrow: p.arrows === true || p.arrows === 'end',
+    })
+  }
+
+  // --- 6c. exact circles ------------------------------------------------------
+  // Rendered as a real SVG ellipse (rx/ry follow the axis units), never as a
+  // spline approximation, so conics stay geometrically true.
+  for (const c of circles) {
+    const rx = c.rx ?? c.r, ry = c.ry ?? c.r
+    if (!Array.isArray(c.at) || c.at.length !== 2 || !c.at.every(Number.isFinite)
+      || !Number.isFinite(rx) || rx <= 0 || !Number.isFinite(ry) || ry <= 0) {
+      throw new Error('circle needs a finite at:[x,y] centre and a positive r (or rx and ry)')
+    }
+    const [cx, cy] = px(c.at)
+    const pxRx = rx * ux, pxRy = ry * uy
+    const stroke = {
+      fill: 'none', stroke: 'currentColor', strokeWidth: '1.8',
+      ...(c.dashed ? { strokeDasharray: '6 5' } : {}),
+    }
+    // from/to (degrees, counter-clockwise from the positive x-axis) draw an
+    // arc — a real SVG elliptical arc, so a semicircle stays exact.
+    const arc = c.from !== undefined || c.to !== undefined
+    const a0 = arc ? (c.from ?? 0) : 0
+    const a1 = arc ? (c.to ?? 360) : 360
+    if (arc && (!Number.isFinite(a0) || !Number.isFinite(a1) || a1 === a0 || Math.abs(a1 - a0) > 360)) {
+      throw new Error('circle from/to must be distinct finite angles no more than 360 degrees apart')
+    }
+    const at = (deg) => {
+      const t = (deg * Math.PI) / 180
+      return [cx + pxRx * Math.cos(t), cy - pxRy * Math.sin(t)]
+    }
+    if (arc) {
+      const [x0, y0] = at(a0), [x1, y1] = at(a1)
+      const large = Math.abs(a1 - a0) > 180 ? 1 : 0
+      // y is flipped in px space, so increasing math angle sweeps clockwise
+      const sweep = a1 > a0 ? 0 : 1
+      add('path', {
+        d: `M ${fmt(x0)} ${fmt(y0)} A ${fmt(pxRx)} ${fmt(pxRy)} 0 ${large} ${sweep} ${fmt(x1)} ${fmt(y1)}`,
+        ...stroke,
+      })
+    } else {
+      add('ellipse', { cx: fmt(cx), cy: fmt(cy), rx: fmt(pxRx), ry: fmt(pxRy), ...stroke })
+    }
+    let prev = null
+    for (let i = 0; i <= 36; i++) {
+      const q = at(a0 + ((a1 - a0) * i) / 36)
+      if (prev) obstacles.push([prev, q])
+      prev = q
+    }
+  }
+
+  // --- 6d. named analytic curves ----------------------------------------------
+  // Toolkit shapes with vertical tangents or asymptotes, sampled from their
+  // exact equations (parametrically where x-sampling would corner them).
+  // Spec: { kind, a?, h?, k?, dashed?, arrows? } drawing a·f(x−h)+k.
+  for (const c of curves) {
+    const a = c.a ?? 1, h = c.h ?? 0, k = c.k ?? 0
+    const spec = { ...c, a }
+    if (c.kind === 'sqrt') {
+      const tMin = Math.sqrt(Math.max(0, xMin - h))
+      const tMax = Math.sqrt(Math.max(0, xMax - h))
+      if (tMax <= tMin) throw new Error('sqrt curve lies outside the x-range')
+      drawPolynomialCurve({ arrows: 'end', ...spec }, {
+        independentMin: tMin, independentMax: tMax,
+        pointAt: (t) => [h + t * t, k + a * t], errorName: 'sqrt curve',
+        toIndependent: (x) => Math.sqrt(Math.max(0, x - h)),
+      })
+    } else if (c.kind === 'cbrt') {
+      drawPolynomialCurve(spec, {
+        independentMin: Math.cbrt(xMin - h), independentMax: Math.cbrt(xMax - h),
+        pointAt: (t) => [h + t * t * t, k + a * t], errorName: 'cbrt curve',
+        toIndependent: (x) => Math.cbrt(x - h),
+      })
+    } else if (c.kind === 'sine') {
+      const b = c.b ?? 1
+      if (!Number.isFinite(b) || b === 0) throw new Error('sine curve needs a nonzero numeric b (angular frequency)')
+      drawPolynomialCurve(spec, {
+        independentMin: xMin, independentMax: xMax,
+        pointAt: (x) => [x, k + a * Math.sin(b * (x - h))], errorName: 'sine curve',
+      })
+    } else if (c.kind === 'exp') {
+      const b = c.b ?? Math.E
+      if (!Number.isFinite(b) || b <= 0 || b === 1) throw new Error('exp curve needs a positive base b other than 1')
+      drawPolynomialCurve(spec, {
+        independentMin: xMin, independentMax: xMax,
+        pointAt: (x) => [x, k + a * b ** (x - h)], errorName: 'exp curve',
+      })
+    } else if (c.kind === 'log') {
+      const b = c.b ?? Math.E
+      if (!Number.isFinite(b) || b <= 0 || b === 1) throw new Error('log curve needs a positive base b other than 1')
+      const lnB = Math.log(b)
+      // sampled in y so the vertical tangent at the asymptote stays smooth
+      drawPolynomialCurve(spec, {
+        independentMin: yMin, independentMax: yMax,
+        pointAt: (y) => [h + b ** ((y - k) / a), y], errorName: 'log curve',
+        unitPx: uy,
+        toIndependent: (x) => k + a * Math.log(Math.max(1e-12, x - h)) / lnB,
+      })
+    } else if (c.kind === 'reciprocal') {
+      drawPolynomialCurve(spec, {
+        independentMin: xMin, independentMax: xMax,
+        pointAt: (x) => [x, k + a / (x - h)], errorName: 'reciprocal curve',
+      })
+    } else if (c.kind === 'reciprocal-squared') {
+      drawPolynomialCurve(spec, {
+        independentMin: xMin, independentMax: xMax,
+        pointAt: (x) => [x, k + a / ((x - h) * (x - h))], errorName: 'reciprocal-squared curve',
+      })
+    } else {
+      throw new Error(`unknown curve kind ${JSON.stringify(c.kind)}`)
+    }
   }
 
   // --- 7. segments & slope triangles -----------------------------------------
@@ -450,7 +711,17 @@ export function buildGraph(props) {
   }
   for (const s of allSegments) {
     const a = px(s.from), b = px(s.to)
-    add('line', segAttrs(a, b, { strokeWidth: '1.4', ...(s.dashed ? { strokeDasharray: '4 3' } : {}) }))
+    // arrows: true | 'start' | 'end' — for indicator rays such as the
+    // "Domain"/"Range" extents drawn alongside a graph. The shaft stops short
+    // of each head so no stroke cap pokes past the apex.
+    const headStart = s.arrows === true || s.arrows === 'start'
+    const headEnd = s.arrows === true || s.arrows === 'end'
+    const dir = norm(sub(b, a))
+    const s0 = headStart ? [a[0] + AH * dir[0], a[1] + AH * dir[1]] : a
+    const s1 = headEnd ? [b[0] - AH * dir[0], b[1] - AH * dir[1]] : b
+    add('line', segAttrs(s0, s1, { strokeWidth: '1.4', ...(s.dashed ? { strokeDasharray: '4 3' } : {}) }))
+    if (headEnd) arrowhead(b, dir)
+    if (headStart) arrowhead(a, [-dir[0], -dir[1]])
     obstacles.push([a, b])
     if (s.label) {
       const mid = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]
@@ -610,6 +881,14 @@ export function buildGraph(props) {
  *                 direction picked from `shade` — matching interval
  *                 notation in the prose; 'open'/'closed' are circles.
  *   shade         'left' | 'right' — thick ray from the marker to that end
+ *   intervals     [{ from?, to?, fromType?, toType? }] — one heavy stretch per
+ *                 interval, for compound sets a single marker+shade cannot
+ *                 express, e.g. (−∞,2)∪(2,∞) or [1,3]∪(5,∞). Omitting `from`
+ *                 runs the stretch to the left arrow (−∞); omitting `to` runs
+ *                 it to the right arrow (∞); `{}` is therefore the whole line,
+ *                 (−∞, ∞). fromType/toType are 'open' or
+ *                 'closed' (default 'closed') and draw the endpoint circle;
+ *                 an unbounded end takes no circle.
  *   points        [{ at, label? }] plain plotted points (labels above;
  *                 house rule: only off-tick points need labels)
  *
@@ -618,9 +897,24 @@ export function buildGraph(props) {
  * from `at` values — never hand-placed.
  */
 export function buildNumberLine(props) {
-  const { min, max, marker, shade, title, points = [] } = props
+  const { min, max, marker, shade, title, points = [], intervals = [] } = props
   if (!Number.isSafeInteger(min) || !Number.isSafeInteger(max) || max <= min) {
     throw new Error('NumberLine needs integer min < max')
+  }
+  for (const iv of intervals) {
+    // {} is the deliberate spelling of all real numbers, (−∞, ∞)
+    const bounded = ['from', 'to'].filter((k) => iv[k] !== undefined)
+    for (const key of bounded) {
+      if (!Number.isFinite(iv[key])) throw new Error(`NumberLine interval ${key} must be a finite number`)
+      if (iv[key] < min || iv[key] > max) throw new Error(`NumberLine interval ${key} ${iv[key]} falls outside ${min}..${max}`)
+      const type = iv[`${key}Type`]
+      if (type !== undefined && type !== 'open' && type !== 'closed') {
+        throw new Error(`NumberLine interval ${key}Type must be 'open' or 'closed'`)
+      }
+    }
+    if (bounded.length === 2 && !(iv.to > iv.from)) {
+      throw new Error('NumberLine interval needs from < to')
+    }
   }
   const tickCount = stepCount(min, max, 1, 'NumberLine range')
   const LINE = 264, X0 = 28, EXT = 12 // line overshoots ticks by EXT each side
@@ -647,10 +941,33 @@ export function buildNumberLine(props) {
     add('line', { x1: fmtN(from), y1: String(yLine), x2: String(to), y2: String(yLine), stroke: 'currentColor', strokeWidth: '3.5' })
   }
 
+  // heavy stretches for compound sets; an unbounded end runs to the chevron.
+  // An excluded end stops short of its hollow circle so the circle reads as
+  // hollow in both themes without needing a background fill to paint over.
+  const DOT_R = 5
+  for (const iv of intervals) {
+    const from = iv.from === undefined ? L0 : X(iv.from) + (iv.fromType === 'open' ? DOT_R : 0)
+    const to = iv.to === undefined ? L1 : X(iv.to) - (iv.toType === 'open' ? DOT_R : 0)
+    add('line', { x1: fmtN(from), y1: String(yLine), x2: fmtN(to), y2: String(yLine), stroke: 'currentColor', strokeWidth: '3.5' })
+  }
+
+  // Positions a hollow endpoint will sit on. Their ticks are skipped: a tick
+  // showing through an unfilled circle reads as a crosshair, and painting the
+  // circle with a background colour would break in one theme or the other.
+  const hollowAt = new Set()
+  if (marker && (marker.type === 'open' || marker.type === 'paren')) hollowAt.add(marker.at)
+  for (const iv of intervals) {
+    for (const key of ['from', 'to']) {
+      if (iv[key] !== undefined && iv[`${key}Type`] === 'open') hollowAt.add(iv[key])
+    }
+  }
+
   // ticks + integer labels
   for (let index = 0; index < tickCount; index++) {
     const v = min + index
-    add('line', { x1: fmtN(X(v)), y1: String(yLine - 6), x2: fmtN(X(v)), y2: String(yLine + 6), stroke: 'currentColor', strokeWidth: '1.5' })
+    if (!hollowAt.has(v)) {
+      add('line', { x1: fmtN(X(v)), y1: String(yLine - 6), x2: fmtN(X(v)), y2: String(yLine + 6), stroke: 'currentColor', strokeWidth: '1.5' })
+    }
     add('text', { x: fmtN(X(v)), y: String(yLine + 25), textAnchor: 'middle', fontSize: '12', fill: 'currentColor' }, mathMinus(String(v)))
   }
 
@@ -669,6 +986,20 @@ export function buildNumberLine(props) {
       add('circle', {
         cx: fmtN(mx), cy: String(yLine), r: '5',
         ...(marker.type === 'open'
+          ? { fill: 'none', stroke: 'currentColor', strokeWidth: '1.8' }
+          : { fill: 'currentColor' }),
+      })
+    }
+  }
+
+  // interval endpoint circles, drawn over the ticks they may land on
+  for (const iv of intervals) {
+    for (const key of ['from', 'to']) {
+      if (iv[key] === undefined) continue // unbounded ends carry no circle
+      const open = iv[`${key}Type`] === 'open'
+      add('circle', {
+        cx: fmtN(X(iv[key])), cy: String(yLine), r: String(DOT_R),
+        ...(open
           ? { fill: 'none', stroke: 'currentColor', strokeWidth: '1.8' }
           : { fill: 'currentColor' }),
       })
@@ -817,10 +1148,32 @@ export function buildFigure(props) {
     }
   }
 
-  // ---- standalone segments (heights, braces…)
+  /** filled arrowhead at px point `tip`, pointing along px direction `dir` */
+  function arrowMark(tip, dir, size = 8, width = 4) {
+    const [ax, ay] = norm(dir)
+    const bx = tip[0] - size * ax, by = tip[1] - size * ay
+    const pts = [
+      tip,
+      [bx - width * ay, by + width * ax],
+      [bx + width * ay, by - width * ax],
+    ].map((q) => q.map(fmtN).join(',')).join(' ')
+    add('polygon', { points: pts, fill: 'currentColor' })
+  }
+
+  // ---- standalone segments (heights, braces…, mapping arrows)
   for (const s of segments) {
     const a = px(s.from), b = px(s.to)
-    seg(a, b, s.dashed ? DASH : {})
+    // `arrow: true` points at `to`; `arrow: "both"` also points back at `from`.
+    // Shorten the drawn shaft under each arrowhead so the stroke end cannot
+    // poke past the apex.
+    const dir = norm(sub(b, a))
+    const headEnd = s.arrow ? [b[0] - 6 * dir[0], b[1] - 6 * dir[1]] : b
+    const headStart = s.arrow === 'both' ? [a[0] + 6 * dir[0], a[1] + 6 * dir[1]] : a
+    seg(headStart, headEnd, s.dashed ? DASH : {})
+    if (s.arrow) {
+      arrowMark(b, sub(b, a))
+      if (s.arrow === 'both') arrowMark(a, sub(a, b))
+    }
     if (s.label) {
       const mid = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]
       const d = norm(sub(b, a))
