@@ -63,7 +63,12 @@ does not fetch upstream or run `source:check` or `source:history`.
 `npm run check:build` then verifies routes, internal links, search coverage,
 generated assets, and the 20,000-file ceiling. `npm run test:a11y` runs
 axe-core in Chromium against representative pages in light and dark themes,
-failing on serious or critical WCAG violations. `npm run ci` combines the
+failing on serious or critical WCAG violations. It never measures a
+dev server: Playwright builds `public/` and serves it through
+`npm run serve:public` on port 1315, and the suite refuses to run against a
+page carrying a livereload script or unloaded stylesheets. Set
+`A11Y_SKIP_BUILD=1` when a current build already exists, or `BASE_URL` to
+test a deployment. `npm run ci` combines the
 source, built-artifact, and browser-accessibility gates.
 
 ## Deployment

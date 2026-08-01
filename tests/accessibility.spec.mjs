@@ -104,6 +104,35 @@ function formatViolations(violations) {
     .join('\n\n');
 }
 
+// The suite is only meaningful against a production build. `hugo server`
+// injects livereload and serves unfingerprinted CSS, and a stale `public/`
+// (which a running dev server overwrites) serves pages whose stylesheets
+// 404 — either way every measured colour, size, and contrast is wrong and
+// the failures look like real accessibility regressions.
+async function assertProductionBuild(page, path) {
+  const provenance = await page.evaluate(() => ({
+    livereload: Boolean(document.querySelector('script[src*="livereload"]')),
+    stylesheets: [...document.querySelectorAll('link[rel~="stylesheet"]')].map(
+      (link) => ({ href: link.getAttribute('href'), loaded: Boolean(link.sheet) }),
+    ),
+  }));
+
+  expect(
+    provenance.livereload,
+    `${path} was served by \`hugo server\` (livereload script present). ` +
+      'Run the suite against a production build: `npm run build`, serve ' +
+      '`public/`, and set BASE_URL — or stop the dev server so Playwright ' +
+      'starts its own.',
+  ).toBe(false);
+
+  const unloaded = provenance.stylesheets.filter((sheet) => !sheet.loaded);
+  expect(
+    unloaded.map((sheet) => sheet.href).join(', '),
+    `${path} has stylesheets that did not load, so the page is unstyled and ` +
+      'every size and contrast measurement below is meaningless',
+  ).toBe('');
+}
+
 function parseCssRgb(value) {
   const channels = value.match(/[\d.]+/g)?.map(Number);
   if (!channels || channels.length < 3) {
@@ -151,6 +180,7 @@ for (const representativePage of REPRESENTATIVE_PAGES) {
       `Unexpected response for ${representativePage.path}`,
     ).toBeLessThan(400);
 
+    await assertProductionBuild(page, representativePage.path);
     await waitForPageReady(page);
 
     if (representativePage.title) {
@@ -184,6 +214,7 @@ test('MathLive placeholder meets AA contrast and remains muted', async ({
       '01-simplify-and-use-square-roots/',
     { waitUntil: 'domcontentloaded' },
   );
+  await assertProductionBuild(page, page.url());
   await waitForPageReady(page);
 
   const measurements = await page.locator('math-field').first().evaluate((field) => {
@@ -234,6 +265,7 @@ test('sidebar disclosure controls have at least 24 by 24 pixel targets', async (
   await page.goto('/math/intermediate-algebra/01-foundations/', {
     waitUntil: 'domcontentloaded',
   });
+  await assertProductionBuild(page, '/math/intermediate-algebra/01-foundations/');
   await waitForPageReady(page);
 
   const controls = page.locator('.hextra-sidebar-collapsible-button:visible');

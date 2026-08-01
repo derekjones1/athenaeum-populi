@@ -66,6 +66,14 @@ th .katex {
   }
 }
 
+/* Table-of-contents entries are a 20px line box separated by 16px, so a
+   single-line entry is under the 24px minimum target size (WCAG 2.2, 2.5.8).
+   Multi-line entries already clear it; pad every link to 24px so short
+   headings are not harder to hit than long ones. */
+nav.hextra-toc a {
+  padding-block: 2px;
+}
+
 /* Clearly visible keyboard focus ring everywhere (WCAG 2.4.7). */
 :focus-visible {
   outline: 2px solid hsl(var(--primary-hue) var(--primary-saturation) 50%);

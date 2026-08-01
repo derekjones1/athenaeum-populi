@@ -1,8 +1,21 @@
 import { defineConfig, devices } from '@playwright/test';
 
-const baseURL = process.env.BASE_URL || 'http://127.0.0.1:1313';
+// Port 1315, not Hugo's 1313: the suite must never attach to a running
+// `hugo server`. That server injects livereload, serves unfingerprinted CSS,
+// and overwrites `public/` as it renders — so measuring colour, size, and
+// contrast against it reports the dev server rather than the shipped site.
+const baseURL = process.env.BASE_URL || 'http://127.0.0.1:1315';
 const chromiumExecutablePath =
   process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH;
+
+// CI runs `npm run build` and `npm run check:build` immediately before
+// `npm run test:a11y`, so `public/` is already current there. Everywhere else
+// the build is part of starting the server, because a stale `public/` serves
+// pages whose fingerprinted stylesheets 404.
+const serveCommand = 'npm run serve:public';
+const webServerCommand = process.env.A11Y_SKIP_BUILD
+  ? serveCommand
+  : `npm run build && ${serveCommand}`;
 
 export default defineConfig({
   testDir: './tests',
@@ -37,10 +50,14 @@ export default defineConfig({
   webServer: process.env.BASE_URL
     ? undefined
     : {
-        command:
-          'npm run serve -- --environment production --bind 127.0.0.1 --port 1313 --disableFastRender',
+        command: webServerCommand,
         url: baseURL,
-        reuseExistingServer: !process.env.CI,
-        timeout: 120_000,
+        // Never inherit a server this config did not start: a leftover
+        // `hugo server` on the same port would silently invalidate the run.
+        reuseExistingServer: false,
+        // A cold `npm run build` (Hugo plus the global Pagefind index) is the
+        // slow part, not the server itself.
+        timeout: 300_000,
+        stdout: 'pipe',
       },
 });

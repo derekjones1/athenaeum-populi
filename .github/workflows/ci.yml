@@ -54,6 +54,10 @@ jobs:
       - run: npm run build
       - run: npm run check:build
       - run: npm run test:a11y
+        env:
+          # `npm run build` and `npm run check:build` above already
+          # produced and verified `public/`; the a11y server just serves it.
+          A11Y_SKIP_BUILD: "1"
 
   deploy:
     name: Deploy production
