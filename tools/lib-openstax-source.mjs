@@ -557,41 +557,137 @@ function walkMarkdownFiles(root) {
   return files.sort();
 }
 
+const AUTHORING_STATUSES = new Set(['complete', 'in-progress', 'scaffolded']);
+const MODULE_SCOPES = new Set(['bundle', 'mapped-collections']);
+
+/**
+ * Load the bundle-keyed source lock. Each bundle is one upstream OpenStax
+ * publishing repository pinned at one reviewed commit; each book belongs to
+ * exactly one bundle. Books may be `complete` (every upstream numbered section
+ * is authored locally) or still `in-progress`/`scaffolded`.
+ */
 export function loadSourceLock(repositoryRoot) {
   const lockPath = path.join(repositoryRoot, 'data/openstax/math-source-lock.json');
+  const relativeLock = path.relative(repositoryRoot, lockPath).split(path.sep).join('/');
   const lock = JSON.parse(readFileSync(lockPath, 'utf8'));
-  if (lock.schemaVersion !== 1 || !/^[0-9a-f]{40}$/.test(lock.commit || '')) {
-    throw new Error(`${path.relative(repositoryRoot, lockPath)} has an unsupported schema or invalid commit`);
+  if (lock.schemaVersion !== 2) {
+    throw new Error(`${relativeLock} has unsupported schemaVersion ${JSON.stringify(lock.schemaVersion)}; expected 2`);
   }
-  return lock;
+  const bundleKeys = Object.keys(lock.bundles || {});
+  if (!bundleKeys.length) throw new Error(`${relativeLock} declares no source bundles`);
+
+  const books = new Map();
+  for (const bundleKey of bundleKeys) {
+    const bundle = lock.bundles[bundleKey];
+    for (const field of ['repository', 'gitUrl', 'branch', 'sourceDir']) {
+      if (!bundle[field]) throw new Error(`${relativeLock}: bundle ${bundleKey} is missing ${field}`);
+    }
+    if (!/^[0-9a-f]{40}$/.test(bundle.commit || '')) {
+      throw new Error(`${relativeLock}: bundle ${bundleKey} has an invalid pinned commit`);
+    }
+    if (!MODULE_SCOPES.has(bundle.moduleScope)) {
+      throw new Error(`${relativeLock}: bundle ${bundleKey} needs moduleScope ${[...MODULE_SCOPES].join(' or ')}`);
+    }
+    const bookKeys = Object.keys(bundle.books || {});
+    if (!bookKeys.length) throw new Error(`${relativeLock}: bundle ${bundleKey} maps no books`);
+    for (const bookKey of bookKeys) {
+      if (books.has(bookKey)) {
+        throw new Error(`${relativeLock}: book ${bookKey} is declared in more than one bundle`);
+      }
+      const book = bundle.books[bookKey];
+      for (const field of ['sourceSlug', 'collectionId', 'collectionPath']) {
+        if (!book[field]) throw new Error(`${relativeLock}: ${bundleKey}/${bookKey} is missing ${field}`);
+      }
+      if (!/^[0-9a-f]{40}$/.test(book.authoredBaselineCommit || '')) {
+        throw new Error(`${relativeLock}: ${bundleKey}/${bookKey} has an invalid authoredBaselineCommit`);
+      }
+      if (!AUTHORING_STATUSES.has(book.authoringStatus)) {
+        throw new Error(
+          `${relativeLock}: ${bundleKey}/${bookKey} needs authoringStatus ${[...AUTHORING_STATUSES].join(', ')}`,
+        );
+      }
+      books.set(bookKey, { ...book, book: bookKey, bundleKey });
+    }
+  }
+  return { ...lock, bundleKeys, books };
 }
 
-function loadCollections(sourceRoot, lock) {
-  const collections = {};
-  for (const [book, config] of Object.entries(lock.books)) {
+export function bundleSourceDirectory(repositoryRoot, lock, bundleKey, overrides = {}) {
+  const bundle = lock.bundles[bundleKey];
+  if (!bundle) throw new Error(`unknown source bundle: ${bundleKey}`);
+  return path.resolve(repositoryRoot, overrides[bundleKey] || bundle.sourceDir);
+}
+
+export function resolveSourceDirectories(repositoryRoot, lock, { bundles = lock.bundleKeys, overrides = {} } = {}) {
+  const resolved = {};
+  for (const bundleKey of bundles) {
+    resolved[bundleKey] = bundleSourceDirectory(repositoryRoot, lock, bundleKey, overrides);
+  }
+  return resolved;
+}
+
+/** Every module referenced by a collection, including its preface and any
+ * appendices. Used to scope a sparse checkout to one book inside a bundle that
+ * also ships books this project does not use. */
+export function collectionModuleIds(collectionXml) {
+  return [...new Set(
+    [...collectionXml.matchAll(/<[\w.-]*:?module\b[^>]*\bdocument="([^"]+)"/g)].map((match) => match[1]),
+  )].sort();
+}
+
+function loadCollections(lock, sourceDirectories) {
+  const collections = new Map();
+  for (const [bookKey, config] of lock.books) {
+    const sourceRoot = sourceDirectories[config.bundleKey];
+    if (!sourceRoot) continue;
     const collectionPath = path.join(sourceRoot, config.collectionPath);
     if (!existsSync(collectionPath)) throw new Error(`missing OpenStax collection: ${collectionPath}`);
     const collection = parseCollectionXml(readFileSync(collectionPath, 'utf8'));
     if (collection.slug !== config.sourceSlug) {
       throw new Error(`${config.collectionPath} slug ${JSON.stringify(collection.slug)} does not match lock ${JSON.stringify(config.sourceSlug)}`);
     }
-    collections[book] = collection;
+    collections.set(bookKey, { ...config, collection, sourceRoot });
   }
   return collections;
 }
 
-export function buildSourceMap(repositoryRoot, sourceRoot, lock = loadSourceLock(repositoryRoot)) {
+/** Authored chapter landings for a book, whether or not any section pages
+ * inside them exist yet. A scaffolded book is exactly this: chapter landings
+ * with no numbered sections. */
+export function localChapterIndexes(repositoryRoot, bookKey) {
+  const bookRoot = path.join(repositoryRoot, 'content/math', bookKey);
+  if (!existsSync(bookRoot)) return [];
+  return readdirSync(bookRoot, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && /^\d{2}-/.test(entry.name))
+    .map((entry) => {
+      const localPath = `content/math/${bookKey}/${entry.name}/_index.md`;
+      const absolute = path.join(repositoryRoot, localPath);
+      const attributes = existsSync(absolute)
+        ? parseFrontmatter(readFileSync(absolute, 'utf8')).attributes
+        : {};
+      return {
+        directory: entry.name,
+        localPath,
+        title: attributes.title || '',
+        authoringStatus: attributes.authoring_status || null,
+        sourceChapter: attributes.source_chapter === undefined ? null : Number(attributes.source_chapter),
+      };
+    })
+    .sort((left, right) => left.directory.localeCompare(right.directory));
+}
+
+export function buildSourceMap(repositoryRoot, sourceDirectories, lock = loadSourceLock(repositoryRoot)) {
   const contentRoot = path.join(repositoryRoot, 'content/math');
-  const collections = loadCollections(sourceRoot, lock);
+  const collections = loadCollections(lock, sourceDirectories);
   const entries = [];
   const errors = [];
   const chapterLocalCounts = new Map();
 
   for (const absolutePath of walkMarkdownFiles(contentRoot)) {
     const relativePath = path.relative(repositoryRoot, absolutePath).split(path.sep).join('/');
-    const relativeParts = relativePath.split('/');
-    const book = relativeParts[2];
-    if (!lock.books[book]) continue;
+    const book = relativePath.split('/')[2];
+    const config = collections.get(book);
+    if (!config) continue;
     const markdown = readFileSync(absolutePath, 'utf8');
     const local = parseLocalSection(markdown);
     if (!local.sourceSection) continue;
@@ -602,7 +698,7 @@ export function buildSourceMap(repositoryRoot, sourceRoot, lock = loadSourceLock
     }
     const chapterNumber = Number(sectionMatch[1]);
     const sectionNumber = Number(sectionMatch[2]);
-    const chapter = collections[book].chapters[chapterNumber - 1];
+    const chapter = config.collection.chapters[chapterNumber - 1];
     if (!chapter) {
       errors.push(`${relativePath}: upstream collection has no chapter ${chapterNumber}`);
       continue;
@@ -612,7 +708,7 @@ export function buildSourceMap(repositoryRoot, sourceRoot, lock = loadSourceLock
       errors.push(`${relativePath}: upstream chapter ${chapterNumber} has no section ${sectionNumber}`);
       continue;
     }
-    const modulePath = path.join(sourceRoot, 'modules', moduleId, 'index.cnxml');
+    const modulePath = path.join(config.sourceRoot, 'modules', moduleId, 'index.cnxml');
     if (!existsSync(modulePath)) {
       errors.push(`${relativePath}: missing modules/${moduleId}/index.cnxml`);
       continue;
@@ -624,6 +720,7 @@ export function buildSourceMap(repositoryRoot, sourceRoot, lock = loadSourceLock
     }
     entries.push({
       localPath: relativePath,
+      bundle: config.bundleKey,
       book,
       sourceSection: local.sourceSection,
       moduleId,
@@ -634,30 +731,91 @@ export function buildSourceMap(repositoryRoot, sourceRoot, lock = loadSourceLock
     chapterLocalCounts.set(chapterKey, (chapterLocalCounts.get(chapterKey) || 0) + 1);
   }
 
-  for (const [book, collection] of Object.entries(collections)) {
+  const books = {};
+  for (const [bookKey, config] of collections) {
+    const { collection } = config;
+    const upstreamSections = collection.chapters.reduce((sum, chapter) => sum + chapter.sectionModuleIds.length, 0);
+    const mappedSections = entries.filter((entry) => entry.book === bookKey).length;
+    const chapterIndexes = localChapterIndexes(repositoryRoot, bookKey);
+    const complete = config.authoringStatus === 'complete';
+
+    for (const chapterIndex of chapterIndexes) {
+      if (!Number.isInteger(chapterIndex.sourceChapter)) {
+        errors.push(`${chapterIndex.localPath}: chapter landing needs a numeric source_chapter`);
+        continue;
+      }
+      if (!collection.chapters[chapterIndex.sourceChapter - 1]) {
+        errors.push(`${chapterIndex.localPath}: upstream collection has no chapter ${chapterIndex.sourceChapter}`);
+      }
+      // `authoring_status` exempts an empty chapter landing from the section
+      // lints. It must disappear as soon as the chapter has section pages, so
+      // an unwritten chapter can never be mistaken for a finished one.
+      const authoredHere = chapterLocalCounts.get(`${bookKey}:${chapterIndex.sourceChapter}`) || 0;
+      if (chapterIndex.authoringStatus && authoredHere) {
+        errors.push(`${chapterIndex.localPath}: chapter has ${authoredHere} authored section(s); remove authoring_status`);
+      }
+      if (!chapterIndex.authoringStatus && !authoredHere) {
+        errors.push(`${chapterIndex.localPath}: chapter landing has no authored sections; declare authoring_status: scaffolded`);
+      }
+      if (complete && chapterIndex.authoringStatus) {
+        errors.push(`${chapterIndex.localPath}: ${bookKey} is complete, so no chapter landing may declare authoring_status`);
+      }
+    }
+    if (complete && chapterIndexes.length !== collection.chapters.length) {
+      errors.push(
+        `${bookKey}: ${chapterIndexes.length} local chapter landings but ${collection.chapters.length} upstream chapters`,
+      );
+    }
+    if (complete && !mappedSections) {
+      errors.push(`${bookKey}: authoringStatus is complete but no local numbered sections are mapped`);
+    }
+
     for (const chapter of collection.chapters) {
-      const localCount = chapterLocalCounts.get(`${book}:${chapter.chapter}`) || 0;
-      if (localCount !== chapter.sectionModuleIds.length) {
+      const localCount = chapterLocalCounts.get(`${bookKey}:${chapter.chapter}`) || 0;
+      if (complete && localCount !== chapter.sectionModuleIds.length) {
         errors.push(
-          `${book} chapter ${chapter.chapter}: ${localCount} local numbered sections but ${chapter.sectionModuleIds.length} upstream section modules`,
+          `${bookKey} chapter ${chapter.chapter}: ${localCount} local numbered sections but ${chapter.sectionModuleIds.length} upstream section modules`,
+        );
+      }
+      if (!complete && localCount > chapter.sectionModuleIds.length) {
+        errors.push(
+          `${bookKey} chapter ${chapter.chapter}: ${localCount} local numbered sections exceed ${chapter.sectionModuleIds.length} upstream section modules`,
         );
       }
     }
+
+    books[bookKey] = {
+      bundle: config.bundleKey,
+      authoringStatus: config.authoringStatus,
+      upstreamChapters: collection.chapters.length,
+      upstreamSections,
+      localChapters: chapterIndexes.length,
+      mappedSections,
+    };
   }
 
   entries.sort((left, right) => left.localPath.localeCompare(right.localPath));
   const ids = new Set();
   for (const entry of entries) {
-    if (ids.has(entry.moduleId)) errors.push(`duplicate upstream module mapping: ${entry.moduleId}`);
-    ids.add(entry.moduleId);
+    const key = `${entry.bundle}:${entry.moduleId}`;
+    if (ids.has(key)) errors.push(`duplicate upstream module mapping: ${entry.bundle} ${entry.moduleId}`);
+    ids.add(key);
+  }
+
+  const bundles = {};
+  for (const bundleKey of Object.keys(sourceDirectories)) {
+    bundles[bundleKey] = {
+      repository: lock.bundles[bundleKey].repository,
+      commit: lock.bundles[bundleKey].commit,
+    };
   }
 
   return {
     map: {
-      schemaVersion: 1,
+      schemaVersion: 2,
       sourceLock: 'data/openstax/math-source-lock.json',
-      repository: lock.repository,
-      commit: lock.commit,
+      bundles,
+      books,
       sections: entries,
     },
     errors,
@@ -670,15 +828,29 @@ export function verifyCommittedSourceMap(repositoryRoot, lock = loadSourceLock(r
   if (!existsSync(mapPath)) return { errors: ['data/openstax/math-source-map.json is missing'], map: null };
   const map = JSON.parse(readFileSync(mapPath, 'utf8'));
   const errors = [];
-  if (map.schemaVersion !== 1) errors.push('source map schemaVersion must be 1');
-  if (map.commit !== lock.commit) errors.push(`source map commit ${map.commit} does not match lock ${lock.commit}`);
-  if (map.repository !== lock.repository) errors.push('source map repository does not match source lock');
+  if (map.schemaVersion !== 2) errors.push('source map schemaVersion must be 2');
+
+  const mappedBundleKeys = Object.keys(map.bundles || {}).sort();
+  const lockBundleKeys = [...lock.bundleKeys].sort();
+  if (JSON.stringify(mappedBundleKeys) !== JSON.stringify(lockBundleKeys)) {
+    errors.push(`source map bundles ${JSON.stringify(mappedBundleKeys)} do not match lock ${JSON.stringify(lockBundleKeys)}`);
+  }
+  for (const bundleKey of lockBundleKeys) {
+    const mapped = (map.bundles || {})[bundleKey];
+    if (!mapped) continue;
+    if (mapped.commit !== lock.bundles[bundleKey].commit) {
+      errors.push(`source map commit ${mapped.commit} for ${bundleKey} does not match lock ${lock.bundles[bundleKey].commit}`);
+    }
+    if (mapped.repository !== lock.bundles[bundleKey].repository) {
+      errors.push(`source map repository for ${bundleKey} does not match the source lock`);
+    }
+  }
 
   const expected = new Map();
   for (const absolutePath of walkMarkdownFiles(path.join(repositoryRoot, 'content/math'))) {
     const relativePath = path.relative(repositoryRoot, absolutePath).split(path.sep).join('/');
     const book = relativePath.split('/')[2];
-    if (!lock.books[book]) continue;
+    if (!lock.books.has(book)) continue;
     const local = parseLocalSection(readFileSync(absolutePath, 'utf8'));
     if (local.sourceSection) expected.set(relativePath, { book, sourceSection: local.sourceSection, title: local.title });
   }
@@ -688,6 +860,11 @@ export function verifyCommittedSourceMap(repositoryRoot, lock = loadSourceLock(r
     actual.set(entry.localPath, entry);
     if (!/^[a-z]\d+$/i.test(entry.moduleId || '')) errors.push(`${entry.localPath}: invalid module id ${entry.moduleId}`);
     if (!/^[0-9a-f]{64}$/.test(entry.moduleSha256 || '')) errors.push(`${entry.localPath}: invalid module SHA-256`);
+    const bookConfig = lock.books.get(entry.book);
+    if (!bookConfig) errors.push(`${entry.localPath}: mapped book ${entry.book} is not in the source lock`);
+    else if (entry.bundle !== bookConfig.bundleKey) {
+      errors.push(`${entry.localPath}: mapped bundle ${entry.bundle} should be ${bookConfig.bundleKey}`);
+    }
   }
   for (const [localPath, section] of expected) {
     const entry = actual.get(localPath);
@@ -708,8 +885,31 @@ export function verifyCommittedSourceMap(repositoryRoot, lock = loadSourceLock(r
   }
   const moduleIds = new Set();
   for (const entry of actual.values()) {
-    if (moduleIds.has(entry.moduleId)) errors.push(`duplicate mapped module id: ${entry.moduleId}`);
-    moduleIds.add(entry.moduleId);
+    const key = `${entry.bundle}:${entry.moduleId}`;
+    if (moduleIds.has(key)) errors.push(`duplicate mapped module id: ${entry.bundle} ${entry.moduleId}`);
+    moduleIds.add(key);
+  }
+
+  const mappedBooks = Object.keys(map.books || {}).sort();
+  const lockBooks = [...lock.books.keys()].sort();
+  if (JSON.stringify(mappedBooks) !== JSON.stringify(lockBooks)) {
+    errors.push(`source map books ${JSON.stringify(mappedBooks)} do not match lock ${JSON.stringify(lockBooks)}`);
+  }
+  for (const bookKey of lockBooks) {
+    const summary = (map.books || {})[bookKey];
+    if (!summary) continue;
+    const config = lock.books.get(bookKey);
+    if (summary.bundle !== config.bundleKey) errors.push(`source map book ${bookKey} is attributed to bundle ${summary.bundle}`);
+    if (summary.authoringStatus !== config.authoringStatus) {
+      errors.push(`source map book ${bookKey} records authoringStatus ${summary.authoringStatus}, lock says ${config.authoringStatus}`);
+    }
+    const counted = [...actual.values()].filter((entry) => entry.book === bookKey).length;
+    if (summary.mappedSections !== counted) {
+      errors.push(`source map book ${bookKey} claims ${summary.mappedSections} mapped sections but lists ${counted}`);
+    }
+    if (config.authoringStatus === 'complete' && summary.mappedSections !== summary.upstreamSections) {
+      errors.push(`source map book ${bookKey} is complete but maps ${summary.mappedSections} of ${summary.upstreamSections} upstream sections`);
+    }
   }
 
   return { errors, map, expectedCount: expected.size, actualCount: actual.size };
@@ -749,26 +949,37 @@ function matchTries(sourceTries, localInteractionsList) {
   });
 }
 
-export function auditExistingMath(repositoryRoot, sourceRoot, lock = loadSourceLock(repositoryRoot)) {
+export function auditExistingMath(
+  repositoryRoot,
+  sourceDirectories,
+  lock = loadSourceLock(repositoryRoot),
+) {
   const committed = verifyCommittedSourceMap(repositoryRoot, lock);
   if (committed.errors.length) {
-    return { structuralErrors: committed.errors, sections: [], summary: null };
+    return { structuralErrors: committed.errors, sections: [], books: [], summary: null };
   }
-  const current = buildSourceMap(repositoryRoot, sourceRoot, lock);
+  const current = buildSourceMap(repositoryRoot, sourceDirectories, lock);
   if (current.errors.length) {
-    return { structuralErrors: current.errors, sections: [], summary: null };
+    return { structuralErrors: current.errors, sections: [], books: [], summary: null };
   }
+  const auditedBundles = new Set(Object.keys(sourceDirectories));
   const baselineByPath = new Map(committed.map.sections.map((entry) => [entry.localPath, entry]));
   const decisionsPath = path.join(repositoryRoot, 'data/openstax/math-reconciliation-decisions.json');
   const decisions = existsSync(decisionsPath)
     ? JSON.parse(readFileSync(decisionsPath, 'utf8'))
-    : { metadataDecisions: [] };
-  if (decisions.targetCommit && decisions.targetCommit !== lock.commit) {
-    return {
-      structuralErrors: [`reconciliation decisions target ${decisions.targetCommit} does not match source lock ${lock.commit}`],
-      sections: [],
-      summary: null,
-    };
+    : { targetCommits: {}, metadataDecisions: [] };
+  for (const bundleKey of auditedBundles) {
+    const target = (decisions.targetCommits || {})[bundleKey];
+    if (target && target !== lock.bundles[bundleKey].commit) {
+      return {
+        structuralErrors: [
+          `reconciliation decisions target ${target} for ${bundleKey} does not match source lock ${lock.bundles[bundleKey].commit}`,
+        ],
+        sections: [],
+        books: [],
+        summary: null,
+      };
+    }
   }
   const decisionsByPath = new Map();
   for (const decision of decisions.metadataDecisions || []) {
@@ -779,10 +990,14 @@ export function auditExistingMath(repositoryRoot, sourceRoot, lock = loadSourceL
   const sections = [];
 
   for (const entry of current.map.sections) {
+    if (!auditedBundles.has(entry.bundle)) continue;
     const baseline = baselineByPath.get(entry.localPath);
     const markdown = readFileSync(path.join(repositoryRoot, entry.localPath), 'utf8');
     const local = parseLocalSection(markdown);
-    const moduleXml = readFileSync(path.join(sourceRoot, 'modules', entry.moduleId, 'index.cnxml'), 'utf8');
+    const moduleXml = readFileSync(
+      path.join(sourceDirectories[entry.bundle], 'modules', entry.moduleId, 'index.cnxml'),
+      'utf8',
+    );
     const source = parseModuleXml(moduleXml);
     const titleScore = tokenSimilarity(source.title, local.title);
     const objectiveMatches = source.objectives.map((objective) => ({
@@ -844,13 +1059,19 @@ export function auditExistingMath(repositoryRoot, sourceRoot, lock = loadSourceL
     });
   }
 
+  const books = Object.entries(current.map.books)
+    .filter(([, summary]) => auditedBundles.has(summary.bundle))
+    .map(([book, summary]) => ({ book, ...summary }))
+    .sort((left, right) => left.book.localeCompare(right.book));
+
   const summary = {
     sections: sections.length,
     metadataMatched: sections.filter((section) => section.status === 'metadata-matched').length,
     adaptationsAdjudicated: sections.filter((section) => section.status === 'adaptation-adjudicated').length,
     needsReview: sections.filter((section) => section.status === 'needs-review').length,
     changedUpstream: sections.filter((section) => section.reviewFlags.includes('upstream-module-changed')).length,
-    mappedBooks: Object.keys(lock.books).length,
+    mappedBooks: books.filter((book) => book.mappedSections > 0).length,
+    scaffoldedBooks: books.filter((book) => book.authoringStatus !== 'complete').map((book) => book.book),
     objectivesMatched: sections.reduce((sum, section) => sum + section.objectives.matched, 0),
     objectivesTotal: sections.reduce((sum, section) => sum + section.objectives.total, 0),
     headingsMatched: sections.reduce((sum, section) => sum + section.headings.matched, 0),
@@ -860,5 +1081,5 @@ export function auditExistingMath(repositoryRoot, sourceRoot, lock = loadSourceL
     localInteractions: sections.reduce((sum, section) => sum + section.localCounts.interactions, 0),
   };
 
-  return { structuralErrors: [], sections, summary };
+  return { structuralErrors: [], sections, books, summary };
 }

@@ -1,9 +1,13 @@
 {
-  "schemaVersion": 1,
-  "targetCommit": "38cae454e644abf9f0a623e876994553881597c9",
+  "schemaVersion": 2,
+  "targetCommits": {
+    "prealgebra-bundle": "38cae454e644abf9f0a623e876994553881597c9",
+    "college-algebra-bundle": "789b54099106b071d1d32bfcee454fed72eb4768"
+  },
   "metadataDecisions": [
     {
       "localPath": "content/math/elementary-algebra/04-graphs/04-understand-slope-of-a-line.md",
+      "bundle": "prealgebra-bundle",
       "moduleId": "m82483",
       "covers": [
         "objective-needs-review",
@@ -17,6 +21,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/07-factoring/04-factor-special-products.md",
+      "bundle": "prealgebra-bundle",
       "moduleId": "m82528",
       "covers": [
         "objective-needs-review"
@@ -29,6 +34,7 @@
     },
     {
       "localPath": "content/math/prealgebra/02-the-language-of-algebra/03-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md",
+      "bundle": "prealgebra-bundle",
       "moduleId": "m81271",
       "covers": [
         "heading-needs-review"
@@ -41,6 +47,7 @@
     },
     {
       "localPath": "content/math/prealgebra/03-integers/02-add-integers.md",
+      "bundle": "prealgebra-bundle",
       "moduleId": "m81276",
       "covers": [
         "heading-needs-review"
@@ -54,6 +61,7 @@
     },
     {
       "localPath": "content/math/prealgebra/09-math-models-and-geometry/06-solve-geometry-applications-volume-and-surface-area.md",
+      "bundle": "prealgebra-bundle",
       "moduleId": "m81328",
       "covers": [
         "heading-needs-review"
@@ -68,6 +76,7 @@
   "upstreamDriftDecisions": [
     {
       "localPath": "content/math/elementary-algebra/01-foundations/02-use-the-language-of-algebra.md",
+      "bundle": "prealgebra-bundle",
       "moduleId": "m82453",
       "sourceElementIds": [
         "fs-id1170655121545",
@@ -79,6 +88,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/07-solve-linear-inequalities.md",
+      "bundle": "prealgebra-bundle",
       "moduleId": "m82470",
       "sourceElementIds": [
         "fs-id1168345426388",
@@ -91,6 +101,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/01-foundations/01-use-the-language-of-algebra.md",
+      "bundle": "prealgebra-bundle",
       "moduleId": "m81422",
       "sourceElementIds": [
         "fs-id1167836606933",

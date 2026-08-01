@@ -1,11 +1,54 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "sourceLock": "data/openstax/math-source-lock.json",
-  "repository": "https://github.com/openstax/osbooks-prealgebra-bundle",
-  "commit": "38cae454e644abf9f0a623e876994553881597c9",
+  "bundles": {
+    "prealgebra-bundle": {
+      "repository": "https://github.com/openstax/osbooks-prealgebra-bundle",
+      "commit": "38cae454e644abf9f0a623e876994553881597c9"
+    },
+    "college-algebra-bundle": {
+      "repository": "https://github.com/openstax/osbooks-college-algebra-bundle",
+      "commit": "789b54099106b071d1d32bfcee454fed72eb4768"
+    }
+  },
+  "books": {
+    "prealgebra": {
+      "bundle": "prealgebra-bundle",
+      "authoringStatus": "complete",
+      "upstreamChapters": 11,
+      "upstreamSections": 60,
+      "localChapters": 11,
+      "mappedSections": 60
+    },
+    "elementary-algebra": {
+      "bundle": "prealgebra-bundle",
+      "authoringStatus": "complete",
+      "upstreamChapters": 10,
+      "upstreamSections": 71,
+      "localChapters": 10,
+      "mappedSections": 71
+    },
+    "intermediate-algebra": {
+      "bundle": "prealgebra-bundle",
+      "authoringStatus": "complete",
+      "upstreamChapters": 12,
+      "upstreamSections": 70,
+      "localChapters": 12,
+      "mappedSections": 70
+    },
+    "precalculus": {
+      "bundle": "college-algebra-bundle",
+      "authoringStatus": "scaffolded",
+      "upstreamChapters": 12,
+      "upstreamSections": 73,
+      "localChapters": 12,
+      "mappedSections": 7
+    }
+  },
   "sections": [
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "1.1",
       "moduleId": "m82452",
@@ -14,6 +57,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/02-use-the-language-of-algebra.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "1.2",
       "moduleId": "m82453",
@@ -22,6 +66,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/03-add-and-subtract-integers.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "1.3",
       "moduleId": "m82454",
@@ -30,6 +75,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/04-multiply-and-divide-integers.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "1.4",
       "moduleId": "m82455",
@@ -38,6 +84,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/05-visualize-fractions.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "1.5",
       "moduleId": "m82456",
@@ -46,6 +93,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/06-add-and-subtract-fractions.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "1.6",
       "moduleId": "m82457",
@@ -54,6 +102,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/07-decimals.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "1.7",
       "moduleId": "m82458",
@@ -62,6 +111,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/08-the-real-numbers.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "1.8",
       "moduleId": "m82459",
@@ -70,6 +120,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/09-properties-of-real-numbers.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "1.9",
       "moduleId": "m82460",
@@ -78,6 +129,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/10-systems-of-measurement.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "1.10",
       "moduleId": "m82461",
@@ -86,6 +138,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/01-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "2.1",
       "moduleId": "m82463",
@@ -94,6 +147,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/02-solve-equations-using-the-division-and-multiplication-properties-of-equality.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "2.2",
       "moduleId": "m82464",
@@ -102,6 +156,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/03-solve-equations-with-variables-and-constants-on-both-sides.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "2.3",
       "moduleId": "m82465",
@@ -110,6 +165,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/04-use-a-general-strategy-to-solve-linear-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "2.4",
       "moduleId": "m82467",
@@ -118,6 +174,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/05-solve-equations-with-fractions-or-decimals.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "2.5",
       "moduleId": "m82468",
@@ -126,6 +183,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/06-solve-a-formula-for-a-specific-variable.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "2.6",
       "moduleId": "m82469",
@@ -134,6 +192,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/07-solve-linear-inequalities.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "2.7",
       "moduleId": "m82470",
@@ -142,6 +201,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/03-math-models/01-use-a-problem-solving-strategy.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "3.1",
       "moduleId": "m82472",
@@ -150,6 +210,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/03-math-models/02-solve-percent-applications.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "3.2",
       "moduleId": "m82473",
@@ -158,6 +219,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/03-math-models/03-solve-mixture-applications.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "3.3",
       "moduleId": "m82475",
@@ -166,6 +228,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/03-math-models/04-solve-geometry-applications-triangles-rectangles-and-the-pythagorean-theorem.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "3.4",
       "moduleId": "m82476",
@@ -174,6 +237,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/03-math-models/05-solve-uniform-motion-applications.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "3.5",
       "moduleId": "m82477",
@@ -182,6 +246,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/03-math-models/06-solve-applications-with-linear-inequalities.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "3.6",
       "moduleId": "m82478",
@@ -190,6 +255,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/04-graphs/01-use-the-rectangular-coordinate-system.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "4.1",
       "moduleId": "m82480",
@@ -198,6 +264,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/04-graphs/02-graph-linear-equations-in-two-variables.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "4.2",
       "moduleId": "m82481",
@@ -206,6 +273,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/04-graphs/03-graph-with-intercepts.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "4.3",
       "moduleId": "m82482",
@@ -214,6 +282,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/04-graphs/04-understand-slope-of-a-line.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "4.4",
       "moduleId": "m82483",
@@ -222,6 +291,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/04-graphs/05-use-the-slope-intercept-form-of-an-equation-of-a-line.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "4.5",
       "moduleId": "m82485",
@@ -230,6 +300,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/04-graphs/06-find-the-equation-of-a-line.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "4.6",
       "moduleId": "m82486",
@@ -238,6 +309,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/04-graphs/07-graphs-of-linear-inequalities.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "4.7",
       "moduleId": "m82488",
@@ -246,6 +318,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/05-systems-of-linear-equations/01-solve-systems-of-equations-by-graphing.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "5.1",
       "moduleId": "m82490",
@@ -254,6 +327,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/05-systems-of-linear-equations/02-solving-systems-of-equations-by-substitution.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "5.2",
       "moduleId": "m82494",
@@ -262,6 +336,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/05-systems-of-linear-equations/03-solve-systems-of-equations-by-elimination.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "5.3",
       "moduleId": "m82495",
@@ -270,6 +345,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/05-systems-of-linear-equations/04-solve-applications-with-systems-of-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "5.4",
       "moduleId": "m82497",
@@ -278,6 +354,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/05-systems-of-linear-equations/05-solve-mixture-applications-with-systems-of-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "5.5",
       "moduleId": "m82498",
@@ -286,6 +363,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/05-systems-of-linear-equations/06-graphing-systems-of-linear-inequalities.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "5.6",
       "moduleId": "m82499",
@@ -294,6 +372,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/06-polynomials/01-add-and-subtract-polynomials.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "6.1",
       "moduleId": "m82501",
@@ -302,6 +381,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/06-polynomials/02-use-multiplication-properties-of-exponents.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "6.2",
       "moduleId": "m82504",
@@ -310,6 +390,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/06-polynomials/03-multiply-polynomials.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "6.3",
       "moduleId": "m82507",
@@ -318,6 +399,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/06-polynomials/04-special-products.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "6.4",
       "moduleId": "m82508",
@@ -326,6 +408,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/06-polynomials/05-divide-monomials.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "6.5",
       "moduleId": "m82509",
@@ -334,6 +417,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/06-polynomials/06-divide-polynomials.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "6.6",
       "moduleId": "m82513",
@@ -342,6 +426,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/06-polynomials/07-integer-exponents-and-scientific-notation.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "6.7",
       "moduleId": "m82514",
@@ -350,6 +435,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/07-factoring/01-greatest-common-factor-and-factor-by-grouping.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "7.1",
       "moduleId": "m82564",
@@ -358,6 +444,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/07-factoring/02-factor-trinomials-of-the-form-x2-bx-c.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "7.2",
       "moduleId": "m82566",
@@ -366,6 +453,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/07-factoring/03-factor-trinomials-of-the-form-ax2-bx-c.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "7.3",
       "moduleId": "m82527",
@@ -374,6 +462,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/07-factoring/04-factor-special-products.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "7.4",
       "moduleId": "m82528",
@@ -382,6 +471,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/07-factoring/05-general-strategy-for-factoring-polynomials.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "7.5",
       "moduleId": "m82529",
@@ -390,6 +480,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/07-factoring/06-quadratic-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "7.6",
       "moduleId": "m82530",
@@ -398,6 +489,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/08-rational-expressions-and-equations/01-simplify-rational-expressions.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "8.1",
       "moduleId": "m82532",
@@ -406,6 +498,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/08-rational-expressions-and-equations/02-multiply-and-divide-rational-expressions.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "8.2",
       "moduleId": "m82533",
@@ -414,6 +507,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/08-rational-expressions-and-equations/03-add-and-subtract-rational-expressions-with-a-common-denominator.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "8.3",
       "moduleId": "m82534",
@@ -422,6 +516,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/08-rational-expressions-and-equations/04-add-and-subtract-rational-expressions-with-unlike-denominators.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "8.4",
       "moduleId": "m82535",
@@ -430,6 +525,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/08-rational-expressions-and-equations/05-simplify-complex-rational-expressions.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "8.5",
       "moduleId": "m82537",
@@ -438,6 +534,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/08-rational-expressions-and-equations/06-solve-rational-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "8.6",
       "moduleId": "m82538",
@@ -446,6 +543,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/08-rational-expressions-and-equations/07-solve-proportion-and-similar-figure-applications.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "8.7",
       "moduleId": "m82539",
@@ -454,6 +552,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/08-rational-expressions-and-equations/08-solve-uniform-motion-and-work-applications.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "8.8",
       "moduleId": "m82543",
@@ -462,6 +561,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/08-rational-expressions-and-equations/09-use-direct-and-inverse-variation.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "8.9",
       "moduleId": "m82560",
@@ -470,6 +570,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/09-roots-and-radicals/01-simplify-and-use-square-roots.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "9.1",
       "moduleId": "m82545",
@@ -478,6 +579,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/09-roots-and-radicals/02-simplify-square-roots.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "9.2",
       "moduleId": "m82546",
@@ -486,6 +588,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/09-roots-and-radicals/03-add-and-subtract-square-roots.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "9.3",
       "moduleId": "m82547",
@@ -494,6 +597,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/09-roots-and-radicals/04-multiply-square-roots.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "9.4",
       "moduleId": "m82548",
@@ -502,6 +606,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/09-roots-and-radicals/05-divide-square-roots.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "9.5",
       "moduleId": "m82550",
@@ -510,6 +615,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/09-roots-and-radicals/06-solve-equations-with-square-roots.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "9.6",
       "moduleId": "m82551",
@@ -518,6 +624,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/09-roots-and-radicals/07-higher-roots.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "9.7",
       "moduleId": "m82552",
@@ -526,6 +633,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/09-roots-and-radicals/08-rational-exponents.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "9.8",
       "moduleId": "m82553",
@@ -534,6 +642,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/10-quadratic-equations/01-solve-quadratic-equations-using-the-square-root-property.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "10.1",
       "moduleId": "m82555",
@@ -542,6 +651,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/10-quadratic-equations/02-solve-quadratic-equations-by-completing-the-square.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "10.2",
       "moduleId": "m82556",
@@ -550,6 +660,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/10-quadratic-equations/03-solve-quadratic-equations-using-the-quadratic-formula.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "10.3",
       "moduleId": "m82557",
@@ -558,6 +669,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/10-quadratic-equations/04-solve-applications-modeled-by-quadratic-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "10.4",
       "moduleId": "m82558",
@@ -566,6 +678,7 @@
     },
     {
       "localPath": "content/math/elementary-algebra/10-quadratic-equations/05-graphing-quadratic-equations-in-two-variables.md",
+      "bundle": "prealgebra-bundle",
       "book": "elementary-algebra",
       "sourceSection": "10.5",
       "moduleId": "m82559",
@@ -574,6 +687,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/01-foundations/01-use-the-language-of-algebra.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "1.1",
       "moduleId": "m81422",
@@ -582,6 +696,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/01-foundations/02-integers.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "1.2",
       "moduleId": "m81423",
@@ -590,6 +705,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/01-foundations/03-fractions.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "1.3",
       "moduleId": "m81359",
@@ -598,6 +714,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/01-foundations/04-decimals.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "1.4",
       "moduleId": "m81425",
@@ -606,6 +723,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/01-foundations/05-properties-of-real-numbers.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "1.5",
       "moduleId": "m81360",
@@ -614,6 +732,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/02-solving-linear-equations/01-use-a-general-strategy-to-solve-linear-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "2.1",
       "moduleId": "m81362",
@@ -622,6 +741,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/02-solving-linear-equations/02-use-a-problem-solving-strategy.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "2.2",
       "moduleId": "m81363",
@@ -630,6 +750,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/02-solving-linear-equations/03-solve-a-formula-for-a-specific-variable.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "2.3",
       "moduleId": "m81364",
@@ -638,6 +759,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/02-solving-linear-equations/04-solve-mixture-and-uniform-motion-applications.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "2.4",
       "moduleId": "m81365",
@@ -646,6 +768,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/02-solving-linear-equations/05-solve-linear-inequalities.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "2.5",
       "moduleId": "m81366",
@@ -654,6 +777,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/02-solving-linear-equations/06-solve-compound-inequalities.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "2.6",
       "moduleId": "m81367",
@@ -662,6 +786,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/02-solving-linear-equations/07-solve-absolute-value-inequalities.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "2.7",
       "moduleId": "m81426",
@@ -670,6 +795,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/03-graphs-and-functions/01-graph-linear-equations-in-two-variables.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "3.1",
       "moduleId": "m81369",
@@ -678,6 +804,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/03-graphs-and-functions/02-slope-of-a-line.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "3.2",
       "moduleId": "m81370",
@@ -686,6 +813,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/03-graphs-and-functions/03-find-the-equation-of-a-line.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "3.3",
       "moduleId": "m81371",
@@ -694,6 +822,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/03-graphs-and-functions/04-graph-linear-inequalities-in-two-variables.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "3.4",
       "moduleId": "m81372",
@@ -702,6 +831,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/03-graphs-and-functions/05-relations-and-functions.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "3.5",
       "moduleId": "m81373",
@@ -710,6 +840,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/03-graphs-and-functions/06-graphs-of-functions.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "3.6",
       "moduleId": "m81374",
@@ -718,6 +849,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/04-systems-of-linear-equations/01-solve-systems-of-linear-equations-with-two-variables.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "4.1",
       "moduleId": "m81427",
@@ -726,6 +858,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/04-systems-of-linear-equations/02-solve-applications-with-systems-of-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "4.2",
       "moduleId": "m81380",
@@ -734,6 +867,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/04-systems-of-linear-equations/03-solve-mixture-applications-with-systems-of-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "4.3",
       "moduleId": "m81381",
@@ -742,6 +876,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/04-systems-of-linear-equations/04-solve-systems-of-equations-with-three-variables.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "4.4",
       "moduleId": "m81428",
@@ -750,6 +885,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/04-systems-of-linear-equations/05-solve-systems-of-equations-using-matrices.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "4.5",
       "moduleId": "m81429",
@@ -758,6 +894,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/04-systems-of-linear-equations/06-solve-systems-of-equations-using-determinants.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "4.6",
       "moduleId": "m81431",
@@ -766,6 +903,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/04-systems-of-linear-equations/07-graphing-systems-of-linear-inequalities.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "4.7",
       "moduleId": "m81432",
@@ -774,6 +912,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/05-polynomials-and-polynomial-functions/01-add-and-subtract-polynomials.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "5.1",
       "moduleId": "m81383",
@@ -782,6 +921,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/05-polynomials-and-polynomial-functions/02-properties-of-exponents-and-scientific-notation.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "5.2",
       "moduleId": "m81384",
@@ -790,6 +930,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/05-polynomials-and-polynomial-functions/03-multiply-polynomials.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "5.3",
       "moduleId": "m81385",
@@ -798,6 +939,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/05-polynomials-and-polynomial-functions/04-dividing-polynomials.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "5.4",
       "moduleId": "m81386",
@@ -806,6 +948,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/06-factoring/01-greatest-common-factor-and-factor-by-grouping.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "6.1",
       "moduleId": "m81437",
@@ -814,6 +957,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/06-factoring/02-factor-trinomials.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "6.2",
       "moduleId": "m81387",
@@ -822,6 +966,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/06-factoring/03-factor-special-products.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "6.3",
       "moduleId": "m81388",
@@ -830,6 +975,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/06-factoring/04-general-strategy-for-factoring-polynomials.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "6.4",
       "moduleId": "m81389",
@@ -838,6 +984,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/06-factoring/05-polynomial-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "6.5",
       "moduleId": "m81390",
@@ -846,6 +993,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/07-rational-expressions-and-functions/01-multiply-and-divide-rational-expressions.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "7.1",
       "moduleId": "m81392",
@@ -854,6 +1002,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/07-rational-expressions-and-functions/02-add-and-subtract-rational-expressions.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "7.2",
       "moduleId": "m81439",
@@ -862,6 +1011,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/07-rational-expressions-and-functions/03-simplify-complex-rational-expressions.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "7.3",
       "moduleId": "m81440",
@@ -870,6 +1020,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/07-rational-expressions-and-functions/04-solve-rational-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "7.4",
       "moduleId": "m81393",
@@ -878,6 +1029,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/07-rational-expressions-and-functions/05-solve-applications-with-rational-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "7.5",
       "moduleId": "m81394",
@@ -886,6 +1038,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/07-rational-expressions-and-functions/06-solve-rational-inequalities.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "7.6",
       "moduleId": "m81441",
@@ -894,6 +1047,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/08-roots-and-radicals/01-simplify-expressions-with-roots.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "8.1",
       "moduleId": "m81444",
@@ -902,6 +1056,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/08-roots-and-radicals/02-simplify-radical-expressions.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "8.2",
       "moduleId": "m81445",
@@ -910,6 +1065,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/08-roots-and-radicals/03-simplify-rational-exponents.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "8.3",
       "moduleId": "m81396",
@@ -918,6 +1074,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/08-roots-and-radicals/04-add-subtract-and-multiply-radical-expressions.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "8.4",
       "moduleId": "m81397",
@@ -926,6 +1083,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/08-roots-and-radicals/05-divide-radical-expressions.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "8.5",
       "moduleId": "m81446",
@@ -934,6 +1092,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/08-roots-and-radicals/06-solve-radical-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "8.6",
       "moduleId": "m81398",
@@ -942,6 +1101,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/08-roots-and-radicals/07-use-radicals-in-functions.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "8.7",
       "moduleId": "m81447",
@@ -950,6 +1110,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/08-roots-and-radicals/08-use-the-complex-number-system.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "8.8",
       "moduleId": "m81448",
@@ -958,6 +1119,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/09-quadratic-equations-and-functions/01-solve-quadratic-equations-using-the-square-root-property.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "9.1",
       "moduleId": "m81400",
@@ -966,6 +1128,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/09-quadratic-equations-and-functions/02-solve-quadratic-equations-by-completing-the-square.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "9.2",
       "moduleId": "m81401",
@@ -974,6 +1137,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/09-quadratic-equations-and-functions/03-solve-quadratic-equations-using-the-quadratic-formula.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "9.3",
       "moduleId": "m81449",
@@ -982,6 +1146,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/09-quadratic-equations-and-functions/04-solve-equations-in-quadratic-form.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "9.4",
       "moduleId": "m81402",
@@ -990,6 +1155,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/09-quadratic-equations-and-functions/05-solve-applications-of-quadratic-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "9.5",
       "moduleId": "m81403",
@@ -998,6 +1164,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/09-quadratic-equations-and-functions/06-graph-quadratic-functions-using-properties.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "9.6",
       "moduleId": "m81404",
@@ -1006,6 +1173,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/09-quadratic-equations-and-functions/07-graph-quadratic-functions-using-transformations.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "9.7",
       "moduleId": "m81405",
@@ -1014,6 +1182,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/09-quadratic-equations-and-functions/08-solve-quadratic-inequalities.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "9.8",
       "moduleId": "m81406",
@@ -1022,6 +1191,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/01-finding-composite-and-inverse-functions.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "10.1",
       "moduleId": "m81408",
@@ -1030,6 +1200,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/02-evaluate-and-graph-exponential-functions.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "10.2",
       "moduleId": "m81409",
@@ -1038,6 +1209,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/03-evaluate-and-graph-logarithmic-functions.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "10.3",
       "moduleId": "m81410",
@@ -1046,6 +1218,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/04-use-the-properties-of-logarithms.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "10.4",
       "moduleId": "m81411",
@@ -1054,6 +1227,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/05-solve-exponential-and-logarithmic-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "10.5",
       "moduleId": "m81450",
@@ -1062,6 +1236,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/11-conics/01-distance-and-midpoint-formulas-circles.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "11.1",
       "moduleId": "m81452",
@@ -1070,6 +1245,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/11-conics/02-parabolas.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "11.2",
       "moduleId": "m81413",
@@ -1078,6 +1254,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/11-conics/03-ellipses.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "11.3",
       "moduleId": "m81414",
@@ -1086,6 +1263,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/11-conics/04-hyperbolas.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "11.4",
       "moduleId": "m81415",
@@ -1094,6 +1272,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/11-conics/05-solve-systems-of-nonlinear-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "11.5",
       "moduleId": "m81453",
@@ -1102,6 +1281,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/12-sequences-series-and-binomial-theorem/01-sequences.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "12.1",
       "moduleId": "m81417",
@@ -1110,6 +1290,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/12-sequences-series-and-binomial-theorem/02-arithmetic-sequences.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "12.2",
       "moduleId": "m81418",
@@ -1118,6 +1299,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/12-sequences-series-and-binomial-theorem/03-geometric-sequences-and-series.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "12.3",
       "moduleId": "m81419",
@@ -1126,6 +1308,7 @@
     },
     {
       "localPath": "content/math/intermediate-algebra/12-sequences-series-and-binomial-theorem/04-binomial-theorem.md",
+      "bundle": "prealgebra-bundle",
       "book": "intermediate-algebra",
       "sourceSection": "12.4",
       "moduleId": "m81420",
@@ -1134,6 +1317,7 @@
     },
     {
       "localPath": "content/math/prealgebra/01-whole-numbers/01-introduction.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "1.1",
       "moduleId": "m81243",
@@ -1142,6 +1326,7 @@
     },
     {
       "localPath": "content/math/prealgebra/01-whole-numbers/02-add-whole-numbers.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "1.2",
       "moduleId": "m81244",
@@ -1150,6 +1335,7 @@
     },
     {
       "localPath": "content/math/prealgebra/01-whole-numbers/03-subtract-whole-numbers.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "1.3",
       "moduleId": "m81245",
@@ -1158,6 +1344,7 @@
     },
     {
       "localPath": "content/math/prealgebra/01-whole-numbers/04-multiply-whole-numbers.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "1.4",
       "moduleId": "m81255",
@@ -1166,6 +1353,7 @@
     },
     {
       "localPath": "content/math/prealgebra/01-whole-numbers/05-divide-whole-numbers.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "1.5",
       "moduleId": "m81256",
@@ -1174,6 +1362,7 @@
     },
     {
       "localPath": "content/math/prealgebra/02-the-language-of-algebra/01-use-the-language-of-algebra.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "2.1",
       "moduleId": "m81268",
@@ -1182,6 +1371,7 @@
     },
     {
       "localPath": "content/math/prealgebra/02-the-language-of-algebra/02-evaluate-simplify-and-translate-expressions.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "2.2",
       "moduleId": "m81270",
@@ -1190,6 +1380,7 @@
     },
     {
       "localPath": "content/math/prealgebra/02-the-language-of-algebra/03-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "2.3",
       "moduleId": "m81271",
@@ -1198,6 +1389,7 @@
     },
     {
       "localPath": "content/math/prealgebra/02-the-language-of-algebra/04-find-multiples-and-factors.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "2.4",
       "moduleId": "m81272",
@@ -1206,6 +1398,7 @@
     },
     {
       "localPath": "content/math/prealgebra/02-the-language-of-algebra/05-prime-factorization-and-the-least-common-multiple.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "2.5",
       "moduleId": "m81273",
@@ -1214,6 +1407,7 @@
     },
     {
       "localPath": "content/math/prealgebra/03-integers/01-introduction-to-integers.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "3.1",
       "moduleId": "m81275",
@@ -1222,6 +1416,7 @@
     },
     {
       "localPath": "content/math/prealgebra/03-integers/02-add-integers.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "3.2",
       "moduleId": "m81276",
@@ -1230,6 +1425,7 @@
     },
     {
       "localPath": "content/math/prealgebra/03-integers/03-subtract-integers.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "3.3",
       "moduleId": "m81277",
@@ -1238,6 +1434,7 @@
     },
     {
       "localPath": "content/math/prealgebra/03-integers/04-multiply-and-divide-integers.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "3.4",
       "moduleId": "m81278",
@@ -1246,6 +1443,7 @@
     },
     {
       "localPath": "content/math/prealgebra/03-integers/05-solve-equations-using-integers-the-division-property-of-equality.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "3.5",
       "moduleId": "m81281",
@@ -1254,6 +1452,7 @@
     },
     {
       "localPath": "content/math/prealgebra/04-fractions/01-visualize-fractions.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "4.1",
       "moduleId": "m81285",
@@ -1262,6 +1461,7 @@
     },
     {
       "localPath": "content/math/prealgebra/04-fractions/02-multiply-and-divide-fractions.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "4.2",
       "moduleId": "m81286",
@@ -1270,6 +1470,7 @@
     },
     {
       "localPath": "content/math/prealgebra/04-fractions/03-multiply-and-divide-mixed-numbers-and-complex-fractions.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "4.3",
       "moduleId": "m81287",
@@ -1278,6 +1479,7 @@
     },
     {
       "localPath": "content/math/prealgebra/04-fractions/04-add-and-subtract-fractions-with-common-denominators.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "4.4",
       "moduleId": "m81288",
@@ -1286,6 +1488,7 @@
     },
     {
       "localPath": "content/math/prealgebra/04-fractions/05-add-and-subtract-fractions-with-different-denominators.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "4.5",
       "moduleId": "m81289",
@@ -1294,6 +1497,7 @@
     },
     {
       "localPath": "content/math/prealgebra/04-fractions/06-add-and-subtract-mixed-numbers.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "4.6",
       "moduleId": "m81290",
@@ -1302,6 +1506,7 @@
     },
     {
       "localPath": "content/math/prealgebra/04-fractions/07-solve-equations-with-fractions.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "4.7",
       "moduleId": "m81291",
@@ -1310,6 +1515,7 @@
     },
     {
       "localPath": "content/math/prealgebra/05-decimals/01-decimals.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "5.1",
       "moduleId": "m81293",
@@ -1318,6 +1524,7 @@
     },
     {
       "localPath": "content/math/prealgebra/05-decimals/02-decimal-operations.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "5.2",
       "moduleId": "m81295",
@@ -1326,6 +1533,7 @@
     },
     {
       "localPath": "content/math/prealgebra/05-decimals/03-decimals-and-fractions.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "5.3",
       "moduleId": "m81298",
@@ -1334,6 +1542,7 @@
     },
     {
       "localPath": "content/math/prealgebra/05-decimals/04-solve-equations-with-decimals.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "5.4",
       "moduleId": "m81300",
@@ -1342,6 +1551,7 @@
     },
     {
       "localPath": "content/math/prealgebra/05-decimals/05-averages-and-probability.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "5.5",
       "moduleId": "m81302",
@@ -1350,6 +1560,7 @@
     },
     {
       "localPath": "content/math/prealgebra/05-decimals/06-ratios-and-rate.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "5.6",
       "moduleId": "m81303",
@@ -1358,6 +1569,7 @@
     },
     {
       "localPath": "content/math/prealgebra/05-decimals/07-simplify-and-use-square-roots.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "5.7",
       "moduleId": "m81304",
@@ -1366,6 +1578,7 @@
     },
     {
       "localPath": "content/math/prealgebra/06-percents/01-understand-percent.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "6.1",
       "moduleId": "m81306",
@@ -1374,6 +1587,7 @@
     },
     {
       "localPath": "content/math/prealgebra/06-percents/02-solve-general-applications-of-percent.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "6.2",
       "moduleId": "m81313",
@@ -1382,6 +1596,7 @@
     },
     {
       "localPath": "content/math/prealgebra/06-percents/03-solve-sales-tax-commission-and-discount-applications.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "6.3",
       "moduleId": "m81307",
@@ -1390,6 +1605,7 @@
     },
     {
       "localPath": "content/math/prealgebra/06-percents/04-solve-simple-interest-applications.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "6.4",
       "moduleId": "m81308",
@@ -1398,6 +1614,7 @@
     },
     {
       "localPath": "content/math/prealgebra/06-percents/05-solve-proportions-and-their-applications.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "6.5",
       "moduleId": "m81311",
@@ -1406,6 +1623,7 @@
     },
     {
       "localPath": "content/math/prealgebra/07-the-properties-of-real-numbers/01-rational-and-irrational-numbers.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "7.1",
       "moduleId": "m81315",
@@ -1414,6 +1632,7 @@
     },
     {
       "localPath": "content/math/prealgebra/07-the-properties-of-real-numbers/02-commutative-and-associative-properties.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "7.2",
       "moduleId": "m81316",
@@ -1422,6 +1641,7 @@
     },
     {
       "localPath": "content/math/prealgebra/07-the-properties-of-real-numbers/03-distributive-property.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "7.3",
       "moduleId": "m81317",
@@ -1430,6 +1650,7 @@
     },
     {
       "localPath": "content/math/prealgebra/07-the-properties-of-real-numbers/04-properties-of-identity-inverses-and-zero.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "7.4",
       "moduleId": "m81318",
@@ -1438,6 +1659,7 @@
     },
     {
       "localPath": "content/math/prealgebra/07-the-properties-of-real-numbers/05-systems-of-measurement.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "7.5",
       "moduleId": "m81330",
@@ -1446,6 +1668,7 @@
     },
     {
       "localPath": "content/math/prealgebra/08-solving-linear-equations/01-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "8.1",
       "moduleId": "m81320",
@@ -1454,6 +1677,7 @@
     },
     {
       "localPath": "content/math/prealgebra/08-solving-linear-equations/02-solve-equations-using-the-division-and-multiplication-properties-of-equality.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "8.2",
       "moduleId": "m81321",
@@ -1462,6 +1686,7 @@
     },
     {
       "localPath": "content/math/prealgebra/08-solving-linear-equations/03-solve-equations-with-variables-and-constants-on-both-sides.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "8.3",
       "moduleId": "m81322",
@@ -1470,6 +1695,7 @@
     },
     {
       "localPath": "content/math/prealgebra/08-solving-linear-equations/04-solve-equations-with-fraction-or-decimal-coefficients.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "8.4",
       "moduleId": "m81323",
@@ -1478,6 +1704,7 @@
     },
     {
       "localPath": "content/math/prealgebra/09-math-models-and-geometry/01-use-a-problem-solving-strategy.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "9.1",
       "moduleId": "m81324",
@@ -1486,6 +1713,7 @@
     },
     {
       "localPath": "content/math/prealgebra/09-math-models-and-geometry/02-solve-money-applications.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "9.2",
       "moduleId": "m81325",
@@ -1494,6 +1722,7 @@
     },
     {
       "localPath": "content/math/prealgebra/09-math-models-and-geometry/03-use-properties-of-angles-triangles-and-the-pythagorean-theorem.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "9.3",
       "moduleId": "m81326",
@@ -1502,6 +1731,7 @@
     },
     {
       "localPath": "content/math/prealgebra/09-math-models-and-geometry/04-use-properties-of-rectangles-triangles-and-trapezoids.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "9.4",
       "moduleId": "m81332",
@@ -1510,6 +1740,7 @@
     },
     {
       "localPath": "content/math/prealgebra/09-math-models-and-geometry/05-solve-geometry-applications-circles-and-irregular-figures.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "9.5",
       "moduleId": "m81327",
@@ -1518,6 +1749,7 @@
     },
     {
       "localPath": "content/math/prealgebra/09-math-models-and-geometry/06-solve-geometry-applications-volume-and-surface-area.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "9.6",
       "moduleId": "m81328",
@@ -1526,6 +1758,7 @@
     },
     {
       "localPath": "content/math/prealgebra/09-math-models-and-geometry/07-solve-a-formula-for-a-specific-variable.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "9.7",
       "moduleId": "m81329",
@@ -1534,6 +1767,7 @@
     },
     {
       "localPath": "content/math/prealgebra/10-polynomials/01-add-and-subtract-polynomials.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "10.1",
       "moduleId": "m81334",
@@ -1542,6 +1776,7 @@
     },
     {
       "localPath": "content/math/prealgebra/10-polynomials/02-use-multiplication-properties-of-exponents.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "10.2",
       "moduleId": "m81335",
@@ -1550,6 +1785,7 @@
     },
     {
       "localPath": "content/math/prealgebra/10-polynomials/03-multiply-polynomials.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "10.3",
       "moduleId": "m81336",
@@ -1558,6 +1794,7 @@
     },
     {
       "localPath": "content/math/prealgebra/10-polynomials/04-divide-monomials.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "10.4",
       "moduleId": "m81337",
@@ -1566,6 +1803,7 @@
     },
     {
       "localPath": "content/math/prealgebra/10-polynomials/05-integer-exponents-and-scientific-notation.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "10.5",
       "moduleId": "m81342",
@@ -1574,6 +1812,7 @@
     },
     {
       "localPath": "content/math/prealgebra/10-polynomials/06-introduction-to-factoring-polynomials.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "10.6",
       "moduleId": "m81347",
@@ -1582,6 +1821,7 @@
     },
     {
       "localPath": "content/math/prealgebra/11-graphs/01-use-the-rectangular-coordinate-system.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "11.1",
       "moduleId": "m81340",
@@ -1590,6 +1830,7 @@
     },
     {
       "localPath": "content/math/prealgebra/11-graphs/02-graphing-linear-equations.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "11.2",
       "moduleId": "m81345",
@@ -1598,6 +1839,7 @@
     },
     {
       "localPath": "content/math/prealgebra/11-graphs/03-graphing-with-intercepts.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "11.3",
       "moduleId": "m81350",
@@ -1606,11 +1848,75 @@
     },
     {
       "localPath": "content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md",
+      "bundle": "prealgebra-bundle",
       "book": "prealgebra",
       "sourceSection": "11.4",
       "moduleId": "m81354",
       "sourceTitle": "Understand Slope of a Line",
       "moduleSha256": "7e551b2b55f12a797840ec100bf18f51d0408da2d225fd68ccbb79df65096df5"
+    },
+    {
+      "localPath": "content/math/precalculus/01-functions/01-functions-and-function-notation.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "1.1",
+      "moduleId": "m49301",
+      "sourceTitle": "Functions and Function Notation",
+      "moduleSha256": "81115d90dd1d9781e65844526bbbfbea638cc6fd515c623c4d535bf3bd0e37e3"
+    },
+    {
+      "localPath": "content/math/precalculus/01-functions/02-domain-and-range.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "1.2",
+      "moduleId": "m49304",
+      "sourceTitle": "Domain and Range",
+      "moduleSha256": "b884c16482dc3cc3bc6f96ebc342ae934863f7aacd5eb39ec73c7a5f6a49f92c"
+    },
+    {
+      "localPath": "content/math/precalculus/01-functions/03-rates-of-change-and-behavior-of-graphs.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "1.3",
+      "moduleId": "m49306",
+      "sourceTitle": "Rates of Change and Behavior of Graphs",
+      "moduleSha256": "87e3bea0a14b4f487e0a5428b8138a644b0630b692d02c5a0e348e26ae3e6806"
+    },
+    {
+      "localPath": "content/math/precalculus/01-functions/04-composition-of-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "1.4",
+      "moduleId": "m49308",
+      "sourceTitle": "Composition of Functions",
+      "moduleSha256": "8e463e13c840a2772f75b1fc9380451bea746c1948bc5b660bb2aea677928a81"
+    },
+    {
+      "localPath": "content/math/precalculus/01-functions/05-transformation-of-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "1.5",
+      "moduleId": "m49312",
+      "sourceTitle": "Transformation of Functions",
+      "moduleSha256": "668e2034f4a8dc108ed871b5837ca4a19e2d81e0eda2d89e019df4359a570c00"
+    },
+    {
+      "localPath": "content/math/precalculus/01-functions/06-absolute-value-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "1.6",
+      "moduleId": "m49314",
+      "sourceTitle": "Absolute Value Functions",
+      "moduleSha256": "168c6458c2d8d0be13ea57bd8f630bdbfecdad661b9d2885c2490b439ca7642b"
+    },
+    {
+      "localPath": "content/math/precalculus/01-functions/07-inverse-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "1.7",
+      "moduleId": "m49320",
+      "sourceTitle": "Inverse Functions",
+      "moduleSha256": "ea72bbc8985a690e64628b5d00b5838e2b0fa464eec08a97a08c16c59e6ccb93"
     }
   ]
 }

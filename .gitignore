@@ -20,6 +20,9 @@
 # IDE-local project state
 .idea/
 
+# Local upstream-errata scratchpad (submitted to OpenStax, not published here)
+/docs/openstax-errata.md
+
 # Local source textbooks (reference material, not site assets)
 /sources/precalculus-2e_-_WEB.pdf
 /sources/elementary-algebra-2e_-_WEB.pdf

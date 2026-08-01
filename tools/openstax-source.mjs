@@ -12,44 +12,63 @@ import { fileURLToPath } from 'node:url';
 import {
   auditExistingMath,
   buildSourceMap,
+  collectionModuleIds,
   loadSourceLock,
   parseLocalSection,
   parseModuleXml,
+  resolveSourceDirectories,
   sha256,
   verifyCommittedSourceMap,
 } from './lib-openstax-source.mjs';
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const lock = loadSourceLock(repositoryRoot);
-const defaultSourceDirectory = path.join(repositoryRoot, 'sources/openstax/osbooks-prealgebra-bundle');
+
+function bundleSummaryLines() {
+  return lock.bundleKeys.map((bundleKey) => {
+    const bundle = lock.bundles[bundleKey];
+    const books = Object.keys(bundle.books).join(', ');
+    return `  ${bundleKey}: ${bundle.sourceDir} @ ${bundle.commit.slice(0, 12)} (${books})`;
+  }).join('\n');
+}
 
 function usage() {
   console.log(`OpenStax source reconciliation (report-only for existing content)
 
 Usage:
-  node tools/openstax-source.mjs fetch [--source-dir PATH] [--latest]
+  node tools/openstax-source.mjs fetch [--bundle KEY] [--source-dir PATH] [--latest]
   node tools/openstax-source.mjs build-map [--source-dir PATH]
   node tools/openstax-source.mjs verify-map
-  node tools/openstax-source.mjs audit [--source-dir PATH] [--output PATH] [--format markdown|json]
-  node tools/openstax-source.mjs history [--source-dir PATH] [--output PATH] [--format markdown|json]
-  node tools/openstax-source.mjs status
+  node tools/openstax-source.mjs audit [--bundle KEY] [--source-dir PATH] [--output PATH] [--format markdown|json]
+  node tools/openstax-source.mjs history [--bundle KEY] [--source-dir PATH] [--output PATH] [--format markdown|json]
+  node tools/openstax-source.mjs status [--bundle KEY]
 
-Defaults:
-  source cache: ${path.relative(repositoryRoot, defaultSourceDirectory)}
-  pinned commit: ${lock.commit}
+Bundles (one pinned upstream repository each):
+${bundleSummaryLines()}
+
+--bundle may be repeated and defaults to every bundle. --source-dir overrides a
+checkout location and therefore needs exactly one --bundle.
 
 The audit never rewrites content pages. The build-map command only refreshes
-data/openstax/math-source-map.json and is intended for reviewed source-lock updates.`);
+data/openstax/math-source-map.json and is intended for reviewed source-lock
+updates; it always rebuilds every bundle so the committed map stays complete.`);
 }
 
 function parseArguments(argv) {
   const command = argv[0] || 'help';
-  const options = { sourceDirectory: defaultSourceDirectory, output: null, format: null, latest: false };
+  const options = { bundles: [], sourceDirectory: null, output: null, format: null, latest: false };
   for (let index = 1; index < argv.length; index++) {
     const argument = argv[index];
-    if (argument === '--source-dir') {
+    if (argument === '--bundle') {
+      if (!argv[index + 1]) throw new Error('--bundle needs a bundle key');
+      const bundleKey = argv[++index];
+      if (!lock.bundles[bundleKey]) {
+        throw new Error(`unknown bundle ${JSON.stringify(bundleKey)}; known bundles: ${lock.bundleKeys.join(', ')}`);
+      }
+      if (!options.bundles.includes(bundleKey)) options.bundles.push(bundleKey);
+    } else if (argument === '--source-dir') {
       if (!argv[index + 1]) throw new Error('--source-dir needs a path');
-      options.sourceDirectory = path.resolve(repositoryRoot, argv[++index]);
+      options.sourceDirectory = argv[++index];
     } else if (argument === '--output') {
       if (!argv[index + 1]) throw new Error('--output needs a path');
       options.output = path.resolve(repositoryRoot, argv[++index]);
@@ -65,7 +84,31 @@ function parseArguments(argv) {
       throw new Error(`unknown argument: ${argument}`);
     }
   }
+  if (!options.bundles.length) options.bundles = [...lock.bundleKeys];
+  if (options.sourceDirectory && options.bundles.length !== 1) {
+    throw new Error('--source-dir applies to a single bundle; pass exactly one --bundle with it');
+  }
+  options.overrides = options.sourceDirectory ? { [options.bundles[0]]: options.sourceDirectory } : {};
   return { command, options };
+}
+
+function requireSource(sourceDirectory) {
+  for (const relativePath of ['META-INF/books.xml', 'collections', 'modules']) {
+    if (!existsSync(path.join(sourceDirectory, relativePath))) {
+      throw new Error(
+        `OpenStax source is missing at ${sourceDirectory}. Run \`npm run source:fetch\` first, or pass --source-dir.`,
+      );
+    }
+  }
+}
+
+function sourceDirectoriesFor(options, { bundles = options.bundles, requireCheckout = true } = {}) {
+  const directories = resolveSourceDirectories(repositoryRoot, lock, {
+    bundles,
+    overrides: options.overrides,
+  });
+  if (requireCheckout) for (const directory of Object.values(directories)) requireSource(directory);
+  return directories;
 }
 
 function run(command, args, { capture = false, cwd = repositoryRoot } = {}) {
@@ -96,7 +139,28 @@ function normalizedGitUrl(value) {
   return String(value || '').trim().replace(/\/+$/, '').replace(/\.git$/, '');
 }
 
-function fetchSource(sourceDirectory, latest) {
+/**
+ * Sparse paths for one bundle at its currently checked-out commit. A bundle
+ * whose moduleScope is `mapped-collections` also ships books this project does
+ * not use, so only the modules its mapped collections reference are
+ * materialized.
+ */
+function sparsePathsFor(bundleKey, sourceDirectory) {
+  const bundle = lock.bundles[bundleKey];
+  if (bundle.moduleScope === 'bundle') return ['META-INF', 'collections', 'modules'];
+  const moduleIds = new Set();
+  for (const [bookKey, book] of Object.entries(bundle.books)) {
+    const collectionPath = path.join(sourceDirectory, book.collectionPath);
+    if (!existsSync(collectionPath)) {
+      throw new Error(`${bundleKey}/${bookKey}: ${book.collectionPath} is not checked out yet`);
+    }
+    for (const moduleId of collectionModuleIds(readFileSync(collectionPath, 'utf8'))) moduleIds.add(moduleId);
+  }
+  return ['META-INF', 'collections', ...[...moduleIds].sort().map((moduleId) => `modules/${moduleId}`)];
+}
+
+function fetchBundle(bundleKey, sourceDirectory, latest) {
+  const bundle = lock.bundles[bundleKey];
   const parent = path.dirname(sourceDirectory);
   mkdirSync(parent, { recursive: true });
   const sourceExists = existsSync(sourceDirectory);
@@ -109,16 +173,16 @@ function fetchSource(sourceDirectory, latest) {
       '--filter=blob:none',
       '--no-checkout',
       '--depth', '1',
-      lock.gitUrl,
+      bundle.gitUrl,
       sourceDirectory,
     ]);
     git(sourceDirectory, ['sparse-checkout', 'init', '--cone']);
-    git(sourceDirectory, ['sparse-checkout', 'set', 'META-INF', 'collections', 'modules']);
+    git(sourceDirectory, ['sparse-checkout', 'set', 'META-INF', 'collections']);
   }
 
   const origin = git(sourceDirectory, ['remote', 'get-url', 'origin'], { capture: true });
-  if (normalizedGitUrl(origin) !== normalizedGitUrl(lock.gitUrl)) {
-    throw new Error(`${sourceDirectory} origin ${JSON.stringify(origin)} is not the locked OpenStax repository`);
+  if (normalizedGitUrl(origin) !== normalizedGitUrl(bundle.gitUrl)) {
+    throw new Error(`${sourceDirectory} origin ${JSON.stringify(origin)} is not the ${bundleKey} OpenStax repository`);
   }
   // A brand-new --no-checkout clone appears dirty because its tracked files
   // are intentionally absent. Existing caches, however, must never be changed
@@ -128,36 +192,43 @@ function fetchSource(sourceDirectory, latest) {
     if (dirty) throw new Error(`${sourceDirectory} has local changes; refusing to change its checkout`);
   }
 
-  const requested = latest ? lock.branch : lock.commit;
+  const requested = latest ? bundle.branch : bundle.commit;
   git(sourceDirectory, ['fetch', '--depth', '1', 'origin', requested]);
   const commit = git(sourceDirectory, ['rev-parse', 'FETCH_HEAD'], { capture: true });
-  for (const baseline of new Set(Object.values(lock.books).map((book) => book.authoredBaselineCommit))) {
-    if (!baseline || baseline === commit) continue;
-    git(sourceDirectory, ['fetch', '--depth', '1', 'origin', baseline]);
-    // Materialize the sparse CNXML/collection blobs while the fetch command is
-    // online. A blobless partial clone otherwise defers them until history's
-    // `git show`, unexpectedly making that supposedly offline audit use the
-    // network.
-    git(sourceDirectory, ['checkout', '--detach', baseline]);
+  const baselines = [...new Set(Object.values(bundle.books).map((book) => book.authoredBaselineCommit))]
+    .filter((baseline) => baseline && baseline !== commit);
+  const sparse = new Set();
+
+  // Baselines first so HEAD ends on the requested commit. Materializing the
+  // sparse CNXML/collection blobs while the fetch command is online keeps the
+  // later history audit genuinely offline: a blobless partial clone would
+  // otherwise defer them until `git show` needs the network.
+  for (const target of [...baselines, commit]) {
+    if (target !== commit) git(sourceDirectory, ['fetch', '--depth', '1', 'origin', target]);
+    git(sourceDirectory, ['sparse-checkout', 'set', 'META-INF', 'collections']);
+    git(sourceDirectory, ['checkout', '--detach', target]);
+    for (const sparsePath of sparsePathsFor(bundleKey, sourceDirectory)) sparse.add(sparsePath);
+    git(sourceDirectory, ['sparse-checkout', 'set', ...sparse]);
   }
-  git(sourceDirectory, ['checkout', '--detach', commit]);
-  console.log(`\nOpenStax source ready at ${sourceDirectory}`);
-  console.log(`commit ${commit}${latest ? ' (latest main)' : ' (pinned)'}`);
+
+  console.log(`\n${bundleKey} source ready at ${path.relative(repositoryRoot, sourceDirectory)}`);
+  console.log(`commit ${commit}${latest ? ` (latest ${bundle.branch})` : ' (pinned)'}`);
+  if (bundle.moduleScope === 'mapped-collections') {
+    const modules = [...sparse].filter((entry) => entry.startsWith('modules/')).length;
+    console.log(`scoped to ${modules} modules for ${Object.keys(bundle.books).join(', ')}`);
+  }
 }
 
-function requireSource(sourceDirectory) {
-  for (const relativePath of ['META-INF/books.xml', 'collections', 'modules']) {
-    if (!existsSync(path.join(sourceDirectory, relativePath))) {
-      throw new Error(
-        `OpenStax source is missing at ${sourceDirectory}. Run \`npm run source:fetch\` first, or pass --source-dir.`,
-      );
-    }
+function fetchSource(options) {
+  const directories = sourceDirectoriesFor(options, { requireCheckout: false });
+  for (const [bundleKey, sourceDirectory] of Object.entries(directories)) {
+    fetchBundle(bundleKey, sourceDirectory, options.latest);
   }
 }
 
-function buildMap(sourceDirectory) {
-  requireSource(sourceDirectory);
-  const result = buildSourceMap(repositoryRoot, sourceDirectory, lock);
+function buildMap(options) {
+  const directories = sourceDirectoriesFor(options, { bundles: lock.bundleKeys });
+  const result = buildSourceMap(repositoryRoot, directories, lock);
   if (result.errors.length) {
     for (const error of result.errors) console.error(`✗ ${error}`);
     throw new Error(`source mapping failed with ${result.errors.length} structural problem(s)`);
@@ -165,6 +236,9 @@ function buildMap(sourceDirectory) {
   const target = path.join(repositoryRoot, 'data/openstax/math-source-map.json');
   writeFileSync(target, `${JSON.stringify(result.map, null, 2)}\n`);
   console.log(`Mapped ${result.map.sections.length} sections at ${path.relative(repositoryRoot, target)}.`);
+  for (const [book, summary] of Object.entries(result.map.books)) {
+    console.log(`  ${book} (${summary.bundle}, ${summary.authoringStatus}): ${summary.mappedSections}/${summary.upstreamSections} upstream sections`);
+  }
 }
 
 function verifyMap() {
@@ -174,6 +248,9 @@ function verifyMap() {
     throw new Error(`source map verification failed with ${result.errors.length} problem(s)`);
   }
   console.log(`OpenStax source map: ${result.actualCount} local sections mapped to pinned CNXML modules.`);
+  for (const [book, summary] of Object.entries(result.map.books || {})) {
+    console.log(`  ${book} (${summary.bundle}, ${summary.authoringStatus}): ${summary.mappedSections}/${summary.upstreamSections} upstream sections`);
+  }
 }
 
 function percentage(value) {
@@ -188,8 +265,8 @@ function reportLink(output, localPath) {
   return path.relative(path.dirname(output), path.join(repositoryRoot, localPath)).split(path.sep).join('/');
 }
 
-function formatMarkdown(audit, sourceCommit, output) {
-  const { summary, sections } = audit;
+function formatMarkdown(audit, sourceCommits, output) {
+  const { summary, sections, books } = audit;
   const lines = [
     '# Existing Math ↔ OpenStax Source Audit',
     '',
@@ -200,10 +277,21 @@ function formatMarkdown(audit, sourceCommit, output) {
     '>',
     '> Generated by `npm run source:check`; do not hand-edit this report.',
     '',
-    `- OpenStax repository: [${lock.repository}](${lock.repository})`,
-    `- Pinned review target: \`${lock.commit}\``,
-    `- Audited checkout: \`${sourceCommit || 'not a Git checkout'}\``,
-    `- Books: ${summary.mappedBooks}`,
+    '## Pinned sources',
+    '',
+  ];
+  for (const bundleKey of Object.keys(sourceCommits)) {
+    const bundle = lock.bundles[bundleKey];
+    lines.push(
+      `- \`${bundleKey}\` — [${bundle.repository}](${bundle.repository}), `
+      + `pinned \`${bundle.commit}\`, audited checkout \`${sourceCommits[bundleKey] || 'not a Git checkout'}\``,
+    );
+  }
+  lines.push(
+    '',
+    '## Coverage',
+    '',
+    `- Books with mapped sections: ${summary.mappedBooks}`,
     `- Numbered sections mapped: ${summary.sections}`,
     `- Metadata matched without a flag: ${summary.metadataMatched}`,
     `- Intentional adaptations adjudicated: ${summary.adaptationsAdjudicated}`,
@@ -214,6 +302,17 @@ function formatMarkdown(audit, sourceCommit, output) {
     `- Local interactive questions inventoried: ${summary.localInteractions}`,
     `- Upstream Try It prompts with a likely local prompt match: ${summary.sourceTriesLikelyMatched}/${summary.sourceTriesTotal}`,
     '',
+    '| Book | Bundle | Authoring status | Chapters | Sections mapped |',
+    '|---|---|---|---:|---:|',
+  );
+  for (const book of books) {
+    lines.push(
+      `| ${markdownCell(book.book)} | \`${book.bundle}\` | ${book.authoringStatus} | `
+      + `${book.localChapters}/${book.upstreamChapters} | ${book.mappedSections}/${book.upstreamSections} |`,
+    );
+  }
+  lines.push(
+    '',
     'The prose percentage is five-word source-shingle traceability, not a quality',
     'score. Low values can reflect disclosed condensation, reformatted mathematics,',
     'or intentionally omitted print material.',
@@ -222,7 +321,7 @@ function formatMarkdown(audit, sourceCommit, output) {
     '',
     '| Local section | Module | Status | Objectives | Headings | Prose trace | Try Its likely | Local interactions |',
     '|---|---|---|---:|---:|---:|---:|---:|',
-  ];
+  );
   for (const section of sections) {
     const status = section.reviewFlags.length
       ? section.reviewFlags.join(', ')
@@ -269,9 +368,11 @@ function formatMarkdown(audit, sourceCommit, output) {
   return `${lines.join('\n')}\n`;
 }
 
-function printAuditSummary(audit, sourceCommit) {
+function printAuditSummary(audit, sourceCommits) {
   const summary = audit.summary;
-  console.log(`OpenStax audit checkout: ${sourceCommit || 'not a Git checkout'}`);
+  for (const [bundleKey, commit] of Object.entries(sourceCommits)) {
+    console.log(`OpenStax audit checkout (${bundleKey}): ${commit || 'not a Git checkout'}`);
+  }
   console.log(`Mapped sections: ${summary.sections}`);
   console.log(`Metadata matched: ${summary.metadataMatched}`);
   console.log(`Intentional adaptations adjudicated: ${summary.adaptationsAdjudicated}`);
@@ -281,6 +382,12 @@ function printAuditSummary(audit, sourceCommit) {
   console.log(`Likely Try It prompt matches: ${summary.sourceTriesLikelyMatched}/${summary.sourceTriesTotal}`);
   console.log(`Local interactions inventoried: ${summary.localInteractions}`);
   if (summary.changedUpstream) console.log(`Changed upstream modules: ${summary.changedUpstream}`);
+  for (const book of audit.books) {
+    console.log(
+      `  ${book.book} (${book.bundle}, ${book.authoringStatus}): `
+      + `${book.mappedSections}/${book.upstreamSections} sections, ${book.localChapters}/${book.upstreamChapters} chapters`,
+    );
+  }
 
   const flagged = audit.sections.filter((section) => section.reviewFlags.length);
   if (flagged.length) {
@@ -292,22 +399,27 @@ function printAuditSummary(audit, sourceCommit) {
   }
 }
 
-function auditSource(sourceDirectory, output, requestedFormat) {
-  requireSource(sourceDirectory);
-  const sourceCommit = checkoutCommit(sourceDirectory);
-  const audit = auditExistingMath(repositoryRoot, sourceDirectory, lock);
+function auditSource(options) {
+  const directories = sourceDirectoriesFor(options);
+  const sourceCommits = Object.fromEntries(
+    Object.entries(directories).map(([bundleKey, directory]) => [bundleKey, checkoutCommit(directory)]),
+  );
+  const audit = auditExistingMath(repositoryRoot, directories, lock);
   if (audit.structuralErrors.length) {
     for (const error of audit.structuralErrors) console.error(`✗ ${error}`);
     throw new Error(`audit stopped on ${audit.structuralErrors.length} structural problem(s)`);
   }
-  printAuditSummary(audit, sourceCommit);
+  printAuditSummary(audit, sourceCommits);
 
-  if (output) {
-    const inferredFormat = output.endsWith('.json') ? 'json' : 'markdown';
-    const format = requestedFormat || inferredFormat;
+  if (options.output) {
+    const output = options.output;
+    const format = options.format || (output.endsWith('.json') ? 'json' : 'markdown');
+    const lockCommits = Object.fromEntries(
+      Object.keys(directories).map((bundleKey) => [bundleKey, lock.bundles[bundleKey].commit]),
+    );
     const rendered = format === 'json'
-      ? `${JSON.stringify({ ...audit, sourceCommit, lockCommit: lock.commit }, null, 2)}\n`
-      : formatMarkdown(audit, sourceCommit, output);
+      ? `${JSON.stringify({ ...audit, sourceCommits, lockCommits }, null, 2)}\n`
+      : formatMarkdown(audit, sourceCommits, output);
     mkdirSync(path.dirname(output), { recursive: true });
     writeFileSync(output, rendered);
     console.log(`\nWrote ${format} report to ${path.relative(repositoryRoot, output)}.`);
@@ -369,15 +481,18 @@ function changedTries(before, after, local) {
   return changes;
 }
 
-function historyAudit(sourceDirectory) {
-  if (!existsSync(path.join(sourceDirectory, '.git'))) {
-    throw new Error('history audit requires the Git checkout created by npm run source:fetch');
-  }
-  const neededCommits = new Set([lock.commit]);
-  for (const book of Object.values(lock.books)) neededCommits.add(book.authoredBaselineCommit);
-  const missing = [...neededCommits].filter((commit) => !hasGitCommit(sourceDirectory, commit));
-  if (missing.length) {
-    throw new Error(`source checkout lacks locked historical commit(s): ${missing.join(', ')}; rerun npm run source:fetch`);
+function historyAudit(directories) {
+  const auditedBundles = new Set(Object.keys(directories));
+  for (const [bundleKey, sourceDirectory] of Object.entries(directories)) {
+    if (!existsSync(path.join(sourceDirectory, '.git'))) {
+      throw new Error(`history audit requires the Git checkout created by npm run source:fetch (${bundleKey})`);
+    }
+    const needed = new Set([lock.bundles[bundleKey].commit]);
+    for (const book of Object.values(lock.bundles[bundleKey].books)) needed.add(book.authoredBaselineCommit);
+    const missing = [...needed].filter((commit) => !hasGitCommit(sourceDirectory, commit));
+    if (missing.length) {
+      throw new Error(`${bundleKey} checkout lacks locked historical commit(s): ${missing.join(', ')}; rerun npm run source:fetch`);
+    }
   }
 
   const sourceMap = JSON.parse(readFileSync(path.join(repositoryRoot, 'data/openstax/math-source-map.json'), 'utf8'));
@@ -385,18 +500,24 @@ function historyAudit(sourceDirectory) {
     path.join(repositoryRoot, 'data/openstax/math-reconciliation-decisions.json'),
     'utf8',
   ));
-  if (decisionData.targetCommit !== lock.commit) {
-    throw new Error(`reconciliation decisions target ${decisionData.targetCommit} does not match source lock ${lock.commit}`);
+  for (const bundleKey of auditedBundles) {
+    const target = (decisionData.targetCommits || {})[bundleKey];
+    if (target && target !== lock.bundles[bundleKey].commit) {
+      throw new Error(`reconciliation decisions target ${target} for ${bundleKey} does not match source lock ${lock.bundles[bundleKey].commit}`);
+    }
   }
   const driftDecisionByPath = new Map(
     (decisionData.upstreamDriftDecisions || []).map((decision) => [decision.localPath, decision]),
   );
   const sections = [];
   for (const entry of sourceMap.sections) {
-    const baselineCommit = lock.books[entry.book].authoredBaselineCommit;
+    if (!auditedBundles.has(entry.bundle)) continue;
+    const sourceDirectory = directories[entry.bundle];
+    const targetCommit = lock.bundles[entry.bundle].commit;
+    const baselineCommit = lock.books.get(entry.book).authoredBaselineCommit;
     const modulePath = `modules/${entry.moduleId}/index.cnxml`;
     const beforeXml = gitFile(sourceDirectory, baselineCommit, modulePath);
-    const afterXml = gitFile(sourceDirectory, lock.commit, modulePath);
+    const afterXml = gitFile(sourceDirectory, targetCommit, modulePath);
     const beforeSha256 = sha256(beforeXml);
     const afterSha256 = sha256(afterXml);
     if (beforeSha256 === afterSha256) continue;
@@ -417,7 +538,7 @@ function historyAudit(sourceDirectory) {
     sections.push({
       ...entry,
       baselineCommit,
-      targetCommit: lock.commit,
+      targetCommit,
       beforeSha256,
       afterSha256,
       classification,
@@ -427,13 +548,28 @@ function historyAudit(sourceDirectory) {
     });
   }
 
+  const baselines = [];
+  for (const bundleKey of Object.keys(directories)) {
+    for (const [bookKey, book] of Object.entries(lock.bundles[bundleKey].books)) {
+      baselines.push({
+        bundle: bundleKey,
+        book: bookKey,
+        commit: book.authoredBaselineCommit,
+        confidence: book.authoredBaselineConfidence || 'unspecified',
+        authoringStatus: book.authoringStatus,
+      });
+    }
+  }
+
   return {
-    repository: lock.repository,
-    targetCommit: lock.commit,
+    bundles: Object.fromEntries(Object.keys(directories).map((bundleKey) => [bundleKey, {
+      repository: lock.bundles[bundleKey].repository,
+      targetCommit: lock.bundles[bundleKey].commit,
+    }])),
     baselineConfidence: 'inferred-from-local-pdf-metadata',
-    baselines: Object.fromEntries(Object.entries(lock.books).map(([book, value]) => [book, value.authoredBaselineCommit])),
+    baselines,
     summary: {
-      mappedSections: sourceMap.sections.length,
+      mappedSections: sourceMap.sections.filter((entry) => auditedBundles.has(entry.bundle)).length,
       changedSections: sections.length,
       contentChanged: sections.filter((section) => section.classification === 'content-changed').length,
       markupOrMetadataOnly: sections.filter((section) => section.classification === 'markup-or-metadata-only').length,
@@ -458,8 +594,16 @@ function formatHistoryMarkdown(history, output) {
     '>',
     '> Generated by `npm run source:history`; do not hand-edit this report.',
     '',
-    `- Repository: [${history.repository}](${history.repository})`,
-    `- Current review target: \`${history.targetCommit}\``,
+    '## Pinned sources',
+    '',
+  ];
+  for (const [bundleKey, bundle] of Object.entries(history.bundles)) {
+    lines.push(`- \`${bundleKey}\` — [${bundle.repository}](${bundle.repository}), review target \`${bundle.targetCommit}\``);
+  }
+  lines.push(
+    '',
+    '## Coverage',
+    '',
     `- Mapped local sections: ${history.summary.mappedSections}`,
     `- Sections changed upstream: ${history.summary.changedSections}`,
     `- Content-level changes: ${history.summary.contentChanged}`,
@@ -470,8 +614,13 @@ function formatHistoryMarkdown(history, output) {
     '',
     '## Baselines',
     '',
-  ];
-  for (const [book, commit] of Object.entries(history.baselines)) lines.push(`- ${book}: \`${commit}\``);
+  );
+  for (const baseline of history.baselines) {
+    const suffix = baseline.authoringStatus === 'complete'
+      ? ''
+      : ` — ${baseline.authoringStatus}, no sections mapped yet`;
+    lines.push(`- ${baseline.book} (\`${baseline.bundle}\`): \`${baseline.commit}\`${suffix}`);
+  }
   lines.push('', '## Changed mapped sections', '');
 
   for (const section of history.sections) {
@@ -504,9 +653,9 @@ function formatHistoryMarkdown(history, output) {
   return `${lines.join('\n')}\n`;
 }
 
-function runHistory(sourceDirectory, output, requestedFormat) {
-  requireSource(sourceDirectory);
-  const history = historyAudit(sourceDirectory);
+function runHistory(options) {
+  const directories = sourceDirectoriesFor(options);
+  const history = historyAudit(directories);
   console.log(`Mapped sections: ${history.summary.mappedSections}`);
   console.log(`Changed upstream since inferred PDF baselines: ${history.summary.changedSections}`);
   console.log(`Content changes: ${history.summary.contentChanged}`);
@@ -517,8 +666,9 @@ function runHistory(sourceDirectory, output, requestedFormat) {
   for (const section of history.sections) {
     console.log(`  ${section.book} ${section.sourceSection} ${section.moduleId}: ${section.classification}`);
   }
-  if (output) {
-    const format = requestedFormat || (output.endsWith('.json') ? 'json' : 'markdown');
+  if (options.output) {
+    const output = options.output;
+    const format = options.format || (output.endsWith('.json') ? 'json' : 'markdown');
     const rendered = format === 'json'
       ? `${JSON.stringify(history, null, 2)}\n`
       : formatHistoryMarkdown(history, output);
@@ -528,29 +678,45 @@ function runHistory(sourceDirectory, output, requestedFormat) {
   }
 }
 
-function sourceStatus() {
-  const result = run('git', ['ls-remote', lock.gitUrl, `refs/heads/${lock.branch}`], { capture: true });
-  const latest = result.split(/\s+/)[0];
-  if (!/^[0-9a-f]{40}$/.test(latest || '')) throw new Error('could not read the latest upstream commit');
-  console.log(`Pinned: ${lock.commit}`);
-  console.log(`Latest: ${latest}`);
-  if (latest === lock.commit) {
-    console.log('Status: pinned source is current.');
-  } else {
-    console.log('Status: OpenStax has newer commits. No local content was changed.');
-    console.log('Review with a separate checkout: npm run source:fetch -- --latest --source-dir sources/openstax/math-latest');
+function sourceStatus(options) {
+  let behind = 0;
+  for (const bundleKey of options.bundles) {
+    const bundle = lock.bundles[bundleKey];
+    const result = run('git', ['ls-remote', bundle.gitUrl, `refs/heads/${bundle.branch}`], { capture: true });
+    const latest = result.split(/\s+/)[0];
+    if (!/^[0-9a-f]{40}$/.test(latest || '')) {
+      throw new Error(`could not read the latest upstream commit for ${bundleKey}`);
+    }
+    console.log(`\n${bundleKey} (${bundle.repository})`);
+    console.log(`  Pinned: ${bundle.commit}`);
+    console.log(`  Latest: ${latest}`);
+    if (latest === bundle.commit) {
+      console.log('  Status: pinned source is current.');
+    } else {
+      behind++;
+      console.log('  Status: OpenStax has newer commits. No local content was changed.');
+      console.log(
+        `  Review with a separate checkout: npm run source:fetch -- --bundle ${bundleKey} --latest `
+        + `--source-dir sources/openstax/${bundleKey}-latest`,
+      );
+    }
   }
+  console.log(
+    behind
+      ? `\n${behind} of ${options.bundles.length} bundle(s) have upstream commits awaiting review.`
+      : `\nAll ${options.bundles.length} pinned bundle(s) are current.`,
+  );
 }
 
 try {
   const { command, options } = parseArguments(process.argv.slice(2));
   if (options.help || command === 'help') usage();
-  else if (command === 'fetch') fetchSource(options.sourceDirectory, options.latest);
-  else if (command === 'build-map') buildMap(options.sourceDirectory);
+  else if (command === 'fetch') fetchSource(options);
+  else if (command === 'build-map') buildMap(options);
   else if (command === 'verify-map') verifyMap();
-  else if (command === 'audit') auditSource(options.sourceDirectory, options.output, options.format);
-  else if (command === 'history') runHistory(options.sourceDirectory, options.output, options.format);
-  else if (command === 'status') sourceStatus();
+  else if (command === 'audit') auditSource(options);
+  else if (command === 'history') runHistory(options);
+  else if (command === 'status') sourceStatus(options);
   else {
     usage();
     process.exitCode = 2;

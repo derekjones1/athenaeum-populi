@@ -45,6 +45,19 @@ const openStaxWorkflow = read('docs/openstax-source-workflow.md');
 assert.match(openStaxWorkflow, /report-only connection/);
 assert.match(openStaxWorkflow, /all 201 numbered sections map deterministically/);
 assert.match(openStaxWorkflow, /does not by itself\s+prove every local equation/);
+assert.match(openStaxWorkflow, /Precalculus 2e is pinned and scaffolded, with authoring underway/);
+assert.match(openStaxWorkflow, /moduleScope: "mapped-collections"/);
+assert.match(openStaxWorkflow, /Every command accepts `--bundle KEY`/);
+
+const sourceLock = JSON.parse(read('data/openstax/math-source-lock.json'));
+assert.equal(sourceLock.schemaVersion, 2);
+for (const bundleKey of Object.keys(sourceLock.bundles)) {
+  assert.match(
+    openStaxWorkflow,
+    new RegExp(`\`?${bundleKey}\`?`),
+    `the workflow doc documents the ${bundleKey} source bundle`,
+  );
+}
 
 const architecture = read('docs/architecture.md');
 assert.match(architecture, /Pagefind 1\.5\.2 builds one global index/);

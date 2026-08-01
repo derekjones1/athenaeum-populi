@@ -1,14 +1,29 @@
 # OpenStax source reconciliation
 
-The three completed math books now have a report-only connection to the
-official OpenStax publishing source. The connection maps and audits the
-existing Hugo pages; it does **not** regenerate them or accept upstream changes
-automatically.
+The math books have a report-only connection to the official OpenStax
+publishing sources. The connection maps and audits the existing Hugo pages; it
+does **not** regenerate them or accept upstream changes automatically.
 
-The source repository is
-[`openstax/osbooks-prealgebra-bundle`](https://github.com/openstax/osbooks-prealgebra-bundle).
-It contains Prealgebra 2e, Elementary Algebra 2e, and Intermediate Algebra 2e
-as CollXML collections and CNXML modules.
+## Pinned source bundles
+
+Each upstream OpenStax publishing repository is one *bundle*, pinned at one
+reviewed commit. Every book belongs to exactly one bundle.
+
+- [`openstax/osbooks-prealgebra-bundle`](https://github.com/openstax/osbooks-prealgebra-bundle)
+  — Prealgebra 2e, Elementary Algebra 2e, and Intermediate Algebra 2e. All
+  three books are used, so the whole `modules/` tree is checked out
+  (`moduleScope: "bundle"`).
+- [`openstax/osbooks-college-algebra-bundle`](https://github.com/openstax/osbooks-college-algebra-bundle)
+  — Precalculus 2e. This bundle also ships College Algebra 2e, Algebra and
+  Trigonometry 2e, and a corequisite title that this project does not use, so
+  the checkout is scoped to the modules the Precalculus collection actually
+  references (`moduleScope: "mapped-collections"`, 87 modules instead of the
+  full tree).
+
+Books carry an `authoringStatus`. `complete` means every upstream numbered
+section is authored locally and chapter-by-chapter parity is enforced;
+`scaffolded` and `in-progress` mean the book's provenance is pinned while its
+pages are still being written, so parity is only checked for what exists.
 
 ## Quick start
 
@@ -23,20 +38,32 @@ npm run source:history
 
 What those commands do:
 
-- `source:fetch` creates an ignored, sparse Git checkout under
-  `sources/openstax/osbooks-prealgebra-bundle`. It checks out the locked commit
-  and materializes the sparse text files for the two inferred PDF-era commits.
-  It does not download the large `media/` tree.
+- `source:fetch` creates ignored, sparse Git checkouts under
+  `sources/openstax/`. For each bundle it checks out the locked commit and
+  materializes the sparse text files for the inferred PDF-era commits. It does
+  not download the large `media/` tree.
 - `source:verify` works offline. It confirms that every local numbered math
-  section has exactly one committed module mapping and that the map agrees
-  with the local paths and `source_section` frontmatter.
+  section has exactly one committed module mapping, that the map agrees with
+  the local paths and `source_section` frontmatter, and that each book's
+  recorded bundle and authoring status match the lock.
 - `source:check` works offline after the fetch. It compares titles,
   objectives, instructional headings, prose traceability, local interaction
   counts, and heuristic Try It prompt matches against the checked-out CNXML.
   It never writes under `content/`.
 - `source:history` compares each book's inferred PDF-era commit with the
-  current locked OpenStax commit. It separates later upstream changes from
-  possible original transcription differences.
+  current locked OpenStax commit for its bundle. It separates later upstream
+  changes from possible original transcription differences.
+
+Every command accepts `--bundle KEY` (repeatable) to work on one bundle at a
+time, for example:
+
+```sh
+npm run source:fetch -- --bundle college-algebra-bundle
+npm run source:check -- --bundle prealgebra-bundle
+```
+
+`--source-dir` overrides a checkout location and therefore needs exactly one
+`--bundle`.
 
 `source:check` currently audits regular numbered sections only. It inventories
 their interactions but does not certify Knowledge Check prompts or answers.
@@ -54,8 +81,8 @@ npm run source:history -- \
 ## Data flow and safety boundary
 
 ```text
-official OpenStax repository (read only)
-  → exact locked commit
+official OpenStax repositories (read only)
+  → exact locked commit per bundle
   → ignored sparse checkout
   → committed book/section/module map
   → report + explicit review decisions
@@ -68,17 +95,19 @@ not a publishing instruction.
 
 ## Committed provenance files
 
-- `data/openstax/math-source-lock.json` records the official repository,
-  current reviewed commit, collections, license, and inferred PDF-era commit
-  for each book.
-- `data/openstax/math-source-map.json` connects all 201 local section paths to
-  stable OpenStax module IDs and module SHA-256 fingerprints.
-- `data/openstax/math-reconciliation-decisions.json` records known intentional
-  adaptations and adjudicated upstream disagreements so later audits do not
-  silently reverse them.
+- `data/openstax/math-source-lock.json` (schema 2) records each bundle's
+  official repository, current reviewed commit, module scope, and license,
+  plus every book's collection, inferred PDF-era commit, and authoring status.
+- `data/openstax/math-source-map.json` (schema 2) connects all 201 authored
+  local section paths to stable OpenStax module IDs and module SHA-256
+  fingerprints, attributes each section to its bundle, and records per-book
+  chapter and section coverage against the upstream collection.
+- `data/openstax/math-reconciliation-decisions.json` (schema 2) records known
+  intentional adaptations and adjudicated upstream disagreements, keyed to the
+  target commit of each bundle, so later audits do not silently reverse them.
 
-The OpenStax checkout itself remains under ignored `sources/`; the large source
-repository is not copied into this Git repository.
+The OpenStax checkouts themselves remain under ignored `sources/`; the large
+source repositories are not copied into this Git repository.
 
 ## Initial reconciliation result
 
@@ -111,6 +140,40 @@ npm run source:check -- --output docs/openstax-existing-math-audit.md
 npm run source:history -- --output docs/openstax-upstream-history-audit.md
 ```
 
+## Precalculus 2e
+
+Precalculus 2e is pinned and scaffolded, with authoring underway. Its review
+target is `789b54099106b071d1d32bfcee454fed72eb4768` in the college-algebra
+bundle, and `content/math/precalculus` holds the book cover page and all
+twelve chapter landings mapped to the upstream chapter structure. All seven
+sections of chapter 1 are authored (modules `m49301`, `m49304`, `m49306`,
+`m49308`, `m49312`, `m49314`, and `m49320`), so the book currently
+contributes 7 of 73 upstream sections to the map and the audit's section
+matrix.
+
+Its authored baseline is `d1bd19c69107ba7f45775670809ae161d63db864`, the last
+upstream commit on or before the local `sources/precalculus-2e_-_WEB.pdf`
+build date of 2026-04-20. That is the same inference rule that reproduces the
+three existing books' baselines exactly, but it remains an inference: a strong
+comparison candidate, not a proven OpenStax build ID.
+
+Each unwritten chapter landing declares `authoring_status: scaffolded` in its
+frontmatter. That marker is what allows its `## Sections` overview to be empty:
+the chapter-landing lint would otherwise require section bullets, and the
+content validator requires those bullets to match authored pages exactly.
+Chapter 1's landing has dropped the marker and lists all seven of its
+sections.
+
+As sections are written, add each page with its `source_section` frontmatter,
+remove `authoring_status` from that chapter's landing once its first section
+page exists, list the section in the landing's `## Sections` overview, then
+rerun `node tools/openstax-source.mjs build-map` and commit the refreshed map.
+`build-map` fails if a marker outlives the first authored section in its
+chapter, so an unwritten chapter can never be mistaken for a finished one.
+When all 73 sections exist, change the book's `authoringStatus` to `complete`
+in the lock; from then on the tooling enforces full chapter-by-chapter parity
+with the upstream collection and the book joins the audited section matrix.
+
 ### Important upstream inconsistency
 
 Elementary Algebra 2e section 2.7 needs special treatment. Current OpenStax
@@ -123,21 +186,68 @@ blindly applying current upstream.
 
 This is why updates stop for review.
 
+Two smaller upstream errata were found in Precalculus 2e module `m49301`
+(section 1.1) during authoring and were deliberately not propagated:
+
+- `Figure_01_01_009`'s alt text describes "an upward-facing parabola with a
+  vertex at (0,1)". The PDF, and the module's own Try It (solve $f(x)=1$;
+  answer $x=0$ or $x=2$), both fix the curve as $f(x)=(x-1)^2$ — vertex
+  $(1,0)$, $y$-intercept $1$. The local figure follows the PDF geometry.
+- `Table_01_01_10`'s `summary` attribute says the goldfish memory span is
+  2100 hours, while the table cell and the surrounding prose
+  ($P(\text{goldfish})=2160$) both say 2160. The local table says 2160.
+
+Upstream defects worth reporting to OpenStax are collected in
+`docs/openstax-errata.md` — a gitignored local file holding
+submission-ready write-ups (module id, element id, current text, why it is
+wrong, suggested correction) plus the cases already reviewed and dismissed.
+Add new source defects there; it does not replace recording the *local*
+handling here or in `data/openstax/math-reconciliation-decisions.json`.
+
+## Reading the pinned sources
+
+Raw CNXML interleaves presentation MathML that is slow to read while
+transcribing. Render a module as labelled text with approximate LaTeX:
+
+```sh
+python3 tools/cnxml-preview.py \
+  sources/openstax/osbooks-college-algebra-bundle/modules/m49301/index.cnxml
+```
+
+The preview is a reading aid, not an authority — reconcile the finished page
+against the actual CNXML and the PDF.
+
+The Precalculus 2e PDF is larger than 100 MB, so agents cannot read it
+directly; `poppler` (`brew install poppler`) provides the workflow instead.
+Locate a section's PDF pages by scanning the running heads, then render the
+range as images for visual comparison:
+
+```sh
+pdftotext -f 1 -l 60 -layout sources/precalculus-2e_-_WEB.pdf /tmp/front.txt
+pdftoppm -f 17 -l 38 -r 110 -png sources/precalculus-2e_-_WEB.pdf /tmp/pages/p
+```
+
+The PDF text layer drops all mathematics — it is layout and figure evidence
+only, never a transcription source.
+
 ## Checking for a newer OpenStax commit
 
 ```sh
 npm run source:status
 ```
 
-If OpenStax has moved, create a separate ignored checkout and audit it:
+This reports every bundle. If a bundle has moved, create a separate ignored
+checkout and audit it:
 
 ```sh
 npm run source:fetch -- \
+  --bundle prealgebra-bundle \
   --latest \
-  --source-dir sources/openstax/math-latest
+  --source-dir sources/openstax/prealgebra-bundle-latest
 
 npm run source:check -- \
-  --source-dir sources/openstax/math-latest \
+  --bundle prealgebra-bundle \
+  --source-dir sources/openstax/prealgebra-bundle-latest \
   --output sources/openstax/reports/latest-candidate.md
 ```
 
@@ -149,12 +259,12 @@ only then update the lock and map. Do not point production at upstream `main`.
 The maintainer-only map refresh is:
 
 ```sh
-node tools/openstax-source.mjs build-map \
-  --source-dir sources/openstax/osbooks-prealgebra-bundle
+node tools/openstax-source.mjs build-map
 ```
 
-Run it only after deliberately updating the locked commit and reviewing its
-content changes.
+It always rebuilds every bundle, so the committed map stays complete. Run it
+only after deliberately updating a locked commit and reviewing its content
+changes, or after authoring new sections.
 
 ## Source authority for future work
 

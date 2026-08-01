@@ -4,6 +4,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 import {
+  collectionModuleIds,
+  loadSourceLock,
   normalizeSemanticText,
   parseCollectionXml,
   parseModuleXml,
@@ -78,19 +80,80 @@ test('semantic normalization distinguishes an upstream sign change', () => {
   assert.notEqual(before, after);
 });
 
-test('committed provenance maps all 201 local math sections exactly once', () => {
+test('every mapped module id is collected for a collection-scoped sparse checkout', () => {
+  const moduleIds = collectionModuleIds(`
+    <col:collection xmlns:col="urn:col">
+      <col:content>
+        <col:module document="preface"/>
+        <col:subcollection><col:content>
+          <col:module document="intro"/>
+          <col:module document="section-1"/>
+          <col:module document="section-1"/>
+        </col:content></col:subcollection>
+      </col:content>
+    </col:collection>
+  `);
+  assert.deepEqual(moduleIds, ['intro', 'preface', 'section-1']);
+});
+
+test('the source lock pins one upstream bundle per book', () => {
+  const lock = loadSourceLock(repositoryRoot);
+  assert.deepEqual(lock.bundleKeys, ['prealgebra-bundle', 'college-algebra-bundle']);
+  assert.deepEqual(
+    [...lock.books.keys()].sort(),
+    ['elementary-algebra', 'intermediate-algebra', 'precalculus', 'prealgebra'].sort(),
+  );
+  for (const [book, config] of lock.books) {
+    assert.ok(lock.bundles[config.bundleKey], `${book} resolves to a declared bundle`);
+    assert.match(config.authoredBaselineCommit, /^[0-9a-f]{40}$/, `${book} pins a baseline commit`);
+  }
+  assert.equal(lock.books.get('precalculus').bundleKey, 'college-algebra-bundle');
+  assert.equal(lock.books.get('precalculus').authoringStatus, 'scaffolded');
+  assert.equal(lock.books.get('prealgebra').bundleKey, 'prealgebra-bundle');
+  assert.equal(lock.books.get('prealgebra').authoringStatus, 'complete');
+  assert.equal(lock.bundles['college-algebra-bundle'].moduleScope, 'mapped-collections');
+});
+
+test('committed provenance maps all 208 local math sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 201);
-  assert.equal(result.actualCount, 201);
+  assert.equal(result.expectedCount, 208);
+  assert.equal(result.actualCount, 208);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
   assert.equal(counts['intermediate-algebra'].length, 70);
+  assert.equal(counts.precalculus.length, 7);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
   assert.equal(representative.moduleId, 'm81369');
+  const bundleForBook = {
+    prealgebra: 'prealgebra-bundle',
+    'elementary-algebra': 'prealgebra-bundle',
+    'intermediate-algebra': 'prealgebra-bundle',
+    precalculus: 'college-algebra-bundle',
+  };
+  for (const entry of result.map.sections) {
+    assert.equal(entry.bundle, bundleForBook[entry.book], `${entry.localPath} is attributed to its pinned bundle`);
+  }
+});
+
+test('the Precalculus book is mapped chapter-complete with its authored sections only', () => {
+  const result = verifyCommittedSourceMap(repositoryRoot);
+  assert.deepEqual(result.errors, []);
+  assert.deepEqual(result.map.books.precalculus, {
+    bundle: 'college-algebra-bundle',
+    authoringStatus: 'scaffolded',
+    upstreamChapters: 12,
+    upstreamSections: 73,
+    localChapters: 12,
+    mappedSections: 7,
+  });
+  assert.deepEqual(
+    Object.keys(result.map.bundles).sort(),
+    ['college-algebra-bundle', 'prealgebra-bundle'],
+  );
 });
 
 test('reconciliation decisions refer to mapped paths and modules', () => {
@@ -100,13 +163,22 @@ test('reconciliation decisions refer to mapped paths and modules', () => {
     path.join(repositoryRoot, 'data/openstax/math-reconciliation-decisions.json'),
     'utf8',
   ));
-  assert.equal(decisions.targetCommit, lock.commit);
+  assert.equal(decisions.schemaVersion, 2);
+  assert.deepEqual(
+    Object.keys(decisions.targetCommits).sort(),
+    Object.keys(lock.bundles).sort(),
+    'every pinned bundle has a decision target commit',
+  );
+  for (const [bundleKey, commit] of Object.entries(decisions.targetCommits)) {
+    assert.equal(commit, lock.bundles[bundleKey].commit, `decisions target the pinned ${bundleKey} commit`);
+  }
   const byPath = new Map(map.sections.map((entry) => [entry.localPath, entry]));
   const keys = new Set();
   for (const decision of [...decisions.metadataDecisions, ...decisions.upstreamDriftDecisions]) {
     const mapped = byPath.get(decision.localPath);
     assert.ok(mapped, `decision path is mapped: ${decision.localPath}`);
     assert.equal(decision.moduleId, mapped.moduleId, `decision module matches ${decision.localPath}`);
+    assert.equal(decision.bundle, mapped.bundle, `decision bundle matches ${decision.localPath}`);
     const key = `${decision.localPath}:${decision.status}`;
     assert.ok(!keys.has(key), `decision is unique: ${key}`);
     keys.add(key);
