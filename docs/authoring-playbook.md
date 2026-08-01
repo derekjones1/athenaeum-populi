@@ -112,7 +112,14 @@ The content lint enforces the descriptive bullet shape.
 ## 2. Writing patterns
 
 - **Math:** KaTeX — `$...$` inline, `$$...$$` display (multi-line `$$` fenced on
-  their own lines). Group digits with `{,}`: `$37{,}519{,}248$`. Plain prose
+  their own lines). Group digits with `{,}` in **every number of four or more
+  digits**: `$1{,}000$`, `$37{,}519{,}248$`. Four-digit calendar years are the
+  one exception and stay bare (`$2012-2009$`) — the same reason figure axes
+  take `xTickGrouping: false`. Group four-digit numbers in prose and Markdown
+  tables too, with an ordinary comma (`2,160`). The lint warns on an ungrouped
+  run of four or more digits inside math; because nothing distinguishes a year
+  from a quantity, it skips four-digit values in the 1000–2099 band, so that
+  narrow case is on the author. Plain prose
   numbers need no `$`. A literal dollar sign (money) is `\$`, and it only
   works in prose or inside a `$$…$$` block — inside inline `$…$` Hugo's
   passthrough ends the run at the escaped dollar and hands KaTeX a truncated
@@ -193,7 +200,8 @@ Keep each consecutive interactive practice set to **2–3 questions maximum**,
 counting fill-ins, multiple-choice questions, and graphing questions together.
 Choose prompts that cover the example's distinct skills instead of repeating
 near-identical arithmetic. Dedicated `knowledge-check-XX-YY.md` pages are exempt
-because they are cumulative assessments.
+because they are cumulative assessments, and so is the section-final
+`## Practice` block defined below.
 
 **Multiple choice (text mode)** — options are one per line in the body; `answer`
 must match an option string exactly:
@@ -317,6 +325,41 @@ Recreated graphs and diagrams still require visual comparison with the PDF.
 Check geometry, labels, axes, endpoints, direction, and dark-mode contrast; a
 valid accessible SVG can still be mathematically wrong.
 
+### The section-final `## Practice` block
+
+Every numbered section closes its instructional content with a `## Practice`
+heading containing **exactly five** interactive exercises (`fillin`,
+`multiplechoice`, and `graphplot` in any mix). It sits immediately after the
+educational content — that is, immediately before the section's first
+end-matter heading, whichever the section uses (`## Key equations`,
+`## Key concepts`, `## Key terms`, …). In a section with no end matter,
+`## Practice` is the last heading before the attribution footer.
+
+- **Source.** Select the five from the source textbook's end-of-section
+  exercise sets ("Practice Makes Perfect" / Section Exercises), using only
+  items whose answers are visibly present in the official Answer Key.
+  OpenStax often prints only odd-numbered answers, but parity can change by
+  chapter — inspect the actual key pages rather than assuming. Record every
+  item in the source ledger with the same evidence required for any retained
+  exercise, and independently solve each one against the key.
+- **Coverage.** Choose five that span the section's objectives rather than
+  five variants of one skill.
+- **Hints.** These are regular-section exercises: every one needs a concise,
+  strategy-oriented `hint`.
+- **Cap exemption.** The five consecutive questions are exempt from the 2–3
+  consecutive-question limit. The limit still governs the in-page practice
+  sets that follow worked examples.
+- **Attribution.** Update the section's footer "Changes:" note to disclose
+  that selected end-of-section exercises were adapted into interactive
+  practice; a footer claiming the end-of-section exercises were omitted is
+  stale once the block exists.
+
+Sections authored before August 1, 2026 may not have a Practice block yet;
+the content lint reports each missing block as a warning, and that warning
+list is the retrofit worklist. New sections and substantive revisions must
+ship the block. A present-but-malformed block — wrong exercise count, wrong
+placement, or a duplicate heading — is a lint error.
+
 ## 4. Verify (the workflow)
 
 From the repository root:
@@ -356,6 +399,8 @@ From the repository root:
 - [ ] Frontmatter complete (`title`, `description`, `source_section`, `weight`).
 - [ ] Chapter landing uses descriptive `**Title** — summary` section bullets.
 - [ ] Every retained practice item is a real component with no print-only label.
+- [ ] `## Practice` block: exactly five sourced, hinted exercises immediately
+      before the end matter; the footer discloses the adaptation.
 - [ ] Every touched answer independently solved and checked against the source key.
 - [ ] No file-backed instructional images; recreated figures compared visually.
 - [ ] `verify-section` clean (✗ = 0).

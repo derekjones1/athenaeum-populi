@@ -11,23 +11,25 @@ function exists(path) {
   return existsSync(new URL(path, repositoryRoot));
 }
 
-function withoutFrontmatter(source) {
-  const match = source.match(/^---\n[\s\S]*?\n---\n\n([\s\S]*)$/);
-  assert.ok(match, 'published documentation needs YAML frontmatter');
-  return match[1].trimEnd();
-}
-
-function withoutTopHeading(source) {
-  return source.replace(/^# .+\n\n/, '').trimEnd();
-}
-
+// The playbooks live in `docs/` only. They were previously mirrored into
+// `content/docs/` and published as site pages, which meant two copies of each
+// file to keep byte-identical. Nothing linked to those routes and they were
+// absent from the nav and the legacy route manifest, so the mirror was deleted
+// rather than kept in sync. Guard against it coming back.
 for (const name of ['authoring-playbook.md', 'knowledge-check-playbook.md']) {
-  assert.equal(
-    withoutFrontmatter(read(`content/docs/${name}`)),
-    withoutTopHeading(read(`docs/${name}`)),
-    `content/docs/${name} must publish the canonical docs/${name} body without a duplicate page title`,
+  assert.ok(
+    exists(`docs/${name}`),
+    `docs/${name} is the canonical location for this playbook`,
+  );
+  assert.ok(
+    !exists(`content/docs/${name}`),
+    `content/docs/${name} must not exist — docs/${name} is canonical, and a published mirror has to be kept byte-identical by hand`,
   );
 }
+assert.ok(
+  !exists('content/docs/_index.md'),
+  'content/docs/ was removed with the playbook mirror; do not reintroduce the section',
+);
 
 const authoring = read('docs/authoring-playbook.md');
 assert.match(authoring, /plain Markdown with Hugo shortcodes/);
@@ -35,6 +37,9 @@ assert.match(authoring, /answerMode="unordered"/);
 assert.match(authoring, /Run `npm test`/);
 assert.match(authoring, /chapters and Knowledge Checks share one sequential weight order/);
 assert.match(authoring, /before July 22, 2026[\s\S]*grandfathered/);
+assert.match(authoring, /section-final `## Practice` block/);
+assert.match(authoring, /exactly five(?:\*\*)? interactive exercises/);
+assert.match(authoring, /before August 1, 2026[\s\S]*retrofit worklist/);
 
 const knowledgeChecks = read('docs/knowledge-check-playbook.md');
 assert.match(knowledgeChecks, /must not overlap/);

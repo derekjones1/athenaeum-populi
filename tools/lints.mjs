@@ -197,6 +197,33 @@ export function lintHugo(src, filename = '') {
   for (const m of src.matchAll(/⁻/g)) {
     err(m.index, 'unicode superscript minus — write a braced exponent like 10^{-3}');
   }
+  // Digit grouping. The corpus groups every number of four or more digits as
+  // `1{,}000`. Four-digit calendar years are the one exception and stay bare
+  // (`$2012-2009$`) — the same reason figure axes take `xTickGrouping: false`.
+  // Nothing in the source distinguishes a year from a quantity, so four-digit
+  // values in the 1000–2099 band are skipped rather than risk flagging a year.
+  // Warning, not error: the three completed books predate the rule.
+  {
+    const groupDigits = (n) => n.replace(/\B(?=(\d{3})+$)/g, '{,}');
+    const spans = [];
+    for (const m of mediaSrc.matchAll(/\$\$([\s\S]*?)\$\$/g)) spans.push([m.index + 2, m[1]]);
+    const inlineOnly = mediaSrc.replace(/\$\$[\s\S]*?\$\$/g, blank);
+    for (const m of inlineOnly.matchAll(/(?<!\\)\$([^$\n]+?)(?<!\\)\$/g)) spans.push([m.index + 1, m[1]]);
+    for (const [offset, span] of spans) {
+      // \text{…} is prose, and an already-grouped number is correct as written.
+      const scan = span
+        .replace(/\\text(?:it|bf)?\{[^{}]*\}/g, blank)
+        .replace(/\d[\d{,}]*\{,\}[\d{,}]*\d/g, blank);
+      for (const m of scan.matchAll(/(?<![\d.])\d{4,}(?![\d.])/g)) {
+        const value = m[0];
+        if (value.length === 4 && +value >= 1000 && +value <= 2099) continue;
+        wrn(
+          offset + m.index,
+          `ungrouped ${value.length}-digit number ${value} in math — write it as ${groupDigits(value)} (four-digit years are the exception)`,
+        );
+      }
+    }
+  }
   // TeX discards ordinary source whitespace in math mode. Catch the
   // high-confidence prose joins that caused visible "Ifn" / "squareof"
   // regressions, while leaving compact operator and unit notation to visual
@@ -390,6 +417,47 @@ export function lintHugo(src, filename = '') {
   const graphplots = [...shortcodes(mediaSrc, 'graphplot', true)];
   const practiceQuestions = [...fillins, ...multiplechoices, ...graphplots]
     .sort((a, b) => a.index - b.index);
+
+  // ---- section-final Practice block ----------------------------------------
+  // Every numbered section closes its instructional content with a
+  // `## Practice` heading holding exactly five sourced interactive exercises,
+  // immediately before the first end-matter heading (`## Key equations`,
+  // `## Key concepts`, `## Key terms`, or any other `## Key …` summary block).
+  // Sections authored before the rule warn until retrofitted — the warning
+  // list is the retrofit worklist — while a present-but-malformed block is an
+  // error. See docs/authoring-playbook.md, "The section-final Practice block".
+  const headings = [...mediaSrc.matchAll(/^## +(.+?)[ \t]*$/gm)]
+    .map((m) => ({ index: m.index, end: m.index + m[0].length, title: m[1].trim() }));
+  const endMatter = headings.find((h) => /^Key [a-z]/.test(h.title));
+  let practiceRange = null;
+  if (isRegularSection) {
+    const practiceHeadings = headings.filter((h) => h.title === 'Practice');
+    if (!practiceHeadings.length) {
+      wrn(0, 'section has no `## Practice` block — add exactly five sourced, hinted exercises immediately before the end matter (retrofit pending)');
+    } else if (practiceHeadings.length > 1) {
+      err(practiceHeadings[1].index, 'more than one `## Practice` heading — a section has exactly one Practice block');
+    } else {
+      const practice = practiceHeadings[0];
+      const next = headings.find((h) => h.index > practice.index);
+      practiceRange = [practice.end, next ? next.index : mediaSrc.length];
+      if (endMatter && practice.index > endMatter.index) {
+        err(practice.index, `\`## Practice\` appears after the end matter — place it immediately before the first \`## Key …\` heading (\`## ${endMatter.title}\`)`);
+      } else if (endMatter && (!next || next.index !== endMatter.index)) {
+        err(practice.index, `\`## Practice\` must be immediately before \`## ${endMatter.title}\` — no other heading may come between`);
+      } else if (!endMatter && next) {
+        err(practice.index, '`## Practice` must be the last heading before the attribution footer in a section without end matter');
+      }
+      const count = practiceQuestions
+        .filter(({ index }) => index >= practiceRange[0] && index < practiceRange[1])
+        .length;
+      if (count !== 5) {
+        err(practice.index, `Practice block has ${count} interactive exercise(s) — exactly 5 are required`);
+      }
+    }
+  }
+
+  const inPracticeBlock = (index) => practiceRange !== null
+    && index >= practiceRange[0] && index < practiceRange[1];
   let previousQuestionEnd = -1;
   let consecutiveQuestions = 0;
   for (const { index, end } of practiceQuestions) {
@@ -397,7 +465,7 @@ export function lintHugo(src, filename = '') {
       && src.slice(previousQuestionEnd, index).trim() === ''
       ? consecutiveQuestions + 1
       : 1;
-    if (!isKnowledgeCheck && consecutiveQuestions === 4) {
+    if (!isKnowledgeCheck && consecutiveQuestions === 4 && !inPracticeBlock(index)) {
       err(index, 'more than three consecutive interactive questions — keep each practice set to 2–3 questions');
     }
     previousQuestionEnd = end;

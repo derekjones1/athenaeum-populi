@@ -293,6 +293,103 @@ for (const source of [
   );
 }
 
+// ---- section-final Practice block -------------------------------------------
+{
+  const sectionPath = 'content/math/book/01-chapter/01-section.md';
+  const five = Array.from({ length: 5 }, (_, i) => fillin(`practice ${i + 1}`)).join('\n\n');
+  const keyTerms = '## Key terms\n\n**term** — definition.';
+
+  const good = lintHugo(`## Teach\n\nProse.\n\n## Practice\n\n${five}\n\n${keyTerms}`, sectionPath);
+  assert.equal(
+    good.errors.length,
+    0,
+    `five consecutive Practice-block questions before Key terms are valid (cap exemption): ${good.errors.join('; ')}`,
+  );
+  assert.equal(
+    good.warnings.filter((w) => w.includes('`## Practice`')).length,
+    0,
+    'a section with a Practice block must not carry the retrofit warning',
+  );
+
+  const missing = lintHugo(`## Teach\n\nProse.\n\n${keyTerms}`, sectionPath);
+  assert(
+    missing.warnings.some((w) => w.includes('no `## Practice` block')),
+    'a section without a Practice block warns — the warning list is the retrofit worklist',
+  );
+  assert.equal(missing.errors.length, 0, 'a missing Practice block is a warning during rollout, not an error');
+
+  assert(
+    lintHugo(
+      `## Practice\n\n${Array.from({ length: 4 }, (_, i) => fillin(`p${i}`)).join('\n\n')}\n\n${keyTerms}`,
+      sectionPath,
+    ).errors.some((e) => e.includes('exactly 5')),
+    'a Practice block with the wrong exercise count is an error',
+  );
+
+  assert(
+    lintHugo(`## Practice\n\n${five}\n\n## More teaching\n\nProse.\n\n${keyTerms}`, sectionPath)
+      .errors.some((e) => e.includes('immediately before `## Key terms`')),
+    'Practice must sit immediately before the end matter',
+  );
+
+  assert(
+    lintHugo(`## Teach\n\nProse.\n\n${keyTerms}\n\n## Practice\n\n${five}`, sectionPath)
+      .errors.some((e) => e.includes('after the end matter')),
+    'Practice after Key terms is an error',
+  );
+
+  assert(
+    lintHugo(`## Practice\n\n${five}\n\n## Practice\n\n${five}\n\n${keyTerms}`, sectionPath)
+      .errors.some((e) => e.includes('more than one `## Practice`')),
+    'duplicate Practice headings are an error',
+  );
+
+  assert.equal(
+    lintHugo(`## Practice\n\n${five}\n\n## Key concepts\n\nSummary.\n\n${keyTerms}`, sectionPath).errors.length,
+    0,
+    'Key concepts counts as end matter where present',
+  );
+
+  assert.equal(
+    lintHugo(`## Practice\n\n${five}\n\n## Key equations\n\n$E=mc^2$\n\n${keyTerms}`, sectionPath).errors.length,
+    0,
+    'Key equations counts as end matter where present',
+  );
+  assert(
+    lintHugo(`## Practice\n\n${five}\n\n## Key equation\n\n$E=mc^2$\n\n${keyTerms}`, sectionPath).errors.length === 0,
+    'the singular Key equation heading also counts as end matter',
+  );
+  assert(
+    lintHugo(`## Key equations\n\n$E=mc^2$\n\n## Practice\n\n${five}\n\n${keyTerms}`, sectionPath)
+      .errors.some((e) => e.includes('after the end matter')),
+    'Practice between Key equations and Key terms is still after the end matter',
+  );
+
+  assert.equal(
+    lintHugo(`## Teach\n\nProse.\n\n## Practice\n\n${five}\n`, sectionPath).errors.length,
+    0,
+    'in a section without end matter, Practice may be the final heading',
+  );
+  assert(
+    lintHugo(`## Practice\n\n${five}\n\n## Teach\n\nProse.\n`, sectionPath)
+      .errors.some((e) => e.includes('last heading before the attribution footer')),
+    'in a section without end matter, Practice must still be the last heading',
+  );
+
+  assert.equal(
+    lintHugo('## Whatever\n\nProse.', 'content/test.md').warnings
+      .filter((w) => w.includes('Practice')).length,
+    0,
+    'non-section pages are outside the Practice-block rule',
+  );
+  assert.equal(
+    lintHugo('## Whatever\n\nProse.', 'content/math/book/knowledge-check-01-06.md').warnings
+      .filter((w) => w.includes('Practice')).length,
+    0,
+    'knowledge checks are outside the Practice-block rule',
+  );
+}
+
 // ---- figure curve precision ------------------------------------------------
 
 // smoothCurves spline output (a cubic-bezier path) warns; analytic output does not.
@@ -331,6 +428,41 @@ for (const source of [
   // entity-escaped specs (as emitted for aria labels with apostrophes) decode
   const escaped = `<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"The line&#39;s graph &amp; grid","lines":[{"slope":1}]}'>${svg}</div>`;
   assert.equal(lintHugo(escaped, 'content/test.md').errors.length, 0);
+}
+
+// Digit grouping: four or more digits are grouped; four-digit years are not.
+{
+  const warnsOf = (src) => lintHugo(src, 'content/test.md').warnings
+    .filter((w) => w.includes('ungrouped'));
+
+  // Ungrouped four- and five-digit quantities are warned about, with the fix.
+  assert(
+    warnsOf('The cost is $C=5600$ dollars.').some((w) => w.includes('5{,}600')),
+    'an ungrouped four-digit quantity must warn',
+  );
+  assert(
+    warnsOf('$$P=36675$$').some((w) => w.includes('36{,}675')),
+    'an ungrouped five-digit quantity must warn in a display block',
+  );
+  assert(
+    warnsOf('$n=1234567$').some((w) => w.includes('1{,}234{,}567')),
+    'grouping is applied from the right in threes',
+  );
+
+  // Already-grouped numbers are correct as written.
+  assert.equal(warnsOf('$C=5{,}600$ and $P=36{,}675$').length, 0);
+
+  // Four-digit years stay bare, in the 1000-2099 band the lint must stay quiet.
+  assert.equal(warnsOf('$2012-2009=3$').length, 0);
+  assert.equal(warnsOf('$y=1975$').length, 0);
+
+  // Decimals are not digit runs, and \text{...} is prose, not math.
+  assert.equal(warnsOf('$x=0.00001$').length, 0);
+  assert.equal(warnsOf('$12.5000$').length, 0);
+  assert.equal(warnsOf('$\\text{serial 45912}$').length, 0);
+
+  // Outside math the rule is the author's, not the lint's.
+  assert.equal(warnsOf('The table lists 5600 hours.').length, 0);
 }
 
 console.log(`lints: ${imageCases.length} image embeddings plus authoring-regression cases passed`);
