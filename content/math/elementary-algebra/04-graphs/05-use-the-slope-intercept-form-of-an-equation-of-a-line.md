@@ -11,13 +11,15 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** recognize the
-  relation between the graph and the slope-intercept form of an equation of
-  a line, identify the slope and $y$-intercept from an equation of a line,
-  graph a line using its slope and intercept, choose the most convenient
-  method to graph a line, graph and interpret applications of
-  slope-intercept, use slopes to identify parallel lines, and use slopes to
-  identify perpendicular lines.
+**By the end of this section, you will be able to:**
+
+- Recognize the relation between the graph and the slope-intercept form of an equation of a line
+- Identify the slope and $y$-intercept from an equation of a line
+- Graph a line using its slope and intercept
+- Choose the most convenient method to graph a line
+- Graph and interpret applications of slope-intercept
+- Use slopes to identify parallel lines
+- Use slopes to identify perpendicular lines
 {{< /callout >}}
 
 ## Recognize the relation between the graph and the slope-intercept form of an equation of a line

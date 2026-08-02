@@ -8,6 +8,7 @@ weight: 5
 
 {{< callout type="info" >}}
 **By the end of this section, you will be able to:**
+
 - Solve logarithmic equations using the properties of logarithms
 - Solve exponential equations using logarithms
 - Use exponential models in applications

@@ -11,10 +11,11 @@ weight: 7
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** determine whether an
-  ordered pair is a solution of a system of linear inequalities, solve a
-  system of linear inequalities by graphing, and solve applications of
-  systems of inequalities.
+**By the end of this section, you will be able to:**
+
+- Determine whether an ordered pair is a solution of a system of linear inequalities
+- Solve a system of linear inequalities by graphing
+- Solve applications of systems of inequalities
 {{< /callout >}}
 
 ## Determine whether an ordered pair is a solution of a system of linear inequalities
@@ -931,7 +932,7 @@ energy drinks, which have 110 calories each.
 
 {{< multiplechoice
   question="Tenison's system is $\left\{\begin{array}{l} 360d+110e\geq1000 \\ 0.75d+2e\leq25 \end{array}\right.$, where $d$ is the number of donuts and $e$ is the number of energy drinks. Can he buy 8 donuts and 4 energy drinks and satisfy both his caloric needs and his budget?"
-  hint="Check both inequalities: $360(8)+110(4)=3320$, and $0.75(8)+2(4)=14$."
+  hint="Check both inequalities: $360(8)+110(4)=3{,}320$, and $0.75(8)+2(4)=14$."
   answer="yes"
 >}}
 yes

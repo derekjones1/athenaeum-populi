@@ -10,10 +10,12 @@ linkTitle: "Factor Trinomials of the Form ax²+bx+c"
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** recognize a preliminary
-  strategy to factor polynomials completely, factor trinomials of the form
-  $ax^2+bx+c$ using trial and error, and factor trinomials of the form
-  $ax^2+bx+c$ using the "ac" method.
+**By the end of this section, you will be able to:**
+
+- Recognize a preliminary strategy to factor polynomials completely
+- Factor trinomials of the form $ax^2+bx+c$ with a GCF
+- Factor trinomials using trial and error
+- Factor trinomials using the "ac" method
 {{< /callout >}}
 
 ## Recognize a preliminary strategy for factoring

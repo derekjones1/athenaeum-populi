@@ -8,10 +8,13 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-**By the end of this section, you will be able to:** determine if a sequence is
-geometric, find the general term (nth term) of a geometric sequence, find the
-sum of the first $n$ terms of a geometric sequence, find the sum of an infinite
-geometric series, and apply geometric sequences and series in the real world.
+**By the end of this section, you will be able to:**
+
+- Determine if a sequence is geometric
+- Find the general term (nth term) of a geometric sequence
+- Find the sum of the first $n$ terms of a geometric sequence
+- Find the sum of an infinite geometric series
+- Apply geometric sequences and series in the real world
 {{< /callout >}}
 
 ## Determine if a sequence is geometric

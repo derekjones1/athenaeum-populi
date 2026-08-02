@@ -10,10 +10,15 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** understand the
-  meaning of fractions, model and convert between improper fractions and
-  mixed numbers, find equivalent fractions, locate fractions and mixed
-  numbers on the number line, and order fractions and mixed numbers.
+**By the end of this section, you will be able to:**
+
+- Understand the meaning of fractions
+- Model improper fractions and mixed numbers
+- Convert between improper fractions and mixed numbers
+- Model equivalent fractions
+- Find equivalent fractions
+- Locate fractions and mixed numbers on the number line
+- Order fractions and mixed numbers
 {{< /callout >}}
 
 ## Understand the meaning of fractions
@@ -159,6 +164,7 @@ $$\frac{33}{8} = 4\frac{1}{8}$$
 {{< fillin
   question="Convert the improper fraction to a mixed number: $\tfrac{23}{7}$"
   answer="3\frac{2}{7}"
+  answerForm="mixed-number"
   answerDisplay="$3\tfrac{2}{7}$"
   hint="Divide $7$ into $23$. The quotient is the whole number, and the remainder goes over the divisor."
 >}}
@@ -166,6 +172,7 @@ $$\frac{33}{8} = 4\frac{1}{8}$$
 {{< fillin
   question="Convert the improper fraction to a mixed number: $\tfrac{48}{11}$"
   answer="4\frac{4}{11}"
+  answerForm="mixed-number"
   answerDisplay="$4\tfrac{4}{11}$"
   hint="Divide $11$ into $48$. The quotient is the whole number, and the remainder goes over the divisor."
 >}}
@@ -194,6 +201,7 @@ $$4\frac{2}{3} = \frac{14}{3}$$
 {{< fillin
   question="Convert the mixed number to an improper fraction: $3\tfrac{5}{7}$"
   answer="\frac{26}{7}"
+  answerForm="improper-fraction lowest-terms"
   answerDisplay="$\tfrac{26}{7}$"
   hint="Multiply the whole number by the denominator, then add the numerator; keep the same denominator."
 >}}
@@ -201,6 +209,7 @@ $$4\frac{2}{3} = \frac{14}{3}$$
 {{< fillin
   question="Convert the mixed number to an improper fraction: $2\tfrac{7}{8}$"
   answer="\frac{23}{8}"
+  answerForm="improper-fraction lowest-terms"
   answerDisplay="$\tfrac{23}{8}$"
   hint="Multiply the whole number by the denominator, then add the numerator; keep the same denominator."
 >}}
@@ -263,6 +272,7 @@ equivalent to $\tfrac{2}{5}$.
 {{< fillin
   question="Find a fraction equivalent to $\tfrac{3}{5}$ by multiplying the numerator and denominator by 4."
   answer="\frac{12}{20}"
+  answerForm="denominator:20"
   answerDisplay="$\tfrac{12}{20}$"
   hint="Multiply both the numerator $3$ and the denominator $5$ by $4$."
 >}}
@@ -279,6 +289,7 @@ $$\frac{2}{7} = \frac{2 \cdot 3}{7 \cdot 3} = \frac{6}{21}$$
 {{< fillin
   question="Find a fraction with a denominator of 100 that is equivalent to $\tfrac{3}{10}$."
   answer="\frac{30}{100}"
+  answerForm="denominator:100"
   answerDisplay="$\tfrac{30}{100}$"
   hint="$10$ times what number gives $100$? Multiply the numerator by that same number."
 >}}
@@ -328,6 +339,7 @@ $4$.
 {{< fillin
   question="Convert $\tfrac{9}{2}$ to a mixed number so it can be located on a number line."
   answer="4\frac{1}{2}"
+  answerForm="mixed-number"
   answerDisplay="$4\tfrac{1}{2}$"
   hint="Divide $2$ into $9$: the quotient is the whole number and the remainder goes over the divisor."
 >}}
@@ -384,6 +396,257 @@ is to the right of $-2$, so $-2 < \tfrac{-16}{9}$.
   hint="A mixed number farther from zero (more negative) is smaller. Which is farther left on the number line?"
 >}}
 
+## Practice
+
+### Understand the meaning of fractions
+
+<svg viewBox="0 0 92 100" role="img" aria-label="A circle divided into 4 equal wedges, with 1 wedge shaded." style="max-width: 170px; width: 100%; display: block; margin: 1.5rem auto">
+  <path d="M 46.00 50.00 L 46.00 10.00 A 40.0 40.0 0 0 1 86.00 50.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 86.00 50.00 A 40.0 40.0 0 0 1 46.00 90.00 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 46.00 90.00 A 40.0 40.0 0 0 1 6.00 50.00 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 6.00 50.00 A 40.0 40.0 0 0 1 46.00 10.00 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
+  <circle cx="46.00" cy="50.00" r="40.0" fill="none" stroke="currentColor" stroke-width="1.6" />
+</svg>
+
+{{< fillin
+  question="Name the fraction of the figure above that is shaded."
+  answer="\frac{1}{4}"
+  answerDisplay="$\tfrac{1}{4}$"
+  hint="Count the equal wedges for the denominator, then count the shaded ones for the numerator."
+>}}
+
+<svg viewBox="0 0 92 100" role="img" aria-label="A circle divided into 4 equal wedges, with 3 wedges shaded." style="max-width: 170px; width: 100%; display: block; margin: 1.5rem auto">
+  <path d="M 46.00 50.00 L 46.00 10.00 A 40.0 40.0 0 0 1 86.00 50.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 86.00 50.00 A 40.0 40.0 0 0 1 46.00 90.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 46.00 90.00 A 40.0 40.0 0 0 1 6.00 50.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 6.00 50.00 A 40.0 40.0 0 0 1 46.00 10.00 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
+  <circle cx="46.00" cy="50.00" r="40.0" fill="none" stroke="currentColor" stroke-width="1.6" />
+</svg>
+
+{{< fillin
+  question="Name the fraction of the figure above that is shaded."
+  answer="\frac{3}{4}"
+  answerDisplay="$\tfrac{3}{4}$"
+  hint="The circle is still cut into four equal parts, so only the numerator changes."
+>}}
+
+<svg viewBox="0 0 92 100" role="img" aria-label="A circle divided into 8 equal wedges, with 3 wedges shaded." style="max-width: 170px; width: 100%; display: block; margin: 1.5rem auto">
+  <path d="M 46.00 50.00 L 46.00 10.00 A 40.0 40.0 0 0 1 74.28 21.72 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 74.28 21.72 A 40.0 40.0 0 0 1 86.00 50.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 86.00 50.00 A 40.0 40.0 0 0 1 74.28 78.28 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 74.28 78.28 A 40.0 40.0 0 0 1 46.00 90.00 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 46.00 90.00 A 40.0 40.0 0 0 1 17.72 78.28 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 17.72 78.28 A 40.0 40.0 0 0 1 6.00 50.00 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 6.00 50.00 A 40.0 40.0 0 0 1 17.72 21.72 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 17.72 21.72 A 40.0 40.0 0 0 1 46.00 10.00 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
+  <circle cx="46.00" cy="50.00" r="40.0" fill="none" stroke="currentColor" stroke-width="1.6" />
+</svg>
+
+{{< fillin
+  question="Name the fraction of the figure above that is shaded."
+  answer="\frac{3}{8}"
+  answerDisplay="$\tfrac{3}{8}$"
+  hint="Count the equal wedges first — there are more of them now — and then the shaded ones."
+>}}
+
+<svg viewBox="0 0 92 100" role="img" aria-label="A circle divided into 8 equal wedges, with 5 wedges shaded." style="max-width: 170px; width: 100%; display: block; margin: 1.5rem auto">
+  <path d="M 46.00 50.00 L 46.00 10.00 A 40.0 40.0 0 0 1 74.28 21.72 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 74.28 21.72 A 40.0 40.0 0 0 1 86.00 50.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 86.00 50.00 A 40.0 40.0 0 0 1 74.28 78.28 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 74.28 78.28 A 40.0 40.0 0 0 1 46.00 90.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 46.00 90.00 A 40.0 40.0 0 0 1 17.72 78.28 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 17.72 78.28 A 40.0 40.0 0 0 1 6.00 50.00 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 6.00 50.00 A 40.0 40.0 0 0 1 17.72 21.72 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 17.72 21.72 A 40.0 40.0 0 0 1 46.00 10.00 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
+  <circle cx="46.00" cy="50.00" r="40.0" fill="none" stroke="currentColor" stroke-width="1.6" />
+</svg>
+
+{{< fillin
+  question="Name the fraction of the figure above that is shaded."
+  answer="\frac{5}{8}"
+  answerDisplay="$\tfrac{5}{8}$"
+  hint="More than half the circle is shaded, so the numerator should be more than half the denominator."
+>}}
+
+<svg viewBox="0 0 92 100" role="img" aria-label="A circle divided into 6 equal wedges, with 5 wedges shaded." style="max-width: 170px; width: 100%; display: block; margin: 1.5rem auto">
+  <path d="M 46.00 50.00 L 46.00 10.00 A 40.0 40.0 0 0 1 80.64 30.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 80.64 30.00 A 40.0 40.0 0 0 1 80.64 70.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 80.64 70.00 A 40.0 40.0 0 0 1 46.00 90.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 46.00 90.00 A 40.0 40.0 0 0 1 11.36 70.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 11.36 70.00 A 40.0 40.0 0 0 1 11.36 30.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 11.36 30.00 A 40.0 40.0 0 0 1 46.00 10.00 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
+  <circle cx="46.00" cy="50.00" r="40.0" fill="none" stroke="currentColor" stroke-width="1.6" />
+</svg>
+
+{{< fillin
+  question="The circle above was shaded to model a fraction. Which fraction does it model?"
+  answer="\frac{5}{6}"
+  answerDisplay="$\tfrac{5}{6}$"
+  hint="The number of equal wedges is the denominator; the number shaded is the numerator."
+>}}
+
+### Model improper fractions and mixed numbers
+
+{{< fillin
+  question="Use fraction circles to make wholes with 7 sixth-pieces. Write what you build as a mixed number."
+  answer="1\frac{1}{6}"
+  answerDisplay="$1\tfrac{1}{6}$"
+  hint="Six sixth-pieces fill one whole circle. How many pieces are left over after that?"
+>}}
+
+{{< fillin
+  question="Use fraction circles to make wholes with 7 fifth-pieces. Write what you build as a mixed number."
+  answer="1\frac{2}{5}"
+  answerDisplay="$1\tfrac{2}{5}$"
+  hint="Five fifth-pieces fill one whole circle; the leftover pieces stay over the denominator $5$."
+>}}
+
+<svg viewBox="0 0 184 100" role="img" aria-label="Two circles, each divided into 3 equal wedges. All 3 wedges of the left circle are shaded, and 2 wedges of the right circle are shaded." style="max-width: 320px; width: 100%; display: block; margin: 1.5rem auto">
+  <path d="M 46.00 50.00 L 46.00 10.00 A 40.0 40.0 0 0 1 80.64 70.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 80.64 70.00 A 40.0 40.0 0 0 1 11.36 70.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 46.00 50.00 L 11.36 70.00 A 40.0 40.0 0 0 1 46.00 10.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <circle cx="46.00" cy="50.00" r="40.0" fill="none" stroke="currentColor" stroke-width="1.6" />
+  <path d="M 138.00 50.00 L 138.00 10.00 A 40.0 40.0 0 0 1 172.64 70.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 138.00 50.00 L 172.64 70.00 A 40.0 40.0 0 0 1 103.36 70.00 Z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="1.3" />
+  <path d="M 138.00 50.00 L 103.36 70.00 A 40.0 40.0 0 0 1 138.00 10.00 Z" fill="none" stroke="currentColor" stroke-width="1.3" />
+  <circle cx="138.00" cy="50.00" r="40.0" fill="none" stroke="currentColor" stroke-width="1.6" />
+</svg>
+
+{{< fillin
+  question="Name the improper fraction modeled by the fraction circles above."
+  answer="\frac{5}{3}"
+  answerDisplay="$\tfrac{5}{3}$"
+  hint="Every shaded piece is one third, so count all the shaded thirds across both circles."
+>}}
+
+### Convert between improper fractions and mixed numbers
+
+{{< fillin
+  question="Rewrite the improper fraction as a mixed number: $\tfrac{28}{9}$"
+  answer="3\frac{1}{9}"
+  answerForm="mixed-number"
+  answerDisplay="$3\tfrac{1}{9}$"
+  hint="Divide $9$ into $28$; the quotient is the whole number and the remainder goes over $9$."
+>}}
+
+{{< fillin
+  question="Rewrite the improper fraction as a mixed number: $\tfrac{47}{15}$"
+  answer="3\frac{2}{15}"
+  answerForm="mixed-number"
+  answerDisplay="$3\tfrac{2}{15}$"
+  hint="How many whole groups of $15$ fit in $47$, and how much is left over?"
+>}}
+
+{{< fillin
+  question="Rewrite the mixed number as an improper fraction: $2\tfrac{5}{6}$"
+  answer="\frac{17}{6}"
+  answerForm="improper-fraction lowest-terms"
+  answerDisplay="$\tfrac{17}{6}$"
+  hint="Multiply the whole number by the denominator, add the numerator, and keep the denominator $6$."
+>}}
+
+{{< fillin
+  question="Rewrite the mixed number as an improper fraction: $3\tfrac{5}{9}$"
+  answer="\frac{32}{9}"
+  answerForm="improper-fraction lowest-terms"
+  answerDisplay="$\tfrac{32}{9}$"
+  hint="Three wholes are $27$ ninths; add the $5$ ninths already there."
+>}}
+
+### Model equivalent fractions
+
+{{< fillin
+  question="Use fraction tiles or a drawing to answer: how many twelfths equal one-third?"
+  answer="4"
+  hint="Line up twelfth-tiles against one third-tile and count how many it takes to cover it exactly."
+>}}
+
+{{< fillin
+  question="Use fraction tiles or a drawing to answer: how many twelfths equal three-fourths?"
+  answer="9"
+  hint="First find how many twelfths cover one fourth, then use three of those groups."
+>}}
+
+{{< fillin
+  question="Use fraction tiles or a drawing to answer: how many sixths equal three-halves?"
+  answer="9"
+  hint="Three halves is more than one whole, so you will need more than six sixth-tiles."
+>}}
+
+### Find equivalent fractions
+
+{{< fillin
+  question="Find a fraction equivalent to $\tfrac{1}{3}$ by multiplying the numerator and denominator by 4."
+  answer="\frac{4}{12}"
+  answerForm="denominator:12"
+  answerDisplay="$\tfrac{4}{12}$"
+  hint="The Equivalent Fractions Property lets you multiply top and bottom by the same nonzero number."
+>}}
+
+{{< fillin
+  question="Find the fraction with a denominator of 18 that is equivalent to $\tfrac{5}{6}$."
+  answer="\frac{15}{18}"
+  answerForm="denominator:18"
+  answerDisplay="$\tfrac{15}{18}$"
+  hint="$6$ times what number gives $18$? Multiply the numerator by that same number."
+>}}
+
+{{< fillin
+  question="Find the fraction with a denominator of 27 that is equivalent to $\tfrac{5}{9}$."
+  answer="\frac{15}{27}"
+  answerForm="denominator:27"
+  answerDisplay="$\tfrac{15}{27}$"
+  hint="Find the factor that turns $9$ into $27$, then apply it to the numerator too."
+>}}
+
+### Locate fractions and mixed numbers on the number line
+
+{{< fillin
+  question="Before plotting $\tfrac{13}{5}$ on a number line, rewrite it as a mixed number."
+  answer="2\frac{3}{5}"
+  answerForm="mixed-number"
+  answerDisplay="$2\tfrac{3}{5}$"
+  hint="The whole-number part tells you which pair of whole numbers the point falls between."
+>}}
+
+{{< fillin
+  question="Before plotting $\tfrac{13}{8}$ on a number line, rewrite it as a mixed number."
+  answer="1\frac{5}{8}"
+  answerForm="mixed-number"
+  answerDisplay="$1\tfrac{5}{8}$"
+  hint="Divide $8$ into $13$; the fraction part tells you how far past the whole number to plot."
+>}}
+
+{{< fillin
+  question="Between which two consecutive integers does $-1\tfrac{3}{5}$ lie? Enter the more negative (leftmost) one."
+  answer="-2"
+  hint="It is the opposite of $1\tfrac{3}{5}$, which sits between $1$ and $2$."
+>}}
+
+### Order fractions and mixed numbers
+
+{{< fillin
+  question="Order using < or >. Enter the full inequality: $-1\tfrac{3}{4}$ __ $-2$"
+  answer="-1\frac{3}{4}>-2"
+  answerDisplay="$-1\tfrac{3}{4} > -2$"
+  hint="Which of the two is closer to zero on the number line? That one is larger."
+>}}
+
+{{< fillin
+  question="Order using < or >. Enter the full inequality: $-\tfrac{9}{10}$ __ $-\tfrac{3}{10}$"
+  answer="-\frac{9}{10}<-\frac{3}{10}"
+  answerDisplay="$-\tfrac{9}{10} < -\tfrac{3}{10}$"
+  hint="The denominators match, so compare the numerators — but remember both numbers are negative."
+>}}
+
+{{< fillin
+  question="Order using < or >. Enter the full inequality: $-4$ __ $-\tfrac{23}{6}$"
+  answer="-4<-\frac{23}{6}"
+  answerDisplay="$-4 < -\tfrac{23}{6}$"
+  hint="Write $\tfrac{23}{6}$ as a mixed number first, then compare distances from zero."
+>}}
+
+
 ## Key terms
 
 **fraction** — a number written $\tfrac{a}{b}$ with $a$ the numerator and
@@ -399,4 +662,4 @@ unchanged.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 4.1: Visualize Fractions](https://openstax.org/books/prealgebra-2e/pages/4-1-visualize-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the fraction-circle and fraction-tile figures as prose and one inline graphic, and the long division and number-line walkthroughs as typeset math; omitted the Be Prepared quiz, Manipulative Mathematics callouts, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 4.1: Visualize Fractions](https://openstax.org/books/prealgebra-2e/pages/4-1-visualize-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the fraction-circle and fraction-tile figures as prose and one inline graphic, and the long division and number-line walkthroughs as typeset math; omitted the Be Prepared quiz, Manipulative Mathematics callouts, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part and the fraction-circle models redrawn as accessible inline graphics.</small>

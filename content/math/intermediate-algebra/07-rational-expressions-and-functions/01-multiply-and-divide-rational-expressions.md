@@ -9,10 +9,13 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** determine the values for
-  which a rational expression is undefined, simplify rational expressions,
-  multiply rational expressions, divide rational expressions, and multiply and
-  divide rational functions.
+**By the end of this section, you will be able to:**
+
+- Determine the values for which a rational expression is undefined
+- Simplify rational expressions
+- Multiply rational expressions
+- Divide rational expressions
+- Multiply and divide rational functions
 {{< /callout >}}
 
 We previously reviewed the properties of fractions and their operations. We
@@ -110,6 +113,7 @@ Thus $\tfrac{x+4}{x^2+5x+6}$ is undefined for $x=-2$ or $x=-3$.
 {{< fillin
   question="Enter, separated by commas, the values for which $\tfrac{a+10}{a^2+4a+3}$ is undefined."
   answer="-1, -3"
+  answerMode="unordered"
   answerDisplay="$-1,-3$"
   hint="Factor the denominator as $(a+1)(a+3)$, then set each factor equal to zero."
 >}}

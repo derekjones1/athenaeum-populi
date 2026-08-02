@@ -10,10 +10,13 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** translate and solve
-  basic percent equations, solve percent applications, find percent increase
-  and percent decrease, solve simple interest applications, and solve
-  applications with discount or mark-up.
+**By the end of this section, you will be able to:**
+
+- Translate and solve basic percent equations
+- Solve percent applications
+- Find percent increase and percent decrease
+- Solve simple interest applications
+- Solve applications with discount or mark-up
 {{< /callout >}}
 
 ## Translate and Solve Basic Percent Equations

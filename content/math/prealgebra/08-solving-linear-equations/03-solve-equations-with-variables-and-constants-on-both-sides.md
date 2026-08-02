@@ -10,10 +10,12 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve an equation
-  with constants on both sides, solve an equation with variables on both
-  sides, solve an equation with variables and constants on both sides, and
-  solve equations using a general strategy.
+**By the end of this section, you will be able to:**
+
+- Solve an equation with constants on both sides
+- Solve an equation with variables on both sides
+- Solve an equation with variables and constants on both sides
+- Solve equations using a general strategy
 {{< /callout >}}
 
 ## Solve an equation with constants on both sides
@@ -674,6 +676,101 @@ $$0.24(100(0.4) + 5) \stackrel{?}{=} 0.4(30(0.4) + 15) \qquad 0.24(45) \stackrel
   hint="Distribute both sides first, then collect the $n$-terms on one side and the constants on the other."
 >}}
 
+## Practice
+
+### Solve an equation with constants on both sides
+
+{{< fillin
+  question="Solve: $7x - 8 = 34$."
+  answer="6"
+  hint="The variable is only on the left, so make the left the variable side: add $8$ to both sides, then divide by $7$."
+>}}
+
+{{< fillin
+  question="Solve: $4m + 9 = -23$."
+  answer="-8"
+  hint="Undo the addition first — subtract $9$ from both sides — then divide both sides by $4$."
+>}}
+
+{{< fillin
+  question="Solve: $29 = -8x - 3$."
+  answer="-4"
+  hint="Here the variable side is the right side. Add $3$ to both sides, then divide both sides by $-8$."
+>}}
+
+### Solve an equation with variables on both sides
+
+{{< fillin
+  question="Solve: $9k = 8k - 11$."
+  answer="-11"
+  hint="The only constant is on the right, so make the left the variable side: subtract $8k$ from both sides."
+>}}
+
+{{< fillin
+  question="Solve: $6x + 27 = 9x$."
+  answer="9"
+  hint="Since $9 > 6$, collect the variables on the right: subtract $6x$ from both sides, then divide by $3$."
+>}}
+
+{{< fillin
+  question="Solve: $8x + \tfrac{3}{4} = 7x$."
+  answerDisplay="$-\tfrac{3}{4}$"
+  answer="-3/4"
+  hint="Subtract $7x$ from both sides; the fraction stays put as the constant term."
+>}}
+
+### Solve an equation with variables and constants on both sides
+
+{{< fillin
+  question="Solve: $4x - 17 = 3x + 2$."
+  answer="19"
+  hint="Since $4 > 3$, make the left the variable side: subtract $3x$ from both sides, then add $17$ to both sides."
+>}}
+
+{{< fillin
+  question="Solve: $9c + 7 = -2c - 37$."
+  answer="-4"
+  hint="Add $2c$ to both sides to collect the variables on the left, subtract $7$ from both sides, then divide by $11$."
+>}}
+
+{{< fillin
+  question="Solve: $\tfrac{4}{3}m - 7 = \tfrac{1}{3}m - 13$."
+  answer="-6"
+  hint="Subtract $\tfrac{1}{3}m$ from both sides — the $m$-terms have the same denominator — then add $7$ to both sides."
+>}}
+
+{{< fillin
+  question="Solve: $2.7w - 80 = 1.2w + 10$."
+  answer="60"
+  hint="Subtract $1.2w$ from both sides, add $80$ to both sides, then divide both sides by $1.5$."
+>}}
+
+### Solve equations using a general strategy
+
+{{< fillin
+  question="Solve: $4(y + 7) = 64$."
+  answer="9"
+  hint="Simplify first with the Distributive Property, then subtract $28$ from both sides and divide by $4$."
+>}}
+
+{{< fillin
+  question="Solve: $-(t - 8) = 17$."
+  answer="-9"
+  hint="Distributing the negative sign gives $-t + 8$. Subtract $8$ from both sides, then multiply both sides by $-1$."
+>}}
+
+{{< fillin
+  question="Solve: $18 - 2(y - 3) = 32$."
+  answer="-4"
+  hint="Distribute the $-2$ before combining like terms — the left side becomes $24 - 2y$."
+>}}
+
+{{< fillin
+  question="Solve: $5 + 6(3s - 5) = -3 + 2(8s - 1)$."
+  answer="10"
+  hint="Distribute and combine like terms on each side first, then collect the variable terms on the side with the larger coefficient."
+>}}
+
 ## Key terms
 
 **variable side** — the side of an equation chosen to collect all the
@@ -685,4 +782,4 @@ its starting form.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 8.3: Solve Equations with Variables and Constants on Both Sides](https://openstax.org/books/prealgebra-2e/pages/8-3-solve-equations-with-variables-and-constants-on-both-sides) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 8.3: Solve Equations with Variables and Constants on Both Sides](https://openstax.org/books/prealgebra-2e/pages/8-3-solve-equations-with-variables-and-constants-on-both-sides) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Media links, Writing Exercises, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

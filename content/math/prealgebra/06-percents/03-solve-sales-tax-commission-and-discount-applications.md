@@ -8,9 +8,12 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve sales tax
-  applications, solve commission applications, solve discount
-  applications, and solve mark-up applications.
+**By the end of this section, you will be able to:**
+
+- Solve sales tax applications
+- Solve commission applications
+- Solve discount applications
+- Solve mark-up applications
 {{< /callout >}}
 
 ## Solve sales tax applications
@@ -365,6 +368,121 @@ photograph was $\text{\textdollar}350$.
   hint="Amount of mark-up = mark-up rate $\cdot$ wholesale price = $0.35 \cdot 8{,}500$."
 >}}
 
+## Practice
+
+### Solve sales tax applications
+
+{{< fillin
+  question="The cost of a pair of boots was \$84. The sales tax rate is 5% of the purchase price. What is the sales tax, in dollars?"
+  answer="4.20"
+  answerDisplay="\$4.20"
+  hint="Sales tax = tax rate $\cdot$ purchase price. Write 5% as the decimal $0.05$ before multiplying."
+>}}
+
+{{< fillin
+  question="The cost of a pair of boots was \$84. The sales tax rate is 5% of the purchase price. What is the total cost, in dollars?"
+  answer="88.20"
+  answerDisplay="\$88.20"
+  hint="Total cost = purchase price + sales tax = $84 + 4.20$."
+>}}
+
+{{< fillin
+  question="Shawna bought a mixer for \$300. The sales tax on the purchase was \$19.50. What is the sales tax rate, as a percent?"
+  answer="6.5"
+  answerDisplay="6.5%"
+  hint="Translate to $r \cdot 300 = 19.50$, divide both sides by 300, then write the decimal as a percent."
+>}}
+
+### Solve commission applications
+
+{{< fillin
+  question="Christopher sold his dinette set for \$225 through an online site, which charged him 9% of the selling price as commission. How much was the commission, in dollars?"
+  answer="20.25"
+  answerDisplay="\$20.25"
+  hint="Commission = rate of commission $\cdot$ total sales = $0.09 \cdot 225$."
+>}}
+
+{{< fillin
+  question="Farrah works in a jewelry store and receives 12% commission when she makes a sale. How much commission will she receive for selling an \$8,125 ring, in dollars?"
+  answer="975"
+  answerDisplay="\$975"
+  hint="Commission = rate of commission $\cdot$ total sales = $0.12 \cdot 8{,}125$."
+>}}
+
+{{< fillin
+  question="Dontay is a realtor and earned \$11,250 commission on the sale of a \$375,000 house. What is his rate of commission, as a percent?"
+  answer="3"
+  answerDisplay="3%"
+  hint="Translate to $11{,}250 = r \cdot 375{,}000$, divide by the total sales, then convert the decimal to a percent."
+>}}
+
+### Solve discount applications
+
+{{< fillin
+  question="Perla bought a cellphone that was on sale for \$50 off. The original price of the cellphone was \$189. What was the sale price, in dollars?"
+  answer="139"
+  answerDisplay="\$139"
+  hint="The discount here is already a dollar amount, so subtract it: sale price = original price $-$ discount."
+>}}
+
+{{< fillin
+  question="Janelle bought a beach chair on sale at 60% off. The original price was \$44.95. What is the amount of discount, in dollars?"
+  answer="26.97"
+  answerDisplay="\$26.97"
+  hint="Amount of discount = discount rate $\cdot$ original price = $0.60 \cdot 44.95$."
+>}}
+
+{{< fillin
+  question="Janelle bought a beach chair on sale at 60% off. The original price was \$44.95. What is the sale price, in dollars?"
+  answer="17.98"
+  answerDisplay="\$17.98"
+  hint="Sale price = original price $-$ discount = $44.95 - 26.97$."
+>}}
+
+{{< fillin
+  question="Larry and Donna bought a sofa at the sale price of \$1,344. The original price of the sofa was \$1,920. What is the amount of discount, in dollars?"
+  answer="576"
+  answerDisplay="\$576"
+  hint="When both prices are known, the discount is the difference: original price $-$ sale price."
+>}}
+
+{{< fillin
+  question="Larry and Donna bought a sofa at the sale price of \$1,344. The original price of the sofa was \$1,920. What is the discount rate, as a percent?"
+  answer="30"
+  answerDisplay="30%"
+  hint="The discount is what percent of the original price? Translate to $576 = r \cdot 1{,}920$ and solve."
+>}}
+
+### Solve mark-up applications
+
+{{< fillin
+  question="Daria bought a bracelet at wholesale cost \$16 to sell in her handicraft store. She marked the price up 45%. What is the amount of mark-up, in dollars?"
+  answer="7.20"
+  answerDisplay="\$7.20"
+  hint="Amount of mark-up = mark-up rate $\cdot$ wholesale price = $0.45 \cdot 16$."
+>}}
+
+{{< fillin
+  question="Daria bought a bracelet at wholesale cost \$16 to sell in her handicraft store. She marked the price up 45%. What is the list price, in dollars?"
+  answer="23.20"
+  answerDisplay="\$23.20"
+  hint="List price = wholesale price + mark-up = $16 + 7.20$."
+>}}
+
+{{< fillin
+  question="Alan bought a used bicycle for \$115. After re-conditioning it, he added a 225% mark-up and then advertised it for sale. What is the amount of mark-up, in dollars?"
+  answer="258.75"
+  answerDisplay="\$258.75"
+  hint="A rate above 100% becomes a decimal greater than 1: $225\% = 2.25$. Multiply that by the wholesale price."
+>}}
+
+{{< fillin
+  question="Alan bought a used bicycle for \$115. After re-conditioning it, he added a 225% mark-up and then advertised it for sale. What is the list price, in dollars?"
+  answer="373.75"
+  answerDisplay="\$373.75"
+  hint="List price = wholesale price + mark-up = $115 + 258.75$."
+>}}
+
 ## Key terms
 
 **commission** — a percentage of total sales, as determined by the rate of
@@ -376,4 +494,4 @@ $\text{list price} = \text{wholesale price} + \text{mark-up}$.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 6.3: Solve Sales Tax, Commission, and Discount Applications](https://openstax.org/books/prealgebra-2e/pages/6-3-solve-sales-tax-commission-and-discount-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, the restaurant-receipt and sale-window photos, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 6.3: Solve Sales Tax, Commission, and Discount Applications](https://openstax.org/books/prealgebra-2e/pages/6-3-solve-sales-tax-commission-and-discount-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, the restaurant-receipt and sale-window photos, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

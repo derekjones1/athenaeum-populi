@@ -9,9 +9,11 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** find the greatest
-  common factor of two or more expressions, factor the greatest common
-  factor from a polynomial, and factor by grouping.
+**By the end of this section, you will be able to:**
+
+- Find the greatest common factor of two or more expressions
+- Factor the greatest common factor from a polynomial
+- Factor by grouping
 {{< /callout >}}
 
 ## Find the greatest common factor of two or more expressions

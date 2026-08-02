@@ -10,10 +10,12 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** plot points in a
-  rectangular coordinate system, verify solutions to an equation in two
-  variables, complete a table of solutions to a linear equation in two
-  variables, and find solutions to a linear equation in two variables.
+**By the end of this section, you will be able to:**
+
+- Plot points in a rectangular coordinate system
+- Verify solutions to an equation in two variables
+- Complete a table of solutions to a linear equation in two variables
+- Find solutions to a linear equation in two variables
 {{< /callout >}}
 
 ## Plot points in a rectangular coordinate system
@@ -227,11 +229,16 @@ $2$ and $3$.) The point $\left(3, \tfrac{5}{2}\right)$ is in Quadrant I.
 </svg>
 </div>
 
-{{< fillin
-  question="Plot the point (4, -4) in a rectangular coordinate system. In which quadrant does it lie? Enter the quadrant number as a digit (1, 2, 3, or 4)."
-  answer="4"
-  hint="A positive x-coordinate paired with a negative y-coordinate places the point to the right of the y-axis and below the x-axis."
+{{< multiplechoice
+  question="Plot the point $(4, -4)$ in a rectangular coordinate system. In which quadrant does it lie?"
+  answer="Quadrant IV"
+  hint="A positive $x$-coordinate paired with a negative $y$-coordinate places the point to the right of the $y$-axis and below the $x$-axis."
 >}}
+Quadrant I
+Quadrant II
+Quadrant III
+Quadrant IV
+{{< /multiplechoice >}}
 
 We can summarize the sign patterns of the quadrants this way.
 

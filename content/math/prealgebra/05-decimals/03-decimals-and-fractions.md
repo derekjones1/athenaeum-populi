@@ -10,9 +10,12 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** convert fractions to
-  decimals, order decimals and fractions, simplify expressions using the
-  order of operations, and find the circumference and area of circles.
+**By the end of this section, you will be able to:**
+
+- Convert fractions to decimals
+- Order decimals and fractions
+- Simplify expressions using the order of operations
+- Find the circumference and area of circles
 {{< /callout >}}
 
 ## Convert fractions to decimals
@@ -40,12 +43,14 @@ So the fraction $\tfrac{3}{4}$ is equal to $0.75$.
 {{< fillin
   question="Write the fraction as a decimal: $\tfrac{1}{4}$"
   answer="0.25"
+  answerForm="decimal"
   hint="Divide the numerator by the denominator: $1 \div 4$."
 >}}
 
 {{< fillin
   question="Write the fraction as a decimal: $\tfrac{3}{8}$"
   answer="0.375"
+  answerForm="decimal"
   hint="Divide the numerator by the denominator: $3 \div 8$."
 >}}
 
@@ -62,12 +67,14 @@ So, $-\tfrac{7}{2} = -3.5$.
 {{< fillin
   question="Write the fraction as a decimal: $-\tfrac{9}{4}$"
   answer="-2.25"
+  answerForm="decimal"
   hint="Divide $9$ by $4$ ignoring the sign, then write the negative sign in the answer."
 >}}
 
 {{< fillin
   question="Write the fraction as a decimal: $-\tfrac{11}{2}$"
   answer="-5.5"
+  answerForm="decimal"
   hint="Divide $11$ by $2$ ignoring the sign, then write the negative sign in the answer."
 >}}
 
@@ -428,6 +435,127 @@ value.
   hint="Use $A = \pi r^2$ with $\pi \approx \tfrac{22}{7}$ and $r = \tfrac{10}{33}$ — square the radius first, then multiply by $\tfrac{22}{7}$."
 >}}
 
+## Practice
+
+### Convert fractions to decimals
+
+{{< fillin
+  question="Convert the fraction to a decimal: $\tfrac{11}{4}$"
+  answer="2.75"
+  answerForm="decimal"
+  hint="Divide the numerator by the denominator: $4\overline{\smash{)}\,11.00}$. Check by multiplying your decimal back by $4$."
+>}}
+
+{{< fillin
+  question="Convert the fraction to a decimal: $-\tfrac{310}{25}$"
+  answer="-12.4"
+  answerForm="decimal"
+  hint="Divide $310$ by $25$ ignoring the sign, then write the negative sign in the answer."
+>}}
+
+{{< multiplechoice
+  question="Convert the fraction to a decimal: $\tfrac{5}{9}$"
+  answer="$0.\overline{5}$"
+  hint="Divide $5$ by $9$. The remainder never becomes zero, so use the overbar to mark the digits that repeat."
+>}}
+$0.5$
+$0.\overline{5}$
+$0.\overline{9}$
+$0.\overline{45}$
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Simplify the expression: $2.4 + \tfrac{5}{8}$"
+  answer="3.025"
+  hint="Convert $\tfrac{5}{8}$ to a decimal by dividing $5$ by $8$, then line up the decimal points and add."
+>}}
+
+### Order decimals and fractions
+
+{{< fillin
+  question="Order the pair of numbers, using $<$ or $>$: $\tfrac{1}{8}$ __ $0.8$. Enter the full inequality, e.g. $\tfrac{1}{2}<0.6$."
+  answer="\frac{1}{8}<0.8"
+  answerDisplay="$\tfrac{1}{8} < 0.8$"
+  hint="Convert $\tfrac{1}{8}$ to a decimal first — one eighth is much smaller than eight tenths."
+>}}
+
+{{< fillin
+  question="Order the pair of numbers, using $<$ or $>$: $-0.75$ __ $-\tfrac{4}{5}$. Enter the full inequality, e.g. $-\tfrac{1}{2}<-0.4$."
+  answer="-0.75>-\frac{4}{5}"
+  answerDisplay="$-0.75 > -\tfrac{4}{5}$"
+  hint="Convert $-\tfrac{4}{5}$ to a decimal, then remember that the number farther right on the number line is the greater one."
+>}}
+
+{{< fillin
+  question="Write the set of numbers in order from least to greatest: $\tfrac{3}{5}, \tfrac{9}{16}, 0.55$. Enter as decimals separated by commas, e.g. $0.1, 0.2, 0.3$."
+  answer="0.55, 0.5625, 0.6"
+  answerDisplay="$0.55, \tfrac{9}{16}, \tfrac{3}{5}$"
+  hint="Convert both fractions to decimals ($\tfrac{3}{5} = 0.6$, $\tfrac{9}{16} = 0.5625$), then order all three decimals."
+>}}
+
+{{< fillin
+  question="Write the set of numbers in order from least to greatest: $0.702, \tfrac{13}{20}, \tfrac{5}{8}$. Enter as decimals separated by commas, e.g. $0.1, 0.2, 0.3$."
+  answer="0.625, 0.65, 0.702"
+  answerDisplay="$\tfrac{5}{8}, \tfrac{13}{20}, 0.702$"
+  hint="Convert both fractions to decimals ($\tfrac{13}{20} = 0.65$, $\tfrac{5}{8} = 0.625$), then order all three decimals."
+>}}
+
+### Simplify expressions using the order of operations
+
+{{< fillin
+  question="Simplify: $10(25.1 - 43.8)$"
+  answer="-187"
+  hint="Subtract inside the parentheses first — the result is negative — then multiply by $10$."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{5}{12}(30.58 + 17.9)$"
+  answer="20.2"
+  hint="Add inside the parentheses first, then multiply the sum by $5$ and divide by $12$."
+>}}
+
+{{< fillin
+  question="Simplify: $(37.1 + 52.7) \div (12.5 \div 62.5)$"
+  answer="449"
+  hint="Simplify each set of parentheses before dividing. Check your quotient by multiplying it back by the second parenthesis."
+>}}
+
+{{< fillin
+  question="Simplify: $-\tfrac{9}{10} \cdot \tfrac{8}{15} + 0.25$"
+  answer="-0.23"
+  hint="Multiply the two fractions first, convert that product to a decimal, then add $0.25$."
+>}}
+
+### Find the circumference and area of circles
+
+{{< fillin
+  question="A circle has radius $5$ inches. Approximate its circumference. Use $3.14$ for $\pi$."
+  answer="31.4"
+  answerDisplay="31.4 in."
+  hint="Use $C = 2\pi r$ with $\pi \approx 3.14$ and $r = 5$."
+>}}
+
+{{< fillin
+  question="A circle has radius $5$ inches. Approximate its area. Use $3.14$ for $\pi$."
+  answer="78.5"
+  answerDisplay="78.5 sq. in."
+  hint="Use $A = \pi r^2$ with $\pi \approx 3.14$ and $r = 5$ — square the radius before multiplying."
+>}}
+
+{{< fillin
+  question="A circle has diameter $\tfrac{5}{6}$ meter. Approximate its circumference. The measurement is a fraction, so use $\tfrac{22}{7}$ for $\pi$ and leave the answer in fraction form."
+  answer="\frac{55}{21}"
+  answerDisplay="$\tfrac{55}{21}$ m"
+  hint="The diameter is given, so use $C = \pi d$: multiply $\tfrac{22}{7} \cdot \tfrac{5}{6}$ and simplify."
+>}}
+
+{{< fillin
+  question="A circle has diameter $\tfrac{5}{6}$ meter. Approximate its area. The measurement is a fraction, so use $\tfrac{22}{7}$ for $\pi$ and leave the answer in fraction form."
+  answer="\frac{275}{504}"
+  answerDisplay="$\tfrac{275}{504}$ sq. m"
+  hint="The area formula needs the radius, so halve the diameter first, then use $A = \pi r^2$ with $\pi \approx \tfrac{22}{7}$."
+>}}
+
 ## Key terms
 
 **repeating decimal** — a decimal in which the last digit or group of digits
@@ -440,4 +568,4 @@ diameter, approximately $3.14$ or $\tfrac{22}{7}$.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 5.3: Decimals and Fractions](https://openstax.org/books/prealgebra-2e/pages/5-3-decimals-and-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the long-division layouts as typeset math and the circle diagram as an accessible inline graphic; omitted the Be Prepared quiz, Manipulative Mathematics callout, Media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 5.3: Decimals and Fractions](https://openstax.org/books/prealgebra-2e/pages/5-3-decimals-and-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the long-division layouts as typeset math and the circle diagram as an accessible inline graphic; omitted the Be Prepared quiz, Manipulative Mathematics callout, and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises whose answers appear in the official Answer Key into the interactive Practice block, expanding multipart items into one exercise per part.</small>

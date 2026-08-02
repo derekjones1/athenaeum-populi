@@ -10,9 +10,11 @@ weight: 7
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** verify solutions to
-  an inequality in two variables, recognize the relation between the
-  solutions of an inequality and its graph, and graph linear inequalities.
+**By the end of this section, you will be able to:**
+
+- Verify solutions to an inequality in two variables
+- Recognize the relation between the solutions of an inequality and its graph
+- Graph linear inequalities
 {{< /callout >}}
 
 We have learned how to solve inequalities in one variable. Now we look at
@@ -313,11 +315,14 @@ above the line.
 </svg>
 </div>
 
-{{< fillin
-  question="Graph the linear inequality $y <= -1$. Is the boundary line solid or dashed? Answer 1 for solid, 0 for dashed."
-  answer="1"
-  hint="The inequality symbol is <=, which includes equality, so the boundary line is solid."
+{{< multiplechoice
+  question="Graph the linear inequality $y \le -1$. Is the boundary line solid or dashed?"
+  answer="solid"
+  hint="The inequality symbol is $\le$, which includes equality, so the boundary line is solid."
 >}}
+solid
+dashed
+{{< /multiplechoice >}}
 
 ## Key terms
 

@@ -10,10 +10,12 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve equations using
-  the Division and Multiplication Properties of Equality, solve equations
-  that require simplification, translate to an equation and solve, and
-  translate and solve applications.
+**By the end of this section, you will be able to:**
+
+- Solve equations using the Division and Multiplication Properties of Equality
+- Solve equations that require simplification
+- Translate to an equation and solve
+- Translate and solve applications
 {{< /callout >}}
 
 ## Solve Equations Using the Division and Multiplication Properties of Equality

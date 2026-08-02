@@ -10,10 +10,12 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve coin word
-  problems, solve ticket and stamp word problems, solve mixture word
-  problems, and use the mixture model to solve investment problems using
-  simple interest.
+**By the end of this section, you will be able to:**
+
+- Solve coin word problems
+- Solve ticket and stamp word problems
+- Solve mixture word problems
+- Use the mixture model to solve investment problems using simple interest
 {{< /callout >}}
 
 ## Solve coin word problems

@@ -10,11 +10,13 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** simplify expressions
-  using the Quotient Property for Exponents; simplify expressions with an
-  exponent of zero; simplify expressions using the Quotient to a Power
-  Property; simplify expressions by applying several properties; and divide
-  monomials.
+**By the end of this section, you will be able to:**
+
+- Simplify expressions using the Quotient Property for Exponents
+- Simplify expressions with an exponent of zero
+- Simplify expressions using the Quotient to a Power Property
+- Simplify expressions by applying several properties
+- Divide monomials
 {{< /callout >}}
 
 ## Simplify Expressions Using the Quotient Property for Exponents

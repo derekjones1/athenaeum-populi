@@ -11,10 +11,13 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** multiply integers,
-  divide integers, simplify expressions with integers, evaluate variable
-  expressions with integers, and translate word phrases to algebraic
-  expressions.
+**By the end of this section, you will be able to:**
+
+- Multiply integers
+- Divide integers
+- Simplify expressions with integers
+- Evaluate variable expressions with integers
+- Translate word phrases to algebraic expressions
 {{< /callout >}}
 
 ## Multiply integers
@@ -296,6 +299,136 @@ Simplify: $8$.
   hint="'Quotient' means divide: $-63 \div (-9)$."
 >}}
 
+## Practice
+
+### Multiply integers
+
+{{< fillin
+  question="Multiply: $-4 \cdot 8$"
+  answer="-32"
+  hint="The signs are different, so the product is negative. Multiply $4 \cdot 8$ and attach the sign."
+>}}
+
+{{< fillin
+  question="Multiply: $-18(-2)$"
+  answer="36"
+  hint="Both factors are negative — same signs, so the product is positive."
+>}}
+
+{{< fillin
+  question="Multiply: $-1(-14)$"
+  answer="14"
+  hint="Multiplying by $-1$ gives the opposite of the other factor."
+>}}
+
+### Divide integers
+
+{{< fillin
+  question="Divide: $-24 \div 6$"
+  answer="-4"
+  hint="Different signs, so the quotient is negative. Check by multiplying your answer by $6$."
+>}}
+
+{{< fillin
+  question="Divide: $-52 \div (-4)$"
+  answer="13"
+  hint="Same signs, so the quotient is positive. Check by multiplying your answer by $-4$."
+>}}
+
+{{< fillin
+  question="Divide: $49 \div (-1)$"
+  answer="-49"
+  hint="Dividing by $-1$ gives the opposite of the dividend."
+>}}
+
+### Simplify expressions with integers
+
+{{< fillin
+  question="Simplify: $5(-6) + 7(-2) - 3$"
+  answer="-47"
+  hint="Multiply before you add or subtract, then work left to right."
+>}}
+
+{{< fillin
+  question="Simplify: $(-5)^3$"
+  answer="-125"
+  hint="The parentheses put the base at $-5$ — multiply three factors of $-5$. An odd number of negative factors gives a negative product."
+>}}
+
+{{< fillin
+  question="Simplify: $-4^2$"
+  answer="-16"
+  hint="With no parentheses the base is $4$, not $-4$: square $4$ first, then take the opposite."
+>}}
+
+{{< fillin
+  question="Simplify: $9 - 2[3 - 8(-2)]$"
+  answer="-29"
+  hint="Work from the inside out — multiply inside the brackets first, then simplify the bracket, then multiply by $2$."
+>}}
+
+{{< fillin
+  question="Simplify: $(-3)^2 - 24 \div (8 - 2)$"
+  answer="5"
+  hint="Grouping symbols first, then the exponent (the base is $-3$ here), then the division, then the subtraction."
+>}}
+
+### Evaluate variable expressions with integers
+
+{{< fillin
+  question="Evaluate $-2x + 17$ when $x = 8$"
+  answer="1"
+  hint="Substitute $8$ for $x$, multiply, then add."
+>}}
+
+{{< fillin
+  question="Evaluate $-2x + 17$ when $x = -8$"
+  answer="33"
+  hint="Substitute $-8$ for $x$ in parentheses: $-2(-8)$ has same signs, so that product is positive."
+>}}
+
+{{< fillin
+  question="Evaluate $2w^2 - 3w + 7$ when $w = -2$"
+  answer="21"
+  hint="Substitute with parentheses, $2(-2)^2 - 3(-2) + 7$, and square before you multiply."
+>}}
+
+{{< fillin
+  question="Evaluate $9a - 2b - 8$ when $a = -6$ and $b = -3$"
+  answer="-56"
+  hint="Substitute both values in parentheses, multiply each term, then subtract left to right — watch the double negative in $-2(-3)$."
+>}}
+
+### Translate word phrases to algebraic expressions
+
+{{< fillin
+  question="Translate to an algebraic expression and simplify if possible: the product of $-3$ and $15$"
+  answer="-45"
+  answerDisplay="$-3 \cdot 15 = -45$"
+  hint="'Product' means multiply; different signs give a negative product."
+>}}
+
+{{< fillin
+  question="Translate to an algebraic expression and simplify if possible: the quotient of $-60$ and $-20$"
+  answer="3"
+  answerDisplay="$-60 \div (-20) = 3$"
+  hint="'Quotient' means divide, and the dividend is named first; same signs give a positive quotient."
+>}}
+
+{{< fillin
+  question="Translate to an algebraic expression and simplify if possible: the quotient of $-6$ and the sum of $a$ and $b$"
+  answer="\frac{-6}{a+b}"
+  answerDisplay="$\tfrac{-6}{a+b}$"
+  hint="Divide $-6$ by the whole sum — write the sum as the denominator. Nothing simplifies further."
+>}}
+
+{{< fillin
+  question="Translate to an algebraic expression and simplify if possible: the product of $-10$ and the difference of $p$ and $q$"
+  answer="-10(p-q)"
+  answerDisplay="$-10(p-q)$"
+  hint="Keep the difference grouped in parentheses so the whole difference is multiplied by $-10$."
+>}}
+
 ## Key terms
 
 **multiplication/division sign rule** — for both multiplying and
@@ -305,4 +438,4 @@ multiplying or dividing a number by $-1$ gives its opposite.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 3.4: Multiply and Divide Integers](https://openstax.org/books/prealgebra-2e/pages/3-4-multiply-and-divide-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed the counter-model derivation of the multiplication sign rule into prose and recreated the sign-rule summaries as callouts; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 3.4: Multiply and Divide Integers](https://openstax.org/books/prealgebra-2e/pages/3-4-multiply-and-divide-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed the counter-model derivation of the multiplication sign rule into prose and recreated the sign-rule summaries as callouts; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

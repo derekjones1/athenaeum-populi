@@ -9,9 +9,11 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** find the domain and
-  range of a relation, determine if a relation is a function, and find the
-  value of a function.
+**By the end of this section, you will be able to:**
+
+- Find the domain and range of a relation
+- Determine if a relation is a function
+- Find the value of a function
 {{< /callout >}}
 
 ## Find the domain and range of a relation

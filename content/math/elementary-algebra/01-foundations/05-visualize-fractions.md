@@ -10,10 +10,14 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** find equivalent
-  fractions, simplify fractions, multiply fractions, divide fractions,
-  simplify expressions written with a fraction bar, and translate phrases to
-  expressions with fractions.
+**By the end of this section, you will be able to:**
+
+- Find equivalent fractions
+- Simplify fractions
+- Multiply fractions
+- Divide fractions
+- Simplify expressions written with a fraction bar
+- Translate phrases to expressions with fractions
 {{< /callout >}}
 
 ## Find equivalent fractions
@@ -129,14 +133,16 @@ So, $\tfrac{4}{10}$, $\tfrac{6}{15}$, and $\tfrac{10}{25}$ are equivalent to
 $\tfrac{2}{5}$.
 
 {{< fillin
-  question="Find three fractions equivalent to $\tfrac{3}{5}$. Enter one of them."
+  question="Find three fractions equivalent to $\tfrac{3}{5}$ by multiplying the numerator and denominator by $2$, $3$, and $5$. Enter the first one."
   answer="\frac{6}{10}"
+  answerForm="denominator:10"
   hint="Multiply both the numerator and the denominator of $\tfrac{3}{5}$ by the same nonzero number."
 >}}
 
 {{< fillin
-  question="Find three fractions equivalent to $\tfrac{4}{5}$. Enter one of them."
+  question="Find three fractions equivalent to $\tfrac{4}{5}$ by multiplying the numerator and denominator by $2$, $3$, and $5$. Enter the first one."
   answer="\frac{8}{10}"
+  answerForm="denominator:10"
   hint="Multiply both the numerator and the denominator of $\tfrac{4}{5}$ by the same nonzero number."
 >}}
 
@@ -184,12 +190,14 @@ more common factors.
 {{< fillin
   question="Simplify: $-\tfrac{42}{54}$."
   answer="-\frac{7}{9}"
+  answerForm="lowest-terms"
   hint="Find the greatest common factor of $42$ and $54$, then divide it out of both the numerator and denominator."
 >}}
 
 {{< fillin
   question="Simplify: $-\tfrac{45}{81}$."
   answer="-\frac{5}{9}"
+  answerForm="lowest-terms"
   hint="Find the greatest common factor of $45$ and $81$, then divide it out of both the numerator and denominator."
 >}}
 
@@ -212,12 +220,14 @@ the common factors $5$ and $7$: $-\tfrac{2 \cdot 3}{11}$.
 {{< fillin
   question="Simplify: $-\tfrac{69}{120}$."
   answer="-\frac{23}{40}"
+  answerForm="lowest-terms"
   hint="Factor $69$ and $120$ into primes ($69 = 3 \cdot 23$), then divide out any common factor."
 >}}
 
 {{< fillin
   question="Simplify: $-\tfrac{120}{192}$."
   answer="-\frac{5}{8}"
+  answerForm="lowest-terms"
   hint="Factor both numbers into primes and divide out every common factor before multiplying what's left."
 >}}
 
@@ -583,6 +593,106 @@ $\tfrac{m-n}{p}$.
   hint="Quotient of $X$ and $Y$ means divide $X$ by $Y$. Here $X$ is the sum of $p$ and $q$, and $Y$ is $r$."
 >}}
 
+## Practice
+
+### Find equivalent fractions
+
+{{< fillin
+  question="Write the fraction equivalent to $\tfrac{3}{8}$ whose denominator is $16$. Enter its numerator."
+  answer="6"
+  answerDisplay="$\tfrac{6}{16}$"
+  hint="Ask what $8$ was multiplied by to reach $16$, then multiply the numerator by that same number."
+>}}
+
+{{< fillin
+  question="Write the fraction equivalent to $\tfrac{5}{9}$ whose denominator is $18$. Enter its numerator."
+  answer="10"
+  answerDisplay="$\tfrac{10}{18}$"
+  hint="Ask what $9$ was multiplied by to reach $18$, then multiply the numerator by that same number."
+>}}
+
+### Simplify fractions
+
+{{< fillin
+  question="Simplify: $-\tfrac{40}{88}$."
+  answer="-\frac{5}{11}"
+  answerForm="lowest-terms"
+  answerDisplay="$-\tfrac{5}{11}$"
+  hint="Find the greatest common factor of $40$ and $88$, then divide it out of both the numerator and denominator."
+>}}
+
+{{< fillin
+  question="Simplify: $-\tfrac{108}{63}$."
+  answer="-\frac{12}{7}"
+  answerForm="lowest-terms"
+  answerDisplay="$-\tfrac{12}{7}$"
+  hint="Find the greatest common factor of $108$ and $63$, then divide it out of both the numerator and denominator."
+>}}
+
+### Multiply fractions
+
+{{< fillin
+  question="Multiply: $\tfrac{3}{4} \cdot \tfrac{9}{10}$."
+  answer="\frac{27}{40}"
+  answerDisplay="$\tfrac{27}{40}$"
+  hint="Multiply the numerators together and the denominators together, then simplify if possible."
+>}}
+
+{{< fillin
+  question="Multiply: $-\tfrac{2}{3}\left(-\tfrac{3}{8}\right)$."
+  answer="\frac{1}{4}"
+  answerDisplay="$\tfrac{1}{4}$"
+  hint="The two negative factors give a positive product; multiply numerators and denominators, then simplify."
+>}}
+
+### Divide fractions
+
+{{< fillin
+  question="Divide: $\tfrac{3}{4} \div \tfrac{2}{3}$."
+  answer="\frac{9}{8}"
+  answerDisplay="$\tfrac{9}{8}$"
+  hint="Multiply the first fraction by the reciprocal of the second, then simplify."
+>}}
+
+{{< fillin
+  question="Divide: $-\tfrac{7}{9} \div \left(-\tfrac{7}{4}\right)$."
+  answer="\frac{4}{9}"
+  answerDisplay="$\tfrac{4}{9}$"
+  hint="Multiply the first fraction by the reciprocal of the second; the two negatives make the quotient positive."
+>}}
+
+### Simplify expressions written with a fraction bar
+
+{{< fillin
+  question="Simplify: $\tfrac{22+3}{10}$."
+  answer="\frac{5}{2}"
+  answerDisplay="$\tfrac{5}{2}$"
+  hint="Simplify the numerator first, then divide by the denominator."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{48}{24-15}$."
+  answer="\frac{16}{3}"
+  answerDisplay="$\tfrac{16}{3}$"
+  hint="Simplify the denominator first, then divide."
+>}}
+
+### Translate phrases to expressions with fractions
+
+{{< fillin
+  question="Translate to an algebraic expression: the quotient of $r$ and the sum of $s$ and $10$. Use $r$ and $s$ in your answer."
+  answer="\frac{r}{s+10}"
+  answerDisplay="$\tfrac{r}{s+10}$"
+  hint="Quotient of $X$ and $Y$ means divide $X$ by $Y$. Here $Y$ is the sum $s+10$."
+>}}
+
+{{< fillin
+  question="Translate to an algebraic expression: the quotient of the difference of $x$ and $y$, and $-3$. Use $x$ and $y$ in your answer."
+  answer="\frac{x-y}{-3}"
+  answerDisplay="$\tfrac{x-y}{-3}$"
+  hint="Quotient of $X$ and $Y$ means divide $X$ by $Y$. Here $X$ is the difference of $x$ and $y$, and $Y$ is $-3$."
+>}}
+
 ## Key terms
 
 **fraction** — a way to represent parts of a whole, written $\tfrac{a}{b}$
@@ -597,4 +707,4 @@ numerator from the denominator, which acts as a grouping symbol.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.5: Visualize Fractions](https://openstax.org/books/elementary-algebra-2e/pages/1-5-visualize-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the fraction-circle figure as an accessible inline graphic and described the pizza and quarters figures in prose; omitted the Be Prepared checklist, Manipulative Mathematics callouts, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.5: Visualize Fractions](https://openstax.org/books/elementary-algebra-2e/pages/1-5-visualize-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the fraction-circle figure as an accessible inline graphic and described the pizza and quarters figures in prose; omitted the Be Prepared checklist, Manipulative Mathematics callouts, and media links; adapted selected end-of-section exercises into interactive practice; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

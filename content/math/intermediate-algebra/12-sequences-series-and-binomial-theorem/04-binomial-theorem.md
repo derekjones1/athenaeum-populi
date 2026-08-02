@@ -8,9 +8,11 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-**By the end of this section, you will be able to:** use Pascal's Triangle to
-expand a binomial, evaluate a binomial coefficient, and use the Binomial
-Theorem to expand a binomial.
+**By the end of this section, you will be able to:**
+
+- Use Pascal's Triangle to expand a binomial
+- Evaluate a binomial coefficient
+- Use the Binomial Theorem to expand a binomial
 {{< /callout >}}
 
 ## Use Pascal's Triangle to expand a binomial
@@ -694,7 +696,7 @@ $$
  &=\frac{9!}{3!6!}x^{9-3}\cdot3^3\\
  &=\frac{9\cdot8\cdot7\cdot6!}{3!\cdot6!}x^6\cdot27\\
  &=84\cdot27\cdot x^6\\
- &=2268x^6
+ &=2{,}268x^6
 \end{aligned}
 $$
 

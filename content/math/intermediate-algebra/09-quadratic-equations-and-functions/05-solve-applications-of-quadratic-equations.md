@@ -8,8 +8,9 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve applications
-  modeled by quadratic equations.
+**By the end of this section, you will be able to:**
+
+- Solve applications modeled by quadratic equations
 {{< /callout >}}
 
 ## Solve Applications Modeled by Quadratic Equations
@@ -376,6 +377,7 @@ down at 4.6 seconds.
 {{< fillin
   question="An arrow is shot from the ground at an initial speed of 108 ft/s. Use $h=-16t^2+v_0t$ to determine when it will be 180 feet from the ground. Enter both times to the nearest tenth, separated by a comma."
   answer="3.0, 3.8"
+  answerMode="unordered"
   answerDisplay="$3.0$ seconds and $3.8$ seconds"
   hint="Set $180=-16t^2+108t$ and solve the quadratic equation."
 >}}
@@ -383,6 +385,7 @@ down at 4.6 seconds.
 {{< fillin
   question="A man throws a ball into the air at 96 ft/s. Use $h=-16t^2+v_0t$ to determine when its height will be 48 feet. Enter both times to the nearest tenth, separated by a comma."
   answer="0.6, 5.4"
+  answerMode="unordered"
   answerDisplay="$0.6$ second and $5.4$ seconds"
   hint="Set $48=-16t^2+96t$ and solve."
 >}}
@@ -430,8 +433,8 @@ $$
 2000(450+r)+2000(450-r)&=9(450-r)(450+r)\\
 2000(900)&=9(450^2-r^2)\\
 2000(100)&=450^2-r^2\\
-200000&=202500-r^2\\
--2500&=-r^2\\
+200{,}000&=202{,}500-r^2\\
+-2{,}500&=-r^2\\
 r&=50.
 \end{aligned}
 $$
@@ -445,7 +448,7 @@ jet stream was 50 mph.
   question="MaryAnne's destination is 2,400 miles from home and her total round-trip flight time was 10 hours. If the plane flew at 500 mph in still air, what was the speed of the jet stream?"
   answer="100"
   answerDisplay="$100$ mph"
-  hint="Let $r$ be the wind speed and add $\tfrac{2400}{500-r}+\tfrac{2400}{500+r}$."
+  hint="Let $r$ be the wind speed and add $\tfrac{2{,}400}{500-r}+\tfrac{2{,}400}{500+r}$."
 >}}
 
 {{< fillin

@@ -9,9 +9,12 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** simplify expressions with
-  square roots, estimate square roots, approximate square roots, and simplify
-  variable expressions with square roots.
+**By the end of this section, you will be able to:**
+
+- Simplify expressions with square roots
+- Estimate square roots
+- Approximate square roots
+- Simplify variable expressions with square roots
 {{< /callout >}}
 
 ## Simplify Expressions with Square Roots

@@ -10,9 +10,10 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** find the prime
-  factorization of a composite number, and find the least common multiple
-  (LCM) of two numbers.
+**By the end of this section, you will be able to:**
+
+- Find the prime factorization of a composite number
+- Find the least common multiple (LCM) of two numbers
 {{< /callout >}}
 
 ## Find the prime factorization of a composite number
@@ -201,6 +202,7 @@ should be $48$.
 {{< fillin
   question="Find the prime factorization of 80 using the factor tree method. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
   answer="2^4 \cdot 5"
+  answerForm="prime-product"
   answerDisplay="$2^4 \cdot 5$"
   hint="Start with a factor pair like $8$ and $10$, then keep factoring any composite branch until every branch ends in a prime."
 >}}
@@ -208,6 +210,7 @@ should be $48$.
 {{< fillin
   question="Find the prime factorization of 60 using the factor tree method. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
   answer="2^2 \cdot 3 \cdot 5"
+  answerForm="prime-product"
   answerDisplay="$2^2 \cdot 3 \cdot 5$"
   hint="Try the factor pair $6$ and $10$, then keep factoring any composite branch until every branch ends in a prime."
 >}}
@@ -256,6 +259,7 @@ $$84 = 2 \cdot 2 \cdot 3 \cdot 7 = 2^2 \cdot 3 \cdot 7$$
 {{< fillin
   question="Find the prime factorization of 126 using the factor tree method. Enter the answer in exponential form, e.g. $2^2 \cdot 3$."
   answer="2 \cdot 3^2 \cdot 7"
+  answerForm="prime-product"
   answerDisplay="$2 \cdot 3^2 \cdot 7$"
   hint="Try the factor pair $2$ and $63$, then keep factoring the composite branch ($63 = 9 \times 7$) until every branch ends in a prime."
 >}}
@@ -263,6 +267,7 @@ $$84 = 2 \cdot 2 \cdot 3 \cdot 7 = 2^2 \cdot 3 \cdot 7$$
 {{< fillin
   question="Find the prime factorization of 294 using the factor tree method. Enter the answer in exponential form, e.g. $2 \cdot 3^2$."
   answer="2 \cdot 3 \cdot 7^2"
+  answerForm="prime-product"
   answerDisplay="$2 \cdot 3 \cdot 7^2$"
   hint="294 is even, so start by dividing off a factor of $2$. The remaining factor is $147 = 3 \times 49$."
 >}}
@@ -337,6 +342,7 @@ Check this yourself by multiplying the factors. The result should be $120$.
 {{< fillin
   question="Find the prime factorization of 80 using the ladder method. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
   answer="2^4 \cdot 5"
+  answerForm="prime-product"
   answerDisplay="$2^4 \cdot 5$"
   hint="Divide 80 by $2$ repeatedly until it no longer divides evenly, then check whether the quotient is prime."
 >}}
@@ -344,6 +350,7 @@ Check this yourself by multiplying the factors. The result should be $120$.
 {{< fillin
   question="Find the prime factorization of 60 using the ladder method. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
   answer="2^2 \cdot 3 \cdot 5"
+  answerForm="prime-product"
   answerDisplay="$2^2 \cdot 3 \cdot 5$"
   hint="Divide by $2$ until it no longer divides evenly, then move to the next prime."
 >}}
@@ -369,6 +376,7 @@ you use doesn't change the answer.
 {{< fillin
   question="Find the prime factorization of 126 using the ladder method. Enter the answer in exponential form, e.g. $2^2 \cdot 3$."
   answer="2 \cdot 3^2 \cdot 7"
+  answerForm="prime-product"
   answerDisplay="$2 \cdot 3^2 \cdot 7$"
   hint="Divide by $2$ once, then by $3$ until it no longer divides evenly, then check whether the quotient is prime."
 >}}
@@ -376,6 +384,7 @@ you use doesn't change the answer.
 {{< fillin
   question="Find the prime factorization of 294 using the ladder method. Enter the answer in exponential form, e.g. $2 \cdot 3^2$."
   answer="2 \cdot 3 \cdot 7^2"
+  answerForm="prime-product"
   answerDisplay="$2 \cdot 3 \cdot 7^2$"
   hint="Divide by $2$ once, then by $3$ once, then check whether the remaining quotient is prime."
 >}}
@@ -538,6 +547,54 @@ The LCM of $50$ and $100$ is $100$.
   hint="$60 = 2 \cdot 2 \cdot 3 \cdot 5$ and $72 = 2 \cdot 2 \cdot 2 \cdot 3 \cdot 3$. Match the common primes column by column, then bring every column down."
 >}}
 
+## Practice
+
+### Find the prime factorization of a composite number
+
+{{< fillin
+  question="Find the prime factorization of 132 using the factor tree method. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
+  answer="2^2 \cdot 3 \cdot 11"
+  answerForm="prime-product"
+  answerDisplay="$2 \cdot 2 \cdot 3 \cdot 11 = 2^2 \cdot 3 \cdot 11$"
+  hint="Start with the factor pair $4$ and $33$, then factor each composite branch until every branch ends in a prime."
+>}}
+
+{{< fillin
+  question="Find the prime factorization of 432 using the ladder method. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
+  answer="2^4 \cdot 3^3"
+  answerForm="prime-product"
+  answerDisplay="$2 \cdot 2 \cdot 2 \cdot 2 \cdot 3 \cdot 3 \cdot 3 = 2^4 \cdot 3^3$"
+  hint="Divide by $2$ until it no longer divides evenly, then keep dividing by $3$ until the quotient is prime."
+>}}
+
+{{< fillin
+  question="Find the prime factorization of 525 using any method. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
+  answer="3 \cdot 5^2 \cdot 7"
+  answerForm="prime-product"
+  answerDisplay="$3 \cdot 5 \cdot 5 \cdot 7 = 3 \cdot 5^2 \cdot 7$"
+  hint="525 is odd, so $2$ is not a factor. Its last digit is 5, so start by dividing off factors of $5$."
+>}}
+
+### Find the least common multiple (LCM) of two numbers
+
+{{< fillin
+  question="Find the LCM of 6 and 15 by listing multiples."
+  answer="30"
+  hint="List multiples of 6 and of 15 until a number appears in both lists; the first one you reach is the LCM."
+>}}
+
+{{< fillin
+  question="Find the LCM of 70 and 84 using the prime factors method."
+  answer="420"
+  hint="$70 = 2 \cdot 5 \cdot 7$ and $84 = 2 \cdot 2 \cdot 3 \cdot 7$. Match the common $2$ and $7$ in their own columns, then bring down every column."
+>}}
+
+{{< fillin
+  question="Hot dogs are sold in packages of ten, but hot dog buns come in packs of eight. What is the smallest number of hot dogs and buns that can be purchased if you want to have the same number of hot dogs and buns?"
+  answer="40"
+  hint="The smallest count that both package sizes divide into evenly is the LCM of 10 and 8."
+>}}
+
 ## Key terms
 
 **prime factorization** — the product of prime numbers that equals a given
@@ -550,4 +607,4 @@ two given numbers.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 2.5: Prime Factorization and the Least Common Multiple](https://openstax.org/books/prealgebra-2e/pages/2-5-prime-factorization-and-the-least-common-multiple) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the factor-tree diagrams as accessible inline graphics, the ladder (stacked division) diagrams as typeset math, and the prime-factor column alignments as tables; omitted the Be Prepared quiz, Manipulative Mathematics callout, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 2.5: Prime Factorization and the Least Common Multiple](https://openstax.org/books/prealgebra-2e/pages/2-5-prime-factorization-and-the-least-common-multiple) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the factor-tree diagrams as accessible inline graphics, the ladder (stacked division) diagrams as typeset math, and the prime-factor column alignments as tables; omitted the Be Prepared quiz, Manipulative Mathematics callout, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, stating each prime-factorization answer in exponential form alongside the answer key's product of primes.</small>

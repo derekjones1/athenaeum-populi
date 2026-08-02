@@ -9,9 +9,12 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** identify multiples of
-  numbers, use common divisibility tests, find all the factors of a number,
-  and identify prime and composite numbers.
+**By the end of this section, you will be able to:**
+
+- Identify multiples of numbers
+- Use common divisibility tests
+- Find all the factors of a number
+- Identify prime and composite numbers
 {{< /callout >}}
 
 ## Identify multiples of numbers
@@ -36,17 +39,23 @@ $0, 2, 4, 6, 8$ — yes.
 
 **Example.** Is $880$ a multiple of $5$? Its last digit is $0$ — yes.
 
-{{< fillin
-  question="Is 21,493 a multiple of $2$? Answer $1$ for yes or $0$ for no."
-  answer="0"
+{{< multiplechoice
+  question="Is $21{,}493$ a multiple of $2$?"
+  answer="no"
   hint="Check the last digit: is it $0$, $2$, $4$, $6$, or $8$?"
 >}}
+yes
+no
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="Is 2,690 a multiple of $5$? Answer $1$ for yes or $0$ for no."
-  answer="1"
+{{< multiplechoice
+  question="Is $2{,}690$ a multiple of $5$?"
+  answer="yes"
   hint="Check the last digit: is it $5$ or $0$?"
 >}}
+yes
+no
+{{< /multiplechoice >}}
 
 The pattern for multiples of $3$ is different — it isn't about the last
 digit, but the **sum of the digits**: if the sum of a number's digits is
@@ -59,11 +68,14 @@ and $15$ is a multiple of $3$ — yes. Check: $645 \div 3 = 215$.
 $1 + 0 + 5 + 1 + 9 = 16$, not a multiple of $3$ — no. Dividing confirms it:
 $10{,}519 \div 3 = 3{,}506\ \text{R}1$, not a whole number.
 
-{{< fillin
-  question="Is 3,742 a multiple of $3$? Answer $1$ for yes or $0$ for no."
-  answer="0"
+{{< multiplechoice
+  question="Is $3{,}742$ a multiple of $3$?"
+  answer="no"
   hint="Sum the digits: $3 + 7 + 4 + 2$. Is that sum a multiple of $3$?"
 >}}
+yes
+no
+{{< /multiplechoice >}}
 
 ## Use common divisibility tests
 
@@ -97,17 +109,23 @@ So $1{,}290$ is divisible by all four.
 
 So $5{,}625$ is divisible by $3$ and $5$, but not $2$ or $10$.
 
-{{< fillin
-  question="Is 6240 divisible by $3$? Answer $1$ for yes or $0$ for no."
-  answer="1"
-  hint="Sum the digits of 6240 and check whether that sum is divisible by $3$."
+{{< multiplechoice
+  question="Is $6{,}240$ divisible by $3$?"
+  answer="yes"
+  hint="Sum the digits of $6{,}240$ and check whether that sum is divisible by $3$."
 >}}
+yes
+no
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="Is 7248 divisible by $5$? Answer $1$ for yes or $0$ for no."
-  answer="0"
-  hint="Check the last digit of 7248 — is it $5$ or $0$?"
+{{< multiplechoice
+  question="Is $7{,}248$ divisible by $5$?"
+  answer="no"
+  hint="Check the last digit of $7{,}248$ — is it $5$ or $0$?"
 >}}
+yes
+no
+{{< /multiplechoice >}}
 
 ## Find all the factors of a number
 
@@ -205,11 +223,141 @@ but $77 \div 7 = 11$, a whole number. Since $7$ is a prime factor, $77$ is
   hint="$91 \div 7 = 13$, a whole number, so 91 has a prime factor other than itself."
 >}}
 
-{{< fillin
-  question="Is 137 prime or composite? Answer $1$ for prime or $0$ for composite."
-  answer="1"
+{{< multiplechoice
+  question="Is 137 prime or composite?"
+  answer="prime"
   hint="Test primes $2$, $3$, $5$, $7$, $11$ in order — none divide 137 evenly, and $11 \times 11 = 121$ while $12 \times 12 = 144$, so testing through $11$ is enough."
 >}}
+prime
+composite
+{{< /multiplechoice >}}
+
+## Practice
+
+### Identify multiples of numbers
+
+{{< fillin
+  question="List all the multiples of $6$ that are less than 50, separated by commas."
+  answer="6,12,18,24,30,36,42,48"
+  answerMode="unordered"
+  answerDisplay="6, 12, 18, 24, 30, 36, 42, 48"
+  hint="Multiply $6$ by $1, 2, 3, \dots$ in turn and stop before the product reaches 50."
+>}}
+
+{{< fillin
+  question="List all the multiples of $8$ that are less than 50, separated by commas."
+  answer="8,16,24,32,40,48"
+  answerMode="unordered"
+  answerDisplay="8, 16, 24, 32, 40, 48"
+  hint="Count by eights from $8$ and stop at the last count below 50."
+>}}
+
+{{< fillin
+  question="List all the multiples of $10$ that are less than 50, separated by commas."
+  answer="10,20,30,40"
+  answerMode="unordered"
+  answerDisplay="10, 20, 30, 40"
+  hint="Every multiple of $10$ ends in $0$; note that 50 itself is not less than 50."
+>}}
+
+### Use common divisibility tests
+
+{{< multiplechoice
+  question="Determine which of $2$, $3$, $4$, $5$, $6$, and $10$ divide 75 evenly."
+  answer="3 and 5"
+  hint="75 is odd, so start by ruling out the even divisors, then sum its digits. The table has no test for $4$ — divide to check that one."
+>}}
+5 only
+3 and 5
+2, 3, and 5
+3, 5, and 6
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine which of $2$, $3$, $4$, $5$, $6$, and $10$ divide 350 evenly."
+  answer="2, 5, and 10"
+  hint="The last digit is $0$. Check the digit sum $3 + 5 + 0$ before claiming $3$ or $6$, and divide by $4$ to test that one."
+>}}
+5 and 10
+2, 5, and 10
+2, 3, 5, and 10
+2, 5, 6, and 10
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine which of $2$, $3$, $4$, $5$, $6$, and $10$ divide 900 evenly."
+  answer="2, 3, 4, 5, 6, and 10"
+  hint="Check the last digit for $2$, $5$, and $10$; sum the digits for $3$; a number divisible by both $2$ and $3$ is divisible by $6$. The table has no test for $4$ — divide to check it."
+>}}
+2, 3, 5, 6, and 10
+2, 3, 4, 6, and 10
+2, 4, 5, and 10
+2, 3, 4, 5, 6, and 10
+{{< /multiplechoice >}}
+
+### Find all the factors of a number
+
+{{< fillin
+  question="Find all the factors of 36. Enter them separated by commas."
+  answer="1,2,3,4,6,9,12,18,36"
+  answerMode="unordered"
+  answerDisplay="1, 2, 3, 4, 6, 9, 12, 18, 36"
+  hint="Divide 36 by $1, 2, 3, \dots$ in turn, recording each factor pair, and stop once the quotient is smaller than the divisor."
+>}}
+
+{{< fillin
+  question="Find all the factors of 60. Enter them separated by commas."
+  answer="1,2,3,4,5,6,10,12,15,20,30,60"
+  answerMode="unordered"
+  answerDisplay="1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60"
+  hint="The factor pairs are $1 \cdot 60$, $2 \cdot 30$, $3 \cdot 20$, and so on — stop after $6 \cdot 10$, since the next divisor is larger than its quotient."
+>}}
+
+{{< fillin
+  question="Find all the factors of 144. Enter them separated by commas."
+  answer="1,2,3,4,6,8,9,12,16,18,24,36,48,72,144"
+  answerMode="unordered"
+  answerDisplay="1, 2, 3, 4, 6, 8, 9, 12, 16, 18, 24, 36, 48, 72, 144"
+  hint="Work through the divisors in order and stop at $12$, where the quotient $12$ equals the divisor — every larger factor is already the partner of a smaller one."
+>}}
+
+### Identify prime and composite numbers
+
+{{< multiplechoice
+  question="Is 43 prime or composite?"
+  answer="prime"
+  hint="Test the primes $2$, $3$, and $5$ — once the quotient falls below the divisor you can stop."
+>}}
+prime
+composite
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is 39 prime or composite?"
+  answer="composite"
+  hint="Sum the digits: $3 + 9 = 12$. What does that tell you about divisibility by $3$?"
+>}}
+prime
+composite
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is 71 prime or composite?"
+  answer="prime"
+  hint="Test $2$, $3$, $5$, and $7$ in order; $71 \div 7 \approx 10.1$, so the quotient has nearly reached the divisor."
+>}}
+prime
+composite
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is 209 prime or composite?"
+  answer="composite"
+  hint="Keep testing primes past $7$ — try $11$."
+>}}
+prime
+composite
+{{< /multiplechoice >}}
 
 ## Key terms
 
@@ -221,4 +369,4 @@ $1$ and itself. **composite number** — a counting number that is not prime.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 2.4: Find Multiples and Factors](https://openstax.org/books/prealgebra-2e/pages/2-4-find-multiples-and-factors) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, recreated the multiples charts and divisibility tests as accessible Markdown tables, and converted practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 2.4: Find Multiples and Factors](https://openstax.org/books/prealgebra-2e/pages/2-4-find-multiples-and-factors) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, recreated the multiples charts and divisibility tests as accessible Markdown tables, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block.</small>

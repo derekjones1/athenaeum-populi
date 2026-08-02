@@ -8,7 +8,11 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-**By the end of this section, you will be able to:** solve radical equations, solve radical equations with two radicals, use radicals in applications.
+**By the end of this section, you will be able to:**
+
+- Solve radical equations
+- Solve radical equations with two radicals
+- Use radicals in applications
 {{< /callout >}}
 
 ## Solve Radical Equations
@@ -124,6 +128,7 @@ Solve: $\sqrt{p - 1} + 1 = p.$
 {{< fillin
   question="Solve: $\sqrt{x - 2} + 2 = x$"
   answer="x = 2 , x = 3"
+  answerMode="unordered"
   answerDisplay="$x = 2 , x = 3$"
   hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
 >}}
@@ -131,6 +136,7 @@ Solve: $\sqrt{p - 1} + 1 = p.$
 {{< fillin
   question="Solve: $\sqrt{y - 5} + 5 = y$"
   answer="y = 5 , y = 6"
+  answerMode="unordered"
   answerDisplay="$y = 5 , y = 6$"
   hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
 >}}
@@ -380,8 +386,9 @@ Solve: $\sqrt{q - 2} + 3 = \sqrt{4 q + 1}.$
 >}}
 
 {{< fillin
-  question="Solve: $\sqrt{x} + 2 = \sqrt{3 x + 4}$"
+  question="Solve: $\sqrt{x} + 2 = \sqrt{3 x + 4}$. Enter both solutions, separated by a comma."
   answer="0,4"
+  answerMode="unordered"
   answerDisplay="$x=0$ or $x=4$"
   hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
 >}}

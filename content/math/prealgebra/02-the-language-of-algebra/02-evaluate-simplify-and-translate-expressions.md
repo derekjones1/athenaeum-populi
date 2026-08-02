@@ -9,10 +9,12 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** evaluate algebraic
-  expressions, identify terms, coefficients, and like terms, simplify
-  expressions by combining like terms, and translate word phrases into algebraic
-  expressions.
+**By the end of this section, you will be able to:**
+
+- Evaluate algebraic expressions
+- Identify terms, coefficients, and like terms
+- Simplify expressions by combining like terms
+- Translate word phrases to algebraic expressions
 {{< /callout >}}
 
 ## Evaluate algebraic expressions
@@ -152,7 +154,7 @@ $6x^2 + 4x$. Since $6x^2$ and $4x$ are not like terms, this is in simplest form.
   hint="Combine the $x^2$ terms ($7x^2 - x^2$) and the $x$ terms ($8x - 4x$) separately; they cannot be combined with each other."
 >}}
 
-## Translate word phrases into algebraic expressions
+## Translate word phrases to algebraic expressions
 
 In the last section we translated expressions into words; now we reverse the
 process. Watch for the words *of* and *and* to find the numbers being operated
@@ -206,6 +208,132 @@ parentheses change the result.
   hint="Add $m$ and $n$ first (that is the sum), then multiply the whole sum by $5$ — so it needs parentheses."
 >}}
 
+## Practice
+
+### Evaluate algebraic expressions
+
+{{< fillin
+  question="Evaluate $7x + 8$ when $x = 2$."
+  answer="22"
+  hint="Substitute $2$ for $x$, then follow the order of operations — multiply before you add."
+>}}
+
+{{< fillin
+  question="Evaluate $x^2$ when $x = 12$."
+  answer="144"
+  hint="The exponent applies to the number you substitute, so $x^2$ becomes $12 \cdot 12$."
+>}}
+
+{{< fillin
+  question="Evaluate $3^x$ when $x = 3$."
+  answer="27"
+  hint="Here the variable is the exponent, not the base — substituting gives $3^3$, which is $3 \cdot 3 \cdot 3$."
+>}}
+
+{{< fillin
+  question="Evaluate $(x - y)^2$ when $x = 10$ and $y = 7$."
+  answer="9"
+  hint="Grouping symbols come first: subtract inside the parentheses, then square that single result."
+>}}
+
+### Identify terms, coefficients, and like terms
+
+{{< fillin
+  question="List the terms of $15x^2 + 6x + 2$. Separate them with commas."
+  answer="15x^2, 6x, 2"
+  answerMode="unordered"
+  answerDisplay="$15x^2$, $6x$, $2$"
+  hint="A term is a constant or a constant times one or more variables; the addition signs mark where one term ends and the next begins."
+>}}
+
+{{< fillin
+  question="Identify the coefficient of the term $5r^2$."
+  answer="5"
+  hint="The coefficient is the constant that multiplies the variable part. The exponent belongs to the variable, not to the coefficient."
+>}}
+
+{{< multiplechoice
+  question="Identify all sets of like terms in $x^3$, $8x$, $14$, $8y$, $5$, $8x^3$."
+  answer="$x^3$ and $8x^3$; $14$ and $5$"
+  hint="Like terms are constants, or have exactly the same variables raised to exactly the same powers. A shared coefficient does not make two terms alike."
+>}}
+$x^3$ and $8x^3$; $14$ and $5$
+$x^3$ and $8x$; $14$ and $5$
+$8x$ and $8y$; $8x$ and $8x^3$
+$8x$, $8y$, and $8x^3$; $14$ and $5$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Identify all sets of like terms in $9a$, $a^2$, $16ab$, $16b^2$, $4ab$, $9b^2$."
+  answer="$16ab$ and $4ab$; $16b^2$ and $9b^2$"
+  hint="Compare only the variable parts. $a$ and $a^2$ are different powers, and $ab$ is not the same variable part as $b^2$ — so two of these terms have no partner."
+>}}
+$16ab$ and $4ab$; $16b^2$ and $9b^2$
+$9a$ and $a^2$; $16ab$ and $16b^2$
+$9a$ and $9b^2$; $16ab$ and $16b^2$
+$16ab$, $16b^2$, and $4ab$; $9a$ and $9b^2$
+{{< /multiplechoice >}}
+
+### Simplify expressions by combining like terms
+
+{{< fillin
+  question="Simplify by combining like terms: $17a + 9a$"
+  answer="26a"
+  answerDisplay="$26a$"
+  hint="Both terms carry the same variable, so add the coefficients and keep $a$."
+>}}
+
+{{< fillin
+  question="Simplify by combining like terms: $9x + 3x + 8$"
+  answer="12x + 8"
+  answerDisplay="$12x + 8$"
+  hint="Only the two $x$-terms are alike; the constant $8$ has nothing to combine with, so it stays as it is."
+>}}
+
+{{< fillin
+  question="Simplify by combining like terms: $10a + 7 + 5a - 2 + 7a - 4$"
+  answer="22a + 1"
+  answerDisplay="$22a + 1$"
+  hint="Add the three $a$-coefficients, then combine the constants $7 - 2 - 4$. Keep each sign with the term that follows it."
+>}}
+
+{{< fillin
+  question="Simplify by combining like terms: $3x^2 + 12x + 11 + 14x^2 + 8x + 5$"
+  answer="17x^2 + 20x + 16"
+  answerDisplay="$17x^2 + 20x + 16$"
+  hint="There are three families here — the $x^2$ terms, the $x$ terms, and the constants. Combine each family on its own; they cannot be merged with each other."
+>}}
+
+### Translate word phrases to algebraic expressions
+
+{{< fillin
+  question="Translate into an algebraic expression: the difference of $x$ and $4$"
+  answer="x - 4"
+  answerDisplay="$x - 4$"
+  hint="'The difference of' subtracts the second quantity from the first, in the order the phrase names them."
+>}}
+
+{{< fillin
+  question="Translate into an algebraic expression: the quotient of $y$ and $3$"
+  answer="y/3"
+  answerDisplay="$y \div 3$"
+  hint="'Quotient' means division, and the quantity named first is the one being divided."
+>}}
+
+{{< fillin
+  question="Translate into an algebraic expression: eight times the difference of $y$ and nine"
+  answer="8(y - 9)"
+  answerDisplay="$8(y - 9)$"
+  hint="Build the difference first, then multiply that whole difference by $8$ — which is why it needs parentheses."
+>}}
+
+{{< fillin
+  question="Greg has nickels and pennies in his pocket. The number of pennies is seven less than twice the number of nickels. Let $n$ represent the number of nickels. Write an expression for the number of pennies."
+  answer="2n - 7"
+  answerDisplay="$2n - 7$"
+  hint="Twice the number of nickels is $2n$; 'seven less than' that amount means subtract $7$ from it."
+>}}
+
 ## Key terms
 
 **evaluate** — to find the value of an expression by substituting a given number
@@ -217,4 +345,4 @@ terms** — simplifying by adding the coefficients of like terms.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 2.2: Evaluate, Simplify, and Translate Expressions](https://openstax.org/books/prealgebra-2e/pages/2-2-evaluate-simplify-and-translate-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, recreated tables in accessible Markdown, and converted practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 2.2: Evaluate, Simplify, and Translate Expressions](https://openstax.org/books/prealgebra-2e/pages/2-2-evaluate-simplify-and-translate-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, recreated tables in accessible Markdown, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block.</small>

@@ -10,9 +10,12 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** draw and interpret
-  scatter plots, find the line of best fit, distinguish between linear and
-  nonlinear relations, and use a linear model to make predictions.
+**By the end of this section, you will be able to:**
+
+- Draw and interpret scatter plots
+- Find the line of best fit
+- Distinguish between linear and nonlinear relations
+- Use a linear model to make predictions
 {{< /callout >}}
 
 A professor is attempting to identify trends among final exam scores. His

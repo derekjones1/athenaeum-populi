@@ -9,9 +9,11 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve rational
-  equations, use rational functions, and solve a rational equation for a
-  specific variable.
+**By the end of this section, you will be able to:**
+
+- Solve rational equations
+- Use rational functions
+- Solve a rational equation for a specific variable
 {{< /callout >}}
 
 After defining the terms *expression* and *equation* earlier, we have used
@@ -463,6 +465,7 @@ $(7,1)$.
 {{< fillin
   question="For $f(x)=\tfrac{8-x}{x^2-7x+12}$, find the points on the graph where $f(x)=3$, separated by commas."
   answer="(2,3), (\frac{14}{3},3)"
+  answerMode="unordered"
   answerDisplay="$(2,3),\ (\tfrac{14}{3},3)$"
   hint="Use each input found when solving $f(x)=3$ as the first coordinate; the function value is the second coordinate."
 >}}

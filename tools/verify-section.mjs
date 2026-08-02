@@ -72,8 +72,16 @@ for (const f of files) {
     const where = `fillin (${(p.question || '?').slice(0, 40)}…)`;
     if (p.answer != null) {
       let status;
-      try { status = checkAnswer(p.answer, p.answer, { mode: p.answerMode }); } catch (e) { status = 'threw: ' + e.message.slice(0, 40); }
-      if (status !== 'correct') bad(`${where}: answer ${JSON.stringify(p.answer)} does not self-grade 'correct' (got ${status}) — malformed/ungradeable`);
+      // Grading the authored answer under its own answerForm is what catches a
+      // mistagged form: an answer that does not satisfy the shape it declares
+      // is one no learner could ever submit, and it fails here rather than in
+      // the browser.
+      try { status = checkAnswer(p.answer, p.answer, { mode: p.answerMode, form: p.answerForm }); } catch (e) { status = 'threw: ' + e.message.slice(0, 40); }
+      if (status === 'form') {
+        bad(`${where}: answer ${JSON.stringify(p.answer)} is not written in its own answerForm ${JSON.stringify(p.answerForm)} — the exercise would reject its own answer`);
+      } else if (status !== 'correct') {
+        bad(`${where}: answer ${JSON.stringify(p.answer)} does not self-grade 'correct' (got ${status}) — malformed/ungradeable`);
+      }
     }
     for (const name of ['question', 'hint', 'answerDisplay']) propMath(where, name, p[name]);
   }

@@ -10,9 +10,12 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** determine the degree
-  of polynomials, add and subtract polynomials, evaluate a polynomial
-  function for a given value, and add and subtract polynomial functions.
+**By the end of this section, you will be able to:**
+
+- Determine the degree of polynomials
+- Add and subtract polynomials
+- Evaluate a polynomial function for a given value
+- Add and subtract polynomial functions
 {{< /callout >}}
 
 ## Determine the degree of polynomials

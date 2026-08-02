@@ -9,9 +9,12 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use negatives and
-  opposites of integers, simplify expressions with absolute value, add
-  integers, and subtract integers.
+**By the end of this section, you will be able to:**
+
+- Use negatives and opposites of integers
+- Simplify expressions with absolute value
+- Add integers
+- Subtract integers
 {{< /callout >}}
 
 ## Use Negatives and Opposites of Integers
@@ -849,6 +852,96 @@ $$
   hint="Simplify inside the parentheses first, then subtract left to right."
 >}}
 
+## Practice
+
+### Use negatives and opposites of integers
+
+{{< fillin
+  question="Find the opposite of $2$."
+  answer="-2"
+  hint="The opposite of a positive number is the same distance from zero, but negative."
+>}}
+
+{{< fillin
+  question="Find the opposite of $-6$."
+  answer="6"
+  hint="The opposite of a negative number is the same distance from zero, but positive."
+>}}
+
+### Simplify expressions with absolute value
+
+{{< fillin
+  question="Simplify: $8|-7|$."
+  answer="56"
+  hint="Simplify inside the absolute value bars first, then multiply."
+>}}
+
+{{< multiplechoice
+  question="Fill in <, >, or = for the following pair of numbers: $-6 \_\_\_ |-6|$."
+  answer="$<$"
+  hint="Simplify $|-6|$ first, then compare it with $-6$."
+>}}
+$<$
+$>$
+$=$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Fill in <, >, or = for the following pair of numbers: $-|-3| \_\_\_ -3$."
+  answer="$=$"
+  hint="Simplify the absolute value on the left before comparing the two sides."
+>}}
+$<$
+$>$
+$=$
+{{< /multiplechoice >}}
+
+### Add integers
+
+{{< fillin
+  question="Add: $-21 + (-59)$."
+  answer="-80"
+  hint="Both numbers are negative — add their absolute values and keep the negative sign."
+>}}
+
+{{< fillin
+  question="Add: $48 + (-16)$."
+  answer="32"
+  hint="Signs differ — subtract the smaller absolute value from the larger, then take the sign of the number farther from zero."
+>}}
+
+{{< fillin
+  question="Simplify: $19 + 2(-3+8)$."
+  answer="29"
+  hint="Simplify inside the parentheses first, then multiply, then add."
+>}}
+
+### Subtract integers
+
+{{< fillin
+  question="Subtract: $-5 - 4$."
+  answer="-9"
+  hint="Restate as adding the opposite: $-5 + (-4)$."
+>}}
+
+{{< fillin
+  question="Subtract: $8 - (-4)$."
+  answer="12"
+  hint="Subtracting a negative is the same as adding a positive: $8 + 4$."
+>}}
+
+{{< fillin
+  question="Simplify: $25 - [10 - (3-12)]$."
+  answer="6"
+  hint="Work from the innermost parentheses outward, then subtract left to right."
+>}}
+
+{{< fillin
+  question="Simplify: $5^2 - 6^2$."
+  answer="-11"
+  hint="Evaluate each power first, then subtract."
+>}}
+
 ## Key terms
 
 **negative numbers** — numbers less than $0$; they lie to the left of zero
@@ -863,4 +956,4 @@ number is the same as adding its opposite.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.3: Add and Subtract Integers](https://openstax.org/books/elementary-algebra-2e/pages/1-3-add-and-subtract-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the number-line and positive/negative-counters figures as accessible inline graphics, and the grouping-symbols list as a table; omitted the Manipulative Mathematics callouts, media links, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.3: Add and Subtract Integers](https://openstax.org/books/elementary-algebra-2e/pages/1-3-add-and-subtract-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the number-line and positive/negative-counters figures as accessible inline graphics, and the grouping-symbols list as a table; omitted the Manipulative Mathematics callouts, media links, and Self Check checklist; adapted selected end-of-section exercises into interactive practice; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

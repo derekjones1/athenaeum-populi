@@ -10,10 +10,12 @@ weight: 7
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** simplify expressions with
-  higher roots, use the Product Property to simplify expressions with higher
-  roots, use the Quotient Property to simplify expressions with higher roots,
-  and add and subtract higher roots.
+**By the end of this section, you will be able to:**
+
+- Simplify expressions with higher roots
+- Use the Product Property to simplify expressions with higher roots
+- Use the Quotient Property to simplify expressions with higher roots
+- Add and subtract higher roots
 {{< /callout >}}
 
 Up to now, in this chapter we have worked with squares and square roots. We will

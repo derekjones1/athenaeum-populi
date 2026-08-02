@@ -10,9 +10,11 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve quadratic
-  equations by using the Zero Product Property, solve quadratic equations by
-  factoring, and solve applications modeled by quadratic equations.
+**By the end of this section, you will be able to:**
+
+- Solve quadratic equations by using the Zero Product Property
+- Solve quadratic equations by factoring
+- Solve applications modeled by quadratic equations
 {{< /callout >}}
 
 We have already solved linear equations, equations of the form

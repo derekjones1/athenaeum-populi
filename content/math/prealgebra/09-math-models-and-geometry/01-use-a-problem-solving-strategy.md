@@ -9,9 +9,11 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** approach word
-  problems with a positive attitude, use a problem-solving strategy for word
-  problems, and solve number problems.
+**By the end of this section, you will be able to:**
+
+- Approach word problems with a positive attitude
+- Use a problem-solving strategy for word problems
+- Solve number problems
 {{< /callout >}}
 
 ## Approach word problems with a positive attitude
@@ -299,6 +301,104 @@ three consecutive integers are $13$, $14$, and $15$.
   hint="Let $n =$ the first integer. Translate as $n + (n + 1) + (n + 2) = -36$, then solve for $n$."
 >}}
 
+## Practice
+
+### Approach word problems with a positive attitude
+
+{{< fillin
+  question="Patty paid \$35 for a purse on sale for \$10 off the original price. What was the original price of the purse, in dollars?"
+  answer="45"
+  answerDisplay="\$45"
+  hint="Let $p =$ the original price. The sale took ten dollars off that price, so translate as $p - 10 = 35$ and solve for $p$."
+>}}
+
+{{< fillin
+  question="Minh spent \$6.25 on 5 sticker books to give his nephews. Find the cost of each sticker book, in dollars."
+  answer="1.25"
+  answerDisplay="\$1.25"
+  hint="Let $c =$ the cost of one book. Five books at the same price cost $5c$, so solve $5c = 6.25$."
+>}}
+
+{{< fillin
+  question="Tom paid \$1,166.40 for a new refrigerator, including \$86.40 tax. What was the price of the refrigerator before tax, in dollars?"
+  answer="1080"
+  answerDisplay="\$1,080"
+  hint="Let $p =$ the price before tax. The total is the price plus the tax, so solve $p + 86.40 = 1{,}166.40$."
+>}}
+
+### Use a problem-solving strategy for word problems
+
+{{< fillin
+  question="Zachary has 25 country music CDs, which is one-fifth of his CD collection. How many CDs does Zachary have?"
+  answer="125"
+  hint="Let $c =$ the number of CDs in the collection. Translate as $25 = \tfrac{1}{5}c$, then multiply both sides by $5$."
+>}}
+
+{{< fillin
+  question="There are 16 girls in a school club. The number of girls is 4 more than twice the number of boys. Find the number of boys in the club."
+  answer="6"
+  hint="Let $b =$ the number of boys. 'Four more than twice the number of boys' is $2b + 4$, so solve $16 = 2b + 4$."
+>}}
+
+{{< fillin
+  question="Lee is emptying dishes and glasses from the dishwasher. The number of dishes is 8 less than the number of glasses. If there are 9 dishes, what is the number of glasses?"
+  answer="17"
+  hint="Let $g =$ the number of glasses. 'Eight less than the number of glasses' is $g - 8$, so solve $9 = g - 8$."
+>}}
+
+{{< fillin
+  question="After 3 months on a diet, Lisa had lost 12% of her original weight. She lost 21 pounds. What was Lisa's original weight, in pounds?"
+  answer="175"
+  answerDisplay="175 pounds"
+  hint="Let $w =$ the original weight. Write $12\%$ as $0.12$ and solve $21 = 0.12w$."
+>}}
+
+{{< fillin
+  question="Yuki bought a dress on sale for \$72. The sale price was 60% of the original price. What was the original price of the dress, in dollars?"
+  answer="120"
+  answerDisplay="\$120"
+  hint="Let $p =$ the original price. Write $60\%$ as $0.6$ and solve $72 = 0.6p$."
+>}}
+
+{{< fillin
+  question="Tim left a \$9 tip for a \$50 restaurant bill. What percent tip did he leave? Enter just the number of percent."
+  answer="18"
+  answerDisplay="18%"
+  hint="Let $p =$ the percent written as a decimal. Translate 'nine is what percent of fifty' as $9 = 50p$, then change the decimal to a percent."
+>}}
+
+### Solve number problems
+
+{{< fillin
+  question="The difference of twice a number and seven is 17. Find the number."
+  answer="12"
+  hint="Let $n =$ the number. 'The difference of twice a number and seven' is $2n - 7$, so solve $2n - 7 = 17$."
+>}}
+
+{{< fillin
+  question="Three times the sum of a number and nine is 12. Find the number."
+  answer="-5"
+  hint="Let $n =$ the number. The sum is formed first, so translate as $3(n + 9) = 12$ and divide both sides by $3$ before subtracting."
+>}}
+
+{{< fillin
+  question="The sum of two numbers is fourteen. One number is two less than three times the other. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="4, 10"
+  hint="Let $n =$ the first number, so $3n - 2$ is the other. Solve $n + (3n - 2) = 14$, then use $n$ to find the second number."
+>}}
+
+{{< fillin
+  question="One number is fourteen less than another. If their sum is increased by seven, the result is 85. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="32, 46"
+  hint="Let $n =$ the larger number, so $n - 14$ is the other. 'Their sum increased by seven' is $n + (n - 14) + 7$, so solve $n + (n - 14) + 7 = 85$."
+>}}
+
+{{< fillin
+  question="The sum of three consecutive integers is 78. Find the integers. Enter all three separated by commas, smallest first."
+  answer="25, 26, 27"
+  hint="Let $n =$ the smallest integer, so the next two are $n + 1$ and $n + 2$. Solve $n + (n + 1) + (n + 2) = 78$."
+>}}
+
 ## Key terms
 
 **problem-solving strategy** — the seven-step method (read, identify, name,
@@ -310,4 +410,4 @@ immediately follow each other, each one more than the number before it.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 9.1: Use a Problem Solving Strategy](https://openstax.org/books/prealgebra-2e/pages/9-1-use-a-problem-solving-strategy) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, the illustrative figures of a student's negative and positive thoughts, the Links to Literacy callout, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 9.1: Use a Problem Solving Strategy](https://openstax.org/books/prealgebra-2e/pages/9-1-use-a-problem-solving-strategy) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, the illustrative figures of a student's negative and positive thoughts, and the Links to Literacy callout; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, drawing on the Everyday Math exercises for the objective that has no exercise group of its own.</small>

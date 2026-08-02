@@ -12,7 +12,8 @@
     "audit:build": "node tools/audit-build.mjs",
     "check:build": "npm run check:routes && npm run check:links && npm run check:search && npm run audit:build",
     "test:a11y": "playwright test tests/accessibility.spec.mjs",
-    "ci": "npm test && npm run build && npm run check:build && A11Y_SKIP_BUILD=1 npm run test:a11y",
+    "test:browser": "playwright test",
+    "ci": "npm test && npm run build && npm run check:build && PLAYWRIGHT_SKIP_BUILD=1 npm run test:browser",
     "serve:public": "node tools/serve-public.mjs",
     "preview": "npm run build:hugo && pagefind --site public --root-selector 'main#content' --exclude-selectors '.katex-mathml,svg,template' --serve",
     "serve": "hugo server --cacheDir \"$(pwd)/.hugo_cache\"",
@@ -25,7 +26,8 @@
     "source:verify": "node tools/openstax-source.mjs verify-map",
     "source:check": "node tools/openstax-source.mjs audit",
     "source:history": "node tools/openstax-source.mjs history",
-    "source:status": "node tools/openstax-source.mjs status"
+    "source:status": "node tools/openstax-source.mjs status",
+    "test:e2e": "playwright test tests/browser-check.spec.mjs"
   },
   "//deps": "esbuild is NOT listed: Hugo Pipes js.Build embeds esbuild. katex/mathlive/pagefind are pinned: KaTeX assets are vendored for offline builds, MathLive supplies math input, and Pagefind builds one global site-wide search index.",
   "//versions": "KaTeX 0.16.22 matches the engine embedded in Hugo 0.164.0; its CSS must match Hugo's generated HTML. MathLive 0.110.0 and @cortex-js/compute-engine 0.58.0 are pinned because grading behavior is version-sensitive. Upgrade these versions only as a coordinated, fully verified architecture change.",

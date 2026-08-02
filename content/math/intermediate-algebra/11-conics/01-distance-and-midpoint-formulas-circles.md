@@ -8,9 +8,12 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-**By the end of this section, you will be able to:** use the Distance Formula,
-use the Midpoint Formula, write the equation of a circle in standard form, and
-graph a circle.
+**By the end of this section, you will be able to:**
+
+- Use the Distance Formula
+- Use the Midpoint Formula
+- Write the equation of a circle in standard form
+- Graph a circle
 {{< /callout >}}
 
 In this chapter we will be looking at the conic sections, usually called the

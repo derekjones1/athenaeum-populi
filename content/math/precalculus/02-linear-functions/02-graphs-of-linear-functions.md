@@ -11,11 +11,13 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** graph linear
-  functions, write the equation for a linear function from the graph of a
-  line, determine whether the graphs of two lines are parallel or
-  perpendicular given their equations, write the equation of a line parallel
-  or perpendicular to a given line, and solve a system of linear equations.
+**By the end of this section, you will be able to:**
+
+- Graph linear functions
+- Write the equation for a linear function from the graph of a line
+- Determine whether the graphs of two lines are parallel or perpendicular given their equations
+- Write the equation of a line parallel or perpendicular to a given line
+- Solve a system of linear equations
 {{< /callout >}}
 
 Two competing telephone companies offer different payment plans. The two

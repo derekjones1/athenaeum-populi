@@ -11,12 +11,13 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** determine whether
-  an integer is a solution of an equation, solve equations with integers
-  using the Addition and Subtraction Properties of Equality, model the
-  Division Property of Equality, solve equations using the Division
-  Property of Equality, and translate word sentences to equations and
-  solve.
+**By the end of this section, you will be able to:**
+
+- Determine whether an integer is a solution of an equation
+- Solve equations with integers using the Addition and Subtraction Properties of Equality
+- Model the Division Property of Equality
+- Solve equations using the Division Property of Equality
+- Translate word sentences to equations and solve
 {{< /callout >}}
 
 ## Determine whether a number is a solution of an equation
@@ -200,6 +201,194 @@ $108 = -9(-12)$ ✓.
   hint="Translate as $132 = -12y$, then divide both sides by $-12$."
 >}}
 
+## Practice
+
+### Determine whether an integer is a solution of an equation
+
+{{< multiplechoice
+  question="Is $x = -2$ a solution of $4x - 2 = 6$?"
+  answer="no"
+  hint="Substitute $-2$ for $x$ and simplify $4(-2) - 2$, then compare that value with $6$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $x = -1$ a solution of $4x - 2 = 6$?"
+  answer="no"
+  hint="Multiply before you subtract: find $4(-1) - 2$ and check whether it equals $6$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $x = 2$ a solution of $4x - 2 = 6$?"
+  answer="yes"
+  hint="Substitute $2$ for $x$. If $4(2) - 2$ gives exactly $6$, the equation is true and the number is a solution."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $a = 6$ a solution of $9a + 27 = -63$?"
+  answer="no"
+  hint="A positive value of $a$ makes $9a$ positive, so the left side cannot be negative here."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $a = -6$ a solution of $9a + 27 = -63$?"
+  answer="no"
+  hint="Simplify $9(-6) + 27$. Adding a positive to a negative moves the result toward zero."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $a = -10$ a solution of $9a + 27 = -63$?"
+  answer="yes"
+  hint="Substitute $-10$ for $a$, multiply first, then add $27$ and compare the result with $-63$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Solve equations with integers using the Addition and Subtraction Properties of Equality
+
+{{< fillin
+  question="Solve: $n + 12 = 5$"
+  answer="-7"
+  hint="Subtract $12$ from each side. Check that your value plus $12$ gives $5$."
+>}}
+
+{{< fillin
+  question="Solve: $u - 3 = -7$"
+  answer="-4"
+  hint="Add $3$ to each side to undo the subtraction. Check that your value minus $3$ gives $-7$."
+>}}
+
+{{< fillin
+  question="Solve: $x + (-2) = -18$"
+  answer="-16"
+  hint="Adding $-2$ is the same as subtracting $2$, so add $2$ to each side. Check by adding $-2$ back."
+>}}
+
+{{< fillin
+  question="Solve: $r - (-5) = -9$"
+  answer="-14"
+  hint="Subtracting $-5$ is the same as adding $5$, so subtract $5$ from each side. Check that $r - (-5)$ gives $-9$."
+>}}
+
+### Model the Division Property of Equality
+
+<svg viewBox="0 0 260 150" role="img" aria-label="Three identical envelopes stacked on the left side of a divided box, each holding an unknown number of counters, and six loose counters arranged in two columns of three on the right side." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
+  <rect x="10" y="10" width="240" height="115" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <line x1="130" y1="10" x2="130" y2="125" stroke="currentColor" stroke-width="1.5" />
+  <rect x="25" y="20" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
+  <path d="M25,20 L65,38 L105,20" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
+  <rect x="25" y="55" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
+  <path d="M25,55 L65,73 L105,55" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
+  <rect x="25" y="90" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
+  <path d="M25,90 L65,108 L105,90" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
+  <circle cx="170" cy="32" r="10" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="210" cy="32" r="10" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="170" cy="67" r="10" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="210" cy="67" r="10" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="170" cy="102" r="10" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="210" cy="102" r="10" fill="none" stroke="#8a9a2b" stroke-width="1.5" />
+  <text x="65" y="142" text-anchor="middle" font-size="14" fill="currentColor">envelopes</text>
+  <text x="190" y="142" text-anchor="middle" font-size="14" fill="currentColor">counters</text>
+</svg>
+
+{{< fillin
+  question="Write the equation modeled by the envelopes and counters above, using $x$ for the number of counters in one envelope, then solve it. Enter the value of $x$."
+  answer="2"
+  answerDisplay="$3x = 6$, so $x = 2$"
+  hint="Three envelopes balance six counters, so the equation is $3x = 6$. Divide both sides by $3$; check that $3(2) = 6$."
+>}}
+
+<svg viewBox="0 0 260 160" role="img" aria-label="Two identical envelopes on the left side of a divided box, each holding an unknown number of counters, and eight loose counters arranged in two columns of four on the right side." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
+  <rect x="10" y="10" width="240" height="125" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <line x1="130" y1="10" x2="130" y2="135" stroke="currentColor" stroke-width="1.5" />
+  <rect x="25" y="42" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
+  <path d="M25,42 L65,60 L105,42" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
+  <rect x="25" y="82" width="80" height="26" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
+  <path d="M25,82 L65,100 L105,82" fill="none" stroke="#2b7fb8" stroke-width="1.5" />
+  <circle cx="170" cy="32" r="10" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="210" cy="32" r="10" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="170" cy="62" r="10" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="210" cy="62" r="10" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="170" cy="92" r="10" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="210" cy="92" r="10" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="170" cy="122" r="10" fill="none" stroke="#8a9a2b" stroke-width="1.5" /><circle cx="210" cy="122" r="10" fill="none" stroke="#8a9a2b" stroke-width="1.5" />
+  <text x="65" y="152" text-anchor="middle" font-size="14" fill="currentColor">envelopes</text>
+  <text x="190" y="152" text-anchor="middle" font-size="14" fill="currentColor">counters</text>
+</svg>
+
+{{< fillin
+  question="Write the equation modeled by the envelopes and counters above, using $x$ for the number of counters in one envelope, then solve it. Enter the value of $x$."
+  answer="4"
+  answerDisplay="$2x = 8$, so $x = 4$"
+  hint="Two envelopes balance eight counters, so the equation is $2x = 8$. Separate the counters into $2$ equal groups; check that $2(4) = 8$."
+>}}
+
+{{< fillin
+  question="A package of 51 cookies has $3$ equal rows of cookies. Find the number of cookies in each row, $c$, by solving the equation $3c = 51$."
+  answer="17"
+  hint="Three equal rows share the $51$ cookies the way three envelopes share the counters — divide both sides by $3$, then check that $3(17) = 51$."
+>}}
+
+### Solve equations using the Division Property of Equality
+
+{{< fillin
+  question="Solve: $-7c = 56$"
+  answer="-8"
+  hint="Divide each side by $-7$. A negative divided into a positive gives a negative; check that $-7$ times your value is $56$."
+>}}
+
+{{< fillin
+  question="Solve: $-120 = 10q$"
+  answer="-12"
+  hint="The variable is on the right, which changes nothing — divide both sides by $10$. Check that $10$ times your value is $-120$."
+>}}
+
+{{< fillin
+  question="Solve: $24x = 480$"
+  answer="20"
+  hint="Divide each side by $24$. Check by multiplying: $24$ times your value should give $480$."
+>}}
+
+{{< fillin
+  question="Solve: $-3z = 0$"
+  answer="0"
+  hint="Divide each side by $-3$. Zero divided by any nonzero number is zero; check that $-3(0) = 0$."
+>}}
+
+### Translate word sentences to equations and solve
+
+{{< fillin
+  question="Translate and solve: the sum of eight and $p$ is $-3$."
+  answer="-11"
+  answerDisplay="$8 + p = -3$, so $p = -11$"
+  hint="'The sum of eight and $p$' is $8 + p$. Subtract $8$ from both sides, then check that $8 + p$ gives $-3$."
+>}}
+
+{{< fillin
+  question="Translate and solve: the product of $-15$ and $f$ is $75$."
+  answer="-5"
+  answerDisplay="$-15f = 75$, so $f = -5$"
+  hint="'Product' means multiply, so the equation is $-15f = 75$. Divide both sides by $-15$ and check the sign."
+>}}
+
+{{< fillin
+  question="Translate and solve: $-6$ plus $c$ is equal to $4$."
+  answer="10"
+  answerDisplay="$-6 + c = 4$, so $c = 10$"
+  hint="'Plus' means add, so the equation is $-6 + c = 4$. Add $6$ to both sides, then check that $-6 + c$ gives $4$."
+>}}
+
+{{< fillin
+  question="Translate and solve: nine less than $m$ is $-4$."
+  answer="5"
+  answerDisplay="$m - 9 = -4$, so $m = 5$"
+  hint="'Less than' reverses the order — nine less than $m$ is $m - 9$. Add $9$ to both sides and check."
+>}}
+
 ## Key terms
 
 **solution** — a value of a variable that makes an equation's statement
@@ -210,4 +399,4 @@ equation by the same nonzero number preserves equality.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 3.5: Solve Equations Using Integers; The Division Property of Equality](https://openstax.org/books/prealgebra-2e/pages/3-5-solve-equations-using-integers-the-division-property-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the envelopes-and-counters model as an accessible inline graphic; condensed prose; omitted the Be Prepared quiz, Manipulative Mathematics callout, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 3.5: Solve Equations Using Integers; The Division Property of Equality](https://openstax.org/books/prealgebra-2e/pages/3-5-solve-equations-using-integers-the-division-property-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the envelopes-and-counters models as accessible inline graphics; condensed prose; omitted the Be Prepared quiz, Manipulative Mathematics callout, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

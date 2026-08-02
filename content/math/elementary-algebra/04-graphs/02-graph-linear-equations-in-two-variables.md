@@ -10,10 +10,11 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** recognize the
-  relationship between the solutions of an equation and its graph, graph a
-  linear equation by plotting points, and graph vertical and horizontal
-  lines.
+**By the end of this section, you will be able to:**
+
+- Recognize the relationship between the solutions of an equation and its graph
+- Graph a linear equation by plotting points
+- Graph vertical and horizontal lines
 {{< /callout >}}
 
 ## Recognize the relationship between the solutions of an equation and its graph

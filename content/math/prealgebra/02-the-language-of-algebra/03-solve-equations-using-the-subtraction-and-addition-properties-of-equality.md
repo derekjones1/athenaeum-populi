@@ -10,11 +10,13 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** determine whether a
-  number is a solution of an equation, solve equations using the Subtraction
-  Property of Equality, solve equations using the Addition Property of
-  Equality, translate word phrases to algebraic equations, and translate to an
-  equation and solve.
+**By the end of this section, you will be able to:**
+
+- Determine whether a number is a solution of an equation
+- Solve equations using the Subtraction Property of Equality
+- Solve equations using the Addition Property of Equality
+- Translate word phrases to algebraic equations
+- Translate to an equation and solve
 {{< /callout >}}
 
 ## Determine whether a number is a solution of an equation
@@ -216,6 +218,157 @@ Simplify: $y = 32$. **Check:** $32 - 14 = 18$. ✓
   hint="Translate to $z - 17 = 37$, then add $17$ to both sides."
 >}}
 
+## Practice
+
+### Determine whether a number is a solution of an equation
+
+{{< multiplechoice
+  question="Is $x = 8$ a solution of $x + 13 = 21$?"
+  answer="yes"
+  hint="Substitute $8$ for $x$ and simplify the left side, then compare the result with $21$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $x = 34$ a solution of $x + 13 = 21$?"
+  answer="no"
+  hint="Substitute $34$ for $x$ and add. If the two sides are not equal, the number is not a solution."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $p = 3$ a solution of $3p + 6 = 15$?"
+  answer="yes"
+  hint="Substitute $3$ for $p$, and follow the order of operations — multiply before you add."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $p = 7$ a solution of $3p + 6 = 15$?"
+  answer="no"
+  hint="Substitute $7$ for $p$ and simplify $3(7) + 6$. Compare that value with $15$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $u = 3$ a solution of $8u - 4 = 4u + 40$?"
+  answer="no"
+  hint="The variable appears on both sides, so substitute $3$ for every $u$ and simplify each side separately."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $u = 11$ a solution of $8u - 4 = 4u + 40$?"
+  answer="yes"
+  hint="Substitute $11$ for every $u$, simplify $8(11) - 4$ and $4(11) + 40$, then compare the two results."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Solve equations using the Subtraction Property of Equality
+
+{{< fillin
+  question="Solve using the Subtraction Property of Equality: $p + 18 = 23$"
+  answer="5"
+  hint="Subtract $18$ from both sides. Check that your value plus $18$ gives $23$."
+>}}
+
+{{< fillin
+  question="Solve using the Subtraction Property of Equality: $93 = p + 24$"
+  answer="69"
+  hint="The variable is on the right, which changes nothing — subtract $24$ from both sides, then check by adding $24$ back."
+>}}
+
+{{< fillin
+  question="Solve using the Subtraction Property of Equality: $465 = d + 398$"
+  answer="67"
+  hint="Subtract $398$ from both sides. Check that your value plus $398$ gives $465$."
+>}}
+
+### Solve equations using the Addition Property of Equality
+
+{{< fillin
+  question="Solve using the Addition Property of Equality: $f - 55 = 123$"
+  answer="178"
+  hint="Add $55$ to both sides to undo the subtraction. Check by subtracting $55$ from your value."
+>}}
+
+{{< fillin
+  question="Solve using the Addition Property of Equality: $10 = p - 38$"
+  answer="48"
+  hint="The variable is on the right; add $38$ to both sides. Check that your value minus $38$ gives $10$."
+>}}
+
+{{< fillin
+  question="Solve using the Addition Property of Equality: $268 = y - 199$"
+  answer="467"
+  hint="Add $199$ to both sides. Check that your value minus $199$ gives $268$."
+>}}
+
+### Translate word phrases to algebraic equations
+
+{{< fillin
+  question="Translate into an algebraic equation: The difference of $23$ and $19$ is equal to $4$."
+  answer="23 - 19 = 4"
+  answerDisplay="$23 - 19 = 4$"
+  hint="'Difference' means subtraction, and it keeps the numbers in the order the sentence names them."
+>}}
+
+{{< fillin
+  question="Translate into an algebraic equation: The quotient of $54$ and $6$ is equal to $9$."
+  answer="54 \div 6 = 9"
+  answerDisplay="$54 \div 6 = 9$"
+  hint="'Quotient' means division, and the first number named is the one being divided."
+>}}
+
+{{< fillin
+  question="Translate into an algebraic equation: Twice the difference of $n$ and $10$ gives $52$."
+  answer="2(n - 10) = 52"
+  answerDisplay="$2(n - 10) = 52$"
+  hint="'Twice' doubles the entire difference, so the difference needs parentheses around it."
+>}}
+
+{{< fillin
+  question="Translate into an algebraic equation: The sum of three times $y$ and $10$ is $100$."
+  answer="3y + 10 = 100"
+  answerDisplay="$3y + 10 = 100$"
+  hint="'Three times $y$' is $3y$; the sum adds $10$ to it, and 'is' marks the equal sign."
+>}}
+
+### Translate to an equation and solve
+
+{{< fillin
+  question="Translate into an algebraic equation and solve: The sum of $r$ and $18$ is $73$."
+  answer="55"
+  answerDisplay="$r + 18 = 73$, so $r = 55$"
+  hint="'The sum of $r$ and $18$' is $r + 18$. Once you have the equation, subtract $18$ from both sides."
+>}}
+
+{{< fillin
+  question="Translate into an algebraic equation and solve: $12$ less than $u$ is $89$."
+  answer="101"
+  answerDisplay="$u - 12 = 89$, so $u = 101$"
+  hint="'Less than' reverses the order — $12$ less than $u$ is $u - 12$. Then add $12$ to both sides."
+>}}
+
+{{< fillin
+  question="Translate into an algebraic equation and solve: $325$ less than $c$ gives $799$."
+  answer="1124"
+  answerDisplay="$c - 325 = 799$, so $c = 1{,}124$"
+  hint="The equation is $c - 325 = 799$. Add $325$ to both sides, then check by subtracting $325$ from your value."
+>}}
+
 ## Key terms
 
 **solution** — a value of a variable that makes a true statement when
@@ -227,4 +380,4 @@ an equation keeps the two sides equal.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 2.3: Solve Equations Using the Subtraction and Addition Properties of Equality](https://openstax.org/books/prealgebra-2e/pages/2-3-solving-equations-using-the-subtraction-and-addition-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, replaced the envelope-and-counters manipulative figures with a direct statement of the Subtraction Property, and converted practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 2.3: Solve Equations Using the Subtraction and Addition Properties of Equality](https://openstax.org/books/prealgebra-2e/pages/2-3-solving-equations-using-the-subtraction-and-addition-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, replaced the envelope-and-counters manipulative figures with a direct statement of the Subtraction Property, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

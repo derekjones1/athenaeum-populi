@@ -9,9 +9,13 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** write a ratio as a
-  fraction, write a rate as a fraction, find unit rates, find unit price,
-  and translate phrases to expressions with fractions.
+**By the end of this section, you will be able to:**
+
+- Write a ratio as a fraction
+- Write a rate as a fraction
+- Find unit rates
+- Find unit price
+- Translate phrases to expressions with fractions
 {{< /callout >}}
 
 ## Write a ratio as a fraction
@@ -463,6 +467,151 @@ for $18$ hours.
   hint="Put the variable in the numerator and the given number in the denominator."
 >}}
 
+## Practice
+
+### Write a ratio as a fraction
+
+{{< fillin
+  question="Write the ratio as a fraction, fully simplified: 20 to 36"
+  answer="\frac{5}{9}"
+  answerDisplay="$\tfrac{5}{9}$"
+  hint="Write $\tfrac{20}{36}$, then divide the numerator and denominator by their greatest common factor, $4$."
+>}}
+
+{{< fillin
+  question="Write the ratio as a fraction of whole numbers, fully simplified: 0.56 to 2.8"
+  answer="\frac{1}{5}"
+  answerDisplay="$\tfrac{1}{5}$"
+  hint="The numerator has two decimal places, so move both decimal points 2 places to the right ($56$ to $280$), then simplify."
+>}}
+
+{{< fillin
+  question="Write the ratio as a fraction, fully simplified: $1\tfrac{2}{3}$ to $2\tfrac{5}{6}$"
+  answer="\frac{10}{17}"
+  answerDisplay="$\tfrac{10}{17}$"
+  hint="Rewrite both mixed numbers as improper fractions ($\tfrac{5}{3}$ and $\tfrac{17}{6}$), then divide by inverting the divisor and multiplying."
+>}}
+
+{{< fillin
+  question="Write the ratio as a fraction, fully simplified: total cholesterol of 175 to HDL cholesterol of 45"
+  answer="\frac{35}{9}"
+  answerDisplay="$\tfrac{35}{9}$"
+  hint="Put the total cholesterol in the numerator and the HDL cholesterol in the denominator, then divide both by $5$. Leave the result as an improper fraction."
+>}}
+
+{{< fillin
+  question="Write the ratio as a fraction, fully simplified: 27 inches to 1 foot"
+  answer="\frac{9}{4}"
+  answerDisplay="$\tfrac{9}{4}$"
+  hint="Both quantities must be measured in the same unit — convert $1$ foot to $12$ inches, then simplify $\tfrac{27}{12}$."
+>}}
+
+### Write a rate as a fraction
+
+{{< fillin
+  question="Write the rate as a fraction, fully simplified: 140 calories per 12 ounces. Enter just the simplified numeric ratio, e.g. $\tfrac{3}{2}$ for 3 calories per 2 ounces."
+  answer="\frac{35}{3}"
+  answerDisplay="35 calories $/ 3$ ounces"
+  hint="Put the calories in the numerator and the ounces in the denominator, then divide both by $4$."
+>}}
+
+{{< fillin
+  question="Write the rate as a fraction of whole numbers, fully simplified: 8.2 pounds per 3 square inches. Enter just the simplified numeric ratio, e.g. $\tfrac{3}{2}$ for 3 pounds per 2 square inches."
+  answer="\frac{41}{15}"
+  answerDisplay="41 lbs. $/ 15$ sq. in."
+  hint="Clear the decimal first by moving both decimal points 1 place to the right ($82$ over $30$), then simplify."
+>}}
+
+{{< fillin
+  question="Write the rate as a fraction, fully simplified: 488 miles in 7 hours. Enter just the simplified numeric ratio, e.g. $\tfrac{3}{2}$ for 3 miles in 2 hours."
+  answer="\frac{488}{7}"
+  answerDisplay="488 miles $/ 7$ hours"
+  hint="Check whether $488$ and $7$ share a common factor before you try to reduce — $7$ is prime."
+>}}
+
+### Find unit rates
+
+{{< fillin
+  question="Find the unit rate: 576 miles on 18 gallons of gas"
+  answer="32"
+  answerDisplay="32 mpg"
+  hint="Divide the number of miles by the number of gallons to get a denominator of $1$ gallon."
+>}}
+
+{{< fillin
+  question="Find the unit rate: 46 beats in 0.5 minute"
+  answer="92"
+  answerDisplay="92 beats/minute"
+  hint="Divide $46$ by $0.5$ — dividing by one half doubles the number of beats."
+>}}
+
+{{< fillin
+  question="Find the unit rate. Round to two decimal places. \$595 for 40 hours"
+  answer="14.88"
+  answerDisplay="\$14.88/hour"
+  hint="Divide the total pay by the number of hours, then round the quotient $14.875$ to the nearest cent."
+>}}
+
+{{< fillin
+  question="The bindery at a printing plant assembles 96,000 magazines in 12 hours. How many magazines are assembled in one hour?"
+  answer="8000"
+  answerDisplay="$8{,}000$ magazines per hour"
+  hint="The unit rate has a denominator of $1$ hour, so divide the number of magazines by the number of hours."
+>}}
+
+### Find unit price
+
+{{< fillin
+  question="Find the unit price. Round to the nearest cent. Soap bars at 8 for \$8.69"
+  answer="1.09"
+  answerDisplay="\$1.09/bar"
+  hint="Divide the total price by the number of bars, then round $1.08625$ to the nearest cent."
+>}}
+
+{{< fillin
+  question="Find the unit price. Round to the nearest cent. Snack packs of cookies at 12 for \$5.79"
+  answer="0.48"
+  answerDisplay="\$0.48/pack"
+  hint="Divide the total price by $12$, then round to the nearest cent."
+>}}
+
+{{< fillin
+  question="The grocery store has a special on macaroni and cheese. The price is \$3.87 for 3 boxes. How much does each box cost? Round to the nearest cent."
+  answer="1.29"
+  answerDisplay="\$1.29/box"
+  hint="The unit price is the total price divided by the number of boxes."
+>}}
+
+{{< fillin
+  question="Ketchup comes in a 40-ounce regular bottle for \$2.99 or a 64-ounce squeeze bottle for \$4.39. Find each unit price, rounded to three decimal places, then enter the unit price of the better buy."
+  answer="0.069"
+  answerDisplay="\$0.069 per ounce — the 64-ounce squeeze bottle is the better buy"
+  hint="Divide each price by its number of ounces: the regular bottle costs about \$0.075 per ounce. The better buy is the one with the *lower* unit price."
+>}}
+
+### Translate phrases to expressions with fractions
+
+{{< fillin
+  question="Translate the English phrase into an algebraic expression: $793$ miles per $p$ hours. Use $p$ as the variable."
+  answer="\frac{793}{p}"
+  answerDisplay="793 miles $/ p$ hours"
+  hint="*Per* signals a rate: the first quantity goes in the numerator and the second in the denominator."
+>}}
+
+{{< fillin
+  question="Translate the English phrase into an algebraic expression: $105$ calories in $x$ ounces. Use $x$ as the variable."
+  answer="\frac{105}{x}"
+  answerDisplay="105 calories $/ x$ ounces"
+  hint="Calories and ounces are different units, so this is a rate — write the calories over the ounces."
+>}}
+
+{{< fillin
+  question="Translate the English phrase into an algebraic expression: the ratio of $y$ and $5x$."
+  answer="\frac{y}{5x}"
+  answerDisplay="$\tfrac{y}{5x}$"
+  hint="*The ratio of* names the numerator first, so $y$ goes on top and the whole quantity $5x$ goes on the bottom."
+>}}
+
 ## Key terms
 
 **ratio** — a comparison of two numbers or quantities measured with the
@@ -473,4 +622,4 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 5.6: Ratios and Rate](https://openstax.org/books/prealgebra-2e/pages/5-6-ratios-and-rate) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the driving-rate and detergent-comparison tables as markdown tables; omitted the Be Prepared quiz, Media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 5.6: Ratios and Rate](https://openstax.org/books/prealgebra-2e/pages/5-6-ratios-and-rate) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the driving-rate and detergent-comparison tables as markdown tables; omitted the Be Prepared quiz and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

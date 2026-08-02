@@ -10,9 +10,10 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve a system of
-  equations by substitution, and solve applications of systems of equations
-  by substitution.
+**By the end of this section, you will be able to:**
+
+- Solve a system of equations by substitution
+- Solve applications of systems of equations by substitution
 {{< /callout >}}
 
 Solving systems of linear equations by graphing is a good way to visualize
@@ -339,7 +340,7 @@ sessions.
 {{< fillin
   question="Geraldine has been offered positions by two insurance companies. The first pays a salary of \$12,000 plus a commission of \$100 for each policy sold. The second pays a salary of \$20,000 plus a commission of \$50 for each policy sold. How many policies would need to be sold to make the total pay the same?"
   answer="160"
-  hint="Let s = Geraldine's salary and n = the number of policies sold: $s = 12000 + 100n$ and $s = 20000 + 50n$."
+  hint="Let s = Geraldine's salary and n = the number of policies sold: $s = 12{,}000 + 100n$ and $s = 20{,}000 + 50n$."
 >}}
 
 ## Key terms

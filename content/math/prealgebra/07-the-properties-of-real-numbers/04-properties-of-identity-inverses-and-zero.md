@@ -11,11 +11,12 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** recognize the
-  identity properties of addition and multiplication, use the inverse
-  properties of addition and multiplication, use the properties of zero,
-  and simplify expressions using the properties of identities, inverses,
-  and zero.
+**By the end of this section, you will be able to:**
+
+- Recognize the identity properties of addition and multiplication
+- Use the inverse properties of addition and multiplication
+- Use the properties of zero
+- Simplify expressions using the properties of identities, inverses, and zero
 {{< /callout >}}
 
 ## Recognize the identity properties of addition and multiplication
@@ -315,6 +316,105 @@ below:
 **Distributive Property:** if $a$, $b$, $c$ are real numbers, then $a(b +
 c) = ab + ac$.
 
+## Practice
+
+### Recognize the identity properties of addition and multiplication
+
+{{< multiplechoice
+  question="Identify whether this example uses the identity property of addition or of multiplication: $\tfrac{3}{5}(1) = \tfrac{3}{5}$"
+  answer="identity property of multiplication"
+  hint="Look at what is being combined with the number: adding $0$ signals the additive identity, multiplying by $1$ signals the multiplicative identity."
+>}}
+identity property of addition
+identity property of multiplication
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Identify whether this example uses the identity property of addition or of multiplication: $0 + 64 = 64$"
+  answer="identity property of addition"
+  hint="Look at what is being combined with the number: adding $0$ signals the additive identity, multiplying by $1$ signals the multiplicative identity."
+>}}
+identity property of addition
+identity property of multiplication
+{{< /multiplechoice >}}
+
+### Use the inverse properties of addition and multiplication
+
+{{< fillin
+  question="Find the multiplicative inverse of $14$."
+  answer="\frac{1}{14}"
+  answerDisplay="$\tfrac{1}{14}$"
+  hint="The multiplicative inverse is the reciprocal — write the number as a fraction and swap the numerator and denominator."
+>}}
+
+{{< fillin
+  question="Find the multiplicative inverse of $-\tfrac{5}{12}$."
+  answer="-\frac{12}{5}"
+  answerDisplay="$-\tfrac{12}{5}$"
+  hint="Invert the fraction and keep the sign: a negative number and its reciprocal must multiply to $1$."
+>}}
+
+{{< fillin
+  question="Find the multiplicative inverse of $0.4$."
+  answer="\frac{5}{2}"
+  answerDisplay="$\tfrac{5}{2}$"
+  hint="Rewrite the decimal as a fraction ($\tfrac{2}{5}$) first, then take its reciprocal."
+>}}
+
+### Use the properties of zero
+
+{{< fillin
+  question="Simplify: $22 \cdot 0$."
+  answer="0"
+  hint="The product of any real number and $0$ is $0$."
+>}}
+
+{{< fillin
+  question="Simplify: $0 \div \tfrac{7}{15}$."
+  answer="0"
+  hint="Zero divided by any nonzero number is $0$ — the divisor being a fraction changes nothing."
+>}}
+
+{{< multiplechoice
+  question="Simplify: $\tfrac{6}{0}$"
+  answer="undefined"
+  hint="Ask whether any number multiplied by the denominator could give the numerator."
+>}}
+$0$
+$6$
+undefined
+{{< /multiplechoice >}}
+
+### Simplify expressions using the properties of identities, inverses, and zero
+
+{{< fillin
+  question="Simplify: $92 + 31s - 92$."
+  answer="31s"
+  hint="Reorder so the additive inverses $92$ and $-92$ sit together; they combine to $0$, the additive identity."
+>}}
+
+{{< fillin
+  question="Simplify: $40(0.05n)$."
+  answer="2n"
+  hint="Regroup as $[40(0.05)]n$ and multiply the two numbers first."
+>}}
+
+{{< multiplechoice
+  question="Simplify: $\tfrac{28 - 9b}{0}$"
+  answer="undefined"
+  hint="Check whether the zero is in the numerator or the denominator — only one of those positions gives an answer."
+>}}
+$0$
+$28 - 9b$
+undefined
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Simplify: $18 \cdot \tfrac{5}{6}(15h + 24)$."
+  answer="225h + 360"
+  hint="The terms in parentheses cannot be combined, so multiply $18$ and $\tfrac{5}{6}$ first, then distribute."
+>}}
+
 ## Key terms
 
 **additive identity** — $0$; adding it to any number leaves the number
@@ -327,4 +427,4 @@ nonzero number is $0$; but division *by* zero is undefined.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 7.4: Properties of Identity, Inverses, and Zero](https://openstax.org/books/prealgebra-2e/pages/7-4-properties-of-identity-inverses-and-zero) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the chapter-wide properties summary (Table 7.1) as a markdown table; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, rephrasing the identity-property classification problem and one division-by-zero problem as counting questions so they can be graded as math expressions.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 7.4: Properties of Identity, Inverses, and Zero](https://openstax.org/books/prealgebra-2e/pages/7-4-properties-of-identity-inverses-and-zero) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the chapter-wide properties summary (Table 7.1) as a markdown table; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, rephrasing the identity-property classification problem and one division-by-zero problem as counting questions so they can be graded as math expressions; and adapted selected end-of-section exercises into the interactive Practice block, presenting the property-classification and "undefined" items as multiple choice.</small>

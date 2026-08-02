@@ -11,10 +11,13 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use variables and
-  algebraic symbols, simplify expressions using the order of operations,
-  evaluate an expression, identify and combine like terms, and translate an
-  English phrase to an algebraic expression.
+**By the end of this section, you will be able to:**
+
+- Use variables and algebraic symbols
+- Simplify expressions using the order of operations
+- Evaluate an expression
+- Identify and combine like terms
+- Translate an English phrase to an algebraic expression
 {{< /callout >}}
 
 ## Use Variables and Algebraic Symbols
@@ -411,6 +414,91 @@ than $4q$." Translate the phrase into algebra: $4q - 3$.
   hint="First translate 'four times the number of quarters,' then apply 'eight less than' to that whole product."
 >}}
 
+## Practice
+
+### Use variables and algebraic symbols
+
+{{< multiplechoice
+  question="Is $9 \cdot 6 = 54$ an expression or an equation?"
+  answer="equation"
+  hint="Check whether an equal sign connects two expressions."
+>}}
+equation
+expression
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Which sentence correctly translates $36 \ge 19$ into English?"
+  answer="Thirty-six is greater than or equal to nineteen."
+  hint="The symbol $\ge$ combines 'greater than' with 'equal to.'"
+>}}
+Thirty-six is greater than or equal to nineteen.
+Thirty-six is less than or equal to nineteen.
+Thirty-six is not equal to nineteen.
+{{< /multiplechoice >}}
+
+### Simplify expressions using the order of operations
+
+{{< fillin
+  question="Simplify: $3 + 8 \cdot 5$."
+  answer="43"
+  hint="Multiply first, then add."
+>}}
+
+{{< fillin
+  question="Simplify: $(3 + 8) \cdot 5$."
+  answer="55"
+  hint="Simplify inside the parentheses first, then multiply."
+>}}
+
+{{< fillin
+  question="Simplify: $5^3$."
+  answer="125"
+  hint="Expand as $5 \cdot 5 \cdot 5$ and multiply left to right."
+>}}
+
+### Evaluate an expression
+
+{{< fillin
+  question="Evaluate $7x + 8$ when $x = 2$."
+  answer="22"
+  hint="Substitute $x = 2$, then follow the order of operations."
+>}}
+
+{{< fillin
+  question="Evaluate $(x - y)^2$ when $x = 10$ and $y = 7$."
+  answer="9"
+  hint="Substitute the values, simplify inside the parentheses first, then square the result."
+>}}
+
+### Identify and combine like terms
+
+{{< fillin
+  question="What is the coefficient of $8a$?"
+  answer="8"
+  hint="The coefficient is the constant that multiplies the variable."
+>}}
+
+{{< fillin
+  question="Simplify by combining like terms: $3x^2 + 12x + 11 + 14x^2 + 8x + 5$."
+  answer="17x^2 + 20x + 16"
+  hint="Rearrange so like terms are together, then add each group's coefficients."
+>}}
+
+### Translate an English phrase to an algebraic expression
+
+{{< fillin
+  question="Translate into an algebraic expression: eight times the difference of $y$ and nine."
+  answer="8(y-9)"
+  hint="'Difference' means subtraction; multiplying by the whole difference needs parentheses around it."
+>}}
+
+{{< fillin
+  question="Eric has rock and classical CDs in his car. The number of rock CDs is 3 more than the number of classical CDs. Let $c$ represent the number of classical CDs. Write an expression for the number of rock CDs."
+  answer="c + 3"
+  hint="'More than' means addition — add 3 to the number of classical CDs."
+>}}
+
 ## Key terms
 
 **variable** — a letter that represents a number whose value may change.
@@ -426,4 +514,4 @@ variables raised to the same powers.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.2: Use the Language of Algebra](https://openstax.org/books/elementary-algebra-2e/pages/1-2-use-the-language-of-algebra) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the narrative examples and tables of notation; omitted the Be Prepared quiz, Manipulative Mathematics callout, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.2: Use the Language of Algebra](https://openstax.org/books/elementary-algebra-2e/pages/1-2-use-the-language-of-algebra) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the narrative examples and tables of notation; omitted the Be Prepared quiz, Manipulative Mathematics callout, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section's interactive Practice block.</small>

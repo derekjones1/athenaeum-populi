@@ -15,6 +15,13 @@
     hint            optional hint (inline math ok)
     answerMode      "unordered" for a comma-separated solution set whose
                     members may be entered in any order; default "expression"
+    answerForm      space-separated shape requirements for a re-expression
+                    prompt, whose answer is value-equal to the value printed
+                    in its own question ("Simplify $-\tfrac{40}{88}$"). Value
+                    grading alone accepts the prompt retyped back; this grades
+                    the shape too. Tokens: fraction, decimal, mixed-number,
+                    improper-fraction, fraction-or-mixed-number, lowest-terms,
+                    scientific-notation, prime-product, denominator:<n>
     requireExpanded "true" to reject answers containing parentheses
     placeholder     empty-field prompt (default "Your answer")
 
@@ -34,11 +41,22 @@
 {{- if not (in (slice "expression" "unordered") $answerMode) -}}
   {{- errorf "fillin answerMode must be 'expression' or 'unordered' (%s)" .Position -}}
 {{- end -}}
+{{- $answerForm := .Get "answerForm" | default "" -}}
+{{- $formTokens := slice "fraction" "decimal" "mixed-number" "improper-fraction" "fraction-or-mixed-number" "lowest-terms" "scientific-notation" "prime-product" -}}
+{{- range (split $answerForm " ") -}}
+  {{- $token := trim . " " -}}
+  {{- if $token -}}
+    {{- if not (or (in $formTokens $token) (findRE `^denominator:\d+$` $token)) -}}
+      {{- errorf "fillin answerForm token %q is not a form (%s)" $token $.Position -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 {{- $placeholder := .Get "placeholder" | default "Your answer" -}}
 {{- $qplain := replaceRE `\$` "" $question -}}
 <fill-in
   data-answer="{{ $answer }}"
   data-answer-mode="{{ $answerMode }}"
+  {{ with $answerForm }}data-answer-form="{{ . }}"{{ end }}
   data-require-expanded="{{ $reqExp }}"
   data-placeholder="{{ $placeholder }}"
   data-question-plain="{{ $qplain }}">

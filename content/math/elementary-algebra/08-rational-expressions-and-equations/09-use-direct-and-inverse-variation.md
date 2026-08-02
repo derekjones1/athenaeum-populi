@@ -10,8 +10,10 @@ weight: 9
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve direct variation
-  problems, and solve inverse variation problems.
+**By the end of this section, you will be able to:**
+
+- Solve direct variation problems
+- Solve inverse variation problems
 {{< /callout >}}
 
 When two quantities are related by a proportion, we say they are *proportional*
@@ -209,27 +211,27 @@ $$
 >}}
 
 **Example.** The fuel consumption (mpg) of a car varies inversely with its
-weight. A car that weighs $3100$ pounds gets $26$ mpg on the highway.
+weight. A car that weighs $3{,}100$ pounds gets $26$ mpg on the highway.
 (a) Write the equation of variation. (b) What would be the fuel consumption of
-a car that weighs $4030$ pounds?
+a car that weighs $4{,}030$ pounds?
 
 (a) Let $f$ be the fuel consumption and $w$ be the weight. Using
 $f = \tfrac{k}{w}$:
 
 $$
 \begin{array}{lrcl}
-\text{Substitute the given values.} & 26 &=& \tfrac{k}{3100} \\[4pt]
-\text{Solve for the constant of variation.} & 3100(26) &=& 3100\left(\tfrac{k}{3100}\right) \\[4pt]
+\text{Substitute the given values.} & 26 &=& \tfrac{k}{3{,}100} \\[4pt]
+\text{Solve for the constant of variation.} & 3{,}100(26) &=& 3{,}100\left(\tfrac{k}{3{,}100}\right) \\[4pt]
 & 80{,}600 &=& k \\[4pt]
 \text{Write the equation that relates } f \text{ and } w. & f &=& \tfrac{80{,}600}{w}
 \end{array}
 $$
 
-(b) Find $f$ when $w = 4030$:
+(b) Find $f$ when $w = 4{,}030$:
 
 $$f = \frac{80{,}600}{4030} = 20$$
 
-A car that weighs $4030$ pounds would have fuel consumption of $20$ mpg.
+A car that weighs $4{,}030$ pounds would have fuel consumption of $20$ mpg.
 
 **Example.** The frequency of a guitar string varies inversely with its
 length. A $26''$ long string has a frequency of $440$ vibrations per second.

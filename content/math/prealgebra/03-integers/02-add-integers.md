@@ -10,10 +10,13 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** model addition of
-  integers, simplify expressions with integers, evaluate variable
-  expressions with integers, and translate word phrases and applications
-  to expressions with integers.
+**By the end of this section, you will be able to:**
+
+- Model addition of integers
+- Simplify expressions with integers
+- Evaluate variable expressions with integers
+- Translate word phrases to expressions with integers
+- Add integers in applications
 {{< /callout >}}
 
 ## Model addition of integers
@@ -329,6 +332,178 @@ end of the three plays, the ball is on the $32$-yard line.
   hint="Start at 20, then apply each play in order: $20 - 9 + 7 - 4$."
 >}}
 
+## Practice
+
+### Model addition of integers
+
+<svg viewBox="0 0 360 60" role="img" aria-label="A row of eleven blue positive counters, separated into a group of seven and a group of four." style="max-width: 360px; width: 100%; display: block; margin: 1.5rem auto">
+  <circle cx="20" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="50" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="80" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="110" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="140" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="170" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="200" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
+  <circle cx="250" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="280" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="310" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="340" cy="30" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
+</svg>
+
+{{< fillin
+  question="The counters above model $7 + 4$. Simplify the expression."
+  answer="11"
+  hint="All the counters are positive, so no neutral pairs form — just count the whole row."
+>}}
+
+<svg viewBox="0 0 300 60" role="img" aria-label="A row of nine red negative counters, separated into a group of six and a group of three." style="max-width: 300px; width: 100%; display: block; margin: 1.5rem auto">
+  <circle cx="20" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="50" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="80" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="110" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="140" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="170" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
+  <circle cx="220" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="250" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="280" cy="30" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
+</svg>
+
+{{< fillin
+  question="The counters above model $-6 + (-3)$. Simplify the expression."
+  answer="-9"
+  hint="Every counter is negative, so count them all and keep the negative sign."
+>}}
+
+<svg viewBox="0 0 220 90" role="img" aria-label="Two rows of counters: a top row of seven red negative counters and a bottom row of five blue positive counters." style="max-width: 220px; width: 100%; display: block; margin: 1.5rem auto">
+  <circle cx="20" cy="25" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="50" cy="25" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="80" cy="25" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="110" cy="25" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="140" cy="25" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="170" cy="25" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="200" cy="25" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
+  <circle cx="20" cy="65" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="50" cy="65" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="80" cy="65" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="110" cy="65" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="140" cy="65" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
+</svg>
+
+{{< fillin
+  question="The counters above model $-7 + 5$. Simplify the expression."
+  answer="-2"
+  hint="Each column that holds one counter of each color is a neutral pair worth $0$. Remove those pairs and count the color that is left over."
+>}}
+
+<svg viewBox="0 0 250 90" role="img" aria-label="Two rows of counters: a top row of eight blue positive counters and a bottom row of seven red negative counters." style="max-width: 250px; width: 100%; display: block; margin: 1.5rem auto">
+  <circle cx="20" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="50" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="80" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="110" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="140" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="170" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="200" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" /><circle cx="230" cy="25" r="13" fill="none" stroke="#2b7fb8" stroke-width="2" />
+  <circle cx="20" cy="65" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="50" cy="65" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="80" cy="65" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="110" cy="65" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="140" cy="65" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="170" cy="65" r="13" fill="none" stroke="#c0392b" stroke-width="2" /><circle cx="200" cy="65" r="13" fill="none" stroke="#c0392b" stroke-width="2" />
+</svg>
+
+{{< fillin
+  question="The counters above model $8 + (-7)$. Simplify the expression."
+  answer="1"
+  hint="Seven neutral pairs form and are removed. There were more positives than negatives, so the sign of what remains is positive."
+>}}
+
+### Simplify expressions with integers
+
+{{< fillin
+  question="Simplify: $-21 + (-59)$"
+  answer="-80"
+  hint="The signs are the same, so add the absolute values and keep the common sign."
+>}}
+
+{{< fillin
+  question="Simplify: $-200 + 65$"
+  answer="-135"
+  hint="The signs are different — subtract $65$ from $200$ and keep the sign of the number with the larger absolute value."
+>}}
+
+{{< fillin
+  question="Simplify: $135 + (-110) + 83$"
+  answer="108"
+  hint="Work left to right: add the first two integers, then add $83$ to that result."
+>}}
+
+{{< fillin
+  question="Simplify: $19 + 2(-3 + 8)$"
+  answer="29"
+  hint="Order of operations — simplify inside the parentheses first, then multiply, then add."
+>}}
+
+### Evaluate variable expressions with integers
+
+{{< fillin
+  question="When $a = -7$, evaluate: $a + 3$"
+  answer="-4"
+  hint="Substitute $-7$ for $a$. The signs are different, so subtract and keep the sign of the larger absolute value."
+>}}
+
+{{< fillin
+  question="When $a = -7$, evaluate: $-a + 3$"
+  answer="10"
+  hint="Substitute carefully: $-a$ becomes $-(-7)$, the opposite of $-7$."
+>}}
+
+{{< fillin
+  question="Evaluate $m + n$ when $m = -15$ and $n = 7$."
+  answer="-8"
+  hint="Substitute both values, then add integers with different signs."
+>}}
+
+{{< fillin
+  question="Evaluate $(a + b)^2$ when $a = -7$ and $b = 15$."
+  answer="64"
+  hint="Add inside the parentheses first, then square that single number."
+>}}
+
+{{< fillin
+  question="Evaluate $(x + y)^2$ when $x = -3$ and $y = 14$."
+  answer="121"
+  hint="Simplify the sum in the parentheses before applying the exponent — the exponent belongs to the whole quantity."
+>}}
+
+### Translate word phrases to expressions with integers
+
+{{< fillin
+  question="Translate the phrase into an expression and simplify: the sum of $-14$ and $5$"
+  answer="-9"
+  answerDisplay="$-14 + 5 = -9$"
+  hint="'The sum of' means add, in the order the two numbers are named."
+>}}
+
+{{< fillin
+  question="Translate the phrase into an expression and simplify: $-10$ added to $-15$"
+  answer="-25"
+  answerDisplay="$-15 + (-10) = -25$"
+  hint="'Added to' names the second addend first, so start from $-15$. Both signs are the same, so add the absolute values."
+>}}
+
+{{< fillin
+  question="Translate the phrase into an expression and simplify: $6$ more than the sum of $-1$ and $-12$"
+  answer="-7"
+  answerDisplay="$[-1 + (-12)] + 6 = -7$"
+  hint="Group the inner sum in brackets first, then add $6$ to it."
+>}}
+
+{{< fillin
+  question="Translate the phrase into an expression and simplify: the sum of $10$ and $-19$, increased by $4$"
+  answer="-5"
+  answerDisplay="$[10 + (-19)] + 4 = -5$"
+  hint="'Increased by' means add. Simplify the bracketed sum, then add $4$."
+>}}
+
+### Add integers in applications
+
+{{< fillin
+  question="The temperature in St. Paul, Minnesota, was $-19$ degrees Fahrenheit at sunrise. By noon the temperature had risen $26$ degrees Fahrenheit. What was the temperature at noon, in degrees Fahrenheit?"
+  answer="7"
+  hint="A rise is a positive change — start at $-19$ and add $26$."
+>}}
+
+{{< fillin
+  question="Lupe owes \$73 on her credit card. Then she charges \$45 more. Represent the new balance as an integer number of dollars."
+  answer="-118"
+  answerDisplay="−\$118 (a balance of \$118 owed)"
+  hint="Money owed is negative, and a new charge makes the debt larger. Both addends carry the same sign."
+>}}
+
+{{< fillin
+  question="A football team lost $3$ yards on the first play. Then they lost $2$ yards, gained $1$ yard, and then lost $4$ yards. What was the change in overall yardage over the four plays, in yards?"
+  answer="-8"
+  answerDisplay="$-8$ yards"
+  hint="Write each loss as a negative integer and each gain as a positive one, then add all four."
+>}}
+
+{{< fillin
+  question="The Rams took possession of the football on their own $35$-yard line. In the next three plays, they lost $12$ yards, gained $8$ yards, then lost $6$ yards. On what yard line was the ball at the end of those three plays?"
+  answer="25"
+  answerDisplay="the $25$-yard line"
+  hint="Start at $35$ and add the three signed changes in order."
+>}}
+
+{{< fillin
+  question="A scuba diver swimming $8$ feet below the surface dove $17$ feet deeper; the pressure got to them and they rose five feet. What is their new depth, in feet below the surface?"
+  answer="20"
+  answerDisplay="$20$ feet below the surface"
+  hint="Take depths below the surface as negative: start at $-8$, add $-17$ for diving deeper, then add $5$ for rising. The depth is the absolute value of the result."
+>}}
+
 ## Key terms
 
 **neutral pair** — a positive counter and a negative counter together,
@@ -340,4 +515,4 @@ of the number with the larger absolute value.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 3.2: Add Integers](https://openstax.org/books/prealgebra-2e/pages/3-2-add-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the two-color-counter models as accessible inline graphics and the same-signs/different-signs summary as a table; condensed prose; omitted the Be Prepared quiz, Manipulative Mathematics callout, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 3.2: Add Integers](https://openstax.org/books/prealgebra-2e/pages/3-2-add-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the two-color-counter models as accessible inline graphics and the same-signs/different-signs summary as a table; condensed prose; omitted the Be Prepared quiz, Manipulative Mathematics callout, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part and the counter-model answers redrawn as accessible inline graphics.</small>

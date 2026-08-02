@@ -10,10 +10,13 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** plot points on a
-  rectangular coordinate system, identify points on a graph, verify solutions
-  to an equation in two variables, complete a table of solutions to a linear
-  equation, and find solutions to linear equations in two variables.
+**By the end of this section, you will be able to:**
+
+- Plot points on a rectangular coordinate system
+- Identify points on a graph
+- Verify solutions to an equation in two variables
+- Complete a table of solutions to a linear equation
+- Find solutions to linear equations in two variables
 {{< /callout >}}
 
 ## Plot points on a rectangular coordinate system
@@ -490,11 +493,16 @@ coordinates are $(0, -1)$ is on the $y$-axis.
   hint="If the $x$-coordinate is $0$, the point lies straight up or down from the origin."
 >}}
 
-{{< fillin
-  question="In which quadrant does the point $(-4, 6)$ lie? Enter the quadrant number as a digit (1, 2, 3, or 4)."
-  answer="2"
+{{< multiplechoice
+  question="In which quadrant does the point $(-4, 6)$ lie?"
+  answer="Quadrant II"
   hint="A negative $x$-coordinate paired with a positive $y$-coordinate places the point to the left of the $y$-axis and above the $x$-axis."
 >}}
+Quadrant I
+Quadrant II
+Quadrant III
+Quadrant IV
+{{< /multiplechoice >}}
 
 ## Identify points on a graph
 
@@ -994,6 +1002,316 @@ true.
   hint="Substitute $y = 0$ into the equation and solve for $x$."
 >}}
 
+## Practice
+
+### Plot points on a rectangular coordinate system
+
+{{< multiplechoice
+  question="In which quadrant does the point $(3, -2)$ lie?"
+  answer="Quadrant IV"
+  hint="The $x$-coordinate is positive and the $y$-coordinate is negative — go right, then down."
+>}}
+Quadrant I
+Quadrant II
+Quadrant III
+Quadrant IV
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="In which quadrant does the point $(-3, 2)$ lie?"
+  answer="Quadrant II"
+  hint="A negative $x$-coordinate moves left of the $y$-axis; a positive $y$-coordinate moves above the $x$-axis."
+>}}
+Quadrant I
+Quadrant II
+Quadrant III
+Quadrant IV
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="In which quadrant does the point $(-3, -2)$ lie?"
+  answer="Quadrant III"
+  hint="Both coordinates are negative, so the point is left of and below the origin."
+>}}
+Quadrant I
+Quadrant II
+Quadrant III
+Quadrant IV
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="In which quadrant does the point $(3, 2)$ lie?"
+  answer="Quadrant I"
+  hint="Both coordinates are positive, so the point is right of and above the origin."
+>}}
+Quadrant I
+Quadrant II
+Quadrant III
+Quadrant IV
+{{< /multiplechoice >}}
+
+### Identify points on a graph
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A rectangular coordinate plane with both axes running from -6 to 6. Point C is plotted at (1, -3) and point D is plotted at (4, 3).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"tickStep":2,"points":[{"at":[1,-3],"label":"C"},{"at":[4,3],"label":"D"}]}'>
+<svg role="img" aria-label="A rectangular coordinate plane with both axes running from -6 to 6. Point C is plotted at (1, -3) and point D is plotted at (4, 3)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 292" width="292" height="292" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="46" y1="266" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="66" y1="266" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="86" y1="266" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="106" y1="266" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="126" y1="266" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="166" y1="266" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="186" y1="266" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="206" y1="266" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="226" y1="266" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="246" y1="266" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="266" y1="266" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="266" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="246" x2="266" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="226" x2="266" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="206" x2="266" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="186" x2="266" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="166" x2="266" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="126" x2="266" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="106" x2="266" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="86" x2="266" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="66" x2="266" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="46" x2="266" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="146" x2="268" y2="146" stroke="currentColor" stroke-width="1"/>
+  <line x1="146" y1="24" x2="146" y2="268" stroke="currentColor" stroke-width="1"/>
+  <polygon points="278,146 268,151 268,141" fill="currentColor"/>
+  <polygon points="146,14 151,24 141,24" fill="currentColor"/>
+  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
+  <polygon points="146,278 141,268 151,268" fill="currentColor"/>
+  <text x="276" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="154" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="143" x2="26" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="161" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
+  <line x1="66" y1="143" x2="66" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="66" y="161" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
+  <line x1="106" y1="143" x2="106" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="106" y="161" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="186" y1="143" x2="186" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="186" y="161" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="226" y1="143" x2="226" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="226" y="161" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="266" y1="143" x2="266" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="266" y="161" font-size="11" fill="currentColor" text-anchor="middle">6</text>
+  <line x1="143" y1="266" x2="149" y2="266" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="270" font-size="11" fill="currentColor" text-anchor="end">−6</text>
+  <line x1="143" y1="226" x2="149" y2="226" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="230" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="143" y1="186" x2="149" y2="186" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="190" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="143" y1="106" x2="149" y2="106" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="110" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="143" y1="66" x2="149" y2="66" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="70" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <line x1="143" y1="26" x2="149" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="30" font-size="11" fill="currentColor" text-anchor="end">6</text>
+  <circle cx="166" cy="206" r="4" fill="currentColor"/>
+  <circle cx="226" cy="86" r="4" fill="currentColor"/>
+  <text x="180" y="210" font-size="13" fill="currentColor" text-anchor="start">C</text>
+  <text x="240" y="90" font-size="13" fill="currentColor" text-anchor="start">D</text>
+</svg>
+</div>
+
+{{< fillin
+  question="Name the ordered pair of point $C$ shown on the graph. Write it in the form $(x, y)$."
+  answer="(1,-3)"
+  answerDisplay="$C(1, -3)$"
+  hint="Read across to the $x$-axis first, then down to the $y$-axis — the $x$-coordinate always comes first."
+>}}
+
+{{< fillin
+  question="Name the ordered pair of point $D$ shown on the graph. Write it in the form $(x, y)$."
+  answer="(4,3)"
+  answerDisplay="$D(4, 3)$"
+  hint="Count right from the origin for $x$, then up for $y$."
+>}}
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A rectangular coordinate plane with both axes running from -6 to 6. Point S is plotted at (-2, 4) and point T is plotted at (-4, -2).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"tickStep":2,"points":[{"at":[-2,4],"label":"S"},{"at":[-4,-2],"label":"T"}]}'>
+<svg role="img" aria-label="A rectangular coordinate plane with both axes running from -6 to 6. Point S is plotted at (-2, 4) and point T is plotted at (-4, -2)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 292" width="292" height="292" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="46" y1="266" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="66" y1="266" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="86" y1="266" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="106" y1="266" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="126" y1="266" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="166" y1="266" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="186" y1="266" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="206" y1="266" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="226" y1="266" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="246" y1="266" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="266" y1="266" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="266" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="246" x2="266" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="226" x2="266" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="206" x2="266" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="186" x2="266" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="166" x2="266" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="126" x2="266" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="106" x2="266" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="86" x2="266" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="66" x2="266" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="46" x2="266" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="146" x2="268" y2="146" stroke="currentColor" stroke-width="1"/>
+  <line x1="146" y1="24" x2="146" y2="268" stroke="currentColor" stroke-width="1"/>
+  <polygon points="278,146 268,151 268,141" fill="currentColor"/>
+  <polygon points="146,14 151,24 141,24" fill="currentColor"/>
+  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
+  <polygon points="146,278 141,268 151,268" fill="currentColor"/>
+  <text x="276" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="154" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="143" x2="26" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="161" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
+  <line x1="66" y1="143" x2="66" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="66" y="161" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
+  <line x1="106" y1="143" x2="106" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="106" y="161" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="186" y1="143" x2="186" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="186" y="161" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="226" y1="143" x2="226" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="226" y="161" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="266" y1="143" x2="266" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="266" y="161" font-size="11" fill="currentColor" text-anchor="middle">6</text>
+  <line x1="143" y1="266" x2="149" y2="266" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="270" font-size="11" fill="currentColor" text-anchor="end">−6</text>
+  <line x1="143" y1="226" x2="149" y2="226" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="230" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="143" y1="186" x2="149" y2="186" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="190" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="143" y1="106" x2="149" y2="106" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="110" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="143" y1="66" x2="149" y2="66" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="70" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <line x1="143" y1="26" x2="149" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="30" font-size="11" fill="currentColor" text-anchor="end">6</text>
+  <circle cx="106" cy="66" r="4" fill="currentColor"/>
+  <circle cx="66" cy="186" r="4" fill="currentColor"/>
+  <text x="120" y="70" font-size="13" fill="currentColor" text-anchor="start">S</text>
+  <text x="80" y="190" font-size="13" fill="currentColor" text-anchor="start">T</text>
+</svg>
+</div>
+
+{{< fillin
+  question="Name the ordered pair of point $S$ shown on the graph. Write it in the form $(x, y)$."
+  answer="(-2,4)"
+  answerDisplay="$S(-2, 4)$"
+  hint="The point sits left of the $y$-axis, so its $x$-coordinate is negative."
+>}}
+
+{{< fillin
+  question="Name the ordered pair of point $T$ shown on the graph. Write it in the form $(x, y)$."
+  answer="(-4,-2)"
+  answerDisplay="$T(-4, -2)$"
+  hint="Both coordinates are negative here — count left for $x$, then down for $y$."
+>}}
+
+### Verify solutions to an equation in two variables
+
+{{< multiplechoice
+  question="Is $(1, 4)$ a solution to $2x + y = 6$?"
+  answer="yes"
+  hint="Substitute $x = 1$ and $y = 4$ and check whether the two sides are equal."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(3, 0)$ a solution to $2x + y = 6$?"
+  answer="yes"
+  hint="Substitute $x = 3$ and $y = 0$; a zero coordinate is still substituted like any other value."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(2, 3)$ a solution to $2x + y = 6$?"
+  answer="no"
+  hint="Substitute $x = 2$ and $y = 3$ and compare the result with $6$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(2, 0)$ a solution to $y = \tfrac{1}{2}x - 1$?"
+  answer="yes"
+  hint="Substitute $x = 2$ into the right side and see whether you get the given $y$-value."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(-6, -4)$ a solution to $y = \tfrac{1}{2}x - 1$?"
+  answer="yes"
+  hint="Half of $-6$ is $-3$; now subtract $1$ and compare with the given $y$-value."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(-4, -1)$ a solution to $y = \tfrac{1}{2}x - 1$?"
+  answer="no"
+  hint="Substitute $x = -4$ into the right side and compare the result with $-1$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Complete a table of solutions to a linear equation
+
+{{< fillin
+  question="Complete the table for $y = 2x - 4$: find the solution when $x = -1$. Write it in the form $(x, y)$."
+  answer="(-1,-6)"
+  answerDisplay="$(-1, -6)$"
+  hint="Substitute $-1$ for $x$: $2(-1) - 4$."
+>}}
+
+{{< fillin
+  question="Complete the table for $y = 2x - 4$: find the solution when $x = 0$. Write it in the form $(x, y)$."
+  answer="(0,-4)"
+  answerDisplay="$(0, -4)$"
+  hint="With $x = 0$ the first term drops out, leaving just the constant."
+>}}
+
+{{< fillin
+  question="Complete the table for $y = 2x - 4$: find the solution when $x = 2$. Write it in the form $(x, y)$."
+  answer="(2,0)"
+  answerDisplay="$(2, 0)$"
+  hint="Substitute $2$ for $x$: $2(2) - 4$."
+>}}
+
+### Find solutions to linear equations in two variables
+
+{{< fillin
+  question="Find a solution to $y = -x + 5$ by letting $x = -2$. Write it in the form $(x, y)$."
+  answer="(-2,7)"
+  answerDisplay="$(-2, 7)$"
+  hint="The opposite of $-2$ is $2$, so add $5$ to that."
+>}}
+
+{{< fillin
+  question="Find a solution to $y = -x + 5$ by letting $x = 0$. Write it in the form $(x, y)$."
+  answer="(0,5)"
+  answerDisplay="$(0, 5)$"
+  hint="Choosing $x = 0$ is usually the easiest value — the variable term disappears."
+>}}
+
+{{< fillin
+  question="Find a solution to $y = -x + 5$ by letting $x = 3$. Write it in the form $(x, y)$."
+  answer="(3,2)"
+  answerDisplay="$(3, 2)$"
+  hint="Substitute $3$ for $x$: $-3 + 5$."
+>}}
+
 ## Key terms
 
 **rectangular coordinate system** — a grid formed by a horizontal
@@ -1010,4 +1328,4 @@ statement when substituted in for $x$ and $y$.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 11.1: Use the Rectangular Coordinate System](https://openstax.org/books/prealgebra-2e/pages/11-1-use-the-rectangular-coordinate-system) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the coordinate-grid and quadrant figures as accessible inline graphics and the solution tables as markdown tables; omitted the Be Prepared quiz, campus-map figure, Media links, Practice Makes Perfect, Everyday Math, Writing Exercises, and Self Check blocks; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 11.1: Use the Rectangular Coordinate System](https://openstax.org/books/prealgebra-2e/pages/11-1-use-the-rectangular-coordinate-system) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the coordinate-grid and quadrant figures as accessible inline graphics and the solution tables as markdown tables; omitted the Be Prepared quiz, campus-map figure, Media links, Everyday Math, Writing Exercises, and Self Check blocks; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, recreating two exercise graphs as accessible inline graphics, expanding multipart items part by part, and restating the "plot each point" and "which ordered pairs are solutions" prompts as gradable quadrant and yes/no questions.</small>

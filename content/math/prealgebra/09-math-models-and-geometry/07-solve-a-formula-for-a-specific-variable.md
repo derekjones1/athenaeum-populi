@@ -8,8 +8,10 @@ weight: 7
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use the distance,
-  rate, and time formula, and solve a formula for a specific variable.
+**By the end of this section, you will be able to:**
+
+- Use the distance, rate, time formula
+- Solve a formula for a specific variable
 {{< /callout >}}
 
 ## Use the distance, rate, and time formula
@@ -180,15 +182,15 @@ $
 So $P = \tfrac{I}{rt}$.
 
 {{< fillin
-  question="Solve the formula $I = Prt$ for $t$, when $I = 2160$, $r = 6\%$ (0.06), and $P = 12000$."
+  question="Solve the formula $I = Prt$ for $t$, when $I = 2{,}160$, $r = 6\%$ (0.06), and $P = 12{,}000$."
   answer="3"
-  hint="Substitute: $2160 = 12000(0.06)(t)$, then divide both sides by 720."
+  hint="Substitute: $2{,}160 = 12{,}000(0.06)(t)$, then divide both sides by 720."
 >}}
 
 {{< fillin
-  question="Solve the formula $I = Prt$ for $r$, when $I = 5400$, $P = 9000$, and $t = 5$ years. Give $r$ as a decimal."
+  question="Solve the formula $I = Prt$ for $r$, when $I = 5{,}400$, $P = 9{,}000$, and $t = 5$ years. Give $r$ as a decimal."
   answer="0.12"
-  hint="Substitute: $5400 = 9000(r)(5)$, then divide both sides by 45000."
+  hint="Substitute: $5{,}400 = 9{,}000(r)(5)$, then divide both sides by 45000."
 >}}
 
 Formulas can also involve two variables that play a similar role, like
@@ -300,6 +302,91 @@ $
   hint="Subtract $5x$ from both sides, then divide both sides by 8."
 >}}
 
+## Practice
+
+### Use the distance, rate, time formula
+
+{{< fillin
+  question="Steve drove for $8\tfrac{1}{2}$ hours at 72 miles per hour. How much distance did he travel, in miles?"
+  answer="612"
+  answerDisplay="612 miles"
+  hint="Substitute into $d = rt$: $d = 72\left(\tfrac{17}{2}\right)$."
+>}}
+
+{{< fillin
+  question="Connor wants to drive from Tucson to the Grand Canyon, a distance of 338 miles. If he drives at a steady rate of 52 miles per hour, how many hours will the trip take?"
+  answer="6.5"
+  answerDisplay="6.5 hours"
+  hint="Substitute into $d = rt$ to get $338 = 52t$, then divide both sides by 52."
+>}}
+
+{{< fillin
+  question="Javier is driving to Bangor, Maine, which is 240 miles away from his current location. If he needs to be in Bangor in 4 hours, at what rate must he drive, in miles per hour?"
+  answer="60"
+  answerDisplay="60 mph"
+  hint="The rate is the unknown, so substitute into $d = rt$ to get $240 = r(4)$ and divide both sides by 4."
+>}}
+
+{{< fillin
+  question="Aisha took the train from Spokane to Seattle. The distance is 280 miles, and the trip took 3.5 hours. What was the speed of the train, in miles per hour?"
+  answer="80"
+  answerDisplay="80 mph"
+  hint="Substitute into $d = rt$ to get $280 = r(3.5)$, then divide both sides by 3.5."
+>}}
+
+### Solve a formula for a specific variable
+
+{{< fillin
+  question="Use the formula $I = Prt$. Solve for the time $t$, in years, when the interest is \$2,376, the principal is \$9,000, and the rate is 4.4%."
+  answer="6"
+  answerDisplay="$t = 6$ years"
+  hint="Write the rate as the decimal $0.044$, then substitute to get $2{,}376 = 9{,}000(0.044)t$."
+>}}
+
+{{< fillin
+  question="Use the formula $I = Prt$. Solve for the time $t$ in general. Enter your answer as t = ___ (an expression in $I$, $P$, and $r$)."
+  answer="t=I/(Pr)"
+  hint="There is nothing to substitute, so divide both sides by the whole coefficient of $t$, which is $Pr$."
+>}}
+
+{{< fillin
+  question="Use the formula $A = \tfrac{1}{2}bh$. Solve for $b$ when $A = 126$ and $h = 18$."
+  answer="14"
+  answerDisplay="$b = 14$"
+  hint="Substitute first: $126 = \tfrac{1}{2}b(18)$, so $126 = 9b$."
+>}}
+
+{{< fillin
+  question="Use the formula $A = \tfrac{1}{2}bh$. Solve for $b$ in general. Enter your answer as b = ___ (an expression in $A$ and $h$)."
+  answer="b=2A/h"
+  hint="Clear the fraction by multiplying both sides by 2, then divide both sides by $h$."
+>}}
+
+{{< fillin
+  question="Solve the formula $P = 2L + 2W$ for $L$. Enter your answer as L = ___ (an expression in $P$ and $W$)."
+  answer="L=(P-2W)/2"
+  hint="Subtract $2W$ from both sides to isolate the $L$ term, then divide both sides by 2."
+>}}
+
+{{< fillin
+  question="Solve the formula $C = \pi d$ for $d$. Enter your answer as d = ___ (an expression in $C$)."
+  answer="d=C/\pi"
+  hint="Treat $\pi$ like any other coefficient and divide both sides by it."
+>}}
+
+{{< fillin
+  question="Solve $180 = a + b + c$ for $a$. Enter your answer as a = ___ (an expression in $b$ and $c$)."
+  answer="a=180-b-c"
+  hint="Subtract $b$ and $c$ from both sides."
+>}}
+
+{{< fillin
+  question="While on a tour in Greece, Tatyana saw that the temperature was $40°$ Celsius. Solve for $F$ in the formula $C = \tfrac{5}{9}(F - 32)$ to find the temperature in degrees Fahrenheit."
+  answer="104"
+  answerDisplay="$104°$ F"
+  hint="Substitute $C = 40$, multiply both sides by $\tfrac{9}{5}$ to undo the fraction, then add 32."
+>}}
+
 ## Key terms
 
 **distance, rate, time formula** — the relationship $d = rt$, where $d$ is
@@ -310,4 +397,4 @@ called solving a **literal equation**.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 9.7: Solve a Formula for a Specific Variable](https://openstax.org/books/prealgebra-2e/pages/9-7-solve-a-formula-for-a-specific-variable) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Links to Literacy and Media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 9.7: Solve a Formula for a Specific Variable](https://openstax.org/books/prealgebra-2e/pages/9-7-solve-a-formula-for-a-specific-variable) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz and the Links to Literacy and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, splitting multipart items into one question per part.</small>

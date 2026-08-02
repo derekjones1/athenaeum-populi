@@ -9,8 +9,10 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** add and subtract like
-  square roots, and add and subtract square roots that need simplification.
+**By the end of this section, you will be able to:**
+
+- Add and subtract like square roots
+- Add and subtract square roots that need simplification
 {{< /callout >}}
 
 We must follow the order of operations to simplify expressions with square

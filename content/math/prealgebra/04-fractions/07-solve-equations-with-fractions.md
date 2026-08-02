@@ -11,11 +11,12 @@ weight: 7
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** determine whether
-  a fraction is a solution of an equation, solve equations with fractions
-  using the Addition, Subtraction, and Division Properties of Equality,
-  solve equations using the Multiplication Property of Equality, and
-  translate sentences to equations and solve.
+**By the end of this section, you will be able to:**
+
+- Determine whether a fraction is a solution of an equation
+- Solve equations with fractions using the Addition, Subtraction, and Division Properties of Equality
+- Solve equations using the Multiplication Property of Equality
+- Translate sentences to equations and solve
 {{< /callout >}}
 
 ## Determine whether a fraction is a solution of an equation
@@ -52,11 +53,14 @@ $x=\tfrac{4}{5}$ *is* a solution.
 $-\tfrac{8}{10} - \tfrac{3}{10} = -\tfrac{11}{10}$, which is not equal to
 $\tfrac{5}{10}$. So $x=-\tfrac{4}{5}$ is *not* a solution.
 
-{{< fillin
-  question="Is $x = \tfrac{5}{6}$ a solution of $x - \tfrac{2}{3} = \tfrac{1}{6}$? Enter 1 for yes or 0 for no."
-  answer="1"
+{{< multiplechoice
+  question="Is $x = \tfrac{5}{6}$ a solution of $x - \tfrac{2}{3} = \tfrac{1}{6}$?"
+  answer="yes"
   hint="Substitute $\tfrac{5}{6}$ for $x$, rewrite both sides with a common denominator, and check whether the equation is true."
 >}}
+yes
+no
+{{< /multiplechoice >}}
 
 ## Solve equations with fractions using the Addition, Subtraction, and Division Properties of Equality
 
@@ -304,6 +308,149 @@ mixed number.
   hint="Translate to $\tfrac{5}{8} + x = \tfrac{1}{4}$, then subtract $\tfrac{5}{8}$ from both sides using a common denominator."
 >}}
 
+## Practice
+
+### Determine whether a fraction is a solution of an equation
+
+{{< multiplechoice
+  question="Is $y = 1$ a solution of $y - \tfrac{1}{3} = \tfrac{5}{12}$?"
+  answer="no"
+  hint="Substitute $1$ for $y$ and rewrite $1 - \tfrac{1}{3}$ with denominator 12."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $y = \tfrac{3}{4}$ a solution of $y - \tfrac{1}{3} = \tfrac{5}{12}$?"
+  answer="yes"
+  hint="Rewrite $\tfrac{3}{4}$ and $\tfrac{1}{3}$ with the LCD 12 before subtracting."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $y = -\tfrac{3}{4}$ a solution of $y - \tfrac{1}{3} = \tfrac{5}{12}$?"
+  answer="no"
+  hint="A negative value minus a positive value cannot equal a positive result — but check it with the LCD 12 to be sure."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $k = 1$ a solution of $k + \tfrac{2}{5} = \tfrac{5}{6}$?"
+  answer="no"
+  hint="Substitute $1$ for $k$; the left side is more than 1, so compare it with $\tfrac{5}{6}$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $k = \tfrac{13}{30}$ a solution of $k + \tfrac{2}{5} = \tfrac{5}{6}$?"
+  answer="yes"
+  hint="The LCD of 30, 5, and 6 is 30 — rewrite every fraction with that denominator."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $k = -\tfrac{13}{30}$ a solution of $k + \tfrac{2}{5} = \tfrac{5}{6}$?"
+  answer="no"
+  hint="Substitute and add over the LCD 30; watch the sign of the numerator."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Solve equations with fractions using the Addition, Subtraction, and Division Properties of Equality
+
+{{< fillin
+  question="Solve: $h + \tfrac{5}{6} = \tfrac{1}{6}$"
+  answer="-\frac{2}{3}"
+  answerDisplay="$-\tfrac{2}{3}$"
+  hint="Subtract $\tfrac{5}{6}$ from both sides, then simplify the resulting fraction."
+>}}
+
+{{< fillin
+  question="Solve: $z - \left(-\tfrac{5}{12}\right) = -\tfrac{7}{12}$"
+  answer="-1"
+  hint="Subtracting a negative is adding, so the equation is $z + \tfrac{5}{12} = -\tfrac{7}{12}$."
+>}}
+
+{{< fillin
+  question="Solve: $p - \tfrac{3}{10} = \tfrac{5}{8}$"
+  answer="\frac{37}{40}"
+  answerDisplay="$\tfrac{37}{40}$"
+  hint="Add $\tfrac{3}{10}$ to both sides, then rewrite both fractions with the LCD 40."
+>}}
+
+{{< fillin
+  question="Solve: $-9v = 33$"
+  answer="-\frac{11}{3}"
+  answerDisplay="$-\tfrac{11}{3}$"
+  hint="Divide both sides by $-9$ and simplify; the solution stays a fraction."
+>}}
+
+### Solve equations using the Multiplication Property of Equality
+
+{{< fillin
+  question="Solve: $\tfrac{b}{3} = -9$"
+  answer="-27"
+  hint="Multiply both sides by $3$ to undo the division."
+>}}
+
+{{< fillin
+  question="Solve: $\tfrac{q}{-4} = -40$"
+  answer="160"
+  hint="Multiply both sides by $-4$; a negative times a negative is positive."
+>}}
+
+{{< fillin
+  question="Solve: $-y = 42$"
+  answer="-42"
+  hint="What number has $42$ as its opposite?"
+>}}
+
+{{< fillin
+  question="Solve: $-\tfrac{3}{7}b = 9$"
+  answer="-21"
+  hint="Multiply both sides by the reciprocal of $-\tfrac{3}{7}$, which is $-\tfrac{7}{3}$."
+>}}
+
+### Translate sentences to equations and solve
+
+{{< fillin
+  question="Translate and solve: $m$ divided by -7 is -8."
+  answer="56"
+  answerDisplay="$\tfrac{m}{-7} = -8$; $m = 56$"
+  hint="Divided by becomes a fraction bar, so multiply both sides by $-7$."
+>}}
+
+{{< fillin
+  question="Translate and solve: Two-fifths of $q$ is 20."
+  answer="50"
+  answerDisplay="$\tfrac{2}{5}q = 20$; $q = 50$"
+  hint="Of means multiply — write $\tfrac{2}{5}q$, then multiply both sides by $\tfrac{5}{2}$."
+>}}
+
+{{< fillin
+  question="Translate and solve: The quotient of $a$ and $\tfrac{2}{3}$ is $\tfrac{3}{4}$."
+  answer="\frac{1}{2}"
+  answerDisplay="$a / \left(\tfrac{2}{3}\right) = \tfrac{3}{4}$; $a = \tfrac{1}{2}$"
+  hint="Quotient keeps the order of the phrase, so multiply both sides by $\tfrac{2}{3}$."
+>}}
+
+{{< fillin
+  question="Translate and solve: The difference of $y$ and one-third is $-\tfrac{1}{6}$."
+  answer="\frac{1}{6}"
+  answerDisplay="$y - \tfrac{1}{3} = -\tfrac{1}{6}$; $y = \tfrac{1}{6}$"
+  hint="Difference keeps the order given, so add $\tfrac{1}{3}$ to both sides using the LCD 6."
+>}}
+
 ## Key terms
 
 **solution of an equation** — a value that, substituted for the
@@ -312,4 +459,4 @@ of Equality** — for any numbers $a$, $b$, $c$: if $a=b$, then $ac=bc$.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 4.7: Solve Equations with Fractions](https://openstax.org/books/prealgebra-2e/pages/4-7-solve-equations-with-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: presented the two-column worked examples as prose walkthroughs with typeset math; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 4.7: Solve Equations with Fractions](https://openstax.org/books/prealgebra-2e/pages/4-7-solve-equations-with-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: presented the two-column worked examples as prose walkthroughs with typeset math; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, expanding each multipart item into one exercise per part and restating the yes/no solution checks as multiple-choice questions.</small>

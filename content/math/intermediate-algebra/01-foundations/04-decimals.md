@@ -10,11 +10,15 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** round decimals; add and
-  subtract decimals; multiply and divide decimals; convert decimals, fractions,
-  and percents; simplify expressions with square roots; identify integers,
-  rational numbers, irrational numbers, and real numbers; and locate fractions
-  and decimals on the number line.
+**By the end of this section, you will be able to:**
+
+- Round decimals
+- Add and subtract decimals
+- Multiply and divide decimals
+- Convert decimals, fractions, and percents
+- Simplify expressions with square roots
+- Identify integers, rational numbers, irrational numbers, and real numbers
+- Locate fractions and decimals on the number line
 {{< /callout >}}
 
 ## Round decimals
@@ -167,7 +171,7 @@ The signs are different, so the product will be negative. Write in vertical
 format, lining up the numbers on the right, and multiply as if they were whole
 numbers:
 
-$$\begin{array}{r} 4.075 \\ \times\ \ 3.9 \\ \hline 36675 \\ 12225\phantom{0} \\ \hline 158925 \end{array}$$
+$$\begin{array}{r} 4.075 \\ \times\ \ 3.9 \\ \hline 36{,}675 \\ 12{,}225\phantom{0} \\ \hline 158{,}925 \end{array}$$
 
 Add the number of decimal places in the factors. The factor $4.075$ has $3$
 decimal places and the factor $3.9$ has $1$ decimal place, so the product has
@@ -213,7 +217,7 @@ $5.63(10) = 56.3$.
 right: $5.63(100) = 563$.
 
 (c) There are $3$ zeros in $1000$, so move the decimal point $3$ places to the
-right. A zero must be added to the end: $5.63(1000) = 5630$.
+right. A zero must be added to the end: $5.63(1000) = 5{,}630$.
 
 {{< fillin
   question="Multiply $2.58$ by $10$."
@@ -324,6 +328,7 @@ So, $-\tfrac{5}{8} = -0.625$.
 {{< fillin
   question="Write $0.234$ as a fraction. Enter the simplified fraction."
   answer="\frac{117}{500}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\frac{117}{500}$"
   hint="The final digit is in the thousandths place, so the denominator is $1000$; then divide out the common factor of $2$."
 >}}
@@ -331,12 +336,14 @@ So, $-\tfrac{5}{8} = -0.625$.
 {{< fillin
   question="Write $-\tfrac{7}{8}$ as a decimal."
   answer="-0.875"
+  answerForm="decimal"
   hint="Divide $7$ by $8$, then attach the negative sign."
 >}}
 
 {{< fillin
   question="Write $0.024$ as a fraction. Enter the simplified fraction."
   answer="\frac{3}{125}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\frac{3}{125}$"
   hint="The final digit is in the thousandths place, so start with $\frac{24}{1000}$ and divide out the common factor of $8$."
 >}}
@@ -383,18 +390,21 @@ $$0.51 = 51\% \qquad 1.25 = 125\% \qquad 0.093 = 9.3\%$$
 {{< fillin
   question="Convert the percent $9\%$ to a decimal."
   answer="0.09"
+  answerForm="decimal"
   hint="Remove the percent sign and move the decimal point two places to the left."
 >}}
 
 {{< fillin
   question="Convert the percent $87\%$ to a decimal."
   answer="0.87"
+  answerForm="decimal"
   hint="Remove the percent sign and move the decimal point two places to the left."
 >}}
 
 {{< fillin
   question="Convert the percent $3.9\%$ to a decimal."
   answer="0.039"
+  answerForm="decimal"
   hint="Remove the percent sign and move the decimal point two places to the left, adding a placeholder zero."
 >}}
 
@@ -808,6 +818,7 @@ $-0.80$, closer to $-0.70$.
 {{< fillin
   question="A point is plotted at the decimal that is equivalent to $\frac{6}{10}$ on a number line divided into tenths between $0$ and $1$. What decimal is it?"
   answer="0.6"
+  answerForm="decimal"
   hint="Divide the interval from $0$ to $1$ into ten equal parts; $\frac{6}{10}$ is the sixth mark."
 >}}
 

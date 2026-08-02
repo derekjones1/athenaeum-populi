@@ -9,9 +9,11 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** factor perfect square
-  trinomials, factor differences of squares, and factor sums and differences
-  of cubes.
+**By the end of this section, you will be able to:**
+
+- Factor perfect square trinomials
+- Factor differences of squares
+- Factor sums and differences of cubes
 {{< /callout >}}
 
 We have seen that some binomials and trinomials result from special

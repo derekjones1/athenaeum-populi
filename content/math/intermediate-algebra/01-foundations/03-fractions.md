@@ -11,10 +11,13 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** simplify fractions,
-  multiply and divide fractions, add and subtract fractions, use the order of
-  operations to simplify fractions, and evaluate variable expressions with
-  fractions.
+**By the end of this section, you will be able to:**
+
+- Simplify fractions
+- Multiply and divide fractions
+- Add and subtract fractions
+- Use the order of operations to simplify fractions
+- Evaluate variable expressions with fractions
 {{< /callout >}}
 
 ## Simplify fractions
@@ -90,6 +93,7 @@ $$
 {{< fillin
   question="Simplify: $-\tfrac{69}{120}$."
   answer="-\frac{23}{40}"
+  answerForm="lowest-terms"
   answerDisplay="$-\tfrac{23}{40}$"
   hint="Factor $69 = 3 \cdot 23$ and $120 = 2^3 \cdot 3 \cdot 5$, then divide out the common factor of $3$."
 >}}
@@ -97,6 +101,7 @@ $$
 {{< fillin
   question="Simplify: $-\tfrac{120}{192}$."
   answer="-\frac{5}{8}"
+  answerForm="lowest-terms"
   answerDisplay="$-\tfrac{5}{8}$"
   hint="The greatest common factor of $120$ and $192$ is $24$."
 >}}

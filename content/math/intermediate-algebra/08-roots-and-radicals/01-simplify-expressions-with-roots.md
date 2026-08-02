@@ -8,7 +8,11 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-**By the end of this section, you will be able to:** simplify expressions with roots, estimate and approximate roots, simplify variable expressions with roots.
+**By the end of this section, you will be able to:**
+
+- Simplify expressions with roots
+- Estimate and approximate roots
+- Simplify variable expressions with roots
 {{< /callout >}}
 
 ## Simplify Expressions with Roots

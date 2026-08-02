@@ -9,9 +9,10 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve equations
-  using the Division and Multiplication Properties of Equality, and solve
-  equations that need to be simplified.
+**By the end of this section, you will be able to:**
+
+- Solve equations using the Division and Multiplication Properties of Equality
+- Solve equations that need to be simplified
 {{< /callout >}}
 
 ## Solve equations using the Division and Multiplication Properties of Equality
@@ -227,6 +228,85 @@ The solution checks.
   hint="Distribute the $-6$, simplify the left side, then divide both sides by $-6$."
 >}}
 
+## Practice
+
+### Solve equations using the Division and Multiplication Properties of Equality
+
+{{< fillin
+  question="Solve: $7p = 63$."
+  answer="9"
+  hint="The variable is multiplied by $7$, so divide both sides by $7$ to undo the multiplication."
+>}}
+
+{{< fillin
+  question="Solve: $-9x = -27$."
+  answer="3"
+  hint="Divide both sides by $-9$; a negative divided by a negative is positive."
+>}}
+
+{{< fillin
+  question="Solve: $0.75a = 11.25$."
+  answer="15"
+  hint="Divide both sides by the coefficient $0.75$."
+>}}
+
+{{< fillin
+  question="Solve: $\tfrac{c}{-3} = -12$."
+  answer="36"
+  hint="Here $c$ is divided by $-3$, so multiply both sides by $-3$ to isolate $c$."
+>}}
+
+{{< fillin
+  question="Solve: $\tfrac{3}{5}r = 15$."
+  answer="25"
+  hint="Multiply both sides by $\tfrac{5}{3}$, the reciprocal of $\tfrac{3}{5}$."
+>}}
+
+{{< fillin
+  question="Solve: $24 = -\tfrac{3}{4}x$."
+  answer="-32"
+  hint="Multiply both sides by $-\tfrac{4}{3}$, the reciprocal of $-\tfrac{3}{4}$. The variable staying on the right is fine."
+>}}
+
+{{< fillin
+  question="The drill team used $14$ yards of fabric to make flags for one-third of the members. Find how much fabric $f$ they would need to make flags for the whole team, in yards, by solving the equation $\tfrac{1}{3}f = 14$."
+  answer="42"
+  answerDisplay="42 yards"
+  hint="Multiply both sides by $3$, the reciprocal of $\tfrac{1}{3}$."
+>}}
+
+### Solve equations that need to be simplified
+
+{{< fillin
+  question="Solve: $6y - 3y + 12y = -43 + 28$."
+  answer="-1"
+  hint="Combine like terms on each side first, then divide both sides by the resulting coefficient."
+>}}
+
+{{< fillin
+  question="Solve: $-5m + 7m - 8m = -6 + 36$."
+  answer="-5"
+  hint="Combining the three $m$ terms gives a negative coefficient; divide both sides by it."
+>}}
+
+{{< fillin
+  question="Solve: $-18 - 7 = 5t - 9t - 6t$."
+  answer="\frac{5}{2}"
+  hint="Simplify both sides to get $-25 = -10t$, then divide both sides by $-10$ and reduce the fraction."
+>}}
+
+{{< fillin
+  question="Solve: $\tfrac{5}{12}q + \tfrac{1}{2}q = 25 - 3$."
+  answer="24"
+  hint="Rewrite $\tfrac{1}{2}$ as $\tfrac{6}{12}$ so the like terms add, then multiply both sides by the reciprocal of the coefficient."
+>}}
+
+{{< fillin
+  question="Solve: $0.05p - 0.01p = 2 + 0.24$."
+  answer="56"
+  hint="Subtract the decimal coefficients on the left, then divide both sides by $0.04$."
+>}}
+
 ## Key terms
 
 **Division Property of Equality** — for all real numbers $a$, $b$, $c$,
@@ -236,4 +316,4 @@ and $c$, if $a = b$, then $ac = bc$.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 8.2: Solve Equations Using the Division and Multiplication Properties of Equality](https://openstax.org/books/prealgebra-2e/pages/8-2-solve-equations-using-the-division-and-multiplication-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Links to Literacy and media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 8.2: Solve Equations Using the Division and Multiplication Properties of Equality](https://openstax.org/books/prealgebra-2e/pages/8-2-solve-equations-using-the-division-and-multiplication-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, Links to Literacy and media links, and Writing Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, drawing one item from Everyday Math.</small>

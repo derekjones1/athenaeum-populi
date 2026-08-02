@@ -9,9 +9,11 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use place value with
-  whole numbers, identify multiples and apply divisibility tests, and find
-  prime factorizations and least common multiples.
+**By the end of this section, you will be able to:**
+
+- Use place value with whole numbers
+- Identify multiples and apply divisibility tests
+- Find prime factorizations and least common multiples
 {{< /callout >}}
 
 ## Use place value with whole numbers
@@ -439,6 +441,7 @@ If we first factored $48$ in a different way — for example, as $6 \cdot
 {{< fillin
   question="Find the prime factorization of 80 using the factor tree method. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
   answer="2^4 \cdot 5"
+  answerForm="prime-product"
   answerDisplay="$2^4 \cdot 5$"
   hint="Start with a factor pair like $8$ and $10$, then keep factoring any composite branch until every branch ends in a prime."
 >}}
@@ -446,6 +449,7 @@ If we first factored $48$ in a different way — for example, as $6 \cdot
 {{< fillin
   question="Find the prime factorization of 60 using the factor tree method. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
   answer="2^2 \cdot 3 \cdot 5"
+  answerForm="prime-product"
   answerDisplay="$2^2 \cdot 3 \cdot 5$"
   hint="Try the factor pair $6$ and $10$, then keep factoring any composite branch until every branch ends in a prime."
 >}}
@@ -488,6 +492,7 @@ $$252 = 2 \cdot 2 \cdot 3 \cdot 3 \cdot 7$$
 {{< fillin
   question="Find the prime factorization of 126. Enter the answer in exponential form, e.g. $2^2 \cdot 3$."
   answer="2 \cdot 3^2 \cdot 7"
+  answerForm="prime-product"
   answerDisplay="$2 \cdot 3^2 \cdot 7$"
   hint="Try the factor pair $2$ and $63$, then keep factoring the composite branch ($63 = 9 \times 7$) until every branch ends in a prime."
 >}}
@@ -495,6 +500,7 @@ $$252 = 2 \cdot 2 \cdot 3 \cdot 3 \cdot 7$$
 {{< fillin
   question="Find the prime factorization of 294. Enter the answer in exponential form, e.g. $2 \cdot 3^2$."
   answer="2 \cdot 3 \cdot 7^2"
+  answerForm="prime-product"
   answerDisplay="$2 \cdot 3 \cdot 7^2$"
   hint="294 is even, so start by dividing off a factor of $2$. The remaining factor is $147 = 3 \times 49$."
 >}}
@@ -616,6 +622,74 @@ Multiplying the factors: $\text{LCM}(24, 36) = 2 \cdot 2 \cdot 2 \cdot 3
   hint="$24 = 2 \cdot 2 \cdot 2 \cdot 3$ and $32 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$. Match as many common factors of $2$ as both numbers share, then bring down every column."
 >}}
 
+## Practice
+
+### Use place value with whole numbers
+
+{{< multiplechoice
+  question="Name the number $1{,}078$ using words."
+  answer="one thousand, seventy-eight"
+  hint="Split the number into its periods — thousands, then ones — and name each period before combining them."
+>}}
+one thousand, seventy-eight
+one thousand, eighty-seven
+ten thousand, seventy-eight
+one hundred seventy-eight
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Write the number eleven million, forty-four thousand, one hundred sixty-seven as a whole number using digits."
+  answer="11044167"
+  answerDisplay="11,044,167"
+  hint="Draw a blank for each period — millions, thousands, ones — and fill each one from the words, keeping every period except the first at three digits."
+>}}
+
+### Identify multiples and apply divisibility tests
+
+{{< multiplechoice
+  question="Apply the divisibility tests to $84$. Which of these is $84$ divisible by?"
+  answer="divisible by 2, 3, and 6"
+  hint="Check the last digit for the test for $2$, add the digits for the test for $3$, and remember that passing both means it also passes the test for $6$."
+>}}
+divisible by 2, 3, and 6
+divisible by 2 and 3
+divisible by 3 and 6
+divisible by 2, 3, 5, and 6
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Apply the divisibility tests to $22{,}335$. Which of these is $22{,}335$ divisible by?"
+  answer="divisible by 3 and 5"
+  hint="The last digit settles the tests for $2$, $5$, and $10$ right away; add the digits separately to check the test for $3$."
+>}}
+divisible by 3 and 5
+divisible by 2, 3, and 5
+divisible by 5 only
+divisible by 3, 5, and 6
+{{< /multiplechoice >}}
+
+### Find prime factorizations and least common multiples
+
+{{< fillin
+  question="Find the prime factorization of $86$. Enter it as a product of primes, e.g. $2 \cdot 3 \cdot 7$."
+  answer="2 \cdot 43"
+  answerForm="prime-product"
+  answerDisplay="$2 \cdot 43$"
+  hint="$86$ is even, so divide out the smallest prime first, then check whether the remaining factor is prime."
+>}}
+
+{{< fillin
+  question="Find the LCM of $12$ and $16$ by listing multiples."
+  answer="48"
+  hint="List multiples of $12$ and of $16$ until the smallest common one appears."
+>}}
+
+{{< fillin
+  question="Find the LCM of $55$ and $88$ using the prime factors method."
+  answer="440"
+  hint="$55 = 5 \cdot 11$ and $88 = 2 \cdot 2 \cdot 2 \cdot 11$. Match the common $11$ in one column, then bring down every column."
+>}}
+
 ## Key terms
 
 **counting numbers** — the numbers $1, 2, 3, \dots$, also called natural
@@ -632,4 +706,4 @@ is a multiple of two given numbers.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.1: Introduction to Whole Numbers](https://openstax.org/books/elementary-algebra-2e/pages/1-1-introduction-to-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the place-value chart, factor-tree diagrams, and prime-factor column alignments as tables and accessible inline graphics; omitted the Be Prepared quiz, Manipulative Mathematics callouts, media links, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.1: Introduction to Whole Numbers](https://openstax.org/books/elementary-algebra-2e/pages/1-1-introduction-to-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the place-value chart, factor-tree diagrams, and prime-factor column alignments as tables and accessible inline graphics; omitted the Be Prepared quiz, Manipulative Mathematics callouts, media links, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

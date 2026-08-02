@@ -9,9 +9,12 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use variables and
-  algebraic symbols, identify expressions and equations, simplify expressions
-  with exponents, and simplify expressions using the order of operations.
+**By the end of this section, you will be able to:**
+
+- Use variables and algebraic symbols
+- Identify expressions and equations
+- Simplify expressions with exponents
+- Simplify expressions using the order of operations
 {{< /callout >}}
 
 ## Use variables and algebraic symbols
@@ -282,6 +285,178 @@ right: $35 - 25 = 10$.
   hint="Simplify the exponents first, then divide, then add and subtract from left to right."
 >}}
 
+## Practice
+
+### Use variables and algebraic symbols
+
+{{< multiplechoice
+  question="Translate $16 - 9$ from algebraic notation to words."
+  answer="16 minus 9, the difference of sixteen and nine"
+  hint="Read the left number first. The result of a subtraction is called the difference, not the sum."
+>}}
+16 minus 9, the difference of sixteen and nine
+16 plus 9, the sum of sixteen and nine
+9 minus 16, the difference of nine and sixteen
+16 minus 9, the sum of sixteen and nine
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Translate $28 \div 4$ from algebraic notation to words."
+  answer="28 divided by 4, the quotient of twenty-eight and four"
+  hint="The number under the division is read second, and the result of a division is called the quotient."
+>}}
+28 divided by 4, the quotient of twenty-eight and four
+4 divided by 28, the quotient of four and twenty-eight
+28 times 4, the product of twenty-eight and four
+28 divided by 4, the product of twenty-eight and four
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Translate $14 < 21$ from algebraic notation to words."
+  answer="fourteen is less than twenty-one"
+  hint="The smaller side of the symbol faces the smaller number. There is no line under this symbol."
+>}}
+fourteen is less than twenty-one
+fourteen is greater than twenty-one
+fourteen is less than or equal to twenty-one
+twenty-one is less than fourteen
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Translate $36 \ge 19$ from algebraic notation to words."
+  answer="thirty-six is greater than or equal to nineteen"
+  hint="Read left to right, and let the line under the symbol add the words *or equal to*."
+>}}
+thirty-six is greater than or equal to nineteen
+thirty-six is greater than nineteen
+thirty-six is less than or equal to nineteen
+nineteen is greater than or equal to thirty-six
+{{< /multiplechoice >}}
+
+### Identify expressions and equations
+
+{{< multiplechoice
+  question="Determine whether $9 \cdot 6 = 54$ is an expression or an equation."
+  answer="equation"
+  hint="Look for an equal sign — it is the verb that makes a complete sentence."
+>}}
+expression
+equation
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether $5 \cdot 4 + 3$ is an expression or an equation."
+  answer="expression"
+  hint="Operation symbols alone do not make a sentence. Is there an equal sign?"
+>}}
+expression
+equation
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether $x + 7$ is an expression or an equation."
+  answer="expression"
+  hint="A variable does not change the test — check whether two expressions are joined by an equal sign."
+>}}
+expression
+equation
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether $y - 5 = 25$ is an expression or an equation."
+  answer="equation"
+  hint="Two expressions connected by an equal sign form a complete algebraic sentence."
+>}}
+expression
+equation
+{{< /multiplechoice >}}
+
+### Simplify expressions with exponents
+
+{{< multiplechoice
+  question="Write $3 \cdot 3 \cdot 3 \cdot 3 \cdot 3 \cdot 3 \cdot 3$ in exponential form."
+  answer="$3^7$"
+  hint="The repeated factor is the base; count how many times it appears to get the exponent."
+>}}
+$3^7$
+$7^3$
+$3^6$
+$3 \cdot 7$
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Write $x \cdot x \cdot x \cdot x \cdot x$ in exponential form."
+  answer="x^5"
+  answerDisplay="$x^5$"
+  hint="The base is $x$. Count the factors of $x$ to find the exponent."
+>}}
+
+{{< multiplechoice
+  question="Write $5^3$ in expanded form."
+  answer="$5 \cdot 5 \cdot 5$"
+  hint="The base is the factor that repeats, and the exponent counts how many times it is written."
+>}}
+$5 \cdot 5 \cdot 5$
+$3 \cdot 3 \cdot 3 \cdot 3 \cdot 3$
+$5 \cdot 3$
+$5 + 5 + 5$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Write $2^8$ in expanded form."
+  answer="$2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$"
+  hint="An exponent tells how many factors of the base to multiply — not what to multiply the base by. Count the factors carefully."
+>}}
+$2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$
+$2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$
+$8 \cdot 8$
+$2 \cdot 8$
+{{< /multiplechoice >}}
+
+### Simplify expressions using the order of operations
+
+{{< fillin
+  question="Simplify: $3 + 8 \cdot 5$"
+  answer="43"
+  hint="There are no grouping symbols and no exponents, so multiply before you add."
+>}}
+
+{{< fillin
+  question="Simplify: $(3 + 8) \cdot 5$"
+  answer="55"
+  hint="Compare this with the previous problem: the parentheses come first, so add before you multiply."
+>}}
+
+{{< fillin
+  question="Simplify: $2^3 - 12 \div (9 - 5)$"
+  answer="5"
+  hint="Parentheses first, then the exponent, then the division, and subtract last."
+>}}
+
+{{< fillin
+  question="Simplify: $4 \cdot 12 / 8$"
+  answer="6"
+  hint="Multiplication and division have equal priority, so work strictly from left to right."
+>}}
+
+{{< fillin
+  question="Simplify: $4^2 + 5^2$"
+  answer="41"
+  hint="Simplify each exponent before adding. Note that this is not the same as $(4 + 5)^2$."
+>}}
+
+{{< fillin
+  question="Simplify: $3(1 + 9 \cdot 6) - 4^2$"
+  answer="149"
+  hint="Work inside the parentheses first, multiplying before adding there. Then simplify the exponent, multiply, and subtract last."
+>}}
+
+{{< fillin
+  question="Simplify: $2[1 + 3(10 - 2)]$"
+  answer="50"
+  hint="Start with the innermost grouping symbol and move outward, doing multiplication before addition inside the brackets."
+>}}
+
 ## Key terms
 
 **variable** — a letter that represents a number whose value may change.
@@ -295,4 +470,4 @@ addition and subtraction (left to right).
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 2.1: Use the Language of Algebra](https://openstax.org/books/prealgebra-2e/pages/2-1-use-the-language-of-algebra) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, recreated tables in accessible Markdown, and converted practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 2.1: Use the Language of Algebra](https://openstax.org/books/prealgebra-2e/pages/2-1-use-the-language-of-algebra) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, recreated tables in accessible Markdown, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

@@ -11,9 +11,11 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve mixture
-  applications, solve interest applications, and solve applications of cost
-  and revenue functions.
+**By the end of this section, you will be able to:**
+
+- Solve mixture applications
+- Solve interest applications
+- Solve applications of cost and revenue functions
 {{< /callout >}}
 
 ## Solve mixture applications

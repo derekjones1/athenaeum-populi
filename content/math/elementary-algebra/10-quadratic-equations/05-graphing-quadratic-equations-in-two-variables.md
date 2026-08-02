@@ -8,10 +8,13 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** recognize the graph of
-  a quadratic equation in two variables, find the axis of symmetry and
-  vertex of a parabola, find the intercepts of a parabola, graph quadratic
-  equations in two variables, and solve maximum and minimum applications.
+**By the end of this section, you will be able to:**
+
+- Recognize the graph of a quadratic equation in two variables
+- Find the axis of symmetry and vertex of a parabola
+- Find the intercepts of a parabola
+- Graph quadratic equations in two variables
+- Solve maximum and minimum applications
 {{< /callout >}}
 
 ## Recognize the graph of a quadratic equation in two variables

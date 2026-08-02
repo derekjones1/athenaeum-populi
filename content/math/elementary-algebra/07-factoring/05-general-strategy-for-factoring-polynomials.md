@@ -10,8 +10,9 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** recognize and use the
-  appropriate method to factor a polynomial completely.
+**By the end of this section, you will be able to:**
+
+- Recognize and use the appropriate method to factor a polynomial completely
 {{< /callout >}}
 
 ## Recognize and use the appropriate method to factor a polynomial completely

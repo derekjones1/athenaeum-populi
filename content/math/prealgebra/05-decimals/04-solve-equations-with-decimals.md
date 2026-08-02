@@ -10,9 +10,11 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** determine whether a
-  decimal is a solution of an equation, solve equations with decimals, and
-  translate to an equation and solve.
+**By the end of this section, you will be able to:**
+
+- Determine whether a decimal is a solution of an equation
+- Solve equations with decimals
+- Translate to an equation and solve
 {{< /callout >}}
 
 ## Determine whether a decimal is a solution of an equation
@@ -263,6 +265,139 @@ Simplify: $1.7 = 1.7\ \checkmark$.
   hint="Translate to $k + 4.7 = 0.3$, then subtract $4.7$ from each side."
 >}}
 
+## Practice
+
+### Determine whether a decimal is a solution of an equation
+
+{{< multiplechoice
+  question="Is $x = 2$ a solution of $x - 0.8 = 2.3$?"
+  answer="no"
+  hint="Substitute $2$ for $x$, simplify the left side, and see whether the result really is $2.3$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $x = -1.5$ a solution of $x - 0.8 = 2.3$?"
+  answer="no"
+  hint="Substituting a negative number leaves a negative left side, so compare its sign with $2.3$ before you even finish subtracting."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $x = 3.1$ a solution of $x - 0.8 = 2.3$?"
+  answer="yes"
+  hint="Substitute $3.1$ for $x$ and subtract; the number is a solution only if the equation becomes a true statement."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $h = 6.45$ a solution of $\tfrac{h}{1.5} = -4.3$?"
+  answer="no"
+  hint="A positive number divided by a positive number is positive, so check the sign against $-4.3$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $h = -6.45$ a solution of $\tfrac{h}{1.5} = -4.3$?"
+  answer="yes"
+  hint="Divide $-6.45$ by $1.5$ and compare the quotient with $-4.3$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $h = -2.1$ a solution of $\tfrac{h}{1.5} = -4.3$?"
+  answer="no"
+  hint="Dividing by $1.5$ makes a number smaller in size, so $-2.1$ cannot produce a quotient as large in size as $-4.3$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Solve equations with decimals
+
+{{< fillin
+  question="Solve: $c + 1.15 = -3.5$"
+  answer="-4.65"
+  hint="Undo the addition with the Subtraction Property of Equality: subtract $1.15$ from each side."
+>}}
+
+{{< fillin
+  question="Solve: $j - 1.82 = -6.5$"
+  answer="-4.68"
+  hint="Undo the subtraction with the Addition Property of Equality: add $1.82$ to each side."
+>}}
+
+{{< fillin
+  question="Solve: $-1.7c = 8.5$"
+  answer="-5"
+  hint="The variable is multiplied by $-1.7$, so divide both sides by $-1.7$. A positive divided by a negative is negative."
+>}}
+
+{{< fillin
+  question="Solve: $0.24x = 4.8$"
+  answer="20"
+  hint="Divide both sides by $0.24$. Moving the decimal point two places in both numbers turns it into $480 \div 24$."
+>}}
+
+{{< fillin
+  question="Solve: $\tfrac{x}{0.7} = -0.4$"
+  answer="-0.28"
+  hint="The variable is divided by $0.7$, so multiply both sides by $0.7$."
+>}}
+
+{{< fillin
+  question="Solve: $\tfrac{p}{-5} = -1.65$"
+  answer="8.25"
+  hint="Multiply both sides by $-5$; a negative times a negative is positive."
+>}}
+
+{{< fillin
+  question="Shawn bought a pair of shoes on sale for \$78. Solve the equation $0.75p = 78$ to find the original price of the shoes, $p$. Give the price in dollars."
+  answer="104"
+  answerDisplay="\$104"
+  hint="The sale price is $0.75$ times the original price, so divide both sides by $0.75$."
+>}}
+
+### Translate to an equation and solve
+
+{{< fillin
+  question="Translate and solve: The difference of $n$ and $1.9$ is $3.4$."
+  answer="5.3"
+  answerDisplay="$n - 1.9 = 3.4$, so $n = 5.3$"
+  hint="*Difference* means subtract, and the first number named is written first; then add $1.9$ to both sides."
+>}}
+
+{{< fillin
+  question="Translate and solve: The product of $-6.2$ and $x$ is $-4.96$."
+  answer="0.8"
+  answerDisplay="$-6.2x = -4.96$, so $x = 0.8$"
+  hint="*Product* means multiply, so the equation is $-6.2x = -4.96$; divide both sides by $-6.2$."
+>}}
+
+{{< fillin
+  question="Translate and solve: The quotient of $y$ and $-1.7$ is $-5$."
+  answer="8.5"
+  answerDisplay="$\tfrac{y}{-1.7} = -5$, so $y = 8.5$"
+  hint="*Quotient* means divide, and the first number named is the dividend; then multiply both sides by $-1.7$."
+>}}
+
+{{< fillin
+  question="Translate and solve: The sum of $n$ and $-7.3$ is $2.4$."
+  answer="9.7"
+  answerDisplay="$n + (-7.3) = 2.4$, so $n = 9.7$"
+  hint="*Sum* means add, so the equation is $n + (-7.3) = 2.4$; adding $-7.3$ is the same as subtracting $7.3$, so undo it by adding $7.3$ to both sides."
+>}}
+
 ## Key terms
 
 **solution of an equation** — a value that, when substituted for the
@@ -273,4 +408,4 @@ lets us isolate a variable and solve for it.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 5.4: Solve Equations with Decimals](https://openstax.org/books/prealgebra-2e/pages/5-4-solve-equations-with-decimals) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the Properties of Equality table as a callout and the step-by-step solution/check layouts as prose with typeset math; omitted the Be Prepared quiz, Media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 5.4: Solve Equations with Decimals](https://openstax.org/books/prealgebra-2e/pages/5-4-solve-equations-with-decimals) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the Properties of Equality table as a callout and the step-by-step solution/check layouts as prose with typeset math; omitted the Be Prepared quiz and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, expanding multipart items into one exercise per part.</small>

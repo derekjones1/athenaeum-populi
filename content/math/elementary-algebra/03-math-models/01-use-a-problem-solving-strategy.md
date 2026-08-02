@@ -10,9 +10,11 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** approach word
-  problems with a positive attitude, use a problem-solving strategy for word
-  problems, and solve number problems.
+**By the end of this section, you will be able to:**
+
+- Approach word problems with a positive attitude
+- Use a problem-solving strategy for word problems
+- Solve number problems
 {{< /callout >}}
 
 ## Approach Word Problems with a Positive Attitude

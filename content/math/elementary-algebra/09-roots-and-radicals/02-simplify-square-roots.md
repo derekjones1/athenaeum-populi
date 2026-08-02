@@ -9,9 +9,10 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use the Product Property
-  to simplify square roots, and use the Quotient Property to simplify square
-  roots.
+**By the end of this section, you will be able to:**
+
+- Use the Product Property to simplify square roots
+- Use the Quotient Property to simplify square roots
 {{< /callout >}}
 
 In the last section we estimated the square root of a number between two

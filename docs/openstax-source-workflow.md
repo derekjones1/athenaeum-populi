@@ -223,7 +223,18 @@ Upstream defects worth reporting to OpenStax are collected in
 `docs/openstax-errata.md` — a gitignored local file holding
 submission-ready write-ups (module id, element id, current text, why it is
 wrong, suggested correction) plus the cases already reviewed and dismissed.
-Add new source defects there; it does not replace recording the *local*
+
+**Logging a confirmed defect there is automatic and requires no approval.**
+Whenever an authoring pass confirms a source defect against the raw CNXML plus
+one independent check, write it up in `docs/openstax-errata.md` before handing
+the work back — do not ask whether to log it, and do not report it only in
+prose. A dismissed suspicion goes in the file's "Reviewed and *not* errata"
+list with its reason, so it is not re-investigated later. Because the file is
+gitignored, this never touches the published site or a commit.
+
+When section work is split across subagents, each worker is scoped to its own
+content file and cannot write here; the parent collects the defects from every
+worker's report and logs them. This does not replace recording the *local*
 handling here or in `data/openstax/math-reconciliation-decisions.json`.
 
 ## Reading the pinned sources

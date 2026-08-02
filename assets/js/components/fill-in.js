@@ -29,6 +29,8 @@ const MESSAGES = {
   idle: '',
   empty: 'Type an answer first.',
   invalid: 'Couldn’t read that as math — fill in any empty boxes.',
+  // The requireExpanded default. An exercise with an `answerForm` overrides it
+  // with a message naming the shape that form asks for.
   form: 'Expand your answer fully — no parentheses.',
   incorrect: 'Not quite — try again.',
   // `correct` is built per-instance (may include the answerDisplay).
@@ -49,6 +51,7 @@ class FillInElement extends HTMLElement {
 
     this.answer = this.dataset.answer || '';
     this.answerMode = this.dataset.answerMode || 'expression';
+    this.answerForm = this.dataset.answerForm || '';
     this.requireExpanded = this.dataset.requireExpanded === 'true';
     this.placeholder = this.dataset.placeholder || 'Your answer';
     this.status = 'idle';
@@ -138,7 +141,10 @@ class FillInElement extends HTMLElement {
     // URL is a build-time constant, so esbuild leaves this as a real import().
     try {
       const engine = await import(engineUrl);
-      const { mathlive, checkAnswer, ce } = engine;
+      const { mathlive, checkAnswer, ce, describeAnswerForm } = engine;
+      // The form requirement is phrased next to the predicates that enforce
+      // it, so the feedback and the rule can never drift apart.
+      if (this.answerForm) this._formMessage = describeAnswerForm(this.answerForm);
       // No sound assets are shipped — silence the virtual keyboard.
       mathlive.MathfieldElement.soundsDirectory = null;
       // Field and grader share ONE Compute Engine so they can never disagree
@@ -169,13 +175,16 @@ class FillInElement extends HTMLElement {
     if (this.done || !this._check) return;
     const latex = this.field.value ?? '';
     if (this.requireExpanded && latex.includes('(')) {
-      this._setStatus('form');
+      this._setStatus('form', MESSAGES.form);
       return;
     }
-    this._setStatus(this._check(latex, this.answer, { mode: this.answerMode }));
+    this._setStatus(
+      this._check(latex, this.answer, { mode: this.answerMode, form: this.answerForm }),
+      this._formMessage,
+    );
   }
 
-  _setStatus(status) {
+  _setStatus(status, formMessage) {
     this.status = status;
     if (status === 'correct') {
       this.done = true;
@@ -185,7 +194,7 @@ class FillInElement extends HTMLElement {
         ? `Correct — ${this.answerDisplayHTML}.`
         : 'Correct!';
     } else {
-      this.feedback.textContent = MESSAGES[status] || '';
+      this.feedback.textContent = (status === 'form' && formMessage) || MESSAGES[status] || '';
     }
     this.feedback.style.color = COLOR[status] || 'inherit';
   }

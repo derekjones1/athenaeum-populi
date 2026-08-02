@@ -10,11 +10,14 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** simplify expressions
-  with exponents; simplify expressions using the Product Property for
-  Exponents; simplify expressions using the Power Property for Exponents;
-  simplify expressions using the Product to a Power Property; simplify
-  expressions by applying several properties; and multiply monomials.
+**By the end of this section, you will be able to:**
+
+- Simplify expressions with exponents
+- Simplify expressions using the Product Property for Exponents
+- Simplify expressions using the Power Property for Exponents
+- Simplify expressions using the Product to a Power Property
+- Simplify expressions by applying several properties
+- Multiply monomials
 {{< /callout >}}
 
 ## Simplify Expressions with Exponents

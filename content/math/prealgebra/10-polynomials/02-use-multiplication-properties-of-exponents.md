@@ -9,11 +9,14 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** simplify expressions
-  with exponents, simplify expressions using the Product Property of
-  Exponents, simplify expressions using the Power Property of Exponents,
-  simplify expressions using the Product to a Power Property, simplify
-  expressions by applying several properties, and multiply monomials.
+**By the end of this section, you will be able to:**
+
+- Simplify expressions with exponents
+- Simplify expressions using the Product Property of Exponents
+- Simplify expressions using the Power Property of Exponents
+- Simplify expressions using the Product to a Power Property
+- Simplify expressions by applying several properties
+- Multiply monomials
 {{< /callout >}}
 
 ## Simplify expressions with exponents
@@ -113,8 +116,8 @@ then find the opposite.
 
 You have seen that when you combine like terms by adding and subtracting,
 you need to have the same base with the same exponent. But when you
-multiply and divide, the bases may be different, and sometimes the bases
-may be different, too. We'll derive the properties of exponents by looking
+multiply and divide, the exponents may be different, and sometimes the
+bases may be different, too. We'll derive the properties of exponents by looking
 for patterns in several examples. All the exponent properties hold true for
 any real numbers, but right now we will only use whole number exponents.
 
@@ -497,6 +500,144 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
   hint="Multiply the fraction by the whole-number coefficient first, then add exponents on each matching base."
 >}}
 
+## Practice
+
+### Simplify expressions with exponents
+
+{{< fillin
+  question="Simplify: $4^5$."
+  answer="1024"
+  answerDisplay="$1{,}024$"
+  hint="Multiply five factors of $4$, one factor at a time."
+>}}
+
+{{< fillin
+  question="Simplify: $(-5)^4$."
+  answer="625"
+  hint="The parentheses put the negative sign inside the base, so all four factors are $-5$. An even number of negative factors gives a positive product."
+>}}
+
+{{< fillin
+  question="Simplify: $-5^4$."
+  answer="-625"
+  hint="Here the exponent applies only to $5$. Raise $5$ to the fourth power first, then take the opposite."
+>}}
+
+{{< fillin
+  question="Simplify: $(-\tfrac{2}{3})^3$."
+  answer="-\frac{8}{27}"
+  answerDisplay="$-\tfrac{8}{27}$"
+  hint="Cube the numerator and the denominator separately. Three negative factors give a negative product."
+>}}
+
+### Simplify expressions using the Product Property of Exponents
+
+{{< fillin
+  question="Simplify: $x^3 \cdot x^6$."
+  answer="x^9"
+  hint="The bases match, so add the exponents."
+>}}
+
+{{< fillin
+  question="Simplify: $a \cdot a^4$."
+  answer="a^5"
+  hint="A base written without an exponent has an understood exponent of $1$."
+>}}
+
+{{< fillin
+  question="Simplify: $3^5 \cdot 3^9$. Leave the answer in exponential form."
+  answer="3^{14}"
+  hint="The base $3$ stays the same; add the exponents rather than multiplying the powers out."
+>}}
+
+### Simplify expressions using the Power Property of Exponents
+
+{{< fillin
+  question="Simplify: $(u^4)^2$."
+  answer="u^8"
+  hint="To raise a power to a power, multiply the exponents."
+>}}
+
+{{< fillin
+  question="Simplify: $(10^2)^6$. Leave the answer in exponential form."
+  answer="10^{12}"
+  hint="Keep the base $10$ and multiply the two exponents."
+>}}
+
+{{< fillin
+  question="Simplify: $(x^{15})^6$."
+  answer="x^{90}"
+  hint="To raise a power to a power, multiply the exponents."
+>}}
+
+### Simplify expressions using the Product to a Power Property
+
+{{< fillin
+  question="Simplify: $(5a)^2$."
+  answer="25a^2"
+  answerDisplay="$25a^2$"
+  hint="Raise each factor inside the parentheses to the second power, then simplify the number."
+>}}
+
+{{< fillin
+  question="Simplify: $(-6m)^3$."
+  answer="-216m^3"
+  answerDisplay="$-216m^3$"
+  hint="Raise $-6$ and $m$ each to the third power. An odd number of negative factors keeps the result negative."
+>}}
+
+{{< fillin
+  question="Simplify: $(4rs)^2$."
+  answer="16r^2s^2"
+  answerDisplay="$16r^2s^2$"
+  hint="The exponent applies to all three factors: $4$, $r$, and $s$."
+>}}
+
+### Simplify expressions by applying several properties
+
+{{< fillin
+  question="Simplify: $(x^2)^4 \cdot (x^3)^2$."
+  answer="x^{14}"
+  hint="Use the Power Property on each factor first, then add the resulting exponents."
+>}}
+
+{{< fillin
+  question="Simplify: $(3x)^2(5x)$."
+  answer="45x^3"
+  answerDisplay="$45x^3$"
+  hint="Raise $3x$ to the second power first, then multiply the constants and add the exponents on $x$."
+>}}
+
+{{< fillin
+  question="Simplify: $(-2a^3b^2)^4$."
+  answer="16a^{12}b^8"
+  answerDisplay="$16a^{12}b^8$"
+  hint="Raise $-2$, $a^3$, and $b^2$ each to the fourth power, then apply the Power Property to the variable factors."
+>}}
+
+### Multiply monomials
+
+{{< fillin
+  question="Multiply: $(12x^2)(-5x^4)$."
+  answer="-60x^6"
+  answerDisplay="$-60x^6$"
+  hint="Multiply the numerical coefficients, then add the exponents on $x$."
+>}}
+
+{{< fillin
+  question="Multiply: $(4a^3b)(9a^2b^6)$."
+  answer="36a^5b^7"
+  answerDisplay="$36a^5b^7$"
+  hint="Multiply the coefficients, then add the exponents on $a$ and on $b$ separately."
+>}}
+
+{{< fillin
+  question="Multiply: $(\tfrac{4}{7} xy^2)(14xy^3)$."
+  answer="8x^2y^5"
+  answerDisplay="$8x^2y^5$"
+  hint="Multiply $\tfrac{4}{7}$ by $14$ first, then add the exponents on each matching base."
+>}}
+
 ## Key terms
 
 **exponential notation** — writing $a^m$ to mean $m$ factors of $a$
@@ -511,4 +652,4 @@ variables with whole-number exponents.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 10.2: Use Multiplication Properties of Exponents](https://openstax.org/books/prealgebra-2e/pages/10-2-use-multiplication-properties-of-exponents) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, Media links, and end-of-section exercises; condensed the pattern-building tables that derive each property into short prose descriptions; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 10.2: Use Multiplication Properties of Exponents](https://openstax.org/books/prealgebra-2e/pages/10-2-use-multiplication-properties-of-exponents) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, Media links, and Writing Exercises; condensed the pattern-building tables that derive each property into short prose descriptions; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

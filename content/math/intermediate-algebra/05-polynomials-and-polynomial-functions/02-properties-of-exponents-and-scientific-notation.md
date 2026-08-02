@@ -9,9 +9,11 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** simplify expressions
-  using the properties for exponents, use the definition of a negative
-  exponent, and use scientific notation.
+**By the end of this section, you will be able to:**
+
+- Simplify expressions using the properties for exponents
+- Use the definition of a negative exponent
+- Use scientific notation
 {{< /callout >}}
 
 ## Simplify expressions using the properties for exponents

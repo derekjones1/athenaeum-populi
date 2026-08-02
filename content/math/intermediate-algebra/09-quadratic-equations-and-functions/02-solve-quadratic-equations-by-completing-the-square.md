@@ -8,10 +8,11 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** complete the square of a
-  binomial expression; solve quadratic equations of the form
-  $x^2+bx+c=0$ by completing the square; and solve quadratic equations of the
-  form $ax^2+bx+c=0$ by completing the square.
+**By the end of this section, you will be able to:**
+
+- Complete the square of a binomial expression
+- Solve quadratic equations of the form $x^2+bx+c=0$ by completing the square
+- Solve quadratic equations of the form $ax^2+bx+c=0$ by completing the square
 {{< /callout >}}
 
 So far we have solved quadratic equations by factoring and using the Square

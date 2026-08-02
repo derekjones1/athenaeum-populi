@@ -10,9 +10,12 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** understand linear,
-  square, and cubic measure, use properties of rectangles, use properties
-  of triangles, and use properties of trapezoids.
+**By the end of this section, you will be able to:**
+
+- Understand linear, square, cubic measure
+- Use properties of rectangles
+- Use properties of triangles
+- Use properties of trapezoids
 {{< /callout >}}
 
 In this section, we'll continue working with geometry applications. We
@@ -594,6 +597,151 @@ he can plant.
   hint="Substitute into $A = \tfrac{1}{2}h(b + B)$: $A = \tfrac{1}{2}(15)(14 + 18)$."
 >}}
 
+## Practice
+
+### Understand linear, square, cubic measure
+
+{{< multiplechoice
+  question="Would you measure the amount of water in a fish tank using linear, square, or cubic units?"
+  answer="cubic"
+  hint="Water fills the inside of the tank. Decide first whether you are measuring a length, a surface, or the space filled."
+>}}
+linear
+square
+cubic
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Would you measure the living area of an apartment using linear, square, or cubic units?"
+  answer="square"
+  hint="Living area is the amount of floor surface covered, and surface is measured in square units."
+>}}
+linear
+square
+cubic
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Would you measure the height of a doorway using linear, square, or cubic units?"
+  answer="linear"
+  hint="A height is a single distance you could measure with a tape measure."
+>}}
+linear
+square
+cubic
+{{< /multiplechoice >}}
+
+### Use properties of rectangles
+
+{{< fillin
+  question="The length of a rectangle is 85 feet and the width is 45 feet. Find the perimeter, in feet."
+  answer="260"
+  answerDisplay="260 feet"
+  hint="Substitute into $P = 2L + 2W$: $P = 2(85) + 2(45)$."
+>}}
+
+{{< fillin
+  question="The length of a rectangle is 85 feet and the width is 45 feet. Find the area, in square feet."
+  answer="3825"
+  answerDisplay="3,825 square feet"
+  hint="Substitute into $A = L \cdot W$: $A = 85 \cdot 45$."
+>}}
+
+{{< fillin
+  question="Find the length of a rectangle with perimeter 124 inches and width 38 inches. Give the length in inches."
+  answer="24"
+  answerDisplay="24 inches"
+  hint="Substitute into $P = 2L + 2W$: $124 = 2L + 2(38)$, then solve for $L$."
+>}}
+
+{{< fillin
+  question="The area of a rectangle is 414 square meters. The length is 18 meters. What is the width, in meters?"
+  answer="23"
+  answerDisplay="23 meters"
+  hint="Substitute into $A = LW$: $414 = 18W$, then divide both sides by 18."
+>}}
+
+{{< fillin
+  question="The length of a rectangle is 9 inches more than the width. The perimeter is 46 inches. Find the width, in inches."
+  answer="7"
+  answerDisplay="7 inches"
+  hint="Let $W =$ width, so $W + 9$ is the length. Translate as $46 = 2(W + 9) + 2W$, then solve for $W$."
+>}}
+
+{{< fillin
+  question="The length of a rectangle is 9 inches more than the width. The perimeter is 46 inches. Find the length, in inches."
+  answer="16"
+  answerDisplay="16 inches"
+  hint="The width works out to $7$ inches, and the length is $9$ inches more than the width."
+>}}
+
+### Use properties of triangles
+
+{{< fillin
+  question="Find the area of a triangle with base 12 inches and height 5 inches. Give the area in square inches."
+  answer="30"
+  answerDisplay="30 square inches"
+  hint="Substitute into $A = \tfrac{1}{2}bh$: $A = \tfrac{1}{2}(12)(5)$."
+>}}
+
+{{< fillin
+  question="If a triangle has sides of 6 feet and 9 feet and the perimeter is 23 feet, how long is the third side, in feet?"
+  answer="8"
+  answerDisplay="8 feet"
+  hint="Substitute into $P = a + b + c$: $23 = 6 + 9 + c$, then solve for $c$."
+>}}
+
+{{< fillin
+  question="What is the base of a triangle with an area of 207 square inches and height of 18 inches? Give the base in inches."
+  answer="23"
+  answerDisplay="23 inches"
+  hint="Substitute into $A = \tfrac{1}{2}bh$: $207 = \tfrac{1}{2}b(18)$, so $207 = 9b$."
+>}}
+
+{{< fillin
+  question="An isosceles triangle has a base of 20 centimeters. If the perimeter is 76 centimeters, find the length of each of the other sides, in centimeters."
+  answer="28"
+  answerDisplay="28 centimeters"
+  hint="The two other sides are equal, so let $s$ be each of them and translate as $76 = s + 20 + s$."
+>}}
+
+{{< fillin
+  question="Find the length of each side of an equilateral triangle with a perimeter of 51 yards. Give the length in yards."
+  answer="17"
+  answerDisplay="17 yards"
+  hint="All three sides are equal, so $51 = 3s$."
+>}}
+
+### Use properties of trapezoids
+
+{{< fillin
+  question="The height of a trapezoid is 12 feet and the bases are 9 and 15 feet. What is the area, in square feet?"
+  answer="144"
+  answerDisplay="144 square feet"
+  hint="Substitute into $A = \tfrac{1}{2}h(b + B)$: $A = \tfrac{1}{2}(12)(9 + 15)$."
+>}}
+
+{{< fillin
+  question="The height of a trapezoid is 15 centimeters and the bases are 12.5 and 18.3 centimeters. What is the area, in square centimeters?"
+  answer="231"
+  answerDisplay="231 square centimeters"
+  hint="Add the bases first, then multiply by half the height: $A = \tfrac{1}{2}(15)(12.5 + 18.3)$."
+>}}
+
+{{< fillin
+  question="Find the area of a trapezoid with a height of 4.2 meters and bases of 8.1 and 5.5 meters. Give the area in square meters."
+  answer="28.56"
+  answerDisplay="28.56 square meters"
+  hint="Substitute into $A = \tfrac{1}{2}h(b + B)$: $A = \tfrac{1}{2}(4.2)(5.5 + 8.1)$."
+>}}
+
+{{< fillin
+  question="Laurel is making a banner shaped like a trapezoid. The height of the banner is 3 feet and the bases are 4 and 5 feet. What is the area of the banner, in square feet?"
+  answer="13.5"
+  answerDisplay="13.5 square feet"
+  hint="The banner's area is $A = \tfrac{1}{2}h(b + B)$ with $h = 3$, $b = 4$, and $B = 5$."
+>}}
+
 ## Key terms
 
 **linear measure** — a measure of length, in units such as inches, feet,
@@ -611,4 +759,4 @@ parallel sides (the bases).
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 9.4: Use Properties of Rectangles, Triangles, and Trapezoids](https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the trapezoid figure as an accessible inline graphic and described other figures (tape measures, cubes, tile grids) in prose instead of hotlinking images; omitted the Be Prepared quiz, Manipulative Mathematics and Links to Literacy callouts, Media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 9.4: Use Properties of Rectangles, Triangles, and Trapezoids](https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the trapezoid figure as an accessible inline graphic and described other figures (tape measures, cubes, tile grids) in prose instead of hotlinking images; omitted the Be Prepared quiz, Manipulative Mathematics and Links to Literacy callouts, and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating multi-answer prompts as one question per requested measurement.</small>

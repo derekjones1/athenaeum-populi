@@ -9,4 +9,4 @@
  * side effect, so simply loading this module makes the field available.
  */
 export * as mathlive from 'mathlive';
-export { checkAnswer, ce } from './lib/check-answer.mjs';
+export { checkAnswer, ce, describeAnswerForm } from './lib/check-answer.mjs';

@@ -9,10 +9,14 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve proportions, solve
-  similar-figure applications, solve uniform-motion applications, solve work
-  applications, solve direct-variation problems, and solve inverse-variation
-  problems.
+**By the end of this section, you will be able to:**
+
+- Solve proportions
+- Solve similar-figure applications
+- Solve uniform-motion applications
+- Solve work applications
+- Solve direct-variation problems
+- Solve inverse-variation problems
 {{< /callout >}}
 
 ## Solve proportions

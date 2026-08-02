@@ -11,8 +11,10 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** find the domain of a
-  function defined by an equation, and graph piecewise-defined functions.
+**By the end of this section, you will be able to:**
+
+- Find the domain of a function defined by an equation
+- Graph piecewise-defined functions
 {{< /callout >}}
 
 Horror and thriller movies are both popular and, very often, extremely

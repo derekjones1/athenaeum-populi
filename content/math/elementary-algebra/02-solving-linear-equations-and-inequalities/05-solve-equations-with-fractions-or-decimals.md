@@ -9,8 +9,10 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve equations with
-  fraction coefficients, and solve equations with decimal coefficients.
+**By the end of this section, you will be able to:**
+
+- Solve equations with fraction coefficients
+- Solve equations with decimal coefficients
 {{< /callout >}}
 
 ## Solve Equations with Fraction Coefficients

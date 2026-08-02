@@ -9,9 +9,11 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** translate and solve
-  basic percent equations, solve applications of percent, and find percent
-  increase and percent decrease.
+**By the end of this section, you will be able to:**
+
+- Translate and solve basic percent equations
+- Solve applications of percent
+- Find percent increase and percent decrease
 {{< /callout >}}
 
 ## Translate and solve basic percent equations
@@ -341,6 +343,124 @@ of gas decreased $1.9\%$.
   hint="Find the decrease ($42{,}000 - 37{,}800 = 4{,}200$), then find what percent $4{,}200$ is of $42{,}000$."
 >}}
 
+## Practice
+
+### Translate and solve basic percent equations
+
+{{< fillin
+  question="What number is 24% of 112?"
+  answer="26.88"
+  hint="Translate into an equation: $n = 0.24 \cdot 112$."
+>}}
+
+{{< fillin
+  question="800% of 2,250 is what number?"
+  answer="18000"
+  answerDisplay="$18{,}000$"
+  hint="Write 800% as the decimal $8$, then multiply $8 \cdot 2{,}250$."
+>}}
+
+{{< fillin
+  question="81 is 75% of what number?"
+  answer="108"
+  hint="Translate to $81 = 0.75b$, then divide both sides by $0.75$."
+>}}
+
+{{< fillin
+  question="8.2% of what number is \$2.87?"
+  answer="35"
+  answerDisplay="\$35"
+  hint="Translate to $0.082b = 2.87$, then divide both sides by $0.082$."
+>}}
+
+{{< fillin
+  question="What percent of 1,500 is 540?"
+  answer="36"
+  answerDisplay="36%"
+  hint="Translate to $p \cdot 1{,}500 = 540$, then divide both sides by $1{,}500$ and convert the decimal to a percent."
+>}}
+
+{{< fillin
+  question="840 is what percent of 480?"
+  answer="175"
+  answerDisplay="175%"
+  hint="Translate to $840 = p \cdot 480$, then divide both sides by $480$. The quotient is greater than $1$, so the percent is over 100%."
+>}}
+
+### Solve applications of percent
+
+{{< fillin
+  question="Geneva treated her parents to dinner at their favorite restaurant. The bill was \$74.25. She wants to leave 16% of the total bill as a tip. How much should the tip be, in dollars?"
+  answer="11.88"
+  answerDisplay="\$11.88"
+  hint="The tip is 16% of the bill: $t = 0.16 \cdot 74.25$."
+>}}
+
+{{< fillin
+  question="Trong has 12% of each paycheck automatically deposited to his savings account. His last paycheck was \$2,165. How much money was deposited to Trong's savings account, in dollars?"
+  answer="259.80"
+  answerDisplay="\$259.80"
+  hint="The deposit is 12% of the paycheck: $d = 0.12 \cdot 2{,}165$."
+>}}
+
+{{< fillin
+  question="A bacon cheeseburger at a popular fast food restaurant contains 2,070 milligrams (mg) of sodium, which is 86% of the recommended daily amount. What is the total recommended daily amount of sodium, in milligrams? Round to the nearest whole milligram."
+  answer="2407"
+  answerDisplay="2,407 mg"
+  hint="Translate to $2{,}070 = 0.86 \cdot a$, then divide both sides by $0.86$."
+>}}
+
+{{< fillin
+  question="The nutrition fact sheet at a fast food restaurant says the fish sandwich has 380 calories, and 171 calories are from fat. What percent of the total calories is from fat?"
+  answer="45"
+  answerDisplay="45%"
+  hint="Translate to $p \cdot 380 = 171$, then divide both sides by $380$ and convert the decimal to a percent."
+>}}
+
+{{< fillin
+  question="Emma gets paid \$3,000 per month. She pays \$750 a month for rent. What percent of her monthly pay goes to rent?"
+  answer="25"
+  answerDisplay="25%"
+  hint="Translate to $p \cdot 3{,}000 = 750$, then divide both sides by $3{,}000$ and convert the decimal to a percent."
+>}}
+
+### Find percent increase and percent decrease
+
+{{< fillin
+  question="Tamanika got a raise in her hourly pay, from \$15.50 to \$17.55. Find the percent increase. Round to the nearest tenth of a percent."
+  answer="13.2"
+  answerDisplay="13.2%"
+  hint="Find the amount of increase ($17.55 - 15.50 = 2.05$), then find what percent $2.05$ is of the original $15.50$."
+>}}
+
+{{< fillin
+  question="Annual student fees at the University of California rose from about \$4,000 in 2000 to about \$9,000 in 2014. Find the percent increase."
+  answer="125"
+  answerDisplay="125%"
+  hint="Find the increase ($9{,}000 - 4{,}000 = 5{,}000$), then find what percent $5{,}000$ is of the original $4{,}000$."
+>}}
+
+{{< fillin
+  question="According to Time magazine (7/19/2011), annual global seafood consumption rose from 22 pounds per person in 1960 to 38 pounds per person today. Find the percent increase. Round to the nearest tenth of a percent."
+  answer="72.7"
+  answerDisplay="72.7%"
+  hint="Find the increase ($38 - 22 = 16$), then find what percent $16$ is of the original $22$."
+>}}
+
+{{< fillin
+  question="A grocery store reduced the price of a loaf of bread from \$2.80 to \$2.73. Find the percent decrease."
+  answer="2.5"
+  answerDisplay="2.5%"
+  hint="Find the amount of decrease ($2.80 - 2.73 = 0.07$), then find what percent $0.07$ is of the original $2.80$."
+>}}
+
+{{< fillin
+  question="Hernando's salary was \$49,500 last year. This year his salary was cut to \$44,055. Find the percent decrease."
+  answer="11"
+  answerDisplay="11%"
+  hint="Find the decrease ($49{,}500 - 44{,}055 = 5{,}445$), then find what percent $5{,}445$ is of the original $49{,}500$."
+>}}
+
 ## Key terms
 
 **base** — in a percent equation, the whole amount that a percent is taken
@@ -350,4 +470,4 @@ expressed as a percent of the original amount.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 6.2: Solve General Applications of Percent](https://openstax.org/books/prealgebra-2e/pages/6-2-solve-general-applications-of-percent) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, the restaurant-receipt and nutrition-label photos, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 6.2: Solve General Applications of Percent](https://openstax.org/books/prealgebra-2e/pages/6-2-solve-general-applications-of-percent) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, the restaurant-receipt and nutrition-label photos, Self Check checklist, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

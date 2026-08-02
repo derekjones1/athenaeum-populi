@@ -9,10 +9,14 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** multiply monomials,
-  multiply a polynomial by a monomial, multiply a binomial by a binomial,
-  multiply a polynomial by a polynomial, multiply special products, and
-  multiply polynomial functions.
+**By the end of this section, you will be able to:**
+
+- Multiply monomials
+- Multiply a polynomial by a monomial
+- Multiply a binomial by a binomial
+- Multiply a polynomial by a polynomial
+- Multiply special products
+- Multiply polynomial functions
 {{< /callout >}}
 
 ## Multiply monomials

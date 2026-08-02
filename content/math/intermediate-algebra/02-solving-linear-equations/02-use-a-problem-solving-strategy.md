@@ -9,9 +9,12 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use a problem solving
-  strategy for word problems, solve number word problems, solve percent
-  applications, and solve simple interest applications.
+**By the end of this section, you will be able to:**
+
+- Use a problem solving strategy for word problems
+- Solve number word problems
+- Solve percent applications
+- Solve simple interest applications
 {{< /callout >}}
 
 Have you ever had any negative experiences in the past with word problems?

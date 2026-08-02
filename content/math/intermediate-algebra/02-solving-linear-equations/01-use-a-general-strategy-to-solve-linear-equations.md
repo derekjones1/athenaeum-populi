@@ -9,9 +9,11 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve linear equations
-  using a general strategy, classify equations, and solve equations with
-  fraction or decimal coefficients.
+**By the end of this section, you will be able to:**
+
+- Solve linear equations using a general strategy
+- Classify equations
+- Solve equations with fraction or decimal coefficients
 {{< /callout >}}
 
 ## Solve linear equations using a general strategy

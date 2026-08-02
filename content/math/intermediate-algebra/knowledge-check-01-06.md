@@ -46,6 +46,7 @@ weight: 7
 {{< fillin
   question="Simplify: $\tfrac{180}{204}$."
   answer="\frac{15}{17}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{15}{17}$"
 >}}
 

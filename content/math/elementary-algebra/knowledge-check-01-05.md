@@ -90,6 +90,7 @@ weight: 6
 {{< fillin
   question="Simplify: $\tfrac{7}{21}$."
   answer="\frac{1}{3}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{1}{3}$"
 >}}
 
@@ -158,6 +159,7 @@ weight: 6
 {{< fillin
   question="Write $8.47$ as the ratio of two integers."
   answer="\frac{847}{100}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{847}{100}$"
 >}}
 

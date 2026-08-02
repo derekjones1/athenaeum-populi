@@ -9,8 +9,10 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use the simple
-  interest formula, and solve simple interest applications.
+**By the end of this section, you will be able to:**
+
+- Use the simple interest formula
+- Solve simple interest applications
 {{< /callout >}}
 
 ## Use the simple interest formula
@@ -256,6 +258,96 @@ earned was $\text{\textdollar}15.75$.
   hint="Convert 20 months to $\tfrac{20}{12}$ of a year, then use $I = Prt$ with $P = 2{,}460$, $r = 0.035$."
 >}}
 
+## Practice
+
+### Use the simple interest formula
+
+{{< fillin
+  question="Use the simple interest formula to fill in the missing value. The principal is \$1,200, the rate is 3%, and the time is 5 years. What is the interest, in dollars?"
+  answer="180"
+  answerDisplay="\$180"
+  hint="Substitute into $I = Prt$ with the rate in decimal form: $I = 1{,}200(0.03)(5)$."
+>}}
+
+{{< fillin
+  question="Use the simple interest formula to fill in the missing value. The interest is \$4,410, the rate is 4.5%, and the time is 7 years. What is the principal, in dollars?"
+  answer="14000"
+  answerDisplay="\$14,000"
+  hint="Substitute into $I = Prt$ to get $4{,}410 = P(0.045)(7)$, then divide both sides by the product of the rate and the time."
+>}}
+
+{{< fillin
+  question="Use the simple interest formula to fill in the missing value. The interest is \$577.08, the principal is \$4,580, and the time is 2 years. What is the rate, as a percent?"
+  answer="6.3"
+  answerDisplay="6.3%"
+  hint="Substitute into $I = Prt$ to get $577.08 = 4{,}580 \cdot r \cdot 2$, then divide and change the decimal to a percent."
+>}}
+
+{{< fillin
+  question="Find the simple interest earned after 2 years on \$8,950 at an interest rate of 3.24%. Give the interest in dollars."
+  answer="579.96"
+  answerDisplay="\$579.96"
+  hint="Use $I = Prt$ with $P = 8{,}950$, $r = 0.0324$, and $t = 2$."
+>}}
+
+{{< fillin
+  question="Find the principal invested if \$70.95 interest was earned in 3 years at an interest rate of 2.75%. Give the principal in dollars."
+  answer="860"
+  answerDisplay="\$860"
+  hint="Substitute into $I = Prt$ to get $70.95 = P(0.0275)(3)$, then divide by $0.0825$."
+>}}
+
+{{< fillin
+  question="Find the rate if a principal of \$11,000 earned \$1,815 interest in 3 years. Give the rate as a percent."
+  answer="5.5"
+  answerDisplay="5.5%"
+  hint="Substitute into $I = Prt$ to get $1{,}815 = 11{,}000 \cdot r \cdot 3$, then divide and change the decimal to a percent."
+>}}
+
+### Solve simple interest applications
+
+{{< fillin
+  question="Casey deposited \$1,450 in a bank account with interest rate 4%. How much interest, in dollars, was earned in 2 years?"
+  answer="116"
+  answerDisplay="\$116"
+  hint="The interest is the unknown, so use $I = Prt$ with $P = 1{,}450$, $r = 0.04$, and $t = 2$."
+>}}
+
+{{< fillin
+  question="Robin deposited \$31,000 in a bank account with interest rate 5.2%. How much interest, in dollars, was earned in 3 years?"
+  answer="4836"
+  answerDisplay="\$4,836"
+  hint="Write $5.2\%$ as $0.052$, then multiply by the principal and the number of years."
+>}}
+
+{{< fillin
+  question="Hilaria borrowed \$8,000 from her grandfather to pay for college. Five years later, she paid him back the \$8,000, plus \$1,200 interest. What was the rate of interest, as a percent?"
+  answer="3"
+  answerDisplay="3%"
+  hint="The amount repaid is the principal and the extra amount is the interest, so solve $1{,}200 = 8{,}000 \cdot r \cdot 5$."
+>}}
+
+{{< fillin
+  question="In 10 years, a bank account that paid 5.25% earned \$18,375 interest. What was the principal of the account, in dollars?"
+  answer="35000"
+  answerDisplay="\$35,000"
+  hint="Substitute into $I = Prt$ to get $18{,}375 = P(0.0525)(10)$, then divide by $0.525$."
+>}}
+
+{{< fillin
+  question="Joshua's computer loan statement said he would pay \$1,244.34 in interest for a 3 year loan at 12.4%. How much, in dollars, did Joshua borrow to buy the computer?"
+  answer="3345"
+  answerDisplay="\$3,345"
+  hint="The amount borrowed is the principal, so solve $1{,}244.34 = P(0.124)(3)$."
+>}}
+
+{{< fillin
+  question="Caitlin invested \$8,200 in an 18-month certificate of deposit paying 2.7% interest. How much interest, in dollars, did she earn from this investment?"
+  answer="332.10"
+  answerDisplay="\$332.10"
+  hint="The rate is annual, so first write 18 months as $\tfrac{18}{12}$ of a year, then use $I = Prt$ with $P = 8{,}200$ and $r = 0.027$."
+>}}
+
 ## Key terms
 
 **principal** — the amount of money invested or borrowed, $P$. **rate of
@@ -267,4 +359,4 @@ years.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 6.4: Solve Simple Interest Applications](https://openstax.org/books/prealgebra-2e/pages/6-4-solve-simple-interest-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 6.4: Solve Simple Interest Applications](https://openstax.org/books/prealgebra-2e/pages/6-4-solve-simple-interest-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating the missing-value tables as prose prompts.</small>

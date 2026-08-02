@@ -10,8 +10,10 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve equations using
-  a general strategy, and classify equations.
+**By the end of this section, you will be able to:**
+
+- Solve equations using a general strategy
+- Classify equations
 {{< /callout >}}
 
 ## Solve Equations Using the General Strategy

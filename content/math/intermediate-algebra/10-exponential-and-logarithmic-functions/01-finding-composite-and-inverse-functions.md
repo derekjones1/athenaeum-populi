@@ -8,6 +8,7 @@ weight: 1
 
 {{< callout type="info" >}}
 **By the end of this section, you will be able to:**
+
 - Find and evaluate composite functions
 - Determine whether a function is one-to-one
 - Find the inverse of a function

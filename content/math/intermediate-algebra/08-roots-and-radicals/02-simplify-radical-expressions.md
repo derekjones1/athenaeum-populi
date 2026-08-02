@@ -8,7 +8,10 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-**By the end of this section, you will be able to:** use the product property to simplify radical expressions, use the quotient property to simplify radical expressions.
+**By the end of this section, you will be able to:**
+
+- Use the product property to simplify radical expressions
+- Use the quotient property to simplify radical expressions
 {{< /callout >}}
 
 ## Use the Product Property to Simplify Radical Expressions

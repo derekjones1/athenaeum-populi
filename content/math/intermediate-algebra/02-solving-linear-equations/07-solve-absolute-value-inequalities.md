@@ -9,10 +9,12 @@ weight: 7
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve absolute value
-  equations, solve absolute value inequalities with “less than,” solve
-  absolute value inequalities with “greater than,” and solve applications
-  with absolute value.
+**By the end of this section, you will be able to:**
+
+- Solve absolute value equations
+- Solve absolute value inequalities with “less than
+- ” solve absolute value inequalities with “greater than
+- ” and solve applications with absolute value
 {{< /callout >}}
 
 ## Solve Absolute Value Equations

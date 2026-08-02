@@ -10,10 +10,13 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** verify a solution of
-  an equation, solve equations using the Subtraction and Addition Properties
-  of Equality, solve equations that require simplification, translate to an
-  equation and solve, and translate and solve applications.
+**By the end of this section, you will be able to:**
+
+- Verify a solution of an equation
+- Solve equations using the Subtraction and Addition Properties of Equality
+- Solve equations that require simplification
+- Translate to an equation and solve
+- Translate and solve applications
 {{< /callout >}}
 
 ## Verify a Solution of an Equation

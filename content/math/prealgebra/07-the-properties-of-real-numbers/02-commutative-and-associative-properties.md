@@ -9,10 +9,11 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use the commutative
-  and associative properties, evaluate expressions using the commutative
-  and associative properties, and simplify expressions using the
-  commutative and associative properties.
+**By the end of this section, you will be able to:**
+
+- Use the commutative and associative properties
+- Evaluate expressions using the commutative and associative properties
+- Simplify expressions using the commutative and associative properties
 {{< /callout >}}
 
 In the next few sections, we will take a look at the properties of real
@@ -336,6 +337,120 @@ $$18p + (-15p) + 6q + 5q = 3p + 11q$$
   hint="Reorder so the $r$-terms are together and the $s$-terms are together, then combine each pair."
 >}}
 
+## Practice
+
+### Use the commutative and associative properties
+
+{{< multiplechoice
+  question="Use the commutative property to rewrite $7 + 6$."
+  answer="$6 + 7$"
+  hint="The commutative property of addition changes only the order of the two addends."
+>}}
+$6 + 7$
+$7 - 6$
+$6 - 7$
+$6 \cdot 7$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Use the commutative property to rewrite $-3m$."
+  answer="$m(-3)$"
+  hint="This is a product of $-3$ and $m$, so swap the two factors and keep both signs as they are."
+>}}
+$m(-3)$
+$-3 + m$
+$3m$
+$-\tfrac{m}{3}$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Use the associative property to rewrite $(21 + 14) + 9$."
+  answer="$21 + (14 + 9)$"
+  hint="The associative property moves the parentheses, leaving the order of $21$, $14$, and $9$ untouched."
+>}}
+$21 + (14 + 9)$
+$(14 + 21) + 9$
+$9 + (21 + 14)$
+$(21 + 9) + 14$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Use the associative property to rewrite $4(7x)$."
+  answer="$(4 \cdot 7)x$"
+  hint="Regroup so the two numbers are inside the parentheses together; the factors stay in the order $4$, $7$, $x$."
+>}}
+$(4 \cdot 7)x$
+$7(4x)$
+$(4 + 7)x$
+$4(x \cdot 7)$
+{{< /multiplechoice >}}
+
+### Evaluate expressions using the commutative and associative properties
+
+{{< fillin
+  question="Evaluate $d + 2.375 + (-d)$ when $d = -\tfrac{9}{4}$."
+  answer="2.375"
+  hint="You can substitute $-2.25$ for $d$ and work left to right, but it is quicker to notice that $d$ and $-d$ are opposites."
+>}}
+
+{{< fillin
+  question="Evaluate $d + (-d) + 2.375$ when $d = -\tfrac{9}{4}$."
+  answer="2.375"
+  hint="The opposites are already next to each other, so they add to $0$ before you ever substitute."
+>}}
+
+{{< fillin
+  question="Evaluate $-\tfrac{5}{21}\left(\tfrac{21}{5}n\right)$ when $n = -8$."
+  answer="8"
+  hint="Substitute $-8$ for $n$, or regroup first — $-\tfrac{5}{21}$ and $\tfrac{21}{5}$ are opposite reciprocals whose product is $-1$."
+>}}
+
+{{< fillin
+  question="Evaluate $\left(-\tfrac{5}{21} \cdot \tfrac{21}{5}\right)n$ when $n = -8$."
+  answer="8"
+  hint="The grouping already pairs the two fractions; multiply them first, then multiply that result by $-8$."
+>}}
+
+### Simplify expressions using the commutative and associative properties
+
+{{< fillin
+  question="Simplify: $9y + 23 + (-9y)$."
+  answer="23"
+  hint="Reorder so $9y$ and $-9y$ are together; opposites add to $0$."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{13}{18} \cdot \tfrac{25}{7} \cdot \tfrac{18}{13}$."
+  answer="\frac{25}{7}"
+  answerDisplay="$\tfrac{25}{7}$"
+  hint="The first and third factors are reciprocals — reorder to group them together so they multiply to $1$."
+>}}
+
+{{< fillin
+  question="Simplify: $-36 \cdot 11 \cdot \tfrac{4}{9}$."
+  answer="-176"
+  hint="Regroup so $-36$ and $\tfrac{4}{9}$ multiply first; $9$ divides $36$ evenly, giving a whole number."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(\tfrac{1}{12} + \tfrac{4}{9}\right) + \tfrac{5}{9}$."
+  answer="\frac{13}{12}"
+  answerDisplay="$\tfrac{13}{12}$"
+  hint="The second and third terms already share a denominator of $9$ — regroup them together first; $\tfrac{4}{9} + \tfrac{5}{9} = 1$."
+>}}
+
+{{< fillin
+  question="Simplify: $(5.89d + 2.75d) + 1.25d$."
+  answer="9.89d"
+  hint="Change the grouping so $2.75d$ and $1.25d$ combine first — their coefficients add to the whole number $4$."
+>}}
+
+{{< fillin
+  question="Simplify: $15u + 11v + 27u + 19v$."
+  answer="42u + 30v"
+  hint="Reorder so the $u$-terms are together and the $v$-terms are together, then combine each pair of like terms."
+>}}
+
 ## Key terms
 
 **commutative properties** — for real numbers $a$ and $b$: $a + b = b + a$
@@ -348,4 +463,4 @@ not commutative or associative.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 7.2: Commutative and Associative Properties](https://openstax.org/books/prealgebra-2e/pages/7-2-commutative-and-associative-properties) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the boxed regrouping comparisons (Figures 7.3 and 7.4) as tables; omitted the Be Prepared quiz, Links to Literacy activity, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 7.2: Commutative and Associative Properties](https://openstax.org/books/prealgebra-2e/pages/7-2-commutative-and-associative-properties) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the boxed regrouping comparisons (Figures 7.3 and 7.4) as tables; omitted the Be Prepared quiz, Links to Literacy activity, Writing Exercises, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

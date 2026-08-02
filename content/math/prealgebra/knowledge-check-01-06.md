@@ -181,6 +181,7 @@ weight: 7
 {{< fillin
   question="Find the prime factorization of 1080. Enter the answer in exponential form, e.g. $2^3 \cdot 5$."
   answer="2^3 \cdot 3^3 \cdot 5"
+  answerForm="prime-product"
   answerDisplay="$2^3 \cdot 3^3 \cdot 5$"
 >}}
 
@@ -286,12 +287,14 @@ weight: 7
 {{< fillin
   question="Convert the mixed number to an improper fraction: $3\tfrac{2}{7}$"
   answer="\frac{23}{7}"
+  answerForm="improper-fraction lowest-terms"
   answerDisplay="$\tfrac{23}{7}$"
 >}}
 
 {{< fillin
   question="Convert the improper fraction to a mixed number: $\tfrac{63}{11}$"
   answer="5\frac{8}{11}"
+  answerForm="mixed-number"
   answerDisplay="$5\tfrac{8}{11}$"
 >}}
 
@@ -306,6 +309,7 @@ weight: 7
 {{< fillin
   question="Simplify: $\tfrac{5}{20}$"
   answer="\frac{1}{4}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{1}{4}$"
 >}}
 
@@ -417,6 +421,7 @@ weight: 7
 {{< fillin
   question="Write $1.73$ as a fraction."
   answer="1\frac{73}{100}"
+  answerForm="fraction-or-mixed-number"
   answerDisplay="$1\tfrac{73}{100}$"
 >}}
 
@@ -539,11 +544,13 @@ weight: 7
 {{< fillin
   question="Convert $24\%$ to a decimal."
   answer="0.24"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Convert $24\%$ to a simplified fraction."
   answer="\frac{6}{25}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{6}{25}$"
 >}}
 

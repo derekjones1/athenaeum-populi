@@ -40,6 +40,19 @@ function frontmatter({
   ].join('\n');
 }
 
+/** The list-formatted objectives callout every numbered section must carry. */
+function objectives(items) {
+  return [
+    '{{< callout type="info" >}}',
+    '**By the end of this section, you will be able to:**',
+    '',
+    ...items.map((item) => `- ${item}`),
+    '{{< /callout >}}',
+    '',
+    '',
+  ].join('\n');
+}
+
 function prepare() {
   rmSync(fixture, { recursive: true, force: true });
 
@@ -71,7 +84,7 @@ function prepare() {
         title: `Topic ${number}`,
         weight: 1,
         sourceSection: `${number}.1`,
-      })}Section body.\n`,
+      })}${objectives([`Learn topic ${number}`, `Apply topic ${number}`])}Section body.\n`,
     );
   }
 
@@ -118,6 +131,32 @@ try {
   assert.notEqual(overlap.status, 0, 'overlapping Knowledge Checks must fail');
   assert.match(overlap.stderr, /Knowledge Check ranges overlap/);
   assert.match(overlap.stderr, /filename range must match source_chapters/);
+
+  // Objectives must be a Markdown list: the content lint keys the Practice
+  // block's `### ` groups to that list, and prose cannot be split on commas
+  // because an objective may itself contain one.
+  prepare();
+  const topicOne = join(book, '01-one', '01-topic-1.md');
+  const authoredTopic = readFileSync(topicOne, 'utf8');
+  writeFileSync(
+    topicOne,
+    authoredTopic.replace(
+      /\*\*By the end of this section, you will be able to:\*\*\n\n- .*\n- .*/,
+      '**By the end of this section, you will be able to:** learn topic 1, and apply topic 1.',
+    ),
+  );
+  const proseObjectives = validate();
+  assert.notEqual(proseObjectives.status, 0, 'a prose objectives callout must fail');
+  assert.match(proseObjectives.stderr, /one objective per Markdown list item/);
+
+  prepare();
+  writeFileSync(
+    topicOne,
+    authoredTopic.replace(/\{\{< callout type="info" >\}\}[\s\S]*?\{\{< \/callout >\}\}\n\n/, ''),
+  );
+  const noObjectives = validate();
+  assert.notEqual(noObjectives.status, 0, 'a section with no objectives callout must fail');
+  assert.match(noObjectives.stderr, /needs a .*objectives callout/);
 
   prepare();
   const bookIndex = join(book, '_index.md');

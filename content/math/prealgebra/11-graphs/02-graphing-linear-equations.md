@@ -9,10 +9,11 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** recognize the
-  relation between the solutions of an equation and its graph, graph a
-  linear equation by plotting points, and graph vertical and horizontal
-  lines.
+**By the end of this section, you will be able to:**
+
+- Recognize the relation between the solutions of an equation and its graph
+- Graph a linear equation by plotting points
+- Graph vertical and horizontal lines
 {{< /callout >}}
 
 ## Recognize the relation between the solutions of an equation and its graph
@@ -1644,6 +1645,316 @@ horizontal line $y = -3$.
   hint="Substitute $x = 2$ into $y = 3x$. Compare it to the constant line $y = 3$, which has $y = 3$ no matter what $x$ is."
 >}}
 
+## Practice
+
+### Recognize the relation between the solutions of an equation and its graph
+
+The graph of $y = x + 2$ is shown below. For each ordered pair, decide
+whether it is a solution to the equation and whether the point is on the
+line.
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"Coordinate grid from −8 to 8 on both axes. A line rises to the right, crossing the x-axis at (−2, 0) and the y-axis at (0, 2).","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"unit":16,"tickLabels":true,"tickStep":2,"lines":[{"slope":1,"intercept":2}]}'>
+<svg role="img" aria-label="Coordinate grid from −8 to 8 on both axes. A line rises to the right, crossing the x-axis at (−2, 0) and the y-axis at (0, 2)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 308" width="308" height="308" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="282" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="42" y1="282" x2="42" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="58" y1="282" x2="58" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="74" y1="282" x2="74" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="90" y1="282" x2="90" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="106" y1="282" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="122" y1="282" x2="122" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="138" y1="282" x2="138" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="170" y1="282" x2="170" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="186" y1="282" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="202" y1="282" x2="202" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="218" y1="282" x2="218" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="234" y1="282" x2="234" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="250" y1="282" x2="250" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="266" y1="282" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="282" y1="282" x2="282" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="282" x2="282" y2="282" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="282" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="250" x2="282" y2="250" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="234" x2="282" y2="234" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="218" x2="282" y2="218" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="202" x2="282" y2="202" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="186" x2="282" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="170" x2="282" y2="170" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="138" x2="282" y2="138" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="122" x2="282" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="106" x2="282" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="90" x2="282" y2="90" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="74" x2="282" y2="74" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="58" x2="282" y2="58" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="42" x2="282" y2="42" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="282" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="154" x2="284" y2="154" stroke="currentColor" stroke-width="1"/>
+  <line x1="154" y1="24" x2="154" y2="284" stroke="currentColor" stroke-width="1"/>
+  <polygon points="294,154 284,159 284,149" fill="currentColor"/>
+  <polygon points="154,14 159,24 149,24" fill="currentColor"/>
+  <polygon points="14,154 24,149 24,159" fill="currentColor"/>
+  <polygon points="154,294 149,284 159,284" fill="currentColor"/>
+  <text x="292" y="146" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="162" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="151" x2="26" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="169" font-size="11" fill="currentColor" text-anchor="middle">−8</text>
+  <line x1="58" y1="151" x2="58" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="58" y="169" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
+  <line x1="90" y1="151" x2="90" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="90" y="169" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
+  <line x1="122" y1="151" x2="122" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="122" y="169" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="186" y1="151" x2="186" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="186" y="169" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="218" y1="151" x2="218" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="218" y="169" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="250" y1="151" x2="250" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="250" y="169" font-size="11" fill="currentColor" text-anchor="middle">6</text>
+  <line x1="282" y1="151" x2="282" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="282" y="169" font-size="11" fill="currentColor" text-anchor="middle">8</text>
+  <line x1="151" y1="282" x2="157" y2="282" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="286" font-size="11" fill="currentColor" text-anchor="end">−8</text>
+  <line x1="151" y1="250" x2="157" y2="250" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="254" font-size="11" fill="currentColor" text-anchor="end">−6</text>
+  <line x1="151" y1="218" x2="157" y2="218" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="222" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="151" y1="186" x2="157" y2="186" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="190" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="151" y1="122" x2="157" y2="122" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="126" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="151" y1="90" x2="157" y2="90" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="94" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <line x1="151" y1="58" x2="157" y2="58" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="62" font-size="11" fill="currentColor" text-anchor="end">6</text>
+  <line x1="151" y1="26" x2="157" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="30" font-size="11" fill="currentColor" text-anchor="end">8</text>
+  <line x1="27.1" y1="248.9" x2="248.9" y2="27.1" stroke="currentColor" stroke-width="1.8"/>
+  <polygon points="256,20 252.5,30.6 245.4,23.5" fill="currentColor"/>
+  <polygon points="20,256 23.5,245.4 30.6,252.5" fill="currentColor"/>
+</svg>
+</div>
+
+{{< multiplechoice
+  question="For $y = x + 2$, is the ordered pair $(0, 2)$ a solution to the equation, and is the point on the line?"
+  answer="yes"
+  hint="Substitute $x = 0$ and $y = 2$ into $y = x + 2$. A pair that makes the equation true is a solution, and every solution is a point on the line."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For $y = x + 2$, is the ordered pair $(1, 2)$ a solution to the equation, and is the point on the line?"
+  answer="no"
+  hint="Substitute $x = 1$: the equation gives $y = 3$, not $2$. A pair that fails the equation is not a solution, so the point is off the line."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For $y = x + 2$, is the ordered pair $(-1, 1)$ a solution to the equation, and is the point on the line?"
+  answer="yes"
+  hint="Substitute $x = -1$ and $y = 1$ and simplify the right side. If the two sides agree, the pair is a solution and the point lies on the line."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For $y = x + 2$, is the ordered pair $(-3, 1)$ a solution to the equation, and is the point on the line?"
+  answer="no"
+  hint="Substitute $x = -3$ into $y = x + 2$ and compare the result with the $y$-value $1$ in the pair."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+The graph of $y = \tfrac{1}{2}x - 3$ is shown below. Again decide, for each
+ordered pair, whether it is a solution and whether the point is on the line.
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"Coordinate grid from −8 to 8 on both axes. A line rises gently to the right, crossing the y-axis at (0, −3) and the x-axis at (6, 0).","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"unit":16,"tickLabels":true,"tickStep":2,"lines":[{"slope":0.5,"intercept":-3}]}'>
+<svg role="img" aria-label="Coordinate grid from −8 to 8 on both axes. A line rises gently to the right, crossing the y-axis at (0, −3) and the x-axis at (6, 0)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308 308" width="308" height="308" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="282" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="42" y1="282" x2="42" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="58" y1="282" x2="58" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="74" y1="282" x2="74" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="90" y1="282" x2="90" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="106" y1="282" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="122" y1="282" x2="122" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="138" y1="282" x2="138" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="170" y1="282" x2="170" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="186" y1="282" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="202" y1="282" x2="202" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="218" y1="282" x2="218" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="234" y1="282" x2="234" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="250" y1="282" x2="250" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="266" y1="282" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="282" y1="282" x2="282" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="282" x2="282" y2="282" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="282" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="250" x2="282" y2="250" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="234" x2="282" y2="234" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="218" x2="282" y2="218" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="202" x2="282" y2="202" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="186" x2="282" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="170" x2="282" y2="170" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="138" x2="282" y2="138" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="122" x2="282" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="106" x2="282" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="90" x2="282" y2="90" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="74" x2="282" y2="74" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="58" x2="282" y2="58" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="42" x2="282" y2="42" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="282" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="154" x2="284" y2="154" stroke="currentColor" stroke-width="1"/>
+  <line x1="154" y1="24" x2="154" y2="284" stroke="currentColor" stroke-width="1"/>
+  <polygon points="294,154 284,159 284,149" fill="currentColor"/>
+  <polygon points="154,14 159,24 149,24" fill="currentColor"/>
+  <polygon points="14,154 24,149 24,159" fill="currentColor"/>
+  <polygon points="154,294 149,284 159,284" fill="currentColor"/>
+  <text x="292" y="146" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="162" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="151" x2="26" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="169" font-size="11" fill="currentColor" text-anchor="middle">−8</text>
+  <line x1="58" y1="151" x2="58" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="58" y="169" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
+  <line x1="90" y1="151" x2="90" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="90" y="169" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
+  <line x1="122" y1="151" x2="122" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="122" y="169" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="186" y1="151" x2="186" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="186" y="169" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="218" y1="151" x2="218" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="218" y="169" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="250" y1="151" x2="250" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="250" y="169" font-size="11" fill="currentColor" text-anchor="middle">6</text>
+  <line x1="282" y1="151" x2="282" y2="157" stroke="currentColor" stroke-width="1"/>
+  <text x="282" y="169" font-size="11" fill="currentColor" text-anchor="middle">8</text>
+  <line x1="151" y1="282" x2="157" y2="282" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="286" font-size="11" fill="currentColor" text-anchor="end">−8</text>
+  <line x1="151" y1="250" x2="157" y2="250" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="254" font-size="11" fill="currentColor" text-anchor="end">−6</text>
+  <line x1="151" y1="218" x2="157" y2="218" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="222" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="151" y1="186" x2="157" y2="186" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="190" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="151" y1="122" x2="157" y2="122" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="126" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="151" y1="90" x2="157" y2="90" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="94" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <line x1="151" y1="58" x2="157" y2="58" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="62" font-size="11" fill="currentColor" text-anchor="end">6</text>
+  <line x1="151" y1="26" x2="157" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="148" y="30" font-size="11" fill="currentColor" text-anchor="end">8</text>
+  <line x1="28.9" y1="264.5" x2="279.1" y2="139.5" stroke="currentColor" stroke-width="1.8"/>
+  <polygon points="288,135 281.3,143.9 276.8,135" fill="currentColor"/>
+  <polygon points="20,269 26.7,260.1 31.2,269" fill="currentColor"/>
+</svg>
+</div>
+
+{{< multiplechoice
+  question="For $y = \tfrac{1}{2}x - 3$, is the ordered pair $(0, -3)$ a solution to the equation, and is the point on the line?"
+  answer="yes"
+  hint="Substitute $x = 0$ into $y = \tfrac{1}{2}x - 3$. The result is the $y$-intercept, and the graph crosses the $y$-axis there."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For $y = \tfrac{1}{2}x - 3$, is the ordered pair $(2, -2)$ a solution to the equation, and is the point on the line?"
+  answer="yes"
+  hint="Substitute $x = 2$: half of $2$ is $1$, then subtract $3$. Compare with the $y$-value $-2$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For $y = \tfrac{1}{2}x - 3$, is the ordered pair $(-2, -4)$ a solution to the equation, and is the point on the line?"
+  answer="yes"
+  hint="Substitute $x = -2$: half of $-2$ is $-1$, then subtract $3$. Compare with the $y$-value $-4$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For $y = \tfrac{1}{2}x - 3$, is the ordered pair $(4, 1)$ a solution to the equation, and is the point on the line?"
+  answer="no"
+  hint="Substitute $x = 4$ and simplify. The equation gives $y = -1$, so check whether that matches the $y$-value $1$ in the pair."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Graph a linear equation by plotting points
+
+{{< graphplot
+  question="Graph $y = 3x - 1$ by placing two points on the line."
+  ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
+  answerDisplay="$y = 3x - 1$"
+  hint="Make a table of solutions: when $x = 0$, $y = -1$; when $x = 1$, $y = 2$. Plot those two points and the grader will draw the line through them."
+>}}
+{"answer":{"slope":3,"intercept":-1},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph $y = \tfrac{1}{2}x + 2$ by placing two points on the line."
+  ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
+  answerDisplay="$y = \tfrac{1}{2}x + 2$"
+  hint="Choose $x$-values that are multiples of $2$ so the fraction divides evenly: $x = 0$ gives $y = 2$, and $x = 2$ gives $y = 3$."
+>}}
+{"answer":{"slope":0.5,"intercept":2},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph $x - y = 2$ by placing two points on the line."
+  ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
+  answerDisplay="$x - y = 2$"
+  hint="Solve for $y$ first: $y = x - 2$. Then pick two easy $x$-values, such as $x = 0$ and $x = 2$."
+>}}
+{"answer":{"slope":1,"intercept":-2},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph $x + y = 6$ by placing two points on the line."
+  ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
+  answerDisplay="$x + y = 6$"
+  hint="Solve for $y$ to get $y = -x + 6$, or just find the intercepts: $x = 0$ gives $y = 6$, and $y = 0$ gives $x = 6$."
+>}}
+{"answer":{"slope":-1,"intercept":6},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
+{{< /graphplot >}}
+
+### Graph vertical and horizontal lines
+
+{{< graphplot
+  question="Graph $x = 4$ by placing two points on the line."
+  ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
+  answerDisplay="$x = 4$"
+  hint="Every point on this line has $x = 4$, whatever $y$ is. Place two points with the same $x$-coordinate, such as $(4, 0)$ and $(4, 3)$."
+>}}
+{"answer":{"x":4},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph $y = -5$ by placing two points on the line."
+  ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
+  answerDisplay="$y = -5$"
+  hint="There is no $x$ in the equation, so $y$ is always $-5$. Place two points with $y = -5$, such as $(0, -5)$ and $(2, -5)$ — they make a horizontal line."
+>}}
+{"answer":{"y":-5},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph $y = 2x$ and $y = 2$ in the same rectangular coordinate system. Place two points on each line."
+  ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
+  answerDisplay="$y = 2x$ and $y = 2$"
+  hint="One equation has an $x$, so its graph is slanted through the origin; the other has no $x$, so its graph is horizontal. The two lines meet at $(1, 2)$."
+>}}
+{"answer":{"system":[{"slope":2,"intercept":0},{"y":2}]},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
+{{< /graphplot >}}
+
 ## Key terms
 
 **graph of a linear equation** — the straight line consisting of all the
@@ -1658,4 +1969,4 @@ passes through the $y$-axis at $(0, b)$.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 11.2: Graphing Linear Equations](https://openstax.org/books/prealgebra-2e/pages/11-2-graphing-linear-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the coordinate-grid line graphs as accessible inline graphics; omitted the Be Prepared quiz, Media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, adapting the "graph the following" Try Its into a mix of graph-production exercises, "which graph" recognition questions, and gradable questions about specific coordinate values.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 11.2: Graphing Linear Equations](https://openstax.org/books/prealgebra-2e/pages/11-2-graphing-linear-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the coordinate-grid line graphs as accessible inline graphics; omitted the Be Prepared quiz and Media links; adapted selected end-of-section exercises into the interactive Practice block, restating the multipart "is the ordered pair a solution / is the point on the line" items as one graded question per ordered pair; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, adapting the "graph the following" Try Its into a mix of graph-production exercises, "which graph" recognition questions, and gradable questions about specific coordinate values.</small>

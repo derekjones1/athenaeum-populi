@@ -9,8 +9,10 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve a formula for a
-  specific variable, and use formulas to solve geometry applications.
+**By the end of this section, you will be able to:**
+
+- Solve a formula for a specific variable
+- Use formulas to solve geometry applications
 {{< /callout >}}
 
 ## Solve a formula for a specific variable

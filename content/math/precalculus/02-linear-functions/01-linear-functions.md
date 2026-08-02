@@ -11,10 +11,13 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** represent a linear
-  function, determine whether a linear function is increasing, decreasing, or
-  constant, calculate and interpret slope, write the point-slope form of an
-  equation, and write and interpret a linear function.
+**By the end of this section, you will be able to:**
+
+- Represent a linear function
+- Determine whether a linear function is increasing, decreasing, or constant
+- Calculate and interpret slope
+- Write the point-slope form of an equation
+- Write and interpret a linear function
 {{< /callout >}}
 
 Just as with the growth of a bamboo plant, there are many situations that

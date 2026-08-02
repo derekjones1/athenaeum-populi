@@ -49,13 +49,14 @@
       "bundle": "prealgebra-bundle",
       "moduleId": "m81271",
       "covers": [
-        "heading-needs-review"
+        "heading-needs-review",
+        "objective-needs-review"
       ],
       "status": "adapted-verified",
       "sourceItems": [
         "Model the Subtraction Property of Equality"
       ],
-      "rationale": "The attribution footer explicitly discloses replacement of the envelope-and-counters manipulative figures with a direct statement of the Subtraction Property."
+      "rationale": "The attribution footer explicitly discloses replacement of the envelope-and-counters manipulative figures with a direct statement of the Subtraction Property. The local objectives list therefore carries five items where the source abstract has six."
     },
     {
       "localPath": "content/math/prealgebra/03-integers/02-add-integers.md",
@@ -83,6 +84,19 @@
         "Summary of Geometry Formulas"
       ],
       "rationale": "The attribution footer explicitly discloses omission of the end-of-chapter formula summary because every formula is retained where it is introduced."
+    },
+    {
+      "localPath": "content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81354",
+      "covers": [
+        "objective-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Graph a line given a point and the slope\nSolve slope applications"
+      ],
+      "rationale": "Upstream markup defect: the module's <md:abstract> packs two objectives into a single <item>, so the source parses as five objectives where the section teaches six. The local page has separate 'Graph a line given a point and the slope' and 'Solve slope applications' headings, matching the printed book, so the local objectives list carries six items. Do not collapse them back to match the malformed abstract."
     }
   ],
   "upstreamDriftDecisions": [

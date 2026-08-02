@@ -9,9 +9,10 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** simplify a complex
-  rational expression by writing it as division, and simplify a complex
-  rational expression by using the LCD.
+**By the end of this section, you will be able to:**
+
+- Simplify a complex rational expression by writing it as division
+- Simplify a complex rational expression by using the LCD
 {{< /callout >}}
 
 **Complex fractions** are fractions in which the numerator or denominator

@@ -9,10 +9,12 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** verify solutions to an
-  inequality in two variables, recognize the relation between the solutions
-  of an inequality and its graph, graph linear inequalities in two variables,
-  and solve applications using linear inequalities in two variables.
+**By the end of this section, you will be able to:**
+
+- Verify solutions to an inequality in two variables
+- Recognize the relation between the solutions of an inequality and its graph
+- Graph linear inequalities in two variables
+- Solve applications using linear inequalities in two variables
 {{< /callout >}}
 
 ## Verify solutions to an inequality in two variables

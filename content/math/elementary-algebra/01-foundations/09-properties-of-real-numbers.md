@@ -10,10 +10,12 @@ weight: 9
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use the commutative
-  and associative properties, use the identity and inverse properties of
-  addition and multiplication, use the properties of zero, and simplify
-  expressions using the distributive property.
+**By the end of this section, you will be able to:**
+
+- Use the commutative and associative properties
+- Use the identity and inverse properties of addition and multiplication
+- Use the properties of zero
+- Simplify expressions using the distributive property
 {{< /callout >}}
 
 ## Use the Commutative and Associative Properties
@@ -727,6 +729,94 @@ subtraction, so we will distribute the $2$ first and then subtract.
   hint="Distribute the 8 across the first parentheses, and distribute -1 across the second, then combine like terms."
 >}}
 
+## Practice
+
+### Use the commutative and associative properties
+
+{{< fillin
+  question="Simplify: $3(4x)$."
+  answer="12x"
+  hint="Regroup using the associative property so the two numbers multiply first, then attach the variable."
+>}}
+
+{{< fillin
+  question="Simplify: $(y + 12) + 28$."
+  answer="y + 40"
+  hint="Regroup using the associative property so the two constants add first, then combine with the variable term."
+>}}
+
+{{< fillin
+  question="Simplify: $-24 \cdot 7 \cdot \tfrac{3}{8}$."
+  answer="-63"
+  hint="Reorder the factors so $-24$ and $\tfrac{3}{8}$ multiply first — that product simplifies nicely — then multiply by $7$."
+>}}
+
+### Use the identity and inverse properties of addition and multiplication
+
+{{< fillin
+  question="Simplify: $19a + 44 - 19a$."
+  answer="44"
+  hint="The $19a$ and $-19a$ terms are additive inverses — once they cancel, the identity property tells you what's left."
+>}}
+
+{{< fillin
+  question="Simplify: $10(0.1d)$."
+  answer="d"
+  hint="$10$ and $0.1$ are multiplicative inverses — multiply them first to apply the identity property."
+>}}
+
+### Use the properties of zero
+
+{{< fillin
+  question="Simplify: $\tfrac{0}{6}$."
+  answer="0"
+  answerForm="lowest-terms"
+  hint="Zero divided by any nonzero real number is zero."
+>}}
+
+{{< fillin
+  question="Simplify: $(-3.14)(0)$."
+  answer="0"
+  hint="Any real number times zero is zero."
+>}}
+
+{{< multiplechoice
+  question="Simplify $\tfrac{32-5a}{0}$, where $32-5a \neq 0$."
+  answer="undefined"
+  hint="Think about what number times $0$ could produce a nonzero numerator — is there one?"
+>}}
+0
+32-5a
+undefined
+{{< /multiplechoice >}}
+
+### Simplify expressions using the distributive property
+
+{{< fillin
+  question="Simplify: $8(4y + 9)$."
+  answer="32y + 72"
+  hint="Distribute the $8$ to each term inside the parentheses, then multiply."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{1}{4}(3q + 12)$."
+  answer="\frac{3}{4}q + 3"
+  answerDisplay="$\tfrac{3}{4}q + 3$"
+  hint="Distribute $\tfrac{1}{4}$ to each term separately, then simplify each product."
+>}}
+
+{{< fillin
+  question="Simplify: $-7(4p + 1)$."
+  answer="-28p - 7"
+  hint="Distribute $-7$ to each term, keeping careful track of the signs."
+>}}
+
+{{< fillin
+  question="Simplify: $5(2n + 9) + 12(n - 3)$."
+  answer="22n + 9"
+  hint="Distribute both terms first, then combine like terms."
+>}}
+
 ## Key terms
 
 **commutative property** — when adding or multiplying, changing the order
@@ -743,4 +833,4 @@ when simplifying expressions.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.9: Properties of Real Numbers](https://openstax.org/books/elementary-algebra-2e/pages/1-9-properties-of-real-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the addition/multiplication grouping comparisons and worked-example steps as tables; omitted the Self Check checklist, Be Prepared callout, media links, and end-of-section exercises (Practice Makes Perfect, Everyday Math, Writing Exercises); and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.9: Properties of Real Numbers](https://openstax.org/books/elementary-algebra-2e/pages/1-9-properties-of-real-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the addition/multiplication grouping comparisons and worked-example steps as tables; omitted the Self Check checklist, Be Prepared callout, and media links; adapted selected end-of-section exercises (Practice Makes Perfect) into interactive practice; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

@@ -10,10 +10,12 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** add or subtract
-  fractions with a common denominator, add or subtract fractions with
-  different denominators, use the order of operations to simplify complex
-  fractions, and evaluate variable expressions with fractions.
+**By the end of this section, you will be able to:**
+
+- Add or subtract fractions with a common denominator
+- Add or subtract fractions with different denominators
+- Use the order of operations to simplify complex fractions
+- Evaluate variable expressions with fractions
 {{< /callout >}}
 
 ## Add or Subtract Fractions with a Common Denominator
@@ -503,6 +505,70 @@ $$\frac{p+q}{r} = \frac{-4+(-2)}{8} = \frac{-6}{8} = -\frac{3}{4}$$
   hint="Add $x$ and $y$ in the numerator first, then divide by $z$ and simplify."
 >}}
 
+## Practice
+
+### Add or subtract fractions with a common denominator
+
+{{< fillin
+  question="Add: $\tfrac{6}{13} + \tfrac{5}{13}$."
+  answer="\frac{11}{13}"
+  answerDisplay="$\tfrac{11}{13}$"
+  hint="The denominators already match — add the numerators over the common denominator, then check whether the result simplifies."
+>}}
+
+{{< fillin
+  question="Subtract: $\tfrac{5y}{8} - \tfrac{7}{8}$."
+  answer="\frac{5y-7}{8}"
+  answerDisplay="$\tfrac{5y-7}{8}$"
+  hint="The denominators already match — subtract the numerators over the common denominator; $5y$ and $7$ aren't like terms, so leave the numerator as a difference."
+>}}
+
+### Add or subtract fractions with different denominators
+
+{{< fillin
+  question="Add: $-\tfrac{11}{30} + \tfrac{27}{40}$."
+  answer="\frac{37}{120}"
+  answerDisplay="$\tfrac{37}{120}$"
+  hint="$30 = 2 \cdot 3 \cdot 5$ and $40 = 2 \cdot 2 \cdot 2 \cdot 5$, so the LCD is $120$. Rewrite both fractions over $120$ before adding."
+>}}
+
+{{< fillin
+  question="Subtract: $\tfrac{y}{4} - \tfrac{3}{5}$."
+  answer="\frac{5y-12}{20}"
+  answerDisplay="$\tfrac{5y-12}{20}$"
+  hint="$4$ and $5$ share no common factors, so the LCD is $20$. Rewrite each fraction over $20$, then subtract the numerators."
+>}}
+
+### Use the order of operations to simplify complex fractions
+
+{{< fillin
+  question="Simplify: $\left(2^3+4^2\right) \div \left(\tfrac{2}{3}\right)^2$."
+  answer="54"
+  hint="Simplify the numerator $2^3+4^2=24$ and the denominator $\left(\tfrac{2}{3}\right)^2=\tfrac{4}{9}$ separately, then divide."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(\tfrac{5}{8}+\tfrac{1}{6}\right) \div \tfrac{19}{24}$."
+  answer="1"
+  hint="Add the fractions in parentheses over their LCD $24$ first, then divide by $\tfrac{19}{24}$."
+>}}
+
+### Evaluate variable expressions with fractions
+
+{{< fillin
+  question="Evaluate $2x^2y^3$ when $x = -\tfrac{2}{3}$ and $y = -\tfrac{1}{2}$."
+  answer="-\frac{1}{9}"
+  answerDisplay="$-\tfrac{1}{9}$"
+  hint="Square $x$ and cube $y$ first, then multiply the three factors together, dividing out common factors."
+>}}
+
+{{< fillin
+  question="Evaluate $\tfrac{a+b}{a-b}$ when $a = -3$ and $b = 8$."
+  answer="-\frac{5}{11}"
+  answerDisplay="$-\tfrac{5}{11}$"
+  hint="Add $a$ and $b$ in the numerator and subtract them in the denominator first, then divide."
+>}}
+
 ## Key terms
 
 **common denominator** — a shared denominator that lets fractions be added
@@ -514,4 +580,4 @@ contain a fraction; the fraction bar indicates division.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.6: Add and Subtract Fractions](https://openstax.org/books/elementary-algebra-2e/pages/1-6-add-and-subtract-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the LCD prime-factorization tables and stacked addition/subtraction as typeset math, recast the fraction-operations summary table as a compact two-column table, and omitted the Be Prepared quiz, Manipulative Mathematics callouts, media links, Self Check, and end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.6: Add and Subtract Fractions](https://openstax.org/books/elementary-algebra-2e/pages/1-6-add-and-subtract-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the LCD prime-factorization tables and stacked addition/subtraction as typeset math, recast the fraction-operations summary table as a compact two-column table, and omitted the Be Prepared quiz, Manipulative Mathematics callouts, media links, and Self Check; converted the practice problems ("Try Its") and selected end-of-section exercises into interactive exercises with instant feedback.</small>

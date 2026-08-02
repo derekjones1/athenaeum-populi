@@ -9,9 +9,11 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** multiply a polynomial
-  by a monomial, multiply a binomial by a binomial, and multiply a trinomial
-  by a binomial.
+**By the end of this section, you will be able to:**
+
+- Multiply a polynomial by a monomial
+- Multiply a binomial by a binomial
+- Multiply a trinomial by a binomial
 {{< /callout >}}
 
 ## Multiply a polynomial by a monomial
@@ -474,6 +476,98 @@ column to the left. Add like terms to get the final product.
   hint="Put the trinomial on top, multiply it by each term of the binomial separately lining up like terms, then add the partial products."
 >}}
 
+## Practice
+
+### Multiply a polynomial by a monomial
+
+{{< fillin
+  question="Multiply: $-8(z - 5)$."
+  answer="-8z + 40"
+  answerDisplay="$-8z + 40$"
+  hint="Distribute $-8$ to both terms. A negative times a negative gives a positive second term."
+>}}
+
+{{< fillin
+  question="Multiply: $-9a(3a + 5)$."
+  answer="-27a^2 - 45a"
+  answerDisplay="$-27a^2 - 45a$"
+  hint="Distribute $-9a$ to each term, multiplying coefficients and adding exponents on the matching bases."
+>}}
+
+{{< fillin
+  question="Multiply: $5q^3(q^2 - 2q + 6)$."
+  answer="5q^5 - 10q^4 + 30q^3"
+  answerDisplay="$5q^5 - 10q^4 + 30q^3$"
+  hint="Distribute $5q^3$ to all three terms; add the exponents on $q$ in each product."
+>}}
+
+{{< fillin
+  question="Multiply: $(w - 6) \cdot 8$."
+  answer="8w - 48"
+  answerDisplay="$8w - 48$"
+  hint="The monomial is the second factor here, but the Distributive Property works the same: multiply each term inside the parentheses by $8$."
+>}}
+
+### Multiply a binomial by a binomial
+
+{{< fillin
+  question="Multiply: $(z - 10)(z - 22)$."
+  answer="z^2 - 32z + 220"
+  answerDisplay="$z^2 - 32z + 220$"
+  hint="Use any method. Both last terms are negative, so their product is positive and both middle terms are negative."
+>}}
+
+{{< fillin
+  question="Multiply: $(2m - 9)(10m + 1)$."
+  answer="20m^2 - 88m - 9"
+  answerDisplay="$20m^2 - 88m - 9$"
+  hint="Use any method. Track the signs on the Outer and Inner products before combining them."
+>}}
+
+{{< fillin
+  question="Multiply: $(4c - 1)(4c + 1)$."
+  answer="16c^2 - 1"
+  answerDisplay="$16c^2 - 1$"
+  hint="Use any method. The Outer and Inner products are opposites here, so they add to zero."
+>}}
+
+{{< fillin
+  question="Multiply: $(5x - y)(x - 4)$."
+  answer="5x^2 - 20x - xy + 4y"
+  answerDisplay="$5x^2 - 20x - xy + 4y$"
+  hint="Use any method. With two different variables the four products are not like terms, so none of them combine."
+>}}
+
+### Multiply a trinomial by a binomial
+
+{{< fillin
+  question="Multiply using the Distributive Property: $(a + 10)(3a^2 + a - 5)$."
+  answer="3a^3 + 31a^2 + 5a - 50"
+  answerDisplay="$3a^3 + 31a^2 + 5a - 50$"
+  hint="Distribute $(3a^2 + a - 5)$ across both terms of $(a + 10)$, then combine like terms."
+>}}
+
+{{< fillin
+  question="Multiply using the Vertical Method: $(a + 10)(3a^2 + a - 5)$."
+  answer="3a^3 + 31a^2 + 5a - 50"
+  answerDisplay="$3a^3 + 31a^2 + 5a - 50$"
+  hint="Put the trinomial on top, multiply it by $10$ and then by $a$, lining up like terms, and add the partial products."
+>}}
+
+{{< fillin
+  question="Multiply: $(y - 6)(y^2 - 10y + 9)$."
+  answer="y^3 - 16y^2 + 69y - 54"
+  answerDisplay="$y^3 - 16y^2 + 69y - 54$"
+  hint="Use either method. FOIL does not apply — there are six products to find before combining like terms."
+>}}
+
+{{< fillin
+  question="Multiply: $(2x + 1)(x^2 - 5x - 6)$."
+  answer="2x^3 - 9x^2 - 17x - 6"
+  answerDisplay="$2x^3 - 9x^2 - 17x - 6$"
+  hint="Use either method. Multiply the trinomial by $2x$ and by $1$, then combine the like terms."
+>}}
+
 ## Key terms
 
 **FOIL method** — a shortcut for multiplying two binomials: multiply the
@@ -485,4 +579,4 @@ just binomials.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 10.3: Multiply Polynomials](https://openstax.org/books/prealgebra-2e/pages/10-3-multiply-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the FOIL step-by-step worked examples and the vertical (columnar) multiplication layouts as tables and typeset math instead of colored annotated equations; omitted the Be Prepared quiz, Media links, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 10.3: Multiply Polynomials](https://openstax.org/books/prealgebra-2e/pages/10-3-multiply-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the FOIL step-by-step worked examples and the vertical (columnar) multiplication layouts as tables and typeset math instead of colored annotated equations; omitted the Be Prepared quiz, Media links, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

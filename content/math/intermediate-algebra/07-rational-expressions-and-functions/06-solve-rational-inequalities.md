@@ -8,8 +8,10 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve rational
-  inequalities, and solve an inequality with rational functions.
+**By the end of this section, you will be able to:**
+
+- Solve rational inequalities
+- Solve an inequality with rational functions
 {{< /callout >}}
 
 ## Solve rational inequalities
@@ -374,24 +376,24 @@ number of items:
 
 $$c(x)=\tfrac{C(x)}{x}.$$
 
-**Example.** The function $C(x)=10x+3000$ represents the cost to produce
+**Example.** The function $C(x)=10x+3{,}000$ represents the cost to produce
 $x$ items. Find (a) the average cost function $c(x)$ and (b) how many items
 should be produced so that the average cost is less than \$40.
 
 For part (a), divide the cost function by $x$:
 
-$$c(x)=\tfrac{C(x)}{x}=\tfrac{10x+3000}{x}.$$
+$$c(x)=\tfrac{C(x)}{x}=\tfrac{10x+3{,}000}{x}.$$
 
 For part (b), solve
 
-$$\tfrac{10x+3000}{x}<40,\qquad x\ne0.$$
+$$\tfrac{10x+3{,}000}{x}<40,\qquad x\ne0.$$
 
 Write the left side as one quotient:
 
 $$
 \begin{array}{lrcl}
-\text{Subtract 40.} & \tfrac{10x+3000}{x}-40 &<& 0 \\[10pt]
-\text{Combine over }x. & \tfrac{10x+3000-40x}{x} &<& 0 \\[10pt]
+\text{Subtract 40.} & \tfrac{10x+3{,}000}{x}-40 &<& 0 \\[10pt]
+\text{Combine over }x. & \tfrac{10x+3{,}000-40x}{x} &<& 0 \\[10pt]
 \text{Factor.} & \tfrac{-30(x-100)}{x} &<& 0
 \end{array}
 $$
@@ -401,17 +403,17 @@ be positive, the inequality is satisfied when $x>100$. More than 100 items
 must be produced to keep the average cost below \$40 per item.
 
 {{< fillin
-  question="If $C(x)=20x+6000$, find the average cost function $c(x)$."
+  question="If $C(x)=20x+6{,}000$, find the average cost function $c(x)$."
   answer="\tfrac{20x+6000}{x}"
-  answerDisplay="$\tfrac{20x+6000}{x}$"
+  answerDisplay="$\tfrac{20x+6{,}000}{x}$"
   hint="Average cost equals total cost divided by the number of items."
 >}}
 
 {{< fillin
-  question="If $C(x)=20x+6000$, how many items must be produced so that the average cost is less than \$60? Enter the least whole-number quantity that works."
+  question="If $C(x)=20x+6{,}000$, how many items must be produced so that the average cost is less than \$60? Enter the least whole-number quantity that works."
   answer="151"
   answerDisplay="151 items"
-  hint="Solve $\tfrac{20x+6000}{x}<60$ for positive $x$, then choose the least whole number."
+  hint="Solve $\tfrac{20x+6{,}000}{x}<60$ for positive $x$, then choose the least whole number."
 >}}
 
 {{< fillin

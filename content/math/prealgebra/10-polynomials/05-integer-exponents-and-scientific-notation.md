@@ -10,10 +10,13 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use the definition of
-  a negative exponent, simplify expressions with integer exponents, convert
-  from decimal notation to scientific notation, convert scientific notation
-  to decimal form, and multiply and divide using scientific notation.
+**By the end of this section, you will be able to:**
+
+- Use the definition of a negative exponent
+- Simplify expressions with integer exponents
+- Convert from decimal notation to scientific notation
+- Convert scientific notation to decimal form
+- Multiply and divide using scientific notation
 {{< /callout >}}
 
 ## Use the Definition of a Negative Exponent
@@ -339,12 +342,12 @@ Our number system is based on powers of $10$. We use tens, hundreds,
 thousands, and so on. Our decimal numbers are also based on powers of
 ten — tenths, hundredths, thousandths, and so on.
 
-Consider the numbers $4000$ and $0.004$. We know that $4000$ means
+Consider the numbers $4{,}000$ and $0.004$. We know that $4{,}000$ means
 $4 \times 1000$ and $0.004$ means $4 \times \tfrac{1}{1000}$. If we write the
 $1000$ as a power of ten in exponential form, we can rewrite these numbers
 this way:
 
-$$4000 = 4 \times 1000 = 4 \times 10^3 \qquad\qquad 0.004 = 4 \times \frac{1}{1000} = 4 \times 10^{-3}$$
+$$4{,}000 = 4 \times 1000 = 4 \times 10^3 \qquad\qquad 0.004 = 4 \times \frac{1}{1000} = 4 \times 10^{-3}$$
 
 When a number is written as a product of two numbers, where the first
 factor is a number greater than or equal to one but less than $10$, and the
@@ -368,7 +371,7 @@ easier.
 
 If we look at what happened to the decimal point, we can see a method to
 easily convert from decimal notation to scientific notation. Moving the
-decimal point three places to the left in $4000$, and three places to the
+decimal point three places to the left in $4{,}000$, and three places to the
 right in $0.004$, gets the first factor, $4$, by itself in both cases:
 
 $$4000. = 4 \times 10^3 \qquad\qquad 0.004 = 4 \times 10^{-3}$$
@@ -377,7 +380,7 @@ In both cases, the decimal was moved three places to get the first factor by
 itself.
 
 - The power of $10$ is positive when the number is larger than $1$:
-  $4000 = 4 \times 10^3$.
+  $4{,}000 = 4 \times 10^3$.
 - The power of $10$ is negative when the number is between $0$ and $1$:
   $0.004 = 4 \times 10^{-3}$.
 
@@ -408,6 +411,7 @@ Check: $10^4$ is $10{,}000$, and $10{,}000$ times $3.7$ is $37{,}000$. ✓
 {{< fillin
   question="Write in scientific notation: 96,000."
   answer="9.6 \times 10^{4}"
+  answerForm="scientific-notation"
   answerDisplay="$9.6 \times 10^4$"
   hint="Move the decimal point left until only one nonzero digit is in front of it, and count how many places it moved."
 >}}
@@ -426,6 +430,7 @@ Check: $5.2 \times 10^{-3} = 5.2 \times \tfrac{1}{1000} = 5.2 \times 0.001 = 0.0
 {{< fillin
   question="Write in scientific notation: 0.0078."
   answer="7.8 \times 10^{-3}"
+  answerForm="scientific-notation"
   answerDisplay="$7.8 \times 10^{-3}$"
   hint="Move the decimal point right until only one nonzero digit is in front of it. Since the original number is between $0$ and $1$, the power of $10$ is negative."
 >}}
@@ -515,6 +520,142 @@ $$\frac{9 \times 10^3}{3 \times 10^{-2}} = \frac{9}{3} \times \frac{10^3}{10^{-2
   hint="Divide the coefficients ($8$ by $2$) and subtract the exponents on $10$ ($4 - (-1)$), then convert the result to decimal form."
 >}}
 
+## Practice
+
+### Use the definition of a negative exponent
+
+{{< fillin
+  question="Simplify: $8^{-2}$."
+  answer="\frac{1}{64}"
+  answerDisplay="$\tfrac{1}{64}$"
+  hint="Use $a^{-n} = \tfrac{1}{a^n}$: put $8^2$ in the denominator of a fraction with numerator $1$."
+>}}
+
+{{< fillin
+  question="Simplify: $3^{-2} + 3^{-1}$."
+  answer="\frac{4}{9}"
+  answerDisplay="$\tfrac{4}{9}$"
+  hint="Rewrite each term as a fraction first, then add using a common denominator of $9$."
+>}}
+
+{{< fillin
+  question="Simplify: $(-8)^{-2}$."
+  answer="\frac{1}{64}"
+  answerDisplay="$\tfrac{1}{64}$"
+  hint="The parentheses make $-8$ the base. Square $-8$ before taking the reciprocal, and remember an even power of a negative number is positive."
+>}}
+
+{{< fillin
+  question="Simplify: $-8^{-2}$."
+  answer="-\frac{1}{64}"
+  answerDisplay="$-\tfrac{1}{64}$"
+  hint="Without parentheses the exponent applies only to $8$. Rewrite the expression as $-1 \cdot 8^{-2}$."
+>}}
+
+{{< fillin
+  question="Simplify: $p^{-3}$."
+  answer="\frac{1}{p^3}"
+  answerDisplay="$\tfrac{1}{p^3}$"
+  hint="Take the reciprocal of the base $p$ and change the sign of the exponent."
+>}}
+
+### Simplify expressions with integer exponents
+
+{{< fillin
+  question="Simplify: $q^{-8} \cdot q^3$."
+  answer="\frac{1}{q^5}"
+  answerDisplay="$\tfrac{1}{q^5}$"
+  hint="The bases match, so add the exponents ($-8 + 3$), then rewrite the negative exponent as a reciprocal."
+>}}
+
+{{< fillin
+  question="Simplify: $(-3p^{-5} q^8)(7p^2 q^{-3})$."
+  answer="-\frac{21 q^5}{p^3}"
+  answerDisplay="$-\tfrac{21q^5}{p^3}$"
+  hint="Multiply the coefficients ($-3$ times $7$), then add exponents for $p$ ($-5+2$) and for $q$ ($8-3$). Move the factor with the negative exponent into the denominator."
+>}}
+
+{{< fillin
+  question="Simplify: $(2n^{-3})^{-6}$."
+  answer="\frac{n^{18}}{64}"
+  answerDisplay="$\tfrac{n^{18}}{64}$"
+  hint="Raise each factor to the power $-6$: the coefficient becomes $2^{-6}$, which goes in the denominator, and the exponents on $n$ multiply."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{m^5}{m^{-2}}$."
+  answer="m^7"
+  hint="Use the Quotient Property and subtract carefully: $5 - (-2)$."
+>}}
+
+### Convert from decimal notation to scientific notation
+
+{{< fillin
+  question="Write in scientific notation: 280,000."
+  answer="2.8 \times 10^{5}"
+  answerForm="scientific-notation"
+  answerDisplay="$2.8 \times 10^5$"
+  hint="Move the decimal point left until exactly one nonzero digit stands in front of it, and count the places moved. The number is greater than $1$, so the power of $10$ is positive."
+>}}
+
+{{< fillin
+  question="Write in scientific notation: 0.0000103."
+  answer="1.03 \times 10^{-5}"
+  answerForm="scientific-notation"
+  answerDisplay="$1.03 \times 10^{-5}$"
+  hint="Move the decimal point right until exactly one nonzero digit stands in front of it. The number is between $0$ and $1$, so the power of $10$ is negative. Keep the trailing $3$ as part of the first factor."
+>}}
+
+{{< fillin
+  question="The population of the world on July 4, 2010 was more than 6,850,000,000. Write this number in scientific notation."
+  answer="6.85 \times 10^{9}"
+  answerForm="scientific-notation"
+  answerDisplay="$6.85 \times 10^9$"
+  hint="Count how many places the decimal point moves left to reach 6.85; that count is the exponent on $10$."
+>}}
+
+### Convert scientific notation to decimal form
+
+{{< fillin
+  question="Convert to decimal form: $1.6 \times 10^{10}$."
+  answer="16000000000"
+  answerDisplay="16,000,000,000"
+  hint="The exponent is positive $10$, so move the decimal point ten places to the right, filling in zeros as placeholders."
+>}}
+
+{{< fillin
+  question="Convert to decimal form: $6.15 \times 10^{-8}$."
+  answer="0.0000000615"
+  hint="The exponent is negative $8$, so move the decimal point eight places to the left, adding zeros between the decimal point and the $6$."
+>}}
+
+{{< fillin
+  question="The width of a proton is $1 \times 10^{-5}$ of the width of an atom. Convert that number to decimal form."
+  answer="0.00001"
+  hint="A negative exponent of $-5$ moves the decimal point five places to the left of the $1$."
+>}}
+
+### Multiply and divide using scientific notation
+
+{{< fillin
+  question="Multiply. Write the answer in decimal form: $(3 \times 10^2)(1 \times 10^{-5})$."
+  answer="0.003"
+  hint="Multiply the coefficients and add the exponents on $10$ ($2 + (-5)$), then move the decimal point to write the result in decimal form."
+>}}
+
+{{< fillin
+  question="Multiply. Write the answer in decimal form: $(2.1 \times 10^{-4})(3.5 \times 10^{-2})$."
+  answer="0.00000735"
+  hint="Multiply $2.1$ by $3.5$ and add the exponents ($-4 + (-2)$). The coefficient $7.35$ is still between $1$ and $10$, so just shift its decimal point six places left."
+>}}
+
+{{< fillin
+  question="Divide. Write the answer in decimal form: $\tfrac{8 \times 10^6}{4 \times 10^{-1}}$."
+  answer="20000000"
+  answerDisplay="20,000,000"
+  hint="Divide the coefficients ($8$ by $4$) and subtract the exponents on $10$ ($6 - (-1)$), then convert the result to decimal form."
+>}}
+
 ## Key terms
 
 **negative exponent** — for a positive integer $n$ and $a \neq 0$,
@@ -525,4 +666,4 @@ integer, used to conveniently express very large or very small numbers.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 10.5: Integer Exponents and Scientific Notation](https://openstax.org/books/prealgebra-2e/pages/10-5-integer-exponents-and-scientific-notation) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Media links, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 10.5: Integer Exponents and Scientific Notation](https://openstax.org/books/prealgebra-2e/pages/10-5-integer-exponents-and-scientific-notation) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Media links, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

@@ -8,8 +8,10 @@ weight: 8
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve quadratic
-  inequalities graphically and solve quadratic inequalities algebraically.
+**By the end of this section, you will be able to:**
+
+- Solve quadratic inequalities graphically
+- Solve quadratic inequalities algebraically
 {{< /callout >}}
 
 We have learned how to solve linear inequalities and rational inequalities

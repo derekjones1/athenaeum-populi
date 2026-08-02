@@ -8,10 +8,11 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve quadratic equations
-  using the quadratic formula, use the discriminant to predict the number of
-  solutions of a quadratic equation, and identify the most appropriate method
-  to use to solve a quadratic equation.
+**By the end of this section, you will be able to:**
+
+- Solve quadratic equations using the quadratic formula
+- Use the discriminant to predict the number of solutions of a quadratic equation
+- Identify the most appropriate method to use to solve a quadratic equation
 {{< /callout >}}
 
 ## Solve quadratic equations using the Quadratic Formula

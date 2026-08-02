@@ -10,10 +10,12 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** determine the values for
-  which a rational expression is undefined, evaluate rational expressions,
-  simplify rational expressions, and simplify rational expressions with opposite
-  factors.
+**By the end of this section, you will be able to:**
+
+- Determine the values for which a rational expression is undefined
+- Evaluate rational expressions
+- Simplify rational expressions
+- Simplify rational expressions with opposite factors
 {{< /callout >}}
 
 In Chapter 1, we reviewed the properties of fractions and their operations. We

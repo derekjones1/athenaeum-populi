@@ -10,10 +10,12 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve equations
-  using the Subtraction and Addition Properties of Equality, solve
-  equations that need to be simplified, translate an equation and solve,
-  and translate and solve applications.
+**By the end of this section, you will be able to:**
+
+- Solve equations using the Subtraction and Addition Properties of Equality
+- Solve equations that need to be simplified
+- Translate an equation and solve
+- Translate and solve applications
 {{< /callout >}}
 
 We began our work solving equations in previous chapters. It has been a
@@ -490,6 +492,104 @@ The sticker price was $\text{\textdollar}25{,}450$.
   hint="Let $n =$ the nighttime price. Translate to $7.75 = n - 3.25$, then isolate $n$."
 >}}
 
+## Practice
+
+### Solve equations using the Subtraction and Addition Properties of Equality
+
+{{< multiplechoice
+  question="Is $y = \tfrac{1}{3}$ a solution of $4y + 2 = 10y$?"
+  answer="yes"
+  hint="Substitute $\tfrac{1}{3}$ for $y$ on both sides and simplify each side separately."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $u = -\tfrac{1}{2}$ a solution of $8u - 1 = 6u$?"
+  answer="no"
+  hint="Substitute $-\tfrac{1}{2}$ for $u$: the left side becomes $-4 - 1$ and the right side becomes $-3$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Solve: $p + 2.4 = -9.3$."
+  answer="-11.7"
+  hint="Undo the addition by subtracting $2.4$ from both sides."
+>}}
+
+{{< fillin
+  question="Solve: $y - \tfrac{3}{4} = \tfrac{3}{5}$."
+  answer="\frac{27}{20}"
+  answerDisplay="$\tfrac{27}{20}$"
+  hint="Add $\tfrac{3}{4}$ to both sides, then rewrite both fractions with the LCD $20$ before adding."
+>}}
+
+### Solve equations that need to be simplified
+
+{{< fillin
+  question="Solve: $6x + 8 - 5x + 16 = 32$."
+  answer="8"
+  hint="Combine the like terms on the left first: $6x - 5x$ and $8 + 16$."
+>}}
+
+{{< fillin
+  question="Solve: $5(w + 2.2) - 4w = 9.3$."
+  answer="-1.7"
+  hint="Distribute the $5$, combine $5w - 4w$, then subtract the constant from both sides."
+>}}
+
+{{< fillin
+  question="Solve: $8c - 7(c - 3) + 4 = -16$."
+  answer="-41"
+  hint="Distribute the $-7$ carefully — it gives $-7c + 21$ — then combine like terms before isolating $c$."
+>}}
+
+### Translate an equation and solve
+
+{{< fillin
+  question="Translate and solve: The sum of $x$ and $-5$ is $33$."
+  answer="38"
+  hint="Translate to $x + (-5) = 33$, which is $x - 5 = 33$, then add $5$ to both sides."
+>}}
+
+{{< fillin
+  question="Translate and solve: Three less than $y$ is $-19$."
+  answer="-16"
+  hint="Three less than $y$ means $y - 3$, so translate to $y - 3 = -19$ and add $3$ to both sides."
+>}}
+
+{{< fillin
+  question="Translate and solve: The difference of $f$ and $\tfrac{1}{3}$ is $\tfrac{1}{12}$."
+  answer="\frac{5}{12}"
+  answerDisplay="$\tfrac{5}{12}$"
+  hint="Translate to $f - \tfrac{1}{3} = \tfrac{1}{12}$, then add $\tfrac{1}{3}$ using the LCD $12$."
+>}}
+
+### Translate and solve applications
+
+{{< fillin
+  question="Jeff read a total of 54 pages in his English and Psychology textbooks. He read 41 pages in his English textbook. How many pages did he read in his Psychology textbook?"
+  answer="13"
+  hint="Let $p =$ the Psychology pages. Translate to $41 + p = 54$, then subtract $41$ from both sides."
+>}}
+
+{{< fillin
+  question="Connor's temperature was 0.7 degrees higher this morning than it had been last night. His temperature this morning was 101.2 degrees. What was his temperature last night, in degrees?"
+  answer="100.5"
+  answerDisplay="100.5 degrees"
+  hint="Let $t =$ last night's temperature. Translate to $t + 0.7 = 101.2$, then subtract $0.7$ from both sides."
+>}}
+
+{{< fillin
+  question="Ron's paycheck this week was \$17.43 less than his paycheck last week. His paycheck this week was \$103.76. How much was Ron's paycheck last week, in dollars?"
+  answer="121.19"
+  answerDisplay="\$121.19"
+  hint="Let $L =$ last week's paycheck. Translate to $103.76 = L - 17.43$, then add $17.43$ to both sides."
+>}}
+
 ## Key terms
 
 **solution of an equation** — a value of a variable that makes a true
@@ -500,4 +600,4 @@ $a$, $b$, and $c$, if $a = b$, then $a + c = b + c$.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 8.1: Solve Equations Using the Subtraction and Addition Properties of Equality](https://openstax.org/books/prealgebra-2e/pages/8-1-solve-equations-using-the-subtraction-and-addition-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the balance-scale figure as an accessible inline graphic; omitted the Be Prepared quiz, Links to Literacy and media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, rephrasing the "is v a solution" check as a yes/no question.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 8.1: Solve Equations Using the Subtraction and Addition Properties of Equality](https://openstax.org/books/prealgebra-2e/pages/8-1-solve-equations-using-the-subtraction-and-addition-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the balance-scale figure as an accessible inline graphic; omitted the Be Prepared quiz, Links to Literacy and media links, Self Check checklist, and Writing Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback, rephrasing the "is v a solution" check as a yes/no question; and adapted selected end-of-section exercises into the interactive Practice block.</small>

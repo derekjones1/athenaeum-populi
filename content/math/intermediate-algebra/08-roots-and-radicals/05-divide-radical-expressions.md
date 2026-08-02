@@ -8,7 +8,11 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-**By the end of this section, you will be able to:** divide radical expressions, rationalize a one term denominator, rationalize a two term denominator.
+**By the end of this section, you will be able to:**
+
+- Divide radical expressions
+- Rationalize a one term denominator
+- Rationalize a two term denominator
 {{< /callout >}}
 
 ## Divide Radical Expressions

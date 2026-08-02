@@ -8,8 +8,9 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve equations in
-  quadratic form.
+**By the end of this section, you will be able to:**
+
+- Solve equations in quadratic form
 {{< /callout >}}
 
 ## Solve Equations in Quadratic Form

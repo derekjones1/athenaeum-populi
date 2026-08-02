@@ -10,8 +10,10 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use the properties
-  of circles, and find the area of irregular figures.
+**By the end of this section, you will be able to:**
+
+- Use the properties of circles
+- Find the area of irregular figures
 {{< /callout >}}
 
 In this section, we'll continue working with geometry applications, adding
@@ -227,7 +229,7 @@ $$
 
 $$
 A_{\text{figure}} \approx 105 \cdot 68 + 2\left(\tfrac{1}{2} \cdot 3.14
-\cdot 34^2\right) \qquad\Rightarrow\qquad A_{\text{figure}} \approx 7140 +
+\cdot 34^2\right) \qquad\Rightarrow\qquad A_{\text{figure}} \approx 7{,}140 +
 3629.84
 $$
 
@@ -245,6 +247,93 @@ $$A_{\text{figure}} \approx 10{,}769.84 \text{ square meters}$$
   hint="Area = trapezoid area ($\tfrac{1}{2}(6.5)(5.2 + 3.3)$) plus semicircle area ($\tfrac{1}{2}(3.14)(2.6)^2$). Add and round to the nearest hundredth."
 >}}
 
+## Practice
+
+### Use the properties of circles
+
+{{< fillin
+  question="The lid of a paint bucket is a circle with radius 7 inches. Find the circumference of the lid, in inches. Use 3.14 for $\pi$."
+  answer="43.96"
+  answerDisplay="$43.96$ inches"
+  hint="The radius is given, so substitute $r = 7$ into $C = 2\pi r$: $C \approx 2(3.14)(7)$."
+>}}
+
+{{< fillin
+  question="The lid of a paint bucket is a circle with radius 7 inches. Find the area of the lid, in square inches. Use 3.14 for $\pi$."
+  answer="153.86"
+  answerDisplay="$153.86$ square inches"
+  hint="Substitute $r = 7$ into $A = \pi r^2$: $A \approx (3.14)(7)^2$. Square the radius before multiplying."
+>}}
+
+{{< fillin
+  question="A reflecting pool is in the shape of a circle with diameter of 20 feet. What is the circumference of the pool, in feet? Use 3.14 for $\pi$."
+  answer="62.8"
+  answerDisplay="$62.8$ feet"
+  hint="The diameter is given, so use the form $C = \pi d$ instead of $C = 2\pi r$."
+>}}
+
+{{< fillin
+  question="A circle has a circumference of 163.28 inches. Find the diameter, in inches. Use 3.14 for $\pi$."
+  answer="52"
+  answerDisplay="$52$ inches"
+  hint="Substitute into $C = \pi d$ to get $163.28 \approx 3.14d$, then divide both sides by $3.14$."
+>}}
+
+{{< fillin
+  question="A circle has a circumference of 150.72 feet. Find the radius, in feet. Use 3.14 for $\pi$."
+  answer="24"
+  answerDisplay="$24$ feet"
+  hint="Substitute into $C = 2\pi r$ to get $150.72 \approx 6.28r$, then divide both sides by $6.28$."
+>}}
+
+### Find the area of irregular figures
+
+<div class="ap-figure" data-spec='{"type":"figure","ariaLabel":"A sideways U-shaped figure: a square 6 units on each side with a rectangular notch cut into the middle of its right side. The top edge is labeled 6, the left edge is labeled 6, the upper right vertical edge is labeled 2, the lower right vertical edge is labeled 2, and the depth of the notch is labeled 3.","unit":34,"polygons":[{"points":[[0,0],[6,0],[6,2],[3,2],[3,4],[6,4],[6,6],[0,6]],"edgeLabels":[null,"2",null,null,null,"2","6","6"]}],"texts":[{"at":[3.15,2.85],"text":"3","anchor":"start"}]}'>
+<svg role="img" aria-label="A sideways U-shaped figure: a square 6 units on each side with a rectangular notch cut into the middle of its right side. The top edge is labeled 6, the left edge is labeled 6, the upper right vertical edge is labeled 2, the lower right vertical edge is labeled 2, and the depth of the notch is labeled 3." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 276 276" width="276" height="276" font-family="Helvetica, Arial, sans-serif">
+  <line x1="36" y1="240" x2="240" y2="240" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="240" y1="240" x2="240" y2="172" stroke="currentColor" stroke-width="1.5"/>
+  <text x="252" y="210" text-anchor="start" font-size="13" fill="currentColor">2</text>
+  <line x1="240" y1="172" x2="138" y2="172" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="138" y1="172" x2="138" y2="104" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="138" y1="104" x2="240" y2="104" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="240" y1="104" x2="240" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="252" y="74" text-anchor="start" font-size="13" fill="currentColor">2</text>
+  <line x1="240" y1="36" x2="36" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="138" y="22" text-anchor="middle" font-size="13" fill="currentColor">6</text>
+  <line x1="36" y1="36" x2="36" y2="240" stroke="currentColor" stroke-width="1.5"/>
+  <text x="24" y="142" text-anchor="end" font-size="13" fill="currentColor">6</text>
+  <text x="143.1" y="143.1" font-size="13" fill="currentColor" text-anchor="start">3</text>
+</svg>
+</div>
+
+{{< fillin
+  question="Find the area of the irregular figure shown above, in square units."
+  answer="30"
+  answerDisplay="$30$ square units"
+  hint="Start from the whole $6$ by $6$ square and subtract the notch cut out of its right side. The notch is $3$ units deep, and its height is $6 - 2 - 2$."
+>}}
+
+{{< fillin
+  question="Perry needs to put in a new lawn. His lot is a rectangle with a length of 120 feet and a width of 100 feet. The house is rectangular and measures 50 feet by 40 feet, and the driveway is rectangular and measures 20 feet by 30 feet. Find the area of Perry's lawn, in square feet."
+  answer="9400"
+  answerDisplay="$9{,}400$ square feet"
+  hint="Find the area of the whole lot, then subtract the areas of the house and the driveway: $12{,}000 - 2{,}000 - 600$."
+>}}
+
+{{< fillin
+  question="Yuki bought a drop-leaf kitchen table. The rectangular part of the table is a 1-ft by 3-ft rectangle, and each drop leaf is a semicircle whose diameter is the 3-ft side of the rectangle. Find the area of the table with one leaf up, in square feet. Use 3.14 for $\pi$."
+  answer="6.5325"
+  answerDisplay="$6.5325$ square feet"
+  hint="Add the rectangle's area, $1 \cdot 3$, to one semicircle of radius $1.5$: $\tfrac{1}{2}(3.14)(1.5)^2$."
+>}}
+
+{{< fillin
+  question="Yuki bought a drop-leaf kitchen table. The rectangular part of the table is a 1-ft by 3-ft rectangle, and each drop leaf is a semicircle whose diameter is the 3-ft side of the rectangle. Find the area of the table with both leaves up, in square feet. Use 3.14 for $\pi$."
+  answer="10.065"
+  answerDisplay="$10.065$ square feet"
+  hint="Two semicircles of radius $1.5$ together make one full circle, so add $(3.14)(1.5)^2$ to the rectangle's area."
+>}}
+
 ## Key terms
 
 **radius** — the distance from the center of a circle to any point on the
@@ -257,4 +346,4 @@ found by splitting it into rectangles, triangles, trapezoids, and circles
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 9.5: Solve Geometry Applications: Circles and Irregular Figures](https://openstax.org/books/prealgebra-2e/pages/9-5-solve-geometry-applications-circles-and-irregular-figures) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the irregular-figure diagrams and the track diagram in prose instead of hotlinking images; omitted the Be Prepared quiz, Media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 9.5: Solve Geometry Applications: Circles and Irregular Figures](https://openstax.org/books/prealgebra-2e/pages/9-5-solve-geometry-applications-circles-and-irregular-figures) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the irregular-figure diagrams and the track diagram in prose instead of hotlinking images; omitted the Be Prepared quiz, Self Check checklist, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, recreating one composite-figure diagram as an accessible SVG and restating two diagram-dependent prompts in words.</small>

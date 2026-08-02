@@ -10,9 +10,11 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** identify steps for
-  modeling and solving, build linear models from verbal descriptions, and
-  build systems of linear models.
+**By the end of this section, you will be able to:**
+
+- Identify steps for modeling and solving
+- Build linear models from verbal descriptions
+- Build systems of linear models
 {{< /callout >}}
 
 Elan is a college student who plans to spend a summer in Seattle. Elan has

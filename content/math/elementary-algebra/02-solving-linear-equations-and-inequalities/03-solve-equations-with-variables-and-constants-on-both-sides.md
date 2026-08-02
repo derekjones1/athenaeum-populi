@@ -10,9 +10,11 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve an equation
-  with constants on both sides, solve an equation with variables on both
-  sides, and solve an equation with variables and constants on both sides.
+**By the end of this section, you will be able to:**
+
+- Solve an equation with constants on both sides
+- Solve an equation with variables on both sides
+- Solve an equation with variables and constants on both sides
 {{< /callout >}}
 
 ## Solve Equations with Constants on Both Sides

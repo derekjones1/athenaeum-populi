@@ -11,8 +11,9 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve applications
-  with linear inequalities.
+**By the end of this section, you will be able to:**
+
+- Solve applications with linear inequalities
 {{< /callout >}}
 
 ## Solve Applications with Linear Inequalities

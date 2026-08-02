@@ -8,6 +8,7 @@ import {
   loadSourceLock,
   normalizeSemanticText,
   parseCollectionXml,
+  parseLocalSection,
   parseModuleXml,
   parseXml,
   verifyCommittedSourceMap,
@@ -185,3 +186,58 @@ test('reconciliation decisions refer to mapped paths and modules', () => {
   }
 });
 
+
+test('a local section exposes its objectives list for the audit parity check', () => {
+  const listed = parseLocalSection([
+    '---',
+    'title: Introduction to Whole Numbers',
+    'source_section: "1.1"',
+    '---',
+    '',
+    '{{< callout type="info" >}}',
+    '**By the end of this section, you will be able to:**',
+    '',
+    '- Use place value to name whole numbers',
+    '- Use place value to write whole numbers',
+    '{{< /callout >}}',
+    '',
+    'Prose.',
+  ].join('\n'));
+  assert.deepEqual(listed.objectives, [
+    'Use place value to name whole numbers',
+    'Use place value to write whole numbers',
+  ]);
+
+  // The condensation that hid an objective in section 1.1: two source
+  // objectives written as one phrase. The audit compares counts, so this
+  // parses as a single objective and diverges from the source abstract.
+  const condensed = parseLocalSection([
+    '---',
+    'title: Introduction to Whole Numbers',
+    'source_section: "1.1"',
+    '---',
+    '',
+    '{{< callout type="info" >}}',
+    '**By the end of this section, you will be able to:**',
+    '',
+    '- Use place value to name and write whole numbers',
+    '{{< /callout >}}',
+    '',
+    'Prose.',
+  ].join('\n'));
+  assert.equal(condensed.objectives.length, 1);
+
+  const prose = parseLocalSection([
+    '---',
+    'title: Introduction to Whole Numbers',
+    'source_section: "1.1"',
+    '---',
+    '',
+    '{{< callout type="info" >}}',
+    '**By the end of this section, you will be able to:** name whole numbers, and write whole numbers.',
+    '{{< /callout >}}',
+    '',
+    'Prose.',
+  ].join('\n'));
+  assert.deepEqual(prose.objectives, [], 'prose objectives are not silently split into items');
+});

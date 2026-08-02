@@ -10,10 +10,11 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** determine whether an
-  ordered pair is a solution of a system of linear inequalities, solve a
-  system of linear inequalities by graphing, and solve applications of
-  systems of inequalities.
+**By the end of this section, you will be able to:**
+
+- Determine whether an ordered pair is a solution of a system of linear inequalities
+- Solve a system of linear inequalities by graphing
+- Solve applications of systems of inequalities
 {{< /callout >}}
 
 The definition of a system of linear inequalities is very similar to the

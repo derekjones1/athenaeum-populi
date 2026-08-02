@@ -9,10 +9,12 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** factor trinomials of
-  the form $x^2+bx+c$; factor trinomials of the form $ax^2+bx+c$ using trial
-  and error; factor trinomials of the form $ax^2+bx+c$ using the “ac” method;
-  and factor using substitution.
+**By the end of this section, you will be able to:**
+
+- Factor trinomials of the form $x^2+bx+c$
+- Factor trinomials of the form $ax^2+bx+c$ using trial and error
+- Factor trinomials of the form $ax^2+bx+c$ using the “ac” method
+- Factor using substitution
 {{< /callout >}}
 
 ## Factor trinomials of the form $x^2+bx+c$

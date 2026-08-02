@@ -11,8 +11,9 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve uniform motion
-  applications.
+**By the end of this section, you will be able to:**
+
+- Solve uniform motion applications
 {{< /callout >}}
 
 ## Solve Uniform Motion Applications

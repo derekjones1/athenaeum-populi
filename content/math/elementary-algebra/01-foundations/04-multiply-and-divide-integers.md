@@ -10,10 +10,14 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** multiply integers,
-  divide integers, simplify expressions with integers, evaluate variable
-  expressions with integers, and translate English phrases to algebraic
-  expressions.
+**By the end of this section, you will be able to:**
+
+- Multiply integers
+- Divide integers
+- Simplify expressions with integers
+- Evaluate variable expressions with integers
+- Translate English phrases to algebraic expressions
+- Use integers in applications
 {{< /callout >}}
 
 ## Multiply integers
@@ -448,6 +452,122 @@ yards.
   hint="Translate 'eight times a \$2 fee' to an expression and simplify."
 >}}
 
+## Practice
+
+### Multiply integers
+
+{{< fillin
+  question="Multiply: $-4 \cdot 8$"
+  answer="-32"
+  hint="The signs are different, so the product is negative."
+>}}
+
+{{< fillin
+  question="Multiply: $-1(-14)$"
+  answer="14"
+  hint="Multiplying by $-1$ gives the opposite of the number."
+>}}
+
+### Divide integers
+
+{{< fillin
+  question="Divide: $-24 \div 6$"
+  answer="-4"
+  hint="The signs are different, so the quotient is negative."
+>}}
+
+{{< fillin
+  question="Divide: $-52 \div (-4)$"
+  answer="13"
+  hint="The signs are the same, so the quotient is positive."
+>}}
+
+### Simplify expressions with integers
+
+{{< fillin
+  question="Simplify: $5(-6) + 7(-2) - 3$"
+  answer="-47"
+  hint="Multiply first, working left to right, then add and subtract left to right."
+>}}
+
+{{< fillin
+  question="Simplify: $(-2)^6$"
+  answer="64"
+  hint="Write $(-2)$ to the sixth power in expanded form and multiply."
+>}}
+
+{{< fillin
+  question="Simplify: $-4^2$"
+  answer="-16"
+  hint="Here the exponent applies only to $4$, not to the sign. Square $4$, then take the opposite."
+>}}
+
+{{< fillin
+  question="Simplify: $9 - 2[3 - 8(-2)]$"
+  answer="-29"
+  hint="Work inside the brackets first — multiply, then subtract — before applying the outer subtraction."
+>}}
+
+### Evaluate variable expressions with integers
+
+{{< fillin
+  question="Evaluate $a + 3$ when $a = -7$"
+  answer="-4"
+  hint="Substitute $-7$ for $a$, then add."
+>}}
+
+{{< fillin
+  question="Evaluate $-a + 3$ when $a = -7$"
+  answer="10"
+  hint="Substitute $-7$ for $a$. The opposite of $-7$ is $7$, then add $3$."
+>}}
+
+{{< fillin
+  question="Evaluate $m + n$ when $m = -15$ and $n = 7$"
+  answer="-8"
+  hint="Substitute the given values for $m$ and $n$, then add."
+>}}
+
+{{< fillin
+  question="Evaluate $2w^2 - 3w + 7$ when $w = -2$"
+  answer="21"
+  hint="Substitute $-2$ for $w$, evaluate the exponent first, then multiply, then add."
+>}}
+
+### Translate English phrases to algebraic expressions
+
+{{< fillin
+  question="Translate and simplify: the sum of $3$ and $-15$, increased by $7$"
+  answer="-5"
+  hint="Add $3$ and $-15$ first, then add $7$ to that result."
+>}}
+
+{{< fillin
+  question="Translate and simplify: the difference of $-5$ and $-30$"
+  answer="25"
+  hint="The difference of $a$ and $b$ translates to $a$ minus $b$: $-5 - (-30)$."
+>}}
+
+### Use integers in applications
+
+{{< fillin
+  question="On January 15, the high temperature in Anaheim, California was 84 degrees. That same day, the high temperature in Embarrass, Minnesota was 12 degrees below zero. What was the difference between the two temperatures?"
+  answer="96"
+  hint="Write the phrase as the difference of $84$ and $-12$, then translate and simplify."
+>}}
+
+{{< fillin
+  question="On first down, the Chargers had the ball on their 25-yard line. They lost 6 yards on the first-down play, gained 10 yards on the second-down play, and lost 8 yards on the third-down play. What was the yard line at the end of the third-down play?"
+  answer="21"
+  hint="Start at the 25-yard line and add or subtract each play's yardage in order."
+>}}
+
+{{< fillin
+  question="Diontre has a balance of negative \$38 in his checking account. He deposits \$225 to the account. What is the new balance?"
+  answer="187"
+  hint="Add the deposit to the starting balance."
+>}}
+
 ## Key terms
 
 **opposite** — the number that is the same distance from zero on the number
@@ -459,4 +579,4 @@ and subtraction left to right (Please Excuse My Dear Aunt Sally).
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.4: Multiply and Divide Integers](https://openstax.org/books/elementary-algebra-2e/pages/1-4-multiply-and-divide-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the colored-counter multiplication model as narrated prose instead of a hotlinked figure; omitted the Be Prepared callout, the Section 1.4 Exercises ("Practice Makes Perfect," Everyday Math, Writing Exercises), and the Self Check checklist; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.4: Multiply and Divide Integers](https://openstax.org/books/elementary-algebra-2e/pages/1-4-multiply-and-divide-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the colored-counter multiplication model as narrated prose instead of a hotlinked figure; omitted the Be Prepared callout and the Self Check checklist; adapted selected Section 1.4 Exercises ("Practice Makes Perfect") into the section-final interactive Practice block and omitted the remaining Section 1.4 Exercises (Everyday Math, Writing Exercises); and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

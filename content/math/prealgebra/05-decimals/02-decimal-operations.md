@@ -9,9 +9,12 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** add and subtract
-  decimals, multiply decimals, divide decimals, and use decimals in money
-  applications.
+**By the end of this section, you will be able to:**
+
+- Add and subtract decimals
+- Multiply decimals
+- Divide decimals
+- Use decimals in money applications
 {{< /callout >}}
 
 ## Add and subtract decimals
@@ -181,7 +184,7 @@ The signs are the same, so the product will be positive. Write the numbers
 in vertical format, lining up the numbers on the right, and multiply as if
 they were whole numbers:
 
-$$\begin{array}{r} 4.075 \\ \times\ \ 3.9 \\ \hline 36675 \\ 12225\phantom{0} \\ \hline 158925 \end{array}$$
+$$\begin{array}{r} 4.075 \\ \times\ \ 3.9 \\ \hline 36{,}675 \\ 12{,}225\phantom{0} \\ \hline 158{,}925 \end{array}$$
 
 Place the decimal point. Add the number of decimal places in the factors
 ($3 + 1$); place the decimal point $4$ places from the right:
@@ -205,7 +208,7 @@ $$(3.9)(4.075) = 15.8925$$
 The signs are different, so the product will be negative. Write in
 vertical format, lining up the numbers on the right, and multiply:
 
-$$\begin{array}{r} 5.19 \\ \times\ 8.2\phantom{0} \\ \hline 1038\phantom{0} \\ 4152\phantom{00} \\ \hline 42558 \end{array}$$
+$$\begin{array}{r} 5.19 \\ \times\ 8.2\phantom{0} \\ \hline 1038\phantom{0} \\ 4{,}152\phantom{00} \\ \hline 42{,}558 \end{array}$$
 
 Place the decimal point $3$ places from the right ($1 + 2$ places). The
 product is negative:
@@ -269,7 +272,7 @@ We can use this pattern as a shortcut to multiply by powers of ten instead
 of multiplying using the vertical format: count the zeros in the power of
 $10$ and then move the decimal point that same number of places to the
 right. So, for example, to multiply $45.86$ by $100$, move the decimal
-point $2$ places to the right: $45.86 \times 100 = 4586$.
+point $2$ places to the right: $45.86 \times 100 = 4{,}586$.
 
 Sometimes when we need to move the decimal point, there are not enough
 decimal places. In that case, we use zeros as placeholders. For example,
@@ -491,7 +494,7 @@ $$-2.89 \div (3.4) = -0.85$$
 The signs are the same, so the quotient is positive. Make the divisor a
 whole number by moving the decimal point in $-0.06$ all the way to the
 right (two places); move the decimal point in the dividend the same number
-of places, so $-25.65$ becomes $-2565$. Divide, placing the decimal point
+of places, so $-25.65$ becomes $-2{,}565$. Divide, placing the decimal point
 in the quotient above the decimal point in the dividend:
 
 $$-25.65 \div (-0.06) = 427.5$$
@@ -640,6 +643,124 @@ Add: $\text{\textdollar}3.28$. Write a sentence: Marla's total cost for the frui
   hint="Multiply each ticket price by its quantity, then add the two products — multiply before you add."
 >}}
 
+## Practice
+
+### Add and subtract decimals
+
+{{< fillin
+  question="Subtract: $256.37 - 85.49$"
+  answer="170.88"
+  hint="Line up the decimal points and subtract as whole numbers — you will need to regroup twice."
+>}}
+
+{{< fillin
+  question="Subtract: $-16.53 - 24.38$"
+  answer="-40.91"
+  hint="Subtracting a positive from a negative moves further from zero: add the two amounts and keep the negative sign."
+>}}
+
+{{< fillin
+  question="Subtract: $100 - 64.2$"
+  answer="35.8"
+  hint="Write $100$ as $100.0$ so both numbers have one decimal place, then subtract."
+>}}
+
+{{< fillin
+  question="Subtract: $91.75 - (-10.462)$"
+  answer="102.212"
+  hint="Subtracting a negative is the same as adding. Write a placeholder zero after $91.75$ so both numbers have three decimal places."
+>}}
+
+### Multiply decimals
+
+{{< fillin
+  question="Multiply: $(0.24)(0.6)$"
+  answer="0.144"
+  hint="Multiply $24 \times 6$ as whole numbers, then place the decimal point three places from the right ($2 + 1$ places)."
+>}}
+
+{{< fillin
+  question="Multiply: $(8.52)(3.14)$"
+  answer="26.7528"
+  hint="Both factors have two decimal places, so the product needs four. Estimate first: the answer should be near $27$."
+>}}
+
+{{< fillin
+  question="Multiply: $(-5.18)(-65.23)$"
+  answer="337.8914"
+  hint="The signs are the same, so the product is positive. Two decimal places plus two gives four in the product."
+>}}
+
+{{< fillin
+  question="Multiply: $(55.2)(1{,}000)$"
+  answer="55200"
+  answerDisplay="$55{,}200$"
+  hint="There are three zeros in $1{,}000$, so move the decimal point three places to the right, writing placeholder zeros as needed."
+>}}
+
+### Divide decimals
+
+{{< fillin
+  question="Divide: $4.75 \div 25$"
+  answer="0.19"
+  hint="The divisor is already a whole number — place the decimal point in the quotient directly above the one in $4.75$ and divide."
+>}}
+
+{{< fillin
+  question="Divide: $1.44 \div (-0.3)$"
+  answer="-4.8"
+  hint="The signs are different, so the quotient is negative. Move the decimal point one place in both numbers, making the divisor $3$ and the dividend $14.4$."
+>}}
+
+{{< fillin
+  question="Divide: $5.2 \div 2.5$"
+  answer="2.08"
+  hint="Move the decimal point one place in both numbers ($2.5$ becomes $25$, $5.2$ becomes $52$), then divide, adding zeros until the remainder is zero."
+>}}
+
+{{< fillin
+  question="Divide: $12 \div 0.08$"
+  answer="150"
+  hint="Move the decimal point two places in both numbers ($0.08$ becomes $8$, $12$ becomes $1{,}200$), then divide."
+>}}
+
+### Use decimals in money applications
+
+{{< fillin
+  question="Brenda got \$40 from the ATM. She spent \$15.11 on a pair of earrings. How much money did she have left, in dollars?"
+  answer="24.89"
+  answerDisplay="\$24.89"
+  hint="Subtract what she spent from what she withdrew — write $40$ as $40.00$ before subtracting."
+>}}
+
+{{< fillin
+  question="Emily bought a box of cereal that cost \$4.29. She had a coupon for \$0.55 off, and the store doubled the coupon. How much did she pay for the box of cereal, in dollars?"
+  answer="3.19"
+  answerDisplay="\$3.19"
+  hint="Double the coupon first, then subtract that discount from the price of the cereal."
+>}}
+
+{{< fillin
+  question="Leo took part in a diet program. He weighed 190 pounds at the start of the program. During the first week, he lost 4.3 pounds. During the second week, he lost 2.8 pounds. The third week, he gained 0.7 pounds. The fourth week, he lost 1.9 pounds. What did Leo weigh, in pounds, at the end of the fourth week?"
+  answer="181.7"
+  answerDisplay="181.7 pounds"
+  hint="Start from 190 and work through the weeks in order — subtract each loss and add the gain."
+>}}
+
+{{< fillin
+  question="Alan got his first paycheck from his new job. He worked 30 hours and earned \$382.50. How much does he earn per hour, in dollars?"
+  answer="12.75"
+  answerDisplay="\$12.75"
+  hint="Divide the total earnings by the number of hours worked."
+>}}
+
+{{< fillin
+  question="The Lewis and Chousmith families are planning to go to the zoo together. Adult tickets cost \$29.95 and children's tickets cost \$19.95. What will the total cost be, in dollars, for 4 adults and 7 children?"
+  answer="259.45"
+  answerDisplay="\$259.45"
+  hint="Multiply each ticket price by the number of those tickets, then add the two products — multiply before you add."
+>}}
+
 ## Key terms
 
 **decimal point** — the point that separates the whole-number part of a
@@ -651,4 +772,4 @@ without changing either number's value.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 5.2: Decimal Operations](https://openstax.org/books/prealgebra-2e/pages/5-2-decimal-operations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the vertical addition/subtraction/multiplication/long-division layouts and the multiply-by-powers-of-ten table as typeset math and markdown tables, and the number-line jump diagram as an accessible inline graphic; omitted the Be Prepared quiz, Links to Literacy callout, Media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 5.2: Decimal Operations](https://openstax.org/books/prealgebra-2e/pages/5-2-decimal-operations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the vertical addition/subtraction/multiplication/long-division layouts and the multiply-by-powers-of-ten table as typeset math and markdown tables, and the number-line jump diagram as an accessible inline graphic; omitted the Be Prepared quiz, Links to Literacy callout, and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

@@ -10,11 +10,13 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** determine whether an
-  ordered pair is a solution of a system of equations, solve a system of
-  linear equations by graphing, solve a system of equations by substitution,
-  solve a system of equations by elimination, and choose the most convenient
-  method to solve a system of linear equations.
+**By the end of this section, you will be able to:**
+
+- Determine whether an ordered pair is a solution of a system of equations
+- Solve a system of linear equations by graphing
+- Solve a system of equations by substitution
+- Solve a system of equations by elimination
+- Choose the most convenient method to solve a system of linear equations
 {{< /callout >}}
 
 ## Determine whether an ordered pair is a solution of a system of equations

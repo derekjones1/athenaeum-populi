@@ -10,9 +10,11 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use the properties
-  of angles, use the properties of triangles, and use the Pythagorean
-  Theorem.
+**By the end of this section, you will be able to:**
+
+- Use the properties of angles
+- Use the properties of triangles
+- Use the Pythagorean Theorem
 {{< /callout >}}
 
 So far in this chapter we have focused on solving word problems. In this
@@ -449,6 +451,140 @@ of wood approximately $7.1$ inches from the corner.
   hint="The mast, deck, and light string form a right triangle with hypotenuse 17 and one leg 15. Substitute into $a^2 + b^2 = c^2$ and solve for the other leg."
 >}}
 
+## Practice
+
+### Use the properties of angles
+
+{{< fillin
+  question="Find the supplement of a $53^\circ$ angle. Give the measure in degrees."
+  answer="127"
+  answerDisplay="$127^\circ$"
+  hint="Supplementary angles add to $180^\circ$. Let $s$ be the supplement and solve $s + 53 = 180$."
+>}}
+
+{{< fillin
+  question="Find the complement of a $53^\circ$ angle. Give the measure in degrees."
+  answer="37"
+  answerDisplay="$37^\circ$"
+  hint="Complementary angles add to $90^\circ$. Let $c$ be the complement and solve $c + 53 = 90$."
+>}}
+
+{{< fillin
+  question="Find the supplement of a $135^\circ$ angle. Give the measure in degrees."
+  answer="45"
+  answerDisplay="$45^\circ$"
+  hint="Subtract the given measure from $180^\circ$."
+>}}
+
+{{< fillin
+  question="Find the complement of a $27.5^\circ$ angle. Give the measure in degrees."
+  answer="62.5"
+  answerDisplay="$62.5^\circ$"
+  hint="Subtract the given measure from $90^\circ$; the decimal part carries through the subtraction."
+>}}
+
+{{< fillin
+  question="Two angles are supplementary. The larger angle is $56^\circ$ more than the smaller angle. Find the measure of the smaller angle, in degrees."
+  answer="62"
+  answerDisplay="$62^\circ$"
+  hint="Let $a$ be the smaller angle, so $a + 56$ is the larger. Translate as $a + (a + 56) = 180$ and solve for $a$."
+>}}
+
+{{< fillin
+  question="Two angles are supplementary. The larger angle is $56^\circ$ more than the smaller angle. Find the measure of the larger angle, in degrees."
+  answer="118"
+  answerDisplay="$118^\circ$"
+  hint="Once you know the smaller angle, add $56$ to it — or subtract the smaller angle from $180$."
+>}}
+
+### Use the properties of triangles
+
+{{< fillin
+  question="The measures of two angles of a triangle are $26^\circ$ and $98^\circ$. Find the measure of the third angle, in degrees."
+  answer="56"
+  answerDisplay="$56^\circ$"
+  hint="The three angle measures add to $180$. Translate as $26 + 98 + x = 180$ and solve for $x$."
+>}}
+
+{{< fillin
+  question="The measures of two angles of a triangle are $105^\circ$ and $31^\circ$. Find the measure of the third angle, in degrees."
+  answer="44"
+  answerDisplay="$44^\circ$"
+  hint="Translate as $105 + 31 + x = 180$, then solve for $x$."
+>}}
+
+{{< fillin
+  question="One angle of a right triangle measures $33^\circ$. What is the measure of the other angle, in degrees?"
+  answer="57"
+  answerDisplay="$57^\circ$"
+  hint="A right triangle already uses $90^\circ$ of the $180^\circ$ total, so solve $x + 90 + 33 = 180$."
+>}}
+
+{{< fillin
+  question="One angle of a right triangle measures $22.5^\circ$. What is the measure of the other angle, in degrees?"
+  answer="67.5"
+  answerDisplay="$67.5^\circ$"
+  hint="Solve $x + 90 + 22.5 = 180$; the two acute angles of a right triangle add to $90^\circ$."
+>}}
+
+{{< fillin
+  question="$\Delta ABC$ is similar to $\Delta XYZ$. In $\Delta ABC$, side $AB = 15$, side $BC = 9$, and side $AC = b$. In $\Delta XYZ$, side $XY = 10$, side $YZ = x$, and side $XZ = 8$. Find the length of side $b$."
+  answer="12"
+  answerDisplay="$b = 12$"
+  hint="Corresponding sides are in the same ratio. Match $AC$ with $XZ$ and $AB$ with $XY$, then solve $\tfrac{b}{8} = \tfrac{15}{10}$."
+>}}
+
+{{< fillin
+  question="On a map, San Francisco, Las Vegas, and Los Angeles form a triangle. On the map, Los Angeles to Las Vegas measures 1 inch, Los Angeles to San Francisco measures 1.3 inches, and San Francisco to Las Vegas measures 2.1 inches. The actual distance from Los Angeles to Las Vegas is 270 miles. Find the actual distance from Los Angeles to San Francisco, in miles."
+  answer="351"
+  answerDisplay="351 miles"
+  hint="The map triangle and the real triangle are similar, so set up $\tfrac{1.3}{1} = \tfrac{d}{270}$ and solve for $d$."
+>}}
+
+{{< fillin
+  question="Joe wants to build a doll house for his daughter that looks just like his house. His house is 30 feet wide and 35 feet tall at the highest point of the roof. If the doll house will be 2.5 feet wide, how tall will its highest point be, in feet? Round to the nearest tenth."
+  answer="2.9"
+  answerDisplay="2.9 feet"
+  hint="The doll house and the house are similar figures, so solve the proportion $\tfrac{30}{2.5} = \tfrac{35}{h}$."
+>}}
+
+### Use the Pythagorean Theorem
+
+{{< fillin
+  question="A right triangle has legs measuring 9 and 12. Use the Pythagorean Theorem to find the length of the hypotenuse."
+  answer="15"
+  answerDisplay="$c = 15$"
+  hint="Substitute the legs into $a^2 + b^2 = c^2$: $9^2 + 12^2 = c^2$, then take the square root."
+>}}
+
+{{< fillin
+  question="In a right triangle, the hypotenuse measures 10 and one leg measures 6. Use the Pythagorean Theorem to find the length of the other leg."
+  answer="8"
+  answerDisplay="$b = 8$"
+  hint="The hypotenuse is $c$, so substitute into $6^2 + b^2 = 10^2$ and solve for $b^2$ first."
+>}}
+
+{{< fillin
+  question="In a right triangle, the hypotenuse measures 13 and one leg measures 8. Use the Pythagorean Theorem to find the length of the other leg. Round to the nearest tenth."
+  answer="10.2"
+  answerDisplay="$b \approx 10.2$"
+  hint="Substitute into $8^2 + b^2 = 13^2$ to get $b^2 = 105$; the square root is not a whole number, so round it."
+>}}
+
+{{< fillin
+  question="A 13-foot string of lights will be attached to the top of a 12-foot pole for a holiday display. How far from the base of the pole, in feet, should the end of the string of lights be anchored?"
+  answer="5"
+  answerDisplay="5 feet"
+  hint="The pole, the ground, and the string form a right triangle whose hypotenuse is the 13-foot string. Solve $a^2 + 12^2 = 13^2$."
+>}}
+
+{{< fillin
+  question="Chi is planning to put a path of paving stones through her flower garden, running diagonally from one corner to the opposite corner. The flower garden is a square with sides of 10 feet. What will the length of the path be, in feet? Round to the nearest tenth."
+  answer="14.1"
+  answerDisplay="14.1 feet"
+  hint="The diagonal is the hypotenuse of a right triangle whose legs are both sides of the square, so solve $10^2 + 10^2 = c^2$."
+>}}
+
 ## Key terms
 
 **angle** — a figure formed by two rays sharing a common endpoint (the
@@ -464,4 +600,4 @@ where $c$ is the hypotenuse and $a, b$ are the legs.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 9.3: Use Properties of Angles, Triangles, and the Pythagorean Theorem](https://openstax.org/books/prealgebra-2e/pages/9-3-use-properties-of-angles-triangles-and-the-pythagorean-theorem) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the angle, triangle, and Pythagorean Theorem figures as accessible inline graphics; omitted the Be Prepared quiz, the Media callout, the house and sailboat illustrations, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 9.3: Use Properties of Angles, Triangles, and the Pythagorean Theorem](https://openstax.org/books/prealgebra-2e/pages/9-3-use-properties-of-angles-triangles-and-the-pythagorean-theorem) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the angle, triangle, and Pythagorean Theorem figures as accessible inline graphics; omitted the Be Prepared quiz, the Media callout, and the house and sailboat illustrations; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating their diagrams as prose prompts.</small>

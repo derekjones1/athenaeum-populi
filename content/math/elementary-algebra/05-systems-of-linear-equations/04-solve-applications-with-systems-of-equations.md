@@ -10,9 +10,12 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** translate to a system
-  of equations, solve direct translation applications, solve geometry
-  applications, and solve uniform motion applications.
+**By the end of this section, you will be able to:**
+
+- Translate to a system of equations
+- Solve direct translation applications
+- Solve geometry applications
+- Solve uniform motion applications
 {{< /callout >}}
 
 {{< callout type="info" >}}

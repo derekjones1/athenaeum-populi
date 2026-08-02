@@ -8,8 +8,9 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve applications
-  modeled by Quadratic Equations.
+**By the end of this section, you will be able to:**
+
+- Solve applications modeled by Quadratic Equations
 {{< /callout >}}
 
 ## Solve Applications of the Quadratic Formula
@@ -438,6 +439,7 @@ the way down at 4.6 seconds.
 {{< fillin
   question="An arrow is shot from the ground into the air at an initial speed of 108 ft/sec. Use the formula $h=-16t^2+v_0t$ to determine when the arrow will be 180 feet from the ground. Round to the nearest tenth of a second. Enter both times, separated by a comma."
   answer="3,3.8"
+  answerMode="unordered"
   answerDisplay="$3,3.8$ seconds"
   hint="Set $180=-16t^2+108t$ and find both positive solutions."
 >}}
@@ -445,6 +447,7 @@ the way down at 4.6 seconds.
 {{< fillin
   question="A man throws a ball into the air with a velocity of 96 ft/sec. Use the formula $h=-16t^2+v_0t$ to determine when the height of the ball will be 48 feet. Round to the nearest tenth of a second. Enter both times, separated by a comma."
   answer="0.6,5.4"
+  answerMode="unordered"
   answerDisplay="$0.6,5.4$ seconds"
   hint="Set $48=-16t^2+96t$ and find both positive solutions."
 >}}

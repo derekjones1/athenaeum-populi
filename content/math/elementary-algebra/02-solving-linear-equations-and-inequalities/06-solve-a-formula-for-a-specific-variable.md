@@ -9,8 +9,10 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use the Distance,
-  Rate, and Time formula, and solve a formula for a specific variable.
+**By the end of this section, you will be able to:**
+
+- Use the Distance, Rate, Time formula
+- Solve a formula for a specific variable
 {{< /callout >}}
 
 ## Use the Distance, Rate, and Time Formula
@@ -179,9 +181,9 @@ principal, $P$, invested at rate, $r$, for $t$ years.
 | | (a) when $I = \text{\textdollar}5{,}600$, $r = 4\%$, $t = 7$ years | (b) in general |
 | :--- | :--- | :--- |
 | Write the formula. | $I = Prt$ | $I = Prt$ |
-| Substitute. | $5600 = P(0.04)(7)$ | |
-| Simplify. | $5600 = P(0.28)$ | $I = P(rt)$ |
-| Divide, to isolate $P$. | $\tfrac{5600}{0.28} = \tfrac{P(0.28)}{0.28}$ | $\tfrac{I}{rt} = \tfrac{P(rt)}{rt}$ |
+| Substitute. | $5{,}600 = P(0.04)(7)$ | |
+| Simplify. | $5{,}600 = P(0.28)$ | $I = P(rt)$ |
+| Divide, to isolate $P$. | $\tfrac{5{,}600}{0.28} = \tfrac{P(0.28)}{0.28}$ | $\tfrac{I}{rt} = \tfrac{P(rt)}{rt}$ |
 | Simplify. | $20{,}000 = P$ | $\tfrac{I}{rt} = P$ |
 
 The principal is $\text{\textdollar}20{,}000$.

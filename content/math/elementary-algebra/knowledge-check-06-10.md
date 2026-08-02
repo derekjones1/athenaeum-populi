@@ -120,6 +120,7 @@ aliases:
 {{< fillin
   question="Convert 83,000,000 to scientific notation."
   answer="8.3 \times 10^7"
+  answerForm="scientific-notation"
   answerDisplay="$8.3 \times 10^7$"
 >}}
 

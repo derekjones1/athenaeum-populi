@@ -10,9 +10,11 @@ weight: 8
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** simplify expressions
-  with $a^{1/n}$; simplify expressions with $a^{m/n}$; and use the laws of
-  exponents to simplify expressions with rational exponents.
+**By the end of this section, you will be able to:**
+
+- Simplify expressions with $a^{1/n}$
+- Simplify expressions with $a^{m/n}$
+- Use the laws of exponents to simplify expressions with rational exponents
 {{< /callout >}}
 
 ## Simplify expressions with $a^{1/n}$

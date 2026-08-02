@@ -8,7 +8,11 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-**By the end of this section, you will be able to:** simplify expressions with $a^{\tfrac{1}{n}}$, simplify expressions with $a^{\tfrac{m}{n}}$, use the properties of exponents to simplify expressions with rational exponents.
+**By the end of this section, you will be able to:**
+
+- Simplify expressions with $a^{\tfrac{1}{n}}$
+- Simplify expressions with $a^{\tfrac{m}{n}}$
+- Use the properties of exponents to simplify expressions with rational exponents
 {{< /callout >}}
 
 ## Simplify Expressions with $a^{\tfrac{1}{n}}$

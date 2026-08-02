@@ -11,10 +11,12 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** evaluate the
-  determinant of a $2 \times 2$ matrix, evaluate the determinant of a
-  $3 \times 3$ matrix, use Cramer's Rule to solve systems of equations, and
-  solve applications using determinants.
+**By the end of this section, you will be able to:**
+
+- Evaluate the determinant of a $2 \times 2$ matrix
+- Evaluate the determinant of a $3 \times 3$ matrix
+- Use Cramer's Rule to solve systems of equations
+- Solve applications using determinants
 {{< /callout >}}
 
 In this section we will learn of another method to solve systems of linear

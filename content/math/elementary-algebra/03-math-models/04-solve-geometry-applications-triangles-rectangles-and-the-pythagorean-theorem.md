@@ -10,9 +10,11 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve applications
-  using properties of triangles, use the Pythagorean Theorem, and solve
-  applications using rectangle properties.
+**By the end of this section, you will be able to:**
+
+- Solve applications using properties of triangles
+- Use the Pythagorean Theorem
+- Solve applications using rectangle properties
 {{< /callout >}}
 
 ## Solve Applications Using Properties of Triangles

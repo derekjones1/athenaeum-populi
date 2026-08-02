@@ -9,11 +9,13 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use addition
-  notation, model addition of whole numbers, add whole numbers without
-  models, add multi-digit whole numbers using the standard column
-  algorithm, carrying when needed, translate word phrases to math
-  notation, and add whole numbers in applications.
+**By the end of this section, you will be able to:**
+
+- Use addition notation
+- Model addition of whole numbers
+- Add whole numbers without models
+- Translate word phrases to math notation
+- Add whole numbers in applications
 {{< /callout >}}
 
 ## Use addition notation
@@ -301,6 +303,192 @@ The perimeter of the patio is $46$ feet.
   hint="Perimeter is the sum of the lengths of all the sides: $22 + 15 + 22 + 15$."
 >}}
 
+## Practice
+
+### Use addition notation
+
+{{< multiplechoice
+  question="Translate from math notation to words: $5 + 2$"
+  answer="five plus two; the sum of 5 and 2"
+  hint="Read the expression left to right — first addend, operation, second addend. The result of addition is called the sum."
+>}}
+five plus two; the sum of 5 and 2
+two plus five; the sum of 2 and 5
+five times two; the product of 5 and 2
+five minus two; the difference of 5 and 2
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Translate from math notation to words: $13 + 18$"
+  answer="thirteen plus eighteen; the sum of 13 and 18"
+  hint="Name each addend in words exactly as it is written, then join them with the word for the operation symbol."
+>}}
+thirteen plus eighteen; the sum of 13 and 18
+eighteen plus thirteen; the sum of 18 and 13
+thirty plus eighteen; the sum of 30 and 18
+thirteen plus eighty; the sum of 13 and 80
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Translate from math notation to words: $214 + 642$"
+  answer="two hundred fourteen plus six hundred forty-two; the sum of 214 and 642"
+  hint="Name each three-digit addend by its periods first, then read the plus sign as 'plus' and the result as the sum."
+>}}
+two hundred fourteen plus six hundred forty-two; the sum of 214 and 642
+two hundred forty plus six hundred forty-two; the sum of 240 and 642
+two hundred fourteen plus six hundred twenty-four; the sum of 214 and 624
+two hundred fourteen minus six hundred forty-two; the difference of 214 and 642
+{{< /multiplechoice >}}
+
+### Model addition of whole numbers
+
+<svg viewBox="0 0 340 56" role="img" aria-label="Base-10 blocks modeling an addition: a group of eight ones blocks, a plus sign, and a group of four ones blocks." style="max-width: 340px; width: 100%; display: block; margin: 1.5rem auto">
+  <rect x="10" y="18" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="34" y="18" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="58" y="18" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="82" y="18" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="106" y="18" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="130" y="18" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="154" y="18" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="178" y="18" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <text x="212" y="35" text-anchor="middle" font-size="18" fill="currentColor">+</text>
+  <rect x="232" y="18" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="256" y="18" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="280" y="18" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="304" y="18" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" />
+</svg>
+
+{{< fillin
+  question="What sum do the base-10 blocks above model?"
+  answer="12"
+  hint="Count all the blocks. There are more than 10, so exchange 10 ones for 1 tens rod and read off the tens and the ones."
+>}}
+
+<svg viewBox="0 0 500 70" role="img" aria-label="Base-10 blocks modeling an addition: a group of one tens rod and six ones blocks, a plus sign, and a group of two tens rods and five ones blocks." style="max-width: 500px; width: 100%; display: block; margin: 1.5rem auto">
+  <defs>
+    <g id="ap-rod-0102" fill="none" stroke="currentColor" stroke-width="0.6">
+      <line x1="12" y1="0" x2="12" y2="12" />
+      <line x1="24" y1="0" x2="24" y2="12" />
+      <line x1="36" y1="0" x2="36" y2="12" />
+      <line x1="48" y1="0" x2="48" y2="12" />
+      <line x1="60" y1="0" x2="60" y2="12" />
+      <line x1="72" y1="0" x2="72" y2="12" />
+      <line x1="84" y1="0" x2="84" y2="12" />
+      <line x1="96" y1="0" x2="96" y2="12" />
+      <line x1="108" y1="0" x2="108" y2="12" />
+      <rect x="0" y="0" width="120" height="12" stroke-width="1.4" />
+    </g>
+  </defs>
+  <use href="#ap-rod-0102" x="10" y="28" />
+  <rect x="145" y="28" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="161" y="28" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="177" y="28" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="193" y="28" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="209" y="28" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="225" y="28" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <text x="256" y="39" text-anchor="middle" font-size="18" fill="currentColor">+</text>
+  <use href="#ap-rod-0102" x="275" y="18" />
+  <use href="#ap-rod-0102" x="275" y="40" />
+  <rect x="410" y="25" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="426" y="25" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="442" y="25" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="458" y="25" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="474" y="25" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.4" />
+</svg>
+
+{{< fillin
+  question="What sum do the base-10 blocks above model?"
+  answer="41"
+  hint="Combine the rods and the loose blocks separately: 3 tens and 11 ones. Then exchange 10 of those ones for 1 more ten."
+>}}
+
+### Add whole numbers without models
+
+{{< fillin
+  question="Add: $8 + 3$"
+  answer="11"
+  hint="This is a one-digit addition fact: count on 3 from 8."
+>}}
+
+{{< fillin
+  question="Add: $3 + 8$"
+  answer="11"
+  hint="The addends are the same as in the previous question, only reversed — the Commutative Property of Addition says the sum cannot change."
+>}}
+
+{{< fillin
+  question="Add: $832 + 199$"
+  answer="1031"
+  answerDisplay="1,031"
+  hint="Ones: $2 + 9 = 11$, so write 1 and carry 1. Tens: $1 + 3 + 9 = 13$, so write 3 and carry 1. Then the hundreds."
+>}}
+
+{{< fillin
+  question="Add: $3{,}740 + 18{,}593$"
+  answer="22333"
+  answerDisplay="22,333"
+  hint="Line up the ones places, not the leftmost digits — 3,740 has no ten thousands digit, so treat that place as 0."
+>}}
+
+{{< fillin
+  question="Add: $24{,}731 + 592 + 3{,}868$"
+  answer="29191"
+  answerDisplay="29,191"
+  hint="Stack all three numbers by place value and add straight down each column, carrying whenever a column totals 10 or more."
+>}}
+
+### Translate word phrases to math notation
+
+{{< fillin
+  question="Translate and simplify: the sum of 90 and 65."
+  answer="155"
+  answerDisplay="$90 + 65 = 155$"
+  hint="'The sum of' names the two addends in order: $90 + 65$."
+>}}
+
+{{< fillin
+  question="Translate and simplify: 33 increased by 49."
+  answer="82"
+  answerDisplay="$33 + 49 = 82$"
+  hint="'Increased by' means add the second number to the first: $33 + 49$."
+>}}
+
+{{< fillin
+  question="Translate and simplify: 250 more than 599."
+  answer="849"
+  answerDisplay="$599 + 250 = 849$"
+  hint="'More than' reverses the order you read it in — the amount added is 250, and it is added to 599."
+>}}
+
+{{< fillin
+  question="Translate and simplify: 1,482 added to 915."
+  answer="2397"
+  answerDisplay="$915 + 1{,}482 = 2{,}397$"
+  hint="'Added to' also reverses the reading order: start with 915 and add 1,482 to it."
+>}}
+
+### Add whole numbers in applications
+
+{{< fillin
+  question="Ethan rode his bike 14 miles on Monday, 19 miles on Tuesday, 12 miles on Wednesday, 25 miles on Friday, and 68 miles on Saturday. What was the total number of miles Ethan rode?"
+  answer="138"
+  hint="'Total' means add — find the sum of all five daily distances."
+>}}
+
+{{< fillin
+  question="Jackson lives in a 7 room apartment. The number of square feet in each room is 238, 120, 156, 196, 100, 132, and 225. What is the total number of square feet in all 7 rooms?"
+  answer="1167"
+  answerDisplay="1,167"
+  hint="Stack all seven room sizes in a column by place value and add straight down, carrying as needed."
+>}}
+
+{{< fillin
+  question="Last year Natalie's salary was \$82,572. Two years ago, her salary was \$79,316, and three years ago it was \$75,298. What is the total amount of Natalie's salary for the past three years, in dollars?"
+  answer="237186"
+  answerDisplay="\$237,186"
+  hint="Add the three yearly salaries, lining up the ones places and carrying whenever a column reaches 10."
+>}}
+
 ## Key terms
 
 **sum** — the result of addition. **addend** — one of the numbers being
@@ -316,4 +504,4 @@ lengths of its sides.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 1.2: Add Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-2-add-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, omitted the addition facts table (0–9) as redundant with earlier material, redrew the base-10 block figure as an inline SVG and the column-addition figures as aligned math blocks, used new example numbers for the word-phrase and applications examples, and converted "Try It" practice problems into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 1.2: Add Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-2-add-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, omitted the addition facts table (0–9) as redundant with earlier material, redrew the base-10 block figures as accessible inline SVGs and the column-addition figures as aligned math blocks, used new example numbers for the word-phrase and applications examples, converted "Try It" practice problems into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

@@ -10,8 +10,10 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** multiply rational
-  expressions, and divide rational expressions.
+**By the end of this section, you will be able to:**
+
+- Multiply rational expressions
+- Divide rational expressions
 {{< /callout >}}
 
 ## Multiply rational expressions

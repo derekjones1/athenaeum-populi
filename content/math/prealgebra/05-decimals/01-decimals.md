@@ -9,9 +9,14 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** name decimals, write
-  decimals, convert decimals to fractions or mixed numbers, locate decimals
-  on the number line, order decimals, and round decimals.
+**By the end of this section, you will be able to:**
+
+- Name decimals
+- Write decimals
+- Convert decimals to fractions or mixed numbers
+- Locate decimals on the number line
+- Order decimals
+- Round decimals
 {{< /callout >}}
 
 ## Name decimals
@@ -275,12 +280,14 @@ $$-0.286 = -\frac{286}{1000} = -\frac{143}{500}$$
 {{< fillin
   question="Write 6.07 as a fraction or mixed number. Simplify if possible."
   answer="6\frac{7}{100}"
+  answerForm="fraction-or-mixed-number lowest-terms"
   hint="The final digit, $7$, is in the hundredths place, so the denominator is $100$."
 >}}
 
 {{< fillin
   question="Write -0.024 as a fraction or mixed number. Simplify if possible."
   answer="-\frac{3}{125}"
+  answerForm="fraction-or-mixed-number lowest-terms"
   hint="The final digit is in the thousandths place, so start with a denominator of $1000$, then simplify the fraction."
 >}}
 
@@ -316,8 +323,10 @@ Finally, mark $0.4$ on the number line.
 </svg>
 
 {{< fillin
-  question="Locate 0.6 on the number line. Enter the value shown, as a decimal."
-  answer="0.6"
+  question="Locate $0.6$ on a number line divided into tenths. Which tenths fraction marks that point? Enter it with denominator $10$."
+  answer="\frac{6}{10}"
+  answerForm="denominator:10"
+  answerDisplay="$\tfrac{6}{10}$"
   hint="Divide the interval from 0 to 1 into ten equal parts; 0.6 is six of those parts from 0."
 >}}
 
@@ -370,8 +379,10 @@ mark $-0.74$ between $-0.70$ and $-0.80$, a little closer to $-0.70$.
 </svg>
 
 {{< fillin
-  question="Locate -0.25 on the number line. Enter the value shown, as a decimal."
-  answer="-0.25"
+  question="Locate $-0.25$ on a number line divided into hundredths. Which hundredths fraction marks that point? Enter it with denominator $100$."
+  answer="-\frac{25}{100}"
+  answerForm="denominator:100"
+  answerDisplay="$-\tfrac{25}{100}$"
   hint="It's between 0 and -1, a quarter of the way from 0 toward -1."
 >}}
 
@@ -561,6 +572,232 @@ So $18.379$ rounded to the nearest whole number is $18$.
   hint="Look at the tenths digit, 5, to decide whether the ones digit rounds up."
 >}}
 
+## Practice
+
+### Name decimals
+
+{{< multiplechoice
+  question="Name the decimal: $5.01$"
+  answer="five and one hundredth"
+  hint="Name the whole number, say 'and' for the decimal point, then name the digits to the right as a whole number followed by the place value of the last digit."
+>}}
+five and one hundredth
+five and one tenth
+five and one thousandth
+fifty-one hundredths
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Name the decimal: $0.381$"
+  answer="three hundred eighty-one thousandths"
+  hint="A zero to the left of the decimal point is not named, so there is no 'and'. The last digit sits three places to the right of the point."
+>}}
+three hundred eighty-one thousandths
+three hundred eighty-one hundredths
+three hundred eighty-one ten-thousandths
+thirty-eight and one tenth
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Name the decimal: $-17.9$"
+  answer="negative seventeen and nine tenths"
+  hint="The negative sign is named first, with the whole-number part; then 'and' for the point, and the place value of the single digit that follows."
+>}}
+negative seventeen and nine tenths
+negative seventeen and nine hundredths
+seventeen and nine tenths
+negative seventy-one and nine tenths
+{{< /multiplechoice >}}
+
+### Write decimals
+
+{{< fillin
+  question="Translate the name into a decimal number: eight and three hundredths."
+  answer="8.03"
+  hint="'And' locates the decimal point. 'Hundredths' means two places to the right, so the 3 must land in the second one — fill the first with a placeholder zero."
+>}}
+
+{{< fillin
+  question="Translate the name into a decimal number: twenty-nine thousandths."
+  answer="0.029"
+  hint="There is no 'and', so there is no whole-number part — start with 0. and mark three places for thousandths, putting the 9 in the last one."
+>}}
+
+{{< fillin
+  question="Translate the name into a decimal number: negative eleven and nine ten-thousandths."
+  answer="-11.0009"
+  hint="Write the whole number 11 with its negative sign, then mark four places for ten-thousandths and put the 9 in the fourth place, filling the rest with zeros."
+>}}
+
+### Convert decimals to fractions or mixed numbers
+
+{{< fillin
+  question="Convert to a fraction or mixed number: $1.99$"
+  answer="1\frac{99}{100}"
+  answerForm="fraction-or-mixed-number"
+  answerDisplay="$1\tfrac{99}{100}$"
+  hint="The digit to the left of the point is not zero, so the result is a mixed number. The final digit is in the hundredths place."
+>}}
+
+{{< fillin
+  question="Convert to a fraction or mixed number: $6.4$"
+  answer="6\frac{2}{5}"
+  answerForm="fraction-or-mixed-number"
+  answerDisplay="$6\tfrac{2}{5}$"
+  hint="The final digit is in the tenths place, so start with a denominator of $10$ — then remove the common factor."
+>}}
+
+{{< fillin
+  question="Convert to a fraction or mixed number: $14.125$"
+  answer="14\frac{1}{8}"
+  answerForm="fraction-or-mixed-number"
+  answerDisplay="$14\tfrac{1}{8}$"
+  hint="Three decimal places means a denominator of $1000$. Divide numerator and denominator by their greatest common factor, $125$."
+>}}
+
+### Locate decimals on the number line
+
+<svg viewBox="0 0 620 90" role="img" aria-label="A number line from 0.0 to 1.0 marked in tenths, with a point plotted at the eighth mark to the right of 0.0." style="max-width: 560px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
+  <polygon points="600,40 590,34 590,46" fill="currentColor" />
+  <polygon points="20,40 30,34 30,46" fill="currentColor" />
+  <g><line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.0</text></g>
+  <g><line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.5</text></g>
+  <g><line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="2" /><circle cx="462" cy="40" r="6" fill="currentColor" /></g>
+  <g><line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">1.0</text></g>
+</svg>
+
+{{< fillin
+  question="What decimal is plotted on the number line above?"
+  answer="0.8"
+  hint="The interval from 0 to 1 is divided into ten equal parts, so each tick is one tenth. Count the ticks from 0."
+>}}
+
+<svg viewBox="0 0 620 90" role="img" aria-label="A number line from -1.0 to 0.0 marked in tenths, with a point plotted at the second mark to the left of 0.0." style="max-width: 560px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
+  <polygon points="600,40 590,34 590,46" fill="currentColor" />
+  <polygon points="20,40 30,34 30,46" fill="currentColor" />
+  <g><line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">-1.0</text></g>
+  <g><line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">-0.5</text></g>
+  <g><line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="2" /><circle cx="462" cy="40" r="6" fill="currentColor" /></g>
+  <g><line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">0.0</text></g>
+</svg>
+
+{{< fillin
+  question="What decimal is plotted on the number line above?"
+  answer="-0.2"
+  hint="Each tick is one tenth. The point is to the left of 0, so the value is negative — count the ticks back from 0."
+>}}
+
+<svg viewBox="0 0 620 90" role="img" aria-label="A number line from 3.0 to 4.0 marked in tenths, with a point plotted at the first mark to the right of 3.0." style="max-width: 560px; display: block; margin: 1.5rem auto">
+  <line x1="20" y1="40" x2="600" y2="40" stroke="currentColor" stroke-width="1.5" />
+  <polygon points="600,40 590,34 590,46" fill="currentColor" />
+  <polygon points="20,40 30,34 30,46" fill="currentColor" />
+  <g><line x1="30" y1="33" x2="30" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="30" y="66" text-anchor="middle" font-size="15" fill="currentColor">3.0</text></g>
+  <g><line x1="84" y1="33" x2="84" y2="47" stroke="currentColor" stroke-width="2" /><circle cx="84" cy="40" r="6" fill="currentColor" /></g>
+  <g><line x1="138" y1="33" x2="138" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="192" y1="33" x2="192" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="246" y1="33" x2="246" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="300" y1="33" x2="300" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="300" y="66" text-anchor="middle" font-size="15" fill="currentColor">3.5</text></g>
+  <g><line x1="354" y1="33" x2="354" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="408" y1="33" x2="408" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="462" y1="33" x2="462" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="516" y1="33" x2="516" y2="47" stroke="currentColor" stroke-width="1.5" /></g>
+  <g><line x1="570" y1="33" x2="570" y2="47" stroke="currentColor" stroke-width="1.5" /><text x="570" y="66" text-anchor="middle" font-size="15" fill="currentColor">4.0</text></g>
+</svg>
+
+{{< fillin
+  question="What decimal is plotted on the number line above?"
+  answer="3.1"
+  hint="The point lies between two whole numbers, so the whole-number part is the label to its left; each tick past it adds one tenth."
+>}}
+
+### Order decimals
+
+{{< fillin
+  question="Order using $<$ or $>$: $0.37$ __ $0.63$"
+  answer="0.37 < 0.63"
+  hint="Both numbers already have two decimal places, so compare $37$ and $63$ as whole numbers."
+>}}
+
+{{< fillin
+  question="Order using $<$ or $>$: $0.6$ __ $0.59$"
+  answer="0.6 > 0.59"
+  hint="Write $0.6$ as $0.60$ so both have two decimal places, then compare $60$ and $59$."
+>}}
+
+{{< fillin
+  question="Order using $<$ or $>$: $-0.5$ __ $-0.3$"
+  answer="-0.5 < -0.3"
+  hint="On the number line $-0.5$ lies farther left than $-0.3$, and numbers to the left are smaller."
+>}}
+
+{{< fillin
+  question="Order using $<$ or $>$: $-0.62$ __ $-0.619$"
+  answer="-0.62 < -0.619"
+  hint="Write $-0.62$ as $-0.620$ so both have three decimal places. Since $620 > 619$, the number $-0.620$ lies farther left."
+>}}
+
+### Round decimals
+
+{{< fillin
+  question="Round to the nearest tenth: $0.67$"
+  answer="0.7"
+  hint="The tenths digit is $6$; look at the hundredths digit to its right to decide whether to add $1$."
+>}}
+
+{{< fillin
+  question="Round to the nearest hundredth: $0.845$"
+  answer="0.85"
+  hint="The hundredths digit is $4$; the thousandths digit to its right is $5$, which is enough to round up."
+>}}
+
+{{< fillin
+  question="Round to the nearest hundredth: $63.479$"
+  answer="63.48"
+  hint="Underline the thousandths digit, $9$. Because it is $5$ or more, add $1$ to the hundredths digit and drop everything after it."
+>}}
+
+{{< fillin
+  question="Round to the nearest tenth: $63.479$"
+  answer="63.5"
+  hint="Go back to the original number, not your rounded answer. Underline the hundredths digit, $7$, to decide the tenths place."
+>}}
+
+{{< fillin
+  question="Round to the nearest whole number: $63.479$"
+  answer="63"
+  hint="Underline the tenths digit, $4$. It is less than $5$, so the ones digit stays as it is."
+>}}
+
+{{< fillin
+  question="Hyo Jin bought a refrigerator for \$1,624.99, and the clerk calculated the sales tax as exactly \$142.186625. Round the sales tax to the nearest penny. Enter the amount in dollars, as a number."
+  answer="142.19"
+  answerDisplay="\$142.19"
+  hint="A penny is one hundredth of a dollar, so round to the hundredths place — the thousandths digit decides it."
+>}}
+
+{{< fillin
+  question="Hyo Jin's sales tax was exactly \$142.186625. Round the sales tax to the nearest dollar. Enter the amount in dollars, as a number."
+  answer="142"
+  answerDisplay="\$142"
+  hint="Rounding to the nearest dollar is rounding to the ones place — look only at the tenths digit."
+>}}
+
 ## Key terms
 
 **decimal notation** — a way of writing a number as a whole-number part and
@@ -571,4 +808,4 @@ its value.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 5.1: Decimals](https://openstax.org/books/prealgebra-2e/pages/5-1-decimals) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the place-value chart and decimal/fraction tables as markdown tables, the number lines as accessible inline graphics, and the step-by-step translation tables as simplified prose and tables; omitted the Be Prepared quiz, Figure 5.3 (a check image), the Media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 5.1: Decimals](https://openstax.org/books/prealgebra-2e/pages/5-1-decimals) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the place-value chart and decimal/fraction tables as markdown tables, the number lines as accessible inline graphics, and the step-by-step translation tables as simplified prose and tables; omitted the Be Prepared quiz, Figure 5.3 (a check image), and the Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, redrawing the number-line answer figures as accessible inline graphics and expanding each multipart exercise into one question per part.</small>

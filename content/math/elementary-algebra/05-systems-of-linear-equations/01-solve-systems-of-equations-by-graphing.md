@@ -11,10 +11,12 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** determine whether an
-  ordered pair is a solution of a system of equations, solve a system of
-  linear equations by graphing, determine the number of solutions of a
-  linear system, and solve applications of systems of equations by graphing.
+**By the end of this section, you will be able to:**
+
+- Determine whether an ordered pair is a solution of a system of equations
+- Solve a system of linear equations by graphing
+- Determine the number of solutions of a linear system
+- Solve applications of systems of equations by graphing
 {{< /callout >}}
 
 ## Determine whether an ordered pair is a solution of a system of equations

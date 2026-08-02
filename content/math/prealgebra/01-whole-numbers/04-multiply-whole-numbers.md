@@ -10,10 +10,13 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use multiplication
-  notation, model multiplication of whole numbers, multiply whole numbers,
-  translate word phrases to math notation, and multiply whole numbers in
-  applications.
+**By the end of this section, you will be able to:**
+
+- Use multiplication notation
+- Model multiplication of whole numbers
+- Multiply whole numbers
+- Translate word phrases to math notation
+- Multiply whole numbers in applications
 {{< /callout >}}
 
 ## Use multiplication notation
@@ -225,6 +228,144 @@ area of the ceiling is $108$ square feet.
   hint="The area of a rectangle is the product of its length and its width."
 >}}
 
+## Practice
+
+### Use multiplication notation
+
+{{< multiplechoice
+  question="Translate $4 \times 7$ from math notation to words."
+  answer="four times seven; the product of four and seven"
+  hint="Read the left factor first. The result of a multiplication is called the product, not the sum."
+>}}
+four plus seven; the sum of four and seven
+four times seven; the sum of four and seven
+seven times four; the product of seven and four
+four times seven; the product of four and seven
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Translate $5 \cdot 12$ from math notation to words."
+  answer="five times twelve; the product of five and twelve"
+  hint="A centered dot is one of the multiplication symbols. Read the factors in the order they are written."
+>}}
+five plus twelve; the sum of five and twelve
+five times twelve; the product of five and twelve
+twelve times five; the product of twelve and five
+five times twelve; the sum of five and twelve
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Translate $42(33)$ from math notation to words."
+  answer="forty-two times thirty-three; the product of forty-two and thirty-three"
+  hint="A number written directly beside a number in parentheses is a factor — parentheses are a multiplication symbol here."
+>}}
+forty-two plus thirty-three; the sum of forty-two and thirty-three
+thirty-three times forty-two; the product of thirty-three and forty-two
+forty-two times thirty-three; the product of forty-two and thirty-three
+forty-two times thirty-three; the sum of forty-two and thirty-three
+{{< /multiplechoice >}}
+
+### Model multiplication of whole numbers
+
+<svg viewBox="0 0 260 115" role="img" aria-label="Three rows of counters with six circles in each row." style="max-width: 260px; width: 100%; display: block; margin: 1.5rem auto">
+  <circle cx="25" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="67" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="109" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="151" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="193" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="235" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="25" cy="55" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="67" cy="55" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="109" cy="55" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="151" cy="55" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="193" cy="55" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="235" cy="55" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="25" cy="90" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="67" cy="90" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="109" cy="90" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="151" cy="90" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="193" cy="90" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="235" cy="90" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+</svg>
+
+{{< fillin
+  question="The counters above model $3 \times 6$. How many counters are there in all?"
+  answer="18"
+  hint="Count the counters in one row, then add that number once for each row — or multiply the number of rows by the number in each row."
+>}}
+
+<svg viewBox="0 0 386 185" role="img" aria-label="Five rows of counters with nine circles in each row." style="max-width: 386px; width: 100%; display: block; margin: 1.5rem auto">
+  <circle cx="25" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="67" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="109" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="151" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="193" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="235" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="277" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="319" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="361" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="25" cy="55" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="67" cy="55" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="109" cy="55" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="151" cy="55" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="193" cy="55" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="235" cy="55" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="277" cy="55" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="319" cy="55" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="361" cy="55" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="25" cy="90" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="67" cy="90" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="109" cy="90" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="151" cy="90" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="193" cy="90" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="235" cy="90" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="277" cy="90" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="319" cy="90" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="361" cy="90" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="25" cy="125" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="67" cy="125" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="109" cy="125" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="151" cy="125" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="193" cy="125" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="235" cy="125" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="277" cy="125" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="319" cy="125" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="361" cy="125" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="25" cy="160" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="67" cy="160" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="109" cy="160" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="151" cy="160" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="193" cy="160" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="235" cy="160" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="277" cy="160" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="319" cy="160" r="13" fill="none" stroke="currentColor" stroke-width="1.5" /><circle cx="361" cy="160" r="13" fill="none" stroke="currentColor" stroke-width="1.5" />
+</svg>
+
+{{< fillin
+  question="The counters above model $5 \times 9$. How many counters are there in all?"
+  answer="45"
+  hint="Five rows of nine — multiply the number of rows by the number of counters in each row."
+>}}
+
+### Multiply whole numbers
+
+{{< fillin
+  question="Multiply: $7 \cdot 6$."
+  answer="42"
+  hint="This is a one-digit multiplication fact — seven groups of six."
+>}}
+
+{{< fillin
+  question="Multiply: $6 \cdot 7$."
+  answer="42"
+  hint="Compare this with the previous product: the Commutative Property says changing the order of the factors does not change their product."
+>}}
+
+{{< fillin
+  question="Multiply: $1{,}000(88)$."
+  answer="88000"
+  answerDisplay="$88{,}000$"
+  hint="$1{,}000$ has three zeros, so attach three zeros to the other factor."
+>}}
+
+{{< fillin
+  question="Multiply: $247 \times 139$."
+  answer="34333"
+  answerDisplay="$34{,}333$"
+  hint="Write the numbers vertically and add three partial products — from the 9 ones, the 3 tens, and the 1 hundred — shifting each one more place to the left."
+>}}
+
+### Translate word phrases to math notation
+
+{{< fillin
+  question="Translate and simplify: the product of 18 and 33."
+  answer="594"
+  answerDisplay="$18 \cdot 33 = 594$"
+  hint="The word product tells you to multiply. Write the two numbers as factors, then multiply."
+>}}
+
+{{< fillin
+  question="Translate and simplify: twice 249."
+  answer="498"
+  answerDisplay="$2(249) = 498$"
+  hint="Twice a number means two times that number."
+>}}
+
+{{< fillin
+  question="Translate and simplify: ten times three hundred seventy-five."
+  answer="3750"
+  answerDisplay="$10(375) = 3{,}750$"
+  hint="Write the words as digits first, then use the pattern for multiplying by a number that ends in zeros."
+>}}
+
+### Multiply whole numbers in applications
+
+{{< fillin
+  question="Tim brought 9 six-packs of soda to a club party. How many cans of soda did Tim bring?"
+  answer="54"
+  hint="A six-pack holds 6 cans — the total is the product of the number of packs and the cans in each pack."
+>}}
+
+{{< fillin
+  question="Jane is painting one wall of her living room. The wall is rectangular, 13 feet wide by 9 feet high. What is the area of the wall in square feet?"
+  answer="117"
+  hint="The area of a rectangle is the product of its length and its width."
+>}}
+
+{{< fillin
+  question="According to NCAA regulations, a rectangular basketball court must be 94 feet by 50 feet. What is the area of the court in square feet?"
+  answer="4700"
+  answerDisplay="$4{,}700$ square feet"
+  hint="Multiply the two dimensions. Since 50 is half of 100, the product is half of $94 \times 100$."
+>}}
+
+{{< fillin
+  question="Javier owns 300 shares of stock in one company. On Tuesday, the stock price rose \$12 per share. How much money did Javier's portfolio gain, in dollars?"
+  answer="3600"
+  answerDisplay="\$3,600"
+  hint="Multiply the number of shares by the amount each share gained."
+>}}
+
 ## Key terms
 
 **factor** — a number being multiplied. **product** — the result of
@@ -239,4 +380,4 @@ the product of length and width.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 1.4: Multiply Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-4-multiply-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, redrew the counters model as an accessible inline graphic and summarized the multiplication-facts table and worked columns in prose, and converted practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 1.4: Multiply Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-4-multiply-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, redrew the counters models as accessible inline graphics and summarized the multiplication-facts table and worked columns in prose, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

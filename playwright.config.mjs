@@ -8,12 +8,13 @@ const baseURL = process.env.BASE_URL || 'http://127.0.0.1:1315';
 const chromiumExecutablePath =
   process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH;
 
-// CI runs `npm run build` and `npm run check:build` immediately before
-// `npm run test:a11y`, so `public/` is already current there. Everywhere else
-// the build is part of starting the server, because a stale `public/` serves
-// pages whose fingerprinted stylesheets 404.
+// The `ci` script runs `npm run build` and `npm run check:build` immediately
+// before the browser suites, so `public/` is already current there
+// (PLAYWRIGHT_SKIP_BUILD=1). Everywhere else the build is part of starting
+// the server, because a stale `public/` serves pages whose fingerprinted
+// stylesheets 404.
 const serveCommand = 'npm run serve:public';
-const webServerCommand = process.env.A11Y_SKIP_BUILD
+const webServerCommand = process.env.PLAYWRIGHT_SKIP_BUILD
   ? serveCommand
   : `npm run build && ${serveCommand}`;
 
@@ -46,7 +47,12 @@ export default defineConfig({
       },
     },
     {
+      // Only the accessibility suite is colour-scheme-sensitive (contrast is
+      // measured per theme). The grader end-to-end checks are byte-identical
+      // in both schemes, so running them here would double the slowest tests
+      // for zero added signal.
       name: 'chromium-dark',
+      testMatch: /accessibility\.spec\.mjs/,
       use: {
         ...devices['Desktop Chrome'],
         channel: 'chrome',

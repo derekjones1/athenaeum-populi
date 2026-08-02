@@ -10,10 +10,13 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** identify polynomials,
-  monomials, binomials, and trinomials; determine the degree of polynomials;
-  add and subtract monomials; add and subtract polynomials; and evaluate a
-  polynomial for a given value.
+**By the end of this section, you will be able to:**
+
+- Identify polynomials, monomials, binomials, and trinomials
+- Determine the degree of polynomials
+- Add and subtract monomials
+- Add and subtract polynomials
+- Evaluate a polynomial for a given value
 {{< /callout >}}
 
 ## Identify polynomials, monomials, binomials, and trinomials
@@ -366,6 +369,161 @@ The height of the object is $156$ feet after $t = 3$ seconds.
   hint="Substitute $2$ for $t$ into $-8t^2 + 24t + 4$, simplify the exponent first, then multiply and add."
 >}}
 
+## Practice
+
+### Identify polynomials, monomials, binomials, and trinomials
+
+{{< multiplechoice
+  question="Determine whether $5x + 2$ is a monomial, binomial, trinomial, or other polynomial."
+  answer="binomial"
+  hint="Count the terms separated by addition or subtraction signs, then match the count to the name."
+>}}
+monomial
+binomial
+trinomial
+other polynomial
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether $a^2 + 9a + 18$ is a monomial, binomial, trinomial, or other polynomial."
+  answer="trinomial"
+  hint="Count the terms separated by addition or subtraction signs, then match the count to the name."
+>}}
+monomial
+binomial
+trinomial
+other polynomial
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether $23y^2$ is a monomial, binomial, trinomial, or other polynomial."
+  answer="monomial"
+  hint="A single term of the form $ax^m$ has its own special name."
+>}}
+monomial
+binomial
+trinomial
+other polynomial
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether $y^3 - 8y^2 + 2y - 16$ is a monomial, binomial, trinomial, or other polynomial."
+  answer="other polynomial"
+  hint="Only one-, two-, and three-term polynomials get a special name; anything with more terms is just called a polynomial."
+>}}
+monomial
+binomial
+trinomial
+other polynomial
+{{< /multiplechoice >}}
+
+### Determine the degree of polynomials
+
+{{< fillin
+  question="Determine the degree of $8a^5 - 2a^3 + 1$."
+  answer="5"
+  hint="The degree of a polynomial is the highest exponent among all of its terms."
+>}}
+
+{{< fillin
+  question="Determine the degree of $3x - 12$."
+  answer="1"
+  hint="A variable written without an exponent has an implied exponent of $1$, and a constant has degree $0$."
+>}}
+
+{{< fillin
+  question="Determine the degree of $-13$."
+  answer="0"
+  hint="This polynomial has no variable at all."
+>}}
+
+### Add and subtract monomials
+
+{{< fillin
+  question="Add: $6x^2 + 9x^2$."
+  answer="15x^2"
+  answerDisplay="$15x^2$"
+  hint="These are like terms, so add the coefficients and keep the exponent on $x$ unchanged."
+>}}
+
+{{< fillin
+  question="Add: $-12u + 4u$."
+  answer="-8u"
+  answerDisplay="$-8u$"
+  hint="Combine the coefficients $-12$ and $4$; the variable part stays the same."
+>}}
+
+{{< fillin
+  question="Add: $5a + 7b$."
+  answer="5a + 7b"
+  answerDisplay="$5a + 7b$"
+  hint="Check whether the two terms have the same variable before combining anything."
+>}}
+
+{{< fillin
+  question="Subtract $5x^6$ from $-12x^6$."
+  answer="-17x^6"
+  answerDisplay="$-17x^6$"
+  hint="Write it as $-12x^6 - 5x^6$, then combine the coefficients."
+>}}
+
+### Add and subtract polynomials
+
+{{< fillin
+  question="Add: $(4y^2 + 10y + 3) + (8y^2 - 6y + 5)$."
+  answer="12y^2 + 4y + 8"
+  answerDisplay="$12y^2 + 4y + 8$"
+  hint="Drop the parentheses, group the like terms together, then combine each group."
+>}}
+
+{{< fillin
+  question="Add: $(x^2 + 6x + 8) + (-4x^2 + 11x - 9)$."
+  answer="-3x^2 + 17x - 1"
+  answerDisplay="$-3x^2 + 17x - 1$"
+  hint="Watch the sign on $-4x^2$ when you combine it with $x^2$."
+>}}
+
+{{< fillin
+  question="Subtract: $(6m^2 - 9m - 3) - (2m^2 + m - 5)$."
+  answer="4m^2 - 10m + 2"
+  answerDisplay="$4m^2 - 10m + 2$"
+  hint="Distribute the minus sign across all three terms of the second polynomial before combining."
+>}}
+
+{{< fillin
+  question="Subtract $(7x^2 - 4x + 2)$ from $(8x^2 - x + 6)$."
+  answer="x^2 + 3x + 4"
+  answerDisplay="$x^2 + 3x + 4$"
+  hint="Write it as $(8x^2 - x + 6) - (7x^2 - 4x + 2)$, distribute the minus sign, then combine like terms."
+>}}
+
+### Evaluate a polynomial for a given value
+
+{{< fillin
+  question="Evaluate $8y^2 - 3y + 2$ when $y = 5$."
+  answer="187"
+  hint="Substitute $5$ for $y$, square first, then multiply and combine."
+>}}
+
+{{< fillin
+  question="Evaluate $8y^2 - 3y + 2$ when $y = -2$."
+  answer="40"
+  hint="A negative number squared is positive, and $-3(-2)$ is positive as well."
+>}}
+
+{{< fillin
+  question="Evaluate $8y^2 - 3y + 2$ when $y = 0$."
+  answer="2"
+  hint="Every term with a $y$ in it becomes $0$, so only the constant is left."
+>}}
+
+{{< fillin
+  question="A window washer drops a squeegee from a platform $275$ feet high. The polynomial $-16t^2 + 275$ gives the height, in feet, of the squeegee $t$ seconds after it was dropped. Find the height after $t = 4$ seconds."
+  answer="19"
+  answerDisplay="$19$ feet"
+  hint="Substitute $4$ for $t$, simplify $-16(4)^2$ first, then add $275$."
+>}}
+
 ## Key terms
 
 **polynomial** — a monomial, or two or more monomials, combined by addition
@@ -378,4 +536,4 @@ written with its terms in descending order of degree.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 10.1: Add and Subtract Polynomials](https://openstax.org/books/prealgebra-2e/pages/10-1-add-and-subtract-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the polynomial-classification and degree tables as markdown tables; omitted the Be Prepared quiz, Media callout, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 10.1: Add and Subtract Polynomials](https://openstax.org/books/prealgebra-2e/pages/10-1-add-and-subtract-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the polynomial-classification and degree tables as markdown tables; omitted the Be Prepared quiz, Media callout, Self Check checklist, and Writing Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating the classification prompts as multiple-choice questions and expanding the multipart evaluation item into one question per part.</small>

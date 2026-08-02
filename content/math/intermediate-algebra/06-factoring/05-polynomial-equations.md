@@ -10,10 +10,12 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use the Zero Product
-  Property, solve quadratic equations by factoring, solve equations with
-  polynomial functions, and solve applications modeled by polynomial
-  equations.
+**By the end of this section, you will be able to:**
+
+- Use the Zero Product Property
+- Solve quadratic equations by factoring
+- Solve equations with polynomial functions
+- Solve applications modeled by polynomial equations
 {{< /callout >}}
 
 We have spent considerable time learning how to factor polynomials. We will
@@ -540,6 +542,7 @@ $15^2+8^2=225+64=289=17^2$.
 {{< fillin
   question="A right-triangle deck has one side 7 feet longer than the other and hypotenuse 13 feet. Enter the two leg lengths, separated by a comma."
   answer="5, 12"
+  answerMode="unordered"
   answerDisplay="$5, 12$"
   hint="Let one leg be $x$ and the other $x+7$. Use $x^2+(x+7)^2=13^2$."
 >}}

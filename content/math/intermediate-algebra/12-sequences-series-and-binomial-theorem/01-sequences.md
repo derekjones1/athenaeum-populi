@@ -8,7 +8,13 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-**By the end of this section, you will be able to:** write the first few terms of a sequence; find a formula for the general term (nth term) of a sequence; use factorial notation; find the partial sum; use summation notation to write a sum.
+**By the end of this section, you will be able to:**
+
+- Write the first few terms of a sequence
+- Find a formula for the general term (nth term) of a sequence
+- Use factorial notation
+- Find the partial sum
+- Use summation notation to write a sum
 {{< /callout >}}
 
 ## Write the First Few Terms of a Sequence

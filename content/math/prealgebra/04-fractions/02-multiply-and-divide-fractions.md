@@ -9,8 +9,12 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** simplify fractions,
-  multiply fractions, find reciprocals, and divide fractions.
+**By the end of this section, you will be able to:**
+
+- Simplify fractions
+- Multiply fractions
+- Find reciprocals
+- Divide fractions
 {{< /callout >}}
 
 ## Simplify fractions
@@ -58,6 +62,7 @@ $$\frac{10}{15} = \frac{2}{3}$$
 {{< fillin
   question="Simplify: $\tfrac{8}{12}$"
   answer="\frac{2}{3}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{2}{3}$"
   hint="Factor out the common factor of $4$ from both numerator and denominator."
 >}}
@@ -84,6 +89,7 @@ $-\tfrac{7}{4}$.
 {{< fillin
   question="Simplify: $-\tfrac{54}{42}$"
   answer="-\frac{9}{7}"
+  answerForm="lowest-terms"
   answerDisplay="$-\tfrac{9}{7}$"
   hint="Find the largest common factor of $54$ and $42$ (it's $6$), then remove it."
 >}}
@@ -106,6 +112,7 @@ $$\frac{210}{385} = \frac{2 \cdot 3}{11} = \frac{6}{11}$$
 {{< fillin
   question="Simplify: $\tfrac{120}{192}$. Factor each into primes first if it helps."
   answer="\frac{5}{8}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{5}{8}$"
   hint="$120 = 2\cdot2\cdot2\cdot3\cdot5$ and $192 = 2\cdot2\cdot2\cdot2\cdot2\cdot2\cdot3$. Remove the common factors of $2$ (three of them) and $3$."
 >}}
@@ -348,6 +355,131 @@ $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
   hint="Multiply by the reciprocal of $\tfrac{35}{36}$, then look for common factors of $7$ and $9$ before finishing."
 >}}
 
+## Practice
+
+### Simplify fractions
+
+{{< fillin
+  question="Simplify: $-\tfrac{40}{88}$"
+  answer="-\frac{5}{11}"
+  answerForm="lowest-terms"
+  answerDisplay="$-\tfrac{5}{11}$"
+  hint="Both $40$ and $88$ are divisible by $8$ — rewrite each as a product with $8$ and remove the common factor. The negative sign stays."
+>}}
+
+{{< fillin
+  question="Simplify: $-\tfrac{108}{63}$. Do not convert the improper fraction to a mixed number."
+  answer="-\frac{12}{7}"
+  answerForm="improper-fraction lowest-terms"
+  answerDisplay="$-\tfrac{12}{7}$"
+  hint="$108 = 12 \cdot 9$ and $63 = 7 \cdot 9$, so $9$ is the common factor. An improper fraction can be simplified without rewriting it as a mixed number."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{120}{252}$"
+  answer="\frac{10}{21}"
+  answerForm="lowest-terms"
+  answerDisplay="$\tfrac{10}{21}$"
+  hint="Factor both into primes: $120 = 2\cdot2\cdot2\cdot3\cdot5$ and $252 = 2\cdot2\cdot3\cdot3\cdot7$. Remove the two $2$s and the $3$ they share."
+>}}
+
+{{< fillin
+  question="Simplify: $-\tfrac{3x}{12y}$"
+  answer="-\frac{x}{4y}"
+  answerDisplay="$-\tfrac{x}{4y}$"
+  hint="$3$ is a common factor of $3x$ and $12y$; the variables $x$ and $y$ are different, so neither one can be removed."
+>}}
+
+### Multiply fractions
+
+{{< fillin
+  question="Multiply, and write the answer in simplified form: $\tfrac{3}{4} \cdot \tfrac{9}{10}$"
+  answer="\frac{27}{40}"
+  answerDisplay="$\tfrac{27}{40}$"
+  hint="Multiply the numerators and multiply the denominators, then check whether $27$ and $40$ share a factor."
+>}}
+
+{{< fillin
+  question="Multiply, and write the answer in simplified form: $\tfrac{7}{12}\left(-\tfrac{8}{21}\right)$"
+  answer="-\frac{2}{9}"
+  answerDisplay="$-\tfrac{2}{9}$"
+  hint="Opposite signs give a negative product. Remove the common factor of $7$ from $7$ and $21$, and the common factor of $4$ from $8$ and $12$, before multiplying."
+>}}
+
+{{< fillin
+  question="Multiply, and write the answer in simplified form: $\tfrac{3}{7} \cdot 21n$"
+  answer="9n"
+  answerDisplay="$9n$"
+  hint="Write $21n$ as $\tfrac{21n}{1}$, then remove the common factor of $7$ before multiplying."
+>}}
+
+{{< fillin
+  question="Multiply, and write the answer in simplified form: $\left(\tfrac{2}{3}\right)^{3}$"
+  answer="\frac{8}{27}"
+  answerDisplay="$\tfrac{8}{27}$"
+  hint="The exponent tells you how many factors of $\tfrac{2}{3}$ to multiply — cube the numerator and cube the denominator."
+>}}
+
+### Find reciprocals
+
+{{< fillin
+  question="Find the reciprocal of $-\tfrac{5}{17}$."
+  answer="-\frac{17}{5}"
+  answerDisplay="$-\tfrac{17}{5}$"
+  hint="Invert the fraction and keep the same sign — a number and its reciprocal must multiply to a positive $1$."
+>}}
+
+{{< fillin
+  question="Find the reciprocal of $\tfrac{11}{8}$."
+  answer="\frac{8}{11}"
+  answerDisplay="$\tfrac{8}{11}$"
+  hint="Swap the numerator and denominator; check by confirming the product with the original is $1$."
+>}}
+
+{{< fillin
+  question="Find the reciprocal of $-19$."
+  answer="-\frac{1}{19}"
+  answerDisplay="$-\tfrac{1}{19}$"
+  hint="Write $-19$ as $-\tfrac{19}{1}$ first, then invert and keep the negative sign."
+>}}
+
+### Divide fractions
+
+{{< fillin
+  question="Divide, and write the answer in simplified form: $\tfrac{4}{5} \div \tfrac{3}{4}$"
+  answer="\frac{16}{15}"
+  answerDisplay="$\tfrac{16}{15}$"
+  hint="Multiply $\tfrac{4}{5}$ by the reciprocal of $\tfrac{3}{4}$. The answer is an improper fraction — leave it that way."
+>}}
+
+{{< fillin
+  question="Divide, and write the answer in simplified form: $-\tfrac{3}{4} \div \tfrac{3}{5}$"
+  answer="-\frac{5}{4}"
+  answerDisplay="$-\tfrac{5}{4}$"
+  hint="Multiply by the reciprocal $\tfrac{5}{3}$. Opposite signs make the quotient negative, and the $3$s cancel."
+>}}
+
+{{< fillin
+  question="Divide, and write the answer in simplified form: $\tfrac{2}{5} \div \tfrac{y}{9}$"
+  answer="\frac{18}{5y}"
+  answerDisplay="$\tfrac{18}{5y}$"
+  hint="The reciprocal of $\tfrac{y}{9}$ is $\tfrac{9}{y}$ — multiply, and leave the variable in the denominator."
+>}}
+
+{{< fillin
+  question="Divide, and write the answer in simplified form: $\tfrac{2}{5} \div (-10)$"
+  answer="-\frac{1}{25}"
+  answerDisplay="$-\tfrac{1}{25}$"
+  hint="Write $-10$ as $-\tfrac{10}{1}$; its reciprocal is $-\tfrac{1}{10}$. Then remove the common factor of $2$."
+>}}
+
+{{< fillin
+  question="Divide, and write the answer in simplified form: $\tfrac{11}{2} \div \tfrac{7}{8} \cdot \tfrac{2}{11}$"
+  answer="\frac{8}{7}"
+  answerDisplay="$\tfrac{8}{7}$"
+  hint="Division and multiplication are done left to right. Replace the division by multiplying by $\tfrac{8}{7}$, then remove the common factors of $11$ and $2$."
+>}}
+
 ## Key terms
 
 **simplified fraction** — a fraction with no common factors, other than
@@ -362,4 +494,4 @@ multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 4.2: Multiply and Divide Fractions](https://openstax.org/books/prealgebra-2e/pages/4-2-multiply-and-divide-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the fraction-tile and shaded-rectangle multiplication models as prose walkthroughs and the factor-tree simplification as typeset math; omitted the Be Prepared quiz, Manipulative Mathematics callouts, the opposite/absolute value/reciprocal comparison chart's fill-in-the-blank format, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 4.2: Multiply and Divide Fractions](https://openstax.org/books/prealgebra-2e/pages/4-2-multiply-and-divide-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the fraction-tile and shaded-rectangle multiplication models as prose walkthroughs and the factor-tree simplification as typeset math; omitted the Be Prepared quiz, Manipulative Mathematics callouts, the opposite/absolute value/reciprocal comparison chart's fill-in-the-blank format, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

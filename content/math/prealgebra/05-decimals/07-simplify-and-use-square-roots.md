@@ -10,10 +10,13 @@ weight: 7
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** simplify expressions
-  with square roots, estimate square roots, approximate square roots with a
-  calculator, simplify variable expressions with square roots, and use
-  square roots in applications.
+**By the end of this section, you will be able to:**
+
+- Simplify expressions with square roots
+- Estimate square roots
+- Approximate square roots
+- Simplify variable expressions with square roots
+- Use square roots in applications
 {{< /callout >}}
 
 ## Simplify expressions with square roots
@@ -149,11 +152,14 @@ is not a real number.
 (b) The negative is in front of the radical sign, so we find the opposite
 of the square root of $121$: $-\sqrt{121} = -11$.
 
-{{< fillin
-  question="Is there a real number whose square is $-49$ (in other words, is $\sqrt{-49}$ a real number)? Enter 1 for yes or 0 for no."
-  answer="0"
+{{< multiplechoice
+  question="Is there a real number whose square is $-49$ (in other words, is $\sqrt{-49}$ a real number)?"
+  answer="no"
   hint="Any real number's square is always positive or zero, so no real number squared can equal a negative number."
 >}}
+yes
+no
+{{< /multiplechoice >}}
 
 {{< fillin
   question="Simplify: $-\sqrt{121}$"
@@ -382,7 +388,7 @@ patio should be $14.1$ feet.
   question="Sergio wants to make a square mosaic as an inlay for a table he is building. He has enough tile to cover an area of 2704 square centimeters. How long can a side of his mosaic be?"
   answer="52"
   answerDisplay="52 cm"
-  hint="Take the square root of $2704$ — it happens to be a perfect square."
+  hint="Take the square root of $2{,}704$ — it happens to be a perfect square."
 >}}
 
 ### Square roots and gravity
@@ -450,6 +456,114 @@ approximately $67.5$ miles per hour.
   hint="Evaluate $\sqrt{24d}$ with $d = 122$, then round to the nearest tenth."
 >}}
 
+## Practice
+
+### Simplify expressions with square roots
+
+{{< fillin
+  question="Simplify: $\sqrt{64}$"
+  answer="8"
+  hint="Look for the whole number whose square is $64$."
+>}}
+
+{{< fillin
+  question="Simplify: $-\sqrt{1}$"
+  answer="-1"
+  hint="The negative sign sits outside the radical, so take the principal square root first and then attach the negative sign."
+>}}
+
+{{< multiplechoice
+  question="Simplify: $\sqrt{-121}$"
+  answer="not a real number"
+  hint="Ask whether any real number — positive or negative — has a square of $-121$."
+>}}
+$11$
+$-11$
+$\pm 11$
+not a real number
+{{< /multiplechoice >}}
+
+### Estimate square roots
+
+{{< multiplechoice
+  question="Estimate $\sqrt{70}$ between two consecutive whole numbers."
+  answer="$8 < \sqrt{70} < 9$"
+  hint="Find the perfect squares just below and just above $70$, then take their square roots."
+>}}
+$7 < \sqrt{70} < 8$
+$8 < \sqrt{70} < 9$
+$9 < \sqrt{70} < 10$
+$34 < \sqrt{70} < 36$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Estimate $\sqrt{200}$ between two consecutive whole numbers."
+  answer="$14 < \sqrt{200} < 15$"
+  hint="The perfect squares $196$ and $225$ bracket $200$."
+>}}
+$13 < \sqrt{200} < 14$
+$14 < \sqrt{200} < 15$
+$15 < \sqrt{200} < 16$
+$99 < \sqrt{200} < 101$
+{{< /multiplechoice >}}
+
+### Approximate square roots
+
+{{< fillin
+  question="Use a calculator to approximate $\sqrt{19}$, rounded to two decimal places."
+  answer="4.36"
+  hint="$\sqrt{19}$ lies between $4$ and $5$; round the calculator display to the hundredths place."
+>}}
+
+{{< fillin
+  question="Use a calculator to approximate $\sqrt{53}$, rounded to two decimal places."
+  answer="7.28"
+  hint="$\sqrt{53}$ lies between $7$ and $8$; round the calculator display to the hundredths place."
+>}}
+
+### Simplify variable expressions with square roots
+
+{{< fillin
+  question="Simplify, assuming every variable is greater than or equal to zero: $\sqrt{49x^2}$"
+  answer="7x"
+  hint="Ask what expression, squared, gives $49x^2$ — take the square root of the coefficient and of the variable part separately."
+>}}
+
+{{< fillin
+  question="Simplify, assuming every variable is greater than or equal to zero: $-\sqrt{64a^2}$"
+  answer="-8a"
+  hint="Simplify the radical first, then attach the negative sign that sits in front of it."
+>}}
+
+{{< fillin
+  question="Simplify, assuming every variable is greater than or equal to zero: $\sqrt{144x^2y^2}$"
+  answer="12xy"
+  hint="Take the square root of the coefficient and of each variable's square separately."
+>}}
+
+### Use square roots in applications
+
+{{< fillin
+  question="Reed wants to have a square garden plot in his backyard. He has enough compost to cover an area of 75 square feet. To the nearest tenth of a foot, how long can a side of his garden be?"
+  answer="8.7"
+  answerDisplay="8.7 feet"
+  hint="A square of area $A$ has sides of length $\sqrt{A}$, so evaluate $\sqrt{75}$ and round to one decimal place."
+>}}
+
+{{< fillin
+  question="An airplane dropped a flare from a height of 1,024 feet above a lake. How many seconds did it take for the flare to reach the water?"
+  answer="8"
+  answerDisplay="8 seconds"
+  hint="Evaluate $\tfrac{\sqrt{h}}{4}$ with $h = 1{,}024$ — that square root is a whole number."
+>}}
+
+{{< fillin
+  question="The skid marks from a car involved in an accident measured 216 feet. What was the speed of the car, in miles per hour, before the brakes were applied?"
+  answer="72"
+  answerDisplay="72 mph"
+  hint="Evaluate $\sqrt{24d}$ with $d = 216$ — the product under the radical is a perfect square."
+>}}
+
 ## Key terms
 
 **perfect square** — the square of a whole number. **square root** — a
@@ -461,4 +575,4 @@ of a positive number.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 5.7: Simplify and Use Square Roots](https://openstax.org/books/prealgebra-2e/pages/5-7-simplify-and-use-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the perfect-square and square-root charts, the area/side-length table, and the tile-diagram concept as markdown tables and prose; omitted the Be Prepared quiz, Manipulative Mathematics and Links to Literacy callouts, Media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 5.7: Simplify and Use Square Roots](https://openstax.org/books/prealgebra-2e/pages/5-7-simplify-and-use-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the perfect-square and square-root charts, the area/side-length table, and the tile-diagram concept as markdown tables and prose; omitted the Be Prepared quiz, Manipulative Mathematics and Links to Literacy callouts, and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

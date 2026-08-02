@@ -10,11 +10,12 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** find the average rate
-  of change of a function, use a graph to determine where a function is
-  increasing, decreasing, or constant, use a graph to locate local maxima and
-  local minima, and use a graph to locate the absolute maximum and absolute
-  minimum.
+**By the end of this section, you will be able to:**
+
+- Find the average rate of change of a function
+- Use a graph to determine where a function is increasing, decreasing, or constant
+- Use a graph to locate local maxima and local minima
+- Use a graph to locate the absolute maximum and absolute minimum
 {{< /callout >}}
 
 Gasoline costs have experienced some wild fluctuations over the last several

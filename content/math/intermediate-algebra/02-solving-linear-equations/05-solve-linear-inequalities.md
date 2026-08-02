@@ -9,9 +9,12 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** graph inequalities on
-  the number line, solve linear inequalities, translate words to an inequality
-  and solve, and solve applications with linear inequalities.
+**By the end of this section, you will be able to:**
+
+- Graph inequalities on the number line
+- Solve linear inequalities
+- Translate words to an inequality and solve
+- Solve applications with linear inequalities
 {{< /callout >}}
 
 ## Graph inequalities on the number line
@@ -726,7 +729,7 @@ that quantity. Let $n=$ the number of tablets.
 
 **Step 4. Translate.** Write a sentence that gives the information to find
 it: \$254.12 times the number of tablets is no more than \$4,000. Translate
-into an inequality: $254.12n\leq4000$.
+into an inequality: $254.12n\leq4{,}000$.
 
 **Step 5. Solve** the inequality. $n\leq15.74$. But $n$ must be a whole
 number of tablets, so round to $15$: $n\leq15$.
@@ -821,7 +824,7 @@ at least $1{,}380$ invitations.
   question="Caleb charges \$32 per hour for pet sitting. His monthly expenses are \$2,272. How many hours must he work to earn a profit of at least \$800 per month?"
   answer="96"
   answerDisplay="96 hours"
-  hint="Solve $32h-2272\geq800$."
+  hint="Solve $32h-2{,}272\geq800$."
 >}}
 
 There are many situations in which several quantities contribute to the

@@ -9,8 +9,10 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve equations with
-  fraction coefficients, and solve equations with decimal coefficients.
+**By the end of this section, you will be able to:**
+
+- Solve equations with fraction coefficients
+- Solve equations with decimal coefficients
 {{< /callout >}}
 
 ## Solve equations with fraction coefficients
@@ -461,6 +463,103 @@ $$0.25(9) + 0.05(9 + 3) \stackrel{?}{=} 2.85 \qquad 2.25 + 0.05(12) \stackrel{?}
   hint="Distribute the $0.05$ first, combine like terms, then multiply by $100$ to clear the decimals."
 >}}
 
+## Practice
+
+### Solve equations with fraction coefficients
+
+{{< fillin
+  question="Solve the equation by clearing the fractions: $\tfrac{1}{4}x - \tfrac{1}{2} = -\tfrac{3}{4}$."
+  answer="-1"
+  answerDisplay="$x = -1$"
+  hint="The LCD of $4$ and $2$ is $4$. Multiply both sides by $4$, then solve the resulting equation."
+>}}
+
+{{< fillin
+  question="Solve the equation by clearing the fractions: $\tfrac{1}{2}a + \tfrac{3}{8} = \tfrac{3}{4}$."
+  answer="3/4"
+  answerDisplay="$a = \tfrac{3}{4}$"
+  hint="The LCD of $2$, $8$, and $4$ is $8$. Multiply both sides by $8$, then divide by the coefficient of $a$."
+>}}
+
+{{< fillin
+  question="Solve the equation by clearing the fractions: $2 = \tfrac{1}{3}x - \tfrac{1}{2}x + \tfrac{2}{3}x$."
+  answer="4"
+  answerDisplay="$x = 4$"
+  hint="Multiply both sides by the LCD, $6$, distribute, then combine the like terms before dividing."
+>}}
+
+{{< fillin
+  question="Solve the equation by clearing the fractions: $\tfrac{1}{3}w + \tfrac{5}{4} = w - \tfrac{1}{4}$."
+  answer="9/4"
+  answerDisplay="$w = \tfrac{9}{4}$"
+  hint="Multiply both sides by the LCD, $12$, then collect the $w$-terms on one side and the constants on the other."
+>}}
+
+{{< fillin
+  question="Solve the equation: $1 = \tfrac{1}{6}(12x - 6)$."
+  answer="1"
+  answerDisplay="$x = 1$"
+  hint="Distribute the $\tfrac{1}{6}$ first — that clears the fraction right away — then solve for $x$."
+>}}
+
+{{< fillin
+  question="Solve the equation: $\tfrac{1}{4}(p - 7) = \tfrac{1}{3}(p + 5)$."
+  answer="-41"
+  answerDisplay="$p = -41$"
+  hint="Distribute on both sides, then multiply by the LCD, $12$, to clear the fractions that remain."
+>}}
+
+### Solve equations with decimal coefficients
+
+{{< fillin
+  question="Solve the equation by clearing the decimals: $0.6y + 3 = 9$."
+  answer="10"
+  answerDisplay="$y = 10$"
+  hint="Since $0.6 = \tfrac{6}{10}$, multiply both sides by $10$, then solve for $y$."
+>}}
+
+{{< fillin
+  question="Solve the equation by clearing the decimals: $3.6j - 2 = 5.2$."
+  answer="2"
+  answerDisplay="$j = 2$"
+  hint="The decimals go to the tenths place, so multiply both sides by $10$ before solving."
+>}}
+
+{{< fillin
+  question="Solve the equation by clearing the decimals: $0.4x + 0.6 = 0.5x - 1.2$."
+  answer="18"
+  answerDisplay="$x = 18$"
+  hint="Multiply both sides by $10$, then collect the $x$-terms on one side and the constants on the other."
+>}}
+
+{{< fillin
+  question="Solve the equation by clearing the decimals: $0.23x + 1.47 = 0.37x - 1.05$."
+  answer="18"
+  answerDisplay="$x = 18$"
+  hint="These decimals go to the hundredths place, so the LCD is $100$. Multiply both sides by $100$ first."
+>}}
+
+{{< fillin
+  question="Solve the equation by clearing the decimals: $0.05n + 0.10(n + 8) = 2.15$."
+  answer="9"
+  answerDisplay="$n = 9$"
+  hint="Distribute the $0.10$ and combine like terms, then multiply both sides by $100$."
+>}}
+
+{{< fillin
+  question="Solve the equation by clearing the decimals: $0.05(q - 5) + 0.25q = 3.05$."
+  answer="11"
+  answerDisplay="$q = 11$"
+  hint="Distribute the $0.05$ and combine like terms, then multiply both sides by $100$."
+>}}
+
+{{< fillin
+  question="Taylor has \$2.00 in dimes and pennies. The number of pennies is $2$ more than the number of dimes. Solve the equation $0.10d + 0.01(d + 2) = 2$ for $d$, the number of dimes."
+  answer="18"
+  answerDisplay="$d = 18$ dimes"
+  hint="Distribute the $0.01$ and combine like terms, then multiply both sides by $100$ to clear the decimals."
+>}}
+
 ## Key terms
 
 **clearing the equation of fractions** — multiplying both sides of an
@@ -472,4 +571,4 @@ the decimals' equivalent fractions removes the decimal points.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 8.4: Solve Equations with Fraction or Decimal Coefficients](https://openstax.org/books/prealgebra-2e/pages/8-4-solve-equations-with-fraction-or-decimal-coefficients) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 8.4: Solve Equations with Fraction or Decimal Coefficients](https://openstax.org/books/prealgebra-2e/pages/8-4-solve-equations-with-fraction-or-decimal-coefficients) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

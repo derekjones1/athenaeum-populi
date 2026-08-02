@@ -10,10 +10,13 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** determine whether a
-  relation represents a function, find the value of a function, determine
-  whether a function is one-to-one, use the vertical line test to identify
-  functions, and graph the functions listed in the library of functions.
+**By the end of this section, you will be able to:**
+
+- Determine whether a relation represents a function
+- Find the value of a function
+- Determine whether a function is one-to-one
+- Use the vertical line test to identify functions
+- Graph the functions listed in the library of functions
 {{< /callout >}}
 
 A jetliner changes altitude as its distance from the starting point of a

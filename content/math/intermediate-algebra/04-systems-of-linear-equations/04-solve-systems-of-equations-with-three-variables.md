@@ -11,11 +11,11 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** determine whether an
-  ordered triple is a solution of a system of three linear equations with
-  three variables, solve a system of linear equations with three variables,
-  and solve applications using systems of linear equations with three
-  variables.
+**By the end of this section, you will be able to:**
+
+- Determine whether an ordered triple is a solution of a system of three linear equations with three variables
+- Solve a system of linear equations with three variables
+- Solve applications using systems of linear equations with three variables
 {{< /callout >}}
 
 ## Determine Whether an Ordered Triple Is a Solution of a System of Three Linear Equations with Three Variables
@@ -390,13 +390,13 @@ We organize the information in a chart:
 | adult | $x$ | $15$ | $15x$ |
 | student | $y$ | $10$ | $10y$ |
 | child | $z$ | $8$ | $8z$ |
-| | $250$ | | $2825$ |
+| | $250$ | | $2{,}825$ |
 
 "The number of student tickets sold is twice the number of adult tickets
 sold" translates to $y=2x$, or in standard form, $2x-y=0$. Write the system
 of equations:
 
-$$\left\{\begin{array}{l} x+y+z=250 \\ 15x+10y+8z=2825 \\ 2x-y=0 \end{array}\right.$$
+$$\left\{\begin{array}{l} x+y+z=250 \\ 15x+10y+8z=2{,}825 \\ 2x-y=0 \end{array}\right.$$
 
 Label the equations (1), (2), (3). Use (1) and (2) to eliminate $z$:
 multiplying (1) by $-8$ and adding it to (2) gives
@@ -404,7 +404,7 @@ multiplying (1) by $-8$ and adding it to (2) gives
 $$
 \begin{array}{rcl}
 -8x-8y-8z &=& -2000 \\
-15x+10y+8z &=& 2825 \\
+15x+10y+8z &=& 2{,}825 \\
 7x+2y &=& 825
 \end{array}
 $$

@@ -8,7 +8,11 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-**By the end of this section, you will be able to:** add and subtract radical expressions, multiply radical expressions, use polynomial multiplication to multiply radical expressions.
+**By the end of this section, you will be able to:**
+
+- Add and subtract radical expressions
+- Multiply radical expressions
+- Use polynomial multiplication to multiply radical expressions
 {{< /callout >}}
 
 ## Add and Subtract Radical Expressions

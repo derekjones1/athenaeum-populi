@@ -9,10 +9,12 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** find the volume
-  and surface area of rectangular solids, find the volume and surface area
-  of spheres, find the volume and surface area of cylinders, and find the
-  volume of cones.
+**By the end of this section, you will be able to:**
+
+- Find the volume and surface area of rectangular solids
+- Find the volume and surface area of spheres
+- Find the volume and surface area of cylinders
+- Find the volume of cones
 {{< /callout >}}
 
 In this section, we finish our study of geometry applications by finding
@@ -373,6 +375,135 @@ The volume of the wrap is approximately $52.33$ cubic inches.
   hint="Substitute into $V = \tfrac{1}{3}\pi r^2 h$: $V = \tfrac{1}{3}(3.14)(3.5)^2(10)$."
 >}}
 
+## Practice
+
+### Find the volume and surface area of rectangular solids
+
+{{< fillin
+  question="A rectangular moving van has length 16 feet, width 8 feet, and height 8 feet. Find its volume, in cubic feet."
+  answer="1024"
+  answerDisplay="1,024 cubic feet"
+  hint="Substitute into $V = LWH$: $V = 16 \cdot 8 \cdot 8$."
+>}}
+
+{{< fillin
+  question="A rectangular moving van has length 16 feet, width 8 feet, and height 8 feet. Find its surface area, in square feet."
+  answer="640"
+  answerDisplay="640 square feet"
+  hint="Substitute into $S = 2LH + 2LW + 2WH$: $S = 2(16 \cdot 8) + 2(16 \cdot 8) + 2(8 \cdot 8)$."
+>}}
+
+{{< fillin
+  question="A rectangular carton has length 21.3 cm, width 24.2 cm, and height 6.5 cm. Find its volume, in cubic centimeters."
+  answer="3350.49"
+  answerDisplay="3,350.49 cubic centimeters"
+  hint="Substitute into $V = LWH$: $V = 21.3 \cdot 24.2 \cdot 6.5$."
+>}}
+
+{{< fillin
+  question="A rectangular carton has length 21.3 cm, width 24.2 cm, and height 6.5 cm. Find its surface area, in square centimeters."
+  answer="1622.42"
+  answerDisplay="1,622.42 square centimeters"
+  hint="Substitute into $S = 2LH + 2LW + 2WH$: $S = 2(21.3 \cdot 6.5) + 2(21.3 \cdot 24.2) + 2(24.2 \cdot 6.5)$."
+>}}
+
+{{< fillin
+  question="Each side of the cube at the Discovery Science Center in Santa Ana is 64 feet long. Find its volume, in cubic feet."
+  answer="262144"
+  answerDisplay="262,144 cubic feet"
+  hint="All three dimensions are equal, so use the cube formula $V = s^3$ with $s = 64$."
+>}}
+
+{{< fillin
+  question="Each side of the cube at the Discovery Science Center in Santa Ana is 64 feet long. Find its surface area, in square feet."
+  answer="24576"
+  answerDisplay="24,576 square feet"
+  hint="A cube has six identical square faces, so $S = 6s^2 = 6 \cdot 64^2$."
+>}}
+
+### Find the volume and surface area of spheres
+
+{{< fillin
+  question="An exercise ball has a radius of 15 inches. Find its volume, in cubic inches. Use 3.14 for $\pi$ and round to the nearest hundredth."
+  answer="14130"
+  answerDisplay="14,130 cubic inches"
+  hint="Substitute into $V = \tfrac{4}{3}\pi r^3$: $V = \tfrac{4}{3}(3.14)(15)^3$. Cube the radius first."
+>}}
+
+{{< fillin
+  question="An exercise ball has a radius of 15 inches. Find its surface area, in square inches. Use 3.14 for $\pi$ and round to the nearest hundredth."
+  answer="2826"
+  answerDisplay="2,826 square inches"
+  hint="Substitute into $S = 4\pi r^2$: $S = 4(3.14)(15)^2$."
+>}}
+
+{{< fillin
+  question="A golf ball has a radius of 4.5 centimeters. Find its volume, in cubic centimeters. Use 3.14 for $\pi$ and round to the nearest hundredth."
+  answer="381.51"
+  answerDisplay="381.51 cubic centimeters"
+  hint="Substitute into $V = \tfrac{4}{3}\pi r^3$: $V = \tfrac{4}{3}(3.14)(4.5)^3$."
+>}}
+
+{{< fillin
+  question="A golf ball has a radius of 4.5 centimeters. Find its surface area, in square centimeters. Use 3.14 for $\pi$ and round to the nearest hundredth."
+  answer="254.34"
+  answerDisplay="254.34 square centimeters"
+  hint="Substitute into $S = 4\pi r^2$: $S = 4(3.14)(4.5)^2$."
+>}}
+
+### Find the volume and surface area of cylinders
+
+{{< fillin
+  question="A can of coffee has a radius of 5 cm and a height of 13 cm. Find its volume, in cubic centimeters. Use 3.14 for $\pi$ and round to the nearest hundredth."
+  answer="1020.5"
+  answerDisplay="1,020.5 cubic centimeters"
+  hint="Substitute into $V = \pi r^2 h$: $V = (3.14)(5)^2(13)$."
+>}}
+
+{{< fillin
+  question="A can of coffee has a radius of 5 cm and a height of 13 cm. Find its surface area, in square centimeters. Use 3.14 for $\pi$ and round to the nearest hundredth."
+  answer="565.2"
+  answerDisplay="565.2 square centimeters"
+  hint="Substitute into $S = 2\pi r^2 + 2\pi rh$: $S = 2(3.14)(5)^2 + 2(3.14)(5)(13)$."
+>}}
+
+{{< fillin
+  question="A cylindrical barber shop pole has a diameter of 6 inches and a height of 24 inches. Find its volume, in cubic inches. Use 3.14 for $\pi$ and round to the nearest hundredth."
+  answer="678.24"
+  answerDisplay="678.24 cubic inches"
+  hint="The diameter is 6 inches, so the radius is 3 inches. Then substitute into $V = \pi r^2 h$: $V = (3.14)(3)^2(24)$."
+>}}
+
+{{< fillin
+  question="A cylindrical barber shop pole has a diameter of 6 inches and a height of 24 inches. Find its surface area, in square inches. Use 3.14 for $\pi$ and round to the nearest hundredth."
+  answer="508.68"
+  answerDisplay="508.68 square inches"
+  hint="Halve the diameter to get $r = 3$, then substitute into $S = 2\pi r^2 + 2\pi rh$: $S = 2(3.14)(3)^2 + 2(3.14)(3)(24)$."
+>}}
+
+### Find the volume of cones
+
+{{< fillin
+  question="Find the volume, in cubic feet, of a cone with height 9 feet and radius 2 feet. Use 3.14 for $\pi$ and round to the nearest hundredth."
+  answer="37.68"
+  answerDisplay="37.68 cubic feet"
+  hint="Substitute into $V = \tfrac{1}{3}\pi r^2 h$: $V = \tfrac{1}{3}(3.14)(2)^2(9)$."
+>}}
+
+{{< fillin
+  question="What is the volume, in cubic feet, of a cone-shaped teepee tent that is 10 feet tall and 10 feet across at the base? Use 3.14 for $\pi$ and round to the nearest hundredth."
+  answer="261.67"
+  answerDisplay="261.67 cubic feet"
+  hint="The distance across the base is the diameter, so the radius is 5 feet. Then use $V = \tfrac{1}{3}\pi r^2 h$ with $h = 10$."
+>}}
+
+{{< fillin
+  question="What is the volume, in cubic feet, of a cone-shaped silo that is 50 feet tall and 70 feet across at the base? Use 3.14 for $\pi$ and round to the nearest hundredth."
+  answer="64108.33"
+  answerDisplay="64,108.33 cubic feet"
+  hint="The base diameter is 70 feet, so $r = 35$. Substitute into $V = \tfrac{1}{3}\pi r^2 h$: $V = \tfrac{1}{3}(3.14)(35)^2(50)$."
+>}}
+
 ## Key terms
 
 **rectangular solid** — a three-dimensional figure with six rectangular
@@ -388,4 +519,4 @@ vertex.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 9.6: Solve Geometry Applications: Volume and Surface Area](https://openstax.org/books/prealgebra-2e/pages/9-6-solve-geometry-applications-volume-and-surface-area) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the crate, globe, soda can, and french-fry-wrap illustrations in prose instead of hotlinking images, and omitted the end-of-chapter geometry formula summary chart (each formula already appears inline where it's introduced); omitted the Be Prepared quiz, Manipulative Mathematics callout, Media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 9.6: Solve Geometry Applications: Volume and Surface Area](https://openstax.org/books/prealgebra-2e/pages/9-6-solve-geometry-applications-volume-and-surface-area) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the crate, globe, soda can, and french-fry-wrap illustrations in prose instead of hotlinking images, and omitted the end-of-chapter geometry formula summary chart (each formula already appears inline where it's introduced); omitted the Be Prepared quiz, Manipulative Mathematics callout, and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating the multipart volume-and-surface-area items as separate prompts.</small>

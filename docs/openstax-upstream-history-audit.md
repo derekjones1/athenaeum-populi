@@ -13,7 +13,7 @@
 
 ## Coverage
 
-- Mapped local sections: 208
+- Mapped local sections: 212
 - Sections changed upstream: 11
 - Content-level changes: 6
 - Markup/metadata-only changes: 5

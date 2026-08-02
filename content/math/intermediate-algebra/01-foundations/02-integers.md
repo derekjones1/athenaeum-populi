@@ -10,11 +10,15 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** simplify expressions
-  with absolute value, add and subtract integers, multiply and divide integers,
-  simplify expressions with integers, evaluate variable expressions with
-  integers, translate phrases to expressions with integers, and use integers in
-  applications.
+**By the end of this section, you will be able to:**
+
+- Simplify expressions with absolute value
+- Add and subtract integers
+- Multiply and divide integers
+- Simplify expressions with integers
+- Evaluate variable expressions with integers
+- Translate phrases to expressions with integers
+- Use integers in applications
 {{< /callout >}}
 
 ## Simplify expressions with absolute value

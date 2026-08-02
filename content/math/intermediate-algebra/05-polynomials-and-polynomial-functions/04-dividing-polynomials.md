@@ -10,10 +10,14 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** divide monomials,
-  divide a polynomial by a monomial, divide polynomials using long division,
-  divide polynomials using synthetic division, divide polynomial functions,
-  and use the Remainder and Factor Theorems.
+**By the end of this section, you will be able to:**
+
+- Divide monomials
+- Divide a polynomial by a monomial
+- Divide polynomials using long division
+- Divide polynomials using synthetic division
+- Divide polynomial functions
+- Use the Remainder and Factor Theorems
 {{< /callout >}}
 
 ## Dividing monomials

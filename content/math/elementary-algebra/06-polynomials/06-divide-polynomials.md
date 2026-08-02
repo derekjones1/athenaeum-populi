@@ -11,8 +11,10 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** divide a polynomial by
-  a monomial, and divide a polynomial by a binomial.
+**By the end of this section, you will be able to:**
+
+- Divide a polynomial by a monomial
+- Divide a polynomial by a binomial
 {{< /callout >}}
 
 ## Divide a Polynomial by a Monomial

@@ -38,8 +38,33 @@ assert.match(authoring, /Run `npm test`/);
 assert.match(authoring, /chapters and Knowledge Checks share one sequential weight order/);
 assert.match(authoring, /before July 22, 2026[\s\S]*grandfathered/);
 assert.match(authoring, /section-final `## Practice` block/);
-assert.match(authoring, /exactly five(?:\*\*)? interactive exercises/);
+// The Practice block sizes itself from the objectives list rather than a flat
+// count, so the playbook must document both halves of the rule and the
+// list-formatted callout the groups key to.
+assert.match(authoring, /one `### ` group per section\s+objective/);
+assert.match(authoring, /at least two interactive\s+exercises/);
+assert.match(authoring, /at least five\s+exercises overall/);
+assert.match(authoring, /one\s+component per part/);
+assert.match(authoring, /\*\*one\s+objective per Markdown list item\*\*/);
 assert.match(authoring, /before August 1, 2026[\s\S]*retrofit worklist/);
+// Value grading cannot see the shape of a response, so a re-expression prompt
+// is only gradeable with an answerForm. The playbook must document the tokens
+// and the rule, or the next such exercise ships passable by retyping it.
+assert.match(authoring, /answerForm="lowest-terms"/);
+for (const token of [
+  'fraction', 'decimal', 'mixed-number', 'improper-fraction',
+  'fraction-or-mixed-number', 'lowest-terms', 'scientific-notation',
+  'prime-product', 'denominator:<n>',
+]) {
+  assert.match(authoring, new RegExp(`\`${token.replace(/[<>]/g, '\\$&')}\``),
+    `the playbook documents the ${token} answerForm token`);
+}
+assert.match(authoring, /A categorical answer is never a number/);
+// One warning category is left, and it is an authoring programme rather than
+// an exemption. Keep the section honest about being the last one.
+assert.match(authoring, /## 5\. The one remaining retrofit/);
+assert.match(authoring, /\*\*Never add a warning\.\*\*/);
+assert.match(authoring, /A rule that fires on sound content is a bug in the rule/);
 
 const knowledgeChecks = read('docs/knowledge-check-playbook.md');
 assert.match(knowledgeChecks, /must not overlap/);

@@ -9,9 +9,13 @@ weight: 7
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** name and write
-  decimals, round decimals, add and subtract decimals, multiply and divide
-  decimals, and convert decimals, fractions, and percents.
+**By the end of this section, you will be able to:**
+
+- Name and write decimals
+- Round decimals
+- Add and subtract decimals
+- Multiply and divide decimals
+- Convert decimals, fractions, percents
 {{< /callout >}}
 
 ## Name and write decimals
@@ -288,7 +292,7 @@ product is negative: $(-3.9)(4.075) = -15.8925$.
 {{< fillin
   question="Multiply: $-4.5(6.107)$."
   answer="-27.4815"
-  hint="Multiply $45$ by $6107$ as whole numbers, then place the decimal point so the product has $1 + 3 = 4$ decimal places. The signs are different, so the product is negative."
+  hint="Multiply $45$ by $6{,}107$ as whole numbers, then place the decimal point so the product has $1 + 3 = 4$ decimal places. The signs are different, so the product is negative."
 >}}
 
 {{< fillin
@@ -449,12 +453,14 @@ places in $0.374$?
 {{< fillin
   question="Write 0.234 as a fraction in simplest form."
   answer="\frac{117}{500}"
+  answerForm="fraction lowest-terms"
   hint="$0.234 = \tfrac{234}{1{,}000}$. Divide the numerator and denominator by their common factors until no more common factors remain."
 >}}
 
 {{< fillin
   question="Write 0.024 as a fraction in simplest form."
   answer="\frac{3}{125}"
+  answerForm="fraction lowest-terms"
   hint="$0.024 = \tfrac{24}{1{,}000}$. Divide the numerator and denominator by their common factors until no more common factors remain."
 >}}
 
@@ -476,12 +482,14 @@ $8\overline{)5}$. Dividing gives $0.625$, so $-\tfrac{5}{8} = -0.625$.
 {{< fillin
   question="Write $-\tfrac{7}{8}$ as a decimal."
   answer="-0.875"
+  answerForm="decimal"
   hint="Divide $7$ by $8$ ($7.000 \div 8$), then attach the negative sign."
 >}}
 
 {{< fillin
   question="Write $-\tfrac{3}{8}$ as a decimal."
   answer="-0.375"
+  answerForm="decimal"
   hint="Divide $3$ by $8$ ($3.000 \div 8$), then attach the negative sign."
 >}}
 
@@ -611,6 +619,122 @@ $0.093$.
   hint="Move the decimal point two places to the right."
 >}}
 
+## Practice
+
+### Name and write decimals
+
+{{< fillin
+  question="Write as a decimal: negative eleven and nine ten-thousandths."
+  answer="-11.0009"
+  hint="'Ten-thousandths' means four digits after the decimal point. Write the whole-number part before the decimal, then attach the negative sign to the whole result."
+>}}
+
+{{< multiplechoice
+  question="Name the decimal 8.71."
+  hint="Name the whole-number part first, write 'and' for the decimal point, then name the digits to the right as a whole number followed by the place value of the last digit."
+  answer="eight and seventy-one hundredths"
+>}}
+eight and seventy-one hundredths
+eight and seventy-one tenths
+eight and seventy-one thousandths
+negative eight and seventy-one hundredths
+{{< /multiplechoice >}}
+
+### Round decimals
+
+{{< fillin
+  question="Round 0.845 to the nearest hundredth."
+  answer="0.85"
+  hint="The digit right after the hundredths place is 5, which is greater than or equal to 5, so round the hundredths digit up."
+>}}
+
+{{< fillin
+  question="Round 2.84 to the nearest tenth."
+  answer="2.8"
+  hint="The digit right after the tenths place is 4, which is less than 5."
+>}}
+
+### Add and subtract decimals
+
+{{< fillin
+  question="Add: $15 + 0.73$."
+  answer="15.73"
+  hint="Line up the decimal points; $15$ has an implied decimal point right after the ones place, so pad it with two zeros."
+>}}
+
+{{< fillin
+  question="Subtract: $91.95 - (-10.462)$."
+  answer="102.412"
+  hint="Subtracting a negative number is the same as adding its opposite: rewrite as $91.95 + 10.462$, line up the decimal points, and add."
+>}}
+
+### Multiply and divide decimals
+
+{{< fillin
+  question="Multiply: $(-5.18)(-65.23)$."
+  answer="337.8914"
+  hint="Multiply $518$ by $6{,}523$ as whole numbers, then place the decimal point so the product has $2 + 2 = 4$ decimal places. The signs are the same, so the product is positive."
+>}}
+
+{{< fillin
+  question="Multiply $55.2$ by $1{,}000$."
+  answer="55200"
+  answerDisplay="55,200"
+  hint="Move the decimal point right by the number of zeros in the power of $10$ (three zeros), adding zeros at the end of the number as needed."
+>}}
+
+{{< fillin
+  question="Divide: \$117.25 divided by 48. Round to the nearest cent."
+  answer="2.44"
+  answerDisplay="\$2.44"
+  hint="Carry the division to the thousandths place, then round the quotient to the nearest hundredth (cent)."
+>}}
+
+{{< fillin
+  question="Divide: $1.44 \div (-0.3)$."
+  answer="-4.8"
+  hint="The signs are different, so the quotient is negative. Divide $1.44$ by $0.3$ as if both were positive, then attach the sign."
+>}}
+
+### Convert decimals, fractions, percents
+
+{{< fillin
+  question="Write 0.375 as a fraction in simplest form."
+  answer="\frac{3}{8}"
+  answerForm="fraction lowest-terms"
+  hint="$0.375 = \tfrac{375}{1{,}000}$. Divide the numerator and denominator by their common factors until no more common factors remain."
+>}}
+
+{{< fillin
+  question="Write $\tfrac{11}{4}$ as a decimal."
+  answer="2.75"
+  answerForm="decimal"
+  hint="Divide $11$ by $4$."
+>}}
+
+{{< fillin
+  question="Convert to a decimal: 7.8%."
+  answer="0.078"
+  hint="Move the decimal point two places to the left, dropping the % sign and adding a leading zero as a placeholder."
+>}}
+
+{{< fillin
+  question="Convert to a percent: 0.0875. Enter just the number, without the % sign."
+  answer="8.75"
+  hint="Move the decimal point two places to the right."
+>}}
+
+{{< multiplechoice
+  question="Write $\tfrac{15}{11}$ as a repeating decimal. Which is correct?"
+  hint="Divide 15 by 11. The pair of digits after the decimal point repeats immediately, right from the tenths place."
+  answer="1.3636... (the block 36 repeats forever)"
+>}}
+1.3636... (the block 36 repeats forever)
+1.3666... (only the 6 repeats forever)
+1.6363... (the block 63 repeats forever)
+1.36 (a terminating decimal)
+{{< /multiplechoice >}}
+
 ## Key terms
 
 **decimal** — a way of writing a fraction whose denominator is a power of
@@ -621,4 +745,4 @@ repeating block. **percent** — a ratio whose denominator is $100$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.7: Decimals](https://openstax.org/books/elementary-algebra-2e/pages/1-7-decimals) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the place-value chart as a table, condensed the worked examples and How To boxes into narrative prose, omitted the Be Prepared quiz, Manipulative Mathematics callouts, media links, and end-of-section exercises, and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.7: Decimals](https://openstax.org/books/elementary-algebra-2e/pages/1-7-decimals) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the place-value chart as a table, condensed the worked examples and How To boxes into narrative prose, omitted the Be Prepared quiz, Manipulative Mathematics callouts, and media links, adapted selected end-of-section exercises into interactive practice, and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

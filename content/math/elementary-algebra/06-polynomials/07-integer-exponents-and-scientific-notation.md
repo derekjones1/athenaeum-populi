@@ -10,10 +10,13 @@ weight: 7
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use the definition of a
-  negative exponent; simplify expressions with integer exponents; convert from
-  decimal notation to scientific notation; convert scientific notation to
-  decimal form; and multiply and divide using scientific notation.
+**By the end of this section, you will be able to:**
+
+- Use the definition of a negative exponent
+- Simplify expressions with integer exponents
+- Convert from decimal notation to scientific notation
+- Convert scientific notation to decimal form
+- Multiply and divide using scientific notation
 {{< /callout >}}
 
 ## Use the Definition of a Negative Exponent
@@ -471,6 +474,7 @@ Check: $10^4$ is $10{,}000$, and $10{,}000$ times $3.7$ is $37{,}000$. ✓
 {{< fillin
   question="Write in scientific notation: 96,000."
   answer="9.6 \times 10^{4}"
+  answerForm="scientific-notation"
   answerDisplay="$9.6 \times 10^4$"
   hint="Move the decimal after the 9 to get 9.6, then count the places moved (4). The number is greater than 1, so the exponent is positive."
 >}}
@@ -478,6 +482,7 @@ Check: $10^4$ is $10{,}000$, and $10{,}000$ times $3.7$ is $37{,}000$. ✓
 {{< fillin
   question="Write in scientific notation: 48,300."
   answer="4.83 \times 10^{4}"
+  answerForm="scientific-notation"
   answerDisplay="$4.83 \times 10^4$"
   hint="Move the decimal after the 4 to get 4.83, then count the places moved (4). The number is greater than 1, so the exponent is positive."
 >}}
@@ -495,6 +500,7 @@ Check: $5.2 \times 10^{-3} = 5.2 \times \tfrac{1}{1000} = 5.2 \times 0.001 = 0.0
 {{< fillin
   question="Write in scientific notation: 0.0078."
   answer="7.8 \times 10^{-3}"
+  answerForm="scientific-notation"
   answerDisplay="$7.8 \times 10^{-3}$"
   hint="Move the decimal to get 7.8, then count the places moved (3). The number is between 0 and 1, so the exponent is negative."
 >}}
@@ -502,6 +508,7 @@ Check: $5.2 \times 10^{-3} = 5.2 \times \tfrac{1}{1000} = 5.2 \times 0.001 = 0.0
 {{< fillin
   question="Write in scientific notation: 0.0129."
   answer="1.29 \times 10^{-2}"
+  answerForm="scientific-notation"
   answerDisplay="$1.29 \times 10^{-2}$"
   hint="Move the decimal to get 1.29, then count the places moved (2). The number is between 0 and 1, so the exponent is negative."
 >}}

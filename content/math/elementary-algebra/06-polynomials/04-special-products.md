@@ -10,10 +10,11 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** square a binomial
-  using the Binomial Squares Pattern, multiply conjugates using the Product
-  of Conjugates Pattern, and recognize and use the appropriate special
-  product pattern.
+**By the end of this section, you will be able to:**
+
+- Square a binomial using the Binomial Squares Pattern
+- Multiply conjugates using the Product of Conjugates Pattern
+- Recognize and use the appropriate special product pattern
 {{< /callout >}}
 
 ## Square a Binomial Using the Binomial Squares Pattern

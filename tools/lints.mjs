@@ -5,12 +5,189 @@
  * authoring format. Math, table, exercise, and inline-SVG rules scan the raw
  * source before the production build.
  *
- * lintHugo(src, filename?) → { errors, warnings }  (zero dependencies)
+ * lintHugo(src, filename?) → { errors, warnings }
  */
 
 import { parseGraphPlotConfig } from '../assets/js/lib/graph-plot-config.mjs';
+// The grader's own list-splitting rules, so the lint reasons about authored
+// comma answers exactly the way checkAnswer() will grade them — and the
+// grader itself, so the trivially-satisfiable-prompt check grades a printed
+// value exactly the way a learner's submission would be graded.
+import {
+  ANSWER_FORM_TOKENS, checkAnswer, parseAnswerForm, splitTopLevelCommas, stripGroupingCommas,
+} from '../assets/js/lib/check-answer.mjs';
+// The one objectives-callout parser, shared with the structure validator and
+// the source audit so the three tools never diagnose the callout differently.
+import { parseObjectivesCallout } from './lib-openstax-source.mjs';
+
+/**
+ * Does the question tell the learner what order to enter a comma-separated
+ * answer in? Matches explicit order words ("least to greatest", "first…then",
+ * "increasing", "row 1") and the naming pattern "Enter/Find the X and Y …
+ * comma" — an instruction sentence that fixes the order by naming the
+ * quantities. A false positive here only silences the lint; a bare list whose
+ * question gives NO order is the hazard, because the default grading is
+ * positional and a learner who enters the members in another order is marked
+ * wrong.
+ */
+const ORDER_CUE_RE = /least to greatest|greatest to least|smallest|smaller|largest|larger|increasing|decreasing|ascending|descending|order|first\b|then\b|respectively|followed by|\brow\b|\b(?:enter|find|give|list)\b[^.?!]*?\band\b[^.?!]*?comma/i;
 
 const lineOf = (src, index) => src.slice(0, index).split('\n').length;
+
+/**
+ * Blank every `\macro{…}` match and its balanced brace group, preserving the
+ * source offsets every diagnostic in this file reports against.
+ */
+function blankBalancedMacro(source, macroRe, blank) {
+  let out = source;
+  const re = new RegExp(macroRe.source, macroRe.flags.includes('g') ? macroRe.flags : `${macroRe.flags}g`);
+  let m;
+  while ((m = re.exec(out)) !== null) {
+    let depth = 1;
+    let end = m.index + m[0].length;
+    while (end < out.length && depth > 0) {
+      if (out[end] === '{') depth += 1;
+      else if (out[end] === '}') depth -= 1;
+      end += 1;
+    }
+    out = out.slice(0, m.index) + blank(out.slice(m.index, end)) + out.slice(end);
+    re.lastIndex = end;
+  }
+  return out;
+}
+
+/**
+ * Standalone values printed in a fillin question, for the trivial-answer
+ * check. Grading is value-based, so a prompt whose target value appears in
+ * the question is trivially satisfiable: typing 86 passes "Find the prime
+ * factorization of $86$", and retyping the printed fraction passes "Simplify
+ * $-\tfrac{40}{88}$". A candidate is a whole $…$ span that is one (possibly
+ * signed) number, fraction, mixed number, money amount, or percentage — plus
+ * every bare number in the prose ("Find the prime factorization of 80").
+ * Compound expressions are deliberately not candidates: "Add: $3+5$" is
+ * value-equal to its own answer in every CAS-graded arithmetic prompt, which
+ * no prompt rewrite can avoid, so flagging it would only bury the fixable
+ * cases.
+ */
+/**
+ * Does the prompt ask the learner to RE-EXPRESS a value the question prints —
+ * to restate it in another form without changing what it is worth? That shape
+ * is the whole hazard: simplifying a fraction, converting a percent to a
+ * decimal, or writing a prime factorization all have answers that are
+ * value-equal to the printed subject *by construction*, so no choice of
+ * numbers can stop a learner from passing by retyping the prompt. Only the
+ * response mode can (see answerForm).
+ *
+ * Prompts outside this shape are excluded even when the answer does collide
+ * with a printed value, because there the collision is incidental and the
+ * exercise is sound: the mode of a data set is necessarily one of the numbers
+ * printed in it, the answer to "One angle of a right triangle measures 45
+ * degrees" is legitimately 45, and "Divide: $\tfrac{91{,}881}{9}$" prints a
+ * division, not a value. A learner facing those cannot know which printed
+ * number to copy — the same reasoning that already exempts "Add: $3+5$".
+ */
+const REEXPRESSION_RE = new RegExp([
+  String.raw`\bsimplify\b`,
+  String.raw`\bconvert\b`,
+  String.raw`\brewrite\b`,
+  String.raw`\breduce\b`,
+  String.raw`\bexpress\b`,
+  String.raw`\bwrite\b[^.?!]*?\bas\b`,
+  String.raw`\bprime factorization\b`,
+  String.raw`\bequivalent\b`,
+  String.raw`\bin (?:simplest|lowest) (?:form|terms)\b`,
+  String.raw`\bscientific notation\b`,
+  String.raw`\bratio of two integers\b`,
+  String.raw`\b(?:improper fraction|mixed number)\b`,
+  String.raw`\bas a (?:decimal|fraction|percent)\b`,
+  String.raw`\bdenominator of\b`,
+].join('|'), 'i');
+
+/**
+ * A categorical response encoded as a number: "Answer 1 for yes or 0 for no",
+ * "Enter 1 if rational, 0 if irrational", "Enter the quadrant number as a
+ * digit". The learner is choosing among named alternatives, so a free-response
+ * math field is the wrong component — it grades a code rather than the choice,
+ * accepts a coin-flip guess, and forces the reader to hold a legend in mind.
+ * `multiplechoice` states the alternatives as the options they already are.
+ *
+ * Two code clauses are required, each mapping a SINGLE-DIGIT code to a WORD,
+ * because one clause naming a number is a units convention rather than a
+ * legend: "Give the percent as a number (e.g. enter 40 for 40%)" tells the
+ * learner what to type, and the answer is still theirs to compute. Escaped
+ * money is excluded outright — "\$525 for airfare, \$780 for food" is a word
+ * problem's price list, not a pair of answer codes.
+ */
+const CODE_CLAUSE_RE = /(?<!\\\$)\$?(?<!\d)[0-4]\$?\s+(?:for|if)\s+(?!\d)[A-Za-z]/gi;
+const codesACategoricalAnswer = (question) => (
+  /\bquadrant number\b/i.test(question)
+  || (question.match(CODE_CLAUSE_RE) || []).length >= 2
+);
+
+const NUMBER_TOKEN = String.raw`\d+(?:(?:,|\{,\})\d{3})*(?:\.\d+)?`;
+const FRACTION_TOKEN = String.raw`\\[tdc]?frac\s*\{\s*[−-]?\s*${NUMBER_TOKEN}\s*\}\s*\{\s*[−-]?\s*${NUMBER_TOKEN}\s*\}`;
+const VALUE_SPAN_RE = new RegExp(
+  String.raw`^\s*[−-]?\s*(?:\\\$)?\s*[−-]?\s*(?:${NUMBER_TOKEN}(?:\s*${FRACTION_TOKEN})?|${FRACTION_TOKEN})\s*(?:\\%)?\s*$`,
+);
+// A prose number may end a sentence ("of 80.") but must not be the front of a
+// longer decimal, the tail of one, or part of a word ("3-digit" still yields 3).
+const PROSE_NUMBER_RE = new RegExp(String.raw`(?<![\w.,−-])[−-]?${NUMBER_TOKEN}(?!\.?\d|\w)`, 'g');
+
+function printedQuestionValues(question) {
+  const values = [];
+  const prose = question.replace(/(?<!\\)\$([^$]+?)(?<!\\)\$/g, (span, inner) => {
+    if (VALUE_SPAN_RE.test(inner)) values.push(inner.replace(/\\\$/g, '').trim());
+    return ' ';
+  });
+  for (const m of prose.matchAll(PROSE_NUMBER_RE)) values.push(m[0]);
+  return values;
+}
+
+export const groupDigits = (n) => n.replace(/\B(?=(\d{3})+$)/g, '{,}');
+
+/**
+ * Blank fenced/inline code and HTML comments — documentation, not authored
+ * page content — without changing string offsets, so a diagnostic still points
+ * at the right source line. Exported alongside `ungroupedDigitRuns` so a fixer
+ * sees exactly the text the lint sees.
+ */
+export function maskDocumentation(src) {
+  const blank = (s) => s.replace(/[^\n]/g, ' ');
+  return maskMarkdownCodeBlocks(src.replace(/<!--[\s\S]*?-->/g, blank), blank)
+    .replace(/(`+)([\s\S]*?)\1/g, blank)
+    .replace(/<!--[\s\S]*?-->/g, blank);
+}
+
+/**
+ * Every four-or-more-digit run inside a math span that the corpus would write
+ * grouped, with its offset in `source`. Exported so a fixer rewrites exactly
+ * what the lint reports, rather than re-deriving the rules and diverging: the
+ * masking below is subtle, and a near-miss would edit text no reader sees.
+ */
+export function ungroupedDigitRuns(source, blank) {
+  const runs = [];
+  const spans = [];
+  for (const m of source.matchAll(/\$\$([\s\S]*?)\$\$/g)) spans.push([m.index + 2, m[1]]);
+  const inlineOnly = source.replace(/\$\$[\s\S]*?\$\$/g, blank);
+  for (const m of inlineOnly.matchAll(/(?<!\\)\$([^$\n]+?)(?<!\\)\$/g)) spans.push([m.index + 1, m[1]]);
+  for (const [offset, span] of spans) {
+    // \text{…} is prose, and an already-grouped number is correct as written.
+    // \phantom{…} is invisible spacing, not a number: long-division layouts
+    // align columns with runs like \phantom{0000}, and grouping those digits
+    // would both misreport a number the reader never sees and shift the
+    // alignment they exist to produce. Its group nests (\phantom{22\,\overline
+    // {\smash{)}\,}}), so it needs brace matching rather than [^{}]*.
+    const scan = blankBalancedMacro(span, /\\[hv]?phantom\s*\{/g, blank)
+      .replace(/\\text(?:it|bf)?\{[^{}]*\}/g, blank)
+      .replace(/\d[\d{,}]*\{,\}[\d{,}]*\d/g, blank);
+    for (const m of scan.matchAll(/(?<![\d.])\d{4,}(?![\d.])/g)) {
+      const value = m[0];
+      if (value.length === 4 && +value >= 1000 && +value <= 2099) continue;
+      runs.push({ index: offset + m.index, value, grouped: groupDigits(value) });
+    }
+  }
+  return runs.sort((a, b) => a.index - b.index);
+}
 
 /** Return an exact HTML attribute value; do not confuse `role` with `data-role`. */
 function htmlAttribute(tag, name) {
@@ -158,9 +335,7 @@ export function lintHugo(src, filename = '') {
   // diagnostics still report the correct source line.
   const blank = (s) => s.replace(/[^\n]/g, ' ');
   const uncommented = src.replace(/<!--[\s\S]*?-->/g, blank);
-  const mediaSrc = maskMarkdownCodeBlocks(uncommented, blank)
-    .replace(/(`+)([\s\S]*?)\1/g, blank)
-    .replace(/<!--[\s\S]*?-->/g, blank);
+  const mediaSrc = maskDocumentation(src);
   // Raw HTML remains active inside <pre>/<code>. Mask Markdown fences and
   // spans, but retain indented tags for the HTML-specific checks below.
   const htmlMediaSrc = maskMarkdownCodeBlocks(uncommented, blank, false)
@@ -168,6 +343,16 @@ export function lintHugo(src, filename = '') {
   const isKnowledgeCheck = /knowledge-check-\d+-\d+\.md$/.test(filename);
   const isRegularSection = /[/\\]content[/\\]math[/\\][^/\\]+[/\\]\d{2}-[^/\\]+[/\\]\d{2}-[^/\\]+\.md$/i
     .test(filename.replace(/^\.?[/\\]?/, '/'));
+
+  // ---- section objectives --------------------------------------------------
+  // The opening callout states the section's objectives as a Markdown list,
+  // one item per objective. That list is the anchor for the `## Practice`
+  // block below: every objective gets its own `### ` group. Prose objectives
+  // cannot be split reliably (an objective may contain a comma), so the list
+  // form is required rather than parsed for.
+  // `validate-content` is what requires every section to carry the list — it
+  // sees whole files, where this lint also runs over authoring fragments.
+  const objectives = parseObjectivesCallout(mediaSrc) ?? [];
 
   // ---- Math / array rules --------------------------------------------------
 
@@ -202,27 +387,8 @@ export function lintHugo(src, filename = '') {
   // (`$2012-2009$`) — the same reason figure axes take `xTickGrouping: false`.
   // Nothing in the source distinguishes a year from a quantity, so four-digit
   // values in the 1000–2099 band are skipped rather than risk flagging a year.
-  // Warning, not error: the three completed books predate the rule.
-  {
-    const groupDigits = (n) => n.replace(/\B(?=(\d{3})+$)/g, '{,}');
-    const spans = [];
-    for (const m of mediaSrc.matchAll(/\$\$([\s\S]*?)\$\$/g)) spans.push([m.index + 2, m[1]]);
-    const inlineOnly = mediaSrc.replace(/\$\$[\s\S]*?\$\$/g, blank);
-    for (const m of inlineOnly.matchAll(/(?<!\\)\$([^$\n]+?)(?<!\\)\$/g)) spans.push([m.index + 1, m[1]]);
-    for (const [offset, span] of spans) {
-      // \text{…} is prose, and an already-grouped number is correct as written.
-      const scan = span
-        .replace(/\\text(?:it|bf)?\{[^{}]*\}/g, blank)
-        .replace(/\d[\d{,}]*\{,\}[\d{,}]*\d/g, blank);
-      for (const m of scan.matchAll(/(?<![\d.])\d{4,}(?![\d.])/g)) {
-        const value = m[0];
-        if (value.length === 4 && +value >= 1000 && +value <= 2099) continue;
-        wrn(
-          offset + m.index,
-          `ungrouped ${value.length}-digit number ${value} in math — write it as ${groupDigits(value)} (four-digit years are the exception)`,
-        );
-      }
-    }
+  for (const { index, value, grouped } of ungroupedDigitRuns(mediaSrc, blank)) {
+    err(index, `ungrouped ${value.length}-digit number ${value} in math — write it as ${grouped} (four-digit years are the exception)`);
   }
   // TeX discards ordinary source whitespace in math mode. Catch the
   // high-confidence prose joins that caused visible "Ifn" / "squareof"
@@ -334,20 +500,15 @@ export function lintHugo(src, filename = '') {
   }
 
   // ---- figure curve precision ----------------------------------------------
-  // A cubic-bezier <path> inside a figure is the smoothCurves spline output:
-  // C¹ knots and zero-slope extrema render visible flat plateaus — the
-  // "hand-drawn" look. Only the spline interpolator emits C commands; every
-  // analytic primitive emits polylines, lines, or ellipses.
-  for (const m of htmlMediaSrc.matchAll(/<path\b[^>]*>/gi)) {
-    if (/(?:^|[\s\d.])C[\s\d.]/.test(htmlAttribute(m[0], 'd'))) {
-      wrn(m.index, 'figure curve is spline-interpolated (smoothCurves output) — regenerate it from an analytic primitive (quadratics, cubics, circles, polylines, or curves kind sqrt/cbrt/reciprocal/reciprocal-squared/sine); reserve smoothCurves (freeform: true) for source art with no formula');
-    }
-  }
   // Figures rendered by tools/render-figure.mjs carry their generating JSON in
   // a data-spec attribute. When present it must parse, and any smoothCurves
   // use must carry the explicit freeform acknowledgment.
   const decodeEntities = (value) => value
     .replace(/&quot;/g, '"').replace(/&#0*39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+  // Where an author HAS acknowledged source art with no formula, the spline it
+  // produces is the correct output, so the bezier check below must not fire on
+  // it. Anything else — a hand-pasted spline with no spec at all — still does.
+  const acknowledgedFreeform = [];
   for (const m of htmlMediaSrc.matchAll(/<div\b[^>]*\bclass\s*=\s*(?:"[^"]*\bap-figure\b[^"]*"|'[^']*\bap-figure\b[^']*')[^>]*>/gi)) {
     const raw = htmlAttribute(m[0], 'data-spec');
     if (!raw) continue;
@@ -358,11 +519,25 @@ export function lintHugo(src, filename = '') {
       err(m.index, 'ap-figure data-spec is not valid JSON — regenerate the figure with tools/render-figure.mjs and paste its output verbatim');
       continue;
     }
-    for (const curve of Array.isArray(spec.smoothCurves) ? spec.smoothCurves : []) {
+    const curves = Array.isArray(spec.smoothCurves) ? spec.smoothCurves : [];
+    for (const curve of curves) {
       if (curve && curve.freeform !== true) {
         err(m.index, 'ap-figure data-spec uses smoothCurves without freeform: true — model the curve with an analytic primitive (fit a polynomial or sinusoid through the labeled points) instead of spline interpolation');
       }
     }
+    if (curves.length && curves.every((curve) => curve && curve.freeform === true)) {
+      const close = htmlMediaSrc.indexOf('</div>', m.index);
+      acknowledgedFreeform.push([m.index, close === -1 ? htmlMediaSrc.length : close]);
+    }
+  }
+  // A cubic-bezier <path> inside a figure is the smoothCurves spline output:
+  // C¹ knots and zero-slope extrema render visible flat plateaus — the
+  // "hand-drawn" look. Only the spline interpolator emits C commands; every
+  // analytic primitive emits polylines, lines, or ellipses.
+  for (const m of htmlMediaSrc.matchAll(/<path\b[^>]*>/gi)) {
+    if (!/(?:^|[\s\d.])C[\s\d.]/.test(htmlAttribute(m[0], 'd'))) continue;
+    if (acknowledgedFreeform.some(([from, to]) => m.index > from && m.index < to)) continue;
+    err(m.index, 'figure curve is spline-interpolated (smoothCurves output) — regenerate it from an analytic primitive (quadratics, cubics, circles, polylines, or curves kind sqrt/cbrt/reciprocal/reciprocal-squared/sine/exp/log); reserve smoothCurves (freeform: true) for source art with no formula, declared in a data-spec');
   }
 
   for (const m of mediaSrc.matchAll(/\*\*Solution\.\*\*[ \t]*(?:\r?\n[ \t]*)+(?=(?:\{\{<\s*(?:fillin|multiplechoice|graphplot)\b|#{1,6}\s|---[ \t]*$|(?![\s\S])))/gm)) {
@@ -420,20 +595,31 @@ export function lintHugo(src, filename = '') {
 
   // ---- section-final Practice block ----------------------------------------
   // Every numbered section closes its instructional content with a
-  // `## Practice` heading holding exactly five sourced interactive exercises,
-  // immediately before the first end-matter heading (`## Key equations`,
-  // `## Key concepts`, `## Key terms`, or any other `## Key …` summary block).
+  // `## Practice` heading, immediately before the first end-matter heading
+  // (`## Key equations`, `## Key concepts`, `## Key terms`, or any other
+  // `## Key …` summary block). Inside it, one `### ` group per section
+  // objective — matching the objectives callout in order — each holding at
+  // least two sourced exercises, with at least five in the block overall.
+  // Sizing scales with the section instead of a flat count, because a
+  // six-objective section cannot cover its objectives in five questions and a
+  // multipart source item expands into one exercise per part.
   // Sections authored before the rule warn until retrofitted — the warning
   // list is the retrofit worklist — while a present-but-malformed block is an
   // error. See docs/authoring-playbook.md, "The section-final Practice block".
+  const MIN_PER_OBJECTIVE = 2;
+  const MIN_PER_SECTION = 5;
   const headings = [...mediaSrc.matchAll(/^## +(.+?)[ \t]*$/gm)]
     .map((m) => ({ index: m.index, end: m.index + m[0].length, title: m[1].trim() }));
   const endMatter = headings.find((h) => /^Key [a-z]/.test(h.title));
+  // Compare group titles to objectives loosely: the author copies the callout
+  // item, so only case, spacing, and trailing punctuation should vary.
+  const normalizeTitle = (t) => t.toLowerCase().replace(/\s+/g, ' ').replace(/[.:;,]+$/, '').trim();
   let practiceRange = null;
   if (isRegularSection) {
     const practiceHeadings = headings.filter((h) => h.title === 'Practice');
+    const required = Math.max(MIN_PER_SECTION, MIN_PER_OBJECTIVE * objectives.length);
     if (!practiceHeadings.length) {
-      wrn(0, 'section has no `## Practice` block — add exactly five sourced, hinted exercises immediately before the end matter (retrofit pending)');
+      wrn(0, `section has no \`## Practice\` block — add a \`### \` group per objective with at least ${MIN_PER_OBJECTIVE} sourced, hinted exercises each (at least ${required} in total) immediately before the end matter (retrofit pending)`);
     } else if (practiceHeadings.length > 1) {
       err(practiceHeadings[1].index, 'more than one `## Practice` heading — a section has exactly one Practice block');
     } else {
@@ -447,11 +633,50 @@ export function lintHugo(src, filename = '') {
       } else if (!endMatter && next) {
         err(practice.index, '`## Practice` must be the last heading before the attribution footer in a section without end matter');
       }
-      const count = practiceQuestions
-        .filter(({ index }) => index >= practiceRange[0] && index < practiceRange[1])
-        .length;
-      if (count !== 5) {
-        err(practice.index, `Practice block has ${count} interactive exercise(s) — exactly 5 are required`);
+
+      const inRange = ({ index }) => index >= practiceRange[0] && index < practiceRange[1];
+      const blockQuestions = practiceQuestions.filter(inRange);
+      const groups = [...mediaSrc.matchAll(/^### +(.+?)[ \t]*$/gm)]
+        .map((m) => ({ index: m.index, end: m.index + m[0].length, title: m[1].trim() }))
+        .filter(inRange)
+        .map((group, i, all) => ({
+          ...group,
+          limit: i + 1 < all.length ? all[i + 1].index : practiceRange[1],
+        }));
+
+      if (!groups.length) {
+        err(practice.index, 'Practice block has no `### ` objective groups — give each section objective its own group');
+      } else {
+        const loose = blockQuestions.find(({ index }) => index < groups[0].index);
+        if (loose) {
+          err(loose.index, 'Practice exercise sits above the first `### ` group — every Practice exercise belongs to an objective group');
+        }
+        if (!objectives.length) {
+          err(practice.index, 'Practice block cannot be checked against the section objectives — the objectives callout must list one objective per Markdown list item');
+        } else {
+          const wanted = objectives.map(normalizeTitle);
+          const found = groups.map((g) => normalizeTitle(g.title));
+          const at = wanted.findIndex((t, i) => t !== found[i]);
+          if (at !== -1) {
+            err(
+              at < groups.length ? groups[at].index : practice.index,
+              `Practice group ${at + 1} is \`### ${groups[at]?.title ?? '(missing)'}\` — it must be \`### ${objectives[at]}\`, matching the objectives callout in order`,
+            );
+          } else if (groups.length > wanted.length) {
+            err(groups[wanted.length].index, `\`### ${groups[wanted.length].title}\` is not a section objective — the Practice block has one group per objective`);
+          }
+        }
+        for (const group of groups) {
+          const count = blockQuestions
+            .filter(({ index }) => index >= group.end && index < group.limit)
+            .length;
+          if (count < MIN_PER_OBJECTIVE) {
+            err(group.index, `Practice group \`### ${group.title}\` has ${count} interactive exercise(s) — at least ${MIN_PER_OBJECTIVE} are required`);
+          }
+        }
+      }
+      if (blockQuestions.length < required) {
+        err(practice.index, `Practice block has ${blockQuestions.length} interactive exercise(s) — at least ${required} are required (${MIN_PER_OBJECTIVE} per objective, minimum ${MIN_PER_SECTION})`);
       }
     }
   }
@@ -482,6 +707,52 @@ export function lintHugo(src, filename = '') {
     }
     if (params.answerMode === 'unordered' && !(params.answer || '').includes(',')) {
       err(index, `${where}: unordered answer needs at least two comma-separated members`);
+    }
+    // ---- comma-list answers: the ordered/unordered choice must be deliberate.
+    // The grader's default is positional, so a bare list is only fair when the
+    // question prescribes the order; a solution set never has one.
+    const answerParts = splitTopLevelCommas(params.answer || '');
+    if (answerParts.length > 1 && params.answerMode !== 'unordered') {
+      if (splitTopLevelCommas(stripGroupingCommas(params.answer)).length === 1) {
+        err(index, `${where}: answer ${JSON.stringify(params.answer)} reads as ONE digit-grouped number, not a list — write the scalar without commas (answerDisplay can show the grouped form) or add answerMode="unordered" for a true list`);
+      } else if (answerParts.every((part) => /^\s*[A-Za-z]\s*=/.test(part))) {
+        err(index, `${where}: answer is a comma-separated list of variable equations — a solution set has no order, so add answerMode="unordered"`);
+      } else if (!ORDER_CUE_RE.test(q)) {
+        err(index, `${where}: multi-member answer is graded positionally, but the question never tells the learner the order — prescribe it ("least to greatest", "Enter the length and width…") or add answerMode="unordered"`);
+      }
+    }
+    // ---- categorical answer encoded as a number — the wrong component.
+    if (codesACategoricalAnswer(q)) {
+      err(index, `${where}: the question encodes a categorical answer as a number ("answer 1 for yes") — use multiplechoice with the alternatives as its options, so the learner picks the choice instead of a code and cannot pass by guessing a digit`);
+    }
+    // ---- trivially satisfiable re-expression prompt.
+    // A prompt that asks the learner to restate a printed value in another
+    // form has an answer that is value-equal to that value by construction,
+    // so value-based grading alone accepts the prompt retyped back. Grade
+    // every standalone printed value exactly as a submission; if one is
+    // accepted, `answerForm` is what makes the exercise gradeable. An error,
+    // not a warning: the corpus carries none of these, so the next one is new
+    // work rather than a backlog entry.
+    if (params.answerForm !== undefined) {
+      const { unknown } = parseAnswerForm(params.answerForm);
+      if (unknown.length) {
+        err(index, `${where}: answerForm token(s) ${unknown.map((t) => JSON.stringify(t)).join(', ')} name no form — use ${ANSWER_FORM_TOKENS.join(', ')}`);
+      }
+    }
+    if ((params.answer || '').trim() && q.trim() && REEXPRESSION_RE.test(q)) {
+      // Grade each printed value under the exercise's own answerForm, exactly
+      // as a submission would be. A missing form leaves the prompt passable by
+      // retyping it — and so does a declared form too weak to rule the printed
+      // value out ("fraction" on a simplification prompt), so the form is
+      // exercised rather than trusted.
+      const printed = printedQuestionValues(q)
+        .find((value) => checkAnswer(value, params.answer, { mode: params.answerMode, form: params.answerForm }) === 'correct');
+      if (printed !== undefined) {
+        const remedy = parseAnswerForm(params.answerForm).valid
+          ? `the declared answerForm ${JSON.stringify(params.answerForm)} does not rule that value out — tighten it`
+          : 'add answerForm so the response is graded on its form (or use multiplechoice)';
+        err(index, `${where}: answer grades equal to ${JSON.stringify(printed)} printed in the question — a learner passes by retyping the prompt; ${remedy}, since value-based grading alone cannot tell the two forms apart`);
+      }
     }
     if (isRegularSection && !(params.hint || '').trim()) {
       wrn(index, `${where}: regular-section exercise is missing a hint`);

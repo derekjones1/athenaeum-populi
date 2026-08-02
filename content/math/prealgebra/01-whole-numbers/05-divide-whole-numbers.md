@@ -10,9 +10,13 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use division notation,
-  model division of whole numbers, divide whole numbers, translate word
-  phrases to math notation, and divide whole numbers in applications.
+**By the end of this section, you will be able to:**
+
+- Use division notation
+- Model division of whole numbers
+- Divide whole numbers
+- Translate word phrases to math notation
+- Divide whole numbers in applications
 {{< /callout >}}
 
 ## Use division notation
@@ -232,6 +236,176 @@ Cecelia will get $20$ servings from the big box.
   hint="The number of cups is 135 divided by 9 — long division, or count how many nines fit."
 >}}
 
+## Practice
+
+### Use division notation
+
+{{< multiplechoice
+  question="Translate from math notation to words: $54 \div 9$"
+  answer="fifty-four divided by nine; the quotient of fifty-four and nine"
+  hint="Read the dividend first, then the divisor — the division sign is read as *divided by*."
+>}}
+fifty-four divided by nine; the quotient of fifty-four and nine
+nine divided by fifty-four; the quotient of nine and fifty-four
+fifty-four times nine; the product of fifty-four and nine
+fifty-four minus nine; the difference of fifty-four and nine
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Translate from math notation to words: $\tfrac{32}{8}$"
+  answer="thirty-two divided by eight; the quotient of thirty-two and eight"
+  hint="In fraction form the top number is the dividend and the bottom number is the divisor."
+>}}
+thirty-two divided by eight; the quotient of thirty-two and eight
+eight divided by thirty-two; the quotient of eight and thirty-two
+thirty-two plus eight; the sum of thirty-two and eight
+thirty-two times eight; the product of thirty-two and eight
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Translate from math notation to words: $7\overline{)63}$"
+  answer="sixty-three divided by seven; the quotient of sixty-three and seven"
+  hint="With the long division bracket, the number *under* the bracket is the dividend, so it is named first."
+>}}
+sixty-three divided by seven; the quotient of sixty-three and seven
+seven divided by sixty-three; the quotient of seven and sixty-three
+sixty-three times seven; the product of sixty-three and seven
+sixty-three minus seven; the difference of sixty-three and seven
+{{< /multiplechoice >}}
+
+### Model division of whole numbers
+
+<svg viewBox="0 0 560 130" role="img" aria-label="Fifteen round counters separated into three groups, with five counters in each group." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
+  <rect x="25" y="15" width="160" height="100" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="200" y="15" width="160" height="100" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="375" y="15" width="160" height="100" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <g fill="currentColor" fill-opacity="0.35" stroke="currentColor" stroke-width="1.2">
+    <circle cx="65" cy="50" r="11" /><circle cx="105" cy="50" r="11" /><circle cx="145" cy="50" r="11" />
+    <circle cx="85" cy="88" r="11" /><circle cx="125" cy="88" r="11" />
+    <circle cx="240" cy="50" r="11" /><circle cx="280" cy="50" r="11" /><circle cx="320" cy="50" r="11" />
+    <circle cx="260" cy="88" r="11" /><circle cx="300" cy="88" r="11" />
+    <circle cx="415" cy="50" r="11" /><circle cx="455" cy="50" r="11" /><circle cx="495" cy="50" r="11" />
+    <circle cx="435" cy="88" r="11" /><circle cx="475" cy="88" r="11" />
+  </g>
+</svg>
+
+{{< fillin
+  question="The counters above model $15 \div 5$ — fifteen counters separated into groups of five. What is the quotient?"
+  answer="3"
+  hint="The divisor tells you how many counters go in each group; the quotient is the number of groups you can count."
+>}}
+
+<svg viewBox="0 0 560 230" role="img" aria-label="Twenty round counters separated into five groups, with four counters in each group." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
+  <rect x="25" y="15" width="160" height="95" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="200" y="15" width="160" height="95" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="375" y="15" width="160" height="95" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="112" y="125" width="160" height="95" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="287" y="125" width="160" height="95" rx="28" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <g fill="currentColor" fill-opacity="0.35" stroke="currentColor" stroke-width="1.2">
+    <circle cx="80" cy="50" r="11" /><circle cx="130" cy="50" r="11" />
+    <circle cx="80" cy="83" r="11" /><circle cx="130" cy="83" r="11" />
+    <circle cx="255" cy="50" r="11" /><circle cx="305" cy="50" r="11" />
+    <circle cx="255" cy="83" r="11" /><circle cx="305" cy="83" r="11" />
+    <circle cx="430" cy="50" r="11" /><circle cx="480" cy="50" r="11" />
+    <circle cx="430" cy="83" r="11" /><circle cx="480" cy="83" r="11" />
+    <circle cx="167" cy="160" r="11" /><circle cx="217" cy="160" r="11" />
+    <circle cx="167" cy="193" r="11" /><circle cx="217" cy="193" r="11" />
+    <circle cx="342" cy="160" r="11" /><circle cx="392" cy="160" r="11" />
+    <circle cx="342" cy="193" r="11" /><circle cx="392" cy="193" r="11" />
+  </g>
+</svg>
+
+{{< fillin
+  question="The counters above model $4\overline{)20}$ — twenty counters separated into groups of four. What is the quotient?"
+  answer="5"
+  hint="Twenty is the dividend and four is the divisor, so count how many groups of four the twenty counters make."
+>}}
+
+### Divide whole numbers
+
+{{< fillin
+  question="Divide, then check by multiplying: $43 \div 43$"
+  answer="1"
+  hint="Use a Division Property of One — any number except zero divided by itself has the same quotient."
+>}}
+
+{{< multiplechoice
+  question="Divide: $\tfrac{5}{0}$"
+  answer="undefined"
+  hint="Ask yourself what number multiplied by 0 could give 5."
+>}}
+0
+1
+5
+undefined
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Divide, then check by multiplying: $72 \div 3$"
+  answer="24"
+  hint="3 goes into 7 twice with 1 left over; bring down the 2. Then check that your quotient times 3 is 72."
+>}}
+
+{{< fillin
+  question="Divide, then check by multiplying: $\tfrac{91{,}881}{9}$"
+  answer="10209"
+  answerDisplay="$10{,}209$"
+  hint="After the first step, 9 goes into 1 zero times — write that zero in the quotient and keep bringing digits down."
+>}}
+
+{{< multiplechoice
+  question="Divide, then check by multiplying: $2{,}470 \div 7$"
+  answer="352 R6"
+  hint="To check a division with a remainder, multiply the quotient by the divisor and then add the remainder."
+>}}
+352 R6
+352 R4
+351 R6
+353 R1
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Divide, then check by multiplying: $56{,}883 \div 67$"
+  answer="849"
+  hint="The divisor has two digits, so start with the first three digits of the dividend: how many 67s are in 568? Guess and check."
+>}}
+
+### Translate word phrases to math notation
+
+{{< fillin
+  question="Translate and simplify: the quotient of 45 and 15."
+  answer="3"
+  answerDisplay="$45 \div 15 = 3$"
+  hint="*Quotient of* means divide, and the first number named is the dividend."
+>}}
+
+{{< fillin
+  question="Translate and simplify: the quotient of 288 and 24."
+  answer="12"
+  answerDisplay="$288 \div 24 = 12$"
+  hint="Write $288 \div 24$, then divide — how many 24s fit in 288?"
+>}}
+
+### Divide whole numbers in applications
+
+{{< fillin
+  question="Ric bought 64 ounces of trail mix. He wants to divide it into small bags, with 2 ounces of trail mix in each bag. How many bags can Ric fill?"
+  answer="32"
+  hint="Divide the total number of ounces by the number of ounces in each bag."
+>}}
+
+{{< fillin
+  question="There are 125 students in an astronomy class. The professor assigns them into groups of 5. How many groups of students are there?"
+  answer="25"
+  hint="The number of groups is the total number of students divided by the number in each group."
+>}}
+
+{{< fillin
+  question="Jenna puts in a new pair of contact lenses every 14 days. How many pairs of contact lenses does she need for 365 days?"
+  answer="27"
+  hint="Divide 365 by 14, then decide what the leftover day means — a partly used period still needs a whole pair."
+>}}
+
 ## Key terms
 
 **quotient** — the result of dividing one number by another. **dividend** —
@@ -243,4 +417,4 @@ the bracket notation.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 1.5: Divide Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-5-divide-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, described the cookie and counter models and the long-division worked columns in prose, and converted practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 1.5: Divide Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-5-divide-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, described the cookie and counter models and the long-division worked columns in prose, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, redrawing the answer-key counter models as accessible inline graphics.</small>

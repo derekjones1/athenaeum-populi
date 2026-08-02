@@ -9,9 +9,11 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** identify the $x$- and
-  $y$-intercepts on a graph, find the $x$- and $y$-intercepts from an
-  equation of a line, and graph a line using the intercepts.
+**By the end of this section, you will be able to:**
+
+- Identify the $x$- and $y$-intercepts on a graph
+- Find the $x$- and $y$-intercepts from an equation of a line
+- Graph a line using the intercepts
 {{< /callout >}}
 
 ## Identify the $x$- and $y$-intercepts on a graph

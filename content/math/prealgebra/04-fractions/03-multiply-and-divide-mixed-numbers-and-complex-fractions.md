@@ -10,10 +10,12 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** multiply and
-  divide mixed numbers, translate phrases to expressions with fractions,
-  simplify complex fractions, and simplify expressions written with a
-  fraction bar.
+**By the end of this section, you will be able to:**
+
+- Multiply and divide mixed numbers
+- Translate phrases to expressions with fractions
+- Simplify complex fractions
+- Simplify expressions written with a fraction bar
 {{< /callout >}}
 
 ## Multiply and divide mixed numbers
@@ -254,11 +256,14 @@ The quotient of a positive and a negative is negative, so $\tfrac{7}{-8}$
 is negative. Of the listed fractions, $\tfrac{-7}{8}$ and $-\tfrac{7}{8}$
 are also negative, so those are equivalent to $\tfrac{7}{-8}$.
 
-{{< fillin
-  question="Is $-\tfrac{3}{5}$ equivalent to $\tfrac{3}{-5}$? Enter 1 for yes or 0 for no."
-  answer="1"
+{{< multiplechoice
+  question="Is $-\tfrac{3}{5}$ equivalent to $\tfrac{3}{-5}$?"
+  answer="yes"
   hint="A negative divided by a positive equals a positive divided by a negative — both give the same negative value."
 >}}
+yes
+no
+{{< /multiplechoice >}}
 
 Fraction bars act as grouping symbols — the expressions above and below
 the bar should be treated as if they were in parentheses. For example,
@@ -330,6 +335,161 @@ $$\frac{4(-3)+6(-2)}{-3(2)-2} = 3$$
   hint="Multiply out the numerator and the denominator separately before dividing."
 >}}
 
+## Practice
+
+### Multiply and divide mixed numbers
+
+{{< fillin
+  question="Multiply, and write the answer in simplified form: $2\tfrac{4}{9} \cdot \tfrac{6}{7}$"
+  answer="\frac{44}{21}"
+  answerDisplay="$\tfrac{44}{21}$"
+  hint="Rewrite $2\tfrac{4}{9}$ as $\tfrac{22}{9}$, then remove the common factor of $2$ before multiplying."
+>}}
+
+{{< fillin
+  question="Multiply, and write the answer in simplified form: $2\tfrac{2}{5}\left(-2\tfrac{2}{9}\right)$"
+  answer="-\frac{16}{3}"
+  answerDisplay="$-\tfrac{16}{3}$"
+  hint="Both mixed numbers become improper fractions, $\tfrac{12}{5}$ and $-\tfrac{20}{9}$. One factor is negative, so the product is negative."
+>}}
+
+{{< fillin
+  question="Divide, and write the answer in simplified form: $-7 \div 5\tfrac{1}{4}$"
+  answer="-\frac{4}{3}"
+  answerDisplay="$-\tfrac{4}{3}$"
+  hint="Write $-7$ as $-\tfrac{7}{1}$ and $5\tfrac{1}{4}$ as $\tfrac{21}{4}$, then multiply by the reciprocal of the divisor."
+>}}
+
+{{< fillin
+  question="Divide, and write the answer in simplified form: $-18\tfrac{3}{4} \div \left(-3\tfrac{3}{4}\right)$"
+  answer="5"
+  hint="The improper fractions are $-\tfrac{75}{4}$ and $-\tfrac{15}{4}$. A negative divided by a negative is positive."
+>}}
+
+{{< fillin
+  question="A county fair booth sells fudge that contains $2\tfrac{2}{3}$ cups of chocolate chips per pound. How many cups of chocolate chips are in a half-pound of the fudge? Write your answer as an improper fraction."
+  answer="\frac{4}{3}"
+  answerDisplay="$\tfrac{4}{3} = 1\tfrac{1}{3}$ cups"
+  hint="Half a pound means multiplying the cups per pound by $\tfrac{1}{2}$."
+>}}
+
+{{< fillin
+  question="That same fudge contains $2\tfrac{2}{3}$ cups of chocolate chips per pound, and the owners make it in $10$-pound batches. How many cups of chocolate chips does one batch need? Write your answer as an improper fraction."
+  answer="\frac{80}{3}"
+  answerDisplay="$\tfrac{80}{3} = 26\tfrac{2}{3}$ cups"
+  hint="Multiply $\tfrac{8}{3}$ by $\tfrac{10}{1}$, and leave the result as an improper fraction."
+>}}
+
+### Translate phrases to expressions with fractions
+
+{{< fillin
+  question="Translate the phrase into an algebraic expression: the quotient of $7v$ and $13$"
+  answer="\frac{7v}{13}"
+  answerDisplay="$\tfrac{7v}{13}$"
+  hint="Quotient means division, and the quantity named first is the dividend, so it goes on top."
+>}}
+
+{{< fillin
+  question="Translate the phrase into an algebraic expression: the quotient of $a$ and $b$"
+  answer="\frac{a}{b}"
+  answerDisplay="$\tfrac{a}{b}$"
+  hint="Divide the first named variable by the second."
+>}}
+
+{{< fillin
+  question="Translate the phrase into an algebraic expression: the quotient of $A$ and the difference of $3$ and $B$"
+  answer="\frac{A}{3-B}"
+  answerDisplay="$\tfrac{A}{3-B}$"
+  hint="Build the difference named in the phrase first — in the stated order — then make it the denominator."
+>}}
+
+### Simplify complex fractions
+
+{{< fillin
+  question="Simplify: $\left(\tfrac{4}{5}\right) / \left(\tfrac{8}{15}\right)$"
+  answer="\frac{3}{2}"
+  answerDisplay="$\tfrac{3}{2}$"
+  hint="Rewrite as $\tfrac{4}{5} \div \tfrac{8}{15}$, then multiply by the reciprocal of the second fraction."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(-\tfrac{9}{10}\right) / 3$"
+  answer="-\frac{3}{10}"
+  answerDisplay="$-\tfrac{3}{10}$"
+  hint="Write $3$ as $\tfrac{3}{1}$, multiply by its reciprocal, then remove the common factor of $3$."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(\tfrac{r}{5}\right) / \left(\tfrac{s}{3}\right)$"
+  answer="\frac{3r}{5s}"
+  answerDisplay="$\tfrac{3r}{5s}$"
+  hint="Multiply $\tfrac{r}{5}$ by the reciprocal $\tfrac{3}{s}$; there are no common factors to remove here."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(4\tfrac{2}{3}\right) / \left(\tfrac{1}{6}\right)$"
+  answer="28"
+  hint="Convert $4\tfrac{2}{3}$ to $\tfrac{14}{3}$, then multiply by the reciprocal $\tfrac{6}{1}$."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(\tfrac{3}{8}\right) / \left(-6\tfrac{3}{4}\right)$"
+  answer="-\frac{1}{18}"
+  answerDisplay="$-\tfrac{1}{18}$"
+  hint="The divisor $-6\tfrac{3}{4}$ becomes $-\tfrac{27}{4}$; multiplying by its reciprocal gives a negative result."
+>}}
+
+### Simplify expressions written with a fraction bar
+
+{{< multiplechoice
+  question="Which of the following fractions are equivalent to $\tfrac{-4}{9}$? $\quad \tfrac{-4}{-9}, \quad \tfrac{-4}{9}, \quad \tfrac{4}{9}, \quad -\tfrac{4}{9}$"
+  answer="$\tfrac{-4}{9}$ and $-\tfrac{4}{9}$"
+  hint="Decide the sign of each listed fraction first — only the negative ones can match."
+>}}
+$\tfrac{-4}{-9}$ and $\tfrac{4}{9}$
+$\tfrac{-4}{-9}$ and $\tfrac{-4}{9}$
+$\tfrac{-4}{9}$ and $-\tfrac{4}{9}$
+$\tfrac{4}{9}$ and $-\tfrac{4}{9}$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Which of the following fractions are equivalent to $-\tfrac{13}{6}$? $\quad \tfrac{13}{6}, \quad \tfrac{13}{-6}, \quad \tfrac{-13}{-6}, \quad \tfrac{-13}{6}$"
+  answer="$\tfrac{13}{-6}$ and $\tfrac{-13}{6}$"
+  hint="A fraction is negative when exactly one of its numerator and denominator is negative."
+>}}
+$\tfrac{13}{6}$ and $\tfrac{-13}{-6}$
+$\tfrac{13}{-6}$ and $\tfrac{-13}{6}$
+$\tfrac{13}{6}$ and $\tfrac{-13}{6}$
+$\tfrac{-13}{-6}$ and $\tfrac{-13}{6}$
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Simplify: $\tfrac{9+3}{7}$"
+  answer="\frac{12}{7}"
+  answerDisplay="$\tfrac{12}{7}$"
+  hint="The fraction bar groups the numerator, so add before you divide."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{7^2+1}{60}$"
+  answer="\frac{5}{6}"
+  answerDisplay="$\tfrac{5}{6}$"
+  hint="Apply the exponent in the numerator before adding, then remove the common factor of $10$."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{6^2-4^2}{4-6}$"
+  answer="-10"
+  hint="Square each number separately — $6^2-4^2$ is not $(6-4)^2$ — and watch the sign of the denominator."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{9 \cdot 7 - 3(12-8)}{8 \cdot 7 - 6 \cdot 6}$"
+  answer="\frac{51}{20}"
+  answerDisplay="$\tfrac{51}{20}$"
+  hint="In the numerator, simplify inside the parentheses first, then multiply, then subtract. Simplify the denominator the same way before dividing."
+>}}
+
 ## Key terms
 
 **complex fraction** — a fraction in which the numerator, the
@@ -340,4 +500,4 @@ dividing.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 4.3: Multiply and Divide Mixed Numbers and Complex Fractions](https://openstax.org/books/prealgebra-2e/pages/4-3-multiply-and-divide-mixed-numbers-and-complex-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: presented the worked examples as prose walkthroughs with typeset math instead of the source's two-column table format; omitted the Be Prepared quiz, the "which fractions are equivalent" multi-answer Try Its (folded their idea into a single check question), media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 4.3: Multiply and Divide Mixed Numbers and Complex Fractions](https://openstax.org/books/prealgebra-2e/pages/4-3-multiply-and-divide-mixed-numbers-and-complex-fractions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: presented the worked examples as prose walkthroughs with typeset math instead of the source's two-column table format; omitted the Be Prepared quiz, the "which fractions are equivalent" multi-answer Try Its (folded their idea into a single check question), and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, expanding a multipart Everyday Math item into one exercise per part and presenting the multi-answer "which fractions are equivalent" exercises as single-select multiple choice.</small>

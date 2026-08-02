@@ -9,10 +9,13 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use subtraction
-  notation, model subtraction of whole numbers, subtract whole numbers,
-  translate word phrases to math notation, and subtract whole numbers in
-  applications.
+**By the end of this section, you will be able to:**
+
+- Use subtraction notation
+- Model subtraction of whole numbers
+- Subtract whole numbers
+- Translate word phrases to math notation
+- Subtract whole numbers in applications
 {{< /callout >}}
 
 ## Use subtraction notation
@@ -199,6 +202,206 @@ price and the sale price is \$189.
   hint="Write the phrase: the difference of 77 and 58. Translate it to subtraction and simplify."
 >}}
 
+## Practice
+
+### Use subtraction notation
+
+{{< multiplechoice
+  question="Translate $15 - 9$ from math notation to words."
+  answer="fifteen minus nine; the difference of fifteen and nine"
+  hint="Read the minus sign as minus, and name the result of a subtraction the difference — in the same order the expression is written."
+>}}
+fifteen minus nine; the difference of fifteen and nine
+nine minus fifteen; the difference of nine and fifteen
+fifteen plus nine; the sum of fifteen and nine
+fifteen times nine; the product of fifteen and nine
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Translate $42 - 35$ from math notation to words."
+  answer="forty-two minus thirty-five; the difference of forty-two and thirty-five"
+  hint="Keep the numbers in the order they appear, and check that the result word matches the minus sign."
+>}}
+forty-two plus thirty-five; the sum of forty-two and thirty-five
+thirty-five minus forty-two; the difference of thirty-five and forty-two
+forty-two minus thirty-five; the difference of forty-two and thirty-five
+forty-two minus thirty-five; the sum of forty-two and thirty-five
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Translate $675 - 350$ from math notation to words."
+  answer="six hundred seventy-five minus three hundred fifty; the difference of six hundred seventy-five and three hundred fifty"
+  hint="Name each number in words first, then join them with minus and name the result the difference."
+>}}
+six hundred seventy-five minus three hundred fifty; the sum of six hundred seventy-five and three hundred fifty
+six hundred seventy-five minus three hundred fifty; the difference of six hundred seventy-five and three hundred fifty
+three hundred fifty minus six hundred seventy-five; the difference of three hundred fifty and six hundred seventy-five
+six hundred seventy-five plus three hundred fifty; the sum of six hundred seventy-five and three hundred fifty
+{{< /multiplechoice >}}
+
+### Model subtraction of whole numbers
+
+<svg viewBox="0 0 445 60" role="img" aria-label="Six single base-10 blocks in a row. The first three are circled to show that they are being taken away." style="max-width: 340px; width: 100%; display: block; margin: 1.5rem auto">
+  <rect x="20" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="95" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="170" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="245" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="320" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" /><rect x="395" y="15" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <ellipse cx="110" cy="30" rx="105" ry="26" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
+</svg>
+
+{{< fillin
+  question="The base-10 blocks above model $6 - 3$. How many blocks are left after the circled blocks are taken away?"
+  answer="3"
+  hint="Count the blocks that are not circled."
+>}}
+
+<svg viewBox="0 0 510 70" role="img" aria-label="Base-10 blocks: one rod of ten blocks and eight single blocks. Five of the single blocks are circled to show that they are being taken away." style="max-width: 510px; width: 100%; display: block; margin: 1.5rem auto">
+  <defs>
+    <g id="ap-sub-rod-b" fill="none" stroke="currentColor" stroke-width="0.6">
+    <line x1="20" y1="0" x2="20" y2="20" />
+    <line x1="40" y1="0" x2="40" y2="20" />
+    <line x1="60" y1="0" x2="60" y2="20" />
+    <line x1="80" y1="0" x2="80" y2="20" />
+    <line x1="100" y1="0" x2="100" y2="20" />
+    <line x1="120" y1="0" x2="120" y2="20" />
+    <line x1="140" y1="0" x2="140" y2="20" />
+    <line x1="160" y1="0" x2="160" y2="20" />
+    <line x1="180" y1="0" x2="180" y2="20" />
+    <rect x="0" y="0" width="200" height="20" stroke-width="1.5" />
+    </g>
+  </defs>
+  <use href="#ap-sub-rod-b" x="20" y="25" />
+  <rect x="260" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="290" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="320" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="350" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="380" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="410" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="440" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="470" y="25" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <ellipse cx="420" cy="35" rx="78" ry="22" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
+</svg>
+
+{{< fillin
+  question="The base-10 blocks above model $18 - 5$. What number is left after the circled blocks are taken away?"
+  answer="13"
+  hint="One whole rod is still there, worth 10, plus the single blocks that were not circled."
+>}}
+
+<svg viewBox="0 0 450 125" role="img" aria-label="Base-10 blocks: three rods of ten blocks each and five single blocks. The bottom rod and three of the single blocks are circled to show that they are being taken away." style="max-width: 450px; width: 100%; display: block; margin: 1.5rem auto">
+  <defs>
+    <g id="ap-sub-rod-c" fill="none" stroke="currentColor" stroke-width="0.6">
+    <line x1="20" y1="0" x2="20" y2="20" />
+    <line x1="40" y1="0" x2="40" y2="20" />
+    <line x1="60" y1="0" x2="60" y2="20" />
+    <line x1="80" y1="0" x2="80" y2="20" />
+    <line x1="100" y1="0" x2="100" y2="20" />
+    <line x1="120" y1="0" x2="120" y2="20" />
+    <line x1="140" y1="0" x2="140" y2="20" />
+    <line x1="160" y1="0" x2="160" y2="20" />
+    <line x1="180" y1="0" x2="180" y2="20" />
+    <rect x="0" y="0" width="200" height="20" stroke-width="1.5" />
+    </g>
+  </defs>
+  <use href="#ap-sub-rod-c" x="20" y="15" />
+  <use href="#ap-sub-rod-c" x="20" y="50" />
+  <use href="#ap-sub-rod-c" x="20" y="85" />
+  <rect x="280" y="50" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="310" y="50" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="340" y="50" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="370" y="50" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <rect x="400" y="50" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" />
+  <ellipse cx="120" cy="95" rx="110" ry="20" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
+  <ellipse cx="380" cy="60" rx="52" ry="20" fill="none" stroke="var(--ap-error, #b42318)" stroke-width="1.5" />
+</svg>
+
+{{< fillin
+  question="The base-10 blocks above model $35 - 13$. What number is left after the circled blocks are taken away?"
+  answer="22"
+  hint="Count the rods that are left as tens and the single blocks that are left as ones."
+>}}
+
+### Subtract whole numbers
+
+{{< fillin
+  question="Subtract, then check by adding: $38 - 16$."
+  answer="22"
+  hint="No borrowing is needed here — subtract the ones, then the tens. Check that your answer plus 16 gives 38."
+>}}
+
+{{< fillin
+  question="Subtract, then check by adding: $75 - 47$."
+  answer="28"
+  hint="You cannot take 7 from 5, so borrow 1 ten and make the ones $15 - 7$."
+>}}
+
+{{< fillin
+  question="Subtract, then check by adding: $6{,}318 - 2{,}799$."
+  answer="3519"
+  answerDisplay="$3{,}519$"
+  hint="The ones, tens, and hundreds columns each need a borrow. Check that your answer plus 2,799 gives 6,318."
+>}}
+
+{{< fillin
+  question="Subtract, then check by adding: $43{,}650 - 8{,}982$."
+  answer="34668"
+  answerDisplay="$34{,}668$"
+  hint="Line up the place values first — 8,982 has no ten-thousands digit. Borrow from left to right as each column needs it."
+>}}
+
+### Translate word phrases to math notation
+
+{{< fillin
+  question="Translate and simplify: the difference of 15 and 4."
+  answer="11"
+  answerDisplay="$15 - 4 = 11$"
+  hint="Difference keeps the numbers in the order the phrase gives them."
+>}}
+
+{{< fillin
+  question="Translate and simplify: subtract 28 from 75."
+  answer="47"
+  answerDisplay="$75 - 28 = 47$"
+  hint="Subtract from reverses the order — you are taking 28 away from 75, not 75 away from 28."
+>}}
+
+{{< fillin
+  question="Translate and simplify: 92 decreased by 67."
+  answer="25"
+  answerDisplay="$92 - 67 = 25$"
+  hint="Decreased by keeps the order of the phrase: start at 92 and take 67 away."
+>}}
+
+{{< fillin
+  question="Translate and simplify: 38 less than 61."
+  answer="23"
+  answerDisplay="$61 - 38 = 23$"
+  hint="Less than reverses the order, just like subtract from — start from 61."
+>}}
+
+### Subtract whole numbers in applications
+
+{{< fillin
+  question="The high temperature on June 2 in Las Vegas was 80 degrees and the low temperature was 63 degrees. What was the difference, in degrees, between the high and low temperatures?"
+  answer="17"
+  hint="Write the phrase first: the difference of 80 and 63. Then translate it to subtraction."
+>}}
+
+{{< fillin
+  question="Olivia's third grade class has 35 children. Last year, her second grade class had 22 children. What is the difference between the number of children in Olivia's third grade class and her second grade class?"
+  answer="13"
+  hint="Difference means subtract, and the larger class comes first."
+>}}
+
+{{< fillin
+  question="A mountain bike is on sale for \$399. Its regular price is \$650. What is the difference, in dollars, between the regular price and the sale price?"
+  answer="251"
+  hint="Subtract the sale price from the regular price. You will need to borrow twice."
+>}}
+
+{{< fillin
+  question="John wants to buy a laptop that costs \$840. He has \$685 in his savings account. How much more, in dollars, does he need to save in order to buy the laptop?"
+  answer="155"
+  hint="What he still needs is the difference between the cost and what he already has."
+>}}
+
 ## Key terms
 
 **difference** — the result of subtracting one number from another.
@@ -209,4 +412,4 @@ $10$ in the current place so a column can be subtracted.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 1.3: Subtract Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-3-subtract-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, redrew the base-10 block model as an accessible inline graphic and described the remaining models in prose, and converted practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 1.3: Subtract Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-3-subtract-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, redrew the base-10 block models as accessible inline graphics and described the remaining models in prose, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, with the base-10 modeling exercises restated to ask for the number the model leaves.</small>

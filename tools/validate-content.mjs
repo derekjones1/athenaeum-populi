@@ -11,6 +11,9 @@
  */
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join, basename, dirname, relative } from 'node:path';
+// The one objectives-callout parser, shared with the content lint and the
+// source audit so the three tools never diagnose the callout differently.
+import { parseObjectivesCallout } from './lib-openstax-source.mjs';
 
 // Roles are keyed off depth from the content root (content=0, subject=1,
 // book=2, chapter=3). Pass a start-depth so a single book can be validated in
@@ -119,7 +122,8 @@ function checkKnowledgeCheck(file, fm, rel) {
 
 function checkFront(file, { isBookRoot, isChapterIndex, isNumberedSection, isKnowledgeCheck }) {
   const rel = relative(ROOT, file);
-  const fm = frontOf(readFileSync(file, 'utf8'));
+  const src = readFileSync(file, 'utf8');
+  const fm = frontOf(src);
   if (!fm) { errors.push(`${rel}: missing frontmatter`); return; }
   for (const k of ['title', 'description']) if (!hasKey(fm, k)) errors.push(`${rel}: missing \`${k}:\``);
   if (isBookRoot) for (const k of ['license', 'source']) if (!hasKey(fm, k)) errors.push(`${rel}: book index needs \`${k}:\``);
@@ -139,6 +143,16 @@ function checkFront(file, { isBookRoot, isChapterIndex, isNumberedSection, isKno
       const sec = basename(file).match(/^(\d+)-/)?.[1];
       const got = val(fm, 'source_section');
       if (ch && sec && got && got !== `${Number(ch)}.${Number(sec)}`) errors.push(`${rel}: source_section "${got}" ≠ path ${Number(ch)}.${Number(sec)}`);
+    }
+    // The opening callout states the objectives as a Markdown list, one item
+    // per objective. The content lint keys the `## Practice` block's `### `
+    // groups to that list, and prose objectives cannot be split reliably
+    // because an objective may itself contain a comma.
+    const objectives = parseObjectivesCallout(src);
+    if (objectives === null) {
+      errors.push(`${rel}: numbered section needs a \`**By the end of this section, you will be able to:**\` objectives callout`);
+    } else if (!objectives.length) {
+      errors.push(`${rel}: objectives callout must list one objective per Markdown list item`);
     }
   }
 }

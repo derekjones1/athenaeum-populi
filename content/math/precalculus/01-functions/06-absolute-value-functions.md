@@ -10,8 +10,11 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** graph an absolute
-  value function, and solve an absolute value equation.
+**By the end of this section, you will be able to:**
+
+- Graph an absolute value function
+- Solve an absolute value equation
+- Solve an absolute value inequality
 {{< /callout >}}
 
 Until the 1920s, the so-called spiral nebulae were believed to be clouds of

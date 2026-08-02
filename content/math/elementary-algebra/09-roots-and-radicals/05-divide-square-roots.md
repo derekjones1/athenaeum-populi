@@ -10,8 +10,11 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** divide square roots,
-  rationalize a one-term denominator, and rationalize a two-term denominator.
+**By the end of this section, you will be able to:**
+
+- Divide square roots
+- Rationalize a one-term denominator
+- Rationalize a two-term denominator
 {{< /callout >}}
 
 Throughout this section we assume all variables are greater than or equal to

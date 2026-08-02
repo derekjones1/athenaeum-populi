@@ -10,10 +10,12 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** find the least common
-  denominator of rational expressions, find equivalent rational expressions, add
-  rational expressions with different denominators, and subtract rational
-  expressions with different denominators.
+**By the end of this section, you will be able to:**
+
+- Find the least common denominator of rational expressions
+- Find equivalent rational expressions
+- Add rational expressions with different denominators
+- Subtract rational expressions with different denominators
 {{< /callout >}}
 
 ## Find the least common denominator of rational expressions

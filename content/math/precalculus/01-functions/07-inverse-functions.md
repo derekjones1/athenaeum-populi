@@ -10,11 +10,12 @@ weight: 7
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** verify inverse
-  functions, determine the domain and range of an inverse function and restrict
-  the domain of a function to make it one-to-one, find or evaluate the inverse
-  of a function, and use the graph of a one-to-one function to graph its
-  inverse function on the same axes.
+**By the end of this section, you will be able to:**
+
+- Verify inverse functions
+- Determine the domain and range of an inverse function and restrict the domain of a function to make it one-to-one
+- Find or evaluate the inverse of a function
+- Use the graph of a one-to-one function to graph its inverse function on the same axes
 {{< /callout >}}
 
 A reversible heat pump is a climate-control system that is an air conditioner

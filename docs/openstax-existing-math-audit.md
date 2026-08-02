@@ -15,22 +15,22 @@
 ## Coverage
 
 - Books with mapped sections: 4
-- Numbered sections mapped: 208
-- Metadata matched without a flag: 203
+- Numbered sections mapped: 212
+- Metadata matched without a flag: 207
 - Intentional adaptations adjudicated: 5
 - Unresolved sections needing review: 0
 - Modules differing from the committed map: 0
-- Objectives automatically located: 768/770
-- Core instructional headings automatically located: 772/777
-- Local interactive questions inventoried: 3591
-- Upstream Try It prompts with a likely local prompt match: 3635/4576
+- Objectives automatically located: 785/787
+- Core instructional headings automatically located: 795/798
+- Local interactive questions inventoried: 4599
+- Upstream Try It prompts with a likely local prompt match: 3741/4576
 
 | Book | Bundle | Authoring status | Chapters | Sections mapped |
 |---|---|---|---:|---:|
 | elementary-algebra | `prealgebra-bundle` | complete | 10/10 | 71/71 |
 | intermediate-algebra | `prealgebra-bundle` | complete | 12/12 | 70/70 |
 | prealgebra | `prealgebra-bundle` | complete | 11/11 | 60/60 |
-| precalculus | `college-algebra-bundle` | scaffolded | 12/12 | 7/73 |
+| precalculus | `college-algebra-bundle` | scaffolded | 12/12 | 11/73 |
 
 The prose percentage is five-word source-shingle traceability, not a quality
 score. Low values can reflect disclosed condensation, reformatted mathematics,
@@ -181,66 +181,66 @@ or intentionally omitted print material.
 | [intermediate-algebra 12.2](../content/math/intermediate-algebra/12-sequences-series-and-binomial-theorem/02-arithmetic-sequences.md) | `m81418` | metadata matched | 3/3 | 3/3 | 67% | 16/16 | 26 |
 | [intermediate-algebra 12.3](../content/math/intermediate-algebra/12-sequences-series-and-binomial-theorem/03-geometric-sequences-and-series.md) | `m81419` | metadata matched | 5/5 | 5/5 | 40% | 20/20 | 22 |
 | [intermediate-algebra 12.4](../content/math/intermediate-algebra/12-sequences-series-and-binomial-theorem/04-binomial-theorem.md) | `m81420` | metadata matched | 3/3 | 3/3 | 57% | 16/18 | 19 |
-| [prealgebra 1.1](../content/math/prealgebra/01-whole-numbers/01-introduction.md) | `m81243` | metadata matched | 6/6 | 6/6 | 27% | 6/20 | 6 |
-| [prealgebra 1.2](../content/math/prealgebra/01-whole-numbers/02-add-whole-numbers.md) | `m81244` | metadata matched | 5/5 | 5/5 | 11% | 7/30 | 9 |
-| [prealgebra 1.3](../content/math/prealgebra/01-whole-numbers/03-subtract-whole-numbers.md) | `m81245` | metadata matched | 5/5 | 5/5 | 29% | 7/26 | 6 |
-| [prealgebra 1.4](../content/math/prealgebra/01-whole-numbers/04-multiply-whole-numbers.md) | `m81255` | metadata matched | 5/5 | 5/5 | 16% | 10/34 | 8 |
-| [prealgebra 1.5](../content/math/prealgebra/01-whole-numbers/05-divide-whole-numbers.md) | `m81256` | metadata matched | 5/5 | 5/5 | 21% | 8/26 | 7 |
-| [prealgebra 2.1](../content/math/prealgebra/02-the-language-of-algebra/01-use-the-language-of-algebra.md) | `m81268` | metadata matched | 4/4 | 4/4 | 14% | 11/24 | 11 |
-| [prealgebra 2.2](../content/math/prealgebra/02-the-language-of-algebra/02-evaluate-simplify-and-translate-expressions.md) | `m81270` | metadata matched | 4/4 | 4/4 | 12% | 9/30 | 10 |
-| [prealgebra 2.3](../content/math/prealgebra/02-the-language-of-algebra/03-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md) | `m81271` | adapted-verified | 6/6 | 5/6 | 16% | 17/24 | 11 |
-| [prealgebra 2.4](../content/math/prealgebra/02-the-language-of-algebra/04-find-multiples-and-factors.md) | `m81272` | metadata matched | 4/4 | 4/4 | 12% | 1/16 | 8 |
-| [prealgebra 2.5](../content/math/prealgebra/02-the-language-of-algebra/05-prime-factorization-and-the-least-common-multiple.md) | `m81273` | metadata matched | 2/2 | 2/2 | 79% | 12/14 | 14 |
-| [prealgebra 3.1](../content/math/prealgebra/03-integers/01-introduction-to-integers.md) | `m81275` | metadata matched | 5/5 | 5/5 | 28% | 9/26 | 15 |
-| [prealgebra 3.2](../content/math/prealgebra/03-integers/02-add-integers.md) | `m81276` | adapted-verified | 5/5 | 3/5 | 21% | 23/30 | 19 |
-| [prealgebra 3.3](../content/math/prealgebra/03-integers/03-subtract-integers.md) | `m81277` | metadata matched | 5/5 | 5/5 | 21% | 25/34 | 19 |
-| [prealgebra 3.4](../content/math/prealgebra/03-integers/04-multiply-and-divide-integers.md) | `m81278` | metadata matched | 5/5 | 5/5 | 28% | 18/26 | 18 |
-| [prealgebra 3.5](../content/math/prealgebra/03-integers/05-solve-equations-using-integers-the-division-property-of-equality.md) | `m81281` | metadata matched | 5/5 | 5/5 | 23% | 10/18 | 9 |
-| [prealgebra 4.1](../content/math/prealgebra/04-fractions/01-visualize-fractions.md) | `m81285` | metadata matched | 7/7 | 7/7 | 10% | 22/36 | 14 |
-| [prealgebra 4.2](../content/math/prealgebra/04-fractions/02-multiply-and-divide-fractions.md) | `m81286` | metadata matched | 4/4 | 4/4 | 12% | 25/36 | 14 |
-| [prealgebra 4.3](../content/math/prealgebra/04-fractions/03-multiply-and-divide-mixed-numbers-and-complex-fractions.md) | `m81287` | metadata matched | 4/4 | 4/4 | 24% | 26/30 | 15 |
-| [prealgebra 4.4](../content/math/prealgebra/04-fractions/04-add-and-subtract-fractions-with-common-denominators.md) | `m81288` | metadata matched | 4/4 | 4/4 | 16% | 12/22 | 11 |
-| [prealgebra 4.5](../content/math/prealgebra/04-fractions/05-add-and-subtract-fractions-with-different-denominators.md) | `m81289` | metadata matched | 6/6 | 6/6 | 12% | 26/36 | 18 |
-| [prealgebra 4.6](../content/math/prealgebra/04-fractions/06-add-and-subtract-mixed-numbers.md) | `m81290` | metadata matched | 5/5 | 5/5 | 18% | 25/28 | 13 |
-| [prealgebra 4.7](../content/math/prealgebra/04-fractions/07-solve-equations-with-fractions.md) | `m81291` | metadata matched | 4/4 | 4/4 | 18% | 18/28 | 14 |
-| [prealgebra 5.1](../content/math/prealgebra/05-decimals/01-decimals.md) | `m81293` | metadata matched | 6/6 | 6/6 | 69% | 17/20 | 15 |
-| [prealgebra 5.2](../content/math/prealgebra/05-decimals/02-decimal-operations.md) | `m81295` | metadata matched | 4/4 | 4/4 | 71% | 31/34 | 32 |
-| [prealgebra 5.3](../content/math/prealgebra/05-decimals/03-decimals-and-fractions.md) | `m81298` | metadata matched | 4/4 | 4/4 | 58% | 24/24 | 25 |
-| [prealgebra 5.4](../content/math/prealgebra/05-decimals/04-solve-equations-with-decimals.md) | `m81300` | metadata matched | 3/3 | 3/3 | 67% | 18/18 | 18 |
-| [prealgebra 5.5](../content/math/prealgebra/05-decimals/05-averages-and-probability.md) | `m81302` | metadata matched | 4/4 | 4/4 | 73% | 18/18 | 18 |
-| [prealgebra 5.6](../content/math/prealgebra/05-decimals/06-ratios-and-rate.md) | `m81303` | metadata matched | 5/5 | 5/5 | 79% | 19/22 | 24 |
-| [prealgebra 5.7](../content/math/prealgebra/05-decimals/07-simplify-and-use-square-roots.md) | `m81304` | metadata matched | 5/5 | 5/5 | 32% | 16/26 | 26 |
-| [prealgebra 6.1](../content/math/prealgebra/06-percents/01-understand-percent.md) | `m81306` | metadata matched | 3/3 | 3/3 | 48% | 26/26 | 21 |
-| [prealgebra 6.2](../content/math/prealgebra/06-percents/02-solve-general-applications-of-percent.md) | `m81313` | metadata matched | 3/3 | 3/3 | 60% | 22/22 | 22 |
-| [prealgebra 6.3](../content/math/prealgebra/06-percents/03-solve-sales-tax-commission-and-discount-applications.md) | `m81307` | metadata matched | 4/4 | 4/4 | 59% | 16/16 | 20 |
-| [prealgebra 6.4](../content/math/prealgebra/06-percents/04-solve-simple-interest-applications.md) | `m81308` | metadata matched | 2/2 | 2/2 | 66% | 14/14 | 14 |
-| [prealgebra 6.5](../content/math/prealgebra/06-percents/05-solve-proportions-and-their-applications.md) | `m81311` | metadata matched | 5/5 | 5/5 | 50% | 29/30 | 31 |
-| [prealgebra 7.1](../content/math/prealgebra/07-the-properties-of-real-numbers/01-rational-and-irrational-numbers.md) | `m81315` | metadata matched | 2/2 | 2/2 | 68% | 4/8 | 8 |
-| [prealgebra 7.2](../content/math/prealgebra/07-the-properties-of-real-numbers/02-commutative-and-associative-properties.md) | `m81316` | metadata matched | 3/3 | 3/3 | 47% | 13/24 | 11 |
-| [prealgebra 7.3](../content/math/prealgebra/07-the-properties-of-real-numbers/03-distributive-property.md) | `m81317` | metadata matched | 2/2 | 2/2 | 51% | 22/32 | 14 |
-| [prealgebra 7.4](../content/math/prealgebra/07-the-properties-of-real-numbers/04-properties-of-identity-inverses-and-zero.md) | `m81318` | metadata matched | 4/4 | 4/4 | 56% | 13/22 | 12 |
-| [prealgebra 7.5](../content/math/prealgebra/07-the-properties-of-real-numbers/05-systems-of-measurement.md) | `m81330` | metadata matched | 6/6 | 6/6 | 54% | 14/30 | 12 |
-| [prealgebra 8.1](../content/math/prealgebra/08-solving-linear-equations/01-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md) | `m81320` | metadata matched | 4/4 | 4/4 | 58% | 18/24 | 16 |
-| [prealgebra 8.2](../content/math/prealgebra/08-solving-linear-equations/02-solve-equations-using-the-division-and-multiplication-properties-of-equality.md) | `m81321` | metadata matched | 2/2 | 2/2 | 49% | 8/14 | 8 |
-| [prealgebra 8.3](../content/math/prealgebra/08-solving-linear-equations/03-solve-equations-with-variables-and-constants-on-both-sides.md) | `m81322` | metadata matched | 4/4 | 4/4 | 59% | 24/34 | 18 |
-| [prealgebra 8.4](../content/math/prealgebra/08-solving-linear-equations/04-solve-equations-with-fraction-or-decimal-coefficients.md) | `m81323` | metadata matched | 2/2 | 2/2 | 50% | 14/16 | 11 |
-| [prealgebra 9.1](../content/math/prealgebra/09-math-models-and-geometry/01-use-a-problem-solving-strategy.md) | `m81324` | metadata matched | 3/3 | 3/3 | 29% | 17/20 | 14 |
-| [prealgebra 9.2](../content/math/prealgebra/09-math-models-and-geometry/02-solve-money-applications.md) | `m81325` | metadata matched | 2/2 | 2/2 | 31% | 10/10 | 10 |
-| [prealgebra 9.3](../content/math/prealgebra/09-math-models-and-geometry/03-use-properties-of-angles-triangles-and-the-pythagorean-theorem.md) | `m81326` | metadata matched | 3/3 | 3/3 | 37% | 14/14 | 18 |
-| [prealgebra 9.4](../content/math/prealgebra/09-math-models-and-geometry/04-use-properties-of-rectangles-triangles-and-trapezoids.md) | `m81332` | metadata matched | 4/4 | 4/4 | 46% | 29/32 | 30 |
-| [prealgebra 9.5](../content/math/prealgebra/09-math-models-and-geometry/05-solve-geometry-applications-circles-and-irregular-figures.md) | `m81327` | metadata matched | 2/2 | 2/2 | 28% | 6/12 | 12 |
-| [prealgebra 9.6](../content/math/prealgebra/09-math-models-and-geometry/06-solve-geometry-applications-volume-and-surface-area.md) | `m81328` | omitted-approved | 4/4 | 4/5 | 29% | 19/20 | 20 |
-| [prealgebra 9.7](../content/math/prealgebra/09-math-models-and-geometry/07-solve-a-formula-for-a-specific-variable.md) | `m81329` | metadata matched | 2/2 | 2/2 | 7% | 18/18 | 20 |
-| [prealgebra 10.1](../content/math/prealgebra/10-polynomials/01-add-and-subtract-polynomials.md) | `m81334` | metadata matched | 5/5 | 5/5 | 47% | 14/20 | 17 |
-| [prealgebra 10.2](../content/math/prealgebra/10-polynomials/02-use-multiplication-properties-of-exponents.md) | `m81335` | metadata matched | 6/6 | 6/6 | 56% | 33/34 | 36 |
-| [prealgebra 10.3](../content/math/prealgebra/10-polynomials/03-multiply-polynomials.md) | `m81336` | metadata matched | 3/3 | 3/3 | 45% | 27/34 | 25 |
-| [prealgebra 10.4](../content/math/prealgebra/10-polynomials/04-divide-monomials.md) | `m81337` | metadata matched | 5/5 | 5/5 | 32% | 36/36 | 37 |
-| [prealgebra 10.5](../content/math/prealgebra/10-polynomials/05-integer-exponents-and-scientific-notation.md) | `m81342` | metadata matched | 5/5 | 5/5 | 37% | 29/34 | 23 |
-| [prealgebra 10.6](../content/math/prealgebra/10-polynomials/06-introduction-to-factoring-polynomials.md) | `m81347` | metadata matched | 2/2 | 2/2 | 52% | 27/28 | 28 |
-| [prealgebra 11.1](../content/math/prealgebra/11-graphs/01-use-the-rectangular-coordinate-system.md) | `m81340` | metadata matched | 5/5 | 5/5 | 62% | 14/28 | 11 |
-| [prealgebra 11.2](../content/math/prealgebra/11-graphs/02-graphing-linear-equations.md) | `m81345` | metadata matched | 3/3 | 3/3 | 65% | 15/15 | 16 |
-| [prealgebra 11.3](../content/math/prealgebra/11-graphs/03-graphing-with-intercepts.md) | `m81350` | metadata matched | 4/4 | 4/4 | 63% | 14/14 | 18 |
-| [prealgebra 11.4](../content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md) | `m81354` | metadata matched | 5/5 | 6/6 | 60% | 30/30 | 22 |
+| [prealgebra 1.1](../content/math/prealgebra/01-whole-numbers/01-introduction.md) | `m81243` | metadata matched | 6/6 | 6/6 | 27% | 9/20 | 25 |
+| [prealgebra 1.2](../content/math/prealgebra/01-whole-numbers/02-add-whole-numbers.md) | `m81244` | metadata matched | 5/5 | 5/5 | 11% | 9/30 | 26 |
+| [prealgebra 1.3](../content/math/prealgebra/01-whole-numbers/03-subtract-whole-numbers.md) | `m81245` | metadata matched | 5/5 | 5/5 | 29% | 19/26 | 24 |
+| [prealgebra 1.4](../content/math/prealgebra/01-whole-numbers/04-multiply-whole-numbers.md) | `m81255` | metadata matched | 5/5 | 5/5 | 16% | 14/34 | 24 |
+| [prealgebra 1.5](../content/math/prealgebra/01-whole-numbers/05-divide-whole-numbers.md) | `m81256` | metadata matched | 5/5 | 5/5 | 21% | 24/26 | 23 |
+| [prealgebra 2.1](../content/math/prealgebra/02-the-language-of-algebra/01-use-the-language-of-algebra.md) | `m81268` | metadata matched | 4/4 | 4/4 | 14% | 20/24 | 30 |
+| [prealgebra 2.2](../content/math/prealgebra/02-the-language-of-algebra/02-evaluate-simplify-and-translate-expressions.md) | `m81270` | metadata matched | 4/4 | 4/4 | 12% | 18/30 | 26 |
+| [prealgebra 2.3](../content/math/prealgebra/02-the-language-of-algebra/03-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md) | `m81271` | adapted-verified | 6/6 | 5/6 | 16% | 17/24 | 30 |
+| [prealgebra 2.4](../content/math/prealgebra/02-the-language-of-algebra/04-find-multiples-and-factors.md) | `m81272` | metadata matched | 4/4 | 4/4 | 12% | 1/16 | 21 |
+| [prealgebra 2.5](../content/math/prealgebra/02-the-language-of-algebra/05-prime-factorization-and-the-least-common-multiple.md) | `m81273` | metadata matched | 2/2 | 2/2 | 79% | 12/14 | 20 |
+| [prealgebra 3.1](../content/math/prealgebra/03-integers/01-introduction-to-integers.md) | `m81275` | metadata matched | 5/5 | 5/5 | 28% | 12/26 | 41 |
+| [prealgebra 3.2](../content/math/prealgebra/03-integers/02-add-integers.md) | `m81276` | metadata matched | 5/5 | 5/5 | 21% | 24/30 | 41 |
+| [prealgebra 3.3](../content/math/prealgebra/03-integers/03-subtract-integers.md) | `m81277` | metadata matched | 5/5 | 5/5 | 21% | 25/34 | 44 |
+| [prealgebra 3.4](../content/math/prealgebra/03-integers/04-multiply-and-divide-integers.md) | `m81278` | metadata matched | 5/5 | 5/5 | 28% | 20/26 | 37 |
+| [prealgebra 3.5](../content/math/prealgebra/03-integers/05-solve-equations-using-integers-the-division-property-of-equality.md) | `m81281` | metadata matched | 5/5 | 5/5 | 23% | 11/18 | 30 |
+| [prealgebra 4.1](../content/math/prealgebra/04-fractions/01-visualize-fractions.md) | `m81285` | metadata matched | 7/7 | 7/7 | 10% | 27/36 | 38 |
+| [prealgebra 4.2](../content/math/prealgebra/04-fractions/02-multiply-and-divide-fractions.md) | `m81286` | metadata matched | 4/4 | 4/4 | 12% | 25/36 | 30 |
+| [prealgebra 4.3](../content/math/prealgebra/04-fractions/03-multiply-and-divide-mixed-numbers-and-complex-fractions.md) | `m81287` | metadata matched | 4/4 | 4/4 | 24% | 30/30 | 35 |
+| [prealgebra 4.4](../content/math/prealgebra/04-fractions/04-add-and-subtract-fractions-with-common-denominators.md) | `m81288` | metadata matched | 4/4 | 4/4 | 16% | 15/22 | 25 |
+| [prealgebra 4.5](../content/math/prealgebra/04-fractions/05-add-and-subtract-fractions-with-different-denominators.md) | `m81289` | metadata matched | 6/6 | 6/6 | 12% | 28/36 | 38 |
+| [prealgebra 4.6](../content/math/prealgebra/04-fractions/06-add-and-subtract-mixed-numbers.md) | `m81290` | metadata matched | 5/5 | 5/5 | 18% | 26/28 | 27 |
+| [prealgebra 4.7](../content/math/prealgebra/04-fractions/07-solve-equations-with-fractions.md) | `m81291` | metadata matched | 4/4 | 4/4 | 18% | 20/28 | 32 |
+| [prealgebra 5.1](../content/math/prealgebra/05-decimals/01-decimals.md) | `m81293` | metadata matched | 6/6 | 6/6 | 69% | 17/20 | 38 |
+| [prealgebra 5.2](../content/math/prealgebra/05-decimals/02-decimal-operations.md) | `m81295` | metadata matched | 4/4 | 4/4 | 71% | 31/34 | 49 |
+| [prealgebra 5.3](../content/math/prealgebra/05-decimals/03-decimals-and-fractions.md) | `m81298` | metadata matched | 4/4 | 4/4 | 58% | 24/24 | 41 |
+| [prealgebra 5.4](../content/math/prealgebra/05-decimals/04-solve-equations-with-decimals.md) | `m81300` | metadata matched | 3/3 | 3/3 | 67% | 18/18 | 35 |
+| [prealgebra 5.5](../content/math/prealgebra/05-decimals/05-averages-and-probability.md) | `m81302` | metadata matched | 4/4 | 4/4 | 73% | 18/18 | 33 |
+| [prealgebra 5.6](../content/math/prealgebra/05-decimals/06-ratios-and-rate.md) | `m81303` | metadata matched | 5/5 | 5/5 | 79% | 19/22 | 43 |
+| [prealgebra 5.7](../content/math/prealgebra/05-decimals/07-simplify-and-use-square-roots.md) | `m81304` | metadata matched | 5/5 | 5/5 | 31% | 16/26 | 39 |
+| [prealgebra 6.1](../content/math/prealgebra/06-percents/01-understand-percent.md) | `m81306` | metadata matched | 3/3 | 3/3 | 48% | 26/26 | 36 |
+| [prealgebra 6.2](../content/math/prealgebra/06-percents/02-solve-general-applications-of-percent.md) | `m81313` | metadata matched | 3/3 | 3/3 | 60% | 22/22 | 38 |
+| [prealgebra 6.3](../content/math/prealgebra/06-percents/03-solve-sales-tax-commission-and-discount-applications.md) | `m81307` | metadata matched | 4/4 | 4/4 | 59% | 16/16 | 35 |
+| [prealgebra 6.4](../content/math/prealgebra/06-percents/04-solve-simple-interest-applications.md) | `m81308` | metadata matched | 2/2 | 2/2 | 66% | 14/14 | 26 |
+| [prealgebra 6.5](../content/math/prealgebra/06-percents/05-solve-proportions-and-their-applications.md) | `m81311` | metadata matched | 5/5 | 5/5 | 50% | 30/30 | 50 |
+| [prealgebra 7.1](../content/math/prealgebra/07-the-properties-of-real-numbers/01-rational-and-irrational-numbers.md) | `m81315` | metadata matched | 2/2 | 2/2 | 68% | 6/8 | 21 |
+| [prealgebra 7.2](../content/math/prealgebra/07-the-properties-of-real-numbers/02-commutative-and-associative-properties.md) | `m81316` | metadata matched | 3/3 | 3/3 | 47% | 18/24 | 25 |
+| [prealgebra 7.3](../content/math/prealgebra/07-the-properties-of-real-numbers/03-distributive-property.md) | `m81317` | metadata matched | 2/2 | 2/2 | 51% | 23/32 | 28 |
+| [prealgebra 7.4](../content/math/prealgebra/07-the-properties-of-real-numbers/04-properties-of-identity-inverses-and-zero.md) | `m81318` | metadata matched | 4/4 | 4/4 | 56% | 14/22 | 24 |
+| [prealgebra 7.5](../content/math/prealgebra/07-the-properties-of-real-numbers/05-systems-of-measurement.md) | `m81330` | metadata matched | 6/6 | 6/6 | 54% | 16/30 | 31 |
+| [prealgebra 8.1](../content/math/prealgebra/08-solving-linear-equations/01-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md) | `m81320` | metadata matched | 4/4 | 4/4 | 58% | 21/24 | 29 |
+| [prealgebra 8.2](../content/math/prealgebra/08-solving-linear-equations/02-solve-equations-using-the-division-and-multiplication-properties-of-equality.md) | `m81321` | metadata matched | 2/2 | 2/2 | 49% | 8/14 | 20 |
+| [prealgebra 8.3](../content/math/prealgebra/08-solving-linear-equations/03-solve-equations-with-variables-and-constants-on-both-sides.md) | `m81322` | metadata matched | 4/4 | 4/4 | 59% | 25/34 | 32 |
+| [prealgebra 8.4](../content/math/prealgebra/08-solving-linear-equations/04-solve-equations-with-fraction-or-decimal-coefficients.md) | `m81323` | metadata matched | 2/2 | 2/2 | 50% | 14/16 | 24 |
+| [prealgebra 9.1](../content/math/prealgebra/09-math-models-and-geometry/01-use-a-problem-solving-strategy.md) | `m81324` | metadata matched | 3/3 | 3/3 | 29% | 17/20 | 28 |
+| [prealgebra 9.2](../content/math/prealgebra/09-math-models-and-geometry/02-solve-money-applications.md) | `m81325` | metadata matched | 2/2 | 2/2 | 31% | 10/10 | 19 |
+| [prealgebra 9.3](../content/math/prealgebra/09-math-models-and-geometry/03-use-properties-of-angles-triangles-and-the-pythagorean-theorem.md) | `m81326` | metadata matched | 3/3 | 3/3 | 37% | 14/14 | 36 |
+| [prealgebra 9.4](../content/math/prealgebra/09-math-models-and-geometry/04-use-properties-of-rectangles-triangles-and-trapezoids.md) | `m81332` | metadata matched | 4/4 | 4/4 | 46% | 31/32 | 48 |
+| [prealgebra 9.5](../content/math/prealgebra/09-math-models-and-geometry/05-solve-geometry-applications-circles-and-irregular-figures.md) | `m81327` | metadata matched | 2/2 | 2/2 | 28% | 6/12 | 21 |
+| [prealgebra 9.6](../content/math/prealgebra/09-math-models-and-geometry/06-solve-geometry-applications-volume-and-surface-area.md) | `m81328` | omitted-approved | 4/4 | 4/5 | 29% | 19/20 | 37 |
+| [prealgebra 9.7](../content/math/prealgebra/09-math-models-and-geometry/07-solve-a-formula-for-a-specific-variable.md) | `m81329` | metadata matched | 2/2 | 2/2 | 7% | 18/18 | 32 |
+| [prealgebra 10.1](../content/math/prealgebra/10-polynomials/01-add-and-subtract-polynomials.md) | `m81334` | metadata matched | 5/5 | 5/5 | 47% | 17/20 | 36 |
+| [prealgebra 10.2](../content/math/prealgebra/10-polynomials/02-use-multiplication-properties-of-exponents.md) | `m81335` | metadata matched | 6/6 | 6/6 | 56% | 33/34 | 55 |
+| [prealgebra 10.3](../content/math/prealgebra/10-polynomials/03-multiply-polynomials.md) | `m81336` | metadata matched | 3/3 | 3/3 | 45% | 29/34 | 37 |
+| [prealgebra 10.4](../content/math/prealgebra/10-polynomials/04-divide-monomials.md) | `m81337` | metadata matched | 5/5 | 5/5 | 32% | 36/36 | 54 |
+| [prealgebra 10.5](../content/math/prealgebra/10-polynomials/05-integer-exponents-and-scientific-notation.md) | `m81342` | metadata matched | 5/5 | 5/5 | 37% | 30/34 | 41 |
+| [prealgebra 10.6](../content/math/prealgebra/10-polynomials/06-introduction-to-factoring-polynomials.md) | `m81347` | metadata matched | 2/2 | 2/2 | 52% | 27/28 | 41 |
+| [prealgebra 11.1](../content/math/prealgebra/11-graphs/01-use-the-rectangular-coordinate-system.md) | `m81340` | metadata matched | 5/5 | 5/5 | 62% | 17/28 | 31 |
+| [prealgebra 11.2](../content/math/prealgebra/11-graphs/02-graphing-linear-equations.md) | `m81345` | metadata matched | 3/3 | 3/3 | 65% | 15/15 | 31 |
+| [prealgebra 11.3](../content/math/prealgebra/11-graphs/03-graphing-with-intercepts.md) | `m81350` | metadata matched | 4/4 | 4/4 | 63% | 14/14 | 32 |
+| [prealgebra 11.4](../content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md) | `m81354` | adapted-verified | 5/5 | 6/6 | 60% | 30/30 | 41 |
 | [precalculus 1.1](../content/math/precalculus/01-functions/01-functions-and-function-notation.md) | `m49301` | metadata matched | 5/5 | 7/7 | 77% | 0/0 | 14 |
 | [precalculus 1.2](../content/math/precalculus/01-functions/02-domain-and-range.md) | `m49304` | metadata matched | 2/2 | 5/5 | 60% | 0/0 | 11 |
 | [precalculus 1.3](../content/math/precalculus/01-functions/03-rates-of-change-and-behavior-of-graphs.md) | `m49306` | metadata matched | 4/4 | 5/5 | 72% | 0/0 | 5 |
@@ -248,6 +248,10 @@ or intentionally omitted print material.
 | [precalculus 1.5](../content/math/precalculus/01-functions/05-transformation-of-functions.md) | `m49312` | metadata matched | 5/5 | 6/6 | 71% | 0/0 | 13 |
 | [precalculus 1.6](../content/math/precalculus/01-functions/06-absolute-value-functions.md) | `m49314` | metadata matched | 3/3 | 4/4 | 48% | 0/0 | 8 |
 | [precalculus 1.7](../content/math/precalculus/01-functions/07-inverse-functions.md) | `m49320` | metadata matched | 4/4 | 4/4 | 76% | 0/0 | 11 |
+| [precalculus 2.1](../content/math/precalculus/02-linear-functions/01-linear-functions.md) | `m49324` | metadata matched | 5/5 | 7/7 | 66% | 0/0 | 9 |
+| [precalculus 2.2](../content/math/precalculus/02-linear-functions/02-graphs-of-linear-functions.md) | `m50389` | metadata matched | 5/5 | 7/7 | 69% | 0/0 | 10 |
+| [precalculus 2.3](../content/math/precalculus/02-linear-functions/03-modeling-with-linear-functions.md) | `m49326` | metadata matched | 3/3 | 3/3 | 76% | 0/0 | 4 |
+| [precalculus 2.4](../content/math/precalculus/02-linear-functions/04-fitting-linear-models-to-data.md) | `m49327` | metadata matched | 4/4 | 4/4 | 74% | 0/0 | 3 |
 
 ## Adjudicated intentional adaptations
 
@@ -261,13 +265,13 @@ or intentionally omitted print material.
 
 ### prealgebra 2.3 — Solve Equations Using the Subtraction and Addition Properties of Equality
 
-- **adapted-verified:** The attribution footer explicitly discloses replacement of the envelope-and-counters manipulative figures with a direct statement of the Subtraction Property.
-
-### prealgebra 3.2 — Add Integers
-
-- **adapted-verified:** The local page combines the two closely related source headings into one translated-phrases-and-applications section, consistent with its disclosed prose condensation.
+- **adapted-verified:** The attribution footer explicitly discloses replacement of the envelope-and-counters manipulative figures with a direct statement of the Subtraction Property. The local objectives list therefore carries five items where the source abstract has six.
 
 ### prealgebra 9.6 — Solve Geometry Applications: Volume and Surface Area
 
 - **omitted-approved:** The attribution footer explicitly discloses omission of the end-of-chapter formula summary because every formula is retained where it is introduced.
+
+### prealgebra 11.4 — Understand Slope of a Line
+
+- **adapted-verified:** Upstream markup defect: the module's <md:abstract> packs two objectives into a single <item>, so the source parses as five objectives where the section teaches six. The local page has separate 'Graph a line given a point and the slope' and 'Solve slope applications' headings, matching the printed book, so the local objectives list carries six items. Do not collapse them back to match the malformed abstract.
 

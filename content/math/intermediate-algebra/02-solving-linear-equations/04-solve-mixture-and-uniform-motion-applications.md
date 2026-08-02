@@ -8,9 +8,12 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve coin word
-  problems, solve ticket and stamp word problems, solve mixture word problems,
-  and solve uniform motion applications.
+**By the end of this section, you will be able to:**
+
+- Solve coin word problems
+- Solve ticket and stamp word problems
+- Solve mixture word problems
+- Solve uniform motion applications
 {{< /callout >}}
 
 ## Solve coin word problems

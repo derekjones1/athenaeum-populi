@@ -10,9 +10,11 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** write the augmented
-  matrix for a system of equations, use row operations on a matrix, and solve
-  systems of equations using matrices.
+**By the end of this section, you will be able to:**
+
+- Write the augmented matrix for a system of equations
+- Use row operations on a matrix
+- Solve systems of equations using matrices
 {{< /callout >}}
 
 ## Write the augmented matrix for a system of equations

@@ -11,8 +11,10 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** multiply square roots,
-  and use polynomial multiplication to multiply square roots.
+**By the end of this section, you will be able to:**
+
+- Multiply square roots
+- Use polynomial multiplication to multiply square roots
 {{< /callout >}}
 
 ## Multiply square roots

@@ -9,9 +9,10 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** identify rational
-  numbers and irrational numbers, and classify different types of real
-  numbers.
+**By the end of this section, you will be able to:**
+
+- Identify rational numbers and irrational numbers
+- Classify different types of real numbers
 {{< /callout >}}
 
 ## Identify rational numbers and irrational numbers
@@ -99,6 +100,7 @@ $$-3\tfrac{6}{7} = -\tfrac{27}{7}$$
 {{< fillin
   question="Write $3.57$ as the ratio of two integers, in lowest terms."
   answer="\frac{357}{100}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{357}{100}$"
   hint="3.57 means 3 and 57 hundredths — write it as a mixed number, then convert to an improper fraction."
 >}}
@@ -106,6 +108,7 @@ $$-3\tfrac{6}{7} = -\tfrac{27}{7}$$
 {{< fillin
   question="Write $8.41$ as the ratio of two integers, in lowest terms."
   answer="\frac{841}{100}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{841}{100}$"
   hint="8.41 means 8 and 41 hundredths — write it as a mixed number, then convert to an improper fraction."
 >}}
@@ -291,6 +294,109 @@ We can summarize the results in a table:
   hint="Whole numbers are non-negative integers. $\sqrt{121} = 11$ and $6$ both qualify; $-\sqrt{25} = -5$ and $-1$ are negative."
 >}}
 
+## Practice
+
+### Identify rational numbers and irrational numbers
+
+{{< fillin
+  question="Write $5$ as the ratio of two integers."
+  answer="\frac{5}{1}"
+  answerForm="fraction"
+  answerDisplay="$\tfrac{5}{1}$"
+  hint="Any integer is already a ratio of integers — write it as a fraction with denominator $1$."
+>}}
+
+{{< fillin
+  question="Write $3.19$ as the ratio of two integers."
+  answer="\frac{319}{100}"
+  answerForm="fraction"
+  answerDisplay="$\tfrac{319}{100}$"
+  hint="$3.19$ means $3$ and $19$ hundredths — write it as a mixed number, then convert to an improper fraction."
+>}}
+
+{{< multiplechoice
+  question="Is $0.75$ rational or irrational?"
+  answer="rational"
+  hint="Decide whether the decimal stops, repeats, or does neither."
+>}}
+rational
+irrational
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $0.22\overline{3}$ rational or irrational?"
+  answer="rational"
+  hint="The bar over the $3$ says that digit repeats forever, so the decimal never stops but does settle into a pattern."
+>}}
+rational
+irrational
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $1.39174\ldots$ rational or irrational?"
+  answer="irrational"
+  hint="The ellipsis says the decimal keeps going, and no block of digits repeats."
+>}}
+rational
+irrational
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $\sqrt{25}$ rational or irrational?"
+  answer="rational"
+  hint="A square root is rational exactly when the number under the radical is a perfect square."
+>}}
+rational
+irrational
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $\sqrt{30}$ rational or irrational?"
+  answer="irrational"
+  hint="$5^2 = 25$ and $6^2 = 36$, so check whether $30$ lands on a perfect square."
+>}}
+rational
+irrational
+{{< /multiplechoice >}}
+
+### Classify different types of real numbers
+
+{{< fillin
+  question="How many of these numbers are whole numbers: $-8$, $0$, $1.95286\ldots$, $\tfrac{12}{5}$, $\sqrt{36}$, $9$?"
+  answer="3"
+  hint="Whole numbers are $0, 1, 2, 3, \ldots$ — simplify $\sqrt{36}$ before you decide."
+>}}
+
+{{< fillin
+  question="How many of these numbers are integers: $-8$, $0$, $1.95286\ldots$, $\tfrac{12}{5}$, $\sqrt{36}$, $9$?"
+  answer="4"
+  hint="The integers are the whole numbers together with their opposites, so the negative entry counts too."
+>}}
+
+{{< fillin
+  question="How many of these numbers are irrational: $-8$, $0$, $1.95286\ldots$, $\tfrac{12}{5}$, $\sqrt{36}$, $9$?"
+  answer="1"
+  hint="Only a decimal that neither stops nor repeats is irrational; every fraction and every perfect-square root here is rational."
+>}}
+
+{{< fillin
+  question="How many of these numbers are integers: $-\sqrt{100}$, $-7$, $-\tfrac{8}{3}$, $-1$, $0.77$, $3\tfrac{1}{4}$?"
+  answer="3"
+  hint="Simplify $-\sqrt{100}$ first; then look for the entries with no fractional part."
+>}}
+
+{{< fillin
+  question="How many of these numbers are whole numbers: $-\sqrt{100}$, $-7$, $-\tfrac{8}{3}$, $-1$, $0.77$, $3\tfrac{1}{4}$?"
+  answer="0"
+  hint="Whole numbers start at $0$ and go up, so nothing negative or fractional qualifies."
+>}}
+
+{{< fillin
+  question="How many of these numbers are rational: $-\sqrt{100}$, $-7$, $-\tfrac{8}{3}$, $-1$, $0.77$, $3\tfrac{1}{4}$?"
+  answer="6"
+  hint="Check each one for a decimal that stops or repeats, or for a way to write it as a ratio of two integers."
+>}}
+
 ## Key terms
 
 **rational number** — a number that can be written as $\tfrac{p}{q}$, where
@@ -301,4 +407,4 @@ number that is either rational or irrational.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 7.1: Rational and Irrational Numbers](https://openstax.org/books/prealgebra-2e/pages/7-1-rational-and-irrational-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the nested real-number-sets diagram as an accessible inline graphic; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, rephrasing the rational-vs-irrational classification problems as counting questions so they can be graded as math expressions.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 7.1: Rational and Irrational Numbers](https://openstax.org/books/prealgebra-2e/pages/7-1-rational-and-irrational-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the nested real-number-sets diagram as an accessible inline graphic; omitted the Be Prepared quiz, Self Check checklist, media links, and Writing Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback, rephrasing the rational-vs-irrational classification problems as counting questions so they can be graded as math expressions; and adapted selected end-of-section exercises into the interactive Practice block, restating the number-classification tables as counting prompts.</small>

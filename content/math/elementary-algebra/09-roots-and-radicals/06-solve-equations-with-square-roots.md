@@ -10,8 +10,10 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve radical equations,
-  and use square roots in applications.
+**By the end of this section, you will be able to:**
+
+- Solve radical equations
+- Use square roots in applications
 {{< /callout >}}
 
 In this section we solve equations that have the variable in the radicand of a
@@ -373,7 +375,7 @@ to the nearest tenth.
 Substitute $d = 190$:
 
 $$
-s = \sqrt{24(190)} = \sqrt{4560} = 67.52777\ldots \approx 67.5
+s = \sqrt{24(190)} = \sqrt{4{,}560} = 67.52777\ldots \approx 67.5
 $$
 
 Is $67.5$ mph a reasonable speed? Yes. The speed of the car was approximately

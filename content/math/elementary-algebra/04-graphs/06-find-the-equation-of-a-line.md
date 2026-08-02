@@ -10,11 +10,13 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** find an equation of
-  the line given the slope and $y$-intercept, find an equation of the line
-  given the slope and a point, find an equation of the line given two
-  points, find an equation of a line parallel to a given line, and find an
-  equation of a line perpendicular to a given line.
+**By the end of this section, you will be able to:**
+
+- Find an equation of the line given the slope and $y$-intercept
+- Find an equation of the line given the slope and a point
+- Find an equation of the line given two points
+- Find an equation of a line parallel to a given line
+- Find an equation of a line perpendicular to a given line
 {{< /callout >}}
 
 The physical sciences, social sciences, and the business world are full of

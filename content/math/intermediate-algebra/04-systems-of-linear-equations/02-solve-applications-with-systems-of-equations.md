@@ -9,9 +9,11 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve direct
-  translation applications, solve geometry applications, and solve uniform
-  motion applications.
+**By the end of this section, you will be able to:**
+
+- Solve direct translation applications
+- Solve geometry applications
+- Solve uniform motion applications
 {{< /callout >}}
 
 {{< callout type="info" >}}

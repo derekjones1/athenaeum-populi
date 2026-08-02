@@ -11,8 +11,10 @@ linkTitle: "Factor Trinomials of the Form x²+bx+c"
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** factor trinomials of the
-  form $x^2+bx+c$, and factor trinomials of the form $x^2+bxy+cy^2$.
+**By the end of this section, you will be able to:**
+
+- Factor trinomials of the form $x^2+bx+c$
+- Factor trinomials of the form $x^2+bxy+cy^2$
 {{< /callout >}}
 
 ## Factor Trinomials of the Form $x^2+bx+c$

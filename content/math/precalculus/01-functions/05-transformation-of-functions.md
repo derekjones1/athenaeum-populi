@@ -10,11 +10,13 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** graph functions using
-  vertical and horizontal shifts, graph functions using reflections about the
-  $x$-axis and the $y$-axis, determine whether a function is even, odd, or
-  neither from its graph, graph functions using compressions and stretches,
-  and combine transformations.
+**By the end of this section, you will be able to:**
+
+- Graph functions using vertical and horizontal shifts
+- Graph functions using reflections about the $x$-axis and the $y$-axis
+- Determine whether a function is even, odd, or neither from its graph
+- Graph functions using compressions and stretches
+- Combine transformations
 {{< /callout >}}
 
 We all know that a flat mirror enables us to see an accurate image of

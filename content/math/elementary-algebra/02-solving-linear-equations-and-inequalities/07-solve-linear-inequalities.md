@@ -10,11 +10,13 @@ weight: 7
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** graph inequalities on
-  the number line, solve inequalities using the Subtraction and Addition
-  Properties of inequality, solve inequalities using the Division and
-  Multiplication Properties of inequality, solve inequalities that require
-  simplification, and translate to an inequality and solve.
+**By the end of this section, you will be able to:**
+
+- Graph inequalities on the number line
+- Solve inequalities using the Subtraction and Addition Properties of inequality
+- Solve inequalities using the Division and Multiplication Properties of inequality
+- Solve inequalities that require simplification
+- Translate to an inequality and solve
 {{< /callout >}}
 
 ## Graph Inequalities on the Number Line
@@ -481,11 +483,16 @@ $$0 > 18$$
 The statement is false! The inequality is a contradiction — there is no
 solution.
 
-{{< fillin
-  question="Solve the inequality $\tfrac{2}{5}z - \tfrac{1}{3}z < \tfrac{1}{15}z - \tfrac{3}{5}$. Is the inequality an identity, a contradiction, or does it have a specific solution? If it has a specific solution, give it; otherwise answer 0 for identity or 1 for contradiction."
-  answer="1"
+{{< multiplechoice
+  question="Solve the inequality $\tfrac{2}{5}z - \tfrac{1}{3}z < \tfrac{1}{15}z - \tfrac{3}{5}$. Which describes its solution?"
+  answer="a contradiction — no solution"
   hint="Multiply both sides by the LCD, 15, to clear the fractions, then combine like terms. The variable terms cancel, leaving a comparison of two constants."
 >}}
+an identity — every real number is a solution
+a contradiction — no solution
+a specific solution, $z < -9$
+a specific solution, $z > -9$
+{{< /multiplechoice >}}
 
 ## Translate to an Inequality and Solve
 

@@ -29,3 +29,8 @@
 /sources/intermediate-algebra-2e_-_WEB.pdf
 /sources/prealgebra-2e_-_WEB.pdf
 /sources/
+/.mcp.json
+/.claude/
+
+# Transient grader-differential harness (old/new module copies for A/B grading)
+/.tmp-grader-diff/

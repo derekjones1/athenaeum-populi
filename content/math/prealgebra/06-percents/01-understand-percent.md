@@ -9,9 +9,11 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use the definition of
-  percent, convert percents to fractions and decimals, and convert decimals
-  and fractions to percents.
+**By the end of this section, you will be able to:**
+
+- Use the definition of percent
+- Convert percents to fractions and decimals
+- Convert decimals and fractions to percents
 {{< /callout >}}
 
 ## Use the definition of percent
@@ -170,9 +172,9 @@ The amount we want to convert is $21$ out of $100$, so the ratio is
 $\tfrac{21}{100}$. Converting $21$ per $100$ to percent gives $21\%$.
 
 {{< fillin
-  question="Write as a ratio and then as a percent: The American Association of Community Colleges reported that 62 out of 100 full-time community college students balance their studies with full-time or part-time employment. Enter the percent."
-  answer="62"
-  answerDisplay="62%"
+  question="Write as a ratio and then as a percent: The American Association of Community Colleges reported that 62 out of 100 full-time community college students balance their studies with full-time or part-time employment. Enter the percent, including the $\%$ sign."
+  answer="62\%"
+  answerDisplay="$62\%$"
   hint="21 out of 100 becomes 21%, so 62 out of 100 becomes 62%."
 >}}
 
@@ -475,6 +477,116 @@ write the percent as $33.\overline{3}\%$.
   hint="Divide 1 by 6 to get a repeating decimal, then write the exact value as a mixed-number percent, the same way $\tfrac{1}{3}$ becomes $33\tfrac{1}{3}\%$."
 >}}
 
+## Practice
+
+### Use the definition of percent
+
+{{< fillin
+  question="Write the percent as a ratio: In 2014, the unemployment rate for those with only a high school degree was 6.0%."
+  answer="\frac{6}{100}"
+  answerDisplay="$\tfrac{6}{100}$"
+  hint="Percent means per 100 — write the number in front of the % sign over 100."
+>}}
+
+{{< fillin
+  question="Write the percent as a ratio: The unemployment rate for those with Bachelor's degrees was 3.2% in 2014."
+  answer="\frac{32}{1000}"
+  answerDisplay="$\tfrac{32}{1{,}000}$"
+  hint="Write 3.2 over 100, then multiply the numerator and denominator by 10 to clear the decimal."
+>}}
+
+{{< fillin
+  question="42 out of 100 first-time freshmen students attend a community college. Write this as a ratio."
+  answer="\frac{42}{100}"
+  answerDisplay="$\tfrac{42}{100}$"
+  hint="A count out of 100 is already a ratio with denominator 100."
+>}}
+
+{{< fillin
+  question="42 out of 100 first-time freshmen students attend a community college. Write this as a percent, including the $\%$ sign."
+  answer="42\%"
+  answerDisplay="$42\%$"
+  hint="A ratio with denominator 100 is read directly as a percent."
+>}}
+
+### Convert percents to fractions and decimals
+
+{{< fillin
+  question="Convert the percent to a fraction and simplify: 125%"
+  answer="\frac{5}{4}"
+  answerDisplay="$\tfrac{5}{4}$"
+  hint="Write $\tfrac{125}{100}$, then divide the numerator and denominator by 25 — the result is an improper fraction."
+>}}
+
+{{< fillin
+  question="Convert the percent to a fraction and simplify: $9\tfrac{1}{2}\%$"
+  answer="\frac{19}{200}"
+  answerDisplay="$\tfrac{19}{200}$"
+  hint="Rewrite the mixed number as $\tfrac{19}{2}$, put it over 100, then divide by 100 by multiplying by $\tfrac{1}{100}$."
+>}}
+
+{{< fillin
+  question="Convert the percent to a decimal: 63%"
+  answer="0.63"
+  hint="Write $\tfrac{63}{100}$, then divide 63 by 100."
+>}}
+
+{{< fillin
+  question="Convert the percent to a decimal: 21.4%"
+  answer="0.214"
+  hint="Move the decimal point two places to the left and drop the % sign."
+>}}
+
+{{< fillin
+  question="A couple plans to have two children. The probability they will have two girls is 25%. Convert the percent to a simplified fraction."
+  answer="\frac{1}{4}"
+  answerDisplay="$\tfrac{1}{4}$"
+  hint="Write $\tfrac{25}{100}$, then divide the numerator and denominator by 25."
+>}}
+
+{{< fillin
+  question="A couple plans to have two children. The probability they will have two girls is 25%. Convert the percent to a decimal."
+  answer="0.25"
+  hint="Divide 25 by 100 — the decimal point moves two places to the left."
+>}}
+
+### Convert decimals and fractions to percents
+
+{{< fillin
+  question="Convert the decimal to a percent: 3"
+  answer="300"
+  answerDisplay="300%"
+  hint="Think of 3 as 3.00, then move the decimal point two places to the right."
+>}}
+
+{{< fillin
+  question="Convert the decimal to a percent: 0.0875"
+  answer="8.75"
+  answerDisplay="8.75%"
+  hint="Move the decimal point two places to the right and add the % sign."
+>}}
+
+{{< fillin
+  question="Convert the mixed number to a percent: $6\tfrac{4}{5}$"
+  answer="680"
+  answerDisplay="680%"
+  hint="Write $6\tfrac{4}{5}$ as $\tfrac{34}{5}$, divide to get the decimal, then move the decimal point two places to the right."
+>}}
+
+{{< fillin
+  question="Convert the fraction to a percent: $\tfrac{5}{12}$. Enter the exact percent as a mixed number, e.g. $12\tfrac{1}{2}$."
+  answer="41\frac{2}{3}"
+  answerDisplay="$41\tfrac{2}{3}\%$"
+  hint="Divide 5 by 12 to get the repeating decimal $0.41\overline{6}$, then write the exact value as a mixed-number percent."
+>}}
+
+{{< fillin
+  question="Convert the fraction to a percent: according to the National Center for Health Statistics, in 2012 about $\tfrac{7}{20}$ of American adults were obese."
+  answer="35"
+  answerDisplay="35%"
+  hint="Divide 7 by 20 to get the decimal, then move the decimal point two places to the right."
+>}}
+
 ## Key terms
 
 **percent** — a ratio whose denominator is $100$; written with the symbol
@@ -482,4 +594,4 @@ write the percent as $33.\overline{3}\%$.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 6.1: Understand Percent](https://openstax.org/books/prealgebra-2e/pages/6-1-understand-percent) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the percent grid as an accessible inline graphic and the percent/decimal pattern table as a markdown table; omitted the Be Prepared quiz, the playing-card photo, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 6.1: Understand Percent](https://openstax.org/books/prealgebra-2e/pages/6-1-understand-percent) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the percent grid as an accessible inline graphic and the percent/decimal pattern table as a markdown table; omitted the Be Prepared quiz, the playing-card photo, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

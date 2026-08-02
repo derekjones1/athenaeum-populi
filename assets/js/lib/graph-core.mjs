@@ -515,7 +515,7 @@ export function buildGraph(props) {
   // the rendered curve cannot overshoot a stated minimum or maximum.
   for (const curve of smoothCurves) {
     if (curve.freeform !== true) {
-      throw new Error('smoothCurves is spline interpolation for genuinely freeform source art and requires an explicit freeform: true — draw a known or generic shape from an analytic primitive instead (quadratics, cubics, circles, polylines, or curves with kind sqrt/cbrt/reciprocal/reciprocal-squared/sine)')
+      throw new Error('smoothCurves is spline interpolation for genuinely freeform source art and requires an explicit freeform: true — draw a known or generic shape from an analytic primitive instead (quadratics, cubics, circles, polylines, or curves with kind sqrt/cbrt/reciprocal/reciprocal-squared/sine/exp/log)')
     }
     const through = curve.through
     if (!Array.isArray(through) || through.length < 2) throw new Error('smoothCurve needs at least two through points')

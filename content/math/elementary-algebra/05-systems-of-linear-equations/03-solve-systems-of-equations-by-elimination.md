@@ -11,10 +11,11 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve a system of
-  equations by elimination, solve applications of systems of equations by
-  elimination, and choose the most convenient method to solve a system of
-  linear equations.
+**By the end of this section, you will be able to:**
+
+- Solve a system of equations by elimination
+- Solve applications of systems of equations by elimination
+- Choose the most convenient method to solve a system of linear equations
 {{< /callout >}}
 
 ## Solve a System of Equations by Elimination

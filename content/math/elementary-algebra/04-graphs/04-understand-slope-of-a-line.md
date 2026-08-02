@@ -10,11 +10,13 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use $m = \tfrac{\text{rise}}{\text{run}}$
-  to find the slope of a line from its graph, find the slope of horizontal
-  and vertical lines, use the slope formula to find the slope of a line
-  between two points, graph a line given a point and the slope, and solve
-  slope applications.
+**By the end of this section, you will be able to:**
+
+- Use $m = \tfrac{\text{rise}}{\text{run}}$ to find the slope of a line from its graph
+- Find the slope of horizontal and vertical lines
+- Use the slope formula to find the slope of a line between two points
+- Graph a line given a point and the slope
+- Solve slope applications
 {{< /callout >}}
 
 When you graph linear equations, you may notice that some lines tilt up as

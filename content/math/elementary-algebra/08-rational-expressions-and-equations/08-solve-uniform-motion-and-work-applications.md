@@ -10,8 +10,10 @@ weight: 8
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve uniform motion
-  applications, and solve work applications.
+**By the end of this section, you will be able to:**
+
+- Solve uniform motion applications
+- Solve work applications
 {{< /callout >}}
 
 ## Solve uniform motion applications
@@ -54,8 +56,8 @@ $$
 \begin{array}{lrcl}
 & \tfrac{200}{r-30} &=& \tfrac{300}{r+30} \\[4pt]
 \text{Clear the fractions.} & 200(r+30) &=& 300(r-30) \\[4pt]
-\text{Distribute.} & 200r + 6000 &=& 300r - 9000 \\[4pt]
-\text{Solve.} & 15000 &=& 100r \\[4pt]
+\text{Distribute.} & 200r + 6{,}000 &=& 300r - 9{,}000 \\[4pt]
+\text{Solve.} & 15{,}000 &=& 100r \\[4pt]
 & 150 &=& r
 \end{array}
 $$

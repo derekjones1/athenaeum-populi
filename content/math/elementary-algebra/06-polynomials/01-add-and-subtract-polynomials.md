@@ -10,10 +10,13 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** identify polynomials,
-  monomials, binomials, and trinomials; determine the degree of polynomials;
-  add and subtract monomials; add and subtract polynomials; and evaluate a
-  polynomial for a given value.
+**By the end of this section, you will be able to:**
+
+- Identify polynomials, monomials, binomials, and trinomials
+- Determine the degree of polynomials
+- Add and subtract monomials
+- Add and subtract polynomials
+- Evaluate a polynomial for a given value
 {{< /callout >}}
 
 ## Identify polynomials, monomials, binomials, and trinomials

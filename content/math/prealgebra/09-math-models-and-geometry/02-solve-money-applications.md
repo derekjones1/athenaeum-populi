@@ -10,8 +10,10 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve coin word
-  problems, and solve ticket and stamp word problems.
+**By the end of this section, you will be able to:**
+
+- Solve coin word problems
+- Solve ticket and stamp word problems
 {{< /callout >}}
 
 ## Solve coin word problems
@@ -238,7 +240,7 @@ tickets.
 {{< fillin
   question="The first day of a water polo tournament, the total value of tickets sold was \$17,610. One-day passes sold for \$20 and tournament passes sold for \$30. The number of tournament passes sold was 37 more than the number of day passes sold. How many day passes were sold?"
   answer="330"
-  hint="Let $d =$ number of day passes, so $d + 37$ is the number of tournament passes. Translate as $20d + 30(d + 37) = 17610$, then solve for $d$."
+  hint="Let $d =$ number of day passes, so $d + 37$ is the number of tournament passes. Translate as $20d + 30(d + 37) = 17{,}610$, then solve for $d$."
 >}}
 
 {{< fillin
@@ -289,6 +291,75 @@ Monica bought eight $8$-cent stamps and twenty $49$-cent stamps.
   hint="Let $x =$ number of 21-cent stamps, so $3x - 4$ is the number of 49-cent stamps. Translate as $0.49(3x - 4) + 0.21x = 14.84$, then solve for $x$."
 >}}
 
+## Practice
+
+### Solve coin word problems
+
+{{< fillin
+  question="Jaime has \$2.60 in dimes and nickels. The number of dimes is 14 more than the number of nickels. How many of each coin does he have? Enter the number of nickels and the number of dimes, separated by a comma."
+  answer="8,22"
+  answerDisplay="8 nickels, 22 dimes"
+  hint="Let $n =$ number of nickels, so $n + 14$ is the number of dimes. Translate as $0.05n + 0.10(n + 14) = 2.60$."
+>}}
+
+{{< fillin
+  question="Carolyn has \$2.55 in her purse in nickels and dimes. The number of nickels is 9 less than three times the number of dimes. Find the number of each type of coin. Enter the number of dimes and the number of nickels, separated by a comma."
+  answer="12,27"
+  answerDisplay="12 dimes, 27 nickels"
+  hint="Let $d =$ number of dimes, so $3d - 9$ is the number of nickels. Translate as $0.10d + 0.05(3d - 9) = 2.55$."
+>}}
+
+{{< fillin
+  question="A cash box of \$1 and \$5 bills is worth \$45. The number of \$1 bills is 3 more than the number of \$5 bills. How many of each bill does it contain? Enter the number of \$1 bills and the number of \$5 bills, separated by a comma."
+  answer="10,7"
+  answerDisplay="10 of the \$1 bills, 7 of the \$5 bills"
+  hint="Let $f =$ number of five-dollar bills, so $f + 3$ is the number of one-dollar bills. Each bill's value is its own face value, so translate as $1(f + 3) + 5f = 45$."
+>}}
+
+{{< fillin
+  question="Mukul has \$3.75 in quarters, dimes, and nickels in his pocket. He has five more dimes than quarters and nine more nickels than quarters. How many of each coin are in his pocket? Enter the number of quarters, the number of dimes, and the number of nickels, separated by commas."
+  answer="7,12,16"
+  answerDisplay="7 quarters, 12 dimes, 16 nickels"
+  hint="Both clues compare to the quarters, so let $q =$ number of quarters, $q + 5 =$ number of dimes, and $q + 9 =$ number of nickels. Translate as $0.25q + 0.10(q + 5) + 0.05(q + 9) = 3.75$."
+>}}
+
+### Solve ticket and stamp word problems
+
+{{< fillin
+  question="The play took in \$550 one night. The number of \$8 adult tickets was 10 less than twice the number of \$5 child tickets. How many of each ticket were sold? Enter the number of child tickets and the number of adult tickets, separated by a comma."
+  answer="30,50"
+  answerDisplay="30 child tickets, 50 adult tickets"
+  hint="The adult count is described in terms of the child count, so let $c =$ number of child tickets and $2c - 10 =$ number of adult tickets. Translate as $5c + 8(2c - 10) = 550$."
+>}}
+
+{{< fillin
+  question="The movie theater took in \$1,220 one Monday night. The number of \$7 child tickets was ten more than twice the number of \$9 adult tickets. How many of each were sold? Enter the number of child tickets and the number of adult tickets, separated by a comma."
+  answer="110,50"
+  answerDisplay="110 child tickets, 50 adult tickets"
+  hint="Let $a =$ number of adult tickets, so $2a + 10$ is the number of child tickets. Translate as $7(2a + 10) + 9a = 1{,}220$."
+>}}
+
+{{< fillin
+  question="Julie went to the post office and bought both \$0.49 stamps and \$0.34 postcards for her office's bills. She spent \$62.60. The number of stamps was 20 more than twice the number of postcards. How many postcards did she buy?"
+  answer="40"
+  answerDisplay="40 postcards"
+  hint="Let $p =$ number of postcards, so $2p + 20$ is the number of stamps. Translate as $0.34p + 0.49(2p + 20) = 62.60$."
+>}}
+
+{{< fillin
+  question="Julie went to the post office and bought both \$0.49 stamps and \$0.34 postcards for her office's bills. She spent \$62.60. The number of stamps was 20 more than twice the number of postcards. How many stamps did she buy?"
+  answer="100"
+  answerDisplay="100 stamps"
+  hint="Once you know the number of postcards, the number of stamps is $20$ more than twice that."
+>}}
+
+{{< fillin
+  question="Maria spent \$16.80 at the post office. She bought three times as many \$0.49 stamps as \$0.21 stamps. How many of each did she buy? Enter the number of 49-cent stamps and the number of 21-cent stamps, separated by a comma."
+  answer="30,10"
+  answerDisplay="30 at 49 cents, 10 at 21 cents"
+  hint="Name the smaller group first: let $x =$ number of 21-cent stamps, so $3x$ is the number of 49-cent stamps. Translate as $0.21x + 0.49(3x) = 16.80$."
+>}}
+
 ## Key terms
 
 **coin word problem** — a word problem that finds the number of coins of
@@ -299,4 +370,4 @@ coin word problem, with ticket or stamp prices in place of coin values.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 9.2: Solve Money Applications](https://openstax.org/books/prealgebra-2e/pages/9-2-solve-money-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the number/value/total-value worksheets as tables; omitted the Be Prepared quiz, the coin photograph, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 9.2: Solve Money Applications](https://openstax.org/books/prealgebra-2e/pages/9-2-solve-money-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the number/value/total-value worksheets as tables; omitted the Be Prepared quiz and the coin photograph; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating each "how many of each" answer as a single comma-separated response in a stated order.</small>

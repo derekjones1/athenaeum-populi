@@ -10,10 +10,12 @@ weight: 8
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** simplify expressions
-  with square roots, identify integers, rational numbers, irrational
-  numbers, and real numbers, locate fractions on the number line, and
-  locate decimals on the number line.
+**By the end of this section, you will be able to:**
+
+- Simplify expressions with square roots
+- Identify integers, rational numbers, irrational numbers, real numbers
+- Locate fractions on the number line
+- Locate decimals on the number line
 {{< /callout >}}
 
 ## Simplify expressions with square roots
@@ -192,6 +194,7 @@ written as the ratio of two integers.
 {{< fillin
   question="Write as the ratio of two integers: $-24$"
   answer="-\frac{24}{1}"
+  answerForm="fraction"
   answerDisplay="$-\tfrac{24}{1}$"
   hint="Write the integer as a fraction with denominator $1$."
 >}}
@@ -199,6 +202,7 @@ written as the ratio of two integers.
 {{< fillin
   question="Write as the ratio of two integers: $3.57$"
   answer="\frac{357}{100}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{357}{100}$"
   hint="Write $3.57$ as a mixed number, $3$ and $57$ hundredths, then convert it to an improper fraction."
 >}}
@@ -206,6 +210,7 @@ written as the ratio of two integers.
 {{< fillin
   question="Write as the ratio of two integers: $-19$"
   answer="-\frac{19}{1}"
+  answerForm="fraction"
   answerDisplay="$-\tfrac{19}{1}$"
   hint="Write the integer as a fraction with denominator $1$."
 >}}
@@ -308,11 +313,14 @@ never stop, so $\sqrt{44}$ is irrational.
   hint="$81$ is a perfect square ($9^2 = 81$), so its square root is a whole number and therefore rational."
 >}}
 
-{{< fillin
-  question="Is $\sqrt{17}$ rational or irrational? Enter $1$ if rational, $0$ if irrational."
-  answer="0"
+{{< multiplechoice
+  question="Is $\sqrt{17}$ rational or irrational?"
+  answer="irrational"
   hint="$17$ is not a perfect square ($4^2 = 16$ and $5^2 = 25$), so its decimal form never stops or repeats."
 >}}
+rational
+irrational
+{{< /multiplechoice >}}
 
 We have seen that all counting numbers are whole numbers, all whole numbers
 are integers, and all integers are rational numbers. The irrational numbers
@@ -366,11 +374,14 @@ is not a real number.
 (b) Since the negative is in front of the radical, $-\sqrt{64}$ is $-8$.
 Since $-8$ is a real number, $-\sqrt{64}$ is a real number.
 
-{{< fillin
-  question="Is $\sqrt{-196}$ a real number? Enter $1$ if it is a real number, $0$ if it is not."
-  answer="0"
+{{< multiplechoice
+  question="Is $\sqrt{-196}$ a real number?"
+  answer="not a real number"
   hint="No real number, positive or negative, squares to a negative result."
 >}}
+a real number
+not a real number
+{{< /multiplechoice >}}
 
 {{< fillin
   question="Simplify $-\sqrt{81}$, and note that this value is a real number."
@@ -682,6 +693,7 @@ numbers are consistently in tenths. Finally, mark $0.4$ on the number line.
 {{< fillin
   question="Locate $0.6$ on the number line by giving its equivalent tenths fraction with denominator $10$."
   answer="\frac{6}{10}"
+  answerForm="denominator:10"
   answerDisplay="$\tfrac{6}{10}$"
   hint="$0.6$ means $6$ tenths."
 >}}
@@ -689,6 +701,7 @@ numbers are consistently in tenths. Finally, mark $0.4$ on the number line.
 {{< fillin
   question="Locate $0.9$ on the number line by giving its equivalent tenths fraction with denominator $10$."
   answer="\frac{9}{10}"
+  answerForm="denominator:10"
   answerDisplay="$\tfrac{9}{10}$"
   hint="$0.9$ means $9$ tenths."
 >}}
@@ -890,6 +903,110 @@ $-0.1 > -0.8$.
   hint="Compare the tenths digits the same way you would compare negative integers — the digit closer to zero belongs to the greater number."
 >}}
 
+## Practice
+
+### Simplify expressions with square roots
+
+{{< fillin
+  question="Simplify: $\sqrt{64}$"
+  answer="8"
+  hint="Ask yourself what positive number, squared, gives $64$."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt{100}$"
+  answer="10"
+  hint="Ask yourself what positive number, squared, gives $100$."
+>}}
+
+### Identify integers, rational numbers, irrational numbers, real numbers
+
+{{< multiplechoice
+  question="Is $\sqrt{25}$ rational or irrational?"
+  answer="rational"
+  hint="Check whether $25$ is a perfect square — a whole-number square root means the decimal form stops."
+>}}
+rational
+irrational
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $\sqrt{30}$ rational or irrational?"
+  answer="irrational"
+  hint="Check whether $30$ falls strictly between two consecutive perfect squares; if so, its decimal form never stops or repeats."
+>}}
+rational
+irrational
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="For the numbers $-8$, $0$, $1.95286\ldots$, $\tfrac{12}{5}$, $\sqrt{36}$, $9$, how many are whole numbers?"
+  answer="3"
+  hint="A whole number is $0, 1, 2, 3, \ldots$ — simplify $\sqrt{36}$ first, then check each number against that list."
+>}}
+
+{{< multiplechoice
+  question="Is $-\sqrt{81}$ a real number or not a real number?"
+  answer="real number"
+  hint="Simplify the square root first, then decide whether the resulting signed number is real."
+>}}
+real number
+not a real number
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $\sqrt{-121}$ a real number or not a real number?"
+  answer="not a real number"
+  hint="Ask whether any real number, squared, could produce a negative result."
+>}}
+real number
+not a real number
+{{< /multiplechoice >}}
+
+### Locate fractions on the number line
+
+{{< fillin
+  question="On the number line, $\tfrac{10}{3}$ falls between two consecutive integers. Give the smaller one first, then the larger, separated by a comma."
+  answer="3,4"
+  hint="Convert $\tfrac{10}{3}$ to a mixed number to see which two whole numbers it falls between."
+>}}
+
+{{< fillin
+  question="Order the following pair of numbers, giving the complete inequality: $-1$ versus $-\tfrac{1}{4}$"
+  answer="-1<-\frac{1}{4}"
+  answerDisplay="$-1 < -\tfrac{1}{4}$"
+  hint="Compare their positions on the number line — the value farther to the right is greater."
+>}}
+
+{{< fillin
+  question="Order the following pair of numbers, giving the complete inequality: $-2\tfrac{1}{2}$ versus $-3$"
+  answer="-2\frac{1}{2}>-3"
+  answerDisplay="$-2\tfrac{1}{2} > -3$"
+  hint="Compare their positions on the number line — the value farther to the right is greater."
+>}}
+
+### Locate decimals on the number line
+
+{{< fillin
+  question="On the number line, $-1.6$ falls between two consecutive integers. Give the smaller one first, then the larger, separated by a comma."
+  answer="-2,-1"
+  hint="Think about which integer $-1.6$ sits closer to, and which is farther from zero."
+>}}
+
+{{< fillin
+  question="Order the following pair of numbers, giving the complete inequality: $0.37$ versus $0.63$"
+  answer="0.37<0.63"
+  answerDisplay="$0.37 < 0.63$"
+  hint="Compare the numbers as if they were whole numbers of hundredths."
+>}}
+
+{{< fillin
+  question="Order the following pair of numbers, giving the complete inequality: $0.91$ versus $0.901$"
+  answer="0.91>0.901"
+  answerDisplay="$0.91 > 0.901$"
+  hint="Write $0.91$ as $0.910$ so both numbers have three decimal digits, then compare as whole numbers."
+>}}
+
 ## Key terms
 
 **square** — the result $n^2$ of multiplying a number $n$ by itself.
@@ -905,4 +1022,4 @@ decimals that convert to equivalent fractions.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.8: The Real Numbers](https://openstax.org/books/elementary-algebra-2e/pages/1-8-the-real-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the number-set diagram and the number-line figures as accessible inline graphics; omitted the Be Prepared quiz, Manipulative Mathematics callouts, media links, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.8: The Real Numbers](https://openstax.org/books/elementary-algebra-2e/pages/1-8-the-real-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the number-set diagram and the number-line figures as accessible inline graphics; omitted the Be Prepared quiz, Manipulative Mathematics callouts, media links, and Self Check checklist; adapted selected end-of-section exercises into interactive practice; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

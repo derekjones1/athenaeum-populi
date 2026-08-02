@@ -10,9 +10,10 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve mixture
-  applications using systems of equations, and solve interest applications
-  using systems of equations.
+**By the end of this section, you will be able to:**
+
+- Solve mixture applications using systems of equations
+- Solve interest applications using systems of equations
 {{< /callout >}}
 
 ## Solve Mixture Applications

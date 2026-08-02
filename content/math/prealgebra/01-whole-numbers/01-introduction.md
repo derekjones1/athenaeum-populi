@@ -8,10 +8,14 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** identify counting
-  numbers and whole numbers, model whole numbers, identify the place value of
-  a digit, use place value to name and write whole numbers, and round whole
-  numbers.
+**By the end of this section, you will be able to:**
+
+- Identify counting numbers and whole numbers
+- Model whole numbers
+- Identify the place value of a digit
+- Use place value to name whole numbers
+- Use place value to write whole numbers
+- Round whole numbers
 {{< /callout >}}
 
 ## Identify counting numbers and whole numbers
@@ -323,6 +327,268 @@ the $1$ carries: $3{,}978$ rounds to $4{,}000$.
   hint="The hundreds digit is 9 and the digit to its right is 5 — rounding up carries all the way over."
 >}}
 
+## Practice
+
+### Identify counting numbers and whole numbers
+
+{{< fillin
+  question="Which of the numbers 0, $\tfrac{2}{3}$, 5, 8.1, 125 are counting numbers? Enter them separated by commas."
+  answer="5,125"
+  answerMode="unordered"
+  answerDisplay="5 and 125"
+  hint="The counting numbers start at 1, so zero is not one of them — and neither is a fraction or a decimal."
+>}}
+
+{{< fillin
+  question="Which of the numbers 0, $\tfrac{2}{3}$, 5, 8.1, 125 are whole numbers? Enter them separated by commas."
+  answer="0,5,125"
+  answerMode="unordered"
+  answerDisplay="0, 5, and 125"
+  hint="The whole numbers are the counting numbers together with zero."
+>}}
+
+{{< fillin
+  question="Which of the numbers 0, $\tfrac{4}{9}$, 3.9, 50, 221 are counting numbers? Enter them separated by commas."
+  answer="50,221"
+  answerMode="unordered"
+  answerDisplay="50 and 221"
+  hint="Counting numbers are what you use to count objects: 1, 2, 3, and so on."
+>}}
+
+{{< fillin
+  question="Which of the numbers 0, $\tfrac{4}{9}$, 3.9, 50, 221 are whole numbers? Enter them separated by commas."
+  answer="0,50,221"
+  answerMode="unordered"
+  answerDisplay="0, 50, and 221"
+  hint="Add zero to the counting numbers from the previous question."
+>}}
+
+### Model whole numbers
+
+<svg viewBox="0 0 560 100" role="img" aria-label="Base-10 blocks: five squares of one hundred blocks each, ten blocks wide and ten blocks tall; six horizontal rods of ten blocks each; and one individual block." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
+  <defs>
+    <g id="ap-hundred" fill="none" stroke="currentColor" stroke-width="0.6">
+    <line x1="7" y1="0" x2="7" y2="70" />
+    <line x1="0" y1="7" x2="70" y2="7" />
+    <line x1="14" y1="0" x2="14" y2="70" />
+    <line x1="0" y1="14" x2="70" y2="14" />
+    <line x1="21" y1="0" x2="21" y2="70" />
+    <line x1="0" y1="21" x2="70" y2="21" />
+    <line x1="28" y1="0" x2="28" y2="70" />
+    <line x1="0" y1="28" x2="70" y2="28" />
+    <line x1="35" y1="0" x2="35" y2="70" />
+    <line x1="0" y1="35" x2="70" y2="35" />
+    <line x1="42" y1="0" x2="42" y2="70" />
+    <line x1="0" y1="42" x2="70" y2="42" />
+    <line x1="49" y1="0" x2="49" y2="70" />
+    <line x1="0" y1="49" x2="70" y2="49" />
+    <line x1="56" y1="0" x2="56" y2="70" />
+    <line x1="0" y1="56" x2="70" y2="56" />
+    <line x1="63" y1="0" x2="63" y2="70" />
+    <line x1="0" y1="63" x2="70" y2="63" />
+    <rect x="0" y="0" width="70" height="70" stroke-width="1.4" />
+    </g>
+    <g id="ap-ten" fill="none" stroke="currentColor" stroke-width="0.6">
+    <line x1="7" y1="0" x2="7" y2="7" />
+    <line x1="14" y1="0" x2="14" y2="7" />
+    <line x1="21" y1="0" x2="21" y2="7" />
+    <line x1="28" y1="0" x2="28" y2="7" />
+    <line x1="35" y1="0" x2="35" y2="7" />
+    <line x1="42" y1="0" x2="42" y2="7" />
+    <line x1="49" y1="0" x2="49" y2="7" />
+    <line x1="56" y1="0" x2="56" y2="7" />
+    <line x1="63" y1="0" x2="63" y2="7" />
+    <rect x="0" y="0" width="70" height="7" stroke-width="1.4" />
+    </g>
+  </defs>
+  <use href="#ap-hundred" x="10" y="15" />
+  <use href="#ap-hundred" x="90" y="15" />
+  <use href="#ap-hundred" x="170" y="15" />
+  <use href="#ap-hundred" x="250" y="15" />
+  <use href="#ap-hundred" x="330" y="15" />
+  <use href="#ap-ten" x="430" y="15" />
+  <use href="#ap-ten" x="430" y="27" />
+  <use href="#ap-ten" x="430" y="39" />
+  <use href="#ap-ten" x="430" y="51" />
+  <use href="#ap-ten" x="430" y="63" />
+  <use href="#ap-ten" x="430" y="75" />
+  <rect x="530" y="46" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.4" />
+</svg>
+
+{{< fillin
+  question="Use place value notation to find the value of the number modeled by the base-10 blocks above."
+  answer="561"
+  hint="Each large square is worth 100, each rod is worth 10, and each small block is worth 1 — total the three kinds, then add."
+>}}
+
+<svg viewBox="0 0 560 100" role="img" aria-label="Base-10 blocks: four squares of one hundred blocks each, ten blocks wide and ten blocks tall, and seven individual blocks." style="max-width: 560px; width: 100%; display: block; margin: 1.5rem auto">
+  <defs>
+    <g id="ap-hundred-b" fill="none" stroke="currentColor" stroke-width="0.6">
+    <line x1="7" y1="0" x2="7" y2="70" />
+    <line x1="0" y1="7" x2="70" y2="7" />
+    <line x1="14" y1="0" x2="14" y2="70" />
+    <line x1="0" y1="14" x2="70" y2="14" />
+    <line x1="21" y1="0" x2="21" y2="70" />
+    <line x1="0" y1="21" x2="70" y2="21" />
+    <line x1="28" y1="0" x2="28" y2="70" />
+    <line x1="0" y1="28" x2="70" y2="28" />
+    <line x1="35" y1="0" x2="35" y2="70" />
+    <line x1="0" y1="35" x2="70" y2="35" />
+    <line x1="42" y1="0" x2="42" y2="70" />
+    <line x1="0" y1="42" x2="70" y2="42" />
+    <line x1="49" y1="0" x2="49" y2="70" />
+    <line x1="0" y1="49" x2="70" y2="49" />
+    <line x1="56" y1="0" x2="56" y2="70" />
+    <line x1="0" y1="56" x2="70" y2="56" />
+    <line x1="63" y1="0" x2="63" y2="70" />
+    <line x1="0" y1="63" x2="70" y2="63" />
+    <rect x="0" y="0" width="70" height="70" stroke-width="1.4" />
+    </g>
+  </defs>
+  <use href="#ap-hundred-b" x="10" y="15" />
+  <use href="#ap-hundred-b" x="90" y="15" />
+  <use href="#ap-hundred-b" x="170" y="15" />
+  <use href="#ap-hundred-b" x="250" y="15" />
+  <rect x="350" y="46" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="361" y="46" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="372" y="46" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="383" y="46" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="394" y="46" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="405" y="46" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <rect x="416" y="46" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.4" />
+</svg>
+
+{{< fillin
+  question="Use place value notation to find the value of the number modeled by the base-10 blocks above."
+  answer="407"
+  hint="There are no rods at all, so the tens place needs a zero to hold it."
+>}}
+
+### Identify the place value of a digit
+
+{{< multiplechoice
+  question="In the number 56,804,379 — what is the place value of the digit 8?"
+  answer="hundred thousands"
+  hint="Name the places from the right: ones, tens, hundreds, then a comma starts the thousands period."
+>}}
+thousands
+ten thousands
+hundred thousands
+millions
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="In the number 56,804,379 — what is the place value of the digit 6?"
+  answer="millions"
+  hint="The 6 sits just left of the second comma from the right."
+>}}
+hundred thousands
+millions
+ten millions
+hundred millions
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="In the number 56,804,379 — what is the place value of the digit 4?"
+  answer="thousands"
+  hint="The 4 is the last digit of the thousands period, just left of a comma."
+>}}
+hundreds
+thousands
+ten thousands
+hundred thousands
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="In the number 56,804,379 — what is the place value of the digit 7?"
+  answer="tens"
+  hint="Count in from the right-hand end: ones, then tens."
+>}}
+ones
+tens
+hundreds
+thousands
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="In the number 56,804,379 — what is the place value of the digit 0?"
+  answer="ten thousands"
+  hint="A zero still occupies a place; it sits between the 8 and the 4."
+>}}
+thousands
+ten thousands
+hundred thousands
+millions
+{{< /multiplechoice >}}
+
+### Use place value to name whole numbers
+
+{{< multiplechoice
+  question="Name the number 1,078 in words."
+  answer="One thousand, seventy-eight"
+  hint="Name the thousands period, then the ones period — and remember every period after the first fills three places."
+>}}
+One hundred seventy-eight
+One thousand, seventy-eight
+One thousand, seven hundred eight
+Ten thousand, seventy-eight
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="The height of Mount Rainier is 14,410 feet. Name that number in words."
+  answer="Fourteen thousand, four hundred ten"
+  hint="Split the number at the comma: name the thousands period, then the ones period."
+>}}
+Fourteen thousand, forty-one
+Fourteen thousand, four hundred ten
+Fourteen thousand, four hundred forty
+One hundred forty-four thousand, ten
+{{< /multiplechoice >}}
+
+### Use place value to write whole numbers
+
+{{< fillin
+  question="Write as a whole number using digits: four hundred twelve."
+  answer="412"
+  hint="One period only — no commas needed."
+>}}
+
+{{< fillin
+  question="Write as a whole number using digits: eleven million, forty-four thousand, one hundred sixty-seven."
+  answer="11044167"
+  answerDisplay="11,044,167"
+  hint="Three periods: millions 11, thousands 044, ones 167 — keep three places per period, padding with zeros."
+>}}
+
+### Round whole numbers
+
+{{< fillin
+  question="Round 386 to the nearest ten."
+  answer="390"
+  hint="The tens digit is 8; compare the digit just to its right with 5."
+>}}
+
+{{< fillin
+  question="Round 2,931 to the nearest ten."
+  answer="2930"
+  answerDisplay="2,930"
+  hint="The digit to the right of the tens place is 1, which is less than 5."
+>}}
+
+{{< fillin
+  question="Round 13,748 to the nearest hundred."
+  answer="13700"
+  answerDisplay="13,700"
+  hint="The hundreds digit is 7; compare the digit just to its right with 5."
+>}}
+
+{{< fillin
+  question="Round 391,794 to the nearest hundred."
+  answer="391800"
+  answerDisplay="391,800"
+  hint="The hundreds digit is 7 and the digit to its right is 9, so the hundreds digit goes up."
+>}}
+
 ## Key terms
 
 **counting numbers** — the numbers $1, 2, 3, \dots$ used to count objects;
@@ -336,4 +602,4 @@ the process of approximating a number to a given place value.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 1.1: Introduction to Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-1-introduction-to-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, redrew figures as accessible tables and inline graphics, and converted practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 1.1: Introduction to Whole Numbers](https://openstax.org/books/prealgebra-2e/pages/1-1-introduction-to-whole-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: condensed prose, redrew figures as accessible tables and inline graphics, converted practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

@@ -8,9 +8,11 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-**By the end of this section, you will be able to:** determine if a sequence is
-arithmetic, find the general term ($n$th term) of an arithmetic sequence, and
-find the sum of the first $n$ terms of an arithmetic sequence.
+**By the end of this section, you will be able to:**
+
+- Determine if a sequence is arithmetic
+- Find the general term ($n$th term) of an arithmetic sequence
+- Find the sum of the first $n$ terms of an arithmetic sequence
 {{< /callout >}}
 
 ## Determine if a Sequence is Arithmetic

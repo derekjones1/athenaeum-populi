@@ -9,9 +9,12 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** model fraction
-  addition, add fractions with a common denominator, model fraction
-  subtraction, and subtract fractions with a common denominator.
+**By the end of this section, you will be able to:**
+
+- Model fraction addition
+- Add fractions with a common denominator
+- Model fraction subtraction
+- Subtract fractions with a common denominator
 {{< /callout >}}
 
 ## Model fraction addition
@@ -223,6 +226,147 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = -\frac{3}{8}$$
   hint="Combine all the numerators over the common denominator of $5$, working left to right."
 >}}
 
+## Practice
+
+### Model fraction addition
+
+<svg viewBox="0 0 140 140" role="img" aria-label="A circle divided into 10 equal pie-shaped pieces, with 7 of the pieces shaded." style="max-width: 180px; width: 100%; display: block; margin: 1.5rem auto">
+  <path d="M 70 70 L 70.00 10.00 A 60 60 0 0 1 105.27 21.46 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 105.27 21.46 A 60 60 0 0 1 127.06 51.46 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 127.06 51.46 A 60 60 0 0 1 127.06 88.54 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 127.06 88.54 A 60 60 0 0 1 105.27 118.54 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 105.27 118.54 A 60 60 0 0 1 70.00 130.00 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 70.00 130.00 A 60 60 0 0 1 34.73 118.54 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 34.73 118.54 A 60 60 0 0 1 12.94 88.54 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 12.94 88.54 A 60 60 0 0 1 12.94 51.46 Z" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 12.94 51.46 A 60 60 0 0 1 34.73 21.46 Z" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 34.73 21.46 A 60 60 0 0 1 70.00 10.00 Z" fill="none" stroke="currentColor" stroke-width="1.4" />
+</svg>
+
+{{< fillin
+  question="The fraction circle above models the sum $\tfrac{3}{10} + \tfrac{4}{10}$. What fraction of the circle is shaded?"
+  answer="\frac{7}{10}"
+  answerDisplay="$\tfrac{7}{10}$"
+  hint="Every piece is one tenth, so count the shaded tenths and write that count over $10$."
+>}}
+
+<svg viewBox="0 0 140 140" role="img" aria-label="A circle divided into 8 equal pie-shaped pieces, with 6 of the pieces shaded." style="max-width: 180px; width: 100%; display: block; margin: 1.5rem auto">
+  <path d="M 70 70 L 70.00 10.00 A 60 60 0 0 1 112.43 27.57 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 112.43 27.57 A 60 60 0 0 1 130.00 70.00 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 130.00 70.00 A 60 60 0 0 1 112.43 112.43 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 112.43 112.43 A 60 60 0 0 1 70.00 130.00 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 70.00 130.00 A 60 60 0 0 1 27.57 112.43 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 27.57 112.43 A 60 60 0 0 1 10.00 70.00 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 10.00 70.00 A 60 60 0 0 1 27.57 27.57 Z" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 27.57 27.57 A 60 60 0 0 1 70.00 10.00 Z" fill="none" stroke="currentColor" stroke-width="1.4" />
+</svg>
+
+{{< fillin
+  question="The fraction circle above models the sum $\tfrac{3}{8} + \tfrac{3}{8}$. What fraction of the circle is shaded? Write your answer in simplified form."
+  answer="\frac{3}{4}"
+  answerDisplay="$\tfrac{3}{4}$"
+  hint="Count the shaded eighths first, then remove the common factor from numerator and denominator."
+>}}
+
+### Add fractions with a common denominator
+
+{{< fillin
+  question="Find the sum: $\tfrac{2}{9} + \tfrac{5}{9}$"
+  answer="\frac{7}{9}"
+  answerDisplay="$\tfrac{7}{9}$"
+  hint="Add the numerators and place the sum over the common denominator of $9$."
+>}}
+
+{{< fillin
+  question="Find the sum: $\tfrac{y}{3} + \tfrac{2}{3}$"
+  answer="\frac{y+2}{3}"
+  answerDisplay="$\tfrac{y+2}{3}$"
+  hint="Put $y + 2$ over the common denominator; $y$ and $2$ are not like terms, so the numerator cannot be combined further."
+>}}
+
+{{< fillin
+  question="Find the sum: $\tfrac{5a}{7} + \tfrac{4a}{7}$"
+  answer="\frac{9a}{7}"
+  answerDisplay="$\tfrac{9a}{7}$"
+  hint="Both numerators are $a$-terms, so combine like terms in the numerator and keep the denominator $7$."
+>}}
+
+{{< fillin
+  question="Find the sum: $-\tfrac{1}{8} + \left(-\tfrac{5}{8}\right)$"
+  answer="-\frac{3}{4}"
+  answerDisplay="$-\tfrac{3}{4}$"
+  hint="Add $-1$ and $-5$ over the denominator $8$, then simplify by removing the common factor of $2$."
+>}}
+
+{{< fillin
+  question="Find the sum: $\tfrac{5}{12} + \left(-\tfrac{7}{12}\right) + \left(-\tfrac{11}{12}\right)$"
+  answer="-\frac{13}{12}"
+  answerDisplay="$-\tfrac{13}{12}$"
+  hint="Combine all three numerators over the single common denominator of $12$, working left to right."
+>}}
+
+### Model fraction subtraction
+
+<svg viewBox="0 0 140 140" role="img" aria-label="A circle divided into 6 equal pie-shaped pieces, with 3 of the pieces shaded." style="max-width: 180px; width: 100%; display: block; margin: 1.5rem auto">
+  <path d="M 70 70 L 70.00 10.00 A 60 60 0 0 1 121.96 40.00 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 121.96 40.00 A 60 60 0 0 1 121.96 100.00 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 121.96 100.00 A 60 60 0 0 1 70.00 130.00 Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 70.00 130.00 A 60 60 0 0 1 18.04 100.00 Z" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 18.04 100.00 A 60 60 0 0 1 18.04 40.00 Z" fill="none" stroke="currentColor" stroke-width="1.4" />
+  <path d="M 70 70 L 18.04 40.00 A 60 60 0 0 1 70.00 10.00 Z" fill="none" stroke="currentColor" stroke-width="1.4" />
+</svg>
+
+{{< fillin
+  question="Start with five $\tfrac{1}{6}$ pieces and take two of them away. The fraction circle above shows what is left. What fraction of the circle is shaded? Write your answer in simplified form."
+  answer="\frac{1}{2}"
+  answerDisplay="$\tfrac{1}{2}$"
+  hint="Count the sixths that remain, then simplify by removing the common factor of $3$."
+>}}
+
+{{< fillin
+  question="Janet needs $\tfrac{5}{8}$ of a cup of flour for a recipe. She only has $\tfrac{3}{8}$ of a cup and will borrow the rest from her neighbor. What fraction of a cup does she have to borrow?"
+  answer="\frac{1}{4}"
+  answerDisplay="$\tfrac{1}{4}$ cup"
+  hint="Model each cup as eight equal parts: take away the eighths she already has from the eighths she needs, then simplify."
+>}}
+
+### Subtract fractions with a common denominator
+
+{{< fillin
+  question="Find the difference: $\tfrac{7}{12} - \tfrac{5}{12}$"
+  answer="\frac{1}{6}"
+  answerDisplay="$\tfrac{1}{6}$"
+  hint="Subtract the numerators over the denominator $12$, then remove the common factor of $2$."
+>}}
+
+{{< fillin
+  question="Find the difference: $\tfrac{x}{19} - \tfrac{8}{19}$"
+  answer="\frac{x-8}{19}"
+  answerDisplay="$\tfrac{x-8}{19}$"
+  hint="Write $x - 8$ over the common denominator; the terms in the numerator are unlike, so stop there."
+>}}
+
+{{< fillin
+  question="Find the difference: $-\tfrac{7}{c} - \tfrac{7}{c}$"
+  answer="-\frac{14}{c}"
+  answerDisplay="$-\tfrac{14}{c}$"
+  hint="Rewrite the first fraction as $\tfrac{-7}{c}$, subtract the numerators, then move the negative sign in front."
+>}}
+
+{{< fillin
+  question="Find the difference: $\tfrac{12d}{11} - \tfrac{9d}{11}$"
+  answer="\frac{3d}{11}"
+  answerDisplay="$\tfrac{3d}{11}$"
+  hint="Both numerators are $d$-terms, so subtract like terms and keep the denominator $11$."
+>}}
+
+{{< fillin
+  question="Find the difference: $-\tfrac{3}{7} - \left(-\tfrac{5}{7}\right)$"
+  answer="\frac{2}{7}"
+  answerDisplay="$\tfrac{2}{7}$"
+  hint="Subtracting a negative adds: the numerator becomes $-3 - (-5)$."
+>}}
+
 ## Key terms
 
 **fraction addition** — for a common denominator $c \neq 0$,
@@ -233,4 +377,4 @@ numerators and keep the denominator.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 4.4: Add and Subtract Fractions with Common Denominators](https://openstax.org/books/prealgebra-2e/pages/4-4-add-and-subtract-fractions-with-common-denominators) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the fraction-circle and quarter-coin addition and subtraction models in prose instead of reproducing the diagrams; omitted the Be Prepared quiz, Manipulative Mathematics callouts, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 4.4: Add and Subtract Fractions with Common Denominators](https://openstax.org/books/prealgebra-2e/pages/4-4-add-and-subtract-fractions-with-common-denominators) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the fraction-circle and quarter-coin addition and subtraction models in prose instead of reproducing the diagrams; redrew the fraction-circle answer models as accessible inline SVGs; omitted the Be Prepared quiz, Manipulative Mathematics callouts, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

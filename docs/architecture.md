@@ -67,9 +67,13 @@ failing on serious or critical WCAG violations. It never measures a
 dev server: Playwright builds `public/` and serves it through
 `npm run serve:public` on port 1315, and the suite refuses to run against a
 page carrying a livereload script or unloaded stylesheets. Set
-`A11Y_SKIP_BUILD=1` when a current build already exists, or `BASE_URL` to
-test a deployment. `npm run ci` combines the
-source, built-artifact, and browser-accessibility gates.
+`PLAYWRIGHT_SKIP_BUILD=1` when a current build already exists, or `BASE_URL`
+to test a deployment. `npm run test:e2e` drives the grader end-to-end through
+a real MathLive field (`tests/browser-check.spec.mjs`, light scheme only —
+its checks are colour-scheme-independent), and `npm run test:browser` runs
+every Playwright suite in a single server startup. `npm run ci` combines the
+source, built-artifact, and browser gates; the GitHub workflow runs exactly
+that script, so the pipeline is encoded once.
 
 ## Deployment
 

@@ -8,9 +8,11 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve compound
-  inequalities with “and,” solve compound inequalities with “or,” and solve
-  applications with compound inequalities.
+**By the end of this section, you will be able to:**
+
+- Solve compound inequalities with “and
+- ” solve compound inequalities with “or
+- ” and solve applications with compound inequalities
 {{< /callout >}}
 
 ## Solve compound inequalities with “and”

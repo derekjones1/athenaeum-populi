@@ -11,11 +11,14 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** find factors, prime
-  factorizations, and least common multiples; use variables and algebraic
-  symbols; simplify expressions using the order of operations; evaluate an
-  expression; identify and combine like terms; and translate an English phrase
-  to an algebraic expression.
+**By the end of this section, you will be able to:**
+
+- Find factors, prime factorizations, and least common multiples
+- Use variables and algebraic symbols
+- Simplify expressions using the order of operations
+- Evaluate an expression
+- Identify and combine like terms
+- Translate an English phrase to an algebraic expression
 {{< /callout >}}
 
 In algebra, we use a letter of the alphabet to represent a number whose value
@@ -94,19 +97,23 @@ is divisible by $5$ but not by $10$.
 (d) Is $5{,}625$ divisible by $6$? Is it divisible by both $2$ and $3$? No —
 $5{,}625$ is not divisible by $2$, so $5{,}625$ is not divisible by $6$.
 
-{{< fillin
-  question="Is $4{,}962$ divisible by $2$? Answer 1 for yes or 0 for no."
-  answer="1"
-  answerDisplay="Yes ($1$) — it ends in $2$."
+{{< multiplechoice
+  question="Is $4{,}962$ divisible by $2$?"
+  answer="yes"
   hint="Check whether the last digit is $0$, $2$, $4$, $6$, or $8$."
 >}}
+yes
+no
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="Is $3{,}765$ divisible by $5$? Answer 1 for yes or 0 for no."
-  answer="1"
-  answerDisplay="Yes ($1$) — it ends in $5$."
+{{< multiplechoice
+  question="Is $3{,}765$ divisible by $5$?"
+  answer="yes"
   hint="A number is divisible by $5$ if its last digit is $5$ or $0$."
 >}}
+yes
+no
+{{< /multiplechoice >}}
 
 In mathematics, there are often several ways to talk about the same ideas. So
 far, we've seen that if $m$ is a multiple of $n$, we can say that $m$ is
@@ -242,6 +249,7 @@ for example as $6 \cdot 8$, the result would still be the same.
 {{< fillin
   question="Find the prime factorization of 80. Enter the answer using the $\cdot$ symbol, in ascending order, e.g. $2 \cdot 2 \cdot 5$."
   answer="2 \cdot 2 \cdot 2 \cdot 2 \cdot 5"
+  answerForm="prime-product"
   answerDisplay="$2 \cdot 2 \cdot 2 \cdot 2 \cdot 5$"
   hint="Start with a factor pair like $8$ and $10$, then keep factoring any composite branch until every branch ends in a prime."
 >}}
@@ -249,6 +257,7 @@ for example as $6 \cdot 8$, the result would still be the same.
 {{< fillin
   question="Find the prime factorization of 60. Enter the answer using the $\cdot$ symbol, in ascending order, e.g. $2 \cdot 2 \cdot 5$."
   answer="2 \cdot 2 \cdot 3 \cdot 5"
+  answerForm="prime-product"
   answerDisplay="$2 \cdot 2 \cdot 3 \cdot 5$"
   hint="Try the factor pair $6$ and $10$, then keep factoring any composite branch until every branch ends in a prime."
 >}}

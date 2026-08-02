@@ -10,10 +10,13 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** simplify expressions
-  using the Quotient Property of Exponents, simplify expressions with zero
-  exponents, simplify expressions using the Quotient to a Power Property,
-  simplify expressions by applying several properties, and divide monomials.
+**By the end of this section, you will be able to:**
+
+- Simplify expressions using the Quotient Property of Exponents
+- Simplify expressions with zero exponents
+- Simplify expressions using the Quotient to a Power Property
+- Simplify expressions by applying several properties
+- Divide monomials
 {{< /callout >}}
 
 ## Simplify expressions using the Quotient Property of Exponents
@@ -568,6 +571,133 @@ Simplifying, using the Quotient Rule, gives $5x$.
   hint="Multiply the two factors in the numerator first (watch the signs), then simplify the resulting single fraction."
 >}}
 
+## Practice
+
+### Simplify expressions using the Quotient Property of Exponents
+
+{{< fillin
+  question="Simplify: $\tfrac{4^8}{4^2}$"
+  answer="4^6"
+  answerDisplay="$4^6$"
+  hint="The bases match and the larger exponent is in the numerator, so subtract the exponents. Since the resulting exponent is greater than $3$, leave the answer in exponential form."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{x^{12}}{x^3}$"
+  answer="x^9"
+  answerDisplay="$x^9$"
+  hint="Same base, larger exponent on top — subtract the denominator's exponent from the numerator's."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{y^4}{y^{20}}$"
+  answer="\frac{1}{y^{16}}"
+  answerDisplay="$\tfrac{1}{y^{16}}$"
+  hint="The larger exponent is in the denominator, so the result is $1$ over $y$ raised to the difference of the exponents."
+>}}
+
+### Simplify expressions with zero exponents
+
+{{< fillin
+  question="Simplify: $5^0$"
+  answer="1"
+  hint="Any nonzero number raised to the zero power is $1$."
+>}}
+
+{{< fillin
+  question="Simplify: $-7^0$"
+  answer="-1"
+  hint="The exponent applies only to the $7$, not to the negative sign, so evaluate $7^0$ first and keep the sign."
+>}}
+
+{{< fillin
+  question="Simplify: $(10p)^0$"
+  answer="1"
+  hint="The parentheses put the entire product under the zero exponent."
+>}}
+
+{{< fillin
+  question="Simplify: $10p^0$"
+  answer="10"
+  hint="With no parentheses, only $p$ carries the zero exponent; the factor $10$ stays."
+>}}
+
+### Simplify expressions using the Quotient to a Power Property
+
+{{< fillin
+  question="Simplify: $\left(\tfrac{3}{2}\right)^5$"
+  answer="\frac{243}{32}"
+  answerDisplay="$\tfrac{243}{32}$"
+  hint="Raise the numerator and the denominator to the fifth power separately, then evaluate each."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(\tfrac{m}{6}\right)^3$"
+  answer="\frac{m^3}{216}"
+  answerDisplay="$\tfrac{m^3}{216}$"
+  hint="Raise the numerator and the denominator to the third power, then evaluate $6^3$."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(\tfrac{a}{3b}\right)^2$"
+  answer="\frac{a^2}{9b^2}"
+  answerDisplay="$\tfrac{a^2}{9b^2}$"
+  hint="Square the numerator and the denominator — squaring $3b$ squares both the $3$ and the $b$."
+>}}
+
+### Simplify expressions by applying several properties
+
+{{< fillin
+  question="Simplify: $\tfrac{(x^2)^4}{x^5}$"
+  answer="x^3"
+  answerDisplay="$x^3$"
+  hint="Use the Power Property on the numerator first, then subtract exponents with the Quotient Property."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(\tfrac{x^2}{x^8}\right)^3$"
+  answer="\frac{1}{x^{18}}"
+  answerDisplay="$\tfrac{1}{x^{18}}$"
+  hint="The bases inside the parentheses match, so simplify there first, then apply the outer exponent."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(\tfrac{2r^3}{5s}\right)^4$"
+  answer="\frac{16r^{12}}{625s^4}"
+  answerDisplay="$\tfrac{16r^{12}}{625s^4}$"
+  hint="Raise the numerator and denominator to the fourth power, then raise every factor inside them — coefficients included — to that same power."
+>}}
+
+### Divide monomials
+
+{{< fillin
+  question="Divide the monomials: $48b^8 \div 6b^2$"
+  answer="8b^6"
+  answerDisplay="$8b^6$"
+  hint="Rewrite the quotient as a fraction, then divide the coefficients and subtract the exponents of $b$."
+>}}
+
+{{< fillin
+  question="Divide the monomials: $36x^3 \div (-2x^9)$"
+  answer="\frac{-18}{x^6}"
+  answerDisplay="$\tfrac{-18}{x^6}$"
+  hint="Divide the coefficients first and watch the sign, then use the Quotient Property — the larger exponent is in the denominator."
+>}}
+
+{{< fillin
+  question="Divide the monomials: $\tfrac{18r^5 s}{3r^3 s^9}$"
+  answer="\frac{6r^2}{s^8}"
+  answerDisplay="$\tfrac{6r^2}{s^8}$"
+  hint="Split the fraction into a coefficient part and one part per variable, then simplify each on its own."
+>}}
+
+{{< fillin
+  question="Divide the monomials: $\tfrac{(6m^2 n)(5m^4 n^3)}{3m^{10} n^2}$"
+  answer="\frac{10n^2}{m^4}"
+  answerDisplay="$\tfrac{10n^2}{m^4}$"
+  hint="The fraction bar groups the numerator, so multiply the two monomials there first, then simplify the single fraction that results."
+>}}
+
 ## Key terms
 
 **Quotient Property of Exponents** — for a real number $a \neq 0$ and
@@ -581,4 +711,4 @@ properties one variable at a time.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 10.4: Divide Monomials](https://openstax.org/books/prealgebra-2e/pages/10-4-divide-monomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, Media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 10.4: Divide Monomials](https://openstax.org/books/prealgebra-2e/pages/10-4-divide-monomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

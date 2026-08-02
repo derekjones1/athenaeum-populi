@@ -9,9 +9,11 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use the commutative and
-  associative properties; use the properties of identity, inverse, and zero;
-  and simplify expressions using the distributive property.
+**By the end of this section, you will be able to:**
+
+- Use the commutative and associative properties
+- Use the properties of identity, inverse, and zero
+- Simplify expressions using the distributive property
 {{< /callout >}}
 
 ## Use the commutative and associative properties

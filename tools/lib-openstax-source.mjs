@@ -519,6 +519,27 @@ function markdownPlainText(markdown) {
     .replace(/[`*_~#$|>{}\[\]()]/g, ' '));
 }
 
+/**
+ * Parse the section-opening objectives callout: the sentinel line
+ * `**By the end of this section, you will be able to:**` followed by a
+ * Markdown list, one item per objective, inside a `{{< callout >}}`.
+ *
+ * Returns null when the callout is absent, else the raw item texts (trimmed,
+ * empty items dropped). This is the ONE parser for that construct — the
+ * content lint, the structure validator, and the source audit all key off it,
+ * so a grammar change lands in every diagnosis at once instead of drifting
+ * across three private copies.
+ */
+export function parseObjectivesCallout(body) {
+  const block = body.match(
+    /\*\*By the end of this section, you will be able to:\*\*([\s\S]*?)\{\{<\s*\/callout\s*>\}\}/,
+  );
+  if (!block) return null;
+  return [...block[1].matchAll(/^[ \t]*[-*] +(.+?)[ \t]*$/gm)]
+    .map((match) => match[1].trim())
+    .filter(Boolean);
+}
+
 export function parseLocalSection(markdown) {
   const { attributes, body } = parseFrontmatter(markdown);
   const headings = [...body.matchAll(/^#{2,6}\s+(.+?)\s*$/gm)]
@@ -527,10 +548,19 @@ export function parseLocalSection(markdown) {
     .filter((heading) => normalizeText(heading) !== 'key terms');
   const interactions = localInteractions(body);
   const plainText = normalizeWhitespace(markdownPlainText(body));
+  // The opening callout states the section's objectives as a Markdown list.
+  // The count is what the audit compares against the CNXML abstract: wording
+  // is allowed to differ (imperative vs gerund, KaTeX vs flattened MathML),
+  // but a local list that silently merges two source objectives into one is a
+  // fidelity defect — it is how section 1.1 lost "write whole numbers".
+  const objectives = (parseObjectivesCallout(body) ?? [])
+    .map((item) => markdownPlainText(item).trim())
+    .filter(Boolean);
   return {
     title: attributes.title || '',
     sourceSection: attributes.source_section || '',
     headings,
+    objectives,
     interactions,
     plainText,
     semanticText: normalizeSemanticText(body.replace(/<svg\b[\s\S]*?<\/svg>/gi, ' ')),
@@ -1015,6 +1045,15 @@ export function auditExistingMath(
     }
     if (titleScore < 0.75) detectedFlags.push('title-needs-review');
     if (objectiveMatches.some((match) => match.coverage < 0.82)) detectedFlags.push('objective-needs-review');
+    // The local objectives list must enumerate the same objectives the source
+    // does. A short list means the callout condensed two objectives into one
+    // phrase, which then hides an objective from the Practice block's
+    // per-objective coverage rule. Guarded so a section that also fails the
+    // phrase-coverage check above doesn't emit the flag twice in the audit.
+    if (local.objectives.length !== source.objectives.length
+      && !detectedFlags.includes('objective-needs-review')) {
+      detectedFlags.push('objective-needs-review');
+    }
     if (headingMatches.some((match) => match.score < 0.60)) detectedFlags.push('heading-needs-review');
     const adjudications = (decisionsByPath.get(entry.localPath) || []).filter((decision) => {
       if (decision.moduleId !== entry.moduleId) return false;

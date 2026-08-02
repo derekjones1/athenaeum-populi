@@ -9,9 +9,10 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** simplify expressions
-  using the distributive property, and evaluate expressions using the
-  distributive property.
+**By the end of this section, you will be able to:**
+
+- Simplify expressions using the distributive property
+- Evaluate expressions using the distributive property
 {{< /callout >}}
 
 ## Simplify expressions using the distributive property
@@ -284,6 +285,99 @@ The answers are the same when $y = 35$, demonstrating that $-(y + 5) = -y -
   hint="Simplify inside the parentheses first: $36 - 4 = 32$, then take the opposite."
 >}}
 
+## Practice
+
+### Simplify expressions using the distributive property
+
+{{< fillin
+  question="Simplify: $9(3w + 7)$."
+  answer="27w + 63"
+  hint="Distribute the $9$ to both $3w$ and $7$, multiplying the coefficients."
+>}}
+
+{{< fillin
+  question="Simplify: $5(7u - 4)$."
+  answer="35u - 20"
+  hint="Use $a(b - c) = ab - ac$: multiply the $5$ by each term and keep the subtraction."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{1}{5}(4m + 20)$."
+  answer="\frac{4}{5}m + 4"
+  answerDisplay="$\tfrac{4}{5}m + 4$"
+  hint="Multiply $\tfrac{1}{5}$ by $4m$ and by $20$; one fifth of $20$ is a whole number."
+>}}
+
+{{< fillin
+  question="Simplify: $u(v - 10)$."
+  answer="uv - 10u"
+  hint="Distribute the variable $u$ to both terms, then write the number before the variable in the second term."
+>}}
+
+{{< fillin
+  question="Simplify: $(a + 7)x$."
+  answer="ax + 7x"
+  hint="This is the backwards form $(b + c)a = ba + ca$, so multiply each term inside the parentheses by $x$."
+>}}
+
+{{< fillin
+  question="Simplify: $-9(9a + 4)$."
+  answer="-81a - 36"
+  hint="Distributing a negative number makes both products negative."
+>}}
+
+{{< fillin
+  question="Simplify: $-(5p - 4)$."
+  answer="-5p + 4"
+  hint="Rewrite the leading minus sign as $-1$, then distribute it to both terms."
+>}}
+
+{{< fillin
+  question="Simplify: $7(3n + 9) - (4n - 13)$."
+  answer="17n + 76"
+  hint="Distribute the $7$ across the first parentheses and the implied $-1$ across the second, then combine like terms."
+>}}
+
+### Evaluate expressions using the distributive property
+
+{{< fillin
+  question="Evaluate $8(5u + 12)$ when $u = -1$."
+  answer="56"
+  hint="Substitute $-1$ for $u$ and simplify inside the parentheses before multiplying."
+>}}
+
+{{< fillin
+  question="Evaluate $8 \cdot 5u + 8 \cdot 12$ when $u = -1$."
+  answer="56"
+  hint="This is the distributed form of the previous expression, so the value should match: multiply first, then add."
+>}}
+
+{{< fillin
+  question="Evaluate $4\left(y + \tfrac{3}{8}\right)$ when $y = \tfrac{3}{4}$."
+  answer="\frac{9}{2}"
+  answerDisplay="$\tfrac{9}{2}$"
+  hint="Add inside the parentheses first, using a common denominator of $8$, then multiply by $4$."
+>}}
+
+{{< fillin
+  question="Evaluate $4 \cdot y + 4 \cdot \tfrac{3}{8}$ when $y = \tfrac{3}{4}$."
+  answer="\frac{9}{2}"
+  answerDisplay="$\tfrac{9}{2}$"
+  hint="Multiply each term first, then add the two products; the result should match the undistributed form."
+>}}
+
+{{< fillin
+  question="Evaluate $-(w - 80)$ when $w = -80$."
+  answer="160"
+  hint="Simplify inside the parentheses first — subtracting $80$ from $-80$ — then take the opposite."
+>}}
+
+{{< fillin
+  question="Evaluate $-w + 80$ when $w = -80$."
+  answer="160"
+  hint="The opposite of $-80$ is positive, so both terms are positive here."
+>}}
+
 ## Key terms
 
 **Distributive Property** — for real numbers $a$, $b$, $c$: $a(b + c) = ab +
@@ -293,4 +387,4 @@ term by that number and then adding (or subtracting) the products.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 7.3: Distributive Property](https://openstax.org/books/prealgebra-2e/pages/7-3-distributive-property) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the opening bills-and-coins illustration in prose instead of recreating it as a graphic; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 7.3: Distributive Property](https://openstax.org/books/prealgebra-2e/pages/7-3-distributive-property) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the opening bills-and-coins illustration in prose instead of recreating it as a graphic; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, expanding each multipart evaluation item into one exercise per part.</small>

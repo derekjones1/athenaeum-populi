@@ -8,6 +8,7 @@ weight: 4
 
 {{< callout type="info" >}}
 **By the end of this section, you will be able to:**
+
 - Use the properties of logarithms
 - Use the Change of Base Formula
 {{< /callout >}}

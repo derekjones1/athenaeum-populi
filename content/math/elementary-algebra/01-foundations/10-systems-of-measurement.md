@@ -10,11 +10,14 @@ weight: 10
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** make unit conversions
-  in the U.S. system, use mixed units of measurement in the U.S. system, make
-  unit conversions in the metric system, use mixed units of measurement in
-  the metric system, and convert between the U.S. and the metric systems of
-  measurement (including Fahrenheit and Celsius temperatures).
+**By the end of this section, you will be able to:**
+
+- Make unit conversions in the U.S. system
+- Use mixed units of measurement in the U.S. system
+- Make unit conversions in the metric system
+- Use mixed units of measurement in the metric system
+- Convert between the U.S. and the metric systems of measurement
+- Convert between Fahrenheit and Celsius temperatures
 {{< /callout >}}
 
 ## Make unit conversions in the U.S. system
@@ -617,6 +620,92 @@ So $20\degree\text{C}$ is equivalent to $68\degree\text{F}$.
   hint="Substitute $10$ for $C$ in $F = \tfrac{9}{5}C + 32$."
 >}}
 
+## Practice
+
+### Make unit conversions in the U.S. system
+
+{{< fillin
+  question="A park bench is 6 feet long. How many inches long is the bench?"
+  answer="72"
+  hint="Multiply 6 feet by the conversion factor 12 inches per foot."
+>}}
+
+{{< fillin
+  question="A killer whale weighs 4.6 tons. How many pounds does the killer whale weigh?"
+  answer="9200"
+  hint="Multiply 4.6 tons by the conversion factor 2,000 pounds per ton."
+>}}
+
+### Use mixed units of measurement in the U.S. system
+
+{{< fillin
+  question="One day Anya kept track of the number of minutes she spent driving: 45, 10, 8, 65, 20, and 35. How many hours did Anya spend driving that day?"
+  answer="3.05"
+  hint="Add the minutes together, then divide the total by 60 to convert to hours."
+>}}
+
+{{< fillin
+  question="Leilani wants to make 8 placemats. Each placemat needs 18 inches of fabric. How many yards of fabric will she need for all 8 placemats?"
+  answer="4"
+  hint="Multiply 18 inches by 8 to find the total inches, then convert inches to yards (36 inches per yard)."
+>}}
+
+### Make unit conversions in the metric system
+
+{{< fillin
+  question="Ghalib ran 5 kilometers. How many meters did he run?"
+  answer="5000"
+  hint="Multiply 5 kilometers by 1,000 meters per kilometer."
+>}}
+
+{{< fillin
+  question="June's multivitamin contains 1,500 milligrams of calcium. How many grams of calcium is that?"
+  answer="1.5"
+  hint="Divide 1,500 by 1,000 to convert milligrams to grams."
+>}}
+
+### Use mixed units of measurement in the metric system
+
+{{< fillin
+  question="Matthias is 1.8 meters tall. His son is 89 centimeters tall. How much taller, in centimeters, is Matthias than his son?"
+  answer="91"
+  hint="Convert 1.8 meters to centimeters (180 cm), then subtract 89 cm."
+>}}
+
+{{< fillin
+  question="Harry mailed 5 packages that each weighed 420 grams. What was the total weight of the packages in kilograms?"
+  answer="2.1"
+  hint="Multiply 420 grams by 5, then convert the total to kilograms by dividing by 1,000."
+>}}
+
+### Convert between the U.S. and the metric systems of measurement
+
+{{< fillin
+  question="A 5K run is 5 kilometers long. Convert this length to miles. Round to the nearest tenth."
+  answer="3.1"
+  hint="Divide 5 kilometers by 1.61 kilometers per mile."
+>}}
+
+{{< fillin
+  question="Ozzie put 14 gallons of gas in his truck. How many liters is that? Round to the nearest tenth."
+  answer="53.2"
+  hint="Convert gallons to quarts (multiply by 4), then quarts to liters (multiply by 0.95 liters per quart)."
+>}}
+
+### Convert between Fahrenheit and Celsius temperatures
+
+{{< fillin
+  question="Convert the Fahrenheit temperature to degrees Celsius: 86 degrees Fahrenheit."
+  answer="30"
+  hint="Substitute $86$ for $F$ in $C = \tfrac{5}{9}(F - 32)$."
+>}}
+
+{{< fillin
+  question="Convert the Celsius temperature to degrees Fahrenheit: 5 degrees Celsius."
+  answer="41"
+  hint="Substitute $5$ for $C$ in $F = \tfrac{9}{5}C + 32$."
+>}}
+
 ## Key terms
 
 **U.S. system** — the system of measurement commonly used in the United
@@ -634,4 +723,4 @@ freezes at $0\degree\text{C}$ and boils at $100\degree\text{C}$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 1.10: Systems of Measurement](https://openstax.org/books/elementary-algebra-2e/pages/1-10-systems-of-measurement) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the U.S.-system, metric-system, and U.S.-to-metric conversion-factor tables as markdown tables; omitted the Be Prepared quiz, figure images (ruler, measuring cup, and scale), Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 1.10: Systems of Measurement](https://openstax.org/books/elementary-algebra-2e/pages/1-10-systems-of-measurement) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the U.S.-system, metric-system, and U.S.-to-metric conversion-factor tables as markdown tables; omitted the Be Prepared quiz, figure images (ruler, measuring cup, and scale), and Self Check checklist; and converted the practice problems ("Try Its") and selected end-of-section exercises into interactive exercises with instant feedback.</small>

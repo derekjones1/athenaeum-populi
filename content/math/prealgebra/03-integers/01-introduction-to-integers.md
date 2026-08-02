@@ -10,10 +10,13 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** locate positive and
-  negative numbers on the number line, order positive and negative numbers,
-  find opposites, simplify expressions with absolute value, and translate
-  word phrases into expressions with integers.
+**By the end of this section, you will be able to:**
+
+- Locate positive and negative numbers on the number line
+- Order positive and negative numbers
+- Find opposites
+- Simplify expressions with absolute value
+- Translate word phrases to expressions with integers
 {{< /callout >}}
 
 At over $29{,}000$ feet, Mount Everest stands as the tallest peak on land.
@@ -361,6 +364,235 @@ number: $-\text{\textdollar}40$.
   hint="'Below the surface' signals a negative number."
 >}}
 
+## Practice
+
+### Locate positive and negative numbers on the number line
+
+<div class="ap-figure" data-spec='{"type":"numberline","ariaLabel":"A number line from -6 to 6. Three points are plotted: point A at 2, point B at -2, and point C at -5.","min":-6,"max":6,"points":[{"at":2,"label":"A"},{"at":-2,"label":"B"},{"at":-5,"label":"C"}]}'>
+<svg role="img" aria-label="A number line from -6 to 6. Three points are plotted: point A at 2, point B at -2, and point C at -5." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 76" width="320" height="76" font-family="Helvetica, Arial, sans-serif">
+  <line x1="16" y1="30" x2="304" y2="30" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 24 23 L 16 30 L 24 37" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M 296 23 L 304 30 L 296 37" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="28" y1="24" x2="28" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="28" y="55" text-anchor="middle" font-size="12" fill="currentColor">−6</text>
+  <line x1="50" y1="24" x2="50" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="50" y="55" text-anchor="middle" font-size="12" fill="currentColor">−5</text>
+  <line x1="72" y1="24" x2="72" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="72" y="55" text-anchor="middle" font-size="12" fill="currentColor">−4</text>
+  <line x1="94" y1="24" x2="94" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="94" y="55" text-anchor="middle" font-size="12" fill="currentColor">−3</text>
+  <line x1="116" y1="24" x2="116" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="116" y="55" text-anchor="middle" font-size="12" fill="currentColor">−2</text>
+  <line x1="138" y1="24" x2="138" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="138" y="55" text-anchor="middle" font-size="12" fill="currentColor">−1</text>
+  <line x1="160" y1="24" x2="160" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="160" y="55" text-anchor="middle" font-size="12" fill="currentColor">0</text>
+  <line x1="182" y1="24" x2="182" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="182" y="55" text-anchor="middle" font-size="12" fill="currentColor">1</text>
+  <line x1="204" y1="24" x2="204" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="204" y="55" text-anchor="middle" font-size="12" fill="currentColor">2</text>
+  <line x1="226" y1="24" x2="226" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="226" y="55" text-anchor="middle" font-size="12" fill="currentColor">3</text>
+  <line x1="248" y1="24" x2="248" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="248" y="55" text-anchor="middle" font-size="12" fill="currentColor">4</text>
+  <line x1="270" y1="24" x2="270" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="270" y="55" text-anchor="middle" font-size="12" fill="currentColor">5</text>
+  <line x1="292" y1="24" x2="292" y2="36" stroke="currentColor" stroke-width="1.5"/>
+  <text x="292" y="55" text-anchor="middle" font-size="12" fill="currentColor">6</text>
+  <circle cx="204" cy="30" r="4" fill="currentColor"/>
+  <text x="204" y="18" text-anchor="middle" font-size="12" fill="currentColor">A</text>
+  <circle cx="116" cy="30" r="4" fill="currentColor"/>
+  <text x="116" y="18" text-anchor="middle" font-size="12" fill="currentColor">B</text>
+  <circle cx="50" cy="30" r="4" fill="currentColor"/>
+  <text x="50" y="18" text-anchor="middle" font-size="12" fill="currentColor">C</text>
+</svg>
+</div>
+
+{{< fillin
+  question="The number line above locates and labels three points. What number is plotted at point A?"
+  answer="2"
+  hint="Point A is to the right of $0$, so it is positive. Count the tick marks from $0$."
+>}}
+
+{{< fillin
+  question="The number line above locates and labels three points. What number is plotted at point B?"
+  answer="-2"
+  hint="Point B is to the left of $0$, so it is negative. Count the tick marks from $0$ and write a minus sign in front."
+>}}
+
+{{< fillin
+  question="The number line above locates and labels three points. What number is plotted at point C?"
+  answer="-5"
+  hint="Point C sits farther to the left than point B — count units from $0$ and keep the negative sign."
+>}}
+
+### Order positive and negative numbers
+
+{{< multiplechoice
+  question="Order the pair of numbers using $<$ or $>$: $9 \_\_ 4$"
+  answer="$>$"
+  hint="On the number line $9$ is to the right of $4$, and the number farther right is the greater one."
+>}}
+$<$
+$>$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Order the pair of numbers using $<$ or $>$: $-3 \_\_ 6$"
+  answer="$<$"
+  hint="Every negative number lies to the left of every positive number."
+>}}
+$<$
+$>$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Order the pair of numbers using $<$ or $>$: $-8 \_\_ -2$"
+  answer="$<$"
+  hint="Both numbers are negative. The one farther from zero on the left is the smaller one."
+>}}
+$<$
+$>$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Order the pair of numbers using $<$ or $>$: $1 \_\_ -10$"
+  answer="$>$"
+  hint="A positive number is always to the right of a negative number, no matter how large the negative number looks."
+>}}
+$<$
+$>$
+{{< /multiplechoice >}}
+
+### Find opposites
+
+{{< fillin
+  question="Find the opposite of $2$."
+  answer="-2"
+  hint="The opposite is the same distance from zero, on the other side of zero."
+>}}
+
+{{< fillin
+  question="Find the opposite of $-6$."
+  answer="6"
+  hint="The opposite of a negative number lies the same distance to the right of zero, so it is positive."
+>}}
+
+{{< fillin
+  question="Simplify: $-(-4)$"
+  answer="4"
+  hint="The sign outside the parentheses asks for the opposite of $-4$."
+>}}
+
+{{< fillin
+  question="Evaluate $-m$ when $m = 3$."
+  answer="-3"
+  hint="Substitute $3$ for $m$, then take the opposite of that value."
+>}}
+
+{{< fillin
+  question="Evaluate $-m$ when $m = -3$."
+  answer="3"
+  hint="Substituting gives $-(-3)$ — the opposite of a negative number is positive."
+>}}
+
+### Simplify expressions with absolute value
+
+{{< fillin
+  question="Simplify: $|7|$"
+  answer="7"
+  hint="Absolute value is distance from zero, and $7$ is $7$ units from zero."
+>}}
+
+{{< fillin
+  question="Simplify: $|-25|$"
+  answer="25"
+  hint="Distance is never negative — how many units is $-25$ from zero?"
+>}}
+
+{{< fillin
+  question="Simplify: $|0|$"
+  answer="0"
+  hint="Zero is already at zero, so its distance from zero is nothing at all."
+>}}
+
+{{< fillin
+  question="Evaluate $-|p|$ when $p = 19$."
+  answer="-19"
+  hint="Take the absolute value first, then apply the minus sign that sits outside the bars."
+>}}
+
+{{< fillin
+  question="Evaluate $-|q|$ when $q = -33$."
+  answer="-33"
+  hint="Simplify $-|-33|$: the bars give $33$, and the sign in front then takes its opposite."
+>}}
+
+{{< fillin
+  question="Simplify: $8|-7|$"
+  answer="56"
+  hint="Take the absolute value of $-7$ first, then multiply by $8$."
+>}}
+
+{{< fillin
+  question="Simplify: $18 - |2(8 - 3)|$"
+  answer="8"
+  hint="Absolute value bars are grouping symbols: simplify $8-3$, multiply by $2$, take the absolute value, and only then subtract from $18$."
+>}}
+
+### Translate word phrases to expressions with integers
+
+{{< fillin
+  question="Translate into an expression with integers: the opposite of $8$."
+  answer="-8"
+  hint="The word *opposite* signals a sign change — the opposite of a positive number is negative."
+>}}
+
+{{< fillin
+  question="Translate into an expression with integers: the opposite of $-6$. Enter its value."
+  answer="6"
+  answerDisplay="$-(-6)$, or $6$"
+  hint="Write the phrase as $-(-6)$ first, then simplify: the opposite of a negative number is positive."
+>}}
+
+{{< fillin
+  question="Translate into an expression with integers: negative three."
+  answer="-3"
+  hint="The word *negative* is read directly as a minus sign in front of the number."
+>}}
+
+{{< multiplechoice
+  question="Translate into an expression with integers, without simplifying: $4$ minus negative $3$."
+  answer="$4-(-3)$"
+  hint="Write the first number, then the subtraction sign, then the second number with its own negative sign in parentheses."
+>}}
+$4-(-3)$
+$4+(-3)$
+$-4-3$
+$(-4)-3$
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Translate into an expression with integers: a temperature of $6$ degrees below zero. Give the number of degrees as a signed integer."
+  answer="-6"
+  answerDisplay="$-6$ degrees"
+  hint="*Below zero* signals a negative number."
+>}}
+
+{{< fillin
+  question="Translate into an expression with integers: an elevation of $40$ feet below sea level. Give the number of feet as a signed integer."
+  answer="-40"
+  answerDisplay="$-40$ feet"
+  hint="Sea level is $0$ feet, so an elevation below it is negative."
+>}}
+
+{{< fillin
+  question="Translate into an expression with integers: a football play loss of $12$ yards. Give the number of yards as a signed integer."
+  answer="-12"
+  answerDisplay="$-12$ yards"
+  hint="A *loss* moves the team backward, so it is recorded as a negative number."
+>}}
+
 ## Key terms
 
 **negative number** — a number that is less than $0$. **opposite** — the
@@ -371,4 +603,4 @@ $0$ on the number line, written $|n|$.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 3.1: Introduction to Integers](https://openstax.org/books/prealgebra-2e/pages/3-1-introduction-to-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the number-line figures as accessible inline graphics; condensed prose; omitted the Be Prepared quiz, Manipulative Mathematics callout, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 3.1: Introduction to Integers](https://openstax.org/books/prealgebra-2e/pages/3-1-introduction-to-integers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the number-line figures as accessible inline graphics; condensed prose; omitted the Be Prepared quiz, Manipulative Mathematics callout, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

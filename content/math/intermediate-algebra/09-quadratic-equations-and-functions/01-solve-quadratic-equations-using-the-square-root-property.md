@@ -9,10 +9,10 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve quadratic
-  equations of the form $ax^2=k$ using the Square Root Property and solve
-  quadratic equations of the form $a(x-h)^2=k$ using the Square Root
-  Property.
+**By the end of this section, you will be able to:**
+
+- Solve quadratic equations of the form $ax^2=k$ using the Square Root Property
+- Solve quadratic equations of the form $a(x-h)^2=k$ using the Square Root Property
 {{< /callout >}}
 
 A quadratic equation is an equation of the form $ax^2+bx+c=0$, where

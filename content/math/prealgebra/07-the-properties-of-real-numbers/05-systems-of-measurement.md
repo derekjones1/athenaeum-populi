@@ -10,12 +10,14 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** make unit
-  conversions in the U.S. system, use mixed units of measurement in the
-  U.S. system, make unit conversions in the metric system, use mixed units
-  of measurement in the metric system, convert between the U.S. and the
-  metric systems of measurement, and convert between Fahrenheit and Celsius
-  temperatures.
+**By the end of this section, you will be able to:**
+
+- Make unit conversions in the U.S. system
+- Use mixed units of measurement in the U.S. system
+- Make unit conversions in the metric system
+- Use mixed units of measurement in the metric system
+- Convert between the U.S. and the metric systems of measurement
+- Convert between Fahrenheit and Celsius temperatures
 {{< /callout >}}
 
 In this section we will see how to convert among different types of units,
@@ -40,7 +42,7 @@ equivalencies among the basic units of the U.S. system are:
 | :--- | :--- |
 | $1$ foot (ft) $= 12$ inches (in) | $3$ teaspoons (t) $= 1$ tablespoon (T) |
 | $1$ yard (yd) $= 3$ feet (ft) | $16$ Tablespoons (T) $= 1$ cup (C) |
-| $1$ mile (mi) $= 5280$ feet (ft) | $1$ cup (C) $= 8$ fluid ounces (fl oz) |
+| $1$ mile (mi) $= 5{,}280$ feet (ft) | $1$ cup (C) $= 8$ fluid ounces (fl oz) |
 | | $1$ pint (pt) $= 2$ cups (C) |
 | | $1$ quart (qt) $= 2$ pints (pt) |
 | | $1$ gallon (gal) $= 4$ quarts (qt) |
@@ -239,13 +241,13 @@ Nick ran $10{,}000$ meters.
   hint="1 kilometer = 1000 meters."
 >}}
 
-**Example.** Eleanor's newborn baby weighed $3200$ grams. How many
+**Example.** Eleanor's newborn baby weighed $3{,}200$ grams. How many
 kilograms did the baby weigh?
 
 Multiply by $1$, writing $1$ as a fraction relating grams and kilograms:
 
 $$
-3200\text{ g} \cdot \tfrac{1\text{ kg}}{1000\text{ g}} = 3.2\text{
+3{,}200\text{ g} \cdot \tfrac{1\text{ kg}}{1000\text{ g}} = 3.2\text{
 kilograms}
 $$
 
@@ -264,7 +266,7 @@ $1000$, move the decimal to the right $1$, $2$, or $3$ places
 respectively; to multiply by $0.1$, $0.01$, or $0.001$, move the decimal
 to the left $1$, $2$, or $3$ places respectively. We can apply this
 pattern when we make measurement conversions in the metric system — in the
-example above, we changed $3200$ grams to kilograms by moving the decimal
+example above, we changed $3{,}200$ grams to kilograms by moving the decimal
 $3$ places to the left.
 
 **Example.** Convert: (a) $350$ liters to kiloliters (b) $4.1$ liters to
@@ -278,7 +280,7 @@ $$350\text{ L} \cdot \tfrac{1\text{ kL}}{1000\text{ L}} = 0.35\text{ kL}$$
 (b) Multiply by $1$, writing $1$ as a fraction relating milliliters to
 liters, and move the decimal $3$ units to the right:
 
-$$4.1\text{ L} \cdot \tfrac{1000\text{ mL}}{1\text{ L}} = 4100\text{ mL}$$
+$$4.1\text{ L} \cdot \tfrac{1000\text{ mL}}{1\text{ L}} = 4{,}100\text{ mL}$$
 
 ## Use mixed units of measurement in the metric system
 
@@ -440,6 +442,153 @@ So $20°\text{C}$ is equivalent to $68°\text{F}$.
   hint="Use $F = \tfrac{9}{5}C + 32$; multiply first, then add $32$."
 >}}
 
+## Practice
+
+### Make unit conversions in the U.S. system
+
+{{< fillin
+  question="Carson is 45 inches tall. Convert his height to feet."
+  answer="3.75"
+  answerDisplay="3.75 feet"
+  hint="Multiply by $\tfrac{1\text{ foot}}{12\text{ inches}}$ so the inches divide out."
+>}}
+
+{{< fillin
+  question="Denver, Colorado, is 5,183 feet above sea level. Convert the height to miles. Round to the nearest hundredth of a mile."
+  answer="0.98"
+  answerDisplay="0.98 miles"
+  hint="There are $5{,}280$ feet in a mile, so multiply by $\tfrac{1\text{ mile}}{5{,}280\text{ feet}}$."
+>}}
+
+{{< fillin
+  question="How many tablespoons are in a gallon?"
+  answer="256"
+  answerDisplay="256 tablespoons"
+  hint="Chain the conversion factors: gallons to quarts, quarts to pints, pints to cups, then 16 tablespoons per cup."
+>}}
+
+### Use mixed units of measurement in the U.S. system
+
+{{< fillin
+  question="Judy bought 1 pound 6 ounces of almonds, 2 pounds 3 ounces of walnuts, and 8 ounces of cashews. What was the total weight of the nuts, in ounces?"
+  answer="65"
+  answerDisplay="65 ounces, or 4 pounds 1 ounce"
+  hint="Convert each weight to ounces first (1 pound = 16 ounces), then add."
+>}}
+
+{{< fillin
+  question="Fawzi's SUV is 6 feet 4 inches tall. If he puts a box that is 2 feet 10 inches tall on top of his SUV, what is the total height of the SUV and the box, in inches?"
+  answer="110"
+  answerDisplay="110 inches, or 9 feet 2 inches"
+  hint="Add the inches and the feet separately, then trade every 12 extra inches for 1 foot — or convert both heights to inches before adding."
+>}}
+
+{{< fillin
+  question="Mireille needs to cut 24 inches of ribbon for each of the 12 girls in her dance class. How many yards of ribbon will she need altogether?"
+  answer="8"
+  answerDisplay="8 yards"
+  hint="Find the total length in inches first, then multiply by $\tfrac{1\text{ yard}}{36\text{ inches}}$."
+>}}
+
+### Make unit conversions in the metric system
+
+{{< fillin
+  question="Kitaka hiked 8 kilometers. Convert the length to meters."
+  answer="8000"
+  answerDisplay="8,000 meters"
+  hint="1 kilometer = 1,000 meters, so move the decimal three places to the right."
+>}}
+
+{{< fillin
+  question="The depth of the Mariana Trench is 10,911 meters. Convert the depth to kilometers."
+  answer="10.911"
+  answerDisplay="10.911 kilometers"
+  hint="Multiply by $\tfrac{1\text{ km}}{1{,}000\text{ m}}$ — the same as moving the decimal three places to the left."
+>}}
+
+{{< fillin
+  question="A bottle of medicine contained 300 milliliters. Convert this to liters."
+  answer="0.3"
+  answerDisplay="0.3 liters"
+  hint="1 milliliter = 0.001 liter, so divide by 1,000."
+>}}
+
+### Use mixed units of measurement in the metric system
+
+{{< fillin
+  question="Stavros is 1.6 meters tall. His sister is 95 centimeters tall. How much taller, in centimeters, is Stavros than his sister?"
+  answer="65"
+  answerDisplay="65 centimeters"
+  hint="Convert both heights to centimeters before subtracting — $1.6$ m is $160$ cm."
+>}}
+
+{{< fillin
+  question="Concetta had a 2-kilogram bag of flour. She used 180 grams of flour to make biscotti. How many kilograms of flour are left in the bag?"
+  answer="1.82"
+  answerDisplay="1.82 kilograms"
+  hint="Write the 180 grams as kilograms first ($0.18$ kg), then subtract from $2$ kg."
+>}}
+
+{{< fillin
+  question="One glass of orange juice provides 560 milligrams of potassium. Linda drinks one glass of orange juice every morning. How many grams of potassium does Linda get from her orange juice in 30 days?"
+  answer="16.8"
+  answerDisplay="16.8 grams"
+  hint="Find the total in milligrams first $(560 \times 30)$, then divide by 1,000 to get grams."
+>}}
+
+### Convert between the U.S. and the metric systems of measurement
+
+{{< fillin
+  question="Frankie is 42 inches tall. Convert his height to centimeters. Round to the nearest tenth of a centimeter."
+  answer="106.7"
+  answerDisplay="106.7 centimeters"
+  hint="Use the conversion factor 1 inch = 2.54 centimeters."
+>}}
+
+{{< fillin
+  question="Connie bought 9 yards of fabric to make drapes. Convert the fabric length to meters. Round to the nearest tenth of a meter."
+  answer="8.2"
+  answerDisplay="8.2 meters"
+  hint="Use the conversion factor 1 yard = 0.914 meter."
+>}}
+
+{{< fillin
+  question="Jackson's backpack weighs 15 kilograms. Convert the weight to pounds."
+  answer="33"
+  answerDisplay="33 pounds"
+  hint="Use the conversion factor 1 kilogram = 2.2 pounds."
+>}}
+
+### Convert between Fahrenheit and Celsius temperatures
+
+{{< fillin
+  question="Convert 77°F to degrees Celsius."
+  answer="25"
+  answerDisplay="25°C"
+  hint="Use $C = \tfrac{5}{9}(F - 32)$; subtract inside the parentheses first."
+>}}
+
+{{< fillin
+  question="Convert 120°F to degrees Celsius. Round to the nearest tenth of a degree."
+  answer="48.9"
+  answerDisplay="48.9°C"
+  hint="Use $C = \tfrac{5}{9}(F - 32)$; the difference $120 - 32$ is not a multiple of $9$, so the result needs rounding."
+>}}
+
+{{< fillin
+  question="Convert 25°C to degrees Fahrenheit."
+  answer="77"
+  answerDisplay="77°F"
+  hint="Use $F = \tfrac{9}{5}C + 32$; multiply before adding."
+>}}
+
+{{< fillin
+  question="Convert 8°C to degrees Fahrenheit."
+  answer="46.4"
+  answerDisplay="46.4°F"
+  hint="Use $F = \tfrac{9}{5}C + 32$; $\tfrac{9}{5}$ of $8$ is $14.4$."
+>}}
+
 ## Key terms
 
 **U.S. system** — the system of measurement used in the United States,
@@ -454,4 +603,4 @@ temperature scales, related by $C = \tfrac{5}{9}(F - 32)$ and $F =
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 7.5: Systems of Measurement](https://openstax.org/books/prealgebra-2e/pages/7-5-systems-of-measurement) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the U.S., metric, and U.S.-to-metric conversion tables (Tables 7.2–7.4) as markdown tables; omitted the decorative photographs, the Celsius/Fahrenheit thermometer figure (its key reference points are given in prose instead), the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 7.5: Systems of Measurement](https://openstax.org/books/prealgebra-2e/pages/7-5-systems-of-measurement) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the U.S., metric, and U.S.-to-metric conversion tables (Tables 7.2–7.4) as markdown tables; omitted the decorative photographs, the Celsius/Fahrenheit thermometer figure (its key reference points are given in prose instead), the Be Prepared quiz, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating two mixed-unit answers as single-unit quantities.</small>

@@ -8,11 +8,13 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** add and subtract rational
-  expressions with a common denominator; add and subtract rational expressions
-  whose denominators are opposites; find the least common denominator of
-  rational expressions; add and subtract rational expressions with unlike
-  denominators; and add and subtract rational functions.
+**By the end of this section, you will be able to:**
+
+- Add and subtract rational expressions with a common denominator
+- Add and subtract rational expressions whose denominators are opposites
+- Find the least common denominator of rational expressions
+- Add and subtract rational expressions with unlike denominators
+- Add and subtract rational functions
 {{< /callout >}}
 
 ## Add and subtract rational expressions with a common denominator

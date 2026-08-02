@@ -10,9 +10,11 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** multiply a polynomial
-  by a monomial, multiply a binomial by a binomial, and multiply a trinomial
-  by a binomial.
+**By the end of this section, you will be able to:**
+
+- Multiply a polynomial by a monomial
+- Multiply a binomial by a binomial
+- Multiply a trinomial by a binomial
 {{< /callout >}}
 
 ## Multiply a Polynomial by a Monomial

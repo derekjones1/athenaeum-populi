@@ -10,11 +10,13 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** model addition of
-  mixed numbers with a common denominator, add mixed numbers with a
-  common denominator, model subtraction of mixed numbers, subtract mixed
-  numbers with a common denominator, and add and subtract mixed numbers
-  with different denominators.
+**By the end of this section, you will be able to:**
+
+- Model addition of mixed numbers with a common denominator
+- Add mixed numbers with a common denominator
+- Model subtraction of mixed numbers
+- Subtract mixed numbers with a common denominator
+- Add and subtract mixed numbers with different denominators
 {{< /callout >}}
 
 ## Model addition of mixed numbers with a common denominator
@@ -310,6 +312,115 @@ $$4\frac{3}{4} - 2\frac{7}{8} = 1\frac{7}{8}$$
   hint="The LCD of 2 and 5 is 10. Convert both fractions to tenths, borrow if needed, then subtract."
 >}}
 
+## Practice
+
+### Model addition of mixed numbers with a common denominator
+
+{{< fillin
+  question="Use a model to find the sum: $2\tfrac{1}{3} + 1\tfrac{1}{3}$"
+  answer="3\frac{2}{3}"
+  answerDisplay="$3\tfrac{2}{3}$"
+  hint="Picture whole circles for the whole numbers and $\tfrac{1}{3}$ pieces for the fractions. Count the wholes, then count the thirds."
+>}}
+
+{{< fillin
+  question="Use a model to find the sum: $1\tfrac{5}{6} + 1\tfrac{5}{6}$"
+  answer="3\frac{2}{3}"
+  answerDisplay="$3\tfrac{2}{3}$"
+  hint="Ten sixths is more than one whole circle. Trade six of them for a whole, then simplify what is left."
+>}}
+
+### Add mixed numbers with a common denominator
+
+{{< fillin
+  question="Add: $2\tfrac{4}{9} + 5\tfrac{1}{9}$"
+  answer="7\frac{5}{9}"
+  answerDisplay="$7\tfrac{5}{9}$"
+  hint="Add the whole numbers, then add the numerators over the common denominator $9$."
+>}}
+
+{{< fillin
+  question="Add: $7\tfrac{9}{10} + 3\tfrac{1}{10}$"
+  answer="11"
+  hint="The tenths add to a full whole, so the fraction part disappears — add that whole to the whole-number total."
+>}}
+
+{{< fillin
+  question="Add: $8\tfrac{4}{9} + 2\tfrac{8}{9}$"
+  answer="11\frac{1}{3}"
+  answerDisplay="$11\tfrac{1}{3}$"
+  hint="The ninths add to an improper fraction. Rewrite it as a mixed number, add the extra whole in, then simplify."
+>}}
+
+### Model subtraction of mixed numbers
+
+{{< fillin
+  question="Use a model to find the difference: $1\tfrac{1}{8} - \tfrac{5}{8}$"
+  answer="\frac{1}{2}"
+  answerDisplay="$\tfrac{1}{2}$"
+  hint="Cut the whole into eighths so you have $\tfrac{9}{8}$ in all, then take away $\tfrac{5}{8}$ and simplify."
+>}}
+
+{{< fillin
+  question="Use a model to find the difference: $6 - \tfrac{2}{5}$"
+  answer="5\frac{3}{5}"
+  answerDisplay="$5\tfrac{3}{5}$"
+  hint="Cut one of the six wholes into fifths, so $6$ becomes $5\tfrac{5}{5}$, then take away $\tfrac{2}{5}$."
+>}}
+
+### Subtract mixed numbers with a common denominator
+
+{{< fillin
+  question="Find the difference: $2\tfrac{7}{12} - 1\tfrac{5}{12}$"
+  answer="1\frac{1}{6}"
+  answerDisplay="$1\tfrac{1}{6}$"
+  hint="The top fraction is larger, so no borrowing is needed. Subtract the fractions, subtract the whole numbers, then simplify."
+>}}
+
+{{< fillin
+  question="Find the difference: $5\tfrac{2}{9} - 3\tfrac{4}{9}$"
+  answer="1\frac{7}{9}"
+  answerDisplay="$1\tfrac{7}{9}$"
+  hint="Since $\tfrac{2}{9}$ is smaller than $\tfrac{4}{9}$, take one whole from the $5$ to make $4\tfrac{11}{9}$ before subtracting."
+>}}
+
+{{< fillin
+  question="Find the difference: $2\tfrac{5}{12} - 1\tfrac{7}{12}$"
+  answer="\frac{5}{6}"
+  answerDisplay="$\tfrac{5}{6}$"
+  hint="Borrow one whole to make $1\tfrac{17}{12}$. The whole numbers then subtract to $0$, so the answer is just a fraction — simplify it."
+>}}
+
+### Add and subtract mixed numbers with different denominators
+
+{{< fillin
+  question="Write the sum as a mixed number in simplified form: $2\tfrac{1}{6} + 5\tfrac{3}{4}$"
+  answer="7\frac{11}{12}"
+  answerDisplay="$7\tfrac{11}{12}$"
+  hint="The LCD of $6$ and $4$ is $12$. Rewrite both fractions in twelfths before adding."
+>}}
+
+{{< fillin
+  question="Write the sum as a mixed number in simplified form: $7\tfrac{2}{3} + 8\tfrac{1}{2}$"
+  answer="16\frac{1}{6}"
+  answerDisplay="$16\tfrac{1}{6}$"
+  hint="Use the LCD $6$. The sixths will add to an improper fraction — convert it and carry the extra whole."
+>}}
+
+{{< fillin
+  question="Write the difference as a mixed number in simplified form: $6\tfrac{4}{5} - 1\tfrac{1}{4}$"
+  answer="5\frac{11}{20}"
+  answerDisplay="$5\tfrac{11}{20}$"
+  hint="The LCD of $5$ and $4$ is $20$. Once both fractions are in twentieths, the top one is larger, so no borrowing is needed."
+>}}
+
+{{< fillin
+  question="Write the difference as a mixed number in simplified form: $2\tfrac{7}{8} - 4\tfrac{1}{3}$"
+  answer="-1\frac{11}{24}"
+  answerDisplay="$-1\tfrac{11}{24}$"
+  hint="The second number is larger, so expect a negative answer. Convert to improper fractions over the LCD $24$ and subtract."
+>}}
+
 ## Key terms
 
 **mixed number addition** — add the whole-number parts and the fraction
@@ -322,4 +433,4 @@ subtracting.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 4.6: Add and Subtract Mixed Numbers](https://openstax.org/books/prealgebra-2e/pages/4-6-add-and-subtract-mixed-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the fraction-circle, dollar/quarter, and parking-meter models in prose instead of reproducing the diagrams and three-column model/notation tables; omitted the Be Prepared quiz, Manipulative Mathematics callout, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 4.6: Add and Subtract Mixed Numbers](https://openstax.org/books/prealgebra-2e/pages/4-6-add-and-subtract-mixed-numbers) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the fraction-circle, dollar/quarter, and parking-meter models in prose instead of reproducing the diagrams and three-column model/notation tables; omitted the Be Prepared quiz, Manipulative Mathematics callout, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with the modeling exercises restated to ask for the value the model gives rather than for a drawing.</small>

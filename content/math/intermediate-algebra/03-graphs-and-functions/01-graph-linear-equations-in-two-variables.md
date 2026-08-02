@@ -9,10 +9,13 @@ weight: 1
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** plot points in a
-  rectangular coordinate system, graph a linear equation by plotting points,
-  graph vertical and horizontal lines, find the $x$- and $y$-intercepts, and
-  graph a line using the intercepts.
+**By the end of this section, you will be able to:**
+
+- Plot points in a rectangular coordinate system
+- Graph a linear equation by plotting points
+- Graph vertical and horizontal lines
+- Find the $x$- and $y$-intercepts
+- Graph a line using the intercepts
 {{< /callout >}}
 
 ## Plot points in a rectangular coordinate system
@@ -278,11 +281,16 @@ $\left(3,\tfrac{5}{2}\right)$ is in Quadrant I.
 </svg>
 </div>
 
-{{< fillin
-  question="Plot the point (-2, 1). In which quadrant is it located? Enter the quadrant number."
-  answer="2"
-  hint="A negative x-coordinate is left of the y-axis; a positive y-coordinate is above the x-axis."
+{{< multiplechoice
+  question="Plot the point $(-2, 1)$. In which quadrant is it located?"
+  answer="Quadrant II"
+  hint="A negative $x$-coordinate is left of the $y$-axis; a positive $y$-coordinate is above the $x$-axis."
 >}}
+Quadrant I
+Quadrant II
+Quadrant III
+Quadrant IV
+{{< /multiplechoice >}}
 
 The signs of the $x$-coordinate and $y$-coordinate affect the location of the
 points. We can summarize sign patterns of the quadrants in this way:
@@ -439,11 +447,14 @@ the point $(2,-3)$ is not on the line. The points that are solutions to
 $y=2x-3$ are on the line, but the point that is not a solution is not on the
 line.
 
-{{< fillin
-  question="For $y=3x-1$, is $(2,5)$ a solution? Enter 1 for yes or 0 for no."
-  answer="1"
-  hint="Substitute x = 2 and compare 3x - 1 with y = 5."
+{{< multiplechoice
+  question="For $y=3x-1$, is $(2,5)$ a solution?"
+  answer="yes"
+  hint="Substitute $x = 2$ and compare $3x - 1$ with $y = 5$."
 >}}
+yes
+no
+{{< /multiplechoice >}}
 
 ## Graph a linear equation by plotting points
 

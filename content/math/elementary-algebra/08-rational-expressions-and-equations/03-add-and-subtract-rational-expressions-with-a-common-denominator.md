@@ -9,10 +9,11 @@ weight: 3
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** add rational expressions
-  with a common denominator, subtract rational expressions with a common
-  denominator, and add and subtract rational expressions whose denominators are
-  opposites.
+**By the end of this section, you will be able to:**
+
+- Add rational expressions with a common denominator
+- Subtract rational expressions with a common denominator
+- Add and subtract rational expressions whose denominators are opposites
 {{< /callout >}}
 
 ## Add rational expressions with a common denominator

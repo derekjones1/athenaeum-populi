@@ -10,8 +10,10 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve rational
-  equations, and solve a rational equation for a specific variable.
+**By the end of this section, you will be able to:**
+
+- Solve rational equations
+- Solve a rational equation for a specific variable
 {{< /callout >}}
 
 We have simplified many rational expressions so far in this chapter. Now we

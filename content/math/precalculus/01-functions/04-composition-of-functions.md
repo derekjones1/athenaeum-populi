@@ -10,10 +10,13 @@ weight: 4
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** combine functions
-  using algebraic operations, create a new function by composition of
-  functions, evaluate composite functions, find the domain of a composite
-  function, and decompose a composite function into its component functions.
+**By the end of this section, you will be able to:**
+
+- Combine functions using algebraic operations
+- Create a new function by composition of functions
+- Evaluate composite functions
+- Find the domain of a composite function
+- Decompose a composite function into its component functions
 {{< /callout >}}
 
 Suppose we want to calculate how much it costs to heat a house on a

@@ -10,10 +10,13 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use the definition
-  of proportion, solve proportions, solve applications using proportions,
-  write percent equations as proportions, and translate and solve percent
-  proportions.
+**By the end of this section, you will be able to:**
+
+- Use the definition of proportion
+- Solve proportions
+- Solve applications using proportions
+- Write percent equations as proportions
+- Translate and solve percent proportions
 {{< /callout >}}
 
 ## Use the definition of proportion
@@ -499,6 +502,168 @@ out. $12.5\%$ of $72$ is $9$.
   hint="Set up $\tfrac{23}{92} = \tfrac{n}{100}$, then find the cross products and solve."
 >}}
 
+## Practice
+
+### Use the definition of proportion
+
+{{< multiplechoice
+  question="Write as a proportion: 4 is to 15 as 36 is to 135."
+  answer="$\tfrac{4}{15} = \tfrac{36}{135}$"
+  hint="Keep the sentence's order: the first number over the second, set equal to the third over the fourth."
+>}}
+$\tfrac{4}{15} = \tfrac{36}{135}$
+$\tfrac{15}{4} = \tfrac{36}{135}$
+$\tfrac{4}{15} = \tfrac{135}{36}$
+$\tfrac{4}{36} = \tfrac{135}{15}$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Write as a proportion: \$9.36 for 18 ounces is the same as \$2.60 for 5 ounces."
+  answer="$\tfrac{9.36}{18} = \tfrac{2.60}{5}$"
+  hint="Compare the quantities in the same order in both ratios — dollars in the numerators, ounces in the denominators."
+>}}
+$\tfrac{9.36}{18} = \tfrac{2.60}{5}$
+$\tfrac{18}{9.36} = \tfrac{2.60}{5}$
+$\tfrac{9.36}{18} = \tfrac{5}{2.60}$
+$\tfrac{9.36}{5} = \tfrac{2.60}{18}$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether the equation is a proportion: $\tfrac{7}{15} = \tfrac{56}{120}$"
+  answer="yes"
+  hint="Find the cross products $7 \cdot 120$ and $15 \cdot 56$; the equation is a proportion only if they are equal."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether the equation is a proportion: $\tfrac{11}{6} = \tfrac{21}{16}$"
+  answer="no"
+  hint="Find the cross products $11 \cdot 16$ and $6 \cdot 21$; the equation is a proportion only if they are equal."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Solve proportions
+
+{{< fillin
+  question="Solve the proportion: $\tfrac{x}{56} = \tfrac{7}{8}$"
+  answer="49"
+  hint="The variable is in a numerator, so multiply both sides by the LCD, 56."
+>}}
+
+{{< fillin
+  question="Solve the proportion: $\tfrac{5}{a} = \tfrac{65}{117}$"
+  answer="9"
+  hint="The variable is in a denominator, so set the cross products equal: $5 \cdot 117 = 65a$."
+>}}
+
+{{< fillin
+  question="Solve the proportion: $\tfrac{98}{154} = \tfrac{-7}{p}$"
+  answer="-11"
+  hint="Set the cross products equal: $98p = 154(-7)$, then divide by 98 and keep the sign."
+>}}
+
+{{< fillin
+  question="Solve the proportion: $\tfrac{2.7}{j} = \tfrac{0.9}{0.2}$"
+  answer="0.6"
+  hint="Set the cross products equal: $2.7(0.2) = 0.9j$, then divide both sides by $0.9$."
+>}}
+
+### Solve applications using proportions
+
+{{< fillin
+  question="Pediatricians prescribe 5 milliliters (ml) of acetaminophen for every 25 pounds of a child's weight. How many milliliters of acetaminophen will the doctor prescribe for Jocelyn, who weighs 45 pounds?"
+  answer="9"
+  answerDisplay="9 ml"
+  hint="Put milliliters over pounds in both ratios: $\tfrac{5}{25} = \tfrac{a}{45}$."
+>}}
+
+{{< fillin
+  question="Karen eats $\tfrac{1}{2}$ cup of oatmeal that counts for 2 points on her weight loss program. Her husband, Joe, can have 3 points of oatmeal for breakfast. How much oatmeal can he have? Give your answer in cups."
+  answer="\frac{3}{4}"
+  answerDisplay="$\tfrac{3}{4}$ cup"
+  hint="Put cups over points in both ratios, then cross-multiply: $2c = 3 \cdot \tfrac{1}{2}$."
+>}}
+
+{{< fillin
+  question="At the laundromat, Lucy changed \$12.00 into quarters. How many quarters did she get?"
+  answer="48"
+  answerDisplay="48 quarters"
+  hint="One dollar is 4 quarters, so put quarters over dollars: $\tfrac{4}{1} = \tfrac{q}{12}$."
+>}}
+
+{{< fillin
+  question="Phil wants to fertilize his lawn. Each bag of fertilizer covers about 4,000 square feet of lawn. Phil's lawn is approximately 13,500 square feet. How many bags of fertilizer will he have to buy?"
+  answer="4"
+  answerDisplay="4 bags"
+  hint="Set up $\tfrac{1}{4{,}000} = \tfrac{b}{13{,}500}$. He cannot buy part of a bag, so round up to the next whole bag."
+>}}
+
+### Write percent equations as proportions
+
+{{< multiplechoice
+  question="Translate to a proportion: What number is 35% of 250?"
+  answer="$\tfrac{n}{250} = \tfrac{35}{100}$"
+  hint="The amount goes over the base — the number following the word 'of' — and the percent goes over 100."
+>}}
+$\tfrac{n}{250} = \tfrac{35}{100}$
+$\tfrac{250}{n} = \tfrac{35}{100}$
+$\tfrac{n}{35} = \tfrac{250}{100}$
+$\tfrac{n}{250} = \tfrac{100}{35}$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Translate to a proportion: 45 is 30% of what number?"
+  answer="$\tfrac{45}{n} = \tfrac{30}{100}$"
+  hint="Here 45 is the amount and 'what number' is the base, so the unknown belongs in the first denominator."
+>}}
+$\tfrac{45}{n} = \tfrac{30}{100}$
+$\tfrac{n}{45} = \tfrac{30}{100}$
+$\tfrac{45}{n} = \tfrac{100}{30}$
+$\tfrac{45}{30} = \tfrac{n}{100}$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Translate to a proportion: What percent of 85 is 17?"
+  answer="$\tfrac{17}{85} = \tfrac{p}{100}$"
+  hint="'What percent' is the unknown, 85 follows 'of' so it is the base, and 17 is the amount."
+>}}
+$\tfrac{17}{85} = \tfrac{p}{100}$
+$\tfrac{85}{17} = \tfrac{p}{100}$
+$\tfrac{17}{85} = \tfrac{100}{p}$
+$\tfrac{p}{85} = \tfrac{17}{100}$
+{{< /multiplechoice >}}
+
+### Translate and solve percent proportions
+
+{{< fillin
+  question="Translate and solve using proportions: What number is 65% of 180?"
+  answer="117"
+  hint="Set up $\tfrac{n}{180} = \tfrac{65}{100}$, then find the cross products and divide by 100."
+>}}
+
+{{< fillin
+  question="Translate and solve using proportions: 175% of 26 is what number?"
+  answer="45.5"
+  hint="Set up $\tfrac{n}{26} = \tfrac{175}{100}$. The percent is more than 100, so expect an answer larger than 26."
+>}}
+
+{{< fillin
+  question="Translate and solve using proportions: 17% of what number is \$7.65?"
+  answer="45"
+  hint="The unknown is the base, so set up $\tfrac{7.65}{n} = \tfrac{17}{100}$ and find the cross products."
+>}}
+
+{{< fillin
+  question="Translate and solve using proportions: What percent of 96 is 12?"
+  answer="12.5"
+  answerDisplay="12.5%"
+  hint="Set up $\tfrac{12}{96} = \tfrac{p}{100}$, then find the cross products and divide by 96."
+>}}
+
 ## Key terms
 
 **proportion** — an equation of the form $\tfrac{a}{b} = \tfrac{c}{d}$,
@@ -510,4 +675,4 @@ form $\tfrac{\text{amount}}{\text{base}} = \tfrac{\text{percent}}{100}$.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 6.5: Solve Proportions and their Applications](https://openstax.org/books/prealgebra-2e/pages/6-5-solve-proportions-and-their-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, Writing Exercises, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, including entering proportion setups directly as equations.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 6.5: Solve Proportions and their Applications](https://openstax.org/books/prealgebra-2e/pages/6-5-solve-proportions-and-their-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, Writing Exercises, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, including entering proportion setups directly as equations; and adapted selected end-of-section exercises into the interactive Practice block, presenting the proportion-setup and is-it-a-proportion items as multiple choice.</small>

@@ -8,7 +8,13 @@ weight: 8
 ---
 
 {{< callout type="info" >}}
-**By the end of this section, you will be able to:** evaluate the square root of a negative number, add and subtract complex numbers, multiply complex numbers, divide complex numbers, simplify powers of $i$.
+**By the end of this section, you will be able to:**
+
+- Evaluate the square root of a negative number
+- Add and subtract complex numbers
+- Multiply complex numbers
+- Divide complex numbers
+- Simplify powers of $i$
 {{< /callout >}}
 
 ## Evaluate the Square Root of a Negative Number

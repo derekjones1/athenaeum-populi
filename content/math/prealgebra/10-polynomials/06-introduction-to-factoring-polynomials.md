@@ -9,9 +9,10 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** find the greatest
-  common factor of two or more expressions, and factor the greatest common
-  factor from a polynomial.
+**By the end of this section, you will be able to:**
+
+- Find the greatest common factor of two or more expressions
+- Factor the greatest common factor from a polynomial
 {{< /callout >}}
 
 ## Find the greatest common factor of two or more expressions
@@ -460,6 +461,101 @@ Check on your own by multiplying the factors.
   hint="The leading coefficient is negative, so pull a negative variable factor out as the GCF. Remember $x$ = $x$ times $1$."
 >}}
 
+## Practice
+
+### Find the greatest common factor of two or more expressions
+
+{{< fillin
+  question="Find the greatest common factor of $45$ and $75$."
+  answer="15"
+  hint="Factor each number into primes, then multiply the primes that appear in both columns."
+>}}
+
+{{< fillin
+  question="Find the greatest common factor of $4y$ and $28$."
+  answer="4"
+  hint="Factor $28$ into primes and compare with the factors of $4y$; the variable $y$ appears in only one expression, so it cannot be part of the GCF."
+>}}
+
+{{< fillin
+  question="Find the greatest common factor of $9x$ and $15x^2$."
+  answer="3x"
+  answerDisplay="$3x$"
+  hint="Factor each coefficient into primes and write the powers of $x$ in expanded form, then bring down every factor the two expressions share."
+>}}
+
+{{< fillin
+  question="Find the greatest common factor of $12p^4$ and $48p^3$."
+  answer="12p^3"
+  answerDisplay="$12p^3$"
+  hint="The GCF takes the lowest power of $p$ that both terms contain, along with the greatest common factor of $12$ and $48$."
+>}}
+
+{{< fillin
+  question="Find the greatest common factor of $14b^2$, $35b^3$, and $63b^4$."
+  answer="7b^2"
+  answerDisplay="$7b^2$"
+  hint="A factor must be shared by all three expressions. Look for the prime common to $14$, $35$, and $63$, then the lowest power of $b$."
+>}}
+
+### Factor the greatest common factor from a polynomial
+
+{{< fillin
+  question="Factor: $5y + 15$."
+  answer="5(y+3)"
+  answerDisplay="$5(y+3)$"
+  hint="Find the GCF of $5y$ and $15$, rewrite each term as a product using it, then use the Distributive Property in reverse."
+>}}
+
+{{< fillin
+  question="Factor: $4b - 20$."
+  answer="4(b-5)"
+  answerDisplay="$4(b-5)$"
+  hint="Find the GCF of $4b$ and $20$, then divide each term by it and keep the subtraction sign inside the parentheses."
+>}}
+
+{{< fillin
+  question="Factor: $3n^2 + 21n + 12$."
+  answer="3(n^2+7n+4)"
+  answerDisplay="$3(n^2+7n+4)$"
+  hint="Check all three terms for a common factor. The GCF here is a constant, so the polynomial left inside the parentheses is still a trinomial."
+>}}
+
+{{< fillin
+  question="Factor: $9c^2 + 22c$."
+  answer="c(9c+22)"
+  answerDisplay="$c(9c+22)$"
+  hint="$9$ and $22$ share no prime factor, so the GCF is a variable only."
+>}}
+
+{{< fillin
+  question="Factor: $45c^3 - 15c^2$."
+  answer="15c^2(3c-1)"
+  answerDisplay="$15c^2(3c-1)$"
+  hint="Take out both the greatest common numerical factor and the lowest power of $c$. When a term is entirely used up by the GCF, a $1$ is left in its place."
+>}}
+
+{{< fillin
+  question="Factor: $48x^3 + 72x^2$."
+  answer="24x^2(2x+3)"
+  answerDisplay="$24x^2(2x+3)$"
+  hint="Factor $48$ and $72$ into primes to find their greatest common factor, then include the lowest power of $x$."
+>}}
+
+{{< fillin
+  question="Factor: $-7p - 84$."
+  answer="-7(p+12)"
+  answerDisplay="$-7(p+12)$"
+  hint="The leading coefficient is negative, so make the GCF negative too — and watch how that flips the sign of the second term inside the parentheses."
+>}}
+
+{{< fillin
+  question="The height of a baseball hit with velocity $80$ feet/second at $4$ feet above ground level is $-16t^2 + 80t + 4$, where $t$ is the number of seconds since it was hit. Factor the greatest common factor from this polynomial."
+  answer="-4(4t^2-20t-1)"
+  answerDisplay="$-4(4t^2-20t-1)$"
+  hint="The leading coefficient is negative, so the GCF is negative. Ignoring signs, find the greatest common factor of $16$, $80$, and $4$; no power of $t$ divides the constant term."
+>}}
+
 ## Key terms
 
 **factoring** — splitting a product into the factors whose product it is;
@@ -468,4 +564,4 @@ more expressions, the largest expression that is a factor of all of them.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 10.6: Introduction to Factoring Polynomials](https://openstax.org/books/prealgebra-2e/pages/10-6-introduction-to-factoring-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the factoring/multiplying diagram as typeset math and the factor-column work as inline math; omitted the Be Prepared quiz, Media links, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 10.6: Introduction to Factoring Polynomials](https://openstax.org/books/prealgebra-2e/pages/10-6-introduction-to-factoring-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: recreated the factoring/multiplying diagram as typeset math and the factor-column work as inline math; omitted the Be Prepared quiz, Media links, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

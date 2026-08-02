@@ -11,12 +11,14 @@ weight: 5
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** find the least
-  common denominator (LCD), convert fractions to equivalent fractions
-  with the LCD, add and subtract fractions with different denominators,
-  identify and use fraction operations, use the order of operations to
-  simplify complex fractions, and evaluate variable expressions with
-  fractions.
+**By the end of this section, you will be able to:**
+
+- Find the least common denominator (LCD)
+- Convert fractions to equivalent fractions with the LCD
+- Add and subtract fractions with different denominators
+- Identify and use fraction operations
+- Use the order of operations to simplify complex fractions
+- Evaluate variable expressions with fractions
 {{< /callout >}}
 
 ## Find the least common denominator
@@ -116,6 +118,7 @@ back to the original fractions and lose the common denominator.
 {{< fillin
   question="Convert $\tfrac{3}{4}$ and $\tfrac{5}{6}$ to equivalent fractions with LCD 12. Enter the equivalent form of $\tfrac{3}{4}$."
   answer="\frac{9}{12}"
+  answerForm="denominator:12"
   answerDisplay="$\tfrac{9}{12}$"
   hint="$4$ times what number gives $12$? Multiply the numerator by that same number."
 >}}
@@ -131,6 +134,7 @@ $$\frac{8 \cdot 8}{15 \cdot 8} = \frac{64}{120}, \qquad \frac{11 \cdot 5}{24 \cd
 {{< fillin
   question="Convert $\tfrac{13}{24}$ and $\tfrac{17}{32}$ to equivalent fractions with LCD 96. Enter the equivalent form of $\tfrac{17}{32}$."
   answer="\frac{51}{96}"
+  answerForm="denominator:96"
   answerDisplay="$\tfrac{51}{96}$"
   hint="$32$ times what number gives $96$? Multiply the numerator by that same number."
 >}}
@@ -423,6 +427,158 @@ $$\frac{p+q}{r} = -\frac{3}{4}$$
   hint="Add $a$ and $b$ first (the numerator), then divide by $c$."
 >}}
 
+## Practice
+
+### Find the least common denominator (LCD)
+
+{{< fillin
+  question="Find the least common denominator (LCD) for $\tfrac{3}{4}$ and $\tfrac{2}{5}$."
+  answer="20"
+  hint="Factor $4$ and $5$ into primes. They share no prime factor, so no column matches up and the LCM is the product of all of them."
+>}}
+
+{{< fillin
+  question="Find the least common denominator (LCD) for $\tfrac{18}{35}$ and $\tfrac{33}{49}$."
+  answer="245"
+  hint="$35 = 5 \cdot 7$ and $49 = 7 \cdot 7$. Line up the one shared $7$ in a column, then bring down every column and multiply."
+>}}
+
+{{< fillin
+  question="Find the least common denominator (LCD) for $\tfrac{2}{3}$, $\tfrac{1}{4}$, and $\tfrac{3}{5}$."
+  answer="60"
+  hint="Use only the denominators, even with three fractions: find the least common multiple of $3$, $4$, and $5$."
+>}}
+
+### Convert fractions to equivalent fractions with the LCD
+
+{{< fillin
+  question="Convert $\tfrac{1}{4}$ and $\tfrac{1}{5}$ to equivalent fractions using their LCD of $20$. Enter the equivalent form of $\tfrac{1}{4}$."
+  answer="\frac{5}{20}"
+  answerForm="denominator:20"
+  answerDisplay="$\tfrac{5}{20}$"
+  hint="$4$ times what number gives $20$? Multiply the numerator by that same number, and do not reduce the result."
+>}}
+
+{{< fillin
+  question="Convert $\tfrac{1}{4}$ and $\tfrac{1}{5}$ to equivalent fractions using their LCD of $20$. Enter the equivalent form of $\tfrac{1}{5}$."
+  answer="\frac{4}{20}"
+  answerForm="denominator:20"
+  answerDisplay="$\tfrac{4}{20}$"
+  hint="$5$ times what number gives $20$? Multiply the numerator by that same number so the value is unchanged."
+>}}
+
+{{< fillin
+  question="Convert $\tfrac{11}{16}$ and $-\tfrac{5}{12}$ to equivalent fractions using their LCD of $48$. Enter the equivalent form of $\tfrac{11}{16}$."
+  answer="\frac{33}{48}"
+  answerForm="denominator:48"
+  answerDisplay="$\tfrac{33}{48}$"
+  hint="$16$ times what number gives $48$? Multiply both numerator and denominator by it."
+>}}
+
+{{< fillin
+  question="Convert $\tfrac{11}{16}$ and $-\tfrac{5}{12}$ to equivalent fractions using their LCD of $48$. Enter the equivalent form of $-\tfrac{5}{12}$."
+  answer="-\frac{20}{48}"
+  answerForm="denominator:48"
+  answerDisplay="$-\tfrac{20}{48}$"
+  hint="$12$ times what number gives $48$? Multiply the numerator by that number and keep the negative sign."
+>}}
+
+### Add and subtract fractions with different denominators
+
+{{< fillin
+  question="Add: $\tfrac{1}{3} + \tfrac{1}{8}$"
+  answer="\frac{11}{24}"
+  answerDisplay="$\tfrac{11}{24}$"
+  hint="$3$ and $8$ share no factors, so the LCD is $24$. Convert each fraction, then add the numerators."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{1}{2} - \left(-\tfrac{1}{6}\right)$"
+  answer="\frac{2}{3}"
+  answerDisplay="$\tfrac{2}{3}$"
+  hint="Subtracting a negative adds. The LCD of $2$ and $6$ is $6$ — convert, combine, then simplify."
+>}}
+
+{{< fillin
+  question="Add: $-\tfrac{9}{20} + \tfrac{17}{30}$"
+  answer="\frac{7}{60}"
+  answerDisplay="$\tfrac{7}{60}$"
+  hint="$20 = 2 \cdot 2 \cdot 5$ and $30 = 2 \cdot 3 \cdot 5$, so the LCD is $60$. Convert both, then add the signed numerators."
+>}}
+
+{{< fillin
+  question="Add: $\tfrac{y}{2} + \tfrac{2}{3}$"
+  answer="\frac{3y+4}{6}"
+  answerDisplay="$\tfrac{3y+4}{6}$"
+  hint="The LCD of $2$ and $3$ is $6$. Convert each fraction, then add the numerators — $3y$ and $4$ are not like terms, so leave them as a sum."
+>}}
+
+### Identify and use fraction operations
+
+{{< fillin
+  question="Simplify: $\tfrac{2}{3} + \tfrac{1}{6}$"
+  answer="\frac{5}{6}"
+  answerDisplay="$\tfrac{5}{6}$"
+  hint="The operation is addition, so you need a common denominator. The LCD of $3$ and $6$ is $6$."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{2}{3} \div \tfrac{1}{6}$"
+  answer="4"
+  hint="The operation is division, so no common denominator is needed — multiply by the reciprocal of the second fraction."
+>}}
+
+{{< fillin
+  question="Simplify: $-\tfrac{1}{8} + \tfrac{7}{12}$"
+  answer="\frac{11}{24}"
+  answerDisplay="$\tfrac{11}{24}$"
+  hint="Addition again, so find the LCD of $8$ and $12$ first, then combine the signed numerators."
+>}}
+
+### Use the order of operations to simplify complex fractions
+
+{{< fillin
+  question="Simplify: $\left(\tfrac{1}{3}\right)^2 / \left(5 + 2^2\right)$"
+  answer="\frac{1}{81}"
+  answerDisplay="$\tfrac{1}{81}$"
+  hint="Square the fraction in the numerator and evaluate the power before adding in the denominator, then divide."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(3^3 - 3^2\right) / \left(\tfrac{3}{4}\right)^2$"
+  answer="32"
+  hint="Simplify the numerator to a whole number and the denominator to a single fraction, then multiply by that fraction's reciprocal."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(\tfrac{3}{4} - \tfrac{3}{5}\right) / \left(\tfrac{1}{4} + \tfrac{2}{5}\right)$"
+  answer="\frac{3}{13}"
+  answerDisplay="$\tfrac{3}{13}$"
+  hint="Both the numerator and the denominator use the LCD $20$. Combine each into a single fraction, then divide."
+>}}
+
+### Evaluate variable expressions with fractions
+
+{{< fillin
+  question="Evaluate $x + \tfrac{2}{3}$ when $x = -\tfrac{1}{6}$"
+  answer="\frac{1}{2}"
+  answerDisplay="$\tfrac{1}{2}$"
+  hint="Substitute $-\tfrac{1}{6}$ for $x$, rewrite both fractions with the LCD $6$, then add and simplify."
+>}}
+
+{{< fillin
+  question="Evaluate $x + \tfrac{2}{3}$ when $x = -\tfrac{5}{3}$"
+  answer="-1"
+  hint="Both fractions already have denominator $3$, so just add the numerators."
+>}}
+
+{{< fillin
+  question="Evaluate $8u^2v^3$ when $u = -\tfrac{3}{4}$ and $v = -\tfrac{1}{2}$"
+  answer="-\frac{9}{16}"
+  answerDisplay="$-\tfrac{9}{16}$"
+  hint="Apply each exponent first — an even power of a negative is positive, an odd power stays negative — then multiply the three factors."
+>}}
+
 ## Key terms
 
 **least common denominator (LCD)** — the least common multiple of the
@@ -433,4 +589,4 @@ denominator next, then divide.
 
 ---
 
-<small>This section is adapted from [Prealgebra 2e, Section 4.5: Add and Subtract Fractions with Different Denominators](https://openstax.org/books/prealgebra-2e/pages/4-5-add-and-subtract-fractions-with-different-denominators) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the coin and fraction-tile models for the LCD in prose instead of reproducing the diagrams, and presented the two-column worked examples as prose walkthroughs with typeset math; omitted the Be Prepared quiz, Manipulative Mathematics callout, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Prealgebra 2e, Section 4.5: Add and Subtract Fractions with Different Denominators](https://openstax.org/books/prealgebra-2e/pages/4-5-add-and-subtract-fractions-with-different-denominators) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: described the coin and fraction-tile models for the LCD in prose instead of reproducing the diagrams, and presented the two-column worked examples as prose walkthroughs with typeset math; omitted the Be Prepared quiz, Manipulative Mathematics callout, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, with each multipart exercise expanded into one question per part.</small>

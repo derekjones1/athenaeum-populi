@@ -48,6 +48,12 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
 
 Every `source:*` command takes `--bundle KEY` to work on one bundle at a time.
 
+Every authoring rule in the content lint is an error except one: the 142
+sections still missing a `## Practice` block, which is an authoring programme
+tracked in `docs/authoring-playbook.md` §5. A page you author or revise adds
+no warning of its own. If a rule fires on sound content, narrow the rule and
+add a test for the case it got wrong — do not exempt the page.
+
 ## Browsers (never run `npx playwright install`)
 
 Use the browser that is already installed. `npx playwright install` hangs here,
@@ -66,10 +72,12 @@ variable is needed and `npm run ci` passes clean out of the box:
   `chromium-dark` projects.
 
 `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` stays available in that config as an
-override when a specific binary is required. `A11Y_SKIP_BUILD=1 npm run
-test:a11y` is the fast path whenever `public/` is already current from a
-just-run `npm run build`. If the suite ever fails at launch again, the fix is a
-channel or an executable path — never an install.
+override when a specific binary is required. `PLAYWRIGHT_SKIP_BUILD=1 npm run
+test:browser` is the fast path whenever `public/` is already current from a
+just-run `npm run build` (`test:browser` runs every Playwright suite in one
+server startup; `test:a11y` / `test:e2e` target a single spec). If the suite
+ever fails at launch again, the fix is a channel or an executable path —
+never an install.
 
 Do not commit unless the user explicitly asks. Preserve unrelated worktree
 changes.

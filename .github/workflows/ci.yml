@@ -49,15 +49,15 @@ jobs:
             hugo-${{ runner.os }}-${{ env.HUGO_VERSION }}-
 
       - run: npm ci
-      - run: npx playwright install --with-deps chromium
-      - run: npm test
-      - run: npm run build
-      - run: npm run check:build
-      - run: npm run test:a11y
-        env:
-          # `npm run build` and `npm run check:build` above already
-          # produced and verified `public/`; the a11y server just serves it.
-          A11Y_SKIP_BUILD: "1"
+      # The whole verification pipeline lives in package.json's `ci` script —
+      # tests, build, built-artifact checks, then one Playwright invocation
+      # covering accessibility AND the grader end-to-end suite (regressions
+      # that only surface through the real MathLive field). Encoding the
+      # sequence once means a gate added to `npm run ci` can never be missed
+      # here. Playwright drives the runner's preinstalled Chrome
+      # (channel: 'chrome' in playwright.config.mjs), so no browser install
+      # step is needed.
+      - run: npm run ci
 
   deploy:
     name: Deploy production

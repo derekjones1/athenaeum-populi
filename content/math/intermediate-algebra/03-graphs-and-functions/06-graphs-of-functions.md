@@ -9,9 +9,11 @@ weight: 6
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** use the vertical line
-  test, identify graphs of basic functions, and read information from a graph
-  of a function.
+**By the end of this section, you will be able to:**
+
+- Use the vertical line test
+- Identify graphs of basic functions
+- Read information from a graph of a function
 {{< /callout >}}
 
 ## Use the vertical line test
@@ -1103,8 +1105,8 @@ range.
 **Example 3.58.** Use the graph of the function to find its domain and range.
 Write the domain and range in interval notation.
 
-<div class="ap-figure">
-<svg role="img" aria-label="A curve with closed endpoints at negative 3 comma negative 1 and 3 comma 1, rising to a maximum at about 1 comma 3. Its domain is negative 3 to 3 and range is negative 1 to 3." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 252" width="292" height="252" font-family="Helvetica, Arial, sans-serif">
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A curve with closed endpoints at negative 3 comma negative 1 and 3 comma 1, rising to a maximum at about 1 comma 3. Its domain is negative 3 to 3 and its range is negative 1 to 3.","xMin":-6,"xMax":6,"yMin":-4,"yMax":6,"unit":20,"tickLabels":true,"tickStep":2,"smoothCurves":[{"through":[[-3,-1],[-2,0],[0,2.5],[1,3],[3,1]],"freeform":true}],"points":[{"at":[-3,-1]},{"at":[1,3]},{"at":[3,1]}]}'>
+<svg role="img" aria-label="A curve with closed endpoints at negative 3 comma negative 1 and 3 comma 1, rising to a maximum at about 1 comma 3. Its domain is negative 3 to 3 and its range is negative 1 to 3." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 252" width="292" height="252" font-family="Helvetica, Arial, sans-serif">
   <line x1="26" y1="226" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="46" y1="226" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
   <line x1="66" y1="226" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>

@@ -10,9 +10,10 @@ weight: 7
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** solve proportions,
-  solve applications using proportions, and solve similar figure
-  applications.
+**By the end of this section, you will be able to:**
+
+- Solve proportions
+- Solve applications using proportions, solve similar figure applications
 {{< /callout >}}
 
 ## Solve proportions

@@ -30,6 +30,7 @@ weight: 13
 {{< fillin
   question="Write $-5$ as the ratio of two integers."
   answer="-\frac{5}{1}"
+  answerForm="fraction"
   answerDisplay="$-\tfrac{5}{1}$"
 >}}
 

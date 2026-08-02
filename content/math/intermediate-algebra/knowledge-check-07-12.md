@@ -843,7 +843,7 @@ neither
 >}}
 
 {{< fillin
-  question="Find the sum: $1-\tfrac{1}{5}+\tfrac{1}{25}-\tfrac{1}{125}+\tfrac{1}{625}-\tfrac{1}{3125}+\cdots$."
+  question="Find the sum: $1-\tfrac{1}{5}+\tfrac{1}{25}-\tfrac{1}{125}+\tfrac{1}{625}-\tfrac{1}{3{,}125}+\cdots$."
   answer="5/6"
   answerDisplay="$\tfrac{5}{6}$"
 >}}

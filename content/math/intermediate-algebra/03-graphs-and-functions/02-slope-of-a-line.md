@@ -9,11 +9,14 @@ weight: 2
 ---
 
 {{< callout type="info" >}}
-  **By the end of this section, you will be able to:** find the slope of a
-  line, graph a line given a point and the slope, graph a line using its slope
-  and intercept, choose the most convenient method to graph a line, graph and
-  interpret applications of slope-intercept, and use slopes to identify
-  parallel and perpendicular lines.
+**By the end of this section, you will be able to:**
+
+- Find the slope of a line
+- Graph a line given a point and the slope
+- Graph a line using its slope and intercept
+- Choose the most convenient method to graph a line
+- Graph and interpret applications of slope-intercept
+- Use slopes to identify parallel and perpendicular lines
 {{< /callout >}}
 
 ## Find the slope of a line
