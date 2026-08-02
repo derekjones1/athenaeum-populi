@@ -522,6 +522,67 @@ $\text{\textdollar}12{,}000$? $\tfrac{3}{4} \cdot 16{,}000
   hint="Let f be the number of flats to fill the whole garden. Translate to $14 = \tfrac{2}{3}f$, then multiply both sides by the reciprocal of $\tfrac{2}{3}$."
 >}}
 
+## Practice
+
+### Solve equations using the Division and Multiplication Properties of Equality
+
+{{< fillin
+  question="Solve: $8x = 56$."
+  answer="7"
+  hint="Divide both sides by $8$ to undo the multiplication, then check by substituting the result."
+>}}
+
+{{< fillin
+  question="Solve: $-\tfrac{5}{8}w = 40$."
+  answer="-64"
+  hint="Multiply both sides by $-\tfrac{8}{5}$, the reciprocal of $-\tfrac{5}{8}$."
+>}}
+
+### Solve equations that require simplification
+
+{{< fillin
+  question="Solve: $100 - 16 = 4p - 10p - p$."
+  answer="-12"
+  hint="Simplify both sides first to get $84 = -7p$, then divide both sides by $-7$."
+>}}
+
+{{< fillin
+  question="Solve: $\tfrac{7}{8}n - \tfrac{3}{4}n = 9 + 2$."
+  answer="88"
+  hint="Rewrite $\tfrac{3}{4}$ as $\tfrac{6}{8}$ and combine the like terms before isolating $n$."
+>}}
+
+### Translate to an equation and solve
+
+{{< fillin
+  question="Translate and solve: 133 is the product of $-19$ and $n$. Enter the value of $n$."
+  answer="-7"
+  hint="Translate the product statement as $133 = -19n$, then divide both sides by $-19$."
+>}}
+
+{{< fillin
+  question="Translate and solve: The sum of two-fifths and $f$ is one-half. Enter the value of $f$."
+  answer="\frac{1}{10}"
+  answerDisplay="$\tfrac{1}{10}$"
+  hint="Translate to $\tfrac{2}{5} + f = \tfrac{1}{2}$, then subtract $\tfrac{2}{5}$ from both sides using a common denominator."
+>}}
+
+### Translate and solve applications
+
+{{< fillin
+  question="Ramona bought 18 balloons for a party. She wants to make 3 equal bunches. How many balloons did she use in each bunch?"
+  answer="6"
+  answerDisplay="6 balloons"
+  hint="Let $b$ be the number of balloons in each bunch. Translate to $3b = 18$, then divide both sides by $3$."
+>}}
+
+{{< fillin
+  question="Bea earned \$11,700 commission for selling a house, calculated as $\tfrac{6}{100}$ of the selling price. What was the selling price of the house?"
+  answer="195000"
+  answerDisplay="\$195,000"
+  hint="Let $s$ be the selling price. Translate to $\tfrac{6}{100}s = 11{,}700$, then multiply both sides by $\tfrac{100}{6}$."
+>}}
+
 ## Key terms
 
 **Division Property of Equality** — for any numbers $a$, $b$, and $c$ with
@@ -531,4 +592,4 @@ $ac = bc$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 2.2: Solve Equations using the Division and Multiplication Properties of Equality](https://openstax.org/books/elementary-algebra-2e/pages/2-2-solve-equations-using-the-division-and-multiplication-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the envelopes-and-counters figure as a table and the application step-by-step tables as markdown tables; omitted the Manipulative Mathematics callouts, media links, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 2.2: Solve Equations using the Division and Multiplication Properties of Equality](https://openstax.org/books/elementary-algebra-2e/pages/2-2-solve-equations-using-the-division-and-multiplication-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the envelopes-and-counters figure as a table and the application step-by-step tables as markdown tables; omitted the Manipulative Mathematics callouts, media links, and Self Check checklist; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

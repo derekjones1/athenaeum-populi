@@ -608,6 +608,364 @@ perpendicular
 neither
 {{< /multiplechoice >}}
 
+## Practice
+
+### Recognize the relation between the graph and the slope-intercept form of an equation of a line
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A coordinate grid with both axes numbered from negative six to six, showing the line y = 4x - 2 through (0, -2) and (1, 2).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"tickStep":1,"lines":[{"slope":4,"intercept":-2}]}'>
+<svg role="img" aria-label="A coordinate grid with both axes numbered from negative six to six, showing the line y = 4x - 2 through (0, -2) and (1, 2)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 292" width="292" height="292" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="46" y1="266" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="66" y1="266" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="86" y1="266" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="106" y1="266" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="126" y1="266" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="166" y1="266" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="186" y1="266" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="206" y1="266" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="226" y1="266" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="246" y1="266" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="266" y1="266" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="266" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="246" x2="266" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="226" x2="266" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="206" x2="266" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="186" x2="266" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="166" x2="266" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="126" x2="266" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="106" x2="266" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="86" x2="266" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="66" x2="266" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="46" x2="266" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="146" x2="268" y2="146" stroke="currentColor" stroke-width="1"/>
+  <line x1="146" y1="24" x2="146" y2="268" stroke="currentColor" stroke-width="1"/>
+  <polygon points="278,146 268,151 268,141" fill="currentColor"/>
+  <polygon points="146,14 151,24 141,24" fill="currentColor"/>
+  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
+  <polygon points="146,278 141,268 151,268" fill="currentColor"/>
+  <text x="276" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="154" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="143" x2="26" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="161" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
+  <line x1="46" y1="143" x2="46" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="46" y="161" font-size="11" fill="currentColor" text-anchor="middle">−5</text>
+  <line x1="66" y1="143" x2="66" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="66" y="161" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
+  <line x1="86" y1="143" x2="86" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="86" y="161" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
+  <line x1="106" y1="143" x2="106" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="106" y="161" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="126" y1="143" x2="126" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="126" y="161" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <line x1="166" y1="143" x2="166" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="166" y="161" font-size="11" fill="currentColor" text-anchor="middle">1</text>
+  <line x1="186" y1="143" x2="186" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="186" y="161" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="206" y1="143" x2="206" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="206" y="161" font-size="11" fill="currentColor" text-anchor="middle">3</text>
+  <line x1="226" y1="143" x2="226" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="226" y="161" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="246" y1="143" x2="246" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="246" y="161" font-size="11" fill="currentColor" text-anchor="middle">5</text>
+  <line x1="266" y1="143" x2="266" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="266" y="161" font-size="11" fill="currentColor" text-anchor="middle">6</text>
+  <line x1="143" y1="266" x2="149" y2="266" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="270" font-size="11" fill="currentColor" text-anchor="end">−6</text>
+  <line x1="143" y1="246" x2="149" y2="246" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="250" font-size="11" fill="currentColor" text-anchor="end">−5</text>
+  <line x1="143" y1="226" x2="149" y2="226" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="230" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="143" y1="206" x2="149" y2="206" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="210" font-size="11" fill="currentColor" text-anchor="end">−3</text>
+  <line x1="143" y1="186" x2="149" y2="186" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="190" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="143" y1="166" x2="149" y2="166" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="170" font-size="11" fill="currentColor" text-anchor="end">−1</text>
+  <line x1="143" y1="126" x2="149" y2="126" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="130" font-size="11" fill="currentColor" text-anchor="end">1</text>
+  <line x1="143" y1="106" x2="149" y2="106" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="110" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="143" y1="86" x2="149" y2="86" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="90" font-size="11" fill="currentColor" text-anchor="end">3</text>
+  <line x1="143" y1="66" x2="149" y2="66" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="70" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <line x1="143" y1="46" x2="149" y2="46" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="50" font-size="11" fill="currentColor" text-anchor="end">5</text>
+  <line x1="143" y1="26" x2="149" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="30" font-size="11" fill="currentColor" text-anchor="end">6</text>
+  <line x1="126.9" y1="262.3" x2="185.1" y2="29.7" stroke="currentColor" stroke-width="1.8"/>
+  <polygon points="187.5,20 189.9,30.9 180.2,28.5" fill="currentColor"/>
+  <polygon points="124.5,272 122.1,261.1 131.8,263.5" fill="currentColor"/>
+</svg>
+</div>
+
+{{< multiplechoice
+  question="Use the graph above to find the slope and $y$-intercept of the line $y = 4x - 2$. Which statement is correct?"
+  answer="The slope is $4$ and the $y$-intercept is $(0, -2)$."
+  hint="From $(0, -2)$ to $(1, 2)$, compare the rise with the run; the point where the line crosses the $y$-axis is the $y$-intercept."
+>}}
+The slope is $4$ and the $y$-intercept is $(0, -2)$.
+The slope is $-4$ and the $y$-intercept is $(0, 2)$.
+The slope is $2$ and the $y$-intercept is $(0, 4)$.
+{{< /multiplechoice >}}
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A coordinate grid with both axes numbered from negative six to six, showing the line y = -3x + 1 through (0, 1) and (1, -2).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"tickStep":1,"lines":[{"slope":-3,"intercept":1}]}'>
+<svg role="img" aria-label="A coordinate grid with both axes numbered from negative six to six, showing the line y = -3x + 1 through (0, 1) and (1, -2)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 292" width="292" height="292" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="46" y1="266" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="66" y1="266" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="86" y1="266" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="106" y1="266" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="126" y1="266" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="166" y1="266" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="186" y1="266" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="206" y1="266" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="226" y1="266" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="246" y1="266" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="266" y1="266" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="266" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="246" x2="266" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="226" x2="266" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="206" x2="266" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="186" x2="266" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="166" x2="266" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="126" x2="266" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="106" x2="266" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="86" x2="266" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="66" x2="266" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="46" x2="266" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="146" x2="268" y2="146" stroke="currentColor" stroke-width="1"/>
+  <line x1="146" y1="24" x2="146" y2="268" stroke="currentColor" stroke-width="1"/>
+  <polygon points="278,146 268,151 268,141" fill="currentColor"/>
+  <polygon points="146,14 151,24 141,24" fill="currentColor"/>
+  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
+  <polygon points="146,278 141,268 151,268" fill="currentColor"/>
+  <text x="276" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="154" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="143" x2="26" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="161" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
+  <line x1="46" y1="143" x2="46" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="46" y="161" font-size="11" fill="currentColor" text-anchor="middle">−5</text>
+  <line x1="66" y1="143" x2="66" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="66" y="161" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
+  <line x1="86" y1="143" x2="86" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="86" y="161" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
+  <line x1="106" y1="143" x2="106" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="106" y="161" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="126" y1="143" x2="126" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="126" y="161" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <line x1="166" y1="143" x2="166" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="166" y="161" font-size="11" fill="currentColor" text-anchor="middle">1</text>
+  <line x1="186" y1="143" x2="186" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="186" y="161" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="206" y1="143" x2="206" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="206" y="161" font-size="11" fill="currentColor" text-anchor="middle">3</text>
+  <line x1="226" y1="143" x2="226" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="226" y="161" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="246" y1="143" x2="246" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="246" y="161" font-size="11" fill="currentColor" text-anchor="middle">5</text>
+  <line x1="266" y1="143" x2="266" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="266" y="161" font-size="11" fill="currentColor" text-anchor="middle">6</text>
+  <line x1="143" y1="266" x2="149" y2="266" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="270" font-size="11" fill="currentColor" text-anchor="end">−6</text>
+  <line x1="143" y1="246" x2="149" y2="246" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="250" font-size="11" fill="currentColor" text-anchor="end">−5</text>
+  <line x1="143" y1="226" x2="149" y2="226" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="230" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="143" y1="206" x2="149" y2="206" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="210" font-size="11" fill="currentColor" text-anchor="end">−3</text>
+  <line x1="143" y1="186" x2="149" y2="186" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="190" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="143" y1="166" x2="149" y2="166" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="170" font-size="11" fill="currentColor" text-anchor="end">−1</text>
+  <line x1="143" y1="126" x2="149" y2="126" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="130" font-size="11" fill="currentColor" text-anchor="end">1</text>
+  <line x1="143" y1="106" x2="149" y2="106" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="110" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="143" y1="86" x2="149" y2="86" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="90" font-size="11" fill="currentColor" text-anchor="end">3</text>
+  <line x1="143" y1="66" x2="149" y2="66" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="70" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <line x1="143" y1="46" x2="149" y2="46" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="50" font-size="11" fill="currentColor" text-anchor="end">5</text>
+  <line x1="143" y1="26" x2="149" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="30" font-size="11" fill="currentColor" text-anchor="end">6</text>
+  <line x1="113.8" y1="29.5" x2="191.5" y2="262.5" stroke="currentColor" stroke-width="1.8"/>
+  <polygon points="194.7,272 186.8,264.1 196.2,260.9" fill="currentColor"/>
+  <polygon points="110.7,20 118.6,27.9 109.1,31.1" fill="currentColor"/>
+</svg>
+</div>
+
+{{< multiplechoice
+  question="Use the graph above to find the slope and $y$-intercept of the line $y = -3x + 1$. Which statement is correct?"
+  answer="The slope is $-3$ and the $y$-intercept is $(0, 1)$."
+  hint="From $(0, 1)$ to $(1, -2)$, compare the change in $y$ with the change in $x$; then identify where the line crosses the $y$-axis."
+>}}
+The slope is $-3$ and the $y$-intercept is $(0, 1)$.
+The slope is $3$ and the $y$-intercept is $(0, -1)$.
+The slope is $-1$ and the $y$-intercept is $(0, 3)$.
+{{< /multiplechoice >}}
+
+### Identify the slope and $y$-intercept from an equation of a line
+
+{{< fillin
+  question="Identify the slope of the line $y = -9x + 7$."
+  answer="-9"
+  answerDisplay="$-9$"
+  hint="Compare the equation with $y = mx + b$; the coefficient of $x$ is $m$."
+>}}
+
+{{< fillin
+  question="Identify the $y$-intercept of the line $y = -9x + 7$. Give the intercept as an ordered pair."
+  answer="(0,7)"
+  answerDisplay="$(0, 7)$"
+  hint="In $y = mx + b$, the line crosses the $y$-axis at $(0, b)$."
+>}}
+
+Now repeat the identification directly from a second equation in slope-intercept form.
+
+{{< fillin
+  question="Identify the slope of the line $y = 4x - 10$."
+  answer="4"
+  answerDisplay="$4$"
+  hint="Compare the equation with $y = mx + b$; the coefficient of $x$ is the slope."
+>}}
+
+{{< fillin
+  question="Identify the $y$-intercept of the line $y = 4x - 10$. Give the intercept as an ordered pair."
+  answer="(0,-10)"
+  answerDisplay="$(0, -10)$"
+  hint="Read the constant term as $b$, then write the intercept in the form $(0, b)$."
+>}}
+
+### Graph a line using its slope and intercept
+
+{{< graphplot
+  question="Graph the line $y = x + 4$ using its slope and $y$-intercept by placing two points on it."
+  answerDisplay="$y = x + 4$"
+  ariaLabel="A blank coordinate grid from negative ten to ten on both axes."
+  hint="Plot the $y$-intercept $(0, 4)$ first, then use slope $1 = \tfrac{1}{1}$ to move up $1$ and right $1$."
+>}}
+{"answer":{"slope":1,"intercept":4},"grid":{"xMin":-10,"xMax":10,"yMin":-10,"yMax":10}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph the line $y = 2x - 3$ using its slope and $y$-intercept by placing two points on it."
+  answerDisplay="$y = 2x - 3$"
+  ariaLabel="A blank coordinate grid from negative ten to ten on both axes."
+  hint="Plot the $y$-intercept $(0, -3)$ first, then use slope $2 = \tfrac{2}{1}$ to move up $2$ and right $1$."
+>}}
+{"answer":{"slope":2,"intercept":-3},"grid":{"xMin":-10,"xMax":10,"yMin":-10,"yMax":10}}
+{{< /graphplot >}}
+
+### Choose the most convenient method to graph a line
+
+{{< multiplechoice
+  question="Identify the most convenient method to graph the line $y = 4$."
+  answer="Recognize it as a horizontal line."
+  hint="An equation of the form $y = b$ fixes the $y$-coordinate while $x$ may be any value."
+>}}
+Recognize it as a horizontal line.
+Recognize it as a vertical line.
+Use the intercepts.
+Use the slope-intercept form.
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Identify the most convenient method to graph the line $x = -3$."
+  answer="Recognize it as a vertical line."
+  hint="An equation of the form $x = a$ fixes the $x$-coordinate while $y$ may be any value."
+>}}
+Recognize it as a horizontal line.
+Recognize it as a vertical line.
+Use the intercepts.
+Use the slope-intercept form.
+{{< /multiplechoice >}}
+
+### Graph and interpret applications of slope-intercept
+
+Janelle is planning to rent a car while on vacation. The equation
+$C = 0.32m + 15$ models the relation between the cost per day, $C$, in dollars,
+and the number of miles, $m$, she drives in one day.
+
+{{< fillin
+  question="Find the cost if Janelle drives the car $0$ miles one day. Enter the amount in dollars."
+  answer="15"
+  answerDisplay="\$15"
+  hint="Substitute $m = 0$ into $C = 0.32m + 15$."
+>}}
+
+{{< fillin
+  question="Find the cost on a day when Janelle drives the car $400$ miles. Enter the amount in dollars."
+  answer="143"
+  answerDisplay="\$143"
+  hint="Substitute $m = 400$ and compute $0.32(400) + 15$."
+>}}
+
+Use those two values to interpret and graph the same source model.
+
+{{< multiplechoice
+  question="Interpret the slope and $C$-intercept of $C = 0.32m + 15$."
+  answer="The cost increases by \$0.32 when the miles driven increase by $1$; at $0$ miles, the cost is \$15."
+  hint="In $C = 0.32m + 15$, the coefficient of $m$ is the change in daily cost per mile, and the constant is the cost at $m = 0$."
+>}}
+The cost increases by \$0.32 when the miles driven increase by $1$; at $0$ miles, the cost is \$15.
+The cost increases by \$15 when the miles driven increase by $1$; at $0$ miles, the cost is \$0.32.
+The cost increases by \$0.32 when the miles driven increase by $15$; at $0$ miles, the cost is \$1.
+{{< /multiplechoice >}}
+
+{{< graphplot
+  question="Graph the equation $C = 0.32m + 15$ by placing two points on the line."
+  answerDisplay="$C = 0.32m + 15$"
+  ariaLabel="A blank coordinate grid with miles m from negative one to five hundred on the horizontal axis and cost C from negative one to one hundred eighty dollars on the vertical axis."
+  hint="Start with the $C$-intercept $(0, 15)$. The calculated point $(400, 143)$ gives a second point on the line."
+>}}
+{"answer":{"slope":0.32,"intercept":15},"grid":{"xMin":-1,"xMax":500,"yMin":-1,"yMax":180}}
+{{< /graphplot >}}
+
+### Use slopes to identify parallel lines
+
+{{< multiplechoice
+  question="Use slopes and $y$-intercepts to determine whether the lines $y = \tfrac{2}{3}x - 1$ and $2x - 3y = -2$ are parallel."
+  answer="parallel"
+  hint="Solve the second equation for $y$, then compare both slopes and $y$-intercepts."
+>}}
+parallel
+not parallel
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Use slopes and $y$-intercepts to determine whether the lines $6x - 3y = 9$ and $2x - y = 3$ are parallel."
+  answer="not parallel"
+  hint="Solve both equations for $y$ and check whether they have the same slope but different $y$-intercepts."
+>}}
+parallel
+not parallel
+{{< /multiplechoice >}}
+
+### Use slopes to identify perpendicular lines
+
+{{< multiplechoice
+  question="Use slopes to determine whether the lines $x - 4y = 8$ and $4x + y = 2$ are perpendicular."
+  answer="perpendicular"
+  hint="Solve each equation for $y$ and multiply the slopes; perpendicular slopes have product $-1$."
+>}}
+perpendicular
+not perpendicular
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Use slopes to determine whether the lines $3x - 4y = 8$ and $4x - 3y = 6$ are perpendicular."
+  answer="not perpendicular"
+  hint="Solve each equation for $y$ and check whether the slopes are negative reciprocals."
+>}}
+perpendicular
+not perpendicular
+{{< /multiplechoice >}}
+
+
 ## Key terms
 
 **slope-intercept form** — the form $y = mx + b$ of an equation of a line, where $m$
@@ -619,4 +977,4 @@ slopes are negative reciprocals of each other.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 4.5: Use the Slope-Intercept Form of an Equation of a Line](https://openstax.org/books/elementary-algebra-2e/pages/4-5-use-the-slope-intercept-form-of-an-equation-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the slope-intercept, parallel-lines, and perpendicular-lines graphs as accessible inline graphics; condensed the worked examples and tables; omitted the Be Prepared quiz, Media links, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 4.5: Use the Slope-Intercept Form of an Equation of a Line](https://openstax.org/books/elementary-algebra-2e/pages/4-5-use-the-slope-intercept-form-of-an-equation-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the slope-intercept, parallel-lines, and perpendicular-lines graphs as accessible inline graphics; condensed the worked examples and tables; omitted the Be Prepared quiz, Media links, Self Check checklist, and remaining end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises, including graphing exercises, into the section-final interactive Practice block.</small>

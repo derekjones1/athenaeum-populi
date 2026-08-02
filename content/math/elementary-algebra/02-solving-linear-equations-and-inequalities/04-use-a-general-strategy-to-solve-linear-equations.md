@@ -358,6 +358,54 @@ contradiction
 | Identity | True for any value of the variable | All real numbers |
 | Contradiction | False for all values of the variable | No solution |
 
+## Practice
+
+### Solve equations using a general strategy
+
+{{< fillin
+  question="Solve: $5(x - 4) - 4x = 14$."
+  answer="34"
+  hint="Distribute $5$, combine the $x$-terms, then add $20$ to isolate $x$."
+>}}
+
+{{< fillin
+  question="Solve: $4(2.5v - 0.6) = 7.6$."
+  answer="1"
+  hint="Distribute $4$, add $2.4$ to both sides, then divide by $10$."
+>}}
+
+### Classify equations
+
+{{< multiplechoice
+  question="Classify $15y + 32 = 2(10y - 7) - 5y + 46$ as a conditional equation, an identity, or a contradiction, and state the solution."
+  answer="identity; all real numbers"
+  hint="Distribute and combine like terms on the right, then compare the two simplified sides."
+>}}
+identity; all real numbers
+contradiction; no solution
+conditional equation; one solution
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Classify $24(3d - 4) + 100 = 52$ as a conditional equation, an identity, or a contradiction, and state the solution."
+  answer="conditional equation; $d = \tfrac{2}{3}$"
+  hint="Distribute $24$, combine the constants, and solve the resulting one-variable equation."
+>}}
+conditional equation; $d = \tfrac{2}{3}$
+identity; all real numbers
+contradiction; no solution
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Classify $18u - 51 = 9(4u + 5) - 6(3u - 10)$ as a conditional equation, an identity, or a contradiction, and state the solution."
+  answer="contradiction; no solution"
+  hint="Distribute and combine like terms on the right; then subtract the matching variable term from both sides."
+>}}
+contradiction; no solution
+identity; all real numbers
+conditional equation; one solution
+{{< /multiplechoice >}}
+
 ## Key terms
 
 **conditional equation** — an equation that is true for one or more values
@@ -368,4 +416,4 @@ variable; it has no solution.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 2.4: Use a General Strategy to Solve Linear Equations](https://openstax.org/books/elementary-algebra-2e/pages/2-4-use-a-general-strategy-to-solve-linear-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as markdown tables; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback — including flipping the identity/contradiction classification Try Its into requests for the specific numerical statement each equation reduces to, since a word answer like "identity" can't be graded by the math checker.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 2.4: Use a General Strategy to Solve Linear Equations](https://openstax.org/books/elementary-algebra-2e/pages/2-4-use-a-general-strategy-to-solve-linear-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as markdown tables; omitted the Be Prepared quiz, Self Check checklist, media links, and the remaining end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback — including flipping the identity/contradiction classification Try Its into requests for the specific numerical statement each equation reduces to, since a word answer like "identity" can't be graded by the math checker.</small>

@@ -620,6 +620,80 @@ feet.
   hint="Let W = width and $L = W + 30$. Substitute into $P = 2L + 2W$ with $P = 300$, then solve for W."
 >}}
 
+## Practice
+
+### Solve applications using properties of triangles
+
+{{< fillin
+  question="The measures of two angles of a triangle are 26 and 98 degrees. Find the measure of the third angle."
+  answer="56"
+  answerDisplay="$56\degree$"
+  hint="The three angle measures of a triangle add to $180\degree$. Subtract the two known measures from $180\degree$."
+>}}
+
+{{< fillin
+  question="If a triangle has sides 6 feet and 9 feet and the perimeter is 23 feet, how long is the third side?"
+  answer="8"
+  answerDisplay="$8$ feet"
+  hint="The perimeter is the sum of all three side lengths. Subtract the two known lengths from $23$ feet."
+>}}
+
+### Use the Pythagorean Theorem
+
+<div class="ap-figure" data-spec='{"type":"figure","ariaLabel":"A right triangle modeling a string of lights. The vertical leg is a 12-foot pole, the hypotenuse is a 13-foot string, and the horizontal leg from the pole to the anchor point is unknown.","unit":18,"padding":38,"segments":[{"from":[0,0],"to":[5,0]},{"from":[0,0],"to":[0,12],"label":"12 ft","labelSide":"left"},{"from":[0,12],"to":[5,0],"label":"13 ft"}],"rightAngles":[{"at":[0,0],"dirs":[[1,0],[0,1]]}],"texts":[{"at":[2.5,0],"text":"?","anchor":"middle","dy":18}]}'>
+<svg role="img" aria-label="A right triangle modeling a string of lights. The vertical leg is a 12-foot pole, the hypotenuse is a 13-foot string, and the horizontal leg from the pole to the anchor point is unknown." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166 292" width="166" height="292" font-family="Helvetica, Arial, sans-serif">
+  <line x1="38" y1="254" x2="128" y2="254" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="38" y1="254" x2="38" y2="38" stroke="currentColor" stroke-width="1.5"/>
+  <text x="26" y="150" text-anchor="end" font-size="13" fill="currentColor">12 ft</text>
+  <line x1="38" y1="38" x2="128" y2="254" stroke="currentColor" stroke-width="1.5"/>
+  <text x="94.1" y="139.4" text-anchor="start" font-size="13" fill="currentColor">13 ft</text>
+  <path d="M 48 254 L 48 244 L 38 244" fill="none" stroke="currentColor" stroke-width="1.2"/>
+  <text x="83" y="272" font-size="13" fill="currentColor" text-anchor="middle">?</text>
+</svg>
+</div>
+
+{{< fillin
+  question="A 13-foot string of lights will be attached to the top of a 12-foot pole for a holiday display, as shown. How far from the base of the pole should the end of the string of lights be anchored?"
+  answer="5"
+  answerDisplay="$5$ feet"
+  hint="Treat the string as the hypotenuse. In $a^2 + 12^2 = 13^2$, solve for the horizontal leg $a$."
+>}}
+
+<div class="ap-figure" data-spec='{"type":"figure","ariaLabel":"A square flower garden with side length 10 feet and a diagonal path from one corner to the opposite corner.","unit":22,"padding":38,"polygons":[{"points":[[0,0],[10,0],[10,10],[0,10]],"edgeLabels":["10 ft",null,null,null]}],"segments":[{"from":[0,0],"to":[10,10],"label":"path"}]}'>
+<svg role="img" aria-label="A square flower garden with side length 10 feet and a diagonal path from one corner to the opposite corner." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296 296" width="296" height="296" font-family="Helvetica, Arial, sans-serif">
+  <line x1="38" y1="258" x2="258" y2="258" stroke="currentColor" stroke-width="1.5"/>
+  <text x="148" y="280" text-anchor="middle" font-size="13" fill="currentColor">10 ft</text>
+  <line x1="258" y1="258" x2="258" y2="38" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="258" y1="38" x2="38" y2="38" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="38" y1="38" x2="38" y2="258" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="38" y1="258" x2="258" y2="38" stroke="currentColor" stroke-width="1.5"/>
+  <text x="139.5" y="137.5" text-anchor="end" font-size="13" fill="currentColor">path</text>
+</svg>
+</div>
+
+{{< fillin
+  question="Chi is planning to put a path of paving stones through her flower garden, as shown. The flower garden is a square with side 10 feet. What will the length of the path be? Round to the nearest tenth of a foot."
+  answer="14.1"
+  answerDisplay="$14.1$ feet"
+  hint="The path is the hypotenuse of a right triangle whose legs are both $10$ feet. Compute $\sqrt{10^2+10^2}$ and round to the nearest tenth."
+>}}
+
+### Solve applications using rectangle properties
+
+{{< fillin
+  question="The length of a rectangle is 85 feet and the width is 45 feet. What is the perimeter?"
+  answer="260"
+  answerDisplay="$260$ feet"
+  hint="Use $P=2L+2W$ and substitute $L=85$ and $W=45$."
+>}}
+
+{{< fillin
+  question="The area of a rectangle is 414 square meters. The length is 18 meters. What is the width?"
+  answer="23"
+  answerDisplay="$23$ meters"
+  hint="Substitute into $A=LW$ to get $414=18W$, then divide by $18$."
+>}}
+
 ## Key terms
 
 **vertex/vertices** — the corner points of a triangle, where two sides meet;
@@ -635,4 +709,4 @@ the lengths of the legs and $c$ is the length of the hypotenuse.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 3.4: Solve Geometry Applications: Triangles, Rectangles, and the Pythagorean Theorem](https://openstax.org/books/elementary-algebra-2e/pages/3-4-solve-geometry-applications-triangles-rectangles-and-the-pythagorean-theorem) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the triangle, right-triangle, and rectangle diagrams as accessible inline graphics; omitted the Be Prepared quiz, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 3.4: Solve Geometry Applications: Triangles, Rectangles, and the Pythagorean Theorem](https://openstax.org/books/elementary-algebra-2e/pages/3-4-solve-geometry-applications-triangles-rectangles-and-the-pythagorean-theorem) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the triangle, right-triangle, and rectangle diagrams as accessible inline graphics; omitted the Be Prepared quiz, Self Check checklist, and unselected end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>

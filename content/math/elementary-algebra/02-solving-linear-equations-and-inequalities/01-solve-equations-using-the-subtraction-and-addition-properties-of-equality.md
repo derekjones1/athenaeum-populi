@@ -589,6 +589,92 @@ The sticker price of the car was \$29,550.
   hint="Let n = the night price. \$7.75 is \$3.25 less than n, so 7.75 = n - 3.25."
 >}}
 
+## Practice
+
+### Verify a solution of an equation
+
+{{< multiplechoice
+  question="Is $y = \tfrac{5}{3}$ a solution of $6y + 10 = 12y$?"
+  answer="yes"
+  hint="Substitute $\tfrac{5}{3}$ for $y$ and simplify each side separately."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $u = -\tfrac{1}{2}$ a solution of $8u - 1 = 6u$?"
+  answer="no"
+  hint="Substitute $-\tfrac{1}{2}$ for every $u$, then compare the two sides."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Solve equations using the Subtraction and Addition Properties of Equality
+
+{{< fillin
+  question="Solve: $x + 24 = 35$"
+  answer="11"
+  answerDisplay="$x = 11$"
+  hint="Subtract $24$ from both sides to isolate $x$."
+>}}
+
+{{< fillin
+  question="Solve: $b + \tfrac{1}{4} = \tfrac{3}{4}$"
+  answer="\frac{1}{2}"
+  answerDisplay="$b = \tfrac{1}{2}$"
+  hint="Subtract $\tfrac{1}{4}$ from both sides, then simplify the resulting fraction."
+>}}
+
+### Solve equations that require simplification
+
+{{< fillin
+  question="Solve: $c + 31 - 10 = 46$"
+  answer="25"
+  answerDisplay="$c = 25$"
+  hint="Combine the constants on the left before isolating $c$."
+>}}
+
+{{< fillin
+  question="Solve: $5(y - 6) - 4y = -6$"
+  answer="24"
+  answerDisplay="$y = 24$"
+  hint="Distribute $5$, combine the like terms, and then use the Addition Property of Equality."
+>}}
+
+### Translate to an equation and solve
+
+{{< fillin
+  question="Translate to an equation and solve: Nine more than $x$ is equal to $52$."
+  answer="43"
+  answerDisplay="$x + 9 = 52$; $x = 43$"
+  hint="Translate 'nine more than $x$' as $x + 9$, then subtract $9$ from both sides."
+>}}
+
+{{< fillin
+  question="Translate to an equation and solve: Ten less than $m$ is $-14$."
+  answer="-4"
+  answerDisplay="$m - 10 = -14$; $m = -4$"
+  hint="Translate 'ten less than $m$' as $m - 10$, then add $10$ to both sides."
+>}}
+
+### Translate and solve applications
+
+{{< fillin
+  question="Avril rode her bike a total of $18$ miles, from home to the library and then to the beach. The distance from Avril’s house to the library is $7$ miles. What is the distance from the library to the beach, in miles?"
+  answer="11"
+  answerDisplay="$11$ miles"
+  hint="Let $d$ be the remaining distance and solve $7 + d = 18$."
+>}}
+
+{{< fillin
+  question="Connor’s temperature was $0.7$ degrees higher this morning than it had been last night. His temperature this morning was $101.2$ degrees. What was his temperature last night, in degrees?"
+  answer="100.5"
+  answerDisplay="$100.5$ degrees"
+  hint="Let $t$ be last night's temperature and solve $t + 0.7 = 101.2$."
+>}}
+
 ## Key terms
 
 **solution of an equation** — a value of a variable that makes a true
@@ -600,4 +686,4 @@ quantity to both sides of an equation preserves equality.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 2.1: Solve Equations Using the Subtraction and Addition Properties of Equality](https://openstax.org/books/elementary-algebra-2e/pages/2-1-solve-equations-using-the-subtraction-and-addition-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the envelope-and-counters figures as prose descriptions and the "Equals" word list and Step tables as prose/Callouts; omitted the Manipulative Mathematics callout, Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 2.1: Solve Equations Using the Subtraction and Addition Properties of Equality](https://openstax.org/books/elementary-algebra-2e/pages/2-1-solve-equations-using-the-subtraction-and-addition-properties-of-equality) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the envelope-and-counters figures as prose descriptions and the "Equals" word list and Step tables as prose/Callouts; omitted the Manipulative Mathematics callout, Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section "Practice Makes Perfect" exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

@@ -615,6 +615,80 @@ fruit juice and $2$ quarts of club soda.
   hint="Water is 3 times the concentrate amount you just found."
 >}}
 
+## Practice
+
+### Determine whether an ordered pair is a solution of a system of equations
+
+{{< multiplechoice
+  question="Is $(3,1)$ a solution of the system $\left\{\begin{array}{l}2x-6y=0 \\ 3x-4y=5\end{array}\right.$?"
+  answer="yes"
+  hint="Substitute $x=3$ and $y=1$ into both equations; the point is a solution only if both statements are true."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(-3,4)$ a solution of the system $\left\{\begin{array}{l}2x-6y=0 \\ 3x-4y=5\end{array}\right.$?"
+  answer="no"
+  hint="Substitute $x=-3$ and $y=4$ into each equation and check whether both are true."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Solve a system of linear equations by graphing
+
+{{< fillin
+  question="Solve by graphing: $\left\{\begin{array}{l}3x+y=-3 \\ 2x+3y=5\end{array}\right.$"
+  answer="(-2,3)"
+  hint="Graph both lines on the same coordinate plane, then read the ordered pair where they intersect."
+>}}
+
+{{< fillin
+  question="Solve by graphing: $\left\{\begin{array}{l}-3x+y=-1 \\ 2x+y=4\end{array}\right.$"
+  answer="(1,2)"
+  hint="Write each equation in slope–intercept form, graph both lines, and identify their intersection."
+>}}
+
+### Determine the number of solutions of a linear system
+
+{{< multiplechoice
+  question="Without graphing, determine the number of solutions and classify the system $\left\{\begin{array}{l}y=\tfrac{2}{3}x+1 \\ 2x-3y=7\end{array}\right.$"
+  answer="no solutions, inconsistent, independent"
+  hint="Write both equations in slope–intercept form and compare their slopes and $y$-intercepts."
+>}}
+no solutions, inconsistent, independent
+consistent, 1 solution
+infinitely many solutions, consistent, dependent
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Without graphing, determine the number of solutions and classify the system $\left\{\begin{array}{l}4x+2y=10 \\ 4x-2y=-6\end{array}\right.$"
+  answer="consistent, 1 solution"
+  hint="Rewrite both equations in slope–intercept form and compare their slopes."
+>}}
+no solutions, inconsistent, independent
+consistent, 1 solution
+infinitely many solutions, consistent, dependent
+{{< /multiplechoice >}}
+
+### Solve applications of systems of equations by graphing
+
+{{< fillin
+  question="Molly is making strawberry infused water. For each ounce of strawberry juice, she uses three times as many ounces of water. How many ounces of strawberry juice and how many ounces of water does she need to make 64 ounces of strawberry infused water? Enter the ounces of strawberry juice first and water second, separated by a comma."
+  answer="16,48"
+  answerDisplay="$16$ ounces of strawberry juice and $48$ ounces of water"
+  hint="Let $s$ be the ounces of strawberry juice and $w$ the ounces of water; graph $s+w=64$ and $w=3s$, then read their intersection."
+>}}
+
+{{< fillin
+  question="Leo is planning his spring flower garden. He wants to plant tulip and daffodil bulbs. He will plant 6 times as many daffodil bulbs as tulip bulbs. If he wants to plant 350 bulbs, how many tulip bulbs and how many daffodil bulbs should he plant? Enter the result as an ordered pair (tulips, daffodils)."
+  answer="(50,300)"
+  answerDisplay="$50$ tulips and $300$ daffodils"
+  hint="Let $t$ be the number of tulips and $d$ the number of daffodils; graph $t+d=350$ and $d=6t$, then read their intersection."
+>}}
+
 ## Key terms
 
 **system of linear equations** — two or more linear equations grouped
@@ -628,4 +702,4 @@ equations with different solutions (intersecting or parallel lines).
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 5.1: Solve Systems of Equations by Graphing](https://openstax.org/books/elementary-algebra-2e/pages/5-1-solve-systems-of-equations-by-graphing) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the two-line coordinate-plane graphs (intersecting, parallel, and coincident cases, and the punch-mixture application) as accessible inline SVGs and the slope/intercept comparisons as markdown tables; omitted the Be Prepared quiz, Media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 5.1: Solve Systems of Equations by Graphing](https://openstax.org/books/elementary-algebra-2e/pages/5-1-solve-systems-of-equations-by-graphing) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the two-line coordinate-plane graphs (intersecting, parallel, and coincident cases, and the punch-mixture application) as accessible inline SVGs and the slope/intercept comparisons as markdown tables; omitted the Be Prepared quiz, Media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

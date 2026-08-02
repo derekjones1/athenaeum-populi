@@ -557,6 +557,120 @@ The solution in interval notation is $[75, \infty)$.
   hint="'Four more than a' translates to $a + 4$. 'Is at most' means the same as ≤. Then subtract 4 from both sides."
 >}}
 
+## Practice
+
+### Graph inequalities on the number line
+
+{{< multiplechoice
+  question="Graph $x > 3$ on a number line. Which interval notation describes the resulting set?"
+  answer="$(3, \infty)$"
+  hint="Decide whether the endpoint $3$ is itself a solution, and which direction the shading extends."
+>}}
+$(3, \infty)$
+$[3, \infty)$
+$(-\infty, 3)$
+$(-\infty, 3]$
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Graph $x \le -0.5$ on a number line. Enter the resulting set in interval notation."
+  answer="(-\infty,-0.5]"
+  answerDisplay="$(-\infty, -0.5]$"
+  hint="The endpoint $-0.5$ is included, so use a bracket there and extend the interval toward smaller numbers."
+>}}
+
+{{< fillin
+  question="Graph $x \ge \tfrac{1}{3}$ on a number line. Enter the resulting set in interval notation."
+  answer="[\frac{1}{3},\infty)"
+  answerDisplay="$[\tfrac{1}{3}, \infty)$"
+  hint="The endpoint $\tfrac{1}{3}$ is included, so use a bracket there and extend the interval toward larger numbers."
+>}}
+
+{{< fillin
+  question="Graph $x \le 5$ on a number line. Enter the resulting set in interval notation."
+  answer="(-\infty,5]"
+  answerDisplay="$(-\infty, 5]$"
+  hint="The endpoint $5$ is included, so use a bracket there and extend the interval toward smaller numbers."
+>}}
+
+{{< fillin
+  question="Graph $x \ge -1.5$ on a number line. Enter the resulting set in interval notation."
+  answer="[-1.5,\infty)"
+  answerDisplay="$[-1.5, \infty)$"
+  hint="The endpoint $-1.5$ is included, so use a bracket there and extend the interval toward larger numbers."
+>}}
+
+{{< fillin
+  question="Graph $x < -\tfrac{7}{3}$ on a number line. Enter the resulting set in interval notation."
+  answer="(-\infty,-\frac{7}{3})"
+  answerDisplay="$(-\infty, -\tfrac{7}{3})$"
+  hint="The endpoint $-\tfrac{7}{3}$ is excluded, so use a parenthesis there and extend the interval toward smaller numbers."
+>}}
+
+### Solve inequalities using the Subtraction and Addition Properties of inequality
+
+{{< fillin
+  question="Solve $m - 45 \le 62$, then represent its number-line graph in interval notation."
+  answer="(-\infty,107]"
+  answerDisplay="$(-\infty, 107]$"
+  hint="Add $45$ to both sides. The endpoint is included because the inequality uses $\le$."
+>}}
+
+{{< fillin
+  question="Solve $v + 12 > 3$, then represent its number-line graph in interval notation."
+  answer="(-9,\infty)"
+  answerDisplay="$(-9, \infty)$"
+  hint="Subtract $12$ from both sides. The endpoint is excluded because the inequality uses $>$."
+>}}
+
+### Solve inequalities using the Division and Multiplication Properties of inequality
+
+{{< fillin
+  question="Solve $6y < 48$, then represent its number-line graph in interval notation."
+  answer="(-\infty,8)"
+  answerDisplay="$(-\infty, 8)$"
+  hint="Divide both sides by positive $6$, so the inequality direction stays the same."
+>}}
+
+{{< fillin
+  question="Solve $-8v \le 96$, then represent its number-line graph in interval notation."
+  answer="[-12,\infty)"
+  answerDisplay="$[-12, \infty)$"
+  hint="Divide both sides by $-8$ and reverse the inequality direction; equality includes the endpoint."
+>}}
+
+### Solve inequalities that require simplification
+
+{{< fillin
+  question="Solve $5u \le 8u - 21$, then represent its number-line graph in interval notation."
+  answer="[7,\infty)"
+  answerDisplay="$[7, \infty)$"
+  hint="Collect the variable terms to get $-3u \le -21$, then divide by $-3$ and reverse the inequality direction."
+>}}
+
+{{< fillin
+  question="Solve $9y + 5(y + 3) < 4y - 35$, then represent its number-line graph in interval notation."
+  answer="(-\infty,-5)"
+  answerDisplay="$(-\infty, -5)$"
+  hint="Distribute and combine like terms to get $10y < -50$, then divide by positive $10$."
+>}}
+
+### Translate to an inequality and solve
+
+{{< fillin
+  question="Translate and solve: Ninety times $c$ is less than 450. Enter the solution in interval notation."
+  answer="(-\infty,5)"
+  answerDisplay="$(-\infty, 5)$"
+  hint="Translate to $90c < 450$, then divide both sides by positive $90$."
+>}}
+
+{{< fillin
+  question="Translate and solve: Negative two times $s$ is lower than 56. Enter the solution in interval notation."
+  answer="(-28,\infty)"
+  answerDisplay="$(-28, \infty)$"
+  hint="Translate to $-2s < 56$, then divide by $-2$ and reverse the inequality direction."
+>}}
+
 ## Key terms
 
 **inequality** — a mathematical statement comparing two expressions using
@@ -572,4 +686,4 @@ real number makes it true.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 2.7: Solve Linear Inequalities](https://openstax.org/books/elementary-algebra-2e/pages/2-7-solve-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the number-line figures as accessible inline graphics and the phrase-to-symbol reference as a markdown table; omitted the Be Prepared quiz, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 2.7: Solve Linear Inequalities](https://openstax.org/books/elementary-algebra-2e/pages/2-7-solve-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the number-line figures as accessible inline graphics and the phrase-to-symbol reference as a markdown table; omitted the Be Prepared quiz and Self Check checklist; adapted selected end-of-section exercises into the interactive Practice block, presenting one graph-and-write-interval-notation exercise as a multiple choice among interval forms because its written answer appears in the lesson text above; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

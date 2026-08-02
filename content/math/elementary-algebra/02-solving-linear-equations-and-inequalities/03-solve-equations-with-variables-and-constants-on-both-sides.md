@@ -420,6 +420,51 @@ $-39 + 4 \overset{?}{=} -27 - 8$, and $-35 = -35$. ✓
   hint="Subtract 1.2y from both sides so the variable terms collect on the left, then move the constants and divide."
 >}}
 
+## Practice
+
+### Solve an equation with constants on both sides
+
+{{< fillin
+  question="Solve: $12x - 8 = 64$."
+  answer="6"
+  hint="Add $8$ to both sides to isolate the variable term, then divide both sides by $12$."
+>}}
+
+{{< fillin
+  question="Solve: $-77 = 9b - 5$."
+  answer="-8"
+  hint="Add $5$ to both sides to isolate $9b$, then divide both sides by $9$."
+>}}
+
+### Solve an equation with variables on both sides
+
+{{< fillin
+  question="Solve: $21k = 20k - 11$."
+  answer="-11"
+  hint="Subtract $20k$ from both sides to collect the variable terms on the left."
+>}}
+
+{{< fillin
+  question="Solve: $4x + \tfrac{3}{4} = 3x$."
+  answer="-3/4"
+  answerDisplay="$-\tfrac{3}{4}$"
+  hint="Subtract $3x$ from both sides, then subtract $\tfrac{3}{4}$ to isolate $x$."
+>}}
+
+### Solve an equation with variables and constants on both sides
+
+{{< fillin
+  question="Solve: $6x - 17 = 5x + 2$."
+  answer="19"
+  hint="Subtract $5x$ from both sides to collect the variables on the left, then add $17$."
+>}}
+
+{{< fillin
+  question="Solve: $\tfrac{7}{4}m - 7 = \tfrac{3}{4}m - 13$."
+  answer="-6"
+  hint="Subtract $\tfrac{3}{4}m$ from both sides; the remaining variable coefficient is $1$, so then isolate $m$."
+>}}
+
 ## Key terms
 
 **variable side** — the side of an equation that we choose to collect all
@@ -433,4 +478,4 @@ coefficient of the variable equal to $1$; check the solution.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 2.3: Solve Equations with Variables and Constants on Both Sides](https://openstax.org/books/elementary-algebra-2e/pages/2-3-solve-equations-with-variables-and-constants-on-both-sides) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the labeled variable/constant side worked-example tables as prose with typeset math steps; omitted the Manipulative Mathematics callouts, media links, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 2.3: Solve Equations with Variables and Constants on Both Sides](https://openstax.org/books/elementary-algebra-2e/pages/2-3-solve-equations-with-variables-and-constants-on-both-sides) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the labeled variable/constant side worked-example tables as prose with typeset math steps; omitted the Manipulative Mathematics callouts, media links, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

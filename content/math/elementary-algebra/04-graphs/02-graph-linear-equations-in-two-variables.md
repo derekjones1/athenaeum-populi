@@ -709,6 +709,86 @@ $y = 4$ gives a horizontal line.
   hint="$y = -3$ has only one variable — y never changes, no matter what x is."
 >}}
 
+## Practice
+
+### Recognize the relationship between the solutions of an equation and its graph
+
+{{< multiplechoice
+  question="For $y=x+2$, consider the ordered pair $(0,2)$. Is the ordered pair a solution to the equation, and is the point on the line?"
+  answer="Yes; it is a solution and the point is on the line."
+  hint="Substitute $x=0$ and $y=2$ into $y=x+2$ and compare the two sides."
+>}}
+Yes; it is a solution and the point is on the line.
+No; it is not a solution and the point is not on the line.
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For $y=x+2$, consider the ordered pair $(1,2)$. Is the ordered pair a solution to the equation, and is the point on the line?"
+  answer="No; it is not a solution and the point is not on the line."
+  hint="Substitute $x=1$ and $y=2$ into $y=x+2$ and compare the two sides."
+>}}
+Yes; it is a solution and the point is on the line.
+No; it is not a solution and the point is not on the line.
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For $y=x+2$, consider the ordered pair $(-1,1)$. Is the ordered pair a solution to the equation, and is the point on the line?"
+  answer="Yes; it is a solution and the point is on the line."
+  hint="Substitute $x=-1$ and $y=1$ into $y=x+2$ and compare the two sides."
+>}}
+Yes; it is a solution and the point is on the line.
+No; it is not a solution and the point is not on the line.
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For $y=x+2$, consider the ordered pair $(-3,-1)$. Is the ordered pair a solution to the equation, and is the point on the line?"
+  answer="Yes; it is a solution and the point is on the line."
+  hint="Substitute $x=-3$ and $y=-1$ into $y=x+2$ and compare the two sides."
+>}}
+Yes; it is a solution and the point is on the line.
+No; it is not a solution and the point is not on the line.
+{{< /multiplechoice >}}
+
+### Graph a linear equation by plotting points
+
+{{< graphplot
+  question="Graph $y=3x-1$ by plotting points."
+  answerDisplay="$y=3x-1$"
+  ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
+  hint="Choose several $x$-values, compute $y=3x-1$, plot the ordered pairs, and draw the line through them."
+>}}
+{"answer":{"slope":3,"intercept":-1},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph $y=-2x+2$ by plotting points."
+  answerDisplay="$y=-2x+2$"
+  ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
+  hint="Choose several $x$-values, compute $y=-2x+2$, plot the ordered pairs, and draw the line through them."
+>}}
+{"answer":{"slope":-2,"intercept":2},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
+
+### Graph vertical and horizontal lines
+
+{{< graphplot
+  question="Graph $x=4$."
+  answerDisplay="$x=4$"
+  ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
+  hint="Every point has first coordinate $4$, so draw a vertical line through $x=4$."
+>}}
+{"answer":{"x":4},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph $y=3$."
+  answerDisplay="$y=3$"
+  ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
+  hint="Every point has second coordinate $3$, so draw a horizontal line through $y=3$."
+>}}
+{"answer":{"y":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
+
 ## Key terms
 
 **graph of a linear equation** — the line consisting of all the points that
@@ -724,4 +804,4 @@ $y$-axis at $(0, b)$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 4.2: Graph Linear Equations in Two Variables](https://openstax.org/books/elementary-algebra-2e/pages/4-2-graph-linear-equations-in-two-variables) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the coordinate-plane graphs (points, lines, vertical and horizontal lines, and the paired $y = 4x$ vs. $y = 4$ comparison) as accessible inline SVGs and the solution tables as markdown tables; omitted the Be Prepared quiz, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 4.2: Graph Linear Equations in Two Variables](https://openstax.org/books/elementary-algebra-2e/pages/4-2-graph-linear-equations-in-two-variables) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the coordinate-plane graphs (points, lines, vertical and horizontal lines, and the paired $y = 4x$ vs. $y = 4$ comparison) as accessible inline SVGs and the solution tables as markdown tables; omitted the Be Prepared quiz, Self Check checklist, and unselected end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>

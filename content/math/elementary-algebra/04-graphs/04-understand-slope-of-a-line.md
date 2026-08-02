@@ -344,6 +344,270 @@ The pipe drops $1$ inch for every $48$ inches of horizontal run.
   hint="The rise is $-\tfrac{1}{3}$ inch and the run is 12 inches (1 foot); slope is rise over run."
 >}}
 
+## Practice
+
+### Use $m = \tfrac{\text{rise}}{\text{run}}$ to find the slope of a line from its graph
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A coordinate plane with x from -2 to 10 and y from -10 to 2. A line passes through (-2, -4.8), (0, -4), (5, -2), and (10, 0).","xMin":-2,"xMax":10,"yMin":-10,"yMax":2,"tickLabels":true,"tickStep":1,"lines":[{"slope":0.4,"intercept":-4}]}'>
+<svg role="img" aria-label="A coordinate plane with x from -2 to 10 and y from -10 to 2. A line passes through (-2, -4.8), (0, -4), (5, -2), and (10, 0)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 292" width="292" height="292" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="46" y1="266" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="86" y1="266" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="106" y1="266" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="126" y1="266" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="146" y1="266" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="166" y1="266" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="186" y1="266" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="206" y1="266" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="226" y1="266" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="246" y1="266" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="266" y1="266" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="266" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="246" x2="266" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="226" x2="266" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="206" x2="266" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="186" x2="266" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="166" x2="266" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="146" x2="266" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="126" x2="266" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="106" x2="266" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="86" x2="266" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="46" x2="266" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="66" x2="268" y2="66" stroke="currentColor" stroke-width="1"/>
+  <line x1="66" y1="24" x2="66" y2="268" stroke="currentColor" stroke-width="1"/>
+  <polygon points="278,66 268,71 268,61" fill="currentColor"/>
+  <polygon points="66,14 71,24 61,24" fill="currentColor"/>
+  <polygon points="14,66 24,61 24,71" fill="currentColor"/>
+  <polygon points="66,278 61,268 71,268" fill="currentColor"/>
+  <text x="276" y="58" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="74" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="63" x2="26" y2="69" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="81" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="46" y1="63" x2="46" y2="69" stroke="currentColor" stroke-width="1"/>
+  <text x="46" y="81" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <line x1="86" y1="63" x2="86" y2="69" stroke="currentColor" stroke-width="1"/>
+  <text x="86" y="81" font-size="11" fill="currentColor" text-anchor="middle">1</text>
+  <line x1="106" y1="63" x2="106" y2="69" stroke="currentColor" stroke-width="1"/>
+  <text x="106" y="81" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="126" y1="63" x2="126" y2="69" stroke="currentColor" stroke-width="1"/>
+  <text x="126" y="81" font-size="11" fill="currentColor" text-anchor="middle">3</text>
+  <line x1="146" y1="63" x2="146" y2="69" stroke="currentColor" stroke-width="1"/>
+  <text x="146" y="81" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="166" y1="63" x2="166" y2="69" stroke="currentColor" stroke-width="1"/>
+  <text x="166" y="81" font-size="11" fill="currentColor" text-anchor="middle">5</text>
+  <line x1="186" y1="63" x2="186" y2="69" stroke="currentColor" stroke-width="1"/>
+  <text x="186" y="81" font-size="11" fill="currentColor" text-anchor="middle">6</text>
+  <line x1="206" y1="63" x2="206" y2="69" stroke="currentColor" stroke-width="1"/>
+  <text x="206" y="81" font-size="11" fill="currentColor" text-anchor="middle">7</text>
+  <line x1="226" y1="63" x2="226" y2="69" stroke="currentColor" stroke-width="1"/>
+  <text x="226" y="81" font-size="11" fill="currentColor" text-anchor="middle">8</text>
+  <line x1="246" y1="63" x2="246" y2="69" stroke="currentColor" stroke-width="1"/>
+  <text x="246" y="81" font-size="11" fill="currentColor" text-anchor="middle">9</text>
+  <line x1="266" y1="63" x2="266" y2="69" stroke="currentColor" stroke-width="1"/>
+  <text x="266" y="81" font-size="11" fill="currentColor" text-anchor="middle">10</text>
+  <line x1="63" y1="266" x2="69" y2="266" stroke="currentColor" stroke-width="1"/>
+  <text x="60" y="270" font-size="11" fill="currentColor" text-anchor="end">−10</text>
+  <line x1="63" y1="246" x2="69" y2="246" stroke="currentColor" stroke-width="1"/>
+  <text x="60" y="250" font-size="11" fill="currentColor" text-anchor="end">−9</text>
+  <line x1="63" y1="226" x2="69" y2="226" stroke="currentColor" stroke-width="1"/>
+  <text x="60" y="230" font-size="11" fill="currentColor" text-anchor="end">−8</text>
+  <line x1="63" y1="206" x2="69" y2="206" stroke="currentColor" stroke-width="1"/>
+  <text x="60" y="210" font-size="11" fill="currentColor" text-anchor="end">−7</text>
+  <line x1="63" y1="186" x2="69" y2="186" stroke="currentColor" stroke-width="1"/>
+  <text x="60" y="190" font-size="11" fill="currentColor" text-anchor="end">−6</text>
+  <line x1="63" y1="166" x2="69" y2="166" stroke="currentColor" stroke-width="1"/>
+  <text x="60" y="170" font-size="11" fill="currentColor" text-anchor="end">−5</text>
+  <line x1="63" y1="146" x2="69" y2="146" stroke="currentColor" stroke-width="1"/>
+  <text x="60" y="150" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="63" y1="126" x2="69" y2="126" stroke="currentColor" stroke-width="1"/>
+  <text x="60" y="130" font-size="11" fill="currentColor" text-anchor="end">−3</text>
+  <line x1="63" y1="106" x2="69" y2="106" stroke="currentColor" stroke-width="1"/>
+  <text x="60" y="110" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="63" y1="86" x2="69" y2="86" stroke="currentColor" stroke-width="1"/>
+  <text x="60" y="90" font-size="11" fill="currentColor" text-anchor="end">−1</text>
+  <line x1="63" y1="46" x2="69" y2="46" stroke="currentColor" stroke-width="1"/>
+  <text x="60" y="50" font-size="11" fill="currentColor" text-anchor="end">1</text>
+  <line x1="63" y1="26" x2="69" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="60" y="30" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="29.3" y1="160.7" x2="262.7" y2="67.3" stroke="currentColor" stroke-width="1.8"/>
+  <polygon points="272,63.6 264.6,72 260.9,62.7" fill="currentColor"/>
+  <polygon points="20,164.4 27.4,156 31.1,165.3" fill="currentColor"/>
+</svg>
+</div>
+
+{{< fillin
+  question="Find the slope of the line shown."
+  answer="\frac{2}{5}"
+  answerDisplay="$\tfrac{2}{5}$"
+  hint="Use the points $(0, -4)$ and $(10, 0)$: count the rise and run, then simplify their ratio."
+>}}
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A coordinate plane from -6 to 6 on both axes. A line passes through (-4, -6), (0, -1), and (4, 4).","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"tickLabels":true,"tickStep":1,"lines":[{"slope":1.25,"intercept":-1}]}'>
+<svg role="img" aria-label="A coordinate plane from -6 to 6 on both axes. A line passes through (-4, -6), (0, -1), and (4, 4)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 292" width="292" height="292" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="46" y1="266" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="66" y1="266" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="86" y1="266" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="106" y1="266" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="126" y1="266" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="166" y1="266" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="186" y1="266" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="206" y1="266" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="226" y1="266" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="246" y1="266" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="266" y1="266" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="266" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="246" x2="266" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="226" x2="266" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="206" x2="266" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="186" x2="266" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="166" x2="266" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="126" x2="266" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="106" x2="266" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="86" x2="266" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="66" x2="266" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="46" x2="266" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="146" x2="268" y2="146" stroke="currentColor" stroke-width="1"/>
+  <line x1="146" y1="24" x2="146" y2="268" stroke="currentColor" stroke-width="1"/>
+  <polygon points="278,146 268,151 268,141" fill="currentColor"/>
+  <polygon points="146,14 151,24 141,24" fill="currentColor"/>
+  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
+  <polygon points="146,278 141,268 151,268" fill="currentColor"/>
+  <text x="276" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="154" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="143" x2="26" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="161" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
+  <line x1="46" y1="143" x2="46" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="46" y="161" font-size="11" fill="currentColor" text-anchor="middle">−5</text>
+  <line x1="66" y1="143" x2="66" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="66" y="161" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
+  <line x1="86" y1="143" x2="86" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="86" y="161" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
+  <line x1="106" y1="143" x2="106" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="106" y="161" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="126" y1="143" x2="126" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="126" y="161" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <line x1="166" y1="143" x2="166" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="166" y="161" font-size="11" fill="currentColor" text-anchor="middle">1</text>
+  <line x1="186" y1="143" x2="186" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="186" y="161" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="206" y1="143" x2="206" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="206" y="161" font-size="11" fill="currentColor" text-anchor="middle">3</text>
+  <line x1="226" y1="143" x2="226" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="226" y="161" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="246" y1="143" x2="246" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="246" y="161" font-size="11" fill="currentColor" text-anchor="middle">5</text>
+  <line x1="266" y1="143" x2="266" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="266" y="161" font-size="11" fill="currentColor" text-anchor="middle">6</text>
+  <line x1="143" y1="266" x2="149" y2="266" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="270" font-size="11" fill="currentColor" text-anchor="end">−6</text>
+  <line x1="143" y1="246" x2="149" y2="246" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="250" font-size="11" fill="currentColor" text-anchor="end">−5</text>
+  <line x1="143" y1="226" x2="149" y2="226" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="230" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="143" y1="206" x2="149" y2="206" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="210" font-size="11" fill="currentColor" text-anchor="end">−3</text>
+  <line x1="143" y1="186" x2="149" y2="186" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="190" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="143" y1="166" x2="149" y2="166" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="170" font-size="11" fill="currentColor" text-anchor="end">−1</text>
+  <line x1="143" y1="126" x2="149" y2="126" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="130" font-size="11" fill="currentColor" text-anchor="end">1</text>
+  <line x1="143" y1="106" x2="149" y2="106" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="110" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="143" y1="86" x2="149" y2="86" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="90" font-size="11" fill="currentColor" text-anchor="end">3</text>
+  <line x1="143" y1="66" x2="149" y2="66" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="70" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <line x1="143" y1="46" x2="149" y2="46" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="50" font-size="11" fill="currentColor" text-anchor="end">5</text>
+  <line x1="143" y1="26" x2="149" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="30" font-size="11" fill="currentColor" text-anchor="end">6</text>
+  <line x1="67.4" y1="264.2" x2="256.6" y2="27.8" stroke="currentColor" stroke-width="1.8"/>
+  <polygon points="262.8,20 260.5,30.9 252.6,24.7" fill="currentColor"/>
+  <polygon points="61.2,272 63.5,261.1 71.4,267.3" fill="currentColor"/>
+</svg>
+</div>
+
+{{< fillin
+  question="Find the slope of the line shown."
+  answer="\frac{5}{4}"
+  answerDisplay="$\tfrac{5}{4}$"
+  hint="Use the points $(-4, -6)$ and $(4, 4)$: subtract the coordinates in the same order to find rise over run."
+>}}
+
+### Find the slope of horizontal and vertical lines
+
+{{< fillin
+  question="Find the slope of the line $y = 3$."
+  answer="0"
+  hint="An equation of the form $y = b$ is a horizontal line; its rise is zero for every nonzero run."
+>}}
+
+{{< multiplechoice
+  question="Find the slope of the line $x = 4$."
+  answer="undefined"
+  hint="An equation of the form $x = a$ is vertical, so its run is zero."
+>}}
+0
+undefined
+{{< /multiplechoice >}}
+
+### Use the slope formula to find the slope of a line between two points
+
+{{< fillin
+  question="Use the slope formula to find the slope of the line between $(1, 4)$ and $(3, 9)$."
+  answer="\frac{5}{2}"
+  answerDisplay="$\tfrac{5}{2}$"
+  hint="Subtract the $y$-coordinates and the $x$-coordinates in the same order: $\tfrac{9 - 4}{3 - 1}$."
+>}}
+
+{{< fillin
+  question="Use the slope formula to find the slope of the line between $(0, 3)$ and $(4, 6)$."
+  answer="\frac{3}{4}"
+  answerDisplay="$\tfrac{3}{4}$"
+  hint="Compute $\tfrac{6 - 3}{4 - 0}$, then simplify if needed."
+>}}
+
+### Graph a line given a point and the slope
+
+{{< graphplot
+  question="Graph the line through $(1, -2)$ with slope $m = \tfrac{3}{4}$ by placing two points on it."
+  answerDisplay="A line through $(1, -2)$ with slope $\tfrac{3}{4}$"
+  ariaLabel="A blank coordinate grid from −12 to 12 on both axes."
+  hint="Plot $(1, -2)$ first, then use rise $3$ and run $4$ to locate another point."
+>}}
+{"answer":{"slope":0.75,"intercept":-2.75},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph the line through $(-3, 4)$ with slope $m = -\tfrac{3}{2}$ by placing two points on it."
+  answerDisplay="A line through $(-3, 4)$ with slope $-\tfrac{3}{2}$"
+  ariaLabel="A blank coordinate grid from −12 to 12 on both axes."
+  hint="Plot $(-3, 4)$ first, then use a drop of $3$ and a run of $2$ to locate another point."
+>}}
+{"answer":{"slope":-1.5,"intercept":-0.5},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
+
+### Solve slope applications
+
+{{< fillin
+  question="A local road has a grade of 6%. The grade is its slope expressed as a percent. Find the slope as a fraction and simplify."
+  answer="\frac{3}{50}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{3}{50}$"
+  hint="Write $6\%$ as $\tfrac{6}{100}$, then divide the numerator and denominator by their greatest common factor."
+>}}
+
+{{< fillin
+  question="A local road has a grade of 6%. Using the slope written as a fraction and simplified, what rise and run would reflect this slope? Enter the rise first and the run second, separated by a comma."
+  answer="3,50"
+  answerDisplay="rise $= 3$, run $= 50$"
+  hint="Use the numerator and denominator of the simplified fractional slope as rise and run."
+>}}
+
 ## Key terms
 
 **slope of a line** — the ratio of the rise (vertical change) to the run
@@ -355,4 +619,4 @@ a second point.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 4.4: Understand Slope of a Line](https://openstax.org/books/elementary-algebra-2e/pages/4-4-understand-slope-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the geoboard and coordinate-plane figures as accessible inline graphics and condensed the geoboard-modeling activity into a single worked introduction of rise and run; omitted the Be Prepared quiz, Media links, and Section Exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 4.4: Understand Slope of a Line](https://openstax.org/books/elementary-algebra-2e/pages/4-4-understand-slope-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the geoboard and coordinate-plane figures as accessible inline graphics and condensed the geoboard-modeling activity into a single worked introduction of rise and run; omitted the Be Prepared quiz and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, recreating two source line graphs semantically and splitting one two-result application into adjacent components.</small>

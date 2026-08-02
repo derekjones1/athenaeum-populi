@@ -357,6 +357,61 @@ substitution
 elimination
 {{< /multiplechoice >}}
 
+## Practice
+
+### Solve a system of equations by elimination
+
+{{< fillin
+  question="Solve by elimination: $-3x+y=-9$ and $x-2y=-12$. Enter $x$ first and $y$ second, separated by a comma."
+  answer="6,9"
+  answerDisplay="$(6,9)$"
+  hint="Double the first equation so the $y$-coefficients are opposites, then add the equations and solve for $x$."
+>}}
+
+{{< fillin
+  question="Solve by elimination: $2x-5y=7$ and $3x-y=17$. Enter $x$ first and $y$ second, separated by a comma."
+  answer="6,1"
+  answerDisplay="$(6,1)$"
+  hint="Multiply the second equation by $-5$, then add it to the first equation to eliminate $y$."
+>}}
+
+### Solve applications of systems of equations by elimination
+
+{{< fillin
+  question="Translate to a system of equations and solve: The sum of two numbers is $65$. Their difference is $25$. Find the numbers. Enter both numbers, separated by a comma."
+  answer="20,45"
+  answerMode="unordered"
+  answerDisplay="$20$ and $45$"
+  hint="Let the larger number be $L$ and the smaller be $S$. Write $L+S=65$ and $L-S=25$, then add the equations."
+>}}
+
+{{< fillin
+  question="Translate to a system of equations and solve: Andrea is buying some new shirts and sweaters. She is able to buy $3$ shirts and $2$ sweaters for \$114, or she is able to buy $2$ shirts and $4$ sweaters for \$164. How much does a shirt cost? How much does a sweater cost? Enter the shirt cost first and the sweater cost second, separated by a comma."
+  answer="16,33"
+  answerDisplay="\$16 for a shirt; \$33 for a sweater"
+  hint="Let $s$ be the shirt cost and $w$ the sweater cost. Double $3s+2w=114$, then subtract $2s+4w=164$ to eliminate $w$."
+>}}
+
+### Choose the most convenient method to solve a system of linear equations
+
+{{< multiplechoice
+  question="For the system $8x-15y=-32$ and $6x+3y=-5$, which method would be more convenient: substitution or elimination?"
+  answer="elimination"
+  hint="Both equations are already in standard form, and integer multiples can make one pair of coefficients opposites."
+>}}
+substitution
+elimination
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For the system $x=4y-3$ and $4x-2y=-6$, which method would be more convenient: substitution or elimination?"
+  answer="substitution"
+  hint="One equation already has $x$ isolated, so its expression can replace $x$ directly in the other equation."
+>}}
+substitution
+elimination
+{{< /multiplechoice >}}
+
 ## Key terms
 
 **elimination** — a method for solving a system of linear equations in
@@ -370,4 +425,4 @@ leaves a false statement like $0=-5$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 5.3: Solve Systems of Equations by Elimination](https://openstax.org/books/elementary-algebra-2e/pages/5-3-solve-systems-of-equations-by-elimination) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the seven-step worked example and the Choose-the-Method comparison as markdown tables; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback — including turning the consistent/inconsistent Try Its into multiple-choice questions about the number of solutions, since a word answer like "no solution" can't be graded by the math checker.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 5.3: Solve Systems of Equations by Elimination](https://openstax.org/books/elementary-algebra-2e/pages/5-3-solve-systems-of-equations-by-elimination) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the seven-step worked example and the Choose-the-Method comparison as markdown tables; omitted the Be Prepared quiz, Self Check checklist, media links, and remaining end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback — including turning the consistent/inconsistent Try Its into multiple-choice questions about the number of solutions, since a word answer like "no solution" can't be graded by the math checker; and adapted selected end-of-section exercises into the interactive Practice block.</small>

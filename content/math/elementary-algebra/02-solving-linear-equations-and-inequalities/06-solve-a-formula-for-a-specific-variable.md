@@ -289,6 +289,47 @@ solid, $V = LWH$.
   hint="Divide both sides by pi to isolate d."
 >}}
 
+## Practice
+
+### Use the Distance, Rate, Time formula
+
+{{< fillin
+  question="Socorro drove for $4\tfrac{5}{6}$ hours at $60$ miles per hour. How much distance did she travel, in miles?"
+  answer="290"
+  answerDisplay="$290$ miles"
+  hint="Use $d = rt$ with $r = 60$ and $t = 4\tfrac{5}{6}$."
+>}}
+
+{{< fillin
+  question="Megan is taking the bus from New York City to Montreal. The distance is $380$ miles and the bus travels at a steady rate of $76$ miles per hour. How long will the bus ride be, in hours?"
+  answer="5"
+  answerDisplay="$5$ hours"
+  hint="Substitute $d = 380$ and $r = 76$ into $d = rt$, then divide by $76$."
+>}}
+
+{{< fillin
+  question="Alejandra is driving to Cincinnati, $450$ miles away. If she wants to be there in $6$ hours, at what rate does she need to drive, in miles per hour?"
+  answer="75"
+  answerDisplay="$75$ miles per hour"
+  hint="Substitute $d = 450$ and $t = 6$ into $d = rt$, then solve for $r$."
+>}}
+
+### Solve a formula for a specific variable
+
+{{< fillin
+  question="Solve $a + b = 90$ for $a$."
+  answer="90-b"
+  answerDisplay="$a = 90 - b$"
+  hint="Subtract $b$ from both sides to isolate $a$."
+>}}
+
+{{< fillin
+  question="Solve the formula $V = LWH$ for $H$."
+  answer="\frac{V}{LW}"
+  answerDisplay="$H = \tfrac{V}{LW}$"
+  hint="$H$ is multiplied by $LW$, so divide both sides by $LW$."
+>}}
+
 ## Key terms
 
 **rate** — an equivalent word for speed; how fast an object moves per unit
@@ -298,4 +339,4 @@ all other variables and constants are on the other side.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 2.6: Solve a Formula for a Specific Variable](https://openstax.org/books/elementary-algebra-2e/pages/2-6-solve-a-formula-for-a-specific-variable) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the worked-example step tables as markdown tables; omitted the Be Prepared quiz, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 2.6: Solve a Formula for a Specific Variable](https://openstax.org/books/elementary-algebra-2e/pages/2-6-solve-a-formula-for-a-specific-variable) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the worked-example step tables as markdown tables; omitted the Be Prepared quiz, Self Check checklist, and unselected end-of-section exercises; adapted selected end-of-section "Practice Makes Perfect" exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

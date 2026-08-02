@@ -324,6 +324,123 @@ solid
 dashed
 {{< /multiplechoice >}}
 
+## Practice
+
+### Verify solutions to an inequality in two variables
+
+{{< multiplechoice
+  question="Determine whether $(0,0)$ is a solution to the inequality $y>x-3$."
+  answer="yes"
+  hint="Substitute $x=0$ and $y=0$, then decide whether the resulting inequality is true."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether $(2,1)$ is a solution to the inequality $y>x-3$."
+  answer="yes"
+  hint="Substitute $x=2$ and $y=1$, then decide whether the resulting inequality is true."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether $(-1,-5)$ is a solution to the inequality $y>x-3$."
+  answer="no"
+  hint="Substitute $x=-1$ and $y=-5$, then compare $-5$ with $-1-3$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether $(-6,-3)$ is a solution to the inequality $y>x-3$."
+  answer="yes"
+  hint="Substitute $x=-6$ and $y=-3$, then decide whether the resulting inequality is true."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether $(1,0)$ is a solution to the inequality $y>x-3$."
+  answer="yes"
+  hint="Substitute $x=1$ and $y=0$, then decide whether the resulting inequality is true."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Recognize the relation between the solutions of an inequality and its graph
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A coordinate grid from negative 10 to 10 on both axes. A solid boundary line y equals negative one-third x minus 2 is drawn, and the region below the line is shaded.","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":14,"gridStep":2,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":-0.3333333333333333,"intercept":-2},"side":[0,-5],"dashed":false,"label":"y = -x/3 - 2"}]}'>
+<svg role="img" aria-label="A coordinate grid from negative 10 to 10 on both axes. A solid boundary line y equals negative one-third x minus 2 is drawn, and the region below the line is shaded." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332" width="332" height="332" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="306" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="54" y1="306" x2="54" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="82" y1="306" x2="82" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="110" y1="306" x2="110" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="138" y1="306" x2="138" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="194" y1="306" x2="194" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="222" y1="306" x2="222" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="250" y1="306" x2="250" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="278" y1="306" x2="278" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="306" y1="306" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="306" x2="306" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="278" x2="306" y2="278" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="250" x2="306" y2="250" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="222" x2="306" y2="222" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="194" x2="306" y2="194" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="138" x2="306" y2="138" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="110" x2="306" y2="110" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="82" x2="306" y2="82" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="54" x2="306" y2="54" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <polygon points="26,147.3 306,240.7 306,306 26,306" fill="currentColor" opacity="0.12" stroke="none"/>
+  <line x1="24" y1="166" x2="308" y2="166" stroke="currentColor" stroke-width="1"/><line x1="166" y1="24" x2="166" y2="308" stroke="currentColor" stroke-width="1"/>
+  <polygon points="318,166 308,171 308,161" fill="currentColor"/><polygon points="166,14 171,24 161,24" fill="currentColor"/><polygon points="14,166 24,161 24,171" fill="currentColor"/><polygon points="166,318 161,308 171,308" fill="currentColor"/>
+  <text x="316" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text><text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="163" x2="26" y2="169" stroke="currentColor" stroke-width="1"/><text x="26" y="181" font-size="11" fill="currentColor" text-anchor="middle">−10</text><line x1="54" y1="163" x2="54" y2="169" stroke="currentColor" stroke-width="1"/><text x="54" y="181" font-size="11" fill="currentColor" text-anchor="middle">−8</text><line x1="82" y1="163" x2="82" y2="169" stroke="currentColor" stroke-width="1"/><text x="82" y="181" font-size="11" fill="currentColor" text-anchor="middle">−6</text><line x1="110" y1="163" x2="110" y2="169" stroke="currentColor" stroke-width="1"/><text x="110" y="181" font-size="11" fill="currentColor" text-anchor="middle">−4</text><line x1="138" y1="163" x2="138" y2="169" stroke="currentColor" stroke-width="1"/><text x="138" y="181" font-size="11" fill="currentColor" text-anchor="middle">−2</text><line x1="194" y1="163" x2="194" y2="169" stroke="currentColor" stroke-width="1"/><text x="194" y="181" font-size="11" fill="currentColor" text-anchor="middle">2</text><line x1="222" y1="163" x2="222" y2="169" stroke="currentColor" stroke-width="1"/><text x="222" y="181" font-size="11" fill="currentColor" text-anchor="middle">4</text><line x1="250" y1="163" x2="250" y2="169" stroke="currentColor" stroke-width="1"/><text x="250" y="181" font-size="11" fill="currentColor" text-anchor="middle">6</text><line x1="278" y1="163" x2="278" y2="169" stroke="currentColor" stroke-width="1"/><text x="278" y="181" font-size="11" fill="currentColor" text-anchor="middle">8</text><line x1="306" y1="163" x2="306" y2="169" stroke="currentColor" stroke-width="1"/><text x="306" y="181" font-size="11" fill="currentColor" text-anchor="middle">10</text>
+  <line x1="163" y1="306" x2="169" y2="306" stroke="currentColor" stroke-width="1"/><text x="160" y="310" font-size="11" fill="currentColor" text-anchor="end">−10</text><line x1="163" y1="278" x2="169" y2="278" stroke="currentColor" stroke-width="1"/><text x="160" y="282" font-size="11" fill="currentColor" text-anchor="end">−8</text><line x1="163" y1="250" x2="169" y2="250" stroke="currentColor" stroke-width="1"/><text x="160" y="254" font-size="11" fill="currentColor" text-anchor="end">−6</text><line x1="163" y1="222" x2="169" y2="222" stroke="currentColor" stroke-width="1"/><text x="160" y="226" font-size="11" fill="currentColor" text-anchor="end">−4</text><line x1="163" y1="194" x2="169" y2="194" stroke="currentColor" stroke-width="1"/><text x="160" y="198" font-size="11" fill="currentColor" text-anchor="end">−2</text><line x1="163" y1="138" x2="169" y2="138" stroke="currentColor" stroke-width="1"/><text x="160" y="142" font-size="11" fill="currentColor" text-anchor="end">2</text><line x1="163" y1="110" x2="169" y2="110" stroke="currentColor" stroke-width="1"/><text x="160" y="114" font-size="11" fill="currentColor" text-anchor="end">4</text><line x1="163" y1="82" x2="169" y2="82" stroke="currentColor" stroke-width="1"/><text x="160" y="86" font-size="11" fill="currentColor" text-anchor="end">6</text><line x1="163" y1="54" x2="169" y2="54" stroke="currentColor" stroke-width="1"/><text x="160" y="58" font-size="11" fill="currentColor" text-anchor="end">8</text><line x1="163" y1="26" x2="169" y2="26" stroke="currentColor" stroke-width="1"/><text x="160" y="30" font-size="11" fill="currentColor" text-anchor="end">10</text>
+  <line x1="29.5" y1="148.5" x2="302.5" y2="239.5" stroke="currentColor" stroke-width="1.8"/><polygon points="312,242.7 300.9,244.2 304.1,234.8" fill="currentColor"/><polygon points="20,145.3 31.1,143.8 27.9,153.2" fill="currentColor"/><text x="196" y="224.9" font-size="13" fill="currentColor" text-anchor="end">y = −x/3 − 2</text>
+</svg>
+</div>
+
+{{< fillin
+  question="Write the inequality shown by the graph with the boundary line $y=-\tfrac{1}{3}x-2$."
+  answer="y\leq-\frac{1}{3}x-2"
+  answerDisplay="$y\leq-\tfrac{1}{3}x-2$"
+  hint="The solid boundary includes equality, and the shaded region is below the line."
+>}}
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A coordinate grid from negative 10 to 10 on both axes. A solid boundary line x plus y equals 3 is drawn, and the region above the line is shaded.","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":14,"gridStep":2,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":-1,"intercept":3},"side":[0,5],"dashed":false,"label":"x + y = 3"}]}'>
+<svg role="img" aria-label="A coordinate grid from negative 10 to 10 on both axes. A solid boundary line x plus y equals 3 is drawn, and the region above the line is shaded." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332" width="332" height="332" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="306" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="54" y1="306" x2="54" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="82" y1="306" x2="82" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="110" y1="306" x2="110" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="138" y1="306" x2="138" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="194" y1="306" x2="194" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="222" y1="306" x2="222" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="250" y1="306" x2="250" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="278" y1="306" x2="278" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="306" y1="306" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="306" x2="306" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="278" x2="306" y2="278" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="250" x2="306" y2="250" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="222" x2="306" y2="222" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="194" x2="306" y2="194" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="138" x2="306" y2="138" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="110" x2="306" y2="110" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="82" x2="306" y2="82" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="54" x2="306" y2="54" stroke="currentColor" stroke-width="0.4" opacity="0.2"/><line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <polygon points="68,26 306,26 306,264" fill="currentColor" opacity="0.12" stroke="none"/>
+  <line x1="24" y1="166" x2="308" y2="166" stroke="currentColor" stroke-width="1"/><line x1="166" y1="24" x2="166" y2="308" stroke="currentColor" stroke-width="1"/>
+  <polygon points="318,166 308,171 308,161" fill="currentColor"/><polygon points="166,14 171,24 161,24" fill="currentColor"/><polygon points="14,166 24,161 24,171" fill="currentColor"/><polygon points="166,318 161,308 171,308" fill="currentColor"/>
+  <text x="316" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text><text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="163" x2="26" y2="169" stroke="currentColor" stroke-width="1"/><text x="26" y="181" font-size="11" fill="currentColor" text-anchor="middle">−10</text><line x1="54" y1="163" x2="54" y2="169" stroke="currentColor" stroke-width="1"/><text x="54" y="181" font-size="11" fill="currentColor" text-anchor="middle">−8</text><line x1="82" y1="163" x2="82" y2="169" stroke="currentColor" stroke-width="1"/><text x="82" y="181" font-size="11" fill="currentColor" text-anchor="middle">−6</text><line x1="110" y1="163" x2="110" y2="169" stroke="currentColor" stroke-width="1"/><text x="110" y="181" font-size="11" fill="currentColor" text-anchor="middle">−4</text><line x1="138" y1="163" x2="138" y2="169" stroke="currentColor" stroke-width="1"/><text x="138" y="181" font-size="11" fill="currentColor" text-anchor="middle">−2</text><line x1="194" y1="163" x2="194" y2="169" stroke="currentColor" stroke-width="1"/><text x="194" y="181" font-size="11" fill="currentColor" text-anchor="middle">2</text><line x1="222" y1="163" x2="222" y2="169" stroke="currentColor" stroke-width="1"/><text x="222" y="181" font-size="11" fill="currentColor" text-anchor="middle">4</text><line x1="250" y1="163" x2="250" y2="169" stroke="currentColor" stroke-width="1"/><text x="250" y="181" font-size="11" fill="currentColor" text-anchor="middle">6</text><line x1="278" y1="163" x2="278" y2="169" stroke="currentColor" stroke-width="1"/><text x="278" y="181" font-size="11" fill="currentColor" text-anchor="middle">8</text><line x1="306" y1="163" x2="306" y2="169" stroke="currentColor" stroke-width="1"/><text x="306" y="181" font-size="11" fill="currentColor" text-anchor="middle">10</text>
+  <line x1="163" y1="306" x2="169" y2="306" stroke="currentColor" stroke-width="1"/><text x="160" y="310" font-size="11" fill="currentColor" text-anchor="end">−10</text><line x1="163" y1="278" x2="169" y2="278" stroke="currentColor" stroke-width="1"/><text x="160" y="282" font-size="11" fill="currentColor" text-anchor="end">−8</text><line x1="163" y1="250" x2="169" y2="250" stroke="currentColor" stroke-width="1"/><text x="160" y="254" font-size="11" fill="currentColor" text-anchor="end">−6</text><line x1="163" y1="222" x2="169" y2="222" stroke="currentColor" stroke-width="1"/><text x="160" y="226" font-size="11" fill="currentColor" text-anchor="end">−4</text><line x1="163" y1="194" x2="169" y2="194" stroke="currentColor" stroke-width="1"/><text x="160" y="198" font-size="11" fill="currentColor" text-anchor="end">−2</text><line x1="163" y1="138" x2="169" y2="138" stroke="currentColor" stroke-width="1"/><text x="160" y="142" font-size="11" fill="currentColor" text-anchor="end">2</text><line x1="163" y1="110" x2="169" y2="110" stroke="currentColor" stroke-width="1"/><text x="160" y="114" font-size="11" fill="currentColor" text-anchor="end">4</text><line x1="163" y1="82" x2="169" y2="82" stroke="currentColor" stroke-width="1"/><text x="160" y="86" font-size="11" fill="currentColor" text-anchor="end">6</text><line x1="163" y1="54" x2="169" y2="54" stroke="currentColor" stroke-width="1"/><text x="160" y="58" font-size="11" fill="currentColor" text-anchor="end">8</text><line x1="163" y1="26" x2="169" y2="26" stroke="currentColor" stroke-width="1"/><text x="160" y="30" font-size="11" fill="currentColor" text-anchor="end">10</text>
+  <line x1="69.1" y1="27.1" x2="304.9" y2="262.9" stroke="currentColor" stroke-width="1.8"/><polygon points="312,270 301.4,266.5 308.5,259.4" fill="currentColor"/><polygon points="62,20 72.6,23.5 65.5,30.6" fill="currentColor"/><text x="245.7" y="230.3" font-size="13" fill="currentColor" text-anchor="end">x + y = 3</text>
+</svg>
+</div>
+
+{{< fillin
+  question="Write the inequality shown by the shaded region in the graph with the boundary line $x+y=3$."
+  answer="x+y\geq3"
+  answerDisplay="$x+y\geq3$"
+  hint="The solid boundary includes equality. Test a point in the shaded region, such as $(0,5)$, to choose the inequality direction."
+>}}
+
+### Graph linear inequalities
+
+{{< multiplechoice
+  question="Graph the linear inequality $y<\tfrac{3}{5}x+2$. Which description matches the graph?"
+  answer="a dashed boundary line with the region below the line shaded"
+  hint="A strict inequality uses a dashed boundary; a test point below the boundary satisfies $y<\tfrac{3}{5}x+2$."
+>}}
+a dashed boundary line with the region below the line shaded
+a solid boundary line with the region below the line shaded
+a dashed boundary line with the region above the line shaded
+a solid boundary line with the region above the line shaded
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Graph the linear inequality $4x+2y\geq-8$. Which description matches the graph?"
+  answer="a solid boundary line with the side containing the origin shaded"
+  hint="Equality is included, so the boundary is solid. Test $(0,0)$ in $4x+2y\geq-8$ to choose the shaded side."
+>}}
+a solid boundary line with the side containing the origin shaded
+a dashed boundary line with the side containing the origin shaded
+a solid boundary line with the side not containing the origin shaded
+a dashed boundary line with the side not containing the origin shaded
+{{< /multiplechoice >}}
+
 ## Key terms
 
 **linear inequality** — an inequality that can be written as $Ax + By > C$,
@@ -337,4 +454,4 @@ strict ($<$ or $>$) and solid when the inequality includes equality
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 4.7: Graphs of Linear Inequalities](https://openstax.org/books/elementary-algebra-2e/pages/4-7-graphs-of-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the boundary-line and shaded-region figures as accessible inline SVGs; condensed the worked examples; omitted the Be Prepared quiz, Media links, Self Check checklist, and Section Exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 4.7: Graphs of Linear Inequalities](https://openstax.org/books/elementary-algebra-2e/pages/4-7-graphs-of-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the boundary-line and shaded-region figures as accessible inline SVGs; condensed the worked examples; omitted the Be Prepared quiz, Media links, Self Check checklist, and unselected Section Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section-final interactive Practice block, using categorical graph descriptions where the interactive graph component cannot represent shaded half-planes.</small>

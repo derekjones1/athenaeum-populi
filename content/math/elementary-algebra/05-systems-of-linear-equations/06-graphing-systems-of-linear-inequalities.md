@@ -385,6 +385,88 @@ yes
 no
 {{< /multiplechoice >}}
 
+## Practice
+
+### Determine whether an ordered pair is a solution of a system of linear inequalities
+
+{{< multiplechoice
+  question="Is $(3,-3)$ a solution of the system $3x+y>5$ and $2x-y\leq 10$?"
+  answer="yes"
+  hint="Substitute $x=3$ and $y=-3$ into both inequalities. The pair is a solution only if both statements are true."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(7,1)$ a solution of the system $3x+y>5$ and $2x-y\leq 10$?"
+  answer="no"
+  hint="Substitute $x=7$ and $y=1$ into both inequalities. One false statement is enough to rule out the pair."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Solve a system of linear inequalities by graphing
+
+{{< multiplechoice
+  question="Solve the system $2x+4y>4$ and $y\leq-\tfrac{1}{2}x-2$ by graphing. Which solution classification does the graph show?"
+  answer="no solution"
+  hint="Graph the parallel boundary lines, using a dashed line for the strict inequality and a solid line for the inclusive inequality, then check whether the shaded half-planes overlap."
+>}}
+no solution
+a nonempty overlapping region
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Solve the system $-2x+6y<0$ and $6y>2x+4$ by graphing. Which solution classification does the graph show?"
+  answer="no solution"
+  hint="Graph both dashed boundary lines. They are parallel, so compare the directions of the two shaded half-planes."
+>}}
+no solution
+a nonempty overlapping region
+{{< /multiplechoice >}}
+
+### Solve applications of systems of inequalities
+
+{{< multiplechoice
+  question="Caitlyn sells portraits for \$15 and landscapes for \$10 at the county fair. She wants to sell at least 60 drawings and needs to sell at least \$800 worth to earn a profit. If $p$ is the number of portraits and $l$ is the number of landscapes, which system models this situation?"
+  answer="$p+l\geq 60$ and $15p+10l\geq 800$"
+  hint="Translate each 'at least' statement with $\geq$: one inequality counts drawings and the other totals their dollar value."
+>}}
+$p+l\geq 60$ and $15p+10l\geq 800$
+$p+l\leq 60$ and $15p+10l\leq 800$
+$p+l\geq 60$ and $15p+10l\leq 800$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For Caitlyn's system $p+l\geq 60$ and $15p+10l\geq 800$, which description gives the graph of the solution?"
+  answer="Both boundary lines are solid, and the region above both lines is shaded."
+  hint="Equality is included in both inequalities. Solve each inequality for $l$ to determine which side of each boundary to shade."
+>}}
+Both boundary lines are solid, and the region above both lines is shaded.
+Both boundary lines are solid, and the region below both lines is shaded.
+Both boundary lines are dashed, and the region above both lines is shaded.
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Caitlyn wants to sell at least 60 drawings and at least \$800 worth of portraits and landscapes. Portraits sell for \$15 and landscapes for \$10. Will she make a profit if she sells 20 portraits and 35 landscapes?"
+  answer="no"
+  hint="Substitute $p=20$ and $l=35$ into both $p+l\geq 60$ and $15p+10l\geq 800$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Caitlyn wants to sell at least 60 drawings and at least \$800 worth of portraits and landscapes. Portraits sell for \$15 and landscapes for \$10. Will she make a profit if she sells 50 portraits and 20 landscapes?"
+  answer="yes"
+  hint="Substitute $p=50$ and $l=20$ into both $p+l\geq 60$ and $15p+10l\geq 800$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
 ## Key terms
 
 **system of linear inequalities** — two or more linear inequalities grouped
@@ -395,4 +477,4 @@ individual inequalities overlap.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 5.6: Graphing Systems of Linear Inequalities](https://openstax.org/books/elementary-algebra-2e/pages/5-6-graphing-systems-of-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the overlapping shaded-region figures as accessible inline SVGs; condensed the worked examples; omitted the Be Prepared quiz, Media links, Self Check checklist, and Section Exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 5.6: Graphing Systems of Linear Inequalities](https://openstax.org/books/elementary-algebra-2e/pages/5-6-graphing-systems-of-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the overlapping shaded-region figures as accessible inline SVGs; condensed the worked examples; omitted the Be Prepared quiz, Media links, Self Check checklist, and unselected Section Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

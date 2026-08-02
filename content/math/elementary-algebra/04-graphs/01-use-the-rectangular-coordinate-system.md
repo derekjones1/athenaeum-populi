@@ -665,6 +665,140 @@ $\left(1, \tfrac{3}{2}\right)$: $\ 3(1) + 2 \cdot \tfrac{3}{2}
   hint="Substitute $y = 0$ into the equation and solve for x."
 >}}
 
+## Practice
+
+### Plot points in a rectangular coordinate system
+
+{{< multiplechoice
+  question="Plot $(-4, 2)$ in a rectangular coordinate system. In which quadrant is the point located?"
+  answer="Quadrant II"
+  hint="Move left because the $x$-coordinate is negative, then up because the $y$-coordinate is positive."
+>}}
+Quadrant I
+Quadrant II
+Quadrant III
+Quadrant IV
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Plot $(-1, -2)$ in a rectangular coordinate system. In which quadrant is the point located?"
+  answer="Quadrant III"
+  hint="Both coordinates are negative, so move left from the origin and then down."
+>}}
+Quadrant I
+Quadrant II
+Quadrant III
+Quadrant IV
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Plot $(3, -5)$ in a rectangular coordinate system. In which quadrant is the point located?"
+  answer="Quadrant IV"
+  hint="A positive $x$-coordinate moves right of the $y$-axis, and a negative $y$-coordinate moves below the $x$-axis."
+>}}
+Quadrant I
+Quadrant II
+Quadrant III
+Quadrant IV
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Plot $(-3, 5)$ in a rectangular coordinate system. In which quadrant is the point located?"
+  answer="Quadrant II"
+  hint="The point is left of the $y$-axis because $x$ is negative and above the $x$-axis because $y$ is positive."
+>}}
+Quadrant I
+Quadrant II
+Quadrant III
+Quadrant IV
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Plot $\left(\tfrac{5}{3}, 2\right)$ in a rectangular coordinate system. In which quadrant is the point located?"
+  answer="Quadrant I"
+  hint="Both coordinates are positive; $\tfrac{5}{3}$ lies to the right of the origin and $2$ lies above it."
+>}}
+Quadrant I
+Quadrant II
+Quadrant III
+Quadrant IV
+{{< /multiplechoice >}}
+
+### Verify solutions to an equation in two variables
+
+{{< multiplechoice
+  question="Is $(1, 4)$ a solution to $2x + y = 6$?"
+  answer="yes"
+  hint="Substitute $x = 1$ and $y = 4$ into the left side and compare the result with $6$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(3, 0)$ a solution to $2x + y = 6$?"
+  answer="yes"
+  hint="Substitute both coordinates, including the zero, and check whether the equation is true."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(2, 3)$ a solution to $2x + y = 6$?"
+  answer="no"
+  hint="Evaluate $2(2) + 3$ and compare it with the right side of the equation."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Complete a table of solutions to a linear equation in two variables
+
+{{< fillin
+  question="Complete the table for $y = 2x - 4$ when $x = 0$. Enter the solution as an ordered pair $(x, y)$."
+  answer="(0,-4)"
+  answerDisplay="$(0, -4)$"
+  hint="Substitute $0$ for $x$; the variable term becomes zero, leaving the constant."
+>}}
+
+{{< fillin
+  question="Complete the table for $y = 2x - 4$ when $x = 2$. Enter the solution as an ordered pair $(x, y)$."
+  answer="(2,0)"
+  answerDisplay="$(2, 0)$"
+  hint="Substitute $2$ for $x$, multiply, and then subtract $4$."
+>}}
+
+{{< fillin
+  question="Complete the table for $y = 2x - 4$ when $x = -1$. Enter the solution as an ordered pair $(x, y)$."
+  answer="(-1,-6)"
+  answerDisplay="$(-1, -6)$"
+  hint="Substitute $-1$ for $x$ and keep the negative sign when multiplying by $2$."
+>}}
+
+### Find solutions to a linear equation in two variables
+
+{{< fillin
+  question="Find the solution to $2x - 5y = 10$ when $x = 0$. Enter the solution as an ordered pair $(x, y)$."
+  answer="(0,-2)"
+  answerDisplay="$(0, -2)$"
+  hint="Substitute $0$ for $x$, then divide both sides of $-5y = 10$ by $-5$."
+>}}
+
+{{< fillin
+  question="Find the solution to $2x - 5y = 10$ when $x = 10$. Enter the solution as an ordered pair $(x, y)$."
+  answer="(10,2)"
+  answerDisplay="$(10, 2)$"
+  hint="Substitute $10$ for $x$, subtract $20$ from both sides, and solve the resulting equation for $y$."
+>}}
+
+{{< fillin
+  question="Find the solution to $2x - 5y = 10$ when $y = 0$. Enter the solution as an ordered pair $(x, y)$."
+  answer="(5,0)"
+  answerDisplay="$(5, 0)$"
+  hint="Substitute $0$ for $y$, then solve $2x = 10$."
+>}}
+
 ## Key terms
 
 **rectangular coordinate system** — a grid formed by a horizontal $x$-axis
@@ -684,4 +818,4 @@ $x$- and $y$-values are substituted in for $x$ and $y$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 4.1: Use the Rectangular Coordinate System](https://openstax.org/books/elementary-algebra-2e/pages/4-1-use-the-rectangular-coordinate-system) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the quadrant and plotted-point figures as accessible inline graphics and the rewriting/solution steps as tables; omitted the Be Prepared quiz, Media links, and Section Exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 4.1: Use the Rectangular Coordinate System](https://openstax.org/books/elementary-algebra-2e/pages/4-1-use-the-rectangular-coordinate-system) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the quadrant and plotted-point figures as accessible inline graphics and the rewriting/solution steps as tables; omitted the Be Prepared quiz and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, splitting multipart items into adjacent components and using categorical choices for quadrant and solution checks.</small>

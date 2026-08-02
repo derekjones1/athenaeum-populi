@@ -343,6 +343,47 @@ sessions.
   hint="Let s = Geraldine's salary and n = the number of policies sold: $s = 12{,}000 + 100n$ and $s = 20{,}000 + 50n$."
 >}}
 
+## Practice
+
+### Solve a system of equations by substitution
+
+{{< fillin
+  question="Solve by substitution: $\begin{cases}2x+y=-4 \\ 3x-2y=-6\end{cases}$"
+  answer="(-2,0)"
+  hint="Solve the first equation for $y$, substitute that expression into the second equation, and then find the other coordinate."
+>}}
+
+{{< fillin
+  question="Solve by substitution: $\begin{cases}x-2y=-5 \\ 2x-3y=-4\end{cases}$"
+  answer="(7,6)"
+  hint="Solve the first equation for $x$, then substitute the resulting expression into the second equation."
+>}}
+
+{{< multiplechoice
+  question="Solve by substitution: $\begin{cases}y=-4x \\ 4x+y=1\end{cases}$"
+  answer="no solution"
+  hint="Substitute $-4x$ for $y$ in the second equation and interpret the resulting statement."
+>}}
+one solution
+no solution
+infinitely many solutions
+{{< /multiplechoice >}}
+
+### Solve applications of systems of equations by substitution
+
+{{< fillin
+  question="The sum of two numbers is 15. One number is 3 less than the other. Find the numbers, entering the smaller number first and the larger number second, separated by a comma."
+  answer="6,9"
+  hint="Let $n$ be the smaller number and $m$ the larger number; substitute $n=m-3$ into $n+m=15$."
+>}}
+
+{{< fillin
+  question="The perimeter of a rectangle is 60. The length is 10 more than the width. Find the length and width, entering the length first and the width second, separated by a comma."
+  answer="20,10"
+  answerDisplay="length $20$, width $10$"
+  hint="Substitute $L=W+10$ into the perimeter equation $2L+2W=60$."
+>}}
+
 ## Key terms
 
 **substitution method** — solving one equation of a system for a variable,
@@ -357,4 +398,4 @@ system has no solution.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 5.2: Solving Systems of Equations by Substitution](https://openstax.org/books/elementary-algebra-2e/pages/5-2-solving-systems-of-equations-by-substitution) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the first worked example's step-by-step breakdown as a markdown table and condensed the remaining worked examples into prose with inline checks; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback — including turning the dependent/inconsistent-system Try Its into a multiple-choice classification, since the math checker cannot reliably grade a bare true/false numeric statement as an answer.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 5.2: Solving Systems of Equations by Substitution](https://openstax.org/books/elementary-algebra-2e/pages/5-2-solving-systems-of-equations-by-substitution) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the first worked example's step-by-step breakdown as a markdown table and condensed the remaining worked examples into prose with inline checks; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback — including turning the dependent/inconsistent-system Try Its into a multiple-choice classification, since the math checker cannot reliably grade a bare true/false numeric statement as an answer.</small>

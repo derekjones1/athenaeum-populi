@@ -604,6 +604,83 @@ The amount the wife earns is $2h - 16{,}000 = 2(42{,}000) - 16{,}000 =
   hint="Let p = the median price in 1964. The 2014 price $(280,900)$ is 10,700 more than 14 times p, so $280{,}900 = 14p + 10{,}700$."
 >}}
 
+## Practice
+
+### Approach word problems with a positive attitude
+
+{{< fillin
+  question="Patty paid \$35 for a purse on sale for \$10 off the original price. What was the original price of the purse, in dollars?"
+  answer="45"
+  answerDisplay="\$45"
+  hint="Let $p =$ the original price. The sale took ten dollars off that price, so translate as $p - 10 = 35$ and solve for $p$."
+>}}
+
+{{< fillin
+  question="Minh spent \$6.25 on five sticker books to give his nephews. Find the cost of each sticker book, in dollars."
+  answer="1.25"
+  answerDisplay="\$1.25"
+  hint="Let $c =$ the cost of one sticker book. Five books at the same price cost $5c$, so solve $5c = 6.25$."
+>}}
+
+{{< fillin
+  question="Tom paid \$1,166.40 for a new refrigerator, including \$86.40 tax. What was the price of the refrigerator before tax, in dollars?"
+  answer="1080"
+  answerDisplay="\$1,080"
+  hint="Let $p =$ the price before tax. The total is the price plus the tax, so solve $p + 86.40 = 1{,}166.40$."
+>}}
+
+### Use a problem-solving strategy for word problems
+
+{{< fillin
+  question="Two-thirds of the children in the fourth-grade class are girls. If there are 20 girls, what is the total number of children in the class?"
+  answer="30"
+  hint="Let $c =$ the total number of children. Translate as $20 = \tfrac{2}{3}c$, then multiply both sides by $\tfrac{3}{2}$."
+>}}
+
+{{< fillin
+  question="There are 16 girls in a school club. The number of girls is four more than twice the number of boys. Find the number of boys."
+  answer="6"
+  hint="Let $b =$ the number of boys. Translate 'four more than twice the number of boys' as $2b + 4$, then solve $16 = 2b + 4$."
+>}}
+
+{{< fillin
+  question="Huong is organizing paperback and hardback books for her club's used book sale. The number of paperbacks is 12 less than three times the number of hardbacks. Huong had 162 paperbacks. How many hardback books were there?"
+  answer="58"
+  hint="Let $h =$ the number of hardback books. Translate '12 less than three times the number of hardbacks' as $3h - 12$, then solve $162 = 3h - 12$."
+>}}
+
+### Solve number problems
+
+{{< fillin
+  question="The difference of twice a number and seven is 17. Find the number."
+  answer="12"
+  hint="Let $n =$ the number. Translate the difference as $2n - 7$, then solve $2n - 7 = 17$."
+>}}
+
+{{< fillin
+  question="Three times the sum of a number and nine is 12. Find the number."
+  answer="-5"
+  hint="Let $n =$ the number. The sum is formed first, so translate as $3(n + 9) = 12$ and divide by $3$ before subtracting."
+>}}
+
+{{< fillin
+  question="One number is 14 less than another. If their sum is increased by seven, the result is 85. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="32, 46"
+  hint="Let $n =$ the larger number, so $n - 14$ is the smaller. Solve $n + (n - 14) + 7 = 85$, then find both numbers."
+>}}
+
+{{< fillin
+  question="The sum of two numbers is 14. One number is two less than three times the other. Find the numbers. Enter both numbers separated by a comma, smaller first."
+  answer="4, 10"
+  hint="Let $n =$ the first number, so $3n - 2$ is the other. Solve $n + (3n - 2) = 14$, then use $n$ to find the second number."
+>}}
+
+{{< fillin
+  question="The sum of three consecutive integers is 78. Find the integers. Enter all three separated by commas, smallest first."
+  answer="25, 26, 27"
+  hint="Let $n =$ the smallest integer, so the next two are $n + 1$ and $n + 2$. Solve $n + (n + 1) + (n + 2) = 78$."
+>}}
+
 ## Key terms
 
 **solution of an equation** — a value of a variable that makes a true
@@ -617,4 +694,4 @@ pattern as consecutive even integers.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 3.1: Use a Problem-Solving Strategy](https://openstax.org/books/elementary-algebra-2e/pages/3-1-use-a-problem-solving-strategy) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the negative/positive self-talk thought-bubble figures as prose, condensed the seven-step worked examples' two-column tables into labeled steps, and omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 3.1: Use a Problem-Solving Strategy](https://openstax.org/books/elementary-algebra-2e/pages/3-1-use-a-problem-solving-strategy) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the negative/positive self-talk thought-bubble figures as prose, condensed the seven-step worked examples' two-column tables into labeled steps, and omitted the Be Prepared quiz, Self Check checklist, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, drawing on the Everyday Math exercises for the positive-attitude objective's thin exercise group.</small>

@@ -369,6 +369,42 @@ Check this yourself by substituting $x = 9$ into the original equation.
   hint="Distribute the decimal across the parentheses and combine like terms first, then clear the decimals by multiplying by 100."
 >}}
 
+## Practice
+
+### Solve equations with fraction coefficients
+
+{{< fillin
+  question="Solve: $\tfrac{3}{4}x - \tfrac{1}{2} = \tfrac{1}{4}$."
+  answer="1"
+  hint="Multiply every term by the LCD, $4$, to clear the fractions, then isolate $x$."
+>}}
+
+{{< fillin
+  question="Solve: $x + \tfrac{3}{4} = \tfrac{1}{2}x - \tfrac{5}{4}$."
+  answer="-4"
+  hint="Multiply every term by the LCD, $4$, then collect the variable terms on one side and the constants on the other."
+>}}
+
+{{< fillin
+  question="Solve: $\tfrac{4m + 2}{6} = \tfrac{m}{3}$."
+  answer="-1"
+  hint="Multiply both sides by the LCD, $6$, treating $4m + 2$ as one grouped numerator."
+>}}
+
+### Solve equations with decimal coefficients
+
+{{< fillin
+  question="Solve: $0.48x + 1.56 = 0.58x - 0.64$."
+  answer="22"
+  hint="Multiply every term by $100$ to clear the decimals, then collect variables and constants on opposite sides."
+>}}
+
+{{< fillin
+  question="Solve: $0.05n + 0.10(n + 7) = 3.55$."
+  answer="19"
+  hint="Distribute $0.10$ first, combine the variable terms, and then isolate $n$."
+>}}
+
 ## Key terms
 
 **clearing the equation of fractions** — multiplying both sides of an
@@ -379,4 +415,4 @@ of ten so the resulting equivalent equation has no decimals.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 2.5: Solve Equations with Fractions or Decimals](https://openstax.org/books/elementary-algebra-2e/pages/2-5-solve-equations-with-fractions-or-decimals) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked-example step tables into annotated derivation displays; omitted the Be Prepared quiz, media links, Self Check checklist, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 2.5: Solve Equations with Fractions or Decimals](https://openstax.org/books/elementary-algebra-2e/pages/2-5-solve-equations-with-fractions-or-decimals) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked-example step tables into annotated derivation displays; omitted the Be Prepared quiz, media links, and Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

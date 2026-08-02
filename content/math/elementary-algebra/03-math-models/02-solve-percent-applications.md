@@ -625,6 +625,94 @@ amount of mark-up and (b) the list price of the photograph.
   hint="The mark-up is 35% of the original \$8,500 cost — multiply the rate by the original cost."
 >}}
 
+## Practice
+
+### Translate and solve basic percent equations
+
+{{< fillin
+  question="What number is $45\%$ of $120$?"
+  answer="54"
+  hint="Write $45\%$ as $0.45$ and multiply it by $120$."
+>}}
+
+{{< fillin
+  question="$8.2\%$ of what number is \$2.87? Give the answer in dollars."
+  answer="35"
+  answerDisplay="\$35"
+  hint="Let $n$ be the number, write $8.2\%$ as $0.082$, and solve $0.082n = 2.87$."
+>}}
+
+### Solve percent applications
+
+{{< fillin
+  question="Geneva treated her parents to dinner at their favorite restaurant. The bill was \$74.25. Geneva wants to leave 16% of the total bill as a tip. How much should the tip be, in dollars?"
+  answer="11.88"
+  answerDisplay="\$11.88"
+  hint="Write $16\%$ as $0.16$ and multiply it by the total bill."
+>}}
+
+{{< fillin
+  question="After 3 months on a diet, Lisa had lost 12% of her original weight. She lost 21 pounds. What was Lisa's original weight, in pounds?"
+  answer="175"
+  answerDisplay="175 lb."
+  hint="Let $w$ be the original weight, write $12\%$ as $0.12$, and solve $21 = 0.12w$."
+>}}
+
+### Find percent increase and percent decrease
+
+{{< fillin
+  question="Tamanika got a raise in her hourly pay, from \$15.50 to \$17.36. Find the percent increase. Enter the percent as a number."
+  answer="12"
+  answerDisplay="12%"
+  hint="Subtract the original pay from the new pay, divide the increase by the original pay, and convert to a percent."
+>}}
+
+{{< fillin
+  question="A grocery store reduced the price of a loaf of bread from \$2.80 to \$2.73. Find the percent decrease. Enter the percent as a number."
+  answer="2.5"
+  answerDisplay="2.5%"
+  hint="Subtract the new price from the original price, divide the decrease by the original price, and convert to a percent."
+>}}
+
+### Solve simple interest applications
+
+{{< fillin
+  question="Casey deposited \$1,450 in a bank account with interest rate 4%. How much interest was earned in two years, in dollars?"
+  answer="116"
+  answerDisplay="\$116"
+  hint="Use $I = Prt$ with $P = 1{,}450$, $r = 0.04$, and $t = 2$."
+>}}
+
+{{< fillin
+  question="Hilaria borrowed \$8,000 from her grandfather to pay for college. Five years later, she paid him back the \$8,000, plus \$1,200 interest. What was the rate of interest? Enter the percent as a number."
+  answer="3"
+  answerDisplay="3%"
+  hint="Substitute $I = 1{,}200$, $P = 8{,}000$, and $t = 5$ into $I = Prt$, then solve for $r$ and convert to a percent."
+>}}
+
+### Solve applications with discount or mark-up
+
+{{< fillin
+  question="Perla bought a cell phone that was on sale for \$50 off. The original price of the cell phone was \$189. Find the sale price, in dollars."
+  answer="139"
+  answerDisplay="\$139"
+  hint="Subtract the amount off from the original price."
+>}}
+
+{{< fillin
+  question="Daria bought a bracelet at original cost \$16 to sell in her handicraft store. She marked the price up 45%. Find the amount of the mark-up, in dollars."
+  answer="7.20"
+  answerDisplay="\$7.20"
+  hint="Write $45\%$ as $0.45$ and multiply it by the original cost."
+>}}
+
+{{< fillin
+  question="Daria bought a bracelet at original cost \$16 to sell in her handicraft store. She marked the price up 45%. Find the list price, in dollars."
+  answer="23.20"
+  answerDisplay="\$23.20"
+  hint="Add the amount of the mark-up to the original cost."
+>}}
+
 ## Key terms
 
 **percent equation** — an equation of the form "part $=$ percent $\times$
@@ -643,4 +731,4 @@ cost, usually calculated as a percent of that cost, to get the list price.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 3.2: Solve Percent Applications](https://openstax.org/books/elementary-algebra-2e/pages/3-2-solve-percent-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the step-by-step solution tables as markdown tables; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 3.2: Solve Percent Applications](https://openstax.org/books/elementary-algebra-2e/pages/3-2-solve-percent-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the step-by-step solution tables as markdown tables; omitted the Be Prepared quiz, Self Check checklist, media links, and the remaining end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

@@ -348,6 +348,47 @@ Rosie's bank loan is \$8,670 and the principal for her federal loan is
   hint="Let b be the principal for the bank loan and f the principal for the federal loan, so $b + f = 18{,}000$. Set $0.025b + 0.069f$ equal to 1,066, then solve the system for f."
 >}}
 
+## Practice
+
+### Solve mixture applications using systems of equations
+
+{{< fillin
+  question="Tickets to a Broadway show cost \$35 for adults and \$15 for children. The total receipts for 1,650 tickets at one performance were \$47,150. How many adult and how many child tickets were sold? Enter the adult count first and the child count second as an ordered pair."
+  answer="(1120,530)"
+  answerDisplay="$1{,}120$ adult tickets and $530$ child tickets"
+  hint="Let $a$ and $c$ be the adult and child counts. Use $a+c=1{,}650$ with the total-value equation $35a+15c=47{,}150$."
+>}}
+
+{{< fillin
+  question="Brandon has a cup of quarters and dimes with a total value of \$3.80. The number of quarters is four less than twice the number of dimes. How many quarters and how many dimes does Brandon have? Enter the quarter count first and the dime count second as an ordered pair."
+  answer="(12,8)"
+  answerDisplay="$12$ quarters and $8$ dimes"
+  hint="Let $q$ and $d$ be the numbers of quarters and dimes. Use $0.25q+0.10d=3.80$ and translate the relationship as $q=2d-4$."
+>}}
+
+{{< fillin
+  question="Marissa wants to blend candy selling for \$1.80 per pound with candy costing \$1.20 per pound to get a mixture that costs her \$1.40 per pound to make. She wants to make 90 pounds of the candy blend. How many pounds of each type of candy should she use? Enter the pounds of the \$1.20 candy first and the pounds of the \$1.80 candy second as an ordered pair."
+  answer="(60,30)"
+  answerDisplay="$60$ pounds of the \$1.20-per-pound candy and $30$ pounds of the \$1.80-per-pound candy"
+  hint="Let $x$ and $y$ be the pounds of the \$1.20 and \$1.80 candies. Use $x+y=90$ and set the blend's total cost equal to $1.40(90)$."
+>}}
+
+### Solve interest applications using systems of equations
+
+{{< fillin
+  question="Hattie had \$3,000 to invest and wants to earn 10.6% interest per year. She will put some of the money into an account that earns 12% per year and the rest into an account that earns 10% per year. How much money should she put into each account? Enter the dollars at 12% first and the dollars at 10% second as an ordered pair."
+  answer="(900,2100)"
+  answerDisplay="\$900 at 12% and \$2,100 at 10%"
+  hint="Let $x$ and $y$ be the amounts at 12% and 10%. Use $x+y=3{,}000$ and set the total interest equal to $0.106(3{,}000)$."
+>}}
+
+{{< fillin
+  question="Sam invested \$48,000, some at 6% interest and the rest at 10%. How much did he invest at each rate if he received \$4,000 in interest in one year? Enter the dollars at 6% first and the dollars at 10% second as an ordered pair."
+  answer="(20000,28000)"
+  answerDisplay="\$20,000 at 6% and \$28,000 at 10%"
+  hint="Let $x$ and $y$ be the amounts at 6% and 10%. Use $x+y=48{,}000$ and $0.06x+0.10y=4{,}000$."
+>}}
+
 ## Key terms
 
 **total value model** — $\text{number} \cdot \text{value} = \text{total
@@ -362,4 +403,4 @@ investment or loan mixture problem, the Principal column gives one equation
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 5.5: Solve Mixture Applications with Systems of Equations](https://openstax.org/books/elementary-algebra-2e/pages/5-5-solve-mixture-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the coin/ticket/mixture/investment/loan tables as markdown tables; wrote each system of equations and its elimination or substitution steps as display-math blocks; omitted the "Be Prepared" readiness quiz, the Media links block, the Section 5.5 Exercises ("Practice Makes Perfect") block, and the Self Check checklist; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 5.5: Solve Mixture Applications with Systems of Equations](https://openstax.org/books/elementary-algebra-2e/pages/5-5-solve-mixture-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the coin/ticket/mixture/investment/loan tables as markdown tables; wrote each system of equations and its elimination or substitution steps as display-math blocks; omitted the "Be Prepared" readiness quiz, the Media links block, the unselected Section 5.5 exercises, and the Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

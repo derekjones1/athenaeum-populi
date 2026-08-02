@@ -535,6 +535,75 @@ the wind is 18 mph.
   hint="Let j = the jet's speed in still air and w = the wind's speed. The system is $5(j + w) = 1{,}325$ and $5(j - w) = 1{,}035$. Solve for w."
 >}}
 
+## Practice
+
+### Translate to a system of equations
+
+{{< fillin
+  question="Translate to a system of equations and solve the system: Twice a number plus three times a second number is twenty-two. Three times the first number plus four times the second is thirty-one. Find the numbers. Enter the first number and then the second number, separated by a comma."
+  answer="5,4"
+  answerDisplay="$5$ and $4$"
+  hint="Let $x$ be the first number and $y$ the second. Translate as $2x+3y=22$ and $3x+4y=31$, then solve by elimination."
+>}}
+
+{{< fillin
+  question="Translate to a system of equations and solve the system: The sum of two numbers is negative thirty. One number is five times the other. Find the numbers. Enter both numbers, separated by a comma."
+  answer="-5,-25"
+  answerMode="unordered"
+  answerDisplay="$-5$ and $-25$"
+  hint="Let the numbers be $x$ and $y$. Use $x+y=-30$ and choose $x=5y$, then substitute."
+>}}
+
+### Solve direct translation applications
+
+{{< fillin
+  question="Translate to a system of equations and solve: Alyssa is twelve years older than her sister, Bethany. The sum of their ages is forty-four. Find their ages. Enter Bethany's age first and Alyssa's age second, separated by a comma."
+  answer="16,28"
+  answerDisplay="Bethany is $16$ years old; Alyssa is $28$ years old"
+  hint="Let $A$ be Alyssa's age and $B$ Bethany's age. Translate as $A=B+12$ and $A+B=44$, then substitute."
+>}}
+
+{{< fillin
+  question="Translate to a system of equations and solve: Two containers of gasoline hold a total of fifty gallons. The big container can hold ten gallons less than twice the small container. How many gallons does each container hold? Enter the small container's capacity first and the big container's capacity second, separated by a comma."
+  answer="20,30"
+  answerDisplay="$20$ gallons in the small container; $30$ gallons in the big container"
+  hint="Let $s$ and $b$ be the small and big capacities. Use $s+b=50$ and $b=2s-10$, then substitute."
+>}}
+
+### Solve geometry applications
+
+{{< fillin
+  question="Translate to a system of equations and solve: The difference of two complementary angles is 30 degrees. Find the measures of the angles. Enter both measures, separated by a comma."
+  answer="60,30"
+  answerMode="unordered"
+  answerDisplay="$60^\circ$ and $30^\circ$"
+  hint="Complementary angles add to $90^\circ$. Combine that sum equation with a difference equation and add them."
+>}}
+
+{{< fillin
+  question="Translate to a system of equations and solve: The difference of two supplementary angles is 70 degrees. Find the measures of the angles. Enter both measures, separated by a comma."
+  answer="125,55"
+  answerMode="unordered"
+  answerDisplay="$125^\circ$ and $55^\circ$"
+  hint="Supplementary angles add to $180^\circ$. Combine that sum equation with a difference equation and add them."
+>}}
+
+### Solve uniform motion applications
+
+{{< fillin
+  question="Translate to a system of equations and solve: Sarah left Minneapolis heading east on the interstate at a speed of 60 mph. Her sister followed her on the same route, leaving two hours later and driving at a rate of 70 mph. How long will it take for Sarah’s sister to catch up to Sarah?"
+  answer="12"
+  answerDisplay="$12$ hours"
+  hint="If Sarah's sister drives for $t$ hours, Sarah drives for $t+2$ hours. Set their distances equal using $d=rt$."
+>}}
+
+{{< fillin
+  question="Translate to a system of equations and solve: A small jet can fly $1{,}072$ miles in 4 hours with a tailwind but only 848 miles in 4 hours into a headwind. Find the speed of the jet in still air and the speed of the wind. Enter the jet's speed first and the wind's speed second, separated by a comma."
+  answer="240,28"
+  answerDisplay="$240$ mph for the jet; $28$ mph for the wind"
+  hint="Let $j$ be the jet's speed and $w$ the wind's speed. Use $4(j+w)=1{,}072$ and $4(j-w)=848$, then add the equations."
+>}}
+
 ## Key terms
 
 **complementary angles** — two angles whose measures add to $90$ degrees;
@@ -547,4 +616,4 @@ plane is flying, so it decreases the plane's actual speed to $j - w$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 5.4: Solve Applications with Systems of Equations](https://openstax.org/books/elementary-algebra-2e/pages/5-4-solve-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated Randall's fenced-yard figure as an accessible inline graphic and described the river-current and wind-current figures in prose; wrote each system of equations and its elimination or substitution steps as display-math blocks; corrected an arithmetic slip in the source's own worked solution for the supplementary-angle example (the check step's $5(32) - 12$ was printed as 147 instead of 148); omitted the "Be Prepared" readiness quiz, the Media links block, the Section 5.4 Exercises ("Practice Makes Perfect") block, and the Self Check checklist; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 5.4: Solve Applications with Systems of Equations](https://openstax.org/books/elementary-algebra-2e/pages/5-4-solve-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated Randall's fenced-yard figure as an accessible inline graphic and described the river-current and wind-current figures in prose; wrote each system of equations and its elimination or substitution steps as display-math blocks; corrected an arithmetic slip in the source's own worked solution for the supplementary-angle example (the check step's $5(32) - 12$ was printed as 147 instead of 148); omitted the "Be Prepared" readiness quiz, the Media links block, the remaining Section 5.4 Exercises ("Practice Makes Perfect"), and the Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

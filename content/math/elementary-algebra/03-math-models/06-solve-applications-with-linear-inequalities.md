@@ -266,6 +266,45 @@ Answer the question: Brenda must babysit at least 27 hours.
   hint="Add the gas, food, and 10 nights of motel to get the total cost, then translate as cost $\le 520 + 30d$."
 >}}
 
+## Practice
+
+### Solve applications with linear inequalities
+
+{{< fillin
+  question="Mona is planning her son's birthday party and has a budget of \$285. The Fun Zone charges \$19 per child. How many children can she have at the party and stay within her budget? Give the maximum whole number of children."
+  answer="15"
+  answerDisplay="15 children"
+  hint="Let $c$ be the number of children, solve $19c \le 285$, and use the greatest whole-number solution."
+>}}
+
+{{< fillin
+  question="Arleen got a \$20 gift card for the coffee shop. Her favorite iced drink costs \$3.79. What is the maximum number of drinks she can buy with the gift card? Give a whole number of drinks."
+  answer="5"
+  answerDisplay="5 drinks"
+  hint="Let $d$ be the number of drinks, solve $3.79d \le 20$, and round down to a whole number."
+>}}
+
+{{< fillin
+  question="Andre has been offered an entry-level job. The company offered him \$48,000 per year plus 3.5% of his total sales. Andre knows that the average pay for this job is \$62,000. What would Andre's total sales need to be for his pay to be at least as high as the average pay for this job? Give the minimum amount, in dollars."
+  answer="400000"
+  answerDisplay="\$400,000"
+  hint="Let $s$ be total sales and solve $48{,}000 + 0.035s \ge 62{,}000$ for $s$."
+>}}
+
+{{< fillin
+  question="Jake's water bill is \$24.80 per month plus \$2.20 per ccf (hundred cubic feet) of water. What is the maximum number of ccf Jake can use if he wants his bill to be no more than \$60?"
+  answer="16"
+  answerDisplay="16 ccf"
+  hint="Let $c$ be the number of ccf and solve $24.80 + 2.20c \le 60$."
+>}}
+
+{{< fillin
+  question="Katherine is a personal chef. She charges \$115 per four-person meal. Her monthly expenses are \$3,150. How many four-person meals must she sell in order to make a profit of at least \$1,900? Give the minimum whole number of meals."
+  answer="44"
+  answerDisplay="44 meals"
+  hint="Let $m$ be the number of meals, solve $115m - 3{,}150 \ge 1{,}900$, and round up to a whole number."
+>}}
+
 ## Key terms
 
 **profit** — the money that remains when the expenses have been subtracted
@@ -274,4 +313,4 @@ sales, often combined with a fixed base amount.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 3.6: Solve Applications with Linear Inequalities](https://openstax.org/books/elementary-algebra-2e/pages/3-6-solve-applications-with-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, and end-of-section practice exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 3.6: Solve Applications with Linear Inequalities](https://openstax.org/books/elementary-algebra-2e/pages/3-6-solve-applications-with-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: omitted the Be Prepared quiz, Self Check checklist, and the remaining end-of-section practice exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

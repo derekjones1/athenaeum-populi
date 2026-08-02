@@ -318,6 +318,88 @@ $y - y_1 = m(x - x_1)$ with $m$ undefined
 it cannot be written as an equation
 {{< /multiplechoice >}}
 
+## Practice
+
+### Find an equation of the line given the slope and $y$-intercept
+
+{{< fillin
+  question="Find the equation of a line with slope $4$ and $y$-intercept $(0,1)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
+  answer="4x+1"
+  answerDisplay="$y=4x+1$"
+  hint="Substitute $m=4$ and $b=1$ directly into $y=mx+b$."
+>}}
+
+{{< fillin
+  question="Find the equation of a line with slope $8$ and $y$-intercept $(0,-6)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
+  answer="8x-6"
+  answerDisplay="$y=8x-6$"
+  hint="Substitute $m=8$ and $b=-6$ directly into $y=mx+b$."
+>}}
+
+### Find an equation of the line given the slope and a point
+
+{{< fillin
+  question="Find the equation of a line with $m=\tfrac{3}{8}$ that contains $(8,2)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
+  answer="\frac{3}{8}x-1"
+  answerDisplay="$y=\tfrac{3}{8}x-1$"
+  hint="Put the slope and point into $y-y_1=m(x-x_1)$, then solve for $y$."
+>}}
+
+{{< fillin
+  question="Find the equation of a line with $m=\tfrac{5}{6}$ that contains $(6,7)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
+  answer="\frac{5}{6}x+2"
+  answerDisplay="$y=\tfrac{5}{6}x+2$"
+  hint="Use $y-7=\tfrac{5}{6}(x-6)$, then isolate $y$."
+>}}
+
+### Find an equation of the line given two points
+
+{{< fillin
+  question="Find the equation of a line containing $(3,1)$ and $(2,5)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
+  answer="-4x+13"
+  answerDisplay="$y=-4x+13$"
+  hint="First compute $m=\tfrac{5-1}{2-3}$, then use either point in point-slope form and solve for $y$."
+>}}
+
+{{< fillin
+  question="Find the equation of a line containing $(2,7)$ and $(3,8)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
+  answer="x+5"
+  answerDisplay="$y=x+5$"
+  hint="Find the slope from the two points, then substitute one point into $y=mx+b$ to find $b$."
+>}}
+
+### Find an equation of a line parallel to a given line
+
+{{< fillin
+  question="Find the equation of a line parallel to $y=3x+4$ that contains $(2,5)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
+  answer="3x-1"
+  answerDisplay="$y=3x-1$"
+  hint="A parallel line has slope $3$. Substitute the slope and $(2,5)$ into point-slope form, then solve for $y$."
+>}}
+
+{{< fillin
+  question="Find the equation of a line parallel to $y=-3x-1$ that contains $(2,-3)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
+  answer="-3x+3"
+  answerDisplay="$y=-3x+3$"
+  hint="Keep the parallel slope $-3$, use the given point, and solve $y+3=-3(x-2)$ for $y$."
+>}}
+
+### Find an equation of a line perpendicular to a given line
+
+{{< fillin
+  question="Find the equation of a line perpendicular to $y=-x+5$ that contains $(3,3)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
+  answer="x"
+  answerDisplay="$y=x$"
+  hint="The negative reciprocal of $-1$ is $1$. Use slope $1$ and the given point in point-slope form."
+>}}
+
+{{< fillin
+  question="Find the equation of a line perpendicular to $y=\tfrac{2}{3}x-4$ that contains $(2,-4)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
+  answer="-\frac{3}{2}x-1"
+  answerDisplay="$y=-\tfrac{3}{2}x-1$"
+  hint="Use the negative-reciprocal slope $-\tfrac{3}{2}$, substitute $(2,-4)$, and solve for $y$."
+>}}
+
 ## Key terms
 
 **point-slope form** — the form $y - y_1 = m(x - x_1)$ of an equation of a
@@ -327,4 +409,4 @@ when two points are known and the slope is found first.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 4.6: Find the Equation of a Line](https://openstax.org/books/elementary-algebra-2e/pages/4-6-find-the-equation-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples and tables; omitted the Be Prepared quiz, Media links, Self Check checklist, and Section Exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 4.6: Find the Equation of a Line](https://openstax.org/books/elementary-algebra-2e/pages/4-6-find-the-equation-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples and tables; omitted the Be Prepared quiz, Media links, Self Check checklist, and unselected Section Exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>

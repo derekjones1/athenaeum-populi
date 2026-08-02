@@ -429,6 +429,79 @@ that earns 3% and \$15,000 in the account that earns 5%.
   hint="Let x be the amount invested at 3.2%, so $8{,}000 - x$ is invested at 8%. Set the interest from both accounts equal to 0.065$(8,000)$, then solve for the amount at 8%."
 >}}
 
+## Practice
+
+### Solve coin word problems
+
+{{< fillin
+  question="Jaime has \$2.60 in dimes and nickels. The number of dimes is 14 more than the number of nickels. How many of each coin does he have? Enter the number of nickels and the number of dimes, separated by a comma."
+  answer="8,22"
+  answerDisplay="8 nickels, 22 dimes"
+  hint="Let $n$ be the number of nickels, so $n + 14$ is the number of dimes. Add the values with $0.05n + 0.10(n + 14) = 2.60$."
+>}}
+
+{{< fillin
+  question="Ngo has a collection of dimes and quarters with a total value of \$3.50. The number of dimes is seven more than the number of quarters. How many of each coin does he have? Enter the number of dimes and the number of quarters, separated by a comma."
+  answer="15,8"
+  answerDisplay="15 dimes, 8 quarters"
+  hint="Let $q$ be the number of quarters, so $q + 7$ is the number of dimes. Add the values with $0.10(q + 7) + 0.25q = 3.50$."
+>}}
+
+### Solve ticket and stamp word problems
+
+{{< fillin
+  question="The school play sold \$550 in tickets one night. The number of \$8 adult tickets was 10 less than twice the number of \$5 child tickets. How many of each ticket were sold? Enter the number of child tickets and the number of adult tickets, separated by a comma."
+  answer="30,50"
+  answerDisplay="30 child tickets, 50 adult tickets"
+  hint="Let $c$ be the number of child tickets, so $2c - 10$ is the number of adult tickets. Add the receipts with $5c + 8(2c - 10) = 550$."
+>}}
+
+{{< fillin
+  question="The movie theater took in \$1,220 one Monday night. The number of \$7 child tickets was ten more than twice the number of \$9 adult tickets. How many of each were sold? Enter the number of child tickets and the number of adult tickets, separated by a comma."
+  answer="110,50"
+  answerDisplay="110 child tickets, 50 adult tickets"
+  hint="Let $a$ be the number of adult tickets, so $2a + 10$ is the number of child tickets. Add the receipts with $7(2a + 10) + 9a = 1{,}220$."
+>}}
+
+### Solve mixture word problems
+
+{{< fillin
+  question="Kaapo is mixing Kona beans and Maui beans to make 25 pounds of coffee blend. Kona beans cost Kaapo \$15 per pound and Maui beans cost \$24 per pound. How many pounds of each coffee bean should Kaapo use for his blend to cost him \$17.70 per pound? Enter the pounds of Maui beans and the pounds of Kona beans, separated by a comma."
+  answer="7.5,17.5"
+  answerDisplay="7.5 pounds of Maui beans, 17.5 pounds of Kona beans"
+  hint="Let $m$ be the pounds of Maui beans, so $25 - m$ is the pounds of Kona beans. Set the ingredient cost equal to the blend cost with $24m + 15(25 - m) = 17.70(25)$."
+>}}
+
+{{< fillin
+  question="Carmen wants to tile the floor of his house. He will need 1,000 square feet of tile. He will do most of the floor with a tile that costs \$1.50 per square foot, but also wants to use an accent tile that costs \$9.00 per square foot. If he wants the overall cost to be \$3 per square foot, how many square feet of the \$1.50 tile should he plan to use?"
+  answer="800"
+  answerDisplay="800 square feet at \$1.50"
+  hint="Let $a$ be the square feet of accent tile, so $1{,}000 - a$ is the square feet of the other tile. Set the tile cost equal to the overall cost with $9a + 1.50(1{,}000 - a) = 3(1{,}000)$."
+>}}
+
+{{< fillin
+  question="Carmen wants to tile the floor of his house. He will need 1,000 square feet of tile. He will do most of the floor with a tile that costs \$1.50 per square foot, but also wants to use an accent tile that costs \$9.00 per square foot. If he wants the overall cost to be \$3 per square foot, how many square feet of the \$9.00 accent tile should he plan to use?"
+  answer="200"
+  answerDisplay="200 square feet at \$9.00"
+  hint="Subtract the square feet of the \$1.50 tile from the 1,000-square-foot total, or solve the same value equation for the accent-tile amount."
+>}}
+
+### Use the mixture model to solve investment problems using simple interest
+
+{{< fillin
+  question="Vartan was paid \$25,000 for a cell phone app that he wrote and wants to invest it to save for his son’s education. He wants to put some of the money into a bond that pays 4% annual interest and the rest into stocks that pay 9% annual interest. If he wants to earn 7.4% annual interest on the total amount, how much money should he invest in each account? Enter the dollars invested at 4% and the dollars invested at 9%, separated by a comma."
+  answer="8000,17000"
+  answerDisplay="\$8,000 at 4%, \$17,000 at 9%"
+  hint="Let $b$ be the amount invested at 4%, so $25{,}000 - b$ is invested at 9%. Set the two accounts’ interest equal to the target interest with $0.04b + 0.09(25{,}000 - b) = 0.074(25{,}000)$."
+>}}
+
+{{< fillin
+  question="Stephanie inherited \$40,000. She wants to put some of the money in a certificate of deposit that pays 2.1% interest per year and the rest in a mutual fund account that pays 6.5% per year. How much should she invest in each account if she wants to earn 5.4% interest per year on the total amount? Enter the dollars invested in the certificate of deposit and the dollars invested in the mutual fund, separated by a comma."
+  answer="10000,30000"
+  answerDisplay="\$10,000 in the certificate of deposit, \$30,000 in the mutual fund"
+  hint="Let $c$ be the amount invested in the certificate of deposit, so $40{,}000 - c$ is invested in the mutual fund. Set the two accounts’ interest equal to the target interest with $0.021c + 0.065(40{,}000 - c) = 0.054(40{,}000)$."
+>}}
+
 ## Key terms
 
 **mixture problem** — a problem in which two or more items with different
@@ -442,4 +515,4 @@ interest rate and the "total value" is the interest earned.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 3.3: Solve Mixture Applications](https://openstax.org/books/elementary-algebra-2e/pages/3-3-solve-mixture-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the coin/ticket/stamp/mixture/investment tables as markdown tables; omitted the Manipulative Mathematics callout, the ticket-relationship summary table's illustrative rows (kept as prose), the Section 3.3 Exercises ("Practice Makes Perfect") block, and the Self Check checklist; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 3.3: Solve Mixture Applications](https://openstax.org/books/elementary-algebra-2e/pages/3-3-solve-mixture-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the coin/ticket/stamp/mixture/investment tables as markdown tables; omitted the Manipulative Mathematics callout, the ticket-relationship summary table's illustrative rows (kept as prose), and the Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, restating list answers in an explicit response order and splitting one two-quantity response into adjacent components.</small>

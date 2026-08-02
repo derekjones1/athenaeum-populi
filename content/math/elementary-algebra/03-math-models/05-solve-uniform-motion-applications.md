@@ -320,6 +320,45 @@ Hamilton drove 40 mph in the city and 70 mph in the desert.
   hint="He rode on the flat street for 1.25 hours and uphill for 0.5 hour. Let f be his flat-street speed; his uphill speed is 0.6f. Set $1.25f + 0.5(0.6f)$ equal to 31 and solve for f."
 >}}
 
+## Practice
+
+### Solve uniform motion applications
+
+{{< fillin
+  question="Lilah is moving from Portland to Seattle. It takes her three hours to go by train. Mason leaves the train station in Portland and drives to the train station in Seattle with all Lilah's boxes in his car. It takes him 2.4 hours to get to Seattle, driving at 15 miles per hour faster than the speed of the train. Find Mason's speed and the speed of the train. Enter Mason's speed first and the train's speed second, separated by a comma."
+  answer="75,60"
+  answerDisplay="Mason: $75$ mph; train: $60$ mph"
+  hint="Both travel the same distance. If the train's speed is $r$, compare $3r$ with $2.4(r+15)$."
+>}}
+
+{{< fillin
+  question="Saul drove his truck 3 hours from Dallas towards Kansas City and stopped at a truck stop to get dinner. At the truck stop he met Erwin, who had driven 4 hours from Kansas City towards Dallas. The distance between Dallas and Kansas City is 542 miles, and Erwin's speed was eight miles per hour slower than Saul's speed. Find the speed of the two truckers. Enter Saul's speed first and Erwin's speed second, separated by a comma."
+  answer="82,74"
+  answerDisplay="Saul: $82$ mph; Erwin: $74$ mph"
+  hint="Their distances add to $542$ miles. If Saul's speed is $r$, write $3r+4(r-8)=542$."
+>}}
+
+{{< fillin
+  question="Cindy and Richard leave their dorm in Charleston at the same time. Cindy rides her bicycle north at a speed of 18 miles per hour. Richard rides his bicycle south at a speed of 14 miles per hour. How long will it take them to be 96 miles apart?"
+  answer="3"
+  answerDisplay="$3$ hours"
+  hint="Because they travel in opposite directions, their distances add. Use $18t+14t=96$."
+>}}
+
+{{< fillin
+  question="Lorena walks the path around the park in 30 minutes. If she jogs, it takes her 20 minutes. Her jogging speed is 1.5 miles per hour faster than her walking speed. Find Lorena's walking speed and jogging speed. Enter the walking speed first and the jogging speed second, separated by a comma."
+  answer="3,4.5"
+  answerDisplay="walking: $3$ mph; jogging: $4.5$ mph"
+  hint="Convert the times to $\tfrac{1}{2}$ hour and $\tfrac{1}{3}$ hour. The two distances are equal, so set $\tfrac{1}{2}r=\tfrac{1}{3}(r+1.5)$."
+>}}
+
+{{< fillin
+  question="Marisol left Los Angeles at 2:30 to drive to Santa Barbara, a distance of 95 miles. The traffic was heavy until 3:20. She drove the rest of the way in very light traffic and arrived at 4:20. Her speed in heavy traffic was 40 miles per hour slower than her speed in light traffic. Find her speed in heavy traffic and in light traffic. Enter the heavy-traffic speed first and the light-traffic speed second, separated by a comma."
+  answer="30,70"
+  answerDisplay="heavy traffic: $30$ mph; light traffic: $70$ mph"
+  hint="She drove in heavy traffic for $\tfrac{5}{6}$ hour and in light traffic for $1$ hour. If the light-traffic speed is $r$, use $\tfrac{5}{6}(r-40)+r=95$."
+>}}
+
 ## Key terms
 
 **uniform motion problem** — an application in which one or more objects
@@ -330,4 +369,4 @@ find the elapsed time before using $D = rt$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 3.5: Solve Uniform Motion Applications](https://openstax.org/books/elementary-algebra-2e/pages/3-5-solve-uniform-motion-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the rate/time/distance charts as markdown tables and the diagrams as prose descriptions; corrected an inconsistency in the source's clock-time example (the worked solution used a 4:00 pm changeover, matching its diagram and 2-hour/2.5-hour split, though the prose read "4:30 pm"); omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 3.5: Solve Uniform Motion Applications](https://openstax.org/books/elementary-algebra-2e/pages/3-5-solve-uniform-motion-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the rate/time/distance charts as markdown tables and the diagrams as prose descriptions; corrected an inconsistency in the source's clock-time example (the worked solution used a 4:00 pm changeover, matching its diagram and 2-hour/2.5-hour split, though the prose read "4:30 pm"); omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>
