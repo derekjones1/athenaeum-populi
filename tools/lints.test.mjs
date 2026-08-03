@@ -213,11 +213,13 @@ for (const [source, reason] of [
 // another form — is passable by retyping the prompt, and no choice of numbers
 // can prevent it. Standalone printed values (numbers, fractions, mixed
 // numbers, percentages — in a $…$ span or bare in prose) are graded as
-// submissions; compound expressions ("Add: $3+5$") are not candidates because
-// their value-equality is inherent to CAS grading, not fixable by rewording.
+// submissions. Compound expressions get the same treatment through their own
+// verb-gated paths — the arithmetic and algebraic blocks below.
 for (const [source, reason] of [
   [listFillin('Find the prime factorization of $86$.', '2 \\cdot 43'),
     'the printed target of a factorization prompt grades equal to the answer'],
+  [listFillin('Simplify $\\tfrac{40}{88}$ to lowest terms.', '\\tfrac{40}{88}'),
+    'a numeral answer identical to its prompt was never re-expressed — the author error itself'],
   [listFillin('Find the prime factorization of 80 using the factor tree method. Enter the answer in exponential form, e.g. $2^3 \\cdot 5$.', '2^4 \\cdot 5'),
     'a bare prose number is a printed value too'],
   [listFillin('Simplify: $-\\tfrac{40}{88}$.', '-\\tfrac{5}{11}'),
@@ -258,6 +260,13 @@ for (const [source, reason] of [
     'an isosceles right triangle legitimately answers with the printed angle'],
   [listFillin('Jazmine ran $8$ miles and biked $24$ miles in $3$ hours, biking $4$ mph faster than she ran. Find her running speed in mph.', '8'),
     'an application answer that happens to equal a printed quantity is an incidental collision'],
+  // The two deliberate exemptions on the algebraic paths — scoped to spans
+  // with a variable, so neither can hide a numeral defect like the
+  // never-re-expressed answer above.
+  [listFillin('Add: $5a+7b$.', '5a+7b'),
+    'unlike terms legitimately answer with the prompt — the exercise asks the learner to recognize they do not combine'],
+  [listFillin('Simplify: $\\frac{x^2-x-2}{x^2-3x+2}$.', '\\frac{x+1}{x-1}'),
+    'reducing a rational expression stays exempt until a reduced-fraction predicate exists (§6) — both sides are one fraction and only a CAS cancellation separates them'],
 ]) {
   assert.equal(
     lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
@@ -341,26 +350,34 @@ for (const [source, reason] of [
     ['List all the factors of 96, separated by commas, least to greatest.', '1,2,3,4,6,8,12,16,24,32,48,96',
       'listing factors is not factoring'],
     ['Find the LCM of $9$ and $12$ using the prime factors method.', '36', 'a named method is not an instruction to factor'],
-    ['Divide: $\\tfrac{c+3}{5-c} \\div \\tfrac{c^2-9}{c-5}$. (A factor of $-1$ appears from opposite binomials.)',
-      '-\\tfrac{1}{c-3}', 'an aside mentioning a factor is not a factoring prompt'],
   ]) {
     assert.equal(lint(factorFillin(question, answer)).filter(trivial).length, 0, reason);
   }
 
-  // Blast radius: the factoring path must not drag the Simplify family in. Those
-  // are a separate class with their own tokens and their own retrofit (§6); if
-  // this ever starts firing, the two candidate paths have been merged by
-  // mistake and ~900 sound exercises are about to be reported as defects.
-  assert.equal(
-    lint(factorFillin('Simplify: $\\tfrac{x^2-4}{x-2}$.', 'x+2')).filter(trivial).length,
-    0,
-    'an algebraic Simplify prompt stays out of scope until its own token exists',
-  );
-  assert.equal(
-    lint(factorFillin('Multiply: $(w+5)(w+7)$.', 'w^2+12w+35')).filter(trivial).length,
-    0,
-    'an algebraic Multiply prompt stays out of scope too',
-  );
+  // The algebraic Simplify/Multiply/Divide family is in candidate scope on
+  // purpose: a printed algebraic subject worth exactly its own answer is the
+  // same hazard as the numeral prompts, and linting it is what lets a future
+  // authoring session ship these exercises with the right answerForm from the
+  // start instead of rediscovering the hole in review. Each case fires bare
+  // and is silenced by the token that names its ask.
+  for (const [question, answer, form, reason] of [
+    ['Simplify: $\\tfrac{x^2-4}{x-2}$.', 'x+2', 'polynomial',
+      'a reducible rational expression grades equal to its simplified polynomial'],
+    ['Multiply: $(w+5)(w+7)$.', 'w^2+12w+35', 'expanded',
+      'a printed binomial product grades equal to its own expansion'],
+    ['Divide: $\\tfrac{c+3}{5-c} \\div \\tfrac{c^2-9}{c-5}$. (A factor of $-1$ appears from opposite binomials.)',
+      '-\\tfrac{1}{c-3}', 'single-fraction',
+      'the Divide verb is an ask even when "factor" appears as a noun in an aside'],
+    ['Simplify: $b^9 \\cdot b^8$.', 'b^{17}', 'single-term',
+      'a printed product of like bases grades equal to its single power'],
+  ]) {
+    assert(lint(factorFillin(question, answer)).some(trivial), reason);
+    assert.equal(
+      lint(factorFillin(question, answer, form)).filter(trivial).length,
+      0,
+      `answerForm=${JSON.stringify(form)} rules the printed subject out: ${reason}`,
+    );
+  }
 
   // A form beside a list answer grades nothing — the grader returns first.
   assert(
@@ -411,10 +428,9 @@ for (const [source, reason] of [
   // collision the learner cannot exploit — they cannot know which to copy.
   for (const [question, answer, reason] of [
     ['Evaluate $3ab^2$ when $a = -2$ and $b = 3$.', '-54', 'a variable prompt contributes no arithmetic span'],
-    ['Simplify: $b^9 \\cdot b^8$.', 'b^{17}', 'an algebraic simplification is a different class (§6)'],
     ['Jazmine ran $8$ miles and biked $24$ miles in $3$ hours, biking $4$ mph faster than she ran. Find her running speed in mph.', '8',
       'an application answer colliding with a printed quantity is incidental'],
-    ['Simplify: $\\sqrt{32} - \\sqrt{18}$.', '\\sqrt{2}', 'radicals have no form token yet, so flagging them would report an unfixable defect'],
+    ['Simplify: $\\sqrt{32} - \\sqrt{18}$.', '\\sqrt{2}', 'a numeral radical span is in neither subject scan yet — widening them to \\sqrt spans is the simplified-radical retrofit'],
   ]) {
     assert.equal(lint(arith(question, answer)).filter(trivial).length, 0, reason);
   }

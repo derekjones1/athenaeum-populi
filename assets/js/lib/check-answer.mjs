@@ -32,6 +32,22 @@ import { ComputeEngine } from '@cortex-js/compute-engine';
 // never disagree about parsing.
 export const ce = new ComputeEngine();
 
+// One grading parses the same student LaTeX several times over — checkAnswer
+// once for the value, then every parsing form predicate again for the shape —
+// and parsing is the engine's expensive step. Boxed expressions are immutable
+// and nothing here declares or assumes engine state, so one box per source
+// string is safe to share. The cap only bounds a corpus-wide lint run; a page
+// grades a handful of strings.
+const PARSE_CACHE_LIMIT = 256;
+const parseCache = new Map();
+function parseLatex(source) {
+  if (parseCache.has(source)) return parseCache.get(source);
+  const expr = ce.parse(source);
+  if (parseCache.size >= PARSE_CACHE_LIMIT) parseCache.clear();
+  parseCache.set(source, expr);
+  return expr;
+}
+
 /**
  * Remove commas only when the whole numeric token is a conventionally
  * grouped integer. Looking at the maximal token is important: the old
@@ -439,6 +455,30 @@ function bareLatex(latex) {
   return bare;
 }
 
+/**
+ * Split LaTeX on its top-level `+`/`-`, respecting `{}`/`()` groups. A leading
+ * sign starts the first term rather than delimiting an empty one, so `-3x+5`
+ * is two terms.
+ */
+function splitTopLevelTerms(latex) {
+  const terms = [];
+  let depth = 0;
+  let term = '';
+  for (let i = 0; i < latex.length; i += 1) {
+    const char = latex[i];
+    if (char === '{' || char === '(') depth += 1;
+    else if (char === '}' || char === ')') depth -= 1;
+    if (depth === 0 && (char === '+' || char === '-') && term.trim()) {
+      terms.push(term);
+      term = '';
+      continue;
+    }
+    term += char;
+  }
+  terms.push(term);
+  return terms;
+}
+
 // A TeX argument is a braced group OR a single token, so a MathLive field
 // emits `\frac79` for 7/9 while `\frac{12}{5}` keeps its braces. Both are the
 // same fraction; a braces-only pattern would reject every single-digit
@@ -558,6 +598,20 @@ function monomialMagnitude(expr) {
 }
 
 /**
+ * Is a quotient of two monomialMagnitude() results reduced? A missing side is
+ * a polynomial part, where the shape alone is the test. gcd is an integer
+ * notion, so a decimal coefficient (`\frac{1.5}{x}`) has nothing to cancel and
+ * must not be fed to it — gcd(1.5, 1) walks to 0.5 and fails a reduced
+ * fraction.
+ */
+function reducedMonomialQuotient(numerator, denominator) {
+  if (!numerator || !denominator) return true;
+  if ([...numerator.bases].some((name) => denominator.bases.has(name))) return false;
+  return !(Number.isInteger(numerator.coefficient) && Number.isInteger(denominator.coefficient))
+    || gcd(numerator.coefficient, denominator.coefficient) === 1;
+}
+
+/**
  * How many factors a response is written as, and how many of them are
  * multi-term — or null when it is not a product at all.
  *
@@ -603,7 +657,7 @@ function factorCounts(expr) {
 function asFactoredProduct(latex) {
   let expr;
   try {
-    expr = ce.parse(preprocess(latex));
+    expr = parseLatex(preprocess(latex));
   } catch {
     return null;
   }
@@ -655,14 +709,13 @@ const FORM_PREDICATES = {
   // not a `fraction`: asFraction takes integer arguments only, and no other
   // token accepts it at all.
   'single-power': (latex) => {
-    const isOnePower = (text) => {
-      const bases = asProductOfPowers(text);
-      if (bases !== null && bases.length === 1) return true;
-      // A variable base too — "$(b^7)^5$" answers with `b^{35}`, and the engine
-      // folds the nested power away, so only the written form separates them.
-      // asProductOfPowers is numeral-only, so match the variable case here.
-      return /^[A-Za-z]\s*(?:\^\s*\{?\s*-?\d+\s*\}?)?$/.test(bareLatex(text));
-    };
+    // One base — a numeral or a variable ("$(b^7)^5$" answers with `b^{35}`,
+    // and the engine folds the nested power away) — carrying at most one
+    // integer exponent. The exponent may be negative on either kind of base:
+    // "$12^{15}/12^{30}$" legitimately answers `12^{-15}`, and a predicate
+    // that took `x^{-3}` but refused `2^{-3}` would be an asymmetry no
+    // exercise chose.
+    const isOnePower = (text) => /^(?:\d+|[A-Za-z])\s*(?:\^\s*\{?\s*-?\d+\s*\}?)?$/.test(bareLatex(text));
     if (isOnePower(latex)) return true;
     const reciprocal = bareLatex(latex)
       .match(/^\\[tdc]?frac\s*\{\s*1\s*\}\s*\{([\s\S]+)\}$/);
@@ -682,7 +735,11 @@ const FORM_PREDICATES = {
   //      combined yet; and
   //   3. no radical is left in a denominator — the rationalizing step.
   'simplified-radical': (latex) => {
-    const bare = bareLatex(latex);
+    // TeX's `\sqrt` takes one token, so a hand-typed `\sqrt2` carries no
+    // braces — and every pattern below reads a braced radicand. Brace the
+    // single-token form first, or those radicals skip every check.
+    const bare = bareLatex(latex)
+      .replace(/(\\sqrt)(\s*\[\s*\d+\s*\])?\s*([0-9A-Za-z])/g, '$1$2{$3}');
     // Read each radicand as a balanced group: `\sqrt[4]{u^{12}}` and
     // `\sqrt{\tfrac{75x^5}{3x}}` both carry braces inside the radicand, which a
     // flat `[^{}]*` pattern silently fails to match — and a radical that never
@@ -693,6 +750,12 @@ const FORM_PREDICATES = {
       if (group) radicands.push([opener[1], group[0]]);
     }
     for (const [indexArg, radicand] of radicands) {
+      // A SUM under the radical (`\sqrt{4+x}`, `\sqrt{x^2+y^2}`) is not a
+      // product: the factor tests below would read its leading term ("4 holds
+      // a square") and reject an irreducible radical forever. A form check
+      // must never reject a correct answer, so a multi-term radicand is left
+      // to the like-radicals and rationalizing tests alone.
+      if (splitTopLevelTerms(radicand).length > 1) continue;
       const root = Number(indexArg ?? 2);
       const numeral = radicand.match(/^\s*(\d+)/);
       if (numeral) {
@@ -719,22 +782,7 @@ const FORM_PREDICATES = {
     // Like radicals must already be combined: split the top level on + and -
     // and require each radicand to appear once.
     const seen = new Set();
-    let depth = 0;
-    let term = '';
-    const terms = [];
-    for (let i = 0; i < bare.length; i += 1) {
-      const char = bare[i];
-      if (char === '{' || char === '(') depth += 1;
-      else if (char === '}' || char === ')') depth -= 1;
-      if (depth === 0 && (char === '+' || char === '-') && term.trim()) {
-        terms.push(term);
-        term = '';
-        continue;
-      }
-      term += char;
-    }
-    terms.push(term);
-    for (const piece of terms) {
+    for (const piece of splitTopLevelTerms(bare)) {
       const opener = piece.match(/\\sqrt\s*(?:\[\s*\d+\s*\])?\s*\{/);
       if (!opener) continue;
       const group = readBalancedGroup(piece, opener.index + opener[0].length - 1);
@@ -759,7 +807,7 @@ const FORM_PREDICATES = {
     if (/[()]/.test(bareLatex(latex))) return false;
     let expr;
     try {
-      expr = ce.parse(preprocess(latex));
+      expr = parseLatex(preprocess(latex));
     } catch {
       return false;
     }
@@ -785,7 +833,7 @@ const FORM_PREDICATES = {
     const bare = bareLatex(latex);
     if (/\\[tdc]?frac|\\div|\//.test(bare)) return false;
     try {
-      return ce.parse(preprocess(latex)).isValid;
+      return parseLatex(preprocess(latex)).isValid;
     } catch {
       return false;
     }
@@ -799,7 +847,7 @@ const FORM_PREDICATES = {
   'no-like-terms': (latex) => {
     let expr;
     try {
-      expr = ce.parse(preprocess(latex));
+      expr = parseLatex(preprocess(latex));
     } catch {
       return false;
     }
@@ -835,7 +883,7 @@ const FORM_PREDICATES = {
   // literal, and $a+bi$ is exactly the expanded form the prompt asks for.
   expanded: (latex) => {
     try {
-      const expr = ce.parse(preprocess(latex));
+      const expr = parseLatex(preprocess(latex));
       return expr.isValid && (expr.operator === 'Add' || expr.operator === 'Complex');
     } catch {
       return false;
@@ -866,7 +914,7 @@ const FORM_PREDICATES = {
         || bare.startsWith('\\cdot', i) || bare.startsWith('\\times', i))) return false;
     }
     try {
-      const expr = ce.parse(preprocess(latex));
+      const expr = parseLatex(preprocess(latex));
       if (!expr.isValid) return false;
       const parts = monomialParts(expr);
       return parts !== null && parts.bases.size >= 1;
@@ -896,19 +944,43 @@ const FORM_PREDICATES = {
       else if (depth === 0 && (bare[i] === '+' || bare[i] === '-'
         || bare.startsWith('\\cdot', i) || bare.startsWith('\\times', i))) return false;
     }
+    // The reduced-ness test reads the WRITTEN halves, not the parse: the
+    // engine folds `\frac{40}{88}` to the number 5/11 and `\frac{40x}{88}` to
+    // a rational-coefficient product, so by the time it returns there is no
+    // unreduced quotient left to inspect.
+    const numeral = asFraction(latex);
+    if (numeral) return gcd(numeral.numerator, numeral.denominator) === 1;
+    const opener = bare.match(/^\\[tdc]?frac\s*\{/);
+    if (opener) {
+      const numeratorGroup = readBalancedGroup(bare, opener[0].length - 1);
+      const between = numeratorGroup && bare.slice(numeratorGroup[1]).match(/^\s*\{/);
+      const denominatorGroup = between
+        && readBalancedGroup(bare, numeratorGroup[1] + between[0].length - 1);
+      if (denominatorGroup && bare.slice(denominatorGroup[1]).trim() === '') {
+        const [numerator, denominator] = [numeratorGroup[0], denominatorGroup[0]].map((half) => {
+          let expr;
+          try {
+            expr = parseLatex(preprocess(half));
+          } catch {
+            return null;
+          }
+          return expr.isValid ? monomialMagnitude(expr) : null;
+        });
+        return reducedMonomialQuotient(numerator, denominator);
+      }
+    }
+    // A shape this predicate cannot read off the LaTeX (unbraced arguments,
+    // trailing factors): fall back to the parsed structure.
     let expr;
     try {
-      expr = ce.parse(preprocess(latex));
+      expr = parseLatex(preprocess(latex));
     } catch {
       return false;
     }
     if (!expr.isValid) return false;
     const quotient = expr.operator === 'Negate' ? expr.ops[0] : expr;
     if (quotient.operator !== 'Divide') return true;
-    const [numerator, denominator] = quotient.ops.map(monomialMagnitude);
-    if (!numerator || !denominator) return true; // a polynomial part: shape only
-    const shared = [...numerator.bases].some((name) => denominator.bases.has(name));
-    return !shared && gcd(numerator.coefficient, denominator.coefficient) === 1;
+    return reducedMonomialQuotient(...quotient.ops.map(monomialMagnitude));
   },
   // "Factor: $x^2+6x+8$" prints a polynomial that *is* its own factorization by
   // value, so only the shape separates `(x+2)(x+4)` from the prompt retyped.
@@ -1008,7 +1080,7 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
 
   let studentExpr;
   try {
-    studentExpr = ce.parse(student);
+    studentExpr = parseLatex(student);
   } catch {
     return 'invalid';
   }
@@ -1016,7 +1088,7 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
 
   let answerExpr;
   try {
-    answerExpr = ce.parse(preprocess(answerRaw));
+    answerExpr = parseLatex(preprocess(answerRaw));
   } catch {
     return 'incorrect';
   }

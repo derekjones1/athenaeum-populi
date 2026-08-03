@@ -131,6 +131,7 @@ $$\frac{5xy}{15x} = \frac{y}{3}$$
 {{< fillin
   question="Simplify: $\tfrac{9a}{9b}$"
   answer="\frac{a}{b}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{a}{b}$"
   hint="$9$ is a common factor of the numerator and denominator — remove it."
 >}}
@@ -393,6 +394,7 @@ $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
 {{< fillin
   question="Simplify: $-\tfrac{3x}{12y}$"
   answer="-\frac{x}{4y}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{x}{4y}$"
   hint="$3$ is a common factor of $3x$ and $12y$; the variables $x$ and $y$ are different, so neither one can be removed."
 >}}

@@ -208,12 +208,16 @@ function printedQuestionValues(question) {
  * `\left` do not read as variables. A span carrying a relation, a list comma or
  * `\text` is a statement or an enumeration, not a subject to re-express.
  */
+// Does a LaTeX span contain a variable once backslash macros (`\tfrac`,
+// `\cdot`, `\left`) are stripped, so command letters do not read as one?
+const spanHasVariable = (value) => /[A-Za-z]/.test(value.replace(/\\[a-zA-Z]+/g, ' '));
+
 function printedPolynomialSubjects(question) {
   const subjects = [];
   for (const span of question.matchAll(/(?<!\\)\$([^$]+?)(?<!\\)\$/g)) {
     const inner = span[1].trim();
     if (/[=<>,]|\\(?:lt|gt|le|ge|ne|neq|text|begin|dots|ldots)/.test(inner)) continue;
-    if (!/[A-Za-z]/.test(inner.replace(/\\[a-zA-Z]+/g, ' '))) continue;
+    if (!spanHasVariable(inner)) continue;
     subjects.push(inner);
   }
   return subjects;
@@ -237,7 +241,7 @@ function printedArithmeticSubjects(question) {
     // exempt every grouped number in the corpus from this rule.
     const separators = inner.replace(/\{\s*,\s*\}/g, '');
     if (/[=<>,]|\\(?:lt|gt|le|ge|ne|neq|text|begin|dots|ldots|sqrt|pi)/.test(separators)) continue;
-    if (/[A-Za-z]/.test(inner.replace(/\\[a-zA-Z]+/g, ' '))) continue;
+    if (spanHasVariable(inner)) continue;
     subjects.push(inner);
   }
   return subjects;
@@ -867,8 +871,13 @@ export function lintHugo(src, filename = '') {
         // recognize that the terms do NOT combine, so retyping the prompt is
         // the correct response and no form should reject it. Sound content, not
         // a defect — and a rule that fires on sound content is a bug in the
-        // rule.
-        .filter((value) => value.replace(/\s+/g, '') !== (params.answer || '').replace(/\s+/g, ''))
+        // rule. Scoped to spans WITH a variable: only unlike algebraic terms
+        // can legitimately refuse to combine, while a numeral prompt always
+        // has a re-expression to perform, so a numeral answer identical to its
+        // prompt ("Simplify: $\tfrac{40}{88}$" answered with itself) is the
+        // exact author error this rule exists to catch.
+        .filter((value) => !(spanHasVariable(value)
+          && value.replace(/\s+/g, '') === (params.answer || '').replace(/\s+/g, '')))
         // Reducing a rational expression — "$\frac{x^2-x-2}{x^2-3x+2}$" to
         // "$\frac{x+1}{x-1}$" — is a real instance of this hazard that no form
         // token can currently express: prompt and answer are both a single
@@ -876,9 +885,13 @@ export function lintHugo(src, filename = '') {
         // factor, which is a CAS operation rather than a shape. Reporting it
         // would name a defect with no available fix, so the rule stays silent
         // on that one shape and the class is tracked in the playbook §6
-        // worklist instead. The moment a `reduced-fraction` predicate exists,
+        // worklist instead. Scoped to spans WITH a variable — numeral
+        // fractions are fully covered by `lowest-terms`, and a reduced numeral
+        // fraction equal to the answer IS the answer, so exempting them would
+        // only hide defects. The moment a `reduced-fraction` predicate exists,
         // delete this filter.
-        .filter((value) => !(checkForm(value, 'single-fraction') && checkForm(params.answer, 'single-fraction')));
+        .filter((value) => !(spanHasVariable(value)
+          && checkForm(value, 'single-fraction') && checkForm(params.answer, 'single-fraction')));
       const printed = candidates
         .find((value) => checkAnswer(value, params.answer, { mode: params.answerMode, form: params.answerForm }) === 'correct');
       if (printed !== undefined) {

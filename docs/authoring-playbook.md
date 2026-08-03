@@ -664,7 +664,12 @@ Prompt and answer are *both* a single fraction; what separates them is
 cancelling a common polynomial factor, which is a CAS operation rather than a
 shape, and the Compute Engine's `simplify()` does not reliably perform it. The
 lint therefore skips a candidate when the printed span and the answer are both
-single fractions, so the rule reports nothing it cannot help with. Closing this
+single fractions, so the rule reports nothing it cannot help with. That
+exemption is scoped to spans containing a variable: a *numeral* fraction is
+fully expressible today (`lowest-terms`, or `single-fraction`'s written-halves
+reduced-ness test), so a numeral span is never exempt — an answer identical to
+its printed prompt in that class is the never-re-expressed author error, not an
+open problem. Closing this
 needs a `reduced-fraction` predicate (polynomial GCD, or a rational-root test
 over the integer-coefficient polynomials this corpus uses); the moment one
 exists, delete that filter in `tools/lints.mjs` and retrofit the 47.

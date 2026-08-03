@@ -280,9 +280,33 @@ for (const [student, answer, form, expected] of [
   ['\\frac{c+3}{5-c} \\div \\frac{c^2-9}{c-5}', '-\\frac{1}{c-3}', 'single-fraction', 'form'],
   ['-\\frac{12y}{x^2}', '-\\frac{12y}{x^2}', 'single-fraction', 'correct'],
   ['\\tfrac{-84x^8 y^3}{7x^{10} y^2}', '-\\frac{12y}{x^2}', 'single-fraction', 'form'],
-  // wrong values stay wrong
+  // The engine folds a numeral fraction to one Rational literal (and
+  // `\frac{40x}{88}` to a rational-coefficient product) before any structural
+  // check can see the quotient, so reduced-ness is read off the WRITTEN
+  // halves — an unreduced numeral fraction is a form miss, not a pass.
+  ['\\frac{40x}{88}', '\\frac{5x}{11}', 'single-fraction', 'form'],
+  // gcd is an integer notion: a reduced fraction with a decimal coefficient
+  // has nothing to cancel and must not fail the form.
+  ['\\frac{1.5}{x}', '\\frac{1.5}{x}', 'single-fraction', 'correct'],
+  // a single power — numeric bases take a negative exponent exactly as
+  // variable bases do, and the source's reciprocal form counts too
+  ['2^{-3}', '2^{-3}', 'single-power', 'correct'],
+  ['\\tfrac{1}{2^3}', '2^{-3}', 'single-power', 'correct'],
+  ['3^8 \\cdot 3^2', '3^{10}', 'single-power', 'form'],
+  // Wrong values stay wrong — and stay 'incorrect' even when the response
+  // ALSO violates the form. These inputs fail both checks, so they pin the
+  // value-before-form order: a fast-path refactor that read the cheap shape
+  // first would tell a learner with the wrong value "that value is right —
+  // now write it in expanded form", the exact bug the form check was built
+  // not to have. (The cases above all pair a wrong form with a RIGHT value,
+  // so they cannot see the ordering.)
   ['w^2+12w+30', 'w^2+12w+35', 'expanded', 'incorrect'],
   ['-35y^{10}', '-35y^{11}', 'single-term', 'incorrect'],
+  ['(w+5)(w+8)', 'w^2+12w+35', 'expanded', 'incorrect'],
+  ['\\frac{6}{9}', '\\frac{3}{4}', 'lowest-terms', 'incorrect'],
+  ['\\frac{34}{36}', '\\frac{17}{18}', 'single-fraction', 'form'],
+  ['\\frac{34}{40}', '\\frac{17}{18}', 'single-fraction', 'incorrect'],
+  ['\\sqrt{50}', '\\sqrt{2}', 'simplified-radical', 'incorrect'],
   // simplified-radical — read entirely off the LaTeX, because the engine
   // evaluates radical arithmetic and hands back the answer itself.
   ['\\sqrt{2}', '\\sqrt{2}', 'simplified-radical', 'correct'],
@@ -303,6 +327,15 @@ for (const [student, answer, form, expected] of [
   // rationalizing: a radical under the bar is not finished
   ['\\frac{\\sqrt{3}}{3}', '\\frac{\\sqrt{3}}{3}', 'simplified-radical', 'correct'],
   ['\\frac{1}{\\sqrt{3}}', '\\frac{\\sqrt{3}}{3}', 'simplified-radical', 'form'],
+  // An irreducible SUM under the radical has no factor to pull out — the
+  // perfect-power tests must not read its leading term and reject a correct
+  // Pythagorean-style answer forever.
+  ['\\sqrt{4+x}', '\\sqrt{4+x}', 'simplified-radical', 'correct'],
+  ['\\sqrt{x^2+y^2}', '\\sqrt{x^2+y^2}', 'simplified-radical', 'correct'],
+  // TeX's single-token argument again: hand-typed `\sqrt2` carries no braces,
+  // and an unchecked radical must not become an unexamined one.
+  ['\\sqrt2', '\\sqrt{2}', 'simplified-radical', 'correct'],
+  ['8\\sqrt2-9\\sqrt2', '-\\sqrt{2}', 'simplified-radical', 'form'],
   // no-like-terms / polynomial / distributed — the Simplify and Combine asks.
   // Every one of these prompts canonicalizes to its own answer, so each
   // predicate has to read something the engine has already folded away.

@@ -251,12 +251,14 @@ $\tfrac{5 \cdot x}{5 \cdot y} = \tfrac{x}{y}$. Simplify: $\tfrac{x}{y}$.
 {{< fillin
   question="Simplify: $\tfrac{7x}{7y}$. Use $x$ and $y$ in your answer."
   answer="\frac{x}{y}"
+  answerForm="single-fraction"
   hint="The factor $7$ appears in both the numerator and denominator — divide it out."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{3a}{3b}$. Use $a$ and $b$ in your answer."
   answer="\frac{a}{b}"
+  answerForm="single-fraction"
   hint="The factor $3$ appears in both the numerator and denominator — divide it out."
 >}}
 
