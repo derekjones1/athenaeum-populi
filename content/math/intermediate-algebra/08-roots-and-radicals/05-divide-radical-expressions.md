@@ -467,17 +467,17 @@ We do not square the numerator. Leaving it in factored form, we can see there ar
 
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{p} + \sqrt{2}}{\sqrt{p} - \sqrt{2}}$"
-  answer="\tfrac{\left(\sqrt{p} + \sqrt{2}\right)}{p - 2}^{2}"
+  answer="\tfrac{\left(\sqrt{p} + \sqrt{2}\right)^{2}}{p - 2}"
   answerForm="simplified-radical"
-  answerDisplay="$\tfrac{\left(\sqrt{p} + \sqrt{2}\right)}{p - 2}^{2}$"
+  answerDisplay="$\tfrac{\left(\sqrt{p} + \sqrt{2}\right)^{2}}{p - 2}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{q} - \sqrt{10}}{\sqrt{q} + \sqrt{10}}$"
-  answer="\tfrac{\left(\sqrt{q} - \sqrt{10}\right)}{q - 10}^{2}"
+  answer="\tfrac{\left(\sqrt{q} - \sqrt{10}\right)^{2}}{q - 10}"
   answerForm="simplified-radical"
-  answerDisplay="$\tfrac{\left(\sqrt{q} - \sqrt{10}\right)}{q - 10}^{2}$"
+  answerDisplay="$\tfrac{\left(\sqrt{q} - \sqrt{10}\right)^{2}}{q - 10}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
 

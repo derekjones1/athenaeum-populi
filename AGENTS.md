@@ -37,7 +37,7 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
 
 - `npm run serve` — local Hugo server
 - `npm run serve:public` — serve the built `public/` with no livereload
-- `npm test` — unit tests, content validation, and math lint
+- `npm test` — unit tests, content validation, answer cross-check, math lint
 - `npm run build` — clean production build plus global Pagefind
 - `npm run check:build` — route, link, search, and file-count gates
 - `npm run ci` — complete local equivalent of CI

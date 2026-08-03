@@ -23,8 +23,13 @@ lints before any authoring starts.
 ## 0. Source-first workflow (required for AI agents)
 
 Automated checks can prove that syntax renders and an authored answer grades
-against itself. They cannot prove that the transcription is faithful or that
-the answer is mathematically correct.
+against itself, and `npm run verify:answers` additionally cross-checks
+mathematical consistency for roughly half the corpus (solve prompts by
+substitution, evaluate-at prompts by substitution, re-expression prompts by
+value equivalence — all numeric, against the printed question only). They
+cannot prove that the transcription is faithful, and the cross-check cannot
+see word problems, rounding asks, or anything whose subject lives in prose,
+so independent solving against the source Answer Key remains required.
 
 Before writing:
 
@@ -552,9 +557,14 @@ From the repository root:
    or revised are defects, not backlog: clear them, or say in the handoff
    which pre-existing ones you left and why (§5).
 4. Run `npm test`. It includes whole-repository structure validation,
-   per-page real-grader verification, unit tests, repo-wide authoring lints,
-   documentation consistency checks, and KaTeX parsing. `npm run validate`
-   remains available as a focused structure-only command.
+   per-page real-grader verification, the corpus-wide answer cross-check
+   (`npm run verify:answers` — every mechanically checkable answer is
+   re-derived numerically from its own question), unit tests, repo-wide
+   authoring lints, documentation consistency checks, and KaTeX parsing.
+   `npm run validate` remains available as a focused structure-only command.
+   A cross-check failure means the answer disagrees with the printed
+   question: solve it independently before touching either side, and if the
+   checker is wrong about sound content, narrow the checker (§5 rules).
 5. For chapter/bulk work, run `npm run build` and `npm run check:build` (or
    `npm run ci`). The production audit checks, among other things, that math
    pages load the pinned KaTeX CSS and that its hidden accessibility layer
