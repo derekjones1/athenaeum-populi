@@ -72,12 +72,14 @@ product is negative.
 {{< fillin
   question="Multiply: $-6 \cdot 8$"
   answer="-48"
+  answerForm="decimal"
   hint="Different signs, so the product is negative."
 >}}
 
 {{< fillin
   question="Multiply: $-4(-7)$"
   answer="28"
+  answerForm="decimal"
   hint="Same signs, so the product is positive."
 >}}
 
@@ -101,12 +103,14 @@ $-11$.
 {{< fillin
   question="Multiply: $-1 \cdot 9$"
   answer="-9"
+  answerForm="decimal"
   hint="Multiplying by $-1$ gives the opposite of the number."
 >}}
 
 {{< fillin
   question="Multiply: $-1 \cdot (-17)$"
   answer="17"
+  answerForm="decimal"
   hint="Multiplying by $-1$ gives the opposite of the number."
 >}}
 
@@ -144,12 +148,14 @@ Remember that you can always check a division answer by multiplying.
 {{< fillin
   question="Divide: $-42 \div 6$"
   answer="-7"
+  answerForm="decimal"
   hint="Different signs, so the quotient is negative."
 >}}
 
 {{< fillin
   question="Divide: $-117 \div (-3)$"
   answer="39"
+  answerForm="decimal"
   hint="Same signs, so the quotient is positive."
 >}}
 
@@ -173,12 +179,14 @@ the result is positive, $20$.
 {{< fillin
   question="Divide: $6 \div (-1)$"
   answer="-6"
+  answerForm="decimal"
   hint="Dividing by $-1$ gives the opposite of the number."
 >}}
 
 {{< fillin
   question="Divide: $-36 \div (-1)$"
   answer="36"
+  answerForm="decimal"
   hint="Dividing by $-1$ gives the opposite of the number."
 >}}
 
@@ -194,6 +202,7 @@ $-14 + (-28) - 6$. Add: $-42-6$. Subtract: $-48$.
 {{< fillin
   question="Simplify: $8(-3) + 5(-7) - 4$"
   answer="-63"
+  answerForm="decimal"
   hint="Multiply first ($8 \cdot -3$ and $5 \cdot -7$), then add and subtract left to right."
 >}}
 
@@ -208,12 +217,14 @@ $-(2 \cdot 2 \cdot 2 \cdot 2) = -16$.
 {{< fillin
   question="Simplify: $(-3)^4$"
   answer="81"
+  answerForm="decimal"
   hint="The base is $-3$ and the exponent is $4$ — multiply four factors of $-3$."
 >}}
 
 {{< fillin
   question="Simplify: $-3^4$"
   answer="-81"
+  answerForm="decimal"
   hint="The base is $3$ (not $-3$) — raise $3$ to the fourth power, then take the opposite."
 >}}
 
@@ -223,6 +234,7 @@ first: $12-3(-3)$. Multiply: $12-(-9)$. Subtract: $21$.
 {{< fillin
   question="Simplify: $17 - 4(8 - 11)$"
   answer="29"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first ($8 - 11 = -3$), then multiply, then subtract."
 >}}
 
@@ -232,6 +244,7 @@ $8(-9) \div (-8)$. Multiply: $-72 \div (-8)$. Divide: $9$.
 {{< fillin
   question="Simplify: $12(-9) \div (-3)^3$"
   answer="4"
+  answerForm="decimal"
   hint="Simplify the exponent first ($(-3)^3 = -27$), then multiply, then divide."
 >}}
 
@@ -242,6 +255,7 @@ $6$.
 {{< fillin
   question="Simplify: $-27 \div 3 + (-5)(-6)$"
   answer="21"
+  answerForm="decimal"
   hint="Divide and multiply first, left to right, then add."
 >}}
 
@@ -306,18 +320,21 @@ Simplify: $8$.
 {{< fillin
   question="Multiply: $-4 \cdot 8$"
   answer="-32"
+  answerForm="decimal"
   hint="The signs are different, so the product is negative. Multiply $4 \cdot 8$ and attach the sign."
 >}}
 
 {{< fillin
   question="Multiply: $-18(-2)$"
   answer="36"
+  answerForm="decimal"
   hint="Both factors are negative — same signs, so the product is positive."
 >}}
 
 {{< fillin
   question="Multiply: $-1(-14)$"
   answer="14"
+  answerForm="decimal"
   hint="Multiplying by $-1$ gives the opposite of the other factor."
 >}}
 
@@ -326,18 +343,21 @@ Simplify: $8$.
 {{< fillin
   question="Divide: $-24 \div 6$"
   answer="-4"
+  answerForm="decimal"
   hint="Different signs, so the quotient is negative. Check by multiplying your answer by $6$."
 >}}
 
 {{< fillin
   question="Divide: $-52 \div (-4)$"
   answer="13"
+  answerForm="decimal"
   hint="Same signs, so the quotient is positive. Check by multiplying your answer by $-4$."
 >}}
 
 {{< fillin
   question="Divide: $49 \div (-1)$"
   answer="-49"
+  answerForm="decimal"
   hint="Dividing by $-1$ gives the opposite of the dividend."
 >}}
 
@@ -346,18 +366,21 @@ Simplify: $8$.
 {{< fillin
   question="Simplify: $5(-6) + 7(-2) - 3$"
   answer="-47"
+  answerForm="decimal"
   hint="Multiply before you add or subtract, then work left to right."
 >}}
 
 {{< fillin
   question="Simplify: $(-5)^3$"
   answer="-125"
+  answerForm="decimal"
   hint="The parentheses put the base at $-5$ — multiply three factors of $-5$. An odd number of negative factors gives a negative product."
 >}}
 
 {{< fillin
   question="Simplify: $-4^2$"
   answer="-16"
+  answerForm="decimal"
   hint="With no parentheses the base is $4$, not $-4$: square $4$ first, then take the opposite."
 >}}
 
@@ -370,6 +393,7 @@ Simplify: $8$.
 {{< fillin
   question="Simplify: $(-3)^2 - 24 \div (8 - 2)$"
   answer="5"
+  answerForm="decimal"
   hint="Grouping symbols first, then the exponent (the base is $-3$ here), then the division, then the subtraction."
 >}}
 

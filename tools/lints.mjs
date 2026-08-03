@@ -14,7 +14,7 @@ import { parseGraphPlotConfig } from '../assets/js/lib/graph-plot-config.mjs';
 // grader itself, so the trivially-satisfiable-prompt check grades a printed
 // value exactly the way a learner's submission would be graded.
 import {
-  ANSWER_FORM_TOKENS, checkAnswer, parseAnswerForm, splitTopLevelCommas, stripGroupingCommas,
+  ANSWER_FORM_TOKENS, checkAnswer, checkForm, parseAnswerForm, splitTopLevelCommas, stripGroupingCommas,
 } from '../assets/js/lib/check-answer.mjs';
 // The one objectives-callout parser, shared with the structure validator and
 // the source audit so the three tools never diagnose the callout differently.
@@ -104,6 +104,57 @@ const REEXPRESSION_RE = new RegExp([
 ].join('|'), 'i');
 
 /**
+ * Does the prompt IMPERATIVELY ask the learner to factor? Factoring is the
+ * re-expression hazard over an algebraic subject: "Factor: $x^2+6x+8$" prints
+ * a polynomial that *is* its own factorization by value, so no choice of
+ * coefficients stops a learner from passing by retyping the prompt.
+ *
+ * The word alone is far too broad — a third of the questions containing
+ * "factor" use it as a noun ("Find the greatest common factor of $12$ and
+ * $18$", "List all the factors of 96", "A factor of $-1$ appears from opposite
+ * binomials"). What separates the instruction from the noun is that the
+ * instruction OPENS with the verb, so the match is anchored to the start of the
+ * question or of a sentence within it. Singular only: every noun use in the
+ * corpus that could begin a sentence is plural.
+ */
+const FACTORING_PROMPT_RE = /(?:^|[.?!]\s+)\s*factor\b/i;
+
+/**
+ * Does the prompt ask the learner to EVALUATE printed arithmetic? "Add: $3+5$"
+ * prints an expression worth exactly its own answer, so retyping it grades
+ * correct — the same hazard as the numeral re-expressions above, reached by a
+ * different verb.
+ *
+ * Anchored to the start of the question or of a sentence within it, for the
+ * same reason as factoring: "Divide" opening an instruction is an ask, while
+ * "divide" inside prose ("…then divide both sides") is not. `evaluate` is
+ * included because "Evaluate $9+5^3$" is the same shape; an "Evaluate $3ab^2$
+ * when $a=…$" prompt prints no bare-arithmetic span and so contributes no
+ * candidate.
+ */
+const ARITHMETIC_PROMPT_RE = /(?:^|[.?!]\s+)\s*(?:add|subtract|multiply|divide|simplify|evaluate|find the (?:sum|difference|product|quotient|value))\b/i;
+
+/**
+ * Does the prompt ask the learner to carry out an ALGEBRAIC multiplication or
+ * division? "Multiply: $(w+5)(w+7)$" prints a product worth exactly its own
+ * expansion — the arithmetic hazard again, one rung up.
+ *
+ * Separate from ARITHMETIC_PROMPT_RE because the subjects differ: this path
+ * feeds the printed *polynomial* spans, and the tokens that answer it
+ * (`expanded`, `single-term`, `single-fraction`) are shape tests over algebra
+ * rather than over numerals.
+ */
+const ALGEBRAIC_PRODUCT_PROMPT_RE = /(?:^|[.?!]\s+)\s*(?:multiply|divide|find the (?:product|quotient))\b/i;
+
+/**
+ * Does the prompt ask the learner to SIMPLIFY or COMBINE an algebraic
+ * expression? "Simplify: $3x^2+7x+9+7x^2+9x+8$" prints a sum worth exactly its
+ * own combined form. Answered by `no-like-terms`, `polynomial` and
+ * `single-fraction`.
+ */
+const ALGEBRAIC_SIMPLIFY_PROMPT_RE = /(?:^|[.?!]\s+)\s*(?:simplify|add|subtract|combine|find the (?:sum|difference))\b/i;
+
+/**
  * A categorical response encoded as a number: "Answer 1 for yes or 0 for no",
  * "Enter 1 if rational, 0 if irrational", "Enter the quadrant number as a
  * digit". The learner is choosing among named alternatives, so a free-response
@@ -141,6 +192,55 @@ function printedQuestionValues(question) {
   });
   for (const m of prose.matchAll(PROSE_NUMBER_RE)) values.push(m[0]);
   return values;
+}
+
+/**
+ * The algebraic subjects a question prints — every whole $…$ span that is a
+ * bare expression in at least one variable.
+ *
+ * Kept separate from printedQuestionValues() and reached only through
+ * FACTORING_PROMPT_RE. Widening the shared numeric candidate list instead would
+ * put every "Simplify: $…$" prompt in scope in the same commit; those need
+ * their own form tokens and their own retrofit (playbook §6), and a rule that
+ * fires on a thousand sound-but-untagged exercises cannot land at all.
+ *
+ * Backslash macros are stripped before the letter test so `\tfrac`, `\cdot` and
+ * `\left` do not read as variables. A span carrying a relation, a list comma or
+ * `\text` is a statement or an enumeration, not a subject to re-express.
+ */
+function printedPolynomialSubjects(question) {
+  const subjects = [];
+  for (const span of question.matchAll(/(?<!\\)\$([^$]+?)(?<!\\)\$/g)) {
+    const inner = span[1].trim();
+    if (/[=<>,]|\\(?:lt|gt|le|ge|ne|neq|text|begin|dots|ldots)/.test(inner)) continue;
+    if (!/[A-Za-z]/.test(inner.replace(/\\[a-zA-Z]+/g, ' '))) continue;
+    subjects.push(inner);
+  }
+  return subjects;
+}
+
+/**
+ * The arithmetic a question prints — every whole $…$ span with no variable in
+ * it, for an evaluate-this prompt. The mirror of printedPolynomialSubjects()
+ * and, like it, gated on its own verb rather than folded into the shared
+ * numeric candidate list.
+ *
+ * Radicals stay out of this numeric path — a printed `\sqrt` is an algebraic
+ * subject, and `simplified-radical` answers it through the simplify path below.
+ */
+function printedArithmeticSubjects(question) {
+  const subjects = [];
+  for (const span of question.matchAll(/(?<!\\)\$([^$]+?)(?<!\\)\$/g)) {
+    const inner = span[1].trim();
+    // `{,}` is digit grouping, not a list separator: `\tfrac{91{,}881}{9}` is
+    // one quotient, and reading its comma as an enumeration would silently
+    // exempt every grouped number in the corpus from this rule.
+    const separators = inner.replace(/\{\s*,\s*\}/g, '');
+    if (/[=<>,]|\\(?:lt|gt|le|ge|ne|neq|text|begin|dots|ldots|sqrt|pi)/.test(separators)) continue;
+    if (/[A-Za-z]/.test(inner.replace(/\\[a-zA-Z]+/g, ' '))) continue;
+    subjects.push(inner);
+  }
+  return subjects;
 }
 
 export const groupDigits = (n) => n.replace(/\B(?=(\d{3})+$)/g, '{,}');
@@ -738,14 +838,48 @@ export function lintHugo(src, filename = '') {
       if (unknown.length) {
         err(index, `${where}: answerForm token(s) ${unknown.map((t) => JSON.stringify(t)).join(', ')} name no form — use ${ANSWER_FORM_TOKENS.join(', ')}`);
       }
+      // The grader returns from its list paths before the form is ever checked,
+      // so a form declared beside a comma answer grades nothing at all. Silent
+      // no-ops are worse than errors: the exercise looks guarded and is not.
+      if (params.answerMode === 'unordered' || answerParts.length > 1) {
+        err(index, `${where}: answerForm is not applied to a comma-separated answer — list grading returns before the form check, so the declared form ${JSON.stringify(params.answerForm)} silently grades nothing`);
+      }
     }
-    if ((params.answer || '').trim() && q.trim() && REEXPRESSION_RE.test(q)) {
-      // Grade each printed value under the exercise's own answerForm, exactly
+    if ((params.answer || '').trim() && q.trim()) {
+      // Grade each printed subject under the exercise's own answerForm, exactly
       // as a submission would be. A missing form leaves the prompt passable by
       // retyping it — and so does a declared form too weak to rule the printed
       // value out ("fraction" on a simplification prompt), so the form is
       // exercised rather than trusted.
-      const printed = printedQuestionValues(q)
+      //
+      // Two candidate paths, each gated on the prompt that makes it a hazard:
+      // printed numerals for a re-expression ask, printed polynomials for a
+      // factoring ask. They stay separate so widening one cannot silently
+      // enlarge the other.
+      const candidates = [
+        ...(REEXPRESSION_RE.test(q) ? printedQuestionValues(q) : []),
+        ...(FACTORING_PROMPT_RE.test(q) ? printedPolynomialSubjects(q) : []),
+        ...(ARITHMETIC_PROMPT_RE.test(q) ? printedArithmeticSubjects(q) : []),
+        ...(ALGEBRAIC_PRODUCT_PROMPT_RE.test(q) ? printedPolynomialSubjects(q) : []),
+        ...(ALGEBRAIC_SIMPLIFY_PROMPT_RE.test(q) ? printedPolynomialSubjects(q) : []),
+      ]
+        // "Add: $5a+7b$" answers with `5a+7b`: the exercise asks the learner to
+        // recognize that the terms do NOT combine, so retyping the prompt is
+        // the correct response and no form should reject it. Sound content, not
+        // a defect — and a rule that fires on sound content is a bug in the
+        // rule.
+        .filter((value) => value.replace(/\s+/g, '') !== (params.answer || '').replace(/\s+/g, ''))
+        // Reducing a rational expression — "$\frac{x^2-x-2}{x^2-3x+2}$" to
+        // "$\frac{x+1}{x-1}$" — is a real instance of this hazard that no form
+        // token can currently express: prompt and answer are both a single
+        // fraction, and what separates them is cancelling a common polynomial
+        // factor, which is a CAS operation rather than a shape. Reporting it
+        // would name a defect with no available fix, so the rule stays silent
+        // on that one shape and the class is tracked in the playbook §6
+        // worklist instead. The moment a `reduced-fraction` predicate exists,
+        // delete this filter.
+        .filter((value) => !(checkForm(value, 'single-fraction') && checkForm(params.answer, 'single-fraction')));
+      const printed = candidates
         .find((value) => checkAnswer(value, params.answer, { mode: params.answerMode, form: params.answerForm }) === 'correct');
       if (printed !== undefined) {
         const remedy = parseAnswerForm(params.answerForm).valid
@@ -759,6 +893,15 @@ export function lintHugo(src, filename = '') {
     }
     if (params.answer && /\^-/.test(params.answer)) {
       err(index, `${where}: answer has an unbraced negative exponent — write 10^{-3}, never 10^-3`);
+    }
+    // ---- unbraced multi-digit exponent: silently grades as a different value.
+    // `y^10` is `y^1` followed by a literal `0`, so the answer evaluates to
+    // zero and the learner who types the correct `y^{10}` is marked wrong.
+    // Self-grading cannot catch this — the answer is compared against itself,
+    // and a correct `answerDisplay` hides it from visual review too.
+    if (params.answer && /\^\d{2,}/.test(params.answer)) {
+      const shown = params.answer.match(/\S*\^\d{2,}\S*/)[0];
+      err(index, `${where}: answer ${JSON.stringify(shown)} has an unbraced multi-digit exponent — TeX reads \`^10\` as \`^1\` followed by \`0\`, so it grades as a different value; write y^{10}`);
     }
     if (/\\ne(?:q)?\b/.test(params.answer || '')) {
       err(index, `${where}: answer is a true/false statement (contains \\neq) — ungradeable; ask for a value or use multiplechoice`);

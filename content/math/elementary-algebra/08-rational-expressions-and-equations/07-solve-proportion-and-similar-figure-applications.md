@@ -395,6 +395,45 @@ tall.
   hint="Set up $\tfrac{h}{50} = \tfrac{8}{10}$ (height over shadow for each object), then solve for $h$."
 >}}
 
+## Practice
+
+### Solve proportions
+
+{{< fillin
+  question="Solve the proportion $\tfrac{x}{56} = \tfrac{7}{8}$."
+  answer="49"
+  hint="Multiply both sides by $56$, the LCD, then simplify $56 \cdot \tfrac{7}{8}$."
+>}}
+
+{{< fillin
+  question="Solve the proportion $\tfrac{98}{154} = \tfrac{-7}{p}$."
+  answer="-11"
+  hint="Cross-multiply: $98p = 154 \cdot (-7)$, then divide both sides by $98$."
+>}}
+
+### Solve applications using proportions, solve similar figure applications
+
+{{< fillin
+  question="Janice is traveling to Canada and will change \$250 US dollars into Canadian dollars. At the current exchange rate, \$1 US is equal to $1.01$ Canadian dollars. How many Canadian dollars will she get for her trip? Enter the number of Canadian dollars."
+  answer="252.5"
+  answerDisplay="\$252.50"
+  hint="Set up $\tfrac{1}{1.01} = \tfrac{250}{c}$ with dollars on top and Canadian dollars on the bottom, then solve for $c$."
+>}}
+
+{{< fillin
+  question="Karen eats $\tfrac{1}{2}$ cup of oatmeal that counts for $2$ points on her weight-loss program. Her husband, Joe, can have $3$ points of oatmeal for breakfast. How much oatmeal can he have? Enter the amount in cups as a fraction."
+  answer="\tfrac{3}{4}"
+  answerDisplay="$\tfrac{3}{4}$ cup"
+  hint="Find cups per point first: $\tfrac{1}{2} \div 2$, then multiply by $3$ points."
+>}}
+
+{{< fillin
+  question="A $2$-foot-tall dog casts a $3$-foot shadow at the same time a cat casts a $1$-foot shadow. How tall is the cat? Enter the height in feet as a fraction."
+  answer="\tfrac{2}{3}"
+  answerDisplay="$\tfrac{2}{3}$ foot (8 inches)"
+  hint="Set up $\tfrac{2}{3} = \tfrac{h}{1}$ (height over shadow for each animal), then solve for $h$."
+>}}
+
 ## Key terms
 
 **proportion** — an equation of the form $\tfrac{a}{b} = \tfrac{c}{d}$ (with
@@ -406,4 +445,4 @@ equal and their corresponding sides are in the same ratio.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.7: Solve Proportion and Similar Figure Applications](https://openstax.org/books/elementary-algebra-2e/pages/8-7-solve-proportion-and-similar-figure-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, recast the "How To" procedure as a proportion strategy paragraph, recreated the similar-triangle and map figures with the accessible `<Figure />` component; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.7: Solve Proportion and Similar Figure Applications](https://openstax.org/books/elementary-algebra-2e/pages/8-7-solve-proportion-and-similar-figure-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, recast the "How To" procedure as a proportion strategy paragraph, recreated the similar-triangle and map figures with the accessible `<Figure />` component; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section "Practice Makes Perfect" exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

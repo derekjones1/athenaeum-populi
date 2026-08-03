@@ -52,6 +52,7 @@ $$3(x + 4) = 3 \cdot x + 3 \cdot 4 = 3x + 12$$
 {{< fillin
   question="Simplify: $4(x + 2)$."
   answer="4x + 8"
+  answerForm="expanded"
   hint="Distribute the $4$ to both $x$ and $2$, then multiply each term."
 >}}
 
@@ -78,6 +79,7 @@ $$2(x - 3) = 2 \cdot x - 2 \cdot 3 = 2x - 6$$
 {{< fillin
   question="Simplify: $7(x - 6)$."
   answer="7x - 42"
+  answerForm="expanded"
   hint="Distribute the $7$ to both $x$ and $6$, keeping the subtraction."
 >}}
 
@@ -96,6 +98,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{2}{5}(p + 10)$."
   answer="\frac{2}{5}p + 4"
+  answerForm="expanded"
   answerDisplay="$\tfrac{2}{5}p + 4$"
   hint="Distribute $\tfrac{2}{5}$ to both $p$ and $10$; $\tfrac{2}{5}$ of $10$ is $4$."
 >}}
@@ -118,6 +121,7 @@ $$100(0.3) + 100(0.25q) = 30 + 25q$$
 {{< fillin
   question="Simplify: $100(0.7 + 0.15p)$."
   answer="70 + 15p"
+  answerForm="expanded"
   hint="Distribute the $100$ to both $0.7$ and $0.15p$."
 >}}
 
@@ -137,6 +141,7 @@ number and a variable, we write the number first.
 {{< fillin
   question="Simplify: $r(s - 2)$."
   answer="rs - 2r"
+  answerForm="expanded"
   hint="Distribute $r$ to both $s$ and $2$, then write the number first in the second term ($2r$, not $r2$)."
 >}}
 
@@ -152,6 +157,7 @@ $$(x + 8)p = px + 8p$$
 {{< fillin
   question="Simplify: $(y + 4)q$."
   answer="qy + 4q"
+  answerForm="expanded"
   hint="Distribute $q$ to both $y$ and $4$, writing the number first in the constant term."
 >}}
 
@@ -167,6 +173,7 @@ $$-2 \cdot 4y + (-2) \cdot 1 = -8y - 2$$
 {{< fillin
   question="Simplify: $-3(6m + 5)$."
   answer="-18m - 15"
+  answerForm="expanded"
   hint="Distribute $-3$ to both $6m$ and $5$, keeping careful track of the signs."
 >}}
 
@@ -181,6 +188,7 @@ You could also write the result as $33a - 44$. Do you know why?
 {{< fillin
   question="Simplify: $-5(2 - 3a)$."
   answer="15a - 10"
+  answerForm="expanded"
   hint="Distribute $-5$ to both $2$ and $3a$; subtracting a negative flips a sign."
 >}}
 
@@ -196,6 +204,7 @@ $$-1(y + 5) = -1 \cdot y + (-1) \cdot 5 = -y + (-5) = -y - 5$$
 {{< fillin
   question="Simplify: $-(z - 11)$."
   answer="-z + 11"
+  answerForm="expanded"
   hint="Rewrite as $-1(z - 11)$, then distribute $-1$ to both terms."
 >}}
 
@@ -213,6 +222,7 @@ $$8 - 2 \cdot x - 2 \cdot 3 = 8 - 2x - 6 = -2x + 2$$
 {{< fillin
   question="Simplify: $9 - 3(x + 2)$."
   answer="-3x + 3"
+  answerForm="distributed"
   hint="Distribute the $-3$ across $(x + 2)$ first, then combine the constant terms."
 >}}
 
@@ -225,6 +235,7 @@ $$4x - 32 - x - 3 = 3x - 35$$
 {{< fillin
   question="Simplify: $6(x - 9) - (x + 12)$."
   answer="5x - 66"
+  answerForm="distributed"
   hint="Distribute the $6$ across $(x - 9)$ and the implied $-1$ across $(x + 12)$, then combine like terms."
 >}}
 
@@ -292,18 +303,21 @@ The answers are the same when $y = 35$, demonstrating that $-(y + 5) = -y -
 {{< fillin
   question="Simplify: $9(3w + 7)$."
   answer="27w + 63"
+  answerForm="expanded"
   hint="Distribute the $9$ to both $3w$ and $7$, multiplying the coefficients."
 >}}
 
 {{< fillin
   question="Simplify: $5(7u - 4)$."
   answer="35u - 20"
+  answerForm="expanded"
   hint="Use $a(b - c) = ab - ac$: multiply the $5$ by each term and keep the subtraction."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{1}{5}(4m + 20)$."
   answer="\frac{4}{5}m + 4"
+  answerForm="expanded"
   answerDisplay="$\tfrac{4}{5}m + 4$"
   hint="Multiply $\tfrac{1}{5}$ by $4m$ and by $20$; one fifth of $20$ is a whole number."
 >}}
@@ -311,30 +325,35 @@ The answers are the same when $y = 35$, demonstrating that $-(y + 5) = -y -
 {{< fillin
   question="Simplify: $u(v - 10)$."
   answer="uv - 10u"
+  answerForm="expanded"
   hint="Distribute the variable $u$ to both terms, then write the number before the variable in the second term."
 >}}
 
 {{< fillin
   question="Simplify: $(a + 7)x$."
   answer="ax + 7x"
+  answerForm="expanded"
   hint="This is the backwards form $(b + c)a = ba + ca$, so multiply each term inside the parentheses by $x$."
 >}}
 
 {{< fillin
   question="Simplify: $-9(9a + 4)$."
   answer="-81a - 36"
+  answerForm="expanded"
   hint="Distributing a negative number makes both products negative."
 >}}
 
 {{< fillin
   question="Simplify: $-(5p - 4)$."
   answer="-5p + 4"
+  answerForm="expanded"
   hint="Rewrite the leading minus sign as $-1$, then distribute it to both terms."
 >}}
 
 {{< fillin
   question="Simplify: $7(3n + 9) - (4n - 13)$."
   answer="17n + 76"
+  answerForm="distributed"
   hint="Distribute the $7$ across the first parentheses and the implied $-1$ across the second, then combine like terms."
 >}}
 

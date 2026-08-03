@@ -69,6 +69,7 @@ $$10^{-3} = \frac{1}{10^3} = \frac{1}{1000}$$
 {{< fillin
   question="Simplify: $2^{-3}$."
   answer="\frac{1}{8}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{1}{8}$"
   hint="Use $a^{-n} = \tfrac{1}{a^n}$: take the reciprocal of the base and drop the negative sign from the exponent."
 >}}
@@ -76,6 +77,7 @@ $$10^{-3} = \frac{1}{10^3} = \frac{1}{1000}$$
 {{< fillin
   question="Simplify: $10^{-2}$."
   answer="\frac{1}{100}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{1}{100}$"
   hint="Use $a^{-n} = \tfrac{1}{a^n}$: take the reciprocal of the base and drop the negative sign from the exponent."
 >}}
@@ -98,6 +100,7 @@ $$-3^{-2} = -1 \cdot 3^{-2} = -1 \cdot \frac{1}{3^2} = -\frac{1}{9}$$
 {{< fillin
   question="Simplify: $(-5)^{-2}$."
   answer="\frac{1}{25}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{1}{25}$"
   hint="The exponent applies to the whole base, $-5$, so square $-5$ first and then take the reciprocal."
 >}}
@@ -105,6 +108,7 @@ $$-3^{-2} = -1 \cdot 3^{-2} = -1 \cdot \frac{1}{3^2} = -\frac{1}{9}$$
 {{< fillin
   question="Simplify: $-5^{-2}$."
   answer="-\frac{1}{25}"
+  answerForm="fraction"
   answerDisplay="$-\tfrac{1}{25}$"
   hint="Without parentheses the exponent applies only to $5$, not to the negative sign. Rewrite as $-1$ times $5^{-2}$."
 >}}
@@ -126,12 +130,14 @@ $$(4 \cdot 2)^{-1} = (8)^{-1} = \frac{1}{8^1} = \frac{1}{8}$$
 {{< fillin
   question="Simplify: $6 \cdot 3^{-1}$."
   answer="2"
+  answerForm="decimal"
   hint="Order of operations puts exponents before multiplication: simplify $3^{-1}$ first, then multiply by $6$."
 >}}
 
 {{< fillin
   question="Simplify: $(6 \cdot 3)^{-1}$."
   answer="\frac{1}{18}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{1}{18}$"
   hint="The parentheses mean the exponent applies to the whole product. Multiply $6$ by $3$ first, then take the reciprocal."
 >}}
@@ -148,6 +154,7 @@ $$x^{-6} = \frac{1}{x^6}$$
 {{< fillin
   question="Simplify: $y^{-7}$."
   answer="\frac{1}{y^7}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{y^7}$"
   hint="Take the reciprocal of $y$ and change the sign of the exponent."
 >}}
@@ -176,6 +183,7 @@ $$(-5y)^{-1} = \frac{1}{(-5y)^1} = \frac{1}{-5y} = -\frac{1}{5y}$$
 {{< fillin
   question="Simplify: $8p^{-1}$."
   answer="\frac{8}{p}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{8}{p}$"
   hint="The exponent applies to just $p$. Take the reciprocal of $p$ and change the sign of its exponent."
 >}}
@@ -183,6 +191,7 @@ $$(-5y)^{-1} = \frac{1}{(-5y)^1} = \frac{1}{-5y} = -\frac{1}{5y}$$
 {{< fillin
   question="Simplify: $(8p)^{-1}$."
   answer="\frac{1}{8p}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{8p}$"
   hint="The parentheses make the exponent apply to the whole product $8p$."
 >}}
@@ -190,6 +199,7 @@ $$(-5y)^{-1} = \frac{1}{(-5y)^1} = \frac{1}{-5y} = -\frac{1}{5y}$$
 {{< fillin
   question="Simplify: $(-8p)^{-1}$."
   answer="-\frac{1}{8p}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{1}{8p}$"
   hint="The base is $-8p$. Take the reciprocal of $-8p$, then rewrite the resulting negative denominator as a leading negative sign."
 >}}
@@ -244,12 +254,14 @@ $$z^{-5} \cdot z^{-3} = z^{-5-3} = z^{-8} = \frac{1}{z^8}$$
 {{< fillin
   question="Simplify: $x^{-3} \cdot x^7$."
   answer="x^4"
+  answerForm="single-term"
   hint="Add the exponents, since the bases are the same: $-3 + 7$."
 >}}
 
 {{< fillin
   question="Simplify: $y^{-7} \cdot y^2$."
   answer="\frac{1}{y^5}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{y^5}$"
   hint="Add the exponents first ($-7 + 2$), then rewrite the negative exponent as a reciprocal."
 >}}
@@ -268,6 +280,7 @@ $$(m^4 n^{-3})(m^{-5} n^{-2}) = m^4 m^{-5} \cdot n^{-3} n^{-2} = m^{-1} \cdot n^
 {{< fillin
   question="Simplify: $(p^6 q^{-2})(p^{-9} q^{-1})$."
   answer="\frac{1}{p^3 q^3}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{p^3 q^3}$"
   hint="Group the like bases together and add exponents: $p^{6-9}$ and $q^{-2-1}$. Then rewrite both negative exponents as reciprocals."
 >}}
@@ -285,6 +298,7 @@ $$(2x^{-6} y^8)(-5x^5 y^{-3}) = 2(-5) \cdot (x^{-6} x^5) \cdot (y^8 y^{-3}) = -1
 {{< fillin
   question="Simplify: $(3u^{-5} v^7)(-4u^4 v^{-2})$."
   answer="-\frac{12 v^5}{u}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{12v^5}{u}$"
   hint="Multiply the coefficients ($3$ times $-4$), then add exponents for $u$ ($-5+4$) and for $v$ ($7-2$). Rewrite the negative exponent on $u$ as a reciprocal."
 >}}
@@ -302,6 +316,7 @@ $$(k^3)^{-2} = k^{3(-2)} = k^{-6} = \frac{1}{k^6}$$
 {{< fillin
   question="Simplify: $(x^4)^{-1}$."
   answer="\frac{1}{x^4}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{x^4}$"
   hint="Multiply the exponents, $4$ times $-1$, then rewrite the negative exponent as a reciprocal."
 >}}
@@ -317,6 +332,7 @@ $$(5x^{-3})^2 = 5^2 (x^{-3})^2 = 25 x^{-6} = 25 \cdot \frac{1}{x^6} = \frac{25}{
 {{< fillin
   question="Simplify: $(8a^{-4})^2$."
   answer="\frac{64}{a^8}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{64}{a^8}$"
   hint="Raise the coefficient and the variable factor separately to the power of $2$, then rewrite the negative exponent on $a$ as a reciprocal."
 >}}
@@ -333,6 +349,7 @@ $$\frac{r^5}{r^{-4}} = r^{5-(-4)} = r^9$$
 {{< fillin
   question="Simplify: $\tfrac{x^8}{x^{-3}}$."
   answer="x^{11}"
+  answerForm="polynomial"
   hint="Subtract the exponents, numerator minus denominator: $8 - (-3)$."
 >}}
 
@@ -501,6 +518,7 @@ $$(4 \times 10^5)(2 \times 10^{-7}) = 4 \cdot 2 \cdot 10^5 \cdot 10^{-7} = 8 \ti
 {{< fillin
   question="Multiply. Write the answer in decimal form: $(3 \times 10^6)(2 \times 10^{-8})$."
   answer="0.06"
+  answerForm="decimal"
   hint="Multiply the coefficients ($3$ times $2$) and add the exponents on $10$ ($6 + (-8)$), then move the decimal point to write the result in decimal form."
 >}}
 
@@ -516,6 +534,7 @@ $$\frac{9 \times 10^3}{3 \times 10^{-2}} = \frac{9}{3} \times \frac{10^3}{10^{-2
 {{< fillin
   question="Divide. Write the answer in decimal form: $\tfrac{8 \times 10^4}{2 \times 10^{-1}}$."
   answer="400000"
+  answerForm="decimal"
   answerDisplay="400,000"
   hint="Divide the coefficients ($8$ by $2$) and subtract the exponents on $10$ ($4 - (-1)$), then convert the result to decimal form."
 >}}
@@ -527,6 +546,7 @@ $$\frac{9 \times 10^3}{3 \times 10^{-2}} = \frac{9}{3} \times \frac{10^3}{10^{-2
 {{< fillin
   question="Simplify: $8^{-2}$."
   answer="\frac{1}{64}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{1}{64}$"
   hint="Use $a^{-n} = \tfrac{1}{a^n}$: put $8^2$ in the denominator of a fraction with numerator $1$."
 >}}
@@ -534,6 +554,7 @@ $$\frac{9 \times 10^3}{3 \times 10^{-2}} = \frac{9}{3} \times \frac{10^3}{10^{-2
 {{< fillin
   question="Simplify: $3^{-2} + 3^{-1}$."
   answer="\frac{4}{9}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{4}{9}$"
   hint="Rewrite each term as a fraction first, then add using a common denominator of $9$."
 >}}
@@ -541,6 +562,7 @@ $$\frac{9 \times 10^3}{3 \times 10^{-2}} = \frac{9}{3} \times \frac{10^3}{10^{-2
 {{< fillin
   question="Simplify: $(-8)^{-2}$."
   answer="\frac{1}{64}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{1}{64}$"
   hint="The parentheses make $-8$ the base. Square $-8$ before taking the reciprocal, and remember an even power of a negative number is positive."
 >}}
@@ -548,6 +570,7 @@ $$\frac{9 \times 10^3}{3 \times 10^{-2}} = \frac{9}{3} \times \frac{10^3}{10^{-2
 {{< fillin
   question="Simplify: $-8^{-2}$."
   answer="-\frac{1}{64}"
+  answerForm="fraction"
   answerDisplay="$-\tfrac{1}{64}$"
   hint="Without parentheses the exponent applies only to $8$. Rewrite the expression as $-1 \cdot 8^{-2}$."
 >}}
@@ -555,6 +578,7 @@ $$\frac{9 \times 10^3}{3 \times 10^{-2}} = \frac{9}{3} \times \frac{10^3}{10^{-2
 {{< fillin
   question="Simplify: $p^{-3}$."
   answer="\frac{1}{p^3}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{p^3}$"
   hint="Take the reciprocal of the base $p$ and change the sign of the exponent."
 >}}
@@ -564,6 +588,7 @@ $$\frac{9 \times 10^3}{3 \times 10^{-2}} = \frac{9}{3} \times \frac{10^3}{10^{-2
 {{< fillin
   question="Simplify: $q^{-8} \cdot q^3$."
   answer="\frac{1}{q^5}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{q^5}$"
   hint="The bases match, so add the exponents ($-8 + 3$), then rewrite the negative exponent as a reciprocal."
 >}}
@@ -571,6 +596,7 @@ $$\frac{9 \times 10^3}{3 \times 10^{-2}} = \frac{9}{3} \times \frac{10^3}{10^{-2
 {{< fillin
   question="Simplify: $(-3p^{-5} q^8)(7p^2 q^{-3})$."
   answer="-\frac{21 q^5}{p^3}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{21q^5}{p^3}$"
   hint="Multiply the coefficients ($-3$ times $7$), then add exponents for $p$ ($-5+2$) and for $q$ ($8-3$). Move the factor with the negative exponent into the denominator."
 >}}
@@ -578,6 +604,7 @@ $$\frac{9 \times 10^3}{3 \times 10^{-2}} = \frac{9}{3} \times \frac{10^3}{10^{-2
 {{< fillin
   question="Simplify: $(2n^{-3})^{-6}$."
   answer="\frac{n^{18}}{64}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{n^{18}}{64}$"
   hint="Raise each factor to the power $-6$: the coefficient becomes $2^{-6}$, which goes in the denominator, and the exponents on $n$ multiply."
 >}}
@@ -585,6 +612,7 @@ $$\frac{9 \times 10^3}{3 \times 10^{-2}} = \frac{9}{3} \times \frac{10^3}{10^{-2
 {{< fillin
   question="Simplify: $\tfrac{m^5}{m^{-2}}$."
   answer="m^7"
+  answerForm="polynomial"
   hint="Use the Quotient Property and subtract carefully: $5 - (-2)$."
 >}}
 
@@ -640,18 +668,21 @@ $$\frac{9 \times 10^3}{3 \times 10^{-2}} = \frac{9}{3} \times \frac{10^3}{10^{-2
 {{< fillin
   question="Multiply. Write the answer in decimal form: $(3 \times 10^2)(1 \times 10^{-5})$."
   answer="0.003"
+  answerForm="decimal"
   hint="Multiply the coefficients and add the exponents on $10$ ($2 + (-5)$), then move the decimal point to write the result in decimal form."
 >}}
 
 {{< fillin
   question="Multiply. Write the answer in decimal form: $(2.1 \times 10^{-4})(3.5 \times 10^{-2})$."
   answer="0.00000735"
+  answerForm="decimal"
   hint="Multiply $2.1$ by $3.5$ and add the exponents ($-4 + (-2)$). The coefficient $7.35$ is still between $1$ and $10$, so just shift its decimal point six places left."
 >}}
 
 {{< fillin
   question="Divide. Write the answer in decimal form: $\tfrac{8 \times 10^6}{4 \times 10^{-1}}$."
   answer="20000000"
+  answerForm="decimal"
   answerDisplay="20,000,000"
   hint="Divide the coefficients ($8$ by $4$) and subtract the exponents on $10$ ($6 - (-1)$), then convert the result to decimal form."
 >}}

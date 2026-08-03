@@ -65,6 +65,7 @@ $\tfrac{3+1}{5} = \tfrac{4}{5}$.
 {{< fillin
   question="Find the sum: $\tfrac{3}{6} + \tfrac{2}{6}$"
   answer="\frac{5}{6}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{6}$"
   hint="Add the numerators and keep the same denominator."
 >}}
@@ -78,6 +79,7 @@ and $2$ aren't like terms, they can't be combined.
 {{< fillin
   question="Find the sum: $\tfrac{x}{4} + \tfrac{3}{4}$"
   answer="\frac{x+3}{4}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{x+3}{4}$"
   hint="Add the numerators over the common denominator; $x$ and $3$ are not like terms, so leave them separate."
 >}}
@@ -94,6 +96,7 @@ $$-\frac{9}{d} + \frac{3}{d} = -\frac{6}{d}$$
 {{< fillin
   question="Find the sum: $-\tfrac{7}{d} + \tfrac{8}{d}$"
   answer="\frac{1}{d}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{d}$"
   hint="Rewrite $-\tfrac{7}{d}$ as $\tfrac{-7}{d}$, add the numerators, then simplify the sign."
 >}}
@@ -108,6 +111,7 @@ $$\frac{2n}{11} + \frac{5n}{11} = \frac{7n}{11}$$
 {{< fillin
   question="Find the sum: $\tfrac{3p}{8} + \tfrac{6p}{8}$"
   answer="\frac{9p}{8}"
+  answerForm="no-like-terms"
   answerDisplay="$\tfrac{9p}{8}$"
   hint="Add the numerators (combining like terms), then place over the common denominator."
 >}}
@@ -123,6 +127,7 @@ $$-\frac{3}{12} + \left(-\frac{5}{12}\right) = -\frac{2}{3}$$
 {{< fillin
   question="Find the sum: $-\tfrac{4}{15} + \left(-\tfrac{6}{15}\right)$"
   answer="-\frac{2}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{2}{3}$"
   hint="Add the numerators over the common denominator, then simplify by removing common factors."
 >}}
@@ -177,6 +182,7 @@ $$\frac{23}{24} - \frac{14}{24} = \frac{3}{8}$$
 {{< fillin
   question="Find the difference: $\tfrac{19}{28} - \tfrac{7}{28}$"
   answer="\frac{3}{7}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{7}$"
   hint="Subtract the numerators, place over the common denominator, then simplify."
 >}}
@@ -190,6 +196,7 @@ $y$ and $1$ are not like terms and cannot be combined.
 {{< fillin
   question="Find the difference: $\tfrac{x}{7} - \tfrac{2}{7}$"
   answer="\frac{x-2}{7}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{x-2}{7}$"
   hint="Subtract the numerators over the common denominator; $x$ and $2$ cannot be combined."
 >}}
@@ -205,6 +212,7 @@ $$-\frac{10}{x} - \frac{4}{x} = -\frac{14}{x}$$
 {{< fillin
   question="Find the difference: $-\tfrac{9}{x} - \tfrac{7}{x}$"
   answer="-\frac{16}{x}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{16}{x}$"
   hint="Rewrite the first fraction as $\tfrac{-9}{x}$, subtract the numerators, then simplify the sign."
 >}}
@@ -223,6 +231,7 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = -\frac{3}{8}$$
 {{< fillin
   question="Simplify: $\tfrac{2}{5} + \left(-\tfrac{4}{5}\right) - \tfrac{3}{5}$"
   answer="-1"
+  answerForm="decimal"
   hint="Combine all the numerators over the common denominator of $5$, working left to right."
 >}}
 
@@ -273,6 +282,7 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = -\frac{3}{8}$$
 {{< fillin
   question="Find the sum: $\tfrac{2}{9} + \tfrac{5}{9}$"
   answer="\frac{7}{9}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{7}{9}$"
   hint="Add the numerators and place the sum over the common denominator of $9$."
 >}}
@@ -280,6 +290,7 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = -\frac{3}{8}$$
 {{< fillin
   question="Find the sum: $\tfrac{y}{3} + \tfrac{2}{3}$"
   answer="\frac{y+2}{3}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{y+2}{3}$"
   hint="Put $y + 2$ over the common denominator; $y$ and $2$ are not like terms, so the numerator cannot be combined further."
 >}}
@@ -287,6 +298,7 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = -\frac{3}{8}$$
 {{< fillin
   question="Find the sum: $\tfrac{5a}{7} + \tfrac{4a}{7}$"
   answer="\frac{9a}{7}"
+  answerForm="no-like-terms"
   answerDisplay="$\tfrac{9a}{7}$"
   hint="Both numerators are $a$-terms, so combine like terms in the numerator and keep the denominator $7$."
 >}}
@@ -294,6 +306,7 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = -\frac{3}{8}$$
 {{< fillin
   question="Find the sum: $-\tfrac{1}{8} + \left(-\tfrac{5}{8}\right)$"
   answer="-\frac{3}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{3}{4}$"
   hint="Add $-1$ and $-5$ over the denominator $8$, then simplify by removing the common factor of $2$."
 >}}
@@ -301,6 +314,7 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = -\frac{3}{8}$$
 {{< fillin
   question="Find the sum: $\tfrac{5}{12} + \left(-\tfrac{7}{12}\right) + \left(-\tfrac{11}{12}\right)$"
   answer="-\frac{13}{12}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{13}{12}$"
   hint="Combine all three numerators over the single common denominator of $12$, working left to right."
 >}}
@@ -335,6 +349,7 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = -\frac{3}{8}$$
 {{< fillin
   question="Find the difference: $\tfrac{7}{12} - \tfrac{5}{12}$"
   answer="\frac{1}{6}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{6}$"
   hint="Subtract the numerators over the denominator $12$, then remove the common factor of $2$."
 >}}
@@ -342,6 +357,7 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = -\frac{3}{8}$$
 {{< fillin
   question="Find the difference: $\tfrac{x}{19} - \tfrac{8}{19}$"
   answer="\frac{x-8}{19}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{x-8}{19}$"
   hint="Write $x - 8$ over the common denominator; the terms in the numerator are unlike, so stop there."
 >}}
@@ -349,6 +365,7 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = -\frac{3}{8}$$
 {{< fillin
   question="Find the difference: $-\tfrac{7}{c} - \tfrac{7}{c}$"
   answer="-\frac{14}{c}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{14}{c}$"
   hint="Rewrite the first fraction as $\tfrac{-7}{c}$, subtract the numerators, then move the negative sign in front."
 >}}
@@ -356,6 +373,7 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = -\frac{3}{8}$$
 {{< fillin
   question="Find the difference: $\tfrac{12d}{11} - \tfrac{9d}{11}$"
   answer="\frac{3d}{11}"
+  answerForm="no-like-terms"
   answerDisplay="$\tfrac{3d}{11}$"
   hint="Both numerators are $d$-terms, so subtract like terms and keep the denominator $11$."
 >}}
@@ -363,6 +381,7 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = -\frac{3}{8}$$
 {{< fillin
   question="Find the difference: $-\tfrac{3}{7} - \left(-\tfrac{5}{7}\right)$"
   answer="\frac{2}{7}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{7}$"
   hint="Subtracting a negative adds: the numerator becomes $-3 - (-5)$."
 >}}

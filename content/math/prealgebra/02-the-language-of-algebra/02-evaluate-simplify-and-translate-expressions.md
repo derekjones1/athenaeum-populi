@@ -137,6 +137,7 @@ $7x + 12$.
   question="Simplify by combining like terms: $3x + 7 + 4x + 5$"
   answer="7x + 12"
   answerDisplay="$7x + 12$"
+  answerForm="no-like-terms"
   hint="Add the $x$-terms together ($3x + 4x$) and the constants together ($7 + 5$)."
 >}}
 
@@ -151,6 +152,7 @@ $6x^2 + 4x$. Since $6x^2$ and $4x$ are not like terms, this is in simplest form.
   question="Simplify by combining like terms: $7x^2 + 8x - x^2 - 4x$"
   answer="6x^2 + 4x"
   answerDisplay="$6x^2 + 4x$"
+  answerForm="no-like-terms"
   hint="Combine the $x^2$ terms ($7x^2 - x^2$) and the $x$ terms ($8x - 4x$) separately; they cannot be combined with each other."
 >}}
 
@@ -280,6 +282,7 @@ $16ab$, $16b^2$, and $4ab$; $9a$ and $9b^2$
   question="Simplify by combining like terms: $17a + 9a$"
   answer="26a"
   answerDisplay="$26a$"
+  answerForm="no-like-terms"
   hint="Both terms carry the same variable, so add the coefficients and keep $a$."
 >}}
 
@@ -287,6 +290,7 @@ $16ab$, $16b^2$, and $4ab$; $9a$ and $9b^2$
   question="Simplify by combining like terms: $9x + 3x + 8$"
   answer="12x + 8"
   answerDisplay="$12x + 8$"
+  answerForm="no-like-terms"
   hint="Only the two $x$-terms are alike; the constant $8$ has nothing to combine with, so it stays as it is."
 >}}
 
@@ -294,6 +298,7 @@ $16ab$, $16b^2$, and $4ab$; $9a$ and $9b^2$
   question="Simplify by combining like terms: $10a + 7 + 5a - 2 + 7a - 4$"
   answer="22a + 1"
   answerDisplay="$22a + 1$"
+  answerForm="no-like-terms"
   hint="Add the three $a$-coefficients, then combine the constants $7 - 2 - 4$. Keep each sign with the term that follows it."
 >}}
 
@@ -301,6 +306,7 @@ $16ab$, $16b^2$, and $4ab$; $9a$ and $9b^2$
   question="Simplify by combining like terms: $3x^2 + 12x + 11 + 14x^2 + 8x + 5$"
   answer="17x^2 + 20x + 16"
   answerDisplay="$17x^2 + 20x + 16$"
+  answerForm="no-like-terms"
   hint="There are three families here — the $x^2$ terms, the $x$ terms, and the constants. Combine each family on its own; they cannot be merged with each other."
 >}}
 

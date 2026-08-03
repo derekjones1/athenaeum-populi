@@ -62,12 +62,14 @@ denominator of $x+4$, so $x\ne -4$.
 {{< fillin
   question="Simplify $\tfrac{9x+14}{x+7}+\tfrac{x^2}{x+7}$."
   answer="x+2"
+  answerForm="polynomial"
   hint="Add the numerators over the common denominator, then factor the numerator."
 >}}
 
 {{< fillin
   question="Simplify $\tfrac{x^2+8x}{x+5}+\tfrac{15}{x+5}$."
   answer="x+3"
+  answerForm="polynomial"
   hint="Combine the numerators, then factor $x^2+8x+15$."
 >}}
 
@@ -93,6 +95,7 @@ $$
 {{< fillin
   question="Subtract $\tfrac{4x^2-11x+8}{x^2-3x+2}-\tfrac{3x^2+x-3}{x^2-3x+2}$."
   answer="\frac{x-11}{x-2}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{x-11}{x-2}$"
   hint="Subtract the entire second numerator, combine like terms, and factor both numerator and denominator."
 >}}
@@ -100,6 +103,7 @@ $$
 {{< fillin
   question="Subtract $\tfrac{6x^2-x+20}{x^2-81}-\tfrac{5x^2+11x-7}{x^2-81}$."
   answer="\frac{x-3}{x+9}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{x-3}{x+9}$"
   hint="Distribute the subtraction sign, combine like terms, then factor."
 >}}
@@ -138,6 +142,7 @@ $$
 {{< fillin
   question="Subtract $\tfrac{y^2-5y}{y^2-4}-\tfrac{6y-6}{4-y^2}$."
   answer="\frac{y+3}{y+2}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{y+3}{y+2}$"
   hint="The denominators are opposites. Multiply the second rational expression by $\tfrac{-1}{-1}$ before subtracting."
 >}}
@@ -145,6 +150,7 @@ $$
 {{< fillin
   question="Subtract $\tfrac{2n^2+8n-1}{n^2-1}-\tfrac{n^2-7n-1}{1-n^2}$."
   answer="\frac{3n-2}{n-1}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{3n-2}{n-1}$"
   hint="Rewrite the second denominator as $n^2-1$ by multiplying its fraction by $\tfrac{-1}{-1}$."
 >}}
@@ -236,6 +242,7 @@ Because $5x-12$ cannot be factored, the answer is simplified.
 {{< fillin
   question="Add $\tfrac{2}{x-2}+\tfrac{5}{x+3}$."
   answer="\frac{7x-4}{(x-2)(x+3)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{7x-4}{(x-2)(x+3)}$"
   hint="The LCD is $(x-2)(x+3)$. Multiply each numerator by the factor missing from its denominator."
 >}}
@@ -243,6 +250,7 @@ Because $5x-12$ cannot be factored, the answer is simplified.
 {{< fillin
   question="Add $\tfrac{4}{m+3}+\tfrac{3}{m+4}$."
   answer="\frac{7m+25}{(m+3)(m+4)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{7m+25}{(m+3)(m+4)}$"
   hint="Use $(m+3)(m+4)$ as the LCD, rewrite both fractions, and combine the numerators."
 >}}
@@ -281,6 +289,7 @@ The numerator is prime, so there are no common factors.
 {{< fillin
   question="Add $\tfrac{1}{m^2-m-2}+\tfrac{5m}{m^2+3m+2}$."
   answer="\frac{5m^2-9m+2}{(m+1)(m-2)(m+2)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{5m^2-9m+2}{(m+1)(m-2)(m+2)}$"
   hint="Factor both denominators. Their common factor is $m+1$."
 >}}
@@ -288,6 +297,7 @@ The numerator is prime, so there are no common factors.
 {{< fillin
   question="Add $\tfrac{2n}{n^2-3n-10}+\tfrac{6}{n^2+5n+6}$."
   answer="\frac{2n^2+12n-30}{(n+2)(n-5)(n+3)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{2n^2+12n-30}{(n+2)(n-5)(n+3)}$"
   hint="Factor both denominators, find the LCD, and multiply each numerator by its missing factor."
 >}}
@@ -314,6 +324,7 @@ $$
 {{< fillin
   question="Subtract $\tfrac{2x}{x^2-4}-\tfrac{1}{x+2}$."
   answer="\frac{1}{x-2}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{x-2}$"
   hint="Factor $x^2-4$, rewrite the second fraction with the LCD, and subtract."
 >}}
@@ -321,6 +332,7 @@ $$
 {{< fillin
   question="Subtract $\tfrac{3}{z+3}-\tfrac{6z}{z^2-9}$."
   answer="-\frac{3}{z-3}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{3}{z-3}$"
   hint="Factor $z^2-9=(z-3)(z+3)$ and rewrite the first fraction with the LCD."
 >}}
@@ -348,6 +360,7 @@ $$
 {{< fillin
   question="Subtract $\tfrac{3x-1}{x^2-5x-6}-\tfrac{2}{6-x}$."
   answer="\frac{5x+1}{(x-6)(x+1)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{5x+1}{(x-6)(x+1)}$"
   hint="Factor the quadratic. Notice that $6-x$ is the opposite of $x-6$."
 >}}
@@ -355,6 +368,7 @@ $$
 {{< fillin
   question="Subtract $\tfrac{-2y-2}{y^2+2y-8}-\tfrac{y-1}{2-y}$."
   answer="\frac{y+3}{y+4}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{y+3}{y+4}$"
   hint="Factor $y^2+2y-8$ and rewrite the denominator $2-y$ using its opposite."
 >}}
@@ -382,6 +396,7 @@ $$
 {{< fillin
   question="Subtract $\tfrac{3}{b^2-4b-5}-\tfrac{2}{b^2-6b+5}$."
   answer="\frac{1}{(b+1)(b-1)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{(b+1)(b-1)}$"
   hint="Factor both denominators. They share the factor $b-5$."
 >}}
@@ -389,6 +404,7 @@ $$
 {{< fillin
   question="Subtract $\tfrac{4}{x^2-4}-\tfrac{3}{x^2-x-2}$."
   answer="\frac{1}{(x+2)(x+1)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{(x+2)(x+1)}$"
   hint="Factor both denominators and use the LCD $(x-2)(x+2)(x+1)$."
 >}}
@@ -415,6 +431,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{v}{v+1}+\tfrac{3}{v-1}-\tfrac{6}{v^2-1}$."
   answer="\frac{v+3}{v+1}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{v+3}{v+1}$"
   hint="Factor $v^2-1$; it is the LCD of all three denominators."
 >}}
@@ -422,6 +439,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{3w}{w+2}+\tfrac{2}{w+7}-\tfrac{17w+4}{w^2+9w+14}$."
   answer="\frac{3w}{w+7}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{3w}{w+7}$"
   hint="Factor the quadratic denominator as $(w+2)(w+7)$, rewrite all three expressions with that LCD, and combine."
 >}}

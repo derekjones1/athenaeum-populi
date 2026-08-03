@@ -267,27 +267,59 @@ the two independent things it names:
 | `lowest-terms` | numerator and denominator share no factor |
 | `scientific-notation` | $a \times 10^{n}$ with $1 \le \lvert a\rvert < 10$ |
 | `prime-product` | a product of prime powers |
+| `single-power` | one $a^{n}$, not a product or nested power — for "Simplify $(3^8)^2$, write the answer as a power of 3" |
+| `expanded` | a sum of terms, not a product/power/quotient — for "Multiply: $(w+5)(w+7)$"; still allows a remainder term |
+| `single-term` | one monomial: one coefficient, each variable once, no written $\cdot$, no top-level $+$, no $\,^0$ factor |
+| `single-fraction` | one quotient, no $\div$ and no top-level $+$; reduced when both halves are monomials |
+| `no-like-terms` | a sum in which no two terms share a variable-and-power signature |
+| `polynomial` | no fraction bar at all — for a difference of fractions answering to a polynomial |
+| `distributed` | no parentheses left to multiply out |
+| `simplified-radical` | square-free radicands, like radicals combined, nothing radical under a fraction bar |
+| `factored` | a product of at least two factors, at least one multi-term — for "Factor: $x^2+6x+8$" |
 | `denominator:<n>` | that exact denominator — for equivalent-fraction asks, which are deliberately **not** reduced |
 
 A right value in the wrong shape reports back as "That value is right — now
 write it in lowest terms", so the learner is told what is missing rather than
-that they are wrong. A wrong value is still just wrong. The requirement is
-checked against the LaTeX rather than the parsed expression, because the
-Compute Engine erases exactly this distinction: `\frac{40}{88}` parses to
-`["Rational",5,11]` and `2^4\cdot5` to `80`.
+that they are wrong. A wrong value is still just wrong.
+
+Which evidence the requirement is checked against depends on what it separates.
+A **numeral** form is checked against the LaTeX, because the Compute Engine
+erases exactly that distinction: `\frac{40}{88}` parses to `["Rational",5,11]`
+and `2^4\cdot5` to `80`. A **symbolic** form is checked against the parse,
+where the opposite holds — there is nothing to evaluate in `(x+2)(x+4)`, so it
+stays a product while the expanded `x^2+6x+8` stays a sum.
+
+`factored` is a shape check, not a completeness check: `2(2x^2+8x+8)` satisfies
+it. That is deliberate. A GCF-only exercise ("factor by taking out the greatest
+common factor") correctly answers `-7a(a^2-3a+2)`, and a rule demanding full
+factorization would reject it — firing on sound content, which §5 calls a bug
+in the rule. Ruling out the printed polynomial is the whole job.
 
 The lint rejects a re-expression prompt with no `answerForm`, and
 `verify-section` rejects an answer that does not satisfy the form it declares
 — an exercise that would reject its own answer. Where the response is not a
 re-expression at all, `multiplechoice` is the right component: the learner
-picks among forms. Retyping a printed *expression* ("Add: $3+5$") also grades
-correct, but that is inherent to CAS grading and is not flagged.
+picks among forms.
+
+Retyping a printed *expression* ("Add: $3+5$", "Simplify: $b^9\cdot b^8$")
+grades correct too, and is **not** yet flagged — but it is a gap in the rules,
+not something inherent to CAS grading. `answerForm="decimal"` already rejects
+`3+5`. The measured backlog and its sequencing are in §6.
 
 **A categorical answer is never a number.** "Is $7{,}248$ divisible by $5$?
 Answer $1$ for yes or $0$ for no" grades a legend rather than the choice and
 lets a coin-flip pass. Use `multiplechoice` with the alternatives themselves as
 options (`yes`/`no`, `rational`/`irrational`, `Quadrant I`–`Quadrant IV`). The
 lint rejects a fill-in whose question maps digits to named alternatives.
+
+**Brace every multi-character exponent in `answer`.** TeX reads `y^10` as
+`y^1` followed by a literal `0`, so the answer grades as a different value and
+the learner who types the correct $y^{10}$ is told they are wrong. Nothing else
+in the pipeline catches this: `verify-section` compares the answer against
+itself, so a malformed one still self-grades, and a correct `answerDisplay`
+(`$y^{10}$`) makes the page look right on review. Write `y^{10}`, `7^{14}`,
+`10^{-3}`. The lint rejects both an unbraced multi-digit exponent and an
+unbraced negative one.
 
 Every retained source “Try It” or check must become a real `fillin`,
 `multiplechoice`, or `graphplot` component. Never ship a static prompt followed
@@ -539,10 +571,11 @@ From the repository root:
 
 ## 5. The one remaining retrofit
 
-`npm run lint` reports **zero errors and one warning category**: the 142
+`npm run lint` reports **zero errors and one warning category**: the 94
 sections with no `## Practice` block (intermediate-algebra 70,
-elementary-algebra 61, precalculus 11, as of August 2, 2026; prealgebra is
-complete at 60/60). That warning list is the worklist, and it is the only
+elementary-algebra 13, precalculus 11, as of August 2, 2026; prealgebra is
+complete at 60/60, and elementary-algebra is complete through chapter 8 with
+only chapters 9–10 left). That warning list is the worklist, and it is the only
 non-blocking rule in the repository — every other authoring rule is an error,
 so there is no category of known-defective content left to grandfather.
 
@@ -553,12 +586,12 @@ in the footer. Work it a chapter at a time under §3. When the last section
 lands, promote the rule to an error and delete this section.
 
 Everything else that used to live here has been fixed rather than documented:
-trivially satisfiable fill-ins now carry `answerForm`, numerically coded
-categorical answers are `multiplechoice`, four-digit numbers are grouped, and
-figure curves come from analytic primitives. Two rules that were over-firing
-were narrowed at the same time — an incidental value collision is not a defect
-(the mode of a data set *is* one of the printed numbers), and `\phantom{0000}`
-long-division spacing is not a number.
+numerically coded categorical answers are `multiplechoice`, four-digit numbers
+are grouped, and figure curves come from analytic primitives. Two rules that
+were over-firing were narrowed at the same time — an incidental value collision
+is not a defect (the mode of a data set *is* one of the printed numbers), and
+`\phantom{0000}` long-division spacing is not a number. The trivially
+satisfiable fill-ins are a live programme, tracked in §6.
 
 The working rules that remain:
 
@@ -569,6 +602,72 @@ The working rules that remain:
 - **A rule that fires on sound content is a bug in the rule.** Narrow it, with
   a test for the case it was wrong about — do not add an exemption for the
   page.
+
+## 6. Trivially satisfiable prompts: the remaining classes
+
+A fill-in whose answer is value-equal to an expression printed in its own
+question is passable by retyping the prompt. `answerForm` is the fix — it
+grades the shape the value cannot distinguish — and a lint rule per prompt verb
+is what stops new ones being authored. The two are inseparable: a rule may only
+land once the content it governs is already clean, so each verb's rule ships
+with that verb's retrofit.
+
+Measured across the corpus, 1,869 fill-ins were passable this way. All but one
+class is now closed — token, retrofit, and lint rule each:
+
+| Class | Count | Needs | Status |
+|---|---|---|---|
+| Factor | 274 | `factored` | **done** — token, retrofit, and lint rule all landed |
+| Numeric arithmetic | 566 | `decimal` / `fraction` / `lowest-terms` / `single-power` | **done** — same three parts |
+| Multiply, Divide (algebraic) | 231 | `expanded`, `single-term`, `single-fraction` | **done** — same three parts |
+| Simplify, Add, Subtract (algebraic) | 401 | `no-like-terms`, `polynomial`, `distributed`, `single-fraction` | **done** |
+| Radicals | 207 | `simplified-radical` | **done** |
+| Reducing a rational expression | 47 | a `reduced-fraction` predicate that does not exist | **open — the only class left** |
+
+Two things the numeric pass established that are worth carrying forward. The
+measured 751 was 566 once the radicals and the incidental collisions were
+separated out — a word problem whose answer happens to equal a printed quantity
+("Jazmine ran 8 miles… find her running speed" → `8`) is sound content, and the
+rule must never fire on it. And a token that closes a hole is not automatically
+the right token: `lowest-terms` rejects a printed nested power, but its feedback
+would tell the learner to reduce a fraction that isn't there. `single-power`
+exists because the message has to match the ask, not just the shape.
+
+Three rules the whole programme was built on. They are what a new token has to
+respect.
+
+**Choose the evidence by what the engine does to the distinction.** If the CAS
+can *evaluate* the difference away, the predicate must read the LaTeX;
+otherwise it should read the parse, which already knows about `\left(`,
+juxtaposition and unary signs. `(x+2)(x+4)` survives as a product, so `factored`
+reads the parse. `\frac{40}{88}` is evaluated to `\tfrac{5}{11}`, so
+`lowest-terms` reads the LaTeX. Several tokens need both: `single-term` takes
+the term structure from the parse and the written `\cdot` from the LaTeX,
+because `\tfrac{3}{7}\cdot 21n` canonicalizes to its own answer.
+
+**Gate each candidate path behind its own verb.** The rule in `tools/lints.mjs`
+unions per-verb extractors deliberately. Widening a shared extractor instead
+would put a thousand sound-but-untagged exercises in scope at once, and a rule
+that fires on sound content cannot land under "never add a warning".
+
+**A token that closes the hole is not automatically the right token.** The
+feedback has to name the step the exercise actually asks for. `lowest-terms`
+rejects a printed nested power, but would tell the learner to reduce a fraction
+that is not there — `single-power` exists for that reason alone. Check the
+sentence `describeAnswerForm` will produce before settling on a token.
+
+### The one class still open
+
+Reducing a rational expression — "Simplify $\frac{x^2-x-2}{x^2-3x+2}$" to
+$\frac{x+1}{x-1}$ — is a real instance of this hazard with no available fix.
+Prompt and answer are *both* a single fraction; what separates them is
+cancelling a common polynomial factor, which is a CAS operation rather than a
+shape, and the Compute Engine's `simplify()` does not reliably perform it. The
+lint therefore skips a candidate when the printed span and the answer are both
+single fractions, so the rule reports nothing it cannot help with. Closing this
+needs a `reduced-fraction` predicate (polynomial GCD, or a rational-root test
+over the integer-coefficient polynomials this corpus uses); the moment one
+exists, delete that filter in `tools/lints.mjs` and retrofit the 47.
 
 ## Done checklist
 

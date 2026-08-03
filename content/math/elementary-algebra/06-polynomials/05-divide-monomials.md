@@ -89,6 +89,7 @@ Quotient Property and simplify: $\tfrac{3^{10}}{3^2} = 3^{10-2} = 3^8$.
 {{< fillin
   question="Simplify: $x^{15} / x^{10}$. Write the answer as a power of x."
   answer="x^5"
+  answerForm="polynomial"
   answerDisplay="$x^5$"
   hint="Since 15 > 10, there are more factors of x in the numerator. Subtract the exponents: $15 - 10$."
 >}}
@@ -96,6 +97,7 @@ Quotient Property and simplify: $\tfrac{3^{10}}{3^2} = 3^{10-2} = 3^8$.
 {{< fillin
   question="Simplify: $6^{14} / 6^5$. Write the answer as a power of 6."
   answer="6^9"
+  answerForm="single-power"
   answerDisplay="$6^9$"
   hint="The larger exponent is in the numerator, so subtract the exponents: $14 - 5$."
 >}}
@@ -113,6 +115,7 @@ $\tfrac{7^3}{7^5} = \tfrac{1}{7^{5-3}} = \tfrac{1}{7^2} = \tfrac{1}{49}$.
 {{< fillin
   question="Simplify: $x^{18} / x^{22}$."
   answer="\frac{1}{x^4}"
+  answerForm="single-fraction"
   answerDisplay="$1/x^4$"
   hint="Since 22 > 18, there are more factors in the denominator. The result is 1 over $x^{22 - 18}$."
 >}}
@@ -120,6 +123,7 @@ $\tfrac{7^3}{7^5} = \tfrac{1}{7^{5-3}} = \tfrac{1}{7^2} = \tfrac{1}{49}$.
 {{< fillin
   question="Simplify: $12^{15} / 12^{30}$."
   answer="\frac{1}{12^{15}}"
+  answerForm="single-power"
   answerDisplay="$1/12^{15}$"
   hint="The larger exponent is in the denominator, so the result is 1 over $12^{30 - 15}$."
 >}}
@@ -141,6 +145,7 @@ $\tfrac{x^{11}}{x^7} = x^{11-7} = x^4$.
 {{< fillin
   question="Simplify: $b^{19} / b^{11}$. Write the answer as a power of b."
   answer="b^8"
+  answerForm="polynomial"
   answerDisplay="$b^8$"
   hint="Since 19 > 11, there are more factors in the numerator. Subtract the exponents: $19 - 11$."
 >}}
@@ -148,6 +153,7 @@ $\tfrac{x^{11}}{x^7} = x^{11-7} = x^4$.
 {{< fillin
   question="Simplify: $z^5 / z^{11}$."
   answer="\frac{1}{z^6}"
+  answerForm="single-fraction"
   answerDisplay="$1/z^6$"
   hint="Since 11 > 5, there are more factors in the denominator. The result is 1 over $z^{11 - 5}$."
 >}}
@@ -195,12 +201,14 @@ The definition says any non-zero number raised to the zero power is $1$.
 {{< fillin
   question="Simplify: $15^0$."
   answer="1"
+  answerForm="decimal"
   hint="Any nonzero number raised to the zero power is 1."
 >}}
 
 {{< fillin
   question="Simplify: $m^0$."
   answer="1"
+  answerForm="decimal"
   hint="Any nonzero base raised to the zero power is 1."
 >}}
 
@@ -220,6 +228,7 @@ raised to the zero power is one.
 {{< fillin
   question="Simplify: $(11z)^0$."
   answer="1"
+  answerForm="single-power"
   hint="Any nonzero expression raised to the zero power is 1."
 >}}
 
@@ -271,6 +280,7 @@ $\left(\tfrac{k}{j}\right)^3 = \tfrac{k^3}{j^3}$.
 {{< fillin
   question="Simplify: $\tfrac{5}{8}^2$."
   answer="\frac{25}{64}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{25}{64}$"
   hint="Square the numerator and square the denominator: $5^2$ over $8^2$."
 >}}
@@ -278,6 +288,7 @@ $\left(\tfrac{k}{j}\right)^3 = \tfrac{k^3}{j^3}$.
 {{< fillin
   question="Simplify: $\tfrac{p}{10}^4$."
   answer="\frac{p^4}{10000}"
+  answerForm="single-term"
   answerDisplay="$p^4/10{,}000$"
   hint="Raise the numerator and denominator to the fourth power: $p^4$ over $10^4$."
 >}}
@@ -316,6 +327,7 @@ $$
 {{< fillin
   question="Simplify: $(m^5)^4 / m^7$. Write the answer as a power of m."
   answer="m^{13}"
+  answerForm="polynomial"
   answerDisplay="$m^{13}$"
   hint="Multiply the exponents in the numerator $(5 \cdot 4 = 20)$, then subtract: $20 - 7$."
 >}}
@@ -323,6 +335,7 @@ $$
 {{< fillin
   question="Simplify: $(k^2)^6 / k^7$. Write the answer as a power of k."
   answer="k^5"
+  answerForm="polynomial"
   answerDisplay="$k^5$"
   hint="Multiply the exponents in the numerator $(2 \cdot 6 = 12)$, then subtract: $12 - 7$."
 >}}
@@ -344,6 +357,7 @@ $$
 {{< fillin
   question="Simplify: $(r^5 / r^3)^4$. Write the answer as a power of r."
   answer="r^8"
+  answerForm="polynomial"
   answerDisplay="$r^8$"
   hint="Subtract the exponents inside the parentheses $(5 - 3 = 2)$, then multiply by 4."
 >}}
@@ -365,6 +379,7 @@ $$
 {{< fillin
   question="Simplify: $(a^3 / b^2)^4$."
   answer="\frac{a^{12}}{b^8}"
+  answerForm="single-fraction"
   answerDisplay="$a^{12}/b^8$"
   hint="Raise the numerator and denominator to the fourth power, then multiply exponents: $a^{3\cdot 4}$ over $b^{2\cdot 4}$."
 >}}
@@ -386,6 +401,7 @@ $$
 {{< fillin
   question="Simplify: $(7x^3 / 9y)^2$."
   answer="\frac{49x^6}{81y^2}"
+  answerForm="single-fraction"
   answerDisplay="$49x^6/81y^2$"
   hint="Square each factor: $7^2 \cdot (x^3)^2$ over $9^2 \cdot y^2$."
 >}}
@@ -406,6 +422,7 @@ $$
 {{< fillin
   question="Simplify: $(a^2)^3 (a^2)^4 / (a^4)^5$."
   answer="\frac{1}{a^6}"
+  answerForm="single-fraction"
   answerDisplay="$1/a^6$"
   hint="Multiply exponents on each factor, add in the numerator $(6 + 8 = 14)$, then subtract 20 in the denominator."
 >}}
@@ -427,6 +444,7 @@ $$
 {{< fillin
   question="Simplify: $(2x^4)^5 / ((4x^3)^2 (x^3)^5)$."
   answer="\frac{2}{x}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{2}{x}$"
   hint="Raise each factor to its power, then divide: $32x^{20}$ over $16x^{21}$."
 >}}
@@ -476,6 +494,7 @@ $$
 {{< fillin
   question="Find the quotient: $-72a^7 b^3 / (8a^{12} b^4)$."
   answer="-\frac{9}{a^5 b}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{9}{a^5 b}$"
   hint="Divide the coefficients (-72 ÷ 8 = -9); a and b both have larger exponents in the denominator."
 >}}
@@ -496,6 +515,7 @@ $$
 {{< fillin
   question="Find the quotient: $16a^7 b^6 / (24ab^8)$."
   answer="\frac{2a^6}{3b^2}"
+  answerForm="single-fraction"
   answerDisplay="$2a^6/(3b^2)$"
   hint="Reduce the coefficients $(\tfrac{16}{24} = \tfrac{2}{3})$; subtract the exponents on $a (7 - 1)$ and on b (b has the larger exponent in the denominator)."
 >}}
@@ -519,6 +539,7 @@ $$
 {{< fillin
   question="Find the quotient: $28x^5 y^{14} / (49x^9 y^{12})$."
   answer="\frac{4y^2}{7x^4}"
+  answerForm="single-fraction"
   answerDisplay="$4y^2/(7x^4)$"
   hint="Reduce the coefficients $(\tfrac{28}{49} = \tfrac{4}{7})$; x has the larger exponent in the denominator, y in the numerator."
 >}}
@@ -545,6 +566,7 @@ $$
 {{< fillin
   question="Find the quotient: $(6a^4 b^5)\tfrac{4a^2 b^5}{12a^5 b^8}$."
   answer="2ab^2"
+  answerForm="single-term"
   answerDisplay="$2ab^2$"
   hint="Multiply the monomials in the numerator $(24a^6 b^{10})$, then divide by $12a^5 b^8$."
 >}}
@@ -552,8 +574,135 @@ $$
 {{< fillin
   question="Find the quotient: $(-12x^6 y^9)\tfrac{-4x^5 y^8}{-12x^{10} y^{12}}$."
   answer="-4xy^5"
+  answerForm="single-term"
   answerDisplay="$-4xy^5$"
   hint="Multiply the monomials in the numerator $(48x^{11} y^{17})$, then divide by $-12x^{10} y^{12}$."
+>}}
+
+## Practice
+
+### Simplify Expressions Using the Quotient Property for Exponents
+
+{{< fillin
+  question="Simplify: $y^{20} / y^{10}$. Write the answer as a power of y."
+  answer="y^{10}"
+  answerForm="polynomial"
+  answerDisplay="$y^{10}$"
+  hint="Since 20 > 10, there are more factors of y in the numerator. Subtract the exponents: $20 - 10$."
+>}}
+
+{{< fillin
+  question="Simplify: $7^{16} / 7^{2}$. Write the answer as a power of 7."
+  answer="7^{14}"
+  answerForm="single-power"
+  answerDisplay="$7^{14}$"
+  hint="The larger exponent is in the numerator, so subtract the exponents: $16 - 2$."
+>}}
+
+### Simplify Expressions with an Exponent of Zero
+
+{{< fillin
+  question="Simplify: $13^0$."
+  answer="1"
+  answerForm="decimal"
+  hint="Any nonzero number raised to the zero power is 1."
+>}}
+
+{{< fillin
+  question="Simplify: $k^0$."
+  answer="1"
+  answerForm="decimal"
+  hint="Any nonzero base raised to the zero power is 1."
+>}}
+
+{{< fillin
+  question="Simplify: $15r^0 - 22s^0$."
+  answer="-7"
+  answerForm="decimal"
+  hint="Each term with a zero exponent equals 1; then subtract the coefficients $15 - 22$."
+>}}
+
+{{< fillin
+  question="Simplify: $(15r)^0 - (22s)^0$."
+  answer="0"
+  answerForm="single-power"
+  hint="Each entire parenthesized expression is raised to the zero power, so both terms equal 1; then subtract."
+>}}
+
+### Simplify Expressions Using the Quotient to a Power Property
+
+{{< fillin
+  question="Simplify: $\tfrac{2}{5}^2$."
+  answer="\frac{4}{25}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{4}{25}$"
+  hint="Square the numerator and square the denominator: $2^2$ over $5^2$."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{x}{3}^4$."
+  answer="\frac{x^4}{81}"
+  answerForm="single-term"
+  answerDisplay="$\tfrac{x^4}{81}$"
+  hint="Raise the numerator and denominator to the fourth power: $x^4$ over $3^4$."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{a}{b}^5$."
+  answer="\frac{a^5}{b^5}"
+  answerDisplay="$\tfrac{a^5}{b^5}$"
+  hint="Raise the numerator and denominator to the fifth power."
+>}}
+
+### Simplify Expressions by Applying Several Properties
+
+{{< fillin
+  question="Simplify: $(p^3)^4 / p^5$. Write the answer as a power of p."
+  answer="p^7"
+  answerForm="polynomial"
+  answerDisplay="$p^7$"
+  hint="Multiply the exponents in the numerator $(3 \cdot 4 = 12)$, then subtract: $12 - 5$."
+>}}
+
+{{< fillin
+  question="Simplify: $v^{20} / (v^4)^5$."
+  answer="1"
+  answerForm="polynomial"
+  hint="Multiply the exponents in the denominator $(4 \cdot 5 = 20)$, then compare that result to the exponent in the numerator."
+>}}
+
+{{< fillin
+  question="Simplify: $(m^4 / m^7)^4$."
+  answer="\frac{1}{m^{12}}"
+  answerForm="single-fraction"
+  answerDisplay="$1/m^{12}$"
+  hint="Subtract the exponents inside the parentheses; since 7 > 4, the result is 1 over $m^{7-4}$, then raise that to the fourth power."
+>}}
+
+### Divide Monomials
+
+{{< fillin
+  question="Find the quotient: $54x^9 y^3 / (-18x^6 y^{15})$."
+  answer="-\frac{3x^3}{y^{12}}"
+  answerForm="single-fraction"
+  answerDisplay="$-\tfrac{3x^3}{y^{12}}$"
+  hint="Divide the coefficients $(54 \div (-18) = -3)$; x has the larger exponent in the numerator, y in the denominator."
+>}}
+
+{{< fillin
+  question="Find the quotient: $20m^8 n^4 / (30m^5 n^9)$."
+  answer="\frac{2m^3}{3n^5}"
+  answerForm="single-fraction"
+  answerDisplay="$2m^3/(3n^5)$"
+  hint="Reduce the coefficients $(\tfrac{20}{30} = \tfrac{2}{3})$; m has the larger exponent in the numerator, n in the denominator."
+>}}
+
+{{< fillin
+  question="Find the quotient: $(4u^2 v^5)(15u^3 v) / ((12u^3 v)(u^4 v))$."
+  answer="\frac{5v^4}{u^2}"
+  answerForm="single-fraction"
+  answerDisplay="$5v^4/u^2$"
+  hint="Multiply the monomials in the numerator ($60u^5v^6$) and in the denominator ($12u^7v^2$), then divide."
 >}}
 
 ## Key terms
@@ -570,4 +719,4 @@ $7x^4$, that we can divide by applying these properties of exponents.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 6.5: Divide Monomials](https://openstax.org/books/elementary-algebra-2e/pages/6-5-divide-monomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as prose and typeset equations; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 6.5: Divide Monomials](https://openstax.org/books/elementary-algebra-2e/pages/6-5-divide-monomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as prose and typeset equations; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

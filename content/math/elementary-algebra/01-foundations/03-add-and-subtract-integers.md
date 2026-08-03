@@ -251,6 +251,7 @@ $0$. The opposite of $-10$ is $10$.
 {{< fillin
   question="Simplify: $-(-1)$."
   answer="1"
+  answerForm="decimal"
   hint="The outer negative sign takes the opposite of what's inside the parentheses."
 >}}
 
@@ -338,12 +339,14 @@ Distance is never negative, so absolute value is never negative.
 {{< fillin
   question="Simplify: $|-28|$."
   answer="28"
+  answerForm="decimal"
   hint="Absolute value is the distance from zero, and distance is always non-negative."
 >}}
 
 {{< fillin
   question="Simplify: $|47|$."
   answer="47"
+  answerForm="decimal"
   hint="The absolute value of a positive number is the number itself."
 >}}
 
@@ -408,6 +411,7 @@ $$
 {{< fillin
   question="Simplify: $19 - |11 - 4(3-1)|$."
   answer="16"
+  answerForm="decimal"
   hint="Work inside the parentheses first, then the absolute value bars, then subtract left to right."
 >}}
 
@@ -482,12 +486,14 @@ color, and so we added them.
 {{< fillin
   question="Add: $2 + 4$."
   answer="6"
+  answerForm="decimal"
   hint="Both numbers are positive, so combine the counters — just add."
 >}}
 
 {{< fillin
   question="Add: $-2 + (-4)$."
   answer="-6"
+  answerForm="decimal"
   hint="Both numbers are negative, so the counters are all the same color — add, and the sum is negative."
 >}}
 
@@ -544,12 +550,14 @@ leaving $2$ positives, so $5 + (-3) = 2$.
 {{< fillin
   question="Add: $-2 + 4$."
   answer="2"
+  answerForm="decimal"
   hint="There are more positive counters than negative ones after the neutral pairs are removed."
 >}}
 
 {{< fillin
   question="Add: $2 + (-4)$."
   answer="-2"
+  answerForm="decimal"
   hint="There are more negative counters than positive ones after the neutral pairs are removed."
 >}}
 
@@ -594,12 +602,14 @@ there are only negatives: $-14 + (-36) = -50$.
 {{< fillin
   question="Simplify: $-31 + (-19)$."
   answer="-50"
+  answerForm="decimal"
   hint="Both numbers are negative — add their absolute values and keep the negative sign."
 >}}
 
 {{< fillin
   question="Simplify: $15 + (-32)$."
   answer="-17"
+  answerForm="decimal"
   hint="Signs differ — subtract the smaller absolute value from the larger, then take the sign of the number farther from zero."
 >}}
 
@@ -620,12 +630,14 @@ $$
 {{< fillin
   question="Simplify: $-2 + 5(-4+7)$."
   answer="13"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first, then multiply, then add."
 >}}
 
 {{< fillin
   question="Simplify: $-4 + 2(-3+5)$."
   answer="0"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first, then multiply, then add."
 >}}
 
@@ -669,12 +681,14 @@ subtraction was easy to apply.
 {{< fillin
   question="Subtract: $6 - 4$."
   answer="2"
+  answerForm="decimal"
   hint="Take $4$ positive counters away from $6$ positive counters."
 >}}
 
 {{< fillin
   question="Subtract: $-6 - (-4)$."
   answer="-2"
+  answerForm="decimal"
   hint="Take $4$ negative counters away from $6$ negative counters."
 >}}
 
@@ -744,12 +758,14 @@ take $1$ negative away from that added pair: $3-(-1) = 4$.
 {{< fillin
   question="Subtract: $-6 - 4$."
   answer="-10"
+  answerForm="decimal"
   hint="Restate as $-6$ take away $4$. You'll need to add neutral pairs to have enough positives to remove."
 >}}
 
 {{< fillin
   question="Subtract: $6 - (-4)$."
   answer="10"
+  answerForm="decimal"
   hint="Restate as $6$ take away $-4$. You'll need to add neutral pairs to have enough negatives to remove."
 >}}
 
@@ -778,12 +794,14 @@ negative numbers.
 {{< fillin
   question="Simplify: $-11 - 7$."
   answer="-18"
+  answerForm="decimal"
   hint="This is the same as $-11 + (-7)$ — add the absolute values and keep the negative sign."
 >}}
 
 {{< fillin
   question="Simplify: $15 - 7$."
   answer="8"
+  answerForm="decimal"
   hint="Both numbers are positive, so subtract as usual."
 >}}
 
@@ -801,12 +819,14 @@ $a - (-b) = a + b$.
 {{< fillin
   question="Simplify: $-5 - (-1)$."
   answer="-4"
+  answerForm="decimal"
   hint="Subtracting a negative is the same as adding its positive opposite: $-5 + 1$."
 >}}
 
 {{< fillin
   question="Simplify: $4 - (-19)$."
   answer="23"
+  answerForm="decimal"
   hint="Subtracting a negative is the same as adding a positive: $4 + 19$."
 >}}
 
@@ -843,12 +863,14 @@ $$
 {{< fillin
   question="Simplify: $8 - (-3-1) - 9$."
   answer="3"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first, then subtract left to right."
 >}}
 
 {{< fillin
   question="Simplify: $12 - (-9-6) - 14$."
   answer="13"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first, then subtract left to right."
 >}}
 
@@ -873,6 +895,7 @@ $$
 {{< fillin
   question="Simplify: $8|-7|$."
   answer="56"
+  answerForm="decimal"
   hint="Simplify inside the absolute value bars first, then multiply."
 >}}
 
@@ -901,18 +924,21 @@ $=$
 {{< fillin
   question="Add: $-21 + (-59)$."
   answer="-80"
+  answerForm="decimal"
   hint="Both numbers are negative — add their absolute values and keep the negative sign."
 >}}
 
 {{< fillin
   question="Add: $48 + (-16)$."
   answer="32"
+  answerForm="decimal"
   hint="Signs differ — subtract the smaller absolute value from the larger, then take the sign of the number farther from zero."
 >}}
 
 {{< fillin
   question="Simplify: $19 + 2(-3+8)$."
   answer="29"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first, then multiply, then add."
 >}}
 
@@ -921,24 +947,28 @@ $=$
 {{< fillin
   question="Subtract: $-5 - 4$."
   answer="-9"
+  answerForm="decimal"
   hint="Restate as adding the opposite: $-5 + (-4)$."
 >}}
 
 {{< fillin
   question="Subtract: $8 - (-4)$."
   answer="12"
+  answerForm="decimal"
   hint="Subtracting a negative is the same as adding a positive: $8 + 4$."
 >}}
 
 {{< fillin
   question="Simplify: $25 - [10 - (3-12)]$."
   answer="6"
+  answerForm="decimal"
   hint="Work from the innermost parentheses outward, then subtract left to right."
 >}}
 
 {{< fillin
   question="Simplify: $5^2 - 6^2$."
   answer="-11"
+  answerForm="decimal"
   hint="Evaluate each power first, then subtract."
 >}}
 

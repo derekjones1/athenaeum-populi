@@ -103,12 +103,14 @@ numbers:
 {{< fillin
   question="Simplify: $\sqrt{36}$"
   answer="6"
+  answerForm="simplified-radical"
   hint="Ask yourself: what number, squared, gives $36$?"
 >}}
 
 {{< fillin
   question="Simplify: $\sqrt{169}$"
   answer="13"
+  answerForm="simplified-radical"
   hint="Ask yourself: what number, squared, gives $169$?"
 >}}
 
@@ -126,12 +128,14 @@ radical sign. For example, $-\sqrt{100} = -10$.
 {{< fillin
   question="Simplify: $-\sqrt{4}$"
   answer="-2"
+  answerForm="simplified-radical"
   hint="Find the positive square root of $4$, then place a negative sign in front."
 >}}
 
 {{< fillin
   question="Simplify: $-\sqrt{225}$"
   answer="-15"
+  answerForm="simplified-radical"
   hint="Find the positive square root of $225$, then place a negative sign in front."
 >}}
 
@@ -164,6 +168,7 @@ no
 {{< fillin
   question="Simplify: $-\sqrt{121}$"
   answer="-11"
+  answerForm="simplified-radical"
   hint="Find the positive square root of $121$, then place a negative sign in front."
 >}}
 
@@ -185,12 +190,14 @@ order of operations correctly.
 {{< fillin
   question="Simplify: $\sqrt{9} + \sqrt{16}$"
   answer="7"
+  answerForm="simplified-radical"
   hint="Take each square root first, then add: $3 + 4$."
 >}}
 
 {{< fillin
   question="Simplify: $\sqrt{9 + 16}$"
   answer="5"
+  answerForm="simplified-radical"
   hint="Add under the radical sign first ($9 + 16 = 25$), then take the square root."
 >}}
 
@@ -282,12 +289,14 @@ $\sqrt{x^2} = x$.
 {{< fillin
   question="Simplify: $\sqrt{y^2}$"
   answer="y"
+  answerForm="simplified-radical"
   hint="Ask yourself: what expression, squared, gives $y$ squared?"
 >}}
 
 {{< fillin
   question="Simplify: $\sqrt{m^2}$"
   answer="m"
+  answerForm="simplified-radical"
   hint="Ask yourself: what expression, squared, gives $m$ squared?"
 >}}
 
@@ -298,12 +307,14 @@ Since $(4x)^2 = 16x^2$: $\sqrt{16x^2} = 4x$.
 {{< fillin
   question="Simplify: $\sqrt{64x^2}$"
   answer="8x"
+  answerForm="simplified-radical"
   hint="Ask yourself: what expression, squared, gives $64x^2$? Take the square root of the coefficient and of the variable part separately."
 >}}
 
 {{< fillin
   question="Simplify: $\sqrt{169y^2}$"
   answer="13y"
+  answerForm="simplified-radical"
   hint="Ask yourself: what expression, squared, gives $169y^2$? Take the square root of the coefficient and of the variable part separately."
 >}}
 
@@ -314,12 +325,14 @@ Since $(9y)^2 = 81y^2$: $-\sqrt{81y^2} = -9y$.
 {{< fillin
   question="Simplify: $-\sqrt{121y^2}$"
   answer="-11y"
+  answerForm="simplified-radical"
   hint="Find the positive square root, then place a negative sign in front."
 >}}
 
 {{< fillin
   question="Simplify: $-\sqrt{100p^2}$"
   answer="-10p"
+  answerForm="simplified-radical"
   hint="Find the positive square root, then place a negative sign in front."
 >}}
 
@@ -330,12 +343,14 @@ Since $(6xy)^2 = 36x^2y^2$: $\sqrt{36x^2y^2} = 6xy$.
 {{< fillin
   question="Simplify: $\sqrt{100a^2b^2}$"
   answer="10ab"
+  answerForm="simplified-radical"
   hint="Take the square root of the coefficient and of each variable's square separately."
 >}}
 
 {{< fillin
   question="Simplify: $\sqrt{225m^2n^2}$"
   answer="15mn"
+  answerForm="simplified-radical"
   hint="Take the square root of the coefficient and of each variable's square separately."
 >}}
 
@@ -463,6 +478,7 @@ approximately $67.5$ miles per hour.
 {{< fillin
   question="Simplify: $\sqrt{64}$"
   answer="8"
+  answerForm="simplified-radical"
   hint="Look for the whole number whose square is $64$."
 >}}
 
@@ -526,18 +542,21 @@ $99 < \sqrt{200} < 101$
 {{< fillin
   question="Simplify, assuming every variable is greater than or equal to zero: $\sqrt{49x^2}$"
   answer="7x"
+  answerForm="simplified-radical"
   hint="Ask what expression, squared, gives $49x^2$ — take the square root of the coefficient and of the variable part separately."
 >}}
 
 {{< fillin
   question="Simplify, assuming every variable is greater than or equal to zero: $-\sqrt{64a^2}$"
   answer="-8a"
+  answerForm="simplified-radical"
   hint="Simplify the radical first, then attach the negative sign that sits in front of it."
 >}}
 
 {{< fillin
   question="Simplify, assuming every variable is greater than or equal to zero: $\sqrt{144x^2y^2}$"
   answer="12xy"
+  answerForm="simplified-radical"
   hint="Take the square root of the coefficient and of each variable's square separately."
 >}}
 

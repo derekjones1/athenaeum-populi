@@ -172,6 +172,7 @@ Simplify: (a) $25^{\tfrac{1}{2}}$ (b) $64^{\tfrac{1}{3}}$ (c) $256^{\tfrac{1}{4}
 {{< fillin
   question="Simplify: $36^{\tfrac{1}{2}}$"
   answer="6"
+  answerForm="decimal"
   answerDisplay="6"
   hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
 >}}
@@ -179,6 +180,7 @@ Simplify: (a) $25^{\tfrac{1}{2}}$ (b) $64^{\tfrac{1}{3}}$ (c) $256^{\tfrac{1}{4}
 {{< fillin
   question="Simplify: $8^{\tfrac{1}{3}}$"
   answer="2"
+  answerForm="decimal"
   answerDisplay="2"
   hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
 >}}
@@ -186,6 +188,7 @@ Simplify: (a) $25^{\tfrac{1}{2}}$ (b) $64^{\tfrac{1}{3}}$ (c) $256^{\tfrac{1}{4}
 {{< fillin
   question="Simplify: $16^{\tfrac{1}{4}}$"
   answer="2"
+  answerForm="decimal"
   answerDisplay="2"
   hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
 >}}
@@ -234,6 +237,7 @@ Simplify: (a) $\left(-16\right)^{\tfrac{1}{4}}$ (b) $- 16^{\tfrac{1}{4}}$ (c) $\
 {{< fillin
   question="Simplify: $- 64^{\tfrac{1}{2}}$"
   answer="-8"
+  answerForm="decimal"
   answerDisplay="$-8$"
   hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
 >}}
@@ -241,6 +245,7 @@ Simplify: (a) $\left(-16\right)^{\tfrac{1}{4}}$ (b) $- 16^{\tfrac{1}{4}}$ (c) $\
 {{< fillin
   question="Simplify: $\left(64\right)^{- \tfrac{1}{2}}$"
   answer="\tfrac{1}{8}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{8}$"
   hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
 >}}
@@ -357,6 +362,7 @@ We will rewrite the expression as a radical first using the defintion, $a^{\tfra
 {{< fillin
   question="Simplify: $27^{\tfrac{2}{3}}$"
   answer="9"
+  answerForm="decimal"
   answerDisplay="9"
   hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
 >}}
@@ -364,6 +370,7 @@ We will rewrite the expression as a radical first using the defintion, $a^{\tfra
 {{< fillin
   question="Simplify: $81^{- \tfrac{3}{2}}$"
   answer="\tfrac{1}{729}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{729}$"
   hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
 >}}
@@ -371,6 +378,7 @@ We will rewrite the expression as a radical first using the defintion, $a^{\tfra
 {{< fillin
   question="Simplify: $16^{- \tfrac{3}{4}}$"
   answer="\tfrac{1}{8}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{8}$"
   hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
 >}}
@@ -409,6 +417,7 @@ Simplify: (a) $- 25^{\tfrac{3}{2}}$ (b) $- 25^{- \tfrac{3}{2}}$ (c) $\left(-25\r
 {{< fillin
   question="Simplify: $-16^{\tfrac{3}{2}}$"
   answer="-64"
+  answerForm="decimal"
   answerDisplay="$-64$"
   hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
 >}}
@@ -416,6 +425,7 @@ Simplify: (a) $- 25^{\tfrac{3}{2}}$ (b) $- 25^{- \tfrac{3}{2}}$ (c) $\left(-25\r
 {{< fillin
   question="Simplify: $-16^{- \tfrac{3}{2}}$"
   answer="- \tfrac{1}{64}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$- \tfrac{1}{64}$"
   hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
 >}}
@@ -474,6 +484,7 @@ Simplify: (a) $x^{\tfrac{1}{2}} \cdot x^{\tfrac{5}{6}}$ (b) $\left(z^{9}\right)^
 {{< fillin
   question="Simplify: $x^{\tfrac{1}{6}} \cdot x^{\tfrac{4}{3}}$"
   answer="x^{\tfrac{3}{2}}"
+  answerForm="single-term"
   answerDisplay="$x^{\tfrac{3}{2}}$"
   hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
 >}}
@@ -481,6 +492,7 @@ Simplify: (a) $x^{\tfrac{1}{2}} \cdot x^{\tfrac{5}{6}}$ (b) $\left(z^{9}\right)^
 {{< fillin
   question="Simplify: $\left(x^{6}\right)^{\tfrac{4}{3}}$"
   answer="x^{8}"
+  answerForm="polynomial"
   answerDisplay="$x^{8}$"
   hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
 >}}
@@ -488,6 +500,7 @@ Simplify: (a) $x^{\tfrac{1}{2}} \cdot x^{\tfrac{5}{6}}$ (b) $\left(z^{9}\right)^
 {{< fillin
   question="Simplify: $\tfrac{x^{\tfrac{2}{3}}}{x^{\tfrac{5}{3}}}$"
   answer="\tfrac{1}{x}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{x}$"
   hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
 >}}
@@ -519,6 +532,7 @@ Simplify: (a) $\left(27 u^{\tfrac{1}{2}}\right)^{\tfrac{2}{3}}$ (b) $\left(m^{\t
 {{< fillin
   question="Simplify: $\left(32 x^{\tfrac{1}{3}}\right)^{\tfrac{3}{5}}$"
   answer="8 x^{\tfrac{1}{5}}"
+  answerForm="distributed"
   answerDisplay="$8 x^{\tfrac{1}{5}}$"
   hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
 >}}
@@ -533,6 +547,7 @@ Simplify: (a) $\left(27 u^{\tfrac{1}{2}}\right)^{\tfrac{2}{3}}$ (b) $\left(m^{\t
 {{< fillin
   question="Simplify: $\left(81 n^{\tfrac{2}{5}}\right)^{\tfrac{3}{2}}$"
   answer="729 n^{\tfrac{3}{5}}"
+  answerForm="single-term"
   answerDisplay="$729 n^{\tfrac{3}{5}}$"
   hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
 >}}
@@ -564,6 +579,7 @@ Simplify: (a) $\tfrac{x^{\tfrac{3}{4}} \cdot x^{- \tfrac{1}{4}}}{x^{- \tfrac{6}{
 {{< fillin
   question="Simplify: $\tfrac{m^{\tfrac{2}{3}} \cdot m^{- \tfrac{1}{3}}}{m^{- \tfrac{5}{3}}}$"
   answer="m^{2}"
+  answerForm="polynomial"
   answerDisplay="$m^{2}$"
   hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
 >}}
@@ -571,6 +587,7 @@ Simplify: (a) $\tfrac{x^{\tfrac{3}{4}} \cdot x^{- \tfrac{1}{4}}}{x^{- \tfrac{6}{
 {{< fillin
   question="Simplify: $\left(\tfrac{25 m^{\tfrac{1}{6}} n^{\tfrac{11}{6}}}{m^{\tfrac{2}{3}} n^{- \tfrac{1}{6}}}\right)^{\tfrac{1}{2}}$"
   answer="\tfrac{5 n}{m^{\tfrac{1}{4}}}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{5 n}{m^{\tfrac{1}{4}}}$"
   hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
 >}}
@@ -578,6 +595,7 @@ Simplify: (a) $\tfrac{x^{\tfrac{3}{4}} \cdot x^{- \tfrac{1}{4}}}{x^{- \tfrac{6}{
 {{< fillin
   question="Simplify: $\tfrac{u^{\tfrac{4}{5}} \cdot u^{- \tfrac{2}{5}}}{u^{- \tfrac{13}{5}}}$"
   answer="u^{3}"
+  answerForm="polynomial"
   answerDisplay="$u^{3}$"
   hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
 >}}

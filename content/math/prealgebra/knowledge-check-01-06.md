@@ -44,6 +44,7 @@ weight: 7
 {{< fillin
   question="Simplify: $45 + 23$."
   answer="68"
+  answerForm="decimal"
 >}}
 
 {{< fillin
@@ -63,6 +64,7 @@ weight: 7
 {{< fillin
   question="Simplify: $145 - 79$."
   answer="66"
+  answerForm="decimal"
 >}}
 
 {{< fillin
@@ -82,12 +84,14 @@ weight: 7
 {{< fillin
   question="Simplify: $7 \cdot 475$."
   answer="3325"
+  answerForm="decimal"
   answerDisplay="3,325"
 >}}
 
 {{< fillin
   question="Simplify: $35(14)$."
   answer="490"
+  answerForm="decimal"
 >}}
 
 {{< fillin
@@ -101,16 +105,19 @@ weight: 7
 {{< fillin
   question="Simplify: $85 \div 5$."
   answer="17"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Simplify: $0/9$."
   answer="0"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Simplify: $495 \div 45$."
   answer="11"
+  answerForm="decimal"
 >}}
 
 ## Chapter 2: The Language of Algebra
@@ -125,6 +132,7 @@ weight: 7
 {{< fillin
   question="Simplify, using the order of operations: $(8 + 1) \cdot 4$."
   answer="36"
+  answerForm="decimal"
 >}}
 
 {{< fillin
@@ -212,6 +220,7 @@ weight: 7
 {{< fillin
   question="Simplify: $|4 - 9|$"
   answer="5"
+  answerForm="decimal"
 >}}
 
 ### 3.2 Add Integers
@@ -219,6 +228,7 @@ weight: 7
 {{< fillin
   question="Simplify: $-15 + (-12)$"
   answer="-27"
+  answerForm="decimal"
 >}}
 
 {{< fillin
@@ -232,6 +242,7 @@ weight: 7
 {{< fillin
   question="Simplify: $10 - (5 - 6)$"
   answer="11"
+  answerForm="decimal"
 >}}
 
 {{< fillin
@@ -250,16 +261,19 @@ weight: 7
 {{< fillin
   question="Simplify: $-6(-9)$"
   answer="54"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Simplify: $(-2)^3$"
   answer="-8"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Simplify: $16 - 3(5 - 7)$"
   answer="22"
+  answerForm="decimal"
 >}}
 
 ### 3.5 Solve Equations Using Integers; The Division Property of Equality
@@ -316,12 +330,14 @@ weight: 7
 {{< fillin
   question="Simplify: $\tfrac{1}{3} \cdot \tfrac{3}{4}$"
   answer="\frac{1}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{4}$"
 >}}
 
 {{< fillin
   question="Simplify: $-\tfrac{5}{6} \div \tfrac{5}{12}$"
   answer="-2"
+  answerForm="decimal"
 >}}
 
 ### 4.3 Multiply and Divide Mixed Numbers and Complex Fractions
@@ -329,6 +345,7 @@ weight: 7
 {{< fillin
   question="Simplify: $\left(-15\tfrac{5}{6}\right) \div \left(-3\tfrac{1}{6}\right)$"
   answer="5"
+  answerForm="decimal"
 >}}
 
 {{< fillin
@@ -340,6 +357,7 @@ weight: 7
 {{< fillin
   question="Simplify: $\tfrac{9^2 - 4^2}{9 - 4}$"
   answer="13"
+  answerForm="decimal"
 >}}
 
 ### 4.4 Add and Subtract Fractions with Common Denominators
@@ -347,12 +365,14 @@ weight: 7
 {{< fillin
   question="Simplify: $-\tfrac{3}{13} + \left(-\tfrac{4}{13}\right)$"
   answer="-\frac{7}{13}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{7}{13}$"
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{2}{5} + \left(-\tfrac{7}{5}\right)$"
   answer="-1"
+  answerForm="decimal"
 >}}
 
 ### 4.5 Add and Subtract Fractions with Different Denominators
@@ -360,18 +380,21 @@ weight: 7
 {{< fillin
   question="Simplify: $-\tfrac{11}{36} - \tfrac{11}{20}$"
   answer="-\frac{77}{90}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{77}{90}$"
 >}}
 
 {{< fillin
   question="Simplify: $-\tfrac{3}{4} \div \tfrac{x}{3}$"
   answer="-\frac{9}{4x}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{9}{4x}$"
 >}}
 
 {{< fillin
   question="Simplify the complex fraction: $\tfrac{\left(\tfrac{5}{14} + \tfrac{1}{8}\right)}{\tfrac{9}{56}}$"
   answer="3"
+  answerForm="decimal"
 >}}
 
 ### 4.6 Add and Subtract Mixed Numbers
@@ -440,16 +463,19 @@ weight: 7
 {{< fillin
   question="Simplify: $15.4 + 3.02$"
   answer="18.42"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Simplify: $(0.64)(0.3)$"
   answer="0.192"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Simplify: $0.96 \div (-12)$"
   answer="-0.08"
+  answerForm="decimal"
 >}}
 
 ### 5.3 Decimals and Fractions
@@ -457,11 +483,13 @@ weight: 7
 {{< fillin
   question="Simplify: $24 \div (0.1 + 0.02)$"
   answer="200"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Simplify: $1.6 + \tfrac{3}{8}$"
   answer="1.975"
+  answerForm="decimal"
 >}}
 
 ### 5.4 Solve Equations with Decimals
@@ -524,11 +552,13 @@ weight: 7
 {{< fillin
   question="Simplify: $\sqrt{64 + 225}$"
   answer="17"
+  answerForm="simplified-radical"
 >}}
 
 {{< fillin
   question="Simplify: $\sqrt{144n^2}$ (assume the variable is greater than or equal to zero)"
   answer="12n"
+  answerForm="simplified-radical"
 >}}
 
 {{< fillin

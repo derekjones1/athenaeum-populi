@@ -99,12 +99,14 @@ factors in the numerator.
 {{< fillin
   question="Simplify: $\tfrac{x^{12}}{x^9}$"
   answer="x^3"
+  answerForm="polynomial"
   hint="Since the numerator's exponent is larger, subtract the denominator's exponent from the numerator's exponent."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{7^{14}}{7^5}$"
   answer="7^9"
+  answerForm="single-power"
   hint="Since the numerator's exponent is larger, subtract the exponents and leave the answer in exponential form."
 >}}
 
@@ -122,6 +124,7 @@ with factors in the denominator and $1$ in the numerator.
 {{< fillin
   question="Simplify: $\tfrac{x^8}{x^{15}}$"
   answer="\frac{1}{x^7}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{x^7}$"
   hint="The denominator's exponent is larger, so the result has a $1$ in the numerator and $x$ raised to the difference of exponents in the denominator."
 >}}
@@ -129,6 +132,7 @@ with factors in the denominator and $1$ in the numerator.
 {{< fillin
   question="Simplify: $\tfrac{12^{11}}{12^{21}}$"
   answer="\frac{1}{12^{10}}"
+  answerForm="single-power"
   answerDisplay="$\tfrac{1}{12^{10}}$"
   hint="The denominator's exponent is larger, so subtract exponents and put the result in the denominator, under a $1$."
 >}}
@@ -145,12 +149,14 @@ $\tfrac{x^{11}}{x^7} = x^{11-7} = x^4$.
 {{< fillin
   question="Simplify: $\tfrac{b^{19}}{b^{11}}$"
   answer="b^8"
+  answerForm="polynomial"
   hint="Compare the exponents — the larger one is in the numerator here."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{m^9}{m^{17}}$"
   answer="\frac{1}{m^8}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{m^8}$"
   hint="Compare the exponents — the larger one is in the denominator here."
 >}}
@@ -194,12 +200,14 @@ So $12^0 = 1$ and $y^0 = 1$.
 {{< fillin
   question="Simplify: $17^0$"
   answer="1"
+  answerForm="decimal"
   hint="Any nonzero number raised to the zero power is $1$."
 >}}
 
 {{< fillin
   question="Simplify: $k^0$"
   answer="1"
+  answerForm="decimal"
   hint="Any nonzero number (or variable) raised to the zero power is $1$."
 >}}
 
@@ -219,12 +227,14 @@ Using the definition of the zero exponent, $(7z)^0 = 1$.
 {{< fillin
   question="Simplify: $(-4y)^0$"
   answer="1"
+  answerForm="single-power"
   hint="The whole expression in parentheses is raised to the zero power."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\tfrac{2}{3} \cdot x\right)^0$"
   answer="1"
+  answerForm="polynomial"
   hint="The whole expression in parentheses is raised to the zero power, and it is not zero."
 >}}
 
@@ -241,12 +251,14 @@ $-3x^2 y^0 = -3x^2 \cdot 1 = -3x^2$.
 {{< fillin
   question="Simplify: $(7x^2 y)^0$"
   answer="1"
+  answerForm="single-power"
   hint="Parentheses group the whole expression under the zero exponent."
 >}}
 
 {{< fillin
   question="Simplify: $7x^2 y^0$"
   answer="7x^2"
+  answerForm="single-term"
   answerDisplay="$7x^2$"
   hint="Only the $y$ is raised to the zero power here, since there are no parentheses grouping the rest with it."
 >}}
@@ -293,6 +305,7 @@ $\left(\tfrac{y}{m}\right)^3 = \tfrac{y^3}{m^3}$.
 {{< fillin
   question="Simplify: $(7/9)^2$"
   answer="\frac{49}{81}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{49}{81}$"
   hint="Raise both the numerator and the denominator to the power, then simplify each."
 >}}
@@ -300,6 +313,7 @@ $\left(\tfrac{y}{m}\right)^3 = \tfrac{y^3}{m^3}$.
 {{< fillin
   question="Simplify: $(y/8)^3$"
   answer="\frac{y^3}{512}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{y^3}{512}$"
   hint="Raise both the numerator and the denominator to the third power."
 >}}
@@ -307,6 +321,7 @@ $\left(\tfrac{y}{m}\right)^3 = \tfrac{y^3}{m^3}$.
 {{< fillin
   question="Simplify: $(p/q)^6$"
   answer="\frac{p^6}{q^6}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{p^6}{q^6}$"
   hint="Raise both the numerator and the denominator to the power."
 >}}
@@ -341,12 +356,14 @@ $\tfrac{x^6}{x^5}$. Subtracting the exponents gives $x$.
 {{< fillin
   question="Simplify: $\tfrac{(a^4)^5}{a^9}$"
   answer="a^{11}"
+  answerForm="polynomial"
   hint="Apply the Power Property in the numerator first, then subtract exponents using the Quotient Property."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{(b^5)^6}{b^{11}}$"
   answer="b^{19}"
+  answerForm="polynomial"
   hint="Apply the Power Property in the numerator first, then subtract exponents using the Quotient Property."
 >}}
 
@@ -359,6 +376,7 @@ zero power property gives $1$.
 {{< fillin
   question="Simplify: $\tfrac{k^{11}}{(k^3)^3}$"
   answer="k^2"
+  answerForm="polynomial"
   answerDisplay="$k^2$"
   hint="Apply the Power Property in the denominator first: $(k^3)^3 = k^9$. Then divide $k^{11}$ by $k^9$."
 >}}
@@ -366,6 +384,7 @@ zero power property gives $1$.
 {{< fillin
   question="Simplify: $\tfrac{d^{23}}{(d^4)^6}$"
   answer="\frac{1}{d}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{d}$"
   hint="Apply the Power Property in the denominator first, then subtract exponents. Simplify all the way."
 >}}
@@ -380,12 +399,14 @@ gives $x^8$.
 {{< fillin
   question="Simplify: $\left(\tfrac{r^{14}}{r^8}\right)^2$"
   answer="r^{12}"
+  answerForm="polynomial"
   hint="Simplify inside the parentheses first (same base, so subtract exponents), then apply the outer power."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\tfrac{b^6}{b^{11}}\right)^2$"
   answer="\frac{1}{b^{10}}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{b^{10}}$"
   hint="Simplify inside the parentheses first — the denominator's exponent is larger there — then apply the outer power."
 >}}
@@ -401,6 +422,7 @@ $\tfrac{p^6}{q^{15}}$.
 {{< fillin
   question="Simplify: $\left(\tfrac{m^3}{n^8}\right)^5$"
   answer="\frac{m^{15}}{n^{40}}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{m^{15}}{n^{40}}$"
   hint="The bases differ, so raise the numerator and denominator to the outer power separately, then apply the Power Property to each."
 >}}
@@ -408,6 +430,7 @@ $\tfrac{p^6}{q^{15}}$.
 {{< fillin
   question="Simplify: $\left(\tfrac{t^{10}}{u^7}\right)^2$"
   answer="\frac{t^{20}}{u^{14}}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{t^{20}}{u^{14}}$"
   hint="The bases differ, so raise the numerator and denominator to the outer power separately, then apply the Power Property to each."
 >}}
@@ -423,6 +446,7 @@ gives $\tfrac{16x^{12}}{81y^4}$.
 {{< fillin
   question="Simplify: $\left(\tfrac{5b}{9c^3}\right)^2$"
   answer="\frac{25b^2}{81c^6}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{25b^2}{81c^6}$"
   hint="Raise numerator and denominator to the power, then raise each factor inside them to that same power."
 >}}
@@ -430,6 +454,7 @@ gives $\tfrac{16x^{12}}{81y^4}$.
 {{< fillin
   question="Simplify: $\left(\tfrac{4p^4}{7q^5}\right)^3$"
   answer="\frac{64p^{12}}{343q^{15}}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{64p^{12}}{343q^{15}}$"
   hint="Raise numerator and denominator to the power, then raise each factor inside them to that same power."
 >}}
@@ -444,6 +469,7 @@ Property gives $\tfrac{1}{y^6}$.
 {{< fillin
   question="Simplify: $\tfrac{(y^4)^4 \cdot (y^3)^5}{(y^7)^6}$"
   answer="\frac{1}{y^{11}}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{y^{11}}$"
   hint="Apply the Power Property to each factor first, then combine the numerator with the Product Property, then apply the Quotient Property."
 >}}
@@ -451,6 +477,7 @@ Property gives $\tfrac{1}{y^6}$.
 {{< fillin
   question="Simplify: $\tfrac{(3x^4)^2 \cdot (x^3)^4}{(x^5)^3}$"
   answer="9x^5"
+  answerForm="polynomial"
   answerDisplay="$9x^5$"
   hint="Apply the Power Property to each factor (don't forget the constant $3$ squared), combine the numerator, then apply the Quotient Property."
 >}}
@@ -470,6 +497,7 @@ $8x^3$.
 {{< fillin
   question="Find the quotient: $\tfrac{63x^8}{9x^4}$"
   answer="7x^4"
+  answerForm="single-term"
   answerDisplay="$7x^4$"
   hint="Separate the numeric coefficients from the variable factors, then divide each part on its own."
 >}}
@@ -477,6 +505,7 @@ $8x^3$.
 {{< fillin
   question="Find the quotient: $\tfrac{96y^{11}}{6y^8}$"
   answer="16y^3"
+  answerForm="single-term"
   answerDisplay="$16y^3$"
   hint="Separate the numeric coefficients from the variable factors, then divide each part on its own."
 >}}
@@ -490,6 +519,7 @@ $-6 \cdot x \cdot \tfrac{1}{y^2}$. Multiplying gives $-\tfrac{6x}{y^2}$.
 {{< fillin
   question="Find the quotient: $\tfrac{-84x^8 y^3}{7x^{10} y^2}$"
   answer="-\frac{12y}{x^2}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{12y}{x^2}$"
   hint="Split into a fraction for the coefficients and one fraction for each variable, then simplify each and multiply the results together."
 >}}
@@ -497,6 +527,7 @@ $-6 \cdot x \cdot \tfrac{1}{y^2}$. Multiplying gives $-\tfrac{6x}{y^2}$.
 {{< fillin
   question="Find the quotient: $\tfrac{-72a^4 b^5}{-8a^9 b^5}$"
   answer="\frac{9}{a^5}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{9}{a^5}$"
   hint="Split into a fraction for the coefficients and one fraction for each variable — the $b$'s cancel completely."
 >}}
@@ -511,6 +542,7 @@ $\tfrac{a^4}{2b}$.
 {{< fillin
   question="Find the quotient: $\tfrac{16a^7 b^6}{24ab^8}$"
   answer="\frac{2a^6}{3b^2}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{2a^6}{3b^2}$"
   hint="Simplify the coefficient fraction to lowest terms, then handle each variable's quotient separately."
 >}}
@@ -518,6 +550,7 @@ $\tfrac{a^4}{2b}$.
 {{< fillin
   question="Find the quotient: $\tfrac{27p^4 q^7}{-45p^{12} q}$"
   answer="-\frac{3q^6}{5p^8}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{3q^6}{5p^8}$"
   hint="Simplify the coefficient fraction to lowest terms, then handle each variable's quotient separately — watch the sign."
 >}}
@@ -535,6 +568,7 @@ their exponents.
 {{< fillin
   question="Find the quotient: $\tfrac{28x^5 y^{14}}{49x^9 y^{12}}$"
   answer="\frac{4y^2}{7x^4}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{4y^2}{7x^4}$"
   hint="Reduce the coefficient fraction first, then subtract exponents for each variable separately."
 >}}
@@ -542,6 +576,7 @@ their exponents.
 {{< fillin
   question="Find the quotient: $\tfrac{30m^5 n^{11}}{48m^{10} n^{14}}$"
   answer="\frac{5}{8m^5 n^3}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{5}{8m^5 n^3}$"
   hint="Reduce the coefficient fraction first, then subtract exponents for each variable separately."
 >}}
@@ -560,6 +595,7 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Find the quotient: $\tfrac{(3x^4 y^5)(8x^2 y^5)}{12x^5 y^8}$"
   answer="2xy^2"
+  answerForm="single-term"
   answerDisplay="$2xy^2$"
   hint="Multiply the two factors in the numerator first, then simplify the resulting single fraction."
 >}}
@@ -567,6 +603,7 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Find the quotient: $\tfrac{(-6a^6 b^9)(-8a^5 b^8)}{-12a^{10} b^{12}}$"
   answer="-4ab^5"
+  answerForm="single-term"
   answerDisplay="$-4ab^5$"
   hint="Multiply the two factors in the numerator first (watch the signs), then simplify the resulting single fraction."
 >}}
@@ -578,6 +615,7 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Simplify: $\tfrac{4^8}{4^2}$"
   answer="4^6"
+  answerForm="single-power"
   answerDisplay="$4^6$"
   hint="The bases match and the larger exponent is in the numerator, so subtract the exponents. Since the resulting exponent is greater than $3$, leave the answer in exponential form."
 >}}
@@ -585,6 +623,7 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Simplify: $\tfrac{x^{12}}{x^3}$"
   answer="x^9"
+  answerForm="polynomial"
   answerDisplay="$x^9$"
   hint="Same base, larger exponent on top — subtract the denominator's exponent from the numerator's."
 >}}
@@ -592,6 +631,7 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Simplify: $\tfrac{y^4}{y^{20}}$"
   answer="\frac{1}{y^{16}}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{y^{16}}$"
   hint="The larger exponent is in the denominator, so the result is $1$ over $y$ raised to the difference of the exponents."
 >}}
@@ -601,24 +641,28 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Simplify: $5^0$"
   answer="1"
+  answerForm="decimal"
   hint="Any nonzero number raised to the zero power is $1$."
 >}}
 
 {{< fillin
   question="Simplify: $-7^0$"
   answer="-1"
+  answerForm="decimal"
   hint="The exponent applies only to the $7$, not to the negative sign, so evaluate $7^0$ first and keep the sign."
 >}}
 
 {{< fillin
   question="Simplify: $(10p)^0$"
   answer="1"
+  answerForm="single-power"
   hint="The parentheses put the entire product under the zero exponent."
 >}}
 
 {{< fillin
   question="Simplify: $10p^0$"
   answer="10"
+  answerForm="single-power"
   hint="With no parentheses, only $p$ carries the zero exponent; the factor $10$ stays."
 >}}
 
@@ -627,6 +671,7 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Simplify: $\left(\tfrac{3}{2}\right)^5$"
   answer="\frac{243}{32}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{243}{32}$"
   hint="Raise the numerator and the denominator to the fifth power separately, then evaluate each."
 >}}
@@ -634,6 +679,7 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Simplify: $\left(\tfrac{m}{6}\right)^3$"
   answer="\frac{m^3}{216}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{m^3}{216}$"
   hint="Raise the numerator and the denominator to the third power, then evaluate $6^3$."
 >}}
@@ -641,6 +687,7 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Simplify: $\left(\tfrac{a}{3b}\right)^2$"
   answer="\frac{a^2}{9b^2}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{a^2}{9b^2}$"
   hint="Square the numerator and the denominator — squaring $3b$ squares both the $3$ and the $b$."
 >}}
@@ -650,6 +697,7 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Simplify: $\tfrac{(x^2)^4}{x^5}$"
   answer="x^3"
+  answerForm="polynomial"
   answerDisplay="$x^3$"
   hint="Use the Power Property on the numerator first, then subtract exponents with the Quotient Property."
 >}}
@@ -657,6 +705,7 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Simplify: $\left(\tfrac{x^2}{x^8}\right)^3$"
   answer="\frac{1}{x^{18}}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{x^{18}}$"
   hint="The bases inside the parentheses match, so simplify there first, then apply the outer exponent."
 >}}
@@ -664,6 +713,7 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Simplify: $\left(\tfrac{2r^3}{5s}\right)^4$"
   answer="\frac{16r^{12}}{625s^4}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{16r^{12}}{625s^4}$"
   hint="Raise the numerator and denominator to the fourth power, then raise every factor inside them — coefficients included — to that same power."
 >}}
@@ -673,6 +723,7 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Divide the monomials: $48b^8 \div 6b^2$"
   answer="8b^6"
+  answerForm="single-term"
   answerDisplay="$8b^6$"
   hint="Rewrite the quotient as a fraction, then divide the coefficients and subtract the exponents of $b$."
 >}}
@@ -680,6 +731,7 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Divide the monomials: $36x^3 \div (-2x^9)$"
   answer="\frac{-18}{x^6}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{-18}{x^6}$"
   hint="Divide the coefficients first and watch the sign, then use the Quotient Property — the larger exponent is in the denominator."
 >}}
@@ -687,6 +739,7 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Divide the monomials: $\tfrac{18r^5 s}{3r^3 s^9}$"
   answer="\frac{6r^2}{s^8}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{6r^2}{s^8}$"
   hint="Split the fraction into a coefficient part and one part per variable, then simplify each on its own."
 >}}
@@ -694,6 +747,7 @@ Simplifying, using the Quotient Rule, gives $5x$.
 {{< fillin
   question="Divide the monomials: $\tfrac{(6m^2 n)(5m^4 n^3)}{3m^{10} n^2}$"
   answer="\frac{10n^2}{m^4}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{10n^2}{m^4}$"
   hint="The fraction bar groups the numerator, so multiply the two monomials there first, then simplify the single fraction that results."
 >}}

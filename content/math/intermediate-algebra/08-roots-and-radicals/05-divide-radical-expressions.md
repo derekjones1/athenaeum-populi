@@ -55,6 +55,7 @@ Simplify: (a) $\tfrac{\sqrt{72 x^{3}}}{\sqrt{162 x}}$ (b) $\tfrac{\sqrt[3]{32 x^
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{50 s^{3}}}{\sqrt{128 s}}$"
   answer="\tfrac{5 s}{8}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{5 s}{8}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -62,6 +63,7 @@ Simplify: (a) $\tfrac{\sqrt{72 x^{3}}}{\sqrt{162 x}}$ (b) $\tfrac{\sqrt[3]{32 x^
 {{< fillin
   question="Simplify: $\tfrac{\sqrt[3]{56 a}}{\sqrt[3]{7 a^{4}}}$"
   answer="\tfrac{2}{a}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{2}{a}$"
   hint="Multiply by the smallest radical factor that makes every denominator exponent a multiple of the root index."
 >}}
@@ -69,6 +71,7 @@ Simplify: (a) $\tfrac{\sqrt{72 x^{3}}}{\sqrt{162 x}}$ (b) $\tfrac{\sqrt[3]{32 x^
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{75 q^{5}}}{\sqrt{108 q}}$"
   answer="\tfrac{5 q^{2}}{6}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{5 q^{2}}{6}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -98,6 +101,7 @@ Simplify: (a) $\tfrac{\sqrt{147 a b^{8}}}{\sqrt{3 a^{3} b^{4}}}$ (b) $\tfrac{\sq
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{162 x^{10} y^{2}}}{\sqrt{2 x^{6} y^{6}}}$"
   answer="\tfrac{9 x^{2}}{y^{2}}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{9 x^{2}}{y^{2}}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -105,6 +109,7 @@ Simplify: (a) $\tfrac{\sqrt{147 a b^{8}}}{\sqrt{3 a^{3} b^{4}}}$ (b) $\tfrac{\sq
 {{< fillin
   question="Simplify: $\tfrac{\sqrt[3]{-128 x^{2} y^{-1}}}{\sqrt[3]{2 x^{-1} y^{2}}}$"
   answer="\tfrac{-4 x}{y}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{-4 x}{y}$"
   hint="Multiply by the smallest radical factor that makes every denominator exponent a multiple of the root index."
 >}}
@@ -112,6 +117,7 @@ Simplify: (a) $\tfrac{\sqrt{147 a b^{8}}}{\sqrt{3 a^{3} b^{4}}}$ (b) $\tfrac{\sq
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{300 m^{3} n^{7}}}{\sqrt{3 m^{5} n}}$"
   answer="\tfrac{10 n^{3}}{m}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{10 n^{3}}{m}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -132,6 +138,7 @@ Simplify: $\tfrac{\sqrt{54 x^{5} y^{3}}}{\sqrt{3 x^{2} y}}.$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{64 x^{4} y^{5}}}{\sqrt{2 x y^{3}}}$"
   answer="4 x y \sqrt{2 x}"
+  answerForm="simplified-radical"
   answerDisplay="$4 x y \sqrt{2 x}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -139,6 +146,7 @@ Simplify: $\tfrac{\sqrt{54 x^{5} y^{3}}}{\sqrt{3 x^{2} y}}.$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{96 a^{5} b^{4}}}{\sqrt{2 a^{3} b}}$"
   answer="4 a b \sqrt{3 b}"
+  answerForm="simplified-radical"
   answerDisplay="$4 a b \sqrt{3 b}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -208,6 +216,7 @@ To rationalize a denominator with one term, we can multiply a square root by its
 {{< fillin
   question="Simplify: $\tfrac{5}{\sqrt{3}}$"
   answer="\tfrac{5 \sqrt{3}}{3}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{5 \sqrt{3}}{3}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -222,6 +231,7 @@ To rationalize a denominator with one term, we can multiply a square root by its
 {{< fillin
   question="Simplify: $\tfrac{2}{\sqrt{2 x}}$"
   answer="\tfrac{\sqrt{2 x}}{x}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{2 x}}{x}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -292,6 +302,7 @@ To rationalize a denominator with a cube root, we can multiply by a cube root th
 {{< fillin
   question="Simplify: $\tfrac{1}{\sqrt[3]{7}}$"
   answer="\tfrac{\sqrt[3]{49}}{7}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt[3]{49}}{7}$"
   hint="Multiply by the smallest radical factor that makes every denominator exponent a multiple of the root index."
 >}}
@@ -306,6 +317,7 @@ To rationalize a denominator with a cube root, we can multiply by a cube root th
 {{< fillin
   question="Simplify: $\tfrac{5}{\sqrt[3]{9 y}}$"
   answer="\tfrac{5 \sqrt[3]{3 y^{2}}}{3 y}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{5 \sqrt[3]{3 y^{2}}}{3 y}$"
   hint="Multiply by the smallest radical factor that makes every denominator exponent a multiple of the root index."
 >}}
@@ -352,6 +364,7 @@ To rationalize a denominator with a fourth root, we can multiply by a fourth roo
 {{< fillin
   question="Simplify: $\tfrac{1}{\sqrt[4]{3}}$"
   answer="\tfrac{\sqrt[4]{27}}{3}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt[4]{27}}{3}$"
   hint="Multiply by the smallest radical factor that makes every denominator exponent a multiple of the root index."
 >}}
@@ -366,6 +379,7 @@ To rationalize a denominator with a fourth root, we can multiply by a fourth roo
 {{< fillin
   question="Simplify: $\tfrac{3}{\sqrt[4]{125 x}}$"
   answer="\tfrac{3 \sqrt[4]{5 x^{3}}}{5 x}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{3 \sqrt[4]{5 x^{3}}}{5 x}$"
   hint="Multiply by the smallest radical factor that makes every denominator exponent a multiple of the root index."
 >}}
@@ -394,6 +408,7 @@ Simplify: $\tfrac{5}{2 - \sqrt{3}}.$
 {{< fillin
   question="Simplify: $\tfrac{3}{1 - \sqrt{5}}$"
   answer="- \tfrac{3 \left(1 + \sqrt{5}\right)}{4}"
+  answerForm="simplified-radical"
   answerDisplay="$- \tfrac{3 \left(1 + \sqrt{5}\right)}{4}$"
   hint="Multiply numerator and denominator by the conjugate of the denominator, then simplify the difference of squares."
 >}}
@@ -401,6 +416,7 @@ Simplify: $\tfrac{5}{2 - \sqrt{3}}.$
 {{< fillin
   question="Simplify: $\tfrac{2}{4 - \sqrt{6}}$"
   answer="\tfrac{4 + \sqrt{6}}{5}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{4 + \sqrt{6}}{5}$"
   hint="Multiply numerator and denominator by the conjugate of the denominator, then simplify the difference of squares."
 >}}
@@ -421,6 +437,7 @@ Simplify: $\tfrac{\sqrt{3}}{\sqrt{u} - \sqrt{6}}.$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{5}}{\sqrt{x} + \sqrt{2}}$"
   answer="\tfrac{\sqrt{5} \left(\sqrt{x} - \sqrt{2}\right)}{x - 2}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{5} \left(\sqrt{x} - \sqrt{2}\right)}{x - 2}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -428,6 +445,7 @@ Simplify: $\tfrac{\sqrt{3}}{\sqrt{u} - \sqrt{6}}.$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{10}}{\sqrt{y} - \sqrt{3}}$"
   answer="\tfrac{\sqrt{10} \left(\sqrt{y} + \sqrt{3}\right)}{y - 3}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{10} \left(\sqrt{y} + \sqrt{3}\right)}{y - 3}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -450,6 +468,7 @@ We do not square the numerator. Leaving it in factored form, we can see there ar
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{p} + \sqrt{2}}{\sqrt{p} - \sqrt{2}}$"
   answer="\tfrac{\left(\sqrt{p} + \sqrt{2}\right)}{p - 2}^{2}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\left(\sqrt{p} + \sqrt{2}\right)}{p - 2}^{2}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -457,6 +476,7 @@ We do not square the numerator. Leaving it in factored form, we can see there ar
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{q} - \sqrt{10}}{\sqrt{q} + \sqrt{10}}$"
   answer="\tfrac{\left(\sqrt{q} - \sqrt{10}\right)}{q - 10}^{2}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\left(\sqrt{q} - \sqrt{10}\right)}{q - 10}^{2}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}

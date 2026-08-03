@@ -3,7 +3,7 @@
   The question and answer parameters are the exercise configuration.
 
   Usage: a fillin shortcode with named params question / answer /
-  answerDisplay / hint / answerMode / requireExpanded / placeholder (see the converted
+  answerDisplay / hint / answerMode / placeholder (see the converted
   pilot section for real examples).
 
   Params:
@@ -21,8 +21,12 @@
                     grading alone accepts the prompt retyped back; this grades
                     the shape too. Tokens: fraction, decimal, mixed-number,
                     improper-fraction, fraction-or-mixed-number, lowest-terms,
-                    scientific-notation, prime-product, denominator:<n>
-    requireExpanded "true" to reject answers containing parentheses
+                    scientific-notation, prime-product, single-power,
+                    expanded, no-like-terms, polynomial, distributed,
+                    simplified-radical,
+                    single-term,
+                    single-fraction, factored,
+                    denominator:<n>
     placeholder     empty-field prompt (default "Your answer")
 
   Renders a static, readable block (question always visible) that the
@@ -36,13 +40,12 @@
 {{- end -}}
 {{- .Page.Store.Set "hasMath" true -}}
 {{- .Page.Store.Set "hasFillIn" true -}}
-{{- $reqExp := eq (.Get "requireExpanded" | default "false") "true" -}}
 {{- $answerMode := .Get "answerMode" | default "expression" -}}
 {{- if not (in (slice "expression" "unordered") $answerMode) -}}
   {{- errorf "fillin answerMode must be 'expression' or 'unordered' (%s)" .Position -}}
 {{- end -}}
 {{- $answerForm := .Get "answerForm" | default "" -}}
-{{- $formTokens := slice "fraction" "decimal" "mixed-number" "improper-fraction" "fraction-or-mixed-number" "lowest-terms" "scientific-notation" "prime-product" -}}
+{{- $formTokens := slice "fraction" "decimal" "mixed-number" "improper-fraction" "fraction-or-mixed-number" "lowest-terms" "scientific-notation" "prime-product" "single-power" "expanded" "no-like-terms" "polynomial" "distributed" "simplified-radical" "single-term" "single-fraction" "factored" -}}
 {{- range (split $answerForm " ") -}}
   {{- $token := trim . " " -}}
   {{- if $token -}}
@@ -57,7 +60,6 @@
   data-answer="{{ $answer }}"
   data-answer-mode="{{ $answerMode }}"
   {{ with $answerForm }}data-answer-form="{{ . }}"{{ end }}
-  data-require-expanded="{{ $reqExp }}"
   data-placeholder="{{ $placeholder }}"
   data-question-plain="{{ $qplain }}">
   <div class="ap-fillin">

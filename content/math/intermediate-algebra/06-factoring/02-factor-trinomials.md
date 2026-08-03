@@ -51,12 +51,14 @@ $$
 {{< fillin
   question="Factor $q^2+10q+24$."
   answer="(q+4)(q+6)"
+  answerForm="factored"
   hint="Find two numbers that multiply to $24$ and add to $10$."
 >}}
 
 {{< fillin
   question="Factor $t^2+14t+24$."
   answer="(t+2)(t+12)"
+  answerForm="factored"
   hint="Find two numbers that multiply to $24$ and add to $14$."
 >}}
 
@@ -82,12 +84,14 @@ $$y^2-11y+28=(y-4)(y-7).$$
 {{< fillin
   question="Factor $u^2-9u+18$."
   answer="(u-3)(u-6)"
+  answerForm="factored"
   hint="Use two negative numbers that multiply to $18$ and add to $-9$."
 >}}
 
 {{< fillin
   question="Factor $y^2-16y+63$."
   answer="(y-7)(y-9)"
+  answerForm="factored"
   hint="Use two negative numbers that multiply to $63$ and add to $-16$."
 >}}
 
@@ -105,12 +109,14 @@ $$2x+x^2-48=(x-6)(x+8).$$
 {{< fillin
   question="Factor $9m+m^2+18$."
   answer="(m+3)(m+6)"
+  answerForm="factored"
   hint="First write the trinomial in descending order."
 >}}
 
 {{< fillin
   question="Factor $-7n+12+n^2$."
   answer="(n-3)(n-4)"
+  answerForm="factored"
   hint="First write the trinomial in descending order."
 >}}
 
@@ -126,12 +132,14 @@ $$r^2-8rs-9s^2=(r+s)(r-9s).$$
 {{< fillin
   question="Factor $a^2-11ab+10b^2$."
   answer="(a-b)(a-10b)"
+  answerForm="factored"
   hint="Find coefficients that multiply to $10$ and add to $-11$."
 >}}
 
 {{< fillin
   question="Factor $m^2-13mn+12n^2$."
   answer="(m-n)(m-12n)"
+  answerForm="factored"
   hint="Find coefficients that multiply to $12$ and add to $-13$."
 >}}
 
@@ -182,12 +190,14 @@ $$4x^3+16x^2-20x=4x(x^2+4x-5)=4x(x-1)(x+5).$$
 {{< fillin
   question="Factor completely: $5x^3+15x^2-20x$."
   answer="5x(x-1)(x+4)"
+  answerForm="factored"
   hint="Factor out $5x$ first."
 >}}
 
 {{< fillin
   question="Factor completely: $6y^3+18y^2-60y$."
   answer="6y(y-2)(y+5)"
+  answerForm="factored"
   hint="Factor out $6y$ first."
 >}}
 
@@ -210,12 +220,14 @@ Thus $3y^2+22y+7=(y+7)(3y+1)$.
 {{< fillin
   question="Factor completely using trial and error: $2a^2+5a+3$."
   answer="(a+1)(2a+3)"
+  answerForm="factored"
   hint="Test factor pairs of $2a^2$ and $3$."
 >}}
 
 {{< fillin
   question="Factor completely using trial and error: $4b^2+5b+1$."
   answer="(b+1)(4b+1)"
+  answerForm="factored"
   hint="Test factor pairs of $4b^2$ and $1$."
 >}}
 
@@ -249,12 +261,14 @@ So $6b^2-13b+5=(2b-1)(3b-5)$.
 {{< fillin
   question="Factor completely using trial and error: $8x^2-14x+3$."
   answer="(2x-3)(4x-1)"
+  answerForm="factored"
   hint="Test factor pairs of $8$ and $3$ with negative signs."
 >}}
 
 {{< fillin
   question="Factor completely using trial and error: $10y^2-37y+7$."
   answer="(2y-7)(5y-1)"
+  answerForm="factored"
   hint="Test factor pairs of $10$ and $7$ with negative signs."
 >}}
 
@@ -271,12 +285,14 @@ $$18x^2-37xy+15y^2=(2x-3y)(9x-5y).$$
 {{< fillin
   question="Factor completely using trial and error: $18x^2-3xy-10y^2$."
   answer="(3x+2y)(6x-5y)"
+  answerForm="factored"
   hint="Use opposite signs and eliminate binomials with common factors."
 >}}
 
 {{< fillin
   question="Factor completely using trial and error: $30x^2-53xy-21y^2$."
   answer="(3x+y)(10x-21y)"
+  answerForm="factored"
   hint="Use opposite signs and eliminate binomials with common factors."
 >}}
 
@@ -289,12 +305,14 @@ $$-10y^4-55y^3-60y^2=-5y^2(2y^2+11y+12)=-5y^2(y+4)(2y+3).$$
 {{< fillin
   question="Factor completely: $15n^3-85n^2+100n$."
   answer="5n(n-4)(3n-5)"
+  answerForm="factored"
   hint="Factor out $5n$ first."
 >}}
 
 {{< fillin
   question="Factor completely: $56q^3+320q^2-96q$."
   answer="8q(q+6)(7q-2)"
+  answerForm="factored"
   hint="Factor out $8q$ first."
 >}}
 
@@ -319,12 +337,14 @@ $$
 {{< fillin
   question="Factor using the ac method: $6x^2+13x+2$."
   answer="(x+2)(6x+1)"
+  answerForm="factored"
   hint="Find numbers that multiply to $12$ and add to $13$."
 >}}
 
 {{< fillin
   question="Factor using the ac method: $4y^2+8y+3$."
   answer="(2y+1)(2y+3)"
+  answerForm="factored"
   hint="Find numbers that multiply to $12$ and add to $8$."
 >}}
 
@@ -350,12 +370,14 @@ $$
 {{< fillin
   question="Factor using the ac method: $16x^2-32x+12$."
   answer="4(2x-3)(2x-1)"
+  answerForm="factored"
   hint="Factor out $4$ first."
 >}}
 
 {{< fillin
   question="Factor using the ac method: $18w^2-39w+18$."
   answer="3(3w-2)(2w-3)"
+  answerForm="factored"
   hint="Factor out $3$ first."
 >}}
 
@@ -374,12 +396,14 @@ $$x^4-4x^2-5=u^2-4u-5=(u+1)(u-5)=(x^2+1)(x^2-5).$$
 {{< fillin
   question="Factor by substitution: $h^4+4h^2-12$."
   answer="(h^2-2)(h^2+6)"
+  answerForm="factored"
   hint="Let $u=h^2$."
 >}}
 
 {{< fillin
   question="Factor by substitution: $y^4-y^2-20$."
   answer="(y^2+4)(y^2-5)"
+  answerForm="factored"
   hint="Let $u=y^2$."
 >}}
 
@@ -403,12 +427,14 @@ but most students prefer substitution.
 {{< fillin
   question="Factor by substitution: $(x-5)^2+6(x-5)+8$."
   answer="(x-3)(x-1)"
+  answerForm="factored"
   hint="Let $u=x-5$."
 >}}
 
 {{< fillin
   question="Factor by substitution: $(y-4)^2+8(y-4)+15$."
   answer="(y-1)(y+1)"
+  answerForm="factored"
   hint="Let $u=y-4$."
 >}}
 

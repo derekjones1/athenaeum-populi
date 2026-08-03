@@ -235,6 +235,7 @@ Check by multiplying: $4(x + 3) = 4 \cdot x + 4 \cdot 3 = 4x + 12$. ✓
 {{< fillin
   question="Factor: $6a + 24$."
   answer="6(a + 4)"
+  answerForm="factored"
   answerDisplay="$6(a + 4)$"
   hint="The GCF of $6a$ and $24$ is $6$; write each term as $6$ times something."
 >}}
@@ -242,6 +243,7 @@ Check by multiplying: $4(x + 3) = 4 \cdot x + 4 \cdot 3 = 4x + 12$. ✓
 {{< fillin
   question="Factor: $2b + 14$."
   answer="2(b + 7)"
+  answerForm="factored"
   answerDisplay="$2(b + 7)$"
   hint="The GCF of $2b$ and $14$ is $2$."
 >}}
@@ -275,6 +277,7 @@ Check by multiplying: $5(a + 1) = 5 \cdot a + 5 \cdot 1 = 5a + 5$. ✓
 {{< fillin
   question="Factor: $14x + 14$."
   answer="14(x + 1)"
+  answerForm="factored"
   answerDisplay="$14(x + 1)$"
   hint="The GCF of $14x$ and $14$ is $14$; remember $14 = 14 \cdot 1$."
 >}}
@@ -282,6 +285,7 @@ Check by multiplying: $5(a + 1) = 5 \cdot a + 5 \cdot 1 = 5a + 5$. ✓
 {{< fillin
   question="Factor: $12p + 12$."
   answer="12(p + 1)"
+  answerForm="factored"
   answerDisplay="$12(p + 1)$"
   hint="The GCF of $12p$ and $12$ is $12$."
 >}}
@@ -306,6 +310,7 @@ Check by multiplying: $12(x - 5) = 12 \cdot x - 12 \cdot 5 = 12x - 60$. ✓
 {{< fillin
   question="Factor: $18u - 36$."
   answer="18(u - 2)"
+  answerForm="factored"
   answerDisplay="$18(u - 2)$"
   hint="The GCF of $18u$ and $36$ is $18$; note $36 = 18 \cdot 2$."
 >}}
@@ -313,6 +318,7 @@ Check by multiplying: $12(x - 5) = 12 \cdot x - 12 \cdot 5 = 12x - 60$. ✓
 {{< fillin
   question="Factor: $30y - 60$."
   answer="30(y - 2)"
+  answerForm="factored"
   answerDisplay="$30(y - 2)$"
   hint="The GCF of $30y$ and $60$ is $30$."
 >}}
@@ -338,6 +344,7 @@ Check by multiplying: $4(y^2 + 6y + 7) = 4y^2 + 24y + 28$. ✓
 {{< fillin
   question="Factor: $5x^2 - 25x + 15$."
   answer="5(x^2 - 5x + 3)"
+  answerForm="factored"
   answerDisplay="$5(x^2 - 5x + 3)$"
   hint="The GCF of $5x^2$, $25x$, and $15$ is $5$; divide each term by $5$."
 >}}
@@ -345,6 +352,7 @@ Check by multiplying: $4(y^2 + 6y + 7) = 4y^2 + 24y + 28$. ✓
 {{< fillin
   question="Factor: $3y^2 - 12y + 27$."
   answer="3(y^2 - 4y + 9)"
+  answerForm="factored"
   answerDisplay="$3(y^2 - 4y + 9)$"
   hint="The GCF of the three terms is $3$; divide each term by $3$."
 >}}
@@ -365,6 +373,7 @@ Check by multiplying: $5x^2(x - 5) = 5x^2 \cdot x - 5x^2 \cdot 5 = 5x^3 - 25x^2$
 {{< fillin
   question="Factor: $2x^3 + 12x^2$."
   answer="2x^2(x + 6)"
+  answerForm="factored"
   answerDisplay="$2x^2(x + 6)$"
   hint="The GCF of $2x^3$ and $12x^2$ is $2x^2$; take the smaller power of $x$."
 >}}
@@ -372,6 +381,7 @@ Check by multiplying: $5x^2(x - 5) = 5x^2 \cdot x - 5x^2 \cdot 5 = 5x^3 - 25x^2$
 {{< fillin
   question="Factor: $6y^3 - 15y^2$."
   answer="3y^2(2y - 5)"
+  answerForm="factored"
   answerDisplay="$3y^2(2y - 5)$"
   hint="The GCF of $6y^3$ and $15y^2$ is $3y^2$."
 >}}
@@ -393,6 +403,7 @@ Check by multiplying: $3x(7x^2 - 3x + 5) = 21x^3 - 9x^2 + 15x$. ✓
 {{< fillin
   question="Factor: $20x^3 - 10x^2 + 14x$."
   answer="2x(10x^2 - 5x + 7)"
+  answerForm="factored"
   answerDisplay="$2x(10x^2 - 5x + 7)$"
   hint="The GCF of the three terms is $2x$; divide each term by $2x$."
 >}}
@@ -400,6 +411,7 @@ Check by multiplying: $3x(7x^2 - 3x + 5) = 21x^3 - 9x^2 + 15x$. ✓
 {{< fillin
   question="Factor: $24y^3 - 12y^2 - 20y$."
   answer="4y(6y^2 - 3y - 5)"
+  answerForm="factored"
   answerDisplay="$4y(6y^2 - 3y - 5)$"
   hint="The GCF of $24y^3$, $12y^2$, and $20y$ is $4y$."
 >}}
@@ -423,6 +435,7 @@ Check by multiplying: $4m(2m^2 - 3mn + 5n^2) = 8m^3 - 12m^2 n + 20mn^2$. ✓
 {{< fillin
   question="Factor: $9xy^2 + 6x^2 y^2 + 21y^3$."
   answer="3y^2(3x + 2x^2 + 7y)"
+  answerForm="factored"
   answerDisplay="$3y^2(3x + 2x^2 + 7y)$"
   hint="The GCF of the three terms is $3y^2$; divide each term by $3y^2$."
 >}}
@@ -430,6 +443,7 @@ Check by multiplying: $4m(2m^2 - 3mn + 5n^2) = 8m^3 - 12m^2 n + 20mn^2$. ✓
 {{< fillin
   question="Factor: $3p^3 - 6p^2 q + 9pq^3$."
   answer="3p(p^2 - 2pq + 3q^3)"
+  answerForm="factored"
   answerDisplay="$3p(p^2 - 2pq + 3q^3)$"
   hint="The GCF of the three terms is $3p$; divide each term by $3p$."
 >}}
@@ -456,6 +470,7 @@ Check by multiplying: $-8(y + 3) = -8 \cdot y + (-8) \cdot 3 = -8y - 24$. ✓
 {{< fillin
   question="Factor: $-16z - 64$."
   answer="-16(z + 4)"
+  answerForm="factored"
   answerDisplay="$-16(z + 4)$"
   hint="The leading coefficient is negative, so use $-16$ as the GCF; watch the sign on the second term."
 >}}
@@ -463,6 +478,7 @@ Check by multiplying: $-8(y + 3) = -8 \cdot y + (-8) \cdot 3 = -8y - 24$. ✓
 {{< fillin
   question="Factor: $-9y - 27$."
   answer="-9(y + 3)"
+  answerForm="factored"
   answerDisplay="$-9(y + 3)$"
   hint="Use $-9$ as the GCF; factoring $-9$ from $-27$ leaves $+3$."
 >}}
@@ -484,6 +500,7 @@ Check by multiplying: $-6a(a - 6) = -6a \cdot a + (-6a)(-6) = -6a^2 + 36a$. ✓
 {{< fillin
   question="Factor: $-4b^2 + 16b$."
   answer="-4b(b - 4)"
+  answerForm="factored"
   answerDisplay="$-4b(b - 4)$"
   hint="Use $-4b$ as the GCF; factoring $-4b$ from $+16b$ leaves $-4$."
 >}}
@@ -491,6 +508,7 @@ Check by multiplying: $-6a(a - 6) = -6a \cdot a + (-6a)(-6) = -6a^2 + 36a$. ✓
 {{< fillin
   question="Factor: $-7a^2 + 21a$."
   answer="-7a(a - 3)"
+  answerForm="factored"
   answerDisplay="$-7a(a - 3)$"
   hint="Use $-7a$ as the GCF; watch the sign on the second term."
 >}}
@@ -509,6 +527,7 @@ Check on your own by multiplying.
 {{< fillin
   question="Factor: $4m(m + 3) - 7(m + 3)$."
   answer="(m + 3)(4m - 7)"
+  answerForm="factored"
   answerDisplay="$(m + 3)(4m - 7)$"
   hint="The common factor is the binomial $m + 3$; pull it out, and what remains from each term forms the other factor."
 >}}
@@ -516,6 +535,7 @@ Check on your own by multiplying.
 {{< fillin
   question="Factor: $8n(n - 4) + 5(n - 4)$."
   answer="(n - 4)(8n + 5)"
+  answerForm="factored"
   answerDisplay="$(n - 4)(8n + 5)$"
   hint="The common factor is the binomial $n - 4$; the leftover pieces $8n$ and $+5$ form the other factor."
 >}}
@@ -550,6 +570,7 @@ out. Check by multiplying: $(x + 3)(y + 2) = xy + 2x + 3y + 6$. ✓
 {{< fillin
   question="Factor: $xy + 8y + 3x + 24$."
   answer="(x + 8)(y + 3)"
+  answerForm="factored"
   answerDisplay="$(x + 8)(y + 3)$"
   hint="Group the first two terms and the last two: factor $y$ from $xy + 8y$ and $3$ from $3x + 24$; a common binomial should appear."
 >}}
@@ -557,6 +578,7 @@ out. Check by multiplying: $(x + 3)(y + 2) = xy + 2x + 3y + 6$. ✓
 {{< fillin
   question="Factor: $ab + 7b + 8a + 56$."
   answer="(a + 7)(b + 8)"
+  answerForm="factored"
   answerDisplay="$(a + 7)(b + 8)$"
   hint="Factor $b$ from $ab + 7b$ and $8$ from $8a + 56$; the two groups should share a binomial factor."
 >}}
@@ -588,6 +610,7 @@ Check on your own by multiplying.
 {{< fillin
   question="Factor: $x^2 + 2x - 5x - 10$."
   answer="(x - 5)(x + 2)"
+  answerForm="factored"
   answerDisplay="$(x - 5)(x + 2)$"
   hint="Factor $x$ from $x^2 + 2x$ and $-5$ from $-5x - 10$; watch the sign, and a common binomial appears."
 >}}
@@ -595,8 +618,85 @@ Check on your own by multiplying.
 {{< fillin
   question="Factor: $y^2 + 4y - 7y - 28$."
   answer="(y + 4)(y - 7)"
+  answerForm="factored"
   answerDisplay="$(y + 4)(y - 7)$"
   hint="Factor $y$ from $y^2 + 4y$ and $-7$ from $-7y - 28$; the two groups share a binomial factor."
+>}}
+
+## Practice
+
+### Find the greatest common factor of two or more expressions
+
+{{< fillin
+  question="Find the GCF of 8 and 18."
+  answer="2"
+  hint="Factor each number into primes, line up the shared primes in columns, and multiply the common ones."
+>}}
+
+{{< fillin
+  question="Find the GCF of $8w^2$ and $24w^3$."
+  answer="8w^2"
+  answerDisplay="$8w^2$"
+  hint="Find the GCF of $8$ and $24$, then take the smaller power of $w$."
+>}}
+
+{{< fillin
+  question="Find the greatest common factor of $10a^3$, $12a^2$, and $14a$."
+  answer="2a"
+  answerDisplay="$2a$"
+  hint="The GCF of $10$, $12$, and $14$ is $2$; the smallest power of $a$ is $a^1$."
+>}}
+
+### Factor the greatest common factor from a polynomial
+
+{{< fillin
+  question="Factor: $4x + 20$."
+  answer="4(x + 5)"
+  answerForm="factored"
+  answerDisplay="$4(x + 5)$"
+  hint="The GCF of $4x$ and $20$ is $4$; write each term as $4$ times something."
+>}}
+
+{{< fillin
+  question="Factor: $-2x - 4$."
+  answer="-2(x + 2)"
+  answerForm="factored"
+  answerDisplay="$-2(x + 2)$"
+  hint="The leading coefficient is negative, so use $-2$ as the GCF; watch the sign on the second term."
+>}}
+
+{{< fillin
+  question="Factor: $5x(x + 1) + 3(x + 1)$."
+  answer="(x + 1)(5x + 3)"
+  answerForm="factored"
+  answerDisplay="$(x + 1)(5x + 3)$"
+  hint="The common factor is the binomial $x + 1$; pull it out, and what remains from each term forms the other factor."
+>}}
+
+### Factor by grouping
+
+{{< fillin
+  question="Factor: $xy + 2y + 3x + 6$."
+  answer="(x + 2)(y + 3)"
+  answerForm="factored"
+  answerDisplay="$(x + 2)(y + 3)$"
+  hint="Group the first two terms and the last two: factor $y$ from $xy + 2y$ and $3$ from $3x + 6$; a common binomial should appear."
+>}}
+
+{{< fillin
+  question="Factor: $uv - 9u + 2v - 18$."
+  answer="(v - 9)(u + 2)"
+  answerForm="factored"
+  answerDisplay="$(v - 9)(u + 2)$"
+  hint="Factor $u$ from $uv - 9u$ and $2$ from $2v - 18$; the two groups should share a binomial factor."
+>}}
+
+{{< fillin
+  question="Factor: $b^2 + 5b - 4b - 20$."
+  answer="(b + 5)(b - 4)"
+  answerForm="factored"
+  answerDisplay="$(b + 5)(b - 4)$"
+  hint="Factor $b$ from $b^2 + 5b$ and $-4$ from $-4b - 20$; the two groups share a binomial factor."
 >}}
 
 ## Key terms
@@ -609,4 +709,4 @@ factoring the GCF from each group, and then factoring out the common binomial.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 7.1: Greatest Common Factor and Factor by Grouping](https://openstax.org/books/elementary-algebra-2e/pages/7-1-greatest-common-factor-and-factor-by-grouping) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the GCF prime-factorization tables and worked factoring examples as prose with display equality chains, and stated each GCF as a bring-down product; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 7.1: Greatest Common Factor and Factor by Grouping](https://openstax.org/books/elementary-algebra-2e/pages/7-1-greatest-common-factor-and-factor-by-grouping) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the GCF prime-factorization tables and worked factoring examples as prose with display equality chains, and stated each GCF as a bring-down product; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

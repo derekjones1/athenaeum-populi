@@ -115,3 +115,43 @@ test('a right value in the wrong form is held back, not accepted (answerForm)', 
     .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
     .toBe('correct');
 });
+
+test('a re-typed polynomial is held back on a factoring prompt (answerForm="factored")', async ({ page }) => {
+  await page.goto('/math/elementary-algebra/07-factoring/02-factor-trinomials-of-the-form-x2-bx-c/', { waitUntil: 'networkidle' });
+
+  // The symbolic counterpart of the test above. `x^2+6x+8` and `(x+2)(x+4)`
+  // are the same value, so this prompt was passable by retyping it until
+  // `factored` graded the shape. This is the only place the whole stack runs
+  // together: MathLive's real emission for typed parentheses, the shared
+  // compute engine, and checkForm's parse-based predicate.
+  const card = page.locator('fill-in[data-question-plain*="6x + 8"]').first();
+  await expect(card).toHaveCount(1);
+  const field = card.locator('math-field');
+  await expect
+    .poll(async () => field.evaluate((el) => typeof el.executeCommand === 'function'), { timeout: 20000 })
+    .toBe(true);
+  await field.scrollIntoViewIfNeeded();
+  await field.click();
+  await expect
+    .poll(async () => field.evaluate((el) => document.activeElement === el), { timeout: 10000 })
+    .toBe(true);
+
+  await page.keyboard.type('x^2+6x+8', { delay: 20 });
+  await card.getByRole('button', { name: /check/i }).click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('form');
+  await expect(card.locator('.ap-fillin-feedback')).toHaveText(/factored form/i);
+
+  await field.evaluate((el) => {
+    el.focus();
+    el.executeCommand('selectAll');
+    el.executeCommand('deleteBackward');
+  });
+  await expect.poll(async () => field.evaluate((el) => el.value)).toBe('');
+  await page.keyboard.type('(x+2)(x+4)', { delay: 20 });
+  await card.getByRole('button', { name: /check/i }).click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('correct');
+});

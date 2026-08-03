@@ -51,6 +51,7 @@ $$
 {{< fillin
   question="Multiply: $\tfrac{6}{10} \cdot \tfrac{15}{12}$."
   answer="\tfrac{3}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{4}$"
   hint="Multiply the numerators and the denominators, then divide out common factors."
 >}}
@@ -75,6 +76,7 @@ $$
 {{< fillin
   question="Multiply: $\tfrac{3pq}{q^2} \cdot \tfrac{5p^2 q}{6pq}$."
   answer="\tfrac{5p^2}{2q}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{5p^2}{2q}$"
   hint="Multiply numerators and denominators, then divide out the common factors of the coefficients and the variables."
 >}}
@@ -121,6 +123,7 @@ $$
 {{< fillin
   question="Multiply: $\tfrac{5x}{x^2 + 5x + 6} \cdot \tfrac{x^2 - 4}{10x}$."
   answer="\tfrac{x - 2}{2(x + 3)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{x - 2}{2(x + 3)}$"
   hint="Factor each part: $x^2 + 5x + 6 = (x + 2)(x + 3)$ and $x^2 - 4 = (x - 2)(x + 2)$. Then divide out the common factors."
 >}}
@@ -145,6 +148,7 @@ $$
 {{< fillin
   question="Multiply: $\tfrac{12x - 6x^2}{x^2 + 8x} \cdot \tfrac{x^2 + 11x + 24}{x^2 - 4}$. (A factor of $-1$ appears from opposite binomials.)"
   answer="-\tfrac{6(x + 3)}{x + 2}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{6(x + 3)}{x + 2}$"
   hint="Factor $12x - 6x^2 = 6x(2 - x)$; the $2 - x$ and $x - 2$ are opposites, so they divide to $-1$."
 >}}
@@ -207,6 +211,7 @@ $$
 {{< fillin
   question="Divide: $\tfrac{c + 3}{5 - c} \div \tfrac{c^2 - 9}{c - 5}$. (A factor of $-1$ appears from opposite binomials.)"
   answer="-\tfrac{1}{c - 3}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{1}{c - 3}$"
   hint="Multiply by the reciprocal $\tfrac{c - 5}{c^2 - 9}$; factor $c^2 - 9 = (c - 3)(c + 3)$. The $5 - c$ and $c - 5$ are opposites."
 >}}
@@ -214,6 +219,7 @@ $$
 {{< fillin
   question="Divide: $\tfrac{2m^2}{m^2 - 8m} \div \tfrac{8m^2 + 24m}{m^2 + m - 6}$."
   answer="\tfrac{m - 2}{4(m - 8)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{m - 2}{4(m - 8)}$"
   hint="Multiply by the reciprocal, then factor: $m^2 - 8m = m(m - 8)$, $8m^2 + 24m = 8m(m + 3)$, $m^2 + m - 6 = (m + 3)(m - 2)$."
 >}}
@@ -241,6 +247,7 @@ $$
 {{< fillin
   question="Divide: $\tfrac{2x^2 - 14x - 16}{4} \div (x^2 + 2x + 1)$."
   answer="\tfrac{x - 8}{2(x + 1)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{x - 8}{2(x + 1)}$"
   hint="Write the polynomial over $1$ and multiply by its reciprocal. Factor $2x^2 - 14x - 16 = 2(x - 8)(x + 1)$ and $x^2 + 2x + 1 = (x + 1)^2$."
 >}}
@@ -290,6 +297,52 @@ $$
   hint="Rewrite the division as multiplication by the reciprocal $\tfrac{6m - 48}{12m - 36}$, then factor every part completely before dividing out common factors."
 >}}
 
+## Practice
+
+### Multiply rational expressions
+
+{{< fillin
+  question="Multiply: $\tfrac{12}{16} \cdot \tfrac{4}{10}$."
+  answer="\tfrac{3}{10}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{3}{10}$"
+  hint="Multiply the numerators and denominators, then divide out any common factors before you simplify."
+>}}
+
+{{< fillin
+  question="Multiply: $\tfrac{5x^2 y^4}{12xy^3} \cdot \tfrac{6x^2}{20y^2}$."
+  answer="\tfrac{x^3}{8y}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{x^3}{8y}$"
+  hint="Multiply the numerators and denominators, then divide out the common factors in the coefficients and in each variable separately."
+>}}
+
+{{< fillin
+  question="Multiply: $\tfrac{5p^2}{p^2 - 5p - 36} \cdot \tfrac{p^2 - 16}{10p}$."
+  answer="\tfrac{p(p - 4)}{2(p - 9)}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{p(p - 4)}{2(p - 9)}$"
+  hint="Factor $p^2 - 5p - 36 = (p - 9)(p + 4)$ and $p^2 - 16 = (p - 4)(p + 4)$, then divide out the common factors."
+>}}
+
+### Divide rational expressions
+
+{{< fillin
+  question="Divide: $\tfrac{16a^2}{4a + 36} \div \tfrac{4a^2 - 24a}{a^2 + 4a - 45}$."
+  answer="\tfrac{a(a - 5)}{a - 6}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{a(a - 5)}{a - 6}$"
+  hint="Multiply by the reciprocal, then factor: $4a + 36 = 4(a + 9)$, $4a^2 - 24a = 4a(a - 6)$, and $a^2 + 4a - 45 = (a + 9)(a - 5)$."
+>}}
+
+{{< fillin
+  question="Divide: $\tfrac{t^2 - 9}{2t} \div (t^2 - 6t + 9)$."
+  answer="\tfrac{t + 3}{2t(t - 3)}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{t + 3}{2t(t - 3)}$"
+  hint="Write the polynomial over $1$ and multiply by its reciprocal. Factor $t^2 - 9 = (t - 3)(t + 3)$ and $t^2 - 6t + 9 = (t - 3)^2$."
+>}}
+
 ## Key terms
 
 **rational expression** — a fraction whose numerator and denominator are
@@ -301,4 +354,4 @@ by its bottom.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.2: Multiply and Divide Rational Expressions](https://openstax.org/books/elementary-algebra-2e/pages/8-2-multiply-and-divide-rational-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations, and stated each simplification as a divide-out of common factors; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.2: Multiply and Divide Rational Expressions](https://openstax.org/books/elementary-algebra-2e/pages/8-2-multiply-and-divide-rational-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations, and stated each simplification as a divide-out of common factors; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

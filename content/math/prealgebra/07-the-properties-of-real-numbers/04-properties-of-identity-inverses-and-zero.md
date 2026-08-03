@@ -171,6 +171,7 @@ simplify to $0$.
 {{< fillin
   question="Simplify: $-14 \cdot 0$."
   answer="0"
+  answerForm="decimal"
   hint="The product of any real number and $0$ is $0$."
 >}}
 
@@ -199,6 +200,7 @@ expressions simplify to $0$.
 {{< fillin
   question="Simplify: $0 \div 11$."
   answer="0"
+  answerForm="decimal"
   hint="Zero divided by any nonzero number is zero."
 >}}
 
@@ -255,6 +257,7 @@ $$3x + 15 - 3x = (3x - 3x) + 15 = 0 + 15 = 15$$
 {{< fillin
   question="Simplify: $-12z + 9 + 12z$."
   answer="9"
+  answerForm="no-like-terms"
   hint="$-12z$ and $12z$ are additive inverses — they combine to $0$, leaving the identity property."
 >}}
 
@@ -268,6 +271,7 @@ $$4(0.25q) = [4(0.25)]q = 1.00q = q$$
 {{< fillin
   question="Simplify: $2(0.5p)$."
   answer="p"
+  answerForm="single-term"
   hint="$2$ and $0.5$ are reciprocals — regroup and multiply them first; the result is the multiplicative identity."
 >}}
 
@@ -280,6 +284,7 @@ $$\tfrac{0}{n+5} = 0$$
 {{< fillin
   question="Simplify: $\tfrac{0}{m + 7}$, where $m \ne -7$."
   answer="0"
+  answerForm="polynomial"
   hint="Zero divided by any nonzero expression is zero."
 >}}
 
@@ -299,6 +304,7 @@ $$\tfrac{3}{4} \cdot \tfrac{4}{3}(6x + 12) = 1(6x + 12) = 6x + 12$$
 {{< fillin
   question="Simplify: $\tfrac{2}{5} \cdot \tfrac{5}{2}(20y + 50)$."
   answer="20y + 50"
+  answerForm="polynomial"
   hint="$\tfrac{2}{5}$ and $\tfrac{5}{2}$ are reciprocals — their product is $1$, the multiplicative identity."
 >}}
 
@@ -366,12 +372,14 @@ identity property of multiplication
 {{< fillin
   question="Simplify: $22 \cdot 0$."
   answer="0"
+  answerForm="decimal"
   hint="The product of any real number and $0$ is $0$."
 >}}
 
 {{< fillin
   question="Simplify: $0 \div \tfrac{7}{15}$."
   answer="0"
+  answerForm="decimal"
   hint="Zero divided by any nonzero number is $0$ — the divisor being a fraction changes nothing."
 >}}
 
@@ -390,12 +398,14 @@ undefined
 {{< fillin
   question="Simplify: $92 + 31s - 92$."
   answer="31s"
+  answerForm="single-term"
   hint="Reorder so the additive inverses $92$ and $-92$ sit together; they combine to $0$, the additive identity."
 >}}
 
 {{< fillin
   question="Simplify: $40(0.05n)$."
   answer="2n"
+  answerForm="single-term"
   hint="Regroup as $[40(0.05)]n$ and multiply the two numbers first."
 >}}
 
@@ -412,6 +422,7 @@ undefined
 {{< fillin
   question="Simplify: $18 \cdot \tfrac{5}{6}(15h + 24)$."
   answer="225h + 360"
+  answerForm="polynomial"
   hint="The terms in parentheses cannot be combined, so multiply $18$ and $\tfrac{5}{6}$ first, then distribute."
 >}}
 

@@ -42,6 +42,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{32}}{8}$."
   answer="\frac{\sqrt{2}}{2}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{2}}{2}$"
   hint="Write $\sqrt{32}$ as $\sqrt{16} \cdot \sqrt{2} = 4\sqrt{2}$, then remove the common factor of the numerator and denominator."
 >}}
@@ -49,6 +50,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{75}}{15}$."
   answer="\frac{\sqrt{3}}{3}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{3}}{3}$"
   hint="Write $\sqrt{75}$ as $\sqrt{25} \cdot \sqrt{3} = 5\sqrt{3}$, then remove the common factor."
 >}}
@@ -73,6 +75,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{8 - \sqrt{40}}{10}$."
   answer="\frac{4 - \sqrt{10}}{5}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{4 - \sqrt{10}}{5}$"
   hint="$\sqrt{40} = 2\sqrt{10}$. Factor a $2$ out of the numerator, then remove the common factor of $2$."
 >}}
@@ -80,6 +83,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{10 - \sqrt{75}}{20}$."
   answer="\frac{2 - \sqrt{3}}{4}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{2 - \sqrt{3}}{4}$"
   hint="$\sqrt{75} = 5\sqrt{3}$. Factor a $5$ out of the numerator, then remove the common factor of $5$."
 >}}
@@ -126,6 +130,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{48}}{\sqrt{108}}$."
   answer="\frac{2}{3}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{2}{3}$"
   hint="Write it as $\sqrt{\tfrac{48}{108}}$, reduce the fraction inside, then take the square root."
 >}}
@@ -133,6 +138,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{96}}{\sqrt{54}}$."
   answer="\frac{4}{3}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{4}{3}$"
   hint="Write it as $\sqrt{\tfrac{96}{54}}$, reduce the fraction inside to $\tfrac{16}{9}$, then take the square root."
 >}}
@@ -156,6 +162,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{12r^3}}{\sqrt{6r}}$."
   answer="r\sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$r\sqrt{2}$"
   hint="Write it as $\sqrt{\tfrac{12r^3}{6r}} = \sqrt{2r^2}$, then take the square root of the perfect-square factor $r^2$."
 >}}
@@ -163,6 +170,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{14p^9}}{\sqrt{2p^5}}$."
   answer="p^2\sqrt{7}"
+  answerForm="simplified-radical"
   answerDisplay="$p^2\sqrt{7}$"
   hint="Write it as $\sqrt{\tfrac{14p^9}{2p^5}} = \sqrt{7p^4}$, then take the square root of $p^4$."
 >}}
@@ -183,6 +191,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{50s^3}}{\sqrt{128s}}$."
   answer="\frac{5s}{8}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{5s}{8}$"
   hint="Write it as $\sqrt{\tfrac{50s^3}{128s}} = \sqrt{\tfrac{25s^2}{64}}$, then take the square root of the numerator and denominator."
 >}}
@@ -190,6 +199,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{75q^5}}{\sqrt{108q}}$."
   answer="\frac{5q^2}{6}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{5q^2}{6}$"
   hint="Write it as $\sqrt{\tfrac{75q^5}{108q}} = \sqrt{\tfrac{25q^4}{36}}$, then take the square root of the numerator and denominator."
 >}}
@@ -210,6 +220,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{162x^{10}y^2}}{\sqrt{2x^6 y^6}}$."
   answer="\frac{9x^2}{y^2}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{9x^2}{y^2}$"
   hint="Write it as $\sqrt{\tfrac{162x^{10}y^2}{2x^6 y^6}} = \sqrt{\tfrac{81x^4}{y^4}}$, then take the square root of the numerator and denominator."
 >}}
@@ -217,6 +228,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{300m^3 n^7}}{\sqrt{3m^5 n}}$."
   answer="\frac{10n^3}{m}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{10n^3}{m}$"
   hint="Write it as $\sqrt{\tfrac{300m^3 n^7}{3m^5 n}} = \sqrt{\tfrac{100n^6}{m^2}}$, then take the square root of the numerator and denominator."
 >}}
@@ -290,6 +302,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{5}{\sqrt{3}}$."
   answer="\frac{5\sqrt{3}}{3}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{5\sqrt{3}}{3}$"
   hint="Multiply the numerator and denominator by $\sqrt{3}$; the denominator becomes $\sqrt{3} \cdot \sqrt{3} = 3$."
 >}}
@@ -297,6 +310,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{6}{\sqrt{5}}$."
   answer="\frac{6\sqrt{5}}{5}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{6\sqrt{5}}{5}$"
   hint="Multiply the numerator and denominator by $\sqrt{5}$; the denominator becomes $\sqrt{5} \cdot \sqrt{5} = 5$."
 >}}
@@ -326,6 +340,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{5}{2\sqrt{5}}$."
   answer="\frac{\sqrt{5}}{2}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{5}}{2}$"
   hint="Multiply the numerator and denominator by $\sqrt{5}$; the denominator becomes $2 \cdot 5 = 10$, then remove the common factor with the numerator."
 >}}
@@ -333,6 +348,7 @@ $$
 {{< fillin
   question="Simplify: $-\tfrac{9}{4\sqrt{3}}$."
   answer="-\frac{3\sqrt{3}}{4}"
+  answerForm="simplified-radical"
   answerDisplay="$-\tfrac{3\sqrt{3}}{4}$"
   hint="Multiply the numerator and denominator by $\sqrt{3}$; the denominator becomes $4 \cdot 3 = 12$, then remove the common factor of $3$."
 >}}
@@ -435,6 +451,7 @@ factors after we have simplified the denominator.
 {{< fillin
   question="Simplify: $\tfrac{2}{2 + \sqrt{3}}$."
   answer="4 - 2\sqrt{3}"
+  answerForm="simplified-radical"
   answerDisplay="$4 - 2\sqrt{3}$"
   hint="Multiply the numerator and denominator by the conjugate $2 - \sqrt{3}$; the denominator becomes $4 - 3 = 1$."
 >}}
@@ -442,6 +459,7 @@ factors after we have simplified the denominator.
 {{< fillin
   question="Simplify: $\tfrac{5}{5 + \sqrt{3}}$."
   answer="\frac{5(5 - \sqrt{3})}{22}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{5\left(5 - \sqrt{3}\right)}{22}$"
   hint="Multiply the numerator and denominator by the conjugate $5 - \sqrt{3}$; the denominator becomes $25 - 3 = 22$."
 >}}
@@ -464,6 +482,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{3}{1 - \sqrt{5}}$."
   answer="-\frac{3(1 + \sqrt{5})}{4}"
+  answerForm="simplified-radical"
   answerDisplay="$-\tfrac{3\left(1 + \sqrt{5}\right)}{4}$"
   hint="Multiply the numerator and denominator by the conjugate $1 + \sqrt{5}$; the denominator becomes $1 - 5 = -4$."
 >}}
@@ -471,6 +490,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{2}{4 - \sqrt{6}}$."
   answer="\frac{2(4 + \sqrt{6})}{10}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{2\left(4 + \sqrt{6}\right)}{10}$"
   hint="Multiply the numerator and denominator by the conjugate $4 + \sqrt{6}$; the denominator becomes $16 - 6 = 10$."
 >}}
@@ -491,6 +511,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{5}}{\sqrt{x} + \sqrt{2}}$."
   answer="\frac{\sqrt{5}(\sqrt{x} - \sqrt{2})}{x - 2}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{5}\left(\sqrt{x} - \sqrt{2}\right)}{x - 2}$"
   hint="Multiply the numerator and denominator by the conjugate $\sqrt{x} - \sqrt{2}$; the denominator becomes $x - 2$."
 >}}
@@ -498,6 +519,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{10}}{\sqrt{y} - \sqrt{3}}$."
   answer="\frac{\sqrt{10}(\sqrt{y} + \sqrt{3})}{y - 3}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{10}\left(\sqrt{y} + \sqrt{3}\right)}{y - 3}$"
   hint="Multiply the numerator and denominator by the conjugate $\sqrt{y} + \sqrt{3}$; the denominator becomes $y - 3$."
 >}}
@@ -525,6 +547,7 @@ common factors to remove from the numerator and denominator.
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{p} + \sqrt{2}}{\sqrt{p} - \sqrt{2}}$."
   answer="\frac{(\sqrt{p} + \sqrt{2})^2}{p - 2}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\left(\sqrt{p} + \sqrt{2}\right)^2}{p - 2}$"
   hint="Multiply the numerator and denominator by the conjugate $\sqrt{p} + \sqrt{2}$; the denominator becomes $p - 2$, and the numerator stays in factored (squared) form."
 >}}
@@ -532,6 +555,7 @@ common factors to remove from the numerator and denominator.
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{q} - \sqrt{10}}{\sqrt{q} + \sqrt{10}}$."
   answer="\frac{(\sqrt{q} - \sqrt{10})^2}{q - 10}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\left(\sqrt{q} - \sqrt{10}\right)^2}{q - 10}$"
   hint="Multiply the numerator and denominator by the conjugate $\sqrt{q} - \sqrt{10}$; the denominator becomes $q - 10$, and the numerator stays in factored (squared) form."
 >}}

@@ -112,6 +112,7 @@ $$
 {{< fillin
   question="Simplify: $23r + 14s + 9r + 15s$."
   answer="32r + 29s"
+  answerForm="no-like-terms"
   answerDisplay="$32r + 29s$"
   hint="Reorder so the $r$ terms are together and the $s$ terms are together, then combine like terms."
 >}}
@@ -119,6 +120,7 @@ $$
 {{< fillin
   question="Simplify: $37m + 21n + 4m - 15n$."
   answer="41m + 6n"
+  answerForm="no-like-terms"
   answerDisplay="$41m + 6n$"
   hint="Group the $m$ terms and the $n$ terms, then combine like terms — mind the subtraction on the last term."
 >}}
@@ -142,6 +144,7 @@ $$
 {{< fillin
   question="Simplify: $\left(\tfrac{7}{15} + \tfrac{5}{8}\right) + \tfrac{3}{8}$. Enter your answer as an improper fraction."
   answer="\frac{22}{15}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{22}{15}$"
   hint="Regroup so the two eighths add first: $\tfrac{5}{8} + \tfrac{3}{8} = 1$. Then add $\tfrac{7}{15} + 1$."
 >}}
@@ -149,6 +152,7 @@ $$
 {{< fillin
   question="Simplify: $\left(\tfrac{2}{9} + \tfrac{7}{12}\right) + \tfrac{5}{12}$. Enter your answer as an improper fraction."
   answer="\frac{11}{9}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{11}{9}$"
   hint="Regroup so the two twelfths add first: $\tfrac{7}{12} + \tfrac{5}{12} = 1$. Then add $\tfrac{2}{9} + 1$."
 >}}
@@ -265,6 +269,7 @@ $$
 {{< fillin
   question="Simplify: $-27a + (-48a) + 27a$."
   answer="-48a"
+  answerForm="no-like-terms"
   answerDisplay="$-48a$"
   hint="The first and third terms are opposites — reorder so they sit together and add to $0$."
 >}}
@@ -272,6 +277,7 @@ $$
 {{< fillin
   question="Simplify: $39x + (-92x) + (-39x)$."
   answer="-92x"
+  answerForm="no-like-terms"
   answerDisplay="$-92x$"
   hint="The first and third terms are opposites — reorder so they sit together and add to $0$."
 >}}
@@ -293,6 +299,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{9}{16} \cdot \tfrac{5}{49} \cdot \tfrac{16}{9}$."
   answer="\frac{5}{49}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{49}$"
   hint="The first and third factors are reciprocals — reorder so they multiply to $1$."
 >}}
@@ -300,6 +307,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{6}{17} \cdot \tfrac{11}{25} \cdot \tfrac{17}{6}$."
   answer="\frac{11}{25}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{11}{25}$"
   hint="The first and third factors are reciprocals — reorder so they multiply to $1$."
 >}}
@@ -321,6 +329,7 @@ $$\frac{10 - 3p}{0} \text{ is undefined.}$$
 {{< fillin
   question="Simplify: $\tfrac{0}{m + 7}$, where $m \neq -7$."
   answer="0"
+  answerForm="polynomial"
   hint="Zero divided by any nonzero real number is $0$."
 >}}
 
@@ -377,6 +386,7 @@ $$
 {{< fillin
   question="Simplify: $4(x + 2)$."
   answer="4x + 8"
+  answerForm="expanded"
   answerDisplay="$4x + 8$"
   hint="Multiply the $4$ by each term inside the parentheses."
 >}}
@@ -384,6 +394,7 @@ $$
 {{< fillin
   question="Simplify: $6(x + 7)$."
   answer="6x + 42"
+  answerForm="expanded"
   answerDisplay="$6x + 42$"
   hint="Multiply the $6$ by each term inside the parentheses."
 >}}
@@ -406,6 +417,7 @@ $$
 {{< fillin
   question="Simplify: $6\left(\tfrac{5}{6}y + \tfrac{1}{2}\right)$."
   answer="5y + 3"
+  answerForm="polynomial"
   answerDisplay="$5y + 3$"
   hint="Multiply the $6$ by each term: $6 \cdot \tfrac{5}{6}y$ and $6 \cdot \tfrac{1}{2}$."
 >}}
@@ -413,6 +425,7 @@ $$
 {{< fillin
   question="Simplify: $12\left(\tfrac{1}{3}n + \tfrac{3}{4}\right)$."
   answer="4n + 9"
+  answerForm="polynomial"
   answerDisplay="$4n + 9$"
   hint="Multiply the $12$ by each term: $12 \cdot \tfrac{1}{3}n$ and $12 \cdot \tfrac{3}{4}$."
 >}}
@@ -433,6 +446,7 @@ $$
 {{< fillin
   question="Simplify: $100(0.7 + 0.15p)$."
   answer="70 + 15p"
+  answerForm="expanded"
   answerDisplay="$70 + 15p$"
   hint="Multiply $100$ by each term inside the parentheses."
 >}}
@@ -440,6 +454,7 @@ $$
 {{< fillin
   question="Simplify: $100(0.04 + 0.35d)$."
   answer="4 + 35d"
+  answerForm="expanded"
   answerDisplay="$4 + 35d$"
   hint="Multiply $100$ by each term inside the parentheses."
 >}}
@@ -463,6 +478,7 @@ Notice that you could also write the result as $33a - 44$. Do you know why?
 {{< fillin
   question="Simplify: $-5(2 - 3a)$."
   answer="-10 + 15a"
+  answerForm="expanded"
   answerDisplay="$-10 + 15a$"
   hint="Distribute the $-5$ to each term; multiplying $-5$ by $-3a$ gives a positive result."
 >}}
@@ -470,6 +486,7 @@ Notice that you could also write the result as $33a - 44$. Do you know why?
 {{< fillin
   question="Simplify: $-7(8 - 15y)$."
   answer="-56 + 105y"
+  answerForm="expanded"
   answerDisplay="$-56 + 105y$"
   hint="Distribute the $-7$ to each term; multiplying $-7$ by $-15y$ gives a positive result."
 >}}
@@ -492,6 +509,7 @@ $$
 {{< fillin
   question="Simplify: $-(z - 11)$."
   answer="-z + 11"
+  answerForm="expanded"
   answerDisplay="$-z + 11$"
   hint="Multiplying by $-1$ gives the opposite of each term."
 >}}
@@ -499,6 +517,7 @@ $$
 {{< fillin
   question="Simplify: $-(x - 4)$."
   answer="-x + 4"
+  answerForm="expanded"
   answerDisplay="$-x + 4$"
   hint="Multiplying by $-1$ gives the opposite of each term."
 >}}
@@ -526,6 +545,7 @@ $$
 {{< fillin
   question="Simplify: $9 - 3(x + 2)$."
   answer="-3x + 3"
+  answerForm="distributed"
   answerDisplay="$-3x + 3$"
   hint="Distribute the $3$ first, then combine the constant terms: $9 - 6$."
 >}}
@@ -533,6 +553,7 @@ $$
 {{< fillin
   question="Simplify: $7x - 5(x + 4)$."
   answer="2x - 20"
+  answerForm="distributed"
   answerDisplay="$2x - 20$"
   hint="Distribute the $5$ first, then combine the like $x$ terms: $7x - 5x$."
 >}}
@@ -550,6 +571,7 @@ $$
 {{< fillin
   question="Simplify: $6(x - 9) - (x + 12)$."
   answer="5x - 66"
+  answerForm="distributed"
   answerDisplay="$5x - 66$"
   hint="Distribute the $6$ and the leading negative, then combine like terms: $6x - x$ and $-54 - 12$."
 >}}
@@ -557,6 +579,7 @@ $$
 {{< fillin
   question="Simplify: $8(x - 1) - (x + 5)$."
   answer="7x - 13"
+  answerForm="distributed"
   answerDisplay="$7x - 13$"
   hint="Distribute the $8$ and the leading negative, then combine like terms: $8x - x$ and $-8 - 5$."
 >}}

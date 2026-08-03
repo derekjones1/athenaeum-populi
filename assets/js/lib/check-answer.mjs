@@ -385,11 +385,21 @@ function checkUnordered(studentRaw, answerRaw) {
  * *value*, so a learner passes by retyping the prompt. The missing constraint
  * is the shape of the response, and these predicates supply it.
  *
- * They read the LaTeX, not the parsed expression, because the Compute Engine
- * deliberately erases exactly the distinction being checked: `\frac{40}{88}`
- * parses to ["Rational",5,11], `2^4\cdot5` to 80 and `4.2\times10^4` to 42000
- * — even with canonical:false. The value comparison stays with the CAS; only
- * the written form is read off the source.
+ * Which evidence a predicate reads depends on what it is distinguishing, and
+ * the split is not a style choice:
+ *
+ * - NUMERAL forms read the LaTeX, because the Compute Engine erases exactly
+ *   the distinction being checked — it can *evaluate* the difference away.
+ *   `\frac{40}{88}` parses to ["Rational",5,11], `2^4\cdot5` to 80 and
+ *   `4.2\times10^4` to 42000, even with canonical:false.
+ * - SYMBOLIC forms read the parse, because there the opposite holds: there is
+ *   nothing to evaluate in `(x+2)(x+4)`, so the Multiply survives verbatim
+ *   while the expanded `x^2+6x+8` stays an Add. Reading the LaTeX instead
+ *   would mean re-deriving \left, \cdot vs juxtaposition, unary signs, brace
+ *   grouping and exponent folding — all of which the engine already knows.
+ *
+ * Either way the value comparison stays with the CAS; only the written form is
+ * read off the response.
  *
  * A spec is a space-separated set of tokens, all of which must hold, so an ask
  * like "convert to an improper fraction in lowest terms" composes from the two
@@ -483,6 +493,124 @@ function asProductOfPowers(latex) {
 }
 
 /**
+ * A monomial's numeric coefficient and its variable bases — or null when the
+ * expression is not a single term. `Multiply` nests (`15a` inside a longer
+ * product), so the factors are flattened before counting.
+ *
+ * "Single term" means what a learner means by it: one coefficient and each
+ * variable appearing once. `(5y^7)(-7y^4)` fails on both counts, which is
+ * exactly what separates it from its own product `-35y^{11}`.
+ */
+function monomialParts(expr) {
+  const factors = [];
+  const flatten = (e) => {
+    if (e.operator === 'Multiply') e.ops.forEach(flatten);
+    else if (e.operator === 'Negate') flatten(e.ops[0]);
+    else factors.push(e);
+  };
+  flatten(expr);
+  let coefficient = 1;
+  let numerics = 0;
+  const bases = new Set();
+  for (const factor of factors) {
+    if (factor.isNumberLiteral) {
+      numerics += 1;
+      coefficient *= Math.abs(factor.re);
+      continue;
+    }
+    const base = factor.operator === 'Power' ? factor.ops[0] : factor;
+    const name = base.symbol;
+    if (!name || bases.has(name)) return null;
+    bases.add(name);
+  }
+  return numerics <= 1 ? { coefficient, bases } : null;
+}
+
+/**
+ * The same flattening, but *combining* repeats instead of rejecting them:
+ * `(6m^2n)(5m^4n^3)` is one monomial worth `30m^6n^4`. Used for the
+ * reduced-fraction test, where an unmultiplied numerator is still a monomial
+ * and its coefficient still has to be compared against the denominator's.
+ *
+ * Kept separate from monomialParts() on purpose — `single-term` must *reject*
+ * the unmultiplied form, which is the whole point of that token.
+ */
+function monomialMagnitude(expr) {
+  const factors = [];
+  const flatten = (e) => {
+    if (e.operator === 'Multiply') e.ops.forEach(flatten);
+    else if (e.operator === 'Negate') flatten(e.ops[0]);
+    else factors.push(e);
+  };
+  flatten(expr);
+  let coefficient = 1;
+  const bases = new Set();
+  for (const factor of factors) {
+    if (factor.isNumberLiteral) {
+      coefficient *= Math.abs(factor.re);
+      continue;
+    }
+    const base = factor.operator === 'Power' ? factor.ops[0] : factor;
+    if (!base.symbol) return null;
+    bases.add(base.symbol);
+  }
+  return Number.isFinite(coefficient) ? { coefficient, bases } : null;
+}
+
+/**
+ * How many factors a response is written as, and how many of them are
+ * multi-term — or null when it is not a product at all.
+ *
+ * This is the first predicate helper to read the PARSED expression rather than
+ * the LaTeX; see the section banner for why symbolic structure survives where
+ * numeral structure does not. Working from the parse means `\left(`, MathLive's
+ * `{(5u-v)}^2`, `\cdot` versus juxtaposition and a leading unary minus all
+ * arrive already normalized.
+ *
+ * A `\pm1` factor is skipped rather than counted, so `1(x^2+6x+8)` cannot buy
+ * its way past the "two factors" test. (Most such dodges never even reach here
+ * — the engine folds `1(x^2+6x+8)` and `\frac{x}{x}(x^2+6x+8)` back to a plain
+ * Add on its own.)
+ */
+function factorCounts(expr) {
+  if (expr.operator === 'Negate') return factorCounts(expr.ops[0]);
+  // `(x+2)^3` is three copies of one multi-term factor, so a perfect square
+  // like `(4y+3)^2` satisfies "at least two factors" the way it should.
+  if (expr.operator === 'Power') {
+    const [base, exponent] = expr.ops;
+    const power = exponent.re;
+    return base.operator === 'Add' && Number.isInteger(power) && power >= 2
+      ? { count: power, compound: 1 }
+      : null;
+  }
+  if (expr.operator !== 'Multiply') return null;
+  let count = 0;
+  let compound = 0;
+  for (const factor of expr.ops) {
+    const nested = factorCounts(factor);
+    if (nested) {
+      count += nested.count;
+      compound += nested.compound;
+      continue;
+    }
+    if (factor.isNumberLiteral && (factor.re === 1 || factor.re === -1)) continue;
+    count += 1;
+    if (factor.operator === 'Add') compound += 1;
+  }
+  return { count, compound };
+}
+
+function asFactoredProduct(latex) {
+  let expr;
+  try {
+    expr = ce.parse(preprocess(latex));
+  } catch {
+    return null;
+  }
+  return expr.isValid ? factorCounts(expr) : null;
+}
+
+/**
  * One requirement each. A token holds when the response is written that way;
  * `lowest-terms` also holds for a response with no fraction to reduce, so it
  * composes with the shape tokens instead of contradicting them.
@@ -515,6 +643,286 @@ const FORM_PREDICATES = {
     const bases = asProductOfPowers(latex);
     return bases !== null && bases.length > 0 && bases.every(isPrime);
   },
+  // "Simplify: $(3^8)^2$. Write the answer as a power of 3" — the printed
+  // nested power is the same value as `3^{16}`, so only the shape separates
+  // them. `lowest-terms` happens to reject these too (its fallback accepts a
+  // product of powers), but it would tell the learner to "write it in lowest
+  // terms", which names a step this exercise never asks for. A power gets its
+  // own token so the feedback matches the ask.
+  // A quotient of powers simplifies to one power, which the source writes as a
+  // reciprocal when the exponent goes negative ("$12^{15}/12^{30}$" →
+  // $\tfrac{1}{12^{15}}$), so that shape counts as a single power too. It is
+  // not a `fraction`: asFraction takes integer arguments only, and no other
+  // token accepts it at all.
+  'single-power': (latex) => {
+    const isOnePower = (text) => {
+      const bases = asProductOfPowers(text);
+      if (bases !== null && bases.length === 1) return true;
+      // A variable base too — "$(b^7)^5$" answers with `b^{35}`, and the engine
+      // folds the nested power away, so only the written form separates them.
+      // asProductOfPowers is numeral-only, so match the variable case here.
+      return /^[A-Za-z]\s*(?:\^\s*\{?\s*-?\d+\s*\}?)?$/.test(bareLatex(text));
+    };
+    if (isOnePower(latex)) return true;
+    const reciprocal = bareLatex(latex)
+      .match(/^\\[tdc]?frac\s*\{\s*1\s*\}\s*\{([\s\S]+)\}$/);
+    return reciprocal !== null && isOnePower(reciprocal[1]);
+  },
+  // "Simplify: $\sqrt{32}-\sqrt{18}$" answers with `\sqrt{2}`. This one is read
+  // entirely off the LaTeX and never parsed: the engine evaluates radical
+  // arithmetic, so prompt and answer arrive as the *same* expression, and
+  // parsing radicals is also where the Compute Engine is slow enough to stall a
+  // corpus-wide check.
+  //
+  // A radical response is simplified when three things hold — the three steps
+  // the source teaches:
+  //   1. no radicand keeps a perfect-square (or perfect-nth-power) factor,
+  //      so `\sqrt{32}` and `\sqrt{64x^2}` are not simplified;
+  //   2. no two top-level terms share a radicand, so `8\sqrt2-9\sqrt2` is not
+  //      combined yet; and
+  //   3. no radical is left in a denominator — the rationalizing step.
+  'simplified-radical': (latex) => {
+    const bare = bareLatex(latex);
+    // Read each radicand as a balanced group: `\sqrt[4]{u^{12}}` and
+    // `\sqrt{\tfrac{75x^5}{3x}}` both carry braces inside the radicand, which a
+    // flat `[^{}]*` pattern silently fails to match — and a radical that never
+    // matches is a radical never checked.
+    const radicands = [];
+    for (const opener of bare.matchAll(/\\sqrt\s*(?:\[\s*(\d+)\s*\])?\s*\{/g)) {
+      const group = readBalancedGroup(bare, opener.index + opener[0].length - 1);
+      if (group) radicands.push([opener[1], group[0]]);
+    }
+    for (const [indexArg, radicand] of radicands) {
+      const root = Number(indexArg ?? 2);
+      const numeral = radicand.match(/^\s*(\d+)/);
+      if (numeral) {
+        const value = Number(numeral[1]);
+        for (let factor = 2; factor ** root <= value; factor += 1) {
+          if (value % factor ** root === 0) return false;
+        }
+      }
+      // A variable power at or above the root index still comes out: \sqrt{x^2}.
+      for (const [, exponent] of radicand.matchAll(/\^\s*\{?\s*(\d+)\s*\}?/g)) {
+        if (Number(exponent) >= root) return false;
+      }
+    }
+    // A radical below a fraction bar has not been rationalized. The denominator
+    // is read as a balanced group, because `\sqrt{3}` brings its own braces.
+    for (const opener of bare.matchAll(/\\[tdc]?frac\s*\{/g)) {
+      const numerator = readBalancedGroup(bare, opener.index + opener[0].length - 1);
+      if (!numerator) continue;
+      const afterNumerator = bare.slice(numerator[1]).match(/^\s*\{/);
+      if (!afterNumerator) continue;
+      const denominator = readBalancedGroup(bare, numerator[1] + afterNumerator[0].length - 1);
+      if (denominator && /\\sqrt/.test(denominator[0])) return false;
+    }
+    // Like radicals must already be combined: split the top level on + and -
+    // and require each radicand to appear once.
+    const seen = new Set();
+    let depth = 0;
+    let term = '';
+    const terms = [];
+    for (let i = 0; i < bare.length; i += 1) {
+      const char = bare[i];
+      if (char === '{' || char === '(') depth += 1;
+      else if (char === '}' || char === ')') depth -= 1;
+      if (depth === 0 && (char === '+' || char === '-') && term.trim()) {
+        terms.push(term);
+        term = '';
+        continue;
+      }
+      term += char;
+    }
+    terms.push(term);
+    for (const piece of terms) {
+      const opener = piece.match(/\\sqrt\s*(?:\[\s*\d+\s*\])?\s*\{/);
+      if (!opener) continue;
+      const group = readBalancedGroup(piece, opener.index + opener[0].length - 1);
+      if (!group) continue;
+      const key = group[0].replace(/\s+/g, '');
+      if (seen.has(key)) return false;
+      seen.add(key);
+    }
+    return true;
+  },
+  // "Simplify: $9-3(x+2)$" answers with `3-3x`. Both sides are top-level sums,
+  // so `expanded` cannot separate them — what is left undone in the prompt is
+  // the distribution, i.e. a term that still holds a sum inside a product.
+  //
+  // Stricter than `expanded`, which deliberately still allows a remainder term
+  // like `x+5+\tfrac{3}{x-2}` (whose denominator is a sum). Use `distributed`
+  // only where every term must be a bare monomial.
+  distributed: (latex) => {
+    // "Multiplied out" means no grouping left to multiply — and the engine
+    // flattens `(y+12)+28` to `y+40`, its own answer, so the parenthesis has
+    // to be read off the LaTeX rather than the parse.
+    if (/[()]/.test(bareLatex(latex))) return false;
+    let expr;
+    try {
+      expr = ce.parse(preprocess(latex));
+    } catch {
+      return false;
+    }
+    if (!expr.isValid) return false;
+    const holdsASum = (e) => {
+      if (e.operator === 'Add') return true;
+      if (!e.ops || !e.ops.length) return false;
+      return e.ops.some(holdsASum);
+    };
+    const terms = expr.operator === 'Add' ? expr.ops : [expr];
+    return terms.every((term) => !holdsASum(term));
+  },
+  // "Subtract: $\tfrac{n^2}{n-4} - \tfrac{n+12}{n-4}$" answers with the plain
+  // polynomial `n+3`. `expanded` cannot separate those — a difference of
+  // fractions is a top-level sum too — and `single-fraction` does not apply,
+  // because the answer is not a fraction at all. What is left is the fraction
+  // bar itself: the prompt has one, the answer does not.
+  //
+  // Deliberately narrower than `expanded`, which still permits a remainder
+  // term ("$x+5+\tfrac{3}{x-2}$"). Use this only where the ask is to clear the
+  // denominator entirely.
+  polynomial: (latex) => {
+    const bare = bareLatex(latex);
+    if (/\\[tdc]?frac|\\div|\//.test(bare)) return false;
+    try {
+      return ce.parse(preprocess(latex)).isValid;
+    } catch {
+      return false;
+    }
+  },
+  // "Simplify: $3x^2+7x+9+7x^2+9x+8$" prints a sum worth exactly its own
+  // combined form, so again only the shape separates them — here, whether two
+  // terms share a variable-and-power signature. The engine keeps `3x^2` and
+  // `7x^2` as distinct terms of the sum, which is what makes this checkable;
+  // it does fold bare constants, so a repeated *number* is already gone by the
+  // time the predicate runs and cannot be required.
+  'no-like-terms': (latex) => {
+    let expr;
+    try {
+      expr = ce.parse(preprocess(latex));
+    } catch {
+      return false;
+    }
+    if (!expr.isValid) return false;
+    if (expr.operator !== 'Add') return true; // a single term has nothing to combine
+    const signatures = new Set();
+    for (const term of expr.ops) {
+      const parts = [];
+      const walk = (e) => {
+        if (e.operator === 'Multiply') e.ops.forEach(walk);
+        else if (e.operator === 'Negate') walk(e.ops[0]);
+        else if (!e.isNumberLiteral) {
+          const base = e.operator === 'Power' ? e.ops[0] : e;
+          const power = e.operator === 'Power' ? e.ops[1].toString() : '1';
+          parts.push(`${base.toString()}^${power}`);
+        }
+      };
+      walk(term);
+      const signature = parts.sort().join('*') || 'constant';
+      if (signatures.has(signature)) return false;
+      signatures.add(signature);
+    }
+    return true;
+  },
+  // "Multiply: $(w+5)(w+7)$" prints a product worth exactly its own expansion,
+  // so the shape is again the only separator: the answer is a sum of terms
+  // where the prompt is a product, a power, or a quotient.
+  //
+  // Like `factored`, a shape check and not a completeness check —
+  // `x(x+5)+2(x+5)` is a top-level sum and passes. Ruling out the printed
+  // product is the job.
+  // `Complex` counts alongside `Add`: the engine folds `12+20i` into a complex
+  // literal, and $a+bi$ is exactly the expanded form the prompt asks for.
+  expanded: (latex) => {
+    try {
+      const expr = ce.parse(preprocess(latex));
+      return expr.isValid && (expr.operator === 'Add' || expr.operator === 'Complex');
+    } catch {
+      return false;
+    }
+  },
+  // The monomial case of the same ask: "Multiply: $(5y^7)(-7y^4)$" has the
+  // single term `-35y^{11}` as its answer, and both sides parse as a product,
+  // so `expanded` cannot separate them — the count of coefficients and repeated
+  // bases can.
+  // A written-out multiplication is not yet a single term, and the engine
+  // folds the numbers before the parse can see it — `\tfrac{3}{7}\cdot 21n`
+  // canonicalizes to `9n`, its own answer. So the top-level `\cdot` is read off
+  // the LaTeX, and the term structure off the parse.
+  'single-term': (latex) => {
+    // A written sum is not one term, however it folds: "$92+31s-92$"
+    // canonicalizes to `31s`, its own answer, so the `+` has to be read off
+    // the LaTeX. The leading sign is stripped first — `-35y^{11}` is one term.
+    const bare = bareLatex(latex).replace(/^[-−]\s*/, '');
+    // A factor raised to the zero power is a written-out `1` the learner was
+    // asked to remove ("Simplify: $7x^2y^0$" → `7x^2`); the engine folds it, so
+    // it too has to be caught on the LaTeX.
+    if (/\^\s*\{?\s*0\s*\}?/.test(bare)) return false;
+    let depth = 0;
+    for (let i = 0; i < bare.length; i += 1) {
+      if (bare[i] === '{' || bare[i] === '(') depth += 1;
+      else if (bare[i] === '}' || bare[i] === ')') depth -= 1;
+      else if (depth === 0 && (bare[i] === '+' || bare[i] === '-'
+        || bare.startsWith('\\cdot', i) || bare.startsWith('\\times', i))) return false;
+    }
+    try {
+      const expr = ce.parse(preprocess(latex));
+      if (!expr.isValid) return false;
+      const parts = monomialParts(expr);
+      return parts !== null && parts.bases.size >= 1;
+    } catch {
+      return false;
+    }
+  },
+  // "Divide: $\tfrac{c+3}{5-c} \div \tfrac{c^2-9}{c-5}$" answers with one
+  // reduced fraction. This one reads the LaTeX rather than the parse, because
+  // the engine flattens `a/b ÷ c/d` into a single Divide — structurally
+  // identical to the answer — while the written `\div` is still right there.
+  //
+  // When both halves are monomials the shape alone is not enough either
+  // ($\tfrac{16a^7b^6}{24ab^8}$ is one fraction too), so those additionally
+  // have to be reduced: no common numeric factor and no shared variable.
+  'single-fraction': (latex) => {
+    const bare = bareLatex(latex).replace(/^[-−]\s*/, '');
+    if (/\\div/.test(bare) || !/^\\[tdc]?frac/.test(bare)) return false;
+    let depth = 0;
+    for (let i = 0; i < bare.length; i += 1) {
+      if (bare[i] === '{') depth += 1;
+      else if (bare[i] === '}') depth -= 1;
+      // A top-level `+` or `-` means a SUM of fractions, not one fraction —
+      // `\frac{y}{6}+\frac{7}{9}` is the prompt, `\frac{3y+14}{18}` the answer.
+      // The leading sign was stripped above, so anything left here is an
+      // operator between terms.
+      else if (depth === 0 && (bare[i] === '+' || bare[i] === '-'
+        || bare.startsWith('\\cdot', i) || bare.startsWith('\\times', i))) return false;
+    }
+    let expr;
+    try {
+      expr = ce.parse(preprocess(latex));
+    } catch {
+      return false;
+    }
+    if (!expr.isValid) return false;
+    const quotient = expr.operator === 'Negate' ? expr.ops[0] : expr;
+    if (quotient.operator !== 'Divide') return true;
+    const [numerator, denominator] = quotient.ops.map(monomialMagnitude);
+    if (!numerator || !denominator) return true; // a polynomial part: shape only
+    const shared = [...numerator.bases].some((name) => denominator.bases.has(name));
+    return !shared && gcd(numerator.coefficient, denominator.coefficient) === 1;
+  },
+  // "Factor: $x^2+6x+8$" prints a polynomial that *is* its own factorization by
+  // value, so only the shape separates `(x+2)(x+4)` from the prompt retyped.
+  //
+  // Deliberately a shape check, not a completeness check: `2(2x^2+8x+8)` passes
+  // for `4x^2+16x+16`. Demanding full factorization would reject sound content
+  // — the GCF-only exercises whose prompts say "by taking out the greatest
+  // common factor" legitimately answer `-7a(a^2-3a+2)` — and a rule that fires
+  // on correct content is a bug in the rule. Ruling out the printed polynomial
+  // is the whole job here.
+  factored: (latex) => {
+    const product = asFactoredProduct(latex);
+    return product !== null && product.compound >= 1 && product.count >= 2;
+  },
 };
 
 const DENOMINATOR_TOKEN = /^denominator:(\d+)$/;
@@ -546,6 +954,15 @@ const FORM_PHRASES = {
   'lowest-terms': 'in lowest terms',
   'scientific-notation': 'in scientific notation',
   'prime-product': 'as a product of prime factors',
+  'single-power': 'as a single power',
+  expanded: 'in expanded form',
+  'no-like-terms': 'with like terms combined',
+  polynomial: 'as a polynomial, with no fraction bar',
+  distributed: 'with the parentheses multiplied out',
+  'simplified-radical': 'as a simplified radical',
+  'single-term': 'as a single term',
+  'single-fraction': 'as a single fraction',
+  factored: 'in factored form',
 };
 
 export function describeAnswerForm(spec) {

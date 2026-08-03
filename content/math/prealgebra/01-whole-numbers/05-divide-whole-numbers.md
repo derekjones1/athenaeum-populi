@@ -108,6 +108,7 @@ answer.
 {{< fillin
   question="Divide: $54 \div 6$."
   answer="9"
+  answerForm="decimal"
   hint="Which number times 6 gives 54? Check your quotient by multiplying it by the divisor."
 >}}
 
@@ -183,12 +184,14 @@ in without exceeding them.
 {{< fillin
   question="Divide: $2{,}636 \div 4$."
   answer="659"
+  answerForm="decimal"
   hint="4 goes into 26 six times. Work digit by digit, and check by multiplying your quotient by 4."
 >}}
 
 {{< fillin
   question="Divide: $4{,}305 \div 5$."
   answer="861"
+  answerForm="decimal"
   hint="5 doesn't go into 4, so start by dividing 43 by 5. Check: your quotient times 5 should be 4,305."
 >}}
 
@@ -326,6 +329,7 @@ sixty-three minus seven; the difference of sixty-three and seven
 {{< fillin
   question="Divide, then check by multiplying: $43 \div 43$"
   answer="1"
+  answerForm="decimal"
   hint="Use a Division Property of One — any number except zero divided by itself has the same quotient."
 >}}
 
@@ -343,12 +347,14 @@ undefined
 {{< fillin
   question="Divide, then check by multiplying: $72 \div 3$"
   answer="24"
+  answerForm="decimal"
   hint="3 goes into 7 twice with 1 left over; bring down the 2. Then check that your quotient times 3 is 72."
 >}}
 
 {{< fillin
   question="Divide, then check by multiplying: $\tfrac{91{,}881}{9}$"
   answer="10209"
+  answerForm="decimal"
   answerDisplay="$10{,}209$"
   hint="After the first step, 9 goes into 1 zero times — write that zero in the quotient and keep bringing digits down."
 >}}
@@ -367,6 +373,7 @@ undefined
 {{< fillin
   question="Divide, then check by multiplying: $56{,}883 \div 67$"
   answer="849"
+  answerForm="decimal"
   hint="The divisor has two digits, so start with the first three digits of the dividend: how many 67s are in 568? Guess and check."
 >}}
 

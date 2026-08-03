@@ -211,12 +211,14 @@ $$\begin{array}{lrcl} & && 24 - |19 - 3(6 - 2)| \\[4pt] \text{Work inside parent
 {{< fillin
   question="Simplify: $19 - |11 - 4(3 - 1)|$."
   answer="16"
+  answerForm="decimal"
   hint="Work inside the parentheses first, then multiply, then subtract inside the bars, then take the absolute value."
 >}}
 
 {{< fillin
   question="Simplify: $9 - |8 - 4(7 - 5)|$."
   answer="9"
+  answerForm="decimal"
   hint="Work inside the parentheses first, then multiply. Inside the bars you should reach $|8 - 8| = 0$."
 >}}
 
@@ -287,18 +289,21 @@ $$1 + (-5) = -4$$
 {{< fillin
   question="Add: $-2 + (-4)$."
   answer="-6"
+  answerForm="decimal"
   hint="Both signs are the same (both negative), so add and keep the negative sign."
 >}}
 
 {{< fillin
   question="Add: $-2 + 4$."
   answer="2"
+  answerForm="decimal"
   hint="The signs are different; there are more positives, so the sum is positive."
 >}}
 
 {{< fillin
   question="Add: $2 + (-4)$."
   answer="-2"
+  answerForm="decimal"
   hint="The signs are different; there are more negatives, so the sum is negative."
 >}}
 
@@ -351,18 +356,21 @@ $$3 - (-1) = 4$$
 {{< fillin
   question="Subtract: $6 - 4$."
   answer="2"
+  answerForm="decimal"
   hint="Take 4 positives away from 6 positives."
 >}}
 
 {{< fillin
   question="Subtract: $-6 - (-4)$."
   answer="-2"
+  answerForm="decimal"
   hint="Take 4 negatives away from 6 negatives."
 >}}
 
 {{< fillin
   question="Subtract: $-6 - 4$."
   answer="-10"
+  answerForm="decimal"
   hint="Model 6 negatives, add 4 neutral pairs, then take away 4 positives."
 >}}
 
@@ -401,18 +409,21 @@ $$\begin{array}{rcl} -7 - (-4) &=& -3 \\[4pt] -7 + 4 &=& -3 \end{array}$$
 {{< fillin
   question="Simplify: $21 - 13$ (which equals $21 + (-13)$)."
   answer="8"
+  answerForm="decimal"
   hint="Subtract, or add the opposite: $21 + (-13)$."
 >}}
 
 {{< fillin
   question="Simplify: $-11 - 7$ (which equals $-11 + (-7)$)."
   answer="-18"
+  answerForm="decimal"
   hint="Adding two negatives: $-11 + (-7)$."
 >}}
 
 {{< fillin
   question="Simplify: $6 - (-13)$ (which equals $6 + 13$)."
   answer="19"
+  answerForm="decimal"
   hint="Subtracting a negative is the same as adding its opposite: $6 + 13$."
 >}}
 
@@ -426,12 +437,14 @@ $$\begin{array}{lrcl} & && 7 - (-4 - 3) - 9 \\[4pt] \text{Simplify inside the pa
 {{< fillin
   question="Simplify: $8 - (-3 - 1) - 9$."
   answer="3"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first: $-3 - 1 = -4$. Then work left to right."
 >}}
 
 {{< fillin
   question="Simplify: $12 - (-9 - 6) - 14$."
   answer="13"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first: $-9 - 6 = -15$. Then work left to right."
 >}}
 
@@ -497,18 +510,21 @@ $$\begin{array}{lrcl} \text{(a) Divide, with signs that are the same the quotien
 {{< fillin
   question="Simplify: $-115 \div (-5)$."
   answer="23"
+  answerForm="decimal"
   hint="Same signs, so the quotient is positive."
 >}}
 
 {{< fillin
   question="Simplify: $5 \cdot 12$."
   answer="60"
+  answerForm="decimal"
   hint="Same signs, so the product is positive."
 >}}
 
 {{< fillin
   question="Simplify: $9(-7)$."
   answer="-63"
+  answerForm="decimal"
   hint="Different signs, so the product is negative."
 >}}
 
@@ -551,18 +567,21 @@ $$\begin{array}{lrcl} & -2^4 &=& -(2 \cdot 2 \cdot 2 \cdot 2) \\[4pt] \text{Mult
 {{< fillin
   question="Simplify: $(-3)^4$."
   answer="81"
+  answerForm="decimal"
   hint="The base in parentheses is $-3$; raise all of $-3$ to the fourth power."
 >}}
 
 {{< fillin
   question="Simplify: $-3^4$."
   answer="-81"
+  answerForm="decimal"
   hint="Only the $3$ is raised to the fourth power; then take the opposite."
 >}}
 
 {{< fillin
   question="Simplify: $(-7)^2$."
   answer="49"
+  answerForm="decimal"
   hint="The base in parentheses is $-7$; a negative squared is positive."
 >}}
 
@@ -583,18 +602,21 @@ $$\begin{array}{lrcl} & && -30 \div 2 + (-3)(-7) \\[4pt] \text{Multiply and divi
 {{< fillin
   question="Simplify: $12(-9) \div (-3)^3$."
   answer="4"
+  answerForm="decimal"
   hint="Exponents first: $(-3)^3 = -27$. Then multiply and divide left to right."
 >}}
 
 {{< fillin
   question="Simplify: $-27 \div 3 + (-5)(-6)$."
   answer="21"
+  answerForm="decimal"
   hint="Divide and multiply before adding: $-9 + 30$."
 >}}
 
 {{< fillin
   question="Simplify: $18(-4) \div (-2)^3$."
   answer="9"
+  answerForm="decimal"
   hint="Exponents first: $(-2)^3 = -8$. Then multiply and divide left to right."
 >}}
 

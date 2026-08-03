@@ -156,12 +156,14 @@ use the commutative property of addition to write the like terms together.
 {{< fillin
   question="Simplify: $23r + 14s + 9r + 15s$."
   answer="32r + 29s"
+  answerForm="no-like-terms"
   hint="Use the commutative property of addition to group the $r$-terms together and the $s$-terms together, then combine like terms."
 >}}
 
 {{< fillin
   question="Simplify: $37m + 21n + 4m - 15n$."
   answer="41m + 6n"
+  answerForm="no-like-terms"
   hint="Group the $m$-terms together and the $n$-terms together, then combine like terms."
 >}}
 
@@ -184,6 +186,7 @@ fractions, combine those with a common denominator first.
 {{< fillin
   question="Simplify: $(\tfrac{7}{15} + \tfrac{5}{8}) + \tfrac{3}{8}$."
   answer="\frac{22}{15}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{22}{15}$"
   hint="The last two terms share a denominator of $8$ — regroup so you add those first, then add the result to $\tfrac{7}{15}$ and convert to an improper fraction."
 >}}
@@ -191,6 +194,7 @@ fractions, combine those with a common denominator first.
 {{< fillin
   question="Simplify: $(\tfrac{2}{9} + \tfrac{7}{12}) + \tfrac{5}{12}$."
   answer="\frac{11}{9}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{11}{9}$"
   hint="Regroup so the two terms with denominator $12$ are added first, then add the result to $\tfrac{2}{9}$ and convert to an improper fraction."
 >}}
@@ -426,12 +430,14 @@ $\tfrac{0}{-2} = 0$.
 {{< fillin
   question="Simplify: $-14 \cdot 0$."
   answer="0"
+  answerForm="decimal"
   hint="Any real number times zero is zero."
 >}}
 
 {{< fillin
   question="Simplify: $0 \div (-6)$."
   answer="0"
+  answerForm="decimal"
   hint="Zero divided by any nonzero real number is zero."
 >}}
 
@@ -449,6 +455,7 @@ $\tfrac{0}{n+5} = 0$.
 {{< fillin
   question="Simplify: $-84n + (-73n) + 84n$."
   answer="-73n"
+  answerForm="no-like-terms"
   hint="The first and third terms are opposites — use the commutative property to bring them together so they cancel, then add what's left."
 >}}
 
@@ -467,6 +474,7 @@ left to right, look for reciprocals — their product is $1$.
 {{< fillin
   question="Simplify: $\tfrac{9}{16} \cdot \tfrac{5}{49} \cdot \tfrac{16}{9}$."
   answer="\frac{5}{49}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{49}$"
   hint="The first and third factors, $\tfrac{9}{16}$ and $\tfrac{16}{9}$, are reciprocals — reorder so they multiply to $1$ first."
 >}}
@@ -474,6 +482,7 @@ left to right, look for reciprocals — their product is $1$.
 {{< fillin
   question="Simplify: $\tfrac{6}{17} \cdot \tfrac{11}{25} \cdot \tfrac{17}{6}$."
   answer="\frac{11}{25}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{11}{25}$"
   hint="The first and third factors, $\tfrac{6}{17}$ and $\tfrac{17}{6}$, are reciprocals — reorder so they multiply to $1$ first."
 >}}
@@ -481,6 +490,7 @@ left to right, look for reciprocals — their product is $1$.
 {{< fillin
   question="Simplify $\tfrac{0}{m+7}$, where $m \ne -7$."
   answer="0"
+  answerForm="polynomial"
   hint="Zero divided by any nonzero real number is zero."
 >}}
 
@@ -495,12 +505,14 @@ left to right, look for reciprocals — their product is $1$.
 {{< fillin
   question="Simplify: $\tfrac{2}{5} \cdot \tfrac{5}{2} (20y + 50)$."
   answer="20y + 50"
+  answerForm="polynomial"
   hint="The two fractions in front are reciprocals and multiply to 1, so the multiplicative identity leaves the parentheses unchanged."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{3}{8} \cdot \tfrac{8}{3} (12z + 16)$."
   answer="12z + 16"
+  answerForm="polynomial"
   hint="The two fractions in front are reciprocals and multiply to 1, so the multiplicative identity leaves the parentheses unchanged."
 >}}
 
@@ -553,12 +565,14 @@ terms. So we use the distributive property, as shown next.
 {{< fillin
   question="Simplify: $4(x + 2)$."
   answer="4x + 8"
+  answerForm="expanded"
   hint="Distribute the 4 to each term inside the parentheses, then multiply."
 >}}
 
 {{< fillin
   question="Simplify: $6(x + 7)$."
   answer="6x + 42"
+  answerForm="expanded"
   hint="Distribute the 6 to each term inside the parentheses, then multiply."
 >}}
 
@@ -576,12 +590,14 @@ the distributive property.
 {{< fillin
   question="Simplify: $6(\tfrac{5}{6} y + \tfrac{1}{2})$."
   answer="5y + 3"
+  answerForm="polynomial"
   hint="Distribute the 6 to each term, then multiply — the fractions should clear evenly."
 >}}
 
 {{< fillin
   question="Simplify: $12(\tfrac{1}{3} n + \tfrac{3}{4})$."
   answer="4n + 9"
+  answerForm="polynomial"
   hint="Distribute the 12 to each term, then multiply — the fractions should clear evenly."
 >}}
 
@@ -599,12 +615,14 @@ solve money applications in later chapters.
 {{< fillin
   question="Simplify: $100(0.7 + 0.15p)$."
   answer="70 + 15p"
+  answerForm="expanded"
   hint="Distribute the 100 to each term, then multiply — this clears the decimals."
 >}}
 
 {{< fillin
   question="Simplify: $100(0.04 + 0.35d)$."
   answer="4 + 35d"
+  answerForm="expanded"
   hint="Distribute the 100 to each term, then multiply — this clears the decimals."
 >}}
 
@@ -622,12 +640,14 @@ the signs correct!
 {{< fillin
   question="Simplify: $-3(6m + 5)$."
   answer="-18m - 15"
+  answerForm="expanded"
   hint="Distribute -3 to each term, keeping careful track of the signs."
 >}}
 
 {{< fillin
   question="Simplify: $-6(8n + 11)$."
   answer="-48n - 66"
+  answerForm="expanded"
   hint="Distribute -6 to each term, keeping careful track of the signs."
 >}}
 
@@ -645,12 +665,14 @@ Notice that you could also write the result as $33a - 44$. Do you know why?
 {{< fillin
   question="Simplify: $-5(2 - 3a)$."
   answer="-10 + 15a"
+  answerForm="expanded"
   hint="Distribute -5 to each term inside the parentheses, keeping careful track of the signs, then simplify the double negative."
 >}}
 
 {{< fillin
   question="Simplify: $-7(8 - 15y)$."
   answer="-56 + 105y"
+  answerForm="expanded"
   hint="Distribute -7 to each term inside the parentheses, keeping careful track of the signs, then simplify the double negative."
 >}}
 
@@ -670,12 +692,14 @@ opposite of an expression.
 {{< fillin
   question="Simplify: $-(z - 11)$."
   answer="-z + 11"
+  answerForm="expanded"
   hint="Multiplying by -1 gives the opposite of each term inside the parentheses."
 >}}
 
 {{< fillin
   question="Simplify: $-(x - 4)$."
   answer="-x + 4"
+  answerForm="expanded"
   hint="Multiplying by -1 gives the opposite of each term inside the parentheses."
 >}}
 
@@ -700,12 +724,14 @@ subtraction, so we will distribute the $2$ first and then subtract.
 {{< fillin
   question="Simplify: $9 - 3(x + 2)$."
   answer="-3x + 3"
+  answerForm="distributed"
   hint="Distribute the -3 first, then combine the constant terms."
 >}}
 
 {{< fillin
   question="Simplify: $7x - 5(x + 4)$."
   answer="2x - 20"
+  answerForm="distributed"
   hint="Distribute the -5 first, then combine like terms with 7x."
 >}}
 
@@ -720,12 +746,14 @@ subtraction, so we will distribute the $2$ first and then subtract.
 {{< fillin
   question="Simplify: $6(x - 9) - (x + 12)$."
   answer="5x - 66"
+  answerForm="distributed"
   hint="Distribute the 6 across the first parentheses, and distribute -1 across the second, then combine like terms."
 >}}
 
 {{< fillin
   question="Simplify: $8(x - 1) - (x + 5)$."
   answer="7x - 13"
+  answerForm="distributed"
   hint="Distribute the 8 across the first parentheses, and distribute -1 across the second, then combine like terms."
 >}}
 
@@ -736,18 +764,21 @@ subtraction, so we will distribute the $2$ first and then subtract.
 {{< fillin
   question="Simplify: $3(4x)$."
   answer="12x"
+  answerForm="single-term"
   hint="Regroup using the associative property so the two numbers multiply first, then attach the variable."
 >}}
 
 {{< fillin
   question="Simplify: $(y + 12) + 28$."
   answer="y + 40"
+  answerForm="distributed"
   hint="Regroup using the associative property so the two constants add first, then combine with the variable term."
 >}}
 
 {{< fillin
   question="Simplify: $-24 \cdot 7 \cdot \tfrac{3}{8}$."
   answer="-63"
+  answerForm="decimal"
   hint="Reorder the factors so $-24$ and $\tfrac{3}{8}$ multiply first — that product simplifies nicely — then multiply by $7$."
 >}}
 
@@ -756,12 +787,14 @@ subtraction, so we will distribute the $2$ first and then subtract.
 {{< fillin
   question="Simplify: $19a + 44 - 19a$."
   answer="44"
+  answerForm="no-like-terms"
   hint="The $19a$ and $-19a$ terms are additive inverses — once they cancel, the identity property tells you what's left."
 >}}
 
 {{< fillin
   question="Simplify: $10(0.1d)$."
   answer="d"
+  answerForm="single-term"
   hint="$10$ and $0.1$ are multiplicative inverses — multiply them first to apply the identity property."
 >}}
 
@@ -770,13 +803,14 @@ subtraction, so we will distribute the $2$ first and then subtract.
 {{< fillin
   question="Simplify: $\tfrac{0}{6}$."
   answer="0"
-  answerForm="lowest-terms"
+  answerForm="single-power"
   hint="Zero divided by any nonzero real number is zero."
 >}}
 
 {{< fillin
   question="Simplify: $(-3.14)(0)$."
   answer="0"
+  answerForm="decimal"
   hint="Any real number times zero is zero."
 >}}
 
@@ -795,12 +829,14 @@ undefined
 {{< fillin
   question="Simplify: $8(4y + 9)$."
   answer="32y + 72"
+  answerForm="expanded"
   hint="Distribute the $8$ to each term inside the parentheses, then multiply."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{1}{4}(3q + 12)$."
   answer="\frac{3}{4}q + 3"
+  answerForm="expanded"
   answerDisplay="$\tfrac{3}{4}q + 3$"
   hint="Distribute $\tfrac{1}{4}$ to each term separately, then simplify each product."
 >}}
@@ -808,12 +844,14 @@ undefined
 {{< fillin
   question="Simplify: $-7(4p + 1)$."
   answer="-28p - 7"
+  answerForm="expanded"
   hint="Distribute $-7$ to each term, keeping careful track of the signs."
 >}}
 
 {{< fillin
   question="Simplify: $5(2n + 9) + 12(n - 3)$."
   answer="22n + 9"
+  answerForm="distributed"
   hint="Distribute both terms first, then combine like terms."
 >}}
 

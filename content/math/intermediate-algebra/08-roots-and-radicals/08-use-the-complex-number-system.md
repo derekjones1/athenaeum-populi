@@ -181,6 +181,7 @@ Simplify: (a) $\left(4 - 3 i\right) + \left(5 + 6 i\right)$ (b) $\left(2 - 5 i\r
 {{< fillin
   question="Simplify: $\left(2 + 7 i\right) + \left(4 - 2 i\right)$"
   answer="6 + 5 i"
+  answerForm="no-like-terms"
   answerDisplay="$6 + 5 i$"
   hint="Combine the real parts together and the coefficients of $i$ together."
 >}}
@@ -188,6 +189,7 @@ Simplify: (a) $\left(4 - 3 i\right) + \left(5 + 6 i\right)$ (b) $\left(2 - 5 i\r
 {{< fillin
   question="Simplify: $\left(8 - 4 i\right) - \left(2 - i\right)$"
   answer="6 - 3 i"
+  answerForm="no-like-terms"
   answerDisplay="$6 - 3 i$"
   hint="Combine the real parts together and the coefficients of $i$ together."
 >}}
@@ -195,6 +197,7 @@ Simplify: (a) $\left(4 - 3 i\right) + \left(5 + 6 i\right)$ (b) $\left(2 - 5 i\r
 {{< fillin
   question="Simplify: $\left(3 - 2 i\right) + \left(-5 - 4 i\right)$"
   answer="-2 - 6 i"
+  answerForm="no-like-terms"
   answerDisplay="$-2 - 6 i$"
   hint="Combine the real parts together and the coefficients of $i$ together."
 >}}
@@ -218,6 +221,7 @@ Multiply: $2 i \left(7 - 5 i\right).$
 {{< fillin
   question="Multiply: $4 i \left(5 - 3 i\right)$"
   answer="12 + 20 i"
+  answerForm="expanded"
   answerDisplay="$12 + 20 i$"
   hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
 >}}
@@ -225,6 +229,7 @@ Multiply: $2 i \left(7 - 5 i\right).$
 {{< fillin
   question="Multiply: $-3 i \left(2 + 4 i\right)$"
   answer="12 - 6 i"
+  answerForm="expanded"
   answerDisplay="$12 - 6 i$"
   hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
 >}}
@@ -246,6 +251,7 @@ Multiply: $\left(3 + 2 i\right) \left(4 - 3 i\right).$
 {{< fillin
   question="Multiply: $\left(5 - 3 i\right) \left(-1 - 2 i\right)$"
   answer="-11 - 7 i"
+  answerForm="expanded"
   answerDisplay="$-11 - 7 i$"
   hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
 >}}
@@ -253,6 +259,7 @@ Multiply: $\left(3 + 2 i\right) \left(4 - 3 i\right).$
 {{< fillin
   question="Multiply: $\left(-4 - 3 i\right) \left(2 + i\right)$"
   answer="-5 - 10 i"
+  answerForm="expanded"
   answerDisplay="$-5 - 10 i$"
   hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
 >}}
@@ -304,6 +311,7 @@ To multiply square roots of negative numbers, we first write them as complex num
 {{< fillin
   question="Multiply: $\sqrt{-49} \cdot \sqrt{-4}$"
   answer="-14"
+  answerForm="decimal"
   answerDisplay="$-14$"
   hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
 >}}
@@ -311,6 +319,7 @@ To multiply square roots of negative numbers, we first write them as complex num
 {{< fillin
   question="Multiply: $\sqrt{-36} \cdot \sqrt{-81}$"
   answer="-54"
+  answerForm="decimal"
   answerDisplay="$-54$"
   hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
 >}}
@@ -369,6 +378,7 @@ Multiply: $\left(3 - 2 i\right) \left(3 + 2 i\right).$
 {{< fillin
   question="Multiply: $\left(4 - 3 i\right) \cdot \left(4 + 3 i\right)$"
   answer="25"
+  answerForm="decimal"
   answerDisplay="25"
   hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
 >}}
@@ -376,6 +386,7 @@ Multiply: $\left(3 - 2 i\right) \left(3 + 2 i\right).$
 {{< fillin
   question="Multiply: $\left(-2 + 5 i\right) \cdot \left(-2 - 5 i\right)$"
   answer="29"
+  answerForm="decimal"
   answerDisplay="29"
   hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
 >}}
@@ -422,6 +433,7 @@ Multiply using the Product of Complex Conjugates Pattern: $\left(8 - 2 i\right) 
 {{< fillin
   question="Multiply using the Product of Complex Conjugates Pattern: $\left(3 - 10 i\right) \left(3 + 10 i\right)$"
   answer="109"
+  answerForm="decimal"
   answerDisplay="109"
   hint="Use the conjugate product pattern and replace $i^2$ with $-1$."
 >}}
@@ -429,6 +441,7 @@ Multiply using the Product of Complex Conjugates Pattern: $\left(8 - 2 i\right) 
 {{< fillin
   question="Multiply using the Product of Complex Conjugates Pattern: $\left(-5 + 4 i\right) \left(-5 - 4 i\right)$"
   answer="41"
+  answerForm="decimal"
   answerDisplay="41"
   hint="Use the conjugate product pattern and replace $i^2$ with $-1$."
 >}}
@@ -566,6 +579,7 @@ Simplify: $i^{86}.$
 {{< fillin
   question="Simplify: $i^{75}$"
   answer="- i"
+  answerForm="expanded"
   answerDisplay="$- i$"
   hint="Powers of $i$ repeat every four; reduce the exponent modulo $4$."
 >}}
@@ -573,6 +587,7 @@ Simplify: $i^{86}.$
 {{< fillin
   question="Simplify: $i^{92}$"
   answer="1"
+  answerForm="decimal"
   answerDisplay="$1$"
   hint="Powers of $i$ repeat every four; reduce the exponent modulo $4$."
 >}}

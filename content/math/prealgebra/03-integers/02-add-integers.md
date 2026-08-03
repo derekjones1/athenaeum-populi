@@ -176,12 +176,14 @@ $-32 + 40 = 8$.
 {{< fillin
   question="Simplify: $15 + (-32)$"
   answer="-17"
+  answerForm="decimal"
   hint="Signs are different — subtract $15$ from $32$, and keep the sign of the number with the larger absolute value ($-32$)."
 >}}
 
 {{< fillin
   question="Simplify: $-19 + 76$"
   answer="57"
+  answerForm="decimal"
   hint="Signs are different — subtract $19$ from $76$, and keep the sign of the number with the larger absolute value ($76$)."
 >}}
 
@@ -191,6 +193,7 @@ result is negative because both are negative: $-14 + (-36) = -50$.
 {{< fillin
   question="Simplify: $-31 + (-19)$"
   answer="-50"
+  answerForm="decimal"
   hint="Both negative, so add the absolute values and keep the negative sign."
 >}}
 
@@ -203,6 +206,7 @@ first: $-5 + 3(5)$. Multiply: $-5 + 15$. Add left to right: $10$.
 {{< fillin
   question="Simplify: $-2 + 5(-4 + 7)$"
   answer="13"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first ($-4 + 7 = 3$), then multiply, then add."
 >}}
 
@@ -344,6 +348,7 @@ end of the three plays, the ball is on the $32$-yard line.
 {{< fillin
   question="The counters above model $7 + 4$. Simplify the expression."
   answer="11"
+  answerForm="decimal"
   hint="All the counters are positive, so no neutral pairs form — just count the whole row."
 >}}
 
@@ -355,6 +360,7 @@ end of the three plays, the ball is on the $32$-yard line.
 {{< fillin
   question="The counters above model $-6 + (-3)$. Simplify the expression."
   answer="-9"
+  answerForm="decimal"
   hint="Every counter is negative, so count them all and keep the negative sign."
 >}}
 
@@ -366,6 +372,7 @@ end of the three plays, the ball is on the $32$-yard line.
 {{< fillin
   question="The counters above model $-7 + 5$. Simplify the expression."
   answer="-2"
+  answerForm="decimal"
   hint="Each column that holds one counter of each color is a neutral pair worth $0$. Remove those pairs and count the color that is left over."
 >}}
 
@@ -377,6 +384,7 @@ end of the three plays, the ball is on the $32$-yard line.
 {{< fillin
   question="The counters above model $8 + (-7)$. Simplify the expression."
   answer="1"
+  answerForm="decimal"
   hint="Seven neutral pairs form and are removed. There were more positives than negatives, so the sign of what remains is positive."
 >}}
 
@@ -385,24 +393,28 @@ end of the three plays, the ball is on the $32$-yard line.
 {{< fillin
   question="Simplify: $-21 + (-59)$"
   answer="-80"
+  answerForm="decimal"
   hint="The signs are the same, so add the absolute values and keep the common sign."
 >}}
 
 {{< fillin
   question="Simplify: $-200 + 65$"
   answer="-135"
+  answerForm="decimal"
   hint="The signs are different — subtract $65$ from $200$ and keep the sign of the number with the larger absolute value."
 >}}
 
 {{< fillin
   question="Simplify: $135 + (-110) + 83$"
   answer="108"
+  answerForm="decimal"
   hint="Work left to right: add the first two integers, then add $83$ to that result."
 >}}
 
 {{< fillin
   question="Simplify: $19 + 2(-3 + 8)$"
   answer="29"
+  answerForm="decimal"
   hint="Order of operations — simplify inside the parentheses first, then multiply, then add."
 >}}
 

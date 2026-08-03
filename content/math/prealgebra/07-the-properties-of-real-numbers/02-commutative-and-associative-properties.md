@@ -222,6 +222,7 @@ $$-84n + (-73n) + 84n = -84n + 84n + (-73n) = 0 + (-73n) = -73n$$
 {{< fillin
   question="Simplify: $-27a + (-48a) + 27a$."
   answer="-48a"
+  answerForm="no-like-terms"
   hint="The first and third terms are opposites — reorder so they're together and cancel first."
 >}}
 
@@ -239,6 +240,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{9}{16} \cdot \tfrac{5}{49} \cdot \tfrac{16}{9}$."
   answer="\frac{5}{49}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{49}$"
   hint="The first and third factors are reciprocals of each other — group them together so they multiply to $1$."
 >}}
@@ -261,6 +263,7 @@ $$
 {{< fillin
   question="Simplify: $\left(\tfrac{7}{15} + \tfrac{5}{8}\right) + \tfrac{3}{8}$."
   answer="\frac{22}{15}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{22}{15}$"
   hint="The second and third terms already share a denominator of 8 — regroup them together first; $\tfrac{5}{8} + \tfrac{3}{8} = 1$."
 >}}
@@ -282,6 +285,7 @@ $9.99 + 1.01$?
 {{< fillin
   question="Simplify: $(5.58c + 8.75c) + 1.25c$."
   answer="15.58c"
+  answerForm="no-like-terms"
   hint="$8.75$ and $1.25$ combine to a whole number, $10$ — regroup those two terms together first."
 >}}
 
@@ -315,6 +319,7 @@ $$6(9x) = (6 \cdot 9)x = 54x$$
 {{< fillin
   question="Simplify: $8(3y)$."
   answer="24y"
+  answerForm="single-term"
   hint="Regroup as $(8 \cdot 3)y$, then multiply the numbers first."
 >}}
 
@@ -334,6 +339,7 @@ $$18p + (-15p) + 6q + 5q = 3p + 11q$$
 {{< fillin
   question="Simplify: $23r + 14s + 9r + (-15s)$."
   answer="32r - s"
+  answerForm="no-like-terms"
   hint="Reorder so the $r$-terms are together and the $s$-terms are together, then combine each pair."
 >}}
 
@@ -416,12 +422,14 @@ $4(x \cdot 7)$
 {{< fillin
   question="Simplify: $9y + 23 + (-9y)$."
   answer="23"
+  answerForm="no-like-terms"
   hint="Reorder so $9y$ and $-9y$ are together; opposites add to $0$."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{13}{18} \cdot \tfrac{25}{7} \cdot \tfrac{18}{13}$."
   answer="\frac{25}{7}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{25}{7}$"
   hint="The first and third factors are reciprocals — reorder to group them together so they multiply to $1$."
 >}}
@@ -429,12 +437,14 @@ $4(x \cdot 7)$
 {{< fillin
   question="Simplify: $-36 \cdot 11 \cdot \tfrac{4}{9}$."
   answer="-176"
+  answerForm="decimal"
   hint="Regroup so $-36$ and $\tfrac{4}{9}$ multiply first; $9$ divides $36$ evenly, giving a whole number."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\tfrac{1}{12} + \tfrac{4}{9}\right) + \tfrac{5}{9}$."
   answer="\frac{13}{12}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{13}{12}$"
   hint="The second and third terms already share a denominator of $9$ — regroup them together first; $\tfrac{4}{9} + \tfrac{5}{9} = 1$."
 >}}
@@ -442,12 +452,14 @@ $4(x \cdot 7)$
 {{< fillin
   question="Simplify: $(5.89d + 2.75d) + 1.25d$."
   answer="9.89d"
+  answerForm="no-like-terms"
   hint="Change the grouping so $2.75d$ and $1.25d$ combine first — their coefficients add to the whole number $4$."
 >}}
 
 {{< fillin
   question="Simplify: $15u + 11v + 27u + 19v$."
   answer="42u + 30v"
+  answerForm="no-like-terms"
   hint="Reorder so the $u$-terms are together and the $v$-terms are together, then combine each pair of like terms."
 >}}
 

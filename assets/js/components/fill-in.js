@@ -4,7 +4,7 @@
  * framework-free and progressively enhances the build-time HTML shell.
  *
  * The shortcode (layouts/shortcodes/fillin.html) renders the static shell:
- *   <fill-in data-answer="\frac{5}{6}" data-require-expanded="false" ...>
+ *   <fill-in data-answer="\frac{5}{6}" data-answer-form="lowest-terms" ...>
  *     <div class="ap-fillin">
  *       <p class="ap-fillin-question"><!-- build-time KaTeX --></p>
  *       <template data-slot="answer-display">…</template>
@@ -29,9 +29,9 @@ const MESSAGES = {
   idle: '',
   empty: 'Type an answer first.',
   invalid: 'Couldn’t read that as math — fill in any empty boxes.',
-  // The requireExpanded default. An exercise with an `answerForm` overrides it
-  // with a message naming the shape that form asks for.
-  form: 'Expand your answer fully — no parentheses.',
+  // `form` carries no default: the wording always comes from
+  // describeAnswerForm(), so it names the shape the exercise actually asks for.
+  form: '',
   incorrect: 'Not quite — try again.',
   // `correct` is built per-instance (may include the answerDisplay).
 };
@@ -52,7 +52,6 @@ class FillInElement extends HTMLElement {
     this.answer = this.dataset.answer || '';
     this.answerMode = this.dataset.answerMode || 'expression';
     this.answerForm = this.dataset.answerForm || '';
-    this.requireExpanded = this.dataset.requireExpanded === 'true';
     this.placeholder = this.dataset.placeholder || 'Your answer';
     this.status = 'idle';
     this.done = false;
@@ -174,10 +173,11 @@ class FillInElement extends HTMLElement {
   _runCheck() {
     if (this.done || !this._check) return;
     const latex = this.field.value ?? '';
-    if (this.requireExpanded && latex.includes('(')) {
-      this._setStatus('form', MESSAGES.form);
-      return;
-    }
+    // Shape is judged only after value equality, inside checkAnswer. An earlier
+    // short-circuit here (the retired `requireExpanded`) reported 'form' before
+    // the value was ever compared, so a learner with a WRONG answer containing
+    // parentheses was told "That value is right". Keep the ordering in one
+    // place.
     this._setStatus(
       this._check(latex, this.answer, { mode: this.answerMode, form: this.answerForm }),
       this._formMessage,

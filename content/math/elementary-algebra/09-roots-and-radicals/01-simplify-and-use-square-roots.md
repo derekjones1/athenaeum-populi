@@ -81,12 +81,14 @@ sits outside the radical.
 {{< fillin
   question="Simplify $\sqrt{225}$."
   answer="15"
+  answerForm="simplified-radical"
   hint="What number, multiplied by itself, gives $225$?"
 >}}
 
 {{< fillin
   question="Simplify $-\sqrt{121}$."
   answer="-11"
+  answerForm="simplified-radical"
   hint="The negative sign is in front of the radical, so simplify the root first, then apply the negative."
   answerDisplay="$-11$"
 >}}
@@ -121,12 +123,14 @@ Notice the different answers in parts (a) and (b)!
 {{< fillin
   question="Simplify $\sqrt{9} + \sqrt{16}$."
   answer="7"
+  answerForm="simplified-radical"
   hint="Take each square root separately, then add."
 >}}
 
 {{< fillin
   question="Simplify $\sqrt{64 + 225}$."
   answer="17"
+  answerForm="simplified-radical"
   hint="The radical is a grouping symbol — add under it first, then take the square root."
 >}}
 
@@ -291,6 +295,7 @@ $$
 {{< fillin
   question="Simplify $\sqrt{z^{12}}$."
   answer="z^6"
+  answerForm="simplified-radical"
   hint="Half the exponent under an even-powered square root."
   answerDisplay="$z^6$"
 >}}
@@ -298,6 +303,7 @@ $$
 {{< fillin
   question="Simplify $\sqrt{64x^2}$."
   answer="8x"
+  answerForm="simplified-radical"
   hint="Take the square root of the coefficient and of the variable factor separately."
   answerDisplay="$8x$"
 >}}
@@ -305,6 +311,7 @@ $$
 {{< fillin
   question="Simplify $-\sqrt{100p^2}$."
   answer="-10p"
+  answerForm="simplified-radical"
   hint="The negative sign stays in front; simplify the radical, then apply it."
   answerDisplay="$-10p$"
 >}}

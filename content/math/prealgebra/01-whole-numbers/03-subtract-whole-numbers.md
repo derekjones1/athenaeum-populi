@@ -130,12 +130,14 @@ $2{,}162 - 479 = 1{,}683$. Check: $1{,}683 + 479 = 2{,}162$. ✓
 {{< fillin
   question="Subtract: $93 - 58$."
   answer="35"
+  answerForm="decimal"
   hint="Borrow 1 ten so the ones place becomes $13 - 8$. Check your result by adding it to 58."
 >}}
 
 {{< fillin
   question="Subtract: $4{,}585 - 697$."
   answer="3888"
+  answerForm="decimal"
   answerDisplay="3,888"
   hint="You will need to borrow in the ones, tens, and hundreds places. Check: your answer plus 697 should be 4,585."
 >}}
@@ -323,18 +325,21 @@ six hundred seventy-five plus three hundred fifty; the sum of six hundred sevent
 {{< fillin
   question="Subtract, then check by adding: $38 - 16$."
   answer="22"
+  answerForm="decimal"
   hint="No borrowing is needed here — subtract the ones, then the tens. Check that your answer plus 16 gives 38."
 >}}
 
 {{< fillin
   question="Subtract, then check by adding: $75 - 47$."
   answer="28"
+  answerForm="decimal"
   hint="You cannot take 7 from 5, so borrow 1 ten and make the ones $15 - 7$."
 >}}
 
 {{< fillin
   question="Subtract, then check by adding: $6{,}318 - 2{,}799$."
   answer="3519"
+  answerForm="decimal"
   answerDisplay="$3{,}519$"
   hint="The ones, tens, and hundreds columns each need a borrow. Check that your answer plus 2,799 gives 6,318."
 >}}
@@ -342,6 +347,7 @@ six hundred seventy-five plus three hundred fifty; the sum of six hundred sevent
 {{< fillin
   question="Subtract, then check by adding: $43{,}650 - 8{,}982$."
   answer="34668"
+  answerForm="decimal"
   answerDisplay="$34{,}668$"
   hint="Line up the place values first — 8,982 has no ten-thousands digit. Borrow from left to right as each column needs it."
 >}}

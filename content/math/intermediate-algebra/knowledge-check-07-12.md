@@ -25,6 +25,7 @@ weight: 14
 {{< fillin
   question="Simplify: $\tfrac{4a^2b}{12ab^2}$."
   answer="\frac{a}{3b}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{a}{3b}$"
 >}}
 
@@ -133,6 +134,7 @@ $(-\infty,\infty)$
 {{< fillin
   question="Simplify using absolute values as necessary: $\sqrt[3]{125x^9}$."
   answer="5x^3"
+  answerForm="simplified-radical"
 >}}
 
 ### 8.2 Simplify Radical Expressions
@@ -140,6 +142,7 @@ $(-\infty,\infty)$
 {{< fillin
   question="Simplify using absolute values as necessary: $\sqrt[3]{72x^8y^4}$."
   answer="2x^2y\sqrt[3]{9x^2y}"
+  answerForm="simplified-radical"
   answerDisplay="$2x^2y\sqrt[3]{9x^2y}$"
 >}}
 
@@ -149,18 +152,21 @@ Assume all variables are positive.
 
 {{< fillin
   question="Simplify: $256^{-\tfrac{1}{4}}$."
-  answer="1/4"
+  answer="\frac{1}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{4}$"
 >}}
 
 {{< fillin
   question="Simplify: $-49^{\tfrac{3}{2}}$."
   answer="-343"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{x^{-\tfrac{1}{4}}\cdot x^{\tfrac{5}{4}}}{x^{-\tfrac{3}{4}}}$."
   answer="x^{7/4}"
+  answerForm="single-term"
   answerDisplay="$x^{\tfrac{7}{4}}$"
 >}}
 
@@ -171,11 +177,13 @@ Assume all variables are positive.
 {{< fillin
   question="Simplify: $\sqrt{48x^5}-\sqrt{75x^5}$."
   answer="-x^2\sqrt{3x}"
+  answerForm="simplified-radical"
 >}}
 
 {{< fillin
   question="Simplify: $2\sqrt{12x^5}\cdot 3\sqrt{6x^3}$."
   answer="36x^4\sqrt{2}"
+  answerForm="simplified-radical"
 >}}
 
 {{< fillin
@@ -196,6 +204,7 @@ Assume all variables are positive.
 {{< fillin
   question="Simplify: $\tfrac{3}{2+\sqrt{3}}$."
   answer="3(2-\sqrt{3})"
+  answerForm="simplified-radical"
 >}}
 
 ### 8.6 Solve Radical Equations
@@ -245,11 +254,13 @@ $(0,\infty)$
 {{< fillin
   question="Multiply: $-4i(-2-3i)$."
   answer="-12+8i"
+  answerForm="expanded"
 >}}
 
 {{< fillin
   question="Simplify: $i^{172}$."
   answer="1"
+  answerForm="decimal"
 >}}
 
 ## Chapter 9: Quadratic Equations and Functions
@@ -489,6 +500,7 @@ how much will be in the account in 8 years by each method of compounding?
 {{< fillin
   question="Evaluate $\log_{11}1$."
   answer="0"
+  answerForm="decimal"
 >}}
 
 {{< multiplechoice

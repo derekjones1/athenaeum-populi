@@ -76,6 +76,7 @@ $$
 {{< fillin
   question="Factor: $4x^2+12x+9$."
   answer="(2x+3)^2"
+  answerForm="factored"
   answerDisplay="$(2x+3)^2$"
   hint="Write the first and last terms as squares, then check the middle term."
 >}}
@@ -83,6 +84,7 @@ $$
 {{< fillin
   question="Factor: $9y^2+24y+16$."
   answer="(3y+4)^2"
+  answerForm="factored"
   answerDisplay="$(3y+4)^2$"
   hint="The square roots of the first and last terms are $3y$ and $4$."
 >}}
@@ -123,6 +125,7 @@ $$
 {{< fillin
   question="Factor: $64y^2-80y+25$."
   answer="(8y-5)^2"
+  answerForm="factored"
   answerDisplay="$(8y-5)^2$"
   hint="The square roots of the first and last terms are $8y$ and $5$."
 >}}
@@ -130,6 +133,7 @@ $$
 {{< fillin
   question="Factor: $16z^2-72z+81$."
   answer="(4z-9)^2"
+  answerForm="factored"
   answerDisplay="$(4z-9)^2$"
   hint="Check that $72z=2(4z)(9)$."
 >}}
@@ -153,6 +157,7 @@ $$
 {{< fillin
   question="Factor: $49x^2+84xy+36y^2$."
   answer="(7x+6y)^2"
+  answerForm="factored"
   answerDisplay="$(7x+6y)^2$"
   hint="Write the first and last terms as squares."
 >}}
@@ -160,6 +165,7 @@ $$
 {{< fillin
   question="Factor: $64m^2+112mn+49n^2$."
   answer="(8m+7n)^2"
+  answerForm="factored"
   answerDisplay="$(8m+7n)^2$"
   hint="Check whether $112mn=2(8m)(7n)$."
 >}}
@@ -185,6 +191,7 @@ that $4y(5x-2)^2=100x^2y-80xy+16y$.
 {{< fillin
   question="Factor completely: $8x^2y-24xy+18y$."
   answer="2y{(2x-3)}^2"
+  answerForm="factored"
   answerDisplay="$2y(2x-3)^2$"
   hint="First factor out the GCF $2y$."
 >}}
@@ -192,6 +199,7 @@ that $4y(5x-2)^2=100x^2y-80xy+16y$.
 {{< fillin
   question="Factor completely: $27p^2q+90pq+75q$."
   answer="3q{(3p+5)}^2"
+  answerForm="factored"
   answerDisplay="$3q(3p+5)^2$"
   hint="First factor out the GCF $3q$."
 >}}
@@ -232,6 +240,7 @@ Multiplying the conjugates gives $64y^2-1$, which checks the result.
 {{< fillin
   question="Factor: $121m^2-1$."
   answer="(11m-1)(11m+1)"
+  answerForm="factored"
   answerDisplay="$(11m-1)(11m+1)$"
   hint="Write the terms as $(11m)^2$ and $1^2$."
 >}}
@@ -239,6 +248,7 @@ Multiplying the conjugates gives $64y^2-1$, which checks the result.
 {{< fillin
   question="Factor: $81y^2-1$."
   answer="(9y-1)(9y+1)"
+  answerForm="factored"
   answerDisplay="$(9y-1)(9y+1)$"
   hint="A difference of squares factors as a product of conjugates."
 >}}
@@ -267,6 +277,7 @@ Check by multiplying the conjugates.
 {{< fillin
   question="Factor: $196m^2-25n^2$."
   answer="(14m-5n)(14m+5n)"
+  answerForm="factored"
   answerDisplay="$(14m-5n)(14m+5n)$"
   hint="The square roots are $14m$ and $5n$."
 >}}
@@ -274,6 +285,7 @@ Check by multiplying the conjugates.
 {{< fillin
   question="Factor: $121p^2-9q^2$."
   answer="(11p-3q)(11p+3q)"
+  answerForm="factored"
   answerDisplay="$(11p-3q)(11p+3q)$"
   hint="Write each term as a square."
 >}}
@@ -299,6 +311,7 @@ checks that the result is $48x^4y^2-243y^2$.
 {{< fillin
   question="Factor completely: $2x^4y^2-32y^2$."
   answer="2y^2(x-2)(x+2)(x^2+4)"
+  answerForm="factored"
   answerDisplay="$2y^2(x-2)(x+2)(x^2+4)$"
   hint="Factor out $2y^2$, then factor a difference of squares twice."
 >}}
@@ -306,6 +319,7 @@ checks that the result is $48x^4y^2-243y^2$.
 {{< fillin
   question="Factor completely: $7a^4c^2-7b^4c^2$."
   answer="7c^2(a-b)(a+b)(a^2+b^2)"
+  answerForm="factored"
   answerDisplay="$7c^2(a-b)(a+b)(a^2+b^2)$"
   hint="Factor out $7c^2$, then factor $a^4-b^4$ twice."
 >}}
@@ -326,6 +340,7 @@ You may want to rewrite the solution as $(x-y-3)(x+y-3)$.
 {{< fillin
   question="Factor: $x^2-10x+25-y^2$."
   answer="(x-5-y)(x-5+y)"
+  answerForm="factored"
   answerDisplay="$(x-5-y)(x-5+y)$"
   hint="The first three terms form $(x-5)^2$."
 >}}
@@ -333,6 +348,7 @@ You may want to rewrite the solution as $(x-y-3)(x+y-3)$.
 {{< fillin
   question="Factor: $x^2+6x+9-4y^2$."
   answer="(x+3-2y)(x+3+2y)"
+  answerForm="factored"
   answerDisplay="$(x+3-2y)(x+3+2y)$"
   hint="Rewrite as $(x+3)^2-(2y)^2$."
 >}}
@@ -391,6 +407,7 @@ the factors checks the result.
 {{< fillin
   question="Factor: $x^3+27$."
   answer="(x+3)(x^2-3x+9)"
+  answerForm="factored"
   answerDisplay="$(x+3)(x^2-3x+9)$"
   hint="Write $27$ as $3^3$ and use the sum of cubes pattern."
 >}}
@@ -398,6 +415,7 @@ the factors checks the result.
 {{< fillin
   question="Factor: $y^3+8$."
   answer="(y+2)(y^2-2y+4)"
+  answerForm="factored"
   answerDisplay="$(y+2)(y^2-2y+4)$"
   hint="Write $8$ as $2^3$."
 >}}
@@ -425,12 +443,14 @@ $$
 {{< fillin
   question="Factor: $8x^3-27y^3$."
   answer="(2x-3y) \cdot (4x^2+6xy+9y^2)"
+  answerForm="factored"
   hint="Write the terms as $(2x)^3$ and $(3y)^3$."
 >}}
 
 {{< fillin
   question="Factor: $1000m^3-125n^3$."
   answer="125 \cdot (2m-n) \cdot (4m^2+2mn+n^2)"
+  answerForm="factored"
   hint="First factor out the GCF $125$, leaving $8m^3-n^3$."
 >}}
 
@@ -454,12 +474,14 @@ for you.
 {{< fillin
   question="Factor: $500p^3+4q^3$."
   answer="4 \cdot (5p+q) \cdot (25p^2-5pq+q^2)"
+  answerForm="factored"
   hint="First factor out $4$; then recognize $(5p)^3+q^3$."
 >}}
 
 {{< fillin
   question="Factor: $432c^3+686d^3$."
   answer="2 \cdot (6c+7d) \cdot (36c^2-42cd+49d^2)"
+  answerForm="factored"
   hint="First factor out $2$; the remaining terms are $(6c)^3$ and $(7d)^3$."
 >}}
 
@@ -483,6 +505,7 @@ We’ll leave the check by multiplying to you.
 {{< fillin
   question="Factor: $(y+1)^3-27y^3$."
   answer="(-2y+1)(13y^2+5y+1)"
+  answerForm="factored"
   answerDisplay="$(-2y+1)(13y^2+5y+1)$"
   hint="Use $a=y+1$ and $b=3y$ in the difference of cubes pattern."
 >}}
@@ -490,6 +513,7 @@ We’ll leave the check by multiplying to you.
 {{< fillin
   question="Factor: $(n+3)^3-125n^3$."
   answer="(-4n+3)(31n^2+21n+9)"
+  answerForm="factored"
   answerDisplay="$(-4n+3)(31n^2+21n+9)$"
   hint="Use $a=n+3$ and $b=5n$ in the difference of cubes pattern."
 >}}

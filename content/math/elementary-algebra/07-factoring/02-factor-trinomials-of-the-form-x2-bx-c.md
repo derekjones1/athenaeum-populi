@@ -108,6 +108,7 @@ $$
 {{< fillin
   question="Factor: $x^2 + 6x + 8$."
   answer="(x+2)(x+4)"
+  answerForm="factored"
   answerDisplay="$(x+2)(x+4)$"
   hint="Find two numbers that multiply to $8$ and add to $6$."
 >}}
@@ -115,6 +116,7 @@ $$
 {{< fillin
   question="Factor: $y^2 + 8y + 15$."
   answer="(y+3)(y+5)"
+  answerForm="factored"
   answerDisplay="$(y+3)(y+5)$"
   hint="Find two numbers that multiply to $15$ and add to $8$."
 >}}
@@ -156,6 +158,7 @@ $$
 {{< fillin
   question="Factor: $q^2 + 10q + 24$."
   answer="(q+4)(q+6)"
+  answerForm="factored"
   answerDisplay="$(q+4)(q+6)$"
   hint="Find two numbers that multiply to $24$ and add to $10$."
 >}}
@@ -163,6 +166,7 @@ $$
 {{< fillin
   question="Factor: $t^2 + 14t + 24$."
   answer="(t+2)(t+12)"
+  answerForm="factored"
   answerDisplay="$(t+2)(t+12)$"
   hint="Find two numbers that multiply to $24$ and add to $14$."
 >}}
@@ -194,6 +198,7 @@ $$
 {{< fillin
   question="Factor: $x^2 + 19x + 60$."
   answer="(x+4)(x+15)"
+  answerForm="factored"
   answerDisplay="$(x+4)(x+15)$"
   hint="Find two numbers that multiply to $60$ and add to $19$."
 >}}
@@ -201,6 +206,7 @@ $$
 {{< fillin
   question="Factor: $v^2 + 23v + 60$."
   answer="(v+3)(v+20)"
+  answerForm="factored"
   answerDisplay="$(v+3)(v+20)$"
   hint="Find two numbers that multiply to $60$ and add to $23$."
 >}}
@@ -240,6 +246,7 @@ $$
 {{< fillin
   question="Factor: $u^2 - 9u + 18$."
   answer="(u-3)(u-6)"
+  answerForm="factored"
   answerDisplay="$(u-3)(u-6)$"
   hint="The last term is positive and the middle term is negative, so both numbers are negative. They multiply to $18$ and add to $-9$."
 >}}
@@ -247,6 +254,7 @@ $$
 {{< fillin
   question="Factor: $y^2 - 16y + 63$."
   answer="(y-7)(y-9)"
+  answerForm="factored"
   answerDisplay="$(y-7)(y-9)$"
   hint="Both numbers are negative: they multiply to $63$ and add to $-16$."
 >}}
@@ -286,6 +294,7 @@ $$
 {{< fillin
   question="Factor: $h^2 + 4h - 12$."
   answer="(h-2)(h+6)"
+  answerForm="factored"
   answerDisplay="$(h-2)(h+6)$"
   hint="The last term is negative, so the two numbers have different signs. They multiply to $-12$ and add to $4$."
 >}}
@@ -293,6 +302,7 @@ $$
 {{< fillin
   question="Factor: $k^2 + k - 20$."
   answer="(k-4)(k+5)"
+  answerForm="factored"
   answerDisplay="$(k-4)(k+5)$"
   hint="The two numbers have different signs; they multiply to $-20$ and add to $1$."
 >}}
@@ -327,6 +337,7 @@ results in the correct sign of the middle term.
 {{< fillin
   question="Factor: $x^2 - 4x - 12$."
   answer="(x+2)(x-6)"
+  answerForm="factored"
   answerDisplay="$(x+2)(x-6)$"
   hint="The two numbers have different signs; they multiply to $-12$ and add to $-4$."
 >}}
@@ -334,6 +345,7 @@ results in the correct sign of the middle term.
 {{< fillin
   question="Factor: $y^2 - y - 20$."
   answer="(y+4)(y-5)"
+  answerForm="factored"
   answerDisplay="$(y+4)(y-5)$"
   hint="The two numbers have different signs; they multiply to $-20$ and add to $-1$."
 >}}
@@ -363,6 +375,7 @@ $$
 {{< fillin
   question="Factor: $r^2 - 3r - 40$."
   answer="(r+5)(r-8)"
+  answerForm="factored"
   answerDisplay="$(r+5)(r-8)$"
   hint="The two numbers have different signs; they multiply to $-40$ and add to $-3$."
 >}}
@@ -370,6 +383,7 @@ $$
 {{< fillin
   question="Factor: $s^2 - 3s - 10$."
   answer="(s+2)(s-5)"
+  answerForm="factored"
   answerDisplay="$(s+2)(s-5)$"
   hint="The two numbers have different signs; they multiply to $-10$ and add to $-3$."
 >}}
@@ -430,6 +444,7 @@ $$
 {{< fillin
   question="Factor: $9m + m^2 + 18$. Write the trinomial in decreasing degree order first."
   answer="(m+3)(m+6)"
+  answerForm="factored"
   answerDisplay="$(m+3)(m+6)$"
   hint="Rewrite as $m^2 + 9m + 18$, then find two numbers that multiply to $18$ and add to $9$."
 >}}
@@ -437,6 +452,7 @@ $$
 {{< fillin
   question="Factor: $-7n + 12 + n^2$. Write the trinomial in decreasing degree order first."
   answer="(n-3)(n-4)"
+  answerForm="factored"
   answerDisplay="$(n-3)(n-4)$"
   hint="Rewrite as $n^2 - 7n + 12$. Both numbers are negative: they multiply to $12$ and add to $-7$."
 >}}
@@ -513,6 +529,7 @@ $$
 {{< fillin
   question="Factor: $u^2 + 11uv + 28v^2$."
   answer="(u+4v)(u+7v)"
+  answerForm="factored"
   answerDisplay="$(u+4v)(u+7v)$"
   hint="The first terms are $u$ and the last terms contain $v$. Find two numbers that multiply to $28$ and add to $11$."
 >}}
@@ -520,6 +537,7 @@ $$
 {{< fillin
   question="Factor: $x^2 + 13xy + 42y^2$."
   answer="(x+6y)(x+7y)"
+  answerForm="factored"
   answerDisplay="$(x+6y)(x+7y)$"
   hint="Find two numbers that multiply to $42$ and add to $13$; each last term carries a $y$."
 >}}
@@ -550,6 +568,7 @@ $$
 {{< fillin
   question="Factor: $a^2 - 11ab + 10b^2$."
   answer="(a-b)(a-10b)"
+  answerForm="factored"
   answerDisplay="$(a-b)(a-10b)$"
   hint="The last term is positive and the middle term is negative, so both numbers are negative. They multiply to $10$ and add to $-11$; each last term carries a $b$."
 >}}
@@ -557,6 +576,7 @@ $$
 {{< fillin
   question="Factor: $m^2 - 13mn + 12n^2$."
   answer="(m-n)(m-12n)"
+  answerForm="factored"
   answerDisplay="$(m-n)(m-12n)$"
   hint="Both numbers are negative: they multiply to $12$ and add to $-13$; each last term carries an $n$."
 >}}
@@ -590,8 +610,57 @@ Note there are no factor pairs that give us $-9$ as a sum. The trinomial is
 {{< fillin
   question="Factor: $x^2 - 3xy - 10y^2$."
   answer="(x+2y)(x-5y)"
+  answerForm="factored"
   answerDisplay="$(x+2y)(x-5y)$"
   hint="The last term is negative, so the two numbers have different signs. They multiply to $-10$ and add to $-3$; each last term carries a $y$."
+>}}
+
+## Practice
+
+### Factor trinomials of the form $x^2+bx+c$
+
+{{< fillin
+  question="Factor: $x^2+4x+3$."
+  answer="(x+1)(x+3)"
+  answerForm="factored"
+  answerDisplay="$(x+1)(x+3)$"
+  hint="Find two numbers that multiply to $3$ and add to $4$."
+>}}
+
+{{< fillin
+  question="Factor: $a^2-3a-28$."
+  answer="(a-7)(a+4)"
+  answerForm="factored"
+  answerDisplay="$(a-7)(a+4)$"
+  hint="The two numbers have different signs; they multiply to $-28$ and add to $-3$."
+>}}
+
+{{< multiplechoice
+  question="Factor $x^2+x+5$, or identify that it cannot be factored."
+  hint="Look for two integers that multiply to $5$ and add to $1$. Check every factor pair of $5$, including the negative pair."
+  answer="It is prime"
+>}}
+$(x+1)(x+5)$
+$(x-1)(x-5)$
+It is prime
+{{< /multiplechoice >}}
+
+### Factor trinomials of the form $x^2+bxy+cy^2$
+
+{{< fillin
+  question="Factor: $p^2+3pq+2q^2$."
+  answer="(p+q)(p+2q)"
+  answerForm="factored"
+  answerDisplay="$(p+q)(p+2q)$"
+  hint="The first terms are $p$ and the last terms contain $q$. Find two numbers that multiply to $2$ and add to $3$."
+>}}
+
+{{< fillin
+  question="Factor: $a^2+5ab-24b^2$."
+  answer="(a+8b)(a-3b)"
+  answerForm="factored"
+  answerDisplay="$(a+8b)(a-3b)$"
+  hint="The last term is negative, so the two numbers have different signs. They multiply to $-24$ and add to $5$; each last term carries a $b$."
 >}}
 
 ## Key terms
@@ -603,4 +672,4 @@ binomials with integer coefficients (no factor pair of $c$ adds to $b$).
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 7.2: Factor Trinomials of the Form $x^2+bx+c$](https://openstax.org/books/elementary-algebra-2e/pages/7-2-factor-trinomials-of-the-form-x-2-bx-c) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as typeset display arrays and the factor-pair searches as markdown tables; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, replacing the two prime-trinomial "Try Its" (which cannot be typed into the answer box) with factorable drills plus a note to reason the prime cases through by hand.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 7.2: Factor Trinomials of the Form $x^2+bx+c$](https://openstax.org/books/elementary-algebra-2e/pages/7-2-factor-trinomials-of-the-form-x-2-bx-c) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as typeset display arrays and the factor-pair searches as markdown tables; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, replacing the two prime-trinomial "Try Its" (which cannot be typed into the answer box) with factorable drills plus a note to reason the prime cases through by hand.</small>

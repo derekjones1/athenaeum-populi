@@ -168,6 +168,7 @@ further.
 {{< fillin
   question="Add: $\tfrac{1}{4} + \tfrac{1}{3}$"
   answer="\frac{7}{12}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{7}{12}$"
   hint="Find the LCD ($12$), convert each fraction, then add the numerators."
 >}}
@@ -183,6 +184,7 @@ $$\frac{1}{2} - \left(-\frac{1}{4}\right) = \frac{2-(-1)}{4} = \frac{3}{4}$$
 {{< fillin
   question="Simplify: $\tfrac{1}{3} - \left(-\tfrac{1}{6}\right)$"
   answer="\frac{1}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{2}$"
   hint="The LCD of $3$ and $6$ is $6$. Convert $\tfrac{1}{3}$ to sixths, then subtract."
 >}}
@@ -199,6 +201,7 @@ already simplified.
 {{< fillin
   question="Add: $\tfrac{7}{12} + \tfrac{11}{15}$"
   answer="\frac{79}{60}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{79}{60}$"
   hint="The LCD of $12$ and $15$ is $60$. Convert each fraction, then add the numerators."
 >}}
@@ -221,6 +224,7 @@ $$\frac{7}{15} - \frac{19}{24} = -\frac{13}{40}$$
 {{< fillin
   question="Subtract: $\tfrac{13}{24} - \tfrac{17}{32}$"
   answer="\frac{1}{96}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{96}$"
   hint="The LCD of $24$ and $32$ is $96$. Convert each fraction to have that denominator, then subtract."
 >}}
@@ -235,6 +239,7 @@ $$-\frac{11}{30} + \frac{23}{42} = \frac{19}{105}$$
 {{< fillin
   question="Add: $-\tfrac{13}{42} + \tfrac{17}{35}$"
   answer="\frac{37}{210}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{37}{210}$"
   hint="The LCD of $42$ and $35$ is $210$. Convert each fraction, then add the numerators and simplify."
 >}}
@@ -256,6 +261,7 @@ fully simplified.
 {{< fillin
   question="Add: $\tfrac{x}{6} + \tfrac{7}{15}$"
   answer="\frac{5x+14}{30}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{5x+14}{30}$"
   hint="The LCD of $6$ and $15$ is $30$. Convert each fraction to that denominator, then add the numerators."
 >}}
@@ -297,6 +303,7 @@ $-\tfrac{1}{4} \cdot \tfrac{6}{1} = -\tfrac{6}{4} = -\tfrac{3}{2}$.
 {{< fillin
   question="Simplify: $-\tfrac{3}{4} - \tfrac{1}{6}$ (this is subtraction, not division)"
   answer="-\frac{11}{12}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{11}{12}$"
   hint="The LCD of $4$ and $6$ is $12$. Convert each fraction, then subtract the numerators."
 >}}
@@ -304,6 +311,7 @@ $-\tfrac{1}{4} \cdot \tfrac{6}{1} = -\tfrac{6}{4} = -\tfrac{3}{2}$.
 {{< fillin
   question="Simplify: $-\tfrac{3}{4} \cdot \tfrac{1}{6}$ (this is multiplication)"
   answer="-\frac{1}{8}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{1}{8}$"
   hint="No common denominator is needed for multiplication — just multiply straight across."
 >}}
@@ -322,6 +330,7 @@ $\tfrac{5x \cdot 3}{6 \cdot 10} = \tfrac{x}{4}$.
 {{< fillin
   question="Simplify: $\tfrac{2a}{3} \cdot \tfrac{5}{9}$ (multiplication — answer in terms of $a$)"
   answer="\frac{10a}{27}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{10a}{27}$"
   hint="No common denominator needed — multiply the numerators and multiply the denominators."
 >}}
@@ -355,6 +364,7 @@ $$\frac{\left(\tfrac{1}{2}\right)^2}{4+3^2} = \frac{1}{52}$$
 {{< fillin
   question="Simplify: $\left(\tfrac{1}{3}\right)^2 / (2^3 + 2)$"
   answer="\frac{1}{90}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{90}$"
   hint="Simplify the numerator ($\tfrac{1}{3}$ squared) and the denominator ($2$ cubed plus $2$) separately, then divide."
 >}}
@@ -371,6 +381,7 @@ $$\frac{\tfrac{1}{2}+\tfrac{2}{3}}{\tfrac{3}{4}-\tfrac{1}{6}} = 2$$
 {{< fillin
   question="Simplify: $\left(\tfrac{1}{3} + \tfrac{1}{2}\right) / \left(\tfrac{3}{4} - \tfrac{1}{3}\right)$"
   answer="2"
+  answerForm="decimal"
   hint="Combine the numerator over a common denominator, combine the denominator over a common denominator, then divide."
 >}}
 
@@ -488,6 +499,7 @@ $$\frac{p+q}{r} = -\frac{3}{4}$$
 {{< fillin
   question="Add: $\tfrac{1}{3} + \tfrac{1}{8}$"
   answer="\frac{11}{24}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{11}{24}$"
   hint="$3$ and $8$ share no factors, so the LCD is $24$. Convert each fraction, then add the numerators."
 >}}
@@ -495,6 +507,7 @@ $$\frac{p+q}{r} = -\frac{3}{4}$$
 {{< fillin
   question="Simplify: $\tfrac{1}{2} - \left(-\tfrac{1}{6}\right)$"
   answer="\frac{2}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{3}$"
   hint="Subtracting a negative adds. The LCD of $2$ and $6$ is $6$ — convert, combine, then simplify."
 >}}
@@ -502,6 +515,7 @@ $$\frac{p+q}{r} = -\frac{3}{4}$$
 {{< fillin
   question="Add: $-\tfrac{9}{20} + \tfrac{17}{30}$"
   answer="\frac{7}{60}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{7}{60}$"
   hint="$20 = 2 \cdot 2 \cdot 5$ and $30 = 2 \cdot 3 \cdot 5$, so the LCD is $60$. Convert both, then add the signed numerators."
 >}}
@@ -509,6 +523,7 @@ $$\frac{p+q}{r} = -\frac{3}{4}$$
 {{< fillin
   question="Add: $\tfrac{y}{2} + \tfrac{2}{3}$"
   answer="\frac{3y+4}{6}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{3y+4}{6}$"
   hint="The LCD of $2$ and $3$ is $6$. Convert each fraction, then add the numerators — $3y$ and $4$ are not like terms, so leave them as a sum."
 >}}
@@ -518,6 +533,7 @@ $$\frac{p+q}{r} = -\frac{3}{4}$$
 {{< fillin
   question="Simplify: $\tfrac{2}{3} + \tfrac{1}{6}$"
   answer="\frac{5}{6}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{6}$"
   hint="The operation is addition, so you need a common denominator. The LCD of $3$ and $6$ is $6$."
 >}}
@@ -525,12 +541,14 @@ $$\frac{p+q}{r} = -\frac{3}{4}$$
 {{< fillin
   question="Simplify: $\tfrac{2}{3} \div \tfrac{1}{6}$"
   answer="4"
+  answerForm="decimal"
   hint="The operation is division, so no common denominator is needed — multiply by the reciprocal of the second fraction."
 >}}
 
 {{< fillin
   question="Simplify: $-\tfrac{1}{8} + \tfrac{7}{12}$"
   answer="\frac{11}{24}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{11}{24}$"
   hint="Addition again, so find the LCD of $8$ and $12$ first, then combine the signed numerators."
 >}}
@@ -540,6 +558,7 @@ $$\frac{p+q}{r} = -\frac{3}{4}$$
 {{< fillin
   question="Simplify: $\left(\tfrac{1}{3}\right)^2 / \left(5 + 2^2\right)$"
   answer="\frac{1}{81}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{81}$"
   hint="Square the fraction in the numerator and evaluate the power before adding in the denominator, then divide."
 >}}
@@ -547,12 +566,14 @@ $$\frac{p+q}{r} = -\frac{3}{4}$$
 {{< fillin
   question="Simplify: $\left(3^3 - 3^2\right) / \left(\tfrac{3}{4}\right)^2$"
   answer="32"
+  answerForm="decimal"
   hint="Simplify the numerator to a whole number and the denominator to a single fraction, then multiply by that fraction's reciprocal."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\tfrac{3}{4} - \tfrac{3}{5}\right) / \left(\tfrac{1}{4} + \tfrac{2}{5}\right)$"
   answer="\frac{3}{13}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{13}$"
   hint="Both the numerator and the denominator use the LCD $20$. Combine each into a single fraction, then divide."
 >}}

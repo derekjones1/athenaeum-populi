@@ -275,6 +275,7 @@ $$\frac{2x+8}{5x+20} = \frac{2(x+4)}{5(x+4)} = \frac{2}{5}$$
 {{< fillin
   question="Simplify: $\frac{3x-6}{2x-4}$."
   answer="\frac{3}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\frac{3}{2}$"
   hint="Factor $2$ from the numerator and $2$ from the denominator; the binomial $x - 2$ divides out."
 >}}
@@ -386,6 +387,7 @@ $$\frac{x-8}{8-x} = -1$$
 {{< fillin
   question="Simplify: $\frac{y-2}{2-y}$."
   answer="-1"
+  answerForm="polynomial"
   hint="The numerator $y - 2$ and the denominator $2 - y$ are opposites."
 >}}
 
@@ -424,6 +426,99 @@ The factor $\tfrac{x-8}{8-x}$ divides to $-1$, leaving $-\tfrac{x+4}{x+8}$.
   hint="Factor $\frac{(x-5)(x+1)}{(5-x)(5+x)}$; the opposites $x - 5$ and $5 - x$ divide to $-1$."
 >}}
 
+## Practice
+
+### Determine the values for which a rational expression is undefined
+
+{{< fillin
+  question="Determine the value for which $\frac{2x}{z}$ is undefined. Enter the value of $z$."
+  answer="0"
+  answerDisplay="$z = 0$"
+  hint="Set the denominator $z$ equal to zero."
+>}}
+
+{{< fillin
+  question="Determine the value for which $\frac{4p-1}{6p-5}$ is undefined. Enter the value of $p$."
+  answer="\frac{5}{6}"
+  answerDisplay="$p = \frac{5}{6}$"
+  hint="Set $6p - 5 = 0$ and solve for $p$."
+>}}
+
+{{< fillin
+  question="Determine the values for which $\frac{n-3}{n^2+2n-8}$ is undefined."
+  answer="n = -4 , n = 2"
+  answerMode="unordered"
+  answerDisplay="$n = -4 , n = 2$"
+  hint="Factor $n^2 + 2n - 8 = (n+4)(n-2)$, set it equal to zero, and solve for $n$."
+>}}
+
+### Evaluate rational expressions
+
+{{< fillin
+  question="Evaluate $\frac{2x}{x-1}$ for $x = 0$."
+  answer="0"
+  hint="Substitute $0$ for $x$ in both the numerator and the denominator."
+>}}
+
+{{< fillin
+  question="Evaluate $\frac{2x}{x-1}$ for $x = 2$."
+  answer="4"
+  hint="Substitute $2$ for $x$: the numerator becomes $4$ and the denominator becomes $1$."
+>}}
+
+{{< fillin
+  question="Evaluate $\frac{2x}{x-1}$ for $x = -1$."
+  answer="1"
+  hint="Substitute $-1$ for $x$: the numerator and denominator both become $-2$."
+>}}
+
+### Simplify rational expressions
+
+{{< fillin
+  question="Simplify: $\frac{3c-9}{5c-15}$."
+  answer="\frac{3}{5}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\frac{3}{5}$"
+  hint="Factor $3$ from the numerator and $5$ from the denominator; the binomial $c - 3$ divides out."
+>}}
+
+{{< fillin
+  question="Simplify: $\frac{x^2-25}{x^2+2x-15}$."
+  answer="\frac{x-5}{x-3}"
+  answerDisplay="$\frac{x-5}{x-3}$"
+  hint="Factor $(x-5)(x+5)$ over $(x+5)(x-3)$; the common factor $x + 5$ divides out."
+>}}
+
+{{< fillin
+  question="Simplify: $\frac{t^3-27}{t^2-9}$."
+  answer="\frac{t^2+3t+9}{t+3}"
+  answerDisplay="$\frac{t^2+3t+9}{t+3}$"
+  hint="Use the difference of cubes on the numerator and the difference of squares on the denominator; the common factor $t - 3$ divides out."
+>}}
+
+### Simplify rational expressions with opposite factors
+
+{{< fillin
+  question="Simplify: $\frac{a-5}{5-a}$."
+  answer="-1"
+  answerForm="polynomial"
+  hint="Recognize that $a - 5$ and $5 - a$ are opposites."
+>}}
+
+{{< fillin
+  question="Simplify: $\frac{12-2x}{x^2-36}$."
+  answer="-\frac{2}{x+6}"
+  answerDisplay="$-\frac{2}{x+6}$"
+  hint="Factor $\frac{2(6-x)}{(x-6)(x+6)}$; the opposites $6 - x$ and $x - 6$ divide to $-1$."
+>}}
+
+{{< fillin
+  question="Simplify: $\frac{a^2-5a-36}{81-a^2}$."
+  answer="-\frac{a+4}{9+a}"
+  answerDisplay="$-\frac{a+4}{9+a}$"
+  hint="Factor $\frac{(a-9)(a+4)}{(9-a)(9+a)}$; the opposites $a - 9$ and $9 - a$ divide to $-1$."
+>}}
+
 ## Key terms
 
 **rational expression** — an expression of the form $\tfrac{p(x)}{q(x)}$, where
@@ -436,4 +531,4 @@ to $-1$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.1: Simplify Rational Expressions](https://openstax.org/books/elementary-algebra-2e/pages/8-1-simplify-rational-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the two-column worked examples as prose with display equality chains; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.1: Simplify Rational Expressions](https://openstax.org/books/elementary-algebra-2e/pages/8-1-simplify-rational-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the two-column worked examples as prose with display equality chains; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

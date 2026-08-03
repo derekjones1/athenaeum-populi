@@ -210,6 +210,7 @@ Check by multiplying the factors: $2(x + 7) = 2 \cdot x + 2 \cdot 7 = 2x + 14$. 
 {{< fillin
   question="Factor: $4x + 12$."
   answer="4(x+3)"
+  answerForm="factored"
   answerDisplay="$4(x+3)$"
   hint="Find the GCF of $4x$ and $12$, then rewrite each term as a product of that GCF."
 >}}
@@ -217,6 +218,7 @@ Check by multiplying the factors: $2(x + 7) = 2 \cdot x + 2 \cdot 7 = 2x + 14$. 
 {{< fillin
   question="Factor: $6a + 24$."
   answer="6(a+4)"
+  answerForm="factored"
   answerDisplay="$6(a+4)$"
   hint="Find the GCF of $6a$ and $24$, then rewrite each term as a product of that GCF."
 >}}
@@ -246,6 +248,7 @@ Check: $3(a + 1) = 3 \cdot a + 3 \cdot 1 = 3a + 3$. ✓
 {{< fillin
   question="Factor: $9a + 9$."
   answer="9(a+1)"
+  answerForm="factored"
   answerDisplay="$9(a+1)$"
   hint="Find the GCF of $9a$ and $9$. Remember every term has a factor of $1$ hiding inside it."
 >}}
@@ -253,6 +256,7 @@ Check: $3(a + 1) = 3 \cdot a + 3 \cdot 1 = 3a + 3$. ✓
 {{< fillin
   question="Factor: $11x + 11$."
   answer="11(x+1)"
+  answerForm="factored"
   answerDisplay="$11(x+1)$"
   hint="Find the GCF of $11x$ and $11$. Remember every term has a factor of $1$ hiding inside it."
 >}}
@@ -273,6 +277,7 @@ Check: $12(x - 5) = 12 \cdot x - 12 \cdot 5 = 12x - 60$. ✓
 {{< fillin
   question="Factor: $11x - 44$."
   answer="11(x-4)"
+  answerForm="factored"
   answerDisplay="$11(x-4)$"
   hint="Find the GCF of $11x$ and $44$, then rewrite each term as a product of that GCF."
 >}}
@@ -280,6 +285,7 @@ Check: $12(x - 5) = 12 \cdot x - 12 \cdot 5 = 12x - 60$. ✓
 {{< fillin
   question="Factor: $13y - 52$."
   answer="13(y-4)"
+  answerForm="factored"
   answerDisplay="$13(y-4)$"
   hint="Find the GCF of $13y$ and $52$, then rewrite each term as a product of that GCF."
 >}}
@@ -299,6 +305,7 @@ Check: $3(y^2 + 2y + 3) = 3 \cdot y^2 + 3 \cdot 2y + 3 \cdot 3 = 3y^2 + 6y + 9$.
 {{< fillin
   question="Factor: $4y^2 + 8y + 12$."
   answer="4(y^2+2y+3)"
+  answerForm="factored"
   answerDisplay="$4(y^2+2y+3)$"
   hint="Find the GCF of all three terms, then rewrite each term as a product of that GCF."
 >}}
@@ -306,6 +313,7 @@ Check: $3(y^2 + 2y + 3) = 3 \cdot y^2 + 3 \cdot 2y + 3 \cdot 3 = 3y^2 + 6y + 9$.
 {{< fillin
   question="Factor: $6x^2 + 42x - 12$."
   answer="6(x^2+7x-2)"
+  answerForm="factored"
   answerDisplay="$6(x^2+7x-2)$"
   hint="Find the GCF of all three terms, then rewrite each term as a product of that GCF."
 >}}
@@ -324,6 +332,7 @@ Check: $x(6x + 5) = x \cdot 6x + x \cdot 5 = 6x^2 + 5x$. ✓
 {{< fillin
   question="Factor: $9x^2 + 7x$."
   answer="x(9x+7)"
+  answerForm="factored"
   answerDisplay="$x(9x+7)$"
   hint="Find the GCF of the two terms — it will include a variable factor, not just a number."
 >}}
@@ -331,6 +340,7 @@ Check: $x(6x + 5) = x \cdot 6x + x \cdot 5 = 6x^2 + 5x$. ✓
 {{< fillin
   question="Factor: $5a^2 - 12a$."
   answer="a(5a-12)"
+  answerForm="factored"
   answerDisplay="$a(5a-12)$"
   hint="Find the GCF of the two terms — it will include a variable factor, not just a number."
 >}}
@@ -349,6 +359,7 @@ Check: $4x^2(x - 5) = 4x^2 \cdot x - 4x^2 \cdot 5 = 4x^3 - 20x^2$. ✓
 {{< fillin
   question="Factor: $2x^3 + 12x^2$."
   answer="2x^2(x+6)"
+  answerForm="factored"
   answerDisplay="$2x^2(x+6)$"
   hint="Find the GCF of the two terms, including the highest common power of $x$."
 >}}
@@ -356,6 +367,7 @@ Check: $4x^2(x - 5) = 4x^2 \cdot x - 4x^2 \cdot 5 = 4x^3 - 20x^2$. ✓
 {{< fillin
   question="Factor: $6y^3 - 15y^2$."
   answer="3y^2(2y-5)"
+  answerForm="factored"
   answerDisplay="$3y^2(2y-5)$"
   hint="Find the GCF of the two terms, including the highest common power of $y$."
 >}}
@@ -371,6 +383,7 @@ $$21y^2 + 35y = 7y \cdot 3y + 7y \cdot 5 = 7y(3y + 5)$$
 {{< fillin
   question="Factor: $18y^2 + 63y$."
   answer="9y(2y+7)"
+  answerForm="factored"
   answerDisplay="$9y(2y+7)$"
   hint="Find the GCF of the two terms, including the common power of $y$."
 >}}
@@ -378,6 +391,7 @@ $$21y^2 + 35y = 7y \cdot 3y + 7y \cdot 5 = 7y(3y + 5)$$
 {{< fillin
   question="Factor: $32k^2 + 56k$."
   answer="8k(4k+7)"
+  answerForm="factored"
   answerDisplay="$8k(4k+7)$"
   hint="Find the GCF of the two terms, including the common power of $k$."
 >}}
@@ -396,6 +410,7 @@ Check: $2x(7x^2 + 4x - 5) = 2x \cdot 7x^2 + 2x \cdot 4x - 2x \cdot 5 = 14x^3 + 8
 {{< fillin
   question="Factor: $18y^3 - 6y^2 - 24y$."
   answer="6y(3y^2-y-4)"
+  answerForm="factored"
   answerDisplay="$6y(3y^2-y-4)$"
   hint="Find the GCF of all three terms, then rewrite each term as a product of that GCF."
 >}}
@@ -403,6 +418,7 @@ Check: $2x(7x^2 + 4x - 5) = 2x \cdot 7x^2 + 2x \cdot 4x - 2x \cdot 5 = 14x^3 + 8
 {{< fillin
   question="Factor: $16x^3 + 8x^2 - 12x$."
   answer="4x(4x^2+2x-3)"
+  answerForm="factored"
   answerDisplay="$4x(4x^2+2x-3)$"
   hint="Find the GCF of all three terms, then rewrite each term as a product of that GCF."
 >}}
@@ -424,6 +440,7 @@ Check: $-9(y + 3) = -9 \cdot y + (-9) \cdot 3 = -9y - 27$. ✓
 {{< fillin
   question="Factor: $-5y - 35$."
   answer="-5(y+7)"
+  answerForm="factored"
   answerDisplay="$-5(y+7)$"
   hint="The leading coefficient is negative, so pull the negative sign out along with the GCF of $5y$ and $35$."
 >}}
@@ -431,6 +448,7 @@ Check: $-9(y + 3) = -9 \cdot y + (-9) \cdot 3 = -9y - 27$. ✓
 {{< fillin
   question="Factor: $-16z - 56$."
   answer="-8(2z+7)"
+  answerForm="factored"
   answerDisplay="$-8(2z+7)$"
   hint="The leading coefficient is negative, so pull the negative sign out along with the GCF of $16z$ and $56$."
 >}}
@@ -450,6 +468,7 @@ Check on your own by multiplying the factors.
 {{< fillin
   question="Factor: $-7a^2 + 21a$."
   answer="-7a(a-3)"
+  answerForm="factored"
   answerDisplay="$-7a(a-3)$"
   hint="The leading coefficient is negative, so pull a negative variable factor out as the GCF."
 >}}
@@ -457,6 +476,7 @@ Check on your own by multiplying the factors.
 {{< fillin
   question="Factor: $-6x^2 + x$."
   answer="-x(6x-1)"
+  answerForm="factored"
   answerDisplay="$-x(6x-1)$"
   hint="The leading coefficient is negative, so pull a negative variable factor out as the GCF. Remember $x$ = $x$ times $1$."
 >}}
@@ -503,6 +523,7 @@ Check on your own by multiplying the factors.
 {{< fillin
   question="Factor: $5y + 15$."
   answer="5(y+3)"
+  answerForm="factored"
   answerDisplay="$5(y+3)$"
   hint="Find the GCF of $5y$ and $15$, rewrite each term as a product using it, then use the Distributive Property in reverse."
 >}}
@@ -510,6 +531,7 @@ Check on your own by multiplying the factors.
 {{< fillin
   question="Factor: $4b - 20$."
   answer="4(b-5)"
+  answerForm="factored"
   answerDisplay="$4(b-5)$"
   hint="Find the GCF of $4b$ and $20$, then divide each term by it and keep the subtraction sign inside the parentheses."
 >}}
@@ -517,6 +539,7 @@ Check on your own by multiplying the factors.
 {{< fillin
   question="Factor: $3n^2 + 21n + 12$."
   answer="3(n^2+7n+4)"
+  answerForm="factored"
   answerDisplay="$3(n^2+7n+4)$"
   hint="Check all three terms for a common factor. The GCF here is a constant, so the polynomial left inside the parentheses is still a trinomial."
 >}}
@@ -524,6 +547,7 @@ Check on your own by multiplying the factors.
 {{< fillin
   question="Factor: $9c^2 + 22c$."
   answer="c(9c+22)"
+  answerForm="factored"
   answerDisplay="$c(9c+22)$"
   hint="$9$ and $22$ share no prime factor, so the GCF is a variable only."
 >}}
@@ -531,6 +555,7 @@ Check on your own by multiplying the factors.
 {{< fillin
   question="Factor: $45c^3 - 15c^2$."
   answer="15c^2(3c-1)"
+  answerForm="factored"
   answerDisplay="$15c^2(3c-1)$"
   hint="Take out both the greatest common numerical factor and the lowest power of $c$. When a term is entirely used up by the GCF, a $1$ is left in its place."
 >}}
@@ -538,6 +563,7 @@ Check on your own by multiplying the factors.
 {{< fillin
   question="Factor: $48x^3 + 72x^2$."
   answer="24x^2(2x+3)"
+  answerForm="factored"
   answerDisplay="$24x^2(2x+3)$"
   hint="Factor $48$ and $72$ into primes to find their greatest common factor, then include the lowest power of $x$."
 >}}
@@ -545,6 +571,7 @@ Check on your own by multiplying the factors.
 {{< fillin
   question="Factor: $-7p - 84$."
   answer="-7(p+12)"
+  answerForm="factored"
   answerDisplay="$-7(p+12)$"
   hint="The leading coefficient is negative, so make the GCF negative too — and watch how that flips the sign of the second term inside the parentheses."
 >}}
@@ -552,6 +579,7 @@ Check on your own by multiplying the factors.
 {{< fillin
   question="The height of a baseball hit with velocity $80$ feet/second at $4$ feet above ground level is $-16t^2 + 80t + 4$, where $t$ is the number of seconds since it was hit. Factor the greatest common factor from this polynomial."
   answer="-4(4t^2-20t-1)"
+  answerForm="factored"
   answerDisplay="$-4(4t^2-20t-1)$"
   hint="The leading coefficient is negative, so the GCF is negative. Ignoring signs, find the greatest common factor of $16$, $80$, and $4$; no power of $t$ divides the constant term."
 >}}

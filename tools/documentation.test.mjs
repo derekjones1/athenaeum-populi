@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
+import { ANSWER_FORM_TOKENS } from '../assets/js/lib/check-answer.mjs';
 
 const repositoryRoot = new URL('../', import.meta.url);
 
@@ -51,13 +52,24 @@ assert.match(authoring, /before August 1, 2026[\s\S]*retrofit worklist/);
 // is only gradeable with an answerForm. The playbook must document the tokens
 // and the rule, or the next such exercise ships passable by retyping it.
 assert.match(authoring, /answerForm="lowest-terms"/);
-for (const token of [
-  'fraction', 'decimal', 'mixed-number', 'improper-fraction',
-  'fraction-or-mixed-number', 'lowest-terms', 'scientific-notation',
-  'prime-product', 'denominator:<n>',
-]) {
+// Derived from the predicates rather than re-listed here: the token list used
+// to be copied into this file by hand, so adding a predicate could leave the
+// playbook silently behind. Iterating the export makes a new token fail here
+// until it is documented.
+for (const token of ANSWER_FORM_TOKENS) {
   assert.match(authoring, new RegExp(`\`${token.replace(/[<>]/g, '\\$&')}\``),
     `the playbook documents the ${token} answerForm token`);
+}
+// The Hugo shortcode validates `answerForm` against its own hardcoded copy of
+// the list and `errorf`s on anything else. That copy cannot be derived from
+// JavaScript at template time, so assert the parity here — otherwise a new
+// token passes every test and then fails the production build the first time
+// content uses it.
+const fillinShortcode = read('layouts/shortcodes/fillin.html');
+for (const token of ANSWER_FORM_TOKENS) {
+  if (token === 'denominator:<n>') continue; // the shortcode matches this with findRE
+  assert.ok(fillinShortcode.includes(`"${token}"`),
+    `layouts/shortcodes/fillin.html accepts the ${token} answerForm token`);
 }
 assert.match(authoring, /A categorical answer is never a number/);
 // One warning category is left, and it is an authoring programme rather than

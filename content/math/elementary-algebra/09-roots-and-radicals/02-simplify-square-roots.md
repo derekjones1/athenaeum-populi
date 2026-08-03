@@ -80,6 +80,7 @@ the square root.
 {{< fillin
   question="Simplify: $\sqrt{48}$."
   answer="4\sqrt{3}"
+  answerForm="simplified-radical"
   answerDisplay="$4\sqrt{3}$"
   hint="The largest perfect square factor of $48$ is $16$."
 >}}
@@ -117,6 +118,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{b^5}$."
   answer="b^2\sqrt{b}"
+  answerForm="simplified-radical"
   answerDisplay="$b^2\sqrt{b}$"
   hint="The largest perfect square factor of $b^5$ is $b^4$, and $\sqrt{b^4} = b^2$."
 >}}
@@ -138,6 +140,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{16x^7}$."
   answer="4x^3\sqrt{x}"
+  answerForm="simplified-radical"
   answerDisplay="$4x^3\sqrt{x}$"
   hint="The largest perfect square factor is $16x^6$; $\sqrt{16x^6} = 4x^3$."
 >}}
@@ -161,6 +164,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{32y^5}$."
   answer="4y^2\sqrt{2y}"
+  answerForm="simplified-radical"
   answerDisplay="$4y^2\sqrt{2y}$"
   hint="The largest perfect square factor is $16y^4$, leaving $2y$ under the radical."
 >}}
@@ -181,6 +185,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{98a^7 b^5}$."
   answer="7a^3 b^2\sqrt{2ab}"
+  answerForm="simplified-radical"
   answerDisplay="$7a^3 b^2\sqrt{2ab}$"
   hint="The largest perfect square factor is $49a^6 b^4$, leaving $2ab$ under the radical."
 >}}
@@ -213,6 +218,7 @@ terms!
 {{< fillin
   question="Simplify: $5 + \sqrt{75}$."
   answer="5 + 5\sqrt{3}"
+  answerForm="simplified-radical"
   answerDisplay="$5 + 5\sqrt{3}$"
   hint="Simplify $\sqrt{75}$ using its largest perfect square factor $25$. The integer and the radical are not like terms, so leave them as a sum."
 >}}
@@ -239,6 +245,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{10 - \sqrt{75}}{5}$."
   answer="2 - \sqrt{3}"
+  answerForm="simplified-radical"
   answerDisplay="$2 - \sqrt{3}$"
   hint="Simplify $\sqrt{75} = 5\sqrt{3}$, factor $5$ from the numerator, then remove the common factor of $5$."
 >}}
@@ -312,6 +319,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{75x^5}{3x}}$."
   answer="5x^2"
+  answerForm="simplified-radical"
   answerDisplay="$5x^2$"
   hint="Divide inside the radical first: $\tfrac{75x^5}{3x} = 25x^4$, a perfect square."
 >}}
@@ -389,6 +397,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{80m^3}{n^6}}$."
   answer="\tfrac{4m\sqrt{5m}}{n^3}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{4m\sqrt{5m}}{n^3}$"
   hint="Rewrite with the Quotient Property. The largest perfect square factor of $80m^3$ is $16m^2$, and $\sqrt{n^6} = n^3$."
 >}}
@@ -426,6 +435,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{50x^5 y^3}{72x^4 y}}$."
   answer="\tfrac{5y\sqrt{x}}{6}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{5y\sqrt{x}}{6}$"
   hint="Simplify the fraction in the radicand first: $\tfrac{50x^5 y^3}{72x^4 y} = \tfrac{25xy^2}{36}$. Then use the Quotient Property."
 >}}

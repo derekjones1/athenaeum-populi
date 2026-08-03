@@ -278,6 +278,42 @@ It would take Casey $4$ hours to do the job alone.
   hint="Multiply both sides by $4t$ to get $t + 4 = 2t$, then solve for $t$."
 >}}
 
+## Practice
+
+### Solve uniform motion applications
+
+{{< fillin
+  question="A boat travels $140$ miles downstream in the same time it travels $92$ miles upstream, and the speed of the current is $6$ mph. Find the speed of the boat in still water, in mph (enter the number)."
+  answer="29"
+  hint="Let $b$ be the speed of the boat in still water: downstream rate is $b+6$, upstream rate is $b-6$. Set the two times equal and cross-multiply."
+>}}
+
+{{< fillin
+  question="Jane spent $2$ hours exploring a mountain on a dirt bike. She rode $40$ miles uphill at a rate $5$ mph slower than the rate at which she then rode $12$ miles along the summit. Find her rate along the summit, in mph (enter the number)."
+  answer="30"
+  hint="Let $s$ be her summit rate, so her uphill rate is $s-5$. The uphill time plus the summit time is $2$ hours: $\tfrac{40}{s-5} + \tfrac{12}{s} = 2$. Solve the resulting quadratic and discard the root that makes the uphill rate negative."
+>}}
+
+{{< fillin
+  question="Chester rode his bike $24$ miles uphill, then rode back downhill at a rate $2$ mph faster than his uphill rate. The uphill ride took $2$ hours longer than the downhill ride. Find his uphill rate, in mph (enter the number)."
+  answer="4"
+  hint="Let $u$ be his uphill rate, so his downhill rate is $u+2$. Uphill time is $2$ more than downhill time: $\tfrac{24}{u} = \tfrac{24}{u+2} + 2$. Discard the negative root."
+>}}
+
+### Solve work applications
+
+{{< fillin
+  question="Mike can build a wall in $3$ hours, while his son takes $6$ hours. Working together, they finish in $t$ hours, where $\tfrac{1}{3} + \tfrac{1}{6} = \tfrac{1}{t}$. Find $t$, in hours (enter the number)."
+  answer="2"
+  hint="Multiply both sides by the LCD $6t$ to get $2t + t = 6$, then solve for $t$."
+>}}
+
+{{< fillin
+  question="Leeson can proofread a newspaper copy in $4$ hours alone. If Ryan helps, they finish in $3$ hours. Ryan alone would need $t$ hours, where $\tfrac{1}{4} + \tfrac{1}{t} = \tfrac{1}{3}$. Find $t$, in hours (enter the number)."
+  answer="12"
+  hint="Multiply both sides by the LCD $12t$ to get $3t + 12 = 4t$, then solve for $t$."
+>}}
+
 ## Key terms
 
 **uniform motion** — motion at a constant rate, modeled by $D = rt$; solving
@@ -290,4 +326,4 @@ together rate.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.8: Solve Uniform Motion and Work Applications](https://openstax.org/books/elementary-algebra-2e/pages/8-8-solve-uniform-motion-and-work-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into rate/work tables and aligned step tables, recast the "How To" procedure as a callout, and grouped the uniform motion examples by the relationship used (equal times, total time, and a time difference); omitted the Be Prepared quiz, the diagrams, media links, and end-of-section exercises; and converted the practice problems ("Try Its") and representative exercises into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.8: Solve Uniform Motion and Work Applications](https://openstax.org/books/elementary-algebra-2e/pages/8-8-solve-uniform-motion-and-work-applications) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into rate/work tables and aligned step tables, recast the "How To" procedure as a callout, and grouped the uniform motion examples by the relationship used (equal times, total time, and a time difference); omitted the Be Prepared quiz, the diagrams, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") and representative exercises into interactive exercises with instant feedback.</small>

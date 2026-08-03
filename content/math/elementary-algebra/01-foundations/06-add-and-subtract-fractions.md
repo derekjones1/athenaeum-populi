@@ -44,6 +44,7 @@ $$\frac{x}{3} + \frac{2}{3} = \frac{x+2}{3}$$
 {{< fillin
   question="Find the sum: $\tfrac{x}{4} + \tfrac{3}{4}$."
   answer="\frac{x+3}{4}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{x+3}{4}$"
   hint="The denominators already match — add the numerators and keep the common denominator."
 >}}
@@ -51,6 +52,7 @@ $$\frac{x}{3} + \frac{2}{3} = \frac{x+2}{3}$$
 {{< fillin
   question="Find the sum: $\tfrac{y}{8} + \tfrac{5}{8}$."
   answer="\frac{y+5}{8}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{y+5}{8}$"
   hint="The denominators already match — add the numerators and keep the common denominator."
 >}}
@@ -65,6 +67,7 @@ $$-\frac{23}{24} - \frac{13}{24} = \frac{-23-13}{24} = \frac{-36}{24} = -\frac{3
 {{< fillin
   question="Find the difference: $-\tfrac{19}{28} - \tfrac{7}{28}$."
   answer="-\frac{13}{14}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{13}{14}$"
   hint="Subtract the numerators over the common denominator $28$, then simplify the result."
 >}}
@@ -72,6 +75,7 @@ $$-\frac{23}{24} - \frac{13}{24} = \frac{-23-13}{24} = \frac{-36}{24} = -\frac{3
 {{< fillin
   question="Find the difference: $-\tfrac{27}{32} - \tfrac{1}{32}$."
   answer="-\frac{7}{8}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{7}{8}$"
   hint="Subtract the numerators over the common denominator $32$, then simplify the result."
 >}}
@@ -86,6 +90,7 @@ $$-\frac{10}{x} - \frac{4}{x} = \frac{-14}{x} = -\frac{14}{x}$$
 {{< fillin
   question="Find the difference: $-\tfrac{9}{x} - \tfrac{7}{x}$."
   answer="-\frac{16}{x}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{16}{x}$"
   hint="Subtract the numerators over the common denominator $x$, then rewrite the negative sign in front of the fraction."
 >}}
@@ -93,6 +98,7 @@ $$-\frac{10}{x} - \frac{4}{x} = \frac{-14}{x} = -\frac{14}{x}$$
 {{< fillin
   question="Find the difference: $-\tfrac{17}{a} - \tfrac{5}{a}$."
   answer="-\frac{22}{a}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{22}{a}$"
   hint="Subtract the numerators over the common denominator $a$, then rewrite the negative sign in front of the fraction."
 >}}
@@ -110,6 +116,7 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = \frac{3+(-5)-1}{8} = \
 {{< fillin
   question="Simplify: $-\tfrac{2}{9} + \left(-\tfrac{4}{9}\right) - \tfrac{7}{9}$."
   answer="-\frac{13}{9}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{13}{9}$"
   hint="Add and subtract the numerators left to right over the common denominator $9$, then simplify if possible."
 >}}
@@ -117,6 +124,7 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = \frac{3+(-5)-1}{8} = \
 {{< fillin
   question="Simplify: $\tfrac{5}{9} + \left(-\tfrac{4}{9}\right) - \tfrac{7}{9}$."
   answer="-\frac{6}{9}"
+  answerForm="fraction"
   answerDisplay="$-\tfrac{6}{9}$"
   hint="Add and subtract the numerators left to right over the common denominator $9$, then simplify if possible."
 >}}
@@ -182,6 +190,7 @@ the answer is already simplified.
 {{< fillin
   question="Add: $\tfrac{7}{12} + \tfrac{11}{15}$."
   answer="\frac{79}{60}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{79}{60}$"
   hint="$12 = 2 \cdot 2 \cdot 3$ and $15 = 3 \cdot 5$, so the LCD is $60$. Rewrite both fractions over $60$ before adding."
 >}}
@@ -189,6 +198,7 @@ the answer is already simplified.
 {{< fillin
   question="Add: $\tfrac{13}{15} + \tfrac{17}{20}$."
   answer="\frac{103}{60}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{103}{60}$"
   hint="$15 = 3 \cdot 5$ and $20 = 2 \cdot 2 \cdot 5$, so the LCD is $60$. Rewrite both fractions over $60$ before adding."
 >}}
@@ -234,6 +244,7 @@ $$-\frac{39}{120} = -\frac{13 \cdot 3}{40 \cdot 3} = -\frac{13}{40}$$
 {{< fillin
   question="Subtract: $\tfrac{13}{24} - \tfrac{17}{32}$."
   answer="\frac{1}{96}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{96}$"
   hint="$24 = 2 \cdot 2 \cdot 2 \cdot 3$ and $32 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$, so the LCD is $96$. Rewrite both fractions over $96$ before subtracting."
 >}}
@@ -241,6 +252,7 @@ $$-\frac{39}{120} = -\frac{13 \cdot 3}{40 \cdot 3} = -\frac{13}{40}$$
 {{< fillin
   question="Subtract: $\tfrac{21}{32} - \tfrac{9}{28}$."
   answer="\frac{75}{224}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{75}{224}$"
   hint="$32 = 2^5$ and $28 = 2 \cdot 2 \cdot 7$, so the LCD is $224$. Rewrite both fractions over $224$ before subtracting."
 >}}
@@ -266,6 +278,7 @@ the numerator is left as a sum.
 {{< fillin
   question="Add: $\tfrac{y}{6} + \tfrac{7}{9}$."
   answer="\frac{3y+14}{18}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{3y+14}{18}$"
   hint="$6 = 2 \cdot 3$ and $9 = 3 \cdot 3$, so the LCD is $18$. Rewrite each fraction over $18$, then add the numerators — $24$ and a variable term aren't like terms, so leave the sum as is."
 >}}
@@ -273,6 +286,7 @@ the numerator is left as a sum.
 {{< fillin
   question="Add: $\tfrac{x}{6} + \tfrac{7}{15}$."
   answer="\frac{5x+14}{30}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{5x+14}{30}$"
   hint="$6 = 2 \cdot 3$ and $15 = 3 \cdot 5$, so the LCD is $30$. Rewrite each fraction over $30$, then add the numerators."
 >}}
@@ -313,6 +327,7 @@ multiply $\tfrac{5x}{6} \cdot \tfrac{3}{10}$.
 {{< fillin
   question="Simplify: $\tfrac{3a}{4} - \tfrac{8}{9}$."
   answer="\frac{27a-32}{36}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{27a-32}{36}$"
   hint="This is subtraction, so find the LCD of $4$ and $9$ (which is $36$) and rewrite both fractions over it before subtracting."
 >}}
@@ -320,6 +335,7 @@ multiply $\tfrac{5x}{6} \cdot \tfrac{3}{10}$.
 {{< fillin
   question="Simplify: $\tfrac{3a}{4} \cdot \tfrac{8}{9}$."
   answer="\frac{2a}{3}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{2a}{3}$"
   hint="This is multiplication, so no common denominator is needed — multiply straight across and remove common factors."
 >}}
@@ -372,6 +388,7 @@ $$\frac{1}{4} \div 13 = \frac{1}{4} \cdot \frac{1}{13} = \frac{1}{52}$$
 {{< fillin
   question="Simplify: $\left(\tfrac{1}{3}\right)^2 \div \left(2^3+2\right)$."
   answer="\frac{1}{90}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{90}$"
   hint="Simplify the numerator $\left(\tfrac{1}{3}\right)^2 = \tfrac{1}{9}$ and the denominator $2^3+2 = 10$ separately, then divide."
 >}}
@@ -379,6 +396,7 @@ $$\frac{1}{4} \div 13 = \frac{1}{4} \cdot \frac{1}{13} = \frac{1}{52}$$
 {{< fillin
   question="Simplify: $\left(1+4^2\right) \div \left(\tfrac{1}{4}\right)^2$."
   answer="272"
+  answerForm="decimal"
   hint="Simplify the numerator $1+4^2 = 17$ and the denominator $\left(\tfrac{1}{4}\right)^2 = \tfrac{1}{16}$ separately, then divide $17$ by $\tfrac{1}{16}$."
 >}}
 
@@ -399,6 +417,7 @@ $$\frac{7}{6} \div \frac{7}{12} = \frac{7}{6} \cdot \frac{12}{7} = \frac{7 \cdot
 {{< fillin
   question="Simplify: $\left(\tfrac{1}{3}+\tfrac{1}{2}\right) \div \left(\tfrac{3}{4}-\tfrac{1}{3}\right)$."
   answer="2"
+  answerForm="decimal"
   answerDisplay="$2$"
   hint="Simplify the numerator $\tfrac{1}{3}+\tfrac{1}{2} = \tfrac{5}{6}$ and the denominator $\tfrac{3}{4}-\tfrac{1}{3} = \tfrac{5}{12}$ separately, then divide."
 >}}
@@ -406,6 +425,7 @@ $$\frac{7}{6} \div \frac{7}{12} = \frac{7}{6} \cdot \frac{12}{7} = \frac{7 \cdot
 {{< fillin
   question="Simplify: $\left(\tfrac{2}{3}-\tfrac{1}{2}\right) \div \left(\tfrac{1}{4}+\tfrac{1}{3}\right)$."
   answer="\frac{2}{7}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{7}$"
   hint="Simplify the numerator $\tfrac{2}{3}-\tfrac{1}{2} = \tfrac{1}{6}$ and the denominator $\tfrac{1}{4}+\tfrac{1}{3} = \tfrac{7}{12}$ separately, then divide."
 >}}
@@ -512,6 +532,7 @@ $$\frac{p+q}{r} = \frac{-4+(-2)}{8} = \frac{-6}{8} = -\frac{3}{4}$$
 {{< fillin
   question="Add: $\tfrac{6}{13} + \tfrac{5}{13}$."
   answer="\frac{11}{13}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{11}{13}$"
   hint="The denominators already match — add the numerators over the common denominator, then check whether the result simplifies."
 >}}
@@ -519,6 +540,7 @@ $$\frac{p+q}{r} = \frac{-4+(-2)}{8} = \frac{-6}{8} = -\frac{3}{4}$$
 {{< fillin
   question="Subtract: $\tfrac{5y}{8} - \tfrac{7}{8}$."
   answer="\frac{5y-7}{8}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{5y-7}{8}$"
   hint="The denominators already match — subtract the numerators over the common denominator; $5y$ and $7$ aren't like terms, so leave the numerator as a difference."
 >}}
@@ -528,6 +550,7 @@ $$\frac{p+q}{r} = \frac{-4+(-2)}{8} = \frac{-6}{8} = -\frac{3}{4}$$
 {{< fillin
   question="Add: $-\tfrac{11}{30} + \tfrac{27}{40}$."
   answer="\frac{37}{120}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{37}{120}$"
   hint="$30 = 2 \cdot 3 \cdot 5$ and $40 = 2 \cdot 2 \cdot 2 \cdot 5$, so the LCD is $120$. Rewrite both fractions over $120$ before adding."
 >}}
@@ -535,6 +558,7 @@ $$\frac{p+q}{r} = \frac{-4+(-2)}{8} = \frac{-6}{8} = -\frac{3}{4}$$
 {{< fillin
   question="Subtract: $\tfrac{y}{4} - \tfrac{3}{5}$."
   answer="\frac{5y-12}{20}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{5y-12}{20}$"
   hint="$4$ and $5$ share no common factors, so the LCD is $20$. Rewrite each fraction over $20$, then subtract the numerators."
 >}}
@@ -544,12 +568,14 @@ $$\frac{p+q}{r} = \frac{-4+(-2)}{8} = \frac{-6}{8} = -\frac{3}{4}$$
 {{< fillin
   question="Simplify: $\left(2^3+4^2\right) \div \left(\tfrac{2}{3}\right)^2$."
   answer="54"
+  answerForm="decimal"
   hint="Simplify the numerator $2^3+4^2=24$ and the denominator $\left(\tfrac{2}{3}\right)^2=\tfrac{4}{9}$ separately, then divide."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\tfrac{5}{8}+\tfrac{1}{6}\right) \div \tfrac{19}{24}$."
   answer="1"
+  answerForm="decimal"
   hint="Add the fractions in parentheses over their LCD $24$ first, then divide by $\tfrac{19}{24}$."
 >}}
 

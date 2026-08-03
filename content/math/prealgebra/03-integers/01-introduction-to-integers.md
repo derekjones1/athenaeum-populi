@@ -209,6 +209,7 @@ $-(-6) = 6$.
 {{< fillin
   question="Simplify: $-(-1)$"
   answer="1"
+  answerForm="decimal"
   hint="The opposite of a negative number is its positive counterpart."
 >}}
 
@@ -268,12 +269,14 @@ $|5| = 5$ and $|-5| = 5$.
 {{< fillin
   question="Simplify: $|12|$"
   answer="12"
+  answerForm="decimal"
   hint="How many units is $12$ from zero?"
 >}}
 
 {{< fillin
   question="Simplify: $-|-28|$"
   answer="-28"
+  answerForm="decimal"
   hint="First take the absolute value of $-28$ (a positive result), then apply the negative sign in front."
 >}}
 
@@ -292,12 +295,14 @@ $4 \cdot 2 = 8$.
 {{< fillin
   question="Simplify: $|12 - 9|$"
   answer="3"
+  answerForm="decimal"
   hint="Simplify inside the absolute value bars first, then take the absolute value."
 >}}
 
 {{< fillin
   question="Simplify: $3|-6|$"
   answer="18"
+  answerForm="decimal"
   hint="Take the absolute value of $-6$ first, then multiply by $3$."
 >}}
 
@@ -311,6 +316,7 @@ $24 - |7|$. Take the absolute value: $24 - 7$. Subtract: $17$.
 {{< fillin
   question="Simplify: $19 - |11 - 4(3 - 1)|$"
   answer="16"
+  answerForm="decimal"
   hint="Innermost parentheses first ($3 - 1 = 2$), then multiply ($4 \cdot 2 = 8$), then subtract inside the bars ($11 - 8 = 3$), then take the absolute value and subtract from $19$."
 >}}
 
@@ -481,6 +487,7 @@ $>$
 {{< fillin
   question="Simplify: $-(-4)$"
   answer="4"
+  answerForm="decimal"
   hint="The sign outside the parentheses asks for the opposite of $-4$."
 >}}
 
@@ -501,18 +508,21 @@ $>$
 {{< fillin
   question="Simplify: $|7|$"
   answer="7"
+  answerForm="decimal"
   hint="Absolute value is distance from zero, and $7$ is $7$ units from zero."
 >}}
 
 {{< fillin
   question="Simplify: $|-25|$"
   answer="25"
+  answerForm="decimal"
   hint="Distance is never negative — how many units is $-25$ from zero?"
 >}}
 
 {{< fillin
   question="Simplify: $|0|$"
   answer="0"
+  answerForm="decimal"
   hint="Zero is already at zero, so its distance from zero is nothing at all."
 >}}
 
@@ -531,12 +541,14 @@ $>$
 {{< fillin
   question="Simplify: $8|-7|$"
   answer="56"
+  answerForm="decimal"
   hint="Take the absolute value of $-7$ first, then multiply by $8$."
 >}}
 
 {{< fillin
   question="Simplify: $18 - |2(8 - 3)|$"
   answer="8"
+  answerForm="decimal"
   hint="Absolute value bars are grouping symbols: simplify $8-3$, multiply by $2$, take the absolute value, and only then subtract from $18$."
 >}}
 

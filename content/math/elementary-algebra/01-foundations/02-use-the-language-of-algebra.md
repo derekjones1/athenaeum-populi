@@ -147,6 +147,7 @@ left to right: $9 \cdot 3 \cdot 3 = 27 \cdot 3 = 81$.
 {{< fillin
   question="Simplify: $5^3$."
   answer="125"
+  answerForm="decimal"
   hint="Expand as $5 \cdot 5 \cdot 5$, then multiply left to right."
 >}}
 
@@ -210,12 +211,14 @@ $13 + 0 = 13$.
 {{< fillin
   question="Simplify: $9 + 5^3 - [4(9+3)]$."
   answer="86"
+  answerForm="decimal"
   hint="Work the innermost parentheses first ($9+3$), then the brackets, then the exponent, then add and subtract left to right."
 >}}
 
 {{< fillin
   question="Simplify: $30 \div 5 + 10(3-2)$."
   answer="16"
+  answerForm="decimal"
   hint="Simplify the parentheses first, then divide and multiply left to right before adding."
 >}}
 
@@ -324,6 +327,7 @@ Combine: $3x^2 + 7x + 12$.
 {{< fillin
   question="Simplify: $3x^2 + 7x + 9 + 7x^2 + 9x + 8$."
   answer="10x^2 + 16x + 17"
+  answerForm="no-like-terms"
   hint="Group the $x^2$ terms, the $x$ terms, and the constants, then add each group's coefficients."
 >}}
 
@@ -442,18 +446,21 @@ Thirty-six is not equal to nineteen.
 {{< fillin
   question="Simplify: $3 + 8 \cdot 5$."
   answer="43"
+  answerForm="decimal"
   hint="Multiply first, then add."
 >}}
 
 {{< fillin
   question="Simplify: $(3 + 8) \cdot 5$."
   answer="55"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first, then multiply."
 >}}
 
 {{< fillin
   question="Simplify: $5^3$."
   answer="125"
+  answerForm="decimal"
   hint="Expand as $5 \cdot 5 \cdot 5$ and multiply left to right."
 >}}
 
@@ -482,6 +489,7 @@ Thirty-six is not equal to nineteen.
 {{< fillin
   question="Simplify by combining like terms: $3x^2 + 12x + 11 + 14x^2 + 8x + 5$."
   answer="17x^2 + 20x + 16"
+  answerForm="no-like-terms"
   hint="Rearrange so like terms are together, then add each group's coefficients."
 >}}
 

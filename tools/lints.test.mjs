@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { lintHugo } from './lints.mjs';
+import { checkAnswer } from '../assets/js/lib/check-answer.mjs';
 
 const imageCases = [
   '![plot](/images/plot.webp)',
@@ -239,8 +240,6 @@ for (const [source, reason] of [
   );
 }
 for (const [source, reason] of [
-  [listFillin('Add: $3+5$.', '8'),
-    'a compound expression is not a printed value — its value-equality is inherent to CAS grading'],
   [listFillin('Solve $2x+3=7$ for $x$.', '2'),
     'coefficients inside a compound span are not standalone printed values'],
   [listFillin('Round $2.841$ to the nearest tenth.', '2.8'),
@@ -257,8 +256,6 @@ for (const [source, reason] of [
     'the median of an odd-sized data set is necessarily a printed member'],
   [listFillin('One angle of a right triangle measures 45 degrees. What is the measure of the other small angle?', '45'),
     'an isosceles right triangle legitimately answers with the printed angle'],
-  [listFillin('Divide, then check by multiplying: $\\tfrac{91{,}881}{9}$', '10209'),
-    'a printed fraction that states a division is an operation, not a value to re-express'],
   [listFillin('Jazmine ran $8$ miles and biked $24$ miles in $3$ hours, biking $4$ mph faster than she ran. Find her running speed in mph.', '8'),
     'an application answer that happens to equal a printed quantity is an incidental collision'],
 ]) {
@@ -290,6 +287,163 @@ for (const [source, reason] of [
       .some((error) => error.includes('name no form')),
     'a misspelled answerForm token is an authoring error',
   );
+}
+
+// ---- a factoring prompt is trivially satisfiable without answerForm --------
+// "Factor: $x^2+6x+8$" prints a polynomial that IS its own factorization by
+// value, so the CAS cannot separate the answer from the prompt retyped. Only
+// the shape can — see the `factored` token.
+{
+  const trivial = (error) => error.includes('printed in the question');
+  const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
+  const factorFillin = (question, answer, form = '') =>
+    `{{< fillin question="${question}" answer="${answer}"${form ? ` answerForm="${form}"` : ''} hint="Find the pattern." >}}`;
+
+  // Fires: the prompt is passable by retyping it.
+  for (const [question, answer, reason] of [
+    ['Factor: $x^2+6x+8$.', '(x+2)(x+4)', 'a bare factoring prompt is trivially satisfiable'],
+    ['Factor completely: $4m^2-4m-8$.', '4(m+1)(m-2)', 'so is one with a GCF in the answer'],
+    ['Factor $6a+24$ by taking out the greatest common factor.', '6(a+4)',
+      'the verb opening the question is what matters, not the whole phrasing'],
+    ['The height is $-6x^2-30x$. Factor the greatest common factor from this polynomial.', '-6x(x+5)',
+      'a mid-question sentence that opens with the verb still asks the learner to factor'],
+  ]) {
+    assert(lint(factorFillin(question, answer)).some(trivial), reason);
+  }
+
+  // Silenced by the token, and exercised rather than trusted.
+  assert.equal(
+    lint(factorFillin('Factor: $x^2+6x+8$.', '(x+2)(x+4)', 'factored')).filter(trivial).length,
+    0,
+    'answerForm="factored" rules the printed polynomial out',
+  );
+  // The "declared form too weak to rule the printed value out" failure mode has
+  // no instance here, unlike the numeral prompts: every numeral token rejects a
+  // polynomial outright, so any mistagged form silences this rule. What catches
+  // a mistag instead is verify-section — the same token also rejects the
+  // exercise's own answer, which it reports as "would reject its own answer".
+  // Asserted here so the division of labour is not mistaken for a gap.
+  assert.equal(
+    lint(factorFillin('Factor: $x^2+6x+8$.', '(x+2)(x+4)', 'lowest-terms')).filter(trivial).length,
+    0,
+    'a numeral token rejects the printed polynomial, so this rule falls silent',
+  );
+  assert.equal(
+    checkAnswer('(x+2)(x+4)', '(x+2)(x+4)', { form: 'lowest-terms' }),
+    'form',
+    'and the mistag surfaces as the exercise rejecting its own answer',
+  );
+
+  // Does NOT fire: "factor" as a noun, which is most of its uses in the corpus.
+  for (const [question, answer, reason] of [
+    ['Find the greatest common factor of $12$ and $18$.', '6', 'naming a GCF is not factoring'],
+    ['Find the Greatest Common Factor in the expression: $8m^2+16m$.', '8m', 'nor is naming it in an expression'],
+    ['List all the factors of 96, separated by commas, least to greatest.', '1,2,3,4,6,8,12,16,24,32,48,96',
+      'listing factors is not factoring'],
+    ['Find the LCM of $9$ and $12$ using the prime factors method.', '36', 'a named method is not an instruction to factor'],
+    ['Divide: $\\tfrac{c+3}{5-c} \\div \\tfrac{c^2-9}{c-5}$. (A factor of $-1$ appears from opposite binomials.)',
+      '-\\tfrac{1}{c-3}', 'an aside mentioning a factor is not a factoring prompt'],
+  ]) {
+    assert.equal(lint(factorFillin(question, answer)).filter(trivial).length, 0, reason);
+  }
+
+  // Blast radius: the factoring path must not drag the Simplify family in. Those
+  // are a separate class with their own tokens and their own retrofit (§6); if
+  // this ever starts firing, the two candidate paths have been merged by
+  // mistake and ~900 sound exercises are about to be reported as defects.
+  assert.equal(
+    lint(factorFillin('Simplify: $\\tfrac{x^2-4}{x-2}$.', 'x+2')).filter(trivial).length,
+    0,
+    'an algebraic Simplify prompt stays out of scope until its own token exists',
+  );
+  assert.equal(
+    lint(factorFillin('Multiply: $(w+5)(w+7)$.', 'w^2+12w+35')).filter(trivial).length,
+    0,
+    'an algebraic Multiply prompt stays out of scope too',
+  );
+
+  // A form beside a list answer grades nothing — the grader returns first.
+  assert(
+    lintHugo(
+      '{{< fillin question="Solve $x^2=9$." answer="-3,3" answerMode="unordered" answerForm="factored" hint="Both signs." >}}',
+      'content/math/book/01-chapter/01-section.md',
+    ).errors.some((error) => error.includes('not applied to a comma-separated answer')),
+    'answerForm on a list answer is a silent no-op and must be rejected',
+  );
+}
+
+// ---- an arithmetic prompt is trivially satisfiable without answerForm ------
+// "Add: $3+5$" prints an expression worth exactly its own answer. The playbook
+// used to call this inherent to CAS grading; it is not — `decimal` rejects it.
+{
+  const trivial = (error) => error.includes('printed in the question');
+  const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
+  const arith = (question, answer, form = '') =>
+    `{{< fillin question="${question}" answer="${answer}"${form ? ` answerForm="${form}"` : ''} hint="Compute it." >}}`;
+
+  for (const [question, answer, reason] of [
+    ['Add: $3+5$.', '8', 'a bare arithmetic prompt is passable by retyping'],
+    ['Multiply: $-6 \\cdot 8$.', '-48', 'so is a product'],
+    // Both of these used to sit in the "must not fire" table below, on the
+    // premise that CAS grading made them unavoidable. It does not: `decimal`
+    // rejects the printed expression while accepting the answer, so they are
+    // ordinary fixable defects and the exemption was wrong.
+    ['Divide, then check by multiplying: $\\tfrac{91{,}881}{9}$', '10209',
+      'a printed fraction stating a division is still passable by retyping'],
+    ['Simplify: $9 + 5^3 - [4(9+3)]$.', '86', 'nor is a longer order-of-operations expression'],
+  ]) {
+    assert(lint(arith(question, answer)).some(trivial), reason);
+  }
+
+  assert.equal(
+    lint(arith('Add: $3+5$.', '8', 'decimal')).filter(trivial).length,
+    0,
+    'answerForm="decimal" rules the printed arithmetic out',
+  );
+  assert.equal(
+    lint(arith('Simplify: $(3^8)^2$. Write the answer as a power of 3.', '3^{16}', 'single-power')).filter(trivial).length,
+    0,
+    'answerForm="single-power" rules a printed nested power out',
+  );
+
+  // Must NOT fire: a variable prompt prints no bare arithmetic, and a word
+  // problem whose answer happens to equal a printed quantity is an incidental
+  // collision the learner cannot exploit — they cannot know which to copy.
+  for (const [question, answer, reason] of [
+    ['Evaluate $3ab^2$ when $a = -2$ and $b = 3$.', '-54', 'a variable prompt contributes no arithmetic span'],
+    ['Simplify: $b^9 \\cdot b^8$.', 'b^{17}', 'an algebraic simplification is a different class (§6)'],
+    ['Jazmine ran $8$ miles and biked $24$ miles in $3$ hours, biking $4$ mph faster than she ran. Find her running speed in mph.', '8',
+      'an application answer colliding with a printed quantity is incidental'],
+    ['Simplify: $\\sqrt{32} - \\sqrt{18}$.', '\\sqrt{2}', 'radicals have no form token yet, so flagging them would report an unfixable defect'],
+  ]) {
+    assert.equal(lint(arith(question, answer)).filter(trivial).length, 0, reason);
+  }
+}
+
+// ---- an unbraced multi-digit exponent grades as a different value ----------
+// TeX reads `y^10` as `y^1` followed by a literal `0`. Self-grading cannot see
+// this (the answer is compared against itself) and a correct `answerDisplay`
+// hides it from visual review, so only the lint stands between the defect and
+// a learner who types the right thing and is told they are wrong.
+{
+  const expFillin = (answer) => `{{< fillin question="Simplify: $y^{20} / y^{10}$." answer="${answer}" hint="Subtract the exponents." >}}`;
+  const errorsFor = (answer) => lintHugo(expFillin(answer), 'content/math/book/01-chapter/01-section.md')
+    .errors.filter((error) => error.includes('unbraced multi-digit exponent'));
+  for (const [answer, reason] of [
+    ['y^10', 'a bare two-digit exponent is an error'],
+    ['7^14', 'the same defect on a numeric base is an error'],
+    ['3x^{2}y^100', 'the rule finds the defect inside a longer expression'],
+  ]) {
+    assert.equal(errorsFor(answer).length, 1, reason);
+  }
+  for (const [answer, reason] of [
+    ['y^{10}', 'a braced multi-digit exponent is correct and must not fire'],
+    ['y^2', 'a single-digit exponent needs no braces'],
+    ['x^{20}y^{11}', 'several braced multi-digit exponents stay clean'],
+    ['10^{-3}', 'a braced negative exponent is unaffected by this rule'],
+  ]) {
+    assert.equal(errorsFor(answer).length, 0, reason);
+  }
 }
 
 // ---- a categorical answer encoded as a number belongs in multiplechoice ----

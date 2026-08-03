@@ -81,18 +81,21 @@ $\sqrt{100} = 10$.
 {{< fillin
   question="Simplify: $\sqrt{36}$"
   answer="6"
+  answerForm="simplified-radical"
   hint="Ask yourself what positive number, squared, gives $36$."
 >}}
 
 {{< fillin
   question="Simplify: $\sqrt{169}$"
   answer="13"
+  answerForm="simplified-radical"
   hint="Ask yourself what positive number, squared, gives $169$."
 >}}
 
 {{< fillin
   question="Simplify: $\sqrt{16}$"
   answer="4"
+  answerForm="simplified-radical"
   hint="Ask yourself what positive number, squared, gives $16$."
 >}}
 
@@ -111,18 +114,21 @@ radical sign. For example, $-\sqrt{100} = -10$. We read $-\sqrt{100}$ as
 {{< fillin
   question="Simplify: $-\sqrt{4}$"
   answer="-2"
+  answerForm="simplified-radical"
   hint="First simplify $\sqrt{4}$, then apply the negative sign in front of the radical."
 >}}
 
 {{< fillin
   question="Simplify: $-\sqrt{225}$"
   answer="-15"
+  answerForm="simplified-radical"
   hint="First simplify $\sqrt{225}$, then apply the negative sign in front of the radical."
 >}}
 
 {{< fillin
   question="Simplify: $-\sqrt{81}$"
   answer="-9"
+  answerForm="simplified-radical"
   hint="First simplify $\sqrt{81}$, then apply the negative sign in front of the radical."
 >}}
 
@@ -386,6 +392,7 @@ not a real number
 {{< fillin
   question="Simplify $-\sqrt{81}$, and note that this value is a real number."
   answer="-9"
+  answerForm="simplified-radical"
   hint="First simplify $\sqrt{81}$, then apply the negative sign in front of the radical."
 >}}
 
@@ -910,12 +917,14 @@ $-0.1 > -0.8$.
 {{< fillin
   question="Simplify: $\sqrt{64}$"
   answer="8"
+  answerForm="simplified-radical"
   hint="Ask yourself what positive number, squared, gives $64$."
 >}}
 
 {{< fillin
   question="Simplify: $\sqrt{100}$"
   answer="10"
+  answerForm="simplified-radical"
   hint="Ask yourself what positive number, squared, gives $100$."
 >}}
 

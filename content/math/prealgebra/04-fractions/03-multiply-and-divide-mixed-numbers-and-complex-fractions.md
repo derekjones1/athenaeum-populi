@@ -50,6 +50,7 @@ product).
 {{< fillin
   question="Multiply, and write your answer in simplified form: $5\tfrac{2}{3} \cdot \tfrac{6}{17}$"
   answer="2"
+  answerForm="decimal"
   hint="Convert $5\tfrac{2}{3}$ to an improper fraction first, then look for common factors before multiplying."
 >}}
 
@@ -65,6 +66,7 @@ $$2\frac{4}{5}\left(-1\frac{7}{8}\right) = -\frac{21}{4}$$
 {{< fillin
   question="Multiply, and write your answer in simplified form: $-3\tfrac{2}{5} \cdot 4\tfrac{1}{6}$"
   answer="-\frac{85}{6}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{85}{6}$"
   hint="Convert both mixed numbers to improper fractions first: $-\tfrac{17}{5}$ and $\tfrac{25}{6}$."
 >}}
@@ -81,6 +83,7 @@ $$3\frac{4}{7} \div 5 = \frac{5}{7}$$
 {{< fillin
   question="Divide, and write your answer in simplified form: $2\tfrac{5}{8} \div 3$"
   answer="\frac{7}{8}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{7}{8}$"
   hint="Convert $2\tfrac{5}{8}$ to the improper fraction $\tfrac{21}{8}$, write $3$ as $\tfrac{3}{1}$, then multiply by its reciprocal."
 >}}
@@ -96,6 +99,7 @@ $$2\frac{1}{2} \div 1\frac{1}{4} = 2$$
 {{< fillin
   question="Divide, and write your answer in simplified form: $3\tfrac{3}{4} \div 1\tfrac{1}{2}$"
   answer="\frac{5}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{2}$"
   hint="Convert both mixed numbers to improper fractions ($\tfrac{15}{4}$ and $\tfrac{3}{2}$), then multiply by the reciprocal of the second."
 >}}
@@ -173,6 +177,7 @@ $$\frac{\tfrac{3}{4}}{\tfrac{5}{8}} = \frac{6}{5}$$
 {{< fillin
   question="Simplify: $\left(\tfrac{2}{3}\right) / \left(\tfrac{5}{6}\right)$"
   answer="\frac{4}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{4}{5}$"
   hint="Rewrite the complex fraction as $\tfrac{2}{3} \div \tfrac{5}{6}$, then multiply by the reciprocal of the second fraction."
 >}}
@@ -190,6 +195,7 @@ $$\frac{-\tfrac{6}{7}}{3} = -\frac{2}{7}$$
 {{< fillin
   question="Simplify: $\left(-\tfrac{8}{7}\right) / 4$"
   answer="-\frac{2}{7}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{2}{7}$"
   hint="Rewrite as $-\tfrac{8}{7} \div 4$, write $4$ as $\tfrac{4}{1}$, then multiply by its reciprocal and simplify."
 >}}
@@ -207,6 +213,7 @@ $$\frac{\tfrac{x}{2}}{\tfrac{xy}{6}} = \frac{3}{y}$$
 {{< fillin
   question="Simplify: $\left(\tfrac{p}{2}\right) / \left(\tfrac{pq}{8}\right)$. Answer in terms of $q$."
   answer="\frac{4}{q}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{4}{q}$"
   hint="Rewrite as $\tfrac{p}{2} \div \tfrac{pq}{8}$, multiply by the reciprocal, then remove the common factor of $p$."
 >}}
@@ -225,6 +232,7 @@ $$\frac{2\tfrac{3}{4}}{\tfrac{1}{8}} = 22$$
 {{< fillin
   question="Simplify: $\left(\tfrac{8}{3}\right) / \left(3\tfrac{1}{5}\right)$"
   answer="\frac{5}{6}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{6}$"
   hint="Convert $3\tfrac{1}{5}$ to the improper fraction $\tfrac{16}{5}$, rewrite as division, then multiply by the reciprocal."
 >}}
@@ -289,6 +297,7 @@ $$\frac{4+8}{5-3} = 6$$
 {{< fillin
   question="Simplify: $\tfrac{4+6}{11-2}$"
   answer="\frac{10}{9}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{10}{9}$"
   hint="Simplify the numerator and denominator separately first, then divide."
 >}}
@@ -304,6 +313,7 @@ $$\frac{4-2(3)}{2^2+2} = -\frac{1}{3}$$
 {{< fillin
   question="Simplify: $\tfrac{6-3(5)}{3^2+3}$"
   answer="-\frac{3}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{3}{4}$"
   hint="In the numerator, multiply before subtracting. In the denominator, apply the exponent before adding."
 >}}
@@ -318,6 +328,7 @@ $$\frac{(8-4)^2}{8^2-4^2} = \frac{1}{3}$$
 {{< fillin
   question="Simplify: $(11-7)^2 / (11^2-7^2)$"
   answer="\frac{2}{9}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{9}$"
   hint="Simplify inside the parentheses first, then apply exponents in both the numerator and denominator."
 >}}
@@ -332,6 +343,7 @@ $$\frac{4(-3)+6(-2)}{-3(2)-2} = 3$$
 {{< fillin
   question="Simplify: $\tfrac{8(-2)+4(-3)}{-5(2)+3}$"
   answer="4"
+  answerForm="decimal"
   hint="Multiply out the numerator and the denominator separately before dividing."
 >}}
 
@@ -342,6 +354,7 @@ $$\frac{4(-3)+6(-2)}{-3(2)-2} = 3$$
 {{< fillin
   question="Multiply, and write the answer in simplified form: $2\tfrac{4}{9} \cdot \tfrac{6}{7}$"
   answer="\frac{44}{21}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{44}{21}$"
   hint="Rewrite $2\tfrac{4}{9}$ as $\tfrac{22}{9}$, then remove the common factor of $2$ before multiplying."
 >}}
@@ -356,6 +369,7 @@ $$\frac{4(-3)+6(-2)}{-3(2)-2} = 3$$
 {{< fillin
   question="Divide, and write the answer in simplified form: $-7 \div 5\tfrac{1}{4}$"
   answer="-\frac{4}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{4}{3}$"
   hint="Write $-7$ as $-\tfrac{7}{1}$ and $5\tfrac{1}{4}$ as $\tfrac{21}{4}$, then multiply by the reciprocal of the divisor."
 >}}
@@ -363,6 +377,7 @@ $$\frac{4(-3)+6(-2)}{-3(2)-2} = 3$$
 {{< fillin
   question="Divide, and write the answer in simplified form: $-18\tfrac{3}{4} \div \left(-3\tfrac{3}{4}\right)$"
   answer="5"
+  answerForm="decimal"
   hint="The improper fractions are $-\tfrac{75}{4}$ and $-\tfrac{15}{4}$. A negative divided by a negative is positive."
 >}}
 
@@ -408,6 +423,7 @@ $$\frac{4(-3)+6(-2)}{-3(2)-2} = 3$$
 {{< fillin
   question="Simplify: $\left(\tfrac{4}{5}\right) / \left(\tfrac{8}{15}\right)$"
   answer="\frac{3}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{2}$"
   hint="Rewrite as $\tfrac{4}{5} \div \tfrac{8}{15}$, then multiply by the reciprocal of the second fraction."
 >}}
@@ -415,6 +431,7 @@ $$\frac{4(-3)+6(-2)}{-3(2)-2} = 3$$
 {{< fillin
   question="Simplify: $\left(-\tfrac{9}{10}\right) / 3$"
   answer="-\frac{3}{10}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{3}{10}$"
   hint="Write $3$ as $\tfrac{3}{1}$, multiply by its reciprocal, then remove the common factor of $3$."
 >}}
@@ -422,6 +439,7 @@ $$\frac{4(-3)+6(-2)}{-3(2)-2} = 3$$
 {{< fillin
   question="Simplify: $\left(\tfrac{r}{5}\right) / \left(\tfrac{s}{3}\right)$"
   answer="\frac{3r}{5s}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{3r}{5s}$"
   hint="Multiply $\tfrac{r}{5}$ by the reciprocal $\tfrac{3}{s}$; there are no common factors to remove here."
 >}}
@@ -429,12 +447,14 @@ $$\frac{4(-3)+6(-2)}{-3(2)-2} = 3$$
 {{< fillin
   question="Simplify: $\left(4\tfrac{2}{3}\right) / \left(\tfrac{1}{6}\right)$"
   answer="28"
+  answerForm="decimal"
   hint="Convert $4\tfrac{2}{3}$ to $\tfrac{14}{3}$, then multiply by the reciprocal $\tfrac{6}{1}$."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\tfrac{3}{8}\right) / \left(-6\tfrac{3}{4}\right)$"
   answer="-\frac{1}{18}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{1}{18}$"
   hint="The divisor $-6\tfrac{3}{4}$ becomes $-\tfrac{27}{4}$; multiplying by its reciprocal gives a negative result."
 >}}
@@ -466,6 +486,7 @@ $\tfrac{-13}{-6}$ and $\tfrac{-13}{6}$
 {{< fillin
   question="Simplify: $\tfrac{9+3}{7}$"
   answer="\frac{12}{7}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{12}{7}$"
   hint="The fraction bar groups the numerator, so add before you divide."
 >}}
@@ -473,6 +494,7 @@ $\tfrac{-13}{-6}$ and $\tfrac{-13}{6}$
 {{< fillin
   question="Simplify: $\tfrac{7^2+1}{60}$"
   answer="\frac{5}{6}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{6}$"
   hint="Apply the exponent in the numerator before adding, then remove the common factor of $10$."
 >}}
@@ -480,12 +502,14 @@ $\tfrac{-13}{-6}$ and $\tfrac{-13}{6}$
 {{< fillin
   question="Simplify: $\tfrac{6^2-4^2}{4-6}$"
   answer="-10"
+  answerForm="decimal"
   hint="Square each number separately — $6^2-4^2$ is not $(6-4)^2$ — and watch the sign of the denominator."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{9 \cdot 7 - 3(12-8)}{8 \cdot 7 - 6 \cdot 6}$"
   answer="\frac{51}{20}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{51}{20}$"
   hint="In the numerator, simplify inside the parentheses first, then multiply, then subtract. Simplify the denominator the same way before dividing."
 >}}

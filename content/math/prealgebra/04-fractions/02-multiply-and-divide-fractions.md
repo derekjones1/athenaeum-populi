@@ -167,6 +167,7 @@ simplified.
 {{< fillin
   question="Multiply, and write the answer in simplified form: $\tfrac{1}{3} \cdot \tfrac{2}{5}$"
   answer="\frac{2}{15}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{15}$"
   hint="Multiply the numerators together and the denominators together."
 >}}
@@ -187,6 +188,7 @@ than after — same result either way.
 {{< fillin
   question="Multiply, and write the answer in simplified form: $-\tfrac{4}{7} \cdot \left(-\tfrac{5}{8}\right)$"
   answer="\frac{5}{14}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{14}$"
   hint="Same signs give a positive product. Look for a common factor of $4$ before multiplying."
 >}}
@@ -203,6 +205,7 @@ $$-\frac{14}{15} \cdot \frac{20}{21} = -\frac{2 \cdot 4}{3 \cdot 3} = -\frac{8}{
 {{< fillin
   question="Multiply, and write the answer in simplified form: $-\tfrac{10}{28} \cdot \tfrac{8}{15}$"
   answer="-\frac{4}{21}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{4}{21}$"
   hint="Look for common factors between $10$ and $15$, and between $28$ and $8$, before multiplying."
 >}}
@@ -221,6 +224,7 @@ $$\frac{12}{5}(-20x) = -48x$$
 {{< fillin
   question="Multiply, and write the answer in simplified form: $\tfrac{1}{7} \cdot 56$"
   answer="8"
+  answerForm="decimal"
   hint="Write $56$ as $\tfrac{56}{1}$, then multiply and simplify."
 >}}
 
@@ -320,6 +324,7 @@ $$\frac{2}{5} \div \left(-\frac{3}{7}\right) = -\frac{14}{15}$$
 {{< fillin
   question="Divide, and write the answer in simplified form: $\tfrac{3}{7} \div \left(-\tfrac{2}{3}\right)$"
   answer="-\frac{9}{14}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{9}{14}$"
   hint="Multiply the first fraction by the reciprocal of the second, then determine the sign."
 >}}
@@ -336,6 +341,7 @@ $$-\frac{3}{4} \div \left(-\frac{7}{8}\right) = \frac{6}{7}$$
 {{< fillin
   question="Divide, and write the answer in simplified form: $-\tfrac{2}{3} \div \left(-\tfrac{5}{6}\right)$"
   answer="\frac{4}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{4}{5}$"
   hint="Multiply by the reciprocal of the second fraction. Both are negative, so the result is positive."
 >}}
@@ -351,6 +357,7 @@ $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
 {{< fillin
   question="Divide, and write the answer in simplified form: $\tfrac{7}{27} \div \tfrac{35}{36}$"
   answer="\frac{4}{15}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{4}{15}$"
   hint="Multiply by the reciprocal of $\tfrac{35}{36}$, then look for common factors of $7$ and $9$ before finishing."
 >}}
@@ -395,6 +402,7 @@ $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
 {{< fillin
   question="Multiply, and write the answer in simplified form: $\tfrac{3}{4} \cdot \tfrac{9}{10}$"
   answer="\frac{27}{40}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{27}{40}$"
   hint="Multiply the numerators and multiply the denominators, then check whether $27$ and $40$ share a factor."
 >}}
@@ -402,6 +410,7 @@ $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
 {{< fillin
   question="Multiply, and write the answer in simplified form: $\tfrac{7}{12}\left(-\tfrac{8}{21}\right)$"
   answer="-\frac{2}{9}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{2}{9}$"
   hint="Opposite signs give a negative product. Remove the common factor of $7$ from $7$ and $21$, and the common factor of $4$ from $8$ and $12$, before multiplying."
 >}}
@@ -409,6 +418,7 @@ $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
 {{< fillin
   question="Multiply, and write the answer in simplified form: $\tfrac{3}{7} \cdot 21n$"
   answer="9n"
+  answerForm="single-term"
   answerDisplay="$9n$"
   hint="Write $21n$ as $\tfrac{21n}{1}$, then remove the common factor of $7$ before multiplying."
 >}}
@@ -416,6 +426,7 @@ $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
 {{< fillin
   question="Multiply, and write the answer in simplified form: $\left(\tfrac{2}{3}\right)^{3}$"
   answer="\frac{8}{27}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{8}{27}$"
   hint="The exponent tells you how many factors of $\tfrac{2}{3}$ to multiply — cube the numerator and cube the denominator."
 >}}
@@ -448,6 +459,7 @@ $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
 {{< fillin
   question="Divide, and write the answer in simplified form: $\tfrac{4}{5} \div \tfrac{3}{4}$"
   answer="\frac{16}{15}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{16}{15}$"
   hint="Multiply $\tfrac{4}{5}$ by the reciprocal of $\tfrac{3}{4}$. The answer is an improper fraction — leave it that way."
 >}}
@@ -455,6 +467,7 @@ $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
 {{< fillin
   question="Divide, and write the answer in simplified form: $-\tfrac{3}{4} \div \tfrac{3}{5}$"
   answer="-\frac{5}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{5}{4}$"
   hint="Multiply by the reciprocal $\tfrac{5}{3}$. Opposite signs make the quotient negative, and the $3$s cancel."
 >}}
@@ -462,6 +475,7 @@ $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
 {{< fillin
   question="Divide, and write the answer in simplified form: $\tfrac{2}{5} \div \tfrac{y}{9}$"
   answer="\frac{18}{5y}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{18}{5y}$"
   hint="The reciprocal of $\tfrac{y}{9}$ is $\tfrac{9}{y}$ — multiply, and leave the variable in the denominator."
 >}}
@@ -469,6 +483,7 @@ $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
 {{< fillin
   question="Divide, and write the answer in simplified form: $\tfrac{2}{5} \div (-10)$"
   answer="-\frac{1}{25}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{1}{25}$"
   hint="Write $-10$ as $-\tfrac{10}{1}$; its reciprocal is $-\tfrac{1}{10}$. Then remove the common factor of $2$."
 >}}
@@ -476,6 +491,7 @@ $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
 {{< fillin
   question="Divide, and write the answer in simplified form: $\tfrac{11}{2} \div \tfrac{7}{8} \cdot \tfrac{2}{11}$"
   answer="\frac{8}{7}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{8}{7}$"
   hint="Division and multiplication are done left to right. Replace the division by multiplying by $\tfrac{8}{7}$, then remove the common factors of $11$ and $2$."
 >}}

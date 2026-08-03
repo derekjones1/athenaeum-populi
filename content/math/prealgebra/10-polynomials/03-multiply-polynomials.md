@@ -33,6 +33,7 @@ $$3(x + 7) = 3 \cdot x + 3 \cdot 7 = 3x + 21$$
 {{< fillin
   question="Multiply: $6(x + 8)$."
   answer="6x + 48"
+  answerForm="expanded"
   answerDisplay="$6x + 48$"
   hint="Distribute the $6$ to both terms inside the parentheses."
 >}}
@@ -40,6 +41,7 @@ $$3(x + 7) = 3 \cdot x + 3 \cdot 7 = 3x + 21$$
 {{< fillin
   question="Multiply: $2(y + 12)$."
   answer="2y + 24"
+  answerForm="expanded"
   answerDisplay="$2y + 24$"
   hint="Distribute the $2$ to both terms inside the parentheses."
 >}}
@@ -51,6 +53,7 @@ $$x(x - 8) = x \cdot x - x \cdot 8 = x^2 - 8x$$
 {{< fillin
   question="Multiply: $y(y - 9)$."
   answer="y^2 - 9y"
+  answerForm="expanded"
   answerDisplay="$y^2 - 9y$"
   hint="Distribute $y$ to both terms, using the Product Property of Exponents on $y$ times $y$."
 >}}
@@ -62,6 +65,7 @@ $$10x(4x + y) = 10x \cdot 4x + 10x \cdot y = 40x^2 + 10xy$$
 {{< fillin
   question="Multiply: $8x(x + 3y)$."
   answer="8x^2 + 24xy"
+  answerForm="expanded"
   answerDisplay="$8x^2 + 24xy$"
   hint="Distribute $8x$ to both terms inside the parentheses."
 >}}
@@ -75,6 +79,7 @@ $$-2x(5x^2 + 7x - 3) = (-2x) \cdot 5x^2 + (-2x) \cdot 7x - (-2x) \cdot 3 = -10x^
 {{< fillin
   question="Multiply: $-4y(8y^2 + 5y - 9)$."
   answer="-32y^3 - 20y^2 + 36y"
+  answerForm="expanded"
   answerDisplay="$-32y^3 - 20y^2 + 36y$"
   hint="Distribute $-4y$ to each of the three terms; watch the sign on each product."
 >}}
@@ -82,6 +87,7 @@ $$-2x(5x^2 + 7x - 3) = (-2x) \cdot 5x^2 + (-2x) \cdot 7x - (-2x) \cdot 3 = -10x^
 {{< fillin
   question="Multiply: $3x^2(4x^2 - 3x + 9)$."
   answer="12x^4 - 9x^3 + 27x^2"
+  answerForm="expanded"
   answerDisplay="$12x^4 - 9x^3 + 27x^2$"
   hint="Distribute $3x^2$ to each of the three terms, adding exponents where the bases match."
 >}}
@@ -95,6 +101,7 @@ $$(x + 3)p = x \cdot p + 3 \cdot p = xp + 3p$$
 {{< fillin
   question="Multiply: $(x + 8)p$."
   answer="xp + 8p"
+  answerForm="expanded"
   answerDisplay="$xp + 8p$"
   hint="Distribute $p$ to both terms inside the parentheses, just as you would if $p$ came first."
 >}}
@@ -150,6 +157,7 @@ $$x^2 + 14x + 48$$
 {{< fillin
   question="Multiply using the Distributive Property: $(x + 8)(x + 9)$."
   answer="x^2 + 17x + 72"
+  answerForm="expanded"
   answerDisplay="$x^2 + 17x + 72$"
   hint="Distribute $(x + 9)$ across both terms of $(x + 8)$, then combine like terms."
 >}}
@@ -169,6 +177,7 @@ $$6x^2 + 8x + 27x + 36 = 6x^2 + 35x + 36$$
 {{< fillin
   question="Multiply using the Distributive Property: $(5x + 9)(4x + 3)$."
   answer="20x^2 + 51x + 27"
+  answerForm="expanded"
   answerDisplay="$20x^2 + 51x + 27$"
   hint="Distribute $(4x + 3)$ across both terms of $(5x + 9)$, then combine the two middle terms."
 >}}
@@ -190,6 +199,7 @@ $$24y^2 - 20y + 18y - 15 = 24y^2 - 2y - 15$$
 {{< fillin
   question="Multiply using the Distributive Property: $(7y + 1)(8y - 3)$."
   answer="56y^2 - 13y - 3"
+  answerForm="expanded"
   answerDisplay="$56y^2 - 13y - 3$"
   hint="Distribute $(8y - 3)$ across both terms of $(7y + 1)$; combine the middle terms carefully with their signs."
 >}}
@@ -212,6 +222,7 @@ There are no like terms to combine, so this is the simplified product.
 {{< fillin
   question="Multiply using the Distributive Property: $(x + 5)(x - y)$."
   answer="x^2 - xy + 5x - 5y"
+  answerForm="expanded"
   answerDisplay="$x^2 - xy + 5x - 5y$"
   hint="Distribute $(x - y)$ across both terms of $(x + 5)$; there will be no like terms to combine."
 >}}
@@ -257,6 +268,7 @@ terms, last terms.
 {{< fillin
   question="Multiply using the FOIL method: $(x + 7)(x + 8)$."
   answer="x^2 + 15x + 56"
+  answerForm="expanded"
   answerDisplay="$x^2 + 15x + 56$"
   hint="Find the First, Outer, Inner, and Last products, then combine the two middle (like) terms."
 >}}
@@ -264,6 +276,7 @@ terms, last terms.
 {{< fillin
   question="Multiply using the FOIL method: $(y + 14)(y + 2)$."
   answer="y^2 + 16y + 28"
+  answerForm="expanded"
   answerDisplay="$y^2 + 16y + 28$"
   hint="Find the First, Outer, Inner, and Last products, then combine the two middle (like) terms."
 >}}
@@ -294,6 +307,7 @@ applies to multiplying binomials, not other polynomials!
 {{< fillin
   question="Multiply: $(y - 3)(y + 8)$."
   answer="y^2 + 5y - 24"
+  answerForm="expanded"
   answerDisplay="$y^2 + 5y - 24$"
   hint="Use FOIL, then combine the Outer and Inner products since they are like terms."
 >}}
@@ -301,6 +315,7 @@ applies to multiplying binomials, not other polynomials!
 {{< fillin
   question="Multiply: $(q - 4)(q + 5)$."
   answer="q^2 + q - 20"
+  answerForm="expanded"
   answerDisplay="$q^2 + q - 20$"
   hint="Use FOIL, then combine the Outer and Inner products since they are like terms."
 >}}
@@ -318,6 +333,7 @@ applies to multiplying binomials, not other polynomials!
 {{< fillin
   question="Multiply: $(4a + 9)(5a - 2)$."
   answer="20a^2 + 37a - 18"
+  answerForm="expanded"
   answerDisplay="$20a^2 + 37a - 18$"
   hint="Use FOIL, then combine the Outer and Inner products since they are like terms."
 >}}
@@ -325,6 +341,7 @@ applies to multiplying binomials, not other polynomials!
 {{< fillin
   question="Multiply: $(7x + 4)(7x - 8)$."
   answer="49x^2 - 28x - 32"
+  answerForm="expanded"
   answerDisplay="$49x^2 - 28x - 32$"
   hint="Use FOIL, then combine the Outer and Inner products since they are like terms."
 >}}
@@ -342,6 +359,7 @@ applies to multiplying binomials, not other polynomials!
 {{< fillin
   question="Multiply: $(12x - y)(x - 5)$."
   answer="12x^2 - 60x - xy + 5y"
+  answerForm="expanded"
   answerDisplay="$12x^2 - 60x - xy + 5y$"
   hint="Use FOIL. The Inner and Outer terms here are not like terms, so all four terms remain."
 >}}
@@ -349,6 +367,7 @@ applies to multiplying binomials, not other polynomials!
 {{< fillin
   question="Multiply: $(6a - b)(2a - 9)$."
   answer="12a^2 - 54a - 2ab + 9b"
+  answerForm="expanded"
   answerDisplay="$12a^2 - 54a - 2ab + 9b$"
   hint="Use FOIL. The Inner and Outer terms here are not like terms, so all four terms remain."
 >}}
@@ -388,6 +407,7 @@ from FOIL.
 {{< fillin
   question="Multiply using the Vertical Method: $(4m - 9)(3m - 7)$."
   answer="12m^2 - 55m + 63"
+  answerForm="expanded"
   answerDisplay="$12m^2 - 55m + 63$"
   hint="Multiply the top binomial by each term of the bottom binomial separately, lining up like terms, then add the partial products."
 >}}
@@ -395,6 +415,7 @@ from FOIL.
 {{< fillin
   question="Multiply using the Vertical Method: $(6n - 5)(7n - 2)$."
   answer="42n^2 - 47n + 10"
+  answerForm="expanded"
   answerDisplay="$42n^2 - 47n + 10$"
   hint="Multiply the top binomial by each term of the bottom binomial separately, lining up like terms, then add the partial products."
 >}}
@@ -438,6 +459,7 @@ $$2x^3 + x^2 - 7x + 24$$
 {{< fillin
   question="Multiply using the Distributive Property: $(y - 1)(y^2 - 7y + 2)$."
   answer="y^3 - 8y^2 + 9y - 2"
+  answerForm="expanded"
   answerDisplay="$y^3 - 8y^2 + 9y - 2$"
   hint="Distribute $(y^2 - 7y + 2)$ across both terms of $(y - 1)$, then combine like terms."
 >}}
@@ -445,6 +467,7 @@ $$2x^3 + x^2 - 7x + 24$$
 {{< fillin
   question="Multiply using the Distributive Property: $(x + 2)(3x^2 - 4x + 5)$."
   answer="3x^3 + 2x^2 - 3x + 10"
+  answerForm="expanded"
   answerDisplay="$3x^3 + 2x^2 - 3x + 10$"
   hint="Distribute $(3x^2 - 4x + 5)$ across both terms of $(x + 2)$, then combine like terms."
 >}}
@@ -465,6 +488,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply using the Vertical Method: $(y - 1)(y^2 - 7y + 2)$."
   answer="y^3 - 8y^2 + 9y - 2"
+  answerForm="expanded"
   answerDisplay="$y^3 - 8y^2 + 9y - 2$"
   hint="Put the trinomial on top, multiply it by each term of the binomial separately lining up like terms, then add the partial products."
 >}}
@@ -472,6 +496,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply using the Vertical Method: $(x + 2)(3x^2 - 4x + 5)$."
   answer="3x^3 + 2x^2 - 3x + 10"
+  answerForm="expanded"
   answerDisplay="$3x^3 + 2x^2 - 3x + 10$"
   hint="Put the trinomial on top, multiply it by each term of the binomial separately lining up like terms, then add the partial products."
 >}}
@@ -483,6 +508,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply: $-8(z - 5)$."
   answer="-8z + 40"
+  answerForm="expanded"
   answerDisplay="$-8z + 40$"
   hint="Distribute $-8$ to both terms. A negative times a negative gives a positive second term."
 >}}
@@ -490,6 +516,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply: $-9a(3a + 5)$."
   answer="-27a^2 - 45a"
+  answerForm="expanded"
   answerDisplay="$-27a^2 - 45a$"
   hint="Distribute $-9a$ to each term, multiplying coefficients and adding exponents on the matching bases."
 >}}
@@ -497,6 +524,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply: $5q^3(q^2 - 2q + 6)$."
   answer="5q^5 - 10q^4 + 30q^3"
+  answerForm="expanded"
   answerDisplay="$5q^5 - 10q^4 + 30q^3$"
   hint="Distribute $5q^3$ to all three terms; add the exponents on $q$ in each product."
 >}}
@@ -504,6 +532,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply: $(w - 6) \cdot 8$."
   answer="8w - 48"
+  answerForm="expanded"
   answerDisplay="$8w - 48$"
   hint="The monomial is the second factor here, but the Distributive Property works the same: multiply each term inside the parentheses by $8$."
 >}}
@@ -513,6 +542,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply: $(z - 10)(z - 22)$."
   answer="z^2 - 32z + 220"
+  answerForm="expanded"
   answerDisplay="$z^2 - 32z + 220$"
   hint="Use any method. Both last terms are negative, so their product is positive and both middle terms are negative."
 >}}
@@ -520,6 +550,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply: $(2m - 9)(10m + 1)$."
   answer="20m^2 - 88m - 9"
+  answerForm="expanded"
   answerDisplay="$20m^2 - 88m - 9$"
   hint="Use any method. Track the signs on the Outer and Inner products before combining them."
 >}}
@@ -527,6 +558,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply: $(4c - 1)(4c + 1)$."
   answer="16c^2 - 1"
+  answerForm="expanded"
   answerDisplay="$16c^2 - 1$"
   hint="Use any method. The Outer and Inner products are opposites here, so they add to zero."
 >}}
@@ -534,6 +566,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply: $(5x - y)(x - 4)$."
   answer="5x^2 - 20x - xy + 4y"
+  answerForm="expanded"
   answerDisplay="$5x^2 - 20x - xy + 4y$"
   hint="Use any method. With two different variables the four products are not like terms, so none of them combine."
 >}}
@@ -543,6 +576,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply using the Distributive Property: $(a + 10)(3a^2 + a - 5)$."
   answer="3a^3 + 31a^2 + 5a - 50"
+  answerForm="expanded"
   answerDisplay="$3a^3 + 31a^2 + 5a - 50$"
   hint="Distribute $(3a^2 + a - 5)$ across both terms of $(a + 10)$, then combine like terms."
 >}}
@@ -550,6 +584,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply using the Vertical Method: $(a + 10)(3a^2 + a - 5)$."
   answer="3a^3 + 31a^2 + 5a - 50"
+  answerForm="expanded"
   answerDisplay="$3a^3 + 31a^2 + 5a - 50$"
   hint="Put the trinomial on top, multiply it by $10$ and then by $a$, lining up like terms, and add the partial products."
 >}}
@@ -557,6 +592,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply: $(y - 6)(y^2 - 10y + 9)$."
   answer="y^3 - 16y^2 + 69y - 54"
+  answerForm="expanded"
   answerDisplay="$y^3 - 16y^2 + 69y - 54$"
   hint="Use either method. FOIL does not apply — there are six products to find before combining like terms."
 >}}
@@ -564,6 +600,7 @@ column to the left. Add like terms to get the final product.
 {{< fillin
   question="Multiply: $(2x + 1)(x^2 - 5x - 6)$."
   answer="2x^3 - 9x^2 - 17x - 6"
+  answerForm="expanded"
   answerDisplay="$2x^3 - 9x^2 - 17x - 6$"
   hint="Use either method. Multiply the trinomial by $2x$ and by $1$, then combine the like terms."
 >}}

@@ -90,12 +90,14 @@ $$(x+5)^2 = x^2 + 2 \cdot x \cdot 5 + 5^2 = x^2 + 10x + 25$$
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(x + 9)^2$"
   answer="x^2 + 18x + 81"
+  answerForm="expanded"
   hint="Square the first term to get $x^2$, square the last term to get 81, and double their product for the middle term: $2 \cdot x \cdot 9$."
 >}}
 
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(y + 11)^2$"
   answer="y^2 + 22y + 121"
+  answerForm="expanded"
   hint="Square y, square 11, and double the product $2 \cdot y \cdot 11$ for the middle term."
 >}}
 
@@ -109,12 +111,14 @@ $$(y-3)^2 = y^2 - 2 \cdot y \cdot 3 + 3^2 = y^2 - 6y + 9$$
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(x - 9)^2$"
   answer="x^2 - 18x + 81"
+  answerForm="expanded"
   hint="This is a difference, so the middle term is subtracted: $-2 \cdot x \cdot 9$."
 >}}
 
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(p - 13)^2$"
   answer="p^2 - 26p + 169"
+  answerForm="expanded"
   hint="Square p, square 13, and subtract twice their product for the middle term."
 >}}
 
@@ -127,12 +131,14 @@ $$(4x+6)^2 = (4x)^2 + 2 \cdot 4x \cdot 6 + 6^2 = 16x^2 + 48x + 36$$
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(6x + 3)^2$"
   answer="36x^2 + 36x + 9"
+  answerForm="expanded"
   hint="The first term is $(6x)^2 = 36x^2$. The middle term is $2 \cdot 6x \cdot 3$."
 >}}
 
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(4x + 9)^2$"
   answer="16x^2 + 72x + 81"
+  answerForm="expanded"
   hint="Square 4x to get $16x^2$, then double the product $2 \cdot 4x \cdot 9$ for the middle term."
 >}}
 
@@ -145,12 +151,14 @@ $$(2x-3y)^2 = (2x)^2 - 2 \cdot 2x \cdot 3y + (3y)^2 = 4x^2 - 12xy + 9y^2$$
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(2c - d)^2$"
   answer="4c^2 - 4cd + d^2"
+  answerForm="expanded"
   hint="Here $a = 2c$ and $b = d$. Square each term and subtract twice their product $2 \cdot 2c \cdot d$."
 >}}
 
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(4x - 5y)^2$"
   answer="16x^2 - 40xy + 25y^2"
+  answerForm="expanded"
   hint="Square 4x and 5y, then subtract the middle term $2 \cdot 4x \cdot 5y$."
 >}}
 
@@ -164,12 +172,14 @@ $$\left(4u^3 + 1\right)^2 = \left(4u^3\right)^2 + 2 \cdot 4u^3 \cdot 1 + 1^2 = 1
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(2x^2 + 1)^2$"
   answer="4x^4 + 4x^2 + 1"
+  answerForm="expanded"
   hint="Square $2x^2$ to get 4x^4 (multiply exponents), then double the product $2 \cdot 2x^2 \cdot 1$."
 >}}
 
 {{< fillin
   question="Multiply using the Binomial Squares Pattern: $(3y^3 + 2)^2$"
   answer="9y^6 + 12y^3 + 4"
+  answerForm="expanded"
   hint="Square $3y^3$ to get $9y^6$, square 2 to get 4, and the middle term is $2 \cdot 3y^3 \cdot 2$."
 >}}
 
@@ -250,12 +260,14 @@ $$(x-8)(x+8) = x^2 - 8^2 = x^2 - 64$$
 {{< fillin
   question="Multiply using the Product of Conjugates Pattern: $(x - 5)(x + 5)$"
   answer="x^2 - 25"
+  answerForm="expanded"
   hint="Square the first term x and square the last term 5, then write the difference of squares."
 >}}
 
 {{< fillin
   question="Multiply using the Product of Conjugates Pattern: $(w - 3)(w + 3)$"
   answer="w^2 - 9"
+  answerForm="expanded"
   hint="Square w and square 3, then subtract: a difference of squares has no middle term."
 >}}
 
@@ -269,12 +281,14 @@ $$(2x+5)(2x-5) = (2x)^2 - 5^2 = 4x^2 - 25$$
 {{< fillin
   question="Multiply using the Product of Conjugates Pattern: $(6x + 5)(6x - 5)$"
   answer="36x^2 - 25"
+  answerForm="expanded"
   hint="Square 6x to get $36x^2$ and square 5 to get 25."
 >}}
 
 {{< fillin
   question="Multiply using the Product of Conjugates Pattern: $(2x + 7)(2x - 7)$"
   answer="4x^2 - 49"
+  answerForm="expanded"
   hint="Square 2x and square 7, then write the difference of squares."
 >}}
 
@@ -292,12 +306,14 @@ $$(3+5x)(3-5x) = 3^2 - (5x)^2 = 9 - 25x^2$$
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(7 + 4x)(7 - 4x)$"
   answer="49 - 16x^2"
+  answerForm="expanded"
   hint="Square 7 to get 49 and square 4x to get $16x^2$, then write the difference."
 >}}
 
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(9 - 2y)(9 + 2y)$"
   answer="81 - 4y^2"
+  answerForm="expanded"
   hint="Square 9 to get 81 and square 2y to get $4y^2$."
 >}}
 
@@ -312,12 +328,14 @@ $$(5m-9n)(5m+9n) = (5m)^2 - (9n)^2 = 25m^2 - 81n^2$$
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(4p - 7q)(4p + 7q)$"
   answer="16p^2 - 49q^2"
+  answerForm="expanded"
   hint="Square 4p to get $16p^2$ and square 7q to get $49q^2$."
 >}}
 
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(3x - y)(3x + y)$"
   answer="9x^2 - y^2"
+  answerForm="expanded"
   hint="Square 3x to get $9x^2$ and square y to get $y^2$."
 >}}
 
@@ -330,12 +348,14 @@ $$(cd-8)(cd+8) = (cd)^2 - 8^2 = c^2d^2 - 64$$
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(xy - 6)(xy + 6)$"
   answer="x^2 y^2 - 36"
+  answerForm="expanded"
   hint="Square xy to get $x^2 y^2$ and square 6 to get 36."
 >}}
 
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(ab - 9)(ab + 9)$"
   answer="a^2 b^2 - 81"
+  answerForm="expanded"
   hint="Square ab to get $a^2 b^2$ and square 9 to get 81."
 >}}
 
@@ -348,12 +368,14 @@ $$\left(6u^2 - 11v^5\right)\left(6u^2 + 11v^5\right) = \left(6u^2\right)^2 - \le
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(3x^2 - 4y^3)(3x^2 + 4y^3)$"
   answer="9x^4 - 16y^6"
+  answerForm="expanded"
   hint="Square $3x^2$ to get $9x^4$ and square $4y^3$ to get 16y^6 (multiply exponents by 2)."
 >}}
 
 {{< fillin
   question="Find the product using the Product of Conjugates Pattern: $(2m^2 - 5n^3)(2m^2 + 5n^3)$"
   answer="4m^4 - 25n^6"
+  answerForm="expanded"
   hint="Square $2m^2$ to get $4m^4$ and square $5n^3$ to get $25n^6$."
 >}}
 
@@ -413,6 +435,124 @@ $$(5x-6)(6x+5) = 30x^2 + 25x - 36x - 30 = 30x^2 - 11x - 30$$
   hint="This is a binomial square: square 7y, square 1, and add twice their product $2 \cdot 7y \cdot 1$."
 >}}
 
+## Practice
+
+### Square a binomial using the Binomial Squares Pattern
+
+{{< fillin
+  question="Multiply using the Binomial Squares Pattern: $(q + 12)^2$"
+  answer="q^2 + 24q + 144"
+  answerForm="expanded"
+  hint="Square q, square 12, and double their product $2 \cdot q \cdot 12$ for the middle term."
+>}}
+
+{{< fillin
+  question="Multiply using the Binomial Squares Pattern: $(y - 6)^2$"
+  answer="y^2 - 12y + 36"
+  answerForm="expanded"
+  hint="This is a difference, so subtract twice the product $2 \cdot y \cdot 6$ for the middle term."
+>}}
+
+{{< fillin
+  question="Multiply using the Binomial Squares Pattern: $(2y - 3z)^2$"
+  answer="4y^2 - 12yz + 9z^2"
+  answerForm="expanded"
+  hint="Square 2y and 3z, then subtract twice their product $2 \cdot 2y \cdot 3z$ for the middle term."
+>}}
+
+### Multiply conjugates using the Product of Conjugates Pattern
+
+{{< fillin
+  question="Multiply using the Product of Conjugates Pattern: $(c - 5)(c + 5)$"
+  answer="c^2 - 25"
+  answerForm="expanded"
+  hint="Square c and square 5, then write the difference of squares."
+>}}
+
+{{< fillin
+  question="Multiply using the Product of Conjugates Pattern: $(13 - q)(13 + q)$"
+  answer="169 - q^2"
+  answerForm="expanded"
+  hint="Square 13 to get 169 and square q to get $q^2$, then write the difference."
+>}}
+
+{{< fillin
+  question="Multiply using the Product of Conjugates Pattern: $(6m^3 - 4n^5)(6m^3 + 4n^5)$"
+  answer="36m^6 - 16n^{10}"
+  answerForm="expanded"
+  hint="Square $6m^3$ to get $36m^6$ and square $4n^5$ to get $16n^{10}$ (multiply each exponent by 2)."
+>}}
+
+### Recognize and use the appropriate special product pattern
+
+{{< multiplechoice
+  question="Which pattern applies to $(2r + 12)^2$?"
+  answer="Binomial Squares Pattern"
+  hint="Are the two factors identical — one binomial squared — or two different binomials?"
+>}}
+Binomial Squares Pattern
+Product of Conjugates Pattern
+Neither — use FOIL
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Multiply: $(2r + 12)^2$"
+  answer="4r^2 + 48r + 144"
+  answerForm="expanded"
+  hint="This is a binomial square: square 2r, square 12, and double their product $2 \cdot 2r \cdot 12$ for the middle term."
+>}}
+
+{{< multiplechoice
+  question="Which pattern applies to $(3p + 8)(3p - 8)$?"
+  answer="Product of Conjugates Pattern"
+  hint="Compare the first terms and the last terms of the two binomials — are they the same, with one sum and one difference?"
+>}}
+Binomial Squares Pattern
+Product of Conjugates Pattern
+Neither — use FOIL
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Multiply: $(3p + 8)(3p - 8)$"
+  answer="9p^2 - 64"
+  answerForm="expanded"
+  hint="This is a product of conjugates: square 3p, square 8, and write the difference of squares."
+>}}
+
+{{< multiplechoice
+  question="Which pattern applies to $(7a + b)(a - 7b)$?"
+  answer="Neither — use FOIL"
+  hint="Check the first terms and last terms of the two binomials: are they identical, exact conjugates, or neither?"
+>}}
+Binomial Squares Pattern
+Product of Conjugates Pattern
+Neither — use FOIL
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Multiply: $(7a + b)(a - 7b)$"
+  answer="7a^2 - 48ab - 7b^2"
+  answerForm="expanded"
+  hint="Neither pattern fits, so use FOIL: multiply the first, outer, inner, and last terms, then combine like terms."
+>}}
+
+{{< multiplechoice
+  question="Which pattern applies to $(k - 6)^2$?"
+  answer="Binomial Squares Pattern"
+  hint="Is this one binomial multiplied by itself, or two different binomials?"
+>}}
+Binomial Squares Pattern
+Product of Conjugates Pattern
+Neither — use FOIL
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Multiply: $(k - 6)^2$"
+  answer="k^2 - 12k + 36"
+  answerForm="expanded"
+  hint="This is a binomial square: square k, square 6, and subtract twice their product $2 \cdot k \cdot 6$ for the middle term."
+>}}
+
 ## Key terms
 
 **conjugate pair** — two binomials of the form $(a-b)$, $(a+b)$ that have
@@ -424,4 +564,4 @@ Conjugates Pattern** — $(a-b)(a+b) = a^2 - b^2$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 6.4: Special Products](https://openstax.org/books/elementary-algebra-2e/pages/6-4-special-products) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the pattern-derivation walkthroughs and worked-example step tables as typeset display equations and a comparison table; kept the Binomial Squares, Conjugate Pair, and Product of Conjugates patterns as callouts; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 6.4: Special Products](https://openstax.org/books/elementary-algebra-2e/pages/6-4-special-products) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the pattern-derivation walkthroughs and worked-example step tables as typeset display equations and a comparison table; kept the Binomial Squares, Conjugate Pair, and Product of Conjugates patterns as callouts; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

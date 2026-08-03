@@ -72,6 +72,7 @@ binomial $x + 3$ is prime, so the polynomial is factored completely.
 {{< fillin
   question="Factor completely: $3a^4 + 18a^3$."
   answer="3a^3(a + 6)"
+  answerForm="factored"
   answerDisplay="$3a^3(a + 6)$"
   hint="Factor out the greatest common factor. The largest power of $a$ common to both terms is $a^3$, and the numeric GCF of $3$ and $18$ is $3$."
 >}}
@@ -79,6 +80,7 @@ binomial $x + 3$ is prime, so the polynomial is factored completely.
 {{< fillin
   question="Factor completely: $x^3 + 36x$."
   answer="x(x^2 + 36)"
+  answerForm="factored"
   answerDisplay="$x(x^2 + 36)$"
   hint="Factor out the GCF of $x$. What is left is a sum of squares — and sums of squares do not factor, so you are done."
 >}}
@@ -101,6 +103,7 @@ $(3x - 2)(4x - 1) = 12x^2 - 3x - 8x + 2 = 12x^2 - 11x + 2$ ✓.
 {{< fillin
   question="Factor completely: $10a^2 - 17a + 6$."
   answer="(5a - 6)(2a - 1)"
+  answerForm="factored"
   answerDisplay="$(5a - 6)(2a - 1)$"
   hint="There is no GCF. This is a trinomial with $a = 10$ (not a perfect square), so use trial and error or the ac method. The factors of the outer coefficients multiply to $10$ and $6$."
 >}}
@@ -108,6 +111,7 @@ $(3x - 2)(4x - 1) = 12x^2 - 3x - 8x + 2 = 12x^2 - 11x + 2$ ✓.
 {{< fillin
   question="Factor completely: $4p^2 - 16p + 12$."
   answer="4(p - 1)(p - 3)"
+  answerForm="factored"
   answerDisplay="$4(p - 1)(p - 3)$"
   hint="Factor out the GCF of $4$ first. What remains, $p^2 - 4p + 3$, is a trinomial of the form $x^2 + bx + c$ — undo FOIL to find two numbers that multiply to $3$ and add to $-4$."
 >}}
@@ -129,6 +133,7 @@ Check: $g \cdot g^2 + g \cdot 25 = g^3 + 25g$ ✓.
 {{< fillin
   question="Factor completely: $27y^2 + 48$."
   answer="3(9y^2 + 16)"
+  answerForm="factored"
   answerDisplay="$3(9y^2 + 16)$"
   hint="Factor out the GCF of $3$. What is left is a sum of squares, which is prime — so you are finished."
 >}}
@@ -152,6 +157,7 @@ factored completely.
 {{< fillin
   question="Factor completely: $16x^3 - 36x$."
   answer="4x(2x - 3)(2x + 3)"
+  answerForm="factored"
   answerDisplay="$4x(2x - 3)(2x + 3)$"
   hint="Factor out the GCF of $4x$ first. What remains, $4x^2 - 9$, is a difference of squares $(2x)^2 - (3)^2$; write it as a product of conjugates."
 >}}
@@ -175,6 +181,7 @@ Check: $(2a - 3b)^2 = (2a)^2 - 2 \cdot 2a \cdot 3b + (3b)^2 =
 {{< fillin
   question="Factor completely: $4x^2 + 20xy + 25y^2$."
   answer="(2x + 5y)^2"
+  answerForm="factored"
   answerDisplay="$(2x + 5y)^2$"
   hint="The first term $4x^2 = (2x)^2$ and the last term $25y^2 = (5y)^2$ are both perfect squares, and the middle term is $2 \cdot 2x \cdot 5y$ — so this fits the pattern $a^2 + 2ab + b^2 = (a + b)^2$."
 >}}
@@ -197,6 +204,7 @@ $6(y + 2)(y - 5) = 6\left(y^2 - 3y - 10\right) = 6y^2 - 18y - 60$ ✓.
 {{< fillin
   question="Factor completely: $8y^2 + 16y - 24$."
   answer="8(y - 1)(y + 3)"
+  answerForm="factored"
   answerDisplay="$8(y - 1)(y + 3)$"
   hint="Factor out the GCF of $8$ first. What remains, $y^2 + 2y - 3$, is a trinomial with leading coefficient $1$ — find two numbers that multiply to $-3$ and add to $2$."
 >}}
@@ -217,6 +225,7 @@ $$
 {{< fillin
   question="Factor completely: $250m^3 + 432$."
   answer="2(5m + 6)(25m^2 - 30m + 36)"
+  answerForm="factored"
   answerDisplay="$2(5m + 6)(25m^2 - 30m + 36)$"
   hint="Factor out the GCF of $2$ first. What remains, $125m^3 + 216$, is a sum of cubes $(5m)^3 + (6)^3$; apply $a^3 + b^3 = (a + b)(a^2 - ab + b^2)$."
 >}}
@@ -242,6 +251,7 @@ is factored completely.
 {{< fillin
   question="Factor completely: $4a^4 - 64$."
   answer="4(a^2 + 4)(a - 2)(a + 2)"
+  answerForm="factored"
   answerDisplay="$4(a^2 + 4)(a - 2)(a + 2)$"
   hint="Factor out the GCF of $4$ first. What remains, $a^4 - 16$, is a difference of squares; the factor $a^2 - 4$ is a difference of squares again, but $a^2 + 4$ is a sum of squares and stays as is."
 >}}
@@ -267,9 +277,64 @@ $3(x + 2b)(x - a) = 3\left(x^2 - ax + 2bx - 2ab\right)
 {{< fillin
   question="Factor completely: $6x^2 - 12xc + 6bx - 12bc$."
   answer="6(x + b)(x - 2c)"
+  answerForm="factored"
   answerDisplay="$6(x + b)(x - 2c)$"
   hint="Factor out the GCF of $6$ first. What remains has four terms, so use grouping: $x^2 - 2xc + bx - 2bc = x(x - 2c) + b(x - 2c)$."
 >}}
+
+## Practice
+
+### Recognize and use the appropriate method to factor a polynomial completely
+
+{{< fillin
+  question="Factor completely: $4x^2+40x+84$."
+  answer="4(x + 3)(x + 7)"
+  answerForm="factored"
+  answerDisplay="$4(x + 3)(x + 7)$"
+  hint="Factor out the GCF of $4$ first. What remains, $x^2+10x+21$, is a trinomial with leading coefficient $1$ — find two numbers that multiply to $21$ and add to $10$."
+>}}
+
+{{< fillin
+  question="Factor completely: $121r^2 - s^2$."
+  answer="(11r - s)(11r + s)"
+  answerForm="factored"
+  answerDisplay="$(11r - s)(11r + s)$"
+  hint="There is no GCF. This binomial is a difference of squares, $(11r)^2-(s)^2$ — write it as a product of conjugates."
+>}}
+
+{{< fillin
+  question="Factor completely: $m^2+14mn+49n^2$."
+  answer="(m + 7n)^2"
+  answerForm="factored"
+  answerDisplay="$(m + 7n)^2$"
+  hint="There is no GCF. Check whether this trinomial fits the perfect-square pattern: is the last term $49n^2=(7n)^2$ a perfect square, and does the middle term equal $2\cdot m\cdot 7n$?"
+>}}
+
+{{< fillin
+  question="Factor completely: $3x^3 - 81$."
+  answer="3(x - 3)(x^2 + 3x + 9)"
+  answerForm="factored"
+  answerDisplay="$3(x - 3)(x^2 + 3x + 9)$"
+  hint="Factor out the GCF of $3$ first. What remains, $x^3-27$, is a difference of cubes $x^3-(3)^3$ — apply $a^3-b^3=(a-b)(a^2+ab+b^2)$."
+>}}
+
+{{< fillin
+  question="Factor completely: $15pq - 15p + 12q - 12$."
+  answer="3(5p + 4)(q - 1)"
+  answerForm="factored"
+  answerDisplay="$3(5p + 4)(q - 1)$"
+  hint="Factor out the GCF of $3$ first. What remains has four terms, so use grouping: $5pq-5p+4q-4=5p(q-1)+4(q-1)$."
+>}}
+
+{{< multiplechoice
+  question="Factor completely: $4c^2+20cd+81d^2$, or identify that it cannot be factored."
+  hint="Check whether it fits the perfect-square-trinomial pattern first — the middle term would have to be $2\cdot 2c\cdot 9d$. If not, look for two integers that multiply to $4\cdot 81$ and add to $20$."
+  answer="It is prime"
+>}}
+$(2c + 9d)^2$
+$(2c + 3d)(2c + 27d)$
+It is prime
+{{< /multiplechoice >}}
 
 ## Key terms
 
@@ -288,4 +353,4 @@ prime.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 7.5: General Strategy for Factoring Polynomials](https://openstax.org/books/elementary-algebra-2e/pages/7-5-general-strategy-for-factoring-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the "General Strategy for Factoring Polynomials" figure (Figure 7.3) as an accessible nested decision list and merged it with the How-To steps; recast the worked examples as prose with `{lrcl}` step tables and inline checks; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 7.5: General Strategy for Factoring Polynomials](https://openstax.org/books/elementary-algebra-2e/pages/7-5-general-strategy-for-factoring-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the "General Strategy for Factoring Polynomials" figure (Figure 7.3) as an accessible nested decision list and merged it with the How-To steps; recast the worked examples as prose with `{lrcl}` step tables and inline checks; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

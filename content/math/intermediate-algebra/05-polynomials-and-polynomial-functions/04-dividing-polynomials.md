@@ -43,6 +43,7 @@ $$
 {{< fillin
   question="Find the quotient: $-72a^7b^3 \div \left(8a^{12}b^4\right)$."
   answer="-\frac{9}{a^5b}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{9}{a^5b}$"
   hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
@@ -50,6 +51,7 @@ $$
 {{< fillin
   question="Find the quotient: $-63c^8d^3 \div \left(7c^{12}d^2\right)$."
   answer="-\frac{9d}{c^4}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{9d}{c^4}$"
   hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
@@ -70,6 +72,7 @@ $$
 {{< fillin
   question="Find the quotient: $\tfrac{28x^5y^{14}}{49x^9y^{12}}$."
   answer="\frac{4y^2}{7x^4}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{4y^2}{7x^4}$"
   hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
@@ -77,6 +80,7 @@ $$
 {{< fillin
   question="Find the quotient: $\tfrac{30m^5n^{11}}{48m^{10}n^{14}}$."
   answer="\frac{5}{8m^5n^3}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{5}{8m^5n^3}$"
   hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
@@ -114,6 +118,7 @@ $$
 {{< fillin
   question="Find the quotient: $\left(32a^2b-16ab^2\right)\div(-8ab)$."
   answer="-4a+2b"
+  answerForm="expanded"
   answerDisplay="$-4a+2b$"
   hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
 >}}
@@ -121,6 +126,7 @@ $$
 {{< fillin
   question="Find the quotient: $\left(-48a^8b^4-36a^6b^5\right)\div\left(-6a^3b^3\right)$."
   answer="8a^5b+6a^3b^2"
+  answerForm="expanded"
   answerDisplay="$8a^5b+6a^3b^2$"
   hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
@@ -169,6 +175,7 @@ quotient is $x+4$.
 {{< fillin
   question="Find the quotient: $\left(y^2+10y+21\right)\div(y+3)$."
   answer="y+7"
+  answerForm="expanded"
   answerDisplay="$y+7$"
   hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
 >}}
@@ -176,6 +183,7 @@ quotient is $x+4$.
 {{< fillin
   question="Find the quotient: $\left(m^2+9m+20\right)\div(m+4)$."
   answer="m+5"
+  answerForm="expanded"
   answerDisplay="$m+5$"
   hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
 >}}
@@ -217,6 +225,7 @@ $x^4-x^2+5x-6$.
 {{< fillin
   question="Find the quotient: $\left(x^4-7x^2+7x+6\right)\div(x+3)$."
   answer="x^3-3x^2+2x+1+\frac{3}{x+3}"
+  answerForm="expanded"
   answerDisplay="$x^3-3x^2+2x+1+\tfrac{3}{x+3}$"
   hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
 >}}
@@ -224,6 +233,7 @@ $x^4-x^2+5x-6$.
 {{< fillin
   question="Find the quotient: $\left(x^4-11x^2-7x-6\right)\div(x+3)$."
   answer="x^3-3x^2-2x-1-\frac{3}{x+3}"
+  answerForm="expanded"
   answerDisplay="$x^3-3x^2-2x-1-\tfrac{3}{x+3}$"
   hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
 >}}
@@ -254,6 +264,7 @@ quotient is $4a^2-6a+9$.
 {{< fillin
   question="Find the quotient: $\left(x^3-64\right)\div(x-4)$."
   answer="x^2+4x+16"
+  answerForm="expanded"
   answerDisplay="$x^2+4x+16$"
   hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
 >}}
@@ -261,6 +272,7 @@ quotient is $4a^2-6a+9$.
 {{< fillin
   question="Find the quotient: $\left(125x^3-8\right)\div(5x-2)$."
   answer="25x^2+10x+4"
+  answerForm="expanded"
   answerDisplay="$25x^2+10x+4$"
   hint="Factor the dividend first; if the divisor is a factor, cancel it and simplify the quotient."
 >}}

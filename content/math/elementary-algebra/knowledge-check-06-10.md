@@ -27,6 +27,7 @@ aliases:
 {{< fillin
   question="Simplify: $(12a^2 - 7a + 4) + (3a^2 + 8a - 10)$."
   answer="15a^2 + a - 6"
+  answerForm="no-like-terms"
 >}}
 
 {{< fillin
@@ -40,12 +41,14 @@ aliases:
 {{< fillin
   question="Simplify: $\left(-\tfrac{2}{5}\right)^3$."
   answer="-\frac{8}{125}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{8}{125}$"
 >}}
 
 {{< fillin
   question="Simplify: $(4a^3b^5)^2$."
   answer="16a^6b^{10}"
+  answerForm="single-term"
 >}}
 
 ### 6.3 Multiply Polynomials
@@ -53,16 +56,19 @@ aliases:
 {{< fillin
   question="Simplify: $3k(k^2 - 7k + 13)$."
   answer="3k^3 - 21k^2 + 39k"
+  answerForm="expanded"
 >}}
 
 {{< fillin
   question="Simplify: $(v - 9)(9v - 5)$."
   answer="9v^2 - 86v + 45"
+  answerForm="expanded"
 >}}
 
 {{< fillin
   question="Simplify: $(n - 6)(n^2 - 5n + 4)$."
   answer="n^3 - 11n^2 + 34n - 24"
+  answerForm="expanded"
 >}}
 
 ### 6.4 Special Products
@@ -70,6 +76,7 @@ aliases:
 {{< fillin
   question="Simplify: $(7p - 5)(7p + 5)$."
   answer="49p^2 - 25"
+  answerForm="expanded"
 >}}
 
 {{< fillin
@@ -82,12 +89,14 @@ aliases:
 {{< fillin
   question="Simplify: $\tfrac{3^8}{3^{10}}$."
   answer="\frac{1}{9}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{9}$"
 >}}
 
 {{< fillin
   question="Simplify: $(87x^{15}y^3z^{22})^0$."
   answer="1"
+  answerForm="decimal"
 >}}
 
 ### 6.6 Divide Polynomials
@@ -95,12 +104,14 @@ aliases:
 {{< fillin
   question="Simplify: $\tfrac{12x^2 + 42x - 6}{2x}$."
   answer="6x + 21 - \frac{3}{x}"
+  answerForm="expanded"
   answerDisplay="$6x + 21 - \tfrac{3}{x}$"
 >}}
 
 {{< fillin
   question="Simplify: $(64x^3 - 1) \div (4x - 1)$."
   answer="16x^2 + 4x + 1"
+  answerForm="polynomial"
 >}}
 
 ### 6.7 Integer Exponents and Scientific Notation
@@ -108,12 +119,14 @@ aliases:
 {{< fillin
   question="Simplify: $5^{-2}$."
   answer="\frac{1}{25}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{25}$"
 >}}
 
 {{< fillin
   question="Simplify: $q^{-4} \cdot q^{-5}$."
   answer="\frac{1}{q^9}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{q^9}$"
 >}}
 
@@ -127,6 +140,7 @@ aliases:
 {{< fillin
   question="Simplify, and write your answer in decimal form: $(3.4 \times 10^9)(2.2 \times 10^{-5})$."
   answer="74800"
+  answerForm="decimal"
   answerDisplay="74,800"
 >}}
 
@@ -149,12 +163,14 @@ aliases:
 {{< fillin
   question="Factor completely: $xy - 8y + 7x - 56$."
   answer="(x-8)(y+7)"
+  answerForm="factored"
   answerDisplay="$(x - 8)(y + 7)$"
 >}}
 
 {{< fillin
   question="Factor completely: $ab - 3b - 2a + 6$."
   answer="(a-3)(b-2)"
+  answerForm="factored"
   answerDisplay="$(a - 3)(b - 2)$"
 >}}
 
@@ -163,12 +179,14 @@ aliases:
 {{< fillin
   question="Factor completely: $x^2 + 13x + 42$."
   answer="(x+7)(x+6)"
+  answerForm="factored"
   answerDisplay="$(x + 7)(x + 6)$"
 >}}
 
 {{< fillin
   question="Factor the trinomial: $u^2 + 17u + 72$."
   answer="(u+8)(u+9)"
+  answerForm="factored"
   answerDisplay="$(u + 8)(u + 9)$"
 >}}
 
@@ -177,12 +195,14 @@ aliases:
 {{< fillin
   question="Factor completely: $3a^3 - 6a^2 - 72a$."
   answer="3a(a-6)(a+4)"
+  answerForm="factored"
   answerDisplay="$3a(a - 6)(a + 4)$"
 >}}
 
 {{< fillin
   question="Factor completely: $8m^2 + 22m + 5$."
   answer="(4m+1)(2m+5)"
+  answerForm="factored"
   answerDisplay="$(4m + 1)(2m + 5)$"
 >}}
 
@@ -191,18 +211,21 @@ aliases:
 {{< fillin
   question="Factor completely: $9s^2 - 12s + 4$."
   answer="(3s-2)^2"
+  answerForm="factored"
   answerDisplay="$(3s - 2)^2$"
 >}}
 
 {{< fillin
   question="Factor completely: $100 - a^2$."
   answer="(10-a)(10+a)"
+  answerForm="factored"
   answerDisplay="$(10 - a)(10 + a)$"
 >}}
 
 {{< fillin
   question="Factor: $a^3 - 125$."
   answer="(a-5)(a^2+5a+25)"
+  answerForm="factored"
   answerDisplay="$(a - 5)(a^2 + 5a + 25)$"
 >}}
 
@@ -211,12 +234,14 @@ aliases:
 {{< fillin
   question="Factor completely: $3x^2 - 75y^2$."
   answer="3(x+5y)(x-5y)"
+  answerForm="factored"
   answerDisplay="$3(x + 5y)(x - 5y)$"
 >}}
 
 {{< fillin
   question="Factor completely: $n^4 - 81$."
   answer="(n^2+9)(n+3)(n-3)"
+  answerForm="factored"
   answerDisplay="$(n^2 + 9)(n + 3)(n - 3)$"
 >}}
 
@@ -243,6 +268,7 @@ aliases:
 {{< fillin
   question="Simplify: $\tfrac{3a^2b}{6ab^2}$."
   answer="\frac{a}{2b}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{a}{2b}$"
 >}}
 
@@ -257,12 +283,14 @@ aliases:
 {{< fillin
   question="Multiply: $\tfrac{4x}{x+2}\cdot\tfrac{x^2+5x+6}{12x^2}$."
   answer="\frac{x+3}{3x}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{x+3}{3x}$"
 >}}
 
 {{< fillin
   question="Divide: $\tfrac{t^2-4t-12}{t^2+8t+12}\div\tfrac{t^2-36}{6t}$."
   answer="\frac{6t}{(t+6)^2}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{6t}{(t+6)^2}$"
 >}}
 
@@ -271,12 +299,14 @@ aliases:
 {{< fillin
   question="Add: $\tfrac{p^2+10p}{p+5}+\tfrac{25}{p+5}$."
   answer="p+5"
+  answerForm="polynomial"
   answerDisplay="$p+5$"
 >}}
 
 {{< fillin
   question="Subtract: $\tfrac{d^2}{d+4}-\tfrac{3d+28}{d+4}$."
   answer="d-7"
+  answerForm="polynomial"
   answerDisplay="$d-7$"
 >}}
 
@@ -285,11 +315,13 @@ aliases:
 {{< fillin
   question="Add: $\tfrac{4}{pq}+\tfrac{5}{p}$."
   answer="\frac{4+5q}{pq}"
+  answerForm="single-fraction"
 >}}
 
 {{< fillin
   question="Add: $\tfrac{2}{c-2}+\tfrac{9}{c+3}$."
   answer="\frac{11c-12}{(c-2)(c+3)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{11c-12}{(c-2)(c+3)}$"
 >}}
 
@@ -298,6 +330,7 @@ aliases:
 {{< fillin
   question="Simplify: $\cfrac{\frac{2}{3}+\frac{3}{5}}{\frac{2}{5}}$."
   answer="\frac{19}{6}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{19}{6}$"
 >}}
 
@@ -375,11 +408,13 @@ aliases:
 {{< fillin
   question="Simplify: $\sqrt{144}$."
   answer="12"
+  answerForm="simplified-radical"
 >}}
 
 {{< fillin
   question="Simplify: $\sqrt{64 + 225}$."
   answer="17"
+  answerForm="simplified-radical"
 >}}
 
 ### 9.2 Simplify Square Roots
@@ -387,12 +422,14 @@ aliases:
 {{< fillin
   question="Simplify: $\sqrt{169m^4n^2}$."
   answer="13m^2|n|"
+  answerForm="simplified-radical"
   answerDisplay="$13m^2|n|$"
 >}}
 
 {{< fillin
   question="Simplify: $\sqrt{98}$."
   answer="7\sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$7\sqrt{2}$"
 >}}
 
@@ -401,12 +438,14 @@ aliases:
 {{< fillin
   question="Simplify: $3\sqrt{13} + 5\sqrt{2} + \sqrt{13}$."
   answer="4\sqrt{13}+5\sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$4\sqrt{13} + 5\sqrt{2}$"
 >}}
 
 {{< fillin
   question="Simplify: $5\sqrt{5} + 7\sqrt{5}$."
   answer="12\sqrt{5}"
+  answerForm="simplified-radical"
   answerDisplay="$12\sqrt{5}$"
 >}}
 
@@ -415,12 +454,14 @@ aliases:
 {{< fillin
   question="Simplify: $(3\sqrt{6y})(2\sqrt{50y^3})$."
   answer="60y^2\sqrt{3}"
+  answerForm="simplified-radical"
   answerDisplay="$60y^2\sqrt{3}$"
 >}}
 
 {{< fillin
   question="Simplify: $(1 - 2\sqrt{q})^2$."
   answer="1-4\sqrt{q}+4q"
+  answerForm="distributed"
   answerDisplay="$1 - 4\sqrt{q} + 4q$"
 >}}
 
@@ -429,12 +470,14 @@ aliases:
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{14y^3}{7y}}$."
   answer="|y|\sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$|y|\sqrt{2}$"
 >}}
 
 {{< fillin
   question="Rationalize the denominator: $\tfrac{3}{2\sqrt{6}}$."
   answer="\frac{\sqrt{6}}{4}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{6}}{4}$"
 >}}
 
@@ -457,12 +500,14 @@ aliases:
 {{< fillin
   question="Simplify $\sqrt[4]{81x^{12}}$."
   answer="3|x^3|"
+  answerForm="simplified-radical"
   answerDisplay="$3|x^3|$"
 >}}
 
 {{< fillin
   question="Simplify: $\sqrt[4]{512} - 2\sqrt[4]{32}$."
   answer="0"
+  answerForm="simplified-radical"
 >}}
 
 ### 9.8 Rational Exponents
@@ -470,11 +515,13 @@ aliases:
 {{< fillin
   question="Simplify: $49^{\tfrac{3}{2}}$."
   answer="343"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{w^{\tfrac{3}{4}}}{w^{\tfrac{7}{4}}}$."
   answer="\frac{1}{w}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{w}$"
 >}}
 

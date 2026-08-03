@@ -144,12 +144,14 @@ $$
 {{< fillin
   question="Simplify: $36^{1/2}$."
   answer="6"
+  answerForm="decimal"
   hint="Rewrite as a square root: $36^{1/2} = \sqrt{36}$."
 >}}
 
 {{< fillin
   question="Simplify: $8^{1/3}$."
   answer="2"
+  answerForm="decimal"
   hint="Rewrite as a cube root and look for a perfect cube: $8 = 2^3$."
 >}}
 
@@ -169,6 +171,7 @@ $$
 {{< fillin
   question="Simplify: $(-125)^{1/3}$."
   answer="-5"
+  answerForm="decimal"
   hint="$-125 = (-5)^3$, so take the cube root of a perfect cube."
 >}}
 
@@ -176,6 +179,7 @@ $$
   question="Simplify: $(125)^{-1/3}$."
   answer="\frac{1}{5}"
   answerDisplay="$\frac{1}{5}$"
+  answerForm="fraction lowest-terms"
   hint="Rewrite with a positive exponent using $a^{-n} = \tfrac{1}{a^n}$, then take the cube root of $125$."
 >}}
 
@@ -192,6 +196,7 @@ $$
 {{< fillin
   question="Simplify: $-16^{1/2}$."
   answer="-4"
+  answerForm="decimal"
   hint="The exponent applies only to the $16$; the negative sign stays out front. $\sqrt{16} = 4$."
 >}}
 
@@ -199,6 +204,7 @@ $$
   question="Simplify: $(64)^{-1/2}$."
   answer="\frac{1}{8}"
   answerDisplay="$\frac{1}{8}$"
+  answerForm="fraction lowest-terms"
   hint="Rewrite with a positive exponent using $a^{-n} = \tfrac{1}{a^n}$, then take the square root of $64$."
 >}}
 
@@ -268,12 +274,14 @@ $$
 {{< fillin
   question="Simplify: $4^{3/2}$."
   answer="8"
+  answerForm="decimal"
   hint="Take the root first: $\left(\sqrt{4}\right)^3 = 2^3$."
 >}}
 
 {{< fillin
   question="Simplify: $27^{2/3}$."
   answer="9"
+  answerForm="decimal"
   hint="Take the cube root first: $\left(\sqrt[3]{27}\right)^2 = 3^2$."
 >}}
 
@@ -297,6 +305,7 @@ $$
   question="Simplify: $16^{-3/4}$."
   answer="\frac{1}{8}"
   answerDisplay="$\frac{1}{8}$"
+  answerForm="fraction lowest-terms"
   hint="Rewrite with a positive exponent, then take the fourth root first: $\tfrac{1}{\left(\sqrt[4]{16}\right)^3}$."
 >}}
 
@@ -313,6 +322,7 @@ $$
 {{< fillin
   question="Simplify: $-81^{3/2}$."
   answer="-729"
+  answerForm="decimal"
   hint="The exponent applies only to $81$. Take the root first: $-\left(\sqrt{81}\right)^3 = -(9)^3$."
 >}}
 
@@ -352,6 +362,7 @@ $$
 {{< fillin
   question="Simplify: $y^{1/3} \cdot y^{8/3}$. Write the answer with a rational or whole exponent."
   answer="y^3"
+  answerForm="polynomial"
   answerDisplay="$y^3$"
   hint="The bases match, so add the exponents: $\tfrac{1}{3} + \tfrac{8}{3}$."
 >}}
@@ -374,6 +385,7 @@ $$
 {{< fillin
   question="Simplify: $\left(p^{10}\right)^{1/5}$. Write the answer with a whole-number exponent."
   answer="p^2"
+  answerForm="polynomial"
   answerDisplay="$p^2$"
   hint="Multiply the exponents: $10 \cdot \tfrac{1}{5}$."
 >}}
@@ -397,6 +409,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{u^{5/4}}{u^{1/4}}$. Write the answer with a rational or whole exponent."
   answer="u"
+  answerForm="polynomial"
   hint="Subtract the exponents: $\tfrac{5}{4} - \tfrac{1}{4} = \tfrac{4}{4} = 1$."
 >}}
 
@@ -418,6 +431,7 @@ $$
 {{< fillin
   question="Simplify: $\left(32x^{1/3}\right)^{3/5}$."
   answer="8x^{1/5}"
+  answerForm="distributed"
   answerDisplay="$8x^{1/5}$"
   hint="Apply the exponent to each factor. $32 = 2^5$, so $(2^5)^{3/5} = 2^3$; and $\left(x^{1/3}\right)^{3/5} = x^{1/5}$."
 >}}
@@ -437,6 +451,7 @@ $$
 {{< fillin
   question="Simplify: $\left(m^3 n^9\right)^{1/3}$."
   answer="mn^3"
+  answerForm="polynomial"
   answerDisplay="$mn^3$"
   hint="Apply the exponent to each factor: $\left(m^3\right)^{1/3}$ and $\left(n^9\right)^{1/3}$."
 >}}
@@ -459,6 +474,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{m^{2/3} \cdot m^{-1/3}}{m^{-5/3}}$. Write the answer with a whole-number exponent."
   answer="m^2"
+  answerForm="polynomial"
   answerDisplay="$m^2$"
   hint="Add the exponents in the numerator $\left(\tfrac{2}{3} - \tfrac{1}{3} = \tfrac{1}{3}\right)$, then subtract the denominator's exponent: $\tfrac{1}{3} - \left(-\tfrac{5}{3}\right)$."
 >}}

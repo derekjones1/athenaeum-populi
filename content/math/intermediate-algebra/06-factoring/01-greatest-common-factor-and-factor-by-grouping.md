@@ -129,6 +129,7 @@ checks.
 {{< fillin
   question="Factor $9xy^2+6x^2y^2+21y^3$ by taking out the greatest common factor."
   answer="3y^2(3x+2x^2+7y)"
+  answerForm="factored"
   answerDisplay="$3y^2(3x+2x^2+7y)$"
   hint="Find the coefficient GCF and the smallest power of each variable shared by all three terms."
 >}}
@@ -136,6 +137,7 @@ checks.
 {{< fillin
   question="Factor $3p^3-6p^2q+9pq^3$ by taking out the greatest common factor."
   answer="3p(p^2-2pq+3q^3)"
+  answerForm="factored"
   hint="All three coefficients share 3, and each term contains at least one factor of $p$."
 >}}
 
@@ -172,6 +174,7 @@ $$
 {{< fillin
   question="Factor $2x^3+12x^2$ by taking out the greatest common factor."
   answer="2x^2(x+6)"
+  answerForm="factored"
   answerDisplay="$2x^2(x+6)$"
   hint="Find the largest coefficient and variable factors shared by both terms."
 >}}
@@ -179,6 +182,7 @@ $$
 {{< fillin
   question="Factor $6y^3-15y^2$ by taking out the greatest common factor."
   answer="3y^2(2y-5)"
+  answerForm="factored"
   answerDisplay="$3y^2(2y-5)$"
   hint="The coefficient GCF is 3, and both terms contain $y^2$."
 >}}
@@ -202,12 +206,14 @@ polynomial.
 {{< fillin
   question="Factor $15x^3y-3x^2y^2+6xy^3$ by taking out the greatest common factor."
   answer="3xy(5x^2-xy+2y^2)"
+  answerForm="factored"
   hint="Every term shares 3, one factor of $x$, and one factor of $y$."
 >}}
 
 {{< fillin
   question="Factor $8a^3b+2a^2b^2-6ab^3$ by taking out the greatest common factor."
   answer="2ab(4a^2+ab-3b^2)"
+  answerForm="factored"
   hint="Every term shares 2, one factor of $a$, and one factor of $b$."
 >}}
 
@@ -231,6 +237,7 @@ $$
 {{< fillin
   question="Factor $-4b^3+16b^2-8b$ by taking out a negative greatest common factor."
   answer="-4b(b^2-4b+2)"
+  answerForm="factored"
   answerDisplay="$-4b(b^2-4b+2)$"
   hint="Since the leading coefficient is negative, include the negative sign in the GCF."
 >}}
@@ -238,6 +245,7 @@ $$
 {{< fillin
   question="Factor $-7a^3+21a^2-14a$ by taking out a negative greatest common factor."
   answer="-7a(a^2-3a+2)"
+  answerForm="factored"
   answerDisplay="$-7a(a^2-3a+2)$"
   hint="Take out $-7a$, then determine the three terms that remain."
 >}}
@@ -256,6 +264,7 @@ Check by multiplying the factors.
 {{< fillin
   question="Factor $4m(m+3)-7(m+3)$ by taking out the common binomial factor."
   answer="(m+3)(4m-7)"
+  answerForm="factored"
   answerDisplay="$(m+3)(4m-7)$"
   hint="Treat the repeated binomial $(m+3)$ as one common factor."
 >}}
@@ -263,6 +272,7 @@ Check by multiplying the factors.
 {{< fillin
   question="Factor $8n(n-4)+5(n-4)$ by taking out the common binomial factor."
   answer="(n-4)(8n+5)"
+  answerForm="factored"
   answerDisplay="$(n-4)(8n+5)$"
   hint="Treat the repeated binomial $(n-4)$ as one common factor."
 >}}
@@ -294,6 +304,7 @@ its middle terms reordered.
 {{< fillin
   question="Factor by grouping: $xy+8y+3x+24$."
   answer="(x+8)(y+3)"
+  answerForm="factored"
   answerDisplay="$(x+8)(y+3)$"
   hint="Group the first two terms and the last two terms, then factor each group."
 >}}
@@ -301,6 +312,7 @@ its middle terms reordered.
 {{< fillin
   question="Factor by grouping: $ab+7b+8a+56$."
   answer="(a+7)(b+8)"
+  answerForm="factored"
   answerDisplay="$(a+7)(b+8)$"
   hint="Group the first two terms and the last two terms. Both groups should reveal the same binomial factor."
 >}}
@@ -347,6 +359,7 @@ Check both results by multiplying their factors.
 {{< fillin
   question="Factor by grouping: $x^2+2x-5x-10$."
   answer="(x-5)(x+2)"
+  answerForm="factored"
   answerDisplay="$(x-5)(x+2)$"
   hint="Group the first two terms and the last two terms. Factor a negative number from the second group."
 >}}
@@ -354,6 +367,7 @@ Check both results by multiplying their factors.
 {{< fillin
   question="Factor by grouping: $20x^2-16x-15x+12$."
   answer="(5x-4)(4x-3)"
+  answerForm="factored"
   answerDisplay="$(5x-4)(4x-3)$"
   hint="Group the first pair and the second pair; their common binomial factor is $5x-4$."
 >}}
@@ -361,6 +375,7 @@ Check both results by multiplying their factors.
 {{< fillin
   question="Factor by grouping: $y^2+4y-7y-28$."
   answer="(y+4)(y-7)"
+  answerForm="factored"
   answerDisplay="$(y+4)(y-7)$"
   hint="Group the first two terms and the last two terms. Factor a negative number from the second group."
 >}}

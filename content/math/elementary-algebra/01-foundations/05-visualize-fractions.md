@@ -298,12 +298,14 @@ simplified.
 {{< fillin
   question="Multiply: $-\tfrac{10}{28} \cdot \tfrac{8}{15}$."
   answer="-\frac{4}{21}"
+  answerForm="fraction lowest-terms"
   hint="Determine the sign first (different signs give a negative product), then multiply numerators and denominators and simplify."
 >}}
 
 {{< fillin
   question="Multiply: $-\tfrac{9}{20} \cdot \tfrac{5}{12}$."
   answer="-\frac{3}{16}"
+  answerForm="fraction lowest-terms"
   hint="Determine the sign first (different signs give a negative product), then multiply numerators and denominators and simplify."
 >}}
 
@@ -321,12 +323,14 @@ $\tfrac{12 \cdot 4 \cdot 5x}{5 \cdot 1}$. Simplify: $48x$.
 {{< fillin
   question="Multiply: $\tfrac{11}{3}(-9a)$. Use $a$ in your answer."
   answer="-33a"
+  answerForm="single-term"
   hint="Write $-9a$ as a fraction over $1$, multiply, then divide out the common factor of $3$."
 >}}
 
 {{< fillin
   question="Multiply: $\tfrac{13}{7}(-14b)$. Use $b$ in your answer."
   answer="-26b"
+  answerForm="single-term"
   hint="Write $-14b$ as a fraction over $1$, multiply, then divide out the common factor of $7$."
 >}}
 
@@ -378,12 +382,14 @@ $-\tfrac{2}{3} \cdot \tfrac{5}{n}$. Multiply: $-\tfrac{10}{3n}$.
 {{< fillin
   question="Divide: $-\tfrac{3}{5} \div \tfrac{p}{7}$. Use $p$ in your answer."
   answer="-\frac{21}{5p}"
+  answerForm="single-fraction"
   hint="Multiply the first fraction by the reciprocal of the second, then simplify."
 >}}
 
 {{< fillin
   question="Divide: $-\tfrac{5}{8} \div \tfrac{q}{3}$. Use $q$ in your answer."
   answer="-\frac{15}{8q}"
+  answerForm="single-fraction"
   hint="Multiply the first fraction by the reciprocal of the second, then simplify."
 >}}
 
@@ -398,12 +404,14 @@ Remove common factors: $\tfrac{3}{2 \cdot 2}$. Simplify: $\tfrac{3}{4}$.
 {{< fillin
   question="Find the quotient: $-\tfrac{7}{27} \div \left(-\tfrac{35}{36}\right)$."
   answer="\frac{4}{15}"
+  answerForm="fraction lowest-terms"
   hint="Multiply the first fraction by the reciprocal of the second; the two negatives make the quotient positive."
 >}}
 
 {{< fillin
   question="Find the quotient: $-\tfrac{5}{14} \div \left(-\tfrac{15}{28}\right)$."
   answer="\frac{2}{3}"
+  answerForm="fraction lowest-terms"
   hint="Multiply the first fraction by the reciprocal of the second; the two negatives make the quotient positive."
 >}}
 
@@ -519,12 +527,14 @@ $$\frac{4 - 2(3)}{2^2 + 2} = \frac{4-6}{4+2} = \frac{-2}{6} = -\frac{1}{3}.$$
 {{< fillin
   question="Simplify: $\tfrac{6 - 3(5)}{3^2 + 3}$."
   answer="-\frac{3}{4}"
+  answerForm="fraction lowest-terms"
   hint="Simplify the numerator and the denominator separately using the order of operations, then divide."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{4 - 4(6)}{3^2 + 3}$."
   answer="-\frac{5}{3}"
+  answerForm="fraction lowest-terms"
   hint="Simplify the numerator and the denominator separately using the order of operations, then divide."
 >}}
 
@@ -556,12 +566,14 @@ $$\frac{4(-3) + 6(-2)}{-3(2) - 2} = \frac{-12 + (-12)}{-6-2} = \frac{-24}{-8} = 
 {{< fillin
   question="Simplify: $\tfrac{8(-2) + 4(-3)}{-5(2) + 3}$."
   answer="4"
+  answerForm="decimal"
   hint="Simplify the numerator and denominator with the order of operations first — watch the signs — then divide."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{7(-1) + 9(-3)}{-5(3) - 2}$."
   answer="2"
+  answerForm="decimal"
   hint="Simplify the numerator and denominator with the order of operations first — watch the signs — then divide."
 >}}
 
@@ -634,6 +646,7 @@ $\tfrac{m-n}{p}$.
 {{< fillin
   question="Multiply: $\tfrac{3}{4} \cdot \tfrac{9}{10}$."
   answer="\frac{27}{40}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{27}{40}$"
   hint="Multiply the numerators together and the denominators together, then simplify if possible."
 >}}
@@ -641,6 +654,7 @@ $\tfrac{m-n}{p}$.
 {{< fillin
   question="Multiply: $-\tfrac{2}{3}\left(-\tfrac{3}{8}\right)$."
   answer="\frac{1}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{4}$"
   hint="The two negative factors give a positive product; multiply numerators and denominators, then simplify."
 >}}
@@ -650,6 +664,7 @@ $\tfrac{m-n}{p}$.
 {{< fillin
   question="Divide: $\tfrac{3}{4} \div \tfrac{2}{3}$."
   answer="\frac{9}{8}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{9}{8}$"
   hint="Multiply the first fraction by the reciprocal of the second, then simplify."
 >}}
@@ -657,6 +672,7 @@ $\tfrac{m-n}{p}$.
 {{< fillin
   question="Divide: $-\tfrac{7}{9} \div \left(-\tfrac{7}{4}\right)$."
   answer="\frac{4}{9}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{4}{9}$"
   hint="Multiply the first fraction by the reciprocal of the second; the two negatives make the quotient positive."
 >}}
@@ -666,6 +682,7 @@ $\tfrac{m-n}{p}$.
 {{< fillin
   question="Simplify: $\tfrac{22+3}{10}$."
   answer="\frac{5}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{2}$"
   hint="Simplify the numerator first, then divide by the denominator."
 >}}
@@ -673,6 +690,7 @@ $\tfrac{m-n}{p}$.
 {{< fillin
   question="Simplify: $\tfrac{48}{24-15}$."
   answer="\frac{16}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{16}{3}$"
   hint="Simplify the denominator first, then divide."
 >}}

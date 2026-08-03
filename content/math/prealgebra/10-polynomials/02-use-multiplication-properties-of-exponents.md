@@ -53,12 +53,14 @@ let's simplify a few expressions involving only numbers.
 {{< fillin
   question="Simplify: $4^3$."
   answer="64"
+  answerForm="decimal"
   hint="Multiply three factors of $4$ together."
 >}}
 
 {{< fillin
   question="Simplify: $11^1$."
   answer="11"
+  answerForm="decimal"
   hint="Raising any number to the first power leaves it unchanged."
 >}}
 
@@ -71,6 +73,7 @@ let's simplify a few expressions involving only numbers.
 {{< fillin
   question="Simplify: $(5/8)^2$."
   answer="\frac{25}{64}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{25}{64}$"
   hint="Multiply the fraction by itself: numerator times numerator, denominator times denominator."
 >}}
@@ -78,6 +81,7 @@ let's simplify a few expressions involving only numbers.
 {{< fillin
   question="Simplify: $(0.67)^2$."
   answer="0.4489"
+  answerForm="decimal"
   hint="Multiply $0.67$ by itself."
 >}}
 
@@ -96,6 +100,7 @@ then find the opposite.
 {{< fillin
   question="Simplify: $(2/5)^3$."
   answer="\frac{8}{125}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{8}{125}$"
   hint="Multiply the fraction by itself three times."
 >}}
@@ -103,12 +108,14 @@ then find the opposite.
 {{< fillin
   question="Simplify: $(0.127)^2$."
   answer="0.016129"
+  answerForm="decimal"
   hint="Multiply $0.127$ by itself."
 >}}
 
 {{< fillin
   question="Simplify: $(-2)^4$."
   answer="16"
+  answerForm="decimal"
   hint="The parentheses mean the negative sign is part of the base, so all four factors are $-2$."
 >}}
 
@@ -154,12 +161,14 @@ $$x^5 \cdot x^7 = x^{5+7} = x^{12}$$
 {{< fillin
   question="Simplify: $x^7 \cdot x^8$."
   answer="x^{15}"
+  answerForm="single-term"
   hint="The bases match, so add the exponents."
 >}}
 
 {{< fillin
   question="Simplify: $x^5 \cdot x^{11}$."
   answer="x^{16}"
+  answerForm="single-term"
   hint="The bases match, so add the exponents."
 >}}
 
@@ -172,12 +181,14 @@ $$b^4 \cdot b^1 = b^{4+1} = b^5$$
 {{< fillin
   question="Simplify: $p^9 \cdot p$."
   answer="p^{10}"
+  answerForm="single-term"
   hint="A base written without an exponent has an understood exponent of $1$."
 >}}
 
 {{< fillin
   question="Simplify: $m \cdot m^7$."
   answer="m^8"
+  answerForm="single-term"
   hint="A base written without an exponent has an understood exponent of $1$."
 >}}
 
@@ -190,12 +201,14 @@ $$2^7 \cdot 2^9 = 2^{7+9} = 2^{16}$$
 {{< fillin
   question="Simplify: $6 \cdot 6^9$."
   answer="6^{10}"
+  answerForm="single-power"
   hint="$6$ is the same as $6^1$. Add the exponents since the base is the same."
 >}}
 
 {{< fillin
   question="Simplify: $9^6 \cdot 9^9$."
   answer="9^{15}"
+  answerForm="single-power"
   hint="The bases match, so add the exponents."
 >}}
 
@@ -208,12 +221,14 @@ $$y^{17} \cdot y^{23} = y^{17+23} = y^{40}$$
 {{< fillin
   question="Simplify: $y^{24} \cdot y^{19}$."
   answer="y^{43}"
+  answerForm="single-term"
   hint="The bases match, so add the exponents."
 >}}
 
 {{< fillin
   question="Simplify: $z^{15} \cdot z^{24}$."
   answer="z^{39}"
+  answerForm="single-term"
   hint="The bases match, so add the exponents."
 >}}
 
@@ -228,12 +243,14 @@ $$x^3 \cdot x^4 \cdot x^2 = x^{3+4+2} = x^9$$
 {{< fillin
   question="Simplify: $x^7 \cdot x^5 \cdot x^9$."
   answer="x^{21}"
+  answerForm="single-term"
   hint="All three bases are the same, so add all three exponents together."
 >}}
 
 {{< fillin
   question="Simplify: $y^3 \cdot y^8 \cdot y^4$."
   answer="y^{15}"
+  answerForm="single-term"
   hint="All three bases are the same, so add all three exponents together."
 >}}
 
@@ -272,18 +289,21 @@ $$(5^2)^3 \overset{?}{=} 5^{2 \cdot 3} \qquad\qquad (25)^3 \overset{?}{=} 5^6 \q
 {{< fillin
   question="Simplify: $(x^7)^4$."
   answer="x^{28}"
+  answerForm="single-power"
   hint="To raise a power to a power, multiply the exponents."
 >}}
 
 {{< fillin
   question="Simplify: $(7^4)^8$."
   answer="7^{32}"
+  answerForm="single-power"
   hint="To raise a power to a power, multiply the exponents."
 >}}
 
 {{< fillin
   question="Simplify: $(x^6)^9$."
   answer="x^{54}"
+  answerForm="single-power"
   hint="To raise a power to a power, multiply the exponents."
 >}}
 
@@ -321,6 +341,7 @@ $$(-11x)^2 = (-11)^2 x^2 = 121x^2$$
 {{< fillin
   question="Simplify: $(-14x)^2$."
   answer="196x^2"
+  answerForm="single-term"
   answerDisplay="$196x^2$"
   hint="Raise $-14$ and $x$ each to the second power, then simplify the number."
 >}}
@@ -328,6 +349,7 @@ $$(-11x)^2 = (-11)^2 x^2 = 121x^2$$
 {{< fillin
   question="Simplify: $(-12a)^2$."
   answer="144a^2"
+  answerForm="single-term"
   answerDisplay="$144a^2$"
   hint="Raise $-12$ and $a$ each to the second power, then simplify the number."
 >}}
@@ -341,6 +363,7 @@ $$(3xy)^3 = 3^3 x^3 y^3 = 27x^3y^3$$
 {{< fillin
   question="Simplify: $(-4xy)^4$."
   answer="256x^4y^4"
+  answerForm="single-term"
   answerDisplay="$256x^4y^4$"
   hint="Raise $-4$, $x$, and $y$ each to the fourth power, then simplify the number."
 >}}
@@ -348,6 +371,7 @@ $$(3xy)^3 = 3^3 x^3 y^3 = 27x^3y^3$$
 {{< fillin
   question="Simplify: $(6xy)^3$."
   answer="216x^3y^3"
+  answerForm="single-term"
   answerDisplay="$216x^3y^3$"
   hint="Raise $6$, $x$, and $y$ each to the third power, then simplify the number."
 >}}
@@ -378,12 +402,14 @@ $$(x^2)^6 (x^5)^4 = x^{12} \cdot x^{20} = x^{32}$$
 {{< fillin
   question="Simplify: $(x^4)^3 (x^7)^4$."
   answer="x^{40}"
+  answerForm="single-term"
   hint="Apply the Power Property to each factor first, then add the resulting exponents."
 >}}
 
 {{< fillin
   question="Simplify: $(y^9)^2 (y^8)^3$."
   answer="y^{42}"
+  answerForm="single-term"
   hint="Apply the Power Property to each factor first, then add the resulting exponents."
 >}}
 
@@ -396,6 +422,7 @@ $$(-7x^3y^4)^2 = (-7)^2 (x^3)^2 (y^4)^2 = 49x^6y^8$$
 {{< fillin
   question="Simplify: $(-8x^4y^7)^3$."
   answer="-512x^{12}y^{21}"
+  answerForm="single-term"
   answerDisplay="$-512x^{12}y^{21}$"
   hint="Raise $-8$, $x^4$, and $y^7$ each to the third power, then apply the Power Property to the variable factors."
 >}}
@@ -403,6 +430,7 @@ $$(-7x^3y^4)^2 = (-7)^2 (x^3)^2 (y^4)^2 = 49x^6y^8$$
 {{< fillin
   question="Simplify: $(-3a^5b^6)^4$."
   answer="81a^{20}b^{24}"
+  answerForm="single-term"
   answerDisplay="$81a^{20}b^{24}$"
   hint="Raise $-3$, $a^5$, and $b^6$ each to the fourth power, then apply the Power Property to the variable factors."
 >}}
@@ -422,6 +450,7 @@ was inside the parentheses and so it only applied to the $n$.
 {{< fillin
   question="Simplify: $(7n)^2 (2n^{12})$."
   answer="98n^{14}"
+  answerForm="single-term"
   answerDisplay="$98n^{14}$"
   hint="Raise $7n$ to the second power first, then multiply the resulting constant and combine like bases with the second factor."
 >}}
@@ -429,6 +458,7 @@ was inside the parentheses and so it only applied to the $n$.
 {{< fillin
   question="Simplify: $(4m)^2 (3m^3)$."
   answer="48m^5"
+  answerForm="single-term"
   answerDisplay="$48m^5$"
   hint="Raise $4m$ to the second power first, then multiply the resulting constant and combine like bases with the second factor."
 >}}
@@ -444,6 +474,7 @@ $$(3p^2q)^4(2pq^2)^3 = 3^4(p^2)^4 q^4 \cdot 2^3 p^3 (q^2)^3 = 81p^8q^4 \cdot 8p^
 {{< fillin
   question="Simplify: $(u^3v^2)^5 (4uv^4)^3$."
   answer="64u^{18}v^{22}"
+  answerForm="single-term"
   answerDisplay="$64u^{18}v^{22}$"
   hint="Apply the Power of a Product Property to each factor separately before combining like bases."
 >}}
@@ -451,6 +482,7 @@ $$(3p^2q)^4(2pq^2)^3 = 3^4(p^2)^4 q^4 \cdot 2^3 p^3 (q^2)^3 = 81p^8q^4 \cdot 8p^
 {{< fillin
   question="Simplify: $(5x^2y^3)^2 (3xy^4)^3$."
   answer="675x^7y^{18}"
+  answerForm="single-term"
   answerDisplay="$675x^7y^{18}$"
   hint="Apply the Power of a Product Property to each factor separately before combining like bases."
 >}}
@@ -469,6 +501,7 @@ $$(4x^2)(-5x^3) = 4 \cdot (-5) \cdot x^2 \cdot x^3 = -20x^5$$
 {{< fillin
   question="Multiply: $(7x^7)(-8x^4)$."
   answer="-56x^{11}"
+  answerForm="single-term"
   answerDisplay="$-56x^{11}$"
   hint="Multiply the numerical coefficients, then add the exponents on $x$."
 >}}
@@ -476,6 +509,7 @@ $$(4x^2)(-5x^3) = 4 \cdot (-5) \cdot x^2 \cdot x^3 = -20x^5$$
 {{< fillin
   question="Multiply: $(-9y^4)(-6y^5)$."
   answer="54y^9"
+  answerForm="single-term"
   answerDisplay="$54y^9$"
   hint="Multiply the numerical coefficients, then add the exponents on $y$."
 >}}
@@ -489,6 +523,7 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
 {{< fillin
   question="Multiply: $(\tfrac{4}{5} m^4n^3)(15mn^3)$."
   answer="12m^5n^6"
+  answerForm="single-term"
   answerDisplay="$12m^5n^6$"
   hint="Multiply the fraction by the whole-number coefficient first, then add exponents on each matching base."
 >}}
@@ -496,6 +531,7 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
 {{< fillin
   question="Multiply: $(\tfrac{2}{3} p^5q)(18p^6q^7)$."
   answer="12p^{11}q^8"
+  answerForm="single-term"
   answerDisplay="$12p^{11}q^8$"
   hint="Multiply the fraction by the whole-number coefficient first, then add exponents on each matching base."
 >}}
@@ -507,6 +543,7 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
 {{< fillin
   question="Simplify: $4^5$."
   answer="1024"
+  answerForm="decimal"
   answerDisplay="$1{,}024$"
   hint="Multiply five factors of $4$, one factor at a time."
 >}}
@@ -514,18 +551,21 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
 {{< fillin
   question="Simplify: $(-5)^4$."
   answer="625"
+  answerForm="decimal"
   hint="The parentheses put the negative sign inside the base, so all four factors are $-5$. An even number of negative factors gives a positive product."
 >}}
 
 {{< fillin
   question="Simplify: $-5^4$."
   answer="-625"
+  answerForm="decimal"
   hint="Here the exponent applies only to $5$. Raise $5$ to the fourth power first, then take the opposite."
 >}}
 
 {{< fillin
   question="Simplify: $(-\tfrac{2}{3})^3$."
   answer="-\frac{8}{27}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{8}{27}$"
   hint="Cube the numerator and the denominator separately. Three negative factors give a negative product."
 >}}
@@ -535,18 +575,21 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
 {{< fillin
   question="Simplify: $x^3 \cdot x^6$."
   answer="x^9"
+  answerForm="single-term"
   hint="The bases match, so add the exponents."
 >}}
 
 {{< fillin
   question="Simplify: $a \cdot a^4$."
   answer="a^5"
+  answerForm="single-term"
   hint="A base written without an exponent has an understood exponent of $1$."
 >}}
 
 {{< fillin
   question="Simplify: $3^5 \cdot 3^9$. Leave the answer in exponential form."
   answer="3^{14}"
+  answerForm="single-power"
   hint="The base $3$ stays the same; add the exponents rather than multiplying the powers out."
 >}}
 
@@ -555,18 +598,21 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
 {{< fillin
   question="Simplify: $(u^4)^2$."
   answer="u^8"
+  answerForm="single-power"
   hint="To raise a power to a power, multiply the exponents."
 >}}
 
 {{< fillin
   question="Simplify: $(10^2)^6$. Leave the answer in exponential form."
   answer="10^{12}"
+  answerForm="single-power"
   hint="Keep the base $10$ and multiply the two exponents."
 >}}
 
 {{< fillin
   question="Simplify: $(x^{15})^6$."
   answer="x^{90}"
+  answerForm="single-power"
   hint="To raise a power to a power, multiply the exponents."
 >}}
 
@@ -575,6 +621,7 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
 {{< fillin
   question="Simplify: $(5a)^2$."
   answer="25a^2"
+  answerForm="single-term"
   answerDisplay="$25a^2$"
   hint="Raise each factor inside the parentheses to the second power, then simplify the number."
 >}}
@@ -582,6 +629,7 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
 {{< fillin
   question="Simplify: $(-6m)^3$."
   answer="-216m^3"
+  answerForm="single-term"
   answerDisplay="$-216m^3$"
   hint="Raise $-6$ and $m$ each to the third power. An odd number of negative factors keeps the result negative."
 >}}
@@ -589,6 +637,7 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
 {{< fillin
   question="Simplify: $(4rs)^2$."
   answer="16r^2s^2"
+  answerForm="single-term"
   answerDisplay="$16r^2s^2$"
   hint="The exponent applies to all three factors: $4$, $r$, and $s$."
 >}}
@@ -598,12 +647,14 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
 {{< fillin
   question="Simplify: $(x^2)^4 \cdot (x^3)^2$."
   answer="x^{14}"
+  answerForm="single-term"
   hint="Use the Power Property on each factor first, then add the resulting exponents."
 >}}
 
 {{< fillin
   question="Simplify: $(3x)^2(5x)$."
   answer="45x^3"
+  answerForm="single-term"
   answerDisplay="$45x^3$"
   hint="Raise $3x$ to the second power first, then multiply the constants and add the exponents on $x$."
 >}}
@@ -611,6 +662,7 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
 {{< fillin
   question="Simplify: $(-2a^3b^2)^4$."
   answer="16a^{12}b^8"
+  answerForm="single-term"
   answerDisplay="$16a^{12}b^8$"
   hint="Raise $-2$, $a^3$, and $b^2$ each to the fourth power, then apply the Power Property to the variable factors."
 >}}
@@ -620,6 +672,7 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
 {{< fillin
   question="Multiply: $(12x^2)(-5x^4)$."
   answer="-60x^6"
+  answerForm="single-term"
   answerDisplay="$-60x^6$"
   hint="Multiply the numerical coefficients, then add the exponents on $x$."
 >}}
@@ -627,6 +680,7 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
 {{< fillin
   question="Multiply: $(4a^3b)(9a^2b^6)$."
   answer="36a^5b^7"
+  answerForm="single-term"
   answerDisplay="$36a^5b^7$"
   hint="Multiply the coefficients, then add the exponents on $a$ and on $b$ separately."
 >}}
@@ -634,6 +688,7 @@ $$\left(\tfrac{3}{4}c^3d\right)(12cd^2) = \tfrac{3}{4} \cdot 12 \cdot c^3 \cdot 
 {{< fillin
   question="Multiply: $(\tfrac{4}{7} xy^2)(14xy^3)$."
   answer="8x^2y^5"
+  answerForm="single-term"
   answerDisplay="$8x^2y^5$"
   hint="Multiply $\tfrac{4}{7}$ by $14$ first, then add the exponents on each matching base."
 >}}

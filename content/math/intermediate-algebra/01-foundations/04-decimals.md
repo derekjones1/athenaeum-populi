@@ -130,18 +130,21 @@ $$14.65 - 20 = -5.35$$
 {{< fillin
   question="Add or subtract: $-4.8 - 11.69$."
   answer="-16.49"
+  answerForm="decimal"
   hint="The difference is negative; line up the decimal points and add the numerals $4.80$ and $11.69$."
 >}}
 
 {{< fillin
   question="Add or subtract: $9.58 - 10$."
   answer="-0.42"
+  answerForm="decimal"
   hint="Write $10$ as $10.00$, line up the decimal points, and subtract $9.58$ from $10.00$."
 >}}
 
 {{< fillin
   question="Add or subtract: $-5.123 - 18.47$."
   answer="-23.593"
+  answerForm="decimal"
   hint="The difference is negative; use a placeholder zero so both numbers have three decimal places, then add."
 >}}
 
@@ -183,12 +186,14 @@ $$(-3.9)(4.075) = -15.8925$$
 {{< fillin
   question="Multiply: $-4.5(6.107)$."
   answer="-27.4815"
+  answerForm="decimal"
   hint="The signs are different, so the product is negative. $4.5$ has one decimal place and $6.107$ has three, so the product has four decimal places."
 >}}
 
 {{< fillin
   question="Multiply: $-10.79(8.12)$."
   answer="-87.6148"
+  answerForm="decimal"
   hint="The signs are different, so the product is negative. Both factors together have four decimal places."
 >}}
 
@@ -278,12 +283,14 @@ $$-25.65 \div (-0.06) = 427.5$$
 {{< fillin
   question="Divide: $-23.492 \div (-0.04)$."
   answer="587.3"
+  answerForm="decimal"
   hint="The signs are the same, so the quotient is positive. Move both decimal points $2$ places to the right so the divisor becomes $4$."
 >}}
 
 {{< fillin
   question="Divide: $-4.11 \div (-0.12)$."
   answer="34.25"
+  answerForm="decimal"
   hint="The signs are the same, so the quotient is positive. Move both decimal points $2$ places to the right so the divisor becomes $12$."
 >}}
 
@@ -468,18 +475,21 @@ of the principal square root of $100$."
 {{< fillin
   question="Simplify: $\sqrt{36}$."
   answer="6"
+  answerForm="simplified-radical"
   hint="Find the positive number whose square is $36$."
 >}}
 
 {{< fillin
   question="Simplify: $\sqrt{169}$."
   answer="13"
+  answerForm="simplified-radical"
   hint="Find the positive number whose square is $169$."
 >}}
 
 {{< fillin
   question="Simplify: $-\sqrt{225}$."
   answer="-15"
+  answerForm="simplified-radical"
   hint="The negative sign is in front of the radical, so find the principal square root of $225$ and take its opposite."
 >}}
 

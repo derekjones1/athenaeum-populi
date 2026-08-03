@@ -69,6 +69,7 @@ makes $4y - 3$ equal to zero.
 {{< fillin
   question="Add: $\tfrac{5x}{2x + 3} + \tfrac{2}{2x + 3}$."
   answer="\frac{5x+2}{2x+3}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{5x + 2}{2x + 3}$"
   hint="The denominators match, so add the numerators $5x$ and $2$ over the common denominator $2x + 3$; the result does not factor."
 >}}
@@ -149,6 +150,7 @@ that step is the most common mistake when subtracting rational expressions.
 {{< fillin
   question="Subtract: $\tfrac{n^2}{n - 4} - \tfrac{n + 12}{n - 4}$."
   answer="n+3"
+  answerForm="polynomial"
   answerDisplay="$n + 3$"
   hint="Distribute the subtraction sign: $n^2 - (n + 12) = n^2 - n - 12$. Factor the numerator and cancel the common factor with $n - 4$."
 >}}
@@ -232,8 +234,88 @@ $$
 {{< fillin
   question="Subtract: $\tfrac{y^2 - 5y}{y^2 - 4} - \tfrac{6y - 6}{4 - y^2}$."
   answer="\frac{y+3}{y+2}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{y + 3}{y + 2}$"
   hint="The denominators $y^2 - 4$ and $4 - y^2$ are opposites: multiply the second fraction by $\tfrac{-1}{-1}$ so both denominators are $y^2 - 4$, then subtract, factor, and simplify."
+>}}
+
+## Practice
+
+### Add rational expressions with a common denominator
+
+{{< fillin
+  question="Add: $\tfrac{2}{15} + \tfrac{7}{15}$."
+  answer="\frac{3}{5}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{3}{5}$"
+  hint="The denominators match, so add the numerators over the common denominator $15$, then simplify by removing the common factor of $3$."
+>}}
+
+{{< fillin
+  question="Add: $\tfrac{2r^2}{2r - 1} + \tfrac{15r - 8}{2r - 1}$."
+  answer="r+8"
+  answerForm="polynomial"
+  answerDisplay="$r + 8$"
+  hint="Add the numerators over the common denominator $2r - 1$, then factor $2r^2 + 15r - 8$ and cancel the common factor with the denominator."
+>}}
+
+{{< fillin
+  question="Add: $\tfrac{2w^2}{w^2 - 16} + \tfrac{8w}{w^2 - 16}$."
+  answer="\frac{2w}{w-4}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{2w}{w - 4}$"
+  hint="Add the numerators over the common denominator, factor $2w^2 + 8w$ and $w^2 - 16$, then cancel the shared factor of $w + 4$."
+>}}
+
+### Subtract rational expressions with a common denominator
+
+{{< fillin
+  question="Subtract: $\tfrac{y^2}{y + 8} - \tfrac{64}{y + 8}$."
+  answer="y-8"
+  answerForm="polynomial"
+  answerDisplay="$y - 8$"
+  hint="Subtract the numerators over the common denominator, then factor the difference of squares $y^2 - 64$ and cancel the common factor with $y + 8$."
+>}}
+
+{{< fillin
+  question="Subtract: $\tfrac{c^2}{c - 8} - \tfrac{6c + 16}{c - 8}$."
+  answer="c+2"
+  answerForm="polynomial"
+  answerDisplay="$c + 2$"
+  hint="Distribute the subtraction sign: $c^2 - (6c + 16) = c^2 - 6c - 16$. Factor the numerator and cancel the common factor with $c - 8$."
+>}}
+
+{{< fillin
+  question="Subtract: $\tfrac{5r^2 + 7r - 33}{r^2 - 49} - \tfrac{4r^2 + 5r + 30}{r^2 - 49}$."
+  answer="\frac{r+9}{r+7}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{r + 9}{r + 7}$"
+  hint="Distribute the subtraction sign, combine like terms to get $r^2 + 2r - 63$, then factor both the numerator and the denominator $r^2 - 49$ and cancel the shared factor."
+>}}
+
+### Add and subtract rational expressions whose denominators are opposites
+
+{{< fillin
+  question="Add: $\tfrac{10v}{2v - 1} + \tfrac{2v + 4}{1 - 2v}$."
+  answer="4"
+  answerDisplay="$4$"
+  hint="The denominators $2v - 1$ and $1 - 2v$ are opposites: multiply the second fraction by $\tfrac{-1}{-1}$ so both denominators are $2v - 1$, then add and simplify."
+>}}
+
+{{< fillin
+  question="Add: $\tfrac{10x^2 + 16x - 7}{8x - 3} + \tfrac{2x^2 + 3x - 1}{3 - 8x}$."
+  answer="x+2"
+  answerForm="polynomial"
+  answerDisplay="$x + 2$"
+  hint="The denominators $8x - 3$ and $3 - 8x$ are opposites: multiply the second fraction by $\tfrac{-1}{-1}$ so both denominators are $8x - 3$, then add, factor, and simplify."
+>}}
+
+{{< fillin
+  question="Subtract: $\tfrac{z^2 + 6z}{z^2 - 25} - \tfrac{3z + 20}{25 - z^2}$."
+  answer="\frac{z+4}{z-5}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{z + 4}{z - 5}$"
+  hint="The denominators $z^2 - 25$ and $25 - z^2$ are opposites: multiply the second fraction by $\tfrac{-1}{-1}$ so both denominators are $z^2 - 25$, then subtract, factor, and simplify."
 >}}
 
 ## Key terms
@@ -246,4 +328,4 @@ them into a common denominator.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.3: Add and Subtract Rational Expressions with a Common Denominator](https://openstax.org/books/elementary-algebra-2e/pages/8-3-add-and-subtract-rational-expressions-with-a-common-denominator) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked examples as prose with display equality chains, condensed the numerical warm-up into the addition rule, and folded the excluded-value discussion into the addition example; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.3: Add and Subtract Rational Expressions with a Common Denominator](https://openstax.org/books/elementary-algebra-2e/pages/8-3-add-and-subtract-rational-expressions-with-a-common-denominator) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked examples as prose with display equality chains, condensed the numerical warm-up into the addition rule, and folded the excluded-value discussion into the addition example; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

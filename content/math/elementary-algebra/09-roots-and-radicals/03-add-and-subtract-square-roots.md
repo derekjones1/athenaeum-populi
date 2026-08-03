@@ -61,6 +61,7 @@ $$
 {{< fillin
   question="Simplify: $8\sqrt{2} - 9\sqrt{2}$."
   answer="-\sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$-\sqrt{2}$"
   hint="The radicals are like, so subtract the coefficients: $8 - 9$."
 >}}
@@ -85,6 +86,7 @@ $$4\sqrt{x} - 2\sqrt{y}$$
 {{< fillin
   question="Simplify: $2\sqrt{x} + 7\sqrt{x}$."
   answer="9\sqrt{x}"
+  answerForm="simplified-radical"
   answerDisplay="$9\sqrt{x}$"
   hint="The radicands are the same, so add the coefficients $2$ and $7$ and keep $\sqrt{x}$."
 >}}
@@ -143,6 +145,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{5xy} + 4\sqrt{5xy} - 7\sqrt{5xy}$."
   answer="-2\sqrt{5xy}"
+  answerForm="simplified-radical"
   answerDisplay="$-2\sqrt{5xy}$"
   hint="All three radicands are $5xy$, so combine the coefficients: $1 + 4 - 7$."
 >}}
@@ -182,6 +185,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{32} - \sqrt{18}$."
   answer="\sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$\sqrt{2}$"
   hint="Write $\sqrt{32} = 4\sqrt{2}$ and $\sqrt{18} = 3\sqrt{2}$, then subtract the coefficients."
 >}}
@@ -207,6 +211,7 @@ $$
 {{< fillin
   question="Simplify: $4\sqrt{27} - 3\sqrt{12}$."
   answer="6\sqrt{3}"
+  answerForm="simplified-radical"
   answerDisplay="$6\sqrt{3}$"
   hint="Simplify to $12\sqrt{3} - 6\sqrt{3}$, then subtract the coefficients."
 >}}
@@ -295,6 +300,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{2}{5}\sqrt{32} - \tfrac{1}{3}\sqrt{8}$."
   answer="\frac{14}{15}\sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{14}{15}\sqrt{2}$"
   hint="Simplify to $\tfrac{8}{5}\sqrt{2} - \tfrac{2}{3}\sqrt{2}$, then use a common denominator of $15$."
 >}}
@@ -302,6 +308,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{27p^3} - \sqrt{48p^3}$."
   answer="-p\sqrt{3p}"
+  answerForm="simplified-radical"
   answerDisplay="$-p\sqrt{3p}$"
   hint="Each radical simplifies to a multiple of $\sqrt{3p}$: $3p\sqrt{3p} - 4p\sqrt{3p}$."
 >}}

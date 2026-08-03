@@ -190,6 +190,7 @@ $$\frac{6 \cdot \frac{1}{3}+6 \cdot \frac{1}{6}}{6 \cdot \frac{1}{2}-6 \cdot \fr
 {{< fillin
   question="Simplify by using the LCD: $\cfrac{\frac{1}{2}+\frac{1}{5}}{\frac{1}{10}+\frac{1}{5}}$."
   answer="\tfrac{7}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{7}{3}$"
   hint="The LCD of all four fractions is $10$. Multiply the numerator and denominator by $10$, distribute, and simplify."
 >}}
@@ -290,6 +291,49 @@ $$
   hint="The LCD is $x + 3$. Multiply the numerator and denominator by $x + 3$; the denominator becomes $(x + 3) + 1 = x + 4$."
 >}}
 
+## Practice
+
+### Simplify a complex rational expression by writing it as division
+
+{{< fillin
+  question="Simplify by writing it as division: $\cfrac{\frac{2a}{a+4}}{\frac{4a^2}{a^2-16}}$."
+  answer="\tfrac{a - 4}{2a}"
+  answerDisplay="$\tfrac{a - 4}{2a}$"
+  hint="Rewrite as $\tfrac{2a}{a+4}\div\tfrac{4a^2}{a^2-16}$, multiply by the reciprocal, and factor $a^2-16=(a-4)(a+4)$."
+>}}
+
+{{< fillin
+  question="Simplify by writing it as division: $\cfrac{\frac{1}{2}+\frac{5}{6}}{\frac{2}{3}+\frac{7}{9}}$."
+  answer="\tfrac{12}{13}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{12}{13}$"
+  hint="Add the fractions in the numerator and in the denominator separately, then divide the top result by the bottom result."
+>}}
+
+{{< fillin
+  question="Simplify by writing it as division: $\cfrac{x-\frac{2x}{x+3}}{\frac{1}{x+3}+\frac{1}{x-3}}$."
+  answer="\tfrac{(x + 1)(x - 3)}{2}"
+  answerDisplay="$\tfrac{(x + 1)(x - 3)}{2}$"
+  hint="Combine the numerator over $x+3$ and the denominator over $(x+3)(x-3)$, then divide the top by the bottom and simplify."
+>}}
+
+### Simplify a complex rational expression by using the LCD
+
+{{< fillin
+  question="Simplify by using the LCD: $\cfrac{\frac{1}{3}+\frac{1}{8}}{\frac{1}{4}+\frac{1}{12}}$."
+  answer="\tfrac{11}{8}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{11}{8}$"
+  hint="The LCD of all four fractions is $24$. Multiply the numerator and denominator by $24$, distribute, and simplify."
+>}}
+
+{{< fillin
+  question="Simplify by using the LCD: $\cfrac{\frac{2}{x+5}}{\frac{3}{x-5}+\frac{1}{x^2-25}}$."
+  answer="\tfrac{2x - 10}{3x + 16}"
+  answerDisplay="$\tfrac{2x - 10}{3x + 16}$"
+  hint="Factor $x^2-25=(x+5)(x-5)$, so the LCD is $(x+5)(x-5)$. Multiply the numerator and denominator by it and simplify."
+>}}
+
 ## Key terms
 
 **complex fraction** — a fraction in which the numerator, the denominator, or
@@ -300,4 +344,4 @@ its bottom.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.5: Simplify Complex Rational Expressions](https://openstax.org/books/elementary-algebra-2e/pages/8-5-simplify-complex-rational-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations, and typeset every complex fraction as a \cfrac display block; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.5: Simplify Complex Rational Expressions](https://openstax.org/books/elementary-algebra-2e/pages/8-5-simplify-complex-rational-expressions) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations, and typeset every complex fraction as a \cfrac display block; omitted the Be Prepared quiz, Self Check checklist, media links, and the remaining end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

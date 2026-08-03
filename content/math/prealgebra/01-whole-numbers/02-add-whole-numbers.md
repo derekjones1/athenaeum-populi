@@ -201,12 +201,14 @@ up the leftmost digits.
 {{< fillin
   question="Add: $456 + 376$"
   answer="832"
+  answerForm="decimal"
   hint="Add the ones ($6 + 6 = 12$, write 2 carry 1), then the tens ($1 + 5 + 7 = 13$, write 3 carry 1), then the hundreds."
 >}}
 
 {{< fillin
   question="Add: $4{,}597 + 685$"
   answer="5282"
+  answerForm="decimal"
   answerDisplay="5,282"
   hint="Line up by place value: 4,597 has a thousands digit; 685 does not, so treat its thousands place as 0. Add right to left, carrying as needed."
 >}}
@@ -217,6 +219,7 @@ column, carrying whenever a column's total reaches $10$ or more.
 {{< fillin
   question="Add: $213 + 145 + 322$"
   answer="680"
+  answerForm="decimal"
   hint="Add the ones column first ($3 + 5 + 2$), then the tens, then the hundreds — carry if any column sums to 10 or more."
 >}}
 
@@ -407,18 +410,21 @@ two hundred fourteen minus six hundred forty-two; the difference of 214 and 642
 {{< fillin
   question="Add: $8 + 3$"
   answer="11"
+  answerForm="decimal"
   hint="This is a one-digit addition fact: count on 3 from 8."
 >}}
 
 {{< fillin
   question="Add: $3 + 8$"
   answer="11"
+  answerForm="decimal"
   hint="The addends are the same as in the previous question, only reversed — the Commutative Property of Addition says the sum cannot change."
 >}}
 
 {{< fillin
   question="Add: $832 + 199$"
   answer="1031"
+  answerForm="decimal"
   answerDisplay="1,031"
   hint="Ones: $2 + 9 = 11$, so write 1 and carry 1. Tens: $1 + 3 + 9 = 13$, so write 3 and carry 1. Then the hundreds."
 >}}
@@ -426,6 +432,7 @@ two hundred fourteen minus six hundred forty-two; the difference of 214 and 642
 {{< fillin
   question="Add: $3{,}740 + 18{,}593$"
   answer="22333"
+  answerForm="decimal"
   answerDisplay="22,333"
   hint="Line up the ones places, not the leftmost digits — 3,740 has no ten thousands digit, so treat that place as 0."
 >}}
@@ -433,6 +440,7 @@ two hundred fourteen minus six hundred forty-two; the difference of 214 and 642
 {{< fillin
   question="Add: $24{,}731 + 592 + 3{,}868$"
   answer="29191"
+  answerForm="decimal"
   answerDisplay="29,191"
   hint="Stack all three numbers by place value and add straight down each column, carrying whenever a column totals 10 or more."
 >}}

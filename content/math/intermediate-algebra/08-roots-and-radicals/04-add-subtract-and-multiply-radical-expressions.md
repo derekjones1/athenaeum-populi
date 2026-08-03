@@ -56,6 +56,7 @@ The indices are the same but the radicals are different. These are not like radi
 {{< fillin
   question="Simplify: $8 \sqrt{2} - 9 \sqrt{2}$"
   answer="- \sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$- \sqrt{2}$"
   hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
 >}}
@@ -63,6 +64,7 @@ The indices are the same but the radicals are different. These are not like radi
 {{< fillin
   question="Simplify: $4 \sqrt[3]{x} + 7 \sqrt[3]{x}$"
   answer="11 \sqrt[3]{x}"
+  answerForm="simplified-radical"
   answerDisplay="$11 \sqrt[3]{x}$"
   hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
 >}}
@@ -98,6 +100,7 @@ Simplify: (a) $2 \sqrt{5 n} - 6 \sqrt{5 n} + 4 \sqrt{5 n}$ (b) $\sqrt[4]{3 x y} 
 {{< fillin
   question="Simplify: $\sqrt{7 x} - 7 \sqrt{7 x} + 4 \sqrt{7 x}$"
   answer="-2 \sqrt{7 x}"
+  answerForm="simplified-radical"
   answerDisplay="$-2 \sqrt{7 x}$"
   hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
 >}}
@@ -105,6 +108,7 @@ Simplify: (a) $2 \sqrt{5 n} - 6 \sqrt{5 n} + 4 \sqrt{5 n}$ (b) $\sqrt[4]{3 x y} 
 {{< fillin
   question="Simplify: $4 \sqrt[4]{5 x y} + 2 \sqrt[4]{5 x y} - 7 \sqrt[4]{5 x y}$"
   answer="- \sqrt[4]{5 x y}"
+  answerForm="simplified-radical"
   answerDisplay="$- \sqrt[4]{5 x y}$"
   hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
 >}}
@@ -112,6 +116,7 @@ Simplify: (a) $2 \sqrt{5 n} - 6 \sqrt{5 n} + 4 \sqrt{5 n}$ (b) $\sqrt[4]{3 x y} 
 {{< fillin
   question="Simplify: $4 \sqrt{3 y} - 7 \sqrt{3 y} + 2 \sqrt{3 y}$"
   answer="- \sqrt{3 y}"
+  answerForm="simplified-radical"
   answerDisplay="$- \sqrt{3 y}$"
   hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
 >}}
@@ -153,6 +158,7 @@ Simplify: (a) $\sqrt{20} + 3 \sqrt{5}$ (b) $\sqrt[3]{24} - \sqrt[3]{375}$ (c) $\
 {{< fillin
   question="Simplify: $\sqrt{18} + 6 \sqrt{2}$"
   answer="9 \sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$9 \sqrt{2}$"
   hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
 >}}
@@ -160,6 +166,7 @@ Simplify: (a) $\sqrt{20} + 3 \sqrt{5}$ (b) $\sqrt[3]{24} - \sqrt[3]{375}$ (c) $\
 {{< fillin
   question="Simplify: $6 \sqrt[3]{16} - 2 \sqrt[3]{250}$"
   answer="2 \sqrt[3]{2}"
+  answerForm="simplified-radical"
   answerDisplay="$2 \sqrt[3]{2}$"
   hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
 >}}
@@ -167,6 +174,7 @@ Simplify: (a) $\sqrt{20} + 3 \sqrt{5}$ (b) $\sqrt[3]{24} - \sqrt[3]{375}$ (c) $\
 {{< fillin
   question="Simplify: $\tfrac{2}{3} \sqrt[3]{81} - \tfrac{1}{2} \sqrt[3]{24}$"
   answer="\sqrt[3]{3}"
+  answerForm="simplified-radical"
   answerDisplay="$\sqrt[3]{3}$"
   hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
 >}}
@@ -200,6 +208,7 @@ The radicals are not like and so cannot be combined.
 {{< fillin
   question="Simplify: $\sqrt{32 m^{7}} - \sqrt{50 m^{7}}$"
   answer="- m^{3} \sqrt{2 m}"
+  answerForm="simplified-radical"
   answerDisplay="$- m^{3} \sqrt{2 m}$"
   hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
 >}}
@@ -207,6 +216,7 @@ The radicals are not like and so cannot be combined.
 {{< fillin
   question="Simplify: $\sqrt[3]{135 x^{7}} - \sqrt[3]{40 x^{7}}$"
   answer="x^{2} \sqrt[3]{5 x}"
+  answerForm="simplified-radical"
   answerDisplay="$x^{2} \sqrt[3]{5 x}$"
   hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
 >}}
@@ -214,6 +224,7 @@ The radicals are not like and so cannot be combined.
 {{< fillin
   question="Simplify: $\sqrt{27 p^{3}} - \sqrt{48 p^{3}}$"
   answer="- p \sqrt{3 p}"
+  answerForm="simplified-radical"
   answerDisplay="$- p \sqrt{3 p}$"
   hint="Multiply coefficients and radicands, then extract perfect powers from the resulting radical."
 >}}
@@ -308,6 +319,7 @@ Simplify: (a) $\left(10 \sqrt{6 p^{3}}\right) \left(4 \sqrt{3 p}\right)$ (b) $\l
 {{< fillin
   question="Simplify: $\left(6 \sqrt{6 x^{2}}\right) \left(8 \sqrt{30 x^{4}}\right)$"
   answer="288 x^{3} \sqrt{5}"
+  answerForm="simplified-radical"
   answerDisplay="$288 x^{3} \sqrt{5}$"
   hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
 >}}
@@ -322,6 +334,7 @@ Simplify: (a) $\left(10 \sqrt{6 p^{3}}\right) \left(4 \sqrt{3 p}\right)$ (b) $\l
 {{< fillin
   question="Simplify: $\left(2 \sqrt{6 y^{4}}\right) \left(12 \sqrt{30 y}\right)$"
   answer="144 y^{2} \sqrt{5 y}"
+  answerForm="simplified-radical"
   answerDisplay="$144 y^{2} \sqrt{5 y}$"
   hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
 >}}
@@ -370,6 +383,7 @@ Simplify: (a) $\sqrt{6 } \left(\sqrt{2} + \sqrt{18}\right)$ (b) $\sqrt[3]{9} \le
 {{< fillin
   question="Simplify: $\sqrt{8} \left(2 - 5 \sqrt{8}\right)$"
   answer="-40 + 4 \sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$-40 + 4 \sqrt{2}$"
   hint="Distribute the radical factor, multiply radicands, simplify, and then combine like radical terms."
 >}}
@@ -439,6 +453,7 @@ Simplify: $\left(3 \sqrt{2} - \sqrt{5}\right) \left(\sqrt{2} + 4 \sqrt{5}\right)
 {{< fillin
   question="Simplify: $\left(\sqrt{6} - 3 \sqrt{8}\right) \left(2 \sqrt{6} + \sqrt{8}\right)$"
   answer="-12 - 20 \sqrt{3}"
+  answerForm="simplified-radical"
   answerDisplay="$-12 - 20 \sqrt{3}$"
   hint="Distribute the binomials carefully; if they are conjugates, the radical middle terms cancel."
 >}}

@@ -25,6 +25,7 @@ weight: 13
 {{< fillin
   question="Simplify $\sqrt{144}$ to show that it is a whole number, and therefore rational."
   answer="12"
+  answerForm="simplified-radical"
 >}}
 
 {{< fillin
@@ -37,6 +38,7 @@ weight: 13
 {{< fillin
   question="Simplify $\sqrt{49}$ to show that it is a whole number, and therefore rational."
   answer="7"
+  answerForm="simplified-radical"
 >}}
 
 ### 7.2 Commutative and Associative Properties
@@ -70,18 +72,21 @@ weight: 13
 {{< fillin
   question="Simplify using the distributive property: $6(5x - 4)$."
   answer="30x-24"
+  answerForm="expanded"
   answerDisplay="$30x - 24$"
 >}}
 
 {{< fillin
   question="Simplify using the distributive property: $\tfrac{1}{4}(8a + 12)$."
   answer="2a+3"
+  answerForm="polynomial"
   answerDisplay="$2a + 3$"
 >}}
 
 {{< fillin
   question="Simplify using the distributive property: $8(6p - 1) + 2(9p + 3)$."
   answer="66p-2"
+  answerForm="distributed"
   answerDisplay="$66p - 2$"
 >}}
 
@@ -95,11 +100,13 @@ weight: 13
 {{< fillin
   question="Simplify: $0/8$."
   answer="0"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Simplify: $0 \div \tfrac{2}{3}$."
   answer="0"
+  answerForm="decimal"
 >}}
 
 ### 7.5 Systems of Measurement
@@ -390,6 +397,7 @@ weight: 13
 {{< fillin
   question="Simplify: $(10x^2 - 3x + 5) - (4x^2 - 6)$"
   answer="6x^2 - 3x + 11"
+  answerForm="no-like-terms"
 >}}
 
 ### 10.2 Use Multiplication Properties of Exponents
@@ -397,11 +405,13 @@ weight: 13
 {{< fillin
   question="Simplify: $n \cdot n^4$"
   answer="n^5"
+  answerForm="single-term"
 >}}
 
 {{< fillin
   question="Simplify: $(8xy^3)(-6x^4y^6)$"
   answer="-48x^5y^9"
+  answerForm="single-term"
 >}}
 
 ### 10.3 Multiply Polynomials
@@ -409,16 +419,19 @@ weight: 13
 {{< fillin
   question="Multiply: $(s + 8)(s + 9)$"
   answer="s^2 + 17s + 72"
+  answerForm="expanded"
 >}}
 
 {{< fillin
   question="Multiply: $(11a - 6)(5a - 1)$"
   answer="55a^2 - 41a + 6"
+  answerForm="expanded"
 >}}
 
 {{< fillin
   question="Multiply: $(4a + 9b)(6a - 5b)$"
   answer="24a^2 + 34ab - 45b^2"
+  answerForm="expanded"
 >}}
 
 ### 10.4 Divide Monomials
@@ -426,17 +439,20 @@ weight: 13
 {{< fillin
   question="Simplify: $\left(\tfrac{x^3 \cdot x^9}{x^5}\right)^2$"
   answer="x^{14}"
+  answerForm="polynomial"
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{24r^3s}{6r^2s^7}$"
   answer="\frac{4r}{s^6}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{4r}{s^6}$"
 >}}
 
 {{< fillin
   question="Simplify: $(15xy^3 - 35x^2y) \div 5xy$"
   answer="3y^2 - 7x"
+  answerForm="polynomial"
 >}}
 
 ### 10.5 Integer Exponents and Scientific Notation
@@ -444,12 +460,14 @@ weight: 13
 {{< fillin
   question="Simplify: $(2y)^{-3}$"
   answer="\frac{1}{8y^3}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{8y^3}$"
 >}}
 
 {{< fillin
   question="Simplify: $x^4 / x^{-5}$"
   answer="x^9"
+  answerForm="polynomial"
 >}}
 
 {{< fillin
@@ -460,6 +478,7 @@ weight: 13
 {{< fillin
   question="Simplify, and write your answer in decimal form: $(9 \times 10^4) / (3 \times 10^{-1})$"
   answer="300000"
+  answerForm="decimal"
   answerDisplay="300,000"
 >}}
 
@@ -468,18 +487,21 @@ weight: 13
 {{< fillin
   question="Factor the greatest common factor from the polynomial: $-6x^2 - 30x$"
   answer="-6x(x+5)"
+  answerForm="factored"
   answerDisplay="$-6x(x + 5)$"
 >}}
 
 {{< fillin
   question="Factor the greatest common factor from the polynomial: $16u - 24$"
   answer="8(2u-3)"
+  answerForm="factored"
   answerDisplay="$8(2u - 3)$"
 >}}
 
 {{< fillin
   question="Factor the greatest common factor from the polynomial: $6p^2 + 6p$"
   answer="6p(p+1)"
+  answerForm="factored"
   answerDisplay="$6p(p + 1)$"
 >}}
 

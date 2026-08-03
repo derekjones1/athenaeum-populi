@@ -62,12 +62,14 @@ $$\begin{array}{r} 23.50 \\ +41.38 \\ \hline 64.88 \end{array}$$
 {{< fillin
   question="Add: $18.32 + 14.79$"
   answer="33.11"
+  answerForm="decimal"
   hint="Both numbers already have two decimal places, so no placeholder zeros are needed — add as if they were whole numbers, then place the decimal point."
 >}}
 
 {{< fillin
   question="Add: $5.123 + 18.47$"
   answer="23.593"
+  answerForm="decimal"
   hint="$18.47$ has fewer decimal places than $5.123$ — write a placeholder zero after the $7$ so both numbers have three decimal places, then add."
 >}}
 
@@ -87,6 +89,7 @@ $$\begin{array}{r} 20.00 \\ -14.65 \\ \hline 5.35 \end{array}$$
 {{< fillin
   question="Subtract: $50 - 37.42$"
   answer="12.58"
+  answerForm="decimal"
   hint="Rewrite $50$ as $50.00$ so it has two decimal places to match $37.42$, then subtract as whole numbers."
 >}}
 
@@ -110,12 +113,14 @@ $$2.51 - 7.4 = -4.89$$
 {{< fillin
   question="Subtract: $4.77 - 6.3$"
   answer="-1.53"
+  answerForm="decimal"
   hint="Since $6.3 > 4.77$, subtract $4.77$ from $6.3$ instead, then make the result negative."
 >}}
 
 {{< fillin
   question="Subtract: $8.12 - 11.7$"
   answer="-3.58"
+  answerForm="decimal"
   hint="Since $11.7 > 8.12$, subtract $8.12$ from $11.7$ instead, then make the result negative."
 >}}
 
@@ -194,12 +199,14 @@ $$(3.9)(4.075) = 15.8925$$
 {{< fillin
   question="Multiply: $4.5(6.107)$"
   answer="27.4815"
+  answerForm="decimal"
   hint="$4.5$ has one decimal place and $6.107$ has three, so the product needs four decimal places total."
 >}}
 
 {{< fillin
   question="Multiply: $10.79(8.12)$"
   answer="87.6148"
+  answerForm="decimal"
   hint="$10.79$ has two decimal places and $8.12$ has two, so the product needs four decimal places total."
 >}}
 
@@ -218,12 +225,14 @@ $$(-8.2)(5.19) = -42.558$$
 {{< fillin
   question="Multiply: $(4.63)(-2.9)$"
   answer="-13.427"
+  answerForm="decimal"
   hint="The signs are different, so the product is negative. $4.63$ has two decimal places and $2.9$ has one, so the product needs three decimal places."
 >}}
 
 {{< fillin
   question="Multiply: $(-7.78)(4.9)$"
   answer="-38.122"
+  answerForm="decimal"
   hint="The signs are different, so the product is negative. $7.78$ has two decimal places and $4.9$ has one, so the product needs three decimal places."
 >}}
 
@@ -241,12 +250,14 @@ $$(0.03)(0.045) = 0.00135$$
 {{< fillin
   question="Multiply: $(0.04)(0.087)$"
   answer="0.00348"
+  answerForm="decimal"
   hint="$0.04$ has two decimal places and $0.087$ has three, so the product needs five decimal places — add placeholder zeros as needed."
 >}}
 
 {{< fillin
   question="Multiply: $(0.09)(0.067)$"
   answer="0.00603"
+  answerForm="decimal"
   hint="$0.09$ has two decimal places and $0.067$ has three, so the product needs five decimal places — add placeholder zeros as needed."
 >}}
 
@@ -387,12 +398,14 @@ $$0.12 \div 3 = 0.04$$
 {{< fillin
   question="Divide: $0.28 \div 4$"
   answer="0.07"
+  answerForm="decimal"
   hint="Place the decimal point in the quotient directly above the one in $0.28$, then divide as usual."
 >}}
 
 {{< fillin
   question="Divide: $0.56 \div 7$"
   answer="0.08"
+  answerForm="decimal"
   hint="Place the decimal point in the quotient directly above the one in $0.56$, then divide as usual."
 >}}
 
@@ -480,12 +493,14 @@ $$-2.89 \div (3.4) = -0.85$$
 {{< fillin
   question="Divide: $-1.989 \div 5.1$"
   answer="-0.39"
+  answerForm="decimal"
   hint="Move the decimal point one place in both numbers ($5.1$ becomes $51$, $-1.989$ becomes $-19.89$), then divide."
 >}}
 
 {{< fillin
   question="Divide: $-2.04 \div 5.1$"
   answer="-0.4"
+  answerForm="decimal"
   hint="Move the decimal point one place in both numbers ($5.1$ becomes $51$, $-2.04$ becomes $-20.4$), then divide."
 >}}
 
@@ -502,12 +517,14 @@ $$-25.65 \div (-0.06) = 427.5$$
 {{< fillin
   question="Divide: $-23.492 \div (-0.04)$"
   answer="587.3"
+  answerForm="decimal"
   hint="Move the decimal point two places in both numbers ($-0.04$ becomes $-4$, $-23.492$ becomes $-2349.2$), then divide."
 >}}
 
 {{< fillin
   question="Divide: $-4.11 \div (-0.12)$"
   answer="34.25"
+  answerForm="decimal"
   hint="Move the decimal point two places in both numbers ($-0.12$ becomes $-12$, $-4.11$ becomes $-411$), then divide."
 >}}
 
@@ -529,12 +546,14 @@ dollars? Because $4 \div 0.05 = 80$, there are $80$ nickels in \$4.
 {{< fillin
   question="Divide: $6 \div 0.03$"
   answer="200"
+  answerForm="decimal"
   hint="Move the decimal point two places in both numbers ($0.03$ becomes $3$, $6$ becomes $600$), then divide."
 >}}
 
 {{< fillin
   question="Divide: $7 \div 0.02$"
   answer="350"
+  answerForm="decimal"
   hint="Move the decimal point two places in both numbers ($0.02$ becomes $2$, $7$ becomes $700$), then divide."
 >}}
 
@@ -650,24 +669,28 @@ Add: $\text{\textdollar}3.28$. Write a sentence: Marla's total cost for the frui
 {{< fillin
   question="Subtract: $256.37 - 85.49$"
   answer="170.88"
+  answerForm="decimal"
   hint="Line up the decimal points and subtract as whole numbers — you will need to regroup twice."
 >}}
 
 {{< fillin
   question="Subtract: $-16.53 - 24.38$"
   answer="-40.91"
+  answerForm="decimal"
   hint="Subtracting a positive from a negative moves further from zero: add the two amounts and keep the negative sign."
 >}}
 
 {{< fillin
   question="Subtract: $100 - 64.2$"
   answer="35.8"
+  answerForm="decimal"
   hint="Write $100$ as $100.0$ so both numbers have one decimal place, then subtract."
 >}}
 
 {{< fillin
   question="Subtract: $91.75 - (-10.462)$"
   answer="102.212"
+  answerForm="decimal"
   hint="Subtracting a negative is the same as adding. Write a placeholder zero after $91.75$ so both numbers have three decimal places."
 >}}
 
@@ -676,18 +699,21 @@ Add: $\text{\textdollar}3.28$. Write a sentence: Marla's total cost for the frui
 {{< fillin
   question="Multiply: $(0.24)(0.6)$"
   answer="0.144"
+  answerForm="decimal"
   hint="Multiply $24 \times 6$ as whole numbers, then place the decimal point three places from the right ($2 + 1$ places)."
 >}}
 
 {{< fillin
   question="Multiply: $(8.52)(3.14)$"
   answer="26.7528"
+  answerForm="decimal"
   hint="Both factors have two decimal places, so the product needs four. Estimate first: the answer should be near $27$."
 >}}
 
 {{< fillin
   question="Multiply: $(-5.18)(-65.23)$"
   answer="337.8914"
+  answerForm="decimal"
   hint="The signs are the same, so the product is positive. Two decimal places plus two gives four in the product."
 >}}
 
@@ -703,24 +729,28 @@ Add: $\text{\textdollar}3.28$. Write a sentence: Marla's total cost for the frui
 {{< fillin
   question="Divide: $4.75 \div 25$"
   answer="0.19"
+  answerForm="decimal"
   hint="The divisor is already a whole number — place the decimal point in the quotient directly above the one in $4.75$ and divide."
 >}}
 
 {{< fillin
   question="Divide: $1.44 \div (-0.3)$"
   answer="-4.8"
+  answerForm="decimal"
   hint="The signs are different, so the quotient is negative. Move the decimal point one place in both numbers, making the divisor $3$ and the dividend $14.4$."
 >}}
 
 {{< fillin
   question="Divide: $5.2 \div 2.5$"
   answer="2.08"
+  answerForm="decimal"
   hint="Move the decimal point one place in both numbers ($2.5$ becomes $25$, $5.2$ becomes $52$), then divide, adding zeros until the remainder is zero."
 >}}
 
 {{< fillin
   question="Divide: $12 \div 0.08$"
   answer="150"
+  answerForm="decimal"
   hint="Move the decimal point two places in both numbers ($0.08$ becomes $8$, $12$ becomes $1{,}200$), then divide."
 >}}
 

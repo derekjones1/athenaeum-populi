@@ -102,6 +102,7 @@ $$
 {{< fillin
   question="Simplify: $b^9 \cdot b^8$."
   answer="b^{17}"
+  answerForm="single-term"
   answerDisplay="$b^{17}$"
   hint="Same base — add the exponents: $9+8$."
 >}}
@@ -109,6 +110,7 @@ $$
 {{< fillin
   question="Simplify: $3p^5 \cdot 4p$."
   answer="12p^6"
+  answerForm="single-term"
   answerDisplay="$12p^6$"
   hint="Multiply the coefficients and add the exponents; remember $p = p^1$."
 >}}
@@ -182,6 +184,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{x^{15}}{x^{10}}$."
   answer="x^5"
+  answerForm="polynomial"
   answerDisplay="$x^5$"
   hint="The larger exponent is in the numerator, so subtract: $15-10$."
 >}}
@@ -189,6 +192,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{12^{15}}{12^{30}}$. Enter your answer with a positive exponent."
   answer="\frac{1}{12^{15}}"
+  answerForm="single-power"
   answerDisplay="$\tfrac{1}{12^{15}}$"
   hint="The larger exponent is in the denominator, so the result is $\tfrac{1}{12^{30-15}}$."
 >}}
@@ -222,12 +226,14 @@ $$
 {{< fillin
   question="Simplify: $11^0$."
   answer="1"
+  answerForm="decimal"
   hint="Any non-zero number raised to the zero power is $1$."
 >}}
 
 {{< fillin
   question="Simplify: $q^0$ (assume $q \neq 0$)."
   answer="1"
+  answerForm="decimal"
   hint="Any non-zero base raised to the zero power is $1$."
 >}}
 
@@ -321,6 +327,7 @@ $$
 {{< fillin
   question="Simplify: $z^{-3}$. Write your answer with a positive exponent."
   answer="\frac{1}{z^3}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{z^3}$"
   hint="Use $a^{-n} = \tfrac{1}{a^n}$."
 >}}
@@ -328,6 +335,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{1}{p^{-8}}$. Write your answer with a positive exponent."
   answer="p^8"
+  answerForm="polynomial"
   answerDisplay="$p^8$"
   hint="Use $\tfrac{1}{a^{-n}} = a^n$."
 >}}
@@ -384,6 +392,7 @@ $$
 {{< fillin
   question="Simplify: $\left(\tfrac{2}{3}\right)^{-4}$."
   answer="\frac{81}{16}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{81}{16}$"
   hint="Take the reciprocal and change the sign of the exponent: $\left(\tfrac{3}{2}\right)^4$."
 >}}
@@ -391,6 +400,7 @@ $$
 {{< fillin
   question="Simplify: $\left(\tfrac{3}{5}\right)^{-3}$."
   answer="\frac{125}{27}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{125}{27}$"
   hint="Take the reciprocal and change the sign of the exponent: $\left(\tfrac{5}{3}\right)^3$."
 >}}
@@ -439,6 +449,7 @@ $$
 {{< fillin
   question="Simplify: $z^{-4} \cdot z^{-5}$. Write your answer with a positive exponent."
   answer="\frac{1}{z^9}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{z^9}$"
   hint="Add the exponents, then rewrite with a positive exponent."
 >}}
@@ -446,6 +457,7 @@ $$
 {{< fillin
   question="Simplify: $(3u^{-5}v^7)(-4u^4v^{-2})$. Write your answer with positive exponents."
   answer="\frac{-12v^5}{u}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{-12v^5}{u}$"
   hint="Multiply the coefficients, add the exponents of each variable, then rewrite negative exponents as positive."
 >}}
@@ -504,6 +516,7 @@ $$
 {{< fillin
   question="Simplify: $(b^7)^5$."
   answer="b^{35}"
+  answerForm="single-power"
   answerDisplay="$b^{35}$"
   hint="Raise a power to a power — multiply the exponents: $7 \cdot 5$."
 >}}
@@ -511,6 +524,7 @@ $$
 {{< fillin
   question="Simplify: $(a^4)^5 (a^7)^4$."
   answer="a^{48}"
+  answerForm="single-term"
   answerDisplay="$a^{48}$"
   hint="Multiply the exponents in each factor, then add: $20 + 28$."
 >}}
@@ -584,6 +598,7 @@ $$
 {{< fillin
   question="Simplify: $(2wx)^5$."
   answer="32w^5x^5"
+  answerForm="single-term"
   answerDisplay="$32w^5x^5$"
   hint="Raise each factor to the fifth power; $2^5 = 32$."
 >}}
@@ -591,6 +606,7 @@ $$
 {{< fillin
   question="Simplify: $(8a^{-4})^2$. Write your answer with a positive exponent."
   answer="\frac{64}{a^8}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{64}{a^8}$"
   hint="Raise each factor to the power, then rewrite the negative exponent as positive: $8^2 = 64$."
 >}}
@@ -665,6 +681,7 @@ $$
 {{< fillin
   question="Simplify: $\left(\tfrac{p}{10}\right)^4$."
   answer="\frac{p^4}{10000}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{p^4}{10{,}000}$"
   hint="Raise the numerator and denominator to the fourth power; $10^4 = 10{,}000$."
 >}}
@@ -672,6 +689,7 @@ $$
 {{< fillin
   question="Simplify: $\left(\tfrac{m}{n}\right)^{-7}$. Write your answer with positive exponents."
   answer="\frac{n^7}{m^7}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{n^7}{m^7}$"
   hint="Take the reciprocal of the base and change the sign of the exponent, then raise to the power."
 >}}
@@ -739,6 +757,7 @@ $$
 {{< fillin
   question="Simplify: $(c^4 d^2)^5 (3cd^5)^4$."
   answer="81c^{24}d^{30}"
+  answerForm="single-term"
   answerDisplay="$81c^{24}d^{30}$"
   hint="Raise each factor to its power, then multiply the constants and add the exponents of each variable."
 >}}
@@ -746,6 +765,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{(a^{-2})^3 (a^2)^4}{(a^4)^5}$. Write your answer with a positive exponent."
   answer="\frac{1}{a^{18}}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{a^{18}}$"
   hint="Use the Power Property throughout: numerator becomes $a^{-6} \cdot a^8 = a^2$, denominator $a^{20}$."
 >}}
@@ -894,12 +914,14 @@ $$
 {{< fillin
   question="Multiply: $(-3 \times 10^5)(2 \times 10^{-8})$. Write your answer in decimal form."
   answer="-0.006"
+  answerForm="decimal"
   hint="Multiply the coefficients ($-6$) and add the exponents ($10^{-3}$), then write in decimal form."
 >}}
 
 {{< fillin
   question="Divide: $\tfrac{8 \times 10^4}{2 \times 10^{-1}}$. Write your answer in decimal form."
   answer="400000"
+  answerForm="decimal"
   answerDisplay="$400{,}000$"
   hint="Divide the coefficients ($4$) and subtract the exponents ($10^{4-(-1)} = 10^5$)."
 >}}

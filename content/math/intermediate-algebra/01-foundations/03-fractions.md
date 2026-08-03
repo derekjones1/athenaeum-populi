@@ -163,6 +163,7 @@ $$
 {{< fillin
   question="Multiply: $\tfrac{11}{3}(-9a)$."
   answer="-33a"
+  answerForm="single-term"
   answerDisplay="$-33a$"
   hint="The signs are different, so the product is negative. Write $-9a$ as a fraction and divide out the common factor of $3$."
 >}}
@@ -170,6 +171,7 @@ $$
 {{< fillin
   question="Multiply: $\tfrac{13}{7}(-14b)$."
   answer="-26b"
+  answerForm="single-term"
   answerDisplay="$-26b$"
   hint="The signs are different, so the product is negative. Divide out the common factor of $7$."
 >}}
@@ -212,6 +214,7 @@ $$
 {{< fillin
   question="Divide: $-\tfrac{7}{27} \div \left(-\tfrac{35}{36}\right)$."
   answer="\frac{4}{15}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{4}{15}$"
   hint="The signs are the same, so the quotient is positive. Multiply $\tfrac{7}{27}$ by the reciprocal $\tfrac{36}{35}$ and divide out common factors."
 >}}
@@ -219,6 +222,7 @@ $$
 {{< fillin
   question="Divide: $-\tfrac{5}{14} \div \left(-\tfrac{15}{28}\right)$."
   answer="\frac{2}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{3}$"
   hint="The signs are the same, so the quotient is positive. Multiply $\tfrac{5}{14}$ by the reciprocal $\tfrac{28}{15}$."
 >}}
@@ -255,6 +259,7 @@ $$
 {{< fillin
   question="Simplify: $\cfrac{\frac{a}{8}}{\frac{ab}{6}}$."
   answer="\frac{3}{4b}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{3}{4b}$"
   hint="Rewrite as $\tfrac{a}{8} \div \tfrac{ab}{6}$, multiply by the reciprocal, then divide out the common factor of $a$."
 >}}
@@ -262,6 +267,7 @@ $$
 {{< fillin
   question="Simplify: $\cfrac{\frac{p}{2}}{\frac{pq}{8}}$."
   answer="\frac{4}{q}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{4}{q}$"
   hint="Rewrite as $\tfrac{p}{2} \div \tfrac{pq}{8}$, multiply by the reciprocal, then divide out the common factor of $p$."
 >}}
@@ -332,6 +338,7 @@ $1$ and $31$. Since $31$ does not go into $36$, the answer is simplified.
 {{< fillin
   question="Add: $\tfrac{7}{12} + \tfrac{11}{15}$."
   answer="\frac{79}{60}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{79}{60}$"
   hint="The LCD of $12$ and $15$ is $60$. Rewrite each fraction with denominator $60$, then add the numerators."
 >}}
@@ -339,6 +346,7 @@ $1$ and $31$. Since $31$ does not go into $36$, the answer is simplified.
 {{< fillin
   question="Add: $\tfrac{13}{15} + \tfrac{17}{20}$."
   answer="\frac{103}{60}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{103}{60}$"
   hint="The LCD of $15$ and $20$ is $60$. Rewrite each fraction with denominator $60$, then add the numerators."
 >}}
@@ -423,6 +431,7 @@ multiply $\tfrac{5x}{6} \cdot \tfrac{3}{10}$.
 {{< fillin
   question="Simplify: $\tfrac{3a}{4} - \tfrac{8}{9}$."
   answer="\frac{27a-32}{36}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{27a - 32}{36}$"
   hint="This is subtraction, so find the LCD of $4$ and $9$, which is $36$. Rewrite each fraction with denominator $36$."
 >}}
@@ -430,6 +439,7 @@ multiply $\tfrac{5x}{6} \cdot \tfrac{3}{10}$.
 {{< fillin
   question="Simplify: $\tfrac{3a}{4} \cdot \tfrac{8}{9}$."
   answer="\frac{2a}{3}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{2a}{3}$"
   hint="This is multiplication, so no LCD is needed. Multiply across and divide out common factors."
 >}}
@@ -437,6 +447,7 @@ multiply $\tfrac{5x}{6} \cdot \tfrac{3}{10}$.
 {{< fillin
   question="Simplify: $\tfrac{4k}{5} - \tfrac{1}{6}$."
   answer="\frac{24k-5}{30}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{24k - 5}{30}$"
   hint="This is subtraction, so find the LCD of $5$ and $6$, which is $30$."
 >}}
@@ -492,12 +503,14 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{8(-2) + 4(-3)}{-5(2) + 3}$."
   answer="4"
+  answerForm="decimal"
   hint="Simplify the numerator and denominator separately. Numerator: $-16 - 12$. Denominator: $-10 + 3$."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{7(-1) + 9(-3)}{-5(3) - 2}$."
   answer="2"
+  answerForm="decimal"
   hint="Simplify the numerator and denominator separately. Numerator: $-7 - 27$. Denominator: $-15 - 2$."
 >}}
 
@@ -524,6 +537,7 @@ $$\cfrac{\frac{1}{4}}{13} = \tfrac{1}{4} \div \tfrac{13}{1} = \tfrac{1}{4} \cdot
 {{< fillin
   question="Simplify: $\cfrac{\left(\frac{1}{3}\right)^2}{2^3 + 2}$."
   answer="\frac{1}{90}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{90}$"
   hint="Numerator: $\left(\tfrac{1}{3}\right)^2 = \tfrac{1}{9}$. Denominator: $2^3 + 2 = 10$. Then divide $\tfrac{1}{9}$ by $10$."
 >}}
@@ -531,6 +545,7 @@ $$\cfrac{\frac{1}{4}}{13} = \tfrac{1}{4} \div \tfrac{13}{1} = \tfrac{1}{4} \cdot
 {{< fillin
   question="Simplify: $\cfrac{1 + 4^2}{\left(\frac{1}{4}\right)^2}$."
   answer="272"
+  answerForm="decimal"
   hint="Numerator: $1 + 16 = 17$. Denominator: $\left(\tfrac{1}{4}\right)^2 = \tfrac{1}{16}$. Then divide $17$ by $\tfrac{1}{16}$."
 >}}
 
@@ -561,12 +576,14 @@ $$\cfrac{\frac{7}{6}}{\frac{7}{12}} = \tfrac{7}{6} \div \tfrac{7}{12} = \tfrac{7
 {{< fillin
   question="Simplify: $\cfrac{\frac{1}{3} + \frac{1}{2}}{\frac{3}{4} - \frac{2}{3}}$."
   answer="10"
+  answerForm="decimal"
   hint="Numerator: $\tfrac{1}{3} + \tfrac{1}{2} = \tfrac{5}{6}$. Denominator: $\tfrac{3}{4} - \tfrac{2}{3} = \tfrac{1}{12}$. Then divide."
 >}}
 
 {{< fillin
   question="Simplify: $\cfrac{\frac{2}{3} - \frac{1}{6}}{\frac{1}{4} + \frac{1}{3}}$."
   answer="\frac{6}{7}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{6}{7}$"
   hint="Numerator: $\tfrac{2}{3} - \tfrac{1}{6} = \tfrac{1}{2}$. Denominator: $\tfrac{1}{4} + \tfrac{1}{3} = \tfrac{7}{12}$. Then divide."
 >}}

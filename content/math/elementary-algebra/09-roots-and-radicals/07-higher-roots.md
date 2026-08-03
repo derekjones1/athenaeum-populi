@@ -83,6 +83,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt[3]{27}$."
   answer="3"
+  answerForm="simplified-radical"
   answerDisplay="$3$"
   hint="What number cubed equals $27$?"
 >}}
@@ -150,6 +151,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt[4]{m^4}$."
   answer="|m|"
+  answerForm="simplified-radical"
   answerDisplay="$|m|$"
   hint="The index is even, so use absolute value signs to guarantee the positive root."
 >}}
@@ -168,6 +170,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt[4]{u^{12}}$."
   answer="|u^3|"
+  answerForm="simplified-radical"
   answerDisplay="$|u^3|$"
   hint="Write $u^{12}$ as $(u^3)^4$. The index is even, so use an absolute value sign."
 >}}
@@ -186,6 +189,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt[3]{27x^{27}}$."
   answer="3x^9"
+  answerForm="simplified-radical"
   answerDisplay="$3x^9$"
   hint="Write $27x^{27}$ as $(3x^9)^3$. The index is odd, so no absolute value is needed."
 >}}
@@ -227,6 +231,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt[3]{y^6}$."
   answer="y^2"
+  answerForm="simplified-radical"
   answerDisplay="$y^2$"
   hint="Write $y^6$ as $(y^2)^3$; the index is odd."
 >}}
@@ -250,6 +255,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt[3]{81}$."
   answer="3\sqrt[3]{3}"
+  answerForm="simplified-radical"
   answerDisplay="$3\sqrt[3]{3}$"
   hint="The largest perfect cube factor of $81$ is $27 = 3^3$."
 >}}
@@ -275,6 +281,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt[3]{54p^{10}}$."
   answer="3p^3\sqrt[3]{2p}"
+  answerForm="simplified-radical"
   answerDisplay="$3p^3\sqrt[3]{2p}$"
   hint="Write $54p^{10}$ as $3^3 p^9 \cdot 2p$; the index is odd, so no absolute value is needed."
 >}}
@@ -317,6 +324,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt[4]{\tfrac{x^7}{x^3}}$."
   answer="|x|"
+  answerForm="simplified-radical"
   answerDisplay="$|x|$"
   hint="Divide inside the radical first: $\tfrac{x^7}{x^3} = x^4$. The index is even, so use an absolute value."
 >}}
@@ -360,6 +368,7 @@ $$
 {{< fillin
   question="Simplify: $\tfrac{\sqrt[3]{-532}}{\sqrt[3]{2}}$."
   answer="-\sqrt[3]{266}"
+  answerForm="simplified-radical"
   answerDisplay="$-\sqrt[3]{266}$"
   hint="Write as one radical and divide: $\tfrac{-532}{2} = -266$. It has no perfect cube factor."
 >}}
@@ -391,6 +400,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt[3]{\tfrac{108c^{10}}{d^6}}$."
   answer="\tfrac{3c^3\sqrt[3]{4c}}{d^2}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{3c^3\sqrt[3]{4c}}{d^2}$"
   hint="Use the Quotient Property. Write $108c^{10}$ as $27c^9 \cdot 4c$ and $d^6$ as $(d^2)^3$."
 >}}
@@ -424,6 +434,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt[5]{3x} + \sqrt[5]{3x}$."
   answer="2\sqrt[5]{3x}"
+  answerForm="simplified-radical"
   answerDisplay="$2\sqrt[5]{3x}$"
   hint="The radicals are like, so add the coefficients $1 + 1$."
 >}}
@@ -452,6 +463,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt[3]{192} - \sqrt[3]{81}$."
   answer="\sqrt[3]{3}"
+  answerForm="simplified-radical"
   answerDisplay="$\sqrt[3]{3}$"
   hint="Simplify each: $\sqrt[3]{192} = 4\sqrt[3]{3}$ and $\sqrt[3]{81} = 3\sqrt[3]{3}$, then combine."
 >}}

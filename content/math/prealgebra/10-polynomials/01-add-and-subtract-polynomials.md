@@ -151,6 +151,7 @@ $$23x^2$$
 {{< fillin
   question="Add: $12x^2 + 5x^2$."
   answer="17x^2"
+  answerForm="no-like-terms"
   answerDisplay="$17x^2$"
   hint="Only the coefficients combine — the exponent on $x$ stays the same."
 >}}
@@ -166,6 +167,7 @@ $$19n$$
 {{< fillin
   question="Subtract: $9n - (-5n)$."
   answer="14n"
+  answerForm="no-like-terms"
   hint="Subtracting a negative is the same as adding its opposite."
 >}}
 
@@ -183,6 +185,7 @@ same, so this expression cannot be simplified any further.
 {{< fillin
   question="Add: $3x^2 + 3y^2 - 5x^2$."
   answer="-2x^2 + 3y^2"
+  answerForm="no-like-terms"
   answerDisplay="$-2x^2 + 3y^2$"
   hint="Combine only the $x^2$ terms with each other; the $y^2$ term has no like term to join."
 >}}
@@ -212,6 +215,7 @@ $$7x^2 - 13x - 8$$
 {{< fillin
   question="Find the sum: $(3x^2 - 2x + 8) + (x^2 - 6x + 2)$."
   answer="4x^2 - 8x + 10"
+  answerForm="no-like-terms"
   answerDisplay="$4x^2 - 8x + 10$"
   hint="Rearrange so like terms are together, then combine each group of like terms."
 >}}
@@ -219,6 +223,7 @@ $$7x^2 - 13x - 8$$
 {{< fillin
   question="Find the sum: $(7y^2 + 4y - 6) + (4y^2 + 5y + 1)$."
   answer="11y^2 + 9y - 5"
+  answerForm="no-like-terms"
   answerDisplay="$11y^2 + 9y - 5$"
   hint="Rearrange so like terms are together, then combine each group of like terms."
 >}}
@@ -244,6 +249,7 @@ $$3u^2 - 5u + 5$$
 {{< fillin
   question="Find the difference: $(6y^2 + 3y - 1) - (3y^2 - 4)$."
   answer="3y^2 + 3y + 3"
+  answerForm="no-like-terms"
   answerDisplay="$3y^2 + 3y + 3$"
   hint="Distribute the minus sign across every term of the second polynomial first, then combine like terms."
 >}}
@@ -251,6 +257,7 @@ $$3u^2 - 5u + 5$$
 {{< fillin
   question="Find the difference: $(8u^2 - 7u - 2) - (5u^2 - 6u - 4)$."
   answer="3u^2 - u + 2"
+  answerForm="no-like-terms"
   answerDisplay="$3u^2 - u + 2$"
   hint="Distribute the minus sign across every term of the second polynomial first, then combine like terms."
 >}}
@@ -442,6 +449,7 @@ other polynomial
 {{< fillin
   question="Add: $6x^2 + 9x^2$."
   answer="15x^2"
+  answerForm="no-like-terms"
   answerDisplay="$15x^2$"
   hint="These are like terms, so add the coefficients and keep the exponent on $x$ unchanged."
 >}}
@@ -449,6 +457,7 @@ other polynomial
 {{< fillin
   question="Add: $-12u + 4u$."
   answer="-8u"
+  answerForm="no-like-terms"
   answerDisplay="$-8u$"
   hint="Combine the coefficients $-12$ and $4$; the variable part stays the same."
 >}}
@@ -472,6 +481,7 @@ other polynomial
 {{< fillin
   question="Add: $(4y^2 + 10y + 3) + (8y^2 - 6y + 5)$."
   answer="12y^2 + 4y + 8"
+  answerForm="no-like-terms"
   answerDisplay="$12y^2 + 4y + 8$"
   hint="Drop the parentheses, group the like terms together, then combine each group."
 >}}
@@ -479,6 +489,7 @@ other polynomial
 {{< fillin
   question="Add: $(x^2 + 6x + 8) + (-4x^2 + 11x - 9)$."
   answer="-3x^2 + 17x - 1"
+  answerForm="no-like-terms"
   answerDisplay="$-3x^2 + 17x - 1$"
   hint="Watch the sign on $-4x^2$ when you combine it with $x^2$."
 >}}
@@ -486,6 +497,7 @@ other polynomial
 {{< fillin
   question="Subtract: $(6m^2 - 9m - 3) - (2m^2 + m - 5)$."
   answer="4m^2 - 10m + 2"
+  answerForm="no-like-terms"
   answerDisplay="$4m^2 - 10m + 2$"
   hint="Distribute the minus sign across all three terms of the second polynomial before combining."
 >}}

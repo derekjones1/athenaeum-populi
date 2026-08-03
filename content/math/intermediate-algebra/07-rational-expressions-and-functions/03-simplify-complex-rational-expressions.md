@@ -113,6 +113,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{\tfrac{1}{2}+\tfrac{2}{3}}{\tfrac{5}{6}+\tfrac{1}{12}}$ by writing it as division."
   answer="\tfrac{14}{11}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{14}{11}$"
   hint="Combine the fractions in the numerator and denominator separately before dividing."
 >}}
@@ -120,6 +121,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{\tfrac{3}{4}-\tfrac{1}{3}}{\tfrac{1}{8}+\tfrac{5}{6}}$ by writing it as division."
   answer="\tfrac{10}{23}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{10}{23}$"
   hint="Simplify the numerator and denominator separately, then multiply by the reciprocal."
 >}}
@@ -229,6 +231,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{\tfrac{1}{2}+\tfrac{1}{5}}{\tfrac{1}{10}+\tfrac{1}{5}}$ by using the LCD."
   answer="\tfrac{7}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{7}{3}$"
   hint="The LCD of every fraction in the expression is $10$."
 >}}
@@ -236,6 +239,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{\tfrac{1}{4}+\tfrac{3}{8}}{\tfrac{1}{2}-\tfrac{5}{16}}$ by using the LCD."
   answer="\tfrac{10}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{10}{3}$"
   hint="Multiply both the numerator and denominator by the LCD, $16$."
 >}}

@@ -293,6 +293,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{5x}{x^2+5x+6}\cdot\tfrac{x^2-4}{10x}$."
   answer="\frac{x-2}{2(x+3)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{x-2}{2(x+3)}$"
   hint="Factor $x^2+5x+6$ and $x^2-4$, then remove common factors."
 >}}
@@ -300,6 +301,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{9x^2}{x^2+11x+30}\cdot\tfrac{x^2-36}{3x^2}$."
   answer="\frac{3(x-6)}{x+5}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{3(x-6)}{x+5}$"
   hint="Factor both quadratic expressions completely before multiplying."
 >}}
@@ -326,6 +328,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{2x^2+5x-12}{x^2-16}\cdot\tfrac{x^2-8x+16}{2x^2-13x+15}$."
   answer="\frac{x-4}{x-5}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{x-4}{x-5}$"
   hint="Factor every polynomial completely, then divide out common factors."
 >}}
@@ -333,6 +336,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{4b^2+7b-2}{1-b^2}\cdot\tfrac{b^2-2b+1}{4b^2+15b-4}$."
   answer="-\frac{(b+2)(b-1)}{(b+1)(b+4)}"
+  answerForm="single-fraction"
   answerDisplay="$-\tfrac{(b+2)(b-1)}{(b+1)(b+4)}$"
   hint="Factor each polynomial and recognize the opposite factors $1-b$ and $b-1$."
 >}}
@@ -369,6 +373,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{x^3+8}{3x^2-6x+12}\div\tfrac{x^2-4}{6}$."
   answer="\frac{2}{x-2}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{2}{x-2}$"
   hint="Multiply by the reciprocal, factor the sum of cubes and difference of squares, then simplify."
 >}}
@@ -376,6 +381,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{2z^2}{z^2-1}\div\tfrac{z^3-z^2+z}{z^3+1}$."
   answer="\frac{2z}{z-1}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{2z}{z-1}$"
   hint="Multiply by the reciprocal and factor $z^3+1$ as a sum of cubes."
 >}}

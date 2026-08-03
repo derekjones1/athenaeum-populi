@@ -215,12 +215,14 @@ point in the sum gives $23.5 + 41.38 = 64.88$.
 {{< fillin
   question="Add: $4.8 + 11.69$."
   answer="16.49"
+  answerForm="decimal"
   hint="Line up the decimal points, padding $4.8$ with a trailing zero ($4.80$) so both numbers have the same number of decimal places."
 >}}
 
 {{< fillin
   question="Add: $5.123 + 18.47$."
   answer="23.593"
+  answerForm="decimal"
   hint="Line up the decimal points, padding $18.47$ with a trailing zero ($18.470$) so both numbers have the same number of decimal places."
 >}}
 
@@ -234,12 +236,14 @@ and placing the decimal point in the answer gives $20.00 - 14.65 = 5.35$.
 {{< fillin
   question="Subtract: $10 - 9.58$."
   answer="0.42"
+  answerForm="decimal"
   hint="Rewrite $10$ as $10.00$ so it has the same number of decimal places as $9.58$, then subtract."
 >}}
 
 {{< fillin
   question="Subtract: $50 - 37.42$."
   answer="12.58"
+  answerForm="decimal"
   hint="Rewrite $50$ as $50.00$ so it has the same number of decimal places as $37.42$, then subtract."
 >}}
 
@@ -292,12 +296,14 @@ product is negative: $(-3.9)(4.075) = -15.8925$.
 {{< fillin
   question="Multiply: $-4.5(6.107)$."
   answer="-27.4815"
+  answerForm="decimal"
   hint="Multiply $45$ by $6{,}107$ as whole numbers, then place the decimal point so the product has $1 + 3 = 4$ decimal places. The signs are different, so the product is negative."
 >}}
 
 {{< fillin
   question="Multiply: $-10.79(8.12)$."
   answer="-87.6148"
+  answerForm="decimal"
   hint="Multiply $1079$ by $812$ as whole numbers, then place the decimal point so the product has $2 + 2 = 4$ decimal places. The signs are different, so the product is negative."
 >}}
 
@@ -384,12 +390,14 @@ sign: $-25.65 \div (-0.06) = 427.5$.
 {{< fillin
   question="Divide: $-23.492 \div (-0.04)$."
   answer="587.3"
+  answerForm="decimal"
   hint="The signs are the same, so the quotient is positive. Move both decimal points $2$ places to the right, then divide $2349.2$ by $4$."
 >}}
 
 {{< fillin
   question="Divide: $-4.11 \div (-0.12)$."
   answer="34.25"
+  answerForm="decimal"
   hint="The signs are the same, so the quotient is positive. Move both decimal points $2$ places to the right, then divide $411$ by $12$."
 >}}
 
@@ -544,12 +552,14 @@ So $\tfrac{7}{8} + 6.4 = 7.275$.
 {{< fillin
   question="Simplify: $\tfrac{3}{8} + 4.9$."
   answer="5.275"
+  answerForm="decimal"
   hint="Convert $\tfrac{3}{8}$ to a decimal first (divide $3$ by $8$), then add the two decimals."
 >}}
 
 {{< fillin
   question="Simplify: $5.7 + \tfrac{13}{20}$."
   answer="6.35"
+  answerForm="decimal"
   hint="Convert $\tfrac{13}{20}$ to a decimal first (divide $13$ by $20$), then add the two decimals."
 >}}
 
@@ -659,12 +669,14 @@ negative eight and seventy-one hundredths
 {{< fillin
   question="Add: $15 + 0.73$."
   answer="15.73"
+  answerForm="decimal"
   hint="Line up the decimal points; $15$ has an implied decimal point right after the ones place, so pad it with two zeros."
 >}}
 
 {{< fillin
   question="Subtract: $91.95 - (-10.462)$."
   answer="102.412"
+  answerForm="decimal"
   hint="Subtracting a negative number is the same as adding its opposite: rewrite as $91.95 + 10.462$, line up the decimal points, and add."
 >}}
 
@@ -673,6 +685,7 @@ negative eight and seventy-one hundredths
 {{< fillin
   question="Multiply: $(-5.18)(-65.23)$."
   answer="337.8914"
+  answerForm="decimal"
   hint="Multiply $518$ by $6{,}523$ as whole numbers, then place the decimal point so the product has $2 + 2 = 4$ decimal places. The signs are the same, so the product is positive."
 >}}
 
@@ -693,6 +706,7 @@ negative eight and seventy-one hundredths
 {{< fillin
   question="Divide: $1.44 \div (-0.3)$."
   answer="-4.8"
+  answerForm="decimal"
   hint="The signs are different, so the quotient is negative. Divide $1.44$ by $0.3$ as if both were positive, then attach the sign."
 >}}
 

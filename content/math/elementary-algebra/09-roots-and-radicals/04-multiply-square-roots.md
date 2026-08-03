@@ -142,6 +142,7 @@ $$
 {{< fillin
   question="Simplify: $\left(\sqrt{6x^5}\right)\left(\sqrt{2x}\right)$."
   answer="2x^3\sqrt{3}"
+  answerForm="simplified-radical"
   answerDisplay="$2x^3\sqrt{3}$"
   hint="Multiply under one radical to get $\sqrt{12x^6}$, then pull out the perfect-square factor $4x^6$."
 >}}
@@ -162,6 +163,7 @@ $$
 {{< fillin
   question="Simplify: $\left(6\sqrt{2x^2}\right)\left(8\sqrt{45x^4}\right)$."
   answer="144x^3\sqrt{10}"
+  answerForm="simplified-radical"
   answerDisplay="$144x^3\sqrt{10}$"
   hint="Multiply coefficients ($6 \cdot 8 = 48$) and radicals ($\sqrt{2x^2} \cdot \sqrt{45x^4} = \sqrt{90x^6}$), then simplify: $\sqrt{90x^6} = 3x^3\sqrt{10}$."
 >}}
@@ -256,6 +258,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{3}\left(2 - \sqrt{18}\right)$."
   answer="2\sqrt{3} - 3\sqrt{6}"
+  answerForm="simplified-radical"
   answerDisplay="$2\sqrt{3} - 3\sqrt{6}$"
   hint="Distribute the $\sqrt{3}$: the second term is $\sqrt{3} \cdot \sqrt{18} = \sqrt{54}$, which simplifies to $3\sqrt{6}$."
 >}}

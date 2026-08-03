@@ -574,12 +574,14 @@ $$
 {{< fillin
   question="Simplify: $30 \div 5 + 10(3 - 2)$."
   answer="16"
+  answerForm="decimal"
   hint="Do the parentheses first, then divide and multiply left to right, then add."
 >}}
 
 {{< fillin
   question="Simplify: $70 \div 10 + 4(6 - 2)$."
   answer="23"
+  answerForm="decimal"
   hint="Do the parentheses first, then divide and multiply left to right, then add."
 >}}
 
@@ -603,6 +605,7 @@ $$
 {{< fillin
   question="Simplify: $9 + 5^3 - [4(9 + 3)]$."
   answer="86"
+  answerForm="decimal"
   hint="Simplify inside the brackets first, then the exponent, then subtract."
 >}}
 
@@ -753,6 +756,7 @@ $$
 {{< fillin
   question="Simplify by combining like terms: $3x^2 + 7x + 9 + 7x^2 + 9x + 8$."
   answer="10x^2 + 16x + 17"
+  answerForm="no-like-terms"
   answerDisplay="$10x^2 + 16x + 17$"
   hint="Add the coefficients of the $x^2$ terms, the $x$ terms, and the constants separately."
 >}}
@@ -760,6 +764,7 @@ $$
 {{< fillin
   question="Simplify by combining like terms: $4y^2 + 5y + 2 + 8y^2 + 4y + 5$."
   answer="12y^2 + 9y + 7"
+  answerForm="no-like-terms"
   answerDisplay="$12y^2 + 9y + 7$"
   hint="Add the coefficients of the $y^2$ terms, the $y$ terms, and the constants separately."
 >}}

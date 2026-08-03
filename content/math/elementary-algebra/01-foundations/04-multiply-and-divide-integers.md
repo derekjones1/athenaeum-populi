@@ -74,18 +74,21 @@ product is *negative*. We'll put this all together in the chart below.
 {{< fillin
   question="Multiply: $-6 \cdot 8$"
   answer="-48"
+  answerForm="decimal"
   hint="The signs are different, so the product is negative."
 >}}
 
 {{< fillin
   question="Multiply: $-4(-7)$"
   answer="28"
+  answerForm="decimal"
   hint="The signs are the same, so the product is positive."
 >}}
 
 {{< fillin
   question="Multiply: $9(-7)$"
   answer="-63"
+  answerForm="decimal"
   hint="The signs are different, so the product is negative."
 >}}
 
@@ -114,12 +117,14 @@ opposite of $-11$: $-1(-11) = 11$.
 {{< fillin
   question="Multiply: $-1 \cdot 9$"
   answer="-9"
+  answerForm="decimal"
   hint="Multiplying by $-1$ gives the opposite of the number."
 >}}
 
 {{< fillin
   question="Multiply: $-1 \cdot (-17)$"
   answer="17"
+  answerForm="decimal"
   hint="Multiplying by $-1$ gives the opposite of the number."
 >}}
 
@@ -157,12 +162,14 @@ $-100 \div (-4) = 25$.
 {{< fillin
   question="Divide: $-42 \div 6$"
   answer="-7"
+  answerForm="decimal"
   hint="The signs are different, so the quotient is negative."
 >}}
 
 {{< fillin
   question="Divide: $-117 \div (-3)$"
   answer="39"
+  answerForm="decimal"
   hint="The signs are the same, so the quotient is positive."
 >}}
 
@@ -182,6 +189,7 @@ $-42 - 6$. Then subtract: $-48$.
 {{< fillin
   question="Simplify: $8(-3) + 5(-7) - 4$"
   answer="-63"
+  answerForm="decimal"
   hint="Multiply first, working left to right, then add and subtract left to right."
 >}}
 
@@ -201,12 +209,14 @@ then take the opposite.
 {{< fillin
   question="Simplify: $(-3)^4$"
   answer="81"
+  answerForm="decimal"
   hint="Write $(-3)$ to the fourth power in expanded form: $(-3)(-3)(-3)(-3)$."
 >}}
 
 {{< fillin
   question="Simplify: $-3^4$"
   answer="-81"
+  answerForm="decimal"
   hint="Here the exponent applies only to $3$, not to the sign. Raise $3$ to the fourth power, then take the opposite."
 >}}
 
@@ -220,6 +230,7 @@ $12 - (-9)$. Then subtract: $21$.
 {{< fillin
   question="Simplify: $17 - 4(8 - 11)$"
   answer="29"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first, then multiply, then subtract."
 >}}
 
@@ -231,6 +242,7 @@ $-72 \div (-8)$. Then divide: $9$.
 {{< fillin
   question="Simplify: $12(-9) \div (-3)^3$"
   answer="4"
+  answerForm="decimal"
   hint="Simplify the exponent first, then multiply, then divide."
 >}}
 
@@ -243,12 +255,14 @@ add: $6$.
 {{< fillin
   question="Simplify: $-27 \div 3 + (-5)(-6)$"
   answer="21"
+  answerForm="decimal"
   hint="Multiply and divide left to right before adding."
 >}}
 
 {{< fillin
   question="Simplify: $-32 \div 4 + (-2)(-7)$"
   answer="6"
+  answerForm="decimal"
   hint="Multiply and divide left to right before adding."
 >}}
 
@@ -459,12 +473,14 @@ yards.
 {{< fillin
   question="Multiply: $-4 \cdot 8$"
   answer="-32"
+  answerForm="decimal"
   hint="The signs are different, so the product is negative."
 >}}
 
 {{< fillin
   question="Multiply: $-1(-14)$"
   answer="14"
+  answerForm="decimal"
   hint="Multiplying by $-1$ gives the opposite of the number."
 >}}
 
@@ -473,12 +489,14 @@ yards.
 {{< fillin
   question="Divide: $-24 \div 6$"
   answer="-4"
+  answerForm="decimal"
   hint="The signs are different, so the quotient is negative."
 >}}
 
 {{< fillin
   question="Divide: $-52 \div (-4)$"
   answer="13"
+  answerForm="decimal"
   hint="The signs are the same, so the quotient is positive."
 >}}
 
@@ -487,18 +505,21 @@ yards.
 {{< fillin
   question="Simplify: $5(-6) + 7(-2) - 3$"
   answer="-47"
+  answerForm="decimal"
   hint="Multiply first, working left to right, then add and subtract left to right."
 >}}
 
 {{< fillin
   question="Simplify: $(-2)^6$"
   answer="64"
+  answerForm="decimal"
   hint="Write $(-2)$ to the sixth power in expanded form and multiply."
 >}}
 
 {{< fillin
   question="Simplify: $-4^2$"
   answer="-16"
+  answerForm="decimal"
   hint="Here the exponent applies only to $4$, not to the sign. Square $4$, then take the opposite."
 >}}
 

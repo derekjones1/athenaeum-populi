@@ -174,6 +174,7 @@ $$u^2 v + 5u^2 - 3v^2$$
 {{< fillin
   question="Add: $12q^2 + 9q^2$."
   answer="21q^2"
+  answerForm="no-like-terms"
   answerDisplay="$21q^2$"
   hint="These are like terms; add the coefficients 12 and 9 and keep the $q^2$."
 >}}
@@ -181,12 +182,14 @@ $$u^2 v + 5u^2 - 3v^2$$
 {{< fillin
   question="Subtract: $8m - (-5m)$."
   answer="13m"
+  answerForm="no-like-terms"
   hint="Subtracting a negative is the same as adding, so combine $8m$ and $5m$."
 >}}
 
 {{< fillin
   question="Simplify: $8y^2 + 3z^2 - 3y^2$."
   answer="5y^2 + 3z^2"
+  answerForm="no-like-terms"
   answerDisplay="$5y^2 + 3z^2$"
   hint="Only $8y^2$ and $-3y^2$ are like terms; the $z^2$ term has no partner to combine with."
 >}}
@@ -262,6 +265,7 @@ $$
 {{< fillin
   question="Find the sum: $(7x^2 - 4x + 5) + (x^2 - 7x + 3)$."
   answer="8x^2 - 11x + 8"
+  answerForm="no-like-terms"
   answerDisplay="$8x^2 - 11x + 8$"
   hint="Group like terms: combine the $x^2$ terms, the $x$ terms, and the constants separately."
 >}}
@@ -269,6 +273,7 @@ $$
 {{< fillin
   question="Find the difference: $(8x^2 + 3x - 19) - (7x^2 - 14)$."
   answer="x^2 + 3x - 5"
+  answerForm="no-like-terms"
   answerDisplay="$x^2 + 3x - 5$"
   hint="Distribute the minus sign across the second polynomial first: $-(7x^2 - 14)$ becomes $-7x^2 + 14$."
 >}}
@@ -348,6 +353,174 @@ The cost of producing the box is $\text{\textdollar}456$.
   hint="Substitute $x = 6$ and $y = 4$: $6(6)^2 + 15(6)(4) = 216 + 360$."
 >}}
 
+## Practice
+
+### Identify polynomials, monomials, binomials, and trinomials
+
+{{< multiplechoice
+  question="How would you classify the polynomial $81b^5 - 24b^3 + 1$?"
+  hint="Count how many terms are separated by $+$ or $-$ signs, then match monomial (one), binomial (two), trinomial (three), or other polynomial (four or more)."
+  answer="trinomial"
+>}}
+monomial
+binomial
+trinomial
+other polynomial
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="How would you classify the polynomial $5c^3 + 11c^2 - c - 8$?"
+  hint="Count the terms; four or more terms has no special name of its own."
+  answer="other polynomial"
+>}}
+monomial
+binomial
+trinomial
+other polynomial
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="How would you classify the polynomial $\tfrac{14}{15}y + \tfrac{1}{7}$?"
+  hint="Rewrite the expression as separate terms joined by $+$, then count them."
+  answer="binomial"
+>}}
+monomial
+binomial
+trinomial
+other polynomial
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="How would you classify the polynomial $5$?"
+  hint="A single number with no variable is still exactly one term."
+  answer="monomial"
+>}}
+monomial
+binomial
+trinomial
+other polynomial
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="How would you classify the polynomial $4y + 17$?"
+  hint="Count the terms joined by $+$ or $-$."
+  answer="binomial"
+>}}
+monomial
+binomial
+trinomial
+other polynomial
+{{< /multiplechoice >}}
+
+### Determine the degree of polynomials
+
+{{< fillin
+  question="Find the degree of the polynomial $6a^2 + 12a + 14$."
+  answer="2"
+  hint="The degree of a term is the exponent on its variable; the degree of the polynomial is the largest one among its terms."
+>}}
+
+{{< fillin
+  question="Find the degree of the polynomial $18xy^2z$."
+  answer="4"
+  hint="When a term has more than one variable, add the exponents of all its variables to find that term's degree."
+>}}
+
+{{< fillin
+  question="Find the degree of the polynomial $5x + 2$."
+  answer="1"
+  hint="Remember that $x$ means $x^1$."
+>}}
+
+{{< fillin
+  question="Find the degree of the polynomial $y^3 - 8y^2 + 2y - 16$."
+  answer="3"
+  hint="Compare the exponents on each term and take the largest."
+>}}
+
+{{< fillin
+  question="Find the degree of the polynomial $-24$."
+  answer="0"
+  hint="A polynomial with no variable is a constant; recall the degree assigned to a constant."
+>}}
+
+### Add and subtract monomials
+
+{{< fillin
+  question="Add: $7x^2 + 5x^2$."
+  answer="12x^2"
+  answerForm="no-like-terms"
+  answerDisplay="$12x^2$"
+  hint="These are like terms; add the coefficients and keep the variable part unchanged."
+>}}
+
+{{< fillin
+  question="Subtract: $28x - (-12x)$."
+  answer="40x"
+  answerForm="no-like-terms"
+  hint="Subtracting a negative is the same as adding its opposite."
+>}}
+
+{{< fillin
+  question="Simplify: $12a + 5b - 22a$."
+  answer="-10a + 5b"
+  answerForm="no-like-terms"
+  answerDisplay="$-10a + 5b$"
+  hint="Combine only the terms that share the same variable; the $b$ term has no partner to combine with."
+>}}
+
+### Add and subtract polynomials
+
+{{< fillin
+  question="Find the sum: $(5y^2 + 12y + 4) + (6y^2 - 8y + 7)$."
+  answer="11y^2 + 4y + 11"
+  answerForm="no-like-terms"
+  answerDisplay="$11y^2 + 4y + 11$"
+  hint="Group the matching powers of $y$ together, then add each pair of coefficients."
+>}}
+
+{{< fillin
+  question="Subtract $(9x^2 + 2)$ from $(12x^2 - x + 6)$."
+  answer="3x^2 - x + 4"
+  answerDisplay="$3x^2 - x + 4$"
+  hint="\"Subtract $A$ from $B$\" means compute $B - A$; distribute the minus sign across every term of $A$."
+>}}
+
+{{< fillin
+  question="Find the sum: $(7x^2 - 2xy + 6y^2) + (3x^2 - 5xy)$."
+  answer="10x^2 - 7xy + 6y^2"
+  answerForm="no-like-terms"
+  answerDisplay="$10x^2 - 7xy + 6y^2$"
+  hint="Combine only the terms that share both the same variables and exponents."
+>}}
+
+### Evaluate a polynomial for a given value
+
+{{< fillin
+  question="Evaluate $8y^2 - 3y + 2$ when $y = 5$."
+  answer="187"
+  hint="Substitute $5$ for $y$ and simplify using the order of operations."
+>}}
+
+{{< fillin
+  question="Evaluate $8y^2 - 3y + 2$ when $y = -2$."
+  answer="40"
+  hint="Substitute $-2$ for $y$; remember $(-2)^2 = 4$, a positive number."
+>}}
+
+{{< fillin
+  question="Evaluate $8y^2 - 3y + 2$ when $y = 0$."
+  answer="2"
+  hint="Substitute $0$ for $y$; every term containing $y$ becomes $0$."
+>}}
+
+{{< fillin
+  question="A manufacturer of stereo speakers finds that the revenue received from selling the speakers at a price of $p$ dollars each is given by the polynomial $-4p^2 + 420p$. Find the revenue (in dollars) when $p = 60$."
+  answer="10800"
+  answerDisplay="\$10,800"
+  hint="Substitute $60$ for $p$ in $-4p^2 + 420p$ and simplify with the order of operations."
+>}}
+
 ## Key terms
 
 **monomial** — a term of the form $ax^m$, where $a$ is a constant and $m$ is a
@@ -361,4 +534,4 @@ descending order of degree.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 6.1: Add and Subtract Polynomials](https://openstax.org/books/elementary-algebra-2e/pages/6-1-add-and-subtract-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the polynomial-classification and degree examples as prose with (a)/(b)/(c) enumerations and a summary table, and the worked add/subtract examples as display equality chains; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback — using multiple-choice for the "name the type of polynomial" Try Its, since a word answer can't be graded by the math checker.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 6.1: Add and Subtract Polynomials](https://openstax.org/books/elementary-algebra-2e/pages/6-1-add-and-subtract-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the polynomial-classification and degree examples as prose with (a)/(b)/(c) enumerations and a summary table, and the worked add/subtract examples as display equality chains; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback — using multiple-choice for the "name the type of polynomial" Try Its, since a word answer can't be graded by the math checker.</small>

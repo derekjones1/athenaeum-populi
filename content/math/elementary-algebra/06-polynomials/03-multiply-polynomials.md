@@ -37,6 +37,7 @@ $$
 {{< fillin
   question="Multiply: $5(x + 7)$."
   answer="5x + 35"
+  answerForm="expanded"
   hint="Distribute the 5 to each term inside the parentheses: $5\cdot x$ and $5\cdot 7$."
 >}}
 
@@ -52,6 +53,7 @@ $$
 {{< fillin
   question="Multiply: $x(x - 7)$."
   answer="x^2 - 7x"
+  answerForm="expanded"
   hint="Distribute the x: $x\cdot x$ gives $x^2$, and $x\cdot 7$ gives 7x."
 >}}
 
@@ -67,6 +69,7 @@ $$
 {{< fillin
   question="Multiply: $5x(x + 4y)$."
   answer="5x^2 + 20xy"
+  answerForm="expanded"
   hint="Distribute the 5x: $5x\cdot x$ gives $5x^2$, and $5x\cdot 4y$ gives 20xy."
 >}}
 
@@ -82,6 +85,7 @@ $$
 {{< fillin
   question="Multiply: $-3y(5y^2 + 8y - 7)$."
   answer="-15y^3 - 24y^2 + 21y"
+  answerForm="expanded"
   hint="Distribute $-3y$ to each of the three terms, watching the signs on the last term."
 >}}
 
@@ -97,6 +101,7 @@ $$
 {{< fillin
   question="Multiply: $4x(3x^2 - 5x + 3)$."
   answer="12x^3 - 20x^2 + 12x"
+  answerForm="expanded"
   hint="Distribute 4x to each term, adding exponents when multiplying the variable parts."
 >}}
 
@@ -115,6 +120,7 @@ $$
 {{< fillin
   question="Multiply: $(x + 8)p$."
   answer="xp + 8p"
+  answerForm="expanded"
   hint="The monomial p is the second factor. Distribute it to each term of the binomial."
 >}}
 
@@ -155,6 +161,7 @@ $$
 {{< fillin
   question="Multiply: $(x + 8)(x + 9)$."
   answer="x^2 + 17x + 72"
+  answerForm="expanded"
   hint="Distribute $(x + 9)$ to each term of the first binomial, then combine the two middle terms."
 >}}
 
@@ -171,6 +178,7 @@ $$
 {{< fillin
   question="Multiply: $(3b + 5)(4b + 6)$."
   answer="12b^2 + 38b + 30"
+  answerForm="expanded"
   hint="Distribute $(4b + 6)$, then combine the two middle terms 18b and 20b."
 >}}
 
@@ -187,6 +195,7 @@ $$
 {{< fillin
   question="Multiply: $(5y + 2)(6y - 3)$."
   answer="30y^2 - 3y - 6"
+  answerForm="expanded"
   hint="Distribute, then combine the two middle terms $-15y$ and 12y."
 >}}
 
@@ -204,6 +213,7 @@ There are no like terms to combine.
 {{< fillin
   question="Multiply: $(a + 7)(a - b)$."
   answer="a^2 - ab + 7a - 7b"
+  answerForm="expanded"
   hint="Distribute $(a - b)$ to each term. There are no like terms to combine."
 >}}
 
@@ -244,6 +254,7 @@ $$
 {{< fillin
   question="Multiply using the FOIL method: $(x + 6)(x + 8)$."
   answer="x^2 + 14x + 48"
+  answerForm="expanded"
   hint="First $x^2$, Outer 8x, Inner 6x, Last 48; then combine the middle terms."
 >}}
 
@@ -274,6 +285,7 @@ $$
 {{< fillin
   question="Multiply: $(x - 7)(x + 5)$."
   answer="x^2 - 2x - 35"
+  answerForm="expanded"
   hint="First $x^2$, Outer 5x, Inner $-7x$, Last -35; combine 5x and $-7x$."
 >}}
 
@@ -292,6 +304,7 @@ $$
 {{< fillin
   question="Multiply: $(3x + 7)(5x - 2)$."
   answer="15x^2 + 29x - 14"
+  answerForm="expanded"
   hint="First $15x^2$, Outer $-6x$, Inner 35x, Last -14; combine $-6x$ and 35x."
 >}}
 
@@ -314,6 +327,7 @@ There are no like terms to combine.
 {{< fillin
   question="Multiply: $(7x - y)(2x - 5)$."
   answer="14x^2 - 35x - 2xy + 5y"
+  answerForm="expanded"
   hint="First $14x^2$, Outer $-35x$, Inner $-2xy$, Last 5y. There are no like terms."
 >}}
 
@@ -335,6 +349,7 @@ There are no like terms to combine.
 {{< fillin
   question="Multiply: $(x^2 + 6)(x - 8)$."
   answer="x^3 - 8x^2 + 6x - 48"
+  answerForm="expanded"
   hint="First $x^3$, Outer $-8x^2$, Inner 6x, Last -48. Watch the exponent on the First term."
 >}}
 
@@ -353,6 +368,7 @@ $$
 {{< fillin
   question="Multiply: $(2ab + 5)(4ab - 4)$."
   answer="8a^2b^2 + 12ab - 20"
+  answerForm="expanded"
   hint="First $8a^2b^2$, Outer $-8ab$, Inner 20ab, Last -20; combine $-8ab$ and 20ab."
 >}}
 
@@ -404,6 +420,7 @@ Notice the partial products are the same as the terms in the FOIL method.
 {{< fillin
   question="Multiply using the Vertical Method: $(5m - 7)(3m - 6)$."
   answer="15m^2 - 51m + 42"
+  answerForm="expanded"
   hint="Partial products: $-6(5m - 7) = -30m + 42$ and $3m(5m - 7) = 15m^2 - 21m$. Add like terms."
 >}}
 
@@ -442,6 +459,7 @@ $$
 {{< fillin
   question="Multiply using the Distributive Property: $(y - 3)(y^2 - 5y + 2)$."
   answer="y^3 - 8y^2 + 17y - 6"
+  answerForm="expanded"
   hint="Distribute y and then -3 across the trinomial, then combine like terms."
 >}}
 
@@ -469,6 +487,7 @@ $$
 {{< fillin
   question="Multiply using the Vertical Method: $(x + 4)(2x^2 - 3x + 5)$."
   answer="2x^3 + 5x^2 - 7x + 20"
+  answerForm="expanded"
   hint="Partial products: $4(2x^2 - 3x + 5)$ and $x(2x^2 - 3x + 5)$. Line up like terms and add."
 >}}
 
@@ -479,6 +498,77 @@ $$
   - Distributive Property
   - Vertical Method
 {{< /callout >}}
+
+## Practice
+
+### Multiply a polynomial by a monomial
+
+{{< fillin
+  question="Multiply: $4(w + 10)$."
+  answer="4w + 40"
+  answerForm="expanded"
+  hint="Distribute the 4 to each term inside the parentheses."
+>}}
+
+{{< fillin
+  question="Multiply: $-4z^2(3z^2 + 12z - 1)$."
+  answer="-12z^4 - 48z^3 + 4z^2"
+  answerForm="expanded"
+  hint="Distribute $-4z^2$ to each of the three terms, adding exponents and watching the sign on the last term."
+>}}
+
+{{< fillin
+  question="Multiply: $(w - 6) \cdot 8$."
+  answer="8w - 48"
+  answerForm="expanded"
+  hint="The monomial 8 is the second factor here. Distribute it to each term of the binomial."
+>}}
+
+### Multiply a binomial by a binomial
+
+{{< fillin
+  question="Multiply: $(w + 5)(w + 7)$."
+  answer="w^2 + 12w + 35"
+  answerForm="expanded"
+  hint="Use FOIL or the Distributive Property to find the four products, then combine the two middle terms."
+>}}
+
+{{< fillin
+  question="Multiply: $(5x - y)(3x - 6)$."
+  answer="15x^2 - 3xy - 30x + 6y"
+  answerForm="expanded"
+  hint="Multiply each term of the first binomial by each term of the second. There are no like terms to combine here."
+>}}
+
+{{< fillin
+  question="Multiply: $(x^2 + 8)(x^2 - 5)$."
+  answer="x^4 + 3x^2 - 40"
+  answerForm="expanded"
+  hint="Multiply the First terms carefully — $x^2\cdot x^2$ adds exponents to give $x^4$ — then combine the two middle terms."
+>}}
+
+### Multiply a trinomial by a binomial
+
+{{< fillin
+  question="Multiply: $(x + 5)(x^2 + 4x + 3)$."
+  answer="x^3 + 9x^2 + 23x + 15"
+  answerForm="expanded"
+  hint="Distribute both x and 5 across the trinomial, then combine like terms."
+>}}
+
+{{< fillin
+  question="Multiply: $(y + 8)(4y^2 + y - 7)$."
+  answer="4y^3 + 33y^2 + y - 56"
+  answerForm="expanded"
+  hint="Distribute y and 8 across the trinomial. Only the two $y^2$-terms combine."
+>}}
+
+{{< fillin
+  question="Multiply: $(3q + 1)(q^2 - 4q - 5)$."
+  answer="3q^3 - 11q^2 - 19q - 5"
+  answerForm="expanded"
+  hint="Distribute $3q$ and $1$ across the trinomial, watching signs, then combine like terms."
+>}}
 
 ## Key terms
 
@@ -491,4 +581,4 @@ the Distributive Property.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 6.3: Multiply Polynomials](https://openstax.org/books/elementary-algebra-2e/pages/6-3-multiply-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as typeset display arrays and the Vertical Method partial-product work as stacked-multiplication arrays; described the FOIL first/outer/inner/last diagrams in prose; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 6.3: Multiply Polynomials](https://openstax.org/books/elementary-algebra-2e/pages/6-3-multiply-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as typeset display arrays and the Vertical Method partial-product work as stacked-multiplication arrays; described the FOIL first/outer/inner/last diagrams in prose; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

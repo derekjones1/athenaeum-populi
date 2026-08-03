@@ -49,6 +49,7 @@ $$
 {{< fillin
   question="Multiply: $\left(5y^7\right)\left(-7y^4\right)$"
   answer="-35y^{11}"
+  answerForm="single-term"
   answerDisplay="$-35y^{11}$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
@@ -56,6 +57,7 @@ $$
 {{< fillin
   question="Multiply: $\left(\tfrac{2}{5}a^4b^3\right)\left(15ab^3\right)$"
   answer="6a^5b^6"
+  answerForm="single-term"
   answerDisplay="$6a^5b^6$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
@@ -89,6 +91,7 @@ $$
 {{< fillin
   question="Multiply: $-3y\left(5y^2+8y-7\right)$"
   answer="-15y^3-24y^2+21y"
+  answerForm="expanded"
   answerDisplay="$-15y^3-24y^2+21y$"
   hint="Distribute the monomial to every term, multiply coefficients, and add exponents on like bases."
 >}}
@@ -96,6 +99,7 @@ $$
 {{< fillin
   question="Multiply: $4x^2\left(2x^2-3x+5\right)$"
   answer="8x^4-12x^3+20x^2"
+  answerForm="expanded"
   answerDisplay="$8x^4-12x^3+20x^2$"
   hint="Distribute the monomial to every term, multiply coefficients, and add exponents on like bases."
 >}}
@@ -119,6 +123,7 @@ $$
 {{< fillin
   question="Multiply: $(x+8)(x+9)$"
   answer="x^2+17x+72"
+  answerForm="expanded"
   answerDisplay="$x^2+17x+72$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
@@ -126,6 +131,7 @@ $$
 {{< fillin
   question="Multiply: $(3c+4)(5c-2)$"
   answer="15c^2+14c-8"
+  answerForm="expanded"
   answerDisplay="$15c^2+14c-8$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
@@ -183,6 +189,7 @@ $$
 {{< fillin
   question="Multiply using FOIL: $(x-7)(x+5)$"
   answer="x^2-2x-35"
+  answerForm="expanded"
   answerDisplay="$x^2-2x-35$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
@@ -190,6 +197,7 @@ $$
 {{< fillin
   question="Multiply using FOIL: $(3x+7)(5x-2)$"
   answer="15x^2+29x-14"
+  answerForm="expanded"
   answerDisplay="$15x^2+29x-14$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
@@ -220,6 +228,7 @@ $$
 {{< fillin
   question="Multiply: $\left(x^2+6\right)(x-8)$"
   answer="x^3-8x^2+6x-48"
+  answerForm="expanded"
   answerDisplay="$x^3-8x^2+6x-48$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
@@ -227,6 +236,7 @@ $$
 {{< fillin
   question="Multiply: $(2ab+5)(4ab-4)$"
   answer="8a^2b^2+12ab-20"
+  answerForm="expanded"
   answerDisplay="$8a^2b^2+12ab-20$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
@@ -261,6 +271,7 @@ Notice the partial products are the same as the terms in the FOIL method.
 {{< fillin
   question="Multiply using the Vertical Method: $(5m-7)(3m-6)$"
   answer="15m^2-51m+42"
+  answerForm="expanded"
   answerDisplay="$15m^2-51m+42$"
   hint="Align like powers in columns, multiply by each term of the second binomial, and add the partial products."
 >}}
@@ -268,6 +279,7 @@ Notice the partial products are the same as the terms in the FOIL method.
 {{< fillin
   question="Multiply using the Vertical Method: $(6b-5)(7b-3)$"
   answer="42b^2-53b+15"
+  answerForm="expanded"
   answerDisplay="$42b^2-53b+15$"
   hint="Align like powers in columns, multiply by each term of the second binomial, and add the partial products."
 >}}
@@ -313,6 +325,7 @@ $$
 {{< fillin
   question="Multiply $(y-3)\left(y^2-5y+2\right)$."
   answer="y^3-8y^2+17y-6"
+  answerForm="expanded"
   answerDisplay="$y^3-8y^2+17y-6$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
@@ -320,6 +333,7 @@ $$
 {{< fillin
   question="Multiply $(x+4)\left(2x^2-3x+5\right)$."
   answer="2x^3+5x^2-7x+20"
+  answerForm="expanded"
   answerDisplay="$2x^3+5x^2-7x+20$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
@@ -380,6 +394,7 @@ $$
 {{< fillin
   question="Multiply: $(x+9)^2$"
   answer="x^2+18x+81"
+  answerForm="expanded"
   answerDisplay="$x^2+18x+81$"
   hint="Multiply the coefficients and add the exponents of each common base."
 >}}
@@ -387,6 +402,7 @@ $$
 {{< fillin
   question="Multiply: $(2c-d)^2$"
   answer="4c^2-4cd+d^2"
+  answerForm="expanded"
   answerDisplay="$4c^2-4cd+d^2$"
   hint="Multiply the coefficients and add the exponents of each common base."
 >}}
@@ -439,6 +455,7 @@ $$
 {{< fillin
   question="Multiply: $(6x+5)(6x-5)$"
   answer="36x^2-25"
+  answerForm="expanded"
   answerDisplay="$36x^2-25$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
@@ -446,6 +463,7 @@ $$
 {{< fillin
   question="Multiply: $(4p-7q)(4p+7q)$"
   answer="16p^2-49q^2"
+  answerForm="expanded"
   answerDisplay="$16p^2-49q^2$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}

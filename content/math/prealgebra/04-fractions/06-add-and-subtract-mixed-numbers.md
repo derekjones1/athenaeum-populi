@@ -85,6 +85,7 @@ $$3\frac{4}{9} + 2\frac{2}{9} = 5\frac{2}{3}$$
 {{< fillin
   question="Find the sum: $4\tfrac{4}{7} + 1\tfrac{2}{7}$"
   answer="5\frac{6}{7}"
+  answerForm="mixed-number"
   answerDisplay="$5\tfrac{6}{7}$"
   hint="Add the whole numbers, then add the fractions separately."
 >}}
@@ -104,6 +105,7 @@ $$9\frac{5}{9} + 5\frac{7}{9} = 15\frac{1}{3}$$
 {{< fillin
   question="Find the sum: $8\tfrac{7}{8} + 7\tfrac{5}{8}$"
   answer="16\frac{1}{2}"
+  answerForm="mixed-number"
   answerDisplay="$16\tfrac{1}{2}$"
   hint="Add the whole numbers and the fractions separately. The fraction sum will be improper — convert it and add the extra whole in, then simplify."
 >}}
@@ -125,6 +127,7 @@ mixed number too.
 {{< fillin
   question="Add by converting the mixed numbers to improper fractions: $5\tfrac{5}{9} + 3\tfrac{7}{9}$"
   answer="9\frac{1}{3}"
+  answerForm="mixed-number"
   answerDisplay="$9\tfrac{1}{3}$"
   hint="Convert both to improper fractions ($\tfrac{50}{9}$ and $\tfrac{34}{9}$), add, then convert back to a mixed number and simplify."
 >}}
@@ -223,6 +226,7 @@ $$5\frac{3}{5} - 2\frac{4}{5} = 2\frac{4}{5}$$
 {{< fillin
   question="Find the difference: $6\tfrac{4}{9} - 3\tfrac{7}{9}$"
   answer="2\frac{6}{9}"
+  answerForm="mixed-number"
   answerDisplay="$2\tfrac{6}{9}$"
   hint="Since $\tfrac{4}{9}$ is less than $\tfrac{7}{9}$, borrow one whole from $6$ and add it to $\tfrac{4}{9}$ to make $\tfrac{13}{9}$, then subtract."
 >}}
@@ -251,6 +255,7 @@ $$9\frac{6}{11} - 7\frac{10}{11} = 1\frac{7}{11}$$
 {{< fillin
   question="Find the difference by converting to improper fractions: $6\tfrac{4}{9} - 3\tfrac{7}{9}$"
   answer="2\frac{6}{9}"
+  answerForm="mixed-number"
   answerDisplay="$2\tfrac{6}{9}$"
   hint="Convert both mixed numbers to improper fractions first ($\tfrac{58}{9}$ and $\tfrac{34}{9}$), subtract, then convert back."
 >}}
@@ -271,6 +276,7 @@ $$3\frac{5}{11} - 4\frac{3}{4} = -1\frac{13}{44}$$
 {{< fillin
   question="Subtract: $1\tfrac{3}{4} - 6\tfrac{7}{8}$"
   answer="-5\frac{1}{8}"
+  answerForm="mixed-number"
   answerDisplay="$-5\tfrac{1}{8}$"
   hint="Since the second number is much bigger, expect a negative answer. Convert both to improper fractions with a common denominator before subtracting."
 >}}
@@ -292,6 +298,7 @@ $$2\frac{1}{2} + 5\frac{2}{3} = 8\frac{1}{6}$$
 {{< fillin
   question="Add: $1\tfrac{5}{6} + 4\tfrac{3}{4}$"
   answer="6\frac{7}{12}"
+  answerForm="mixed-number"
   answerDisplay="$6\tfrac{7}{12}$"
   hint="The LCD of 6 and 4 is 12. Convert both fractions, add, then simplify any improper leftover."
 >}}
@@ -308,6 +315,7 @@ $$4\frac{3}{4} - 2\frac{7}{8} = 1\frac{7}{8}$$
 {{< fillin
   question="Find the difference: $8\tfrac{1}{2} - 3\tfrac{4}{5}$"
   answer="4\frac{7}{10}"
+  answerForm="mixed-number"
   answerDisplay="$4\tfrac{7}{10}$"
   hint="The LCD of 2 and 5 is 10. Convert both fractions to tenths, borrow if needed, then subtract."
 >}}
@@ -335,6 +343,7 @@ $$4\frac{3}{4} - 2\frac{7}{8} = 1\frac{7}{8}$$
 {{< fillin
   question="Add: $2\tfrac{4}{9} + 5\tfrac{1}{9}$"
   answer="7\frac{5}{9}"
+  answerForm="mixed-number"
   answerDisplay="$7\tfrac{5}{9}$"
   hint="Add the whole numbers, then add the numerators over the common denominator $9$."
 >}}
@@ -342,12 +351,14 @@ $$4\frac{3}{4} - 2\frac{7}{8} = 1\frac{7}{8}$$
 {{< fillin
   question="Add: $7\tfrac{9}{10} + 3\tfrac{1}{10}$"
   answer="11"
+  answerForm="decimal"
   hint="The tenths add to a full whole, so the fraction part disappears — add that whole to the whole-number total."
 >}}
 
 {{< fillin
   question="Add: $8\tfrac{4}{9} + 2\tfrac{8}{9}$"
   answer="11\frac{1}{3}"
+  answerForm="mixed-number"
   answerDisplay="$11\tfrac{1}{3}$"
   hint="The ninths add to an improper fraction. Rewrite it as a mixed number, add the extra whole in, then simplify."
 >}}
@@ -373,6 +384,7 @@ $$4\frac{3}{4} - 2\frac{7}{8} = 1\frac{7}{8}$$
 {{< fillin
   question="Find the difference: $2\tfrac{7}{12} - 1\tfrac{5}{12}$"
   answer="1\frac{1}{6}"
+  answerForm="mixed-number"
   answerDisplay="$1\tfrac{1}{6}$"
   hint="The top fraction is larger, so no borrowing is needed. Subtract the fractions, subtract the whole numbers, then simplify."
 >}}
@@ -380,6 +392,7 @@ $$4\frac{3}{4} - 2\frac{7}{8} = 1\frac{7}{8}$$
 {{< fillin
   question="Find the difference: $5\tfrac{2}{9} - 3\tfrac{4}{9}$"
   answer="1\frac{7}{9}"
+  answerForm="mixed-number"
   answerDisplay="$1\tfrac{7}{9}$"
   hint="Since $\tfrac{2}{9}$ is smaller than $\tfrac{4}{9}$, take one whole from the $5$ to make $4\tfrac{11}{9}$ before subtracting."
 >}}
@@ -387,6 +400,7 @@ $$4\frac{3}{4} - 2\frac{7}{8} = 1\frac{7}{8}$$
 {{< fillin
   question="Find the difference: $2\tfrac{5}{12} - 1\tfrac{7}{12}$"
   answer="\frac{5}{6}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{6}$"
   hint="Borrow one whole to make $1\tfrac{17}{12}$. The whole numbers then subtract to $0$, so the answer is just a fraction — simplify it."
 >}}

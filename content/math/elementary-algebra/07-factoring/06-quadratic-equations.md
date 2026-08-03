@@ -518,6 +518,72 @@ sides of the deck are $8$, $15$, and $17$ feet.
   hint="Let $x$ be the shorter side. Then $x^2 + (x + 7)^2 = 13^2$; simplify to $2x^2 + 14x - 120 = 0$ and factor. Keep the positive solution, then add 7."
 >}}
 
+## Practice
+
+### Solve quadratic equations by using the Zero Product Property
+
+{{< fillin
+  question="Solve: $(x - 3)(x + 7) = 0$. Enter both solutions, separated by a comma."
+  answer="3,-7"
+  answerMode="unordered"
+  hint="Set each factor equal to zero: $x - 3 = 0$ or $x + 7 = 0$, then solve each equation for $x$."
+>}}
+
+{{< fillin
+  question="Solve: $(3a - 10)(2a - 7) = 0$. Enter both solutions, separated by a comma."
+  answer="\frac{10}{3},\frac{7}{2}"
+  answerMode="unordered"
+  hint="Set each factor equal to zero: $3a - 10 = 0$ or $2a - 7 = 0$, then solve each for $a$."
+>}}
+
+{{< fillin
+  question="Solve: $(2x - 1)^2 = 0$. This has a double root — enter the single solution."
+  answer="\frac{1}{2}"
+  hint="Rewrite as $(2x - 1)(2x - 1) = 0$. Both factors give the same equation."
+>}}
+
+### Solve quadratic equations by factoring
+
+{{< fillin
+  question="Solve: $x^2 + 7x + 12 = 0$. Enter both solutions, separated by a comma."
+  answer="-3,-4"
+  answerMode="unordered"
+  hint="Factor the trinomial into two binomials, then use the Zero Product Property."
+>}}
+
+{{< fillin
+  question="Solve: $49m^2 = 144$. Enter both solutions, separated by a comma."
+  answer="\frac{12}{7},-\frac{12}{7}"
+  answerMode="unordered"
+  hint="Write in standard form $49m^2 - 144 = 0$, then factor as a difference of squares."
+>}}
+
+{{< fillin
+  question="Solve: $20x^2 - 60x = -45$. This has a double root — enter the single solution."
+  answer="\frac{3}{2}"
+  hint="Divide out the common factor of $5$, then factor the resulting perfect-square trinomial."
+>}}
+
+### Solve applications modeled by quadratic equations
+
+{{< fillin
+  question="The product of two consecutive integers is 56. Find the two positive integers, entered from least to greatest, separated by a comma."
+  answer="7,8"
+  hint="Let $n$ be the first integer, so $n + 1$ is the next. Translate to $n(n + 1) = 56$, write in standard form, and factor. Keep the positive solution."
+>}}
+
+{{< fillin
+  question="The area of a rectangular carpet is 28 square feet. The length is three feet more than the width. Enter the width and then the length, separated by a comma."
+  answer="4,7"
+  hint="Let $W$ be the width, so $W + 3$ is the length. Use $A = L \cdot W$ to write $W(W + 3) = 28$, then factor. Keep the positive solution."
+>}}
+
+{{< fillin
+  question="A pennant is shaped like a right triangle, with hypotenuse 10 feet. The length of one side is two feet longer than the length of the other side. Enter the lengths of the two sides from least to greatest, separated by a comma."
+  answer="6,8"
+  hint="Let $x$ be the shorter side, so $x + 2$ is the longer side. Use the Pythagorean Theorem: $x^2 + (x + 2)^2 = 10^2$, then factor. Keep the positive solution."
+>}}
+
 ## Key terms
 
 **quadratic equation** — an equation of the form $ax^2 + bx + c = 0$ with
@@ -530,4 +596,4 @@ hypotenuse $c$, $a^2 + b^2 = c^2$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 7.6: Quadratic Equations](https://openstax.org/books/elementary-algebra-2e/pages/7-6-quadratic-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the Example step tables as prose/typeset math, recreated the right-triangle deck figure with the accessible Figure component, and described the garden sketch in prose; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 7.6: Quadratic Equations](https://openstax.org/books/elementary-algebra-2e/pages/7-6-quadratic-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the Example step tables as prose/typeset math, recreated the right-triangle deck figure with the accessible Figure component, and described the garden sketch in prose; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

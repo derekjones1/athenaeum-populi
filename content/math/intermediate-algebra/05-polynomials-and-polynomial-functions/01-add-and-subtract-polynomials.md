@@ -155,6 +155,7 @@ $$
 {{< fillin
   question="Add or subtract: $12q^2+9q^2$."
   answer="21q^2"
+  answerForm="no-like-terms"
   answerDisplay="$21q^2$"
   hint="These are like terms — add the coefficients."
 >}}
@@ -162,6 +163,7 @@ $$
 {{< fillin
   question="Add or subtract: $8mn^3-(-5mn^3)$."
   answer="13mn^3"
+  answerForm="no-like-terms"
   answerDisplay="$13mn^3$"
   hint="Subtracting a negative is the same as adding: $8+5$."
 >}}
@@ -193,6 +195,7 @@ $$
 {{< fillin
   question="Simplify: $8y^2+3z^2-3y^2$."
   answer="5y^2 + 3z^2"
+  answerForm="no-like-terms"
   answerDisplay="$5y^2+3z^2$"
   hint="Only the $y^2$ terms are like terms."
 >}}
@@ -216,6 +219,7 @@ $$
 {{< fillin
   question="Find the sum: $(7x^2-4x+5)+(x^2-7x+3)$."
   answer="8x^2 - 11x + 8"
+  answerForm="no-like-terms"
   answerDisplay="$8x^2-11x+8$"
   hint="Group the like terms — the $x^2$ terms, the $x$ terms, and the constants — then combine each group."
 >}}
@@ -239,6 +243,7 @@ To subtract $a$ from $b$, we write it as $b-a$, placing the $b$ first.
 {{< fillin
   question="Find the difference: $(8x^2+3x-19)-(7x^2-14)$."
   answer="x^2 + 3x - 5"
+  answerForm="no-like-terms"
   answerDisplay="$x^2+3x-5$"
   hint="Distribute the subtraction across the second polynomial, then combine like terms."
 >}}
@@ -278,6 +283,7 @@ $$
 {{< fillin
   question="Simplify: $(x^3-x^2y)-(xy^2+y^3)+(x^2y+xy^2)$."
   answer="x^3 - y^3"
+  answerForm="no-like-terms"
   answerDisplay="$x^3-y^3$"
   hint="Distribute across all the parentheses first, then group and combine like terms — most of them cancel."
 >}}

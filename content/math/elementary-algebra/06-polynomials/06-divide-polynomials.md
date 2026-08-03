@@ -61,12 +61,14 @@ $$
 {{< fillin
   question="Find the quotient: $\tfrac{8z^2 + 24}{4}$."
   answer="2z^2 + 6"
+  answerForm="expanded"
   hint="Divide each term of the numerator by 4: $8z^2/4$ and $\tfrac{24}{4}$."
 >}}
 
 {{< fillin
   question="Find the quotient: $\tfrac{18z^2 - 27}{9}$."
   answer="2z^2 - 3"
+  answerForm="expanded"
   hint="Divide each term of the numerator by 9: $18z^2/9$ and $\tfrac{27}{9}$."
 >}}
 
@@ -87,12 +89,14 @@ $$
 {{< fillin
   question="Find the quotient: $\tfrac{27b^3 - 33b^2}{3b}$."
   answer="9b^2 - 11b"
+  answerForm="expanded"
   hint="Rewrite as a fraction over 3b, then divide each term: $27b^3/(3b)$ and $33b^2/(3b)$."
 >}}
 
 {{< fillin
   question="Find the quotient: $\tfrac{25y^3 - 55y^2}{5y}$."
   answer="5y^2 - 11y"
+  answerForm="expanded"
   hint="Rewrite as a fraction over 5y, then divide each term: $25y^3/(5y)$ and $55y^2/(5y)$."
 >}}
 
@@ -110,12 +114,14 @@ $$
 {{< fillin
   question="Find the quotient: $\tfrac{25y^2 - 15y}{-5}$."
   answer="-5y^2 + 3y"
+  answerForm="expanded"
   hint="Divide each term by -5. Watch the signs: subtracting a negative becomes adding a positive."
 >}}
 
 {{< fillin
   question="Find the quotient: $\tfrac{42b^2 - 18b}{-6}$."
   answer="-7b^2 + 3b"
+  answerForm="expanded"
   hint="Divide each term by -6, keeping careful track of the signs."
 >}}
 
@@ -130,12 +136,14 @@ $$
 {{< fillin
   question="Find the quotient: $\tfrac{60d^7 + 24d^5}{4d^3}$."
   answer="15d^4 + 6d^2"
+  answerForm="expanded"
   hint="Divide each term by $4d^3$, subtracting exponents on the d factors."
 >}}
 
 {{< fillin
   question="Find the quotient: $\tfrac{216p^7 - 48p^5}{6p^3}$."
   answer="36p^4 - 8p^2"
+  answerForm="expanded"
   hint="Divide each term by $6p^3$, subtracting exponents on the p factors."
 >}}
 
@@ -151,12 +159,14 @@ $$
 {{< fillin
   question="Find the quotient: $\tfrac{32a^2 b - 16ab^2}{-8ab}$."
   answer="-4a + 2b"
+  answerForm="expanded"
   hint="Rewrite over $-8ab$, then divide each term. Watch the signs on the negative denominator."
 >}}
 
 {{< fillin
   question="Find the quotient: $\tfrac{-48a^8 b^4 - 36a^6 b^5}{-6a^3 b^3}$."
   answer="8a^5 b + 6a^3 b^2"
+  answerForm="expanded"
   hint="Divide each term by $-6a^3 b^3$, subtracting exponents on a and b. A negative divided by a negative is positive."
 >}}
 
@@ -172,12 +182,14 @@ $$
 {{< fillin
   question="Find the quotient: $\tfrac{40x^3 y^2 + 24x^2 y^2 - 16x^2 y^3}{8x^2 y}$."
   answer="5xy + 3y - 2y^2"
+  answerForm="expanded"
   hint="Divide each of the three terms by $8x^2 y$, subtracting exponents on x and y."
 >}}
 
 {{< fillin
   question="Find the quotient: $\tfrac{35a^4 b^2 + 14a^4 b^3 - 42a^2 b^4}{7a^2 b^2}$."
   answer="5a^2 + 2a^2 b - 6b^2"
+  answerForm="expanded"
   hint="Divide each of the three terms by $7a^2 b^2$, subtracting exponents on a and b."
 >}}
 
@@ -193,12 +205,14 @@ $$
 {{< fillin
   question="Find the quotient: $\tfrac{18c^2 + 6c - 9}{6c}$."
   answer="3c + 1 - \frac{3}{2c}"
+  answerForm="expanded"
   hint="Divide each term by 6c. The last term, $\tfrac{9}{6c}$, reduces to $\tfrac{3}{2c}$ and stays as a fraction."
 >}}
 
 {{< fillin
   question="Find the quotient: $\tfrac{10d^2 - 5d - 2}{5d}$."
   answer="2d - 1 - \frac{2}{5d}"
+  answerForm="expanded"
   hint="Divide each term by 5d. The last term, $\tfrac{2}{5d}$, does not divide evenly, so it stays as a fraction."
 >}}
 
@@ -270,12 +284,14 @@ the dividend, $x^{2}+9x+20$ ✓. So the quotient is $x+4$.
 {{< fillin
   question="Find the quotient: $\tfrac{y^2 + 10y + 21}{y + 3}$."
   answer="y + 7"
+  answerForm="expanded"
   hint="Divide $y^2$ by y to get y. After subtracting and bringing down, divide 7y by y to get 7."
 >}}
 
 {{< fillin
   question="Find the quotient: $\tfrac{m^2 + 9m + 20}{m + 4}$."
   answer="m + 5"
+  answerForm="expanded"
   hint="Divide $m^2$ by m to get m. After subtracting and bringing down, divide 5m by m to get 5."
 >}}
 
@@ -319,12 +335,14 @@ quotient is $2x+1$.
 {{< fillin
   question="Find the quotient: $\tfrac{2x^2 - 3x - 20}{x - 4}$."
   answer="2x + 5"
+  answerForm="expanded"
   hint="Divide $2x^2$ by x to get 2x. Multiply, change the signs and add, bring down, then divide again."
 >}}
 
 {{< fillin
   question="Find the quotient: $\tfrac{3x^2 - 16x - 12}{x - 6}$."
   answer="3x + 2"
+  answerForm="expanded"
   hint="Divide $3x^2$ by x to get 3x. Multiply, change the signs and add, bring down, then divide again."
 >}}
 
@@ -366,12 +384,14 @@ should be $x^{3}-x^{2}+x+4$.
 {{< fillin
   question="Find the quotient: $\tfrac{x^3 + 5x^2 + 8x + 6}{x + 2}$."
   answer="x^2 + 3x + 2 + \frac{2}{x+2}"
+  answerForm="expanded"
   hint="Long-divide; the division leaves a remainder of 2, written as $\tfrac{2}{x+2}$."
 >}}
 
 {{< fillin
   question="Find the quotient: $\tfrac{2x^3 + 8x^2 + x - 8}{x + 1}$."
   answer="2x^2 + 6x - 5 - \frac{3}{x+1}"
+  answerForm="expanded"
   hint="Long-divide; the division leaves a remainder of -3, written as $-\tfrac{3}{x+1}$."
 >}}
 
@@ -407,12 +427,14 @@ $x^{4}-x^{2}+5x-2$. So the quotient is $x^{3}-2x^{2}+3x-1$.
 {{< fillin
   question="Find the quotient: $\tfrac{x^3 + 3x + 14}{x + 2}$."
   answer="x^2 - 2x + 7"
+  answerForm="expanded"
   hint="The dividend is missing an $x^2$ term, so insert $0x^2$ as a placeholder before long-dividing."
 >}}
 
 {{< fillin
   question="Find the quotient: $\tfrac{x^4 - 3x^3 - 1000}{x + 5}$."
   answer="x^3 - 8x^2 + 40x - 200"
+  answerForm="expanded"
   hint="The dividend is missing $x^2$ and x terms, so insert $0x^2$ and 0x as placeholders before long-dividing."
 >}}
 
@@ -443,13 +465,56 @@ $8a^{3}+27$. So the quotient is $4a^{2}-6a+9$.
 {{< fillin
   question="Find the quotient: $\tfrac{x^3 - 64}{x - 4}$."
   answer="x^2 + 4x + 16"
+  answerForm="expanded"
   hint="Insert $0x^2$ and 0x as placeholders, then long-divide by $x - 4$."
 >}}
 
 {{< fillin
   question="Find the quotient: $\tfrac{125x^3 - 8}{5x - 2}$."
   answer="25x^2 + 10x + 4"
+  answerForm="expanded"
   hint="Insert $0x^2$ and 0x as placeholders, then long-divide by $5x - 2$, tracking both constants and variables."
+>}}
+
+## Practice
+
+### Divide a polynomial by a monomial
+
+{{< fillin
+  question="Find the quotient: $\tfrac{30b + 75}{5}$."
+  answer="6b + 15"
+  answerForm="expanded"
+  hint="Divide each term of the numerator by 5: $30b/5$ and $75/5$."
+>}}
+
+{{< fillin
+  question="Find the quotient: $\tfrac{12q^2 + 3q - 1}{3q}$."
+  answer="4q + 1 - \frac{1}{3q}"
+  answerForm="expanded"
+  hint="Divide each term by $3q$. The constant term, $\tfrac{1}{3q}$, does not divide evenly and stays as a fraction."
+>}}
+
+### Divide a polynomial by a binomial
+
+{{< fillin
+  question="Find the quotient: $\tfrac{a^2 - 2a - 35}{a + 5}$."
+  answer="a - 7"
+  answerForm="expanded"
+  hint="Divide the first term of the dividend by the first term of the divisor to start the quotient, then long-divide to the end."
+>}}
+
+{{< fillin
+  question="Find the quotient: $\tfrac{x^2 + 2x - 30}{x - 5}$."
+  answer="x + 7 + \frac{5}{x-5}"
+  answerForm="expanded"
+  hint="Long-divide; the division leaves a remainder, written as a fraction with the divisor as the denominator."
+>}}
+
+{{< fillin
+  question="Find the quotient: $\tfrac{m^3 + 1000}{m + 10}$."
+  answer="m^2 - 10m + 100"
+  answerForm="expanded"
+  hint="Insert $0m^2$ and $0m$ as placeholders, then long-divide by $m + 10$."
 >}}
 
 ## Key terms
@@ -466,4 +531,4 @@ division, written as a fraction with the divisor as the denominator.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 6.6: Divide Polynomials](https://openstax.org/books/elementary-algebra-2e/pages/6-6-divide-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the multi-row worked-example step tables into prose with a single typeset result, and recreated the numeric and polynomial long divisions as typeset math arrays; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 6.6: Divide Polynomials](https://openstax.org/books/elementary-algebra-2e/pages/6-6-divide-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the multi-row worked-example step tables into prose with a single typeset result, and recreated the numeric and polynomial long divisions as typeset math arrays; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

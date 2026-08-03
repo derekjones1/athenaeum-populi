@@ -63,6 +63,7 @@ $$
 {{< fillin
   question="Factor completely: $8y^3+16y^2-24y$."
   answer="8y(y-1)(y+3)"
+  answerForm="factored"
   answerDisplay="$8y(y-1)(y+3)$"
   hint="First factor out the GCF $8y$, then factor the remaining trinomial."
 >}}
@@ -70,6 +71,7 @@ $$
 {{< fillin
   question="Factor completely: $5y^3-15y^2-270y$."
   answer="5y(y-9)(y+6)"
+  answerForm="factored"
   answerDisplay="$5y(y-9)(y+6)$"
   hint="First factor out the GCF $5y$, then factor the remaining trinomial."
 >}}
@@ -92,6 +94,7 @@ $$
 {{< fillin
   question="Factor completely: $16x^3-36x$."
   answer="4x(2x-3)(2x+3)"
+  answerForm="factored"
   answerDisplay="$4x(2x-3)(2x+3)$"
   hint="Factor out the GCF, then recognize a difference of squares."
 >}}
@@ -99,6 +102,7 @@ $$
 {{< fillin
   question="Factor completely: $27y^2-48$."
   answer="3(3y-4)(3y+4)"
+  answerForm="factored"
   answerDisplay="$3(3y-4)(3y+4)$"
   hint="Factor out the GCF $3$, then recognize a difference of squares."
 >}}
@@ -120,6 +124,7 @@ $$
 {{< fillin
   question="Factor completely: $4x^2+20xy+25y^2$."
   answer="(2x+5y)^2"
+  answerForm="factored"
   answerDisplay="$(2x+5y)^2$"
   hint="Check whether the trinomial fits the pattern $a^2+2ab+b^2$."
 >}}
@@ -127,6 +132,7 @@ $$
 {{< fillin
   question="Factor completely: $9x^2-24xy+16y^2$."
   answer="(3x-4y)^2"
+  answerForm="factored"
   answerDisplay="$(3x-4y)^2$"
   hint="Check whether the trinomial fits the pattern $a^2-2ab+b^2$."
 >}}
@@ -144,6 +150,7 @@ $$12x^3y^2+75xy^2=3xy^2(4x^2+25)$$
 {{< fillin
   question="Factor completely: $50x^3y+72xy$."
   answer="2xy(25x^2+36)"
+  answerForm="factored"
   answerDisplay="$2xy(25x^2+36)$"
   hint="Factor out the GCF. The remaining binomial is a sum of squares."
 >}}
@@ -151,6 +158,7 @@ $$12x^3y^2+75xy^2=3xy^2(4x^2+25)$$
 {{< fillin
   question="Factor completely: $27xy^3+48xy$."
   answer="3xy(9y^2+16)"
+  answerForm="factored"
   answerDisplay="$3xy(9y^2+16)$"
   hint="Factor out the GCF. The remaining binomial is a sum of squares."
 >}}
@@ -174,12 +182,14 @@ The expression is factored completely. Check by multiplying.
 {{< fillin
   question="Factor completely: $250m^3+432n^3$."
   answer="2(5m+6n)(25m^2-30mn+36n^2)"
+  answerForm="factored"
   hint="Factor out the GCF $2$, then use the sum of cubes pattern."
 >}}
 
 {{< fillin
   question="Factor completely: $2p^3+54q^3$."
   answer="2(p+3q)(p^2-3pq+9q^2)"
+  answerForm="factored"
   hint="Factor out the GCF $2$, then use the sum of cubes pattern."
 >}}
 
@@ -200,6 +210,7 @@ The expression is factored completely. Check by multiplying.
 {{< fillin
   question="Factor completely: $4a^5b-64ab$."
   answer="4ab(a^2+4)(a-2)(a+2)"
+  answerForm="factored"
   answerDisplay="$4ab(a^2+4)(a-2)(a+2)$"
   hint="Factor out the GCF, then factor a difference of squares twice."
 >}}
@@ -207,6 +218,7 @@ The expression is factored completely. Check by multiplying.
 {{< fillin
   question="Factor completely: $7xy^5-7xy$."
   answer="7xy(y^2+1)(y-1)(y+1)"
+  answerForm="factored"
   answerDisplay="$7xy(y^2+1)(y-1)(y+1)$"
   hint="Factor out the GCF, then factor a difference of squares twice."
 >}}
@@ -228,6 +240,7 @@ $$
 {{< fillin
   question="Factor completely: $6x^2-12xc+6bx-12bc$."
   answer="6(x+b)(x-2c)"
+  answerForm="factored"
   answerDisplay="$6(x+b)(x-2c)$"
   hint="Factor out the GCF $6$, then use grouping."
 >}}
@@ -235,6 +248,7 @@ $$
 {{< fillin
   question="Factor completely: $16x^2+24xy-4x-6y$."
   answer="2(4x-1)(2x+3y)"
+  answerForm="factored"
   answerDisplay="$2(4x-1)(2x+3y)$"
   hint="Factor out the GCF $2$, then use grouping."
 >}}
@@ -257,6 +271,7 @@ $$
 {{< fillin
   question="Factor completely: $4p^2q-16pq+12q$."
   answer="4q(p-3)(p-1)"
+  answerForm="factored"
   answerDisplay="$4q(p-3)(p-1)$"
   hint="Factor out the complete GCF $4q$, then factor the trinomial."
 >}}
@@ -264,6 +279,7 @@ $$
 {{< fillin
   question="Factor completely: $6pq^2-9pq-6p$."
   answer="3p(2q+1)(q-2)"
+  answerForm="factored"
   answerDisplay="$3p(2q+1)(q-2)$"
   hint="Factor out the complete GCF $3p$, then factor the trinomial."
 >}}
@@ -294,6 +310,7 @@ $$
 {{< fillin
   question="Factor completely: $4x^2-12xy+9y^2-25$."
   answer="(2x-3y-5)(2x-3y+5)"
+  answerForm="factored"
   answerDisplay="$(2x-3y-5)(2x-3y+5)$"
   hint="Group the first three terms as a perfect-square trinomial, then factor a difference of squares."
 >}}
@@ -301,6 +318,7 @@ $$
 {{< fillin
   question="Factor completely: $16x^2-24xy+9y^2-64$."
   answer="(4x-3y-8)(4x-3y+8)"
+  answerForm="factored"
   answerDisplay="$(4x-3y-8)(4x-3y+8)$"
   hint="Group the first three terms as a perfect-square trinomial, then factor a difference of squares."
 >}}

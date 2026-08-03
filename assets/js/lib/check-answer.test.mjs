@@ -5,7 +5,9 @@
  * Inputs are LaTeX — what a MathLive <math-field> emits.
  */
 
-import { checkAnswer, describeAnswerForm, parseAnswerForm } from './check-answer.mjs';
+import {
+  ANSWER_FORM_TOKENS, checkAnswer, describeAnswerForm, parseAnswerForm,
+} from './check-answer.mjs';
 
 const ANSWER = 'x^2 + 5x + 6';
 const cases = [
@@ -255,6 +257,122 @@ for (const [student, answer, form, expected] of [
   ['\\frac68', '\\frac{3}{4}', 'lowest-terms', 'form'],
   ['2\\frac23', '\\frac{8}{3}', 'improper-fraction lowest-terms', 'form'],
   ['\\frac83', '2\\frac{2}{3}', 'improper-fraction lowest-terms', 'correct'],
+  // expanded / single-term / single-fraction — the Multiply and Divide asks.
+  ['w^2+12w+35', 'w^2+12w+35', 'expanded', 'correct'],
+  ['(w+5)(w+7)', 'w^2+12w+35', 'expanded', 'form'],
+  ['(x+2)^2', 'x^2+4x+4', 'expanded', 'form'],
+  ['x+2', 'x+2', 'expanded', 'correct'],
+  ['\\frac{x^2-4}{x-2}', 'x+2', 'expanded', 'form'],
+  ['12+20i', '12+20i', 'expanded', 'correct'],   // a complex literal is expanded
+  ['4i(5-3i)', '12+20i', 'expanded', 'form'],
+  // a monomial product: both sides are products, so the term structure decides
+  ['-35y^{11}', '-35y^{11}', 'single-term', 'correct'],
+  ['(5y^7)(-7y^4)', '-35y^{11}', 'single-term', 'form'],
+  ['6a^5 b^6', '6a^5b^6', 'single-term', 'correct'],
+  ['(\\tfrac{2}{5} a^4 b^3)(15ab^3)', '6a^5b^6', 'single-term', 'form'],
+  // the engine folds the numbers here, so the written \cdot is what is left
+  ['9n', '9n', 'single-term', 'correct'],
+  ['\\tfrac{3}{7} \\cdot 21n', '9n', 'single-term', 'form'],
+  // one quotient, and — when both halves are monomials — a reduced one
+  ['\\frac{x+3}{3x}', '\\frac{x+3}{3x}', 'single-fraction', 'correct'],
+  ['\\frac{4x}{x+2}\\cdot\\frac{x^2+5x+6}{12x^2}', '\\frac{x+3}{3x}', 'single-fraction', 'form'],
+  ['-\\frac{1}{c-3}', '-\\frac{1}{c-3}', 'single-fraction', 'correct'],
+  ['\\frac{c+3}{5-c} \\div \\frac{c^2-9}{c-5}', '-\\frac{1}{c-3}', 'single-fraction', 'form'],
+  ['-\\frac{12y}{x^2}', '-\\frac{12y}{x^2}', 'single-fraction', 'correct'],
+  ['\\tfrac{-84x^8 y^3}{7x^{10} y^2}', '-\\frac{12y}{x^2}', 'single-fraction', 'form'],
+  // wrong values stay wrong
+  ['w^2+12w+30', 'w^2+12w+35', 'expanded', 'incorrect'],
+  ['-35y^{10}', '-35y^{11}', 'single-term', 'incorrect'],
+  // simplified-radical — read entirely off the LaTeX, because the engine
+  // evaluates radical arithmetic and hands back the answer itself.
+  ['\\sqrt{2}', '\\sqrt{2}', 'simplified-radical', 'correct'],
+  ['\\sqrt{32}-\\sqrt{18}', '\\sqrt{2}', 'simplified-radical', 'form'],
+  ['-\\sqrt{2}', '-\\sqrt{2}', 'simplified-radical', 'correct'],
+  ['8\\sqrt{2}-9\\sqrt{2}', '-\\sqrt{2}', 'simplified-radical', 'form'],
+  ['8x', '8x', 'simplified-radical', 'correct'],
+  ['\\sqrt{64x^2}', '8x', 'simplified-radical', 'form'],
+  // nested braces in the radicand must still be read — a radical that never
+  // matches is a radical never checked
+  // An odd root, deliberately: the engine will not equate `\sqrt[4]{u^{12}}`
+  // with `u^3` at all (that is $\lvert u\rvert^3$ without a non-negativity
+  // assumption), so an even root would be `incorrect` rather than `form` and
+  // would test nothing about the shape.
+  ['v^5', 'v^5', 'simplified-radical', 'correct'],
+  ['\\sqrt[3]{v^{15}}', 'v^5', 'simplified-radical', 'form'],
+  ['3p^2\\sqrt[3]{2p}', '3p^2\\sqrt[3]{2p}', 'simplified-radical', 'correct'],
+  // rationalizing: a radical under the bar is not finished
+  ['\\frac{\\sqrt{3}}{3}', '\\frac{\\sqrt{3}}{3}', 'simplified-radical', 'correct'],
+  ['\\frac{1}{\\sqrt{3}}', '\\frac{\\sqrt{3}}{3}', 'simplified-radical', 'form'],
+  // no-like-terms / polynomial / distributed — the Simplify and Combine asks.
+  // Every one of these prompts canonicalizes to its own answer, so each
+  // predicate has to read something the engine has already folded away.
+  ['10x^2+16x+17', '10x^2+16x+17', 'no-like-terms', 'correct'],
+  ['3x^2+7x+9+7x^2+9x+8', '10x^2+16x+17', 'no-like-terms', 'form'],
+  ['-3a+5b', '-3a+5b', 'no-like-terms', 'correct'],
+  ['5a+7b-8a-2b', '-3a+5b', 'no-like-terms', 'form'],
+  ['n+3', 'n+3', 'polynomial', 'correct'],
+  ['\\tfrac{n^2}{n-4} - \\tfrac{n+12}{n-4}', 'n+3', 'polynomial', 'form'],
+  ['3-3x', '3-3x', 'distributed', 'correct'],
+  ['9 - 3(x + 2)', '3-3x', 'distributed', 'form'],
+  ['y+40', 'y+40', 'distributed', 'correct'],
+  ['(y + 12) + 28', 'y+40', 'distributed', 'form'],   // engine folds it; parens remain
+  ['31s', '31s', 'single-term', 'correct'],
+  ['92 + 31s - 92', '31s', 'single-term', 'form'],    // a written sum is not one term
+  ['7x^2', '7x^2', 'single-term', 'correct'],
+  ['7x^2 y^0', '7x^2', 'single-term', 'form'],        // a ^0 factor is a written 1
+  ['b^{35}', 'b^{35}', 'single-power', 'correct'],
+  ['(b^7)^5', 'b^{35}', 'single-power', 'form'],      // variable base
+  // `expanded` still permits a remainder term; `polynomial` and `distributed`
+  // do not. Asserted so the three are not collapsed into one by a later edit.
+  ['x+5+\\frac{3}{x-2}', 'x+5+\\frac{3}{x-2}', 'expanded', 'correct'],
+  ['x+5+\\frac{3}{x-2}', 'x+5+\\frac{3}{x-2}', 'polynomial', 'form'],
+  // single-power — "Simplify: $(3^8)^2$. Write the answer as a power of 3."
+  // `lowest-terms` also rejects the printed nested power, but its feedback
+  // would name a reduction step the exercise never asks for.
+  ['3^{16}', '3^{16}', 'single-power', 'correct'],
+  ['(3^8)^2', '3^{16}', 'single-power', 'form'],
+  ['7^{14}', '7^{14}', 'single-power', 'correct'],
+  ['7^6\\cdot7^8', '7^{14}', 'single-power', 'form'],
+  ['6^9', '6^9', 'single-power', 'correct'],
+  ['6^{14}/6^5', '6^9', 'single-power', 'form'],
+  ['5^6', '5^6', 'single-power', 'correct'],
+  ['5\\cdot5^5', '5^6', 'single-power', 'form'],
+  // a wrong value stays wrong
+  ['3^{15}', '3^{16}', 'single-power', 'incorrect'],
+  // factored — the first SYMBOLIC form. `(x+2)(x+4)` and `x^2+6x+8` are the
+  // same value, so only the shape can separate a factorization from the
+  // polynomial the prompt printed.
+  ['(x+2)(x+4)', '(x+2)(x+4)', 'factored', 'correct'],
+  ['(x+4)(x+2)', '(x+2)(x+4)', 'factored', 'correct'],
+  ['x^2+6x+8', '(x+2)(x+4)', 'factored', 'form'],
+  ['6(a+4)', '6(a+4)', 'factored', 'correct'],
+  ['6a+24', '6(a+4)', 'factored', 'form'],
+  // a monomial GCF, a leading unary minus, and a trinomial second factor
+  ['-6x(x+5)', '-6x(x+5)', 'factored', 'correct'],
+  ['-6x^2-30x', '-6x(x+5)', 'factored', 'form'],
+  ['3y^2(3x+2x^2+7y)', '3y^2(3x+2x^2+7y)', 'factored', 'correct'],
+  ['(x+5)(x^2-5x+25)', '(x+5)(x^2-5x+25)', 'factored', 'correct'],
+  ['x^3+125', '(x+5)(x^2-5x+25)', 'factored', 'form'],
+  // a perfect square is two copies of one factor, so `^2` satisfies the
+  // two-factor minimum
+  ['(4y+3)^2', '(4y+3)^2', 'factored', 'correct'],
+  ['16y^2+24y+9', '(4y+3)^2', 'factored', 'form'],
+  ['(2z-1)(2z+1)(4z^2+1)', '(2z-1)(2z+1)(4z^2+1)', 'factored', 'correct'],
+  // shapes a learner (or MathLive) really emits
+  ['\\left(x+2\\right)\\left(x+4\\right)', '(x+2)(x+4)', 'factored', 'correct'],
+  ['(x+2)\\cdot(x+4)', '(x+2)(x+4)', 'factored', 'correct'],
+  ['3u{(5u - v)}^2', '3u(5u-v)^2', 'factored', 'correct'],
+  // Multiplying by something equal to 1 is not factoring. Most of these never
+  // reach the predicate — the engine folds them back to a plain sum — but a
+  // literal unit factor does survive the parse, so it is skipped rather than
+  // counted.
+  ['1(x^2+6x+8)', '(x+2)(x+4)', 'factored', 'form'],
+  ['(x^2+6x+8)\\cdot1', '(x+2)(x+4)', 'factored', 'form'],
+  ['\\frac{x}{x}(x^2+6x+8)', '(x+2)(x+4)', 'factored', 'form'],
+  ['-(x^2+6x+8)', '-(x+2)(x+4)', 'factored', 'form'],
+  // a wrong value is wrong, not a form complaint
+  ['(x+2)(x+5)', '(x+2)(x+4)', 'factored', 'incorrect'],
+  ['(x+1)(x+8)', '(x+2)(x+4)', 'factored', 'incorrect'],
   // no answerForm — grading is exactly what it was
   ['0.5', '\\frac{1}{2}', undefined, 'correct'],
   ['\\frac{2}{4}', '\\frac{1}{2}', undefined, 'correct'],
@@ -276,6 +394,22 @@ for (const [student, answer, form, expected] of [
   const named = message.includes('improper fraction') && message.includes('lowest terms');
   if (!named) failures++;
   console.log(`${named ? 'PASS' : 'FAIL'}  form feedback names the shape asked for ("${message}")`);
+
+  // Every predicate needs a phrase. A token added to FORM_PREDICATES but not to
+  // FORM_PHRASES is still `valid`, so the learner is told to "write it
+  // undefined" — a defect only a reader of the rendered page would ever catch.
+  for (const token of ANSWER_FORM_TOKENS) {
+    const spec = token === 'denominator:<n>' ? 'denominator:7' : token;
+    const phrased = describeAnswerForm(spec);
+    const ok = phrased !== '' && !phrased.includes('undefined');
+    if (!ok) failures++;
+    console.log(`${ok ? 'PASS' : 'FAIL'}  the ${token} token has feedback wording ("${phrased}")`);
+  }
+
+  const factoredPhrase = describeAnswerForm('factored');
+  const saysFactored = factoredPhrase.includes('factored form');
+  if (!saysFactored) failures++;
+  console.log(`${saysFactored ? 'PASS' : 'FAIL'}  factored feedback names factored form ("${factoredPhrase}")`);
 }
 
 // Diagnostic only — printed but never fails the suite. These probe how far

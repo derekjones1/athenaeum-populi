@@ -72,6 +72,7 @@ $10^{-3} = \tfrac{1}{10^3} = \tfrac{1}{1000}$.
 {{< fillin
   question="Simplify: $2^{-3}$."
   answer="\frac{1}{8}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{1}{8}$"
   hint="A negative exponent means take the reciprocal: $2^{-3} = 1/2^3$."
 >}}
@@ -79,6 +80,7 @@ $10^{-3} = \tfrac{1}{10^3} = \tfrac{1}{1000}$.
 {{< fillin
   question="Simplify: $3^{-2}$."
   answer="\frac{1}{9}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{1}{9}$"
   hint="A negative exponent means take the reciprocal: $3^{-2} = 1/3^2$."
 >}}
@@ -108,6 +110,7 @@ $\tfrac{1}{3^{-2}} = 3^2 = 9$.
 {{< fillin
   question="Simplify: $\tfrac{1}{p^{-8}}$. Write the answer as a power of p."
   answer="p^8"
+  answerForm="polynomial"
   answerDisplay="$p^8$"
   hint="Use the Property of Negative Exponents: $\tfrac{1}{a^{-n}} = a^n$."
 >}}
@@ -115,6 +118,7 @@ $\tfrac{1}{3^{-2}} = 3^2 = 9$.
 {{< fillin
   question="Simplify: $\tfrac{1}{4^{-3}}$."
   answer="64"
+  answerForm="decimal"
   answerDisplay="64"
   hint="$\tfrac{1}{4^{-3}} = 4^3$. Then compute $4 \cdot 4 \cdot 4$."
 >}}
@@ -148,6 +152,7 @@ $$\left(-\frac{2x}{y}\right)^{-3} = \left(-\frac{y}{2x}\right)^3 = -\frac{y^3}{8
 {{< fillin
   question="Simplify: $\tfrac{2}{3}^{-4}$."
   answer="\frac{81}{16}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{81}{16}$"
   hint="Take the reciprocal and change the sign of the exponent: $\tfrac{3}{2}^4$."
 >}}
@@ -155,6 +160,7 @@ $$\left(-\frac{2x}{y}\right)^{-3} = \left(-\frac{y}{2x}\right)^3 = -\frac{y^3}{8
 {{< fillin
   question="Simplify: $\tfrac{3}{5}^{-3}$."
   answer="\frac{125}{27}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{125}{27}$"
   hint="Take the reciprocal and change the sign of the exponent: $\tfrac{5}{3}^3$."
 >}}
@@ -184,6 +190,7 @@ $-\left(\tfrac{1}{3}\right)^{-2} = -1 \cdot \left(\tfrac{3}{1}\right)^2 = -9$.
 {{< fillin
   question="Simplify: $(-5)^{-2}$."
   answer="\frac{1}{25}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{1}{25}$"
   hint="The base is -5. Take the reciprocal and change the sign of the exponent: $1/(-5)^2$."
 >}}
@@ -191,6 +198,7 @@ $-\left(\tfrac{1}{3}\right)^{-2} = -1 \cdot \left(\tfrac{3}{1}\right)^2 = -9$.
 {{< fillin
   question="Simplify: $-5^{-2}$."
   answer="-\frac{1}{25}"
+  answerForm="fraction"
   answerDisplay="$-\tfrac{1}{25}$"
   hint="This means the opposite of $5^{-2}$, so first find $1/5^2$, then take the opposite."
 >}}
@@ -210,6 +218,7 @@ $(4 \cdot 2)^{-1} = (8)^{-1} = \tfrac{1}{8^1} = \tfrac{1}{8}$.
 {{< fillin
   question="Simplify: $6 \cdot 3^{-1}$."
   answer="2"
+  answerForm="decimal"
   answerDisplay="2"
   hint="Apply the exponent before multiplying: $6 \cdot \tfrac{1}{3}$."
 >}}
@@ -217,6 +226,7 @@ $(4 \cdot 2)^{-1} = (8)^{-1} = \tfrac{1}{8^1} = \tfrac{1}{8}$.
 {{< fillin
   question="Simplify: $(6 \cdot 3)^{-1}$."
   answer="\frac{1}{18}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{1}{18}$"
   hint="Simplify inside the parentheses first $(6 \cdot 3 = 18)$, then apply the negative exponent."
 >}}
@@ -235,6 +245,7 @@ $\left(u^4\right)^{-3} = \tfrac{1}{\left(u^4\right)^3} = \tfrac{1}{u^{12}}$.
 {{< fillin
   question="Simplify: $y^{-7}$. Write the answer with a positive exponent."
   answer="\frac{1}{y^7}"
+  answerForm="single-fraction"
   answerDisplay="$1/y^7$"
   hint="Use the definition of a negative exponent: $y^{-7} = 1/y^7$."
 >}}
@@ -242,6 +253,7 @@ $\left(u^4\right)^{-3} = \tfrac{1}{\left(u^4\right)^3} = \tfrac{1}{u^{12}}$.
 {{< fillin
   question="Simplify: $(z^3)^{-5}$. Write the answer with a positive exponent."
   answer="\frac{1}{z^{15}}"
+  answerForm="single-fraction"
   answerDisplay="$1/z^{15}$"
   hint="First multiply the exponents $(3 \cdot 5 = 15)$, then apply the negative exponent."
 >}}
@@ -267,6 +279,7 @@ $(-5y)^{-1} = \tfrac{1}{(-5y)^1} = \tfrac{1}{-5y} = -\tfrac{1}{5y}$.
 {{< fillin
   question="Simplify: $8p^{-1}$. Write the answer with a positive exponent."
   answer="\frac{8}{p}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{8}{p}$"
   hint="The exponent applies only to p, so $8p^{-1} = 8 \cdot \tfrac{1}{p}$."
 >}}
@@ -274,6 +287,7 @@ $(-5y)^{-1} = \tfrac{1}{(-5y)^1} = \tfrac{1}{-5y} = -\tfrac{1}{5y}$.
 {{< fillin
   question="Simplify: $(8p)^{-1}$. Write the answer with a positive exponent."
   answer="\frac{1}{8p}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{8p}$"
   hint="The parentheses make the exponent apply to the whole base 8p, so $(8p)^{-1} = \tfrac{1}{8p}$."
 >}}
@@ -318,6 +332,7 @@ $z^{-5} \cdot z^{-3} = z^{-5-3} = z^{-8} = \tfrac{1}{z^8}$.
 {{< fillin
   question="Simplify: $x^{-3} \cdot x^7$. Write the answer as a power of x."
   answer="x^4"
+  answerForm="single-term"
   answerDisplay="$x^4$"
   hint="The bases are the same, so add the exponents: $-3 + 7$."
 >}}
@@ -325,6 +340,7 @@ $z^{-5} \cdot z^{-3} = z^{-5-3} = z^{-8} = \tfrac{1}{z^8}$.
 {{< fillin
   question="Simplify: $y^{-7} \cdot y^2$. Write the answer with a positive exponent."
   answer="\frac{1}{y^5}"
+  answerForm="single-fraction"
   answerDisplay="$1/y^5$"
   hint="Add the exponents $(-7 + 2 = -5)$, then apply the definition of a negative exponent."
 >}}
@@ -345,6 +361,7 @@ $$
 {{< fillin
   question="Simplify: $(p^6 q^{-2})(p^{-9} q^{-1})$. Write the answer with positive exponents."
   answer="\frac{1}{p^3 q^3}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{p^3 q^3}$"
   hint="Group like bases and add exponents: $p^{6-9} = p^{-3}$ and $q^{-2-1} = q^{-3}$, then apply the definition of a negative exponent."
 >}}
@@ -352,6 +369,7 @@ $$
 {{< fillin
   question="Simplify: $(r^5 s^{-3})(r^{-7} s^{-5})$. Write the answer with positive exponents."
   answer="\frac{1}{r^2 s^8}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{r^2 s^8}$"
   hint="Group like bases and add exponents: $r^{5-7} = r^{-2}$ and $s^{-3-5} = s^{-8}$, then apply the definition of a negative exponent."
 >}}
@@ -371,6 +389,7 @@ $$
 {{< fillin
   question="Simplify: $(-4x^4)^{-2}$. Write the answer with positive exponents."
   answer="\frac{1}{16x^8}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{16x^8}$"
   hint="Raise each factor to the -2 power: $(-4)^{-2} = \tfrac{1}{16}$ and $(x^4)^{-2} = x^{-8}$."
 >}}
@@ -388,6 +407,7 @@ $$
 {{< fillin
   question="Simplify: $(8a^{-4})^2$. Write the answer with positive exponents."
   answer="\frac{64}{a^8}"
+  answerForm="single-fraction"
   answerDisplay="$64/a^8$"
   hint="Square each factor: $8^2 = 64$ and $(a^{-4})^2 = a^{-8} = 1/a^8$."
 >}}
@@ -404,6 +424,7 @@ $$\frac{r^5}{r^{-4}} = r^{5-(-4)} = r^9$$
 {{< fillin
   question="Simplify: $x^8 / x^{-3}$. Write the answer as a power of x."
   answer="x^{11}"
+  answerForm="polynomial"
   answerDisplay="$x^{11}$"
   hint="Subtract the exponents: 8 - (-3)."
 >}}
@@ -411,6 +432,7 @@ $$\frac{r^5}{r^{-4}} = r^{5-(-4)} = r^9$$
 {{< fillin
   question="Simplify: $y^8 / y^{-6}$. Write the answer as a power of y."
   answer="y^{14}"
+  answerForm="polynomial"
   answerDisplay="$y^{14}$"
   hint="Subtract the exponents: 8 - (-6)."
 >}}
@@ -603,6 +625,7 @@ $$
 {{< fillin
   question="Multiply $(3 \times 10^6)(2 \times 10^{-8})$. Write the answer in decimal form."
   answer="0.06"
+  answerForm="decimal"
   answerDisplay="0.06"
   hint="Multiply the first factors $(3 \cdot 2 = 6)$ and add the exponents on $10 (6 + -8 = -2)$, then convert $6 \times 10^{-2}$ to decimal form."
 >}}
@@ -610,6 +633,7 @@ $$
 {{< fillin
   question="Multiply $(3 \times 10^{-2})(3 \times 10^{-1})$. Write the answer in decimal form."
   answer="0.009"
+  answerForm="decimal"
   answerDisplay="0.009"
   hint="Multiply the first factors $(3 \cdot 3 = 9)$ and add the exponents on $10 (-2 + -1 = -3)$, then convert $9 \times 10^{-3}$ to decimal form."
 >}}
@@ -627,6 +651,7 @@ $$
 {{< fillin
   question="Divide $\tfrac{8 \times 10^4}{2 \times 10^{-1}}$. Write the answer in decimal form."
   answer="400000"
+  answerForm="decimal"
   answerDisplay="400,000"
   hint="Divide the first factors $(\tfrac{8}{2} = 4)$ and subtract the exponents on $10 (4 - -1 = 5)$, then convert $4 \times 10^5$ to decimal form."
 >}}
@@ -634,8 +659,125 @@ $$
 {{< fillin
   question="Divide $\tfrac{8 \times 10^2}{4 \times 10^{-2}}$. Write the answer in decimal form."
   answer="20000"
+  answerForm="decimal"
   answerDisplay="20,000"
   hint="Divide the first factors $(\tfrac{8}{4} = 2)$ and subtract the exponents on $10 (2 - -2 = 4)$, then convert $2 \times 10^4$ to decimal form."
+>}}
+
+## Practice
+
+### Use the Definition of a Negative Exponent
+
+{{< fillin
+  question="Simplify: $3^{-4}$."
+  answer="\frac{1}{81}"
+  answerForm="fraction"
+  answerDisplay="$\tfrac{1}{81}$"
+  hint="Use the definition of a negative exponent: $3^{-4} = 1/3^4$."
+>}}
+
+{{< fillin
+  question="Simplify: $10^{-2}$."
+  answer="\frac{1}{100}"
+  answerForm="fraction"
+  answerDisplay="$\tfrac{1}{100}$"
+  hint="Use the definition of a negative exponent: $10^{-2} = 1/10^2$."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{1}{c^{-5}}$. Write the answer as a power of c."
+  answer="c^5"
+  answerForm="polynomial"
+  answerDisplay="$c^5$"
+  hint="Use the Property of Negative Exponents: $\tfrac{1}{a^{-n}} = a^n$."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{1}{5^{-2}}$."
+  answer="25"
+  answerForm="decimal"
+  answerDisplay="25"
+  hint="Use the Property of Negative Exponents: $\tfrac{1}{5^{-2}} = 5^2$. Then compute $5 \cdot 5$."
+>}}
+
+### Simplify Expressions with Integer Exponents
+
+{{< fillin
+  question="Simplify: $x^4 \cdot x^{-2} \cdot x^{-3}$. Write the answer with a positive exponent."
+  answer="\frac{1}{x}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{1}{x}$"
+  hint="The bases are the same, so add all three exponents: $4 + (-2) + (-3)$."
+>}}
+
+{{< fillin
+  question="Simplify: $(m^3 n^{-3})(m^{-5} n^{-1})$. Write the answer with positive exponents."
+  answer="\frac{1}{m^2 n^4}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{1}{m^2 n^4}$"
+  hint="Group like bases and add exponents: $m^{3-5} = m^{-2}$ and $n^{-3-1} = n^{-4}$, then apply the definition of a negative exponent."
+>}}
+
+{{< fillin
+  question="Simplify: $n^5 / n^{-2}$. Write the answer as a power of n."
+  answer="n^7"
+  answerForm="polynomial"
+  answerDisplay="$n^7$"
+  hint="Subtract the exponents: 5 - (-2)."
+>}}
+
+### Convert from Decimal Notation to Scientific Notation
+
+{{< fillin
+  question="Write in scientific notation: 340,000."
+  answer="3.4 \times 10^{5}"
+  answerForm="scientific-notation"
+  answerDisplay="$3.4 \times 10^5$"
+  hint="Move the decimal after the 3 to get 3.4, then count the places moved (5). The number is greater than 1, so the exponent is positive."
+>}}
+
+{{< fillin
+  question="Write in scientific notation: 0.041."
+  answer="4.1 \times 10^{-2}"
+  answerForm="scientific-notation"
+  answerDisplay="$4.1 \times 10^{-2}$"
+  hint="Move the decimal to get 4.1, then count the places moved (2). The number is between 0 and 1, so the exponent is negative."
+>}}
+
+### Convert Scientific Notation to Decimal Form
+
+{{< fillin
+  question="Convert to decimal form: $8.3 \times 10^2$."
+  answer="830"
+  answerForm="decimal"
+  answerDisplay="830"
+  hint="The exponent is 2, so move the decimal 2 places to the right, adding a zero as a placeholder."
+>}}
+
+{{< fillin
+  question="Convert to decimal form: $3.8 \times 10^{-2}$."
+  answer="0.038"
+  answerForm="decimal"
+  answerDisplay="0.038"
+  hint="The exponent is -2, so move the decimal 2 places to the left, adding a zero as a placeholder."
+>}}
+
+### Multiply and Divide Using Scientific Notation
+
+{{< fillin
+  question="Multiply $(2 \times 10^2)(1 \times 10^{-4})$. Write the answer in decimal form."
+  answer="0.02"
+  answerForm="decimal"
+  answerDisplay="0.02"
+  hint="Multiply the first factors $(2 \cdot 1 = 2)$ and add the exponents on $10 (2 + -4 = -2)$, then convert $2 \times 10^{-2}$ to decimal form."
+>}}
+
+{{< fillin
+  question="Divide $\tfrac{8 \times 10^6}{4 \times 10^{-1}}$. Write the answer in decimal form."
+  answer="20000000"
+  answerForm="decimal"
+  answerDisplay="20,000,000"
+  hint="Divide the first factors $(\tfrac{8}{4} = 2)$ and subtract the exponents on $10 (6 - -1 = 7)$, then convert $2 \times 10^7$ to decimal form."
 >}}
 
 ## Key terms
@@ -651,4 +793,4 @@ numbers larger than $1$ and negative for numbers between $0$ and $1$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 6.7: Integer Exponents and Scientific Notation](https://openstax.org/books/elementary-algebra-2e/pages/6-7-integer-exponents-and-scientific-notation) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as prose and typeset equations; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 6.7: Integer Exponents and Scientific Notation](https://openstax.org/books/elementary-algebra-2e/pages/6-7-integer-exponents-and-scientific-notation) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as prose and typeset equations; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

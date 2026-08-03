@@ -67,6 +67,7 @@ Simplify: (a) $\sqrt{144}$ (b) $- \sqrt{289}.$
 {{< fillin
   question="Simplify: $- \sqrt{64}$"
   answer="-8"
+  answerForm="simplified-radical"
   answerDisplay="$-8$"
   hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
 >}}
@@ -74,6 +75,7 @@ Simplify: (a) $\sqrt{144}$ (b) $- \sqrt{289}.$
 {{< fillin
   question="Simplify: $\sqrt{225}$"
   answer="15"
+  answerForm="simplified-radical"
   answerDisplay="15"
   hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
 >}}
@@ -81,6 +83,7 @@ Simplify: (a) $\sqrt{144}$ (b) $- \sqrt{289}.$
 {{< fillin
   question="Simplify: $\sqrt{100}$"
   answer="10"
+  answerForm="simplified-radical"
   answerDisplay="10"
   hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
 >}}
@@ -121,6 +124,7 @@ a real number
 {{< fillin
   question="Simplify: $- \sqrt{81}$"
   answer="-9"
+  answerForm="simplified-radical"
   answerDisplay="$-9$"
   hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
 >}}
@@ -218,6 +222,7 @@ Simplify: (a) $\sqrt[3]{64}$ (b) $\sqrt[4]{81}$ (c) $\sqrt[5]{32}.$
 {{< fillin
   question="Simplify: $\sqrt[3]{27}$"
   answer="3"
+  answerForm="simplified-radical"
   answerDisplay="3"
   hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
 >}}
@@ -225,6 +230,7 @@ Simplify: (a) $\sqrt[3]{64}$ (b) $\sqrt[4]{81}$ (c) $\sqrt[5]{32}.$
 {{< fillin
   question="Simplify: $\sqrt[4]{256}$"
   answer="4"
+  answerForm="simplified-radical"
   answerDisplay="4"
   hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
 >}}
@@ -232,6 +238,7 @@ Simplify: (a) $\sqrt[3]{64}$ (b) $\sqrt[4]{81}$ (c) $\sqrt[5]{32}.$
 {{< fillin
   question="Simplify: $\sqrt[5]{243}$"
   answer="3"
+  answerForm="simplified-radical"
   answerDisplay="3"
   hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
 >}}
@@ -497,6 +504,7 @@ Simplify: (a) $\sqrt{x^{2}}$ (b) $\sqrt[3]{n^{3}}$ (c) $\sqrt[4]{p^{4}}$ (d) $\s
 {{< fillin
   question="Simplify: $\sqrt{b^{2}}$"
   answer="\left|b\right|"
+  answerForm="simplified-radical"
   answerDisplay="$\left|b\right|$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -504,6 +512,7 @@ Simplify: (a) $\sqrt{x^{2}}$ (b) $\sqrt[3]{n^{3}}$ (c) $\sqrt[4]{p^{4}}$ (d) $\s
 {{< fillin
   question="Simplify: $\sqrt[3]{w^{3}}$"
   answer="w"
+  answerForm="simplified-radical"
   answerDisplay="$w$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -511,6 +520,7 @@ Simplify: (a) $\sqrt{x^{2}}$ (b) $\sqrt[3]{n^{3}}$ (c) $\sqrt[4]{p^{4}}$ (d) $\s
 {{< fillin
   question="Simplify: $\sqrt[4]{m^{4}}$"
   answer="\left|m\right|"
+  answerForm="simplified-radical"
   answerDisplay="$\left|m\right|$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -549,6 +559,7 @@ Simplify: (a) $\sqrt{x^{6}}$ (b) $\sqrt{y^{16}}.$
 {{< fillin
   question="Simplify: $\sqrt{y^{18}}$"
   answer="\left|y^{9}\right|"
+  answerForm="simplified-radical"
   answerDisplay="$\left|y^{9}\right|$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -556,6 +567,7 @@ Simplify: (a) $\sqrt{x^{6}}$ (b) $\sqrt{y^{16}}.$
 {{< fillin
   question="Simplify: $\sqrt{z^{12}}$"
   answer="z^{6}"
+  answerForm="simplified-radical"
   answerDisplay="$z^{6}$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -563,6 +575,7 @@ Simplify: (a) $\sqrt{x^{6}}$ (b) $\sqrt{y^{16}}.$
 {{< fillin
   question="Simplify: $\sqrt{m^{4}}$"
   answer="m^{2}"
+  answerForm="simplified-radical"
   answerDisplay="$m^{2}$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -592,6 +605,7 @@ Simplify: (a) $\sqrt[3]{y^{18}}$ (b) $\sqrt[4]{z^{8}}.$
 {{< fillin
   question="Simplify: $\sqrt[4]{u^{12}}$"
   answer="\left|u^{3}\right|"
+  answerForm="simplified-radical"
   answerDisplay="$\left|u^{3}\right|$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -599,6 +613,7 @@ Simplify: (a) $\sqrt[3]{y^{18}}$ (b) $\sqrt[4]{z^{8}}.$
 {{< fillin
   question="Simplify: $\sqrt[3]{v^{15}}$"
   answer="v^{5}"
+  answerForm="simplified-radical"
   answerDisplay="$v^{5}$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -606,6 +621,7 @@ Simplify: (a) $\sqrt[3]{y^{18}}$ (b) $\sqrt[4]{z^{8}}.$
 {{< fillin
   question="Simplify: $\sqrt[5]{c^{20}}$"
   answer="c^{4}"
+  answerForm="simplified-radical"
   answerDisplay="$c^{4}$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -639,6 +655,7 @@ Simplify: (a) $\sqrt{16 n^{2}}$ (b) $- \sqrt{81 c^{2}}.$
 {{< fillin
   question="Simplify: $\sqrt{64 x^{2}}$"
   answer="8 \left|x\right|"
+  answerForm="simplified-radical"
   answerDisplay="$8 \left|x\right|$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -646,6 +663,7 @@ Simplify: (a) $\sqrt{16 n^{2}}$ (b) $- \sqrt{81 c^{2}}.$
 {{< fillin
   question="Simplify: $- \sqrt{100 p^{2}}$"
   answer="-10 \left|p\right|"
+  answerForm="simplified-radical"
   answerDisplay="$-10 \left|p\right|$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -653,6 +671,7 @@ Simplify: (a) $\sqrt{16 n^{2}}$ (b) $- \sqrt{81 c^{2}}.$
 {{< fillin
   question="Simplify: $\sqrt{169 y^{2}}$"
   answer="13 \left|y\right|"
+  answerForm="simplified-radical"
   answerDisplay="$13 \left|y\right|$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -682,6 +701,7 @@ Simplify: (a) $\sqrt[3]{64 p^{6}}$ (b) $\sqrt[4]{16 q^{12}}.$
 {{< fillin
   question="Simplify: $\sqrt[3]{27 x^{27}}$"
   answer="3 x^{9}"
+  answerForm="simplified-radical"
   answerDisplay="$3 x^{9}$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -689,6 +709,7 @@ Simplify: (a) $\sqrt[3]{64 p^{6}}$ (b) $\sqrt[4]{16 q^{12}}.$
 {{< fillin
   question="Simplify: $\sqrt[4]{81 q^{28}}$"
   answer="3 \left|q^{7}\right|"
+  answerForm="simplified-radical"
   answerDisplay="$3 \left|q^{7}\right|$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -696,6 +717,7 @@ Simplify: (a) $\sqrt[3]{64 p^{6}}$ (b) $\sqrt[4]{16 q^{12}}.$
 {{< fillin
   question="Simplify: $\sqrt[3]{125 q^{9}}$"
   answer="5 q^{3}"
+  answerForm="simplified-radical"
   answerDisplay="$5 q^{3}$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -733,6 +755,7 @@ Simplify: (a) $\sqrt{36 x^{2} y^{2}}$ (b) $\sqrt{121 a^{6} b^{8}}$ (c) $\sqrt[3]
 {{< fillin
   question="Simplify: $\sqrt{100 a^{2} b^{2}}$"
   answer="10 \left|a b\right|"
+  answerForm="simplified-radical"
   answerDisplay="$10 \left|a b\right|$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -740,6 +763,7 @@ Simplify: (a) $\sqrt{36 x^{2} y^{2}}$ (b) $\sqrt{121 a^{6} b^{8}}$ (c) $\sqrt[3]
 {{< fillin
   question="Simplify: $\sqrt{144 p^{12} q^{20}}$"
   answer="12 p^{6} q^{10}"
+  answerForm="simplified-radical"
   answerDisplay="$12 p^{6} q^{10}$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
@@ -747,6 +771,7 @@ Simplify: (a) $\sqrt{36 x^{2} y^{2}}$ (b) $\sqrt{121 a^{6} b^{8}}$ (c) $\sqrt[3]
 {{< fillin
   question="Simplify: $\sqrt[3]{8 x^{30} y^{12}}$"
   answer="2 x^{10} y^{4}"
+  answerForm="simplified-radical"
   answerDisplay="$2 x^{10} y^{4}$"
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}

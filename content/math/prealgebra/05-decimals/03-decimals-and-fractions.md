@@ -157,12 +157,14 @@ $$0.875 + 6.4 = 7.275$$
 {{< fillin
   question="Simplify: $\tfrac{3}{8} + 4.9$"
   answer="5.275"
+  answerForm="decimal"
   hint="Convert $\tfrac{3}{8}$ to a decimal ($0.375$), then add."
 >}}
 
 {{< fillin
   question="Simplify: $5.7 + \tfrac{13}{20}$"
   answer="6.35"
+  answerForm="decimal"
   hint="Convert $\tfrac{13}{20}$ to a decimal ($0.65$), then add."
 >}}
 
@@ -259,12 +261,14 @@ Simplify: $3$.
 {{< fillin
   question="Simplify: $8(14.6 - 37.5)$"
   answer="-183.2"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first, then multiply."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\tfrac{3}{5}\right)(9.6 - 2.1)$"
   answer="4.5"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first ($9.6 - 2.1 = 7.5$), then multiply by $\tfrac{3}{5}$."
 >}}
 
@@ -282,12 +286,14 @@ $0.01 + 3.15$. Add: $3.16$.
 {{< fillin
   question="Simplify: $9 \div 0.9 + (0.4)3 - (0.2)^2$"
   answer="11.16"
+  answerForm="decimal"
   hint="Follow the order of operations: simplify the exponent first, then divide, then multiply, then add and subtract left to right."
 >}}
 
 {{< fillin
   question="Simplify: $\left(\tfrac{1}{2}\right)^2 + (0.3)(4.2)$"
   answer="1.51"
+  answerForm="decimal"
   hint="Simplify the exponent first ($\tfrac{1}{2}$ squared $= \tfrac{1}{4} = 0.25$), then multiply $0.3$ by $4.2$, then add."
 >}}
 
@@ -467,6 +473,7 @@ $0.\overline{45}$
 {{< fillin
   question="Simplify the expression: $2.4 + \tfrac{5}{8}$"
   answer="3.025"
+  answerForm="decimal"
   hint="Convert $\tfrac{5}{8}$ to a decimal by dividing $5$ by $8$, then line up the decimal points and add."
 >}}
 
@@ -505,24 +512,28 @@ $0.\overline{45}$
 {{< fillin
   question="Simplify: $10(25.1 - 43.8)$"
   answer="-187"
+  answerForm="decimal"
   hint="Subtract inside the parentheses first — the result is negative — then multiply by $10$."
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{5}{12}(30.58 + 17.9)$"
   answer="20.2"
+  answerForm="decimal"
   hint="Add inside the parentheses first, then multiply the sum by $5$ and divide by $12$."
 >}}
 
 {{< fillin
   question="Simplify: $(37.1 + 52.7) \div (12.5 \div 62.5)$"
   answer="449"
+  answerForm="decimal"
   hint="Simplify each set of parentheses before dividing. Check your quotient by multiplying it back by the second parenthesis."
 >}}
 
 {{< fillin
   question="Simplify: $-\tfrac{9}{10} \cdot \tfrac{8}{15} + 0.25$"
   answer="-0.23"
+  answerForm="decimal"
   hint="Multiply the two fractions first, convert that product to a decimal, then add $0.25$."
 >}}
 

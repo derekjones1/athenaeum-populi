@@ -55,6 +55,7 @@ Simplify: $\sqrt{98}.$
 {{< fillin
   question="Simplify: $\sqrt{48}$"
   answer="4 \sqrt{3}"
+  answerForm="simplified-radical"
   answerDisplay="$4 \sqrt{3}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -62,6 +63,7 @@ Simplify: $\sqrt{98}.$
 {{< fillin
   question="Simplify: $\sqrt{45}$"
   answer="3 \sqrt{5}"
+  answerForm="simplified-radical"
   answerDisplay="$3 \sqrt{5}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -114,6 +116,7 @@ Simplify: (a) $\sqrt{500}$ (b) $\sqrt[3]{16}$ (c) $\sqrt[4]{243}.$
 {{< fillin
   question="Simplify: $\sqrt{288}$"
   answer="12 \sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$12 \sqrt{2}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -121,6 +124,7 @@ Simplify: (a) $\sqrt{500}$ (b) $\sqrt[3]{16}$ (c) $\sqrt[4]{243}.$
 {{< fillin
   question="Simplify: $\sqrt[3]{81}$"
   answer="3 \sqrt[3]{3}"
+  answerForm="simplified-radical"
   answerDisplay="$3 \sqrt[3]{3}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -128,6 +132,7 @@ Simplify: (a) $\sqrt{500}$ (b) $\sqrt[3]{16}$ (c) $\sqrt[4]{243}.$
 {{< fillin
   question="Simplify: $\sqrt[4]{64}$"
   answer="2 \sqrt[4]{4}"
+  answerForm="simplified-radical"
   answerDisplay="$2 \sqrt[4]{4}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -168,6 +173,7 @@ Simplify: (a) $\sqrt{x^{3}}$ (b) $\sqrt[3]{x^{4}}$ (c) $\sqrt[4]{x^{7}}.$
 {{< fillin
   question="Simplify: $\sqrt{b^{5}}$"
   answer="b^{2} \sqrt{b}"
+  answerForm="simplified-radical"
   answerDisplay="$b^{2} \sqrt{b}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -175,6 +181,7 @@ Simplify: (a) $\sqrt{x^{3}}$ (b) $\sqrt[3]{x^{4}}$ (c) $\sqrt[4]{x^{7}}.$
 {{< fillin
   question="Simplify: $\sqrt[4]{y^{6}}$"
   answer="\left|y\right| \sqrt[4]{y^{2}}"
+  answerForm="simplified-radical"
   answerDisplay="$\left|y\right| \sqrt[4]{y^{2}}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -182,6 +189,7 @@ Simplify: (a) $\sqrt{x^{3}}$ (b) $\sqrt[3]{x^{4}}$ (c) $\sqrt[4]{x^{7}}.$
 {{< fillin
   question="Simplify: $\sqrt[3]{z^{5}}$"
   answer="z \sqrt[3]{z^{2}}"
+  answerForm="simplified-radical"
   answerDisplay="$z \sqrt[3]{z^{2}}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -224,6 +232,7 @@ Simplify: (a) $\sqrt{72 n^{7}}$ (b) $\sqrt[3]{24 x^{7}}$ (c) $\sqrt[4]{80 y^{14}
 {{< fillin
   question="Simplify: $\sqrt{32 y^{5}}$"
   answer="4 y^{2} \sqrt{2 y}"
+  answerForm="simplified-radical"
   answerDisplay="$4 y^{2} \sqrt{2 y}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -231,6 +240,7 @@ Simplify: (a) $\sqrt{72 n^{7}}$ (b) $\sqrt[3]{24 x^{7}}$ (c) $\sqrt[4]{80 y^{14}
 {{< fillin
   question="Simplify: $\sqrt[3]{54 p^{10}}$"
   answer="3 p^{3} \sqrt[3]{2 p}"
+  answerForm="simplified-radical"
   answerDisplay="$3 p^{3} \sqrt[3]{2 p}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -238,6 +248,7 @@ Simplify: (a) $\sqrt{72 n^{7}}$ (b) $\sqrt[3]{24 x^{7}}$ (c) $\sqrt[4]{80 y^{14}
 {{< fillin
   question="Simplify: $\sqrt[4]{64 q^{10}}$"
   answer="2 q^{2} \sqrt[4]{4 q^{2}}"
+  answerForm="simplified-radical"
   answerDisplay="$2 q^{2} \sqrt[4]{4 q^{2}}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -281,6 +292,7 @@ Simplify: (a) $\sqrt{63 u^{3} v^{5}}$ (b) $\sqrt[3]{40 x^{4} y^{5}}$ (c) $\sqrt[
 {{< fillin
   question="Simplify: $\sqrt{98 a^{7} b^{5}}$"
   answer="7 \left|a^{3}\right| b^{2} \sqrt{2 a b}"
+  answerForm="simplified-radical"
   answerDisplay="$7 \left|a^{3}\right| b^{2} \sqrt{2 a b}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -288,6 +300,7 @@ Simplify: (a) $\sqrt{63 u^{3} v^{5}}$ (b) $\sqrt[3]{40 x^{4} y^{5}}$ (c) $\sqrt[
 {{< fillin
   question="Simplify: $\sqrt[3]{56 x^{5} y^{4}}$"
   answer="2 x y \sqrt[3]{7 x^{2} y}"
+  answerForm="simplified-radical"
   answerDisplay="$2 x y \sqrt[3]{7 x^{2} y}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -295,6 +308,7 @@ Simplify: (a) $\sqrt{63 u^{3} v^{5}}$ (b) $\sqrt[3]{40 x^{4} y^{5}}$ (c) $\sqrt[
 {{< fillin
   question="Simplify: $\sqrt[4]{32 x^{5} y^{8}}$"
   answer="2 \left|x\right| y^{2} \sqrt[4]{2 x}"
+  answerForm="simplified-radical"
   answerDisplay="$2 \left|x\right| y^{2} \sqrt[4]{2 x}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -366,6 +380,7 @@ The terms cannot be added as one has a radical and the other does not. Trying to
 {{< fillin
   question="Simplify: $5 + \sqrt{75}$"
   answer="5 + 5 \sqrt{3}"
+  answerForm="simplified-radical"
   answerDisplay="$5 + 5 \sqrt{3}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -373,6 +388,7 @@ The terms cannot be added as one has a radical and the other does not. Trying to
 {{< fillin
   question="Simplify: $\tfrac{10 - \sqrt{75}}{5}$"
   answer="2 - \sqrt{3}"
+  answerForm="simplified-radical"
   answerDisplay="$2 - \sqrt{3}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -380,6 +396,7 @@ The terms cannot be added as one has a radical and the other does not. Trying to
 {{< fillin
   question="Simplify: $2 + \sqrt{98}$"
   answer="2 + 7 \sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$2 + 7 \sqrt{2}$"
   hint="Factor the radicand into the largest perfect power for the root index times the remaining factor."
 >}}
@@ -476,6 +493,7 @@ Simplify: (a) $\sqrt{\tfrac{m^{6}}{m^{4}}}$ (b) $\sqrt[3]{\tfrac{a^{8}}{a^{5}}}$
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{a^{8}}{a^{6}}}$"
   answer="\left|a\right|"
+  answerForm="simplified-radical"
   answerDisplay="$\left|a\right|$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -483,6 +501,7 @@ Simplify: (a) $\sqrt{\tfrac{m^{6}}{m^{4}}}$ (b) $\sqrt[3]{\tfrac{a^{8}}{a^{5}}}$
 {{< fillin
   question="Simplify: $\sqrt[4]{\tfrac{x^{7}}{x^{3}}}$"
   answer="\left|x\right|"
+  answerForm="simplified-radical"
   answerDisplay="$\left|x\right|$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -490,6 +509,7 @@ Simplify: (a) $\sqrt{\tfrac{m^{6}}{m^{4}}}$ (b) $\sqrt[3]{\tfrac{a^{8}}{a^{5}}}$
 {{< fillin
   question="Simplify: $\sqrt[4]{\tfrac{y^{17}}{y^{5}}}$"
   answer="y^{3}"
+  answerForm="simplified-radical"
   answerDisplay="$y^{3}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -522,6 +542,7 @@ Simplify: $\sqrt{\tfrac{27 m^{3}}{196}}.$
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{24 p^{3}}{49}}$"
   answer="\tfrac{2 \left|p\right| \sqrt{6 p}}{7}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{2 \left|p\right| \sqrt{6 p}}{7}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -529,6 +550,7 @@ Simplify: $\sqrt{\tfrac{27 m^{3}}{196}}.$
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{48 x^{5}}{100}}$"
   answer="\tfrac{2 x^{2} \sqrt{3 x}}{5}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{2 x^{2} \sqrt{3 x}}{5}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -577,6 +599,7 @@ Simplify: (a) $\sqrt{\tfrac{45 x^{5}}{y^{4}}}$ (b) $\sqrt[3]{\tfrac{24 x^{7}}{y^
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{80 m^{3}}{n^{6}}}$"
   answer="\tfrac{4 \left|m\right| \sqrt{5 m}}{\left|n^{3}\right|}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{4 \left|m\right| \sqrt{5 m}}{\left|n^{3}\right|}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -584,6 +607,7 @@ Simplify: (a) $\sqrt{\tfrac{45 x^{5}}{y^{4}}}$ (b) $\sqrt[3]{\tfrac{24 x^{7}}{y^
 {{< fillin
   question="Simplify: $\sqrt[3]{\tfrac{108 c^{10}}{d^{6}}}$"
   answer="\tfrac{3 c^{3} \sqrt[3]{4 c}}{d^{2}}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{3 c^{3} \sqrt[3]{4 c}}{d^{2}}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -591,6 +615,7 @@ Simplify: (a) $\sqrt{\tfrac{45 x^{5}}{y^{4}}}$ (b) $\sqrt[3]{\tfrac{24 x^{7}}{y^
 {{< fillin
   question="Simplify: $\sqrt[4]{\tfrac{80 x^{10}}{y^{4}}}$"
   answer="\tfrac{2 x^{2} \sqrt[4]{5 x^{2}}}{\left|y\right|}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{2 x^{2} \sqrt[4]{5 x^{2}}}{\left|y\right|}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -634,6 +659,7 @@ Simplify: (a) $\sqrt{\tfrac{18 p^{5} q^{7}}{32 p q^{2}}}$ (b) $\sqrt[3]{\tfrac{1
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{50 x^{5} y^{3}}{72 x^{4} y}}$"
   answer="\tfrac{5 \left|y\right| \sqrt{x}}{6}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{5 \left|y\right| \sqrt{x}}{6}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -641,6 +667,7 @@ Simplify: (a) $\sqrt{\tfrac{18 p^{5} q^{7}}{32 p q^{2}}}$ (b) $\sqrt[3]{\tfrac{1
 {{< fillin
   question="Simplify: $\sqrt[3]{\tfrac{16 x^{5} y^{7}}{54 x^{2} y^{2}}}$"
   answer="\tfrac{2 x y \sqrt[3]{y^{2}}}{3}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{2 x y \sqrt[3]{y^{2}}}{3}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -648,6 +675,7 @@ Simplify: (a) $\sqrt{\tfrac{18 p^{5} q^{7}}{32 p q^{2}}}$ (b) $\sqrt[3]{\tfrac{1
 {{< fillin
   question="Simplify: $\sqrt[4]{\tfrac{5 a^{8} b^{6}}{80 a^{3} b^{2}}}$"
   answer="\tfrac{\left|a b\right| \sqrt[4]{a}}{2}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\left|a b\right| \sqrt[4]{a}}{2}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -692,6 +720,7 @@ Simplify: (a) $\tfrac{\sqrt{48 a^{7}}}{\sqrt{3 a}}$ (b) $\tfrac{\sqrt[3]{-108}}{
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{98 z^{5}}}{\sqrt{2 z}}$"
   answer="7 z^{2}"
+  answerForm="simplified-radical"
   answerDisplay="$7 z^{2}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -699,6 +728,7 @@ Simplify: (a) $\tfrac{\sqrt{48 a^{7}}}{\sqrt{3 a}}$ (b) $\tfrac{\sqrt[3]{-108}}{
 {{< fillin
   question="Simplify: $\tfrac{\sqrt[3]{-500}}{\sqrt[3]{2}}$"
   answer="-5 \sqrt[3]{2}"
+  answerForm="simplified-radical"
   answerDisplay="$-5 \sqrt[3]{2}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -706,6 +736,7 @@ Simplify: (a) $\tfrac{\sqrt{48 a^{7}}}{\sqrt{3 a}}$ (b) $\tfrac{\sqrt[3]{-108}}{
 {{< fillin
   question="Simplify: $\tfrac{\sqrt[4]{486 m^{11}}}{\sqrt[4]{3 m^{5}}}$"
   answer="3 \left|m\right| \sqrt[4]{2 m^{2}}"
+  answerForm="simplified-radical"
   answerDisplay="$3 \left|m\right| \sqrt[4]{2 m^{2}}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}

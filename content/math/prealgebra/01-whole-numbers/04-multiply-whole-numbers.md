@@ -102,6 +102,7 @@ $$a \cdot b = b \cdot a$$
 {{< fillin
   question="Find the product: $0 \cdot 19$."
   answer="0"
+  answerForm="decimal"
   hint="What does the Multiplication Property of Zero say about any number times zero?"
 >}}
 
@@ -147,12 +148,14 @@ multiply $8 \cdot 3 = 24$, then multiply $24 \cdot 2 = 48$.
 {{< fillin
   question="Multiply: $64 \cdot 8$."
   answer="512"
+  answerForm="decimal"
   hint="8 times 4 is 32 — write the 2, carry the 3, and remember to add it after multiplying 8 by 6."
 >}}
 
 {{< fillin
   question="Multiply: $75 \cdot 100$."
   answer="7500"
+  answerForm="decimal"
   answerDisplay="7,500"
   hint="100 has two zeros — what does the pattern for multiplying by powers of ten say to do with them?"
 >}}
@@ -160,6 +163,7 @@ multiply $8 \cdot 3 = 24$, then multiply $24 \cdot 2 = 48$.
 {{< fillin
   question="Multiply: $(265)(483)$."
   answer="127995"
+  answerForm="decimal"
   answerDisplay="127,995"
   hint="Write $265 \times 483$ vertically and add the three partial products — from the 3 ones, the 8 tens, and the 4 hundreds."
 >}}
@@ -292,18 +296,21 @@ forty-two times thirty-three; the sum of forty-two and thirty-three
 {{< fillin
   question="Multiply: $7 \cdot 6$."
   answer="42"
+  answerForm="decimal"
   hint="This is a one-digit multiplication fact — seven groups of six."
 >}}
 
 {{< fillin
   question="Multiply: $6 \cdot 7$."
   answer="42"
+  answerForm="decimal"
   hint="Compare this with the previous product: the Commutative Property says changing the order of the factors does not change their product."
 >}}
 
 {{< fillin
   question="Multiply: $1{,}000(88)$."
   answer="88000"
+  answerForm="decimal"
   answerDisplay="$88{,}000$"
   hint="$1{,}000$ has three zeros, so attach three zeros to the other factor."
 >}}
@@ -311,6 +318,7 @@ forty-two times thirty-three; the sum of forty-two and thirty-three
 {{< fillin
   question="Multiply: $247 \times 139$."
   answer="34333"
+  answerForm="decimal"
   answerDisplay="$34{,}333$"
   hint="Write the numbers vertically and add three partial products — from the 9 ones, the 3 tens, and the 1 hundred — shifting each one more place to the left."
 >}}

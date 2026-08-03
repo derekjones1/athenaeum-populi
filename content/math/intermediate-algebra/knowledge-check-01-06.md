@@ -25,6 +25,7 @@ weight: 7
 {{< fillin
   question="Simplify: $5n + 8 + 2n - 1$."
   answer="7n+7"
+  answerForm="no-like-terms"
   answerDisplay="$7n + 7$"
 >}}
 
@@ -39,6 +40,7 @@ weight: 7
 {{< fillin
   question="Simplify: $16 - 2\left|3(1 - 4) - (8 - 5)\right|$."
   answer="-8"
+  answerForm="decimal"
 >}}
 
 ### 1.3 Fractions
@@ -53,6 +55,7 @@ weight: 7
 {{< fillin
   question="Simplify: $\tfrac{4}{5} \div \left(-\tfrac{12}{25}\right)$."
   answer="-\frac{5}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$-\tfrac{5}{3}$"
 >}}
 
@@ -66,6 +69,7 @@ weight: 7
 {{< fillin
   question="Simplify: $-8 \div 0.05$."
   answer="-160"
+  answerForm="decimal"
 >}}
 
 ### 1.5 Properties of Real Numbers
@@ -82,6 +86,7 @@ undefined
 {{< fillin
   question="Simplify: $6(3y - 1) - (5y - 3)$."
   answer="13y-3"
+  answerForm="distributed"
   answerDisplay="$13y - 3$"
 >}}
 
@@ -479,6 +484,7 @@ trinomial
 {{< fillin
   question="Subtract: $(10x^2 - 3x + 5) - (4x^2 - 6)$."
   answer="6x^2-3x+11"
+  answerForm="no-like-terms"
   answerDisplay="$6x^2 - 3x + 11$"
 >}}
 
@@ -487,17 +493,20 @@ trinomial
 {{< fillin
   question="Simplify and write with positive exponents: $x^{-3}x^4$."
   answer="x"
+  answerForm="single-term"
 >}}
 
 {{< fillin
   question="Simplify and write with positive exponents: $\tfrac{24r^3s}{6r^2s^7}$."
-  answer="4r/s^6"
+  answer="\frac{4r}{s^6}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{4r}{s^6}$"
 >}}
 
 {{< fillin
   question="Multiply and write the answer in scientific notation: $(2.4 \times 10^8)(2 \times 10^{-5})$."
   answer="4.8*10^3"
+  answerForm="scientific-notation"
   answerDisplay="$4.8 \times 10^3$"
 >}}
 
@@ -506,17 +515,20 @@ trinomial
 {{< fillin
   question="Multiply: $(8xy^3)(-6x^4y^6)$."
   answer="-48x^5y^9"
+  answerForm="single-term"
 >}}
 
 {{< fillin
   question="Multiply: $(m + 3)(7m - 2)$."
   answer="7m^2+19m-6"
+  answerForm="expanded"
   answerDisplay="$7m^2 + 19m - 6$"
 >}}
 
 {{< fillin
   question="Multiply: $(4x - 3)^2$."
   answer="16x^2-24x+9"
+  answerForm="expanded"
   answerDisplay="$16x^2 - 24x + 9$"
 >}}
 
@@ -525,6 +537,7 @@ trinomial
 {{< fillin
   question="Divide: $(15xy^3 - 35x^2y) \div 5xy$."
   answer="3y^2-7x"
+  answerForm="expanded"
   answerDisplay="$3y^2 - 7x$"
 >}}
 
@@ -543,12 +556,14 @@ no
 {{< fillin
   question="Factor completely: $80a^2 + 120a^3$."
   answer="40a^2(2+3a)"
+  answerForm="factored"
   answerDisplay="$40a^2(2 + 3a)$"
 >}}
 
 {{< fillin
   question="Factor by grouping: $xy - 8y + 7x - 56$."
   answer="(x-8)(y+7)"
+  answerForm="factored"
   answerDisplay="$(x - 8)(y + 7)$"
 >}}
 
@@ -557,6 +572,7 @@ no
 {{< fillin
   question="Factor completely: $x^2 + 13x + 36$."
   answer="(x+4)(x+9)"
+  answerForm="factored"
   answerDisplay="$(x + 4)(x + 9)$"
 >}}
 
@@ -565,18 +581,21 @@ no
 {{< fillin
   question="Factor completely: $9s^2 - 12s + 4$."
   answer="(3s-2)^2"
+  answerForm="factored"
   answerDisplay="$(3s - 2)^2$"
 >}}
 
 {{< fillin
   question="Factor completely: $3x^2 - 75y^2$."
   answer="3(x+5y)(x-5y)"
+  answerForm="factored"
   answerDisplay="$3(x + 5y)(x - 5y)$"
 >}}
 
 {{< fillin
   question="Factor completely: $x^3 + 125$."
   answer="(x+5)(x^2-5x+25)"
+  answerForm="factored"
   answerDisplay="$(x + 5)(x^2 - 5x + 25)$"
 >}}
 
@@ -585,6 +604,7 @@ no
 {{< fillin
   question="Factor completely: $6x^4 - 19x^2 + 15$."
   answer="(3x^2-5)(2x^2-3)"
+  answerForm="factored"
   answerDisplay="$(3x^2 - 5)(2x^2 - 3)$"
 >}}
 

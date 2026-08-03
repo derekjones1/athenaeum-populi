@@ -256,6 +256,47 @@ $$f = \frac{11{,}440}{20} = 572$$
 
 A $20''$ guitar string has frequency $572$ vibrations per second.
 
+## Practice
+
+### Solve direct variation problems
+
+{{< fillin
+  question="If $v$ varies directly as $w$ and $v = 24$ when $w = 8$, find the equation that relates $v$ and $w$."
+  answer="v=3w"
+  answerDisplay="$v = 3w$"
+  hint="Substitute into $v = kw$: $24 = k \cdot 8$. Divide both sides by $8$."
+>}}
+
+{{< fillin
+  question="The number of apples, $a$, Terri needs for her fundraiser pies varies directly with the number of pies, $p$, she makes. It takes nine apples to make two pies. Write the equation that relates $a$ and $p$."
+  answer="a=4.5p"
+  answerDisplay="$a = 4.5p$"
+  hint="Substitute into $a = kp$: $9 = k \cdot 2$. Divide both sides by $2$."
+>}}
+
+{{< fillin
+  question="Using Terri's equation from the previous exercise, how many apples would she need to make six pies?"
+  answer="27"
+  answerDisplay="27 apples"
+  hint="Substitute $p = 6$ into $a = 4.5p$ and simplify."
+>}}
+
+### Solve inverse variation problems
+
+{{< fillin
+  question="If $y$ varies inversely with $x$ and $y = 5$ when $x = 4$, find the equation that relates $x$ and $y$."
+  answer="y=\frac{20}{x}"
+  answerDisplay="$y = \tfrac{20}{x}$"
+  hint="Substitute into $y = \tfrac{k}{x}$: $5 = \tfrac{k}{4}$. Multiply both sides by $4$."
+>}}
+
+{{< fillin
+  question="If $v$ varies inversely with $w$ and $v = 6$ when $w = \tfrac{1}{2}$, find the equation that relates $v$ and $w$."
+  answer="v=\frac{3}{w}"
+  answerDisplay="$v = \tfrac{3}{w}$"
+  hint="Substitute $w = \tfrac{1}{2}$ into $v = \tfrac{k}{w}$, then multiply both sides by $\tfrac{1}{2}$ to solve for $k$."
+>}}
+
 ## Key terms
 
 **direct variation** — a relationship in which $y = kx$: one variable is a
@@ -267,4 +308,4 @@ pair of values and solving.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.9: Use Direct and Inverse Variation](https://openstax.org/books/elementary-algebra-2e/pages/8-9-use-direct-and-inverse-variation) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, recast the "How To" procedures as callouts; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.9: Use Direct and Inverse Variation](https://openstax.org/books/elementary-algebra-2e/pages/8-9-use-direct-and-inverse-variation) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, recast the "How To" procedures as callouts; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

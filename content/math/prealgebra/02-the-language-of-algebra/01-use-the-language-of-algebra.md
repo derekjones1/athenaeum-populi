@@ -177,12 +177,14 @@ form and multiply the factors. For example, $3^4 = 3 \cdot 3 \cdot 3 \cdot 3 =
 {{< fillin
   question="Simplify: $3^4$"
   answer="81"
+  answerForm="decimal"
   hint="Write it in expanded form, $3 \cdot 3 \cdot 3 \cdot 3$, then multiply the factors."
 >}}
 
 {{< fillin
   question="Simplify: $2^5$"
   answer="32"
+  answerForm="decimal"
   hint="$2^5$ means $2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ — multiply five factors of $2$."
 >}}
 
@@ -216,6 +218,7 @@ multiply first: $4 + 21$, then add: $25$.
 {{< fillin
   question="Simplify: $4 + 3 \cdot 7$"
   answer="25"
+  answerForm="decimal"
   answerDisplay="25"
   hint="No parentheses and no exponents, so do the multiplication before the addition."
 >}}
@@ -223,6 +226,7 @@ multiply first: $4 + 21$, then add: $25$.
 {{< fillin
   question="Simplify: $(4 + 3) \cdot 7$"
   answer="49"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first, then multiply."
 >}}
 
@@ -242,6 +246,7 @@ $6 \cdot 3$, then multiply: $18$.
 {{< fillin
   question="Simplify: $42 \div 7 \cdot 3$"
   answer="18"
+  answerForm="decimal"
   hint="Division and multiplication have equal priority — work from left to right, so divide first."
 >}}
 
@@ -252,6 +257,7 @@ $3 + 4(3) = 3 + 12$. Finally add: $15$.
 {{< fillin
   question="Simplify: $18 \div 6 + 4(5 - 2)$"
   answer="15"
+  answerForm="decimal"
   hint="Start inside the parentheses, then do division and multiplication left to right, and add last."
 >}}
 
@@ -269,6 +275,7 @@ $3 \cdot 0 = 0$. Finally add left to right: $5 + 8 + 0 = 13$.
 {{< fillin
   question="Simplify: $9 + 5^3 - [4(9 + 3)]$"
   answer="86"
+  answerForm="decimal"
   hint="Innermost parentheses first ($9 + 3 = 12$), then the bracket ($4 \cdot 12 = 48$), then the exponent ($5^3 = 125$), then add and subtract left to right."
 >}}
 
@@ -281,6 +288,7 @@ right: $35 - 25 = 10$.
 {{< fillin
   question="Simplify: $2^3 + 3^4 \div 3 - 5^2$"
   answer="10"
+  answerForm="decimal"
   answerDisplay="10"
   hint="Simplify the exponents first, then divide, then add and subtract from left to right."
 >}}
@@ -418,36 +426,42 @@ $2 \cdot 8$
 {{< fillin
   question="Simplify: $3 + 8 \cdot 5$"
   answer="43"
+  answerForm="decimal"
   hint="There are no grouping symbols and no exponents, so multiply before you add."
 >}}
 
 {{< fillin
   question="Simplify: $(3 + 8) \cdot 5$"
   answer="55"
+  answerForm="decimal"
   hint="Compare this with the previous problem: the parentheses come first, so add before you multiply."
 >}}
 
 {{< fillin
   question="Simplify: $2^3 - 12 \div (9 - 5)$"
   answer="5"
+  answerForm="decimal"
   hint="Parentheses first, then the exponent, then the division, and subtract last."
 >}}
 
 {{< fillin
   question="Simplify: $4 \cdot 12 / 8$"
   answer="6"
+  answerForm="decimal"
   hint="Multiplication and division have equal priority, so work strictly from left to right."
 >}}
 
 {{< fillin
   question="Simplify: $4^2 + 5^2$"
   answer="41"
+  answerForm="decimal"
   hint="Simplify each exponent before adding. Note that this is not the same as $(4 + 5)^2$."
 >}}
 
 {{< fillin
   question="Simplify: $3(1 + 9 \cdot 6) - 4^2$"
   answer="149"
+  answerForm="decimal"
   hint="Work inside the parentheses first, multiplying before adding there. Then simplify the exponent, multiply, and subtract last."
 >}}
 

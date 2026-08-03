@@ -281,6 +281,50 @@ equation, we must also now state that $m \neq 1$.
   hint="Cross-multiply to get $3(y-2) = 2(x+1)$, then isolate $x$: $3y - 6 = 2x + 2$."
 >}}
 
+## Practice
+
+### Solve rational equations
+
+{{< fillin
+  question="Solve: $\tfrac{1}{a} + \tfrac{2}{5} = \tfrac{1}{2}$."
+  answer="10"
+  hint="Note $a \neq 0$. The LCD is $10a$; multiply both sides by it to clear the fractions, then solve for $a$."
+>}}
+
+{{< fillin
+  question="Solve: $1 - \tfrac{2}{m} = \tfrac{8}{m^2}$. Enter both solutions, separated by a comma."
+  answer="-2,4"
+  answerMode="unordered"
+  hint="Note $m \neq 0$. Multiply both sides by $m^2$ to get a quadratic equation, then factor."
+>}}
+
+{{< multiplechoice
+  question="Solve: $\tfrac{v-10}{v^2-5v+4} = \tfrac{3}{v-1} - \tfrac{6}{v-4}$. After clearing fractions, the equation simplifies to $v = 1$. What is the solution set?"
+  hint="Factor the first denominator: $(v-4)(v-1)$. Which values does that exclude? Compare them to the algebraic solution."
+  answer="No solution"
+>}}
+v = 1
+v = 4
+v = 1 and v = 4
+No solution
+{{< /multiplechoice >}}
+
+### Solve a rational equation for a specific variable
+
+{{< fillin
+  question="Solve $\tfrac{C}{r} = 2\pi$ for $r$. Enter the expression that $r$ equals."
+  answer="\frac{C}{2\pi}"
+  answerDisplay="$r = \tfrac{C}{2\pi}$"
+  hint="Multiply both sides by $r$ to get $C = 2\pi r$, then divide both sides by $2\pi$."
+>}}
+
+{{< fillin
+  question="Solve $\tfrac{m+3}{n-2} = \tfrac{4}{5}$ for $n$. Enter the expression that $n$ equals."
+  answer="\frac{5m+23}{4}"
+  answerDisplay="$n = \tfrac{5m+23}{4}$"
+  hint="Cross-multiply to get $5(m+3) = 4(n-2)$, then isolate $n$."
+>}}
+
 ## Key terms
 
 **rational equation** — two rational expressions connected by an equal sign.
@@ -291,4 +335,4 @@ a denominator equal to zero, so the rational expression is undefined there.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 8.6: Solve Rational Equations](https://openstax.org/books/elementary-algebra-2e/pages/8-6-solve-rational-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, recast the "How To" procedures as callouts, folded the extraneous-solution cases (no-solution and discarded-root) into a single subsection; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 8.6: Solve Rational Equations](https://openstax.org/books/elementary-algebra-2e/pages/8-6-solve-rational-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, recast the "How To" procedures as callouts, folded the extraneous-solution cases (no-solution and discarded-root) into a single subsection; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

@@ -43,11 +43,13 @@ weight: 6
 {{< fillin
   question="Simplify by combining like terms: $17a + 9a$."
   answer="26a"
+  answerForm="no-like-terms"
 >}}
 
 {{< fillin
   question="Simplify: $4 + 10(3 + 9) - 5^2$."
   answer="99"
+  answerForm="decimal"
 >}}
 
 ### 1.3 Add and Subtract Integers
@@ -66,6 +68,7 @@ weight: 6
 {{< fillin
   question="Simplify: $-19 - 25$."
   answer="-44"
+  answerForm="decimal"
 >}}
 
 ### 1.4 Multiply and Divide Integers
@@ -73,16 +76,19 @@ weight: 6
 {{< fillin
   question="Simplify: $(-5)^3$."
   answer="-125"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Simplify: $31 - 4(3 - 9)$."
   answer="55"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Simplify: $-5(-9) \div 15$."
   answer="3"
+  answerForm="decimal"
 >}}
 
 ### 1.5 Visualize Fractions
@@ -97,12 +103,14 @@ weight: 6
 {{< fillin
   question="Multiply: $\tfrac{2}{5} \cdot \tfrac{1}{3}$."
   answer="\frac{2}{15}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{15}$"
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{4}{5} \div \tfrac{9}{20}$."
   answer="\frac{16}{9}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{16}{9}$"
 >}}
 
@@ -111,18 +119,21 @@ weight: 6
 {{< fillin
   question="Add: $\tfrac{2}{3} + \tfrac{3}{4}$."
   answer="\frac{17}{12}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{17}{12}$"
 >}}
 
 {{< fillin
   question="Subtract: $\tfrac{11}{12} - \tfrac{3}{8}$."
   answer="\frac{13}{24}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{13}{24}$"
 >}}
 
 {{< fillin
   question="Simplify: $\tfrac{m}{7} + \tfrac{10}{7}$."
   answer="\frac{m+10}{7}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{m + 10}{7}$"
 >}}
 
@@ -142,11 +153,13 @@ weight: 6
 {{< fillin
   question="Simplify: $-5.8 + (-4.7)$."
   answer="-10.5"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Simplify: $(0.07)(31.95)$."
   answer="2.2365"
+  answerForm="decimal"
 >}}
 
 ### 1.8 The Real Numbers
@@ -154,6 +167,7 @@ weight: 6
 {{< fillin
   question="Simplify: $\sqrt{64}$."
   answer="8"
+  answerForm="simplified-radical"
 >}}
 
 {{< fillin
@@ -174,11 +188,13 @@ weight: 6
 {{< fillin
   question="Simplify: $-14\left(\tfrac{5}{7}p\right)$."
   answer="-10p"
+  answerForm="polynomial"
 >}}
 
 {{< fillin
   question="Simplify: $6x + (-4y) + 9x + 8y$."
   answer="15x+4y"
+  answerForm="no-like-terms"
   answerDisplay="$15x + 4y$"
 >}}
 

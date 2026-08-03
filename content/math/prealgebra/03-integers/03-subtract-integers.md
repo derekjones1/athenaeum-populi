@@ -133,6 +133,7 @@ is the same as adding $-9$ to $-17$.
 {{< fillin
   question="Simplify: $21 - 13$"
   answer="8"
+  answerForm="decimal"
   hint="Subtracting $13$ from $21$ gives the same result as adding $-13$ to $21$."
 >}}
 
@@ -151,12 +152,14 @@ the same as adding $4$ to $-7$.
 {{< fillin
   question="Simplify: $6 - (-13)$"
   answer="19"
+  answerForm="decimal"
   hint="Subtracting $-13$ is the same as adding $13$."
 >}}
 
 {{< fillin
   question="Simplify: $-5 - (-1)$"
   answer="-4"
+  answerForm="decimal"
   hint="Subtracting $-1$ is the same as adding $1$."
 >}}
 
@@ -182,6 +185,7 @@ from $74$ negatives: $-74 - (-58) = -16$.
 {{< fillin
   question="Simplify: $-67 - (-38)$"
   answer="-29"
+  answerForm="decimal"
   hint="This takes $38$ negatives away from $67$ negatives."
 >}}
 
@@ -195,6 +199,7 @@ $5$.
 {{< fillin
   question="Simplify: $8 - (-3 - 1) - 9$"
   answer="3"
+  answerForm="decimal"
   hint="Simplify inside the parentheses first ($-3 - 1 = -4$), then subtract left to right."
 >}}
 
@@ -204,6 +209,7 @@ $21 - 28 - 40$. Subtract from left to right: $-7-40$. Subtract: $-47$.
 {{< fillin
   question="Simplify: $6 \cdot 2 - 9 \cdot 1 - 8 \cdot 9$"
   answer="-69"
+  answerForm="decimal"
   hint="Multiply first ($12$, $9$, and $72$), then subtract left to right."
 >}}
 
@@ -389,36 +395,42 @@ $\text{\textdollar}7$.
 {{< fillin
   question="Simplify: $15 - 6$"
   answer="9"
+  answerForm="decimal"
   hint="Both numbers are positive and the first is larger, so subtract as usual."
 >}}
 
 {{< fillin
   question="Simplify: $15 + (-6)$"
   answer="9"
+  answerForm="decimal"
   hint="Compare this with $15 - 6$ — subtracting $6$ and adding $-6$ do the same thing."
 >}}
 
 {{< fillin
   question="Simplify: $8 - (-9)$"
   answer="17"
+  answerForm="decimal"
   hint="Subtracting a negative is the same as adding its opposite: $8 + 9$."
 >}}
 
 {{< fillin
   question="Simplify: $8 + 9$"
   answer="17"
+  answerForm="decimal"
   hint="Compare this with $8 - (-9)$ — the two expressions must agree."
 >}}
 
 {{< fillin
   question="Simplify: $48 - 87$"
   answer="-39"
+  answerForm="decimal"
   hint="Rewrite as $48 + (-87)$. The negative counter wins, so the result is negative."
 >}}
 
 {{< fillin
   question="Simplify: $25 - [10 - (3 - 12)]$"
   answer="6"
+  answerForm="decimal"
   hint="Work from the innermost grouping outward: simplify $3 - 12$ first, then the brackets."
 >}}
 
