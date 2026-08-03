@@ -271,6 +271,7 @@ the two independent things it names:
 | `expanded` | a sum of terms, not a product/power/quotient — for "Multiply: $(w+5)(w+7)$"; still allows a remainder term |
 | `single-term` | one monomial: one coefficient, each variable once, no written $\cdot$, no top-level $+$, no $\,^0$ factor |
 | `single-fraction` | one quotient, no $\div$ and no top-level $+$; reduced when both halves are monomials |
+| `reduced-fraction` | exactly one $\tfrac{a}{b}$ with no common polynomial or integer factor across the bar — for "Simplify $\frac{x^2-x-2}{x^2-3x+2}$"; a half the checker cannot read as an integer-coefficient polynomial passes on its value alone |
 | `no-like-terms` | a sum in which no two terms share a variable-and-power signature |
 | `polynomial` | no fraction bar at all — for a difference of fractions answering to a polynomial |
 | `distributed` | no parentheses left to multiply out |
@@ -301,10 +302,10 @@ The lint rejects a re-expression prompt with no `answerForm`, and
 re-expression at all, `multiplechoice` is the right component: the learner
 picks among forms.
 
-Retyping a printed *expression* ("Add: $3+5$", "Simplify: $b^9\cdot b^8$")
-grades correct too, and is **not** yet flagged — but it is a gap in the rules,
-not something inherent to CAS grading. `answerForm="decimal"` already rejects
-`3+5`. The measured backlog and its sequencing are in §6.
+Retyping a printed *expression* ("Add: $3+5$", "Simplify: $b^9\cdot b^8$",
+"Simplify: $\frac{x^2-x-2}{x^2-3x+2}$") grades correct too, and is flagged the
+same way: the lint grades every printed subject of a re-expression verb as a
+submission under the declared form. The class-by-class record is in §6.
 
 **A categorical answer is never a number.** "Is $7{,}248$ divisible by $5$?
 Answer $1$ for yes or $0$ for no" grades a legend rather than the choice and
@@ -591,7 +592,7 @@ are grouped, and figure curves come from analytic primitives. Two rules that
 were over-firing were narrowed at the same time — an incidental value collision
 is not a defect (the mode of a data set *is* one of the printed numbers), and
 `\phantom{0000}` long-division spacing is not a number. The trivially
-satisfiable fill-ins are a live programme, tracked in §6.
+satisfiable fill-ins are closed class by class — the record is in §6.
 
 The working rules that remain:
 
@@ -612,7 +613,7 @@ is what stops new ones being authored. The two are inseparable: a rule may only
 land once the content it governs is already clean, so each verb's rule ships
 with that verb's retrofit.
 
-Measured across the corpus, 1,869 fill-ins were passable this way. All but one
+Measured across the corpus, 1,869 fill-ins were passable this way. Every
 class is now closed — token, retrofit, and lint rule each:
 
 | Class | Count | Needs | Status |
@@ -622,7 +623,7 @@ class is now closed — token, retrofit, and lint rule each:
 | Multiply, Divide (algebraic) | 231 | `expanded`, `single-term`, `single-fraction` | **done** — same three parts |
 | Simplify, Add, Subtract (algebraic) | 401 | `no-like-terms`, `polynomial`, `distributed`, `single-fraction` | **done** |
 | Radicals | 207 | `simplified-radical` | **done** |
-| Reducing a rational expression | 47 | a `reduced-fraction` predicate that does not exist | **open — the only class left** |
+| Reducing a rational expression | 47 | `reduced-fraction` | **done** — token, retrofit, and lint rule all landed |
 
 Two things the numeric pass established that are worth carrying forward. The
 measured 751 was 566 once the radicals and the incidental collisions were
@@ -656,23 +657,34 @@ rejects a printed nested power, but would tell the learner to reduce a fraction
 that is not there — `single-power` exists for that reason alone. Check the
 sentence `describeAnswerForm` will produce before settling on a token.
 
-### The one class still open
+### The last class closed: `reduced-fraction`
 
 Reducing a rational expression — "Simplify $\frac{x^2-x-2}{x^2-3x+2}$" to
-$\frac{x+1}{x-1}$ — is a real instance of this hazard with no available fix.
-Prompt and answer are *both* a single fraction; what separates them is
-cancelling a common polynomial factor, which is a CAS operation rather than a
-shape, and the Compute Engine's `simplify()` does not reliably perform it. The
-lint therefore skips a candidate when the printed span and the answer are both
-single fractions, so the rule reports nothing it cannot help with. That
-exemption is scoped to spans containing a variable: a *numeral* fraction is
-fully expressible today (`lowest-terms`, or `single-fraction`'s written-halves
-reduced-ness test), so a numeral span is never exempt — an answer identical to
-its printed prompt in that class is the never-re-expressed author error, not an
-open problem. Closing this
-needs a `reduced-fraction` predicate (polynomial GCD, or a rational-root test
-over the integer-coefficient polynomials this corpus uses); the moment one
-exists, delete that filter in `tools/lints.mjs` and retrofit the 47.
+$\frac{x+1}{x-1}$ — was the last class open. Prompt and answer are *both* a
+single fraction; what separates them is cancelling a common polynomial factor,
+which is a gcd computation rather than a shape, and the Compute Engine's
+`simplify()` does not reliably perform it. The `reduced-fraction` predicate
+computes it exactly: it reads the WRITTEN halves (the engine folds numeral
+fractions before any predicate can see them), converts each to an
+integer-coefficient polynomial (BigInt), and requires their multivariate gcd —
+primitive-PRS Euclidean, so bivariate factors and opposite-sign binomials like
+$2-x$ vs $x-2$ both count — to be the constant $1$. A half the reader cannot
+digest (a decimal, a radical, an absolute value) FAILS OPEN to value grading:
+a form check must never reject a correct answer it cannot read. The shape gate
+is deliberately stricter than `single-fraction` — exactly one written
+fraction, with no fraction bar (`\frac`, `\div`, or `/`) inside either half —
+so a complex-fraction prompt and a `\tfrac{a}{b}^5` both fail the form and the
+token can silence the lint on them.
+
+The lint's former both-sides-single-fraction exemption is deleted, and the 47
+are retrofitted: 42 tagged `reduced-fraction`, the rest resolved individually
+(a quotient-to-a-power item became a multiple choice among fraction forms
+because no token's feedback names that ask). One operational note survives the
+closure: the re-expression rule checks the cheap declared form *before*
+grading a candidate span through the engine, because grading is
+value-then-form (a span the form rejects can never grade `correct`) and the
+equivalence ladder's `simplify()` effectively never returns on a conjugate
+radical quotient.
 
 ## Done checklist
 

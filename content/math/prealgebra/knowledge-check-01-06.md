@@ -351,6 +351,7 @@ weight: 7
 {{< fillin
   question="Simplify the complex fraction: $\tfrac{p/2}{q/5}$"
   answer="\frac{5p}{2q}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{5p}{2q}$"
 >}}
 

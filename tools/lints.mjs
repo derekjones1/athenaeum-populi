@@ -877,23 +877,18 @@ export function lintHugo(src, filename = '') {
         // prompt ("Simplify: $\tfrac{40}{88}$" answered with itself) is the
         // exact author error this rule exists to catch.
         .filter((value) => !(spanHasVariable(value)
-          && value.replace(/\s+/g, '') === (params.answer || '').replace(/\s+/g, '')))
-        // Reducing a rational expression — "$\frac{x^2-x-2}{x^2-3x+2}$" to
-        // "$\frac{x+1}{x-1}$" — is a real instance of this hazard that no form
-        // token can currently express: prompt and answer are both a single
-        // fraction, and what separates them is cancelling a common polynomial
-        // factor, which is a CAS operation rather than a shape. Reporting it
-        // would name a defect with no available fix, so the rule stays silent
-        // on that one shape and the class is tracked in the playbook §6
-        // worklist instead. Scoped to spans WITH a variable — numeral
-        // fractions are fully covered by `lowest-terms`, and a reduced numeral
-        // fraction equal to the answer IS the answer, so exempting them would
-        // only hide defects. The moment a `reduced-fraction` predicate exists,
-        // delete this filter.
-        .filter((value) => !(spanHasVariable(value)
-          && checkForm(value, 'single-fraction') && checkForm(params.answer, 'single-fraction')));
+          && value.replace(/\s+/g, '') === (params.answer || '').replace(/\s+/g, '')));
+      // The cheap shape check runs before the engine ever sees the span:
+      // grading is value-then-form, so a span the declared form already rules
+      // out can never grade 'correct', and skipping it changes nothing but
+      // wall-clock. This matters, not merely helps — the equivalence ladder's
+      // simplify() effectively never returns on a conjugate radical quotient
+      // ("$\tfrac{\sqrt{5}}{\sqrt{x}+\sqrt{2}}$" against its rationalized
+      // answer), and every such exercise declares the very form that rejects
+      // its printed span without parsing at all.
       const printed = candidates
-        .find((value) => checkAnswer(value, params.answer, { mode: params.answerMode, form: params.answerForm }) === 'correct');
+        .find((value) => checkForm(value, params.answerForm)
+          && checkAnswer(value, params.answer, { mode: params.answerMode, form: params.answerForm }) === 'correct');
       if (printed !== undefined) {
         const remedy = parseAnswerForm(params.answerForm).valid
           ? `the declared answerForm ${JSON.stringify(params.answerForm)} does not rule that value out — tighten it`

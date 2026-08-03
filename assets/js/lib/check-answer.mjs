@@ -110,6 +110,25 @@ function readBalancedGroup(source, openIndex) {
 }
 
 /**
+ * The two written halves of a response that is EXACTLY one `\frac{..}{..}`
+ * (any sizing variant) with nothing before or after it — or null. Input is
+ * bareLatex() output with any leading sign already stripped. Shared by
+ * `single-fraction` and `reduced-fraction`, which both have to read the
+ * WRITTEN halves because the engine folds a numeral quotient before any
+ * predicate can see it.
+ */
+function writtenFractionHalves(bare) {
+  const opener = bare.match(/^\\[tdc]?frac\s*\{/);
+  if (!opener) return null;
+  const numeratorGroup = readBalancedGroup(bare, opener[0].length - 1);
+  const between = numeratorGroup && bare.slice(numeratorGroup[1]).match(/^\s*\{/);
+  const denominatorGroup = between
+    && readBalancedGroup(bare, numeratorGroup[1] + between[0].length - 1);
+  if (!denominatorGroup || bare.slice(denominatorGroup[1]).trim() !== '') return null;
+  return [numeratorGroup[0], denominatorGroup[0]];
+}
+
+/**
  * The Compute Engine reads a `\frac` with a lone `d` numerator as Leibniz
  * derivative notation, so `\frac{d}{t}` boxes as `D(missing, t)` and is
  * *invalid* — not merely unequal. That silently marks a correct student wrong
@@ -611,6 +630,288 @@ function reducedMonomialQuotient(numerator, denominator) {
     || gcd(numerator.coefficient, denominator.coefficient) === 1;
 }
 
+// --------------------------------------------------------------------------
+// Integer-coefficient polynomials, for `reduced-fraction`. "Simplify
+// $\frac{x^2-x-2}{x^2-3x+2}$" is separated from its answer $\frac{x+1}{x-1}$
+// by cancelling a common POLYNOMIAL factor, which is a gcd computation rather
+// than a shape — the one thing the monomial test above cannot see. The
+// corpus is integer coefficients, degree ≤ 3, at most two variables, but the
+// gcd below is exact for any of it: BigInt arithmetic, primitive-PRS
+// Euclidean in the first variable, contents handled by recursion.
+//
+// Representation: recursive dense. With `depth` variables remaining, a
+// polynomial is an array of coefficients indexed by the exponent of the
+// current variable, each itself a polynomial in the remaining `depth - 1`;
+// at depth 0 it is a plain BigInt. Zero is the empty array (or 0n), and
+// arrays are kept trimmed so the last entry is nonzero.
+// --------------------------------------------------------------------------
+
+const bigintGcd = (a, b) => {
+  let x = a < 0n ? -a : a;
+  let y = b < 0n ? -b : b;
+  while (y) [x, y] = [y, x % y];
+  return x;
+};
+
+const polyZero = (depth) => (depth === 0 ? 0n : []);
+const polyIsZero = (value, depth) => (depth === 0 ? value === 0n : value.length === 0);
+
+function polyTrim(coefficients, depth) {
+  let length = coefficients.length;
+  while (length > 0 && polyIsZero(coefficients[length - 1], depth - 1)) length -= 1;
+  return coefficients.slice(0, length);
+}
+
+function polyConst(value, depth) {
+  if (depth === 0) return value;
+  return value === 0n ? [] : [polyConst(value, depth - 1)];
+}
+
+/** The polynomial `1 · v` where v is the variable `index` levels down. */
+function polyVariable(index, depth) {
+  if (index === 0) return [polyZero(depth - 1), polyConst(1n, depth - 1)];
+  return [polyVariable(index - 1, depth - 1)];
+}
+
+function polyNeg(value, depth) {
+  if (depth === 0) return -value;
+  return value.map((coefficient) => polyNeg(coefficient, depth - 1));
+}
+
+function polyAdd(left, right, depth) {
+  if (depth === 0) return left + right;
+  const sum = [];
+  for (let i = 0; i < Math.max(left.length, right.length); i += 1) {
+    sum.push(polyAdd(left[i] ?? polyZero(depth - 1), right[i] ?? polyZero(depth - 1), depth - 1));
+  }
+  return polyTrim(sum, depth);
+}
+
+const polySub = (left, right, depth) => polyAdd(left, polyNeg(right, depth), depth);
+
+function polyMul(left, right, depth) {
+  if (depth === 0) return left * right;
+  if (left.length === 0 || right.length === 0) return [];
+  const product = Array.from({ length: left.length + right.length - 1 }, () => polyZero(depth - 1));
+  for (let i = 0; i < left.length; i += 1) {
+    for (let j = 0; j < right.length; j += 1) {
+      product[i + j] = polyAdd(product[i + j], polyMul(left[i], right[j], depth - 1), depth - 1);
+    }
+  }
+  return polyTrim(product, depth);
+}
+
+/** Multiply every coefficient by `scalar` (an element one level down). */
+const polyScaleCoefficients = (value, scalar, depth) => polyTrim(
+  value.map((coefficient) => polyMul(coefficient, scalar, depth - 1)),
+  depth,
+);
+
+/**
+ * Exact division, used only to divide a content out of its own polynomial —
+ * every step divides evenly by construction, so an inexact step is an
+ * internal bug and throws (the predicate catches and fails open).
+ */
+function polyDivExact(dividend, divisor, depth) {
+  if (depth === 0) {
+    if (divisor === 0n || dividend % divisor !== 0n) throw new Error('inexact polynomial division');
+    return dividend / divisor;
+  }
+  if (dividend.length === 0) return [];
+  if (divisor.length === 0) throw new Error('inexact polynomial division');
+  let remainder = dividend;
+  const quotient = Array.from(
+    { length: dividend.length - divisor.length + 1 },
+    () => polyZero(depth - 1),
+  );
+  const divisorLead = divisor[divisor.length - 1];
+  while (remainder.length >= divisor.length) {
+    const shift = remainder.length - divisor.length;
+    const term = polyDivExact(remainder[remainder.length - 1], divisorLead, depth - 1);
+    quotient[shift] = term;
+    const subtrahend = [
+      ...Array.from({ length: shift }, () => polyZero(depth - 1)),
+      ...polyScaleCoefficients(divisor, term, depth),
+    ];
+    remainder = polySub(remainder, subtrahend, depth);
+  }
+  if (remainder.length !== 0) throw new Error('inexact polynomial division');
+  return polyTrim(quotient, depth);
+}
+
+/** The bottom-level integer under the chain of leading coefficients. */
+function polyLeadingInteger(value, depth) {
+  if (depth === 0) return value;
+  return polyLeadingInteger(value[value.length - 1], depth - 1);
+}
+
+/**
+ * Flip the overall sign when the leading coefficient is negative, so `2 - x`
+ * normalizes to the same primitive as `x - 2` and the PRS reports their
+ * shared degree-1 factor — the "opposite binomials" prompts depend on it.
+ */
+function polyNormalizeSign(value, depth) {
+  if (polyIsZero(value, depth)) return value;
+  return polyLeadingInteger(value, depth) < 0n ? polyNeg(value, depth) : value;
+}
+
+/** gcd of all coefficients — an element one level down, sign-normalized. */
+function polyContent(value, depth) {
+  let content = polyZero(depth - 1);
+  for (const coefficient of value) content = polyGcd(content, coefficient, depth - 1);
+  return content;
+}
+
+const polyPrimitive = (value, depth) => polyNormalizeSign(
+  polyScaleDown(value, polyContent(value, depth), depth),
+  depth,
+);
+
+const polyScaleDown = (value, scalar, depth) => polyTrim(
+  value.map((coefficient) => polyDivExact(coefficient, scalar, depth - 1)),
+  depth,
+);
+
+/**
+ * Pseudo-remainder: repeatedly scale by the divisor's leading coefficient so
+ * every cancellation is exact. The stray `lc(divisor)^k` factor is harmless —
+ * the caller re-primitivizes every remainder anyway.
+ */
+function polyPseudoRemainder(dividend, divisor, depth) {
+  let remainder = dividend;
+  const divisorDegree = divisor.length - 1;
+  const divisorLead = divisor[divisor.length - 1];
+  while (remainder.length - 1 >= divisorDegree && remainder.length > 0) {
+    const shift = remainder.length - 1 - divisorDegree;
+    const scaled = polyScaleCoefficients(remainder, divisorLead, depth);
+    const subtrahend = [
+      ...Array.from({ length: shift }, () => polyZero(depth - 1)),
+      ...polyScaleCoefficients(divisor, remainder[remainder.length - 1], depth),
+    ];
+    remainder = polySub(scaled, subtrahend, depth);
+  }
+  return remainder;
+}
+
+/**
+ * Exact multivariate gcd: Euclid on primitive parts in the current variable,
+ * contents by recursion, BigInt at the bottom. Result is sign-normalized, so
+ * the quotient is reduced exactly when this returns the constant 1.
+ */
+function polyGcd(left, right, depth) {
+  if (depth === 0) return bigintGcd(left, right);
+  if (polyIsZero(left, depth)) return polyNormalizeSign(right, depth);
+  if (polyIsZero(right, depth)) return polyNormalizeSign(left, depth);
+  const leftContent = polyContent(left, depth);
+  const rightContent = polyContent(right, depth);
+  let a = polyPrimitive(left, depth);
+  let b = polyPrimitive(right, depth);
+  if (a.length < b.length) [a, b] = [b, a];
+  while (!polyIsZero(b, depth)) {
+    const remainder = polyPseudoRemainder(a, b, depth);
+    a = b;
+    b = polyIsZero(remainder, depth) ? remainder : polyPrimitive(remainder, depth);
+  }
+  const contentGcd = polyGcd(leftContent, rightContent, depth - 1);
+  return polyScaleCoefficients(a, contentGcd, depth);
+}
+
+/** The constant a polynomial is, or null when any variable survives. */
+function polyConstantValue(value, depth) {
+  if (depth === 0) return value;
+  if (value.length === 0) return 0n;
+  if (value.length > 1) return null;
+  return polyConstantValue(value[0], depth - 1);
+}
+
+/** Every symbol in the tree — free variables for the polynomial reading. */
+function collectSymbols(expr, out) {
+  if (expr.symbol) out.add(expr.symbol);
+  for (const op of expr.ops ?? []) collectSymbols(op, out);
+}
+
+/**
+ * A parsed half as an integer-coefficient polynomial over `vars`, or null
+ * when it is not one — a decimal or Rational coefficient, a radical, an
+ * absolute value, a quotient, a non-integer or out-of-range exponent. The
+ * caller FAILS OPEN on null: a form check must never reject a correct answer
+ * it cannot read. The `.im` guard matters — a complex literal like `4i`
+ * reports `re: 0`, which would otherwise read as the integer 0.
+ */
+function exprToPolynomial(expr, vars) {
+  const depth = vars.length;
+  const convert = (e) => {
+    if (e.isNumberLiteral) {
+      if (e.im !== 0 || !Number.isInteger(e.re) || Math.abs(e.re) > Number.MAX_SAFE_INTEGER) {
+        return null;
+      }
+      return polyConst(BigInt(e.re), depth);
+    }
+    if (e.symbol) {
+      const index = vars.indexOf(e.symbol);
+      return index === -1 ? null : polyVariable(index, depth);
+    }
+    const ops = e.ops ?? [];
+    if (e.operator === 'Negate') {
+      const operand = convert(ops[0]);
+      return operand === null ? null : polyNeg(operand, depth);
+    }
+    if (e.operator === 'Add' || e.operator === 'Subtract') {
+      let sum = null;
+      for (const [i, op] of ops.entries()) {
+        let term = convert(op);
+        if (term === null) return null;
+        if (e.operator === 'Subtract' && i > 0) term = polyNeg(term, depth);
+        sum = sum === null ? term : polyAdd(sum, term, depth);
+      }
+      return sum;
+    }
+    if (e.operator === 'Multiply') {
+      let product = polyConst(1n, depth);
+      for (const op of ops) {
+        const factor = convert(op);
+        if (factor === null) return null;
+        product = polyMul(product, factor, depth);
+      }
+      return product;
+    }
+    if (e.operator === 'Power') {
+      const exponent = ops[1];
+      if (!exponent?.isNumberLiteral || exponent.im !== 0 || !Number.isInteger(exponent.re)
+        || exponent.re < 0 || exponent.re > 8) return null;
+      const base = convert(ops[0]);
+      if (base === null) return null;
+      let power = polyConst(1n, depth);
+      for (let i = 0; i < exponent.re; i += 1) power = polyMul(power, base, depth);
+      return power;
+    }
+    return null;
+  };
+  return convert(expr);
+}
+
+/**
+ * Is a quotient of two written polynomial halves reduced — no common integer
+ * factor and no common polynomial factor? True (fail open) when either half
+ * is not an integer-coefficient polynomial.
+ */
+function reducedPolynomialQuotient(numeratorExpr, denominatorExpr) {
+  const vars = new Set();
+  collectSymbols(numeratorExpr, vars);
+  collectSymbols(denominatorExpr, vars);
+  const sorted = [...vars].sort();
+  const numerator = exprToPolynomial(numeratorExpr, sorted);
+  const denominator = exprToPolynomial(denominatorExpr, sorted);
+  if (numerator === null || denominator === null) return true;
+  if (polyIsZero(numerator, sorted.length) || polyIsZero(denominator, sorted.length)) return true;
+  try {
+    const common = polyGcd(numerator, denominator, sorted.length);
+    return polyConstantValue(common, sorted.length) === 1n;
+  } catch {
+    return true;
+  }
+}
+
 /**
  * How many factors a response is written as, and how many of them are
  * multi-term — or null when it is not a product at all.
@@ -950,24 +1251,18 @@ const FORM_PREDICATES = {
     // unreduced quotient left to inspect.
     const numeral = asFraction(latex);
     if (numeral) return gcd(numeral.numerator, numeral.denominator) === 1;
-    const opener = bare.match(/^\\[tdc]?frac\s*\{/);
-    if (opener) {
-      const numeratorGroup = readBalancedGroup(bare, opener[0].length - 1);
-      const between = numeratorGroup && bare.slice(numeratorGroup[1]).match(/^\s*\{/);
-      const denominatorGroup = between
-        && readBalancedGroup(bare, numeratorGroup[1] + between[0].length - 1);
-      if (denominatorGroup && bare.slice(denominatorGroup[1]).trim() === '') {
-        const [numerator, denominator] = [numeratorGroup[0], denominatorGroup[0]].map((half) => {
-          let expr;
-          try {
-            expr = parseLatex(preprocess(half));
-          } catch {
-            return null;
-          }
-          return expr.isValid ? monomialMagnitude(expr) : null;
-        });
-        return reducedMonomialQuotient(numerator, denominator);
-      }
+    const halves = writtenFractionHalves(bare);
+    if (halves) {
+      const [numerator, denominator] = halves.map((half) => {
+        let expr;
+        try {
+          expr = parseLatex(preprocess(half));
+        } catch {
+          return null;
+        }
+        return expr.isValid ? monomialMagnitude(expr) : null;
+      });
+      return reducedMonomialQuotient(numerator, denominator);
     }
     // A shape this predicate cannot read off the LaTeX (unbraced arguments,
     // trailing factors): fall back to the parsed structure.
@@ -981,6 +1276,44 @@ const FORM_PREDICATES = {
     const quotient = expr.operator === 'Negate' ? expr.ops[0] : expr;
     if (quotient.operator !== 'Divide') return true;
     return reducedMonomialQuotient(...quotient.ops.map(monomialMagnitude));
+  },
+  // "Simplify: $\frac{x^2-x-2}{x^2-3x+2}$" answers with $\frac{x+1}{x-1}$ —
+  // prompt and answer are BOTH one fraction, and what separates them is the
+  // cancelled polynomial factor, which only a polynomial gcd can see. The
+  // §6 class this token closes.
+  //
+  // Deliberately stricter in shape than `single-fraction`: the response must
+  // be EXACTLY one written fraction. A fraction inside a bigger expression
+  // (`\tfrac{a}{b}^5`, a sum of fractions) and a fraction inside either half
+  // (the complex-fraction prompts, `\cfrac{\frac{2}{x^2-1}}{\frac{3}{x+1}}`)
+  // both fail, so the lint can be silenced by this token on those prompts
+  // too. A response with no fraction at all passes — the token composes the
+  // way `lowest-terms` does, and in this class a non-fraction of the right
+  // value was already fully cancelled.
+  //
+  // Everything the polynomial reader cannot digest — decimals, radicals,
+  // absolute values — FAILS OPEN to the value check: a form check must never
+  // reject a correct answer it cannot read.
+  'reduced-fraction': (latex) => {
+    const bare = bareLatex(latex).replace(/^[-−]\s*/, '');
+    const halves = writtenFractionHalves(bare);
+    // A plain `/` counts as a fraction bar here: `\tfrac{p/2}{q/5}` is a
+    // complex fraction however its inner quotients are written.
+    if (!halves) return !/\\[tdc]?frac|\\div|\//.test(bare);
+    if (halves.some((half) => /\\[tdc]?frac|\\div|\//.test(half))) return false;
+    const numeral = asFraction(latex);
+    if (numeral) return gcd(numeral.numerator, numeral.denominator) === 1;
+    const parsed = halves.map((half) => {
+      let expr;
+      try {
+        expr = parseLatex(preprocess(half));
+      } catch {
+        return null;
+      }
+      return expr.isValid ? expr : null;
+    });
+    if (parsed.some((expr) => expr === null)) return true;
+    return reducedPolynomialQuotient(parsed[0], parsed[1]);
   },
   // "Factor: $x^2+6x+8$" prints a polynomial that *is* its own factorization by
   // value, so only the shape separates `(x+2)(x+4)` from the prompt retyped.
@@ -1034,6 +1367,7 @@ const FORM_PHRASES = {
   'simplified-radical': 'as a simplified radical',
   'single-term': 'as a single term',
   'single-fraction': 'as a single fraction',
+  'reduced-fraction': 'as a single fraction with all common factors cancelled',
   factored: 'in factored form',
 };
 

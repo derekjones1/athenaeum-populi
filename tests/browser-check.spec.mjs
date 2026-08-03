@@ -155,3 +155,43 @@ test('a re-typed polynomial is held back on a factoring prompt (answerForm="fact
     .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
     .toBe('correct');
 });
+
+test('a re-typed rational expression is held back until reduced (answerForm="reduced-fraction")', async ({ page }) => {
+  await page.goto('/math/elementary-algebra/08-rational-expressions-and-equations/01-simplify-rational-expressions/', { waitUntil: 'networkidle' });
+
+  // The last §6 class: `\frac{x^2-x-2}{x^2-3x+2}` and `\frac{x+1}{x-1}` are
+  // the same value, so this prompt was passable by retyping it until the
+  // polynomial-gcd predicate graded the shape. Exercised end to end because
+  // MathLive rewrites a typed `/` into its own `\frac` emission, and the
+  // predicate reads exactly those written halves.
+  const card = page.locator('fill-in[data-question-plain*="x^2-x-2"]').first();
+  await expect(card).toHaveCount(1);
+  const field = card.locator('math-field');
+  await expect
+    .poll(async () => field.evaluate((el) => typeof el.executeCommand === 'function'), { timeout: 20000 })
+    .toBe(true);
+  await field.scrollIntoViewIfNeeded();
+  await field.click();
+  await expect
+    .poll(async () => field.evaluate((el) => document.activeElement === el), { timeout: 10000 })
+    .toBe(true);
+
+  await page.keyboard.type('(x^2-x-2)/(x^2-3x+2)', { delay: 20 });
+  await card.getByRole('button', { name: /check/i }).click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('form');
+  await expect(card.locator('.ap-fillin-feedback')).toHaveText(/common factors cancelled/i);
+
+  await field.evaluate((el) => {
+    el.focus();
+    el.executeCommand('selectAll');
+    el.executeCommand('deleteBackward');
+  });
+  await expect.poll(async () => field.evaluate((el) => el.value)).toBe('');
+  await page.keyboard.type('(x+1)/(x-1)', { delay: 20 });
+  await card.getByRole('button', { name: /check/i }).click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('correct');
+});

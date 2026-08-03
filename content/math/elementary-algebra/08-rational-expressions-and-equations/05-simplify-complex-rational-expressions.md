@@ -78,6 +78,7 @@ undefined if $y = 3$ or $y = -3$.
 {{< fillin
   question="Simplify by writing it as division: $\cfrac{\frac{2}{x^2 - 1}}{\frac{3}{x + 1}}$."
   answer="\tfrac{2}{3(x - 1)}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{2}{3(x - 1)}$"
   hint="Rewrite as $\tfrac{2}{x^2 - 1} \div \tfrac{3}{x + 1}$, multiply by the reciprocal, and factor $x^2 - 1 = (x - 1)(x + 1)$."
 >}}
@@ -158,6 +159,7 @@ $$
 {{< fillin
   question="Simplify by writing it as division: $\cfrac{\frac{1}{x}+\frac{1}{y}}{\frac{1}{x}-\frac{1}{y}}$."
   answer="\tfrac{y + x}{y - x}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{y + x}{y - x}$"
   hint="Combine the numerator into $\tfrac{y + x}{xy}$ and the denominator into $\tfrac{y - x}{xy}$, then divide the top by the bottom."
 >}}
@@ -264,6 +266,7 @@ $$
 {{< fillin
   question="Simplify by using the LCD: $\cfrac{\frac{3}{x + 2}}{\frac{5}{x - 2}-\frac{3}{x^2 - 4}}$."
   answer="\tfrac{3x - 6}{5x + 7}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{3x - 6}{5x + 7}$"
   hint="Factor $x^2 - 4 = (x + 2)(x - 2)$, so the LCD is $(x + 2)(x - 2)$. Multiply the numerator and denominator by it and simplify."
 >}}
@@ -287,6 +290,7 @@ $$
 {{< fillin
   question="Simplify by using the LCD: $\cfrac{\frac{x}{x + 3}}{1+\frac{1}{x + 3}}$."
   answer="\tfrac{x}{x + 4}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{x}{x + 4}$"
   hint="The LCD is $x + 3$. Multiply the numerator and denominator by $x + 3$; the denominator becomes $(x + 3) + 1 = x + 4$."
 >}}
@@ -298,6 +302,7 @@ $$
 {{< fillin
   question="Simplify by writing it as division: $\cfrac{\frac{2a}{a+4}}{\frac{4a^2}{a^2-16}}$."
   answer="\tfrac{a - 4}{2a}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{a - 4}{2a}$"
   hint="Rewrite as $\tfrac{2a}{a+4}\div\tfrac{4a^2}{a^2-16}$, multiply by the reciprocal, and factor $a^2-16=(a-4)(a+4)$."
 >}}
@@ -313,6 +318,7 @@ $$
 {{< fillin
   question="Simplify by writing it as division: $\cfrac{x-\frac{2x}{x+3}}{\frac{1}{x+3}+\frac{1}{x-3}}$."
   answer="\tfrac{(x + 1)(x - 3)}{2}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{(x + 1)(x - 3)}{2}$"
   hint="Combine the numerator over $x+3$ and the denominator over $(x+3)(x-3)$, then divide the top by the bottom and simplify."
 >}}
@@ -330,6 +336,7 @@ $$
 {{< fillin
   question="Simplify by using the LCD: $\cfrac{\frac{2}{x+5}}{\frac{3}{x-5}+\frac{1}{x^2-25}}$."
   answer="\tfrac{2x - 10}{3x + 16}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{2x - 10}{3x + 16}$"
   hint="Factor $x^2-25=(x+5)(x-5)$, so the LCD is $(x+5)(x-5)$. Multiply the numerator and denominator by it and simplify."
 >}}

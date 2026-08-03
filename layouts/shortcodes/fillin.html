@@ -45,7 +45,7 @@
   {{- errorf "fillin answerMode must be 'expression' or 'unordered' (%s)" .Position -}}
 {{- end -}}
 {{- $answerForm := .Get "answerForm" | default "" -}}
-{{- $formTokens := slice "fraction" "decimal" "mixed-number" "improper-fraction" "fraction-or-mixed-number" "lowest-terms" "scientific-notation" "prime-product" "single-power" "expanded" "no-like-terms" "polynomial" "distributed" "simplified-radical" "single-term" "single-fraction" "factored" -}}
+{{- $formTokens := slice "fraction" "decimal" "mixed-number" "improper-fraction" "fraction-or-mixed-number" "lowest-terms" "scientific-notation" "prime-product" "single-power" "expanded" "no-like-terms" "polynomial" "distributed" "simplified-radical" "single-term" "single-fraction" "reduced-fraction" "factored" -}}
 {{- range (split $answerForm " ") -}}
   {{- $token := trim . " " -}}
   {{- if $token -}}

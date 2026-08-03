@@ -289,6 +289,7 @@ $$\frac{x^2+5x+6}{x^2+8x+12} = \frac{(x+2)(x+3)}{(x+2)(x+6)} = \frac{x+3}{x+6}$$
 {{< fillin
   question="Simplify: $\frac{x^2-x-2}{x^2-3x+2}$."
   answer="\frac{x+1}{x-1}"
+  answerForm="reduced-fraction"
   answerDisplay="$\frac{x+1}{x-1}$"
   hint="Factor both: $(x-2)(x+1)$ over $(x-2)(x-1)$; the common factor $x - 2$ divides out."
 >}}
@@ -303,6 +304,7 @@ $$\frac{y^2+y-42}{y^2-36} = \frac{(y+7)(y-6)}{(y+6)(y-6)} = \frac{y+7}{y+6}$$
 {{< fillin
   question="Simplify: $\frac{x^2+x-6}{x^2-4}$."
   answer="\frac{x+3}{x+2}"
+  answerForm="reduced-fraction"
   answerDisplay="$\frac{x+3}{x+2}$"
   hint="Factor $(x+3)(x-2)$ over $(x+2)(x-2)$; the common factor $x - 2$ divides out."
 >}}
@@ -317,6 +319,7 @@ $$\frac{p^3-2p^2+2p-4}{p^2-7p+10} = \frac{p^2(p-2)+2(p-2)}{(p-5)(p-2)} = \frac{(
 {{< fillin
   question="Simplify: $\frac{p^3-p^2+2p-2}{p^2+4p-5}$."
   answer="\frac{p^2+2}{p+5}"
+  answerForm="reduced-fraction"
   answerDisplay="$\frac{p^2+2}{p+5}$"
   hint="Factor the numerator by grouping into $(p^2+2)(p-1)$ and the denominator into $(p+5)(p-1)$."
 >}}
@@ -334,6 +337,7 @@ $$\frac{2n^2-14n}{4n^2-16n-48} = \frac{2n(n-7)}{4(n-6)(n+2)} = \frac{n(n-7)}{2(n
 {{< fillin
   question="Simplify: $\frac{2n^2-10n}{4n^2-16n-20}$."
   answer="\frac{n}{2(n+1)}"
+  answerForm="reduced-fraction"
   answerDisplay="$\frac{n}{2(n+1)}$"
   hint="Factor out the GCFs: $2n(n-5)$ over $4(n-5)(n+1)$, then divide out the common $n-5$ and the factor $2$."
 >}}
@@ -348,6 +352,7 @@ $$\frac{m^3+8}{m^2-4} = \frac{(m+2)(m^2-2m+4)}{(m+2)(m-2)} = \frac{m^2-2m+4}{m-2
 {{< fillin
   question="Simplify: $\frac{x^3+8}{x^2-4}$."
   answer="\frac{x^2-2x+4}{x-2}"
+  answerForm="reduced-fraction"
   answerDisplay="$\frac{x^2-2x+4}{x-2}$"
   hint="Use the sum of cubes on the numerator and the difference of squares on the denominator; the common factor $x + 2$ divides out."
 >}}
@@ -406,6 +411,7 @@ The factor $\tfrac{7-x}{x-7}$ divides to $-1$, leaving $-\tfrac{2}{x+7}$.
 {{< fillin
   question="Simplify: $\frac{10-2y}{y^2-25}$."
   answer="-\frac{2}{y+5}"
+  answerForm="reduced-fraction"
   answerDisplay="$-\frac{2}{y+5}$"
   hint="Factor: $\frac{2(5-y)}{(y+5)(y-5)}$; the opposites $5 - y$ and $y - 5$ divide to $-1$."
 >}}
@@ -422,6 +428,7 @@ The factor $\tfrac{x-8}{8-x}$ divides to $-1$, leaving $-\tfrac{x+4}{x+8}$.
 {{< fillin
   question="Simplify: $\frac{x^2-4x-5}{25-x^2}$."
   answer="-\frac{x+1}{x+5}"
+  answerForm="reduced-fraction"
   answerDisplay="$-\frac{x+1}{x+5}$"
   hint="Factor $\frac{(x-5)(x+1)}{(5-x)(5+x)}$; the opposites $x - 5$ and $5 - x$ divide to $-1$."
 >}}
@@ -485,6 +492,7 @@ The factor $\tfrac{x-8}{8-x}$ divides to $-1$, leaving $-\tfrac{x+4}{x+8}$.
 {{< fillin
   question="Simplify: $\frac{x^2-25}{x^2+2x-15}$."
   answer="\frac{x-5}{x-3}"
+  answerForm="reduced-fraction"
   answerDisplay="$\frac{x-5}{x-3}$"
   hint="Factor $(x-5)(x+5)$ over $(x+5)(x-3)$; the common factor $x + 5$ divides out."
 >}}
@@ -492,6 +500,7 @@ The factor $\tfrac{x-8}{8-x}$ divides to $-1$, leaving $-\tfrac{x+4}{x+8}$.
 {{< fillin
   question="Simplify: $\frac{t^3-27}{t^2-9}$."
   answer="\frac{t^2+3t+9}{t+3}"
+  answerForm="reduced-fraction"
   answerDisplay="$\frac{t^2+3t+9}{t+3}$"
   hint="Use the difference of cubes on the numerator and the difference of squares on the denominator; the common factor $t - 3$ divides out."
 >}}
@@ -508,6 +517,7 @@ The factor $\tfrac{x-8}{8-x}$ divides to $-1$, leaving $-\tfrac{x+4}{x+8}$.
 {{< fillin
   question="Simplify: $\frac{12-2x}{x^2-36}$."
   answer="-\frac{2}{x+6}"
+  answerForm="reduced-fraction"
   answerDisplay="$-\frac{2}{x+6}$"
   hint="Factor $\frac{2(6-x)}{(x-6)(x+6)}$; the opposites $6 - x$ and $x - 6$ divide to $-1$."
 >}}
@@ -515,6 +525,7 @@ The factor $\tfrac{x-8}{8-x}$ divides to $-1$, leaving $-\tfrac{x+4}{x+8}$.
 {{< fillin
   question="Simplify: $\frac{a^2-5a-36}{81-a^2}$."
   answer="-\frac{a+4}{9+a}"
+  answerForm="reduced-fraction"
   answerDisplay="$-\frac{a+4}{9+a}$"
   hint="Factor $\frac{(a-9)(a+4)}{(9-a)(9+a)}$; the opposites $a - 9$ and $9 - a$ divide to $-1$."
 >}}

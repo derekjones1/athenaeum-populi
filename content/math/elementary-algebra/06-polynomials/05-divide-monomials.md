@@ -647,12 +647,16 @@ $$
   hint="Raise the numerator and denominator to the fourth power: $x^4$ over $3^4$."
 >}}
 
-{{< fillin
-  question="Simplify: $\tfrac{a}{b}^5$."
-  answer="\frac{a^5}{b^5}"
-  answerDisplay="$\tfrac{a^5}{b^5}$"
+{{< multiplechoice
+  question="Simplify: $\left(\tfrac{a}{b}\right)^5$."
+  answer="$\tfrac{a^5}{b^5}$"
   hint="Raise the numerator and denominator to the fifth power."
 >}}
+$\tfrac{a^5}{b^5}$
+$\tfrac{a^5}{b}$
+$\tfrac{a}{b^5}$
+$\tfrac{5a}{5b}$
+{{< /multiplechoice >}}
 
 ### Simplify Expressions by Applying Several Properties
 
@@ -719,4 +723,4 @@ $7x^4$, that we can divide by applying these properties of exponents.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 6.5: Divide Monomials](https://openstax.org/books/elementary-algebra-2e/pages/6-5-divide-monomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as prose and typeset equations; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 6.5: Divide Monomials](https://openstax.org/books/elementary-algebra-2e/pages/6-5-divide-monomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as prose and typeset equations; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the interactive Practice block; presented one quotient-to-a-power practice problem as a multiple choice among fraction forms because a typed answer is value-equal to the printed expression; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

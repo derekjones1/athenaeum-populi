@@ -288,6 +288,52 @@ for (const [student, answer, form, expected] of [
   // gcd is an integer notion: a reduced fraction with a decimal coefficient
   // has nothing to cancel and must not fail the form.
   ['\\frac{1.5}{x}', '\\frac{1.5}{x}', 'single-fraction', 'correct'],
+  // reduced-fraction — the rational-expression reductions, where both sides
+  // are one fraction and only a cancelled POLYNOMIAL factor separates them.
+  // The reduced answers pass…
+  ['\\frac{x+1}{x-1}', '\\frac{x+1}{x-1}', 'reduced-fraction', 'correct'],
+  ['-\\frac{2}{y+5}', '-\\frac{2}{y+5}', 'reduced-fraction', 'correct'],
+  ['\\frac{n}{2(n+1)}', '\\frac{n}{2(n+1)}', 'reduced-fraction', 'correct'],
+  ['\\frac{(x+1)(x-3)}{2}', '\\frac{(x+1)(x-3)}{2}', 'reduced-fraction', 'correct'],
+  ['\\tfrac{b(b+2)(b-5)}{3b-5}', 'b(b+2)(b-5)/(3b-5)', 'reduced-fraction', 'correct'],
+  // …including the bivariate ones, whose common factor only a multivariate
+  // gcd can rule out — and rule in for the factored-half answers.
+  ['\\frac{2(x-3y)}{3(x+3y)}', '\\frac{2(x-3y)}{3(x+3y)}', 'reduced-fraction', 'correct'],
+  ['\\tfrac{y+x}{y-x}', '\\frac{y+x}{y-x}', 'reduced-fraction', 'correct'],
+  ['\\tfrac{b+a}{a^2+b^2}', '\\frac{b+a}{a^2+b^2}', 'reduced-fraction', 'correct'],
+  // …while the printed prompts fail, each for the reason it teaches:
+  ['\\frac{x^2-x-2}{x^2-3x+2}', '\\frac{x+1}{x-1}', 'reduced-fraction', 'form'],
+  ['\\frac{x^3+8}{x^2-4}', '\\frac{x^2-2x+4}{x-2}', 'reduced-fraction', 'form'],
+  ['\\frac{t^3-27}{t^2-9}', '\\frac{t^2+3t+9}{t+3}', 'reduced-fraction', 'form'],
+  // an opposite-sign binomial is still a common factor: gcd(x−2, 2−x) has
+  // degree 1, which the sign normalization in the PRS is responsible for
+  ['\\frac{10-2y}{y^2-25}', '-\\frac{2}{y+5}', 'reduced-fraction', 'form'],
+  ['\\frac{x^2-4x-5}{25-x^2}', '-\\frac{x+1}{x+5}', 'reduced-fraction', 'form'],
+  // a common INTEGER factor is unreduced too, even with no polynomial one
+  ['\\frac{2n^2-10n}{4n^2-16n-20}', '\\frac{n}{2(n+1)}', 'reduced-fraction', 'form'],
+  ['\\frac{2x+2}{2x-2}', '\\frac{x+1}{x-1}', 'reduced-fraction', 'form'],
+  ['\\tfrac{2x^2-12xy+18y^2}{3x^2-27y^2}', '\\frac{2(x-3y)}{3(x+3y)}', 'reduced-fraction', 'form'],
+  // stricter shape gate than single-fraction: a complex fraction, a fraction
+  // inside a bigger expression, and a sum of fractions are not ONE fraction
+  ['\\cfrac{\\frac{2}{x^2 - 1}}{\\frac{3}{x + 1}}', '\\tfrac{2}{3(x - 1)}', 'reduced-fraction', 'form'],
+  // a slash is a fraction bar too: a half holding one is a nested quotient
+  ['\\tfrac{p/2}{q/5}', '\\frac{5p}{2q}', 'reduced-fraction', 'form'],
+  ['\\tfrac{a}{b}^5', '\\frac{a^5}{b^5}', 'reduced-fraction', 'form'],
+  ['\\frac{2}{x}+\\frac{3}{x}', '\\frac{5}{x}', 'reduced-fraction', 'form'],
+  // numeral fractions take the same integer-gcd path as lowest-terms
+  ['\\frac{40}{88}', '\\frac{5}{11}', 'reduced-fraction', 'form'],
+  ['\\frac{5}{11}', '\\frac{5}{11}', 'reduced-fraction', 'correct'],
+  // fail open: a half the polynomial reader cannot digest (a decimal, a
+  // radical, an absolute value) must never reject a correct answer…
+  ['\\frac{1.5}{x-1}', '\\frac{1.5}{x-1}', 'reduced-fraction', 'correct'],
+  ['\\frac{7x^2\\sqrt{x}}{3\\left|y^3\\right|\\sqrt{y}}', '\\frac{7x^2\\sqrt{x}}{3\\left|y^3\\right|\\sqrt{y}}', 'reduced-fraction', 'correct'],
+  // …and a non-fraction response composes the way lowest-terms does
+  ['x+1', 'x+1', 'reduced-fraction', 'correct'],
+  // value before form, pinned by an input that fails both checks
+  ['\\frac{2x+2}{2x-4}', '\\frac{x+1}{x-1}', 'reduced-fraction', 'incorrect'],
+  // grading is repeatable: the cached boxed halves are only read, never
+  // mutated, so the same pair grades the same twice
+  ['\\frac{x^2-x-2}{x^2-3x+2}', '\\frac{x+1}{x-1}', 'reduced-fraction', 'form'],
   // a single power — numeric bases take a negative exponent exactly as
   // variable bases do, and the source's reciprocal form counts too
   ['2^{-3}', '2^{-3}', 'single-power', 'correct'],
@@ -443,6 +489,14 @@ for (const [student, answer, form, expected] of [
   const saysFactored = factoredPhrase.includes('factored form');
   if (!saysFactored) failures++;
   console.log(`${saysFactored ? 'PASS' : 'FAIL'}  factored feedback names factored form ("${factoredPhrase}")`);
+
+  // The reduction feedback must name the missing STEP — cancelling — not just
+  // a shape; "in lowest terms" would send the learner hunting for a numeral
+  // fraction that is not there (§6: the message has to match the ask).
+  const reducedPhrase = describeAnswerForm('reduced-fraction');
+  const saysCancelled = reducedPhrase.includes('common factors cancelled');
+  if (!saysCancelled) failures++;
+  console.log(`${saysCancelled ? 'PASS' : 'FAIL'}  reduced-fraction feedback names the cancellation ("${reducedPhrase}")`);
 }
 
 // Diagnostic only — printed but never fails the suite. These probe how far

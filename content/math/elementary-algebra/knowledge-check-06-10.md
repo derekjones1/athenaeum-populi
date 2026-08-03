@@ -337,6 +337,7 @@ aliases:
 {{< fillin
   question="Simplify: $\cfrac{x-\frac{3x}{x+5}}{\frac{1}{x+5}+\frac{1}{x-5}}$."
   answer="\frac{(x+2)(x-5)}{2}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{(x+2)(x-5)}{2}$"
 >}}
 

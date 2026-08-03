@@ -260,13 +260,11 @@ for (const [source, reason] of [
     'an isosceles right triangle legitimately answers with the printed angle'],
   [listFillin('Jazmine ran $8$ miles and biked $24$ miles in $3$ hours, biking $4$ mph faster than she ran. Find her running speed in mph.', '8'),
     'an application answer that happens to equal a printed quantity is an incidental collision'],
-  // The two deliberate exemptions on the algebraic paths — scoped to spans
-  // with a variable, so neither can hide a numeral defect like the
+  // The one deliberate exemption on the algebraic paths — scoped to spans
+  // with a variable, so it cannot hide a numeral defect like the
   // never-re-expressed answer above.
   [listFillin('Add: $5a+7b$.', '5a+7b'),
     'unlike terms legitimately answer with the prompt — the exercise asks the learner to recognize they do not combine'],
-  [listFillin('Simplify: $\\frac{x^2-x-2}{x^2-3x+2}$.', '\\frac{x+1}{x-1}'),
-    'reducing a rational expression stays exempt until a reduced-fraction predicate exists (§6) — both sides are one fraction and only a CAS cancellation separates them'],
 ]) {
   assert.equal(
     lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
@@ -370,6 +368,15 @@ for (const [source, reason] of [
       'the Divide verb is an ask even when "factor" appears as a noun in an aside'],
     ['Simplify: $b^9 \\cdot b^8$.', 'b^{17}', 'single-term',
       'a printed product of like bases grades equal to its single power'],
+    // The §6 rational-expression class, formerly the one deliberate exemption:
+    // both sides are a single fraction and only the cancelled polynomial
+    // factor separates them, which the reduced-fraction gcd now sees.
+    ['Simplify: $\\frac{x^2-x-2}{x^2-3x+2}$.', '\\frac{x+1}{x-1}', 'reduced-fraction',
+      'a reducible rational expression grades equal to its reduced form'],
+    ['Simplify: $\\frac{2n^2-10n}{4n^2-16n-20}$.', '\\frac{n}{2(n+1)}', 'reduced-fraction',
+      'a common integer factor across polynomial halves is unreduced too'],
+    ['Simplify: $\\tfrac{2x^2-12xy+18y^2}{3x^2-27y^2}$.', '\\frac{2(x-3y)}{3(x+3y)}', 'reduced-fraction',
+      'a bivariate common factor is still a common factor — the gcd is multivariate'],
   ]) {
     assert(lint(factorFillin(question, answer)).some(trivial), reason);
     assert.equal(
@@ -378,6 +385,15 @@ for (const [source, reason] of [
       `answerForm=${JSON.stringify(form)} rules the printed subject out: ${reason}`,
     );
   }
+
+  // `single-fraction` cannot see a cancelled polynomial factor — the prompt IS
+  // one fraction — so declaring it on a reduction exercise is a form too weak
+  // to block the printed value, and the rule says so rather than trusting it.
+  assert(
+    lint(factorFillin('Simplify: $\\frac{x^2-x-2}{x^2-3x+2}$.', '\\frac{x+1}{x-1}', 'single-fraction'))
+      .some((error) => error.includes('does not rule that value out')),
+    'a declared single-fraction on a rational reduction is exercised and found too weak',
+  );
 
   // A form beside a list answer grades nothing — the grader returns first.
   assert(

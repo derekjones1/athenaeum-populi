@@ -170,6 +170,7 @@ The original denominator gives the restrictions $x\ne-2$ and $x\ne-6$.
 {{< fillin
   question="Simplify $\tfrac{x^2-x-2}{x^2-3x+2}$."
   answer="\frac{x+1}{x-1}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{x+1}{x-1}$"
   hint="Factor the numerator as $(x-2)(x+1)$ and the denominator as $(x-2)(x-1)$."
 >}}
@@ -177,6 +178,7 @@ The original denominator gives the restrictions $x\ne-2$ and $x\ne-6$.
 {{< fillin
   question="Simplify $\tfrac{x^2-3x-10}{x^2+x-2}$."
   answer="\frac{x-5}{x-1}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{x-5}{x-1}$"
   hint="Factor both polynomials completely, then remove their common factor."
 >}}
@@ -208,6 +210,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{2x^2-12xy+18y^2}{3x^2-27y^2}$."
   answer="\frac{2(x-3y)}{3(x+3y)}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{2(x-3y)}{3(x+3y)}$"
   hint="Factor the numerator as $2(x-3y)^2$ and the denominator as $3(x-3y)(x+3y)$."
 >}}
@@ -215,6 +218,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{5x^2-30xy+25y^2}{2x^2-50y^2}$."
   answer="\frac{5(x-y)}{2(x+5y)}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{5(x-y)}{2(x+5y)}$"
   hint="Factor out each GCF, then factor the remaining trinomials and differences of squares."
 >}}
@@ -248,6 +252,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{x^2-4x-5}{25-x^2}$."
   answer="-\frac{x+1}{x+5}"
+  answerForm="reduced-fraction"
   answerDisplay="$-\tfrac{x+1}{x+5}$"
   hint="Factor the numerator, then recognize that $x-5$ and $5-x$ are opposites."
 >}}
@@ -255,6 +260,7 @@ $$
 {{< fillin
   question="Simplify $\tfrac{x^2+x-2}{1-x^2}$."
   answer="-\frac{x+2}{x+1}"
+  answerForm="reduced-fraction"
   answerDisplay="$-\tfrac{x+2}{x+1}$"
   hint="Factor both polynomials and use $1-x=-(x-1)$."
 >}}
@@ -418,6 +424,7 @@ $$
 {{< fillin
   question="Simplify the complex fraction $\cfrac{\tfrac{3x^2+7x+2}{4x+24}}{\tfrac{3x^2-14x-5}{x^2+x-30}}$."
   answer="\frac{x+2}{4}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{x+2}{4}$"
   hint="Rewrite the fraction bar as division, multiply by the reciprocal, and factor each polynomial."
 >}}
@@ -425,6 +432,7 @@ $$
 {{< fillin
   question="Simplify the complex fraction $\cfrac{\tfrac{y^2-36}{2y^2+11y-6}}{\tfrac{2y^2-2y-60}{8y-4}}$."
   answer="\frac{2}{y+5}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{2}{y+5}$"
   hint="Rewrite as multiplication by the reciprocal, then factor all four polynomials."
 >}}

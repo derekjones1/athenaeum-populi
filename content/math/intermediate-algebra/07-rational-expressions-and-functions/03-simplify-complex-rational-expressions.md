@@ -77,6 +77,7 @@ undefined if $x=4$ or $x=-4$.
 {{< fillin
   question="Simplify $\cfrac{\tfrac{2}{x^2-1}}{\tfrac{3}{x+1}}$ by writing it as division."
   answer="\tfrac{2}{3(x-1)}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{2}{3(x-1)}$"
   hint="Rewrite the main fraction bar as division, multiply by the reciprocal, and factor $x^2-1$."
 >}}
@@ -84,6 +85,7 @@ undefined if $x=4$ or $x=-4$.
 {{< fillin
   question="Simplify $\cfrac{\tfrac{1}{x^2-7x+12}}{\tfrac{2}{x-4}}$ by writing it as division."
   answer="\tfrac{1}{2(x-3)}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{1}{2(x-3)}$"
   hint="Rewrite as division and factor $x^2-7x+12$."
 >}}
@@ -150,6 +152,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{\tfrac{1}{x}+\tfrac{1}{y}}{\tfrac{1}{x}-\tfrac{1}{y}}$ by writing it as division."
   answer="\tfrac{y+x}{y-x}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{y+x}{y-x}$"
   hint="Use $xy$ as the common denominator in both parts before dividing."
 >}}
@@ -157,6 +160,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{\tfrac{1}{a}+\tfrac{1}{b}}{\tfrac{1}{a^2}-\tfrac{1}{b^2}}$ by writing it as division."
   answer="\tfrac{a \cdot b}{b-a}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{ab}{b-a}$"
   hint="Simplify the numerator and denominator separately, factor the difference of squares, and divide."
 >}}
@@ -192,6 +196,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{b-\tfrac{3b}{b+5}}{\tfrac{2}{b+5}+\tfrac{1}{b-5}}$ by writing it as division."
   answer="\tfrac{b(b+2)(b-5)}{3b-5}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{b(b+2)(b-5)}{3b-5}$"
   hint="Combine the terms in the numerator and denominator separately, then divide and factor."
 >}}
@@ -199,6 +204,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{1-\tfrac{3}{c+4}}{\tfrac{1}{c+4}+\tfrac{c}{3}}$ by writing it as division."
   answer="\tfrac{3}{c+3}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{3}{c+3}$"
   hint="Use common denominators within the numerator and denominator before rewriting as division."
 >}}
@@ -265,6 +271,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{\tfrac{1}{a}+\tfrac{1}{b}}{\tfrac{a}{b}+\tfrac{b}{a}}$ by using the LCD."
   answer="\tfrac{b+a}{a^2+b^2}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{b+a}{a^2+b^2}$"
   hint="The LCD of all fractions is $ab$. Multiply the numerator and denominator by it."
 >}}
@@ -272,6 +279,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{\tfrac{1}{x^2}-\tfrac{1}{y^2}}{\tfrac{1}{x}+\tfrac{1}{y}}$ by using the LCD."
   answer="\tfrac{y-x}{x \cdot y}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{y-x}{xy}$"
   hint="Multiply the numerator and denominator by $x^2y^2$, then factor."
 >}}
@@ -307,6 +315,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{\tfrac{3}{x+2}}{\tfrac{5}{x-2}-\tfrac{3}{x^2-4}}$ by using the LCD."
   answer="\tfrac{3(x-2)}{5x+7}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{3(x-2)}{5x+7}$"
   hint="Factor $x^2-4$ first, then multiply the numerator and denominator by the LCD."
 >}}
@@ -314,6 +323,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{\tfrac{2}{x-7}-\tfrac{1}{x+7}}{\tfrac{6}{x+7}-\tfrac{1}{x^2-49}}$ by using the LCD."
   answer="\tfrac{x+21}{6x-43}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{x+21}{6x-43}$"
   hint="Factor $x^2-49$ and use it as the LCD."
 >}}
@@ -342,6 +352,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{\tfrac{3}{x^2+7x+10}}{\tfrac{4}{x+2}+\tfrac{1}{x+5}}$ by using the LCD."
   answer="\tfrac{3}{5x+22}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{3}{5x+22}$"
   hint="Factor $x^2+7x+10$, then multiply the numerator and denominator by the LCD."
 >}}
@@ -349,6 +360,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{\tfrac{4y}{y+5}+\tfrac{2}{y+6}}{\tfrac{3y}{y^2+11y+30}}$ by using the LCD."
   answer="\tfrac{2(2y^2+13y+5)}{3y}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{2(2y^2+13y+5)}{3y}$"
   hint="Factor $y^2+11y+30$ and use the product as the LCD."
 >}}
@@ -375,6 +387,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{\tfrac{x}{x+3}}{1+\tfrac{1}{x+3}}$ by using the LCD."
   answer="\tfrac{x}{x+4}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{x}{x+4}$"
   hint="Multiply the numerator and denominator by $x+3$."
 >}}
@@ -382,6 +395,7 @@ $$
 {{< fillin
   question="Simplify $\cfrac{1+\tfrac{1}{x-1}}{\tfrac{3}{x+1}}$ by using the LCD."
   answer="\tfrac{x(x+1)}{3(x-1)}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{x(x+1)}{3(x-1)}$"
   hint="The LCD is $(x-1)(x+1)$."
 >}}
