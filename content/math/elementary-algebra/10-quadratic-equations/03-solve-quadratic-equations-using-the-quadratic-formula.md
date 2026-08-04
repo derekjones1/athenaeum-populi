@@ -426,6 +426,128 @@ Square Root Property
 Quadratic Formula
 {{< /multiplechoice >}}
 
+## Practice
+
+### Solve quadratic equations using the quadratic formula
+
+{{< fillin
+  question="Solve $p^2-6p-27=0$ by using the Quadratic Formula. Enter both solutions, separated by a comma."
+  answer="-3,9"
+  answerMode="unordered"
+  answerDisplay="$p=-3$ or $p=9$"
+  hint="Identify $a=1$, $b=-6$, $c=-27$, then substitute into the Quadratic Formula."
+>}}
+
+{{< fillin
+  question="Solve $3u^2+7u-2=0$ by using the Quadratic Formula. Enter both solutions, separated by a comma."
+  answer="(-7-\sqrt{73})/6, (-7+\sqrt{73})/6"
+  answerMode="unordered"
+  answerDisplay="$\tfrac{-7-\sqrt{73}}{6},\ \tfrac{-7+\sqrt{73}}{6}$"
+  hint="Substitute $a=3$, $b=7$, $c=-2$ into the formula; the discriminant, $73$, does not simplify."
+>}}
+
+{{< multiplechoice
+  question="Solve $2x^2+3x+9=0$ by using the Quadratic Formula."
+  hint="Evaluate the discriminant $b^2-4ac$ before attempting to simplify the radical."
+  answer="No real solution"
+>}}
+No real solution
+$x=-\tfrac{3}{2}$
+$x=\tfrac{3}{2}$
+Two real solutions
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Solve $16c^2+24c+9=0$ by using the Quadratic Formula."
+  answer="-3/4"
+  answerDisplay="$c=-\tfrac{3}{4}$"
+  hint="This trinomial is a perfect square, so the discriminant is $0$ and there is only one solution."
+>}}
+
+### Use the discriminant to predict the number of solutions of a quadratic equation
+
+{{< multiplechoice
+  question="Use the discriminant to determine the number of real solutions of $4x^2-5x+16=0$."
+  hint="Compute $b^2-4ac$ and check whether it is positive, zero, or negative."
+  answer="No real solutions"
+>}}
+No real solutions
+One solution
+Two solutions
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Use the discriminant to determine the number of real solutions of $36y^2+36y+9=0$."
+  hint="Compute $b^2-4ac$ and check whether it is positive, zero, or negative."
+  answer="One solution"
+>}}
+No real solutions
+One solution
+Two solutions
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Use the discriminant to determine the number of real solutions of $6m^2+3m-5=0$."
+  hint="Compute $b^2-4ac$ and check whether it is positive, zero, or negative."
+  answer="Two solutions"
+>}}
+No real solutions
+One solution
+Two solutions
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Use the discriminant to determine the number of real solutions of $18n^2-7n+3=0$."
+  hint="Compute $b^2-4ac$ and check whether it is positive, zero, or negative."
+  answer="No real solutions"
+>}}
+No real solutions
+One solution
+Two solutions
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Use the discriminant to determine the number of real solutions of $3v^2-5v-1=0$."
+  hint="Compute $b^2-4ac$ and check whether it is positive, zero, or negative."
+  answer="Two solutions"
+>}}
+No real solutions
+One solution
+Two solutions
+{{< /multiplechoice >}}
+
+### Identify the most appropriate method to use to solve a quadratic equation
+
+{{< multiplechoice
+  question="Identify the most appropriate method to use to solve $x^2-5x-24=0$."
+  hint="Check whether $-24$ has an integer factor pair that adds to $-5$."
+  answer="Factoring"
+>}}
+Factoring
+Square Root Property
+Quadratic Formula
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Identify the most appropriate method to use to solve $(y+5)^2=12$."
+  hint="The equation is already written as a squared quantity equal to a constant."
+  answer="Square Root Property"
+>}}
+Factoring
+Square Root Property
+Quadratic Formula
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Identify the most appropriate method to use to solve $14m^2+3m=11$."
+  hint="Put the equation in standard form first; the coefficients make factoring impractical to spot quickly."
+  answer="Quadratic Formula"
+>}}
+Factoring
+Square Root Property
+Quadratic Formula
+{{< /multiplechoice >}}
+
 ## Key terms
 
 **Quadratic Formula** — the solutions to a quadratic equation of the form
@@ -436,4 +558,4 @@ solutions.
 
 ---
 
-<small>This page is adapted from [Elementary Algebra 2e, Section 10.3](https://openstax.org/books/elementary-algebra-2e/pages/10-3-solve-quadratic-equations-using-the-quadratic-formula) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: reformatted the source for accessible web presentation and converted selected Try It problems into interactive exercises; the source exercise set and media links are omitted.</small>
+<small>This page is adapted from [Elementary Algebra 2e, Section 10.3](https://openstax.org/books/elementary-algebra-2e/pages/10-3-solve-quadratic-equations-using-the-quadratic-formula) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: reformatted the source for accessible web presentation and converted selected Try It problems into interactive exercises; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>

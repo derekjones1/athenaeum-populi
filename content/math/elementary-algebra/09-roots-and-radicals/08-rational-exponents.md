@@ -479,6 +479,88 @@ $$
   hint="Add the exponents in the numerator $\left(\tfrac{2}{3} - \tfrac{1}{3} = \tfrac{1}{3}\right)$, then subtract the denominator's exponent: $\tfrac{1}{3} - \left(-\tfrac{5}{3}\right)$."
 >}}
 
+## Practice
+
+### Simplify expressions with $a^{1/n}$
+
+{{< multiplechoice
+  question="Simplify: $(-49)^{1/2}$."
+  answer="not a real number"
+  hint="An even root of a negative number is not a real number."
+>}}
+7
+-7
+not a real number
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Simplify: $-49^{1/2}$."
+  answer="-7"
+  answerForm="decimal"
+  hint="The exponent applies only to the $49$; the negative sign stays out front. $\sqrt{49} = 7$."
+>}}
+
+{{< fillin
+  question="Simplify: $(49)^{-1/2}$."
+  answer="\frac{1}{7}"
+  answerDisplay="$\tfrac{1}{7}$"
+  answerForm="fraction lowest-terms"
+  hint="Rewrite with a positive exponent using $a^{-n} = \tfrac{1}{a^n}$, then take the square root of $49$."
+>}}
+
+### Simplify expressions with $a^{m/n}$
+
+{{< fillin
+  question="Simplify: $100^{3/2}$."
+  answer="1000"
+  answerDisplay="$1{,}000$"
+  answerForm="decimal"
+  hint="Take the square root of $100$ first, then cube the result: $\left(\sqrt{100}\right)^3$."
+>}}
+
+{{< fillin
+  question="Simplify: $49^{-5/2}$."
+  answer="\frac{1}{16807}"
+  answerDisplay="$\tfrac{1}{16{,}807}$"
+  answerForm="fraction lowest-terms"
+  hint="Rewrite with a positive exponent, then take the square root of $49$ first: $\tfrac{1}{\left(\sqrt{49}\right)^5}$."
+>}}
+
+{{< multiplechoice
+  question="Simplify: $(-100)^{3/2}$."
+  answer="not a real number"
+  hint="The exponent's denominator is $2$, so this requires the square root of a negative number."
+>}}
+1000
+-1000
+not a real number
+{{< /multiplechoice >}}
+
+### Use the laws of exponents to simplify expressions with rational exponents
+
+{{< fillin
+  question="Simplify: $n^{2/6} \cdot n^{4/6}$. Write the answer with a whole-number exponent."
+  answer="n"
+  answerForm="polynomial"
+  hint="The bases match, so add the exponents: $\tfrac{2}{6} + \tfrac{4}{6} = \tfrac{6}{6} = 1$."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(b^{10}\right)^{3/5}$."
+  answer="b^6"
+  answerDisplay="$b^6$"
+  answerForm="polynomial"
+  hint="Multiply the exponents: $10 \cdot \tfrac{3}{5}$."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{z^{2/3}}{z^{8/3}}$."
+  answer="\frac{1}{z^2}"
+  answerDisplay="$\tfrac{1}{z^2}$"
+  answerForm="single-fraction"
+  hint="Subtract the exponents: $\tfrac{2}{3} - \tfrac{8}{3} = -\tfrac{6}{3} = -2$. A negative exponent moves the power to the denominator."
+>}}
+
 ## Key terms
 
 **rational exponent** — an exponent that is a fraction; $a^{1/n} = \sqrt[n]{a}$
@@ -489,4 +571,4 @@ $a^{-m/n} = \tfrac{1}{a^{m/n}}$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, 9.8 Rational Exponents](https://openstax.org/books/elementary-algebra-2e/pages/9-8-rational-exponents) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as typeset math, condensed the multi-part "Try It" problems into single-part interactive exercises with instant feedback, and omitted the Be Prepared quiz, media links, Self Check, and end-of-section exercises.</small>
+<small>This section is adapted from [Elementary Algebra 2e, 9.8 Rational Exponents](https://openstax.org/books/elementary-algebra-2e/pages/9-8-rational-exponents) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked-example step tables as typeset math, condensed the multi-part "Try It" problems into single-part interactive exercises with instant feedback; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>

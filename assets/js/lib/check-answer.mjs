@@ -255,10 +255,140 @@ export function splitTopLevelCommas(raw) {
   return parts;
 }
 
+/* ---------------------------------------------------------------------------
+ * Non-termination guards for the equivalence ladder
+ *
+ * Two Compute Engine entry points do not terminate on conjugate-radical
+ * shapes — the exact shapes every "rationalize a two-term denominator"
+ * prompt prints (Elementary Algebra §9.5), reachable at runtime by a learner
+ * pasting the prompt back as the response. Measured against the pinned
+ * 0.58.0:
+ *
+ * - `isEqual()` never returns once EITHER operand is a quotient whose
+ *   denominator mixes a variable radicand with a numeric one
+ *   (`\frac{\sqrt{2}}{\sqrt{x}-\sqrt{3}}`) — against ANY comparand,
+ *   including a plain `x`.
+ * - `simplify()` never returns on some differences of radical expressions
+ *   with no radical denominator at all (`\frac{\sqrt{2}(\sqrt{x}+3)}{x-3}`
+ *   minus `\frac{\sqrt{2}(\sqrt{x}+\sqrt{3})}{x-3}` — one mistyped `\sqrt`),
+ *   which is the failure playbook §6 records.
+ *
+ * `ce.timeLimit` interrupts neither — the loops they are stuck in check no
+ * deadline — and grading runs synchronously on the main thread, so a
+ * wall-clock timeout cannot exist. The only safe move is to never hand
+ * either entry point its hang class:
+ *
+ * - a radical-denominator operand skips `isEqual` entirely, and
+ * - any operand with a radical over a symbol replaces the `simplify(diff)`
+ *   step.
+ *
+ * Both fall back to bounded numeric sampling (`subs` + `N()`, measured
+ * terminating on every hang shape): agreement within 1e-9 at three sample
+ * points grades equivalent; anything else — disagreement, a singularity at
+ * every point — fails safe to not equivalent. A pasted conjugate prompt
+ * therefore grades `form` ("That value is right — now write it as a
+ * simplified radical"), the outcome the answerForm was built to produce,
+ * instead of freezing the page.
+ *
+ * Sampling decides where the engine either hung or false-negatived, so it is
+ * MORE complete than what it replaces: pastes of radical prompts that used
+ * to grade `incorrect` by engine failure now grade as the value-equal
+ * responses they are. Every radical re-expression exercise must therefore
+ * carry an `answerForm` — the passable-by-retyping lint enforces exactly
+ * this, and the two §6 retrofits it newly surfaced are closed in content.
+ * Comparisons with no variable radicand anywhere — the overwhelming bulk of
+ * the corpus — never reach either guard and grade exactly as before.
+ * ------------------------------------------------------------------------ */
+
+const containsSymbol = (expr) => (
+  expr.symbol ? true : (expr.ops ?? []).some(containsSymbol)
+);
+
+/** A square/nth root (or fractional power) with a symbol in its radicand. */
+function radicalOverSymbol(expr) {
+  if ((expr.operator === 'Sqrt' || expr.operator === 'Root') && containsSymbol(expr.ops[0])) {
+    return true;
+  }
+  if (expr.operator === 'Power') {
+    const exponent = expr.ops[1];
+    if (exponent?.isNumberLiteral && !Number.isInteger(exponent.re)
+      && containsSymbol(expr.ops[0])) return true;
+  }
+  return (expr.ops ?? []).some(radicalOverSymbol);
+}
+
+/**
+ * True when the expression holds a denominator `isEqual` may never return
+ * from: a `Divide` whose divisor — or a negative power whose base — contains
+ * a radical over a symbol.
+ */
+function radicalDenominator(expr) {
+  if (expr.operator === 'Divide' && radicalOverSymbol(expr.ops[1])) return true;
+  if (expr.operator === 'Power') {
+    const exponent = expr.ops[1];
+    if (exponent?.isNumberLiteral && exponent.re < 0
+      && radicalOverSymbol(expr.ops[0])) return true;
+  }
+  return (expr.ops ?? []).some(radicalDenominator);
+}
+
+// Positive (the radicals chapter assumes variables ≥ 0), spread out, and away
+// from the small integers the corpus uses in denominators like `x - 3`, so a
+// singularity at one point cannot exhaust the sample set.
+const SAMPLE_POINTS = [2.47, 0.61, 7.83, 1.19, 4.52, 0.23, 9.41];
+const SAMPLE_TOLERANCE = 1e-9;
+const SAMPLES_REQUIRED = 3;
+
+const sampleIsZero = (value) => Number.isFinite(value.re) && Number.isFinite(value.im)
+  && Math.abs(value.re) < SAMPLE_TOLERANCE && Math.abs(value.im) < SAMPLE_TOLERANCE;
+
+/**
+ * Value equality by evaluation at sample points — the guarded replacement for
+ * `isEqual`/`simplify`. `unknowns` rather than a symbol walk, so a known
+ * constant (π) is evaluated, never substituted. Every failure mode — too few
+ * finite samples, any disagreement, an exception — is not-equivalent: for a
+ * guarded (unrationalized) response that grades `incorrect`, which is the
+ * safe side.
+ */
+function numericallyEquivalent(studentExpr, answerExpr) {
+  const diff = ce.box(['Subtract', studentExpr, answerExpr]);
+  const vars = diff.unknowns;
+  if (vars.length === 0) return sampleIsZero(diff.N());
+  let agreed = 0;
+  for (let i = 0; i < SAMPLE_POINTS.length && agreed < SAMPLES_REQUIRED; i += 1) {
+    const assignment = {};
+    vars.forEach((name, j) => {
+      assignment[name] = SAMPLE_POINTS[(i + 2 * j) % SAMPLE_POINTS.length];
+    });
+    const value = diff.subs(assignment).N();
+    if (!Number.isFinite(value.re) || !Number.isFinite(value.im)) continue; // singularity — try another point
+    if (!sampleIsZero(value)) return false;
+    agreed += 1;
+  }
+  return agreed >= SAMPLES_REQUIRED;
+}
+
 function equivalent(studentExpr, answerExpr) {
   try {
     if (studentExpr.isSame(answerExpr)) return true;
+    // `isEqual` must never see a radical-denominator quotient — its hang
+    // class (see the guards' banner). Only sampling provably returns there.
+    if (radicalDenominator(studentExpr) || radicalDenominator(answerExpr)) {
+      return numericallyEquivalent(studentExpr, answerExpr);
+    }
     if (studentExpr.isEqual(answerExpr) === true) return true;
+    // `simplify` has its own hang class — differences of variable-radical
+    // expressions — so any radical over a symbol takes sampling instead. The
+    // step is load-bearing: `isEqual` misses identities `simplify` catches
+    // (`\sqrt{64x^2}` vs `8x`), so the replacement must decide, not just
+    // fail closed. Sampling is also more complete than the engine was — it
+    // proves equalities `isEqual` false-negatives on (a retyped
+    // `\sqrt[3]{32y^5}-\sqrt[3]{-108y^8}` prompt) — which is why every
+    // radical re-expression exercise MUST carry an answerForm: the lint's
+    // passable-by-retyping rule now sees those pastes grade as value-equal.
+    if (radicalOverSymbol(studentExpr) || radicalOverSymbol(answerExpr)) {
+      return numericallyEquivalent(studentExpr, answerExpr);
+    }
     const diff = ce.box(['Subtract', studentExpr, answerExpr]).simplify();
     return diff.isSame(ce.number(0));
   } catch {
@@ -1081,14 +1211,32 @@ const FORM_PREDICATES = {
       if (denominator && /\\sqrt/.test(denominator[0])) return false;
     }
     // Like radicals must already be combined: split the top level on + and -
-    // and require each radicand to appear once.
+    // and require each (index, radicand, coefficient-shape) to appear once.
+    // The coefficient's variable signature is part of the key because the
+    // source combines like radicals only when their coefficients are like
+    // TERMS: its own worked answer to `\sqrt[3]{24x^4}-\sqrt[3]{-81x^7}` is
+    // `2x\sqrt[3]{3x} + 3x^2\sqrt[3]{3x}` — same index and radicand, kept
+    // separate because `2x` and `3x^2` do not combine. A radicand-only key
+    // rejected that final form forever, while `8\sqrt{2}-9\sqrt{2}` (both
+    // coefficients constant) must still fail. The root index joins the key
+    // so `\sqrt{2}+\sqrt[3]{2}` — different roots, nothing to combine — is
+    // no longer read as a repeat.
     const seen = new Set();
     for (const piece of splitTopLevelTerms(bare)) {
-      const opener = piece.match(/\\sqrt\s*(?:\[\s*\d+\s*\])?\s*\{/);
+      const opener = piece.match(/\\sqrt\s*(?:\[\s*(\d+)\s*\])?\s*\{/);
       if (!opener) continue;
       const group = readBalancedGroup(piece, opener.index + opener[0].length - 1);
       if (!group) continue;
-      const key = group[0].replace(/\s+/g, '');
+      const radicand = group[0].replace(/\s+/g, '');
+      // Everything around the radical is its coefficient; LaTeX commands are
+      // dropped before scanning so `\cdot` never reads as variables c·d·o·t.
+      const coefficient = (piece.slice(0, opener.index) + piece.slice(group[1]))
+        .replace(/\\[a-zA-Z]+/g, ' ');
+      const signature = [...coefficient.matchAll(/([a-zA-Z])\s*(?:\^\s*\{?\s*(-?\d+)\s*\}?)?/g)]
+        .map(([, name, power]) => `${name}^${power ?? '1'}`)
+        .sort()
+        .join('');
+      const key = `${opener[1] ?? '2'}|${radicand}|${signature}`;
       if (seen.has(key)) return false;
       seen.add(key);
     }

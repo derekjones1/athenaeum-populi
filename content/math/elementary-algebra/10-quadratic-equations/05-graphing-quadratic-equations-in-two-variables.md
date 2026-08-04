@@ -1975,6 +1975,159 @@ $y$-value of the quadratic equation. The maximum value of the quadratic is
   hint="Use $t=-\tfrac{b}{2a}$ with $a=-16$ and $b=128$."
 >}}
 
+## Practice
+
+### Recognize the graph of a quadratic equation in two variables
+
+{{< multiplechoice
+  question="Determine whether the parabola $y=-2x^2-6x-7$ opens upward or downward."
+  answer="downward"
+  hint="Find the sign of $a$, the coefficient of $x^2$."
+>}}
+upward
+downward
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether the parabola $y=4x^2+x-4$ opens upward or downward."
+  answer="upward"
+  hint="Find the sign of $a$, the coefficient of $x^2$."
+>}}
+upward
+downward
+{{< /multiplechoice >}}
+
+### Find the axis of symmetry and vertex of a parabola
+
+{{< fillin
+  question="For the parabola $y=x^2+8x-1$, find the $x$-coordinate of the axis of symmetry."
+  answer="-4"
+  hint="Use $x=-\tfrac{b}{2a}$ with $a=1$ and $b=8$."
+>}}
+
+{{< fillin
+  question="Find the vertex of $y=x^2+8x-1$. Enter your answer as an ordered pair, for example $(2,-3)$."
+  answer="(-4,-17)"
+  hint="Substitute the axis of symmetry's $x$-value into the equation to find $y$."
+>}}
+
+{{< fillin
+  question="For the parabola $y=-x^2+2x+5$, find the $x$-coordinate of the axis of symmetry."
+  answer="1"
+  hint="Use $x=-\tfrac{b}{2a}$ with $a=-1$ and $b=2$."
+>}}
+
+{{< fillin
+  question="Find the vertex of $y=-x^2+2x+5$. Enter your answer as an ordered pair, for example $(2,-3)$."
+  answer="(1,6)"
+  hint="Substitute the axis of symmetry's $x$-value into the equation to find $y$."
+>}}
+
+### Find the intercepts of a parabola
+
+{{< fillin
+  question="Find the $y$-intercept of the parabola $y=x^2+7x+6$. Give your answer as an ordered pair."
+  answer="(0,6)"
+  hint="Let $x=0$ and evaluate $y$."
+>}}
+
+{{< fillin
+  question="Find the $x$-intercept of the parabola $y=x^2+7x+6$ that has the smaller $x$-value. Give your answer as an ordered pair."
+  answer="(-6,0)"
+  hint="Let $y=0$ and factor $x^2+7x+6$ to find both roots."
+>}}
+
+{{< fillin
+  question="Find the $y$-intercept of the parabola $y=-x^2+8x-19$. Give your answer as an ordered pair."
+  answer="(0,-19)"
+  hint="Let $x=0$ and evaluate $y$."
+>}}
+
+{{< multiplechoice
+  question="How many $x$-intercepts does the parabola $y=-x^2+8x-19$ have?"
+  answer="zero"
+  hint="Evaluate the discriminant $b^2-4ac$ and check whether it is positive, zero, or negative."
+>}}
+zero
+one
+two
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Find the $x$-intercept of the parabola $y=4x^2-20x+25$. Give your answer as an ordered pair."
+  answer="(\frac{5}{2},0)"
+  answerDisplay="$(\tfrac{5}{2},0)$"
+  hint="Let $y=0$; this trinomial is a perfect square, $(2x-5)^2=0$."
+>}}
+
+### Graph quadratic equations in two variables
+
+{{< graphplot
+  question="Graph $y=x^2+6x+5$ using its intercepts, vertex, and axis of symmetry."
+  answerDisplay="$y=x^2+6x+5$"
+  ariaLabel="A blank grid from −7 to 7 on both axes."
+  hint="Find the vertex and axis of symmetry first, then plot the $x$- and $y$-intercepts."
+>}}
+{"answer": {"quadratic": {"a": 1, "b": 6, "c": 5}}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
+{{< /graphplot >}}
+
+{{< fillin
+  question="What is the vertex of $y=x^2+6x+5$? Enter your answer as an ordered pair, for example $(2,-3)$."
+  answer="(-3,-4)"
+  hint="Find the axis of symmetry $x=-\tfrac{b}{2a}$, then substitute to find $y$."
+>}}
+
+{{< graphplot
+  question="Graph $y=x^2+4x+3$ using its intercepts, vertex, and axis of symmetry."
+  answerDisplay="$y=x^2+4x+3$"
+  ariaLabel="A blank grid from −7 to 7 on both axes."
+  hint="Find the vertex and axis of symmetry first, then plot the $x$- and $y$-intercepts."
+>}}
+{"answer": {"quadratic": {"a": 1, "b": 4, "c": 3}}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
+{{< /graphplot >}}
+
+### Solve maximum and minimum applications
+
+{{< fillin
+  question="Find the minimum value of $y=2x^2+x-1$."
+  answer="-\frac{9}{8}"
+  answerDisplay="$-\tfrac{9}{8}$"
+  hint="Find the vertex's $y$-coordinate using $x=-\tfrac{b}{2a}$, then substitute."
+>}}
+
+{{< fillin
+  question="Find the maximum value of $y=-9x^2+16$."
+  answer="16"
+  hint="Find the axis of symmetry $x=-\tfrac{b}{2a}$; note $b=0$ here."
+>}}
+
+{{< fillin
+  question="An arrow is shot vertically upward from a platform 45 feet high at a rate of 168 feet per second, modeled by $h=-16t^2+168t+45$. How many seconds will it take the arrow to reach its maximum height? Round to the nearest tenth of a second."
+  answer="5.3"
+  answerForm="decimal"
+  hint="Find $t=-\tfrac{b}{2a}$ with $a=-16$ and $b=168$."
+>}}
+
+{{< fillin
+  question="For the arrow in the previous exercise, find its maximum height, in feet."
+  answer="486"
+  hint="Substitute $t=5.25$ back into $h=-16t^2+168t+45$."
+>}}
+
+{{< fillin
+  question="A computer store owner charges $x$ dollars for a certain computer and can sell $40-x$ computers each week, giving revenue modeled by $R=-x^2+40x$. Find the selling price, in dollars, that will give the maximum revenue."
+  answer="20"
+  answerDisplay="\$20"
+  hint="Find the axis of symmetry $x=-\tfrac{b}{2a}$ of the revenue model."
+>}}
+
+{{< fillin
+  question="For the revenue model in the previous exercise, find the maximum revenue."
+  answer="400"
+  answerDisplay="\$400"
+  hint="Substitute the selling price back into $R=-x^2+40x$."
+>}}
+
 ## Key terms
 
 **quadratic equation in two variables** — an equation of the form
@@ -1988,4 +2141,4 @@ point where $x=0$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 10.5: Graphing Quadratic Equations in Two Variables](https://openstax.org/books/elementary-algebra-2e/pages/10-5-graphing-quadratic-equations-in-two-variables) by Lynn Marecek and MaryAnne Anthony-Smith, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the source parabola graphs as accessible inline graphics, recast source data tables as markdown tables, omitted the Be Prepared quiz, media links, and end-of-section exercises, and converted selected practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 10.5: Graphing Quadratic Equations in Two Variables](https://openstax.org/books/elementary-algebra-2e/pages/10-5-graphing-quadratic-equations-in-two-variables) by Lynn Marecek and MaryAnne Anthony-Smith, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the source parabola graphs as accessible inline graphics, recast source data tables as markdown tables; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

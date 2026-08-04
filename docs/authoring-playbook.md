@@ -696,6 +696,28 @@ value-then-form (a span the form rejects can never grade `correct`) and the
 equivalence ladder's `simplify()` effectively never returns on a conjugate
 radical quotient.
 
+That non-termination is now also closed at runtime, where a learner reaches
+it synchronously on the main thread by pasting a "rationalize a two-term
+denominator" prompt (§9.5) back as the response. Measured against the pinned
+0.58.0 the engine has two distinct hang sites, and `ce.timeLimit` interrupts
+neither: `isEqual()` never returns once either operand keeps a
+radical-denominator quotient ($\tfrac{\sqrt{2}}{\sqrt{x}-\sqrt{3}}$ — against
+*any* comparand), and `simplify()` never returns on some differences of
+variable-radical expressions with no radical denominator at all — the case
+this note originally recorded. `equivalent()` in `lib/check-answer.mjs` now
+routes both classes to bounded numeric sampling instead of the engine (see
+the guard banner there), so a pasted conjugate prompt grades `form` — the
+message the `answerForm` was built to produce — rather than freezing the
+page. Sampling also decides where the engine merely false-negatived, which
+surfaced two §6 retrofits the old false negatives had been masking: the
+higher-roots two-term sum (now tagged `simplified-radical`, with the
+like-radicals key refined to the source's own convention — same radicand
+stays separate when the coefficients are unlike terms) and the
+knowledge-check radical quotient whose answer keeps $\sqrt{y}$ under the
+bar (now multiple choice, the resolution recorded above for the
+quotient-to-a-power item). The lint's form-first ordering above remains
+correct as the cheaper check.
+
 ## Done checklist
 
 - [ ] Pinned CNXML and PDF/Answer Key pages inspected; source ledger complete.

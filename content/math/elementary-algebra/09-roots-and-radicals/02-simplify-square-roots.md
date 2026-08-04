@@ -440,6 +440,60 @@ $$
   hint="Simplify the fraction in the radicand first: $\tfrac{50x^5 y^3}{72x^4 y} = \tfrac{25xy^2}{36}$. Then use the Quotient Property."
 >}}
 
+## Practice
+
+### Use the Product Property to simplify square roots
+
+{{< fillin
+  question="Simplify: $\sqrt{27}$."
+  answer="3\sqrt{3}"
+  answerForm="simplified-radical"
+  answerDisplay="$3\sqrt{3}$"
+  hint="Find the largest perfect square factor of $27$, then split the radical."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt{m^{13}}$."
+  answer="m^6\sqrt{m}"
+  answerForm="simplified-radical"
+  answerDisplay="$m^6\sqrt{m}$"
+  hint="The largest perfect square factor of $m^{13}$ is $m^{12}$, and $\sqrt{m^{12}} = m^6$."
+>}}
+
+{{< fillin
+  question="Simplify: $5 + \sqrt{12}$."
+  answer="5+2\sqrt{3}"
+  answerForm="simplified-radical"
+  answerDisplay="$5+2\sqrt{3}$"
+  hint="Simplify $\sqrt{12}$ first. The integer and the radical are not like terms, so leave them as a sum."
+>}}
+
+### Use the Quotient Property to simplify square roots
+
+{{< fillin
+  question="Simplify: $\sqrt{\tfrac{49}{64}}$."
+  answer="\tfrac{7}{8}"
+  answerForm="lowest-terms"
+  answerDisplay="$\tfrac{7}{8}$"
+  hint="Check whether both $49$ and $64$ are perfect squares."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt{\tfrac{x^{10}}{x^6}}$."
+  answer="x^2"
+  answerForm="simplified-radical"
+  answerDisplay="$x^2$"
+  hint="Divide the like bases inside the radical first by subtracting exponents, then take the square root."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt{\tfrac{96x^7}{121}}$."
+  answer="\tfrac{4x^3\sqrt{6x}}{11}"
+  answerForm="simplified-radical"
+  answerDisplay="$\tfrac{4x^3\sqrt{6x}}{11}$"
+  hint="$121$ is already a perfect square. Rewrite $96x^7$ using its largest perfect square factor $16x^6$."
+>}}
+
 ## Key terms
 
 **simplified square root** — a square root whose radicand contains no perfect
@@ -451,4 +505,4 @@ $b \neq 0$, $\sqrt{\tfrac{a}{b}} = \tfrac{\sqrt{a}}{\sqrt{b}}$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, 9.2 Simplify Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-2-simplify-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, 9.2 Simplify Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-2-simplify-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

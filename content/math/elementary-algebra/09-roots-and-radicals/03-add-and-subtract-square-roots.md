@@ -313,6 +313,60 @@ $$
   hint="Each radical simplifies to a multiple of $\sqrt{3p}$: $3p\sqrt{3p} - 4p\sqrt{3p}$."
 >}}
 
+## Practice
+
+### Add and subtract like square roots
+
+{{< fillin
+  question="Simplify: $8\sqrt{2} - 5\sqrt{2}$."
+  answer="3\sqrt{2}"
+  answerForm="simplified-radical"
+  answerDisplay="$3\sqrt{2}$"
+  hint="The radicals are like, so subtract the coefficients: $8 - 5$."
+>}}
+
+{{< fillin
+  question="Simplify: $7\sqrt{y} + 2\sqrt{y}$."
+  answer="9\sqrt{y}"
+  answerForm="simplified-radical"
+  answerDisplay="$9\sqrt{y}$"
+  hint="The radicands are the same, so add the coefficients $7$ and $2$."
+>}}
+
+{{< fillin
+  question="Simplify: $3\sqrt{3} - 8\sqrt{3} + 7\sqrt{5}$."
+  answer="-5\sqrt{3}+7\sqrt{5}"
+  answerForm="simplified-radical"
+  answerDisplay="$-5\sqrt{3} + 7\sqrt{5}$"
+  hint="Combine the two $\sqrt{3}$ terms first; $\sqrt{5}$ is not like them and stays separate."
+>}}
+
+### Add and subtract square roots that need simplification
+
+{{< fillin
+  question="Simplify: $\sqrt{27} - \sqrt{75}$."
+  answer="-2\sqrt{3}"
+  answerForm="simplified-radical"
+  answerDisplay="$-2\sqrt{3}$"
+  hint="Write $\sqrt{27} = 3\sqrt{3}$ and $\sqrt{75} = 5\sqrt{3}$, then subtract the coefficients."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{1}{2}\sqrt{20} - \tfrac{2}{3}\sqrt{45}$."
+  answer="-\sqrt{5}"
+  answerForm="simplified-radical"
+  answerDisplay="$-\sqrt{5}$"
+  hint="Simplify each radical first: $\tfrac{1}{2}\sqrt{20} = \sqrt{5}$ and $\tfrac{2}{3}\sqrt{45} = 2\sqrt{5}$."
+>}}
+
+{{< fillin
+  question="Simplify: $3\sqrt{20x^2} - 4\sqrt{45x^2} + 5x\sqrt{80}$."
+  answer="14x\sqrt{5}"
+  answerForm="simplified-radical"
+  answerDisplay="$14x\sqrt{5}$"
+  hint="Each radical simplifies to a multiple of $x\sqrt{5}$: $6x\sqrt{5} - 12x\sqrt{5} + 20x\sqrt{5}$."
+>}}
+
 ## Key terms
 
 **like square roots** — square roots with the same radicand (such as
@@ -323,4 +377,4 @@ square roots are combined when adding or subtracting.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, 9.3 Add and Subtract Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-3-add-and-subtract-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked examples as prose with aligned display step tables, folded the order-of-operations warm-up into the section opener, and stated the like-square-roots definition inline; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, 9.3 Add and Subtract Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-3-add-and-subtract-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked examples as prose with aligned display step tables, folded the order-of-operations warm-up into the section opener, and stated the like-square-roots definition inline; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

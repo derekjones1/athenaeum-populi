@@ -316,6 +316,119 @@ $$
   answerDisplay="$-10p$"
 >}}
 
+## Practice
+
+### Simplify expressions with square roots
+
+{{< fillin
+  question="Simplify $\sqrt{36}$."
+  answer="6"
+  answerForm="simplified-radical"
+  hint="Ask what whole number, multiplied by itself, gives $36$."
+>}}
+
+{{< fillin
+  question="Simplify $-\sqrt{4}$."
+  answer="-2"
+  answerForm="simplified-radical"
+  answerDisplay="$-2$"
+  hint="Simplify the radical first, then apply the negative sign in front of it."
+>}}
+
+{{< multiplechoice
+  question="Simplify $\sqrt{-9}$."
+  answer="not a real number"
+  hint="Can any real number, squared, produce a negative result?"
+>}}
+3
+-3
+not a real number
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Simplify $\sqrt{9+16}$."
+  hint="The radical is a grouping symbol — add underneath it first, then take the square root."
+  answer="5"
+>}}
+5
+7
+25
+{{< /multiplechoice >}}
+
+### Estimate square roots
+
+{{< multiplechoice
+  question="Between which two consecutive whole numbers does $\sqrt{70}$ lie?"
+  answer="8 and 9"
+  hint="Find the perfect squares just below and above $70$."
+>}}
+7 and 8
+8 and 9
+9 and 10
+6 and 7
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Between which two consecutive whole numbers does $\sqrt{200}$ lie?"
+  answer="14 and 15"
+  hint="Find the perfect squares just below and above $200$."
+>}}
+13 and 14
+14 and 15
+15 and 16
+12 and 13
+{{< /multiplechoice >}}
+
+### Approximate square roots
+
+{{< fillin
+  question="Approximate $\sqrt{19}$ with a calculator's square root key. Round to two decimal places."
+  answer="4.36"
+  answerForm="decimal"
+  hint="Take the square root, then keep two digits after the decimal point."
+>}}
+
+{{< fillin
+  question="Approximate $\sqrt{53}$ with a calculator's square root key. Round to two decimal places."
+  answer="7.28"
+  answerForm="decimal"
+  hint="Take the square root, then keep two digits after the decimal point."
+>}}
+
+### Simplify variable expressions with square roots
+
+{{< fillin
+  question="Simplify $\sqrt{a^{14}}$."
+  answer="a^7"
+  answerForm="simplified-radical"
+  answerDisplay="$a^7$"
+  hint="Halve the exponent: $(a^7)^2 = a^{14}$."
+>}}
+
+{{< fillin
+  question="Simplify $-\sqrt{81x^{18}}$."
+  answer="-9x^9"
+  answerForm="simplified-radical"
+  answerDisplay="$-9x^9$"
+  hint="The negative sign stays in front; simplify the radical, then apply it."
+>}}
+
+{{< fillin
+  question="Simplify $\sqrt{121m^{20}}$."
+  answer="11m^{10}"
+  answerForm="simplified-radical"
+  answerDisplay="$11m^{10}$"
+  hint="Take the square root of the coefficient, then halve the exponent of $m$."
+>}}
+
+{{< fillin
+  question="Simplify $\sqrt{9c^{8}d^{12}}$."
+  answer="3c^4d^6"
+  answerForm="simplified-radical"
+  answerDisplay="$3c^4d^6$"
+  hint="Take the square root of the coefficient, then halve the exponent of each variable factor."
+>}}
+
 ## Key terms
 
 **square** of a number — if $n^2 = m$, then $m$ is the square of $n$. **square
@@ -329,4 +442,4 @@ written with $\approx$, accurate to the number of digits displayed.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, 9.1 Simplify and Use Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-1-simplify-and-use-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the two-column worked examples as aligned step tables; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, 9.1 Simplify and Use Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-1-simplify-and-use-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the two-column worked examples as aligned step tables; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

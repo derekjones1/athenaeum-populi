@@ -398,8 +398,8 @@ The $\sqrt{-12}$ is not a real number. There is no real solution.
   answer="No real solution"
 >}}
 No real solution
-$r=-	frac{4}{3}$
-$r=	frac{4}{3}$
+$r=-\tfrac{4}{3}$
+$r=\tfrac{4}{3}$
 {{< /multiplechoice >}}
 
 The left sides of the equations in the next two examples do not seem to be of
@@ -467,6 +467,64 @@ $$
 \end{array}
 $$
 
+## Practice
+
+### Solve quadratic equations of the form $ax^2=k$ using the Square Root Property
+
+{{< fillin
+  question="Solve $4m^2=36$. Enter both solutions, separated by a comma."
+  answer="-3,3"
+  answerMode="unordered"
+  answerDisplay="$-3,\ 3$"
+  hint="Divide both sides by $4$ to isolate $m^2$, then use the Square Root Property."
+>}}
+
+{{< fillin
+  question="Solve $7p^2+10=26$. Enter both solutions, separated by a comma."
+  answer="-\frac{4\sqrt{7}}{7},\frac{4\sqrt{7}}{7}"
+  answerMode="unordered"
+  answerDisplay="$-\tfrac{4\sqrt{7}}{7},\ \tfrac{4\sqrt{7}}{7}$"
+  hint="Isolate $p^2$, use the Square Root Property, then rationalize the denominator."
+>}}
+
+{{< multiplechoice
+  question="Solve $x^2+20=0$."
+  answer="No real solution"
+  hint="Isolate $x^2$ and decide whether a real number can square to a negative value."
+>}}
+No real solution
+$x=2\sqrt{5}$ or $x=-2\sqrt{5}$
+$x=20$ or $x=-20$
+{{< /multiplechoice >}}
+
+### Solve quadratic equations of the form $a(x-h)^2=k$ using the Square Root Property
+
+{{< fillin
+  question="Solve $(x+2)^2=9$. Enter both solutions, separated by a comma."
+  answer="-5,1"
+  answerMode="unordered"
+  answerDisplay="$-5,\ 1$"
+  hint="Use the Square Root Property to get $x+2=\pm3$, then solve each equation for $x$."
+>}}
+
+{{< fillin
+  question="Solve $(a-7)^2+5=55$. Enter both solutions, separated by a comma."
+  answer="7-5\sqrt{2},7+5\sqrt{2}"
+  answerMode="unordered"
+  answerDisplay="$7-5\sqrt{2},\ 7+5\sqrt{2}$"
+  hint="Isolate the binomial term first, then use the Square Root Property and simplify the radical."
+>}}
+
+{{< multiplechoice
+  question="Solve $(5c+1)^2=-27$."
+  answer="No real solution"
+  hint="Determine whether the square root of the right side is a real number."
+>}}
+No real solution
+$c=\tfrac{26}{5}$
+$c=-\tfrac{28}{5}$
+{{< /multiplechoice >}}
+
 ## Key terms
 
 **quadratic equation** — an equation of the form $ax^2+bx+c=0$ with
@@ -477,4 +535,4 @@ form $a^2+2ab+b^2$ or $a^2-2ab+b^2$; it factors to $(a+b)^2$ or $(a-b)^2$.
 
 ---
 
-<small>This page is adapted from [Elementary Algebra 2e, Section 10.1](https://openstax.org/books/elementary-algebra-2e/pages/10-1-solve-quadratic-equations-using-the-square-root-property) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: reformatted the source for accessible web presentation and converted selected Try It problems into interactive exercises; the source exercise set and media links are omitted.</small>
+<small>This page is adapted from [Elementary Algebra 2e, Section 10.1](https://openstax.org/books/elementary-algebra-2e/pages/10-1-solve-quadratic-equations-using-the-square-root-property) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: reformatted the source for accessible web presentation and converted selected Try It problems into interactive exercises; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>

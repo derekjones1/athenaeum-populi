@@ -560,6 +560,78 @@ common factors to remove from the numerator and denominator.
   hint="Multiply the numerator and denominator by the conjugate $\sqrt{q} - \sqrt{10}$; the denominator becomes $q - 10$, and the numerator stays in factored (squared) form."
 >}}
 
+## Practice
+
+### Divide square roots
+
+{{< fillin
+  question="Simplify: $\tfrac{\sqrt{27}}{6}$."
+  answer="\frac{\sqrt{3}}{2}"
+  answerForm="simplified-radical"
+  answerDisplay="$\tfrac{\sqrt{3}}{2}$"
+  hint="Write $\sqrt{27}$ as $\sqrt{9} \cdot \sqrt{3} = 3\sqrt{3}$, then remove the common factor of $3$ from the numerator and denominator."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{2 - \sqrt{32}}{8}$."
+  answer="\frac{1 - 2\sqrt{2}}{4}"
+  answerForm="simplified-radical"
+  answerDisplay="$\tfrac{1 - 2\sqrt{2}}{4}$"
+  hint="$\sqrt{32} = 4\sqrt{2}$. Factor a $2$ out of the numerator, then remove the common factor of $2$."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{\sqrt{75r^{3}}}{\sqrt{108r}}$."
+  answer="\frac{5r}{6}"
+  answerForm="simplified-radical"
+  answerDisplay="$\tfrac{5r}{6}$"
+  hint="Write it as $\sqrt{\tfrac{75r^3}{108r}} = \sqrt{\tfrac{25r^2}{36}}$, then take the square root of the numerator and denominator."
+>}}
+
+### Rationalize a one-term denominator
+
+{{< fillin
+  question="Simplify: $\tfrac{10}{\sqrt{6}}$."
+  answer="\frac{5\sqrt{6}}{3}"
+  answerForm="simplified-radical"
+  answerDisplay="$\tfrac{5\sqrt{6}}{3}$"
+  hint="Multiply the numerator and denominator by $\sqrt{6}$; the denominator becomes $\sqrt{6} \cdot \sqrt{6} = 6$, then remove the common factor of $2$."
+>}}
+
+{{< fillin
+  question="Simplify: $-\tfrac{9}{2\sqrt{3}}$."
+  answer="-\frac{3\sqrt{3}}{2}"
+  answerForm="simplified-radical"
+  answerDisplay="$-\tfrac{3\sqrt{3}}{2}$"
+  hint="Multiply the numerator and denominator by $\sqrt{3}$; the denominator becomes $2 \cdot 3 = 6$, then remove the common factor of $3$."
+>}}
+
+### Rationalize a two-term denominator
+
+{{< fillin
+  question="Simplify: $\tfrac{3}{5 + \sqrt{5}}$."
+  answer="\frac{3(5 - \sqrt{5})}{20}"
+  answerForm="simplified-radical"
+  answerDisplay="$\tfrac{3\left(5 - \sqrt{5}\right)}{20}$"
+  hint="Multiply the numerator and denominator by the conjugate $5 - \sqrt{5}$; the denominator becomes $25 - 5 = 20$."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{\sqrt{2}}{\sqrt{x} - \sqrt{3}}$."
+  answer="\frac{\sqrt{2}(\sqrt{x} + \sqrt{3})}{x - 3}"
+  answerForm="simplified-radical"
+  answerDisplay="$\tfrac{\sqrt{2}\left(\sqrt{x} + \sqrt{3}\right)}{x - 3}$"
+  hint="Multiply the numerator and denominator by the conjugate $\sqrt{x} + \sqrt{3}$; the denominator becomes $x - 3$."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{\sqrt{r} + \sqrt{5}}{\sqrt{r} - \sqrt{5}}$."
+  answer="\frac{(\sqrt{r} + \sqrt{5})^2}{r - 5}"
+  answerForm="simplified-radical"
+  answerDisplay="$\tfrac{\left(\sqrt{r} + \sqrt{5}\right)^2}{r - 5}$"
+  hint="Multiply the numerator and denominator by the conjugate $\sqrt{r} + \sqrt{5}$; the denominator becomes $r - 5$, and the numerator stays in factored (squared) form."
+>}}
+
 ## Key terms
 
 **Quotient Property of Square Roots** — for non-negative real numbers $a$ and
@@ -575,4 +647,4 @@ denominator.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, 9.5 Divide Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-5-divide-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the square-root table as prose, recast the worked examples as aligned step tables, and converted the practice problems ("Try Its") into interactive exercises with instant feedback; omitted the Be Prepared quiz, media links, and end-of-section exercises.</small>
+<small>This section is adapted from [Elementary Algebra 2e, 9.5 Divide Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-5-divide-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the square-root table as prose, recast the worked examples as aligned step tables, and converted the practice problems ("Try Its") into interactive exercises with instant feedback; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>

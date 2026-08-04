@@ -576,6 +576,86 @@ Check. We leave the check for you.
   hint="Divide both sides by $4$, complete the square, and use both signs from the Square Root Property."
 >}}
 
+## Practice
+
+### Complete the square of a binomial expression
+
+{{< fillin
+  question="What constant completes the square for $a^{2}+10a$?"
+  answer="25"
+  answerDisplay="$25$"
+  hint="Take half of the coefficient of $a$, then square the result."
+>}}
+
+{{< fillin
+  question="Now write $a^{2}+10a+25$ as a binomial square."
+  answer="(a+5)^2"
+  answerForm="factored"
+  answerDisplay="$(a+5)^2$"
+  hint="Take the square roots of the first and last terms to build the binomial, matching the sign of the middle term."
+>}}
+
+{{< fillin
+  question="What constant completes the square for $p^{2}-\tfrac{1}{3}p$?"
+  answer="\frac{1}{36}"
+  answerDisplay="$\tfrac{1}{36}$"
+  hint="Take half of $-\tfrac{1}{3}$, then square the result."
+>}}
+
+{{< fillin
+  question="Now write $p^{2}-\tfrac{1}{3}p+\tfrac{1}{36}$ as a binomial square."
+  answer="(p-\frac{1}{6})^2"
+  answerForm="factored"
+  answerDisplay="$(p-\tfrac{1}{6})^2$"
+  hint="The square root of $\tfrac{1}{36}$ is $\tfrac{1}{6}$; use it as the second term of the binomial, keeping the sign of the middle term."
+>}}
+
+### Solve quadratic equations of the form $x^2+bx+c=0$ by completing the square
+
+{{< fillin
+  question="Solve $u^{2}+2u=3$ by completing the square. Enter both solutions, separated by a comma."
+  answer="-3,1"
+  answerMode="unordered"
+  answerDisplay="$u=-3$ or $u=1$"
+  hint="Add $1$ to both sides to complete the square, factor the perfect square trinomial, and use the Square Root Property."
+>}}
+
+{{< multiplechoice
+  question="Solve $m^{2}+4m=-44$ by completing the square."
+  answer="No real solution"
+  hint="Complete the square, then check the sign of the number on the right side before applying the Square Root Property."
+>}}
+No real solution
+$m=-22$ or $m=2$
+$m=-2+2\sqrt{10}$ or $m=-2-2\sqrt{10}$
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Solve $a^{2}-10a=-5$ by completing the square. Enter both solutions, separated by a comma."
+  answer="5-2\sqrt{5},5+2\sqrt{5}"
+  answerMode="unordered"
+  answerDisplay="$a=5-2\sqrt{5}$ or $a=5+2\sqrt{5}$"
+  hint="Complete the square, use the Square Root Property, then simplify $\sqrt{20}$ to $2\sqrt{5}$."
+>}}
+
+### Solve quadratic equations of the form $ax^2+bx+c=0$ by completing the square
+
+{{< fillin
+  question="Solve $3m^{2}+30m-27=6$ by completing the square. Enter both solutions, separated by a comma."
+  answer="-11,1"
+  answerMode="unordered"
+  answerDisplay="$m=-11$ or $m=1$"
+  hint="Move every term to one side, divide out the common factor of $3$, and then complete the square."
+>}}
+
+{{< fillin
+  question="Solve $2c^{2}+c=6$ by completing the square. Enter both solutions, separated by a comma."
+  answer="-2,\frac{3}{2}"
+  answerMode="unordered"
+  answerDisplay="$c=-2$ or $c=\tfrac{3}{2}$"
+  hint="Divide both sides by $2$ so the coefficient of $c^2$ is $1$, then complete the square as usual."
+>}}
+
 ## Key terms
 
 **Binomial Squares Pattern** — $(a+b)^2=a^2+2ab+b^2$ and
@@ -588,4 +668,4 @@ $x=-\sqrt{k}$.
 
 ---
 
-<small>This page is adapted from [Elementary Algebra 2e, Section 10.2](https://openstax.org/books/elementary-algebra-2e/pages/10-2-solve-quadratic-equations-by-completing-the-square) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: reformatted the source for accessible web presentation and converted selected Try It problems into interactive exercises; the source exercise set and media links are omitted.</small>
+<small>This page is adapted from [Elementary Algebra 2e, Section 10.2](https://openstax.org/books/elementary-algebra-2e/pages/10-2-solve-quadratic-equations-by-completing-the-square) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: reformatted the source for accessible web presentation and converted selected Try It problems into interactive exercises; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block.</small>

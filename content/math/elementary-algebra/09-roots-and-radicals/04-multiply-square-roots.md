@@ -478,6 +478,60 @@ becomes very useful in the next section when we divide square roots.
   hint="Use $(a - b)(a + b) = a^2 - b^2$: compute $3^2 - \left(2\sqrt{5}\right)^2 = 9 - 4 \cdot 5$."
 >}}
 
+## Practice
+
+### Multiply square roots
+
+{{< fillin
+  question="Simplify: $\left(5\sqrt{2}\right)\left(3\sqrt{6}\right)$."
+  answer="30\sqrt{3}"
+  answerForm="simplified-radical distributed"
+  answerDisplay="$30\sqrt{3}$"
+  hint="Multiply the coefficients ($5 \cdot 3$) and the radicals ($\sqrt{2} \cdot \sqrt{6} = \sqrt{12}$), then simplify $\sqrt{12}$."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(-2\sqrt{7}\right)\left(-2\sqrt{14}\right)$."
+  answer="28\sqrt{2}"
+  answerForm="simplified-radical distributed"
+  answerDisplay="$28\sqrt{2}$"
+  hint="Multiply the coefficients — two negatives make a positive product — and multiply the radicals ($\sqrt{7} \cdot \sqrt{14} = \sqrt{98}$), then simplify $\sqrt{98}$."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(2\sqrt{5b^3}\right)\left(4\sqrt{15b}\right)$."
+  answer="40b^2\sqrt{3}"
+  answerForm="simplified-radical distributed"
+  answerDisplay="$40b^2\sqrt{3}$"
+  hint="Multiply the coefficients and combine under one radical to get $\sqrt{75b^4}$, then pull out the perfect-square factor $25b^4$."
+>}}
+
+### Use polynomial multiplication to multiply square roots
+
+{{< fillin
+  question="Simplify: $\left(7 + \sqrt{3}\right)\left(9 - \sqrt{3}\right)$."
+  answer="60+2\sqrt{3}"
+  answerForm="expanded simplified-radical"
+  answerDisplay="$60 + 2\sqrt{3}$"
+  hint="Use FOIL: the outer and inner products combine to $2\sqrt{3}$, and the last product $\sqrt{3} \cdot \left(-\sqrt{3}\right) = -3$ combines with $63$."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(5 - \sqrt{7}\right)\left(4 - \sqrt{7}\right)$."
+  answer="27-9\sqrt{7}"
+  answerForm="expanded simplified-radical"
+  answerDisplay="$27 - 9\sqrt{7}$"
+  hint="FOIL gives $20 - 5\sqrt{7} - 4\sqrt{7} + 7$; combine the constant terms and the $\sqrt{7}$ terms."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(\sqrt{11} + \sqrt{5}\right)\left(\sqrt{11} + 6\sqrt{5}\right)$."
+  answer="41+7\sqrt{55}"
+  answerForm="expanded simplified-radical"
+  answerDisplay="$41 + 7\sqrt{55}$"
+  hint="FOIL gives $11 + 6\sqrt{55} + \sqrt{55} + 30$; combine the constants and the $\sqrt{55}$ terms."
+>}}
+
 ## Key terms
 
 **Product Property of Square Roots** — for nonnegative $a$ and $b$,
@@ -489,4 +543,4 @@ $a + \sqrt{b}$ and $a - \sqrt{b}$; their product $a^2 - b$ contains no radical.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, 9.4 Multiply Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-4-multiply-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, 9.4 Multiply Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-4-multiply-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

@@ -482,8 +482,149 @@ $$
 {{< fillin
   question="Simplify: $\sqrt[3]{32y^5} - \sqrt[3]{-108y^8}$."
   answer="2y\sqrt[3]{4y^2} + 3y^2\sqrt[3]{4y^2}"
+  answerForm="simplified-radical"
   answerDisplay="$2y\sqrt[3]{4y^2} + 3y^2\sqrt[3]{4y^2}$"
   hint="Simplify each radical: $\sqrt[3]{32y^5} = 2y\sqrt[3]{4y^2}$ and $\sqrt[3]{-108y^8} = -3y^2\sqrt[3]{4y^2}$."
+>}}
+
+## Practice
+
+### Simplify expressions with higher roots
+
+{{< fillin
+  question="Simplify: $\sqrt[6]{64}$."
+  answer="2"
+  answerForm="simplified-radical"
+  answerDisplay="$2$"
+  hint="Find the number whose sixth power is $64$."
+>}}
+
+{{< multiplechoice
+  question="Simplify: $\sqrt[6]{-64}$."
+  answer="not a real number"
+  hint="The index is even. Can a real number raised to the sixth power be negative?"
+>}}
+-2
+2
+not a real number
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Simplify: $\sqrt[8]{k^8}$."
+  answer="|k|"
+  answerForm="simplified-radical"
+  answerDisplay="$|k|$"
+  hint="The index is even, so use an absolute value sign to guarantee the positive root."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt[6]{p^6}$."
+  answer="|p|"
+  answerForm="simplified-radical"
+  answerDisplay="$|p|$"
+  hint="The index is even, so use an absolute value sign to guarantee the positive root."
+>}}
+
+### Use the Product Property to simplify expressions with higher roots
+
+{{< fillin
+  question="Simplify: $\sqrt[4]{s^{10}}$."
+  answer="s^2\sqrt[4]{s^2}"
+  answerForm="simplified-radical"
+  answerDisplay="$s^2\sqrt[4]{s^2}$"
+  hint="Write $s^{10}$ as $(s^2)^4 \cdot s^2$, then take the fourth root of the perfect fourth power."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt[4]{48y^6}$."
+  answer="2|y|\sqrt[4]{3y^2}"
+  answerForm="simplified-radical"
+  answerDisplay="$2|y|\sqrt[4]{3y^2}$"
+  hint="Write $48y^6$ as $(2y)^4 \cdot 3y^2$; the index is even, so use an absolute value sign."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt[3]{625}$."
+  answer="5\sqrt[3]{5}"
+  answerForm="simplified-radical"
+  answerDisplay="$5\sqrt[3]{5}$"
+  hint="Write $625$ as $5^3 \cdot 5$, the greatest perfect cube factor."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt[6]{128}$."
+  answer="2\sqrt[6]{2}"
+  answerForm="simplified-radical"
+  answerDisplay="$2\sqrt[6]{2}$"
+  hint="Write $128$ as $2^6 \cdot 2$, the greatest perfect sixth-power factor."
+>}}
+
+### Use the Quotient Property to simplify expressions with higher roots
+
+{{< fillin
+  question="Simplify: $\tfrac{\sqrt[5]{128x^8}}{\sqrt[5]{2x^2}}$."
+  answer="2x\sqrt[5]{2x}"
+  answerForm="simplified-radical"
+  answerDisplay="$2x\sqrt[5]{2x}$"
+  hint="Write as one radical and divide: $\tfrac{128x^8}{2x^2}=64x^6$. Then factor out the perfect fifth power."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt[6]{\tfrac{128u^7}{v^3}}$."
+  answer="2|u|\sqrt[6]{\tfrac{2u}{v^3}}"
+  answerForm="simplified-radical"
+  answerDisplay="$2|u|\sqrt[6]{\tfrac{2u}{v^3}}$"
+  hint="The fraction under the radical will not reduce, and $v^3$ is not a perfect sixth power — so keep it under one radical. Rewrite $128u^7$ as $(2u)^6 \cdot 2u$ and use the Product Property to bring $2u$ out."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt[5]{\tfrac{d^{12}}{d^7}}$."
+  answer="d"
+  answerForm="simplified-radical"
+  answerDisplay="$d$"
+  hint="Simplify the fraction under the radical first: $\tfrac{d^{12}}{d^7}=d^5$."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt[8]{\tfrac{m^{12}}{m^4}}$."
+  answer="|m|"
+  answerForm="simplified-radical"
+  answerDisplay="$|m|$"
+  hint="Simplify the fraction under the radical first: $\tfrac{m^{12}}{m^4}=m^8$. The index is even, so use an absolute value sign."
+>}}
+
+### Add and subtract higher roots
+
+{{< fillin
+  question="Simplify: $\sqrt[4]{512} - \sqrt[4]{32}$."
+  answer="2\sqrt[4]{2}"
+  answerForm="simplified-radical"
+  answerDisplay="$2\sqrt[4]{2}$"
+  hint="Simplify each radical first: $\sqrt[4]{512}=4\sqrt[4]{2}$ and $\sqrt[4]{32}=2\sqrt[4]{2}$, then combine."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt[4]{486u^7} + \sqrt[4]{768u^3}$."
+  answer="3|u|\sqrt[4]{6u^3} + 4\sqrt[4]{3u^3}"
+  answerForm="simplified-radical"
+  answerDisplay="$3|u|\sqrt[4]{6u^3} + 4\sqrt[4]{3u^3}$"
+  hint="Rewrite each radicand using perfect fourth power factors; the resulting radicals are not like, so leave them as a sum."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt[3]{15q} + \sqrt[3]{15q}$."
+  answer="2\sqrt[3]{15q}"
+  answerForm="simplified-radical"
+  answerDisplay="$2\sqrt[3]{15q}$"
+  hint="The radicals are already like, so add the coefficients $1+1$."
+>}}
+
+{{< fillin
+  question="Simplify: $2\sqrt[4]{27} - 6\sqrt[4]{27}$."
+  answer="-4\sqrt[4]{27}"
+  answerForm="simplified-radical"
+  answerDisplay="$-4\sqrt[4]{27}$"
+  hint="The radicals are like, so subtract the coefficients $2-6$."
 >}}
 
 ## Key terms
@@ -500,4 +641,4 @@ $\sqrt[n]{\tfrac{a}{b}} = \tfrac{\sqrt[n]{a}}{\sqrt[n]{b}}$.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, 9.7 Higher Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-7-higher-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, 9.7 Higher Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-7-higher-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recast the worked "How To" step tables as display equality chains with left-hand explanations; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>

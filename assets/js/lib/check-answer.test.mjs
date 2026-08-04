@@ -382,6 +382,42 @@ for (const [student, answer, form, expected] of [
   // and an unchecked radical must not become an unexamined one.
   ['\\sqrt2', '\\sqrt{2}', 'simplified-radical', 'correct'],
   ['8\\sqrt2-9\\sqrt2', '-\\sqrt{2}', 'simplified-radical', 'form'],
+  // The non-termination guard (see equivalent()'s banner): the engine's
+  // `isEqual` never returns on a quotient whose denominator mixes a variable
+  // radicand with a numeric one — the shape every "rationalize a two-term
+  // denominator" prompt prints, pasted by retyping the prompt. Before the
+  // guard, each of the next five gradings froze the page; a run of this suite
+  // that regresses the guard hangs here rather than failing politely.
+  ['\\frac{\\sqrt{2}}{\\sqrt{x}-\\sqrt{3}}', '\\frac{\\sqrt{2}(\\sqrt{x}+\\sqrt{3})}{x-3}', 'simplified-radical', 'form'],
+  ['\\frac{\\sqrt{5}}{\\sqrt{x}+\\sqrt{2}}', '\\frac{\\sqrt{5}(\\sqrt{x}-\\sqrt{2})}{x-2}', 'simplified-radical', 'form'],
+  ['\\frac{\\sqrt{10}}{\\sqrt{y}-\\sqrt{3}}', '\\frac{\\sqrt{10}(\\sqrt{y}+\\sqrt{3})}{y-3}', 'simplified-radical', 'form'],
+  // …and it hangs against ANY comparand once one side has the shape, so a
+  // wrong answer must come back `incorrect`, not freeze.
+  ['\\frac{\\sqrt{2}}{\\sqrt{x}-\\sqrt{3}}', 'x', 'simplified-radical', 'incorrect'],
+  ['\\frac{\\sqrt{7}}{\\sqrt{x}-\\sqrt{3}}', '\\frac{\\sqrt{2}(\\sqrt{x}+\\sqrt{3})}{x-3}', 'simplified-radical', 'incorrect'],
+  // The both-terms-radical prompts share the guarded shape without hanging;
+  // numeric sampling upgrades their pasted prompt from a silent false
+  // `incorrect` to the `form` message the answerForm was built to produce.
+  ['\\frac{\\sqrt{p}+\\sqrt{2}}{\\sqrt{p}-\\sqrt{2}}', '\\frac{(\\sqrt{p}+\\sqrt{2})^2}{p-2}', 'simplified-radical', 'form'],
+  ['\\frac{\\sqrt{12r^3}}{\\sqrt{6r}}', 'r\\sqrt{2}', 'simplified-radical', 'form'],
+  // The guarded path must not touch what already worked: a correct answer
+  // with its radicals in the NUMERATOR takes the unguarded ladder as before.
+  ['\\frac{\\sqrt{10}\\sqrt{y}+\\sqrt{30}}{y-3}', '\\frac{\\sqrt{10}(\\sqrt{y}+\\sqrt{3})}{y-3}', 'simplified-radical', 'correct'],
+  ['\\frac{\\sqrt{2}(\\sqrt{x}+3)}{x-3}', '\\frac{\\sqrt{2}(\\sqrt{x}+\\sqrt{3})}{x-3}', 'simplified-radical', 'incorrect'],
+  // Sampling also decides where the engine merely false-negatived, so a
+  // pasted higher-roots prompt is now recognized as value-equal — `form`,
+  // not a silent (and wrong) `incorrect`. That recognition is what forces
+  // the answerForm onto every radical re-expression exercise.
+  ['\\sqrt[3]{32y^5} - \\sqrt[3]{-108y^8}', '2y\\sqrt[3]{4y^2} + 3y^2\\sqrt[3]{4y^2}', 'simplified-radical', 'form'],
+  // …which in turn needs the like-radicals key to match the source's own
+  // convention: same index and radicand stay SEPARATE terms when their
+  // coefficients are unlike (`2y` vs `3y^2` — the worked answers keep them),
+  // and still combine when the coefficients are like (`8` and `9`, tested
+  // above). A different root index is never a repeat.
+  ['2y\\sqrt[3]{4y^2} + 3y^2\\sqrt[3]{4y^2}', '2y\\sqrt[3]{4y^2} + 3y^2\\sqrt[3]{4y^2}', 'simplified-radical', 'correct'],
+  ['3y^2\\sqrt[3]{4y^2} + 2y\\sqrt[3]{4y^2}', '2y\\sqrt[3]{4y^2} + 3y^2\\sqrt[3]{4y^2}', 'simplified-radical', 'correct'],
+  ['2y\\sqrt[3]{4y^2} + 3y\\sqrt[3]{4y^2}', '2y\\sqrt[3]{4y^2} + 3y^2\\sqrt[3]{4y^2}', 'simplified-radical', 'incorrect'],
+  ['\\sqrt{2}+\\sqrt[3]{2}', '\\sqrt{2}+\\sqrt[3]{2}', 'simplified-radical', 'correct'],
   // no-like-terms / polynomial / distributed — the Simplify and Combine asks.
   // Every one of these prompts canonicalizes to its own answer, so each
   // predicate has to read something the engine has already folded away.

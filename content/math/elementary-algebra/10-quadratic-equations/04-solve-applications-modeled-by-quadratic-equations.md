@@ -452,6 +452,47 @@ the way down at 4.6 seconds.
   hint="Set $48=-16t^2+96t$ and find both positive solutions."
 >}}
 
+## Practice
+
+### Solve applications modeled by Quadratic Equations
+
+{{< fillin
+  question="The product of two consecutive odd numbers is 255. Find the numbers. Enter the two positive numbers, smaller first, separated by a comma."
+  answer="15,17"
+  answerDisplay="$15,17$"
+  hint="Let $n$ be the first odd number and $n+2$ the next; solve $n(n+2)=255$ and keep the positive root."
+>}}
+
+{{< fillin
+  question="A triangle with area 45 square inches has a height that is two less than four times the width. Find the height and width of the triangle. Enter the height and width, separated by a comma."
+  answer="18,5"
+  answerDisplay="$18,5$ inches"
+  hint="Let $w$ be the width and $4w-2$ the height; solve $45=\tfrac12 w(4w-2)$."
+>}}
+
+{{< fillin
+  question="A farmer plans to fence off sections of a rectangular corral. The diagonal distance from one corner of the corral to the opposite corner is five yards longer than the width of the corral. The length of the corral is three times the width. Find the length of the diagonal of the corral. Round to the nearest tenth of a yard."
+  answer="7.3"
+  answerForm="decimal"
+  answerDisplay="$7.3$ yards"
+  hint="Let the width be $w$, the length $3w$, and the diagonal $w+5$; use $w^2+(3w)^2=(w+5)^2$."
+>}}
+
+{{< fillin
+  question="The length of a rectangular driveway is five feet more than three times the width. The area is 350 square feet. Find the length and width of the driveway. Enter the length and width, separated by a comma."
+  answer="35,10"
+  answerDisplay="$35,10$ feet"
+  hint="Let $w$ be the width and $3w+5$ the length; solve $w(3w+5)=350$ and discard the negative root."
+>}}
+
+{{< fillin
+  question="A firework rocket is shot upward at a rate of 640 ft/sec. Use the projectile formula $h=-16t^2+v_0t$ to determine when the height of the firework rocket will be 1,200 feet. Round to the nearest tenth of a second. Enter both times, separated by a comma."
+  answer="2,38"
+  answerMode="unordered"
+  answerDisplay="$2,38$ seconds"
+  hint="Substitute $h=1{,}200$ and $v_0=640$ into $h=-16t^2+v_0t$, solve the quadratic, and round each positive time to the nearest tenth."
+>}}
+
 ## Key terms
 
 **Area of a Triangle** — for a triangle with base $b$ and height $h$, the
@@ -469,4 +510,4 @@ $a^2+b^2=c^2$.
 
 ---
 
-<small>This page is adapted from [Elementary Algebra 2e, Section 10.4](https://openstax.org/books/elementary-algebra-2e/pages/10-4-solve-applications-modeled-by-quadratic-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: reformatted the source for accessible web presentation and converted selected Try It problems into interactive exercises; corrected Try It 10.80 from the source key’s $3.2$ (the width) to $7.2$ (the requested diagonal), Try It 10.81 from 18 feet by 11 feet to 18.1 feet by 11.0 feet as directed to the nearest tenth, and Try It 10.84 from 0.6 and 5.5 seconds to 0.6 and 5.4 seconds; the source exercise set and media links are omitted.</small>
+<small>This page is adapted from [Elementary Algebra 2e, Section 10.4](https://openstax.org/books/elementary-algebra-2e/pages/10-4-solve-applications-modeled-by-quadratic-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: reformatted the source for accessible web presentation and converted selected Try It problems into interactive exercises; corrected Try It 10.80 from the source key’s $3.2$ (the width) to $7.2$ (the requested diagonal), Try It 10.81 from 18 feet by 11 feet to 18.1 feet by 11.0 feet as directed to the nearest tenth, and Try It 10.84 from 0.6 and 5.5 seconds to 0.6 and 5.4 seconds; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>

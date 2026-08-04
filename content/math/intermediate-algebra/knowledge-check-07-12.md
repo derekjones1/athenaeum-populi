@@ -195,11 +195,21 @@ Assume all variables are positive.
 
 Assume all variables are positive.
 
-{{< fillin
+<!-- Multiple choice rather than a fill-in: the answer legitimately keeps
+  $\sqrt{y}$ under the bar, so `simplified-radical` would reject the correct
+  response, and no other token's feedback names this ask — while an untagged
+  fill-in is passable by retyping the prompt (the grader recognizes the
+  value-equality). Same resolution §6 records for the quotient-to-a-power
+  item. -->
+{{< multiplechoice
   question="Simplify: $\tfrac{\sqrt{245xy^{-4}}}{\sqrt{45x^{-4}y^3}}$."
-  answer="\frac{7x^2\sqrt{x}}{3\left|y^3\right|\sqrt{y}}"
-  answerDisplay="$\tfrac{7x^2\sqrt{x}}{3\left|y^3\right|\sqrt{y}}$"
+  answer="$\tfrac{7x^2\sqrt{x}}{3\left|y^3\right|\sqrt{y}}$"
 >}}
+$\tfrac{49x^2\sqrt{x}}{9\left|y^3\right|\sqrt{y}}$
+$\tfrac{7x^2\sqrt{x}}{3\left|y^3\right|\sqrt{y}}$
+$\tfrac{7x^2}{3\left|y^3\right|}$
+$\tfrac{7x\sqrt{x}}{3\left|y\right|\sqrt{y}}$
+{{< /multiplechoice >}}
 
 {{< fillin
   question="Simplify: $\tfrac{3}{2+\sqrt{3}}$."
@@ -888,4 +898,4 @@ neither
   answer="210"
 >}}
 
-<small>This knowledge check is adapted from the Chapter 7–12 [Review Exercises and Practice Tests](https://openstax.org/books/intermediate-algebra-2e/pages/7-review-exercises) of Intermediate Algebra 2e by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked a usable odd-numbered Practice Test question), converted them to interactive exercises with instant feedback, split multipart questions into separate exercises, and rephrased graphing, diagram, word-answer, and interval questions as graphing, value, equation, interval, and multiple-choice questions. All answers come from the book's Answer Key.</small>
+<small>This knowledge check is adapted from the Chapter 7–12 [Review Exercises and Practice Tests](https://openstax.org/books/intermediate-algebra-2e/pages/7-review-exercises) of Intermediate Algebra 2e by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked a usable odd-numbered Practice Test question), converted them to interactive exercises with instant feedback, split multipart questions into separate exercises, and rephrased graphing, diagram, word-answer, interval, and one radical-quotient question as graphing, value, equation, interval, and multiple-choice questions. All answers come from the book's Answer Key.</small>

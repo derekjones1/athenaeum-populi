@@ -387,6 +387,65 @@ $67.5$ miles per hour.
   hint="Substitute $d = 76$ and evaluate $\sqrt{24 \cdot 76} = \sqrt{1824}$, then round to one decimal place."
 >}}
 
+## Practice
+
+### Solve radical equations
+
+{{< fillin
+  question="Solve: $\sqrt{5q+3} - 4 = 0$. (Enter the value of $q$.)"
+  answer="\frac{13}{5}"
+  answerDisplay="$q = \tfrac{13}{5}$"
+  hint="Add $4$ to both sides to isolate the radical, giving $\sqrt{5q+3} = 4$. Square both sides to get $5q + 3 = 16$, then solve for $q$."
+>}}
+
+{{< multiplechoice
+  question="Solve: $\sqrt{2m+1} + 4 = 0$. After isolating the radical, you get $\sqrt{2m+1} = -4$. Which is correct?"
+  hint="A principal square root is never negative. What does an isolated radical equal to a negative number tell you?"
+  answer="No solution"
+>}}
+$m = \tfrac{15}{2}$
+$m = -\tfrac{1}{2}$
+No solution
+$m = 8$
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Solve: $\sqrt{v-10} + 10 = v$. It has two solutions that both check. Enter both, separated by a comma."
+  answer="10,11"
+  answerMode="unordered"
+  answerDisplay="$v = 10$ or $v = 11$"
+  hint="Isolate the radical: $\sqrt{v-10} = v - 10$. Square both sides to get $v - 10 = v^2 - 20v + 100$, so $0 = v^2 - 21v + 110 = (v-10)(v-11)$. Check both solutions in the original equation."
+>}}
+
+{{< fillin
+  question="Solve: $\sqrt{y+4} - y + 2 = 0$. It has two algebraic solutions but only one checks. (Enter the valid value of $y$.)"
+  answer="5"
+  hint="Isolate the radical: $\sqrt{y+4} = y - 2$. Square both sides to get $y + 4 = y^2 - 4y + 4$, so $0 = y^2 - 5y = y(y-5)$. Check $y = 0$ and $y = 5$ in the original equation — only one satisfies it."
+>}}
+
+### Use square roots in applications
+
+{{< fillin
+  question="Vince wants to make a square patio with an area of $130$ square feet. Use $s = \sqrt{A}$ to find the length of each side, rounded to the nearest tenth of a foot."
+  answer="11.4"
+  answerForm="decimal"
+  hint="Substitute $A = 130$ and evaluate $\sqrt{130}$, then round to one decimal place."
+>}}
+
+{{< fillin
+  question="A construction worker dropped a hammer while building the Grand Canyon skywalk, $4{,}000$ feet above the Colorado River. Use $t = \tfrac{\sqrt{h}}{4}$ to find how many seconds it took the hammer to reach the river, rounded to the nearest tenth."
+  answer="15.8"
+  answerForm="decimal"
+  hint="Substitute $h = 4{,}000$ and evaluate $\tfrac{\sqrt{4{,}000}}{4}$, then round to one decimal place."
+>}}
+
+{{< fillin
+  question="An accident investigator measured the skid marks of a vehicle at $117$ feet. Use $s = \sqrt{24d}$ to find the speed of the vehicle before the brakes were applied, rounded to the nearest tenth of a mile per hour."
+  answer="53.0"
+  answerForm="decimal"
+  hint="Substitute $d = 117$ and evaluate $\sqrt{24 \cdot 117} = \sqrt{2{,}808}$, then round to one decimal place."
+>}}
+
 ## Key terms
 
 **radical equation** — an equation in which the variable is in the radicand of
@@ -398,4 +457,4 @@ discarded, which is why every solution of a radical equation must be checked.
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, 9.6 Solve Equations with Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-6-solve-equations-with-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, recast the "How To" procedures as callouts, folded the no-solution and discarded-root cases into subsections, and summarized the seven-step application solutions; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Elementary Algebra 2e, 9.6 Solve Equations with Square Roots](https://openstax.org/books/elementary-algebra-2e/pages/9-6-solve-equations-with-square-roots) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: condensed the worked examples into aligned step tables and prose, recast the "How To" procedures as callouts, folded the no-solution and discarded-root cases into subsections, and summarized the seven-step application solutions; omitted the Be Prepared quiz, Self Check checklist, media links, and unselected end-of-section exercises; adapted selected end-of-section exercises into the section-final interactive Practice block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
