@@ -373,10 +373,7 @@ In the next example, we will use our properties on exponents.
 |  | $(x-3)(x+1)=0$ |
 |  | $x=3,x=-1$ |
 | Check the solutions. |  |
-| $\begin{aligned}
-x=3:&\quad \frac{e^{3^2}}{e^3}=e^{9-3}=e^6=e^{2(3)},\\
-x=-1:&\quad \frac{e^{(-1)^2}}{e^3}=e^{1-3}=e^{-2}=e^{2(-1)}.
-\end{aligned}$ |  |
+| $\begin{aligned} x=3:&\quad \frac{e^{3^2}}{e^3}=e^{9-3}=e^6=e^{2(3)},\\ x=-1:&\quad \frac{e^{(-1)^2}}{e^3}=e^{1-3}=e^{-2}=e^{2(-1)}. \end{aligned}$ |  |
 
 {{< fillin
   question="Solve $\tfrac{e^{x^2}}{e^x}=e^2$. Enter the solution set."

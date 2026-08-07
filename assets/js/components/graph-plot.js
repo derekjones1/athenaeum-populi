@@ -9,11 +9,16 @@
  */
 import { graphplotEngineUrl } from '@params';
 import { findFreeGridPoint, parseGraphPlotConfig } from '../lib/graph-plot-config.mjs';
+// The one U+2212 formatter. This file used to carry its own copy, so a change
+// to the shared one silently missed the point-handle labels.
+import { mathMinus as fmt } from '../lib/graph-core.mjs';
 
 const SVGNS = 'http://www.w3.org/2000/svg';
 const camelToKebab = (s) => s.replace(/[A-Z]/g, (m) => '-' + m.toLowerCase());
-const fmt = (n) => String(n).replace(/-/g, '−');
 
+// The `--ap-*` fallback hexes below duplicate assets/css/custom.css, which is
+// the source of truth for the palette. They exist only for the moment before
+// the stylesheet applies; keep them in step with custom.css when it changes.
 const COLOR = {
   correct: 'var(--ap-success, #1a7f37)',
   incorrect: 'var(--ap-error, #b42318)',
@@ -34,7 +39,8 @@ const NEED_MORE = {
   system: 'Place four points — two for each line.',
   quadratic: 'Place the vertex, then a second point with a different x-value.',
 };
-let hintSequence = 0;
+// One counter for every generated id in this component (instructions, hints).
+let idSequence = 0;
 
 class GraphPlotElement extends HTMLElement {
   connectedCallback() {
@@ -75,9 +81,16 @@ class GraphPlotElement extends HTMLElement {
     const instr = document.createElement('p');
     instr.className = 'ap-graphplot-instructions';
     instr.textContent = INSTRUCTIONS[this.mode];
+    // The same sentence was also concatenated into the SVG's aria-label, so a
+    // screen reader read the instructions twice — once as visible prose and
+    // again as part of the figure's name. Reference the prose instead.
+    idSequence += 1;
+    instr.id = `ap-graphplot-instructions-${idSequence}`;
+    this._instructionsId = instr.id;
 
     this.svg = document.createElementNS(SVGNS, 'svg');
     this.svg.setAttribute('role', 'application');
+    this.svg.setAttribute('aria-describedby', this._instructionsId);
     this.svg.classList.add('ap-graphplot-svg');
     this.svg.style.touchAction = 'none';
     // Placeholder height until the engine renders the real grid.
@@ -100,7 +113,7 @@ class GraphPlotElement extends HTMLElement {
     this.wrap.append(instr, this.svg, row, this.feedback);
 
     if (this.hintHTML) {
-      const hintId = `ap-graphplot-hint-${++hintSequence}`;
+      const hintId = `ap-graphplot-hint-${++idSequence}`;
       const hintBtn = document.createElement('button');
       hintBtn.type = 'button';
       hintBtn.className = 'ap-fillin-hint-toggle';
@@ -198,9 +211,10 @@ class GraphPlotElement extends HTMLElement {
 
   _render(focusIndex = null) {
     const { lines, quadratics } = this._objects();
+    // `this.grid` is the EFFECTIVE config parseGraphPlotConfig returned —
+    // render defaults and resolved bounds included. Do not reintroduce inline
+    // defaults here: what is validated has to be what is rendered.
     this.g = this.buildGraph({
-      xMin: this.xMin, xMax: this.xMax, yMin: this.yMin, yMax: this.yMax,
-      tickLabels: true, tickStep: 2,
       ...this.grid,
       ariaLabel: this.ariaLabel,
       points: this.pts.map((at, i) => ({
@@ -214,8 +228,10 @@ class GraphPlotElement extends HTMLElement {
     this.svg.style.maxWidth = g.maxWidth + 'px';
     this.svg.style.minHeight = '';
     this.svg.style.cursor = this.done ? 'default' : 'crosshair';
+    // The mode instructions live in the visible <p> this SVG is described by;
+    // the name is the figure plus the interaction affordance only.
     this.svg.setAttribute('aria-label',
-      `${this.ariaLabel} ${INSTRUCTIONS[this.mode]} Click or tap to place points; drag to adjust.`);
+      `${this.ariaLabel} Click or tap to place points; drag to adjust.`);
 
     // rebuild children
     while (this.svg.firstChild) this.svg.removeChild(this.svg.firstChild);

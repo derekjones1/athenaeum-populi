@@ -583,6 +583,140 @@ $5$ days. After $5$ days, there are $125$ unread emails in the account.
   hint="Substitute $14$ for $t$ and simplify."
 >}}
 
+## Practice
+
+### Find the domain and range of a relation
+
+{{< fillin
+  question="For the relation $\{(1,4),(2,8),(3,12),(4,16),(5,20)\}$, enter the domain as a comma-separated list."
+  answer="1,2,3,4,5"
+  answerMode="unordered"
+  answerDisplay="$1,2,3,4,5$"
+  hint="The domain is the set of all $x$-values."
+>}}
+
+{{< fillin
+  question="For the relation $\{(1,4),(2,8),(3,12),(4,16),(5,20)\}$, enter the range as a comma-separated list."
+  answer="4,8,12,16,20"
+  answerMode="unordered"
+  answerDisplay="$4,8,12,16,20$"
+  hint="The range is the set of all $y$-values."
+>}}
+
+{{< fillin
+  question="For the relation $\{(1,7),(5,3),(7,9),(-2,-3),(-2,8)\}$, enter the domain as a comma-separated list."
+  answer="1,5,7,-2"
+  answerMode="unordered"
+  answerDisplay="$1,5,7,-2$"
+  hint="List each distinct $x$-value only once, even though $-2$ appears twice in the relation."
+>}}
+
+{{< fillin
+  question="For the relation $\{(1,7),(5,3),(7,9),(-2,-3),(-2,8)\}$, enter the range as a comma-separated list."
+  answer="7,3,9,-3,8"
+  answerMode="unordered"
+  answerDisplay="$7,3,9,-3,8$"
+  hint="The range is the set of all $y$-values."
+>}}
+
+### Determine if a relation is a function
+
+{{< multiplechoice
+  question="Is the relation $\{(-3,9),(-2,4),(-1,1),(0,0),(1,1),(2,4),(3,9)\}$ a function?"
+  answer="Yes"
+  hint="A relation is a function only when every input is paired with exactly one output."
+>}}
+Yes
+No
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="For the relation $\{(-3,9),(-2,4),(-1,1),(0,0),(1,1),(2,4),(3,9)\}$, enter the domain as a comma-separated list."
+  answer="-3,-2,-1,0,1,2,3"
+  answerMode="unordered"
+  answerDisplay="$-3,-2,-1,0,1,2,3$"
+  hint="The domain is the set of all $x$-values."
+>}}
+
+{{< fillin
+  question="For the relation $\{(-3,9),(-2,4),(-1,1),(0,0),(1,1),(2,4),(3,9)\}$, enter the range as a comma-separated list."
+  answer="9,4,1,0"
+  answerMode="unordered"
+  answerDisplay="$9,4,1,0$"
+  hint="List each distinct $y$-value only once."
+>}}
+
+{{< multiplechoice
+  question="Determine whether $2x+y=-3$ defines $y$ as a function of $x$."
+  answer="Yes"
+  hint="Solve for $y$. A single output for each allowed $x$ means the equation defines a function."
+>}}
+Yes
+No
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether $y=x^2$ defines $y$ as a function of $x$."
+  answer="Yes"
+  hint="Solve for $y$. A single output for each allowed $x$ means the equation defines a function."
+>}}
+Yes
+No
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether $x+y^2=-5$ defines $y$ as a function of $x$."
+  answer="No"
+  hint="Solve for $y$. A single output for each allowed $x$ means the equation defines a function."
+>}}
+Yes
+No
+{{< /multiplechoice >}}
+
+### Find the value of a function
+
+{{< fillin
+  question="For $f(x)=5x-3$, evaluate $f(2)$."
+  answer="7"
+  hint="Substitute $2$ for $x$, then simplify."
+>}}
+
+{{< fillin
+  question="For $f(x)=5x-3$, evaluate $f(-1)$."
+  answer="-8"
+  hint="Substitute $-1$ for $x$, then simplify."
+>}}
+
+{{< fillin
+  question="For $f(x)=5x-3$, evaluate $f(a)$."
+  answer="5a-3"
+  answerDisplay="$5a-3$"
+  hint="Substitute $a$ for every $x$."
+>}}
+
+{{< multiplechoice
+  question="The daily cost to a printing company to print a book is modeled by $C(x)=3.25x+1{,}500$, where $C$ is the total daily cost in dollars and $x$ is the number of books printed. Which variable is the independent variable?"
+  answer="x"
+  hint="The independent variable's value is chosen freely; the dependent variable's value is determined by it."
+>}}
+x
+C
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="For the printing company's cost function $C(x)=3.25x+1{,}500$, find $C(0)$."
+  answer="1500"
+  answerDisplay="$1{,}500$"
+  hint="Substitute $0$ for $x$, then simplify."
+>}}
+
+{{< fillin
+  question="For the printing company's cost function $C(x)=3.25x+1{,}500$, find $C(1{,}000)$."
+  answer="4750"
+  answerDisplay="$4{,}750$"
+  hint="Substitute $1000$ for $x$, then simplify."
+>}}
+
 ## Key terms
 
 **relation** — any set of ordered pairs, $(x,y)$. **domain of a relation** —
@@ -598,4 +732,4 @@ whose value depends on the independent variable.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 3.5: Relations and Functions](https://openstax.org/books/intermediate-algebra-2e/pages/3-5-relations-and-functions) by Lynn Marecek, Andrea Honeycutt Mathis, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the coordinate-plane figure as an accessible interactive graph; represented mapping figures as accessible tables or complete prose; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 3.5: Relations and Functions](https://openstax.org/books/intermediate-algebra-2e/pages/3-5-relations-and-functions) by Lynn Marecek, Andrea Honeycutt Mathis, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the coordinate-plane figure as an accessible interactive graph; represented mapping figures as accessible tables or complete prose; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into a section-final interactive Practice block.</small>

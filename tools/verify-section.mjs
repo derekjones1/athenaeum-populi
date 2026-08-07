@@ -20,29 +20,29 @@ import katex from 'katex';
 import { checkAnswer } from '../assets/js/lib/check-answer.mjs';
 import { parseGraphPlotConfig } from '../assets/js/lib/graph-plot-config.mjs';
 import { lintHugo } from './lints.mjs';
+import { hasUnpairedDollar, mathSpans, shortcodes } from './lib-content.mjs';
 
 const files = process.argv.slice(2);
 if (!files.length) { console.error('usage: node tools/verify-section.mjs <file.md> [...]'); process.exit(2); }
 
 let fail = 0, warn = 0;
-const bad = (m) => { fail++; console.log(`  ✗ ${m}`); };
-const iffy = (m) => { warn++; console.log(`  ⚠ ${m}`); };
+// Failures go to stderr, like every other verifier in tools/: a caller that
+// pipes stdout somewhere (or discards it) must still see why the run failed.
+// `verify-all` relays both streams, so nothing downstream changes.
+const bad = (m) => { fail++; console.error(`  ✗ ${m}`); };
+const iffy = (m) => { warn++; console.error(`  ⚠ ${m}`); };
 
-const NUL = '\0';
 function propMath(where, name, val) {
   if (val == null) return;
-  const cleaned = val.replaceAll('\\$', NUL);
-  if (cleaned.replace(/\$([^$]+)\$/g, ' ').includes('$')) {
+  if (hasUnpairedDollar(val)) {
     bad(`${where}: ${name} has an unpaired bare "$" — escape money as \\$: ${JSON.stringify(val.slice(0, 70))}`);
   }
-  for (const m of cleaned.matchAll(/\$([^$]+)\$/g)) {
-    const run = m[1].replaceAll(NUL, '\\$');
-    try { katex.renderToString(run, { throwOnError: true, strict: 'ignore' }); }
-    catch (e) { bad(`${where}: ${name} math "$${run.slice(0, 40)}$" fails KaTeX — ${e.message.slice(0, 60)}`); }
+  // A shortcode param is one logical line, so a span may cross a newline.
+  for (const { tex } of mathSpans(val, { allowNewlines: true })) {
+    try { katex.renderToString(tex, { throwOnError: true, strict: 'ignore' }); }
+    catch (e) { bad(`${where}: ${name} math "$${tex.slice(0, 40)}$" fails KaTeX — ${e.message.slice(0, 60)}`); }
   }
 }
-
-const params = (body) => { const p = {}; for (const m of body.matchAll(/(\w+)="([^"]*)"/g)) p[m[1]] = m[2]; return p; };
 
 for (const f of files) {
   console.log(`\n== ${f}`);
@@ -56,19 +56,17 @@ for (const f of files) {
   errors.forEach(bad); warnings.forEach(iffy);
 
   // 2. body math
-  let body = src.replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ').replace(/<svg[\s\S]*?<\/svg>/g, ' ').replaceAll('\\$', NUL);
-  for (const m of body.matchAll(/\$\$([\s\S]+?)\$\$/g)) {
-    try { katex.renderToString(m[1].replaceAll(NUL, '\\$'), { displayMode: true, throwOnError: true, strict: 'ignore' }); }
-    catch (e) { bad(`display math fails KaTeX — ${e.message.slice(0, 70)}`); }
-  }
-  for (const m of body.replace(/\$\$[\s\S]+?\$\$/g, ' ').matchAll(/\$([^$\n]+?)\$/g)) {
-    try { katex.renderToString(m[1].replaceAll(NUL, '\\$'), { throwOnError: true, strict: 'ignore' }); }
-    catch (e) { bad(`inline math "$${m[1].slice(0, 40)}$" fails KaTeX — ${e.message.slice(0, 60)}`); }
+  for (const { tex, display } of mathSpans(src, { maskCode: true })) {
+    try { katex.renderToString(tex, { displayMode: display, throwOnError: true, strict: 'ignore' }); }
+    catch (e) {
+      bad(display
+        ? `display math fails KaTeX — ${e.message.slice(0, 70)}`
+        : `inline math "$${tex.slice(0, 40)}$" fails KaTeX — ${e.message.slice(0, 60)}`);
+    }
   }
 
   // 3 + 4. fillin answers + prop math
-  for (const m of interactiveSrc.matchAll(/\{\{<\s*fillin\b([\s\S]*?)>\}\}/g)) {
-    const p = params(m[1]);
+  for (const { params: p } of shortcodes(interactiveSrc, 'fillin')) {
     const where = `fillin (${(p.question || '?').slice(0, 40)}…)`;
     if (p.answer != null) {
       let status;
@@ -87,24 +85,29 @@ for (const f of files) {
   }
 
   // 5. multiplechoice text answers
-  for (const m of interactiveSrc.matchAll(/\{\{<\s*multiplechoice\b([\s\S]*?)>\}\}([\s\S]*?)\{\{<\s*\/multiplechoice\s*>\}\}/g)) {
-    const p = params(m[1]);
+  for (const { params: p, inner, closed } of shortcodes(interactiveSrc, 'multiplechoice')) {
+    if (!closed) continue; // the lint reports the unclosed tag by name
     propMath('multiplechoice', 'question', p.question);
     propMath('multiplechoice', 'hint', p.hint);
     if (p.mode !== 'graph' && p.answer != null) {
-      const opts = m[2].split('\n').map((s) => s.trim()).filter(Boolean);
+      const opts = inner.split('\n').map((s) => s.trim()).filter(Boolean);
       if (opts.length && !opts.includes(p.answer)) bad(`multiplechoice: answer ${JSON.stringify(p.answer)} is not one of the options`);
     }
   }
 
   // 6. graphplot configuration follows the same schema used in the browser.
-  for (const m of interactiveSrc.matchAll(/\{\{<\s*graphplot\b([\s\S]*?)>\}\}([\s\S]*?)\{\{<\s*\/graphplot\s*>\}\}/g)) {
-    const p = params(m[1]);
-    try { parseGraphPlotConfig(m[2].trim(), p.snap || 1); }
+  for (const { params: p, inner, closed } of shortcodes(interactiveSrc, 'graphplot')) {
+    if (!closed) continue; // the lint reports the unclosed tag by name
+    try { parseGraphPlotConfig(inner.trim(), p.snap || 1); }
     catch (e) { bad(`graphplot: ${e.message}`); }
     for (const name of ['question', 'hint', 'answerDisplay']) propMath('graphplot', name, p[name]);
   }
 }
 
-console.log(`\n${fail === 0 ? 'ALL CLEAN' : fail + ' problem(s)'}${warn ? `, ${warn} warning(s)` : ''}.`);
-process.exit(fail ? 1 : 0);
+if (fail) {
+  console.error(`\n✖ ${fail} problem(s)${warn ? `, ${warn} warning(s)` : ''}.`);
+  process.exit(1);
+}
+// A success banner, so a passing run says so in the same shape as its siblings
+// rather than ending in silence a reader has to interpret.
+console.log(`\n✓ ${files.length} section(s) verified${warn ? `, ${warn} warning(s)` : ''}.`);

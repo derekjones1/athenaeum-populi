@@ -526,8 +526,70 @@ $$
   hint="The string is the hypotenuse. Solve $15^2+b^2=17^2$."
 >}}
 
+## Practice
+
+### Solve a formula for a specific variable
+
+{{< fillin
+  question="Solve the formula $C=\pi d$ for $d$."
+  answer="\frac{C}{\pi}"
+  answerDisplay="$d = \tfrac{C}{\pi}$"
+  hint="Divide both sides by $\pi$."
+>}}
+
+{{< fillin
+  question="Solve the formula $V=LWH$ for $L$."
+  answer="\frac{V}{WH}"
+  answerDisplay="$L = \tfrac{V}{WH}$"
+  hint="Divide both sides by $WH$."
+>}}
+
+{{< fillin
+  question="Solve the formula $A=\tfrac{1}{2}pl+B$ for $p$."
+  answer="\frac{2A-2B}{l}"
+  answerDisplay="$p = \tfrac{2A-2B}{l}$"
+  hint="Subtract $B$ from both sides, multiply by 2, and then divide by $l$."
+>}}
+
+{{< fillin
+  question="Solve the formula $4x+3y=7$ for $y$."
+  answer="\frac{7-4x}{3}"
+  answerDisplay="$y = \tfrac{7-4x}{3}$"
+  hint="Subtract $4x$ from both sides, then divide by 3."
+>}}
+
+### Use formulas to solve geometry applications
+
+{{< fillin
+  question="A triangular flag has an area of 0.75 square feet and a height of 1.5 feet. What is its base?"
+  answer="1"
+  answerDisplay="1 foot"
+  hint="Use $A=\tfrac{1}{2}bh$ and substitute $A=0.75$ and $h=1.5$."
+>}}
+
+{{< fillin
+  question="The two smaller angles of a right triangle have equal measures. Find the measures of all three angles, separated by commas from least to greatest."
+  answer="45,45,90"
+  answerDisplay="$45^\circ, 45^\circ, 90^\circ$"
+  hint="A right angle is $90^\circ$; the other two angles are equal and sum to $90^\circ$."
+>}}
+
+{{< fillin
+  question="The width of a rectangle is 0.7 meters less than the length. The perimeter of the rectangle is 52.6 meters. Find the length and width, separated by commas."
+  answer="13.5,12.8"
+  answerDisplay="13.5 meters, 12.8 meters"
+  hint="Let $L$ be the length and $W=L-0.7$. Substitute into $52.6=2L+2W$."
+>}}
+
+{{< fillin
+  question="A 13-foot string of lights is attached to the top of a 12-foot pole. How far from the base of the pole should the end of the string be anchored?"
+  answer="5"
+  answerDisplay="5 feet"
+  hint="The string of lights is the hypotenuse. Solve $12^2+d^2=13^2$."
+>}}
+
 **Key terms:** Pythagorean Theorem.
 
 ---
 
-<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 2.3](https://openstax.org/books/intermediate-algebra-2e/pages/2-3-solve-a-formula-for-a-specific-variable), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/). Changes: adapted the section to this site's format and converted Try It exercises into interactive checks.</small>
+<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 2.3](https://openstax.org/books/intermediate-algebra-2e/pages/2-3-solve-a-formula-for-a-specific-variable), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/). Changes: adapted the section to this site's format, converted Try It exercises into interactive checks, and added a section-final Practice block adapted from selected end-of-section exercises.</small>

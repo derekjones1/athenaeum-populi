@@ -10,9 +10,9 @@ weight: 6
 {{< callout type="info" >}}
 **By the end of this section, you will be able to:**
 
-- Solve compound inequalities with “and
-- ” solve compound inequalities with “or
-- ” and solve applications with compound inequalities
+- Solve compound inequalities with “and”
+- Solve compound inequalities with “or”
+- Solve applications with compound inequalities
 {{< /callout >}}
 
 ## Solve compound inequalities with “and”
@@ -548,10 +548,77 @@ billing range.
   hint="Write $31.32\leq24.72+1.32x\leq52.12$, then isolate $x$ in all three parts."
 >}}
 
+## Practice
+
+### Solve compound inequalities with “and”
+
+{{< fillin
+  question="Solve the compound inequality. Write the solution in interval notation: $x\le4$ and $x>-2$."
+  answer="(-2,4]"
+  answerDisplay="$(-2,4]$"
+  hint="Graph each inequality, then keep only the numbers shaded on both graphs."
+>}}
+
+{{< fillin
+  question="Solve the compound inequality. Write the solution in interval notation: $-3<2x-5\le1$."
+  answer="(1,3]"
+  answerDisplay="$(1,3]$"
+  hint="Add $5$ to all three parts of the double inequality, then divide each part by $2$."
+>}}
+
+{{< multiplechoice
+  question="Solve the compound inequality. Which describes the solution? $\tfrac34x-5\ge-2$ and $-3(x+1)\ge6$"
+  answer="no solution"
+  hint="Solve each inequality separately. If the two resulting intervals never overlap, there is no solution."
+>}}
+$[4,\infty)$
+$(-\infty,-3]$
+no solution
+{{< /multiplechoice >}}
+
+### Solve compound inequalities with “or”
+
+{{< fillin
+  question="Solve the compound inequality. Write the solution in interval notation: $x\le-4$ or $x>-3$."
+  answer="(-\infty,-4]\cup(-3,\infty)"
+  answerDisplay="$(-\infty,-4]\cup(-3,\infty)$"
+  hint="Graph each inequality, then combine every number shaded on either graph."
+>}}
+
+{{< fillin
+  question="Solve the compound inequality. Write the solution in interval notation: $4-3x\le-2$ or $2x-1\le-5$."
+  answer="(-\infty,-2]\cup[2,\infty)"
+  answerDisplay="$(-\infty,-2]\cup[2,\infty)$"
+  hint="Solve each inequality, remembering to reverse the inequality when dividing by a negative number, then take the union of the two solution sets."
+>}}
+
+{{< fillin
+  question="Solve the compound inequality. Write the solution in interval notation: $3(2x-3)<-5$ or $4x-1>3$."
+  answer="(-\infty,\frac{2}{3})\cup(1,\infty)"
+  answerDisplay="$(-\infty,\tfrac{2}{3})\cup(1,\infty)$"
+  hint="Distribute and solve each inequality separately, then take the union of the two solution sets."
+>}}
+
+### Solve applications with compound inequalities
+
+{{< fillin
+  question="Gregory is thinking of a number and wants his sister Lauren to guess it. His first clue is that six less than twice his number is between four and forty-two. Enter the least and greatest numbers Gregory might be thinking of, separated by a comma."
+  answer="5,24"
+  answerDisplay="$5,24$"
+  hint="Write $4\le2n-6\le42$, then isolate $n$ in all three parts."
+>}}
+
+{{< fillin
+  question="Elouise is creating a rectangular garden in her back yard. The length of the garden is 12 feet. The perimeter of the garden must be at least 36 feet and no more than 48 feet. Enter the least and greatest width of the garden in feet, separated by a comma."
+  answer="6,12"
+  answerDisplay="$6,12$ feet"
+  hint="Write $36\le2(12+w)\le48$, then isolate $w$ in all three parts."
+>}}
+
 **Key terms.** A **compound inequality** is made up of two inequalities
 connected by “and” or “or.” A **double inequality** is a compound inequality
 such as $a<x<b$, equivalent to $a<x$ and $x<b$.
 
 ---
 
-<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 2.6](https://openstax.org/books/intermediate-algebra-2e/pages/2-6-solve-compound-inequalities), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/). Changes: adapted the text and examples for web presentation and converted selected Try It exercises to interactive answer checks.</small>
+<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 2.6](https://openstax.org/books/intermediate-algebra-2e/pages/2-6-solve-compound-inequalities), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/). Changes: adapted the text and examples for web presentation, converted selected Try It exercises to interactive answer checks, and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>

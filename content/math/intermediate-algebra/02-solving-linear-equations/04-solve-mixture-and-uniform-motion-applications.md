@@ -831,10 +831,111 @@ $$
   hint="He rode $1.25$ hours on the flat street and $0.5$ hour uphill."
 >}}
 
+## Practice
+
+### Solve coin word problems
+
+{{< fillin
+  question="Michaela has \$2.05 in dimes and nickels in her change purse. She has seven more dimes than nickels. How many nickels and how many dimes does she have? Enter the number of nickels and the number of dimes, separated by a comma."
+  answer="9, 16"
+  answerDisplay="$9$ nickels and $16$ dimes"
+  hint="Let $n$ be the number of nickels, so the number of dimes is $n+7$. Use $0.05n+0.10(n+7)=2.05$."
+>}}
+
+{{< fillin
+  question="A cash drawer has \$125 total in five-dollar bills and ten-dollar bills. The number of ten-dollar bills is twice the number of five-dollar bills. How many five-dollar bills and how many ten-dollar bills are in the drawer? Enter the number of five-dollar bills and the number of ten-dollar bills, separated by a comma."
+  answer="5, 10"
+  answerDisplay="$5$ five-dollar bills and $10$ ten-dollar bills"
+  hint="Let $f$ be the number of five-dollar bills, so the number of ten-dollar bills is $2f$. Use $5f+10(2f)=125$."
+>}}
+
+{{< fillin
+  question="Chi has \$11.30 in dimes and quarters. The number of dimes is three more than three times the number of quarters. How many quarters and how many dimes does Chi have? Enter the number of quarters and the number of dimes, separated by a comma."
+  answer="20, 63"
+  answerDisplay="$20$ quarters and $63$ dimes"
+  hint="Let $q$ be the number of quarters, so the number of dimes is $3q+3$. Use $0.25q+0.10(3q+3)=11.30$."
+>}}
+
+### Solve ticket and stamp word problems
+
+{{< fillin
+  question="The first day of a water polo tournament, the total value of tickets sold was \$17,610. One-day passes sold for \$20 and tournament passes sold for \$30. The number of tournament passes sold was 37 more than the number of day passes sold. How many day passes and how many tournament passes were sold? Enter the number of day passes and the number of tournament passes, separated by a comma."
+  answer="330, 367"
+  answerDisplay="$330$ day passes and $367$ tournament passes"
+  hint="Let $d$ be the number of day passes, so the number of tournament passes is $d+37$. Use $20d+30(d+37)=17{,}610$."
+>}}
+
+{{< fillin
+  question="Julie went to the post office and bought some \$0.41 stamps and some \$0.26 postcards. She spent \$51.40 in total. The number of stamps was 20 more than twice the number of postcards. How many postcards and how many stamps did she buy? Enter the number of postcards and the number of stamps, separated by a comma."
+  answer="40, 100"
+  answerDisplay="$40$ postcards and $100$ stamps"
+  hint="Let $p$ be the number of postcards, so the number of stamps is $2p+20$. Use $0.41(2p+20)+0.26p=51.40$."
+>}}
+
+{{< fillin
+  question="The ice rink sold 95 tickets for the afternoon skating session, for a total of \$828. General admission tickets cost \$10 each and youth tickets cost \$8 each. How many general admission tickets and how many youth tickets were sold? Enter the number of general admission tickets and the number of youth tickets, separated by a comma."
+  answer="34, 61"
+  answerDisplay="$34$ general admission tickets and $61$ youth tickets"
+  hint="Let $g$ be the number of general admission tickets, so the number of youth tickets is $95-g$. Use $10g+8(95-g)=828$."
+>}}
+
+### Solve mixture word problems
+
+{{< fillin
+  question="Macario is making 12 pounds of nut mixture with macadamia nuts and almonds. Macadamia nuts cost \$9 per pound and almonds cost \$5.25 per pound. How many pounds of macadamia nuts and how many pounds of almonds should Macario use for the mixture to cost \$6.50 per pound? Enter the pounds of macadamia nuts and the pounds of almonds, separated by a comma."
+  answer="4, 8"
+  answerDisplay="$4$ pounds of macadamia nuts and $8$ pounds of almonds"
+  hint="Let $m$ be the pounds of macadamia nuts, so the pounds of almonds is $12-m$. Use $9m+5.25(12-m)=6.50(12)$."
+>}}
+
+{{< fillin
+  question="Riley is planning to plant a lawn and needs nine pounds of grass seed. He wants to mix Bermuda seed, which costs \$4.80 per pound, with Fescue seed, which costs \$3.50 per pound, so that the overall cost is \$4.02 per pound. How many pounds of Bermuda seed and how many pounds of Fescue seed should he buy? Enter the pounds of Bermuda seed and the pounds of Fescue seed, separated by a comma."
+  answer="3.6, 5.4"
+  answerDisplay="$3.6$ pounds of Bermuda seed and $5.4$ pounds of Fescue seed"
+  hint="Let $b$ be the pounds of Bermuda seed, so the pounds of Fescue seed is $9-b$. Use $4.80b+3.50(9-b)=4.02(9)$."
+>}}
+
+{{< fillin
+  question="Vern sold his 1964 Ford Mustang for \$55,000 and wants to invest the money to earn 5.8% interest per year. He will put some of the money into Fund A, which earns 3% per year, and the rest into Fund B, which earns 10% per year. How much should he invest in each fund, in dollars, to earn 5.8% interest per year on the total amount? Enter the amount invested in Fund A and the amount invested in Fund B, separated by a comma."
+  answer="33000, 22000"
+  answerDisplay="\$33,000 in Fund A and \$22,000 in Fund B"
+  hint="Let $a$ be the amount invested in Fund A, so the amount in Fund B is $55{,}000-a$. Use $0.03a+0.10(55{,}000-a)=0.058(55{,}000)$."
+>}}
+
+### Solve uniform motion applications
+
+{{< fillin
+  question="Kathy and Cheryl are walking in a fundraiser. Kathy completes the course in 4.8 hours and Cheryl completes the course in eight hours. Kathy walks two miles per hour faster than Cheryl. Find Kathy’s speed and Cheryl’s speed, in miles per hour. Enter Kathy’s speed and Cheryl’s speed, separated by a comma."
+  answer="5, 3"
+  answerDisplay="$5$ mph and $3$ mph"
+  hint="They cover the same distance. If Cheryl's speed is $r$, set $8r=4.8(r+2)$."
+>}}
+
+{{< fillin
+  question="Matt and Chris leave their uncle’s house in Phoenix at the same time. Matt drives west at 76 miles per hour and Chris drives east at 82 miles per hour. How many hours will it take them to be 632 miles apart?"
+  answer="4"
+  answerDisplay="$4$ hours"
+  hint="Their distances add to the total gap between them. Use $76t+82t=632$."
+>}}
+
+{{< fillin
+  question="Julian rides his bike uphill for 45 minutes, then turns around and rides back downhill, taking 15 minutes to return to where he started. His uphill speed is 3.2 miles per hour slower than his downhill speed. Find Julian’s uphill speed and his downhill speed, in miles per hour. Enter the uphill speed and the downhill speed, separated by a comma."
+  answer="1.6, 4.8"
+  answerDisplay="$1.6$ mph uphill and $4.8$ mph downhill"
+  hint="Convert both times to hours ($\tfrac34$ and $\tfrac14$) and set the two distances equal: $\tfrac34u=\tfrac14(u+3.2)$."
+>}}
+
+{{< fillin
+  question="Lizette is training for a marathon. At 7:00 she left her house and ran until 8:15, then walked until 11:15. She covered a total distance of 19 miles. Her running speed was five miles per hour faster than her walking speed. Find Lizette’s running speed and her walking speed, in miles per hour. Enter the running speed and the walking speed, separated by a comma."
+  answer="8, 3"
+  answerDisplay="$8$ mph and $3$ mph"
+  hint="She ran $1.25$ hours and walked $3$ hours. If her walking speed is $w$, use $1.25(w+5)+3w=19$."
+>}}
+
 **Key terms.** A **uniform motion application** is a problem in which the
 speed of an object is constant. The **total value of coins** is modeled by
 $\textit{number}\cdot\textit{value}=\textit{total value}$.
 
 ---
 
-<small>This page adapts [Intermediate Algebra 2e, Section 2.4](https://openstax.org/books/intermediate-algebra-2e/pages/2-4-solve-mixture-and-uniform-motion-applications), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the section to this site’s interactive format and converted Try It exercises to interactive questions.</small>
+<small>This page adapts [Intermediate Algebra 2e, Section 2.4](https://openstax.org/books/intermediate-algebra-2e/pages/2-4-solve-mixture-and-uniform-motion-applications), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the section to this site’s interactive format, converted Try It exercises to interactive questions, and added a Practice block adapting selected end-of-section exercises confirmed against the printed Answer Key.</small>

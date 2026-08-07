@@ -1,3 +1,4 @@
+import test from 'node:test';
 import assert from 'node:assert/strict';
 import { lintHugo } from './lints.mjs';
 import { checkAnswer } from '../assets/js/lib/check-answer.mjs';
@@ -27,13 +28,15 @@ const imageCases = [
   '- item\n    ![plot](/images/plot.png)',
 ];
 
-for (const source of imageCases) {
-  const { errors } = lintHugo(source, 'content/test.md');
-  assert(
-    errors.some((error) => error.includes('file-backed image')),
-    `expected image lint for ${JSON.stringify(source)}, got ${JSON.stringify(errors)}`,
-  );
-}
+test('a file-backed image is rejected in every embedding form', () => {
+  for (const source of imageCases) {
+    const { errors } = lintHugo(source, 'content/test.md');
+    assert(
+      errors.some((error) => error.includes('file-backed image')),
+      `expected image lint for ${JSON.stringify(source)}, got ${JSON.stringify(errors)}`,
+    );
+  }
+});
 
 const allowedCases = [
   '`![documentation example](/images/example.png)`',
@@ -52,27 +55,31 @@ const allowedCases = [
   '<svg role="img" aria-label="A reusable curve"><use href="#curve"/></svg>',
 ];
 
-for (const source of allowedCases) {
-  const { errors } = lintHugo(source, 'content/test.md');
-  assert.equal(errors.length, 0, `unexpected lint for ${JSON.stringify(source)}: ${errors.join('; ')}`);
-}
+test('documentation examples and accessible inline SVG are not embeddings', () => {
+  for (const source of allowedCases) {
+    const { errors } = lintHugo(source, 'content/test.md');
+    assert.equal(errors.length, 0, `unexpected lint for ${JSON.stringify(source)}: ${errors.join('; ')}`);
+  }
+});
 
-for (const source of [
-  '<svg></svg>',
-  '<svg role="img"></svg>',
-  '<svg aria-label="A curve"></svg>',
-  '<svg data-role="img" data-aria-label="A curve"></svg>',
-  '<svg role="img" aria-label="   "></svg>',
-  '<svg role="img" aria-labelledby="missing"><title id="title">A curve</title></svg>',
-  '<svg role="img" aria-labelledby="title"><title id="title"></title><path d="M0 0h1"/></svg>',
-  '<svg role="img" aria-labelledby="curve"><path id="curve" d="M0 0h1"/></svg>',
-]) {
-  const { errors } = lintHugo(source, 'content/test.md');
-  assert(
-    errors.some((error) => error.includes('inline SVG needs')),
-    `expected SVG accessibility lint for ${JSON.stringify(source)}`,
-  );
-}
+test('inline SVG needs a non-empty accessible name', () => {
+  for (const source of [
+    '<svg></svg>',
+    '<svg role="img"></svg>',
+    '<svg aria-label="A curve"></svg>',
+    '<svg data-role="img" data-aria-label="A curve"></svg>',
+    '<svg role="img" aria-label="   "></svg>',
+    '<svg role="img" aria-labelledby="missing"><title id="title">A curve</title></svg>',
+    '<svg role="img" aria-labelledby="title"><title id="title"></title><path d="M0 0h1"/></svg>',
+    '<svg role="img" aria-labelledby="curve"><path id="curve" d="M0 0h1"/></svg>',
+  ]) {
+    const { errors } = lintHugo(source, 'content/test.md');
+    assert(
+      errors.some((error) => error.includes('inline SVG needs')),
+      `expected SVG accessibility lint for ${JSON.stringify(source)}`,
+    );
+  }
+});
 
 const fillin = (question) => `{{< fillin question="${question}" answer="1" hint="Use the definition." >}}`;
 const multiplechoice = (question) => `{{< multiplechoice question="${question}" answer="yes" hint="Test each choice." >}}\nyes\nno\n{{< /multiplechoice >}}`;
@@ -83,129 +90,145 @@ const objectivesCallout = (objectives) => [
   ...objectives.map((o) => `- ${o}`),
   '{{< /callout >}}',
 ].join('\n');
-const fourQuestions = [
-  fillin('one'),
-  multiplechoice('two'),
-  fillin('three'),
-  multiplechoice('four'),
-].join('\n\n');
-assert(
-  lintHugo(fourQuestions, 'content/math/book/01-chapter/01-section.md').errors
-    .some((error) => error.includes('more than three consecutive interactive questions')),
-  'expected a mixed four-question practice-set lint',
-);
-assert.equal(
-  lintHugo(fourQuestions.replace(/ hint="[^"]*"/g, ''), 'content/math/book/knowledge-check-01-06.md').errors.length,
-  0,
-  'knowledge checks may contain more than three consecutive interactive questions',
-);
-assert.equal(
-  lintHugo(`${[fillin('one'), multiplechoice('two'), fillin('three')].join('\n\n')}\n\nPractice another skill.\n\n${multiplechoice('four')}`, 'content/math/book/01-chapter/01-section.md').errors.length,
-  0,
-  'prose starts a new interactive practice set',
-);
-
-for (const source of [
-  fillin('Try It 10.17. Find the inverse.'),
-  multiplechoice('Try It 11.3. Which graph is correct?'),
-  '{{< graphplot question="Try It 4.2. Graph the line." ariaLabel="A blank grid." >}}\n{"answer":{"slope":1,"intercept":0}}\n{{< /graphplot >}}',
-]) {
+test('an interactive practice set caps at three consecutive questions', () => {
+  const fourQuestions = [
+    fillin('one'),
+    multiplechoice('two'),
+    fillin('three'),
+    multiplechoice('four'),
+  ].join('\n\n');
   assert(
-    lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
-      .some((error) => error.includes('print-source “Try It” label')),
-    `expected print-source label lint for ${JSON.stringify(source)}`,
+    lintHugo(fourQuestions, 'content/math/book/01-chapter/01-section.md').errors
+      .some((error) => error.includes('more than three consecutive interactive questions')),
+    'expected a mixed four-question practice-set lint',
   );
-}
+  assert.equal(
+    lintHugo(fourQuestions.replace(/ hint="[^"]*"/g, ''), 'content/math/book/knowledge-check-01-06.md').errors.length,
+    0,
+    'knowledge checks may contain more than three consecutive interactive questions',
+  );
+  assert.equal(
+    lintHugo(`${[fillin('one'), multiplechoice('two'), fillin('three')].join('\n\n')}\n\nPractice another skill.\n\n${multiplechoice('four')}`, 'content/math/book/01-chapter/01-section.md').errors.length,
+    0,
+    'prose starts a new interactive practice set',
+  );
+});
 
-for (const source of [
-  '<svg role="img" aria-label="A plot" style={{ color: "red" }}><path d="M0 0"/></svg>',
-  '<svg role="img" aria-label="A plot">{[1,2].map((x) => <circle cx={x}/>)}</svg>',
-  '<svg role="img" aria-label="A plot"><path strokeWidth="2" d="M0 0"/></svg>',
-]) {
+test('a print-source “Try It” label is rejected in a learner-facing field', () => {
+  for (const source of [
+    fillin('Try It 10.17. Find the inverse.'),
+    multiplechoice('Try It 11.3. Which graph is correct?'),
+    '{{< graphplot question="Try It 4.2. Graph the line." ariaLabel="A blank grid." >}}\n{"answer":{"slope":1,"intercept":0}}\n{{< /graphplot >}}',
+  ]) {
+    assert(
+      lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
+        .some((error) => error.includes('print-source “Try It” label')),
+      `expected print-source label lint for ${JSON.stringify(source)}`,
+    );
+  }
+});
+
+test('React/JSX syntax inside inline SVG is rejected', () => {
+  for (const source of [
+    '<svg role="img" aria-label="A plot" style={{ color: "red" }}><path d="M0 0"/></svg>',
+    '<svg role="img" aria-label="A plot">{[1,2].map((x) => <circle cx={x}/>)}</svg>',
+    '<svg role="img" aria-label="A plot"><path strokeWidth="2" d="M0 0"/></svg>',
+  ]) {
+    assert(
+      lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
+        .some((error) => /React|JSX/.test(error)),
+      `expected React/JSX SVG lint for ${JSON.stringify(source)}`,
+    );
+  }
+});
+
+test('an empty worked Solution block is reported', () => {
   assert(
-    lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
-      .some((error) => /React|JSX/.test(error)),
-    `expected React/JSX SVG lint for ${JSON.stringify(source)}`,
+    lintHugo('**Solution.**\n\n{{< fillin question="Practice" answer="1" hint="Think." >}}', 'content/math/book/01-chapter/01-section.md').warnings
+      .some((error) => error.includes('empty Solution')),
+    'expected empty worked-solution lint',
   );
-}
-
-assert(
-  lintHugo('**Solution.**\n\n{{< fillin question="Practice" answer="1" hint="Think." >}}', 'content/math/book/01-chapter/01-section.md').warnings
-    .some((error) => error.includes('empty Solution')),
-  'expected empty worked-solution lint',
-);
-assert.equal(
-  lintHugo('**Solution.**\n\nWorked steps follow here.', 'content/math/book/01-chapter/01-section.md').warnings
-    .some((warning) => warning.includes('empty Solution')),
-  false,
-  'worked solution prose after a blank line must not be mistaken for an empty block',
-);
-assert(
-  lintHugo('**Solution.**\n\n## Next topic', 'content/math/book/01-chapter/01-section.md').warnings
-    .some((warning) => warning.includes('empty Solution')),
-  'a Solution block that ends at the next heading is empty',
-);
-assert(
-  lintHugo('{{< fillin question="Practice" answer="1" >}}', 'content/math/book/01-chapter/01-section.md').warnings
-    .some((error) => error.includes('missing a hint')),
-  'regular-section exercises require hints',
-);
-assert.equal(
-  lintHugo('{{< fillin question="Practice" answer="1" >}}', 'content/math/book/knowledge-check-01-06.md').errors.length,
-  0,
-  'knowledge-check exercises intentionally omit hints',
-);
-
-for (const [source, expected] of [
-  ['{{< multiplechoice question="Choose." answer="yes" hint="Think." >}}\nyes\n{{< /multiplechoice >}}', 'at least two'],
-  ['{{< multiplechoice question="Choose." answer="yes" hint="Think." >}}\nyes\nyes\n{{< /multiplechoice >}}', 'duplicate'],
-  ['{{< graphplot question="Graph." ariaLabel="A grid." hint="Plot points." snap="0" >}}\n{"answer":{"slope":1},"grid":{}}\n{{< /graphplot >}}', 'snap must be'],
-]) {
+  assert.equal(
+    lintHugo('**Solution.**\n\nWorked steps follow here.', 'content/math/book/01-chapter/01-section.md').warnings
+      .some((warning) => warning.includes('empty Solution')),
+    false,
+    'worked solution prose after a blank line must not be mistaken for an empty block',
+  );
   assert(
-    lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
-      .some((error) => error.includes(expected)),
-    `expected interactive schema lint containing ${JSON.stringify(expected)}`,
+    lintHugo('**Solution.**\n\n## Next topic', 'content/math/book/01-chapter/01-section.md').warnings
+      .some((warning) => warning.includes('empty Solution')),
+    'a Solution block that ends at the next heading is empty',
   );
-}
-assert.equal(
-  lintHugo('This section converts selected Try It exercises to interactive practice.', 'content/math/book/01-chapter/01-section.md').errors.length,
-  0,
-  'source labels outside learner-facing component fields remain valid attribution prose',
-);
+});
+test('regular-section exercises require hints and knowledge checks do not', () => {
+  assert(
+    lintHugo('{{< fillin question="Practice" answer="1" >}}', 'content/math/book/01-chapter/01-section.md').warnings
+      .some((error) => error.includes('missing a hint')),
+    'regular-section exercises require hints',
+  );
+  assert.equal(
+    lintHugo('{{< fillin question="Practice" answer="1" >}}', 'content/math/book/knowledge-check-01-06.md').errors.length,
+    0,
+    'knowledge-check exercises intentionally omit hints',
+  );
+});
+
+test('interactive component schemas are validated', () => {
+  for (const [source, expected] of [
+    ['{{< multiplechoice question="Choose." answer="yes" hint="Think." >}}\nyes\n{{< /multiplechoice >}}', 'at least two'],
+    ['{{< multiplechoice question="Choose." answer="yes" hint="Think." >}}\nyes\nyes\n{{< /multiplechoice >}}', 'duplicate'],
+    ['{{< graphplot question="Graph." ariaLabel="A grid." hint="Plot points." snap="0" >}}\n{"answer":{"slope":1},"grid":{}}\n{{< /graphplot >}}', 'snap must be'],
+  ]) {
+    assert(
+      lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
+        .some((error) => error.includes(expected)),
+      `expected interactive schema lint containing ${JSON.stringify(expected)}`,
+    );
+  }
+  assert.equal(
+    lintHugo('This section converts selected Try It exercises to interactive practice.', 'content/math/book/01-chapter/01-section.md').errors.length,
+    0,
+    'source labels outside learner-facing component fields remain valid attribution prose',
+  );
+});
 
 // ---- comma-list answers must make the ordered/unordered choice deliberate --
 const listFillin = (question, answer, mode = '') =>
   `{{< fillin question="${question}" answer="${answer}"${mode ? ` answerMode="${mode}"` : ''} hint="Think." >}}`;
-for (const [source, expected, reason] of [
-  [listFillin('Solve $x^2=1$.', '-1, 1'), 'never tells the learner the order',
-    'a bare list with no order cue in the question is ambiguous for the learner'],
-  [listFillin('Solve $\\sqrt{x-2}+2=x$.', 'x = 2 , x = 3'), 'solution set has no order',
-    'a list of variable equations is a solution set and must be unordered'],
-  [listFillin('How many acres?', '40,100'), 'ONE digit-grouped number',
-    'an answer that reads as one grouped scalar must not carry list commas'],
-]) {
-  assert(
-    lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
-      .some((error) => error.includes(expected)),
-    reason,
-  );
-}
-for (const [source, reason] of [
-  [listFillin('Solve $x^2=1$. Enter both solutions from least to greatest, separated by a comma.', '-1, 1'),
-    'a prescribed order makes positional grading fair'],
-  [listFillin('Find the length and width, separated by commas.', '39,16'),
-    'naming the quantities ("the length and width") prescribes the order'],
-  [listFillin('Solve $x^2=1$.', '-1, 1', 'unordered'),
-    'answerMode="unordered" resolves the ambiguity explicitly'],
-  [listFillin('How many acres?', '40100'),
-    'a grouped scalar written without commas is a scalar, not a list'],
-]) {
-  assert.equal(
-    lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors.length,
-    0,
-    reason,
-  );
-}
+test('a comma-list answer with no order cue is an error', () => {
+  for (const [source, expected, reason] of [
+    [listFillin('Solve $x^2=1$.', '-1, 1'), 'never tells the learner the order',
+      'a bare list with no order cue in the question is ambiguous for the learner'],
+    [listFillin('Solve $\\sqrt{x-2}+2=x$.', 'x = 2 , x = 3'), 'solution set has no order',
+      'a list of variable equations is a solution set and must be unordered'],
+    [listFillin('How many acres?', '40,100'), 'ONE digit-grouped number',
+      'an answer that reads as one grouped scalar must not carry list commas'],
+  ]) {
+    assert(
+      lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
+        .some((error) => error.includes(expected)),
+      reason,
+    );
+  }
+});
+test('a prescribed order or an explicit unordered mode resolves the ambiguity', () => {
+  for (const [source, reason] of [
+    [listFillin('Solve $x^2=1$. Enter both solutions from least to greatest, separated by a comma.', '-1, 1'),
+      'a prescribed order makes positional grading fair'],
+    [listFillin('Find the length and width, separated by commas.', '39,16'),
+      'naming the quantities ("the length and width") prescribes the order'],
+    [listFillin('Solve $x^2=1$.', '-1, 1', 'unordered'),
+      'answerMode="unordered" resolves the ambiguity explicitly'],
+    [listFillin('How many acres?', '40100'),
+      'a grouped scalar written without commas is a scalar, not a list'],
+  ]) {
+    assert.equal(
+      lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors.length,
+      0,
+      reason,
+    );
+  }
+});
 
 // ---- trivially satisfiable prompts: the answer is printed in the question --
 // Value-based grading accepts any input that evaluates to the answer, so a
@@ -215,92 +238,98 @@ for (const [source, reason] of [
 // numbers, percentages — in a $…$ span or bare in prose) are graded as
 // submissions. Compound expressions get the same treatment through their own
 // verb-gated paths — the arithmetic and algebraic blocks below.
-for (const [source, reason] of [
-  [listFillin('Find the prime factorization of $86$.', '2 \\cdot 43'),
-    'the printed target of a factorization prompt grades equal to the answer'],
-  [listFillin('Simplify $\\tfrac{40}{88}$ to lowest terms.', '\\tfrac{40}{88}'),
-    'a numeral answer identical to its prompt was never re-expressed — the author error itself'],
-  [listFillin('Find the prime factorization of 80 using the factor tree method. Enter the answer in exponential form, e.g. $2^3 \\cdot 5$.', '2^4 \\cdot 5'),
-    'a bare prose number is a printed value too'],
-  [listFillin('Simplify: $-\\tfrac{40}{88}$.', '-\\tfrac{5}{11}'),
-    'a signed printed fraction grades equal to its simplified form'],
-  [listFillin('Write $0.5$ as a fraction.', '\\frac{1}{2}'),
-    'conversion prompts are value-equal across representations'],
-  [listFillin('Convert $62.5\\%$ to a fraction and simplify.', '\\frac{5}{8}'),
-    'a printed percentage grades equal to its fraction form'],
-  [listFillin('Convert $2\\frac{6}{9}$ to an improper fraction in lowest terms.', '\\frac{8}{3}'),
-    'a printed mixed number grades equal to its improper form'],
-  [listFillin('Write $400{,}000$ in scientific notation.', '4 \\times 10^5'),
-    'a digit-grouped printed scalar grades equal to its scientific-notation form'],
-  [listFillin('A stadium holds 42,000 fans. Write the capacity in scientific notation.', '4.2 \\times 10^4'),
-    'a digit-grouped prose number is a printed value too'],
-]) {
-  assert(
-    lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
-      .some((error) => error.includes('printed in the question')),
-    reason,
-  );
-}
-for (const [source, reason] of [
-  [listFillin('Solve $2x+3=7$ for $x$.', '2'),
-    'coefficients inside a compound span are not standalone printed values'],
-  [listFillin('Round $2.841$ to the nearest tenth.', '2.8'),
-    'a printed value that does not grade equal to the answer is fine'],
-  [listFillin('List the first three multiples of 4, least to greatest, separated by commas.', '4, 8, 12', 'unordered'),
-    'a single printed value never satisfies a multi-member unordered answer'],
-  [listFillin('See list item 10.17 of the workbook.', '17'),
-    'the tail of a prose decimal is not a standalone printed value'],
-  // Outside a re-expression prompt the collision is incidental and the
-  // exercise is sound: the learner cannot know which printed number to copy.
-  [listFillin('Identify the mode of the data set: 2, 5, 1, 5, 2, 1, 2, 3, 2, 3, 1', '2'),
-    'the mode of a data set is necessarily one of the numbers printed in it'],
-  [listFillin('Find the median of the data set: 43, 38, 51, 40, 46', '43'),
-    'the median of an odd-sized data set is necessarily a printed member'],
-  [listFillin('One angle of a right triangle measures 45 degrees. What is the measure of the other small angle?', '45'),
-    'an isosceles right triangle legitimately answers with the printed angle'],
-  [listFillin('Jazmine ran $8$ miles and biked $24$ miles in $3$ hours, biking $4$ mph faster than she ran. Find her running speed in mph.', '8'),
-    'an application answer that happens to equal a printed quantity is an incidental collision'],
-  // The one deliberate exemption on the algebraic paths — scoped to spans
-  // with a variable, so it cannot hide a numeral defect like the
-  // never-re-expressed answer above.
-  [listFillin('Add: $5a+7b$.', '5a+7b'),
-    'unlike terms legitimately answer with the prompt — the exercise asks the learner to recognize they do not combine'],
-]) {
-  assert.equal(
-    lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
-      .filter((error) => error.includes('printed in the question')).length,
-    0,
-    reason,
-  );
-}
+test('a re-expression prompt whose answer is printed in the question is an error', () => {
+  for (const [source, reason] of [
+    [listFillin('Find the prime factorization of $86$.', '2 \\cdot 43'),
+      'the printed target of a factorization prompt grades equal to the answer'],
+    [listFillin('Simplify $\\tfrac{40}{88}$ to lowest terms.', '\\tfrac{40}{88}'),
+      'a numeral answer identical to its prompt was never re-expressed — the author error itself'],
+    [listFillin('Find the prime factorization of 80 using the factor tree method. Enter the answer in exponential form, e.g. $2^3 \\cdot 5$.', '2^4 \\cdot 5'),
+      'a bare prose number is a printed value too'],
+    [listFillin('Simplify: $-\\tfrac{40}{88}$.', '-\\tfrac{5}{11}'),
+      'a signed printed fraction grades equal to its simplified form'],
+    [listFillin('Write $0.5$ as a fraction.', '\\frac{1}{2}'),
+      'conversion prompts are value-equal across representations'],
+    [listFillin('Convert $62.5\\%$ to a fraction and simplify.', '\\frac{5}{8}'),
+      'a printed percentage grades equal to its fraction form'],
+    [listFillin('Convert $2\\frac{6}{9}$ to an improper fraction in lowest terms.', '\\frac{8}{3}'),
+      'a printed mixed number grades equal to its improper form'],
+    [listFillin('Write $400{,}000$ in scientific notation.', '4 \\times 10^5'),
+      'a digit-grouped printed scalar grades equal to its scientific-notation form'],
+    [listFillin('A stadium holds 42,000 fans. Write the capacity in scientific notation.', '4.2 \\times 10^4'),
+      'a digit-grouped prose number is a printed value too'],
+  ]) {
+    assert(
+      lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
+        .some((error) => error.includes('printed in the question')),
+      reason,
+    );
+  }
+});
+test('an incidental collision with a printed value is sound content', () => {
+  for (const [source, reason] of [
+    [listFillin('Solve $2x+3=7$ for $x$.', '2'),
+      'coefficients inside a compound span are not standalone printed values'],
+    [listFillin('Round $2.841$ to the nearest tenth.', '2.8'),
+      'a printed value that does not grade equal to the answer is fine'],
+    [listFillin('List the first three multiples of 4, least to greatest, separated by commas.', '4, 8, 12', 'unordered'),
+      'a single printed value never satisfies a multi-member unordered answer'],
+    [listFillin('See list item 10.17 of the workbook.', '17'),
+      'the tail of a prose decimal is not a standalone printed value'],
+    // Outside a re-expression prompt the collision is incidental and the
+    // exercise is sound: the learner cannot know which printed number to copy.
+    [listFillin('Identify the mode of the data set: 2, 5, 1, 5, 2, 1, 2, 3, 2, 3, 1', '2'),
+      'the mode of a data set is necessarily one of the numbers printed in it'],
+    [listFillin('Find the median of the data set: 43, 38, 51, 40, 46', '43'),
+      'the median of an odd-sized data set is necessarily a printed member'],
+    [listFillin('One angle of a right triangle measures 45 degrees. What is the measure of the other small angle?', '45'),
+      'an isosceles right triangle legitimately answers with the printed angle'],
+    [listFillin('Jazmine ran $8$ miles and biked $24$ miles in $3$ hours, biking $4$ mph faster than she ran. Find her running speed in mph.', '8'),
+      'an application answer that happens to equal a printed quantity is an incidental collision'],
+    // The one deliberate exemption on the algebraic paths — scoped to spans
+    // with a variable, so it cannot hide a numeral defect like the
+    // never-re-expressed answer above.
+    [listFillin('Add: $5a+7b$.', '5a+7b'),
+      'unlike terms legitimately answer with the prompt — the exercise asks the learner to recognize they do not combine'],
+  ]) {
+    assert.equal(
+      lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
+        .filter((error) => error.includes('printed in the question')).length,
+      0,
+      reason,
+    );
+  }
+});
 
 // An answerForm is exercised, not trusted: it silences the re-expression rule
 // only when it actually rules the printed value out.
-{
-  const formFillin = (form) => `{{< fillin question="Simplify: $-\\tfrac{40}{88}$." answer="-\\tfrac{5}{11}" answerForm="${form}" hint="Reduce." >}}`;
-  assert.equal(
-    lintHugo(formFillin('lowest-terms'), 'content/math/book/01-chapter/01-section.md').errors
-      .filter((error) => error.includes('printed in the question')).length,
-    0,
-    'an answerForm that blocks the printed value satisfies the rule',
-  );
-  assert(
-    lintHugo(formFillin('fraction'), 'content/math/book/01-chapter/01-section.md').errors
-      .some((error) => error.includes('does not rule that value out')),
-    'an answerForm too weak to block the printed value is still an error',
-  );
-  assert(
-    lintHugo(formFillin('lowset-terms'), 'content/math/book/01-chapter/01-section.md').errors
-      .some((error) => error.includes('name no form')),
-    'a misspelled answerForm token is an authoring error',
-  );
-}
+test('an answerForm silences the rule only when it rules the printed value out', () => {
+  {
+    const formFillin = (form) => `{{< fillin question="Simplify: $-\\tfrac{40}{88}$." answer="-\\tfrac{5}{11}" answerForm="${form}" hint="Reduce." >}}`;
+    assert.equal(
+      lintHugo(formFillin('lowest-terms'), 'content/math/book/01-chapter/01-section.md').errors
+        .filter((error) => error.includes('printed in the question')).length,
+      0,
+      'an answerForm that blocks the printed value satisfies the rule',
+    );
+    assert(
+      lintHugo(formFillin('fraction'), 'content/math/book/01-chapter/01-section.md').errors
+        .some((error) => error.includes('does not rule that value out')),
+      'an answerForm too weak to block the printed value is still an error',
+    );
+    assert(
+      lintHugo(formFillin('lowset-terms'), 'content/math/book/01-chapter/01-section.md').errors
+        .some((error) => error.includes('name no form')),
+      'a misspelled answerForm token is an authoring error',
+    );
+  }
+});
 
 // ---- a factoring prompt is trivially satisfiable without answerForm --------
 // "Factor: $x^2+6x+8$" prints a polynomial that IS its own factorization by
 // value, so the CAS cannot separate the answer from the prompt retyped. Only
 // the shape can — see the `factored` token.
-{
+test('a factoring prompt is trivially satisfiable without answerForm', () => {
   const trivial = (error) => error.includes('printed in the question');
   const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
   const factorFillin = (question, answer, form = '') =>
@@ -403,12 +432,12 @@ for (const [source, reason] of [
     ).errors.some((error) => error.includes('not applied to a comma-separated answer')),
     'answerForm on a list answer is a silent no-op and must be rejected',
   );
-}
+});
 
 // ---- an arithmetic prompt is trivially satisfiable without answerForm ------
 // "Add: $3+5$" prints an expression worth exactly its own answer. The playbook
 // used to call this inherent to CAS grading; it is not — `decimal` rejects it.
-{
+test('an arithmetic prompt is trivially satisfiable without answerForm', () => {
   const trivial = (error) => error.includes('printed in the question');
   const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
   const arith = (question, answer, form = '') =>
@@ -450,14 +479,14 @@ for (const [source, reason] of [
   ]) {
     assert.equal(lint(arith(question, answer)).filter(trivial).length, 0, reason);
   }
-}
+});
 
 // ---- an unbraced multi-digit exponent grades as a different value ----------
 // TeX reads `y^10` as `y^1` followed by a literal `0`. Self-grading cannot see
 // this (the answer is compared against itself) and a correct `answerDisplay`
 // hides it from visual review, so only the lint stands between the defect and
 // a learner who types the right thing and is told they are wrong.
-{
+test('an unbraced multi-digit exponent grades as a different value', () => {
   const expFillin = (answer) => `{{< fillin question="Simplify: $y^{20} / y^{10}$." answer="${answer}" hint="Subtract the exponents." >}}`;
   const errorsFor = (answer) => lintHugo(expFillin(answer), 'content/math/book/01-chapter/01-section.md')
     .errors.filter((error) => error.includes('unbraced multi-digit exponent'));
@@ -476,103 +505,116 @@ for (const [source, reason] of [
   ]) {
     assert.equal(errorsFor(answer).length, 0, reason);
   }
-}
+});
 
 // ---- a categorical answer encoded as a number belongs in multiplechoice ----
 // The learner is choosing among named alternatives; a numeric fill-in grades a
 // legend rather than the choice and accepts a coin-flip guess.
-for (const [source, reason] of [
-  [listFillin('Is 7248 divisible by $5$? Answer $1$ for yes or $0$ for no.', '0'),
-    'a yes/no answer encoded as 1/0 is a multiple-choice question'],
-  [listFillin('Is $\\sqrt{17}$ rational or irrational? Enter $1$ if rational, $0$ if irrational.', '0'),
-    'two code clauses map digits to named alternatives'],
-  [listFillin('In which quadrant does the point $(-4, 6)$ lie? Enter the quadrant number as a digit (1, 2, 3, or 4).', '2'),
-    'a quadrant number is a coded category, not a computed value'],
-]) {
-  assert(
-    lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
-      .some((error) => error.includes('encodes a categorical answer')),
-    reason,
-  );
-}
-for (const [source, reason] of [
-  [listFillin('Translate and solve: 110 is what percent of 88? Give the percent as a number (e.g. enter 40 for 40%).', '125'),
-    'one clause naming a number is a units convention, not an answer legend'],
-  [listFillin('Malik has \\$840 saved. The trip costs \\$525 for airfare and \\$780 for food. How many hours must he tutor at \\$45 per hour?', '11'),
-    'a price list in a word problem is not a pair of answer codes'],
-]) {
-  assert.equal(
-    lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
-      .filter((error) => error.includes('encodes a categorical answer')).length,
-    0,
-    reason,
-  );
-}
+test('a categorical answer encoded as a number belongs in multiplechoice', () => {
+  for (const [source, reason] of [
+    [listFillin('Is 7248 divisible by $5$? Answer $1$ for yes or $0$ for no.', '0'),
+      'a yes/no answer encoded as 1/0 is a multiple-choice question'],
+    [listFillin('Is $\\sqrt{17}$ rational or irrational? Enter $1$ if rational, $0$ if irrational.', '0'),
+      'two code clauses map digits to named alternatives'],
+    [listFillin('In which quadrant does the point $(-4, 6)$ lie? Enter the quadrant number as a digit (1, 2, 3, or 4).', '2'),
+      'a quadrant number is a coded category, not a computed value'],
+  ]) {
+    assert(
+      lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
+        .some((error) => error.includes('encodes a categorical answer')),
+      reason,
+    );
+  }
+});
+test('a units convention naming a number is not an answer legend', () => {
+  for (const [source, reason] of [
+    [listFillin('Translate and solve: 110 is what percent of 88? Give the percent as a number (e.g. enter 40 for 40%).', '125'),
+      'one clause naming a number is a units convention, not an answer legend'],
+    [listFillin('Malik has \\$840 saved. The trip costs \\$525 for airfare and \\$780 for food. How many hours must he tutor at \\$45 per hour?', '11'),
+      'a price list in a word problem is not a pair of answer codes'],
+  ]) {
+    assert.equal(
+      lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
+        .filter((error) => error.includes('encodes a categorical answer')).length,
+      0,
+      reason,
+    );
+  }
+});
 
 // ---- digit grouping ignores invisible \phantom spacing ---------------------
 // Long-division layouts align columns with runs like \phantom{0000}; grouping
 // those digits would misreport a number the reader never sees and shift the
 // alignment they exist to produce.
-assert.equal(
-  lintHugo('$$\\begin{array}{r} 22\\,\\overline{\\smash{)}\\,43.00000} \\\\ \\phantom{22\\,\\overline{\\smash{)}\\,}}\\phantom{0000}120 \\end{array}$$', 'content/math/book/01-chapter/01-section.md')
-    .errors.filter((error) => error.includes('ungrouped')).length,
-  0,
-  'digits inside \\phantom{…} are invisible spacing, not numbers to group',
-);
-assert(
-  lintHugo('$12345$', 'content/math/book/01-chapter/01-section.md')
-    .errors.some((error) => error.includes('ungrouped 5-digit number 12345')),
-  'a real ungrouped number is still reported once \\phantom is masked',
-);
-
-for (const label of ['(a)', 'b)', 'ⓒ']) {
-  const source = fillin(`Simplify: ${label} $x+x$.`);
-  assert(
-    lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
-      .some((error) => error.includes('print part label')),
-    `expected redundant Simplify label lint for ${JSON.stringify(label)}`,
+test('digit grouping ignores invisible \\phantom spacing', () => {
+  assert.equal(
+    lintHugo('$$\\begin{array}{r} 22\\,\\overline{\\smash{)}\\,43.00000} \\\\ \\phantom{22\\,\\overline{\\smash{)}\\,}}\\phantom{0000}120 \\end{array}$$', 'content/math/book/01-chapter/01-section.md')
+      .errors.filter((error) => error.includes('ungrouped')).length,
+    0,
+    'digits inside \\phantom{…} are invisible spacing, not numbers to group',
   );
-}
-assert.equal(
-  lintHugo(fillin('Simplify $x+x$.'), 'content/math/book/01-chapter/01-section.md').errors.length,
-  0,
-  'a standalone Simplify prompt without a print part label is valid',
-);
+  assert(
+    lintHugo('$12345$', 'content/math/book/01-chapter/01-section.md')
+      .errors.some((error) => error.includes('ungrouped 5-digit number 12345')),
+    'a real ungrouped number is still reported once \\phantom is masked',
+  );
+});
 
-assert(
-  lintHugo('<details><summary>Check answer</summary>$4$</details>', 'content/math/book/01-chapter/01-section.md').errors
-    .some((error) => error.includes('legacy “Check answer”')),
-  'expected legacy static answer-reveal lint',
-);
-assert.equal(
-  lintHugo('<details><summary>Read a definition</summary>Supporting prose.</details>', 'content/math/book/01-chapter/01-section.md').errors.length,
-  0,
-  'ordinary disclosure content is not an answer control',
-);
-assert.equal(
-  lintHugo('```\n<details><summary>Check answer</summary></details>\n```', 'content/math/book/01-chapter/01-section.md').errors.length,
-  0,
-  'documentation examples of legacy markup are masked',
-);
-assert(
-  lintHugo('Use `{{< fillin question="Example" answer="1" >}}`.', 'content/docs/example.md').errors
-    .some((error) => error.includes('active Hugo shortcode syntax')),
-  'active shortcodes in Markdown code spans must fail before Hugo expands them',
-);
-assert.equal(
-  lintHugo('Use `{{</* fillin question="Example" answer="1" */>}}`.', 'content/docs/example.md').errors.length,
-  0,
-  'comment-escaped shortcode examples are safe to publish',
-);
+test('a redundant print part label in a Simplify prompt is rejected', () => {
+  for (const label of ['(a)', 'b)', 'ⓒ']) {
+    const source = fillin(`Simplify: ${label} $x+x$.`);
+    assert(
+      lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
+        .some((error) => error.includes('print part label')),
+      `expected redundant Simplify label lint for ${JSON.stringify(label)}`,
+    );
+  }
+  assert.equal(
+    lintHugo(fillin('Simplify $x+x$.'), 'content/math/book/01-chapter/01-section.md').errors.length,
+    0,
+    'a standalone Simplify prompt without a print part label is valid',
+  );
+});
 
-const chapterFrontmatter = `---
+test('a legacy static answer reveal is rejected', () => {
+  assert(
+    lintHugo('<details><summary>Check answer</summary>$4$</details>', 'content/math/book/01-chapter/01-section.md').errors
+      .some((error) => error.includes('legacy “Check answer”')),
+    'expected legacy static answer-reveal lint',
+  );
+  assert.equal(
+    lintHugo('<details><summary>Read a definition</summary>Supporting prose.</details>', 'content/math/book/01-chapter/01-section.md').errors.length,
+    0,
+    'ordinary disclosure content is not an answer control',
+  );
+  assert.equal(
+    lintHugo('```\n<details><summary>Check answer</summary></details>\n```', 'content/math/book/01-chapter/01-section.md').errors.length,
+    0,
+    'documentation examples of legacy markup are masked',
+  );
+});
+test('an active shortcode in a Markdown code span is rejected', () => {
+  assert(
+    lintHugo('Use `{{< fillin question="Example" answer="1" >}}`.', 'content/docs/example.md').errors
+      .some((error) => error.includes('active Hugo shortcode syntax')),
+    'active shortcodes in Markdown code spans must fail before Hugo expands them',
+  );
+  assert.equal(
+    lintHugo('Use `{{</* fillin question="Example" answer="1" */>}}`.', 'content/docs/example.md').errors.length,
+    0,
+    'comment-escaped shortcode examples are safe to publish',
+  );
+});
+
+test('a chapter landing needs descriptive section bullets', () => {
+  const chapterFrontmatter = `---
 title: Functions
 description: A chapter about functions.
 source_chapter: "3"
 weight: 3
 ---
 `;
-const validChapterSections = `${chapterFrontmatter}
+  const validChapterSections = `${chapterFrontmatter}
 ## Sections
 
 - **Understand Functions** — identify inputs, outputs, domains, and ranges.
@@ -581,12 +623,12 @@ const validChapterSections = `${chapterFrontmatter}
 
 ---
 `;
-assert.equal(
-  lintHugo(validChapterSections, 'content/math/book/03-functions/_index.md').errors.length,
-  0,
-  'chapter landing accepts descriptive multiline section bullets',
-);
-const scaffoldedChapterFrontmatter = `---
+  assert.equal(
+    lintHugo(validChapterSections, 'content/math/book/03-functions/_index.md').errors.length,
+    0,
+    'chapter landing accepts descriptive multiline section bullets',
+  );
+  const scaffoldedChapterFrontmatter = `---
 title: Functions
 description: A chapter about functions.
 source_chapter: "3"
@@ -594,67 +636,72 @@ authoring_status: scaffolded
 weight: 3
 ---
 `;
-assert.equal(
-  lintHugo(
-    `${scaffoldedChapterFrontmatter}\n## Sections\n\nNo section pages are published yet.\n`,
-    'content/math/book/03-functions/_index.md',
-  ).errors.length,
-  0,
-  'a scaffolded chapter landing may carry an empty Sections overview',
-);
-assert(
-  lintHugo(
-    `${chapterFrontmatter}\n## Sections\n\nNo section pages are published yet.\n`,
-    'content/math/book/03-functions/_index.md',
-  ).errors.some((error) => error.includes('has no section bullets')),
-  'an undeclared chapter landing still needs section bullets',
-);
-assert(
-  lintHugo(
-    `${scaffoldedChapterFrontmatter}\n## Sections\n\n- **Understand Functions**\n`,
-    'content/math/book/03-functions/_index.md',
-  ).errors.some((error) => error.includes('must be `- **Title** — concise description`')),
-  'a scaffolded chapter landing still validates any bullets it does have',
-);
-
-for (const [source, expected] of [
-  [chapterFrontmatter, 'missing a `## Sections`'],
-  [`${chapterFrontmatter}\n## Sections\n\n- **Understand Functions**\n`, 'must be `- **Title** — concise description`'],
-  [`${chapterFrontmatter}\n## Sections\n\n- **3.1 Understand Functions** — identify inputs and outputs.\n`, 'print section number'],
-]) {
-  assert(
-    lintHugo(source, 'content/math/book/03-functions/_index.md').errors
-      .some((error) => error.includes(expected)),
-    `expected chapter overview lint containing ${JSON.stringify(expected)}`,
-  );
-}
-
-for (const source of [
-  String.raw`$$\text{If} n^2=m.$$`,
-  String.raw`$$\text{square}\text{root}$$`,
-]) {
-  assert(
-    lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
-      .some((error) => error.includes('TeX prose')),
-    `expected TeX prose-spacing lint for ${JSON.stringify(source)}`,
-  );
-}
-for (const source of [
-  String.raw`$$\text{If }n^2=m.$$`,
-  String.raw`$$\text{If}\ n^2=m.$$`,
-  String.raw`$$\text{square}\ \text{root}$$`,
-  String.raw`$$\textbf{P}\text{arentheses}$$`,
-  String.raw`$$x\text{-axis}$$`,
-]) {
   assert.equal(
-    lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors.length,
+    lintHugo(
+      `${scaffoldedChapterFrontmatter}\n## Sections\n\nNo section pages are published yet.\n`,
+      'content/math/book/03-functions/_index.md',
+    ).errors.length,
     0,
-    `unexpected TeX prose-spacing lint for ${JSON.stringify(source)}`,
+    'a scaffolded chapter landing may carry an empty Sections overview',
   );
-}
+  assert(
+    lintHugo(
+      `${chapterFrontmatter}\n## Sections\n\nNo section pages are published yet.\n`,
+      'content/math/book/03-functions/_index.md',
+    ).errors.some((error) => error.includes('has no section bullets')),
+    'an undeclared chapter landing still needs section bullets',
+  );
+  assert(
+    lintHugo(
+      `${scaffoldedChapterFrontmatter}\n## Sections\n\n- **Understand Functions**\n`,
+      'content/math/book/03-functions/_index.md',
+    ).errors.some((error) => error.includes('must be `- **Title** — concise description`')),
+    'a scaffolded chapter landing still validates any bullets it does have',
+  );
+
+  for (const [source, expected] of [
+    [chapterFrontmatter, 'missing a `## Sections`'],
+    [`${chapterFrontmatter}\n## Sections\n\n- **Understand Functions**\n`, 'must be `- **Title** — concise description`'],
+    [`${chapterFrontmatter}\n## Sections\n\n- **3.1 Understand Functions** — identify inputs and outputs.\n`, 'print section number'],
+  ]) {
+    assert(
+      lintHugo(source, 'content/math/book/03-functions/_index.md').errors
+        .some((error) => error.includes(expected)),
+      `expected chapter overview lint containing ${JSON.stringify(expected)}`,
+    );
+  }
+});
+
+test('TeX prose without explicit spacing is rejected', () => {
+  for (const source of [
+    String.raw`$$\text{If} n^2=m.$$`,
+    String.raw`$$\text{square}\text{root}$$`,
+  ]) {
+    assert(
+      lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
+        .some((error) => error.includes('TeX prose')),
+      `expected TeX prose-spacing lint for ${JSON.stringify(source)}`,
+    );
+  }
+});
+test('explicitly spaced TeX prose is accepted', () => {
+  for (const source of [
+    String.raw`$$\text{If }n^2=m.$$`,
+    String.raw`$$\text{If}\ n^2=m.$$`,
+    String.raw`$$\text{square}\ \text{root}$$`,
+    String.raw`$$\textbf{P}\text{arentheses}$$`,
+    String.raw`$$x\text{-axis}$$`,
+  ]) {
+    assert.equal(
+      lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors.length,
+      0,
+      `unexpected TeX prose-spacing lint for ${JSON.stringify(source)}`,
+    );
+  }
+});
 
 // ---- objectives callout ------------------------------------------------------
-{
+test('the objectives callout shape is enforced', () => {
   const sectionPath = 'content/math/book/01-chapter/01-section.md';
   const listed = objectivesCallout(['Add whole numbers', 'Round whole numbers']);
 
@@ -687,10 +734,10 @@ for (const source of [
     0,
     'non-section pages are outside the objectives rule',
   );
-}
+});
 
 // ---- section-final Practice block -------------------------------------------
-{
+test('the section-final Practice block is enforced', () => {
   const sectionPath = 'content/math/book/01-chapter/01-section.md';
   const keyTerms = '## Key terms\n\n**term** — definition.';
   const OBJECTIVES = ['Add whole numbers', 'Round whole numbers'];
@@ -852,14 +899,14 @@ for (const source of [
     0,
     'knowledge checks are outside the Practice-block rule',
   );
-}
+});
 
 // ---- figure curve precision ------------------------------------------------
 
 // smoothCurves spline output (a cubic-bezier path) is an error; analytic
 // output is not — and neither is a spline the author has declared as source
 // art with no formula, which is the whole point of the freeform escape hatch.
-{
+test('figure curve precision: spline output needs a freeform declaration', () => {
   const spline = '<svg role="img" aria-label="A curve"><path d="M 26 100 C 30 90 40 80 50 80" fill="none"/></svg>';
   const { errors } = lintHugo(spline, 'content/test.md');
   assert(
@@ -878,10 +925,10 @@ for (const source of [
     0,
     'a spline declared freeform in its data-spec is the acknowledged output, not a defect',
   );
-}
+});
 
 // data-spec provenance must parse and must acknowledge freeform spline use.
-{
+test('a data-spec provenance record must parse and acknowledge spline use', () => {
   const svg = '<svg role="img" aria-label="A curve"><polyline points="0,0 1,1"/></svg>';
   const good = `<div class="ap-figure" data-spec='{"type":"graph","cubics":[{"a":1}]}'>${svg}</div>`;
   assert.equal(lintHugo(good, 'content/test.md').errors.length, 0);
@@ -900,13 +947,13 @@ for (const source of [
   // entity-escaped specs (as emitted for aria labels with apostrophes) decode
   const escaped = `<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"The line&#39;s graph &amp; grid","lines":[{"slope":1}]}'>${svg}</div>`;
   assert.equal(lintHugo(escaped, 'content/test.md').errors.length, 0);
-}
+});
 
 // Digit grouping: four or more digits are grouped; four-digit years are not.
 // An error rather than a warning — the corpus carries none, so the next one is
 // new work. Only \phantom spacing ever produced a false positive, and that is
 // masked (above).
-{
+test('four or more digits are grouped, and four-digit years are not', () => {
   const warnsOf = (src) => lintHugo(src, 'content/test.md').errors
     .filter((w) => w.includes('ungrouped'));
 
@@ -938,6 +985,97 @@ for (const source of [
 
   // Outside math the rule is the author's, not the lint's.
   assert.equal(warnsOf('The table lists 5600 hours.').length, 0);
-}
+});
 
-console.log(`lints: ${imageCases.length} image embeddings plus authoring-regression cases passed`);
+// ---- math span cut by a table cell boundary --------------------------------
+// Goldmark splits table rows on `|` before inline math is parsed, so a pipe
+// used as an absolute-value bar silently reshapes the table.
+test('a math span cut by a table cell boundary is rejected', () => {
+  const SECTION = 'content/math/book/01-chapter/01-section.md';
+  const errorsOf = (src) => lintHugo(src, SECTION).errors
+    .filter((error) => error.includes('cut by a table cell boundary'));
+
+  // The header row that regressed Intermediate Algebra 3.6: five cells against
+  // a three-cell delimiter row drops the whole chart back to a paragraph.
+  assert(
+    errorsOf('| $x$ | $f(x)=|x|$ | $(x,f(x))$ |\n| ---: | ---: | :---: |\n| $-3$ | $3$ | $(-3,3)$ |').length === 1,
+    'expected a table-row pipe lint for $f(x)=|x|$',
+  );
+  // \left| … \right| is the same defect in a body cell.
+  assert(
+    errorsOf('| Step | Result |\n| --- | --- |\n| Take the square root. | $6 \\left|x y\\right|$ |').length === 1,
+    'expected a table-row pipe lint for \\left| … \\right|',
+  );
+  // One report per row, not one per pipe.
+  assert.equal(errorsOf('| $|a|$ | $|b|$ |').length, 1, 'the lint reports each row once');
+
+  // The repaired forms are silent.
+  assert.equal(errorsOf('| $x$ | $f(x)=\\lvert x\\rvert$ | $(x,f(x))$ |').length, 0);
+  assert.equal(errorsOf('| Take the square root. | $6 \\left\\lvert x y\\right\\rvert$ |').length, 0);
+  // Cell separators outside math, and pipes in math outside a table, are fine.
+  assert.equal(errorsOf('| $x$ | $f(x)$ | $(x,f(x))$ |').length, 0);
+  assert.equal(errorsOf('The set is $\\{x \\mid x>0\\}$, written with a | bar.').length, 0);
+  // An escaped dollar does not open a math span.
+  assert.equal(errorsOf('| Type | Number | Value ($) | Total Value ($) |').length, 0);
+  // Fenced examples are documentation, not authored content.
+  assert.equal(errorsOf('```\n| $x$ | $f(x)=|x|$ |\n```').length, 0);
+});
+
+
+// ---- graphplot: the lint validates what the component actually renders ------
+// `<graph-plot>` applies `tickLabels: true, tickStep: 2` on top of the authored
+// grid, but the config parser used to validate the raw authored grid, where
+// `tickLabels` was undefined and `tickStep` defaulted to the grid step. So its
+// 10,000-label ceiling only ran on a config that had opted in by hand, and a
+// wide grid passed `npm run lint` and then asked the browser for a hundred
+// thousand tick labels — where buildGraph's own stepCount guard throws, outside
+// the component's parse try/catch.
+test('an absurd grid span is a lint error, not a runtime throw', () => {
+  const SECTION = 'content/math/book/01-chapter/01-section.md';
+  const graphplot = (grid, snap = 1) => [
+    `{{< graphplot question="Graph the line." ariaLabel="A grid." hint="Plot two points." snap="${snap}" >}}`,
+    `{"answer":{"slope":1,"intercept":0},"grid":${grid}}`,
+    '{{< /graphplot >}}',
+  ].join('\n');
+  const errorsOf = (grid, snap) => lintHugo(graphplot(grid, snap), SECTION).errors
+    .filter((error) => error.includes('graphplot'));
+
+  // Chosen so that every PRE-EXISTING ceiling stays quiet: 201 grid lines, and
+  // a snap coarse enough that the selectable-points guard is far from firing.
+  // What is left is the one the component would hit — 100,001 tick labels per
+  // axis at the effective tick step of 2.
+  const WIDE = '{"xMin":-100000,"xMax":100000,"yMin":-7,"yMax":7,"gridStep":1000}';
+  assert.equal(errorsOf(WIDE, 1000).length, 1,
+    'a grid whose effective tick labels exceed the ceiling must fail the lint');
+  assert.match(errorsOf(WIDE, 1000)[0], /too many tick labels/);
+
+  // An author who turns the labels off is asking for something renderable, and
+  // the same grid is then fine.
+  assert.equal(errorsOf('{"xMin":-100000,"xMax":100000,"yMin":-7,"yMax":7,"gridStep":1000,"tickLabels":false}', 1000).length, 0);
+
+  // The ordinary authored grids stay silent.
+  assert.equal(errorsOf('{}').length, 0);
+  assert.equal(errorsOf('{"xMin":-10,"xMax":10,"yMin":-10,"yMax":10}').length, 0);
+  assert.equal(errorsOf('{"xMin":-20,"xMax":20,"yMin":-20,"yMax":20,"gridStep":2,"tickStep":4}').length, 0);
+});
+
+// ---- answerDisplay is not a multiplechoice parameter ------------------------
+// The lint used to check it for print-source labels, which made it look like a
+// supported param; the template never rendered it and no page has ever used it.
+test('answerDisplay on a multiplechoice is an error, not a silent no-op', () => {
+  const SECTION = 'content/math/book/01-chapter/01-section.md';
+  const mc = (extra) => `{{< multiplechoice question="Which is larger?" answer="yes"${extra} hint="Compare." >}}\nyes\nno\n{{< /multiplechoice >}}`;
+  const errorsOf = (src) => lintHugo(src, SECTION).errors
+    .filter((error) => error.includes('answerDisplay is not supported'));
+
+  assert.equal(errorsOf(mc(' answerDisplay="$yes$"')).length, 1);
+  assert.equal(errorsOf(mc('')).length, 0);
+  // An empty value is still an author reaching for the param.
+  assert.equal(errorsOf(mc(' answerDisplay=""')).length, 1);
+  // fillin does support it, and must stay silent.
+  assert.equal(
+    lintHugo('{{< fillin question="Simplify $x+x$." answer="2x" answerDisplay="$2x$" hint="Add." >}}', SECTION)
+      .errors.filter((e) => e.includes('answerDisplay')).length,
+    0,
+  );
+});

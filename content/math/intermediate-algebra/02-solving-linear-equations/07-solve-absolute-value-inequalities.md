@@ -12,9 +12,9 @@ weight: 7
 **By the end of this section, you will be able to:**
 
 - Solve absolute value equations
-- Solve absolute value inequalities with “less than
-- ” solve absolute value inequalities with “greater than
-- ” and solve applications with absolute value
+- Solve absolute value inequalities with “less than”
+- Solve absolute value inequalities with “greater than”
+- Solve applications with absolute value
 {{< /callout >}}
 
 ## Solve Absolute Value Equations
@@ -423,9 +423,113 @@ The diameter of the rod can be between 59.925 mm and 60.075 mm.
   hint="Use $|x-80|\leq0.009$, and rewrite it as a compound inequality."
 >}}
 
+## Practice
+
+### Solve absolute value equations
+
+{{< fillin
+  question="Solve $|x|=4$. Enter both solutions, separated by a comma."
+  answer="-4,4"
+  answerMode="unordered"
+  answerDisplay="$x=-4$ or $x=4$"
+  hint="An absolute value equal to $4$ means the expression is either $4$ units to the right of zero or $4$ units to the left."
+>}}
+
+{{< multiplechoice
+  question="Solve $|y|=-5$."
+  answer="No solution"
+  hint="An absolute value can never equal a negative number."
+>}}
+No solution
+$y=5$
+$y=-5$
+$y=0$
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Solve $|z|=0$."
+  answer="0"
+  answerDisplay="$z=0$"
+  hint="The only number that is zero units from zero is zero itself."
+>}}
+
+{{< fillin
+  question="Solve $|4x+3|=|2x+1|$. Enter both solutions, separated by a comma."
+  answer="-1,-\frac{2}{3}"
+  answerMode="unordered"
+  answerDisplay="$x=-1$ or $x=-\tfrac{2}{3}$"
+  hint="Since the two absolute values are equal, the expressions inside are equal or opposites: solve both $4x+3=2x+1$ and $4x+3=-(2x+1)$."
+>}}
+
+### Solve absolute value inequalities with “less than”
+
+{{< fillin
+  question="Solve $|2x-5|\le3$. Enter the solution in interval notation."
+  answer="[1,4]"
+  answerDisplay="$[1,4]$"
+  hint="Write the equivalent compound inequality $-3\le2x-5\le3$, and solve all three parts together."
+>}}
+
+{{< fillin
+  question="Solve $|6x-5|<7$. Enter the solution in interval notation."
+  answer="(-\frac{1}{3},2)"
+  answerDisplay="$\left(-\tfrac{1}{3},2\right)$"
+  hint="Write the equivalent compound inequality $-7<6x-5<7$, and solve all three parts together."
+>}}
+
+{{< multiplechoice
+  question="Solve $|5x+1|\le-2$."
+  answer="No solution"
+  hint="An absolute value is never less than a negative number, so no value of $x$ can make this true."
+>}}
+No solution
+All real numbers
+$x=-\tfrac{1}{5}$
+$\left[-\tfrac{3}{5},\tfrac{1}{5}\right]$
+{{< /multiplechoice >}}
+
+### Solve absolute value inequalities with “greater than”
+
+{{< fillin
+  question="Solve $|2x-1|>5$. Enter the solution in interval notation."
+  answer="(-\infty,-2)\cup(3,\infty)"
+  answerDisplay="$(-\infty,-2)\cup(3,\infty)$"
+  hint="Write $2x-1<-5$ or $2x-1>5$, then solve both inequalities."
+>}}
+
+{{< fillin
+  question="Solve $|x-7|\ge1$. Enter the solution in interval notation."
+  answer="(-\infty,6]\cup[8,\infty)"
+  answerDisplay="$(-\infty,6]\cup[8,\infty)$"
+  hint="Write $x-7\le-1$ or $x-7\ge1$, then solve both inequalities."
+>}}
+
+{{< fillin
+  question="Solve $5|x|+6\ge1$. Enter the solution in interval notation."
+  answer="(-\infty,\infty)"
+  answerDisplay="$(-\infty,\infty)$"
+  hint="Isolate the absolute value to get $|x|\ge-1$. Since an absolute value is always at least zero, the inequality holds for every real number."
+>}}
+
+### Solve applications with absolute value
+
+{{< fillin
+  question="An organic juice bottler ideally produces 215,000 bottles per day, but this total can vary by as much as 7,500 bottles. Enter the minimum and maximum expected daily production, in bottles, separated by a comma."
+  answer="207500,222500"
+  answerDisplay="207,500 to 222,500 bottles"
+  hint="Set up $|x-215{,}000|\le7{,}500$, rewrite it as a compound inequality, and solve for $x$."
+>}}
+
+{{< fillin
+  question="At Lilly’s Bakery, the ideal weight of a loaf of bread is 24 ounces. By law, the actual weight can vary from the ideal by 1.5 ounces. Enter the minimum and maximum acceptable weight, in ounces, separated by a comma."
+  answer="22.5,25.5"
+  answerDisplay="22.5 to 25.5 ounces"
+  hint="Set up $|x-24|\le1.5$, rewrite it as a compound inequality, and solve for $x$."
+>}}
+
 **Key terms.** **Absolute value** is the distance of a number from zero on
 the number line. **Tolerance** is the allowed difference from a specification.
 
 ---
 
-<small>Adapted from [*Intermediate Algebra 2e*, Section 2.7](https://openstax.org/books/intermediate-algebra-2e/pages/2-7-solve-absolute-value-inequalities) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the source text and examples for web presentation and converted selected Try It exercises into interactive checks.</small>
+<small>Adapted from [*Intermediate Algebra 2e*, Section 2.7](https://openstax.org/books/intermediate-algebra-2e/pages/2-7-solve-absolute-value-inequalities) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the source text and examples for web presentation, converted selected Try It exercises into interactive checks, and adapted selected end-of-section exercises into an interactive practice block.</small>

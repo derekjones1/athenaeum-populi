@@ -11,14 +11,26 @@
          - main.js (components entry): tiny; registers the custom elements. The
            engine's URL is injected via `params` (read as @params) so the entry
            never bundles MathLive.
-       js.Build has no working `splitting` option, hence the two-bundle split. */ -}}
+       js.Build has no working `splitting` option, hence the two-bundle split.
+
+       All three outputs are fingerprinted in production, and the entry script
+       carries an SRI hash — the same treatment the theme's own search bundle
+       gets. Without it the filenames are stable, so a browser (or a CDN edge)
+       that cached yesterday's `components.js` keeps running it after a deploy,
+       against today's HTML. The two engine URLs are fingerprinted BEFORE they
+       are injected as params, so the runtime `import(engineUrl)` chain resolves
+       to the fingerprinted files too. */ -}}
 {{- if site.Params.components.enable -}}
   {{- $engineURL := "" -}}
   {{- with resources.Get "js/fillin-engine.js" -}}
     {{- $eopts := dict "minify" hugo.IsProduction "targetPath" "js/fillin-engine.js" "format" "esm" -}}
     {{- with try (. | js.Build $eopts) -}}
       {{- with .Err -}}{{- errorf "js.Build failed for fillin-engine: %s" . -}}
-      {{- else -}}{{- $engineURL = .Value.RelPermalink -}}{{- end -}}
+      {{- else -}}
+        {{- $engine := .Value -}}
+        {{- if hugo.IsProduction -}}{{- $engine = $engine | fingerprint -}}{{- end -}}
+        {{- $engineURL = $engine.RelPermalink -}}
+      {{- end -}}
     {{- end -}}
   {{- end -}}
   {{- $graphplotURL := "" -}}
@@ -26,7 +38,11 @@
     {{- $gopts := dict "minify" hugo.IsProduction "targetPath" "js/graphplot-engine.js" "format" "esm" -}}
     {{- with try (. | js.Build $gopts) -}}
       {{- with .Err -}}{{- errorf "js.Build failed for graphplot-engine: %s" . -}}
-      {{- else -}}{{- $graphplotURL = .Value.RelPermalink -}}{{- end -}}
+      {{- else -}}
+        {{- $graphplot := .Value -}}
+        {{- if hugo.IsProduction -}}{{- $graphplot = $graphplot | fingerprint -}}{{- end -}}
+        {{- $graphplotURL = $graphplot.RelPermalink -}}
+      {{- end -}}
     {{- end -}}
   {{- end -}}
   {{- with resources.Get "js/main.js" -}}
@@ -35,7 +51,13 @@
       {{- with .Err -}}
         {{- errorf "js.Build failed for components bundle: %s" . -}}
       {{- else -}}
-        <script type="module" src="{{ .Value.RelPermalink }}"></script>
+        {{- $components := .Value -}}
+        {{- if hugo.IsProduction -}}
+          {{- $components = $components | fingerprint -}}
+          <script type="module" src="{{ $components.RelPermalink }}" integrity="{{ $components.Data.Integrity }}" crossorigin="anonymous"></script>
+        {{- else -}}
+          <script type="module" src="{{ $components.RelPermalink }}"></script>
+        {{- end -}}
       {{- end -}}
     {{- end -}}
   {{- end -}}

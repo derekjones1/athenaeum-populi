@@ -5,6 +5,12 @@ import {
   readdirSync,
 } from 'node:fs';
 import path from 'node:path';
+import { mathSpans, parseFrontmatter, shortcodeParams } from './lib-content.mjs';
+
+// Re-exported because `validate-content` and the source audit both read local
+// frontmatter through this module; the implementation now lives with the other
+// content primitives so the structure validator and this audit cannot drift.
+export { parseFrontmatter };
 
 const EXCLUDED_CORE_SECTION_CLASSES = new Set([
   'key-concepts',
@@ -462,28 +468,6 @@ export function parseModuleXml(xml) {
   };
 }
 
-export function parseFrontmatter(markdown) {
-  const match = markdown.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/);
-  if (!match) return { attributes: {}, body: markdown };
-  const attributes = {};
-  for (const line of match[1].split(/\r?\n/)) {
-    const field = line.match(/^([A-Za-z_][\w-]*):\s*(.*?)\s*$/);
-    if (!field) continue;
-    let value = field[2];
-    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
-      value = value.slice(1, -1);
-    }
-    attributes[field[1]] = value;
-  }
-  return { attributes, body: markdown.slice(match[0].length) };
-}
-
-function shortcodeParams(source) {
-  const params = {};
-  for (const match of source.matchAll(/([\w-]+)="([^"]*)"/g)) params[match[1]] = match[2];
-  return params;
-}
-
 function localInteractions(body) {
   const interactions = [];
   for (const match of body.matchAll(/\{\{<\s*(fillin|multiplechoice|graphplot)\b([\s\S]*?)>\}\}/g)) {
@@ -496,8 +480,11 @@ function localInteractions(body) {
       answer,
       semanticQuestion: normalizeSemanticText(question),
       semanticAnswer: normalizeSemanticText(answer),
-      questionMath: [...question.matchAll(/\$([^$]+)\$/g)].map((math) => normalizeSemanticText(math[1])),
-      answerMath: [...answer.matchAll(/\$([^$]+)\$/g)].map((math) => normalizeSemanticText(math[1])),
+      // Through the shared extractor, which shields `\$`. Scanning raw meant an
+      // authored money amount opened a span, so every later span in the same
+      // string was sliced at the wrong delimiter and compared as garbage.
+      questionMath: mathSpans(question, { allowNewlines: true }).map((span) => normalizeSemanticText(span.tex)),
+      answerMath: mathSpans(answer, { allowNewlines: true }).map((span) => normalizeSemanticText(span.tex)),
     });
   }
   return interactions;

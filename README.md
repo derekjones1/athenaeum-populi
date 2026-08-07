@@ -10,9 +10,12 @@ Requirements: Hugo extended 0.164.0, Node.js 22, and npm.
 
 ```sh
 npm ci
-npx playwright install chromium # one-time browser install for accessibility tests
 npm run serve
 ```
+
+No browser install step is needed: the Playwright suites drive the Chrome
+already installed on the machine (`channel: 'chrome'` in
+`playwright.config.mjs`). See `AGENTS.md` §Browsers.
 
 Open <http://localhost:1313>. npm supplies the browser dependencies and fronts
 verification, source-reconciliation, and Pagefind commands; Hugo builds and
@@ -53,6 +56,4 @@ summarized in [docs/architecture.md](docs/architecture.md).
 `wrangler.jsonc` deploys `public/` as static assets to the existing
 `athenaeum-populi` Worker. On pushes to `main`, GitHub Actions runs the complete
 verification gate before deploying. It requires repository secrets
-`CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`; see
-[docs/main-branch-promotion-checklist.md](docs/main-branch-promotion-checklist.md)
-for the current production verification, smoke-test, and rollback runbook.
+`CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`.

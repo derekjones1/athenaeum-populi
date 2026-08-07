@@ -13,8 +13,30 @@
 */ -}}
 {{- $question := .Get "question" -}}
 {{- $mode := .Get "mode" | default "text" -}}
+{{- /* Defense in depth. The content lint catches these first and names them
+     better, but the lint runs over `content/` while a build renders every
+     shortcode anywhere — an exercise with no question would otherwise ship a
+     silent empty prompt. `fillin.html` has gated this way since it landed. */ -}}
+{{- if not (trim ($question | default "") " ") -}}
+  {{- errorf "multiplechoice shortcode needs a non-empty 'question' (%s)" .Position -}}
+{{- end -}}
+{{- if eq $mode "graph" -}}
+  {{- $answerIndex := .Get "answerIndex" -}}
+  {{- if not (findRE `^\d+$` (printf "%v" ($answerIndex | default ""))) -}}
+    {{- errorf "multiplechoice(graph) needs a nonnegative integer 'answerIndex', got %q (%s)" ($answerIndex | default "") .Position -}}
+  {{- end -}}
+{{- else -}}
+  {{- if not (trim (.Get "answer" | default "") " ") -}}
+    {{- errorf "multiplechoice shortcode needs a non-empty 'answer' in text mode (%s)" .Position -}}
+  {{- end -}}
+{{- end -}}
+{{- /* `answerDisplay` is not a multiplechoice parameter — the correct option is
+     already on screen, so there is nothing to reveal. Reject it rather than
+     accept and ignore it, which is what made it look supported. */ -}}
+{{- with .Get "answerDisplay" -}}
+  {{- errorf "multiplechoice does not support 'answerDisplay' — the chosen option is the answer (%s)" $.Position -}}
+{{- end -}}
 {{- .Page.Store.Set "hasMath" true -}}
-{{- .Page.Store.Set "hasInteractive" true -}}
 <multiple-choice data-mode="{{ $mode }}"
   {{- if eq $mode "graph" }} data-answer-index="{{ .Get "answerIndex" }}"{{ else }} data-answer="{{ .Get "answer" }}"{{ end }}>
   <div class="ap-mc">

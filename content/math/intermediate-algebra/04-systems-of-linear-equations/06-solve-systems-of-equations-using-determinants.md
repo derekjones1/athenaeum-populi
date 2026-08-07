@@ -434,6 +434,116 @@ yes
 no
 {{< /multiplechoice >}}
 
+## Practice
+
+### Evaluate the determinant of a $2 \times 2$ matrix
+
+{{< fillin
+  question="Evaluate the determinant $\begin{vmatrix} -4 & 8 \\ -3 & 5 \end{vmatrix}$."
+  answer="4"
+  hint="Subtract the products of the diagonals: $(-4)(5) - (-3)(8)$."
+>}}
+
+{{< fillin
+  question="Evaluate the determinant $\begin{vmatrix} -2 & 0 \\ 7 & -5 \end{vmatrix}$."
+  answer="10"
+  hint="Subtract the products of the diagonals: $(-2)(-5) - 7(0)$."
+>}}
+
+### Evaluate the determinant of a $3 \times 3$ matrix
+
+{{< fillin
+  question="Evaluate the determinant $\begin{vmatrix} 4 & -1 & -2 \\ -3 & -2 & 1 \\ -2 & -5 & 7 \end{vmatrix}$ by expanding by minors."
+  answer="-77"
+  hint="Expand along the first row: $4\begin{vmatrix} -2 & 1 \\ -5 & 7 \end{vmatrix} - (-1)\begin{vmatrix} -3 & 1 \\ -2 & 7 \end{vmatrix} + (-2)\begin{vmatrix} -3 & -2 \\ -2 & -5 \end{vmatrix}$."
+>}}
+
+{{< fillin
+  question="Evaluate the determinant $\begin{vmatrix} 1 & 3 & -2 \\ 5 & -6 & 4 \\ 0 & -2 & -1 \end{vmatrix}$ by expanding by minors."
+  answer="49"
+  hint="Pick the row or column with the most zeros to make the arithmetic easier, and watch the sign pattern."
+>}}
+
+{{< fillin
+  question="Evaluate the determinant $\begin{vmatrix} 4 & -1 & 3 \\ 3 & -2 & 2 \\ -1 & 0 & 4 \end{vmatrix}$ by expanding by minors."
+  answer="-24"
+  hint="Expanding along the row or column containing the $0$ saves a step."
+>}}
+
+{{< fillin
+  question="Evaluate the determinant $\begin{vmatrix} 2 & -4 & -3 \\ 5 & -1 & -4 \\ 3 & 2 & 0 \end{vmatrix}$ by expanding by minors."
+  answer="25"
+  hint="Expanding along the row or column containing the $0$ saves a step."
+>}}
+
+### Use Cramer's Rule to solve systems of equations
+
+{{< fillin
+  question="Solve using Cramer's Rule: $\left\{\begin{array}{l} x-2y=-5 \\ 2x-3y=-4 \end{array}\right.$ Enter the solution as an ordered pair."
+  answer="(7, 6)"
+  hint="Evaluate $D=\begin{vmatrix}1&-2\\2&-3\end{vmatrix}$, $D_x=\begin{vmatrix}-5&-2\\-4&-3\end{vmatrix}$, and $D_y=\begin{vmatrix}1&-5\\2&-4\end{vmatrix}$, then form $x=\tfrac{D_x}{D}$ and $y=\tfrac{D_y}{D}$."
+>}}
+
+{{< fillin
+  question="Solve using Cramer's Rule: $\left\{\begin{array}{l} x-3y=-9 \\ 2x+5y=4 \end{array}\right.$ Enter the solution as an ordered pair."
+  answer="(-3, 2)"
+  hint="Evaluate $D=\begin{vmatrix}1&-3\\2&5\end{vmatrix}$, $D_x=\begin{vmatrix}-9&-3\\4&5\end{vmatrix}$, and $D_y=\begin{vmatrix}1&-9\\2&4\end{vmatrix}$, then form $x=\tfrac{D_x}{D}$ and $y=\tfrac{D_y}{D}$."
+>}}
+
+{{< fillin
+  question="Solve the system of equations using Cramer's Rule: $\left\{\begin{array}{l} 4x-3y+z=7 \\ 2x-5y-4z=3 \\ 3x-2y-2z=-7 \end{array}\right.$ Enter the solution as an ordered triple."
+  answer="(-3, -5, 4)"
+  hint="Evaluate $D$ using the coefficients of $x, y, z$, then $D_x$, $D_y$, $D_z$ by replacing one column of coefficients at a time with the constants $7, 3, -7$."
+>}}
+
+{{< multiplechoice
+  question="Use Cramer's Rule to solve $\left\{\begin{array}{l} 4x+3y=2 \\ 20x+15y=5 \end{array}\right.$"
+  hint="Evaluate $D$ first. If $D=0$, check whether $D_x$ or $D_y$ is nonzero."
+  answer="no solution"
+>}}
+no solution
+infinitely many solutions
+(2, -2)
+(-2, 2)
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Use Cramer's Rule to solve $\left\{\begin{array}{l} x-2y+3z=1 \\ x+y-3z=7 \\ 3x-4y+5z=7 \end{array}\right.$"
+  hint="Evaluate $D$ using the coefficients of $x,y,z$. If $D=0$, check whether $D_x$, $D_y$, or $D_z$ is nonzero."
+  answer="infinitely many solutions"
+>}}
+no solution
+infinitely many solutions
+(1, 7, 7)
+(0, 0, 0)
+{{< /multiplechoice >}}
+
+### Solve applications using determinants
+
+{{< fillin
+  question="To test whether the points $(0,-5)$, $(-2,-2)$, and $(2,-8)$ are collinear, evaluate the determinant $\begin{vmatrix} 0 & -5 & 1 \\ -2 & -2 & 1 \\ 2 & -8 & 1 \end{vmatrix}$."
+  answer="0"
+  hint="Expand along the first row; the points are collinear exactly when this determinant comes out $0$."
+>}}
+
+{{< multiplechoice
+  question="Determine whether the points $(0,-5)$, $(-2,-2)$, and $(2,-8)$ are collinear."
+  hint="Form the $3\times 3$ determinant with the coordinates and a column of $1\text{s}$; it is zero exactly when the points are collinear."
+  answer="yes"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether the points $(-2,1)$, $(-4,4)$, and $(0,-2)$ are collinear."
+  hint="Form the $3\times 3$ determinant with the coordinates and a column of $1\text{s}$; it is zero exactly when the points are collinear."
+  answer="yes"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
 ## Key terms
 
 **square matrix** — a matrix that has the same number of rows and columns.
@@ -452,4 +562,4 @@ zero.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 4.6: Solve Systems of Equations Using Determinants](https://openstax.org/books/intermediate-algebra-2e/pages/4-6-solve-systems-of-equations-using-determinants) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: represented determinants and the sign-pattern chart with KaTeX vmatrix notation instead of the source's crossed-out row/column diagrams, and its step tables as single display equality chains; recreated the Dependent and Inconsistent Systems table as a markdown table; omitted the Be Prepared quiz, Media links, self-check, and section exercises; and converted the source Try Its into interactive exercises with instant feedback, reducing multi-part items to a single part each.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 4.6: Solve Systems of Equations Using Determinants](https://openstax.org/books/intermediate-algebra-2e/pages/4-6-solve-systems-of-equations-using-determinants) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: represented determinants and the sign-pattern chart with KaTeX vmatrix notation instead of the source's crossed-out row/column diagrams, and its step tables as single display equality chains; recreated the Dependent and Inconsistent Systems table as a markdown table; omitted the Be Prepared quiz, Media links, and self-check; converted the source Try Its into interactive exercises with instant feedback, reducing multi-part items to a single part each; and adapted selected end-of-section Practice Makes Perfect exercises into the section's interactive Practice block.</small>

@@ -570,6 +570,104 @@ mph.
   hint="Let j = the jet's speed in still air and w = the wind's speed. The system is $5(j + w) = 1{,}325$ and $5(j - w) = 1{,}035$. Solve for w."
 >}}
 
+## Practice
+
+### Solve direct translation applications
+
+{{< fillin
+  question="The sum of two numbers is 30. One number is 4 less than the other. Find the smaller number."
+  answer="13"
+  hint="Let m = the larger number and n = the smaller number, so $m + n = 30$ and $n = m - 4$. Substitute and solve for n."
+>}}
+
+{{< fillin
+  question="Jackie has been offered positions by two cable companies. The first company pays a salary of \$14,000 plus a commission of \$100 for each cable package sold. The second pays a salary of \$20,000 plus a commission of \$25 for each cable package sold. How many cable packages would need to be sold to make the total pay the same?"
+  answer="80"
+  hint="Let s = the salary and p = the number of cable packages sold. The system is $s = 14{,}000 + 100p$ and $s = 20{,}000 + 25p$. Substitute and solve for p."
+>}}
+
+{{< fillin
+  question="June needs 48 gallons of punch for a party and has two different coolers to carry it in. The bigger cooler is five times as large as the smaller cooler. How many gallons can the smaller cooler hold?"
+  answer="8"
+  hint="Let b = the big cooler's capacity and s = the small cooler's capacity, so $b + s = 48$ and $b = 5s$. Substitute and solve for s."
+>}}
+
+{{< fillin
+  question="June needs 48 gallons of punch for a party and has two different coolers to carry it in. The bigger cooler is five times as large as the smaller cooler. How many gallons can the bigger cooler hold?"
+  answer="40"
+  hint="Let b = the big cooler's capacity and s = the small cooler's capacity, with $b + s = 48$ and $b = 5s$. Once you find s, use $b = 5s$ to find b."
+>}}
+
+{{< fillin
+  question="Drew burned 1,800 calories Friday playing one hour of basketball and canoeing for two hours. Saturday he spent two hours playing basketball and three hours canoeing and burned 3,200 calories. How many calories did he burn per hour when playing basketball?"
+  answer="1000"
+  hint="Let b = calories burned per hour of basketball and c = calories burned per hour of canoeing. The system is $b + 2c = 1{,}800$ and $2b + 3c = 3{,}200$. Solve for b."
+>}}
+
+{{< fillin
+  question="Drew burned 1,800 calories Friday playing one hour of basketball and canoeing for two hours. Saturday he spent two hours playing basketball and three hours canoeing and burned 3,200 calories. How many calories did he burn per hour when canoeing?"
+  answer="400"
+  hint="Let b = calories burned per hour of basketball and c = calories burned per hour of canoeing. The system is $b + 2c = 1{,}800$ and $2b + 3c = 3{,}200$. Solve for c."
+>}}
+
+### Solve geometry applications
+
+{{< fillin
+  question="The difference of two complementary angles is 17 degrees. Find the measure of the larger angle."
+  answer="53.5"
+  hint="Let x and y be the two angle measures, with $x + y = 90$ and $x - y = 17$. Add the equations to solve for x."
+>}}
+
+{{< fillin
+  question="Two angles are supplementary. The measure of the larger angle is five less than four times the measure of the smaller angle. Find the measure of the larger angle."
+  answer="143"
+  hint="Let x = the larger angle and y = the smaller angle. The system is $x + y = 180$ and $x = 4y - 5$. Substitute and solve for y, then find x."
+>}}
+
+{{< fillin
+  question="The measure of one of the small angles of a right triangle is 26 more than 3 times the measure of the other small angle. Find the measure of the larger small angle."
+  answer="74"
+  hint="Let a and b be the two small angles, with $a = 3b + 26$. Since the small angles of a right triangle sum to 90 degrees, $a + b = 90$. Substitute and solve for b, then find a."
+>}}
+
+{{< fillin
+  question="The perimeter of a toddler play area is 100 feet. The length is ten more than three times the width. Find the width of the play area, in feet."
+  answer="10"
+  hint="Let L = the length and W = the width. Two lengths and two widths make the perimeter: $2L + 2W = 100$. The length is $L = 3W + 10$. Substitute and solve for W."
+>}}
+
+{{< fillin
+  question="The perimeter of a toddler play area is 100 feet. The length is ten more than three times the width. Find the length of the play area, in feet."
+  answer="40"
+  hint="Let L = the length and W = the width, with $2L + 2W = 100$ and $L = 3W + 10$. Once you find W, use $L = 3W + 10$ to find L."
+>}}
+
+### Solve uniform motion applications
+
+{{< fillin
+  question="A motor boat travels 60 miles down a river in three hours but takes five hours to return upstream. Find the rate of the current, in mph."
+  answer="4"
+  hint="Let s = the boat's speed in still water and c = the current's speed. Downstream: $3(s + c) = 60$. Upstream: $5(s - c) = 60$. Solve the system for c."
+>}}
+
+{{< fillin
+  question="A river cruise boat sailed 80 miles down the Mississippi River for four hours. It took five hours to return. Find the rate of the cruise boat in still water, in mph."
+  answer="18"
+  hint="Let s = the boat's speed in still water and c = the current's speed. Downstream: $4(s + c) = 80$. Upstream: $5(s - c) = 80$. Solve the system for s."
+>}}
+
+{{< fillin
+  question="A small jet can fly 1,435 miles in 5 hours with a tailwind but only 1,215 miles in 5 hours into a headwind. Find the speed of the wind, in mph."
+  answer="22"
+  hint="Let j = the jet's speed in still air and w = the wind's speed. The system is $5(j + w) = 1{,}435$ and $5(j - w) = 1{,}215$. Solve for w."
+>}}
+
+{{< fillin
+  question="A commercial jet can fly 1,320 miles in 3 hours with a tailwind but only 1,170 miles in 3 hours into a headwind. Find the speed of the jet in still air, in mph."
+  answer="415"
+  hint="Let j = the jet's speed in still air and w = the wind's speed. The system is $3(j + w) = 1{,}320$ and $3(j - w) = 1{,}170$. Solve for j."
+>}}
+
 ## Key terms
 
 **complementary angles** — two angles whose measures add to $90$ degrees;
@@ -582,4 +680,4 @@ plane is flying, so it decreases the plane's actual speed to $j-w$.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 4.2: Solve Applications with Systems of Equations](https://openstax.org/books/intermediate-algebra-2e/pages/4-2-solve-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the right-triangle and fenced-yard figures as accessible inline graphics and described the river-current and wind-current illustrations in prose; wrote each system of equations and its elimination or substitution steps as display-math blocks; omitted the "Be Prepared" readiness quiz, the Media link, and the Section 4.2 Exercises ("Practice Makes Perfect") block; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 4.2: Solve Applications with Systems of Equations](https://openstax.org/books/intermediate-algebra-2e/pages/4-2-solve-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the right-triangle and fenced-yard figures as accessible inline graphics and described the river-current and wind-current illustrations in prose; wrote each system of equations and its elimination or substitution steps as display-math blocks; omitted the "Be Prepared" readiness quiz and the Media link; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected exercises from the Section 4.2 Exercises ("Practice Makes Perfect") set into an interactive Practice block.</small>

@@ -939,6 +939,129 @@ yes
 no
 {{< /multiplechoice >}}
 
+## Practice
+
+### Determine whether an ordered pair is a solution of a system of linear inequalities
+
+{{< multiplechoice
+  question="Is $(5,-2)$ a solution to the system $\left\{\begin{array}{l} 4x-y<10 \\ -2x+2y>-8 \end{array}\right.$?"
+  hint="Substitute $x=5$ and $y=-2$ into $4x-y<10$ first; if it's already false, the pair is not a solution."
+  answer="no"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(-1,3)$ a solution to the system $\left\{\begin{array}{l} 4x-y<10 \\ -2x+2y>-8 \end{array}\right.$?"
+  hint="Substitute $x=-1$ and $y=3$ into both inequalities and check that both come out true."
+  answer="yes"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(-4,-1)$ a solution to the system $\left\{\begin{array}{l} y<\tfrac{3}{2}x+3 \\ \tfrac{3}{4}x-2y<5 \end{array}\right.$?"
+  hint="Substitute $x=-4$ and $y=-1$ into $y<\tfrac{3}{2}x+3$ first; it's already false, so the pair is not a solution."
+  answer="no"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(8,3)$ a solution to the system $\left\{\begin{array}{l} y<\tfrac{3}{2}x+3 \\ \tfrac{3}{4}x-2y<5 \end{array}\right.$?"
+  hint="Substitute $x=8$ and $y=3$ into both inequalities and check that both come out true."
+  answer="yes"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Solve a system of linear inequalities by graphing
+
+{{< multiplechoice
+  question="Does the system $\left\{\begin{array}{l} x-3y\geq6 \\ y>\tfrac{1}{3}x+1 \end{array}\right.$ have a solution?"
+  hint="Write both boundary lines in slope-intercept form: they're parallel with slope $\tfrac{1}{3}$, and the shading for each inequality faces away from the other."
+  answer="no"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="For the system $\left\{\begin{array}{l} y<-2x+2 \\ y\geq-x-1 \end{array}\right.$, find the intersection point of the two boundary lines $y=-2x+2$ and $y=-x-1$."
+  answer="(3,-4)"
+  answerDisplay="$(3,-4)$"
+  hint="Set $-2x+2=-x-1$ and solve for $x$, then substitute back to find $y$."
+>}}
+
+{{< multiplechoice
+  question="Is the point $(-5,2)$ in the solution region of the system $\left\{\begin{array}{l} 2x+y>-6 \\ -x+2y\geq-4 \end{array}\right.$?"
+  hint="Substitute $x=-5$ and $y=2$ into $2x+y>-6$ first — it's already false, so the point can't be in the solution region."
+  answer="no"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Solve applications of systems of inequalities
+
+Jake doesn't want to spend more than \$50 on bags of fertilizer and peat moss for his garden. Fertilizer costs \$2 a bag and peat moss costs \$5 a bag, and his van can hold at most 20 bags.
+
+{{< fillin
+  question="If $f$ is the number of bags of fertilizer and $p$ is the number of bags of peat moss, write an inequality that models Jake's budget: fertilizer costs \$2 a bag, peat moss costs \$5 a bag, and he doesn't want to spend more than \$50."
+  answer="2f+5p\leq50"
+  answerDisplay="$2f+5p\leq50$"
+  hint="Multiply each price by its number of bags, add them, and use 'not more than' to choose $\leq$."
+>}}
+
+{{< multiplechoice
+  question="Jake's system is $\left\{\begin{array}{l} f+p\leq20 \\ 2f+5p\leq50 \end{array}\right.$, where $f$ is bags of fertilizer and $p$ is bags of peat moss. Can he buy 15 bags of fertilizer and 4 bags of peat moss?"
+  hint="Check both inequalities: $15+4=19$ and $2(15)+5(4)=50$."
+  answer="yes"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Jake's system is $\left\{\begin{array}{l} f+p\leq20 \\ 2f+5p\leq50 \end{array}\right.$, where $f$ is bags of fertilizer and $p$ is bags of peat moss. Can he buy 10 bags of fertilizer and 10 bags of peat moss?"
+  hint="Check the budget inequality: $2(10)+5(10)=70$."
+  answer="no"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+Mark is increasing his exercise routine by running and walking at least 4 miles each day. His goal is to burn a minimum of 1,500 calories from this exercise. Walking burns 270 calories per mile and running burns 650 calories per mile.
+
+{{< fillin
+  question="If $w$ is the number of miles Mark walks and $r$ is the number of miles he runs, write an inequality that models his calorie goal: walking burns 270 calories per mile, running burns 650 calories per mile, and he wants a minimum of 1,500 calories burned."
+  answer="270w+650r\geq1500"
+  answerDisplay="$270w+650r\geq1500$"
+  hint="Multiply each rate by its number of miles, add them, and use 'a minimum of' to choose $\geq$."
+>}}
+
+{{< multiplechoice
+  question="Mark's system is $\left\{\begin{array}{l} w+r\geq4 \\ 270w+650r\geq1500 \end{array}\right.$, where $w$ is miles walked and $r$ is miles run. Could he meet his goal by walking 3 miles and running 1 mile?"
+  hint="Check the calorie inequality: $270(3)+650(1)=1{,}460$."
+  answer="no"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Mark's system is $\left\{\begin{array}{l} w+r\geq4 \\ 270w+650r\geq1500 \end{array}\right.$, where $w$ is miles walked and $r$ is miles run. Could he meet his goal by walking 2 miles and running 2 miles?"
+  hint="Check both inequalities: $2+2=4$ and $270(2)+650(2)=1{,}840$."
+  answer="yes"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
 ## Key terms
 
 **system of linear inequalities** — two or more linear inequalities grouped
@@ -949,4 +1072,4 @@ whose ordered pairs make the inequalities true.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 4.7: Graphing Systems of Linear Inequalities](https://openstax.org/books/intermediate-algebra-2e/pages/4-7-graphing-systems-of-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the coordinate-plane figures as accessible interactive graphs; omitted the Be Prepared quiz, Media links, Self Check, and Section Exercises; and converted the source Try Its into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 4.7: Graphing Systems of Linear Inequalities](https://openstax.org/books/intermediate-algebra-2e/pages/4-7-graphing-systems-of-linear-inequalities) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the coordinate-plane figures as accessible interactive graphs; omitted the Be Prepared quiz, Media links, and Self Check; converted the source Try Its into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive practice block.</small>

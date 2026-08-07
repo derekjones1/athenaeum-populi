@@ -513,6 +513,85 @@ both the cost and the revenue are \$12,250.
   hint="Set $120x + 150{,}000$ equal to $170x$ and solve for x."
 >}}
 
+## Practice
+
+### Solve mixture applications
+
+{{< fillin
+  question="The community fair sold 312 tickets on its first day for a total of \$2,204. Adult tickets cost \$12 and child tickets cost \$5. How many child tickets were sold?"
+  answer="220"
+  hint="Let a be the number of adult tickets and c the number of child tickets, so $a + c = 312$. Set $12a + 5c$ equal to 2,204, then solve the system for c."
+>}}
+
+{{< fillin
+  question="Sherri saves nickels and dimes in a coin purse for her daughter, with a total value of \$0.95. The number of nickels is two less than five times the number of dimes. How many dimes are in the purse?"
+  answer="3"
+  hint="Let n be the number of nickels and d the number of dimes, so $n = 5d - 2$. Set $0.05n + 0.10d$ equal to 0.95, substitute for n, and solve for d."
+>}}
+
+{{< fillin
+  question="Joseph wants to make twelve pounds of a coffee blend costing \$6 a pound, using Ground Chicory at \$5 a pound and Jamaican Blue Mountain at \$9 a pound. How many pounds of Jamaican Blue Mountain coffee should he use?"
+  answer="3"
+  hint="Let c be the pounds of Ground Chicory and j the pounds of Jamaican Blue Mountain, so $c + j = 12$. Set $5c + 9j$ equal to 72, then solve the system for j."
+>}}
+
+{{< fillin
+  question="A 90% antifreeze solution is to be mixed with a 75% antifreeze solution to make 360 liters of an 85% solution. How many liters of the 90% solution should be used?"
+  answer="240"
+  hint="Let x be the liters of the 90% solution and y the liters of the 75% solution, so $x + y = 360$. Set $0.90x + 0.75y$ equal to 306, then solve the system for x."
+>}}
+
+### Solve interest applications
+
+{{< fillin
+  question="Carol invested \$2,560 into two accounts, one paying 8% interest and the other paying 6% interest. She earned 7.25% interest on the total investment for the year. How much money did she put into the account paying 8% interest?"
+  answer="1600"
+  hint="Let s be the amount in the account paying 8% and b the amount in the account paying 6%, so $s + b = 2{,}560$. Set $0.08s + 0.06b$ equal to 0.0725(2,560), then solve the system for s."
+>}}
+
+{{< fillin
+  question="Arnold invested \$64,000, part at 5.5% interest and the rest at 9% interest. He received \$4,500 in interest in one year. How much did he invest at 9%?"
+  answer="28000"
+  hint="Let a be the amount invested at 5.5% and b the amount invested at 9%, so $a + b = 64{,}000$. Set $0.055a + 0.09b$ equal to 4,500, then solve the system for b."
+>}}
+
+{{< fillin
+  question="Mark wants to invest \$10,000 to pay for his daughter's wedding next year. He will invest some in a CD that pays 12% interest and the rest in a savings account that pays 5% interest. How much should he invest in the savings account if he wants to earn \$1,095 in interest in one year?"
+  answer="1500"
+  hint="Let c be the amount in the CD and s the amount in savings, so $c + s = 10{,}000$. Set $0.12c + 0.05s$ equal to 1,095, then solve the system for s."
+>}}
+
+### Solve applications of cost and revenue functions
+
+{{< fillin
+  question="The manufacturer of a water bottle spends \$5 to build each bottle and sells them for \$10. The manufacturer also has fixed costs each month of \$6,500. Write the cost function $C(x)$ for producing $x$ bottles."
+  answer="5x+6500"
+  answerDisplay="$5x + 6{,}500$"
+  hint="The cost function is (cost per unit) times x, plus fixed costs."
+>}}
+
+{{< fillin
+  question="Write the revenue function $R(x)$ for selling $x$ water bottles at \$10 each."
+  answer="10x"
+  hint="The revenue function is (selling price per unit) times x."
+>}}
+
+{{< graphplot
+  question="Graph the cost function $C(x) = 5x + 6{,}500$ and the revenue function $R(x) = 10x$ on the same grid to show the break-even point."
+  ariaLabel="A blank grid with x from 0 to 2,000 water bottles and y from 0 to 20,000 dollars."
+  answerDisplay="$C(x) = 5x + 6{,}500$ and $R(x) = 10x$"
+  hint="The cost line starts at $(0, 6{,}500)$ and climbs by 5 for every bottle; the revenue line starts at the origin and climbs by 10 for every bottle."
+  snap="100"
+>}}
+{"answer": {"system": [{"slope": 5, "intercept": 6500}, {"slope": 10, "intercept": 0}]}, "grid": {"xMin": 0, "xMax": 2000, "yMin": 0, "yMax": 20000, "xGridStep": 100, "yGridStep": 1000, "xTickStep": 200, "yTickStep": 2000}}
+{{< /graphplot >}}
+
+{{< fillin
+  question="The manufacturer of the water bottle above must sell how many bottles to break even?"
+  answer="1300"
+  hint="Set $5x + 6{,}500$ equal to $10x$ and solve for x."
+>}}
+
 ## Key terms
 
 **total value model** — $\text{number} \cdot \text{value} = \text{total
@@ -530,4 +609,4 @@ where the cost and revenue functions are equal, $C(x) = R(x)$.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 4.3: Solve Mixture Applications with Systems of Equations](https://openstax.org/books/intermediate-algebra-2e/pages/4-3-solve-mixture-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the ticket/coin/mixture/investment/loan tables as markdown tables; wrote each system of equations and its elimination or substitution steps as display-math blocks; recreated the cost-and-revenue break-even graph with the site's coordinate-graph component; omitted the "Be Prepared" readiness quiz, the Media link, the Section 4.3 Exercises ("Practice Makes Perfect") block, and the Self Check checklist; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 4.3: Solve Mixture Applications with Systems of Equations](https://openstax.org/books/intermediate-algebra-2e/pages/4-3-solve-mixture-applications-with-systems-of-equations) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the ticket/coin/mixture/investment/loan tables as markdown tables; wrote each system of equations and its elimination or substitution steps as display-math blocks; recreated the cost-and-revenue break-even graph with the site's coordinate-graph component; omitted the "Be Prepared" readiness quiz, the Media link, and the Self Check checklist; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected items from the Section 4.3 Exercises ("Practice Makes Perfect") into a section-final interactive Practice block.</small>

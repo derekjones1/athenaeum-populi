@@ -1,10 +1,17 @@
 /**
- * Run with:  node lib/check-answer.test.mjs   (needs Node 22+)
- * Exits 0 if all pass.
+ * Run with:  node --test assets/js/lib/check-answer.test.mjs   (needs Node 22+)
  *
  * Inputs are LaTeX — what a MathLive <math-field> emits.
+ *
+ * The case tables are the value here, so each table is a `test()` group and
+ * each row a named subtest: a CI report names the exact pair that regressed,
+ * and an engine error thrown on one row no longer takes the rest of the file
+ * with it. The tables themselves are unchanged — do not reword a fixture to
+ * make a failure go away.
  */
 
+import test from 'node:test';
+import assert from 'node:assert/strict';
 import {
   ANSWER_FORM_TOKENS, checkAnswer, describeAnswerForm, parseAnswerForm,
 } from './check-answer.mjs';
@@ -27,13 +34,13 @@ const cases = [
   ['   ', 'empty'],
 ];
 
-let failures = 0;
-for (const [input, expected] of cases) {
-  const got = checkAnswer(input, ANSWER);
-  const ok = got === expected;
-  if (!ok) failures++;
-  console.log(`${ok ? 'PASS' : 'FAIL'}  "${input}" -> ${got} (expected ${expected})`);
-}
+test(`grading against ${ANSWER}`, async (t) => {
+  for (const [input, expected] of cases) {
+    await t.test(JSON.stringify(input), () => {
+      assert.equal(checkAnswer(input, ANSWER), expected);
+    });
+  }
+});
 
 const extra = [
   // student, answer, expected
@@ -165,12 +172,13 @@ const extra = [
   ['1200.50', '1{,}200.50', 'correct'],
   ['1,\\frac{\\placeholder{}}{2}', '1,2', 'invalid'], // unfilled box inside a list
 ];
-for (const [student, answer, expected] of extra) {
-  const got = checkAnswer(student, answer);
-  const ok = got === expected;
-  if (!ok) failures++;
-  console.log(`${ok ? 'PASS' : 'FAIL'}  "${student}" vs "${answer}" -> ${got} (expected ${expected})`);
-}
+test('student response vs authored answer', async (t) => {
+  for (const [student, answer, expected] of extra) {
+    await t.test(`${student}  vs  ${answer}`, () => {
+      assert.equal(checkAnswer(student, answer), expected);
+    });
+  }
+});
 
 const unordered = [
   // Root/solution collections accept any order when the author opts in.
@@ -188,32 +196,34 @@ const unordered = [
   ['y=3, y=-5', 'x = -5 , x = 3', 'incorrect'],
   ['3, -5', 'x = -5 , x = 3', 'correct'],
 ];
-for (const [student, answer, expected] of unordered) {
-  const got = checkAnswer(student, answer, { mode: 'unordered' });
-  const ok = got === expected;
-  if (!ok) failures++;
-  console.log(`${ok ? 'PASS' : 'FAIL'}  unordered "${student}" vs "${answer}" -> ${got} (expected ${expected})`);
-}
+test('answerMode="unordered"', async (t) => {
+  for (const [student, answer, expected] of unordered) {
+    await t.test(`${student}  vs  ${answer}`, () => {
+      assert.equal(checkAnswer(student, answer, { mode: 'unordered' }), expected);
+    });
+  }
+});
 
 // The default remains ordered, protecting coordinate tuples, application
 // answers, and sequence terms from accidental permutation acceptance.
-for (const [student, answer] of [
-  ['2,1', '1,2'],
-  ['1,4,9,16', '1,9,4,16'],
-  ['(2,1)', '(1,2)'],
-]) {
-  const got = checkAnswer(student, answer);
-  const ok = got === 'incorrect';
-  if (!ok) failures++;
-  console.log(`${ok ? 'PASS' : 'FAIL'}  ordered "${student}" vs "${answer}" -> ${got} (expected incorrect)`);
-}
+test('the default mode stays ordered', async (t) => {
+  for (const [student, answer] of [
+    ['2,1', '1,2'],
+    ['1,4,9,16', '1,9,4,16'],
+    ['(2,1)', '(1,2)'],
+  ]) {
+    await t.test(`${student}  vs  ${answer}`, () => {
+      assert.equal(checkAnswer(student, answer), 'incorrect');
+    });
+  }
+});
 
 // ---- answerForm: the shape of a right value ------------------------------
 // A re-expression prompt ("Simplify $-\tfrac{40}{88}$") has the printed
 // subject as a correct value, so value grading alone accepts the prompt
 // retyped back. These check that the shape is graded too — and that a wrong
 // value is still reported as wrong rather than as a form complaint.
-for (const [student, answer, form, expected] of [
+const formCases = [
   // lowest terms
   ['-\\tfrac{5}{11}', '-\\tfrac{5}{11}', 'lowest-terms', 'correct'],
   ['-\\tfrac{40}{88}', '-\\tfrac{5}{11}', 'lowest-terms', 'form'],
@@ -492,51 +502,56 @@ for (const [student, answer, form, expected] of [
   ['0.5', '\\frac{1}{2}', undefined, 'correct'],
   ['\\frac{2}{4}', '\\frac{1}{2}', undefined, 'correct'],
   ['\\frac{2}{4}', '\\frac{1}{2}', '', 'correct'],
-]) {
-  const got = checkAnswer(student, answer, { form });
-  const ok = got === expected;
-  if (!ok) failures++;
-  console.log(`${ok ? 'PASS' : 'FAIL'}  form "${student}" vs "${answer}" [${form ?? 'none'}] -> ${got} (expected ${expected})`);
-}
+];
+test('answerForm grades the shape as well as the value', async (t) => {
+  for (const [student, answer, form, expected] of formCases) {
+    await t.test(`${student}  vs  ${answer}  [${form ?? 'none'}]`, () => {
+      assert.equal(checkAnswer(student, answer, { form }), expected);
+    });
+  }
+});
 
-{
-  const unknown = parseAnswerForm('lowest-terms lowset-terms');
-  const ok = unknown.unknown.length === 1 && !unknown.valid;
-  if (!ok) failures++;
-  console.log(`${ok ? 'PASS' : 'FAIL'}  a misspelled answerForm token is reported, not silently ignored`);
+test('answerForm parsing and feedback wording', async (t) => {
+  await t.test('a misspelled token is reported, not silently ignored', () => {
+    const unknown = parseAnswerForm('lowest-terms lowset-terms');
+    assert.equal(unknown.unknown.length, 1);
+    assert.equal(unknown.valid, false);
+  });
 
-  const message = describeAnswerForm('improper-fraction lowest-terms');
-  const named = message.includes('improper fraction') && message.includes('lowest terms');
-  if (!named) failures++;
-  console.log(`${named ? 'PASS' : 'FAIL'}  form feedback names the shape asked for ("${message}")`);
+  await t.test('feedback names the shape asked for', () => {
+    const message = describeAnswerForm('improper-fraction lowest-terms');
+    assert.ok(message.includes('improper fraction'), message);
+    assert.ok(message.includes('lowest terms'), message);
+  });
 
   // Every predicate needs a phrase. A token added to FORM_PREDICATES but not to
   // FORM_PHRASES is still `valid`, so the learner is told to "write it
   // undefined" — a defect only a reader of the rendered page would ever catch.
   for (const token of ANSWER_FORM_TOKENS) {
-    const spec = token === 'denominator:<n>' ? 'denominator:7' : token;
-    const phrased = describeAnswerForm(spec);
-    const ok = phrased !== '' && !phrased.includes('undefined');
-    if (!ok) failures++;
-    console.log(`${ok ? 'PASS' : 'FAIL'}  the ${token} token has feedback wording ("${phrased}")`);
+    await t.test(`the ${token} token has feedback wording`, () => {
+      const spec = token === 'denominator:<n>' ? 'denominator:7' : token;
+      const phrased = describeAnswerForm(spec);
+      assert.notEqual(phrased, '');
+      assert.ok(!phrased.includes('undefined'), phrased);
+    });
   }
 
-  const factoredPhrase = describeAnswerForm('factored');
-  const saysFactored = factoredPhrase.includes('factored form');
-  if (!saysFactored) failures++;
-  console.log(`${saysFactored ? 'PASS' : 'FAIL'}  factored feedback names factored form ("${factoredPhrase}")`);
+  await t.test('factored feedback names factored form', () => {
+    const phrase = describeAnswerForm('factored');
+    assert.ok(phrase.includes('factored form'), phrase);
+  });
 
   // The reduction feedback must name the missing STEP — cancelling — not just
   // a shape; "in lowest terms" would send the learner hunting for a numeral
   // fraction that is not there (§6: the message has to match the ask).
-  const reducedPhrase = describeAnswerForm('reduced-fraction');
-  const saysCancelled = reducedPhrase.includes('common factors cancelled');
-  if (!saysCancelled) failures++;
-  console.log(`${saysCancelled ? 'PASS' : 'FAIL'}  reduced-fraction feedback names the cancellation ("${reducedPhrase}")`);
-}
+  await t.test('reduced-fraction feedback names the cancellation', () => {
+    const phrase = describeAnswerForm('reduced-fraction');
+    assert.ok(phrase.includes('common factors cancelled'), phrase);
+  });
+});
 
-// Diagnostic only — printed but never fails the suite. These probe how far
-// the Compute Engine's simplifier reaches; promote to `extra` once green.
+// Diagnostic only — reported but never failed. These probe how far the Compute
+// Engine's simplifier reaches; promote a row into `extra` once it is green.
 const diagnostic = [
   ['\\sin^2(x)+\\cos^2(x)', '1', 'correct'],
   ['e^x', '\\exp(x)', 'correct'],
@@ -547,10 +562,15 @@ const diagnostic = [
   ['\\frac{D}{t}', 'D/t', 'correct'],
   ['\\frac{N}{t}', 'N/t', 'correct'],
 ];
-for (const [student, answer, expected] of diagnostic) {
-  const got = checkAnswer(student, answer);
-  console.log(`${got === expected ? 'info' : 'INFO'}  (diagnostic) "${student}" vs "${answer}" -> ${got} (hoped ${expected})`);
-}
-
-console.log(failures === 0 ? '\nALL TESTS PASSED' : `\n${failures} FAILURES`);
-process.exit(failures === 0 ? 0 : 1);
+test('diagnostic: how far the engine reaches (never fails the suite)', async (t) => {
+  for (const [student, answer, expected] of diagnostic) {
+    await t.test(`${student}  vs  ${answer}`, (subtest) => {
+      const got = checkAnswer(student, answer);
+      subtest.diagnostic(`-> ${got} (hoped ${expected})`);
+      // Reported as todo rather than asserted: these record engine reach, and
+      // a red suite would tell the next reader to "fix" something that is not
+      // this repository's to fix.
+      if (got !== expected) subtest.todo(`the engine grades this ${got}`);
+    });
+  }
+});

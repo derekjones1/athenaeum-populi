@@ -478,7 +478,7 @@ Simplify: (a) $\sqrt{x^{2}}$ (b) $\sqrt[3]{n^{3}}$ (c) $\sqrt[4]{p^{4}}$ (d) $\s
 | Step | Result |
 | --- | --- |
 |  | $\sqrt{x^{2}}$ |
-| Since the index $n$ is even, $\sqrt[n]{a^{n}} = \left|a\right|.$ | $\left|x\right|$ |
+| Since the index $n$ is even, $\sqrt[n]{a^{n}} = \left\lvert a\right\rvert.$ | $\left\lvert x\right\rvert$ |
 
 (b) This is an odd indexed root so there is no need for an absolute value sign.
 
@@ -492,7 +492,7 @@ Simplify: (a) $\sqrt{x^{2}}$ (b) $\sqrt[3]{n^{3}}$ (c) $\sqrt[4]{p^{4}}$ (d) $\s
 | Step | Result |
 | --- | --- |
 |  | $\sqrt[4]{p^{4}}$ |
-| Since the index $n\ \text{is even}\ \sqrt[n]{a^{n}} = \left|a\right|.$ | $\left|p\right|$ |
+| Since the index $n\ \text{is even}\ \sqrt[n]{a^{n}} = \left\lvert a\right\rvert.$ | $\left\lvert p\right\rvert$ |
 
 (d)
 
@@ -545,7 +545,7 @@ Simplify: (a) $\sqrt{x^{6}}$ (b) $\sqrt{y^{16}}.$
 | --- | --- |
 |  | $\sqrt{x^{6}}$ |
 | Since $\left(x^{3}\right)^{2} = x^{6}.$ | $\sqrt{\left(x^{3}\right)^{2}}$ |
-| Since the index $n$ is even $\sqrt{a^{n}} = \left|a\right|.$ | $\left|x^{3}\right|$ |
+| Since the index $n$ is even $\sqrt{a^{n}} = \left\lvert a\right\rvert.$ | $\left\lvert x^{3}\right\rvert$ |
 
 (b)
 
@@ -553,7 +553,7 @@ Simplify: (a) $\sqrt{x^{6}}$ (b) $\sqrt{y^{16}}.$
 | --- | --- |
 |  | $\sqrt{y^{16}}$ |
 | Since $\left(y^{8}\right)^{2} = y^{16}.$ | $\sqrt{\left(y^{8}\right)^{2}}$ |
-| Since the index $n$ is even $\sqrt[n]{a^{n}} = \left|a\right|.$ | $y^{8}$ |
+| Since the index $n$ is even $\sqrt[n]{a^{n}} = \left\lvert a\right\rvert.$ | $y^{8}$ |
 | In this case the absolute value sign is not needed as $y^{8}$ is positive. |  |
 
 {{< fillin
@@ -642,7 +642,7 @@ Simplify: (a) $\sqrt{16 n^{2}}$ (b) $- \sqrt{81 c^{2}}.$
 | --- | --- |
 |  | $\sqrt{16 n^{2}}$ |
 | Since $\left(4 n\right)^{2} = 16 n^{2}.$ | $\sqrt{\left(4 n\right)^{2}}$ |
-| Since the index $n$ is even $\sqrt[n]{a^{n}} = \left|a\right|.$ | $4 \left|n\right|$ |
+| Since the index $n$ is even $\sqrt[n]{a^{n}} = \left\lvert a\right\rvert.$ | $4 \left\lvert n\right\rvert$ |
 
 (b)
 
@@ -650,7 +650,7 @@ Simplify: (a) $\sqrt{16 n^{2}}$ (b) $- \sqrt{81 c^{2}}.$
 | --- | --- |
 |  | $- \sqrt{81 c^{2}}$ |
 | Since $\left(9 c\right)^{2} = 81 c^{2}.$ | $- \sqrt{\left(9 c\right)^{2}}$ |
-| Since the index $n$ is even $\sqrt[n]{a^{n}} = \left|a\right|.$ | $-9 \left|c\right|$ |
+| Since the index $n$ is even $\sqrt[n]{a^{n}} = \left\lvert a\right\rvert.$ | $-9 \left\lvert c\right\rvert$ |
 
 {{< fillin
   question="Simplify: $\sqrt{64 x^{2}}$"
@@ -696,7 +696,7 @@ Simplify: (a) $\sqrt[3]{64 p^{6}}$ (b) $\sqrt[4]{16 q^{12}}.$
 | --- | --- |
 |  | $\sqrt[4]{16 q^{12}}$ |
 | Rewrite the radicand as a fourth power. | $\sqrt[4]{\left(2 q^{3}\right)^{4}}$ |
-| Take the fourth root. | $2 \left|q^{3}\right|$ |
+| Take the fourth root. | $2 \left\lvert q^{3}\right\rvert$ |
 
 {{< fillin
   question="Simplify: $\sqrt[3]{27 x^{27}}$"
@@ -734,7 +734,7 @@ Simplify: (a) $\sqrt{36 x^{2} y^{2}}$ (b) $\sqrt{121 a^{6} b^{8}}$ (c) $\sqrt[3]
 | --- | --- |
 |  | $\sqrt{36 x^{2} y^{2}}$ |
 | Since $\left(6 x y\right)^{2} = 36 x^{2} y^{2}$ | $\sqrt{\left(6 x y\right)^{2}}$ |
-| Take the square root. | $6 \left|x y\right|$ |
+| Take the square root. | $6 \left\lvert x y\right\rvert$ |
 
 (b)
 
@@ -742,7 +742,7 @@ Simplify: (a) $\sqrt{36 x^{2} y^{2}}$ (b) $\sqrt{121 a^{6} b^{8}}$ (c) $\sqrt[3]
 | --- | --- |
 |  | $\sqrt{121 a^{6} b^{8}}$ |
 | Since $\left(11 a^{3} b^{4}\right)^{2} = 121 a^{6} b^{8}$ | $\sqrt{\left(11 a^{3} b^{4}\right)^{2}}$ |
-| Take the square root. | $11 \left|a^{3}\right| b^{4}$ |
+| Take the square root. | $11 \left\lvert a^{3}\right\rvert b^{4}$ |
 
 (c)
 

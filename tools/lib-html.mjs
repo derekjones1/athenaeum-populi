@@ -1,0 +1,61 @@
+/**
+ * Shared HTML-reading primitives.
+ *
+ * Three helpers were byte-identical across `tools/lints.mjs` (which reads
+ * authored HTML in Markdown), `tools/audit-build.mjs` and
+ * `tools/check-pagefind.mjs` (which read Hugo's output). Identical by luck: a
+ * fix to one was a fix to one. They read the same markup for the same reasons,
+ * so they read it with the same code.
+ *
+ * Regex rather than a parser on purpose — no HTML parser is a dependency here,
+ * and each of these answers a narrow question about a single tag.
+ */
+
+/**
+ * The value of one HTML attribute on a single tag, or `''`.
+ *
+ * Anchored on a word boundary the naive `name="` search does not have, so
+ * `role` cannot match `data-role` — the distinction the inline-SVG
+ * accessibility lint rests on. Accepts double-quoted, single-quoted, and
+ * unquoted values because Hugo's minified output uses all three.
+ */
+export function htmlAttribute(tag, name) {
+  const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const match = tag.match(new RegExp(
+    `(?:^|\\s)${escapedName}\\s*=\\s*(?:"([^"]*)"|'([^']*)'|([^\\s>]+))`,
+    'i',
+  ));
+  return match ? (match[1] ?? match[2] ?? match[3]) : '';
+}
+
+/**
+ * Does this CSS text pull in a file-backed image?
+ *
+ * `url(#gradient)` is an in-document SVG paint reference, not an image, and is
+ * the one form that stays allowed — everything else names a file, which is the
+ * authoring format this repository bans (illegible in dark mode, does not
+ * scale like KaTeX, and duplicates content that should stay semantic).
+ * `image-set()` is a file reference by construction.
+ */
+export function hasFileBackedCssImage(css) {
+  if (/(?:-webkit-)?image-set\s*\(/i.test(css)) return true;
+  for (const match of css.matchAll(/url\(\s*([^)]*?)\s*\)/gi)) {
+    let target = match[1].trim();
+    if ((target.startsWith('"') && target.endsWith('"')) || (target.startsWith("'") && target.endsWith("'"))) {
+      target = target.slice(1, -1).trim();
+    }
+    if (target && !target.startsWith('#')) return true;
+  }
+  return false;
+}
+
+/**
+ * `<main id="content">` — the element Pagefind is told to index
+ * (`--root-selector 'main#content'` in `npm run search:index`) and the one the
+ * build audit inspects authored output inside.
+ *
+ * Written out rather than `id="content"` because Hugo's minifier may drop the
+ * quotes, and because a page whose main element is missing is silently absent
+ * from search rather than broken — the failure this pattern exists to catch.
+ */
+export const MAIN_CONTENT_RE = /<main\b(?=[^>]*(?:^|\s)id\s*=\s*(?:"content"|'content'|content(?=[\s>])))[^>]*>/i;

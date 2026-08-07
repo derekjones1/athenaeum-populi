@@ -30,6 +30,19 @@
   --ap-warning: #d29922;
 }
 
+/* Search-result match highlight, dark theme only.
+ *
+ * Hextra paints `.hextra-search-match` with the shared primary accent, and in
+ * dark mode that accent sits on the results panel (#18222b) rather than on the
+ * page background — 3.45:1, below the 4.5:1 AA threshold for body text. The
+ * light theme passes as-is. Lightening the shared `--primary-lightness` would
+ * repaint every dark-theme link and nav accent on the site to fix one panel,
+ * so the override is scoped to the panel that fails. Measured by
+ * tests/accessibility.spec.mjs, which scans the expanded combobox. */
+.dark .hextra-search-match {
+  color: hsl(var(--primary-hue), var(--primary-saturation), 58%);
+}
+
 /* Comfortable reading measure for long-form study material. */
 .hextra-content,
 .content {

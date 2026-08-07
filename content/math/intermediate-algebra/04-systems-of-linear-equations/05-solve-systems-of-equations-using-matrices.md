@@ -437,6 +437,86 @@ the unique solution $(1,1,2)$
 the unique solution $(0,0,0)$
 {{< /multiplechoice >}}
 
+## Practice
+
+### Write the augmented matrix for a system of equations
+
+{{< fillin
+  question="Write the system $\begin{cases}2x+4y=-5\\3x-2y=2\end{cases}$ as an augmented matrix. Enter row 2 of the matrix as a comma-separated list of three numbers."
+  answer="3, -2, 2"
+  hint="Row 2 holds the coefficients of $x$ and $y$ in the second equation, then its constant."
+>}}
+
+{{< fillin
+  question="Write the system $\begin{cases}3x-2y-z=-2\\-2x+y=5\\5x+4y+z=-1\end{cases}$ as an augmented matrix. The second equation has no $z$ term, so its coefficient is $0$. Enter row 2 of the matrix as a comma-separated list of four numbers."
+  answer="-2, 1, 0, 5"
+  hint="Row 2 lists the coefficients of $x$, $y$, and $z$ (in that order, using $0$ for a missing variable), then the constant."
+>}}
+
+{{< fillin
+  question="The augmented matrix $\left[\begin{array}{cc|c}2 & -4 & -2\\3 & -3 & -1\end{array}\right]$ corresponds to a system of equations. Enter the coefficients of $x$ and $y$, and the constant, in the second equation, as a comma-separated list of three numbers."
+  answer="3, -3, -1"
+  hint="Row 2 of the matrix is the second equation: the first two entries are the coefficients of $x$ and $y$, and the last entry is the constant."
+>}}
+
+### Use row operations on a matrix
+
+{{< fillin
+  question="Starting from the augmented matrix $\left[\begin{array}{cc|c}4 & -6 & -3\\3 & 2 & 1\end{array}\right]$, interchange rows 1 and 2. Enter the new row 1 as a comma-separated list of three numbers."
+  answer="3, 2, 1"
+  hint="Interchanging rows 1 and 2 swaps the two rows, so the new row 1 is the old row 2."
+>}}
+
+{{< fillin
+  question="Starting from the matrix $\left[\begin{array}{cc|c}3 & 2 & 1\\4 & -6 & -3\end{array}\right]$ (the result of interchanging rows 1 and 2 in the previous exercise), multiply row 1 by $4$. Enter the new row 1 as a comma-separated list of three numbers."
+  answer="12, 8, 4"
+  hint="Multiply every entry of row 1, including the entry after the bar, by $4$."
+>}}
+
+{{< fillin
+  question="Starting from the matrix $\left[\begin{array}{cc|c}12 & 8 & 4\\4 & -6 & -3\end{array}\right]$ (the result of the previous exercise), multiply row 2 by $3$ and add row 1 to it. Enter the new row 2 as a comma-separated list of three numbers."
+  answer="24, -10, -5"
+  hint="Multiply each entry of row 2 by $3$, then add the matching entry of row 1; row 1 itself does not change."
+>}}
+
+### Solve systems of equations using matrices
+
+{{< fillin
+  question="Solve the system of equations using a matrix: $\begin{cases}3x+y=2\\x-y=2\end{cases}$. Enter the solution as an ordered pair."
+  answer="(1,-1)"
+  answerDisplay="$(1,-1)$"
+  hint="Get a zero below the leading $1$ in column $1$, put a $1$ in row 2 column 2, then use substitution."
+>}}
+
+{{< fillin
+  question="Solve the system of equations using a matrix: $\begin{cases}2x-y+3z=-3\\-x+2y-z=10\\x+y+z=5\end{cases}$. Enter the solution as an ordered triple."
+  answer="(-2,5,2)"
+  answerDisplay="$(-2,5,2)$"
+  hint="Get the matrix into row-echelon form, then use substitution starting from the last row."
+>}}
+
+{{< multiplechoice
+  question="Solve the system of equations using a matrix: $\begin{cases}x+2y+6z=5\\-x+y-2z=3\\x-4y-2z=1\end{cases}$. What do you find?"
+  hint="Row-reduce the augmented matrix; two of the rows reduce to a contradiction, such as $0=$ a nonzero number."
+  answer="no solution — the system is inconsistent"
+>}}
+no solution — the system is inconsistent
+infinitely many solutions — the system is dependent
+the unique solution $(2,-1,1)$
+the unique solution $(-3,4,2)$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Solve the system of equations using a matrix: $\begin{cases}x+2y+z=4\\x+y-2z=3\\-2x-3y+z=-7\end{cases}$. What do you find?"
+  hint="Row-reduce the augmented matrix; the bottom row reduces to $0=0$."
+  answer="infinitely many solutions — the system is dependent"
+>}}
+infinitely many solutions — the system is dependent
+no solution — the system is inconsistent
+the unique solution $(0,0,0)$
+the unique solution $(1,1,1)$
+{{< /multiplechoice >}}
+
 ## Key terms
 
 **matrix** — a rectangular array of numbers arranged in rows and columns; a
@@ -455,4 +535,4 @@ statement (such as $0=0$); it has infinitely many solutions.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 4.5: Solve Systems of Equations Using Matrices](https://openstax.org/books/intermediate-algebra-2e/pages/4-5-solve-systems-of-equations-using-matrices) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: represented matrices and augmented matrices with typeset KaTeX arrays instead of the source's labeled screenshots; omitted the Be Prepared quiz, the decorative "order for getting 1's and 0's" color-box graphic (redundant with the adjacent How To step list), the Media box, and Self Check; corrected an arithmetic slip in the source's final stated numeric solution for the dependent-system example — the row-reduction work shown (both here and in the source) derives the general solution $(z+5,\ 2z+2,\ z)$, which is what we report, rather than the specific triple the source printed, which does not actually satisfy the system; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 4.5: Solve Systems of Equations Using Matrices](https://openstax.org/books/intermediate-algebra-2e/pages/4-5-solve-systems-of-equations-using-matrices) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: represented matrices and augmented matrices with typeset KaTeX arrays instead of the source's labeled screenshots; omitted the Be Prepared quiz, the decorative "order for getting 1's and 0's" color-box graphic (redundant with the adjacent How To step list), the Media box, and Self Check; corrected an arithmetic slip in the source's final stated numeric solution for the dependent-system example — the row-reduction work shown (both here and in the source) derives the general solution $(z+5,\ 2z+2,\ z)$, which is what we report, rather than the specific triple the source printed, which does not actually satisfy the system; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and added a section-final Practice block adapting selected end-of-section exercises, each independently solved and confirmed against the Answer Key, into interactive fill-in and multiple-choice components, one group per objective.</small>

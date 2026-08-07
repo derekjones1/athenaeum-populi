@@ -1029,6 +1029,162 @@ substitution
 elimination
 {{< /multiplechoice >}}
 
+## Practice
+
+### Determine whether an ordered pair is a solution of a system of equations
+
+{{< multiplechoice
+  question="Is $(3,1)$ a solution to the system $\{2x-6y=0,\ 3x-4y=5\}$?"
+  hint="Substitute x=3 and y=1 into both equations and check whether each one is true."
+  answer="yes"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(-3,4)$ a solution to the system $\{2x-6y=0,\ 3x-4y=5\}$?"
+  hint="Substitute x=-3 and y=4 into the first equation — if it fails there, the pair cannot be a solution to the system."
+  answer="no"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(\tfrac{8}{7},\tfrac{6}{7})$ a solution to the system $\{x+y=2,\ y=\tfrac{3}{4}x\}$?"
+  hint="Substitute x=8/7 and y=6/7 into both equations and check whether each one is true."
+  answer="yes"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(1,\tfrac{3}{4})$ a solution to the system $\{x+y=2,\ y=\tfrac{3}{4}x\}$?"
+  hint="Substitute x=1 and y=3/4 into the first equation — if it fails there, the pair cannot be a solution to the system."
+  answer="no"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Solve a system of linear equations by graphing
+
+{{< fillin
+  question="Solve the system by graphing: $\{3x+y=-3,\ 2x+3y=5\}$. Enter the point of intersection as an ordered pair."
+  answer="(-2,3)"
+  answerDisplay="$(-2,3)$"
+  hint="Write the first equation in slope-intercept form, then graph both lines and find where they cross."
+>}}
+
+{{< fillin
+  question="Solve the system by graphing: $\{y=x+2,\ y=-2x+2\}$. Enter the point of intersection as an ordered pair."
+  answer="(0,2)"
+  answerDisplay="$(0,2)$"
+  hint="Both equations are already in slope-intercept form — graph each line directly from its slope and y-intercept."
+>}}
+
+{{< multiplechoice
+  question="Solve the system by graphing: $\{-2x+4y=4,\ y=\tfrac{1}{2}x\}$. How many solutions does the system have?"
+  hint="Write the first equation in slope-intercept form and compare its slope and y-intercept to the second equation."
+  answer="no solution"
+>}}
+one solution
+no solution
+infinitely many solutions
+{{< /multiplechoice >}}
+
+### Solve a system of equations by substitution
+
+{{< fillin
+  question="Solve the system by substitution: $\{2x+y=-2,\ 3x-y=7\}$. Enter the solution as an ordered pair."
+  answer="(1,-4)"
+  answerDisplay="$(1,-4)$"
+  hint="Solve the first equation for y, then substitute that expression for y in the second equation."
+>}}
+
+{{< fillin
+  question="Solve the system by substitution: $\{x-3y=-9,\ 2x+5y=4\}$. Enter the solution as an ordered pair."
+  answer="(-3,2)"
+  answerDisplay="$(-3,2)$"
+  hint="Solve the first equation for x, then substitute that expression for x in the second equation."
+>}}
+
+{{< multiplechoice
+  question="Solve the system by substitution: $\{y=-\tfrac{2}{3}x+5,\ 2x+3y=11\}$. How many solutions does the system have?"
+  hint="Substitute the expression for y into the second equation and see what kind of equation results."
+  answer="no solution"
+>}}
+one solution
+no solution
+infinitely many solutions
+{{< /multiplechoice >}}
+
+### Solve a system of equations by elimination
+
+{{< fillin
+  question="Solve the system by elimination: $\{6x-5y=-1,\ 2x+y=13\}$. Enter the solution as an ordered pair."
+  answer="(4,5)"
+  answerDisplay="$(4,5)$"
+  hint="Multiply the second equation by 5 so the y-coefficients become opposites, then add the equations."
+>}}
+
+{{< fillin
+  question="Solve the system by elimination: $\{5x-3y=-1,\ 2x-y=2\}$. Enter the solution as an ordered pair."
+  answer="(7,12)"
+  answerDisplay="$(7,12)$"
+  hint="Multiply the second equation by -3 so the y-coefficients become opposites, then add the equations."
+>}}
+
+{{< multiplechoice
+  question="Solve the system by elimination: $\{x-4y=-1,\ -3x+12y=3\}$. How many solutions does the system have?"
+  hint="Multiply the first equation by 3 and add it to the second equation — see what kind of statement results."
+  answer="infinitely many solutions"
+>}}
+one solution
+no solution
+infinitely many solutions
+{{< /multiplechoice >}}
+
+### Choose the most convenient method to solve a system of linear equations
+
+{{< multiplechoice
+  question="For the system $\{y=7x-5,\ 3x-2y=16\}$, one equation is already solved for y. Which method is more convenient?"
+  hint="A variable that is already isolated can be substituted directly into the other equation."
+  answer="substitution"
+>}}
+substitution
+elimination
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For the system $\{12x-5y=-42,\ 3x+7y=-15\}$, both equations are in standard form. Which method is more convenient?"
+  hint="Neither variable is isolated, but the coefficients can be matched to add the equations directly."
+  answer="elimination"
+>}}
+substitution
+elimination
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For the system $\{14x-15y=-30,\ 7x+2y=10\}$, both equations are in standard form. Which method is more convenient?"
+  hint="Neither variable is isolated, but the coefficients can be matched to add the equations directly."
+  answer="elimination"
+>}}
+substitution
+elimination
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For the system $\{x=9y-11,\ 2x-7y=-27\}$, one equation is already solved for x. Which method is more convenient?"
+  hint="A variable that is already isolated can be substituted directly into the other equation."
+  answer="substitution"
+>}}
+substitution
+elimination
+{{< /multiplechoice >}}
+
 ## Key terms
 
 **system of linear equations** — two or more linear equations grouped
@@ -1047,4 +1203,4 @@ constants if necessary) so that one variable cancels out.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 4.1: Solve Systems of Linear Equations with Two Variables](https://openstax.org/books/intermediate-algebra-2e/pages/4-1-solve-systems-of-linear-equations-with-two-variables) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the coordinate-plane figures (the intersecting/parallel/ coincident overview and the four worked graphing examples) as accessible interactive graphs; recast the multi-step "How To" examples as step tables and equation-alignment arrays; omitted the Be Prepared quiz, Self Check checklist, and end-of-section exercises; and converted the Try Its into interactive exercises with instant feedback — reducing (a)/(b) sub-parts to a single representative exercise, and turning ordered-pair-check, classification, and choose-the-method questions into multiple choice, since a yes/no or word answer of that kind cannot be graded as a math expression.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 4.1: Solve Systems of Linear Equations with Two Variables](https://openstax.org/books/intermediate-algebra-2e/pages/4-1-solve-systems-of-linear-equations-with-two-variables) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the coordinate-plane figures (the intersecting/parallel/ coincident overview and the four worked graphing examples) as accessible interactive graphs; recast the multi-step "How To" examples as step tables and equation-alignment arrays; omitted the Be Prepared quiz and Self Check checklist; adapted selected end-of-section exercises with answers confirmed in the Answer Key into an interactive section-final Practice block covering all five objectives; and converted the Try Its into interactive exercises with instant feedback — reducing (a)/(b) sub-parts to a single representative exercise, and turning ordered-pair-check, classification, and choose-the-method questions into multiple choice, since a yes/no or word answer of that kind cannot be graded as a math expression.</small>

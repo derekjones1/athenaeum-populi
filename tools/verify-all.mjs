@@ -15,23 +15,14 @@ import {
   readdirSync,
   statSync,
 } from 'node:fs';
+import { walkMarkdown } from './lib-content.mjs';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
 
 const root = process.argv[2] || 'content';
 if (!existsSync(root)) throw new Error(`Content root not found: ${root}`);
 
-function markdownFiles(dir) {
-  const found = [];
-  for (const entry of readdirSync(dir)) {
-    const path = join(dir, entry);
-    if (statSync(path).isDirectory()) found.push(...markdownFiles(path));
-    else if (entry.endsWith('.md')) found.push(path);
-  }
-  return found;
-}
-
-const files = markdownFiles(root).sort();
+const files = walkMarkdown(root);
 const verify = spawnSync(process.execPath, ['tools/verify-section.mjs', ...files], {
   encoding: 'utf8',
   maxBuffer: 32 * 1024 * 1024,
@@ -52,7 +43,7 @@ if (existsSync(publishedDocs)) {
     ['Nextra metadata files', /\b_meta\.js\b/i],
     ['React component authoring', /<(?:FillIn|MultipleChoice|GraphPlot|Graph|Figure)\b/],
   ];
-  for (const file of markdownFiles(publishedDocs)) {
+  for (const file of walkMarkdown(publishedDocs)) {
     const source = readFileSync(file, 'utf8');
     for (const [label, pattern] of stale) {
       if (pattern.test(source)) failures.push(`${file}: stale ${label}`);

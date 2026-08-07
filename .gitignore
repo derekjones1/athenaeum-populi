@@ -11,9 +11,6 @@
 /test-results/
 .env*
 
-# Pagefind index (generated at build time)
-/public/pagefind/
-
 # OS cruft
 .DS_Store
 
@@ -24,10 +21,6 @@
 /docs/openstax-errata.md
 
 # Local source textbooks (reference material, not site assets)
-/sources/precalculus-2e_-_WEB.pdf
-/sources/elementary-algebra-2e_-_WEB.pdf
-/sources/intermediate-algebra-2e_-_WEB.pdf
-/sources/prealgebra-2e_-_WEB.pdf
 /sources/
 /.mcp.json
 /.claude/

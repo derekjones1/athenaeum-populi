@@ -171,6 +171,14 @@ The content lint enforces the descriptive bullet shape.
   inside `$$` arrays. `\dfrac` is banned and plain `\frac` inside an array
   renders too tall; the lint enforces both. Nested fractions use `\cfrac` in a
   display block.
+- **Absolute value in a table row: `\lvert`/`\rvert`, never `|`** — Goldmark
+  splits a table row into cells on `|` before it parses any inline math, so a
+  bar written as `|` ends the cell instead. A body row silently grows phantom
+  columns and loses its tail; a header row that splits no longer matches its
+  delimiter row and the whole table degrades to a paragraph of raw pipes. Write
+  `$f(x)=\lvert x\rvert$` and `$6\left\lvert xy\right\rvert$` — both render the
+  same bars, and `\lvert`/`\rvert` carry the delimiter semantics `|` does not.
+  The lint enforces this on any line that begins a table row.
 - **Worked-example step tables:** align relations with `\begin{array}{lrcl}`,
   rows `explanation & LHS &=& RHS \\[4pt]`. Separate steps with `\\[4pt]` (the
   lint rejects bare `\\` in `{lrcl}` arrays).
@@ -582,19 +590,30 @@ From the repository root:
 
 ## 5. The one remaining retrofit
 
-`npm run lint` reports **zero errors and one warning category**: the 94
-sections with no `## Practice` block (intermediate-algebra 70,
-elementary-algebra 13, precalculus 11, as of August 2, 2026; prealgebra is
-complete at 60/60, and elementary-algebra is complete through chapter 8 with
-only chapters 9–10 left). That warning list is the worklist, and it is the only
+`npm run lint` reports **zero errors and one warning category**: the 56
+sections with no `## Practice` block (intermediate-algebra 45, precalculus 11,
+as of August 6, 2026). 156 of the 212 mapped sections now carry the block:
+prealgebra is complete at 60/60 and elementary-algebra is complete at 73/73,
+so the retrofit is now entirely intermediate-algebra plus the two authored
+Precalculus 2e chapters. That warning list is the worklist, and it is the only
 non-blocking rule in the repository — every other authoring rule is an error,
 so there is no category of known-defective content left to grandfather.
 
-Adding those blocks is authoring, not cleanup: roughly a thousand exercises
-selected from the source's end-of-section sets, each with its answer visible
-in the Answer Key, independently solved, recorded in the ledger, and disclosed
-in the footer. Work it a chapter at a time under §3. When the last section
-lands, promote the rule to an error and delete this section.
+Intermediate-algebra chapters 1–4 are complete; the remaining 45 sections
+spread across chapters 5–12 (4–8 sections each; chapters 8 and 9 are the
+largest at 8 apiece).
+Precalculus 2e covers only its two authored chapters — ch. 1 Functions (7) and
+ch. 2 Linear Functions (4); its ten scaffolded chapters will add to this
+worklist as their section pages land.
+
+Adding those blocks is authoring, not cleanup: the per-section minimums the
+lint prints sum to 414 exercises, and the real figure runs higher because the
+block scales with the objectives list and multipart items expand one component
+per part. Each is selected from the source's end-of-section sets with its
+answer visible in the Answer Key, independently solved, recorded in the
+ledger, and disclosed in the footer. Work it a chapter at a time under §3.
+When the last section lands, promote the rule to an error and delete this
+section.
 
 Everything else that used to live here has been fixed rather than documented:
 numerically coded categorical answers are `multiplechoice`, four-digit numbers
@@ -623,8 +642,11 @@ is what stops new ones being authored. The two are inseparable: a rule may only
 land once the content it governs is already clean, so each verb's rule ships
 with that verb's retrofit.
 
-Measured across the corpus, 1,869 fill-ins were passable this way. Every
-class is now closed — token, retrofit, and lint rule each:
+Measured across the corpus, 1,726 fill-ins were passable this way — the sum of
+the per-class counts below, which is the only figure that can still be checked
+against a record. The classes were measured one at a time as each was
+separated out, so read the table as the account and not any single headline
+number. Every class is now closed — token, retrofit, and lint rule each:
 
 | Class | Count | Needs | Status |
 |---|---|---|---|

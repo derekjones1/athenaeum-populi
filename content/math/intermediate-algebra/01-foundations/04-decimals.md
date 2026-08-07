@@ -838,6 +838,185 @@ $-0.80$, closer to $-0.70$.
   hint="One quarter of the way from $0$ to $-1$ is $-\frac{25}{100}$."
 >}}
 
+## Practice
+
+### Round decimals
+
+{{< fillin
+  question="Round $5.781$ to the nearest hundredth."
+  answer="5.78"
+  answerForm="decimal"
+  hint="Look at the thousandths digit. Since it is less than $5$, keep the hundredths digit unchanged."
+>}}
+
+{{< fillin
+  question="Round $5.781$ to the nearest tenth."
+  answer="5.8"
+  answerForm="decimal"
+  hint="Look at the hundredths digit. Since it is greater than or equal to $5$, increase the tenths digit by $1$."
+>}}
+
+{{< fillin
+  question="Round $5.781$ to the nearest whole number."
+  answer="6"
+  hint="Look at the tenths digit. Since it is greater than or equal to $5$, increase the ones digit by $1$."
+>}}
+
+### Add and subtract decimals
+
+{{< fillin
+  question="Subtract: $-16.53-24.38$."
+  answer="-40.91"
+  answerForm="decimal"
+  hint="The numbers have the same sign after rewriting subtraction as addition, so add their absolute values and keep the negative sign."
+>}}
+
+{{< fillin
+  question="Subtract: $91.75-(-10.462)$."
+  answer="102.212"
+  answerForm="decimal"
+  hint="Subtracting a negative is addition. Rewrite the expression, align the decimal points, and add."
+>}}
+
+### Multiply and divide decimals
+
+{{< fillin
+  question="Multiply: $(94.69)(-12.678)$."
+  answer="-1200.47982"
+  answerDisplay="$-1{,}200.47982$"
+  answerForm="decimal"
+  hint="The factors have different signs, so the product is negative. Multiply as whole numbers, then place five decimal digits in the product."
+>}}
+
+{{< fillin
+  question="Divide \$117.25 by $48$. Round the monetary answer to the nearest cent and enter the amount without the dollar sign."
+  answer="2.44"
+  answerDisplay="\$2.44"
+  answerForm="decimal"
+  hint="Divide through the thousandths place, then round the quotient to the nearest hundredth."
+>}}
+
+### Convert decimals, fractions, and percents
+
+{{< fillin
+  question="Write $0.04$ as a fraction in simplest form."
+  answer="\frac{1}{25}"
+  answerDisplay="$\tfrac{1}{25}$"
+  answerForm="fraction lowest-terms"
+  hint="Write $0.04$ as $\tfrac{4}{100}$, then divide the numerator and denominator by their greatest common factor."
+>}}
+
+{{< fillin
+  question="Convert $\tfrac{17}{20}$ to a decimal."
+  answer="0.85"
+  answerForm="decimal"
+  hint="Divide $17$ by $20$, or rewrite the fraction with denominator $100$."
+>}}
+
+{{< fillin
+  question="Convert $71\%$ to a decimal."
+  answer="0.71"
+  answerForm="decimal"
+  hint="Remove the percent sign and move the decimal point two places to the left."
+>}}
+
+{{< fillin
+  question="Convert $1.56$ to a percent. Enter just the number, without the percent sign."
+  answer="156"
+  answerDisplay="$156\%$"
+  hint="Move the decimal point two places to the right, then interpret the result as a percent."
+>}}
+
+### Simplify expressions with square roots
+
+{{< fillin
+  question="Simplify: $\sqrt{64}$."
+  answer="8"
+  answerForm="simplified-radical"
+  hint="Find the positive number whose square is $64$."
+>}}
+
+{{< fillin
+  question="Simplify: $-\sqrt{100}$."
+  answer="-10"
+  answerForm="simplified-radical"
+  hint="Find the principal square root of $100$, then apply the negative sign outside the radical."
+>}}
+
+### Identify integers, rational numbers, irrational numbers, and real numbers
+
+For the next five questions, use the source set
+$-8,\ 0,\ 1.95286\ldots,\ \tfrac{12}{5},\ \sqrt{36},\ 9$.
+
+{{< multiplechoice
+  question="Which list contains exactly the whole numbers in the set?"
+  answer="$0$, $\sqrt{36}$, and $9$"
+  hint="Whole numbers are $0$ and the positive integers. Simplify the square root before classifying it."
+>}}
+$0$, $\sqrt{36}$, and $9$
+$-8$, $0$, $\sqrt{36}$, and $9$
+$0$, $\tfrac{12}{5}$, $\sqrt{36}$, and $9$
+all six numbers
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Which list contains exactly the integers in the set?"
+  answer="$-8$, $0$, $\sqrt{36}$, and $9$"
+  hint="Integers include zero, positive whole numbers, and their negatives. Simplify the square root first."
+>}}
+$0$, $\sqrt{36}$, and $9$
+$-8$, $0$, $\sqrt{36}$, and $9$
+$-8$, $0$, $\tfrac{12}{5}$, $\sqrt{36}$, and $9$
+all six numbers
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Which list contains exactly the rational numbers in the set?"
+  answer="$-8$, $0$, $\tfrac{12}{5}$, $\sqrt{36}$, and $9$"
+  hint="Integers and fractions of integers are rational. A square root of a perfect square is rational too."
+>}}
+$0$, $\sqrt{36}$, and $9$
+$-8$, $0$, $\sqrt{36}$, and $9$
+$-8$, $0$, $\tfrac{12}{5}$, $\sqrt{36}$, and $9$
+all six numbers
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Which entry is the irrational number in the set?"
+  answer="$1.95286\ldots$"
+  hint="An irrational number has a decimal representation that neither terminates nor repeats."
+>}}
+$-8$
+$1.95286\ldots$
+$\tfrac{12}{5}$
+$\sqrt{36}$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Which list contains exactly the real numbers in the set?"
+  answer="all six numbers"
+  hint="Every rational or irrational number is real."
+>}}
+$-8$, $0$, $\sqrt{36}$, and $9$
+$-8$, $0$, $\tfrac{12}{5}$, $\sqrt{36}$, and $9$
+$1.95286\ldots$
+all six numbers
+{{< /multiplechoice >}}
+
+### Locate fractions and decimals on the number line
+
+{{< fillin
+  question="On a number line, $0.8$ lies between two consecutive integers. Enter the smaller integer first and the larger integer second, separated by a comma."
+  answer="0,1"
+  hint="$0.8$ is eight tenths to the right of $0$."
+>}}
+
+{{< fillin
+  question="On a number line, $-1.25$ lies between two consecutive integers. Enter the smaller integer first and the larger integer second, separated by a comma."
+  answer="-2,-1"
+  hint="Negative values decrease as you move left; locate $-1.25$ one quarter unit to the left of $-1$."
+>}}
+
 ## Key terms
 
 **square of a number** — the result of multiplying a number by itself; if
@@ -853,4 +1032,4 @@ rational or irrational.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 1.4: Decimals](https://openstax.org/books/intermediate-algebra-2e/pages/1-4-decimals) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the place-value chart as a table, the real-number-sets and number-line figures as accessible inline graphics, and the rounding, operation, and long-division steps as typeset math and prose; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the "Try It" practice problems into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 1.4: Decimals](https://openstax.org/books/intermediate-algebra-2e/pages/1-4-decimals) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the place-value chart as a table, the real-number-sets and number-line figures as accessible inline graphics, and the rounding, operation, and long-division steps as typeset math and prose; omitted the Be Prepared quiz and media links; adapted selected end-of-section exercises into interactive practice; and converted the "Try It" practice problems into interactive exercises with instant feedback.</small>

@@ -2202,6 +2202,104 @@ They mean Veronica can earn at least \$280 by working 16 hours as an
 administrative assistant, working 14 hours at the day spa and 8 hours as an
 administrative assistant, or working 28 hours at the day spa.
 
+## Practice
+
+### Verify solutions to an inequality in two variables
+
+{{< multiplechoice
+  question="Is $(0,1)$ a solution to $y>x-1$?"
+  hint="Substitute $x=0$ and $y=1$ into the inequality."
+  answer="yes"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(4,2)$ a solution to $y>x-1$?"
+  hint="Substitute $x=4$ and $y=2$ into the inequality."
+  answer="no"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Recognize the relation between the solutions of an inequality and its graph
+
+{{< fillin
+  question="Write the inequality shown by a solid boundary line $y=3x-4$ with the region below the line shaded."
+  answer="y\leq3x-4"
+  answerDisplay="$y\leq3x-4$"
+  hint="Below the line means the $y$-values are less than those on the line; a solid line includes equality."
+>}}
+
+{{< fillin
+  question="Write the inequality shown by a solid boundary line $x+y=5$ with the region above the line shaded."
+  answer="x+y\geq5"
+  answerDisplay="$x+y\geq5$"
+  hint="Above the line means the sum $x+y$ is greater than on the line; a solid line includes equality."
+>}}
+
+### Graph linear inequalities in two variables
+
+{{< graphplot
+  question="Graph the boundary line for the inequality $4x+y>-4$."
+  answerDisplay="$y=-4x-4$"
+  ariaLabel="A blank grid from −7 to 7 on both axes."
+  hint="Solve for $y$: $y=-4x-4$, so the line has slope $-4$ and $y$-intercept $-4$."
+>}}
+{"answer": {"slope": -4, "intercept": -4}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
+{{< /graphplot >}}
+
+{{< multiplechoice
+  question="For the inequality $4x+y>-4$, is the boundary line solid or dashed, and which side is shaded?"
+  hint="The inequality is strict ($>$), and $(0,0)$ makes $4x+y>-4$ true."
+  answer="dashed; the side containing the origin"
+>}}
+dashed; the side containing the origin
+dashed; the side not containing the origin
+solid; the side containing the origin
+solid; the side not containing the origin
+{{< /multiplechoice >}}
+
+{{< graphplot
+  question="Graph the boundary line for the inequality $2x+y\geq-4$."
+  answerDisplay="$y=-2x-4$"
+  ariaLabel="A blank grid from −7 to 7 on both axes."
+  hint="Solve for $y$: $y=-2x-4$, so the line has slope $-2$ and $y$-intercept $-4$."
+>}}
+{"answer": {"slope": -2, "intercept": -4}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
+{{< /graphplot >}}
+
+{{< multiplechoice
+  question="For the inequality $2x+y\geq-4$, is the boundary line solid or dashed, and which side is shaded?"
+  hint="The inequality includes equality ($\geq$), and $(0,0)$ makes $2x+y\geq-4$ true."
+  answer="solid; the side containing the origin"
+>}}
+dashed; the side containing the origin
+dashed; the side not containing the origin
+solid; the side containing the origin
+solid; the side not containing the origin
+{{< /multiplechoice >}}
+
+### Solve applications using linear inequalities in two variables
+
+{{< fillin
+  question="Laura burns 15 calories per minute running and 10 calories per minute biking, and wants to burn at least 500 calories today. If $x$ is the number of minutes she runs and $y$ is the number of minutes she bikes, write an inequality that models this situation."
+  answer="15x+10y\geq500"
+  answerDisplay="$15x+10y\geq500$"
+  hint="Multiply each activity's rate by its minutes, add the two amounts, and require the total to be at least $500$."
+>}}
+
+{{< graphplot
+  question="Graph the boundary line for Laura's inequality $15x+10y\geq500$."
+  answerDisplay="$y=-1.5x+50$"
+  ariaLabel="A blank grid with x from 0 to 40 and y from 0 to 60."
+  hint="Solve $15x+10y=500$ for $y$: $y=50-1.5x$."
+>}}
+{"answer": {"slope": -1.5, "intercept": 50}, "grid": {"xMin": 0, "xMax": 40, "yMin": 0, "yMax": 60}}
+{{< /graphplot >}}
+
 ## Key terms
 
 **linear inequality** — an inequality that can be written as $Ax+By>C$,
@@ -2213,4 +2311,4 @@ region where $Ax+By<C$.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 3.4: Graph Linear Inequalities in Two Variables](https://openstax.org/books/intermediate-algebra-2e/pages/3-4-graph-linear-inequalities-in-two-variables) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated number-line and coordinate-plane figures as accessible interactive graphics; omitted the Be Prepared quiz, Media link, Self Check, and Section Exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 3.4: Graph Linear Inequalities in Two Variables](https://openstax.org/books/intermediate-algebra-2e/pages/3-4-graph-linear-inequalities-in-two-variables) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated number-line and coordinate-plane figures as accessible interactive graphics; omitted the Be Prepared quiz, Media link, and Self Check; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

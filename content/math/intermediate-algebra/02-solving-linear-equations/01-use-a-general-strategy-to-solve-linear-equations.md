@@ -699,6 +699,104 @@ Check it yourself by substituting $x=9$ into the original equation.
   hint="Distribute, combine like terms, and multiply by 100."
 >}}
 
+## Practice
+
+### Solve linear equations using a general strategy
+
+{{< multiplechoice
+  question="For $6y+10=12y$, is $y=\tfrac{5}{3}$ a solution?"
+  hint="Substitute $\tfrac{5}{3}$ for $y$ and simplify both sides."
+  answer="Yes"
+>}}
+Yes
+No
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For $6y+10=12y$, is $y=-\tfrac{1}{2}$ a solution?"
+  hint="Substitute $-\tfrac{1}{2}$ for $y$ and simplify both sides."
+  answer="No"
+>}}
+Yes
+No
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Solve: $-(w-12)=30$."
+  answer="-18"
+  answerDisplay="$w=-18$"
+  hint="Distribute the negative sign, then isolate $w$."
+>}}
+
+{{< fillin
+  question="Solve: $4(p-4)-(p+7)=5(p-3)$."
+  answer="-4"
+  answerDisplay="$p=-4$"
+  hint="Distribute, combine like terms, then collect the variable terms on one side."
+>}}
+
+### Classify equations
+
+{{< multiplechoice
+  question="Classify the equation $23z+19=3(5z-9)+8z+46$."
+  hint="Distribute and combine like terms on both sides to see whether the variable terms are eliminated."
+  answer="identity"
+>}}
+conditional equation
+identity
+contradiction
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Classify the equation $7v+42=11(3v+8)-2(13v-1)$."
+  hint="Distribute and combine like terms on both sides to see whether the variable terms are eliminated."
+  answer="contradiction"
+>}}
+conditional equation
+identity
+contradiction
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Classify the equation $18(5j-1)+29=47$."
+  hint="Distribute and isolate the variable to see whether it has one solution, all real numbers, or none."
+  answer="conditional equation"
+>}}
+conditional equation
+identity
+contradiction
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Solve: $18(5j-1)+29=47$."
+  answer="\frac{2}{5}"
+  answerDisplay="$j=\tfrac{2}{5}$"
+  hint="Distribute, then isolate $j$."
+>}}
+
+### Solve equations with fraction or decimal coefficients
+
+{{< fillin
+  question="Solve: $\tfrac14x-\tfrac12=-\tfrac34$."
+  answer="-1"
+  answerDisplay="$x=-1$"
+  hint="Multiply both sides by the LCD, 4, to clear the fractions."
+>}}
+
+{{< fillin
+  question="Solve: $\tfrac14(p-7)=\tfrac13(p+5)$."
+  answer="-41"
+  answerDisplay="$p=-41$"
+  hint="Multiply both sides by the LCD, 12, to clear the fractions."
+>}}
+
+{{< fillin
+  question="Solve: $0.4x+0.6=0.5x-1.2$."
+  answer="18"
+  answerDisplay="$x=18$"
+  hint="Collect the variable terms to one side and the constant terms to the other, then divide."
+>}}
+
 **Key terms.** A **solution of an equation** is a value of a variable that
 makes a true statement when substituted into the equation. A **linear
 equation** is an equation in one variable that can be written as $ax+b=0$,
@@ -708,4 +806,4 @@ an **identity** is true for any value of the variable; and a **contradiction**
 is false for all values of the variable. **Clearing** an equation of fractions
 or decimals means multiplying both sides by their least common denominator.
 
-<small>Adapted from [Intermediate Algebra 2e, Section 2.1](https://openstax.org/books/intermediate-algebra-2e/pages/2-1-use-a-general-strategy-to-solve-linear-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the source section into an interactive web format and converted Try It exercises to immediate-feedback checks.</small>
+<small>Adapted from [Intermediate Algebra 2e, Section 2.1](https://openstax.org/books/intermediate-algebra-2e/pages/2-1-use-a-general-strategy-to-solve-linear-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the source section into an interactive web format, converted Try It exercises to immediate-feedback checks, and adapted selected end-of-section exercises into an interactive Practice block.</small>

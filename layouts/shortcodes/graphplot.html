@@ -7,8 +7,16 @@
   Params: question (req), answerDisplay, hint, ariaLabel (req), snap.
   Inner:  JSON  {"answer": {…}, "grid": {…}}
 */ -}}
+{{- /* Both are documented "(req)" above and neither was enforced: a missing
+     ariaLabel emitted data-aria-label="" and the component then built its SVG
+     label starting with an orphan space. */ -}}
+{{- if not (trim (.Get "question" | default "") " ") -}}
+  {{- errorf "graphplot shortcode needs a non-empty 'question' (%s)" .Position -}}
+{{- end -}}
+{{- if not (trim (.Get "ariaLabel" | default "") " ") -}}
+  {{- errorf "graphplot shortcode needs a non-empty 'ariaLabel' — it is the figure's accessible name (%s)" .Position -}}
+{{- end -}}
 {{- .Page.Store.Set "hasMath" true -}}
-{{- .Page.Store.Set "hasInteractive" true -}}
 <graph-plot
   data-config="{{ trim .Inner "\n" }}"
   data-aria-label="{{ .Get "ariaLabel" }}"

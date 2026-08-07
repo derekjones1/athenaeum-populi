@@ -16,7 +16,9 @@ import { mkdirSync } from 'node:fs'
 const route = process.argv[2]
 if (!route) {
   console.error('usage: node tools/screenshot-page.mjs </built/page/route/> [outDir]')
-  process.exit(1)
+  // 2 for a usage error, as in every other tool here; 1 is reserved for "the
+  // tool ran and the thing it checks is wrong".
+  process.exit(2)
 }
 const outDir = process.argv[3] ?? 'test-results/page-shots'
 const base = process.env.SHOT_BASE ?? 'http://127.0.0.1:8099'
@@ -40,7 +42,15 @@ for (const scheme of ['light', 'dark']) {
   const errors = []
   page.on('pageerror', (e) => errors.push(String(e)))
   page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()) })
-  await page.goto(base + route, { waitUntil: 'networkidle' })
+  const response = await page.goto(base + route, { waitUntil: 'networkidle' })
+  // Without this a typo'd route rendered the 404 page, reported "captured 0
+  // figure crops", and exited 0 — a vacuous pass that reads exactly like a
+  // page with no figures.
+  if (!response || !response.ok()) {
+    console.error(`✖ ${base + route} returned ${response ? response.status() : 'no response'}`)
+    await browser.close()
+    process.exit(1)
+  }
   await page.waitForTimeout(1000)
 
   const stats = await page.evaluate(() => ({

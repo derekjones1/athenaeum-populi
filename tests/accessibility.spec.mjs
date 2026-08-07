@@ -1,5 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
+import { assertProductionBuild } from './helpers.mjs';
 
 const WCAG_TAGS = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 const BLOCKING_IMPACTS = new Set(['serious', 'critical']);
@@ -35,6 +36,10 @@ const REPRESENTATIVE_PAGES = [
     name: '404 page',
     path: '/404.html',
     title: 'Page not found – Athenaeum Populi',
+    // A standalone document: no site chrome, no scripts, and therefore no
+    // `html.dark` class. It follows `prefers-color-scheme` in a media query
+    // instead, which the project's colorScheme setting exercises directly.
+    standalone: true,
   },
 ];
 
@@ -104,35 +109,6 @@ function formatViolations(violations) {
     .join('\n\n');
 }
 
-// The suite is only meaningful against a production build. `hugo server`
-// injects livereload and serves unfingerprinted CSS, and a stale `public/`
-// (which a running dev server overwrites) serves pages whose stylesheets
-// 404 — either way every measured colour, size, and contrast is wrong and
-// the failures look like real accessibility regressions.
-async function assertProductionBuild(page, path) {
-  const provenance = await page.evaluate(() => ({
-    livereload: Boolean(document.querySelector('script[src*="livereload"]')),
-    stylesheets: [...document.querySelectorAll('link[rel~="stylesheet"]')].map(
-      (link) => ({ href: link.getAttribute('href'), loaded: Boolean(link.sheet) }),
-    ),
-  }));
-
-  expect(
-    provenance.livereload,
-    `${path} was served by \`hugo server\` (livereload script present). ` +
-      'Run the suite against a production build: `npm run build`, serve ' +
-      '`public/`, and set BASE_URL — or stop the dev server so Playwright ' +
-      'starts its own.',
-  ).toBe(false);
-
-  const unloaded = provenance.stylesheets.filter((sheet) => !sheet.loaded);
-  expect(
-    unloaded.map((sheet) => sheet.href).join(', '),
-    `${path} has stylesheets that did not load, so the page is unstyled and ` +
-      'every size and contrast measurement below is meaningless',
-  ).toBe('');
-}
-
 function parseCssRgb(value) {
   const channels = value.match(/[\d.]+/g)?.map(Number);
   if (!channels || channels.length < 3) {
@@ -183,13 +159,29 @@ for (const representativePage of REPRESENTATIVE_PAGES) {
     await assertProductionBuild(page, representativePage.path);
     await waitForPageReady(page);
 
+    // Proving the dark run is ACTUALLY dark used to be skipped wherever a
+    // title was declared — which was only the 404 page, so that page's dark
+    // scan could have been silently measuring the light theme. A title is now
+    // checked in addition, and every page asserts the theme it applied.
     if (representativePage.title) {
       await expect(page).toHaveTitle(representativePage.title);
-    } else {
+    }
+    const theme = currentTheme(testInfo);
+    if (!representativePage.standalone) {
       await expect(page.locator('html')).toHaveClass(
-        new RegExp(`(?:^|\\s)${currentTheme(testInfo)}(?:\\s|$)`),
+        new RegExp(`(?:^|\\s)${theme}(?:\\s|$)`),
       );
     }
+    // The rendered result, which is what a reader gets under either mechanism:
+    // a dark page is dark and a light page is light.
+    const backgroundLuminance = relativeLuminance(
+      parseCssRgb(await page.evaluate(() => getComputedStyle(document.body).backgroundColor)),
+    );
+    expect(
+      backgroundLuminance < 0.5,
+      `${representativePage.path} did not apply the ${theme} theme ` +
+        `(body background luminance ${backgroundLuminance.toFixed(3)})`,
+    ).toBe(theme === 'dark');
 
     const results = await new AxeBuilder({ page }).withTags(WCAG_TAGS).analyze();
     const blockingViolations = results.violations.filter((violation) =>
@@ -286,4 +278,86 @@ test('sidebar disclosure controls have at least 24 by 24 pixel targets', async (
     expect(size.width, `${size.label} width`).toBeGreaterThanOrEqual(24);
     expect(size.height, `${size.label} height`).toBeGreaterThanOrEqual(24);
   }
+});
+
+/**
+ * Two states nothing scanned before: the search combobox expanded with real
+ * results, and an exercise AFTER it has been graded.
+ *
+ * Every scan above measures a page as delivered. The states a learner actually
+ * spends time in are the ones the components build at runtime — an expanded
+ * listbox, a disabled Check button, a live-region verdict — and none of them
+ * existed when axe ran.
+ */
+test('the expanded search combobox has no serious or critical axe violations', async ({
+  page,
+}, testInfo) => {
+  await page.goto('/', { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, '/');
+  await waitForPageReady(page);
+
+  const input = page.locator('.hextra-search-input').first();
+  await input.click();
+  await input.fill('fraction');
+
+  // Pagefind's index and its wasm load on the first keystroke, so the listbox
+  // is briefly empty and then briefly shows "no results". Waiting for a real
+  // result LINK is what distinguishes the populated state this test exists to
+  // scan from the two states that would pass it for the wrong reason.
+  const results = page.locator('.hextra-search-results').first();
+  await expect(input).toHaveAttribute('aria-expanded', 'true');
+  await expect(results.locator('li a').first()).toBeVisible({ timeout: 30_000 });
+
+  const found = await results.locator('li a').count();
+  expect(found, 'the search index must return results for a common word').toBeGreaterThan(0);
+
+  const results2 = await new AxeBuilder({ page }).withTags(WCAG_TAGS).analyze();
+  const blocking = results2.violations.filter((violation) =>
+    BLOCKING_IMPACTS.has(violation.impact),
+  );
+  expect(
+    blocking.length,
+    `Blocking axe violations in the expanded search combobox ` +
+      `(${currentTheme(testInfo)} theme):\n\n${formatViolations(blocking)}`,
+  ).toBe(0);
+});
+
+test('a graded fill-in has no serious or critical axe violations', async ({
+  page,
+}, testInfo) => {
+  const path =
+    '/math/prealgebra/09-math-models-and-geometry/' +
+    '07-solve-a-formula-for-a-specific-variable/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  const card = page.locator('fill-in[data-answer="r=d/t"]');
+  await expect(card).toHaveCount(1);
+  const field = card.locator('math-field');
+  await field.scrollIntoViewIfNeeded();
+  await field.click();
+  await expect
+    .poll(async () => field.evaluate((el) => document.activeElement === el), { timeout: 10_000 })
+    .toBe(true);
+  await page.keyboard.type('d/t', { delay: 20 });
+  await card.getByRole('button', { name: /check/i }).click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 10_000 })
+    .toBe('correct');
+
+  // On success the component makes the field readonly, disables the focused
+  // Check button, and writes into a live region — the exact combination that
+  // can strand focus on <body> or leave a control with no accessible name.
+  expect(await card.evaluate((el) => document.activeElement !== document.body)).toBe(true);
+
+  const results = await new AxeBuilder({ page }).withTags(WCAG_TAGS).analyze();
+  const blocking = results.violations.filter((violation) =>
+    BLOCKING_IMPACTS.has(violation.impact),
+  );
+  expect(
+    blocking.length,
+    `Blocking axe violations on a graded fill-in (${currentTheme(testInfo)} theme):\n\n` +
+      formatViolations(blocking),
+  ).toBe(0);
 });

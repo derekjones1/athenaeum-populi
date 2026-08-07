@@ -1,3 +1,5 @@
+import { GRAPH_PLOT_RENDER_DEFAULTS } from './graph-core.mjs';
+
 const finite = (value) => typeof value === 'number' && Number.isFinite(value);
 
 function validateLine(line, where) {
@@ -15,7 +17,17 @@ function validateLine(line, where) {
 
 /**
  * Parse and validate the authored GraphPlot contract before any geometry loop
- * or interaction handler sees it.
+ * or interaction handler sees it, and return the EFFECTIVE render config —
+ * the author's grid with `<graph-plot>`'s own defaults already applied.
+ *
+ * Returning the effective config is the point. The component used to hold its
+ * defaults inline (`tickLabels: true, tickStep: 2, ...this.grid`) while this
+ * function validated the raw authored grid, where `tickLabels` was undefined
+ * and `tickStep` defaulted to the grid step. So the tick-label ceiling below
+ * only ever ran on a config that had opted in by hand, and an authored
+ * `{"grid":{"xMin":-1e6,"xMax":1e6}}` passed `npm run lint` clean and then
+ * asked the browser for about a million tick labels — where buildGraph's own
+ * stepCount guard throws, outside the component's parse try/catch.
  */
 export function parseGraphPlotConfig(raw, snapRaw = 1) {
   let config;
@@ -56,10 +68,11 @@ export function parseGraphPlotConfig(raw, snapRaw = 1) {
     validateLine(answer, 'Line answer');
   }
 
-  const grid = config.grid ?? {};
-  if (!grid || typeof grid !== 'object' || Array.isArray(grid)) {
+  const authoredGrid = config.grid ?? {};
+  if (!authoredGrid || typeof authoredGrid !== 'object' || Array.isArray(authoredGrid)) {
     throw new Error('Graph grid must be an object');
   }
+  const grid = { ...GRAPH_PLOT_RENDER_DEFAULTS, ...authoredGrid };
   const xMin = grid.xMin ?? -7;
   const xMax = grid.xMax ?? 7;
   const yMin = grid.yMin ?? -7;
@@ -81,6 +94,8 @@ export function parseGraphPlotConfig(raw, snapRaw = 1) {
     if (grid.tickLabels && Math.floor(span / tickStep) + 1 > 10_000) {
       throw new Error(`${axis}TickStep would generate too many tick labels`);
     }
+    // Both ceilings now run against the effective grid, so a config that would
+    // throw inside buildGraph at render time is rejected here instead.
   }
 
   const snap = Number(snapRaw);
@@ -89,7 +104,9 @@ export function parseGraphPlotConfig(raw, snapRaw = 1) {
   const rows = Math.floor((yMax - yMin) / snap) + 2;
   if (columns * rows > 100_000) throw new Error('Graph snap creates too many selectable grid points');
 
-  return { answer, grid, mode, snap, xMin, xMax, yMin, yMax };
+  // `grid` carries the resolved bounds too, so a caller can spread it straight
+  // into buildGraph as the whole render config.
+  return { answer, grid: { ...grid, xMin, xMax, yMin, yMax }, mode, snap, xMin, xMax, yMin, yMax };
 }
 
 function valuesInRange(min, max, snap) {

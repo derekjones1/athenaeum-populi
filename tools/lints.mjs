@@ -16,6 +16,13 @@ import { parseGraphPlotConfig } from '../assets/js/lib/graph-plot-config.mjs';
 import {
   ANSWER_FORM_TOKENS, checkAnswer, checkForm, parseAnswerForm, splitTopLevelCommas, stripGroupingCommas,
 } from '../assets/js/lib/check-answer.mjs';
+// The shared content primitives: one shortcode grammar, one math-span escape
+// strategy, and one set of HTML readers, so this lint and the verifiers can
+// never disagree about what a page says.
+import {
+  malformedShortcodeParams, mathSpans, PAIRED_SHORTCODES, shortcodes,
+} from './lib-content.mjs';
+import { hasFileBackedCssImage, htmlAttribute } from './lib-html.mjs';
 // The one objectives-callout parser, shared with the structure validator and
 // the source audit so the three tools never diagnose the callout differently.
 import { parseObjectivesCallout } from './lib-openstax-source.mjs';
@@ -56,19 +63,6 @@ function blankBalancedMacro(source, macroRe, blank) {
   return out;
 }
 
-/**
- * Standalone values printed in a fillin question, for the trivial-answer
- * check. Grading is value-based, so a prompt whose target value appears in
- * the question is trivially satisfiable: typing 86 passes "Find the prime
- * factorization of $86$", and retyping the printed fraction passes "Simplify
- * $-\tfrac{40}{88}$". A candidate is a whole $…$ span that is one (possibly
- * signed) number, fraction, mixed number, money amount, or percentage — plus
- * every bare number in the prose ("Find the prime factorization of 80").
- * Compound expressions are deliberately not candidates: "Add: $3+5$" is
- * value-equal to its own answer in every CAS-graded arithmetic prompt, which
- * no prompt rewrite can avoid, so flagging it would only bury the fixable
- * cases.
- */
 /**
  * Does the prompt ask the learner to RE-EXPRESS a value the question prints —
  * to restate it in another form without changing what it is worth? That shape
@@ -184,12 +178,28 @@ const VALUE_SPAN_RE = new RegExp(
 // longer decimal, the tail of one, or part of a word ("3-digit" still yields 3).
 const PROSE_NUMBER_RE = new RegExp(String.raw`(?<![\w.,−-])[−-]?${NUMBER_TOKEN}(?!\.?\d|\w)`, 'g');
 
+/**
+ * Standalone values printed in a fillin question, for the trivial-answer
+ * check. Grading is value-based, so a prompt whose target value appears in
+ * the question is trivially satisfiable: typing 86 passes "Find the prime
+ * factorization of $86$", and retyping the printed fraction passes "Simplify
+ * $-\tfrac{40}{88}$". A candidate is a whole $…$ span that is one (possibly
+ * signed) number, fraction, mixed number, money amount, or percentage — plus
+ * every bare number in the prose ("Find the prime factorization of 80").
+ * Compound expressions are deliberately not candidates: "Add: $3+5$" is
+ * value-equal to its own answer in every CAS-graded arithmetic prompt, which
+ * no prompt rewrite can avoid, so flagging it would only bury the fixable
+ * cases.
+ */
 function printedQuestionValues(question) {
   const values = [];
-  const prose = question.replace(/(?<!\\)\$([^$]+?)(?<!\\)\$/g, (span, inner) => {
-    if (VALUE_SPAN_RE.test(inner)) values.push(inner.replace(/\\\$/g, '').trim());
-    return ' ';
-  });
+  let prose = question;
+  for (const span of mathSpans(question, { allowNewlines: true })) {
+    if (VALUE_SPAN_RE.test(span.tex)) values.push(span.tex.replace(/\\\$/g, '').trim());
+    // Blank the span in place so the prose scan below cannot read a digit out
+    // of math it has already accounted for, and so offsets stay comparable.
+    prose = prose.slice(0, span.index) + ' '.repeat(span.length) + prose.slice(span.index + span.length);
+  }
   for (const m of prose.matchAll(PROSE_NUMBER_RE)) values.push(m[0]);
   return values;
 }
@@ -214,8 +224,8 @@ const spanHasVariable = (value) => /[A-Za-z]/.test(value.replace(/\\[a-zA-Z]+/g,
 
 function printedPolynomialSubjects(question) {
   const subjects = [];
-  for (const span of question.matchAll(/(?<!\\)\$([^$]+?)(?<!\\)\$/g)) {
-    const inner = span[1].trim();
+  for (const span of mathSpans(question, { allowNewlines: true })) {
+    const inner = span.tex.trim();
     if (/[=<>,]|\\(?:lt|gt|le|ge|ne|neq|text|begin|dots|ldots)/.test(inner)) continue;
     if (!spanHasVariable(inner)) continue;
     subjects.push(inner);
@@ -234,8 +244,8 @@ function printedPolynomialSubjects(question) {
  */
 function printedArithmeticSubjects(question) {
   const subjects = [];
-  for (const span of question.matchAll(/(?<!\\)\$([^$]+?)(?<!\\)\$/g)) {
-    const inner = span[1].trim();
+  for (const span of mathSpans(question, { allowNewlines: true })) {
+    const inner = span.tex.trim();
     // `{,}` is digit grouping, not a list separator: `\tfrac{91{,}881}{9}` is
     // one quotient, and reading its comma as an enumeration would silently
     // exempt every grouped number in the corpus from this rule.
@@ -247,15 +257,21 @@ function printedArithmeticSubjects(question) {
   return subjects;
 }
 
-export const groupDigits = (n) => n.replace(/\B(?=(\d{3})+$)/g, '{,}');
+const groupDigits = (n) => n.replace(/\B(?=(\d{3})+$)/g, '{,}');
 
 /**
  * Blank fenced/inline code and HTML comments — documentation, not authored
  * page content — without changing string offsets, so a diagnostic still points
- * at the right source line. Exported alongside `ungroupedDigitRuns` so a fixer
- * sees exactly the text the lint sees.
+ * at the right source line.
+ *
+ * These three (`groupDigits`, `maskDocumentation`, `ungroupedDigitRuns`) were
+ * exported for a digit-grouping fixer that was never written, and nothing
+ * outside this file has ever imported them. An export is a promise about an
+ * API; keeping one for a hypothetical caller means every future change here
+ * has to think about a caller that does not exist. If the fixer is ever built,
+ * export them again then — that is one line, and it will be a real decision.
  */
-export function maskDocumentation(src) {
+function maskDocumentation(src) {
   const blank = (s) => s.replace(/[^\n]/g, ' ');
   return maskMarkdownCodeBlocks(src.replace(/<!--[\s\S]*?-->/g, blank), blank)
     .replace(/(`+)([\s\S]*?)\1/g, blank)
@@ -264,16 +280,14 @@ export function maskDocumentation(src) {
 
 /**
  * Every four-or-more-digit run inside a math span that the corpus would write
- * grouped, with its offset in `source`. Exported so a fixer rewrites exactly
- * what the lint reports, rather than re-deriving the rules and diverging: the
- * masking below is subtle, and a near-miss would edit text no reader sees.
+ * grouped, with its offset in `source`. The masking is subtle — a near-miss
+ * would report text no reader sees — which is why it is one function rather
+ * than rules re-derived at the call site.
  */
-export function ungroupedDigitRuns(source, blank) {
+function ungroupedDigitRuns(source, blank) {
   const runs = [];
-  const spans = [];
-  for (const m of source.matchAll(/\$\$([\s\S]*?)\$\$/g)) spans.push([m.index + 2, m[1]]);
-  const inlineOnly = source.replace(/\$\$[\s\S]*?\$\$/g, blank);
-  for (const m of inlineOnly.matchAll(/(?<!\\)\$([^$\n]+?)(?<!\\)\$/g)) spans.push([m.index + 1, m[1]]);
+  const spans = mathSpans(source)
+    .map(({ tex, display, index }) => [index + (display ? 2 : 1), tex]);
   for (const [offset, span] of spans) {
     // \text{…} is prose, and an already-grouped number is correct as written.
     // \phantom{…} is invisible spacing, not a number: long-division layouts
@@ -291,16 +305,6 @@ export function ungroupedDigitRuns(source, blank) {
     }
   }
   return runs.sort((a, b) => a.index - b.index);
-}
-
-/** Return an exact HTML attribute value; do not confuse `role` with `data-role`. */
-function htmlAttribute(tag, name) {
-  const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const match = tag.match(new RegExp(
-    `(?:^|\\s)${escapedName}\\s*=\\s*(?:"([^"]*)"|'([^']*)'|([^\\s>]+))`,
-    'i',
-  ));
-  return match ? (match[1] ?? match[2] ?? match[3]) : '';
 }
 
 function isEscaped(src, index) {
@@ -378,46 +382,6 @@ function elementSuppliesName(block, id) {
     return Boolean(inner.replace(/<[^>]*>/g, '').trim());
   }
   return false;
-}
-
-function hasFileBackedCssImage(css) {
-  if (/(?:-webkit-)?image-set\s*\(/i.test(css)) return true;
-  for (const match of css.matchAll(/url\(\s*([^)]*?)\s*\)/gi)) {
-    let target = match[1].trim();
-    if ((target.startsWith('"') && target.endsWith('"')) || (target.startsWith("'") && target.endsWith("'"))) {
-      target = target.slice(1, -1).trim();
-    }
-    if (target && !target.startsWith('#')) return true;
-  }
-  return false;
-}
-
-/** Parse the named params of a `{{< name … >}}` shortcode opening tag body. */
-function shortcodeParams(body) {
-  const p = {};
-  for (const m of body.matchAll(/(\w+)="([^"]*)"/g)) p[m[1]] = m[2];
-  return p;
-}
-
-/** Iterate every shortcode of `name`: yields { params, inner, index, end }. */
-function* shortcodes(src, name, paired) {
-  const openRe = new RegExp(`\\{\\{<\\s*${name}\\b([\\s\\S]*?)>\\}\\}`, 'g');
-  let m;
-  while ((m = openRe.exec(src)) !== null) {
-    let inner = '';
-    let end = openRe.lastIndex;
-    if (paired) {
-      const closeRe = new RegExp(`\\{\\{<\\s*/${name}\\s*>\\}\\}`, 'g');
-      closeRe.lastIndex = openRe.lastIndex;
-      const c = closeRe.exec(src);
-      if (c) {
-        inner = src.slice(openRe.lastIndex, c.index);
-        end = closeRe.lastIndex;
-        openRe.lastIndex = end;
-      }
-    }
-    yield { params: shortcodeParams(m[1]), inner, index: m.index, end };
-  }
 }
 
 export function lintHugo(src, filename = '') {
@@ -514,6 +478,44 @@ export function lintHugo(src, filename = '') {
     for (const line of src.split('\n')) {
       if (line.includes('|') && /<br\s*\/?>/.test(line) && /\$[^$]/.test(line)) {
         err(offset, 'table cell joins math spans with <br/> — use one $\\begin{aligned}…\\end{aligned}$ span');
+      }
+      offset += line.length + 1;
+    }
+  }
+  // Goldmark splits a table row into cells on `|` before any inline math is
+  // parsed, so a `|` written as an absolute-value bar ends the cell instead.
+  // The row gains phantom columns and its math spans are cut in half; when the
+  // header row is the one that splits, it no longer matches its delimiter row
+  // and the whole table degrades to a paragraph of raw pipes. Detect the cut
+  // directly: a cell holding a `$` that opens a span the cell never closes.
+  // A lone `$` used as a currency sign (`Value ($)`) opens nothing and stays
+  // silent. `\lvert`/`\rvert` and `\left\lvert`/`\right\rvert` render
+  // identically in KaTeX without the pipe.
+  {
+    // An opening `$` is followed by its content; a currency `$` is followed by
+    // a space or by closing punctuation. End of cell counts as opening, since
+    // that is exactly the content a cell boundary cut away.
+    const opensMath = (line, index) => {
+      const next = line[index + 1];
+      return next === undefined || !/[)\]},.;:!?\s]/.test(next);
+    };
+    let offset = 0;
+    for (const line of maskMarkdownCodeBlocks(uncommented, blank).split('\n')) {
+      if (line.trimStart().startsWith('|')) {
+        // Walk the row once, tracking cell boundaries and `$` pairing together.
+        let open = -1;
+        for (let i = 0; i <= line.length; i += 1) {
+          const ch = line[i];
+          if (ch === '\\') { i += 1; continue; }
+          if (ch === '$') open = open >= 0 ? -1 : i;
+          else if (ch === '|' || i === line.length) {
+            if (open >= 0 && opensMath(line, open)) {
+              err(offset + open, 'math span cut by a table cell boundary — a literal `|` inside `$…$` is a cell separator to Goldmark; use \\lvert/\\rvert (or \\left\\lvert/\\right\\rvert)');
+              break;
+            }
+            open = -1;
+          }
+        }
       }
       offset += line.length + 1;
     }
@@ -647,9 +649,14 @@ export function lintHugo(src, filename = '') {
   for (const m of mediaSrc.matchAll(/\*\*Solution\.\*\*[ \t]*(?:\r?\n[ \t]*)+(?=(?:\{\{<\s*(?:fillin|multiplechoice|graphplot)\b|#{1,6}\s|---[ \t]*$|(?![\s\S])))/gm)) {
     wrn(m.index, 'worked example appears to have an empty Solution block — confirm that no source solution was dropped');
   }
-  for (const m of src.matchAll(/\{\{<\s*callout\b[^>]*>\}\}([\s\S]*?)\{\{<\s*\/callout\s*>\}\}/g)) {
-    const meaningful = m[1].replace(/\*\*[^*]+[.:]?\*\*/g, '').trim();
-    if (!meaningful) err(m.index, 'callout has a heading but no explanatory content');
+  // Read through the same shared iterator and the same masked source as every
+  // other shortcode rule. Its own regex used `[^>]*` for the opening tag where
+  // everything else uses `[\s\S]*?`, and it scanned the RAW source, so a
+  // fenced callout example was documentation to every rule but this one.
+  for (const { inner, index, closed } of shortcodes(mediaSrc, 'callout')) {
+    if (!closed) continue; // reported by the unclosed-shortcode rule below
+    const meaningful = inner.replace(/\*\*[^*]+[.:]?\*\*/g, '').trim();
+    if (!meaningful) err(index, 'callout has a heading but no explanatory content');
   }
 
   // A chapter landing is a reader-facing map, not a copied print outline.
@@ -690,10 +697,35 @@ export function lintHugo(src, filename = '') {
     err(m.index, 'legacy “Check answer” details block — use fillin, multiplechoice, or graphplot');
   }
 
+  // ---- shortcode structure -------------------------------------------------
+  // Two defects that used to be invisible or misattributed.
+  //
+  // An opening tag with no closing tag produced an empty body, so the body
+  // rules diagnosed the body: an unclosed `{{< multiplechoice >}}` reported
+  // "at least two non-empty options are required", which names the wrong
+  // problem and sends the author to the wrong line. Report the real one, and
+  // skip the body rules for that shortcode (below) so only one error lands.
+  //
+  // A param the canonical grammar cannot read is worse than wrong, because it
+  // is silent: Hugo's own parser accepts `hint='…'`, so the template renders
+  // the hint while this lint, the verifiers, and the answer cross-check all
+  // see an exercise with no hint at all. Anything `shortcodeParams` drops is
+  // an error here rather than a difference of opinion between tools.
+  for (const name of Object.keys(PAIRED_SHORTCODES)) {
+    for (const { index, closed, open } of shortcodes(mediaSrc, name)) {
+      if (!closed) {
+        err(index, `{{< ${name} … >}} is never closed — add a {{< /${name} >}} tag (an unclosed shortcode swallows the rest of the page)`);
+      }
+      for (const fragment of malformedShortcodeParams(open)) {
+        err(index, `${name}: parameter ${JSON.stringify(fragment)} is not \`name="value"\` — Hugo reads it but every tool here drops it, so the value would be graded by nothing`);
+      }
+    }
+  }
+
   // ---- interactive practice-set size rule ----------------------------------
   const fillins = [...shortcodes(mediaSrc, 'fillin')];
-  const multiplechoices = [...shortcodes(mediaSrc, 'multiplechoice', true)];
-  const graphplots = [...shortcodes(mediaSrc, 'graphplot', true)];
+  const multiplechoices = [...shortcodes(mediaSrc, 'multiplechoice')];
+  const graphplots = [...shortcodes(mediaSrc, 'graphplot')];
   const practiceQuestions = [...fillins, ...multiplechoices, ...graphplots]
     .sort((a, b) => a.index - b.index);
 
@@ -927,13 +959,21 @@ export function lintHugo(src, filename = '') {
 
   // ---- multiplechoice shortcode rules --------------------------------------
   const graphAnswerIndexes = [];
-  for (const { params, inner, index } of multiplechoices) {
+  for (const { params, inner, index, closed } of multiplechoices) {
+    if (!closed) continue; // the unclosed-shortcode rule above already named it
     const q = params.question || '';
     if (!q.trim()) err(index, 'multiplechoice: missing non-empty question');
     if (isRegularSection && !(params.hint || '').trim()) {
       wrn(index, `multiplechoice (${q.slice(0, 40)}…): regular-section exercise is missing a hint`);
     }
-    for (const name of ['question', 'answerDisplay', 'hint']) {
+    // `answerDisplay` is not a multiplechoice parameter. The template never
+    // rendered it and no page has ever used it, so an author who reached for
+    // the fillin habit would have had it silently swallowed — and this loop
+    // was the only thing in the repository that made it look supported.
+    if (params.answerDisplay !== undefined) {
+      err(index, 'multiplechoice: answerDisplay is not supported — the chosen option is already the answer on screen');
+    }
+    for (const name of ['question', 'hint']) {
       if (/\bTry\s+It(?:s)?\s+\d+(?:\.\d+)+(?:\s*\([a-z]\))?[.:]?/i.test(params[name] || '')) {
         err(index, `multiplechoice (${q.slice(0, 40)}…): ${name} contains a print-source “Try It” label — keep the source number in working notes`);
       }
@@ -966,7 +1006,8 @@ export function lintHugo(src, filename = '') {
   }
 
   // ---- graphplot shortcode rules -------------------------------------------
-  for (const { params, inner, index } of graphplots) {
+  for (const { params, inner, index, closed } of graphplots) {
+    if (!closed) continue; // the unclosed-shortcode rule above already named it
     for (const name of ['question', 'answerDisplay', 'hint']) {
       if (/\bTry\s+It(?:s)?\s+\d+(?:\.\d+)+(?:\s*\([a-z]\))?[.:]?/i.test(params[name] || '')) {
         err(index, `graphplot: ${name} contains a print-source “Try It” label — keep the source number in working notes`);

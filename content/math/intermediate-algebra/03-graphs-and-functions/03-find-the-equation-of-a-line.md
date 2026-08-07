@@ -933,6 +933,88 @@ lines. Do they appear perpendicular?
   hint="A line perpendicular to a horizontal line is vertical and keeps the point’s $x$-coordinate."
 >}}
 
+## Practice
+
+### Find an equation of the line given the slope and $y$-intercept
+
+{{< fillin
+  question="Find the equation of a line with slope $3$ and $y$-intercept $(0,5)$."
+  answer="y = 3x + 5"
+  answerDisplay="$y=3x+5$"
+  hint="Substitute $m=3$ and $b=5$ into $y=mx+b$."
+>}}
+
+{{< fillin
+  question="Find the equation of a line with slope $\tfrac{1}{5}$ and $y$-intercept $(0,-5)$."
+  answer="y = \frac{1}{5}x - 5"
+  answerDisplay="$y=\tfrac{1}{5}x-5$"
+  hint="Substitute $m=\tfrac{1}{5}$ and $b=-5$ into $y=mx+b$."
+>}}
+
+### Find an equation of the line given the slope and a point
+
+{{< fillin
+  question="Find the equation of a line with slope $m=\tfrac{5}{8}$ and containing the point $(8,3)$."
+  answer="y = \frac{5}{8}x - 2"
+  answerDisplay="$y=\tfrac{5}{8}x-2$"
+  hint="Substitute the slope and point into $y-y_1=m(x-x_1)$, then solve for $y$."
+>}}
+
+{{< fillin
+  question="Find the equation of a line with slope $m=-\tfrac{3}{5}$ and containing the point $(10,-5)$."
+  answer="y = -\frac{3}{5}x + 1"
+  answerDisplay="$y=-\tfrac{3}{5}x+1$"
+  hint="Substitute the slope and point into $y-y_1=m(x-x_1)$, then solve for $y$."
+>}}
+
+### Find an equation of the line given two points
+
+{{< fillin
+  question="Find the equation of a line containing the points $(2,6)$ and $(5,3)$."
+  answer="y = -x + 8"
+  answerDisplay="$y=-x+8$"
+  hint="First use the two points to find the slope, then use either point in point-slope form."
+>}}
+
+{{< fillin
+  question="Find the equation of a line containing the points $(-3,-4)$ and $(5,-2)$."
+  answer="y = \frac{1}{4}x - \frac{13}{4}"
+  answerDisplay="$y=\tfrac{1}{4}x-\tfrac{13}{4}$"
+  hint="First use the two points to find the slope, then use either point in point-slope form."
+>}}
+
+### Find an equation of a line parallel to a given line
+
+{{< fillin
+  question="Find an equation of a line parallel to $y=4x+2$ that contains the point $(1,2)$."
+  answer="y = 4x - 2"
+  answerDisplay="$y=4x-2$"
+  hint="A parallel line has the same slope. Use that slope and the given point in point-slope form."
+>}}
+
+{{< fillin
+  question="Find an equation of a line parallel to the line $2x-y=6$ that contains the point $(3,0)$."
+  answer="y = 2x - 6"
+  answerDisplay="$y=2x-6$"
+  hint="First solve the given line for $y$ to find its slope. A parallel line has that same slope; use it with the given point in point-slope form."
+>}}
+
+### Find an equation of a line perpendicular to a given line
+
+{{< fillin
+  question="Find an equation of a line perpendicular to the line $2x-3y=8$ that contains the point $(4,-1)$."
+  answer="y = -\frac{3}{2}x + 5"
+  answerDisplay="$y=-\tfrac{3}{2}x+5$"
+  hint="First solve the given line for $y$ to find its slope. The perpendicular slope is the negative reciprocal of that slope; use it with the point in point-slope form."
+>}}
+
+{{< fillin
+  question="Find an equation of a line perpendicular to $y=\tfrac{3}{4}x-2$ that contains the point $(-3,4)$."
+  answer="y = -\frac{4}{3}x"
+  answerDisplay="$y=-\tfrac{4}{3}x$"
+  hint="The perpendicular slope is the negative reciprocal of $\tfrac{3}{4}$. Use it with the point in point-slope form."
+>}}
+
 ## Key terms
 
 **point-slope form** — the form $y-y_1=m(x-x_1)$ of an equation of a line
@@ -943,4 +1025,4 @@ slopes are negative reciprocals.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 3.3: Find the Equation of a Line](https://openstax.org/books/intermediate-algebra-2e/pages/3-3-find-the-equation-of-a-line) by Lynn Marecek, Andrea Honeycutt Mathis, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the coordinate-plane figures as accessible interactive graphs; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 3.3: Find the Equation of a Line](https://openstax.org/books/intermediate-algebra-2e/pages/3-3-find-the-equation-of-a-line) by Lynn Marecek, Andrea Honeycutt Mathis, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the coordinate-plane figures as accessible interactive graphs; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into a section-final interactive practice block.</small>

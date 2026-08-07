@@ -81,10 +81,9 @@ that script, so the pipeline is encoded once.
 production Cloudflare Worker named `athenaeum-populi`. GitHub Actions verifies
 pull requests without deploying. A push to `main`, or an explicitly enabled
 manual production run, can deploy only after the verification job succeeds.
-There is no staging Worker.
-
-See `docs/main-branch-promotion-checklist.md` for promotion, smoke testing, and
-rollback.
+There is no staging Worker. `.github/workflows/ci.yml` is the promotion
+record: the verification job it runs is the gate, and a rollback is a redeploy
+of the last passing commit.
 
 ## Change boundaries
 

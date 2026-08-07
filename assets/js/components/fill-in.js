@@ -36,6 +36,9 @@ const MESSAGES = {
   // `correct` is built per-instance (may include the answerDisplay).
 };
 
+// The `--ap-*` fallback hexes below duplicate assets/css/custom.css, which is
+// the source of truth for the palette. They exist only for the moment before
+// the stylesheet applies; keep them in step with custom.css when it changes.
 const COLOR = {
   correct: 'var(--ap-success, #1a7f37)',
   incorrect: 'var(--ap-error, #b42318)',
@@ -71,16 +74,16 @@ class FillInElement extends HTMLElement {
 
     const field = document.createElement('math-field');
     field.className = 'ap-fillin-field';
-    const fieldLabel = this.dataset.questionPlain || 'Your answer';
+    // The template always emits data-question-plain, so this fallback should
+    // never be reached. It used to reuse the PLACEHOLDER string, which would
+    // have labelled the field "Your answer" — a description of the box, not of
+    // what it is for. Name the control instead.
+    const fieldLabel = this.dataset.questionPlain || 'Math answer';
     field.setAttribute('aria-label', fieldLabel);
     // MathLive focuses a separate textbox inside its shadow root. Label that
     // sink when MathLive mounts so it has the same accessible name as the host.
     // Keep this listener for reconnects because MathLive can rebuild the sink.
-    field.addEventListener('mount', () => {
-      field.shadowRoot
-        ?.querySelector('[part~="keyboard-sink"]')
-        ?.setAttribute('aria-label', field.getAttribute('aria-label') || fieldLabel);
-    });
+    field.addEventListener('mount', () => this._labelKeyboardSink());
     // MathLive reads the placeholder as LaTeX \text{...}.
     field.setAttribute('placeholder', `\\text{${this.placeholder}}`);
     this.field = field;
@@ -184,15 +187,76 @@ class FillInElement extends HTMLElement {
     );
   }
 
+  /**
+   * Give MathLive's shadow keyboard sink the same accessible name as the host.
+   * MathLive focuses that separate span rather than the host, so without this
+   * the thing that actually takes focus is unnamed.
+   */
+  _labelKeyboardSink() {
+    const label = this.field?.getAttribute('aria-label');
+    if (!label) return;
+    this.field.shadowRoot
+      ?.querySelector('[part~="keyboard-sink"]')
+      ?.setAttribute('aria-label', label);
+  }
+
+  /**
+   * Turn the answered field from an input into a rendered result.
+   *
+   * `readonly` alone leaves MathLive in an incoherent accessible state, and it
+   * was never scanned because no axe run had ever graded an exercise first:
+   *
+   *   - the host `<math-field>` carries no role of its own, so once it is no
+   *     longer editable its `aria-label` is a prohibited attribute and the
+   *     name is dropped entirely;
+   *   - MathLive BLANKS the shadow keyboard sink's `aria-label` in reaction to
+   *     `readonly`, leaving a `role="textbox"` with no accessible name exactly
+   *     where the learner had been typing.
+   *
+   * A finished exercise is a rendered answer, not an input: name the host with
+   * `role="math"`, and take the sink out of the accessibility tree and the tab
+   * order so the host is not a non-interactive element wrapping a focusable
+   * one. Re-applied on the next frame because MathLive's own reaction to
+   * `readonly` lands after this synchronous call.
+   */
+  _lockFieldForDisplay() {
+    const apply = () => {
+      if (!this.field) return;
+      this.field.setAttribute('role', 'math');
+      const sink = this.field.shadowRoot?.querySelector('[part~="keyboard-sink"]');
+      if (!sink) return;
+      sink.setAttribute('contenteditable', 'false');
+      sink.removeAttribute('role');
+      sink.removeAttribute('tabindex');
+      // Every ARIA attribute MathLive put there describes a textbox
+      // (`aria-autocomplete`, `aria-multiline`, the blanked `aria-label`).
+      // With the role gone they are all prohibited, so drop the set rather
+      // than chase the members one by one as MathLive changes them.
+      for (const attribute of [...sink.attributes]) {
+        if (attribute.name.startsWith('aria-')) sink.removeAttribute(attribute.name);
+      }
+    };
+    apply();
+    requestAnimationFrame(apply);
+  }
+
   _setStatus(status, formMessage) {
     this.status = status;
     if (status === 'correct') {
       this.done = true;
       this.field.setAttribute('readonly', '');
-      this.button.disabled = true;
+      this._lockFieldForDisplay();
       this.feedback.innerHTML = this.answerDisplayHTML
         ? `Correct — ${this.answerDisplayHTML}.`
         : 'Correct!';
+      // Disabling the element that currently has focus drops focus to <body>,
+      // stranding a keyboard or screen-reader user at the top of the document
+      // right after they succeed. Move focus to the result first, then disable.
+      if (this.button === document.activeElement) {
+        this.feedback.setAttribute('tabindex', '-1');
+        this.feedback.focus();
+      }
+      this.button.disabled = true;
     } else {
       this.feedback.textContent = (status === 'form' && formMessage) || MESSAGES[status] || '';
     }

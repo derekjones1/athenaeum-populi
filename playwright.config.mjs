@@ -14,9 +14,12 @@ const chromiumExecutablePath =
 // the server, because a stale `public/` serves pages whose fingerprinted
 // stylesheets 404.
 const serveCommand = 'npm run serve:public';
-const webServerCommand = process.env.PLAYWRIGHT_SKIP_BUILD
-  ? serveCommand
-  : `npm run build && ${serveCommand}`;
+// Bare truthiness read `PLAYWRIGHT_SKIP_BUILD=0` as "skip the build", which is
+// the opposite of what anyone typing that means — and the failure mode is a
+// stale `public/`, whose pages 404 their fingerprinted stylesheets and produce
+// accessibility failures that look real.
+const skipBuild = ['1', 'true'].includes((process.env.PLAYWRIGHT_SKIP_BUILD || '').toLowerCase());
+const webServerCommand = skipBuild ? serveCommand : `npm run build && ${serveCommand}`;
 
 export default defineConfig({
   testDir: './tests',

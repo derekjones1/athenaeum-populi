@@ -1,20 +1,13 @@
 /** Production artifact guardrails, including Cloudflare's 20,000-file cap. */
-import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
+import { existsSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
+import { walkFiles } from './lib-content.mjs';
+import { htmlAttribute, hasFileBackedCssImage, MAIN_CONTENT_RE } from './lib-html.mjs';
 
 const root = process.argv[2] || 'public';
 const maxFiles = 20_000;
-function files(dir) {
-  const found = [];
-  for (const entry of readdirSync(dir)) {
-    const path = join(dir, entry);
-    if (statSync(path).isDirectory()) found.push(...files(path));
-    else found.push(path);
-  }
-  return found;
-}
 if (!existsSync(root)) throw new Error(`Built site not found: ${root} (run npm run build first)`);
-const built = files(root);
+const built = walkFiles(root);
 const bytes = built.reduce((sum, file) => sum + statSync(file).size, 0);
 const htmlDocuments = built.filter((file) => file.endsWith('.html')).map((file) => readFileSync(file, 'utf8'));
 const html = htmlDocuments.join('\n');
@@ -36,14 +29,6 @@ const problems = forbidden.filter(([, pattern, source]) => pattern.test(source))
 
 // Inspect authored page output inside main#content. Hextra's pinned light/dark
 // navbar logos live outside this element and remain ordinary theme chrome.
-function attribute(tag, name) {
-  const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const match = tag.match(new RegExp(
-    `(?:^|\\s)${escapedName}\\s*=\\s*(?:"([^"]*)"|'([^']*)'|([^\\s>]+))`,
-    'i',
-  ));
-  return match ? (match[1] ?? match[2] ?? match[3]) : '';
-}
 
 const siteOrigin = 'https://athenaeumpopuli.org';
 const knownCdnHosts = [
@@ -257,17 +242,17 @@ function hasRemoteHtmlDependency(document) {
     const name = match[1].toLowerCase();
     let targets = [];
     if (name === 'script' || name === 'iframe' || name === 'embed' || name === 'audio') {
-      targets = [attribute(tag, 'src')];
+      targets = [htmlAttribute(tag, 'src')];
     } else if (name === 'object') {
-      targets = [attribute(tag, 'data')];
+      targets = [htmlAttribute(tag, 'data')];
     } else if (name === 'video') {
-      targets = [attribute(tag, 'src'), attribute(tag, 'poster')];
+      targets = [htmlAttribute(tag, 'src'), htmlAttribute(tag, 'poster')];
     } else if (name === 'img' || name === 'source') {
-      targets = [attribute(tag, 'src')];
-      const srcset = attribute(tag, 'srcset');
+      targets = [htmlAttribute(tag, 'src')];
+      const srcset = htmlAttribute(tag, 'srcset');
       if (srcset) targets.push(...srcset.split(',').map((candidate) => candidate.trim().split(/\s+/, 1)[0]));
     } else if (name === 'link') {
-      const rel = attribute(tag, 'rel').toLowerCase().split(/\s+/);
+      const rel = htmlAttribute(tag, 'rel').toLowerCase().split(/\s+/);
       if (rel.some((value) => [
         'stylesheet',
         'modulepreload',
@@ -278,17 +263,17 @@ function hasRemoteHtmlDependency(document) {
         'icon',
         'manifest',
       ].includes(value))) {
-        targets = [attribute(tag, 'href')];
+        targets = [htmlAttribute(tag, 'href')];
       }
     }
     if (targets.some((target) => target && parsedRemoteUrl(target))) return true;
-    if (hasRemoteCss(attribute(tag, 'style'))) return true;
+    if (hasRemoteCss(htmlAttribute(tag, 'style'))) return true;
   }
   for (const match of document.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style>/gi)) {
     if (hasRemoteCss(match[1])) return true;
   }
   for (const match of document.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)) {
-    const type = attribute(`<script ${match[1]}>`, 'type').toLowerCase();
+    const type = htmlAttribute(`<script ${match[1]}>`, 'type').toLowerCase();
     if (type === 'application/ld+json') continue;
     if (hasJavaScriptRemoteDependency(match[2])) return true;
   }
@@ -305,19 +290,8 @@ if (
   problems.push('CDN dependency');
 }
 
-function hasFileBackedCssImage(css) {
-  if (/(?:-webkit-)?image-set\s*\(/i.test(css)) return true;
-  for (const match of css.matchAll(/url\(\s*([^)]*?)\s*\)/gi)) {
-    let target = match[1].trim();
-    if ((target.startsWith('"') && target.endsWith('"')) || (target.startsWith("'") && target.endsWith("'"))) {
-      target = target.slice(1, -1).trim();
-    }
-    if (target && !target.startsWith('#')) return true;
-  }
-  return false;
-}
 function mainContent(document) {
-  const opening = /<main\b(?=[^>]*(?:^|\s)id\s*=\s*(?:"content"|'content'|content(?=[\s>])))[^>]*>/i.exec(document);
+  const opening = MAIN_CONTENT_RE.exec(document);
   if (!opening) return '';
   const start = opening.index + opening[0].length;
   const end = document.indexOf('</main>', start);
@@ -328,10 +302,10 @@ function sameSiteRedirect(document) {
   let refresh = '';
   for (const match of document.matchAll(/<(?:link|meta)\b[^>]*>/gi)) {
     const tag = match[0];
-    if (/^<link\b/i.test(tag) && attribute(tag, 'rel').toLowerCase().split(/\s+/).includes('canonical')) {
-      canonical = attribute(tag, 'href');
-    } else if (attribute(tag, 'http-equiv').toLowerCase() === 'refresh') {
-      refresh = attribute(tag, 'content').match(/^\s*0\s*;\s*url\s*=\s*(.+?)\s*$/i)?.[1] || '';
+    if (/^<link\b/i.test(tag) && htmlAttribute(tag, 'rel').toLowerCase().split(/\s+/).includes('canonical')) {
+      canonical = htmlAttribute(tag, 'href');
+    } else if (htmlAttribute(tag, 'http-equiv').toLowerCase() === 'refresh') {
+      refresh = htmlAttribute(tag, 'content').match(/^\s*0\s*;\s*url\s*=\s*(.+?)\s*$/i)?.[1] || '';
     }
   }
   if (!canonical || !refresh) return false;
@@ -349,8 +323,8 @@ function sameSiteRedirect(document) {
 }
 function katexCssHref(document) {
   for (const match of document.matchAll(/<link\b[^>]*>/gi)) {
-    const rel = attribute(match[0], 'rel').toLowerCase().split(/\s+/);
-    const href = attribute(match[0], 'href');
+    const rel = htmlAttribute(match[0], 'rel').toLowerCase().split(/\s+/);
+    const href = htmlAttribute(match[0], 'href');
     if (rel.includes('stylesheet') && /\/katex\/katex(?:\.min)?\.css(?:[?#]|$)/i.test(href)) return href;
   }
   return '';
@@ -387,16 +361,16 @@ if (/<(?:img|picture|object|embed)\b|<source\b[^>]*\bsrcset\s*=|<image\b/i.test(
   problems.push('file-backed content image markup');
 }
 for (const match of contentHtml.matchAll(/<(?:input|video)\b[^>]*>/gi)) {
-  if (attribute(match[0], 'type').toLowerCase() === 'image' || attribute(match[0], 'poster')) {
+  if (htmlAttribute(match[0], 'type').toLowerCase() === 'image' || htmlAttribute(match[0], 'poster')) {
     problems.push('file-backed content image markup');
   }
 }
 for (const match of contentHtml.matchAll(/<(?:use|feImage)\b[^>]*>/gi)) {
-  const target = attribute(match[0], 'href') || attribute(match[0], 'xlink:href');
+  const target = htmlAttribute(match[0], 'href') || htmlAttribute(match[0], 'xlink:href');
   if (target && !target.trim().startsWith('#')) problems.push('external SVG resource');
 }
 for (const match of contentHtml.matchAll(/<[^>]+>/g)) {
-  if (hasFileBackedCssImage(attribute(match[0], 'style'))) problems.push('file-backed content image URL');
+  if (hasFileBackedCssImage(htmlAttribute(match[0], 'style'))) problems.push('file-backed content image URL');
 }
 for (const match of contentHtml.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style>/gi)) {
   if (hasFileBackedCssImage(match[1])) problems.push('file-backed content image URL');

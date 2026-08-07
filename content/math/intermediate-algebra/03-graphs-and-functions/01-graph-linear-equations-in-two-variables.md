@@ -1471,6 +1471,104 @@ Plot the three points, check that they line up, and draw the line.
   hint="Substitute x = 1 into y = 4x."
 >}}
 
+## Practice
+
+### Plot points in a rectangular coordinate system
+
+{{< multiplechoice
+  question="For $y=x+2$, is $(1,2)$ a solution?"
+  answer="no"
+  hint="Substitute $x=1$ into $x+2$ and compare the result with $y=2$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For $y=\tfrac12x-3$, is $(-2,-4)$ a solution?"
+  answer="yes"
+  hint="Substitute $x=-2$ into $\tfrac12x-3$ and compare the result with $y=-4$."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Graph a linear equation by plotting points
+
+{{< graphplot
+  question="Graph the equation $y=3x-1$ by plotting points."
+  answerDisplay="$y=3x-1$"
+  ariaLabel="A blank coordinate grid from negative 7 to 7 on both axes."
+  hint="Choose three values for $x$, such as $-1$, $0$, and $1$, and compute the matching $y$-values."
+>}}
+{"answer": {"slope": 3, "intercept": -1}, "grid": {}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph the equation $y=2x$ by plotting points."
+  answerDisplay="$y=2x$"
+  ariaLabel="A blank coordinate grid from negative 7 to 7 on both axes."
+  hint="Choose three values for $x$, such as $-1$, $0$, and $1$, and compute the matching $y$-values."
+>}}
+{"answer": {"slope": 2, "intercept": 0}, "grid": {}}
+{{< /graphplot >}}
+
+### Graph vertical and horizontal lines
+
+{{< graphplot
+  question="Graph the equation $x=4$."
+  answerDisplay="$x=4$"
+  ariaLabel="A blank coordinate grid from negative 7 to 7 on both axes."
+  hint="Every point on a vertical line shares the same $x$-coordinate."
+>}}
+{"answer": {"x": 4}, "grid": {}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph the equation $y=3$."
+  answerDisplay="$y=3$"
+  ariaLabel="A blank coordinate grid from negative 7 to 7 on both axes."
+  hint="Every point on a horizontal line shares the same $y$-coordinate."
+>}}
+{"answer": {"y": 3}, "grid": {}}
+{{< /graphplot >}}
+
+### Find the $x$- and $y$-intercepts
+
+{{< fillin
+  question="Find the $x$- and $y$-intercepts of $x-y=5$. Enter the $x$-intercept first, then the $y$-intercept, separated by a comma."
+  answer="(5,0),(0,-5)"
+  answerDisplay="$(5,0), (0,-5)$"
+  hint="Let $y=0$ to find the $x$-intercept; let $x=0$ to find the $y$-intercept."
+>}}
+
+{{< fillin
+  question="Find the $x$- and $y$-intercepts of $4x-y=8$. Enter the $x$-intercept first, then the $y$-intercept, separated by a comma."
+  answer="(2,0),(0,-8)"
+  answerDisplay="$(2,0), (0,-8)$"
+  hint="Let $y=0$ to find the $x$-intercept; let $x=0$ to find the $y$-intercept."
+>}}
+
+### Graph a line using the intercepts
+
+{{< graphplot
+  question="Graph $-x+4y=8$ using the intercepts."
+  answerDisplay="$-x+4y=8$"
+  ariaLabel="A blank coordinate grid from negative 7 to 7 on both axes."
+  hint="Find the $x$-intercept by letting $y=0$ and the $y$-intercept by letting $x=0$, then draw the line through them."
+>}}
+{"answer": {"slope": 0.25, "intercept": 2}, "grid": {}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph $x+y=-3$ using the intercepts."
+  answerDisplay="$x+y=-3$"
+  ariaLabel="A blank coordinate grid from negative 7 to 7 on both axes."
+  hint="Find the $x$-intercept by letting $y=0$ and the $y$-intercept by letting $x=0$, then draw the line through them."
+>}}
+{"answer": {"slope": -1, "intercept": -3}, "grid": {}}
+{{< /graphplot >}}
+
 ## Key terms
 
 **rectangular coordinate system** — a grid formed by the $x$-axis and
@@ -1488,4 +1586,4 @@ the $y$-axis.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 3.1: Graph Linear Equations in Two Variables](https://openstax.org/books/intermediate-algebra-2e/pages/3-1-graph-linear-equations-in-two-variables) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the coordinate-plane figures as accessible interactive graphs and the solution tables as markdown tables; omitted the Be Prepared quiz, Self Check checklist, and end-of-section exercises; and converted the practice problems (“Try Its”) into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 3.1: Graph Linear Equations in Two Variables](https://openstax.org/books/intermediate-algebra-2e/pages/3-1-graph-linear-equations-in-two-variables) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the coordinate-plane figures as accessible interactive graphs and the solution tables as markdown tables; omitted the Be Prepared quiz and Self Check checklist; converted the practice problems (“Try Its”) into interactive exercises with instant feedback; and adapted selected end-of-section exercises into a section-final interactive practice block.</small>

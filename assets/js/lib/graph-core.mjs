@@ -97,6 +97,8 @@
  *             escape hatch for axis words, quadrant notes, etc.
  */
 
+import { GEOMETRY_EPSILON } from './geometry-constants.mjs'
+
 const FONT = 13
 const CHAR_W = 6.9 // ≈ px per character at fontSize 13
 const MAX_GENERATED_STEPS = 10_000
@@ -125,6 +127,18 @@ function distToSeg(p, a, b) {
 
 /** U+2212 for negatives so minus signs render full-width */
 export const mathMinus = (s) => String(s).replace(/-/g, '−')
+
+/**
+ * The render defaults `<graph-plot>` applies on top of an authored `grid`.
+ *
+ * They live here, next to the renderer that honors them, so that
+ * `parseGraphPlotConfig` can validate the config the component will ACTUALLY
+ * render. It used to validate a different one: the tick-label ceiling only ran
+ * when the author had set `tickLabels`, and the tick step defaulted to the
+ * grid step. An authored `{"grid":{"xMin":-1e6,"xMax":1e6}}` therefore passed
+ * `npm run lint` and then asked the browser for a million tick labels.
+ */
+export const GRAPH_PLOT_RENDER_DEFAULTS = Object.freeze({ tickLabels: true, tickStep: 2 })
 
 // ---------------------------------------------------------------------------
 export function buildGraph(props) {
@@ -348,7 +362,7 @@ export function buildGraph(props) {
     const xCount = firstX <= xMax ? stepCount(firstX, xMax, xTickStep, 'xTickStep') : 0
     for (let index = 0; index < xCount; index++) {
       const mx = firstX + index * xTickStep
-      if (originShown && Math.abs(mx) < 1e-9) continue
+      if (originShown && Math.abs(mx) < GEOMETRY_EPSILON) continue
       const cx = px([mx, 0])[0]
       add('line', segAttrs([cx, axisY - 3], [cx, axisY + 3], { strokeWidth: '1' }))
       add('text', { x: fmt(cx), y: fmt(axisY + 15), fontSize: '11', fill: 'currentColor', textAnchor: 'middle' }, fmtTick(mx, xTickGrouping))
@@ -357,7 +371,7 @@ export function buildGraph(props) {
     const yCount = firstY <= yMax ? stepCount(firstY, yMax, yTickStep, 'yTickStep') : 0
     for (let index = 0; index < yCount; index++) {
       const my = firstY + index * yTickStep
-      if (originShown && Math.abs(my) < 1e-9) continue
+      if (originShown && Math.abs(my) < GEOMETRY_EPSILON) continue
       const cy = px([0, my])[1]
       add('line', segAttrs([axisX - 3, cy], [axisX + 3, cy], { strokeWidth: '1' }))
       add('text', { x: fmt(axisX - 6), y: fmt(cy + 4), fontSize: '11', fill: 'currentColor', textAnchor: 'end' }, fmtTick(my, yTickGrouping))
@@ -1252,26 +1266,25 @@ export function buildFigure(props) {
 
 // ---------------------------------------------------------------------------
 /** Serialize to a plain standalone SVG string (for QA rasterization). */
-const KEBAB = {
-  strokeWidth: 'stroke-width',
-  strokeDasharray: 'stroke-dasharray',
-  strokeLinecap: 'stroke-linecap',
-  strokeLinejoin: 'stroke-linejoin',
-  strokeMiterlimit: 'stroke-miterlimit',
-  textAnchor: 'text-anchor',
-  fontSize: 'font-size',
-  fontStyle: 'font-style',
-  fontWeight: 'font-weight',
-  fillRule: 'fill-rule',
-  clipRule: 'clip-rule',
-}
+// Generic, the same conversion `<graph-plot>` applies in the browser. The
+// lookup table this replaced passed an unmapped camelCase key straight through
+// (`KEBAB[k] || k`), so a new attribute would serialize as valid-looking but
+// inert SVG here while rendering correctly in the DOM.
+const camelToKebab = (s) => s.replace(/[A-Z]/g, (m) => '-' + m.toLowerCase())
 const escXml = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
+/**
+ * `color: null` omits the `style` attribute entirely, so the figure inherits
+ * the page's text color and stays legible in dark mode. That is what content
+ * needs; the default `#111` is for standalone QA rasterization, where nothing
+ * supplies a color.
+ */
 export function toSvgString(props, { color = '#111', builder = buildGraph } = {}) {
   const g = builder(props)
   const body = g.els.map(({ tag, attrs, text }) => {
-    const a = Object.entries(attrs).map(([k, v]) => `${KEBAB[k] || k}="${v}"`).join(' ')
+    const a = Object.entries(attrs).map(([k, v]) => `${camelToKebab(k)}="${v}"`).join(' ')
     return text === undefined ? `<${tag} ${a}/>` : `<${tag} ${a}>${escXml(text)}</${tag}>`
   }).join('\n  ')
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${g.viewBox}" width="${g.width}" height="${g.height}" style="color:${color}" font-family="Helvetica, Arial, sans-serif">\n  ${body}\n</svg>`
+  const style = color === null ? '' : ` style="color:${color}"`
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${g.viewBox}" width="${g.width}" height="${g.height}"${style} font-family="Helvetica, Arial, sans-serif">\n  ${body}\n</svg>`
 }

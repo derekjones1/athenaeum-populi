@@ -917,6 +917,135 @@ $$4q - 7$$
   hint="Seven times the nickels is $7n$; *three more than* that adds $3$."
 >}}
 
+## Practice
+
+### Find factors, prime factorizations, and least common multiples
+
+{{< multiplechoice
+  question="Apply the divisibility tests to $84$. Which list gives exactly the numbers from $2$, $3$, $5$, $6$, and $10$ that divide $84$?"
+  answer="2, 3, and 6"
+  hint="Check the last digit for divisibility by $2$ and $5$, add the digits for divisibility by $3$, and use both tests for divisibility by $6$."
+>}}
+2, 3, and 6
+2 and 3
+2, 3, 5, and 6
+3, 5, and 6
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Find the prime factorization of $86$. Enter it as a product of primes, such as $2 \cdot 3 \cdot 7$."
+  answer="2 \cdot 43"
+  answerDisplay="$2 \cdot 43$"
+  answerForm="prime-product"
+  hint="$86$ is even, so first divide by $2$; then check whether the remaining factor is prime."
+>}}
+
+{{< fillin
+  question="Find the least common multiple of $8$ and $12$ using the prime factors method."
+  answer="24"
+  hint="Write $8$ and $12$ as products of primes, then use each prime factor the greatest number of times it occurs in either factorization."
+>}}
+
+### Use variables and algebraic symbols
+
+{{< fillin
+  question="Translate into an algebraic expression: the difference of $5x^2$ and $6xy$."
+  answer="5x^2 - 6xy"
+  answerDisplay="$5x^2 - 6xy$"
+  hint="A difference means subtract the second quantity from the first."
+>}}
+
+{{< fillin
+  question="Translate into an algebraic expression: the quotient of $6y^2$ and $5x$."
+  answer="\tfrac{6y^2}{5x}"
+  answerDisplay="$\tfrac{6y^2}{5x}$"
+  hint="A quotient means divide the first quantity by the second."
+>}}
+
+{{< fillin
+  question="Translate into an algebraic expression: twenty-one more than $y^2$."
+  answer="y^2 + 21"
+  answerDisplay="$y^2 + 21$"
+  hint="'More than' means add $21$ to the quantity named after it."
+>}}
+
+{{< fillin
+  question="Translate into an algebraic expression: $6x$ less than $81x^2$."
+  answer="81x^2 - 6x"
+  answerDisplay="$81x^2 - 6x$"
+  hint="'Less than' means subtracted from, so start with $81x^2$."
+>}}
+
+### Simplify expressions using the order of operations
+
+{{< fillin
+  question="Simplify: $2^3 - 12 \div (9 - 5)$."
+  answer="5"
+  answerForm="decimal"
+  hint="Simplify the parentheses and the exponent before carrying out the division and subtraction."
+>}}
+
+{{< fillin
+  question="Simplify: $2 + 8(6 + 1)$."
+  answer="58"
+  answerForm="decimal"
+  hint="Evaluate the parentheses first, then multiply before adding."
+>}}
+
+### Evaluate an expression
+
+{{< fillin
+  question="When $x = 2$, evaluate $x^6$."
+  answer="64"
+  hint="Substitute $2$ for $x$, then multiply $2$ by itself six times."
+>}}
+
+{{< fillin
+  question="When $x = 2$, evaluate $4^x$."
+  answer="16"
+  hint="Substitute $2$ for the exponent, then evaluate the power."
+>}}
+
+{{< fillin
+  question="When $x = 2$, evaluate $2x^2 + 3x - 7$."
+  answer="7"
+  hint="Substitute $2$ for each $x$, evaluate the exponent, then multiply before adding and subtracting."
+>}}
+
+### Identify and combine like terms
+
+{{< fillin
+  question="Simplify by combining like terms: $7x + 2 + 3x + 4$."
+  answer="10x + 6"
+  answerDisplay="$10x + 6$"
+  answerForm="no-like-terms"
+  hint="Combine the two $x$-terms and then combine the constants."
+>}}
+
+{{< fillin
+  question="Simplify by combining like terms: $10a + 7 + 5a - 2 + 7a - 4$."
+  answer="22a + 1"
+  answerDisplay="$22a + 1$"
+  answerForm="no-like-terms"
+  hint="Group the $a$-terms together and the constants together before adding each group."
+>}}
+
+### Translate an English phrase to an algebraic expression
+
+{{< fillin
+  question="Translate into an algebraic expression: eight times the difference of $y$ and nine."
+  answer="8(y - 9)"
+  answerDisplay="$8(y - 9)$"
+  hint="Find the difference first; the parentheses show that $8$ multiplies the entire difference."
+>}}
+
+{{< fillin
+  question="Translate into an algebraic expression: the difference of eight times $y$ and $9$."
+  answer="8y - 9"
+  answerDisplay="$8y - 9$"
+  hint="First write eight times $y$, then subtract $9$."
+>}}
+
 ## Key terms
 
 **multiple of a number** — a number that is the product of a counting number
@@ -939,4 +1068,4 @@ raised to the same powers.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 1.1: Use the Language of Algebra](https://openstax.org/books/intermediate-algebra-2e/pages/1-1-use-the-language-of-algebra) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the multiples and factor tables as accessible markdown tables, the factor-tree diagram as an accessible inline graphic, and the operation/inequality/exponent references as tables and typeset math; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 1.1: Use the Language of Algebra](https://openstax.org/books/intermediate-algebra-2e/pages/1-1-use-the-language-of-algebra) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the multiples and factor tables as accessible markdown tables, the factor-tree diagram as an accessible inline graphic, and the operation/inequality/exponent references as tables and typeset math; omitted the Be Prepared quiz and media links; and converted the practice problems ("Try Its") and selected end-of-section exercises into interactive exercises with instant feedback.</small>

@@ -767,6 +767,107 @@ was \$11,450.
   hint="Use $I=Prt$ with $I=2{,}400$, $r=0.05$, and $t=5$, then solve for P."
 >}}
 
+## Practice
+
+### Use a problem solving strategy for word problems
+
+{{< fillin
+  question="There are 16 girls in a school club. The number of girls is four more than twice the number of boys. How many boys are in the club?"
+  answer="6"
+  hint="Let b be the number of boys. Translate the information as $16=2b+4$."
+>}}
+
+{{< fillin
+  question="Huong is organizing paperback and hardback books for her club’s used book sale. The number of paperbacks is 12 less than three times the number of hardbacks. Huong had 162 paperbacks. How many hardback books were there?"
+  answer="58"
+  hint="Let h be the number of hardback books. Translate the information as $162=3h-12$."
+>}}
+
+### Solve number word problems
+
+{{< fillin
+  question="The difference of a number and 12 is three. Find the number."
+  answer="15"
+  hint="Translate the sentence as $n-12=3$."
+>}}
+
+{{< fillin
+  question="The sum of two numbers is 20. One number is four less than the other. Enter the smaller number, then the larger number, separated by a comma."
+  answer="8,12"
+  hint="Let n be the larger number and $n-4$ the smaller number. Their sum is $n+n-4=20$."
+>}}
+
+{{< fillin
+  question="Philip pays \$1,620 in rent every month. This amount is \$120 more than twice what his brother Paul pays for rent. How many dollars does Paul pay for rent?"
+  answer="750"
+  hint="Let p be Paul's rent. Translate the information as $1{,}620=2p+120$."
+>}}
+
+### Solve percent applications
+
+{{< fillin
+  question="What number is 45% of 120?"
+  answer="54"
+  hint="Change 45% to 0.45 and multiply it by 120."
+>}}
+
+{{< fillin
+  question="81 is 75% of what number?"
+  answer="108"
+  hint="Change 75% to 0.75 and divide 81 by it."
+>}}
+
+{{< fillin
+  question="What percent of 260 is 78?"
+  answer="30"
+  answerDisplay="30%"
+  hint="Divide 78 by 260, then change the decimal to a percent."
+>}}
+
+{{< fillin
+  question="Tamanika received a raise in her hourly pay, from \$15.50 to \$17.36. Find the percent change."
+  answer="12"
+  answerDisplay="12%"
+  hint="Find the increase, then divide it by the original wage of \$15.50 and change the result to a percent."
+>}}
+
+{{< fillin
+  question="Larry and Donna bought a sofa at the sale price of \$1,344. The original price of the sofa was \$1,920. Find the amount of discount, in dollars."
+  answer="576"
+  answerDisplay="\$576"
+  hint="Subtract the sale price from the original price."
+>}}
+
+{{< fillin
+  question="Larry and Donna bought a sofa at the sale price of \$1,344. The original price of the sofa was \$1,920. Find the discount rate."
+  answer="30"
+  answerDisplay="30%"
+  hint="Divide the amount of discount by the original price, then change the decimal to a percent."
+>}}
+
+### Solve simple interest applications
+
+{{< fillin
+  question="Casey deposited \$1,450 in a bank account that earned simple interest at an interest rate of 4%. How much interest was earned in two years, in dollars?"
+  answer="116"
+  answerDisplay="\$116"
+  hint="Use $I=Prt$ with $P=1{,}450$, $r=0.04$, and $t=2$."
+>}}
+
+{{< fillin
+  question="Hilaria borrowed \$8,000 from her grandfather to pay for college. Five years later, she paid him back the \$8,000, plus \$1,200 interest. What was the rate of simple interest, as a percent?"
+  answer="3"
+  answerDisplay="3%"
+  hint="Use $I=Prt$ and solve $1{,}200=(8{,}000)r(5)$ for r, then change the decimal to a percent."
+>}}
+
+{{< fillin
+  question="Joshua’s computer loan statement said he would pay \$1,244.34 in simple interest for a three-year loan at 12.4%. How much did Joshua borrow to buy the computer, in dollars?"
+  answer="3345"
+  answerDisplay="\$3,345"
+  hint="Use $I=Prt$ with $I=1{,}244.34$, $r=0.124$, and $t=3$, then solve for P."
+>}}
+
 ## Key terms
 
 **consecutive integers** — integers that immediately follow each other.
@@ -784,4 +885,4 @@ interest** — interest computed according to $I=Prt$.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 2.2: Use a Problem Solving Strategy](https://openstax.org/books/intermediate-algebra-2e/pages/2-2-use-a-problem-solving-strategy) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the source’s two-column worked-example tables as labeled steps, omitted the Be Prepared quiz, media link, Self Check, and end-of-section exercises, and converted the Try It problems into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 2.2: Use a Problem Solving Strategy](https://openstax.org/books/intermediate-algebra-2e/pages/2-2-use-a-problem-solving-strategy) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the source’s two-column worked-example tables as labeled steps, omitted the Be Prepared quiz, media link, and Self Check, converted the Try It problems into interactive exercises with instant feedback, and adapted selected end-of-section exercises into a section-final interactive Practice block.</small>

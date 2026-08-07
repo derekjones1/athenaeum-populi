@@ -886,10 +886,153 @@ least $23$ hours.
   hint="Set total expenses less than or equal to $500+15h$."
 >}}
 
+## Practice
+
+### Graph inequalities on the number line
+
+{{< fillin
+  question="Graph $x > 3$ on a number line. Enter the resulting set in interval notation."
+  answer="(3,\infty)"
+  answerDisplay="$(3, \infty)$"
+  hint="The endpoint $3$ is excluded, so use a parenthesis there and extend the interval toward larger numbers."
+>}}
+
+{{< fillin
+  question="Graph $x \le -0.5$ on a number line. Enter the resulting set in interval notation."
+  answer="(-\infty,-0.5]"
+  answerDisplay="$(-\infty, -0.5]$"
+  hint="The endpoint $-0.5$ is included, so use a bracket there and extend the interval toward smaller numbers."
+>}}
+
+{{< fillin
+  question="Graph $x \ge \tfrac{1}{3}$ on a number line. Enter the resulting set in interval notation."
+  answer="[\frac{1}{3},\infty)"
+  answerDisplay="$[\tfrac{1}{3}, \infty)$"
+  hint="The endpoint $\tfrac{1}{3}$ is included, so use a bracket there and extend the interval toward larger numbers."
+>}}
+
+{{< fillin
+  question="Graph $x \le 5$ on a number line. Enter the resulting set in interval notation."
+  answer="(-\infty,5]"
+  answerDisplay="$(-\infty, 5]$"
+  hint="The endpoint $5$ is included, so use a bracket there and extend the interval toward smaller numbers."
+>}}
+
+{{< fillin
+  question="Graph $x \ge -1.5$ on a number line. Enter the resulting set in interval notation."
+  answer="[-1.5,\infty)"
+  answerDisplay="$[-1.5, \infty)$"
+  hint="The endpoint $-1.5$ is included, so use a bracket there and extend the interval toward larger numbers."
+>}}
+
+{{< fillin
+  question="Graph $x < -\tfrac{7}{3}$ on a number line. Enter the resulting set in interval notation."
+  answer="(-\infty,-\frac{7}{3})"
+  answerDisplay="$(-\infty, -\tfrac{7}{3})$"
+  hint="The endpoint $-\tfrac{7}{3}$ is excluded, so use a parenthesis there and extend the interval toward smaller numbers."
+>}}
+
+### Solve linear inequalities
+
+{{< fillin
+  question="Solve $5u \le 8u - 21$, then write the solution in interval notation."
+  answer="[7,\infty)"
+  answerDisplay="$[7, \infty)$"
+  hint="Subtract $8u$ from both sides to get $-3u\le-21$, then divide by $-3$ and reverse the inequality."
+>}}
+
+{{< fillin
+  question="Solve $9y + 5(y+3) < 4y - 35$, then write the solution in interval notation."
+  answer="(-\infty,-5)"
+  answerDisplay="$(-\infty, -5)$"
+  hint="Distribute and combine like terms to get $10y<-50$, then divide by positive $10$."
+>}}
+
+{{< fillin
+  question="Solve $4k - (k-2) \ge 7k - 26$, then write the solution in interval notation."
+  answer="(-\infty,7]"
+  answerDisplay="$(-\infty, 7]$"
+  hint="Distribute the negative sign and combine like terms to get $-4k\ge-28$, then divide by $-4$ and reverse the inequality."
+>}}
+
+{{< fillin
+  question="Solve $-\tfrac{21}{8}y \le -\tfrac{15}{28}$, then write the solution in interval notation."
+  answer="[\frac{10}{49},\infty)"
+  answerDisplay="$[\tfrac{10}{49}, \infty)$"
+  hint="Multiply both sides by $-\tfrac{8}{21}$ and reverse the inequality."
+>}}
+
+{{< fillin
+  question="Solve $18q - 4(10-3q) < 5(6q-8)$. How many solutions are there?"
+  answer="0"
+  answerDisplay="No solution"
+  hint="Distribute and combine like terms; the variable terms cancel and leave a false statement."
+>}}
+
+### Translate words to an inequality and solve
+
+{{< fillin
+  question="Translate and solve: Six more than $k$ exceeds $25$."
+  answer="k>19"
+  answerDisplay="$k>19$"
+  hint="Translate to $k+6>25$, then subtract $6$ from both sides."
+>}}
+
+{{< fillin
+  question="Translate and solve: Twelve less than $x$ is no less than $21$."
+  answer="x\geq33"
+  answerDisplay="$x\geq33$"
+  hint="‘No less than’ means greater than or equal to; translate to $x-12\geq21$."
+>}}
+
+{{< fillin
+  question="Translate and solve: Negative two times $s$ is lower than $56$."
+  answer="s>-28"
+  answerDisplay="$s>-28$"
+  hint="Translate to $-2s<56$, then divide by $-2$ and reverse the inequality."
+>}}
+
+{{< fillin
+  question="Translate and solve: Fifteen less than $a$ is at least $-7$."
+  answer="a\geq8"
+  answerDisplay="$a\geq8$"
+  hint="Translate to $a-15\geq-7$, then add $15$ to both sides."
+>}}
+
+### Solve applications with linear inequalities
+
+{{< fillin
+  question="The elevator in an apartment building has a sign that says the maximum weight is 2,100 pounds. If the average weight of one person is 150 pounds, what is the maximum number of people who can safely ride the elevator?"
+  answer="14"
+  answerDisplay="14 people"
+  hint="Solve $150p\le2{,}100$, then use the largest whole-number solution."
+>}}
+
+{{< fillin
+  question="Kimuyen needs to earn \$4,150 per month to pay all her expenses. Her job pays her \$3,475 per month plus 4% of her total sales. What is the minimum total sales, in dollars, Kimuyen needs?"
+  answer="16875"
+  answerDisplay="\$16,875"
+  hint="Solve $3{,}475+0.04s\geq4{,}150$."
+>}}
+
+{{< fillin
+  question="Kiyoshi's phone plan costs \$17.50 per month plus \$0.15 per text message. What is the maximum number of text messages Kiyoshi can send so the phone bill is no more than \$56.60?"
+  answer="260"
+  answerDisplay="260 messages"
+  hint="Solve $17.50+0.15t\leq56.60$."
+>}}
+
+{{< fillin
+  question="Noe installs and configures software on home computers. He charges \$125 per job. His monthly expenses are \$1,600. How many jobs must he work to make a profit of at least \$2,400?"
+  answer="32"
+  answerDisplay="32 jobs"
+  hint="Solve $125j-1{,}600\geq2{,}400$."
+>}}
+
 **Key terms.** A **linear inequality** is an inequality in one variable that
 can be written in one of the forms $ax+b<c$, $ax+b\leq c$, $ax+b>c$, or
 $ax+b\geq c$, where $a$, $b$, and $c$ are real numbers and $a\ne0$.
 
 ---
 
-<small>Adapted from [Intermediate Algebra 2e, Section 2.5](https://openstax.org/books/intermediate-algebra-2e/pages/2-5-solve-linear-inequalities) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the source into an interactive web section and converted selected Try It exercises into answer-checked activities.</small>
+<small>Adapted from [Intermediate Algebra 2e, Section 2.5](https://openstax.org/books/intermediate-algebra-2e/pages/2-5-solve-linear-inequalities) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the source into an interactive web section, converted selected Try It exercises into answer-checked activities, and adapted selected end-of-section exercises into an interactive Practice block.</small>

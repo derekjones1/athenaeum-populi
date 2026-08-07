@@ -27,17 +27,19 @@
  * a correctness check must not reject sound content it cannot read. The
  * summary prints per-class coverage so the residual manual burden is visible.
  *
- * Usage: node tools/verify-answers.mjs [content-root]
+ * Usage: node tools/verify-answers.mjs [content-root] [--min-verified N]
+ *
+ * `--min-verified N` fails the run when fewer than N fill-ins were verified —
+ * a ratchet against silent scope shrink, since 0 failures also describes a
+ * checker that has stopped being able to read the corpus. The floor as of
+ * August 6, 2026 is 2587.
  */
 
-import {
-  existsSync,
-  readFileSync,
-  readdirSync,
-  statSync,
-} from 'node:fs';
-import { join } from 'node:path';
+import { existsSync, readFileSync } from 'node:fs';
 import { ce, preprocess, splitTopLevelCommas } from '../assets/js/lib/check-answer.mjs';
+import {
+  blankPreservingOffsets, mathSpans, shortcodeParams, shortcodes, walkMarkdown,
+} from './lib-content.mjs';
 
 /* ------------------------------------------------------------------ parsing */
 
@@ -200,13 +202,13 @@ export function equivalentNumerically(left, right) {
 
 /* ------------------------------------------------------------- classifiers */
 
-const SPAN_RE = /(?<!\\)\$([^$]+?)(?<!\\)\$/g;
 // A span introduced as an example of the ANSWER's shape ("… in exponential
 // form, e.g. $2^3 \cdot 5$") is not part of the exercise's mathematics.
 const EXAMPLE_LEAD_RE = /(?:e\.g\.|for example|such as|like|format)[,:]?\s*$/i;
-const questionSpans = (question) => [...question.matchAll(SPAN_RE)]
-  .filter((m) => !EXAMPLE_LEAD_RE.test(question.slice(Math.max(0, m.index - 24), m.index)))
-  .map((m) => m[1]);
+// A question is one logical line, so an inline span may cross a newline here.
+const questionSpans = (question) => mathSpans(question, { allowNewlines: true })
+  .filter((span) => !EXAMPLE_LEAD_RE.test(question.slice(Math.max(0, span.index - 24), span.index)))
+  .map((span) => span.tex);
 
 const SOLVE_RE = /(?:^|[.?!]\s)\s*solve\b/i;
 const SOLVE_FOR_RE = /\bsolve[^.?!$]*?\bfor\s+\$([a-zA-Z])\$/i;
@@ -390,41 +392,40 @@ export function analyzeFillin({ question = '', answer, answerMode }) {
 
 /* ------------------------------------------------------------------ driver */
 
-const shortcodeParams = (body) => {
-  const params = {};
-  for (const m of body.matchAll(/(\w+)="([^"]*)"/g)) params[m[1]] = m[2];
-  return params;
-};
-
 /** Every fill-in in a Markdown source, with its 1-based line number. */
 export function extractFillins(source) {
   // Blank out code fences and inline code in place (newlines kept) so the
   // reported line numbers stay true to the file.
   const cleaned = source
-    .replace(/```[\s\S]*?```/g, (block) => block.replace(/[^\n]/g, ' '))
-    .replace(/`[^`\n]*`/g, (span) => ' '.repeat(span.length));
+    .replace(/```[\s\S]*?```/g, blankPreservingOffsets)
+    .replace(/`[^`\n]*`/g, blankPreservingOffsets);
   const fillins = [];
-  for (const m of cleaned.matchAll(/\{\{<\s*fillin\b([\s\S]*?)>\}\}/g)) {
-    fillins.push({
-      line: cleaned.slice(0, m.index).split('\n').length,
-      params: shortcodeParams(m[1]),
-    });
+  for (const { params, index } of shortcodes(cleaned, 'fillin')) {
+    fillins.push({ line: cleaned.slice(0, index).split('\n').length, params });
   }
   return fillins;
 }
 
-function markdownFiles(dir) {
-  const found = [];
-  for (const entry of readdirSync(dir)) {
-    const path = join(dir, entry);
-    if (statSync(path).isDirectory()) found.push(...markdownFiles(path));
-    else if (entry.endsWith('.md')) found.push(path);
-  }
-  return found;
-}
-
 function main() {
-  const root = process.argv[2] || 'content';
+  const args = process.argv.slice(2);
+  const root = args.find((a) => !a.startsWith('--')) || 'content';
+  // Coverage ratchet. This tool reports 0 failures both when every answer is
+  // right and when it has quietly stopped being able to READ them — a parser
+  // change that pushes a class into "out of scope" shrinks the checked set
+  // without changing a single line of the summary. `--min-verified N` turns
+  // that into a failure. Wired into `npm test`: the `verify:answers` script
+  // passes `--min-verified 2587`; raise the floor deliberately as authored
+  // coverage grows, in the same commit as the content that raises it.
+  const minVerifiedArg = args.find((a) => a.startsWith('--min-verified'));
+  const minVerified = minVerifiedArg
+    ? Number(minVerifiedArg.includes('=')
+      ? minVerifiedArg.split('=')[1]
+      : args[args.indexOf(minVerifiedArg) + 1])
+    : null;
+  if (minVerifiedArg && (!Number.isInteger(minVerified) || minVerified < 0)) {
+    console.error('usage: node tools/verify-answers.mjs [content-root] [--min-verified N]');
+    process.exit(2);
+  }
   if (!existsSync(root)) throw new Error(`Content root not found: ${root}`);
 
   const passes = { solve: 0, 'evaluate-at': 0, 're-expression': 0 };
@@ -432,7 +433,7 @@ function main() {
   const failures = [];
   let total = 0;
 
-  for (const file of markdownFiles(root).sort()) {
+  for (const file of walkMarkdown(root)) {
     for (const { line, params } of extractFillins(readFileSync(file, 'utf8'))) {
       total += 1;
       const result = analyzeFillin(params);
@@ -444,11 +445,13 @@ function main() {
     }
   }
 
+  // Failure detail to stderr, matching the other verifiers; the coverage
+  // summary below stays on stdout because it is the tool's normal output.
   for (const { file, line, params, result } of failures) {
-    console.log(`✗ ${file}:${line} [${result.rule}]`);
-    console.log(`    question: ${JSON.stringify(params.question?.slice(0, 100))}`);
-    console.log(`    answer:   ${JSON.stringify(params.answer)}`);
-    console.log(`    ${result.detail}`);
+    console.error(`✗ ${file}:${line} [${result.rule}]`);
+    console.error(`    question: ${JSON.stringify(params.question?.slice(0, 100))}`);
+    console.error(`    answer:   ${JSON.stringify(params.answer)}`);
+    console.error(`    ${result.detail}`);
   }
 
   const verified = Object.values(passes).reduce((a, b) => a + b, 0);
@@ -458,6 +461,11 @@ function main() {
     + `${outOfScope} out of scope; ${failures.length} failure(s)`);
   for (const [reason, count] of [...skips.entries()].sort((a, b) => b[1] - a[1])) {
     console.log(`    · out of scope (${count}): ${reason}`);
+  }
+  if (minVerified !== null && verified < minVerified) {
+    console.error(`✖ answer cross-check verified ${verified} fill-ins, below the --min-verified floor of ${minVerified}`);
+    console.error('  · coverage shrank: a prompt class this tool used to read is now out of scope');
+    process.exit(1);
   }
   process.exit(failures.length ? 1 : 0);
 }

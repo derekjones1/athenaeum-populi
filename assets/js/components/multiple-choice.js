@@ -6,6 +6,9 @@
  * wires clicks, feedback, and the hint toggle.
  */
 
+// The `--ap-*` fallback hexes below duplicate assets/css/custom.css, which is
+// the source of truth for the palette. They exist only for the moment before
+// the stylesheet applies; keep them in step with custom.css when it changes.
 const COLOR = {
   correct: 'var(--ap-success, #1a7f37)',
   incorrect: 'var(--ap-error, #b42318)',
@@ -68,7 +71,15 @@ class MultipleChoiceElement extends HTMLElement {
 
     if (correct) {
       this.done = true;
-      this.options.forEach((b) => { if (b !== btn) b.disabled = true; });
+      // `disabled` removes a button from the accessibility tree in some
+      // screen-reader/browser pairs, so the reader can no longer review the
+      // options they just chose among. `aria-disabled` keeps them announced as
+      // present-but-unavailable, which is what actually happened.
+      this.options.forEach((b) => {
+        if (b === btn) return;
+        b.disabled = true;
+        b.setAttribute('aria-disabled', 'true');
+      });
       this.feedback.textContent = 'Correct!';
       this.feedback.style.color = COLOR.correct;
     } else {

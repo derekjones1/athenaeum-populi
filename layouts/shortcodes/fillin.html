@@ -19,14 +19,11 @@
                     prompt, whose answer is value-equal to the value printed
                     in its own question ("Simplify $-\tfrac{40}{88}$"). Value
                     grading alone accepts the prompt retyped back; this grades
-                    the shape too. Tokens: fraction, decimal, mixed-number,
-                    improper-fraction, fraction-or-mixed-number, lowest-terms,
-                    scientific-notation, prime-product, single-power,
-                    expanded, no-like-terms, polynomial, distributed,
-                    simplified-radical,
-                    single-term,
-                    single-fraction, factored,
-                    denominator:<n>
+                    the shape too. For the accepted tokens read $formTokens
+                    below — it is the list this template validates against, and
+                    tools/documentation.test.mjs asserts it set-equals
+                    ANSWER_FORM_TOKENS in assets/js/lib/check-answer.mjs. Do
+                    not re-list them here; a hand copy drifts.
     placeholder     empty-field prompt (default "Your answer")
 
   Renders a static, readable block (question always visible) that the
@@ -38,8 +35,11 @@
 {{- if or (not $answer) (not $question) -}}
   {{- errorf "fillin shortcode needs both 'question' and 'answer' (%s)" .Position -}}
 {{- end -}}
+{{- /* `hasMath` is read by themes/hextra/layouts/_partials/head.html to decide
+     whether to load KaTeX CSS. A `hasFillIn` key was written here too and read
+     by nothing in layouts/ or themes/ — the fill-in bundle is loaded from the
+     shared entry point, not from a page flag. */ -}}
 {{- .Page.Store.Set "hasMath" true -}}
-{{- .Page.Store.Set "hasFillIn" true -}}
 {{- $answerMode := .Get "answerMode" | default "expression" -}}
 {{- if not (in (slice "expression" "unordered") $answerMode) -}}
   {{- errorf "fillin answerMode must be 'expression' or 'unordered' (%s)" .Position -}}

@@ -584,6 +584,77 @@ $$
   hint="Distribute the $8$ and the leading negative, then combine like terms: $8x - x$ and $-8 - 5$."
 >}}
 
+## Practice
+
+### Use the commutative and associative properties
+
+{{< fillin
+  question="Simplify: $43m + (-12n) + (-16m) + (-9n)$."
+  answer="27m - 21n"
+  answerForm="no-like-terms"
+  answerDisplay="$27m - 21n$"
+  hint="Use the Commutative Property to group the $m$ terms and the $n$ terms, then combine each pair."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(\tfrac{5}{6} + \tfrac{8}{15}\right) + \tfrac{7}{15}$."
+  answer="1\frac{5}{6}"
+  answerForm="mixed-number"
+  answerDisplay="$1\tfrac{5}{6}$"
+  hint="Use the Associative Property to add the two fractions with denominator $15$ first, then add the result to $\tfrac{5}{6}$."
+>}}
+
+### Use the properties of identity, inverse, and zero
+
+{{< fillin
+  question="Simplify: $19a + 44 - 19a$."
+  answer="44"
+  answerForm="decimal"
+  hint="$19a$ and $-19a$ are additive inverses, so their sum is $0$."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{3}{20} \cdot \tfrac{49}{11} \cdot \tfrac{20}{3}$."
+  answer="\frac{49}{11}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{49}{11}$"
+  hint="The first and third factors are multiplicative inverses, so they multiply to $1$."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{0}{u - 4.99}$, where $u \ne 4.99$."
+  answer="0"
+  answerForm="decimal"
+  answerDisplay="$0$"
+  hint="A zero numerator divided by a nonzero denominator has value $0$."
+>}}
+
+### Simplify expressions using the distributive property
+
+{{< fillin
+  question="Simplify: $8(4y + 9)$."
+  answer="32y + 72"
+  answerForm="distributed"
+  answerDisplay="$32y + 72$"
+  hint="Multiply $8$ by each term inside the parentheses."
+>}}
+
+{{< fillin
+  question="Simplify: $6(c - 13)$."
+  answer="6c - 78"
+  answerForm="distributed"
+  answerDisplay="$6c - 78$"
+  hint="Distribute $6$ to both $c$ and $-13$."
+>}}
+
+{{< fillin
+  question="Simplify: $16 - 3(y + 8)$."
+  answer="-3y - 8"
+  answerForm="distributed"
+  answerDisplay="$-3y - 8$"
+  hint="Distribute the negative $3$ first, then combine the constant terms."
+>}}
+
 ## Key terms
 
 **commutative property** — changing the order of two numbers when adding or
@@ -602,4 +673,4 @@ zero is undefined.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 1.5: Properties of Real Numbers](https://openstax.org/books/intermediate-algebra-2e/pages/1-5-properties-of-real-numbers) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: typeset the property boxes as callouts and the worked-example steps as aligned math; omitted the Be Prepared quiz, the summary table of all properties, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 1.5: Properties of Real Numbers](https://openstax.org/books/intermediate-algebra-2e/pages/1-5-properties-of-real-numbers) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: typeset the property boxes as callouts and the worked-example steps as aligned math; omitted the Be Prepared quiz, the summary table of all properties, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

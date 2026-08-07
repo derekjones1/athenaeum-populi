@@ -451,6 +451,96 @@ $25$ child tickets.
   hint="Let x, y, and z be the numbers of adult, student, and child tickets sold. Then x+y+z=350, 20x+12y+10z=4650, and z=x. Substitute z=x to reduce the system to two variables."
 >}}
 
+## Practice
+
+### Determine whether an ordered triple is a solution of a system of three linear equations with three variables
+
+{{< multiplechoice
+  question="Is $(-5,-7,4)$ a solution to the system $\left\{\begin{array}{l} -3x+y+z=-4 \\ -x+2y-2z=1 \\ 2x-y-z=-1 \end{array}\right.$?"
+  hint="Substitute the triple into all three equations; it is a solution only if every equation comes out true."
+  answer="no"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $(5,7,4)$ a solution to the system $\left\{\begin{array}{l} -3x+y+z=-4 \\ -x+2y-2z=1 \\ 2x-y-z=-1 \end{array}\right.$?"
+  hint="Substitute the triple into all three equations; it is a solution only if every equation comes out true."
+  answer="yes"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $\left(-6,5,\tfrac{1}{2}\right)$ a solution to the system $\left\{\begin{array}{l} x+3y-z=15 \\ y=\tfrac{2}{3}x-2 \\ x-3y+z=-2 \end{array}\right.$?"
+  hint="Substitute the triple into all three equations; it is a solution only if every equation comes out true."
+  answer="no"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $\left(5,\tfrac{4}{3},-3\right)$ a solution to the system $\left\{\begin{array}{l} x+3y-z=15 \\ y=\tfrac{2}{3}x-2 \\ x-3y+z=-2 \end{array}\right.$?"
+  hint="Substitute the triple into all three equations; it is a solution only if every equation comes out true."
+  answer="no"
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Solve a system of linear equations with three variables
+
+{{< fillin
+  question="Solve the system by elimination: $\left\{\begin{array}{l} 6x-5y+2z=3 \\ 2x+y-4z=5 \\ 3x-3y+z=-1 \end{array}\right.$ Enter the solution as an ordered triple $(x,y,z)$."
+  answer="(4,5,2)"
+  answerDisplay="$(4,5,2)$"
+  hint="Eliminate y from the first and second equations, then eliminate y again using a different pair, to get a system of two equations in x and z."
+>}}
+
+{{< fillin
+  question="Solve the system by elimination: $\left\{\begin{array}{l} 4x-3y+z=7 \\ 2x-5y-4z=3 \\ 3x-2y-2z=-7 \end{array}\right.$ Enter the solution as an ordered triple $(x,y,z)$."
+  answer="(-3,-5,4)"
+  answerDisplay="$(-3,-5,4)$"
+  hint="Eliminate z from the first and second equations, then eliminate z again using the first and third, to get a system of two equations in x and y."
+>}}
+
+{{< multiplechoice
+  question="Solve the system of equations: $\left\{\begin{array}{l} x-2y+2z=1 \\ -2x+y-z=2 \\ x-y+z=5 \end{array}\right.$ How many solutions does the system have?"
+  hint="Eliminate x from two different pairs of equations; if the two resulting equations in y and z contradict each other, the system has no solution."
+  answer="no solution"
+>}}
+exactly one solution
+no solution
+infinitely many solutions
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Solve the system of equations: $\left\{\begin{array}{l} x+y-2z=3 \\ -2x-3y+z=-7 \\ x+2y+z=4 \end{array}\right.$ How many solutions does the system have?"
+  hint="Eliminate x from two different pairs of equations; if the two resulting equations in y and z are equivalent, the system has infinitely many solutions."
+  answer="infinitely many solutions"
+>}}
+exactly one solution
+no solution
+infinitely many solutions
+{{< /multiplechoice >}}
+
+### Solve applications using systems of linear equations with three variables
+
+{{< fillin
+  question="The sum of the measures of the angles of a triangle is 180 degrees. The sum of the measures of the second and third angles is three times the measure of the first angle, and the third angle is fifteen more than the second. Enter the measures of the first, second, and third angles, in that order, separated by commas."
+  answer="45,60,75"
+  hint="Let x, y, and z be the first, second, and third angles. Then x+y+z=180, y+z=3x, and z=y+15; substitute to reduce to one variable."
+>}}
+
+{{< fillin
+  question="The church youth group is selling snacks to raise money for a convention. Amy sold 2 pounds of candy, 3 boxes of cookies, and 1 can of popcorn for total sales of \$65. Brian sold 4 pounds of candy, 6 boxes of cookies, and 3 cans of popcorn for total sales of \$140. Paulina sold 8 pounds of candy, 8 boxes of cookies, and 5 cans of popcorn for total sales of \$250. Enter the cost of a pound of candy, a box of cookies, and a can of popcorn, in that order, separated by commas, in dollars."
+  answer="20,5,10"
+  hint="Let c, k, and p be the prices of candy, cookies, and popcorn. Translate each person's sales into an equation and solve the resulting system."
+>}}
+
 ## Key terms
 
 **linear equation in three variables** — an equation of the form
@@ -467,4 +557,4 @@ solutions; eliminating variables leaves a true statement like $0=0$.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 4.4: Solve Systems of Equations with Three Variables](https://openstax.org/books/intermediate-algebra-2e/pages/4-4-solve-systems-of-equations-with-three-variables) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: described the three-plane geometric cases (one solution, no solution, infinitely many solutions) in prose instead of recreating the 3D plane diagrams; recast the seven-step worked example as a markdown table; omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback — including turning the no-solution and infinite-solutions Try Its into multiple-choice questions about the number of solutions, since a word answer can't be graded by the math checker.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 4.4: Solve Systems of Equations with Three Variables](https://openstax.org/books/intermediate-algebra-2e/pages/4-4-solve-systems-of-equations-with-three-variables) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: described the three-plane geometric cases (one solution, no solution, infinitely many solutions) in prose instead of recreating the 3D plane diagrams; recast the seven-step worked example as a markdown table; omitted the Be Prepared quiz, Self Check checklist, and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback — including turning the no-solution and infinite-solutions Try Its into multiple-choice questions about the number of solutions, since a word answer can't be graded by the math checker; and adapted selected end-of-section Practice Makes Perfect exercises into an interactive Practice block covering all three objectives.</small>

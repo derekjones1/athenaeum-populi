@@ -150,7 +150,7 @@ Simplify: (a) $\sqrt{x^{3}}$ (b) $\sqrt[3]{x^{4}}$ (c) $\sqrt[4]{x^{7}}.$
 |  | $\sqrt{x^{3}}$ |
 | Rewrite the radicand as a product using the largest perfect square factor. | $\sqrt{x^{2} \cdot x}$ |
 | Rewrite the radical as the product of two radicals. | $\sqrt{x^{2}} \cdot \sqrt{x}$ |
-| Simplify. | $\left|x\right| \sqrt{x}$ |
+| Simplify. | $\left\lvert x\right\rvert \sqrt{x}$ |
 
 (b)
 
@@ -168,7 +168,7 @@ Simplify: (a) $\sqrt{x^{3}}$ (b) $\sqrt[3]{x^{4}}$ (c) $\sqrt[4]{x^{7}}.$
 |  | $\sqrt[4]{x^{7}}$ |
 | Rewrite the radicand as a product using the greatest perfect fourth power factor. | $\sqrt[4]{x^{4} \cdot x^{3}}$ |
 | Rewrite the radical as the product of two radicals. | $\sqrt[4]{x^{4}} \cdot \sqrt[4]{x^{3}}$ |
-| Simplify. | $\left|x\right| \sqrt[4]{x^{3}}$ |
+| Simplify. | $\left\lvert x\right\rvert \sqrt[4]{x^{3}}$ |
 
 {{< fillin
   question="Simplify: $\sqrt{b^{5}}$"
@@ -207,7 +207,7 @@ Simplify: (a) $\sqrt{72 n^{7}}$ (b) $\sqrt[3]{24 x^{7}}$ (c) $\sqrt[4]{80 y^{14}
 |  | $\sqrt{72 n^{7}}$ |
 | Rewrite the radicand as a product using the largest perfect square factor. | $\sqrt{36 n^{6} \cdot 2 n}$ |
 | Rewrite the radical as the product of two radicals. | $\sqrt{36 n^{6}} \cdot \sqrt{2 n}$ |
-| Simplify. | $6 \left|n^{3}\right| \sqrt{2 n}$ |
+| Simplify. | $6 \left\lvert n^{3}\right\rvert \sqrt{2 n}$ |
 
 (b)
 
@@ -227,7 +227,7 @@ Simplify: (a) $\sqrt{72 n^{7}}$ (b) $\sqrt[3]{24 x^{7}}$ (c) $\sqrt[4]{80 y^{14}
 | Rewrite the radicand as a product using perfect fourth power factors. | $\sqrt[4]{16 y^{12} \cdot 5 y^{2}}$ |
 | Rewrite the radical as the product of two radicals. | $\sqrt[4]{16 y^{12}} \cdot \sqrt[4]{5 y^{2} }$ |
 | Rewrite the first radicand as $\left(2 y^{3}\right)^{4}.$ | $\sqrt[4]{\left(2 y^{3}\right)^{4}} \cdot \sqrt[4]{5 y^{2} }$ |
-| Simplify. | $2 \left|y^{3}\right| \sqrt[4]{5 y^{2}}$ |
+| Simplify. | $2 \left\lvert y^{3}\right\rvert \sqrt[4]{5 y^{2}}$ |
 
 {{< fillin
   question="Simplify: $\sqrt{32 y^{5}}$"
@@ -267,7 +267,7 @@ Simplify: (a) $\sqrt{63 u^{3} v^{5}}$ (b) $\sqrt[3]{40 x^{4} y^{5}}$ (c) $\sqrt[
 | Rewrite the radicand as a product using the largest perfect square factor. | $\sqrt{9 u^{2} v^{4} \cdot 7 u v}$ |
 | Rewrite the radical as the product of two radicals. | $\sqrt{9 u^{2} v^{4}} \cdot \sqrt{7 u v}$ |
 | Rewrite the first radicand as $\left(3 u v^{2}\right)^{2}.$ | $\sqrt{\left(3 u v^{2}\right)^{2}} \cdot \sqrt{7 u v}$ |
-| Simplify. | $3 \left|u\right| v^{2} \sqrt{7 u v}$ |
+| Simplify. | $3 \left\lvert u\right\rvert v^{2} \sqrt{7 u v}$ |
 
 (b)
 
@@ -287,7 +287,7 @@ Simplify: (a) $\sqrt{63 u^{3} v^{5}}$ (b) $\sqrt[3]{40 x^{4} y^{5}}$ (c) $\sqrt[
 | Rewrite the radicand as a product using the largest perfect fourth power factor. | $\sqrt[4]{16 x^{4} y^{4} \cdot 3 y^{3}}$ |
 | Rewrite the radical as the product of two radicals. | $\sqrt[4]{16 x^{4} y^{4}} \cdot \sqrt[4]{3 y^{3}}$ |
 | Rewrite the first radicand as $\left(2 x y\right)^{4}.$ | $\sqrt[4]{\left(2 x y\right)^{4}} \cdot \sqrt[4]{3 y^{3}}$ |
-| Simplify. | $2 \left|x y\right| \sqrt[4]{3 y^{3}}$ |
+| Simplify. | $2 \left\lvert x y\right\rvert \sqrt[4]{3 y^{3}}$ |
 
 {{< fillin
   question="Simplify: $\sqrt{98 a^{7} b^{5}}$"
@@ -471,7 +471,7 @@ Simplify: (a) $\sqrt{\tfrac{m^{6}}{m^{4}}}$ (b) $\sqrt[3]{\tfrac{a^{8}}{a^{5}}}$
 | --- | --- |
 |  | $\sqrt{\frac{m^{6}}{m^{4}}}$ |
 | Simplify the fraction inside the radical by dividing like bases and subtracting the exponents. | $\sqrt{m^{2}}$ |
-| Simplify. | $\left|m\right|$ |
+| Simplify. | $\left\lvert m\right\rvert$ |
 
 (b)
 
@@ -654,7 +654,7 @@ Simplify: (a) $\sqrt{\tfrac{18 p^{5} q^{7}}{32 p q^{2}}}$ (b) $\sqrt[3]{\tfrac{1
 | Simplify the fraction in the radicand, if possible. | $\sqrt[4]{\frac{a^{5} b^{4}}{16}}$ |
 | Rewrite using the Quotient Property. | $\frac{\sqrt[4]{a^{5} b^{4}}}{\sqrt[4]{16}}$ |
 | Simplify the radicals in the numerator and the denominator. | $\frac{\sqrt[4]{a^{4} b^{4}} \cdot \sqrt[4]{a}}{\sqrt[4]{16}}$ |
-| Simplify. | $\frac{\left|a b\right| \sqrt[4]{a}}{2}$ |
+| Simplify. | $\frac{\left\lvert a b\right\rvert \sqrt[4]{a}}{2}$ |
 
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{50 x^{5} y^{3}}{72 x^{4} y}}$"
@@ -693,7 +693,7 @@ Simplify: (a) $\tfrac{\sqrt{48 a^{7}}}{\sqrt{3 a}}$ (b) $\tfrac{\sqrt[3]{-108}}{
 |  | $\frac{\sqrt{48 a^{7}}}{\sqrt{3 a}}$ |
 | The denominator cannot be simplified, so use the Quotient Property to write as one radical. | $\sqrt{\frac{48 a^{7}}{3 a}}$ |
 | Simplify the fraction under the radical. | $\sqrt{16 a^{6}}$ |
-| Simplify. | $4 \left|a^{3}\right|$ |
+| Simplify. | $4 \left\lvert a^{3}\right\rvert$ |
 
 (b)
 
@@ -715,7 +715,7 @@ Simplify: (a) $\tfrac{\sqrt{48 a^{7}}}{\sqrt{3 a}}$ (b) $\tfrac{\sqrt[3]{-108}}{
 | Simplify the fraction under the radical. | $\sqrt[4]{32 x^{5}}$ |
 | Rewrite the radicand as a product using perfect fourth power factors. | $\sqrt[4]{16 x^{4}} \cdot \sqrt[4]{2 x}$ |
 | Rewrite the radical as the product of two radicals. | $\sqrt[4]{\left(2 x\right)^{4}} \cdot \sqrt[4]{2 x}$ |
-| Simplify. | $2 \left|x\right| \sqrt[4]{2 x}$ |
+| Simplify. | $2 \left\lvert x\right\rvert \sqrt[4]{2 x}$ |
 
 {{< fillin
   question="Simplify: $\tfrac{\sqrt{98 z^{5}}}{\sqrt{2 z}}$"

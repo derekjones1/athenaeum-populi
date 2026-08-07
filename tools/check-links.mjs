@@ -1,11 +1,11 @@
 /** Check built internal links, assets, and same-page/cross-page fragments. */
 import {
   existsSync,
-  readdirSync,
   readFileSync,
   realpathSync,
   statSync,
 } from 'node:fs';
+import { walkFiles } from './lib-content.mjs';
 import {
   dirname,
   join,
@@ -17,16 +17,6 @@ import {
 const root = process.argv[2] || 'public';
 const resolvedRoot = resolve(root);
 const origin = 'https://athenaeumpopuli.org';
-
-function files(dir) {
-  const found = [];
-  for (const entry of readdirSync(dir)) {
-    const path = join(dir, entry);
-    if (statSync(path).isDirectory()) found.push(...files(path));
-    else found.push(path);
-  }
-  return found;
-}
 
 function relPath(path) { return relative(root, path).split(sep).join('/'); }
 function pageUrl(path) {
@@ -101,7 +91,7 @@ function decodeHtmlUrl(value) {
 
 if (!existsSync(root)) throw new Error(`Built site not found: ${root} (run npm run build first)`);
 const realRoot = realpathSync(resolvedRoot);
-const htmlFiles = files(root).filter((file) => file.endsWith('.html'));
+const htmlFiles = walkFiles(root, { filter: (name) => name.endsWith('.html') });
 const idCache = new Map();
 const failures = [];
 

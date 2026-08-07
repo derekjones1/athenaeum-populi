@@ -1,19 +1,10 @@
 /** Verify that every URL exported by the legacy Next site still exists. */
-import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
-import { join, relative, sep } from 'node:path';
+import { existsSync, readFileSync } from 'node:fs';
+import { relative, sep } from 'node:path';
+import { walkFiles } from './lib-content.mjs';
 
 const manifestPath = process.argv[2] || 'tools/fixtures/legacy-routes.txt';
 const outputDir = process.argv[3] || 'public';
-
-function files(dir) {
-  const found = [];
-  for (const entry of readdirSync(dir)) {
-    const path = join(dir, entry);
-    if (statSync(path).isDirectory()) found.push(...files(path));
-    else found.push(path);
-  }
-  return found;
-}
 
 function canonicalRoute(file) {
   let path = '/' + relative(outputDir, file).split(sep).join('/');
@@ -28,7 +19,7 @@ if (!existsSync(outputDir)) throw new Error(`Built site not found: ${outputDir} 
 
 const legacy = readFileSync(manifestPath, 'utf8').split(/\r?\n/)
   .map((line) => line.trim()).filter((line) => line && !line.startsWith('#'));
-const current = new Set(files(outputDir).filter((file) => file.endsWith('.html')).map(canonicalRoute).filter(Boolean));
+const current = new Set(walkFiles(outputDir).filter((file) => file.endsWith('.html')).map(canonicalRoute).filter(Boolean));
 const missing = legacy.filter((route) => !current.has(route));
 
 if (missing.length) {

@@ -710,6 +710,171 @@ was the difference in the morning and afternoon temperatures?
   6. **Answer** the question with a complete sentence.
 {{< /callout >}}
 
+## Practice
+
+### Simplify expressions with absolute value
+
+{{< multiplechoice
+  question="Fill in the blank with $<$, $>$, or $=$: $|-7| \_\_\_ -|-7|$."
+  answer="$>$"
+  hint="Evaluate each absolute value before comparing the two resulting integers."
+>}}
+$<$
+$>$
+$=$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Fill in the blank with $<$, $>$, or $=$: $6 \_\_\_ -|-6|$."
+  answer="$>$"
+  hint="The absolute value is positive; then apply the negative sign outside the bars."
+>}}
+$<$
+$>$
+$=$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Fill in the blank with $<$, $>$, or $=$: $|-11| \_\_\_ -11$."
+  answer="$>$"
+  hint="Find the absolute value first, then compare a positive number with a negative number."
+>}}
+$<$
+$>$
+$=$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Fill in the blank with $<$, $>$, or $=$: $-(-13) \_\_\_ -|-13|$."
+  answer="$>$"
+  hint="A double negative is positive, while the negative outside the absolute value makes the right side negative."
+>}}
+$<$
+$>$
+$=$
+{{< /multiplechoice >}}
+
+### Add and subtract integers
+
+{{< fillin
+  question="Simplify: $-7 + (-4)$."
+  answer="-11"
+  answerForm="decimal"
+  hint="The addends have the same sign, so add their absolute values and keep the negative sign."
+>}}
+
+{{< fillin
+  question="Simplify: $-7 + 4$."
+  answer="-3"
+  answerForm="decimal"
+  hint="The addends have different signs, so subtract the smaller absolute value from the larger one and use the sign of $-7$."
+>}}
+
+{{< fillin
+  question="Simplify: $7 + (-4)$."
+  answer="3"
+  answerForm="decimal"
+  hint="The addends have different signs, so subtract the smaller absolute value from the larger one and use the sign of $7$."
+>}}
+
+### Multiply and divide integers
+
+{{< fillin
+  question="Multiply: $-4 \cdot 8$."
+  answer="-32"
+  answerForm="decimal"
+  hint="The factors have different signs, so the product is negative."
+>}}
+
+{{< fillin
+  question="Multiply: $13(-5)$."
+  answer="-65"
+  answerForm="decimal"
+  hint="The factors have different signs, so multiply the absolute values and make the product negative."
+>}}
+
+{{< fillin
+  question="Divide: $-24 \div 6$."
+  answer="-4"
+  answerForm="decimal"
+  hint="The dividend and divisor have different signs, so the quotient is negative."
+>}}
+
+{{< fillin
+  question="Divide: $-52 \div (-4)$."
+  answer="13"
+  answerForm="decimal"
+  hint="The dividend and divisor have the same sign, so the quotient is positive."
+>}}
+
+### Simplify expressions with integers
+
+{{< fillin
+  question="Simplify: $(-2)^6$."
+  answer="64"
+  answerForm="decimal"
+  hint="The parentheses make $-2$ the base. An even number of negative factors gives a positive result."
+>}}
+
+{{< fillin
+  question="Simplify: $-2^6$."
+  answer="-64"
+  answerForm="decimal"
+  hint="Evaluate the exponent on $2$ first, then take the opposite because the negative sign is outside the power."
+>}}
+
+### Evaluate variable expressions with integers
+
+{{< fillin
+  question="Evaluate $y + (-14)$ when $y = -33$."
+  answer="-47"
+  hint="Substitute $-33$ for $y$, using parentheses if they help you keep the signs clear."
+>}}
+
+{{< fillin
+  question="Evaluate $y + (-14)$ when $y = 30$."
+  answer="16"
+  hint="Substitute $30$ for $y$, then add a negative number."
+>}}
+
+### Translate phrases to expressions with integers
+
+{{< multiplechoice
+  question="Which expression correctly translates the difference of $10$ and $-18$, and what is its simplified value?"
+  answer="$10-(-18)=28$"
+  hint="The difference of the first number and the second means subtract $-18$ from $10$."
+>}}
+$10-(-18)=28$
+$10-18=-8$
+$-18-10=-28$
+$10+(-18)=-8$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Which expression correctly translates 'subtract $11$ from $-25$,' and what is its simplified value?"
+  answer="$-25-11=-36$"
+  hint="The word 'from' reverses the order: begin with $-25$, then subtract $11$."
+>}}
+$-25-11=-36$
+$11-(-25)=36$
+$-25+11=-14$
+$11-25=-14$
+{{< /multiplechoice >}}
+
+### Use integers in applications
+
+{{< fillin
+  question="On January 15, the high temperature in Anaheim, California, was $84$ degrees. That same day, the high temperature in Embarrass, Minnesota, was $-12$ degrees. What was the difference between the temperature in Anaheim and the temperature in Embarrass? Enter just the number."
+  answer="96"
+  hint="Find the difference by subtracting the negative temperature: $84 - (-12)$."
+>}}
+
+{{< fillin
+  question="On the first down, the Chargers had the ball on their $25$-yard line. They lost $6$ yards on the first-down play, gained $10$ yards on the second-down play, and lost $8$ yards on the third-down play. What was the yard line at the end of the third-down play? Enter just the number."
+  answer="21"
+  hint="Start at $25$ and add each gain or loss: $25 + (-6) + 10 + (-8)$."
+>}}
+
 ## Key terms
 
 **negative number** — a number less than $0$; on the number line, the negative
@@ -723,4 +888,4 @@ paired with a negative counter, whose value is zero.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 1.2: Integers](https://openstax.org/books/intermediate-algebra-2e/pages/1-2-integers) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the number-line figures as accessible inline graphics, rendered the two-color-counter models and step tables as typeset math, and presented the multiplication/division sign rules as tables; omitted the Be Prepared note, media link, and end-of-section exercises; and converted the "Try It" practice problems into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 1.2: Integers](https://openstax.org/books/intermediate-algebra-2e/pages/1-2-integers) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the number-line figures as accessible inline graphics, rendered the two-color-counter models and step tables as typeset math, and presented the multiplication/division sign rules as tables; omitted the Be Prepared note and media link; converted the "Try It" practice problems into interactive exercises with instant feedback; and adapted selected answered end-of-section exercises into interactive practice.</small>

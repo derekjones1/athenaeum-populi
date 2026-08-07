@@ -8,45 +8,38 @@
  *   - render every $…$ / $$…$$ math run with KaTeX (throwOnError) so bad LaTeX
  *     is caught here instead of shipping as a red error box
  *
+ * With `--check-docs` (how `npm run lint` runs it) the Practice-backlog
+ * warning count is also asserted against the two documents that publish it.
+ * Only this tool has walked the corpus, so only this tool can tell whether the
+ * published number is still true — a doc test can compare the documents to each
+ * other, but not to reality.
+ *
  * Exit non-zero on any error. Run via `npm run lint`.
  */
-import { readFileSync, readdirSync, statSync } from 'node:fs';
-import { join } from 'node:path';
+import { readFileSync } from 'node:fs';
 import katex from 'katex';
 import { lintHugo } from './lints.mjs';
+import { mathSpans, walkMarkdown } from './lib-content.mjs';
 
-const root = process.argv[2] || 'content';
-function mdFiles(dir) {
-  const out = [];
-  for (const e of readdirSync(dir)) {
-    const p = join(dir, e);
-    if (statSync(p).isDirectory()) out.push(...mdFiles(p));
-    else if (e.endsWith('.md')) out.push(p);
-  }
-  return out;
-}
+const args = process.argv.slice(2);
+const flags = new Set(args.filter((a) => a.startsWith('--')));
+const root = args.find((a) => !a.startsWith('--')) || 'content';
 
-const NUL = '\0';
-/** Every $…$ (inline) and $$…$$ (block) math run, minus code and SVG. */
-function mathRuns(src) {
-  let s = src.replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ');
-  s = s.replace(/<svg[\s\S]*?<\/svg>/g, ' ');
-  s = s.replaceAll('\\$', NUL);
-  const runs = [];
-  for (const m of s.matchAll(/\$\$([\s\S]+?)\$\$/g)) runs.push({ tex: m[1].replaceAll(NUL, '\\$'), display: true });
-  const noBlock = s.replace(/\$\$[\s\S]+?\$\$/g, ' ');
-  for (const m of noBlock.matchAll(/\$([^$\n]+?)\$/g)) runs.push({ tex: m[1].replaceAll(NUL, '\\$'), display: false });
-  return runs;
-}
-
-let errors = 0, warns = 0, files = 0;
-for (const f of mdFiles(root).sort()) {
+let errors = 0, warns = 0, files = 0, practiceBacklog = 0;
+for (const f of walkMarkdown(root)) {
   files++;
   const src = readFileSync(f, 'utf8');
   const { errors: le, warnings: lw } = lintHugo(src, f);
   for (const e of le) { errors++; console.log(`LINT  ${f} ${e}`); }
-  for (const w of lw) { warns++; console.log(`warn  ${f} ${w}`); }
-  for (const { tex, display } of mathRuns(src)) {
+  for (const w of lw) {
+    warns++;
+    // Counted by category rather than as "the warning total", so that adding a
+    // second warning category later cannot silently corrupt the published
+    // backlog figure.
+    if (w.includes('no `## Practice` block')) practiceBacklog++;
+    console.log(`warn  ${f} ${w}`);
+  }
+  for (const { tex, display } of mathSpans(src, { maskCode: true })) {
     // throwOnError catches real parse errors; strict:'ignore' silences benign
     // "unknown symbol" warnings (e.g. an em-dash inside a money-dollar span).
     try { katex.renderToString(tex, { displayMode: display, throwOnError: true, strict: 'ignore' }); }
@@ -54,4 +47,36 @@ for (const f of mdFiles(root).sort()) {
   }
 }
 console.log(`\n${files} files. ${errors} error(s), ${warns} warning(s).`);
-process.exit(errors ? 1 : 0);
+
+// The Practice-block retrofit is the one non-blocking rule in the repository,
+// and two documents publish its remaining count as a worklist. The count is
+// only knowable from a full corpus walk, so this is where it is checked: a
+// document test can prove AGENTS.md and the playbook agree with each other, but
+// only the lint can prove they agree with the content.
+if (flags.has('--check-docs')) {
+  const docs = [
+    ['AGENTS.md', /except one: the (\d+)\s+sections still missing/],
+    ['docs/authoring-playbook.md', /one warning category\*\*: the (\d+)\s+sections/],
+  ];
+  for (const [path, pattern] of docs) {
+    const text = readFileSync(new URL(`../${path}`, import.meta.url), 'utf8');
+    const match = text.match(pattern);
+    if (!match) {
+      errors++;
+      console.log(`DOCS  ${path}: the Practice-backlog sentence no longer matches ${pattern} — the lint can no longer check it`);
+      continue;
+    }
+    if (Number(match[1]) !== practiceBacklog) {
+      errors++;
+      console.log(`DOCS  ${path}: states ${match[1]} sections missing a \`## Practice\` block; the lint counts ${practiceBacklog}`);
+    }
+  }
+}
+
+if (errors) {
+  console.error(`✖ content lint failed: ${errors} error(s) across ${files} file(s)`);
+  process.exit(1);
+}
+// A success banner in the same shape as the other gates, so "no output after
+// the counts" is never mistaken for "the tool did not run".
+console.log(`✓ content lint: ${files} files, 0 errors, ${warns} warning(s)`);

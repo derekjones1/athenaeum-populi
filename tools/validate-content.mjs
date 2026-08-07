@@ -14,6 +14,11 @@ import { join, basename, dirname, relative } from 'node:path';
 // The one objectives-callout parser, shared with the content lint and the
 // source audit so the three tools never diagnose the callout differently.
 import { parseObjectivesCallout } from './lib-openstax-source.mjs';
+// One frontmatter parser for the whole toolchain. The regex trio this replaced
+// disagreed with it twice: `title: ""` read as an absent key, and any value
+// containing an apostrophe ("Ohm's law") failed the value regex outright and
+// also read as absent.
+import { parseFrontmatter } from './lib-content.mjs';
 
 // Roles are keyed off depth from the content root (content=0, subject=1,
 // book=2, chapter=3). Pass a start-depth so a single book can be validated in
@@ -23,9 +28,20 @@ const START_DEPTH = Number(process.argv[3] || 0);
 const errors = [];
 const IGNORED = new Set(['.DS_Store']);
 
+// `frontOf` still yields the raw frontmatter block, because several checks
+// below assert on its literal text (`source_section: "1.1"` has to be quoted,
+// not merely present). Key and value reads go through the shared parser.
 const frontOf = (src) => (/^---\r?\n([\s\S]*?)\r?\n---/.exec(src) || [, null])[1];
-const hasKey = (fm, k) => new RegExp(`^${k}:\\s*\\S`, 'm').test(fm ?? '');
-const val = (fm, k) => (fm?.match(new RegExp(`^${k}:\\s*["']?([^"'\\n]+)["']?\\s*$`, 'm')) || [])[1];
+const attributeCache = new Map();
+const attrsOf = (fm) => {
+  if (fm == null) return {};
+  if (!attributeCache.has(fm)) attributeCache.set(fm, parseFrontmatter(`---\n${fm}\n---\n`).attributes);
+  return attributeCache.get(fm);
+};
+// Present AND non-empty: `description: ""` satisfies the schema on paper and
+// renders an empty meta description, which is the defect, not the exemption.
+const hasKey = (fm, k) => (attrsOf(fm)[k] ?? '') !== '';
+const val = (fm, k) => attrsOf(fm)[k] || undefined;
 const rangeOf = (value) => {
   const match = String(value || '').match(/^(\d+)-(\d+)$/);
   if (!match) return null;

@@ -25,8 +25,11 @@
  *   'shapeRight'      parabola: a matches, vertex doesn't
  */
 
-const EPS = 1e-9;
-const near = (a, b) => Math.abs(a - b) < EPS;
+// Constants only — check-graph grades in the browser with no MathLive and no
+// Compute Engine on the page, and this import must never change that.
+import { GEOMETRY_EPSILON } from './geometry-constants.mjs';
+
+const near = (a, b) => Math.abs(a - b) < GEOMETRY_EPSILON;
 
 /** line through two distinct points → { x } (vertical) or { m, b } */
 function lineOf([x1, y1], [x2, y2]) {

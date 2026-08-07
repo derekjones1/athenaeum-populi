@@ -996,7 +996,7 @@ number in the range.
 
 We choose $x$-values. We substitute them in and then create a chart.
 
-| $x$ | $f(x)=|x|$ | $(x,f(x))$ |
+| $x$ | $f(x)=\lvert x\rvert$ | $(x,f(x))$ |
 | ---: | ---: | :---: |
 | $-3$ | $3$ | $(-3,3)$ |
 | $-2$ | $2$ | $(-2,2)$ |
@@ -1234,10 +1234,124 @@ range, in interval notation, is $[-1,1]$.
   hint="At $x=0$, read the $y$-coordinate."
 >}}
 
+## Practice
+
+### Use the vertical line test
+
+{{< multiplechoice
+  question="A circle centered at the origin passes through $(-3,0)$, $(3,0)$, $(0,-3)$, and $(0,3)$. Is it the graph of a function?"
+  answer="no"
+  hint="Check whether a vertical line through the circle's interior meets the circle twice."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="A parabola opening upward has vertex $(0,2)$ and passes through $(-2,6)$ and $(2,6)$. Is it the graph of a function?"
+  answer="yes"
+  hint="Apply the vertical line test to an upward-opening parabola."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="A sideways parabola opens to the right from vertex $(-2,0)$ and passes through $(-1,1)$ and $(-1,-1)$. Is it the graph of a function?"
+  answer="no"
+  hint="A vertical line at $x=-1$ meets the graph at both listed points."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="The cube function's graph passes through $(-1,-1)$, $(0,0)$, and $(1,1)$, rising throughout. Is it the graph of a function?"
+  answer="yes"
+  hint="Every vertical line meets an increasing curve like this at most once."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+### Identify graphs of basic functions
+
+{{< fillin
+  question="Find the domain of $f(x)=3x^2$. Write the answer in interval notation."
+  answer="(-\infty,\infty)"
+  answerDisplay="$(-\infty,\infty)$"
+  hint="A polynomial is defined for every real $x$."
+>}}
+
+{{< fillin
+  question="Find the range of $f(x)=3x^2$. Write the answer in interval notation."
+  answer="[0,\infty)"
+  answerDisplay="$[0,\infty)$"
+  hint="Squaring $x$ can never produce a negative value, and $3x^2$ can equal $0$."
+>}}
+
+{{< fillin
+  question="Find the domain of $f(x)=2\sqrt{x}$. Write the answer in interval notation."
+  answer="[0,\infty)"
+  answerDisplay="$[0,\infty)$"
+  hint="A square root needs a non-negative radicand."
+>}}
+
+{{< fillin
+  question="Find the range of $f(x)=2\sqrt{x}$. Write the answer in interval notation."
+  answer="[0,\infty)"
+  answerDisplay="$[0,\infty)$"
+  hint="$\sqrt{x}$ is never negative, and it equals $0$ when $x=0$."
+>}}
+
+{{< fillin
+  question="Find the domain of $f(x)=|x|+1$. Write the answer in interval notation."
+  answer="(-\infty,\infty)"
+  answerDisplay="$(-\infty,\infty)$"
+  hint="An absolute value is defined for every real $x$."
+>}}
+
+{{< fillin
+  question="Find the range of $f(x)=|x|+1$. Write the answer in interval notation."
+  answer="[1,\infty)"
+  answerDisplay="$[1,\infty)$"
+  hint="$|x|$ is never negative, so the smallest output is at $x=0$."
+>}}
+
+### Read information from a graph of a function
+
+{{< fillin
+  question="Use the graph of the function to find its domain and range. Write the domain and range in interval notation. The graph is a square root curve with a closed endpoint at $(2,0)$ that rises to the right through $(3,1)$ and $(6,2)$. Enter the domain."
+  answer="[2,\infty)"
+  answerDisplay="$[2,\infty)$"
+  hint="The graph starts at its closed endpoint and continues to the right forever."
+>}}
+
+{{< fillin
+  question="Use the graph of the function to find its domain and range. Write the domain and range in interval notation. The graph is a square root curve with a closed endpoint at $(2,0)$ that rises to the right through $(3,1)$ and $(6,2)$. Enter the range."
+  answer="[0,\infty)"
+  answerDisplay="$[0,\infty)$"
+  hint="Read the lowest and highest $y$-values reached by the graph."
+>}}
+
+{{< fillin
+  question="Use the graph of the function to find its domain and range. Write the domain and range in interval notation. The graph has vertex $(0,4)$ and opens upward in a V shape, passing through $(-2,6)$ and $(2,6)$. Enter the domain."
+  answer="(-\infty,\infty)"
+  answerDisplay="$(-\infty,\infty)$"
+  hint="A V-shaped graph like this extends left and right forever."
+>}}
+
+{{< fillin
+  question="Use the graph of the function to find its domain and range. Write the domain and range in interval notation. The graph has vertex $(0,4)$ and opens upward in a V shape, passing through $(-2,6)$ and $(2,6)$. Enter the range."
+  answer="[4,\infty)"
+  answerDisplay="$[4,\infty)$"
+  hint="The vertex is the lowest point the graph reaches."
+>}}
+
 **Key terms.** The **vertical line test** determines whether a graph represents
 a function; the **graph of a function** is the graph of all its ordered pairs
 $(x,f(x))$; the basic functions in this section are the **linear function**,
 **constant function**, **identity function**, **square function**, **cube
 function**, **square root function**, and **absolute value function**.
 
-<small>Adapted from [*Intermediate Algebra 2e*, Section 3.6](https://openstax.org/books/intermediate-algebra-2e/pages/3-6-graphs-of-functions), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/books/intermediate-algebra-2e/pages/3-6-graphs-of-functions). Changes: converted Try It exercises to interactive checks and recreated graphs for accessible web presentation.</small>
+<small>Adapted from [*Intermediate Algebra 2e*, Section 3.6](https://openstax.org/books/intermediate-algebra-2e/pages/3-6-graphs-of-functions), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/books/intermediate-algebra-2e/pages/3-6-graphs-of-functions). Changes: converted Try It exercises to interactive checks, recreated graphs for accessible web presentation, and adapted selected end-of-section exercises into an interactive practice block.</small>

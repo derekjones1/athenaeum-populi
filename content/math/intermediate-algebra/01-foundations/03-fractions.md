@@ -621,6 +621,95 @@ $$
   hint="Simplify the exponent first: $c^3 = -\tfrac{1}{8}$. Then multiply $4 \cdot \left(-\tfrac{1}{8}\right) \cdot \left(-\tfrac{4}{3}\right)$."
 >}}
 
+## Practice
+
+### Simplify fractions
+
+{{< fillin
+  question="Simplify: $-\tfrac{108}{63}$."
+  answer="-\frac{12}{7}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$-\tfrac{12}{7}$"
+  hint="Divide the numerator and denominator by their greatest common factor, $9$."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{120}{252}$."
+  answer="\frac{10}{21}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{10}{21}$"
+  hint="Both $120$ and $252$ are divisible by $12$; then check that no common factor remains."
+>}}
+
+### Multiply and divide fractions
+
+{{< fillin
+  question="Multiply: $-\tfrac{3}{4}\left(-\tfrac{4}{9}\right)$."
+  answer="\frac{1}{3}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{1}{3}$"
+  hint="The product is positive. Multiply across, then cancel common factors before or after multiplying."
+>}}
+
+{{< fillin
+  question="Multiply: $\left(-\tfrac{14}{15}\right)\left(\tfrac{9}{20}\right)$."
+  answer="-\frac{21}{50}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$-\tfrac{21}{50}$"
+  hint="The product is negative. Cancel common factors between $14$ and $20$, and between $9$ and $15$, before multiplying."
+>}}
+
+### Add and subtract fractions
+
+{{< fillin
+  question="Add: $\tfrac{7}{12} + \tfrac{5}{8}$."
+  answer="\frac{29}{24}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{29}{24}$"
+  hint="Use the LCD $24$ to rewrite both fractions before adding their numerators."
+>}}
+
+{{< fillin
+  question="Subtract: $\tfrac{7}{12} - \tfrac{9}{16}$."
+  answer="\frac{1}{48}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{1}{48}$"
+  hint="Use the LCD $48$, then subtract the new numerators."
+>}}
+
+### Use the order of operations to simplify fractions
+
+{{< fillin
+  question="Simplify: $\tfrac{5 \cdot 6 - 3 \cdot 4}{4 \cdot 5 - 2 \cdot 3}$."
+  answer="\frac{9}{7}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{9}{7}$"
+  hint="Treat the fraction bar as grouping: simplify the numerator and denominator separately before dividing."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{5^2 - 3^2}{3 - 5}$."
+  answer="-8"
+  answerForm="decimal"
+  hint="Evaluate both powers first, then simplify the numerator and denominator separately."
+>}}
+
+### Evaluate variable expressions with fractions
+
+{{< fillin
+  question="Evaluate $\tfrac{7}{10} - w$ when $w = \tfrac{1}{2}$."
+  answer="\frac{1}{5}"
+  answerDisplay="$\tfrac{1}{5}$"
+  hint="Rewrite $\tfrac{1}{2}$ with denominator $10$ before subtracting."
+>}}
+
+{{< fillin
+  question="Evaluate $\tfrac{7}{10} - w$ when $w = -\tfrac{1}{2}$."
+  answer="\frac{6}{5}"
+  answerDisplay="$\tfrac{6}{5}$"
+  hint="Substituting a negative value changes subtraction to addition; then use a common denominator."
+>}}
+
 ## Key terms
 
 **fraction** — a way to represent parts of a whole, written $\tfrac{a}{b}$
@@ -636,4 +725,4 @@ fractions, used as their common denominator.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 1.3: Fractions](https://openstax.org/books/intermediate-algebra-2e/pages/1-3-fractions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the shaded-circle figure as an accessible inline graphic and the worked-example step tables as typeset math; omitted the Be Prepared quiz, the media link, and the end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 1.3: Fractions](https://openstax.org/books/intermediate-algebra-2e/pages/1-3-fractions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the shaded-circle figure as an accessible inline graphic and the worked-example step tables as typeset math; omitted the Be Prepared quiz and the media link; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

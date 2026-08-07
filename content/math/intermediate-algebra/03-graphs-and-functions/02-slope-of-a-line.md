@@ -863,6 +863,181 @@ yes
 no
 {{< /multiplechoice >}}
 
+## Practice
+
+### Find the slope of a line
+
+{{< fillin
+  question="Find the slope of the line $y=3$."
+  answer="0"
+  hint="A horizontal line has a rise of zero."
+>}}
+
+{{< multiplechoice
+  question="Find the slope of the line $x=-5$."
+  hint="A vertical line has a run of zero."
+  answer="undefined"
+>}}
+$0$
+undefined
+$-5$
+$1$
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Use the slope formula to find the slope of the line through $(2,5)$ and $(4,0)$."
+  answer="-\frac{5}{2}"
+  answerDisplay="$-\tfrac{5}{2}$"
+  hint="Substitute the coordinates into $m=\tfrac{y_2-y_1}{x_2-x_1}$."
+>}}
+
+### Graph a line given a point and the slope
+
+{{< graphplot
+  question="Graph the line with $y$-intercept $3$ and slope $m=-\tfrac{2}{5}$."
+  answerDisplay="$y=-\tfrac{2}{5}x+3$"
+  ariaLabel="A blank grid from −7 to 7 on both axes."
+  hint="Plot $(0,3)$, then count down $2$ and right $5$ to find a second point."
+>}}
+{"answer": {"slope": -0.4, "intercept": 3}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph the line through $(-4,2)$ with slope $m=4$."
+  answerDisplay="$y=4x+18$"
+  ariaLabel="A blank grid from −6 to 1 on the x-axis and −2 to 20 on the y-axis."
+  hint="Starting at $(-4,2)$, count up $4$ and right $1$ to find a second point."
+>}}
+{"answer": {"slope": 4, "intercept": 18}, "grid": {"xMin": -6, "xMax": 1, "yMin": -2, "yMax": 20}}
+{{< /graphplot >}}
+
+### Graph a line using its slope and intercept
+
+{{< fillin
+  question="Identify the slope of the line $3x+y=5$."
+  answer="-3"
+  hint="Solve the equation for $y$."
+>}}
+
+{{< fillin
+  question="Find the $y$-intercept of the line $6x+4y=12$."
+  answer="(0,3)"
+  answerDisplay="$(0,3)$"
+  hint="Solve the equation for $y$ to write it in slope-intercept form."
+>}}
+
+{{< graphplot
+  question="Graph the line $y=3x-1$ using its slope and $y$-intercept."
+  answerDisplay="$y=3x-1$"
+  ariaLabel="A blank grid from −7 to 7 on both axes."
+  hint="Plot the $y$-intercept $(0,-1)$, then use the slope $3$ to find a second point."
+>}}
+{"answer": {"slope": 3, "intercept": -1}, "grid": {}}
+{{< /graphplot >}}
+
+### Choose the most convenient method to graph a line
+
+{{< multiplechoice
+  question="What is the most convenient method to graph $x=2$?"
+  hint="The equation has only one variable, $x$."
+  answer="vertical line"
+>}}
+vertical line
+horizontal line
+slope-intercept
+intercepts
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="What is the most convenient method to graph $y=-3x+4$?"
+  hint="The equation is already solved for $y$."
+  answer="slope-intercept"
+>}}
+vertical line
+horizontal line
+slope-intercept
+intercepts
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="What is the most convenient method to graph $x-y=1$?"
+  hint="The equation has the form $Ax+By=C$."
+  answer="intercepts"
+>}}
+vertical line
+horizontal line
+slope-intercept
+intercepts
+{{< /multiplechoice >}}
+
+### Graph and interpret applications of slope-intercept
+
+{{< fillin
+  question="The equation $P=31+1.75w$ models Tuyet's monthly water bill payment, $P$, in dollars, for $w$ units of water used. Find Tuyet's payment for a month when she uses $0$ units of water."
+  answer="31"
+  answerDisplay="\$31"
+  hint="Substitute $w=0$ into the equation."
+>}}
+
+{{< fillin
+  question="Using $P=31+1.75w$, find Tuyet's payment for a month when she uses $12$ units of water."
+  answer="52"
+  answerDisplay="\$52"
+  hint="Substitute $w=12$ into the equation."
+>}}
+
+{{< multiplechoice
+  question="In $P=31+1.75w$, what does the constant term $31$ represent?"
+  hint="Evaluate the equation when $w=0$."
+  answer="the payment when no water is used"
+>}}
+the payment when no water is used
+the cost per unit of water used
+the payment when 12 units are used
+the maximum possible payment
+{{< /multiplechoice >}}
+
+{{< graphplot
+  question="Graph the equation $P=31+1.75w$ by placing two points on the line."
+  answerDisplay="$P=31+1.75w$"
+  ariaLabel="A blank grid for P versus w, from 0 to 20 on the w-axis and 0 to 70 on the P-axis."
+  hint="Start at the $P$-intercept $(0,31)$ and use the slope $1.75$."
+>}}
+{"answer": {"slope": 1.75, "intercept": 31}, "grid": {"xMin": 0, "xMax": 20, "yMin": 0, "yMax": 70}}
+{{< /graphplot >}}
+
+### Use slopes to identify parallel and perpendicular lines
+
+{{< multiplechoice
+  question="Are the lines $y=\tfrac{3}{4}x-3$ and $3x-4y=-2$ parallel, perpendicular, or neither?"
+  hint="Solve the second equation for $y$ and compare the slopes."
+  answer="parallel"
+>}}
+parallel
+perpendicular
+neither
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Are the lines $4x-2y=5$ and $3x+6y=8$ parallel, perpendicular, or neither?"
+  hint="Solve each equation for $y$, then multiply the slopes."
+  answer="perpendicular"
+>}}
+parallel
+perpendicular
+neither
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Are the lines $3x-6y=12$ and $6x-3y=3$ parallel, perpendicular, or neither?"
+  hint="Solve each equation for $y$ and compare the slopes."
+  answer="neither"
+>}}
+parallel
+perpendicular
+neither
+{{< /multiplechoice >}}
+
 ## Key terms
 
 **slope** — the measure of the steepness of a line; the ratio of rise to run.
@@ -876,4 +1051,4 @@ lines** — lines in the same plane that form a right angle.
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 3.2: Slope of a Line](https://openstax.org/books/intermediate-algebra-2e/pages/3-2-slope-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated coordinate-plane figures as accessible interactive graphs; omitted the Be Prepared quiz, Media links, self-check, and section exercises; and converted the source Try Its into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 3.2: Slope of a Line](https://openstax.org/books/intermediate-algebra-2e/pages/3-2-slope-of-a-line) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated coordinate-plane figures as accessible interactive graphs; omitted the Be Prepared quiz, Media links, and self-check; converted the source Try Its into interactive exercises with instant feedback; and adapted selected end-of-section exercises into a section-final interactive practice block.</small>

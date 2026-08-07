@@ -48,11 +48,44 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
 
 Every `source:*` command takes `--bundle KEY` to work on one bundle at a time.
 
-Every authoring rule in the content lint is an error except one: the 94
+Every authoring rule in the content lint is an error except one: the 56
 sections still missing a `## Practice` block, which is an authoring programme
 tracked in `docs/authoring-playbook.md` §5. A page you author or revise adds
 no warning of its own. If a rule fires on sound content, narrow the rule and
 add a test for the case it got wrong — do not exempt the page.
+
+## Reviews and verification protocol
+
+A periodic review is only worth running on what the machines cannot assert.
+`npm run ci` already proves the code builds, the content lints, the answers
+cross-check, and the pages pass axe. A review that re-reports any of that is
+noise. Look instead for:
+
+- **Drifted duplication.** Two copies of the same idea that are consistent by
+  luck rather than by construction — one shortcode grammar per tool, one
+  directory walker per script. `tools/lib-content.mjs` and `tools/lib-html.mjs`
+  are where a shared primitive belongs.
+- **Gates gone vacuous.** A check that still passes because it stopped
+  checking. Watch `verify:answers`' per-class out-of-scope counts: zero
+  failures also describes a checker that can no longer read the corpus
+  (`--min-verified N` is the ratchet against it). Watch for a lint whose rule
+  no longer matches how content is written.
+- **Docs that are true but no longer load-bearing** — a runbook for a process
+  that has been automated, a count nothing derives from.
+- **The error-to-warning ratio.** Every authoring rule here is an error except
+  the tracked Practice retrofit. A growing warning list is a growing backlog of
+  known-defective content.
+
+Three rules for a finding:
+
+1. **Every finding ships with the command that reproduces it.** A file:line
+   anchor from a search is a hypothesis; a command output is evidence.
+2. **A negative claim ("X doesn't exist", "nothing tests Y") and any count
+   require a run, not a search.** Most wrong review findings are absence claims
+   made from grep.
+3. **When you add a gate, sabotage it once to prove it fires**, then revert the
+   sabotage. A gate that has never been seen to fail has not been tested; it
+   has been written.
 
 ## Browsers (never run `npx playwright install`)
 
