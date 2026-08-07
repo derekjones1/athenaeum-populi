@@ -23,6 +23,7 @@
     "verify:content": "node tools/verify-all.mjs content",
     "verify:answers": "node tools/verify-answers.mjs content --min-verified 2587",
     "verify-section": "node tools/verify-section.mjs",
+    "baseline:update": "node tools/update-baselines.mjs content",
     "source:fetch": "node tools/openstax-source.mjs fetch",
     "source:verify": "node tools/openstax-source.mjs verify-map",
     "source:check": "node tools/openstax-source.mjs audit",

@@ -41,6 +41,8 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
 - `npm run build` — clean production build plus global Pagefind
 - `npm run check:build` — route, link, search, and file-count gates
 - `npm run ci` — complete local equivalent of CI
+- `npm run baseline:update` — recount the Practice backlog and the
+  verified-answers floor, and rewrite the published numbers in place
 - `npm run source:fetch` — fetch the ignored, sparse OpenStax source checkout
 - `npm run source:verify` — verify the committed 212-section map offline
 - `npm run source:check` — report-only comparison against pinned CNXML
@@ -52,7 +54,10 @@ Every authoring rule in the content lint is an error except one: the 56
 sections still missing a `## Practice` block, which is an authoring programme
 tracked in `docs/authoring-playbook.md` §5. A page you author or revise adds
 no warning of its own. If a rule fires on sound content, narrow the rule and
-add a test for the case it got wrong — do not exempt the page.
+add a test for the case it got wrong — do not exempt the page. When
+authoring moves either published number — this backlog or the
+`--min-verified` floor — end the session with `npm run baseline:update` and
+commit the rewrite together with the content.
 
 ## Reviews and verification protocol
 

@@ -31,8 +31,8 @@
  *
  * `--min-verified N` fails the run when fewer than N fill-ins were verified —
  * a ratchet against silent scope shrink, since 0 failures also describes a
- * checker that has stopped being able to read the corpus. The floor as of
- * August 6, 2026 is 2587.
+ * checker that has stopped being able to read the corpus. Raise the floor
+ * with `npm run baseline:update` after an authoring session.
  */
 
 import { existsSync, readFileSync } from 'node:fs';
@@ -413,9 +413,9 @@ function main() {
   // right and when it has quietly stopped being able to READ them — a parser
   // change that pushes a class into "out of scope" shrinks the checked set
   // without changing a single line of the summary. `--min-verified N` turns
-  // that into a failure. Wired into `npm test`: the `verify:answers` script
-  // passes `--min-verified 2587`; raise the floor deliberately as authored
-  // coverage grows, in the same commit as the content that raises it.
+  // that into a failure. Wired into `npm test` via the `verify:answers`
+  // script; `npm run baseline:update` recounts reality and rewrites the floor
+  // after an authoring session, in the same commit as the content.
   const minVerifiedArg = args.find((a) => a.startsWith('--min-verified'));
   const minVerified = minVerifiedArg
     ? Number(minVerifiedArg.includes('=')
@@ -465,6 +465,7 @@ function main() {
   if (minVerified !== null && verified < minVerified) {
     console.error(`✖ answer cross-check verified ${verified} fill-ins, below the --min-verified floor of ${minVerified}`);
     console.error('  · coverage shrank: a prompt class this tool used to read is now out of scope');
+    console.error('  · a deliberate drop? `npm run baseline:update -- --allow-decrease` moves the floor');
     process.exit(1);
   }
   process.exit(failures.length ? 1 : 0);

@@ -632,6 +632,12 @@ The working rules that remain:
 - **A rule that fires on sound content is a bug in the rule.** Narrow it, with
   a test for the case it was wrong about — do not add an exemption for the
   page.
+- **End the session with `npm run baseline:update`.** It recounts this
+  section's backlog figures and the `--min-verified` floor, rewrites them in
+  place (here, in `AGENTS.md`, and in `package.json`), and refuses to move a
+  number in the wrong direction without an explicit flag. Committing its
+  rewrite with the content is what keeps `npm run lint` and `npm test` green
+  without hand-edited counts.
 
 ## 6. Trivially satisfiable prompts: the remaining classes
 

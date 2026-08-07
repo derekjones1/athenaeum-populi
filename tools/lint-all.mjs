@@ -20,6 +20,7 @@ import { readFileSync } from 'node:fs';
 import katex from 'katex';
 import { lintHugo } from './lints.mjs';
 import { mathSpans, walkMarkdown } from './lib-content.mjs';
+import { PRACTICE_BACKLOG_DOCS } from './baselines.mjs';
 
 const args = process.argv.slice(2);
 const flags = new Set(args.filter((a) => a.startsWith('--')));
@@ -52,23 +53,21 @@ console.log(`\n${files} files. ${errors} error(s), ${warns} warning(s).`);
 // and two documents publish its remaining count as a worklist. The count is
 // only knowable from a full corpus walk, so this is where it is checked: a
 // document test can prove AGENTS.md and the playbook agree with each other, but
-// only the lint can prove they agree with the content.
+// only the lint can prove they agree with the content. The patterns live in
+// tools/baselines.mjs, shared with `npm run baseline:update` — the sanctioned
+// way to move these numbers — so the check and the rewrite cannot drift apart.
 if (flags.has('--check-docs')) {
-  const docs = [
-    ['AGENTS.md', /except one: the (\d+)\s+sections still missing/],
-    ['docs/authoring-playbook.md', /one warning category\*\*: the (\d+)\s+sections/],
-  ];
-  for (const [path, pattern] of docs) {
+  for (const [path, pattern] of PRACTICE_BACKLOG_DOCS) {
     const text = readFileSync(new URL(`../${path}`, import.meta.url), 'utf8');
     const match = text.match(pattern);
     if (!match) {
       errors++;
-      console.log(`DOCS  ${path}: the Practice-backlog sentence no longer matches ${pattern} — the lint can no longer check it`);
+      console.log(`DOCS  ${path}: the Practice-backlog sentence no longer matches ${pattern} — the lint can no longer check it (update tools/baselines.mjs alongside the rephrase)`);
       continue;
     }
     if (Number(match[1]) !== practiceBacklog) {
       errors++;
-      console.log(`DOCS  ${path}: states ${match[1]} sections missing a \`## Practice\` block; the lint counts ${practiceBacklog}`);
+      console.log(`DOCS  ${path}: states ${match[1]} sections missing a \`## Practice\` block; the lint counts ${practiceBacklog} — run \`npm run baseline:update\` and commit the rewrite`);
     }
   }
 }
