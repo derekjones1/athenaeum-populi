@@ -502,6 +502,15 @@ out. $12.5\%$ of $72$ is $9$.
   hint="Set up $\tfrac{23}{92} = \tfrac{n}{100}$, then find the cross products and solve."
 >}}
 
+## Key terms
+
+**proportion** — an equation of the form $\tfrac{a}{b} = \tfrac{c}{d}$,
+where $b \neq 0, d \neq 0$, stating that two ratios or rates are equal.
+**cross products** — the products found by multiplying each denominator
+of a proportion with the opposite numerator; equal cross products
+indicate a true proportion. **percent proportion** — a proportion of the
+form $\tfrac{\text{amount}}{\text{base}} = \tfrac{\text{percent}}{100}$.
+
 ## Practice
 
 ### Use the definition of proportion
@@ -663,15 +672,6 @@ $\tfrac{p}{85} = \tfrac{17}{100}$
   answerDisplay="12.5%"
   hint="Set up $\tfrac{12}{96} = \tfrac{p}{100}$, then find the cross products and divide by 96."
 >}}
-
-## Key terms
-
-**proportion** — an equation of the form $\tfrac{a}{b} = \tfrac{c}{d}$,
-where $b \neq 0, d \neq 0$, stating that two ratios or rates are equal.
-**cross products** — the products found by multiplying each denominator
-of a proportion with the opposite numerator; equal cross products
-indicate a true proportion. **percent proportion** — a proportion of the
-form $\tfrac{\text{amount}}{\text{base}} = \tfrac{\text{percent}}{100}$.
 
 ---
 

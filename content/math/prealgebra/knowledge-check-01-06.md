@@ -553,7 +553,7 @@ weight: 7
 {{< fillin
   question="Simplify: $\sqrt{64 + 225}$"
   answer="17"
-  answerForm="simplified-radical"
+  answerForm="decimal"
 >}}
 
 {{< fillin

@@ -273,6 +273,7 @@ Simplify: (a) $\sqrt[3]{-125}$ (b) $\sqrt[4]{- 16}$ (c) $\sqrt[5]{-243}.$
 {{< fillin
   question="Simplify: $\sqrt[3]{-27}$"
   answer="-3"
+  answerForm="decimal"
   answerDisplay="$-3$"
   hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
 >}}
@@ -289,6 +290,7 @@ a real number
 {{< fillin
   question="Simplify: $\sqrt[5]{-32}$"
   answer="-2"
+  answerForm="decimal"
   answerDisplay="$-2$"
   hint="Identify the nonnegative principal number whose indicated power equals the radicand; keep any leading minus sign outside."
 >}}
@@ -776,6 +778,138 @@ Simplify: (a) $\sqrt{36 x^{2} y^{2}}$ (b) $\sqrt{121 a^{6} b^{8}}$ (c) $\sqrt[3]
   hint="Divide each variable exponent by the root index and take out every complete power."
 >}}
 
+## Practice
+
+### Simplify expressions with roots
+
+{{< fillin
+  question="Simplify: $\sqrt{\tfrac{4}{9}}$"
+  answer="\tfrac{2}{3}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{2}{3}$"
+  hint="Take the square root of the numerator and of the denominator separately, since both are perfect squares."
+>}}
+
+{{< fillin
+  question="Simplify: $-\sqrt{0.01}$"
+  answer="-0.1"
+  answerForm="decimal"
+  answerDisplay="$-0.1$"
+  hint="Identify the nonnegative principal number whose square equals the radicand; keep any leading minus sign outside."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt[3]{-8}$"
+  answer="-2"
+  answerForm="decimal"
+  answerDisplay="$-2$"
+  hint="Identify the real number whose cube equals the radicand; an odd index preserves a negative sign."
+>}}
+
+{{< multiplechoice
+  question="Simplify: $\sqrt[4]{-81}$"
+  answer="not a real number"
+  hint="An odd root can preserve a negative sign, but an even root of a negative number is not real."
+>}}
+not a real number
+a real number
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Simplify: $\sqrt[5]{-32}$"
+  answer="-2"
+  answerForm="decimal"
+  answerDisplay="$-2$"
+  hint="Identify the real number whose fifth power equals the radicand; an odd index preserves a negative sign."
+>}}
+
+### Estimate and approximate roots
+
+{{< fillin
+  question="Estimate each root between two consecutive whole numbers, smaller value first: $\sqrt{70}$"
+  answer="8 < \sqrt{70} < 9"
+  answerDisplay="$8 < \sqrt{70} < 9$"
+  hint="Bracket the radicand between consecutive perfect squares and take their square roots."
+>}}
+
+{{< fillin
+  question="Estimate each root between two consecutive whole numbers, smaller value first: $\sqrt[3]{71}$"
+  answer="4 < \sqrt[3]{71} < 5"
+  answerDisplay="$4 < \sqrt[3]{71} < 5$"
+  hint="Bracket the radicand between consecutive perfect cubes and take their cube roots."
+>}}
+
+{{< fillin
+  question="Round to two decimal places: $\sqrt{19}$"
+  answer="4.36"
+  answerDisplay="$\approx 4.36$"
+  hint="Evaluate the indicated root, keep extra calculator digits, and round only at the end."
+>}}
+
+{{< fillin
+  question="Round to two decimal places: $\sqrt[3]{89}$"
+  answer="4.46"
+  answerDisplay="$\approx 4.46$"
+  hint="Evaluate the indicated root, keep extra calculator digits, and round only at the end."
+>}}
+
+{{< fillin
+  question="Round to two decimal places: $\sqrt[4]{97}$"
+  answer="3.14"
+  answerDisplay="$\approx 3.14$"
+  hint="Evaluate the indicated root, keep extra calculator digits, and round only at the end."
+>}}
+
+### Simplify variable expressions with roots
+
+{{< fillin
+  question="Simplify: $\sqrt[5]{u^{5}}$"
+  answer="u"
+  answerForm="simplified-radical"
+  answerDisplay="$u$"
+  hint="Divide each variable exponent by the root index and take out every complete power."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt[8]{v^{8}}$"
+  answer="\left\lvert v\right\rvert"
+  answerForm="simplified-radical"
+  answerDisplay="$\left\lvert v\right\rvert$"
+  hint="Divide each variable exponent by the root index and take out every complete power."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt{x^{24}}$"
+  answer="x^{12}"
+  answerForm="simplified-radical"
+  answerDisplay="$x^{12}$"
+  hint="Divide each variable exponent by the root index and take out every complete power."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt{y^{22}}$"
+  answer="\left\lvert y^{11}\right\rvert"
+  answerForm="simplified-radical"
+  answerDisplay="$\left\lvert y^{11}\right\rvert$"
+  hint="Divide each variable exponent by the root index and take out every complete power."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt[4]{16 x^{8}}$"
+  answer="2 x^{2}"
+  answerForm="simplified-radical"
+  answerDisplay="$2 x^{2}$"
+  hint="Take the indicated root of the coefficient, then divide each variable exponent by the root index."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt[6]{64 y^{12}}$"
+  answer="2 y^{2}"
+  answerForm="simplified-radical"
+  answerDisplay="$2 y^{2}$"
+  hint="Take the indicated root of the coefficient, then divide each variable exponent by the root index."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 8.1: Simplify Expressions with Roots](https://openstax.org/books/intermediate-algebra-2e/pages/8-1-simplify-expressions-with-roots) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, self-check reflection, and end-of-section exercise bank; and converted the source Try It practice into interactive exercises.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 8.1: Simplify Expressions with Roots](https://openstax.org/books/intermediate-algebra-2e/pages/8-1-simplify-expressions-with-roots) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; and adapted selected end-of-section exercises into an interactive Practice block.</small>

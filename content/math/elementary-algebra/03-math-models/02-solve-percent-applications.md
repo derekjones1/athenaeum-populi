@@ -625,6 +625,22 @@ amount of mark-up and (b) the list price of the photograph.
   hint="The mark-up is 35% of the original \$8,500 cost — multiply the rate by the original cost."
 >}}
 
+## Key terms
+
+**percent equation** — an equation of the form "part $=$ percent $\times$
+whole," translated directly from an English sentence using "of" for
+multiplication and "is" for equals. **percent increase** — the amount of
+increase (new amount minus original amount), expressed as a percent of the
+original amount. **percent decrease** — the amount of decrease (original
+amount minus new amount), expressed as a percent of the original amount.
+**principal** — the amount of money deposited or borrowed. **interest** —
+money paid on a principal, computed as a percent of the principal. **rate of
+interest** — the percent used to compute interest, usually stated per year.
+**simple interest** — interest computed using the formula $I = Prt$.
+**discount rate** — the percent of the original price that is subtracted to
+give the sale price. **mark-up** — the amount added to a retailer's original
+cost, usually calculated as a percent of that cost, to get the list price.
+
 ## Practice
 
 ### Translate and solve basic percent equations
@@ -712,22 +728,6 @@ amount of mark-up and (b) the list price of the photograph.
   answerDisplay="\$23.20"
   hint="Add the amount of the mark-up to the original cost."
 >}}
-
-## Key terms
-
-**percent equation** — an equation of the form "part $=$ percent $\times$
-whole," translated directly from an English sentence using "of" for
-multiplication and "is" for equals. **percent increase** — the amount of
-increase (new amount minus original amount), expressed as a percent of the
-original amount. **percent decrease** — the amount of decrease (original
-amount minus new amount), expressed as a percent of the original amount.
-**principal** — the amount of money deposited or borrowed. **interest** —
-money paid on a principal, computed as a percent of the principal. **rate of
-interest** — the percent used to compute interest, usually stated per year.
-**simple interest** — interest computed using the formula $I = Prt$.
-**discount rate** — the percent of the original price that is subtracted to
-give the sale price. **mark-up** — the amount added to a retailer's original
-cost, usually calculated as a percent of that cost, to get the list price.
 
 ---
 

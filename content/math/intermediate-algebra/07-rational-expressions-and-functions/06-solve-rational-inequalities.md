@@ -423,8 +423,51 @@ must be produced to keep the average cost below \$40 per item.
   hint="Divide $C(x)$ by $x$."
 >}}
 
-**Key terms.** A **rational inequality** is an inequality that contains a
+## Key terms
+
+A **rational inequality** is an inequality that contains a
 rational expression. A **zero partition number** is a number that makes the
 rational expression zero or undefined.
 
-<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 7.6](https://openstax.org/books/intermediate-algebra-2e/pages/7-6-solve-rational-inequalities), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted examples, sign analyses, number lines, and Try It exercises for interactive web use and accessibility.</small>
+## Practice
+
+### Solve rational inequalities
+
+{{< fillin
+  question="Solve $\tfrac{x-3}{x+4}\ge0$. Enter the solution in interval notation."
+  answer="(-\infty,-4) \cup [3,\infty)"
+  answerDisplay="$(-\infty,-4)\cup[3,\infty)$"
+  hint="The zero partition numbers are $-4$ and $3$. Test one point in each of the three intervals."
+>}}
+
+{{< fillin
+  question="Solve $\tfrac{3x-2}{x-4}\ge2$. Enter the solution in interval notation."
+  answer="(-\infty,-6] \cup (4,\infty)"
+  answerDisplay="$(-\infty,-6]\cup(4,\infty)$"
+  hint="Subtract $2$, combine into one quotient, and find its zero partition numbers."
+>}}
+
+{{< fillin
+  question="Solve $\tfrac{1}{2}-\tfrac{4}{x^2}\le\tfrac{1}{x}$. Enter the solution in interval notation."
+  answer="[-2,0) \cup (0,4]"
+  answerDisplay="$[-2,0)\cup(0,4]$"
+  hint="Move every term to the left, combine over the LCD $2x^2$, and factor the numerator."
+>}}
+
+### Solve an inequality with rational functions
+
+{{< fillin
+  question="Given $R(x)=\tfrac{x-5}{x-2}$, find the values of $x$ that make $R(x)\le0$. Enter interval notation."
+  answer="(2,5]"
+  answerDisplay="$(2,5]$"
+  hint="The zero partition numbers are $2$ and $5$; a value that zeroes the denominator is always excluded."
+>}}
+
+{{< fillin
+  question="Given $R(x)=\tfrac{x-6}{x+2}$, find the values of $x$ that make $R(x)\le0$. Enter interval notation."
+  answer="(-2,6]"
+  answerDisplay="$(-2,6]$"
+  hint="Exclude the zero of the denominator, but include the zero of the numerator."
+>}}
+
+<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 7.6](https://openstax.org/books/intermediate-algebra-2e/pages/7-6-solve-rational-inequalities), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted examples, sign analyses, number lines, and Try It exercises for interactive web use and accessibility, and adapted selected end-of-section exercises into an interactive Practice block.</small>

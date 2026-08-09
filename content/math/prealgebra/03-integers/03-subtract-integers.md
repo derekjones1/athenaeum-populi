@@ -338,6 +338,11 @@ $\text{\textdollar}7$.
   hint="Subtract the check amount from the starting balance: $75 - 27$."
 >}}
 
+## Key terms
+
+**Subtraction Property** — $a - b = a + (-b)$: subtracting a number is
+the same as adding its opposite.
+
 ## Practice
 
 ### Model subtraction of integers
@@ -534,11 +539,6 @@ $\text{\textdollar}7$.
   answer="26"
   hint="A deposit is added: $-14 + 40$. The deposit covers the overdraft with some left over."
 >}}
-
-## Key terms
-
-**Subtraction Property** — $a - b = a + (-b)$: subtracting a number is
-the same as adding its opposite.
 
 ---
 

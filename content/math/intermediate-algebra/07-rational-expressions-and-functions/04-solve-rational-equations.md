@@ -555,9 +555,88 @@ also now state that $m\ne1$. Thus $c=\tfrac{m}{m-1}$.
   hint="Clear fractions using the LCD $3xy$, then isolate $y$."
 >}}
 
-**Key terms.** A **rational equation** is an equation that contains a
+## Key terms
+
+A **rational equation** is an equation that contains a
 rational expression. An **extraneous solution to a rational equation** is
 an algebraic solution that would cause an expression in the original
 equation to be undefined.
 
-<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 7.4](https://openstax.org/books/intermediate-algebra-2e/pages/7-4-solve-rational-equations), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the section for interactive web delivery and converted Try It exercises to immediate-feedback questions.</small>
+## Practice
+
+### Solve rational equations
+
+{{< fillin
+  question="Solve $\tfrac{1}{a}+\tfrac{2}{5}=\tfrac{1}{2}$."
+  answer="10"
+  answerDisplay="$a=10$"
+  hint="Note $a\ne0$, then clear the fractions using the LCD $10a$."
+>}}
+
+{{< fillin
+  question="Solve $1+\tfrac{9}{p}=\tfrac{-20}{p^2}$. Enter both solutions, separated by commas."
+  answer="-5, -4"
+  answerMode="unordered"
+  answerDisplay="$p=-5,\ -4$"
+  hint="Note $p\ne0$, clear the fractions using $p^2$, then factor the resulting quadratic."
+>}}
+
+{{< multiplechoice
+  question="Solve $\tfrac{v-10}{v^2-5v+4}=\tfrac{3}{v-1}-\tfrac{6}{v-4}$."
+  hint="Factor the quadratic denominator, clear fractions, and compare the algebraic solution with the excluded values."
+  answer="No solution"
+>}}
+No solution
+$v=1$
+$v=4$
+{{< /multiplechoice >}}
+
+### Use rational functions
+
+{{< fillin
+  question="For $f(x)=\tfrac{x-2}{x^2+6x+8}$, find the values excluded from the domain, separated by commas."
+  answer="-2, -4"
+  answerMode="unordered"
+  answerDisplay="$x\ne-2,\ x\ne-4$"
+  hint="Factor the denominator and set each factor equal to zero."
+>}}
+
+{{< fillin
+  question="For $f(x)=\tfrac{x-2}{x^2+6x+8}$, solve $f(x)=5$. Enter both solutions, separated by commas."
+  answer="-3, -\frac{14}{5}"
+  answerMode="unordered"
+  answerDisplay="$x=-3,\ -\tfrac{14}{5}$"
+  hint="Set the rational expression equal to $5$, clear fractions, and discard any excluded root."
+>}}
+
+{{< fillin
+  question="For $f(x)=\tfrac{x-2}{x^2+6x+8}$, find the points on the graph where $f(x)=5$. Enter the points in order of increasing $x$-coordinate, separated by a comma."
+  answer="(-3,5), (-\frac{14}{5},5)"
+  answerDisplay="$(-3,5),\ (-\tfrac{14}{5},5)$"
+  hint="Use each input found when solving $f(x)=5$ as the first coordinate; the function value is the second coordinate."
+>}}
+
+### Solve a rational equation for a specific variable
+
+{{< fillin
+  question="Solve $\tfrac{C}{r}=2\pi$ for $r$."
+  answer="\frac{C}{2\pi}"
+  answerDisplay="$r=\tfrac{C}{2\pi}$"
+  hint="Multiply both sides by $r$, then divide by $2\pi$."
+>}}
+
+{{< fillin
+  question="Solve $\tfrac{v+3}{w-1}=\tfrac{1}{2}$ for $w$."
+  answer="2v+7"
+  answerDisplay="$w=2v+7$"
+  hint="Cross-multiply, then isolate $w$."
+>}}
+
+{{< fillin
+  question="Solve $a=\tfrac{b+3}{c-2}$ for $c$."
+  answer="\frac{b+3+2a}{a}"
+  answerDisplay="$c=\tfrac{b+3+2a}{a}$"
+  hint="Multiply both sides by $c-2$, collect the terms with $c$, then divide by $a$."
+>}}
+
+<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 7.4](https://openstax.org/books/intermediate-algebra-2e/pages/7-4-solve-rational-equations), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the section for interactive web delivery, converted Try It exercises to immediate-feedback questions, and adapted selected end-of-section exercises into an interactive Practice block.</small>

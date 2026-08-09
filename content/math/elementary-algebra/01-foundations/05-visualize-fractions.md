@@ -607,6 +607,18 @@ $\tfrac{m-n}{p}$.
   hint="Quotient of $X$ and $Y$ means divide $X$ by $Y$. Here $X$ is the sum of $p$ and $q$, and $Y$ is $r$."
 >}}
 
+## Key terms
+
+**fraction** — a way to represent parts of a whole, written $\tfrac{a}{b}$
+where $b \neq 0$; $a$ is the numerator and $b$ is the denominator.
+**equivalent fractions** — fractions that have the same value.
+**simplified fraction** — a fraction with no common factors, other than $1$,
+in its numerator and denominator. **reciprocal** — the fraction formed by
+inverting a given fraction; a number and its reciprocal multiply to $1$.
+**complex fraction** — a fraction in which the numerator or the denominator
+itself contains a fraction. **fraction bar** — the line separating the
+numerator from the denominator, which acts as a grouping symbol.
+
 ## Practice
 
 ### Find equivalent fractions
@@ -712,18 +724,6 @@ $\tfrac{m-n}{p}$.
   answerDisplay="$\tfrac{x-y}{-3}$"
   hint="Quotient of $X$ and $Y$ means divide $X$ by $Y$. Here $X$ is the difference of $x$ and $y$, and $Y$ is $-3$."
 >}}
-
-## Key terms
-
-**fraction** — a way to represent parts of a whole, written $\tfrac{a}{b}$
-where $b \neq 0$; $a$ is the numerator and $b$ is the denominator.
-**equivalent fractions** — fractions that have the same value.
-**simplified fraction** — a fraction with no common factors, other than $1$,
-in its numerator and denominator. **reciprocal** — the fraction formed by
-inverting a given fraction; a number and its reciprocal multiply to $1$.
-**complex fraction** — a fraction in which the numerator or the denominator
-itself contains a fraction. **fraction bar** — the line separating the
-numerator from the denominator, which acts as a grouping symbol.
 
 ---
 

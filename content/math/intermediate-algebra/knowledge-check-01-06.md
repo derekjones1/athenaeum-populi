@@ -270,7 +270,7 @@ neither
 
 {{< fillin
   question="Find an equation of the line through $(7,1)$ and $(5,0)$."
-  answer="y=1/2x-5/2"
+  answer="y=\frac{1}{2}x-\frac{5}{2}"
   answerDisplay="$y = \tfrac{1}{2}x - \tfrac{5}{2}$"
 >}}
 

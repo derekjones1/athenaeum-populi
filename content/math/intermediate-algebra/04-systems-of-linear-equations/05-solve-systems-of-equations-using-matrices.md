@@ -437,6 +437,22 @@ the unique solution $(1,1,2)$
 the unique solution $(0,0,0)$
 {{< /multiplechoice >}}
 
+## Key terms
+
+**matrix** — a rectangular array of numbers arranged in rows and columns; a
+matrix with $m$ rows and $n$ columns has order $m \times n$. **augmented
+matrix** — the matrix formed from a system of linear equations, where each
+row holds the coefficients of a system's equation and the constants, with a
+vertical line in place of the equal signs. **row operations** —
+interchanging two rows, multiplying a row by a nonzero real number, or adding
+a nonzero multiple of one row to another row; each produces an equivalent
+matrix. **row-echelon form** — an augmented matrix in which, to the left of
+the vertical line, each entry on the diagonal is $1$ and all entries below
+the diagonal are $0$. **inconsistent system** — a system whose row-echelon
+form leads to a false statement (such as $0=1$); it has no solution.
+**dependent system** — a system whose row-echelon form leads to a true
+statement (such as $0=0$); it has infinitely many solutions.
+
 ## Practice
 
 ### Write the augmented matrix for a system of equations
@@ -516,22 +532,6 @@ no solution — the system is inconsistent
 the unique solution $(0,0,0)$
 the unique solution $(1,1,1)$
 {{< /multiplechoice >}}
-
-## Key terms
-
-**matrix** — a rectangular array of numbers arranged in rows and columns; a
-matrix with $m$ rows and $n$ columns has order $m \times n$. **augmented
-matrix** — the matrix formed from a system of linear equations, where each
-row holds the coefficients of a system's equation and the constants, with a
-vertical line in place of the equal signs. **row operations** —
-interchanging two rows, multiplying a row by a nonzero real number, or adding
-a nonzero multiple of one row to another row; each produces an equivalent
-matrix. **row-echelon form** — an augmented matrix in which, to the left of
-the vertical line, each entry on the diagonal is $1$ and all entries below
-the diagonal are $0$. **inconsistent system** — a system whose row-echelon
-form leads to a false statement (such as $0=1$); it has no solution.
-**dependent system** — a system whose row-echelon form leads to a true
-statement (such as $0=0$); it has infinitely many solutions.
 
 ---
 

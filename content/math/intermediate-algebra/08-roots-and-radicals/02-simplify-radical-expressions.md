@@ -335,6 +335,7 @@ Simplify: (a) $\sqrt[3]{-27}$ (b) $\sqrt[4]{-16}.$
 {{< fillin
   question="Simplify: $\sqrt[3]{-64}$"
   answer="-4"
+  answerForm="decimal"
   answerDisplay="$-4$"
   hint="Move the negative sign outside the odd root, then take the cube root."
 >}}
@@ -439,6 +440,7 @@ Simplify: (a) $\sqrt{\tfrac{45}{80}}$ (b) $\sqrt[3]{\tfrac{16}{54}}$ (c) $\sqrt[
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{75}{48}}$"
   answer="\tfrac{5}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{4}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -446,6 +448,7 @@ Simplify: (a) $\sqrt{\tfrac{45}{80}}$ (b) $\sqrt[3]{\tfrac{16}{54}}$ (c) $\sqrt[
 {{< fillin
   question="Simplify: $\sqrt[3]{\tfrac{54}{250}}$"
   answer="\tfrac{3}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{5}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -453,6 +456,7 @@ Simplify: (a) $\sqrt{\tfrac{45}{80}}$ (b) $\sqrt[3]{\tfrac{16}{54}}$ (c) $\sqrt[
 {{< fillin
   question="Simplify: $\sqrt[4]{\tfrac{32}{162}}$"
   answer="\tfrac{2}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{3}$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
@@ -741,6 +745,68 @@ Simplify: (a) $\tfrac{\sqrt{48 a^{7}}}{\sqrt{3 a}}$ (b) $\tfrac{\sqrt[3]{-108}}{
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
 
+## Practice
+
+### Use the product property to simplify radical expressions
+
+{{< fillin
+  question="Simplify: $\sqrt{800}$"
+  answer="20 \sqrt{2}"
+  answerForm="simplified-radical"
+  answerDisplay="$20 \sqrt{2}$"
+  hint="Factor out the largest perfect-square factor of the radicand."
+>}}
+
+{{< fillin
+  question="Simplify $\sqrt{125 r^{13}}$"
+  answer="5 r^{6} \sqrt{5 r}"
+  answerForm="simplified-radical"
+  answerDisplay="$5 r^{6} \sqrt{5 r}$"
+  hint="Split the radicand into the largest perfect-square factor, numeral and variable, times the remaining factor."
+>}}
+
+{{< fillin
+  question="Simplify $\sqrt[3]{108 x^{5}}$"
+  answer="3 x \sqrt[3]{4 x^{2}}"
+  answerForm="simplified-radical"
+  answerDisplay="$3 x \sqrt[3]{4 x^{2}}$"
+  hint="Factor the radicand into the largest perfect-cube factor times the remaining factor."
+>}}
+
+{{< fillin
+  question="Simplify $\sqrt[4]{48 y^{6}}$"
+  answer="2 \lvert y\rvert \sqrt[4]{3 y^{2}}"
+  answerForm="simplified-radical"
+  answerDisplay="$2 \lvert y\rvert \sqrt[4]{3 y^{2}}$"
+  hint="Factor out the largest perfect fourth-power factor; an even index over an odd power of $y$ needs absolute value bars."
+>}}
+
+### Use the quotient property to simplify radical expressions
+
+{{< fillin
+  question="Simplify $\sqrt{\tfrac{27 p^{2} q}{108 p^{4} q^{3}}}$"
+  answer="\tfrac{1}{2 \lvert p q\rvert}"
+  answerForm="simplified-radical"
+  answerDisplay="$\tfrac{1}{2 \lvert p q\rvert}$"
+  hint="Reduce the fraction under the radical first, then take the square root of the resulting perfect square."
+>}}
+
+{{< fillin
+  question="Simplify $\sqrt[3]{\tfrac{16 c^{5} d^{7}}{250 c^{2} d^{2}}}$"
+  answer="\tfrac{2 c d \sqrt[3]{d^{2}}}{5}"
+  answerForm="simplified-radical"
+  answerDisplay="$\tfrac{2 c d \sqrt[3]{d^{2}}}{5}$"
+  hint="Reduce the fraction under the radical first, then extract the perfect-cube factors."
+>}}
+
+{{< fillin
+  question="Simplify $\sqrt[6]{\tfrac{2 m^{9} n^{7}}{128 m^{3} n}}$"
+  answer="\tfrac{\lvert m n\rvert}{2}"
+  answerForm="simplified-radical"
+  answerDisplay="$\tfrac{\lvert m n\rvert}{2}$"
+  hint="Reduce the fraction under the radical first, then take the sixth root of the resulting perfect sixth power."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 8.2: Simplify Radical Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/8-2-simplify-radical-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, self-check reflection, and end-of-section exercise bank; and converted the source Try It practice into interactive exercises.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 8.2: Simplify Radical Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/8-2-simplify-radical-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; and adapted selected end-of-section exercises into an interactive Practice block.</small>

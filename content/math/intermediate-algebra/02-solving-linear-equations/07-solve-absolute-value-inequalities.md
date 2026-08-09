@@ -423,6 +423,11 @@ The diameter of the rod can be between 59.925 mm and 60.075 mm.
   hint="Use $|x-80|\leq0.009$, and rewrite it as a compound inequality."
 >}}
 
+## Key terms
+
+**Absolute value** is the distance of a number from zero on
+the number line. **Tolerance** is the allowed difference from a specification.
+
 ## Practice
 
 ### Solve absolute value equations
@@ -526,9 +531,6 @@ $\left[-\tfrac{3}{5},\tfrac{1}{5}\right]$
   answerDisplay="22.5 to 25.5 ounces"
   hint="Set up $|x-24|\le1.5$, rewrite it as a compound inequality, and solve for $x$."
 >}}
-
-**Key terms.** **Absolute value** is the distance of a number from zero on
-the number line. **Tolerance** is the allowed difference from a specification.
 
 ---
 

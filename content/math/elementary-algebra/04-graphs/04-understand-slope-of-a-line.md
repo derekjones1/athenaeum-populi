@@ -344,6 +344,15 @@ The pipe drops $1$ inch for every $48$ inches of horizontal run.
   hint="The rise is $-\tfrac{1}{3}$ inch and the run is 12 inches (1 foot); slope is rise over run."
 >}}
 
+## Key terms
+
+**slope of a line** — the ratio of the rise (vertical change) to the run
+(horizontal change) between two points on the line, $m = \tfrac{\text{rise}}{\text{run}} = \tfrac{y_2 - y_1}{x_2 - x_1}$.
+**slope formula** — the algebraic formula for computing slope from two named
+points, $(x_1, y_1)$ and $(x_2, y_2)$. **point-slope method** — graphing a
+line by plotting one known point, then using the slope to count out and mark
+a second point.
+
 ## Practice
 
 ### Use $m = \tfrac{\text{rise}}{\text{run}}$ to find the slope of a line from its graph
@@ -607,15 +616,6 @@ undefined
   answerDisplay="rise $= 3$, run $= 50$"
   hint="Use the numerator and denominator of the simplified fractional slope as rise and run."
 >}}
-
-## Key terms
-
-**slope of a line** — the ratio of the rise (vertical change) to the run
-(horizontal change) between two points on the line, $m = \tfrac{\text{rise}}{\text{run}} = \tfrac{y_2 - y_1}{x_2 - x_1}$.
-**slope formula** — the algebraic formula for computing slope from two named
-points, $(x_1, y_1)$ and $(x_2, y_2)$. **point-slope method** — graphing a
-line by plotting one known point, then using the slope to count out and mark
-a second point.
 
 ---
 

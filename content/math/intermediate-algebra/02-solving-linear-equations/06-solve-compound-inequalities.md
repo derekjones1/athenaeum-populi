@@ -548,6 +548,12 @@ billing range.
   hint="Write $31.32\leq24.72+1.32x\leq52.12$, then isolate $x$ in all three parts."
 >}}
 
+## Key terms
+
+A **compound inequality** is made up of two inequalities
+connected by “and” or “or.” A **double inequality** is a compound inequality
+such as $a<x<b$, equivalent to $a<x$ and $x<b$.
+
 ## Practice
 
 ### Solve compound inequalities with “and”
@@ -614,10 +620,6 @@ no solution
   answerDisplay="$6,12$ feet"
   hint="Write $36\le2(12+w)\le48$, then isolate $w$ in all three parts."
 >}}
-
-**Key terms.** A **compound inequality** is made up of two inequalities
-connected by “and” or “or.” A **double inequality** is a compound inequality
-such as $a<x<b$, equivalent to $a<x$ and $x<b$.
 
 ---
 

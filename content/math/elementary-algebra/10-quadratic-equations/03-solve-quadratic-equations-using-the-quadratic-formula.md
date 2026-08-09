@@ -426,6 +426,14 @@ Square Root Property
 Quadratic Formula
 {{< /multiplechoice >}}
 
+## Key terms
+
+**Quadratic Formula** — the solutions to a quadratic equation of the form
+$ax^2+bx+c=0$, $a\ne0$, are given by
+$x=\tfrac{-b\pm\sqrt{b^2-4ac}}{2a}$. **discriminant** — the quantity
+$b^2-4ac$ in the Quadratic Formula; its sign predicts the number of real
+solutions.
+
 ## Practice
 
 ### Solve quadratic equations using the quadratic formula
@@ -547,14 +555,6 @@ Factoring
 Square Root Property
 Quadratic Formula
 {{< /multiplechoice >}}
-
-## Key terms
-
-**Quadratic Formula** — the solutions to a quadratic equation of the form
-$ax^2+bx+c=0$, $a\ne0$, are given by
-$x=\tfrac{-b\pm\sqrt{b^2-4ac}}{2a}$. **discriminant** — the quantity
-$b^2-4ac$ in the Quadratic Formula; its sign predicts the number of real
-solutions.
 
 ---
 

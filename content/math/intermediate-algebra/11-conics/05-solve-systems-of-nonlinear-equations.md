@@ -414,9 +414,93 @@ the length is 20 inches, the width is 15 inches.
   hint="The side lengths have product $192$ and their squares sum to $20^2$."
 >}}
 
-**Key terms.** A **system of nonlinear equations** is a system where at least
+## Key terms
+
+A **system of nonlinear equations** is a system where at least
 one of the equations is not linear.
+
+## Practice
+
+### Solve a System of Nonlinear Equations Using Graphing
+
+{{< fillin
+  question="Solve the system $\left\{\begin{array}{l}y=6x-4\\y=2x^2\end{array}\right.$ by graphing. Enter both ordered-pair solutions, the one with the smaller $x$-value first."
+  answer="(1,2),(2,8)"
+  answerDisplay="$(1,2),(2,8)$"
+  hint="Substitute $6x-4$ for $y$ in $y=2x^2$ and solve the resulting quadratic for $x$."
+>}}
+
+{{< multiplechoice
+  question="Solve the system $\left\{\begin{array}{l}y=x-1\\y=x^2+1\end{array}\right.$ by graphing. Does the system have a real-number solution?"
+  answer="No"
+  hint="Substitute $x-1$ for $y$ in $y=x^2+1$ and check the discriminant of the resulting quadratic."
+>}}
+Yes
+No
+{{< /multiplechoice >}}
+
+### Solve a System of Nonlinear Equations Using Substitution
+
+{{< fillin
+  question="Solve $\left\{\begin{array}{l}9x^2+4y^2=36\\x=2\end{array}\right.$ using substitution. Enter the solution as an ordered pair."
+  answer="(2,0)"
+  answerDisplay="$(2,0)$"
+  hint="Substitute $x=2$ into the ellipse equation and solve for $y$."
+>}}
+
+{{< fillin
+  question="Solve $\left\{\begin{array}{l}x^2+y^2=169\\x=12\end{array}\right.$ using substitution. Enter both solutions."
+  answer="(12,-5),(12,5)"
+  answerMode="unordered"
+  answerDisplay="$(12,-5),(12,5)$"
+  hint="Substitute $x=12$ into the circle equation and solve for $y$, keeping both signs of the square root."
+>}}
+
+{{< multiplechoice
+  question="Solve $\left\{\begin{array}{l}2y^2-x=0\\y=x+1\end{array}\right.$ using substitution. Does the system have a real-number solution?"
+  answer="No"
+  hint="Substitute $x=y-1$ into $2y^2-x=0$ and check the discriminant of the resulting quadratic in $y$."
+>}}
+Yes
+No
+{{< /multiplechoice >}}
+
+### Solve a System of Nonlinear Equations Using Elimination
+
+{{< fillin
+  question="Solve $\left\{\begin{array}{l}x^2+y^2=16\\x^2-y^2=16\end{array}\right.$ using elimination. Enter both solutions."
+  answer="(-4,0),(4,0)"
+  answerMode="unordered"
+  answerDisplay="$(-4,0),(4,0)$"
+  hint="Add the equations to eliminate $y^2$, solve for $x$, and then find $y$."
+>}}
+
+{{< fillin
+  question="Solve $\left\{\begin{array}{l}x^2-y^2=3\\2x^2+y^2=6\end{array}\right.$ using elimination. Enter both solutions in exact form."
+  answer="(-\sqrt3,0),(\sqrt3,0)"
+  answerMode="unordered"
+  answerDisplay="$(-\sqrt3,0),(\sqrt3,0)$"
+  hint="Add the equations to eliminate $y^2$, solve for $x^2$, and then find $y$."
+>}}
+
+### Use a System of Nonlinear Equations to Solve Applications
+
+{{< fillin
+  question="The sum of the squares of two numbers is $113$. The difference of the numbers is $1$. Enter the two positive numbers, larger first."
+  answer="8,7"
+  answerDisplay="$8,7$"
+  hint="Let $x-y=1$, so $x=y+1$. Substitute into $x^2+y^2=113$ and solve for $y$."
+>}}
+
+{{< multiplechoice
+  question="Donnette's TV has a $50$-inch diagonal screen with area $1{,}200$ square inches, and her entertainment center's TV insert is $38$ inches by $27$ inches. Will the TV screen fit in the insert?"
+  answer="No"
+  hint="Solve $l^2+w^2=2{,}500$ and $lw=1200$ for the screen's length and width, then compare each dimension to $38$ and $27$."
+>}}
+Yes
+No
+{{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 11.5](https://openstax.org/books/intermediate-algebra-2e/pages/11-5-solve-systems-of-nonlinear-equations) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: omitted readiness quizzes, practice sets, self-checks, media links, and complex source figures; converted selected Try It problems to interactive questions and described graphing constructions in words.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 11.5](https://openstax.org/books/intermediate-algebra-2e/pages/11-5-solve-systems-of-nonlinear-equations) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: omitted readiness quizzes, self-checks, media links, and complex source figures; converted selected Try It problems to interactive questions, described graphing constructions in words, and adapted selected end-of-section exercises into an interactive Practice block.</small>

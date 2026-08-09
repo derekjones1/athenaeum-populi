@@ -706,12 +706,111 @@ The coefficient of the $x^6$ term is 2268.
 
 {{< fillin question="Find the coefficient of the $x^4$ term of $(x+2)^7$." answer="280" answerDisplay="$280$" hint="Solve $7-r=4$ and evaluate the resulting coefficient." >}}
 
-**Key terms.** A **binomial coefficient** $\binom{n}{r}$ is
+## Key terms
+
+A **binomial coefficient** $\binom{n}{r}$ is
 $\tfrac{n!}{r!(n-r)!}$. The **Binomial Theorem** gives the expansion of
 $(a+b)^n$ using binomial coefficients. **Pascal's Triangle** is the triangular
 array in which each interior number is the sum of the two numbers above it;
 its rows give the coefficients in binomial expansions.
 
+## Practice
+
+### Use Pascal's Triangle to expand a binomial
+
+{{< fillin
+  question="Use Pascal's Triangle to expand $(a+b)^8$."
+  answer="a^8+8a^7b+28a^6b^2+56a^5b^3+70a^4b^4+56a^3b^5+28a^2b^6+8ab^7+b^8"
+  answerForm="expanded"
+  answerDisplay="$a^8+8a^7b+28a^6b^2+56a^5b^3+70a^4b^4+56a^3b^5+28a^2b^6+8ab^7+b^8$"
+  hint="Use the row of Pascal's Triangle whose second entry is $8$."
+>}}
+
+{{< fillin
+  question="Use Pascal's Triangle to expand $(a-b)^6$."
+  answer="a^6-6a^5b+15a^4b^2-20a^3b^3+15a^2b^4-6ab^5+b^6"
+  answerForm="expanded"
+  answerDisplay="$a^6-6a^5b+15a^4b^2-20a^3b^3+15a^2b^4-6ab^5+b^6$"
+  hint="Use the row of Pascal's Triangle whose second entry is $6$, and alternate the signs since the binomial is a difference."
+>}}
+
+{{< fillin
+  question="Use Pascal's Triangle to expand $(3x-5)^3$."
+  answer="27x^3-135x^2+225x-125"
+  answerForm="expanded"
+  answerDisplay="$27x^3-135x^2+225x-125$"
+  hint="In the pattern, use $a=3x$ and $b=-5$."
+>}}
+
+### Evaluate a binomial coefficient
+
+{{< fillin
+  question="Evaluate $\binom{7}{1}$."
+  answer="7"
+  answerDisplay="$7$"
+  hint="Use $\binom{n}{1}=n$."
+>}}
+
+{{< fillin
+  question="Evaluate $\binom{4}{4}$."
+  answer="1"
+  answerDisplay="$1$"
+  hint="Use $\binom{n}{n}=1$."
+>}}
+
+{{< fillin
+  question="Evaluate $\binom{3}{0}$."
+  answer="1"
+  answerDisplay="$1$"
+  hint="Use $\binom{n}{0}=1$."
+>}}
+
+{{< fillin
+  question="Evaluate $\binom{10}{8}$."
+  answer="45"
+  answerDisplay="$45$"
+  hint="Use the definition $\binom{n}{r}=\tfrac{n!}{r!(n-r)!}$ and cancel the common factorial."
+>}}
+
+### Use the Binomial Theorem to expand a binomial
+
+{{< fillin
+  question="Use the Binomial Theorem to expand $(s+t)^7$."
+  answer="s^7+7s^6t+21s^5t^2+35s^4t^3+35s^3t^4+21s^2t^5+7st^6+t^7"
+  answerForm="expanded"
+  answerDisplay="$s^7+7s^6t+21s^5t^2+35s^4t^3+35s^3t^4+21s^2t^5+7st^6+t^7$"
+  hint="Use the binomial coefficients $\binom{7}{r}$."
+>}}
+
+{{< fillin
+  question="Use the Binomial Theorem to expand $(y-3)^4$."
+  answer="y^4-12y^3+54y^2-108y+81"
+  answerForm="expanded"
+  answerDisplay="$y^4-12y^3+54y^2-108y+81$"
+  hint="In the pattern, use $a=y$ and $b=-3$."
+>}}
+
+{{< fillin
+  question="Find the fifth term of $(a+b)^9$."
+  answer="126a^5b^4"
+  answerDisplay="$126a^5b^4$"
+  hint="For the fifth term, use $r=4$."
+>}}
+
+{{< fillin
+  question="Find the coefficient of the $x^6$ term of $(x+2)^8$."
+  answer="112"
+  answerDisplay="$112$"
+  hint="Solve $8-r=6$ and evaluate the resulting coefficient."
+>}}
+
+{{< fillin
+  question="Find the coefficient of the $x^7$ term of $(x-3)^9$."
+  answer="324"
+  answerDisplay="$324$"
+  hint="Solve $9-r=7$ and evaluate the resulting coefficient."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 12.4](https://openstax.org/books/intermediate-algebra-2e/pages/12-4-binomial-theorem) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: converted the source Try It exercises into interactive questions and omitted the readiness quiz, section exercise set, self-check, and media links in accordance with the authoring playbook.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 12.4](https://openstax.org/books/intermediate-algebra-2e/pages/12-4-binomial-theorem) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: converted the source Try It exercises into interactive questions, adapted selected end-of-section exercises into an interactive Practice block, and omitted the readiness quiz, self-check, and media links in accordance with the authoring playbook.</small>

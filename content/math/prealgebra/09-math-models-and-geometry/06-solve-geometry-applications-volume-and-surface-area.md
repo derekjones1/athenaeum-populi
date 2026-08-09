@@ -375,6 +375,19 @@ The volume of the wrap is approximately $52.33$ cubic inches.
   hint="Substitute into $V = \tfrac{1}{3}\pi r^2 h$: $V = \tfrac{1}{3}(3.14)(3.5)^2(10)$."
 >}}
 
+## Key terms
+
+**rectangular solid** — a three-dimensional figure with six rectangular
+faces (length, width, height). **surface area** — a square measure of the
+total area of all the faces of a solid. **volume** — a cubic measure of
+the space enclosed by a solid. **cube** — a rectangular solid whose
+length, width, and height are all equal. **sphere** — a three-dimensional
+figure where every point on the surface is the same distance (the radius)
+from the center. **cylinder** — a solid figure with two parallel congruent
+circular bases connected by a curved surface perpendicular to the bases.
+**cone** — a solid figure with one circular base tapering to a single
+vertex.
+
 ## Practice
 
 ### Find the volume and surface area of rectangular solids
@@ -503,19 +516,6 @@ The volume of the wrap is approximately $52.33$ cubic inches.
   answerDisplay="64,108.33 cubic feet"
   hint="The base diameter is 70 feet, so $r = 35$. Substitute into $V = \tfrac{1}{3}\pi r^2 h$: $V = \tfrac{1}{3}(3.14)(35)^2(50)$."
 >}}
-
-## Key terms
-
-**rectangular solid** — a three-dimensional figure with six rectangular
-faces (length, width, height). **surface area** — a square measure of the
-total area of all the faces of a solid. **volume** — a cubic measure of
-the space enclosed by a solid. **cube** — a rectangular solid whose
-length, width, and height are all equal. **sphere** — a three-dimensional
-figure where every point on the surface is the same distance (the radius)
-from the center. **cylinder** — a solid figure with two parallel congruent
-circular bases connected by a curved surface perpendicular to the bases.
-**cone** — a solid figure with one circular base tapering to a single
-vertex.
 
 ---
 

@@ -415,7 +415,7 @@ aliases:
 {{< fillin
   question="Simplify: $\sqrt{64 + 225}$."
   answer="17"
-  answerForm="simplified-radical"
+  answerForm="decimal"
 >}}
 
 ### 9.2 Simplify Square Roots

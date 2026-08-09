@@ -600,6 +600,94 @@ Simplify: (a) $\tfrac{x^{\tfrac{3}{4}} \cdot x^{- \tfrac{1}{4}}}{x^{- \tfrac{6}{
   hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
 >}}
 
+## Practice
+
+### Simplify expressions with $a^{\tfrac{1}{n}}$
+
+{{< fillin
+  question="Simplify: $\left(-216\right)^{\tfrac{1}{3}}$"
+  answer="-6"
+  answerForm="decimal"
+  answerDisplay="$-6$"
+  hint="Rewrite as a cube root — an odd index gives a real root for a negative radicand."
+>}}
+
+{{< fillin
+  question="Simplify: $- 216^{\tfrac{1}{3}}$"
+  answer="-6"
+  answerForm="decimal"
+  answerDisplay="$-6$"
+  hint="The exponent applies only to 216; take the cube root first, then attach the negative sign in front."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(216\right)^{- \tfrac{1}{3}}$"
+  answer="\tfrac{1}{6}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{1}{6}$"
+  hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
+>}}
+
+### Simplify expressions with $a^{\tfrac{m}{n}}$
+
+{{< fillin
+  question="Simplify: $64^{\tfrac{5}{2}}$"
+  answer="32768"
+  answerForm="decimal"
+  answerDisplay="$32{,}768$"
+  hint="Take the square root first to keep the numbers small, then raise the result to the outer power."
+>}}
+
+{{< fillin
+  question="Simplify: $81^{- \tfrac{3}{2}}$"
+  answer="\tfrac{1}{729}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{1}{729}$"
+  hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(-27\right)^{\tfrac{2}{3}}$"
+  answer="9"
+  answerForm="decimal"
+  answerDisplay="9"
+  hint="Take the cube root of the negative base first, then square the result."
+>}}
+
+### Use the properties of exponents to simplify expressions with rational exponents
+
+{{< fillin
+  question="Simplify: $\left(27 q^{\tfrac{3}{2}}\right)^{\tfrac{4}{3}}$"
+  answer="81 q^{2}"
+  answerForm="single-term"
+  answerDisplay="$81 q^{2}$"
+  hint="Apply the Product to a Power Property, then multiply exponents on each factor."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(a^{\tfrac{1}{3}} b^{\tfrac{2}{3}}\right)^{\tfrac{3}{2}}$"
+  answer="a^{\tfrac{1}{2}} b"
+  answerForm="distributed"
+  answerDisplay="$a^{\tfrac{1}{2}} b$"
+  hint="Apply the Product to a Power Property, then multiply exponents on each factor."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{c^{\tfrac{5}{3}} \cdot c^{- \tfrac{1}{3}}}{c^{- \tfrac{2}{3}}}$"
+  answer="c^{2}"
+  answerForm="polynomial"
+  answerDisplay="$c^{2}$"
+  hint="Combine the numerator with the Product Property, then apply the Quotient Property against the denominator."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(\tfrac{8 x^{\tfrac{5}{3}} y^{- \tfrac{1}{2}}}{27 x^{- \tfrac{4}{3}} y^{\tfrac{5}{2}}}\right)^{\tfrac{1}{3}}$"
+  answer="\tfrac{2 x}{3 y}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{2 x}{3 y}$"
+  hint="Simplify inside the parentheses with the Quotient Property first, then apply the outer power."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 8.3: Simplify Rational Exponents](https://openstax.org/books/intermediate-algebra-2e/pages/8-3-simplify-rational-exponents) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, self-check reflection, and end-of-section exercise bank; and converted the source Try It practice into interactive exercises.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 8.3: Simplify Rational Exponents](https://openstax.org/books/intermediate-algebra-2e/pages/8-3-simplify-rational-exponents) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; and adapted selected end-of-section exercises into an interactive Practice block.</small>

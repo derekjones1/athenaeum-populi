@@ -1645,6 +1645,18 @@ horizontal line $y = -3$.
   hint="Substitute $x = 2$ into $y = 3x$. Compare it to the constant line $y = 3$, which has $y = 3$ no matter what $x$ is."
 >}}
 
+## Key terms
+
+**graph of a linear equation** — the straight line consisting of all the
+points that are solutions of the equation $Ax + By = C$; every point on the
+line is a solution, and every solution is a point on the line. **plotting
+points (Point-Plotting Method)** — a method of graphing a linear equation
+by finding three solutions, organizing them in a table, plotting them, and
+drawing the line through them. **vertical line** — the graph of an
+equation of the form $x = a$; it passes through the $x$-axis at $(a, 0)$.
+**horizontal line** — the graph of an equation of the form $y = b$; it
+passes through the $y$-axis at $(0, b)$.
+
 ## Practice
 
 ### Recognize the relation between the solutions of an equation and its graph
@@ -1954,18 +1966,6 @@ no
 >}}
 {"answer":{"system":[{"slope":2,"intercept":0},{"y":2}]},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}
-
-## Key terms
-
-**graph of a linear equation** — the straight line consisting of all the
-points that are solutions of the equation $Ax + By = C$; every point on the
-line is a solution, and every solution is a point on the line. **plotting
-points (Point-Plotting Method)** — a method of graphing a linear equation
-by finding three solutions, organizing them in a table, plotting them, and
-drawing the line through them. **vertical line** — the graph of an
-equation of the form $x = a$; it passes through the $x$-axis at $(a, 0)$.
-**horizontal line** — the graph of an equation of the form $y = b$; it
-passes through the $y$-axis at $(0, b)$.
 
 ---
 

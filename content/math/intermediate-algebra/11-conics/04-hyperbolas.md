@@ -205,6 +205,7 @@ rectangle. Draw the two branches of the hyperbola.
 {{< fillin
   question="Write $4y^2-25x^2=100$ in standard form."
   answer="\frac{y^2}{25}-\frac{x^2}{4}=1"
+  answerForm="conic-standard-form"
   answerDisplay="$\frac{y^2}{25}-\frac{x^2}{4}=1$"
   hint="Divide every term by $100$."
 >}}
@@ -212,6 +213,7 @@ rectangle. Draw the two branches of the hyperbola.
 {{< fillin
   question="Write $25y^2-9x^2=225$ in standard form."
   answer="\frac{y^2}{9}-\frac{x^2}{25}=1"
+  answerForm="conic-standard-form"
   answerDisplay="$\frac{y^2}{9}-\frac{x^2}{25}=1$"
   hint="Divide every term by $225$."
 >}}
@@ -348,6 +350,7 @@ branches.
 {{< fillin
   question="Write $9x^2-16y^2+18x+64y-199=0$ in standard form."
   answer="\frac{(x+1)^2}{16}-\frac{(y-2)^2}{9}=1"
+  answerForm="conic-standard-form"
   answerDisplay="$\frac{(x+1)^2}{16}-\frac{(y-2)^2}{9}=1$"
   hint="Group the variable terms, complete both squares, and make the constant $1$."
 >}}
@@ -355,6 +358,7 @@ branches.
 {{< fillin
   question="Write $16x^2-25y^2+96x-50y-281=0$ in standard form."
   answer="\frac{(x+3)^2}{25}-\frac{(y+1)^2}{16}=1"
+  answerForm="conic-standard-form"
   answerDisplay="$\frac{(x+3)^2}{25}-\frac{(y+1)^2}{16}=1$"
   hint="Group the variable terms, complete both squares, and make the constant $1$."
 >}}
@@ -421,13 +425,125 @@ ellipse
 hyperbola
 {{< /multiplechoice >}}
 
-**Key terms.** A **hyperbola** is the set of all points in a plane for which
+## Key terms
+
+A **hyperbola** is the set of all points in a plane for which
 the difference of the distances from two fixed points, the **foci**, is
 constant. Its principal line is the **transverse axis**; its turning points
 are **vertices**; their midpoint is the **center**; the perpendicular line
 through the center is the **conjugate axis**; each piece is a **branch**; and
 the branches approach the **asymptotes**.
 
+## Practice
+
+### Graph a hyperbola with center at $(0,0)$
+
+{{< multiplechoice
+  question="For the hyperbola $\frac{x^2}{9}-\frac{y^2}{4}=1$, is the transverse axis horizontal or vertical?"
+  answer="horizontal"
+  hint="The transverse axis lies along the axis of the variable whose term is positive."
+>}}
+horizontal
+vertical
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="For the hyperbola $\frac{y^2}{25}-\frac{x^2}{4}=1$, enter the positive $y$-coordinate of a vertex."
+  answer="5"
+  answerDisplay="$5$"
+  hint="In standard form, $a^2=25$, and since the $y^2$-term is positive, the vertices are $(0,\pm a)$."
+>}}
+
+{{< fillin
+  question="For the hyperbola $4y^2-9x^2=36$, enter both asymptote equations in the form $y=mx$, separated by a comma."
+  answer="y = \frac{3}{2}x , y = -\frac{3}{2}x"
+  answerMode="unordered"
+  answerDisplay="$y = \frac{3}{2}x , y = -\frac{3}{2}x$"
+  hint="Divide by $36$ to get $\frac{y^2}{9}-\frac{x^2}{4}=1$, so $a=3$ and $b=2$; since the transverse axis is vertical, the asymptotes are $y=\pm\frac{a}{b}x$."
+>}}
+
+### Graph a hyperbola with center at $(h,k)$
+
+{{< fillin
+  question="For the hyperbola $\frac{(x-1)^2}{16}-\frac{(y-3)^2}{4}=1$, enter the center as an ordered pair."
+  answer="(1,3)"
+  answerDisplay="$(1,3)$"
+  hint="Compare $x-h$ and $y-k$ with the standard form; the center is $(h,k)$."
+>}}
+
+{{< fillin
+  question="For the hyperbola $\frac{(y-4)^2}{16}-\frac{(x+1)^2}{25}=1$, enter the vertex with the larger $y$-coordinate as an ordered pair."
+  answer="(-1,8)"
+  answerDisplay="$(-1,8)$"
+  hint="Since the $y^2$-term is positive, the vertices are $a$ units above and below the center $(h,k)$; here $a=4$."
+>}}
+
+{{< multiplechoice
+  question="For the hyperbola $\frac{(x-3)^2}{25}-\frac{(y+2)^2}{9}=1$, is the transverse axis horizontal or vertical?"
+  answer="horizontal"
+  hint="The $x^2$-term is positive, so the hyperbola opens left and right."
+>}}
+horizontal
+vertical
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Write $y^2-x^2-4y+2x-6=0$ in standard form."
+  answer="$\tfrac{(y-2)^2}{9}-\tfrac{(x-1)^2}{9}=1$"
+  hint="Group the variable terms and complete both squares — watch the sign when you factor $-1$ out of the $x$-terms — then divide through so the right side is $1$."
+>}}
+$\tfrac{(y-2)^2}{9}-\tfrac{(x-1)^2}{9}=1$
+$\tfrac{(x-1)^2}{9}-\tfrac{(y-2)^2}{9}=1$
+$\tfrac{(y+2)^2}{9}-\tfrac{(x+1)^2}{9}=1$
+$\tfrac{(y-2)^2}{9}+\tfrac{(x-1)^2}{9}=1$
+{{< /multiplechoice >}}
+
+### Identify conic sections by their equations
+
+{{< multiplechoice
+  question="Identify the graph of $x=-2y^2-12y-16$."
+  answer="parabola"
+  hint="Only one variable, $y$, is squared."
+>}}
+circle
+parabola
+ellipse
+hyperbola
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Identify the graph of $x^2+y^2=9$."
+  answer="circle"
+  hint="The $x^2$- and $y^2$-terms have the same coefficient."
+>}}
+circle
+parabola
+ellipse
+hyperbola
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Identify the graph of $16x^2-4y^2+64x-24y-36=0$."
+  answer="hyperbola"
+  hint="The $x^2$- and $y^2$-terms have different signs."
+>}}
+circle
+parabola
+ellipse
+hyperbola
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Identify the graph of $16x^2+36y^2=576$."
+  answer="ellipse"
+  hint="The $x^2$- and $y^2$-terms have the same sign but different coefficients."
+>}}
+circle
+parabola
+ellipse
+hyperbola
+{{< /multiplechoice >}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 11.4](https://openstax.org/books/intermediate-algebra-2e/pages/11-4-hyperbolas) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: omitted readiness quizzes, practice sets, self-checks, media links, and complex source figures; converted selected Try It problems to interactive questions and described graphing constructions in words.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 11.4](https://openstax.org/books/intermediate-algebra-2e/pages/11-4-hyperbolas) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: omitted readiness quizzes, self-checks, and media links; converted selected Try It problems to interactive questions, described graphing constructions in words, and adapted selected end-of-section exercises into an interactive Practice block.</small>

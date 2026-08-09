@@ -886,6 +886,12 @@ least $23$ hours.
   hint="Set total expenses less than or equal to $500+15h$."
 >}}
 
+## Key terms
+
+A **linear inequality** is an inequality in one variable that
+can be written in one of the forms $ax+b<c$, $ax+b\leq c$, $ax+b>c$, or
+$ax+b\geq c$, where $a$, $b$, and $c$ are real numbers and $a\ne0$.
+
 ## Practice
 
 ### Graph inequalities on the number line
@@ -1028,10 +1034,6 @@ least $23$ hours.
   answerDisplay="32 jobs"
   hint="Solve $125j-1{,}600\geq2{,}400$."
 >}}
-
-**Key terms.** A **linear inequality** is an inequality in one variable that
-can be written in one of the forms $ax+b<c$, $ax+b\leq c$, $ax+b>c$, or
-$ax+b\geq c$, where $a$, $b$, and $c$ are real numbers and $a\ne0$.
 
 ---
 

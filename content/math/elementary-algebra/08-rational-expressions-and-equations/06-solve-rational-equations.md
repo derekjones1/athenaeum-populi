@@ -281,6 +281,14 @@ equation, we must also now state that $m \neq 1$.
   hint="Cross-multiply to get $3(y-2) = 2(x+1)$, then isolate $x$: $3y - 6 = 2x + 2$."
 >}}
 
+## Key terms
+
+**rational equation** — two rational expressions connected by an equal sign.
+**extraneous solution to a rational equation** — an algebraic solution that
+would cause any of the expressions in the original equation to be undefined;
+it must be discarded. **excluded value** — a value of the variable that makes
+a denominator equal to zero, so the rational expression is undefined there.
+
 ## Practice
 
 ### Solve rational equations
@@ -324,14 +332,6 @@ No solution
   answerDisplay="$n = \tfrac{5m+23}{4}$"
   hint="Cross-multiply to get $5(m+3) = 4(n-2)$, then isolate $n$."
 >}}
-
-## Key terms
-
-**rational equation** — two rational expressions connected by an equal sign.
-**extraneous solution to a rational equation** — an algebraic solution that
-would cause any of the expressions in the original equation to be undefined;
-it must be discarded. **excluded value** — a value of the variable that makes
-a denominator equal to zero, so the rational expression is undefined there.
 
 ---
 

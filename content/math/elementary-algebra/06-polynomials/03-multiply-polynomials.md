@@ -499,6 +499,15 @@ $$
   - Vertical Method
 {{< /callout >}}
 
+## Key terms
+
+**FOIL method** — a shortcut for multiplying two binomials by adding the
+products of the **F**irst, **O**uter, **I**nner, and **L**ast pairs of
+terms. **Vertical Method** — a way to multiply any two polynomials by
+stacking them and adding partial products, just like multiplying whole
+numbers. Both the FOIL and Vertical methods are organized applications of
+the Distributive Property.
+
 ## Practice
 
 ### Multiply a polynomial by a monomial
@@ -569,15 +578,6 @@ $$
   answerForm="expanded"
   hint="Distribute $3q$ and $1$ across the trinomial, watching signs, then combine like terms."
 >}}
-
-## Key terms
-
-**FOIL method** — a shortcut for multiplying two binomials by adding the
-products of the **F**irst, **O**uter, **I**nner, and **L**ast pairs of
-terms. **Vertical Method** — a way to multiply any two polynomials by
-stacking them and adding partial products, just like multiplying whole
-numbers. Both the FOIL and Vertical methods are organized applications of
-the Distributive Property.
 
 ---
 

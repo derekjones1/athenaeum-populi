@@ -479,6 +479,14 @@ $$
   hint="Add the exponents in the numerator $\left(\tfrac{2}{3} - \tfrac{1}{3} = \tfrac{1}{3}\right)$, then subtract the denominator's exponent: $\tfrac{1}{3} - \left(-\tfrac{5}{3}\right)$."
 >}}
 
+## Key terms
+
+**rational exponent** — an exponent that is a fraction; $a^{1/n} = \sqrt[n]{a}$
+and $a^{m/n} = \left(\sqrt[n]{a}\right)^m = \sqrt[n]{a^m}$, connecting exponent
+notation to radical notation. **negative rational exponent** — a negative
+fractional exponent, rewritten with a positive exponent using
+$a^{-m/n} = \tfrac{1}{a^{m/n}}$.
+
 ## Practice
 
 ### Simplify expressions with $a^{1/n}$
@@ -560,14 +568,6 @@ not a real number
   answerForm="single-fraction"
   hint="Subtract the exponents: $\tfrac{2}{3} - \tfrac{8}{3} = -\tfrac{6}{3} = -2$. A negative exponent moves the power to the denominator."
 >}}
-
-## Key terms
-
-**rational exponent** — an exponent that is a fraction; $a^{1/n} = \sqrt[n]{a}$
-and $a^{m/n} = \left(\sqrt[n]{a}\right)^m = \sqrt[n]{a^m}$, connecting exponent
-notation to radical notation. **negative rational exponent** — a negative
-fractional exponent, rewritten with a positive exponent using
-$a^{-m/n} = \tfrac{1}{a^{m/n}}$.
 
 ---
 

@@ -910,6 +910,19 @@ $-0.1 > -0.8$.
   hint="Compare the tenths digits the same way you would compare negative integers — the digit closer to zero belongs to the greater number."
 >}}
 
+## Key terms
+
+**square** — the result $n^2$ of multiplying a number $n$ by itself.
+**square root** — a number whose square is $m$; every positive number has a
+positive and a negative square root. **principal square root** — the
+positive square root of a number, denoted by the radical sign $\sqrt{m}$.
+**rational number** — a number of the form $\tfrac{p}{q}$, where $p$ and $q$
+are integers and $q \neq 0$; its decimal form stops or repeats. **irrational
+number** — a number that cannot be written as the ratio of two integers; its
+decimal form does not stop and does not repeat. **real number** — a number
+that is either rational or irrational. **equivalent decimals** — two
+decimals that convert to equivalent fractions.
+
 ## Practice
 
 ### Simplify expressions with square roots
@@ -1015,19 +1028,6 @@ not a real number
   answerDisplay="$0.91 > 0.901$"
   hint="Write $0.91$ as $0.910$ so both numbers have three decimal digits, then compare as whole numbers."
 >}}
-
-## Key terms
-
-**square** — the result $n^2$ of multiplying a number $n$ by itself.
-**square root** — a number whose square is $m$; every positive number has a
-positive and a negative square root. **principal square root** — the
-positive square root of a number, denoted by the radical sign $\sqrt{m}$.
-**rational number** — a number of the form $\tfrac{p}{q}$, where $p$ and $q$
-are integers and $q \neq 0$; its decimal form stops or repeats. **irrational
-number** — a number that cannot be written as the ratio of two integers; its
-decimal form does not stop and does not repeat. **real number** — a number
-that is either rational or irrational. **equivalent decimals** — two
-decimals that convert to equivalent fractions.
 
 ---
 

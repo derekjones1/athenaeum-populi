@@ -1002,6 +1002,20 @@ true.
   hint="Substitute $y = 0$ into the equation and solve for $x$."
 >}}
 
+## Key terms
+
+**rectangular coordinate system** — a grid formed by a horizontal
+$x$-axis and a vertical $y$-axis, used to show the relationship between two
+variables. **quadrant** — one of the four regions the $x$-axis and
+$y$-axis divide the plane into, numbered I through IV counterclockwise
+starting from the upper right. **ordered pair** — a pair of numbers
+$(x, y)$ that gives the coordinates of a point in a rectangular coordinate
+system. **origin** — the point $(0, 0)$, where the $x$-axis and $y$-axis
+intersect. **linear equation** — an equation of the form $Ax + By = C$,
+where $A$ and $B$ are not both zero. **solution to a linear equation in
+two variables** — an ordered pair $(x, y)$ that makes the equation a true
+statement when substituted in for $x$ and $y$.
+
 ## Practice
 
 ### Plot points on a rectangular coordinate system
@@ -1311,20 +1325,6 @@ no
   answerDisplay="$(3, 2)$"
   hint="Substitute $3$ for $x$: $-3 + 5$."
 >}}
-
-## Key terms
-
-**rectangular coordinate system** — a grid formed by a horizontal
-$x$-axis and a vertical $y$-axis, used to show the relationship between two
-variables. **quadrant** — one of the four regions the $x$-axis and
-$y$-axis divide the plane into, numbered I through IV counterclockwise
-starting from the upper right. **ordered pair** — a pair of numbers
-$(x, y)$ that gives the coordinates of a point in a rectangular coordinate
-system. **origin** — the point $(0, 0)$, where the $x$-axis and $y$-axis
-intersect. **linear equation** — an equation of the form $Ax + By = C$,
-where $A$ and $B$ are not both zero. **solution to a linear equation in
-two variables** — an ordered pair $(x, y)$ that makes the equation a true
-statement when substituted in for $x$ and $y$.
 
 ---
 

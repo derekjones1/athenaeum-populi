@@ -522,6 +522,13 @@ $\text{\textdollar}12{,}000$? $\tfrac{3}{4} \cdot 16{,}000
   hint="Let f be the number of flats to fill the whole garden. Translate to $14 = \tfrac{2}{3}f$, then multiply both sides by the reciprocal of $\tfrac{2}{3}$."
 >}}
 
+## Key terms
+
+**Division Property of Equality** — for any numbers $a$, $b$, and $c$ with
+$c \neq 0$: if $a = b$, then $\tfrac{a}{c} = \tfrac{b}{c}$. **Multiplication
+Property of Equality** — for any numbers $a$, $b$, and $c$: if $a = b$, then
+$ac = bc$.
+
 ## Practice
 
 ### Solve equations using the Division and Multiplication Properties of Equality
@@ -582,13 +589,6 @@ $\text{\textdollar}12{,}000$? $\tfrac{3}{4} \cdot 16{,}000
   answerDisplay="\$195,000"
   hint="Let $s$ be the selling price. Translate to $\tfrac{6}{100}s = 11{,}700$, then multiply both sides by $\tfrac{100}{6}$."
 >}}
-
-## Key terms
-
-**Division Property of Equality** — for any numbers $a$, $b$, and $c$ with
-$c \neq 0$: if $a = b$, then $\tfrac{a}{c} = \tfrac{b}{c}$. **Multiplication
-Property of Equality** — for any numbers $a$, $b$, and $c$: if $a = b$, then
-$ac = bc$.
 
 ---
 

@@ -1029,6 +1029,22 @@ substitution
 elimination
 {{< /multiplechoice >}}
 
+## Key terms
+
+**system of linear equations** — two or more linear equations grouped
+together. **solution of a system of equations** — an ordered pair $(x,y)$
+that makes all the equations in the system true. **coincident lines** —
+lines with the same slope and the same $y$-intercept; they graph as a
+single line. **consistent system** — a system of equations with at least
+one solution. **inconsistent system** — a system of equations with no
+solution. **independent equations** — two equations with different
+solutions (intersecting or parallel lines). **dependent equations** — two
+equations whose solutions are identical (coincident lines). **substitution
+method** — solving one equation of a system for a variable, then replacing
+that variable with the resulting expression in the other equation.
+**elimination method** — adding two equations (after multiplying by
+constants if necessary) so that one variable cancels out.
+
 ## Practice
 
 ### Determine whether an ordered pair is a solution of a system of equations
@@ -1184,22 +1200,6 @@ elimination
 substitution
 elimination
 {{< /multiplechoice >}}
-
-## Key terms
-
-**system of linear equations** — two or more linear equations grouped
-together. **solution of a system of equations** — an ordered pair $(x,y)$
-that makes all the equations in the system true. **coincident lines** —
-lines with the same slope and the same $y$-intercept; they graph as a
-single line. **consistent system** — a system of equations with at least
-one solution. **inconsistent system** — a system of equations with no
-solution. **independent equations** — two equations with different
-solutions (intersecting or parallel lines). **dependent equations** — two
-equations whose solutions are identical (coincident lines). **substitution
-method** — solving one equation of a system for a variable, then replacing
-that variable with the resulting expression in the other equation.
-**elimination method** — adding two equations (after multiplying by
-constants if necessary) so that one variable cancels out.
 
 ---
 

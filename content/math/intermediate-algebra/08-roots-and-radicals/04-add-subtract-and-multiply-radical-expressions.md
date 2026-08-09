@@ -539,6 +539,110 @@ Simplify: $\left(5 - 2 \sqrt{3}\right) \left(5 + 2 \sqrt{3}\right).$
   hint="Distribute the binomials carefully; if they are conjugates, the radical middle terms cancel."
 >}}
 
+## Practice
+
+### Add and Subtract Radical Expressions
+
+{{< fillin
+  question="Simplify: $\sqrt{27} - \sqrt{75}$"
+  answer="-2 \sqrt{3}"
+  answerForm="simplified-radical"
+  answerDisplay="$-2 \sqrt{3}$"
+  hint="Simplify each radical first, then combine the resulting like radicals."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt[3]{40} - \sqrt[3]{320}$"
+  answer="-2 \sqrt[3]{5}"
+  answerForm="simplified-radical"
+  answerDisplay="$-2 \sqrt[3]{5}$"
+  hint="Simplify each radical first, then combine the resulting like radicals."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{1}{2} \sqrt[4]{32} + \tfrac{2}{3} \sqrt[4]{162}$"
+  answer="3 \sqrt[4]{2}"
+  answerForm="simplified-radical"
+  answerDisplay="$3 \sqrt[4]{2}$"
+  hint="Simplify each radical first, multiply the fraction into the resulting coefficient, then combine the like radicals."
+>}}
+
+{{< fillin
+  question="Simplify: $3 \sqrt{128 y^{2}} + 4 y \sqrt{162} - 8 \sqrt{98 y^{2}}$"
+  answer="4 y \sqrt{2}"
+  answerForm="simplified-radical"
+  answerDisplay="$4 y \sqrt{2}$"
+  hint="Simplify each radical to a coefficient times $\sqrt{2}$, then combine the like radicals."
+>}}
+
+### Multiply Radical Expressions
+
+{{< fillin
+  question="Simplify: $\left(-2 \sqrt{3}\right) \left(3 \sqrt{18}\right)$"
+  answer="-18 \sqrt{6}"
+  answerForm="simplified-radical"
+  answerDisplay="$-18 \sqrt{6}$"
+  hint="Multiply the coefficients and multiply the radicands, then simplify the resulting radical."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(8 \sqrt[3]{4}\right) \left(-4 \sqrt[3]{18}\right)$"
+  answer="-64 \sqrt[3]{9}"
+  answerForm="simplified-radical"
+  answerDisplay="$-64 \sqrt[3]{9}$"
+  hint="Multiply the coefficients and multiply the radicands, then simplify the resulting radical."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(-2 \sqrt{7 z^{3}}\right) \left(3 \sqrt{14 z^{8}}\right)$"
+  answer="-42 z^{5} \sqrt{2 z}"
+  answerForm="simplified-radical"
+  answerDisplay="$-42 z^{5} \sqrt{2 z}$"
+  hint="Multiply the coefficients and multiply the radicands, then extract the largest perfect square factor."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(2 \sqrt[4]{8 y^{2}}\right) \left(-2 \sqrt[4]{12 y^{3}}\right)$"
+  answer="-8 y \sqrt[4]{6 y}"
+  answerForm="simplified-radical"
+  answerDisplay="$-8 y \sqrt[4]{6 y}$"
+  hint="Multiply the coefficients and multiply the radicands, then extract the largest fourth-power factor."
+>}}
+
+### Use Polynomial Multiplication to Multiply Radical Expressions
+
+{{< fillin
+  question="Simplify: $\sqrt{7} \left(5 + 2 \sqrt{7}\right)$"
+  answer="14 + 5 \sqrt{7}"
+  answerForm="expanded simplified-radical"
+  answerDisplay="$14 + 5 \sqrt{7}$"
+  hint="Distribute $\sqrt{7}$ across each term, then simplify any resulting radical."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt[3]{6} \left(4 + \sqrt[3]{18}\right)$"
+  answer="4 \sqrt[3]{6} + 3 \sqrt[3]{4}"
+  answerForm="expanded simplified-radical"
+  answerDisplay="$4 \sqrt[3]{6} + 3 \sqrt[3]{4}$"
+  hint="Distribute $\sqrt[3]{6}$ across each term, then simplify any resulting radical."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(9 - 3 \sqrt{2}\right) \left(6 + 4 \sqrt{2}\right)$"
+  answer="30 + 18 \sqrt{2}"
+  answerForm="expanded simplified-radical"
+  answerDisplay="$30 + 18 \sqrt{2}$"
+  hint="Use FOIL to multiply the binomials, simplify each radical term, then combine like terms."
+>}}
+
+{{< fillin
+  question="Simplify: $\left(\sqrt[3]{x} - 3\right) \left(\sqrt[3]{x} + 1\right)$"
+  answer="\sqrt[3]{x^{2}} - 2 \sqrt[3]{x} - 3"
+  answerForm="expanded simplified-radical"
+  answerDisplay="$\sqrt[3]{x^{2}} - 2 \sqrt[3]{x} - 3$"
+  hint="Use FOIL to multiply the binomials, then combine like terms."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 8.4: Add, Subtract, and Multiply Radical Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/8-4-add-subtract-and-multiply-radical-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, self-check reflection, and end-of-section exercise bank; and converted the source Try It practice into interactive exercises.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 8.4: Add, Subtract, and Multiply Radical Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/8-4-add-subtract-and-multiply-radical-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; and adapted selected end-of-section exercises into an interactive Practice block.</small>

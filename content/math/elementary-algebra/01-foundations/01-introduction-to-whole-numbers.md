@@ -622,6 +622,20 @@ Multiplying the factors: $\text{LCM}(24, 36) = 2 \cdot 2 \cdot 2 \cdot 3
   hint="$24 = 2 \cdot 2 \cdot 2 \cdot 3$ and $32 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$. Match as many common factors of $2$ as both numbers share, then bring down every column."
 >}}
 
+## Key terms
+
+**counting numbers** — the numbers $1, 2, 3, \dots$, also called natural
+numbers. **whole numbers** — the counting numbers together with $0$.
+**rounding** — approximating a number to a specific place value.
+**multiple of a number** — a number that is the product of a counting
+number and $n$. **divisible** — $m$ is divisible by $n$ if $m$ is a
+multiple of $n$. **factors** — numbers whose product is a given number.
+**prime number** — a counting number greater than $1$ whose only factors
+are $1$ and itself. **composite number** — a counting number that is not
+prime. **prime factorization** — the product of prime numbers that equals
+a given number. **least common multiple (LCM)** — the smallest number that
+is a multiple of two given numbers.
+
 ## Practice
 
 ### Use place value with whole numbers
@@ -689,20 +703,6 @@ divisible by 3, 5, and 6
   answer="440"
   hint="$55 = 5 \cdot 11$ and $88 = 2 \cdot 2 \cdot 2 \cdot 11$. Match the common $11$ in one column, then bring down every column."
 >}}
-
-## Key terms
-
-**counting numbers** — the numbers $1, 2, 3, \dots$, also called natural
-numbers. **whole numbers** — the counting numbers together with $0$.
-**rounding** — approximating a number to a specific place value.
-**multiple of a number** — a number that is the product of a counting
-number and $n$. **divisible** — $m$ is divisible by $n$ if $m$ is a
-multiple of $n$. **factors** — numbers whose product is a given number.
-**prime number** — a counting number greater than $1$ whose only factors
-are $1$ and itself. **composite number** — a counting number that is not
-prime. **prime factorization** — the product of prime numbers that equals
-a given number. **least common multiple (LCM)** — the smallest number that
-is a multiple of two given numbers.
 
 ---
 

@@ -235,9 +235,9 @@ $$
 \end{array}
 $$
 
-{{< fillin question="Write the standard form of the equation of the circle with radius $6$ and center $(0,0)$." answer="x^2+y^2=36" answerDisplay="$x^2+y^2=36$" hint="Use $(x-h)^2+(y-k)^2=r^2$." >}}
+{{< fillin question="Write the standard form of the equation of the circle with radius $6$ and center $(0,0)$." answer="x^2+y^2=36" answerForm="circle-standard-form" answerDisplay="$x^2+y^2=36$" hint="Use $(x-h)^2+(y-k)^2=r^2$." >}}
 
-{{< fillin question="Write the standard form of the equation of the circle with radius $8$ and center $(0,0)$." answer="x^2+y^2=64" answerDisplay="$x^2+y^2=64$" hint="Use $(x-h)^2+(y-k)^2=r^2$." >}}
+{{< fillin question="Write the standard form of the equation of the circle with radius $8$ and center $(0,0)$." answer="x^2+y^2=64" answerForm="circle-standard-form" answerDisplay="$x^2+y^2=64$" hint="Use $(x-h)^2+(y-k)^2=r^2$." >}}
 
 In the last example, the center was $(0,0)$. Notice what happened to the
 equation. Whenever the center is $(0,0)$, the standard form becomes
@@ -256,9 +256,9 @@ $$
 \end{array}
 $$
 
-{{< fillin question="Write the standard form of the equation of the circle with radius $7$ and center $(2,-4)$." answer="(x-2)^2+(y+4)^2=49" answerDisplay="$(x-2)^2+(y+4)^2=49$" hint="Substitute the center and radius in standard form." >}}
+{{< fillin question="Write the standard form of the equation of the circle with radius $7$ and center $(2,-4)$." answer="(x-2)^2+(y+4)^2=49" answerForm="circle-standard-form" answerDisplay="$(x-2)^2+(y+4)^2=49$" hint="Substitute the center and radius in standard form." >}}
 
-{{< fillin question="Write the standard form of the equation of the circle with radius $9$ and center $(-3,-5)$." answer="(x+3)^2+(y+5)^2=81" answerDisplay="$(x+3)^2+(y+5)^2=81$" hint="Substitute the center and radius in standard form." >}}
+{{< fillin question="Write the standard form of the equation of the circle with radius $9$ and center $(-3,-5)$." answer="(x+3)^2+(y+5)^2=81" answerForm="circle-standard-form" answerDisplay="$(x+3)^2+(y+5)^2=81$" hint="Substitute the center and radius in standard form." >}}
 
 In the next example, the radius is not given. To calculate the radius, we use
 the Distance Formula with the two given points.
@@ -292,9 +292,9 @@ $$
 \end{array}
 $$
 
-{{< fillin question="Write the standard form of the equation of the circle with center $(2,1)$ that also contains the point $(-2,-2)$." answer="(x-2)^2+(y-1)^2=25" answerDisplay="$(x-2)^2+(y-1)^2=25$" hint="First use the Distance Formula to find the radius." >}}
+{{< fillin question="Write the standard form of the equation of the circle with center $(2,1)$ that also contains the point $(-2,-2)$." answer="(x-2)^2+(y-1)^2=25" answerForm="circle-standard-form" answerDisplay="$(x-2)^2+(y-1)^2=25$" hint="First use the Distance Formula to find the radius." >}}
 
-{{< fillin question="Write the standard form of the equation of the circle with center $(7,1)$ that also contains the point $(-1,-5)$." answer="(x-7)^2+(y-1)^2=100" answerDisplay="$(x-7)^2+(y-1)^2=100$" hint="First use the Distance Formula to find the radius." >}}
+{{< fillin question="Write the standard form of the equation of the circle with center $(7,1)$ that also contains the point $(-1,-5)$." answer="(x-7)^2+(y-1)^2=100" answerForm="circle-standard-form" answerDisplay="$(x-7)^2+(y-1)^2=100$" hint="First use the Distance Formula to find the radius." >}}
 
 ## Graph a Circle
 
@@ -421,13 +421,47 @@ above, below, left, and right of it, and draw the circle.
 
 {{< fillin question="Find the center and radius of $x^2+y^2-12y+11=0$. Enter the center and radius, separated by a comma." answer="(0,6),5" answerDisplay="center $(0,6)$; radius $5$" hint="Complete the square for the $y$-terms." >}}
 
-**Key terms.** A **conic** is a curve formed when a plane intersects a double
+## Key terms
+
+A **conic** is a curve formed when a plane intersects a double
 cone. Each half of a double cone is a **nappe**. A **circle** is all points in
 a plane a fixed distance from a given point; that point is the **center**, and
 the fixed distance is the **radius**. The **standard form of the equation of a
 circle** is $(x-h)^2+(y-k)^2=r^2$, and the **general form of the equation of a
 circle** is $x^2+y^2+ax+by+c=0$.
 
+## Practice
+
+### Use the Distance Formula
+
+{{< fillin question="Use the Distance Formula to find the distance between the points $(2,0)$ and $(5,4)$." answer="5" answerDisplay="$5$" hint="Substitute the two points into $d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$." >}}
+
+{{< fillin question="Use the Distance Formula to find the distance between the points $(-3,-5)$ and $(0,1)$. Enter the exact, simplified-radical form." answer="3\sqrt{5}" answerForm="simplified-radical" answerDisplay="$3\sqrt5\approx6.7$" hint="Simplify the radicand $9+36$, then pull out the largest perfect-square factor." >}}
+
+{{< fillin question="Use the Distance Formula to find the distance between the points $(3,-1)$ and $(1,7)$. Round the decimal approximation to the nearest tenth." answer="8.2" answerForm="decimal" answerDisplay="$\approx8.2$" hint="Find the exact distance, $\sqrt{68}$, then convert it to a decimal rounded to the nearest tenth." >}}
+
+### Use the Midpoint Formula
+
+{{< fillin question="Use the Midpoint Formula to find the midpoint of the line segment whose endpoints are $(0,-5)$ and $(4,-3)$." answer="(2,-4)" answerDisplay="$(2,-4)$" hint="Average the $x$-coordinates and then the $y$-coordinates." >}}
+
+{{< fillin question="Use the Midpoint Formula to find the midpoint of the line segment whose endpoints are $(3,-1)$ and $(4,-2)$." answer="(3.5,-1.5)" answerDisplay="$(3\tfrac{1}{2},-1\tfrac{1}{2})$" hint="Average the $x$-coordinates and then the $y$-coordinates." >}}
+
+### Write the Equation of a Circle in Standard Form
+
+{{< fillin question="Write the standard form of the equation of the circle with radius $7$ and center $(0,0)$." answer="x^2+y^2=49" answerForm="circle-standard-form" answerDisplay="$x^2+y^2=49$" hint="Use $(x-h)^2+(y-k)^2=r^2$ with $h=k=0$." >}}
+
+{{< fillin question="Write the standard form of the equation of the circle with radius $\sqrt{2}$ and center $(0,0)$." answer="x^2+y^2=2" answerForm="circle-standard-form" answerDisplay="$x^2+y^2=2$" hint="Substitute $r=\sqrt2$ into $(x-h)^2+(y-k)^2=r^2$ and simplify $(\sqrt2)^2$." >}}
+
+{{< fillin question="Write the standard form of the equation of the circle with center $(3,-2)$ that also contains the point $(3,6)$." answer="(x-3)^2+(y+2)^2=64" answerForm="circle-standard-form" answerDisplay="$(x-3)^2+(y+2)^2=64$" hint="First use the Distance Formula to find the radius from the center to the given point." >}}
+
+### Graph a Circle
+
+{{< fillin question="Find the center and radius of $x^2+y^2=64$. Enter the center as an ordered pair and then the radius, separated by a comma." answer="(0,0),8" answerDisplay="center $(0,0)$; radius $8$" hint="Rewrite as $(x-0)^2+(y-0)^2=8^2$ to read off the center and radius." >}}
+
+{{< fillin question="Find the center and radius of $x^2+y^2+6y+5=0$. Enter the center as an ordered pair and then the radius, separated by a comma." answer="(0,-3),2" answerDisplay="center $(0,-3)$; radius $2$" hint="Group the $y$-terms and complete the square; there is no $x$-term, so $h=0$." >}}
+
+{{< fillin question="Find the center and radius of $x^2+y^2-4x+10y-7=0$. Enter the center as an ordered pair and then the radius, separated by a comma." answer="(2,-5),6" answerDisplay="center $(2,-5)$; radius $6$" hint="Group the $x$-terms and $y$-terms and complete both squares." >}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 11.1](https://openstax.org/books/intermediate-algebra-2e/pages/11-1-distance-and-midpoint-formulas-circles) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: omitted the readiness quiz, practice exercise set, media links, and complex source figures; converted Try It exercises into interactive questions and described essential graphing actions in text.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 11.1](https://openstax.org/books/intermediate-algebra-2e/pages/11-1-distance-and-midpoint-formulas-circles) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: omitted the readiness quiz and media links and complex source figures; converted Try It exercises into interactive questions, described essential graphing actions in text, and adapted selected end-of-section exercises into an interactive Practice block.</small>

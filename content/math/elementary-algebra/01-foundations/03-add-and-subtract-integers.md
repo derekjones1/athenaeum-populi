@@ -874,6 +874,18 @@ $$
   hint="Simplify inside the parentheses first, then subtract left to right."
 >}}
 
+## Key terms
+
+**negative numbers** — numbers less than $0$; they lie to the left of zero
+on the number line. **integers** — the whole numbers and their opposites:
+$\dots -3, -2, -1, 0, 1, 2, 3 \dots$. **opposite** — the number that is the
+same distance from zero on the number line, but on the opposite side.
+**absolute value** — the distance between a number and $0$ on the number
+line, written $|n|$; always greater than or equal to zero. **neutral pair**
+— one positive counter and one negative counter together, with combined
+value zero. **subtraction property** — $a - b = a + (-b)$; subtracting a
+number is the same as adding its opposite.
+
 ## Practice
 
 ### Use negatives and opposites of integers
@@ -971,18 +983,6 @@ $=$
   answerForm="decimal"
   hint="Evaluate each power first, then subtract."
 >}}
-
-## Key terms
-
-**negative numbers** — numbers less than $0$; they lie to the left of zero
-on the number line. **integers** — the whole numbers and their opposites:
-$\dots -3, -2, -1, 0, 1, 2, 3 \dots$. **opposite** — the number that is the
-same distance from zero on the number line, but on the opposite side.
-**absolute value** — the distance between a number and $0$ on the number
-line, written $|n|$; always greater than or equal to zero. **neutral pair**
-— one positive counter and one negative counter together, with combined
-value zero. **subtraction property** — $a - b = a + (-b)$; subtracting a
-number is the same as adding its opposite.
 
 ---
 

@@ -757,6 +757,20 @@ subtraction, so we will distribute the $2$ first and then subtract.
   hint="Distribute the 8 across the first parentheses, and distribute -1 across the second, then combine like terms."
 >}}
 
+## Key terms
+
+**commutative property** — when adding or multiplying, changing the order
+of the numbers gives the same result. **associative property** — when
+adding or multiplying, changing the grouping of the numbers gives the same
+result. **additive identity** — the number $0$; adding $0$ to any number
+does not change its value. **multiplicative identity** — the number $1$;
+multiplying any number by $1$ does not change its value. **additive
+inverse** — the opposite of a number; a number and its additive inverse add
+to $0$. **multiplicative inverse** — the reciprocal of a number; a number
+and its multiplicative inverse multiply to $1$. **distributive property** —
+for real numbers $a, b, c$: $a(b + c) = ab + ac$; used to remove parentheses
+when simplifying expressions.
+
 ## Practice
 
 ### Use the commutative and associative properties
@@ -854,20 +868,6 @@ undefined
   answerForm="distributed"
   hint="Distribute both terms first, then combine like terms."
 >}}
-
-## Key terms
-
-**commutative property** — when adding or multiplying, changing the order
-of the numbers gives the same result. **associative property** — when
-adding or multiplying, changing the grouping of the numbers gives the same
-result. **additive identity** — the number $0$; adding $0$ to any number
-does not change its value. **multiplicative identity** — the number $1$;
-multiplying any number by $1$ does not change its value. **additive
-inverse** — the opposite of a number; a number and its additive inverse add
-to $0$. **multiplicative inverse** — the reciprocal of a number; a number
-and its multiplicative inverse multiply to $1$. **distributive property** —
-for real numbers $a, b, c$: $a(b + c) = ab + ac$; used to remove parentheses
-when simplifying expressions.
 
 ---
 

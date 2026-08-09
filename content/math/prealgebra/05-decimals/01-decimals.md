@@ -572,6 +572,14 @@ So $18.379$ rounded to the nearest whole number is $18$.
   hint="Look at the tenths digit, 5, to decide whether the ones digit rounds up."
 >}}
 
+## Key terms
+
+**decimal notation** — a way of writing a number as a whole-number part and
+a fractional part, where the fractional part has a denominator that is a
+power of ten. **equivalent decimals** — two decimals that convert to
+equivalent fractions; writing zeros at the end of a decimal does not change
+its value.
+
 ## Practice
 
 ### Name decimals
@@ -797,14 +805,6 @@ negative seventy-one and nine tenths
   answerDisplay="\$142"
   hint="Rounding to the nearest dollar is rounding to the ones place — look only at the tenths digit."
 >}}
-
-## Key terms
-
-**decimal notation** — a way of writing a number as a whole-number part and
-a fractional part, where the fractional part has a denominator that is a
-power of ten. **equivalent decimals** — two decimals that convert to
-equivalent fractions; writing zeros at the end of a decimal does not change
-its value.
 
 ---
 

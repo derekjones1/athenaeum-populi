@@ -297,6 +297,15 @@ $$
   hint="Rewrite the division as multiplication by the reciprocal $\tfrac{6m - 48}{12m - 36}$, then factor every part completely before dividing out common factors."
 >}}
 
+## Key terms
+
+**rational expression** — a fraction whose numerator and denominator are
+polynomials. **reciprocal** — the fraction obtained by interchanging the
+numerator and denominator; the reciprocal of $\tfrac{a}{b}$ is $\tfrac{b}{a}$.
+**complex fraction** — a fraction in which the numerator, the denominator, or
+both contain a fraction; a complex fraction represents the division of its top
+by its bottom.
+
 ## Practice
 
 ### Multiply rational expressions
@@ -342,15 +351,6 @@ $$
   answerDisplay="$\tfrac{t + 3}{2t(t - 3)}$"
   hint="Write the polynomial over $1$ and multiply by its reciprocal. Factor $t^2 - 9 = (t - 3)(t + 3)$ and $t^2 - 6t + 9 = (t - 3)^2$."
 >}}
-
-## Key terms
-
-**rational expression** — a fraction whose numerator and denominator are
-polynomials. **reciprocal** — the fraction obtained by interchanging the
-numerator and denominator; the reciprocal of $\tfrac{a}{b}$ is $\tfrac{b}{a}$.
-**complex fraction** — a fraction in which the numerator, the denominator, or
-both contain a fraction; a complex fraction represents the division of its top
-by its bottom.
 
 ---
 

@@ -447,6 +447,103 @@ $ac$ and sum is $b$, splitting the middle term, and factoring by grouping.
 variable to make a familiar factorable form. **prime trinomial** — a
 trinomial that cannot be factored over the integers.
 
+## Practice
+
+### Factor trinomials of the form $x^2+bx+c$
+
+{{< fillin
+  question="Factor $p^2+11p+30$."
+  answer="(p+5)(p+6)"
+  answerForm="factored"
+  hint="Find two numbers that multiply to $30$ and add to $11$."
+>}}
+
+{{< fillin
+  question="Factor $8-6x+x^2$."
+  answer="(x-2)(x-4)"
+  answerForm="factored"
+  hint="First write the trinomial in descending order, then find two numbers that multiply to $8$ and add to $-6$."
+>}}
+
+{{< multiplechoice
+  question="Factor $x^2-3xy-14y^2$. If it cannot be factored, choose “prime.”"
+  answer="prime"
+  hint="List the integer factor pairs of $-14$ and test whether any pair sums to $-3$."
+>}}
+prime
+$(x+2y)(x-7y)$
+$(x-2y)(x+7y)$
+{{< /multiplechoice >}}
+
+### Factor trinomials of the form $ax^2+bx+c$ using trial and error
+
+{{< fillin
+  question="Factor completely using trial and error: $p^3-8p^2-20p$."
+  answer="p(p-10)(p+2)"
+  answerForm="factored"
+  hint="Factor out $p$ first, then find two numbers that multiply to $-20$ and add to $-8$."
+>}}
+
+{{< fillin
+  question="Factor completely using trial and error: $2t^2+7t+5$."
+  answer="(2t+5)(t+1)"
+  answerForm="factored"
+  hint="Test factor pairs of $2t^2$ and $5$."
+>}}
+
+{{< fillin
+  question="Factor completely using trial and error: $6p^2-19pq+10q^2$."
+  answer="(2p-5q)(3p-2q)"
+  answerForm="factored"
+  hint="Use opposite signs and test factor pairs of $6$ and $10$."
+>}}
+
+### Factor trinomials of the form $ax^2+bx+c$ using the “ac” method
+
+{{< fillin
+  question="Factor using the ac method: $5n^2+21n+4$."
+  answer="(5n+1)(n+4)"
+  answerForm="factored"
+  hint="Find numbers that multiply to $20$ and add to $21$."
+>}}
+
+{{< fillin
+  question="Factor using the ac method: $4k^2-16k+15$."
+  answer="(2k-3)(2k-5)"
+  answerForm="factored"
+  hint="Find numbers that multiply to $60$ and add to $-16$."
+>}}
+
+{{< fillin
+  question="Factor using the ac method: $60y^2+290y-50$."
+  answer="10(6y-1)(y+5)"
+  answerForm="factored"
+  hint="Factor out $10$ first, then find numbers that multiply to $-30$ and add to $29$."
+>}}
+
+### Factor using substitution
+
+{{< fillin
+  question="Factor by substitution: $x^4-6x^2-7$."
+  answer="(x^2+1)(x^2-7)"
+  answerForm="factored"
+  hint="Let $u=x^2$."
+>}}
+
+{{< fillin
+  question="Factor by substitution: $(x-3)^2-5(x-3)-36$."
+  answer="(x-12)(x+1)"
+  answerForm="factored"
+  hint="Let $u=x-3$."
+>}}
+
+{{< fillin
+  question="Factor by substitution: $(3y-2)^2-(3y-2)-2$."
+  answer="(3y-4)(3y-1)"
+  answerForm="factored"
+  hint="Let $u=3y-2$."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 6.2: Factor Trinomials](https://openstax.org/books/intermediate-algebra-2e/pages/6-2-factor-trinomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked-example tables and factoring diagrams as accessible math and tables, omitted the Be Prepared quiz, media link, and end-of-section exercises, and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 6.2: Factor Trinomials](https://openstax.org/books/intermediate-algebra-2e/pages/6-2-factor-trinomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked-example tables and factoring diagrams as accessible math and tables, omitted the Be Prepared quiz and media link, converted the practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into an interactive Practice block.</small>

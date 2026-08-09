@@ -467,6 +467,14 @@ for $18$ hours.
   hint="Put the variable in the numerator and the given number in the denominator."
 >}}
 
+## Key terms
+
+**ratio** — a comparison of two numbers or quantities measured with the
+same unit, written $a$ to $b$, $\tfrac{a}{b}$, or $a:b$. **rate** — a
+comparison of two quantities measured in different units, usually written
+as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
+**unit price** — a unit rate that gives the price of one item.
+
 ## Practice
 
 ### Write a ratio as a fraction
@@ -611,14 +619,6 @@ for $18$ hours.
   answerDisplay="$\tfrac{y}{5x}$"
   hint="*The ratio of* names the numerator first, so $y$ goes on top and the whole quantity $5x$ goes on the bottom."
 >}}
-
-## Key terms
-
-**ratio** — a comparison of two numbers or quantities measured with the
-same unit, written $a$ to $b$, $\tfrac{a}{b}$, or $a:b$. **rate** — a
-comparison of two quantities measured in different units, usually written
-as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
-**unit price** — a unit rate that gives the price of one item.
 
 ---
 

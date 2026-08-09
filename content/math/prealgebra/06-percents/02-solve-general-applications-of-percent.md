@@ -343,6 +343,13 @@ of gas decreased $1.9\%$.
   hint="Find the decrease ($42{,}000 - 37{,}800 = 4{,}200$), then find what percent $4{,}200$ is of $42{,}000$."
 >}}
 
+## Key terms
+
+**base** — in a percent equation, the whole amount that a percent is taken
+of. **percent increase** — the amount of increase, expressed as a percent
+of the original amount. **percent decrease** — the amount of decrease,
+expressed as a percent of the original amount.
+
 ## Practice
 
 ### Translate and solve basic percent equations
@@ -460,13 +467,6 @@ of gas decreased $1.9\%$.
   answerDisplay="11%"
   hint="Find the decrease ($49{,}500 - 44{,}055 = 5{,}445$), then find what percent $5{,}445$ is of the original $49{,}500$."
 >}}
-
-## Key terms
-
-**base** — in a percent equation, the whole amount that a percent is taken
-of. **percent increase** — the amount of increase, expressed as a percent
-of the original amount. **percent decrease** — the amount of decrease,
-expressed as a percent of the original amount.
 
 ---
 

@@ -327,6 +327,17 @@ the $1$ carries: $3{,}978$ rounds to $4{,}000$.
   hint="The hundreds digit is 9 and the digit to its right is 5 — rounding up carries all the way over."
 >}}
 
+## Key terms
+
+**counting numbers** — the numbers $1, 2, 3, \dots$ used to count objects;
+also called natural numbers. **whole numbers** — the counting numbers
+together with zero: $0, 1, 2, 3, \dots$ **origin** — the point labeled $0$ on
+the number line. **coordinate** — the number paired with a point on the
+number line. **place value system** — our number system, in which the value
+of a digit depends on its position in the number. **period** — a group of
+three place values, separated by commas in a written number. **rounding** —
+the process of approximating a number to a given place value.
+
 ## Practice
 
 ### Identify counting numbers and whole numbers
@@ -588,17 +599,6 @@ One hundred forty-four thousand, ten
   answerDisplay="391,800"
   hint="The hundreds digit is 7 and the digit to its right is 9, so the hundreds digit goes up."
 >}}
-
-## Key terms
-
-**counting numbers** — the numbers $1, 2, 3, \dots$ used to count objects;
-also called natural numbers. **whole numbers** — the counting numbers
-together with zero: $0, 1, 2, 3, \dots$ **origin** — the point labeled $0$ on
-the number line. **coordinate** — the number paired with a point on the
-number line. **place value system** — our number system, in which the value
-of a digit depends on its position in the number. **period** — a group of
-three place values, separated by commas in a written number. **rounding** —
-the process of approximating a number to a given place value.
 
 ---
 

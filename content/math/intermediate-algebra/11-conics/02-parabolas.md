@@ -158,6 +158,7 @@ The square root of a negative number tells us the solutions are complex numbers.
 {{< fillin
   question="ⓐ Write $y=2x^2+4x+5$ in standard form and ⓑ use properties of standard form to graph the equation."
   answer="2(x+1)^2+3"
+  answerForm="vertex-form"
   answerDisplay="$y=2(x+1)^2+3$; vertex $(-1,3)$, axis $x=-1$, opens upward."
   hint="Factor 2 from the quadratic and linear terms, then complete the square."
 >}}
@@ -165,6 +166,7 @@ The square root of a negative number tells us the solutions are complex numbers.
 {{< fillin
   question="ⓐ Write $y=-2x^2+8x-7$ in standard form and ⓑ use properties of standard form to graph the equation."
   answer="-2(x-2)^2+1"
+  answerForm="vertex-form"
   answerDisplay="$y=-2(x-2)^2+1$; vertex $(2,1)$, axis $x=2$, opens downward."
   hint="Factor $-2$ from the quadratic and linear terms, then complete the square."
 >}}
@@ -348,6 +350,7 @@ The $y$-intercepts are $\left(0,-3+\tfrac{\sqrt2}{2}\right)$ and $\left(0,-3-\tf
 {{< fillin
   question="ⓐ Write $x=3y^2+6y+7$ in standard form and ⓑ use properties of the standard form to graph the equation."
   answer="3(y+1)^2+4"
+  answerForm="vertex-form"
   answerDisplay="$x=3(y+1)^2+4$; vertex $(4,-1)$, axis $y=-1$, opens right."
   hint="Factor 3 from the quadratic and linear terms, then complete the square."
 >}}
@@ -355,6 +358,7 @@ The $y$-intercepts are $\left(0,-3+\tfrac{\sqrt2}{2}\right)$ and $\left(0,-3-\tf
 {{< fillin
   question="ⓐ Write $x=-4y^2-16y-12$ in standard form and ⓑ use properties of the standard form to graph the equation."
   answer="-4(y+2)^2+4"
+  answerForm="vertex-form"
   answerDisplay="$x=-4(y+2)^2+4$; vertex $(4,-2)$, axis $y=-2$, opens left."
   hint="Factor $-4$ from the quadratic and linear terms, then complete the square."
 >}}
@@ -397,22 +401,146 @@ $$
 
 {{< fillin
   question="Find the equation of the parabolic arch formed in the foundation of the bridge shown. The arch is 20 feet high and 40 feet wide at the base. Write the equation in standard form, placing the lower-left point at the origin."
-  answer="-1/20(x-20)^2+20"
+  answer="-\frac{1}{20}(x-20)^2+20"
+  answerForm="vertex-form"
   answerDisplay="$y=-\tfrac{1}{20}(x-20)^2+20$"
   hint="The vertex is halfway across the 40-foot base and 20 feet high."
 >}}
 
 {{< fillin
   question="Find the equation of the parabolic arch formed in the foundation of the bridge shown. The arch is 5 feet high and 10 feet wide at the base. Write the equation in standard form, placing the lower-left point at the origin."
-  answer="-1/5(x-5)^2+5"
+  answer="-\frac{1}{5}(x-5)^2+5"
+  answerForm="vertex-form"
   answerDisplay="$y=-\tfrac{1}{5}(x-5)^2+5$"
   hint="The vertex is halfway across the 10-foot base and 5 feet high."
 >}}
 
-**Key terms.** A **parabola** is all points in a plane that are the same
+## Key terms
+
+A **parabola** is all points in a plane that are the same
 distance from a fixed point and a fixed line. The fixed point is the
 **focus**, and the fixed line is the **directrix**.
 
+## Practice
+
+### Graph vertical parabolas
+
+{{< multiplechoice
+  question="Determine whether the parabola $y=-x^2+4x-3$ opens upward or downward."
+  answer="downward"
+  hint="Look at the sign of the coefficient of $x^2$."
+>}}
+upward
+downward
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Find the axis of symmetry of the parabola $y=-x^2+4x-3$."
+  answer="x=2"
+  answerDisplay="$x=2$"
+  hint="Use $x=-\tfrac{b}{2a}$."
+>}}
+
+{{< fillin
+  question="Find the vertex of the parabola $y=-x^2+4x-3$, as an ordered pair."
+  answer="(2,1)"
+  answerDisplay="$(2,1)$"
+  hint="Substitute the axis-of-symmetry value back into the equation to find $y$."
+>}}
+
+{{< fillin
+  question="Find the x-intercepts of the parabola $y=-x^2+4x-3$. Enter the intercept with the smaller x-value first, separated by a comma."
+  answer="(1,0),(3,0)"
+  answerDisplay="$(1,0),\ (3,0)$"
+  hint="Set $y=0$ and factor the quadratic."
+>}}
+
+{{< multiplechoice
+  question="Write $y=-x^2+2x-4$ in standard form."
+  answer="$y=-(x-1)^2-3$"
+  hint="Factor $-1$ from the quadratic and linear terms, then complete the square — and remember that the $+1$ you add inside the parentheses is really $-1$ once the factor is distributed back."
+>}}
+$y=-(x-1)^2-3$
+$y=-(x-1)^2-5$
+$y=-(x+1)^2-3$
+$y=(x-1)^2-3$
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="What is the vertex of the parabola $y=-x^2+2x-4$?"
+  answer="(1,-3)"
+  answerDisplay="$(1,-3)$"
+  hint="Write the equation in standard form $y=a(x-h)^2+k$, then read off $(h,k)$."
+>}}
+
+### Graph horizontal parabolas
+
+{{< multiplechoice
+  question="Determine whether the parabola $x=-y^2-2y+3$ opens to the left or to the right."
+  answer="left"
+  hint="Look at the sign of the coefficient of $y^2$."
+>}}
+left
+right
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Find the axis of symmetry of the parabola $x=-y^2-2y+3$."
+  answer="y=-1"
+  answerDisplay="$y=-1$"
+  hint="Use $y=-\tfrac{b}{2a}$."
+>}}
+
+{{< fillin
+  question="Find the vertex of the parabola $x=-y^2-2y+3$, as an ordered pair."
+  answer="(4,-1)"
+  answerDisplay="$(4,-1)$"
+  hint="Substitute the axis-of-symmetry value back into the equation to find $x$."
+>}}
+
+{{< fillin
+  question="Find the y-intercepts of the parabola $x=-y^2-2y+3$. Enter the intercept with the smaller y-value first, separated by a comma."
+  answer="(0,-3),(0,1)"
+  answerDisplay="$(0,-3),\ (0,1)$"
+  hint="Set $x=0$ and factor the quadratic."
+>}}
+
+{{< multiplechoice
+  question="Write $x=y^2+4y-5$ in standard form."
+  answer="$x=(y+2)^2-9$"
+  hint="Complete the square on the $y$-terms: add $4$ inside the parentheses and subtract it from the constant."
+>}}
+$x=(y+2)^2-9$
+$x=(y+2)^2-1$
+$x=(y-2)^2-9$
+$x=(y+2)^2+9$
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="What is the vertex of the parabola $x=y^2+4y-5$?"
+  answer="(-9,-2)"
+  answerDisplay="$(-9,-2)$"
+  hint="Write the equation in standard form $x=a(y-k)^2+h$, then read off $(h,k)$."
+>}}
+
+### Solve applications with parabolas
+
+{{< fillin
+  question="Find the equation of the parabolic arch formed in the foundation of a bridge that is 15 feet high and 30 feet wide at the base. Write the equation in standard form, placing the lower-left point at the origin."
+  answer="-\frac{1}{15}(x-15)^2+15"
+  answerForm="vertex-form"
+  answerDisplay="$y=-\tfrac{1}{15}(x-15)^2+15$"
+  hint="The vertex is halfway across the 30-foot base and 15 feet high."
+>}}
+
+{{< fillin
+  question="Find the equation of the parabolic arch formed in the foundation of a bridge that is 90 feet high and 60 feet wide at the base. Write the equation in standard form, placing the lower-left point at the origin."
+  answer="-\frac{1}{10}(x-30)^2+90"
+  answerForm="vertex-form"
+  answerDisplay="$y=-\tfrac{1}{10}(x-30)^2+90$"
+  hint="The vertex is halfway across the 60-foot base and 90 feet high."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 11.2](https://openstax.org/books/intermediate-algebra-2e/pages/11-2-parabolas) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: omitted readiness quizzes, practice sets, self-checks, media links, and complex source figures; converted Try It problems to interactive questions and described source figures in words.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 11.2](https://openstax.org/books/intermediate-algebra-2e/pages/11-2-parabolas) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: omitted readiness quizzes, self-checks, media links, and complex source figures; converted Try It problems to interactive questions, described source figures in words, and adapted selected end-of-section exercises into an interactive Practice block.</small>

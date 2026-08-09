@@ -535,6 +535,16 @@ the wind is 18 mph.
   hint="Let j = the jet's speed in still air and w = the wind's speed. The system is $5(j + w) = 1{,}325$ and $5(j - w) = 1{,}035$. Solve for w."
 >}}
 
+## Key terms
+
+**complementary angles** — two angles whose measures add to $90$ degrees;
+each is called the *complement* of the other. **supplementary angles** —
+two angles whose measures add to $180$ degrees; each is called the
+*supplement* of the other. **tailwind** — a wind current blowing in the
+same direction a plane is flying, so it increases the plane's actual speed
+to $j + w$. **headwind** — a wind current blowing against the direction a
+plane is flying, so it decreases the plane's actual speed to $j - w$.
+
 ## Practice
 
 ### Translate to a system of equations
@@ -603,16 +613,6 @@ the wind is 18 mph.
   answerDisplay="$240$ mph for the jet; $28$ mph for the wind"
   hint="Let $j$ be the jet's speed and $w$ the wind's speed. Use $4(j+w)=1{,}072$ and $4(j-w)=848$, then add the equations."
 >}}
-
-## Key terms
-
-**complementary angles** — two angles whose measures add to $90$ degrees;
-each is called the *complement* of the other. **supplementary angles** —
-two angles whose measures add to $180$ degrees; each is called the
-*supplement* of the other. **tailwind** — a wind current blowing in the
-same direction a plane is flying, so it increases the plane's actual speed
-to $j + w$. **headwind** — a wind current blowing against the direction a
-plane is flying, so it decreases the plane's actual speed to $j - w$.
 
 ---
 

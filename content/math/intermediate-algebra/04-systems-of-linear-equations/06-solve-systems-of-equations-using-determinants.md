@@ -434,6 +434,22 @@ yes
 no
 {{< /multiplechoice >}}
 
+## Key terms
+
+**square matrix** — a matrix that has the same number of rows and columns.
+**determinant** — a real number associated with a square matrix; for
+$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$, its value is
+$\begin{vmatrix} a & b \\ c & d \end{vmatrix}=ad-bc$. **minor of an entry** —
+in a $3\times 3$ determinant, the $2\times 2$ determinant found by
+eliminating the row and column that contain the entry. **Cramer's Rule** — a
+method of solving a system of equations using the determinant of the
+coefficient matrix, $D$, and the determinants $D_x$, $D_y$ (and $D_z$)
+formed by replacing one column of coefficients with the constants;
+$x=\tfrac{D_x}{D}$, and so on. **collinear points** — points that lie on the
+same line; three points are collinear if and only if the $3\times 3$
+determinant formed from their coordinates and a column of $1\text{s}$ is
+zero.
+
 ## Practice
 
 ### Evaluate the determinant of a $2 \times 2$ matrix
@@ -543,22 +559,6 @@ no
 yes
 no
 {{< /multiplechoice >}}
-
-## Key terms
-
-**square matrix** — a matrix that has the same number of rows and columns.
-**determinant** — a real number associated with a square matrix; for
-$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$, its value is
-$\begin{vmatrix} a & b \\ c & d \end{vmatrix}=ad-bc$. **minor of an entry** —
-in a $3\times 3$ determinant, the $2\times 2$ determinant found by
-eliminating the row and column that contain the entry. **Cramer's Rule** — a
-method of solving a system of equations using the determinant of the
-coefficient matrix, $D$, and the determinants $D_x$, $D_y$ (and $D_z$)
-formed by replacing one column of coefficients with the constants;
-$x=\tfrac{D_x}{D}$, and so on. **collinear points** — points that lie on the
-same line; three points are collinear if and only if the $3\times 3$
-determinant formed from their coordinates and a column of $1\text{s}$ is
-zero.
 
 ---
 

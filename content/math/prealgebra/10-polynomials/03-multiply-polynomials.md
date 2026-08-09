@@ -501,6 +501,15 @@ column to the left. Add like terms to get the final product.
   hint="Put the trinomial on top, multiply it by each term of the binomial separately lining up like terms, then add the partial products."
 >}}
 
+## Key terms
+
+**FOIL method** — a shortcut for multiplying two binomials: multiply the
+**F**irst terms, the **O**uter terms, the **I**nner terms, and the **L**ast
+terms, then combine any like terms. **Vertical Method** — a way to multiply
+polynomials that lines up partial products in columns, the same way you
+multiply multi-digit whole numbers; it works for any two polynomials, not
+just binomials.
+
 ## Practice
 
 ### Multiply a polynomial by a monomial
@@ -604,15 +613,6 @@ column to the left. Add like terms to get the final product.
   answerDisplay="$2x^3 - 9x^2 - 17x - 6$"
   hint="Use either method. Multiply the trinomial by $2x$ and by $1$, then combine the like terms."
 >}}
-
-## Key terms
-
-**FOIL method** — a shortcut for multiplying two binomials: multiply the
-**F**irst terms, the **O**uter terms, the **I**nner terms, and the **L**ast
-terms, then combine any like terms. **Vertical Method** — a way to multiply
-polynomials that lines up partial products in columns, the same way you
-multiply multi-digit whole numbers; it works for any two polynomials, not
-just binomials.
 
 ---
 

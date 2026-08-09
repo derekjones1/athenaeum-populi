@@ -604,6 +604,17 @@ The amount the wife earns is $2h - 16{,}000 = 2(42{,}000) - 16{,}000 =
   hint="Let p = the median price in 1964. The 2014 price $(280,900)$ is 10,700 more than 14 times p, so $280{,}900 = 14p + 10{,}700$."
 >}}
 
+## Key terms
+
+**solution of an equation** — a value of a variable that makes a true
+statement when substituted into the equation. **consecutive integers** —
+integers that immediately follow each other, each one more than the
+previous ($n$, $n+1$, $n+2$, ...). **consecutive even integers** — even
+integers that immediately follow each other, each two more than the
+previous ($n$, $n+2$, $n+4$, ...). **consecutive odd integers** — odd
+integers that immediately follow each other, following the same "add two"
+pattern as consecutive even integers.
+
 ## Practice
 
 ### Approach word problems with a positive attitude
@@ -680,17 +691,6 @@ The amount the wife earns is $2h - 16{,}000 = 2(42{,}000) - 16{,}000 =
   answer="25, 26, 27"
   hint="Let $n =$ the smallest integer, so the next two are $n + 1$ and $n + 2$. Solve $n + (n + 1) + (n + 2) = 78$."
 >}}
-
-## Key terms
-
-**solution of an equation** — a value of a variable that makes a true
-statement when substituted into the equation. **consecutive integers** —
-integers that immediately follow each other, each one more than the
-previous ($n$, $n+1$, $n+2$, ...). **consecutive even integers** — even
-integers that immediately follow each other, each two more than the
-previous ($n$, $n+2$, $n+4$, ...). **consecutive odd integers** — odd
-integers that immediately follow each other, following the same "add two"
-pattern as consecutive even integers.
 
 ---
 

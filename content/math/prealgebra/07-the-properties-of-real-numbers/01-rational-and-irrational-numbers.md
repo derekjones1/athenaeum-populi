@@ -294,6 +294,14 @@ We can summarize the results in a table:
   hint="Whole numbers are non-negative integers. $\sqrt{121} = 11$ and $6$ both qualify; $-\sqrt{25} = -5$ and $-1$ are negative."
 >}}
 
+## Key terms
+
+**rational number** — a number that can be written as $\tfrac{p}{q}$, where
+$p$ and $q$ are integers and $q \neq 0$; its decimal form stops or repeats.
+**irrational number** — a number that cannot be written as the ratio of two
+integers; its decimal form neither stops nor repeats. **real number** — a
+number that is either rational or irrational.
+
 ## Practice
 
 ### Identify rational numbers and irrational numbers
@@ -396,14 +404,6 @@ irrational
   answer="6"
   hint="Check each one for a decimal that stops or repeats, or for a way to write it as a ratio of two integers."
 >}}
-
-## Key terms
-
-**rational number** — a number that can be written as $\tfrac{p}{q}$, where
-$p$ and $q$ are integers and $q \neq 0$; its decimal form stops or repeats.
-**irrational number** — a number that cannot be written as the ratio of two
-integers; its decimal form neither stops nor repeats. **real number** — a
-number that is either rational or irrational.
 
 ---
 

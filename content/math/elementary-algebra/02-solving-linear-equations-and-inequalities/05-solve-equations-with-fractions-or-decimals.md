@@ -369,6 +369,14 @@ Check this yourself by substituting $x = 9$ into the original equation.
   hint="Distribute the decimal across the parentheses and combine like terms first, then clear the decimals by multiplying by 100."
 >}}
 
+## Key terms
+
+**clearing the equation of fractions** — multiplying both sides of an
+equation by the least common denominator (LCD) of all its fractions so the
+resulting equivalent equation has no fractions. **clearing the equation of
+decimals** — multiplying both sides of an equation by an appropriate power
+of ten so the resulting equivalent equation has no decimals.
+
 ## Practice
 
 ### Solve equations with fraction coefficients
@@ -404,14 +412,6 @@ Check this yourself by substituting $x = 9$ into the original equation.
   answer="19"
   hint="Distribute $0.10$ first, combine the variable terms, and then isolate $n$."
 >}}
-
-## Key terms
-
-**clearing the equation of fractions** — multiplying both sides of an
-equation by the least common denominator (LCD) of all its fractions so the
-resulting equivalent equation has no fractions. **clearing the equation of
-decimals** — multiplying both sides of an equation by an appropriate power
-of ten so the resulting equivalent equation has no decimals.
 
 ---
 

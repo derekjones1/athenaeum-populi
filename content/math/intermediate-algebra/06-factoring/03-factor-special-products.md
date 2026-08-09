@@ -525,6 +525,86 @@ We’ll leave the check by multiplying to you.
 as a product of conjugates. **sum of cubes** — a binomial of the form
 $a^3+b^3$. **difference of cubes** — a binomial of the form $a^3-b^3$.
 
+## Practice
+
+### Factor perfect square trinomials
+
+{{< fillin
+  question="Factor: $16y^2+24y+9$."
+  answer="(4y+3)^2"
+  answerForm="factored"
+  answerDisplay="$(4y+3)^2$"
+  hint="The square roots of the first and last terms are $4y$ and $3$."
+>}}
+
+{{< fillin
+  question="Factor: $25n^2-120n+144$."
+  answer="(5n-12)^2"
+  answerForm="factored"
+  answerDisplay="$(5n-12)^2$"
+  hint="Check that $120n=2(5n)(12)$; the middle term is negative."
+>}}
+
+{{< fillin
+  question="Factor: $49x^2+28xy+4y^2$."
+  answer="(7x+2y)^2"
+  answerForm="factored"
+  answerDisplay="$(7x+2y)^2$"
+  hint="Write the first and last terms as squares of $7x$ and $2y$."
+>}}
+
+### Factor differences of squares
+
+{{< fillin
+  question="Factor: $25v^2-1$."
+  answer="(5v-1)(5v+1)"
+  answerForm="factored"
+  answerDisplay="$(5v-1)(5v+1)$"
+  hint="Write both terms as squares, then form the product of conjugates."
+>}}
+
+{{< fillin
+  question="Factor: $121x^2-144y^2$."
+  answer="(11x-12y)(11x+12y)"
+  answerForm="factored"
+  answerDisplay="$(11x-12y)(11x+12y)$"
+  hint="The square roots are $11x$ and $12y$."
+>}}
+
+{{< fillin
+  question="Factor: $x^2-16x+64-y^2$."
+  answer="(x-8-y)(x-8+y)"
+  answerForm="factored"
+  answerDisplay="$(x-8-y)(x-8+y)$"
+  hint="The first three terms form $(x-8)^2$; then factor the resulting difference of squares."
+>}}
+
+### Factor sums and differences of cubes
+
+{{< fillin
+  question="Factor: $x^3+125$."
+  answer="(x+5)(x^2-5x+25)"
+  answerForm="factored"
+  answerDisplay="$(x+5)(x^2-5x+25)$"
+  hint="Write $125$ as $5^3$ and use the sum of cubes pattern."
+>}}
+
+{{< fillin
+  question="Factor: $8y^3-125z^3$."
+  answer="(2y-5z)(4y^2+10yz+25z^2)"
+  answerForm="factored"
+  answerDisplay="$(2y-5z)(4y^2+10yz+25z^2)$"
+  hint="Write the terms as $(2y)^3$ and $(5z)^3$."
+>}}
+
+{{< fillin
+  question="Factor: $7k^3+56$."
+  answer="7(k+2)(k^2-2k+4)"
+  answerForm="factored"
+  answerDisplay="$7(k+2)(k^2-2k+4)$"
+  hint="First factor out the GCF $7$, leaving $k^3+8$."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 6.3: Factor Special Products](https://openstax.org/books/intermediate-algebra-2e/pages/6-3-factor-special-products) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked-example tables as accessible aligned math, omitted the Be Prepared quiz, media links, and end-of-section exercises, and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 6.3: Factor Special Products](https://openstax.org/books/intermediate-algebra-2e/pages/6-3-factor-special-products) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked-example tables as accessible aligned math, omitted the Be Prepared quiz and media links, converted the practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into an interactive Practice block.</small>

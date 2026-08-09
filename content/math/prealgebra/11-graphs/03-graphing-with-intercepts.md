@@ -1016,6 +1016,13 @@ equation, so it will be easiest to graph this line by plotting three points.
   hint="Substitute $x = 4$ into $y = -\tfrac{3}{4}x + 1$ and simplify."
 >}}
 
+## Key terms
+
+**intercept of a line** — a point where a line crosses an axis. **$x$-intercept**
+— the point $(a, 0)$ where a line crosses the $x$-axis; it occurs when $y$ is
+zero. **$y$-intercept** — the point $(0, b)$ where a line crosses the
+$y$-axis; it occurs when $x$ is zero.
+
 ## Practice
 
 ### Identify the intercepts on a graph
@@ -1304,13 +1311,6 @@ horizontal line
 plotting points
 intercepts
 {{< /multiplechoice >}}
-
-## Key terms
-
-**intercept of a line** — a point where a line crosses an axis. **$x$-intercept**
-— the point $(a, 0)$ where a line crosses the $x$-axis; it occurs when $y$ is
-zero. **$y$-intercept** — the point $(0, b)$ where a line crosses the
-$y$-axis; it occurs when $x$ is zero.
 
 ---
 

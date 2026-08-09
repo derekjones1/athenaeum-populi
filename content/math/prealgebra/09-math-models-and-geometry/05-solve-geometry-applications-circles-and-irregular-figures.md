@@ -247,6 +247,16 @@ $$A_{\text{figure}} \approx 10{,}769.84 \text{ square meters}$$
   hint="Area = trapezoid area ($\tfrac{1}{2}(6.5)(5.2 + 3.3)$) plus semicircle area ($\tfrac{1}{2}(3.14)(2.6)^2$). Add and round to the nearest hundredth."
 >}}
 
+## Key terms
+
+**radius** — the distance from the center of a circle to any point on the
+circle. **diameter** — the distance across a circle through its center,
+equal to twice the radius. **circumference** — the perimeter (distance
+around) a circle, $C = 2\pi r$ or $C = \pi d$. **irregular figure** — a
+figure that is not a standard geometric shape, whose area can often be
+found by splitting it into rectangles, triangles, trapezoids, and circles
+(or semicircles) and adding their areas.
+
 ## Practice
 
 ### Use the properties of circles
@@ -333,16 +343,6 @@ $$A_{\text{figure}} \approx 10{,}769.84 \text{ square meters}$$
   answerDisplay="$10.065$ square feet"
   hint="Two semicircles of radius $1.5$ together make one full circle, so add $(3.14)(1.5)^2$ to the rectangle's area."
 >}}
-
-## Key terms
-
-**radius** — the distance from the center of a circle to any point on the
-circle. **diameter** — the distance across a circle through its center,
-equal to twice the radius. **circumference** — the perimeter (distance
-around) a circle, $C = 2\pi r$ or $C = \pi d$. **irregular figure** — a
-figure that is not a standard geometric shape, whose area can often be
-found by splitting it into rectangles, triangles, trapezoids, and circles
-(or semicircles) and adding their areas.
 
 ---
 

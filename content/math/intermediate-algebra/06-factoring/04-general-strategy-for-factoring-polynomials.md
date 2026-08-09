@@ -327,6 +327,68 @@ $$
 
 **completely factored** — written as a product whose nonmonomial factors are prime. **general factoring strategy** — first factor out the GCF, then choose a method according to the number of terms and applicable special patterns, and finally check the factorization. **product of conjugates** — the factorization $(a-b)(a+b)$ of a difference of squares.
 
+## Practice
+
+### Recognize and use the appropriate method to factor a polynomial completely
+
+{{< fillin
+  question="Factor completely: $7b^2+7b-42$."
+  answer="7(b+3)(b-2)"
+  answerForm="factored"
+  answerDisplay="$7(b+3)(b-2)$"
+  hint="Factor out the GCF $7$ first, then undo FOIL on the remaining trinomial."
+>}}
+
+{{< fillin
+  question="Factor completely: $121r^2-s^2$."
+  answer="(11r-s)(11r+s)"
+  answerForm="factored"
+  answerDisplay="$(11r-s)(11r+s)$"
+  hint="Two squares subtracted — write it directly as a product of conjugates."
+>}}
+
+{{< fillin
+  question="Factor completely: $8x^3-27y^3$."
+  answer="(2x-3y)(4x^2+6xy+9y^2)"
+  answerForm="factored"
+  answerDisplay="$(2x-3y)(4x^2+6xy+9y^2)$"
+  hint="Binomial of cubes — apply the difference of cubes pattern $a^3-b^3=(a-b)(a^2+ab+b^2)$."
+>}}
+
+{{< fillin
+  question="Factor completely: $15pq-15p+12q-12$."
+  answer="3(5p+4)(q-1)"
+  answerForm="factored"
+  answerDisplay="$3(5p+4)(q-1)$"
+  hint="Take out the GCF $3$ first, then group the four remaining terms into pairs and factor out the common binomial."
+>}}
+
+{{< fillin
+  question="Factor completely: $9x^2-6xy+y^2-49$."
+  answer="(3x-y+7)(3x-y-7)"
+  answerForm="factored"
+  answerDisplay="$(3x-y+7)(3x-y-7)$"
+  hint="Group the first three terms as a perfect-square trinomial, then factor the resulting difference of squares."
+>}}
+
+{{< fillin
+  question="Factor completely: $(3x+1)^2-6(3x+1)+9$."
+  answer="(3x-2)^2"
+  answerForm="factored"
+  answerDisplay="$(3x-2)^2$"
+  hint="Let $u=3x+1$; the expression is $u^2-6u+9$, a perfect-square trinomial in $u$."
+>}}
+
+{{< multiplechoice
+  question="Factor completely: $4c^2+20cd+81d^2$. If it cannot be factored, choose “prime.”"
+  answer="prime"
+  hint="Check the trinomial-square pattern: the middle term would need to be $36cd$, not $20cd$, and no factor pair of $ac=324$ sums to $20$."
+>}}
+prime
+$(2c+9d)^2$
+$(2c-9d)^2$
+{{< /multiplechoice >}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 6.4: General Strategy for Factoring Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/6-4-general-strategy-for-factoring-polynomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recast the factoring-method chart as an accessible table, reformatted the worked-example tables as aligned math, omitted the end-of-section exercises, and converted the practice problems (“Try Its”) into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 6.4: General Strategy for Factoring Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/6-4-general-strategy-for-factoring-polynomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recast the factoring-method chart as an accessible table, reformatted the worked-example tables as aligned math, converted the practice problems (“Try Its”) into interactive exercises with instant feedback, and adapted selected end-of-section exercises into an interactive Practice block.</small>

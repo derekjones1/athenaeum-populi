@@ -477,6 +477,11 @@ write the percent as $33.\overline{3}\%$.
   hint="Divide 1 by 6 to get a repeating decimal, then write the exact value as a mixed-number percent, the same way $\tfrac{1}{3}$ becomes $33\tfrac{1}{3}\%$."
 >}}
 
+## Key terms
+
+**percent** — a ratio whose denominator is $100$; written with the symbol
+%.
+
 ## Practice
 
 ### Use the definition of percent
@@ -586,11 +591,6 @@ write the percent as $33.\overline{3}\%$.
   answerDisplay="35%"
   hint="Divide 7 by 20 to get the decimal, then move the decimal point two places to the right."
 >}}
-
-## Key terms
-
-**percent** — a ratio whose denominator is $100$; written with the symbol
-%.
 
 ---
 

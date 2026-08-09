@@ -267,6 +267,7 @@ $$\sqrt{\tfrac{9}{64}} = \tfrac{3}{8}.$$
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{25}{16}}$."
   answer="\tfrac{5}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{4}$"
   hint="Both $25$ and $16$ are perfect squares. What number squared gives $\tfrac{25}{16}$?"
 >}}
@@ -354,6 +355,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{19}{49}}$."
   answer="\tfrac{\sqrt{19}}{7}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{19}}{7}$"
   hint="The fraction has no common factors and $19$ has no perfect square factor. Use the Quotient Property and simplify $\sqrt{49}$."
 >}}
@@ -440,6 +442,15 @@ $$
   hint="Simplify the fraction in the radicand first: $\tfrac{50x^5 y^3}{72x^4 y} = \tfrac{25xy^2}{36}$. Then use the Quotient Property."
 >}}
 
+## Key terms
+
+**simplified square root** — a square root whose radicand contains no perfect
+square factors. **perfect square fraction** — a fraction in which both the
+numerator and the denominator are perfect squares. **Product Property of Square
+Roots** — for non-negative $a$ and $b$, $\sqrt{ab} = \sqrt{a} \cdot \sqrt{b}$.
+**Quotient Property of Square Roots** — for non-negative $a$ and $b$ with
+$b \neq 0$, $\sqrt{\tfrac{a}{b}} = \tfrac{\sqrt{a}}{\sqrt{b}}$.
+
 ## Practice
 
 ### Use the Product Property to simplify square roots
@@ -493,15 +504,6 @@ $$
   answerDisplay="$\tfrac{4x^3\sqrt{6x}}{11}$"
   hint="$121$ is already a perfect square. Rewrite $96x^7$ using its largest perfect square factor $16x^6$."
 >}}
-
-## Key terms
-
-**simplified square root** — a square root whose radicand contains no perfect
-square factors. **perfect square fraction** — a fraction in which both the
-numerator and the denominator are perfect squares. **Product Property of Square
-Roots** — for non-negative $a$ and $b$, $\sqrt{ab} = \sqrt{a} \cdot \sqrt{b}$.
-**Quotient Property of Square Roots** — for non-negative $a$ and $b$ with
-$b \neq 0$, $\sqrt{\tfrac{a}{b}} = \tfrac{\sqrt{a}}{\sqrt{b}}$.
 
 ---
 

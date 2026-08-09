@@ -615,6 +615,17 @@ fruit juice and $2$ quarts of club soda.
   hint="Water is 3 times the concentrate amount you just found."
 >}}
 
+## Key terms
+
+**system of linear equations** — two or more linear equations grouped
+together. **solution of a system of equations** — an ordered pair $(x, y)$
+that makes all the equations in the system true. **consistent system** — a
+system of equations with at least one solution. **inconsistent system** —
+a system of equations with no solution. **independent equations** — two
+equations with different solutions (intersecting or parallel lines).
+**dependent equations** — two equations whose solutions are identical
+(coincident lines).
+
 ## Practice
 
 ### Determine whether an ordered pair is a solution of a system of equations
@@ -688,17 +699,6 @@ infinitely many solutions, consistent, dependent
   answerDisplay="$50$ tulips and $300$ daffodils"
   hint="Let $t$ be the number of tulips and $d$ the number of daffodils; graph $t+d=350$ and $d=6t$, then read their intersection."
 >}}
-
-## Key terms
-
-**system of linear equations** — two or more linear equations grouped
-together. **solution of a system of equations** — an ordered pair $(x, y)$
-that makes all the equations in the system true. **consistent system** — a
-system of equations with at least one solution. **inconsistent system** —
-a system of equations with no solution. **independent equations** — two
-equations with different solutions (intersecting or parallel lines).
-**dependent equations** — two equations whose solutions are identical
-(coincident lines).
 
 ---
 

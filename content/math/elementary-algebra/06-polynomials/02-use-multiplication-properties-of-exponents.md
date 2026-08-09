@@ -438,6 +438,18 @@ $$
   hint="Multiply the coefficients $(\tfrac{2}{3} \cdot 12 = 8)$ and add the exponents on $r (5 + 6)$ and $s (1 + 7)$."
 >}}
 
+## Key terms
+
+**exponential notation** — $a^m$ means multiply $m$ factors of $a$; the base
+$a$ is used as a factor $m$ times. **Product Property for Exponents** — to
+multiply powers with like bases, add the exponents: $a^m \cdot a^n = a^{m+n}$.
+**Power Property for Exponents** — to raise a power to a power, multiply the
+exponents: $\left(a^m\right)^n = a^{m \cdot n}$. **Product to a Power
+Property for Exponents** — to raise a product to a power, raise each factor
+to that power: $(ab)^m = a^m b^m$. **monomial** — a one-term algebraic
+expression, such as $-12x^5$, that we can multiply by applying these
+properties of exponents.
+
 ## Practice
 
 ### Simplify expressions with exponents
@@ -585,18 +597,6 @@ $$
   answerDisplay="$\tfrac{1}{2}x^3 y^3$"
   hint="Multiply the coefficients $(\tfrac{2}{3} \cdot \tfrac{3}{4} = \tfrac{1}{2})$ and add the exponents on each variable."
 >}}
-
-## Key terms
-
-**exponential notation** — $a^m$ means multiply $m$ factors of $a$; the base
-$a$ is used as a factor $m$ times. **Product Property for Exponents** — to
-multiply powers with like bases, add the exponents: $a^m \cdot a^n = a^{m+n}$.
-**Power Property for Exponents** — to raise a power to a power, multiply the
-exponents: $\left(a^m\right)^n = a^{m \cdot n}$. **Product to a Power
-Property for Exponents** — to raise a product to a power, raise each factor
-to that power: $(ab)^m = a^m b^m$. **monomial** — a one-term algebraic
-expression, such as $-12x^5$, that we can multiply by applying these
-properties of exponents.
 
 ---
 

@@ -418,6 +418,19 @@ than $4q$." Translate the phrase into algebra: $4q - 3$.
   hint="First translate 'four times the number of quarters,' then apply 'eight less than' to that whole product."
 >}}
 
+## Key terms
+
+**variable** — a letter that represents a number whose value may change.
+**constant** — a number whose value always stays the same. **expression**
+— a number, a variable, or a combination of numbers and variables using
+operation symbols. **equation** — two expressions connected by an equal
+sign. **base** and **exponent** — in $a^n$, the base $a$ is the number
+being repeatedly multiplied, and the exponent $n$ tells how many times.
+**term** — a constant, or the product of a constant and one or more
+variables. **coefficient** — the constant that multiplies the variable in
+a term. **like terms** — terms that are either constants or have the same
+variables raised to the same powers.
+
 ## Practice
 
 ### Use variables and algebraic symbols
@@ -506,19 +519,6 @@ Thirty-six is not equal to nineteen.
   answer="c + 3"
   hint="'More than' means addition — add 3 to the number of classical CDs."
 >}}
-
-## Key terms
-
-**variable** — a letter that represents a number whose value may change.
-**constant** — a number whose value always stays the same. **expression**
-— a number, a variable, or a combination of numbers and variables using
-operation symbols. **equation** — two expressions connected by an equal
-sign. **base** and **exponent** — in $a^n$, the base $a$ is the number
-being repeatedly multiplied, and the exponent $n$ tells how many times.
-**term** — a constant, or the product of a constant and one or more
-variables. **coefficient** — the constant that multiplies the variable in
-a term. **like terms** — terms that are either constants or have the same
-variables raised to the same powers.
 
 ---
 

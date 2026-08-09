@@ -620,6 +620,21 @@ So $20\degree\text{C}$ is equivalent to $68\degree\text{F}$.
   hint="Substitute $10$ for $C$ in $F = \tfrac{9}{5}C + 32$."
 >}}
 
+## Key terms
+
+**U.S. system** — the system of measurement commonly used in the United
+States, using units such as inches, feet, yards, and miles for length;
+pounds and tons for weight; and cups, pints, quarts, and gallons for
+capacity. **metric system** — the system of measurement used by most
+countries, where units of length, mass, and capacity are related by powers
+of $10$ (kilo-, hecto-, deka-, deci-, centi-, milli-). **identity property
+of multiplication** — for any real number $a$, $a \cdot 1 = a$ and
+$1 \cdot a = a$; used to build unit conversion factors that equal $1$.
+**Fahrenheit** — the temperature scale used in the U.S. system, where water
+freezes at $32\degree\text{F}$ and boils at $212\degree\text{F}$.
+**Celsius** — the temperature scale used in the metric system, where water
+freezes at $0\degree\text{C}$ and boils at $100\degree\text{C}$.
+
 ## Practice
 
 ### Make unit conversions in the U.S. system
@@ -705,21 +720,6 @@ So $20\degree\text{C}$ is equivalent to $68\degree\text{F}$.
   answer="41"
   hint="Substitute $5$ for $C$ in $F = \tfrac{9}{5}C + 32$."
 >}}
-
-## Key terms
-
-**U.S. system** — the system of measurement commonly used in the United
-States, using units such as inches, feet, yards, and miles for length;
-pounds and tons for weight; and cups, pints, quarts, and gallons for
-capacity. **metric system** — the system of measurement used by most
-countries, where units of length, mass, and capacity are related by powers
-of $10$ (kilo-, hecto-, deka-, deci-, centi-, milli-). **identity property
-of multiplication** — for any real number $a$, $a \cdot 1 = a$ and
-$1 \cdot a = a$; used to build unit conversion factors that equal $1$.
-**Fahrenheit** — the temperature scale used in the U.S. system, where water
-freezes at $32\degree\text{F}$ and boils at $212\degree\text{F}$.
-**Celsius** — the temperature scale used in the metric system, where water
-freezes at $0\degree\text{C}$ and boils at $100\degree\text{C}$.
 
 ---
 

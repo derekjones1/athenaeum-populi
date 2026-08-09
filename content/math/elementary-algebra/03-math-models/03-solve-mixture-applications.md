@@ -429,6 +429,17 @@ that earns 3% and \$15,000 in the account that earns 5%.
   hint="Let x be the amount invested at 3.2%, so $8{,}000 - x$ is invested at 8%. Set the interest from both accounts equal to 0.065$(8,000)$, then solve for the amount at 8%."
 >}}
 
+## Key terms
+
+**mixture problem** — a problem in which two or more items with different
+values are combined together. **total value model** —
+$\text{number} \cdot \text{value} = \text{total value}$: for a single type
+of coin, ticket, stamp, or ingredient, the number of items times the value
+per item gives the total value of that item. **simple interest** — interest
+computed once on the principal, using $I = Pr$ when the time is one year;
+in a mixture-model investment problem, the "value" of each account is its
+interest rate and the "total value" is the interest earned.
+
 ## Practice
 
 ### Solve coin word problems
@@ -501,17 +512,6 @@ that earns 3% and \$15,000 in the account that earns 5%.
   answerDisplay="\$10,000 in the certificate of deposit, \$30,000 in the mutual fund"
   hint="Let $c$ be the amount invested in the certificate of deposit, so $40{,}000 - c$ is invested in the mutual fund. Set the two accounts’ interest equal to the target interest with $0.021c + 0.065(40{,}000 - c) = 0.054(40{,}000)$."
 >}}
-
-## Key terms
-
-**mixture problem** — a problem in which two or more items with different
-values are combined together. **total value model** —
-$\text{number} \cdot \text{value} = \text{total value}$: for a single type
-of coin, ticket, stamp, or ingredient, the number of items times the value
-per item gives the total value of that item. **simple interest** — interest
-computed once on the principal, using $I = Pr$ when the time is one year;
-in a mixture-model investment problem, the "value" of each account is its
-interest rate and the "total value" is the interest earned.
 
 ---
 

@@ -589,6 +589,15 @@ The sticker price of the car was \$29,550.
   hint="Let n = the night price. \$7.75 is \$3.25 less than n, so 7.75 = n - 3.25."
 >}}
 
+## Key terms
+
+**solution of an equation** — a value of a variable that makes a true
+statement when substituted into the equation. **Subtraction Property of
+Equality** — if $a = b$, then $a - c = b - c$; subtracting the same
+quantity from both sides of an equation preserves equality. **Addition
+Property of Equality** — if $a = b$, then $a + c = b + c$; adding the same
+quantity to both sides of an equation preserves equality.
+
 ## Practice
 
 ### Verify a solution of an equation
@@ -674,15 +683,6 @@ no
   answerDisplay="$100.5$ degrees"
   hint="Let $t$ be last night's temperature and solve $t + 0.7 = 101.2$."
 >}}
-
-## Key terms
-
-**solution of an equation** — a value of a variable that makes a true
-statement when substituted into the equation. **Subtraction Property of
-Equality** — if $a = b$, then $a - c = b - c$; subtracting the same
-quantity from both sides of an equation preserves equality. **Addition
-Property of Equality** — if $a = b$, then $a + c = b + c$; adding the same
-quantity to both sides of an equation preserves equality.
 
 ---
 

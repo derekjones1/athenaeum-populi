@@ -615,6 +615,13 @@ Note there are no factor pairs that give us $-9$ as a sum. The trinomial is
   hint="The last term is negative, so the two numbers have different signs. They multiply to $-10$ and add to $-3$; each last term carries a $y$."
 >}}
 
+## Key terms
+
+**factor a trinomial** — to write a trinomial $x^2+bx+c$ as a product of two
+binomials $(x+m)(x+n)$, where $m$ and $n$ multiply to $c$ and add to $b$.
+**prime trinomial** — a trinomial that cannot be written as a product of two
+binomials with integer coefficients (no factor pair of $c$ adds to $b$).
+
 ## Practice
 
 ### Factor trinomials of the form $x^2+bx+c$
@@ -662,13 +669,6 @@ It is prime
   answerDisplay="$(a+8b)(a-3b)$"
   hint="The last term is negative, so the two numbers have different signs. They multiply to $-24$ and add to $5$; each last term carries a $b$."
 >}}
-
-## Key terms
-
-**factor a trinomial** — to write a trinomial $x^2+bx+c$ as a product of two
-binomials $(x+m)(x+n)$, where $m$ and $n$ multiply to $c$ and add to $b$.
-**prime trinomial** — a trinomial that cannot be written as a product of two
-binomials with integer coefficients (no factor pair of $c$ adds to $b$).
 
 ---
 

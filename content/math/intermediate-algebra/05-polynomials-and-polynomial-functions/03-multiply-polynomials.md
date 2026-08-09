@@ -516,6 +516,7 @@ $$
 {{< fillin
   question="Choose the appropriate pattern and find the product: $(9b-2)(2b+9)$"
   answer="18b^2+77b-18"
+  answerForm="expanded"
   answerDisplay="$18b^2+77b-18$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
@@ -523,6 +524,7 @@ $$
 {{< fillin
   question="Choose the appropriate pattern and find the product: $(9p-4)^2$"
   answer="81p^2-72p+16"
+  answerForm="expanded"
   answerDisplay="$81p^2-72p+16$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
@@ -530,6 +532,7 @@ $$
 {{< fillin
   question="Choose the appropriate pattern and find the product: $(7y+1)^2$"
   answer="49y^2+14y+1"
+  answerForm="expanded"
   answerDisplay="$49y^2+14y+1$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
@@ -571,6 +574,7 @@ $$
 {{< fillin
   question="For $f(x)=x-5$ and $g(x)=x^2-2x+3$, find $(f\cdot g)(x)$."
   answer="x^3-7x^2+13x-15"
+  answerForm="expanded"
   answerDisplay="$x^3-7x^2+13x-15$"
   hint="Multiply every term in one factor by every term in the other, then combine like powers."
 >}}
@@ -594,6 +598,170 @@ $(a-b)^2=a^2-2ab+b^2$. **product of conjugates pattern** —
 $(a-b)(a+b)=a^2-b^2$. **difference of squares** — a binomial of the form
 $a^2-b^2$, the product of a conjugate pair.
 
+## Practice
+
+### Multiply monomials
+
+{{< fillin
+  question="Multiply: $(-10x^5)(-3x^3)$"
+  answer="30x^8"
+  answerForm="single-term"
+  answerDisplay="$30x^8$"
+  hint="Multiply the coefficients and add the exponents on the matching variable."
+>}}
+
+{{< fillin
+  question="Multiply: $\left(\tfrac{5}{8}x^3y\right)\left(24x^5y\right)$"
+  answer="15x^8y^2"
+  answerForm="single-term"
+  answerDisplay="$15x^8y^2$"
+  hint="Multiply the coefficients and add the exponents on each matching variable."
+>}}
+
+{{< fillin
+  question="Multiply: $(-6c^4)(-12c)$"
+  answer="72c^5"
+  answerForm="single-term"
+  answerDisplay="$72c^5$"
+  hint="Multiply the coefficients and add the exponents on the matching variable."
+>}}
+
+{{< fillin
+  question="Multiply: $\left(\tfrac{3}{5}m^3n^2\right)\left(\tfrac{5}{9}m^2n^3\right)$"
+  answer="\tfrac{1}{3}m^5n^5"
+  answerForm="single-term"
+  answerDisplay="$\tfrac{1}{3}m^5n^5$"
+  hint="Multiply the coefficients and add the exponents on each matching variable."
+>}}
+
+### Multiply a polynomial by a monomial
+
+{{< fillin
+  question="Multiply: $-5t\left(t^2+3t-18\right)$"
+  answer="-5t^3-15t^2+90t"
+  answerForm="expanded"
+  answerDisplay="$-5t^3-15t^2+90t$"
+  hint="Distribute the monomial to every term, multiplying coefficients and adding exponents on like bases."
+>}}
+
+{{< fillin
+  question="Multiply: $9r^3s\left(r^2-3rs+5s^2\right)$"
+  answer="9r^5s-27r^4s^2+45r^3s^3"
+  answerForm="expanded"
+  answerDisplay="$9r^5s-27r^4s^2+45r^3s^3$"
+  hint="Distribute the monomial to every term, multiplying coefficients and adding exponents on like bases."
+>}}
+
+{{< fillin
+  question="Multiply: $-5m\left(m^2+3m-18\right)$"
+  answer="-5m^3-15m^2+90m"
+  answerForm="expanded"
+  answerDisplay="$-5m^3-15m^2+90m$"
+  hint="Distribute the monomial to every term, multiplying coefficients and adding exponents on like bases."
+>}}
+
+{{< fillin
+  question="Multiply: $-3x^2y^2\left(7x^2+10xy-y^2\right)$"
+  answer="-21x^4y^2-30x^3y^3+3x^2y^4"
+  answerForm="expanded"
+  answerDisplay="$-21x^4y^2-30x^3y^3+3x^2y^4$"
+  hint="Distribute the monomial to every term, multiplying coefficients and adding exponents on like bases."
+>}}
+
+### Multiply a binomial by a binomial
+
+{{< fillin
+  question="Multiply: $(y+9)(y+3)$"
+  answer="y^2+12y+27"
+  answerForm="expanded"
+  answerDisplay="$y^2+12y+27$"
+  hint="Use FOIL — multiply the First, Outer, Inner, and Last terms, then combine like terms."
+>}}
+
+{{< fillin
+  question="Multiply: $(7q+4)(3q-8)$"
+  answer="21q^2-44q-32"
+  answerForm="expanded"
+  answerDisplay="$21q^2-44q-32$"
+  hint="Use FOIL — multiply the First, Outer, Inner, and Last terms, then combine like terms."
+>}}
+
+### Multiply a polynomial by a polynomial
+
+{{< fillin
+  question="Multiply: $(u+4)\left(u^2+3u+2\right)$"
+  answer="u^3+7u^2+14u+8"
+  answerForm="expanded"
+  answerDisplay="$u^3+7u^2+14u+8$"
+  hint="Distribute each term of the binomial across the trinomial, then combine like terms."
+>}}
+
+{{< fillin
+  question="Multiply: $(a+10)\left(3a^2+a-5\right)$"
+  answer="3a^3+31a^2+5a-50"
+  answerForm="expanded"
+  answerDisplay="$3a^3+31a^2+5a-50$"
+  hint="Distribute each term of the binomial across the trinomial, then combine like terms."
+>}}
+
+### Multiply special products
+
+{{< fillin
+  question="Multiply: $(q+12)^2$"
+  answer="q^2+24q+144"
+  answerForm="expanded"
+  answerDisplay="$q^2+24q+144$"
+  hint="Use the Binomial Squares Pattern: square the first term, square the last term, and double their product for the middle term."
+>}}
+
+{{< fillin
+  question="Multiply: $(2y-3z)^2$"
+  answer="4y^2-12yz+9z^2"
+  answerForm="expanded"
+  answerDisplay="$4y^2-12yz+9z^2$"
+  hint="Use the Binomial Squares Pattern: square the first term, square the last term, and subtract twice their product for the middle term."
+>}}
+
+{{< fillin
+  question="Multiply: $(8j+4)(8j-4)$"
+  answer="64j^2-16"
+  answerForm="expanded"
+  answerDisplay="$64j^2-16$"
+  hint="Use the Product of Conjugates Pattern: square the first term, square the last term, and write the difference."
+>}}
+
+### Multiply polynomial functions
+
+{{< fillin
+  question="For $f(x)=x-1$ and $g(x)=4x^2+3x-5$, find $(f\cdot g)(x)$."
+  answer="4x^3-x^2-8x+5"
+  answerForm="expanded"
+  answerDisplay="$4x^3-x^2-8x+5$"
+  hint="Substitute the two functions and multiply the polynomials, combining like terms."
+>}}
+
+{{< fillin
+  question="For $f(x)=x-1$ and $g(x)=4x^2+3x-5$, find $(f\cdot g)(-2)$."
+  answer="-15"
+  answerDisplay="$-15$"
+  hint="Substitute $x=-2$ into $f(x)\cdot g(x)$ and simplify."
+>}}
+
+{{< fillin
+  question="For $f(x)=7x-8$ and $g(x)=7x+8$, find $(f\cdot g)(x)$."
+  answer="49x^2-64"
+  answerForm="expanded"
+  answerDisplay="$49x^2-64$"
+  hint="Recognize the conjugate pair, or multiply directly and combine like terms."
+>}}
+
+{{< fillin
+  question="For $f(x)=7x-8$ and $g(x)=7x+8$, find $(f\cdot g)(-2)$."
+  answer="132"
+  answerDisplay="$132$"
+  hint="Substitute $x=-2$ into $f(x)\cdot g(x)$ and simplify."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 5.3: Multiply Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/5-3-multiply-polynomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: omitted the Be Prepared quiz, media links, and end-of-section exercises; recreated the FOIL and Vertical Method worked examples as aligned equation blocks; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 5.3: Multiply Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/5-3-multiply-polynomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: omitted the Be Prepared quiz and media links; recreated the FOIL and Vertical Method worked examples as aligned equation blocks; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block.</small>

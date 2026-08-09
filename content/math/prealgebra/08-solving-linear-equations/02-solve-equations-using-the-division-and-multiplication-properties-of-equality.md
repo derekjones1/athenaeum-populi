@@ -228,6 +228,13 @@ The solution checks.
   hint="Distribute the $-6$, simplify the left side, then divide both sides by $-6$."
 >}}
 
+## Key terms
+
+**Division Property of Equality** — for all real numbers $a$, $b$, $c$,
+and $c \neq 0$, if $a = b$, then $\tfrac{a}{c} = \tfrac{b}{c}$.
+**Multiplication Property of Equality** — for all real numbers $a$, $b$,
+and $c$, if $a = b$, then $ac = bc$.
+
 ## Practice
 
 ### Solve equations using the Division and Multiplication Properties of Equality
@@ -306,13 +313,6 @@ The solution checks.
   answer="56"
   hint="Subtract the decimal coefficients on the left, then divide both sides by $0.04$."
 >}}
-
-## Key terms
-
-**Division Property of Equality** — for all real numbers $a$, $b$, $c$,
-and $c \neq 0$, if $a = b$, then $\tfrac{a}{c} = \tfrac{b}{c}$.
-**Multiplication Property of Equality** — for all real numbers $a$, $b$,
-and $c$, if $a = b$, then $ac = bc$.
 
 ---
 

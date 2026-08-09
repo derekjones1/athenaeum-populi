@@ -441,6 +441,16 @@ value.
   hint="Use $A = \pi r^2$ with $\pi \approx \tfrac{22}{7}$ and $r = \tfrac{10}{33}$ — square the radius first, then multiply by $\tfrac{22}{7}$."
 >}}
 
+## Key terms
+
+**repeating decimal** — a decimal in which the last digit or group of digits
+repeats endlessly. **radius** — a line segment from the center of a circle
+to any point on the circle. **diameter** — a line segment that passes
+through a circle's center, connecting two points on the circle; equal to
+twice the radius. **circumference** — the distance around a circle,
+$C = 2\pi r$. **pi ($\pi$)** — the ratio of a circle's circumference to its
+diameter, approximately $3.14$ or $\tfrac{22}{7}$.
+
 ## Practice
 
 ### Convert fractions to decimals
@@ -566,16 +576,6 @@ $0.\overline{45}$
   answerDisplay="$\tfrac{275}{504}$ sq. m"
   hint="The area formula needs the radius, so halve the diameter first, then use $A = \pi r^2$ with $\pi \approx \tfrac{22}{7}$."
 >}}
-
-## Key terms
-
-**repeating decimal** — a decimal in which the last digit or group of digits
-repeats endlessly. **radius** — a line segment from the center of a circle
-to any point on the circle. **diameter** — a line segment that passes
-through a circle's center, connecting two points on the circle; equal to
-twice the radius. **circumference** — the distance around a circle,
-$C = 2\pi r$. **pi ($\pi$)** — the ratio of a circle's circumference to its
-diameter, approximately $3.14$ or $\tfrac{22}{7}$.
 
 ---
 

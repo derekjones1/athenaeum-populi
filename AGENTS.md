@@ -50,7 +50,7 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
 
 Every `source:*` command takes `--bundle KEY` to work on one bundle at a time.
 
-Every authoring rule in the content lint is an error except one: the 56
+Every authoring rule in the content lint is an error except one: the 11
 sections still missing a `## Practice` block, which is an authoring programme
 tracked in `docs/authoring-playbook.md` §5. A page you author or revise adds
 no warning of its own. If a rule fires on sound content, narrow the rule and

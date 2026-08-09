@@ -467,6 +467,14 @@ $$
 \end{array}
 $$
 
+## Key terms
+
+**quadratic equation** — an equation of the form $ax^2+bx+c=0$ with
+$a\ne0$. **Square Root Property** — if $x^2=k$ and $k\geq0$, then
+$x=\sqrt{k}$ or $x=-\sqrt{k}$. **principal square root** — the nonnegative
+square root of a number. **perfect square trinomial** — a trinomial of the
+form $a^2+2ab+b^2$ or $a^2-2ab+b^2$; it factors to $(a+b)^2$ or $(a-b)^2$.
+
 ## Practice
 
 ### Solve quadratic equations of the form $ax^2=k$ using the Square Root Property
@@ -524,14 +532,6 @@ No real solution
 $c=\tfrac{26}{5}$
 $c=-\tfrac{28}{5}$
 {{< /multiplechoice >}}
-
-## Key terms
-
-**quadratic equation** — an equation of the form $ax^2+bx+c=0$ with
-$a\ne0$. **Square Root Property** — if $x^2=k$ and $k\geq0$, then
-$x=\sqrt{k}$ or $x=-\sqrt{k}$. **principal square root** — the nonnegative
-square root of a number. **perfect square trinomial** — a trinomial of the
-form $a^2+2ab+b^2$ or $a^2-2ab+b^2$; it factors to $(a+b)^2$ or $(a-b)^2$.
 
 ---
 

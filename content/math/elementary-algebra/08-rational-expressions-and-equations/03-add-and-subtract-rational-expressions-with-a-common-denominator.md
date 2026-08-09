@@ -239,6 +239,14 @@ $$
   hint="The denominators $y^2 - 4$ and $4 - y^2$ are opposites: multiply the second fraction by $\tfrac{-1}{-1}$ so both denominators are $y^2 - 4$, then subtract, factor, and simplify."
 >}}
 
+## Key terms
+
+**common denominator** — a single denominator shared by two or more rational
+expressions, allowing their numerators to be added or subtracted directly.
+**opposite denominators** — denominators that are negatives of each other (such
+as $3u - 1$ and $1 - 3u$); multiplying one fraction by $\tfrac{-1}{-1}$ turns
+them into a common denominator.
+
 ## Practice
 
 ### Add rational expressions with a common denominator
@@ -317,14 +325,6 @@ $$
   answerDisplay="$\tfrac{z + 4}{z - 5}$"
   hint="The denominators $z^2 - 25$ and $25 - z^2$ are opposites: multiply the second fraction by $\tfrac{-1}{-1}$ so both denominators are $z^2 - 25$, then subtract, factor, and simplify."
 >}}
-
-## Key terms
-
-**common denominator** — a single denominator shared by two or more rational
-expressions, allowing their numerators to be added or subtracted directly.
-**opposite denominators** — denominators that are negatives of each other (such
-as $3u - 1$ and $1 - 3u$); multiplying one fraction by $\tfrac{-1}{-1}$ turns
-them into a common denominator.
 
 ---
 

@@ -435,6 +435,15 @@ $$(5x-6)(6x+5) = 30x^2 + 25x - 36x - 30 = 30x^2 - 11x - 30$$
   hint="This is a binomial square: square 7y, square 1, and add twice their product $2 \cdot 7y \cdot 1$."
 >}}
 
+## Key terms
+
+**conjugate pair** — two binomials of the form $(a-b)$, $(a+b)$ that have
+the same first term and the same last term, but one is a sum and the other a
+difference. **difference of squares** — a binomial of the form $a^2 - b^2$;
+it is the product of a conjugate pair. **Binomial Squares Pattern** —
+$(a+b)^2 = a^2 + 2ab + b^2$ and $(a-b)^2 = a^2 - 2ab + b^2$. **Product of
+Conjugates Pattern** — $(a-b)(a+b) = a^2 - b^2$.
+
 ## Practice
 
 ### Square a binomial using the Binomial Squares Pattern
@@ -552,15 +561,6 @@ Neither — use FOIL
   answerForm="expanded"
   hint="This is a binomial square: square k, square 6, and subtract twice their product $2 \cdot k \cdot 6$ for the middle term."
 >}}
-
-## Key terms
-
-**conjugate pair** — two binomials of the form $(a-b)$, $(a+b)$ that have
-the same first term and the same last term, but one is a sum and the other a
-difference. **difference of squares** — a binomial of the form $a^2 - b^2$;
-it is the product of a conjugate pair. **Binomial Squares Pattern** —
-$(a+b)^2 = a^2 + 2ab + b^2$ and $(a-b)^2 = a^2 - 2ab + b^2$. **Product of
-Conjugates Pattern** — $(a-b)(a+b) = a^2 - b^2$.
 
 ---
 

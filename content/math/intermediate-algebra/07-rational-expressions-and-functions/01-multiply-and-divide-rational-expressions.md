@@ -542,15 +542,21 @@ $$
 \end{array}
 $$
 
-{{< fillin
+{{< multiplechoice
   question="Find $R(x)=f(x)\cdot g(x)$ where $f(x)=\tfrac{3x-21}{x^2-9x+14}$ and $g(x)=\tfrac{2x^2-8}{3x+6}$."
-  answer="2"
-  hint="Factor each expression completely before multiplying."
+  answer="$2$"
+  hint="Factor every numerator and denominator completely, then divide out each factor that appears both above and below the bar."
 >}}
+$\tfrac{2}{x-2}$
+$\tfrac{2(x-2)}{x+2}$
+$2$
+$2(x-2)$
+{{< /multiplechoice >}}
 
 {{< fillin
   question="Find $R(x)=f(x)\cdot g(x)$ where $f(x)=\tfrac{x^2-x}{3x^2+27x-30}$ and $g(x)=\tfrac{x^2-100}{x^2-10x}$."
   answer="\frac{1}{3}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{1}{3}$"
   hint="Factor every numerator and denominator, multiply, and remove common factors."
 >}}
@@ -574,6 +580,7 @@ $$
 {{< fillin
   question="Find $R(x)=\tfrac{f(x)}{g(x)}$ where $f(x)=\tfrac{2x^2}{x^2-8x}$ and $g(x)=\tfrac{8x^2+24x}{x^2+x-6}$."
   answer="\frac{x-2}{4(x-8)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{x-2}{4(x-8)}$"
   hint="Rewrite the quotient as multiplication by the reciprocal, then factor and simplify."
 >}}
@@ -581,6 +588,7 @@ $$
 {{< fillin
   question="Find $R(x)=\tfrac{f(x)}{g(x)}$ where $f(x)=\tfrac{15x^2}{3x^2+33x}$ and $g(x)=\tfrac{5x-5}{x^2+9x-22}$."
   answer="\frac{x(x-2)}{x-1}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{x(x-2)}{x-1}$"
   hint="Multiply $f(x)$ by the reciprocal of $g(x)$, then factor all polynomials."
 >}}
@@ -595,6 +603,120 @@ denominator, or both. **rational function** — a function of the form
 $R(x)=\tfrac{p(x)}{q(x)}$, where $p(x)$ and $q(x)$ are polynomial functions and
 $q(x)$ is not zero.
 
+## Practice
+
+### Determine the values for which a rational expression is undefined
+
+{{< fillin
+  question="For what value is $\tfrac{2x^2}{z}$ undefined?"
+  answer="0"
+  answerDisplay="$z=0$"
+  hint="Set the denominator $z$ equal to zero."
+>}}
+
+{{< fillin
+  question="For what value is $\tfrac{4p-1}{6p-5}$ undefined?"
+  answer="\frac{5}{6}"
+  answerDisplay="$p=\tfrac{5}{6}$"
+  hint="Set the denominator $6p-5$ equal to zero and solve for $p$."
+>}}
+
+{{< fillin
+  question="Enter, separated by commas, the values for which $\tfrac{n-3}{n^2+2n-8}$ is undefined."
+  answer="-4, 2"
+  answerMode="unordered"
+  answerDisplay="$-4,2$"
+  hint="Factor the denominator as $(n+4)(n-2)$, then set each factor equal to zero."
+>}}
+
+### Simplify rational expressions
+
+{{< fillin
+  question="Simplify $\tfrac{8m^3n}{12mn^2}$."
+  answer="\frac{2m^2}{3n}"
+  answerForm="reduced-fraction"
+  answerDisplay="$\tfrac{2m^2}{3n}$"
+  hint="Divide out the common factors of $4$, $m$, and $n$."
+>}}
+
+{{< fillin
+  question="Simplify $\tfrac{x^2+4x-5}{x^2-2x+1}$."
+  answer="\frac{x+5}{x-1}"
+  answerForm="reduced-fraction"
+  answerDisplay="$\tfrac{x+5}{x-1}$"
+  hint="Factor the numerator as $(x+5)(x-1)$ and the denominator as $(x-1)^2$."
+>}}
+
+{{< fillin
+  question="Simplify $\tfrac{z^2-9z+20}{16-z^2}$."
+  answer="-\frac{z-5}{4+z}"
+  answerForm="reduced-fraction"
+  answerDisplay="$-\tfrac{z-5}{4+z}$"
+  hint="Factor the numerator, then recognize that $z-4$ and $4-z$ are opposites."
+>}}
+
+### Multiply rational expressions
+
+{{< fillin
+  question="Simplify $\tfrac{5p^2}{p^2-5p-36}\cdot\tfrac{p^2-16}{10p}$."
+  answer="\frac{p(p-4)}{2(p-9)}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{p(p-4)}{2(p-9)}$"
+  hint="Factor $p^2-5p-36$ and $p^2-16$, then divide out the common factors."
+>}}
+
+{{< fillin
+  question="Simplify $\tfrac{2y^2-10y}{y^2+10y+25}\cdot\tfrac{y+5}{6y}$."
+  answer="\frac{y-5}{3(y+5)}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{y-5}{3(y+5)}$"
+  hint="Factor $y^2+10y+25$ as $(y+5)^2$ and $2y^2-10y$ as $2y(y-5)$."
+>}}
+
+### Divide rational expressions
+
+{{< fillin
+  question="Simplify $\tfrac{v-5}{11-v}\div\tfrac{v^2-25}{v-11}$."
+  answer="-\frac{1}{v+5}"
+  answerForm="single-fraction"
+  answerDisplay="$-\tfrac{1}{v+5}$"
+  hint="Multiply by the reciprocal, then recognize that $11-v$ and $v-11$ are opposites."
+>}}
+
+{{< fillin
+  question="Simplify $\tfrac{3s^2}{s^2-16}\div\tfrac{s^3+4s^2+16s}{s^3-64}$."
+  answer="\frac{3s}{s+4}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{3s}{s+4}$"
+  hint="Multiply by the reciprocal and factor $s^3-64$ as a difference of cubes."
+>}}
+
+### Multiply and divide rational functions
+
+{{< fillin
+  question="Find the values excluded from the domain of $R(x)=\tfrac{x^3-2x^2-25x+50}{x^2-25}$. Enter them separated by commas."
+  answer="-5, 5"
+  answerMode="unordered"
+  answerDisplay="$-5,5$"
+  hint="Set the denominator $x^2-25$ equal to zero and solve."
+>}}
+
+{{< fillin
+  question="Find $R(x)=f(x)\cdot g(x)$ where $f(x)=\tfrac{4x}{x^2-3x-10}$ and $g(x)=\tfrac{x^2-25}{8x^2}$."
+  answer="\frac{x+5}{2x(x+2)}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{x+5}{2x(x+2)}$"
+  hint="Factor $x^2-3x-10$ and $x^2-25$, then multiply and remove common factors."
+>}}
+
+{{< fillin
+  question="Find $R(x)=\tfrac{f(x)}{g(x)}$ where $f(x)=\tfrac{27x^2}{3x-21}$ and $g(x)=\tfrac{3x^2+18x}{x^2+13x+42}$."
+  answer="\frac{3x(x+7)}{x-7}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{3x(x+7)}{x-7}$"
+  hint="Multiply $f(x)$ by the reciprocal of $g(x)$, then factor and simplify."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 7.1: Multiply and Divide Rational Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/7-1-multiply-and-divide-rational-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions as accessible typeset step arrays; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 7.1: Multiply and Divide Rational Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/7-1-multiply-and-divide-rational-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions as accessible typeset step arrays; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

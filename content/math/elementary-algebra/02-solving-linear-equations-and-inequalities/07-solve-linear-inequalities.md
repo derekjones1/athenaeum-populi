@@ -557,6 +557,19 @@ The solution in interval notation is $[75, \infty)$.
   hint="'Four more than a' translates to $a + 4$. 'Is at most' means the same as ≤. Then subtract 4 from both sides."
 >}}
 
+## Key terms
+
+**inequality** — a mathematical statement comparing two expressions using
+$<$, $\leq$, $>$, or $\geq$, showing that one is smaller than, smaller than
+or equal to, larger than, or larger than or equal to the other. **interval
+notation** — a way of describing the solution set of an inequality using
+parentheses (for endpoints not included) and brackets (for endpoints
+included), together with $\infty$ or $-\infty$ where the solution set has
+no upper or lower end. **identity (inequality)** — an inequality that is
+true for every real number, with solution $(-\infty, \infty)$.
+**contradiction (inequality)** — an inequality with no solution, because no
+real number makes it true.
+
 ## Practice
 
 ### Graph inequalities on the number line
@@ -670,19 +683,6 @@ $(-\infty, 3]$
   answerDisplay="$(-28, \infty)$"
   hint="Translate to $-2s < 56$, then divide by $-2$ and reverse the inequality direction."
 >}}
-
-## Key terms
-
-**inequality** — a mathematical statement comparing two expressions using
-$<$, $\leq$, $>$, or $\geq$, showing that one is smaller than, smaller than
-or equal to, larger than, or larger than or equal to the other. **interval
-notation** — a way of describing the solution set of an inequality using
-parentheses (for endpoints not included) and brackets (for endpoints
-included), together with $\infty$ or $-\infty$ where the solution set has
-no upper or lower end. **identity (inequality)** — an inequality that is
-true for every real number, with solution $(-\infty, \infty)$.
-**contradiction (inequality)** — an inequality with no solution, because no
-real number makes it true.
 
 ---
 

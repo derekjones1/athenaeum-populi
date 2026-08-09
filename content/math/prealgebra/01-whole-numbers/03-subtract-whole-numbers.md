@@ -204,6 +204,14 @@ price and the sale price is \$189.
   hint="Write the phrase: the difference of 77 and 58. Translate it to subtraction and simplify."
 >}}
 
+## Key terms
+
+**difference** — the result of subtracting one number from another.
+**inverse operations** — operations that undo each other; addition and
+subtraction are inverse operations, which is why a subtraction can be checked
+by adding. **borrowing** — exchanging $1$ from the place to the left for
+$10$ in the current place so a column can be subtracted.
+
 ## Practice
 
 ### Use subtraction notation
@@ -407,14 +415,6 @@ six hundred seventy-five plus three hundred fifty; the sum of six hundred sevent
   answer="155"
   hint="What he still needs is the difference between the cost and what he already has."
 >}}
-
-## Key terms
-
-**difference** — the result of subtracting one number from another.
-**inverse operations** — operations that undo each other; addition and
-subtraction are inverse operations, which is why a subtraction can be checked
-by adding. **borrowing** — exchanging $1$ from the place to the left for
-$10$ in the current place so a column can be subtracted.
 
 ---
 

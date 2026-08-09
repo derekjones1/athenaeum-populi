@@ -451,6 +451,19 @@ of wood approximately $7.1$ inches from the corner.
   hint="The mast, deck, and light string form a right triangle with hypotenuse 17 and one leg 15. Substitute into $a^2 + b^2 = c^2$ and solve for the other leg."
 >}}
 
+## Key terms
+
+**angle** — a figure formed by two rays sharing a common endpoint (the
+vertex). **supplementary angles** — two angles whose measures sum to
+$180^\circ$. **complementary angles** — two angles whose measures sum to $90^\circ$.
+**right triangle** — a triangle with one $90^\circ$ angle. **similar triangles**
+— triangles with the same shape but not necessarily the same size, whose
+corresponding angles are equal and corresponding sides are proportional.
+**hypotenuse** — the side of a right triangle opposite the right angle.
+**leg** (of a right triangle) — either of the two sides that form the right
+angle. **Pythagorean Theorem** — in a right triangle, $a^2 + b^2 = c^2$,
+where $c$ is the hypotenuse and $a, b$ are the legs.
+
 ## Practice
 
 ### Use the properties of angles
@@ -584,19 +597,6 @@ of wood approximately $7.1$ inches from the corner.
   answerDisplay="14.1 feet"
   hint="The diagonal is the hypotenuse of a right triangle whose legs are both sides of the square, so solve $10^2 + 10^2 = c^2$."
 >}}
-
-## Key terms
-
-**angle** — a figure formed by two rays sharing a common endpoint (the
-vertex). **supplementary angles** — two angles whose measures sum to
-$180^\circ$. **complementary angles** — two angles whose measures sum to $90^\circ$.
-**right triangle** — a triangle with one $90^\circ$ angle. **similar triangles**
-— triangles with the same shape but not necessarily the same size, whose
-corresponding angles are equal and corresponding sides are proportional.
-**hypotenuse** — the side of a right triangle opposite the right angle.
-**leg** (of a right triangle) — either of the two sides that form the right
-angle. **Pythagorean Theorem** — in a right triangle, $a^2 + b^2 = c^2$,
-where $c$ is the hypotenuse and $a, b$ are the legs.
 
 ---
 

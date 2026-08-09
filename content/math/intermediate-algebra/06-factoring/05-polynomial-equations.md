@@ -621,6 +621,155 @@ equation. **quadratic equation** — a polynomial equation of degree two.
 **Zero Product Property** — if a product is zero, then at least one of its
 factors is zero. **zero of a function** — a value of $x$ for which $f(x)=0$.
 
+## Practice
+
+### Use the Zero Product Property
+
+{{< fillin
+  question="Solve $(3a-10)(2a-7)=0$. Enter the two solutions separated by commas."
+  answer="\frac{10}{3}, \frac{7}{2}"
+  answerMode="unordered"
+  answerDisplay="$\tfrac{10}{3}, \tfrac{7}{2}$"
+  hint="Use the Zero Product Property: set each factor equal to zero and solve both linear equations."
+>}}
+
+{{< fillin
+  question="Solve $6m(12m-5)=0$. Enter the two solutions separated by commas."
+  answer="0, \frac{5}{12}"
+  answerMode="unordered"
+  answerDisplay="$0, \tfrac{5}{12}$"
+  hint="Set each factor equal to zero: $6m=0$ and $12m-5=0$."
+>}}
+
+{{< fillin
+  question="Solve $(2x-1)^2=0$."
+  answer="\frac{1}{2}"
+  answerDisplay="$\tfrac{1}{2}$"
+  hint="Setting the repeated factor $2x-1$ equal to zero gives a single solution."
+>}}
+
+### Solve quadratic equations by factoring
+
+{{< fillin
+  question="Solve $5a^2-26a=24$. Enter the two solutions separated by commas."
+  answer="-\frac{4}{5}, 6"
+  answerMode="unordered"
+  answerDisplay="$-\tfrac{4}{5}, 6$"
+  hint="Write the equation in standard form, factor the trinomial, and use the Zero Product Property."
+>}}
+
+{{< fillin
+  question="Solve $49m^2=144$. Enter the two solutions separated by commas."
+  answer="-\frac{12}{7}, \frac{12}{7}"
+  answerMode="unordered"
+  answerDisplay="$-\tfrac{12}{7}, \tfrac{12}{7}$"
+  hint="Move $144$ to the left and factor the difference of squares."
+>}}
+
+{{< fillin
+  question="Solve $(x+6)(x-3)=-8$. Enter the two solutions separated by commas."
+  answer="-5, 2"
+  answerMode="unordered"
+  answerDisplay="$-5, 2$"
+  hint="Multiply the binomials, move every term to one side, and factor the trinomial."
+>}}
+
+{{< fillin
+  question="Solve $16p^3=24p^2-9p$. Enter the distinct solutions separated by commas."
+  answer="0, \frac{3}{4}"
+  answerMode="unordered"
+  answerDisplay="$0, \tfrac{3}{4}$"
+  hint="Move every term to one side, factor out the GCF, and recognize the remaining perfect-square trinomial."
+>}}
+
+### Solve equations with polynomial functions
+
+{{< fillin
+  question="For $f(x)=x^2-8x+8$, find $x$ when $f(x)=-4$. Enter the two values separated by commas."
+  answer="2, 6"
+  answerMode="unordered"
+  answerDisplay="$2, 6$"
+  hint="Set $x^2-8x+8=-4$, write the equation in standard form, and factor."
+>}}
+
+{{< fillin
+  question="Using your answers to the previous exercise, name the two points that lie on the graph of $f(x)=x^2-8x+8$ where $f(x)=-4$. Enter the points in order of increasing $x$-coordinate, separated by a comma."
+  answer="(2,-4),(6,-4)"
+  answerDisplay="$(2,-4),(6,-4)$"
+  hint="Each solution $x$ pairs with $f(x)=-4$ to give a point $(x,f(x))$."
+>}}
+
+{{< fillin
+  question="For $f(x)=9x^2-4$, find the zeros of the function. Enter the two values separated by commas."
+  answer="-\frac{2}{3}, \frac{2}{3}"
+  answerMode="unordered"
+  answerDisplay="$-\tfrac{2}{3}, \tfrac{2}{3}$"
+  hint="Set $f(x)=0$ and factor the difference of squares."
+>}}
+
+{{< fillin
+  question="For $f(x)=9x^2-4$, state the $x$-intercepts of the graph, in order of increasing $x$-coordinate, separated by a comma."
+  answer="(-\frac{2}{3},0),(\frac{2}{3},0)"
+  answerDisplay="$(-\tfrac{2}{3},0),(\tfrac{2}{3},0)$"
+  hint="An $x$-intercept is a point $(x,0)$ where $x$ is a zero of the function."
+>}}
+
+{{< fillin
+  question="For $f(x)=9x^2-4$, find the $y$-intercept of the graph."
+  answer="(0,-4)"
+  answerDisplay="$(0,-4)$"
+  hint="The $y$-intercept is the point $(0,f(0))$."
+>}}
+
+### Solve applications modeled by polynomial equations
+
+{{< fillin
+  question="The product of two consecutive odd integers is 143. Enter all four integers in increasing order, separated by commas."
+  answer="-13, -11, 11, 13"
+  answerDisplay="$-13, -11, 11, 13$"
+  hint="Let $n$ be the first odd integer and $n+2$ the next. Solve $n(n+2)=143$."
+>}}
+
+{{< fillin
+  question="The product of two consecutive even integers is 168. Enter all four integers in increasing order, separated by commas."
+  answer="-14, -12, 12, 14"
+  answerDisplay="$-14, -12, 12, 14$"
+  hint="Let $n$ be the first even integer and $n+2$ the next. Solve $n(n+2)=168$."
+>}}
+
+{{< fillin
+  question="A rectangular carpet has area 28 square feet. Its length is three feet more than its width. Find the width."
+  answer="4"
+  hint="Let the width be $w$ and the length $w+3$. Solve $w(w+3)=28$ and reject a negative width."
+>}}
+
+{{< fillin
+  question="For the same carpet, find the length."
+  answer="7"
+  hint="Add three feet to the width you found."
+>}}
+
+{{< fillin
+  question="A pennant shaped like a right triangle has hypotenuse 10 feet. One leg is two feet longer than the other. Enter the shorter leg and the longer leg, separated by a comma."
+  answer="6, 8"
+  answerDisplay="$6, 8$"
+  hint="Let the shorter leg be $x$ and the longer leg $x+2$. Use $x^2+(x+2)^2=10^2$."
+>}}
+
+{{< fillin
+  question="Juli launches a model rocket in her back yard. Its height is modeled by $h(t)=-16t^2+32t$. Find the zeros of this function, which tell us when the rocket is on the ground. Enter both times separated by a comma."
+  answer="0, 2"
+  answerMode="unordered"
+  answerDisplay="$0, 2$"
+  hint="Set $h(t)=0$ and factor out the GCF."
+>}}
+
+{{< fillin
+  question="For the same rocket, find the time when it is 16 feet above the ground."
+  answer="1"
+  hint="Set $h(t)=16$, move every term to one side, and factor the resulting perfect-square trinomial."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 6.5: Polynomial Equations](https://openstax.org/books/intermediate-algebra-2e/pages/6-5-polynomial-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked-example tables as accessible aligned math, omitted the Be Prepared quiz, media links, and end-of-section exercises, recreated geometric figures accessibly, and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 6.5: Polynomial Equations](https://openstax.org/books/intermediate-algebra-2e/pages/6-5-polynomial-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked-example tables as accessible aligned math, omitted the Be Prepared quiz and media links, recreated geometric figures accessibly, converted the practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into an interactive Practice block.</small>

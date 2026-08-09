@@ -363,6 +363,18 @@ $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
   hint="Multiply by the reciprocal of $\tfrac{35}{36}$, then look for common factors of $7$ and $9$ before finishing."
 >}}
 
+## Key terms
+
+**simplified fraction** — a fraction with no common factors, other than
+$1$, in its numerator and denominator. **fraction multiplication** — to
+multiply two fractions, multiply the numerators and multiply the
+denominators, $\tfrac{a}{b} \cdot \tfrac{c}{d} = \tfrac{ac}{bd}$.
+**reciprocal** — the fraction $\tfrac{b}{a}$, obtained by inverting
+$\tfrac{a}{b}$ ($a \neq 0$, $b \neq 0$); a number and its reciprocal
+multiply to $1$. **fraction division** — to divide by a fraction,
+multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
+\tfrac{a}{b} \cdot \tfrac{d}{c}$.
+
 ## Practice
 
 ### Simplify fractions
@@ -497,18 +509,6 @@ $$\frac{7}{18} \div \frac{14}{27} = \frac{3}{4}$$
   answerDisplay="$\tfrac{8}{7}$"
   hint="Division and multiplication are done left to right. Replace the division by multiplying by $\tfrac{8}{7}$, then remove the common factors of $11$ and $2$."
 >}}
-
-## Key terms
-
-**simplified fraction** — a fraction with no common factors, other than
-$1$, in its numerator and denominator. **fraction multiplication** — to
-multiply two fractions, multiply the numerators and multiply the
-denominators, $\tfrac{a}{b} \cdot \tfrac{c}{d} = \tfrac{ac}{bd}$.
-**reciprocal** — the fraction $\tfrac{b}{a}$, obtained by inverting
-$\tfrac{a}{b}$ ($a \neq 0$, $b \neq 0$); a number and its reciprocal
-multiply to $1$. **fraction division** — to divide by a fraction,
-multiply by its reciprocal, $\tfrac{a}{b} \div \tfrac{c}{d} =
-\tfrac{a}{b} \cdot \tfrac{d}{c}$.
 
 ---
 

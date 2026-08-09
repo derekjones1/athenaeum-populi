@@ -662,6 +662,15 @@ Add: $\text{\textdollar}3.28$. Write a sentence: Marla's total cost for the frui
   hint="Multiply each ticket price by its quantity, then add the two products — multiply before you add."
 >}}
 
+## Key terms
+
+**decimal point** — the point that separates the whole-number part of a
+decimal from its fractional part; when adding or subtracting decimals, the
+decimal points must line up. **placeholder zero** — a zero written at the
+end of a decimal's fractional part, or between the decimal point and a
+nonzero digit, so two decimals can be compared or combined digit by digit
+without changing either number's value.
+
 ## Practice
 
 ### Add and subtract decimals
@@ -790,15 +799,6 @@ Add: $\text{\textdollar}3.28$. Write a sentence: Marla's total cost for the frui
   answerDisplay="\$259.45"
   hint="Multiply each ticket price by the number of those tickets, then add the two products — multiply before you add."
 >}}
-
-## Key terms
-
-**decimal point** — the point that separates the whole-number part of a
-decimal from its fractional part; when adding or subtracting decimals, the
-decimal points must line up. **placeholder zero** — a zero written at the
-end of a decimal's fractional part, or between the decimal point and a
-nonzero digit, so two decimals can be compared or combined digit by digit
-without changing either number's value.
 
 ---
 

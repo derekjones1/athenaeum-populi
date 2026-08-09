@@ -595,6 +595,16 @@ $$10y^2-55y+70 = 5(y-2)(2y-7)$$
   hint="Factor out the GCF of $3$ first, then factor $6w^2-13w+6$."
 >}}
 
+## Key terms
+
+**trial and error** — a method of factoring $ax^2+bx+c$ by listing the factor
+pairs of the first and last terms, then testing the possible binomial
+combinations until the product matches the trinomial. **"ac" method** — a
+structured method of factoring $ax^2+bx+c$ by finding two numbers that
+multiply to $ac$ and add to $b$, splitting the middle term with them, and
+factoring by grouping. **prime polynomial** — a polynomial that cannot be
+factored (other than monomial factors).
+
 ## Practice
 
 ### Recognize a preliminary strategy to factor polynomials completely
@@ -708,16 +718,6 @@ $(x+1)(3x+4)$
 $(x+4)(3x+1)$
 It is prime
 {{< /multiplechoice >}}
-
-## Key terms
-
-**trial and error** — a method of factoring $ax^2+bx+c$ by listing the factor
-pairs of the first and last terms, then testing the possible binomial
-combinations until the product matches the trinomial. **"ac" method** — a
-structured method of factoring $ax^2+bx+c$ by finding two numbers that
-multiply to $ac$ and add to $b$, splitting the middle term with them, and
-factoring by grouping. **prime polynomial** — a polynomial that cannot be
-factored (other than monomial factors).
 
 ---
 

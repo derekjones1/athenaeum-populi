@@ -420,6 +420,17 @@ $-39 + 4 \overset{?}{=} -27 - 8$, and $-35 = -35$. ✓
   hint="Subtract 1.2y from both sides so the variable terms collect on the left, then move the constants and divide."
 >}}
 
+## Key terms
+
+**variable side** — the side of an equation that we choose to collect all
+the variable terms onto, using the Addition or Subtraction Property of
+Equality. **constant side** — the side of an equation that we choose to
+collect all the constant terms onto. **Beginning Strategy for Solving
+Equations with Variables and Constants on Both Sides** — choose the
+variable side and constant side; collect the variable terms onto the
+variable side; collect the constants onto the constant side; make the
+coefficient of the variable equal to $1$; check the solution.
+
 ## Practice
 
 ### Solve an equation with constants on both sides
@@ -464,17 +475,6 @@ $-39 + 4 \overset{?}{=} -27 - 8$, and $-35 = -35$. ✓
   answer="-6"
   hint="Subtract $\tfrac{3}{4}m$ from both sides; the remaining variable coefficient is $1$, so then isolate $m$."
 >}}
-
-## Key terms
-
-**variable side** — the side of an equation that we choose to collect all
-the variable terms onto, using the Addition or Subtraction Property of
-Equality. **constant side** — the side of an equation that we choose to
-collect all the constant terms onto. **Beginning Strategy for Solving
-Equations with Variables and Constants on Both Sides** — choose the
-variable side and constant side; collect the variable terms onto the
-variable side; collect the constants onto the constant side; make the
-coefficient of the variable equal to $1$; check the solution.
 
 ---
 

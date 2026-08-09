@@ -301,6 +301,15 @@ three consecutive integers are $13$, $14$, and $15$.
   hint="Let $n =$ the first integer. Translate as $n + (n + 1) + (n + 2) = -36$, then solve for $n$."
 >}}
 
+## Key terms
+
+**problem-solving strategy** — the seven-step method (read, identify, name,
+translate, solve, check, answer) used to set up and solve any word problem.
+**number problem** — a word problem giving clues about one or more numbers,
+solved by naming the numbers in terms of a single variable and translating
+the clues into an equation. **consecutive integers** — integers that
+immediately follow each other, each one more than the number before it.
+
 ## Practice
 
 ### Approach word problems with a positive attitude
@@ -398,15 +407,6 @@ three consecutive integers are $13$, $14$, and $15$.
   answer="25, 26, 27"
   hint="Let $n =$ the smallest integer, so the next two are $n + 1$ and $n + 2$. Solve $n + (n + 1) + (n + 2) = 78$."
 >}}
-
-## Key terms
-
-**problem-solving strategy** — the seven-step method (read, identify, name,
-translate, solve, check, answer) used to set up and solve any word problem.
-**number problem** — a word problem giving clues about one or more numbers,
-solved by naming the numbers in terms of a single variable and translating
-the clues into an equation. **consecutive integers** — integers that
-immediately follow each other, each one more than the number before it.
 
 ---
 

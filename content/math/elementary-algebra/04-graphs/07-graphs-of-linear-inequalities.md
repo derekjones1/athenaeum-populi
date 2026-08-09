@@ -324,6 +324,17 @@ solid
 dashed
 {{< /multiplechoice >}}
 
+## Key terms
+
+**linear inequality** — an inequality that can be written as $Ax + By > C$,
+$Ax + By \geq C$, $Ax + By < C$, or $Ax + By \leq C$, where $A$ and $B$ are
+not both zero. **solution of a linear inequality** — an ordered pair
+$(x, y)$ that makes the inequality true when substituted in. **boundary
+line** — the line $Ax + By = C$ that separates the plane into the region
+where $Ax + By > C$ and the region where $Ax + By < C$; drawn dashed when
+strict ($<$ or $>$) and solid when the inequality includes equality
+($\leq$ or $\geq$).
+
 ## Practice
 
 ### Verify solutions to an inequality in two variables
@@ -440,17 +451,6 @@ a dashed boundary line with the side containing the origin shaded
 a solid boundary line with the side not containing the origin shaded
 a dashed boundary line with the side not containing the origin shaded
 {{< /multiplechoice >}}
-
-## Key terms
-
-**linear inequality** — an inequality that can be written as $Ax + By > C$,
-$Ax + By \geq C$, $Ax + By < C$, or $Ax + By \leq C$, where $A$ and $B$ are
-not both zero. **solution of a linear inequality** — an ordered pair
-$(x, y)$ that makes the inequality true when substituted in. **boundary
-line** — the line $Ax + By = C$ that separates the plane into the region
-where $Ax + By > C$ and the region where $Ax + By < C$; drawn dashed when
-strict ($<$ or $>$) and solid when the inequality includes equality
-($\leq$ or $\geq$).
 
 ---
 

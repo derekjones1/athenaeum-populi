@@ -320,6 +320,7 @@ $$
 {{< fillin
   question="Use synthetic division to find the quotient when $3x^3+10x^2+6x-2$ is divided by $x+2$."
   answer="3x^2+4x-2"
+  answerForm="expanded"
   answerDisplay="$3x^2+4x-2$"
   hint="Use $c=-2$. The final row is $3,4,-2,2$; the last entry is the remainder."
 >}}
@@ -333,6 +334,7 @@ $$
 {{< fillin
   question="Use synthetic division to find the quotient when $4x^3+5x^2-5x+3$ is divided by $x+2$."
   answer="4x^2-3x+1"
+  answerForm="expanded"
   answerDisplay="$4x^2-3x+1$"
   hint="Use $c=-2$. The final row is $4,-3,1,1$; the last entry is the remainder."
 >}}
@@ -361,6 +363,7 @@ $x^3-4x^2+3$, and the remainder is $0$.
 {{< fillin
   question="Use synthetic division to find the quotient when $x^4-16x^2+5x+20$ is divided by $x+4$."
   answer="x^3-4x^2+5"
+  answerForm="expanded"
   answerDisplay="$x^3-4x^2+5$"
   hint="Use the zero of the divisor in synthetic division, including zero coefficients for missing powers."
 >}}
@@ -368,6 +371,7 @@ $x^3-4x^2+3$, and the remainder is $0$.
 {{< fillin
   question="Use synthetic division to find the quotient when $x^4-9x^2+2x+6$ is divided by $x+3$."
   answer="x^3-3x^2+2"
+  answerForm="expanded"
   answerDisplay="$x^3-3x^2+2$"
   hint="Use the zero of the divisor in synthetic division, including zero coefficients for missing powers."
 >}}
@@ -404,6 +408,7 @@ $$
 {{< fillin
   question="For $f(x)=x^2-5x-24$ and $g(x)=x+3$, find $\left(\tfrac{f}{g}\right)(x)$."
   answer="x-8"
+  answerForm="expanded"
   answerDisplay="$x-8$"
   hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
@@ -532,6 +537,140 @@ coefficients, for a divisor of the form $x-c$. **Remainder Theorem** — when
 $f(x)$ is divided by $x-c$, the remainder is $f(c)$. **Factor Theorem** —
 $x-c$ is a factor of $f(x)$ exactly when $f(c)=0$.
 
+## Practice
+
+### Divide monomials
+
+{{< fillin
+  question="Find the quotient: $20m^8n^4\div\left(30m^5n^9\right)$."
+  answer="\frac{2m^3}{3n^5}"
+  answerForm="single-fraction"
+  answerDisplay="$\tfrac{2m^3}{3n^5}$"
+  hint="Divide the coefficients, then subtract exponents on each base; a negative exponent moves that factor to the other side of the fraction bar."
+>}}
+
+{{< fillin
+  question="Find the quotient: $\tfrac{45x^5y^9}{-60x^8y^6}$."
+  answer="-\frac{3y^3}{4x^3}"
+  answerForm="single-fraction"
+  answerDisplay="$-\tfrac{3y^3}{4x^3}$"
+  hint="Divide the coefficients, then subtract exponents on each base; a negative exponent moves that factor to the other side of the fraction bar."
+>}}
+
+### Divide a polynomial by a monomial
+
+{{< fillin
+  question="Find the quotient: $\left(8x^3+6x^2\right)\div2x$."
+  answer="4x^2+3x"
+  answerForm="polynomial"
+  answerDisplay="$4x^2+3x$"
+  hint="Divide each term of the polynomial by the monomial divisor separately."
+>}}
+
+{{< fillin
+  question="Find the quotient: $\left(48y^4-24y^3\right)\div\left(-8y^2\right)$."
+  answer="-6y^2+3y"
+  answerForm="polynomial"
+  answerDisplay="$-6y^2+3y$"
+  hint="Divide each term of the polynomial by the monomial divisor separately."
+>}}
+
+### Divide polynomials using long division
+
+{{< fillin
+  question="Find the quotient: $\left(a^2-2a-35\right)\div(a+5)$."
+  answer="a-7"
+  answerForm="expanded"
+  answerDisplay="$a-7$"
+  hint="Divide, multiply, subtract, and bring down; repeat until the remainder's degree is less than the divisor's."
+>}}
+
+{{< fillin
+  question="Find the quotient: $\left(p^2+11p+16\right)\div(p+8)$."
+  answer="p+3-\frac{8}{p+8}"
+  answerForm="expanded"
+  answerDisplay="$p+3-\tfrac{8}{p+8}$"
+  hint="Divide, multiply, subtract, and bring down; write any nonzero remainder over the divisor."
+>}}
+
+### Divide polynomials using synthetic division
+
+{{< fillin
+  question="Use synthetic division to find the quotient when $x^3-3x^2-4x+12$ is divided by $x+2$."
+  answer="x^2-5x+6"
+  answerForm="expanded"
+  answerDisplay="$x^2-5x+6$"
+  hint="Use $c=-2$; the final row's leading entries are the quotient's coefficients."
+>}}
+
+{{< fillin
+  question="Find the remainder when $x^3-3x^2-4x+12$ is divided by $x+2$."
+  answer="0"
+  hint="For division by $x-c$, evaluate the polynomial at $c$; that value is the remainder."
+>}}
+
+{{< fillin
+  question="Use synthetic division to find the quotient when $2x^3-11x^2+16x-12$ is divided by $x-4$."
+  answer="2x^2-3x+4"
+  answerForm="expanded"
+  answerDisplay="$2x^2-3x+4$"
+  hint="Use $c=4$; the final row's leading entries are the quotient's coefficients."
+>}}
+
+{{< fillin
+  question="Find the remainder when $2x^3-11x^2+16x-12$ is divided by $x-4$."
+  answer="4"
+  hint="For division by $x-c$, evaluate the polynomial at $c$; that value is the remainder."
+>}}
+
+### Divide polynomial functions
+
+{{< fillin
+  question="For $f(x)=x^2-15x+54$ and $g(x)=x-9$, find $\left(\tfrac{f}{g}\right)(x)$."
+  answer="x-6"
+  answerForm="expanded"
+  answerDisplay="$x-6$"
+  hint="Divide $f(x)$ by $g(x)$ using long division, or factor $f(x)$ and cancel the common factor with $g(x)$."
+>}}
+
+{{< fillin
+  question="For $f(x)=x^2-15x+54$ and $g(x)=x-9$, find $\left(\tfrac{f}{g}\right)(-5)$."
+  answer="-11"
+  hint="Substitute $x=-5$ into the simplified quotient from the previous part, or evaluate $f(-5)$ and $g(-5)$ and divide."
+>}}
+
+### Use the Remainder and Factor Theorems
+
+{{< fillin
+  question="Use the Remainder Theorem to find the remainder when $f(x)=x^3-4x-9$ is divided by $x+2$."
+  answer="-9"
+  hint="For division by $x-c$, evaluate the polynomial at $c$; that value is the remainder."
+>}}
+
+{{< fillin
+  question="Use the Remainder Theorem to find the remainder when $f(x)=7x^2-5x-8$ is divided by $x-1$."
+  answer="-6"
+  hint="For division by $x-c$, evaluate the polynomial at $c$; that value is the remainder."
+>}}
+
+{{< multiplechoice
+  question="Use the Factor Theorem to determine whether $x+4$ is a factor of $f(x)=x^3+x^2-14x+8$."
+  answer="no"
+  hint="Evaluate $f(-4)$ — a zero remainder means the binomial is a factor."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Use the Factor Theorem to determine whether $x-3$ is a factor of $f(x)=x^3-7x^2+11x+3$."
+  answer="yes"
+  hint="Evaluate $f(3)$ — a zero remainder means the binomial is a factor."
+>}}
+yes
+no
+{{< /multiplechoice >}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 5.4: Dividing Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/5-4-dividing-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: condensed the multi-row worked-example step tables into prose and typeset math, recreated the numeric and polynomial long divisions and synthetic-division layouts as math arrays, omitted the Be Prepared quiz, Self Check checklist, media links, and end-of-section exercises, and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 5.4: Dividing Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/5-4-dividing-polynomials) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: condensed the multi-row worked-example step tables into prose and typeset math, recreated the numeric and polynomial long divisions and synthetic-division layouts as math arrays, omitted the Be Prepared quiz, Self Check checklist, and media links, converted the practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into an interactive Practice block.</small>

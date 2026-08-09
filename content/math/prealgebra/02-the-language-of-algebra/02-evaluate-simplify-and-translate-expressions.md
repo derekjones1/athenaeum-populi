@@ -210,6 +210,15 @@ parentheses change the result.
   hint="Add $m$ and $n$ first (that is the sum), then multiply the whole sum by $5$ — so it needs parentheses."
 >}}
 
+## Key terms
+
+**evaluate** — to find the value of an expression by substituting a given number
+for the variable and simplifying. **term** — a constant or the product of a
+constant and one or more variables. **coefficient** — the constant that
+multiplies the variable(s) in a term. **like terms** — terms that are constants,
+or that have the same variables raised to the same powers. **combining like
+terms** — simplifying by adding the coefficients of like terms.
+
 ## Practice
 
 ### Evaluate algebraic expressions
@@ -339,15 +348,6 @@ $16ab$, $16b^2$, and $4ab$; $9a$ and $9b^2$
   answerDisplay="$2n - 7$"
   hint="Twice the number of nickels is $2n$; 'seven less than' that amount means subtract $7$ from it."
 >}}
-
-## Key terms
-
-**evaluate** — to find the value of an expression by substituting a given number
-for the variable and simplifying. **term** — a constant or the product of a
-constant and one or more variables. **coefficient** — the constant that
-multiplies the variable(s) in a term. **like terms** — terms that are constants,
-or that have the same variables raised to the same powers. **combining like
-terms** — simplifying by adding the coefficients of like terms.
 
 ---
 

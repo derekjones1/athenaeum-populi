@@ -539,6 +539,14 @@ $$\frac{9 \times 10^3}{3 \times 10^{-2}} = \frac{9}{3} \times \frac{10^3}{10^{-2
   hint="Divide the coefficients ($8$ by $2$) and subtract the exponents on $10$ ($4 - (-1)$), then convert the result to decimal form."
 >}}
 
+## Key terms
+
+**negative exponent** — for a positive integer $n$ and $a \neq 0$,
+$a^{-n} = \tfrac{1}{a^n}$; the exponent tells us to take the reciprocal of
+the base and change the sign of the exponent. **scientific notation** — a
+number written as $a \times 10^n$, where $1 \le a < 10$ and $n$ is an
+integer, used to conveniently express very large or very small numbers.
+
 ## Practice
 
 ### Use the definition of a negative exponent
@@ -686,14 +694,6 @@ $$\frac{9 \times 10^3}{3 \times 10^{-2}} = \frac{9}{3} \times \frac{10^3}{10^{-2
   answerDisplay="20,000,000"
   hint="Divide the coefficients ($8$ by $4$) and subtract the exponents on $10$ ($6 - (-1)$), then convert the result to decimal form."
 >}}
-
-## Key terms
-
-**negative exponent** — for a positive integer $n$ and $a \neq 0$,
-$a^{-n} = \tfrac{1}{a^n}$; the exponent tells us to take the reciprocal of
-the base and change the sign of the exponent. **scientific notation** — a
-number written as $a \times 10^n$, where $1 \le a < 10$ and $n$ is an
-integer, used to conveniently express very large or very small numbers.
 
 ---
 

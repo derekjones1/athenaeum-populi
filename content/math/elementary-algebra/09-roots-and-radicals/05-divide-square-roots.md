@@ -374,6 +374,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{7}{18}}$."
   answer="\frac{\sqrt{14}}{6}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{14}}{6}$"
   hint="Rewrite as $\tfrac{\sqrt{7}}{\sqrt{18}} = \tfrac{\sqrt{7}}{3\sqrt{2}}$, then multiply the numerator and denominator by $\sqrt{2}$."
 >}}
@@ -381,6 +382,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{3}{32}}$."
   answer="\frac{\sqrt{6}}{8}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{6}}{8}$"
   hint="Rewrite as $\tfrac{\sqrt{3}}{\sqrt{32}} = \tfrac{\sqrt{3}}{4\sqrt{2}}$, then multiply the numerator and denominator by $\sqrt{2}$."
 >}}
@@ -403,6 +405,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{3}{27}}$."
   answer="\frac{1}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{3}$"
   hint="The fraction inside reduces: $\tfrac{3}{27} = \tfrac{1}{9}$, which is a perfect square."
 >}}
@@ -410,6 +413,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{10}{50}}$."
   answer="\frac{\sqrt{5}}{5}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{5}}{5}$"
   hint="The fraction inside reduces to $\tfrac{1}{5}$, so this is $\tfrac{1}{\sqrt{5}}$; then rationalize by multiplying by $\sqrt{5}$."
 >}}
@@ -560,6 +564,19 @@ common factors to remove from the numerator and denominator.
   hint="Multiply the numerator and denominator by the conjugate $\sqrt{q} - \sqrt{10}$; the denominator becomes $q - 10$, and the numerator stays in factored (squared) form."
 >}}
 
+## Key terms
+
+**Quotient Property of Square Roots** — for non-negative real numbers $a$ and
+$b$ with $b \neq 0$, $\sqrt{\tfrac{a}{b}} = \tfrac{\sqrt{a}}{\sqrt{b}}$ (and its
+reverse), used to simplify a quotient of square roots. **rationalizing the
+denominator** — converting a fraction with a radical in the denominator to an
+equivalent fraction whose denominator is an integer. **conjugate** — for a
+two-term expression $a + b$, the expression $a - b$; multiplying a binomial
+containing a square root by its conjugate gives a product with no square roots.
+**simplified square root** — a square root with no perfect-square factors in
+the radicand, no fractions in the radicand, and no square roots in a
+denominator.
+
 ## Practice
 
 ### Divide square roots
@@ -631,19 +648,6 @@ common factors to remove from the numerator and denominator.
   answerDisplay="$\tfrac{\left(\sqrt{r} + \sqrt{5}\right)^2}{r - 5}$"
   hint="Multiply the numerator and denominator by the conjugate $\sqrt{r} + \sqrt{5}$; the denominator becomes $r - 5$, and the numerator stays in factored (squared) form."
 >}}
-
-## Key terms
-
-**Quotient Property of Square Roots** — for non-negative real numbers $a$ and
-$b$ with $b \neq 0$, $\sqrt{\tfrac{a}{b}} = \tfrac{\sqrt{a}}{\sqrt{b}}$ (and its
-reverse), used to simplify a quotient of square roots. **rationalizing the
-denominator** — converting a fraction with a radical in the denominator to an
-equivalent fraction whose denominator is an integer. **conjugate** — for a
-two-term expression $a + b$, the expression $a - b$; multiplying a binomial
-containing a square root by its conjugate gives a product with no square roots.
-**simplified square root** — a square root with no perfect-square factors in
-the radicand, no fractions in the radicand, and no square roots in a
-denominator.
 
 ---
 

@@ -562,9 +562,103 @@ Square Root Property
 Quadratic Formula
 {{< /multiplechoice >}}
 
-**Key terms.** The **Quadratic Formula** gives the solutions of
+## Key terms
+
+The **Quadratic Formula** gives the solutions of
 $ax^2+bx+c=0$, $a\ne0$, as
 $x=\tfrac{-b\pm\sqrt{b^2-4ac}}{2a}$. The **discriminant** is the quantity
 $b^2-4ac$ under the radical in the Quadratic Formula.
 
-<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 9.3](https://openstax.org/books/intermediate-algebra-2e/pages/9-3-solve-quadratic-equations-using-the-quadratic-formula), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted examples and Try It exercises for interactive web use and accessibility.</small>
+## Practice
+
+### Solve quadratic equations using the Quadratic Formula
+
+{{< fillin
+  question="Solve $2p^2-7p+3=0$ by using the Quadratic Formula. Enter both solutions separated by a comma."
+  answer="\frac{1}{2}, 3"
+  answerMode="unordered"
+  answerDisplay="$p=\tfrac{1}{2},\ p=3$"
+  hint="Use $a=2$, $b=-7$, and $c=3$ in the Quadratic Formula."
+>}}
+
+{{< fillin
+  question="Solve $3u^2+7u-2=0$ by using the Quadratic Formula. Enter both solutions separated by a comma."
+  answer="\frac{-7+\sqrt{73}}{6}, \frac{-7-\sqrt{73}}{6}"
+  answerMode="unordered"
+  answerDisplay="$u=\tfrac{-7+\sqrt{73}}{6},\ u=\tfrac{-7-\sqrt{73}}{6}$"
+  hint="The discriminant $73$ is not a perfect square, so leave the radical in simplified form."
+>}}
+
+{{< fillin
+  question="Solve $2x^2+3x+3=0$ by using the Quadratic Formula. Enter both solutions separated by a comma."
+  answer="-\frac{3}{4}+\frac{\sqrt{15}}{4}i, -\frac{3}{4}-\frac{\sqrt{15}}{4}i"
+  answerMode="unordered"
+  answerDisplay="$x=-\tfrac34+\tfrac{\sqrt{15}}4i,\ x=-\tfrac34-\tfrac{\sqrt{15}}4i$"
+  hint="A negative discriminant gives two complex solutions."
+>}}
+
+### Use the discriminant to predict the number and type of solutions of a quadratic equation
+
+{{< multiplechoice
+  question="Determine the number and type of solutions to $4x^2-5x+16=0$."
+  answer="2 complex solutions"
+  hint="Find the sign of $(-5)^2-4(4)(16)$."
+>}}
+2 real solutions
+1 real solution
+2 complex solutions
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine the number and type of solutions to $36y^2+36y+9=0$."
+  answer="1 real solution"
+  hint="Find the sign of $36^2-4(36)(9)$."
+>}}
+2 real solutions
+1 real solution
+2 complex solutions
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine the number and type of solutions to $6m^2+3m-5=0$."
+  answer="2 real solutions"
+  hint="Find the sign of $3^2-4(6)(-5)$."
+>}}
+2 real solutions
+1 real solution
+2 complex solutions
+{{< /multiplechoice >}}
+
+### Identify the most appropriate method to use to solve a quadratic equation
+
+{{< multiplechoice
+  question="Identify the most appropriate method to solve $x^2-5x-24=0$."
+  answer="Factoring"
+  hint="Check whether the quadratic factors easily."
+>}}
+Factoring
+Square Root Property
+Quadratic Formula
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Identify the most appropriate method to solve $(y+5)^2=12$."
+  answer="Square Root Property"
+  hint="The equation is already in the form $a(y-h)^2=k$."
+>}}
+Factoring
+Square Root Property
+Quadratic Formula
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Identify the most appropriate method to solve $14m^2+3m=11$."
+  answer="Quadratic Formula"
+  hint="Write the equation in standard form and consider whether factoring would be quick."
+>}}
+Factoring
+Square Root Property
+Quadratic Formula
+{{< /multiplechoice >}}
+
+<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 9.3](https://openstax.org/books/intermediate-algebra-2e/pages/9-3-solve-quadratic-equations-using-the-quadratic-formula), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted examples and Try It exercises for interactive web use and accessibility, and adapted selected end-of-section exercises into an interactive Practice block.</small>

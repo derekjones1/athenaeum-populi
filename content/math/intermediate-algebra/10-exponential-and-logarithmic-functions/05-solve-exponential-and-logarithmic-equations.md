@@ -330,7 +330,78 @@ This problem requires two main steps. First we must find the decay constant k. I
 **Media.** Access these online resources for additional instruction and practice with solving exponential and logarithmic equations.
 {{< /callout >}}
 
+## Practice
+
+### Solve logarithmic equations using the properties of logarithms
+
+{{< fillin
+  question="Solve $\log 49=2\log x$."
+  answer="7"
+  answerDisplay="$x=7$"
+  hint="Rewrite $2\log x$ as $\log x^2$, equate the arguments, and reject the root that is not positive."
+>}}
+
+{{< fillin
+  question="Solve $\log x+\log(x-15)=2$."
+  answer="20"
+  answerDisplay="$x=20$"
+  hint="Combine the left side with the Product Property, rewrite in exponential form, and keep only the root satisfying $x>15$."
+>}}
+
+{{< fillin
+  question="Solve $\log_5(x+1)+\log_5(x-5)=\log_5 7$."
+  answer="6"
+  answerDisplay="$x=6$"
+  hint="Use the Product Property, apply the One-to-One Property, and keep only the root satisfying $x>5$."
+>}}
+
+### Solve exponential equations using logarithms
+
+{{< fillin
+  question="Solve $2^x=74$. Enter the exact answer; the feedback also gives its three-decimal approximation."
+  answer="\frac{\log 74}{\log 2}"
+  answerDisplay="$x=\tfrac{\log74}{\log2}\approx6.209$"
+  hint="Take the logarithm of both sides and use the Power Property to bring the exponent down as a factor."
+>}}
+
+{{< fillin
+  question="Solve $e^x=8$. Enter the exact answer; the feedback also gives its three-decimal approximation."
+  answer="\ln 8"
+  answerDisplay="$x=\ln8\approx2.079$"
+  hint="Take the natural logarithm of both sides and use $\ln e=1$."
+>}}
+
+{{< fillin
+  question="Solve $\tfrac{e^{x^2}}{e^x}=e^{20}$. Enter both solutions, separated by a comma."
+  answer="-4,5"
+  answerMode="unordered"
+  answerDisplay="$x=-4$ or $x=5$"
+  hint="The bases already match, so set the exponents equal and solve the resulting quadratic."
+>}}
+
+### Use exponential models in applications
+
+{{< fillin
+  question="Simone invests \$8,000 in an account that compounds interest quarterly and earns 5%. How long will it take for the money to double? Round to the nearest tenth of a year."
+  answer="13.9"
+  answerDisplay="about $13.9$ years"
+  hint="Set $2=\left(1+\tfrac{0.05}{4}\right)^{4t}$, take the logarithm of both sides, and solve for $t$."
+>}}
+
+{{< fillin
+  question="A bacteria population doubles every 24 hours. After 72 hours, the population is how many times as large as the original? Enter the multiplier."
+  answer="8"
+  answerDisplay="$8$ times the original population"
+  hint="72 hours is three doubling periods, so multiply by 2 three times."
+>}}
+
+{{< fillin
+  question="Technetium-99m has a half-life of 6 hours. About how many milliliters of a 0.5 ml injection remain in the body after 24 hours? Round to the nearest hundredth of a milliliter."
+  answer="0.03"
+  answerDisplay="about $0.03$ ml"
+  hint="24 hours is four half-lives, so multiply 0.5 by $(\tfrac12)^4$."
+>}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 10.5: Solve Exponential and Logarithmic Equations](https://openstax.org/books/intermediate-algebra-2e/pages/10-5-solve-exponential-and-logarithmic-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions for the web; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 10.5: Solve Exponential and Logarithmic Equations](https://openstax.org/books/intermediate-algebra-2e/pages/10-5-solve-exponential-and-logarithmic-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions for the web; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

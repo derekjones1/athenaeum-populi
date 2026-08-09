@@ -492,6 +492,14 @@ The sticker price was $\text{\textdollar}25{,}450$.
   hint="Let $n =$ the nighttime price. Translate to $7.75 = n - 3.25$, then isolate $n$."
 >}}
 
+## Key terms
+
+**solution of an equation** — a value of a variable that makes a true
+statement when substituted into the equation. **Subtraction Property of
+Equality** — for all real numbers $a$, $b$, and $c$, if $a = b$, then
+$a - c = b - c$. **Addition Property of Equality** — for all real numbers
+$a$, $b$, and $c$, if $a = b$, then $a + c = b + c$.
+
 ## Practice
 
 ### Solve equations using the Subtraction and Addition Properties of Equality
@@ -589,14 +597,6 @@ no
   answerDisplay="\$121.19"
   hint="Let $L =$ last week's paycheck. Translate to $103.76 = L - 17.43$, then add $17.43$ to both sides."
 >}}
-
-## Key terms
-
-**solution of an equation** — a value of a variable that makes a true
-statement when substituted into the equation. **Subtraction Property of
-Equality** — for all real numbers $a$, $b$, and $c$, if $a = b$, then
-$a - c = b - c$. **Addition Property of Equality** — for all real numbers
-$a$, $b$, and $c$, if $a = b$, then $a + c = b + c$.
 
 ---
 

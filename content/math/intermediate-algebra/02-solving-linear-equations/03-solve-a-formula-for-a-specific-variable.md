@@ -526,6 +526,10 @@ $$
   hint="The string is the hypotenuse. Solve $15^2+b^2=17^2$."
 >}}
 
+## Key terms
+
+Pythagorean Theorem.
+
 ## Practice
 
 ### Solve a formula for a specific variable
@@ -587,8 +591,6 @@ $$
   answerDisplay="5 feet"
   hint="The string of lights is the hypotenuse. Solve $12^2+d^2=13^2$."
 >}}
-
-**Key terms:** Pythagorean Theorem.
 
 ---
 

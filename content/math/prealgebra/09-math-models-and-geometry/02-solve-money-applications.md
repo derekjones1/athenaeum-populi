@@ -291,6 +291,14 @@ Monica bought eight $8$-cent stamps and twenty $49$-cent stamps.
   hint="Let $x =$ number of 21-cent stamps, so $3x - 4$ is the number of 49-cent stamps. Translate as $0.49(3x - 4) + 0.21x = 14.84$, then solve for $x$."
 >}}
 
+## Key terms
+
+**coin word problem** — a word problem that finds the number of coins of
+each type from clues about their relationship and their total value, using
+a table of number, value, and total value for each coin type. **ticket
+(and stamp) word problem** — a word problem structurally identical to a
+coin word problem, with ticket or stamp prices in place of coin values.
+
 ## Practice
 
 ### Solve coin word problems
@@ -359,14 +367,6 @@ Monica bought eight $8$-cent stamps and twenty $49$-cent stamps.
   answerDisplay="30 at 49 cents, 10 at 21 cents"
   hint="Name the smaller group first: let $x =$ number of 21-cent stamps, so $3x$ is the number of 49-cent stamps. Translate as $0.21x + 0.49(3x) = 16.80$."
 >}}
-
-## Key terms
-
-**coin word problem** — a word problem that finds the number of coins of
-each type from clues about their relationship and their total value, using
-a table of number, value, and total value for each coin type. **ticket
-(and stamp) word problem** — a word problem structurally identical to a
-coin word problem, with ticket or stamp prices in place of coin values.
 
 ---
 

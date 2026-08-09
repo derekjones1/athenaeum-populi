@@ -397,6 +397,16 @@ $$\text{Probability} = \frac{3}{8}$$
   hint="There are $2$ pairs of black socks out of $8$ total pairs — write that as a fraction, then convert to a decimal."
 >}}
 
+## Key terms
+
+**mean** — the arithmetic average of a set of $n$ numbers, found by dividing
+the sum of the values by $n$. **median** — the middle value of a set of data
+(or the mean of the two middle values, when there is an even number of
+values). **mode** — the value in a set of numbers with the highest
+frequency. **frequency** — the number of times a value occurs in a data
+set. **probability** — the number of favorable outcomes divided by the
+total number of possible outcomes.
+
 ## Practice
 
 ### Calculate the mean of a set of numbers
@@ -501,16 +511,6 @@ $$\text{Probability} = \frac{3}{8}$$
   answer="0.714"
   hint="Divide the number of out-of-state colleges by the total, then round to three decimal places."
 >}}
-
-## Key terms
-
-**mean** — the arithmetic average of a set of $n$ numbers, found by dividing
-the sum of the values by $n$. **median** — the middle value of a set of data
-(or the mean of the two middle values, when there is an even number of
-values). **mode** — the value in a set of numbers with the highest
-frequency. **frequency** — the number of times a value occurs in a data
-set. **probability** — the number of favorable outcomes divided by the
-total number of possible outcomes.
 
 ---
 

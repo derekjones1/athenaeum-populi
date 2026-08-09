@@ -655,6 +655,70 @@ $x=-\tfrac{1}{3}-\tfrac{\sqrt{13}}{3}$. We leave the check for you!
 which transforms a quadratic equation into a form that can be solved using the
 Square Root Property.
 
+## Practice
+
+### Complete the square of a binomial expression
+
+{{< fillin
+  question="Complete the square for $m^2-24m$ to make a perfect square trinomial, then factor it as a binomial squared."
+  answer="(m-12)^2"
+  answerForm="factored"
+  answerDisplay="$(m-12)^2$"
+  hint="Take half of $-24$ and square it to find the term that completes the square."
+>}}
+
+{{< fillin
+  question="Complete the square for $x^2-11x$ to make a perfect square trinomial, then factor it as a binomial squared."
+  answer="(x-\frac{11}{2})^2"
+  answerForm="factored"
+  answerDisplay="$(x-\tfrac{11}{2})^2$"
+  hint="Halving an odd coefficient gives a fraction — square that fraction to complete the square."
+>}}
+
+{{< fillin
+  question="Complete the square for $p^2-\tfrac{1}{3}p$ to make a perfect square trinomial, then factor it as a binomial squared."
+  answer="(p-\frac{1}{6})^2"
+  answerForm="factored"
+  answerDisplay="$(p-\tfrac{1}{6})^2$"
+  hint="Halve the fractional coefficient of $p$, then square the result to complete the square."
+>}}
+
+### Solve quadratic equations of the form $x^2+bx+c=0$ by completing the square
+
+{{< fillin
+  question="Solve by completing the square: $u^2+2u=3$. Enter both solutions, separated by a comma."
+  answer="-3,1"
+  answerMode="unordered"
+  answerDisplay="$u=-3,\ u=1$"
+  hint="Add 1 to both sides so the left side becomes $(u+1)^2$."
+>}}
+
+{{< fillin
+  question="Solve by completing the square: $r^2+6r=-11$. Enter both solutions, separated by a comma."
+  answer="-3+\sqrt{2}i,-3-\sqrt{2}i"
+  answerMode="unordered"
+  answerDisplay="$r=-3+\sqrt{2}i,\ r=-3-\sqrt{2}i$"
+  hint="Add 9 to both sides, then use $\sqrt{-2}=\sqrt{2}i$."
+>}}
+
+### Solve quadratic equations of the form $ax^2+bx+c=0$ by completing the square
+
+{{< fillin
+  question="Solve by completing the square: $3m^2+30m-27=6$. Enter both solutions, separated by a comma."
+  answer="-11,1"
+  answerMode="unordered"
+  answerDisplay="$m=-11,\ m=1$"
+  hint="Move the constant term, divide by 3, and complete the square."
+>}}
+
+{{< fillin
+  question="Solve by completing the square: $2c^2+c=6$. Enter both solutions, separated by a comma."
+  answer="-2,\frac{3}{2}"
+  answerMode="unordered"
+  answerDisplay="$c=-2,\ c=\tfrac{3}{2}$"
+  hint="Divide both sides by 2, then complete the square."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 9.2: Solve Quadratic Equations by Completing the Square](https://openstax.org/books/intermediate-algebra-2e/pages/9-2-solve-quadratic-equations-by-completing-the-square) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked-example steps as accessible typeset mathematics; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 9.2: Solve Quadratic Equations by Completing the Square](https://openstax.org/books/intermediate-algebra-2e/pages/9-2-solve-quadratic-equations-by-completing-the-square) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked-example steps as accessible typeset mathematics; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

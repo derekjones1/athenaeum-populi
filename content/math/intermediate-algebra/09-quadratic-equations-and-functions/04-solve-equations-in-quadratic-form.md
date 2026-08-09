@@ -359,9 +359,56 @@ $$
   hint="Use $u=x^{-1}$, factor the quadratic equation in $u$, and then take reciprocals."
 >}}
 
-**Key terms.** An equation is in **quadratic form** when a substitution can
+## Key terms
+
+An equation is in **quadratic form** when a substitution can
 rewrite it in the form $au^2+bu+c=0$, where $a\ne0$.
 
+## Practice
+
+### Solve equations in quadratic form
+
+{{< fillin
+  question="Solve $x^4-7x^2+12=0$. Enter all four solutions, separated by commas."
+  answer="\sqrt{3}, -\sqrt{3}, 2, -2"
+  answerMode="unordered"
+  answerDisplay="$x=\sqrt{3},\ x=-\sqrt{3},\ x=2,\ x=-2$"
+  hint="Let $u=x^2$, factor the resulting quadratic, and use the Square Root Property to find $x$."
+>}}
+
+{{< fillin
+  question="Solve $(x-3)^2-5(x-3)-36=0$. Enter both solutions, separated by a comma."
+  answer="12, -1"
+  answerMode="unordered"
+  answerDisplay="$x=12,\ x=-1$"
+  hint="Let $u=x-3$, solve the quadratic equation in $u$, and then substitute back to find $x$."
+>}}
+
+{{< fillin
+  question="Solve $x-\sqrt{x}-20=0$. One value of $u=\sqrt{x}$ does not give a real solution. Enter the one solution that remains."
+  answer="25"
+  answerDisplay="$x=25$"
+  hint="Let $u=\sqrt{x}$, solve the resulting quadratic, and discard any negative value of $u$ before squaring to find $x$."
+>}}
+
+{{< fillin
+  question="Solve $x^{\tfrac{2}{3}}+9x^{\tfrac{1}{3}}+8=0$. Enter both solutions, separated by a comma."
+  answer="-1, -512"
+  answerMode="unordered"
+  answerDisplay="$x=-1,\ x=-512$"
+  hint="Let $u=x^{\tfrac{1}{3}}$, factor the resulting quadratic, then cube each value of $u$ to find $x$."
+>}}
+
+{{< fillin
+  question="Solve $6x^{-2}+13x^{-1}+5=0$. Enter both solutions, separated by a comma."
+  answer="-2, -\frac{3}{5}"
+  answerMode="unordered"
+  answerDisplay="$x=-2,\ x=-\tfrac{3}{5}$"
+  hint="Let $u=x^{-1}$, factor the resulting quadratic, and then take the reciprocal of each value of $u$ to find $x$."
+>}}
+
+---
+
 <small>
-Adapted from [*Intermediate Algebra 2e*, Section 9.4](https://openstax.org/books/intermediate-algebra-2e/pages/9-4-solve-equations-in-quadratic-form) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: adapted the source to interactive web format and converted Try It exercises to auto-graded questions.
+Adapted from [*Intermediate Algebra 2e*, Section 9.4](https://openstax.org/books/intermediate-algebra-2e/pages/9-4-solve-equations-in-quadratic-form) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: adapted the source to interactive web format, converted Try It exercises to auto-graded questions, and adapted selected end-of-section exercises into an interactive Practice block.
 </small>

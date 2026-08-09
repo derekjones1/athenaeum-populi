@@ -954,6 +954,15 @@ The slope of the pipe is $-\tfrac{1}{48}$.
   hint="The rise is $-\tfrac{3}{4}$ inch and the run is $1$ yard $= 36$ inches. Simplify the fraction."
 >}}
 
+## Key terms
+
+**slope of a line** — the ratio of the rise (vertical change) to the run
+(horizontal change) between two points on the line, $m =
+\tfrac{\text{rise}}{\text{run}}$. **rise** — the vertical change between
+two points on a line. **run** — the horizontal change between two points on
+a line. **slope formula** — the slope of the line between two points
+$(x_1, y_1)$ and $(x_2, y_2)$ is $m = \tfrac{y_2 - y_1}{x_2 - x_1}$.
+
 ## Practice
 
 ### Use geoboards to model slope
@@ -1393,15 +1402,6 @@ undefined
   answerDisplay="a rise of $3$ feet"
   hint="Read the simplified fraction directly: the numerator is the rise that matches a run equal to the denominator."
 >}}
-
-## Key terms
-
-**slope of a line** — the ratio of the rise (vertical change) to the run
-(horizontal change) between two points on the line, $m =
-\tfrac{\text{rise}}{\text{run}}$. **rise** — the vertical change between
-two points on a line. **run** — the horizontal change between two points on
-a line. **slope formula** — the slope of the line between two points
-$(x_1, y_1)$ and $(x_2, y_2)$ is $m = \tfrac{y_2 - y_1}{x_2 - x_1}$.
 
 ---
 

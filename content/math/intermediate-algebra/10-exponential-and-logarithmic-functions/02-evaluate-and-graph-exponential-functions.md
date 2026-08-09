@@ -499,21 +499,78 @@ Exponential growth is typically seen in the growth of populations of humans or a
   question="A bacteria culture starts with 50 bacteria and grows by $15\%$ each hour. How many bacteria will there be after 8 hours?"
   answer="166"
   answerDisplay="166 bacteria"
-  hint="Use $A=50(1.15)^8$ and round to the nearest whole bacterium."
+  hint="This culture grows continuously, so use $A=A_0e^{rt}$ with $A_0=50$, $r=0.15$, and $t=8$, then round to the nearest whole bacterium."
 >}}
 
 {{< fillin
   question="A virus culture starts with 100 viruses and grows by $10\%$ each hour. How many viruses will there be after 24 hours?"
   answer="1102"
   answerDisplay="$1{,}102$ viruses"
-  hint="Use $A=100(1.10)^{24}$ and round to the nearest whole virus."
+  hint="This culture grows continuously, so use $A=A_0e^{rt}$ with $A_0=100$, $r=0.10$, and $t=24$, then round to the nearest whole virus."
 >}}
 
 {{< callout type="info" >}}
 Access these online resources for additional instruction and practice with evaluating and graphing exponential functions.
 {{< /callout >}}
 
+## Practice
+
+### Graph exponential functions
+
+{{< fillin
+  question="The graph of $g(x)=4^{x-1}$ is the graph of $f(x)=4^x$ shifted right 1 unit. What is the $y$-coordinate of the $y$-intercept of $g$?"
+  answer="\tfrac{1}{4}"
+  answerDisplay="$\tfrac{1}{4}$"
+  hint="Substitute $x=0$ into $g(x)=4^{x-1}$: $g(0)=4^{0-1}=4^{-1}$."
+>}}
+
+{{< fillin
+  question="The graph of $g(x)=2^x+1$ is the graph of $f(x)=2^x$ shifted up 1 unit. What is the equation of the horizontal asymptote of $g$?"
+  answer="y=1"
+  hint="A vertical shift of $k$ units moves the horizontal asymptote $y=0$ to $y=k$."
+>}}
+
+### Solve Exponential equations
+
+{{< fillin
+  question="Solve $2^{3x-8}=16$."
+  answer="4"
+  answerDisplay="$x=4$"
+  hint="Rewrite $16$ as a power of $2$, then equate the exponents."
+>}}
+
+{{< fillin
+  question="Solve $4^{x^2}=4$. Enter the solution set."
+  answer="-1,1"
+  answerMode="unordered"
+  answerDisplay="$x=-1$ or $x=1$"
+  hint="Since the bases already match, set $x^2=1$ and solve for $x$."
+  placeholder="solution set"
+>}}
+
+{{< fillin
+  question="Solve $e^{3x}\cdot e^4=e^{10}$."
+  answer="2"
+  answerDisplay="$x=2$"
+  hint="Use the Product Property of Exponents to combine the left side into a single power of $e$, then equate exponents."
+>}}
+
+### Use exponential models in applications
+
+{{< fillin
+  question="Rochelle deposits \$5,000 in an IRA that earns $8\%$ interest compounded continuously. Find the balance after 25 years, rounded to the nearest cent."
+  answer="36945.28"
+  answerDisplay="\$36,945.28"
+  hint="Use $A=Pe^{rt}$ with $P=5{,}000$, $r=0.08$, and $t=25$."
+>}}
+
+{{< fillin
+  question="The population of Indonesia has been growing at a continuous rate of $1.12\%$ per year and is currently 258,316,051. If this rate continues, what will the population be in 10 more years? Round to the nearest whole person."
+  answer="288929825"
+  answerDisplay="288,929,825 people"
+  hint="Use $A=A_0e^{rt}$ with $A_0=258{,}316{,}051$, $r=0.0112$, and $t=10$."
+>}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 10.2: Evaluate and Graph Exponential Functions](https://openstax.org/books/intermediate-algebra-2e/pages/10-2-evaluate-and-graph-exponential-functions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions for the web; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 10.2: Evaluate and Graph Exponential Functions](https://openstax.org/books/intermediate-algebra-2e/pages/10-2-evaluate-and-graph-exponential-functions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions for the web; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

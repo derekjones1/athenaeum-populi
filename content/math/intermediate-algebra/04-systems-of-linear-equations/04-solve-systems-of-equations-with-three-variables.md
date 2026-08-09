@@ -451,6 +451,20 @@ $25$ child tickets.
   hint="Let x, y, and z be the numbers of adult, student, and child tickets sold. Then x+y+z=350, 20x+12y+10z=4650, and z=x. Substitute z=x to reduce the system to two variables."
 >}}
 
+## Key terms
+
+**linear equation in three variables** — an equation of the form
+$ax+by+cz=d$, whose graph is a plane in three-dimensional space.
+**ordered triple** — a solution $(x,y,z)$ to an equation or system of
+equations in three variables. **solutions of a system of linear equations
+with three variables** — the ordered triples that make all three equations
+true; geometrically, the points common to all three planes. **consistent
+system** — a system with at least one solution. **inconsistent system** — a
+system with no solution; eliminating variables leaves a false statement
+like $0=-2$. **dependent equations** — equations whose graphs share a
+common line (or are the same plane), so the system has infinitely many
+solutions; eliminating variables leaves a true statement like $0=0$.
+
 ## Practice
 
 ### Determine whether an ordered triple is a solution of a system of three linear equations with three variables
@@ -540,20 +554,6 @@ infinitely many solutions
   answer="20,5,10"
   hint="Let c, k, and p be the prices of candy, cookies, and popcorn. Translate each person's sales into an equation and solve the resulting system."
 >}}
-
-## Key terms
-
-**linear equation in three variables** — an equation of the form
-$ax+by+cz=d$, whose graph is a plane in three-dimensional space.
-**ordered triple** — a solution $(x,y,z)$ to an equation or system of
-equations in three variables. **solutions of a system of linear equations
-with three variables** — the ordered triples that make all three equations
-true; geometrically, the points common to all three planes. **consistent
-system** — a system with at least one solution. **inconsistent system** — a
-system with no solution; eliminating variables leaves a false statement
-like $0=-2$. **dependent equations** — equations whose graphs share a
-common line (or are the same plane), so the system has infinitely many
-solutions; eliminating variables leaves a true statement like $0=0$.
 
 ---
 

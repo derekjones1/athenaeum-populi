@@ -146,7 +146,38 @@ const ALGEBRAIC_PRODUCT_PROMPT_RE = /(?:^|[.?!]\s+)\s*(?:multiply|divide|find th
  * own combined form. Answered by `no-like-terms`, `polynomial` and
  * `single-fraction`.
  */
-const ALGEBRAIC_SIMPLIFY_PROMPT_RE = /(?:^|[.?!]\s+)\s*(?:simplify|add|subtract|combine|find the (?:sum|difference))\b/i;
+const ALGEBRAIC_SIMPLIFY_PROMPT_RE = /(?:^|[.?!]\s+)\s*(?:simplify|add|subtract|combine|perform the indicated operation|find the (?:sum|difference))\b/i;
+
+/**
+ * Does the prompt ask for a STANDARD (or vertex) form of a printed equation?
+ * "Write $y=-x^2+2x-4$ in standard form" answers $y=-(x-1)^2-3$, and
+ * completing the square changes the shape, not the value — the §6 "standard
+ * form" class, answered by `vertex-form`, `conic-standard-form` and
+ * `circle-standard-form`. The $f(x)=a(x-h)^2+k$ alternation matches the
+ * quadratic-functions sections, which spell the same ask as its template.
+ *
+ * Deliberately loose about surrounding words ("in standard form", "use
+ * properties of standard form", "enter the function in vertex form"): the
+ * candidates are gated to printed EQUATION spans below, so a prompt that
+ * merely mentions the words but prints no equation contributes nothing.
+ */
+const STANDARD_FORM_PROMPT_RE = /\b(?:standard|vertex) form\b|\bin (?:the )?\$f\(x\)=a\(x-h\)\^2\+k\$ form\b/i;
+
+/**
+ * Does the prompt ask to CONVERT a printed logarithmic equation? "Convert the
+ * equation from logarithmic to exponential form: $3=\log_7 343$" answers
+ * $343=7^3$ — two true statements the grader accepts as equal, so retyping
+ * the printed equation passes. Answered by `exponential-form`.
+ */
+const EXPONENTIAL_FORM_PROMPT_RE = /\b(?:to|in) exponential form\b/i;
+
+/**
+ * Does the prompt ask to EXPAND a printed logarithm? "Use properties of
+ * logarithms to write $\log_5 25ab$ as a sum of logarithms" answers
+ * $2+\log_5 a+\log_5 b$, value-equal to the printed subject by construction.
+ * Answered by `expanded-logarithms`.
+ */
+const LOG_EXPANSION_PROMPT_RE = /\bas a sum\b[^.?!]*\blogarithms\b/i;
 
 /**
  * A categorical response encoded as a number: "Answer 1 for yes or 0 for no",
@@ -226,9 +257,46 @@ function printedPolynomialSubjects(question) {
   const subjects = [];
   for (const span of mathSpans(question, { allowNewlines: true })) {
     const inner = span.tex.trim();
-    if (/[=<>,]|\\(?:lt|gt|le|ge|ne|neq|text|begin|dots|ldots)/.test(inner)) continue;
-    if (!spanHasVariable(inner)) continue;
+    // A sigma's bounds are structure, not a statement: the `=` and any comma
+    // inside `\sum_{i=1}^{40}` must not read as a relation or an enumeration,
+    // so the header is blanked for the tests below while the whole span stays
+    // the subject — "Find the sum: $\sum_{i=1}^{40}(5i-21)$" prints a span
+    // worth exactly its own value.
+    const scan = inner.replace(/\\sum\s*(?:_\{[^{}]*\})?\s*(?:\^(?:\{[^{}]*\}|\S))?/g, ' ');
+    if (/[=<>,]|\\(?:lt|gt|le|ge|ne|neq|text|begin|dots|ldots)/.test(scan)) continue;
+    // A numeral radical is an algebraic subject too: "Simplify:
+    // $(4-3\sqrt{3})(5+2\sqrt{3})$" has no variable, but its printed span is
+    // worth exactly its own answer the same way a polynomial product is.
+    if (!spanHasVariable(scan) && !/\\sqrt/.test(scan)) continue;
     subjects.push(inner);
+  }
+  return subjects;
+}
+
+/**
+ * The equations a question prints — every whole $…$ span with exactly one
+ * `=`, for a rewrite-this-equation prompt (standard form, exponential form).
+ * The mirror of printedPolynomialSubjects(), which deliberately EXCLUDES
+ * relation spans; this one exists so the standard-form and conversion verbs
+ * can see them, and like every extractor it is reached only through its own
+ * prompt gates. No variable requirement: the logarithmic conversion's printed
+ * equation ($3=\log_7 343$) has none once macros are stripped.
+ *
+ * A definition span (`y=RHS`, `f(x)=RHS`) also contributes its bare
+ * right-hand side: the learner answers those prompts without the label, and
+ * the labelled span itself does not grade as an f(x) equation.
+ */
+function printedEquationSubjects(question) {
+  const subjects = [];
+  for (const span of mathSpans(question, { allowNewlines: true })) {
+    const inner = span.tex.trim();
+    if (/[<>,]|\\(?:lt|gt|le|ge|ne|neq|text|begin|dots|ldots)/.test(inner)) continue;
+    const sides = inner.split('=');
+    if (sides.length !== 2) continue;
+    subjects.push(inner);
+    if (/^\s*[a-zA-Z]\s*(?:\(\s*[a-zA-Z]\s*\))?\s*$/.test(sides[0]) && spanHasVariable(sides[1])) {
+      subjects.push(sides[1].trim());
+    }
   }
   return subjects;
 }
@@ -255,6 +323,122 @@ function printedArithmeticSubjects(question) {
     subjects.push(inner);
   }
   return subjects;
+}
+
+/**
+ * Composed subjects: the restatement a prompt invites when the hazard is not
+ * any single printed span but a COMBINATION of two of them.
+ *
+ * Every extractor above answers "is some span printed here also the answer?".
+ * That question misses a whole family: "For $f(x)=2x^2-4x+1$ and
+ * $g(x)=5x^2+8x+3$, find $(f+g)(x)$" prints neither $7x^2+4x+4$ nor anything
+ * value-equal to it, yet `(2x^2-4x+1)+(5x^2+8x+3)` — the prompt restated with
+ * the operation written but not performed — grades `correct`. The learner
+ * types what the question already told them and never combines a like term.
+ *
+ * So these build the candidate instead of finding it. Each is gated on its own
+ * phrasing for the same reason the span extractors are (playbook §6: widening
+ * a shared extractor puts a thousand sound-but-untagged exercises in scope at
+ * once), and each returns at most one candidate — the single restatement the
+ * wording actually invites, not every rearrangement of the printed parts.
+ *
+ * All three require exactly the operands the phrasing names. A prompt that
+ * prints a third polynomial is some other exercise, and guessing at it would
+ * be the kind of over-reach that makes a rule fire on sound content.
+ */
+// Wrap an operand only when it needs it. A subject printed as `(9x^2+2)` is
+// already parenthesized, and `((9x^2+2))` in a diagnostic is noise the author
+// has to read past to see what the rule actually caught.
+const asOperand = (tex) => {
+  const t = tex.trim();
+  if (!/[+\-]/.test(t.replace(/^[+-]/, ''))) return t;
+  if (/^\((?:[^()]|\([^()]*\))*\)$/.test(t)) return t;
+  return `(${t})`;
+};
+
+const FUNCTION_DEF_RE = /^\s*([fg])\s*\(\s*x\s*\)\s*=\s*(.+?)\s*$/;
+// The operator may be absent: `(fg)(x)` is the product ask written by
+// juxtaposition, exactly as the precalculus sections print it.
+const FUNCTION_SUM_ASK_RE = /\(\s*f\s*(\+|-|\\cdot|·)?\s*g\s*\)\s*\(\s*x\s*\)/;
+const FUNCTION_QUOTIENT_ASK_RE = /\\[tdc]?frac\s*\{\s*f\s*\}\s*\{\s*g\s*\}\s*\)?\s*\(\s*x\s*\)/;
+const FUNCTION_COMPOSE_ASK_RE = /\(\s*([fg])\s*\\circ\s*([fg])\s*\)\s*\(\s*x\s*\)/;
+
+/**
+ * "For $f(x)=A$ and $g(x)=B$, find $(f\pm g)(x)$" → `(A)+(B)` / `(A)-(B)`,
+ * and likewise for the product, quotient, and composition asks. Composition
+ * substitutes the written inner definition for every standalone `x` in the
+ * outer one — `(f\circ g)(x)` with $f(x)=6x+1$, $g(x)=8x-3$ builds
+ * `6(8x-3)+1`, the composition written but not carried out.
+ *
+ * Only an ask evaluated at `(x)` yields a candidate. `(f+g)(2)` answers with a
+ * number that no restatement of the two definitions equals, so it is not a
+ * hazard and must not be treated as one.
+ *
+ * `fallbackDefs` carries definitions printed on the page BEFORE the exercise
+ * ("For the next three questions, use $f(x)=6x+1$ and $g(x)=8x-3$" — prose
+ * the question extractor cannot see). In-question definitions override. A
+ * stale fallback pairing is safe by construction: a candidate built from the
+ * wrong definitions does not grade equal to the answer, and the rule only
+ * fires on a candidate that grades `correct`.
+ */
+function printedFunctionCombinations(question, fallbackDefs = new Map()) {
+  const defs = new Map(fallbackDefs);
+  let ask = null;
+  for (const span of mathSpans(question, { allowNewlines: true })) {
+    const inner = span.tex.trim();
+    const def = inner.match(FUNCTION_DEF_RE);
+    if (def) { defs.set(def[1], def[2]); continue; }
+    const flat = inner.replace(/\\left|\\right/g, '');
+    if (FUNCTION_QUOTIENT_ASK_RE.test(flat)) { ask = '/'; continue; }
+    const compose = flat.match(FUNCTION_COMPOSE_ASK_RE);
+    if (compose) { ask = ['circ', compose[1], compose[2]]; continue; }
+    const sum = flat.match(FUNCTION_SUM_ASK_RE);
+    if (sum) ask = (sum[1] === '+' || sum[1] === '-') ? sum[1] : '*';
+  }
+  if (!ask || !defs.has('f') || !defs.has('g')) return [];
+  const f = defs.get('f');
+  const g = defs.get('g');
+  if (Array.isArray(ask)) {
+    const outer = defs.get(ask[1]);
+    const inner = defs.get(ask[2]);
+    return [outer.replace(/(?<![a-zA-Z\\])x(?![a-zA-Z])/g, `(${inner})`)];
+  }
+  if (ask === '+') return [`${asOperand(f)}+${asOperand(g)}`];
+  if (ask === '-') return [`${asOperand(f)}-${asOperand(g)}`];
+  if (ask === '*') return [`${asOperand(f)}${asOperand(g)}`];
+  return [`\\frac{${f}}{${g}}`];
+}
+
+/**
+ * "Subtract $X$ from $Y$" → `(Y)-(X)`.
+ *
+ * The order is the whole point: the exercise's one conceptual step is knowing
+ * that "subtract X from Y" means Y-X, and its arithmetic step is combining the
+ * result. Writing the difference without combining passes on value alone.
+ */
+function printedSubtractFromSubjects(question) {
+  if (!/\bsubtract\b[\s\S]*\bfrom\b/i.test(question)) return [];
+  const subjects = printedPolynomialSubjects(question);
+  if (subjects.length !== 2) return [];
+  return [`${asOperand(subjects[1])}-${asOperand(subjects[0])}`];
+}
+
+/**
+ * "…find the quotient when $A$ is divided by $B$" → `\frac{A}{B}`.
+ *
+ * Requires the word "quotient": "find the REMAINDER when $A$ is divided by
+ * $B$" answers with a number, which no quotient restatement equals, so it is
+ * sound content this must not touch. A division that leaves a nonzero
+ * remainder is likewise safe on its own — the fraction is not equal to the
+ * quotient — but it costs nothing to offer the candidate and let the grader
+ * decide, which is what keeps the rule honest about the exact-division case.
+ */
+function printedDivisionQuotients(question) {
+  if (!/\bquotient\b/i.test(question)) return [];
+  if (!/\bdivided by\b/i.test(question)) return [];
+  const subjects = printedPolynomialSubjects(question);
+  if (subjects.length !== 2) return [];
+  return [`\\frac{${subjects[0]}}{${subjects[1]}}`];
 }
 
 const groupDigits = (n) => n.replace(/\B(?=(\d{3})+$)/g, '{,}');
@@ -730,10 +914,11 @@ export function lintHugo(src, filename = '') {
     .sort((a, b) => a.index - b.index);
 
   // ---- section-final Practice block ----------------------------------------
-  // Every numbered section closes its instructional content with a
-  // `## Practice` heading, immediately before the first end-matter heading
+  // Every numbered section closes with a `## Practice` heading — the last
+  // heading before the attribution footer, after the end-matter headings
   // (`## Key equations`, `## Key concepts`, `## Key terms`, or any other
-  // `## Key …` summary block). Inside it, one `### ` group per section
+  // `## Key …` summary block), so a reader reviews the key terms and
+  // concepts before attempting the practice. Inside it, one `### ` group per section
   // objective — matching the objectives callout in order — each holding at
   // least two sourced exercises, with at least five in the block overall.
   // Sizing scales with the section instead of a flat count, because a
@@ -746,7 +931,18 @@ export function lintHugo(src, filename = '') {
   const MIN_PER_SECTION = 5;
   const headings = [...mediaSrc.matchAll(/^## +(.+?)[ \t]*$/gm)]
     .map((m) => ({ index: m.index, end: m.index + m[0].length, title: m[1].trim() }));
-  const endMatter = headings.find((h) => /^Key [a-z]/.test(h.title));
+  // Case-insensitive: a title-case `## Key Concepts` must not slip out of
+  // the ordering rule.
+  const endMatterHeadings = headings.filter((h) => /^Key [a-z]/i.test(h.title));
+  const lastEndMatter = endMatterHeadings.length
+    ? endMatterHeadings[endMatterHeadings.length - 1]
+    : undefined;
+  // End matter must be a heading, never a bold prose paragraph — a
+  // `**Key terms.** …` line hides the summary from the ordering rule and
+  // from readers scanning the heading outline.
+  for (const m of mediaSrc.matchAll(/^\*\*Key [a-z][a-z ]*[.:]?\*\*/gim)) {
+    err(m.index, `${JSON.stringify(m[0])} is a bold prose paragraph — end matter must be a \`## Key …\` heading (drop the bold prefix, keep the content) placed before \`## Practice\``);
+  }
   // Compare group titles to objectives loosely: the author copies the callout
   // item, so only case, spacing, and trailing punctuation should vary.
   const normalizeTitle = (t) => t.toLowerCase().replace(/\s+/g, ' ').replace(/[.:;,]+$/, '').trim();
@@ -755,19 +951,17 @@ export function lintHugo(src, filename = '') {
     const practiceHeadings = headings.filter((h) => h.title === 'Practice');
     const required = Math.max(MIN_PER_SECTION, MIN_PER_OBJECTIVE * objectives.length);
     if (!practiceHeadings.length) {
-      wrn(0, `section has no \`## Practice\` block — add a \`### \` group per objective with at least ${MIN_PER_OBJECTIVE} sourced, hinted exercises each (at least ${required} in total) immediately before the end matter (retrofit pending)`);
+      wrn(0, `section has no \`## Practice\` block — add a \`### \` group per objective with at least ${MIN_PER_OBJECTIVE} sourced, hinted exercises each (at least ${required} in total) after the end matter, last before the attribution footer (retrofit pending)`);
     } else if (practiceHeadings.length > 1) {
       err(practiceHeadings[1].index, 'more than one `## Practice` heading — a section has exactly one Practice block');
     } else {
       const practice = practiceHeadings[0];
       const next = headings.find((h) => h.index > practice.index);
       practiceRange = [practice.end, next ? next.index : mediaSrc.length];
-      if (endMatter && practice.index > endMatter.index) {
-        err(practice.index, `\`## Practice\` appears after the end matter — place it immediately before the first \`## Key …\` heading (\`## ${endMatter.title}\`)`);
-      } else if (endMatter && (!next || next.index !== endMatter.index)) {
-        err(practice.index, `\`## Practice\` must be immediately before \`## ${endMatter.title}\` — no other heading may come between`);
-      } else if (!endMatter && next) {
-        err(practice.index, '`## Practice` must be the last heading before the attribution footer in a section without end matter');
+      if (lastEndMatter && practice.index < lastEndMatter.index) {
+        err(practice.index, `\`## Practice\` appears before the end matter — place it after the last \`## Key …\` heading (\`## ${lastEndMatter.title}\`), last before the attribution footer`);
+      } else if (next) {
+        err(practice.index, '`## Practice` must be the last heading before the attribution footer — no heading may follow it');
       }
 
       const inRange = ({ index }) => index >= practiceRange[0] && index < practiceRange[1];
@@ -833,7 +1027,20 @@ export function lintHugo(src, filename = '') {
   }
 
   // ---- fillin shortcode rules ----------------------------------------------
+  // Function definitions printed anywhere on the page, in order, so the
+  // combination extractor can see "For the next three questions, use
+  // $f(x)=6x+1$ and $g(x)=8x-3$" — prose outside any one question. For each
+  // exercise the nearest PRECEDING definition of each name wins.
+  const pageFunctionDefs = [];
+  for (const span of mathSpans(mediaSrc, { allowNewlines: true })) {
+    const def = span.tex.trim().match(FUNCTION_DEF_RE);
+    if (def) pageFunctionDefs.push({ index: span.index, name: def[1], def: def[2] });
+  }
   for (const { params, index } of fillins) {
+    const fallbackDefs = new Map();
+    for (const def of pageFunctionDefs) {
+      if (def.index < index) fallbackDefs.set(def.name, def.def);
+    }
     const where = `fillin (${(params.question || '?').slice(0, 40)}…)`;
     const q = params.question || '';
     if (!q.trim()) err(index, 'fillin: missing non-empty question');
@@ -892,12 +1099,26 @@ export function lintHugo(src, filename = '') {
       // printed numerals for a re-expression ask, printed polynomials for a
       // factoring ask. They stay separate so widening one cannot silently
       // enlarge the other.
+      // Composed candidates: the hazard is the operation written but not
+      // carried out, so these build the restatement rather than find it. Kept
+      // in their own list because the diagnostic differs — telling an author
+      // to go find `(2x^2-4x+1)+(5x^2+8x+3)` "printed in the question" sends
+      // them looking for text that is not there.
+      const composed = [
+        ...printedFunctionCombinations(q, fallbackDefs),
+        ...printedSubtractFromSubjects(q),
+        ...printedDivisionQuotients(q),
+      ];
       const candidates = [
         ...(REEXPRESSION_RE.test(q) ? printedQuestionValues(q) : []),
         ...(FACTORING_PROMPT_RE.test(q) ? printedPolynomialSubjects(q) : []),
         ...(ARITHMETIC_PROMPT_RE.test(q) ? printedArithmeticSubjects(q) : []),
         ...(ALGEBRAIC_PRODUCT_PROMPT_RE.test(q) ? printedPolynomialSubjects(q) : []),
         ...(ALGEBRAIC_SIMPLIFY_PROMPT_RE.test(q) ? printedPolynomialSubjects(q) : []),
+        ...(STANDARD_FORM_PROMPT_RE.test(q) || EXPONENTIAL_FORM_PROMPT_RE.test(q)
+          ? printedEquationSubjects(q) : []),
+        ...(LOG_EXPANSION_PROMPT_RE.test(q) ? printedPolynomialSubjects(q) : []),
+        ...composed,
       ]
         // "Add: $5a+7b$" answers with `5a+7b`: the exercise asks the learner to
         // recognize that the terms do NOT combine, so retyping the prompt is
@@ -925,7 +1146,10 @@ export function lintHugo(src, filename = '') {
         const remedy = parseAnswerForm(params.answerForm).valid
           ? `the declared answerForm ${JSON.stringify(params.answerForm)} does not rule that value out — tighten it`
           : 'add answerForm so the response is graded on its form (or use multiplechoice)';
-        err(index, `${where}: answer grades equal to ${JSON.stringify(printed)} printed in the question — a learner passes by retyping the prompt; ${remedy}, since value-based grading alone cannot tell the two forms apart`);
+        const source = composed.includes(printed)
+          ? 'the question restated with the operation written but not carried out'
+          : 'printed in the question';
+        err(index, `${where}: answer grades equal to ${JSON.stringify(printed)}, ${source} — a learner passes by retyping the prompt; ${remedy}, since value-based grading alone cannot tell the two forms apart`);
       }
     }
     if (isRegularSection && !(params.hint || '').trim()) {
@@ -933,6 +1157,17 @@ export function lintHugo(src, filename = '') {
     }
     if (params.answer && /\^-/.test(params.answer)) {
       err(index, `${where}: answer has an unbraced negative exponent — write 10^{-3}, never 10^-3`);
+    }
+    // ---- slash quotient followed by juxtaposition: grades as a different value.
+    // The engine reads `1/20(x-20)^2` as `1/(20(x-20)^2)` and `1/2x` as
+    // `1/(2x)`, so the authored value is not the intended one — and a learner
+    // who types the intended answer is marked wrong, because MathLive turns a
+    // typed `/` into `\frac{1}{20}(x-20)^2`, which multiplies. Self-grading
+    // cannot catch this: the answer is compared against itself, and both
+    // sides mis-parse identically.
+    if (params.answer && /\/\s*\d+\s*(?:[a-zA-Z(]|\\[a-zA-Z])/.test(params.answer)) {
+      const shown = params.answer.match(/\S*\/\s*\d+\s*\S*/)[0];
+      err(index, `${where}: answer ${JSON.stringify(shown)} has a slash quotient followed by a juxtaposed factor — the engine reads \`1/20(…)\` as \`1/(20(…))\`, so the intended answer grades incorrect; write the coefficient as an explicit \\frac{}{}`);
     }
     // ---- unbraced multi-digit exponent: silently grades as a different value.
     // `y^10` is `y^1` followed by a literal `0`, so the answer evaluates to

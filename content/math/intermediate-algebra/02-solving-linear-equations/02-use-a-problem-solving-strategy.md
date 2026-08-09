@@ -767,6 +767,21 @@ was \$11,450.
   hint="Use $I=Prt$ with $I=2{,}400$, $r=0.05$, and $t=5$, then solve for P."
 >}}
 
+## Key terms
+
+**consecutive integers** — integers that immediately follow each other.
+**consecutive even integers** — even integers that immediately follow one
+another. **consecutive odd integers** — odd integers that immediately follow
+one another. **percent change** — the increase or decrease of an amount over
+a certain period of time, expressed as a percent. **discount rate** — a
+percent used to determine the amount of a discount. **original cost** — the
+price a retailer pays for an item. **mark-up** — an amount added to the
+original cost. **list price** — the price for which a retailer sells an item.
+**principal** — the amount of money initially deposited or borrowed.
+**interest** — money earned on a deposit or paid on a loan. **rate of
+interest** — the percent of the principal used to compute interest. **simple
+interest** — interest computed according to $I=Prt$.
+
 ## Practice
 
 ### Use a problem solving strategy for word problems
@@ -867,21 +882,6 @@ was \$11,450.
   answerDisplay="\$3,345"
   hint="Use $I=Prt$ with $I=1{,}244.34$, $r=0.124$, and $t=3$, then solve for P."
 >}}
-
-## Key terms
-
-**consecutive integers** — integers that immediately follow each other.
-**consecutive even integers** — even integers that immediately follow one
-another. **consecutive odd integers** — odd integers that immediately follow
-one another. **percent change** — the increase or decrease of an amount over
-a certain period of time, expressed as a percent. **discount rate** — a
-percent used to determine the amount of a discount. **original cost** — the
-price a retailer pays for an item. **mark-up** — an amount added to the
-original cost. **list price** — the price for which a retailer sells an item.
-**principal** — the amount of money initially deposited or borrowed.
-**interest** — money earned on a deposit or paid on a loan. **rate of
-interest** — the percent of the principal used to compute interest. **simple
-interest** — interest computed according to $I=Prt$.
 
 ---
 

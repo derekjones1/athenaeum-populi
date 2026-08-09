@@ -838,6 +838,19 @@ $-0.80$, closer to $-0.70$.
   hint="One quarter of the way from $0$ to $-1$ is $-\frac{25}{100}$."
 >}}
 
+## Key terms
+
+**square of a number** — the result of multiplying a number by itself; if
+$n^2 = m$, then $m$ is the square of $n$. **square root of a number** — a number
+$n$ whose square is $m$; if $n^2 = m$, then $n$ is a square root of $m$.
+**principal square root** — the positive square root, denoted by the radical
+sign $\sqrt{m}$. **radicand** — the number under the radical sign. **rational
+number** — a number of the form $\tfrac{p}{q}$, where $p$ and $q$ are integers
+and $q \neq 0$; its decimal form stops or repeats. **irrational number** — a
+number that cannot be written as the ratio of two integers; its decimal form
+does not stop and does not repeat. **real number** — a number that is either
+rational or irrational.
+
 ## Practice
 
 ### Round decimals
@@ -1016,19 +1029,6 @@ all six numbers
   answer="-2,-1"
   hint="Negative values decrease as you move left; locate $-1.25$ one quarter unit to the left of $-1$."
 >}}
-
-## Key terms
-
-**square of a number** — the result of multiplying a number by itself; if
-$n^2 = m$, then $m$ is the square of $n$. **square root of a number** — a number
-$n$ whose square is $m$; if $n^2 = m$, then $n$ is a square root of $m$.
-**principal square root** — the positive square root, denoted by the radical
-sign $\sqrt{m}$. **radicand** — the number under the radical sign. **rational
-number** — a number of the form $\tfrac{p}{q}$, where $p$ and $q$ are integers
-and $q \neq 0$; its decimal form stops or repeats. **irrational number** — a
-number that cannot be written as the ratio of two integers; its decimal form
-does not stop and does not repeat. **real number** — a number that is either
-rational or irrational.
 
 ---
 

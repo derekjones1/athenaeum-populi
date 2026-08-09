@@ -282,6 +282,21 @@ $3(x + 2b)(x - a) = 3\left(x^2 - ax + 2bx - 2ab\right)
   hint="Factor out the GCF of $6$ first. What remains has four terms, so use grouping: $x^2 - 2xc + bx - 2bc = x(x - 2c) + b(x - 2c)$."
 >}}
 
+## Key terms
+
+**greatest common factor (GCF)** — the largest monomial that divides every
+term of a polynomial; always factor it out first. **difference of squares** —
+a binomial $a^2 - b^2$, which factors as the product of conjugates
+$(a - b)(a + b)$. **sum of squares** — a binomial $a^2 + b^2$, which is prime
+(does not factor). **sum and difference of cubes** — the patterns
+$a^3 + b^3 = (a + b)\left(a^2 - ab + b^2\right)$ and
+$a^3 - b^3 = (a - b)\left(a^2 + ab + b^2\right)$. **perfect-square trinomial**
+— a trinomial $a^2 \pm 2ab + b^2$, which factors as $(a \pm b)^2$.
+**grouping** — a method for factoring a polynomial with more than three terms
+by pairing terms that share a common factor. **factored completely** — a
+polynomial written so that, other than monomials, all of its factors are
+prime.
+
 ## Practice
 
 ### Recognize and use the appropriate method to factor a polynomial completely
@@ -335,21 +350,6 @@ $(2c + 9d)^2$
 $(2c + 3d)(2c + 27d)$
 It is prime
 {{< /multiplechoice >}}
-
-## Key terms
-
-**greatest common factor (GCF)** — the largest monomial that divides every
-term of a polynomial; always factor it out first. **difference of squares** —
-a binomial $a^2 - b^2$, which factors as the product of conjugates
-$(a - b)(a + b)$. **sum of squares** — a binomial $a^2 + b^2$, which is prime
-(does not factor). **sum and difference of cubes** — the patterns
-$a^3 + b^3 = (a + b)\left(a^2 - ab + b^2\right)$ and
-$a^3 - b^3 = (a - b)\left(a^2 + ab + b^2\right)$. **perfect-square trinomial**
-— a trinomial $a^2 \pm 2ab + b^2$, which factors as $(a \pm b)^2$.
-**grouping** — a method for factoring a polynomial with more than three terms
-by pairing terms that share a common factor. **factored completely** — a
-polynomial written so that, other than monomials, all of its factors are
-prime.
 
 ---
 

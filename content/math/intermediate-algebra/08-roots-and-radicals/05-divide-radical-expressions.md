@@ -224,6 +224,7 @@ To rationalize a denominator with one term, we can multiply a square root by its
 {{< fillin
   question="Simplify: $\sqrt{\tfrac{3}{32}}$"
   answer="\tfrac{\sqrt{6}}{8}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt{6}}{8}$"
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
@@ -310,6 +311,7 @@ To rationalize a denominator with a cube root, we can multiply by a cube root th
 {{< fillin
   question="Simplify: $\sqrt[3]{\tfrac{5}{12}}$"
   answer="\tfrac{\sqrt[3]{90}}{6}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt[3]{90}}{6}$"
   hint="Multiply by the smallest radical factor that makes every denominator exponent a multiple of the root index."
 >}}
@@ -372,6 +374,7 @@ To rationalize a denominator with a fourth root, we can multiply by a fourth roo
 {{< fillin
   question="Simplify: $\sqrt[4]{\tfrac{3}{64}}$"
   answer="\tfrac{\sqrt[4]{12}}{4}"
+  answerForm="simplified-radical"
   answerDisplay="$\tfrac{\sqrt[4]{12}}{4}$"
   hint="Multiply by the smallest radical factor that makes every denominator exponent a multiple of the root index."
 >}}
@@ -481,6 +484,78 @@ We do not square the numerator. Leaving it in factored form, we can see there ar
   hint="Use the quotient property to combine the radicals, reduce the radicand, and extract perfect powers."
 >}}
 
+## Practice
+
+### Divide radical expressions
+
+{{< fillin
+  question="Simplify: $\tfrac{\sqrt{56 x^{5} y^{4}}}{\sqrt{2 x y^{3}}}$"
+  answer="2 x^{2} \sqrt{7 y}"
+  answerForm="simplified-radical"
+  answerDisplay="$2 x^{2} \sqrt{7 y}$"
+  hint="Combine into one radical with the quotient property, reduce the radicand, then pull out perfect square factors."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{\sqrt[3]{48 a^{3} b^{6}}}{\sqrt[3]{3 a^{-1} b^{3}}}$"
+  answer="2 a b \sqrt[3]{2 a}"
+  answerForm="simplified-radical"
+  answerDisplay="$2 a b \sqrt[3]{2 a}$"
+  hint="Combine into one cube root with the quotient property, reduce the radicand, then pull out perfect cube factors."
+>}}
+
+### Rationalize a one term denominator
+
+{{< fillin
+  question="Simplify: $\tfrac{10}{\sqrt{6}}$"
+  answer="\tfrac{5 \sqrt{6}}{3}"
+  answerForm="simplified-radical"
+  answerDisplay="$\tfrac{5 \sqrt{6}}{3}$"
+  hint="Multiply numerator and denominator by $\sqrt{6}$ so the denominator becomes a perfect square under the root."
+>}}
+
+{{< fillin
+  question="Simplify: $\sqrt{\tfrac{4}{27}}$"
+  answer="\tfrac{2 \sqrt{3}}{9}"
+  answerForm="simplified-radical"
+  answerDisplay="$\tfrac{2 \sqrt{3}}{9}$"
+  hint="Split into $\tfrac{\sqrt{4}}{\sqrt{27}}$ first, simplify each radical, then rationalize the remaining denominator."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{10}{\sqrt{5 x}}$"
+  answer="\tfrac{2 \sqrt{5 x}}{x}"
+  answerForm="simplified-radical"
+  answerDisplay="$\tfrac{2 \sqrt{5 x}}{x}$"
+  hint="Multiply numerator and denominator by $\sqrt{5 x}$ to clear the radical from the denominator."
+>}}
+
+### Rationalize a two term denominator
+
+{{< fillin
+  question="Simplify: $\tfrac{8}{1 - \sqrt{5}}$"
+  answer="-2 \left(1 + \sqrt{5}\right)"
+  answerForm="simplified-radical"
+  answerDisplay="$-2\left(1 + \sqrt{5}\right)$"
+  hint="Multiply numerator and denominator by the conjugate $1 + \sqrt{5}$, then simplify the difference of squares."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{6}{3 - \sqrt{7}}$"
+  answer="3 \left(3 + \sqrt{7}\right)"
+  answerForm="simplified-radical"
+  answerDisplay="$3\left(3 + \sqrt{7}\right)$"
+  hint="Multiply numerator and denominator by the conjugate $3 + \sqrt{7}$, then simplify the difference of squares."
+>}}
+
+{{< fillin
+  question="Simplify: $\tfrac{\sqrt{3}}{\sqrt{m} - \sqrt{5}}$"
+  answer="\tfrac{\sqrt{3} \left(\sqrt{m} + \sqrt{5}\right)}{m - 5}"
+  answerForm="simplified-radical"
+  answerDisplay="$\tfrac{\sqrt{3} \left(\sqrt{m} + \sqrt{5}\right)}{m - 5}$"
+  hint="Multiply numerator and denominator by the conjugate $\sqrt{m} + \sqrt{5}$, then simplify the difference of squares in the denominator."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 8.5: Divide Radical Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/8-5-divide-radical-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, self-check reflection, and end-of-section exercise bank; and converted the source Try It practice into interactive exercises.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 8.5: Divide Radical Expressions](https://openstax.org/books/intermediate-algebra-2e/pages/8-5-divide-radical-expressions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; and adapted selected end-of-section exercises into an interactive Practice block.</small>

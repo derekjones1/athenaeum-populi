@@ -476,6 +476,18 @@ $8a^{3}+27$. So the quotient is $4a^{2}-6a+9$.
   hint="Insert $0x^2$ and 0x as placeholders, then long-divide by $5x - 2$, tracking both constants and variables."
 >}}
 
+## Key terms
+
+**divide a polynomial by a monomial** — divide each term of the polynomial by
+the monomial, using the property $\tfrac{a+b}{c} = \tfrac{a}{c} +
+\tfrac{b}{c}$. **polynomial long division** — a procedure, modeled on long
+division of numbers, for dividing a polynomial by a binomial: divide, multiply,
+subtract (or change the signs and add), and bring down, repeating until the
+remainder has lower degree than the divisor. **placeholder** — a term with a
+zero coefficient (such as $0x^{3}$) inserted for a missing degree so the
+columns line up during long division. **remainder** — the leftover after long
+division, written as a fraction with the divisor as the denominator.
+
 ## Practice
 
 ### Divide a polynomial by a monomial
@@ -516,18 +528,6 @@ $8a^{3}+27$. So the quotient is $4a^{2}-6a+9$.
   answerForm="expanded"
   hint="Insert $0m^2$ and $0m$ as placeholders, then long-divide by $m + 10$."
 >}}
-
-## Key terms
-
-**divide a polynomial by a monomial** — divide each term of the polynomial by
-the monomial, using the property $\tfrac{a+b}{c} = \tfrac{a}{c} +
-\tfrac{b}{c}$. **polynomial long division** — a procedure, modeled on long
-division of numbers, for dividing a polynomial by a binomial: divide, multiply,
-subtract (or change the signs and add), and bring down, repeating until the
-remainder has lower degree than the divisor. **placeholder** — a term with a
-zero coefficient (such as $0x^{3}$) inserted for a missing degree so the
-columns line up during long division. **remainder** — the leftover after long
-division, written as a fraction with the divisor as the denominator.
 
 ---
 

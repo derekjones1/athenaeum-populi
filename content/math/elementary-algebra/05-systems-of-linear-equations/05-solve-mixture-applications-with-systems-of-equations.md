@@ -348,6 +348,18 @@ Rosie's bank loan is \$8,670 and the principal for her federal loan is
   hint="Let b be the principal for the bank loan and f the principal for the federal loan, so $b + f = 18{,}000$. Set $0.025b + 0.069f$ equal to 1,066, then solve the system for f."
 >}}
 
+## Key terms
+
+**total value model** — $\text{number} \cdot \text{value} = \text{total
+value}$: the number of coins, tickets, or units of an ingredient times the
+value of each gives the total value of that type; in a mixture problem with
+two unknown types, the Number column and the Total Value column each give an
+equation, and together they form a system of two equations in two variables.
+**simple interest formula** — $I = Prt$, or $I = Pr$ when $t = 1$ year; in an
+investment or loan mixture problem, the Principal column gives one equation
+(the total amount invested or owed) and the Interest column gives the other
+(the total interest earned or paid).
+
 ## Practice
 
 ### Solve mixture applications using systems of equations
@@ -388,18 +400,6 @@ Rosie's bank loan is \$8,670 and the principal for her federal loan is
   answerDisplay="\$20,000 at 6% and \$28,000 at 10%"
   hint="Let $x$ and $y$ be the amounts at 6% and 10%. Use $x+y=48{,}000$ and $0.06x+0.10y=4{,}000$."
 >}}
-
-## Key terms
-
-**total value model** — $\text{number} \cdot \text{value} = \text{total
-value}$: the number of coins, tickets, or units of an ingredient times the
-value of each gives the total value of that type; in a mixture problem with
-two unknown types, the Number column and the Total Value column each give an
-equation, and together they form a system of two equations in two variables.
-**simple interest formula** — $I = Prt$, or $I = Pr$ when $t = 1$ year; in an
-investment or loan mixture problem, the Principal column gives one equation
-(the total amount invested or owed) and the Interest column gives the other
-(the total interest earned or paid).
 
 ---
 

@@ -709,6 +709,19 @@ $y = 4$ gives a horizontal line.
   hint="$y = -3$ has only one variable — y never changes, no matter what x is."
 >}}
 
+## Key terms
+
+**graph of a linear equation** — the line consisting of all the points that
+are solutions of the equation $Ax + By = C$; every point on the line is a
+solution of the equation, and every solution of the equation is a point on
+the line. **plotting points (Point-Plotting Method)** — a method for
+graphing a linear equation by finding several ordered-pair solutions,
+plotting them, and drawing the line through them. **vertical line** — the
+graph of an equation of the form $x = a$; a straight up-and-down line that
+crosses the $x$-axis at $(a, 0)$. **horizontal line** — the graph of an
+equation of the form $y = b$; a straight side-to-side line that crosses the
+$y$-axis at $(0, b)$.
+
 ## Practice
 
 ### Recognize the relationship between the solutions of an equation and its graph
@@ -788,19 +801,6 @@ No; it is not a solution and the point is not on the line.
 >}}
 {"answer":{"y":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
-
-## Key terms
-
-**graph of a linear equation** — the line consisting of all the points that
-are solutions of the equation $Ax + By = C$; every point on the line is a
-solution of the equation, and every solution of the equation is a point on
-the line. **plotting points (Point-Plotting Method)** — a method for
-graphing a linear equation by finding several ordered-pair solutions,
-plotting them, and drawing the line through them. **vertical line** — the
-graph of an equation of the form $x = a$; a straight up-and-down line that
-crosses the $x$-axis at $(a, 0)$. **horizontal line** — the graph of an
-equation of the form $y = b$; a straight side-to-side line that crosses the
-$y$-axis at $(0, b)$.
 
 ---
 

@@ -262,6 +262,7 @@ $$
 {{< fillin
   question="Subtract $(a^2+5ab-6b^2)$ from $(a^2+b^2)$."
   answer="-5ab + 7b^2"
+  answerForm="no-like-terms"
   answerDisplay="$-5ab+7b^2$"
   hint="Subtract $X$ from $Y$ means $Y-X$. Distribute the subtraction, then combine like terms."
 >}}
@@ -472,6 +473,7 @@ $$
 {{< fillin
   question="For functions $f(x)=2x^2-4x+3$ and $g(x)=x^2-2x-6$, find $(f+g)(x)$."
   answer="3x^2 - 6x - 3"
+  answerForm="no-like-terms"
   answerDisplay="$3x^2-6x-3$"
   hint="Add the two polynomials and combine like terms."
 >}}
@@ -493,6 +495,178 @@ highest degree of all its terms. **standard form of a polynomial** — a
 polynomial written with terms in descending order of degree. **polynomial
 function** — a function whose range values are defined by a polynomial.
 
+## Practice
+
+### Determine the degree of polynomials
+
+{{< multiplechoice
+  question="Is $47x^5-17x^2y^3+y^2$ a monomial, binomial, trinomial, or other polynomial?"
+  answer="trinomial"
+  hint="Count the terms separated by addition or subtraction."
+>}}
+monomial
+binomial
+trinomial
+other polynomial
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="What is the degree of $47x^5-17x^2y^3+y^2$?"
+  answer="5"
+  hint="Add the exponents within each term — $47x^5$ has degree $5$ and $-17x^2y^3$ has degree $2+3=5$ — then take the highest."
+>}}
+
+{{< multiplechoice
+  question="Is $5c^3+11c^2-c-8$ a monomial, binomial, trinomial, or other polynomial?"
+  answer="other polynomial"
+  hint="Count the terms — four terms has no special name of its own."
+>}}
+monomial
+binomial
+trinomial
+other polynomial
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="What is the degree of $5c^3+11c^2-c-8$?"
+  answer="3"
+  hint="The degree of a polynomial is the highest exponent among all of its terms."
+>}}
+
+{{< multiplechoice
+  question="Is $\tfrac{5}{9}ab+\tfrac{1}{3}b$ a monomial, binomial, trinomial, or other polynomial?"
+  answer="binomial"
+  hint="Count the terms separated by addition or subtraction."
+>}}
+monomial
+binomial
+trinomial
+other polynomial
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="What is the degree of $\tfrac{5}{9}ab+\tfrac{1}{3}b$?"
+  answer="2"
+  hint="The first term $\tfrac{5}{9}ab$ has degree $1+1=2$; the second term has degree $1$."
+>}}
+
+{{< multiplechoice
+  question="Is $4$ a monomial, binomial, trinomial, or other polynomial?"
+  answer="monomial"
+  hint="A single term, even one with no variable, is a monomial."
+>}}
+monomial
+binomial
+trinomial
+other polynomial
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="What is the degree of the constant $4$?"
+  answer="0"
+  hint="A constant with no variable factor has degree $0$."
+>}}
+
+{{< multiplechoice
+  question="Is $4pq+17$ a monomial, binomial, trinomial, or other polynomial?"
+  answer="binomial"
+  hint="Count the terms separated by addition or subtraction."
+>}}
+monomial
+binomial
+trinomial
+other polynomial
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="What is the degree of $4pq+17$?"
+  answer="2"
+  hint="The term $4pq$ has degree $1+1=2$; the constant term has degree $0$."
+>}}
+
+### Add and subtract polynomials
+
+{{< fillin
+  question="Add: $(x^2+6x+8)+(-4x^2+11x-9)$."
+  answer="-3x^2 + 17x - 1"
+  answerForm="no-like-terms"
+  answerDisplay="$-3x^2+17x-1$"
+  hint="Drop the parentheses, group the like terms together, then combine each group."
+>}}
+
+{{< fillin
+  question="Find the difference: $(a^2+8a+5)-(a^2-3a+2)$."
+  answer="11a + 3"
+  answerForm="no-like-terms"
+  answerDisplay="$11a+3$"
+  hint="Distribute the subtraction across the second polynomial — the $a^2$ terms will cancel."
+>}}
+
+{{< fillin
+  question="Subtract $(9x^2+2)$ from $(12x^2-x+6)$."
+  answer="3x^2 - x + 4"
+  answerForm="no-like-terms"
+  answerDisplay="$3x^2-x+4$"
+  hint="Subtract $X$ from $Y$ means $Y-X$: write $(12x^2-x+6)-(9x^2+2)$, then combine like terms."
+>}}
+
+### Evaluate a polynomial function for a given value
+
+{{< fillin
+  question="For the function $f(x)=8x^2-3x+2$, find $f(5)$."
+  answer="187"
+  hint="Substitute $5$ for $x$: $f(5)=8(5)^2-3(5)+2$."
+>}}
+
+{{< fillin
+  question="For the function $f(x)=8x^2-3x+2$, find $f(-2)$."
+  answer="40"
+  hint="Substitute $-2$ for $x$: $f(-2)=8(-2)^2-3(-2)+2$."
+>}}
+
+{{< fillin
+  question="For the function $f(x)=8x^2-3x+2$, find $f(0)$."
+  answer="2"
+  hint="Substitute $0$ for $x$ — only the constant term survives."
+>}}
+
+{{< fillin
+  question="A manufacturer's revenue from selling speakers at a cost of $p$ dollars each is given by the polynomial function $R(p)=-4p^2+420p$. Find the revenue received when $p=60$."
+  answer="10800"
+  answerDisplay="$10{,}800$"
+  hint="Substitute $60$ for $p$: $R(60)=-4(60)^2+420(60)$."
+>}}
+
+### Add and subtract polynomial functions
+
+{{< fillin
+  question="For functions $f(x)=2x^2-4x+1$ and $g(x)=5x^2+8x+3$, find $(f+g)(x)$."
+  answer="7x^2 + 4x + 4"
+  answerForm="no-like-terms"
+  answerDisplay="$7x^2+4x+4$"
+  hint="Add the two polynomials and combine like terms."
+>}}
+
+{{< fillin
+  question="For functions $f(x)=2x^2-4x+1$ and $g(x)=5x^2+8x+3$, find $(f+g)(2)$."
+  answer="40"
+  hint="First find $(f+g)(x)$ by adding the polynomials, then substitute $x=2$ — or evaluate $f(2)$ and $g(2)$ separately and add the results."
+>}}
+
+{{< fillin
+  question="For functions $f(x)=2x^2-4x+1$ and $g(x)=5x^2+8x+3$, find $(f-g)(x)$."
+  answer="-3x^2 - 12x - 2"
+  answerForm="no-like-terms"
+  answerDisplay="$-3x^2-12x-2$"
+  hint="Distribute the subtraction across $g(x)$, then combine like terms."
+>}}
+
+{{< fillin
+  question="For functions $f(x)=2x^2-4x+1$ and $g(x)=5x^2+8x+3$, find $(f-g)(-3)$."
+  answer="7"
+  hint="First find $(f-g)(x)$ by distributing the subtraction and combining like terms, then substitute $x=-3$."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 5.1: Add and Subtract Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/5-1-add-and-subtract-polynomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: omitted the Be Prepared quiz, media links, and end-of-section exercises; recreated the polynomial-classification tables as markdown tables; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 5.1: Add and Subtract Polynomials](https://openstax.org/books/intermediate-algebra-2e/pages/5-1-add-and-subtract-polynomials) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: omitted the Be Prepared quiz and media links; recreated the polynomial-classification tables as markdown tables; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>

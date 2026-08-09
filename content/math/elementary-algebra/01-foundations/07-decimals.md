@@ -629,6 +629,14 @@ $0.093$.
   hint="Move the decimal point two places to the right."
 >}}
 
+## Key terms
+
+**decimal** — a way of writing a fraction whose denominator is a power of
+$10$, using a decimal point to separate the whole-number part from the
+fractional part. **repeating decimal** — a decimal in which the last digit
+or group of digits repeats endlessly, indicated with a bar over the
+repeating block. **percent** — a ratio whose denominator is $100$.
+
 ## Practice
 
 ### Name and write decimals
@@ -748,14 +756,6 @@ negative eight and seventy-one hundredths
 1.6363... (the block 63 repeats forever)
 1.36 (a terminating decimal)
 {{< /multiplechoice >}}
-
-## Key terms
-
-**decimal** — a way of writing a fraction whose denominator is a power of
-$10$, using a decimal point to separate the whole-number part from the
-fractional part. **repeating decimal** — a decimal in which the last digit
-or group of digits repeats endlessly, indicated with a bar over the
-repeating block. **percent** — a ratio whose denominator is $100$.
 
 ---
 

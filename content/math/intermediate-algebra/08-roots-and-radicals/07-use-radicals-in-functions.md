@@ -1440,6 +1440,93 @@ function.
   hint="A cube-root graph extends without bound both upward and downward."
 >}}
 
+## Practice
+
+### Evaluate a radical function
+
+{{< fillin
+  question="For the function $f \left(x\right) = \sqrt{4 x - 4},$ find $f \left(5\right)$"
+  answer="f \left(5\right) = 4"
+  answerDisplay="$f \left(5\right) = 4$"
+  hint="Substitute the given input into the function first, simplify the radicand, and then take the indicated root."
+>}}
+
+{{< multiplechoice
+  question="For the function $f \left(x\right) = \sqrt{4 x - 4},$ find $f \left(0\right)$"
+  answer="no value at $x = 0$"
+  hint="Substitute the given input into the function first; an even root of a negative radicand has no real value."
+>}}
+no value at $x = 0$
+a real number
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="For the function $g \left(x\right) = \sqrt[3]{2 x - 4},$ find $g \left(6\right)$"
+  answer="g \left(6\right) = 2"
+  answerDisplay="$g \left(6\right) = 2$"
+  hint="Substitute the given input into the function first, simplify the radicand, and then take the indicated cube root."
+>}}
+
+{{< fillin
+  question="For the function $g \left(x\right) = \sqrt[3]{2 x - 4},$ find $g \left(-2\right)$"
+  answer="g \left(-2\right) = -2"
+  answerDisplay="$g \left(-2\right) = -2$"
+  hint="Substitute the given input into the function first, simplify the radicand, and then take the indicated cube root."
+>}}
+
+### Find the domain of a radical function
+
+{{< fillin
+  question="Find the domain of the function, $f \left(x\right) = \sqrt{3 x - 1}.$ Write the domain in interval notation."
+  answer="[\tfrac{1}{3},\infty)"
+  answerDisplay="$[\tfrac{1}{3},\infty)$"
+  hint="For an even root, solve the inequality that makes the radicand greater than or equal to zero."
+>}}
+
+{{< fillin
+  question="Find the domain of the function, $h \left(x\right) = \sqrt{\tfrac{5}{x - 2}}.$ Write the domain in interval notation."
+  answer="(2,\infty)"
+  answerDisplay="$(2,\infty)$"
+  hint="Require the fraction inside the even root to be nonnegative and exclude values that make its denominator zero."
+>}}
+
+{{< fillin
+  question="Find the domain of the function, $F \left(x\right) = \sqrt[4]{8 x + 3}.$ Write the domain in interval notation."
+  answer="[-\tfrac{3}{8},\infty)"
+  answerDisplay="$[-\tfrac{3}{8},\infty)$"
+  hint="For an even root, solve the inequality that makes the radicand greater than or equal to zero."
+>}}
+
+### Graph radical functions
+
+{{< fillin
+  question="For the function $f \left(x\right) = \sqrt{x + 1},$ find the domain."
+  answer="[-1,\infty)"
+  answerDisplay="$[-1,\infty)$"
+  hint="For an even root, solve the inequality that makes the radicand greater than or equal to zero."
+>}}
+
+{{< fillin
+  question="For the function $f \left(x\right) = \sqrt{x + 1},$ find the range."
+  answer="[0,\infty)"
+  answerDisplay="$[0,\infty)$"
+  hint="A horizontal shift moves where the curve starts but not the set of output values, so the range still matches the parent square-root function."
+>}}
+
+{{< fillin
+  question="For the function $g \left(x\right) = - \sqrt{x},$ find the domain."
+  answer="[0,\infty)"
+  answerDisplay="$[0,\infty)$"
+  hint="For an even root, solve the inequality that makes the radicand greater than or equal to zero."
+>}}
+
+{{< fillin
+  question="For the function $g \left(x\right) = - \sqrt{x},$ find the range."
+  answer="(-\infty,0]"
+  answerDisplay="$(-\infty,0]$"
+  hint="A negative sign in front of the radical reflects the nonnegative outputs of $\sqrt{x}$ across the $x$-axis."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 8.7: Use Radicals in Functions](https://openstax.org/books/intermediate-algebra-2e/pages/8-7-use-radicals-in-functions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, self-check reflection, and end-of-section exercise bank; and converted the source Try It practice into interactive exercises.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 8.7: Use Radicals in Functions](https://openstax.org/books/intermediate-algebra-2e/pages/8-7-use-radicals-in-functions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; and adapted selected end-of-section exercises into an interactive Practice block.</small>

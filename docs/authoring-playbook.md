@@ -288,8 +288,13 @@ the two independent things it names:
 | `no-like-terms` | a sum in which no two terms share a variable-and-power signature |
 | `polynomial` | no fraction bar at all — for a difference of fractions answering to a polynomial |
 | `distributed` | no parentheses left to multiply out |
-| `simplified-radical` | square-free radicands, like radicals combined, nothing radical under a fraction bar |
+| `simplified-radical` | power-free radicands (perfect $n$th-power factors extracted, sign included: $\sqrt[3]{-108}$ fails on its 27), like radicals combined, nothing radical under a fraction bar, no unevaluated numeral arithmetic or fraction under a radical ($\sqrt{64+225}$, $\sqrt{\tfrac{25}{16}}$), and no same-index product of numeral radicals ($\sqrt{3}\cdot\sqrt{6}$) |
 | `factored` | a product of at least two factors, at least one multi-term — for "Factor: $x^2+6x+8$" |
+| `vertex-form` | one $a(x-h)^2+k$ term shape (either orientation, optional written `y=`/`x=`/`f(x)=` label): exactly one squared-binomial term plus at most a constant — for "Write $y=2x^2+4x+5$ in standard form" |
+| `conic-standard-form` | an equation with one side exactly $1$ and the other a sum/difference of $\ge 2$ fractions, each a coefficient-1 squared term ($x^2$, $(y-k)^2$) over a positive integer — for ellipse/hyperbola "write in standard form" |
+| `circle-standard-form` | two coefficient-1 squared terms against a positive integer — $(x-h)^2+(y-k)^2=r^2$ for the circle asks |
+| `exponential-form` | no logarithm left — for "convert from logarithmic to exponential form", where both statements grade equal |
+| `expanded-logarithms` | every written $\log$ takes a single number or variable — for "write $\log_5 25ab$ as a sum of logarithms" |
 | `denominator:<n>` | that exact denominator — for equivalent-fraction asks, which are deliberately **not** reduced |
 
 A right value in the wrong shape reports back as "That value is right — now
@@ -482,12 +487,17 @@ valid accessible SVG can still be mathematically wrong.
 
 ### The section-final `## Practice` block
 
-Every numbered section closes its instructional content with a `## Practice`
-heading. It sits immediately after the educational content — that is,
-immediately before the section's first end-matter heading, whichever the
-section uses (`## Key equations`, `## Key concepts`, `## Key terms`, …). In a
-section with no end matter, `## Practice` is the last heading before the
-attribution footer.
+Every numbered section closes with a `## Practice` heading. It is the **last
+heading before the attribution footer**, sitting *after* the section's end
+matter (`## Key equations`, `## Key concepts`, `## Key terms`, …): a reader
+reviews the key terms and concepts first, then attempts the practice. In a
+section with no end matter, `## Practice` still closes the section.
+
+End matter is written as headings, never prose. A bold paragraph such as
+`**Key terms.** …` on its own line is a lint error: convert it to a
+`## Key terms` heading followed by the same content with the bold prefix
+dropped, keep the wording verbatim, and place it with the rest of the end
+matter — before `## Practice`.
 
 Inside it, **one `### ` group per section objective, in the order the
 objectives callout lists them, each holding at least two interactive
@@ -531,6 +541,17 @@ multipart source item expands into one exercise per part.
   counts toward that group's minimum. Do not reduce a multipart item to a
   single part. Where one multipart item would satisfy a group on its own and
   its parts are near-identical drill, prefer two distinct source exercises.
+- **Never merge separate source exercises into one component.** The rule above
+  runs both ways: one component per source exercise, or per part of one. Do
+  not fold two or three independent items into a single question with a tuple
+  answer (`answer="(11,125,2)"`), and do not build a multiple choice whose
+  options each bundle several unrelated conversions. Merging hides items from
+  the coverage rule and produces answers no learner would enter. A combined
+  response is allowed only where the source item itself asks for one ("give
+  the center and the radius"), and then the question must name the order of
+  the entries. Check the CNXML before assuming: consecutive `<exercise>`
+  elements under one "In the following exercises…" instruction are separate
+  items, not ⓐⓑⓒ parts — only markers inside a single `<exercise>` are parts.
 - **Hints.** These are regular-section exercises: every one needs a concise,
   strategy-oriented `hint`.
 - **Cap exemption.** Practice-block questions are exempt from the 2–3
@@ -590,24 +611,22 @@ From the repository root:
 
 ## 5. The one remaining retrofit
 
-`npm run lint` reports **zero errors and one warning category**: the 56
-sections with no `## Practice` block (intermediate-algebra 45, precalculus 11,
-as of August 6, 2026). 156 of the 212 mapped sections now carry the block:
-prealgebra is complete at 60/60 and elementary-algebra is complete at 73/73,
-so the retrofit is now entirely intermediate-algebra plus the two authored
-Precalculus 2e chapters. That warning list is the worklist, and it is the only
-non-blocking rule in the repository — every other authoring rule is an error,
-so there is no category of known-defective content left to grandfather.
+`npm run lint` reports **zero errors and one warning category**: the 11
+sections with no `## Practice` block (precalculus 11,
+as of August 8, 2026). 201 of the 212 mapped sections now carry the block:
+all three algebra books are complete — prealgebra 60/60, elementary-algebra
+73/73, and intermediate-algebra 68/68 — so the retrofit is now entirely the
+two authored Precalculus 2e chapters. That warning list is the worklist, and
+it is the only non-blocking rule in the repository — every other authoring
+rule is an error, so there is no category of known-defective content left to
+grandfather.
 
-Intermediate-algebra chapters 1–4 are complete; the remaining 45 sections
-spread across chapters 5–12 (4–8 sections each; chapters 8 and 9 are the
-largest at 8 apiece).
 Precalculus 2e covers only its two authored chapters — ch. 1 Functions (7) and
 ch. 2 Linear Functions (4); its ten scaffolded chapters will add to this
 worklist as their section pages land.
 
 Adding those blocks is authoring, not cleanup: the per-section minimums the
-lint prints sum to 414 exercises, and the real figure runs higher because the
+lint prints sum to 91 exercises, and the real figure runs higher because the
 block scales with the objectives list and multipart items expand one component
 per part. Each is selected from the source's end-of-section sets with its
 answer visible in the Answer Key, independently solved, recorded in the
@@ -660,8 +679,11 @@ number. Every class is now closed — token, retrofit, and lint rule each:
 | Numeric arithmetic | 566 | `decimal` / `fraction` / `lowest-terms` / `single-power` | **done** — same three parts |
 | Multiply, Divide (algebraic) | 231 | `expanded`, `single-term`, `single-fraction` | **done** — same three parts |
 | Simplify, Add, Subtract (algebraic) | 401 | `no-like-terms`, `polynomial`, `distributed`, `single-fraction` | **done** |
-| Radicals | 207 | `simplified-radical` | **done** |
+| Radicals | 207 | `simplified-radical` | **done** — and the numeral-radical/series gap in its lint scan is closed too (see below) |
 | Reducing a rational expression | 47 | `reduced-fraction` | **done** — token, retrofit, and lint rule all landed |
+| "Write it in standard form" | 26 | `vertex-form`, `conic-standard-form`, `circle-standard-form` | **done** — token, retrofit, and lint verb (August 9, 2026) |
+| Logarithm conversion / expansion | 3 | `exponential-form`, `expanded-logarithms` | **done** — same three parts |
+| Composition and page-context combinations | 6 | `distributed`, `no-like-terms`, `expanded` | **done** — `(f\circ g)(x)` builds a substituted candidate, definitions printed in page prose now reach the extractor, and `(fg)(x)` juxtaposition counts as the product ask |
 
 Two things the numeric pass established that are worth carrying forward. The
 measured 751 was 566 once the radicals and the incidental collisions were
@@ -746,6 +768,127 @@ bar (now multiple choice, the resolution recorded above for the
 quotient-to-a-power item). The lint's form-first ordering above remains
 correct as the cheaper check.
 
+### A seventh shape: the operation written but not carried out
+
+Every class above is a printed *span* that equals the answer, and every
+extractor asks the same question — "is something printed here also the
+answer?". Intermediate Algebra ch. 5 authoring turned up a shape that question
+cannot see: the hazard is a **combination** of two printed spans.
+
+"For $f(x)=2x^2-4x+1$ and $g(x)=5x^2+8x+3$, find $(f+g)(x)$" prints neither
+$7x^2+4x+4$ nor anything value-equal to it — and yet
+`(2x^2-4x+1)+(5x^2+8x+3)`, the operation written but not performed, grades
+`correct`. The learner types back what the question already told them and
+never combines a like term. Three phrasings carry it, and each now has its own
+extractor in `tools/lints.mjs` that **builds** the candidate rather than
+finding it:
+
+| Phrasing | Candidate built | Typical token |
+|---|---|---|
+| `find $(f\pm g)(x)$`, `$(f\cdot g)(x)$`, `$\left(\tfrac{f}{g}\right)(x)$` | the two definitions joined by that operation | `no-like-terms`, `expanded` |
+| "Subtract $X$ from $Y$" | $(Y)-(X)$, in the order the wording fixes | `no-like-terms` |
+| "…find the quotient when $A$ is divided by $B$" | $\tfrac{A}{B}$ | `expanded` |
+
+Two boundaries are load-bearing, and both are asserted in
+`tools/lints.test.mjs`. An ask evaluated at a *number* — `(f+g)(2)`, answer
+$40$ — builds nothing, because no restatement of the definitions equals a
+number. And "find the **remainder** when $A$ is divided by $B$" names no
+quotient, so it stays out of scope; only the word "quotient" opens that path.
+
+A division leaving a nonzero remainder needs no exception: $\tfrac{A}{B}$
+simply is not equal to the quotient, so the grader rejects it and the rule
+falls silent on its own arithmetic. That is the rule staying honest about the
+exact-division case rather than special-casing around it.
+
+The retrofit that shipped with the rule was 17 exercises in
+intermediate-algebra ch. 5 and 6 more in the prealgebra and elementary-algebra
+"Add and Subtract Polynomials" sections — all six of those the "Subtract $X$
+from $Y$" wording, which is the one phrasing of the three that had spread
+beyond ch. 5.
+
+### The eighth shape closed: "write it in standard form"
+
+Intermediate Algebra ch. 10–12 authoring (August 8, 2026) turned up the class;
+it closed the next day the way every class closes — token, retrofit, and lint
+verb together. "Write $y=-x^2+2x-4$ in standard form" answers $y=-(x-1)^2-3$,
+and "Write $25x^2+9y^2-100x-54y-44=0$ in standard form" answers
+$\tfrac{(x-2)^2}{9}+\tfrac{(y-3)^2}{25}=1$ — both value-equal to the printed
+subject by construction, because completing the square changes the shape and
+not the value, so retyping the prompt graded `correct`. No pre-existing token
+could separate them without also rejecting the correct answer.
+
+Three tokens carry the class, because "standard form" names three different
+target shapes and the feedback has to name the right one: `vertex-form`
+($a(x-h)^2+k$ in either orientation, with an optional written `y=` / `x=` /
+`f(x)=` label stripped off the LaTeX — the parse would read `f(x)=…` as an
+equation on a function application), `conic-standard-form` (fractions of
+coefficient-1 squared terms against exactly $1$; a numerator that keeps its
+general-form coefficient, $\tfrac{9x^2}{144}$, fails because that division was
+the ask), and `circle-standard-form` ($(x-h)^2+(y-k)^2=r^2$). The lint verb
+matches "standard form" / "vertex form" / the spelled-out
+"$f(x)=a(x-h)^2+k$ form" and feeds a new extractor over printed EQUATION
+spans — the one span shape every other extractor deliberately excludes — and a
+definition span `f(x)=RHS` also contributes its bare right-hand side, because
+the learner answers without the label and the labelled span itself does not
+grade equal to anything (the engine reads `f(x)` as an application, not a
+variable). The verb is gated but loose; the equation-span extractor is what
+keeps the prealgebra "write in standard form" number-words prompt and the
+augmented-matrix ask out of scope, since neither prints a bare two-sided
+equation.
+
+The retrofit was 26 tagged exercises: the 19 in-page Try Its recorded when the
+class was found (4 in `11-conics/02-parabolas.md`, 4 in `03-ellipses.md`, 4 in
+`04-hyperbolas.md`, 7 in §9.7 — where the hazard span is the *right-hand side*
+of the printed `f(x)=…` definition, which a whole-span replay misses), the
+knowledge-check circle/vertex/hyperbola items, and the §9.7 vertex-from-a-point
+items whose expanded forms would otherwise pass. The 11.1 circle asks and the
+arch applications are tagged too: not retypeable, but a value-equal
+non-standard equation (`x^2+y^2-121=0`, a doubled ellipse equation) passed
+before the tags. The four ch. 11 Practice prompts that had been authored as
+`multiplechoice` while the class was open remain multiple choice — sound
+content, converted deliberately, recorded here so nobody "fixes" them back
+without noticing they predate the token.
+
+Closing the class surfaced a **worse** defect the self-grading gates cannot
+see: five answers were authored as slash quotients with a juxtaposed factor —
+`-1/20(x-20)^2+20` (four arch applications) and `y=1/2x-5/2`
+(knowledge-check 01–06) — which the engine reads as $\tfrac{-1}{20(x-20)^2}+20$
+and $y=\tfrac{1}{2x}-\tfrac52$. The authored value was not the intended one,
+and a learner typing the intended answer was marked **wrong** (MathLive turns
+a typed `/` into a real `\frac`, so the learner cannot even reproduce the
+authored string). Both sides of the self-check mis-parse identically, which is
+why no existing gate fired. The answers are rewritten with explicit `\frac`
+and a lint rule now rejects any answer matching a slash quotient followed by a
+juxtaposed letter, parenthesis, or macro.
+
+The same sweep closed the last two blind spots in the re-expression scan
+(playbook rule: fold every hole the sweep finds into the rule, not just the
+instance). `printedPolynomialSubjects` now reads a `\sum` span — the sigma's
+bounds are structure, and its `=` had been read as a relation, hiding "Find
+the sum $\sum_{i=1}^{30}(6i-4)$" → `2670` — and counts a numeral radical as an
+algebraic subject, which put every "Simplify: $\sqrt{\smash[b]{\cdot}}$"
+numeral prompt in scope for the first time. That forced 30 retrofits
+(`decimal` for integer answers, `fraction lowest-terms` for radical-free
+fractions, `simplified-radical` for the rest) and three tightenings of
+`simplified-radical` itself, which had been too weak to reject
+$\sqrt{64+225}$, $\sqrt{\tfrac{25}{16}}$, $\sqrt{-8}$, $\sqrt{1}$, or
+$\sqrt{3}\cdot\sqrt{6}$: numeral radicands reject unevaluated arithmetic and
+fractions, the perfect-power scan reads through the sign, and a same-index
+product of numeral radicals fails (numeral only — the corpus's own worked
+answers keep $\sqrt{10}\sqrt{y}$ as a product). The composition asks closed
+the same day: `(f\circ g)(x)` builds the outer definition with the inner one
+substituted for `x`, definitions printed in page prose ("For the next three
+questions, use $f(x)=6x+1$…") now reach the extractor as fallbacks — safe by
+construction, since a wrongly paired definition builds a candidate that simply
+never grades `correct` — and `(fg)(x)` juxtaposition counts as the product
+ask.
+
+To re-run the audit that found all of this: replay every math span printed in
+a question back through `checkAnswer` against that exercise's own answer, one
+file per process — the engine carries state across calls and will otherwise
+report false positives — and for any span of the shape `label = RHS`, replay
+the bare RHS too.
+
 ## Done checklist
 
 - [ ] Pinned CNXML and PDF/Answer Key pages inspected; source ledger complete.
@@ -755,10 +898,10 @@ correct as the cheaper check.
 - [ ] Every retained practice item is a real component with no print-only label.
 - [ ] Objectives callout lists one objective per Markdown list item, matching
       the source one for one.
-- [ ] `## Practice` block immediately before the end matter: a `### ` group
-      per objective, at least two sourced, hinted exercises in each and five
-      in the block, multipart items expanded part by part; the footer
-      discloses the adaptation.
+- [ ] `## Practice` block after the end matter, last heading before the
+      footer: a `### ` group per objective, at least two sourced, hinted
+      exercises in each and five in the block, multipart items expanded part
+      by part; the footer discloses the adaptation.
 - [ ] Every re-expression prompt carries an `answerForm`; categorical answers
       are `multiplechoice`, never digit codes.
 - [ ] Every touched answer independently solved and checked against the source key.

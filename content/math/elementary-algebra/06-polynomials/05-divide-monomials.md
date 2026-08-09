@@ -579,6 +579,18 @@ $$
   hint="Multiply the monomials in the numerator $(48x^{11} y^{17})$, then divide by $-12x^{10} y^{12}$."
 >}}
 
+## Key terms
+
+**Quotient Property for Exponents** — to divide powers with like bases,
+subtract the exponents: $\tfrac{a^m}{a^n} = a^{m-n}$ when $m > n$, and
+$\tfrac{a^m}{a^n} = \tfrac{1}{a^{n-m}}$ when $n > m$ (with $a \neq 0$).
+**Zero Exponent** — any nonzero number or expression raised to the zero power
+is $1$: $a^0 = 1$ for $a \neq 0$. **Quotient to a Power Property for
+Exponents** — to raise a fraction to a power, raise the numerator and
+denominator to that power: $\left(\tfrac{a}{b}\right)^m = \tfrac{a^m}{b^m}$
+(with $b \neq 0$). **monomial** — a one-term algebraic expression, such as
+$7x^4$, that we can divide by applying these properties of exponents.
+
 ## Practice
 
 ### Simplify Expressions Using the Quotient Property for Exponents
@@ -708,18 +720,6 @@ $\tfrac{5a}{5b}$
   answerDisplay="$5v^4/u^2$"
   hint="Multiply the monomials in the numerator ($60u^5v^6$) and in the denominator ($12u^7v^2$), then divide."
 >}}
-
-## Key terms
-
-**Quotient Property for Exponents** — to divide powers with like bases,
-subtract the exponents: $\tfrac{a^m}{a^n} = a^{m-n}$ when $m > n$, and
-$\tfrac{a^m}{a^n} = \tfrac{1}{a^{n-m}}$ when $n > m$ (with $a \neq 0$).
-**Zero Exponent** — any nonzero number or expression raised to the zero power
-is $1$: $a^0 = 1$ for $a \neq 0$. **Quotient to a Power Property for
-Exponents** — to raise a fraction to a power, raise the numerator and
-denominator to that power: $\left(\tfrac{a}{b}\right)^m = \tfrac{a^m}{b^m}$
-(with $b \neq 0$). **monomial** — a one-term algebraic expression, such as
-$7x^4$, that we can divide by applying these properties of exponents.
 
 ---
 

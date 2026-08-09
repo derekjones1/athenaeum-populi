@@ -313,6 +313,14 @@ $$
   hint="Each radical simplifies to a multiple of $\sqrt{3p}$: $3p\sqrt{3p} - 4p\sqrt{3p}$."
 >}}
 
+## Key terms
+
+**like square roots** — square roots with the same radicand (such as
+$3\sqrt{x}$ and $8\sqrt{x}$); like square roots can be combined by adding or
+subtracting their coefficients, just like like terms. **coefficient** — the
+numerical factor multiplying a square root; only the coefficients of like
+square roots are combined when adding or subtracting.
+
 ## Practice
 
 ### Add and subtract like square roots
@@ -366,14 +374,6 @@ $$
   answerDisplay="$14x\sqrt{5}$"
   hint="Each radical simplifies to a multiple of $x\sqrt{5}$: $6x\sqrt{5} - 12x\sqrt{5} + 20x\sqrt{5}$."
 >}}
-
-## Key terms
-
-**like square roots** — square roots with the same radicand (such as
-$3\sqrt{x}$ and $8\sqrt{x}$); like square roots can be combined by adding or
-subtracting their coefficients, just like like terms. **coefficient** — the
-numerical factor multiplying a square root; only the coefficients of like
-square roots are combined when adding or subtracting.
 
 ---
 

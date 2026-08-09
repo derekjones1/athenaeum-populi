@@ -279,6 +279,7 @@ $$8m^2 - 4m - 4$$
 {{< fillin
   question="Subtract $(4n^2 - 7n - 3)$ from $(8n^2 + 5n - 3)$."
   answer="4n^2 + 12n"
+  answerForm="no-like-terms"
   answerDisplay="$4n^2 + 12n$"
   hint="Write it as $(8n^2 + 5n - 3) - (4n^2 - 7n - 3)$, distribute the minus sign, then combine like terms."
 >}}
@@ -286,6 +287,7 @@ $$8m^2 - 4m - 4$$
 {{< fillin
   question="Subtract $(a^2 - 4a - 9)$ from $(6a^2 + 4a - 1)$."
   answer="5a^2 + 8a + 8"
+  answerForm="no-like-terms"
   answerDisplay="$5a^2 + 8a + 8$"
   hint="Write it as $(6a^2 + 4a - 1) - (a^2 - 4a - 9)$, distribute the minus sign, then combine like terms."
 >}}
@@ -375,6 +377,16 @@ The height of the object is $156$ feet after $t = 3$ seconds.
   answer="20"
   hint="Substitute $2$ for $t$ into $-8t^2 + 24t + 4$, simplify the exponent first, then multiply and add."
 >}}
+
+## Key terms
+
+**polynomial** — a monomial, or two or more monomials, combined by addition
+or subtraction. **monomial** — a polynomial with exactly one term.
+**binomial** — a polynomial with exactly two terms. **trinomial** — a
+polynomial with exactly three terms. **degree of a term** — the exponent of
+its variable (the degree of a constant is $0$). **degree of a polynomial** —
+the highest degree of all its terms. **standard form** — a polynomial
+written with its terms in descending order of degree.
 
 ## Practice
 
@@ -472,6 +484,7 @@ other polynomial
 {{< fillin
   question="Subtract $5x^6$ from $-12x^6$."
   answer="-17x^6"
+  answerForm="no-like-terms"
   answerDisplay="$-17x^6$"
   hint="Write it as $-12x^6 - 5x^6$, then combine the coefficients."
 >}}
@@ -505,6 +518,7 @@ other polynomial
 {{< fillin
   question="Subtract $(7x^2 - 4x + 2)$ from $(8x^2 - x + 6)$."
   answer="x^2 + 3x + 4"
+  answerForm="no-like-terms"
   answerDisplay="$x^2 + 3x + 4$"
   hint="Write it as $(8x^2 - x + 6) - (7x^2 - 4x + 2)$, distribute the minus sign, then combine like terms."
 >}}
@@ -535,16 +549,6 @@ other polynomial
   answerDisplay="$19$ feet"
   hint="Substitute $4$ for $t$, simplify $-16(4)^2$ first, then add $275$."
 >}}
-
-## Key terms
-
-**polynomial** — a monomial, or two or more monomials, combined by addition
-or subtraction. **monomial** — a polynomial with exactly one term.
-**binomial** — a polynomial with exactly two terms. **trinomial** — a
-polynomial with exactly three terms. **degree of a term** — the exponent of
-its variable (the degree of a constant is $0$). **degree of a polynomial** —
-the highest degree of all its terms. **standard form** — a polynomial
-written with its terms in descending order of degree.
 
 ---
 

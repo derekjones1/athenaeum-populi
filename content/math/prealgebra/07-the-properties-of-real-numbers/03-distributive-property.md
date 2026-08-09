@@ -296,6 +296,13 @@ The answers are the same when $y = 35$, demonstrating that $-(y + 5) = -y -
   hint="Simplify inside the parentheses first: $36 - 4 = 32$, then take the opposite."
 >}}
 
+## Key terms
+
+**Distributive Property** — for real numbers $a$, $b$, $c$: $a(b + c) = ab +
+ac$; also written $a(b - c) = ab - ac$ and $(b + c)a = ba + ca$. Multiplying
+a sum (or difference) by a number gives the same result as multiplying each
+term by that number and then adding (or subtracting) the products.
+
 ## Practice
 
 ### Simplify expressions using the distributive property
@@ -396,13 +403,6 @@ The answers are the same when $y = 35$, demonstrating that $-(y + 5) = -y -
   answer="160"
   hint="The opposite of $-80$ is positive, so both terms are positive here."
 >}}
-
-## Key terms
-
-**Distributive Property** — for real numbers $a$, $b$, $c$: $a(b + c) = ab +
-ac$; also written $a(b - c) = ab - ac$ and $(b + c)a = ba + ca$. Multiplying
-a sum (or difference) by a number gives the same result as multiplying each
-term by that number and then adding (or subtracting) the products.
 
 ---
 

@@ -177,6 +177,7 @@ the ellipse.
 {{< fillin
   question="Write $9x^2+16y^2=144$ in standard form."
   answer="\frac{x^2}{16}+\frac{y^2}{9}=1"
+  answerForm="conic-standard-form"
   answerDisplay="$\tfrac{x^2}{16}+\tfrac{y^2}{9}=1$"
   hint="Divide every term by $144$."
 >}}
@@ -184,6 +185,7 @@ the ellipse.
 {{< fillin
   question="Write $16x^2+25y^2=400$ in standard form."
   answer="\frac{x^2}{25}+\frac{y^2}{16}=1"
+  answerForm="conic-standard-form"
   answerDisplay="$\tfrac{x^2}{25}+\tfrac{y^2}{16}=1$"
   hint="Divide every term by $400$."
 >}}
@@ -390,6 +392,7 @@ and the endpoints of the minor axis are $(2,-1),(2,-5)$. Sketch the ellipse.
 {{< fillin
   question="Write $6x^2+4y^2+12x-32y+34=0$ in standard form."
   answer="\frac{(x+1)^2}{6}+\frac{(y-4)^2}{9}=1"
+  answerForm="conic-standard-form"
   answerDisplay="$\tfrac{(x+1)^2}{6}+\tfrac{(y-4)^2}{9}=1$"
   hint="Group the $x$- and $y$-terms and complete both squares."
 >}}
@@ -397,6 +400,7 @@ and the endpoints of the minor axis are $(2,-1),(2,-5)$. Sketch the ellipse.
 {{< fillin
   question="Write $4x^2+y^2-16x-6y+9=0$ in standard form."
   answer="\frac{(x-2)^2}{4}+\frac{(y-3)^2}{16}=1"
+  answerForm="conic-standard-form"
   answerDisplay="$\tfrac{(x-2)^2}{4}+\tfrac{(y-3)^2}{16}=1$"
   hint="Group the $x$- and $y$-terms and complete both squares."
 >}}
@@ -460,12 +464,105 @@ $$
   hint="Use $b^2=a^2-c^2$."
 >}}
 
-**Key terms.** An **ellipse** is all points in a plane where the sum of the
+## Key terms
+
+An **ellipse** is all points in a plane where the sum of the
 distances from two fixed points is constant. Each fixed point is a **focus**.
 The line through the foci is the **major axis**, its endpoints are the
 **vertices**, the midpoint of the vertices is the **center**, and the
 perpendicular line through the center is the **minor axis**.
 
+## Practice
+
+### Graph an ellipse with center at the origin
+
+{{< fillin
+  question="For $\tfrac{x^2}{4}+\tfrac{y^2}{25}=1$, enter the positive $y$-coordinate of a vertex."
+  answer="5"
+  answerDisplay="$5$"
+  hint="The larger denominator is under $y^2$, so the vertices are the $y$-intercepts."
+>}}
+
+{{< fillin
+  question="For $\tfrac{x^2}{25}+\tfrac{y^2}{36}=1$, enter the positive $x$-coordinate of a minor-axis endpoint."
+  answer="5"
+  answerDisplay="$5$"
+  hint="The minor axis lies along the smaller denominator, here under $x^2$."
+>}}
+
+{{< fillin
+  question="For $4x^2+25y^2=100$, enter the positive $y$-coordinate of a minor-axis endpoint."
+  answer="2"
+  answerDisplay="$2$"
+  hint="Divide every term by $100$ to get standard form first."
+>}}
+
+### Find the equation of an ellipse with center at the origin
+
+{{< fillin
+  question="Find the equation of the ellipse centered at $(0,0)$ with vertices $(0,-5),(0,5)$ and minor-axis endpoints $(-3,0),(3,0)$."
+  answer="\frac{x^2}{9}+\frac{y^2}{25}=1"
+  answerDisplay="$\tfrac{x^2}{9}+\tfrac{y^2}{25}=1$"
+  hint="Square each distance from the center for its denominator."
+>}}
+
+{{< fillin
+  question="Find the equation of the ellipse centered at $(0,0)$ with vertices $(0,-4),(0,4)$ and minor-axis endpoints $(-3,0),(3,0)$."
+  answer="\frac{x^2}{9}+\frac{y^2}{16}=1"
+  answerDisplay="$\tfrac{x^2}{9}+\tfrac{y^2}{16}=1$"
+  hint="Square each distance from the center for its denominator."
+>}}
+
+### Graph an ellipse with center not at the origin
+
+{{< fillin
+  question="For $\tfrac{(x+1)^2}{4}+\tfrac{(y+6)^2}{25}=1$, enter the $y$-coordinate of the center."
+  answer="-6"
+  answerDisplay="$-6$"
+  hint="Rewrite $y+6$ as $y-(-6)$."
+>}}
+
+{{< fillin
+  question="The ellipse $\tfrac{(x-3)^2}{4}+\tfrac{(y-7)^2}{25}=1$ is graphed by translating $\tfrac{x^2}{4}+\tfrac{y^2}{25}=1$. Enter the $x$-coordinate of its center."
+  answer="3"
+  answerDisplay="$3$"
+  hint="The translation moves the center from $(0,0)$ to $(h,k)$."
+>}}
+
+{{< multiplechoice
+  question="Write $25x^2+9y^2-100x-54y-44=0$ in standard form."
+  answer="$\tfrac{(x-2)^2}{9}+\tfrac{(y-3)^2}{25}=1$"
+  hint="Group the $x$- and $y$-terms, complete both squares, then divide through so the right side is $1$. Each denominator is $225$ divided by that term's leading coefficient."
+>}}
+$\tfrac{(x-2)^2}{9}+\tfrac{(y-3)^2}{25}=1$
+$\tfrac{(x-2)^2}{25}+\tfrac{(y-3)^2}{9}=1$
+$\tfrac{(x+2)^2}{9}+\tfrac{(y+3)^2}{25}=1$
+$\tfrac{(x-2)^2}{9}-\tfrac{(y-3)^2}{25}=1$
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="For $\tfrac{(x-2)^2}{9}+\tfrac{(y-3)^2}{25}=1$, enter the larger $y$-coordinate of a vertex."
+  answer="8"
+  answerDisplay="$8$"
+  hint="Since $25>9$, the major axis is vertical; add $\sqrt{25}$ to the center's $y$-coordinate."
+>}}
+
+### Solve application with ellipses
+
+{{< fillin
+  question="A planet's elliptical orbit has vertices $(-20,0),(20,0)$ and its sun is a focus at $(10,0)$. Write the equation of the orbit."
+  answer="\frac{x^2}{400}+\frac{y^2}{300}=1"
+  answerDisplay="$\tfrac{x^2}{400}+\tfrac{y^2}{300}=1$"
+  hint="Use $b^2=a^2-c^2$."
+>}}
+
+{{< fillin
+  question="A comet's elliptical orbit has vertices $(-50,0),(50,0)$ and its sun is a focus at $(35,0)$. Write the equation of the orbit."
+  answer="\frac{x^2}{2500}+\frac{y^2}{1275}=1"
+  answerDisplay="$\tfrac{x^2}{2{,}500}+\tfrac{y^2}{1{,}275}=1$"
+  hint="Use $b^2=a^2-c^2$."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 11.3](https://openstax.org/books/intermediate-algebra-2e/pages/11-3-ellipses) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: omitted readiness quizzes, practice sets, self-checks, media links, and complex source figures; converted Try It problems to interactive questions and described source figures in words.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 11.3](https://openstax.org/books/intermediate-algebra-2e/pages/11-3-ellipses) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: omitted readiness quizzes, self-checks, media links, and complex source figures; converted Try It problems to interactive questions, described source figures in words, and adapted selected end-of-section exercises into an interactive Practice block.</small>

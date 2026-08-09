@@ -515,8 +515,142 @@ $$
   hint="The absolute values are twice the counting numbers, and the signs alternate beginning with a negative term."
 >}}
 
-**Key terms:** factorial notation, finite sequence, general term, index of summation, infinite sequence, partial sum, sequence, summation notation, term.
+## Key terms
+
+factorial notation, finite sequence, general term, index of summation, infinite sequence, partial sum, sequence, summation notation, term.
+
+## Practice
+
+### Write the first few terms of a sequence
+
+{{< fillin
+  question="Write the first five terms of the sequence whose general term is $a_n=2n-7$. Enter the terms in order, separated by commas."
+  answer="-5,-3,-1,1,3"
+  answerDisplay="$-5,-3,-1,1,3$"
+  hint="Substitute $n=1,2,3,4,5$ into $2n-7$."
+>}}
+
+{{< fillin
+  question="Write the first five terms of the sequence whose general term is $a_n=2^n+3$. Enter the terms in order, separated by commas."
+  answer="5,7,11,19,35"
+  answerDisplay="$5,7,11,19,35$"
+  hint="Substitute $n=1,2,3,4,5$ into $2^n+3$."
+>}}
+
+{{< fillin
+  question="Write the first five terms of the sequence whose general term is $a_n=(-1)^n\cdot2n$. Enter the terms in order, separated by commas."
+  answer="-2,4,-6,8,-10"
+  answerDisplay="$-2,4,-6,8,-10$"
+  hint="The factor $(-1)^n$ makes the first term negative and then alternates signs."
+>}}
+
+### Find a formula for the general term (nth term) of a sequence
+
+{{< fillin
+  question="Find a general term for the sequence whose first five terms are shown: $6,7,8,9,10,\ldots$."
+  answer="n+5"
+  answerDisplay="$a_n=n+5$"
+  hint="Each term is 5 more than its position $n$."
+>}}
+
+{{< fillin
+  question="Find a general term for the sequence whose first five terms are shown: $e^3,e^4,e^5,e^6,e^7,\ldots$."
+  answer="e^{n+2}"
+  answerDisplay="$a_n=e^{n+2}$"
+  hint="The exponent is always 2 more than the position $n$."
+>}}
+
+{{< fillin
+  question="Find a general term for the sequence whose first five terms are shown: $-\tfrac52,-\tfrac54,-\tfrac58,-\tfrac{5}{16},-\tfrac{5}{32},\ldots$."
+  answer="-\frac{5}{2^n}"
+  answerDisplay="$a_n=-\tfrac{5}{2^n}$"
+  hint="The numerators are all $-5$, and the denominators are powers of 2."
+>}}
+
+### Use factorial notation
+
+{{< fillin
+  question="Using factorial notation, write the first five terms of the sequence whose general term is $a_n=\tfrac{4}{n!}$. Enter the terms in order, separated by commas."
+  answer="4,2,\frac{2}{3},\frac{1}{6},\frac{1}{30}"
+  answerDisplay="$4,2,\tfrac23,\tfrac16,\tfrac1{30}$"
+  hint="Evaluate $4/n!$ for $n=1,2,3,4,5$."
+>}}
+
+{{< fillin
+  question="Using factorial notation, write the first five terms of the sequence whose general term is $a_n=3n!$. Enter the terms in order, separated by commas."
+  answer="3,6,18,72,360"
+  answerDisplay="$3,6,18,72,360$"
+  hint="Evaluate $3\cdot n!$ for $n=1,2,3,4,5$."
+>}}
+
+{{< fillin
+  question="Using factorial notation, write the first five terms of the sequence whose general term is $a_n=(2n)!$. Enter the terms in order, separated by commas."
+  answer="2,24,720,40320,3628800"
+  answerDisplay="$2,24,720,40{,}320,3{,}628{,}800$"
+  hint="Substitute $n=1,2,3,4,5$ so the argument of the factorial is $2n$, then expand each factorial."
+>}}
+
+### Find the partial sum
+
+{{< fillin
+  question="Expand the partial sum and find its value: $\sum_{i=1}^{5}i^2$."
+  answer="55"
+  answerForm="decimal"
+  answerDisplay="$55$"
+  hint="Substitute $i=1,2,3,4,5$, square each, then add."
+>}}
+
+{{< fillin
+  question="Expand the partial sum and find its value: $\sum_{i=1}^{6}(2i+3)$."
+  answer="60"
+  answerForm="decimal"
+  answerDisplay="$60$"
+  hint="Substitute $i=1,2,3,4,5,6$ into $2i+3$, then add the six terms."
+>}}
+
+{{< fillin
+  question="Expand the partial sum and find its value: $\sum_{n=1}^{5}\tfrac{n}{n+1}$."
+  answer="\frac{71}{20}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac{71}{20}$"
+  hint="Substitute $n=1,2,3,4,5$, then add the five fractions using a common denominator."
+>}}
+
+### Use summation notation to write a sum
+
+{{< multiplechoice
+  question="Write the sum using summation notation: $1+\tfrac18+\tfrac1{27}+\tfrac1{64}+\tfrac1{125}$."
+  answer="$\sum_{n=1}^{5}\tfrac{1}{n^3}$"
+  hint="The numerators are all one, and the denominators are cubes of the counting numbers from one to five."
+>}}
+$\sum_{n=1}^{5}\tfrac{1}{n^3}$
+$\sum_{n=1}^{5}\tfrac{1}{n^2}$
+$\sum_{n=1}^{5}\tfrac{1}{3^n}$
+$\sum_{n=1}^{4}\tfrac{1}{n^3}$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Write the sum using summation notation: $14+16+18+20+22+24+26$."
+  answer="$\sum_{n=1}^{7}(2n+12)$"
+  hint="The terms increase by 2 each time; check what constant makes $2n+12$ equal 14 when $n=1$."
+>}}
+$\sum_{n=1}^{7}(2n+12)$
+$\sum_{n=1}^{7}(2n+10)$
+$\sum_{n=1}^{6}(2n+12)$
+$\sum_{n=0}^{6}(2n+12)$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Write the sum using summation notation: $-2+4-6+8-10+\cdots+20$."
+  answer="$\sum_{n=1}^{10}(-1)^n2n$"
+  hint="The absolute values are twice the counting numbers up to 10, and the signs alternate beginning with a negative term."
+>}}
+$\sum_{n=1}^{10}(-1)^n2n$
+$\sum_{n=1}^{10}(-1)^{n+1}2n$
+$\sum_{n=1}^{9}(-1)^n2n$
+$\sum_{n=1}^{10}(-1)^nn$
+{{< /multiplechoice >}}
 
 <small>
-Adapted from [Intermediate Algebra 2e, Section 12.1: Sequences](https://openstax.org/books/intermediate-algebra-2e/pages/12-1-sequences) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: omitted the “Be Prepared” readiness exercises, section exercise set, and external media link; converted “Try It” exercises to interactive checks and adapted formatting for the web.
+Adapted from [Intermediate Algebra 2e, Section 12.1: Sequences](https://openstax.org/books/intermediate-algebra-2e/pages/12-1-sequences) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: omitted the “Be Prepared” readiness exercises and external media link; converted “Try It” exercises to interactive checks, adapted formatting for the web, and adapted selected end-of-section exercises into an interactive Practice block.
 </small>

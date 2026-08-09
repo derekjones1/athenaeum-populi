@@ -576,6 +576,16 @@ Check. We leave the check for you.
   hint="Divide both sides by $4$, complete the square, and use both signs from the Square Root Property."
 >}}
 
+## Key terms
+
+**Binomial Squares Pattern** — $(a+b)^2=a^2+2ab+b^2$ and
+$(a-b)^2=a^2-2ab+b^2$. **complete the square** — for an expression
+$x^2+bx$, add $\left(\tfrac{1}{2}b\right)^2$ to make a perfect square
+trinomial. **perfect square trinomial** — a trinomial of the form
+$a^2+2ab+b^2$ or $a^2-2ab+b^2$; it factors to $(a+b)^2$ or $(a-b)^2$.
+**Square Root Property** — if $x^2=k$ and $k\geq0$, then $x=\sqrt{k}$ or
+$x=-\sqrt{k}$.
+
 ## Practice
 
 ### Complete the square of a binomial expression
@@ -655,16 +665,6 @@ $m=-2+2\sqrt{10}$ or $m=-2-2\sqrt{10}$
   answerDisplay="$c=-2$ or $c=\tfrac{3}{2}$"
   hint="Divide both sides by $2$ so the coefficient of $c^2$ is $1$, then complete the square as usual."
 >}}
-
-## Key terms
-
-**Binomial Squares Pattern** — $(a+b)^2=a^2+2ab+b^2$ and
-$(a-b)^2=a^2-2ab+b^2$. **complete the square** — for an expression
-$x^2+bx$, add $\left(\tfrac{1}{2}b\right)^2$ to make a perfect square
-trinomial. **perfect square trinomial** — a trinomial of the form
-$a^2+2ab+b^2$ or $a^2-2ab+b^2$; it factors to $(a+b)^2$ or $(a-b)^2$.
-**Square Root Property** — if $x^2=k$ and $k\geq0$, then $x=\sqrt{k}$ or
-$x=-\sqrt{k}$.
 
 ---
 

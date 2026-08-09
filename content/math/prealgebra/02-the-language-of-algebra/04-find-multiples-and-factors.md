@@ -232,6 +232,14 @@ prime
 composite
 {{< /multiplechoice >}}
 
+## Key terms
+
+**multiple of a number** — the product of a counting number and a given
+number. **divisible** — $m$ is divisible by $n$ if $m$ is a multiple of $n$.
+**factors** — in $a \cdot b = m$, both $a$ and $b$ are factors of $m$.
+**prime number** — a counting number greater than $1$ whose only factors are
+$1$ and itself. **composite number** — a counting number that is not prime.
+
 ## Practice
 
 ### Identify multiples of numbers
@@ -358,14 +366,6 @@ composite
 prime
 composite
 {{< /multiplechoice >}}
-
-## Key terms
-
-**multiple of a number** — the product of a counting number and a given
-number. **divisible** — $m$ is divisible by $n$ if $m$ is a multiple of $n$.
-**factors** — in $a \cdot b = m$, both $a$ and $b$ are factors of $m$.
-**prime number** — a counting number greater than $1$ whose only factors are
-$1$ and itself. **composite number** — a counting number that is not prime.
 
 ---
 

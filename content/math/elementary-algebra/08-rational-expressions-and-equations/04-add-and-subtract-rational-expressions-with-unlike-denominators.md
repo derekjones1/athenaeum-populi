@@ -299,6 +299,15 @@ There are no common factors, so the rational expression is simplified.
   hint="Factor $x^2 - 4 = (x - 2)(x + 2)$; the LCD is $(x - 2)(x + 2)$. After subtracting, the numerator becomes $2x - (x - 2) = x + 2$, which cancels with the $(x + 2)$ in the denominator."
 >}}
 
+## Key terms
+
+**least common denominator (LCD)** — the least common multiple of the
+denominators of two or more rational expressions; found by factoring each
+denominator completely and multiplying together each factor the greatest number
+of times it appears in any one denominator. **equivalent rational expression** —
+a rational expression rewritten with a new denominator by multiplying its
+numerator and denominator by the same nonzero factor, so its value is unchanged.
+
 ## Practice
 
 ### Find the least common denominator of rational expressions
@@ -384,15 +393,6 @@ There are no common factors, so the rational expression is simplified.
   answerDisplay="$\tfrac{v - 14}{v + 3}$"
   hint="Write $4$ as $\tfrac{4}{1}$ and rewrite it with denominator $v + 3$: $\tfrac{4(v + 3)}{v + 3} = \tfrac{4v + 12}{v + 3}$. Then subtract the numerators."
 >}}
-
-## Key terms
-
-**least common denominator (LCD)** — the least common multiple of the
-denominators of two or more rational expressions; found by factoring each
-denominator completely and multiplying together each factor the greatest number
-of times it appears in any one denominator. **equivalent rational expression** —
-a rational expression rewritten with a new denominator by multiplying its
-numerator and denominator by the same nonzero factor, so its value is unchanged.
 
 ---
 

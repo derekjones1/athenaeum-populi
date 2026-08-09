@@ -2202,6 +2202,15 @@ They mean Veronica can earn at least \$280 by working 16 hours as an
 administrative assistant, working 14 hours at the day spa and 8 hours as an
 administrative assistant, or working 28 hours at the day spa.
 
+## Key terms
+
+**linear inequality** — an inequality that can be written as $Ax+By>C$,
+$Ax+By\geq C$, $Ax+By<C$, or $Ax+By\leq C$, where $A$ and $B$ are not both
+zero. **solution to a linear inequality** — an ordered pair $(x,y)$ that
+makes the inequality true when the values are substituted. **boundary line**
+— the line $Ax+By=C$ that separates the region where $Ax+By>C$ from the
+region where $Ax+By<C$.
+
 ## Practice
 
 ### Verify solutions to an inequality in two variables
@@ -2299,15 +2308,6 @@ solid; the side not containing the origin
 >}}
 {"answer": {"slope": -1.5, "intercept": 50}, "grid": {"xMin": 0, "xMax": 40, "yMin": 0, "yMax": 60}}
 {{< /graphplot >}}
-
-## Key terms
-
-**linear inequality** — an inequality that can be written as $Ax+By>C$,
-$Ax+By\geq C$, $Ax+By<C$, or $Ax+By\leq C$, where $A$ and $B$ are not both
-zero. **solution to a linear inequality** — an ordered pair $(x,y)$ that
-makes the inequality true when the values are substituted. **boundary line**
-— the line $Ax+By=C$ that separates the region where $Ax+By>C$ from the
-region where $Ax+By<C$.
 
 ---
 

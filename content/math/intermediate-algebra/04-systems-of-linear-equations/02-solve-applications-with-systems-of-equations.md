@@ -570,6 +570,16 @@ mph.
   hint="Let j = the jet's speed in still air and w = the wind's speed. The system is $5(j + w) = 1{,}325$ and $5(j - w) = 1{,}035$. Solve for w."
 >}}
 
+## Key terms
+
+**complementary angles** — two angles whose measures add to $90$ degrees;
+each is called the *complement* of the other. **supplementary angles** —
+two angles whose measures add to $180$ degrees; each is called the
+*supplement* of the other. **tailwind** — a wind current blowing in the
+same direction a plane is flying, so it increases the plane's actual speed
+to $j+w$. **headwind** — a wind current blowing against the direction a
+plane is flying, so it decreases the plane's actual speed to $j-w$.
+
 ## Practice
 
 ### Solve direct translation applications
@@ -667,16 +677,6 @@ mph.
   answer="415"
   hint="Let j = the jet's speed in still air and w = the wind's speed. The system is $3(j + w) = 1{,}320$ and $3(j - w) = 1{,}170$. Solve for j."
 >}}
-
-## Key terms
-
-**complementary angles** — two angles whose measures add to $90$ degrees;
-each is called the *complement* of the other. **supplementary angles** —
-two angles whose measures add to $180$ degrees; each is called the
-*supplement* of the other. **tailwind** — a wind current blowing in the
-same direction a plane is flying, so it increases the plane's actual speed
-to $j+w$. **headwind** — a wind current blowing against the direction a
-plane is flying, so it decreases the plane's actual speed to $j-w$.
 
 ---
 

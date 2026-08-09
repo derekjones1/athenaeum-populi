@@ -91,6 +91,7 @@ simplified.
 {{< fillin
   question="Simplify: $\sqrt{3} \cdot \sqrt{6}$."
   answer="3\sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$3\sqrt{2}$"
   hint="Multiply under one radical: $\sqrt{3 \cdot 6} = \sqrt{18}$, then remove the perfect-square factor."
 >}}
@@ -478,6 +479,15 @@ becomes very useful in the next section when we divide square roots.
   hint="Use $(a - b)(a + b) = a^2 - b^2$: compute $3^2 - \left(2\sqrt{5}\right)^2 = 9 - 4 \cdot 5$."
 >}}
 
+## Key terms
+
+**Product Property of Square Roots** — for nonnegative $a$ and $b$,
+$\sqrt{a} \cdot \sqrt{b} = \sqrt{ab}$; used "in reverse" to multiply two square
+roots into one. **squaring a square root** — for nonnegative $a$,
+$\left(\sqrt{a}\right)^2 = a$, since squaring undoes a square root. **conjugates**
+— a pair of binomials that differ only in the sign between their terms, such as
+$a + \sqrt{b}$ and $a - \sqrt{b}$; their product $a^2 - b$ contains no radical.
+
 ## Practice
 
 ### Multiply square roots
@@ -531,15 +541,6 @@ becomes very useful in the next section when we divide square roots.
   answerDisplay="$41 + 7\sqrt{55}$"
   hint="FOIL gives $11 + 6\sqrt{55} + \sqrt{55} + 30$; combine the constants and the $\sqrt{55}$ terms."
 >}}
-
-## Key terms
-
-**Product Property of Square Roots** — for nonnegative $a$ and $b$,
-$\sqrt{a} \cdot \sqrt{b} = \sqrt{ab}$; used "in reverse" to multiply two square
-roots into one. **squaring a square root** — for nonnegative $a$,
-$\left(\sqrt{a}\right)^2 = a$, since squaring undoes a square root. **conjugates**
-— a pair of binomials that differ only in the sign between their terms, such as
-$a + \sqrt{b}$ and $a - \sqrt{b}$; their product $a^2 - b$ contains no radical.
 
 ---
 

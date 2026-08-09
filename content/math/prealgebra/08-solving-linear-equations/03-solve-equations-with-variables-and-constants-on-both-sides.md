@@ -676,6 +676,15 @@ $$0.24(100(0.4) + 5) \stackrel{?}{=} 0.4(30(0.4) + 15) \qquad 0.24(45) \stackrel
   hint="Distribute both sides first, then collect the $n$-terms on one side and the constants on the other."
 >}}
 
+## Key terms
+
+**variable side** — the side of an equation chosen to collect all the
+variable terms. **constant side** — the side of an equation chosen to
+collect all the constant terms. **general strategy** — a five-step method
+(simplify each side, collect variable terms, collect constant terms, make
+the coefficient $1$, check) that solves any linear equation, regardless of
+its starting form.
+
 ## Practice
 
 ### Solve an equation with constants on both sides
@@ -770,15 +779,6 @@ $$0.24(100(0.4) + 5) \stackrel{?}{=} 0.4(30(0.4) + 15) \qquad 0.24(45) \stackrel
   answer="10"
   hint="Distribute and combine like terms on each side first, then collect the variable terms on the side with the larger coefficient."
 >}}
-
-## Key terms
-
-**variable side** — the side of an equation chosen to collect all the
-variable terms. **constant side** — the side of an equation chosen to
-collect all the constant terms. **general strategy** — a five-step method
-(simplify each side, collect variable terms, collect constant terms, make
-the coefficient $1$, check) that solves any linear equation, regardless of
-its starting form.
 
 ---
 

@@ -552,6 +552,108 @@ of the form $y=kx$. **constant of variation** — the constant $k$ in a direct-
 or inverse-variation equation. **inverse variation** — a relationship of the
 form $y=\tfrac{k}{x}$.
 
+## Practice
+
+### Solve proportions
+
+{{< fillin
+  question="Solve the proportion $\tfrac{x}{56}=\tfrac{7}{8}$."
+  answer="49"
+  hint="Multiply both sides by the LCD $56$ and solve for $x$."
+>}}
+
+{{< fillin
+  question="Solve the proportion $\tfrac{2p+4}{8}=\tfrac{p+18}{6}$."
+  answer="30"
+  hint="Multiply both sides by the LCD $24$, or cross-multiply, and solve for $p$."
+>}}
+
+### Solve similar-figure applications
+
+{{< fillin
+  question="A 2-foot-tall dog casts a 3-foot shadow at the same time a cat casts a 1-foot shadow. How tall is the cat, in inches?"
+  answer="8"
+  hint="Set the height-to-shadow ratios equal: $\tfrac{2}{3}=\tfrac{h}{1}$, then convert feet to inches."
+>}}
+
+{{< fillin
+  question="The tower portion of a windmill is 212 feet tall. A 6-foot-tall person standing next to the tower casts a 7-foot shadow. How long is the windmill’s shadow, in feet? Round to the nearest tenth."
+  answer="247.3"
+  hint="Set $\tfrac{212}{s}=\tfrac{6}{7}$ and solve for $s$."
+>}}
+
+### Solve uniform-motion applications
+
+{{< fillin
+  question="Mary takes a sightseeing tour on a helicopter that can fly 450 miles against a 35-mph headwind in the same amount of time it can travel 702 miles with a 35-mph tailwind. Find the speed of the helicopter, in mph."
+  answer="160"
+  hint="Set $\tfrac{450}{r-35}=\tfrac{702}{r+35}$ and solve for $r$."
+>}}
+
+{{< fillin
+  question="A boat travels 140 miles downstream in the same time as it travels 92 miles upstream. The speed of the current is 6 mph. What is the speed of the boat in still water, in mph?"
+  answer="29"
+  hint="Set $\tfrac{140}{r+6}=\tfrac{92}{r-6}$ and solve for $r$."
+>}}
+
+### Solve work applications
+
+{{< fillin
+  question="Mike, an experienced bricklayer, can build a wall in 3 hours, while his son, who is learning, can do the job in 6 hours. How long does it take for them to build the wall together, in hours?"
+  answer="2"
+  hint="Set $\tfrac13+\tfrac16=\tfrac1t$; rate × time = 1 job for each worker."
+>}}
+
+{{< fillin
+  question="At the end of the day, Dodie can clean her hair salon in 15 minutes. Ann, who works with her, can clean the salon in 30 minutes. How long would it take them to clean the shop together, in minutes?"
+  answer="10"
+  hint="Set $\tfrac1{15}+\tfrac1{30}=\tfrac1t$; rate × time = 1 job for each worker."
+>}}
+
+### Solve direct-variation problems
+
+{{< fillin
+  question="If $p$ varies directly with $q$ and $p=9.6$ when $q=3$, enter the equation relating $p$ and $q$ as an expression for $p$."
+  answer="3.2q"
+  answerDisplay="$p=3.2q$"
+  hint="Use $p=kq$ and solve $9.6=3k$ for the constant of variation."
+>}}
+
+{{< fillin
+  question="The mass of a liquid varies directly with its volume. A liquid with mass 16 kilograms has a volume of 2 liters. Enter the equation relating mass $m$ and volume $v$ as an expression for $m$."
+  answer="8v"
+  answerDisplay="$m=8v$"
+  hint="Use $m=kv$ and solve $16=2k$ for the constant of variation."
+>}}
+
+{{< fillin
+  question="Using the mass-volume equation from the previous check, what is the volume, in liters, of a sample of this liquid whose mass is 128 kilograms?"
+  answer="16"
+  hint="Substitute $m=128$ into $m=8v$ and solve for $v$."
+>}}
+
+### Solve inverse-variation problems
+
+{{< fillin
+  question="If $v$ varies inversely with $w$ and $v=6$ when $w=\tfrac{1}{2}$, enter the equation relating $v$ and $w$ as an expression for $v$."
+  answer="\frac{3}{w}"
+  answerDisplay="$v=\tfrac{3}{w}$"
+  hint="Use $v=\tfrac{k}{w}$ and solve $6=\tfrac{k}{1/2}$ for the constant of variation."
+>}}
+
+{{< fillin
+  question="The time required to empty a tank varies inversely with the pumping rate. It took Ada 5 hours to pump her flooded basement using a pump rated at 200 gallons per minute (gpm). Enter the equation relating time $t$ and rate $r$ as an expression for $t$."
+  answer="\frac{1000}{r}"
+  answerDisplay="$t=\tfrac{1{,}000}{r}$"
+  hint="Use $t=\tfrac{k}{r}$ and solve $5=\tfrac{k}{200}$ for the constant of variation."
+>}}
+
+{{< fillin
+  question="Using Ada’s pumping equation from the previous check, how many hours would it take to pump the same basement using a pump rated at 400 gpm?"
+  answer="2.5"
+  hint="Substitute $r=400$ into $t=\tfrac{1{,}000}{r}$."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 7.5: Solve Applications with Rational Equations](https://openstax.org/books/intermediate-algebra-2e/pages/7-5-solve-applications-with-rational-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the source’s application charts as accessible tables and described its map, shadow, and motion diagrams in text while preserving all measurements; omitted the Be Prepared quiz, media link, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 7.5: Solve Applications with Rational Equations](https://openstax.org/books/intermediate-algebra-2e/pages/7-5-solve-applications-with-rational-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: recreated the source’s application charts as accessible tables and described its map, shadow, and motion diagrams in text while preserving all measurements; omitted the Be Prepared quiz and media link; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

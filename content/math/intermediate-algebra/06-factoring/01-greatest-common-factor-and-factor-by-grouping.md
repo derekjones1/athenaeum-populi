@@ -388,6 +388,76 @@ in a given collection. **factored form** — an expression written as a product
 of factors. **factor by grouping** — factor a four-term polynomial by grouping
 terms, factoring each group, and then factoring the common binomial.
 
+## Practice
+
+### Find the greatest common factor of two or more expressions
+
+{{< fillin
+  question="Find the greatest common factor of $10p^3q$ and $12pq^2$."
+  answer="2pq"
+  answerDisplay="$2pq$"
+  hint="Factor each coefficient into primes and expand the variable powers. Keep only the factors common to both expressions."
+>}}
+
+{{< fillin
+  question="Find the greatest common factor of $10a^3$, $12a^2$, and $14a$."
+  answer="2a"
+  answerDisplay="$2a$"
+  hint="Find the GCF of the coefficients 10, 12, and 14, then keep the smallest power of $a$ shared by all three terms."
+>}}
+
+### Factor the greatest common factor from a polynomial
+
+{{< fillin
+  question="Factor $6m+9$ by taking out the greatest common factor."
+  answer="3(2m+3)"
+  answerForm="factored"
+  answerDisplay="$3(2m+3)$"
+  hint="Both terms share a factor of 3."
+>}}
+
+{{< fillin
+  question="Factor $8p^2+4p+2$ by taking out the greatest common factor."
+  answer="2(4p^2+2p+1)"
+  answerForm="factored"
+  answerDisplay="$2(4p^2+2p+1)$"
+  hint="All three coefficients share a factor of 2."
+>}}
+
+{{< fillin
+  question="Factor $5x(x+1)+3(x+1)$ by taking out the common binomial factor."
+  answer="(x+1)(5x+3)"
+  answerForm="factored"
+  answerDisplay="$(x+1)(5x+3)$"
+  hint="Treat the repeated binomial $(x+1)$ as one common factor."
+>}}
+
+### Factor by grouping
+
+{{< fillin
+  question="Factor by grouping: $ab+5a+3b+15$."
+  answer="(b+5)(a+3)"
+  answerForm="factored"
+  answerDisplay="$(b+5)(a+3)$"
+  hint="Group the first two terms and the last two terms, then factor each group."
+>}}
+
+{{< fillin
+  question="Factor by grouping: $uv-9u+2v-18$."
+  answer="(u+2)(v-9)"
+  answerForm="factored"
+  answerDisplay="$(u+2)(v-9)$"
+  hint="Group the first two terms and the last two terms; both groups reveal the same binomial factor."
+>}}
+
+{{< fillin
+  question="Factor by grouping: $2x^2-14x-5x+35$."
+  answer="(x-7)(2x-5)"
+  answerForm="factored"
+  answerDisplay="$(x-7)(2x-5)$"
+  hint="Group the first two terms and the last two terms. Factor a negative number from the second group."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 6.1: Greatest Common Factor and Factor by Grouping](https://openstax.org/books/intermediate-algebra-2e/pages/6-1-greatest-common-factor-and-factor-by-grouping) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked-example tables as accessible aligned math, omitted the Be Prepared quiz, media links, and end-of-section exercises, and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 6.1: Greatest Common Factor and Factor by Grouping](https://openstax.org/books/intermediate-algebra-2e/pages/6-1-greatest-common-factor-and-factor-by-grouping) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked-example tables as accessible aligned math, omitted the Be Prepared quiz and media links, converted the practice problems ("Try Its") into interactive exercises with instant feedback, and adapted selected end-of-section exercises into an interactive Practice block.</small>

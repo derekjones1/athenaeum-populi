@@ -239,6 +239,15 @@ Cecelia will get $20$ servings from the big box.
   hint="The number of cups is 135 divided by 9 — long division, or count how many nines fit."
 >}}
 
+## Key terms
+
+**quotient** — the result of dividing one number by another. **dividend** —
+the number being divided. **divisor** — the number dividing the dividend.
+**remainder** — the amount left over when a division does not come out
+evenly. **undefined** — having no answer; dividing a number by zero is
+undefined. **long division** — the digit-by-digit process of dividing using
+the bracket notation.
+
 ## Practice
 
 ### Use division notation
@@ -412,15 +421,6 @@ undefined
   answer="27"
   hint="Divide 365 by 14, then decide what the leftover day means — a partly used period still needs a whole pair."
 >}}
-
-## Key terms
-
-**quotient** — the result of dividing one number by another. **dividend** —
-the number being divided. **divisor** — the number dividing the dividend.
-**remainder** — the amount left over when a division does not come out
-evenly. **undefined** — having no answer; dividing a number by zero is
-undefined. **long division** — the digit-by-digit process of dividing using
-the bracket notation.
 
 ---
 

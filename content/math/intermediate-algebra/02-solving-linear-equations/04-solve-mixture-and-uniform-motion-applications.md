@@ -831,6 +831,12 @@ $$
   hint="He rode $1.25$ hours on the flat street and $0.5$ hour uphill."
 >}}
 
+## Key terms
+
+A **uniform motion application** is a problem in which the
+speed of an object is constant. The **total value of coins** is modeled by
+$\textit{number}\cdot\textit{value}=\textit{total value}$.
+
 ## Practice
 
 ### Solve coin word problems
@@ -931,10 +937,6 @@ $$
   answerDisplay="$8$ mph and $3$ mph"
   hint="She ran $1.25$ hours and walked $3$ hours. If her walking speed is $w$, use $1.25(w+5)+3w=19$."
 >}}
-
-**Key terms.** A **uniform motion application** is a problem in which the
-speed of an object is constant. The **total value of coins** is modeled by
-$\textit{number}\cdot\textit{value}=\textit{total value}$.
 
 ---
 

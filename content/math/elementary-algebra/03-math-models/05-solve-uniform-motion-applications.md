@@ -320,6 +320,14 @@ Hamilton drove 40 mph in the city and 70 mph in the desert.
   hint="He rode on the flat street for 1.25 hours and uphill for 0.5 hour. Let f be his flat-street speed; his uphill speed is 0.6f. Set $1.25f + 0.5(0.6f)$ equal to 31 and solve for f."
 >}}
 
+## Key terms
+
+**uniform motion problem** — an application in which one or more objects
+travel at a constant speed, so the distance, rate, and time formula
+$D = rt$ applies to each. **elapsed time** — the actual amount of time that
+passes during a trip; if a problem gives clock times instead, subtract to
+find the elapsed time before using $D = rt$.
+
 ## Practice
 
 ### Solve uniform motion applications
@@ -358,14 +366,6 @@ Hamilton drove 40 mph in the city and 70 mph in the desert.
   answerDisplay="heavy traffic: $30$ mph; light traffic: $70$ mph"
   hint="She drove in heavy traffic for $\tfrac{5}{6}$ hour and in light traffic for $1$ hour. If the light-traffic speed is $r$, use $\tfrac{5}{6}(r-40)+r=95$."
 >}}
-
-## Key terms
-
-**uniform motion problem** — an application in which one or more objects
-travel at a constant speed, so the distance, rate, and time formula
-$D = rt$ applies to each. **elapsed time** — the actual amount of time that
-passes during a trip; if a problem gives clock times instead, subtract to
-find the elapsed time before using $D = rt$.
 
 ---
 

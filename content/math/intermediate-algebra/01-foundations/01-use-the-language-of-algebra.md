@@ -917,6 +917,26 @@ $$4q - 7$$
   hint="Seven times the nickels is $7n$; *three more than* that adds $3$."
 >}}
 
+## Key terms
+
+**multiple of a number** — a number that is the product of a counting number
+and $n$. **divisible by a number** — describes $m$ when $m$ is a multiple of
+$n$. **factors** — in $a \cdot b = m$, the integers $a$ and $b$ that multiply
+to give $m$. **prime number** — a counting number greater than $1$ whose only
+factors are $1$ and itself. **composite number** — a counting number greater
+than $1$ that is not prime. **prime factorization** — the product of prime
+numbers that equals a given number. **least common multiple (LCM)** — the
+smallest number that is a multiple of two given numbers. **variable** — a
+letter that represents a number whose value may change. **constant** — a
+number whose value always stays the same. **expression** — a number, a
+variable, or a combination of numbers and variables using operation symbols.
+**equation** — two expressions connected by an equal sign. **base / exponent**
+— in $a^n$, the base $a$ is multiplied by itself $n$ times, where $n$ is the
+exponent. **term** — a constant or the product of a constant and one or more
+variables. **coefficient** — the constant that multiplies the variable in a
+term. **like terms** — terms that are constants or have the same variables
+raised to the same powers.
+
 ## Practice
 
 ### Find factors, prime factorizations, and least common multiples
@@ -1045,26 +1065,6 @@ $$4q - 7$$
   answerDisplay="$8y - 9$"
   hint="First write eight times $y$, then subtract $9$."
 >}}
-
-## Key terms
-
-**multiple of a number** — a number that is the product of a counting number
-and $n$. **divisible by a number** — describes $m$ when $m$ is a multiple of
-$n$. **factors** — in $a \cdot b = m$, the integers $a$ and $b$ that multiply
-to give $m$. **prime number** — a counting number greater than $1$ whose only
-factors are $1$ and itself. **composite number** — a counting number greater
-than $1$ that is not prime. **prime factorization** — the product of prime
-numbers that equals a given number. **least common multiple (LCM)** — the
-smallest number that is a multiple of two given numbers. **variable** — a
-letter that represents a number whose value may change. **constant** — a
-number whose value always stays the same. **expression** — a number, a
-variable, or a combination of numbers and variables using operation symbols.
-**equation** — two expressions connected by an equal sign. **base / exponent**
-— in $a^n$, the base $a$ is multiplied by itself $n$ times, where $n$ is the
-exponent. **term** — a constant or the product of a constant and one or more
-variables. **coefficient** — the constant that multiplies the variable in a
-term. **like terms** — terms that are constants or have the same variables
-raised to the same powers.
 
 ---
 

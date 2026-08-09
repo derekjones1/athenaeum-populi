@@ -129,6 +129,31 @@ function writtenFractionHalves(bare) {
 }
 
 /**
+ * The two written sides of a response that is EXACTLY one equation, whitespace
+ * removed — or null. Input is raw student LaTeX; MathLive's `{(x+2)}^2` brace
+ * wrap is unwrapped so the squared-unit patterns below read what the learner
+ * sees. Shared by the standard-form predicates, which all grade equations and
+ * all have to read the WRITTEN sides (the engine treats two true statements,
+ * or two forms of one conic, as the same equation).
+ */
+function splitEquationSides(latex) {
+  const bare = bareLatex(latex)
+    .replace(/\s+/g, '')
+    .replace(/\{(\((?:[^{}()]|\([^()]*\))*\))\}/g, '$1');
+  const sides = bare.split('=');
+  return sides.length === 2 && sides[0] && sides[1] ? sides : null;
+}
+
+/**
+ * Is a written term a coefficient-1 squared conic unit — `x^2`, `y^2`, or a
+ * squared binomial `(x-2)^2` / `(y+3)^2`? Whitespace must already be removed.
+ * The coefficient-1 requirement is the point: `9x^2` and `\frac{9x^2}{144}`
+ * are the general form's terms, and accepting them would accept the very
+ * restatement the standard-form predicates exist to reject.
+ */
+const isSquaredConicUnit = (term) => /^(?:[a-zA-Z]|\([a-zA-Z][+-]\d+\))\^\{?2\}?$/.test(term);
+
+/**
  * The Compute Engine reads a `\frac` with a lone `d` numerator as Leibniz
  * derivative notation, so `\frac{d}{t}` boxes as `D(missing, t)` and is
  * *invalid* — not merely unequal. That silently marks a correct student wrong
@@ -682,6 +707,30 @@ function asProductOfPowers(latex) {
 }
 
 /**
+ * The variable base of a power-like factor, for the two monomial readers below.
+ *
+ * A rational exponent has two spellings in the parse and only one of them is a
+ * `Power`: the engine collapses a **unit** fraction to a root node, so
+ * `a^{\frac12}` parses as `["Sqrt","a"]` and `a^{\frac13}` as
+ * `["Root","a",3]`, while a non-unit `a^{\frac23}` stays
+ * `["Power","a",["Rational",2,3]]`. Reading only `Power` therefore made
+ * `a^{\frac12}b` — the correct, fully simplified answer to
+ * $(a^{1/3}b^{2/3})^{3/2}$ — fail `single-term`, which is a rule firing on
+ * sound content.
+ *
+ * Only a *symbolic* radicand unwraps. `\sqrt{2}` is a number in radical
+ * clothing, not a variable base, and keeps failing exactly as before.
+ */
+function powerLikeBase(factor) {
+  if (factor.operator === 'Power') return factor.ops[0];
+  if (factor.operator === 'Sqrt' || factor.operator === 'Root') {
+    const radicand = factor.ops[0];
+    if (radicand && radicand.symbol) return radicand;
+  }
+  return factor;
+}
+
+/**
  * A monomial's numeric coefficient and its variable bases — or null when the
  * expression is not a single term. `Multiply` nests (`15a` inside a longer
  * product), so the factors are flattened before counting.
@@ -707,7 +756,7 @@ function monomialParts(expr) {
       coefficient *= Math.abs(factor.re);
       continue;
     }
-    const base = factor.operator === 'Power' ? factor.ops[0] : factor;
+    const base = powerLikeBase(factor);
     const name = base.symbol;
     if (!name || bases.has(name)) return null;
     bases.add(name);
@@ -739,6 +788,11 @@ function monomialMagnitude(expr) {
       coefficient *= Math.abs(factor.re);
       continue;
     }
+    // Deliberately *not* powerLikeBase(): `reduced-fraction` fails open on a
+    // half it cannot read, so widening what counts as a base here would make it
+    // start *rejecting* answers like `\frac{\sqrt{x}}{x}` that it currently
+    // passes on value. Widening `single-term` fixes a false rejection;
+    // widening this would create one.
     const base = factor.operator === 'Power' ? factor.ops[0] : factor;
     if (!base.symbol) return null;
     bases.add(base.symbol);
@@ -1180,15 +1234,32 @@ const FORM_PREDICATES = {
       const group = readBalancedGroup(bare, opener.index + opener[0].length - 1);
       if (group) radicands.push([opener[1], group[0]]);
     }
+    const radicandIsNumeric = (value) => !/[a-zA-Z]/.test(value.replace(/\\[a-zA-Z]+/g, ' '));
     for (const [indexArg, radicand] of radicands) {
+      // Unevaluated ARITHMETIC under the radical is never simplified when the
+      // radicand is all numerals: `\sqrt{64+225}` is a sum the learner was
+      // asked to evaluate, and `\sqrt{\tfrac{25}{16}}` keeps the fraction the
+      // quotient property removes. Scoped to numeral-only radicands, because
+      // a variable sum (`\sqrt{4+x}`) is irreducible and a variable quotient
+      // is the prompt's shape, not necessarily the answer's defect.
+      if (radicandIsNumeric(radicand)
+        && (/\\[tdc]?frac|\/|\\cdot|\\times/.test(radicand) || splitTopLevelTerms(radicand).length > 1)) {
+        return false;
+      }
       // A SUM under the radical (`\sqrt{4+x}`, `\sqrt{x^2+y^2}`) is not a
       // product: the factor tests below would read its leading term ("4 holds
       // a square") and reject an irreducible radical forever. A form check
       // must never reject a correct answer, so a multi-term radicand is left
       // to the like-radicals and rationalizing tests alone.
       if (splitTopLevelTerms(radicand).length > 1) continue;
+      // `\sqrt{1}`, `\sqrt{0}` and `\sqrt{-1}` are written-out numbers (1, 0,
+      // i); the factor loop below starts at 2 and cannot see them.
+      if (/^\s*-?\s*[01]\s*$/.test(radicand)) return false;
       const root = Number(indexArg ?? 2);
-      const numeral = radicand.match(/^\s*(\d+)/);
+      // The sign is carried by the root (or by `i`), not by the factor test:
+      // `\sqrt[3]{-108}` still holds the perfect cube 27, and `\sqrt{-8}`
+      // still holds the perfect square 4.
+      const numeral = radicand.match(/^\s*-?\s*(\d+)/);
       if (numeral) {
         const value = Number(numeral[1]);
         for (let factor = 2; factor ** root <= value; factor += 1) {
@@ -1209,6 +1280,32 @@ const FORM_PREDICATES = {
       if (!afterNumerator) continue;
       const denominator = readBalancedGroup(bare, numerator[1] + afterNumerator[0].length - 1);
       if (denominator && /\\sqrt/.test(denominator[0])) return false;
+    }
+    // A PRODUCT of same-index numeral radicals in one term is the product
+    // property left unapplied: `\sqrt{3}\cdot\sqrt{6}` is worth `3\sqrt{2}`,
+    // and the multiplication was the exercise. Numeral radicands only — the
+    // corpus's own worked answers keep `\sqrt{10}\sqrt{y}` as a product, so a
+    // variable radicand must not count toward the pair.
+    for (const piece of splitTopLevelTerms(bare)) {
+      const numericByIndex = new Map();
+      for (const opener of piece.matchAll(/\\sqrt\s*(?:\[\s*(\d+)\s*\])?\s*\{/g)) {
+        // Only radicals written at the top level of the term count: a radical
+        // inside a group (`\frac{\sqrt{10}\sqrt{y}+\sqrt{30}}{y-3}` holds its
+        // numerator's radicals in a brace group) belongs to a subterm this
+        // top-level split cannot see, so it fails open — exactly like the
+        // like-radicals scan below, which also reads only the top level.
+        let depth = 0;
+        for (let i = 0; i < opener.index; i += 1) {
+          if (piece[i] === '{' || piece[i] === '(') depth += 1;
+          else if (piece[i] === '}' || piece[i] === ')') depth -= 1;
+        }
+        if (depth !== 0) continue;
+        const group = readBalancedGroup(piece, opener.index + opener[0].length - 1);
+        if (!group || !radicandIsNumeric(group[0])) continue;
+        const index = opener[1] ?? '2';
+        numericByIndex.set(index, (numericByIndex.get(index) ?? 0) + 1);
+        if (numericByIndex.get(index) >= 2) return false;
+      }
     }
     // Like radicals must already be combined: split the top level on + and -
     // and require each (index, radicand, coefficient-shape) to appear once.
@@ -1476,6 +1573,123 @@ const FORM_PREDICATES = {
     const product = asFactoredProduct(latex);
     return product !== null && product.compound >= 1 && product.count >= 2;
   },
+  // "Write $y=-x^2+2x-4$ in standard form" answers $y=-(x-1)^2-3$ — completing
+  // the square changes the shape, not the value, so the printed general form
+  // grades `correct` by construction. The §6 "standard form" class, vertex
+  // half: the response (after an optional written `y=` / `x=` / `f(x)=`
+  // label) must be a single `a·(binomial)^2` term plus at most a constant.
+  //
+  // Read off the parse: a power of a sum survives canonicalization (that is
+  // what `factored` already relies on), while the general form's `2x^2` is a
+  // power of a bare symbol and can never satisfy the squared-binomial test.
+  // Both orientations pass — $a(x-h)^2+k$ and the horizontal $a(y-k)^2+h$ are
+  // the same shape in the other variable, and a predicate that took one and
+  // refused the other would be an asymmetry no exercise chose.
+  'vertex-form': (latex) => {
+    const bare = bareLatex(latex);
+    // The label is written, not parsed: `f(x)=…` boxes as an equation on a
+    // function application, which no equation unwrap in the grader reads.
+    const label = bare.match(/^[a-zA-Z]\s*(?:\(\s*[a-zA-Z]\s*\))?\s*=/);
+    let expr;
+    try {
+      expr = parseLatex(preprocess(label ? bare.slice(label[0].length) : bare));
+    } catch {
+      return false;
+    }
+    if (!expr.isValid) return false;
+    const isConstant = (e) => {
+      const symbols = new Set();
+      collectSymbols(e, symbols);
+      return symbols.size === 0;
+    };
+    const isSquaredBinomialTerm = (e) => {
+      if (e.operator === 'Negate') return isSquaredBinomialTerm(e.ops[0]);
+      if (e.operator === 'Multiply') {
+        const compound = e.ops.filter((op) => !isConstant(op));
+        return compound.length === 1 && isSquaredBinomialTerm(compound[0]);
+      }
+      return e.operator === 'Power'
+        && e.ops[0].operator === 'Add' && !isConstant(e.ops[0])
+        && e.ops[1].isNumberLiteral && e.ops[1].re === 2;
+    };
+    const terms = expr.operator === 'Add' ? expr.ops : [expr];
+    return terms.length <= 2
+      && terms.filter(isSquaredBinomialTerm).length === 1
+      && terms.every((term) => isSquaredBinomialTerm(term) || isConstant(term));
+  },
+  // The conic half of the same class: "Write $25x^2+9y^2-100x-54y-44=0$ in
+  // standard form" answers $\tfrac{(x-2)^2}{9}+\tfrac{(y-3)^2}{25}=1$, again
+  // value-equal to the printed subject by construction. The response must be
+  // an equation whose one side is exactly `1` and whose other side is a sum
+  // or difference of at least two fractions, each a coefficient-1 squared
+  // term ($x^2$, $y^2$, or a squared binomial) over a positive integer. A
+  // numerator that keeps its general-form coefficient (`\frac{9x^2}{144}`)
+  // fails — that division was the step the exercise asks for.
+  //
+  // Read off the LaTeX like `single-fraction`, because the engine folds a
+  // numeral quotient before any predicate can see it. A `/`-written quotient
+  // (`x^2/16`) counts as a fraction too — MathLive converts a typed `/` to
+  // `\frac`, but pasted text keeps the slash, and a correct answer must never
+  // be rejected over the fraction notation it arrived in.
+  'conic-standard-form': (latex) => {
+    const sides = splitEquationSides(latex);
+    if (!sides) return false;
+    const [one, body] = sides[0] === '1' ? sides : [sides[1], sides[0]];
+    if (one !== '1') return false;
+    const terms = splitTopLevelTerms(body).map((term) => term.trim());
+    if (terms.length < 2) return false;
+    return terms.every((term) => {
+      const halves = writtenFractionHalves(term)
+        ?? term.match(/^([^/]+)\/(\d+)$/)?.slice(1);
+      if (!halves) return false;
+      const [numerator, denominator] = halves.map((half) => half.replace(/\s+/g, ''));
+      return isSquaredConicUnit(numerator) && /^\d+$/.test(denominator) && Number(denominator) > 0;
+    });
+  },
+  // The circle of the same class: "Write $x^2+y^2+10x+6y+30=0$ in standard
+  // form" answers $(x+5)^2+(y+3)^2=4$. Standard form here is two coefficient-1
+  // squared terms against a positive integer ($r^2$) — the printed general
+  // form fails on its linear terms alone, and `…=0` fails on the right side.
+  'circle-standard-form': (latex) => {
+    const sides = splitEquationSides(latex);
+    if (!sides) return false;
+    const [radius, body] = /^\d+$/.test(sides[0]) ? sides : [sides[1], sides[0]];
+    if (!/^\d+$/.test(radius) || Number(radius) === 0) return false;
+    const terms = splitTopLevelTerms(body).map((term) => term.replace(/\s+/g, ''));
+    return terms.length === 2 && terms.every(isSquaredConicUnit);
+  },
+  // "Convert the equation from logarithmic to exponential form: $3=\log_7
+  // 343$" answers $343=7^3$ — two true statements the engine grades equal, so
+  // only the written notation separates them. The conversion is complete
+  // exactly when no logarithm is left.
+  'exponential-form': (latex) => !/\\log|\\ln\b/.test(bareLatex(latex)),
+  // "Use properties of logarithms to write $\log_5 25ab$ as a sum of
+  // logarithms" answers $2+\log_5 a+\log_5 b$. Every written `\log` must take
+  // a single atom — one number or one variable — so the printed compound
+  // argument (`25ab`, a radical, a quotient) is what fails. A response with
+  // no logarithm at all passes: a fully-simplified expansion can evaluate
+  // every term away, and there is nothing left unexpanded to reject.
+  'expanded-logarithms': (latex) => {
+    const bare = bareLatex(latex);
+    const opener = /\\log(?:_(?:\{[^{}]*\}|[0-9a-zA-Z]))?\s*/g;
+    let match;
+    while ((match = opener.exec(bare)) !== null) {
+      const rest = bare.slice(match.index + match[0].length);
+      let argument;
+      if (rest[0] === '{') {
+        argument = readBalancedGroup(rest, 0)?.[0] ?? '';
+      } else if (rest[0] === '(') {
+        const close = rest.indexOf(')');
+        argument = close === -1 ? '' : rest.slice(1, close);
+      } else if (rest[0] === '\\') {
+        return false; // \sqrt, \frac — a compound argument however it is read
+      } else {
+        argument = rest.match(/^[0-9a-zA-Z.]+/)?.[0] ?? '';
+      }
+      if (!/^(?:\d+(?:\.\d+)?|[a-zA-Z])$/.test(argument.replace(/\s+/g, ''))) return false;
+    }
+    return true;
+  },
 };
 
 const DENOMINATOR_TOKEN = /^denominator:(\d+)$/;
@@ -1517,6 +1731,11 @@ const FORM_PHRASES = {
   'single-fraction': 'as a single fraction',
   'reduced-fraction': 'as a single fraction with all common factors cancelled',
   factored: 'in factored form',
+  'vertex-form': 'in vertex form, with the square completed',
+  'conic-standard-form': 'in standard form, with each squared term over its denominator and the right side equal to 1',
+  'circle-standard-form': 'in standard form, with the squared binomials on the left and the squared radius on the right',
+  'exponential-form': 'in exponential form, with no logarithm left',
+  'expanded-logarithms': 'as a sum of logarithms of single numbers and variables',
 };
 
 export function describeAnswerForm(spec) {

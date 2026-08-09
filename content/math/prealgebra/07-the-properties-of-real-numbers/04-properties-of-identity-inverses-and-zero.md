@@ -322,6 +322,16 @@ below:
 **Distributive Property:** if $a$, $b$, $c$ are real numbers, then $a(b +
 c) = ab + ac$.
 
+## Key terms
+
+**additive identity** — $0$; adding it to any number leaves the number
+unchanged. **multiplicative identity** — $1$; multiplying by it leaves any
+number unchanged. **additive inverse** — the opposite of a number; a
+number and its additive inverse sum to $0$. **multiplicative inverse** —
+the reciprocal of a number; a nonzero number and its multiplicative
+inverse multiply to $1$. Zero times any number is $0$; zero divided by any
+nonzero number is $0$; but division *by* zero is undefined.
+
 ## Practice
 
 ### Recognize the identity properties of addition and multiplication
@@ -425,16 +435,6 @@ undefined
   answerForm="polynomial"
   hint="The terms in parentheses cannot be combined, so multiply $18$ and $\tfrac{5}{6}$ first, then distribute."
 >}}
-
-## Key terms
-
-**additive identity** — $0$; adding it to any number leaves the number
-unchanged. **multiplicative identity** — $1$; multiplying by it leaves any
-number unchanged. **additive inverse** — the opposite of a number; a
-number and its additive inverse sum to $0$. **multiplicative inverse** —
-the reciprocal of a number; a nonzero number and its multiplicative
-inverse multiply to $1$. Zero times any number is $0$; zero divided by any
-nonzero number is $0$; but division *by* zero is undefined.
 
 ---
 

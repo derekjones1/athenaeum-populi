@@ -258,6 +258,15 @@ earned was $\text{\textdollar}15.75$.
   hint="Convert 20 months to $\tfrac{20}{12}$ of a year, then use $I = Prt$ with $P = 2{,}460$, $r = 0.035$."
 >}}
 
+## Key terms
+
+**principal** — the amount of money invested or borrowed, $P$. **rate of
+interest** — the percent of the principal charged or earned as interest,
+usually expressed as an annual rate, $r$. **simple interest** — interest
+computed on the principal only, using $I = Prt$, where $I$ is the
+interest, $P$ is the principal, $r$ is the rate, and $t$ is the time in
+years.
+
 ## Practice
 
 ### Use the simple interest formula
@@ -347,15 +356,6 @@ earned was $\text{\textdollar}15.75$.
   answerDisplay="\$332.10"
   hint="The rate is annual, so first write 18 months as $\tfrac{18}{12}$ of a year, then use $I = Prt$ with $P = 8{,}200$ and $r = 0.027$."
 >}}
-
-## Key terms
-
-**principal** — the amount of money invested or borrowed, $P$. **rate of
-interest** — the percent of the principal charged or earned as interest,
-usually expressed as an annual rate, $r$. **simple interest** — interest
-computed on the principal only, using $I = Prt$, where $I$ is the
-interest, $P$ is the principal, $r$ is the rate, and $t$ is the time in
-years.
 
 ---
 

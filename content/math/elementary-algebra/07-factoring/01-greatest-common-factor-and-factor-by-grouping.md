@@ -623,6 +623,14 @@ Check on your own by multiplying.
   hint="Factor $y$ from $y^2 + 4y$ and $-7$ from $-7y - 28$; the two groups share a binomial factor."
 >}}
 
+## Key terms
+
+**factoring** — splitting a product into the factors that multiply to give it.
+**greatest common factor (GCF)** — the largest expression that is a factor of
+each of two or more given expressions. **factor by grouping** — a method for
+factoring a four-term polynomial by grouping terms with common factors,
+factoring the GCF from each group, and then factoring out the common binomial.
+
 ## Practice
 
 ### Find the greatest common factor of two or more expressions
@@ -698,14 +706,6 @@ Check on your own by multiplying.
   answerDisplay="$(b + 5)(b - 4)$"
   hint="Factor $b$ from $b^2 + 5b$ and $-4$ from $-4b - 20$; the two groups share a binomial factor."
 >}}
-
-## Key terms
-
-**factoring** — splitting a product into the factors that multiply to give it.
-**greatest common factor (GCF)** — the largest expression that is a factor of
-each of two or more given expressions. **factor by grouping** — a method for
-factoring a four-term polynomial by grouping terms with common factors,
-factoring the GCF from each group, and then factoring out the common binomial.
 
 ---
 

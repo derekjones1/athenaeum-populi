@@ -235,6 +235,14 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = -\frac{3}{8}$$
   hint="Combine all the numerators over the common denominator of $5$, working left to right."
 >}}
 
+## Key terms
+
+**fraction addition** — for a common denominator $c \neq 0$,
+$\tfrac{a}{c} + \tfrac{b}{c} = \tfrac{a+b}{c}$: add the numerators and
+keep the denominator. **fraction subtraction** — for a common denominator
+$c \neq 0$, $\tfrac{a}{c} - \tfrac{b}{c} = \tfrac{a-b}{c}$: subtract the
+numerators and keep the denominator.
+
 ## Practice
 
 ### Model fraction addition
@@ -385,14 +393,6 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = -\frac{3}{8}$$
   answerDisplay="$\tfrac{2}{7}$"
   hint="Subtracting a negative adds: the numerator becomes $-3 - (-5)$."
 >}}
-
-## Key terms
-
-**fraction addition** — for a common denominator $c \neq 0$,
-$\tfrac{a}{c} + \tfrac{b}{c} = \tfrac{a+b}{c}$: add the numerators and
-keep the denominator. **fraction subtraction** — for a common denominator
-$c \neq 0$, $\tfrac{a}{c} - \tfrac{b}{c} = \tfrac{a-b}{c}$: subtract the
-numerators and keep the denominator.
 
 ---
 

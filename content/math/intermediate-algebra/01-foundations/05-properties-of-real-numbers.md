@@ -584,6 +584,22 @@ $$
   hint="Distribute the $8$ and the leading negative, then combine like terms: $8x - x$ and $-8 - 5$."
 >}}
 
+## Key terms
+
+**commutative property** — changing the order of two numbers when adding or
+multiplying gives the same result ($a + b = b + a$, $a \cdot b = b \cdot a$).
+**associative property** — changing the grouping of three numbers when adding
+or multiplying gives the same result ($(a + b) + c = a + (b + c)$,
+$(a \cdot b) \cdot c = a \cdot (b \cdot c)$). **additive identity** — the
+number $0$, which added to any number leaves it unchanged. **multiplicative
+identity** — the number $1$, which multiplied by any number leaves it
+unchanged. **additive inverse** — the opposite $-a$ of a number $a$; a number
+and its opposite add to $0$. **multiplicative inverse** — the reciprocal
+$\tfrac{1}{a}$ of a nonzero number $a$; a number and its reciprocal multiply to
+$1$. **distributive property** — a rule for multiplying a sum or difference by
+a number: $a(b + c) = ab + ac$. **undefined** — having no value; division by
+zero is undefined.
+
 ## Practice
 
 ### Use the commutative and associative properties
@@ -654,22 +670,6 @@ $$
   answerDisplay="$-3y - 8$"
   hint="Distribute the negative $3$ first, then combine the constant terms."
 >}}
-
-## Key terms
-
-**commutative property** — changing the order of two numbers when adding or
-multiplying gives the same result ($a + b = b + a$, $a \cdot b = b \cdot a$).
-**associative property** — changing the grouping of three numbers when adding
-or multiplying gives the same result ($(a + b) + c = a + (b + c)$,
-$(a \cdot b) \cdot c = a \cdot (b \cdot c)$). **additive identity** — the
-number $0$, which added to any number leaves it unchanged. **multiplicative
-identity** — the number $1$, which multiplied by any number leaves it
-unchanged. **additive inverse** — the opposite $-a$ of a number $a$; a number
-and its opposite add to $0$. **multiplicative inverse** — the reciprocal
-$\tfrac{1}{a}$ of a nonzero number $a$; a number and its reciprocal multiply to
-$1$. **distributive property** — a rule for multiplying a sum or difference by
-a number: $a(b + c) = ab + ac$. **undefined** — having no value; division by
-zero is undefined.
 
 ---
 

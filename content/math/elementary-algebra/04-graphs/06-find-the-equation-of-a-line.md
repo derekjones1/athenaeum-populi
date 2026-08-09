@@ -318,6 +318,13 @@ $y - y_1 = m(x - x_1)$ with $m$ undefined
 it cannot be written as an equation
 {{< /multiplechoice >}}
 
+## Key terms
+
+**point-slope form** — the form $y - y_1 = m(x - x_1)$ of an equation of a
+line with slope $m$ that contains the point $(x_1, y_1)$; useful whenever the
+slope and any one point (not necessarily the $y$-intercept) are known, or
+when two points are known and the slope is found first.
+
 ## Practice
 
 ### Find an equation of the line given the slope and $y$-intercept
@@ -399,13 +406,6 @@ it cannot be written as an equation
   answerDisplay="$y=-\tfrac{3}{2}x-1$"
   hint="Use the negative-reciprocal slope $-\tfrac{3}{2}$, substitute $(2,-4)$, and solve for $y$."
 >}}
-
-## Key terms
-
-**point-slope form** — the form $y - y_1 = m(x - x_1)$ of an equation of a
-line with slope $m$ that contains the point $(x_1, y_1)$; useful whenever the
-slope and any one point (not necessarily the $y$-intercept) are known, or
-when two points are known and the slope is found first.
 
 ---
 

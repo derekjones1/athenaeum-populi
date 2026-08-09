@@ -502,9 +502,57 @@ $4(-\tfrac{5}{2})^2+4(-\tfrac{5}{2})+1=16$.
   hint="Recognize the perfect square trinomial on the left before taking square roots."
 >}}
 
-**Key terms:** The **Square Root Property** states that if $x^2=k$, then
+## Key terms
+
+The **Square Root Property** states that if $x^2=k$, then
 $x=\sqrt{k}$ or $x=-\sqrt{k}$, which can be written $x=\pm\sqrt{k}$.
 
+## Practice
+
+### Solve quadratic equations of the form $ax^2=k$ using the Square Root Property
+
+{{< fillin
+  question="Solve $r^2-24=0$. Enter both solutions, separated by a comma."
+  answer="2\sqrt{6}, -2\sqrt{6}"
+  answerMode="unordered"
+  answerDisplay="$r=2\sqrt{6},\ r=-2\sqrt{6}$"
+  hint="Isolate $r^2$, apply the Square Root Property, and simplify $\sqrt{24}$."
+>}}
+
+{{< fillin
+  question="Solve $x^2+25=0$. Enter both solutions, separated by a comma."
+  answer="5i, -5i"
+  answerMode="unordered"
+  answerDisplay="$x=5i,\ x=-5i$"
+  hint="Isolate $x^2$; since it equals a negative number, use $\sqrt{-1}=i$."
+>}}
+
+{{< fillin
+  question="Solve $7p^2+10=26$. Enter both solutions, separated by a comma."
+  answer="\frac{4\sqrt{7}}{7}, -\frac{4\sqrt{7}}{7}"
+  answerMode="unordered"
+  answerDisplay="$p=\tfrac{4\sqrt{7}}{7},\ p=-\tfrac{4\sqrt{7}}{7}$"
+  hint="Isolate $p^2$, apply the Square Root Property, and rationalize the denominator."
+>}}
+
+### Solve quadratic equations of the form $a(x-h)^2=k$ using the Square Root Property
+
+{{< fillin
+  question="Solve $(m-6)^2=20$. Enter both solutions, separated by a comma."
+  answer="6+2\sqrt{5}, 6-2\sqrt{5}"
+  answerMode="unordered"
+  answerDisplay="$m=6+2\sqrt{5},\ m=6-2\sqrt{5}$"
+  hint="Apply the Square Root Property to the binomial, simplify $\sqrt{20}$, and add 6."
+>}}
+
+{{< fillin
+  question="Solve $(5c+1)^2=-27$. Enter both solutions, separated by a comma."
+  answer="-\frac{1}{5}+\frac{3\sqrt{3}}{5}i, -\frac{1}{5}-\frac{3\sqrt{3}}{5}i"
+  answerMode="unordered"
+  answerDisplay="$c=-\tfrac{1}{5}+\tfrac{3\sqrt{3}}{5}i,\ c=-\tfrac{1}{5}-\tfrac{3\sqrt{3}}{5}i$"
+  hint="Apply the Square Root Property to the binomial, simplify using $i$, and solve for $c$."
+>}}
+
 <small>
-This page adapts [OpenStax *Intermediate Algebra 2e*, Section 9.1](https://openstax.org/books/intermediate-algebra-2e/pages/9-1-solve-quadratic-equations-using-the-square-root-property), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/books/intermediate-algebra-2e/pages/9-1-solve-quadratic-equations-using-the-square-root-property). Changes: adapted the source for web presentation and converted the Try It exercises to interactive questions; omitted the Be Prepared questions, media links, and end-of-section exercise sets.
+This page adapts [OpenStax *Intermediate Algebra 2e*, Section 9.1](https://openstax.org/books/intermediate-algebra-2e/pages/9-1-solve-quadratic-equations-using-the-square-root-property), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/books/intermediate-algebra-2e/pages/9-1-solve-quadratic-equations-using-the-square-root-property). Changes: adapted the source for web presentation and converted the Try It exercises to interactive questions; omitted the Be Prepared questions and media links; and adapted selected end-of-section exercises into an interactive Practice block.
 </small>

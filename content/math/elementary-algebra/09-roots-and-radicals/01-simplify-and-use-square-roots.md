@@ -130,7 +130,7 @@ Notice the different answers in parts (a) and (b)!
 {{< fillin
   question="Simplify $\sqrt{64 + 225}$."
   answer="17"
-  answerForm="simplified-radical"
+  answerForm="decimal"
   hint="The radical is a grouping symbol — add under it first, then take the square root."
 >}}
 
@@ -316,6 +316,17 @@ $$
   answerDisplay="$-10p$"
 >}}
 
+## Key terms
+
+**square** of a number — if $n^2 = m$, then $m$ is the square of $n$. **square
+root** of a number — if $n^2 = m$, then $n$ is a square root of $m$; every
+positive number has two square roots, one positive and one negative. **radical
+sign** — the symbol $\sqrt{\phantom{m}}$ that denotes the positive (principal)
+square root. **radicand** — the number or expression under the radical sign.
+**principal square root** — the non-negative square root, the one the radical
+sign indicates. **approximation** — a value close to the exact square root,
+written with $\approx$, accurate to the number of digits displayed.
+
 ## Practice
 
 ### Simplify expressions with square roots
@@ -428,17 +439,6 @@ not a real number
   answerDisplay="$3c^4d^6$"
   hint="Take the square root of the coefficient, then halve the exponent of each variable factor."
 >}}
-
-## Key terms
-
-**square** of a number — if $n^2 = m$, then $m$ is the square of $n$. **square
-root** of a number — if $n^2 = m$, then $n$ is a square root of $m$; every
-positive number has two square roots, one positive and one negative. **radical
-sign** — the symbol $\sqrt{\phantom{m}}$ that denotes the positive (principal)
-square root. **radicand** — the number or expression under the radical sign.
-**principal square root** — the non-negative square root, the one the radical
-sign indicates. **approximation** — a value close to the exact square root,
-written with $\approx$, accurate to the number of digits displayed.
 
 ---
 

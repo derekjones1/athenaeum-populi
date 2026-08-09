@@ -522,14 +522,69 @@ $$
 \end{array}
 $$
 
-{{< fillin question="Find the sum $\sum_{i=1}^{30}(6i-4)$." answer="2670" answerDisplay="$2{,}670$" hint="Identify the first and thirtieth terms, then use the arithmetic-sequence sum formula." >}}
+{{< fillin question="Find the sum $\sum_{i=1}^{30}(6i-4)$." answer="2670" answerForm="decimal" answerDisplay="$2{,}670$" hint="Identify the first and thirtieth terms, then use the arithmetic-sequence sum formula." >}}
 
-{{< fillin question="Find the sum $\sum_{i=1}^{35}(5i-3)$." answer="3045" answerDisplay="$3{,}045$" hint="Identify the first and thirty-fifth terms, then use the arithmetic-sequence sum formula." >}}
+{{< fillin question="Find the sum $\sum_{i=1}^{35}(5i-3)$." answer="3045" answerForm="decimal" answerDisplay="$3{,}045$" hint="Identify the first and thirty-fifth terms, then use the arithmetic-sequence sum formula." >}}
 
-**Key terms.** An **arithmetic sequence** is a sequence in which the difference
+## Key terms
+
+An **arithmetic sequence** is a sequence in which the difference
 between consecutive terms is always the same. This constant difference $d$ is
 the **common difference**.
 
+## Practice
+
+### Determine if a sequence is arithmetic
+
+{{< multiplechoice question="Determine whether the sequence $4,12,20,28,36,44,\ldots$ is arithmetic." answer="Arithmetic" hint="Subtract each term from the term that follows it and compare the differences." >}}
+Arithmetic
+Not arithmetic
+{{< /multiplechoice >}}
+
+{{< fillin question="The sequence $4,12,20,28,36,44,\ldots$ is arithmetic. Find its common difference $d$." answer="8" answerDisplay="$d=8$" hint="Subtract any term from the term that follows it." >}}
+
+{{< multiplechoice question="Determine whether the sequence $-15,-16,3,12,21,30,\ldots$ is arithmetic." answer="Not arithmetic" hint="Compare all the consecutive differences." >}}
+Arithmetic
+Not arithmetic
+{{< /multiplechoice >}}
+
+{{< multiplechoice question="Determine whether the sequence $8,5,2,-1,-4,-7,\ldots$ is arithmetic." answer="Arithmetic" hint="Subtract each term from the term that follows it and compare the differences." >}}
+Arithmetic
+Not arithmetic
+{{< /multiplechoice >}}
+
+{{< fillin question="The sequence $8,5,2,-1,-4,-7,\ldots$ is arithmetic. Find its common difference $d$." answer="-3" answerDisplay="$d=-3$" hint="Subtract any term from the term that follows it." >}}
+
+### Find the general term ($n$th term) of an arithmetic sequence
+
+{{< fillin question="Find the twenty-first term of a sequence where the first term is three and the common difference is eight." answer="163" answerDisplay="$a_{21}=163$" hint="Use $a_n=a_1+(n-1)d$." >}}
+
+{{< fillin question="Find the sixteenth term of a sequence where the first term is $11$ and the common difference is $-6$." answer="-79" answerDisplay="$a_{16}=-79$" hint="Use $a_n=a_1+(n-1)d$." >}}
+
+{{< fillin question="Find the twentieth term of a sequence where the fifth term is $-4$ and the common difference is $-2$." answer="-34" answerDisplay="$a_{20}=-34$" hint="First use the fifth term to find $a_1$, then find $a_{20}$." >}}
+
+{{< fillin question="For the sequence where the fifth term is $-4$ and the common difference is $-2$, give the formula for the general term." answer="-2n+6" answerDisplay="$a_n=-2n+6$" hint="Find $a_1$ from $a_5=a_1+4d$, then use the general-term formula." >}}
+
+{{< fillin question="For a sequence where the second term is $14$ and the thirteenth term is $47$, find the first term." answer="11" answerDisplay="$a_1=11$" hint="Form two equations from $a_n=a_1+(n-1)d$ and subtract them." >}}
+
+{{< fillin question="For a sequence where the second term is $14$ and the thirteenth term is $47$, find the common difference." answer="3" answerDisplay="$d=3$" hint="Form two equations from $a_n=a_1+(n-1)d$ and subtract them." >}}
+
+{{< fillin question="For a sequence where the second term is $14$ and the thirteenth term is $47$, give the formula for the general term." answer="3n+8" answerDisplay="$a_n=3n+8$" hint="After finding $a_1$ and $d$, substitute them into the general-term formula." >}}
+
+### Find the sum of the first $n$ terms of an arithmetic sequence
+
+{{< fillin question="Find the sum of the first $30$ terms of the arithmetic sequence $11,14,17,20,23,\ldots$." answer="1635" answerDisplay="$1{,}635$" hint="Find $a_{30}$, then use $S_n=\tfrac n2(a_1+a_n)$." >}}
+
+{{< fillin question="Find the sum of the first $30$ terms of the arithmetic sequence $-17,-15,-13,-11,-9,\ldots$." answer="360" answerDisplay="$360$" hint="Find $a_{30}$, then use $S_n=\tfrac n2(a_1+a_n)$." >}}
+
+{{< fillin question="Find the sum of the first $50$ terms of the arithmetic sequence whose general term is $a_n=5n-1$." answer="6325" answerDisplay="$6{,}325$" hint="Evaluate the general term at $n=1$ and $n=50$, then use the sum formula." >}}
+
+{{< fillin question="Find the sum of the first $50$ terms of the arithmetic sequence whose general term is $a_n=-3n+5$." answer="-3575" answerDisplay="$-3{,}575$" hint="Evaluate the general term at $n=1$ and $n=50$, then use the sum formula." >}}
+
+{{< fillin question="Find the sum $\sum_{i=1}^{40}(8i-7)$." answer="6280" answerForm="decimal" answerDisplay="$6{,}280$" hint="Identify the first and fortieth terms, then use the arithmetic-sequence sum formula." >}}
+
+{{< fillin question="Find the sum $\sum_{i=1}^{35}(-6i-2)$." answer="-3850" answerForm="decimal" answerDisplay="$-3{,}850$" hint="Identify the first and thirty-fifth terms, then use the arithmetic-sequence sum formula." >}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 12.2](https://openstax.org/books/intermediate-algebra-2e/pages/12-2-arithmetic-sequences) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/books/intermediate-algebra-2e/pages/12-2-arithmetic-sequences). Changes: omitted the readiness quiz, media links, and section exercise sets; converted Try It exercises into interactive questions and adapted formatting for the web.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 12.2](https://openstax.org/books/intermediate-algebra-2e/pages/12-2-arithmetic-sequences) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/books/intermediate-algebra-2e/pages/12-2-arithmetic-sequences). Changes: omitted the readiness quiz and media links; converted Try It exercises into interactive questions, adapted formatting for the web, and adapted selected end-of-section exercises into an interactive Practice block.</small>

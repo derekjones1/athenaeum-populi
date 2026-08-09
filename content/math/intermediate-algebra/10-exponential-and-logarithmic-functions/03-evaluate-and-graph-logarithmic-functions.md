@@ -688,7 +688,292 @@ To compare the intensities, we first need to convert the magnitudes to intensiti
 **Media.** Access these online resources for additional instruction and practice with evaluating and graphing logarithmic functions.
 {{< /callout >}}
 
+## Practice
+
+### Convert between exponential and logarithmic form
+
+{{< multiplechoice
+  question="Convert to logarithmic form: $2^5=32$."
+  answer="$\log_2 32=5$"
+  hint="In $a^y=x$, the equivalent logarithmic form is $\log_a x=y$."
+>}}
+$\log_2 32=5$
+$\log_{32}2=5$
+$\log_5 32=2$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Convert to logarithmic form: $10^{-2}=\tfrac1{100}$."
+  answer="$\log\tfrac1{100}=-2$"
+  hint="A logarithm written with no base shown is base $10$."
+>}}
+$\log\tfrac1{100}=-2$
+$\log_{-2}\tfrac1{100}=10$
+$\log_{10}(-2)=\tfrac1{100}$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Convert to logarithmic form: $17^x=\sqrt[5]{17}$."
+  answer="$\log_{17}\sqrt[5]{17}=x$"
+  hint="Keep the exponential base as the logarithmic base."
+>}}
+$\log_{17}\sqrt[5]{17}=x$
+$\log_x\sqrt[5]{17}=17$
+$\log_{\sqrt[5]{17}}17=x$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Convert to logarithmic form: $e^3=x$."
+  answer="$\ln x=3$"
+  hint="The logarithmic form of $e^y=x$ is $\ln x=y$."
+>}}
+$\ln x=3$
+$\ln 3=x$
+$\log_x e=3$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Convert to exponential form: $6=\log_2 64$."
+  answer="$64=2^6$"
+  hint="In $\log_a x=y$, the equivalent exponential form is $a^y=x$."
+>}}
+$64=2^6$
+$6=64^2$
+$2=6^{64}$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Convert to exponential form: $0=\log_7 1$."
+  answer="$1=7^0$"
+  hint="The logarithm is the exponent on the base."
+>}}
+$1=7^0$
+$0=1^7$
+$7=0^1$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Convert to exponential form: $3=\log_{10}1{,}000$."
+  answer="$1{,}000=10^3$"
+  hint="A logarithm written with no base shown is base $10$."
+>}}
+$1{,}000=10^3$
+$3=1{,}000^{10}$
+$10=3^{1{,}000}$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Convert to exponential form: $x=\log_e 43$."
+  answer="$43=e^x$"
+  hint="$\log_e$ is written $\ln$, and its exponential form is base $e$."
+>}}
+$43=e^x$
+$x=43^e$
+$e=x^{43}$
+{{< /multiplechoice >}}
+
+### Evaluate logarithmic functions
+
+{{< fillin
+  question="Find $x$: $\log_x121=2$."
+  answer="11"
+  hint="Convert to exponential form: $x^2=121$."
+>}}
+
+{{< fillin
+  question="Find $x$: $\log_x64=3$."
+  answer="4"
+  hint="Convert to exponential form: $x^3=64$."
+>}}
+
+{{< fillin
+  question="Find $x$: $\log_5x=3$."
+  answer="125"
+  hint="Convert to exponential form: $5^3=x$."
+>}}
+
+{{< fillin
+  question="Find $x$: $\log_3x=-5$."
+  answer="\frac{1}{243}"
+  answerDisplay="$\tfrac1{243}$"
+  hint="Convert to exponential form: $3^{-5}=x$."
+>}}
+
+{{< fillin
+  question="Find $x$: $\log_{\tfrac13}\tfrac19=x$."
+  answer="2"
+  answerForm="decimal"
+  hint="Rewrite $\tfrac19$ as a power of $\tfrac13$."
+>}}
+
+{{< fillin
+  question="Find $x$: $\log_{\tfrac19}81=x$."
+  answer="-2"
+  answerForm="decimal"
+  hint="Rewrite $81$ as a power of $\tfrac19$."
+>}}
+
+{{< fillin
+  question="Find the exact value of $\log_6 36$."
+  answer="2"
+  answerForm="decimal"
+  hint="Ask which power of $6$ gives $36$."
+>}}
+
+{{< fillin
+  question="Find the exact value of $\log_5 1$."
+  answer="0"
+  answerForm="decimal"
+  hint="Any base raised to the power $0$ equals $1$."
+>}}
+
+{{< fillin
+  question="Find the exact value of $\log_{27}3$."
+  answer="\frac{1}{3}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$\tfrac13$"
+  hint="Rewrite $27$ and $3$ as powers of $3$."
+>}}
+
+{{< fillin
+  question="Find the exact value of $\log_{\tfrac12}4$."
+  answer="-2"
+  answerForm="decimal"
+  hint="Rewrite $4$ as a power of $\tfrac12$."
+>}}
+
+{{< fillin
+  question="Find the exact value of $\log_3\tfrac1{27}$."
+  answer="-3"
+  answerForm="decimal"
+  hint="Rewrite $\tfrac1{27}$ as a power of $3$."
+>}}
+
+{{< fillin
+  question="Find the exact value of $\log_9\tfrac1{81}$."
+  answer="-2"
+  answerForm="decimal"
+  hint="Rewrite $\tfrac1{81}$ as a power of $9$."
+>}}
+
+### Graph Logarithmic functions
+
+{{< fillin
+  question="For $y=\log_7x$, what are its domain and range, in interval notation? Enter the domain, then the range, separated by a comma."
+  answer="(0,\infty),(-\infty,\infty)"
+  answerDisplay="domain $(0,\infty)$, range $(-\infty,\infty)$"
+  hint="Rewrite as $7^y=x$: the output $7^y$ is always positive, but $y$ itself is unrestricted."
+  placeholder="domain, range"
+>}}
+
+{{< fillin
+  question="What is the equation of the vertical asymptote of the graph of $y=\log_{2.5}x$?"
+  answer="x=0"
+  hint="A logarithmic graph gets arbitrarily close to the $y$-axis but never crosses it."
+>}}
+
+{{< fillin
+  question="On the graph of $y=\log_{2.5}x$, what is the $y$-coordinate of the point with $x=2.5$?"
+  answer="1"
+  hint="Evaluate $\log_{2.5}2.5$."
+>}}
+
+{{< fillin
+  question="On the graph of $y=\log_{\tfrac15}x$, what is the $y$-coordinate of the point with $x=5$?"
+  answer="-1"
+  hint="Rewrite as $(\tfrac15)^y=5$ and solve for $y$."
+>}}
+
+### Solve logarithmic equations
+
+{{< fillin
+  question="Solve $\log_a81=2$ for the base $a$."
+  answer="9"
+  hint="Convert to exponential form: $a^2=81$, then reject the negative root."
+>}}
+
+{{< fillin
+  question="Solve $\log_a27=3$ for the base $a$."
+  answer="3"
+  hint="Convert to exponential form: $a^3=27$."
+>}}
+
+{{< fillin
+  question="Solve $\log_a24=3$ for the base $a$."
+  answer="2\sqrt[3]{3}"
+  answerDisplay="$a=2\sqrt[3]{3}$"
+  hint="Convert to exponential form, $a^3=24$, then simplify $\sqrt[3]{24}$."
+>}}
+
+{{< fillin
+  question="Solve $\ln x=4$."
+  answer="e^4"
+  hint="Rewrite using the definition of $\ln$: $x=e^4$."
+>}}
+
+{{< fillin
+  question="Solve $\log_2(6x+2)=5$."
+  answer="5"
+  hint="Convert to exponential form: $6x+2=2^5$."
+>}}
+
+{{< fillin
+  question="Solve $\log_3(5x-4)=4$."
+  answer="17"
+  hint="Convert to exponential form: $5x-4=3^4$."
+>}}
+
+{{< fillin
+  question="Solve $\log_4(3x-2)=2$."
+  answer="6"
+  hint="Convert to exponential form: $3x-2=4^2$."
+>}}
+
+{{< fillin
+  question="Solve $\ln(e^{2x})=6$."
+  answer="3"
+  hint="Apply the inverse property $\ln(e^{k})=k$ directly."
+>}}
+
+{{< fillin
+  question="Solve $\log(x^2-25)=2$. Enter both solutions, separated by a comma."
+  answer="-5\sqrt{5},5\sqrt{5}"
+  answerMode="unordered"
+  answerDisplay="$x=-5\sqrt5$ or $x=5\sqrt5$"
+  hint="A log with no base shown is base $10$; convert to exponential form and solve the resulting quadratic."
+>}}
+
+{{< fillin
+  question="Solve $\log_3(x^2+2)=3$. Enter both solutions, separated by a comma."
+  answer="-5,5"
+  answerMode="unordered"
+  answerDisplay="$x=-5$ or $x=5$"
+  hint="Convert to exponential form, $x^2+2=27$, then solve the quadratic."
+>}}
+
+### Use logarithmic models in applications
+
+{{< fillin
+  question="What is the decibel level of a whisper with intensity $10^{-10}$ watts per square inch?"
+  answer="20"
+  answerDisplay="20 dB"
+  hint="Use $D=10\log(\tfrac{I}{10^{-12}})$."
+>}}
+
+{{< fillin
+  question="What is the decibel level of the sound of a garbage disposal with intensity $10^{-2}$ watts per square inch?"
+  answer="100"
+  answerDisplay="100 dB"
+  hint="Substitute the intensity into $D=10\log(\tfrac{I}{10^{-12}})$."
+>}}
+
+{{< fillin
+  question="In 1994, the Northridge earthquake measured $6.7$ on the Richter scale. In 2014, an earthquake in the same area measured $5.1$. About how many times as intense was the 1994 earthquake?"
+  answer="40"
+  answerDisplay="about 40 times as intense"
+  hint="Compute $10^{6.7-5.1}$ and round to the nearest whole number."
+>}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 10.3: Evaluate and Graph Logarithmic Functions](https://openstax.org/books/intermediate-algebra-2e/pages/10-3-evaluate-and-graph-logarithmic-functions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions for the web; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 10.3: Evaluate and Graph Logarithmic Functions](https://openstax.org/books/intermediate-algebra-2e/pages/10-3-evaluate-and-graph-logarithmic-functions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions for the web; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

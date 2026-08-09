@@ -106,6 +106,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt[3]{-125}$."
   answer="-5"
+  answerForm="decimal"
   answerDisplay="$-5$"
   hint="The index is odd, so the root of a negative number is real. What number cubed is $-125$?"
 >}}
@@ -299,6 +300,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt[3]{-108}$."
   answer="-3\sqrt[3]{4}"
+  answerForm="simplified-radical"
   answerDisplay="$-3\sqrt[3]{4}$"
   hint="Write $-108$ as $(-3)^3 \cdot 4$. The index is odd, so the root is real."
 >}}
@@ -487,6 +489,18 @@ $$
   hint="Simplify each radical: $\sqrt[3]{32y^5} = 2y\sqrt[3]{4y^2}$ and $\sqrt[3]{-108y^8} = -3y^2\sqrt[3]{4y^2}$."
 >}}
 
+## Key terms
+
+**index** — the number $n$ in the radical $\sqrt[n]{a}$ that tells which root is
+being taken; for a square root the index $2$ is not written. **principal $n$th
+root** — the value $\sqrt[n]{a}$, which is non-negative when the index is even.
+**like radicals** — radicals with the same index and the same radicand.
+**Product Property of $n$th Roots** — for real $\sqrt[n]{a}$ and $\sqrt[n]{b}$
+and integer $n \ge 2$, $\sqrt[n]{ab} = \sqrt[n]{a} \cdot \sqrt[n]{b}$.
+**Quotient Property of $n$th Roots** — for real $\sqrt[n]{a}$ and $\sqrt[n]{b}$
+with $b \neq 0$ and integer $n \ge 2$,
+$\sqrt[n]{\tfrac{a}{b}} = \tfrac{\sqrt[n]{a}}{\sqrt[n]{b}}$.
+
 ## Practice
 
 ### Simplify expressions with higher roots
@@ -626,18 +640,6 @@ not a real number
   answerDisplay="$-4\sqrt[4]{27}$"
   hint="The radicals are like, so subtract the coefficients $2-6$."
 >}}
-
-## Key terms
-
-**index** — the number $n$ in the radical $\sqrt[n]{a}$ that tells which root is
-being taken; for a square root the index $2$ is not written. **principal $n$th
-root** — the value $\sqrt[n]{a}$, which is non-negative when the index is even.
-**like radicals** — radicals with the same index and the same radicand.
-**Product Property of $n$th Roots** — for real $\sqrt[n]{a}$ and $\sqrt[n]{b}$
-and integer $n \ge 2$, $\sqrt[n]{ab} = \sqrt[n]{a} \cdot \sqrt[n]{b}$.
-**Quotient Property of $n$th Roots** — for real $\sqrt[n]{a}$ and $\sqrt[n]{b}$
-with $b \neq 0$ and integer $n \ge 2$,
-$\sqrt[n]{\tfrac{a}{b}} = \tfrac{\sqrt[n]{a}}{\sqrt[n]{b}}$.
 
 ---
 

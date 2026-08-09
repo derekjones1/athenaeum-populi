@@ -256,6 +256,15 @@ $$f = \frac{11{,}440}{20} = 572$$
 
 A $20''$ guitar string has frequency $572$ vibrations per second.
 
+## Key terms
+
+**direct variation** — a relationship in which $y = kx$: one variable is a
+constant multiple of the other, so as $x$ grows, $y$ grows in proportion.
+**inverse variation** — a relationship in which $y = \tfrac{k}{x}$: as one
+variable increases, the other decreases. **constant of variation** — the
+nonzero constant $k$ in a variation equation, found by substituting a known
+pair of values and solving.
+
 ## Practice
 
 ### Solve direct variation problems
@@ -296,15 +305,6 @@ A $20''$ guitar string has frequency $572$ vibrations per second.
   answerDisplay="$v = \tfrac{3}{w}$"
   hint="Substitute $w = \tfrac{1}{2}$ into $v = \tfrac{k}{w}$, then multiply both sides by $\tfrac{1}{2}$ to solve for $k$."
 >}}
-
-## Key terms
-
-**direct variation** — a relationship in which $y = kx$: one variable is a
-constant multiple of the other, so as $x$ grows, $y$ grows in proportion.
-**inverse variation** — a relationship in which $y = \tfrac{k}{x}$: as one
-variable increases, the other decreases. **constant of variation** — the
-nonzero constant $k$ in a variation equation, found by substituting a known
-pair of values and solving.
 
 ---
 

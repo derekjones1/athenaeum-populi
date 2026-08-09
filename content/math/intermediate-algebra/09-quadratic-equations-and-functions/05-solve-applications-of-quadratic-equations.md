@@ -514,8 +514,52 @@ alone.
   hint="Let $x$ be the green hose's time. Then $\tfrac1{x+3}+\tfrac1x=\tfrac12$."
 >}}
 
-**Key terms.** No new key terms are introduced in this section.
+## Key terms
+
+No new key terms are introduced in this section.
+
+## Practice
+
+### Solve applications modeled by quadratic equations
+
+{{< fillin
+  question="The product of two consecutive odd integers is 255. Find the integers. Enter the positive pair followed by the negative pair, separated by commas."
+  answer="15, 17, -15, -17"
+  answerDisplay="$15,\ 17$ and $-15,\ -17$"
+  hint="Let $n$ be the first odd integer and $n+2$ the next. Solve $n(n+2)=255$ and keep both roots."
+>}}
+
+{{< fillin
+  question="The length of a rectangular driveway is five feet more than three times the width. The area of the driveway is 50 square feet. Find the length and width, rounded to the nearest tenth of a foot. Enter the length and then the width, separated by a comma."
+  answer="15.0, 3.3"
+  answerDisplay="length $15.0$ feet, width $3.3$ feet"
+  hint="Let $w$ be the width. Then the length is $3w+5$; substitute into $A=LW$ and solve $50=(3w+5)w$."
+>}}
+
+{{< fillin
+  question="The hypotenuse of a right triangle is twice the length of one of its legs. The other leg is 3 feet long. Find the lengths of all three sides, rounded to the nearest tenth of a foot. Enter the sides in order from shortest to longest, separated by commas."
+  answer="1.7, 3, 3.5"
+  answerDisplay="$1.7$ ft, $3$ ft, $3.5$ ft"
+  hint="Let $x$ be the leg whose hypotenuse is $2x$. Apply the Pythagorean Theorem: $x^2+3^2=(2x)^2$."
+>}}
+
+{{< fillin
+  question="A firework rocket is shot upward with initial velocity 640 feet per second. Use $h=-16t^2+v_0t$ to determine when its height will be 1,200 feet. Round each time to the nearest hundredth of a second. Enter both times, separated by a comma."
+  answer="1.97, 38.03"
+  answerMode="unordered"
+  answerDisplay="$1.97$ seconds and $38.03$ seconds"
+  hint="Substitute $v_0=640$ and $h=1200$, write the equation in standard form, and apply the Quadratic Formula."
+>}}
+
+{{< fillin
+  question="A small plane made a round trip for a lunch meeting, flying 200 miles each way, with a total flying time of 4 hours. If the plane's speed in still air was 120 mph, find the speed of the wind. Round to the nearest whole number."
+  answer="49"
+  answerDisplay="$49$ mph"
+  hint="Let $r$ be the wind speed. Solve $\tfrac{200}{120+r}+\tfrac{200}{120-r}=4$ and reject the negative root."
+>}}
+
+---
 
 <small>
-Adapted from [*Intermediate Algebra 2e*, Section 9.5](https://openstax.org/books/intermediate-algebra-2e/pages/9-5-solve-applications-of-quadratic-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: adapted the source to interactive web format and converted Try It exercises to auto-graded questions.
+Adapted from [*Intermediate Algebra 2e*, Section 9.5](https://openstax.org/books/intermediate-algebra-2e/pages/9-5-solve-applications-of-quadratic-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: adapted the source to interactive web format and converted Try It exercises to auto-graded questions, and adapted selected end-of-section exercises into an interactive Practice block.
 </small>

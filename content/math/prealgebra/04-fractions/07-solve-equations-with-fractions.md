@@ -308,6 +308,12 @@ mixed number.
   hint="Translate to $\tfrac{5}{8} + x = \tfrac{1}{4}$, then subtract $\tfrac{5}{8}$ from both sides using a common denominator."
 >}}
 
+## Key terms
+
+**solution of an equation** — a value that, substituted for the
+variable, makes the equation a true statement. **Multiplication Property
+of Equality** — for any numbers $a$, $b$, $c$: if $a=b$, then $ac=bc$.
+
 ## Practice
 
 ### Determine whether a fraction is a solution of an equation
@@ -450,12 +456,6 @@ no
   answerDisplay="$y - \tfrac{1}{3} = -\tfrac{1}{6}$; $y = \tfrac{1}{6}$"
   hint="Difference keeps the order given, so add $\tfrac{1}{3}$ to both sides using the LCD 6."
 >}}
-
-## Key terms
-
-**solution of an equation** — a value that, substituted for the
-variable, makes the equation a true statement. **Multiplication Property
-of Equality** — for any numbers $a$, $b$, $c$: if $a=b$, then $ac=bc$.
 
 ---
 

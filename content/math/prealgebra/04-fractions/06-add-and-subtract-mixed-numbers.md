@@ -320,6 +320,16 @@ $$4\frac{3}{4} - 2\frac{7}{8} = 1\frac{7}{8}$$
   hint="The LCD of 2 and 5 is 10. Convert both fractions to tenths, borrow if needed, then subtract."
 >}}
 
+## Key terms
+
+**mixed number addition** — add the whole-number parts and the fraction
+parts separately (after matching denominators), then simplify, combining
+any improper fraction result into the whole-number total. **borrowing (in
+subtraction of mixed numbers)** — when the top fraction is smaller than
+the bottom fraction, take one whole from the top whole-number part and
+add it to the top fraction, forming an improper fraction, before
+subtracting.
+
 ## Practice
 
 ### Model addition of mixed numbers with a common denominator
@@ -434,16 +444,6 @@ $$4\frac{3}{4} - 2\frac{7}{8} = 1\frac{7}{8}$$
   answerDisplay="$-1\tfrac{11}{24}$"
   hint="The second number is larger, so expect a negative answer. Convert to improper fractions over the LCD $24$ and subtract."
 >}}
-
-## Key terms
-
-**mixed number addition** — add the whole-number parts and the fraction
-parts separately (after matching denominators), then simplify, combining
-any improper fraction result into the whole-number total. **borrowing (in
-subtraction of mixed numbers)** — when the top fraction is smaller than
-the bottom fraction, take one whole from the top whole-number part and
-add it to the top fraction, forming an improper fraction, before
-subtracting.
 
 ---
 

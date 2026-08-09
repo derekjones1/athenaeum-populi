@@ -400,7 +400,57 @@ $$
   hint="The LCD is $(x-1)(x+1)$."
 >}}
 
-**Key terms.** A **complex rational expression** is a rational expression in
+## Key terms
+
+A **complex rational expression** is a rational expression in
 which the numerator and/or the denominator contains a rational expression.
 
-<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 7.3](https://openstax.org/books/intermediate-algebra-2e/pages/7-3-simplify-complex-rational-expressions), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted examples and Try It exercises for interactive web use and accessibility.</small>
+## Practice
+
+### Simplify a complex rational expression by writing it as division
+
+{{< fillin
+  question="Simplify $\cfrac{\tfrac{2a}{a+4}}{\tfrac{4a^2}{a^2-16}}$ by writing it as division."
+  answer="\tfrac{a-4}{2a}"
+  answerForm="reduced-fraction"
+  answerDisplay="$\tfrac{a-4}{2a}$"
+  hint="Rewrite the main fraction bar as division, multiply by the reciprocal, and factor $a^2-16$."
+>}}
+
+{{< fillin
+  question="Simplify $\cfrac{x-\tfrac{2x}{x+3}}{\tfrac{1}{x+3}+\tfrac{1}{x-3}}$ by writing it as division."
+  answer="\tfrac{(x+1)(x-3)}{2}"
+  answerForm="reduced-fraction"
+  answerDisplay="$\tfrac{(x+1)(x-3)}{2}$"
+  hint="Combine the terms in the numerator and denominator separately, then rewrite the result as division."
+>}}
+
+### Simplify a complex rational expression by using the LCD
+
+{{< fillin
+  question="Simplify $\cfrac{\tfrac{2}{x+5}}{\tfrac{3}{x-5}+\tfrac{1}{x^2-25}}$ by using the LCD."
+  answer="\tfrac{2x-10}{3x+16}"
+  answerForm="reduced-fraction"
+  answerDisplay="$\tfrac{2x-10}{3x+16}$"
+  hint="Factor $x^2-25$, then multiply the numerator and denominator by the LCD, $(x-5)(x+5)$."
+>}}
+
+{{< fillin
+  question="Simplify $\cfrac{\tfrac{4}{a^2-2a-15}}{\tfrac{1}{a-5}+\tfrac{2}{a+3}}$ by using the LCD."
+  answer="\tfrac{4}{3a-7}"
+  answerForm="reduced-fraction"
+  answerDisplay="$\tfrac{4}{3a-7}$"
+  hint="Factor $a^2-2a-15$, then multiply the numerator and denominator by the LCD."
+>}}
+
+{{< fillin
+  question="Simplify $\cfrac{2+\tfrac{1}{p-3}}{\tfrac{5}{p-3}}$ by using the LCD."
+  answer="\tfrac{2p-5}{5}"
+  answerForm="reduced-fraction"
+  answerDisplay="$\tfrac{2p-5}{5}$"
+  hint="Multiply the numerator and denominator by the LCD, $p-3$."
+>}}
+
+---
+
+<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 7.3](https://openstax.org/books/intermediate-algebra-2e/pages/7-3-simplify-complex-rational-expressions), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted examples and Try It exercises for interactive web use and accessibility, and adapted selected end-of-section exercises into an interactive Practice block.</small>

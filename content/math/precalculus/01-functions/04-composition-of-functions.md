@@ -116,6 +116,7 @@ undefined.
 {{< fillin
   question="Given $f(x)=x-1$ and $g(x)=x^2-1$, find and simplify $(fg)(x)$."
   answer="x^3-x^2-x+1"
+  answerForm="expanded"
   answerDisplay="$(fg)(x)=(x-1)(x^2-1)=x^3-x^2-x+1$"
   hint="Multiply the two outputs, then expand."
 >}}
@@ -123,6 +124,7 @@ undefined.
 {{< fillin
   question="Given the same $f$ and $g$, find and simplify $(f-g)(x)$."
   answer="x-x^2"
+  answerForm="distributed"
   answerDisplay="$(f-g)(x)=(x-1)-(x^2-1)=x-x^2$"
   hint="Subtract the whole of $g(x)$; the two constants cancel."
 >}}

@@ -302,6 +302,14 @@ $
   hint="Subtract $5x$ from both sides, then divide both sides by 8."
 >}}
 
+## Key terms
+
+**distance, rate, time formula** — the relationship $d = rt$, where $d$ is
+distance traveled, $r$ is the rate (speed), and $t$ is time. **solve a
+formula for a specific variable** — to isolate that variable on one side of
+the equation, treating the other variables as if they were numbers; also
+called solving a **literal equation**.
+
 ## Practice
 
 ### Use the distance, rate, time formula
@@ -386,14 +394,6 @@ $
   answerDisplay="$104°$ F"
   hint="Substitute $C = 40$, multiply both sides by $\tfrac{9}{5}$ to undo the fraction, then add 32."
 >}}
-
-## Key terms
-
-**distance, rate, time formula** — the relationship $d = rt$, where $d$ is
-distance traveled, $r$ is the rate (speed), and $t$ is time. **solve a
-formula for a specific variable** — to isolate that variable on one side of
-the equation, treating the other variables as if they were numbers; also
-called solving a **literal equation**.
 
 ---
 

@@ -32,6 +32,7 @@ weight: 14
 {{< fillin
   question="Perform the indicated operation and simplify: $\tfrac{4x}{x+2} \cdot \tfrac{x^2+5x+6}{12x^2}$."
   answer="\frac{x+3}{3x}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{x+3}{3x}$"
 >}}
 
@@ -42,6 +43,7 @@ $g(x)=\tfrac{x-5}{x^2-2x-8}$.
 {{< fillin
   question="Find $R(x)$ given $R(x)=f(x)\cdot g(x)$."
   answer="\frac{1}{(x+2)^2}"
+  answerForm="reduced-fraction"
   answerDisplay="$R(x)=\tfrac{1}{(x+2)^2}$"
 >}}
 
@@ -50,12 +52,14 @@ $g(x)=\tfrac{x-5}{x^2-2x-8}$.
 {{< fillin
   question="Perform the indicated operation and simplify: $\tfrac{6x^2-x+20}{x^2-81}-\tfrac{5x^2+11x-7}{x^2-81}$."
   answer="\frac{x-3}{x+9}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{x-3}{x+9}$"
 >}}
 
 {{< fillin
   question="Perform the indicated operation and simplify: $\tfrac{2n^2+8n-1}{n^2-1}-\tfrac{n^2-7n-1}{1-n^2}$."
   answer="\frac{3n-2}{n-1}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{3n-2}{n-1}$"
 >}}
 
@@ -64,6 +68,7 @@ $g(x)=\tfrac{x-5}{x^2-2x-8}$.
 {{< fillin
   question="Perform the indicated operation and simplify: $\tfrac{\tfrac{1}{m}-\tfrac{1}{n}}{\tfrac{1}{n}+\tfrac{1}{m}}$."
   answer="\frac{n-m}{m+n}"
+  answerForm="reduced-fraction"
   answerDisplay="$\tfrac{n-m}{m+n}$"
 >}}
 
@@ -189,6 +194,7 @@ Assume all variables are positive.
 {{< fillin
   question="Simplify: $(4-3\sqrt{3})(5+2\sqrt{3})$."
   answer="2-7\sqrt{3}"
+  answerForm="expanded"
 >}}
 
 ### 8.5 Divide Radical Expressions
@@ -434,16 +440,19 @@ For the next three questions, use $f(x)=6x+1$ and $g(x)=8x-3$.
 {{< fillin
   question="Find $(f\circ g)(x)$."
   answer="48x-17"
+  answerForm="distributed no-like-terms"
 >}}
 
 {{< fillin
   question="Find $(g\circ f)(x)$."
   answer="48x+5"
+  answerForm="distributed no-like-terms"
 >}}
 
 {{< fillin
   question="Find $(f\cdot g)(x)$."
   answer="48x^2-10x-3"
+  answerForm="distributed no-like-terms"
 >}}
 
 {{< multiplechoice
@@ -504,6 +513,7 @@ how much will be in the account in 8 years by each method of compounding?
 {{< fillin
   question="Convert the equation from logarithmic to exponential form: $3=\log_7 343$."
   answer="343=7^3"
+  answerForm="exponential-form"
   answerDisplay="$343=7^3$"
 >}}
 
@@ -534,11 +544,13 @@ a straight line through $(1,0)$
 {{< fillin
   question="Use properties of logarithms to write $\log_5 25ab$ as a sum of logarithms, simplifying if possible."
   answer="2+\log_5 a+\log_5 b"
+  answerForm="expanded-logarithms"
 >}}
 
 {{< fillin
   question="Use properties of logarithms to write $\log_2\sqrt[4]{\tfrac{5x^3}{16y^2z^7}}$ as a sum of logarithms, simplifying if possible."
   answer="\frac{1}{4}(\log_2 5+3\log_2 x-4-2\log_2 y-7\log_2 z)"
+  answerForm="expanded-logarithms"
   answerDisplay="$\tfrac{1}{4}\left(\log_2 5+3\log_2 x-4-2\log_2 y-7\log_2 z\right)$"
 >}}
 
@@ -594,12 +606,14 @@ For the next two questions, use the endpoints $(-4,-3)$ and $(-10,-11)$.
 {{< fillin
   question="Write the standard form of the equation of the circle with radius 11 and center $(0,0)$."
   answer="x^2+y^2=121"
+  answerForm="circle-standard-form"
   answerDisplay="$x^2+y^2=121$"
 >}}
 
 {{< fillin
   question="Write the standard form of the equation of the circle with center $(-2,3)$ and a point on the circle $(2,-3)$."
   answer="(x+2)^2+(y-3)^2=52"
+  answerForm="circle-standard-form"
   answerDisplay="$(x+2)^2+(y-3)^2=52$"
 >}}
 
@@ -636,6 +650,7 @@ hyperbola
 {{< fillin
   question="Write $x^2+y^2+10x+6y+30=0$ in standard form."
   answer="(x+5)^2+(y+3)^2=4"
+  answerForm="circle-standard-form"
   answerDisplay="$(x+5)^2+(y+3)^2=4$"
 >}}
 
@@ -654,6 +669,7 @@ an ellipse centered at $(-5,-3)$
 {{< fillin
   question="Write $y=2x^2-4x-2$ in standard form."
   answer="y=2(x-1)^2-4"
+  answerForm="vertex-form"
   answerDisplay="$y=2(x-1)^2-4$"
 >}}
 
@@ -710,6 +726,7 @@ a circle centered at $(0,0)$ with radius 9
 {{< fillin
   question="A comet moves in an elliptical orbit around a sun. The closest the comet gets to the sun is approximately 20 AU and the furthest is approximately 70 AU. The sun is one of the foci of the elliptical orbit. Letting the ellipse center at the origin and labeling the axes in AU, use the graph with vertices $(-45,0)$ and $(45,0)$ and a focus $(25,0)$ to write an equation for the elliptical orbit of the comet."
   answer="\frac{x^2}{2025}+\frac{y^2}{1400}=1"
+  answerForm="conic-standard-form"
   answerDisplay="$\tfrac{x^2}{2025}+\tfrac{y^2}{1400}=1$"
 >}}
 
@@ -748,6 +765,7 @@ hyperbola
 {{< fillin
   question="Write $9x^2-25y^2-36x-50y-214=0$ in standard form."
   answer="\frac{(x-2)^2}{25}-\frac{(y+1)^2}{9}=1"
+  answerForm="conic-standard-form"
   answerDisplay="$\tfrac{(x-2)^2}{25}-\tfrac{(y+1)^2}{9}=1$"
 >}}
 
@@ -797,6 +815,7 @@ two solutions
 {{< fillin
   question="Expand the partial sum and find its value: $\sum_{i=1}^{4}(-4)^i$."
   answer="204"
+  answerForm="decimal"
   answerDisplay="$-4+16-64+256=204$"
 >}}
 
@@ -829,6 +848,7 @@ two solutions
 {{< fillin
   question="Find the sum: $\sum_{i=1}^{40}(5i-21)$."
   answer="3260"
+  answerForm="decimal"
   answerDisplay="3,260"
 >}}
 

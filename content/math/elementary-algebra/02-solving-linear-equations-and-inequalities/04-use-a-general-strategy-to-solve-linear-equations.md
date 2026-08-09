@@ -358,6 +358,14 @@ contradiction
 | Identity | True for any value of the variable | All real numbers |
 | Contradiction | False for all values of the variable | No solution |
 
+## Key terms
+
+**conditional equation** — an equation that is true for one or more values
+of the variable and false for all other values. **identity** — an equation
+that is true for any value of the variable; its solution is all real
+numbers. **contradiction** — an equation that is false for all values of the
+variable; it has no solution.
+
 ## Practice
 
 ### Solve equations using a general strategy
@@ -405,14 +413,6 @@ contradiction; no solution
 identity; all real numbers
 conditional equation; one solution
 {{< /multiplechoice >}}
-
-## Key terms
-
-**conditional equation** — an equation that is true for one or more values
-of the variable and false for all other values. **identity** — an equation
-that is true for any value of the variable; its solution is all real
-numbers. **contradiction** — an equation that is false for all values of the
-variable; it has no solution.
 
 ---
 

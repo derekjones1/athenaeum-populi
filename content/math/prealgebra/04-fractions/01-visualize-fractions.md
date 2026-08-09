@@ -396,6 +396,19 @@ is to the right of $-2$, so $-2 < \tfrac{-16}{9}$.
   hint="A mixed number farther from zero (more negative) is smaller. Which is farther left on the number line?"
 >}}
 
+## Key terms
+
+**fraction** — a number written $\tfrac{a}{b}$ with $a$ the numerator and
+$b \neq 0$ the denominator, representing parts of a whole. **proper
+fraction** — a fraction whose numerator is smaller than its denominator
+(value less than one). **improper fraction** — a fraction whose numerator
+is greater than or equal to its denominator (value at least one). **mixed
+number** — a whole number combined with a proper fraction. **equivalent
+fractions** — fractions that represent the same value. **Equivalent
+Fractions Property** — multiplying (or dividing) the numerator and
+denominator of a fraction by the same nonzero number leaves its value
+unchanged.
+
 ## Practice
 
 ### Understand the meaning of fractions
@@ -645,20 +658,6 @@ is to the right of $-2$, so $-2 < \tfrac{-16}{9}$.
   answerDisplay="$-4 < -\tfrac{23}{6}$"
   hint="Write $\tfrac{23}{6}$ as a mixed number first, then compare distances from zero."
 >}}
-
-
-## Key terms
-
-**fraction** — a number written $\tfrac{a}{b}$ with $a$ the numerator and
-$b \neq 0$ the denominator, representing parts of a whole. **proper
-fraction** — a fraction whose numerator is smaller than its denominator
-(value less than one). **improper fraction** — a fraction whose numerator
-is greater than or equal to its denominator (value at least one). **mixed
-number** — a whole number combined with a proper fraction. **equivalent
-fractions** — fractions that represent the same value. **Equivalent
-Fractions Property** — multiplying (or dividing) the numerator and
-denominator of a fraction by the same nonzero number leaves its value
-unchanged.
 
 ---
 

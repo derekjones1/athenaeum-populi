@@ -295,6 +295,14 @@ $$
   hint="The LCD is $x + 3$. Multiply the numerator and denominator by $x + 3$; the denominator becomes $(x + 3) + 1 = x + 4$."
 >}}
 
+## Key terms
+
+**complex fraction** — a fraction in which the numerator, the denominator, or
+both contain a fraction. **complex rational expression** — a rational
+expression in which the numerator or denominator contains a rational
+expression; a complex rational expression represents the division of its top by
+its bottom.
+
 ## Practice
 
 ### Simplify a complex rational expression by writing it as division
@@ -340,14 +348,6 @@ $$
   answerDisplay="$\tfrac{2x - 10}{3x + 16}$"
   hint="Factor $x^2-25=(x+5)(x-5)$, so the LCD is $(x+5)(x-5)$. Multiply the numerator and denominator by it and simplify."
 >}}
-
-## Key terms
-
-**complex fraction** — a fraction in which the numerator, the denominator, or
-both contain a fraction. **complex rational expression** — a rational
-expression in which the numerator or denominator contains a rational
-expression; a complex rational expression represents the division of its top by
-its bottom.
 
 ---
 

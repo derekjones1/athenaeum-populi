@@ -144,6 +144,7 @@ Add: $\sqrt{-12} + \sqrt{-27}.$
 {{< fillin
   question="Add: $\sqrt{-8} + \sqrt{-32}$"
   answer="6 \sqrt{2} i"
+  answerForm="simplified-radical"
   answerDisplay="$6 \sqrt{2} i$"
   hint="Combine the real parts together and the coefficients of $i$ together."
 >}}
@@ -151,6 +152,7 @@ Add: $\sqrt{-12} + \sqrt{-27}.$
 {{< fillin
   question="Add: $\sqrt{-27} + \sqrt{-48}$"
   answer="7 \sqrt{3} i"
+  answerForm="simplified-radical"
   answerDisplay="$7 \sqrt{3} i$"
   hint="Combine the real parts together and the coefficients of $i$ together."
 >}}
@@ -592,6 +594,146 @@ Simplify: $i^{86}.$
   hint="Powers of $i$ repeat every four; reduce the exponent modulo $4$."
 >}}
 
+## Practice
+
+### Evaluate the Square Root of a Negative Number
+
+{{< fillin
+  question="Write the expression in terms of $i$ and simplify if possible: $\sqrt{-16}$"
+  answer="4 i"
+  answerForm="simplified-radical"
+  answerDisplay="$4 i$"
+  hint="Rewrite the negative square root as $i$ times the square root of its absolute value, then simplify."
+>}}
+
+{{< fillin
+  question="Write the expression in terms of $i$ and simplify if possible: $\sqrt{-11}$"
+  answer="\sqrt{11} i"
+  answerForm="simplified-radical"
+  answerDisplay="$\sqrt{11} i$"
+  hint="Rewrite the negative square root as $i$ times the square root of its absolute value; $11$ has no perfect-square factor to pull out."
+>}}
+
+{{< fillin
+  question="Write the expression in terms of $i$ and simplify if possible: $\sqrt{-8}$"
+  answer="2 \sqrt{2} i"
+  answerForm="simplified-radical"
+  answerDisplay="$2 \sqrt{2} i$"
+  hint="Rewrite the negative square root as $i$ times the square root of its absolute value, then factor out the perfect square."
+>}}
+
+### Add and Subtract Complex Numbers
+
+{{< fillin
+  question="Add: $\left(8 - i\right) + \left(6 + 3 i\right)$"
+  answer="14 + 2 i"
+  answerForm="no-like-terms"
+  answerDisplay="$14 + 2 i$"
+  hint="Group the real parts and the imaginary parts, then combine each pair."
+>}}
+
+{{< fillin
+  question="Subtract: $\left(1 - 4 i\right) - \left(3 - 6 i\right)$"
+  answer="-2 + 2 i"
+  answerForm="no-like-terms"
+  answerDisplay="$-2 + 2 i$"
+  hint="Distribute the subtraction sign across the second complex number before combining like parts."
+>}}
+
+{{< fillin
+  question="Subtract: $\left(6 + i\right) - \left(-2 - 4 i\right)$"
+  answer="8 + 5 i"
+  answerForm="no-like-terms"
+  answerDisplay="$8 + 5 i$"
+  hint="Distribute the subtraction sign across the second complex number before combining like parts."
+>}}
+
+### Multiply Complex Numbers
+
+{{< fillin
+  question="Multiply: $-6 i \left(-3 - 2 i\right)$"
+  answer="-12 + 18 i"
+  answerForm="expanded"
+  answerDisplay="$-12 + 18 i$"
+  hint="Distribute $-6i$ across the binomial and replace $i^2$ with $-1$."
+>}}
+
+{{< fillin
+  question="Multiply using the Binomial Squares Pattern: $\left(3 + 4 i\right)^{2}$"
+  answer="-7 + 24 i"
+  answerForm="expanded"
+  answerDisplay="$-7 + 24 i$"
+  hint="Expand with $(a+bi)^2=a^2+2abi+b^2i^2$, then replace $i^2$ with $-1$."
+>}}
+
+{{< fillin
+  question="Multiply: $\left(-2 - \sqrt{-27}\right) \left(4 - \sqrt{-48}\right)$"
+  answer="-44 - 4 \sqrt{3} i"
+  answerForm="expanded"
+  answerDisplay="$-44 - 4 \sqrt{3} i$"
+  hint="Rewrite each negative square root as $i$ times a real radical first, then FOIL and replace $i^2$ with $-1$."
+>}}
+
+{{< fillin
+  question="Multiply using the Product of Complex Conjugates Pattern: $\left(7 - i\right) \left(7 + i\right)$"
+  answer="50"
+  answerForm="decimal"
+  answerDisplay="$50$"
+  hint="Use $\left(a - b i\right) \left(a + b i\right) = a^{2} + b^{2}$."
+>}}
+
+### Divide Complex Numbers
+
+{{< fillin
+  question="Divide, writing the answer in standard form: $\tfrac{2 + i}{3 - 4 i}$"
+  answer="\tfrac{2}{25} + \tfrac{11}{25} i"
+  answerForm="expanded"
+  answerDisplay="$\tfrac{2}{25} + \tfrac{11}{25} i$"
+  hint="Multiply numerator and denominator by the complex conjugate of the denominator, then write the result as $a+bi$."
+>}}
+
+{{< fillin
+  question="Divide: $\tfrac{1 + 4 i}{3 i}$"
+  answer="\tfrac{4}{3} - \tfrac{1}{3} i"
+  answerForm="expanded"
+  answerDisplay="$\tfrac{4}{3} - \tfrac{1}{3} i$"
+  hint="Write the denominator in standard form as $0+3i$, multiply by its conjugate $-3i$, then simplify to $a+bi$."
+>}}
+
+{{< fillin
+  question="Divide: $\tfrac{-4}{3 - 2 i}$"
+  answer="-\tfrac{12}{13} - \tfrac{8}{13} i"
+  answerForm="expanded"
+  answerDisplay="$-\tfrac{12}{13} - \tfrac{8}{13} i$"
+  hint="Multiply numerator and denominator by the complex conjugate of the denominator, then write the result as $a+bi$."
+>}}
+
+### Simplify Powers of $i$
+
+{{< fillin
+  question="Simplify: $i^{41}$"
+  answer="i"
+  answerForm="expanded"
+  answerDisplay="$i$"
+  hint="Divide the exponent by $4$; a remainder of $1$ means the power equals $i$."
+>}}
+
+{{< fillin
+  question="Simplify: $i^{66}$"
+  answer="-1"
+  answerForm="decimal"
+  answerDisplay="$-1$"
+  hint="Divide the exponent by $4$; a remainder of $2$ means the power equals $-1$."
+>}}
+
+{{< fillin
+  question="Simplify: $i^{128}$"
+  answer="1"
+  answerForm="decimal"
+  answerDisplay="$1$"
+  hint="Divide the exponent by $4$; a remainder of $0$ means the power equals $1$."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 8.8: Use the Complex Number System](https://openstax.org/books/intermediate-algebra-2e/pages/8-8-use-the-complex-number-system) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, self-check reflection, and end-of-section exercise bank; and converted the source Try It practice into interactive exercises.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 8.8: Use the Complex Number System](https://openstax.org/books/intermediate-algebra-2e/pages/8-8-use-the-complex-number-system) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; and adapted selected end-of-section exercises into an interactive Practice block.</small>

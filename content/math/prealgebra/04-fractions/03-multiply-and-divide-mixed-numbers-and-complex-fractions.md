@@ -347,6 +347,14 @@ $$\frac{4(-3)+6(-2)}{-3(2)-2} = 3$$
   hint="Multiply out the numerator and the denominator separately before dividing."
 >}}
 
+## Key terms
+
+**complex fraction** — a fraction in which the numerator, the
+denominator, or both, contain a fraction. **fraction bar as grouping
+symbol** — the numerator and denominator of a fraction are each treated
+as if enclosed in parentheses, so each is simplified fully before
+dividing.
+
 ## Practice
 
 ### Multiply and divide mixed numbers
@@ -513,14 +521,6 @@ $\tfrac{-13}{-6}$ and $\tfrac{-13}{6}$
   answerDisplay="$\tfrac{51}{20}$"
   hint="In the numerator, simplify inside the parentheses first, then multiply, then subtract. Simplify the denominator the same way before dividing."
 >}}
-
-## Key terms
-
-**complex fraction** — a fraction in which the numerator, the
-denominator, or both, contain a fraction. **fraction bar as grouping
-symbol** — the numerator and denominator of a fraction are each treated
-as if enclosed in parentheses, so each is simplified fully before
-dividing.
 
 ---
 

@@ -699,6 +699,17 @@ Check it yourself by substituting $x=9$ into the original equation.
   hint="Distribute, combine like terms, and multiply by 100."
 >}}
 
+## Key terms
+
+A **solution of an equation** is a value of a variable that
+makes a true statement when substituted into the equation. A **linear
+equation** is an equation in one variable that can be written as $ax+b=0$,
+where $a$ and $b$ are real numbers and $a\ne0$. A **conditional equation** is
+true for one or more values of the variable and false for all other values;
+an **identity** is true for any value of the variable; and a **contradiction**
+is false for all values of the variable. **Clearing** an equation of fractions
+or decimals means multiplying both sides by their least common denominator.
+
 ## Practice
 
 ### Solve linear equations using a general strategy
@@ -796,14 +807,5 @@ contradiction
   answerDisplay="$x=18$"
   hint="Collect the variable terms to one side and the constant terms to the other, then divide."
 >}}
-
-**Key terms.** A **solution of an equation** is a value of a variable that
-makes a true statement when substituted into the equation. A **linear
-equation** is an equation in one variable that can be written as $ax+b=0$,
-where $a$ and $b$ are real numbers and $a\ne0$. A **conditional equation** is
-true for one or more values of the variable and false for all other values;
-an **identity** is true for any value of the variable; and a **contradiction**
-is false for all values of the variable. **Clearing** an equation of fractions
-or decimals means multiplying both sides by their least common denominator.
 
 <small>Adapted from [Intermediate Algebra 2e, Section 2.1](https://openstax.org/books/intermediate-algebra-2e/pages/2-1-use-a-general-strategy-to-solve-linear-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/details/books/intermediate-algebra-2e). Changes: adapted the source section into an interactive web format, converted Try It exercises to immediate-feedback checks, and adapted selected end-of-section exercises into an interactive Practice block.</small>

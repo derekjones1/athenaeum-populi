@@ -518,6 +518,16 @@ sides of the deck are $8$, $15$, and $17$ feet.
   hint="Let $x$ be the shorter side. Then $x^2 + (x + 7)^2 = 13^2$; simplify to $2x^2 + 14x - 120 = 0$ and factor. Keep the positive solution, then add 7."
 >}}
 
+## Key terms
+
+**quadratic equation** — an equation of the form $ax^2 + bx + c = 0$ with
+$a \neq 0$; the variable is squared. **Zero Product Property** — if
+$a \cdot b = 0$, then $a = 0$ or $b = 0$ (or both), the key fact that lets us
+solve a factored equation set equal to zero. **double root** — a solution
+that repeats because the same factor appears twice, as in $(y - 8)^2 = 0$.
+**Pythagorean Theorem** — for a right triangle with legs $a$ and $b$ and
+hypotenuse $c$, $a^2 + b^2 = c^2$.
+
 ## Practice
 
 ### Solve quadratic equations by using the Zero Product Property
@@ -583,16 +593,6 @@ sides of the deck are $8$, $15$, and $17$ feet.
   answer="6,8"
   hint="Let $x$ be the shorter side, so $x + 2$ is the longer side. Use the Pythagorean Theorem: $x^2 + (x + 2)^2 = 10^2$, then factor. Keep the positive solution."
 >}}
-
-## Key terms
-
-**quadratic equation** — an equation of the form $ax^2 + bx + c = 0$ with
-$a \neq 0$; the variable is squared. **Zero Product Property** — if
-$a \cdot b = 0$, then $a = 0$ or $b = 0$ (or both), the key fact that lets us
-solve a factored equation set equal to zero. **double root** — a solution
-that repeats because the same factor appears twice, as in $(y - 8)^2 = 0$.
-**Pythagorean Theorem** — for a right triangle with legs $a$ and $b$ and
-hypotenuse $c$, $a^2 + b^2 = c^2$.
 
 ---
 

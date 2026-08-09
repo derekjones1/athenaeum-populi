@@ -387,6 +387,15 @@ $67.5$ miles per hour.
   hint="Substitute $d = 76$ and evaluate $\sqrt{24 \cdot 76} = \sqrt{1824}$, then round to one decimal place."
 >}}
 
+## Key terms
+
+**radical equation** — an equation in which the variable is in the radicand of
+a square root. **principal square root** — the nonnegative square root of a
+number; $\sqrt{a} \ge 0$ always. **extraneous solution** — an algebraic
+solution obtained by squaring that does not satisfy the original radical
+equation (it would make a principal square root negative); it must be
+discarded, which is why every solution of a radical equation must be checked.
+
 ## Practice
 
 ### Solve radical equations
@@ -445,15 +454,6 @@ $m = 8$
   answerForm="decimal"
   hint="Substitute $d = 117$ and evaluate $\sqrt{24 \cdot 117} = \sqrt{2{,}808}$, then round to one decimal place."
 >}}
-
-## Key terms
-
-**radical equation** — an equation in which the variable is in the radicand of
-a square root. **principal square root** — the nonnegative square root of a
-number; $\sqrt{a} \ge 0$ always. **extraneous solution** — an algebraic
-solution obtained by squaring that does not satisfy the original radical
-equation (it would make a principal square root negative); it must be
-discarded, which is why every solution of a radical equation must be checked.
 
 ---
 

@@ -481,6 +481,12 @@ Check on your own by multiplying the factors.
   hint="The leading coefficient is negative, so pull a negative variable factor out as the GCF. Remember $x$ = $x$ times $1$."
 >}}
 
+## Key terms
+
+**factoring** — splitting a product into the factors whose product it is;
+the reverse of multiplying. **greatest common factor (GCF)** — of two or
+more expressions, the largest expression that is a factor of all of them.
+
 ## Practice
 
 ### Find the greatest common factor of two or more expressions
@@ -583,12 +589,6 @@ Check on your own by multiplying the factors.
   answerDisplay="$-4(4t^2-20t-1)$"
   hint="The leading coefficient is negative, so the GCF is negative. Ignoring signs, find the greatest common factor of $16$, $80$, and $4$; no power of $t$ divides the constant term."
 >}}
-
-## Key terms
-
-**factoring** — splitting a product into the factors whose product it is;
-the reverse of multiplying. **greatest common factor (GCF)** — of two or
-more expressions, the largest expression that is a factor of all of them.
 
 ---
 

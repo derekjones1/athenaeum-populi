@@ -466,6 +466,15 @@ yards.
   hint="Translate 'eight times a \$2 fee' to an expression and simplify."
 >}}
 
+## Key terms
+
+**opposite** — the number that is the same distance from zero on the number
+line but on the opposite side of zero. **integer** — a number in the set
+$\{\dots, -3, -2, -1, 0, 1, 2, 3, \dots\}$. **order of operations** — the
+sequence in which operations should be simplified: parentheses first, then
+exponents, then multiplication and division left to right, then addition
+and subtraction left to right (Please Excuse My Dear Aunt Sally).
+
 ## Practice
 
 ### Multiply integers
@@ -588,15 +597,6 @@ yards.
   answer="187"
   hint="Add the deposit to the starting balance."
 >}}
-
-## Key terms
-
-**opposite** — the number that is the same distance from zero on the number
-line but on the opposite side of zero. **integer** — a number in the set
-$\{\dots, -3, -2, -1, 0, 1, 2, 3, \dots\}$. **order of operations** — the
-sequence in which operations should be simplified: parentheses first, then
-exponents, then multiplication and division left to right, then addition
-and subtraction left to right (Please Excuse My Dear Aunt Sally).
 
 ---
 

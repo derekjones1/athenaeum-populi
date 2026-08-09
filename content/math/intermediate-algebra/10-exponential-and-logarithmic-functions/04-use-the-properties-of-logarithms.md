@@ -440,7 +440,55 @@ When we use a calculator to find the logarithm value, we usually round to three 
 **Media.** Access these online resources for additional instruction and practice with using the properties of logarithms.
 {{< /callout >}}
 
+## Practice
+
+### Use the properties of logarithms
+
+{{< fillin
+  question="Expand $\log\left(\tfrac{10{,}000}{y}\right)$ using the Quotient Property of Logarithms. Simplify if possible."
+  answer="4-\log y"
+  answerDisplay="$4-\log y$"
+  answerForm="expanded"
+  hint="Write the quotient as a difference of logarithms, then evaluate $\log 10{,}000$."
+>}}
+
+{{< fillin
+  question="Expand $\log_5\left(\tfrac{4ab^3c^4}{d^2}\right)$ using the properties of logarithms."
+  answer="\log_5 4+\log_5 a+3\log_5 b+4\log_5 c-2\log_5 d"
+  answerDisplay="$\log_5 4+\log_5a+3\log_5b+4\log_5c-2\log_5d$"
+  answerForm="expanded"
+  hint="Split the quotient and the product into separate logarithms, then move each exponent in front of its logarithm."
+>}}
+
+{{< multiplechoice
+  question="Condense $2\log(2x+3)+\tfrac12\log(x+1)$ to a single logarithm. Simplify if possible."
+  answer="$\log\left((2x+3)^2\sqrt{x+1}\right)$"
+  hint="Use the Power Property to clear the coefficients, then the Product Property to combine the sum into one logarithm."
+>}}
+$\log\left((2x+3)^2\sqrt{x+1}\right)$
+$2\log(2x+3)+\tfrac12\log(x+1)$
+$\log\left((2x+3)^2(x+1)^2\right)$
+$\log\left((2x+3)^2+\sqrt{x+1}\right)$
+{{< /multiplechoice >}}
+
+### Use the Change of Base Formula
+
+{{< fillin
+  question="Use the Change-of-Base Formula to approximate $\log_{15}93$, rounding to three decimal places."
+  answer="1.674"
+  answerDisplay="$1.674$"
+  answerForm="decimal"
+  hint="Compute $\tfrac{\log 93}{\log 15}$ on a calculator and round only the final quotient."
+>}}
+
+{{< fillin
+  question="Use the Change-of-Base Formula to approximate $\log_{\sqrt{3}}21$, rounding to three decimal places."
+  answer="5.542"
+  answerDisplay="$5.542$"
+  answerForm="decimal"
+  hint="Compute $\tfrac{\log 21}{\log \sqrt{3}}$ on a calculator and round only the final quotient."
+>}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 10.4: Use the Properties of Logarithms](https://openstax.org/books/intermediate-algebra-2e/pages/10-4-use-the-properties-of-logarithms) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions for the web; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 10.4: Use the Properties of Logarithms](https://openstax.org/books/intermediate-algebra-2e/pages/10-4-use-the-properties-of-logarithms) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions for the web; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

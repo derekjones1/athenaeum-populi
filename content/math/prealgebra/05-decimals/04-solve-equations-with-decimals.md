@@ -265,6 +265,14 @@ Simplify: $1.7 = 1.7\ \checkmark$.
   hint="Translate to $k + 4.7 = 0.3$, then subtract $4.7$ from each side."
 >}}
 
+## Key terms
+
+**solution of an equation** — a value that, when substituted for the
+variable, makes the equation a true statement. **Properties of Equality** —
+the Subtraction, Addition, Division, and Multiplication properties: applying
+the same operation to both sides of a true equation keeps it true, which
+lets us isolate a variable and solve for it.
+
 ## Practice
 
 ### Determine whether a decimal is a solution of an equation
@@ -397,14 +405,6 @@ no
   answerDisplay="$n + (-7.3) = 2.4$, so $n = 9.7$"
   hint="*Sum* means add, so the equation is $n + (-7.3) = 2.4$; adding $-7.3$ is the same as subtracting $7.3$, so undo it by adding $7.3$ to both sides."
 >}}
-
-## Key terms
-
-**solution of an equation** — a value that, when substituted for the
-variable, makes the equation a true statement. **Properties of Equality** —
-the Subtraction, Addition, Division, and Multiplication properties: applying
-the same operation to both sides of a true equation keeps it true, which
-lets us isolate a variable and solve for it.
 
 ---
 

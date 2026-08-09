@@ -522,7 +522,96 @@ We summarize the steps below.
   hint="After interchanging $x$ and $y$, raise both sides to the fourth power. Preserve the nonnegative range of the original function as the inverse's domain."
 >}}
 
+## Practice
+
+### Find and Evaluate Composite Functions
+
+{{< fillin
+  question="For $f(x)=4x+3$ and $g(x)=2x+5$, find $(f\circ g)(x)$."
+  answer="8x+23"
+  answerForm="distributed no-like-terms"
+  hint="Substitute $g(x)$ into $f$, distribute, and combine the constant terms."
+>}}
+
+{{< fillin
+  question="For $f(x)=4x+3$ and $g(x)=2x+5$, find $(g\circ f)(x)$."
+  answer="8x+11"
+  answerForm="distributed no-like-terms"
+  hint="Substitute $f(x)$ into $g$, distribute, and combine the constant terms."
+>}}
+
+{{< fillin
+  question="For $f(x)=4x+3$ and $g(x)=2x+5$, find $(f\cdot g)(x)$."
+  answer="8x^2+26x+15"
+  answerForm="expanded"
+  hint="Multiply $f(x)$ and $g(x)$ and combine like terms."
+>}}
+
+{{< fillin
+  question="For $f(x)=2x^2+3$ and $g(x)=5x-1$, find $(f\circ g)(-2)$."
+  answer="245"
+  hint="Evaluate $g(-2)$ first, then substitute that result into $f$."
+>}}
+
+{{< fillin
+  question="For $f(x)=2x^2+3$ and $g(x)=5x-1$, find $(g\circ f)(-3)$."
+  answer="104"
+  hint="Evaluate $f(-3)$ first, then substitute that result into $g$."
+>}}
+
+{{< fillin
+  question="For $f(x)=2x^2+3$ and $g(x)=5x-1$, find $(f\circ f)(-1)$."
+  answer="53"
+  hint="Evaluate $f(-1)$ first, then substitute that result back into $f$."
+>}}
+
+### Determine Whether a Function is One-to-One
+
+{{< multiplechoice
+  question="Classify the relation $\{(-3,9),(-2,4),(-1,1),(0,0),(1,1),(2,4),(3,9)\}$."
+  answer="function, but not one-to-one"
+  hint="Every x-value has a single y-value, but check whether any y-value repeats."
+>}}
+function, but not one-to-one
+one-to-one function
+not a function
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Classify the relation $\{(-3,-5),(-2,-3),(-1,-1),(0,1),(1,3),(2,5),(3,7)\}$."
+  answer="one-to-one function"
+  hint="Check that each x-value has its own y-value, then check that no y-value repeats."
+>}}
+one-to-one function
+function, but not one-to-one
+not a function
+{{< /multiplechoice >}}
+
+### Find the Inverse of a Function
+
+{{< fillin
+  question="Find the inverse of $\{(0,-2),(1,3),(2,7),(3,12)\}$. Enter the inverse as a set of ordered pairs; the feedback also shows its domain and range."
+  answer="\{(-2,0),(3,1),(7,2),(12,3)\}"
+  answerDisplay="inverse: $\{(-2,0),(3,1),(7,2),(12,3)\}$; domain: $\{-2,3,7,12\}$; range: $\{0,1,2,3\}$"
+  hint="Interchange the coordinates in every ordered pair."
+  placeholder="set of ordered pairs"
+>}}
+
+{{< fillin
+  question="For $f(x)=7x+3$ and $g(x)=\tfrac{x-3}{7}$, find $\left(g(f(x)),f(g(x))\right)$."
+  answer="(x,x)"
+  answerDisplay="$\left(x,x\right)$, so the functions are inverses"
+  hint="Substitute $f(x)$ into $g$ and $g(x)$ into $f$; both compositions should simplify to $x$."
+  placeholder="ordered pair"
+>}}
+
+{{< fillin
+  question="Find the inverse of $f(x)=\sqrt[3]{x-3}$."
+  answer="x^3+3"
+  answerDisplay="$f^{-1}(x)=x^3+3$"
+  hint="Interchange $x$ and $y$, then cube both sides to undo the cube root."
+>}}
 
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 10.1: Finding Composite and Inverse Functions](https://openstax.org/books/intermediate-algebra-2e/pages/10-1-finding-composite-and-inverse-functions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions for the web; omitted the Be Prepared quiz, media links, and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 10.1: Finding Composite and Inverse Functions](https://openstax.org/books/intermediate-algebra-2e/pages/10-1-finding-composite-and-inverse-functions) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted the worked solutions for the web; omitted the Be Prepared quiz and media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into an interactive Practice block.</small>

@@ -1234,6 +1234,14 @@ range, in interval notation, is $[-1,1]$.
   hint="At $x=0$, read the $y$-coordinate."
 >}}
 
+## Key terms
+
+The **vertical line test** determines whether a graph represents
+a function; the **graph of a function** is the graph of all its ordered pairs
+$(x,f(x))$; the basic functions in this section are the **linear function**,
+**constant function**, **identity function**, **square function**, **cube
+function**, **square root function**, and **absolute value function**.
+
 ## Practice
 
 ### Use the vertical line test
@@ -1347,11 +1355,5 @@ no
   answerDisplay="$[4,\infty)$"
   hint="The vertex is the lowest point the graph reaches."
 >}}
-
-**Key terms.** The **vertical line test** determines whether a graph represents
-a function; the **graph of a function** is the graph of all its ordered pairs
-$(x,f(x))$; the basic functions in this section are the **linear function**,
-**constant function**, **identity function**, **square function**, **cube
-function**, **square root function**, and **absolute value function**.
 
 <small>Adapted from [*Intermediate Algebra 2e*, Section 3.6](https://openstax.org/books/intermediate-algebra-2e/pages/3-6-graphs-of-functions), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/books/intermediate-algebra-2e/pages/3-6-graphs-of-functions). Changes: converted Try It exercises to interactive checks, recreated graphs for accessible web presentation, and adapted selected end-of-section exercises into an interactive practice block.</small>

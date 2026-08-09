@@ -350,9 +350,9 @@ $$
 \end{array}
 $$
 
-{{< fillin question="Find the sum $\sum_{i=1}^{15}6(2)^i$." answer="393204" answerDisplay="$393{,}204$" hint="Write the first term, identify the common ratio, and use the finite geometric sum formula." >}}
+{{< fillin question="Find the sum $\sum_{i=1}^{15}6(2)^i$." answer="393204" answerForm="decimal" answerDisplay="$393{,}204$" hint="Write the first term, identify the common ratio, and use the finite geometric sum formula." >}}
 
-{{< fillin question="Find the sum $\sum_{i=1}^{10}5(2)^i$." answer="10230" answerDisplay="$10{,}230$" hint="Write the first term, identify the common ratio, and use the finite geometric sum formula." >}}
+{{< fillin question="Find the sum $\sum_{i=1}^{10}5(2)^i$." answer="10230" answerForm="decimal" answerDisplay="$10{,}230$" hint="Write the first term, identify the common ratio, and use the finite geometric sum formula." >}}
 
 ## Find the sum of an infinite geometric series
 
@@ -642,13 +642,75 @@ The child will have \$34,920.20 when she turns 18.
 
 {{< fillin question="Arturo begins investing \$200 per month in an IRA at age 27. The annuity earns 8% interest compounded monthly. How much will be in Arturo's account when he retires at age 67? Round to the nearest cent." answer="698201.57" answerDisplay="$\text{\textdollar}698{,}201.57$" hint="Use the annuity formula with $P=200$, $r=0.08$, $n=12$, and $t=40$." >}}
 
-**Key terms.** A **geometric sequence** has the same ratio between consecutive
+## Key terms
+
+A **geometric sequence** has the same ratio between consecutive
 terms; this ratio is the **common ratio**. A **geometric series** is the sum of
 the terms of a geometric sequence. An **infinite geometric series** is an
 infinite sum whose terms form a geometric sequence. A convergent infinite
 geometric series has a finite sum; a divergent one does not. An **annuity** is
 an investment that is a sequence of equal periodic deposits.
 
+## Practice
+
+### Determine if a sequence is geometric
+
+{{< multiplechoice question="Determine whether the sequence $3,12,48,192,768,3{,}072,\ldots$ is geometric." answer="geometric" hint="Divide each term by the term before it and see whether the ratio stays the same." >}}
+geometric
+not geometric
+{{< /multiplechoice >}}
+
+{{< fillin question="The sequence $3,12,48,192,768,3{,}072,\ldots$ is geometric. Find its common ratio $r$." answer="4" hint="Divide any term by the term immediately before it." >}}
+
+{{< multiplechoice question="Determine whether the sequence $-7,-2,3,8,13,18,\ldots$ is arithmetic, geometric, or neither." answer="arithmetic" hint="Check whether consecutive terms share a common difference or a common ratio." >}}
+arithmetic
+geometric
+neither
+{{< /multiplechoice >}}
+
+{{< fillin question="The sequence $-7,-2,3,8,13,18,\ldots$ is arithmetic. Find its common difference $d$." answer="5" hint="Subtract any term from the term that follows it." >}}
+
+### Find the general term (nth term) of a geometric sequence
+
+{{< fillin question="Find $a_{11}$ given $a_1=8$ and $r=3$." answer="472392" answerDisplay="$a_{11}=472{,}392$" hint="Use $a_n=a_1r^{n-1}$ with $n=11$." >}}
+
+{{< fillin question="Find $a_{10}$ given $a_1=100{,}000$ and $r=0.1$." answer="0.0001" answerDisplay="$a_{10}=0.0001$" hint="Use $a_n=a_1r^{n-1}$ with $n=10$." >}}
+
+{{< fillin question="Find the ninth term of the sequence $9,18,36,72,144,288,\ldots$." answer="2304" answerDisplay="$a_9=2{,}304$" hint="First find the common ratio, then use $a_n=a_1r^{n-1}$." >}}
+
+{{< fillin question="Find the general term of the sequence $9,18,36,72,144,288,\ldots$." answer="9\cdot2^{n-1}" answerDisplay="$a_n=9(2)^{n-1}$" hint="Use the first term and common ratio in $a_n=a_1r^{n-1}$." >}}
+
+### Find the sum of the first $n$ terms of a geometric sequence
+
+{{< fillin question="Find the sum of the first fifteen terms of the geometric sequence $8,24,72,216,648,1{,}944,\ldots$." answer="57395624" answerDisplay="$57{,}395{,}624$" hint="Use $S_n=\tfrac{a_1(1-r^n)}{1-r}$ with $a_1=8$, $r=3$, and $n=15$." >}}
+
+{{< fillin question="Find the sum of the first fifteen terms of the geometric sequence $-6,12,-24,48,-96,192,\ldots$." answer="-65538" answerDisplay="$-65{,}538$" hint="Use $S_n=\tfrac{a_1(1-r^n)}{1-r}$ with $a_1=-6$, $r=-2$, and $n=15$." >}}
+
+{{< fillin question="Find the sum $\sum_{i=1}^{15}(2)^i$." answer="65534" answerForm="decimal" answerDisplay="$65{,}534$" hint="Write out the first few terms to identify $a_1$ and $r$, then use the finite geometric sum formula." >}}
+
+### Find the sum of an infinite geometric series
+
+{{< fillin question="Find the sum of the infinite geometric series $1+\tfrac13+\tfrac19+\tfrac1{27}+\tfrac1{81}+\tfrac1{243}+\tfrac1{729}+\cdots$. Give the exact answer as a fraction." answer="\frac{3}{2}" answerDisplay="$\tfrac32$" hint="Verify that $|r|<1$, then use $S=\tfrac{a_1}{1-r}$." >}}
+
+{{< multiplechoice question="Does the infinite geometric series $6+12+24+48+96+192+\cdots$ have a sum?" answer="no, because $|r|\ge1$" hint="Identify the common ratio and compare $|r|$ with $1$." >}}
+yes, because $|r|<1$
+no, because $|r|\ge1$
+{{< /multiplechoice >}}
+
+{{< fillin question="Write the repeating decimal $0.\overline3$ as a fraction." answer="\frac{1}{3}" answerDisplay="$\tfrac13$" hint="Write the decimal as an infinite geometric series and use its sum formula." >}}
+
+### Apply geometric sequences and series in the real world
+
+{{< fillin question="What is the total effect on the economy of a \$1,000 tax rebate to each household if each household spends 85% of the rebate on goods and services? Round to the nearest cent." answer="6666.67" answerDisplay="$\text{\textdollar}6{,}666.67$" hint="Model the repeated spending as an infinite geometric series with $a_1=1{,}000$ and $r=0.85$." >}}
+
+{{< fillin question="What is the total effect on the economy of a \$1,000 tax rebate to each household if each household spends 75% of the rebate on goods and services?" answer="4000" answerDisplay="$\text{\textdollar}4{,}000$" hint="Model the repeated spending as an infinite geometric series with $a_1=1{,}000$ and $r=0.75$." >}}
+
+{{< fillin question="What is the total effect on the economy of a \$1,500 tax rebate to each household if each household spends 90% of the rebate on goods and services?" answer="15000" answerDisplay="$\text{\textdollar}15{,}000$" hint="Model the repeated spending as an infinite geometric series with $a_1=1{,}500$ and $r=0.9$." >}}
+
+{{< fillin question="What is the total effect on the economy of a \$1,500 tax rebate to each household if each household spends 80% of the rebate on goods and services?" answer="7500" answerDisplay="$\text{\textdollar}7{,}500$" hint="Model the repeated spending as an infinite geometric series with $a_1=1{,}500$ and $r=0.8$." >}}
+
+{{< fillin question="Berenice starts investing \$500 per quarter in an IRA at age 30. The annuity earns 7% interest per year compounded quarterly. How much will be in Berenice's account when she retires at age 65? Round to the nearest cent." answer="295581.88" answerDisplay="$\text{\textdollar}295{,}581.88$" hint="Use the annuity formula with $P=500$, $r=0.07$, $n=4$, and $t=35$." >}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 12.3](https://openstax.org/books/intermediate-algebra-2e/pages/12-3-geometric-sequences-and-series) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: converted the source Try It exercises into interactive questions; omitted the readiness quiz, section exercise set, self-check, and media links in accordance with the authoring playbook; and corrected the opening ratio-3 sequence from $4,12,36,108,432,1728$ to $4,12,36,108,324,972$.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 12.3](https://openstax.org/books/intermediate-algebra-2e/pages/12-3-geometric-sequences-and-series) by Lynn Marecek and Andrea Honeycutt Mathis, &copy; OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: converted the source Try It exercises into interactive questions; omitted the readiness quiz, self-check, and media links in accordance with the authoring playbook; adapted selected end-of-section exercises into an interactive Practice block; and corrected the opening ratio-3 sequence from $4,12,36,108,432,1728$ to $4,12,36,108,324,972$.</small>

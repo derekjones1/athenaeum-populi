@@ -2923,12 +2923,167 @@ value of the quadratic is 488 feet and it occurs when $t=5.5$ seconds. After
   hint="The time coordinate of the vertex is $t=-\tfrac{b}{2a}$."
 >}}
 
-**Key terms.** A **quadratic function** is a function of the form
+## Key terms
+
+A **quadratic function** is a function of the form
 $f(x)=ax^2+bx+c$, where $a\ne0$. Its graph is a **parabola**. The vertical
 line through the vertex is the **axis of symmetry**. The **vertex** is the
 lowest point of a parabola that opens upward or the highest point of a
 parabola that opens downward.
 
+## Practice
+
+### Recognize the Graph of a Quadratic Function
+
+{{< multiplechoice
+  question="Determine whether the graph of $f(x)=-2x^2-6x-7$ is a parabola that opens upward or downward."
+  answer="downward"
+  hint="Look at the sign of the coefficient of $x^2$."
+>}}
+upward
+downward
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether the graph of $f(x)=6x^2+2x+3$ is a parabola that opens upward or downward."
+  answer="upward"
+  hint="Look at the sign of the coefficient of $x^2$."
+>}}
+upward
+downward
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether the graph of $f(x)=-3x^2+5x-1$ is a parabola that opens upward or downward."
+  answer="downward"
+  hint="Look at the sign of the coefficient of $x^2$."
+>}}
+upward
+downward
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Determine whether the graph of $f(x)=2x^2-4x+5$ is a parabola that opens upward or downward."
+  answer="upward"
+  hint="Look at the sign of the coefficient of $x^2$."
+>}}
+upward
+downward
+{{< /multiplechoice >}}
+
+### Find the Axis of Symmetry and Vertex of a Parabola
+
+{{< fillin
+  question="For the graph of $f(x)=x^2+8x-1$, find the axis of symmetry."
+  answer="x=-4"
+  answerDisplay="$x=-4$"
+  hint="Use $x=-\tfrac{b}{2a}$."
+>}}
+
+{{< fillin
+  question="For the graph of $f(x)=x^2+8x-1$, find the vertex as an ordered pair."
+  answer="(-4,-17)"
+  answerDisplay="$(-4,-17)$"
+  hint="Substitute the axis-of-symmetry value into the function."
+>}}
+
+{{< fillin
+  question="For the graph of $f(x)=-x^2+2x+5$, find the axis of symmetry."
+  answer="x=1"
+  answerDisplay="$x=1$"
+  hint="Use $x=-\tfrac{b}{2a}$."
+>}}
+
+{{< fillin
+  question="For the graph of $f(x)=-x^2+2x+5$, find the vertex as an ordered pair."
+  answer="(1,6)"
+  answerDisplay="$(1,6)$"
+  hint="Substitute the axis-of-symmetry value into the function."
+>}}
+
+### Find the Intercepts of a Parabola
+
+{{< fillin
+  question="Find the y-intercept of the parabola $f(x)=x^2+7x+6$."
+  answer="(0,6)"
+  answerDisplay="$(0,6)$"
+  hint="Set $x=0$ and evaluate the function."
+>}}
+
+{{< fillin
+  question="Find the x-intercepts of the parabola $f(x)=x^2+7x+6$. Enter the intercept with the smaller x-value first."
+  answer="(-6,0),(-1,0)"
+  answerDisplay="$(-6,0),\ (-1,0)$"
+  hint="Set $f(x)=0$ and factor."
+>}}
+
+{{< fillin
+  question="Find the y-intercept of the parabola $f(x)=-x^2+8x-19$."
+  answer="(0,-19)"
+  answerDisplay="$(0,-19)$"
+  hint="Set $x=0$ and evaluate the function."
+>}}
+
+{{< multiplechoice
+  question="How many x-intercepts does the parabola $f(x)=-x^2+8x-19$ have?"
+  answer="none"
+  hint="Evaluate the discriminant $b^2-4ac$."
+>}}
+two
+one
+none
+{{< /multiplechoice >}}
+
+### Graph Quadratic Functions Using Properties
+
+{{< graphplot
+  question="Graph $f(x)=x^2+6x+5$ by using its properties."
+  answerDisplay="$f(x)=x^2+6x+5$"
+  ariaLabel="A blank coordinate grid from −8 to 2 on the x-axis and −6 to 8 on the y-axis."
+  hint="Find the vertex and axis of symmetry first, then plot the intercepts."
+>}}
+{"answer":{"quadratic":{"a":1,"b":6,"c":5}},"grid":{"xMin":-8,"xMax":2,"yMin":-6,"yMax":8}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph $f(x)=-x^2+2x-7$ by using its properties."
+  answerDisplay="$f(x)=-x^2+2x-7$"
+  ariaLabel="A blank coordinate grid from −4 to 6 on the x-axis and −12 to 2 on the y-axis."
+  hint="This parabola opens downward and has no x-intercepts; plot the vertex and y-intercept."
+>}}
+{"answer":{"quadratic":{"a":-1,"b":2,"c":-7}},"grid":{"xMin":-4,"xMax":6,"yMin":-12,"yMax":2}}
+{{< /graphplot >}}
+
+### Solve Maximum and Minimum Applications
+
+{{< fillin
+  question="The quadratic function $h(t)=-16t^2+168t+45$ gives the height of an arrow shot upward from a platform 45 feet high at 168 ft/sec. How long will it take the arrow to reach its maximum height? Round to the nearest tenth."
+  answer="5.3"
+  answerDisplay="$5.3$ seconds"
+  hint="The time coordinate of the vertex is $t=-\tfrac{b}{2a}$."
+>}}
+
+{{< fillin
+  question="For $h(t)=-16t^2+168t+45$, what is the maximum height? Round to the nearest tenth."
+  answer="486"
+  answerDisplay="$486.0$ feet"
+  hint="Evaluate the height function at the time found for the vertex."
+>}}
+
+{{< fillin
+  question="A retailer selling pairs of boots for $x$ dollars each can sell $70-x$ pairs a week. The revenue function is $R(x)=-x^2+70x$. Find the selling price that gives the maximum weekly revenue."
+  answer="35"
+  answerDisplay="\$35"
+  hint="Maximize $R(x)=-x^2+70x$ by finding the x-coordinate of the vertex."
+>}}
+
+{{< fillin
+  question="For $R(x)=-x^2+70x$, what is the maximum weekly revenue?"
+  answer="1225"
+  answerDisplay="\$1,225"
+  hint="Evaluate $R(x)$ at the selling price that maximizes revenue."
+>}}
+
 <small>
-Adapted from [Intermediate Algebra 2e, Section 9.6](https://openstax.org/books/intermediate-algebra-2e/pages/9-6-graph-quadratic-functions-using-properties) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: omitted the readiness quiz, media links, exercise sets, self-check, and review apparatus; converted Try It exercises to interactive checks and recreated instructional graphs for the web.
+Adapted from [Intermediate Algebra 2e, Section 9.6](https://openstax.org/books/intermediate-algebra-2e/pages/9-6-graph-quadratic-functions-using-properties) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at OpenStax. Changes: omitted the readiness quiz, media links, self-check, and review apparatus; converted Try It exercises to interactive checks, recreated instructional graphs for the web, and adapted selected end-of-section exercises into an interactive Practice block.
 </small>

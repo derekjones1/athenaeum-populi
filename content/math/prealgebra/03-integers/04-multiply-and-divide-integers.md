@@ -313,6 +313,13 @@ Simplify: $8$.
   hint="'Quotient' means divide: $-63 \div (-9)$."
 >}}
 
+## Key terms
+
+**multiplication/division sign rule** — for both multiplying and
+dividing signed numbers: same signs give a positive result; different
+signs give a negative result. **multiplication and division by $-1$** —
+multiplying or dividing a number by $-1$ gives its opposite.
+
 ## Practice
 
 ### Multiply integers
@@ -452,13 +459,6 @@ Simplify: $8$.
   answerDisplay="$-10(p-q)$"
   hint="Keep the difference grouped in parentheses so the whole difference is multiplied by $-10$."
 >}}
-
-## Key terms
-
-**multiplication/division sign rule** — for both multiplying and
-dividing signed numbers: same signs give a positive result; different
-signs give a negative result. **multiplication and division by $-1$** —
-multiplying or dividing a number by $-1$ gives its opposite.
 
 ---
 

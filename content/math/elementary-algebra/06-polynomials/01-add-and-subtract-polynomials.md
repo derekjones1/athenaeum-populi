@@ -281,6 +281,7 @@ $$
 {{< fillin
   question="Subtract $(5z^2 - 6z - 2)$ from $(7z^2 + 6z - 4)$."
   answer="2z^2 + 12z - 2"
+  answerForm="no-like-terms"
   answerDisplay="$2z^2 + 12z - 2$"
   hint="Subtract $A$ from $B$ means $B - A$, so compute $(7z^2 + 6z - 4) - (5z^2 - 6z - 2)$."
 >}}
@@ -352,6 +353,17 @@ The cost of producing the box is $\text{\textdollar}456$.
   answerDisplay="\$576"
   hint="Substitute $x = 6$ and $y = 4$: $6(6)^2 + 15(6)(4) = 216 + 360$."
 >}}
+
+## Key terms
+
+**monomial** — a term of the form $ax^m$, where $a$ is a constant and $m$ is a
+positive whole number. **polynomial** — a monomial, or two or more monomials
+combined by addition or subtraction. **binomial** — a polynomial with exactly
+two terms. **trinomial** — a polynomial with exactly three terms. **coefficient**
+— the constant factor in a term. **degree of a term** — the sum of the
+exponents of its variables. **degree of a polynomial** — the highest degree of
+all its terms. **standard form** — a polynomial written with its terms in
+descending order of degree.
 
 ## Practice
 
@@ -482,6 +494,7 @@ other polynomial
 {{< fillin
   question="Subtract $(9x^2 + 2)$ from $(12x^2 - x + 6)$."
   answer="3x^2 - x + 4"
+  answerForm="no-like-terms"
   answerDisplay="$3x^2 - x + 4$"
   hint="\"Subtract $A$ from $B$\" means compute $B - A$; distribute the minus sign across every term of $A$."
 >}}
@@ -520,17 +533,6 @@ other polynomial
   answerDisplay="\$10,800"
   hint="Substitute $60$ for $p$ in $-4p^2 + 420p$ and simplify with the order of operations."
 >}}
-
-## Key terms
-
-**monomial** — a term of the form $ax^m$, where $a$ is a constant and $m$ is a
-positive whole number. **polynomial** — a monomial, or two or more monomials
-combined by addition or subtraction. **binomial** — a polynomial with exactly
-two terms. **trinomial** — a polynomial with exactly three terms. **coefficient**
-— the constant factor in a term. **degree of a term** — the sum of the
-exponents of its variables. **degree of a polynomial** — the highest degree of
-all its terms. **standard form** — a polynomial written with its terms in
-descending order of degree.
 
 ---
 

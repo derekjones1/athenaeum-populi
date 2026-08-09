@@ -547,6 +547,16 @@ The LCM of $50$ and $100$ is $100$.
   hint="$60 = 2 \cdot 2 \cdot 3 \cdot 5$ and $72 = 2 \cdot 2 \cdot 2 \cdot 3 \cdot 3$. Match the common primes column by column, then bring every column down."
 >}}
 
+## Key terms
+
+**prime factorization** — the product of prime numbers that equals a given
+number. **factor tree** — a diagram that finds a prime factorization by
+repeatedly factoring composite branches until every branch ends in a prime.
+**ladder method** — a way to find a prime factorization by repeatedly
+dividing by the smallest prime that fits (also called stacked division).
+**least common multiple (LCM)** — the smallest number that is a multiple of
+two given numbers.
+
 ## Practice
 
 ### Find the prime factorization of a composite number
@@ -594,16 +604,6 @@ The LCM of $50$ and $100$ is $100$.
   answer="40"
   hint="The smallest count that both package sizes divide into evenly is the LCM of 10 and 8."
 >}}
-
-## Key terms
-
-**prime factorization** — the product of prime numbers that equals a given
-number. **factor tree** — a diagram that finds a prime factorization by
-repeatedly factoring composite branches until every branch ends in a prime.
-**ladder method** — a way to find a prime factorization by repeatedly
-dividing by the smallest prime that fits (also called stacked division).
-**least common multiple (LCM)** — the smallest number that is a multiple of
-two given numbers.
 
 ---
 

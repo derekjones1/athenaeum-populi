@@ -496,6 +496,81 @@ After a car accident, the skid marks for one car measured 190 feet. Use the form
   hint="Substitute the given measurement into the stated formula, evaluate the square root, and apply the requested rounding."
 >}}
 
+## Practice
+
+### Solve Radical Equations
+
+{{< fillin
+  question="Solve: $\sqrt{5x - 6} = 8$"
+  answer="x = 14"
+  answerDisplay="$x = 14$"
+  hint="Square both sides to eliminate the radical, solve the resulting linear equation, and check the answer in the original equation."
+>}}
+
+{{< multiplechoice
+  question="Solve: $\sqrt{5x + 1} = -3$"
+  answer="no solution"
+  hint="A principal square root is never negative, so check whether the isolated radical is being set equal to a negative number before you square."
+>}}
+no solution
+$x = \tfrac{8}{5}$
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="Solve: $\sqrt{u - 3} + 3 = u$. Enter both solutions, separated by a comma."
+  answer="u = 3 , u = 4"
+  answerMode="unordered"
+  answerDisplay="$u = 3$ or $u = 4$"
+  hint="Isolate the radical, square both sides, solve the resulting quadratic equation, and check both candidate solutions in the original equation."
+>}}
+
+### Solve Radical Equations with Two Radicals
+
+{{< fillin
+  question="Solve: $\sqrt{3u + 7} = \sqrt{5u + 1}$"
+  answer="u = 3"
+  answerDisplay="$u = 3$"
+  hint="Since both radicals are already isolated, square both sides, solve the resulting linear equation, and check the answer in the original equation."
+>}}
+
+{{< fillin
+  question="Solve: $\sqrt{a} + 2 = \sqrt{a + 4}$"
+  answer="a = 0"
+  answerDisplay="$a = 0$"
+  hint="Square both sides, simplify, isolate the remaining radical, and check the answer in the original equation."
+>}}
+
+{{< fillin
+  question="Solve: $\sqrt[3]{2 x^2 + 9 x - 18} = \sqrt[3]{x^2 + 3 x - 2}$. Enter both solutions, separated by a comma."
+  answer="x = -8 , x = 2"
+  answerMode="unordered"
+  answerDisplay="$x = -8$ or $x = 2$"
+  hint="Since both sides have the same index, cube both sides, solve the resulting quadratic equation, and check each candidate solution in the original equation."
+>}}
+
+### Use Radicals in Applications
+
+{{< fillin
+  question="Reed wants to have a square garden plot in his backyard. He has enough compost to cover an area of 75 square feet. Use the formula $s = \sqrt{A}$ to find the length of each side of his garden, rounded to the nearest tenth of a foot."
+  answer="8.7"
+  answerDisplay="$8.7$ feet"
+  hint="Substitute the given area into the formula, evaluate the square root, and round to the nearest tenth."
+>}}
+
+{{< fillin
+  question="A hang glider dropped his cell phone from a height of 350 feet. Use the formula $t = \tfrac{\sqrt{h}}{4}$ to find how many seconds it took for the cell phone to reach the ground, rounded to the nearest tenth."
+  answer="4.7"
+  answerDisplay="$4.7$ seconds"
+  hint="Substitute the given height into the falling-object formula, evaluate the square root, divide by 4, and round to the nearest tenth."
+>}}
+
+{{< fillin
+  question="The skid marks for a car involved in an accident measured 216 feet. Use the formula $s = \sqrt{24 d}$ to find the speed of the car before the brakes were applied, in miles per hour."
+  answer="72"
+  answerDisplay="$72$ miles per hour"
+  hint="Substitute the given skid-mark length into the speed formula and evaluate the square root; this radicand is a perfect square, so no rounding is needed."
+>}}
+
 ---
 
-<small>This section is adapted from [Intermediate Algebra 2e, Section 8.6: Solve Radical Equations](https://openstax.org/books/intermediate-algebra-2e/pages/8-6-solve-radical-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, self-check reflection, and end-of-section exercise bank; and converted the source Try It practice into interactive exercises.</small>
+<small>This section is adapted from [Intermediate Algebra 2e, Section 8.6: Solve Radical Equations](https://openstax.org/books/intermediate-algebra-2e/pages/8-6-solve-radical-equations) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted worked solutions for the web; omitted the Be Prepared quiz, media links, and self-check reflection; converted the source Try It practice into interactive exercises; and adapted selected end-of-section exercises into an interactive Practice block.</small>

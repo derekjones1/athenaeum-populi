@@ -468,6 +468,35 @@ test('an arithmetic prompt is trivially satisfiable without answerForm', () => {
     'answerForm="single-power" rules a printed nested power out',
   );
 
+  // A numeral radical span IS an algebraic subject — the widening the
+  // simplified-radical retrofit promised. Each fires bare and is silenced by
+  // the token that names its target shape, including the tightened
+  // simplified-radical (arithmetic under the root, a signed perfect power,
+  // and a same-index numeral-radical product all reject now).
+  for (const [question, answer, form, reason] of [
+    ['Simplify: $\\sqrt{32} - \\sqrt{18}$.', '\\sqrt{2}', 'simplified-radical',
+      'a numeral radical difference grades equal to its combined form'],
+    ['Simplify: $\\sqrt{64 + 225}$.', '17', 'decimal',
+      'unevaluated arithmetic under the root grades equal to its value'],
+    ['Simplify: $\\sqrt{\\tfrac{25}{16}}$.', '\\tfrac{5}{4}', 'fraction lowest-terms',
+      'a numeral fraction under the root grades equal to its root'],
+    ['Simplify: $\\sqrt{3} \\cdot \\sqrt{6}$.', '3\\sqrt{2}', 'simplified-radical',
+      'a product of same-index numeral radicals grades equal to its product'],
+    ['Simplify: $\\sqrt[3]{-125}$.', '-5', 'decimal',
+      'the perfect-power scan reads through the sign'],
+    ['Find the sum $\\sum_{i=1}^{30}(6i-4)$.', '2670', 'decimal',
+      'a sigma span is a subject — its bounds are structure, not a relation'],
+  ]) {
+    assert(lint(arith(question, answer)).some(trivial), reason);
+    assert.equal(
+      lint(arith(question, answer, form)).filter(trivial).length,
+      0,
+      `answerForm=${JSON.stringify(form)} rules the printed span out: ${reason}`,
+    );
+    assert.equal(checkAnswer(answer, answer, { form }), 'correct',
+      `answerForm=${JSON.stringify(form)} still accepts the exercise's own answer`);
+  }
+
   // Must NOT fire: a variable prompt prints no bare arithmetic, and a word
   // problem whose answer happens to equal a printed quantity is an incidental
   // collision the learner cannot exploit — they cannot know which to copy.
@@ -475,9 +504,209 @@ test('an arithmetic prompt is trivially satisfiable without answerForm', () => {
     ['Evaluate $3ab^2$ when $a = -2$ and $b = 3$.', '-54', 'a variable prompt contributes no arithmetic span'],
     ['Jazmine ran $8$ miles and biked $24$ miles in $3$ hours, biking $4$ mph faster than she ran. Find her running speed in mph.', '8',
       'an application answer colliding with a printed quantity is incidental'],
-    ['Simplify: $\\sqrt{32} - \\sqrt{18}$.', '\\sqrt{2}', 'a numeral radical span is in neither subject scan yet — widening them to \\sqrt spans is the simplified-radical retrofit'],
   ]) {
     assert.equal(lint(arith(question, answer)).filter(trivial).length, 0, reason);
+  }
+});
+
+// ---- a prompt restated with the operation not carried out -------------------
+// The span extractors above all ask "is something printed here also the
+// answer?". That misses the family where the hazard is a COMBINATION of two
+// printed spans: "For $f(x)=A$ and $g(x)=B$, find $(f+g)(x)$" prints nothing
+// equal to the answer, yet `(A)+(B)` — the operation written but not performed
+// — grades correct, so the learner never combines a like term. Measured
+// against the real grader before these extractors existed, three such prompts
+// in intermediate-algebra ch. 5 accepted their own restatement.
+test('a prompt restated with the operation not carried out is trivially satisfiable', () => {
+  const restated = (error) => error.includes('operation written but not carried out');
+  const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
+  const fillin = (question, answer, form = '') =>
+    `{{< fillin question="${question}" answer="${answer}"${form ? ` answerForm="${form}"` : ''} hint="Combine like terms." >}}`;
+
+  const FG = 'For functions $f(x)=2x^2-4x+1$ and $g(x)=5x^2+8x+3$';
+
+  // Fires: each prompt is passable by writing the operation out unperformed.
+  for (const [question, answer, reason] of [
+    [`${FG}, find $(f+g)(x)$.`, '7x^2 + 4x + 4', 'a function sum is passable as the uncombined sum'],
+    [`${FG}, find $(f-g)(x)$.`, '-3x^2 - 12x - 2', 'and a function difference as the uncombined difference'],
+    ['For $f(x)=x-1$ and $g(x)=4x^2+3x-5$, find $(f\\cdot g)(x)$.', '4x^3-x^2-8x+5',
+      'a function product is passable as the unmultiplied product'],
+    ['For $f(x)=x^2-15x+54$ and $g(x)=x-9$, find $\\left(\\tfrac{f}{g}\\right)(x)$.', 'x-6',
+      'an exactly-dividing function quotient is passable as the undivided fraction'],
+    ['Subtract $(9x^2+2)$ from $(12x^2-x+6)$.', '3x^2 - x + 4',
+      'subtract-from is passable as the uncombined difference, in the stated order'],
+    ['Use synthetic division to find the quotient when $x^3-3x^2-4x+12$ is divided by $x+2$.', 'x^2-5x+6',
+      'an exact division is passable as the undivided fraction'],
+  ]) {
+    assert(lint(fillin(question, answer)).some(restated), reason);
+  }
+
+  // Silenced by the token, and exercised rather than trusted: the same token
+  // must still accept the real answer, or it would be rejecting sound content.
+  for (const [question, answer, form] of [
+    [`${FG}, find $(f+g)(x)$.`, '7x^2 + 4x + 4', 'no-like-terms'],
+    ['Subtract $(9x^2+2)$ from $(12x^2-x+6)$.', '3x^2 - x + 4', 'no-like-terms'],
+    ['Use synthetic division to find the quotient when $x^3-3x^2-4x+12$ is divided by $x+2$.', 'x^2-5x+6', 'expanded'],
+  ]) {
+    assert.equal(lint(fillin(question, answer, form)).filter(restated).length, 0,
+      `answerForm=${JSON.stringify(form)} rules the restatement out`);
+    assert.equal(checkAnswer(answer, answer, { form }), 'correct',
+      `answerForm=${JSON.stringify(form)} still accepts the exercise's own answer`);
+  }
+
+  // Must NOT fire.
+  for (const [question, answer, reason] of [
+    [`${FG}, find $(f+g)(2)$.`, '40',
+      'an ask evaluated at a number is answered by a number no restatement equals'],
+    ['Use the Remainder Theorem to find the remainder when $f(x)=x^3-4x-9$ is divided by $x+2$.', '-9',
+      'a remainder ask names no quotient, so no fraction candidate is built'],
+    ['For functions $f(x)=2x^2-4x+1$ and $g(x)=5x^2+8x+3$, find $g(x)$.', '5x^2+8x+3',
+      'naming one function back is not a combination ask'],
+    ['Divide: $\\tfrac{54a^2b^3}{-6ab^5}$.', '-\\frac{9a}{b^2}',
+      'a single printed quotient span composes nothing — one operand, not two'],
+  ]) {
+    assert.equal(lint(fillin(question, answer)).filter(restated).length, 0, reason);
+  }
+
+  // A division leaving a nonzero remainder is safe on its own arithmetic: the
+  // fraction is not equal to the quotient, so the grader rejects it and the
+  // rule stays silent without needing a phrasing exception.
+  assert.equal(
+    lint(fillin('Use synthetic division to find the quotient when $2x^3-11x^2+16x-12$ is divided by $x-4$.', '2x^2-3x+4'))
+      .filter(restated).length,
+    0,
+    'a nonzero remainder makes the restatement genuinely incorrect, not merely mis-shaped',
+  );
+});
+
+// ---- the "write it in standard form" class (§6, eighth shape) --------------
+// Completing the square (or dividing to reach `…=1`) changes the shape, not
+// the value, so the printed equation grades equal to its own standard form.
+// The verb feeds printed EQUATION spans — the span shape every other extractor
+// excludes — and a definition span `f(x)=RHS` contributes its bare RHS too,
+// because the learner answers without the label.
+test('a standard-form prompt is trivially satisfiable without answerForm', () => {
+  const trivial = (error) => error.includes('printed in the question');
+  const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
+  const fillin = (question, answer, form = '') =>
+    `{{< fillin question="${question}" answer="${answer}"${form ? ` answerForm="${form}"` : ''} hint="Complete the square." >}}`;
+
+  for (const [question, answer, form, reason] of [
+    ['Write $y=2x^2+4x+5$ in standard form.', '2(x+1)^2+3', 'vertex-form',
+      'a vertical parabola grades equal to its own vertex form'],
+    ['ⓐ Write $x=-4y^2-16y-12$ in standard form and ⓑ graph it.', '-4(y+2)^2+4', 'vertex-form',
+      'the horizontal orientation is the same shape in the other variable'],
+    ['Rewrite $f(x)=2x^2-8x+3$ in the $f(x)=a(x-h)^2+k$ form by completing the square.', '2(x-2)^2-5', 'vertex-form',
+      'the spelled-out template is the same ask, and the hazard is the definition\'s bare RHS'],
+    ['Write $9x^2+16y^2=144$ in standard form.', '\\frac{x^2}{16}+\\frac{y^2}{9}=1', 'conic-standard-form',
+      'an ellipse grades equal to its divided-through form'],
+    ['Write $9x^2-16y^2+18x+64y-199=0$ in standard form.', '\\frac{(x+1)^2}{16}-\\frac{(y-2)^2}{9}=1', 'conic-standard-form',
+      'a general-form hyperbola grades equal to its standard form'],
+    ['Write $x^2+y^2+10x+6y+30=0$ in standard form.', '(x+5)^2+(y+3)^2=4', 'circle-standard-form',
+      'a general-form circle grades equal to its standard form'],
+    ['Convert the equation from logarithmic to exponential form: $3=\\log_7 343$.', '343=7^3', 'exponential-form',
+      'two true statements grade equal, so only the notation separates them'],
+    ['Use properties of logarithms to write $\\log_5 25ab$ as a sum of logarithms, simplifying if possible.',
+      '2+\\log_5 a+\\log_5 b', 'expanded-logarithms',
+      'a compound-argument logarithm grades equal to its expansion'],
+  ]) {
+    assert(lint(fillin(question, answer)).some(trivial), reason);
+    assert.equal(
+      lint(fillin(question, answer, form)).filter(trivial).length,
+      0,
+      `answerForm=${JSON.stringify(form)} rules the printed equation out: ${reason}`,
+    );
+    assert.equal(checkAnswer(answer, answer, { form }), 'correct',
+      `answerForm=${JSON.stringify(form)} still accepts the exercise's own answer`);
+  }
+
+  // Must NOT fire: "standard form" prompts that print no bare two-sided
+  // equation contribute no candidate — the extractor, not the verb, is the
+  // gate that keeps them out.
+  for (const [question, answer, reason] of [
+    ['Write in standard form: fifty-three million, eight hundred nine thousand, fifty-one.', '53809051',
+      'the prealgebra number-words ask prints no equation span'],
+    ['Write the standard form of the equation of the circle with radius $6$ and center $(0,0)$.', 'x^2+y^2=36',
+      'a construction ask prints values, not an equation to restate'],
+  ]) {
+    assert.equal(lint(fillin(question, answer)).filter(trivial).length, 0, reason);
+  }
+});
+
+// ---- composition and page-context combinations ------------------------------
+// `(f\circ g)(x)` is passable as the outer definition with the inner one
+// substituted but not simplified, and the definitions may be printed in page
+// prose outside any one question ("For the next three questions, use …").
+test('a composition ask with page-context definitions is trivially satisfiable', () => {
+  const restated = (error) => error.includes('operation written but not carried out');
+  const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
+  const PREFACE = 'For the next three questions, use $f(x)=6x+1$ and $g(x)=8x-3$.\n\n';
+  const fillin = (question, answer, form = '') =>
+    `{{< fillin question="${question}" answer="${answer}"${form ? ` answerForm="${form}"` : ''} hint="Substitute, then simplify." >}}`;
+
+  for (const [question, answer, form, reason] of [
+    ['Find $(f\\circ g)(x)$.', '48x-17', 'distributed no-like-terms',
+      'a composition is passable as the substituted-but-unsimplified form'],
+    ['Find $(g\\circ f)(x)$.', '48x+5', 'distributed no-like-terms',
+      'the composition order follows the ask'],
+    ['Find $(f\\cdot g)(x)$.', '48x^2-10x-3', 'distributed no-like-terms',
+      'prose definitions reach the product ask too'],
+  ]) {
+    assert(lint(PREFACE + fillin(question, answer)).some(restated), reason);
+    assert.equal(
+      lint(PREFACE + fillin(question, answer, form)).filter(restated).length,
+      0,
+      `answerForm=${JSON.stringify(form)} rules the restatement out`,
+    );
+    assert.equal(checkAnswer(answer, answer, { form }), 'correct',
+      `answerForm=${JSON.stringify(form)} still accepts the exercise's own answer`);
+  }
+
+  // `(fg)(x)` juxtaposition is the product ask, with in-question definitions.
+  assert(
+    lint(fillin('Given $f(x)=x-1$ and $g(x)=x^2-1$, find and simplify $(fg)(x)$.', 'x^3-x^2-x+1')).some(restated),
+    'the juxtaposed product ask builds the unmultiplied product',
+  );
+  assert.equal(
+    lint(fillin('Given $f(x)=x-1$ and $g(x)=x^2-1$, find and simplify $(fg)(x)$.', 'x^3-x^2-x+1', 'expanded'))
+      .filter(restated).length,
+    0,
+    'answerForm="expanded" rules the unmultiplied product out',
+  );
+
+  // A composition evaluated at a number is answered by a number no
+  // substitution of the definitions equals.
+  assert.equal(
+    lint(PREFACE + fillin('Find $(f\\circ g)(2)$.', '79')).filter(restated).length,
+    0,
+    'an ask evaluated at a number builds no candidate',
+  );
+});
+
+// ---- a slash quotient followed by juxtaposition mis-parses ------------------
+// `-1/20(x-20)^2+20` is read as `-1/(20(x-20)^2)+20`, so the authored value is
+// not the intended one and the learner who types the intended `\frac` form is
+// marked wrong. Both sides of every self-check mis-parse identically, which is
+// why only a lint on the written answer can catch it.
+test('a slash quotient followed by a juxtaposed factor is rejected', () => {
+  const slash = (error) => error.includes('slash quotient');
+  const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
+  const fillin = (answer) =>
+    `{{< fillin question="Find the equation of the arch." answer="${answer}" hint="Vertex first." >}}`;
+
+  for (const [answer, reason] of [
+    ['-1/20(x-20)^2+20', 'a parenthesized factor after the denominator'],
+    ['y=1/2x-5/2', 'a variable directly after the denominator'],
+    ['1/2\\pi', 'a macro directly after the denominator'],
+  ]) {
+    assert(lint(fillin(answer)).some(slash), reason);
+  }
+  for (const [answer, reason] of [
+    ['-\\frac{1}{20}(x-20)^2+20', 'an explicit \\frac coefficient is unambiguous'],
+    ['-5/2', 'a bare slash fraction has nothing juxtaposed'],
+    ['(x+3)/(x-2)', 'a parenthesized denominator is grouped, not juxtaposed'],
+  ]) {
+    assert.equal(lint(fillin(answer)).filter(slash).length, 0, reason);
   }
 });
 
@@ -752,11 +981,11 @@ test('the section-final Practice block is enforced', () => {
     [fillin('r1'), fillin('r2')].join('\n\n'),
   ].join('\n\n');
 
-  const good = lintHugo(`${head}\n\n## Teach\n\nProse.\n\n${practice}\n\n${keyTerms}`, sectionPath);
+  const good = lintHugo(`${head}\n\n## Teach\n\nProse.\n\n${keyTerms}\n\n${practice}`, sectionPath);
   assert.equal(
     good.errors.length,
     0,
-    `a grouped Practice block before Key terms is valid (cap exemption included): ${good.errors.join('; ')}`,
+    `a grouped Practice block after Key terms is valid (cap exemption included): ${good.errors.join('; ')}`,
   );
   assert.equal(
     good.warnings.filter((w) => w.includes('`## Practice`')).length,
@@ -782,7 +1011,7 @@ test('the section-final Practice block is enforced', () => {
 
   assert(
     lintHugo(
-      `${head}\n\n## Practice\n\n### Add whole numbers\n\n${[fillin('a1'), fillin('a2'), fillin('a3')].join('\n\n')}\n\n### Round whole numbers\n\n${fillin('r1')}\n\n${keyTerms}`,
+      `${head}\n\n${keyTerms}\n\n## Practice\n\n### Add whole numbers\n\n${[fillin('a1'), fillin('a2'), fillin('a3')].join('\n\n')}\n\n### Round whole numbers\n\n${fillin('r1')}`,
       sectionPath,
     ).errors.some((e) => e.includes('`### Round whole numbers` has 1 interactive exercise(s)')),
     'a group with fewer than two exercises is an error',
@@ -790,7 +1019,7 @@ test('the section-final Practice block is enforced', () => {
 
   assert(
     lintHugo(
-      `${head}\n\n## Practice\n\n${fillin('loose')}\n\n### Add whole numbers\n\n${[fillin('a1'), fillin('a2')].join('\n\n')}\n\n### Round whole numbers\n\n${[fillin('r1'), fillin('r2')].join('\n\n')}\n\n${keyTerms}`,
+      `${head}\n\n${keyTerms}\n\n## Practice\n\n${fillin('loose')}\n\n### Add whole numbers\n\n${[fillin('a1'), fillin('a2')].join('\n\n')}\n\n### Round whole numbers\n\n${[fillin('r1'), fillin('r2')].join('\n\n')}`,
       sectionPath,
     ).errors.some((e) => e.includes('sits above the first `### ` group')),
     'an exercise outside any objective group is an error',
@@ -798,7 +1027,7 @@ test('the section-final Practice block is enforced', () => {
 
   assert(
     lintHugo(
-      `${head}\n\n## Practice\n\n${[fillin('a1'), fillin('a2'), fillin('a3')].join('\n\n')}\n\n${keyTerms}`,
+      `${head}\n\n${keyTerms}\n\n## Practice\n\n${[fillin('a1'), fillin('a2'), fillin('a3')].join('\n\n')}`,
       sectionPath,
     ).errors.some((e) => e.includes('no `### ` objective groups')),
     'an ungrouped Practice block is an error',
@@ -806,7 +1035,7 @@ test('the section-final Practice block is enforced', () => {
 
   assert(
     lintHugo(
-      `${head}\n\n## Practice\n\n### Add whole numbers\n\n${[fillin('a1'), fillin('a2'), fillin('a3')].join('\n\n')}\n\n### Estimate sums\n\n${[fillin('r1'), fillin('r2')].join('\n\n')}\n\n${keyTerms}`,
+      `${head}\n\n${keyTerms}\n\n## Practice\n\n### Add whole numbers\n\n${[fillin('a1'), fillin('a2'), fillin('a3')].join('\n\n')}\n\n### Estimate sums\n\n${[fillin('r1'), fillin('r2')].join('\n\n')}`,
       sectionPath,
     ).errors.some((e) => e.includes('it must be `### Round whole numbers`')),
     'a group title that is not the matching objective is an error',
@@ -814,7 +1043,7 @@ test('the section-final Practice block is enforced', () => {
 
   assert(
     lintHugo(
-      `${head}\n\n## Practice\n\n### Round whole numbers\n\n${[fillin('r1'), fillin('r2'), fillin('r3')].join('\n\n')}\n\n### Add whole numbers\n\n${[fillin('a1'), fillin('a2')].join('\n\n')}\n\n${keyTerms}`,
+      `${head}\n\n${keyTerms}\n\n## Practice\n\n### Round whole numbers\n\n${[fillin('r1'), fillin('r2'), fillin('r3')].join('\n\n')}\n\n### Add whole numbers\n\n${[fillin('a1'), fillin('a2')].join('\n\n')}`,
       sectionPath,
     ).errors.some((e) => e.includes('matching the objectives callout in order')),
     'objective groups out of order are an error',
@@ -822,7 +1051,7 @@ test('the section-final Practice block is enforced', () => {
 
   assert(
     lintHugo(
-      `${head}\n\n## Practice\n\n### Add whole numbers\n\n${[fillin('a1'), fillin('a2')].join('\n\n')}\n\n### Round whole numbers\n\n${[fillin('r1'), fillin('r2')].join('\n\n')}\n\n${keyTerms}`,
+      `${head}\n\n${keyTerms}\n\n## Practice\n\n### Add whole numbers\n\n${[fillin('a1'), fillin('a2')].join('\n\n')}\n\n### Round whole numbers\n\n${[fillin('r1'), fillin('r2')].join('\n\n')}`,
       sectionPath,
     ).errors.some((e) => e.includes('at least 5 are required')),
     'a two-objective section still needs five exercises overall',
@@ -830,7 +1059,7 @@ test('the section-final Practice block is enforced', () => {
 
   assert.equal(
     lintHugo(
-      `${head}\n\n## Practice\n\n### add whole numbers.\n\n${[fillin('a1'), fillin('a2'), fillin('a3')].join('\n\n')}\n\n### Round  whole numbers\n\n${[fillin('r1'), fillin('r2')].join('\n\n')}\n\n${keyTerms}`,
+      `${head}\n\n${keyTerms}\n\n## Practice\n\n### add whole numbers.\n\n${[fillin('a1'), fillin('a2'), fillin('a3')].join('\n\n')}\n\n### Round  whole numbers\n\n${[fillin('r1'), fillin('r2')].join('\n\n')}`,
       sectionPath,
     ).errors.length,
     0,
@@ -838,42 +1067,63 @@ test('the section-final Practice block is enforced', () => {
   );
 
   assert(
-    lintHugo(`${head}\n\n${practice}\n\n## More teaching\n\nProse.\n\n${keyTerms}`, sectionPath)
-      .errors.some((e) => e.includes('immediately before `## Key terms`')),
-    'Practice must sit immediately before the end matter',
+    lintHugo(`${head}\n\n## Teach\n\nProse.\n\n${practice}\n\n${keyTerms}`, sectionPath)
+      .errors.some((e) => e.includes('before the end matter')),
+    'Practice before Key terms is an error',
   );
 
   assert(
-    lintHugo(`${head}\n\n## Teach\n\nProse.\n\n${keyTerms}\n\n${practice}`, sectionPath)
-      .errors.some((e) => e.includes('after the end matter')),
-    'Practice after Key terms is an error',
+    lintHugo(`${head}\n\n${keyTerms}\n\n${practice}\n\n## More teaching\n\nProse.`, sectionPath)
+      .errors.some((e) => e.includes('no heading may follow it')),
+    'a heading after Practice is an error',
   );
 
   assert(
-    lintHugo(`${head}\n\n${practice}\n\n${practice}\n\n${keyTerms}`, sectionPath)
+    lintHugo(`${head}\n\n${keyTerms}\n\n${practice}\n\n${practice}`, sectionPath)
       .errors.some((e) => e.includes('more than one `## Practice`')),
     'duplicate Practice headings are an error',
   );
 
   assert.equal(
-    lintHugo(`${head}\n\n${practice}\n\n## Key concepts\n\nSummary.\n\n${keyTerms}`, sectionPath).errors.length,
+    lintHugo(`${head}\n\n## Key concepts\n\nSummary.\n\n${keyTerms}\n\n${practice}`, sectionPath).errors.length,
     0,
     'Key concepts counts as end matter where present',
   );
 
   assert.equal(
-    lintHugo(`${head}\n\n${practice}\n\n## Key equations\n\n$E=mc^2$\n\n${keyTerms}`, sectionPath).errors.length,
+    lintHugo(`${head}\n\n## Key equations\n\n$E=mc^2$\n\n${keyTerms}\n\n${practice}`, sectionPath).errors.length,
     0,
     'Key equations counts as end matter where present',
   );
   assert(
-    lintHugo(`${head}\n\n${practice}\n\n## Key equation\n\n$E=mc^2$\n\n${keyTerms}`, sectionPath).errors.length === 0,
+    lintHugo(`${head}\n\n## Key equation\n\n$E=mc^2$\n\n${keyTerms}\n\n${practice}`, sectionPath).errors.length === 0,
     'the singular Key equation heading also counts as end matter',
   );
   assert(
     lintHugo(`${head}\n\n## Key equations\n\n$E=mc^2$\n\n${practice}\n\n${keyTerms}`, sectionPath)
-      .errors.some((e) => e.includes('after the end matter')),
-    'Practice between Key equations and Key terms is still after the end matter',
+      .errors.some((e) => e.includes('before the end matter')),
+    'Practice between Key equations and Key terms is still before the end matter',
+  );
+
+  assert(
+    lintHugo(`${head}\n\n## Teach\n\nProse.\n\n**Key terms.** A **widget** is a thing.\n\n${practice}`, sectionPath)
+      .errors.some((e) => e.includes('bold prose paragraph')),
+    'a bold **Key terms.** prose paragraph is an error — end matter must be a heading',
+  );
+  assert(
+    lintHugo(`${head}\n\n## Teach\n\nProse.\n\n${practice}\n\n## Key Concepts\n\nSummary.`, sectionPath)
+      .errors.some((e) => e.includes('before the end matter')),
+    'a title-case Key Concepts heading still counts as end matter for the ordering rule',
+  );
+  assert(
+    lintHugo(`${head}\n\n## Teach\n\nProse.\n\n**Key Terms:** widget.\n\n${practice}`, sectionPath)
+      .errors.some((e) => e.includes('bold prose paragraph')),
+    'a title-case bold Key Terms paragraph is also an error',
+  );
+  assert(
+    lintHugo(`${head}\n\n## Teach\n\nProse.\n\n**Key terms:** widget, gadget.\n\n${practice}`, sectionPath)
+      .errors.some((e) => e.includes('bold prose paragraph')),
+    'the colon form of the bold Key terms paragraph is also an error',
   );
 
   assert.equal(

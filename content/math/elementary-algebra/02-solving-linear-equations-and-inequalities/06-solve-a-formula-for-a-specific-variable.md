@@ -289,6 +289,13 @@ solid, $V = LWH$.
   hint="Divide both sides by pi to isolate d."
 >}}
 
+## Key terms
+
+**rate** — an equivalent word for speed; how fast an object moves per unit
+of time. **solve a formula for a specific variable** — to isolate that
+variable on one side of the equals sign, with a coefficient of $1$, while
+all other variables and constants are on the other side.
+
 ## Practice
 
 ### Use the Distance, Rate, Time formula
@@ -329,13 +336,6 @@ solid, $V = LWH$.
   answerDisplay="$H = \tfrac{V}{LW}$"
   hint="$H$ is multiplied by $LW$, so divide both sides by $LW$."
 >}}
-
-## Key terms
-
-**rate** — an equivalent word for speed; how fast an object moves per unit
-of time. **solve a formula for a specific variable** — to isolate that
-variable on one side of the equals sign, with a coefficient of $1$, while
-all other variables and constants are on the other side.
 
 ---
 

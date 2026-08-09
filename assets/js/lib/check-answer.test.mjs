@@ -283,6 +283,15 @@ const formCases = [
   // the engine folds the numbers here, so the written \cdot is what is left
   ['9n', '9n', 'single-term', 'correct'],
   ['\\tfrac{3}{7} \\cdot 21n', '9n', 'single-term', 'form'],
+  // A unit-fraction exponent parses as Sqrt/Root, not Power — a monomial all
+  // the same. `(a^{1/3}b^{2/3})^{3/2}` answers to `a^{1/2}b`, and the written
+  // product still has to fail. Non-unit exponents stay Power and must keep
+  // working; a numeric radicand is not a variable base and must keep failing.
+  ['a^{\\tfrac{1}{2}}b', 'a^{\\tfrac{1}{2}}b', 'single-term', 'correct'],
+  ['(a^{\\tfrac{1}{3}}b^{\\tfrac{2}{3}})^{\\tfrac{3}{2}}', 'a^{\\tfrac{1}{2}}b', 'single-term', 'form'],
+  ['5m^{\\tfrac{1}{3}}', '5m^{\\tfrac{1}{3}}', 'single-term', 'correct'],
+  ['x^{\\tfrac{2}{3}}y', 'x^{\\tfrac{2}{3}}y', 'single-term', 'correct'],
+  ['3\\sqrt{2}', '3\\sqrt{2}', 'single-term', 'form'],
   // one quotient, and — when both halves are monomials — a reduced one
   ['\\frac{x+3}{3x}', '\\frac{x+3}{3x}', 'single-fraction', 'correct'],
   ['\\frac{4x}{x+2}\\cdot\\frac{x^2+5x+6}{12x^2}', '\\frac{x+3}{3x}', 'single-fraction', 'form'],
@@ -498,6 +507,74 @@ const formCases = [
   // a wrong value is wrong, not a form complaint
   ['(x+2)(x+5)', '(x+2)(x+4)', 'factored', 'incorrect'],
   ['(x+1)(x+8)', '(x+2)(x+4)', 'factored', 'incorrect'],
+  // vertex-form — the §6 "standard form" class, parabola half. Completing the
+  // square changes the shape, not the value, so the printed general form
+  // grades equal to the answer and only the squared-binomial test separates
+  // them. A written `y=`/`x=`/`f(x)=` label is stripped off the LaTeX.
+  ['2(x+1)^2+3', '2(x+1)^2+3', 'vertex-form', 'correct'],
+  ['y=2x^2+4x+5', '2(x+1)^2+3', 'vertex-form', 'form'],
+  ['2x^2+4x+5', '2(x+1)^2+3', 'vertex-form', 'form'],
+  ['y=2(x-1)^2-4', 'y=2(x-1)^2-4', 'vertex-form', 'correct'],
+  ['y=2x^2-4x-2', 'y=2(x-1)^2-4', 'vertex-form', 'form'],
+  // the horizontal orientation is the same shape in the other variable
+  ['3(y+1)^2+4', '3(y+1)^2+4', 'vertex-form', 'correct'],
+  ['x=3y^2+6y+7', '3(y+1)^2+4', 'vertex-form', 'form'],
+  // k may be zero, and the coefficient may be a fraction
+  ['-(x-4)^2', '-(x-4)^2', 'vertex-form', 'correct'],
+  ['-x^2+8x-16', '-(x-4)^2', 'vertex-form', 'form'],
+  ['-\\frac{1}{20}(x-20)^2+20', '-\\frac{1}{20}(x-20)^2+20', 'vertex-form', 'correct'],
+  // a half-completed square is not vertex form, and neither is the expansion
+  // of a vertex-from-a-point answer
+  ['2(x^2+2x)+5', '2(x+1)^2+3', 'vertex-form', 'form'],
+  ['x^2-6x+5', '(x-3)^2-4', 'vertex-form', 'form'],
+  ['3(x-1)^2+1', '3(x-1)^2+2', 'vertex-form', 'incorrect'],
+  // conic-standard-form — the ellipse/hyperbola half: coefficient-1 squared
+  // terms over integers, against exactly 1. The general-form retype fails on
+  // its right side; a numerator keeping its coefficient fails because that
+  // division was the ask; a slash-written fraction still counts as one.
+  ['\\frac{x^2}{16}+\\frac{y^2}{9}=1', '\\frac{x^2}{16}+\\frac{y^2}{9}=1', 'conic-standard-form', 'correct'],
+  ['9x^2+16y^2=144', '\\frac{x^2}{16}+\\frac{y^2}{9}=1', 'conic-standard-form', 'form'],
+  ['\\frac{9x^2}{144}+\\frac{16y^2}{144}=1', '\\frac{x^2}{16}+\\frac{y^2}{9}=1', 'conic-standard-form', 'form'],
+  ['x^2/16+y^2/9=1', '\\frac{x^2}{16}+\\frac{y^2}{9}=1', 'conic-standard-form', 'correct'],
+  ['1=\\frac{x^2}{16}+\\frac{y^2}{9}', '\\frac{x^2}{16}+\\frac{y^2}{9}=1', 'conic-standard-form', 'correct'],
+  ['\\frac{(x+1)^2}{6}+\\frac{(y-4)^2}{9}=1', '\\frac{(x+1)^2}{6}+\\frac{(y-4)^2}{9}=1', 'conic-standard-form', 'correct'],
+  ['6x^2+4y^2+12x-32y+34=0', '\\frac{(x+1)^2}{6}+\\frac{(y-4)^2}{9}=1', 'conic-standard-form', 'form'],
+  ['4y^2-25x^2=100', '\\frac{y^2}{25}-\\frac{x^2}{4}=1', 'conic-standard-form', 'form'],
+  // circle-standard-form — two coefficient-1 squared terms against r^2; the
+  // general form fails on its linear terms and its zero right side
+  ['(x+5)^2+(y+3)^2=4', '(x+5)^2+(y+3)^2=4', 'circle-standard-form', 'correct'],
+  ['x^2+y^2+10x+6y+30=0', '(x+5)^2+(y+3)^2=4', 'circle-standard-form', 'form'],
+  ['x^2+y^2=121', 'x^2+y^2=121', 'circle-standard-form', 'correct'],
+  // exponential-form — two TRUE statements grade equal, so only the written
+  // notation separates the conversion from the prompt retyped
+  ['343=7^3', '343=7^3', 'exponential-form', 'correct'],
+  ['3=\\log_7 343', '343=7^3', 'exponential-form', 'form'],
+  // expanded-logarithms — every written log takes a single atom
+  ['2+\\log_5 a+\\log_5 b', '2+\\log_5 a+\\log_5 b', 'expanded-logarithms', 'correct'],
+  ['\\log_5 25ab', '2+\\log_5 a+\\log_5 b', 'expanded-logarithms', 'form'],
+  ['\\frac{1}{4}(\\log_2 5+3\\log_2 x-4-2\\log_2 y-7\\log_2 z)',
+    '\\frac{1}{4}(\\log_2 5+3\\log_2 x-4-2\\log_2 y-7\\log_2 z)', 'expanded-logarithms', 'correct'],
+  ['\\log_2\\sqrt[4]{\\tfrac{5x^3}{16y^2z^7}}',
+    '\\frac{1}{4}(\\log_2 5+3\\log_2 x-4-2\\log_2 y-7\\log_2 z)', 'expanded-logarithms', 'form'],
+  // simplified-radical tightenings: unevaluated numeral arithmetic and
+  // fractions under the root, signed perfect powers, written-out units, and
+  // same-index numeral-radical products all reject now
+  ['\\sqrt{64 + 225}', '17', 'simplified-radical', 'form'],
+  ['\\sqrt{64 + 225}', '17', 'decimal', 'form'],
+  ['\\sqrt{\\tfrac{25}{16}}', '\\tfrac{5}{4}', 'fraction lowest-terms', 'form'],
+  ['\\sqrt{\\tfrac{19}{49}}', '\\tfrac{\\sqrt{19}}{7}', 'simplified-radical', 'form'],
+  ['\\tfrac{\\sqrt{19}}{7}', '\\tfrac{\\sqrt{19}}{7}', 'simplified-radical', 'correct'],
+  ['\\sqrt{3} \\cdot \\sqrt{6}', '3\\sqrt{2}', 'simplified-radical', 'form'],
+  ['3\\sqrt{2}', '3\\sqrt{2}', 'simplified-radical', 'correct'],
+  ['\\sqrt[3]{-108}', '-3\\sqrt[3]{4}', 'simplified-radical', 'form'],
+  ['-3\\sqrt[3]{4}', '-3\\sqrt[3]{4}', 'simplified-radical', 'correct'],
+  ['\\sqrt{-8} + \\sqrt{-32}', '6 \\sqrt{2} i', 'simplified-radical', 'form'],
+  ['6 \\sqrt{2} i', '6 \\sqrt{2} i', 'simplified-radical', 'correct'],
+  ['-\\sqrt{1}', '-1', 'decimal', 'form'],
+  ['\\tfrac{\\sqrt[3]{90}}{6}', '\\tfrac{\\sqrt[3]{90}}{6}', 'simplified-radical', 'correct'],
+  // …while the numeral-only scoping keeps the corpus's own worked shapes
+  // correct: a variable radicand never counts toward the product pair
+  ['\\frac{\\sqrt{10}\\sqrt{y}+\\sqrt{30}}{y-3}', '\\frac{\\sqrt{10}(\\sqrt{y}+\\sqrt{3})}{y-3}', 'simplified-radical', 'correct'],
   // no answerForm — grading is exactly what it was
   ['0.5', '\\frac{1}{2}', undefined, 'correct'],
   ['\\frac{2}{4}', '\\frac{1}{2}', undefined, 'correct'],
@@ -547,6 +624,19 @@ test('answerForm parsing and feedback wording', async (t) => {
   await t.test('reduced-fraction feedback names the cancellation', () => {
     const phrase = describeAnswerForm('reduced-fraction');
     assert.ok(phrase.includes('common factors cancelled'), phrase);
+  });
+
+  // The standard-form tokens each name their own target shape — vertex form
+  // names the completed square, the conic form names the `=1`, the circle
+  // form names the squared radius — because "standard form" alone would tell
+  // the learner nothing the prompt had not already said (§6: the message has
+  // to match the ask).
+  await t.test('the standard-form feedback names each target shape', () => {
+    assert.ok(describeAnswerForm('vertex-form').includes('square completed'));
+    assert.ok(describeAnswerForm('conic-standard-form').includes('equal to 1'));
+    assert.ok(describeAnswerForm('circle-standard-form').includes('squared radius'));
+    assert.ok(describeAnswerForm('exponential-form').includes('no logarithm'));
+    assert.ok(describeAnswerForm('expanded-logarithms').includes('sum of logarithms'));
   });
 });
 

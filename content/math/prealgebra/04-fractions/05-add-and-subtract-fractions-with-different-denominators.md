@@ -438,6 +438,14 @@ $$\frac{p+q}{r} = -\frac{3}{4}$$
   hint="Add $a$ and $b$ first (the numerator), then divide by $c$."
 >}}
 
+## Key terms
+
+**least common denominator (LCD)** — the least common multiple of the
+denominators of two or more fractions. **complex fraction** — a fraction
+whose numerator or denominator (or both) itself contains a fraction,
+requiring the order of operations to simplify: numerator first,
+denominator next, then divide.
+
 ## Practice
 
 ### Find the least common denominator (LCD)
@@ -599,14 +607,6 @@ $$\frac{p+q}{r} = -\frac{3}{4}$$
   answerDisplay="$-\tfrac{9}{16}$"
   hint="Apply each exponent first — an even power of a negative is positive, an odd power stays negative — then multiply the three factors."
 >}}
-
-## Key terms
-
-**least common denominator (LCD)** — the least common multiple of the
-denominators of two or more fractions. **complex fraction** — a fraction
-whose numerator or denominator (or both) itself contains a fraction,
-requiring the order of operations to simplify: numerator first,
-denominator next, then divide.
 
 ---
 

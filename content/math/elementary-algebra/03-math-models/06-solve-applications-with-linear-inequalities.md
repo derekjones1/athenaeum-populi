@@ -266,6 +266,12 @@ Answer the question: Brenda must babysit at least 27 hours.
   hint="Add the gas, food, and 10 nights of motel to get the total cost, then translate as cost $\le 520 + 30d$."
 >}}
 
+## Key terms
+
+**profit** — the money that remains when the expenses have been subtracted
+from the money earned. **commission** — pay calculated as a percent of
+sales, often combined with a fixed base amount.
+
 ## Practice
 
 ### Solve applications with linear inequalities
@@ -304,12 +310,6 @@ Answer the question: Brenda must babysit at least 27 hours.
   answerDisplay="44 meals"
   hint="Let $m$ be the number of meals, solve $115m - 3{,}150 \ge 1{,}900$, and round up to a whole number."
 >}}
-
-## Key terms
-
-**profit** — the money that remains when the expenses have been subtracted
-from the money earned. **commission** — pay calculated as a percent of
-sales, often combined with a fixed base amount.
 
 ---
 

@@ -806,6 +806,13 @@ vertical or horizontal line. Choosing the intercept method makes the most
 sense when the equation is already written with both variables on one side,
 since setting $x = 0$ or $y = 0$ in turn makes the arithmetic simple.
 
+## Key terms
+
+**intercepts of a line** — the points where a line crosses the $x$-axis and
+the $y$-axis. **$x$-intercept** — the point $(a, 0)$ where a line crosses
+the $x$-axis; it occurs when $y$ is zero. **$y$-intercept** — the point
+$(0, b)$ where a line crosses the $y$-axis; it occurs when $x$ is zero.
+
 ## Practice
 
 ### Identify the $x$- and $y$-intercepts on a graph
@@ -1036,13 +1043,6 @@ since setting $x = 0$ or $y = 0$ in turn makes the arithmetic simple.
 {"answer":{"slope":1.5,"intercept":-3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
 
-
-## Key terms
-
-**intercepts of a line** — the points where a line crosses the $x$-axis and
-the $y$-axis. **$x$-intercept** — the point $(a, 0)$ where a line crosses
-the $x$-axis; it occurs when $y$ is zero. **$y$-intercept** — the point
-$(0, b)$ where a line crosses the $y$-axis; it occurs when $x$ is zero.
 
 ---
 

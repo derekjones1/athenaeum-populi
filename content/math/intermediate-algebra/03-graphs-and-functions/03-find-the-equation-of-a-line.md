@@ -933,6 +933,14 @@ lines. Do they appear perpendicular?
   hint="A line perpendicular to a horizontal line is vertical and keeps the point’s $x$-coordinate."
 >}}
 
+## Key terms
+
+**point-slope form** — the form $y-y_1=m(x-x_1)$ of an equation of a line
+with slope $m$ containing the point $(x_1,y_1)$. **parallel lines** — lines
+in the same plane that do not intersect and have the same slope.
+**perpendicular lines** — lines that intersect at a right angle and whose
+slopes are negative reciprocals.
+
 ## Practice
 
 ### Find an equation of the line given the slope and $y$-intercept
@@ -1014,14 +1022,6 @@ lines. Do they appear perpendicular?
   answerDisplay="$y=-\tfrac{4}{3}x$"
   hint="The perpendicular slope is the negative reciprocal of $\tfrac{3}{4}$. Use it with the point in point-slope form."
 >}}
-
-## Key terms
-
-**point-slope form** — the form $y-y_1=m(x-x_1)$ of an equation of a line
-with slope $m$ containing the point $(x_1,y_1)$. **parallel lines** — lines
-in the same plane that do not intersect and have the same slope.
-**perpendicular lines** — lines that intersect at a right angle and whose
-slopes are negative reciprocals.
 
 ---
 

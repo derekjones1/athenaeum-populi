@@ -525,6 +525,15 @@ $$\frac{p+q}{r} = \frac{-4+(-2)}{8} = \frac{-6}{8} = -\frac{3}{4}$$
   hint="Add $x$ and $y$ in the numerator first, then divide by $z$ and simplify."
 >}}
 
+## Key terms
+
+**common denominator** — a shared denominator that lets fractions be added
+or subtracted directly, by combining their numerators over it. **least
+common denominator (LCD)** — the least common multiple (LCM) of two
+fractions' denominators; the smallest denominator they can share.
+**complex fraction** — a fraction whose numerator, denominator, or both
+contain a fraction; the fraction bar indicates division.
+
 ## Practice
 
 ### Add or subtract fractions with a common denominator
@@ -594,15 +603,6 @@ $$\frac{p+q}{r} = \frac{-4+(-2)}{8} = \frac{-6}{8} = -\frac{3}{4}$$
   answerDisplay="$-\tfrac{5}{11}$"
   hint="Add $a$ and $b$ in the numerator and subtract them in the denominator first, then divide."
 >}}
-
-## Key terms
-
-**common denominator** — a shared denominator that lets fractions be added
-or subtracted directly, by combining their numerators over it. **least
-common denominator (LCD)** — the least common multiple (LCM) of two
-fractions' denominators; the smallest denominator they can share.
-**complex fraction** — a fraction whose numerator, denominator, or both
-contain a fraction; the fraction bar indicates division.
 
 ---
 

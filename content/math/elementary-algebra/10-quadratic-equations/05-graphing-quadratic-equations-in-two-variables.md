@@ -1975,6 +1975,17 @@ $y$-value of the quadratic equation. The maximum value of the quadratic is
   hint="Use $t=-\tfrac{b}{2a}$ with $a=-16$ and $b=128$."
 >}}
 
+## Key terms
+
+**quadratic equation in two variables** — an equation of the form
+$y=ax^2+bx+c$, where $a$, $b$, and $c$ are real numbers and $a\ne0$.
+**parabola** — the graph of a quadratic equation in two variables. **axis of
+symmetry** — the vertical line passing through the middle of the parabola.
+**vertex** — the point on the parabola that is on the axis of symmetry; it
+is the lowest or highest point on the parabola. **x-intercepts of a
+parabola** — the points where $y=0$. **y-intercept of a parabola** — the
+point where $x=0$.
+
 ## Practice
 
 ### Recognize the graph of a quadratic equation in two variables
@@ -2127,17 +2138,6 @@ two
   answerDisplay="\$400"
   hint="Substitute the selling price back into $R=-x^2+40x$."
 >}}
-
-## Key terms
-
-**quadratic equation in two variables** — an equation of the form
-$y=ax^2+bx+c$, where $a$, $b$, and $c$ are real numbers and $a\ne0$.
-**parabola** — the graph of a quadratic equation in two variables. **axis of
-symmetry** — the vertical line passing through the middle of the parabola.
-**vertex** — the point on the parabola that is on the axis of symmetry; it
-is the lowest or highest point on the parabola. **x-intercepts of a
-parabola** — the points where $y=0$. **y-intercept of a parabola** — the
-point where $x=0$.
 
 ---
 

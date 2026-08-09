@@ -232,6 +232,18 @@ area of the ceiling is $108$ square feet.
   hint="The area of a rectangle is the product of its length and its width."
 >}}
 
+## Key terms
+
+**factor** — a number being multiplied. **product** — the result of
+multiplying numbers. **multiplicative identity** — the number $1$; the
+product of any number and $1$ is the number. **Multiplication Property of
+Zero** — the product of any number and $0$ is $0$. **Commutative Property of
+Multiplication** — changing the order of the factors does not change their
+product. **partial product** — the product of one digit of a factor and the
+other factor, written when multiplying multi-digit numbers. **area** — a
+measure of the surface covered by a shape, in square units; for a rectangle,
+the product of length and width.
+
 ## Practice
 
 ### Use multiplication notation
@@ -373,18 +385,6 @@ forty-two times thirty-three; the sum of forty-two and thirty-three
   answerDisplay="\$3,600"
   hint="Multiply the number of shares by the amount each share gained."
 >}}
-
-## Key terms
-
-**factor** — a number being multiplied. **product** — the result of
-multiplying numbers. **multiplicative identity** — the number $1$; the
-product of any number and $1$ is the number. **Multiplication Property of
-Zero** — the product of any number and $0$ is $0$. **Commutative Property of
-Multiplication** — changing the order of the factors does not change their
-product. **partial product** — the product of one digit of a factor and the
-other factor, written when multiplying multi-digit numbers. **area** — a
-measure of the surface covered by a shape, in square units; for a rectangle,
-the product of length and width.
 
 ---
 

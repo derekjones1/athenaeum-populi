@@ -336,6 +336,15 @@ end of the three plays, the ball is on the $32$-yard line.
   hint="Start at 20, then apply each play in order: $20 - 9 + 7 - 4$."
 >}}
 
+## Key terms
+
+**neutral pair** — a positive counter and a negative counter together,
+whose value is $0$. **same signs rule** — to add two integers with the
+same sign, add their absolute values and keep the common sign.
+**different signs rule** — to add two integers with different signs,
+subtract the smaller absolute value from the larger, and keep the sign
+of the number with the larger absolute value.
+
 ## Practice
 
 ### Model addition of integers
@@ -515,15 +524,6 @@ end of the three plays, the ball is on the $32$-yard line.
   answerDisplay="$20$ feet below the surface"
   hint="Take depths below the surface as negative: start at $-8$, add $-17$ for diving deeper, then add $5$ for rising. The depth is the absolute value of the result."
 >}}
-
-## Key terms
-
-**neutral pair** — a positive counter and a negative counter together,
-whose value is $0$. **same signs rule** — to add two integers with the
-same sign, add their absolute values and keep the common sign.
-**different signs rule** — to add two integers with different signs,
-subtract the smaller absolute value from the larger, and keep the sign
-of the number with the larger absolute value.
 
 ---
 

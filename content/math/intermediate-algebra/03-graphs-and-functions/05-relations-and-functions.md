@@ -583,6 +583,19 @@ $5$ days. After $5$ days, there are $125$ unread emails in the account.
   hint="Substitute $14$ for $t$ and simplify."
 >}}
 
+## Key terms
+
+**relation** — any set of ordered pairs, $(x,y)$. **domain of a relation** —
+all the $x$-values in the ordered pairs. **range of a relation** — all the
+$y$-values in the ordered pairs. **mapping** — a representation of a
+relation in which arrows show the pairing of the elements of the domain with
+the elements of the range. **function** — a relation that assigns to each
+element in its domain exactly one element in the range. **function
+notation** — for the function $y=f(x)$, $f(x)$ is the range value $y$
+corresponding to the domain value $x$. **independent variable** — a variable
+that can be any value in the domain. **dependent variable** — a variable
+whose value depends on the independent variable.
+
 ## Practice
 
 ### Find the domain and range of a relation
@@ -716,19 +729,6 @@ C
   answerDisplay="$4{,}750$"
   hint="Substitute $1000$ for $x$, then simplify."
 >}}
-
-## Key terms
-
-**relation** — any set of ordered pairs, $(x,y)$. **domain of a relation** —
-all the $x$-values in the ordered pairs. **range of a relation** — all the
-$y$-values in the ordered pairs. **mapping** — a representation of a
-relation in which arrows show the pairing of the elements of the domain with
-the elements of the range. **function** — a relation that assigns to each
-element in its domain exactly one element in the range. **function
-notation** — for the function $y=f(x)$, $f(x)$ is the range value $y$
-corresponding to the domain value $x$. **independent variable** — a variable
-that can be any value in the domain. **dependent variable** — a variable
-whose value depends on the independent variable.
 
 ---
 

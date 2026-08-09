@@ -395,6 +395,15 @@ tall.
   hint="Set up $\tfrac{h}{50} = \tfrac{8}{10}$ (height over shadow for each object), then solve for $h$."
 >}}
 
+## Key terms
+
+**proportion** — an equation of the form $\tfrac{a}{b} = \tfrac{c}{d}$ (with
+$b \neq 0$ and $d \neq 0$) stating that two ratios are equal; read "$a$ is to
+$b$ as $c$ is to $d$." **proportional** — two quantities are proportional when
+they are related by a proportion. **similar figures** — two figures with the
+same shape but possibly different sizes, so their corresponding angles are
+equal and their corresponding sides are in the same ratio.
+
 ## Practice
 
 ### Solve proportions
@@ -433,15 +442,6 @@ tall.
   answerDisplay="$\tfrac{2}{3}$ foot (8 inches)"
   hint="Set up $\tfrac{2}{3} = \tfrac{h}{1}$ (height over shadow for each animal), then solve for $h$."
 >}}
-
-## Key terms
-
-**proportion** — an equation of the form $\tfrac{a}{b} = \tfrac{c}{d}$ (with
-$b \neq 0$ and $d \neq 0$) stating that two ratios are equal; read "$a$ is to
-$b$ as $c$ is to $d$." **proportional** — two quantities are proportional when
-they are related by a proportion. **similar figures** — two figures with the
-same shape but possibly different sizes, so their corresponding angles are
-equal and their corresponding sides are in the same ratio.
 
 ---
 

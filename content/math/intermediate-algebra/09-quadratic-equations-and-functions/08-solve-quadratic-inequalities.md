@@ -491,11 +491,56 @@ $(-\infty,\infty)$
 no solution
 {{< /multiplechoice >}}
 
-**Key terms.** A **quadratic inequality** is an inequality that contains a
+## Key terms
+
+A **quadratic inequality** is an inequality that contains a
 quadratic expression. **Zero partition numbers** are the solutions of the
 related quadratic equation; they divide the number line into intervals on
 which the quadratic expression has a constant sign.
 
+## Practice
+
+### Solve quadratic inequalities graphically
+
+{{< fillin
+  question="Solve $x^2+6x+5>0$ graphically. Write the solution in interval notation."
+  answer="(-\infty,-5)\cup(-1,\infty)"
+  answerDisplay="$(-\infty,-5)\cup(-1,\infty)$"
+  hint="Factor to find the $x$-intercepts $-5$ and $-1$, then identify where the upward-opening parabola is above the $x$-axis."
+>}}
+
+{{< fillin
+  question="Solve $x^2+4x+3\le0$ graphically. Write the solution in interval notation."
+  answer="[-3,-1]"
+  answerDisplay="$[-3,-1]$"
+  hint="Factor to find the $x$-intercepts $-3$ and $-1$, then identify where the upward-opening parabola is at or below the $x$-axis."
+>}}
+
+### Solve quadratic inequalities algebraically
+
+{{< fillin
+  question="Solve $x^2+3x-4\ge0$ algebraically. Write the solution in interval notation."
+  answer="(-\infty,-4]\cup[1,\infty)"
+  answerDisplay="$(-\infty,-4]\cup[1,\infty)$"
+  hint="Factor to find the zero partition numbers, then test the three intervals they create."
+>}}
+
+{{< fillin
+  question="Solve $x^2-4x+2\le0$ algebraically. Write the solution in interval notation."
+  answer="[2-\sqrt{2},2+\sqrt{2}]"
+  answerDisplay="$[2-\sqrt2,2+\sqrt2]$"
+  hint="Use the Quadratic Formula to find the zero partition numbers, then test the interval between them."
+>}}
+
+{{< multiplechoice
+  question="Solve $x^2+3x+5>0$ and write any solution in interval notation."
+  answer="$(-\infty,\infty)$"
+  hint="The discriminant is negative. Decide whether the upward-opening parabola lies above or below the $x$-axis."
+>}}
+$(-\infty,\infty)$
+no solution
+{{< /multiplechoice >}}
+
 <small>
-Adapted from [*Intermediate Algebra 2e*, Section 9.8](https://openstax.org/books/intermediate-algebra-2e/pages/9-8-solve-quadratic-inequalities) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: adapted the source to interactive web format, recreated instructional visuals accessibly, and converted Try It exercises to auto-graded questions.
+Adapted from [*Intermediate Algebra 2e*, Section 9.8](https://openstax.org/books/intermediate-algebra-2e/pages/9-8-solve-quadratic-inequalities) by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [OpenStax](https://openstax.org/). Changes: adapted the source to interactive web format, recreated instructional visuals accessibly, converted Try It exercises to auto-graded questions, and adapted selected end-of-section exercises into an interactive Practice block.
 </small>
