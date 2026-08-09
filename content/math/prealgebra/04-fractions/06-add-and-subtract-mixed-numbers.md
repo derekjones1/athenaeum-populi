@@ -56,6 +56,7 @@ to $1\tfrac{1}{5}$, we add that whole to the $3$ to get $4\tfrac{1}{5}$.
 {{< fillin
   question="Using the same idea, add and give the sum as a mixed number: $2\tfrac{5}{6} + 1\tfrac{5}{6}$"
   answer="4\frac{2}{3}"
+  answerForm="mixed-number"
   answerDisplay="$4\tfrac{2}{3}$"
   hint="Add the wholes and add the sixths; the fraction part will be an improper fraction — convert it and add the extra whole in."
 >}}
@@ -420,6 +421,7 @@ subtracting.
 {{< fillin
   question="Write the sum as a mixed number in simplified form: $2\tfrac{1}{6} + 5\tfrac{3}{4}$"
   answer="7\frac{11}{12}"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$7\tfrac{11}{12}$"
   hint="The LCD of $6$ and $4$ is $12$. Rewrite both fractions in twelfths before adding."
 >}}
@@ -427,6 +429,7 @@ subtracting.
 {{< fillin
   question="Write the sum as a mixed number in simplified form: $7\tfrac{2}{3} + 8\tfrac{1}{2}$"
   answer="16\frac{1}{6}"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$16\tfrac{1}{6}$"
   hint="Use the LCD $6$. The sixths will add to an improper fraction — convert it and carry the extra whole."
 >}}
@@ -434,6 +437,7 @@ subtracting.
 {{< fillin
   question="Write the difference as a mixed number in simplified form: $6\tfrac{4}{5} - 1\tfrac{1}{4}$"
   answer="5\frac{11}{20}"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$5\tfrac{11}{20}$"
   hint="The LCD of $5$ and $4$ is $20$. Once both fractions are in twentieths, the top one is larger, so no borrowing is needed."
 >}}
@@ -441,6 +445,7 @@ subtracting.
 {{< fillin
   question="Write the difference as a mixed number in simplified form: $2\tfrac{7}{8} - 4\tfrac{1}{3}$"
   answer="-1\frac{11}{24}"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$-1\tfrac{11}{24}$"
   hint="The second number is larger, so expect a negative answer. Convert to improper fractions over the LCD $24$ and subtract."
 >}}

@@ -503,6 +503,7 @@ unchanged.
 {{< fillin
   question="Use fraction circles to make wholes with 7 sixth-pieces. Write what you build as a mixed number."
   answer="1\frac{1}{6}"
+  answerForm="mixed-number"
   answerDisplay="$1\tfrac{1}{6}$"
   hint="Six sixth-pieces fill one whole circle. How many pieces are left over after that?"
 >}}
@@ -510,6 +511,7 @@ unchanged.
 {{< fillin
   question="Use fraction circles to make wholes with 7 fifth-pieces. Write what you build as a mixed number."
   answer="1\frac{2}{5}"
+  answerForm="mixed-number"
   answerDisplay="$1\tfrac{2}{5}$"
   hint="Five fifth-pieces fill one whole circle; the leftover pieces stay over the denominator $5$."
 >}}

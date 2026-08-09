@@ -3307,6 +3307,110 @@ multiplying the input by a constant $0<b<1$. **horizontal compression** — a
 transformation that compresses a function's graph horizontally, by multiplying
 the input by a constant $b>1$.
 
+## Practice
+
+### Graph functions using vertical and horizontal shifts
+
+{{< fillin
+  question="Write a formula for the function obtained when the graph of $f(x)=\lvert x\rvert$ is shifted down 3 units and to the right 1 unit."
+  answer="\lvert x-1\rvert-3"
+  answerDisplay="$g(x)=\lvert x-1\rvert-3$"
+  hint="A shift right 1 replaces $x$ with $x-1$ inside the function; a shift down 3 subtracts 3 from the result."
+>}}
+
+{{< fillin
+  question="Write a formula for the function obtained when the graph of $f(x)=\tfrac{1}{x^2}$ is shifted up 2 units and to the left 4 units."
+  answer="\frac{1}{(x+4)^2}+2"
+  answerDisplay="$g(x)=\tfrac{1}{(x+4)^2}+2$"
+  hint="A shift left 4 replaces $x$ with $x+4$ inside the function; a shift up 2 adds 2 to the result."
+>}}
+
+### Graph functions using reflections about the $x$-axis and the $y$-axis
+
+{{< multiplechoice
+  question="The graph of $g(x)=-f(x)$ is obtained from the graph of $f$ by which transformation?"
+  answer="Vertical reflection across the $x$-axis"
+  hint="Multiplying the output by $-1$ flips every point over the horizontal axis."
+>}}
+Vertical reflection across the $x$-axis
+Horizontal reflection across the $y$-axis
+Vertical stretch by a factor of 2
+Vertical shift down 1 unit
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Describe how the graph of $g(x)=3f(-x)$ is a transformation of the graph of $f$."
+  answer="Horizontal reflection across the $y$-axis and a vertical stretch by a factor of 3"
+  hint="The $-x$ inside $f$ reflects the graph horizontally; the factor of 3 outside stretches it vertically."
+>}}
+Horizontal reflection across the $y$-axis and a vertical stretch by a factor of 3
+Vertical reflection across the $x$-axis and a vertical stretch by a factor of 3
+Horizontal reflection across the $y$-axis and a horizontal compression by a factor of 3
+Horizontal shift left 3 units and a reflection across the $y$-axis
+{{< /multiplechoice >}}
+
+### Determine whether a function is even, odd, or neither from its graph
+
+{{< multiplechoice
+  question="Is the function $f(x)=3x^4$ even, odd, or neither?"
+  answer="even"
+  hint="Substitute $-x$ for $x$ and compare $f(-x)$ to $f(x)$."
+>}}
+even
+odd
+neither
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is the function $h(x)=\tfrac{1}{x}+3x$ even, odd, or neither?"
+  answer="odd"
+  hint="Substitute $-x$ for $x$; if the result is the opposite of $h(x)$, the function is odd."
+>}}
+even
+odd
+neither
+{{< /multiplechoice >}}
+
+### Graph functions using compressions and stretches
+
+{{< multiplechoice
+  question="Describe how the graph of $g(x)=4f(x)$ is a transformation of the graph of $f$."
+  answer="Vertical stretch by a factor of 4"
+  hint="Multiplying the output by a constant greater than 1 stretches the graph vertically."
+>}}
+Vertical stretch by a factor of 4
+Vertical compression by a factor of $\tfrac{1}{4}$
+Horizontal stretch by a factor of 4
+Horizontal compression by a factor of $\tfrac{1}{4}$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Describe how the graph of $g(x)=f(5x)$ is a transformation of the graph of $f$."
+  answer="Horizontal compression by a factor of $\tfrac{1}{5}$"
+  hint="Multiplying the input by a constant greater than 1 compresses the graph horizontally."
+>}}
+Horizontal compression by a factor of $\tfrac{1}{5}$
+Horizontal stretch by a factor of 5
+Vertical compression by a factor of $\tfrac{1}{5}$
+Vertical stretch by a factor of 5
+{{< /multiplechoice >}}
+
+### Combine transformations
+
+{{< fillin
+  question="The graph of $f(x)=\tfrac{1}{x^2}$ is vertically compressed by a factor of $\tfrac{1}{3}$, then shifted to the left 2 units and down 3 units. Write a formula for $g$."
+  answer="\frac{1}{3(x+2)^2}-3"
+  answerDisplay="$g(x)=\tfrac{1}{3(x+2)^2}-3$"
+  hint="Apply the compression first, then replace $x$ with $x+2$ for the horizontal shift, then subtract 3 for the vertical shift."
+>}}
+
+{{< fillin
+  question="The graph of $f(x)=x^2$ is vertically compressed by a factor of $\tfrac{1}{2}$, then shifted to the right 5 units and up 1 unit. Write a formula for $g$."
+  answer="\frac{1}{2}(x-5)^2+1"
+  answerDisplay="$g(x)=\tfrac{1}{2}(x-5)^2+1$"
+  hint="Apply the compression first, then replace $x$ with $x-5$ for the horizontal shift, then add 1 for the vertical shift."
+>}}
+
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 1.5: Transformation of Functions](https://openstax.org/books/precalculus-2e/pages/1-5-transformation-of-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible inline SVG generated from an explicit formula or point list — the half-circle example is drawn as exact elliptical arcs, and where the source distinguishes a transformed curve by colour this page draws it dashed, since the figures are monochrome; presented every function table as a Markdown table; omitted the opening funhouse-mirror photograph, whose point the surrounding prose already makes, along with the media links and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is a verbal description or a classification, and asking for individual table entries where the source answer is a whole table.</small>
+<small>This section is adapted from [Precalculus 2e, Section 1.5: Transformation of Functions](https://openstax.org/books/precalculus-2e/pages/1-5-transformation-of-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible inline SVG generated from an explicit formula or point list — the half-circle example is drawn as exact elliptical arcs, and where the source distinguishes a transformed curve by colour this page draws it dashed, since the figures are monochrome; presented every function table as a Markdown table; omitted the opening funhouse-mirror photograph, whose point the surrounding prose already makes, along with the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is a verbal description or a classification, and asking for individual table entries where the source answer is a whole table; and adapted selected end-of-section exercises into an interactive Practice block.</small>

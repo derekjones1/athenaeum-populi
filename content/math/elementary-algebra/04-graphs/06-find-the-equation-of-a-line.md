@@ -130,6 +130,7 @@ This is the equation of the horizontal line $y = 2$.
 {{< fillin
   question="Find an equation of a line with slope $m = -\tfrac{1}{3}$ that contains the point $(6, -4)$. Write the equation in slope-intercept form."
   answer="-\frac{1}{3}x-2"
+  answerForm="slope-intercept-form"
   answerDisplay="$y = -\tfrac{1}{3}x - 2$"
   hint="Substitute m and the point into $y - y_1 = m(x - x_1)$, then simplify and solve for y."
 >}}
@@ -195,6 +196,7 @@ no $y$, we cannot write it in slope-intercept form.
 {{< fillin
   question="Find an equation of a line that contains the points (3, 1) and (5, 6). Write the equation in slope-intercept form."
   answer="\frac{5}{2}x-\frac{13}{2}"
+  answerForm="slope-intercept-form"
   answerDisplay="$y = \tfrac{5}{2}x - \tfrac{13}{2}$"
   hint="Find the slope from the two points first, then substitute one point into $y - y_1 = m(x - x_1)$ and solve for y."
 >}}
@@ -237,6 +239,7 @@ $$
 {{< fillin
   question="Find an equation of a line parallel to the line $y = 3x + 1$ that contains the point $(4, 2)$. Write the equation in slope-intercept form."
   answer="3x-10"
+  answerForm="slope-intercept-form"
   answerDisplay="$y = 3x - 10$"
   hint="Parallel lines share the same slope. Substitute $m = 3$ and the point into $y - y_1 = m(x - x_1)$, then solve for y."
 >}}
@@ -303,6 +306,7 @@ perpendicular line is $x = -4$.
 {{< fillin
   question="Find an equation of a line perpendicular to the line $y = \tfrac{1}{2} x - 3$ that contains the point $(6, 4)$. Write the equation in slope-intercept form."
   answer="-2x+16"
+  answerForm="slope-intercept-form"
   answerDisplay="$y = -2x + 16$"
   hint="The perpendicular slope is the negative reciprocal of $\tfrac{1}{2}$. Substitute that slope and the point into $y - y_1 = m(x - x_1)$, then solve for y."
 >}}
@@ -332,6 +336,7 @@ when two points are known and the slope is found first.
 {{< fillin
   question="Find the equation of a line with slope $4$ and $y$-intercept $(0,1)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
   answer="4x+1"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=4x+1$"
   hint="Substitute $m=4$ and $b=1$ directly into $y=mx+b$."
 >}}
@@ -339,6 +344,7 @@ when two points are known and the slope is found first.
 {{< fillin
   question="Find the equation of a line with slope $8$ and $y$-intercept $(0,-6)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
   answer="8x-6"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=8x-6$"
   hint="Substitute $m=8$ and $b=-6$ directly into $y=mx+b$."
 >}}
@@ -348,6 +354,7 @@ when two points are known and the slope is found first.
 {{< fillin
   question="Find the equation of a line with $m=\tfrac{3}{8}$ that contains $(8,2)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
   answer="\frac{3}{8}x-1"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=\tfrac{3}{8}x-1$"
   hint="Put the slope and point into $y-y_1=m(x-x_1)$, then solve for $y$."
 >}}
@@ -355,6 +362,7 @@ when two points are known and the slope is found first.
 {{< fillin
   question="Find the equation of a line with $m=\tfrac{5}{6}$ that contains $(6,7)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
   answer="\frac{5}{6}x+2"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=\tfrac{5}{6}x+2$"
   hint="Use $y-7=\tfrac{5}{6}(x-6)$, then isolate $y$."
 >}}
@@ -364,6 +372,7 @@ when two points are known and the slope is found first.
 {{< fillin
   question="Find the equation of a line containing $(3,1)$ and $(2,5)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
   answer="-4x+13"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-4x+13$"
   hint="First compute $m=\tfrac{5-1}{2-3}$, then use either point in point-slope form and solve for $y$."
 >}}
@@ -371,6 +380,7 @@ when two points are known and the slope is found first.
 {{< fillin
   question="Find the equation of a line containing $(2,7)$ and $(3,8)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
   answer="x+5"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=x+5$"
   hint="Find the slope from the two points, then substitute one point into $y=mx+b$ to find $b$."
 >}}
@@ -380,6 +390,7 @@ when two points are known and the slope is found first.
 {{< fillin
   question="Find the equation of a line parallel to $y=3x+4$ that contains $(2,5)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
   answer="3x-1"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=3x-1$"
   hint="A parallel line has slope $3$. Substitute the slope and $(2,5)$ into point-slope form, then solve for $y$."
 >}}
@@ -387,6 +398,7 @@ when two points are known and the slope is found first.
 {{< fillin
   question="Find the equation of a line parallel to $y=-3x-1$ that contains $(2,-3)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
   answer="-3x+3"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-3x+3$"
   hint="Keep the parallel slope $-3$, use the given point, and solve $y+3=-3(x-2)$ for $y$."
 >}}
@@ -396,6 +408,7 @@ when two points are known and the slope is found first.
 {{< fillin
   question="Find the equation of a line perpendicular to $y=-x+5$ that contains $(3,3)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
   answer="x"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=x$"
   hint="The negative reciprocal of $-1$ is $1$. Use slope $1$ and the given point in point-slope form."
 >}}
@@ -403,6 +416,7 @@ when two points are known and the slope is found first.
 {{< fillin
   question="Find the equation of a line perpendicular to $y=\tfrac{2}{3}x-4$ that contains $(2,-4)$. Write it in slope-intercept form, and enter the expression that follows $y=$."
   answer="-\frac{3}{2}x-1"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-\tfrac{3}{2}x-1$"
   hint="Use the negative-reciprocal slope $-\tfrac{3}{2}$, substitute $(2,-4)$, and solve for $y$."
 >}}

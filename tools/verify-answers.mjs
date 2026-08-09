@@ -14,6 +14,25 @@
  *                                                 equivalent to the printed
  *                                                 subject expression
  *
+ * plus the function-shaped classes the precalculus chapters ask (each reads
+ * the printed $f(x)=…$ definitions off the WRITTEN spans, because the engine
+ * parses `f(x)` as Multiply):
+ *
+ *   function-evaluate    "Given $g(m)=\sqrt{m-4}$, evaluate $g(5)$" (nested too)
+ *   function-solve       "For $f(x)=8-3x$, solve $f(x)=-1$"
+ *   intercepts           x-/y-intercepts of a printed definition
+ *   average-rate         "…average rate of change of $f(x)=…$ on $[a,b]$"
+ *   function-combination "find and simplify $(fg)(x)$ / $f(g(x))$ / …"
+ *   inverse-formula      "Find $f^{-1}(x)$ for $f(x)=…$" (composes to identity)
+ *   inverse-swap         "Given that $h^{-1}(6)=2$, find $h(2)$"
+ *   slope                slope through two printed points / of a linear definition
+ *   intersection         the answered pair satisfies both printed lines
+ *   line-equation        the answered line (vertical included) passes through
+ *                        the printed points with the stated / parallel /
+ *                        perpendicular slope
+ *   circle-equation      the answered equation contains five known points of
+ *                        the circle named by the printed center and point
+ *
  * Equivalence is decided numerically: deterministic sample points for every
  * free variable, complex-aware comparison, N() only. simplify()/isEqual() are
  * deliberately never called — the §6 form work established that the
@@ -182,22 +201,31 @@ export function equivalentNumerically(left, right) {
   }
 
   const positive = needsPositiveDomain(left) || needsPositiveDomain(right);
-  let valid = 0;
-  for (let s = 0; s < SAMPLE_BASES.length && valid < 3; s += 1) {
-    const assignment = {};
-    names.forEach((name, i) => {
-      const base = SAMPLE_BASES[(s + 2 * i) % SAMPLE_BASES.length];
-      assignment[name] = (positive ? Math.abs(base) : base) + 0.0917 * i;
-    });
-    const a = numericValue(left, assignment);
-    const b = numericValue(right, assignment);
-    if (!a || !b) continue;
-    valid += 1;
-    if (!close(a, b)) {
-      return { equal: false, witness: { assignment, left: fmt(a), right: fmt(b) } };
+  // Two magnifications: the base samples (≤ ~3.2) sit inside every textbook
+  // pole gap, but a shifted radicand like $\sqrt{x-5}$ is undefined at all of
+  // them. When the first sweep cannot collect two valid points, a ×7 sweep
+  // (samples up to ~22, still safe under degree-8 powers) reaches those
+  // domains; it only runs as the fallback so the well-behaved majority keeps
+  // its small-sample behavior.
+  for (const scale of [1, 7.13]) {
+    let valid = 0;
+    for (let s = 0; s < SAMPLE_BASES.length && valid < 3; s += 1) {
+      const assignment = {};
+      names.forEach((name, i) => {
+        const base = SAMPLE_BASES[(s + 2 * i) % SAMPLE_BASES.length] * scale;
+        assignment[name] = (positive ? Math.abs(base) : base) + 0.0917 * i;
+      });
+      const a = numericValue(left, assignment);
+      const b = numericValue(right, assignment);
+      if (!a || !b) continue;
+      valid += 1;
+      if (!close(a, b)) {
+        return { equal: false, witness: { assignment, left: fmt(a), right: fmt(b) } };
+      }
     }
+    if (valid >= 2) return { equal: true };
   }
-  return valid >= 2 ? { equal: true } : { equal: null };
+  return { equal: null };
 }
 
 /* ------------------------------------------------------------- classifiers */
@@ -242,7 +270,7 @@ const describePoint = (witness) => {
   return `${at ? `at ${at}: ` : ''}${witness.left} vs ${witness.right}`;
 };
 
-function checkSolve(question, answer) {
+function checkSolve(question, answer, explicitTarget = null) {
   const spans = questionSpans(question).map(parseMath);
   const equations = spans.filter((expr) => expr?.operator === 'Equal');
   if (equations.length === 0) return skip('solve', 'no printed equation (word problem, inequality, or system notation)');
@@ -252,7 +280,7 @@ function checkSolve(question, answer) {
   const parts = splitTopLevelCommas(answer).map((part) => ({ raw: part, expr: parseMath(part) }));
   if (parts.some((part) => !part.expr)) return skip('solve', 'unparseable answer (e.g. "no solution")');
 
-  const explicit = question.match(SOLVE_FOR_RE)?.[1];
+  const explicit = explicitTarget ?? question.match(SOLVE_FOR_RE)?.[1];
   const answered = parts.map((part) => asAssignment(part.expr));
   const answeredVariable = answered[0] && answered.every((a) => a?.variable === answered[0].variable)
     ? answered[0].variable
@@ -375,19 +403,578 @@ function checkReexpression(question, answer, answerMode) {
   return pass('re-expression');
 }
 
+/* --------------------------------------------- function-shaped classifiers */
+/*
+ * The precalculus chapters ask about FUNCTIONS: evaluate $f(2)$ for a printed
+ * definition, solve $f(x)=4$, average rate of change over an interval,
+ * combinations and compositions, inverses, slopes, and line equations from
+ * points and slope constraints. None of that is readable through the engine's
+ * parse — `f(x)` boxes as `Multiply(f, x)` — so the definitions and asks are
+ * read off the WRITTEN spans, and only the resulting substituted expressions
+ * go to the engine. Every checker returns null when its gate does not match,
+ * a skip when it matched but could not fully read the exercise (table or
+ * graph data, piecewise cases the engine cannot parse), and a fail only for
+ * a concrete numeric disagreement.
+ */
+
+// `name(var) = RHS`, read from the written span.
+const DEFINITION_RE = /^([a-zA-Z])\s*\(\s*([a-zA-Z])\s*\)\s*=\s*([\s\S]+)$/;
+
+/**
+ * The function definitions a question prints. `f(x)=8-3x` defines f;
+ * `f(x)=-1` beside it is that ask's TARGET, not a definition, so a constant
+ * right side (no occurrence of the argument variable) never defines. A name
+ * printed with two variable definitions is dropped as ambiguous.
+ */
+function printedDefinitions(question) {
+  const defs = new Map();
+  const ambiguous = new Set();
+  for (const raw of questionSpans(question)) {
+    const m = raw.trim().match(DEFINITION_RE);
+    if (!m) continue;
+    const [, name, variable, rhsRaw] = m;
+    const rhs = parseMath(rhsRaw);
+    if (!rhs || !freeVariables(rhs).has(variable)) continue;
+    if (defs.has(name)) ambiguous.add(name);
+    else defs.set(name, { name, variable, rhs });
+  }
+  for (const name of ambiguous) defs.delete(name);
+  return defs;
+}
+
+/**
+ * The value of a written application chain — `g(5)`, `h(f(2))` — under the
+ * printed definitions, or null when it is not one. The innermost argument
+ * must be a closed numeral expression; the result may still carry free
+ * symbols (a definition like $g(x)=\tfrac{3}{4}f(x)$ with $f$ known only
+ * from a table), which the caller's numeric comparison reports unreadable.
+ */
+function applicationValue(text, defs) {
+  const m = text.trim().match(/^([a-zA-Z])\s*\(\s*([\s\S]+?)\s*\)$/);
+  if (!m || !defs.has(m[1])) return null;
+  let inner = applicationValue(m[2], defs);
+  if (!inner) {
+    const expr = parseMath(m[2]);
+    inner = expr && freeVariables(expr).size === 0 ? expr : null;
+  }
+  if (!inner) return null;
+  const def = defs.get(m[1]);
+  return def.rhs.subs({ [def.variable]: inner });
+}
+
+/** Numeric `(a, b)` pair spans and `f(2)=-11` fact spans, as [x, y] points. */
+function printedPoints(question) {
+  const points = [];
+  for (const raw of questionSpans(question)) {
+    const s = raw.trim().replace(/\\left|\\right/g, '');
+    const pair = s.match(/^\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)$/);
+    if (pair) {
+      points.push([Number(pair[1]), Number(pair[2])]);
+      continue;
+    }
+    const fact = s.match(/^[a-zA-Z]\s*\(\s*(-?[\d.]+)\s*\)\s*=\s*(-?[\d.]+)$/);
+    if (fact) points.push([Number(fact[1]), Number(fact[2])]);
+  }
+  return points;
+}
+
+const closeNumbers = (a, b) => Math.abs(a - b) <= 1e-8 * Math.max(1, Math.abs(a), Math.abs(b));
+
+/** A written scalar as a plain real number, or null. */
+function numericAnswer(raw) {
+  const expr = parseMath(raw);
+  if (!expr) return null;
+  const value = numericValue(expr);
+  return value && Math.abs(value.im) < 1e-12 ? value.re : null;
+}
+
+/** Evaluate a definition's RHS at a plain number, or null. */
+function definitionAt(def, x) {
+  return numericValue(def.rhs.subs({ [def.variable]: x }))?.re ?? null;
+}
+
+/** The slope of a LINEAR definition RHS, or null (three-point linearity check). */
+function linearSlope(def) {
+  const [y0, y1, y2] = [0, 1, 2].map((x) => definitionAt(def, x));
+  if (y0 === null || y1 === null || y2 === null) return null;
+  return closeNumbers(y2 - y1, y1 - y0) ? y1 - y0 : null;
+}
+
+/**
+ * The answered line as a function x → y, or null when the answer is not a
+ * line this checker can read. An equation answer (`y-5=2(x-1)`, either
+ * orientation) is solved for the output variable numerically — the equation
+ * is linear in y, so two samples pin the root. A bare expression (`3x-10`,
+ * `-\tfrac{1}{3}t+2` — "enter the expression that $y$ equals") is evaluated
+ * in its own variable, whatever the exercise calls it.
+ */
+function answeredLineAt(answer) {
+  const expr = parseMath(answer);
+  if (!expr) return null;
+  if (expr.operator === 'Equal') {
+    const vars = [...freeVariables(expr)];
+    if (vars.length !== 2 || !vars.includes('y')) return null;
+    const xName = vars.find((name) => name !== 'y');
+    const diff = ce.box(['Subtract', expr.ops[0], expr.ops[1]]);
+    return (x) => {
+      const g0 = numericValue(diff.subs({ [xName]: x, y: 0 }))?.re;
+      const g1 = numericValue(diff.subs({ [xName]: x, y: 1 }))?.re;
+      if (g0 == null || g1 == null || Math.abs(g1 - g0) < 1e-12) return null;
+      return -g0 / (g1 - g0);
+    };
+  }
+  const vars = [...freeVariables(expr)];
+  if (vars.length > 1) return null;
+  return (x) => numericValue(expr, vars.length ? { [vars[0]]: x } : undefined)?.re ?? null;
+}
+
+/** "Given $g(m)=\sqrt{m-4}$, evaluate $g(5)$" — including nested $h(f(2))$. */
+function checkFunctionEvaluate(question, answer) {
+  const defs = printedDefinitions(question);
+  if (defs.size === 0) return null;
+  const asks = questionSpans(question)
+    .filter((raw) => !DEFINITION_RE.test(raw.trim()))
+    .map((raw) => applicationValue(raw, defs))
+    .filter(Boolean);
+  if (asks.length !== 1 || splitTopLevelCommas(answer).length > 1) return null;
+  // An evaluation must come out a closed number. A residual symbol means the
+  // definition leans on a function the question does not print ($g(x)=-f(x)$
+  // with $f$ known only from a table) — comparing would SAMPLE that symbol as
+  // a free variable and manufacture a disagreement with the right answer.
+  if (freeVariables(asks[0]).size > 0) {
+    return skip('function-evaluate', 'definition references a function the question does not print');
+  }
+  const answerExpr = parseMath(answer);
+  if (!answerExpr) return skip('function-evaluate', 'unparseable answer');
+  const { equal, witness } = equivalentNumerically(asks[0], answerExpr);
+  if (equal === false) {
+    return fail('function-evaluate', `the printed definition gives ${witness.left}, answer is ${witness.right}`);
+  }
+  if (equal === null) return skip('function-evaluate', 'not numerically checkable');
+  return pass('function-evaluate');
+}
+
+/** "For $f(x)=8-3x$, solve $f(x)=-1$" — every root must satisfy the target. */
+function checkFunctionSolve(question, answer) {
+  if (!/\bsolve\b|\bsuch that\b/i.test(question)) return null;
+  const defs = printedDefinitions(question);
+  if (defs.size === 0) return null;
+  const targets = [];
+  for (const raw of questionSpans(question)) {
+    const m = raw.trim().match(DEFINITION_RE);
+    if (!m || !defs.has(m[1]) || m[2] !== defs.get(m[1]).variable) continue;
+    const k = parseMath(m[3]);
+    if (k && freeVariables(k).size === 0) targets.push({ def: defs.get(m[1]), k });
+  }
+  if (targets.length !== 1) return null;
+  const { def, k } = targets[0];
+  // The same residual-symbol hazard as function-evaluate: a definition that
+  // references an unprinted function would sample it as a free variable.
+  if ([...freeVariables(def.rhs)].some((name) => name !== def.variable)) {
+    return skip('function-solve', 'definition references a function the question does not print');
+  }
+  const roots = splitTopLevelCommas(answer).map((part) => ({ raw: part, expr: parseMath(part) }));
+  if (roots.some((root) => !root.expr)) return skip('function-solve', 'unparseable answer (e.g. "no solution")');
+  for (const root of roots) {
+    const value = asAssignment(root.expr)?.value ?? root.expr;
+    const { equal, witness } = equivalentNumerically(def.rhs.subs({ [def.variable]: value }), k);
+    if (equal === false) {
+      return fail('function-solve', `root ${JSON.stringify(root.raw)} does not satisfy the target (${describePoint(witness)})`);
+    }
+    if (equal === null) return skip('function-solve', 'not numerically checkable');
+  }
+  return pass('function-solve');
+}
+
+/**
+ * Intercept asks against a printed definition. An $x$-intercept answer is a
+ * root of the RHS; a $y$-intercept (or "crosses the vertical axis") answer is
+ * the RHS at 0; ordered-pair answers are points that must lie on the graph,
+ * which covers the combined "y-intercept first, then both x-intercepts" ask
+ * without caring which intercept each pair is.
+ */
+function checkIntercepts(question, answer) {
+  const xAsk = /\$?x\$?-intercepts?|cross(?:es)?\b[^.?!]*horizontal axis/i.test(question);
+  const yAsk = /\$?y\$?-intercepts?|cross(?:es)?\b[^.?!]*vertical axis/i.test(question);
+  if (!xAsk && !yAsk) return null;
+  const defs = printedDefinitions(question);
+  if (defs.size !== 1) return null; // a graph or table intercept stays manual
+  const def = [...defs.values()][0];
+  const parts = splitTopLevelCommas(answer).map((part) => part.trim());
+  const pairs = parts.map((part) => part.replace(/\\left|\\right/g, '').match(/^\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)$/));
+  if (pairs.every(Boolean)) {
+    for (const pair of pairs) {
+      const y = definitionAt(def, Number(pair[1]));
+      if (y === null) return skip('intercepts', 'not numerically checkable');
+      if (!closeNumbers(y, Number(pair[2]))) {
+        return fail('intercepts', `(${pair[1]}, ${pair[2]}) is not on the graph: the definition gives ${y}`);
+      }
+    }
+    return pass('intercepts');
+  }
+  if (xAsk && !yAsk) {
+    for (const part of parts) {
+      const root = numericAnswer(part);
+      if (root === null) return skip('intercepts', 'unparseable answer');
+      const y = definitionAt(def, root);
+      if (y === null) return skip('intercepts', 'not numerically checkable');
+      if (!closeNumbers(y, 0)) return fail('intercepts', `x-intercept ${part} is not a root: the definition gives ${y}`);
+    }
+    return pass('intercepts');
+  }
+  if (yAsk && !xAsk && parts.length === 1) {
+    const y = definitionAt(def, 0);
+    const value = numericAnswer(parts[0]);
+    if (y === null || value === null) return skip('intercepts', 'not numerically checkable');
+    if (!closeNumbers(y, value)) return fail('intercepts', `the definition gives ${y} at 0, answer is ${value}`);
+    return pass('intercepts');
+  }
+  return null;
+}
+
+/** "Find the average rate of change of $f(x)=…$ on the interval $[a,b]$." */
+function checkAverageRate(question, answer) {
+  if (!/\bfind (?:and simplify )?the average rate of change\b/i.test(question)) return null;
+  const defs = printedDefinitions(question);
+  const interval = question.match(/on the interval\s*\$\\?[[(]\s*([^,$]+?)\s*,\s*([^\])$]+?)\s*\\?[\])]\$/i);
+  if (defs.size !== 1 || !interval) return null;
+  const def = [...defs.values()][0];
+  const [a, b] = [parseMath(interval[1]), parseMath(interval[2])];
+  const answerExpr = parseMath(answer);
+  if (!a || !b) return null;
+  if (!answerExpr) return skip('average-rate', 'unparseable answer');
+  const rate = ce.box(['Divide',
+    ['Subtract', def.rhs.subs({ [def.variable]: b }), def.rhs.subs({ [def.variable]: a })],
+    ['Subtract', b, a]]);
+  const { equal, witness } = equivalentNumerically(rate, answerExpr);
+  if (equal === false) {
+    return fail('average-rate', `the definition gives ${witness.left}, answer is ${witness.right}`);
+  }
+  if (equal === null) return skip('average-rate', 'not numerically checkable');
+  return pass('average-rate');
+}
+
+/**
+ * "Given $f(x)=…$ and $g(x)=…$, find and simplify $(fg)(x)$ / $(f-g)(x)$ /
+ * $\left(\tfrac{f}{g}\right)(x)$ / $f(g(x))$": build the combination from the
+ * printed definitions and compare. The composed expression is written in the
+ * ask's own variable, so definitions in $t$ compose cleanly with asks in $x$.
+ */
+function checkFunctionCombination(question, answer) {
+  const defs = printedDefinitions(question);
+  if (defs.size === 0 || !/\bfind\b/i.test(question)) return null;
+  const at = (name, variable) => {
+    const def = defs.get(name);
+    return def ? def.rhs.subs({ [def.variable]: variable }) : null;
+  };
+  const built = [];
+  for (const raw of questionSpans(question)) {
+    const s = raw.trim().replace(/\\left|\\right/g, '').replace(/\s+/g, '');
+    let m = s.match(/^([a-zA-Z])\(([a-zA-Z])\(([a-zA-Z])\)\)$/)
+      ?? s.match(/^\(([a-zA-Z])\\circ([a-zA-Z])\)\(([a-zA-Z])\)$/);
+    if (m) {
+      const inner = at(m[2], parseMath(m[3]));
+      const outer = inner && defs.has(m[1]) ? defs.get(m[1]).rhs.subs({ [defs.get(m[1]).variable]: inner }) : null;
+      if (outer) built.push(outer);
+      continue;
+    }
+    m = s.match(/^\(([a-zA-Z])([+\-])?([a-zA-Z])\)\(([a-zA-Z])\)$/);
+    if (m) {
+      const [left, right] = [at(m[1], parseMath(m[4])), at(m[3], parseMath(m[4]))];
+      if (left && right) built.push(ce.box([m[2] === '+' ? 'Add' : m[2] === '-' ? 'Subtract' : 'Multiply', left, right]));
+      continue;
+    }
+    m = s.match(/^\(?\\[tdc]?frac\{([a-zA-Z])\}\{([a-zA-Z])\}\)?\(([a-zA-Z])\)$/);
+    if (m) {
+      const [top, bottom] = [at(m[1], parseMath(m[3])), at(m[2], parseMath(m[3]))];
+      if (top && bottom) built.push(ce.box(['Divide', top, bottom]));
+    }
+  }
+  if (built.length !== 1 || splitTopLevelCommas(answer).length > 1) return null;
+  const answerExpr = parseMath(answer);
+  if (!answerExpr) return skip('function-combination', 'unparseable answer');
+  const { equal, witness } = equivalentNumerically(built[0], answerExpr);
+  if (equal === false) {
+    return fail('function-combination', `the built combination gives ${witness.left}, answer is ${witness.right} (${describePoint(witness)})`);
+  }
+  if (equal === null) return skip('function-combination', 'not numerically checkable');
+  return pass('function-combination');
+}
+
+/**
+ * "Find $f^{-1}(x)$ for $f(x)=…$": the answer composed with the definition
+ * must be the identity. The answer∘definition direction holds on the
+ * definition's own domain even when the inverse's domain is restricted
+ * ($f(x)=2-\sqrt{x}$ inverts to $(2-x)^2$ only for $x \le 2$, but
+ * $(2-(2-\sqrt{x}))^2 = x$ for every sampled $x \ge 0$), so either direction
+ * passing verifies; a wrong inverse fails both.
+ */
+function checkInverseFormula(question, answer) {
+  if (!/\^\{?-1\}?\(\s*[a-zA-Z]\s*\)/.test(question) && !/\bthe inverse of\b/i.test(question)) return null;
+  const defs = printedDefinitions(question);
+  if (defs.size !== 1) return null;
+  const def = [...defs.values()][0];
+  const answerExpr = parseMath(answer);
+  if (!answerExpr) return skip('inverse-formula', 'unparseable answer');
+  const answerVars = [...freeVariables(answerExpr)];
+  if (answerVars.length !== 1) return null;
+  const identity = parseMath(def.variable);
+  const outerFirst = equivalentNumerically(answerExpr.subs({ [answerVars[0]]: def.rhs }), identity);
+  if (outerFirst.equal === true) return pass('inverse-formula');
+  const innerFirst = equivalentNumerically(def.rhs.subs({ [def.variable]: answerExpr }), parseMath(answerVars[0]));
+  if (innerFirst.equal === true) return pass('inverse-formula');
+  if (outerFirst.equal === false && innerFirst.equal === false) {
+    return fail('inverse-formula', `composing with the definition does not give the identity (${describePoint(outerFirst.witness)})`);
+  }
+  return skip('inverse-formula', 'not numerically checkable');
+}
+
+/**
+ * "Given that $h^{-1}(6)=2$, find $h(2)$" (and the mirror): pure notation —
+ * the fact's input is the ask's answer whenever the ask flips the inverse
+ * and takes the fact's output as its input.
+ */
+function checkInverseSwap(question, answer) {
+  const facts = [];
+  for (const raw of questionSpans(question)) {
+    const m = raw.trim().match(/^([a-zA-Z])\s*(\^\{?-1\}?)?\s*\(\s*(-?[\d.]+)\s*\)\s*=\s*(-?[\d.]+)$/);
+    if (m) facts.push({ name: m[1], inverse: Boolean(m[2]), input: Number(m[3]), output: Number(m[4]) });
+  }
+  const askMatch = question.match(/\b(?:find|give|what is)\s+\$([a-zA-Z])\s*(\^\{?-1\}?)?\s*\(\s*(-?[\d.]+)\s*\)\$/i);
+  if (facts.length === 0 || !askMatch) return null;
+  const ask = { name: askMatch[1], inverse: Boolean(askMatch[2]), input: Number(askMatch[3]) };
+  const fact = facts.find((f) => f.name === ask.name && f.inverse !== ask.inverse && f.output === ask.input);
+  if (!fact) return null;
+  const value = numericAnswer(answer);
+  if (value === null) return skip('inverse-swap', 'unparseable answer');
+  if (!closeNumbers(value, fact.input)) {
+    return fail('inverse-swap', `the printed fact swaps to ${fact.input}, answer is ${value}`);
+  }
+  return pass('inverse-swap');
+}
+
+/** "Find the slope of the line through $(2,4)$ and $(4,10)$" — or of a printed linear definition. */
+function checkSlope(question, answer) {
+  if (!/\bfind the slope\b/i.test(question) || splitTopLevelCommas(answer).length > 1) return null;
+  const value = numericAnswer(answer);
+  const points = printedPoints(question);
+  const defs = printedDefinitions(question);
+  let slope = null;
+  if (points.length === 2 && points[0][0] !== points[1][0]) {
+    slope = (points[1][1] - points[0][1]) / (points[1][0] - points[0][0]);
+  } else if (points.length === 0 && defs.size === 1) {
+    slope = linearSlope([...defs.values()][0]);
+  }
+  if (slope === null) return null;
+  if (value === null) return skip('slope', 'unparseable answer');
+  if (!closeNumbers(value, slope)) {
+    return fail('slope', `the printed data gives slope ${slope}, answer is ${value}`);
+  }
+  return pass('slope');
+}
+
+/** "Find the point of intersection of the lines …": the pair satisfies both. */
+function checkIntersection(question, answer) {
+  if (!/\bpoints? of intersection\b/i.test(question)) return null;
+  const pair = answer.trim().replace(/\\left|\\right/g, '').match(/^\(\s*([^,]+)\s*,\s*([^)]+)\s*\)$/);
+  if (!pair) return null;
+  const [px, py] = [numericAnswer(pair[1]), numericAnswer(pair[2])];
+  if (px === null || py === null) return skip('intersection', 'unparseable answer');
+  const defs = printedDefinitions(question);
+  const lines = [...defs.values()].map((def) => () => {
+    const y = definitionAt(def, px);
+    return y === null ? null : closeNumbers(y, py);
+  });
+  for (const raw of questionSpans(question)) {
+    if (DEFINITION_RE.test(raw.trim())) continue;
+    const expr = parseMath(raw);
+    if (expr?.operator !== 'Equal') continue;
+    const vars = [...freeVariables(expr)];
+    if (vars.length === 0 || vars.some((name) => !'xy'.includes(name))) continue;
+    lines.push(() => {
+      const [left, right] = expr.ops.map((side) => numericValue(side.subs({ x: px, y: py }))?.re);
+      return left == null || right == null ? null : closeNumbers(left, right);
+    });
+  }
+  if (lines.length !== 2) return null;
+  for (const onLine of lines) {
+    const satisfied = onLine();
+    if (satisfied === null) return skip('intersection', 'not numerically checkable');
+    if (!satisfied) return fail('intersection', `(${px}, ${py}) does not satisfy both printed lines`);
+  }
+  return pass('intersection');
+}
+
+/**
+ * A line-equation ask with its data printed in the question: points (pair
+ * spans and $f(2)=-11$ facts), a stated slope ("a slope of $-2$", "$m =
+ * -\tfrac{3}{4}$"), or a parallel/perpendicular reference (a printed
+ * definition, a printed $y=mx+b$ span, or "the points $P$ and $Q$" naming
+ * the reference against "the point $R$" naming the target). The answered
+ * line — point-slope, slope-intercept, or the bare expression after $y=$ —
+ * must pass through every data point and carry the required slope. Two
+ * constraints determine a line, so fewer (a table, a graph, prose data)
+ * skips rather than guessing.
+ */
+function checkLineEquation(question, answer) {
+  if (!/\b(?:write|find)\b[^.?!]*\b(?:equation|linear function|point-slope form|slope-intercept form)\b/i.test(question)
+    && !/expression that \$y\$ equals/i.test(question)) return null;
+  if (splitTopLevelCommas(answer).length > 1) return null;
+  let points = printedPoints(question);
+  let requiredSlope = null;
+  for (const raw of questionSpans(question)) {
+    const assignment = asAssignment(parseMath(raw));
+    if (assignment?.variable === 'm') requiredSlope = numericValue(assignment.value)?.re ?? null;
+  }
+  if (requiredSlope === null) {
+    const stated = question.match(/slope(?: of)?\s*\$([^$]+)\$/i);
+    if (stated) {
+      const expr = parseMath(stated[1]);
+      const stated_value = expr && numericValue(asAssignment(expr)?.value ?? expr);
+      requiredSlope = stated_value && Math.abs(stated_value.im) < 1e-12 ? stated_value.re : null;
+    }
+  }
+  const orientation = /perpendicular/i.test(question) ? 'perpendicular' : /parallel/i.test(question) ? 'parallel' : null;
+  if (orientation) {
+    let reference = null;
+    const defs = printedDefinitions(question);
+    if (defs.size === 1) reference = linearSlope([...defs.values()][0]);
+    if (reference === null) {
+      for (const raw of questionSpans(question)) {
+        const expr = parseMath(raw);
+        const line = asAssignment(expr);
+        if (line?.variable === 'y') reference = linearSlope({ variable: 'x', rhs: line.value });
+      }
+    }
+    if (reference === null && points.length === 3) {
+      // "passes through the points $P$ and $Q$. Find the equation of a
+      // perpendicular line that passes through the point $R$."
+      const ref = question.match(/the points\s*\$\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)\$\s*and\s*\$\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)\$/i);
+      const target = question.match(/the point\s*\$\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)\$/i);
+      if (ref && target && Number(ref[1]) !== Number(ref[3])) {
+        reference = (Number(ref[4]) - Number(ref[2])) / (Number(ref[3]) - Number(ref[1]));
+        points = [[Number(target[1]), Number(target[2])]];
+      }
+    }
+    if (reference === null || (orientation === 'perpendicular' && reference === 0)) return null;
+    requiredSlope = orientation === 'parallel' ? reference : -1 / reference;
+  }
+  if (points.length + (requiredSlope !== null ? 1 : 0) < 2) return null;
+
+  // `x = 5` — the vertical line through points that share an x-coordinate.
+  // answeredLineAt cannot solve it for y, but the check is direct.
+  const answerExpr = parseMath(answer);
+  if (answerExpr?.operator === 'Equal' && !freeVariables(answerExpr).has('y')) {
+    const vars = [...freeVariables(answerExpr)];
+    if (vars.length !== 1 || requiredSlope !== null || points.length < 2) {
+      return skip('line-equation', 'answer is not a line the checker can read');
+    }
+    const diff = ce.box(['Subtract', answerExpr.ops[0], answerExpr.ops[1]]);
+    const g0 = numericValue(diff.subs({ [vars[0]]: 0 }))?.re;
+    const g1 = numericValue(diff.subs({ [vars[0]]: 1 }))?.re;
+    if (g0 == null || g1 == null || Math.abs(g1 - g0) < 1e-12) {
+      return skip('line-equation', 'answer is not a line the checker can read');
+    }
+    const c = -g0 / (g1 - g0);
+    for (const [px] of points) {
+      if (!closeNumbers(px, c)) {
+        return fail('line-equation', `the vertical line x=${c} misses the printed point with x=${px}`);
+      }
+    }
+    return pass('line-equation');
+  }
+
+  const lineAt = answeredLineAt(answer);
+  if (!lineAt) return skip('line-equation', 'answer is not a line the checker can read');
+  const [y0, y1, y2] = [0, 1, 2].map(lineAt);
+  if (y0 === null || y1 === null || y2 === null || !closeNumbers(y2 - y1, y1 - y0)) {
+    return skip('line-equation', 'answer is not a line the checker can read');
+  }
+  const slope = y1 - y0;
+  if (requiredSlope !== null && !closeNumbers(slope, requiredSlope)) {
+    return fail('line-equation', `the answered line has slope ${slope}, the printed data requires ${requiredSlope}`);
+  }
+  for (const [px, py] of points) {
+    const y = lineAt(px);
+    if (y === null) return skip('line-equation', 'not numerically checkable');
+    if (!closeNumbers(y, py)) {
+      return fail('line-equation', `the answered line misses the printed point (${px}, ${py}): it gives y=${y}`);
+    }
+  }
+  return pass('line-equation');
+}
+
+/** "If $x-8y^3=0$, express $y$ as a function of $x$" routes to the solve check. */
+function checkExpressAsFunction(question, answer) {
+  const m = question.match(/\bexpress\s+\$?([a-zA-Z])\$?\s+as a function of\b/i);
+  return m ? checkSolve(question, answer, m[1]) : null;
+}
+
+/**
+ * "Write the standard form of the equation of the circle with center $(h,k)$
+ * that also contains the point $(a,b)$": the printed data names one circle,
+ * and five of its points — the given point and the four compass points at
+ * radius $r = \operatorname{dist}(center, point)$ — must all satisfy the
+ * answered equation. Five points determine a conic, so no textual reading of
+ * the answer's $h$, $k$, $r^2$ is needed, and any value-different center or
+ * radius fails on at least one of them.
+ */
+function checkCircleEquation(question, answer) {
+  if (!/\bequation of the circle\b/i.test(question)) return null;
+  const center = question.match(/center\s*\$\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)\$/i);
+  if (!center) return null;
+  const h = Number(center[1]);
+  const k = Number(center[2]);
+  const others = printedPoints(question).filter(([x, y]) => !(closeNumbers(x, h) && closeNumbers(y, k)));
+  if (others.length !== 1) return null;
+  const answerExpr = parseMath(answer);
+  if (answerExpr?.operator !== 'Equal') return skip('circle-equation', 'answer is not an equation');
+  if ([...freeVariables(answerExpr)].some((name) => !'xy'.includes(name))) return null;
+  const diff = ce.box(['Subtract', answerExpr.ops[0], answerExpr.ops[1]]);
+  const r = Math.hypot(others[0][0] - h, others[0][1] - k);
+  const onCircle = [others[0], [h + r, k], [h - r, k], [h, k + r], [h, k - r]];
+  for (const [x, y] of onCircle) {
+    const value = numericValue(diff.subs({ x, y }))?.re;
+    if (value == null) return skip('circle-equation', 'not numerically checkable');
+    // The residual is compared against the equation's own scale (r^2), not
+    // against 1, or a large circle's float noise would read as a miss.
+    if (Math.abs(value) > 1e-8 * Math.max(1, r * r)) {
+      return fail('circle-equation', `the answered equation misses (${x}, ${y}), a point of the printed circle`);
+    }
+  }
+  return pass('circle-equation');
+}
+
+const FUNCTION_CLASS_CHECKS = [
+  checkInverseSwap, checkFunctionEvaluate, checkFunctionSolve, checkIntercepts,
+  checkAverageRate, checkFunctionCombination, checkInverseFormula, checkSlope,
+  checkIntersection, checkLineEquation, checkExpressAsFunction, checkCircleEquation,
+];
+
 /** Classify one fill-in and cross-check its answer. */
 export function analyzeFillin({ question = '', answer, answerMode }) {
   if (answer == null) return skip('none', 'no authored answer');
   if (APPROXIMATION_RE.test(question)) return skip('none', 'rounding/approximation ask');
-  if (SOLVE_RE.test(question)) return checkSolve(question, answer);
-  if (EVALUATE_RE.test(question)) {
+  let primary = null;
+  if (SOLVE_RE.test(question)) primary = checkSolve(question, answer);
+  else if (EVALUATE_RE.test(question)) {
     const result = checkEvaluateAt(question, answer);
     // "Evaluate: $9+5^3$" carries no given values — that is a plain
     // re-expression of printed arithmetic, which the third class covers.
-    if (!(result.status === 'skip' && result.reason === 'no given values')) return result;
+    if (!(result.status === 'skip' && result.reason === 'no given values')) primary = result;
   }
-  if (REEXPRESSION_RE.test(question)) return checkReexpression(question, answer, answerMode);
-  return skip('none', 'prompt class not mechanically checkable');
+  if (!primary && REEXPRESSION_RE.test(question)) primary = checkReexpression(question, answer, answerMode);
+  if (primary && primary.status !== 'skip') return primary;
+  // The function-shaped classes run on whatever the three primaries skipped.
+  // A null gate falls through; the first decisive result wins; a gated skip
+  // is kept as the reported reason only when the primaries had none.
+  let gated = null;
+  for (const check of FUNCTION_CLASS_CHECKS) {
+    const result = check(question, answer, answerMode);
+    if (result && result.status !== 'skip') return result;
+    gated = gated ?? result;
+  }
+  return primary ?? gated ?? skip('none', 'prompt class not mechanically checkable');
 }
 
 /* ------------------------------------------------------------------ driver */
@@ -428,7 +1015,7 @@ function main() {
   }
   if (!existsSync(root)) throw new Error(`Content root not found: ${root}`);
 
-  const passes = { solve: 0, 'evaluate-at': 0, 're-expression': 0 };
+  const passes = new Map();
   const skips = new Map();
   const failures = [];
   let total = 0;
@@ -437,7 +1024,7 @@ function main() {
     for (const { line, params } of extractFillins(readFileSync(file, 'utf8'))) {
       total += 1;
       const result = analyzeFillin(params);
-      if (result.status === 'pass') passes[result.rule] += 1;
+      if (result.status === 'pass') passes.set(result.rule, (passes.get(result.rule) ?? 0) + 1);
       else if (result.status === 'skip') skips.set(result.reason, (skips.get(result.reason) ?? 0) + 1);
       else {
         failures.push({ file, line, params, result });
@@ -454,11 +1041,12 @@ function main() {
     console.error(`    ${result.detail}`);
   }
 
-  const verified = Object.values(passes).reduce((a, b) => a + b, 0);
+  const verified = [...passes.values()].reduce((a, b) => a + b, 0);
   const outOfScope = [...skips.values()].reduce((a, b) => a + b, 0);
+  const byRule = [...passes.entries()].sort((a, b) => b[1] - a[1])
+    .map(([rule, count]) => `${rule} ${count}`).join(', ');
   console.log(`${failures.length ? '✖' : '✓'} answer cross-check: ${verified}/${total} fill-ins mathematically verified `
-    + `(solve ${passes.solve}, evaluate ${passes['evaluate-at']}, re-expression ${passes['re-expression']}); `
-    + `${outOfScope} out of scope; ${failures.length} failure(s)`);
+    + `(${byRule}); ${outOfScope} out of scope; ${failures.length} failure(s)`);
   for (const [reason, count] of [...skips.entries()].sort((a, b) => b[1] - a[1])) {
     console.log(`    · out of scope (${count}): ${reason}`);
   }

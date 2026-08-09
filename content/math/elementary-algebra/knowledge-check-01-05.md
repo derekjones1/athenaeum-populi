@@ -609,18 +609,21 @@ weight: 6
 {{< fillin
   question="Find the equation of the line with slope $-\tfrac{3}{4}$ and $y$-intercept $(0, -2)$. Write the equation in slope-intercept form."
   answer="-\frac{3}{4}x-2"
+  answerForm="slope-intercept-form"
   answerDisplay="$y = -\tfrac{3}{4}x - 2$"
 >}}
 
 {{< fillin
   question="Find the equation of the line containing the points $(10, 1)$ and $(6, -1)$. Write the equation in slope-intercept form."
   answer="\frac{1}{2}x-4"
+  answerForm="slope-intercept-form"
   answerDisplay="$y = \tfrac{1}{2}x - 4$"
 >}}
 
 {{< fillin
   question="Find the equation of the line perpendicular to the line $y = \tfrac{5}{4}x + 2$, containing the point $(-10, 3)$. Write the equation in slope-intercept form."
   answer="-\frac{4}{5}x-5"
+  answerForm="slope-intercept-form"
   answerDisplay="$y = -\tfrac{4}{5}x - 5$"
 >}}
 

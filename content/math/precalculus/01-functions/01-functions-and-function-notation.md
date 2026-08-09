@@ -2296,6 +2296,409 @@ whether a vertical line intersects the graph no more than once. **horizontal
 line test** — a method of testing whether a function is one-to-one by
 determining whether any horizontal line intersects the graph more than once.
 
+## Practice
+
+### Determine whether a relation represents a function
+
+{{< multiplechoice
+  question="Does $3x^2+y=14$ describe $y$ as a function of $x$?"
+  answer="function"
+  hint="Solve for $y$ in terms of $x$ and check whether each $x$ gives a single output."
+>}}
+function
+not a function
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Does $y^2=x^2$ describe $y$ as a function of $x$?"
+  answer="not a function"
+  hint="Solve for $y$: does a nonzero value of $x$ give one value of $y$ or two?"
+>}}
+function
+not a function
+{{< /multiplechoice >}}
+
+### Find the value of a function
+
+{{< fillin
+  question="For $f(x)=8-3x$, evaluate $f(-2)$."
+  answer="14"
+  hint="Substitute $-2$ for $x$ and simplify."
+>}}
+
+{{< fillin
+  question="For $f(x)=8-3x$, solve $f(x)=-1$."
+  answer="3"
+  answerDisplay="$x=3$"
+  hint="Set $8-3x$ equal to $-1$ and solve for $x$."
+>}}
+
+{{< fillin
+  question="For $f(x)=x^2-3x$, evaluate $f(5)$."
+  answer="10"
+  hint="Substitute $5$ for $x$ and simplify."
+>}}
+
+{{< fillin
+  question="For $f(x)=x^2-3x$, solve $f(x)=4$. Enter both solutions, separated by a comma."
+  answer="-1,4"
+  answerMode="unordered"
+  answerDisplay="$x=-1$ or $x=4$"
+  hint="Move every term to one side and factor the resulting quadratic."
+>}}
+
+The table below gives selected values of a function $f$.
+
+| $x$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| $f(x)$ | 74 | 28 | 1 | 53 | 56 | 3 | 36 | 45 | 14 | 47 |
+
+{{< fillin
+  question="Using the table above, solve $f(x)=1$."
+  answer="2"
+  answerDisplay="$x=2$"
+  hint="Scan the table for the input whose output is $1$."
+>}}
+
+### Determine whether a function is one-to-one
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"An ellipse centered at (−2, 1), spanning x from −3 to −1 and y from −1 to 3.","xMin":-5,"xMax":2,"yMin":-2,"yMax":4,"circles":[{"at":[-2,1],"rx":1,"ry":2}],"tickLabels":true}'>
+<svg role="img" aria-label="An ellipse centered at (−2, 1), spanning x from −3 to −1 and y from −1 to 3." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 172" width="192" height="172" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="146" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="46" y1="146" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="66" y1="146" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="86" y1="146" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="106" y1="146" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="146" y1="146" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="166" y1="146" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="146" x2="166" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="126" x2="166" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="86" x2="166" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="66" x2="166" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="46" x2="166" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="106" x2="168" y2="106" stroke="currentColor" stroke-width="1"/>
+  <line x1="126" y1="24" x2="126" y2="148" stroke="currentColor" stroke-width="1"/>
+  <polygon points="178,106 168,111 168,101" fill="currentColor"/>
+  <polygon points="126,14 131,24 121,24" fill="currentColor"/>
+  <polygon points="14,106 24,101 24,111" fill="currentColor"/>
+  <polygon points="126,158 121,148 131,148" fill="currentColor"/>
+  <text x="176" y="98" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="134" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="103" x2="26" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="121" font-size="11" fill="currentColor" text-anchor="middle">−5</text>
+  <line x1="46" y1="103" x2="46" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="46" y="121" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
+  <line x1="66" y1="103" x2="66" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="66" y="121" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
+  <line x1="86" y1="103" x2="86" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="86" y="121" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="106" y1="103" x2="106" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="106" y="121" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <line x1="146" y1="103" x2="146" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="146" y="121" font-size="11" fill="currentColor" text-anchor="middle">1</text>
+  <line x1="166" y1="103" x2="166" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="166" y="121" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="123" y1="146" x2="129" y2="146" stroke="currentColor" stroke-width="1"/>
+  <text x="120" y="150" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="123" y1="126" x2="129" y2="126" stroke="currentColor" stroke-width="1"/>
+  <text x="120" y="130" font-size="11" fill="currentColor" text-anchor="end">−1</text>
+  <line x1="123" y1="86" x2="129" y2="86" stroke="currentColor" stroke-width="1"/>
+  <text x="120" y="90" font-size="11" fill="currentColor" text-anchor="end">1</text>
+  <line x1="123" y1="66" x2="129" y2="66" stroke="currentColor" stroke-width="1"/>
+  <text x="120" y="70" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="123" y1="46" x2="129" y2="46" stroke="currentColor" stroke-width="1"/>
+  <text x="120" y="50" font-size="11" fill="currentColor" text-anchor="end">3</text>
+  <line x1="123" y1="26" x2="129" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="120" y="30" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <ellipse cx="86" cy="86" rx="20" ry="40" fill="none" stroke="currentColor" stroke-width="1.8"/>
+</svg>
+</div>
+
+{{< multiplechoice
+  question="Is the relation graphed above a one-to-one function?"
+  answer="not a function"
+  hint="A one-to-one function must first be a function — check whether the graph passes the vertical line test."
+>}}
+one-to-one function
+function, but not one-to-one
+not a function
+{{< /multiplechoice >}}
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A steadily rising curve shaped like a cube root function, with an inflection point near (−2, 1), running from about (−5.2, −0.5) up to about (3.5, 2.8) and never turning back.","xMin":-5.5,"xMax":4,"yMin":-1,"yMax":3,"curves":[{"kind":"cbrt","a":1,"h":-2,"k":1,"from":-5.2,"to":3.5}],"tickLabels":true}'>
+<svg role="img" aria-label="A steadily rising curve shaped like a cube root function, with an inflection point near (−2, 1), running from about (−5.2, −0.5) up to about (3.5, 2.8) and never turning back." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242 132" width="242" height="132" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="106" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="46" y1="106" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="66" y1="106" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="86" y1="106" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="106" y1="106" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="126" y1="106" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="146" y1="106" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="166" y1="106" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="186" y1="106" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="206" y1="106" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="106" x2="216" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="66" x2="216" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="46" x2="216" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="216" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="86" x2="218" y2="86" stroke="currentColor" stroke-width="1"/>
+  <line x1="136" y1="24" x2="136" y2="108" stroke="currentColor" stroke-width="1"/>
+  <polygon points="228,86 218,91 218,81" fill="currentColor"/>
+  <polygon points="136,14 141,24 131,24" fill="currentColor"/>
+  <polygon points="14,86 24,81 24,91" fill="currentColor"/>
+  <polygon points="136,118 131,108 141,108" fill="currentColor"/>
+  <text x="226" y="78" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="144" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="36" y1="83" x2="36" y2="89" stroke="currentColor" stroke-width="1"/>
+  <text x="36" y="101" font-size="11" fill="currentColor" text-anchor="middle">−5</text>
+  <line x1="56" y1="83" x2="56" y2="89" stroke="currentColor" stroke-width="1"/>
+  <text x="56" y="101" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
+  <line x1="76" y1="83" x2="76" y2="89" stroke="currentColor" stroke-width="1"/>
+  <text x="76" y="101" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
+  <line x1="96" y1="83" x2="96" y2="89" stroke="currentColor" stroke-width="1"/>
+  <text x="96" y="101" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="116" y1="83" x2="116" y2="89" stroke="currentColor" stroke-width="1"/>
+  <text x="116" y="101" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <line x1="156" y1="83" x2="156" y2="89" stroke="currentColor" stroke-width="1"/>
+  <text x="156" y="101" font-size="11" fill="currentColor" text-anchor="middle">1</text>
+  <line x1="176" y1="83" x2="176" y2="89" stroke="currentColor" stroke-width="1"/>
+  <text x="176" y="101" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="196" y1="83" x2="196" y2="89" stroke="currentColor" stroke-width="1"/>
+  <text x="196" y="101" font-size="11" fill="currentColor" text-anchor="middle">3</text>
+  <line x1="216" y1="83" x2="216" y2="89" stroke="currentColor" stroke-width="1"/>
+  <text x="216" y="101" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="133" y1="106" x2="139" y2="106" stroke="currentColor" stroke-width="1"/>
+  <text x="130" y="110" font-size="11" fill="currentColor" text-anchor="end">−1</text>
+  <line x1="133" y1="66" x2="139" y2="66" stroke="currentColor" stroke-width="1"/>
+  <text x="130" y="70" font-size="11" fill="currentColor" text-anchor="end">1</text>
+  <line x1="133" y1="46" x2="139" y2="46" stroke="currentColor" stroke-width="1"/>
+  <text x="130" y="50" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="133" y1="26" x2="139" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="130" y="30" font-size="11" fill="currentColor" text-anchor="end">3</text>
+  <polyline points="39.9,94.2 41.3,94 42.7,93.7 44.1,93.5 45.5,93.2 46.9,93 48.2,92.7 49.6,92.5 50.9,92.2 52.1,92 53.4,91.7 54.6,91.5 55.8,91.2 57,91 58.1,90.7 59.3,90.5 60.4,90.2 61.5,90 62.5,89.7 63.6,89.5 64.6,89.2 65.6,89 66.6,88.7 67.5,88.5 68.5,88.2 69.4,88 70.3,87.7 71.2,87.5 72,87.3 72.8,87 73.7,86.8 74.5,86.5 75.2,86.3 76,86 76.7,85.8 77.4,85.5 78.1,85.3 78.8,85 79.5,84.8 80.1,84.5 80.8,84.3 81.4,84 82,83.8 82.6,83.5 83.1,83.3 83.7,83 84.2,82.8 84.7,82.5 85.2,82.3 85.7,82 86.2,81.8 86.7,81.5 87.1,81.3 87.5,81 87.9,80.8 88.3,80.5 88.7,80.3 89.1,80 89.5,79.8 89.8,79.5 90.1,79.3 90.5,79 90.8,78.8 91.1,78.5 91.4,78.3 91.6,78 91.9,77.8 92.2,77.5 92.4,77.3 92.6,77 92.9,76.8 93.1,76.5 93.3,76.3 93.5,76 93.7,75.8 93.8,75.5 94,75.3 94.2,75 94.3,74.8 94.4,74.5 94.6,74.3 94.7,74 94.8,73.8 94.9,73.5 95,73.3 95.1,73 95.2,72.8 95.3,72.6 95.4,72.3 95.4,72.1 95.5,71.8 95.6,71.6 95.6,71.3 95.7,71.1 95.7,70.8 95.8,70.6 95.8,70.3 95.8,70.1 95.9,69.8 95.9,69.6 95.9,69.3 95.9,69.1 95.9,68.8 96,68.6 96,68.3 96,68.1 96,67.8 96,67.6 96,67.3 96,67.1 96,66.8 96,66.6 96,66.3 96,66.1 96,65.8 96,65.6 96,65.3 96,65.1 96,64.8 96,64.6 96,64.3 96,64.1 96,63.8 96,63.6 96,63.3 96.1,63.1 96.1,62.8 96.1,62.6 96.1,62.3 96.1,62.1 96.2,61.8 96.2,61.6 96.3,61.3 96.3,61.1 96.3,60.8 96.4,60.6 96.5,60.3 96.5,60.1 96.6,59.8 96.7,59.6 96.7,59.3 96.8,59.1 96.9,58.8 97,58.6 97.1,58.4 97.2,58.1 97.4,57.9 97.5,57.6 97.6,57.4 97.8,57.1 97.9,56.9 98.1,56.6 98.2,56.4 98.4,56.1 98.6,55.9 98.8,55.6 99,55.4 99.2,55.1 99.5,54.9 99.7,54.6 99.9,54.4 100.2,54.1 100.5,53.9 100.7,53.6 101,53.4 101.3,53.1 101.7,52.9 102,52.6 102.3,52.4 102.7,52.1 103,51.9 103.4,51.6 103.8,51.4 104.2,51.1 104.6,50.9 105.1,50.6 105.5,50.4 106,50.1 106.5,49.9 107,49.6 107.5,49.4 108,49.1 108.5,48.9 109.1,48.6 109.7,48.4 110.3,48.1 110.9,47.9 111.5,47.6 112.1,47.4 112.8,47.1 113.4,46.9 114.1,46.6 114.8,46.4 115.6,46.1 116.3,45.9 117.1,45.6 117.9,45.4 118.7,45.1 119.5,44.9 120.3,44.6 121.2,44.4 122.1,44.1 123,43.9 123.9,43.7 124.8,43.4 125.8,43.2 126.8,42.9 127.8,42.7 128.8,42.4 129.9,42.2 131,41.9 132.1,41.7 133.2,41.4 134.3,41.2 135.5,40.9 136.7,40.7 137.9,40.4 139.1,40.2 140.4,39.9 141.7,39.7 143,39.4 144.3,39.2 145.7,38.9 147,38.7 148.4,38.4 149.9,38.2 151.3,37.9 152.8,37.7 154.3,37.4 155.9,37.2 157.4,36.9 159,36.7 160.7,36.4 162.3,36.2 164,35.9 165.7,35.7 167.4,35.4 169.2,35.2 171,34.9 172.8,34.7 174.6,34.4 176.5,34.2 178.4,33.9 180.4,33.7 182.3,33.4 184.3,33.2 186.3,32.9 188.4,32.7 190.5,32.4 192.6,32.2 194.8,31.9 196.9,31.7 198,31.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <polygon points="32,95.5 41.1,89 42.7,98.8" fill="currentColor"/>
+  <polygon points="206,30.7 196.6,36.8 195.5,26.8" fill="currentColor"/>
+</svg>
+</div>
+
+{{< multiplechoice
+  question="Is the relation graphed above a one-to-one function?"
+  answer="one-to-one function"
+  hint="The curve never doubles back on itself, so ask whether any horizontal line could cross it twice."
+>}}
+one-to-one function
+function, but not one-to-one
+not a function
+{{< /multiplechoice >}}
+
+### Use the vertical line test to identify functions
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A graph that is constant at y = −2 for x at or below −1, rises in a straight line through the origin to (1, 2), then stays constant at y = 2 for x at or above 1.","xMin":-5,"xMax":5,"yMin":-4,"yMax":4,"polylines":[{"through":[[-4,-2],[-1,-2],[1,2],[4,2]],"arrows":true}],"tickLabels":true}'>
+<svg role="img" aria-label="A graph that is constant at y = −2 for x at or below −1, rises in a straight line through the origin to (1, 2), then stays constant at y = 2 for x at or above 1." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 212" width="252" height="212" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="186" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="46" y1="186" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="66" y1="186" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="86" y1="186" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="106" y1="186" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="146" y1="186" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="166" y1="186" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="186" y1="186" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="206" y1="186" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="226" y1="186" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="186" x2="226" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="166" x2="226" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="146" x2="226" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="126" x2="226" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="86" x2="226" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="66" x2="226" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="46" x2="226" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="106" x2="228" y2="106" stroke="currentColor" stroke-width="1"/>
+  <line x1="126" y1="24" x2="126" y2="188" stroke="currentColor" stroke-width="1"/>
+  <polygon points="238,106 228,111 228,101" fill="currentColor"/>
+  <polygon points="126,14 131,24 121,24" fill="currentColor"/>
+  <polygon points="14,106 24,101 24,111" fill="currentColor"/>
+  <polygon points="126,198 121,188 131,188" fill="currentColor"/>
+  <text x="236" y="98" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="134" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="103" x2="26" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="121" font-size="11" fill="currentColor" text-anchor="middle">−5</text>
+  <line x1="46" y1="103" x2="46" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="46" y="121" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
+  <line x1="66" y1="103" x2="66" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="66" y="121" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
+  <line x1="86" y1="103" x2="86" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="86" y="121" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="106" y1="103" x2="106" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="106" y="121" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <line x1="146" y1="103" x2="146" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="146" y="121" font-size="11" fill="currentColor" text-anchor="middle">1</text>
+  <line x1="166" y1="103" x2="166" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="166" y="121" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="186" y1="103" x2="186" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="186" y="121" font-size="11" fill="currentColor" text-anchor="middle">3</text>
+  <line x1="206" y1="103" x2="206" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="206" y="121" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="226" y1="103" x2="226" y2="109" stroke="currentColor" stroke-width="1"/>
+  <text x="226" y="121" font-size="11" fill="currentColor" text-anchor="middle">5</text>
+  <line x1="123" y1="186" x2="129" y2="186" stroke="currentColor" stroke-width="1"/>
+  <text x="120" y="190" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="123" y1="166" x2="129" y2="166" stroke="currentColor" stroke-width="1"/>
+  <text x="120" y="170" font-size="11" fill="currentColor" text-anchor="end">−3</text>
+  <line x1="123" y1="146" x2="129" y2="146" stroke="currentColor" stroke-width="1"/>
+  <text x="120" y="150" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="123" y1="126" x2="129" y2="126" stroke="currentColor" stroke-width="1"/>
+  <text x="120" y="130" font-size="11" fill="currentColor" text-anchor="end">−1</text>
+  <line x1="123" y1="86" x2="129" y2="86" stroke="currentColor" stroke-width="1"/>
+  <text x="120" y="90" font-size="11" fill="currentColor" text-anchor="end">1</text>
+  <line x1="123" y1="66" x2="129" y2="66" stroke="currentColor" stroke-width="1"/>
+  <text x="120" y="70" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="123" y1="46" x2="129" y2="46" stroke="currentColor" stroke-width="1"/>
+  <text x="120" y="50" font-size="11" fill="currentColor" text-anchor="end">3</text>
+  <line x1="123" y1="26" x2="129" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="120" y="30" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <polyline points="54,146 106,146 146,66 198,66" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <polygon points="46,146 56,141 56,151" fill="currentColor"/>
+  <polygon points="206,66 196,71 196,61" fill="currentColor"/>
+</svg>
+</div>
+
+{{< multiplechoice
+  question="Does the graph shown above pass the vertical line test?"
+  answer="function"
+  hint="Check whether any vertical line could cross the graph more than once."
+>}}
+function
+not a function
+{{< /multiplechoice >}}
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"Two curves leaving the origin, nearly flat at first and curving away from the x-axis as they extend to the right: the upper branch rises toward about (4.5, 5) and the lower branch falls toward about (4.5, −5).","xMin":-1,"xMax":6,"yMin":-6,"yMax":6,"quadratics":[{"a":0.25,"from":0,"to":4.5,"arrows":"end"},{"a":-0.25,"from":0,"to":4.5,"arrows":"end"}],"tickLabels":true}'>
+<svg role="img" aria-label="Two curves leaving the origin, nearly flat at first and curving away from the x-axis as they extend to the right: the upper branch rises toward about (4.5, 5) and the lower branch falls toward about (4.5, −5)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 292" width="192" height="292" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="66" y1="266" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="86" y1="266" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="106" y1="266" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="126" y1="266" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="146" y1="266" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="166" y1="266" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="166" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="246" x2="166" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="226" x2="166" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="206" x2="166" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="186" x2="166" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="166" x2="166" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="126" x2="166" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="106" x2="166" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="86" x2="166" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="66" x2="166" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="46" x2="166" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="146" x2="168" y2="146" stroke="currentColor" stroke-width="1"/>
+  <line x1="46" y1="24" x2="46" y2="268" stroke="currentColor" stroke-width="1"/>
+  <polygon points="178,146 168,151 168,141" fill="currentColor"/>
+  <polygon points="46,14 51,24 41,24" fill="currentColor"/>
+  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
+  <polygon points="46,278 41,268 51,268" fill="currentColor"/>
+  <text x="176" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="54" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="143" x2="26" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="161" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <line x1="66" y1="143" x2="66" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="66" y="161" font-size="11" fill="currentColor" text-anchor="middle">1</text>
+  <line x1="86" y1="143" x2="86" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="86" y="161" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="106" y1="143" x2="106" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="106" y="161" font-size="11" fill="currentColor" text-anchor="middle">3</text>
+  <line x1="126" y1="143" x2="126" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="126" y="161" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="146" y1="143" x2="146" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="146" y="161" font-size="11" fill="currentColor" text-anchor="middle">5</text>
+  <line x1="166" y1="143" x2="166" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="166" y="161" font-size="11" fill="currentColor" text-anchor="middle">6</text>
+  <line x1="43" y1="266" x2="49" y2="266" stroke="currentColor" stroke-width="1"/>
+  <text x="40" y="270" font-size="11" fill="currentColor" text-anchor="end">−6</text>
+  <line x1="43" y1="246" x2="49" y2="246" stroke="currentColor" stroke-width="1"/>
+  <text x="40" y="250" font-size="11" fill="currentColor" text-anchor="end">−5</text>
+  <line x1="43" y1="226" x2="49" y2="226" stroke="currentColor" stroke-width="1"/>
+  <text x="40" y="230" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="43" y1="206" x2="49" y2="206" stroke="currentColor" stroke-width="1"/>
+  <text x="40" y="210" font-size="11" fill="currentColor" text-anchor="end">−3</text>
+  <line x1="43" y1="186" x2="49" y2="186" stroke="currentColor" stroke-width="1"/>
+  <text x="40" y="190" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="43" y1="166" x2="49" y2="166" stroke="currentColor" stroke-width="1"/>
+  <text x="40" y="170" font-size="11" fill="currentColor" text-anchor="end">−1</text>
+  <line x1="43" y1="126" x2="49" y2="126" stroke="currentColor" stroke-width="1"/>
+  <text x="40" y="130" font-size="11" fill="currentColor" text-anchor="end">1</text>
+  <line x1="43" y1="106" x2="49" y2="106" stroke="currentColor" stroke-width="1"/>
+  <text x="40" y="110" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="43" y1="86" x2="49" y2="86" stroke="currentColor" stroke-width="1"/>
+  <text x="40" y="90" font-size="11" fill="currentColor" text-anchor="end">3</text>
+  <line x1="43" y1="66" x2="49" y2="66" stroke="currentColor" stroke-width="1"/>
+  <text x="40" y="70" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <line x1="43" y1="46" x2="49" y2="46" stroke="currentColor" stroke-width="1"/>
+  <text x="40" y="50" font-size="11" fill="currentColor" text-anchor="end">5</text>
+  <line x1="43" y1="26" x2="49" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="40" y="30" font-size="11" fill="currentColor" text-anchor="end">6</text>
+  <polyline points="46,146 46.3,146 46.5,146 46.8,146 47,146 47.3,146 47.5,146 47.8,146 48,145.9 48.3,145.9 48.5,145.9 48.8,145.9 49,145.9 49.3,145.9 49.5,145.8 49.8,145.8 50,145.8 50.3,145.8 50.5,145.7 50.8,145.7 51,145.7 51.3,145.7 51.5,145.6 51.8,145.6 52,145.6 52.3,145.5 52.5,145.5 52.8,145.4 53,145.4 53.3,145.3 53.5,145.3 53.8,145.2 54,145.2 54.3,145.1 54.5,145.1 54.8,145 55,145 55.3,144.9 55.5,144.9 55.8,144.8 56,144.8 56.3,144.7 56.5,144.6 56.8,144.6 57,144.5 57.3,144.4 57.5,144.3 57.8,144.3 58,144.2 58.3,144.1 58.5,144 58.8,144 59,143.9 59.3,143.8 59.5,143.7 59.8,143.6 60,143.6 60.3,143.5 60.5,143.4 60.8,143.3 61,143.2 61.3,143.1 61.5,143 61.8,142.9 62,142.8 62.3,142.7 62.5,142.6 62.8,142.5 63,142.4 63.3,142.3 63.5,142.2 63.8,142.1 64,141.9 64.3,141.8 64.5,141.7 64.8,141.6 65,141.5 65.3,141.4 65.5,141.2 65.8,141.1 66,141 66.3,140.9 66.5,140.7 66.8,140.6 67,140.5 67.3,140.4 67.5,140.2 67.8,140.1 68,139.9 68.3,139.8 68.5,139.7 68.8,139.5 69,139.4 69.3,139.2 69.5,139.1 69.8,138.9 70,138.8 70.3,138.6 70.5,138.5 70.8,138.3 71,138.2 71.3,138 71.5,137.9 71.8,137.7 72,137.6 72.3,137.4 72.5,137.2 72.8,137.1 73,136.9 73.3,136.7 73.5,136.5 73.8,136.4 74,136.2 74.3,136 74.5,135.8 74.8,135.7 75,135.5 75.3,135.3 75.5,135.1 75.8,134.9 76,134.8 76.3,134.6 76.5,134.4 76.8,134.2 77,134 77.3,133.8 77.5,133.6 77.8,133.4 78,133.2 78.3,133 78.5,132.8 78.8,132.6 79,132.4 79.3,132.2 79.5,132 79.8,131.8 80,131.6 80.3,131.3 80.5,131.1 80.8,130.9 81,130.7 81.3,130.5 81.5,130.2 81.8,130 82,129.8 82.3,129.6 82.5,129.3 82.8,129.1 83,128.9 83.3,128.7 83.5,128.4 83.8,128.2 84,128 84.3,127.7 84.5,127.5 84.8,127.2 85,127 85.3,126.7 85.5,126.5 85.8,126.2 86,126 86.3,125.7 86.5,125.5 86.8,125.2 87,125 87.3,124.7 87.5,124.5 87.8,124.2 88,124 88.3,123.7 88.5,123.4 88.8,123.2 89,122.9 89.3,122.6 89.5,122.3 89.8,122.1 90,121.8 90.3,121.5 90.5,121.2 90.8,121 91,120.7 91.3,120.4 91.5,120.1 91.8,119.8 92,119.6 92.3,119.3 92.5,119 92.8,118.7 93,118.4 93.3,118.1 93.5,117.8 93.8,117.5 94,117.2 94.3,116.9 94.5,116.6 94.8,116.3 95,116 95.3,115.7 95.5,115.4 95.8,115.1 96,114.8 96.3,114.4 96.5,114.1 96.8,113.8 97,113.5 97.3,113.2 97.5,112.8 97.8,112.5 98,112.2 98.3,111.9 98.5,111.5 98.8,111.2 99,110.9 99.3,110.6 99.5,110.2 99.8,109.9 100,109.5 100.3,109.2 100.5,108.9 100.8,108.5 101,108.2 101.3,107.8 101.5,107.5 101.8,107.1 102,106.8 102.3,106.4 102.5,106.1 102.8,105.7 103,105.4 103.3,105 103.5,104.7 103.8,104.3 104,104 104.3,103.6 104.5,103.2 104.8,102.9 105,102.5 105.3,102.1 105.5,101.7 105.8,101.4 106,101 106.3,100.6 106.5,100.2 106.8,99.9 107,99.5 107.3,99.1 107.5,98.7 107.8,98.3 108,97.9 108.3,97.6 108.5,97.2 108.8,96.8 109,96.4 109.3,96 109.5,95.6 109.8,95.2 110,94.8 110.3,94.4 110.5,94 110.8,93.6 111,93.2 111.3,92.8 111.5,92.4 111.8,92 112,91.6 112.3,91.1 112.5,90.7 112.8,90.3 113,89.9 113.3,89.5 113.5,89 113.8,88.6 114,88.2 114.3,87.8 114.5,87.3 114.8,86.9 115,86.5 115.3,86.1 115.5,85.6 115.8,85.2 116,84.8 116.3,84.3 116.5,83.9 116.8,83.4 117,83 117.3,82.5 117.5,82.1 117.8,81.6 118,81.2 118.3,80.7 118.5,80.3 118.8,79.8 119,79.4 119.3,78.9 119.5,78.5 119.8,78 120,77.5 120.3,77.1 120.5,76.6 120.8,76.2 121,75.7 121.3,75.2 121.5,74.7 121.8,74.3 122,73.8 122.3,73.3 122.5,72.8 122.8,72.4 123,71.9 123.3,71.4 123.5,70.9 123.8,70.4 124,70 124.3,69.5 124.5,69 124.8,68.5 125,68 125.3,67.5 125.5,67 125.8,66.5 126,66 126.3,65.5 126.5,65 126.8,64.5 127,64 127.3,63.5 127.5,63 127.8,62.5 128,62 128.3,61.4 128.5,60.9 128.8,60.4 129,59.9 129.3,59.4 129.5,58.8 129.8,58.3 130,57.8 130.3,57.3 130.5,56.7 130.8,56.2 131,55.7 131.3,55.2 131.5,54.6 131.8,54.1 132,53.6 132.3,53 132.5,52.5 132.7,52" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <polygon points="136,44.8 136.4,55.9 127.3,51.8" fill="currentColor"/>
+  <polyline points="46,146 46.3,146 46.5,146 46.8,146 47,146 47.3,146 47.5,146 47.8,146 48,146.1 48.3,146.1 48.5,146.1 48.8,146.1 49,146.1 49.3,146.1 49.5,146.2 49.8,146.2 50,146.2 50.3,146.2 50.5,146.3 50.8,146.3 51,146.3 51.3,146.3 51.5,146.4 51.8,146.4 52,146.4 52.3,146.5 52.5,146.5 52.8,146.6 53,146.6 53.3,146.7 53.5,146.7 53.8,146.8 54,146.8 54.3,146.9 54.5,146.9 54.8,147 55,147 55.3,147.1 55.5,147.1 55.8,147.2 56,147.3 56.3,147.3 56.5,147.4 56.8,147.4 57,147.5 57.3,147.6 57.5,147.7 57.8,147.7 58,147.8 58.3,147.9 58.5,148 58.8,148 59,148.1 59.3,148.2 59.5,148.3 59.8,148.4 60,148.4 60.3,148.5 60.5,148.6 60.8,148.7 61,148.8 61.3,148.9 61.5,149 61.8,149.1 62,149.2 62.3,149.3 62.5,149.4 62.8,149.5 63,149.6 63.3,149.7 63.5,149.8 63.8,149.9 64,150.1 64.3,150.2 64.5,150.3 64.8,150.4 65,150.5 65.3,150.6 65.5,150.8 65.8,150.9 66,151 66.3,151.1 66.5,151.3 66.8,151.4 67,151.5 67.3,151.6 67.5,151.8 67.8,151.9 68,152.1 68.3,152.2 68.5,152.3 68.8,152.5 69,152.6 69.3,152.8 69.5,152.9 69.8,153.1 70,153.2 70.3,153.4 70.5,153.5 70.8,153.7 71,153.8 71.3,154 71.5,154.1 71.8,154.3 72,154.4 72.3,154.6 72.5,154.8 72.8,154.9 73,155.1 73.3,155.3 73.5,155.5 73.8,155.6 74,155.8 74.3,156 74.5,156.2 74.8,156.3 75,156.5 75.3,156.7 75.5,156.9 75.8,157.1 76,157.3 76.3,157.4 76.5,157.6 76.8,157.8 77,158 77.3,158.2 77.5,158.4 77.8,158.6 78,158.8 78.3,159 78.5,159.2 78.8,159.4 79,159.6 79.3,159.8 79.5,160 79.8,160.2 80,160.4 80.3,160.7 80.5,160.9 80.8,161.1 81,161.3 81.3,161.5 81.5,161.8 81.8,162 82,162.2 82.3,162.4 82.5,162.7 82.8,162.9 83,163.1 83.3,163.3 83.5,163.6 83.8,163.8 84,164.1 84.3,164.3 84.5,164.5 84.8,164.8 85,165 85.3,165.3 85.5,165.5 85.8,165.8 86,166 86.3,166.3 86.5,166.5 86.8,166.8 87,167 87.3,167.3 87.5,167.5 87.8,167.8 88,168.1 88.3,168.3 88.5,168.6 88.8,168.8 89,169.1 89.3,169.4 89.5,169.7 89.8,169.9 90,170.2 90.3,170.5 90.5,170.8 90.8,171 91,171.3 91.3,171.6 91.5,171.9 91.8,172.2 92,172.4 92.3,172.7 92.5,173 92.8,173.3 93,173.6 93.3,173.9 93.5,174.2 93.8,174.5 94,174.8 94.3,175.1 94.5,175.4 94.8,175.7 95,176 95.3,176.3 95.5,176.6 95.8,176.9 96,177.3 96.3,177.6 96.5,177.9 96.8,178.2 97,178.5 97.3,178.8 97.5,179.2 97.8,179.5 98,179.8 98.3,180.1 98.5,180.5 98.8,180.8 99,181.1 99.3,181.4 99.5,181.8 99.8,182.1 100,182.4 100.3,182.8 100.5,183.1 100.8,183.5 101,183.8 101.3,184.2 101.5,184.5 101.8,184.9 102,185.2 102.3,185.6 102.5,185.9 102.8,186.3 103,186.6 103.3,187 103.5,187.3 103.8,187.7 104,188.1 104.3,188.4 104.5,188.8 104.8,189.1 105,189.5 105.3,189.9 105.5,190.3 105.8,190.6 106,191 106.3,191.4 106.5,191.8 106.8,192.1 107,192.5 107.3,192.9 107.5,193.3 107.8,193.7 108,194.1 108.3,194.4 108.5,194.8 108.8,195.2 109,195.6 109.3,196 109.5,196.4 109.8,196.8 110,197.2 110.3,197.6 110.5,198 110.8,198.4 111,198.8 111.3,199.2 111.5,199.6 111.8,200 112,200.4 112.3,200.9 112.5,201.3 112.8,201.7 113,202.1 113.3,202.5 113.5,203 113.8,203.4 114,203.8 114.3,204.2 114.5,204.7 114.8,205.1 115,205.5 115.3,205.9 115.5,206.4 115.8,206.8 116,207.3 116.3,207.7 116.5,208.1 116.8,208.6 117,209 117.3,209.5 117.5,209.9 117.8,210.4 118,210.8 118.3,211.3 118.5,211.7 118.8,212.2 119,212.6 119.3,213.1 119.5,213.5 119.8,214 120,214.4 120.3,214.9 120.5,215.4 120.8,215.8 121,216.3 121.3,216.8 121.5,217.3 121.8,217.7 122,218.2 122.3,218.7 122.5,219.2 122.8,219.6 123,220.1 123.3,220.6 123.5,221.1 123.8,221.6 124,222.1 124.3,222.5 124.5,223 124.8,223.5 125,224 125.3,224.5 125.5,225 125.8,225.5 126,226 126.3,226.5 126.5,227 126.8,227.5 127,228 127.3,228.5 127.5,229 127.8,229.5 128,230.1 128.3,230.6 128.5,231.1 128.8,231.6 129,232.1 129.3,232.6 129.5,233.2 129.8,233.7 130,234.2 130.3,234.7 130.5,235.3 130.8,235.8 131,236.3 131.3,236.8 131.5,237.4 131.8,237.9 132,238.4 132.3,239 132.5,239.5 132.7,240" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <polygon points="136,247.3 127.3,240.2 136.4,236.1" fill="currentColor"/>
+</svg>
+</div>
+
+{{< multiplechoice
+  question="Does the graph shown above pass the vertical line test?"
+  answer="not a function"
+  hint="Look at $x=1$: how many points on the curve share that input?"
+>}}
+function
+not a function
+{{< /multiplechoice >}}
+
+### Graph the functions listed in the library of functions
+
+{{< graphplot
+  question="Graph $y=x^2$."
+  answerDisplay="$y=x^2$"
+  ariaLabel="A blank grid from −10 to 10 on the x-axis and −10 to 100 on the y-axis."
+  hint="Plot the vertex at the origin, then use symmetry about the $y$-axis."
+>}}
+{"answer": {"quadratic": {"a": 1, "b": 0, "c": 0}}, "grid": {"xMin": -10, "xMax": 10, "yMin": -10, "yMax": 100}}
+{{< /graphplot >}}
+
+{{< multiplechoice
+  question="What is the range of $y=x^2$ on the domain $[-10,10]$?"
+  answer="$[0,100]$"
+  hint="Squaring never gives a negative output, and the input farthest from $0$ has absolute value $10$."
+>}}
+$[0,100]$
+$[-10,10]$
+$[-100,100]$
+$[0,10]$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="What is the range of $y=x^3$ on the domain $[-0.1,0.1]$?"
+  answer="$[-0.001,0.001]$"
+  hint="The cubing function is increasing, so evaluate it at both ends of the domain."
+>}}
+$[-0.001,0.001]$
+$[-0.1,0.1]$
+$[0,0.001]$
+$[-0.01,0.01]$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="What is the range of $y=\sqrt{x}$ on the domain $[0,100]$?"
+  answer="$[0,10]$"
+  hint="The square root function is increasing, so evaluate it at both ends of the domain."
+>}}
+$[0,10]$
+$[0,100]$
+$[-10,10]$
+$[0,50]$
+{{< /multiplechoice >}}
+
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 1.1: Functions and Function Notation](https://openstax.org/books/precalculus-2e/pages/1-1-functions-and-function-notation) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every figure as an accessible inline SVG, including the input–output mapping diagrams, the coffee shop menu mappings, and the function-machine diagram; presented the menu itself and the toolkit function library as Markdown tables and headed figure groups rather than images; omitted the media links and end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and presented the write-a-function-notation practice item as multiple choice so it can be graded in the browser.</small>
+<small>This section is adapted from [Precalculus 2e, Section 1.1: Functions and Function Notation](https://openstax.org/books/precalculus-2e/pages/1-1-functions-and-function-notation) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every figure as an accessible inline SVG, including the input–output mapping diagrams, the coffee shop menu mappings, and the function-machine diagram; presented the menu itself and the toolkit function library as Markdown tables and headed figure groups rather than images; omitted the media links; adapted selected end-of-section exercises into the closing interactive Practice block, including two recreated figures for the one-to-one determinations and two for the vertical-line-test items; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and presented the write-a-function-notation practice item as multiple choice so it can be graded in the browser.</small>

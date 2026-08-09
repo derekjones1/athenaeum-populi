@@ -1502,6 +1502,91 @@ $B\ge 0$; it will have solutions when $A=B$ or $A=-B$. **absolute value
 inequality** — a relationship in the form $\lvert A\rvert<B$,
 $\lvert A\rvert\le B$, $\lvert A\rvert>B$, or $\lvert A\rvert\ge B$.
 
+## Practice
+
+### Graph an absolute value function
+
+{{< fillin
+  question="Find the $y$-intercept and both $x$-intercepts of $f(x)=2\lvert x+1\rvert-10$. Enter the $y$-intercept first, then the $x$-intercepts in increasing order of $x$, separated by commas."
+  answer="(0,-8),(-6,0),(4,0)"
+  hint="Evaluate $f(0)$ for the $y$-intercept; set $f(x)=0$ and split $\lvert x+1\rvert=5$ into two linear equations for the $x$-intercepts."
+>}}
+
+{{< multiplechoice
+  question="Use a graphing utility to graph $f(x)=10\lvert x-2\rvert$ on the viewing window $[0,4]$. What is the corresponding range?"
+  answer="$[0,20]$"
+  hint="Evaluate $f$ at the window's endpoints and at the corner $x=2$ to find the least and greatest outputs."
+>}}
+$[0,20]$
+$[0,10]$
+$[-20,20]$
+$[0,40]$
+{{< /multiplechoice >}}
+
+### Solve an absolute value equation
+
+{{< fillin
+  question="Solve $\lvert 6-x\rvert=5$. Enter both solutions, separated by a comma."
+  answer="1,11"
+  answerMode="unordered"
+  answerDisplay="$x=1$ or $x=11$"
+  hint="Split into $6-x=5$ and $6-x=-5$, then solve each for $x$."
+>}}
+
+{{< fillin
+  question="Solve $\lvert 4x-2\rvert=11$. Enter both solutions, separated by a comma."
+  answer="-\tfrac{9}{4},\tfrac{13}{4}"
+  answerMode="unordered"
+  answerDisplay="$x=-\tfrac{9}{4}$ or $x=\tfrac{13}{4}$"
+  hint="Split into $4x-2=11$ and $4x-2=-11$, then solve each for $x$."
+>}}
+
+{{< multiplechoice
+  question="Solve $\lvert 3x-2\rvert=-7$."
+  answer="No solution"
+  hint="The absolute value of an expression can never equal a negative number."
+>}}
+No solution
+$x=3$
+$x=-\tfrac{5}{3}$
+$x=3$ or $x=-\tfrac{5}{3}$
+{{< /multiplechoice >}}
+
+### Solve an absolute value inequality
+
+{{< multiplechoice
+  question="Solve $\lvert 3x-4\rvert\le 8$."
+  answer="$-\tfrac{4}{3}\le x\le 4$"
+  hint="Rewrite without the bars as $-8\le 3x-4\le 8$, then isolate $x$."
+>}}
+$-\tfrac{4}{3}\le x\le 4$
+$-4\le x\le \tfrac{4}{3}$
+$x\le -\tfrac{4}{3}$ or $x\ge 4$
+$-\tfrac{4}{3}< x< 4$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Solve $\lvert 3x-5\rvert\ge 13$."
+  answer="$(-\infty,-\tfrac{8}{3}]\cup[6,\infty)$"
+  hint="Split into $3x-5\le -13$ or $3x-5\ge 13$, then isolate $x$ in each."
+>}}
+$(-\infty,-\tfrac{8}{3}]\cup[6,\infty)$
+$[-\tfrac{8}{3},6]$
+$(-\infty,-6]\cup[\tfrac{8}{3},\infty)$
+$(-\infty,-\tfrac{8}{3})\cup(6,\infty)$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Solve $\left\lvert -2x-\tfrac{2}{3}(x+1)\right\rvert+3>-1$."
+  answer="$(-\infty,\infty)$"
+  hint="Isolate the absolute value to get $\left\lvert -2x-\tfrac{2}{3}(x+1)\right\rvert>-4$ — an absolute value is never negative, so this holds for every $x$ without expanding the expression inside."
+>}}
+$(-\infty,\infty)$
+No solution
+$(-\infty,-4)\cup(4,\infty)$
+$x=-4$
+{{< /multiplechoice >}}
+
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 1.6: Absolute Value Functions](https://openstax.org/books/precalculus-2e/pages/1-6-absolute-value-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph and number line as an accessible inline SVG generated from an explicit formula or point list, drawing the comparison curve dashed where the source distinguishes it by colour; condensed the source's multi-colour construction diagrams for $f(x)=2\lvert x-3\rvert-2$ — one showing the shift and one the width ratio — into a single annotated figure, because monochrome renderings of four overlapping annotated V shapes are unreadable, and likewise showed the four-stage transformation of $y=2\lvert x-3\rvert+4$ as the toolkit V against the finished V, with the intermediate stages described in the prose; presented the solution steps and the interval test as Markdown tables; omitted the opening Andromeda Galaxy photograph, the media links, and the end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is an inequality or an interval, which cannot be graded as free-response math.</small>
+<small>This section is adapted from [Precalculus 2e, Section 1.6: Absolute Value Functions](https://openstax.org/books/precalculus-2e/pages/1-6-absolute-value-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph and number line as an accessible inline SVG generated from an explicit formula or point list, drawing the comparison curve dashed where the source distinguishes it by colour; condensed the source's multi-colour construction diagrams for $f(x)=2\lvert x-3\rvert-2$ — one showing the shift and one the width ratio — into a single annotated figure, because monochrome renderings of four overlapping annotated V shapes are unreadable, and likewise showed the four-stage transformation of $y=2\lvert x-3\rvert+4$ as the toolkit V against the finished V, with the intermediate stages described in the prose; presented the solution steps and the interval test as Markdown tables; omitted the opening Andromeda Galaxy photograph and the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is an inequality or an interval, which cannot be graded as free-response math; and adapted selected end-of-section exercises into the closing Practice block, again using multiple choice for interval- and inequality-valued answers for the same reason.</small>

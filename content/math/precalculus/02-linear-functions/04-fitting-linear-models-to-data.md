@@ -1070,6 +1070,157 @@ statistical technique for fitting a line to data in a way that minimizes the
 differences between the line and data values. **model breakdown** — when a
 model no longer applies after a certain point.
 
+## Practice
+
+### Draw and interpret scatter plots
+
+The table below gives paired $x$ and $y$ values.
+
+| **$x$** | 1 | 2 | 3 | 4 | 5 | 6 |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: |
+| **$y$** | 46 | 50 | 59 | 75 | 100 | 136 |
+
+{{< multiplechoice
+  question="Using the table above, if you draw a scatter plot of this data, does it appear to be linearly related?"
+  answer="Nonlinear"
+  hint="Check whether the difference between consecutive $y$-values stays roughly constant as $x$ increases by 1 each time."
+>}}
+Linear
+Nonlinear
+{{< /multiplechoice >}}
+
+The table below gives another set of paired $x$ and $y$ values.
+
+| **$x$** | 1 | 3 | 5 | 7 | 9 | 11 |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: |
+| **$y$** | 1 | 9 | 28 | 65 | 125 | 216 |
+
+{{< multiplechoice
+  question="Using the table above, if you draw a scatter plot of this data, does it appear to be linearly related?"
+  answer="Nonlinear"
+  hint="Compare how quickly $y$ grows between $x=1$ and $x=5$ with how quickly it grows between $x=7$ and $x=11$."
+>}}
+Linear
+Nonlinear
+{{< /multiplechoice >}}
+
+### Find the line of best fit
+
+The table below gives paired $x$ and $y$ values.
+
+| **$x$** | 8 | 15 | 26 | 31 | 56 |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| **$y$** | 23 | 41 | 53 | 72 | 103 |
+
+{{< fillin
+  question="Using the table above, find the least-squares regression line for this data. Round the slope to three decimal places."
+  answer="1.640"
+  answerDisplay="$y=1.640x+13.800$"
+  hint="Enter the five ordered pairs into a linear regression calculator and read off the slope $a$ in $y=ax+b$."
+>}}
+
+The table below gives another set of paired $x$ and $y$ values.
+
+| **$x$** | 900 | 988 | 1,000 | 1,010 | 1,200 | 1,205 |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: |
+| **$y$** | 70 | 80 | 82 | 84 | 105 | 108 |
+
+{{< fillin
+  question="Using the table above, find the least-squares regression line for this data. Round the $y$-intercept to three decimal places."
+  answer="-38.841"
+  answerDisplay="$y=0.121x-38.841$"
+  hint="Enter the six ordered pairs into a linear regression calculator and read off the intercept $b$ in $y=ax+b$."
+>}}
+
+The profit of a company increased steadily over a ten-year span. The table
+below gives the number of units sold, in hundreds, and the profit, in
+thousands of dollars, for five recorded years.
+
+| **Units sold (hundreds)** | 46 | 48 | 50 | 52 | 54 |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| **Profit (thousands of dollars)** | 250 | 305 | 350 | 390 | 410 |
+
+{{< fillin
+  question="Using the table above, find the slope of the least-squares regression line for the profit $y$ as a function of units sold $x$."
+  answer="20.25"
+  answerDisplay="$y=20.25x-671.50$"
+  hint="Run a linear regression on the five ordered pairs and read off the slope $a$ in $y=ax+b$."
+>}}
+
+### Distinguish between linear and nonlinear relations
+
+{{< multiplechoice
+  question="As the absolute value of the correlation coefficient $\lvert r\rvert$ gets closer to $1$, what happens to the data?"
+  answer="It clusters more tightly around a line"
+  hint="Recall what $r=1$ and $r=-1$ each describe about a scatter plot."
+>}}
+It clusters more tightly around a line
+It becomes more scattered
+{{< /multiplechoice >}}
+
+The U.S. import of wine, in hectoliters, for several years is given in the
+table below.
+
+| **Year** | 1992 | 1994 | 1996 | 1998 | 2000 | 2002 | 2004 | 2006 | 2008 | 2009 |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| **Imports (hectoliters)** | 2,665 | 2,688 | 3,565 | 4,129 | 4,584 | 5,655 | 6,549 | 7,950 | 8,487 | 9,462 |
+
+{{< multiplechoice
+  question="Using the table above, does this import data appear to follow a linear trend?"
+  answer="Linear"
+  hint="Check whether the correlation coefficient for this data, $r\approx0.985$, is close to $1$ or close to $0$."
+>}}
+Linear
+Nonlinear
+{{< /multiplechoice >}}
+
+The table below gives paired $x$ and $y$ values.
+
+| **$x$** | 21 | 25 | 30 | 31 | 40 | 50 |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: |
+| **$y$** | 17 | 11 | 2 | -1 | -18 | -40 |
+
+{{< multiplechoice
+  question="The least-squares regression line for the table above has correlation coefficient $r=-0.998$. Does this data show a positive correlation or a negative correlation?"
+  answer="Negative correlation"
+  hint="Look at the sign of $r$."
+>}}
+Positive correlation
+Negative correlation
+{{< /multiplechoice >}}
+
+### Use a linear model to make predictions
+
+{{< fillin
+  question="A regression relating a tree's diameter $x$, in inches, to its age $y$, in years, gives $y=ax+b$ with $a=6.301$, $b=-1.044$, and $r=0.970$. Use this model to predict the age, in years, of a tree with diameter $10$ inches."
+  answer="61.966"
+  answerDisplay="$y=6.301(10)-1.044=61.966$ years"
+  hint="Substitute $x=10$ into $y=6.301x-1.044$."
+>}}
+
+The table below gives the temperature, in degrees Fahrenheit, and the time,
+in seconds, for several trials.
+
+| **Temperature (°F)** | 16 | 18 | 20 | 25 | 30 |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| **Time (seconds)** | 46 | 50 | 54 | 55 | 62 |
+
+{{< multiplechoice
+  question="Using the table above, if we wanted to predict the time when the temperature reaches $28$ degrees Fahrenheit, would that prediction be an interpolation or an extrapolation?"
+  answer="Interpolation"
+  hint="Compare $28$ to the span of temperatures actually in the table, $16$ to $30$."
+>}}
+Interpolation
+Extrapolation
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="For the linear function $f(x)=-2x-10$, what is $f(9)$?"
+  answer="-28"
+  answerDisplay="$f(9)=-2(9)-10=-28$"
+  hint="Substitute $x=9$ into $f(x)=-2x-10$."
+>}}
+
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 2.4: Fitting Linear Models to Data](https://openstax.org/books/precalculus-2e/pages/2-4-fitting-linear-models-to-data) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every scatter plot and fitted line as an accessible inline SVG plotted from the source's own numbers — the cricket-chirp, interpolation, and gasoline figures use the exact table values together with the stated equations $T(c)=1.2c+30$, $T(c)=30.281+1.143c$, and $C(t)=113.318+2.209t$, each of which was recomputed from the data and matched to the source's three-decimal rounding; the opening "Final Exam Score vs. Age" scatter has no published data table, so its fourteen points were measured off the source figure; replaced the source's twenty-one-panel Wikimedia correlation composite (credit: "DenisBoigelot") with eight panels built from explicit point sets whose correlation coefficients were computed exactly, covering the same values $r=1.0,\ 0.8,\ 0.4,\ 0.0,\ -0.4,\ -0.8,\ -1.0$ plus one nonlinear arch with $r=0$, and added the one sentence needed to introduce that arch; drew the interpolation region as a dashed rectangle and marked the two predictions with dashed crosshairs, because the source's red and blue highlighting cannot be carried by a single-colour accessible SVG; drew the vertical axes over their full range instead of reproducing the source's compressed axis breaks; presented the three data tables as Markdown tables; omitted the media links and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is the word "interpolation" or "extrapolation", which cannot be graded as free-response math.</small>
+<small>This section is adapted from [Precalculus 2e, Section 2.4: Fitting Linear Models to Data](https://openstax.org/books/precalculus-2e/pages/2-4-fitting-linear-models-to-data) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every scatter plot and fitted line as an accessible inline SVG plotted from the source's own numbers — the cricket-chirp, interpolation, and gasoline figures use the exact table values together with the stated equations $T(c)=1.2c+30$, $T(c)=30.281+1.143c$, and $C(t)=113.318+2.209t$, each of which was recomputed from the data and matched to the source's three-decimal rounding; the opening "Final Exam Score vs. Age" scatter has no published data table, so its fourteen points were measured off the source figure; replaced the source's twenty-one-panel Wikimedia correlation composite (credit: "DenisBoigelot") with eight panels built from explicit point sets whose correlation coefficients were computed exactly, covering the same values $r=1.0,\ 0.8,\ 0.4,\ 0.0,\ -0.4,\ -0.8,\ -1.0$ plus one nonlinear arch with $r=0$, and added the one sentence needed to introduce that arch; drew the interpolation region as a dashed rectangle and marked the two predictions with dashed crosshairs, because the source's red and blue highlighting cannot be carried by a single-colour accessible SVG; drew the vertical axes over their full range instead of reproducing the source's compressed axis breaks; presented the three data tables as Markdown tables; omitted the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is the word "interpolation" or "extrapolation", which cannot be graded as free-response math; and adapted eleven selected end-of-section exercises into the section-final Practice block, again using multiple choice for the categorical judgments (linear/nonlinear, positive/negative correlation, interpolation/extrapolation) that free-response grading cannot check.</small>

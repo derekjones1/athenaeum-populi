@@ -50,13 +50,14 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
 
 Every `source:*` command takes `--bundle KEY` to work on one bundle at a time.
 
-Every authoring rule in the content lint is an error except one: the 11
-sections still missing a `## Practice` block, which is an authoring programme
-tracked in `docs/authoring-playbook.md` §5. A page you author or revise adds
-no warning of its own. If a rule fires on sound content, narrow the rule and
-add a test for the case it got wrong — do not exempt the page. When
-authoring moves either published number — this backlog or the
-`--min-verified` floor — end the session with `npm run baseline:update` and
+Every authoring rule in the content lint is an error, with no exceptions. The
+last one that was not — a section missing its `## Practice` block — was
+promoted on August 9, 2026, when the final mapped section landed its block;
+the working rules that outlived that programme are in
+`docs/authoring-playbook.md` §5. A page you author or revise adds no warning
+of its own. If a rule fires on sound content, narrow the rule and add a test
+for the case it got wrong — do not exempt the page. When authoring moves the
+`--min-verified` floor, end the session with `npm run baseline:update` and
 commit the rewrite together with the content.
 
 ## Reviews and verification protocol
@@ -77,9 +78,9 @@ noise. Look instead for:
   no longer matches how content is written.
 - **Docs that are true but no longer load-bearing** — a runbook for a process
   that has been automated, a count nothing derives from.
-- **The error-to-warning ratio.** Every authoring rule here is an error except
-  the tracked Practice retrofit. A growing warning list is a growing backlog of
-  known-defective content.
+- **The error-to-warning ratio.** Every authoring rule here is an error. A
+  warning list growing back from zero is a growing backlog of known-defective
+  content.
 
 Three rules for a finding:
 

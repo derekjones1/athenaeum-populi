@@ -127,6 +127,7 @@ weight: 7
 {{< fillin
   question="Write $n \cdot n \cdot n \cdot n \cdot n \cdot n$ in exponential form."
   answer="n^6"
+  answerForm="single-power"
 >}}
 
 {{< fillin

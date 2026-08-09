@@ -1658,6 +1658,108 @@ const FORM_PREDICATES = {
     const terms = splitTopLevelTerms(body).map((term) => term.replace(/\s+/g, ''));
     return terms.length === 2 && terms.every(isSquaredConicUnit);
   },
+  // "Write the point-slope form of an equation of a line with a slope of $-2$
+  // that passes through $(-2,2)$" answers $y-2=-2(x+2)$. The prompt prints
+  // nothing to retype, but the engine grades the distributed $y-2=-2x-4$ and
+  // the scaled $2y-4=-4(x+2)$ equal to it — restatements the ask exists to
+  // rule out (slope-intercept itself happens to grade unequal, but that is an
+  // engine accident, not a guarantee). One side must be the bare output
+  // variable plus at most a constant, coefficient 1; the other one single
+  // term — a constant slope times the bare input variable or an
+  // input-variable-plus-constant binomial. Both orientations pass, mirroring
+  // `vertex-form`, and the collapsed origin case ($y=-3x$ through $(0,0)$) is
+  // point-slope with both subtractions evaluated — rejecting it would reject
+  // the authored answer of the degenerate exercise.
+  'point-slope-form': (latex) => {
+    const sides = splitEquationSides(latex);
+    if (!sides) return false;
+    const parsed = sides.map((side) => {
+      let expr;
+      try {
+        expr = parseLatex(preprocess(side));
+      } catch {
+        return null;
+      }
+      return expr.isValid ? expr : null;
+    });
+    if (parsed.some((expr) => expr === null)) return false;
+    const isConstant = (e) => {
+      const symbols = new Set();
+      collectSymbols(e, symbols);
+      return symbols.size === 0;
+    };
+    // The bare variable, or variable ± constant with coefficient 1 — the
+    // $y-y_1$ side, and equally the binomial inside the slope side's parens.
+    const shiftedVariable = (e) => {
+      if (e.symbol) return e.symbol;
+      if (e.operator !== 'Add' || e.ops.length !== 2) return null;
+      const compound = e.ops.filter((op) => !isConstant(op));
+      return compound.length === 1 && compound[0].symbol ? compound[0].symbol : null;
+    };
+    // One $m(x-x_1)$ term: sign and constant factors peeled off a shifted
+    // variable. An Add here is the distributed form — exactly what fails.
+    const slopeProduct = (e) => {
+      if (e.operator === 'Negate') return slopeProduct(e.ops[0]);
+      if (e.operator === 'Multiply') {
+        const compound = e.ops.filter((op) => !isConstant(op));
+        return compound.length === 1 ? slopeProduct(compound[0]) : null;
+      }
+      if (e.operator === 'Divide') {
+        return isConstant(e.ops[1]) ? slopeProduct(e.ops[0]) : null;
+      }
+      return shiftedVariable(e);
+    };
+    const pointSlope = (pointSide, slopeSide) => {
+      const output = shiftedVariable(pointSide);
+      const input = slopeProduct(slopeSide);
+      return output !== null && input !== null && output !== input;
+    };
+    return pointSlope(parsed[0], parsed[1]) || pointSlope(parsed[1], parsed[0]);
+  },
+  // "Rewrite that same line in slope-intercept form" answers $y=-2x-2$, and
+  // the elementary-algebra phrasing "enter the expression that follows $y=$"
+  // answers the bare $-2x-2$ — both value-equal to the undistributed
+  // $-2(x+2)+2$ and the single fraction $\frac{-x-6}{3}$, which the engine
+  // accepts and slope-intercept form is not. After an optional written
+  // `y=`/`f(x)=` label (written, not parsed, exactly as in `vertex-form`),
+  // the response is at most two terms: at most one linear monomial — a
+  // constant coefficient on the bare input variable, nothing left to
+  // distribute, no variable under a shared fraction bar — plus at most a
+  // constant. A leftover non-label `=` (a point-slope response) fails.
+  'slope-intercept-form': (latex) => {
+    let bare = bareLatex(latex);
+    const label = bare.match(/^[a-zA-Z]\s*(?:\(\s*[a-zA-Z]\s*\))?\s*=/);
+    if (label) bare = bare.slice(label[0].length);
+    if (bare.includes('=')) return false;
+    let expr;
+    try {
+      expr = parseLatex(preprocess(bare));
+    } catch {
+      return false;
+    }
+    if (!expr.isValid) return false;
+    const isConstant = (e) => {
+      const symbols = new Set();
+      collectSymbols(e, symbols);
+      return symbols.size === 0;
+    };
+    const isLinearMonomial = (e) => {
+      if (e.symbol) return true;
+      if (e.operator === 'Negate') return isLinearMonomial(e.ops[0]);
+      if (e.operator === 'Multiply') {
+        const compound = e.ops.filter((op) => !isConstant(op));
+        return compound.length === 1 && Boolean(compound[0].symbol);
+      }
+      if (e.operator === 'Divide') {
+        return isConstant(e.ops[1]) && isLinearMonomial(e.ops[0]);
+      }
+      return false;
+    };
+    const terms = expr.operator === 'Add' ? expr.ops : [expr];
+    return terms.length <= 2
+      && terms.filter((term) => isLinearMonomial(term)).length <= 1
+      && terms.every((term) => isLinearMonomial(term) || isConstant(term));
+  },
   // "Convert the equation from logarithmic to exponential form: $3=\log_7
   // 343$" answers $343=7^3$ — two true statements the engine grades equal, so
   // only the written notation separates them. The conversion is complete
@@ -1731,6 +1833,8 @@ const FORM_PHRASES = {
   'single-fraction': 'as a single fraction',
   'reduced-fraction': 'as a single fraction with all common factors cancelled',
   factored: 'in factored form',
+  'point-slope-form': 'in point-slope form, y − y₁ = m(x − x₁), with the slope multiplying the parenthesized difference',
+  'slope-intercept-form': 'in slope-intercept form, y = mx + b',
   'vertex-form': 'in vertex form, with the square completed',
   'conic-standard-form': 'in standard form, with each squared term over its denominator and the right side equal to 1',
   'circle-standard-form': 'in standard form, with the squared binomials on the left and the squared radius on the right',
@@ -1766,7 +1870,7 @@ export function checkForm(studentRaw, spec) {
 }
 
 export function checkAnswer(studentRaw, answerRaw, options = {}) {
-  const student = preprocess(studentRaw);
+  let student = preprocess(studentRaw);
   if (!student) return 'empty';
 
   // An unfilled box in a fraction/exponent shows up as \placeholder{}.
@@ -1778,6 +1882,21 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
 
   const asList = checkOrderedList(studentRaw, answerRaw);
   if (asList !== null) return asList;
+
+  // A response labelled `f(x)=…` cannot be unwrapped from the parse: `f(x)`
+  // boxes as `Multiply(f, x)` (or as an unknown function application for a
+  // capital name), so a learner answering a prompt phrased in function
+  // notation ("If $f(x)$ is a linear function…") with `f(x)=-7x+3` was graded
+  // incorrect against the authored `y=-7x+3`. Strip the written label — one
+  // letter applied to one letter, nothing else — and grade the value that
+  // follows; asVariableEquation() then unwraps a `y=`-labelled answer on the
+  // other side as it always has. Only when no further `=` remains, so a
+  // genuine equation response is never half-eaten.
+  const functionLabel = student.match(/^[a-zA-Z]\s*\(\s*[a-zA-Z]\s*\)\s*=(?![=<>])/);
+  if (functionLabel && !student.slice(functionLabel[0].length).includes('=')) {
+    student = student.slice(functionLabel[0].length).trim();
+    if (!student) return 'invalid';
+  }
 
   let studentExpr;
   try {

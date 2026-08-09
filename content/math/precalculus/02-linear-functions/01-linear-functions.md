@@ -638,6 +638,7 @@ $$
 {{< fillin
   question="Write the point-slope form of an equation of a line with a slope of $-2$ that passes through the point $(-2,2)$."
   answer="y-2=-2(x+2)"
+  answerForm="point-slope-form"
   answerDisplay="$y-2=-2(x+2)$"
   hint="Substitute $m$, $x_1$, and $y_1$ into $y-y_1=m(x-x_1)$, and watch the sign of $x_1$."
 >}}
@@ -645,6 +646,7 @@ $$
 {{< fillin
   question="Now rewrite that same line in slope-intercept form."
   answer="y=-2x-2"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-2x-2$"
   hint="Distribute the $-2$, then add 2 to each side."
 >}}
@@ -779,8 +781,9 @@ $$
 The slope-intercept equation of the line is $y=2x-9$.
 
 {{< fillin
-  question="Write the point-slope form of an equation of a line that passes through the points $(-1,3)$ and $(0,0)$."
+  question="Write the point-slope form of an equation of a line that passes through the points $(-1,3)$ and $(0,0)$, using $(0,0)$ as $(x_1,y_1)$."
   answer="y-0=-3(x-0)"
+  answerForm="point-slope-form"
   answerDisplay="$y-0=-3(x-0)$"
   hint="Find the slope first, then substitute it and the point $(0,0)$ into $y-y_1=m(x-x_1)$."
 >}}
@@ -788,6 +791,7 @@ The slope-intercept equation of the line is $y=2x-9$.
 {{< fillin
   question="Now rewrite that same line in slope-intercept form."
   answer="y=-3x"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-3x$"
   hint="Both $y_1$ and $x_1$ are 0, so the point-slope form collapses in one step."
 >}}
@@ -1203,6 +1207,7 @@ $$
 {{< fillin
   question="If $f(x)$ is a linear function, with $f(2)=-11$ and $f(4)=-25$, find an equation for the function in slope-intercept form."
   answer="y=-7x+3"
+  answerForm="slope-intercept-form"
   answerDisplay="$y=-7x+3$"
   hint="Turn the two function values into points, find the slope, then use point-slope form and solve for $y$."
 >}}
@@ -1419,6 +1424,152 @@ linear function** — a function with a negative slope: if $f(x)=mx+b$, then
 $m<0$. **point-slope form** — the equation for a line that represents a
 linear function of the form $y-y_1=m(x-x_1)$.
 
+## Practice
+
+### Represent a linear function
+
+{{< multiplechoice
+  question="Can $y=\tfrac{1}{4}x+6$ be written as a linear function?"
+  answer="Yes"
+  hint="A linear function has $x$ appearing only to the first power, with no other operations on it."
+>}}
+Yes
+No
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Can $y=3x^2-2$ be written as a linear function?"
+  answer="No"
+  hint="Look at the power of $x$: a linear function never raises the input above the first power."
+>}}
+Yes
+No
+{{< /multiplechoice >}}
+
+{{< fillin
+  question="A boat is 100 miles from a marina, sailing directly toward it at 10 miles per hour. Write an equation for the distance $d(t)$ of the boat from the marina after $t$ hours. Enter the rule for $d(t)$."
+  answer="100-10t"
+  answerDisplay="$d(t)=100-10t$"
+  hint="The distance starts at 100 miles and decreases by 10 miles for every hour that passes."
+>}}
+
+### Determine whether a linear function is increasing, decreasing, or constant
+
+{{< multiplechoice
+  question="Is $f(x)=4x+3$ increasing, decreasing, or constant?"
+  answer="Increasing, because $m>0$"
+  hint="Check the sign of the coefficient of $x$."
+>}}
+Decreasing, because $m<0$
+Increasing, because $m>0$
+Constant, because $m=0$
+There is not enough information to tell
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $a(x)=5-2x$ increasing, decreasing, or constant?"
+  answer="Decreasing, because $m<0$"
+  hint="Rewrite the function as $a(x)=-2x+5$ and check the sign of its slope."
+>}}
+Decreasing, because $m<0$
+Increasing, because $m>0$
+Constant, because $m=0$
+There is not enough information to tell
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $j(x)=\tfrac{1}{2}x-3$ increasing, decreasing, or constant?"
+  answer="Increasing, because $m>0$"
+  hint="Check the sign of the coefficient of $x$."
+>}}
+Decreasing, because $m<0$
+Increasing, because $m>0$
+Constant, because $m=0$
+There is not enough information to tell
+{{< /multiplechoice >}}
+
+### Calculate and interpret slope
+
+{{< fillin
+  question="Find the slope of the line through $(2,4)$ and $(4,10)$."
+  answer="3"
+  answerDisplay="$m=\tfrac{10-4}{4-2}=3$"
+  hint="Divide the change in output by the change in input."
+>}}
+
+{{< fillin
+  question="Find the slope of the line through $(-1,4)$ and $(5,2)$."
+  answer="-\frac{1}{3}"
+  answerDisplay="$m=\tfrac{2-4}{5-(-1)}=-\tfrac{1}{3}$"
+  hint="Divide the change in output by the change in input, keeping each point's coordinates together."
+>}}
+
+{{< fillin
+  question="Jessica is walking home from a friend's house. After 2 minutes she is 1.4 miles from home. Twelve minutes after leaving, she is 0.9 miles from home. What is her rate, in miles per hour?"
+  answer="3"
+  answerDisplay="3 miles per hour"
+  hint="Find the slope between the two (time, distance) points in miles per minute, then convert to miles per hour."
+>}}
+
+### Write the point-slope form of an equation
+
+{{< fillin
+  question="Write the point-slope form of an equation of a line that passes through the points $(1,5)$ and $(4,11)$, using $(1,5)$ as $(x_1,y_1)$."
+  answer="y-5=2(x-1)"
+  answerForm="point-slope-form"
+  answerDisplay="$y-5=2(x-1)$"
+  hint="Find the slope first, then substitute $m$ and the point $(1,5)$ into $y-y_1=m(x-x_1)$."
+>}}
+
+{{< fillin
+  question="If $f(x)$ is a linear function, with $f(-1)=4$ and $f(5)=1$, write the point-slope form of the equation using the point where $x=-1$."
+  answer="y-4=-\frac{1}{2}(x+1)"
+  answerForm="point-slope-form"
+  answerDisplay="$y-4=-\tfrac{1}{2}(x+1)$"
+  hint="Turn the two function values into points, find the slope, then substitute the point where $x=-1$ into $y-y_1=m(x-x_1)$."
+>}}
+
+### Write and interpret a linear function
+
+{{< fillin
+  question="A gym membership with two personal training sessions costs \$125, while a gym membership with five personal training sessions costs \$260. What is the cost per session, in dollars?"
+  answer="45"
+  answerDisplay="\$45 per session"
+  hint="Treat the number of sessions as the input and the total cost as the output, then find the slope."
+>}}
+
+{{< fillin
+  question="A phone company charges according to $C(n)=24+0.1n$, where $n$ is the number of minutes talked and $C(n)$ is the monthly charge in dollars. What is the rate of change, in dollars per minute?"
+  answer="0.1"
+  answerDisplay="$0.1$ dollars per minute"
+  hint="The rate of change is the coefficient of $n$."
+>}}
+
+{{< fillin
+  question="Using that same phone plan, $C(n)=24+0.1n$, what is the initial value, in dollars?"
+  answer="24"
+  answerDisplay="\$24"
+  hint="The initial value is the constant term, the charge when $n=0$."
+>}}
+
+{{< fillin
+  question="A city's population in 1960 was 287,500. In 1989 the population was 275,900. Find the rate of change of the population, in people per year."
+  answer="-400"
+  answerDisplay="$-400$ people per year"
+  hint="Divide the change in population by the number of years between 1960 and 1989."
+>}}
+
+{{< multiplechoice
+  question="Average annual income for the years 1990 through 1999 is given by $I(x)=1054x+23{,}286$, where $x$ is the number of years after 1990. Which statement correctly interprets the slope in context?"
+  answer="Each year in the decade of the 1990s, average annual income increased by \$1,054."
+  hint="The slope is the change in income for each one-year increase in $x$."
+>}}
+As of 1990, average annual income was \$23,286.
+In the ten-year period from 1990–1999, average annual income increased by a total of \$1,054.
+Each year in the decade of the 1990s, average annual income increased by \$1,054.
+Average annual income rose to a level of \$23,286 by the end of 1999.
+{{< /multiplechoice >}}
+
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 2.1: Linear Functions](https://openstax.org/books/precalculus-2e/pages/2-1-linear-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible inline SVG generated from its exact equation, matching the source's window, marked points, and labels — the train ray $D(t)=83t+250$, the three generic increasing/decreasing/constant lines, $y=3x+2$ for the slope diagram and again for the two "write an equation from the graph" figures, $y=2x-7$, $y=\tfrac{1}{3}x+1$, and $y=-\tfrac{3}{4}x+7$; presented the source's three tabular figures (the train, the rat population, and the plant-food experiment) as Markdown tables; replaced the two annotated artwork panels that draw arrows from the numbers into $f(x)=mx+b$ with the equivalent KaTeX substitution step; omitted the decorative maglev-train and scuba-diver photographs, which carry no mathematics, and reworded the two sentences that pointed at them; wrote the two money-valued slope steps in the insurance-commission example as $\tfrac{160\ \text{dollars}}{2\ \text{policies}}=80\ \text{dollars per policy}$, because an escaped dollar sign cannot appear inside a math run in this build; omitted the media link and the end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, splitting each multipart item into one component per response and using multiple choice for the increasing-or-decreasing judgement, which cannot be graded as free-response math.</small>
+<small>This section is adapted from [Precalculus 2e, Section 2.1: Linear Functions](https://openstax.org/books/precalculus-2e/pages/2-1-linear-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every graph as an accessible inline SVG generated from its exact equation, matching the source's window, marked points, and labels — the train ray $D(t)=83t+250$, the three generic increasing/decreasing/constant lines, $y=3x+2$ for the slope diagram and again for the two "write an equation from the graph" figures, $y=2x-7$, $y=\tfrac{1}{3}x+1$, and $y=-\tfrac{3}{4}x+7$; presented the source's three tabular figures (the train, the rat population, and the plant-food experiment) as Markdown tables; replaced the two annotated artwork panels that draw arrows from the numbers into $f(x)=mx+b$ with the equivalent KaTeX substitution step; omitted the decorative maglev-train and scuba-diver photographs, which carry no mathematics, and reworded the two sentences that pointed at them; wrote the two money-valued slope steps in the insurance-commission example as $\tfrac{160\ \text{dollars}}{2\ \text{policies}}=80\ \text{dollars per policy}$, because an escaped dollar sign cannot appear inside a math run in this build; omitted the media link; converted the practice problems ("Try Its") into interactive exercises with instant feedback, splitting each multipart item into one component per response and using multiple choice for the increasing-or-decreasing judgement, which cannot be graded as free-response math; and adapted 15 selected end-of-section exercises — two is-it-linear judgements, a distance-from-a-marina word problem, three increasing/decreasing judgements, two slope-between-two-points computations, a walking-speed word problem, two point-slope-form derivations rewritten from the source's slope-intercept answers, a training-session cost rate, a phone-plan rate-and-initial-value item split into two prompts, a city-population rate of change, and a slope-interpretation multiple choice — into 16 interactive components in a closing Practice block, one group per objective.</small>

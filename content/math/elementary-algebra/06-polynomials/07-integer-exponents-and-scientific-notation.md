@@ -570,6 +570,7 @@ Check: $10^3$ is $1000$, and $1000$ times $6.2$ will be $6{,}200$. ✓
 {{< fillin
   question="Convert to decimal form: $1.3 \times 10^3$."
   answer="1300"
+  answerForm="decimal"
   answerDisplay="1,300"
   hint="The exponent is 3, so move the decimal 3 places to the right, adding zeros as placeholders."
 >}}
@@ -577,6 +578,7 @@ Check: $10^3$ is $1000$, and $1000$ times $6.2$ will be $6{,}200$. ✓
 {{< fillin
   question="Convert to decimal form: $9.25 \times 10^4$."
   answer="92500"
+  answerForm="decimal"
   answerDisplay="92,500"
   hint="The exponent is 4, so move the decimal 4 places to the right, adding zeros as placeholders."
 >}}
@@ -591,6 +593,7 @@ $$8.9 \times 10^{-2} = 0.089$$
 {{< fillin
   question="Convert to decimal form: $1.2 \times 10^{-4}$."
   answer="0.00012"
+  answerForm="decimal"
   answerDisplay="0.00012"
   hint="The exponent is -4, so move the decimal 4 places to the left, adding zeros as placeholders."
 >}}
@@ -598,6 +601,7 @@ $$8.9 \times 10^{-2} = 0.089$$
 {{< fillin
   question="Convert to decimal form: $7.5 \times 10^{-2}$."
   answer="0.075"
+  answerForm="decimal"
   answerDisplay="0.075"
   hint="The exponent is -2, so move the decimal 2 places to the left, adding a zero as a placeholder."
 >}}

@@ -281,6 +281,7 @@ numerators and keep the denominator.
 {{< fillin
   question="The fraction circle above models the sum $\tfrac{3}{8} + \tfrac{3}{8}$. What fraction of the circle is shaded? Write your answer in simplified form."
   answer="\frac{3}{4}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{3}{4}$"
   hint="Count the shaded eighths first, then remove the common factor from numerator and denominator."
 >}}
@@ -341,6 +342,7 @@ numerators and keep the denominator.
 {{< fillin
   question="Start with five $\tfrac{1}{6}$ pieces and take two of them away. The fraction circle above shows what is left. What fraction of the circle is shaded? Write your answer in simplified form."
   answer="\frac{1}{2}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{1}{2}$"
   hint="Count the sixths that remain, then simplify by removing the common factor of $3$."
 >}}

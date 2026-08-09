@@ -484,6 +484,7 @@ Check: $10^3$ is $1000$, and $1000$ times $6.2$ is $6{,}200$. ✓
 {{< fillin
   question="Convert to decimal form: $1.3 \times 10^3$."
   answer="1300"
+  answerForm="decimal"
   answerDisplay="1,300"
   hint="The exponent is positive $3$, so move the decimal point three places to the right, adding zeros as needed."
 >}}
@@ -498,6 +499,7 @@ $$8.9 \times 10^{-2} = 0.089$$
 {{< fillin
   question="Convert to decimal form: $1.2 \times 10^{-4}$."
   answer="0.00012"
+  answerForm="decimal"
   hint="The exponent is negative $4$, so move the decimal point four places to the left, adding zeros as placeholders."
 >}}
 
@@ -655,6 +657,7 @@ integer, used to conveniently express very large or very small numbers.
 {{< fillin
   question="Convert to decimal form: $1.6 \times 10^{10}$."
   answer="16000000000"
+  answerForm="decimal"
   answerDisplay="16,000,000,000"
   hint="The exponent is positive $10$, so move the decimal point ten places to the right, filling in zeros as placeholders."
 >}}
@@ -662,12 +665,14 @@ integer, used to conveniently express very large or very small numbers.
 {{< fillin
   question="Convert to decimal form: $6.15 \times 10^{-8}$."
   answer="0.0000000615"
+  answerForm="decimal"
   hint="The exponent is negative $8$, so move the decimal point eight places to the left, adding zeros between the decimal point and the $6$."
 >}}
 
 {{< fillin
   question="The width of a proton is $1 \times 10^{-5}$ of the width of an atom. Convert that number to decimal form."
   answer="0.00001"
+  answerForm="decimal"
   hint="A negative exponent of $-5$ moves the decimal point five places to the left of the $1$."
 >}}
 

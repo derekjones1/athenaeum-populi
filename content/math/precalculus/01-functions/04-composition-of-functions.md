@@ -935,6 +935,166 @@ $g(x)=\tfrac{4}{x}$ and $h(x)=3-\sqrt{4+x^2}$
 **composite function** — the new function formed by function composition, when
 the output of one function is used as the input of another.
 
+## Practice
+
+### Combine functions using algebraic operations
+
+{{< fillin
+  question="Given $f(x)=x^2+2x$ and $g(x)=6-x^2$, find and simplify $(fg)(x)$."
+  answer="-x^4-2x^3+6x^2+12x"
+  answerForm="expanded"
+  answerDisplay="$(fg)(x)=-x^{4}-2x^{3}+6x^{2}+12x$"
+  hint="Multiply the two polynomials and collect like terms by degree."
+>}}
+
+{{< fillin
+  question="Given $f(x)=2x^2+4x$ and $g(x)=\tfrac{1}{2x}$, find and simplify $(f+g)(x)$ as a single fraction."
+  answer="\frac{4x^3+8x^2+1}{2x}"
+  answerForm="single-fraction"
+  answerDisplay="$(f+g)(x)=\tfrac{4x^{3}+8x^{2}+1}{2x}$"
+  hint="Rewrite $f(x)$ with denominator $2x$, then add the numerators over that common denominator."
+>}}
+
+{{< fillin
+  question="Given $f(x)=3x^2$ and $g(x)=\sqrt{x-5}$, find $\left(\tfrac{f}{g}\right)(x)$."
+  answer="\frac{3x^2}{\sqrt{x-5}}"
+  answerForm="single-fraction"
+  answerDisplay="$\left(\tfrac{f}{g}\right)(x)=\tfrac{3x^{2}}{\sqrt{x-5}}$"
+  hint="Divide $f(x)$ by $g(x)$; nothing cancels, so leave it as one fraction."
+>}}
+
+### Create a new function by composition of functions
+
+{{< fillin
+  question="Given $f(x)=\sqrt{x}+2$ and $g(x)=x^2+3$, find and simplify $f(g(x))$."
+  answer="\sqrt{x^2+3}+2"
+  answerForm="no-like-terms"
+  answerDisplay="$f(g(x))=\sqrt{x^{2}+3}+2$"
+  hint="Substitute $g(x)$ for every $x$ in $f(x)=\sqrt{x}+2$."
+>}}
+
+{{< fillin
+  question="Given the same $f$ and $g$, find and simplify $g(f(x))$."
+  answer="x+4\sqrt{x}+7"
+  answerForm="expanded distributed"
+  answerDisplay="$g(f(x))=x+4\sqrt{x}+7$"
+  hint="Square $\sqrt{x}+2$ completely before adding 3 — don't leave it as a power."
+>}}
+
+{{< fillin
+  question="Given $f(x)=2x^2+1$ and $g(x)=3x+5$, find and simplify $f(g(x))$."
+  answer="18x^2+60x+51"
+  answerForm="expanded distributed"
+  answerDisplay="$f(g(x))=18x^{2}+60x+51$"
+  hint="Substitute $3x+5$ for every $x$ in $f(x)=2x^2+1$, then expand the square before combining terms."
+>}}
+
+### Evaluate composite functions
+
+Use the table below, which gives values of $f$ and $g$ at integer inputs from 0
+to 9.
+
+| $x$ | $f(x)$ | $g(x)$ |
+| ---: | ---: | ---: |
+| 0 | 7 | 9 |
+| 1 | 6 | 5 |
+| 2 | 5 | 6 |
+| 3 | 8 | 2 |
+| 4 | 4 | 1 |
+| 5 | 0 | 8 |
+| 6 | 2 | 7 |
+| 7 | 1 | 3 |
+| 8 | 9 | 4 |
+| 9 | 3 | 0 |
+
+{{< fillin
+  question="Using the table above, evaluate $f(g(5))$."
+  answer="9"
+  hint="Read $g(5)$ from the table first, then look that value up in the $f$ column."
+>}}
+
+{{< fillin
+  question="Using the same table, evaluate $g(f(3))$."
+  answer="4"
+  hint="Start inside: find $f(3)$, then read $g$ at that input."
+>}}
+
+{{< fillin
+  question="Using the same table, evaluate $f(f(1))$."
+  answer="2"
+  hint="Find $f(1)$ first, then apply $f$ again to that result."
+>}}
+
+### Find the domain of a composite function
+
+{{< multiplechoice
+  question="For $f(x)=\tfrac{1}{x}$ and $g(x)=\sqrt{x-1}$, write the domain of $(f\circ g)(x)$ in interval notation."
+  answer="$(1,\infty)$"
+  hint="Find the input to $g$ that makes $g(x)$ equal to 0, the one value $f$ cannot accept."
+>}}
+$(1,\infty)$
+$[1,\infty)$
+$(-\infty,1)$
+$(0,\infty)$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For $p(x)=\tfrac{1}{\sqrt{x}}$ and $m(x)=x^2-4$, state the domain of $p(m(x))$ in interval notation."
+  answer="$(-\infty,-2)\cup(2,\infty)$"
+  hint="The radicand $m(x)$ must be strictly positive, since it also sits under a fraction bar."
+>}}
+$(-\infty,-2)\cup(2,\infty)$
+$[-2,2]$
+$(-\infty,-2]\cup[2,\infty)$
+$(2,\infty)$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="For $f(x)=\sqrt{2-4x}$ and $g(x)=-\tfrac{3}{x}$, write the domain of $(g\circ f)(x)$ in interval notation."
+  answer="$\left(-\infty,\tfrac{1}{2}\right)$"
+  hint="Start from the domain of $f$, then exclude the input where $f(x)$ itself equals 0."
+>}}
+$\left(-\infty,\tfrac{1}{2}\right)$
+$\left(-\infty,\tfrac{1}{2}\right]$
+$\left(\tfrac{1}{2},\infty\right)$
+$(-\infty,0)\cup\left(0,\tfrac{1}{2}\right)$
+{{< /multiplechoice >}}
+
+### Decompose a composite function into its component functions
+
+{{< multiplechoice
+  question="Write $h(x)=(x-5)^3$ as the composition $f(g(x))$ of two functions."
+  answer="$f(x)=x^3$ and $g(x)=x-5$"
+  hint="Let the inner function be whatever is being cubed."
+>}}
+$f(x)=x^3$ and $g(x)=x-5$
+$f(x)=x-5$ and $g(x)=x^3$
+$f(x)=x^3-5$ and $g(x)=x$
+$f(x)=x-5$ and $g(x)=x^3-5$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Write $h(x)=\tfrac{4}{(x+2)^2}$ as the composition $f(g(x))$ of two functions."
+  answer="$f(x)=\tfrac{4}{x}$ and $g(x)=(x+2)^2$"
+  hint="Let the inner function be the expression being squared in the denominator."
+>}}
+$f(x)=\tfrac{4}{x}$ and $g(x)=(x+2)^2$
+$f(x)=(x+2)^2$ and $g(x)=\tfrac{4}{x}$
+$f(x)=\tfrac{4}{x}$ and $g(x)=(x-2)^2$
+$f(x)=x^2$ and $g(x)=\tfrac{4}{x+2}$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Write $h(x)=\sqrt[3]{x-1}$ as the composition $f(g(x))$ of two functions."
+  answer="$f(x)=\sqrt[3]{x}$ and $g(x)=x-1$"
+  hint="Let the inner function be the expression under the cube root."
+>}}
+$f(x)=\sqrt[3]{x}$ and $g(x)=x-1$
+$f(x)=x-1$ and $g(x)=\sqrt[3]{x}$
+$f(x)=\sqrt[3]{x}$ and $g(x)=1-x$
+$f(x)=x^3$ and $g(x)=x-1$
+{{< /multiplechoice >}}
+
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 1.4: Composition of Functions](https://openstax.org/books/precalculus-2e/pages/1-4-composition-of-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated the two parabola graphs as accessible inline SVGs generated from their formulas, $g(x)=x^{2}-6x+8$ and $f(x)=-x^{2}+6x-3$, and merged the source's two annotated versions of them into one marked pair, since dashed crosshairs already trace the path the arrows were added to show; presented the function tables as Markdown tables; omitted the media links and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is interval notation, a pair of functions, or a verbal judgement, none of which can be graded as free-response math. One correction: where the source writes the domain restriction as "$x\ne\tfrac{2}{3}$ or $x\ne 2$" — a disjunction that excludes nothing — this page writes "and", matching both the sentence before it and the interval notation after it.</small>
+<small>This section is adapted from [Precalculus 2e, Section 1.4: Composition of Functions](https://openstax.org/books/precalculus-2e/pages/1-4-composition-of-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated the two parabola graphs as accessible inline SVGs generated from their formulas, $g(x)=x^{2}-6x+8$ and $f(x)=-x^{2}+6x-3$, and merged the source's two annotated versions of them into one marked pair, since dashed crosshairs already trace the path the arrows were added to show; presented the function tables as Markdown tables; omitted the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is interval notation, a pair of functions, or a verbal judgement, none of which can be graded as free-response math; and adapted a selection of the end-of-section exercises, each independently checked against the printed Answer Key, into the closing interactive Practice block, again using multiple choice for the same categorical cases (interval-notation domains, non-unique decompositions). One correction: where the source writes the domain restriction as "$x\ne\tfrac{2}{3}$ or $x\ne 2$" — a disjunction that excludes nothing — this page writes "and", matching both the sentence before it and the interval notation after it.</small>

@@ -325,6 +325,79 @@ test('an answerForm silences the rule only when it rules the printed value out',
   }
 });
 
+// ---- a prompt that names a form must grade that form -----------------------
+// "Write the point-slope form…" prints nothing to retype — the hazard is the
+// learner's own correct value in the wrong shape (distributed, scaled, or a
+// different named form), which value grading accepts.
+test('a prompt asking for a named form requires its answerForm token', () => {
+  const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
+  const named = (error) => error.includes('the question asks for');
+  const fillin = (question, answer, form = '') =>
+    `{{< fillin question="${question}" answer="${answer}"${form ? ` answerForm="${form}"` : ''} hint="Use the formula." >}}`;
+
+  // Fires: the ask names a form no declared token grades.
+  for (const [question, answer, reason] of [
+    ['Write the point-slope form of an equation of a line with a slope of $-2$ through $(-2,2)$.', 'y-2=-2(x+2)', 'point-slope ask'],
+    ['Now rewrite that same line in slope-intercept form.', 'y=-2x-2', 'slope-intercept rewrite ask'],
+    ['Find the equation of the line containing $(3,1)$ and $(5,6)$. Write the equation in slope-intercept form.', '\\frac{5}{2}x-\\frac{13}{2}', 'slope-intercept ask with a bare-expression answer'],
+    ['Convert to decimal form: $1.3 \\times 10^3$.', '1300', 'decimal-form ask'],
+    ['Find the LCD for $\\tfrac{2}{x^2-x-12}$ and $\\tfrac{1}{x^2-16}$. Leave your answer in factored form.', '(x-4)(x+4)(x+3)', 'factored-form ask'],
+    ['Add and give the sum as a mixed number: $2\\tfrac{5}{6}+1\\tfrac{5}{6}$', '4\\frac{2}{3}', 'mixed-number ask'],
+    ['Write $x \\cdot x \\cdot x$ in exponential form.', 'x^3', 'exponential-form ask'],
+  ]) {
+    assert(lint(fillin(question, answer)).some(named), reason);
+  }
+
+  // Satisfied by the matching token — including any-of alternatives.
+  for (const [question, answer, form, reason] of [
+    ['Write the point-slope form of an equation of a line with a slope of $-2$ through $(-2,2)$.', 'y-2=-2(x+2)', 'point-slope-form', 'point-slope token satisfies'],
+    ['Now rewrite that same line in slope-intercept form.', 'y=-2x-2', 'slope-intercept-form', 'slope-intercept token satisfies'],
+    ['Find the prime factorization of 80. Enter the answer in exponential form, e.g. $2^3 \\cdot 5$.', '2^4 \\cdot 5', 'prime-product', 'prime-product answers an exponential-form ask'],
+    ['Write $x \\cdot x \\cdot x$ in exponential form.', 'x^3', 'single-power', 'single-power answers an exponential-form ask'],
+  ]) {
+    assert.equal(lint(fillin(question, answer, form)).filter(named).length, 0, reason);
+  }
+
+  // Not conscripted: the prompt only mentions the form, or the answer is a
+  // list the form check never runs on.
+  for (const [source, reason] of [
+    [fillin('What is the slope of the line given in slope-intercept form $y=3x+4$?', '3'),
+      'mentioning the form without asking to produce it is not an ask'],
+    [fillin('For the hyperbola $4y^2-9x^2=36$, enter both asymptote equations in the form $y=mx$, separated by a comma. Enter the positive slope first.', 'y=\\frac{3}{2}x, y=-\\frac{3}{2}x'),
+      'a comma-list answer is out of scope — the form check never runs on it'],
+  ]) {
+    assert.equal(lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors.filter(named).length, 0, reason);
+  }
+});
+
+// ---- "in simplest form" on a numeral-fraction answer -----------------------
+test('a simplest-form ask on a numeral fraction requires lowest-terms', () => {
+  const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
+  const simplest = (error) => error.includes('asks for simplest form');
+  const fillin = (answer, form = '') =>
+    `{{< fillin question="What fraction of the circle is shaded? Write your answer in simplified form." answer="${answer}"${form ? ` answerForm="${form}"` : ''} hint="Reduce." >}}`;
+  assert(lint(fillin('\\frac{3}{4}')).some(simplest), 'a numeral fraction with no lowest-terms fires');
+  assert(lint(fillin('4\\frac{2}{3}')).some(simplest), 'a mixed number with no lowest-terms fires');
+  assert.equal(lint(fillin('\\frac{3}{4}', 'lowest-terms')).filter(simplest).length, 0, 'lowest-terms satisfies');
+  assert.equal(lint(fillin('\\frac{x}{4}')).filter(simplest).length, 0, 'a variable fraction is reduced-fraction territory, not this rule');
+});
+
+// ---- an interval-notation ask must author an interval ----------------------
+// The engine grades an inequality and an interval unequal in BOTH directions,
+// so `u>10` behind "write the solution in interval notation" marks the
+// learner who follows the instruction incorrect — and self-grading cannot see
+// it, because the authored inequality is only compared against itself.
+test('an interval-notation ask rejects a non-interval authored answer', () => {
+  const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
+  const interval = (error) => error.includes('interval notation');
+  const fillin = (answer) =>
+    `{{< fillin question="Solve the inequality $6u+8(u-1)>10u+32$ and write the solution in interval notation." answer="${answer}" hint="Collect the u-terms." >}}`;
+  assert(lint(fillin('u>10')).some(interval), 'an inequality behind an interval-notation ask fires');
+  assert.equal(lint(fillin('(10,\\infty)')).filter(interval).length, 0, 'an interval satisfies the ask');
+  assert.equal(lint(fillin('[0.5,\\infty)')).filter(interval).length, 0, 'a closed interval satisfies the ask');
+  assert.equal(lint(fillin('(-\\infty,3)\\cup(5,\\infty)')).filter(interval).length, 0, 'a union of intervals satisfies the ask');
+});
+
 // ---- a factoring prompt is trivially satisfiable without answerForm --------
 // "Factor: $x^2+6x+8$" prints a polynomial that IS its own factorization by
 // value, so the CAS cannot separate the answer from the prompt retyped. Only
@@ -681,6 +754,47 @@ test('a composition ask with page-context definitions is trivially satisfiable',
     0,
     'an ask evaluated at a number builds no candidate',
   );
+
+  // The nested-application phrasing `f(g(x))` — how the precalculus sections
+  // write a composition at least as often as `(f\circ g)(x)`. It was outside
+  // the rule until August 9, 2026, and three authored exercises passed by
+  // retyping the substitution because of it.
+  const NESTED = 'Given $f(x)=2x^2+1$ and $g(x)=3x+5$, find and simplify $f(g(x))$.';
+  assert(
+    lint(fillin(NESTED, '18x^2+60x+51')).some(restated),
+    'the nested-application phrasing builds the substituted-but-unexpanded candidate',
+  );
+  assert(
+    lint(fillin(NESTED, '18x^2+60x+51', 'expanded')).some(restated),
+    '"expanded" alone does not rule it out — 2(3x+5)^2+1 is already a top-level sum',
+  );
+  assert.equal(
+    lint(fillin(NESTED, '18x^2+60x+51', 'expanded distributed')).filter(restated).length,
+    0,
+    'adding "distributed" rules the unexpanded square out',
+  );
+  assert.equal(checkAnswer('18x^2+60x+51', '18x^2+60x+51', { form: 'expanded distributed' }), 'correct',
+    'the tightened form still accepts the exercise\'s own answer');
+  assert.equal(
+    lint(fillin('Given $f(x)=2x^2+1$ and $g(x)=3x+5$, find $f(g(2))$.', '243')).filter(restated).length,
+    0,
+    'a nested application evaluated at a number builds no candidate',
+  );
+
+  // A built candidate that IS the answer means the ask left no operation to
+  // carry out: substituting $x^2+3$ into $\sqrt{x}+2$ produces the answer
+  // itself, so writing it is the correct response and no form should reject
+  // it. The comparison must be structural — `2(3x+5)^2+1` equals
+  // `18x^2+60x+51` in value, and silencing on value would close the class.
+  assert.equal(
+    lint(fillin(
+      'Given $f(x)=\\sqrt{x}+2$ and $g(x)=x^2+3$, find and simplify $f(g(x))$.',
+      '\\sqrt{x^2+3}+2',
+      'no-like-terms',
+    )).filter(restated).length,
+    0,
+    'a pure-substitution ask is sound content, not a restatement hazard',
+  );
 });
 
 // ---- a slash quotient followed by juxtaposition mis-parses ------------------
@@ -953,7 +1067,7 @@ test('the objectives callout shape is enforced', () => {
   );
   assert.equal(
     lintHugo('## Teach\n\nProse.', sectionPath)
-      .errors.filter((e) => e.includes('objective')).length,
+      .errors.filter((e) => e.includes('objectives callout')).length,
     0,
     'a fragment with no Practice block does not need the objectives list',
   );
@@ -990,22 +1104,39 @@ test('the section-final Practice block is enforced', () => {
   assert.equal(
     good.warnings.filter((w) => w.includes('`## Practice`')).length,
     0,
-    'a section with a Practice block must not carry the retrofit warning',
+    'a section with a Practice block must not be flagged',
   );
 
-  const missing = lintHugo(`${head}\n\n## Teach\n\nProse.\n\n${keyTerms}`, sectionPath);
+  // Frontmatter is what makes a fixture a whole PAGE rather than an authoring
+  // fragment, and only a whole page can be missing its Practice block.
+  const FRONTMATTER = '---\ntitle: A Section\nweight: 1\n---\n';
+  const missing = lintHugo(`${FRONTMATTER}\n${head}\n\n## Teach\n\nProse.\n\n${keyTerms}`, sectionPath);
   assert(
-    missing.warnings.some((w) => w.includes('no `## Practice` block')),
-    'a section without a Practice block warns — the warning list is the retrofit worklist',
+    missing.errors.some((e) => e.includes('no `## Practice` block')),
+    'a section without a Practice block is an error — the retrofit finished August 9, 2026',
   );
-  assert.equal(missing.errors.length, 0, 'a missing Practice block is a warning during rollout, not an error');
-  assert(
-    missing.warnings.some((w) => w.includes('at least 5 in total')),
-    'the retrofit warning states the section-specific minimum',
+  assert.equal(
+    missing.warnings.filter((w) => w.includes('`## Practice`')).length,
+    0,
+    'the missing-block rule is an error only; it must not also warn',
   );
   assert(
-    lintHugo(`${objectivesCallout(['O1', 'O2', 'O3', 'O4'])}\n\n## Teach\n\nProse.\n\n${keyTerms}`, sectionPath)
-      .warnings.some((w) => w.includes('at least 8 in total')),
+    missing.errors.some((e) => e.includes('at least 5 in total')),
+    'the missing-block error states the section-specific minimum',
+  );
+  // The rule must not fire on an authoring fragment — a snippet under review,
+  // or a fixture for another rule in this file — which has no frontmatter and
+  // is not claiming to be a whole page. A real section cannot escape this way:
+  // validate-content errors on missing frontmatter first.
+  assert.equal(
+    lintHugo(`${head}\n\n## Teach\n\nProse.\n\n${keyTerms}`, sectionPath)
+      .errors.filter((e) => e.includes('no `## Practice` block')).length,
+    0,
+    'a frontmatter-less fragment is not a page missing its Practice block',
+  );
+  assert(
+    lintHugo(`${FRONTMATTER}\n${objectivesCallout(['O1', 'O2', 'O3', 'O4'])}\n\n## Teach\n\nProse.\n\n${keyTerms}`, sectionPath)
+      .errors.some((e) => e.includes('at least 8 in total')),
     'the minimum scales with the objective count once 2 per objective exceeds the floor',
   );
 

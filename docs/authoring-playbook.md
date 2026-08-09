@@ -290,6 +290,8 @@ the two independent things it names:
 | `distributed` | no parentheses left to multiply out |
 | `simplified-radical` | power-free radicands (perfect $n$th-power factors extracted, sign included: $\sqrt[3]{-108}$ fails on its 27), like radicals combined, nothing radical under a fraction bar, no unevaluated numeral arithmetic or fraction under a radical ($\sqrt{64+225}$, $\sqrt{\tfrac{25}{16}}$), and no same-index product of numeral radicals ($\sqrt{3}\cdot\sqrt{6}$) |
 | `factored` | a product of at least two factors, at least one multi-term — for "Factor: $x^2+6x+8$" |
+| `point-slope-form` | one equation, one side the bare output variable plus at most a constant, the other a single $m(x-x_1)$ term (either orientation) — for "Write the point-slope form…", where the engine grades the distributed and scaled restatements equal; the collapsed origin case $y=mx$ passes |
+| `slope-intercept-form` | after an optional written `y=`/`f(x)=` label, at most one $mx$ monomial plus at most a constant — for "Write the equation in slope-intercept form", whether the answer is authored as the equation or as the bare expression following $y=$ |
 | `vertex-form` | one $a(x-h)^2+k$ term shape (either orientation, optional written `y=`/`x=`/`f(x)=` label): exactly one squared-binomial term plus at most a constant — for "Write $y=2x^2+4x+5$ in standard form" |
 | `conic-standard-form` | an equation with one side exactly $1$ and the other a sum/difference of $\ge 2$ fractions, each a coefficient-1 squared term ($x^2$, $(y-k)^2$) over a positive integer — for ellipse/hyperbola "write in standard form" |
 | `circle-standard-form` | two coefficient-1 squared terms against a positive integer — $(x-h)^2+(y-k)^2=r^2$ for the circle asks |
@@ -562,13 +564,11 @@ multipart source item expands into one exercise per part.
   practice; a footer claiming the end-of-section exercises were omitted is
   stale once the block exists.
 
-Sections authored before August 1, 2026 may not have a Practice block yet;
-the content lint reports each missing block as a warning naming that
-section's minimum, and that warning list is the retrofit worklist (§5). New
-sections and substantive revisions must ship the block. A present-but-
+Every numbered section carries the block, and the content lint reports a
+missing one as an **error** naming that section's minimum. A present-but-
 malformed block — an under-filled group, a group that is not an objective,
 groups out of order, an exercise outside any group, too few exercises
-overall, wrong placement, or a duplicate heading — is a lint error.
+overall, wrong placement, or a duplicate heading — is a lint error too.
 
 ## 4. Verify (the workflow)
 
@@ -609,30 +609,21 @@ From the repository root:
 7. Run `git diff --check` and report the changed/untracked files plus the
    source ledger and pages visually checked. Do not commit unless asked.
 
-## 5. The one remaining retrofit
+## 5. Working rules
 
-`npm run lint` reports **zero errors and one warning category**: the 11
-sections with no `## Practice` block (precalculus 11,
-as of August 8, 2026). 201 of the 212 mapped sections now carry the block:
-all three algebra books are complete — prealgebra 60/60, elementary-algebra
-73/73, and intermediate-algebra 68/68 — so the retrofit is now entirely the
-two authored Precalculus 2e chapters. That warning list is the worklist, and
-it is the only non-blocking rule in the repository — every other authoring
-rule is an error, so there is no category of known-defective content left to
-grandfather.
+`npm run lint` reports **zero errors and zero warnings**. There is no
+non-blocking rule left in the repository and no category of known-defective
+content to grandfather.
 
-Precalculus 2e covers only its two authored chapters — ch. 1 Functions (7) and
-ch. 2 Linear Functions (4); its ten scaffolded chapters will add to this
-worklist as their section pages land.
-
-Adding those blocks is authoring, not cleanup: the per-section minimums the
-lint prints sum to 91 exercises, and the real figure runs higher because the
-block scales with the objectives list and multipart items expand one component
-per part. Each is selected from the source's end-of-section sets with its
-answer visible in the Answer Key, independently solved, recorded in the
-ledger, and disclosed in the footer. Work it a chapter at a time under §3.
-When the last section lands, promote the rule to an error and delete this
-section.
+The Practice retrofit that used to live here is finished. All 212 mapped
+sections carry the block — prealgebra 60/60, elementary-algebra 73/73,
+intermediate-algebra 68/68, and the eleven authored Precalculus 2e sections
+(ch. 1 Functions 7, ch. 2 Linear Functions 4), which landed on August 9,
+2026. The lint rule was promoted from a warning to an error the same day, and
+the published backlog count was deleted along with the `--check-docs` flag
+and the tooling that maintained it. Precalculus 2e's ten scaffolded chapters
+will each need their blocks as their section pages land — but as an error on
+the page being written, not as a worklist.
 
 Everything else that used to live here has been fixed rather than documented:
 numerically coded categorical answers are `multiplechoice`, four-digit numbers
@@ -651,12 +642,10 @@ The working rules that remain:
 - **A rule that fires on sound content is a bug in the rule.** Narrow it, with
   a test for the case it was wrong about — do not add an exemption for the
   page.
-- **End the session with `npm run baseline:update`.** It recounts this
-  section's backlog figures and the `--min-verified` floor, rewrites them in
-  place (here, in `AGENTS.md`, and in `package.json`), and refuses to move a
-  number in the wrong direction without an explicit flag. Committing its
-  rewrite with the content is what keeps `npm run lint` and `npm test` green
-  without hand-edited counts.
+- **End the session with `npm run baseline:update`.** It recounts the
+  `--min-verified` floor, rewrites it in place in `package.json`, and refuses
+  to lower it without an explicit flag. Committing its rewrite with the
+  content is what keeps `npm test` green without a hand-edited count.
 
 ## 6. Trivially satisfiable prompts: the remaining classes
 
@@ -888,6 +877,95 @@ a question back through `checkAnswer` against that exercise's own answer, one
 file per process — the engine carries state across calls and will otherwise
 report false positives — and for any span of the shape `label = RHS`, replay
 the bare RHS too.
+
+### The nested-application phrasing, and a token that was too weak
+
+Precalculus 2e ch. 1–2 authoring (August 9, 2026) found two more holes in the
+seventh shape, both in the same audit and both closed with the content that
+exposed them.
+
+The first is a **phrasing** the extractor could not read. `(f\circ g)(x)` was
+in scope; `f(g(x))` — the nesting written out, which precalculus uses at least
+as often — was not, so "Given $f(x)=2x^2+1$ and $g(x)=3x+5$, find and simplify
+$f(g(x))$" was passable by typing `2(3x+5)^2+1`. `FUNCTION_NESTED_ASK_RE` now
+feeds the same candidate builder, under the same guard: the inner argument
+must be exactly `x`, because `f(g(2))` answers with a number no restatement
+equals.
+
+The second is a **token that was too weak for its ask**. `expanded` requires a
+top-level sum — and `2(3x+5)^2+1` already is one, so it passed the form it
+declared. The ask is "expand the square", which is what `distributed` names,
+and `expanded distributed` composes to exactly the requirement. Two composition
+exercises and one difference quotient were retrofitted (`no-like-terms
+polynomial` for the quotient, since a difference quotient's hazard is the
+fraction bar rather than a like term). The lesson generalizes the §6 rule
+about naming the right step: a token whose *shape* the wrong answer already
+satisfies is not a check, and only replaying the built candidate through the
+declared form catches it.
+
+Closing the phrasing surfaced its own over-fire, and narrowing it is the third
+part. "Given $f(x)=\sqrt{x}+2$ and $g(x)=x^2+3$, find and simplify $f(g(x))$"
+answers $\sqrt{x^2+3}+2$ — the substitution *is* the answer, with nothing left
+to carry out, so writing it is the correct response. A built candidate that is
+**structurally** the authored answer is therefore filtered out, the same way a
+printed span identical to its answer already was ("Add: $5a+7b$"). Structural,
+never value: `2(3x+5)^2+1` and `18x^2+60x+51` are equal in value and different
+in shape, which is the whole hazard, so a value comparison here would silence
+the class it was built to catch.
+
+### The ninth shape closed: the ask that NAMES a form
+
+The §2.1 point-slope finding (August 9, 2026) generalized into a class the
+retype scan can never see: a prompt that **names** the target form while
+printing nothing to retype. "Write the point-slope form of an equation of a
+line that passes through $(1,5)$ and $(4,11)$" prints two coordinates — no
+subject span exists — but the engine grades the distributed `y-5=2x-2` and the
+scaled `2y-10=4(x-1)` equal to the authored `y-5=2(x-1)`, and grades any
+value-equal expression (`3(x-4)+2`, `\frac{-x-6}{3}`) equal to a bare
+slope-intercept answer. The hazard is the learner's own correct *value* in the
+shape the ask exists to rule out.
+
+Two new tokens carry the linear-equations half: `point-slope-form` and
+`slope-intercept-form` (shapes in the token table above). The lint verb is a
+table, `NAMED_FORM_ASKS`, mapping each named-form phrase to the token(s) that
+grade it — ANY of them, because one phrase can name different shapes:
+"exponential form" is the log conversion (`exponential-form`), the repeated
+multiplication (`single-power`), and the prime factorization (`prime-product`).
+The table also covers "decimal form" (`decimal`), "factored form" (`factored`),
+and "as a mixed number" (`mixed-number`/`fraction-or-mixed-number`); a
+companion rule requires `lowest-terms` when a "simplest/simplified form" ask
+has a numeral-fraction answer. The ask patterns demand a producing verb
+(write/rewrite/enter/…) or an "equation … in <name> form" clause, so a prompt
+that merely *mentions* the form is not conscripted; list answers are out of
+scope because the grader's form check never runs on them. The retrofit was 54
+exercises across all four books.
+
+Probing the class surfaced two false-**reject** defects, both of the kind the
+self-grading gates cannot see because the authored answer is only ever
+compared against itself:
+
+- **An interval-notation ask authored as an inequality.** "…write the solution
+  in interval notation" answered `u>10` marks the learner who types
+  `(10,\infty)` as instructed **incorrect** — the engine grades an inequality
+  and an interval unequal in both directions. The answer is rewritten as the
+  interval and a lint rule now requires an interval-shaped answer (every
+  `\cup`-joined part opens with `[` or `(`) behind any interval-notation ask.
+- **A function-notation response the grader could not read.** `f(x)` boxes as
+  `Multiply(f, x)` (capital names as an application), so a learner answering a
+  prompt phrased "If $f(x)$ is a linear function…" with `f(x)=-7x+3` was
+  graded incorrect against the authored `y=-7x+3`. `checkAnswer` now strips a
+  written one-letter-applied-to-one-letter label — only when no further `=`
+  remains, so a genuine equation response is never half-eaten — and the
+  variable-name guard does not apply to it: the prompt said $f(x)$, the author
+  wrote $y$, and both mean the output.
+
+Two residual loosenesses are recorded rather than closed, deliberately. A
+two-point point-slope ask accepts the *other* point's equally-correct
+point-slope equation by value, so the prompt must pin the point ("using
+$(1,5)$ as $(x_1,y_1)$") — a wording rule, not a token. And slope-intercept
+happens to grade unequal against a point-slope answer today; that is an engine
+accident the predicates do not depend on, which is why the mirror token exists
+at all.
 
 ## Done checklist
 

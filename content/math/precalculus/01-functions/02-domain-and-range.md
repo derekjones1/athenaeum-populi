@@ -2522,6 +2522,382 @@ output. **set-builder notation** — a method of describing a set by a rule
 that all of its members obey; it takes the form $\{x\mid \text{statement
 about }x\}$.
 
+## Practice
+
+### Find the domain of a function defined by an equation
+
+{{< multiplechoice
+  question="Find the domain of the function $f(x)=5-2x^2$."
+  answer="$(-\infty,\infty)$"
+  hint="There is no denominator or even root here, so ask whether any real number could fail."
+>}}
+$(-\infty,\infty)$
+$(-\infty,5]$
+$[0,\infty)$
+$(-\infty,0)\cup(0,\infty)$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Find the domain of the function $f(x)=3-\sqrt{6-2x}$."
+  answer="$(-\infty,3]$"
+  hint="Set the radicand greater than or equal to zero and solve for $x$."
+>}}
+$(-\infty,3]$
+$[3,\infty)$
+$(-\infty,3)$
+$(-\infty,6]$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Find the domain of the function $f(x)=\tfrac{3x+1}{4x+2}$."
+  answer="$(-\infty,-\tfrac{1}{2})\cup(-\tfrac{1}{2},\infty)$"
+  hint="Set the denominator equal to zero; that input is the one value to exclude."
+>}}
+$(-\infty,-\tfrac{1}{2})\cup(-\tfrac{1}{2},\infty)$
+$(-\infty,-\tfrac{1}{3})\cup(-\tfrac{1}{3},\infty)$
+$(-\infty,\infty)$
+$[-\tfrac{1}{2},\infty)$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Find the domain of the function $f(x)=\tfrac{2x+1}{\sqrt{5-x}}$."
+  answer="$(-\infty,5)$"
+  hint="The radicand sits under a denominator, so it must be strictly positive, not just nonnegative."
+>}}
+$(-\infty,5)$
+$(-\infty,5]$
+$(5,\infty)$
+$(-\infty,-\tfrac{1}{2})\cup(-\tfrac{1}{2},\infty)$
+{{< /multiplechoice >}}
+
+### Graph piecewise-defined functions
+
+{{< fillin
+  question="A piecewise function is defined by $f(x)=\begin{cases}5x & \text{if }x<0\\[4pt]3 & \text{if }0\le x\le3\\[4pt]x^2 & \text{if }x>3\end{cases}$. Find $f(-1)$."
+  answer="-5"
+  hint="Since $-1<0$, use the first piece, $5x$."
+>}}
+
+{{< fillin
+  question="For the same piecewise function, find $f(0)$."
+  answer="3"
+  hint="Since $0\le 0\le 3$, use the middle piece, which is constant."
+>}}
+
+{{< fillin
+  question="For the same piecewise function, find $f(2)$."
+  answer="3"
+  hint="Since $0\le 2\le 3$, the input still falls in the middle piece."
+>}}
+
+{{< fillin
+  question="For the same piecewise function, find $f(4)$."
+  answer="16"
+  hint="Since $4>3$, use the third piece, $x^2$."
+>}}
+
+{{< multiplechoice
+  mode="graph"
+  question="Which graph shows the piecewise function $f(x)=2x-1$ if $x<1$ and $f(x)=1+x$ if $x\ge 1$?"
+  answerIndex="0"
+  hint="Check which endpoint is open and which is closed at $x=1$: the first piece excludes $x=1$, the second includes it."
+>}}
+<svg role="img" aria-label="The graph of a piecewise function: a line of slope 2 rising to an open circle at (1, 1), and a separate line of slope 1 starting at a solid point at (1, 2) and continuing to the right." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244 292" width="244" height="292" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="50" y1="266" x2="50" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="74" y1="266" x2="74" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="122" y1="266" x2="122" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="146" y1="266" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="170" y1="266" x2="170" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="194" y1="266" x2="194" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="218" y1="266" x2="218" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="218" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="242" x2="218" y2="242" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="218" x2="218" y2="218" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="194" x2="218" y2="194" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="170" x2="218" y2="170" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="122" x2="218" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="98" x2="218" y2="98" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="74" x2="218" y2="74" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="50" x2="218" y2="50" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="218" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="146" x2="220" y2="146" stroke="currentColor" stroke-width="1"/>
+  <line x1="98" y1="24" x2="98" y2="268" stroke="currentColor" stroke-width="1"/>
+  <polygon points="230,146 220,151 220,141" fill="currentColor"/>
+  <polygon points="98,14 103,24 93,24" fill="currentColor"/>
+  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
+  <polygon points="98,278 93,268 103,268" fill="currentColor"/>
+  <text x="228" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="106" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="143" x2="26" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="161" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
+  <line x1="50" y1="143" x2="50" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="50" y="161" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="74" y1="143" x2="74" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="74" y="161" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <line x1="122" y1="143" x2="122" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="122" y="161" font-size="11" fill="currentColor" text-anchor="middle">1</text>
+  <line x1="146" y1="143" x2="146" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="146" y="161" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="170" y1="143" x2="170" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="170" y="161" font-size="11" fill="currentColor" text-anchor="middle">3</text>
+  <line x1="194" y1="143" x2="194" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="194" y="161" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="218" y1="143" x2="218" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="218" y="161" font-size="11" fill="currentColor" text-anchor="middle">5</text>
+  <line x1="95" y1="266" x2="101" y2="266" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="270" font-size="11" fill="currentColor" text-anchor="end">−5</text>
+  <line x1="95" y1="242" x2="101" y2="242" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="246" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="95" y1="218" x2="101" y2="218" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="222" font-size="11" fill="currentColor" text-anchor="end">−3</text>
+  <line x1="95" y1="194" x2="101" y2="194" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="198" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="95" y1="170" x2="101" y2="170" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="174" font-size="11" fill="currentColor" text-anchor="end">−1</text>
+  <line x1="95" y1="122" x2="101" y2="122" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="126" font-size="11" fill="currentColor" text-anchor="end">1</text>
+  <line x1="95" y1="98" x2="101" y2="98" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="102" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="95" y1="74" x2="101" y2="74" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="78" font-size="11" fill="currentColor" text-anchor="end">3</text>
+  <line x1="95" y1="50" x2="101" y2="50" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="54" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <line x1="95" y1="26" x2="101" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="30" font-size="11" fill="currentColor" text-anchor="end">5</text>
+  <line x1="122" y1="122" x2="54.5" y2="257.1" stroke="currentColor" stroke-width="1.4"/>
+  <polygon points="50,266 50,254.8 58.9,259.3" fill="currentColor"/>
+  <line x1="122" y1="98" x2="186.9" y2="33.1" stroke="currentColor" stroke-width="1.4"/>
+  <polygon points="194,26 190.5,36.6 183.4,29.5" fill="currentColor"/>
+  <circle cx="122" cy="122" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+  <circle cx="122" cy="98" r="4" fill="currentColor"/>
+</svg>
+===OPT===
+<svg role="img" aria-label="The graph of a piecewise function: a line of slope 2 rising to a solid point at (1, 1), and a separate line of slope 1 starting at an open circle at (1, 2) and continuing to the right." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244 292" width="244" height="292" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="50" y1="266" x2="50" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="74" y1="266" x2="74" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="122" y1="266" x2="122" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="146" y1="266" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="170" y1="266" x2="170" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="194" y1="266" x2="194" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="218" y1="266" x2="218" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="218" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="242" x2="218" y2="242" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="218" x2="218" y2="218" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="194" x2="218" y2="194" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="170" x2="218" y2="170" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="122" x2="218" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="98" x2="218" y2="98" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="74" x2="218" y2="74" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="50" x2="218" y2="50" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="218" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="146" x2="220" y2="146" stroke="currentColor" stroke-width="1"/>
+  <line x1="98" y1="24" x2="98" y2="268" stroke="currentColor" stroke-width="1"/>
+  <polygon points="230,146 220,151 220,141" fill="currentColor"/>
+  <polygon points="98,14 103,24 93,24" fill="currentColor"/>
+  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
+  <polygon points="98,278 93,268 103,268" fill="currentColor"/>
+  <text x="228" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="106" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="143" x2="26" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="161" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
+  <line x1="50" y1="143" x2="50" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="50" y="161" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="74" y1="143" x2="74" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="74" y="161" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <line x1="122" y1="143" x2="122" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="122" y="161" font-size="11" fill="currentColor" text-anchor="middle">1</text>
+  <line x1="146" y1="143" x2="146" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="146" y="161" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="170" y1="143" x2="170" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="170" y="161" font-size="11" fill="currentColor" text-anchor="middle">3</text>
+  <line x1="194" y1="143" x2="194" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="194" y="161" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="218" y1="143" x2="218" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="218" y="161" font-size="11" fill="currentColor" text-anchor="middle">5</text>
+  <line x1="95" y1="266" x2="101" y2="266" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="270" font-size="11" fill="currentColor" text-anchor="end">−5</text>
+  <line x1="95" y1="242" x2="101" y2="242" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="246" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="95" y1="218" x2="101" y2="218" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="222" font-size="11" fill="currentColor" text-anchor="end">−3</text>
+  <line x1="95" y1="194" x2="101" y2="194" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="198" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="95" y1="170" x2="101" y2="170" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="174" font-size="11" fill="currentColor" text-anchor="end">−1</text>
+  <line x1="95" y1="122" x2="101" y2="122" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="126" font-size="11" fill="currentColor" text-anchor="end">1</text>
+  <line x1="95" y1="98" x2="101" y2="98" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="102" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="95" y1="74" x2="101" y2="74" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="78" font-size="11" fill="currentColor" text-anchor="end">3</text>
+  <line x1="95" y1="50" x2="101" y2="50" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="54" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <line x1="95" y1="26" x2="101" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="30" font-size="11" fill="currentColor" text-anchor="end">5</text>
+  <line x1="122" y1="122" x2="54.5" y2="257.1" stroke="currentColor" stroke-width="1.4"/>
+  <polygon points="50,266 50,254.8 58.9,259.3" fill="currentColor"/>
+  <line x1="122" y1="98" x2="186.9" y2="33.1" stroke="currentColor" stroke-width="1.4"/>
+  <polygon points="194,26 190.5,36.6 183.4,29.5" fill="currentColor"/>
+  <circle cx="122" cy="122" r="4" fill="currentColor"/>
+  <circle cx="122" cy="98" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+</svg>
+===OPT===
+<svg role="img" aria-label="The graph of a piecewise function: a line of slope 2 rising to an open circle at (1, 1), and a separate line of slope negative 1 starting at a solid point at (1, 2) and falling to the right." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244 292" width="244" height="292" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="50" y1="266" x2="50" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="74" y1="266" x2="74" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="122" y1="266" x2="122" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="146" y1="266" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="170" y1="266" x2="170" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="194" y1="266" x2="194" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="218" y1="266" x2="218" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="218" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="242" x2="218" y2="242" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="218" x2="218" y2="218" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="194" x2="218" y2="194" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="170" x2="218" y2="170" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="122" x2="218" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="98" x2="218" y2="98" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="74" x2="218" y2="74" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="50" x2="218" y2="50" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="218" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="146" x2="220" y2="146" stroke="currentColor" stroke-width="1"/>
+  <line x1="98" y1="24" x2="98" y2="268" stroke="currentColor" stroke-width="1"/>
+  <polygon points="230,146 220,151 220,141" fill="currentColor"/>
+  <polygon points="98,14 103,24 93,24" fill="currentColor"/>
+  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
+  <polygon points="98,278 93,268 103,268" fill="currentColor"/>
+  <text x="228" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="106" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="143" x2="26" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="161" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
+  <line x1="50" y1="143" x2="50" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="50" y="161" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="74" y1="143" x2="74" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="74" y="161" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <line x1="122" y1="143" x2="122" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="122" y="161" font-size="11" fill="currentColor" text-anchor="middle">1</text>
+  <line x1="146" y1="143" x2="146" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="146" y="161" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="170" y1="143" x2="170" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="170" y="161" font-size="11" fill="currentColor" text-anchor="middle">3</text>
+  <line x1="194" y1="143" x2="194" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="194" y="161" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="218" y1="143" x2="218" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="218" y="161" font-size="11" fill="currentColor" text-anchor="middle">5</text>
+  <line x1="95" y1="266" x2="101" y2="266" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="270" font-size="11" fill="currentColor" text-anchor="end">−5</text>
+  <line x1="95" y1="242" x2="101" y2="242" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="246" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="95" y1="218" x2="101" y2="218" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="222" font-size="11" fill="currentColor" text-anchor="end">−3</text>
+  <line x1="95" y1="194" x2="101" y2="194" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="198" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="95" y1="170" x2="101" y2="170" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="174" font-size="11" fill="currentColor" text-anchor="end">−1</text>
+  <line x1="95" y1="122" x2="101" y2="122" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="126" font-size="11" fill="currentColor" text-anchor="end">1</text>
+  <line x1="95" y1="98" x2="101" y2="98" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="102" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="95" y1="74" x2="101" y2="74" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="78" font-size="11" fill="currentColor" text-anchor="end">3</text>
+  <line x1="95" y1="50" x2="101" y2="50" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="54" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <line x1="95" y1="26" x2="101" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="30" font-size="11" fill="currentColor" text-anchor="end">5</text>
+  <line x1="122" y1="122" x2="54.5" y2="257.1" stroke="currentColor" stroke-width="1.4"/>
+  <polygon points="50,266 50,254.8 58.9,259.3" fill="currentColor"/>
+  <line x1="122" y1="98" x2="186.9" y2="162.9" stroke="currentColor" stroke-width="1.4"/>
+  <polygon points="194,170 183.4,166.5 190.5,159.4" fill="currentColor"/>
+  <circle cx="122" cy="122" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+  <circle cx="122" cy="98" r="4" fill="currentColor"/>
+</svg>
+===OPT===
+<svg role="img" aria-label="The graph of a piecewise function: a line of slope 2 rising to an open circle at (0, -1), and a separate line of slope 1 starting at a solid point at (0, 1) and continuing to the right." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244 292" width="244" height="292" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="266" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="50" y1="266" x2="50" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="74" y1="266" x2="74" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="122" y1="266" x2="122" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="146" y1="266" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="170" y1="266" x2="170" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="194" y1="266" x2="194" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="218" y1="266" x2="218" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="218" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="242" x2="218" y2="242" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="218" x2="218" y2="218" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="194" x2="218" y2="194" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="170" x2="218" y2="170" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="122" x2="218" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="98" x2="218" y2="98" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="74" x2="218" y2="74" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="50" x2="218" y2="50" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="218" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="146" x2="220" y2="146" stroke="currentColor" stroke-width="1"/>
+  <line x1="98" y1="24" x2="98" y2="268" stroke="currentColor" stroke-width="1"/>
+  <polygon points="230,146 220,151 220,141" fill="currentColor"/>
+  <polygon points="98,14 103,24 93,24" fill="currentColor"/>
+  <polygon points="14,146 24,141 24,151" fill="currentColor"/>
+  <polygon points="98,278 93,268 103,268" fill="currentColor"/>
+  <text x="228" y="138" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="106" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="143" x2="26" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="161" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
+  <line x1="50" y1="143" x2="50" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="50" y="161" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="74" y1="143" x2="74" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="74" y="161" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <line x1="122" y1="143" x2="122" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="122" y="161" font-size="11" fill="currentColor" text-anchor="middle">1</text>
+  <line x1="146" y1="143" x2="146" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="146" y="161" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="170" y1="143" x2="170" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="170" y="161" font-size="11" fill="currentColor" text-anchor="middle">3</text>
+  <line x1="194" y1="143" x2="194" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="194" y="161" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="218" y1="143" x2="218" y2="149" stroke="currentColor" stroke-width="1"/>
+  <text x="218" y="161" font-size="11" fill="currentColor" text-anchor="middle">5</text>
+  <line x1="95" y1="266" x2="101" y2="266" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="270" font-size="11" fill="currentColor" text-anchor="end">−5</text>
+  <line x1="95" y1="242" x2="101" y2="242" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="246" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="95" y1="218" x2="101" y2="218" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="222" font-size="11" fill="currentColor" text-anchor="end">−3</text>
+  <line x1="95" y1="194" x2="101" y2="194" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="198" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="95" y1="170" x2="101" y2="170" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="174" font-size="11" fill="currentColor" text-anchor="end">−1</text>
+  <line x1="95" y1="122" x2="101" y2="122" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="126" font-size="11" fill="currentColor" text-anchor="end">1</text>
+  <line x1="95" y1="98" x2="101" y2="98" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="102" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="95" y1="74" x2="101" y2="74" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="78" font-size="11" fill="currentColor" text-anchor="end">3</text>
+  <line x1="95" y1="50" x2="101" y2="50" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="54" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <line x1="95" y1="26" x2="101" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="92" y="30" font-size="11" fill="currentColor" text-anchor="end">5</text>
+  <line x1="98" y1="170" x2="54.5" y2="257.1" stroke="currentColor" stroke-width="1.4"/>
+  <polygon points="50,266 50,254.8 58.9,259.3" fill="currentColor"/>
+  <line x1="98" y1="122" x2="186.9" y2="33.1" stroke="currentColor" stroke-width="1.4"/>
+  <polygon points="194,26 190.5,36.6 183.4,29.5" fill="currentColor"/>
+  <circle cx="98" cy="170" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+  <circle cx="98" cy="122" r="4" fill="currentColor"/>
+</svg>
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="A piecewise function is defined by $f(x)=x^2-2$ if $x<1$ and $f(x)=-x^2+2$ if $x>1$. Find its domain."
+  answer="$(-\infty,1)\cup(1,\infty)$"
+  hint="Neither piece's interval includes $x=1$ itself, so check whether that input is covered at all."
+>}}
+$(-\infty,1)\cup(1,\infty)$
+$(-\infty,\infty)$
+$(-\infty,1]$
+$[1,\infty)$
+{{< /multiplechoice >}}
+
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 1.2: Domain and Range](https://openstax.org/books/precalculus-2e/pages/1-2-domain-and-range) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every figure as an accessible inline SVG, including the two opening bar charts (whose bar heights are read from the source charts), the domain-and-range function-machine diagram, the number lines, the toolkit function library, and the piecewise graphs; presented the interval-notation summary and the inequality/set-builder/interval comparison as Markdown tables, with the comparison's number lines following as a labelled figure group and the generic $a$-and-$b$ number lines of the first summary replaced by its own description column; omitted the media links and end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback, presented as multiple choice because interval and set-builder notation cannot be graded as free-response math; and presented the piecewise-sketching practice item as a "which graph is correct" question, since the graphing component cannot accept a piecewise answer.</small>
+<small>This section is adapted from [Precalculus 2e, Section 1.2: Domain and Range](https://openstax.org/books/precalculus-2e/pages/1-2-domain-and-range) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every figure as an accessible inline SVG, including the two opening bar charts (whose bar heights are read from the source charts), the domain-and-range function-machine diagram, the number lines, the toolkit function library, and the piecewise graphs; presented the interval-notation summary and the inequality/set-builder/interval comparison as Markdown tables, with the comparison's number lines following as a labelled figure group and the generic $a$-and-$b$ number lines of the first summary replaced by its own description column; omitted the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, presented as multiple choice because interval and set-builder notation cannot be graded as free-response math; presented the piecewise-sketching practice item as a "which graph is correct" question, since the graphing component cannot accept a piecewise answer; and adapted selected end-of-section exercises (Verbal, Algebraic, Graphical, and Numeric subsections) into the section-final interactive Practice block.</small>

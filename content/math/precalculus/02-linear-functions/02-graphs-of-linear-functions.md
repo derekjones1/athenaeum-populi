@@ -2874,6 +2874,306 @@ $x=a$, where $a$ is a real number. The slope of a vertical line is undefined.
 lines** — two lines that intersect at right angles and have slopes that are
 negative reciprocals of each other.
 
+## Practice
+
+### Graph linear functions
+
+{{< graphplot
+  question="Graph the line with $x$-intercept $(-2,0)$ and $y$-intercept $(0,4)$."
+  answerDisplay="The line through $(-2,0)$ and $(0,4)$, i.e. $y=2x+4$"
+  ariaLabel="A blank coordinate grid running from −8 to 8 on both axes."
+  hint="Use the two intercepts to find the slope: $m=\tfrac{4-0}{0-(-2)}=2$; the $y$-intercept is $4$."
+>}}
+{"answer":{"slope":2,"intercept":4},"grid":{"xMin":-8,"xMax":8,"yMin":-8,"yMax":8}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph the line $x=-2$."
+  answerDisplay="The vertical line through $(-2,0)$"
+  ariaLabel="A blank coordinate grid running from −8 to 8 on both axes."
+  hint="Every point on this line has $x$-coordinate $-2$, no matter its $y$-coordinate, so the line is vertical."
+>}}
+{"answer":{"x":-2},"grid":{"xMin":-8,"xMax":8,"yMin":-8,"yMax":8}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph the function $q(x)=3$."
+  answerDisplay="The horizontal line through $(0,3)$"
+  ariaLabel="A blank coordinate grid running from −8 to 8 on both axes."
+  hint="The output is $3$ for every input, so the graph is a horizontal line."
+>}}
+{"answer":{"y":3},"grid":{"xMin":-8,"xMax":8,"yMin":-8,"yMax":8}}
+{{< /graphplot >}}
+
+### Write the equation for a linear function from the graph of a line
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A horizontal line on a coordinate grid running from -6 to 6 on both axes, crossing the vertical axis at 3.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":24,"tickLabels":true,"lines":[{"y":3}]}'>
+<svg role="img" aria-label="A horizontal line on a coordinate grid running from -6 to 6 on both axes, crossing the vertical axis at 3." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340" width="340" height="340" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="314" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="50" y1="314" x2="50" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="74" y1="314" x2="74" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="98" y1="314" x2="98" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="122" y1="314" x2="122" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="146" y1="314" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="194" y1="314" x2="194" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="218" y1="314" x2="218" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="242" y1="314" x2="242" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="266" y1="314" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="290" y1="314" x2="290" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="314" y1="314" x2="314" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="314" x2="314" y2="314" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="290" x2="314" y2="290" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="314" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="242" x2="314" y2="242" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="218" x2="314" y2="218" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="194" x2="314" y2="194" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="146" x2="314" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="122" x2="314" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="98" x2="314" y2="98" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="74" x2="314" y2="74" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="50" x2="314" y2="50" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="314" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="170" x2="316" y2="170" stroke="currentColor" stroke-width="1"/>
+  <line x1="170" y1="24" x2="170" y2="316" stroke="currentColor" stroke-width="1"/>
+  <polygon points="326,170 316,175 316,165" fill="currentColor"/>
+  <polygon points="170,14 175,24 165,24" fill="currentColor"/>
+  <polygon points="14,170 24,165 24,175" fill="currentColor"/>
+  <polygon points="170,326 165,316 175,316" fill="currentColor"/>
+  <text x="324" y="162" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="178" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="167" x2="26" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="185" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
+  <line x1="50" y1="167" x2="50" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="50" y="185" font-size="11" fill="currentColor" text-anchor="middle">−5</text>
+  <line x1="74" y1="167" x2="74" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="74" y="185" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
+  <line x1="98" y1="167" x2="98" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="98" y="185" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
+  <line x1="122" y1="167" x2="122" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="122" y="185" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="146" y1="167" x2="146" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="146" y="185" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <line x1="194" y1="167" x2="194" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="194" y="185" font-size="11" fill="currentColor" text-anchor="middle">1</text>
+  <line x1="218" y1="167" x2="218" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="218" y="185" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="242" y1="167" x2="242" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="242" y="185" font-size="11" fill="currentColor" text-anchor="middle">3</text>
+  <line x1="266" y1="167" x2="266" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="266" y="185" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="290" y1="167" x2="290" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="290" y="185" font-size="11" fill="currentColor" text-anchor="middle">5</text>
+  <line x1="314" y1="167" x2="314" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="314" y="185" font-size="11" fill="currentColor" text-anchor="middle">6</text>
+  <line x1="167" y1="314" x2="173" y2="314" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="318" font-size="11" fill="currentColor" text-anchor="end">−6</text>
+  <line x1="167" y1="290" x2="173" y2="290" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="294" font-size="11" fill="currentColor" text-anchor="end">−5</text>
+  <line x1="167" y1="266" x2="173" y2="266" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="270" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="167" y1="242" x2="173" y2="242" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="246" font-size="11" fill="currentColor" text-anchor="end">−3</text>
+  <line x1="167" y1="218" x2="173" y2="218" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="222" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="167" y1="194" x2="173" y2="194" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="198" font-size="11" fill="currentColor" text-anchor="end">−1</text>
+  <line x1="167" y1="146" x2="173" y2="146" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="150" font-size="11" fill="currentColor" text-anchor="end">1</text>
+  <line x1="167" y1="122" x2="173" y2="122" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="126" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="167" y1="98" x2="173" y2="98" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="102" font-size="11" fill="currentColor" text-anchor="end">3</text>
+  <line x1="167" y1="74" x2="173" y2="74" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="78" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <line x1="167" y1="50" x2="173" y2="50" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="54" font-size="11" fill="currentColor" text-anchor="end">5</text>
+  <line x1="167" y1="26" x2="173" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="30" font-size="11" fill="currentColor" text-anchor="end">6</text>
+  <line x1="30" y1="98" x2="310" y2="98" stroke="currentColor" stroke-width="1.8"/>
+  <polygon points="320,98 310,103 310,93" fill="currentColor"/>
+  <polygon points="20,98 30,93 30,103" fill="currentColor"/>
+</svg>
+</div>
+
+{{< fillin
+  question="Write the equation of the horizontal line shown in the graph above. Enter the expression that $y$ equals."
+  answer="3"
+  answerDisplay="$y=3$"
+  hint="A horizontal line has equation $y=b$, where $b$ is its constant output value."
+>}}
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A vertical line on a coordinate grid running from -6 to 6 on both axes, crossing the horizontal axis at negative 3.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":24,"tickLabels":true,"lines":[{"x":-3}]}'>
+<svg role="img" aria-label="A vertical line on a coordinate grid running from -6 to 6 on both axes, crossing the horizontal axis at negative 3." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340" width="340" height="340" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="314" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="50" y1="314" x2="50" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="74" y1="314" x2="74" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="98" y1="314" x2="98" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="122" y1="314" x2="122" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="146" y1="314" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="194" y1="314" x2="194" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="218" y1="314" x2="218" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="242" y1="314" x2="242" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="266" y1="314" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="290" y1="314" x2="290" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="314" y1="314" x2="314" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="314" x2="314" y2="314" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="290" x2="314" y2="290" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="266" x2="314" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="242" x2="314" y2="242" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="218" x2="314" y2="218" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="194" x2="314" y2="194" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="146" x2="314" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="122" x2="314" y2="122" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="98" x2="314" y2="98" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="74" x2="314" y2="74" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="50" x2="314" y2="50" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="314" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="170" x2="316" y2="170" stroke="currentColor" stroke-width="1"/>
+  <line x1="170" y1="24" x2="170" y2="316" stroke="currentColor" stroke-width="1"/>
+  <polygon points="326,170 316,175 316,165" fill="currentColor"/>
+  <polygon points="170,14 175,24 165,24" fill="currentColor"/>
+  <polygon points="14,170 24,165 24,175" fill="currentColor"/>
+  <polygon points="170,326 165,316 175,316" fill="currentColor"/>
+  <text x="324" y="162" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="178" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="167" x2="26" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="185" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
+  <line x1="50" y1="167" x2="50" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="50" y="185" font-size="11" fill="currentColor" text-anchor="middle">−5</text>
+  <line x1="74" y1="167" x2="74" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="74" y="185" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
+  <line x1="98" y1="167" x2="98" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="98" y="185" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
+  <line x1="122" y1="167" x2="122" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="122" y="185" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
+  <line x1="146" y1="167" x2="146" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="146" y="185" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <line x1="194" y1="167" x2="194" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="194" y="185" font-size="11" fill="currentColor" text-anchor="middle">1</text>
+  <line x1="218" y1="167" x2="218" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="218" y="185" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="242" y1="167" x2="242" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="242" y="185" font-size="11" fill="currentColor" text-anchor="middle">3</text>
+  <line x1="266" y1="167" x2="266" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="266" y="185" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="290" y1="167" x2="290" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="290" y="185" font-size="11" fill="currentColor" text-anchor="middle">5</text>
+  <line x1="314" y1="167" x2="314" y2="173" stroke="currentColor" stroke-width="1"/>
+  <text x="314" y="185" font-size="11" fill="currentColor" text-anchor="middle">6</text>
+  <line x1="167" y1="314" x2="173" y2="314" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="318" font-size="11" fill="currentColor" text-anchor="end">−6</text>
+  <line x1="167" y1="290" x2="173" y2="290" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="294" font-size="11" fill="currentColor" text-anchor="end">−5</text>
+  <line x1="167" y1="266" x2="173" y2="266" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="270" font-size="11" fill="currentColor" text-anchor="end">−4</text>
+  <line x1="167" y1="242" x2="173" y2="242" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="246" font-size="11" fill="currentColor" text-anchor="end">−3</text>
+  <line x1="167" y1="218" x2="173" y2="218" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="222" font-size="11" fill="currentColor" text-anchor="end">−2</text>
+  <line x1="167" y1="194" x2="173" y2="194" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="198" font-size="11" fill="currentColor" text-anchor="end">−1</text>
+  <line x1="167" y1="146" x2="173" y2="146" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="150" font-size="11" fill="currentColor" text-anchor="end">1</text>
+  <line x1="167" y1="122" x2="173" y2="122" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="126" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="167" y1="98" x2="173" y2="98" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="102" font-size="11" fill="currentColor" text-anchor="end">3</text>
+  <line x1="167" y1="74" x2="173" y2="74" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="78" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <line x1="167" y1="50" x2="173" y2="50" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="54" font-size="11" fill="currentColor" text-anchor="end">5</text>
+  <line x1="167" y1="26" x2="173" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="164" y="30" font-size="11" fill="currentColor" text-anchor="end">6</text>
+  <line x1="98" y1="310" x2="98" y2="30" stroke="currentColor" stroke-width="1.8"/>
+  <polygon points="98,20 103,30 93,30" fill="currentColor"/>
+  <polygon points="98,320 93,310 103,310" fill="currentColor"/>
+</svg>
+</div>
+
+{{< fillin
+  question="Write the equation of the vertical line shown in the graph above."
+  answer="x=-3"
+  hint="Every point on a vertical line shares the same $x$-coordinate; read it directly from the graph."
+>}}
+
+### Determine whether the graphs of two lines are parallel or perpendicular given their equations
+
+{{< multiplechoice
+  question="Are the lines $3y+x=12$ and $-y=8x+1$ parallel, perpendicular, or neither?"
+  answer="neither"
+  hint="Rewrite both equations in slope-intercept form and compare the slopes."
+>}}
+parallel
+perpendicular
+neither
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Are the lines $6x-9y=10$ and $3x+2y=1$ parallel, perpendicular, or neither?"
+  answer="perpendicular"
+  hint="Solve each equation for $y$, then multiply the two slopes together; a product of $-1$ means perpendicular."
+>}}
+parallel
+perpendicular
+neither
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Are the lines $y=\tfrac{3}{4}x+1$ and $-3x+4y=1$ parallel, perpendicular, or neither?"
+  answer="parallel"
+  hint="Rewrite the second equation in slope-intercept form and compare its slope with the first line's."
+>}}
+parallel
+perpendicular
+neither
+{{< /multiplechoice >}}
+
+### Write the equation of a line parallel or perpendicular to a given line
+
+{{< fillin
+  question="Write an equation for a line parallel to $g(x)=3x-1$ and passing through the point $(4,9)$. Enter the expression that $y$ equals."
+  answer="3x-3"
+  answerDisplay="$y=3x-3$"
+  hint="Parallel lines share a slope; substitute $(4,9)$ into $y=3x+b$ to solve for $b$."
+>}}
+
+{{< fillin
+  question="Write an equation for a line perpendicular to $p(t)=3t+4$ and passing through the point $(3,1)$. Enter the expression that $y$ equals."
+  answer="-\tfrac{1}{3}t+2"
+  answerDisplay="$y=-\tfrac{1}{3}t+2$"
+  hint="Use the negative reciprocal of $3$ as the slope, then substitute $(3,1)$ to solve for the intercept."
+>}}
+
+{{< fillin
+  question="Write an equation for a line perpendicular to $g(x)=-0.01x+2.01$ and passing through the point $(1,2)$. Enter the expression that $y$ equals."
+  answer="100x-98"
+  answerDisplay="$y=100x-98$"
+  hint="The negative reciprocal of $-0.01$ is $100$; substitute $(1,2)$ into $y=100x+b$ to solve for $b$."
+>}}
+
+### Solve a system of linear equations
+
+{{< fillin
+  question="Find the point of intersection of the lines $f(x)=2x+5$ and $g(x)=-3x-5$. Enter your answer as an ordered pair."
+  answer="(-2,1)"
+  answerDisplay="$(-2,1)$"
+  hint="Set $2x+5=-3x-5$ and solve for $x$, then evaluate either function at that $x$."
+>}}
+
+{{< fillin
+  question="Find the point of intersection of the lines $2x=y-3$ and $y+4x=15$. Enter your answer as an ordered pair."
+  answer="(2,7)"
+  answerDisplay="$(2,7)$"
+  hint="Solve the first equation for $y$, substitute into the second equation, and solve for $x$."
+>}}
+
+{{< fillin
+  question="Find the point of intersection of the lines $5x+3y=-65$ and $x-y=-5$. Enter your answer as an ordered pair."
+  answer="(-10,-5)"
+  answerDisplay="$(-10,-5)$"
+  hint="Solve the second equation for $x$ in terms of $y$, then substitute into the first equation."
+>}}
+
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 2.2: Graphs of Linear Functions](https://openstax.org/books/precalculus-2e/pages/2-2-graphs-of-linear-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all twenty-three graphs as accessible inline SVGs generated from explicit formulas, matching the printed window, intercepts, slope triangles, and annotations of each; because these figures are monochrome, every line the source distinguishes only by colour is labelled with its own formula, written compactly ($x/2$ for $\tfrac{1}{2}x$) so that the eight stretch lines and the five shift lines still fit one grid, and the prose names each family in full; presented the horizontal-line and vertical-line coordinate tables as Markdown tables and the "change of output over change of input" annotation as a displayed fraction; omitted the media links and end-of-section exercises; and converted the practice problems ("Try Its") into interactive exercises with instant feedback, using the graphing component where the source answer is itself a graph, multiple choice where the answer is a verbal transformation description, and a single requested coordinate where the source answer is an ordered pair. Two response-mode adaptations are worth naming: where the source asks for any point with a negative $x$-value, this page asks for the output at $x=-3$, one of the source's own listed answers, so that a single response can be graded; and of the six parts of the last Try It, this page keeps the $x$-intercept, the slope, and the transformation description, the three that are not already exercised elsewhere in the section. Two corrections to the source art are disclosed here: the Analysis figure for the perpendicular-line example is drawn with that example's own line $f(x)=3x+3$, where the printed figure is labelled $f(x)=3x+6$; and the break-even figure's left-hand annotation reads "sales &lt; cost" above "Company loses money", where the printed art reads "cost &lt; sales", which contradicts both the label beneath it and the figure's own alt text. Two further upstream defects were found and deliberately not propagated: the pinned CNXML's alt text for the parallel-lines figure gives its slopes as $-\tfrac{2}{3}$ while the printed geometry is $-\tfrac{3}{2}$, and its alt text for the write-the-equation figure describes a line through $(0,3)$ while both the printed figure and the surrounding prose give $y=2x+4$; in each case this page follows the printed figure and the prose.</small>
+<small>This section is adapted from [Precalculus 2e, Section 2.2: Graphs of Linear Functions](https://openstax.org/books/precalculus-2e/pages/2-2-graphs-of-linear-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated all twenty-three graphs as accessible inline SVGs generated from explicit formulas, matching the printed window, intercepts, slope triangles, and annotations of each; because these figures are monochrome, every line the source distinguishes only by colour is labelled with its own formula, written compactly ($x/2$ for $\tfrac{1}{2}x$) so that the eight stretch lines and the five shift lines still fit one grid, and the prose names each family in full; presented the horizontal-line and vertical-line coordinate tables as Markdown tables and the "change of output over change of input" annotation as a displayed fraction; omitted the media links; adapted fourteen selected end-of-section exercises, drawn from the Verbal, Algebraic, Graphical, Extensions, and Real-World Applications subsections, into the interactive exercises of the section-final Practice section below, recreating two of the source's graph-reading items as accessible figures generated from the same explicit formulas; and converted the in-page practice problems ("Try Its") into interactive exercises with instant feedback, using the graphing component where the source answer is itself a graph, multiple choice where the answer is a verbal transformation description, and a single requested coordinate where the source answer is an ordered pair. Two response-mode adaptations are worth naming: where the source asks for any point with a negative $x$-value, this page asks for the output at $x=-3$, one of the source's own listed answers, so that a single response can be graded; and of the six parts of the last Try It, this page keeps the $x$-intercept, the slope, and the transformation description, the three that are not already exercised elsewhere in the section. Two corrections to the source art are disclosed here: the Analysis figure for the perpendicular-line example is drawn with that example's own line $f(x)=3x+3$, where the printed figure is labelled $f(x)=3x+6$; and the break-even figure's left-hand annotation reads "sales &lt; cost" above "Company loses money", where the printed art reads "cost &lt; sales", which contradicts both the label beneath it and the figure's own alt text. Two further upstream defects were found and deliberately not propagated: the pinned CNXML's alt text for the parallel-lines figure gives its slopes as $-\tfrac{2}{3}$ while the printed geometry is $-\tfrac{3}{2}$, and its alt text for the write-the-equation figure describes a line through $(0,3)$ while both the printed figure and the surrounding prose give $y=2x+4$; in each case this page follows the printed figure and the prose.</small>

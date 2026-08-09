@@ -76,6 +76,7 @@ The LCD is $(x + 1)(x - 3)(x + 3)$.
 {{< fillin
   question="Find the LCD for $\tfrac{2}{x^2 - x - 12}$ and $\tfrac{1}{x^2 - 16}$. Leave your answer in factored form."
   answer="(x-4)(x+4)(x+3)"
+  answerForm="factored"
   answerDisplay="$(x - 4)(x + 4)(x + 3)$"
   hint="Factor: $x^2 - x - 12 = (x - 4)(x + 3)$ and $x^2 - 16 = (x - 4)(x + 4)$. Line up the shared factor $(x - 4)$ and bring down one factor from each column."
 >}}

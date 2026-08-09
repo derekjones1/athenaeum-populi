@@ -99,15 +99,18 @@ test('the authoring playbook documents the authoring rules', () => {
   assert.match(authoring, /at least five\s+exercises overall/);
   assert.match(authoring, /one\s+component per part/);
   assert.match(authoring, /\*\*one\s+objective per Markdown list item\*\*/);
-  assert.match(authoring, /before August 1, 2026[\s\S]*retrofit worklist/);
+  // The missing-block rule is an ERROR now that the retrofit is finished; the
+  // playbook must say so, or the next author reads it as optional.
+  assert.match(authoring, /reports a\s+missing one as an \*\*error\*\*/);
   // Value grading cannot see the shape of a response, so a re-expression prompt
   // is only gradeable with an answerForm. The playbook must document the tokens
   // and the rule, or the next such exercise ships passable by retyping it.
   assert.match(authoring, /answerForm="lowest-terms"/);
   assert.match(authoring, /A categorical answer is never a number/);
-  // One warning category is left, and it is an authoring programme rather than
-  // an exemption. Keep the section honest about being the last one.
-  assert.match(authoring, /## 5\. The one remaining retrofit/);
+  // The retrofit is done, but §5's working rules outlived it and several other
+  // sections cite them by number — so the section stays, under its own title.
+  assert.match(authoring, /## 5\. Working rules/);
+  assert.match(authoring, /zero errors and zero warnings/);
   assert.match(authoring, /\*\*Never add a warning\.\*\*/);
   assert.match(authoring, /A rule that fires on sound content is a bug in the rule/);
 });
@@ -393,7 +396,7 @@ test('the mapped-section count in the docs matches the source map', () => {
     ['README.md', /checks the committed (\d+)-section/],
     ['docs/architecture.md', /(\d+)-section map under `data\/openstax\/`/],
     ['docs/openstax-source-workflow.md', /connects all (\d+) authored/],
-    ['docs/authoring-playbook.md', /of the (\d+) mapped sections/],
+    ['docs/authoring-playbook.md', /All (\d+) mapped\s+sections carry the block/],
   ];
   for (const [path, pattern] of sites) {
     assert.equal(
@@ -404,15 +407,19 @@ test('the mapped-section count in the docs matches the source map', () => {
   }
 });
 
-test('the Practice-backlog count agrees between AGENTS.md and the playbook', () => {
-  // The live check against the lint's own warning count lives in the lint
-  // (`node tools/lint-all.mjs content --check-docs`, wired into `npm run
-  // lint`), because only the lint has walked the corpus. This asserts the two
-  // documents at least agree with each other, so a half-done edit fails the
-  // fast suite instead of waiting for a full lint run.
-  const agents = Number(capture('AGENTS.md', /except one: the (\d+)\s+sections still missing/, 'the Practice backlog count'));
-  const playbook = Number(capture('docs/authoring-playbook.md', /one warning category\*\*: the (\d+)\s+sections/, 'the Practice backlog count'));
-  assert.equal(agents, playbook, 'AGENTS.md and docs/authoring-playbook.md §5 state different Practice-backlog counts');
+test('no document reopens the finished Practice retrofit as a warning', () => {
+  // The retrofit finished on August 9, 2026: the lint rule is an error, the
+  // published backlog count is deleted, and `npm run lint` no longer takes
+  // `--check-docs`. A doc that still describes a non-blocking Practice rule
+  // would send the next author looking for a worklist that does not exist.
+  for (const path of ['AGENTS.md', 'docs/authoring-playbook.md']) {
+    const text = readFileSync(new URL(`../${path}`, import.meta.url), 'utf8');
+    assert.doesNotMatch(
+      text,
+      /sections still missing a `## Practice` block|one warning category|retrofit pending/,
+      `${path} still publishes the Practice retrofit as an open worklist`,
+    );
+  }
 });
 
 // ---- prohibitions ----------------------------------------------------------

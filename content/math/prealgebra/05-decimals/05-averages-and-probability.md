@@ -489,6 +489,7 @@ total number of possible outcomes.
 {{< fillin
   question="Michel has four rock CDs and six country CDs in his car. He will pick one CD to play on his way to work. Find the probability Michel will pick a rock CD. Enter as a fraction in simplest form."
   answer="\frac{2}{5}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{2}{5}$"
   hint="There are $4$ rock CDs out of $10$ CDs in all — then simplify the fraction."
 >}}
@@ -502,6 +503,7 @@ total number of possible outcomes.
 {{< fillin
   question="Donovan is considering transferring to a 4-year college. He is considering 10 out-of-state colleges and 4 colleges in his state. He will choose one college at random to visit during spring break. Find the probability that Donovan will choose an out-of-state college. Enter as a fraction in simplest form."
   answer="\frac{5}{7}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{5}{7}$"
   hint="Add the two counts to get the total number of colleges, then simplify the fraction."
 >}}

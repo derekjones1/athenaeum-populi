@@ -14,7 +14,8 @@ import { parseGraphPlotConfig } from '../assets/js/lib/graph-plot-config.mjs';
 // grader itself, so the trivially-satisfiable-prompt check grades a printed
 // value exactly the way a learner's submission would be graded.
 import {
-  ANSWER_FORM_TOKENS, checkAnswer, checkForm, parseAnswerForm, splitTopLevelCommas, stripGroupingCommas,
+  ANSWER_FORM_TOKENS, ce, checkAnswer, checkForm, parseAnswerForm, preprocess,
+  splitTopLevelCommas, stripGroupingCommas,
 } from '../assets/js/lib/check-answer.mjs';
 // The shared content primitives: one shortcode grammar, one math-span escape
 // strategy, and one set of HTML readers, so this lint and the verifiers can
@@ -180,6 +181,68 @@ const EXPONENTIAL_FORM_PROMPT_RE = /\b(?:to|in) exponential form\b/i;
 const LOG_EXPANSION_PROMPT_RE = /\bas a sum\b[^.?!]*\blogarithms\b/i;
 
 /**
+ * Prompts that ask for a NAMED form, paired with the answerForm token(s) that
+ * grade it. These prompts usually print nothing to retype — the two-points
+ * point-slope ask prints only coordinates — so the passable-by-retyping check
+ * above never sees them; the hazard is the learner's own correct VALUE in a
+ * shape the ask exists to rule out (distributed, scaled, or a different named
+ * form entirely), which value grading accepts. The ask names the form, so the
+ * exercise must grade it.
+ *
+ * Each ask requires ANY of its tokens, because one phrase can name different
+ * shapes: "exponential form" is the log conversion (`exponential-form`), the
+ * repeated multiplication $x\cdot x\cdot x$ (`single-power`), and the prime
+ * factorization $2^4\cdot 5$ (`prime-product`).
+ *
+ * The ask patterns demand a producing verb (write/rewrite/enter/…) or an
+ * "equation … in <name> form" clause in the same sentence, so a prompt that
+ * merely mentions the form ("What is the slope of the line given in
+ * slope-intercept form $y=3x+4$?") is not conscripted into grading a shape
+ * its answer does not have.
+ */
+const NAMED_FORM_ASKS = [
+  {
+    ask: /\b(?:write|rewrite|express|enter|give)\b[^.?!]*\bpoint-slope form\b|\bequation\b[^.?!]*\bin (?:the )?point-slope form\b/i,
+    name: 'point-slope form',
+    tokens: ['point-slope-form'],
+  },
+  {
+    ask: /\b(?:write|rewrite|express|enter|give)\b[^.?!]*\bslope-intercept form\b|\bequation\b[^.?!]*\bin (?:the )?slope-intercept form\b/i,
+    name: 'slope-intercept form',
+    tokens: ['slope-intercept-form'],
+  },
+  {
+    ask: /\b(?:convert|write)\b[^.?!]*\b(?:to|in) decimal form\b/i,
+    name: 'decimal form',
+    tokens: ['decimal'],
+  },
+  {
+    ask: /\b(?:leave|write|give|enter)\b[^.?!]*\bin factored form\b/i,
+    name: 'factored form',
+    tokens: ['factored'],
+  },
+  {
+    ask: /\bas a mixed number\b/i,
+    name: 'a mixed number',
+    tokens: ['mixed-number', 'fraction-or-mixed-number'],
+  },
+  {
+    ask: /\b(?:in|to) exponential form\b/i,
+    name: 'exponential form',
+    tokens: ['exponential-form', 'single-power', 'prime-product'],
+  },
+];
+
+/**
+ * An answer that is one written numeral fraction or mixed number — the
+ * subjects of the "in simplified/simplest form" ask below. Digits only: a
+ * variable fraction's simplified form is `reduced-fraction` territory with
+ * its own verb, and conscripting it here would force a token whose numeral
+ * gcd test cannot read it.
+ */
+const NUMERAL_FRACTION_ANSWER_RE = /^\s*-?\s*(?:\d+\s*)?\\[tdc]?frac\s*\{\s*-?\d+\s*\}\s*\{\s*-?\d+\s*\}\s*$/;
+
+/**
  * A categorical response encoded as a number: "Answer 1 for yes or 0 for no",
  * "Enter 1 if rational, 0 if irrational", "Enter the quadrant number as a
  * digit". The learner is choosing among named alternatives, so a free-response
@@ -252,6 +315,25 @@ function printedQuestionValues(question) {
 // Does a LaTeX span contain a variable once backslash macros (`\tfrac`,
 // `\cdot`, `\left`) are stripped, so command letters do not read as one?
 const spanHasVariable = (value) => /[A-Za-z]/.test(value.replace(/\\[a-zA-Z]+/g, ' '));
+
+/**
+ * Do two LaTeX strings parse to the SAME expression tree? Structural, not
+ * value: the engine's canonical form regroups and reorders, but it does not
+ * expand, factor, or otherwise change shape — so redundant grouping parens
+ * compare equal while `2(3x+5)^2+1` and `18x^2+60x+51` do not. Anything that
+ * fails to parse compares unequal, which leaves the caller's rule firing
+ * rather than silently suppressed.
+ */
+function isSameExpression(a, b) {
+  if (!a || !b) return false;
+  try {
+    const left = ce.parse(preprocess(a));
+    const right = ce.parse(preprocess(b));
+    return left.isValid && right.isValid && left.isSame(right);
+  } catch {
+    return false;
+  }
+}
 
 function printedPolynomialSubjects(question) {
   const subjects = [];
@@ -362,6 +444,11 @@ const FUNCTION_DEF_RE = /^\s*([fg])\s*\(\s*x\s*\)\s*=\s*(.+?)\s*$/;
 const FUNCTION_SUM_ASK_RE = /\(\s*f\s*(\+|-|\\cdot|·)?\s*g\s*\)\s*\(\s*x\s*\)/;
 const FUNCTION_QUOTIENT_ASK_RE = /\\[tdc]?frac\s*\{\s*f\s*\}\s*\{\s*g\s*\}\s*\)?\s*\(\s*x\s*\)/;
 const FUNCTION_COMPOSE_ASK_RE = /\(\s*([fg])\s*\\circ\s*([fg])\s*\)\s*\(\s*x\s*\)/;
+// The same composition written as a nested application — `f(g(x))`, which is
+// how the precalculus sections phrase it at least as often as `(f\circ g)(x)`.
+// The inner argument must be exactly `x`: `f(g(5))` answers with a number that
+// no restatement of the definitions equals, so it is not a hazard.
+const FUNCTION_NESTED_ASK_RE = /([fg])\s*\(\s*([fg])\s*\(\s*x\s*\)\s*\)/;
 
 /**
  * "For $f(x)=A$ and $g(x)=B$, find $(f\pm g)(x)$" → `(A)+(B)` / `(A)-(B)`,
@@ -390,7 +477,7 @@ function printedFunctionCombinations(question, fallbackDefs = new Map()) {
     if (def) { defs.set(def[1], def[2]); continue; }
     const flat = inner.replace(/\\left|\\right/g, '');
     if (FUNCTION_QUOTIENT_ASK_RE.test(flat)) { ask = '/'; continue; }
-    const compose = flat.match(FUNCTION_COMPOSE_ASK_RE);
+    const compose = flat.match(FUNCTION_COMPOSE_ASK_RE) ?? flat.match(FUNCTION_NESTED_ASK_RE);
     if (compose) { ask = ['circ', compose[1], compose[2]]; continue; }
     const sum = flat.match(FUNCTION_SUM_ASK_RE);
     if (sum) ask = (sum[1] === '+' || sum[1] === '-') ? sum[1] : '*';
@@ -924,9 +1011,10 @@ export function lintHugo(src, filename = '') {
   // Sizing scales with the section instead of a flat count, because a
   // six-objective section cannot cover its objectives in five questions and a
   // multipart source item expands into one exercise per part.
-  // Sections authored before the rule warn until retrofitted — the warning
-  // list is the retrofit worklist — while a present-but-malformed block is an
-  // error. See docs/authoring-playbook.md, "The section-final Practice block".
+  // A missing block is an error, as is a present-but-malformed one. It warned
+  // while the retrofit ran; the last of the 212 mapped sections landed on
+  // August 9, 2026, so there is no longer a section the warning could name.
+  // See docs/authoring-playbook.md, "The section-final Practice block".
   const MIN_PER_OBJECTIVE = 2;
   const MIN_PER_SECTION = 5;
   const headings = [...mediaSrc.matchAll(/^## +(.+?)[ \t]*$/gm)]
@@ -950,8 +1038,19 @@ export function lintHugo(src, filename = '') {
   if (isRegularSection) {
     const practiceHeadings = headings.filter((h) => h.title === 'Practice');
     const required = Math.max(MIN_PER_SECTION, MIN_PER_OBJECTIVE * objectives.length);
+    // "This section has no Practice block" is a claim about a whole PAGE, so
+    // it is only made about one. This lint also runs over authoring fragments
+    // — a snippet under review, a test case for another rule — and a fragment
+    // genuinely has no Practice block without that being a defect. Leading
+    // frontmatter is what separates the two, and no real section can dodge the
+    // rule by dropping it: `validate-content` errors on missing frontmatter
+    // before this lint's opinion matters. Every other Practice rule below
+    // needs a block to be present, so none of them need this guard.
+    const isWholePage = /^---\r?\n/.test(src);
     if (!practiceHeadings.length) {
-      wrn(0, `section has no \`## Practice\` block — add a \`### \` group per objective with at least ${MIN_PER_OBJECTIVE} sourced, hinted exercises each (at least ${required} in total) after the end matter, last before the attribution footer (retrofit pending)`);
+      if (isWholePage) {
+        err(0, `section has no \`## Practice\` block — add a \`### \` group per objective with at least ${MIN_PER_OBJECTIVE} sourced, hinted exercises each (at least ${required} in total) after the end matter, last before the attribution footer`);
+      }
     } else if (practiceHeadings.length > 1) {
       err(practiceHeadings[1].index, 'more than one `## Practice` heading — a section has exactly one Practice block');
     } else {
@@ -1088,6 +1187,38 @@ export function lintHugo(src, filename = '') {
         err(index, `${where}: answerForm is not applied to a comma-separated answer — list grading returns before the form check, so the declared form ${JSON.stringify(params.answerForm)} silently grades nothing`);
       }
     }
+    // ---- prompt asks for a NAMED form the value check cannot see.
+    // Scoped to scalar answers: the form check never runs on list answers
+    // (see the rule above), so a list ask cannot be conscripted into one.
+    if (answerParts.length === 1 && params.answerMode !== 'unordered') {
+      const declared = parseAnswerForm(params.answerForm ?? '').tokens;
+      for (const { ask, name, tokens } of NAMED_FORM_ASKS) {
+        if (ask.test(q) && !tokens.some((token) => declared.includes(token))) {
+          err(index, `${where}: the question asks for ${name}, but value grading accepts a right value in any shape — add answerForm ${tokens.map((t) => JSON.stringify(t)).join(' or ')} so the wrong form reports 'form' instead of 'correct'`);
+        }
+      }
+      // "…as a fraction in simplest form" on a numeral answer: value grading
+      // accepts the unreduced $\frac{6}{8}$ the ask exists to rule out.
+      if (/\bsimpl(?:est|ified) form\b/i.test(q) && NUMERAL_FRACTION_ANSWER_RE.test(params.answer || '')
+        && !parseAnswerForm(params.answerForm ?? '').tokens.includes('lowest-terms')) {
+        err(index, `${where}: the question asks for simplest form and the answer is a numeral fraction, but value grading accepts the unreduced equivalents — add "lowest-terms" to answerForm`);
+      }
+    }
+    // ---- prompt asks for interval notation: the authored answer must BE one.
+    // The engine grades an inequality and an interval unequal in BOTH
+    // directions, so "write the solution in interval notation" answered by
+    // `u>10` marks the learner who does exactly what the prompt says and
+    // types `(10,\infty)` incorrect. Self-grading cannot catch it: the
+    // authored inequality is only ever compared against itself.
+    if (/\binterval notation\b/i.test(q) && (params.answer || '').trim()) {
+      const intervalParts = splitTopLevelCommas(params.answer)
+        .flatMap((part) => part.split(/\\cup/))
+        .map((part) => part.trim())
+        .filter(Boolean);
+      if (!intervalParts.every((part) => /^(?:\\left\s*)?[[(]/.test(part))) {
+        err(index, `${where}: the question asks for interval notation, but the answer ${JSON.stringify(params.answer)} is not written as an interval — a learner who answers in interval notation as instructed is graded incorrect; author the answer as the interval`);
+      }
+    }
     if ((params.answer || '').trim() && q.trim()) {
       // Grade each printed subject under the exercise's own answerForm, exactly
       // as a submission would be. A missing form leaves the prompt passable by
@@ -1130,7 +1261,18 @@ export function lintHugo(src, filename = '') {
         // prompt ("Simplify: $\tfrac{40}{88}$" answered with itself) is the
         // exact author error this rule exists to catch.
         .filter((value) => !(spanHasVariable(value)
-          && value.replace(/\s+/g, '') === (params.answer || '').replace(/\s+/g, '')));
+          && value.replace(/\s+/g, '') === (params.answer || '').replace(/\s+/g, '')))
+        // The same "retyping IS the correct response" case, one step removed:
+        // a BUILT candidate that is structurally the authored answer means the
+        // ask left no operation to carry out. "For $f(x)=\sqrt{x}+2$ and
+        // $g(x)=x^2+3$, find and simplify $f(g(x))$" answers
+        // $\sqrt{x^2+3}+2$ — the substitution itself, with nothing to
+        // simplify — and the built candidate differs from it only by the
+        // grouping parentheses substitution introduces. Structural, never
+        // value, equality: `2(3x+5)^2+1` and `18x^2+60x+51` are equal in value
+        // and different in shape, which is exactly the hazard this rule fires
+        // on, so a value comparison here would silence the whole class.
+        .filter((value) => !(composed.includes(value) && isSameExpression(value, params.answer)));
       // The cheap shape check runs before the engine ever sees the span:
       // grading is value-then-form, so a span the declared form already rules
       // out can never grade 'correct', and skipping it changes nothing but

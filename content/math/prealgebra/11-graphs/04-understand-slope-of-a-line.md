@@ -144,6 +144,7 @@ The slope is $\tfrac{3}{4}$.
 {{< fillin
   question="A geoboard triangle has a rise of $2$ units and a run of $4$ units, both counted left to right and going up. What is the slope of the line, written in simplest form?"
   answer="\frac{1}{2}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{1}{2}$"
   hint="Slope is rise over run. Simplify the fraction $\tfrac{2}{4}$."
 >}}
@@ -1392,6 +1393,7 @@ undefined
 {{< fillin
   question="The grade of a road is its slope expressed as a percent. A local road has a grade of 6%. Find the slope of the road as a fraction in simplest form."
   answer="\frac{3}{50}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{3}{50}$"
   hint="A grade of 6% means $\tfrac{6}{100}$ — reduce that fraction."
 >}}

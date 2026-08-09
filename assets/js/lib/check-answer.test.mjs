@@ -93,6 +93,17 @@ const extra = [
   ['y=5', 'x=5', 'incorrect'], // both equations: variable must match
   ['5', 'x=5', 'correct'], // bare value vs authored equation
   ['x=-3', '-3>-7', 'incorrect'], // never unwrapped against an inequality
+  // A written `f(x)=` label cannot be unwrapped from the parse — `f(x)` boxes
+  // as Multiply(f, x), so a learner answering a function-notation prompt with
+  // `f(x)=-7x+3` was graded incorrect against the authored `y=-7x+3`. The
+  // label is stripped textually, and the name guard does not apply to it:
+  // the prompt said f(x), the author wrote y, and both mean the output.
+  ['f(x)=-7x+3', 'y=-7x+3', 'correct'],
+  ['f(x)=-7x+3', '-7x+3', 'correct'],
+  ['C(n)=24+0.1n', '24+0.1n', 'correct'], // capital names box differently, same strip
+  ['f(x)=-7x+4', 'y=-7x+3', 'incorrect'], // wrong value still wrong
+  ['f(x)=', 'y=-7x+3', 'invalid'], // a label with nothing after it is no answer
+  ['y-5=2(x-1)', 'y-5=2(x-1)', 'correct'], // a genuine equation is never half-eaten
   // A lone `d` numerator is Leibniz derivative notation to the Compute Engine,
   // so \frac{d}{t} boxed as D(missing, t) and graded *invalid* — and MathLive
   // turns a typed "/" into a \frac, so every distance/rate/time answer a
@@ -545,6 +556,34 @@ const formCases = [
   ['(x+5)^2+(y+3)^2=4', '(x+5)^2+(y+3)^2=4', 'circle-standard-form', 'correct'],
   ['x^2+y^2+10x+6y+30=0', '(x+5)^2+(y+3)^2=4', 'circle-standard-form', 'form'],
   ['x^2+y^2=121', 'x^2+y^2=121', 'circle-standard-form', 'correct'],
+  // point-slope-form — the prompt prints nothing to retype, but the engine
+  // grades the distributed and the scaled restatements equal to the authored
+  // equation, so only the m(x-x_1) shape separates them
+  ['y-5=2(x-1)', 'y-5=2(x-1)', 'point-slope-form', 'correct'],
+  ['y-5=2x-2', 'y-5=2(x-1)', 'point-slope-form', 'form'],
+  ['2y-10=4(x-1)', 'y-5=2(x-1)', 'point-slope-form', 'form'],
+  ['2(x-1)=y-5', 'y-5=2(x-1)', 'point-slope-form', 'correct'],
+  ['y-4=-\\frac{1}{2}(x+1)', 'y-4=-\\frac{1}{2}(x+1)', 'point-slope-form', 'correct'],
+  ['y-4=-0.5(x+1)', 'y-4=-\\frac{1}{2}(x+1)', 'point-slope-form', 'correct'],
+  ['y-4=-\\frac{x+1}{2}', 'y-4=-\\frac{1}{2}(x+1)', 'point-slope-form', 'correct'],
+  // the collapsed origin case is point-slope with both subtractions evaluated
+  ['y=-3x', 'y-0=-3(x-0)', 'point-slope-form', 'correct'],
+  ['y-0=-3(x-0)', 'y-0=-3(x-0)', 'point-slope-form', 'correct'],
+  // slope-intercept happens to grade unequal today (an engine accident the
+  // predicate must not depend on), so it reports incorrect, not form
+  ['y=2x+3', 'y-5=2(x-1)', 'point-slope-form', 'incorrect'],
+  ['y-3=2(x-1)', 'y-5=2(x-1)', 'point-slope-form', 'incorrect'],
+  // slope-intercept-form — the undistributed and single-fraction restatements
+  // grade equal to the authored answer, equation and bare-expression alike
+  ['y=-2x-2', 'y=-2x-2', 'slope-intercept-form', 'correct'],
+  ['y=-2(x+2)+2', 'y=-2x-2', 'slope-intercept-form', 'form'],
+  ['-2x-2', 'y=-2x-2', 'slope-intercept-form', 'correct'],
+  ['-\\frac{1}{3}(x-6)-4', '-\\frac{1}{3}x-2', 'slope-intercept-form', 'form'],
+  ['\\frac{-x-6}{3}', '-\\frac{1}{3}x-2', 'slope-intercept-form', 'form'],
+  ['\\frac{-x}{3}-2', '-\\frac{1}{3}x-2', 'slope-intercept-form', 'correct'],
+  ['y=-\\frac{1}{3}x-2', '-\\frac{1}{3}x-2', 'slope-intercept-form', 'correct'],
+  ['f(x)=-7x+3', 'y=-7x+3', 'slope-intercept-form', 'correct'],
+  ['x', 'x', 'slope-intercept-form', 'correct'],
   // exponential-form — two TRUE statements grade equal, so only the written
   // notation separates the conversion from the prompt retyped
   ['343=7^3', '343=7^3', 'exponential-form', 'correct'],

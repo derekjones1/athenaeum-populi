@@ -1153,6 +1153,176 @@ function $f^{-1}(x)$ such that $f^{-1}(f(x))=x$ for all $x$ in the domain of
 $f$; this also implies that $f(f^{-1}(x))=x$ for all $x$ in the domain of
 $f^{-1}$.
 
+## Practice
+
+### Verify inverse functions
+
+{{< multiplechoice
+  question="Can a function be its own inverse?"
+  answer="Yes"
+  hint="Test $f(x)=\tfrac{1}{x}$: composing it with itself simplifies immediately."
+>}}
+Yes
+No
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="If $f(x)=\tfrac{x}{2+x}$ and $g(x)=\tfrac{2x}{1-x}$, is $g=f^{-1}$?"
+  answer="Yes, because both $f(g(x))=x$ and $g(f(x))=x$"
+  hint="Substitute $g(x)$ into $f$ and simplify the resulting complex fraction, then check the other order."
+>}}
+Yes, because both $f(g(x))=x$ and $g(f(x))=x$
+No, because $f(g(x))\ne x$
+No, because $g(f(x))\ne x$
+No, because neither composition simplifies to $x$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="If $f(x)=\sqrt[3]{x-1}$ and $g(x)=x^3+1$, is $g=f^{-1}$?"
+  answer="Yes, because both $f(g(x))=x$ and $g(f(x))=x$"
+  hint="Substitute $g(x)$ into $f$ first — the cube and cube root cancel — then check the reverse order."
+>}}
+Yes, because both $f(g(x))=x$ and $g(f(x))=x$
+No, because $f(g(x))\ne x$
+No, because $g(f(x))\ne x$
+Only $g(f(x))=x$ holds, so they are not inverses
+{{< /multiplechoice >}}
+
+### Determine the domain and range of an inverse function and restrict the domain of a function to make it one-to-one
+
+{{< multiplechoice
+  question="Find a domain on which $f(x)=(x+7)^2$ is one-to-one and non-decreasing, and find the inverse of $f$ restricted to that domain."
+  answer="domain of $f$: $[-7,\infty)$; $f^{-1}(x)=\sqrt{x}-7$"
+  hint="Restrict to where $x+7\ge 0$, then solve $y=(x+7)^2$ for $x$ using the positive square root."
+>}}
+domain of $f$: $[-7,\infty)$; $f^{-1}(x)=\sqrt{x}-7$
+domain of $f$: $[-7,\infty)$; $f^{-1}(x)=\sqrt{x}+7$
+domain of $f$: $(-\infty,-7]$; $f^{-1}(x)=\sqrt{x}-7$
+domain of $f$: $[0,\infty)$; $f^{-1}(x)=\sqrt{x-7}$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Find a domain on which $f(x)=x^2-5$ is one-to-one and non-decreasing, and find the inverse of $f$ restricted to that domain."
+  answer="domain of $f$: $[0,\infty)$; $f^{-1}(x)=\sqrt{x+5}$"
+  hint="Restrict to where $x\ge 0$, then solve $y=x^2-5$ for $x$ using the positive square root."
+>}}
+domain of $f$: $[0,\infty)$; $f^{-1}(x)=\sqrt{x+5}$
+domain of $f$: $[0,\infty)$; $f^{-1}(x)=\sqrt{x}-5$
+domain of $f$: $(-\infty,0]$; $f^{-1}(x)=\sqrt{x+5}$
+domain of $f$: $[-5,\infty)$; $f^{-1}(x)=\sqrt{x+5}$
+{{< /multiplechoice >}}
+
+{{< multiplechoice
+  question="Is $f(x)=\sqrt{x}$ one-to-one?"
+  answer="Yes"
+  hint="A one-to-one function passes the horizontal line test; a square-root graph never doubles back on itself."
+>}}
+Yes
+No
+{{< /multiplechoice >}}
+
+### Find or evaluate the inverse of a function
+
+{{< fillin
+  question="Find $f^{-1}(x)$ for $f(x)=x+3$."
+  answer="x-3"
+  answerDisplay="$f^{-1}(x)=x-3$"
+  hint="Undo addition with the opposite operation."
+>}}
+
+{{< fillin
+  question="Find $f^{-1}(x)$ for $f(x)=\tfrac{x}{x+2}$."
+  answer="-\tfrac{2x}{x-1}"
+  answerDisplay="$f^{-1}(x)=-\tfrac{2x}{x-1}$"
+  hint="Set $y=\tfrac{x}{x+2}$, clear the denominator, then collect the $x$-terms on one side."
+>}}
+
+{{< fillin
+  question="If $f(6)=7$ for a one-to-one function $f$, find $f^{-1}(7)$."
+  answer="6"
+  hint="The inverse swaps input and output, so read the given statement backwards."
+>}}
+
+{{< fillin
+  question="If $f^{-1}(-4)=-8$ for a one-to-one function $f$, find $f(-8)$."
+  answer="-4"
+  hint="By definition, $f^{-1}(a)=b$ means $f(b)=a$."
+>}}
+
+### Use the graph of a one-to-one function to graph its inverse function on the same axes
+
+The table below shows a one-to-one function $f$.
+
+| $x$ | 3 | 6 | 9 | 13 | 14 |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| $f(x)$ | 1 | 4 | 7 | 12 | 16 |
+
+{{< fillin
+  question="Using the table above, give $f^{-1}(1)$, $f^{-1}(4)$, $f^{-1}(7)$, $f^{-1}(12)$, and $f^{-1}(16)$, in that order, separated by commas."
+  answer="3,6,9,13,14"
+  answerDisplay="$f^{-1}(1)=3$, $f^{-1}(4)=6$, $f^{-1}(7)=9$, $f^{-1}(12)=13$, $f^{-1}(16)=14$"
+  hint="Reverse each pair from the table: if $f(a)=b$ then $f^{-1}(b)=a$."
+>}}
+
+<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"The graph of a one-to-one function f: a downward-sloping line that meets the y-axis at (0, 3) and the x-axis at (2, 0).","xMin":-1,"xMax":5,"yMin":-1,"yMax":5,"unit":30,"tickLabels":true,"lines":[{"slope":-1.5,"intercept":3,"label":"f"}]}'>
+<svg role="img" aria-label="The graph of a one-to-one function f: a downward-sloping line that meets the y-axis at (0, 3) and the x-axis at (2, 0)." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232 232" width="232" height="232" font-family="Helvetica, Arial, sans-serif">
+  <line x1="26" y1="206" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="86" y1="206" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="116" y1="206" x2="116" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="146" y1="206" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="176" y1="206" x2="176" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="206" y1="206" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="206" x2="206" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="146" x2="206" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="116" x2="206" y2="116" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="86" x2="206" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="56" x2="206" y2="56" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="26" y1="26" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+  <line x1="24" y1="176" x2="208" y2="176" stroke="currentColor" stroke-width="1"/>
+  <line x1="56" y1="24" x2="56" y2="208" stroke="currentColor" stroke-width="1"/>
+  <polygon points="218,176 208,181 208,171" fill="currentColor"/>
+  <polygon points="56,14 61,24 51,24" fill="currentColor"/>
+  <polygon points="14,176 24,171 24,181" fill="currentColor"/>
+  <polygon points="56,218 51,208 61,208" fill="currentColor"/>
+  <text x="216" y="168" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
+  <text x="64" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
+  <line x1="26" y1="173" x2="26" y2="179" stroke="currentColor" stroke-width="1"/>
+  <text x="26" y="191" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
+  <line x1="86" y1="173" x2="86" y2="179" stroke="currentColor" stroke-width="1"/>
+  <text x="86" y="191" font-size="11" fill="currentColor" text-anchor="middle">1</text>
+  <line x1="116" y1="173" x2="116" y2="179" stroke="currentColor" stroke-width="1"/>
+  <text x="116" y="191" font-size="11" fill="currentColor" text-anchor="middle">2</text>
+  <line x1="146" y1="173" x2="146" y2="179" stroke="currentColor" stroke-width="1"/>
+  <text x="146" y="191" font-size="11" fill="currentColor" text-anchor="middle">3</text>
+  <line x1="176" y1="173" x2="176" y2="179" stroke="currentColor" stroke-width="1"/>
+  <text x="176" y="191" font-size="11" fill="currentColor" text-anchor="middle">4</text>
+  <line x1="206" y1="173" x2="206" y2="179" stroke="currentColor" stroke-width="1"/>
+  <text x="206" y="191" font-size="11" fill="currentColor" text-anchor="middle">5</text>
+  <line x1="53" y1="206" x2="59" y2="206" stroke="currentColor" stroke-width="1"/>
+  <text x="50" y="210" font-size="11" fill="currentColor" text-anchor="end">−1</text>
+  <line x1="53" y1="146" x2="59" y2="146" stroke="currentColor" stroke-width="1"/>
+  <text x="50" y="150" font-size="11" fill="currentColor" text-anchor="end">1</text>
+  <line x1="53" y1="116" x2="59" y2="116" stroke="currentColor" stroke-width="1"/>
+  <text x="50" y="120" font-size="11" fill="currentColor" text-anchor="end">2</text>
+  <line x1="53" y1="86" x2="59" y2="86" stroke="currentColor" stroke-width="1"/>
+  <text x="50" y="90" font-size="11" fill="currentColor" text-anchor="end">3</text>
+  <line x1="53" y1="56" x2="59" y2="56" stroke="currentColor" stroke-width="1"/>
+  <text x="50" y="60" font-size="11" fill="currentColor" text-anchor="end">4</text>
+  <line x1="53" y1="26" x2="59" y2="26" stroke="currentColor" stroke-width="1"/>
+  <text x="50" y="30" font-size="11" fill="currentColor" text-anchor="end">5</text>
+  <line x1="25.5" y1="40.3" x2="134.5" y2="203.7" stroke="currentColor" stroke-width="1.8"/>
+  <polygon points="140,212 130.3,206.5 138.6,200.9" fill="currentColor"/>
+  <polygon points="20,32 29.7,37.5 21.4,43.1" fill="currentColor"/>
+  <text x="81.1" y="156.5" font-size="13" fill="currentColor" text-anchor="end">f</text>
+</svg>
+</div>
+
+{{< fillin
+  question="The graph of a one-to-one function $f$ is shown above. Find $f^{-1}(0)$."
+  answer="2"
+  hint="$f^{-1}(0)$ asks for the input that makes $f$ output $0$ — read the $x$-intercept."
+>}}
+
 ---
 
-<small>This section is adapted from [Precalculus 2e, Section 1.7: Inverse Functions](https://openstax.org/books/precalculus-2e/pages/1-7-inverse-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every figure as an accessible inline SVG, including the reversible function-machine diagram and the domain-and-range diagram, and generated every graph from an explicit formula — the source's unlabelled curves for $g$ and for the reflection example are $g(x)=3^{(x-3)/2}$ and $f(x)=\log_2 x$, fitted to the points the text names; presented Milan's weather forecast and every function table as Markdown tables, giving the forecast temperatures without the source's weather icons; drew the inverse or comparison curve dashed where the source distinguishes it by colour; omitted the media links and end-of-section exercises; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is a domain, an interval, or a yes/no judgement; and omitted the final sketching practice item, which asks for the pair of graphs the worked example immediately above already shows.</small>
+<small>This section is adapted from [Precalculus 2e, Section 1.7: Inverse Functions](https://openstax.org/books/precalculus-2e/pages/1-7-inverse-functions) by Jay Abramson and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). Changes: recreated every figure as an accessible inline SVG, including the reversible function-machine diagram and the domain-and-range diagram, and generated every graph from an explicit formula — the source's unlabelled curves for $g$ and for the reflection example are $g(x)=3^{(x-3)/2}$ and $f(x)=\log_2 x$, fitted to the points the text names; presented Milan's weather forecast and every function table as Markdown tables, giving the forecast temperatures without the source's weather icons; drew the inverse or comparison curve dashed where the source distinguishes it by colour; omitted the media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback, using multiple choice where the answer is a domain, an interval, or a yes/no judgement; omitted the final sketching practice item, which asks for the pair of graphs the worked example immediately above already shows; and adapted selected end-of-section exercises, each with an answer in the official Answer Key, into the section-final Practice block, recreating one exercise's table and another's line graph and using multiple choice for domain, restricted-domain, and one-to-one judgements.</small>

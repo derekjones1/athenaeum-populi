@@ -406,6 +406,7 @@ $3 \cdot 7$
 {{< fillin
   question="Write $x \cdot x \cdot x \cdot x \cdot x$ in exponential form."
   answer="x^5"
+  answerForm="single-power"
   answerDisplay="$x^5$"
   hint="The base is $x$. Count the factors of $x$ to find the exponent."
 >}}

@@ -370,6 +370,7 @@ dividing.
 {{< fillin
   question="Multiply, and write the answer in simplified form: $2\tfrac{2}{5}\left(-2\tfrac{2}{9}\right)$"
   answer="-\frac{16}{3}"
+  answerForm="lowest-terms"
   answerDisplay="$-\tfrac{16}{3}$"
   hint="Both mixed numbers become improper fractions, $\tfrac{12}{5}$ and $-\tfrac{20}{9}$. One factor is negative, so the product is negative."
 >}}

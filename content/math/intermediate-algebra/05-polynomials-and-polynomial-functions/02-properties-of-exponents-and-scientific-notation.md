@@ -870,6 +870,7 @@ $-8.9 \times 10^{-2} = -0.089$.
 {{< fillin
   question="Convert to decimal form: $1.3 \times 10^3$."
   answer="1300"
+  answerForm="decimal"
   answerDisplay="$1{,}300$"
   hint="The exponent is positive, so move the decimal $3$ places to the right."
 >}}
@@ -877,6 +878,7 @@ $-8.9 \times 10^{-2} = -0.089$.
 {{< fillin
   question="Convert to decimal form: $7.5 \times 10^{-2}$."
   answer="0.075"
+  answerForm="decimal"
   hint="The exponent is $-2$, so move the decimal $2$ places to the left."
 >}}
 

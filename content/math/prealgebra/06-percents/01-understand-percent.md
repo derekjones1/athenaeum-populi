@@ -473,6 +473,7 @@ write the percent as $33.\overline{3}\%$.
 {{< fillin
   question="Convert the fraction to a percent: according to the U.S. Census Bureau, about $\tfrac{1}{6}$ of Colorado residents speak a language other than English at home. Enter the exact percent as a mixed number, e.g. $12\tfrac{1}{2}$."
   answer="16\frac{2}{3}"
+  answerForm="mixed-number"
   answerDisplay="$16\tfrac{2}{3}\%$"
   hint="Divide 1 by 6 to get a repeating decimal, then write the exact value as a mixed-number percent, the same way $\tfrac{1}{3}$ becomes $33\tfrac{1}{3}\%$."
 >}}
@@ -581,6 +582,7 @@ write the percent as $33.\overline{3}\%$.
 {{< fillin
   question="Convert the fraction to a percent: $\tfrac{5}{12}$. Enter the exact percent as a mixed number, e.g. $12\tfrac{1}{2}$."
   answer="41\frac{2}{3}"
+  answerForm="mixed-number"
   answerDisplay="$41\tfrac{2}{3}\%$"
   hint="Divide 5 by 12 to get the repeating decimal $0.41\overline{6}$, then write the exact value as a mixed-number percent."
 >}}

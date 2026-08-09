@@ -419,8 +419,8 @@ The solution in interval notation is $(2, \infty)$.
 
 {{< fillin
   question="Solve the inequality $6u + 8(u - 1) > 10u + 32$, graph the solution on the number line, and write the solution in interval notation."
-  answer="u>10"
-  answerDisplay="$u > 10$"
+  answer="(10,\infty)"
+  answerDisplay="$(10, \infty)$"
   hint="Distribute the 8, combine like terms on the left, then collect the u-terms on one side and the constants on the other."
 >}}
 
