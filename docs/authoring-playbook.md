@@ -611,9 +611,13 @@ From the repository root:
 
 ## 5. Working rules
 
-`npm run lint` reports **zero errors and zero warnings**. There is no
-non-blocking rule left in the repository and no category of known-defective
-content to grandfather.
+`npm run lint` reports **zero errors, and errors are all there is** — the
+lint has no warning level. The last warning-level rules (missing hints,
+multipart-looking questions, an empty worked Solution, all-same graph answer
+positions) were promoted to errors on August 10, 2026, when the corpus
+carried zero of each, and the warning channel was deleted with them. There is
+no non-blocking rule left in the repository and no category of
+known-defective content to grandfather.
 
 The Practice retrofit that used to live here is finished. All 212 mapped
 sections carry the block — prealgebra 60/60, elementary-algebra 73/73,
@@ -635,8 +639,9 @@ satisfiable fill-ins are closed class by class — the record is in §6.
 
 The working rules that remain:
 
-- **Never add a warning.** A page you author or substantively revise ships
-  with none of its own. A new one in a diff is a review failure, not backlog.
+- **Never add a warning level back.** Every new rule lands as an error with
+  the corpus already clean, or it does not land. A non-blocking tier in a
+  diff is a review failure, not backlog.
 - **No bulk regex fixes.** Where a rule names a pedagogical defect, its repair
   depends on the source exercise. Retrofit by section, verify by section.
 - **A rule that fires on sound content is a bug in the rule.** Narrow it, with
@@ -698,7 +703,7 @@ because `\tfrac{3}{7}\cdot 21n` canonicalizes to its own answer.
 **Gate each candidate path behind its own verb.** The rule in `tools/lints.mjs`
 unions per-verb extractors deliberately. Widening a shared extractor instead
 would put a thousand sound-but-untagged exercises in scope at once, and a rule
-that fires on sound content cannot land under "never add a warning".
+that fires on sound content cannot land in a lint whose every rule blocks.
 
 **A token that closes the hole is not automatically the right token.** The
 feedback has to name the step the exercise actually asks for. `lowest-terms`

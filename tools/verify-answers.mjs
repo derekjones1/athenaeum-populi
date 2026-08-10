@@ -462,17 +462,24 @@ function applicationValue(text, defs) {
   return def.rhs.subs({ [def.variable]: inner });
 }
 
+/** A written `(a, b)` with numeric coordinates, as [a, b] — or null. */
+function numericPair(raw) {
+  const m = raw.trim().replace(/\\left|\\right/g, '')
+    .match(/^\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)$/);
+  return m ? [Number(m[1]), Number(m[2])] : null;
+}
+
 /** Numeric `(a, b)` pair spans and `f(2)=-11` fact spans, as [x, y] points. */
 function printedPoints(question) {
   const points = [];
   for (const raw of questionSpans(question)) {
-    const s = raw.trim().replace(/\\left|\\right/g, '');
-    const pair = s.match(/^\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)$/);
+    const pair = numericPair(raw);
     if (pair) {
-      points.push([Number(pair[1]), Number(pair[2])]);
+      points.push(pair);
       continue;
     }
-    const fact = s.match(/^[a-zA-Z]\s*\(\s*(-?[\d.]+)\s*\)\s*=\s*(-?[\d.]+)$/);
+    const fact = raw.trim().replace(/\\left|\\right/g, '')
+      .match(/^[a-zA-Z]\s*\(\s*(-?[\d.]+)\s*\)\s*=\s*(-?[\d.]+)$/);
     if (fact) points.push([Number(fact[1]), Number(fact[2])]);
   }
   return points;
@@ -480,12 +487,15 @@ function printedPoints(question) {
 
 const closeNumbers = (a, b) => Math.abs(a - b) <= 1e-8 * Math.max(1, Math.abs(a), Math.abs(b));
 
+/** A parsed expression as a plain real number, or null. */
+function realValue(expr) {
+  const value = expr && numericValue(expr);
+  return value && Math.abs(value.im) < 1e-12 ? value.re : null;
+}
+
 /** A written scalar as a plain real number, or null. */
 function numericAnswer(raw) {
-  const expr = parseMath(raw);
-  if (!expr) return null;
-  const value = numericValue(expr);
-  return value && Math.abs(value.im) < 1e-12 ? value.re : null;
+  return realValue(parseMath(raw));
 }
 
 /** Evaluate a definition's RHS at a plain number, or null. */
@@ -601,13 +611,13 @@ function checkIntercepts(question, answer) {
   if (defs.size !== 1) return null; // a graph or table intercept stays manual
   const def = [...defs.values()][0];
   const parts = splitTopLevelCommas(answer).map((part) => part.trim());
-  const pairs = parts.map((part) => part.replace(/\\left|\\right/g, '').match(/^\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)$/));
+  const pairs = parts.map(numericPair);
   if (pairs.every(Boolean)) {
-    for (const pair of pairs) {
-      const y = definitionAt(def, Number(pair[1]));
+    for (const [px, py] of pairs) {
+      const y = definitionAt(def, px);
       if (y === null) return skip('intercepts', 'not numerically checkable');
-      if (!closeNumbers(y, Number(pair[2]))) {
-        return fail('intercepts', `(${pair[1]}, ${pair[2]}) is not on the graph: the definition gives ${y}`);
+      if (!closeNumbers(y, py)) {
+        return fail('intercepts', `(${px}, ${py}) is not on the graph: the definition gives ${y}`);
       }
     }
     return pass('intercepts');
@@ -636,7 +646,10 @@ function checkIntercepts(question, answer) {
 function checkAverageRate(question, answer) {
   if (!/\bfind (?:and simplify )?the average rate of change\b/i.test(question)) return null;
   const defs = printedDefinitions(question);
-  const interval = question.match(/on the interval\s*\$\\?[[(]\s*([^,$]+?)\s*,\s*([^\])$]+?)\s*\\?[\])]\$/i);
+  // \left/\right stripped before matching, as every sibling parser does — an
+  // interval written $\left[a,b\right]$ must not silently disable the check.
+  const interval = question.replace(/\\left|\\right/g, '')
+    .match(/on the interval\s*\$\\?[[(]\s*([^,$]+?)\s*,\s*([^\])$]+?)\s*\\?[\])]\$/i);
   if (defs.size !== 1 || !interval) return null;
   const def = [...defs.values()][0];
   const [a, b] = [parseMath(interval[1]), parseMath(interval[2])];
@@ -678,7 +691,9 @@ function checkFunctionCombination(question, answer) {
       if (outer) built.push(outer);
       continue;
     }
-    m = s.match(/^\(([a-zA-Z])([+\-])?([a-zA-Z])\)\(([a-zA-Z])\)$/);
+    // The product ask may write its operator out — $(f\cdot g)(x)$ — or by
+    // juxtaposition; either way a non-sum operator means Multiply.
+    m = s.match(/^\(([a-zA-Z])(?:([+\-])|\\cdot|·)?([a-zA-Z])\)\(([a-zA-Z])\)$/);
     if (m) {
       const [left, right] = [at(m[1], parseMath(m[4])), at(m[3], parseMath(m[4]))];
       if (left && right) built.push(ce.box([m[2] === '+' ? 'Add' : m[2] === '-' ? 'Subtract' : 'Multiply', left, right]));
@@ -743,7 +758,8 @@ function checkInverseSwap(question, answer) {
   const askMatch = question.match(/\b(?:find|give|what is)\s+\$([a-zA-Z])\s*(\^\{?-1\}?)?\s*\(\s*(-?[\d.]+)\s*\)\$/i);
   if (facts.length === 0 || !askMatch) return null;
   const ask = { name: askMatch[1], inverse: Boolean(askMatch[2]), input: Number(askMatch[3]) };
-  const fact = facts.find((f) => f.name === ask.name && f.inverse !== ask.inverse && f.output === ask.input);
+  const fact = facts.find((f) => f.name === ask.name && f.inverse !== ask.inverse
+    && closeNumbers(f.output, ask.input));
   if (!fact) return null;
   const value = numericAnswer(answer);
   if (value === null) return skip('inverse-swap', 'unparseable answer');
@@ -822,16 +838,25 @@ function checkLineEquation(question, answer) {
   if (splitTopLevelCommas(answer).length > 1) return null;
   let points = printedPoints(question);
   let requiredSlope = null;
+  const statedSlopes = [];
   for (const raw of questionSpans(question)) {
     const assignment = asAssignment(parseMath(raw));
-    if (assignment?.variable === 'm') requiredSlope = numericValue(assignment.value)?.re ?? null;
+    if (assignment?.variable !== 'm') continue;
+    const value = numericValue(assignment.value)?.re;
+    if (value != null) statedSlopes.push(value);
+  }
+  if (statedSlopes.length > 0) {
+    // Two different printed `m=…` spans name two lines, and which one binds
+    // the ask is prose the checker cannot read — skip rather than let the
+    // last span silently overwrite the relevant one.
+    if (statedSlopes.some((value) => !closeNumbers(value, statedSlopes[0]))) return null;
+    requiredSlope = statedSlopes[0];
   }
   if (requiredSlope === null) {
     const stated = question.match(/slope(?: of)?\s*\$([^$]+)\$/i);
     if (stated) {
       const expr = parseMath(stated[1]);
-      const stated_value = expr && numericValue(asAssignment(expr)?.value ?? expr);
-      requiredSlope = stated_value && Math.abs(stated_value.im) < 1e-12 ? stated_value.re : null;
+      requiredSlope = realValue(expr && (asAssignment(expr)?.value ?? expr));
     }
   }
   const orientation = /perpendicular/i.test(question) ? 'perpendicular' : /parallel/i.test(question) ? 'parallel' : null;
@@ -848,9 +873,12 @@ function checkLineEquation(question, answer) {
     }
     if (reference === null && points.length === 3) {
       // "passes through the points $P$ and $Q$. Find the equation of a
-      // perpendicular line that passes through the point $R$."
-      const ref = question.match(/the points\s*\$\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)\$\s*and\s*\$\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)\$/i);
-      const target = question.match(/the point\s*\$\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)\$/i);
+      // perpendicular line that passes through the point $R$." Matched on the
+      // \left/\right-stripped text, exactly as printedPoints() reads pairs,
+      // so MathLive's smart-fence output does not lose the classification.
+      const flat = question.replace(/\\left|\\right/g, '');
+      const ref = flat.match(/the points\s*\$\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)\$\s*and\s*\$\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)\$/i);
+      const target = flat.match(/the point\s*\$\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)\$/i);
       if (ref && target && Number(ref[1]) !== Number(ref[3])) {
         reference = (Number(ref[4]) - Number(ref[2])) / (Number(ref[3]) - Number(ref[1]));
         points = [[Number(target[1]), Number(target[2])]];
@@ -921,7 +949,10 @@ function checkExpressAsFunction(question, answer) {
  */
 function checkCircleEquation(question, answer) {
   if (!/\bequation of the circle\b/i.test(question)) return null;
-  const center = question.match(/center\s*\$\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)\$/i);
+  // Stripped like printedPoints() reads pairs, so a center printed with
+  // MathLive's smart fences still classifies the exercise.
+  const center = question.replace(/\\left|\\right/g, '')
+    .match(/center\s*\$\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)\$/i);
   if (!center) return null;
   const h = Number(center[1]);
   const k = Number(center[2]);

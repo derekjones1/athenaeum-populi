@@ -5,7 +5,13 @@
  * authoring format. Math, table, exercise, and inline-SVG rules scan the raw
  * source before the production build.
  *
- * lintHugo(src, filename?) → { errors, warnings }
+ * lintHugo(src, filename?) → { errors }
+ *
+ * Every rule is an error — there is no warning level. The last warning-level
+ * rules (missing hints, multipart-looking questions, an empty worked
+ * Solution, all-same graph answer positions) were promoted on August 10,
+ * 2026, when the corpus carried zero of each; a rule that would need a
+ * non-blocking tier is a rule that needs narrowing instead.
  */
 
 import { parseGraphPlotConfig } from '../assets/js/lib/graph-plot-config.mjs';
@@ -14,7 +20,7 @@ import { parseGraphPlotConfig } from '../assets/js/lib/graph-plot-config.mjs';
 // grader itself, so the trivially-satisfiable-prompt check grades a printed
 // value exactly the way a learner's submission would be graded.
 import {
-  ANSWER_FORM_TOKENS, ce, checkAnswer, checkForm, parseAnswerForm, preprocess,
+  ANSWER_FORM_TOKENS, ce, checkAnswer, checkFormAsGraded, parseAnswerForm, preprocess,
   splitTopLevelCommas, stripGroupingCommas,
 } from '../assets/js/lib/check-answer.mjs';
 // The shared content primitives: one shortcode grammar, one math-span escape
@@ -200,14 +206,14 @@ const LOG_EXPANSION_PROMPT_RE = /\bas a sum\b[^.?!]*\blogarithms\b/i;
  * slope-intercept form $y=3x+4$?") is not conscripted into grading a shape
  * its answer does not have.
  */
-const NAMED_FORM_ASKS = [
+export const NAMED_FORM_ASKS = [
   {
-    ask: /\b(?:write|rewrite|express|enter|give)\b[^.?!]*\bpoint-slope form\b|\bequation\b[^.?!]*\bin (?:the )?point-slope form\b/i,
+    ask: /\b(?:write|rewrite|express|enter|give|convert)\b[^.?!]*\bpoint-slope form\b|\bequation\b[^.?!]*\b(?:in|to) (?:the )?point-slope form\b/i,
     name: 'point-slope form',
     tokens: ['point-slope-form'],
   },
   {
-    ask: /\b(?:write|rewrite|express|enter|give)\b[^.?!]*\bslope-intercept form\b|\bequation\b[^.?!]*\bin (?:the )?slope-intercept form\b/i,
+    ask: /\b(?:write|rewrite|express|enter|give|convert)\b[^.?!]*\bslope-intercept form\b|\bequation\b[^.?!]*\b(?:in|to) (?:the )?slope-intercept form\b/i,
     name: 'slope-intercept form',
     tokens: ['slope-intercept-form'],
   },
@@ -238,9 +244,10 @@ const NAMED_FORM_ASKS = [
  * subjects of the "in simplified/simplest form" ask below. Digits only: a
  * variable fraction's simplified form is `reduced-fraction` territory with
  * its own verb, and conscripting it here would force a token whose numeral
- * gcd test cannot read it.
+ * gcd test cannot read it. Each operand may be braced or a bare single digit
+ * — TeX reads `\frac68` as 6/8, and the grader's asFraction() does too.
  */
-const NUMERAL_FRACTION_ANSWER_RE = /^\s*-?\s*(?:\d+\s*)?\\[tdc]?frac\s*\{\s*-?\d+\s*\}\s*\{\s*-?\d+\s*\}\s*$/;
+const NUMERAL_FRACTION_ANSWER_RE = /^\s*-?\s*(?:\d+\s*)?\\[tdc]?frac\s*(?:\{\s*-?\d+\s*\}|\d)\s*(?:\{\s*-?\d+\s*\}|\d)\s*$/;
 
 /**
  * A categorical response encoded as a number: "Answer 1 for yes or 0 for no",
@@ -438,17 +445,23 @@ const asOperand = (tex) => {
   return `(${t})`;
 };
 
-const FUNCTION_DEF_RE = /^\s*([fg])\s*\(\s*x\s*\)\s*=\s*(.+?)\s*$/;
+// Any single-letter function name and variable, exactly as
+// tools/verify-answers.mjs's DEFINITION_RE reads printed definitions — the
+// sections name pairs $p$/$q$ and variables $t$ as readily as $f$/$g$ of $x$,
+// and a hardcoded pair would silently drop those exercises from the rule.
+// Every ask is gated on a printed definition existing for each captured name,
+// so the wider classes cannot conscript prose coincidences.
+const FUNCTION_DEF_RE = /^\s*([a-zA-Z])\s*\(\s*([a-zA-Z])\s*\)\s*=\s*(.+?)\s*$/;
 // The operator may be absent: `(fg)(x)` is the product ask written by
 // juxtaposition, exactly as the precalculus sections print it.
-const FUNCTION_SUM_ASK_RE = /\(\s*f\s*(\+|-|\\cdot|·)?\s*g\s*\)\s*\(\s*x\s*\)/;
-const FUNCTION_QUOTIENT_ASK_RE = /\\[tdc]?frac\s*\{\s*f\s*\}\s*\{\s*g\s*\}\s*\)?\s*\(\s*x\s*\)/;
-const FUNCTION_COMPOSE_ASK_RE = /\(\s*([fg])\s*\\circ\s*([fg])\s*\)\s*\(\s*x\s*\)/;
+const FUNCTION_SUM_ASK_RE = /\(\s*([a-zA-Z])\s*(\+|-|\\cdot|·)?\s*([a-zA-Z])\s*\)\s*\(\s*[a-zA-Z]\s*\)/;
+const FUNCTION_QUOTIENT_ASK_RE = /\\[tdc]?frac\s*\{\s*([a-zA-Z])\s*\}\s*\{\s*([a-zA-Z])\s*\}\s*\)?\s*\(\s*[a-zA-Z]\s*\)/;
+const FUNCTION_COMPOSE_ASK_RE = /\(\s*([a-zA-Z])\s*\\circ\s*([a-zA-Z])\s*\)\s*\(\s*[a-zA-Z]\s*\)/;
 // The same composition written as a nested application — `f(g(x))`, which is
 // how the precalculus sections phrase it at least as often as `(f\circ g)(x)`.
-// The inner argument must be exactly `x`: `f(g(5))` answers with a number that
+// The inner argument must be a variable: `f(g(5))` answers with a number that
 // no restatement of the definitions equals, so it is not a hazard.
-const FUNCTION_NESTED_ASK_RE = /([fg])\s*\(\s*([fg])\s*\(\s*x\s*\)\s*\)/;
+const FUNCTION_NESTED_ASK_RE = /([a-zA-Z])\s*\(\s*([a-zA-Z])\s*\(\s*[a-zA-Z]\s*\)\s*\)/;
 
 /**
  * "For $f(x)=A$ and $g(x)=B$, find $(f\pm g)(x)$" → `(A)+(B)` / `(A)-(B)`,
@@ -474,26 +487,27 @@ function printedFunctionCombinations(question, fallbackDefs = new Map()) {
   for (const span of mathSpans(question, { allowNewlines: true })) {
     const inner = span.tex.trim();
     const def = inner.match(FUNCTION_DEF_RE);
-    if (def) { defs.set(def[1], def[2]); continue; }
+    if (def) { defs.set(def[1], { variable: def[2], rhs: def[3] }); continue; }
     const flat = inner.replace(/\\left|\\right/g, '');
-    if (FUNCTION_QUOTIENT_ASK_RE.test(flat)) { ask = '/'; continue; }
+    const quotient = flat.match(FUNCTION_QUOTIENT_ASK_RE);
+    if (quotient) { ask = { op: '/', names: [quotient[1], quotient[2]] }; continue; }
     const compose = flat.match(FUNCTION_COMPOSE_ASK_RE) ?? flat.match(FUNCTION_NESTED_ASK_RE);
-    if (compose) { ask = ['circ', compose[1], compose[2]]; continue; }
+    if (compose) { ask = { op: 'circ', names: [compose[1], compose[2]] }; continue; }
     const sum = flat.match(FUNCTION_SUM_ASK_RE);
-    if (sum) ask = (sum[1] === '+' || sum[1] === '-') ? sum[1] : '*';
+    if (sum) ask = { op: (sum[2] === '+' || sum[2] === '-') ? sum[2] : '*', names: [sum[1], sum[3]] };
   }
-  if (!ask || !defs.has('f') || !defs.has('g')) return [];
-  const f = defs.get('f');
-  const g = defs.get('g');
-  if (Array.isArray(ask)) {
-    const outer = defs.get(ask[1]);
-    const inner = defs.get(ask[2]);
-    return [outer.replace(/(?<![a-zA-Z\\])x(?![a-zA-Z])/g, `(${inner})`)];
+  if (!ask || !ask.names.every((name) => defs.has(name))) return [];
+  const [first, second] = ask.names.map((name) => defs.get(name));
+  if (ask.op === 'circ') {
+    // Substitute the written inner definition for every standalone instance
+    // of the OUTER definition's own variable.
+    const variable = new RegExp(String.raw`(?<![a-zA-Z\\])${first.variable}(?![a-zA-Z])`, 'g');
+    return [first.rhs.replace(variable, `(${second.rhs})`)];
   }
-  if (ask === '+') return [`${asOperand(f)}+${asOperand(g)}`];
-  if (ask === '-') return [`${asOperand(f)}-${asOperand(g)}`];
-  if (ask === '*') return [`${asOperand(f)}${asOperand(g)}`];
-  return [`\\frac{${f}}{${g}}`];
+  if (ask.op === '+') return [`${asOperand(first.rhs)}+${asOperand(second.rhs)}`];
+  if (ask.op === '-') return [`${asOperand(first.rhs)}-${asOperand(second.rhs)}`];
+  if (ask.op === '*') return [`${asOperand(first.rhs)}${asOperand(second.rhs)}`];
+  return [`\\frac{${first.rhs}}{${second.rhs}}`];
 }
 
 /**
@@ -657,9 +671,7 @@ function elementSuppliesName(block, id) {
 
 export function lintHugo(src, filename = '') {
   const errors = [];
-  const warnings = [];
   const err = (i, msg) => errors.push(`L${lineOf(src, i)}: ${msg}`);
-  const wrn = (i, msg) => warnings.push(`L${lineOf(src, i)}: ${msg}`);
   // Hugo expands shortcode syntax even when Markdown presents it as code.
   // Documentation must use Hugo's comment-escaped form (`{{</* name */>}}`)
   // or the example can execute and fail the build.
@@ -918,7 +930,7 @@ export function lintHugo(src, filename = '') {
   }
 
   for (const m of mediaSrc.matchAll(/\*\*Solution\.\*\*[ \t]*(?:\r?\n[ \t]*)+(?=(?:\{\{<\s*(?:fillin|multiplechoice|graphplot)\b|#{1,6}\s|---[ \t]*$|(?![\s\S])))/gm)) {
-    wrn(m.index, 'worked example appears to have an empty Solution block — confirm that no source solution was dropped');
+    err(m.index, 'worked example appears to have an empty Solution block — confirm that no source solution was dropped');
   }
   // Read through the same shared iterator and the same masked source as every
   // other shortcode rule. Its own regex used `[^>]*` for the opening tag where
@@ -1133,7 +1145,7 @@ export function lintHugo(src, filename = '') {
   const pageFunctionDefs = [];
   for (const span of mathSpans(mediaSrc, { allowNewlines: true })) {
     const def = span.tex.trim().match(FUNCTION_DEF_RE);
-    if (def) pageFunctionDefs.push({ index: span.index, name: def[1], def: def[2] });
+    if (def) pageFunctionDefs.push({ index: span.index, name: def[1], def: { variable: def[2], rhs: def[3] } });
   }
   for (const { params, index } of fillins) {
     const fallbackDefs = new Map();
@@ -1280,9 +1292,12 @@ export function lintHugo(src, filename = '') {
       // simplify() effectively never returns on a conjugate radical quotient
       // ("$\tfrac{\sqrt{5}}{\sqrt{x}+\sqrt{2}}$" against its rationalized
       // answer), and every such exercise declares the very form that rejects
-      // its printed span without parsing at all.
+      // its printed span without parsing at all. checkFormAsGraded, not
+      // checkForm: the grader normalizes function notation before its own
+      // form check, and a pre-filter reading the raw span would disagree
+      // with it on every function-shaped candidate.
       const printed = candidates
-        .find((value) => checkForm(value, params.answerForm)
+        .find((value) => checkFormAsGraded(value, params.answerForm)
           && checkAnswer(value, params.answer, { mode: params.answerMode, form: params.answerForm }) === 'correct');
       if (printed !== undefined) {
         const remedy = parseAnswerForm(params.answerForm).valid
@@ -1295,7 +1310,7 @@ export function lintHugo(src, filename = '') {
       }
     }
     if (isRegularSection && !(params.hint || '').trim()) {
-      wrn(index, `${where}: regular-section exercise is missing a hint`);
+      err(index, `${where}: regular-section exercise is missing a hint`);
     }
     if (params.answer && /\^-/.test(params.answer)) {
       err(index, `${where}: answer has an unbraced negative exponent — write 10^{-3}, never 10^-3`);
@@ -1331,7 +1346,7 @@ export function lintHugo(src, filename = '') {
     if (/\bsimplif(?:y|ied)(?:\s+if\s+possible)?\s*[:;,.-]?\s*(?:\([abc]\)|[abc]\)|[ⓐⓑⓒ])/iu.test(q)) {
       err(index, `${where}: standalone fill-in retains a print part label after “Simplify” — remove the label or split a true multipart exercise`);
     }
-    if (/\(a\)/.test(q) && /\(b\)/.test(q)) wrn(index, `${where}: question looks multi-part ("(a)…(b)") — split into one exercise per part`);
+    if (/\(a\)/.test(q) && /\(b\)/.test(q)) err(index, `${where}: question looks multi-part ("(a)…(b)") — split into one exercise per part`);
   }
 
   // ---- multiplechoice shortcode rules --------------------------------------
@@ -1341,7 +1356,7 @@ export function lintHugo(src, filename = '') {
     const q = params.question || '';
     if (!q.trim()) err(index, 'multiplechoice: missing non-empty question');
     if (isRegularSection && !(params.hint || '').trim()) {
-      wrn(index, `multiplechoice (${q.slice(0, 40)}…): regular-section exercise is missing a hint`);
+      err(index, `multiplechoice (${q.slice(0, 40)}…): regular-section exercise is missing a hint`);
     }
     // `answerDisplay` is not a multiplechoice parameter. The template never
     // rendered it and no page has ever used it, so an author who reached for
@@ -1376,10 +1391,10 @@ export function lintHugo(src, filename = '') {
         err(index, `multiplechoice: answer ${JSON.stringify(params.answer.slice(0, 40))} is not one of the options (exact string match required)`);
       }
     }
-    if (/\(a\)/.test(q) && /\(b\)/.test(q)) wrn(index, `multiplechoice (${q.slice(0, 40)}…): question looks multi-part — split it`);
+    if (/\(a\)/.test(q) && /\(b\)/.test(q)) err(index, `multiplechoice (${q.slice(0, 40)}…): question looks multi-part — split it`);
   }
   if (graphAnswerIndexes.length >= 2 && new Set(graphAnswerIndexes.map((x) => x.n)).size === 1) {
-    wrn(graphAnswerIndexes[0].index, `all ${graphAnswerIndexes.length} graph multiplechoice(s) use answerIndex=${graphAnswerIndexes[0].n} — vary the correct position`);
+    err(graphAnswerIndexes[0].index, `all ${graphAnswerIndexes.length} graph multiplechoice(s) use answerIndex=${graphAnswerIndexes[0].n} — vary the correct position`);
   }
 
   // ---- graphplot shortcode rules -------------------------------------------
@@ -1392,7 +1407,7 @@ export function lintHugo(src, filename = '') {
     }
     if (!(params.question || '').trim()) err(index, 'graphplot: missing non-empty question');
     if (isRegularSection && !(params.hint || '').trim()) {
-      wrn(index, 'graphplot: regular-section exercise is missing a hint');
+      err(index, 'graphplot: regular-section exercise is missing a hint');
     }
     if (!params.ariaLabel) err(index, 'graphplot: missing ariaLabel — describe the empty grid in prose');
     try {
@@ -1409,5 +1424,5 @@ export function lintHugo(src, filename = '') {
     }
   }
 
-  return { errors, warnings };
+  return { errors };
 }

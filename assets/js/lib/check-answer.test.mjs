@@ -13,7 +13,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  ANSWER_FORM_TOKENS, checkAnswer, describeAnswerForm, parseAnswerForm,
+  ANSWER_FORM_TOKENS, checkAnswer, checkFormAsGraded, describeAnswerForm, parseAnswerForm,
 } from './check-answer.mjs';
 
 const ANSWER = 'x^2 + 5x + 6';
@@ -100,10 +100,25 @@ const extra = [
   // the prompt said f(x), the author wrote y, and both mean the output.
   ['f(x)=-7x+3', 'y=-7x+3', 'correct'],
   ['f(x)=-7x+3', '-7x+3', 'correct'],
+  ['f\\left(x\\right)=-7x+3', 'y=-7x+3', 'correct'], // MathLive smart fences around the argument
+  ['f(x)=-7x+3', 'f(x)=-7x+3', 'correct'], // an author may write the label too — grading is reflexive
   ['C(n)=24+0.1n', '24+0.1n', 'correct'], // capital names box differently, same strip
   ['f(x)=-7x+4', 'y=-7x+3', 'incorrect'], // wrong value still wrong
   ['f(x)=', 'y=-7x+3', 'invalid'], // a label with nothing after it is no answer
   ['y-5=2(x-1)', 'y-5=2(x-1)', 'correct'], // a genuine equation is never half-eaten
+  // The application as an OUTPUT QUANTITY inside an equation — the point-slope
+  // response a function-notation prompt invites — reads as `y`.
+  ['f(x)-4=-\\frac{1}{2}(x+1)', 'y-4=-\\frac{1}{2}(x+1)', 'correct'],
+  ['f(x)-4=-\\frac{1}{2}(x+2)', 'y-4=-\\frac{1}{2}(x+1)', 'incorrect'], // wrong point still wrong
+  // A learner may name the function y itself — the y in the application being
+  // replaced must not read as a collision against its own rewrite.
+  ['y\\left(t\\right)-4=2\\left(t+1\\right)', 'y-4=2(t+1)', 'correct'],
+  // The rewrite must verify the WHOLE equation: a differing function symbol
+  // on the other side is a different equation, not a notation variant. The
+  // engine's own isEqual accepts these (equationsEquivalent guards it).
+  ['f(x)-4=g(x)+2', 'y-4=h(x)+2', 'incorrect'],
+  ['f(x)-4=g(x)+2', 'y-4=g(x)+2', 'correct'],
+  ['y-4=gx+2', 'y-4=hx+2', 'incorrect'], // the raw engine defect, no rewrite involved
   // A lone `d` numerator is Leibniz derivative notation to the Compute Engine,
   // so \frac{d}{t} boxed as D(missing, t) and graded *invalid* — and MathLive
   // turns a typed "/" into a \frac, so every distance/rate/time answer a
@@ -566,6 +581,12 @@ const formCases = [
   ['y-4=-\\frac{1}{2}(x+1)', 'y-4=-\\frac{1}{2}(x+1)', 'point-slope-form', 'correct'],
   ['y-4=-0.5(x+1)', 'y-4=-\\frac{1}{2}(x+1)', 'point-slope-form', 'correct'],
   ['y-4=-\\frac{x+1}{2}', 'y-4=-\\frac{1}{2}(x+1)', 'point-slope-form', 'correct'],
+  // function notation reads as y before the form check sees it
+  ['f(x)-4=-\\frac{1}{2}(x+1)', 'y-4=-\\frac{1}{2}(x+1)', 'point-slope-form', 'correct'],
+  // a labelled equation keeps its equation reading for the form check: the
+  // collapsed-origin point-slope answer written as f(x)=m(x-x_1) is correct,
+  // not 'form' — the label reading (bare RHS) has no equation to show
+  ['f\\left(x\\right)=5\\left(x-3\\right)', 'y=5(x-3)', 'point-slope-form', 'correct'],
   // the collapsed origin case is point-slope with both subtractions evaluated
   ['y=-3x', 'y-0=-3(x-0)', 'point-slope-form', 'correct'],
   ['y-0=-3(x-0)', 'y-0=-3(x-0)', 'point-slope-form', 'correct'],
@@ -583,7 +604,11 @@ const formCases = [
   ['\\frac{-x}{3}-2', '-\\frac{1}{3}x-2', 'slope-intercept-form', 'correct'],
   ['y=-\\frac{1}{3}x-2', '-\\frac{1}{3}x-2', 'slope-intercept-form', 'correct'],
   ['f(x)=-7x+3', 'y=-7x+3', 'slope-intercept-form', 'correct'],
+  ['f\\left(x\\right)=-7x+3', 'y=-7x+3', 'slope-intercept-form', 'correct'],
   ['x', 'x', 'slope-intercept-form', 'correct'],
+  // the stripped label reaches EVERY form predicate, not just the two that
+  // strip their own — a labelled factored answer is factored
+  ['f\\left(x\\right)=\\left(x+2\\right)\\left(x+4\\right)', '(x+2)(x+4)', 'factored', 'correct'],
   // exponential-form — two TRUE statements grade equal, so only the written
   // notation separates the conversion from the prompt retyped
   ['343=7^3', '343=7^3', 'exponential-form', 'correct'],
@@ -625,6 +650,15 @@ test('answerForm grades the shape as well as the value', async (t) => {
       assert.equal(checkAnswer(student, answer, { form }), expected);
     });
   }
+});
+
+test('checkFormAsGraded reads function notation the way the grader does', () => {
+  // The lint's shape pre-filter runs this before checkAnswer(); it must never
+  // reject a writing whose normalized reading the grader's form check accepts.
+  assert.equal(checkFormAsGraded('f\\left(x\\right)-4=2\\left(x+1\\right)', 'point-slope-form'), true);
+  assert.equal(checkFormAsGraded('f\\left(x\\right)=5\\left(x-3\\right)', 'point-slope-form'), true);
+  assert.equal(checkFormAsGraded('f\\left(x\\right)=-7x+3', 'slope-intercept-form'), true);
+  assert.equal(checkFormAsGraded('y-4=2x+2', 'point-slope-form'), false);
 });
 
 test('answerForm parsing and feedback wording', async (t) => {

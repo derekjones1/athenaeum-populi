@@ -23,13 +23,11 @@ import { mathSpans, walkMarkdown } from './lib-content.mjs';
 const args = process.argv.slice(2);
 const root = args.find((a) => !a.startsWith('--')) || 'content';
 
-let errors = 0, warns = 0, files = 0;
+let errors = 0, files = 0;
 for (const f of walkMarkdown(root)) {
   files++;
   const src = readFileSync(f, 'utf8');
-  const { errors: le, warnings: lw } = lintHugo(src, f);
-  for (const e of le) { errors++; console.log(`LINT  ${f} ${e}`); }
-  for (const w of lw) { warns++; console.log(`warn  ${f} ${w}`); }
+  for (const e of lintHugo(src, f).errors) { errors++; console.log(`LINT  ${f} ${e}`); }
   for (const { tex, display } of mathSpans(src, { maskCode: true })) {
     // throwOnError catches real parse errors; strict:'ignore' silences benign
     // "unknown symbol" warnings (e.g. an em-dash inside a money-dollar span).
@@ -37,7 +35,7 @@ for (const f of walkMarkdown(root)) {
     catch (e) { errors++; console.log(`KATEX ${f}: ${JSON.stringify(tex.slice(0, 50))} — ${e.message.slice(0, 80)}`); }
   }
 }
-console.log(`\n${files} files. ${errors} error(s), ${warns} warning(s).`);
+console.log(`\n${files} files. ${errors} error(s).`);
 
 if (errors) {
   console.error(`✖ content lint failed: ${errors} error(s) across ${files} file(s)`);
@@ -45,4 +43,4 @@ if (errors) {
 }
 // A success banner in the same shape as the other gates, so "no output after
 // the counts" is never mistaken for "the tool did not run".
-console.log(`✓ content lint: ${files} files, 0 errors, ${warns} warning(s)`);
+console.log(`✓ content lint: ${files} files, 0 errors`);

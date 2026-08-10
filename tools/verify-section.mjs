@@ -25,12 +25,11 @@ import { hasUnpairedDollar, mathSpans, shortcodes } from './lib-content.mjs';
 const files = process.argv.slice(2);
 if (!files.length) { console.error('usage: node tools/verify-section.mjs <file.md> [...]'); process.exit(2); }
 
-let fail = 0, warn = 0;
+let fail = 0;
 // Failures go to stderr, like every other verifier in tools/: a caller that
 // pipes stdout somewhere (or discards it) must still see why the run failed.
 // `verify-all` relays both streams, so nothing downstream changes.
 const bad = (m) => { fail++; console.error(`  ✗ ${m}`); };
-const iffy = (m) => { warn++; console.error(`  ⚠ ${m}`); };
 
 function propMath(where, name, val) {
   if (val == null) return;
@@ -51,9 +50,8 @@ for (const f of files) {
     .replace(/```[\s\S]*?```/g, ' ')
     .replace(/`[^`\n]*`/g, ' ');
 
-  // 1. mechanical lints
-  const { errors, warnings } = lintHugo(src, f);
-  errors.forEach(bad); warnings.forEach(iffy);
+  // 1. mechanical lints — every rule is an error, there is no warning level
+  lintHugo(src, f).errors.forEach(bad);
 
   // 2. body math
   for (const { tex, display } of mathSpans(src, { maskCode: true })) {
@@ -105,9 +103,9 @@ for (const f of files) {
 }
 
 if (fail) {
-  console.error(`\n✖ ${fail} problem(s)${warn ? `, ${warn} warning(s)` : ''}.`);
+  console.error(`\n✖ ${fail} problem(s).`);
   process.exit(1);
 }
 // A success banner, so a passing run says so in the same shape as its siblings
 // rather than ending in silence a reader has to interpret.
-console.log(`\n✓ ${files.length} section(s) verified${warn ? `, ${warn} warning(s)` : ''}.`);
+console.log(`\n✓ ${files.length} section(s) verified.`);

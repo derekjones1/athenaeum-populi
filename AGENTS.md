@@ -41,8 +41,8 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
 - `npm run build` — clean production build plus global Pagefind
 - `npm run check:build` — route, link, search, and file-count gates
 - `npm run ci` — complete local equivalent of CI
-- `npm run baseline:update` — recount the Practice backlog and the
-  verified-answers floor, and rewrite the published numbers in place
+- `npm run baseline:update` — recount the verified-answers floor and rewrite
+  package.json's `--min-verified` in place
 - `npm run source:fetch` — fetch the ignored, sparse OpenStax source checkout
 - `npm run source:verify` — verify the committed 212-section map offline
 - `npm run source:check` — report-only comparison against pinned CNXML
@@ -50,15 +50,17 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
 
 Every `source:*` command takes `--bundle KEY` to work on one bundle at a time.
 
-Every authoring rule in the content lint is an error, with no exceptions. The
-last one that was not — a section missing its `## Practice` block — was
-promoted on August 9, 2026, when the final mapped section landed its block;
-the working rules that outlived that programme are in
-`docs/authoring-playbook.md` §5. A page you author or revise adds no warning
-of its own. If a rule fires on sound content, narrow the rule and add a test
-for the case it got wrong — do not exempt the page. When authoring moves the
-`--min-verified` floor, end the session with `npm run baseline:update` and
-commit the rewrite together with the content.
+Every authoring rule in the content lint is an error, with no exceptions —
+the lint has no warning level. The missing-`## Practice`-block rule was
+promoted on August 9, 2026, when the final mapped section landed its block,
+and the last warning-level rules (missing hints, multipart-looking questions,
+an empty worked Solution, all-same graph answer positions) followed on
+August 10, 2026, when the corpus carried zero of each; the working rules that
+outlived that programme are in `docs/authoring-playbook.md` §5. If a rule
+fires on sound content, narrow the rule and add a test for the case it got
+wrong — do not exempt the page. When authoring moves the `--min-verified`
+floor, end the session with `npm run baseline:update` and commit the rewrite
+together with the content.
 
 ## Reviews and verification protocol
 

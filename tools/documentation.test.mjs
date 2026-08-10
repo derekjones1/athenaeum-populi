@@ -110,8 +110,8 @@ test('the authoring playbook documents the authoring rules', () => {
   // The retrofit is done, but §5's working rules outlived it and several other
   // sections cite them by number — so the section stays, under its own title.
   assert.match(authoring, /## 5\. Working rules/);
-  assert.match(authoring, /zero errors and zero warnings/);
-  assert.match(authoring, /\*\*Never add a warning\.\*\*/);
+  assert.match(authoring, /zero errors, and errors are all there is/);
+  assert.match(authoring, /\*\*Never add a warning level back\.\*\*/);
   assert.match(authoring, /A rule that fires on sound content is a bug in the rule/);
 });
 

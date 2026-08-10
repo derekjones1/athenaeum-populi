@@ -393,9 +393,69 @@ function numericallyEquivalent(studentExpr, answerExpr) {
   return agreed >= SAMPLES_REQUIRED;
 }
 
+/**
+ * Two equations state the same condition exactly when their moved-to-one-side
+ * forms are nonzero constant multiples of each other. The engine's `isEqual`
+ * is not that check — on the pinned 0.58.0 it accepts equations that differ
+ * in a symbol outright (`y-4=gx+2` vs `y-4=hx+2` → true), which
+ * readFunctionNotation() makes reachable by ordinary typing
+ * (`f(x)-4=g(x)+2` against an authored `y-4=h(x)+2`, where g and h are
+ * different functions). Proportionality is decided by sampling (`subs` +
+ * `N()`, the entry points the hang guards above already trust), and
+ * cross-multiplied so no ratio is ever divided out: at every informative
+ * sample point, student·answer₀ must agree with answer·student₀. The scaled
+ * and rearranged restatements grading has always accepted stay equal; a
+ * differing symbol, slope, or constant fails a sample. A side vanishing
+ * where the other does not is already a decision, and two unknown-free
+ * statements are the same condition when both hold or both fail (`343=7^3`
+ * and `3=\log_7 343` are the same true statement).
+ */
+function equationsEquivalent(studentExpr, answerExpr) {
+  if (studentExpr.ops?.length !== 2 || answerExpr.ops?.length !== 2) return false;
+  const sides = [studentExpr, answerExpr]
+    .map((expr) => ce.box(['Subtract', expr.ops[0], expr.ops[1]]));
+  const vars = [...new Set(sides.flatMap((side) => side.unknowns))];
+  if (vars.length === 0) {
+    const values = sides.map((side) => side.N());
+    if (!values.every((v) => Number.isFinite(v.re) && Number.isFinite(v.im))) return false;
+    return sampleIsZero(values[0]) === sampleIsZero(values[1]);
+  }
+  const samples = [];
+  let bothVanished = 0;
+  for (let i = 0; i < SAMPLE_POINTS.length && samples.length < SAMPLES_REQUIRED; i += 1) {
+    const assignment = {};
+    vars.forEach((name, j) => {
+      assignment[name] = SAMPLE_POINTS[(i + 2 * j) % SAMPLE_POINTS.length];
+    });
+    const values = sides.map((side) => side.subs(assignment).N());
+    if (!values.every((v) => Number.isFinite(v.re) && Number.isFinite(v.im))) continue; // singularity — try another point
+    const vanished = values.map(sampleIsZero);
+    if (vanished[0] !== vanished[1]) return false;
+    if (vanished[0]) { bothVanished += 1; continue; }
+    samples.push(values);
+  }
+  // Too few decidable points — a singularity at every sample — fails safe.
+  if (samples.length + bothVanished < SAMPLES_REQUIRED) return false;
+  const mul = (a, b) => ({ re: a.re * b.re - a.im * b.im, im: a.re * b.im + a.im * b.re });
+  const [first, ...rest] = samples;
+  return rest.every((sample) => {
+    const left = mul(sample[0], first[1]);
+    const right = mul(sample[1], first[0]);
+    const scale = Math.max(1, Math.hypot(left.re, left.im), Math.hypot(right.re, right.im));
+    return Math.hypot(left.re - right.re, left.im - right.im) <= SAMPLE_TOLERANCE * scale;
+  });
+}
+
 function equivalent(studentExpr, answerExpr) {
   try {
     if (studentExpr.isSame(answerExpr)) return true;
+    // Equation-vs-equation takes the sound proportionality check; an
+    // equation against anything else is never equivalent (the variable
+    // equations worth unwrapping were unwrapped by the caller).
+    if (studentExpr.operator === 'Equal' || answerExpr.operator === 'Equal') {
+      return studentExpr.operator === 'Equal' && answerExpr.operator === 'Equal'
+        && equationsEquivalent(studentExpr, answerExpr);
+    }
     // `isEqual` must never see a radical-denominator quotient — its hang
     // class (see the guards' banner). Only sampling provably returns there.
     if (radicalDenominator(studentExpr) || radicalDenominator(answerExpr)) {
@@ -627,6 +687,16 @@ function bareLatex(latex) {
     bare = bare.slice(1, -1).trim();
   }
   return bare;
+}
+
+/**
+ * Strip a written `y=`/`x=`/`f(x)=` label off bareLatex() output. The label
+ * is written, not parsed: `f(x)=…` boxes as an equation on a function
+ * application, which no equation unwrap in the grader reads.
+ */
+function stripWrittenLabel(bare) {
+  const label = bare.match(/^[a-zA-Z]\s*(?:\(\s*[a-zA-Z]\s*\))?\s*=/);
+  return label ? bare.slice(label[0].length) : bare;
 }
 
 /**
@@ -1012,6 +1082,13 @@ function polyConstantValue(value, depth) {
 function collectSymbols(expr, out) {
   if (expr.symbol) out.add(expr.symbol);
   for (const op of expr.ops ?? []) collectSymbols(op, out);
+}
+
+/** No symbol anywhere in the parse — a numeric constant. */
+function isConstantExpr(expr) {
+  const symbols = new Set();
+  collectSymbols(expr, symbols);
+  return symbols.size === 0;
 }
 
 /**
@@ -1586,36 +1663,27 @@ const FORM_PREDICATES = {
   // the same shape in the other variable, and a predicate that took one and
   // refused the other would be an asymmetry no exercise chose.
   'vertex-form': (latex) => {
-    const bare = bareLatex(latex);
-    // The label is written, not parsed: `f(x)=…` boxes as an equation on a
-    // function application, which no equation unwrap in the grader reads.
-    const label = bare.match(/^[a-zA-Z]\s*(?:\(\s*[a-zA-Z]\s*\))?\s*=/);
     let expr;
     try {
-      expr = parseLatex(preprocess(label ? bare.slice(label[0].length) : bare));
+      expr = parseLatex(preprocess(stripWrittenLabel(bareLatex(latex))));
     } catch {
       return false;
     }
     if (!expr.isValid) return false;
-    const isConstant = (e) => {
-      const symbols = new Set();
-      collectSymbols(e, symbols);
-      return symbols.size === 0;
-    };
     const isSquaredBinomialTerm = (e) => {
       if (e.operator === 'Negate') return isSquaredBinomialTerm(e.ops[0]);
       if (e.operator === 'Multiply') {
-        const compound = e.ops.filter((op) => !isConstant(op));
+        const compound = e.ops.filter((op) => !isConstantExpr(op));
         return compound.length === 1 && isSquaredBinomialTerm(compound[0]);
       }
       return e.operator === 'Power'
-        && e.ops[0].operator === 'Add' && !isConstant(e.ops[0])
+        && e.ops[0].operator === 'Add' && !isConstantExpr(e.ops[0])
         && e.ops[1].isNumberLiteral && e.ops[1].re === 2;
     };
     const terms = expr.operator === 'Add' ? expr.ops : [expr];
     return terms.length <= 2
       && terms.filter(isSquaredBinomialTerm).length === 1
-      && terms.every((term) => isSquaredBinomialTerm(term) || isConstant(term));
+      && terms.every((term) => isSquaredBinomialTerm(term) || isConstantExpr(term));
   },
   // The conic half of the same class: "Write $25x^2+9y^2-100x-54y-44=0$ in
   // standard form" answers $\tfrac{(x-2)^2}{9}+\tfrac{(y-3)^2}{25}=1$, again
@@ -1683,17 +1751,12 @@ const FORM_PREDICATES = {
       return expr.isValid ? expr : null;
     });
     if (parsed.some((expr) => expr === null)) return false;
-    const isConstant = (e) => {
-      const symbols = new Set();
-      collectSymbols(e, symbols);
-      return symbols.size === 0;
-    };
     // The bare variable, or variable ± constant with coefficient 1 — the
     // $y-y_1$ side, and equally the binomial inside the slope side's parens.
     const shiftedVariable = (e) => {
       if (e.symbol) return e.symbol;
       if (e.operator !== 'Add' || e.ops.length !== 2) return null;
-      const compound = e.ops.filter((op) => !isConstant(op));
+      const compound = e.ops.filter((op) => !isConstantExpr(op));
       return compound.length === 1 && compound[0].symbol ? compound[0].symbol : null;
     };
     // One $m(x-x_1)$ term: sign and constant factors peeled off a shifted
@@ -1701,11 +1764,11 @@ const FORM_PREDICATES = {
     const slopeProduct = (e) => {
       if (e.operator === 'Negate') return slopeProduct(e.ops[0]);
       if (e.operator === 'Multiply') {
-        const compound = e.ops.filter((op) => !isConstant(op));
+        const compound = e.ops.filter((op) => !isConstantExpr(op));
         return compound.length === 1 ? slopeProduct(compound[0]) : null;
       }
       if (e.operator === 'Divide') {
-        return isConstant(e.ops[1]) ? slopeProduct(e.ops[0]) : null;
+        return isConstantExpr(e.ops[1]) ? slopeProduct(e.ops[0]) : null;
       }
       return shiftedVariable(e);
     };
@@ -1727,9 +1790,7 @@ const FORM_PREDICATES = {
   // distribute, no variable under a shared fraction bar — plus at most a
   // constant. A leftover non-label `=` (a point-slope response) fails.
   'slope-intercept-form': (latex) => {
-    let bare = bareLatex(latex);
-    const label = bare.match(/^[a-zA-Z]\s*(?:\(\s*[a-zA-Z]\s*\))?\s*=/);
-    if (label) bare = bare.slice(label[0].length);
+    const bare = stripWrittenLabel(bareLatex(latex));
     if (bare.includes('=')) return false;
     let expr;
     try {
@@ -1738,27 +1799,22 @@ const FORM_PREDICATES = {
       return false;
     }
     if (!expr.isValid) return false;
-    const isConstant = (e) => {
-      const symbols = new Set();
-      collectSymbols(e, symbols);
-      return symbols.size === 0;
-    };
     const isLinearMonomial = (e) => {
       if (e.symbol) return true;
       if (e.operator === 'Negate') return isLinearMonomial(e.ops[0]);
       if (e.operator === 'Multiply') {
-        const compound = e.ops.filter((op) => !isConstant(op));
+        const compound = e.ops.filter((op) => !isConstantExpr(op));
         return compound.length === 1 && Boolean(compound[0].symbol);
       }
       if (e.operator === 'Divide') {
-        return isConstant(e.ops[1]) && isLinearMonomial(e.ops[0]);
+        return isConstantExpr(e.ops[1]) && isLinearMonomial(e.ops[0]);
       }
       return false;
     };
     const terms = expr.operator === 'Add' ? expr.ops : [expr];
     return terms.length <= 2
       && terms.filter((term) => isLinearMonomial(term)).length <= 1
-      && terms.every((term) => isLinearMonomial(term) || isConstant(term));
+      && terms.every((term) => isLinearMonomial(term) || isConstantExpr(term));
   },
   // "Convert the equation from logarithmic to exponential form: $3=\log_7
   // 343$" answers $343=7^3$ — two true statements the engine grades equal, so
@@ -1869,6 +1925,82 @@ export function checkForm(studentRaw, spec) {
   });
 }
 
+/**
+ * Read a response written in function notation. `f(x)` cannot be unwrapped
+ * from the parse: it boxes as `Multiply(f, x)` (or as an unknown function
+ * application for a capital name), so a learner answering a prompt phrased
+ * in function notation ("If $f(x)$ is a linear function…") with `f(x)=-7x+3`
+ * was graded incorrect against the authored `y=-7x+3`. The application is
+ * read off the writing — one letter applied to one letter at the start,
+ * MathLive's smart fences (`f\left(x\right)`) included — two ways:
+ *
+ * - A LABEL, `f(x)=RHS` with no further `=`: stripped, so the value that
+ *   follows is graded; asVariableEquation() then unwraps a `y=`-labelled
+ *   string on the other side as it always has. Only when no further `=`
+ *   remains, so a genuine equation response is never half-eaten.
+ * - An OUTPUT QUANTITY inside an equation — `f(x)-4=-\tfrac12(x+1)`, the
+ *   point-slope shape a function-notation prompt invites: read as `y`, the
+ *   variable those answers are authored in. Only when the REMAINDER of the
+ *   response writes no standalone `y` and the argument is not `y` itself, so
+ *   the reading can never collide with a meaning the response already gave
+ *   `y` — the application being replaced does not count against itself, or a
+ *   learner naming their function `y` (`y(t)-4=…`) would be refused the very
+ *   rewrite that reads their notation.
+ *
+ * Applied to the student and the authored answer alike, so grading an answer
+ * against its own text stays reflexive — the invariant self-grading
+ * (tools/verify-section.mjs) relies on.
+ */
+const FUNCTION_APPLICATION_RE = /^[a-zA-Z]\s*(?:\\left\s*)?\(\s*([a-zA-Z])\s*(?:\\right\s*)?\)\s*/;
+
+function readFunctionNotation(latex) {
+  const application = latex.match(FUNCTION_APPLICATION_RE);
+  if (!application) return latex;
+  const rest = latex.slice(application[0].length);
+  if (/^=(?![=<>])/.test(rest) && !rest.slice(1).includes('=')) {
+    return rest.slice(1).trim();
+  }
+  if (rest.includes('=') && application[1] !== 'y'
+    && !/(?<![a-zA-Z\\])y(?![a-zA-Z])/.test(rest)) {
+    return `y${rest}`;
+  }
+  return latex;
+}
+
+/**
+ * The equation reading of a LABELLED response, for the form check only.
+ * `f(x)=5(x-3)` is the label reading `5(x-3)` for value grading — but as
+ * writing it is also the collapsed-origin point-slope equation `y=5(x-3)`,
+ * and an equation-shaped form predicate must be shown the equation, or a
+ * correct value written in the very shape the ask names reports 'form'.
+ * null when the response is not a labelled equation, or already gives `y` a
+ * meaning of its own (as the argument or in the value).
+ */
+function functionLabelEquation(latex) {
+  const application = latex.match(FUNCTION_APPLICATION_RE);
+  if (!application) return null;
+  const rest = latex.slice(application[0].length);
+  if (!/^=(?![=<>])/.test(rest) || rest.slice(1).includes('=')) return null;
+  if (application[1] === 'y' || /(?<![a-zA-Z\\])y(?![a-zA-Z])/.test(rest)) return null;
+  return `y${rest}`;
+}
+
+/**
+ * The form check exactly as checkAnswer() applies it: on the
+ * function-notation-normalized writing, with the labelled-equation reading
+ * accepted too. Exported so the content lint's cheap shape pre-filter can
+ * never disagree with the grader about the same text.
+ */
+function formAcceptedAsWritten(preprocessed, spec) {
+  if (checkForm(readFunctionNotation(preprocessed), spec)) return true;
+  const equation = functionLabelEquation(preprocessed);
+  return equation !== null && checkForm(equation, spec);
+}
+
+export function checkFormAsGraded(raw, spec) {
+  return formAcceptedAsWritten(preprocess(raw ?? ''), spec);
+}
+
 export function checkAnswer(studentRaw, answerRaw, options = {}) {
   let student = preprocess(studentRaw);
   if (!student) return 'empty';
@@ -1883,20 +2015,9 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
   const asList = checkOrderedList(studentRaw, answerRaw);
   if (asList !== null) return asList;
 
-  // A response labelled `f(x)=…` cannot be unwrapped from the parse: `f(x)`
-  // boxes as `Multiply(f, x)` (or as an unknown function application for a
-  // capital name), so a learner answering a prompt phrased in function
-  // notation ("If $f(x)$ is a linear function…") with `f(x)=-7x+3` was graded
-  // incorrect against the authored `y=-7x+3`. Strip the written label — one
-  // letter applied to one letter, nothing else — and grade the value that
-  // follows; asVariableEquation() then unwraps a `y=`-labelled answer on the
-  // other side as it always has. Only when no further `=` remains, so a
-  // genuine equation response is never half-eaten.
-  const functionLabel = student.match(/^[a-zA-Z]\s*\(\s*[a-zA-Z]\s*\)\s*=(?![=<>])/);
-  if (functionLabel && !student.slice(functionLabel[0].length).includes('=')) {
-    student = student.slice(functionLabel[0].length).trim();
-    if (!student) return 'invalid';
-  }
+  const written = student;
+  student = readFunctionNotation(student);
+  if (!student) return 'invalid';
 
   let studentExpr;
   try {
@@ -1908,7 +2029,7 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
 
   let answerExpr;
   try {
-    answerExpr = parseLatex(preprocess(answerRaw));
+    answerExpr = parseLatex(readFunctionNotation(preprocess(answerRaw)));
   } catch {
     return 'incorrect';
   }
@@ -1920,7 +2041,10 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
 
   if (!equivalentAllowingVariableEquation(studentExpr, answerExpr)) return 'incorrect';
   // Right value, wrong shape: report the form so the feedback names what to
-  // change. Checked last so a learner whose value is wrong is never told to
-  // reduce a fraction that was not the answer anyway.
-  return checkForm(studentRaw, options.form) ? 'correct' : 'form';
+  // change. The form reads the same function-notation-normalized writing the
+  // value was graded on — a label the value check ignored must not be the
+  // shape the form check rejects, and a labelled equation keeps its equation
+  // reading (formAcceptedAsWritten). Checked last so a learner whose value
+  // is wrong is never told to reduce a fraction that was not the answer.
+  return formAcceptedAsWritten(written, options.form) ? 'correct' : 'form';
 }

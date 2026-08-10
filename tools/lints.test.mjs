@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { lintHugo } from './lints.mjs';
-import { checkAnswer } from '../assets/js/lib/check-answer.mjs';
+import { lintHugo, NAMED_FORM_ASKS } from './lints.mjs';
+import { checkAnswer, parseAnswerForm } from '../assets/js/lib/check-answer.mjs';
 
 const imageCases = [
   '![plot](/images/plot.webp)',
@@ -144,25 +144,25 @@ test('React/JSX syntax inside inline SVG is rejected', () => {
 
 test('an empty worked Solution block is reported', () => {
   assert(
-    lintHugo('**Solution.**\n\n{{< fillin question="Practice" answer="1" hint="Think." >}}', 'content/math/book/01-chapter/01-section.md').warnings
+    lintHugo('**Solution.**\n\n{{< fillin question="Practice" answer="1" hint="Think." >}}', 'content/math/book/01-chapter/01-section.md').errors
       .some((error) => error.includes('empty Solution')),
     'expected empty worked-solution lint',
   );
   assert.equal(
-    lintHugo('**Solution.**\n\nWorked steps follow here.', 'content/math/book/01-chapter/01-section.md').warnings
-      .some((warning) => warning.includes('empty Solution')),
+    lintHugo('**Solution.**\n\nWorked steps follow here.', 'content/math/book/01-chapter/01-section.md').errors
+      .some((error) => error.includes('empty Solution')),
     false,
     'worked solution prose after a blank line must not be mistaken for an empty block',
   );
   assert(
-    lintHugo('**Solution.**\n\n## Next topic', 'content/math/book/01-chapter/01-section.md').warnings
-      .some((warning) => warning.includes('empty Solution')),
+    lintHugo('**Solution.**\n\n## Next topic', 'content/math/book/01-chapter/01-section.md').errors
+      .some((error) => error.includes('empty Solution')),
     'a Solution block that ends at the next heading is empty',
   );
 });
 test('regular-section exercises require hints and knowledge checks do not', () => {
   assert(
-    lintHugo('{{< fillin question="Practice" answer="1" >}}', 'content/math/book/01-chapter/01-section.md').warnings
+    lintHugo('{{< fillin question="Practice" answer="1" >}}', 'content/math/book/01-chapter/01-section.md').errors
       .some((error) => error.includes('missing a hint')),
     'regular-section exercises require hints',
   );
@@ -329,6 +329,22 @@ test('an answerForm silences the rule only when it rules the printed value out',
 // "Write the point-slope form…" prints nothing to retype — the hazard is the
 // learner's own correct value in the wrong shape (distributed, scaled, or a
 // different named form), which value grading accepts.
+
+// Every token the table demands must name a grader predicate — a typo here
+// would make its ask unsatisfiable, erroring on every exercise that declares
+// the intended token. (The table is deliberately NOT one entry per grader
+// token: most tokens guard print-and-retype hazards the
+// passable-by-retyping rule already covers, and belong here only once a
+// prompt phrasing NAMES their form while printing nothing to retype.)
+test('NAMED_FORM_ASKS demands only tokens the grader defines', () => {
+  for (const { name, tokens } of NAMED_FORM_ASKS) {
+    assert.ok(tokens.length > 0, `${name}: an ask must demand at least one token`);
+    for (const token of tokens) {
+      assert.ok(parseAnswerForm(token).valid, `${name}: "${token}" names no grader predicate`);
+    }
+  }
+});
+
 test('a prompt asking for a named form requires its answerForm token', () => {
   const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
   const named = (error) => error.includes('the question asks for');
@@ -344,6 +360,8 @@ test('a prompt asking for a named form requires its answerForm token', () => {
     ['Find the LCD for $\\tfrac{2}{x^2-x-12}$ and $\\tfrac{1}{x^2-16}$. Leave your answer in factored form.', '(x-4)(x+4)(x+3)', 'factored-form ask'],
     ['Add and give the sum as a mixed number: $2\\tfrac{5}{6}+1\\tfrac{5}{6}$', '4\\frac{2}{3}', 'mixed-number ask'],
     ['Write $x \\cdot x \\cdot x$ in exponential form.', 'x^3', 'exponential-form ask'],
+    ['Convert $y-2=-2(x+2)$ to slope-intercept form.', 'y=-2x-2', 'convert…to slope-intercept ask'],
+    ['Take the equation $y=-2x-2$ to point-slope form using the point $(-2,2)$.', 'y-2=-2(x+2)', 'equation…to point-slope ask'],
   ]) {
     assert(lint(fillin(question, answer)).some(named), reason);
   }
@@ -377,6 +395,7 @@ test('a simplest-form ask on a numeral fraction requires lowest-terms', () => {
   const fillin = (answer, form = '') =>
     `{{< fillin question="What fraction of the circle is shaded? Write your answer in simplified form." answer="${answer}"${form ? ` answerForm="${form}"` : ''} hint="Reduce." >}}`;
   assert(lint(fillin('\\frac{3}{4}')).some(simplest), 'a numeral fraction with no lowest-terms fires');
+  assert(lint(fillin('\\frac34')).some(simplest), 'the unbraced single-digit \\frac34 is the same fraction');
   assert(lint(fillin('4\\frac{2}{3}')).some(simplest), 'a mixed number with no lowest-terms fires');
   assert.equal(lint(fillin('\\frac{3}{4}', 'lowest-terms')).filter(simplest).length, 0, 'lowest-terms satisfies');
   assert.equal(lint(fillin('\\frac{x}{4}')).filter(simplest).length, 0, 'a variable fraction is reduced-fraction territory, not this rule');
@@ -734,6 +753,13 @@ test('a composition ask with page-context definitions is trivially satisfiable',
     assert.equal(checkAnswer(answer, answer, { form }), 'correct',
       `answerForm=${JSON.stringify(form)} still accepts the exercise's own answer`);
   }
+
+  // Names and variables other than f/g of x reach the rule too, exactly as
+  // verify-answers.mjs reads any single-letter definition.
+  assert(
+    lint(fillin('Given $p(t)=6t+1$ and $q(t)=8t-3$, find $(p\\circ q)(t)$.', '48t-17')).some(restated),
+    'a p/q composition in t builds the substituted-but-unsimplified candidate',
+  );
 
   // `(fg)(x)` juxtaposition is the product ask, with in-question definitions.
   assert(
@@ -1101,12 +1127,6 @@ test('the section-final Practice block is enforced', () => {
     0,
     `a grouped Practice block after Key terms is valid (cap exemption included): ${good.errors.join('; ')}`,
   );
-  assert.equal(
-    good.warnings.filter((w) => w.includes('`## Practice`')).length,
-    0,
-    'a section with a Practice block must not be flagged',
-  );
-
   // Frontmatter is what makes a fixture a whole PAGE rather than an authoring
   // fragment, and only a whole page can be missing its Practice block.
   const FRONTMATTER = '---\ntitle: A Section\nweight: 1\n---\n';
@@ -1114,11 +1134,6 @@ test('the section-final Practice block is enforced', () => {
   assert(
     missing.errors.some((e) => e.includes('no `## Practice` block')),
     'a section without a Practice block is an error — the retrofit finished August 9, 2026',
-  );
-  assert.equal(
-    missing.warnings.filter((w) => w.includes('`## Practice`')).length,
-    0,
-    'the missing-block rule is an error only; it must not also warn',
   );
   assert(
     missing.errors.some((e) => e.includes('at least 5 in total')),
@@ -1269,14 +1284,14 @@ test('the section-final Practice block is enforced', () => {
   );
 
   assert.equal(
-    lintHugo('## Whatever\n\nProse.', 'content/test.md').warnings
-      .filter((w) => w.includes('Practice')).length,
+    lintHugo('## Whatever\n\nProse.', 'content/test.md').errors
+      .filter((e) => e.includes('Practice')).length,
     0,
     'non-section pages are outside the Practice-block rule',
   );
   assert.equal(
-    lintHugo('## Whatever\n\nProse.', 'content/math/book/knowledge-check-01-06.md').warnings
-      .filter((w) => w.includes('Practice')).length,
+    lintHugo('## Whatever\n\nProse.', 'content/math/book/knowledge-check-01-06.md').errors
+      .filter((e) => e.includes('Practice')).length,
     0,
     'knowledge checks are outside the Practice-block rule',
   );

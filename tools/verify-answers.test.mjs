@@ -171,6 +171,8 @@ assert.equal(
 assert.equal(analyze('Find the average rate of change of $f(x)=x-2\\sqrt{x}$ on the interval $[1,9]$.', '\\frac{1}{2}').status, 'pass');
 assert.equal(analyze('Find the average rate of change of $f(x)=x-2\\sqrt{x}$ on the interval $[1,9]$.', '\\frac{1}{3}').status, 'fail');
 assert.equal(analyze('Find and simplify the average rate of change of $f(x)=2x^2+1$ on the interval $[x, x+h]$.', '4x+2h').status, 'pass');
+// smart fences around the interval must not silently disable the check
+assert.equal(analyze('Find the average rate of change of $f(x)=x-2\\sqrt{x}$ on the interval $\\left[1,9\\right]$.', '\\frac{1}{3}').status, 'fail');
 // "find the number b such that the rate is …" reverses the ask — not this class
 assert.equal(
   analyze('Let $f(x)=\\tfrac{1}{x}$. Find the number $b$ such that the average rate of change of $f$ on the interval $(2,b)$ is $-\\tfrac{1}{10}$.', '5').status,
@@ -181,6 +183,8 @@ assert.equal(
 
 assert.equal(analyze('Given $f(x)=x-1$ and $g(x)=x^2-1$, find and simplify $(fg)(x)$.', 'x^3-x^2-x+1').status, 'pass');
 assert.equal(analyze('Given $f(x)=x-1$ and $g(x)=x^2-1$, find and simplify $(fg)(x)$.', 'x^3-x^2-x-1').status, 'fail');
+// the product ask written with its operator — $(f\cdot g)(x)$ — is the same ask
+assert.equal(analyze('Given $f(x)=x-1$ and $g(x)=x^2-1$, find and simplify $(f\\cdot g)(x)$.', 'x^3-x^2-x-1').status, 'fail');
 assert.equal(analyze('Given the same $f$ and $g$, find and simplify $(f-g)(x)$.', 'x-x^2').status, 'skip'); // definitions live in the previous exercise
 assert.equal(analyze('Given $f(x)=2x^2+1$ and $g(x)=3x+5$, find and simplify $f(g(x))$.', '18x^2+60x+51').status, 'pass');
 assert.equal(analyze('Given $f(x)=3x^2$ and $g(x)=\\sqrt{x-5}$, find $\\left(\\tfrac{f}{g}\\right)(x)$.', '\\frac{3x^2}{\\sqrt{x-5}}').status, 'pass');
@@ -240,6 +244,16 @@ assert.equal(
   analyze('A line passes through the points $(-2,-15)$ and $(2,-3)$. Find the equation of a perpendicular line that passes through the point $(6,4)$. Enter the expression that $y$ equals.', '-\\frac{1}{3}x+6').status,
   'pass',
 );
+// …and the same exercise printed with MathLive's smart fences still verifies
+assert.equal(
+  analyze('A line passes through the points $\\left(-2,-15\\right)$ and $\\left(2,-3\\right)$. Find the equation of a perpendicular line that passes through the point $\\left(6,4\\right)$. Enter the expression that $y$ equals.', '-\\frac{1}{3}x+6').status,
+  'pass',
+);
+// two different printed m= spans make the requirement ambiguous — skip, never
+// let the last span overwrite the relevant one and fail a sound answer
+assert.equal(analyze('The line $q$ has slope $m=5$. A second line has slope $m=-2$ and passes through the point $(-2,2)$. Write the point-slope form of an equation of the second line.', 'y-2=-2(x+2)').status, 'skip');
+// two m= spans printing the SAME slope stay verifiable
+assert.equal(analyze('Both lines have slope $m=-2$. One passes through the point $(-2,2)$; write its equation in point-slope form.', 'y-2=-2(x+2)').status, 'pass');
 // vertical line through points sharing an x
 assert.equal(analyze('Find the equation of a line containing the points $(5,1)$ and $(5,-4)$.', 'x=5').status, 'pass');
 assert.equal(analyze('Find the equation of a line containing the points $(5,1)$ and $(6,-4)$.', 'x=5').status, 'fail');
@@ -264,6 +278,11 @@ assert.equal(
 assert.equal(
   analyze('Write the standard form of the equation of the circle with center $(2,1)$ that also contains the point $(-2,-2)$.', '(x+2)^2+(y-1)^2=25').status,
   'fail',
+);
+// a center printed with MathLive's smart fences still classifies the exercise
+assert.equal(
+  analyze('Write the standard form of the equation of the circle with center $\\left(2,1\\right)$ that also contains the point $\\left(-2,-2\\right)$.', '(x-2)^2+(y-1)^2=25').status,
+  'pass',
 );
 
 /* ---- extraction: line numbers survive code-fence blanking */
