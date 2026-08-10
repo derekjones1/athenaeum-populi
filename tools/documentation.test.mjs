@@ -205,12 +205,15 @@ test('the fillin shortcode accepts exactly the exported answerForm tokens', () =
   assert.ok(sliceLine, 'layouts/shortcodes/fillin.html must define $formTokens with a literal slice');
   const templateTokens = new Set([...sliceLine[1].matchAll(/"([^"]+)"/g)].map((m) => m[1]));
 
-  // `denominator:<n>` is the one token the template cannot list literally: it
-  // is a family, matched by `findRE ^denominator:\d+$` a few lines below.
+  // The parameterized families are the tokens the template cannot list
+  // literally: each is matched by its own `findRE` a few lines below.
   const exported = new Set(ANSWER_FORM_TOKENS);
   assert.ok(exported.delete('denominator:<n>'), 'ANSWER_FORM_TOKENS still exports the denominator family');
   assert.match(fillinShortcode, /findRE `\^denominator:\\d\+\$`/,
     'the shortcode still matches the denominator:<n> family with findRE');
+  assert.ok(exported.delete('solved:<variable>'), 'ANSWER_FORM_TOKENS still exports the solved family');
+  assert.match(fillinShortcode, /findRE `\^solved:\[a-zA-Z\]\$`/,
+    'the shortcode still matches the solved:<variable> family with findRE');
 
   assert.deepEqual(
     [...templateTokens].sort(),

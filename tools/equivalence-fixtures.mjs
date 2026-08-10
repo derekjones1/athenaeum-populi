@@ -167,6 +167,12 @@ export const EQUIVALENCE_FIXTURES = Object.freeze([
   { a: 'x=-\\frac{3}{2}', b: '-\\frac{3}{2}', equivalent: true, expectNull: true, note: 'solve-for-x form accepted against a bare value' },
   { a: 'n=12', b: '12', equivalent: true, expectNull: true, note: 'the same, with a different variable' },
   { a: 'y=5', b: 'x=5', equivalent: false, expectNull: true, note: 'two equations: the variable has to match' },
+  { a: 'y-2=3(x-4)', b: 'y=3x-10', equivalent: true, expectNull: true, note: 'a point-slope statement of a slope-intercept key — the eq-vs-eq path the bare-variable unwrap used to bypass' },
+  { a: '2y=6x-20', b: 'y=3x-10', equivalent: true, expectNull: true, note: 'the same line, scaled: proportional moved-to-one-side forms' },
+  { a: '3x-y=10', b: 'y=3x-10', equivalent: true, expectNull: true, note: 'and rearranged to general form' },
+  { a: 'y=3x+1', b: 'y=3x-10', equivalent: false, expectNull: true, note: 'a parallel line differs only in the constant — one proportionality sample must catch it' },
+  { a: 'x-4=0', b: 'x=4', equivalent: true, expectNull: true, note: 'a vertical line restated; a constant-value key still compares as an equation' },
+  { a: 'x(x-2.47)(x-0.61)(x-7.83)(x-1.19)(x-4.52)(x-0.23)(x-9.41)=0', b: '(x-2.47)(x-0.61)(x-7.83)(x-1.19)(x-4.52)(x-0.23)(x-9.41)=0', equivalent: false, expectNull: true, note: 'sides vanish together at nearly every sample point, leaving proportionality nothing to check — fewer than two informative samples must fail safe, not pass vacuously' },
   { a: 'x<3', b: 'x<3', equivalent: true, expectNull: true, note: 'an inequality has no value to sample' },
   { a: '3x<9', b: 'x<3', equivalent: false, expectNull: true, note: 'and an unsolved inequality is not the solved one to the runtime grader' },
 ]);

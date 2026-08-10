@@ -415,6 +415,11 @@ test('an interval-notation ask rejects a non-interval authored answer', () => {
   assert.equal(lint(fillin('(10,\\infty)')).filter(interval).length, 0, 'an interval satisfies the ask');
   assert.equal(lint(fillin('[0.5,\\infty)')).filter(interval).length, 0, 'a closed interval satisfies the ask');
   assert.equal(lint(fillin('(-\\infty,3)\\cup(5,\\infty)')).filter(interval).length, 0, 'a union of intervals satisfies the ask');
+  // A truncated union splits into an empty half — dropping empty parts would
+  // leave the surviving interval to satisfy `.every()` and pass the typo.
+  assert(lint(fillin('(-\\infty,3)\\cup')).some(interval), 'a trailing \\cup with no second interval fires');
+  assert(lint(fillin('\\cup(5,\\infty)')).some(interval), 'a leading \\cup with no first interval fires');
+  assert(lint(fillin('\\cup')).some(interval), 'a bare \\cup fires');
 });
 
 // ---- a factoring prompt is trivially satisfiable without answerForm --------
@@ -725,6 +730,35 @@ test('a standard-form prompt is trivially satisfiable without answerForm', () =>
   }
 });
 
+// ---- an equation answer makes printed equations retype hazards -------------
+// Equation-equivalence grading accepts every restatement whose
+// moved-to-one-side form is proportional, so "Solve $7x+y=11$ for $y$"
+// authored `y=11-7x` is passable by retyping the printed formula until
+// `solved:y` rules the unrearranged shape out.
+test('a solve-for-a-variable prompt is passable by retyping without answerForm', () => {
+  const trivial = (error) => error.includes('printed in the question');
+  const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
+  const fillin = (question, answer, form = '') =>
+    `{{< fillin question="${question}" answer="${answer}"${form ? ` answerForm="${form}"` : ''} hint="Isolate the variable." >}}`;
+  assert(
+    lint(fillin('Solve the formula $7x + y = 11$ for $y$.', 'y=11-7x')).some(trivial),
+    'the printed formula grades equal to the equation-shaped key',
+  );
+  assert.equal(
+    lint(fillin('Solve the formula $7x + y = 11$ for $y$.', 'y=11-7x', 'solved:y')).filter(trivial).length,
+    0,
+    'solved:y rules the unrearranged formula out',
+  );
+  assert.equal(checkAnswer('y=11-7x', 'y=11-7x', { form: 'solved:y' }), 'correct',
+    'solved:y still accepts the exercise\'s own answer');
+  assert.equal(
+    lint(fillin('Find an equation of a line parallel to $y=4x+2$ that contains the point $(1,2)$.', 'y = 4x - 2'))
+      .filter(trivial).length,
+    0,
+    'a printed line that is a DIFFERENT line from the key is no hazard',
+  );
+});
+
 // ---- composition and page-context combinations ------------------------------
 // `(f\circ g)(x)` is passable as the outer definition with the inner one
 // substituted but not simplified, and the definitions may be printed in page
@@ -771,6 +805,15 @@ test('a composition ask with page-context definitions is trivially satisfiable',
       .filter(restated).length,
     0,
     'answerForm="expanded" rules the unmultiplied product out',
+  );
+
+  // A definition wrapped across a source line is still a definition — the
+  // math spans deliberately allow newlines, and FUNCTION_DEF_RE must read
+  // them exactly as verify-answers.mjs's DEFINITION_RE does, or the hazard
+  // check silently skips the exercise.
+  assert(
+    lint(fillin('Given $f(x)=x^2\n-1$ and $g(x)=x-1$, find and simplify $(fg)(x)$.', 'x^3-x^2-x+1')).some(restated),
+    'a newline inside a printed definition does not hide the combination hazard',
   );
 
   // A composition evaluated at a number is answered by a number no

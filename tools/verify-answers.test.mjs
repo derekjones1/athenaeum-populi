@@ -287,6 +287,32 @@ assert.equal(
 
 /* ---- extraction: line numbers survive code-fence blanking */
 
+/* ---- fenced definitions, labelled answers, radius+center, rewrites ------- */
+
+// MathLive smart fences in the printed definition and an `f(6) = 4` label on
+// the authored answer both read away (the 08-roots-and-radicals class); a
+// corrupted key must FAIL, not slip back to a skip.
+assert.equal(analyze('For the function $f \\left(x\\right) = \\sqrt{3 x - 2},$ find $f \\left(6\\right)$', 'f \\left(6\\right) = 4').status, 'pass');
+assert.equal(analyze('For the function $f \\left(x\\right) = \\sqrt{3 x - 2},$ find $f \\left(6\\right)$', 'f \\left(6\\right) = 5').status, 'fail');
+
+// a fenced inverse ask still classifies
+assert.equal(analyze('For $f \\left(x\\right) = 2x-3$, find $f^{-1}\\left(x\\right)$.', '\\frac{x+3}{2}').status, 'pass');
+assert.equal(analyze('For $f \\left(x\\right) = 2x-3$, find $f^{-1}\\left(x\\right)$.', '\\frac{x-3}{2}').status, 'fail');
+
+// the radius-and-center phrasing of the circle ask verifies like the
+// contains-point phrasing — r² corrupted to r is the classic slip
+assert.equal(analyze('Write the standard form of the equation of the circle with radius $7$ and center $(2,-4)$.', '(x-2)^2+(y+4)^2=49').status, 'pass');
+assert.equal(analyze('Write the standard form of the equation of the circle with radius $7$ and center $(2,-4)$.', '(x-2)^2+(y+4)^2=7').status, 'fail');
+assert.equal(analyze('Write the standard form of the equation of the circle with radius $\\sqrt{2}$ and center $(0,0)$.', 'x^2+y^2=2').status, 'pass');
+
+// completing-the-square rewrites value-check against the printed subject;
+// the template span ($f(x)=a(x-h)^2+k$) is not a second subject
+assert.equal(analyze('Write $y=2x^2+4x+5$ in standard form.', 'y=2(x+1)^2+3').status, 'pass');
+assert.equal(analyze('Write $y=2x^2+4x+5$ in standard form.', '2(x+1)^2+3').status, 'pass');
+assert.equal(analyze('Write $y=2x^2+4x+5$ in standard form.', 'y=2(x-1)^2+3').status, 'fail');
+assert.equal(analyze('Rewrite $f(x)=2x^2-8x+3$ in the $f(x)=a(x-h)^2+k$ form by completing the square.', 'f(x)=2(x-2)^2-5').status, 'pass');
+assert.equal(analyze('Rewrite $f(x)=2x^2-8x+3$ in the $f(x)=a(x-h)^2+k$ form by completing the square.', 'f(x)=2(x+2)^2-5').status, 'fail');
+
 const doc = [
   '# Section',
   '',

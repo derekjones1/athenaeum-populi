@@ -451,7 +451,7 @@ const asOperand = (tex) => {
 // and a hardcoded pair would silently drop those exercises from the rule.
 // Every ask is gated on a printed definition existing for each captured name,
 // so the wider classes cannot conscript prose coincidences.
-const FUNCTION_DEF_RE = /^\s*([a-zA-Z])\s*\(\s*([a-zA-Z])\s*\)\s*=\s*(.+?)\s*$/;
+const FUNCTION_DEF_RE = /^\s*([a-zA-Z])\s*\(\s*([a-zA-Z])\s*\)\s*=\s*([\s\S]+?)\s*$/;
 // The operator may be absent: `(fg)(x)` is the product ask written by
 // juxtaposition, exactly as the precalculus sections print it.
 const FUNCTION_SUM_ASK_RE = /\(\s*([a-zA-Z])\s*(\+|-|\\cdot|·)?\s*([a-zA-Z])\s*\)\s*\(\s*[a-zA-Z]\s*\)/;
@@ -1223,10 +1223,12 @@ export function lintHugo(src, filename = '') {
     // types `(10,\infty)` incorrect. Self-grading cannot catch it: the
     // authored inequality is only ever compared against itself.
     if (/\binterval notation\b/i.test(q) && (params.answer || '').trim()) {
+      // No filter(Boolean): an empty part IS the defect — a truncated union
+      // (`(-\infty,3)\cup`) or a bare `\cup` splits into empty halves, and
+      // dropping them would leave `.every()` to pass the surviving half.
       const intervalParts = splitTopLevelCommas(params.answer)
         .flatMap((part) => part.split(/\\cup/))
-        .map((part) => part.trim())
-        .filter(Boolean);
+        .map((part) => part.trim());
       if (!intervalParts.every((part) => /^(?:\\left\s*)?[[(]/.test(part))) {
         err(index, `${where}: the question asks for interval notation, but the answer ${JSON.stringify(params.answer)} is not written as an interval — a learner who answers in interval notation as instructed is graded incorrect; author the answer as the interval`);
       }
@@ -1260,6 +1262,12 @@ export function lintHugo(src, filename = '') {
         ...(ALGEBRAIC_SIMPLIFY_PROMPT_RE.test(q) ? printedPolynomialSubjects(q) : []),
         ...(STANDARD_FORM_PROMPT_RE.test(q) || EXPONENTIAL_FORM_PROMPT_RE.test(q)
           ? printedEquationSubjects(q) : []),
+        // An equation-shaped ANSWER states a condition, and equation
+        // equivalence accepts every restatement whose moved-to-one-side form
+        // is proportional — so with such an answer, every printed equation is
+        // a retype hazard whatever the ask: "Solve $7x+y=11$ for $y$" prints
+        // the very equation its key restates.
+        ...((params.answer || '').includes('=') ? printedEquationSubjects(q) : []),
         ...(LOG_EXPANSION_PROMPT_RE.test(q) ? printedPolynomialSubjects(q) : []),
         ...composed,
       ]

@@ -420,6 +420,13 @@ function checkReexpression(question, answer, answerMode) {
 // `name(var) = RHS`, read from the written span.
 const DEFINITION_RE = /^([a-zA-Z])\s*\(\s*([a-zA-Z])\s*\)\s*=\s*([\s\S]+)$/;
 
+// MathLive smart fences appear in authored spans too (`f \left(x\right) =
+// \sqrt{3x-2}`), and every written-shape reader must strip them or a fenced
+// span silently fails its gate and drops the exercise from verification —
+// exactly how 31 fill-ins went unread. Numeric-pair readers already strip;
+// this is the same strip for the definition/application/inverse readers.
+const unfenced = (raw) => raw.replace(/\\left|\\right/g, '');
+
 /**
  * The function definitions a question prints. `f(x)=8-3x` defines f;
  * `f(x)=-1` beside it is that ask's TARGET, not a definition, so a constant
@@ -430,10 +437,13 @@ function printedDefinitions(question) {
   const defs = new Map();
   const ambiguous = new Set();
   for (const raw of questionSpans(question)) {
-    const m = raw.trim().match(DEFINITION_RE);
+    const m = unfenced(raw).trim().match(DEFINITION_RE);
     if (!m) continue;
     const [, name, variable, rhsRaw] = m;
-    const rhs = parseMath(rhsRaw);
+    // Sentence punctuation may sit inside the span ("…$f(x) = \sqrt{3x-2},$
+    // find…") — a trailing comma parses the RHS as a sequence, which nulls
+    // every numeric comparison downstream.
+    const rhs = parseMath(rhsRaw.replace(/[\s.,;]+$/, ''));
     if (!rhs || !freeVariables(rhs).has(variable)) continue;
     if (defs.has(name)) ambiguous.add(name);
     else defs.set(name, { name, variable, rhs });
@@ -450,7 +460,7 @@ function printedDefinitions(question) {
  * from a table), which the caller's numeric comparison reports unreadable.
  */
 function applicationValue(text, defs) {
-  const m = text.trim().match(/^([a-zA-Z])\s*\(\s*([\s\S]+?)\s*\)$/);
+  const m = unfenced(text).trim().match(/^([a-zA-Z])\s*\(\s*([\s\S]+?)\s*\)$/);
   if (!m || !defs.has(m[1])) return null;
   let inner = applicationValue(m[2], defs);
   if (!inner) {
@@ -543,7 +553,7 @@ function checkFunctionEvaluate(question, answer) {
   const defs = printedDefinitions(question);
   if (defs.size === 0) return null;
   const asks = questionSpans(question)
-    .filter((raw) => !DEFINITION_RE.test(raw.trim()))
+    .filter((raw) => !DEFINITION_RE.test(unfenced(raw).trim()))
     .map((raw) => applicationValue(raw, defs))
     .filter(Boolean);
   if (asks.length !== 1 || splitTopLevelCommas(answer).length > 1) return null;
@@ -554,7 +564,10 @@ function checkFunctionEvaluate(question, answer) {
   if (freeVariables(asks[0]).size > 0) {
     return skip('function-evaluate', 'definition references a function the question does not print');
   }
-  const answerExpr = parseMath(answer);
+  // The authored answer may restate the ask as a label — `f(6) = 4` — which
+  // does not parse as a value, so the label is stripped off the writing.
+  const bareAnswer = unfenced(answer).replace(/^\s*[a-zA-Z]\s*\(\s*-?[\d.]+\s*\)\s*=\s*/, '');
+  const answerExpr = parseMath(bareAnswer);
   if (!answerExpr) return skip('function-evaluate', 'unparseable answer');
   const { equal, witness } = equivalentNumerically(asks[0], answerExpr);
   if (equal === false) {
@@ -571,9 +584,9 @@ function checkFunctionSolve(question, answer) {
   if (defs.size === 0) return null;
   const targets = [];
   for (const raw of questionSpans(question)) {
-    const m = raw.trim().match(DEFINITION_RE);
+    const m = unfenced(raw).trim().match(DEFINITION_RE);
     if (!m || !defs.has(m[1]) || m[2] !== defs.get(m[1]).variable) continue;
-    const k = parseMath(m[3]);
+    const k = parseMath(m[3].replace(/[\s.,;]+$/, ''));
     if (k && freeVariables(k).size === 0) targets.push({ def: defs.get(m[1]), k });
   }
   if (targets.length !== 1) return null;
@@ -725,7 +738,7 @@ function checkFunctionCombination(question, answer) {
  * passing verifies; a wrong inverse fails both.
  */
 function checkInverseFormula(question, answer) {
-  if (!/\^\{?-1\}?\(\s*[a-zA-Z]\s*\)/.test(question) && !/\bthe inverse of\b/i.test(question)) return null;
+  if (!/\^\{?-1\}?\(\s*[a-zA-Z]\s*\)/.test(unfenced(question)) && !/\bthe inverse of\b/i.test(question)) return null;
   const defs = printedDefinitions(question);
   if (defs.size !== 1) return null;
   const def = [...defs.values()][0];
@@ -752,10 +765,10 @@ function checkInverseFormula(question, answer) {
 function checkInverseSwap(question, answer) {
   const facts = [];
   for (const raw of questionSpans(question)) {
-    const m = raw.trim().match(/^([a-zA-Z])\s*(\^\{?-1\}?)?\s*\(\s*(-?[\d.]+)\s*\)\s*=\s*(-?[\d.]+)$/);
+    const m = unfenced(raw).trim().match(/^([a-zA-Z])\s*(\^\{?-1\}?)?\s*\(\s*(-?[\d.]+)\s*\)\s*=\s*(-?[\d.]+)$/);
     if (m) facts.push({ name: m[1], inverse: Boolean(m[2]), input: Number(m[3]), output: Number(m[4]) });
   }
-  const askMatch = question.match(/\b(?:find|give|what is)\s+\$([a-zA-Z])\s*(\^\{?-1\}?)?\s*\(\s*(-?[\d.]+)\s*\)\$/i);
+  const askMatch = unfenced(question).match(/\b(?:find|give|what is)\s+\$([a-zA-Z])\s*(\^\{?-1\}?)?\s*\(\s*(-?[\d.]+)\s*\)\$/i);
   if (facts.length === 0 || !askMatch) return null;
   const ask = { name: askMatch[1], inverse: Boolean(askMatch[2]), input: Number(askMatch[3]) };
   const fact = facts.find((f) => f.name === ask.name && f.inverse !== ask.inverse
@@ -802,7 +815,7 @@ function checkIntersection(question, answer) {
     return y === null ? null : closeNumbers(y, py);
   });
   for (const raw of questionSpans(question)) {
-    if (DEFINITION_RE.test(raw.trim())) continue;
+    if (DEFINITION_RE.test(unfenced(raw).trim())) continue;
     const expr = parseMath(raw);
     if (expr?.operator !== 'Equal') continue;
     const vars = [...freeVariables(expr)];
@@ -946,24 +959,40 @@ function checkExpressAsFunction(question, answer) {
  * answered equation. Five points determine a conic, so no textual reading of
  * the answer's $h$, $k$, $r^2$ is needed, and any value-different center or
  * radius fails on at least one of them.
+ *
+ * The "with radius $r$ and center $(h,k)$" phrasing prints the radius instead
+ * of a second point; the same five-point test applies, with a diagonal fifth
+ * point standing in for the given one — the four compass points alone are
+ * blind to a cross term, which every off-axis point sees.
  */
 function checkCircleEquation(question, answer) {
   if (!/\bequation of the circle\b/i.test(question)) return null;
   // Stripped like printedPoints() reads pairs, so a center printed with
   // MathLive's smart fences still classifies the exercise.
-  const center = question.replace(/\\left|\\right/g, '')
+  const center = unfenced(question)
     .match(/center\s*\$\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)\$/i);
   if (!center) return null;
   const h = Number(center[1]);
   const k = Number(center[2]);
   const others = printedPoints(question).filter(([x, y]) => !(closeNumbers(x, h) && closeNumbers(y, k)));
-  if (others.length !== 1) return null;
+  let r;
+  let onCircle;
+  if (others.length === 1) {
+    r = Math.hypot(others[0][0] - h, others[0][1] - k);
+    onCircle = [others[0], [h + r, k], [h - r, k], [h, k + r], [h, k - r]];
+  } else if (others.length === 0) {
+    const radius = unfenced(question).match(/radius(?:\s+of)?\s*\$([^$]+)\$/i);
+    r = radius ? numericAnswer(radius[1]) : null;
+    if (r === null || !(r > 0)) return null;
+    onCircle = [[h + r, k], [h - r, k], [h, k + r], [h, k - r],
+      [h + r * Math.SQRT1_2, k + r * Math.SQRT1_2]];
+  } else {
+    return null;
+  }
   const answerExpr = parseMath(answer);
   if (answerExpr?.operator !== 'Equal') return skip('circle-equation', 'answer is not an equation');
   if ([...freeVariables(answerExpr)].some((name) => !'xy'.includes(name))) return null;
   const diff = ce.box(['Subtract', answerExpr.ops[0], answerExpr.ops[1]]);
-  const r = Math.hypot(others[0][0] - h, others[0][1] - k);
-  const onCircle = [others[0], [h + r, k], [h - r, k], [h, k + r], [h, k - r]];
   for (const [x, y] of onCircle) {
     const value = numericValue(diff.subs({ x, y }))?.re;
     if (value == null) return skip('circle-equation', 'not numerically checkable');
@@ -976,10 +1005,52 @@ function checkCircleEquation(question, answer) {
   return pass('circle-equation');
 }
 
+/**
+ * "Write $y=2x^2+4x+5$ in standard form" answers $2(x+1)^2+3$ (or
+ * $y=2(x+1)^2+3$, or $f(x)=…$): completing the square changes the shape, not
+ * the value, so the answered right side must value-equal the printed one.
+ * The SHAPE is answerForm's job (`vertex-form`); this pins the value, which
+ * a corrupted vertex would break while still passing the shape predicate.
+ * Gated on the re-expression ask plus exactly one printed `var = RHS`
+ * subject span. A template span (`$f(x)=a(x-h)^2+k$`, printed to name the
+ * target shape) is not a subject — its right side carries the shape's
+ * letters, so requiring exactly one free variable in the RHS drops it. The
+ * conic and circle standard-form asks print no bare-variable side and never
+ * reach here.
+ */
+function checkStandardFormRewrite(question, answer) {
+  if (!/\bstandard form\b|\bvertex form\b|\bcompleting the square\b/i.test(question)) return null;
+  const subjects = [];
+  for (const raw of questionSpans(question)) {
+    if (/[<>]/.test(raw)) continue;
+    const m = unfenced(raw).trim().match(/^([a-zA-Z])\s*(?:\(\s*[a-zA-Z]\s*\))?\s*=\s*([\s\S]+)$/);
+    if (!m) continue;
+    const rhs = parseMath(m[2].replace(/[\s.,;]+$/, ''));
+    if (rhs && freeVariables(rhs).size === 1) subjects.push({ variable: m[1], rhs });
+  }
+  if (subjects.length !== 1) return null;
+  const { variable, rhs: printed } = subjects[0];
+  let answered = unfenced(answer).trim();
+  const label = answered.match(/^([a-zA-Z])\s*(?:\(\s*[a-zA-Z]\s*\))?\s*=\s*([\s\S]+)$/);
+  if (label) {
+    if (label[1] !== variable) return skip('standard-form-rewrite', 'answer names a different output variable');
+    answered = label[2];
+  }
+  const answerExpr = parseMath(answered);
+  if (!answerExpr) return skip('standard-form-rewrite', 'unparseable answer');
+  const { equal, witness } = equivalentNumerically(printed, answerExpr);
+  if (equal === false) {
+    return fail('standard-form-rewrite', `the printed subject gives ${witness.left}, answer is ${witness.right} (${describePoint(witness)})`);
+  }
+  if (equal === null) return skip('standard-form-rewrite', 'not numerically checkable');
+  return pass('standard-form-rewrite');
+}
+
 const FUNCTION_CLASS_CHECKS = [
   checkInverseSwap, checkFunctionEvaluate, checkFunctionSolve, checkIntercepts,
   checkAverageRate, checkFunctionCombination, checkInverseFormula, checkSlope,
   checkIntersection, checkLineEquation, checkExpressAsFunction, checkCircleEquation,
+  checkStandardFormRewrite,
 ];
 
 /** Classify one fill-in and cross-check its answer. */

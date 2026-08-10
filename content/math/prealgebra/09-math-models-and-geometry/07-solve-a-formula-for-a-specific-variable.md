@@ -226,6 +226,7 @@ So $y = \tfrac{18 - 3x}{2}$.
 {{< fillin
   question="Solve the formula $3x + 4y = 10$ for $y$, in general. Enter your answer as y = ___ (an expression in $x$)."
   answer="y=(10-3x)/4"
+  answerForm="solved:y"
   hint="Subtract $3x$ from both sides, then divide both sides by 4."
 >}}
 
@@ -248,12 +249,14 @@ So $a = P - b - c$.
 {{< fillin
   question="Solve the formula $P = a + b + c$ for $b$. Enter your answer as b = ___ (an expression in $P$, $a$, and $c$)."
   answer="b=P-a-c"
+  answerForm="solved:b"
   hint="Subtract $a$ and $c$ from both sides."
 >}}
 
 {{< fillin
   question="Solve the formula $P = a + b + c$ for $c$. Enter your answer as c = ___ (an expression in $P$, $a$, and $b$)."
   answer="c=P-a-b"
+  answerForm="solved:c"
   hint="Subtract $a$ and $b$ from both sides."
 >}}
 
@@ -270,12 +273,14 @@ $
 {{< fillin
   question="Solve the formula $7x + y = 11$ for $y$. Enter your answer as y = ___ (an expression in $x$)."
   answer="y=11-7x"
+  answerForm="solved:y"
   hint="Subtract $7x$ from both sides."
 >}}
 
 {{< fillin
   question="Solve the formula $11x + y = 8$ for $y$. Enter your answer as y = ___ (an expression in $x$)."
   answer="y=8-11x"
+  answerForm="solved:y"
   hint="Subtract $11x$ from both sides."
 >}}
 
@@ -293,12 +298,14 @@ $
 {{< fillin
   question="Solve the formula $4x + 7y = 9$ for $y$. Enter your answer as y = ___ (an expression in $x$)."
   answer="y=(9-4x)/7"
+  answerForm="solved:y"
   hint="Subtract $4x$ from both sides, then divide both sides by 7."
 >}}
 
 {{< fillin
   question="Solve the formula $5x + 8y = 1$ for $y$. Enter your answer as y = ___ (an expression in $x$)."
   answer="y=(1-5x)/8"
+  answerForm="solved:y"
   hint="Subtract $5x$ from both sides, then divide both sides by 8."
 >}}
 
@@ -367,24 +374,28 @@ called solving a **literal equation**.
 {{< fillin
   question="Use the formula $A = \tfrac{1}{2}bh$. Solve for $b$ in general. Enter your answer as b = ___ (an expression in $A$ and $h$)."
   answer="b=2A/h"
+  answerForm="solved:b"
   hint="Clear the fraction by multiplying both sides by 2, then divide both sides by $h$."
 >}}
 
 {{< fillin
   question="Solve the formula $P = 2L + 2W$ for $L$. Enter your answer as L = ___ (an expression in $P$ and $W$)."
   answer="L=(P-2W)/2"
+  answerForm="solved:L"
   hint="Subtract $2W$ from both sides to isolate the $L$ term, then divide both sides by 2."
 >}}
 
 {{< fillin
   question="Solve the formula $C = \pi d$ for $d$. Enter your answer as d = ___ (an expression in $C$)."
   answer="d=C/\pi"
+  answerForm="solved:d"
   hint="Treat $\pi$ like any other coefficient and divide both sides by it."
 >}}
 
 {{< fillin
   question="Solve $180 = a + b + c$ for $a$. Enter your answer as a = ___ (an expression in $b$ and $c$)."
   answer="a=180-b-c"
+  answerForm="solved:a"
   hint="Subtract $b$ and $c$ from both sides."
 >}}
 

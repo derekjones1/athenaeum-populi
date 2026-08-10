@@ -298,6 +298,7 @@ the two independent things it names:
 | `exponential-form` | no logarithm left — for "convert from logarithmic to exponential form", where both statements grade equal |
 | `expanded-logarithms` | every written $\log$ takes a single number or variable — for "write $\log_5 25ab$ as a sum of logarithms" |
 | `denominator:<n>` | that exact denominator — for equivalent-fraction asks, which are deliberately **not** reduced |
+| `solved:<variable>` | one written equation with that variable alone on one side and absent from the other — for "Solve the formula $7x+y=11$ for $y$", where equation-equivalence grading accepts the printed formula retyped back; the variable is named because a formula can arrive already solved for the *other* side ($x=5y-10$) |
 
 A right value in the wrong shape reports back as "That value is right — now
 write it in lowest terms", so the learner is told what is missing rather than

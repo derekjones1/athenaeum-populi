@@ -288,14 +288,14 @@ $12n$ to get the $n$'s to one side: $-3=-3$. This is a true statement. The
 equation is an identity. The solution is all real numbers.
 
 {{< fillin
-  question="Consider the equation $4 + 9(3x - 7) = -42x - 13 + 23(3x - 2)$. Distribute and combine like terms on each side, then subtract the matching variable term from both sides. What true numerical statement is left once the variable terms cancel? Enter it as a full equation, e.g. $0=0$."
-  answer="-59=-59"
+  question="Consider the equation $4 + 9(3x - 7) = -42x - 13 + 23(3x - 2)$. Distribute and combine like terms on each side, then subtract the matching variable term from both sides. The variable terms cancel, leaving a true statement $c=c$. Enter the constant $c$."
+  answer="-59"
   hint="After distributing and combining like terms, both sides simplify to the same expression in x. Subtracting that expression from both sides leaves only constants."
 >}}
 
 {{< fillin
-  question="Consider the equation $8(1 - 3x) + 15(2x + 7) = 2(x + 50) + 4(x + 3) + 1$. Distribute and combine like terms on each side, then subtract the matching variable term from both sides. What true numerical statement is left once the variable terms cancel? Enter it as a full equation, e.g. $0=0$."
-  answer="113=113"
+  question="Consider the equation $8(1 - 3x) + 15(2x + 7) = 2(x + 50) + 4(x + 3) + 1$. Distribute and combine like terms on each side, then subtract the matching variable term from both sides. The variable terms cancel, leaving a true statement $c=c$. Enter the constant $c$."
+  answer="113"
   hint="After distributing and combining like terms, both sides simplify to the same expression in x. Subtracting that expression from both sides leaves only constants."
 >}}
 

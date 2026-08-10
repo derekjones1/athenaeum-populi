@@ -1001,9 +1001,9 @@ slopes are negative reciprocals.
 >}}
 
 {{< fillin
-  question="Find an equation of a line parallel to the line $2x-y=6$ that contains the point $(3,0)$."
-  answer="y = 2x - 6"
-  answerDisplay="$y=2x-6$"
+  question="Find an equation of a line parallel to the line $2x-y=6$ that contains the point $(3,1)$."
+  answer="y = 2x - 5"
+  answerDisplay="$y=2x-5$"
   hint="First solve the given line for $y$ to find its slope. A parallel line has that same slope; use it with the given point in point-slope form."
 >}}
 

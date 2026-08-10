@@ -119,6 +119,22 @@ const extra = [
   ['f(x)-4=g(x)+2', 'y-4=h(x)+2', 'incorrect'],
   ['f(x)-4=g(x)+2', 'y-4=g(x)+2', 'correct'],
   ['y-4=gx+2', 'y-4=hx+2', 'incorrect'], // the raw engine defect, no rewrite involved
+  // A non-variable equation against a bare-variable-equation key compares as
+  // two equations, not value-vs-condition: "Find an equation of the line…"
+  // authored `y=3x-10` accepts the same line however it is stated, and still
+  // rejects every other line. The retype hazard this opens (a printed
+  // formula proportional to its key) is answerForm's job — `solved:<v>` and
+  // the named line forms — enforced by the content lint.
+  ['y-2=3(x-4)', 'y=3x-10', 'correct'], // point-slope statement of the key
+  ['3x-y=10', 'y=3x-10', 'correct'], // general form
+  ['2y=6x-20', 'y=3x-10', 'correct'], // scaled
+  ['y=3x+1', 'y=3x-10', 'incorrect'], // a parallel line is a different line
+  ['y=-2x-2', 'y-2=-2(x+2)', 'correct'], // and the mirror: bare-variable student, point-slope key
+  ['x-4=0', 'x=4', 'correct'], // vertical line restated against a constant-value key
+  // `y` written into an implicit product is a meaning of its own — the
+  // rewrite that would read `f(x)` as `y` must refuse, or the function
+  // output and the `y` of `xy` collapse into one symbol.
+  ['f(x)-4=xy', 'y-4=xy', 'incorrect'],
   // A lone `d` numerator is Leibniz derivative notation to the Compute Engine,
   // so \frac{d}{t} boxed as D(missing, t) and graded *invalid* — and MathLive
   // turns a typed "/" into a \frac, so every distance/rate/time answer a
@@ -548,6 +564,18 @@ const formCases = [
   // k may be zero, and the coefficient may be a fraction
   ['-(x-4)^2', '-(x-4)^2', 'vertex-form', 'correct'],
   ['-x^2+8x-16', '-(x-4)^2', 'vertex-form', 'form'],
+  // solved:<variable> — the solve-a-formula class. Equation-equivalence
+  // grading accepts the printed formula retyped back (it is the same
+  // condition), so the isolation is the form; the variable is named because
+  // a formula can arrive already solved for the OTHER side ($x=5y-10$).
+  ['y=11-7x', 'y=11-7x', 'solved:y', 'correct'],
+  ['7x+y=11', 'y=11-7x', 'solved:y', 'form'], // the prompt retyped back
+  ['11-7x=y', 'y=11-7x', 'solved:y', 'correct'], // isolated on the right is isolated
+  ['y=\\frac{10-3x}{4}', 'y=(10-3x)/4', 'solved:y', 'correct'],
+  ['3x+y=10', 'y=(10-3x)/4', 'solved:y', 'incorrect'], // wrong value stays wrong, not 'form'
+  ['x=5y-10', 'y=\\frac{x+10}{5}', 'solved:y', 'form'], // solved for x is not solved for y
+  ['t=\\frac{d}{r}', 't=\\frac{d}{r}', 'solved:t', 'correct'],
+  ['d=rt', 't=\\frac{d}{r}', 'solved:t', 'incorrect'], // not proportional — value check already rejects
   ['-\\frac{1}{20}(x-20)^2+20', '-\\frac{1}{20}(x-20)^2+20', 'vertex-form', 'correct'],
   // a half-completed square is not vertex form, and neither is the expansion
   // of a vertex-from-a-point answer
@@ -590,10 +618,10 @@ const formCases = [
   // the collapsed origin case is point-slope with both subtractions evaluated
   ['y=-3x', 'y-0=-3(x-0)', 'point-slope-form', 'correct'],
   ['y-0=-3(x-0)', 'y-0=-3(x-0)', 'point-slope-form', 'correct'],
-  // slope-intercept happens to grade unequal today (an engine accident the
-  // predicate must not depend on), so it reports incorrect, not form
-  ['y=2x+3', 'y-5=2(x-1)', 'point-slope-form', 'incorrect'],
-  ['y-3=2(x-1)', 'y-5=2(x-1)', 'point-slope-form', 'incorrect'],
+  // a slope-intercept response is the same line, so equation-equivalence
+  // grades its value correct and the ask's shape is what rejects it
+  ['y=2x+3', 'y-5=2(x-1)', 'point-slope-form', 'form'],
+  ['y-3=2(x-1)', 'y-5=2(x-1)', 'point-slope-form', 'incorrect'], // wrong point — a different line
   // slope-intercept-form — the undistributed and single-fraction restatements
   // grade equal to the authored answer, equation and bare-expression alike
   ['y=-2x-2', 'y=-2x-2', 'slope-intercept-form', 'correct'],
@@ -679,7 +707,8 @@ test('answerForm parsing and feedback wording', async (t) => {
   // undefined" — a defect only a reader of the rendered page would ever catch.
   for (const token of ANSWER_FORM_TOKENS) {
     await t.test(`the ${token} token has feedback wording`, () => {
-      const spec = token === 'denominator:<n>' ? 'denominator:7' : token;
+      const spec = token === 'denominator:<n>' ? 'denominator:7'
+        : token === 'solved:<variable>' ? 'solved:y' : token;
       const phrased = describeAnswerForm(spec);
       assert.notEqual(phrased, '');
       assert.ok(!phrased.includes('undefined'), phrased);

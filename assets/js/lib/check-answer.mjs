@@ -436,6 +436,12 @@ function equationsEquivalent(studentExpr, answerExpr) {
   }
   // Too few decidable points — a singularity at every sample — fails safe.
   if (samples.length + bothVanished < SAMPLES_REQUIRED) return false;
+  // The cross-multiplication below compares every sample against the first,
+  // so it decides nothing with fewer than two informative samples — and
+  // `rest.every` on an empty list would pass. Sides that vanish together at
+  // nearly every sample point are exactly the case sampling cannot tell
+  // apart, so it must fail safe, not open.
+  if (samples.length < 2) return false;
   const mul = (a, b) => ({ re: a.re * b.re - a.im * b.im, im: a.re * b.im + a.im * b.re });
   const [first, ...rest] = samples;
   return rest.every((sample) => {
@@ -491,6 +497,16 @@ function equivalent(studentExpr, answerExpr) {
  * would otherwise treat the two equations as equivalent) and the values are
  * compared. Inequalities are not equations and are never unwrapped.
  *
+ * A variable equation against a NON-variable equation is compared as two
+ * equations, not unwrapped: "Find an equation of a line…" authored
+ * `y=3x-10` must accept the point-slope `y-2=3(x-4)` and the rearranged
+ * `3x-y=10` — the same condition, stated the way the ask permits. Unwrapping
+ * here would grade a condition against a value, which is never equivalent,
+ * and marked those correct answers wrong. The flip side — a prompt equation
+ * proportional to the key now grades `correct` — is the passable-by-retyping
+ * hazard, guarded by `answerForm` ("solved", the named line forms) and the
+ * content lint that demands one wherever a printed equation grades equal.
+ *
  * Every grading path — scalar, ordered list member, unordered list member —
  * compares through this one function so the unwrap and the variable-name
  * guard can never diverge between them.
@@ -499,11 +515,25 @@ function equivalentAllowingVariableEquation(studentExpr, answerExpr) {
   const studentEq = asVariableEquation(studentExpr);
   const answerEq = asVariableEquation(answerExpr);
   if (studentEq && answerEq) {
-    if (studentEq.variable !== answerEq.variable) return false;
-    return equivalent(studentEq.value, answerEq.value);
+    if (studentEq.variable === answerEq.variable) {
+      return equivalent(studentEq.value, answerEq.value);
+    }
+    // Two different isolated variables can still state one condition —
+    // `x=5y-10` against `y=(x+10)/5` — so they compare as equations.
+    // Proportionality sampling is what rejects `y=5` against `x=5`; the
+    // engine's isEqual, which accepted them, is never consulted here.
+    return equivalent(studentExpr, answerExpr);
   }
-  if (studentEq) return equivalent(studentEq.value, answerExpr);
-  if (answerEq) return equivalent(studentExpr, answerEq.value);
+  if (studentEq) {
+    return answerExpr.operator === 'Equal'
+      ? equivalent(studentExpr, answerExpr)
+      : equivalent(studentEq.value, answerExpr);
+  }
+  if (answerEq) {
+    return studentExpr.operator === 'Equal'
+      ? equivalent(studentExpr, answerExpr)
+      : equivalent(studentExpr, answerEq.value);
+  }
   return equivalent(studentExpr, answerExpr);
 }
 
@@ -1730,8 +1760,9 @@ const FORM_PREDICATES = {
   // that passes through $(-2,2)$" answers $y-2=-2(x+2)$. The prompt prints
   // nothing to retype, but the engine grades the distributed $y-2=-2x-4$ and
   // the scaled $2y-4=-4(x+2)$ equal to it — restatements the ask exists to
-  // rule out (slope-intercept itself happens to grade unequal, but that is an
-  // engine accident, not a guarantee). One side must be the bare output
+  // rule out (equation-equivalence grading accepts the slope-intercept
+  // statement of the line too, so the shape is the whole test). One side
+  // must be the bare output
   // variable plus at most a constant, coefficient 1; the other one single
   // term — a constant slope times the bare input variable or an
   // input-variable-plus-constant binomial. Both orientations pass, mirroring
@@ -1850,7 +1881,29 @@ const FORM_PREDICATES = {
   },
 };
 
+/**
+ * "Solve the formula $7x+y=11$ for $y$" answers $y=11-7x$ — the same
+ * condition as the printed formula, so equation-equivalence grading accepts
+ * the prompt retyped back and only the isolation separates the two. The
+ * variable is named in the token (`solved:y`) because isolation alone cannot
+ * be the test: "Solve $x=5y-10$ for $y$" prints an equation that is already
+ * solved — for $x$ — and proportional to the key, so an unparameterized
+ * shape check would pass the very retype the token exists to reject. The
+ * named variable must be written alone on one side and be absent from the
+ * other; command names are stripped before the absence check (the `t` of
+ * `\tfrac` is not the variable `t`), exactly as readFunctionNotation's `y`
+ * guard reads its remainder.
+ */
+function writtenSolvedFor(latex, variable) {
+  const sides = splitEquationSides(latex);
+  if (!sides) return false;
+  const isolated = (lone, rest) => lone === variable
+    && !rest.replace(/\\[a-zA-Z]+/g, ' ').includes(variable);
+  return isolated(sides[0], sides[1]) || isolated(sides[1], sides[0]);
+}
+
 const DENOMINATOR_TOKEN = /^denominator:(\d+)$/;
+const SOLVED_TOKEN = /^solved:([a-zA-Z])$/;
 
 /**
  * Split an `answerForm` spec into its tokens, reporting any that name no
@@ -1859,11 +1912,12 @@ const DENOMINATOR_TOKEN = /^denominator:(\d+)$/;
  */
 export function parseAnswerForm(spec) {
   const tokens = String(spec ?? '').trim().split(/\s+/).filter(Boolean);
-  const unknown = tokens.filter((token) => !(token in FORM_PREDICATES) && !DENOMINATOR_TOKEN.test(token));
+  const unknown = tokens.filter((token) => !(token in FORM_PREDICATES)
+    && !DENOMINATOR_TOKEN.test(token) && !SOLVED_TOKEN.test(token));
   return { tokens, unknown, valid: tokens.length > 0 && unknown.length === 0 };
 }
 
-export const ANSWER_FORM_TOKENS = Object.freeze([...Object.keys(FORM_PREDICATES), 'denominator:<n>']);
+export const ANSWER_FORM_TOKENS = Object.freeze([...Object.keys(FORM_PREDICATES), 'denominator:<n>', 'solved:<variable>']);
 
 /**
  * Feedback for a right value in the wrong shape. It names the shape rather
@@ -1903,7 +1957,10 @@ export function describeAnswerForm(spec) {
   if (!valid) return '';
   const phrases = tokens.map((token) => {
     const denominator = token.match(DENOMINATOR_TOKEN);
-    return denominator ? `with a denominator of ${denominator[1]}` : FORM_PHRASES[token];
+    if (denominator) return `with a denominator of ${denominator[1]}`;
+    const solved = token.match(SOLVED_TOKEN);
+    if (solved) return `solved for ${solved[1]}, with ${solved[1]} alone on one side`;
+    return FORM_PHRASES[token];
   });
   return `That value is right — now write it ${phrases.join(' ')}.`;
 }
@@ -1921,6 +1978,8 @@ export function checkForm(studentRaw, spec) {
       const fraction = asFraction(studentRaw);
       return fraction !== null && fraction.denominator === Number(denominator[1]);
     }
+    const solved = token.match(SOLVED_TOKEN);
+    if (solved) return writtenSolvedFor(studentRaw, solved[1]);
     return FORM_PREDICATES[token](studentRaw);
   });
 }
@@ -1941,7 +2000,7 @@ export function checkForm(studentRaw, spec) {
  * - An OUTPUT QUANTITY inside an equation — `f(x)-4=-\tfrac12(x+1)`, the
  *   point-slope shape a function-notation prompt invites: read as `y`, the
  *   variable those answers are authored in. Only when the REMAINDER of the
- *   response writes no standalone `y` and the argument is not `y` itself, so
+ *   response writes no `y` of its own and the argument is not `y` itself, so
  *   the reading can never collide with a meaning the response already gave
  *   `y` — the application being replaced does not count against itself, or a
  *   learner naming their function `y` (`y(t)-4=…`) would be refused the very
@@ -1953,6 +2012,16 @@ export function checkForm(studentRaw, spec) {
  */
 const FUNCTION_APPLICATION_RE = /^[a-zA-Z]\s*(?:\\left\s*)?\(\s*([a-zA-Z])\s*(?:\\right\s*)?\)\s*/;
 
+/**
+ * Does the writing give `y` a meaning of its own? Variables here are single
+ * letters, so any `y` outside a command name counts — including one inside
+ * an implicit product (`xy`), which a letter-boundary regex misses. Command
+ * names are stripped whole, and over-detecting (a `y` inside `\text{…}`)
+ * merely refuses the rewrite — the safe direction: the response grades as
+ * written.
+ */
+const writesY = (latex) => latex.replace(/\\[a-zA-Z]+/g, ' ').includes('y');
+
 function readFunctionNotation(latex) {
   const application = latex.match(FUNCTION_APPLICATION_RE);
   if (!application) return latex;
@@ -1960,8 +2029,7 @@ function readFunctionNotation(latex) {
   if (/^=(?![=<>])/.test(rest) && !rest.slice(1).includes('=')) {
     return rest.slice(1).trim();
   }
-  if (rest.includes('=') && application[1] !== 'y'
-    && !/(?<![a-zA-Z\\])y(?![a-zA-Z])/.test(rest)) {
+  if (rest.includes('=') && application[1] !== 'y' && !writesY(rest)) {
     return `y${rest}`;
   }
   return latex;
@@ -1981,7 +2049,7 @@ function functionLabelEquation(latex) {
   if (!application) return null;
   const rest = latex.slice(application[0].length);
   if (!/^=(?![=<>])/.test(rest) || rest.slice(1).includes('=')) return null;
-  if (application[1] === 'y' || /(?<![a-zA-Z\\])y(?![a-zA-Z])/.test(rest)) return null;
+  if (application[1] === 'y' || writesY(rest)) return null;
   return `y${rest}`;
 }
 
