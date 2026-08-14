@@ -22,6 +22,7 @@
  * actually use a <fill-in>.
  */
 import { engineUrl } from '@params';
+import { plainMathText, speakableMathText } from '../lib/speakable-label.mjs';
 
 let hintSequence = 0;
 
@@ -74,11 +75,11 @@ class FillInElement extends HTMLElement {
 
     const field = document.createElement('math-field');
     field.className = 'ap-fillin-field';
-    // The template always emits data-question-plain, so this fallback should
+    // The template always emits data-question, so this fallback should
     // never be reached. It used to reuse the PLACEHOLDER string, which would
     // have labelled the field "Your answer" — a description of the box, not of
     // what it is for. Name the control instead.
-    const fieldLabel = this.dataset.questionPlain || 'Math answer';
+    const fieldLabel = plainMathText(this.dataset.question || '') || 'Math answer';
     field.setAttribute('aria-label', fieldLabel);
     // MathLive focuses a separate textbox inside its shadow root. Label that
     // sink when MathLive mounts so it has the same accessible name as the host.
@@ -153,6 +154,24 @@ class FillInElement extends HTMLElement {
       // about how input parses.
       mathlive.MathfieldElement.computeEngine = ce;
       this._check = checkAnswer;
+
+      // Replace the interim label (raw TeX minus delimiters) with spoken
+      // math now the serializer is here — BEFORE the Check button enables,
+      // so "ready" implies the accessible name is final.
+      try {
+        const spoken = speakableMathText(
+          this.dataset.question || '',
+          mathlive.convertLatexToSpeakableText,
+        );
+        if (spoken) {
+          this.field.setAttribute('aria-label', spoken);
+          this._labelKeyboardSink();
+        }
+      } catch (error) {
+        // The interim label is imperfect but present; never block grading
+        // on speech serialization.
+        console.warn('Fill-in spoken label failed', error);
+      }
 
       // Enter inside the field (incl. virtual keyboard) fires an input event
       // with data "insertLineBreak" — route it to a check.
@@ -244,15 +263,20 @@ class FillInElement extends HTMLElement {
     this.status = status;
     if (status === 'correct') {
       this.done = true;
+      // Locking the field (or disabling the button) while focus is ANYWHERE
+      // inside the component drops focus to <body>, stranding a keyboard or
+      // screen-reader user at the top of the document right after they
+      // succeed. An Enter-key submission leaves focus on the math-field host
+      // (MathLive's shadow sink), not the button, so test containment — not
+      // just the button — and capture it BEFORE readonly/lock tears the
+      // focused sink down.
+      const hadFocus = this.contains(document.activeElement);
       this.field.setAttribute('readonly', '');
       this._lockFieldForDisplay();
       this.feedback.innerHTML = this.answerDisplayHTML
         ? `Correct — ${this.answerDisplayHTML}.`
         : 'Correct!';
-      // Disabling the element that currently has focus drops focus to <body>,
-      // stranding a keyboard or screen-reader user at the top of the document
-      // right after they succeed. Move focus to the result first, then disable.
-      if (this.button === document.activeElement) {
+      if (hadFocus) {
         this.feedback.setAttribute('tabindex', '-1');
         this.feedback.focus();
       }

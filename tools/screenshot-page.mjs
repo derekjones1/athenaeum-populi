@@ -8,10 +8,18 @@
 //   python3 -m http.server 8099 --directory public &
 //   node tools/screenshot-page.mjs /math/precalculus/01-functions/01-....../ [outDir]
 //
-// Uses the installed Chrome channel (no `npx playwright install` needed).
+// Drives the installed Chrome through tools/chrome-stdio-shim.sh (no
+// `npx playwright install` needed). The shim detaches Chrome's stdout/stderr
+// so its crashpad/updater daemons cannot inherit our pipes and stall this
+// tool's exit the way they stalled `npm run ci`.
 
 import { chromium } from 'playwright'
 import { mkdirSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
+
+const chromeShim = fileURLToPath(
+  new URL('./chrome-stdio-shim.sh', import.meta.url),
+)
 
 const route = process.argv[2]
 if (!route) {
@@ -26,7 +34,7 @@ mkdirSync(outDir, { recursive: true })
 
 let browser
 try {
-  browser = await chromium.launch({ channel: 'chrome' })
+  browser = await chromium.launch({ executablePath: chromeShim })
 } catch {
   browser = await chromium.launch() // fall back to the bundled browser
 }

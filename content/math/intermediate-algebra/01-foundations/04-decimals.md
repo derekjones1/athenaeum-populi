@@ -936,6 +936,7 @@ rational or irrational.
 {{< fillin
   question="Convert $1.56$ to a percent. Enter just the number, without the percent sign."
   answer="156"
+  answerForm="decimal"
   answerDisplay="$156\%$"
   hint="Move the decimal point two places to the right, then interpret the result as a percent."
 >}}

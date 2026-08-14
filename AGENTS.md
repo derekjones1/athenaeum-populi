@@ -27,10 +27,12 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
   changes into `content/` automatically.
 - The lock pins one commit per upstream bundle: `prealgebra-bundle` for the
   three algebra books and `college-algebra-bundle` for Precalculus 2e. Books
-  carry an `authoringStatus`; `content/math/precalculus` is `scaffolded`, so it
-  has chapter landings and pinned provenance but no section pages yet. Those
-  landings declare `authoring_status: scaffolded`; drop that marker from a
-  chapter as soon as it has a section page, and rerun
+  carry an `authoringStatus`; `content/math/precalculus` is `scaffolded`: its
+  chapter landings and pinned provenance are in place and its section pages
+  are being authored chapter by chapter (the source map records the current
+  count — do not restate it here, it drifts). Chapters that still lack a
+  section page declare `authoring_status: scaffolded`; drop that marker from
+  a chapter as soon as it has a section page, and rerun
   `node tools/openstax-source.mjs build-map` after authoring new sections.
 
 ## Commands
@@ -105,20 +107,29 @@ it `dlopen`s is missing, so that binary aborts on launch and Playwright then
 asks for a `chrome-headless-shell` build that is also absent. That prompt is
 the trap; do not take it.
 
-Both entry points drive the installed Chrome directly, so no environment
-variable is needed and `npm run ci` passes clean out of the box:
+Both entry points drive the installed Chrome through
+`tools/chrome-stdio-shim.sh`, so no environment variable is needed and
+`npm run ci` passes clean out of the box:
 
-- `tools/screenshot-page.mjs` launches with `channel: 'chrome'`.
-- `playwright.config.mjs` sets `channel: 'chrome'` on the `chromium-light` and
-  `chromium-dark` projects.
+- `tools/screenshot-page.mjs` launches with `executablePath` pointing at the
+  shim.
+- `playwright.config.mjs` sets the same `executablePath` in its shared
+  `launchOptions`.
 
-`PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` stays available in that config as an
-override when a specific binary is required. `PLAYWRIGHT_SKIP_BUILD=1 npm run
-test:browser` is the fast path whenever `public/` is already current from a
-just-run `npm run build` (`test:browser` runs every Playwright suite in one
-server startup; `test:a11y` / `test:e2e` target a single spec). If the suite
-ever fails at launch again, the fix is a channel or an executable path —
-never an install.
+The shim exists because launching Google Chrome directly hangs the run
+*after* every test passes: Chrome spawns crashpad and (on macOS) GoogleUpdater
+daemons that inherit its stdout/stderr and can outlive it, and Playwright only
+finishes closing a browser once both streams hit EOF. The shim points both
+streams at `/dev/null` before exec, so no daemon can hold Playwright's pipes;
+the CDP transport rides fds 3/4 and is unaffected.
+
+`PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` stays available as an override when a
+specific binary is required — the shim execs it first when set.
+`PLAYWRIGHT_SKIP_BUILD=1 npm run test:browser` is the fast path whenever
+`public/` is already current from a just-run `npm run build` (`test:browser`
+runs every Playwright suite in one server startup; `test:a11y` / `test:e2e`
+target a single spec). If the suite ever fails at launch again, the fix is
+the shim's candidate list or an executable path — never an install.
 
 Do not commit unless the user explicitly asks. Preserve unrelated worktree
 changes.

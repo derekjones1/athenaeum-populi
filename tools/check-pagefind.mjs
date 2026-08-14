@@ -1,4 +1,4 @@
-/** Verify one global Pagefind index covers every migrated textbook. */
+/** Verify one global Pagefind index covers every rendered textbook. */
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { walkFiles } from './lib-content.mjs';
 import { MAIN_CONTENT_RE } from './lib-html.mjs';
@@ -13,10 +13,21 @@ import { join, relative, sep } from 'node:path';
  */
 function main() {
   const root = process.argv[2] || 'public';
+  const contentRoot = process.argv[3] || 'content';
   const pagefindDir = join(root, 'pagefind');
   const entryPath = join(pagefindDir, 'pagefind-entry.json');
   const fragmentDir = join(pagefindDir, 'fragment');
-  const requiredBooks = ['prealgebra', 'elementary-algebra', 'intermediate-algebra'];
+  // The book list (reporting + sanity floor) also derives from SOURCE. A
+  // hardcoded allowlist silently stopped covering Precalculus the day it
+  // was published; the coverage contract itself is the all-routes check
+  // below.
+  const contentMath = join(contentRoot, 'math');
+  if (!existsSync(contentMath)) throw new Error(`Content subject directory missing: ${contentMath}`);
+  const requiredBooks = readdirSync(contentMath, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name)
+    .sort();
+  if (!requiredBooks.length) throw new Error(`No authored textbook directories under ${contentMath}`);
 
   if (!existsSync(entryPath)) throw new Error(`Pagefind index not found: ${entryPath}`);
   const entry = JSON.parse(readFileSync(entryPath, 'utf8'));
@@ -35,21 +46,37 @@ function main() {
   const pageCount = languages[0][1].page_count;
   if (fragmentFiles.length !== pageCount) throw new Error(`Pagefind says ${pageCount} pages but emitted ${fragmentFiles.length} fragments`);
 
-  for (const book of requiredBooks) {
-    const prefix = `/math/${book}/`;
-    const bookRoot = join(root, 'math', book);
-    if (!existsSync(bookRoot)) throw new Error(`Built textbook directory missing: ${bookRoot}`);
-    const expected = [];
-    for (const file of walkFiles(bookRoot, { filter: (name) => name === 'index.html' })) {
-      const html = readFileSync(file, 'utf8');
-      if (!MAIN_CONTENT_RE.test(html)) continue;
-      const rel = relative(root, file).split(sep).join('/').replace(/index\.html$/, '');
-      expected.push(`/${rel}`);
-    }
-    const missing = expected.filter((url) => !normalizedUrls.has(url));
-    if (missing.length) {
-      throw new Error(`Global index is missing ${missing.length}/${expected.length} pages from ${prefix} (first: ${missing[0]})`);
-    }
+  // Expected PAGE routes come from source content — ALL of it, not just the
+  // math books. Walking public/ was one half of the self-reference (a page
+  // dropped from both the build and the index also dropped from the
+  // expectations); scoping expectations to content/math was the other (the
+  // homepage, About, or a future subject could vanish from search without
+  // failing). Every authored Markdown file renders at its path-derived
+  // route: no slug/url front-matter overrides exist in this corpus, and the
+  // derived set was verified route-for-route against a real build when this
+  // landed. The 404 page is layouts-generated, not authored, so it carries
+  // no expectation.
+  const expected = [];
+  for (const file of walkFiles(contentRoot, { filter: (name) => name.endsWith('.md') })) {
+    const rel = relative(contentRoot, file).split(sep).join('/');
+    const route = rel === '_index.md'
+      ? '/'
+      : rel.endsWith('/_index.md')
+        ? `/${rel.slice(0, -'/_index.md'.length)}/`
+        : `/${rel.slice(0, -'.md'.length)}/`;
+    expected.push(route);
+  }
+  if (!expected.length) throw new Error(`No authored pages found under ${contentRoot}`);
+  const missingBuilt = expected.filter((url) => {
+    const builtPage = join(root, url.slice(1), 'index.html');
+    return !existsSync(builtPage) || !MAIN_CONTENT_RE.test(readFileSync(builtPage, 'utf8'));
+  });
+  if (missingBuilt.length) {
+    throw new Error(`Build is missing ${missingBuilt.length}/${expected.length} authored pages (first: ${missingBuilt[0]})`);
+  }
+  const missing = expected.filter((url) => !normalizedUrls.has(url));
+  if (missing.length) {
+    throw new Error(`Global index is missing ${missing.length}/${expected.length} authored pages (first: ${missing[0]})`);
   }
 
   // Directory-shaped, so it stays a local recursion rather than a walkFiles
@@ -68,7 +95,7 @@ function main() {
   const nested = findNestedPagefind(root);
   if (nested.length) throw new Error(`Found per-book Pagefind indexes: ${nested.join(', ')}`);
 
-  console.log(`✓ Pagefind: one global index, ${pageCount} pages, all ${requiredBooks.length} books covered`);
+  console.log(`✓ Pagefind: one global index, ${pageCount} pages, all ${expected.length} authored routes covered across ${requiredBooks.length} books (${requiredBooks.join(', ')})`);
 }
 
 try {

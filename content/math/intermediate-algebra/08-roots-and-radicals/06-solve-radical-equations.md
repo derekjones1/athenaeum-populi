@@ -84,19 +84,23 @@ Solve: $\sqrt{9 k - 2} + 1 = 0.$
 
 Because the square root is equal to a negative number, the equation has no solution.
 
-{{< fillin
+{{< multiplechoice
   question="Solve: $\sqrt{2 r - 3} + 5 = 0$"
-  answer="\text{no solution}"
-  answerDisplay="$\text{no solution}$"
+  answer="no solution"
   hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
 >}}
+$r = 14$
+no solution
+{{< /multiplechoice >}}
 
-{{< fillin
+{{< multiplechoice
   question="Solve: $\sqrt{7 s - 3} + 2 = 0$"
-  answer="\text{no solution}"
-  answerDisplay="$\text{no solution}$"
+  answer="no solution"
   hint="Isolate the radical, square both sides, solve the resulting equation, and check for extraneous solutions."
 >}}
+no solution
+$s = 1$
+{{< /multiplechoice >}}
 
 If one side of an equation with a square root is a binomial, we use the Product of Binomial Squares Pattern when we square it.
 

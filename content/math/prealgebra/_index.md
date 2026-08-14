@@ -2,7 +2,6 @@
 title: Prealgebra
 description: The foundations of arithmetic and the first ideas of algebra — the starting rung of the mathematics ladder.
 prerequisites: []
-reviewed_by: []
 license: CC BY-NC-SA 4.0
 source: OpenStax Prealgebra 2e
 linkTitle: "Overview"
@@ -47,5 +46,4 @@ work through in order.
 
 This book is adapted from **OpenStax Prealgebra 2e**, used under the terms of its
 **Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA 4.0)**
-license. Reviewers who vet or adapt this material are credited in the
-`reviewed_by` field of each page.
+license.

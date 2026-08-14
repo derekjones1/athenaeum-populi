@@ -323,6 +323,7 @@ The roof rises $1$ foot for every $2$ feet of horizontal run.
 {{< fillin
   question="A roof rises 14 feet over a run of 24 feet. What is the slope of the roof, as a fully simplified fraction?"
   answer="\frac{7}{12}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{7}{12}$"
   hint="Slope is rise over run: $\tfrac{14}{24}$, then simplify the fraction."
 >}}

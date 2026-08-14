@@ -287,6 +287,7 @@ but inverts the fraction.
 {{< fillin
   question="What is the absolute value of $-\tfrac{9}{5}$? Enter as a fraction."
   answer="\frac{9}{5}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{9}{5}$"
   hint="Absolute value is never negative — drop the sign."
 >}}

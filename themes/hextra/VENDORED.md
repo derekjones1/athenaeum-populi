@@ -41,7 +41,19 @@ next upgrade harder. Prefer overriding a layout from the project's own
 `themes/hextra/layouts/_partials/head.html`. If you must edit the vendored tree,
 record what and why here, so the diff is recoverable at upgrade time.
 
-Local modifications (2):
+Local modifications (3):
+
+- `assets/js/core/menu.js` — `syncAriaHidden()` also syncs `inert`, in both
+  directions. Upstream sets only `aria-hidden` on the closed mobile drawer,
+  which hides it from screen readers but leaves its links reachable with Tab
+  while translated off-screen; and while the drawer is OPEN, upstream leaves
+  the page behind the opaque overlay focusable, so Tab escapes the drawer
+  onto invisible content. The closed drawer is inert; while open, `main` and
+  `footer` are inert (the navbar stays active so the hamburger can close
+  it), and a bidirectional Tab trap cycles focus through the hamburger plus
+  the drawer's visible focusables so the non-inert navbar (skip link, logo,
+  search) cannot leak into the order behind the overlay. Re-apply on
+  upgrade.
 
 - `layouts/_partials/scripts/katex.html` — upstream picks `katex.css` vs
   `katex.min.css` by `hugo.IsProduction`; this project vendors **only**

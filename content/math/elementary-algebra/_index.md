@@ -2,7 +2,6 @@
 title: Elementary Algebra
 description: A first course in algebra — from the foundations of real numbers through linear equations, graphs, polynomials, factoring, radicals, and quadratics.
 prerequisites: [Prealgebra]
-reviewed_by: []
 license: CC BY-NC-SA 4.0
 source: OpenStax Elementary Algebra 2e
 linkTitle: "Overview"
@@ -53,5 +52,4 @@ can work through in order.
 
 This book is adapted from **OpenStax Elementary Algebra 2e**, used under the
 terms of its **Creative Commons Attribution-NonCommercial-ShareAlike
-(CC BY-NC-SA 4.0)** license. Reviewers who vet or adapt this material are
-credited in the `reviewed_by` field of each page.
+(CC BY-NC-SA 4.0)** license.

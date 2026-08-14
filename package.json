@@ -1,11 +1,12 @@
 {
   "name": "athenaeum-populi-hugo",
   "private": true,
+  "license": "MIT",
   "description": "Hugo build of Athenaeum Populi. Keep the dependency list deliberately small and document any new runtime dependency in the README and lockfile.",
   "scripts": {
     "build": "npm run build:hugo && npm run search:index",
     "build:hugo": "hugo --gc --minify --cleanDestinationDir --cacheDir \"$(pwd)/.hugo_cache\"",
-    "search:index": "pagefind --site public --root-selector 'main#content' --exclude-selectors '.katex-mathml,svg,template'",
+    "search:index": "pagefind --site public --root-selector 'main#content' --exclude-selectors '.katex,svg,template,.ap-mc-options,.ap-mc-feedback'",
     "check:routes": "node tools/check-route-parity.mjs",
     "check:links": "node tools/check-links.mjs",
     "check:search": "node tools/check-pagefind.mjs",
@@ -34,6 +35,7 @@
   "engines": {
     "node": ">=22"
   },
+  "//search": "search:index excludes rendered math (.katex) from the index entirely: flattening the visual KaTeX DOM turns stacked fractions into mathematically false digit strings (2/3 became 32 in excerpts), and the MathML layer would surface raw token noise instead. Excerpts skip equations rather than corrupt them. .ap-mc-options / .ap-mc-feedback are multiple-choice control noise, not content.",
   "//deps": "esbuild is NOT listed: Hugo Pipes js.Build embeds esbuild. katex/mathlive/pagefind are pinned: KaTeX assets are vendored for offline builds, MathLive supplies math input, and Pagefind builds one global site-wide search index.",
   "//versions": "KaTeX 0.16.22 matches the engine embedded in Hugo 0.164.0; its CSS must match Hugo's generated HTML. MathLive 0.110.0 and @cortex-js/compute-engine 0.58.0 are pinned because grading behavior is version-sensitive. Upgrade these versions only as a coordinated, fully verified architecture change.",
   "dependencies": {

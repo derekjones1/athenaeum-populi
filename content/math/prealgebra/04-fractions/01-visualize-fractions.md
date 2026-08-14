@@ -129,6 +129,7 @@ third, which is $1\tfrac{1}{3}$. So $\tfrac{4}{3} = 1\tfrac{1}{3}$.
 {{< fillin
   question="Two circles are each cut into fourths. All 4 pieces of the first circle are shaded, and 1 of the 4 pieces of the second circle is shaded. Name the improper fraction shown, as a fraction."
   answer="\frac{5}{4}"
+  answerForm="improper-fraction"
   answerDisplay="$\tfrac{5}{4}$"
   hint="Count all the shaded fourths across both circles."
 >}}
@@ -235,6 +236,7 @@ well.
 {{< fillin
   question="How many eighths equal one-fourth? Answer as a fraction with denominator 8."
   answer="\frac{2}{8}"
+  answerForm="fraction denominator:8"
   answerDisplay="$\tfrac{2}{8}$"
   hint="Think of a tile cut into fourths lined up against an identical tile cut into eighths."
 >}}
@@ -530,6 +532,7 @@ unchanged.
 {{< fillin
   question="Name the improper fraction modeled by the fraction circles above."
   answer="\frac{5}{3}"
+  answerForm="improper-fraction"
   answerDisplay="$\tfrac{5}{3}$"
   hint="Every shaded piece is one third, so count all the shaded thirds across both circles."
 >}}

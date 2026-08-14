@@ -37,11 +37,17 @@
   {{- errorf "multiplechoice does not support 'answerDisplay' — the chosen option is the answer (%s)" $.Position -}}
 {{- end -}}
 {{- .Page.Store.Set "hasMath" true -}}
-<multiple-choice data-mode="{{ $mode }}"
+{{- /* The question names the option group, so a screen-reader user browsing
+     738 widgets hears WHICH question a group belongs to instead of the old
+     generic "Answer choices". Interim name = question minus `$` delimiters
+     (raw TeX possible); the component swaps in MathLive's spoken form at
+     runtime, exactly like the option labels. */ -}}
+{{- $qplain := replaceRE `\$` "" $question -}}
+<multiple-choice data-mode="{{ $mode }}" data-question="{{ $question }}"
   {{- if eq $mode "graph" }} data-answer-index="{{ .Get "answerIndex" }}"{{ else }} data-answer="{{ .Get "answer" }}"{{ end }}>
   <div class="ap-mc">
     <p class="ap-mc-question">{{ partial "mathtext" $question }}</p>
-    <div class="ap-mc-options" role="group" aria-label="Answer choices">
+    <div class="ap-mc-options" role="group" aria-label="Answer choices for: {{ $qplain }}">
       {{- if eq $mode "graph" -}}
         {{- range $i, $svg := split (trim .Inner "\n") "===OPT===" -}}
           <button type="button" class="ap-mc-option ap-mc-option-graph" data-index="{{ $i }}">{{ $svg | safeHTML }}</button>

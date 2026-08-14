@@ -190,6 +190,7 @@ So $P = \tfrac{I}{rt}$.
 {{< fillin
   question="Solve the formula $I = Prt$ for $r$, when $I = 5{,}400$, $P = 9{,}000$, and $t = 5$ years. Give $r$ as a decimal."
   answer="0.12"
+  answerForm="decimal"
   hint="Substitute: $5{,}400 = 9{,}000(r)(5)$, then divide both sides by 45000."
 >}}
 

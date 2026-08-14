@@ -561,12 +561,14 @@ One hundred forty-four thousand, ten
 {{< fillin
   question="Write as a whole number using digits: four hundred twelve."
   answer="412"
+  answerForm="decimal"
   hint="One period only — no commas needed."
 >}}
 
 {{< fillin
   question="Write as a whole number using digits: eleven million, forty-four thousand, one hundred sixty-seven."
   answer="11044167"
+  answerForm="decimal"
   answerDisplay="11,044,167"
   hint="Three periods: millions 11, thousands 044, ones 167 — keep three places per period, padding with zeros."
 >}}

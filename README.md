@@ -14,8 +14,8 @@ npm run serve
 ```
 
 No browser install step is needed: the Playwright suites drive the Chrome
-already installed on the machine (`channel: 'chrome'` in
-`playwright.config.mjs`). See `AGENTS.md` §Browsers.
+already installed on the machine, launched through
+`tools/chrome-stdio-shim.sh`. See `AGENTS.md` §Browsers.
 
 Open <http://localhost:1313>. npm supplies the browser dependencies and fronts
 verification, source-reconciliation, and Pagefind commands; Hugo builds and

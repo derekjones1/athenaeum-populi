@@ -131,6 +131,7 @@ $$\frac{43}{22} = 1.9\overline{54}$$
 {{< fillin
   question="Write as a decimal: $\tfrac{27}{11}$. This is a repeating decimal — enter it rounded to 4 decimal places."
   answer="2.4545"
+  answerForm="decimal"
   answerDisplay="$2.\overline{45} \approx 2.4545$"
   hint="Divide $27$ by $11$ — the digit $4$ shows once before a single digit starts repeating endlessly."
 >}}
@@ -138,6 +139,7 @@ $$\frac{43}{22} = 1.9\overline{54}$$
 {{< fillin
   question="Write as a decimal: $\tfrac{51}{22}$. This is a repeating decimal — enter it rounded to 4 decimal places."
   answer="2.3182"
+  answerForm="decimal"
   answerDisplay="$2.3\overline{18} \approx 2.3182$"
   hint="Divide $51$ by $22$ — the digit $3$ shows once before a two-digit block starts repeating endlessly."
 >}}

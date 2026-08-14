@@ -230,6 +230,7 @@ $$
 {{< fillin
   question="Hector invests \$10,000 at age 21 and wants \$150,000 at age 50. With continuous compounding, what annual growth rate is required? Enter a percent."
   answer="9.3\%"
+  answerForm="percent"
   answerDisplay="$r\approx9.3\%$"
   hint="Use $150{,}000=10{,}000e^{29r}$ and solve for $r$."
   placeholder="percent"
@@ -238,6 +239,7 @@ $$
 {{< fillin
   question="Rachel invests \$15,000 at age 25 and wants \$90,000 at age 40. With continuous compounding, what annual growth rate is required? Enter a percent."
   answer="11.9\%"
+  answerForm="percent"
   answerDisplay="$r\approx11.9\%$"
   hint="Use $90{,}000=15{,}000e^{15r}$ and solve for $r$."
   placeholder="percent"

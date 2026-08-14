@@ -61,6 +61,23 @@ try {
     );
   }
 
+  // Typed image-set(): the type("image/avif") MIME string is metadata, not a
+  // path, and candidates after it must still be inspected. A [^)]*-based
+  // capture false-failed the valid declaration and never saw the second
+  // candidate.
+  write('index.html', '<main id="content"><p>Semantic content.</p></main>');
+  write('img/example.avif');
+  write('img/example.webp');
+  write('css/site.css', '.hero{background-image:image-set("/img/example.avif" type("image/avif") 1x, "/img/example.webp" type("image/webp") 2x)}');
+  assert.equal(check().status, 0, 'a valid typed image-set must pass, with type() MIME strings ignored');
+
+  write('css/site.css', '.hero{background-image:image-set("/img/example.avif" type("image/avif") 1x, "/img/missing.webp" type("image/webp") 2x)}');
+  assert.match(check().stderr, /missing CSS url target \/img\/missing\.webp/, 'the candidate AFTER a type() clause must still be checked');
+
+  write('css/site.css', '.hero{background-image:-webkit-image-set("/img/missing.avif" 1x)}');
+  assert.match(check().stderr, /missing CSS url target \/img\/missing\.avif/, '-webkit-image-set string candidates must be checked');
+  rmSync(join(fixture, 'css'), { recursive: true, force: true });
+
   writeFileSync(outside, 'outside the build root');
   write(
     'index.html',

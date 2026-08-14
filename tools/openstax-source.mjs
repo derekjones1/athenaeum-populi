@@ -557,6 +557,11 @@ function historyAudit(directories) {
         commit: book.authoredBaselineCommit,
         confidence: book.authoredBaselineConfidence || 'unspecified',
         authoringStatus: book.authoringStatus,
+        // Counted from the source map, so the report can state each book's
+        // real coverage instead of assuming a non-complete book has none.
+        mappedSections: sourceMap.sections.filter(
+          (entry) => entry.bundle === bundleKey && entry.book === bookKey,
+        ).length,
       });
     }
   }
@@ -616,9 +621,16 @@ function formatHistoryMarkdown(history, output) {
     '',
   );
   for (const baseline of history.baselines) {
-    const suffix = baseline.authoringStatus === 'complete'
-      ? ''
-      : ` — ${baseline.authoringStatus}, no sections mapped yet`;
+    // State the book's actual mapped coverage. The old text hardcoded
+    // "no sections mapped yet" for every non-complete book, so the report
+    // called Precalculus unmapped while listing its mapped changes below.
+    let suffix = '';
+    if (baseline.authoringStatus !== 'complete') {
+      const coverage = baseline.mappedSections > 0
+        ? `${baseline.mappedSections} section${baseline.mappedSections === 1 ? '' : 's'} mapped`
+        : 'no sections mapped yet';
+      suffix = ` — ${baseline.authoringStatus}, ${coverage}`;
+    }
     lines.push(`- ${baseline.book} (\`${baseline.bundle}\`): \`${baseline.commit}\`${suffix}`);
   }
   lines.push('', '## Changed mapped sections', '');

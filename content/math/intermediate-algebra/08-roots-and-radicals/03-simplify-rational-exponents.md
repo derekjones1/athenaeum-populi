@@ -69,6 +69,7 @@ We want to write each expression in the form $\sqrt[n]{a}.$
 {{< fillin
   question="Write as a radical expression: $t^{\tfrac{1}{2}}$"
   answer="\sqrt{t}"
+  answerForm="radical"
   answerDisplay="$\sqrt{t}$"
   hint="The denominator of the rational exponent is the root index; its numerator is the power."
 >}}
@@ -76,6 +77,7 @@ We want to write each expression in the form $\sqrt[n]{a}.$
 {{< fillin
   question="Write as a radical expression: $m^{\tfrac{1}{3}}$"
   answer="\sqrt[3]{m}"
+  answerForm="radical"
   answerDisplay="$\sqrt[3]{m}$"
   hint="The denominator of the rational exponent is the root index; its numerator is the power."
 >}}
@@ -83,6 +85,7 @@ We want to write each expression in the form $\sqrt[n]{a}.$
 {{< fillin
   question="Write as a radical expression: $r^{\tfrac{1}{4}}$"
   answer="\sqrt[4]{r}"
+  answerForm="radical"
   answerDisplay="$\sqrt[4]{r}$"
   hint="The denominator of the rational exponent is the root index; its numerator is the power."
 >}}
@@ -119,6 +122,7 @@ We want to write each radical in the form $a^{\tfrac{1}{n}}.$
 {{< fillin
   question="Write with a rational exponent: $\sqrt{10 m}$"
   answer="\left(10 m\right)^{\tfrac{1}{2}}"
+  answerForm="rational-exponent"
   answerDisplay="$\left(10 m\right)^{\tfrac{1}{2}}$"
   hint="Write the root index as the exponent denominator and the radicand power as its numerator."
 >}}
@@ -126,6 +130,7 @@ We want to write each radical in the form $a^{\tfrac{1}{n}}.$
 {{< fillin
   question="Write with a rational exponent: $\sqrt[5]{3 n}$"
   answer="\left(3 n\right)^{\tfrac{1}{5}}"
+  answerForm="rational-exponent"
   answerDisplay="$\left(3 n\right)^{\tfrac{1}{5}}$"
   hint="Write the root index as the exponent denominator and the radicand power as its numerator."
 >}}
@@ -133,6 +138,7 @@ We want to write each radical in the form $a^{\tfrac{1}{n}}.$
 {{< fillin
   question="Write with a rational exponent: $3 \sqrt[4]{6 y}$"
   answer="3 \left(6 y\right)^{\tfrac{1}{4}}"
+  answerForm="rational-exponent"
   answerDisplay="$3 \left(6 y\right)^{\tfrac{1}{4}}$"
   hint="Write the root index as the exponent denominator and the radicand power as its numerator."
 >}}
@@ -227,12 +233,14 @@ Simplify: (a) $\left(-16\right)^{\tfrac{1}{4}}$ (b) $- 16^{\tfrac{1}{4}}$ (c) $\
 | Rewrite 16 as $2^{4}.$ | $\frac{1}{\sqrt[4]{2^{4}}}$ |
 | Simplify. | $\frac{1}{2}$ |
 
-{{< fillin
+{{< multiplechoice
   question="Simplify: $\left(-64\right)^{- \tfrac{1}{2}}$"
-  answer="No real solution"
-  answerDisplay="No real solution"
+  answer="not a real number"
   hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
 >}}
+not a real number
+a real number
+{{< /multiplechoice >}}
 
 {{< fillin
   question="Simplify: $- 64^{\tfrac{1}{2}}$"
@@ -303,6 +311,7 @@ $$
 {{< fillin
   question="Write with a rational exponent: $\sqrt{x^{5}}$"
   answer="x^{\tfrac{5}{2}}"
+  answerForm="rational-exponent"
   answerDisplay="$x^{\tfrac{5}{2}}$"
   hint="Write the root index as the exponent denominator and the radicand power as its numerator."
 >}}
@@ -310,6 +319,7 @@ $$
 {{< fillin
   question="Write with a rational exponent: $\left(\sqrt[4]{3 y}\right)^{3}$"
   answer="\left(3 y\right)^{\tfrac{3}{4}}"
+  answerForm="rational-exponent"
   answerDisplay="$\left(3 y\right)^{\tfrac{3}{4}}$"
   hint="Write the root index as the exponent denominator and the radicand power as its numerator."
 >}}
@@ -317,6 +327,7 @@ $$
 {{< fillin
   question="Write with a rational exponent: $\sqrt{\left(\tfrac{2 m}{3 n}\right)^{5}}$"
   answer="\left(\tfrac{2 m}{3 n}\right)^{\tfrac{5}{2}}"
+  answerForm="rational-exponent"
   answerDisplay="$\left(\tfrac{2 m}{3 n}\right)^{\tfrac{5}{2}}$"
   hint="Write the root index as the exponent denominator and the radicand power as its numerator."
 >}}

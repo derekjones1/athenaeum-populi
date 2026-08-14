@@ -30,10 +30,9 @@ visible focus, sufficient contrast, and respect for reduced-motion preferences.
 
 ## How content is curated
 
-Books are curated by Derek together with invited domain experts and textbook
-authors. New and revised material is reviewed through pull requests on GitHub;
-reviewers are credited on each book. This keeps quality high while keeping the
-whole process open.
+Books are curated by Derek. New and revised material lands through pull
+requests on GitHub, so every change is public, version controlled, and open
+to scrutiny.
 
 ## Open source
 

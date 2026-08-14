@@ -363,6 +363,7 @@ $$\text{Probability Cherie wins} = \frac{1}{100}$$
 {{< fillin
   question="Ignaly is attending a fashion show where the guests are seated at tables of ten. One guest from each table will be selected at random to receive a door prize. Find the probability Ignaly will win the door prize for her table. Enter as a fraction."
   answer="\frac{1}{10}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{1}{10}$"
   hint="There is $1$ favorable outcome (Ignaly) out of $10$ people at her table."
 >}}
@@ -387,6 +388,7 @@ $$\text{Probability} = \frac{3}{8}$$
 {{< fillin
   question="A bowl of Halloween candy contains 5 chocolate candies and 3 lemon candies. Tanya will choose one piece of candy at random. Find the probability Tanya will choose a chocolate candy. Enter as a fraction."
   answer="\frac{5}{8}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{5}{8}$"
   hint="There are $5$ chocolate candies out of $8$ total pieces of candy."
 >}}
@@ -476,6 +478,7 @@ total number of possible outcomes.
 {{< fillin
   question="There are 24 people who work in Dane's department. Next week, one person will be selected at random to bring in doughnuts. Find the probability that Dane will be selected. Enter as a fraction."
   answer="\frac{1}{24}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{1}{24}$"
   hint="Dane is $1$ favorable outcome out of the $24$ people who could be chosen."
 >}}
@@ -489,7 +492,7 @@ total number of possible outcomes.
 {{< fillin
   question="Michel has four rock CDs and six country CDs in his car. He will pick one CD to play on his way to work. Find the probability Michel will pick a rock CD. Enter as a fraction in simplest form."
   answer="\frac{2}{5}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{5}$"
   hint="There are $4$ rock CDs out of $10$ CDs in all — then simplify the fraction."
 >}}
@@ -503,7 +506,7 @@ total number of possible outcomes.
 {{< fillin
   question="Donovan is considering transferring to a 4-year college. He is considering 10 out-of-state colleges and 4 colleges in his state. He will choose one college at random to visit during spring break. Find the probability that Donovan will choose an out-of-state college. Enter as a fraction in simplest form."
   answer="\frac{5}{7}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{7}$"
   hint="Add the two counts to get the total number of colleges, then simplify the fraction."
 >}}

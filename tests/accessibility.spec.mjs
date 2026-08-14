@@ -72,7 +72,14 @@ async function waitForPageReady(page) {
     const choicesReady = choices.every(
       (exercise) =>
         customElements.get('multiple-choice') &&
-        exercise.querySelectorAll('.ap-mc-option').length > 0,
+        exercise.querySelectorAll('.ap-mc-option').length > 0 &&
+        // Wait for the accessible names to SETTLE ("ready" = spoken math
+        // substituted; "failed" = engine import broke, interim labels
+        // remain). Settling, not success, is the readiness condition — the
+        // label tests separately assert the page actually reached "ready",
+        // so an engine failure cannot hide behind a hung wait OR a green
+        // axe run.
+        ['ready', 'failed'].includes(exercise.dataset.speech),
     );
 
     const graphsReady = graphs.every((exercise) => {
@@ -249,6 +256,205 @@ test('MathLive placeholder meets AA contrast and remains muted', async ({
     `${theme} entered text should remain more prominent than its placeholder`,
   ).toBeGreaterThan(placeholderContrast);
   expect(measurements.enteredText).not.toBe(measurements.placeholder);
+});
+
+test('fill-in accessible names speak math instead of exposing raw TeX', async ({
+  page,
+}) => {
+  // Thousands of prompts contain TeX control sequences (`\tfrac{2}{5}`,
+  // `\sqrt{m}`). The old label stripped only the `$` delimiters, so the
+  // accessibility tree carried raw TeX; the component now serializes each
+  // math segment to MathLive's spoken form before the field becomes ready.
+  const path =
+    '/math/elementary-algebra/09-roots-and-radicals/' +
+    '01-simplify-and-use-square-roots/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  const labels = await page.locator('math-field').evaluateAll((fields) =>
+    fields.map((field) => ({
+      host: field.getAttribute('aria-label'),
+      sink: field.shadowRoot
+        ?.querySelector('[part~="keyboard-sink"]')
+        ?.getAttribute('aria-label'),
+    })),
+  );
+  expect(labels.length).toBeGreaterThan(0);
+  for (const { host, sink } of labels) {
+    expect(host, 'every math field must carry an accessible name').toBeTruthy();
+    expect(sink, 'the keyboard sink must share the host name').toBe(host);
+    // No TeX control sequences, grouping braces, or math delimiters may
+    // reach the accessibility tree.
+    expect(host).not.toMatch(/\\[a-zA-Z]+|[{}$]/);
+  }
+  // Spot-check the serialization is spoken math, not mashed symbols.
+  expect(
+    labels.some(({ host }) => /square root/i.test(host)),
+    'a square-roots lesson should speak at least one "square root"',
+  ).toBe(true);
+});
+
+test('multiple-choice option names speak math instead of exposing raw TeX', async ({
+  page,
+}) => {
+  // Interval-notation options (`$(-\infty,-3] \cup (6,\infty)$`) carried the
+  // rawest labels in the corpus; the component now swaps in MathLive's spoken
+  // serialization before reporting itself ready.
+  const path = '/math/intermediate-algebra/knowledge-check-07-12/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  // Every widget must have actually reached "ready" — "failed" (engine
+  // import broken, raw-TeX interim labels left in place) must fail here
+  // rather than hide behind the settled-state wait.
+  const speechStates = await page
+    .locator('multiple-choice')
+    .evaluateAll((widgets) => widgets.map((widget) => widget.dataset.speech));
+  expect(speechStates.every((state) => state === 'ready')).toBe(true);
+
+  const labels = await page.locator('.ap-mc-option[data-value]').evaluateAll(
+    (buttons) =>
+      buttons.map((button) => ({
+        value: button.dataset.value,
+        label: button.getAttribute('aria-label'),
+      })),
+  );
+  expect(labels.length).toBeGreaterThan(0);
+  for (const { label } of labels) {
+    expect(label, 'every text-mode option must carry an accessible name').toBeTruthy();
+    expect(label).toMatch(/^Answer choice: /);
+    // No TeX control sequences, grouping braces, or math delimiters may
+    // reach the accessibility tree.
+    expect(label).not.toMatch(/\\[a-zA-Z]+|[{}$]/);
+  }
+  // Spot-check spoken math on an option that is TeX in the source.
+  const spokenMath = labels.filter(
+    ({ value, label }) => /\\[a-zA-Z]/.test(value) && /union|infinity|fraction|root/i.test(label),
+  );
+  expect(
+    spokenMath.length,
+    'TeX-bearing options should speak as math (union, infinity, …)',
+  ).toBeGreaterThan(0);
+
+  // Option groups are named by their question, not a generic "Answer
+  // choices" repeated 78 times — and the group names carry no raw TeX.
+  const groupLabels = await page
+    .locator('.ap-mc-options')
+    .evaluateAll((groups) => groups.map((group) => group.getAttribute('aria-label')));
+  expect(groupLabels.length).toBeGreaterThan(0);
+  for (const label of groupLabels) {
+    expect(label).toMatch(/^Answer choices for: .+/);
+    expect(label).not.toMatch(/\\[a-zA-Z]+|[{}$]/);
+  }
+  expect(new Set(groupLabels).size, 'group names must be distinguishable').toBeGreaterThan(1);
+});
+
+test('the open mobile drawer contains keyboard focus', async ({ page }) => {
+  // The closed drawer is inert (previous fix). The complement: while the
+  // drawer covers the page, the content BEHIND the opaque overlay must not
+  // take focus — Tab past the last sidebar control otherwise lands on an
+  // invisible link. main/footer are inert while open; the navbar stays
+  // active so the hamburger can close the drawer.
+  await page.setViewportSize({ width: 390, height: 844 });
+  const path = '/math/prealgebra/05-decimals/06-ratios-and-rate/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await expect(page.locator('main#content')).toBeVisible();
+
+  const regionState = () => page.evaluate(() => ({
+    main: document.querySelector('main').inert,
+    footer: document.querySelector('footer').inert,
+    drawer: document.querySelector('.hextra-sidebar-container').inert,
+  }));
+  expect(await regionState()).toEqual({ main: false, footer: false, drawer: true });
+
+  await page.locator('.hextra-hamburger-menu').click();
+  expect(await regionState()).toEqual({ main: true, footer: true, drawer: false });
+
+  // Full bidirectional containment: from the LAST drawer control, forward
+  // tabs must cycle only through the drawer and the hamburger (the close
+  // control) — never the skip link, logo, navbar search, or covered content.
+  const inTrap = () => page.evaluate(() => {
+    const active = document.activeElement;
+    return document.querySelector('.hextra-sidebar-container').contains(active)
+      || active === document.querySelector('.hextra-hamburger-menu');
+  });
+  await page.evaluate(() => {
+    const links = document.querySelectorAll('.hextra-sidebar-container a');
+    links[links.length - 1].focus();
+  });
+  for (let i = 0; i < 8; i += 1) {
+    await page.keyboard.press('Tab');
+    expect(await inTrap(), `forward Tab ${i + 1} escaped the drawer trap`).toBe(true);
+  }
+  // And in reverse from the FIRST drawer control, through the hamburger wrap.
+  await page.evaluate(() => {
+    document.querySelector('.hextra-sidebar-container a, .hextra-sidebar-container button, .hextra-sidebar-container input').focus();
+  });
+  for (let i = 0; i < 8; i += 1) {
+    await page.keyboard.press('Shift+Tab');
+    expect(await inTrap(), `Shift+Tab ${i + 1} escaped the drawer trap`).toBe(true);
+  }
+
+  await page.locator('.hextra-hamburger-menu').click();
+  expect(await regionState()).toEqual({ main: false, footer: false, drawer: true });
+});
+
+test('a blocked speech engine degrades labels instead of leaving raw TeX', async ({
+  page,
+}) => {
+  // When /js/fillin-engine.js cannot load, grading still works but spoken
+  // labels cannot be computed. The failure path must not leave enabled
+  // controls named with raw TeX: math options drop their aria-label so the
+  // name computes from the rendered MathML content, and the group falls
+  // back to its generic name. data-speech="failed" records the state.
+  await page.route('**/js/fillin-engine.*', (route) => route.abort());
+  const path = '/math/intermediate-algebra/knowledge-check-07-12/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await page.waitForSelector('multiple-choice[data-speech="failed"]');
+
+  const report = await page.evaluate(() => {
+    const widgets = [...document.querySelectorAll('multiple-choice')];
+    const options = [...document.querySelectorAll('.ap-mc-option[data-value]')];
+    const groups = [...document.querySelectorAll('.ap-mc-options')];
+    return {
+      states: widgets.map((widget) => widget.dataset.speech),
+      texLabels: options
+        .map((button) => button.getAttribute('aria-label'))
+        .filter((label) => label && /\\[a-zA-Z]/.test(label)).length,
+      texGroups: groups
+        .map((group) => group.getAttribute('aria-label'))
+        .filter((label) => label && /\\[a-zA-Z]/.test(label)).length,
+      unsettled: widgets.filter((widget) => !['ready', 'failed'].includes(widget.dataset.speech)).length,
+    };
+  });
+  expect(report.states).toContain('failed');
+  expect(report.unsettled).toBe(0);
+  expect(report.texLabels, 'no enabled control may carry a raw-TeX name').toBe(0);
+  expect(report.texGroups, 'no group may carry a raw-TeX name').toBe(0);
+});
+
+test('the longest lesson does not overflow horizontally at 390px', async ({
+  page,
+}) => {
+  // The hidden KaTeX MathML layer is an inline box, so its overflow:hidden
+  // did not apply and native MathML layout widened the page (433px scroll
+  // width at a 390px viewport). Guard the worst-case lesson.
+  await page.setViewportSize({ width: 390, height: 844 });
+  const path =
+    '/math/intermediate-algebra/05-polynomials-and-polynomial-functions/' +
+    '02-properties-of-exponents-and-scientific-notation/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  const overflow = await page.evaluate(
+    () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+  );
+  expect(overflow, 'horizontal scroll on mobile viewport').toBe(0);
 });
 
 test('sidebar disclosure controls have at least 24 by 24 pixel targets', async ({

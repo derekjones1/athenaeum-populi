@@ -274,6 +274,9 @@ the two independent things it names:
 |---|---|
 | `fraction` | written as $\tfrac{a}{b}$, not a decimal |
 | `decimal` | a plain decimal numeral |
+| `percent` | ends with the $\%$ sign — for "enter the percent, including the % sign" asks, where $0.62$ and $62\%$ are the same value |
+| `rational-exponent` | exponent notation with no radical — the radical→exponent conversions are value-identical by design |
+| `radical` | contains a radical — the mirror conversion, which is otherwise passable by retyping the printed exponent form |
 | `mixed-number` | a whole number and a proper fraction |
 | `improper-fraction` | $\tfrac{a}{b}$ with $\lvert a\rvert \ge \lvert b\rvert$ |
 | `fraction-or-mixed-number` | either shape — for a source ask that offers the choice |

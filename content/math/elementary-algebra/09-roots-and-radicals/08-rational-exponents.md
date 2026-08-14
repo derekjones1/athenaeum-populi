@@ -80,6 +80,7 @@ We do not show the index when it is $2$.
 {{< fillin
   question="Write $t^{1/2}$ as a radical expression."
   answer="\sqrt{t}"
+  answerForm="radical"
   answerDisplay="$\sqrt{t}$"
   hint="The denominator of the exponent is the index of the radical. When the index is $2$, no index is shown."
 >}}
@@ -101,6 +102,7 @@ $$
 {{< fillin
   question="Write $\sqrt[3]{p}$ with a rational exponent."
   answer="p^{1/3}"
+  answerForm="rational-exponent"
   answerDisplay="$p^{1/3}$"
   hint="The index of the radical becomes the denominator of the exponent, and the numerator is $1$."
 >}}
@@ -122,6 +124,7 @@ $$
 {{< fillin
   question="Write $\sqrt[3]{3n}$ with a rational exponent."
   answer="(3n)^{1/3}"
+  answerForm="rational-exponent"
   answerDisplay="$(3n)^{1/3}$"
   hint="The whole radicand $3n$ is the base; the index $3$ is the denominator of the exponent."
 >}}
@@ -253,6 +256,7 @@ $$
 {{< fillin
   question="Write $\sqrt[4]{z^3}$ with a rational exponent."
   answer="z^{3/4}"
+  answerForm="rational-exponent"
   answerDisplay="$z^{3/4}$"
   hint="The exponent in the radicand $(3)$ is the numerator; the index $(4)$ is the denominator."
 >}}

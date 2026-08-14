@@ -25,6 +25,7 @@ weight: 6
 {{< fillin
   question="Write as a whole number using digits: two hundred five thousand, six hundred seventeen."
   answer="205617"
+  answerForm="decimal"
   answerDisplay="205,617"
 >}}
 

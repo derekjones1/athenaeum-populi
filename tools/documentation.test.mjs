@@ -15,7 +15,7 @@
  */
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { ANSWER_FORM_TOKENS } from '../assets/js/lib/check-answer.mjs';
 
 const repositoryRoot = new URL('../', import.meta.url);
@@ -429,7 +429,7 @@ test('no document reopens the finished Practice retrofit as a warning', () => {
 
 test('the forbidden Playwright install appears only in the AGENTS.md prohibition', () => {
   // `npx playwright install` hangs on this machine and undoes the local fix;
-  // both entry points drive the installed Chrome via `channel: 'chrome'`. A doc
+  // both entry points drive the installed Chrome through the stdio shim. A doc
   // that prints the command is a trap, so the string is allowed to exist in
   // exactly one place: the §Browsers section that forbids it.
   const FORBIDDEN = /npx playwright install/;
@@ -451,7 +451,41 @@ test('the forbidden Playwright install appears only in the AGENTS.md prohibition
   );
   assert.match(agents.slice(browsersAt), /never run `npx playwright install`/);
   // And the config the prohibition rests on has to still be true.
-  assert.match(read('playwright.config.mjs'), /channel: 'chrome'/);
+  assert.match(read('playwright.config.mjs'), /chrome-stdio-shim\.sh/);
+});
+
+test('Chrome launches only through the stdio shim, and the shim detaches both streams', () => {
+  // Real Google Chrome spawns crashpad/updater daemons that inherit its
+  // stdout/stderr and can outlive it; Playwright finishes closing a browser
+  // only when both streams hit EOF, so an inherited pipe hangs `npm run ci`
+  // after the last test passes. The shim launches Chrome with both streams on
+  // /dev/null so no daemon can ever hold Playwright's pipes. This test pins
+  // that mechanism: every launch entry point goes through the shim, and every
+  // exec line inside the shim carries the redirect.
+  assert.match(
+    read('playwright.config.mjs'),
+    /executablePath: chromeShim/,
+    'playwright.config.mjs must launch Chrome through the stdio shim',
+  );
+  assert.match(
+    read('tools/screenshot-page.mjs'),
+    /executablePath: chromeShim/,
+    'tools/screenshot-page.mjs must launch Chrome through the stdio shim',
+  );
+  const shim = read('tools/chrome-stdio-shim.sh');
+  const execLines = shim.split('\n').filter((line) => /^\s*exec /.test(line));
+  assert.ok(execLines.length >= 3, 'the shim should exec the override, app-bundle, and PATH candidates');
+  for (const line of execLines) {
+    assert.match(
+      line,
+      /"\$@" >\/dev\/null 2>&1$/,
+      `every shim exec must detach stdout and stderr: ${line.trim()}`,
+    );
+  }
+  // A shim that lost its execute bit fails every browser launch with a
+  // spawn EACCES that reads nothing like "chmod the shim"; catch it here.
+  const mode = statSync(new URL('tools/chrome-stdio-shim.sh', repositoryRoot)).mode;
+  assert.ok(mode & 0o111, 'tools/chrome-stdio-shim.sh must be executable');
 });
 
 test('the README no longer instructs a browser install', () => {

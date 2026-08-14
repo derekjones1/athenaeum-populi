@@ -111,6 +111,11 @@ source repositories are not copied into this Git repository.
 
 ## Initial reconciliation result
 
+This section is a point-in-time record of the FIRST reconciliation — the
+three algebra books only, before any Precalculus section was mapped. For
+current coverage (all books, including Precalculus), regenerate and read
+`docs/openstax-existing-math-audit.md` (`npm run source:check`).
+
 At OpenStax commit
 `38cae454e644abf9f0a623e876994553881597c9`:
 

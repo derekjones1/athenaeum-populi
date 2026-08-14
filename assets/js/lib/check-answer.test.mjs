@@ -46,6 +46,18 @@ const extra = [
   // student, answer, expected
   ['\\frac{1}{2}', '0.5', 'correct'],
   ['0.5', '\\frac{1}{2}', 'correct'],
+  // Decimal implicit multiplication: the engine reads "0.32(400)" as
+  // repeating-decimal notation (0.32400400…) unless preprocess() makes the
+  // product explicit. "compute $0.32(400) + 15$" is the lessons' own
+  // notation (slope-intercept cost models), so the exact hint expression
+  // must grade correct.
+  ['0.32(400)+15', '143', 'correct'],
+  ['0.32\\left(400\\right)+15', '143', 'correct'],
+  ['17.5(25)', '437.5', 'correct'],
+  ['.5(4)', '2', 'correct'],
+  ['0.32(400)+15', '144', 'incorrect'], // the rewrite must not loosen grading
+  ['1.5(x+2)', '1.5x+3', 'correct'],
+  ['0.\\overline{3}', '\\frac{1}{3}', 'correct'], // real repeating decimals use \overline, untouched
   ['\\sqrt{9}', '3', 'correct'],
   ['2\\times x', 'x + x', 'correct'],
   ['(x+1)^2', 'x^2 + 2x + 1', 'correct'],
@@ -289,6 +301,17 @@ const formCases = [
   ['96000', '9.6\\times10^4', 'scientific-notation', 'form'],
   ['96\\times10^3', '9.6\\times10^4', 'scientific-notation', 'form'],
   ['1.03\\times10^{-5}', '1.03\\times10^{-5}', 'scientific-notation', 'correct'],
+  // percent notation — 0.62 and 62% are the same VALUE, so the sign is the
+  // whole exercise ("Enter the percent, including the % sign")
+  ['62\\%', '62\\%', 'percent', 'correct'],
+  ['0.62', '62\\%', 'percent', 'form'],
+  ['\\frac{62}{100}', '62\\%', 'percent', 'form'],
+  // radical ↔ rational-exponent conversions are value-identical by design;
+  // each direction must reject the printed source notation
+  ['p^{1/3}', 'p^{1/3}', 'rational-exponent', 'correct'],
+  ['\\sqrt[3]{p}', 'p^{1/3}', 'rational-exponent', 'form'],
+  ['\\sqrt{t}', '\\sqrt{t}', 'radical', 'correct'],
+  ['t^{1/2}', '\\sqrt{t}', 'radical', 'form'],
   // prime factorization — every base must be prime
   ['2\\cdot43', '2\\cdot43', 'prime-product', 'correct'],
   ['86', '2\\cdot43', 'prime-product', 'form'],

@@ -202,7 +202,11 @@ math-field.ap-fillin-field::part(placeholder) {
   background: transparent;
   cursor: pointer;
 }
-.ap-mc-option:disabled { cursor: default; opacity: 0.55; }
+/* Completed choices are aria-disabled (never native disabled, which drops
+   them from tab order and, in some AT pairs, the accessibility tree). The
+   chosen answer keeps its is-correct styling. */
+.ap-mc-option:disabled,
+.ap-mc-option[aria-disabled="true"]:not(.is-correct) { cursor: default; opacity: 0.55; }
 .ap-mc-option-graph { flex: 1 1 150px; max-width: 210px; padding: 6px; }
 .ap-mc-option-graph svg { width: 100%; height: auto; display: block; }
 .ap-mc-option.is-correct { border-color: var(--ap-success, #1a7f37); background: #eaf6ec; }
@@ -235,3 +239,29 @@ math-field.ap-fillin-field::part(placeholder) {
 }
 .ap-graphplot-btn:disabled { cursor: default; opacity: 0.55; }
 .ap-graphplot-add { font-size: 13px; color: var(--ap-muted, #6f6e69); }
+
+/* --- Sidebar collapse: remove collapsed branches from focus/AT ------------
+   The theme collapses branches with height:0 + overflow:hidden only, which
+   keeps every clipped link keyboard-focusable (Tab disappears into invisible
+   items). display:none removes the subtree from layout, focus order, and the
+   accessibility tree, and — unlike visibility — cannot be overridden by a
+   nested li.open descendant. No transition is lost: the theme declares none
+   for branch collapse. */
+.hextra-sidebar-container li > .hextra-sidebar-children {
+  display: none;
+}
+.hextra-sidebar-container li.open > .hextra-sidebar-children {
+  display: block;
+}
+
+/* --- KaTeX hidden MathML layer: keep it out of the scroll area -------------
+   .katex-mathml is the visually-hidden accessibility layer (clip:rect 1px +
+   width:1px + overflow:hidden). But it is an inline box, and overflow only
+   applies to block containers — so Chrome's native MathML layout inside it
+   still contributed scrollable overflow, widening the page (390px viewport
+   scrolled to 433px on the longest lesson). display:block makes the
+   existing overflow:hidden actually clip. Screen readers still read the
+   subtree; clipping is visual/scroll-only. */
+.katex .katex-mathml {
+  display: block;
+}

@@ -162,6 +162,12 @@ server.listen(port, host, () => {
 
 for (const signal of ['SIGINT', 'SIGTERM']) {
   process.on(signal, () => {
+    // `close()` alone only stops accepting new connections — it leaves
+    // existing keep-alive sockets open and waits for them to close on
+    // their own, which a browser client may never do. That left this
+    // process (and everything waiting on it, e.g. `npm run ci`) hanging
+    // indefinitely after Playwright's webServer teardown sent SIGTERM.
     server.close(() => process.exit(0));
+    server.closeAllConnections();
   });
 }

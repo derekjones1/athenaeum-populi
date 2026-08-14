@@ -48,10 +48,12 @@
  *
  * Usage: node tools/verify-answers.mjs [content-root] [--min-verified N]
  *
- * `--min-verified N` fails the run when fewer than N fill-ins were verified —
- * a ratchet against silent scope shrink, since 0 failures also describes a
- * checker that has stopped being able to read the corpus. Raise the floor
- * with `npm run baseline:update` after an authoring session.
+ * `--min-verified N` fails the run when the verified count is not EXACTLY N.
+ * Below N is a ratchet against silent scope shrink, since 0 failures also
+ * describes a checker that has stopped being able to read the corpus. Above
+ * N is an unrecorded gain — a floor-only check let forgotten gains become
+ * headroom a later checker regression could consume unnoticed. Either way,
+ * `npm run baseline:update` records the new count deliberately.
  */
 
 import { existsSync, readFileSync } from 'node:fs';
@@ -1156,6 +1158,15 @@ function main() {
     console.error(`✖ answer cross-check verified ${verified} fill-ins, below the --min-verified floor of ${minVerified}`);
     console.error('  · coverage shrank: a prompt class this tool used to read is now out of scope');
     console.error('  · a deliberate drop? `npm run baseline:update -- --allow-decrease` moves the floor');
+    process.exit(1);
+  }
+  if (minVerified !== null && verified > minVerified) {
+    // The expectation is EXACT, not a floor. A floor lets unrecorded gains
+    // accumulate silent headroom: authoring raises coverage, baseline:update
+    // is forgotten, and a later checker regression consumes the gain without
+    // ever failing CI. Every coverage change must be deliberate.
+    console.error(`✖ answer cross-check verified ${verified} fill-ins, above the recorded baseline of ${minVerified}`);
+    console.error('  · coverage grew: record it with `npm run baseline:update` and commit the rewrite');
     process.exit(1);
   }
   process.exit(failures.length ? 1 : 0);

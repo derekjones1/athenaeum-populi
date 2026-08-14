@@ -44,6 +44,9 @@
 
 export const EQUIVALENCE_FIXTURES = Object.freeze([
   /* ---- fraction / decimal / grouping -------------------------------- */
+  { a: '0.32(400)+15', b: '143', equivalent: true, note: 'decimal implicit multiplication — the engine read 0.32(400) as repeating-decimal notation until preprocess() made the product explicit; this is the lessons’ own cost-model notation' },
+  { a: '17.5(25)', b: '437.5', equivalent: true, note: 'decimal-times-paren without a trailing term' },
+  { a: '0.32(400)+15', b: '144', equivalent: false, note: 'the decimal-paren rewrite must not loosen grading' },
   { a: '\\frac{1}{2}', b: '0.5', equivalent: true, note: 'fraction vs decimal, the base case for value equality' },
   { a: '0.5', b: '\\frac{1}{2}', equivalent: true, note: 'and the same pair the other way round' },
   { a: '\\frac{1}{3}', b: '0.333', equivalent: false, note: 'a truncated decimal is not the fraction — 3.3e-4 apart, so it also pins the tolerance' },

@@ -99,6 +99,7 @@ out, so it will not help us.
 {{< fillin
   question="Lexie is 30 inches tall. Convert her height to feet. Give the answer as a decimal."
   answer="2.5"
+  answerForm="decimal"
   hint="Multiply 30 inches by the fraction (1 foot)/(12 inches) so the inches divide out."
 >}}
 

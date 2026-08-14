@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import {
   existsSync,
   mkdirSync,
@@ -30,6 +31,20 @@ function prepare(body, extraFiles = [], { head = '', katexCss = validKatexCss } 
   mkdirSync(join(fixture, 'pagefind'), { recursive: true });
   writeFileSync(join(fixture, 'katex', 'katex.min.css'), katexCss);
   writeFileSync(join(fixture, 'pagefind', 'pagefind.js'), '');
+  writeFileSync(join(fixture, '_headers'), [
+    '/*',
+    '  Strict-Transport-Security: max-age=31536000',
+    '  X-Content-Type-Options: nosniff',
+    '  X-Frame-Options: DENY',
+    '  Referrer-Policy: strict-origin-when-cross-origin',
+    '  Permissions-Policy: camera=(), microphone=(), geolocation=()',
+    '  Cross-Origin-Opener-Policy: same-origin',
+    '/js/*',
+    '  Cache-Control: public, max-age=31536000, immutable',
+    '/css/compiled/*',
+    '  Cache-Control: public, max-age=31536000, immutable',
+    '',
+  ].join('\n'));
   writeFileSync(
     join(fixture, 'index.html'),
     `<!doctype html><head>${head}</head><nav><img src="/images/logo.svg" alt="Logo"></nav><main id="content">${body}</main>`,
@@ -110,16 +125,33 @@ try {
     'an ordinary external hyperlink is navigation, not a runtime dependency',
   );
 
-  prepare('<p>Semantic content.</p>', ['js/runtime.js']);
-  writeFileSync(
-    join(fixture, 'js/runtime.js'),
-    'console.error(`MathLive: Load the library, for example with:\\nimport "https://esm.run/@cortex-js/compute-engine"`);',
-  );
-  assert.equal(
-    audit().status,
-    0,
-    'an import example embedded in inert template-literal help text is not a runtime dependency',
-  );
+  {
+    // Success-path fixture assets under /js/ must be content-hashed like the
+    // real artifact (the audit couples the immutable cache prefix to
+    // fingerprinted filenames), and the esm.run help string is only allowed
+    // by PROVENANCE — inside the engine bundles built from the pinned
+    // MathLive/Compute Engine dependencies, which is where it really lives.
+    const inertHelp = 'console.error(`MathLive: Load the library, for example with:\\nimport "https://esm.run/@cortex-js/compute-engine"`);';
+    prepare('<p>Semantic content.</p>');
+    const digest = createHash('sha256').update(inertHelp).digest('hex');
+    mkdirSync(join(fixture, 'js'), { recursive: true });
+    writeFileSync(join(fixture, `js/fillin-engine.${digest}.js`), inertHelp);
+    assert.equal(
+      audit().status,
+      0,
+      'an import example embedded in inert template-literal help text is not a runtime dependency',
+    );
+    // The SAME string in a non-engine first-party bundle is not covered by
+    // that provenance and must fail.
+    prepare('<p>Semantic content.</p>');
+    mkdirSync(join(fixture, 'js'), { recursive: true });
+    writeFileSync(join(fixture, `js/runtime.${digest}.js`), inertHelp);
+    assert.match(
+      audit().stderr,
+      /unexpected host\(s\): esm\.run/,
+      'engine-only host allowances must not extend to other first-party bundles',
+    );
+  }
 
   prepare('<pre><code>url(/documentation.png) data:image/png;base64,AAAA</code></pre>');
   assert.equal(audit().status, 0, 'rendered documentation examples should not count as page media');

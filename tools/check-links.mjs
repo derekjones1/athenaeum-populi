@@ -126,10 +126,60 @@ for (const file of htmlFiles) {
   }
 }
 
+// Stylesheets reference resources HTML never mentions (fonts, cursors,
+// backgrounds via url(...)). A missing font used to pass both this check and
+// the build audit — a sabotage-proven blind spot. Every url() must resolve
+// to a built file on this origin; external origins violate the self-hosted
+// policy and fail loudly here too.
+const cssFiles = walkFiles(root, { filter: (name) => name.endsWith('.css') });
+for (const file of cssFiles) {
+  const css = readFileSync(file, 'utf8');
+  const base = new URL('/' + relPath(file), origin);
+  // Three reference syntaxes: url(...) anywhere; the quoted @import form
+  // (`@import "theme.css";`) which has no url() wrapper at all; and bare
+  // string entries inside image-set()/-webkit-image-set(), which are valid
+  // without url() too — each of the last two passed this check until it was
+  // sabotaged.
+  const cssRefs = [
+    ...css.matchAll(/url\(\s*(?:"([^"]*)"|'([^']*)'|([^)"'\s]+))\s*\)/gi),
+    ...css.matchAll(/@import\s+(?:"([^"]*)"|'([^']*)')/gi),
+  ];
+  // Candidates may carry a nested type("image/avif") resolution, so the
+  // argument list cannot be captured with [^)]* — that stops at type()'s
+  // close-paren, misreads "image/avif" as a path, and never inspects later
+  // candidates. Scan to the balanced close, then drop type(...) segments
+  // before extracting string candidates. (url(...) entries are already
+  // covered by the url() pass above.)
+  for (const open of css.matchAll(/(?:-webkit-)?image-set\(/gi)) {
+    let depth = 1;
+    let end = open.index + open[0].length;
+    while (end < css.length && depth > 0) {
+      if (css[end] === '(') depth += 1;
+      else if (css[end] === ')') depth -= 1;
+      end += 1;
+    }
+    const args = css
+      .slice(open.index + open[0].length, end - 1)
+      .replace(/type\(\s*(?:"[^"]*"|'[^']*')\s*\)/gi, '')
+      .replace(/url\(\s*(?:"[^"]*"|'[^']*'|[^)"'\s]+)\s*\)/gi, '');
+    for (const entry of args.matchAll(/"([^"]*)"|'([^']*)'/g)) cssRefs.push(entry);
+  }
+  for (const match of cssRefs) {
+    const raw = (match[1] ?? match[2] ?? match[3]).trim();
+    if (!raw || raw.startsWith('data:') || raw.startsWith('#')) continue;
+    let url;
+    try { url = new URL(raw, base); } catch { failures.push(`${relPath(file)} → malformed CSS url(${raw})`); continue; }
+    if (url.origin !== origin) { failures.push(`${relPath(file)} → external CSS url(${raw})`); continue; }
+    const target = targetFile(url.pathname, realRoot);
+    if (target.error) { failures.push(`${relPath(file)} → ${target.error}: ${url.pathname}`); continue; }
+    if (!target.file) failures.push(`${relPath(file)} → missing CSS url target ${url.pathname}`);
+  }
+}
+
 if (failures.length) {
   console.error(`✖ internal-link check failed (${failures.length}):`);
   failures.slice(0, 100).forEach((failure) => console.error(`  · ${failure}`));
   if (failures.length > 100) console.error(`  … ${failures.length - 100} more`);
   process.exit(1);
 }
-console.log(`✓ internal links: ${htmlFiles.length} HTML files checked`);
+console.log(`✓ internal links: ${htmlFiles.length} HTML files and ${cssFiles.length} stylesheets checked`);

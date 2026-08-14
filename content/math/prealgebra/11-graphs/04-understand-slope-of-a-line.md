@@ -895,7 +895,7 @@ Connect the two points with a line.
 {{< fillin
   question="Graph the line passing through the point $(-2, 1)$ with slope $m = 3$. Write $3$ as a fraction first: what are the rise and run?"
   answer="\frac{3}{1}"
-  answerForm="denominator:1"
+  answerForm="fraction denominator:1"
   answerDisplay="$\tfrac{3}{1}$"
   hint="Any whole number can be written as a fraction over $1$."
 >}}
@@ -1393,7 +1393,7 @@ undefined
 {{< fillin
   question="The grade of a road is its slope expressed as a percent. A local road has a grade of 6%. Find the slope of the road as a fraction in simplest form."
   answer="\frac{3}{50}"
-  answerForm="lowest-terms"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{50}$"
   hint="A grade of 6% means $\tfrac{6}{100}$ — reduce that fraction."
 >}}

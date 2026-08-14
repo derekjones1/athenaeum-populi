@@ -195,6 +195,7 @@ together than either person alone, as it should.
 {{< fillin
   question="Pete paints a room in $10$ hours and Alicia in $8$ hours. Working together, they finish in $t$ hours, where $\tfrac{1}{10} + \tfrac{1}{8} = \tfrac{1}{t}$. Find $t$ (enter it as a fraction of hours)."
   answer="\frac{40}{9}"
+  answerForm="fraction"
   answerDisplay="$t = \tfrac{40}{9}$ hours (about $4$ hours $27$ minutes)"
   hint="Multiply both sides by $40t$ to get $4t + 5t = 40$, then solve for $t$."
 >}}

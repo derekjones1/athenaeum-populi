@@ -174,6 +174,7 @@ $\tfrac{21}{100}$. Converting $21$ per $100$ to percent gives $21\%$.
 {{< fillin
   question="Write as a ratio and then as a percent: The American Association of Community Colleges reported that 62 out of 100 full-time community college students balance their studies with full-time or part-time employment. Enter the percent, including the $\%$ sign."
   answer="62\%"
+  answerForm="percent"
   answerDisplay="$62\%$"
   hint="21 out of 100 becomes 21%, so 62 out of 100 becomes 62%."
 >}}
@@ -511,6 +512,7 @@ write the percent as $33.\overline{3}\%$.
 {{< fillin
   question="42 out of 100 first-time freshmen students attend a community college. Write this as a percent, including the $\%$ sign."
   answer="42\%"
+  answerForm="percent"
   answerDisplay="$42\%$"
   hint="A ratio with denominator 100 is read directly as a percent."
 >}}
@@ -546,6 +548,7 @@ write the percent as $33.\overline{3}\%$.
 {{< fillin
   question="A couple plans to have two children. The probability they will have two girls is 25%. Convert the percent to a simplified fraction."
   answer="\frac{1}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{4}$"
   hint="Write $\tfrac{25}{100}$, then divide the numerator and denominator by 25."
 >}}

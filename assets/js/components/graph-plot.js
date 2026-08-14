@@ -341,8 +341,15 @@ class GraphPlotElement extends HTMLElement {
     this.status = status;
     if (status === 'correct') {
       this.done = true;
-      this.checkBtn.disabled = this.clearBtn.disabled = this.addBtn.disabled = true;
+      // Disabling the focused Check button drops focus to <body>. Move focus
+      // to the result first whenever it is anywhere inside the component.
+      const hadFocus = this.contains(document.activeElement);
       this.feedback.innerHTML = this.answerDisplayHTML ? `Correct — ${this.answerDisplayHTML}.` : 'Correct!';
+      if (hadFocus) {
+        this.feedback.setAttribute('tabindex', '-1');
+        this.feedback.focus();
+      }
+      this.checkBtn.disabled = this.clearBtn.disabled = this.addBtn.disabled = true;
     } else {
       this.feedback.textContent = this._message(status);
     }

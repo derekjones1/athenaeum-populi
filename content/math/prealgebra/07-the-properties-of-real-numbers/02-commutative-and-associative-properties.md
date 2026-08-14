@@ -303,6 +303,7 @@ $$1.67[(8)(0.25)] = 1.67[2] = 3.34$$
 {{< fillin
   question="Simplify the expression: $[1.17(4)](2.25)$."
   answer="10.53"
+  answerForm="decimal"
   hint="Regroup so $4$ and $2.25$ multiply first — $4 \times 2.25 = 9$, a much friendlier number to multiply by $1.17$."
 >}}
 

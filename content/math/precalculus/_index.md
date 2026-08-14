@@ -2,7 +2,6 @@
 title: Precalculus
 description: The bridge into calculus — functions and their transformations, polynomial, rational, exponential, logarithmic, and trigonometric functions, systems and matrices, analytic geometry, sequences and probability, and a first look at limits and derivatives.
 prerequisites: [Intermediate Algebra]
-reviewed_by: []
 authoring_status: scaffolded
 license: CC BY-NC-SA 4.0
 source: OpenStax Precalculus 2e
@@ -74,5 +73,4 @@ sections you can work through in order.
 
 This book is adapted from **OpenStax Precalculus 2e**, used under the terms
 of its **Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA
-4.0)** license. Reviewers who vet or adapt this material are credited in
-the `reviewed_by` field of each page.
+4.0)** license.

@@ -218,9 +218,67 @@ export const NAMED_FORM_ASKS = [
     tokens: ['slope-intercept-form'],
   },
   {
-    ask: /\b(?:convert|write)\b[^.?!]*\b(?:to|in) decimal form\b/i,
+    ask: /\b(?:convert|write|rewrite|express|enter|give)\b[^.?!]*\b(?:(?:to|in) decimal form|as a decimal)\b/i,
     name: 'decimal form',
     tokens: ['decimal'],
+  },
+  {
+    ask: /\b(?:write|rewrite|express|enter|give|convert)\b[^.?!]*\brational exponents?\b/i,
+    name: 'a rational exponent',
+    tokens: ['rational-exponent'],
+  },
+  {
+    // The mirror conversion: "Write as a radical expression: $t^{1/2}$" is
+    // passable by retyping the printed exponent form without this.
+    ask: /\b(?:write|rewrite|express|enter|give|convert)\b[^.?!]*\bas a radical\b/i,
+    name: 'a radical expression',
+    tokens: ['radical'],
+  },
+  {
+    // "as a fraction, fully simplified" / "as a fully simplified fraction":
+    // value grading accepts the decimal AND the unreduced fraction, so the
+    // annotation needs BOTH fraction and lowest-terms; the fully-simplified
+    // rule below requires the lowest-terms half.
+    ask: /\b(?:write|rewrite|express|enter|give|convert)\b[^.?!]*(?:\b(?:fully )?simplified fraction\b|\bfraction,? fully simplified\b)/i,
+    name: 'a fully simplified fraction',
+    tokens: ['fraction'],
+  },
+  {
+    // Two shapes: "…as an improper fraction" and "Name the improper
+    // fraction modeled by…". The naming verb list deliberately excludes
+    // "convert": "Convert the improper fraction to a mixed number" asks for
+    // the OPPOSITE shape and is owned by the mixed-number ask above.
+    ask: /\b(?:write|rewrite|express|enter|give|convert|answer)\b[^.?!]*\bas an improper fraction\b|\b(?:name|give)\b[^.?!]*\bthe improper fraction\b/i,
+    name: 'an improper fraction',
+    tokens: ['improper-fraction'],
+  },
+  {
+    // Generic "as a fraction" (any fraction-shaped token satisfies it —
+    // "as a fraction or mixed number" declares fraction-or-mixed-number).
+    // "as a fraction of" is prose ("expressed as a fraction of the total"),
+    // not a shape ask.
+    ask: /\b(?:write|rewrite|express|enter|give|convert)\b[^.?!]*\bas a fraction\b(?!\s+of\b)/i,
+    name: 'a fraction',
+    tokens: ['fraction', 'improper-fraction', 'fraction-or-mixed-number', 'reduced-fraction', 'single-fraction'],
+  },
+  {
+    // "Write … as a whole number using digits": the words-to-numeral
+    // exercise is value-passable with arithmetic ("205000+617") or
+    // scientific notation without a numeral-shape token.
+    ask: /\b(?:write|enter|give)\b[^.?!]*\busing digits\b/i,
+    name: 'a plain numeral (digits)',
+    tokens: ['decimal'],
+  },
+  {
+    // Scoped to the explicit INCLUSIVE sign clause ("Enter the percent,
+    // including the % sign"). Prompts that ask for the percent AS A NUMBER
+    // ("enter 40 for 40%", "Enter just the number, without the percent
+    // sign") are a units convention, not a shape requirement — a broader
+    // verb+percent+sign pattern conscripted the "without" phrasing too and
+    // forced a % sign onto a number-only answer.
+    ask: /\bincluding the (?:\$?\\%\$?|%|percent) sign\b/i,
+    name: 'percent notation (with the % sign)',
+    tokens: ['percent'],
   },
   {
     ask: /\b(?:leave|write|give|enter)\b[^.?!]*\bin factored form\b/i,
@@ -1211,10 +1269,21 @@ export function lintHugo(src, filename = '') {
       }
       // "…as a fraction in simplest form" on a numeral answer: value grading
       // accepts the unreduced $\frac{6}{8}$ the ask exists to rule out.
-      if (/\bsimpl(?:est|ified) form\b/i.test(q) && NUMERAL_FRACTION_ANSWER_RE.test(params.answer || '')
+      if (/\bsimpl(?:est|ified) form\b|\bfully simplified\b/i.test(q) && NUMERAL_FRACTION_ANSWER_RE.test(params.answer || '')
         && !parseAnswerForm(params.answerForm ?? '').tokens.includes('lowest-terms')) {
         err(index, `${where}: the question asks for simplest form and the answer is a numeral fraction, but value grading accepts the unreduced equivalents — add "lowest-terms" to answerForm`);
       }
+    }
+    // ---- prompt asks for a percent and the KEY is %-shaped. Keyed on the
+    // answer's own shape so number-only percent prompts ("enter 40 for
+    // 40%", "without the percent sign") can never be conscripted: when the
+    // authored key ends in \%, the value check reads 9.3% and 0.093 as
+    // equal, so the sign IS the exercise.
+    if (answerParts.length === 1 && params.answerMode !== 'unordered'
+      && /\b(?:enter|write|give|express|convert)\b[^.?!]*\bpercent\b/i.test(q)
+      && /\\%\s*$/.test((params.answer || '').trim())
+      && !parseAnswerForm(params.answerForm ?? '').tokens.includes('percent')) {
+      err(index, `${where}: the question asks for a percent and the answer is %-shaped, but value grading accepts the bare decimal — add "percent" to answerForm`);
     }
     // ---- prompt asks for interval notation: the authored answer must BE one.
     // The engine grades an inequality and an interval unequal in BOTH

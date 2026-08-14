@@ -495,9 +495,9 @@ $$
 \end{array}
 $$
 
-{{< fillin question="Write the repeating decimal $0.\overline4$ as a fraction." answer="\frac{4}{9}" answerDisplay="$\tfrac49$" hint="Write the decimal as an infinite geometric series and use its sum formula." >}}
+{{< fillin question="Write the repeating decimal $0.\overline4$ as a fraction." answer="\frac{4}{9}" answerForm="fraction" answerDisplay="$\tfrac49$" hint="Write the decimal as an infinite geometric series and use its sum formula." >}}
 
-{{< fillin question="Write the repeating decimal $0.\overline8$ as a fraction." answer="\frac{8}{9}" answerDisplay="$\tfrac89$" hint="Write the decimal as an infinite geometric series and use its sum formula." >}}
+{{< fillin question="Write the repeating decimal $0.\overline8$ as a fraction." answer="\frac{8}{9}" answerForm="fraction" answerDisplay="$\tfrac89$" hint="Write the decimal as an infinite geometric series and use its sum formula." >}}
 
 ## Apply geometric sequences and series in the real world
 
@@ -690,14 +690,14 @@ neither
 
 ### Find the sum of an infinite geometric series
 
-{{< fillin question="Find the sum of the infinite geometric series $1+\tfrac13+\tfrac19+\tfrac1{27}+\tfrac1{81}+\tfrac1{243}+\tfrac1{729}+\cdots$. Give the exact answer as a fraction." answer="\frac{3}{2}" answerDisplay="$\tfrac32$" hint="Verify that $|r|<1$, then use $S=\tfrac{a_1}{1-r}$." >}}
+{{< fillin question="Find the sum of the infinite geometric series $1+\tfrac13+\tfrac19+\tfrac1{27}+\tfrac1{81}+\tfrac1{243}+\tfrac1{729}+\cdots$. Give the exact answer as a fraction." answer="\frac{3}{2}" answerForm="fraction" answerDisplay="$\tfrac32$" hint="Verify that $|r|<1$, then use $S=\tfrac{a_1}{1-r}$." >}}
 
 {{< multiplechoice question="Does the infinite geometric series $6+12+24+48+96+192+\cdots$ have a sum?" answer="no, because $|r|\ge1$" hint="Identify the common ratio and compare $|r|$ with $1$." >}}
 yes, because $|r|<1$
 no, because $|r|\ge1$
 {{< /multiplechoice >}}
 
-{{< fillin question="Write the repeating decimal $0.\overline3$ as a fraction." answer="\frac{1}{3}" answerDisplay="$\tfrac13$" hint="Write the decimal as an infinite geometric series and use its sum formula." >}}
+{{< fillin question="Write the repeating decimal $0.\overline3$ as a fraction." answer="\frac{1}{3}" answerForm="fraction" answerDisplay="$\tfrac13$" hint="Write the decimal as an infinite geometric series and use its sum formula." >}}
 
 ### Apply geometric sequences and series in the real world
 

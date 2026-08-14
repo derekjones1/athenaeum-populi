@@ -25,11 +25,13 @@ weight: 7
 {{< fillin
   question="Write 'six hundred thirteen' as a whole number using digits."
   answer="613"
+  answerForm="decimal"
 >}}
 
 {{< fillin
   question="Write 'fifty-five thousand two hundred eight' as a whole number using digits."
   answer="55208"
+  answerForm="decimal"
   answerDisplay="55,208"
 >}}
 
@@ -534,6 +536,7 @@ weight: 7
 {{< fillin
   question="Write the ratio $56$ to $32$ as a fraction. Simplify the answer if possible."
   answer="\frac{7}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{7}{4}$"
 >}}
 

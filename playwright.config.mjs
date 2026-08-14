@@ -1,12 +1,23 @@
 import { defineConfig, devices } from '@playwright/test';
+import { fileURLToPath } from 'node:url';
 
 // Port 1315, not Hugo's 1313: the suite must never attach to a running
 // `hugo server`. That server injects livereload, serves unfingerprinted CSS,
 // and overwrites `public/` as it renders — so measuring colour, size, and
 // contrast against it reports the dev server rather than the shipped site.
 const baseURL = process.env.BASE_URL || 'http://127.0.0.1:1315';
-const chromiumExecutablePath =
-  process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH;
+
+// The shim launches the installed Chrome with stdout/stderr pointed at
+// /dev/null, because Chrome's helper daemons (crashpad, GoogleUpdater)
+// inherit those streams and can outlive the browser — and Playwright only
+// finishes closing a browser once both streams hit EOF. Without the shim,
+// a lingering daemon hangs `npm run ci` indefinitely *after* every test
+// has passed. PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH is honored inside the
+// shim, so the override keeps working. `npx playwright install` remains
+// forbidden (AGENTS.md §Browsers) — the shim resolves the machine's Chrome.
+const chromeShim = fileURLToPath(
+  new URL('./tools/chrome-stdio-shim.sh', import.meta.url),
+);
 
 // The `ci` script runs `npm run build` and `npm run check:build` immediately
 // before the browser suites, so `public/` is already current there
@@ -31,21 +42,13 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   use: {
     baseURL,
-    launchOptions: chromiumExecutablePath
-      ? { executablePath: chromiumExecutablePath }
-      : undefined,
+    launchOptions: { executablePath: chromeShim },
   },
-  // `channel: 'chrome'` drives the Chrome already installed on the machine, so
-  // `npm run ci` never needs `npx playwright install` — the bundled-browser
-  // download is unreliable here and its absence otherwise fails every test at
-  // launch. PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH above still overrides this when
-  // a specific binary is required.
   projects: [
     {
       name: 'chromium-light',
       use: {
         ...devices['Desktop Chrome'],
-        channel: 'chrome',
         colorScheme: 'light',
       },
     },
@@ -58,7 +61,6 @@ export default defineConfig({
       testMatch: /accessibility\.spec\.mjs/,
       use: {
         ...devices['Desktop Chrome'],
-        channel: 'chrome',
         colorScheme: 'dark',
       },
     },

@@ -393,6 +393,7 @@ dividing.
 {{< fillin
   question="A county fair booth sells fudge that contains $2\tfrac{2}{3}$ cups of chocolate chips per pound. How many cups of chocolate chips are in a half-pound of the fudge? Write your answer as an improper fraction."
   answer="\frac{4}{3}"
+  answerForm="improper-fraction"
   answerDisplay="$\tfrac{4}{3} = 1\tfrac{1}{3}$ cups"
   hint="Half a pound means multiplying the cups per pound by $\tfrac{1}{2}$."
 >}}
@@ -400,6 +401,7 @@ dividing.
 {{< fillin
   question="That same fudge contains $2\tfrac{2}{3}$ cups of chocolate chips per pound, and the owners make it in $10$-pound batches. How many cups of chocolate chips does one batch need? Write your answer as an improper fraction."
   answer="\frac{80}{3}"
+  answerForm="improper-fraction"
   answerDisplay="$\tfrac{80}{3} = 26\tfrac{2}{3}$ cups"
   hint="Multiply $\tfrac{8}{3}$ by $\tfrac{10}{1}$, and leave the result as an improper fraction."
 >}}

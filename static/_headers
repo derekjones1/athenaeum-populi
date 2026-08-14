@@ -1,0 +1,34 @@
+# Cloudflare Workers static-assets header rules (copied into public/ by Hugo).
+# Docs: https://developers.cloudflare.com/workers/static-assets/headers/
+#
+# Security baseline for every response. A Content-Security-Policy is
+# deliberately NOT set here yet: the theme inlines scripts and styles, so a
+# CSP needs its own audited allowlist (and a report-only rollout) rather than
+# a guess that could brick KaTeX/MathLive rendering.
+#
+# NOTE: forcing http:// -> https:// cannot be done from this file. Enable
+# "Always Use HTTPS" (and then HSTS) on the Cloudflare zone; the
+# Strict-Transport-Security header below only takes effect on HTTPS
+# responses, so it is safe to ship ahead of that toggle.
+
+/*
+  Strict-Transport-Security: max-age=31536000
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Cross-Origin-Opener-Policy: same-origin
+
+# Content-hashed bundles: the URL changes when the content does, so browsers
+# may cache them forever. HTML stays on the default short-lived policy.
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/compiled/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Vendored KaTeX CSS/fonts are version-pinned but NOT content-hashed (their
+# URLs would not change on a deliberate KaTeX upgrade), so they get a day,
+# not a year.
+/katex/*
+  Cache-Control: public, max-age=86400

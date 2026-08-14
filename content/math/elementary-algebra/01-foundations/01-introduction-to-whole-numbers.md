@@ -170,6 +170,7 @@ $9{,}246{,}073{,}189$.
 {{< fillin
   question="Write the number two billion, four hundred sixty-six million, seven hundred fourteen thousand, fifty-one as a whole number using digits."
   answer="2466714051"
+  answerForm="decimal"
   answerDisplay="2,466,714,051"
   hint="Draw a blank for each period — billions, millions, thousands, ones — and fill each one from the words, keeping every period except the first at three digits."
 >}}
@@ -654,6 +655,7 @@ one hundred seventy-eight
 {{< fillin
   question="Write the number eleven million, forty-four thousand, one hundred sixty-seven as a whole number using digits."
   answer="11044167"
+  answerForm="decimal"
   answerDisplay="11,044,167"
   hint="Draw a blank for each period — millions, thousands, ones — and fill each one from the words, keeping every period except the first at three digits."
 >}}

@@ -28,8 +28,15 @@ if (!files.length) { console.error('usage: node tools/verify-section.mjs <file.m
 let fail = 0;
 // Failures go to stderr, like every other verifier in tools/: a caller that
 // pipes stdout somewhere (or discards it) must still see why the run failed.
-// `verify-all` relays both streams, so nothing downstream changes.
-const bad = (m) => { fail++; console.error(`  ✗ ${m}`); };
+// Every message carries the CURRENT FILE: the `== file` headings go to
+// stdout, so a caller that relays stdout and stderr separately (verify-all
+// does) would otherwise detach errors from the file they belong to and send
+// a maintainer to the wrong book.
+let currentFile = '';
+const bad = (m) => {
+  fail++;
+  console.error(`  ✗ ${m.includes(currentFile) ? m : `${currentFile}: ${m}`}`);
+};
 
 function propMath(where, name, val) {
   if (val == null) return;
@@ -45,6 +52,7 @@ function propMath(where, name, val) {
 
 for (const f of files) {
   console.log(`\n== ${f}`);
+  currentFile = f;
   const src = readFileSync(f, 'utf8');
   const interactiveSrc = src
     .replace(/```[\s\S]*?```/g, ' ')

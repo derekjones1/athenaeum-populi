@@ -65,7 +65,7 @@ test('a right value in the wrong form is held back, not accepted (answerForm)', 
   // is what makes the exercise gradeable at all.
   // Selected on the question, not the answer: a backslash in a CSS attribute
   // value is an escape sequence, so `data-answer="-\frac{7}{9}"` never matches.
-  const card = page.locator('fill-in[data-question-plain*="42}{54"]');
+  const card = page.locator('fill-in[data-question*="42}{54"]');
   await expect(card).toHaveCount(1);
   const field = card.locator('math-field');
   await focusMathField(page, field);
@@ -95,7 +95,7 @@ test('a re-typed polynomial is held back on a factoring prompt (answerForm="fact
   // `factored` graded the shape. This is the only place the whole stack runs
   // together: MathLive's real emission for typed parentheses, the shared
   // compute engine, and checkForm's parse-based predicate.
-  const card = page.locator('fill-in[data-question-plain*="6x + 8"]').first();
+  const card = page.locator('fill-in[data-question*="6x + 8"]').first();
   await expect(card).toHaveCount(1);
   const field = card.locator('math-field');
   await focusMathField(page, field);
@@ -123,7 +123,7 @@ test('a re-typed rational expression is held back until reduced (answerForm="red
   // polynomial-gcd predicate graded the shape. Exercised end to end because
   // MathLive rewrites a typed `/` into its own `\frac` emission, and the
   // predicate reads exactly those written halves.
-  const card = page.locator('fill-in[data-question-plain*="x^2-x-2"]').first();
+  const card = page.locator('fill-in[data-question*="x^2-x-2"]').first();
   await expect(card).toHaveCount(1);
   const field = card.locator('math-field');
   await focusMathField(page, field);
@@ -182,19 +182,25 @@ test('a multiple-choice option grades wrong, then right', async ({ page }) => {
   // Assert the component's own state, not page text: /correct/i would also
   // match "Not quite" nothing, but "incorrect" elsewhere on the page would.
   expect(await card.evaluate((el) => el.done)).toBe(true);
-  // The other options are locked, and locked ACCESSIBLY — `disabled` alone
-  // drops a button out of the accessibility tree in some screen-reader and
-  // browser pairs, so a reader can no longer review what they chose among.
-  const others = await card.evaluate((el) => (
+  // EVERY option is locked, and locked ACCESSIBLY: aria-disabled on all of
+  // them (the chosen one included — re-activating it also does nothing) and
+  // never native `disabled`, which drops a button from the tab order and,
+  // in some screen-reader/browser pairs, from the accessibility tree — so a
+  // reader could no longer review the options they chose among.
+  const states = await card.evaluate((el) => (
     [...el.querySelectorAll('.ap-mc-option')]
-      .filter((b) => b.dataset.value !== '5')
       .map((b) => ({ disabled: b.disabled, ariaDisabled: b.getAttribute('aria-disabled') }))
   ));
-  expect(others.length).toBeGreaterThan(0);
-  for (const option of others) {
-    expect(option.disabled).toBe(true);
+  expect(states.length).toBeGreaterThan(1);
+  for (const option of states) {
+    expect(option.disabled).toBe(false);
     expect(option.ariaDisabled).toBe('true');
   }
+  // The done guard, not the attribute, blocks interaction. force: true
+  // bypasses Playwright's own aria-disabled actionability refusal so the
+  // click actually reaches the component.
+  await wrong.click({ force: true });
+  await expect(card.locator('.ap-mc-feedback')).toHaveText(/^Correct/);
 });
 
 test('a graph-plot line is graded through the keyboard path', async ({ page }) => {
@@ -257,4 +263,28 @@ test('a graph-plot line is graded through the keyboard path', async ({ page }) =
     .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
     .toBe('correct');
   await expect(card.locator('.ap-fillin-feedback')).toHaveText(/^Correct\b/);
+
+  // Success disables all three controls; the focused Check button must hand
+  // focus to the result, not drop it to <body>.
+  expect(await page.evaluate(() => document.activeElement !== document.body)).toBe(true);
+  expect(await card.evaluate((el) => el.contains(document.activeElement))).toBe(true);
+});
+
+test('a correct Enter-key submission keeps focus inside the exercise', async ({ page }) => {
+  await gotoBuiltPage(page, '/math/prealgebra/09-math-models-and-geometry/07-solve-a-formula-for-a-specific-variable/');
+
+  // Submitting from the math-field itself (Enter → insertLineBreak) is the
+  // path the Check-button focus rescue never covered: readonly + the sink
+  // teardown dropped focus to <body> right after the learner succeeded.
+  const card = page.locator('fill-in[data-answer="r=d/t"]');
+  await expect(card).toHaveCount(1);
+  const field = card.locator('math-field');
+  await focusMathField(page, field);
+  await page.keyboard.type('d/t', { delay: 20 });
+  await page.keyboard.press('Enter');
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('correct');
+  expect(await page.evaluate(() => document.activeElement !== document.body)).toBe(true);
+  expect(await card.evaluate((el) => el.contains(document.activeElement))).toBe(true);
 });

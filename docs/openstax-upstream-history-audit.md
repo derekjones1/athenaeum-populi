@@ -26,7 +26,7 @@
 - prealgebra (`prealgebra-bundle`): `d2cea8f95118f0eb436d4406a8fc8a8e0e00e8c8`
 - elementary-algebra (`prealgebra-bundle`): `d2cea8f95118f0eb436d4406a8fc8a8e0e00e8c8`
 - intermediate-algebra (`prealgebra-bundle`): `c1bbed4b86ff5c80686d339a6ca5e4e48fae2483`
-- precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864` — scaffolded, no sections mapped yet
+- precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864` — scaffolded, 11 sections mapped
 
 ## Changed mapped sections
 
@@ -46,7 +46,7 @@ Decision: **retain-local-upstream-inconsistent.** Current upstream changes the r
 - Try It `fs-id1168345426388` (authored-baseline)
   - Before: Solve the inequality (2)/(5)z−(1)/(3)z<(1)/(15)z​−(3)/(5) , graph the solution on the number line, and write the solution in interval notation.
   - Current: Solve the inequality (2)/(5)z−(1)/(3)z<(1)/(15)z​+(3)/(5) , graph the solution on the number line, and write the solution in interval notation.
-  - Local: Solve the inequality $\tfrac{2}{5}z - \tfrac{1}{3}z < \tfrac{1}{15}z - \tfrac{3}{5}$. Is the inequality an identity, a contradiction, or does it have a specific solution? If it has a specific solution, give it; otherwise answer 0 for identity or 1 for contradiction.
+  - Local: Solve the inequality $\tfrac{2}{5}z - \tfrac{1}{3}z < \tfrac{1}{15}z - \tfrac{3}{5}$. Which describes its solution?
 
 ### elementary-algebra 4.6 — [content/math/elementary-algebra/04-graphs/06-find-the-equation-of-a-line.md](../content/math/elementary-algebra/04-graphs/06-find-the-equation-of-a-line.md)
 

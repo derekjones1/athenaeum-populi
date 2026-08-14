@@ -217,6 +217,14 @@ function fixLoneDifferentialNumerator(value) {
  *    Compute Engine already applies to "2\frac{6}{9}". Only whole
  *    number, space(s), digits/digits qualifies, so "2 + 6/9" and
  *    "2x/9" are untouched.
+ *  - makes decimal-times-parenthesis multiplication explicit
+ *    ("0.32(400)" → "0.32\cdot(400)"). The Compute Engine reads a decimal
+ *    directly followed by a parenthesized group as REPEATING-DECIMAL
+ *    notation (0.32(400) = 0.32400400…), so the exact expression the
+ *    lessons teach ("compute $0.32(400) + 15$") graded incorrect.
+ *    Integer-times-parenthesis ("3(4)") already parses as a product and is
+ *    untouched. The corpus writes repeating decimals with \overline, never
+ *    with parentheses, so nothing legitimate is lost.
  */
 export function preprocess(raw) {
   const despaced = stripGroupingCommas(raw ?? '')
@@ -225,6 +233,7 @@ export function preprocess(raw) {
     .replace(/~/g, ' ');
   return fixLoneDifferentialNumerator(despaced)
     .replace(/(^|[^\d.\w])(\d+) +(\d+)\/(\d+)/g, '$1$2\\frac{$3}{$4}')
+    .replace(/((?:\d+)?\.\d+)\s*(?=\(|\\left\()/g, '$1\\cdot ')
     .replace(/−/g, '-')
     .replace(/×/g, '\\times ')
     .replace(/÷/g, '\\div ')
@@ -1264,6 +1273,16 @@ function asFactoredProduct(latex) {
 const FORM_PREDICATES = {
   fraction: (latex) => asFraction(latex) !== null,
   decimal: (latex) => asDecimal(latex) !== null,
+  // "Enter the percent, including the % sign": value grading reads 62% and
+  // 0.62 as the same number, so the shape IS the exercise.
+  percent: (latex) => /\\%\s*$/.test(latex.trim()),
+  // "Write √[3]{p} with a rational exponent": the value is unchanged by
+  // design, so the only thing to grade is that the response uses exponent
+  // notation and no radical remains.
+  'rational-exponent': (latex) => /\^/.test(latex) && !/\\sqrt/.test(latex),
+  // The mirror-image conversion ("Write t^{1/2} as a radical expression"):
+  // the response must actually contain a radical.
+  radical: (latex) => /\\sqrt/.test(latex),
   'mixed-number': (latex) => {
     const mixed = asMixedNumber(latex);
     return mixed !== null && mixed.numerator < mixed.denominator;
@@ -1927,6 +1946,9 @@ export const ANSWER_FORM_TOKENS = Object.freeze([...Object.keys(FORM_PREDICATES)
 const FORM_PHRASES = {
   fraction: 'as a fraction',
   decimal: 'as a decimal',
+  percent: 'as a percent, with the % sign',
+  'rational-exponent': 'with a rational exponent, not a radical',
+  radical: 'as a radical expression',
   'mixed-number': 'as a mixed number',
   'improper-fraction': 'as an improper fraction',
   'fraction-or-mixed-number': 'as a fraction or mixed number',

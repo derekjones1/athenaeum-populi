@@ -200,6 +200,7 @@ It will take the trucks $2.5$ hours to be $325$ miles apart.
 {{< fillin
   question="Thanh and Nhat leave their office in Sacramento at the same time. Thanh drives north on $I-5$ at a speed of 72 miles per hour. Nhat drives south on $I-5$ at a speed of 76 miles per hour. How long will it take them to be 330 miles apart? Enter the time in hours as a fraction."
   answer="\frac{165}{74}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{165}{74}$"
   hint="They travel in opposite directions for the same amount of time t. Set $72t + 76t$ equal to 330 and solve for t."
 >}}

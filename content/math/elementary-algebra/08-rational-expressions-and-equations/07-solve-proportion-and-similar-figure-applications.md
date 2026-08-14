@@ -432,6 +432,7 @@ equal and their corresponding sides are in the same ratio.
 {{< fillin
   question="Karen eats $\tfrac{1}{2}$ cup of oatmeal that counts for $2$ points on her weight-loss program. Her husband, Joe, can have $3$ points of oatmeal for breakfast. How much oatmeal can he have? Enter the amount in cups as a fraction."
   answer="\tfrac{3}{4}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{3}{4}$ cup"
   hint="Find cups per point first: $\tfrac{1}{2} \div 2$, then multiply by $3$ points."
 >}}
@@ -439,6 +440,7 @@ equal and their corresponding sides are in the same ratio.
 {{< fillin
   question="A $2$-foot-tall dog casts a $3$-foot shadow at the same time a cat casts a $1$-foot shadow. How tall is the cat? Enter the height in feet as a fraction."
   answer="\tfrac{2}{3}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{2}{3}$ foot (8 inches)"
   hint="Set up $\tfrac{2}{3} = \tfrac{h}{1}$ (height over shadow for each animal), then solve for $h$."
 >}}

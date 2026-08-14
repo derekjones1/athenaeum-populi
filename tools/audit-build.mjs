@@ -1,11 +1,22 @@
 /** Production artifact guardrails, including Cloudflare's 20,000-file cap. */
 import { existsSync, readFileSync, statSync } from 'node:fs';
-import { join } from 'node:path';
+import { createHash } from 'node:crypto';
+import { join, relative, sep } from 'node:path';
 import { walkFiles } from './lib-content.mjs';
 import { htmlAttribute, hasFileBackedCssImage, MAIN_CONTENT_RE } from './lib-html.mjs';
 
 const root = process.argv[2] || 'public';
 const maxFiles = 20_000;
+// Size/DOM ratchets. These are regression budgets, not aspirations: each sits
+// a little above the measured value after the August 2026 sidebar fix
+// (131.3 MiB total HTML, 1.26 MiB largest page, 35.7% sidebar share,
+// ~29.3k tags on the largest lesson). If a change trips one, either the
+// change reintroduced a duplication bug or the corpus legitimately grew —
+// raise the budget consciously in this file, with the new measurement.
+const maxTotalHtmlBytes = 150 * 1024 * 1024;
+const maxPageBytes = 1.5 * 1024 * 1024;
+const maxSidebarShare = 0.45;
+const maxPageElements = 35_000;
 if (!existsSync(root)) throw new Error(`Built site not found: ${root} (run npm run build first)`);
 const built = walkFiles(root);
 const bytes = built.reduce((sum, file) => sum + statSync(file).size, 0);
@@ -403,6 +414,89 @@ if (contentImageAssets.length) {
   problems.push(`${contentImageAssets.length} content image asset(s) remain (only the nine explicit site-chrome icons/logos are allowed)`);
 }
 if (built.length >= maxFiles) problems.push(`${built.length} files meets/exceeds ${maxFiles}`);
+{
+  // Any absolute URL inside executable code is a potential runtime fetch the
+  // static CDN pattern check cannot see (a dynamically created
+  // script.src = "https://…" passed it — sabotage-proven). Scan bundled JS
+  // and inline <script> bodies for URL hosts against a small allowlist of
+  // known-inert strings; a NEW host is a build failure to be explained, not
+  // silently shipped.
+  // Host allowances are scoped by BUNDLE PROVENANCE, not global: a global
+  // allowlist let first-party code fetch("https://www.npmjs.com/…")
+  // (sabotage-proven). The doc-string hosts below appear only inside the
+  // engine bundles, whose contents come from the pinned, npm-audited
+  // MathLive/Compute Engine dependencies — first-party bundles and inline
+  // scripts get the base list only.
+  const BASE_INERT_HOSTS = ['www.w3.org', 'athenaeumpopuli.org'];
+  const ENGINE_INERT_HOSTS = [
+    ...BASE_INERT_HOSTS,
+    'esm.run', // MathLive fallback string; fonts/sounds are self-hosted and soundsDirectory is null
+    'www.npmjs.com', // package doc strings inside the compute-engine bundle
+    'oeis.org', // sequence doc strings inside the compute-engine bundle
+  ];
+  // Pagefind's own bundle (worker, UI, highlight) is excluded: it is a
+  // pinned, npm-audited dependency whose license headers and internal
+  // example.com templates are full of URL strings, and the pattern-based CDN
+  // check above still covers it.
+  const scriptSources = [
+    ...built
+      .filter((file) => /\.m?js$/i.test(file) && !relative(root, file).split(sep).includes('pagefind'))
+      .map((file) => ({
+        label: relative(root, file),
+        allowed: /(?:^|\/)(?:fillin|graphplot)-engine\./.test(relative(root, file)) ? ENGINE_INERT_HOSTS : BASE_INERT_HOSTS,
+        text: readFileSync(file, 'utf8'),
+      })),
+    ...htmlDocuments.flatMap((document, index) => [...document.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)]
+      .map((match) => ({ label: `inline script (document ${index})`, allowed: BASE_INERT_HOSTS, text: match[1] }))),
+  ];
+  // Absolute AND protocol-relative forms: on the HTTPS site,
+  // src="//host/x.js" loads executable HTTPS code exactly like
+  // src="https://host/x.js" (sabotage-proven bypass of the https?-only
+  // pattern). JSON-style escaped slashes are normalized first so
+  // "\/\/host" cannot slip through, which also collapses the regex-literal
+  // text "\/\//i.test(…)" into a harmless triple slash. Protocol-relative
+  // matches require a dotted host so "//"-comment prose does not
+  // false-positive.
+  const offenders = new Map();
+  for (const { label, allowed, text } of scriptSources) {
+    const allowedSet = new Set(allowed);
+    const normalized = text.replace(/\\\//g, '/');
+    for (const match of normalized.matchAll(/(?:https?:|[^:\w/])\/\/([a-z0-9-]+(?:\.[a-z0-9-]+)+)/gi)) {
+      const host = match[1].toLowerCase();
+      if (!allowedSet.has(host)) offenders.set(host, label);
+    }
+  }
+  if (offenders.size) {
+    const detail = [...offenders.entries()].sort().map(([host, label]) => `${host} (${label})`).join(', ');
+    problems.push(`executable code references unexpected host(s): ${detail}`);
+  }
+}
+{
+  // Artifact size/DOM ratchets (see the budget constants at the top).
+  const totalHtmlBytes = htmlDocuments.reduce((sum, document) => sum + Buffer.byteLength(document), 0);
+  if (totalHtmlBytes > maxTotalHtmlBytes) {
+    problems.push(`total HTML ${(totalHtmlBytes / 1048576).toFixed(1)} MiB exceeds the ${(maxTotalHtmlBytes / 1048576).toFixed(0)} MiB budget`);
+  }
+  let sidebarBytes = 0;
+  let largestPageBytes = 0;
+  let largestPageElements = 0;
+  for (const document of htmlDocuments) {
+    largestPageBytes = Math.max(largestPageBytes, Buffer.byteLength(document));
+    largestPageElements = Math.max(largestPageElements, (document.match(/<[a-zA-Z]/g) || []).length);
+    const aside = document.match(/<aside\b[\s\S]*?<\/aside>/);
+    if (aside) sidebarBytes += Buffer.byteLength(aside[0]);
+  }
+  if (largestPageBytes > maxPageBytes) {
+    problems.push(`largest page ${(largestPageBytes / 1048576).toFixed(2)} MiB exceeds the ${(maxPageBytes / 1048576).toFixed(2)} MiB budget`);
+  }
+  if (largestPageElements > maxPageElements) {
+    problems.push(`largest page has ${largestPageElements} elements, over the ${maxPageElements} budget`);
+  }
+  const sidebarShare = totalHtmlBytes ? sidebarBytes / totalHtmlBytes : 0;
+  if (sidebarShare > maxSidebarShare) {
+    problems.push(`sidebars are ${(sidebarShare * 100).toFixed(1)}% of HTML, over the ${(maxSidebarShare * 100).toFixed(0)}% budget (duplicated navigation regression)`);
+  }
+}
 const katexCssPath = join(root, 'katex', 'katex.min.css');
 if (!existsSync(katexCssPath)) {
   problems.push('vendored KaTeX CSS missing');
@@ -422,6 +516,82 @@ if (!existsSync(katexCssPath)) {
   }
 }
 if (!existsSync(join(root, 'pagefind', 'pagefind.js'))) problems.push('Pagefind browser bundle missing');
+// The security/caching header contract ships as a static asset. Existence
+// alone proved sabotage-able (an empty _headers passed), so parse the file
+// and assert the actual contract BEFORE deploy — the post-deploy smoke test
+// only confirms the edge served what this already validated.
+{
+  const headersPath = join(root, '_headers');
+  if (!existsSync(headersPath)) {
+    problems.push('_headers file missing from the artifact');
+  } else {
+    const rules = new Map();
+    let currentPath = null;
+    for (const line of readFileSync(headersPath, 'utf8').split('\n')) {
+      if (!line.trim() || line.trim().startsWith('#')) continue;
+      if (!/^\s/.test(line)) {
+        currentPath = line.trim();
+        if (!rules.has(currentPath)) rules.set(currentPath, new Map());
+      } else if (currentPath) {
+        const [name, ...rest] = line.trim().split(':');
+        rules.get(currentPath).set(name.trim().toLowerCase(), rest.join(':').trim());
+      }
+    }
+    const requireHeader = (path, name, pattern, describe) => {
+      const value = rules.get(path)?.get(name.toLowerCase());
+      if (value === undefined) problems.push(`_headers: ${path} is missing ${name}`);
+      else if (pattern && !pattern.test(value)) problems.push(`_headers: ${path} ${name} is "${value}", expected ${describe || pattern}`);
+    };
+    // Values are asserted SEMANTICALLY, not just for presence: a syntactic
+    // gate accepted max-age=1000 HSTS, unsafe-url referrers, and camera=*
+    // permissions (sabotage-proven weak substitutions).
+    const hstsStrong = (value) => {
+      const maxAge = Number(/max-age=(\d+)/.exec(value)?.[1] ?? 0);
+      return maxAge >= 31536000;
+    };
+    requireHeader('/*', 'Strict-Transport-Security', { test: hstsStrong }, 'max-age of at least one year');
+    requireHeader('/*', 'X-Content-Type-Options', /^nosniff$/i);
+    // Exactly the canonical value, not merely "not obviously unsafe":
+    // SAMEORIGIN would be a silent policy downgrade from DENY.
+    requireHeader('/*', 'X-Frame-Options', /^DENY$/i, 'exactly DENY');
+    requireHeader('/*', 'Referrer-Policy', /^(no-referrer|same-origin|strict-origin|strict-origin-when-cross-origin)$/i, 'a strict policy (never unsafe-url / origin-when-cross-origin)');
+    // Every directive must have an EMPTY allowlist (camera=() blocks;
+    // camera=* grants), AND the canonical directive set must be present — a
+    // policy containing only accelerometer=() otherwise passed while
+    // silently dropping the camera/microphone/geolocation blocks.
+    const permissionsCanonical = (value) => {
+      if (!/^[a-z-]+=\(\)(?:\s*,\s*[a-z-]+=\(\))*$/i.test(value)) return false;
+      const directives = new Set(value.toLowerCase().match(/[a-z-]+(?==\(\))/g) || []);
+      return ['camera', 'microphone', 'geolocation'].every((name) => directives.has(name));
+    };
+    requireHeader('/*', 'Permissions-Policy', { test: permissionsCanonical }, 'directive=() entries including camera, microphone, and geolocation');
+    requireHeader('/*', 'Cross-Origin-Opener-Policy', /^same-origin$/i);
+    const immutableYear = (value) => /(?:^|\b)immutable\b/.test(value)
+      && /\bpublic\b/.test(value)
+      && Number(/max-age=(\d+)/.exec(value)?.[1] ?? 0) >= 31536000;
+    requireHeader('/js/*', 'Cache-Control', { test: immutableYear }, 'public, immutable, max-age of at least one year');
+    requireHeader('/css/compiled/*', 'Cache-Control', { test: immutableYear }, 'public, immutable, max-age of at least one year');
+
+    // Year-long immutable caching is only safe because those URLs change
+    // with their content. Couple the two: every asset under an immutable
+    // prefix must carry its own sha256 in its filename — a fingerprinting
+    // regression would otherwise pin stale JavaScript in browsers for a
+    // year. (VERSION and directories are not cached responses.)
+    for (const prefix of ['js', join('css', 'compiled')]) {
+      for (const file of built.filter((f) => f.startsWith(join(root, prefix) + sep))) {
+        const name = file.slice(file.lastIndexOf(sep) + 1);
+        if (name === 'VERSION') continue;
+        const hash = /\.([0-9a-f]{64})\.[a-z]+$/.exec(name)?.[1];
+        if (!hash) {
+          problems.push(`immutable-cached asset is not content-hashed: ${relative(root, file)}`);
+          continue;
+        }
+        const actual = createHash('sha256').update(readFileSync(file)).digest('hex');
+        if (actual !== hash) problems.push(`content hash mismatch on ${relative(root, file)} (name says ${hash.slice(0, 12)}…, content is ${actual.slice(0, 12)}…)`);
+      }
+    }
+  }
+}
 if (problems.length) {
   console.error(`✖ build audit failed: ${problems.join('; ')}`);
   process.exit(1);

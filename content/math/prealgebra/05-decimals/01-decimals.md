@@ -200,12 +200,14 @@ So, twenty-four thousandths is written $0.024$.
 {{< fillin
   question="Write 'thirteen and sixty-eight hundredths' as a decimal."
   answer="13.68"
+  answerForm="decimal"
   hint="The word before 'and' is the whole number; the two digits after it fill the hundredths places."
 >}}
 
 {{< fillin
   question="Write 'fifty-eight thousandths' as a decimal."
   answer="0.058"
+  answerForm="decimal"
   hint="There's no 'and,' so there's no whole-number part — start with 0. and fill three places for thousandths."
 >}}
 

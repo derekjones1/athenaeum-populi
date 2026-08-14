@@ -144,7 +144,7 @@ $$
 {{< fillin
   question="Simplify: $\left(\tfrac{7}{15} + \tfrac{5}{8}\right) + \tfrac{3}{8}$. Enter your answer as an improper fraction."
   answer="\frac{22}{15}"
-  answerForm="fraction lowest-terms"
+  answerForm="fraction improper-fraction lowest-terms"
   answerDisplay="$\tfrac{22}{15}$"
   hint="Regroup so the two eighths add first: $\tfrac{5}{8} + \tfrac{3}{8} = 1$. Then add $\tfrac{7}{15} + 1$."
 >}}
@@ -152,7 +152,7 @@ $$
 {{< fillin
   question="Simplify: $\left(\tfrac{2}{9} + \tfrac{7}{12}\right) + \tfrac{5}{12}$. Enter your answer as an improper fraction."
   answer="\frac{11}{9}"
-  answerForm="fraction lowest-terms"
+  answerForm="fraction improper-fraction lowest-terms"
   answerDisplay="$\tfrac{11}{9}$"
   hint="Regroup so the two twelfths add first: $\tfrac{7}{12} + \tfrac{5}{12} = 1$. Then add $\tfrac{2}{9} + 1$."
 >}}

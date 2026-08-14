@@ -51,6 +51,7 @@ leave the ratio in (b) as an improper fraction.
 {{< fillin
   question="Write each ratio as a fraction, fully simplified: 21 to 56"
   answer="\frac{3}{8}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{8}$"
   hint="Write $\tfrac{21}{56}$ and divide the numerator and denominator by their greatest common factor, $7$."
 >}}
@@ -58,6 +59,7 @@ leave the ratio in (b) as an improper fraction.
 {{< fillin
   question="Write each ratio as a fraction, fully simplified: 48 to 32"
   answer="\frac{3}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{2}$"
   hint="Write $\tfrac{48}{32}$ and divide the numerator and denominator by their greatest common factor, $16$. Leave the result as an improper fraction."
 >}}
@@ -104,6 +106,7 @@ $0.54$ is equivalent to $\tfrac{5}{1}$.
 {{< fillin
   question="Write each ratio as a fraction of whole numbers, fully simplified: 4.6 to 11.5"
   answer="\frac{2}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{5}$"
   hint="Move both decimal points 1 place to the right ($46$ to $115$), then simplify."
 >}}
@@ -111,6 +114,7 @@ $0.54$ is equivalent to $\tfrac{5}{1}$.
 {{< fillin
   question="Write each ratio as a fraction of whole numbers, fully simplified: 2.3 to 0.69"
   answer="\frac{10}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{10}{3}$"
   hint="Move both decimal points 2 places to the right ($230$ to $69$), then simplify."
 >}}
@@ -118,6 +122,7 @@ $0.54$ is equivalent to $\tfrac{5}{1}$.
 {{< fillin
   question="Write each ratio as a fraction of whole numbers, fully simplified: 3.4 to 15.3"
   answer="\frac{2}{9}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{9}$"
   hint="Move both decimal points 1 place to the right ($34$ to $153$), then simplify."
 >}}
@@ -137,6 +142,7 @@ $\tfrac{10}{19}$.
 {{< fillin
   question="Write each ratio as a fraction: $1\tfrac{3}{4}$ to $2\tfrac{5}{8}$"
   answer="\frac{2}{3}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{2}{3}$"
   hint="Convert both mixed numbers to improper fractions ($\tfrac{7}{4}$ and $\tfrac{21}{8}$), then divide by inverting and multiplying."
 >}}
@@ -144,6 +150,7 @@ $\tfrac{10}{19}$.
 {{< fillin
   question="Write each ratio as a fraction: $1\tfrac{1}{8}$ to $2\tfrac{3}{4}$"
   answer="\frac{9}{22}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{9}{22}$"
   hint="Convert both mixed numbers to improper fractions ($\tfrac{9}{8}$ and $\tfrac{11}{4}$), then divide by inverting and multiplying."
 >}}
@@ -172,6 +179,7 @@ or raise his HDL cholesterol.
 {{< fillin
   question="Find the patient's ratio of total cholesterol to HDL cholesterol, fully simplified as a fraction. Total cholesterol is 185 mg/dL and HDL cholesterol is 40 mg/dL."
   answer="\frac{37}{8}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{37}{8}$"
   hint="Write the ratio as $\tfrac{\text{total}}{\text{HDL}} = \tfrac{185}{40}$, then simplify by dividing both by $5$."
 >}}
@@ -179,6 +187,7 @@ or raise his HDL cholesterol.
 {{< fillin
   question="Find the patient's ratio of total cholesterol to HDL cholesterol, fully simplified as a fraction. Total cholesterol is 204 mg/dL and HDL cholesterol is 38 mg/dL."
   answer="\frac{102}{19}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{102}{19}$"
   hint="Write the ratio as $\tfrac{\text{total}}{\text{HDL}} = \tfrac{204}{38}$, then simplify by dividing both by $2$."
 >}}
@@ -210,6 +219,7 @@ guidelines.
 {{< fillin
   question="Find the ratio of the first length to the second length, fully simplified: 32 inches to 1 foot"
   answer="\frac{8}{3}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{8}{3}$"
   hint="Convert $1$ foot to $12$ inches, then simplify $\tfrac{32}{12}$ by dividing out the common factor $4$."
 >}}
@@ -217,6 +227,7 @@ guidelines.
 {{< fillin
   question="Find the ratio of the first length to the second length, fully simplified: 1 foot to 54 inches"
   answer="\frac{2}{9}"
+  answerForm="lowest-terms"
   answerDisplay="$\tfrac{2}{9}$"
   hint="Convert $1$ foot to $12$ inches, then simplify $\tfrac{12}{54}$ by dividing out the common factor $6$."
 >}}
@@ -249,6 +260,7 @@ equivalent to $\tfrac{175\text{ miles}}{3\text{ hours}}$.
 {{< fillin
   question="Write the rate as a fraction, fully simplified: 492 miles in 8 hours. Enter just the simplified numeric ratio, e.g. $\tfrac{3}{2}$ for 3 miles in 2 hours."
   answer="\frac{123}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="123 miles $/ 2$ hours"
   hint="Simplify $\tfrac{492}{8}$ by dividing both by their greatest common factor, $4$."
 >}}
@@ -256,6 +268,7 @@ equivalent to $\tfrac{175\text{ miles}}{3\text{ hours}}$.
 {{< fillin
   question="Write the rate as a fraction, fully simplified: 242 miles in 6 hours. Enter just the simplified numeric ratio, e.g. $\tfrac{3}{2}$ for 3 miles in 2 hours."
   answer="\frac{121}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="121 miles $/ 3$ hours"
   hint="Simplify $\tfrac{242}{6}$ by dividing both by their greatest common factor, $2$."
 >}}
@@ -482,6 +495,7 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
 {{< fillin
   question="Write the ratio as a fraction, fully simplified: 20 to 36"
   answer="\frac{5}{9}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{9}$"
   hint="Write $\tfrac{20}{36}$, then divide the numerator and denominator by their greatest common factor, $4$."
 >}}
@@ -489,6 +503,7 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
 {{< fillin
   question="Write the ratio as a fraction of whole numbers, fully simplified: 0.56 to 2.8"
   answer="\frac{1}{5}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{5}$"
   hint="The numerator has two decimal places, so move both decimal points 2 places to the right ($56$ to $280$), then simplify."
 >}}
@@ -496,6 +511,7 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
 {{< fillin
   question="Write the ratio as a fraction, fully simplified: $1\tfrac{2}{3}$ to $2\tfrac{5}{6}$"
   answer="\frac{10}{17}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{10}{17}$"
   hint="Rewrite both mixed numbers as improper fractions ($\tfrac{5}{3}$ and $\tfrac{17}{6}$), then divide by inverting the divisor and multiplying."
 >}}
@@ -503,6 +519,7 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
 {{< fillin
   question="Write the ratio as a fraction, fully simplified: total cholesterol of 175 to HDL cholesterol of 45"
   answer="\frac{35}{9}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{35}{9}$"
   hint="Put the total cholesterol in the numerator and the HDL cholesterol in the denominator, then divide both by $5$. Leave the result as an improper fraction."
 >}}
@@ -510,6 +527,7 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
 {{< fillin
   question="Write the ratio as a fraction, fully simplified: 27 inches to 1 foot"
   answer="\frac{9}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{9}{4}$"
   hint="Both quantities must be measured in the same unit — convert $1$ foot to $12$ inches, then simplify $\tfrac{27}{12}$."
 >}}
@@ -519,6 +537,7 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
 {{< fillin
   question="Write the rate as a fraction, fully simplified: 140 calories per 12 ounces. Enter just the simplified numeric ratio, e.g. $\tfrac{3}{2}$ for 3 calories per 2 ounces."
   answer="\frac{35}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="35 calories $/ 3$ ounces"
   hint="Put the calories in the numerator and the ounces in the denominator, then divide both by $4$."
 >}}
@@ -526,6 +545,7 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
 {{< fillin
   question="Write the rate as a fraction of whole numbers, fully simplified: 8.2 pounds per 3 square inches. Enter just the simplified numeric ratio, e.g. $\tfrac{3}{2}$ for 3 pounds per 2 square inches."
   answer="\frac{41}{15}"
+  answerForm="fraction lowest-terms"
   answerDisplay="41 lbs. $/ 15$ sq. in."
   hint="Clear the decimal first by moving both decimal points 1 place to the right ($82$ over $30$), then simplify."
 >}}
@@ -533,6 +553,7 @@ as a fraction. **unit rate** — a rate with a denominator of $1$ unit.
 {{< fillin
   question="Write the rate as a fraction, fully simplified: 488 miles in 7 hours. Enter just the simplified numeric ratio, e.g. $\tfrac{3}{2}$ for 3 miles in 2 hours."
   answer="\frac{488}{7}"
+  answerForm="fraction lowest-terms"
   answerDisplay="488 miles $/ 7$ hours"
   hint="Check whether $488$ and $7$ share a common factor before you try to reduce — $7$ is prime."
 >}}

@@ -296,12 +296,15 @@ is irrational.
   hint="Look for the number whose digits settle into an endlessly repeating block, rather than stopping outright."
 >}}
 
-{{< fillin
-  question="Among the numbers $0.29$, $0.8$ with a repeating $6$, and $2.515115111\ldots$, which one is irrational? Give that number."
-  answer="2.515115111\ldots"
-  answerDisplay="$2.515115111\ldots$"
+{{< multiplechoice
+  question="Among these numbers, which one is irrational?"
+  answer="$2.515115111\ldots$"
   hint="Irrational decimals never settle into a stopping point or a repeating block — $2.515115111\ldots$ keeps adding one more $1$ each time."
 >}}
+$0.29$
+$0.8\overline{6}$
+$2.515115111\ldots$
+{{< /multiplechoice >}}
 
 **Example.** For each number given, identify whether it is rational or
 irrational: (a) $\sqrt{36}$ (b) $\sqrt{44}$.

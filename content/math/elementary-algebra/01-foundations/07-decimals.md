@@ -111,12 +111,14 @@ $14.024$. So "fourteen and twenty-four thousandths" is written $14.024$.
 {{< fillin
   question="Write as a decimal: thirteen and sixty-eight thousandths."
   answer="13.068"
+  answerForm="decimal"
   hint="'Thousandths' means three digits after the decimal point. The whole-number part goes before the decimal point, matching the word before 'and.'"
 >}}
 
 {{< fillin
   question="Write as a decimal: five and ninety-four thousandths."
   answer="5.094"
+  answerForm="decimal"
   hint="'Thousandths' means three digits after the decimal point. Fill any empty place with a zero."
 >}}
 
@@ -644,6 +646,7 @@ repeating block. **percent** — a ratio whose denominator is $100$.
 {{< fillin
   question="Write as a decimal: negative eleven and nine ten-thousandths."
   answer="-11.0009"
+  answerForm="decimal"
   hint="'Ten-thousandths' means four digits after the decimal point. Write the whole-number part before the decimal, then attach the negative sign to the whole result."
 >}}
 

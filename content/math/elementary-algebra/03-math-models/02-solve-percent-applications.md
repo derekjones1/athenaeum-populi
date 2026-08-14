@@ -161,14 +161,16 @@ If the tip will be $18\%$ of the total bill, how much tip should he leave?
 
 {{< fillin
   question="Cierra and her sister enjoyed a dinner in a restaurant and the bill was \$81.50. If she wants to leave 18% of the total bill as her tip, how much should she leave?"
-  answer="0.18 \cdot 81.50"
+  answer="14.67"
+  answerForm="decimal"
   answerDisplay="\$14.67"
   hint="Let t = the tip amount. Translate to $t = 0.18 \cdot 81.50$, then multiply."
 >}}
 
 {{< fillin
   question="Kimngoc had lunch at her favorite restaurant. She wants to leave 15% of the total bill as her tip. If her bill was \$14.40, how much will she leave for the tip?"
-  answer="0.15 \cdot 14.40"
+  answer="2.16"
+  answerForm="decimal"
   answerDisplay="\$2.16"
   hint="Let t = the tip amount. Translate to $t = 0.15 \cdot 14.40$, then multiply."
 >}}
@@ -369,14 +371,16 @@ $$I = ? \qquad P = \text{\textdollar}12{,}500 \qquad r = 4\% \qquad t = 5 \text{
 
 {{< fillin
   question="Areli invested a principal of \$950 in her bank account with interest rate 3%. How much interest did she earn in 5 years?"
-  answer="950 \cdot 0.03 \cdot 5"
+  answer="142.50"
+  answerForm="decimal"
   answerDisplay="\$142.50"
   hint="Use I = Prt with $P = 950$, $r = 0.03$, and $t = 5$."
 >}}
 
 {{< fillin
   question="Susana invested a principal of \$36,000 in her bank account with interest rate 6.5%. How much interest did she earn in 3 years?"
-  answer="36000 \cdot 0.065 \cdot 3"
+  answer="7020"
+  answerForm="decimal"
   answerDisplay="\$7,020"
   hint="Use I = Prt with $P = 36{,}000$, $r = 0.065$, and $t = 3$."
 >}}
