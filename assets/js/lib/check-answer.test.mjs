@@ -14,6 +14,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   ANSWER_FORM_TOKENS, checkAnswer, checkFormAsGraded, describeAnswerForm, parseAnswerForm,
+  preprocess,
 } from './check-answer.mjs';
 
 const ANSWER = 'x^2 + 5x + 6';
@@ -293,6 +294,11 @@ const formCases = [
   // mixed vs improper
   ['4\\frac{1}{2}', '4\\frac{1}{2}', 'mixed-number', 'correct'],
   ['\\frac{9}{2}', '4\\frac{1}{2}', 'mixed-number', 'form'],
+  // "Write 6.07 as a fraction or mixed number" — the source offers the
+  // choice, so both writings pass and only the printed decimal fails
+  ['6\\frac{7}{100}', '6\\frac{7}{100}', 'fraction-or-mixed-number', 'correct'],
+  ['\\frac{607}{100}', '6\\frac{7}{100}', 'fraction-or-mixed-number', 'correct'],
+  ['6.07', '6\\frac{7}{100}', 'fraction-or-mixed-number', 'form'],
   ['\\frac{8}{3}', '\\frac{8}{3}', 'improper-fraction lowest-terms', 'correct'],
   ['2\\frac{2}{3}', '\\frac{8}{3}', 'improper-fraction lowest-terms', 'form'],
   ['\\frac{24}{9}', '\\frac{8}{3}', 'improper-fraction lowest-terms', 'form'],
@@ -306,22 +312,116 @@ const formCases = [
   ['62\\%', '62\\%', 'percent', 'correct'],
   ['0.62', '62\\%', 'percent', 'form'],
   ['\\frac{62}{100}', '62\\%', 'percent', 'form'],
+  // …and the sign has to be the response's own: a decimal with a zero percent
+  // term stapled on ends in `\%` while saying 1.85, and `1.85\cdot100\%` is
+  // the same decimal wearing the conversion the question asked for.
+  ['185\\%', '185\\%', 'percent', 'correct'],
+  ['1.85+0\\%', '185\\%', 'percent', 'form'],
+  ['1.85\\cdot100\\%', '185\\%', 'percent', 'form'],
+  ['9.3\\%', '9.3\\%', 'percent', 'correct'],
+  ['-30\\%', '-30\\%', 'percent', 'correct'],
+  // …and the sign may be spaced off the numeral. TeX's ignorable spacing is
+  // not a shape: a response is not a different answer for carrying a control
+  // space or a quad, which preprocess() drops the way it already drops
+  // `\,`/`\;`/`\:`/`\!` and `~`.
+  ['9.3\\ \\%', '9.3\\%', 'percent', 'correct'],
+  ['9.3\\quad\\%', '9.3\\%', 'percent', 'correct'],
+  // The other half of dropping them: a spacing macro is spelled like a
+  // control sequence, so a check that reads `\[a-zA-Z]` as symbolic ink
+  // counted `\quad` as the symbol — and the decimal the exact tokens exist to
+  // refuse passed by holding a space. Dropped, the logarithm still reads as
+  // one and the decimal still reads as a decimal.
+  ['2.0794415416798357\\quad', '\\ln 8', 'exact-log', 'form'],
+  ['\\ln 8\\quad', '\\ln 8', 'exact-log', 'correct'],
+  // A response that is ALL zero terms keeps its own writing: `0\%` is the
+  // percent answer to a no-change question, and stripping it would leave the
+  // token nothing to read.
+  ['0\\%', '0\\%', 'percent', 'correct'],
+  ['0', '0\\%', 'percent', 'form'],
+  // ---- the closed-world notation grammars ---------------------------------
+  // Each of these tokens names ONE way of writing an answer whose value the
+  // prompt already prints, so each reads the WHOLE response as a grammar
+  // (formShape) rather than asking whether some term contains a token. Every
+  // authored corpus answer must self-grade, and the printed source notation
+  // must not pass.
+  //
   // radical ↔ rational-exponent conversions are value-identical by design;
   // each direction must reject the printed source notation
   ['p^{1/3}', 'p^{1/3}', 'rational-exponent', 'correct'],
   ['\\sqrt[3]{p}', 'p^{1/3}', 'rational-exponent', 'form'],
+  // …with the coefficient and the compound bases the corpus authors
+  ['3 \\left(6 y\\right)^{\\tfrac{1}{4}}', '3 \\left(6 y\\right)^{\\tfrac{1}{4}}', 'rational-exponent', 'correct'],
+  ['\\left(\\tfrac{2 m}{3 n}\\right)^{\\tfrac{5}{2}}', '\\left(\\tfrac{2 m}{3 n}\\right)^{\\tfrac{5}{2}}', 'rational-exponent', 'correct'],
   ['\\sqrt{t}', '\\sqrt{t}', 'radical', 'correct'],
+  ['\\sqrt[3]{m}', '\\sqrt[3]{m}', 'radical', 'correct'],
   ['t^{1/2}', '\\sqrt{t}', 'radical', 'form'],
+  // …in every spelling of a zero coefficient, because a `+0\sqrt1` term is
+  // the printed exponent notation with a radical stapled on: \cdot, \times,
+  // juxtaposition, a spacing command, a subtracted zero and a decimal zero
+  // all multiply out to nothing. A grammar that requires ONE term refuses
+  // every one of them for the same reason — there are two.
+  ['t^{1/2}+0\\sqrt1', '\\sqrt{t}', 'radical', 'form'],
+  ['t^{1/2}+0\\cdot\\sqrt{t}', '\\sqrt{t}', 'radical', 'form'],
+  ['t^{1/2}+0\\times\\sqrt{t}', '\\sqrt{t}', 'radical', 'form'],
+  ['t^{1/2}+0\\,\\sqrt{t}', '\\sqrt{t}', 'radical', 'form'],
+  ['t^{1/2}-0\\sqrt{t}', '\\sqrt{t}', 'radical', 'form'],
+  ['t^{1/2}+0.0\\sqrt{t}', '\\sqrt{t}', 'radical', 'form'],
+  // `1+\sqrt2` and `0.5\sqrt2` moved contracts. They say "the answer is an
+  // exact radical expression", which is not the "write THIS as a radical"
+  // conversion `radical` grades — no corpus field keys them there, and a
+  // token that accepted both could not refuse `t^{1/2}\sqrt1`.
+  // `simplified-radical` is where that concept lives, and its no-decimal rule
+  // refuses the decimal coefficient outright.
+  ['1+\\sqrt{2}', '1+\\sqrt{2}', 'simplified-radical', 'correct'],
+  ['0.5\\sqrt{2}', '0.5\\sqrt{2}', 'simplified-radical', 'form'],
+  // the mirror attack on the other direction: `8^{1/3}` is 2, and neither a
+  // bare 2 nor 2 wearing an exponent that evaluates to an integer is
+  // rational-exponent notation
+  ['2+0\\cdot x^2', '8^{1/3}', 'rational-exponent', 'form'],
+  ['2', '8^{1/3}', 'rational-exponent', 'form'],
+  ['2^1', '8^{1/3}', 'rational-exponent', 'form'],
+  ['2\\cdot1^{1/2}', '8^{1/3}', 'rational-exponent', 'form'],
   // exact form — a full-precision machine decimal is value-equal, so only
   // the shape can reject it
-  ['\\sqrt{130}', '\\sqrt{130}', 'exact', 'correct'],
-  ['11.40175425099138', '\\sqrt{130}', 'exact', 'form'],
+  ['\\sqrt{130}', '\\sqrt{130}', 'exact-radical', 'correct'],
+  ['11.40175425099138', '\\sqrt{130}', 'exact-radical', 'form'],
+  // …and so is the same approximation wearing a fraction bar. This fixture is
+  // why `exact-radical` exists rather than plain `simplified-radical`: that
+  // predicate PASSES this writing, because it holds no radical to inspect.
+  ['\\frac{1140175425099138}{100000000000000}', '\\sqrt{130}', 'exact-radical', 'form'],
+  // `130^{1/2}` is exact — and is not the simplest radical form the Distance
+  // Formula exercise asks for. The narrowing is deliberate, and the prompt
+  // now says so ("Enter the exact form, as a simplified radical").
+  ['130^{\\frac{1}{2}}', '\\sqrt{130}', 'exact-radical', 'form'],
+  ['\\ln 8+4', '\\ln 8+4', 'exact-log', 'correct'],
+  ['\\ln 8', '\\ln 8', 'exact-log', 'correct'],
+  ['\\ln 9+2', '\\ln 9+2', 'exact-log', 'correct'],
+  ['\\frac{\\log 43}{\\log 7}', '\\frac{\\log 43}{\\log 7}', 'exact-log', 'correct'],
+  ['\\frac{\\ln 5}{2}', '\\frac{\\ln 5}{2}', 'exact-log', 'correct'],
+  // A calculator readout is refused however it is dressed — plain, retyped
+  // WITH the machine's ×10⁰ exponent (which the Compute Engine reads as that
+  // number, so the value ladder accepts it), or with a logarithm multiplied
+  // by zero stapled on. One rule does all of it: the response writes a
+  // decimal point, so the response is an approximation.
+  ['2.0794415416798357', '\\ln 8', 'exact-log', 'form'],
+  ['2.0794415416798357e0', '\\ln 8', 'exact-log', 'form'],
+  ['2.0794415416798357E0', '\\ln 8', 'exact-log', 'form'],
+  ['2.0794415416798357+0\\cdot\\log 7', '\\ln 8', 'exact-log', 'form'],
   // summation notation — the printed expanded sum is value-equal to sigma
   ['\\sum_{n=1}^{5}(-1)^{n+1}n^2', '\\sum_{n=1}^{5}(-1)^{n+1}n^2', 'summation', 'correct'],
   ['1-4+9-16+25', '\\sum_{n=1}^{5}(-1)^{n+1}n^2', 'summation', 'form'],
+  // …and a sigma worth nothing does not make the expanded sum summation
+  // notation, however the zero coefficient is spelled
+  ['1-4+9-16+25+0\\cdot\\sum_{n=1}^{1}n', '\\sum_{n=1}^{5}(-1)^{n+1}n^2', 'summation', 'form'],
+  ['1-4+9-16+25+0\\sum_{n=1}^{1}n', '\\sum_{n=1}^{5}(-1)^{n+1}n^2', 'summation', 'form'],
+  ['\\sum_{n=1}^{5}\\frac{1}{2^n}', '\\sum_{n=1}^{5}\\frac{1}{2^n}', 'summation', 'correct'],
+  ['\\sum_{n=1}^{5}(-1)^n2n', '\\sum_{n=1}^{5}(-1)^n2n', 'summation', 'correct'],
   // condense-to-one-logarithm — the printed multi-log sum is value-equal
   ['\\log_2\\frac{5x}{y}', '\\log_2\\frac{5x}{y}', 'single-logarithm', 'correct'],
   ['\\log_2 5+\\log_2 x-\\log_2 y', '\\log_2\\frac{5x}{y}', 'single-logarithm', 'form'],
+  // a coefficient outside the logarithm is the Power Property left unapplied
+  ['2\\log_2\\sqrt{5x/y}', '\\log_2\\frac{5x}{y}', 'single-logarithm', 'form'],
+  ['\\frac{1}{2}\\log_2\\frac{25x^2}{y^2}', '\\log_2\\frac{5x}{y}', 'single-logarithm', 'form'],
   // simplified-radical rejects explicit same-index products, powered radical
   // groups, and negative numeric radicands — while conjugate-rationalized
   // fraction keys keep their authored factored shapes
@@ -329,6 +429,28 @@ const formCases = [
   ['\\left(6 - \\sqrt{5}\\right)^2', '41 - 12\\sqrt{5}', 'simplified-radical', 'form'],
   ['\\sqrt{6}\\left(1 + 3\\sqrt{6}\\right)', '\\sqrt{6}+18', 'simplified-radical', 'form'],
   ['\\sqrt{-11}', 'i\\sqrt{11}', 'simplified-radical', 'form'],
+  // exponent notation spells the radical in the rational-exponent exercises'
+  // notation, a decimal literal is an approximation, and a bare-juxtaposed
+  // same-index pair is the Product Property left unapplied
+  ['\\left(-11\\right)^{\\frac12}', 'i\\sqrt{11}', 'simplified-radical', 'form'],
+  ['3.3166247903554i', 'i\\sqrt{11}', 'simplified-radical', 'form'],
+  // A NEGATIVE fractional exponent is the same notation with the reciprocal
+  // taken — and it is exactly how the rationalized keys can be retyped:
+  // `3^{-\frac12}` IS `\frac{\sqrt3}{3}`. Every spelling MathLive emits for
+  // the exponent has to be read, braced or not, `\frac` or `/` or a decimal.
+  ['\\frac{\\sqrt{3}}{3}', '\\frac{\\sqrt{3}}{3}', 'simplified-radical', 'correct'],
+  ['3^{-\\frac12}', '\\frac{\\sqrt{3}}{3}', 'simplified-radical', 'form'],
+  ['3^{-\\frac{1}{2}}', '\\frac{\\sqrt{3}}{3}', 'simplified-radical', 'form'],
+  ['3^{-\\tfrac12}', '\\frac{\\sqrt{3}}{3}', 'simplified-radical', 'form'],
+  ['3^{-1/2}', '\\frac{\\sqrt{3}}{3}', 'simplified-radical', 'form'],
+  ['3^{-0.5}', '\\frac{\\sqrt{3}}{3}', 'simplified-radical', 'form'],
+  ['3^{-.5}', '\\frac{\\sqrt{3}}{3}', 'simplified-radical', 'form'],
+  ['3^{+\\frac12}', '\\sqrt{3}', 'simplified-radical', 'form'],
+  // …including with a coefficient in front, the shape a rationalized numerator
+  // takes ($\frac{5\sqrt3}{3}$ is $5\cdot3^{-\frac12}$)
+  ['\\frac{5\\sqrt{3}}{3}', '\\frac{5\\sqrt{3}}{3}', 'simplified-radical', 'correct'],
+  ['5\\cdot3^{-\\frac12}', '\\frac{5\\sqrt{3}}{3}', 'simplified-radical', 'form'],
+  ['4\\sqrt[4]{12y^3}\\sqrt[4]{8y^3}', '8y\\sqrt[4]{6y^2}', 'simplified-radical', 'form'],
   ['\\frac{\\sqrt{10}(\\sqrt{y} + \\sqrt{3})}{y - 3}', '\\frac{\\sqrt{10}(\\sqrt{y} + \\sqrt{3})}{y - 3}', 'simplified-radical', 'correct'],
   // prime factorization — every base must be prime
   ['2\\cdot43', '2\\cdot43', 'prime-product', 'correct'],
@@ -719,6 +841,271 @@ test('answerForm grades the shape as well as the value', async (t) => {
       assert.equal(checkAnswer(student, answer, { form }), expected);
     });
   }
+});
+
+// ---- the decoration attack ------------------------------------------------
+// Ink that changes no value is the universal attack on every predicate that
+// reads a response for a notation TOKEN: the wrong shape keeps its value, the
+// value ladder passes it, and the decoration shows the predicate the notation
+// the response never used.
+//
+// This sweep used to carry only ONE family — a literal zero at the head of a
+// top-level additive term — and that is exactly the family
+// `loadBearingTerms`/`isZeroTerm` knows how to strip. A sweep whose whole
+// contents are the one case the defence handles cannot find the next case, and
+// it did not: 39 further bypasses of `rational-exponent`, `radical` and the old
+// generic `exact` were reachable through the four families added below, the
+// cheapest being two keystrokes (`2^1`).
+//
+// Every wrong-shape fixture in the table above is re-graded with each
+// decoration. None may buy a `correct`. The sweep grows with the table, so a
+// fixture added for a new predicate arrives already attacked.
+const DECORATIONS = [
+  // --- additive, worth a LITERAL zero (the original family) ---------------
+  '+0',
+  '+0\\cdot\\sqrt{2}',
+  '+0\\sqrt{2}',
+  '+0\\cdot\\log 7',
+  '+0\\cdot\\sum_{n=1}^{1}n',
+  '+0\\cdot x^{1/2}',
+  '+0\\%',
+  // …and the same zero wearing redundant grouping or a leading run of zeros.
+  // The padding is chosen by whoever wants it to pass, so `+(0)\sqrt2` and
+  // `+00\sqrt2` buy exactly what `+0\sqrt2` buys unless the detector reads
+  // through the spelling — refusing one keystroke is not a defence.
+  '+(0)\\sqrt{2}',
+  '-(-0)\\sqrt{2}',
+  '+{0}\\cdot\\log 7',
+  '+00\\cdot\\sum_{n=1}^{1}n',
+  // --- additive, worth zero but NOT literally zero ------------------------
+  // A blocklist loses here by construction: `\sqrt4-2` is worth nothing and
+  // is not syntactically trivial, and the next spelling is `\sqrt9-3`.
+  '+\\log 1',
+  '+\\sqrt0',
+  '+\\sqrt4-2',
+  '+\\sqrt9-3',
+  '+\\sum_{n=1}^{1}\\log 1',
+  // --- multiplicative identity, invisible to a top-level additive split ----
+  '\\sqrt1',
+  '\\cdot1^{1/2}',
+  '\\cdot x^0',
+  '\\cdot\\frac{\\log 7}{\\log 7}',
+  '\\cdot(3^0)',
+  '\\cdot\\sqrt[3]{1}',
+  // --- nesting: the decoration below the top level ------------------------
+  '\\cdot(1+\\frac{0}{7}\\sqrt{2})',
+  '\\cdot(1+0\\cdot x^{1/2})',
+  // --- exponent SPELLING, where the value is an integer -------------------
+  // `^{2/2}` reads as a rational exponent to any detector that matches on
+  // ink; by value it is 1.
+  '^1',
+  '^{1}',
+  '^{2/2}',
+  '^{\\frac{3}{3}}',
+];
+const wrongShapeCases = formCases.filter(([, , form, expected]) => form && expected === 'form');
+
+test('no decoration ever buys the shape a fixture is missing', async (t) => {
+  // A token with no wrong-shape fixture is a token this sweep cannot attack;
+  // it has to be one whose predicate reads the WHOLE response (`solved:`,
+  // `denominator:`), or the sweep has quietly stopped covering the map.
+  await t.test('every predicate token in the map is swept', () => {
+    const swept = new Set(wrongShapeCases.flatMap(([, , form]) => form.trim().split(/\s+/)));
+    const unswept = ANSWER_FORM_TOKENS
+      .filter((token) => !token.includes(':') && !swept.has(token));
+    assert.deepEqual(unswept, [], `no wrong-shape fixture exercises: ${unswept.join(', ')}`);
+  });
+
+  for (const [student, answer, form] of wrongShapeCases) {
+    for (const decoration of DECORATIONS) {
+      await t.test(`${student}${decoration}  vs  ${answer}  [${form}]`, () => {
+        assert.notEqual(checkAnswer(`${student}${decoration}`, answer, { form }), 'correct');
+      });
+    }
+  }
+});
+
+// ---- the measured bypasses, as regression cases ---------------------------
+// Every writing below was verified to grade `correct` against the predicates
+// this file replaced — the notation predicates as substring-existence tests
+// over top-level additive terms. They are pinned individually rather than
+// left to the sweep because the sweep only ever appends: several of these
+// wrap, nest, or divide the response instead, and the shape of the attack is
+// the part worth keeping.
+const MEASURED_BYPASSES = [
+  // `rational-exponent`, keyed 8^{1/3} = 2 — 14 writings worth 2
+  ['2^1', '8^{1/3}', 'rational-exponent'],
+  ['2^{1}', '8^{1/3}', 'rational-exponent'],
+  ['2x^0', '8^{1/3}', 'rational-exponent'],
+  ['2(x^{1/2})^0', '8^{1/3}', 'rational-exponent'],
+  ['2(1+\\frac{0}{7}x^{1/2})', '8^{1/3}', 'rational-exponent'],
+  ['2\\cdot1^{1/2}', '8^{1/3}', 'rational-exponent'],
+  ['2\\cdot 1^{0.5}', '8^{1/3}', 'rational-exponent'],
+  ['\\frac{2}{1^{1/2}}', '8^{1/3}', 'rational-exponent'],
+  ['2\\cdot(1+0\\cdot x^{1/2})', '8^{1/3}', 'rational-exponent'],
+  ['2+(0\\cdot x^{1/2})', '8^{1/3}', 'rational-exponent'],
+  ['2\\frac{x^{1/2}}{x^{1/2}}', '8^{1/3}', 'rational-exponent'],
+  ['2^{1}\\cdot1', '8^{1/3}', 'rational-exponent'],
+  ['\\frac{4}{2^1}', '8^{1/3}', 'rational-exponent'],
+  ['2(3^0)', '8^{1/3}', 'rational-exponent'],
+  // `radical`, keyed \sqrt{t} — 10 writings worth \sqrt{t}
+  ['t^{1/2}\\sqrt1', '\\sqrt{t}', 'radical'],
+  ['t^{1/2}\\cdot\\sqrt1', '\\sqrt{t}', 'radical'],
+  ['t^{1/2}\\cdot\\sqrt{1}', '\\sqrt{t}', 'radical'],
+  ['t^{1/2}+\\sqrt1-1', '\\sqrt{t}', 'radical'],
+  ['t^{1/2}+\\sqrt4-2', '\\sqrt{t}', 'radical'],
+  ['t^{1/2}(1+0\\sqrt2)', '\\sqrt{t}', 'radical'],
+  ['t^{1/2}\\cdot\\frac{\\sqrt2}{\\sqrt2}', '\\sqrt{t}', 'radical'],
+  ['\\frac{t^{1/2}}{\\sqrt1}', '\\sqrt{t}', 'radical'],
+  ['t^{1/2}\\sqrt1^0', '\\sqrt{t}', 'radical'],
+  ['t^{1/2}+\\sqrt1^0-1', '\\sqrt{t}', 'radical'],
+  // the old generic `exact`, keyed \ln 8 — every one of these defeated the
+  // token while writing the very decimal it existed to refuse
+  ['2.0794415416798357\\sqrt1', '\\ln 8', 'exact-log'],
+  ['2.0794415416798357+\\log 1', '\\ln 8', 'exact-log'],
+  ['2.0794415416798357+\\sqrt0', '\\ln 8', 'exact-log'],
+  ['2.0794415416798357+\\sqrt4-2', '\\ln 8', 'exact-log'],
+  ['2.0794415416798357^{2/2}', '\\ln 8', 'exact-log'],
+  ['2.0794415416798357\\cdot x^0', '\\ln 8', 'exact-log'],
+  ['2.0794415416798357\\cdot\\frac{\\log 7}{\\log 7}', '\\ln 8', 'exact-log'],
+  // …and keyed \sqrt{130}, where the same decimal wears the same decorations
+  ['11.40175425099138(1+0\\pi)', '\\sqrt{130}', 'exact-radical'],
+  ['\\frac{11.40175425099138\\sqrt4}{2}', '\\sqrt{130}', 'exact-radical'],
+  ['11.40175425099138\\sqrt1', '\\sqrt{130}', 'exact-radical'],
+  ['11.40175425099138+\\log 1', '\\sqrt{130}', 'exact-radical'],
+  ['11.40175425099138+\\sqrt0', '\\sqrt{130}', 'exact-radical'],
+  ['11.40175425099138+\\sqrt9-3', '\\sqrt{130}', 'exact-radical'],
+  ['11.40175425099138^{2/2}', '\\sqrt{130}', 'exact-radical'],
+  ['11.40175425099138\\cdot 1^{1/2}', '\\sqrt{130}', 'exact-radical'],
+];
+
+test('every measured bypass of the old notation predicates is closed', async (t) => {
+  for (const [student, answer, form] of MEASURED_BYPASSES) {
+    await t.test(`${student}  vs  ${answer}  [${form}]`, () => {
+      assert.notEqual(checkAnswer(student, answer, { form }), 'correct');
+    });
+  }
+});
+
+// The shape checks the tools call directly (tools/verify-answers.mjs and
+// tools/verify-replay.mjs read `checkFormAsGraded`), pinned on the writings
+// where a notation predicate has to draw its line exactly.
+test('the notation predicates draw their lines where the evaluator does', async (t) => {
+  await t.test('ignorable spacing is dropped to a space, and only spacing is', () => {
+    // Every always-ignorable spacer reads as nothing a form check may see…
+    for (const spacer of ['\\ ', '\\quad', '\\qquad', '\\space', '\\thinspace', '\\enspace', '~']) {
+      assert.equal(checkFormAsGraded(`9.3${spacer}\\%`, 'percent'), true, spacer);
+      assert.equal(checkFormAsGraded(`2.0794415416798357${spacer}`, 'exact-log'), false, spacer);
+      assert.equal(checkFormAsGraded(`\\ln 8${spacer}`, 'exact-log'), true, spacer);
+    }
+    // …to a SPACE and never to nothing, or dropping one would fuse two
+    // numerals into a third the response never wrote.
+    assert.equal(preprocess('9.\\ 3\\%'), '9. 3\\%');
+    assert.equal(checkFormAsGraded('9.\\ 3\\%', 'percent'), false);
+    // A name that merely STARTS with a spacer's name keeps its head, and the
+    // `\\` this corpus writes as an escaped backslash is never eaten halfway.
+    for (const kept of ['\\spacer', '\\quadratic', 'x\\\\ y', '2\\\\ 3']) {
+      assert.equal(preprocess(kept), kept, kept);
+    }
+  });
+
+  await t.test('a calculator readout is refused however its exponent is written', () => {
+    // The engine reads each of these as a NUMBER (`ce.parse("2e0").json === 2`),
+    // spaces and capital E included, so a machine readout retyped with its
+    // ×10ⁿ exponent is value-equal to the exact answer and only the writing
+    // can refuse it. The exact tokens refuse it on the decimal point, which is
+    // present in every one — no `e`-notation special case is needed, and the
+    // one the generic `exact` token used to carry retired with it.
+    for (const numeral of ['2.0794415416798357e0', '2.0794415416798357E0',
+      '1.5e-3', '2 . 0794415416798357', '.5e3']) {
+      assert.equal(checkFormAsGraded(numeral, 'exact-log'), false, numeral);
+      assert.equal(checkFormAsGraded(numeral, 'exact-radical'), false, numeral);
+    }
+    // A decimal-free numeral carries no decimal point to refuse — the grammar
+    // is what refuses it, because a bare numeral is not a logarithm and not a
+    // radical.
+    for (const numeral of ['2e0', '3e2', '2', '\\frac{4}{2}']) {
+      assert.equal(checkFormAsGraded(numeral, 'exact-log'), false, numeral);
+      assert.equal(checkFormAsGraded(numeral, 'exact-radical'), false, numeral);
+    }
+  });
+
+  await t.test('a signed fractional exponent is exponent notation, not a radical', () => {
+    // `simplified-radical` rejects the notation the rational-exponent
+    // exercises own, in every spelling MathLive emits for the exponent.
+    for (const written of ['3^{-\\frac12}', '3^{-\\frac{1}{2}}', '3^{-\\tfrac12}',
+      '3^{-1/2}', '3^{-0.5}', '3^{-.5}', '3^{+\\frac12}', '3^{\\frac12}']) {
+      assert.equal(checkFormAsGraded(written, 'simplified-radical'), false, written);
+      assert.equal(checkFormAsGraded(written, 'exact-radical'), false, written);
+    }
+    // An INTEGER exponent is not this notation, negative or not: `12^{-15}`
+    // is the authored answer of a quotient-of-powers exercise.
+    for (const written of ['3^{-1}', '3^2', '12^{-15}', 'x^{-3}']) {
+      assert.equal(checkFormAsGraded(written, 'simplified-radical'), true, written);
+    }
+    // …and `rational-exponent` reads the exponent by VALUE, so a fraction
+    // that reduces to an integer is the integer it is worth. This is the
+    // half NON_INTEGER_EXPONENT cannot see: it matches on the fraction bar.
+    for (const written of ['x^{1/2}', 'x^{\\frac{3}{4}}', '(3n)^{1/3}']) {
+      assert.equal(checkFormAsGraded(written, 'rational-exponent'), true, written);
+    }
+    for (const written of ['x^{2/2}', 'x^{\\frac{4}{2}}', 'x^{1}', 'x^0']) {
+      assert.equal(checkFormAsGraded(written, 'rational-exponent'), false, written);
+    }
+    // A TeX argument is a braced group OR one token, and a COMMAND brings its
+    // own arguments — so `x^\frac12` is x to the one-half. Reading only the
+    // command name leaves the exponent as the unreadable string `\frac`, and
+    // the grammar would reject a spelling a paste really produces.
+    for (const [written, token, expected] of [
+      ['x^\\frac12', 'rational-exponent', true],
+      ['x^\\tfrac{3}{4}', 'rational-exponent', true],
+      ['x^\\frac22', 'rational-exponent', false],
+      ['2\\cdot1^\\frac12', 'rational-exponent', false],
+      ['\\sqrt[3]m', 'radical', true],
+      ['\\sqrt t', 'radical', true],
+    ]) {
+      assert.equal(checkFormAsGraded(written, token), expected, written);
+    }
+  });
+
+  await t.test('a percent is a numeral wearing the sign, not any writing ending in one', () => {
+    for (const written of ['185\\%', '9.3\\%', '-30\\%', '\\frac{1}{2}\\%', '12\\frac{1}{2}\\%']) {
+      assert.equal(checkFormAsGraded(written, 'percent'), true, written);
+    }
+    for (const written of ['1.85+0\\%', '1.85\\cdot100\\%', '0.62', 'x\\%', '1.85']) {
+      assert.equal(checkFormAsGraded(written, 'percent'), false, written);
+    }
+    // A response that is nothing BUT zero terms is read as written — `0\%` is
+    // an answer, and a form check must never reject a correct one.
+    assert.equal(checkFormAsGraded('0\\%', 'percent'), true);
+  });
+
+  await t.test('only a term that really is zero is stripped', () => {
+    // `loadBearingTerms`/`isZeroTerm` are what let a response carry a term
+    // worth nothing without that term answering for the response. The
+    // notation grammars no longer use them — a grammar that requires ONE term
+    // has nothing to strip — so `percent` is the probe: it needs exactly one
+    // load-bearing term, and its own term has to BE the percent.
+    //
+    // Each of these carries a second term worth nothing, so `1.85\%` is still
+    // the whole of what the response says.
+    for (const padded of ['1.85\\%+0\\sqrt{2}', '1.85\\%+0\\cdot\\sqrt{2}',
+      '1.85\\%+0\\times\\sqrt{2}', '1.85\\%+0\\,\\sqrt{2}', '1.85\\%-0\\sqrt{2}',
+      '1.85\\%+0.0\\sqrt{2}', '1.85\\%+.00\\sqrt{2}', '1.85\\%+0^{2}\\sqrt{2}',
+      '1.85\\%+(0)\\sqrt{2}', '1.85\\%+00\\cdot\\log 7']) {
+      assert.equal(checkFormAsGraded(padded, 'percent'), true, padded);
+    }
+    // …and each of these carries a term that is NOT zero: a coefficient the
+    // zero only starts (`0.5`), and the two writings whose value is 1 rather
+    // than 0 (`0^0`, `0!`). Stripping one of those would drop real value from
+    // the reading, so the second term stands and the response is not a
+    // percent.
+    for (const real of ['1.85\\%+0.5\\sqrt{2}', '1.85\\%+0.05\\sqrt{2}',
+      '1.85\\%+0.0001\\sqrt{2}', '1.85\\%+0^0\\sqrt{2}', '1.85\\%+0!\\sqrt{2}',
+      '1.85\\%+\\sqrt{2}']) {
+      assert.equal(checkFormAsGraded(real, 'percent'), false, real);
+    }
+  });
 });
 
 test('checkFormAsGraded reads function notation the way the grader does', () => {

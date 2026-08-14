@@ -23,6 +23,7 @@
   data-snap="{{ .Get "snap" | default "1" }}">
   <div class="ap-graphplot">
     <p class="ap-graphplot-question">{{ partial "mathtext" (.Get "question") }}</p>
+    <noscript><p class="ap-noscript-notice">Interactive practice requires JavaScript.</p></noscript>
     {{- with .Get "answerDisplay" }}
       <template data-slot="answer-display">{{ partial "mathtext" . }}</template>
     {{- end }}

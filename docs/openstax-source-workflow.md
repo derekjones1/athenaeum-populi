@@ -106,6 +106,21 @@ not a publishing instruction.
   intentional adaptations and adjudicated upstream disagreements, keyed to the
   target commit of each bundle, so later audits do not silently reverse them.
 
+  An **exercise revaluation** — changing the numbers a Try It substitutes,
+  without changing its expression or method — belongs here and is invisible
+  anywhere else: `detectedFlags` inspects baseline SHA, title, objectives and
+  headings only, never `tries` or interactions; `source:check` never sets a
+  nonzero exit code for review items and is not in `npm run ci`. The decisions
+  file is the only durable, machine-readable record that the change was
+  deliberate. Use `covers: []` with a `covers_note` saying so — there is no
+  audit flag for it to adjudicate.
+
+  **Only mapped sections may be named.** `openstax-source.test.mjs` asserts
+  every decision's `localPath` is in `math-source-map.json`, and Knowledge
+  Check pages are not mapped — a decisions entry naming one fails `npm test`
+  at `assert.ok(mapped)`. A cumulative-assessment change that would need a
+  decision needs a different home, or the item revalued in a mapped section.
+
 The OpenStax checkouts themselves remain under ignored `sources/`; the large
 source repositories are not copied into this Git repository.
 

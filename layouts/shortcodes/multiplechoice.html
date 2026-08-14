@@ -48,16 +48,22 @@
   <div class="ap-mc">
     <p class="ap-mc-question">{{ partial "mathtext" $question }}</p>
     <div class="ap-mc-options" role="group" aria-label="Answer choices for: {{ $qplain }}">
+      {{- /* Buttons render natively `disabled`: until the <multiple-choice>
+           component upgrades (or forever, without JS) they are wired to
+           nothing, and an enabled-looking semantic control that silently does
+           nothing is exactly what keyboard and assistive-tech users cannot
+           diagnose. The component removes the attribute once every option's
+           accessible name settles (or its fallback bound fires). */ -}}
       {{- if eq $mode "graph" -}}
         {{- range $i, $svg := split (trim .Inner "\n") "===OPT===" -}}
-          <button type="button" class="ap-mc-option ap-mc-option-graph" data-index="{{ $i }}">{{ $svg | safeHTML }}</button>
+          <button type="button" disabled class="ap-mc-option ap-mc-option-graph" data-index="{{ $i }}">{{ $svg | safeHTML }}</button>
         {{- end -}}
       {{- else -}}
         {{- range (split (trim .Inner "\n") "\n") -}}
           {{- $opt := trim . " " -}}
           {{- with $opt -}}
             {{- $optionLabel := replace . "$" "" -}}
-            <button type="button" class="ap-mc-option" data-value="{{ . }}" aria-label="Answer choice: {{ $optionLabel }}">{{ partial "mathtext" . }}</button>
+            <button type="button" disabled class="ap-mc-option" data-value="{{ . }}" aria-label="Answer choice: {{ $optionLabel }}">{{ partial "mathtext" . }}</button>
           {{- end -}}
         {{- end -}}
       {{- end -}}

@@ -1,12 +1,22 @@
 /**
- * The published quality baseline and how to rewrite it.
+ * The published quality baselines and how to rewrite them.
  *
- * One number about this corpus is published in a place a corpus walk cannot
- * reach on its own: the verified-answers floor (`--min-verified N` in
- * package.json). The gate that CHECKS it lives with the tool that computes it
- * (`verify-answers`); this module is the one place that knows where the number
- * is WRITTEN, so the checker and the rewriter
- * (`tools/update-baselines.mjs`) can never disagree about what they point at.
+ * Two numbers about this corpus are published in a place a corpus walk cannot
+ * reach on its own, both wired into package.json scripts: the verified-answers
+ * floor (`--min-verified N`) and the replayed-spans floor
+ * (`--min-replayed N`). The gates that CHECK them live with the tools that
+ * compute them (`verify-answers`, `verify-replay`); this module is the one
+ * place that knows where each number is WRITTEN, so the checkers and the
+ * rewriter (`tools/update-baselines.mjs`) can never disagree about what they
+ * point at.
+ *
+ * The two ratchet differently, on purpose. `--min-verified` is an EXACT match:
+ * the cross-check's job is to read a known set of fill-ins, so a move in
+ * either direction is news. `--min-replayed` is a FLOOR: the replay gate's
+ * span count rises with ordinary authoring and with any form predicate that
+ * admits more spellings, and only a DROP means it has gone quiet on part of
+ * the corpus. An exact match there would go red on unrelated commits and be
+ * bumped without being read, which is how a ratchet becomes a rubber stamp.
  *
  * Every apply* function is pure text→text and THROWS when its pattern no
  * longer matches: a baseline the tools cannot find must fail loud, never be
@@ -33,4 +43,82 @@ export function readMinVerified(packageJsonText) {
 export function applyMinVerified(packageJsonText, verified) {
   readMinVerified(packageJsonText); // throw before touching anything
   return packageJsonText.replace(MIN_VERIFIED_RE, `--min-verified ${verified}`);
+}
+
+/** The wired replayed-spans floor in package.json. */
+export const MIN_REPLAYED_RE = /--min-replayed (\d+)/;
+
+export function readMinReplayed(packageJsonText) {
+  const match = packageJsonText.match(MIN_REPLAYED_RE);
+  if (!match) throw new Error('package.json no longer carries a --min-replayed floor');
+  return Number(match[1]);
+}
+
+export function applyMinReplayed(packageJsonText, replayed) {
+  readMinReplayed(packageJsonText); // throw before touching anything
+  return packageJsonText.replace(MIN_REPLAYED_RE, `--min-replayed ${replayed}`);
+}
+
+/**
+ * The lines each tool prints its count on, and the pattern that reads it.
+ * Both tools print ONLY on their success path, so a failed run has no number
+ * to read — the caller must check the exit code before ever matching these.
+ */
+export const BASELINE_SOURCES = Object.freeze([
+  {
+    name: '--min-verified',
+    label: 'verify-answers',
+    tool: 'tools/verify-answers.mjs',
+    pattern: /(\d+)\/\d+ fill-ins mathematically verified/,
+    // The fixed half of that pattern, so a test can assert the TOOL still
+    // writes this wording rather than only that the pattern parses a fixture
+    // the test wrote itself.
+    literal: 'fill-ins mathematically verified',
+    read: readMinVerified,
+    apply: applyMinVerified,
+    fell: 'verified count fell',
+    why: 'That is coverage shrinking, not growth.',
+  },
+  {
+    name: '--min-replayed',
+    label: 'verify-replay',
+    tool: 'tools/verify-replay.mjs',
+    pattern: /replay: (\d+) scalar printed spans replayed/,
+    literal: 'scalar printed spans replayed',
+    read: readMinReplayed,
+    apply: applyMinReplayed,
+    fell: 'replayed span count fell',
+    why: 'That is the replay gate reading less of the corpus than it used to.',
+  },
+]);
+
+/**
+ * What an update would do, decided from text and numbers alone so the guards
+ * are testable without a corpus-wide run.
+ *
+ * `moved` is every baseline whose measurement differs from what package.json
+ * carries, `dropped` is the subset that FELL, and `rewritten` is the whole
+ * file with every moved number applied in one pass. The caller writes once,
+ * or reports "already current" when nothing moved — which is why this returns
+ * both lists rather than deciding for it: the previous updater exited on the
+ * first unchanged number and could never have reached a second baseline.
+ */
+export function planBaselineUpdate(packageJsonText, measurements) {
+  const baselines = BASELINE_SOURCES.map((source) => ({
+    ...source,
+    current: source.read(packageJsonText),
+    measured: measurements[source.name],
+  }));
+  for (const baseline of baselines) {
+    if (!Number.isInteger(baseline.measured)) {
+      throw new Error(`no measurement supplied for ${baseline.name}`);
+    }
+  }
+  const moved = baselines.filter(({ current, measured }) => measured !== current);
+  return {
+    baselines,
+    moved,
+    dropped: baselines.filter(({ current, measured }) => measured < current),
+    rewritten: moved.reduce((text, { apply, measured }) => apply(text, measured), packageJsonText),
+  };
 }

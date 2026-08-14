@@ -27,3 +27,9 @@
 
 # Transient grader-differential harness (old/new module copies for A/B grading)
 /.tmp-grader-diff/
+
+# Scratch space for review sessions: working scripts and pre-change tarballs.
+# Ignored rather than trusted to be tidied — it was reported as `?? _to_delete/`
+# with a 207 KiB backup archive inside, one `git add -A` away from being
+# committed. Nothing here is a build input; delete the directory whenever.
+/_to_delete/

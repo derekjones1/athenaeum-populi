@@ -40,14 +40,19 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
 - `npm run serve` — local Hugo server
 - `npm run serve:public` — serve the built `public/` with no livereload
 - `npm test` — unit tests, content validation, answer cross-check, math lint
-- `npm run verify:replay` — replay every printed question span through the
-  grader; fails any exercise passable by copying its own prompt (parallel,
-  minutes — part of `npm run ci`, not `npm test`)
+- `npm run verify:replay` — replay every printed question span (source and
+  MathLive-normalized spellings) through the grader; fails any exercise
+  passable by copying its own prompt; reports the two exclusions by count and
+  unit (list-keyed fillins, form-rejected spans) alongside the allowlisted
+  spans, and holds a `--min-replayed` FLOOR so the gate cannot go quiet on
+  part of the corpus (parallel, minutes — part of `npm run ci`, not
+  `npm test`)
 - `npm run build` — clean production build plus global Pagefind
 - `npm run check:build` — route, link, search, and file-count gates
 - `npm run ci` — complete local equivalent of CI
-- `npm run baseline:update` — recount the verified-answers floor and rewrite
-  package.json's `--min-verified` in place
+- `npm run baseline:update` — recount the verified-answers and replayed-spans
+  floors and rewrite package.json's `--min-verified` and `--min-replayed` in
+  place
 - `npm run source:fetch` — fetch the ignored, sparse OpenStax source checkout
 - `npm run source:verify` — verify the committed 212-section map offline
 - `npm run source:check` — report-only comparison against pinned CNXML
@@ -63,9 +68,9 @@ an empty worked Solution, all-same graph answer positions) followed on
 August 10, 2026, when the corpus carried zero of each; the working rules that
 outlived that programme are in `docs/authoring-playbook.md` §5. If a rule
 fires on sound content, narrow the rule and add a test for the case it got
-wrong — do not exempt the page. When authoring moves the `--min-verified`
-floor, end the session with `npm run baseline:update` and commit the rewrite
-together with the content.
+wrong — do not exempt the page. When authoring moves the `--min-verified` or
+`--min-replayed` floor, end the session with `npm run baseline:update` and
+commit the rewrite together with the content.
 
 ## Reviews and verification protocol
 

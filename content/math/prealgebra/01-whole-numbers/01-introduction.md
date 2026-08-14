@@ -231,6 +231,7 @@ filled, using zeros as needed.
 {{< fillin
   question="Write in standard form: fifty-three million, eight hundred nine thousand, fifty-one."
   answer="53809051"
+  answerForm="decimal"
   answerDisplay="53,809,051"
   hint="Three periods: millions 53, thousands 809, ones 051 — keep three places per period, padding with zeros."
 >}}

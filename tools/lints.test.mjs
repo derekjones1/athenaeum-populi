@@ -362,6 +362,12 @@ test('a prompt asking for a named form requires its answerForm token', () => {
     ['Write $x \\cdot x \\cdot x$ in exponential form.', 'x^3', 'exponential-form ask'],
     ['Convert $y-2=-2(x+2)$ to slope-intercept form.', 'y=-2x-2', 'convert…to slope-intercept ask'],
     ['Take the equation $y=-2x-2$ to point-slope form using the point $(-2,2)$.', 'y-2=-2(x+2)', 'equation…to point-slope ask'],
+    ['Solve $7^x=43$. Enter the exact answer; the feedback also gives its three-decimal approximation.', '\\frac{\\log 43}{\\log 7}', 'exact-answer ask'],
+    ['Use the Distance Formula to find the distance between the points $(-4,-5)$ and $(3,4)$. Enter the exact form.', '\\sqrt{130}', 'exact-form ask'],
+    ['Write the sum using summation notation: $1+\\tfrac14+\\tfrac19+\\tfrac1{16}+\\tfrac1{25}$.', '\\sum_{n=1}^{5}\\frac{1}{n^2}', 'summation-notation ask'],
+    ['Condense $\\log_2 5+\\log_2x-\\log_2y$ to one logarithm.', '\\log_2\\frac{5x}{y}', 'condense-to-one-logarithm ask'],
+    ['Write the percent as a ratio: 89% of college students have a smartphone.', '\\frac{89}{100}', 'percent-as-ratio ask'],
+    ['In response to a survey, 41 out of 100 students expressed a goal of transferring. Enter the ratio.', '\\frac{41}{100}', 'enter-the-ratio ask'],
   ]) {
     assert(lint(fillin(question, answer)).some(named), reason);
   }
@@ -372,6 +378,12 @@ test('a prompt asking for a named form requires its answerForm token', () => {
     ['Now rewrite that same line in slope-intercept form.', 'y=-2x-2', 'slope-intercept-form', 'slope-intercept token satisfies'],
     ['Find the prime factorization of 80. Enter the answer in exponential form, e.g. $2^3 \\cdot 5$.', '2^4 \\cdot 5', 'prime-product', 'prime-product answers an exponential-form ask'],
     ['Write $x \\cdot x \\cdot x$ in exponential form.', 'x^3', 'single-power', 'single-power answers an exponential-form ask'],
+    ['Solve $7^x=43$. Enter the exact answer; the feedback also gives its three-decimal approximation.', '\\frac{\\log 43}{\\log 7}', 'exact-log', 'exact-log token satisfies the exact ask'],
+    ['Use the Distance Formula to find the distance between $(-4,-5)$ and $(3,4)$. Enter the exact form, as a simplified radical.', '\\sqrt{130}', 'exact-radical', 'exact-radical token satisfies the exact ask'],
+    ['Find the sum of the infinite geometric series $1+\\tfrac13+\\tfrac19+\\cdots$. Give the exact answer as a fraction.', '\\frac{3}{2}', 'fraction', 'a fraction token satisfies an exact-answer-as-a-fraction ask'],
+    ['Write the sum using summation notation: $1+\\tfrac14+\\tfrac19+\\tfrac1{16}+\\tfrac1{25}$.', '\\sum_{n=1}^{5}\\frac{1}{n^2}', 'summation', 'summation token satisfies'],
+    ['Condense $\\log_2 5+\\log_2x-\\log_2y$ to one logarithm.', '\\log_2\\frac{5x}{y}', 'single-logarithm', 'single-logarithm token satisfies'],
+    ['Write the percent as a ratio: 89% of college students have a smartphone.', '\\frac{89}{100}', 'fraction', 'fraction token satisfies the ratio ask'],
   ]) {
     assert.equal(lint(fillin(question, answer, form)).filter(named).length, 0, reason);
   }
@@ -381,6 +393,10 @@ test('a prompt asking for a named form requires its answerForm token', () => {
   for (const [source, reason] of [
     [fillin('What is the slope of the line given in slope-intercept form $y=3x+4$?', '3'),
       'mentioning the form without asking to produce it is not an ask'],
+    [fillin('Find the exact value of $\\log_6 36$.', '2'),
+      'an exact-VALUE evaluation ask is not a shape requirement'],
+    [fillin('Write as a ratio and then as a percent: 62 out of 100 students work. Enter the percent, including the $\\%$ sign.', '62\\%', 'percent'),
+      'naming the ratio as a worked step is not a ratio ask'],
     [fillin('For the hyperbola $4y^2-9x^2=36$, enter both asymptote equations in the form $y=mx$, separated by a comma. Enter the positive slope first.', 'y=\\frac{3}{2}x, y=-\\frac{3}{2}x'),
       'a comma-list answer is out of scope — the form check never runs on it'],
   ]) {

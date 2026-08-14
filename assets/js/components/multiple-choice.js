@@ -14,6 +14,11 @@
  * import dedupes to the one already in flight). A future MC-only page would
  * pull the engine just for labels — acceptable, but worth noticing in review.
  * Prose-only questions never trigger the import.
+ *
+ * That swap is asynchronous and the engine can load late, so the options stay
+ * in the shortcode's `disabled` state until their names settle — enabling a
+ * control whose accessible name is still raw TeX just moves the defect one
+ * step later. See _enableOptions() and LABEL_GATE_MS for the bound.
  */
 import { engineUrl } from '@params';
 import { plainMathText, speakableMathText } from '../lib/speakable-label.mjs';
@@ -25,6 +30,18 @@ const COLOR = {
   correct: 'var(--ap-success, #1a7f37)',
   incorrect: 'var(--ap-error, #b42318)',
 };
+
+// How long the options may stay in their server-rendered `disabled` state
+// waiting for spoken names. The serializer rides the ~1.9 MiB engine bundle,
+// which can be slow — and a stalled response never rejects the import, so the
+// catch below is not on its own a bound. At this deadline the options take the
+// SAME fallback path a failed import takes (interim TeX names dropped) and
+// enable, so the wait can never become a permanent lockout: the worst case is
+// the pre-gate behaviour, reached ten seconds later with better names.
+// 10 s is the suite's "an async step that has not finished by now has failed"
+// interval (playwright.config.mjs `expect.timeout`, helpers.mjs' focus polls).
+const LABEL_GATE_MS = 10_000;
+
 let hintSequence = 0;
 
 class MultipleChoiceElement extends HTMLElement {
@@ -42,6 +59,15 @@ class MultipleChoiceElement extends HTMLElement {
     this.options = Array.from(this.querySelectorAll('.ap-mc-option'));
 
     this.options.forEach((btn) => {
+      // Options render natively `disabled` (see multiplechoice.html): before
+      // upgrade they are wired to nothing, and without JS they stay honestly
+      // inert instead of enabled-looking and dead. Wire the handler now, but
+      // leave `disabled` in place — _enableOptions() takes it off once the
+      // accessible names have settled (below), because a control that is
+      // clickable before its name is final is the same defect one step later:
+      // the group announced itself as `Answer choices for: Which is true of
+      // \sqrt{-196}?` while every option was already live. The completed-state
+      // lock later uses aria-disabled, never native disabled — see _choose().
       btn.addEventListener('click', () => this._choose(btn));
     });
 
@@ -54,7 +80,11 @@ class MultipleChoiceElement extends HTMLElement {
     const mathOptions = this.options.filter((btn) => (btn.dataset.value || '').includes('$'));
     const mathQuestion = (this.dataset.question || '').includes('$');
     if (this.mode !== 'text' || (mathOptions.length === 0 && !mathQuestion)) {
+      // Nothing to serialize: the server-rendered names are already final, so
+      // there is nothing to wait for. Graph options (SVG, no `data-value`) and
+      // prose-only questions never touch the engine and enable at once.
       this.dataset.speech = 'ready';
+      this._enableOptions();
     } else {
       this._speakLabels(mathOptions, mathQuestion);
     }
@@ -83,7 +113,49 @@ class MultipleChoiceElement extends HTMLElement {
     }
   }
 
+  /**
+   * Take the server-rendered `disabled` off every option — the one place the
+   * attribute comes off, so "enabled" can only ever mean "named". Idempotent
+   * and per-instance: each <multiple-choice> gates on its own labels, so a
+   * page of 78 widgets opens them one settled question at a time rather than
+   * all-or-nothing.
+   */
+  _enableOptions() {
+    if (this._enabled) return;
+    this._enabled = true;
+    clearTimeout(this._labelGate);
+    for (const btn of this.options) btn.disabled = false;
+  }
+
+  /**
+   * The degraded names: drop each math option's interim aria-label so the
+   * accessible name computes from the rendered content instead (the visual
+   * KaTeX layer is aria-hidden, leaving the MathML layer's real glyphs —
+   * "(−∞,−3]∪(6,∞)"), and give the group its generic name back. Imperfect for
+   * stacked fractions, but math rather than TeX control sequences.
+   *
+   * Shared by the two ways serialization can fail to arrive — a rejected
+   * import and a stalled one — so a slow engine and a broken engine degrade
+   * identically. Re-running it is harmless, and a late success overwrites it
+   * with the real spoken names.
+   */
+  _fallbackLabels(mathOptions, mathQuestion) {
+    for (const btn of mathOptions) btn.removeAttribute('aria-label');
+    if (mathQuestion && this.group) this.group.setAttribute('aria-label', 'Answer choices');
+  }
+
   async _speakLabels(mathOptions, mathQuestion) {
+    // The bound on the gate. A rejected import lands in the catch below within
+    // a network error's time, but a response that never arrives never rejects,
+    // so the deadline is what guarantees the options are not inert forever.
+    // It deliberately does NOT settle `data-speech`: that attribute reports
+    // what serialization actually did, whenever it finishes, and a settled
+    // flag here would let the axe scans start measuring names still in flight.
+    this._labelGate = setTimeout(() => {
+      this._fallbackLabels(mathOptions, mathQuestion);
+      this._enableOptions();
+    }, LABEL_GATE_MS);
+
     try {
       const { mathlive } = await import(engineUrl);
       for (const btn of mathOptions) {
@@ -103,18 +175,18 @@ class MultipleChoiceElement extends HTMLElement {
       this.dataset.speech = 'ready';
     } catch (error) {
       // Grading never depends on the engine here, so the exercise stays
-      // usable — but raw-TeX interim labels must not stay on live controls.
-      // Dropping the aria-label lets each button's accessible name compute
-      // from its rendered content: the visual KaTeX layer is aria-hidden,
-      // so what remains is the hidden MathML layer's real math glyphs
-      // ("(−∞,−3]∪(6,∞)") — imperfect for stacked fractions, but math, not
-      // TeX control sequences. The group falls back to its generic name for
-      // the same reason. `failed` (vs `ready`) records the truth so the
-      // label tests can assert the page actually reached `ready`.
+      // usable — but raw-TeX interim labels must not stay on live controls,
+      // which is what _fallbackLabels() prevents. `failed` (vs `ready`)
+      // records the truth so the label tests can assert the page actually
+      // reached `ready`.
       console.warn('Multiple-choice spoken labels failed', error);
-      for (const btn of mathOptions) btn.removeAttribute('aria-label');
-      if (mathQuestion && this.group) this.group.setAttribute('aria-label', 'Answer choices');
+      this._fallbackLabels(mathOptions, mathQuestion);
       this.dataset.speech = 'failed';
+    } finally {
+      // Both outcomes end here, in the same synchronous block that settled
+      // `data-speech` — so no observer can catch an option enabled before its
+      // name is final, and no path leaves one disabled for good.
+      this._enableOptions();
     }
   }
 

@@ -1,18 +1,26 @@
 /**
- * Recount the published quality baseline and rewrite it in place.
+ * Recount the published quality baselines and rewrite them in place.
  *
- * The floor is deliberately a dumb number — a self-updating gate is a gate
- * that cannot fire. So the CHECK stays dumb (`verify-answers --min-verified`)
- * and this tool is the one sanctioned way to move it: run it at the END of an
- * authoring session and commit what it rewrote together with the content that
- * moved the number.
+ * The floors are deliberately dumb numbers — a self-updating gate is a gate
+ * that cannot fire. So the CHECKS stay dumb (`verify-answers --min-verified`,
+ * `verify-replay --min-replayed`) and this tool is the one sanctioned way to
+ * move them: run it at the END of an authoring session and commit what it
+ * rewrote together with the content that moved the numbers.
  *
- * It recomputes reality (a real `verify-answers` run), then rewrites
- * package.json's `--min-verified <verified>`.
+ * It recomputes reality — a real `verify-answers` run and a real
+ * `verify-replay` run — then rewrites both numbers in package.json.
  *
- * Direction guard, because a baseline moving the wrong way is a finding, not
- * an update: the verified count may only rise (`--allow-decrease` to
- * acknowledge a deliberate drop).
+ * BOTH tools are run, and both numbers are considered, every time. The
+ * previous version exited 0 the moment `--min-verified` was unchanged, which
+ * is the NORMAL end-of-session case, so anything appended after that point
+ * would never have executed; it also never invoked the replay tool at all.
+ * Structure follows from that: measure both, guard each independently, exit
+ * "already current" only when NEITHER moved, and write once.
+ *
+ * Direction guards, because a baseline moving the wrong way is a finding, not
+ * an update: neither count may fall (`--allow-decrease` to acknowledge a
+ * deliberate drop). The two guards are separate — a legitimate drop in one is
+ * not permission to lose the other silently.
  *
  * Until August 9, 2026 this tool also recounted the Practice-retrofit backlog
  * and rewrote it into AGENTS.md and playbook §5. That backlog reached zero
@@ -24,55 +32,82 @@
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { spawn } from 'node:child_process';
-import { applyMinVerified, readMinVerified } from './baselines.mjs';
+import { BASELINE_SOURCES, planBaselineUpdate } from './baselines.mjs';
 
 const args = process.argv.slice(2);
 const flags = new Set(args.filter((a) => a.startsWith('--')));
 const root = args.find((a) => !a.startsWith('--')) || 'content';
 const dryRun = flags.has('--dry-run');
+const allowDecrease = flags.has('--allow-decrease');
 
-/* ---- 1. the verified count, from the real tool -------------------------- */
-
-const { code, out, err } = await new Promise((resolve, reject) => {
-  const child = spawn(process.execPath, ['tools/verify-answers.mjs', root]);
+const run = (argv) => new Promise((resolve, reject) => {
+  const child = spawn(process.execPath, argv);
   let stdout = '';
   let stderr = '';
   child.stdout.on('data', (d) => { stdout += d; });
   child.stderr.on('data', (d) => { stderr += d; });
   child.on('error', reject);
-  child.on('close', (exit) => resolve({ code: exit, out: stdout, err: stderr }));
+  child.on('close', (code) => resolve({ code, out: stdout, err: stderr }));
 });
-if (code !== 0) {
-  console.error('✖ verify-answers failed — fix its failures before moving the baseline');
-  process.stderr.write(err);
-  process.exit(1);
-}
-const verifiedMatch = out.match(/(\d+)\/\d+ fill-ins mathematically verified/);
-if (!verifiedMatch) {
-  console.error('✖ could not read the verified count from verify-answers output');
-  process.exit(1);
-}
-const verified = Number(verifiedMatch[1]);
 
-/* ---- 2. current state and guard ----------------------------------------- */
+/**
+ * The count a tool printed, or a loud failure. Both tools print their count
+ * ONLY on the success path, so a failed run has no number to read and must
+ * never be parsed for one — reporting "could not read the count" for a run
+ * that actually failed its own gate would send the reader looking in the
+ * wrong place.
+ */
+function countFrom({ code, out, err }, { label, pattern }) {
+  if (code !== 0) {
+    console.error(`✖ ${label} failed — fix its failures before moving the baseline`);
+    process.stderr.write(err || out);
+    process.exit(1);
+  }
+  const match = out.match(pattern);
+  if (!match) {
+    console.error(`✖ could not read the count from ${label} output (it printed no ${pattern})`);
+    process.stderr.write(out);
+    process.exit(1);
+  }
+  return Number(match[1]);
+}
+
+/* ---- 1. reality, from the real tools ------------------------------------- */
+
+// Both tools are run before anything is decided, so a failure in either is
+// reported against its own tool rather than hidden behind an early exit.
+// Sequentially: each tool fans out across the machine's cores on its own, so
+// running them at once would oversubscribe rather than finish sooner.
+const measurements = {};
+for (const source of BASELINE_SOURCES) {
+  measurements[source.name] = countFrom(await run([source.tool, root]), source);
+}
+
+/* ---- 2. current state and guards ----------------------------------------- */
 
 const pkgText = readFileSync('package.json', 'utf8');
-const currentFloor = readMinVerified(pkgText);
+const { baselines, moved, dropped, rewritten } = planBaselineUpdate(pkgText, measurements);
 
-if (verified < currentFloor && !flags.has('--allow-decrease')) {
-  console.error(`✖ verified count fell: ${currentFloor} → ${verified}. That is coverage shrinking, not growth.`);
+if (dropped.length && !allowDecrease) {
+  for (const baseline of dropped) {
+    console.error(`✖ ${baseline.fell}: ${baseline.current} → ${baseline.measured}. ${baseline.why}`);
+  }
   console.error('  Investigate first; rerun with --allow-decrease only if the drop is deliberate.');
   process.exit(1);
 }
-if (verified === currentFloor) {
-  console.log(`✓ baseline already current: floor ${currentFloor}`);
+
+if (moved.length === 0) {
+  const state = baselines.map(({ name, measured }) => `${name} ${measured}`).join(', ');
+  console.log(`✓ baselines already current: ${state}`);
   process.exit(0);
 }
 
-/* ---- 3. rewrite ---------------------------------------------------------- */
+/* ---- 3. rewrite, once ---------------------------------------------------- */
 
-if (!dryRun) writeFileSync('package.json', applyMinVerified(pkgText, verified));
-console.log(`${dryRun ? 'would rewrite' : 'rewrote'} package.json: --min-verified ${currentFloor} → ${verified}`);
+if (!dryRun) writeFileSync('package.json', rewritten);
+for (const { name, current, measured } of moved) {
+  console.log(`${dryRun ? 'would rewrite' : 'rewrote'} package.json: ${name} ${current} → ${measured}`);
+}
 console.log(dryRun
   ? '── dry run: nothing written.'
-  : '── commit this rewrite together with the content that moved the number.');
+  : '── commit this rewrite together with the content that moved the numbers.');

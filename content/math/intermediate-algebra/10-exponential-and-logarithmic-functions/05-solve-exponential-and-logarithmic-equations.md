@@ -145,6 +145,7 @@ It is not always possible or convenient to write the expressions with the same b
 {{< fillin
   question="Solve $7^x=43$. Enter the exact answer; the feedback also gives its three-decimal approximation."
   answer="\frac{\log 43}{\log 7}"
+  answerForm="exact-log"
   answerDisplay="$x=\tfrac{\log43}{\log7}\approx1.933$"
   hint="Take a logarithm of both sides and use the Power Property."
 >}}
@@ -152,6 +153,7 @@ It is not always possible or convenient to write the expressions with the same b
 {{< fillin
   question="Solve $8^x=98$. Enter the exact answer; the feedback also gives its three-decimal approximation."
   answer="\frac{\log 98}{\log 8}"
+  answerForm="exact-log"
   answerDisplay="$x=\tfrac{\log98}{\log8}\approx2.205$"
   hint="Take a logarithm of both sides and isolate $x$."
 >}}
@@ -174,6 +176,7 @@ When we take the logarithm of both sides we will get the same result whether we 
 {{< fillin
   question="Solve $2e^{x-2}=18$. Enter the exact answer; the feedback also gives its three-decimal approximation."
   answer="\ln 9+2"
+  answerForm="exact-log"
   answerDisplay="$x=\ln9+2\approx4.197$"
   hint="First isolate the exponential, then take the natural logarithm."
 >}}
@@ -181,6 +184,7 @@ When we take the logarithm of both sides we will get the same result whether we 
 {{< fillin
   question="Solve $5e^{2x}=25$. Enter the exact answer; the feedback also gives its three-decimal approximation."
   answer="\frac{\ln 5}{2}"
+  answerForm="exact-log"
   answerDisplay="$x=\tfrac{\ln5}{2}\approx0.805$"
   hint="Divide by 5, take the natural logarithm, and solve for $x$."
 >}}
@@ -362,6 +366,7 @@ This problem requires two main steps. First we must find the decay constant k. I
 {{< fillin
   question="Solve $2^x=74$. Enter the exact answer; the feedback also gives its three-decimal approximation."
   answer="\frac{\log 74}{\log 2}"
+  answerForm="exact-log"
   answerDisplay="$x=\tfrac{\log74}{\log2}\approx6.209$"
   hint="Take the logarithm of both sides and use the Power Property to bring the exponent down as a factor."
 >}}
@@ -369,6 +374,7 @@ This problem requires two main steps. First we must find the decay constant k. I
 {{< fillin
   question="Solve $e^x=8$. Enter the exact answer; the feedback also gives its three-decimal approximation."
   answer="\ln 8"
+  answerForm="exact-log"
   answerDisplay="$x=\ln8\approx2.079$"
   hint="Take the natural logarithm of both sides and use $\ln e=1$."
 >}}

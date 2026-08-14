@@ -152,6 +152,7 @@ $44\% = \tfrac{44}{100}$.
 {{< fillin
   question="Write the percent as a ratio: According to a survey, 89% of college students have a smartphone."
   answer="\frac{89}{100}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{89}{100}$"
   hint="Percent means per 100 — write the number in front of the % sign over 100."
 >}}
@@ -159,6 +160,7 @@ $44\% = \tfrac{44}{100}$.
 {{< fillin
   question="Write the percent as a ratio: A study found that 72% of U.S. teens send text messages regularly."
   answer="\frac{72}{100}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{72}{100}$"
   hint="Percent means per 100 — write the number in front of the % sign over 100."
 >}}
@@ -182,6 +184,7 @@ $\tfrac{21}{100}$. Converting $21$ per $100$ to percent gives $21\%$.
 {{< fillin
   question="Write as a ratio and then as a percent: In response to a student survey, 41 out of 100 Santa Ana College students expressed a goal of earning an Associate's degree or transferring to a four-year college. Enter the ratio."
   answer="\frac{41}{100}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{41}{100}$"
   hint="Write the count out of 100 as a fraction with denominator 100."
 >}}
@@ -499,6 +502,7 @@ write the percent as $33.\overline{3}\%$.
 {{< fillin
   question="Write the percent as a ratio: In 2014, the unemployment rate for those with only a high school degree was 6.0%."
   answer="\frac{6}{100}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{6}{100}$"
   hint="Percent means per 100 — write the number in front of the % sign over 100."
 >}}
@@ -506,6 +510,7 @@ write the percent as $33.\overline{3}\%$.
 {{< fillin
   question="Write the percent as a ratio: The unemployment rate for those with Bachelor's degrees was 3.2% in 2014."
   answer="\frac{32}{1000}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{32}{1{,}000}$"
   hint="Write 3.2 over 100, then multiply the numerator and denominator by 10 to clear the decimal."
 >}}
@@ -513,6 +518,7 @@ write the percent as $33.\overline{3}\%$.
 {{< fillin
   question="42 out of 100 first-time freshmen students attend a community college. Write this as a ratio."
   answer="\frac{42}{100}"
+  answerForm="fraction"
   answerDisplay="$\tfrac{42}{100}$"
   hint="A count out of 100 is already a ratio with denominator 100."
 >}}

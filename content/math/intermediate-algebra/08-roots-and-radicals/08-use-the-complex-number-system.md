@@ -511,6 +511,7 @@ Divide, writing the answer in standard form: $\tfrac{-3}{5 + 2 i}.$
 {{< fillin
   question="Divide, writing the answer in standard form: $\tfrac{4}{1 - 4 i}$"
   answer="\tfrac{4}{17} + \tfrac{16}{17} i"
+  answerForm="expanded"
   answerDisplay="$\tfrac{4}{17} + \tfrac{16}{17} i$"
   hint="Multiply numerator and denominator by the complex conjugate of the denominator, then write the result as $a+bi$."
 >}}
@@ -518,6 +519,7 @@ Divide, writing the answer in standard form: $\tfrac{-3}{5 + 2 i}.$
 {{< fillin
   question="Divide, writing the answer in standard form: $\tfrac{-2}{-1 + 2 i}$"
   answer="\tfrac{2}{5} + \tfrac{4}{5} i"
+  answerForm="expanded"
   answerDisplay="$\tfrac{2}{5} + \tfrac{4}{5} i$"
   hint="Multiply numerator and denominator by the complex conjugate of the denominator, then write the result as $a+bi$."
 >}}

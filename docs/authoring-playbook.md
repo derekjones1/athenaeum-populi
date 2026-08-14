@@ -275,11 +275,12 @@ the two independent things it names:
 | `fraction` | written as $\tfrac{a}{b}$, not a decimal |
 | `decimal` | a plain decimal numeral |
 | `percent` | ends with the $\%$ sign — for "enter the percent, including the % sign" asks, where $0.62$ and $62\%$ are the same value |
-| `rational-exponent` | exponent notation with no radical — the radical→exponent conversions are value-identical by design |
-| `radical` | contains a radical — the mirror conversion, which is otherwise passable by retyping the printed exponent form |
-| `exact` | not a bare decimal numeral — for "give the exact answer" asks, where a full-precision machine decimal is value-equal to the exact form |
-| `summation` | contains a Σ — "write the sum using summation notation" is otherwise passable by retyping the printed expanded sum |
-| `single-logarithm` | exactly one logarithm in one term — "condense to one logarithm" is otherwise passable by retyping the printed multi-log sum |
+| `rational-exponent` | the WHOLE response is `coefficient? base^rational`, one term and one factor, the exponent a non-integer *by value* ($^{2/2}$ is the integer 1) and the base a variable or a group holding one — the radical→exponent conversions are value-identical by design |
+| `radical` | the WHOLE response is `coefficient? \sqrt[n]{radicand}`, one term and one factor, no exponent on the radical, an integer index $\ge 2$, and a variable in the radicand — the mirror conversion, otherwise passable by retyping the printed exponent form |
+| `exact-log` | the WHOLE response is `integer? logarithm` or `\frac{logarithm}{logarithm or integer}`, optionally plus or minus one integer, each logarithm taking a single numeral or variable — **and no decimal point anywhere** — for "enter the exact answer" asks whose key is a logarithm |
+| `exact-radical` | the WHOLE response is `coefficient? \sqrt[n]{radicand}` with no decimal point anywhere, and `simplified-radical` besides — for "enter the exact form" asks whose key is a radical. `simplified-radical` alone cannot serve them: it passes any response holding no radical, including the rational-arithmetic approximation $\tfrac{1140175425099138}{100000000000000}$ |
+| `summation` | the WHOLE response is `coefficient? \sum_{lower}^{upper} body`, one term and one factor, both bounds written — "write the sum using summation notation" is otherwise passable by retyping the printed expanded sum |
+| `single-logarithm` | exactly one logarithm in one term, and the term IS the logarithm (no outside coefficient — $2\log_2\sqrt{5x/y}$ is the Power Property left unapplied) — "condense to one logarithm" is otherwise passable by retyping the printed multi-log sum |
 | `mixed-number` | a whole number and a proper fraction |
 | `improper-fraction` | $\tfrac{a}{b}$ with $\lvert a\rvert \ge \lvert b\rvert$ |
 | `fraction-or-mixed-number` | either shape — for a source ask that offers the choice |
@@ -294,7 +295,7 @@ the two independent things it names:
 | `no-like-terms` | a sum in which no two terms share a variable-and-power signature |
 | `polynomial` | no fraction bar at all — for a difference of fractions answering to a polynomial |
 | `distributed` | no parentheses left to multiply out |
-| `simplified-radical` | power-free radicands (perfect $n$th-power factors extracted, sign included: $\sqrt[3]{-108}$ fails on its 27), like radicals combined, nothing radical under a fraction bar, no unevaluated numeral arithmetic or fraction under a radical ($\sqrt{64+225}$, $\sqrt{\tfrac{25}{16}}$), and no same-index product of numeral radicals ($\sqrt{3}\cdot\sqrt{6}$) |
+| `simplified-radical` | power-free radicands (perfect $n$th-power factors extracted, sign included: $\sqrt[3]{-108}$ fails on its 27), like radicals combined, nothing radical under a fraction bar, no unevaluated numeral arithmetic or fraction under a radical ($\sqrt{64+225}$, $\sqrt{\tfrac{25}{16}}$), no same-index product of radicals in one top-level term, explicit ($\sqrt{3}\cdot\sqrt{6}$) or juxtaposed ($\sqrt[4]{12y^3}\sqrt[4]{8y^3}$ — rationalized-fraction numerators keep theirs), and no fractional/decimal exponents or decimal literals (radical notation is the form) |
 | `factored` | a product of at least two factors, at least one multi-term — for "Factor: $x^2+6x+8$" |
 | `point-slope-form` | one equation, one side the bare output variable plus at most a constant, the other a single $m(x-x_1)$ term (either orientation) — for "Write the point-slope form…", where the engine grades the distributed and scaled restatements equal; the collapsed origin case $y=mx$ passes |
 | `slope-intercept-form` | after an optional written `y=`/`f(x)=` label, at most one $mx$ monomial plus at most a constant — for "Write the equation in slope-intercept form", whether the answer is authored as the equation or as the bare expression following $y=$ |
@@ -627,8 +628,8 @@ no non-blocking rule left in the repository and no category of
 known-defective content to grandfather.
 
 The Practice retrofit that used to live here is finished. All 212 mapped
-sections carry the block — prealgebra 60/60, elementary-algebra 73/73,
-intermediate-algebra 68/68, and the eleven authored Precalculus 2e sections
+sections carry the block — prealgebra 60/60, elementary-algebra 71/71,
+intermediate-algebra 70/70, and the eleven authored Precalculus 2e sections
 (ch. 1 Functions 7, ch. 2 Linear Functions 4), which landed on August 9,
 2026. The lint rule was promoted from a warning to an error the same day, and
 the published backlog count was deleted along with the `--check-docs` flag
@@ -654,10 +655,14 @@ The working rules that remain:
 - **A rule that fires on sound content is a bug in the rule.** Narrow it, with
   a test for the case it was wrong about — do not add an exemption for the
   page.
-- **End the session with `npm run baseline:update`.** It recounts the
-  `--min-verified` floor, rewrites it in place in `package.json`, and refuses
-  to lower it without an explicit flag. Committing its rewrite with the
-  content is what keeps `npm test` green without a hand-edited count.
+- **End the session with `npm run baseline:update`.** It runs both gates,
+  recounts the `--min-verified` floor and the `--min-replayed` floor, rewrites
+  each in place in `package.json`, and refuses to lower either without an
+  explicit flag. Committing its rewrite with the content is what keeps
+  `npm run ci` green without a hand-edited count. The two ratchet differently:
+  `--min-verified` is an exact match (a move either way is news about what the
+  cross-check can read), `--min-replayed` is a floor (the span count rises
+  with ordinary authoring; only a drop means the replay gate went quiet).
 
 ## 6. Trivially satisfiable prompts: the remaining classes
 
@@ -668,7 +673,7 @@ is what stops new ones being authored. The two are inseparable: a rule may only
 land once the content it governs is already clean, so each verb's rule ships
 with that verb's retrofit.
 
-Measured across the corpus, 1,726 fill-ins were passable this way — the sum of
+Measured across the corpus, 1,761 fill-ins were passable this way — the sum of
 the per-class counts below, which is the only figure that can still be checked
 against a record. The classes were measured one at a time as each was
 separated out, so read the table as the account and not any single headline

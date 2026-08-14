@@ -437,6 +437,63 @@ test('a blocked speech engine degrades labels instead of leaving raw TeX', async
   expect(report.texGroups, 'no group may carry a raw-TeX name').toBe(0);
 });
 
+test('a slow speech engine leaves options disabled until their names settle', async ({
+  page,
+}) => {
+  // The complement of the test above: not a BROKEN engine but a slow one, the
+  // case every other test here waits past. The options are server-rendered
+  // `disabled`; the component used to enable them on upgrade, while the
+  // spoken names were still being serialized by the ~1.9 MiB engine — leaving
+  // clickable controls in a group that announced itself as `Answer choices
+  // for: Which is true of \sqrt{-196}?`. Holding the engine request open is
+  // the only way to observe that window; every wait in this file settles it
+  // first by construction.
+  let release;
+  const held = new Promise((resolve) => {
+    release = resolve;
+  });
+  await page.route('**/js/fillin-engine.*', async (route) => {
+    await held;
+    await route.continue();
+  });
+
+  const path = '/math/intermediate-algebra/knowledge-check-07-12/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  // Upgraded — options exist and their click handlers are wired — while the
+  // engine response is still held. Read the state immediately: the gate is
+  // bounded (LABEL_GATE_MS, 10 s), so this asserts the wait, not the bound.
+  await page.waitForFunction(
+    () =>
+      Boolean(customElements.get('multiple-choice')) &&
+      document.querySelectorAll('.ap-mc-option').length > 0,
+  );
+  const gated = await page.evaluate(() =>
+    [...document.querySelectorAll('multiple-choice')]
+      .filter((widget) => !['ready', 'failed'].includes(widget.dataset.speech))
+      .map((widget) =>
+        [...widget.querySelectorAll('.ap-mc-option')].every((button) => button.disabled),
+      ),
+  );
+  // Without this the test would pass on a page that settled everything before
+  // the first read — a green run proving nothing.
+  expect(
+    gated.length,
+    'holding the engine must leave at least one math widget unsettled',
+  ).toBeGreaterThan(0);
+  expect(
+    gated.every(Boolean),
+    'an option whose accessible name has not settled must stay disabled',
+  ).toBe(true);
+
+  release();
+  await waitForPageReady(page);
+  const disabledAfter = await page
+    .locator('.ap-mc-option')
+    .evaluateAll((buttons) => buttons.filter((button) => button.disabled).length);
+  expect(disabledAfter, 'every option must enable once its names settle').toBe(0);
+});
+
 test('the longest lesson does not overflow horizontally at 390px', async ({
   page,
 }) => {

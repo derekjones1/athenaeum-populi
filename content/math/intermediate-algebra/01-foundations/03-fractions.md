@@ -608,10 +608,10 @@ $$
 $$
 
 {{< fillin
-  question="Evaluate $3ab^2$ when $a = -\tfrac{2}{3}$ and $b = -\tfrac{1}{2}$."
-  answer="-\frac{1}{2}"
-  answerDisplay="$-\tfrac{1}{2}$"
-  hint="Simplify the exponent first: $b^2 = \tfrac{1}{4}$. Then multiply $3 \cdot \left(-\tfrac{2}{3}\right) \cdot \tfrac{1}{4}$."
+  question="Evaluate $3ab^2$ when $a = -\tfrac{2}{3}$ and $b = -\tfrac{1}{3}$."
+  answer="-\frac{2}{9}"
+  answerDisplay="$-\tfrac{2}{9}$"
+  hint="Simplify the exponent first: $b^2 = \tfrac{1}{9}$. Then multiply $3 \cdot \left(-\tfrac{2}{3}\right) \cdot \tfrac{1}{9}$."
 >}}
 
 {{< fillin

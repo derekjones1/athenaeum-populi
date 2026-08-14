@@ -468,10 +468,10 @@ the LCD, $6$, and subtract:
 $$-\frac{5}{6} - y = -\frac{5}{6} - \left(-\frac{2}{3}\right) = -\frac{5}{6} - \left(-\frac{4}{6}\right) = \frac{-5-(-4)}{6} = -\frac{1}{6}$$
 
 {{< fillin
-  question="Evaluate $-\tfrac{1}{2} - y$ when $y = -\tfrac{1}{4}$."
-  answer="-\frac{1}{4}"
-  answerDisplay="$-\tfrac{1}{4}$"
-  hint="Substitute $-\tfrac{1}{4}$ for $y$, rewrite $-\tfrac{1}{2}$ as an equivalent fraction with denominator $4$, and subtract."
+  question="Evaluate $-\tfrac{1}{2} - y$ when $y = -\tfrac{3}{4}$."
+  answer="\frac{1}{4}"
+  answerDisplay="$\tfrac{1}{4}$"
+  hint="Substitute $-\tfrac{3}{4}$ for $y$, rewrite $-\tfrac{1}{2}$ as an equivalent fraction with denominator $4$, and subtract."
 >}}
 
 {{< fillin
@@ -489,9 +489,9 @@ then multiply and divide out the common factors:
 $$2x^2 y = 2\left(\frac{1}{4}\right)^2\left(-\frac{2}{3}\right) = 2\left(\frac{1}{16}\right)\left(-\frac{2}{3}\right) = -\frac{2 \cdot 1 \cdot 2}{16 \cdot 3} = -\frac{1}{12}$$
 
 {{< fillin
-  question="Evaluate $3ab^2$ when $a = -\tfrac{2}{3}$ and $b = -\tfrac{1}{2}$."
-  answer="-\frac{1}{2}"
-  answerDisplay="$-\tfrac{1}{2}$"
+  question="Evaluate $3ab^2$ when $a = -\tfrac{2}{3}$ and $b = -\tfrac{1}{3}$."
+  answer="-\frac{2}{9}"
+  answerDisplay="$-\tfrac{2}{9}$"
   hint="Square $b$ first, then multiply the three factors together, dividing out common factors."
 >}}
 

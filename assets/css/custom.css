@@ -207,7 +207,14 @@ math-field.ap-fillin-field::part(placeholder) {
    chosen answer keeps its is-correct styling. */
 .ap-mc-option:disabled,
 .ap-mc-option[aria-disabled="true"]:not(.is-correct) { cursor: default; opacity: 0.55; }
-.ap-mc-option-graph { flex: 1 1 150px; max-width: 210px; padding: 6px; }
+/* Graph options carry an inline SVG per choice. The old flex-basis(150px) /
+   max-width(210px) let three of them share one row inside the ~560px card,
+   so each figure rendered ~153px wide and its 11px axis labels shrank to
+   ~6–7px — illegible for 39 of 43 graph-choice questions. Stack them ONE PER
+   ROW at full card width instead; `.ap-mc-option-graph` is the marker the
+   shortcode already emits only for graph options (multiplechoice.html), so
+   plain text options (`.ap-mc-option` without this class) are untouched. */
+.ap-mc-option-graph { flex: 1 1 100%; max-width: 100%; padding: 6px; }
 .ap-mc-option-graph svg { width: 100%; height: auto; display: block; }
 .ap-mc-option.is-correct { border-color: var(--ap-success, #1a7f37); background: #eaf6ec; }
 .ap-mc-option.is-incorrect { border-color: var(--ap-error, #b42318); background: #fbeae8; }
@@ -267,12 +274,32 @@ math-field.ap-fillin-field::part(placeholder) {
 }
 
 /* --- Multiple choice before (or without) JS -------------------------------
-   Until the <multiple-choice> component upgrades, its option buttons are
-   rendered but wired to nothing — clicking silently does nothing, which
-   reads as broken. Show them as unavailable until the element is defined;
-   if JS never arrives, they stay visibly inactive. */
+   Until the <multiple-choice> component upgrades, its option buttons render
+   natively `disabled` (the shortcode emits the attribute; the component
+   removes it once accessible names settle, or at its fallback bound), so
+   keyboard and assistive tech see honestly inert controls, not
+   enabled-looking dead ones. This rule is the VISUAL half: show them dimmed
+   until the element is defined; if JS never arrives, they stay visibly
+   inactive. Between `:defined` and the name gate the `:disabled` rule above
+   keeps them dimmed, so the dimming never blinks off and back on. */
 multiple-choice:not(:defined) .ap-mc-option {
   pointer-events: none;
   opacity: 0.55;
   cursor: default;
+}
+
+/* --- FillIn / GraphPlot before (or without) JS -----------------------------
+   Unlike <multiple-choice>, whose text options the shortcode pre-renders as
+   real (disabled) buttons, <fill-in>'s MathLive field and <graph-plot>'s SVG
+   grid have no meaningful static equivalent — only their Web Components can
+   build them, so the shortcodes used to render just the question with no
+   input and no explanation when JS was off. Both now print a <noscript>
+   notice where that control would appear. <noscript> content is inert
+   whenever scripting is enabled (browsers parse it as unrendered text, never
+   as DOM), so this rule and the markup it styles never show up on — and
+   never need hiding from — a JS-enabled page. */
+.ap-noscript-notice {
+  font-size: 14px;
+  color: var(--ap-muted, #6f6e69);
+  margin: 8px 0 0;
 }

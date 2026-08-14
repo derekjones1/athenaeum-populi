@@ -527,7 +527,7 @@ Access these online resources for additional instruction and practice with evalu
 {{< fillin
   question="The graph of $g(x)=2^x+1$ is the graph of $f(x)=2^x$ shifted up 1 unit. What is the equation of the horizontal asymptote of $g$?"
   answer="y=1"
-  answerForm="exact"
+  answerForm="solved:y"
   hint="A vertical shift of $k$ units moves the horizontal asymptote $y=0$ to $y=k$."
 >}}
 

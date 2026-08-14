@@ -472,9 +472,9 @@ to $-1$.
 ### Evaluate rational expressions
 
 {{< fillin
-  question="Evaluate $\frac{2x}{x-1}$ for $x = 0$."
-  answer="0"
-  hint="Substitute $0$ for $x$ in both the numerator and the denominator."
+  question="Evaluate $\frac{2x}{x-1}$ for $x = -1$."
+  answer="1"
+  hint="Substitute $-1$ for $x$: the numerator becomes $-2$ and the denominator becomes $-2$."
 >}}
 
 {{< fillin

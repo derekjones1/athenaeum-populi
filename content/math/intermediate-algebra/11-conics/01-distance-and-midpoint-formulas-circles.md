@@ -138,9 +138,9 @@ $$
 Since 202 is not a perfect square, we can leave the answer in exact form or
 find a decimal approximation.
 
-{{< fillin question="Use the Distance Formula to find the distance between the points $(-4,-5)$ and $(3,4)$. Enter the exact form." answer="\sqrt{130}" answerDisplay="$\sqrt{130}\approx11.4$" hint="Substitute, simplify the radicand, and leave the answer as a radical." >}}
+{{< fillin question="Use the Distance Formula to find the distance between the points $(-4,-5)$ and $(3,4)$. Enter the exact form, as a simplified radical." answer="\sqrt{130}" answerForm="exact-radical" answerDisplay="$\sqrt{130}\approx11.4$" hint="Substitute, simplify the radicand, and leave the answer as a radical." >}}
 
-{{< fillin question="Use the Distance Formula to find the distance between the points $(-2,-5)$ and $(-3,-4)$. Enter the exact form." answer="\sqrt{2}" answerDisplay="$\sqrt2\approx1.4$" hint="Substitute, simplify the radicand, and leave the answer as a radical." >}}
+{{< fillin question="Use the Distance Formula to find the distance between the points $(-2,-5)$ and $(-3,-4)$. Enter the exact form, as a simplified radical." answer="\sqrt{2}" answerForm="exact-radical" answerDisplay="$\sqrt2\approx1.4$" hint="Substitute, simplify the radicand, and leave the answer as a radical." >}}
 
 ## Use the Midpoint Formula
 

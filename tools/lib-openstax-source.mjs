@@ -5,7 +5,7 @@ import {
   readdirSync,
 } from 'node:fs';
 import path from 'node:path';
-import { mathSpans, parseFrontmatter, shortcodeParams } from './lib-content.mjs';
+import { mathSpans, parseFrontmatter, shortcodeParams, walkMarkdown } from './lib-content.mjs';
 
 // Re-exported because `validate-content` and the source audit both read local
 // frontmatter through this module; the implementation now lives with the other
@@ -561,19 +561,6 @@ export function parseLocalSection(markdown) {
   };
 }
 
-function walkMarkdownFiles(root) {
-  const files = [];
-  const visit = (directory) => {
-    for (const entry of readdirSync(directory, { withFileTypes: true })) {
-      const absolute = path.join(directory, entry.name);
-      if (entry.isDirectory()) visit(absolute);
-      else if (entry.isFile() && entry.name.endsWith('.md')) files.push(absolute);
-    }
-  };
-  visit(root);
-  return files.sort();
-}
-
 const AUTHORING_STATUSES = new Set(['complete', 'in-progress', 'scaffolded']);
 const MODULE_SCOPES = new Set(['bundle', 'mapped-collections']);
 
@@ -700,7 +687,7 @@ export function buildSourceMap(repositoryRoot, sourceDirectories, lock = loadSou
   const errors = [];
   const chapterLocalCounts = new Map();
 
-  for (const absolutePath of walkMarkdownFiles(contentRoot)) {
+  for (const absolutePath of [...walkMarkdown(contentRoot)].sort()) {
     const relativePath = path.relative(repositoryRoot, absolutePath).split(path.sep).join('/');
     const book = relativePath.split('/')[2];
     const config = collections.get(book);
@@ -864,7 +851,7 @@ export function verifyCommittedSourceMap(repositoryRoot, lock = loadSourceLock(r
   }
 
   const expected = new Map();
-  for (const absolutePath of walkMarkdownFiles(path.join(repositoryRoot, 'content/math'))) {
+  for (const absolutePath of [...walkMarkdown(path.join(repositoryRoot, 'content/math'))].sort()) {
     const relativePath = path.relative(repositoryRoot, absolutePath).split(path.sep).join('/');
     const book = relativePath.split('/')[2];
     if (!lock.books.has(book)) continue;

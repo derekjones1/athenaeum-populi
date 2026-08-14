@@ -572,6 +572,7 @@ a straight line through $(1,0)$
 {{< fillin
   question="Solve $5e^{x-4}=40$. Give the exact answer."
   answer="\ln 8+4"
+  answerForm="exact-log"
   answerDisplay="$x=\ln 8+4$"
 >}}
 

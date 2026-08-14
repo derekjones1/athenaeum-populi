@@ -146,7 +146,7 @@ weight: 6
 >}}
 
 {{< fillin
-  question="Convert $1.85$ to a percent. Enter the number of percent."
+  question="Convert $1.85$ to a percent, including the $\%$ sign."
   answer="185\%"
   answerForm="percent"
   answerDisplay="185%"

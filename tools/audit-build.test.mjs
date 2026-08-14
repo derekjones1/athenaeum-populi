@@ -205,8 +205,62 @@ try {
     assert.notEqual(result.status, 0, `expected build audit failure for ${JSON.stringify(body || files)}`);
     assert.match(result.stderr, new RegExp(expected), result.stderr);
   }
+
+  // ---- the duplicated-chrome budget, sabotaged ----------------------------
+  // A gate that has never been seen to fail has not been tested. Each shape
+  // below is a real duplication of navigation markup, and each must trip the
+  // absolute per-page chrome budget. Two of the three are the point: a
+  // sidebar duplicated as a SIBLING element leaves the sidebar-share ratio
+  // looking better than the baseline, because that metric reads only the
+  // first <aside> and divides by a page the duplication just made bigger.
+  //
+  // The lesson body is deliberately large so the control page's share stays
+  // inside its own budget — otherwise the share gate fires on the fixture and
+  // proves nothing about the chrome gate.
+  const nav = `<a href="/s/">${'section '.repeat(40)}</a>`.repeat(400); // ~132 KiB
+  const lesson = `<p>${'content '.repeat(40_000)}</p>`; // ~312 KiB, one element
+  const page = (chrome) => `<!doctype html><head></head>${chrome}<main id="content">${lesson}</main>`;
+
+  prepare('<p>placeholder</p>');
+  writeFileSync(join(fixture, 'index.html'), page(`<aside>${nav}</aside>`));
+  const control = audit();
+  assert.equal(control.status, 0, `one sidebar is chrome, not a duplication regression: ${control.stderr}`);
+
+  for (const [label, chrome, hidesFromShare] of [
+    ['a sidebar emitted twice as sibling asides', `<aside>${nav}</aside><aside>${nav}</aside>`, true],
+    ['the same contents duplicated inside one aside', `<aside>${nav}${nav}</aside>`, false],
+    ['the nav duplicated into a sibling element', `<aside>${nav}</aside><nav>${nav}</nav>`, true],
+  ]) {
+    prepare('<p>placeholder</p>');
+    writeFileSync(join(fixture, 'index.html'), page(chrome));
+    const result = audit();
+    assert.notEqual(result.status, 0, `expected a failure for ${label}`);
+    assert.match(result.stderr, /outside main#content/, result.stderr);
+    if (hidesFromShare) {
+      assert.doesNotMatch(result.stderr, /sidebars are/,
+        `${label} is invisible to the sidebar SHARE — which is why it is not the duplication gate`);
+    }
+  }
+
+  // ---- the no-JavaScript notice, sabotaged --------------------------------
+  // The assertion is per component, not per page: a page with two fill-ins
+  // and one notice is the shape a partially-retrofitted shortcode produces.
+  const fillin = (notice) => `<fill-in><div class="ap-fillin"><p>Q</p>${notice ? '<noscript><p class="ap-noscript-notice">Interactive practice requires JavaScript.</p></noscript>' : ''}</div></fill-in>`;
+  prepare(`${fillin(true)}${fillin(true)}<graph-plot><div>${''}<noscript><p class=ap-noscript-notice>Interactive practice requires JavaScript.</p></noscript></div></graph-plot>`);
+  assert.equal(audit().status, 0, 'one notice per component passes — unquoted class included, as --minify emits it');
+
+  for (const [label, body] of [
+    ['a fill-in with no notice', `${fillin(true)}${fillin(false)}`],
+    ['a graph-plot with no notice', `${fillin(true)}<graph-plot><div><p>Q</p></div></graph-plot>`],
+    ['a duplicated notice', `${fillin(true)}<p class="ap-noscript-notice">Interactive practice requires JavaScript.</p>`],
+  ]) {
+    prepare(body);
+    const result = audit();
+    assert.notEqual(result.status, 0, `expected a failure for ${label}`);
+    assert.match(result.stderr, /no-JavaScript notice missing or duplicated/, result.stderr);
+  }
 } finally {
   rmSync(fixture, { recursive: true, force: true });
 }
 
-console.log('build audit: content images and duplicate-math rendering regressions rejected');
+console.log('build audit: content images, duplicated chrome, and missing no-JavaScript notices rejected');

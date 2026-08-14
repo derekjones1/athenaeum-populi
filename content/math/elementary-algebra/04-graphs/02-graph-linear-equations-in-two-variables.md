@@ -346,9 +346,9 @@ you use three points and one is incorrect, the points will not line up —
 this tells you something is wrong and you need to check your work.
 
 {{< fillin
-  question="Graph $y = -3x$ by plotting points. Let $x = 0$. Find y."
-  answer="0"
-  hint="$y = -3(0)$."
+  question="Graph $y = -3x$ by plotting points. Let $x = 1$. Find y."
+  answer="-3"
+  hint="$y = -3(1)$."
 >}}
 
 {{< fillin

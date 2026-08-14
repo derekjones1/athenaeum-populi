@@ -295,6 +295,44 @@ export const NAMED_FORM_ASKS = [
     name: 'exponential form',
     tokens: ['exponential-form', 'single-power', 'prime-product'],
   },
+  {
+    // "Enter the exact answer" / "Give the exact answer" / "Enter the exact
+    // form": the exercise pairs its key with a decimal approximation, so
+    // value grading alone accepts the approximation the ask exists to rule
+    // out. "Find the exact value" is deliberately NOT matched: that is an
+    // evaluation ask ("Find the exact value of $\log_6 36$" keys the
+    // rational 2), not a shape requirement. A fraction-family token
+    // satisfies the ask too — "Give the exact answer as a fraction" keys a
+    // rational, and the fraction shape is what separates it from 1.5.
+    ask: /\b(?:enter|give|write|leave|find)\b[^.?!]*\bexact (?:answer|form)\b/i,
+    name: 'the exact (non-approximate) form',
+    tokens: ['exact-log', 'exact-radical', 'simplified-radical', 'radical', 'fraction',
+      'mixed-number', 'improper-fraction', 'fraction-or-mixed-number'],
+  },
+  {
+    // "Write the sum using summation notation": the printed expanded sum is
+    // value-equal to the sigma form by construction.
+    ask: /\b(?:write|rewrite|express)\b[^.?!]*\bsummation notation\b/i,
+    name: 'summation notation',
+    tokens: ['summation'],
+  },
+  {
+    // "Condense … to one logarithm" / "to a single logarithm": the printed
+    // multi-log expression is value-equal to the condensed form.
+    ask: /\bcondense\b[^.?!]*\blogarithm\b/i,
+    name: 'a single condensed logarithm',
+    tokens: ['single-logarithm'],
+  },
+  {
+    // "Write the percent as a ratio" / "Enter the ratio" / "Write this as a
+    // ratio": the printed percent is value-equal to the ratio. Deliberately
+    // NOT a generic "as a ratio" match: "Write as a ratio and then as a
+    // percent … Enter the percent" names the ratio only as a worked step,
+    // and its %-shaped key is owned by the percent rules.
+    ask: /\bthe percent as a ratio\b|\benter the ratio\b|\bwrite this as a ratio\b/i,
+    name: 'a ratio (fraction)',
+    tokens: ['fraction', 'improper-fraction', 'fraction-or-mixed-number', 'reduced-fraction'],
+  },
 ];
 
 /**

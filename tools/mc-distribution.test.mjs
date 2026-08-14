@@ -24,7 +24,10 @@ function collect(root) {
   const perBook = new Map();
   const all = { counts: [0, 0, 0, 0], expected: [0, 0, 0, 0], n: 0 };
   for (const file of walkMarkdown(root)) {
-    const book = relative(root, file).split(sep)[1] ?? 'other';
+    // Index 0 of the root-relative path is the BOOK (prealgebra/…); index 1
+    // is a chapter directory, which once silently made the per-book test a
+    // per-chapter test over only the three chapters with ≥50 questions.
+    const book = relative(root, file).split(sep)[0] ?? 'other';
     const src = readFileSync(file, 'utf8');
     for (const sc of shortcodes(src, 'multiplechoice')) {
       if ((sc.params.mode || 'text') === 'graph') continue;

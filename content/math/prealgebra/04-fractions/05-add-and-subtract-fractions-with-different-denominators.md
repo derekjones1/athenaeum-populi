@@ -417,9 +417,9 @@ Multiplying and removing common factors:
 $$2x^2y = -\frac{1}{12}$$
 
 {{< fillin
-  question="Evaluate $3ab^2$ when $a = -\tfrac{2}{3}$ and $b = -\tfrac{1}{2}$"
-  answer="-\frac{1}{2}"
-  answerDisplay="$-\tfrac{1}{2}$"
+  question="Evaluate $3ab^2$ when $a = -\tfrac{2}{3}$ and $b = -\tfrac{1}{3}$"
+  answer="-\frac{2}{9}"
+  answerDisplay="$-\tfrac{2}{9}$"
   hint="The exponent applies only to $b$. Simplify $b$ squared first, then multiply by $3$ and $a$."
 >}}
 

@@ -23,7 +23,7 @@
     "validate": "node tools/validate-content.mjs content 0",
     "verify:content": "node tools/verify-all.mjs content",
     "verify:answers": "node tools/verify-answers.mjs content --min-verified 2988",
-    "verify:replay": "node tools/verify-replay.mjs",
+    "verify:replay": "node tools/verify-replay.mjs content --min-replayed 5997",
     "verify-section": "node tools/verify-section.mjs",
     "baseline:update": "node tools/update-baselines.mjs content",
     "source:fetch": "node tools/openstax-source.mjs fetch",

@@ -6,21 +6,61 @@ import { walkFiles } from './lib-content.mjs';
 import { htmlAttribute, hasFileBackedCssImage, MAIN_CONTENT_RE } from './lib-html.mjs';
 
 const root = process.argv[2] || 'public';
+// Cloudflare Pages/Workers static assets: 20,000 files on the Free plan,
+// 100,000 on Paid (Wrangler >= 4.34.0; CI pins 4.112.0, so the tooling
+// qualifies either way). The repository cannot know which plan the account
+// holds, so the budget is the FREE-plan provider limit — the one that cannot
+// be wrong by being too generous. The artifact ships 673 files and grows at
+// roughly 2.1 per page, so the cap is ~9,200 pages away; this gate is a
+// tripwire against a generator that starts emitting per-page assets, not a
+// number the corpus is approaching.
 const maxFiles = 20_000;
+const filesWarnAt = 0.9;
 // Size/DOM ratchets. These are regression budgets, not aspirations: each sits
-// a little above the measured value after the August 2026 sidebar fix
-// (131.3 MiB total HTML, 1.26 MiB largest page, 35.7% sidebar share,
-// ~29.3k tags on the largest lesson). If a change trips one, either the
-// change reintroduced a duplication bug or the corpus legitimately grew —
-// raise the budget consciously in this file, with the new measurement.
-const maxTotalHtmlBytes = 150 * 1024 * 1024;
+// above the value measured on the completed three-book corpus
+// (275 documents, 132.1 MiB total HTML, 1.21 MiB largest page, 30,802 tags on
+// the largest lesson, 35.6% sidebar share, 191.9 KiB mean outside
+// main#content). If a change trips one, either the change reintroduced a
+// duplication bug or the corpus legitimately grew — raise the budget
+// consciously in this file, with the new measurement.
+//
+// The total is budgeted against the PROJECTED corpus rather than today's,
+// because Precalculus is scaffolded and will roughly double the page count:
+// 62 more sections (73 - 11), and their sidebars grow with the book's own nav
+// (aside bytes fit 16001 + 2306 x navEntries within 2% across the three
+// finished books, so a complete Precalculus sidebar lands near 207 KiB rather
+// than today's 67 KiB). That projects 337 documents / ~182 MiB — which the
+// previous 150 MiB budget would have breached at about +23 pages, mid-book,
+// on an ordinary authoring commit. 220 MiB keeps ~21% headroom over the
+// finished corpus.
+const maxTotalHtmlBytes = 220 * 1024 * 1024;
 const maxPageBytes = 1.5 * 1024 * 1024;
-const maxSidebarShare = 0.45;
 const maxPageElements = 35_000;
+// Duplicated non-content markup, as an ABSOLUTE mean per page.
+//
+// `maxSidebarShare` below is kept — it is cheap and it matches the historical
+// bug it was written for, a sidebar whose CONTENTS were emitted twice inside
+// the one <aside> — but it is not the duplication gate, for two measured
+// reasons. It is a RATIO, so duplication outside the first <aside> improves
+// it: a sidebar emitted twice as sibling <aside> elements moves the score
+// from 35.6% to 26.3%, and the same nav duplicated into a sibling <nav> moves
+// it to 26.3% too, both of them 47 MiB regressions that score BETTER than the
+// baseline. And `document.match(/<aside…/)` is non-global, so it only ever
+// sees the first one.
+//
+// Bytes outside main#content have neither weakness: the metric is absolute,
+// so it cannot be diluted by growth, and it counts every byte of chrome
+// wherever it sits. All three duplication shapes take it from 191.9 KiB to
+// ~368 KiB. 240 KiB is ~25% over today's mean and above the current per-page
+// maximum (233.9 KiB); a complete Precalculus lifts the mean to ~208 KiB,
+// still inside it.
+const maxSidebarShare = 0.45;
+const maxMeanChromeBytes = 240 * 1024;
 if (!existsSync(root)) throw new Error(`Built site not found: ${root} (run npm run build first)`);
 const built = walkFiles(root);
 const bytes = built.reduce((sum, file) => sum + statSync(file).size, 0);
-const htmlDocuments = built.filter((file) => file.endsWith('.html')).map((file) => readFileSync(file, 'utf8'));
+const htmlFiles = built.filter((file) => file.endsWith('.html'));
+const htmlDocuments = htmlFiles.map((file) => readFileSync(file, 'utf8'));
 const html = htmlDocuments.join('\n');
 const runtimeFiles = built.filter((file) => /\.(?:html|css|m?js)$/i.test(file));
 const runtimeSources = runtimeFiles.map((file) => ({ file, text: readFileSync(file, 'utf8') }));
@@ -413,7 +453,14 @@ const contentImageAssets = built.filter((file) => imageAssetPattern.test(file) &
 if (contentImageAssets.length) {
   problems.push(`${contentImageAssets.length} content image asset(s) remain (only the nine explicit site-chrome icons/logos are allowed)`);
 }
-if (built.length >= maxFiles) problems.push(`${built.length} files meets/exceeds ${maxFiles}`);
+// The provider rejects an artifact ABOVE the cap, so the gate draws its line
+// where the provider does. The warning is what gives advance notice: a hard
+// failure at the wall is a failure discovered on the deploy that needed to
+// ship, not on the commit that made it inevitable.
+if (built.length > maxFiles) problems.push(`${built.length} files exceeds the ${maxFiles} provider cap`);
+else if (built.length >= maxFiles * filesWarnAt) {
+  console.warn(`! build audit: ${built.length} files is ${(100 * built.length / maxFiles).toFixed(0)}% of the ${maxFiles} provider cap`);
+}
 {
   // Any absolute URL inside executable code is a potential runtime fetch the
   // static CDN pattern check cannot see (a dynamically created
@@ -478,13 +525,21 @@ if (built.length >= maxFiles) problems.push(`${built.length} files meets/exceeds
     problems.push(`total HTML ${(totalHtmlBytes / 1048576).toFixed(1)} MiB exceeds the ${(maxTotalHtmlBytes / 1048576).toFixed(0)} MiB budget`);
   }
   let sidebarBytes = 0;
+  let chromeBytes = 0;
   let largestPageBytes = 0;
   let largestPageElements = 0;
-  for (const document of htmlDocuments) {
+  for (const [index, document] of htmlDocuments.entries()) {
     largestPageBytes = Math.max(largestPageBytes, Buffer.byteLength(document));
     largestPageElements = Math.max(largestPageElements, (document.match(/<[a-zA-Z]/g) || []).length);
     const aside = document.match(/<aside\b[\s\S]*?<\/aside>/);
     if (aside) sidebarBytes += Buffer.byteLength(aside[0]);
+    // Everything the page ships that is not the lesson. Page bytes correlate
+    // with main#content at r = 0.99, so what is left is chrome and is
+    // essentially independent of how long the lesson is — which is what makes
+    // an absolute per-page mean a meaningful budget rather than a proxy for
+    // corpus growth.
+    chromeBytes += Buffer.byteLength(document)
+      - Buffer.byteLength(contentDocuments[index]?.content ?? '');
   }
   if (largestPageBytes > maxPageBytes) {
     problems.push(`largest page ${(largestPageBytes / 1048576).toFixed(2)} MiB exceeds the ${(maxPageBytes / 1048576).toFixed(2)} MiB budget`);
@@ -495,6 +550,36 @@ if (built.length >= maxFiles) problems.push(`${built.length} files meets/exceeds
   const sidebarShare = totalHtmlBytes ? sidebarBytes / totalHtmlBytes : 0;
   if (sidebarShare > maxSidebarShare) {
     problems.push(`sidebars are ${(sidebarShare * 100).toFixed(1)}% of HTML, over the ${(maxSidebarShare * 100).toFixed(0)}% budget (duplicated navigation regression)`);
+  }
+  const meanChromeBytes = htmlDocuments.length ? chromeBytes / htmlDocuments.length : 0;
+  if (meanChromeBytes > maxMeanChromeBytes) {
+    problems.push(`${(meanChromeBytes / 1024).toFixed(1)} KiB of markup per page sits outside main#content, over the ${(maxMeanChromeBytes / 1024).toFixed(0)} KiB budget (duplicated chrome regression)`);
+  }
+}
+{
+  // Every interactive component ships exactly one no-JavaScript notice.
+  //
+  // This is asserted here, over all 275 built documents, rather than in the
+  // browser suite: a Playwright run proves it for the one route it loads, and
+  // the fact is about the corpus. `<noscript>` children serialize as TEXT in
+  // the DOM, so a browser cannot count them from the parsed page at all —
+  // only their visibility distinguishes the two modes, which is the half the
+  // browser test keeps.
+  // `--minify` strips attribute quotes, so the class is matched unquoted too —
+  // a quoted-only pattern found zero notices on every page and would have
+  // reported the whole corpus as broken (or, with the comparison the other
+  // way round, nothing at all).
+  const NOSCRIPT_NOTICE = /class=(?:"[^"]*\bap-noscript-notice\b[^"]*"|'[^']*\bap-noscript-notice\b[^']*'|ap-noscript-notice\b)/g;
+  const missing = [];
+  for (const [index, document] of htmlDocuments.entries()) {
+    const components = (document.match(/<(?:fill-in|graph-plot)\b/g) || []).length;
+    const notices = (document.match(NOSCRIPT_NOTICE) || []).length;
+    if (components !== notices) {
+      missing.push(`${htmlFiles[index]}: ${components} interactive component(s), ${notices} noscript notice(s)`);
+    }
+  }
+  if (missing.length) {
+    problems.push(`no-JavaScript notice missing or duplicated on ${missing.length} page(s): ${missing.slice(0, 3).join('; ')}`);
   }
 }
 const katexCssPath = join(root, 'katex', 'katex.min.css');

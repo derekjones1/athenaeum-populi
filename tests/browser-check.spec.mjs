@@ -203,6 +203,89 @@ test('a multiple-choice option grades wrong, then right', async ({ page }) => {
   await expect(card.locator('.ap-mc-feedback')).toHaveText(/^Correct/);
 });
 
+test('with JavaScript off the page is honest, and with it on the controls arrive', async ({ browser }) => {
+  // ONE page, TWO contexts, and the comparison between them is the test.
+  //
+  // Asserting a server-HTML fact through a browser is a ten-second round trip
+  // that re-tests a Hugo template: `.ap-mc-option[disabled]` is emitted
+  // unconditionally, and `tools/audit-build.mjs` already proves — over all 275
+  // built documents rather than this one — that every fill-in and graph-plot
+  // ships exactly one no-JavaScript notice. What only a browser can decide is
+  // what each mode actually PRESENTS: whether the notice is the thing the
+  // reader meets, and whether the controls it stands in for really appear once
+  // scripting runs.
+  //
+  // The counts are relational (notices === fill-ins + graph-plots), never the
+  // literal 14 and 4 this route happens to carry: those are content-derived,
+  // so a hard-coded pair goes red for an authoring reason and teaches the next
+  // reader to edit the number rather than read the failure.
+  //
+  // This route is the only one in the corpus carrying all three component
+  // types, which is why it is the one loaded twice.
+  const route = '/math/elementary-algebra/04-graphs/02-graph-linear-equations-in-two-variables/';
+
+  const withoutJs = await browser.newContext({ javaScriptEnabled: false });
+  let counts;
+  try {
+    const page = await withoutJs.newPage();
+    await gotoBuiltPage(page, route);
+    counts = {
+      fillIns: await page.locator('fill-in').count(),
+      graphs: await page.locator('graph-plot').count(),
+    };
+    expect(counts.fillIns).toBeGreaterThan(0);
+    expect(counts.graphs).toBeGreaterThan(0);
+
+    // The notice is what the reader meets, in place of every control.
+    const notices = page.locator('.ap-noscript-notice');
+    await expect(notices).toHaveCount(counts.fillIns + counts.graphs);
+    await expect(notices.first()).toBeVisible();
+    await expect(notices.last()).toBeVisible();
+
+    // …and the controls it stands in for are genuinely absent, not merely
+    // unstyled. `svg` would be the wrong locator: 17 SVGs (static figures and
+    // theme icons) are present with JS off, so that assertion passes today and
+    // would keep passing if graph-plot ever started server-rendering.
+    await expect(page.locator('.ap-graphplot-svg')).toHaveCount(0);
+    await expect(page.locator('math-field')).toHaveCount(0);
+
+    // Multiple choice is the exception: it IS server-rendered, and its options
+    // must be natively `disabled` so keyboard and assistive-tech users meet
+    // inert controls rather than enabled-looking dead ones.
+    const options = page.locator('multiple-choice .ap-mc-option');
+    expect(await options.count()).toBeGreaterThan(1);
+    for (const disabled of await options.evaluateAll((buttons) => buttons.map((b) => b.disabled))) {
+      expect(disabled).toBe(true);
+    }
+  } finally {
+    await withoutJs.close();
+  }
+
+  const withJs = await browser.newContext();
+  try {
+    const page = await withJs.newPage();
+    await gotoBuiltPage(page, route);
+    // Same page, same components…
+    await expect(page.locator('fill-in')).toHaveCount(counts.fillIns);
+    await expect(page.locator('graph-plot')).toHaveCount(counts.graphs);
+    // …and now the notice is gone (a <noscript> body is inert text to a
+    // scripting browser, never elements) while the real controls are there,
+    // one per component.
+    await expect(page.locator('.ap-noscript-notice')).toHaveCount(0);
+    await expect(page.locator('math-field')).toHaveCount(counts.fillIns);
+    await expect(page.locator('.ap-graphplot-svg')).toHaveCount(counts.graphs);
+    // The other half of the disabled pair: the component removes the
+    // attribute as it wires grading.
+    const options = page.locator('multiple-choice .ap-mc-option');
+    expect(await options.count()).toBeGreaterThan(1);
+    for (const disabled of await options.evaluateAll((buttons) => buttons.map((b) => b.disabled))) {
+      expect(disabled).toBe(false);
+    }
+  } finally {
+    await withJs.close();
+  }
+});
+
 test('a graph-plot line is graded through the keyboard path', async ({ page }) => {
   await gotoBuiltPage(
     page,

@@ -92,9 +92,9 @@ to the system.
 >}}
 
 {{< fillin
-  question="For the same system, substitute $x = 0$ and $y = 0$ into $x + 2y$ and simplify. (Compare the result to -5 — does it make the equation true?)"
-  answer="0"
-  hint="2 times 0 is 0, then add x, which is also 0."
+  question="For the same system, substitute $x = 2$ and $y = -6$ into $x + 2y$ and simplify. (Compare the result to -5 — does it make the equation true?)"
+  answer="-10"
+  hint="Multiply -6 by 2 first, then add x."
 >}}
 
 ## Solve a system of linear equations by graphing

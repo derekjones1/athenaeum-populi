@@ -398,6 +398,7 @@ Therefore, $\sum_{i=1}^{5}2i=30$.
 {{< fillin
   question="Expand the partial sum and find its value: $\sum_{i=1}^{5}3i$."
   answer="45"
+  answerForm="decimal"
   answerDisplay="$45$"
   hint="Substitute $i=1,2,3,4,5$, then add the five terms."
 >}}
@@ -405,6 +406,7 @@ Therefore, $\sum_{i=1}^{5}2i=30$.
 {{< fillin
   question="Expand the partial sum and find its value: $\sum_{i=1}^{5}4i$."
   answer="60"
+  answerForm="decimal"
   answerDisplay="$60$"
   hint="Substitute $i=1,2,3,4,5$, then add the five terms."
 >}}
@@ -430,6 +432,7 @@ Therefore, $\sum_{k=0}^{3}\tfrac1{k!}=\tfrac83$.
 {{< fillin
   question="Expand the partial sum and find its value: $\sum_{k=0}^{3}\tfrac2{k!}$."
   answer="\frac{16}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{16}{3}$"
   hint="Substitute $k=0,1,2,3$ and remember that $0!=1$."
 >}}
@@ -437,6 +440,7 @@ Therefore, $\sum_{k=0}^{3}\tfrac1{k!}=\tfrac83$.
 {{< fillin
   question="Expand the partial sum and find its value: $\sum_{k=0}^{3}\tfrac3{k!}$."
   answer="8"
+  answerForm="decimal"
   answerDisplay="$8$"
   hint="Substitute $k=0,1,2,3$ and remember that $0!=1$."
 >}}
@@ -466,6 +470,7 @@ $$
 {{< fillin
   question="Write the sum using summation notation: $\tfrac12+\tfrac14+\tfrac18+\tfrac1{16}+\tfrac1{32}$."
   answer="\sum_{n=1}^{5}\frac{1}{2^n}"
+  answerForm="summation"
   answerDisplay="$\sum_{n=1}^{5}\tfrac1{2^n}$"
   hint="The denominators are powers of 2 for $n=1$ through $n=5$."
 >}}
@@ -473,6 +478,7 @@ $$
 {{< fillin
   question="Write the sum using summation notation: $1+\tfrac14+\tfrac19+\tfrac1{16}+\tfrac1{25}$."
   answer="\sum_{n=1}^{5}\frac{1}{n^2}"
+  answerForm="summation"
   answerDisplay="$\sum_{n=1}^{5}\tfrac1{n^2}$"
   hint="The denominators are the squares of the counting numbers from 1 through 5."
 >}}
