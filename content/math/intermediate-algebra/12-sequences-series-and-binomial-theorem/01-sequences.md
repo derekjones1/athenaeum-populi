@@ -504,6 +504,7 @@ $$
 {{< fillin
   question="Write the sum using summation notation: $1-4+9-16+25$."
   answer="\sum_{n=1}^{5}(-1)^{n+1}n^2"
+  answerForm="summation"
   answerDisplay="$\sum_{n=1}^{5}(-1)^{n+1}n^2$"
   hint="The absolute values are squares, and the signs alternate beginning with a positive term."
 >}}
@@ -511,6 +512,7 @@ $$
 {{< fillin
   question="Write the sum using summation notation: $-2+4-6+8-10$."
   answer="\sum_{n=1}^{5}(-1)^n2n"
+  answerForm="summation"
   answerDisplay="$\sum_{n=1}^{5}(-1)^n2n$"
   hint="The absolute values are twice the counting numbers, and the signs alternate beginning with a negative term."
 >}}
@@ -623,10 +625,10 @@ factorial notation, finite sequence, general term, index of summation, infinite 
   answer="$\sum_{n=1}^{5}\tfrac{1}{n^3}$"
   hint="The numerators are all one, and the denominators are cubes of the counting numbers from one to five."
 >}}
-$\sum_{n=1}^{5}\tfrac{1}{n^3}$
 $\sum_{n=1}^{5}\tfrac{1}{n^2}$
-$\sum_{n=1}^{5}\tfrac{1}{3^n}$
+$\sum_{n=1}^{5}\tfrac{1}{n^3}$
 $\sum_{n=1}^{4}\tfrac{1}{n^3}$
+$\sum_{n=1}^{5}\tfrac{1}{3^n}$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -634,10 +636,10 @@ $\sum_{n=1}^{4}\tfrac{1}{n^3}$
   answer="$\sum_{n=1}^{7}(2n+12)$"
   hint="The terms increase by 2 each time; check what constant makes $2n+12$ equal 14 when $n=1$."
 >}}
-$\sum_{n=1}^{7}(2n+12)$
-$\sum_{n=1}^{7}(2n+10)$
-$\sum_{n=1}^{6}(2n+12)$
 $\sum_{n=0}^{6}(2n+12)$
+$\sum_{n=1}^{7}(2n+12)$
+$\sum_{n=1}^{6}(2n+12)$
+$\sum_{n=1}^{7}(2n+10)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -645,10 +647,10 @@ $\sum_{n=0}^{6}(2n+12)$
   answer="$\sum_{n=1}^{10}(-1)^n2n$"
   hint="The absolute values are twice the counting numbers up to 10, and the signs alternate beginning with a negative term."
 >}}
-$\sum_{n=1}^{10}(-1)^n2n$
-$\sum_{n=1}^{10}(-1)^{n+1}2n$
 $\sum_{n=1}^{9}(-1)^n2n$
 $\sum_{n=1}^{10}(-1)^nn$
+$\sum_{n=1}^{10}(-1)^{n+1}2n$
+$\sum_{n=1}^{10}(-1)^n2n$
 {{< /multiplechoice >}}
 
 <small>

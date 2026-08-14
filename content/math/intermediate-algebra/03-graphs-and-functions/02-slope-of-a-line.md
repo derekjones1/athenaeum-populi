@@ -159,10 +159,10 @@ is $0$. Its slope is undefined since division by zero is undefined.
   hint="A vertical line has a run of zero."
   answer="undefined"
 >}}
-$0$
-undefined
 $-4$
 $1$
+undefined
+$0$
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -505,10 +505,10 @@ line by using the slope and $y$-intercept.
   hint="The equation is in the form $Ax+By=C$."
   answer="intercepts"
 >}}
+intercepts
 vertical line
 horizontal line
 slope-intercept
-intercepts
 {{< /multiplechoice >}}
 
 ## Graph and interpret applications of slope-intercept
@@ -890,9 +890,9 @@ lines** — lines in the same plane that form a right angle.
   answer="undefined"
 >}}
 $0$
-undefined
 $-5$
 $1$
+undefined
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -919,7 +919,7 @@ $1$
   ariaLabel="A blank grid from −6 to 1 on the x-axis and −2 to 20 on the y-axis."
   hint="Starting at $(-4,2)$, count up $4$ and right $1$ to find a second point."
 >}}
-{"answer": {"slope": 4, "intercept": 18}, "grid": {"xMin": -6, "xMax": 1, "yMin": -2, "yMax": 20}}
+{"answer": {"slope": 4, "intercept": 18}, "grid": {"xMin": -6, "xMax": 1, "yMin": -2, "yMax": 20, "xUnit": 40, "yUnit": 12}}
 {{< /graphplot >}}
 
 ### Graph a line using its slope and intercept
@@ -953,10 +953,10 @@ $1$
   hint="The equation has only one variable, $x$."
   answer="vertical line"
 >}}
-vertical line
-horizontal line
 slope-intercept
 intercepts
+vertical line
+horizontal line
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -964,9 +964,9 @@ intercepts
   hint="The equation is already solved for $y$."
   answer="slope-intercept"
 >}}
-vertical line
 horizontal line
 slope-intercept
+vertical line
 intercepts
 {{< /multiplechoice >}}
 
@@ -975,10 +975,10 @@ intercepts
   hint="The equation has the form $Ax+By=C$."
   answer="intercepts"
 >}}
-vertical line
-horizontal line
 slope-intercept
 intercepts
+vertical line
+horizontal line
 {{< /multiplechoice >}}
 
 ### Graph and interpret applications of slope-intercept
@@ -1002,9 +1002,9 @@ intercepts
   hint="Evaluate the equation when $w=0$."
   answer="the payment when no water is used"
 >}}
+the payment when 12 units are used
 the payment when no water is used
 the cost per unit of water used
-the payment when 12 units are used
 the maximum possible payment
 {{< /multiplechoice >}}
 
@@ -1014,7 +1014,7 @@ the maximum possible payment
   ariaLabel="A blank grid for P versus w, from 0 to 20 on the w-axis and 0 to 70 on the P-axis."
   hint="Start at the $P$-intercept $(0,31)$ and use the slope $1.75$."
 >}}
-{"answer": {"slope": 1.75, "intercept": 31}, "grid": {"xMin": 0, "xMax": 20, "yMin": 0, "yMax": 70}}
+{"answer": {"slope": 1.75, "intercept": 31}, "grid": {"xMin": 0, "xMax": 20, "yMin": 0, "yMax": 70, "xUnit": 18, "yUnit": 5, "yGridStep": 5, "yTickStep": 10}}
 {{< /graphplot >}}
 
 ### Use slopes to identify parallel and perpendicular lines
@@ -1024,9 +1024,9 @@ the maximum possible payment
   hint="Solve the second equation for $y$ and compare the slopes."
   answer="parallel"
 >}}
+neither
 parallel
 perpendicular
-neither
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1034,9 +1034,9 @@ neither
   hint="Solve each equation for $y$, then multiply the slopes."
   answer="perpendicular"
 >}}
-parallel
 perpendicular
 neither
+parallel
 {{< /multiplechoice >}}
 
 {{< multiplechoice

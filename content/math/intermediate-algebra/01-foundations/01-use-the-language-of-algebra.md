@@ -111,8 +111,8 @@ no
   answer="yes"
   hint="A number is divisible by $5$ if its last digit is $5$ or $0$."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 In mathematics, there are often several ways to talk about the same ideas. So
@@ -946,10 +946,10 @@ raised to the same powers.
   answer="2, 3, and 6"
   hint="Check the last digit for divisibility by $2$ and $5$, add the digits for divisibility by $3$, and use both tests for divisibility by $6$."
 >}}
-2, 3, and 6
-2 and 3
-2, 3, 5, and 6
 3, 5, and 6
+2 and 3
+2, 3, and 6
+2, 3, 5, and 6
 {{< /multiplechoice >}}
 
 {{< fillin

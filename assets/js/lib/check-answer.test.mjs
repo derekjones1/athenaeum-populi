@@ -312,6 +312,24 @@ const formCases = [
   ['\\sqrt[3]{p}', 'p^{1/3}', 'rational-exponent', 'form'],
   ['\\sqrt{t}', '\\sqrt{t}', 'radical', 'correct'],
   ['t^{1/2}', '\\sqrt{t}', 'radical', 'form'],
+  // exact form — a full-precision machine decimal is value-equal, so only
+  // the shape can reject it
+  ['\\sqrt{130}', '\\sqrt{130}', 'exact', 'correct'],
+  ['11.40175425099138', '\\sqrt{130}', 'exact', 'form'],
+  // summation notation — the printed expanded sum is value-equal to sigma
+  ['\\sum_{n=1}^{5}(-1)^{n+1}n^2', '\\sum_{n=1}^{5}(-1)^{n+1}n^2', 'summation', 'correct'],
+  ['1-4+9-16+25', '\\sum_{n=1}^{5}(-1)^{n+1}n^2', 'summation', 'form'],
+  // condense-to-one-logarithm — the printed multi-log sum is value-equal
+  ['\\log_2\\frac{5x}{y}', '\\log_2\\frac{5x}{y}', 'single-logarithm', 'correct'],
+  ['\\log_2 5+\\log_2 x-\\log_2 y', '\\log_2\\frac{5x}{y}', 'single-logarithm', 'form'],
+  // simplified-radical rejects explicit same-index products, powered radical
+  // groups, and negative numeric radicands — while conjugate-rationalized
+  // fraction keys keep their authored factored shapes
+  ['(\\sqrt[3]{9y^2})(\\sqrt[3]{6y})', '3y\\sqrt[3]{2}', 'simplified-radical', 'form'],
+  ['\\left(6 - \\sqrt{5}\\right)^2', '41 - 12\\sqrt{5}', 'simplified-radical', 'form'],
+  ['\\sqrt{6}\\left(1 + 3\\sqrt{6}\\right)', '\\sqrt{6}+18', 'simplified-radical', 'form'],
+  ['\\sqrt{-11}', 'i\\sqrt{11}', 'simplified-radical', 'form'],
+  ['\\frac{\\sqrt{10}(\\sqrt{y} + \\sqrt{3})}{y - 3}', '\\frac{\\sqrt{10}(\\sqrt{y} + \\sqrt{3})}{y - 3}', 'simplified-radical', 'correct'],
   // prime factorization — every base must be prime
   ['2\\cdot43', '2\\cdot43', 'prime-product', 'correct'],
   ['86', '2\\cdot43', 'prime-product', 'form'],

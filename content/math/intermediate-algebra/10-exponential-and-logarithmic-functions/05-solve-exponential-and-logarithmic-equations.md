@@ -139,7 +139,7 @@ It is not always possible or convenient to write the expressions with the same b
 
 |  | $\begin{array}{llllll}{5}^{x} & = & 11 \\\end{array}$ |
 | --- | --- |
-| Since the exponential is isolated, take the logarithm of both sides.Use the Power Property to get the $x$ as a factor, not an exponent.Solve for $x.$ Find the exact answer.Approximate the answer. | $\begin{array}{llllll}\text{log}{5}^{x} & = & \text{log}11 \\x\text{log}5 & = & \text{log}11 \\x & = & \tfrac{\text{log}11}{\text{log}5} \\x & \approx & 1.490 \\\end{array}$ |
+| Since the exponential is isolated, take the logarithm of both sides. Use the Power Property to get the $x$ as a factor, not an exponent. Solve for $x.$ Find the exact answer. Approximate the answer. | $\begin{array}{llllll}\text{log}{5}^{x} & = & \text{log}11 \\x\text{log}5 & = & \text{log}11 \\x & = & \tfrac{\text{log}11}{\text{log}5} \\x & \approx & 1.490 \\\end{array}$ |
 | Since ${5}^{1}=5$ and ${5}^{2}=25,$ does it makes sense that ${5}^{1.490}\approx 11?$ |  |
 
 {{< fillin

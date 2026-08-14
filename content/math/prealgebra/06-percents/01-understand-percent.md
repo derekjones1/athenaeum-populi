@@ -346,14 +346,16 @@ percent: $83\%$.
 
 {{< fillin
   question="Convert each decimal to a percent: 0.01"
-  answer="1"
+  answer="1\%"
+  answerForm="percent"
   answerDisplay="1%"
   hint="The denominator is already 100 — write the numerator with a % sign."
 >}}
 
 {{< fillin
   question="Convert each decimal to a percent: 0.17"
-  answer="17"
+  answer="17\%"
+  answerForm="percent"
   answerDisplay="17%"
   hint="The denominator is already 100 — write the numerator with a % sign."
 >}}
@@ -374,14 +376,16 @@ $\tfrac{7.5}{100}$. Write this ratio as a percent: $7.5\%$.
 
 {{< fillin
   question="Convert each decimal to a percent: 1.75"
-  answer="175"
+  answer="175\%"
+  answerForm="percent"
   answerDisplay="175%"
   hint="Move the decimal point two places to the right and add the % sign."
 >}}
 
 {{< fillin
   question="Convert each decimal to a percent: 0.0825"
-  answer="8.25"
+  answer="8.25\%"
+  answerForm="percent"
   answerDisplay="8.25%"
   hint="Move the decimal point two places to the right and add the % sign."
 >}}
@@ -420,14 +424,16 @@ the decimal two places to the right.
 
 {{< fillin
   question="Convert each fraction or mixed number to a percent: $\tfrac{5}{8}$"
-  answer="62.5"
+  answer="62.5\%"
+  answerForm="percent"
   answerDisplay="62.5%"
   hint="Divide 5 by 8 to get the decimal, then move the decimal point two places to the right."
 >}}
 
 {{< fillin
   question="Convert each fraction or mixed number to a percent: $3\tfrac{2}{5}$"
-  answer="340"
+  answer="340\%"
+  answerForm="percent"
   answerDisplay="340%"
   hint="Write $3\tfrac{2}{5}$ as an improper fraction ($\tfrac{17}{5}$), convert to a decimal (3.4), then move the decimal point two places to the right."
 >}}
@@ -446,7 +452,8 @@ $0.714$. Write as a percent: $71.4\%$.
 
 {{< fillin
   question="Convert the fraction to a percent, rounded to the nearest tenth of a percent: $\tfrac{3}{7}$"
-  answer="42.9"
+  answer="42.9\%"
+  answerForm="percent"
   answerDisplay="42.9%"
   hint="Divide 3 by 7, round the decimal to the nearest thousandth, then write as a percent."
 >}}
@@ -466,13 +473,14 @@ write the percent as $33.\overline{3}\%$.
 
 {{< fillin
   question="Convert the fraction to a percent: according to the U.S. Census Bureau, about $\tfrac{1}{9}$ of United States housing units have just 1 bedroom. Round to the nearest tenth of a percent."
-  answer="11.1"
+  answer="11.1\%"
+  answerForm="percent"
   answerDisplay="11.1%"
   hint="Divide 1 by 9 — the decimal repeats endlessly. Round it to the nearest tenth of a percent."
 >}}
 
 {{< fillin
-  question="Convert the fraction to a percent: according to the U.S. Census Bureau, about $\tfrac{1}{6}$ of Colorado residents speak a language other than English at home. Enter the exact percent as a mixed number, e.g. $12\tfrac{1}{2}$."
+  question="Convert the fraction to a percent: according to the U.S. Census Bureau, about $\tfrac{1}{6}$ of Colorado residents speak a language other than English at home. Enter the exact percent as a mixed number, without the % sign — e.g. $12\tfrac{1}{2}$."
   answer="16\frac{2}{3}"
   answerForm="mixed-number"
   answerDisplay="$16\tfrac{2}{3}\%$"
@@ -563,27 +571,30 @@ write the percent as $33.\overline{3}\%$.
 
 {{< fillin
   question="Convert the decimal to a percent: 3"
-  answer="300"
+  answer="300\%"
+  answerForm="percent"
   answerDisplay="300%"
   hint="Think of 3 as 3.00, then move the decimal point two places to the right."
 >}}
 
 {{< fillin
   question="Convert the decimal to a percent: 0.0875"
-  answer="8.75"
+  answer="8.75\%"
+  answerForm="percent"
   answerDisplay="8.75%"
   hint="Move the decimal point two places to the right and add the % sign."
 >}}
 
 {{< fillin
   question="Convert the mixed number to a percent: $6\tfrac{4}{5}$"
-  answer="680"
+  answer="680\%"
+  answerForm="percent"
   answerDisplay="680%"
   hint="Write $6\tfrac{4}{5}$ as $\tfrac{34}{5}$, divide to get the decimal, then move the decimal point two places to the right."
 >}}
 
 {{< fillin
-  question="Convert the fraction to a percent: $\tfrac{5}{12}$. Enter the exact percent as a mixed number, e.g. $12\tfrac{1}{2}$."
+  question="Convert the fraction to a percent: $\tfrac{5}{12}$. Enter the exact percent as a mixed number, without the % sign — e.g. $12\tfrac{1}{2}$."
   answer="41\frac{2}{3}"
   answerForm="mixed-number"
   answerDisplay="$41\tfrac{2}{3}\%$"
@@ -592,7 +603,8 @@ write the percent as $33.\overline{3}\%$.
 
 {{< fillin
   question="Convert the fraction to a percent: according to the National Center for Health Statistics, in 2012 about $\tfrac{7}{20}$ of American adults were obese."
-  answer="35"
+  answer="35\%"
+  answerForm="percent"
   answerDisplay="35%"
   hint="Divide 7 by 20 to get the decimal, then move the decimal point two places to the right."
 >}}

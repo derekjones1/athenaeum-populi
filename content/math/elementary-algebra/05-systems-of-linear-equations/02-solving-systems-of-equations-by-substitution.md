@@ -207,9 +207,9 @@ the same line. The system has infinitely many solutions.
   hint="Solve the first equation for x and substitute into the second. If the variable terms cancel out leaving a true numeric statement, the equations are dependent."
   answer="infinitely many solutions"
 >}}
+infinitely many solutions
 one solution
 no solution
-infinitely many solutions
 {{< /multiplechoice >}}
 
 Look back at the equations in the last example — is there any way to
@@ -232,9 +232,9 @@ solution.
   hint="Substitute the expression for y into the first equation. If the variable terms cancel out leaving a false numeric statement, the system has no solution."
   answer="no solution"
 >}}
-one solution
-no solution
 infinitely many solutions
+no solution
+one solution
 {{< /multiplechoice >}}
 
 ## Solve Applications of Systems of Equations by Substitution
@@ -376,8 +376,8 @@ system has no solution.
   answer="no solution"
   hint="Substitute $-4x$ for $y$ in the second equation and interpret the resulting statement."
 >}}
-one solution
 no solution
+one solution
 infinitely many solutions
 {{< /multiplechoice >}}
 

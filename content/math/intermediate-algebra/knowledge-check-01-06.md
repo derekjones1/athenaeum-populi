@@ -79,8 +79,8 @@ weight: 7
   answer="undefined"
 >}}
 0
-11
 undefined
+11
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -180,20 +180,20 @@ undefined
   question="Write the interval notation for $-2 \le x < 5$."
   answer="$[-2,5)$"
 >}}
+$(-2,5)$
 $(-2,5]$
 $[-2,5)$
 $[-2,5]$
-$(-2,5)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Solve $3(2x - 3) < -5$ or $4x - 1 > 3$, and choose the solution in interval notation."
   answer="$(-\infty,\tfrac{2}{3}) \cup (1,\infty)$"
 >}}
-$(-\infty,\tfrac{2}{3}) \cup (1,\infty)$
 $(\tfrac{2}{3},1)$
-$(-\infty,1) \cup (\tfrac{2}{3},\infty)$
+$(-\infty,\tfrac{2}{3}) \cup (1,\infty)$
 $[\tfrac{2}{3},1]$
+$(-\infty,1) \cup (\tfrac{2}{3},\infty)$
 {{< /multiplechoice >}}
 
 ### 2.7 Solve Absolute Value Inequalities
@@ -214,10 +214,10 @@ $[\tfrac{2}{3},1]$
   question="Solve $|4x - 3| \ge 5$, and choose the solution in interval notation."
   answer="$(-\infty,-\tfrac{1}{2}] \cup [2,\infty)$"
 >}}
-$[-\tfrac{1}{2},2]$
 $(-\infty,-\tfrac{1}{2}] \cup [2,\infty)$
-$(-\infty,-2] \cup [\tfrac{1}{2},\infty)$
 $(-\tfrac{1}{2},2)$
+$[-\tfrac{1}{2},2]$
+$(-\infty,-2] \cup [\tfrac{1}{2},\infty)$
 {{< /multiplechoice >}}
 
 ## Chapter 3: Graphs and Functions
@@ -288,10 +288,10 @@ no
   question="Which description gives the graph of $y > \tfrac{3}{2}x + 5$?"
   answer="a dashed boundary line with the region above the line shaded"
 >}}
-a dashed boundary line with the region above the line shaded
 a solid boundary line with the region above the line shaded
 a dashed boundary line with the region below the line shaded
 a solid boundary line with the region below the line shaded
+a dashed boundary line with the region above the line shaded
 {{< /multiplechoice >}}
 
 ### 3.5 Relations and Functions
@@ -303,17 +303,17 @@ $\{(-3,27),(-2,8),(-1,1),(0,0),(1,1),(2,8),(3,27)\}$.
   question="Is this relation a function?"
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="What is the domain of the relation?"
   answer="$\{-3,-2,-1,0,1,2,3\}$"
 >}}
-$\{-3,-2,-1,0,1,2,3\}$
 $\{0,1,8,27\}$
 $\{-3,-2,-1\}$
+$\{-3,-2,-1,0,1,2,3\}$
 $\{1,2,3\}$
 {{< /multiplechoice >}}
 
@@ -322,9 +322,9 @@ $\{1,2,3\}$
   answer="$\{0,1,8,27\}$"
 >}}
 $\{-3,-2,-1,0,1,2,3\}$
-$\{0,1,8,27\}$
-$\{-27,-8,-1,0,1,8,27\}$
 $\{1,8,27\}$
+$\{-27,-8,-1,0,1,8,27\}$
+$\{0,1,8,27\}$
 {{< /multiplechoice >}}
 
 ### 3.6 Graphs of Functions
@@ -338,20 +338,20 @@ $\{1,8,27\}$
   question="Which description gives the graph of $f(x) = x^2 + 1$?"
   answer="an upward-opening parabola with vertex $(0,1)$"
 >}}
-an upward-opening parabola with vertex $(0,1)$
 an upward-opening parabola with vertex $(1,0)$
-a downward-opening parabola with vertex $(0,1)$
+an upward-opening parabola with vertex $(0,1)$
 a straight line through $(0,1)$
+a downward-opening parabola with vertex $(0,1)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="What is the range of $f(x) = x^2 + 1$?"
   answer="$[1,\infty)$"
 >}}
-$(-\infty,\infty)$
 $[1,\infty)$
-$(1,\infty)$
 $(-\infty,1]$
+$(1,\infty)$
+$(-\infty,\infty)$
 {{< /multiplechoice >}}
 
 ## Chapter 4: Systems of Linear Equations
@@ -545,8 +545,8 @@ trinomial
   question="Is $x + 3$ a factor of $x^3 + 8x^2 + 21x + 18$?"
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ## Chapter 6: Factoring

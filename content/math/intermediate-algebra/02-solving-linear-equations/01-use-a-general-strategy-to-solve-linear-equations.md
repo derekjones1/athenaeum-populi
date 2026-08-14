@@ -370,9 +370,9 @@ real numbers.
   hint="Distribute and combine like terms on both sides."
   answer="Identity; all real numbers"
 >}}
-Identity; all real numbers
-Contradiction; no solution
 Conditional equation
+Contradiction; no solution
+Identity; all real numbers
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -380,9 +380,9 @@ Conditional equation
   hint="Distribute and combine like terms on both sides."
   answer="Identity; all real numbers"
 >}}
-Identity; all real numbers
 Contradiction; no solution
 Conditional equation
+Identity; all real numbers
 {{< /multiplechoice >}}
 
 **Example.** Classify the equation and state the solution: $8+3(a-4)=0$.
@@ -434,9 +434,9 @@ The equation is a contradiction. It has no solution.
   hint="Distribute, combine like terms, and see whether the variables are eliminated."
   answer="Contradiction; no solution"
 >}}
-Identity; all real numbers
 Contradiction; no solution
 Conditional equation
+Identity; all real numbers
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -444,9 +444,9 @@ Conditional equation
   hint="Distribute, combine like terms, and see whether the variables are eliminated."
   answer="Contradiction; no solution"
 >}}
+Conditional equation
 Identity; all real numbers
 Contradiction; no solution
-Conditional equation
 {{< /multiplechoice >}}
 
 We summarize the methods for classifying equations in the table.
@@ -728,8 +728,8 @@ No
   hint="Substitute $-\tfrac{1}{2}$ for $y$ and simplify both sides."
   answer="No"
 >}}
-Yes
 No
+Yes
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -753,9 +753,9 @@ No
   hint="Distribute and combine like terms on both sides to see whether the variable terms are eliminated."
   answer="identity"
 >}}
-conditional equation
 identity
 contradiction
+conditional equation
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -773,8 +773,8 @@ contradiction
   hint="Distribute and isolate the variable to see whether it has one solution, all real numbers, or none."
   answer="conditional equation"
 >}}
-conditional equation
 identity
+conditional equation
 contradiction
 {{< /multiplechoice >}}
 

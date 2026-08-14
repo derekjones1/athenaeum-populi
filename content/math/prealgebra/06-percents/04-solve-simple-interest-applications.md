@@ -112,14 +112,16 @@ The rate was $11.5\%$.
 
 {{< fillin
   question="Find the rate if a principal of \$5,000 earned \$1,350 interest in 6 years."
-  answer="4.5"
+  answer="4.5\%"
+  answerForm="percent"
   answerDisplay="4.5%"
   hint="Substitute into $I = Prt$ to get $1{,}350 = 5{,}000 \cdot r \cdot 6$, then divide and convert to a percent."
 >}}
 
 {{< fillin
   question="Find the rate if a principal of \$9,000 earned \$1,755 interest in 3 years."
-  answer="6.5"
+  answer="6.5\%"
+  answerForm="percent"
   answerDisplay="6.5%"
   hint="Substitute into $I = Prt$ to get $1{,}755 = 9{,}000 \cdot r \cdot 3$, then divide and convert to a percent."
 >}}
@@ -183,14 +185,16 @@ rate of interest was $5.5\%$.
 
 {{< fillin
   question="Jim lent his sister \$5,000 to help her buy a house. In 3 years, she paid him the \$5,000, plus \$900 interest. What was the rate of interest?"
-  answer="6"
+  answer="6\%"
+  answerForm="percent"
   answerDisplay="6%"
   hint="Substitute into $I = Prt$ to get $900 = 5{,}000 \cdot r \cdot 3$, then divide and convert to a percent."
 >}}
 
 {{< fillin
   question="Hang borrowed \$7,500 from her parents to pay her tuition. In 5 years, she paid them \$1,500 interest in addition to the \$7,500 she borrowed. What was the rate of interest?"
-  answer="4"
+  answer="4\%"
+  answerForm="percent"
   answerDisplay="4%"
   hint="Substitute into $I = Prt$ to get $1{,}500 = 7{,}500 \cdot r \cdot 5$, then divide and convert to a percent."
 >}}
@@ -287,7 +291,8 @@ years.
 
 {{< fillin
   question="Use the simple interest formula to fill in the missing value. The interest is \$577.08, the principal is \$4,580, and the time is 2 years. What is the rate, as a percent?"
-  answer="6.3"
+  answer="6.3\%"
+  answerForm="percent"
   answerDisplay="6.3%"
   hint="Substitute into $I = Prt$ to get $577.08 = 4{,}580 \cdot r \cdot 2$, then divide and change the decimal to a percent."
 >}}
@@ -308,7 +313,8 @@ years.
 
 {{< fillin
   question="Find the rate if a principal of \$11,000 earned \$1,815 interest in 3 years. Give the rate as a percent."
-  answer="5.5"
+  answer="5.5\%"
+  answerForm="percent"
   answerDisplay="5.5%"
   hint="Substitute into $I = Prt$ to get $1{,}815 = 11{,}000 \cdot r \cdot 3$, then divide and change the decimal to a percent."
 >}}
@@ -331,7 +337,8 @@ years.
 
 {{< fillin
   question="Hilaria borrowed \$8,000 from her grandfather to pay for college. Five years later, she paid him back the \$8,000, plus \$1,200 interest. What was the rate of interest, as a percent?"
-  answer="3"
+  answer="3\%"
+  answerForm="percent"
   answerDisplay="3%"
   hint="The amount repaid is the principal and the extra amount is the interest, so solve $1{,}200 = 8{,}000 \cdot r \cdot 5$."
 >}}

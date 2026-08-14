@@ -508,8 +508,8 @@ system.
   answer="no solution"
 >}}
 one solution
-no solution
 infinitely many solutions
+no solution
 {{< /multiplechoice >}}
 
 Sometimes the equations in a system represent the same line. Since every
@@ -579,8 +579,8 @@ true. There are infinitely many solutions to this system.
   answer="infinitely many solutions"
 >}}
 one solution
-no solution
 infinitely many solutions
+no solution
 {{< /multiplechoice >}}
 
 {{< callout type="info" >}}
@@ -670,8 +670,8 @@ whose graphs intersect has one solution and is consistent and independent.
   hint="Same slope with different intercepts means the lines are parallel — they never meet."
   answer="no solution"
 >}}
-one solution
 no solution
+one solution
 infinitely many solutions
 {{< /multiplechoice >}}
 
@@ -985,9 +985,9 @@ system has infinitely many solutions.
   hint="Rewrite the second equation in standard form and compare it to the first equation."
   answer="infinitely many solutions"
 >}}
+infinitely many solutions
 exactly one solution
 no solution
-infinitely many solutions
 {{< /multiplechoice >}}
 
 ## Choose the most convenient method to solve a system of linear equations
@@ -1016,8 +1016,8 @@ be most convenient.
   hint="Neither equation is already solved for a variable, but both are ready to add once the coefficients are matched."
   answer="elimination"
 >}}
-substitution
 elimination
+substitution
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1063,8 +1063,8 @@ no
   hint="Substitute x=-3 and y=4 into the first equation — if it fails there, the pair cannot be a solution to the system."
   answer="no"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1072,8 +1072,8 @@ no
   hint="Substitute x=8/7 and y=6/7 into both equations and check whether each one is true."
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1081,8 +1081,8 @@ no
   hint="Substitute x=1 and y=3/4 into the first equation — if it fails there, the pair cannot be a solution to the system."
   answer="no"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ### Solve a system of linear equations by graphing
@@ -1106,8 +1106,8 @@ no
   hint="Write the first equation in slope-intercept form and compare its slope and y-intercept to the second equation."
   answer="no solution"
 >}}
-one solution
 no solution
+one solution
 infinitely many solutions
 {{< /multiplechoice >}}
 
@@ -1132,9 +1132,9 @@ infinitely many solutions
   hint="Substitute the expression for y into the second equation and see what kind of equation results."
   answer="no solution"
 >}}
-one solution
 no solution
 infinitely many solutions
+one solution
 {{< /multiplechoice >}}
 
 ### Solve a system of equations by elimination
@@ -1170,8 +1170,8 @@ infinitely many solutions
   hint="A variable that is already isolated can be substituted directly into the other equation."
   answer="substitution"
 >}}
-substitution
 elimination
+substitution
 {{< /multiplechoice >}}
 
 {{< multiplechoice

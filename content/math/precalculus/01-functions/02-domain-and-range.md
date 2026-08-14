@@ -245,9 +245,9 @@ $$\{2,3,4,5,6\}$$
   hint="The domain collects the first coordinate of every ordered pair."
 >}}
 $\{-5,0,5,10,15\}$
+$\{-12,-8,-4,0,4\}$
 $\{4,0,-4,-8,-12\}$
 $\{-5,-12\}$
-$\{-12,-8,-4,0,4\}$
 {{< /multiplechoice >}}
 
 {{< callout type="info" >}}
@@ -273,10 +273,10 @@ In interval form, the domain of $f$ is $(-\infty,\infty)$.
   answer="$(-\infty,\infty)$"
   hint="Nothing here is a denominator or an even root, so ask whether any real number could fail."
 >}}
-$(-\infty,\infty)$
-$[0,\infty)$
 $(-\infty,5]$
 $(-\infty,0)\cup(0,\infty)$
+$[0,\infty)$
+$(-\infty,\infty)$
 {{< /multiplechoice >}}
 
 {{< callout type="info" >}}
@@ -343,10 +343,10 @@ In interval form, the domain of $f$ is $(-\infty,2)\cup(2,\infty)$.
   answer="$(-\infty,\tfrac{1}{2})\cup(\tfrac{1}{2},\infty)$"
   hint="Set the denominator equal to zero; that input is the one value to exclude."
 >}}
-$(-\infty,\tfrac{1}{2})\cup(\tfrac{1}{2},\infty)$
 $(-\infty,-\tfrac{1}{2})\cup(-\tfrac{1}{2},\infty)$
-$(-\infty,2)\cup(2,\infty)$
 $[\tfrac{1}{2},\infty)$
+$(-\infty,\tfrac{1}{2})\cup(\tfrac{1}{2},\infty)$
+$(-\infty,2)\cup(2,\infty)$
 {{< /multiplechoice >}}
 
 {{< callout type="info" >}}
@@ -384,10 +384,10 @@ are all real numbers less than or equal to $7$, or $(-\infty,7]$.
   answer="$[-\tfrac{5}{2},\infty)$"
   hint="Set the radicand greater than or equal to zero and solve the inequality."
 >}}
+$(-\infty,\infty)$
 $[-\tfrac{5}{2},\infty)$
 $(-\infty,-\tfrac{5}{2}]$
 $[\tfrac{5}{2},\infty)$
-$(-\infty,\infty)$
 {{< /multiplechoice >}}
 
 {{< callout type="info" >}}
@@ -719,10 +719,10 @@ the boundary is not included in the set.
   answer="values that are less than or equal to $-2$, or values that are greater than or equal to $-1$ and less than 3"
   hint="Read each heavy stretch separately, then check whether each endpoint dot is solid or hollow."
 >}}
-values that are less than or equal to $-2$, or values that are greater than or equal to $-1$ and less than 3
+values that are greater than or equal to $-2$ and less than 3
 values that are less than $-2$, or values that are greater than $-1$ and less than or equal to 3
 values that are between $-2$ and $-1$, or values that are greater than 3
-values that are greater than or equal to $-2$ and less than 3
+values that are less than or equal to $-2$, or values that are greater than or equal to $-1$ and less than 3
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -730,10 +730,10 @@ values that are greater than or equal to $-2$ and less than 3
   answer="$(-\infty,-2]\cup[-1,3)$"
   hint="A solid dot takes a bracket and a hollow dot takes a parenthesis; join the two pieces with $\cup$."
 >}}
-$(-\infty,-2]\cup[-1,3)$
-$(-\infty,-2)\cup(-1,3]$
 $[-2,-1]\cup(3,\infty)$
+$(-\infty,-2]\cup[-1,3)$
 $(-\infty,-2]\cup[-1,3]$
+$(-\infty,-2)\cup(-1,3]$
 {{< /multiplechoice >}}
 
 ## Finding domain and range from graphs
@@ -1131,9 +1131,9 @@ largest values since they do not fall exactly on the grid lines.
   answer="$[1950,2002]$"
   hint="The domain is the horizontal extent of the graph, read off the year axis."
 >}}
-$[1950,2002]$
 $[0,100]$
 $[47,89]$
+$[1950,2002]$
 $[1950,2000]$
 {{< /multiplechoice >}}
 
@@ -1143,9 +1143,9 @@ $[1950,2000]$
   hint="The range is the vertical extent; remember the axis is labeled in millions of people."
 >}}
 $[47{,}000{,}000,\,89{,}000{,}000]$
-$[0,100{,}000{,}000]$
 $[47,89]$
 $[1950,2002]$
+$[0,100{,}000{,}000]$
 {{< /multiplechoice >}}
 
 {{< callout type="info" >}}
@@ -1781,10 +1781,10 @@ The graph below represents the function $f$.
   answer="$(-\infty,2]$"
   hint="The radicand must be nonnegative: solve $2-x\ge 0$."
 >}}
-$(-\infty,2]$
-$[2,\infty)$
-$(-\infty,-2]$
 $(-\infty,\infty)$
+$[2,\infty)$
+$(-\infty,2]$
+$(-\infty,-2]$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1792,10 +1792,10 @@ $(-\infty,\infty)$
   answer="$(-\infty,0]$"
   hint="A square root is never negative, so think about what the leading minus sign does to every output."
 >}}
-$(-\infty,0]$
-$[0,\infty)$
-$(-\infty,2]$
 $(-\infty,\infty)$
+$[0,\infty)$
+$(-\infty,0]$
+$(-\infty,2]$
 {{< /multiplechoice >}}
 
 ## Graphing piecewise-defined functions
@@ -2531,10 +2531,10 @@ about }x\}$.
   answer="$(-\infty,\infty)$"
   hint="There is no denominator or even root here, so ask whether any real number could fail."
 >}}
-$(-\infty,\infty)$
 $(-\infty,5]$
 $[0,\infty)$
 $(-\infty,0)\cup(0,\infty)$
+$(-\infty,\infty)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -2542,10 +2542,10 @@ $(-\infty,0)\cup(0,\infty)$
   answer="$(-\infty,3]$"
   hint="Set the radicand greater than or equal to zero and solve for $x$."
 >}}
-$(-\infty,3]$
 $[3,\infty)$
-$(-\infty,3)$
 $(-\infty,6]$
+$(-\infty,3]$
+$(-\infty,3)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -2553,8 +2553,8 @@ $(-\infty,6]$
   answer="$(-\infty,-\tfrac{1}{2})\cup(-\tfrac{1}{2},\infty)$"
   hint="Set the denominator equal to zero; that input is the one value to exclude."
 >}}
-$(-\infty,-\tfrac{1}{2})\cup(-\tfrac{1}{2},\infty)$
 $(-\infty,-\tfrac{1}{3})\cup(-\tfrac{1}{3},\infty)$
+$(-\infty,-\tfrac{1}{2})\cup(-\tfrac{1}{2},\infty)$
 $(-\infty,\infty)$
 $[-\tfrac{1}{2},\infty)$
 {{< /multiplechoice >}}
@@ -2564,9 +2564,9 @@ $[-\tfrac{1}{2},\infty)$
   answer="$(-\infty,5)$"
   hint="The radicand sits under a denominator, so it must be strictly positive, not just nonnegative."
 >}}
+$(5,\infty)$
 $(-\infty,5)$
 $(-\infty,5]$
-$(5,\infty)$
 $(-\infty,-\tfrac{1}{2})\cup(-\tfrac{1}{2},\infty)$
 {{< /multiplechoice >}}
 
@@ -2892,8 +2892,8 @@ $(-\infty,-\tfrac{1}{2})\cup(-\tfrac{1}{2},\infty)$
   answer="$(-\infty,1)\cup(1,\infty)$"
   hint="Neither piece's interval includes $x=1$ itself, so check whether that input is covered at all."
 >}}
-$(-\infty,1)\cup(1,\infty)$
 $(-\infty,\infty)$
+$(-\infty,1)\cup(1,\infty)$
 $(-\infty,1]$
 $[1,\infty)$
 {{< /multiplechoice >}}

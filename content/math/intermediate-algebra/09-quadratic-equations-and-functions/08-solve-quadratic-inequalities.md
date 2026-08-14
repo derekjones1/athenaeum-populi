@@ -487,8 +487,8 @@ no solution
   answer="no solution"
   hint="This is the same parabola as in the preceding question."
 >}}
-$(-\infty,\infty)$
 no solution
+$(-\infty,\infty)$
 {{< /multiplechoice >}}
 
 ## Key terms

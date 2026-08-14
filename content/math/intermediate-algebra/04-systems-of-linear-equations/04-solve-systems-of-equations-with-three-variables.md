@@ -293,9 +293,9 @@ false statement, which tells us the system is inconsistent.
   hint="Add the first two equations to eliminate x, getting one equation in y and z. Then subtract the first equation from the third to eliminate x again, getting a second equation in y and z. Compare the two."
   answer="no solution"
 >}}
+infinitely many solutions
 exactly one solution
 no solution
-infinitely many solutions
 {{< /multiplechoice >}}
 
 When we solve a system and end up with no variables but a **true**
@@ -364,9 +364,9 @@ where $z$ is any real number.
   hint="Compare the second and third equations — one is a constant multiple of the other, so the three planes reduce to only two independent equations."
   answer="infinitely many solutions"
 >}}
-exactly one solution
 no solution
 infinitely many solutions
+exactly one solution
 {{< /multiplechoice >}}
 
 ## Solve Applications Using Systems of Linear Equations with Three Variables
@@ -474,8 +474,8 @@ solutions; eliminating variables leaves a true statement like $0=0$.
   hint="Substitute the triple into all three equations; it is a solution only if every equation comes out true."
   answer="no"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -483,8 +483,8 @@ no
   hint="Substitute the triple into all three equations; it is a solution only if every equation comes out true."
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -526,9 +526,9 @@ no
   hint="Eliminate x from two different pairs of equations; if the two resulting equations in y and z contradict each other, the system has no solution."
   answer="no solution"
 >}}
-exactly one solution
-no solution
 infinitely many solutions
+no solution
+exactly one solution
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -536,9 +536,9 @@ infinitely many solutions
   hint="Eliminate x from two different pairs of equations; if the two resulting equations in y and z are equivalent, the system has infinitely many solutions."
   answer="infinitely many solutions"
 >}}
-exactly one solution
-no solution
 infinitely many solutions
+no solution
+exactly one solution
 {{< /multiplechoice >}}
 
 ### Solve applications using systems of linear equations with three variables

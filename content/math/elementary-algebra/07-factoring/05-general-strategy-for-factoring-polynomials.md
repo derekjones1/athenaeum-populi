@@ -347,8 +347,8 @@ prime.
   answer="It is prime"
 >}}
 $(2c + 9d)^2$
-$(2c + 3d)(2c + 27d)$
 It is prime
+$(2c + 3d)(2c + 27d)$
 {{< /multiplechoice >}}
 
 ---

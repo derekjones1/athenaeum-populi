@@ -424,9 +424,9 @@ $$
   answer="$-14$"
   hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
-$-14$
-undefined
 $-4$
+undefined
+$-14$
 {{< /multiplechoice >}}
 
 ## Use the Remainder and Factor Theorems
@@ -512,8 +512,8 @@ Since $f(4)=0$, $x-4$ is a factor of $f(x)=x^3-64$.
   answer="yes"
   hint="For a proposed factor $x-c$, evaluate $f(c)$; a remainder of zero confirms the factor."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice

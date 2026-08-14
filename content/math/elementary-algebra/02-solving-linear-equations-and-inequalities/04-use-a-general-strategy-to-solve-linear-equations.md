@@ -337,9 +337,9 @@ contradiction. It has no solution.
   hint="Distribute and combine like terms on each side, then subtract the matching variable term from both sides. Both sides have the same coefficient on the variable term but different constants ($25 \ne -12$)."
   answer="contradiction"
 >}}
-conditional equation
 identity
 contradiction
+conditional equation
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -348,8 +348,8 @@ contradiction
   answer="contradiction"
 >}}
 conditional equation
-identity
 contradiction
+identity
 {{< /multiplechoice >}}
 
 | Type of equation | What happens when you solve it? | Solution |
@@ -389,8 +389,8 @@ variable; it has no solution.
   answer="identity; all real numbers"
   hint="Distribute and combine like terms on the right, then compare the two simplified sides."
 >}}
-identity; all real numbers
 contradiction; no solution
+identity; all real numbers
 conditional equation; one solution
 {{< /multiplechoice >}}
 
@@ -399,9 +399,9 @@ conditional equation; one solution
   answer="conditional equation; $d = \tfrac{2}{3}$"
   hint="Distribute $24$, combine the constants, and solve the resulting one-variable equation."
 >}}
+contradiction; no solution
 conditional equation; $d = \tfrac{2}{3}$
 identity; all real numbers
-contradiction; no solution
 {{< /multiplechoice >}}
 
 {{< multiplechoice

@@ -647,9 +647,9 @@ binomials with integer coefficients (no factor pair of $c$ adds to $b$).
   hint="Look for two integers that multiply to $5$ and add to $1$. Check every factor pair of $5$, including the negative pair."
   answer="It is prime"
 >}}
-$(x+1)(x+5)$
 $(x-1)(x-5)$
 It is prime
+$(x+1)(x+5)$
 {{< /multiplechoice >}}
 
 ### Factor trinomials of the form $x^2+bxy+cy^2$

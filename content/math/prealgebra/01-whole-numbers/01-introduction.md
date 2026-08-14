@@ -482,8 +482,8 @@ the process of approximating a number to a given place value.
   answer="hundred thousands"
   hint="Name the places from the right: ones, tens, hundreds, then a comma starts the thousands period."
 >}}
-thousands
 ten thousands
+thousands
 hundred thousands
 millions
 {{< /multiplechoice >}}
@@ -493,10 +493,10 @@ millions
   answer="millions"
   hint="The 6 sits just left of the second comma from the right."
 >}}
+hundred millions
+ten millions
 hundred thousands
 millions
-ten millions
-hundred millions
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -504,9 +504,9 @@ hundred millions
   answer="thousands"
   hint="The 4 is the last digit of the thousands period, just left of a comma."
 >}}
-hundreds
-thousands
 ten thousands
+thousands
+hundreds
 hundred thousands
 {{< /multiplechoice >}}
 
@@ -515,9 +515,9 @@ hundred thousands
   answer="tens"
   hint="Count in from the right-hand end: ones, then tens."
 >}}
+hundreds
 ones
 tens
-hundreds
 thousands
 {{< /multiplechoice >}}
 
@@ -526,10 +526,10 @@ thousands
   answer="ten thousands"
   hint="A zero still occupies a place; it sits between the 8 and the 4."
 >}}
-thousands
+millions
 ten thousands
 hundred thousands
-millions
+thousands
 {{< /multiplechoice >}}
 
 ### Use place value to name whole numbers
@@ -539,10 +539,10 @@ millions
   answer="One thousand, seventy-eight"
   hint="Name the thousands period, then the ones period — and remember every period after the first fills three places."
 >}}
-One hundred seventy-eight
 One thousand, seventy-eight
-One thousand, seven hundred eight
 Ten thousand, seventy-eight
+One thousand, seven hundred eight
+One hundred seventy-eight
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -550,10 +550,10 @@ Ten thousand, seventy-eight
   answer="Fourteen thousand, four hundred ten"
   hint="Split the number at the comma: name the thousands period, then the ones period."
 >}}
-Fourteen thousand, forty-one
 Fourteen thousand, four hundred ten
-Fourteen thousand, four hundred forty
 One hundred forty-four thousand, ten
+Fourteen thousand, four hundred forty
+Fourteen thousand, forty-one
 {{< /multiplechoice >}}
 
 ### Use place value to write whole numbers

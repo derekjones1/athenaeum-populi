@@ -265,3 +265,14 @@ math-field.ap-fillin-field::part(placeholder) {
 .katex .katex-mathml {
   display: block;
 }
+
+/* --- Multiple choice before (or without) JS -------------------------------
+   Until the <multiple-choice> component upgrades, its option buttons are
+   rendered but wired to nothing — clicking silently does nothing, which
+   reads as broken. Show them as unavailable until the element is defined;
+   if JS never arrives, they stay visibly inactive. */
+multiple-choice:not(:defined) .ap-mc-option {
+  pointer-events: none;
+  opacity: 0.55;
+  cursor: default;
+}

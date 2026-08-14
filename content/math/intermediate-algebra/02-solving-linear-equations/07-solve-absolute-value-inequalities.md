@@ -445,9 +445,9 @@ the number line. **Tolerance** is the allowed difference from a specification.
   answer="No solution"
   hint="An absolute value can never equal a negative number."
 >}}
+$y=-5$
 No solution
 $y=5$
-$y=-5$
 $y=0$
 {{< /multiplechoice >}}
 
@@ -487,9 +487,9 @@ $y=0$
   answer="No solution"
   hint="An absolute value is never less than a negative number, so no value of $x$ can make this true."
 >}}
-No solution
-All real numbers
 $x=-\tfrac{1}{5}$
+All real numbers
+No solution
 $\left[-\tfrac{3}{5},\tfrac{1}{5}\right]$
 {{< /multiplechoice >}}
 

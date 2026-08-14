@@ -99,6 +99,7 @@ simplified.
 {{< fillin
   question="Simplify: $\left(6\sqrt{3}\right)\left(5\sqrt{6}\right)$."
   answer="90\sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$90\sqrt{2}$"
   hint="Multiply the coefficients ($6 \cdot 5$) and the radicals ($\sqrt{3} \cdot \sqrt{6} = \sqrt{18}$), then simplify $\sqrt{18}$."
 >}}
@@ -228,6 +229,7 @@ $$
 {{< fillin
   question="Simplify: $\left(6\sqrt{11}\right)\left(5\sqrt{11}\right)$."
   answer="330"
+  answerForm="decimal"
   hint="Multiply the coefficients, then use $\left(\sqrt{11}\right)^2 = 11$."
 >}}
 
@@ -290,6 +292,7 @@ $$
 {{< fillin
   question="Simplify: $\sqrt{6}\left(1 + 3\sqrt{6}\right)$."
   answer="\sqrt{6} + 18"
+  answerForm="simplified-radical"
   answerDisplay="$\sqrt{6} + 18$"
   hint="Distribute: the second term is $3 \cdot \sqrt{6} \cdot \sqrt{6} = 3 \cdot 6$."
 >}}
@@ -313,6 +316,7 @@ $$
 {{< fillin
   question="Simplify: $\left(1 + \sqrt{6}\right)\left(3 - \sqrt{6}\right)$."
   answer="-3 + 2\sqrt{6}"
+  answerForm="simplified-radical"
   answerDisplay="$-3 + 2\sqrt{6}$"
   hint="FOIL gives $3 - \sqrt{6} + 3\sqrt{6} - 6$; then combine the constant terms and the radical terms."
 >}}
@@ -333,6 +337,7 @@ $$
 {{< fillin
   question="Simplify: $\left(6 - 3\sqrt{7}\right)\left(3 + 4\sqrt{7}\right)$."
   answer="-66 + 15\sqrt{7}"
+  answerForm="simplified-radical"
   answerDisplay="$-66 + 15\sqrt{7}$"
   hint="FOIL gives $18 + 24\sqrt{7} - 9\sqrt{7} - 12 \cdot 7$; combine the constants and the radical terms."
 >}}
@@ -352,6 +357,7 @@ $$
 {{< fillin
   question="Simplify: $\left(5\sqrt{3} - \sqrt{7}\right)\left(\sqrt{3} + 2\sqrt{7}\right)$."
   answer="1 + 9\sqrt{21}"
+  answerForm="simplified-radical"
   answerDisplay="$1 + 9\sqrt{21}$"
   hint="FOIL gives $5 \cdot 3 + 10\sqrt{21} - \sqrt{21} - 2 \cdot 7$; combine the constants ($15 - 14$) and the $\sqrt{21}$ terms."
 >}}
@@ -420,6 +426,7 @@ $$
 {{< fillin
   question="Simplify: $\left(6 - \sqrt{5}\right)^2$."
   answer="41 - 12\sqrt{5}"
+  answerForm="simplified-radical"
   answerDisplay="$41 - 12\sqrt{5}$"
   hint="Use $(a - b)^2 = a^2 - 2ab + b^2$ with $a = 6$, $b = \sqrt{5}$; the middle term is $2 \cdot 6 \cdot \sqrt{5}$ and $\left(\sqrt{5}\right)^2 = 5$."
 >}}
@@ -438,6 +445,7 @@ $$
 {{< fillin
   question="Simplify: $\left(2 + 5\sqrt{m}\right)^2$."
   answer="4 + 20\sqrt{m} + 25m"
+  answerForm="simplified-radical"
   answerDisplay="$4 + 20\sqrt{m} + 25m$"
   hint="Use $(a + b)^2 = a^2 + 2ab + b^2$ with $a = 2$, $b = 5\sqrt{m}$; note $\left(5\sqrt{m}\right)^2 = 25m$."
 >}}
@@ -476,6 +484,7 @@ becomes very useful in the next section when we divide square roots.
 {{< fillin
   question="Simplify: $\left(3 - 2\sqrt{5}\right)\left(3 + 2\sqrt{5}\right)$."
   answer="-11"
+  answerForm="decimal"
   hint="Use $(a - b)(a + b) = a^2 - b^2$: compute $3^2 - \left(2\sqrt{5}\right)^2 = 9 - 4 \cdot 5$."
 >}}
 

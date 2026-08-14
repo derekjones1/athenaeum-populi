@@ -353,8 +353,8 @@ solved for $y$, so substitution will be most convenient.
   hint="Neither equation is already solved for a variable, but both are in standard form ready for adding."
   answer="elimination"
 >}}
-substitution
 elimination
+substitution
 {{< /multiplechoice >}}
 
 ## Key terms
@@ -410,8 +410,8 @@ leaves a false statement like $0=-5$.
   answer="elimination"
   hint="Both equations are already in standard form, and integer multiples can make one pair of coefficients opposites."
 >}}
-substitution
 elimination
+substitution
 {{< /multiplechoice >}}
 
 {{< multiplechoice

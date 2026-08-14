@@ -188,8 +188,8 @@ $$
   hint="Evaluate $b^2-4ac$."
   answer="No real solution"
 >}}
-No real solution
 $a=2$
+No real solution
 $a=-2$
 Two real solutions
 {{< /multiplechoice >}}
@@ -364,9 +364,9 @@ Because the discriminant is 0, there is one solution to the equation.
   hint="Compute the discriminant and use its sign."
   answer="No real solutions"
 >}}
+Two real solutions
 No real solutions
 One real solution
-Two real solutions
 {{< /multiplechoice >}}
 
 ## Identify the Most Appropriate Method to Use to Solve a Quadratic Equation
@@ -422,8 +422,8 @@ the most appropriate method.
   answer="Factoring"
 >}}
 Factoring
-Square Root Property
 Quadratic Formula
+Square Root Property
 {{< /multiplechoice >}}
 
 ## Key terms
@@ -459,10 +459,10 @@ solutions.
   hint="Evaluate the discriminant $b^2-4ac$ before attempting to simplify the radical."
   answer="No real solution"
 >}}
-No real solution
 $x=-\tfrac{3}{2}$
 $x=\tfrac{3}{2}$
 Two real solutions
+No real solution
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -479,9 +479,9 @@ Two real solutions
   hint="Compute $b^2-4ac$ and check whether it is positive, zero, or negative."
   answer="No real solutions"
 >}}
-No real solutions
 One solution
 Two solutions
+No real solutions
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -499,8 +499,8 @@ Two solutions
   hint="Compute $b^2-4ac$ and check whether it is positive, zero, or negative."
   answer="Two solutions"
 >}}
-No real solutions
 One solution
+No real solutions
 Two solutions
 {{< /multiplechoice >}}
 
@@ -509,8 +509,8 @@ Two solutions
   hint="Compute $b^2-4ac$ and check whether it is positive, zero, or negative."
   answer="No real solutions"
 >}}
-No real solutions
 One solution
+No real solutions
 Two solutions
 {{< /multiplechoice >}}
 
@@ -532,8 +532,8 @@ Two solutions
   answer="Factoring"
 >}}
 Factoring
-Square Root Property
 Quadratic Formula
+Square Root Property
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -541,9 +541,9 @@ Quadratic Formula
   hint="The equation is already written as a squared quantity equal to a constant."
   answer="Square Root Property"
 >}}
-Factoring
-Square Root Property
 Quadratic Formula
+Square Root Property
+Factoring
 {{< /multiplechoice >}}
 
 {{< multiplechoice

@@ -38,6 +38,7 @@ The model shows that $\tfrac{3}{8} + \tfrac{2}{8} = \tfrac{5}{8}$.
 {{< fillin
   question="Use the fraction-circle model idea to find the sum: $\tfrac{1}{6} + \tfrac{4}{6}$"
   answer="\frac{5}{6}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{5}{6}$"
   hint="Count the total number of sixth-pieces after combining both groups."
 >}}
@@ -152,6 +153,7 @@ $\tfrac{4}{5} - \tfrac{1}{5} = \tfrac{3}{5}$.
 {{< fillin
   question="Using the same idea, find the difference: $\tfrac{7}{8} - \tfrac{4}{8}$"
   answer="\frac{3}{8}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{8}$"
   hint="Count how many eighth-pieces are left after taking some away."
 >}}
@@ -263,6 +265,7 @@ numerators and keep the denominator.
 {{< fillin
   question="The fraction circle above models the sum $\tfrac{3}{10} + \tfrac{4}{10}$. What fraction of the circle is shaded?"
   answer="\frac{7}{10}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{7}{10}$"
   hint="Every piece is one tenth, so count the shaded tenths and write that count over $10$."
 >}}

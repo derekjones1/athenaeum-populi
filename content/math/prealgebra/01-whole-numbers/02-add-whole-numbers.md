@@ -74,6 +74,7 @@ $4$ tens and $3$ ones — that is, $40 + 3 = 43$. So $17 + 26 = 43$.
 {{< fillin
   question="Base-10 blocks model 15 as 1 tens rod and 5 ones, combined with 27 as 2 tens rods and 7 ones. What is $15 + 27$?"
   answer="42"
+  answerForm="decimal"
   hint="Combine the tens and ones separately first: 3 tens and 12 ones. Then exchange 10 of the ones for 1 more ten."
 >}}
 
@@ -99,6 +100,7 @@ $$a + b = b + a$$
 {{< fillin
   question="Using the Commutative Property of Addition, if $8 + 7 = 15$, what is $7 + 8$?"
   answer="15"
+  answerForm="decimal"
   hint="Changing the order of the addends does not change the sum."
 >}}
 
@@ -328,10 +330,10 @@ lengths of its sides.
   answer="five plus two; the sum of 5 and 2"
   hint="Read the expression left to right — first addend, operation, second addend. The result of addition is called the sum."
 >}}
-five plus two; the sum of 5 and 2
 two plus five; the sum of 2 and 5
-five times two; the product of 5 and 2
 five minus two; the difference of 5 and 2
+five plus two; the sum of 5 and 2
+five times two; the product of 5 and 2
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -340,9 +342,9 @@ five minus two; the difference of 5 and 2
   hint="Name each addend in words exactly as it is written, then join them with the word for the operation symbol."
 >}}
 thirteen plus eighteen; the sum of 13 and 18
+thirteen plus eighty; the sum of 13 and 80
 eighteen plus thirteen; the sum of 18 and 13
 thirty plus eighteen; the sum of 30 and 18
-thirteen plus eighty; the sum of 13 and 80
 {{< /multiplechoice >}}
 
 {{< multiplechoice

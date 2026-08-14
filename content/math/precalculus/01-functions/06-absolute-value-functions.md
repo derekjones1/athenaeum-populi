@@ -116,10 +116,10 @@ mathematicians generally prefer absolute value notation.
   answer="$\lvert x-2\rvert\le 3$"
   hint="The distance between $x$ and 2 is $\lvert x-2\rvert$; \"within 3\" bounds that distance."
 >}}
-$\lvert x-2\rvert\le 3$
-$\lvert x+2\rvert\le 3$
 $\lvert x-3\rvert\le 2$
 $\lvert x-2\rvert\ge 3$
+$\lvert x-2\rvert\le 3$
+$\lvert x+2\rvert\le 3$
 {{< /multiplechoice >}}
 
 **Example.** Electrical parts, such as resistors and capacitors, come with
@@ -146,9 +146,9 @@ $$\lvert R-680\rvert\le 34$$
   hint="Subtract the reference value inside the bars, and bound the result by the allowed spread."
 >}}
 $\lvert p-80\rvert\le 20$
+$\lvert p-80\rvert\ge 20$
 $\lvert p-20\rvert\le 80$
 $\lvert p+80\rvert\le 20$
-$\lvert p-80\rvert\ge 20$
 {{< /multiplechoice >}}
 
 ## Graphing an absolute value function
@@ -1328,10 +1328,10 @@ $$
   answer="$-8\le x\le 4$"
   hint="Rewrite without the bars as $-6\le x+2\le 6$, then isolate $x$."
 >}}
-$-8\le x\le 4$
-$-4\le x\le 8$
-$x\le -8$ or $x\ge 4$
 $-6\le x\le 6$
+$x\le -8$ or $x\ge 4$
+$-4\le x\le 8$
+$-8\le x\le 4$
 {{< /multiplechoice >}}
 
 {{< callout type="info" >}}
@@ -1468,10 +1468,10 @@ In interval notation, this would be $(-\infty,-0.25)\cup(2.75,\infty)$.
   answer="$(-\infty,1]\cup[7,\infty)$"
   hint="Divide by $-2$ and reverse the inequality, then read $\lvert k-4\rvert\ge 3$ as two separate conditions."
 >}}
-$(-\infty,1]\cup[7,\infty)$
-$[1,7]$
 $(-\infty,-1]\cup[7,\infty)$
+$[1,7]$
 $(-\infty,3]\cup[5,\infty)$
+$(-\infty,1]\cup[7,\infty)$
 {{< /multiplechoice >}}
 
 ## Key concepts
@@ -1518,8 +1518,8 @@ $\lvert A\rvert\le B$, $\lvert A\rvert>B$, or $\lvert A\rvert\ge B$.
   hint="Evaluate $f$ at the window's endpoints and at the corner $x=2$ to find the least and greatest outputs."
 >}}
 $[0,20]$
-$[0,10]$
 $[-20,20]$
+$[0,10]$
 $[0,40]$
 {{< /multiplechoice >}}
 
@@ -1546,10 +1546,10 @@ $[0,40]$
   answer="No solution"
   hint="The absolute value of an expression can never equal a negative number."
 >}}
-No solution
 $x=3$
-$x=-\tfrac{5}{3}$
 $x=3$ or $x=-\tfrac{5}{3}$
+No solution
+$x=-\tfrac{5}{3}$
 {{< /multiplechoice >}}
 
 ### Solve an absolute value inequality
@@ -1560,9 +1560,9 @@ $x=3$ or $x=-\tfrac{5}{3}$
   hint="Rewrite without the bars as $-8\le 3x-4\le 8$, then isolate $x$."
 >}}
 $-\tfrac{4}{3}\le x\le 4$
-$-4\le x\le \tfrac{4}{3}$
-$x\le -\tfrac{4}{3}$ or $x\ge 4$
 $-\tfrac{4}{3}< x< 4$
+$x\le -\tfrac{4}{3}$ or $x\ge 4$
+$-4\le x\le \tfrac{4}{3}$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1570,10 +1570,10 @@ $-\tfrac{4}{3}< x< 4$
   answer="$(-\infty,-\tfrac{8}{3}]\cup[6,\infty)$"
   hint="Split into $3x-5\le -13$ or $3x-5\ge 13$, then isolate $x$ in each."
 >}}
-$(-\infty,-\tfrac{8}{3}]\cup[6,\infty)$
 $[-\tfrac{8}{3},6]$
-$(-\infty,-6]\cup[\tfrac{8}{3},\infty)$
 $(-\infty,-\tfrac{8}{3})\cup(6,\infty)$
+$(-\infty,-\tfrac{8}{3}]\cup[6,\infty)$
+$(-\infty,-6]\cup[\tfrac{8}{3},\infty)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1581,10 +1581,10 @@ $(-\infty,-\tfrac{8}{3})\cup(6,\infty)$
   answer="$(-\infty,\infty)$"
   hint="Isolate the absolute value to get $\left\lvert -2x-\tfrac{2}{3}(x+1)\right\rvert>-4$ — an absolute value is never negative, so this holds for every $x$ without expanding the expression inside."
 >}}
-$(-\infty,\infty)$
-No solution
-$(-\infty,-4)\cup(4,\infty)$
 $x=-4$
+$(-\infty,\infty)$
+$(-\infty,-4)\cup(4,\infty)$
+No solution
 {{< /multiplechoice >}}
 
 ---

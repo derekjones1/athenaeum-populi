@@ -790,10 +790,10 @@ known as initial value.
   answer="Determine the independent variable — the variable upon which the output depends."
   hint="Think about which quantity drives the model and which quantity responds to it."
 >}}
+Find the $y$-intercept and use it as the input variable.
 Determine the independent variable — the variable upon which the output depends.
 Determine the dependent variable, since it changes as time passes.
 Identify whichever quantity in the problem is measured in dollars.
-Find the $y$-intercept and use it as the input variable.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -801,8 +801,8 @@ Find the $y$-intercept and use it as the input variable.
   answer="Find the output when the input is equal to zero."
   hint="The initial value is an output, so think about what input produces it."
 >}}
-Find the output when the input is equal to zero.
 Find the input when the output is equal to zero.
+Find the output when the input is equal to zero.
 Find the output when the input is at its largest value.
 Find the slope of the line through any two data points.
 {{< /multiplechoice >}}
@@ -870,8 +870,8 @@ The table below gives the median home value in Mississippi and Hawaii (adjusted 
   answer="Hawaii"
   hint="Compute the rate of change (slope) for each state and compare the two."
 >}}
-Mississippi
 Hawaii
+Mississippi
 {{< /multiplechoice >}}
 
 ### Build systems of linear models
@@ -882,9 +882,9 @@ Hawaii
   hint="Set the two monthly costs equal to find the break-even number of minutes, then decide which side of it favors the second plan."
 >}}
 More than 133 minutes
+More than 181 minutes
 Fewer than 133 minutes
 Exactly 133 minutes
-More than 181 minutes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -892,10 +892,10 @@ More than 181 minutes
   answer="More than \$42,857.14 worth of jewelry"
   hint="Set the two income expressions equal to find the break-even sales amount, then decide which side favors Option A's higher commission rate."
 >}}
-More than \$42,857.14 worth of jewelry
-Fewer than \$42,857.14 worth of jewelry
 Exactly \$42,857.14 worth of jewelry
+Fewer than \$42,857.14 worth of jewelry
 More than \$60,000 worth of jewelry
+More than \$42,857.14 worth of jewelry
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -904,9 +904,9 @@ More than \$60,000 worth of jewelry
   hint="Set the two income expressions equal to find the break-even sales amount, then decide which side favors Option A's higher commission rate."
 >}}
 More than \$66,666.67 worth of electronics
+More than \$86,666.67 worth of electronics
 Fewer than \$66,666.67 worth of electronics
 Exactly \$66,666.67 worth of electronics
-More than \$86,666.67 worth of electronics
 {{< /multiplechoice >}}
 
 ---

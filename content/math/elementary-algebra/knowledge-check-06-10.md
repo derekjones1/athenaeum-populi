@@ -82,6 +82,7 @@ aliases:
 {{< fillin
   question="Square the binomial using the Binomial Squares Pattern: $(8u + 1)^2$."
   answer="64u^2 + 16u + 1"
+  answerForm="expanded"
 >}}
 
 ### 6.5 Divide Monomials
@@ -149,14 +150,16 @@ aliases:
 ### 7.1 Greatest Common Factor and Factor by Grouping
 
 {{< fillin
-  question="Find the Greatest Common Factor in the expression: $14y - 42$."
+  question="Factor out the Greatest Common Factor in the expression: $14y - 42$."
   answer="14(y-3)"
+  answerForm="factored"
   answerDisplay="$14(y - 3)$"
 >}}
 
 {{< fillin
-  question="Find the Greatest Common Factor in the expression: $80a^2 + 120a^3$."
+  question="Factor out the Greatest Common Factor in the expression: $80a^2 + 120a^3$."
   answer="40a^2(2+3a)"
+  answerForm="factored"
   answerDisplay="$40a^2(2 + 3a)$"
 >}}
 

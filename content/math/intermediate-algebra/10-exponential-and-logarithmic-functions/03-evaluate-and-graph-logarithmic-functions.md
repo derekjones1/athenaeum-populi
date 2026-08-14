@@ -71,8 +71,8 @@ Identify the base and the exponent in each exponential equation:
   hint="In $a^y=x$, the equivalent logarithmic form is $\log_a x=y$."
 >}}
 ⓐ $\log_3 9=2$; ⓑ $\log_7\sqrt7=\tfrac12$; ⓒ $\log_{\tfrac13}\tfrac1{27}=x$
-ⓐ $\log_9 3=2$; ⓑ $\log_{\sqrt7}7=\tfrac12$; ⓒ $\log_{\tfrac1{27}}\tfrac13=x$
 ⓐ $\log_2 9=3$; ⓑ $\log_{\tfrac12}\sqrt7=7$; ⓒ $\log_x\tfrac1{27}=\tfrac13$
+ⓐ $\log_9 3=2$; ⓑ $\log_{\sqrt7}7=\tfrac12$; ⓒ $\log_{\tfrac1{27}}\tfrac13=x$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -80,9 +80,9 @@ Identify the base and the exponent in each exponential equation:
   answer="ⓐ $\log_4 64=3$; ⓑ $\log_4\sqrt[3]4=\tfrac13$; ⓒ $\log_{\tfrac12}\tfrac1{32}=x$"
   hint="Keep the exponential base as the logarithmic base."
 >}}
-ⓐ $\log_4 64=3$; ⓑ $\log_4\sqrt[3]4=\tfrac13$; ⓒ $\log_{\tfrac12}\tfrac1{32}=x$
-ⓐ $\log_{64}4=3$; ⓑ $\log_{\sqrt[3]4}4=\tfrac13$; ⓒ $\log_{\tfrac1{32}}\tfrac12=x$
 ⓐ $\log_3 64=4$; ⓑ $\log_{\tfrac13}\sqrt[3]4=4$; ⓒ $\log_x\tfrac1{32}=\tfrac12$
+ⓐ $\log_{64}4=3$; ⓑ $\log_{\sqrt[3]4}4=\tfrac13$; ⓒ $\log_{\tfrac1{32}}\tfrac12=x$
+ⓐ $\log_4 64=3$; ⓑ $\log_4\sqrt[3]4=\tfrac13$; ⓒ $\log_{\tfrac12}\tfrac1{32}=x$
 {{< /multiplechoice >}}
 
 In the next example we do the reverse—convert logarithmic form to exponential form.
@@ -104,9 +104,9 @@ Identify the base and the exponent in each logarithmic equation:
   answer="ⓐ $4^3=64$; ⓑ $x^0=1$; ⓒ $10^{-2}=\tfrac1{100}$"
   hint="In $\log_a x=y$, the equivalent exponential form is $a^y=x$."
 >}}
-ⓐ $4^3=64$; ⓑ $x^0=1$; ⓒ $10^{-2}=\tfrac1{100}$
-ⓐ $64^3=4$; ⓑ $1^0=x$; ⓒ $(\tfrac1{100})^{-2}=10$
 ⓐ $3^4=64$; ⓑ $0^x=1$; ⓒ $(-2)^{10}=\tfrac1{100}$
+ⓐ $64^3=4$; ⓑ $1^0=x$; ⓒ $(\tfrac1{100})^{-2}=10$
+ⓐ $4^3=64$; ⓑ $x^0=1$; ⓒ $10^{-2}=\tfrac1{100}$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -114,8 +114,8 @@ Identify the base and the exponent in each logarithmic equation:
   answer="ⓐ $3^3=27$; ⓑ $3^0=1$; ⓒ $10^{-1}=\tfrac1{10}$"
   hint="The logarithm is the exponent on the base."
 >}}
-ⓐ $3^3=27$; ⓑ $3^0=1$; ⓒ $10^{-1}=\tfrac1{10}$
 ⓐ $27^3=3$; ⓑ $1^0=3$; ⓒ $(\tfrac1{10})^{-1}=10$
+ⓐ $3^3=27$; ⓑ $3^0=1$; ⓒ $10^{-1}=\tfrac1{10}$
 ⓐ $3^{27}=3$; ⓑ $0^3=1$; ⓒ $(-1)^{10}=\tfrac1{10}$
 {{< /multiplechoice >}}
 
@@ -246,9 +246,9 @@ We will use point plotting to graph the function. It will be easier to start wit
   answer="It is increasing, passes through $(1,0)$ and $(3,1)$, and has vertical asymptote $x=0$."
   hint="A logarithmic graph is the reflection of its exponential inverse across $y=x$."
 >}}
-It is increasing, passes through $(1,0)$ and $(3,1)$, and has vertical asymptote $x=0$.
 It is decreasing, passes through $(0,1)$, and has horizontal asymptote $y=0$.
 It is increasing, passes through $(0,1)$ and $(1,3)$, and has horizontal asymptote $y=0$.
+It is increasing, passes through $(1,0)$ and $(3,1)$, and has vertical asymptote $x=0$.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -256,8 +256,8 @@ It is increasing, passes through $(0,1)$ and $(1,3)$, and has horizontal asympto
   answer="It is increasing, passes through $(1,0)$ and $(5,1)$, and has vertical asymptote $x=0$."
   hint="Evaluate $\log_5 1$ and $\log_5 5$, and note that the base is greater than 1."
 >}}
-It is increasing, passes through $(1,0)$ and $(5,1)$, and has vertical asymptote $x=0$.
 It is decreasing, passes through $(1,0)$ and $(\tfrac15,1)$, and has vertical asymptote $x=0$.
+It is increasing, passes through $(1,0)$ and $(5,1)$, and has vertical asymptote $x=0$.
 It is increasing, passes through $(0,1)$ and $(1,5)$, and has horizontal asymptote $y=0$.
 {{< /multiplechoice >}}
 
@@ -311,8 +311,8 @@ We will use point plotting to graph the function. It will be easier to start wit
   answer="It is decreasing, passes through $(1,0)$ and $(\tfrac12,1)$, and has vertical asymptote $x=0$."
   hint="A logarithm with a base between 0 and 1 is decreasing."
 >}}
-It is increasing, passes through $(1,0)$ and $(2,1)$, and has vertical asymptote $x=0$.
 It is decreasing, passes through $(1,0)$ and $(\tfrac12,1)$, and has vertical asymptote $x=0$.
+It is increasing, passes through $(1,0)$ and $(2,1)$, and has vertical asymptote $x=0$.
 It is decreasing, passes through $(0,1)$, and has horizontal asymptote $y=0$.
 {{< /multiplechoice >}}
 
@@ -321,9 +321,9 @@ It is decreasing, passes through $(0,1)$, and has horizontal asymptote $y=0$.
   answer="It is decreasing, passes through $(1,0)$ and $(\tfrac14,1)$, and has vertical asymptote $x=0$."
   hint="Use $(\tfrac14)^1=\tfrac14$ and the inverse relationship between exponential and logarithmic functions."
 >}}
-It is decreasing, passes through $(1,0)$ and $(\tfrac14,1)$, and has vertical asymptote $x=0$.
 It is increasing, passes through $(1,0)$ and $(4,1)$, and has vertical asymptote $x=0$.
 It is decreasing, passes through $(0,1)$ and $(1,\tfrac14)$, and has horizontal asymptote $y=0$.
+It is decreasing, passes through $(1,0)$ and $(\tfrac14,1)$, and has vertical asymptote $x=0$.
 {{< /multiplechoice >}}
 
 Now, let’s look at the graphs $y={\text{log}}_{\tfrac{1}{2}}x,y={\text{log}}_{\tfrac{1}{3}}x$ and $y={\text{log}}_{\tfrac{1}{4}}x$, so we can identify some of the properties of logarithmic functions where $0<a<1.$
@@ -697,9 +697,9 @@ To compare the intensities, we first need to convert the magnitudes to intensiti
   answer="$\log_2 32=5$"
   hint="In $a^y=x$, the equivalent logarithmic form is $\log_a x=y$."
 >}}
+$\log_5 32=2$
 $\log_2 32=5$
 $\log_{32}2=5$
-$\log_5 32=2$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -707,8 +707,8 @@ $\log_5 32=2$
   answer="$\log\tfrac1{100}=-2$"
   hint="A logarithm written with no base shown is base $10$."
 >}}
-$\log\tfrac1{100}=-2$
 $\log_{-2}\tfrac1{100}=10$
+$\log\tfrac1{100}=-2$
 $\log_{10}(-2)=\tfrac1{100}$
 {{< /multiplechoice >}}
 
@@ -717,9 +717,9 @@ $\log_{10}(-2)=\tfrac1{100}$
   answer="$\log_{17}\sqrt[5]{17}=x$"
   hint="Keep the exponential base as the logarithmic base."
 >}}
-$\log_{17}\sqrt[5]{17}=x$
 $\log_x\sqrt[5]{17}=17$
 $\log_{\sqrt[5]{17}}17=x$
+$\log_{17}\sqrt[5]{17}=x$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -727,9 +727,9 @@ $\log_{\sqrt[5]{17}}17=x$
   answer="$\ln x=3$"
   hint="The logarithmic form of $e^y=x$ is $\ln x=y$."
 >}}
-$\ln x=3$
-$\ln 3=x$
 $\log_x e=3$
+$\ln 3=x$
+$\ln x=3$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -737,9 +737,9 @@ $\log_x e=3$
   answer="$64=2^6$"
   hint="In $\log_a x=y$, the equivalent exponential form is $a^y=x$."
 >}}
-$64=2^6$
 $6=64^2$
 $2=6^{64}$
+$64=2^6$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -747,9 +747,9 @@ $2=6^{64}$
   answer="$1=7^0$"
   hint="The logarithm is the exponent on the base."
 >}}
-$1=7^0$
 $0=1^7$
 $7=0^1$
+$1=7^0$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -758,8 +758,8 @@ $7=0^1$
   hint="A logarithm written with no base shown is base $10$."
 >}}
 $1{,}000=10^3$
-$3=1{,}000^{10}$
 $10=3^{1{,}000}$
+$3=1{,}000^{10}$
 {{< /multiplechoice >}}
 
 {{< multiplechoice

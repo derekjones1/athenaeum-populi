@@ -397,10 +397,10 @@ written with its terms in descending order of degree.
   answer="binomial"
   hint="Count the terms separated by addition or subtraction signs, then match the count to the name."
 >}}
-monomial
-binomial
 trinomial
 other polynomial
+binomial
+monomial
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -408,10 +408,10 @@ other polynomial
   answer="trinomial"
   hint="Count the terms separated by addition or subtraction signs, then match the count to the name."
 >}}
-monomial
 binomial
-trinomial
 other polynomial
+trinomial
+monomial
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -419,10 +419,10 @@ other polynomial
   answer="monomial"
   hint="A single term of the form $ax^m$ has its own special name."
 >}}
-monomial
-binomial
 trinomial
+binomial
 other polynomial
+monomial
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -431,9 +431,9 @@ other polynomial
   hint="Only one-, two-, and three-term polynomials get a special name; anything with more terms is just called a polynomial."
 >}}
 monomial
-binomial
 trinomial
 other polynomial
+binomial
 {{< /multiplechoice >}}
 
 ### Determine the degree of polynomials

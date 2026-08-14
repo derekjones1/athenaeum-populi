@@ -607,8 +607,8 @@ quantity to both sides of an equation preserves equality.
   answer="yes"
   hint="Substitute $\tfrac{5}{3}$ for $y$ and simplify each side separately."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice

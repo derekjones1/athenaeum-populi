@@ -2749,10 +2749,10 @@ questions about $j$.
   answer="A vertical flip over the horizontal axis, then a shift up 5 units"
   hint="Compare the slope of $j$ with the slope of the identity function, then compare their $y$-intercepts."
 >}}
-A vertical flip over the horizontal axis, then a shift up 5 units
 A shift up 5 units, with no reflection
 A vertical flip over the horizontal axis, then a shift down 5 units
 A vertical stretch by a factor of 5
+A vertical flip over the horizontal axis, then a shift up 5 units
 {{< /multiplechoice >}}
 
 **Example.** A company sells sports helmets. The company incurs a one-time
@@ -3114,8 +3114,8 @@ neither
   hint="Solve each equation for $y$, then multiply the two slopes together; a product of $-1$ means perpendicular."
 >}}
 parallel
-perpendicular
 neither
+perpendicular
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -3124,8 +3124,8 @@ neither
   hint="Rewrite the second equation in slope-intercept form and compare its slope with the first line's."
 >}}
 parallel
-perpendicular
 neither
+perpendicular
 {{< /multiplechoice >}}
 
 ### Write the equation of a line parallel or perpendicular to a given line

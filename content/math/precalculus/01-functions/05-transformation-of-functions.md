@@ -715,10 +715,10 @@ graph would indicate a horizontal shift.
   answer="a horizontal shift 2 units to the left"
   hint="The change is inside the function, so it moves the graph along the input axis — and a plus sign moves it toward negative $x$."
 >}}
+a vertical shift 2 units down
 a horizontal shift 2 units to the left
 a horizontal shift 2 units to the right
 a vertical shift 2 units up
-a vertical shift 2 units down
 {{< /multiplechoice >}}
 
 ### Combining vertical and horizontal shifts
@@ -1635,10 +1635,10 @@ $t\ge 0$, with corresponding range $[0,1)$.
   answer="$h(x)=f(-x)$ looks exactly the same as $f(x)$"
   hint="Ask what happens to $(-x)^2$, and think about the parabola's symmetry."
 >}}
-$h(x)=f(-x)$ looks exactly the same as $f(x)$
-$g(x)=-f(x)$ looks exactly the same as $f(x)$
-both $g$ and $h$ look exactly the same as $f$
 neither graph resembles $f$
+$g(x)=-f(x)$ looks exactly the same as $f(x)$
+$h(x)=f(-x)$ looks exactly the same as $f(x)$
+both $g$ and $h$ look exactly the same as $f$
 {{< /multiplechoice >}}
 
 ## Determining even and odd functions
@@ -1952,9 +1952,9 @@ and the corresponding point $(-1,-3)$ is also on the graph.
   hint="Replace $s$ by $-s$: every exponent here is even, so what happens to each term?"
 >}}
 even
-odd
 neither
 both even and odd
+odd
 {{< /multiplechoice >}}
 
 ## Graphing functions using stretches and compressions
@@ -3332,10 +3332,10 @@ the input by a constant $b>1$.
   answer="Vertical reflection across the $x$-axis"
   hint="Multiplying the output by $-1$ flips every point over the horizontal axis."
 >}}
+Vertical shift down 1 unit
 Vertical reflection across the $x$-axis
 Horizontal reflection across the $y$-axis
 Vertical stretch by a factor of 2
-Vertical shift down 1 unit
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -3343,10 +3343,10 @@ Vertical shift down 1 unit
   answer="Horizontal reflection across the $y$-axis and a vertical stretch by a factor of 3"
   hint="The $-x$ inside $f$ reflects the graph horizontally; the factor of 3 outside stretches it vertically."
 >}}
+Horizontal shift left 3 units and a reflection across the $y$-axis
 Horizontal reflection across the $y$-axis and a vertical stretch by a factor of 3
 Vertical reflection across the $x$-axis and a vertical stretch by a factor of 3
 Horizontal reflection across the $y$-axis and a horizontal compression by a factor of 3
-Horizontal shift left 3 units and a reflection across the $y$-axis
 {{< /multiplechoice >}}
 
 ### Determine whether a function is even, odd, or neither from its graph
@@ -3356,8 +3356,8 @@ Horizontal shift left 3 units and a reflection across the $y$-axis
   answer="even"
   hint="Substitute $-x$ for $x$ and compare $f(-x)$ to $f(x)$."
 >}}
-even
 odd
+even
 neither
 {{< /multiplechoice >}}
 
@@ -3378,10 +3378,10 @@ neither
   answer="Vertical stretch by a factor of 4"
   hint="Multiplying the output by a constant greater than 1 stretches the graph vertically."
 >}}
+Horizontal compression by a factor of $\tfrac{1}{4}$
+Horizontal stretch by a factor of 4
 Vertical stretch by a factor of 4
 Vertical compression by a factor of $\tfrac{1}{4}$
-Horizontal stretch by a factor of 4
-Horizontal compression by a factor of $\tfrac{1}{4}$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -3389,10 +3389,10 @@ Horizontal compression by a factor of $\tfrac{1}{4}$
   answer="Horizontal compression by a factor of $\tfrac{1}{5}$"
   hint="Multiplying the input by a constant greater than 1 compresses the graph horizontally."
 >}}
-Horizontal compression by a factor of $\tfrac{1}{5}$
-Horizontal stretch by a factor of 5
 Vertical compression by a factor of $\tfrac{1}{5}$
+Horizontal stretch by a factor of 5
 Vertical stretch by a factor of 5
+Horizontal compression by a factor of $\tfrac{1}{5}$
 {{< /multiplechoice >}}
 
 ### Combine transformations

@@ -500,9 +500,9 @@ $a^{-m/n} = \tfrac{1}{a^{m/n}}$.
   answer="not a real number"
   hint="An even root of a negative number is not a real number."
 >}}
-7
 -7
 not a real number
+7
 {{< /multiplechoice >}}
 
 {{< fillin

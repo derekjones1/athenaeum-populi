@@ -253,10 +253,10 @@ the product of length and width.
   answer="four times seven; the product of four and seven"
   hint="Read the left factor first. The result of a multiplication is called the product, not the sum."
 >}}
-four plus seven; the sum of four and seven
-four times seven; the sum of four and seven
-seven times four; the product of seven and four
 four times seven; the product of four and seven
+seven times four; the product of seven and four
+four times seven; the sum of four and seven
+four plus seven; the sum of four and seven
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -264,10 +264,10 @@ four times seven; the product of four and seven
   answer="five times twelve; the product of five and twelve"
   hint="A centered dot is one of the multiplication symbols. Read the factors in the order they are written."
 >}}
-five plus twelve; the sum of five and twelve
 five times twelve; the product of five and twelve
-twelve times five; the product of twelve and five
 five times twelve; the sum of five and twelve
+twelve times five; the product of twelve and five
+five plus twelve; the sum of five and twelve
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -275,10 +275,10 @@ five times twelve; the sum of five and twelve
   answer="forty-two times thirty-three; the product of forty-two and thirty-three"
   hint="A number written directly beside a number in parentheses is a factor — parentheses are a multiplication symbol here."
 >}}
-forty-two plus thirty-three; the sum of forty-two and thirty-three
-thirty-three times forty-two; the product of thirty-three and forty-two
-forty-two times thirty-three; the product of forty-two and thirty-three
 forty-two times thirty-three; the sum of forty-two and thirty-three
+thirty-three times forty-two; the product of thirty-three and forty-two
+forty-two plus thirty-three; the sum of forty-two and thirty-three
+forty-two times thirty-three; the product of forty-two and thirty-three
 {{< /multiplechoice >}}
 
 ### Model multiplication of whole numbers
@@ -290,6 +290,7 @@ forty-two times thirty-three; the sum of forty-two and thirty-three
 {{< fillin
   question="The counters above model $3 \times 6$. How many counters are there in all?"
   answer="18"
+  answerForm="decimal"
   hint="Count the counters in one row, then add that number once for each row — or multiply the number of rows by the number in each row."
 >}}
 
@@ -300,6 +301,7 @@ forty-two times thirty-three; the sum of forty-two and thirty-three
 {{< fillin
   question="The counters above model $5 \times 9$. How many counters are there in all?"
   answer="45"
+  answerForm="decimal"
   hint="Five rows of nine — multiply the number of rows by the number of counters in each row."
 >}}
 

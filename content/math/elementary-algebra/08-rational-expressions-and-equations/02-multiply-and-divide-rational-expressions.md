@@ -293,6 +293,7 @@ $$
 {{< fillin
   question="Perform the indicated operations: $\tfrac{4m + 4}{3m - 15} \cdot \tfrac{m^2 - 3m - 10}{m^2 - 4m - 32} \div \tfrac{12m - 36}{6m - 48}$."
   answer="\tfrac{2(m + 1)(m + 2)}{3(m + 4)(m - 3)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{2(m + 1)(m + 2)}{3(m + 4)(m - 3)}$"
   hint="Rewrite the division as multiplication by the reciprocal $\tfrac{6m - 48}{12m - 36}$, then factor every part completely before dividing out common factors."
 >}}

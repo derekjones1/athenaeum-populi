@@ -647,9 +647,9 @@ is a multiple of two given numbers.
   hint="Split the number into its periods — thousands, then ones — and name each period before combining them."
 >}}
 one thousand, seventy-eight
+one hundred seventy-eight
 one thousand, eighty-seven
 ten thousand, seventy-eight
-one hundred seventy-eight
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -667,9 +667,9 @@ one hundred seventy-eight
   answer="divisible by 2, 3, and 6"
   hint="Check the last digit for the test for $2$, add the digits for the test for $3$, and remember that passing both means it also passes the test for $6$."
 >}}
-divisible by 2, 3, and 6
-divisible by 2 and 3
 divisible by 3 and 6
+divisible by 2 and 3
+divisible by 2, 3, and 6
 divisible by 2, 3, 5, and 6
 {{< /multiplechoice >}}
 
@@ -679,9 +679,9 @@ divisible by 2, 3, 5, and 6
   hint="The last digit settles the tests for $2$, $5$, and $10$ right away; add the digits separately to check the test for $3$."
 >}}
 divisible by 3 and 5
-divisible by 2, 3, and 5
 divisible by 5 only
 divisible by 3, 5, and 6
+divisible by 2, 3, and 5
 {{< /multiplechoice >}}
 
 ### Find prime factorizations and least common multiples

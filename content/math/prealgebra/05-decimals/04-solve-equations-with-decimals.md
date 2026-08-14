@@ -282,8 +282,8 @@ lets us isolate a variable and solve for it.
   answer="no"
   hint="Substitute $2$ for $x$, simplify the left side, and see whether the result really is $2.3$."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -300,8 +300,8 @@ no
   answer="yes"
   hint="Substitute $3.1$ for $x$ and subtract; the number is a solution only if the equation becomes a true statement."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -309,8 +309,8 @@ no
   answer="no"
   hint="A positive number divided by a positive number is positive, so check the sign against $-4.3$."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -318,8 +318,8 @@ no
   answer="yes"
   hint="Divide $-6.45$ by $1.5$ and compare the quotient with $-4.3$."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -327,8 +327,8 @@ no
   answer="no"
   hint="Dividing by $1.5$ makes a number smaller in size, so $-2.1$ cannot produce a quotient as large in size as $-4.3$."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ### Solve equations with decimals

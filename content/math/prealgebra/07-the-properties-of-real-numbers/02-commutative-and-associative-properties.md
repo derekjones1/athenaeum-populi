@@ -140,12 +140,14 @@ x$ without having a value for $x$.
 {{< fillin
   question="Use the Associative Property of Multiplication to simplify: $8(4x)$."
   answer="32x"
+  answerForm="distributed"
   hint="Regroup as $(8 \cdot 4)x$, then multiply the numbers first."
 >}}
 
 {{< fillin
   question="Use the Associative Property of Multiplication to simplify: $-9(7y)$."
   answer="-63y"
+  answerForm="distributed"
   hint="Regroup as $(-9 \cdot 7)y$, then multiply the numbers first."
 >}}
 
@@ -174,12 +176,14 @@ changed — by the Commutative Property of Addition, $x + 0.37 + (-x) = x +
 {{< fillin
   question="Evaluate $y + 0.84 + (-y)$ when $y = \tfrac{3}{8}$."
   answer="0.84"
+  answerForm="decimal"
   hint="By the commutative property this equals $y + (-y) + 0.84$ — the opposites cancel first, leaving $0.84$."
 >}}
 
 {{< fillin
   question="Evaluate $f + 0.975 + (-f)$ when $f = \tfrac{17}{20}$."
   answer="0.975"
+  answerForm="decimal"
   hint="Reorder so $f$ and $-f$ are together; they cancel, leaving $0.975$."
 >}}
 
@@ -363,10 +367,10 @@ not commutative or associative.
   answer="$6 + 7$"
   hint="The commutative property of addition changes only the order of the two addends."
 >}}
-$6 + 7$
-$7 - 6$
-$6 - 7$
 $6 \cdot 7$
+$6 - 7$
+$7 - 6$
+$6 + 7$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -374,10 +378,10 @@ $6 \cdot 7$
   answer="$m(-3)$"
   hint="This is a product of $-3$ and $m$, so swap the two factors and keep both signs as they are."
 >}}
+$-\tfrac{m}{3}$
 $m(-3)$
 $-3 + m$
 $3m$
-$-\tfrac{m}{3}$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -385,10 +389,10 @@ $-\tfrac{m}{3}$
   answer="$21 + (14 + 9)$"
   hint="The associative property moves the parentheses, leaving the order of $21$, $14$, and $9$ untouched."
 >}}
-$21 + (14 + 9)$
-$(14 + 21) + 9$
-$9 + (21 + 14)$
 $(21 + 9) + 14$
+$21 + (14 + 9)$
+$9 + (21 + 14)$
+$(14 + 21) + 9$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -396,10 +400,10 @@ $(21 + 9) + 14$
   answer="$(4 \cdot 7)x$"
   hint="Regroup so the two numbers are inside the parentheses together; the factors stay in the order $4$, $7$, $x$."
 >}}
+$4(x \cdot 7)$
+$(4 + 7)x$
 $(4 \cdot 7)x$
 $7(4x)$
-$(4 + 7)x$
-$4(x \cdot 7)$
 {{< /multiplechoice >}}
 
 ### Evaluate expressions using the commutative and associative properties
@@ -407,12 +411,14 @@ $4(x \cdot 7)$
 {{< fillin
   question="Evaluate $d + 2.375 + (-d)$ when $d = -\tfrac{9}{4}$."
   answer="2.375"
+  answerForm="decimal"
   hint="You can substitute $-2.25$ for $d$ and work left to right, but it is quicker to notice that $d$ and $-d$ are opposites."
 >}}
 
 {{< fillin
   question="Evaluate $d + (-d) + 2.375$ when $d = -\tfrac{9}{4}$."
   answer="2.375"
+  answerForm="decimal"
   hint="The opposites are already next to each other, so they add to $0$ before you ever substitute."
 >}}
 

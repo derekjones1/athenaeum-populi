@@ -162,10 +162,10 @@ of every vertical line is undefined.
   hint="$x = -4$ is a vertical line — every point on it has the same x-coordinate, so the run is always 0."
   answer="undefined"
 >}}
-$0$
-undefined
-$1$
 $-4$
+$0$
+$1$
+undefined
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -173,10 +173,10 @@ $-4$
   hint="$y = 7$ is a horizontal line — every point on it has the same y-coordinate, so the rise is always 0."
   answer="$0$"
 >}}
-$0$
-undefined
-$1$
 $7$
+undefined
+$0$
+$1$
 {{< /multiplechoice >}}
 
 ## Use the slope formula to find the slope of a line between two points
@@ -561,8 +561,8 @@ a second point.
   answer="undefined"
   hint="An equation of the form $x = a$ is vertical, so its run is zero."
 >}}
-0
 undefined
+0
 {{< /multiplechoice >}}
 
 ### Use the slope formula to find the slope of a line between two points

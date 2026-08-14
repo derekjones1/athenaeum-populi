@@ -518,9 +518,9 @@ $\sqrt[n]{\tfrac{a}{b}} = \tfrac{\sqrt[n]{a}}{\sqrt[n]{b}}$.
   answer="not a real number"
   hint="The index is even. Can a real number raised to the sixth power be negative?"
 >}}
+not a real number
 -2
 2
-not a real number
 {{< /multiplechoice >}}
 
 {{< fillin

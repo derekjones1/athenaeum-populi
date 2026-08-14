@@ -107,8 +107,8 @@ determine whether each ordered pair is a solution.
   hint="Substitute $x=-2$ and $y=1$ into both inequalities and check that both come out true."
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -116,8 +116,8 @@ no
   hint="Substitute $x=4$ and $y=-1$ into $y>4x-2$ first — if it comes out false, the pair is not a solution."
   answer="no"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ## Solve a system of linear inequalities by graphing
@@ -956,8 +956,8 @@ whose ordered pairs make the inequalities true.
   hint="Substitute $x=5$ and $y=-2$ into $4x-y<10$ first; if it's already false, the pair is not a solution."
   answer="no"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -983,8 +983,8 @@ no
   hint="Substitute $x=8$ and $y=3$ into both inequalities and check that both come out true."
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ### Solve a system of linear inequalities by graphing
@@ -994,8 +994,8 @@ no
   hint="Write both boundary lines in slope-intercept form: they're parallel with slope $\tfrac{1}{3}$, and the shading for each inequality faces away from the other."
   answer="no"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -1030,8 +1030,8 @@ Jake doesn't want to spend more than \$50 on bags of fertilizer and peat moss fo
   hint="Check both inequalities: $15+4=19$ and $2(15)+5(4)=50$."
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1057,8 +1057,8 @@ Mark is increasing his exercise routine by running and walking at least 4 miles 
   hint="Check the calorie inequality: $270(3)+650(1)=1{,}460$."
   answer="no"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice

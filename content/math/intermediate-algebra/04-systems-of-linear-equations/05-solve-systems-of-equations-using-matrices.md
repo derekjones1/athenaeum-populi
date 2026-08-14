@@ -371,9 +371,9 @@ is no solution.
   answer="no solution — the system is inconsistent"
 >}}
 no solution — the system is inconsistent
+the unique solution $(-3,-4,-1)$
 infinitely many solutions — the system is dependent
 the unique solution $(2,1,4)$
-the unique solution $(-3,-4,-1)$
 {{< /multiplechoice >}}
 
 The last system was inconsistent and so had no solution. The next example is
@@ -431,9 +431,9 @@ $$(z+5,\ 2z+2,\ z)$$
   hint="Row-reduce the augmented matrix; the bottom row reduces to all zeros."
   answer="infinitely many solutions — the system is dependent"
 >}}
+the unique solution $(1,1,2)$
 infinitely many solutions — the system is dependent
 no solution — the system is inconsistent
-the unique solution $(1,1,2)$
 the unique solution $(0,0,0)$
 {{< /multiplechoice >}}
 
@@ -516,10 +516,10 @@ statement (such as $0=0$); it has infinitely many solutions.
   hint="Row-reduce the augmented matrix; two of the rows reduce to a contradiction, such as $0=$ a nonzero number."
   answer="no solution — the system is inconsistent"
 >}}
+the unique solution $(-3,4,2)$
+the unique solution $(2,-1,1)$
 no solution — the system is inconsistent
 infinitely many solutions — the system is dependent
-the unique solution $(2,-1,1)$
-the unique solution $(-3,4,2)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -527,10 +527,10 @@ the unique solution $(-3,4,2)$
   hint="Row-reduce the augmented matrix; the bottom row reduces to $0=0$."
   answer="infinitely many solutions — the system is dependent"
 >}}
+the unique solution $(1,1,1)$
+the unique solution $(0,0,0)$
 infinitely many solutions — the system is dependent
 no solution — the system is inconsistent
-the unique solution $(0,0,0)$
-the unique solution $(1,1,1)$
 {{< /multiplechoice >}}
 
 ---

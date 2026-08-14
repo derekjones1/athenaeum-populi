@@ -374,10 +374,10 @@ is no solution.
   hint="Evaluate $D$ first. If $D=0$, check whether $D_x$ or $D_y$ is nonzero."
   answer="no solution"
 >}}
-no solution
-infinitely many solutions
-(2, 0)
 (-2, 0)
+(2, 0)
+infinitely many solutions
+no solution
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -385,9 +385,9 @@ infinitely many solutions
   hint="Rewrite the first equation as $x+3y=4$, then evaluate $D$, $D_x$, and $D_y$."
   answer="infinitely many solutions"
 >}}
-no solution
-infinitely many solutions
 (4, 0)
+infinitely many solutions
+no solution
 (0, 4)
 {{< /multiplechoice >}}
 
@@ -421,8 +421,8 @@ The value of the determinant is $0$, so the points are collinear.
   hint="Form the $3\times 3$ determinant with the coordinates and a column of $1\text{s}$; it is zero exactly when the points are collinear."
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -430,8 +430,8 @@ no
   hint="Form the $3\times 3$ determinant with the coordinates and a column of $1\text{s}$; it is zero exactly when the points are collinear."
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ## Key terms
@@ -517,10 +517,10 @@ zero.
   hint="Evaluate $D$ first. If $D=0$, check whether $D_x$ or $D_y$ is nonzero."
   answer="no solution"
 >}}
-no solution
-infinitely many solutions
 (2, -2)
 (-2, 2)
+infinitely many solutions
+no solution
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -529,9 +529,9 @@ infinitely many solutions
   answer="infinitely many solutions"
 >}}
 no solution
-infinitely many solutions
-(1, 7, 7)
 (0, 0, 0)
+(1, 7, 7)
+infinitely many solutions
 {{< /multiplechoice >}}
 
 ### Solve applications using determinants
@@ -547,8 +547,8 @@ infinitely many solutions
   hint="Form the $3\times 3$ determinant with the coordinates and a column of $1\text{s}$; it is zero exactly when the points are collinear."
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -556,8 +556,8 @@ no
   hint="Form the $3\times 3$ determinant with the coordinates and a column of $1\text{s}$; it is zero exactly when the points are collinear."
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ---

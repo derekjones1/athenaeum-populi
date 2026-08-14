@@ -238,8 +238,8 @@ Simplify: (a) $\left(-16\right)^{\tfrac{1}{4}}$ (b) $- 16^{\tfrac{1}{4}}$ (c) $\
   answer="not a real number"
   hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
 >}}
-not a real number
 a real number
+not a real number
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -446,8 +446,8 @@ Simplify: (a) $- 25^{\tfrac{3}{2}}$ (b) $- 25^{- \tfrac{3}{2}}$ (c) $\left(-25\r
   answer="not a real number"
   hint="A negative exponent means take the reciprocal first; then use the denominator as the root index."
 >}}
-not a real number
 a real number
+not a real number
 {{< /multiplechoice >}}
 
 ## Use the Properties of Exponents to Simplify Expressions with Rational Exponents
@@ -551,6 +551,7 @@ Simplify: (a) $\left(27 u^{\tfrac{1}{2}}\right)^{\tfrac{2}{3}}$ (b) $\left(m^{\t
 {{< fillin
   question="Simplify: $\left(x^{\tfrac{3}{4}} y^{\tfrac{1}{2}}\right)^{\tfrac{2}{3}}$"
   answer="x^{\tfrac{1}{2}} y^{\tfrac{1}{3}}"
+  answerForm="distributed"
   answerDisplay="$x^{\tfrac{1}{2}} y^{\tfrac{1}{3}}$"
   hint="Apply the product, quotient, and power rules for exponents, then combine the rational exponents."
 >}}

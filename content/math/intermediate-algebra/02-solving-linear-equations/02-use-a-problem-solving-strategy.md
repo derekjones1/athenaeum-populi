@@ -511,14 +511,16 @@ So, 25% makes sense. Of the total calories in each muffin, 25% is fat.
 
 {{< fillin
   question="Mitzi received some gourmet brownies as a gift. The wrapper said each brownie was 480 calories, and had 240 calories of fat. What percent of the total calories in each brownie comes from fat? Round the answer to the nearest whole percent."
-  answer="50"
+  answer="50\%"
+  answerForm="percent"
   answerDisplay="50%"
   hint="Divide the calories from fat by the total calories, then change the decimal to a percent."
 >}}
 
 {{< fillin
   question="The mix Ricardo plans to use to make brownies says that each brownie will be 190 calories, and 76 calories are from fat. What percent of the total calories are from fat? Round the answer to the nearest whole percent."
-  answer="40"
+  answer="40\%"
+  answerForm="percent"
   answerDisplay="40%"
   hint="Divide the calories from fat by the total calories, then change the decimal to a percent."
 >}}
@@ -556,14 +558,16 @@ to the nearest tenth.
 
 {{< fillin
   question="Find the percent change. Round to the nearest tenth of a percent. In 2011, the IRS increased the deductible mileage cost to 55.5 cents from 51 cents."
-  answer="8.8"
+  answer="8.8\%"
+  answerForm="percent"
   answerDisplay="8.8%"
   hint="Find the increase, then divide it by the original cost of 51 cents and change the result to a percent."
 >}}
 
 {{< fillin
   question="Find the percent change. Round to the nearest tenth of a percent. In 1995, the standard bus fare in Chicago was \$1.50. In 2008, the standard bus fare was \$2.25."
-  answer="50"
+  answer="50\%"
+  answerForm="percent"
   answerDisplay="50%"
   hint="Find the increase, then divide it by the original fare of 1.50 and change the result to a percent."
 >}}
@@ -720,14 +724,16 @@ was 4%.
 
 {{< fillin
   question="Jim lent his sister \$5,000 to help her buy a house. In three years, she paid him the \$5,000, plus \$900 interest. What was the rate of simple interest, as a percent?"
-  answer="6"
+  answer="6\%"
+  answerForm="percent"
   answerDisplay="6%"
   hint="Use $I=Prt$ and solve $900=(5{,}000)r(3)$ for r, then change the decimal to a percent."
 >}}
 
 {{< fillin
   question="Loren lent his brother \$3,000 to help him buy a car. In four years, his brother paid him back the \$3,000 plus \$660 in interest. What was the rate of simple interest, as a percent?"
-  answer="5.5"
+  answer="5.5\%"
+  answerForm="percent"
   answerDisplay="5.5%"
   hint="Use $I=Prt$ and solve $660=(3{,}000)r(4)$ for r, then change the decimal to a percent."
 >}}
@@ -834,14 +840,16 @@ interest** — interest computed according to $I=Prt$.
 
 {{< fillin
   question="What percent of 260 is 78?"
-  answer="30"
+  answer="30\%"
+  answerForm="percent"
   answerDisplay="30%"
   hint="Divide 78 by 260, then change the decimal to a percent."
 >}}
 
 {{< fillin
   question="Tamanika received a raise in her hourly pay, from \$15.50 to \$17.36. Find the percent change."
-  answer="12"
+  answer="12\%"
+  answerForm="percent"
   answerDisplay="12%"
   hint="Find the increase, then divide it by the original wage of \$15.50 and change the result to a percent."
 >}}
@@ -855,7 +863,8 @@ interest** — interest computed according to $I=Prt$.
 
 {{< fillin
   question="Larry and Donna bought a sofa at the sale price of \$1,344. The original price of the sofa was \$1,920. Find the discount rate."
-  answer="30"
+  answer="30\%"
+  answerForm="percent"
   answerDisplay="30%"
   hint="Divide the amount of discount by the original price, then change the decimal to a percent."
 >}}
@@ -871,7 +880,8 @@ interest** — interest computed according to $I=Prt$.
 
 {{< fillin
   question="Hilaria borrowed \$8,000 from her grandfather to pay for college. Five years later, she paid him back the \$8,000, plus \$1,200 interest. What was the rate of simple interest, as a percent?"
-  answer="3"
+  answer="3\%"
+  answerForm="percent"
   answerDisplay="3%"
   hint="Use $I=Prt$ and solve $1{,}200=(8{,}000)r(5)$ for r, then change the decimal to a percent."
 >}}

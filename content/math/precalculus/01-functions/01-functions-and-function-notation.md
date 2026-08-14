@@ -263,8 +263,8 @@ of rank.
   answer="Yes"
   hint="Ask whether any single player name is paired with more than one rank."
 >}}
-Yes
 No
+Yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -364,10 +364,10 @@ Remember, $N=f(y)$. The statement $f(2005)=300$ tells us that in the year
   answer="$w=f(d)$"
   hint="The quantity being described is the output, and the quantity it depends on goes inside the parentheses."
 >}}
-$w=f(d)$
-$d=f(w)$
-$f=w(d)$
 $w=d(f)$
+$d=f(w)$
+$w=f(d)$
+$f=w(d)$
 {{< /multiplechoice >}}
 
 {{< callout type="info" >}}
@@ -477,8 +477,8 @@ way because it does not represent a function.
   answer="Yes"
   hint="Check whether any input value appears twice with different outputs."
 >}}
-Yes
 No
+Yes
 {{< /multiplechoice >}}
 
 ## Finding input and output values of a function
@@ -1659,8 +1659,8 @@ below.
   answer="Yes"
   hint="Slide a vertical line across the V and count how many times it meets the graph."
 >}}
-Yes
 No
+Yes
 {{< /multiplechoice >}}
 
 ## Using the horizontal line test
@@ -1769,8 +1769,8 @@ diagonal line at most once.
   answer="No"
   hint="A relation must first be a function before it can be one-to-one."
 >}}
-No
 Yes
+No
 {{< /multiplechoice >}}
 
 ## Identifying basic toolkit functions
@@ -2420,9 +2420,9 @@ The table below gives selected values of a function $f$.
   answer="not a function"
   hint="A one-to-one function must first be a function — check whether the graph passes the vertical line test."
 >}}
-one-to-one function
-function, but not one-to-one
 not a function
+function, but not one-to-one
+one-to-one function
 {{< /multiplechoice >}}
 
 <div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A steadily rising curve shaped like a cube root function, with an inflection point near (−2, 1), running from about (−5.2, −0.5) up to about (3.5, 2.8) and never turning back.","xMin":-5.5,"xMax":4,"yMin":-1,"yMax":3,"curves":[{"kind":"cbrt","a":1,"h":-2,"k":1,"from":-5.2,"to":3.5}],"tickLabels":true}'>
@@ -2486,9 +2486,9 @@ not a function
   answer="one-to-one function"
   hint="The curve never doubles back on itself, so ask whether any horizontal line could cross it twice."
 >}}
-one-to-one function
-function, but not one-to-one
 not a function
+function, but not one-to-one
+one-to-one function
 {{< /multiplechoice >}}
 
 ### Use the vertical line test to identify functions
@@ -2568,8 +2568,8 @@ not a function
   answer="function"
   hint="Check whether any vertical line could cross the graph more than once."
 >}}
-function
 not a function
+function
 {{< /multiplechoice >}}
 
 <div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"Two curves leaving the origin, nearly flat at first and curving away from the x-axis as they extend to the right: the upper branch rises toward about (4.5, 5) and the lower branch falls toward about (4.5, −5).","xMin":-1,"xMax":6,"yMin":-6,"yMax":6,"quadratics":[{"a":0.25,"from":0,"to":4.5,"arrows":"end"},{"a":-0.25,"from":0,"to":4.5,"arrows":"end"}],"tickLabels":true}'>
@@ -2651,8 +2651,8 @@ not a function
   answer="not a function"
   hint="Look at $x=1$: how many points on the curve share that input?"
 >}}
-function
 not a function
+function
 {{< /multiplechoice >}}
 
 ### Graph the functions listed in the library of functions
@@ -2663,7 +2663,7 @@ not a function
   ariaLabel="A blank grid from −10 to 10 on the x-axis and −10 to 100 on the y-axis."
   hint="Plot the vertex at the origin, then use symmetry about the $y$-axis."
 >}}
-{"answer": {"quadratic": {"a": 1, "b": 0, "c": 0}}, "grid": {"xMin": -10, "xMax": 10, "yMin": -10, "yMax": 100}}
+{"answer": {"quadratic": {"a": 1, "b": 0, "c": 0}}, "grid": {"xMin": -10, "xMax": 10, "yMin": -10, "yMax": 100, "xUnit": 18, "yUnit": 3.2, "yGridStep": 10, "yTickStep": 10}}
 {{< /graphplot >}}
 
 {{< multiplechoice
@@ -2671,10 +2671,10 @@ not a function
   answer="$[0,100]$"
   hint="Squaring never gives a negative output, and the input farthest from $0$ has absolute value $10$."
 >}}
-$[0,100]$
 $[-10,10]$
-$[-100,100]$
+$[0,100]$
 $[0,10]$
+$[-100,100]$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -2682,10 +2682,10 @@ $[0,10]$
   answer="$[-0.001,0.001]$"
   hint="The cubing function is increasing, so evaluate it at both ends of the domain."
 >}}
-$[-0.001,0.001]$
-$[-0.1,0.1]$
-$[0,0.001]$
 $[-0.01,0.01]$
+$[-0.001,0.001]$
+$[0,0.001]$
+$[-0.1,0.1]$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -2694,9 +2694,9 @@ $[-0.01,0.01]$
   hint="The square root function is increasing, so evaluate it at both ends of the domain."
 >}}
 $[0,10]$
+$[0,50]$
 $[0,100]$
 $[-10,10]$
-$[0,50]$
 {{< /multiplechoice >}}
 
 ---

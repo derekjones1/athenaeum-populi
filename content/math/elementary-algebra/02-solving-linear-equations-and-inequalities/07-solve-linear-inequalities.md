@@ -129,8 +129,8 @@ $x = -1$ to show it is not included.
   hint="Ask whether the number 2 itself makes the inequality true. Since 2 > 2 is false, 2 is not a solution."
   answer="parenthesis"
 >}}
-parenthesis
 bracket
+parenthesis
 {{< /multiplechoice >}}
 
 We can also represent inequalities using **interval notation**. As we saw
@@ -488,10 +488,10 @@ solution.
   answer="a contradiction — no solution"
   hint="Multiply both sides by the LCD, 15, to clear the fractions, then combine like terms. The variable terms cancel, leaving a comparison of two constants."
 >}}
-an identity — every real number is a solution
-a contradiction — no solution
 a specific solution, $z < -9$
 a specific solution, $z > -9$
+an identity — every real number is a solution
+a contradiction — no solution
 {{< /multiplechoice >}}
 
 ## Translate to an Inequality and Solve
@@ -579,10 +579,10 @@ real number makes it true.
   answer="$(3, \infty)$"
   hint="Decide whether the endpoint $3$ is itself a solution, and which direction the shading extends."
 >}}
-$(3, \infty)$
 $[3, \infty)$
-$(-\infty, 3)$
 $(-\infty, 3]$
+$(3, \infty)$
+$(-\infty, 3)$
 {{< /multiplechoice >}}
 
 {{< fillin

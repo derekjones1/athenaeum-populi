@@ -521,10 +521,10 @@ other polynomial
   answer="other polynomial"
   hint="Count the terms — four terms has no special name of its own."
 >}}
-monomial
-binomial
-trinomial
 other polynomial
+trinomial
+binomial
+monomial
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -538,10 +538,10 @@ other polynomial
   answer="binomial"
   hint="Count the terms separated by addition or subtraction."
 >}}
-monomial
-binomial
-trinomial
 other polynomial
+trinomial
+binomial
+monomial
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -555,10 +555,10 @@ other polynomial
   answer="monomial"
   hint="A single term, even one with no variable, is a monomial."
 >}}
-monomial
-binomial
 trinomial
 other polynomial
+binomial
+monomial
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -572,10 +572,10 @@ other polynomial
   answer="binomial"
   hint="Count the terms separated by addition or subtraction."
 >}}
+other polynomial
 monomial
 binomial
 trinomial
-other polynomial
 {{< /multiplechoice >}}
 
 {{< fillin

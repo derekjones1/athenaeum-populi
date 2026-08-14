@@ -303,9 +303,9 @@ $$
 
 {{< fillin
   question="The sun casts a shadow from a flag pole. The height of the flag pole is three times the length of its shadow. The distance between the end of the shadow and the top of the flag pole is 20 feet. Find the length of the shadow and the length of the flag pole. Round to the nearest tenth of a foot. Enter the shadow length and flag pole length, separated by a comma."
-  answer="6.3,18.9"
-  answerDisplay="$6.3,18.9$ feet"
-  hint="If the shadow is $x$, the pole is $3x$. Use the Pythagorean Theorem."
+  answer="6.3,19.0"
+  answerDisplay="$6.3,19.0$ feet"
+  hint="If the shadow is $x$, the pole is $3x$. Use the Pythagorean Theorem, then round each length itself — the pole is $3\sqrt{40}\approx19.0$, not $3$ times the rounded shadow."
 >}}
 
 {{< fillin

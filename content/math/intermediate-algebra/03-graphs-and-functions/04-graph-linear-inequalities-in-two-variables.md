@@ -186,8 +186,8 @@ solution.
   hint="Substitute $x=0$ and $y=0$."
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -195,8 +195,8 @@ no
   hint="Substitute $x=8$ and $y=6$."
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1462,9 +1462,9 @@ boundary line, represent the solutions.
   hint="Test $(0,0)$ and use the strict inequality to choose the boundary style."
   answer="a dashed boundary line with the region containing (0,0) shaded"
 >}}
-a dashed boundary line with the region containing (0,0) shaded
 a dashed boundary line with the region not containing (0,0) shaded
 a solid boundary line with the region containing (0,0) shaded
+a dashed boundary line with the region containing (0,0) shaded
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1582,9 +1582,9 @@ represent the solutions.
   hint="Because the line goes through the origin, test $(1,0)$."
   answer="a dashed boundary line with the region containing (1,0) shaded"
 >}}
+a solid boundary line with the region containing (1,0) shaded
 a dashed boundary line with the region containing (1,0) shaded
 a dashed boundary line with the region not containing (1,0) shaded
-a solid boundary line with the region containing (1,0) shaded
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1593,8 +1593,8 @@ a solid boundary line with the region containing (1,0) shaded
   answer="a solid boundary line with the region containing (1,0) shaded"
 >}}
 a solid boundary line with the region containing (1,0) shaded
-a solid boundary line with the region not containing (1,0) shaded
 a dashed boundary line with the region containing (1,0) shaded
+a solid boundary line with the region not containing (1,0) shaded
 {{< /multiplechoice >}}
 
 Some linear inequalities have only one variable. They may have an $x$ but no
@@ -1698,9 +1698,9 @@ represent the solutions to $y>3$.
   hint="A strict inequality has a dashed boundary; y-values less than 5 lie below it."
   answer="a dashed horizontal boundary line with the region below shaded"
 >}}
+a dashed horizontal boundary line with the region above shaded
 a dashed horizontal boundary line with the region below shaded
 a solid horizontal boundary line with the region below shaded
-a dashed horizontal boundary line with the region above shaded
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1708,9 +1708,9 @@ a dashed horizontal boundary line with the region above shaded
   hint="An inequality including equality has a solid boundary; smaller y-values lie below it."
   answer="a solid horizontal boundary line with the region below shaded"
 >}}
-a solid horizontal boundary line with the region below shaded
 a dashed horizontal boundary line with the region below shaded
 a solid horizontal boundary line with the region above shaded
+a solid horizontal boundary line with the region below shaded
 {{< /multiplechoice >}}
 
 ## Solve applications using linear inequalities in two variables
@@ -2220,8 +2220,8 @@ region where $Ax+By<C$.
   hint="Substitute $x=0$ and $y=1$ into the inequality."
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -2265,10 +2265,10 @@ no
   hint="The inequality is strict ($>$), and $(0,0)$ makes $4x+y>-4$ true."
   answer="dashed; the side containing the origin"
 >}}
-dashed; the side containing the origin
-dashed; the side not containing the origin
-solid; the side containing the origin
 solid; the side not containing the origin
+dashed; the side not containing the origin
+dashed; the side containing the origin
+solid; the side containing the origin
 {{< /multiplechoice >}}
 
 {{< graphplot
@@ -2285,10 +2285,10 @@ solid; the side not containing the origin
   hint="The inequality includes equality ($\geq$), and $(0,0)$ makes $2x+y\geq-4$ true."
   answer="solid; the side containing the origin"
 >}}
-dashed; the side containing the origin
-dashed; the side not containing the origin
 solid; the side containing the origin
 solid; the side not containing the origin
+dashed; the side containing the origin
+dashed; the side not containing the origin
 {{< /multiplechoice >}}
 
 ### Solve applications using linear inequalities in two variables

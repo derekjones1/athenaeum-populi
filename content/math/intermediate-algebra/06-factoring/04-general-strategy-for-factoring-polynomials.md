@@ -385,8 +385,8 @@ $$
   hint="Check the trinomial-square pattern: the middle term would need to be $36cd$, not $20cd$, and no factor pair of $ac=324$ sums to $20$."
 >}}
 prime
-$(2c+9d)^2$
 $(2c-9d)^2$
+$(2c+9d)^2$
 {{< /multiplechoice >}}
 
 ---

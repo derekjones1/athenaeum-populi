@@ -123,9 +123,9 @@ $$\frac{3}{8} + \left(-\frac{5}{8}\right) - \frac{1}{8} = \frac{3+(-5)-1}{8} = \
 
 {{< fillin
   question="Simplify: $\tfrac{5}{9} + \left(-\tfrac{4}{9}\right) - \tfrac{7}{9}$."
-  answer="-\frac{6}{9}"
-  answerForm="fraction"
-  answerDisplay="$-\tfrac{6}{9}$"
+  answer="-\frac{2}{3}"
+  answerForm="fraction lowest-terms"
+  answerDisplay="$-\tfrac{2}{3}$"
   hint="Add and subtract the numerators left to right over the common denominator $9$, then simplify if possible."
 >}}
 

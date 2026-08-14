@@ -288,10 +288,10 @@ certain number of miles, $f(x)$, in $x$ hours.
   answer="$a(G(r))$, the acceleration of a planet at a distance $r$ from the sun"
   hint="Match the units: what kind of quantity does each function take as its input?"
 >}}
-$a(G(r))$, the acceleration of a planet at a distance $r$ from the sun
-$G(a(F))$, the gravitational force produced by an acceleration
 $a(r)$, the acceleration produced by a distance
 neither composition is meaningful
+$a(G(r))$, the acceleration of a planet at a distance $r$ from the sun
+$G(a(F))$, the gravitational force produced by an acceleration
 {{< /multiplechoice >}}
 
 ## Evaluating composite functions
@@ -866,10 +866,10 @@ are not in the domain of $f$, though they must be in the domain of $g$.
   answer="$[-4,0)\cup(0,\infty)$"
   hint="Start with the domain of $g$, then throw out the input that makes $g(x)$ equal to 2."
 >}}
-$[-4,0)\cup(0,\infty)$
 $[-4,\infty)$
-$(-\infty,-4]\cup(0,\infty)$
+$[-4,0)\cup(0,\infty)$
 $[-4,2)\cup(2,\infty)$
+$(-\infty,-4]\cup(0,\infty)$
 {{< /multiplechoice >}}
 
 ## Decomposing a composite function into its component functions
@@ -898,10 +898,10 @@ $$g(h(x))=g(5-x^2)=\sqrt{5-x^2}$$
   answer="$g(x)=\sqrt{4+x^2}$ and $h(x)=\tfrac{4}{3-x}$"
   hint="Look for the expression that sits inside the rest of the formula, and call that the inner function."
 >}}
-$g(x)=\sqrt{4+x^2}$ and $h(x)=\tfrac{4}{3-x}$
-$g(x)=4+x^2$ and $h(x)=\tfrac{4}{3-x}$
-$g(x)=3-\sqrt{x}$ and $h(x)=\tfrac{4}{x}$
 $g(x)=\tfrac{4}{x}$ and $h(x)=3-\sqrt{4+x^2}$
+$g(x)=4+x^2$ and $h(x)=\tfrac{4}{3-x}$
+$g(x)=\sqrt{4+x^2}$ and $h(x)=\tfrac{4}{3-x}$
+$g(x)=3-\sqrt{x}$ and $h(x)=\tfrac{4}{x}$
 {{< /multiplechoice >}}
 
 ## Key equation
@@ -1034,8 +1034,8 @@ to 9.
 >}}
 $(1,\infty)$
 $[1,\infty)$
-$(-\infty,1)$
 $(0,\infty)$
+$(-\infty,1)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1043,8 +1043,8 @@ $(0,\infty)$
   answer="$(-\infty,-2)\cup(2,\infty)$"
   hint="The radicand $m(x)$ must be strictly positive, since it also sits under a fraction bar."
 >}}
-$(-\infty,-2)\cup(2,\infty)$
 $[-2,2]$
+$(-\infty,-2)\cup(2,\infty)$
 $(-\infty,-2]\cup[2,\infty)$
 $(2,\infty)$
 {{< /multiplechoice >}}
@@ -1054,10 +1054,10 @@ $(2,\infty)$
   answer="$\left(-\infty,\tfrac{1}{2}\right)$"
   hint="Start from the domain of $f$, then exclude the input where $f(x)$ itself equals 0."
 >}}
-$\left(-\infty,\tfrac{1}{2}\right)$
-$\left(-\infty,\tfrac{1}{2}\right]$
-$\left(\tfrac{1}{2},\infty\right)$
 $(-\infty,0)\cup\left(0,\tfrac{1}{2}\right)$
+$\left(\tfrac{1}{2},\infty\right)$
+$\left(-\infty,\tfrac{1}{2}\right]$
+$\left(-\infty,\tfrac{1}{2}\right)$
 {{< /multiplechoice >}}
 
 ### Decompose a composite function into its component functions
@@ -1067,8 +1067,8 @@ $(-\infty,0)\cup\left(0,\tfrac{1}{2}\right)$
   answer="$f(x)=x^3$ and $g(x)=x-5$"
   hint="Let the inner function be whatever is being cubed."
 >}}
-$f(x)=x^3$ and $g(x)=x-5$
 $f(x)=x-5$ and $g(x)=x^3$
+$f(x)=x^3$ and $g(x)=x-5$
 $f(x)=x^3-5$ and $g(x)=x$
 $f(x)=x-5$ and $g(x)=x^3-5$
 {{< /multiplechoice >}}
@@ -1078,10 +1078,10 @@ $f(x)=x-5$ and $g(x)=x^3-5$
   answer="$f(x)=\tfrac{4}{x}$ and $g(x)=(x+2)^2$"
   hint="Let the inner function be the expression being squared in the denominator."
 >}}
-$f(x)=\tfrac{4}{x}$ and $g(x)=(x+2)^2$
-$f(x)=(x+2)^2$ and $g(x)=\tfrac{4}{x}$
 $f(x)=\tfrac{4}{x}$ and $g(x)=(x-2)^2$
 $f(x)=x^2$ and $g(x)=\tfrac{4}{x+2}$
+$f(x)=(x+2)^2$ and $g(x)=\tfrac{4}{x}$
+$f(x)=\tfrac{4}{x}$ and $g(x)=(x+2)^2$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1089,10 +1089,10 @@ $f(x)=x^2$ and $g(x)=\tfrac{4}{x+2}$
   answer="$f(x)=\sqrt[3]{x}$ and $g(x)=x-1$"
   hint="Let the inner function be the expression under the cube root."
 >}}
-$f(x)=\sqrt[3]{x}$ and $g(x)=x-1$
-$f(x)=x-1$ and $g(x)=\sqrt[3]{x}$
-$f(x)=\sqrt[3]{x}$ and $g(x)=1-x$
 $f(x)=x^3$ and $g(x)=x-1$
+$f(x)=x-1$ and $g(x)=\sqrt[3]{x}$
+$f(x)=\sqrt[3]{x}$ and $g(x)=x-1$
+$f(x)=\sqrt[3]{x}$ and $g(x)=1-x$
 {{< /multiplechoice >}}
 
 ---

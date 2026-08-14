@@ -447,8 +447,8 @@ $0$ on the number line, written $|n|$.
   answer="$>$"
   hint="On the number line $9$ is to the right of $4$, and the number farther right is the greater one."
 >}}
-$<$
 $>$
+$<$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -456,8 +456,8 @@ $>$
   answer="$<$"
   hint="Every negative number lies to the left of every positive number."
 >}}
-$<$
 $>$
+$<$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -465,8 +465,8 @@ $>$
   answer="$<$"
   hint="Both numbers are negative. The one farther from zero on the left is the smaller one."
 >}}
-$<$
 $>$
+$<$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -474,8 +474,8 @@ $>$
   answer="$>$"
   hint="A positive number is always to the right of a negative number, no matter how large the negative number looks."
 >}}
-$<$
 $>$
+$<$
 {{< /multiplechoice >}}
 
 ### Find opposites
@@ -586,10 +586,10 @@ $>$
   answer="$4-(-3)$"
   hint="Write the first number, then the subtraction sign, then the second number with its own negative sign in parentheses."
 >}}
-$4-(-3)$
-$4+(-3)$
 $-4-3$
+$4-(-3)$
 $(-4)-3$
+$4+(-3)$
 {{< /multiplechoice >}}
 
 {{< fillin

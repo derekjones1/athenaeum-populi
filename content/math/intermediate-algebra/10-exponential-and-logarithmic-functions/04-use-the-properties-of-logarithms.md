@@ -295,6 +295,7 @@ We generally apply the Product and Quotient Properties before we apply the Power
 {{< fillin
   question="Expand $\log_2(5x^4y^2)$ using the properties of logarithms."
   answer="\log_2 5+4\log_2 x+2\log_2 y"
+  answerForm="expanded-logarithms"
   answerDisplay="$\log_2 5+4\log_2x+2\log_2y$"
   hint="Apply the Product Property first and the Power Property to each variable factor."
 >}}
@@ -302,6 +303,7 @@ We generally apply the Product and Quotient Properties before we apply the Power
 {{< fillin
   question="Expand $\log_3(7x^5y^3)$ using the properties of logarithms."
   answer="\log_3 7+5\log_3 x+3\log_3 y"
+  answerForm="expanded-logarithms"
   answerDisplay="$\log_3 7+5\log_3x+3\log_3y$"
   hint="Split the product into a sum and move exponents in front."
 >}}
@@ -325,6 +327,7 @@ When we have a radical in the logarithmic expression, it is helpful to first wri
 {{< fillin
   question="Expand $\log_4\sqrt[5]{\tfrac{x^4}{2y^3z^2}}$ using the properties of logarithms."
   answer="\frac{1}{5}(4\log_4 x-\frac{1}{2}-3\log_4 y-2\log_4 z)"
+  answerForm="expanded-logarithms"
   answerDisplay="$\tfrac15\left(4\log_4x-\tfrac12-3\log_4y-2\log_4z\right)$"
   hint="Write the fifth root as a $\tfrac15$ power, then use the quotient, product, and power properties."
 >}}
@@ -332,6 +335,7 @@ When we have a radical in the logarithmic expression, it is helpful to first wri
 {{< fillin
   question="Expand $\log_3\sqrt[3]{\tfrac{x^2}{5yz}}$ using the properties of logarithms."
   answer="\frac{1}{3}(2\log_3 x-\log_3 5-\log_3 y-\log_3 z)"
+  answerForm="expanded-logarithms"
   answerDisplay="$\tfrac13\left(2\log_3x-\log_3 5-\log_3y-\log_3z\right)$"
   hint="Move the cube-root exponent in front, then expand the quotient and denominator product."
 >}}
@@ -353,6 +357,7 @@ To condense logarithmic expressions with the same base into one logarithm, we st
 {{< fillin
   question="Condense $\log_2 5+\log_2x-\log_2y$ to one logarithm."
   answer="\log_2\frac{5x}{y}"
+  answerForm="single-logarithm"
   answerDisplay="$\log_2\left(\tfrac{5x}{y}\right)$"
   hint="A sum of logarithms becomes a product; a difference becomes a quotient."
 >}}
@@ -360,6 +365,7 @@ To condense logarithmic expressions with the same base into one logarithm, we st
 {{< fillin
   question="Condense $\log_3 6-\log_3x-\log_3y$ to one logarithm."
   answer="\log_3\frac{6}{xy}"
+  answerForm="single-logarithm"
   answerDisplay="$\log_3\left(\tfrac{6}{xy}\right)$"
   hint="Combine the two subtracted logarithms into denominator factors."
 >}}
@@ -377,6 +383,7 @@ To condense logarithmic expressions with the same base into one logarithm, we st
 {{< fillin
   question="Condense $3\log_2x+2\log_2(x-1)$ to one logarithm."
   answer="\log_2(x^3(x-1)^2)"
+  answerForm="single-logarithm"
   answerDisplay="$\log_2\left(x^3(x-1)^2\right)$"
   hint="Use the Power Property in reverse, then combine the sum as a product."
 >}}
@@ -384,6 +391,7 @@ To condense logarithmic expressions with the same base into one logarithm, we st
 {{< fillin
   question="Condense $2\log x+2\log(x+1)$ to one logarithm."
   answer="\log(x^2(x+1)^2)"
+  answerForm="single-logarithm"
   answerDisplay="$\log\left(x^2(x+1)^2\right)$"
   hint="Move each coefficient to an exponent, then use the Product Property in reverse."
 >}}
@@ -465,9 +473,9 @@ When we use a calculator to find the logarithm value, we usually round to three 
   answer="$\log\left((2x+3)^2\sqrt{x+1}\right)$"
   hint="Use the Power Property to clear the coefficients, then the Product Property to combine the sum into one logarithm."
 >}}
-$\log\left((2x+3)^2\sqrt{x+1}\right)$
-$2\log(2x+3)+\tfrac12\log(x+1)$
 $\log\left((2x+3)^2(x+1)^2\right)$
+$2\log(2x+3)+\tfrac12\log(x+1)$
+$\log\left((2x+3)^2\sqrt{x+1}\right)$
 $\log\left((2x+3)^2+\sqrt{x+1}\right)$
 {{< /multiplechoice >}}
 

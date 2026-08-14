@@ -591,10 +591,10 @@ its value.
   answer="five and one hundredth"
   hint="Name the whole number, say 'and' for the decimal point, then name the digits to the right as a whole number followed by the place value of the last digit."
 >}}
-five and one hundredth
-five and one tenth
 five and one thousandth
 fifty-one hundredths
+five and one tenth
+five and one hundredth
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -602,10 +602,10 @@ fifty-one hundredths
   answer="three hundred eighty-one thousandths"
   hint="A zero to the left of the decimal point is not named, so there is no 'and'. The last digit sits three places to the right of the point."
 >}}
-three hundred eighty-one thousandths
 three hundred eighty-one hundredths
-three hundred eighty-one ten-thousandths
+three hundred eighty-one thousandths
 thirty-eight and one tenth
+three hundred eighty-one ten-thousandths
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -613,9 +613,9 @@ thirty-eight and one tenth
   answer="negative seventeen and nine tenths"
   hint="The negative sign is named first, with the whole-number part; then 'and' for the point, and the place value of the single digit that follows."
 >}}
-negative seventeen and nine tenths
 negative seventeen and nine hundredths
 seventeen and nine tenths
+negative seventeen and nine tenths
 negative seventy-one and nine tenths
 {{< /multiplechoice >}}
 

@@ -124,9 +124,9 @@ $\{\text{January 12},\text{February 3},\text{April 25},\text{May 10},
   hint="Trace the arrow from the named input to the one output paired with it."
 >}}
 kn68413
-ab56781
-jh47983
 sm32479
+jh47983
+ab56781
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -134,10 +134,10 @@ sm32479
   answer="November 6"
   hint="Trace the arrow from the named input to the one output paired with it."
 >}}
-November 6
 January 18
 March 15
 December 8
+November 6
 {{< /multiplechoice >}}
 
 A graph is yet another way that a relation can be represented. The set of
@@ -381,8 +381,8 @@ No
   answer="No"
   hint="Solve for $y$. A single output for each allowed $x$ means the equation defines a function."
 >}}
-No
 Yes
+No
 {{< /multiplechoice >}}
 
 ## Find the value of a function
@@ -673,8 +673,8 @@ No
   answer="Yes"
   hint="Solve for $y$. A single output for each allowed $x$ means the equation defines a function."
 >}}
-Yes
 No
+Yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -682,8 +682,8 @@ No
   answer="No"
   hint="Solve for $y$. A single output for each allowed $x$ means the equation defines a function."
 >}}
-Yes
 No
+Yes
 {{< /multiplechoice >}}
 
 ### Find the value of a function

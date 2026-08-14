@@ -287,9 +287,9 @@ $\left(3,\tfrac{5}{2}\right)$ is in Quadrant I.
   hint="A negative $x$-coordinate is left of the $y$-axis; a positive $y$-coordinate is above the $x$-axis."
 >}}
 Quadrant I
-Quadrant II
 Quadrant III
 Quadrant IV
+Quadrant II
 {{< /multiplechoice >}}
 
 The signs of the $x$-coordinate and $y$-coordinate affect the location of the

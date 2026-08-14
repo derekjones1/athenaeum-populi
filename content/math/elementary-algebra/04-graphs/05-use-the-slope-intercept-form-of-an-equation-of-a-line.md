@@ -278,10 +278,10 @@ intercepts
   hint="Both x and y appear on the same side of the equation, in the form Ax + By = C."
   answer="intercepts"
 >}}
-vertical line
-horizontal line
-slope-intercept
 intercepts
+vertical line
+slope-intercept
+horizontal line
 {{< /multiplechoice >}}
 
 ## Graph and interpret applications of slope-intercept
@@ -481,8 +481,8 @@ neither
   answer="parallel"
 >}}
 parallel
-perpendicular
 neither
+perpendicular
 {{< /multiplechoice >}}
 
 ## Use slopes to identify perpendicular lines
@@ -593,9 +593,9 @@ not negative reciprocals, the lines are not perpendicular.
   hint="Solve the second equation for y, then multiply the two slopes together and see whether the product is −1."
   answer="perpendicular"
 >}}
-parallel
-perpendicular
 neither
+perpendicular
+parallel
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -603,9 +603,9 @@ neither
   hint="Solve both equations for y and compare the slopes — they are reciprocals, but check whether they have opposite signs."
   answer="neither"
 >}}
+neither
 parallel
 perpendicular
-neither
 {{< /multiplechoice >}}
 
 ## Key terms
@@ -714,8 +714,8 @@ slopes are negative reciprocals of each other.
   answer="The slope is $4$ and the $y$-intercept is $(0, -2)$."
   hint="From $(0, -2)$ to $(1, 2)$, compare the rise with the run; the point where the line crosses the $y$-axis is the $y$-intercept."
 >}}
-The slope is $4$ and the $y$-intercept is $(0, -2)$.
 The slope is $-4$ and the $y$-intercept is $(0, 2)$.
+The slope is $4$ and the $y$-intercept is $(0, -2)$.
 The slope is $2$ and the $y$-intercept is $(0, 4)$.
 {{< /multiplechoice >}}
 
@@ -812,9 +812,9 @@ The slope is $2$ and the $y$-intercept is $(0, 4)$.
   answer="The slope is $-3$ and the $y$-intercept is $(0, 1)$."
   hint="From $(0, 1)$ to $(1, -2)$, compare the change in $y$ with the change in $x$; then identify where the line crosses the $y$-axis."
 >}}
-The slope is $-3$ and the $y$-intercept is $(0, 1)$.
-The slope is $3$ and the $y$-intercept is $(0, -1)$.
 The slope is $-1$ and the $y$-intercept is $(0, 3)$.
+The slope is $3$ and the $y$-intercept is $(0, -1)$.
+The slope is $-3$ and the $y$-intercept is $(0, 1)$.
 {{< /multiplechoice >}}
 
 ### Identify the slope and $y$-intercept from an equation of a line
@@ -878,8 +878,8 @@ Now repeat the identification directly from a second equation in slope-intercept
 >}}
 Recognize it as a horizontal line.
 Recognize it as a vertical line.
-Use the intercepts.
 Use the slope-intercept form.
+Use the intercepts.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -887,10 +887,10 @@ Use the slope-intercept form.
   answer="Recognize it as a vertical line."
   hint="An equation of the form $x = a$ fixes the $x$-coordinate while $y$ may be any value."
 >}}
-Recognize it as a horizontal line.
 Recognize it as a vertical line.
-Use the intercepts.
 Use the slope-intercept form.
+Recognize it as a horizontal line.
+Use the intercepts.
 {{< /multiplechoice >}}
 
 ### Graph and interpret applications of slope-intercept
@@ -920,9 +920,9 @@ Use those two values to interpret and graph the same source model.
   answer="The cost increases by \$0.32 when the miles driven increase by $1$; at $0$ miles, the cost is \$15."
   hint="In $C = 0.32m + 15$, the coefficient of $m$ is the change in daily cost per mile, and the constant is the cost at $m = 0$."
 >}}
-The cost increases by \$0.32 when the miles driven increase by $1$; at $0$ miles, the cost is \$15.
 The cost increases by \$15 when the miles driven increase by $1$; at $0$ miles, the cost is \$0.32.
 The cost increases by \$0.32 when the miles driven increase by $15$; at $0$ miles, the cost is \$1.
+The cost increases by \$0.32 when the miles driven increase by $1$; at $0$ miles, the cost is \$15.
 {{< /multiplechoice >}}
 
 {{< graphplot
@@ -941,8 +941,8 @@ The cost increases by \$0.32 when the miles driven increase by $15$; at $0$ mile
   answer="parallel"
   hint="Solve the second equation for $y$, then compare both slopes and $y$-intercepts."
 >}}
-parallel
 not parallel
+parallel
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -961,8 +961,8 @@ not parallel
   answer="perpendicular"
   hint="Solve each equation for $y$ and multiply the slopes; perpendicular slopes have product $-1$."
 >}}
-perpendicular
 not perpendicular
+perpendicular
 {{< /multiplechoice >}}
 
 {{< multiplechoice

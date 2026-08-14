@@ -98,10 +98,10 @@ sits outside the radical.
   hint="Can any real number, squared, produce a negative result?"
   answer="It is not a real number"
 >}}
-It equals $14$
-It equals $-14$
-It is not a real number
 It equals $0$
+It is not a real number
+It equals $-14$
+It equals $14$
 {{< /multiplechoice >}}
 
 When using the order of operations to simplify an expression that has square
@@ -351,9 +351,9 @@ written with $\approx$, accurate to the number of digits displayed.
   answer="not a real number"
   hint="Can any real number, squared, produce a negative result?"
 >}}
-3
--3
 not a real number
+-3
+3
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -361,9 +361,9 @@ not a real number
   hint="The radical is a grouping symbol — add underneath it first, then take the square root."
   answer="5"
 >}}
+25
 5
 7
-25
 {{< /multiplechoice >}}
 
 ### Estimate square roots
@@ -374,8 +374,8 @@ not a real number
   hint="Find the perfect squares just below and above $70$."
 >}}
 7 and 8
-8 and 9
 9 and 10
+8 and 9
 6 and 7
 {{< /multiplechoice >}}
 
@@ -384,9 +384,9 @@ not a real number
   answer="14 and 15"
   hint="Find the perfect squares just below and above $200$."
 >}}
-13 and 14
 14 and 15
 15 and 16
+13 and 14
 12 and 13
 {{< /multiplechoice >}}
 

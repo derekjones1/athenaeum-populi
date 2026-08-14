@@ -55,9 +55,9 @@ We will use point plotting to graph the functions.
   answer="It passes through $(0,1)$ and $(1,4)$ and approaches $y=0$ to the left."
   hint="Evaluate the function at $x=0$ and $x=1$, and recall the horizontal asymptote of an exponential function."
 >}}
-It passes through $(0,1)$ and $(1,4)$ and approaches $y=0$ to the left.
 It passes through $(0,0)$ and $(1,4)$ and has vertical asymptote $x=0$.
 It passes through $(0,1)$ and $(1,\tfrac14)$ and decreases.
+It passes through $(0,1)$ and $(1,4)$ and approaches $y=0$ to the left.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -66,8 +66,8 @@ It passes through $(0,1)$ and $(1,\tfrac14)$ and decreases.
   hint="A base greater than 1 gives exponential growth."
 >}}
 It passes through $(0,1)$ and $(1,5)$ and approaches $y=0$ to the left.
-It passes through $(0,5)$ and $(1,25)$ and approaches $x=0$.
 It passes through $(0,1)$ and $(1,\tfrac15)$ and decreases.
+It passes through $(0,5)$ and $(1,25)$ and approaches $x=0$.
 {{< /multiplechoice >}}
 
 If we look at the graphs from the previous Example and Try Its, we can identify some of the properties of exponential functions.
@@ -109,9 +109,9 @@ We will use point plotting to graph the functions.
   answer="It passes through $(0,1)$ and $(1,\tfrac14)$ and approaches $y=0$ to the right."
   hint="An exponential function with a base between 0 and 1 decreases."
 >}}
+It passes through $(0,0)$ and has vertical asymptote $x=0$.
 It passes through $(0,1)$ and $(1,4)$ and increases.
 It passes through $(0,1)$ and $(1,\tfrac14)$ and approaches $y=0$ to the right.
-It passes through $(0,0)$ and has vertical asymptote $x=0$.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -119,8 +119,8 @@ It passes through $(0,0)$ and has vertical asymptote $x=0$.
   answer="It passes through $(0,1)$ and $(1,\tfrac15)$ and approaches $y=0$ to the right."
   hint="Evaluate $g(0)$ and $g(1)$, then use the fact that $0<\tfrac15<1$."
 >}}
-It passes through $(0,1)$ and $(1,\tfrac15)$ and approaches $y=0$ to the right.
 It passes through $(0,1)$ and $(1,5)$ and approaches $y=0$ to the left.
+It passes through $(0,1)$ and $(1,\tfrac15)$ and approaches $y=0$ to the right.
 It passes through $(0,0)$ and decreases toward a vertical asymptote.
 {{< /multiplechoice >}}
 
@@ -165,8 +165,8 @@ We will use point plotting to graph the functions.
   answer="The graph shifts right 1 unit."
   hint="Replacing $x$ by $x-h$ shifts a graph horizontally by $h$ units."
 >}}
-The graph shifts left 1 unit.
 The graph shifts right 1 unit.
+The graph shifts left 1 unit.
 The graph shifts down 1 unit.
 {{< /multiplechoice >}}
 
@@ -175,9 +175,9 @@ The graph shifts down 1 unit.
   answer="The graph shifts left 1 unit."
   hint="Write $x+1$ as $x-(-1)$ to identify the horizontal shift."
 >}}
-The graph shifts up 1 unit.
-The graph shifts right 1 unit.
 The graph shifts left 1 unit.
+The graph shifts right 1 unit.
+The graph shifts up 1 unit.
 {{< /multiplechoice >}}
 
 Example 10.12 showed that adding one in the exponent, from $f(x)={2}^{x}$ to $g(x)={2}^{x+1}$, causes a horizontal shift of one unit to the left. Recognizing this pattern allows us to graph other functions with the same pattern by translation.
@@ -196,8 +196,8 @@ We will use point plotting to graph the functions.
   hint="A constant added outside the exponential changes every output value."
 >}}
 The graph shifts right 2 units and has horizontal asymptote $y=0$.
-The graph shifts up 2 units and has horizontal asymptote $y=2$.
 The graph shifts down 2 units and has horizontal asymptote $y=-2$.
+The graph shifts up 2 units and has horizontal asymptote $y=2$.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -206,8 +206,8 @@ The graph shifts down 2 units and has horizontal asymptote $y=-2$.
   hint="Subtracting 2 from the function shifts every point down 2 units."
 >}}
 The graph shifts left 2 units and has horizontal asymptote $y=0$.
-The graph shifts up 2 units and has horizontal asymptote $y=2$.
 The graph shifts down 2 units and has horizontal asymptote $y=-2$.
+The graph shifts up 2 units and has horizontal asymptote $y=2$.
 {{< /multiplechoice >}}
 
 Example 10.13 showed that subtracting 2, from $f(x)={3}^{x}$ to $g(x)={3}^{x}-2$, causes a vertical shift down two units. The horizontal asymptote also shifts down 2 units. Recognizing this pattern allows us to graph other functions with the same pattern by translation.
@@ -527,6 +527,7 @@ Access these online resources for additional instruction and practice with evalu
 {{< fillin
   question="The graph of $g(x)=2^x+1$ is the graph of $f(x)=2^x$ shifted up 1 unit. What is the equation of the horizontal asymptote of $g$?"
   answer="y=1"
+  answerForm="exact"
   hint="A vertical shift of $k$ units moves the horizontal asymptote $y=0$ to $y=k$."
 >}}
 

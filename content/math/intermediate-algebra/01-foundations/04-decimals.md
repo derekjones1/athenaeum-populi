@@ -616,10 +616,10 @@ is $-7$, $\tfrac{14}{5}$, $8$, $5.9$, and $-\sqrt{64}$.
   hint="The whole numbers are $0, 1, 2, 3, \dots$. Note that $\sqrt{49} = 7$."
   answer="$4$ and $\sqrt{49}$"
 >}}
-$4$ and $\sqrt{49}$
 $4$ only
-$4$, $\sqrt{49}$, and $\frac{9}{5}$
 $-3$, $4$, and $\sqrt{49}$
+$4$ and $\sqrt{49}$
+$4$, $\sqrt{49}$, and $\frac{9}{5}$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -627,10 +627,10 @@ $-3$, $4$, and $\sqrt{49}$
   hint="A number is irrational when its decimal form does not stop and does not repeat. Note that $0.\overline{3}$ repeats and $\sqrt{49} = 7$."
   answer="$-\sqrt{2}$ only"
 >}}
-$-\sqrt{2}$ only
-$-\sqrt{2}$ and $0.\overline{3}$
-$0.\overline{3}$ only
 $-\sqrt{2}$ and $\sqrt{49}$
+$-\sqrt{2}$ only
+$0.\overline{3}$ only
+$-\sqrt{2}$ and $0.\overline{3}$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -638,10 +638,10 @@ $-\sqrt{2}$ and $\sqrt{49}$
   hint="The integers are the whole numbers and their opposites. Note that $-\sqrt{25} = -5$ and $\sqrt{121} = 11$; the decimal $2.041975\dots$ does not stop or repeat."
   answer="$-\sqrt{25}$, $-1$, $6$, and $\sqrt{121}$"
 >}}
-$-\sqrt{25}$, $-1$, $6$, and $\sqrt{121}$
 $-1$ and $6$ only
 $-1$, $6$, and $\sqrt{121}$
 $-\sqrt{25}$, $-\frac{3}{8}$, $-1$, $6$, and $\sqrt{121}$
+$-\sqrt{25}$, $-1$, $6$, and $\sqrt{121}$
 {{< /multiplechoice >}}
 
 ## Locate fractions and decimals on the number line
@@ -967,10 +967,10 @@ $-8,\ 0,\ 1.95286\ldots,\ \tfrac{12}{5},\ \sqrt{36},\ 9$.
   answer="$0$, $\sqrt{36}$, and $9$"
   hint="Whole numbers are $0$ and the positive integers. Simplify the square root before classifying it."
 >}}
-$0$, $\sqrt{36}$, and $9$
+all six numbers
 $-8$, $0$, $\sqrt{36}$, and $9$
 $0$, $\tfrac{12}{5}$, $\sqrt{36}$, and $9$
-all six numbers
+$0$, $\sqrt{36}$, and $9$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -978,10 +978,10 @@ all six numbers
   answer="$-8$, $0$, $\sqrt{36}$, and $9$"
   hint="Integers include zero, positive whole numbers, and their negatives. Simplify the square root first."
 >}}
+all six numbers
 $0$, $\sqrt{36}$, and $9$
 $-8$, $0$, $\sqrt{36}$, and $9$
 $-8$, $0$, $\tfrac{12}{5}$, $\sqrt{36}$, and $9$
-all six numbers
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -989,9 +989,9 @@ all six numbers
   answer="$-8$, $0$, $\tfrac{12}{5}$, $\sqrt{36}$, and $9$"
   hint="Integers and fractions of integers are rational. A square root of a perfect square is rational too."
 >}}
-$0$, $\sqrt{36}$, and $9$
-$-8$, $0$, $\sqrt{36}$, and $9$
 $-8$, $0$, $\tfrac{12}{5}$, $\sqrt{36}$, and $9$
+$-8$, $0$, $\sqrt{36}$, and $9$
+$0$, $\sqrt{36}$, and $9$
 all six numbers
 {{< /multiplechoice >}}
 
@@ -1000,10 +1000,10 @@ all six numbers
   answer="$1.95286\ldots$"
   hint="An irrational number has a decimal representation that neither terminates nor repeats."
 >}}
-$-8$
-$1.95286\ldots$
-$\tfrac{12}{5}$
 $\sqrt{36}$
+$\tfrac{12}{5}$
+$1.95286\ldots$
+$-8$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1011,10 +1011,10 @@ $\sqrt{36}$
   answer="all six numbers"
   hint="Every rational or irrational number is real."
 >}}
-$-8$, $0$, $\sqrt{36}$, and $9$
 $-8$, $0$, $\tfrac{12}{5}$, $\sqrt{36}$, and $9$
-$1.95286\ldots$
 all six numbers
+$1.95286\ldots$
+$-8$, $0$, $\sqrt{36}$, and $9$
 {{< /multiplechoice >}}
 
 ### Locate fractions and decimals on the number line

@@ -451,10 +451,10 @@ $x$-coordinate, used.
   answer="Decreasing, because $m<0$"
   hint="Check the sign of the slope you just computed."
 >}}
+There is not enough information to tell
 Decreasing, because $m<0$
 Increasing, because $m>0$
 Constant, because $m=0$
-There is not enough information to tell
 {{< /multiplechoice >}}
 
 **Example.** The population of a city increased from 23,400 to 27,800 between
@@ -1462,8 +1462,8 @@ No
 >}}
 Decreasing, because $m<0$
 Increasing, because $m>0$
-Constant, because $m=0$
 There is not enough information to tell
+Constant, because $m=0$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1471,10 +1471,10 @@ There is not enough information to tell
   answer="Decreasing, because $m<0$"
   hint="Rewrite the function as $a(x)=-2x+5$ and check the sign of its slope."
 >}}
-Decreasing, because $m<0$
 Increasing, because $m>0$
 Constant, because $m=0$
 There is not enough information to tell
+Decreasing, because $m<0$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1483,9 +1483,9 @@ There is not enough information to tell
   hint="Check the sign of the coefficient of $x$."
 >}}
 Decreasing, because $m<0$
-Increasing, because $m>0$
-Constant, because $m=0$
 There is not enough information to tell
+Constant, because $m=0$
+Increasing, because $m>0$
 {{< /multiplechoice >}}
 
 ### Calculate and interpret slope
@@ -1564,8 +1564,8 @@ There is not enough information to tell
   answer="Each year in the decade of the 1990s, average annual income increased by \$1,054."
   hint="The slope is the change in income for each one-year increase in $x$."
 >}}
-As of 1990, average annual income was \$23,286.
 In the ten-year period from 1990–1999, average annual income increased by a total of \$1,054.
+As of 1990, average annual income was \$23,286.
 Each year in the decade of the 1990s, average annual income increased by \$1,054.
 Average annual income rose to a level of \$23,286 by the end of 1999.
 {{< /multiplechoice >}}

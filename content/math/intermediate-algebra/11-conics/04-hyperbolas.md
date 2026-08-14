@@ -408,9 +408,9 @@ Only one variable, $x$, is squared: **parabola**.
   answer="ellipse"
   hint="The squared terms have the same sign and different coefficients."
 >}}
-circle
-parabola
 ellipse
+parabola
+circle
 hyperbola
 {{< /multiplechoice >}}
 
@@ -419,10 +419,10 @@ hyperbola
   answer="hyperbola"
   hint="The squared terms have different signs."
 >}}
-circle
-parabola
 ellipse
+parabola
 hyperbola
+circle
 {{< /multiplechoice >}}
 
 ## Key terms
@@ -493,9 +493,9 @@ vertical
   hint="Group the variable terms and complete both squares — watch the sign when you factor $-1$ out of the $x$-terms — then divide through so the right side is $1$."
 >}}
 $\tfrac{(y-2)^2}{9}-\tfrac{(x-1)^2}{9}=1$
-$\tfrac{(x-1)^2}{9}-\tfrac{(y-2)^2}{9}=1$
 $\tfrac{(y+2)^2}{9}-\tfrac{(x+1)^2}{9}=1$
 $\tfrac{(y-2)^2}{9}+\tfrac{(x-1)^2}{9}=1$
+$\tfrac{(x-1)^2}{9}-\tfrac{(y-2)^2}{9}=1$
 {{< /multiplechoice >}}
 
 ### Identify conic sections by their equations
@@ -505,10 +505,10 @@ $\tfrac{(y-2)^2}{9}+\tfrac{(x-1)^2}{9}=1$
   answer="parabola"
   hint="Only one variable, $y$, is squared."
 >}}
-circle
 parabola
-ellipse
 hyperbola
+circle
+ellipse
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -517,8 +517,8 @@ hyperbola
   hint="The $x^2$- and $y^2$-terms have the same coefficient."
 >}}
 circle
-parabola
 ellipse
+parabola
 hyperbola
 {{< /multiplechoice >}}
 
@@ -527,10 +527,10 @@ hyperbola
   answer="hyperbola"
   hint="The $x^2$- and $y^2$-terms have different signs."
 >}}
-circle
-parabola
-ellipse
 hyperbola
+circle
+ellipse
+parabola
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -538,8 +538,8 @@ hyperbola
   answer="ellipse"
   hint="The $x^2$- and $y^2$-terms have the same sign but different coefficients."
 >}}
-circle
 parabola
+circle
 ellipse
 hyperbola
 {{< /multiplechoice >}}

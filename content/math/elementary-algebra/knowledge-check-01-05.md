@@ -147,7 +147,8 @@ weight: 6
 
 {{< fillin
   question="Convert $1.85$ to a percent. Enter the number of percent."
-  answer="185"
+  answer="185\%"
+  answerForm="percent"
   answerDisplay="185%"
 >}}
 
@@ -374,7 +375,8 @@ weight: 6
 
 {{< fillin
   question="Humberto's hourly pay increased from \$16.25 to \$17.55. Find the percent increase."
-  answer="8"
+  answer="8\%"
+  answerForm="percent"
   answerDisplay="8%"
 >}}
 
@@ -386,7 +388,8 @@ weight: 6
 
 {{< fillin
   question="Dotty bought a freezer on sale for \$486.50. The original price of the freezer was \$695. Find the discount rate."
-  answer="30"
+  answer="30\%"
+  answerForm="percent"
   answerDisplay="30%"
 >}}
 
@@ -873,8 +876,8 @@ no
   question="Is the ordered pair $(3, -2)$ a solution to the system: $4x + y > 6$ and $3x - y \le 12$?"
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -889,8 +892,8 @@ no
   question="Andi wants to spend no more than \$50 on Halloween treats. She wants to buy candy bars that cost \$1 each and lollipops that cost \$0.50 each, and she wants the number of lollipops to be at least three times the number of candy bars. Can she buy 15 candy bars and 65 lollipops?"
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 <small>This knowledge check is adapted from the Chapter 1–5 [Review Exercises and Practice Tests](https://openstax.org/books/elementary-algebra-2e/pages/1-review-exercises) of Elementary Algebra 2e by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked usable Practice Test questions), converted them to interactive exercises with instant feedback, split multi-part questions into separate exercises, rephrased word-answer, graph-reading, and fill-in-the-symbol questions as value, list, and full-inequality questions, recreated needed figures as accessible inline graphs, and took all answers from the book's Answer Key.</small>

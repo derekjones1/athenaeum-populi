@@ -102,14 +102,16 @@ $8.5\%$.
 
 {{< fillin
   question="Diego bought a new car for \$26,525. He was surprised that the dealer then added \$2,387.25. What was the sales tax rate for this purchase?"
-  answer="9"
+  answer="9\%"
+  answerForm="percent"
   answerDisplay="9%"
   hint="Translate to $r \cdot 26{,}525 = 2{,}387.25$, then divide and convert to a percent."
 >}}
 
 {{< fillin
   question="What is the sales tax rate if a \$7,594 purchase will have \$569.55 of sales tax added to it?"
-  answer="7.5"
+  answer="7.5\%"
+  answerForm="percent"
   answerDisplay="7.5%"
   hint="Translate to $r \cdot 7{,}594 = 569.55$, then divide and convert to a percent."
 >}}
@@ -171,14 +173,16 @@ $6\%$ of the price of the stove.
 
 {{< fillin
   question="Homer received \$1,140 commission when he sold a car for \$28,500. What rate of commission did he get?"
-  answer="4"
+  answer="4\%"
+  answerForm="percent"
   answerDisplay="4%"
   hint="Translate to $1{,}140 = r \cdot 28{,}500$, then divide and convert to a percent."
 >}}
 
 {{< fillin
   question="Bernice earned \$451 commission when she sold an \$8,200 living room set. What rate of commission did she get?"
-  answer="5.5"
+  answer="5.5\%"
+  answerForm="percent"
   answerDisplay="5.5%"
   hint="Translate to $451 = r \cdot 8{,}200$, then divide and convert to a percent."
 >}}
@@ -299,7 +303,8 @@ discount was $55\%$.
 
 {{< fillin
   question="Find the discount rate: Lena bought a kitchen table at the sale price of \$375.20. The original price of the table was \$560."
-  answer="33"
+  answer="33\%"
+  answerForm="percent"
   answerDisplay="33%"
   hint="Translate to $184.80 = r \cdot 560$, then divide and convert to a percent."
 >}}
@@ -397,7 +402,8 @@ $\text{list price} = \text{wholesale price} + \text{mark-up}$.
 
 {{< fillin
   question="Shawna bought a mixer for \$300. The sales tax on the purchase was \$19.50. What is the sales tax rate, as a percent?"
-  answer="6.5"
+  answer="6.5\%"
+  answerForm="percent"
   answerDisplay="6.5%"
   hint="Translate to $r \cdot 300 = 19.50$, divide both sides by 300, then write the decimal as a percent."
 >}}
@@ -420,7 +426,8 @@ $\text{list price} = \text{wholesale price} + \text{mark-up}$.
 
 {{< fillin
   question="Dontay is a realtor and earned \$11,250 commission on the sale of a \$375,000 house. What is his rate of commission, as a percent?"
-  answer="3"
+  answer="3\%"
+  answerForm="percent"
   answerDisplay="3%"
   hint="Translate to $11{,}250 = r \cdot 375{,}000$, divide by the total sales, then convert the decimal to a percent."
 >}}
@@ -457,7 +464,8 @@ $\text{list price} = \text{wholesale price} + \text{mark-up}$.
 
 {{< fillin
   question="Larry and Donna bought a sofa at the sale price of \$1,344. The original price of the sofa was \$1,920. What is the discount rate, as a percent?"
-  answer="30"
+  answer="30\%"
+  answerForm="percent"
   answerDisplay="30%"
   hint="The discount is what percent of the original price? Translate to $576 = r \cdot 1{,}920$ and solve."
 >}}

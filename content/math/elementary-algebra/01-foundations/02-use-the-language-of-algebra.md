@@ -449,8 +449,8 @@ expression
   answer="Thirty-six is greater than or equal to nineteen."
   hint="The symbol $\ge$ combines 'greater than' with 'equal to.'"
 >}}
-Thirty-six is greater than or equal to nineteen.
 Thirty-six is less than or equal to nineteen.
+Thirty-six is greater than or equal to nineteen.
 Thirty-six is not equal to nineteen.
 {{< /multiplechoice >}}
 

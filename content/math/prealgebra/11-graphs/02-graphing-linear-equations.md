@@ -1759,8 +1759,8 @@ no
   answer="no"
   hint="Substitute $x = 1$: the equation gives $y = 3$, not $2$. A pair that fails the equation is not a solution, so the point is off the line."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1768,8 +1768,8 @@ no
   answer="yes"
   hint="Substitute $x = -1$ and $y = 1$ and simplify the right side. If the two sides agree, the pair is a solution and the point lies on the line."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1777,8 +1777,8 @@ no
   answer="no"
   hint="Substitute $x = -3$ into $y = x + 2$ and compare the result with the $y$-value $1$ in the pair."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 The graph of $y = \tfrac{1}{2}x - 3$ is shown below. Again decide, for each
@@ -1878,8 +1878,8 @@ no
   answer="yes"
   hint="Substitute $x = 2$: half of $2$ is $1$, then subtract $3$. Compare with the $y$-value $-2$."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1887,8 +1887,8 @@ no
   answer="yes"
   hint="Substitute $x = -2$: half of $-2$ is $-1$, then subtract $3$. Compare with the $y$-value $-4$."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1896,8 +1896,8 @@ no
   answer="no"
   hint="Substitute $x = 4$ and simplify. The equation gives $y = -1$, so check whether that matches the $y$-value $1$ in the pair."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ### Graph a linear equation by plotting points

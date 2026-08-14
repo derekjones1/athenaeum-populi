@@ -516,8 +516,8 @@ After a car accident, the skid marks for one car measured 190 feet. Use the form
   answer="no solution"
   hint="A principal square root is never negative, so check whether the isolated radical is being set equal to a negative number before you square."
 >}}
-no solution
 $x = \tfrac{8}{5}$
+no solution
 {{< /multiplechoice >}}
 
 {{< fillin

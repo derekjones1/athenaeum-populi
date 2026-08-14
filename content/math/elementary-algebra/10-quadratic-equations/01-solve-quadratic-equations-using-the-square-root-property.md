@@ -203,9 +203,9 @@ The $\sqrt{-24}$ is not a real number. There is no real solution.
   hint="Isolate $d^2$ and determine whether the square root is a real number."
   answer="No real solution"
 >}}
+$d=81$ or $d=-81$
 No real solution
 $d=9$ or $d=-9$
-$d=81$ or $d=-81$
 {{< /multiplechoice >}}
 
 Remember, we first isolate the quadratic term and then make the coefficient
@@ -398,8 +398,8 @@ The $\sqrt{-12}$ is not a real number. There is no real solution.
   answer="No real solution"
 >}}
 No real solution
-$r=-\tfrac{4}{3}$
 $r=\tfrac{4}{3}$
+$r=-\tfrac{4}{3}$
 {{< /multiplechoice >}}
 
 The left sides of the equations in the next two examples do not seem to be of
@@ -500,9 +500,9 @@ form $a^2+2ab+b^2$ or $a^2-2ab+b^2$; it factors to $(a+b)^2$ or $(a-b)^2$.
   answer="No real solution"
   hint="Isolate $x^2$ and decide whether a real number can square to a negative value."
 >}}
-No real solution
-$x=2\sqrt{5}$ or $x=-2\sqrt{5}$
 $x=20$ or $x=-20$
+$x=2\sqrt{5}$ or $x=-2\sqrt{5}$
+No real solution
 {{< /multiplechoice >}}
 
 ### Solve quadratic equations of the form $a(x-h)^2=k$ using the Square Root Property

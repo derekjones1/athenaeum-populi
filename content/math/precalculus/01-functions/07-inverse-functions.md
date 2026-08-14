@@ -220,9 +220,9 @@ order of the operations from the original function.
   hint="Substitute one into the other and simplify; the cube and the cube root undo each other."
 >}}
 Yes, because both $f(g(x))=x$ and $g(f(x))=x$
-No, because $f(g(x))\ne x$
 No, because $g(f(x))\ne x$
 Only $f(g(x))=x$ holds, so they are not inverses
+No, because $f(g(x))\ne x$
 {{< /multiplechoice >}}
 
 **Example.** If $f(x)=x^3$ (the cube function) and $g(x)=\tfrac{1}{3}x$, is
@@ -241,10 +241,10 @@ is an exponent, not a multiplier.
   answer="Yes"
   hint="Work $f(g(x))$ from the inside out: the $+1$ and the $-1$ cancel before the cube."
 >}}
-Yes
 No, because $f(g(x))=x^3$
 No, because $g(f(x))=x-2$
 No, because $g$ is not one-to-one
+Yes
 {{< /multiplechoice >}}
 
 ## Finding domain and range of inverse functions
@@ -490,10 +490,10 @@ then in that restricted domain, it can have an inverse.
   answer="domain $(-\infty,-2)$, range $(1,\infty)$"
   hint="An inverse swaps the two sets: what goes in becomes what comes out."
 >}}
-domain $(-\infty,-2)$, range $(1,\infty)$
-domain $(1,\infty)$, range $(-\infty,-2)$
 domain $(-\infty,1)$, range $(-2,\infty)$
+domain $(1,\infty)$, range $(-\infty,-2)$
 domain $(-2,\infty)$, range $(-\infty,1)$
+domain $(-\infty,-2)$, range $(1,\infty)$
 {{< /multiplechoice >}}
 
 ## Finding and evaluating inverse functions
@@ -705,8 +705,8 @@ definition, $g^{-1}(3)=5$.
   hint="The output 4 sits just above the marked point $(5,3)$, so the input is a little past 5."
 >}}
 about 5.6
-about 3.5
 about 4.0
+about 3.5
 about 7.2
 {{< /multiplechoice >}}
 
@@ -819,9 +819,9 @@ one-to-one function. This domain of $f^{-1}$ is exactly the range of $f$.
   hint="The domain of the inverse is the range of $f$ — and a square root is never negative, so $2-\sqrt{x}$ never exceeds 2."
 >}}
 domain of $f$: $[0,\infty)$; domain of $f^{-1}$: $(-\infty,2]$
-domain of $f$: $[0,\infty)$; domain of $f^{-1}$: $[2,\infty)$
-domain of $f$: $(-\infty,2]$; domain of $f^{-1}$: $[0,\infty)$
 domain of $f$: $(-\infty,\infty)$; domain of $f^{-1}$: $(-\infty,\infty)$
+domain of $f$: $(-\infty,2]$; domain of $f^{-1}$: $[0,\infty)$
+domain of $f$: $[0,\infty)$; domain of $f^{-1}$: $[2,\infty)$
 {{< /multiplechoice >}}
 
 ## Finding inverse functions and their graphs
@@ -1172,9 +1172,9 @@ No
   hint="Substitute $g(x)$ into $f$ and simplify the resulting complex fraction, then check the other order."
 >}}
 Yes, because both $f(g(x))=x$ and $g(f(x))=x$
-No, because $f(g(x))\ne x$
-No, because $g(f(x))\ne x$
 No, because neither composition simplifies to $x$
+No, because $g(f(x))\ne x$
+No, because $f(g(x))\ne x$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1182,10 +1182,10 @@ No, because neither composition simplifies to $x$
   answer="Yes, because both $f(g(x))=x$ and $g(f(x))=x$"
   hint="Substitute $g(x)$ into $f$ first — the cube and cube root cancel — then check the reverse order."
 >}}
-Yes, because both $f(g(x))=x$ and $g(f(x))=x$
 No, because $f(g(x))\ne x$
-No, because $g(f(x))\ne x$
 Only $g(f(x))=x$ holds, so they are not inverses
+Yes, because both $f(g(x))=x$ and $g(f(x))=x$
+No, because $g(f(x))\ne x$
 {{< /multiplechoice >}}
 
 ### Determine the domain and range of an inverse function and restrict the domain of a function to make it one-to-one
@@ -1195,9 +1195,9 @@ Only $g(f(x))=x$ holds, so they are not inverses
   answer="domain of $f$: $[-7,\infty)$; $f^{-1}(x)=\sqrt{x}-7$"
   hint="Restrict to where $x+7\ge 0$, then solve $y=(x+7)^2$ for $x$ using the positive square root."
 >}}
-domain of $f$: $[-7,\infty)$; $f^{-1}(x)=\sqrt{x}-7$
-domain of $f$: $[-7,\infty)$; $f^{-1}(x)=\sqrt{x}+7$
 domain of $f$: $(-\infty,-7]$; $f^{-1}(x)=\sqrt{x}-7$
+domain of $f$: $[-7,\infty)$; $f^{-1}(x)=\sqrt{x}+7$
+domain of $f$: $[-7,\infty)$; $f^{-1}(x)=\sqrt{x}-7$
 domain of $f$: $[0,\infty)$; $f^{-1}(x)=\sqrt{x-7}$
 {{< /multiplechoice >}}
 
@@ -1206,10 +1206,10 @@ domain of $f$: $[0,\infty)$; $f^{-1}(x)=\sqrt{x-7}$
   answer="domain of $f$: $[0,\infty)$; $f^{-1}(x)=\sqrt{x+5}$"
   hint="Restrict to where $x\ge 0$, then solve $y=x^2-5$ for $x$ using the positive square root."
 >}}
-domain of $f$: $[0,\infty)$; $f^{-1}(x)=\sqrt{x+5}$
-domain of $f$: $[0,\infty)$; $f^{-1}(x)=\sqrt{x}-5$
 domain of $f$: $(-\infty,0]$; $f^{-1}(x)=\sqrt{x+5}$
 domain of $f$: $[-5,\infty)$; $f^{-1}(x)=\sqrt{x+5}$
+domain of $f$: $[0,\infty)$; $f^{-1}(x)=\sqrt{x+5}$
+domain of $f$: $[0,\infty)$; $f^{-1}(x)=\sqrt{x}-5$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1217,8 +1217,8 @@ domain of $f$: $[-5,\infty)$; $f^{-1}(x)=\sqrt{x+5}$
   answer="Yes"
   hint="A one-to-one function passes the horizontal line test; a square-root graph never doubles back on itself."
 >}}
-Yes
 No
+Yes
 {{< /multiplechoice >}}
 
 ### Find or evaluate the inverse of a function

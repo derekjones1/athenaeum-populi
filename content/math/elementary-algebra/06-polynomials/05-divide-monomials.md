@@ -664,10 +664,10 @@ $7x^4$, that we can divide by applying these properties of exponents.
   answer="$\tfrac{a^5}{b^5}$"
   hint="Raise the numerator and denominator to the fifth power."
 >}}
-$\tfrac{a^5}{b^5}$
-$\tfrac{a^5}{b}$
 $\tfrac{a}{b^5}$
+$\tfrac{a^5}{b}$
 $\tfrac{5a}{5b}$
+$\tfrac{a^5}{b^5}$
 {{< /multiplechoice >}}
 
 ### Simplify Expressions by Applying Several Properties

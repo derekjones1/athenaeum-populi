@@ -141,8 +141,8 @@ down 2 units.
   answer="$g$ shifts up 1 unit and $h$ shifts down 1 unit."
   hint="Compare each constant term with zero."
 >}}
-$g$ shifts up 1 unit and $h$ shifts down 1 unit.
 $g$ shifts right 1 unit and $h$ shifts left 1 unit.
+$g$ shifts up 1 unit and $h$ shifts down 1 unit.
 $g$ shifts down 1 unit and $h$ shifts up 1 unit.
 {{< /multiplechoice >}}
 
@@ -151,9 +151,9 @@ $g$ shifts down 1 unit and $h$ shifts up 1 unit.
   answer="$g$ shifts up 6 units and $h$ shifts down 6 units."
   hint="A constant added outside the square changes every $y$-value."
 >}}
-$g$ shifts right 6 units and $h$ shifts left 6 units.
 $g$ shifts up 6 units and $h$ shifts down 6 units.
 $g$ shifts down 6 units and $h$ shifts up 6 units.
+$g$ shifts right 6 units and $h$ shifts left 6 units.
 {{< /multiplechoice >}}
 
 The last example shows us that to graph a quadratic function of the form
@@ -560,9 +560,9 @@ left 1 unit.
   answer="$g$ shifts left 2 units and $h$ shifts right 2 units."
   hint="Write each function as $(x-h)^2$."
 >}}
+$g$ shifts up 2 units and $h$ shifts down 2 units.
 $g$ shifts right 2 units and $h$ shifts left 2 units.
 $g$ shifts left 2 units and $h$ shifts right 2 units.
-$g$ shifts up 2 units and $h$ shifts down 2 units.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -571,8 +571,8 @@ $g$ shifts up 2 units and $h$ shifts down 2 units.
   hint="In the printed formulas, the constants are outside the square."
 >}}
 $g$ shifts left 5 units and $h$ shifts right 5 units.
-$g$ shifts up 5 units and $h$ shifts down 5 units.
 $g$ shifts right 5 units and $h$ shifts left 5 units.
+$g$ shifts up 5 units and $h$ shifts down 5 units.
 {{< /multiplechoice >}}
 
 The last example shows us that to graph a quadratic function of the form
@@ -1141,8 +1141,8 @@ to get the points for $g(x)=3x^2$.
   answer="It opens upward and is skinnier."
   hint="Use the sign and absolute value of $a=2$."
 >}}
-It opens upward and is skinnier.
 It opens downward and is skinnier.
+It opens upward and is skinnier.
 It opens upward and is wider.
 {{< /multiplechoice >}}
 

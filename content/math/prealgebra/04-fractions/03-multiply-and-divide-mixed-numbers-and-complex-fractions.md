@@ -477,10 +477,10 @@ dividing.
   answer="$\tfrac{-4}{9}$ and $-\tfrac{4}{9}$"
   hint="Decide the sign of each listed fraction first — only the negative ones can match."
 >}}
-$\tfrac{-4}{-9}$ and $\tfrac{4}{9}$
-$\tfrac{-4}{-9}$ and $\tfrac{-4}{9}$
 $\tfrac{-4}{9}$ and $-\tfrac{4}{9}$
 $\tfrac{4}{9}$ and $-\tfrac{4}{9}$
+$\tfrac{-4}{-9}$ and $\tfrac{4}{9}$
+$\tfrac{-4}{-9}$ and $\tfrac{-4}{9}$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -488,10 +488,10 @@ $\tfrac{4}{9}$ and $-\tfrac{4}{9}$
   answer="$\tfrac{13}{-6}$ and $\tfrac{-13}{6}$"
   hint="A fraction is negative when exactly one of its numerator and denominator is negative."
 >}}
-$\tfrac{13}{6}$ and $\tfrac{-13}{-6}$
+$\tfrac{-13}{-6}$ and $\tfrac{-13}{6}$
 $\tfrac{13}{-6}$ and $\tfrac{-13}{6}$
 $\tfrac{13}{6}$ and $\tfrac{-13}{6}$
-$\tfrac{-13}{-6}$ and $\tfrac{-13}{6}$
+$\tfrac{13}{6}$ and $\tfrac{-13}{-6}$
 {{< /multiplechoice >}}
 
 {{< fillin

@@ -510,9 +510,9 @@ and is consistent and independent.
   hint="Same slope with different intercepts means the lines are parallel — they never meet."
   answer="no solution"
 >}}
-one solution
 no solution
 infinitely many solutions
+one solution
 {{< /multiplechoice >}}
 
 ## Solve applications of systems of equations by graphing
@@ -635,8 +635,8 @@ equations with different solutions (intersecting or parallel lines).
   answer="yes"
   hint="Substitute $x=3$ and $y=1$ into both equations; the point is a solution only if both statements are true."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice

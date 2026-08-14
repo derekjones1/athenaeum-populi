@@ -117,12 +117,14 @@ $15 \cdot 17.5 = 37.5 \cdot 7$, the equation is a proportion.
 {{< fillin
   question="Test whether $\tfrac{24.5}{45.5} = \tfrac{7}{13}$ is a proportion. Enter the cross product $45.5 \times 7$."
   answer="318.5"
+  answerForm="decimal"
   hint="If this cross product equals $13 \times 24.5$, the equation is a proportion."
 >}}
 
 {{< fillin
   question="Test whether $\tfrac{8}{9} = \tfrac{56}{73}$ is a proportion. Enter the cross product $9 \times 56$."
   answer="504"
+  answerForm="decimal"
   hint="If this cross product equals $8 \times 73$, the equation is a proportion. Compute $8 \times 73$ to compare — they're not equal here."
 >}}
 
@@ -490,14 +492,16 @@ out. $12.5\%$ of $72$ is $9$.
 
 {{< fillin
   question="Translate and solve using proportions: What percent of 72 is 27?"
-  answer="37.5"
+  answer="37.5\%"
+  answerForm="percent"
   answerDisplay="37.5%"
   hint="Set up $\tfrac{27}{72} = \tfrac{n}{100}$, then find the cross products and solve."
 >}}
 
 {{< fillin
   question="Translate and solve using proportions: What percent of 92 is 23?"
-  answer="25"
+  answer="25\%"
+  answerForm="percent"
   answerDisplay="25%"
   hint="Set up $\tfrac{23}{92} = \tfrac{n}{100}$, then find the cross products and solve."
 >}}
@@ -521,9 +525,9 @@ form $\tfrac{\text{amount}}{\text{base}} = \tfrac{\text{percent}}{100}$.
   hint="Keep the sentence's order: the first number over the second, set equal to the third over the fourth."
 >}}
 $\tfrac{4}{15} = \tfrac{36}{135}$
+$\tfrac{4}{36} = \tfrac{135}{15}$
 $\tfrac{15}{4} = \tfrac{36}{135}$
 $\tfrac{4}{15} = \tfrac{135}{36}$
-$\tfrac{4}{36} = \tfrac{135}{15}$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -532,8 +536,8 @@ $\tfrac{4}{36} = \tfrac{135}{15}$
   hint="Compare the quantities in the same order in both ratios — dollars in the numerators, ounces in the denominators."
 >}}
 $\tfrac{9.36}{18} = \tfrac{2.60}{5}$
-$\tfrac{18}{9.36} = \tfrac{2.60}{5}$
 $\tfrac{9.36}{18} = \tfrac{5}{2.60}$
+$\tfrac{18}{9.36} = \tfrac{2.60}{5}$
 $\tfrac{9.36}{5} = \tfrac{2.60}{18}$
 {{< /multiplechoice >}}
 
@@ -618,10 +622,10 @@ no
   answer="$\tfrac{n}{250} = \tfrac{35}{100}$"
   hint="The amount goes over the base — the number following the word 'of' — and the percent goes over 100."
 >}}
-$\tfrac{n}{250} = \tfrac{35}{100}$
-$\tfrac{250}{n} = \tfrac{35}{100}$
-$\tfrac{n}{35} = \tfrac{250}{100}$
 $\tfrac{n}{250} = \tfrac{100}{35}$
+$\tfrac{n}{250} = \tfrac{35}{100}$
+$\tfrac{n}{35} = \tfrac{250}{100}$
+$\tfrac{250}{n} = \tfrac{35}{100}$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -629,10 +633,10 @@ $\tfrac{n}{250} = \tfrac{100}{35}$
   answer="$\tfrac{45}{n} = \tfrac{30}{100}$"
   hint="Here 45 is the amount and 'what number' is the base, so the unknown belongs in the first denominator."
 >}}
-$\tfrac{45}{n} = \tfrac{30}{100}$
 $\tfrac{n}{45} = \tfrac{30}{100}$
 $\tfrac{45}{n} = \tfrac{100}{30}$
 $\tfrac{45}{30} = \tfrac{n}{100}$
+$\tfrac{45}{n} = \tfrac{30}{100}$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -640,10 +644,10 @@ $\tfrac{45}{30} = \tfrac{n}{100}$
   answer="$\tfrac{17}{85} = \tfrac{p}{100}$"
   hint="'What percent' is the unknown, 85 follows 'of' so it is the base, and 17 is the amount."
 >}}
-$\tfrac{17}{85} = \tfrac{p}{100}$
-$\tfrac{85}{17} = \tfrac{p}{100}$
 $\tfrac{17}{85} = \tfrac{100}{p}$
+$\tfrac{85}{17} = \tfrac{p}{100}$
 $\tfrac{p}{85} = \tfrac{17}{100}$
+$\tfrac{17}{85} = \tfrac{p}{100}$
 {{< /multiplechoice >}}
 
 ### Translate and solve percent proportions
@@ -668,7 +672,8 @@ $\tfrac{p}{85} = \tfrac{17}{100}$
 
 {{< fillin
   question="Translate and solve using proportions: What percent of 96 is 12?"
-  answer="12.5"
+  answer="12.5\%"
+  answerForm="percent"
   answerDisplay="12.5%"
   hint="Set up $\tfrac{12}{96} = \tfrac{p}{100}$, then find the cross products and divide by 96."
 >}}

@@ -499,8 +499,8 @@ coordinates are $(0, -1)$ is on the $y$-axis.
   hint="A negative $x$-coordinate paired with a positive $y$-coordinate places the point to the left of the $y$-axis and above the $x$-axis."
 >}}
 Quadrant I
-Quadrant II
 Quadrant III
+Quadrant II
 Quadrant IV
 {{< /multiplechoice >}}
 
@@ -1025,8 +1025,8 @@ statement when substituted in for $x$ and $y$.
   answer="Quadrant IV"
   hint="The $x$-coordinate is positive and the $y$-coordinate is negative — go right, then down."
 >}}
-Quadrant I
 Quadrant II
+Quadrant I
 Quadrant III
 Quadrant IV
 {{< /multiplechoice >}}
@@ -1036,8 +1036,8 @@ Quadrant IV
   answer="Quadrant II"
   hint="A negative $x$-coordinate moves left of the $y$-axis; a positive $y$-coordinate moves above the $x$-axis."
 >}}
-Quadrant I
 Quadrant II
+Quadrant I
 Quadrant III
 Quadrant IV
 {{< /multiplechoice >}}
@@ -1047,10 +1047,10 @@ Quadrant IV
   answer="Quadrant III"
   hint="Both coordinates are negative, so the point is left of and below the origin."
 >}}
-Quadrant I
-Quadrant II
-Quadrant III
 Quadrant IV
+Quadrant III
+Quadrant II
+Quadrant I
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1059,9 +1059,9 @@ Quadrant IV
   hint="Both coordinates are positive, so the point is right of and above the origin."
 >}}
 Quadrant I
-Quadrant II
 Quadrant III
 Quadrant IV
+Quadrant II
 {{< /multiplechoice >}}
 
 ### Identify points on a graph
@@ -1240,8 +1240,8 @@ no
   answer="yes"
   hint="Substitute $x = 3$ and $y = 0$; a zero coordinate is still substituted like any other value."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1249,8 +1249,8 @@ no
   answer="no"
   hint="Substitute $x = 2$ and $y = 3$ and compare the result with $6$."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1258,8 +1258,8 @@ no
   answer="yes"
   hint="Substitute $x = 2$ into the right side and see whether you get the given $y$-value."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice

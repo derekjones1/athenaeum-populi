@@ -271,9 +271,9 @@ The result is the graph of $y=x^2-1$.
   hint="Use $x=-2,-1,0,1,2$ and plot the corresponding values of $y$."
   answer="A downward-opening parabola with vertex $(0,0)$"
 >}}
-A downward-opening parabola with vertex $(0,0)$
 An upward-opening parabola with vertex $(0,0)$
 A downward-opening parabola with vertex $(0,-1)$
+A downward-opening parabola with vertex $(0,0)$
 {{< /multiplechoice >}}
 
 How do the equations $y=x^2$ and $y=x^2-1$ differ? What is the difference
@@ -503,8 +503,8 @@ upward.
   hint="Find the value and sign of $a$, the coefficient of $x^2$."
   answer="Downward"
 >}}
-Downward
 Upward
+Downward
 {{< /multiplechoice >}}
 
 ## Find the axis of symmetry and vertex of a parabola
@@ -1765,8 +1765,8 @@ are $(2.5,0)$ and $(-0.6,0)$. Graph the parabola using the points found.
   answer="Vertex $(-1,-2)$; opens upward"
 >}}
 Vertex $(-1,-2)$; opens upward
-Vertex $(1,-2)$; opens upward
 Vertex $(-1,2)$; opens downward
+Vertex $(1,-2)$; opens upward
 {{< /multiplechoice >}}
 
 ## Solve maximum and minimum applications
@@ -1995,8 +1995,8 @@ point where $x=0$.
   answer="downward"
   hint="Find the sign of $a$, the coefficient of $x^2$."
 >}}
-upward
 downward
+upward
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -2059,9 +2059,9 @@ downward
   answer="zero"
   hint="Evaluate the discriminant $b^2-4ac$ and check whether it is positive, zero, or negative."
 >}}
-zero
-one
 two
+one
+zero
 {{< /multiplechoice >}}
 
 {{< fillin

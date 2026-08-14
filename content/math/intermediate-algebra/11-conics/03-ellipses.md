@@ -534,10 +534,10 @@ perpendicular line through the center is the **minor axis**.
   answer="$\tfrac{(x-2)^2}{9}+\tfrac{(y-3)^2}{25}=1$"
   hint="Group the $x$- and $y$-terms, complete both squares, then divide through so the right side is $1$. Each denominator is $225$ divided by that term's leading coefficient."
 >}}
-$\tfrac{(x-2)^2}{9}+\tfrac{(y-3)^2}{25}=1$
-$\tfrac{(x-2)^2}{25}+\tfrac{(y-3)^2}{9}=1$
-$\tfrac{(x+2)^2}{9}+\tfrac{(y+3)^2}{25}=1$
 $\tfrac{(x-2)^2}{9}-\tfrac{(y-3)^2}{25}=1$
+$\tfrac{(x-2)^2}{9}+\tfrac{(y-3)^2}{25}=1$
+$\tfrac{(x+2)^2}{9}+\tfrac{(y+3)^2}{25}=1$
+$\tfrac{(x-2)^2}{25}+\tfrac{(y-3)^2}{9}=1$
 {{< /multiplechoice >}}
 
 {{< fillin

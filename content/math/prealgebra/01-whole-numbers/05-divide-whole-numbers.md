@@ -68,6 +68,7 @@ $$24 \div 8 = 3$$
 {{< fillin
   question="To model $24 \div 6$, you start with 24 counters and form groups of 6. How many groups do you make?"
   answer="4"
+  answerForm="decimal"
   hint="How many times can you take 6 counters away from 24 before you run out?"
 >}}
 
@@ -257,10 +258,10 @@ the bracket notation.
   answer="fifty-four divided by nine; the quotient of fifty-four and nine"
   hint="Read the dividend first, then the divisor — the division sign is read as *divided by*."
 >}}
-fifty-four divided by nine; the quotient of fifty-four and nine
+fifty-four minus nine; the difference of fifty-four and nine
 nine divided by fifty-four; the quotient of nine and fifty-four
 fifty-four times nine; the product of fifty-four and nine
-fifty-four minus nine; the difference of fifty-four and nine
+fifty-four divided by nine; the quotient of fifty-four and nine
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -268,10 +269,10 @@ fifty-four minus nine; the difference of fifty-four and nine
   answer="thirty-two divided by eight; the quotient of thirty-two and eight"
   hint="In fraction form the top number is the dividend and the bottom number is the divisor."
 >}}
-thirty-two divided by eight; the quotient of thirty-two and eight
-eight divided by thirty-two; the quotient of eight and thirty-two
-thirty-two plus eight; the sum of thirty-two and eight
 thirty-two times eight; the product of thirty-two and eight
+thirty-two plus eight; the sum of thirty-two and eight
+eight divided by thirty-two; the quotient of eight and thirty-two
+thirty-two divided by eight; the quotient of thirty-two and eight
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -279,10 +280,10 @@ thirty-two times eight; the product of thirty-two and eight
   answer="sixty-three divided by seven; the quotient of sixty-three and seven"
   hint="With the long division bracket, the number *under* the bracket is the dividend, so it is named first."
 >}}
-sixty-three divided by seven; the quotient of sixty-three and seven
-seven divided by sixty-three; the quotient of seven and sixty-three
-sixty-three times seven; the product of sixty-three and seven
 sixty-three minus seven; the difference of sixty-three and seven
+seven divided by sixty-three; the quotient of seven and sixty-three
+sixty-three divided by seven; the quotient of sixty-three and seven
+sixty-three times seven; the product of sixty-three and seven
 {{< /multiplechoice >}}
 
 ### Model division of whole numbers
@@ -304,6 +305,7 @@ sixty-three minus seven; the difference of sixty-three and seven
 {{< fillin
   question="The counters above model $15 \div 5$ — fifteen counters separated into groups of five. What is the quotient?"
   answer="3"
+  answerForm="decimal"
   hint="The divisor tells you how many counters go in each group; the quotient is the number of groups you can count."
 >}}
 
@@ -347,9 +349,9 @@ sixty-three minus seven; the difference of sixty-three and seven
   answer="undefined"
   hint="Ask yourself what number multiplied by 0 could give 5."
 >}}
-0
-1
 5
+1
+0
 undefined
 {{< /multiplechoice >}}
 
@@ -373,10 +375,10 @@ undefined
   answer="352 R6"
   hint="To check a division with a remainder, multiply the quotient by the divisor and then add the remainder."
 >}}
-352 R6
-352 R4
-351 R6
 353 R1
+351 R6
+352 R4
+352 R6
 {{< /multiplechoice >}}
 
 {{< fillin

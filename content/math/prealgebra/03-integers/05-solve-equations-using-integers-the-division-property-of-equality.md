@@ -218,8 +218,8 @@ equation by the same nonzero number preserves equality.
   answer="no"
   hint="Substitute $-2$ for $x$ and simplify $4(-2) - 2$, then compare that value with $6$."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -236,8 +236,8 @@ no
   answer="yes"
   hint="Substitute $2$ for $x$. If $4(2) - 2$ gives exactly $6$, the equation is true and the number is a solution."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -263,8 +263,8 @@ no
   answer="yes"
   hint="Substitute $-10$ for $a$, multiply first, then add $27$ and compare the result with $-63$."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ### Solve equations with integers using the Addition and Subtraction Properties of Equality

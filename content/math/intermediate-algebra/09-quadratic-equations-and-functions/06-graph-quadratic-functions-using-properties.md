@@ -1238,9 +1238,9 @@ the equation. There are no $x$-intercepts.
   answer="none"
   hint="Evaluate $b^2-4ac$."
 >}}
-two
 one
 none
+two
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -2958,8 +2958,8 @@ downward
   answer="downward"
   hint="Look at the sign of the coefficient of $x^2$."
 >}}
-upward
 downward
+upward
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -2967,8 +2967,8 @@ downward
   answer="upward"
   hint="Look at the sign of the coefficient of $x^2$."
 >}}
-upward
 downward
+upward
 {{< /multiplechoice >}}
 
 ### Find the Axis of Symmetry and Vertex of a Parabola
@@ -3029,8 +3029,8 @@ downward
   answer="none"
   hint="Evaluate the discriminant $b^2-4ac$."
 >}}
-two
 one
+two
 none
 {{< /multiplechoice >}}
 

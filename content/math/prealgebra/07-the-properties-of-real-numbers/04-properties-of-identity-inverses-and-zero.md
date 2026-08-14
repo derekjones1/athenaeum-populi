@@ -341,8 +341,8 @@ nonzero number is $0$; but division *by* zero is undefined.
   answer="identity property of multiplication"
   hint="Look at what is being combined with the number: adding $0$ signals the additive identity, multiplying by $1$ signals the multiplicative identity."
 >}}
-identity property of addition
 identity property of multiplication
+identity property of addition
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -399,8 +399,8 @@ identity property of multiplication
   hint="Ask whether any number multiplied by the denominator could give the numerator."
 >}}
 $0$
-$6$
 undefined
+$6$
 {{< /multiplechoice >}}
 
 ### Simplify expressions using the properties of identities, inverses, and zero
@@ -425,8 +425,8 @@ undefined
   hint="Check whether the zero is in the numerator or the denominator — only one of those positions gives an answer."
 >}}
 $0$
-$28 - 9b$
 undefined
+$28 - 9b$
 {{< /multiplechoice >}}
 
 {{< fillin

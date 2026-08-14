@@ -83,8 +83,8 @@ it is *not* a solution to the system.
   hint="Substitute $x = 3$, $y = -1$ into both inequalities. If even one comes out false, the pair is not a solution."
   answer="no"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -92,8 +92,8 @@ no
   hint="Substitute $x = 6$, $y = -3$ into both inequalities and check that both come out true."
   answer="yes"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ## Solve a System of Linear Inequalities by Graphing
@@ -402,8 +402,8 @@ individual inequalities overlap.
   answer="yes"
   hint="Substitute $x=3$ and $y=-3$ into both inequalities. The pair is a solution only if both statements are true."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -411,8 +411,8 @@ no
   answer="no"
   hint="Substitute $x=7$ and $y=1$ into both inequalities. One false statement is enough to rule out the pair."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ### Solve a system of linear inequalities by graphing
@@ -422,8 +422,8 @@ no
   answer="no solution"
   hint="Graph the parallel boundary lines, using a dashed line for the strict inequality and a solid line for the inclusive inequality, then check whether the shaded half-planes overlap."
 >}}
-no solution
 a nonempty overlapping region
+no solution
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -452,9 +452,9 @@ $p+l\geq 60$ and $15p+10l\leq 800$
   answer="Both boundary lines are solid, and the region above both lines is shaded."
   hint="Equality is included in both inequalities. Solve each inequality for $l$ to determine which side of each boundary to shade."
 >}}
+Both boundary lines are dashed, and the region above both lines is shaded.
 Both boundary lines are solid, and the region above both lines is shaded.
 Both boundary lines are solid, and the region below both lines is shaded.
-Both boundary lines are dashed, and the region above both lines is shaded.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -471,8 +471,8 @@ no
   answer="yes"
   hint="Substitute $p=50$ and $l=20$ into both $p+l\geq 60$ and $15p+10l\geq 800$."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ---

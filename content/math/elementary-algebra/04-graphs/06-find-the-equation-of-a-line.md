@@ -316,10 +316,10 @@ perpendicular line is $x = -4$.
   hint="A line perpendicular to a vertical line is horizontal, and every horizontal line has slope 0."
   answer="$y = mx + b$ with $m = 0$"
 >}}
-$y = mx + b$ with $m = 0$
+it cannot be written as an equation
 $x = a$
 $y - y_1 = m(x - x_1)$ with $m$ undefined
-it cannot be written as an equation
+$y = mx + b$ with $m = 0$
 {{< /multiplechoice >}}
 
 ## Key terms

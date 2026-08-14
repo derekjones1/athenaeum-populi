@@ -272,6 +272,7 @@ Simplify: (a) $\left(6 \sqrt{2}\right) \left(3 \sqrt{10}\right)$ (b) $\left(-5 \
 {{< fillin
   question="Simplify: $\left(3 \sqrt{2}\right) \left(2 \sqrt{30}\right)$"
   answer="12 \sqrt{15}"
+  answerForm="simplified-radical"
   answerDisplay="$12 \sqrt{15}$"
   hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
 >}}
@@ -279,6 +280,7 @@ Simplify: (a) $\left(6 \sqrt{2}\right) \left(3 \sqrt{10}\right)$ (b) $\left(-5 \
 {{< fillin
   question="Simplify: $\left(2 \sqrt[3]{18}\right) \left(-3 \sqrt[3]{6}\right)$"
   answer="-18 \sqrt[3]{4}"
+  answerForm="simplified-radical"
   answerDisplay="$-18 \sqrt[3]{4}$"
   hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
 >}}
@@ -286,6 +288,7 @@ Simplify: (a) $\left(6 \sqrt{2}\right) \left(3 \sqrt{10}\right)$ (b) $\left(-5 \
 {{< fillin
   question="Simplify: $\left(3 \sqrt{3}\right) \left(3 \sqrt{6}\right)$"
   answer="27 \sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$27 \sqrt{2}$"
   hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
 >}}
@@ -327,6 +330,7 @@ Simplify: (a) $\left(10 \sqrt{6 p^{3}}\right) \left(4 \sqrt{3 p}\right)$ (b) $\l
 {{< fillin
   question="Simplify: $\left(-4 \sqrt[4]{12 y^{3}}\right) \left(- \sqrt[4]{8 y^{3}}\right)$"
   answer="8 y \sqrt[4]{6 y^{2}}"
+  answerForm="simplified-radical"
   answerDisplay="$8 y \sqrt[4]{6 y^{2}}$"
   hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
 >}}
@@ -369,6 +373,7 @@ Simplify: (a) $\sqrt{6 } \left(\sqrt{2} + \sqrt{18}\right)$ (b) $\sqrt[3]{9} \le
 {{< fillin
   question="Simplify: $\sqrt{6} \left(1 + 3 \sqrt{6}\right)$"
   answer="18 + \sqrt{6}"
+  answerForm="simplified-radical"
   answerDisplay="$18 + \sqrt{6}$"
   hint="Distribute the radical factor, multiply radicands, simplify, and then combine like radical terms."
 >}}
@@ -376,6 +381,7 @@ Simplify: (a) $\sqrt{6 } \left(\sqrt{2} + \sqrt{18}\right)$ (b) $\sqrt[3]{9} \le
 {{< fillin
   question="Simplify: $\sqrt[3]{4} \left(-2 - \sqrt[3]{6}\right)$"
   answer="-2 \sqrt[3]{4} - 2 \sqrt[3]{3}"
+  answerForm="simplified-radical"
   answerDisplay="$-2 \sqrt[3]{4} - 2 \sqrt[3]{3}$"
   hint="Distribute the radical factor, multiply radicands, simplify, and then combine like radical terms."
 >}}
@@ -414,6 +420,7 @@ Simplify: (a) $\left(3 - 2 \sqrt{7}\right) \left(4 - 2 \sqrt{7}\right)$ (b) $\le
 {{< fillin
   question="Simplify: $\left(6 - 3 \sqrt{7}\right) \left(3 + 4 \sqrt{7}\right)$"
   answer="-66 + 15 \sqrt{7}"
+  answerForm="simplified-radical"
   answerDisplay="$-66 + 15 \sqrt{7}$"
   hint="Distribute the binomials carefully; if they are conjugates, the radical middle terms cancel."
 >}}
@@ -421,6 +428,7 @@ Simplify: (a) $\left(3 - 2 \sqrt{7}\right) \left(4 - 2 \sqrt{7}\right)$ (b) $\le
 {{< fillin
   question="Simplify: $\left(\sqrt[3]{x} - 2\right) \left(\sqrt[3]{x} - 3\right)$"
   answer="\sqrt[3]{x^{2}} - 5 \sqrt[3]{x} + 6"
+  answerForm="simplified-radical"
   answerDisplay="$\sqrt[3]{x^{2}} - 5 \sqrt[3]{x} + 6$"
   hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
 >}}
@@ -428,6 +436,7 @@ Simplify: (a) $\left(3 - 2 \sqrt{7}\right) \left(4 - 2 \sqrt{7}\right)$ (b) $\le
 {{< fillin
   question="Simplify: $\left(2 - 3 \sqrt{11}\right) \left(4 - \sqrt{11}\right)$"
   answer="41 - 14 \sqrt{11}"
+  answerForm="simplified-radical"
   answerDisplay="$41 - 14 \sqrt{11}$"
   hint="Distribute every term, multiply radicals with the same index, and combine like radical terms."
 >}}
@@ -446,6 +455,7 @@ Simplify: $\left(3 \sqrt{2} - \sqrt{5}\right) \left(\sqrt{2} + 4 \sqrt{5}\right)
 {{< fillin
   question="Simplify: $\left(5 \sqrt{3} - \sqrt{7}\right) \left(\sqrt{3} + 2 \sqrt{7}\right)$"
   answer="1 + 9 \sqrt{21}"
+  answerForm="simplified-radical"
   answerDisplay="$1 + 9 \sqrt{21}$"
   hint="Distribute the binomials carefully; if they are conjugates, the radical middle terms cancel."
 >}}
@@ -494,6 +504,7 @@ Be sure to include the $2 a b$ term when squaring a binomial.
 {{< fillin
   question="Simplify: $\left(10 + \sqrt{2}\right)^{2}$"
   answer="102 + 20 \sqrt{2}"
+  answerForm="simplified-radical"
   answerDisplay="$102 + 20 \sqrt{2}$"
   hint="Distribute the radical factor, multiply radicands, simplify, and then combine like radical terms."
 >}}
@@ -501,6 +512,7 @@ Be sure to include the $2 a b$ term when squaring a binomial.
 {{< fillin
   question="Simplify: $\left(1 + 3 \sqrt{6}\right)^{2}$"
   answer="55 + 6 \sqrt{6}"
+  answerForm="simplified-radical"
   answerDisplay="$55 + 6 \sqrt{6}$"
   hint="Distribute the radical factor, multiply radicands, simplify, and then combine like radical terms."
 >}}
@@ -508,6 +520,7 @@ Be sure to include the $2 a b$ term when squaring a binomial.
 {{< fillin
   question="Simplify: $\left(6 - \sqrt{5}\right)^{2}$"
   answer="41 - 12 \sqrt{5}"
+  answerForm="simplified-radical"
   answerDisplay="$41 - 12 \sqrt{5}$"
   hint="Distribute the radical factor, multiply radicands, simplify, and then combine like radical terms."
 >}}
@@ -528,6 +541,7 @@ Simplify: $\left(5 - 2 \sqrt{3}\right) \left(5 + 2 \sqrt{3}\right).$
 {{< fillin
   question="Simplify: $\left(3 - 2 \sqrt{5}\right) \left(3 + 2 \sqrt{5}\right)$"
   answer="-11"
+  answerForm="decimal"
   answerDisplay="$-11$"
   hint="Distribute the binomials carefully; if they are conjugates, the radical middle terms cancel."
 >}}
@@ -535,6 +549,7 @@ Simplify: $\left(5 - 2 \sqrt{3}\right) \left(5 + 2 \sqrt{3}\right).$
 {{< fillin
   question="Simplify: $\left(4 + 5 \sqrt{7}\right) \left(4 - 5 \sqrt{7}\right)$"
   answer="-159"
+  answerForm="decimal"
   answerDisplay="$-159$"
   hint="Distribute the binomials carefully; if they are conjugates, the radical middle terms cancel."
 >}}

@@ -277,6 +277,9 @@ the two independent things it names:
 | `percent` | ends with the $\%$ sign — for "enter the percent, including the % sign" asks, where $0.62$ and $62\%$ are the same value |
 | `rational-exponent` | exponent notation with no radical — the radical→exponent conversions are value-identical by design |
 | `radical` | contains a radical — the mirror conversion, which is otherwise passable by retyping the printed exponent form |
+| `exact` | not a bare decimal numeral — for "give the exact answer" asks, where a full-precision machine decimal is value-equal to the exact form |
+| `summation` | contains a Σ — "write the sum using summation notation" is otherwise passable by retyping the printed expanded sum |
+| `single-logarithm` | exactly one logarithm in one term — "condense to one logarithm" is otherwise passable by retyping the printed multi-log sum |
 | `mixed-number` | a whole number and a proper fraction |
 | `improper-fraction` | $\tfrac{a}{b}$ with $\lvert a\rvert \ge \lvert b\rvert$ |
 | `fraction-or-mixed-number` | either shape — for a source ask that offers the choice |

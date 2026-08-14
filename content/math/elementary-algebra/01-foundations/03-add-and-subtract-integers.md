@@ -147,8 +147,8 @@ It may be helpful to refer to a number line.
   hint="On the number line $15$ is to the right of $7$, and numbers increase to the right."
   answer="$>$"
 >}}
-$<$
 $>$
+$<$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -156,8 +156,8 @@ $>$
   hint="Every negative number is to the left of every positive number on the number line."
   answer="$<$"
 >}}
-$<$
 $>$
+$<$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -165,8 +165,8 @@ $>$
   hint="$-3$ sits to the right of $-7$, since it is closer to zero going in the positive direction."
   answer="$>$"
 >}}
-$<$
 $>$
+$<$
 {{< /multiplechoice >}}
 
 You may have noticed that, on the number line, the negative numbers are a
@@ -916,9 +916,9 @@ number is the same as adding its opposite.
   answer="$<$"
   hint="Simplify $|-6|$ first, then compare it with $-6$."
 >}}
+$=$
 $<$
 $>$
-$=$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -927,8 +927,8 @@ $=$
   hint="Simplify the absolute value on the left before comparing the two sides."
 >}}
 $<$
-$>$
 $=$
+$>$
 {{< /multiplechoice >}}
 
 ### Add integers

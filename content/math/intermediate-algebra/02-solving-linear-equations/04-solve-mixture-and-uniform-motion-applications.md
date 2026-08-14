@@ -670,8 +670,9 @@ trucks 2.5 hours to be 325 miles apart.
 >}}
 
 {{< fillin
-  question="Thanh and Nhat leave their office in Sacramento at the same time. Thanh drives north on I-5 at 72 miles per hour. Nhat drives south on I-5 at 76 miles per hour. How long will it take them to be 330 miles apart?"
+  question="Thanh and Nhat leave their office in Sacramento at the same time. Thanh drives north on I-5 at 72 miles per hour. Nhat drives south on I-5 at 76 miles per hour. How long will it take them to be 330 miles apart? Round your answer to the nearest tenth of an hour."
   answer="2.2"
+  answerForm="decimal"
   answerDisplay="$2.2$ hours"
   hint="Use $72t+76t=330$."
 >}}

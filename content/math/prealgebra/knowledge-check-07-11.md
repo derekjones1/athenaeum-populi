@@ -46,14 +46,18 @@ weight: 13
 {{< fillin
   question="Rewrite the expression $x \cdot 14$ using the commutative property. Enter the resulting expression."
   answer="14x"
+  answerForm="single-term"
   answerDisplay="$x \cdot 14 = 14 \cdot x$"
 >}}
 
-{{< fillin
-  question="Rewrite the expression $(8 \cdot 2) \cdot 5$ using the associative property. Enter the resulting expression."
-  answer="8\cdot(2\cdot5)"
-  answerDisplay="$(8 \cdot 2) \cdot 5 = 8 \cdot (2 \cdot 5)$"
+{{< multiplechoice
+  question="Which expression rewrites $(8 \cdot 2) \cdot 5$ using the associative property?"
+  answer="$8 \cdot (2 \cdot 5)$"
 >}}
+$5 \cdot (8 \cdot 2)$
+$8 \cdot (2 \cdot 5)$
+$(2 \cdot 8) \cdot 5$
+{{< /multiplechoice >}}
 
 {{< fillin
   question="For the number $\tfrac{2}{5}$, find the additive inverse."
@@ -119,8 +123,8 @@ weight: 13
 
 {{< fillin
   question="Janice ran 15 kilometers. Convert this distance to miles. Round to the nearest hundredth of a mile. (1 mile = 1.61 kilometers)"
-  answer="9.317"
-  answerDisplay="9.317 miles"
+  answer="9.32"
+  answerDisplay="9.32 miles"
 >}}
 
 {{< fillin
@@ -473,6 +477,7 @@ weight: 13
 {{< fillin
   question="Convert $5.25 \times 10^{-4}$ to decimal form."
   answer="0.000525"
+  answerForm="decimal"
 >}}
 
 {{< fillin

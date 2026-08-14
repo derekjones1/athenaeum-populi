@@ -106,30 +106,30 @@ $g(x)=\tfrac{x-5}{x^2-2x-8}$.
   question="Solve $\tfrac{6x}{x-6}\le 2$ and write the solution in interval notation."
   answer="$[-3,6)$"
 >}}
+$(-\infty,-3) \cup [6,\infty)$
 $(-\infty,-3] \cup (6,\infty)$
 $[-3,6)$
 $(-3,6]$
-$(-\infty,-3) \cup [6,\infty)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Solve $\tfrac{1}{2}+\tfrac{12}{x^2}\ge\tfrac{5}{x}$ and write the solution in interval notation."
   answer="$(-\infty,0)\cup(0,4]\cup[6,\infty)$"
 >}}
-$(-\infty,0)\cup(0,4]\cup[6,\infty)$
-$(-\infty,4]\cup[6,\infty)$
 $(0,4]\cup[6,\infty)$
 $[4,6]$
+$(-\infty,4]\cup[6,\infty)$
+$(-\infty,0)\cup(0,4]\cup[6,\infty)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Given $R(x)=\tfrac{2}{2x^2+x-15}$, find the values of $x$ that make the function less than or equal to 0."
   answer="$(-3,\tfrac{5}{2})$"
 >}}
-$(-\infty,-3)\cup(\tfrac{5}{2},\infty)$
-$[-3,\tfrac{5}{2}]$
 $(-3,\tfrac{5}{2})$
 $(-\infty,\infty)$
+$[-3,\tfrac{5}{2}]$
+$(-\infty,-3)\cup(\tfrac{5}{2},\infty)$
 {{< /multiplechoice >}}
 
 ## Chapter 8: Roots and Radicals
@@ -211,10 +211,10 @@ Assume all variables are positive.
   question="Simplify: $\tfrac{\sqrt{245xy^{-4}}}{\sqrt{45x^{-4}y^3}}$."
   answer="$\tfrac{7x^2\sqrt{x}}{3\left|y^3\right|\sqrt{y}}$"
 >}}
-$\tfrac{49x^2\sqrt{x}}{9\left|y^3\right|\sqrt{y}}$
-$\tfrac{7x^2\sqrt{x}}{3\left|y^3\right|\sqrt{y}}$
 $\tfrac{7x^2}{3\left|y^3\right|}$
 $\tfrac{7x\sqrt{x}}{3\left|y\right|\sqrt{y}}$
+$\tfrac{49x^2\sqrt{x}}{9\left|y^3\right|\sqrt{y}}$
+$\tfrac{7x^2\sqrt{x}}{3\left|y^3\right|\sqrt{y}}$
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -239,30 +239,30 @@ For the next three questions, use $g(x)=\sqrt{x+2}$.
   question="Find the domain of the function."
   answer="$[-2,\infty)$"
 >}}
-$(-\infty,\infty)$
 $[-2,\infty)$
-$(-2,\infty)$
 $[0,\infty)$
+$(-\infty,\infty)$
+$(-2,\infty)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Which description gives the graph of the function?"
   answer="a square-root curve beginning at $(-2,0)$ and increasing to the right"
 >}}
-a square-root curve beginning at $(-2,0)$ and increasing to the right
+a straight line through $(-2,0)$
 a square-root curve beginning at $(2,0)$ and increasing to the right
 a square-root curve beginning at $(-2,0)$ and decreasing to the right
-a straight line through $(-2,0)$
+a square-root curve beginning at $(-2,0)$ and increasing to the right
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Use the graph to determine the range."
   answer="$[0,\infty)$"
 >}}
-$(-\infty,\infty)$
 $[-2,\infty)$
-$[0,\infty)$
 $(0,\infty)$
+$(-\infty,\infty)$
+$[0,\infty)$
 {{< /multiplechoice >}}
 
 ### 8.8 Use the Complex Number System
@@ -333,9 +333,9 @@ $(0,\infty)$
   question="Use the discriminant to determine the number and type of solutions of $3q^2-10q+12=0$."
   answer="2 complex solutions"
 >}}
-2 real solutions
 1 real solution
 2 complex solutions
+2 real solutions
 {{< /multiplechoice >}}
 
 ### 9.4 Solve Equations in Quadratic Form
@@ -368,8 +368,8 @@ For the next six questions, use $y=-x^2-8x-16$.
   question="Which direction does the parabola open?"
   answer="down"
 >}}
-up
 down
+up
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -425,10 +425,10 @@ down
   question="Solve $2x^2+x-10>0$ algebraically and write the solution in interval notation."
   answer="$(-\infty,-\tfrac{5}{2})\cup(2,\infty)$"
 >}}
-$(-\infty,-\tfrac{5}{2})\cup(2,\infty)$
-$(-\tfrac{5}{2},2)$
-$(-\infty,-2)\cup(\tfrac{5}{2},\infty)$
 $[-\tfrac{5}{2},2]$
+$(-\infty,-\tfrac{5}{2})\cup(2,\infty)$
+$(-\infty,-2)\cup(\tfrac{5}{2},\infty)$
+$(-\tfrac{5}{2},2)$
 {{< /multiplechoice >}}
 
 ## Chapter 10: Exponential and Logarithmic Functions
@@ -460,17 +460,17 @@ For the next three questions, use $f(x)=6x+1$ and $g(x)=8x-3$.
   answer="not a function"
 >}}
 not a function
-a function, but not one-to-one
 a one-to-one function
+a function, but not one-to-one
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="A graph is an increasing exponential curve. Determine whether the graph is the graph of a function and, if so, whether it is one-to-one."
   answer="a one-to-one function"
 >}}
+a one-to-one function
 not a function
 a function, but not one-to-one
-a one-to-one function
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -527,9 +527,9 @@ how much will be in the account in 8 years by each method of compounding?
   question="Which description gives the graph of $y=\log_3 x$?"
   answer="an increasing logarithmic curve with vertical asymptote $x=0$ that passes through $(1,0)$"
 >}}
-an increasing logarithmic curve with vertical asymptote $x=0$ that passes through $(1,0)$
-a decreasing logarithmic curve with vertical asymptote $x=0$ that passes through $(1,0)$
 an increasing exponential curve with horizontal asymptote $y=0$ that passes through $(0,1)$
+a decreasing logarithmic curve with vertical asymptote $x=0$ that passes through $(1,0)$
+an increasing logarithmic curve with vertical asymptote $x=0$ that passes through $(1,0)$
 a straight line through $(1,0)$
 {{< /multiplechoice >}}
 
@@ -557,6 +557,7 @@ a straight line through $(1,0)$
 {{< fillin
   question="Use the properties of logarithms to condense $\tfrac{1}{6}\log x-3\log(x+5)$, simplifying if possible."
   answer="\log\left(\frac{\sqrt[6]{x}}{(x+5)^3}\right)"
+  answerForm="single-logarithm"
   answerDisplay="$\log\left(\tfrac{\sqrt[6]{x}}{(x+5)^3}\right)$"
 >}}
 
@@ -621,9 +622,9 @@ For the next two questions, use the endpoints $(-4,-3)$ and $(-10,-11)$.
   question="Identify the type of graph of $3x^2+3y^2=27$."
   answer="circle"
 >}}
-circle
-parabola
 ellipse
+parabola
+circle
 hyperbola
 {{< /multiplechoice >}}
 
@@ -631,10 +632,10 @@ hyperbola
   question="Which description gives the graph of $3x^2+3y^2=27$?"
   answer="a circle centered at $(0,0)$ with radius 3"
 >}}
-a circle centered at $(0,0)$ with radius 3
 a circle centered at $(0,0)$ with radius 9
-an ellipse with vertices $(0,\pm3)$
 a parabola with vertex $(0,0)$
+a circle centered at $(0,0)$ with radius 3
+an ellipse with vertices $(0,\pm3)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -660,8 +661,8 @@ hyperbola
 >}}
 a circle centered at $(-5,-3)$ with radius 2
 a circle centered at $(5,3)$ with radius 2
-a circle centered at $(-5,-3)$ with radius 4
 an ellipse centered at $(-5,-3)$
+a circle centered at $(-5,-3)$ with radius 4
 {{< /multiplechoice >}}
 
 ### 11.2 Parabolas
@@ -687,9 +688,9 @@ an ellipse centered at $(-5,-3)$
   question="Identify the type of graph of $4x^2+49y^2=196$."
   answer="ellipse"
 >}}
+ellipse
 circle
 parabola
-ellipse
 hyperbola
 {{< /multiplechoice >}}
 
@@ -697,19 +698,19 @@ hyperbola
   question="Which description gives the graph of $4x^2+49y^2=196$?"
   answer="a horizontal ellipse centered at $(0,0)$ with vertices $(\pm7,0)$ and co-vertices $(0,\pm2)$"
 >}}
-a horizontal ellipse centered at $(0,0)$ with vertices $(\pm7,0)$ and co-vertices $(0,\pm2)$
-a vertical ellipse centered at $(0,0)$ with vertices $(0,\pm7)$ and co-vertices $(\pm2,0)$
-a horizontal ellipse centered at $(0,0)$ with vertices $(\pm4,0)$ and co-vertices $(0,\pm49)$
 a circle centered at $(0,0)$ with radius 7
+a horizontal ellipse centered at $(0,0)$ with vertices $(\pm7,0)$ and co-vertices $(0,\pm2)$
+a horizontal ellipse centered at $(0,0)$ with vertices $(\pm4,0)$ and co-vertices $(0,\pm49)$
+a vertical ellipse centered at $(0,0)$ with vertices $(0,\pm7)$ and co-vertices $(\pm2,0)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Identify the type of graph of $\tfrac{x^2}{16}+\tfrac{y^2}{81}=1$."
   answer="ellipse"
 >}}
-circle
-parabola
 ellipse
+parabola
+circle
 hyperbola
 {{< /multiplechoice >}}
 
@@ -718,8 +719,8 @@ hyperbola
   answer="a vertical ellipse centered at $(0,0)$ with vertices $(0,\pm9)$ and co-vertices $(\pm4,0)$"
 >}}
 a vertical ellipse centered at $(0,0)$ with vertices $(0,\pm9)$ and co-vertices $(\pm4,0)$
-a horizontal ellipse centered at $(0,0)$ with vertices $(\pm9,0)$ and co-vertices $(0,\pm4)$
 a vertical ellipse centered at $(0,0)$ with vertices $(0,\pm81)$ and co-vertices $(\pm16,0)$
+a horizontal ellipse centered at $(0,0)$ with vertices $(\pm9,0)$ and co-vertices $(0,\pm4)$
 a circle centered at $(0,0)$ with radius 9
 {{< /multiplechoice >}}
 
@@ -736,19 +737,19 @@ a circle centered at $(0,0)$ with radius 9
   question="Identify the type of graph of $64x^2-9y^2=576$."
   answer="hyperbola"
 >}}
-circle
 parabola
-ellipse
+circle
 hyperbola
+ellipse
 {{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Which description gives the graph of $64x^2-9y^2=576$?"
   answer="a hyperbola centered at $(0,0)$ that opens left and right with vertices $(\pm3,0)$"
 >}}
-a hyperbola centered at $(0,0)$ that opens left and right with vertices $(\pm3,0)$
 a hyperbola centered at $(0,0)$ that opens up and down with vertices $(0,\pm3)$
 an ellipse centered at $(0,0)$ with vertices $(\pm3,0)$
+a hyperbola centered at $(0,0)$ that opens left and right with vertices $(\pm3,0)$
 a hyperbola centered at $(0,0)$ that opens left and right with vertices $(\pm8,0)$
 {{< /multiplechoice >}}
 
@@ -756,10 +757,10 @@ a hyperbola centered at $(0,0)$ that opens left and right with vertices $(\pm8,0
   question="Identify the type of graph of $9x^2-25y^2-36x-50y-214=0$."
   answer="hyperbola"
 >}}
+hyperbola
+ellipse
 circle
 parabola
-ellipse
-hyperbola
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -773,10 +774,10 @@ hyperbola
   question="Which description gives the graph of $9x^2-25y^2-36x-50y-214=0$?"
   answer="a hyperbola centered at $(2,-1)$ that opens left and right with vertices $(-3,-1)$ and $(7,-1)$"
 >}}
+an ellipse centered at $(2,-1)$
+a hyperbola centered at $(-2,1)$ that opens left and right
 a hyperbola centered at $(2,-1)$ that opens left and right with vertices $(-3,-1)$ and $(7,-1)$
 a hyperbola centered at $(2,-1)$ that opens up and down with vertices $(2,-4)$ and $(2,2)$
-a hyperbola centered at $(-2,1)$ that opens left and right
-an ellipse centered at $(2,-1)$
 {{< /multiplechoice >}}
 
 ### 11.5 Solve Systems of Nonlinear Equations
@@ -861,9 +862,9 @@ $324,108,36,12,4,\tfrac{4}{3},\ldots$.
   question="Determine if the sequence is arithmetic, geometric, or neither."
   answer="geometric"
 >}}
+neither
 arithmetic
 geometric
-neither
 {{< /multiplechoice >}}
 
 {{< fillin

@@ -200,6 +200,7 @@ square. This means $\sqrt{44}$ is irrational.
 {{< fillin
   question="Evaluate $\sqrt{81}$."
   answer="9"
+  answerForm="decimal"
   hint="$81$ is a perfect square: $9 \cdot 9 = 81$."
 >}}
 
@@ -327,8 +328,8 @@ number that is either rational or irrational.
   answer="rational"
   hint="Decide whether the decimal stops, repeats, or does neither."
 >}}
-rational
 irrational
+rational
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -336,8 +337,8 @@ irrational
   answer="rational"
   hint="The bar over the $3$ says that digit repeats forever, so the decimal never stops but does settle into a pattern."
 >}}
-rational
 irrational
+rational
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -345,8 +346,8 @@ irrational
   answer="irrational"
   hint="The ellipsis says the decimal keeps going, and no block of digits repeats."
 >}}
-rational
 irrational
+rational
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -363,8 +364,8 @@ irrational
   answer="irrational"
   hint="$5^2 = 25$ and $6^2 = 36$, so check whether $30$ lands on a perfect square."
 >}}
-rational
 irrational
+rational
 {{< /multiplechoice >}}
 
 ### Classify different types of real numbers

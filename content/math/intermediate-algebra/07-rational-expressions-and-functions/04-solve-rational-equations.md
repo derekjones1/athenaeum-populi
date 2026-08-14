@@ -264,8 +264,8 @@ solution to this equation.
   answer="No solution"
 >}}
 No solution
-$x=2$
 $x=5$
+$x=2$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -273,8 +273,8 @@ $x=5$
   hint="Factor $y^2+3y-4$, clear fractions, and check whether the result is excluded."
   answer="No solution"
 >}}
-No solution
 $y=-4$
+No solution
 $y=1$
 {{< /multiplechoice >}}
 
@@ -343,8 +343,8 @@ solution.
   hint="Factor every denominator, clear fractions, and compare both algebraic solutions with the excluded values."
   answer="No solution"
 >}}
-No solution
 $y=2$
+No solution
 $y=-2$
 {{< /multiplechoice >}}
 
@@ -391,9 +391,9 @@ algebraic solution is extraneous. There is no solution to this equation.
   hint="Factor the quadratic denominator and compare the algebraic solution with the excluded values."
   answer="No solution"
 >}}
+$x=-3$
 No solution
 $x=2$
-$x=-3$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -402,8 +402,8 @@ $x=-3$
   answer="No solution"
 >}}
 No solution
-$x=1$
 $x=-2$
+$x=1$
 {{< /multiplechoice >}}
 
 ## Use rational functions
@@ -586,9 +586,9 @@ equation to be undefined.
   hint="Factor the quadratic denominator, clear fractions, and compare the algebraic solution with the excluded values."
   answer="No solution"
 >}}
-No solution
-$v=1$
 $v=4$
+$v=1$
+No solution
 {{< /multiplechoice >}}
 
 ### Use rational functions

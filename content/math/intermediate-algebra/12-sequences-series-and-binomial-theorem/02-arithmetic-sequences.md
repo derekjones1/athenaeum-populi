@@ -114,40 +114,40 @@ Determine whether each sequence is arithmetic. If so, indicate the common
 difference.
 
 {{< multiplechoice question="For $9,20,31,42,53,64,\ldots$, which statement is correct?" answer="The sequence is arithmetic with common difference $d=11$." hint="Subtract each term from the term that follows it." >}}
+The sequence is not arithmetic.
 The sequence is arithmetic with common difference $d=11$.
 The sequence is arithmetic with common difference $d=9$.
-The sequence is not arithmetic.
 {{< /multiplechoice >}}
 
 {{< multiplechoice question="For $12,6,0,-6,-12,-18,\ldots$, which statement is correct?" answer="The sequence is arithmetic with common difference $d=-6$." hint="Subtract each term from the term that follows it." >}}
 The sequence is arithmetic with common difference $d=-6$.
-The sequence is arithmetic with common difference $d=6$.
 The sequence is not arithmetic.
+The sequence is arithmetic with common difference $d=6$.
 {{< /multiplechoice >}}
 
 {{< multiplechoice question="For $7,1,10,4,13,7,\ldots$, which statement is correct?" answer="The sequence is not arithmetic." hint="Compare all the consecutive differences." >}}
-The sequence is arithmetic with common difference $d=-6$.
 The sequence is arithmetic with common difference $d=9$.
 The sequence is not arithmetic.
+The sequence is arithmetic with common difference $d=-6$.
 {{< /multiplechoice >}}
 
 Apply the same test to each sequence in the next set.
 
 {{< multiplechoice question="For $-4,4,2,10,8,16,\ldots$, which statement is correct?" answer="The sequence is not arithmetic." hint="Compare all the consecutive differences." >}}
-The sequence is arithmetic with common difference $d=8$.
 The sequence is arithmetic with common difference $d=-2$.
+The sequence is arithmetic with common difference $d=8$.
 The sequence is not arithmetic.
 {{< /multiplechoice >}}
 
 {{< multiplechoice question="For $-3,-1,1,3,5,7,\ldots$, which statement is correct?" answer="The sequence is arithmetic with common difference $d=2$." hint="Subtract each term from the term that follows it." >}}
+The sequence is not arithmetic.
 The sequence is arithmetic with common difference $d=2$.
 The sequence is arithmetic with common difference $d=-2$.
-The sequence is not arithmetic.
 {{< /multiplechoice >}}
 
 {{< multiplechoice question="For $7,2,-3,-8,-13,-18,\ldots$, which statement is correct?" answer="The sequence is arithmetic with common difference $d=-5$." hint="Subtract each term from the term that follows it." >}}
-The sequence is arithmetic with common difference $d=-5$.
 The sequence is arithmetic with common difference $d=5$.
+The sequence is arithmetic with common difference $d=-5$.
 The sequence is not arithmetic.
 {{< /multiplechoice >}}
 
@@ -537,15 +537,15 @@ the **common difference**.
 ### Determine if a sequence is arithmetic
 
 {{< multiplechoice question="Determine whether the sequence $4,12,20,28,36,44,\ldots$ is arithmetic." answer="Arithmetic" hint="Subtract each term from the term that follows it and compare the differences." >}}
-Arithmetic
 Not arithmetic
+Arithmetic
 {{< /multiplechoice >}}
 
 {{< fillin question="The sequence $4,12,20,28,36,44,\ldots$ is arithmetic. Find its common difference $d$." answer="8" answerDisplay="$d=8$" hint="Subtract any term from the term that follows it." >}}
 
 {{< multiplechoice question="Determine whether the sequence $-15,-16,3,12,21,30,\ldots$ is arithmetic." answer="Not arithmetic" hint="Compare all the consecutive differences." >}}
-Arithmetic
 Not arithmetic
+Arithmetic
 {{< /multiplechoice >}}
 
 {{< multiplechoice question="Determine whether the sequence $8,5,2,-1,-4,-7,\ldots$ is arithmetic." answer="Arithmetic" hint="Subtract each term from the term that follows it and compare the differences." >}}

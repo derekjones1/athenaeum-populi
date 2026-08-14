@@ -93,21 +93,21 @@ $$
 The sequence is geometric. The common ratio is $r=\tfrac13$.
 
 {{< multiplechoice question="Determine if the sequence $7,21,63,189,567,1{,}701,\ldots$ is geometric. If so, indicate the common ratio." answer="geometric with common ratio $r=3$" hint="Divide each term by the preceding term." >}}
+not geometric
 geometric with common ratio $r=3$
 geometric with common ratio $r=\tfrac13$
-not geometric
 {{< /multiplechoice >}}
 
 {{< multiplechoice question="Determine if the sequence $64,16,4,1,\tfrac14,\tfrac1{16},\ldots$ is geometric. If so, indicate the common ratio." answer="geometric with common ratio $r=\tfrac14$" hint="Divide each term by the preceding term." >}}
-geometric with common ratio $r=4$
 geometric with common ratio $r=\tfrac14$
 not geometric
+geometric with common ratio $r=4$
 {{< /multiplechoice >}}
 
 {{< multiplechoice question="Determine if the sequence $2,4,12,48,240,1{,}440,\ldots$ is geometric. If so, indicate the common ratio." answer="not geometric" hint="Compare several ratios of consecutive terms." >}}
-geometric with common ratio $r=2$
 geometric with common ratio $r=3$
 not geometric
+geometric with common ratio $r=2$
 {{< /multiplechoice >}}
 
 If we know the first term, $a_1$, and the common ratio, $r$, we can list a
@@ -693,8 +693,8 @@ neither
 {{< fillin question="Find the sum of the infinite geometric series $1+\tfrac13+\tfrac19+\tfrac1{27}+\tfrac1{81}+\tfrac1{243}+\tfrac1{729}+\cdots$. Give the exact answer as a fraction." answer="\frac{3}{2}" answerForm="fraction" answerDisplay="$\tfrac32$" hint="Verify that $|r|<1$, then use $S=\tfrac{a_1}{1-r}$." >}}
 
 {{< multiplechoice question="Does the infinite geometric series $6+12+24+48+96+192+\cdots$ have a sum?" answer="no, because $|r|\ge1$" hint="Identify the common ratio and compare $|r|$ with $1$." >}}
-yes, because $|r|<1$
 no, because $|r|\ge1$
+yes, because $|r|<1$
 {{< /multiplechoice >}}
 
 {{< fillin question="Write the repeating decimal $0.\overline3$ as a fraction." answer="\frac{1}{3}" answerForm="fraction" answerDisplay="$\tfrac13$" hint="Write the decimal as an infinite geometric series and use its sum formula." >}}

@@ -127,14 +127,16 @@ percent: $p = 25\%$. So $25\%$ of $36$ is $9$.
 
 {{< fillin
   question="What percent of 76 is 57?"
-  answer="75"
+  answer="75\%"
+  answerForm="percent"
   answerDisplay="75%"
   hint="Translate to $p \cdot 76 = 57$, then divide both sides by $76$ and convert the decimal to a percent."
 >}}
 
 {{< fillin
   question="What percent of 120 is 96?"
-  answer="80"
+  answer="80\%"
+  answerForm="percent"
   answerDisplay="80%"
   hint="Translate to $p \cdot 120 = 96$, then divide both sides by $120$ and convert the decimal to a percent."
 >}}
@@ -147,14 +149,16 @@ percent: $150\% = p$. So $144$ is $150\%$ of $96$.
 
 {{< fillin
   question="110 is what percent of 88?"
-  answer="125"
+  answer="125\%"
+  answerForm="percent"
   answerDisplay="125%"
   hint="Translate to $110 = p \cdot 88$, then divide both sides by $88$ and convert to a percent. The result is over 100%."
 >}}
 
 {{< fillin
   question="126 is what percent of 72?"
-  answer="175"
+  answer="175\%"
+  answerForm="percent"
   answerDisplay="175%"
   hint="Translate to $126 = p \cdot 72$, then divide both sides by $72$ and convert to a percent. The result is over 100%."
 >}}
@@ -248,14 +252,16 @@ $50\%$ makes sense. Of the total calories in each brownie, $50\%$ is fat.
 
 {{< fillin
   question="Veronica is planning to make muffins from a mix. The package says each muffin will be 230 calories and 60 calories will be from fat. What percent of the total calories is from fat? Round to the nearest whole percent."
-  answer="26"
+  answer="26\%"
+  answerForm="percent"
   answerDisplay="26%"
   hint="Translate to $p \cdot 230 = 60$, then divide both sides by $230$ and round the percent to the nearest whole number."
 >}}
 
 {{< fillin
   question="The brownie mix Ricardo plans to use says that each brownie will be 190 calories, and 70 calories are from fat. What percent of the total calories are from fat? Round to the nearest whole percent."
-  answer="37"
+  answer="37\%"
+  answerForm="percent"
   answerDisplay="37%"
   hint="Translate to $p \cdot 190 = 70$, then divide both sides by $190$ and round the percent to the nearest whole number."
 >}}
@@ -293,14 +299,16 @@ over the old fees.
 
 {{< fillin
   question="In 2011, the IRS increased the deductible mileage cost to 55.5 cents from 51 cents. Find the percent increase. Round to the nearest tenth of a percent."
-  answer="8.8"
+  answer="8.8\%"
+  answerForm="percent"
   answerDisplay="8.8%"
   hint="Find the increase ($55.5 - 51 = 4.5$), then find what percent $4.5$ is of $51$."
 >}}
 
 {{< fillin
   question="In 1995, the standard bus fare in Chicago was \$1.50. In 2008, the standard bus fare was \$2.25. Find the percent increase. Round to the nearest tenth of a percent."
-  answer="50"
+  answer="50\%"
+  answerForm="percent"
   answerDisplay="50%"
   hint="Find the increase ($2.25 - 1.50 = 0.75$), then find what percent $0.75$ is of $1.50$."
 >}}
@@ -331,14 +339,16 @@ of gas decreased $1.9\%$.
 
 {{< fillin
   question="The population of one city was about 672,000 in 2010. The population of the city is projected to be about 630,000 in 2020. Find the percent decrease. Round to the nearest tenth of a percent."
-  answer="6.3"
+  answer="6.3\%"
+  answerForm="percent"
   answerDisplay="6.3%"
   hint="Find the decrease ($672{,}000 - 630{,}000 = 42{,}000$), then find what percent $42{,}000$ is of $672{,}000$."
 >}}
 
 {{< fillin
   question="Last year Sheila's salary was \$42,000. Because of furlough days, this year her salary was \$37,800. Find the percent decrease."
-  answer="10"
+  answer="10\%"
+  answerForm="percent"
   answerDisplay="10%"
   hint="Find the decrease ($42{,}000 - 37{,}800 = 4{,}200$), then find what percent $4{,}200$ is of $42{,}000$."
 >}}
@@ -382,14 +392,16 @@ expressed as a percent of the original amount.
 
 {{< fillin
   question="What percent of 1,500 is 540?"
-  answer="36"
+  answer="36\%"
+  answerForm="percent"
   answerDisplay="36%"
   hint="Translate to $p \cdot 1{,}500 = 540$, then divide both sides by $1{,}500$ and convert the decimal to a percent."
 >}}
 
 {{< fillin
   question="840 is what percent of 480?"
-  answer="175"
+  answer="175\%"
+  answerForm="percent"
   answerDisplay="175%"
   hint="Translate to $840 = p \cdot 480$, then divide both sides by $480$. The quotient is greater than $1$, so the percent is over 100%."
 >}}
@@ -419,14 +431,16 @@ expressed as a percent of the original amount.
 
 {{< fillin
   question="The nutrition fact sheet at a fast food restaurant says the fish sandwich has 380 calories, and 171 calories are from fat. What percent of the total calories is from fat?"
-  answer="45"
+  answer="45\%"
+  answerForm="percent"
   answerDisplay="45%"
   hint="Translate to $p \cdot 380 = 171$, then divide both sides by $380$ and convert the decimal to a percent."
 >}}
 
 {{< fillin
   question="Emma gets paid \$3,000 per month. She pays \$750 a month for rent. What percent of her monthly pay goes to rent?"
-  answer="25"
+  answer="25\%"
+  answerForm="percent"
   answerDisplay="25%"
   hint="Translate to $p \cdot 3{,}000 = 750$, then divide both sides by $3{,}000$ and convert the decimal to a percent."
 >}}
@@ -435,35 +449,40 @@ expressed as a percent of the original amount.
 
 {{< fillin
   question="Tamanika got a raise in her hourly pay, from \$15.50 to \$17.55. Find the percent increase. Round to the nearest tenth of a percent."
-  answer="13.2"
+  answer="13.2\%"
+  answerForm="percent"
   answerDisplay="13.2%"
   hint="Find the amount of increase ($17.55 - 15.50 = 2.05$), then find what percent $2.05$ is of the original $15.50$."
 >}}
 
 {{< fillin
   question="Annual student fees at the University of California rose from about \$4,000 in 2000 to about \$9,000 in 2014. Find the percent increase."
-  answer="125"
+  answer="125\%"
+  answerForm="percent"
   answerDisplay="125%"
   hint="Find the increase ($9{,}000 - 4{,}000 = 5{,}000$), then find what percent $5{,}000$ is of the original $4{,}000$."
 >}}
 
 {{< fillin
   question="According to Time magazine (7/19/2011), annual global seafood consumption rose from 22 pounds per person in 1960 to 38 pounds per person today. Find the percent increase. Round to the nearest tenth of a percent."
-  answer="72.7"
+  answer="72.7\%"
+  answerForm="percent"
   answerDisplay="72.7%"
   hint="Find the increase ($38 - 22 = 16$), then find what percent $16$ is of the original $22$."
 >}}
 
 {{< fillin
   question="A grocery store reduced the price of a loaf of bread from \$2.80 to \$2.73. Find the percent decrease."
-  answer="2.5"
+  answer="2.5\%"
+  answerForm="percent"
   answerDisplay="2.5%"
   hint="Find the amount of decrease ($2.80 - 2.73 = 0.07$), then find what percent $0.07$ is of the original $2.80$."
 >}}
 
 {{< fillin
   question="Hernando's salary was \$49,500 last year. This year his salary was cut to \$44,055. Find the percent decrease."
-  answer="11"
+  answer="11\%"
+  answerForm="percent"
   answerDisplay="11%"
   hint="Find the decrease ($49{,}500 - 44{,}055 = 5{,}445$), then find what percent $5{,}445$ is of the original $49{,}500$."
 >}}

@@ -832,10 +832,10 @@ requires calculus.)
   answer="$(-\infty,-1)\cup(5,\infty)$"
   hint="The graph turns at the two local extrema, $x=-1$ and $x=5$; it climbs outside them."
 >}}
-$(-\infty,-1)\cup(5,\infty)$
-$(-1,5)$
-$(-\infty,-1)$
 $(5,\infty)$
+$(-\infty,-1)$
+$(-1,5)$
+$(-\infty,-1)\cup(5,\infty)$
 {{< /multiplechoice >}}
 
 **Example.** For the function $f$ whose graph is shown below, find all local
@@ -1172,9 +1172,9 @@ interval.
   hint="Find where $f'(x)=4x^3-12x^2=4x^2(x-3)$ changes sign from negative to positive."
 >}}
 $(3,\infty)$
-$(-\infty,3)$
 $(-\infty,0)\cup(3,\infty)$
 $(0,3)$
+$(-\infty,3)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1182,10 +1182,10 @@ $(0,3)$
   answer="$(-3,-2)$"
   hint="Check the sign of $g$ just to the right of $t=-3$ and just left of $t=-2$."
 >}}
-$(-3,-2)$
-$(-2,\infty)$
 $(-\infty,-3)$
 $(-3,\infty)$
+$(-2,\infty)$
+$(-3,-2)$
 {{< /multiplechoice >}}
 
 ### Use a graph to locate local maxima and local minima
@@ -1266,10 +1266,10 @@ $(-3,\infty)$
   answer="local maximum $(-3, 50)$; local minimum $(3, -50)$"
   hint="Read the highest point on the left hump and the lowest point on the right dip."
 >}}
-local maximum $(-3, 50)$; local minimum $(3, -50)$
+local maximum $(0, 0)$; local minimum $(3, -50)$
 local maximum $(3, 50)$; local minimum $(-3, -50)$
 local maximum $(-3, -50)$; local minimum $(3, 50)$
-local maximum $(0, 0)$; local minimum $(3, -50)$
+local maximum $(-3, 50)$; local minimum $(3, -50)$
 {{< /multiplechoice >}}
 
 ### Use a graph to locate the absolute maximum and absolute minimum
@@ -1346,10 +1346,10 @@ local maximum $(0, 0)$; local minimum $(3, -50)$
   answer="absolute maximum $\approx(7, 150)$; absolute minimum $\approx(-7.5, -220)$"
   hint="Over a closed domain, the absolute extrema often occur at the endpoints rather than at the interior humps."
 >}}
-absolute maximum $\approx(7, 150)$; absolute minimum $\approx(-7.5, -220)$
-absolute maximum $\approx(-3, 50)$; absolute minimum $\approx(2, -50)$
 absolute maximum $\approx(-7.5, -220)$; absolute minimum $\approx(7, 150)$
 absolute maximum $\approx(7, 150)$; absolute minimum $\approx(2, -50)$
+absolute maximum $\approx(7, 150)$; absolute minimum $\approx(-7.5, -220)$
+absolute maximum $\approx(-3, 50)$; absolute minimum $\approx(2, -50)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1357,10 +1357,10 @@ absolute maximum $\approx(7, 150)$; absolute minimum $\approx(2, -50)$
   answer="The absolute maximum and minimum relate to the entire graph, whereas the local extrema relate only to a specific region around an open interval."
   hint="Absolute extrema compare the whole domain; local extrema compare only a nearby interval."
 >}}
-The absolute maximum and minimum relate to the entire graph, whereas the local extrema relate only to a specific region around an open interval.
 The absolute maximum and minimum relate only to a specific region around an open interval, whereas the local extrema relate to the entire graph.
-There is no difference; the terms are interchangeable.
 The absolute maximum and minimum only exist for polynomial functions, while local extrema exist for all functions.
+The absolute maximum and minimum relate to the entire graph, whereas the local extrema relate only to a specific region around an open interval.
+There is no difference; the terms are interchangeable.
 {{< /multiplechoice >}}
 
 ---

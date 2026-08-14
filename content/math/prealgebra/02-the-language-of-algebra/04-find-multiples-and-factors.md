@@ -44,8 +44,8 @@ $0, 2, 4, 6, 8$ — yes.
   answer="no"
   hint="Check the last digit: is it $0$, $2$, $4$, $6$, or $8$?"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -53,8 +53,8 @@ no
   answer="yes"
   hint="Check the last digit: is it $5$ or $0$?"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 The pattern for multiples of $3$ is different — it isn't about the last
@@ -123,8 +123,8 @@ no
   answer="no"
   hint="Check the last digit of $7{,}248$ — is it $5$ or $0$?"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ## Find all the factors of a number
@@ -277,8 +277,8 @@ $1$ and itself. **composite number** — a counting number that is not prime.
 >}}
 5 only
 3 and 5
-2, 3, and 5
 3, 5, and 6
+2, 3, and 5
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -286,9 +286,9 @@ $1$ and itself. **composite number** — a counting number that is not prime.
   answer="2, 5, and 10"
   hint="The last digit is $0$. Check the digit sum $3 + 5 + 0$ before claiming $3$ or $6$, and divide by $4$ to test that one."
 >}}
+2, 3, 5, and 10
 5 and 10
 2, 5, and 10
-2, 3, 5, and 10
 2, 5, 6, and 10
 {{< /multiplechoice >}}
 
@@ -297,10 +297,10 @@ $1$ and itself. **composite number** — a counting number that is not prime.
   answer="2, 3, 4, 5, 6, and 10"
   hint="Check the last digit for $2$, $5$, and $10$; sum the digits for $3$; a number divisible by both $2$ and $3$ is divisible by $6$. The table has no test for $4$ — divide to check it."
 >}}
-2, 3, 5, 6, and 10
-2, 3, 4, 6, and 10
 2, 4, 5, and 10
 2, 3, 4, 5, 6, and 10
+2, 3, 4, 6, and 10
+2, 3, 5, 6, and 10
 {{< /multiplechoice >}}
 
 ### Find all the factors of a number
@@ -336,8 +336,8 @@ $1$ and itself. **composite number** — a counting number that is not prime.
   answer="prime"
   hint="Test the primes $2$, $3$, and $5$ — once the quotient falls below the divisor you can stop."
 >}}
-prime
 composite
+prime
 {{< /multiplechoice >}}
 
 {{< multiplechoice

@@ -70,6 +70,7 @@ ten and $7$ ones: $43 - 26 = 17$.
 {{< fillin
   question="To model $12 - 7$, you exchange the 1 tens rod for 10 ones, making 12 ones. How many ones blocks remain after you take 7 away?"
   answer="5"
+  answerForm="decimal"
   hint="Start with 12 ones and take away 7 of them."
 >}}
 
@@ -221,10 +222,10 @@ $10$ in the current place so a column can be subtracted.
   answer="fifteen minus nine; the difference of fifteen and nine"
   hint="Read the minus sign as minus, and name the result of a subtraction the difference — in the same order the expression is written."
 >}}
-fifteen minus nine; the difference of fifteen and nine
 nine minus fifteen; the difference of nine and fifteen
 fifteen plus nine; the sum of fifteen and nine
 fifteen times nine; the product of fifteen and nine
+fifteen minus nine; the difference of fifteen and nine
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -232,10 +233,10 @@ fifteen times nine; the product of fifteen and nine
   answer="forty-two minus thirty-five; the difference of forty-two and thirty-five"
   hint="Keep the numbers in the order they appear, and check that the result word matches the minus sign."
 >}}
-forty-two plus thirty-five; the sum of forty-two and thirty-five
-thirty-five minus forty-two; the difference of thirty-five and forty-two
-forty-two minus thirty-five; the difference of forty-two and thirty-five
 forty-two minus thirty-five; the sum of forty-two and thirty-five
+forty-two minus thirty-five; the difference of forty-two and thirty-five
+thirty-five minus forty-two; the difference of thirty-five and forty-two
+forty-two plus thirty-five; the sum of forty-two and thirty-five
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -243,10 +244,10 @@ forty-two minus thirty-five; the sum of forty-two and thirty-five
   answer="six hundred seventy-five minus three hundred fifty; the difference of six hundred seventy-five and three hundred fifty"
   hint="Name each number in words first, then join them with minus and name the result the difference."
 >}}
-six hundred seventy-five minus three hundred fifty; the sum of six hundred seventy-five and three hundred fifty
 six hundred seventy-five minus three hundred fifty; the difference of six hundred seventy-five and three hundred fifty
-three hundred fifty minus six hundred seventy-five; the difference of three hundred fifty and six hundred seventy-five
 six hundred seventy-five plus three hundred fifty; the sum of six hundred seventy-five and three hundred fifty
+six hundred seventy-five minus three hundred fifty; the sum of six hundred seventy-five and three hundred fifty
+three hundred fifty minus six hundred seventy-five; the difference of three hundred fifty and six hundred seventy-five
 {{< /multiplechoice >}}
 
 ### Model subtraction of whole numbers
@@ -259,6 +260,7 @@ six hundred seventy-five plus three hundred fifty; the sum of six hundred sevent
 {{< fillin
   question="The base-10 blocks above model $6 - 3$. How many blocks are left after the circled blocks are taken away?"
   answer="3"
+  answerForm="decimal"
   hint="Count the blocks that are not circled."
 >}}
 
@@ -292,6 +294,7 @@ six hundred seventy-five plus three hundred fifty; the sum of six hundred sevent
 {{< fillin
   question="The base-10 blocks above model $18 - 5$. What number is left after the circled blocks are taken away?"
   answer="13"
+  answerForm="decimal"
   hint="One whole rod is still there, worth 10, plus the single blocks that were not circled."
 >}}
 
@@ -325,6 +328,7 @@ six hundred seventy-five plus three hundred fifty; the sum of six hundred sevent
 {{< fillin
   question="The base-10 blocks above model $35 - 13$. What number is left after the circled blocks are taken away?"
   answer="22"
+  answerForm="decimal"
   hint="Count the rods that are left as tens and the single blocks that are left as ones."
 >}}
 

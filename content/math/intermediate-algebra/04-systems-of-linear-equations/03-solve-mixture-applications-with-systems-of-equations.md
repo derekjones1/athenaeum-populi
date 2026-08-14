@@ -598,7 +598,7 @@ where the cost and revenue functions are equal, $C(x) = R(x)$.
   hint="The cost line starts at $(0, 6{,}500)$ and climbs by 5 for every bottle; the revenue line starts at the origin and climbs by 10 for every bottle."
   snap="100"
 >}}
-{"answer": {"system": [{"slope": 5, "intercept": 6500}, {"slope": 10, "intercept": 0}]}, "grid": {"xMin": 0, "xMax": 2000, "yMin": 0, "yMax": 20000, "xGridStep": 100, "yGridStep": 1000, "xTickStep": 200, "yTickStep": 2000}}
+{"answer": {"system": [{"slope": 5, "intercept": 6500}, {"slope": 10, "intercept": 0}]}, "grid": {"xMin": 0, "xMax": 2000, "yMin": 0, "yMax": 20000, "xUnit": 0.18, "yUnit": 0.018, "xGridStep": 100, "yGridStep": 1000, "xTickStep": 200, "yTickStep": 2000}}
 {{< /graphplot >}}
 
 {{< fillin

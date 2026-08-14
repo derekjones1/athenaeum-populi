@@ -167,8 +167,8 @@ $(x+5y)(x-2y)$
   hint="List the integer factor pairs of the constant term and test whether any pair has the required middle-term sum."
 >}}
 prime
-$(p+5q)(p+4q)$
 $(p+10q)(p+2q)$
+$(p+5q)(p+4q)$
 {{< /multiplechoice >}}
 
 {{< callout type="info" >}}
@@ -470,9 +470,9 @@ trinomial that cannot be factored over the integers.
   answer="prime"
   hint="List the integer factor pairs of $-14$ and test whether any pair sums to $-3$."
 >}}
-prime
 $(x+2y)(x-7y)$
 $(x-2y)(x+7y)$
+prime
 {{< /multiplechoice >}}
 
 ### Factor trinomials of the form $ax^2+bx+c$ using trial and error

@@ -74,6 +74,7 @@ Write each expression in terms of *i* and simplify if possible:
 {{< fillin
   question="Write each expression in terms of $i$ and simplify if possible: $\sqrt{-81}$"
   answer="9 i"
+  answerForm="expanded"
   answerDisplay="$9 i$"
   hint="Rewrite the negative square root as $i$ times the square root of its absolute value, then simplify."
 >}}
@@ -81,6 +82,7 @@ Write each expression in terms of *i* and simplify if possible:
 {{< fillin
   question="Write each expression in terms of $i$ and simplify if possible: $\sqrt{-5}$"
   answer="\sqrt{5} i"
+  answerForm="simplified-radical"
   answerDisplay="$\sqrt{5} i$"
   hint="Rewrite the negative square root as $i$ times the square root of its absolute value, then simplify."
 >}}
@@ -88,6 +90,7 @@ Write each expression in terms of *i* and simplify if possible:
 {{< fillin
   question="Write each expression in terms of $i$ and simplify if possible: $\sqrt{-18}$"
   answer="3 \sqrt{2} i"
+  answerForm="simplified-radical"
   answerDisplay="$3 \sqrt{2} i$"
   hint="Rewrite the negative square root as $i$ times the square root of its absolute value, then simplify."
 >}}
@@ -345,6 +348,7 @@ To multiply square roots of negative numbers, we first write them as complex num
 {{< fillin
   question="Multiply: $\left(4 - \sqrt{-12}\right) \left(3 - \sqrt{-48}\right)$"
   answer="-12 - 22 \sqrt{3} i"
+  answerForm="simplified-radical"
   answerDisplay="$-12 - 22 \sqrt{3} i$"
   hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
 >}}
@@ -352,6 +356,7 @@ To multiply square roots of negative numbers, we first write them as complex num
 {{< fillin
   question="Multiply: $\left(-2 + \sqrt{-8}\right) \left(3 - \sqrt{-18}\right)$"
   answer="6 + 12 \sqrt{2} i"
+  answerForm="simplified-radical"
   answerDisplay="$6 + 12 \sqrt{2} i$"
   hint="Distribute as with binomials, replace every $i^2$ by $-1$, and combine real and imaginary parts."
 >}}
@@ -498,8 +503,8 @@ Divide, writing the answer in standard form: $\tfrac{-3}{5 + 2 i}.$
 | Step | Result |
 | --- | --- |
 |  | $\frac{-3}{5 + 2 i}$ |
-| Multiply the numerator and denominator by thecomplex conjugate of the denominator. | $\frac{-3 \left(5 - 2 i\right)}{\left(5 + 2 i\right) \left(5 - 2 i\right)}$ |
-| Multiply in the numerator and use the Product ofComplex Conjugates Pattern in the denominator. | $\frac{-15 + 6 i}{5^{2} + 2^{2}}$ |
+| Multiply the numerator and denominator by the complex conjugate of the denominator. | $\frac{-3 \left(5 - 2 i\right)}{\left(5 + 2 i\right) \left(5 - 2 i\right)}$ |
+| Multiply in the numerator and use the Product of Complex Conjugates Pattern in the denominator. | $\frac{-15 + 6 i}{5^{2} + 2^{2}}$ |
 | Simplify. | $\frac{-15 + 6 i}{29}$ |
 | Write in standard form. | $- \frac{15}{29} + \frac{6}{29} i$ |
 

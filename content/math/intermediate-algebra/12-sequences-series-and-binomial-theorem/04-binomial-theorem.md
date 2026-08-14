@@ -171,6 +171,7 @@ $$
 {{< fillin
   question="Use Pascal's Triangle to expand $(x+y)^5$."
   answer="x^5+5x^4y+10x^3y^2+10x^2y^3+5xy^4+y^5"
+  answerForm="expanded"
   answerDisplay="$x^5+5x^4y+10x^3y^2+10x^2y^3+5xy^4+y^5$"
   hint="Use the row of Pascal's Triangle whose second entry is $5$."
 >}}
@@ -178,6 +179,7 @@ $$
 {{< fillin
   question="Use Pascal's Triangle to expand $(p+q)^7$."
   answer="p^7+7p^6q+21p^5q^2+35p^4q^3+35p^3q^4+21p^2q^5+7pq^6+q^7"
+  answerForm="expanded"
   answerDisplay="$p^7+7p^6q+21p^5q^2+35p^4q^3+35p^3q^4+21p^2q^5+7pq^6+q^7$"
   hint="Use the row of Pascal's Triangle whose second entry is $7$."
 >}}
@@ -228,6 +230,7 @@ $$
 {{< fillin
   question="Use Pascal's Triangle to expand $(x+2)^4$."
   answer="x^4+8x^3+24x^2+32x+16"
+  answerForm="expanded"
   answerDisplay="$x^4+8x^3+24x^2+32x+16$"
   hint="Use the coefficients $1,4,6,4,1$ and powers of $2$."
 >}}
@@ -235,6 +238,7 @@ $$
 {{< fillin
   question="Use Pascal's Triangle to expand $(x+1)^6$."
   answer="x^6+6x^5+15x^4+20x^3+15x^2+6x+1"
+  answerForm="expanded"
   answerDisplay="$x^6+6x^5+15x^4+20x^3+15x^2+6x+1$"
   hint="Use the row of Pascal's Triangle whose second entry is $6$."
 >}}
@@ -275,6 +279,7 @@ $$
 {{< fillin
   question="Use Pascal's Triangle to expand $(2x-3)^4$."
   answer="16x^4-96x^3+216x^2-216x+81"
+  answerForm="expanded"
   answerDisplay="$16x^4-96x^3+216x^2-216x+81$"
   hint="In the pattern, use $a=2x$ and $b=-3$."
 >}}
@@ -282,6 +287,7 @@ $$
 {{< fillin
   question="Use Pascal's Triangle to expand $(2x-1)^6$."
   answer="64x^6-192x^5+240x^4-160x^3+60x^2-12x+1"
+  answerForm="expanded"
   answerDisplay="$64x^6-192x^5+240x^4-160x^3+60x^2-12x+1$"
   hint="In the pattern, use $a=2x$ and $b=-1$."
 >}}
@@ -464,6 +470,7 @@ $$
 {{< fillin
   question="Use the Binomial Theorem to expand $(x+y)^5$."
   answer="x^5+5x^4y+10x^3y^2+10x^2y^3+5xy^4+y^5"
+  answerForm="expanded"
   answerDisplay="$x^5+5x^4y+10x^3y^2+10x^2y^3+5xy^4+y^5$"
   hint="Use the binomial coefficients $\binom{5}{r}$."
 >}}
@@ -471,6 +478,7 @@ $$
 {{< fillin
   question="Use the Binomial Theorem to expand $(m+n)^6$."
   answer="m^6+6m^5n+15m^4n^2+20m^3n^3+15m^2n^4+6mn^5+n^6"
+  answerForm="expanded"
   answerDisplay="$m^6+6m^5n+15m^4n^2+20m^3n^3+15m^2n^4+6mn^5+n^6$"
   hint="Use the binomial coefficients $\binom{6}{r}$."
 >}}
@@ -546,6 +554,7 @@ $$
 {{< fillin
   question="Use the Binomial Theorem to expand $(x-3)^5$."
   answer="x^5-15x^4+90x^3-270x^2+405x-243"
+  answerForm="expanded"
   answerDisplay="$x^5-15x^4+90x^3-270x^2+405x-243$"
   hint="In the pattern, use $a=x$ and $b=-3$."
 >}}
@@ -553,6 +562,7 @@ $$
 {{< fillin
   question="Use the Binomial Theorem to expand $(y-1)^6$."
   answer="y^6-6y^5+15y^4-20y^3+15y^2-6y+1"
+  answerForm="expanded"
   answerDisplay="$y^6-6y^5+15y^4-20y^3+15y^2-6y+1$"
   hint="In the pattern, use $a=y$ and $b=-1$."
 >}}
@@ -621,6 +631,7 @@ $$
 {{< fillin
   question="Use the Binomial Theorem to expand $(3x-2y)^5$."
   answer="243x^5-810x^4y+1080x^3y^2-720x^2y^3+240xy^4-32y^5"
+  answerForm="expanded"
   answerDisplay="$243x^5-810x^4y+1080x^3y^2-720x^2y^3+240xy^4-32y^5$"
   hint="In the pattern, use $a=3x$ and $b=-2y$."
 >}}
@@ -628,6 +639,7 @@ $$
 {{< fillin
   question="Use the Binomial Theorem to expand $(4x-3y)^4$."
   answer="256x^4-768x^3y+864x^2y^2-432xy^3+81y^4"
+  answerForm="expanded"
   answerDisplay="$256x^4-768x^3y+864x^2y^2-432xy^3+81y^4$"
   hint="In the pattern, use $a=4x$ and $b=-3y$."
 >}}

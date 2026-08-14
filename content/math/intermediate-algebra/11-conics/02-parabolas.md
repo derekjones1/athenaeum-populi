@@ -103,9 +103,9 @@ So $x=4$ or $x=2$. The $x$-intercepts are $(4,0)$ and $(2,0)$. Graph the parabol
   answer="The parabola opens downward, has axis $x=\tfrac{5}{2}$, vertex $(\tfrac{5}{2},\tfrac{1}{4})$, and x-intercepts $(2,0)$ and $(3,0)$."
   hint="Use $x=-\tfrac{b}{2a}$, then find the intercepts."
 >}}
-The parabola opens downward, has axis $x=\tfrac{5}{2}$, vertex $(\tfrac{5}{2},\tfrac{1}{4})$, and x-intercepts $(2,0)$ and $(3,0)$.
-The parabola opens upward, has axis $x=\tfrac{5}{2}$, vertex $(\tfrac{5}{2},-\tfrac{1}{4})$, and x-intercepts $(2,0)$ and $(3,0)$.
 The parabola opens downward, has axis $x=5$, vertex $(5,-6)$, and x-intercepts $(2,0)$ and $(3,0)$.
+The parabola opens upward, has axis $x=\tfrac{5}{2}$, vertex $(\tfrac{5}{2},-\tfrac{1}{4})$, and x-intercepts $(2,0)$ and $(3,0)$.
+The parabola opens downward, has axis $x=\tfrac{5}{2}$, vertex $(\tfrac{5}{2},\tfrac{1}{4})$, and x-intercepts $(2,0)$ and $(3,0)$.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -113,8 +113,8 @@ The parabola opens downward, has axis $x=5$, vertex $(5,-6)$, and x-intercepts $
   answer="The parabola opens downward, has axis $x=4$, vertex $(4,4)$, and x-intercepts $(2,0)$ and $(6,0)$."
   hint="Factor to find the x-intercepts."
 >}}
-The parabola opens downward, has axis $x=4$, vertex $(4,4)$, and x-intercepts $(2,0)$ and $(6,0)$.
 The parabola opens upward, has axis $x=4$, vertex $(4,-4)$, and x-intercepts $(2,0)$ and $(6,0)$.
+The parabola opens downward, has axis $x=4$, vertex $(4,4)$, and x-intercepts $(2,0)$ and $(6,0)$.
 The parabola opens downward, has axis $x=8$, vertex $(8,-12)$, and x-intercepts $(2,0)$ and $(6,0)$.
 {{< /multiplechoice >}}
 
@@ -222,8 +222,8 @@ It opens up with vertex $(0,0)$ and passes through $(1,1)$ and $(-1,1)$.
   answer="It opens left with vertex $(0,0)$ and passes through $(-1,1)$, $(-1,-1)$, $(-4,2)$, and $(-4,-2)$."
   hint="The sign of a determines whether the horizontal parabola opens left or right."
 >}}
-It opens left with vertex $(0,0)$ and passes through $(-1,1)$, $(-1,-1)$, $(-4,2)$, and $(-4,-2)$.
 It opens right with vertex $(0,0)$ and passes through $(1,1)$, $(1,-1)$, $(4,2)$, and $(4,-2)$.
+It opens left with vertex $(0,0)$ and passes through $(-1,1)$, $(-1,-1)$, $(-4,2)$, and $(-4,-2)$.
 It opens down with vertex $(0,0)$ and passes through $(1,-1)$ and $(-1,-1)$.
 {{< /multiplechoice >}}
 
@@ -254,8 +254,8 @@ so $y=4$ or $y=-2$. The $y$-intercepts are $(0,4)$ and $(0,-2)$. Connect the poi
   answer="It opens left with vertex $(16,-2)$, axis $y=-2$, x-intercept $(12,0)$, and y-intercepts $(0,2)$ and $(0,-6)$."
   hint="First find $y=-\tfrac{b}{2a}$."
 >}}
-It opens left with vertex $(16,-2)$, axis $y=-2$, x-intercept $(12,0)$, and y-intercepts $(0,2)$ and $(0,-6)$.
 It opens right with vertex $(-16,-2)$, axis $y=-2$, x-intercept $(-12,0)$, and y-intercepts $(0,2)$ and $(0,-6)$.
+It opens left with vertex $(16,-2)$, axis $y=-2$, x-intercept $(12,0)$, and y-intercepts $(0,2)$ and $(0,-6)$.
 It opens left with vertex $(12,-4)$, axis $y=-4$, and y-intercepts $(0,2)$ and $(0,-6)$.
 {{< /multiplechoice >}}
 
@@ -264,9 +264,9 @@ It opens left with vertex $(12,-4)$, axis $y=-4$, and y-intercepts $(0,2)$ and $
   answer="It opens left with vertex $(-2,1)$, axis $y=1$, and x-intercept $(-3,0)$; it has no y-intercepts."
   hint="Complete the square or find the axis of symmetry first."
 >}}
-It opens left with vertex $(-2,1)$, axis $y=1$, and x-intercept $(-3,0)$; it has no y-intercepts.
-It opens right with vertex $(2,1)$, axis $y=1$, and x-intercept $(3,0)$; it has no y-intercepts.
 It opens left with vertex $(-3,2)$, axis $y=2$, and y-intercept $(0,1)$.
+It opens right with vertex $(2,1)$, axis $y=1$, and x-intercept $(3,0)$; it has no y-intercepts.
+It opens left with vertex $(-2,1)$, axis $y=1$, and x-intercept $(-3,0)$; it has no y-intercepts.
 {{< /multiplechoice >}}
 
 In the table, we see the relationship between the equation in standard form and the properties of the parabola. The How To box lists the steps for graphing a parabola in the standard form $x=a(y-k)^2+h$. We will use this procedure in the next example.
@@ -461,8 +461,8 @@ downward
   hint="Factor $-1$ from the quadratic and linear terms, then complete the square — and remember that the $+1$ you add inside the parentheses is really $-1$ once the factor is distributed back."
 >}}
 $y=-(x-1)^2-3$
-$y=-(x-1)^2-5$
 $y=-(x+1)^2-3$
+$y=-(x-1)^2-5$
 $y=(x-1)^2-3$
 {{< /multiplechoice >}}
 
@@ -480,8 +480,8 @@ $y=(x-1)^2-3$
   answer="left"
   hint="Look at the sign of the coefficient of $y^2$."
 >}}
-left
 right
+left
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -510,10 +510,10 @@ right
   answer="$x=(y+2)^2-9$"
   hint="Complete the square on the $y$-terms: add $4$ inside the parentheses and subtract it from the constant."
 >}}
-$x=(y+2)^2-9$
+$x=(y+2)^2+9$
 $x=(y+2)^2-1$
 $x=(y-2)^2-9$
-$x=(y+2)^2+9$
+$x=(y+2)^2-9$
 {{< /multiplechoice >}}
 
 {{< fillin

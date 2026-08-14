@@ -42,6 +42,7 @@ positives. There are $2$ positives left, so $5 - 3 = 2$.
 {{< fillin
   question="Model the expression, then simplify: $6 - 4$"
   answer="2"
+  answerForm="decimal"
   hint="Start with $6$ positives and take away $4$ positives."
 >}}
 
@@ -57,6 +58,7 @@ subtraction was easy to apply.
 {{< fillin
   question="Model the expression, then simplify: $-6 - (-4)$"
   answer="-2"
+  answerForm="decimal"
   hint="Start with $6$ negatives and take away $4$ negatives."
 >}}
 
@@ -75,6 +77,7 @@ $-5 - 3 = -8$.
 {{< fillin
   question="Model the expression, then simplify: $-6 - 4$"
   answer="-10"
+  answerForm="decimal"
   hint="Start with $6$ negatives. There are no positives to take away, so add $4$ neutral pairs, then remove the $4$ positives — leaving the original negatives plus $4$ more."
 >}}
 
@@ -87,6 +90,7 @@ $5 - (-3) = 8$.
 {{< fillin
   question="Model the expression, then simplify: $7 - (-4)$"
   answer="11"
+  answerForm="decimal"
   hint="Start with $7$ positives. Add $4$ neutral pairs to get $4$ negatives to remove — that leaves $7 + 4$ positives."
 >}}
 
@@ -355,6 +359,7 @@ the same as adding its opposite.
 {{< fillin
   question="The counters above model $8 - 2$. What is the value of the counters that remain?"
   answer="6"
+  answerForm="decimal"
   hint="Take the two circled positives away and count the positives that are left."
 >}}
 
@@ -366,6 +371,7 @@ the same as adding its opposite.
 {{< fillin
   question="The counters above model $-5 - (-1)$. What is the value of the counters that remain?"
   answer="-4"
+  answerForm="decimal"
   hint="One negative is taken away from five negatives, so only negatives are left."
 >}}
 
@@ -379,6 +385,7 @@ the same as adding its opposite.
 {{< fillin
   question="The counters above model $-5 - 4$. Four neutral pairs were added so that four positives could be taken away. What is the value of the counters that remain?"
   answer="-9"
+  answerForm="decimal"
   hint="Removing the four circled positives leaves the original five negatives plus the four negatives from the neutral pairs."
 >}}
 
@@ -392,6 +399,7 @@ the same as adding its opposite.
 {{< fillin
   question="The counters above model $8 - (-4)$. Four neutral pairs were added so that four negatives could be taken away. What is the value of the counters that remain?"
   answer="12"
+  answerForm="decimal"
   hint="Removing the four circled negatives leaves the original eight positives plus the four positives from the neutral pairs."
 >}}
 

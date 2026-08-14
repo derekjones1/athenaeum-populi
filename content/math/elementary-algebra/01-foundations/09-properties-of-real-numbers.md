@@ -213,12 +213,14 @@ without having a value for $x$.
 {{< fillin
   question="Use the associative property to simplify $8(4x)$."
   answer="32x"
+  answerForm="distributed"
   hint="Regroup so the two numbers multiply first, then attach the variable."
 >}}
 
 {{< fillin
   question="Use the associative property to simplify $-9(7y)$."
   answer="-63y"
+  answerForm="distributed"
   hint="Regroup so the two numbers multiply first, then attach the variable."
 >}}
 
@@ -833,9 +835,9 @@ when simplifying expressions.
   answer="undefined"
   hint="Think about what number times $0$ could produce a nonzero numerator — is there one?"
 >}}
-0
 32-5a
 undefined
+0
 {{< /multiplechoice >}}
 
 ### Simplify expressions using the distributive property

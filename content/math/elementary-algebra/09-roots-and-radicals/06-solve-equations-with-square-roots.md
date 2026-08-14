@@ -152,10 +152,10 @@ has **no solution**.
   hint="A principal square root is never negative. What does an isolated radical equal to a negative number tell you?"
   answer="No solution"
 >}}
-$r = 14$
 $r = -11$
-No solution
 $r = 11$
+No solution
+$r = 14$
 {{< /multiplechoice >}}
 
 ### A binomial on one side
@@ -412,10 +412,10 @@ discarded, which is why every solution of a radical equation must be checked.
   hint="A principal square root is never negative. What does an isolated radical equal to a negative number tell you?"
   answer="No solution"
 >}}
-$m = \tfrac{15}{2}$
-$m = -\tfrac{1}{2}$
-No solution
 $m = 8$
+$m = \tfrac{15}{2}$
+No solution
+$m = -\tfrac{1}{2}$
 {{< /multiplechoice >}}
 
 {{< fillin

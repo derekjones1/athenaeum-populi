@@ -476,10 +476,10 @@ diameter, approximately $3.14$ or $\tfrac{22}{7}$.
   answer="$0.\overline{5}$"
   hint="Divide $5$ by $9$. The remainder never becomes zero, so use the overbar to mark the digits that repeat."
 >}}
+$0.\overline{45}$
+$0.\overline{9}$
 $0.5$
 $0.\overline{5}$
-$0.\overline{9}$
-$0.\overline{45}$
 {{< /multiplechoice >}}
 
 {{< fillin

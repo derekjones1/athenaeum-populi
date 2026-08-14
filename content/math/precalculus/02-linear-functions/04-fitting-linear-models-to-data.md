@@ -1039,8 +1039,8 @@ The model predicts 144.244 billion gallons of gasoline consumption in 2008.
   answer="Extrapolation"
   hint="Compare 2011 with the span of years the data actually covers."
 >}}
-Extrapolation
 Interpolation
+Extrapolation
 {{< /multiplechoice >}}
 
 ## Key concepts
@@ -1170,8 +1170,8 @@ table below.
   answer="Linear"
   hint="Check whether the correlation coefficient for this data, $r\approx0.985$, is close to $1$ or close to $0$."
 >}}
-Linear
 Nonlinear
+Linear
 {{< /multiplechoice >}}
 
 The table below gives paired $x$ and $y$ values.

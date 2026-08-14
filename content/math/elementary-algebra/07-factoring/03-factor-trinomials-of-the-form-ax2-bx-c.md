@@ -81,9 +81,9 @@ using grouping.
   hint="Ask first about a GCF, then count the terms and check the leading coefficient."
   answer="Trinomial with leading coefficient 1, so undo FOIL"
 >}}
-Factor out a GCF, then a binomial with no further method
 Trinomial with leading coefficient 1, so undo FOIL
 More than three terms, so factor using grouping
+Factor out a GCF, then a binomial with no further method
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -91,9 +91,9 @@ More than three terms, so factor using grouping
   hint="Count the terms first: how many are there?"
   answer="More than three terms, so factor using grouping"
 >}}
-Trinomial with leading coefficient 1, so undo FOIL
 More than three terms, so factor using grouping
 A binomial with no method to factor yet
+Trinomial with leading coefficient 1, so undo FOIL
 {{< /multiplechoice >}}
 
 ## Factor trinomials of the form $ax^2+bx+c$ with a GCF
@@ -550,9 +550,9 @@ There are no factors that multiply to $10$ and add to $6$. The polynomial is
   hint="Here $ac=-150$. Are there two numbers that multiply to $-150$ and add to $19$? If so, it factors; if not, it is prime."
   answer="$(2t+5)(5t-3)$"
 >}}
-$(2t+5)(5t-3)$
-$(5t-3)(2t+5)$ is the only form; it is prime
 It is prime
+$(5t-3)(2t+5)$ is the only form; it is prime
+$(2t+5)(5t-3)$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -560,8 +560,8 @@ It is prime
   hint="Here $ac=15$. Look for two numbers that multiply to $15$ and add to $8$."
   answer="$(u+1)(3u+5)$"
 >}}
-$(u+1)(3u+5)$
 $(3u+1)(u+5)$
+$(u+1)(3u+5)$
 It is prime
 {{< /multiplechoice >}}
 
@@ -615,8 +615,8 @@ factored (other than monomial factors).
   answer="There is a GCF to factor out, leaving a binomial with no method yet"
 >}}
 There is a GCF to factor out, leaving a binomial with no method yet
-It is a trinomial with leading coefficient $1$: undo FOIL
 It has more than three terms: factor by grouping
+It is a trinomial with leading coefficient $1$: undo FOIL
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -624,8 +624,8 @@ It has more than three terms: factor by grouping
   hint="Check for a GCF, then note the number of terms and the leading coefficient."
   answer="It is a trinomial with leading coefficient $1$: undo FOIL"
 >}}
-There is a GCF to factor out, leaving a binomial with no method yet
 It is a trinomial with leading coefficient $1$: undo FOIL
+There is a GCF to factor out, leaving a binomial with no method yet
 It has more than three terms: factor by grouping
 {{< /multiplechoice >}}
 
@@ -634,8 +634,8 @@ It has more than three terms: factor by grouping
   hint="Count the terms first: how many are there, and is there a common factor?"
   answer="It has more than three terms: factor by grouping"
 >}}
-There is a GCF to factor out, leaving a binomial with no method yet
 It is a trinomial with leading coefficient $1$: undo FOIL
+There is a GCF to factor out, leaving a binomial with no method yet
 It has more than three terms: factor by grouping
 {{< /multiplechoice >}}
 

@@ -406,18 +406,21 @@ weight: 7
 {{< fillin
   question="Perform the indicated operation: $4\tfrac{1}{3} + 9\tfrac{1}{3}$"
   answer="13\frac{2}{3}"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$13\tfrac{2}{3}$"
 >}}
 
 {{< fillin
   question="Perform the indicated operation: $5\tfrac{8}{11} + 2\tfrac{4}{11}$"
   answer="8\frac{1}{11}"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$8\tfrac{1}{11}$"
 >}}
 
 {{< fillin
   question="Perform the indicated operation: $9\tfrac{13}{20} - 4\tfrac{11}{20}$"
   answer="5\frac{1}{10}"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$5\tfrac{1}{10}$"
 >}}
 
@@ -591,13 +594,15 @@ weight: 7
 
 {{< fillin
   question="Convert $\tfrac{1}{3}$ to a percent. Round to 3 decimal places if needed."
-  answer="33.333"
+  answer="33.333\%"
+  answerForm="percent"
   answerDisplay="33.333%"
 >}}
 
 {{< fillin
   question="65 is what percent of 260?"
-  answer="25"
+  answer="25\%"
+  answerForm="percent"
   answerDisplay="25%"
 >}}
 
@@ -611,13 +616,15 @@ weight: 7
 
 {{< fillin
   question="Jorge got a raise in his hourly pay, from \$19.00 to \$19.76. Find the percent increase."
-  answer="4"
+  answer="4\%"
+  answerForm="percent"
   answerDisplay="4%"
 >}}
 
 {{< fillin
   question="The total number of vehicles on one freeway dropped from 84,000 to 74,000. Find the percent decrease. Round to the nearest tenth of a percent."
-  answer="11.9"
+  answer="11.9\%"
+  answerForm="percent"
   answerDisplay="11.9%"
 >}}
 
@@ -625,13 +632,15 @@ weight: 7
 
 {{< fillin
   question="Andy bought a piano for \$4,600. The sales tax on the purchase was \$333.50. Find the sales tax rate."
-  answer="7.25"
+  answer="7.25\%"
+  answerForm="percent"
   answerDisplay="7.25%"
 >}}
 
 {{< fillin
   question="Mara received \$31.80 commission when she sold a \$795 suit. What was her rate of commission?"
-  answer="4"
+  answer="4\%"
+  answerForm="percent"
   answerDisplay="4%"
 >}}
 
@@ -657,7 +666,8 @@ weight: 7
 
 {{< fillin
   question="Brenda borrowed \$400 from her brother. Two years later, she repaid the \$400 plus \$50 interest. What was the rate of interest?"
-  answer="6.25"
+  answer="6.25\%"
+  answerForm="percent"
   answerDisplay="6.25%"
 >}}
 

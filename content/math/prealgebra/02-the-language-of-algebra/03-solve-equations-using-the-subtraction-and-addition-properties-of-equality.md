@@ -236,8 +236,8 @@ an equation keeps the two sides equal.
   answer="yes"
   hint="Substitute $8$ for $x$ and simplify the left side, then compare the result with $21$."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -245,8 +245,8 @@ no
   answer="no"
   hint="Substitute $34$ for $x$ and add. If the two sides are not equal, the number is not a solution."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -281,8 +281,8 @@ no
   answer="yes"
   hint="Substitute $11$ for every $u$, simplify $8(11) - 4$ and $4(11) + 40$, then compare the two results."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ### Solve equations using the Subtraction Property of Equality

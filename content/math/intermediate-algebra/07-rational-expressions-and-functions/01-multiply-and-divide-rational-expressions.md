@@ -456,6 +456,7 @@ $$
 {{< fillin
   question="Perform the indicated operations: $\tfrac{4m+4}{3m-15}\cdot\tfrac{m^2-3m-10}{m^2-4m-32}\div\tfrac{12m-36}{6m-48}$."
   answer="\frac{2(m+1)(m+2)}{3(m+4)(m-3)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{2(m+1)(m+2)}{3(m+4)(m-3)}$"
   hint="Rewrite division as multiplication by the reciprocal, then factor and remove common factors."
 >}}
@@ -463,6 +464,7 @@ $$
 {{< fillin
   question="Perform the indicated operations: $\tfrac{2n^2+10n}{n-1}\div\tfrac{n^2+10n+24}{n^2+8n-9}\cdot\tfrac{n+4}{8n^2+12n}$."
   answer="\frac{(n+5)(n+9)}{2(n+6)(2n+3)}"
+  answerForm="single-fraction"
   answerDisplay="$\tfrac{(n+5)(n+9)}{2(n+6)(2n+3)}$"
   hint="Change the division to multiplication by a reciprocal and factor every polynomial completely."
 >}}
@@ -547,9 +549,9 @@ $$
   answer="$2$"
   hint="Factor every numerator and denominator completely, then divide out each factor that appears both above and below the bar."
 >}}
+$2$
 $\tfrac{2}{x-2}$
 $\tfrac{2(x-2)}{x+2}$
-$2$
 $2(x-2)$
 {{< /multiplechoice >}}
 

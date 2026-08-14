@@ -460,9 +460,9 @@ is 1 real solution to the equation.
   answer="2 real solutions"
   hint="Find the sign of $6^2-4(5)(-2)$."
 >}}
-2 real solutions
-1 real solution
 2 complex solutions
+1 real solution
+2 real solutions
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -470,9 +470,9 @@ is 1 real solution to the equation.
   answer="1 real solution"
   hint="Find the sign of $24^2-4(9)(16)$."
 >}}
+2 complex solutions
 2 real solutions
 1 real solution
-2 complex solutions
 {{< /multiplechoice >}}
 
 ## Identify the most appropriate method to use to solve a quadratic equation
@@ -537,9 +537,9 @@ appropriate method.
   answer="Factoring"
   hint="Check whether the quadratic factors easily."
 >}}
-Factoring
 Square Root Property
 Quadratic Formula
+Factoring
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -558,8 +558,8 @@ Quadratic Formula
   hint="First consider whether the equation factors easily or fits a square-root form."
 >}}
 Factoring
-Square Root Property
 Quadratic Formula
+Square Root Property
 {{< /multiplechoice >}}
 
 ## Key terms
@@ -614,9 +614,9 @@ $b^2-4ac$ under the radical in the Quadratic Formula.
   answer="1 real solution"
   hint="Find the sign of $36^2-4(36)(9)$."
 >}}
+2 complex solutions
 2 real solutions
 1 real solution
-2 complex solutions
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -636,9 +636,9 @@ $b^2-4ac$ under the radical in the Quadratic Formula.
   answer="Factoring"
   hint="Check whether the quadratic factors easily."
 >}}
-Factoring
 Square Root Property
 Quadratic Formula
+Factoring
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -646,9 +646,9 @@ Quadratic Formula
   answer="Square Root Property"
   hint="The equation is already in the form $a(y-h)^2=k$."
 >}}
-Factoring
-Square Root Property
 Quadratic Formula
+Square Root Property
+Factoring
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -657,8 +657,8 @@ Quadratic Formula
   hint="Write the equation in standard form and consider whether factoring would be quick."
 >}}
 Factoring
-Square Root Property
 Quadratic Formula
+Square Root Property
 {{< /multiplechoice >}}
 
 <small>Adapted from [OpenStax Intermediate Algebra 2e, Section 9.3](https://openstax.org/books/intermediate-algebra-2e/pages/9-3-solve-quadratic-equations-using-the-quadratic-formula), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: reformatted examples and Try It exercises for interactive web use and accessibility, and adapted selected end-of-section exercises into an interactive Practice block.</small>

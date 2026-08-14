@@ -161,8 +161,8 @@ of the square root of $121$: $-\sqrt{121} = -11$.
   answer="no"
   hint="Any real number's square is always positive or zero, so no real number squared can equal a negative number."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -503,9 +503,9 @@ of a positive number.
   answer="not a real number"
   hint="Ask whether any real number — positive or negative — has a square of $-121$."
 >}}
+$\pm 11$
 $11$
 $-11$
-$\pm 11$
 not a real number
 {{< /multiplechoice >}}
 
@@ -517,9 +517,9 @@ not a real number
   hint="Find the perfect squares just below and just above $70$, then take their square roots."
 >}}
 $7 < \sqrt{70} < 8$
-$8 < \sqrt{70} < 9$
 $9 < \sqrt{70} < 10$
 $34 < \sqrt{70} < 36$
+$8 < \sqrt{70} < 9$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -528,9 +528,9 @@ $34 < \sqrt{70} < 36$
   hint="The perfect squares $196$ and $225$ bracket $200$."
 >}}
 $13 < \sqrt{200} < 14$
-$14 < \sqrt{200} < 15$
-$15 < \sqrt{200} < 16$
 $99 < \sqrt{200} < 101$
+$15 < \sqrt{200} < 16$
+$14 < \sqrt{200} < 15$
 {{< /multiplechoice >}}
 
 ### Approximate square roots

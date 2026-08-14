@@ -1274,9 +1274,9 @@ Use this graph for the next two exercises.
   hint="Count the variables in the equation first."
 >}}
 vertical line
-horizontal line
-plotting points
 intercepts
+plotting points
+horizontal line
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1284,10 +1284,10 @@ intercepts
   answer="horizontal line"
   hint="The equation has only $y$ in it, so $y$ never changes."
 >}}
-vertical line
-horizontal line
 plotting points
 intercepts
+vertical line
+horizontal line
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1295,10 +1295,10 @@ intercepts
   answer="plotting points"
   hint="Here $y$ is already alone on one side, so substituting values for $x$ is quick."
 >}}
-vertical line
-horizontal line
 plotting points
+horizontal line
 intercepts
+vertical line
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1307,9 +1307,9 @@ intercepts
   hint="Both variables sit on the same side, in the form $Ax + By = C$."
 >}}
 vertical line
+intercepts
 horizontal line
 plotting points
-intercepts
 {{< /multiplechoice >}}
 
 ---

@@ -621,9 +621,9 @@ parallel sides (the bases).
   answer="cubic"
   hint="Water fills the inside of the tank. Decide first whether you are measuring a length, a surface, or the space filled."
 >}}
-linear
-square
 cubic
+square
+linear
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -632,8 +632,8 @@ cubic
   hint="Living area is the amount of floor surface covered, and surface is measured in square units."
 >}}
 linear
-square
 cubic
+square
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -641,9 +641,9 @@ cubic
   answer="linear"
   hint="A height is a single distance you could measure with a tape measure."
 >}}
-linear
 square
 cubic
+linear
 {{< /multiplechoice >}}
 
 ### Use properties of rectangles

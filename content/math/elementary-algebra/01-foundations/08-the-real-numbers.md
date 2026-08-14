@@ -960,8 +960,8 @@ irrational
   answer="irrational"
   hint="Check whether $30$ falls strictly between two consecutive perfect squares; if so, its decimal form never stops or repeats."
 >}}
-rational
 irrational
+rational
 {{< /multiplechoice >}}
 
 {{< fillin

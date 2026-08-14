@@ -269,9 +269,9 @@ terms** — simplifying by adding the coefficients of like terms.
   hint="Like terms are constants, or have exactly the same variables raised to exactly the same powers. A shared coefficient does not make two terms alike."
 >}}
 $x^3$ and $8x^3$; $14$ and $5$
-$x^3$ and $8x$; $14$ and $5$
-$8x$ and $8y$; $8x$ and $8x^3$
 $8x$, $8y$, and $8x^3$; $14$ and $5$
+$8x$ and $8y$; $8x$ and $8x^3$
+$x^3$ and $8x$; $14$ and $5$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -279,10 +279,10 @@ $8x$, $8y$, and $8x^3$; $14$ and $5$
   answer="$16ab$ and $4ab$; $16b^2$ and $9b^2$"
   hint="Compare only the variable parts. $a$ and $a^2$ are different powers, and $ab$ is not the same variable part as $b^2$ — so two of these terms have no partner."
 >}}
-$16ab$ and $4ab$; $16b^2$ and $9b^2$
-$9a$ and $a^2$; $16ab$ and $16b^2$
 $9a$ and $9b^2$; $16ab$ and $16b^2$
 $16ab$, $16b^2$, and $4ab$; $9a$ and $9b^2$
+$16ab$ and $4ab$; $16b^2$ and $9b^2$
+$9a$ and $a^2$; $16ab$ and $16b^2$
 {{< /multiplechoice >}}
 
 ### Simplify expressions by combining like terms

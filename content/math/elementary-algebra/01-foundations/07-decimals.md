@@ -73,8 +73,8 @@ $-15.571$ is "negative fifteen and five hundred seventy-one thousandths."
   hint="Name the whole-number part first, write 'and' for the decimal point, then name the digits to the right as a whole number followed by the place value of the last digit."
   answer="negative thirteen and four hundred sixty-one thousandths"
 >}}
-negative thirteen and four hundred sixty-one thousandths
 negative thirteen and four hundred sixty-one hundredths
+negative thirteen and four hundred sixty-one thousandths
 negative thirteen and four hundred sixty-one ten-thousandths
 thirteen and four hundred sixty-one thousandths
 {{< /multiplechoice >}}
@@ -523,8 +523,8 @@ $\tfrac{43}{22} = 1.9\overline{54}$.
   hint="Divide 27 by 11. The block of digits after the decimal point repeats immediately, right from the tenths place."
   answer="2.4545... (the block 45 repeats forever)"
 >}}
-2.4545... (the block 45 repeats forever)
 2.4555... (only the 5 repeats forever)
+2.4545... (the block 45 repeats forever)
 2.5454... (the block 54 repeats forever)
 2.45 (a terminating decimal)
 {{< /multiplechoice >}}
@@ -534,10 +534,10 @@ $\tfrac{43}{22} = 1.9\overline{54}$.
   hint="Divide 51 by 22. The first digit past the decimal point does not repeat, but the pair after it does."
   answer="2.31818... (the 3 does not repeat, then the block 18 repeats forever)"
 >}}
-2.31818... (the 3 does not repeat, then the block 18 repeats forever)
-2.31818... (the block 81 repeats forever)
-2.318318... (the block 318 repeats forever)
 2.318 (a terminating decimal)
+2.318318... (the block 318 repeats forever)
+2.31818... (the block 81 repeats forever)
+2.31818... (the 3 does not repeat, then the block 18 repeats forever)
 {{< /multiplechoice >}}
 
 Sometimes we may have to simplify expressions with fractions and decimals
@@ -655,9 +655,9 @@ repeating block. **percent** — a ratio whose denominator is $100$.
   hint="Name the whole-number part first, write 'and' for the decimal point, then name the digits to the right as a whole number followed by the place value of the last digit."
   answer="eight and seventy-one hundredths"
 >}}
-eight and seventy-one hundredths
-eight and seventy-one tenths
 eight and seventy-one thousandths
+eight and seventy-one tenths
+eight and seventy-one hundredths
 negative eight and seventy-one hundredths
 {{< /multiplechoice >}}
 
@@ -754,10 +754,10 @@ negative eight and seventy-one hundredths
   hint="Divide 15 by 11. The pair of digits after the decimal point repeats immediately, right from the tenths place."
   answer="1.3636... (the block 36 repeats forever)"
 >}}
-1.3636... (the block 36 repeats forever)
 1.3666... (only the 6 repeats forever)
 1.6363... (the block 63 repeats forever)
 1.36 (a terminating decimal)
+1.3636... (the block 36 repeats forever)
 {{< /multiplechoice >}}
 
 ---

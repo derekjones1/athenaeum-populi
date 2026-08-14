@@ -166,9 +166,9 @@ $$\begin{array}{lrcl} & -(-16) &\rule{1.5em}{0.4pt}& |-16| \\[4pt] \text{Simplif
   hint="Simplify the right side: $-|-9| = -9$. Then compare the two values."
   answer="$=$"
 >}}
-$<$
-$>$
 $=$
+$>$
+$<$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -176,8 +176,8 @@ $=$
   hint="Simplify the right side: $-|-2| = -2$. Then compare $2$ with $-2$."
   answer="$>$"
 >}}
-$<$
 $>$
+$<$
 $=$
 {{< /multiplechoice >}}
 
@@ -187,8 +187,8 @@ $=$
   answer="$<$"
 >}}
 $<$
-$>$
 $=$
+$>$
 {{< /multiplechoice >}}
 
 We now add absolute value bars to our list of grouping symbols. When we use
@@ -730,9 +730,9 @@ paired with a negative counter, whose value is zero.
   answer="$>$"
   hint="Evaluate each absolute value before comparing the two resulting integers."
 >}}
-$<$
 $>$
 $=$
+$<$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -741,8 +741,8 @@ $=$
   hint="The absolute value is positive; then apply the negative sign outside the bars."
 >}}
 $<$
-$>$
 $=$
+$>$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -751,8 +751,8 @@ $=$
   hint="Find the absolute value first, then compare a positive number with a negative number."
 >}}
 $<$
-$>$
 $=$
+$>$
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -760,9 +760,9 @@ $=$
   answer="$>$"
   hint="A double negative is positive, while the negative outside the absolute value makes the right side negative."
 >}}
-$<$
-$>$
 $=$
+$>$
+$<$
 {{< /multiplechoice >}}
 
 ### Add and subtract integers
@@ -855,9 +855,9 @@ $=$
   answer="$10-(-18)=28$"
   hint="The difference of the first number and the second means subtract $-18$ from $10$."
 >}}
+$-18-10=-28$
 $10-(-18)=28$
 $10-18=-8$
-$-18-10=-28$
 $10+(-18)=-8$
 {{< /multiplechoice >}}
 

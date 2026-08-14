@@ -72,9 +72,9 @@ trinomial, or other polynomial.
   hint="Count the terms. One term is a monomial, two is a binomial, three is a trinomial, and four or more has no special name."
   answer="other polynomial"
 >}}
+trinomial
 monomial
 binomial
-trinomial
 other polynomial
 {{< /multiplechoice >}}
 
@@ -83,10 +83,10 @@ other polynomial
   hint="Count the terms: a trinomial has exactly three."
   answer="trinomial"
 >}}
-monomial
 binomial
-trinomial
 other polynomial
+trinomial
+monomial
 {{< /multiplechoice >}}
 
 ## Determine the degree of polynomials
@@ -374,10 +374,10 @@ descending order of degree.
   hint="Count how many terms are separated by $+$ or $-$ signs, then match monomial (one), binomial (two), trinomial (three), or other polynomial (four or more)."
   answer="trinomial"
 >}}
-monomial
-binomial
-trinomial
 other polynomial
+trinomial
+binomial
+monomial
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -386,9 +386,9 @@ other polynomial
   answer="other polynomial"
 >}}
 monomial
-binomial
 trinomial
 other polynomial
+binomial
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -397,9 +397,9 @@ other polynomial
   answer="binomial"
 >}}
 monomial
+other polynomial
 binomial
 trinomial
-other polynomial
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -408,8 +408,8 @@ other polynomial
   answer="monomial"
 >}}
 monomial
-binomial
 trinomial
+binomial
 other polynomial
 {{< /multiplechoice >}}
 
@@ -418,9 +418,9 @@ other polynomial
   hint="Count the terms joined by $+$ or $-$."
   answer="binomial"
 >}}
-monomial
 binomial
 trinomial
+monomial
 other polynomial
 {{< /multiplechoice >}}
 

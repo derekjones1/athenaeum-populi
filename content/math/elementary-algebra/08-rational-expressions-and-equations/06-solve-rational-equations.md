@@ -189,9 +189,9 @@ trap: the excluded value and the algebraic solution are the same number.
   hint="Factor the denominators: $2(x-1)$, $3(x+1)$, and $12(x-1)(x+1)$. Which values are excluded? Compare them to the algebraic solutions."
   answer="No solution"
 >}}
+$x = 1$ and $x = -1$
 $x = 1$
 $x = -1$
-$x = 1$ and $x = -1$
 No solution
 {{< /multiplechoice >}}
 
@@ -313,8 +313,8 @@ a denominator equal to zero, so the rational expression is undefined there.
 >}}
 v = 1
 v = 4
-v = 1 and v = 4
 No solution
+v = 1 and v = 4
 {{< /multiplechoice >}}
 
 ### Solve a rational equation for a specific variable

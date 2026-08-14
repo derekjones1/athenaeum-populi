@@ -43,6 +43,7 @@ So $2\tfrac{1}{3} + 1\tfrac{2}{3} = 4$.
 {{< fillin
   question="Use the same idea to add: $1\tfrac{2}{5} + 3\tfrac{3}{5}$"
   answer="5"
+  answerForm="decimal"
   hint="Add the wholes and add the fifths separately, then simplify since the fraction part equals a whole."
 >}}
 
@@ -153,6 +154,7 @@ $$1 - \frac{1}{3} = \frac{2}{3}$$
 {{< fillin
   question="Use the same idea to subtract: $1 - \tfrac{1}{4}$"
   answer="\frac{3}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{4}$"
   hint="Rewrite $1$ as fourths, then take away one fourth."
 >}}
@@ -170,6 +172,7 @@ $$2 - 1\frac{2}{5} = \frac{3}{5}$$
 {{< fillin
   question="Use the same idea to subtract: $2 - 1\tfrac{1}{4}$"
   answer="\frac{3}{4}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{3}{4}$"
   hint="Rewrite $2$ as $1\tfrac{4}{4}$, then take away $1\tfrac{1}{4}$."
 >}}
@@ -192,6 +195,7 @@ $$1\frac{1}{4} - \frac{3}{4} = \frac{1}{2}$$
 {{< fillin
   question="Use the same idea to subtract: $1\tfrac{1}{3} - \tfrac{2}{3}$"
   answer="\frac{2}{3}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{2}{3}$"
   hint="Rewrite $1\tfrac{1}{3}$ as $\tfrac{4}{3}$ (borrowing one whole as three more thirds), then subtract."
 >}}
@@ -226,9 +230,9 @@ $$5\frac{3}{5} - 2\frac{4}{5} = 2\frac{4}{5}$$
 
 {{< fillin
   question="Find the difference: $6\tfrac{4}{9} - 3\tfrac{7}{9}$"
-  answer="2\frac{6}{9}"
-  answerForm="mixed-number"
-  answerDisplay="$2\tfrac{6}{9}$"
+  answer="2\frac{2}{3}"
+  answerForm="mixed-number lowest-terms"
+  answerDisplay="$2\tfrac{2}{3}$"
   hint="Since $\tfrac{4}{9}$ is less than $\tfrac{7}{9}$, borrow one whole from $6$ and add it to $\tfrac{4}{9}$ to make $\tfrac{13}{9}$, then subtract."
 >}}
 
@@ -255,9 +259,9 @@ $$9\frac{6}{11} - 7\frac{10}{11} = 1\frac{7}{11}$$
 
 {{< fillin
   question="Find the difference by converting to improper fractions: $6\tfrac{4}{9} - 3\tfrac{7}{9}$"
-  answer="2\frac{6}{9}"
-  answerForm="mixed-number"
-  answerDisplay="$2\tfrac{6}{9}$"
+  answer="2\frac{2}{3}"
+  answerForm="mixed-number lowest-terms"
+  answerDisplay="$2\tfrac{2}{3}$"
   hint="Convert both mixed numbers to improper fractions first ($\tfrac{58}{9}$ and $\tfrac{34}{9}$), subtract, then convert back."
 >}}
 
@@ -338,6 +342,7 @@ subtracting.
 {{< fillin
   question="Use a model to find the sum: $2\tfrac{1}{3} + 1\tfrac{1}{3}$"
   answer="3\frac{2}{3}"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$3\tfrac{2}{3}$"
   hint="Picture whole circles for the whole numbers and $\tfrac{1}{3}$ pieces for the fractions. Count the wholes, then count the thirds."
 >}}
@@ -345,6 +350,7 @@ subtracting.
 {{< fillin
   question="Use a model to find the sum: $1\tfrac{5}{6} + 1\tfrac{5}{6}$"
   answer="3\frac{2}{3}"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$3\tfrac{2}{3}$"
   hint="Ten sixths is more than one whole circle. Trade six of them for a whole, then simplify what is left."
 >}}
@@ -379,6 +385,7 @@ subtracting.
 {{< fillin
   question="Use a model to find the difference: $1\tfrac{1}{8} - \tfrac{5}{8}$"
   answer="\frac{1}{2}"
+  answerForm="fraction lowest-terms"
   answerDisplay="$\tfrac{1}{2}$"
   hint="Cut the whole into eighths so you have $\tfrac{9}{8}$ in all, then take away $\tfrac{5}{8}$ and simplify."
 >}}
@@ -386,6 +393,7 @@ subtracting.
 {{< fillin
   question="Use a model to find the difference: $6 - \tfrac{2}{5}$"
   answer="5\frac{3}{5}"
+  answerForm="mixed-number lowest-terms"
   answerDisplay="$5\tfrac{3}{5}$"
   hint="Cut one of the six wholes into fifths, so $6$ becomes $5\tfrac{5}{5}$, then take away $\tfrac{2}{5}$."
 >}}

@@ -320,8 +320,8 @@ above the line.
   answer="solid"
   hint="The inequality symbol is $\le$, which includes equality, so the boundary line is solid."
 >}}
-solid
 dashed
+solid
 {{< /multiplechoice >}}
 
 ## Key terms
@@ -344,8 +344,8 @@ strict ($<$ or $>$) and solid when the inequality includes equality
   answer="yes"
   hint="Substitute $x=0$ and $y=0$, then decide whether the resulting inequality is true."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -371,8 +371,8 @@ no
   answer="yes"
   hint="Substitute $x=-6$ and $y=-3$, then decide whether the resulting inequality is true."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -435,10 +435,10 @@ no
   answer="a dashed boundary line with the region below the line shaded"
   hint="A strict inequality uses a dashed boundary; a test point below the boundary satisfies $y<\tfrac{3}{5}x+2$."
 >}}
-a dashed boundary line with the region below the line shaded
-a solid boundary line with the region below the line shaded
-a dashed boundary line with the region above the line shaded
 a solid boundary line with the region above the line shaded
+a dashed boundary line with the region below the line shaded
+a dashed boundary line with the region above the line shaded
+a solid boundary line with the region below the line shaded
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -446,10 +446,10 @@ a solid boundary line with the region above the line shaded
   answer="a solid boundary line with the side containing the origin shaded"
   hint="Equality is included, so the boundary is solid. Test $(0,0)$ in $4x+2y\geq-8$ to choose the shaded side."
 >}}
-a solid boundary line with the side containing the origin shaded
 a dashed boundary line with the side containing the origin shaded
 a solid boundary line with the side not containing the origin shaded
 a dashed boundary line with the side not containing the origin shaded
+a solid boundary line with the side containing the origin shaded
 {{< /multiplechoice >}}
 
 ---

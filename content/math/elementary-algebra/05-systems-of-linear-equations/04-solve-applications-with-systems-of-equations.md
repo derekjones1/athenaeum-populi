@@ -352,8 +352,8 @@ $85 = 85$. ✓ The length is 85 feet and the width is 20 feet.
 
 {{< fillin
   question="Mario wants to put a rectangular fence around the pool in his backyard. Since one side is adjacent to the house, he will only need to fence three sides — two long sides and the one shorter side parallel to the house. He needs 155 feet of fencing to enclose the pool. The length of the long side is 10 feet less than twice the width. Find the width of the pool area, in feet."
-  answer="41.25"
-  hint="Let L = the length and W = the width. The system is $L + 2W = 155$ and $L = 2W - 10$. Substitute and solve for W."
+  answer="35"
+  hint="Let L = the length and W = the width. Two long sides and one short side gives $2L + W = 155$, with $L = 2W - 10$. Substitute and solve for W."
 >}}
 
 ## Solve Uniform Motion Applications

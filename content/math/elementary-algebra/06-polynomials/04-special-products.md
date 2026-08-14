@@ -420,18 +420,21 @@ $$(5x-6)(6x+5) = 30x^2 + 25x - 36x - 30 = 30x^2 - 11x - 30$$
 {{< fillin
   question="Choose the appropriate pattern and find the product: $(9b - 2)(2b + 9)$"
   answer="18b^2 + 77b - 18"
+  answerForm="expanded"
   hint="These binomials are neither identical nor conjugates, so use FOIL."
 >}}
 
 {{< fillin
   question="Choose the appropriate pattern and find the product: $(9p - 4)^2$"
   answer="81p^2 - 72p + 16"
+  answerForm="expanded"
   hint="This is a binomial square: square 9p, square 4, and subtract twice their product $2 \cdot 9p \cdot 4$."
 >}}
 
 {{< fillin
   question="Choose the appropriate pattern and find the product: $(7y + 1)^2$"
   answer="49y^2 + 14y + 1"
+  answerForm="expanded"
   hint="This is a binomial square: square 7y, square 1, and add twice their product $2 \cdot 7y \cdot 1$."
 >}}
 
@@ -499,9 +502,9 @@ Conjugates Pattern** — $(a-b)(a+b) = a^2 - b^2$.
   answer="Binomial Squares Pattern"
   hint="Are the two factors identical — one binomial squared — or two different binomials?"
 >}}
-Binomial Squares Pattern
-Product of Conjugates Pattern
 Neither — use FOIL
+Product of Conjugates Pattern
+Binomial Squares Pattern
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -516,9 +519,9 @@ Neither — use FOIL
   answer="Product of Conjugates Pattern"
   hint="Compare the first terms and the last terms of the two binomials — are they the same, with one sum and one difference?"
 >}}
+Neither — use FOIL
 Binomial Squares Pattern
 Product of Conjugates Pattern
-Neither — use FOIL
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -533,9 +536,9 @@ Neither — use FOIL
   answer="Neither — use FOIL"
   hint="Check the first terms and last terms of the two binomials: are they identical, exact conjugates, or neither?"
 >}}
+Neither — use FOIL
 Binomial Squares Pattern
 Product of Conjugates Pattern
-Neither — use FOIL
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -551,8 +554,8 @@ Neither — use FOIL
   hint="Is this one binomial multiplied by itself, or two different binomials?"
 >}}
 Binomial Squares Pattern
-Product of Conjugates Pattern
 Neither — use FOIL
+Product of Conjugates Pattern
 {{< /multiplechoice >}}
 
 {{< fillin

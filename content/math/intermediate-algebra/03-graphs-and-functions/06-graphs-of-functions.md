@@ -357,8 +357,8 @@ no
   hint="Ask whether one vertical line can meet the graph more than once."
   answer="no"
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1260,8 +1260,8 @@ no
   answer="yes"
   hint="Apply the vertical line test to an upward-opening parabola."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1278,8 +1278,8 @@ no
   answer="yes"
   hint="Every vertical line meets an increasing curve like this at most once."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ### Identify graphs of basic functions

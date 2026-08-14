@@ -234,10 +234,10 @@ $2$ and $3$.) The point $\left(3, \tfrac{5}{2}\right)$ is in Quadrant I.
   answer="Quadrant IV"
   hint="A positive $x$-coordinate paired with a negative $y$-coordinate places the point to the right of the $y$-axis and below the $x$-axis."
 >}}
-Quadrant I
-Quadrant II
 Quadrant III
 Quadrant IV
+Quadrant I
+Quadrant II
 {{< /multiplechoice >}}
 
 We can summarize the sign patterns of the quadrants this way.
@@ -691,10 +691,10 @@ $x$- and $y$-values are substituted in for $x$ and $y$.
   answer="Quadrant II"
   hint="Move left because the $x$-coordinate is negative, then up because the $y$-coordinate is positive."
 >}}
-Quadrant I
 Quadrant II
 Quadrant III
 Quadrant IV
+Quadrant I
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -702,10 +702,10 @@ Quadrant IV
   answer="Quadrant III"
   hint="Both coordinates are negative, so move left from the origin and then down."
 >}}
-Quadrant I
 Quadrant II
-Quadrant III
 Quadrant IV
+Quadrant I
+Quadrant III
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -713,9 +713,9 @@ Quadrant IV
   answer="Quadrant IV"
   hint="A positive $x$-coordinate moves right of the $y$-axis, and a negative $y$-coordinate moves below the $x$-axis."
 >}}
+Quadrant III
 Quadrant I
 Quadrant II
-Quadrant III
 Quadrant IV
 {{< /multiplechoice >}}
 
@@ -724,9 +724,9 @@ Quadrant IV
   answer="Quadrant II"
   hint="The point is left of the $y$-axis because $x$ is negative and above the $x$-axis because $y$ is positive."
 >}}
-Quadrant I
 Quadrant II
 Quadrant III
+Quadrant I
 Quadrant IV
 {{< /multiplechoice >}}
 
@@ -736,9 +736,9 @@ Quadrant IV
   hint="Both coordinates are positive; $\tfrac{5}{3}$ lies to the right of the origin and $2$ lies above it."
 >}}
 Quadrant I
+Quadrant IV
 Quadrant II
 Quadrant III
-Quadrant IV
 {{< /multiplechoice >}}
 
 ### Verify solutions to an equation in two variables
@@ -757,8 +757,8 @@ no
   answer="yes"
   hint="Substitute both coordinates, including the zero, and check whether the equation is true."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -766,8 +766,8 @@ no
   answer="no"
   hint="Evaluate $2(2) + 3$ and compare it with the right side of the equation."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ### Complete a table of solutions to a linear equation in two variables

@@ -138,21 +138,39 @@ jobs:
       - name: Post-deploy smoke test
         if: steps.head.outputs.fresh == 'true'
         run: |
-          sleep 10
-          headers="$(curl -sS -D - -o /dev/null --max-time 30 https://athenaeumpopuli.org/)"
-          echo "$headers"
-          echo "$headers" | grep -qi '^HTTP/[^ ]* 200' || { echo '::error::homepage did not return 200 over HTTPS'; exit 1; }
           # The full policy contract is parsed and asserted BEFORE deploy by
           # tools/audit-build.mjs; this confirms the edge actually serves it.
-          for header in \
-            'x-content-type-options' \
-            'strict-transport-security' \
-            'x-frame-options' \
-            'referrer-policy' \
-            'permissions-policy' \
-            'cross-origin-opener-policy'; do
-            echo "$headers" | grep -qi "^${header}:" || { echo "::error::missing ${header} on the deployed origin"; exit 1; }
+          #
+          # Bounded polling with a cache-busting query, not one fixed sleep:
+          # a single probe once hit a Cloudflare edge cache entry from BEFORE
+          # the _headers deploy (cf-cache-status: HIT, no security headers)
+          # and failed the run although the deployment itself had succeeded.
+          # The unique query string forces a cache miss so the probe always
+          # exercises the freshly deployed Worker.
+          check_headers() {
+            headers="$(curl -sS -D - -o /dev/null --max-time 30 \
+              -H 'Cache-Control: no-cache' \
+              "https://athenaeumpopuli.org/?smoke=${GITHUB_SHA}-${GITHUB_RUN_ATTEMPT}-$1")"
+            echo "$headers" | grep -qi '^HTTP/[^ ]* 200' || return 1
+            for header in \
+              'x-content-type-options' \
+              'strict-transport-security' \
+              'x-frame-options' \
+              'referrer-policy' \
+              'permissions-policy' \
+              'cross-origin-opener-policy'; do
+              echo "$headers" | grep -qi "^${header}:" || return 1
+            done
+            echo "$headers"
+            return 0
+          }
+          ok=''
+          for attempt in 1 2 3 4 5 6 7 8; do
+            if check_headers "$attempt"; then ok=1; break; fi
+            echo "attempt ${attempt}/8: deployed origin not serving the header contract yet; retrying in 15s"
+            sleep 15
           done
+          [ -n "$ok" ] || { echo '::error::deployed origin never served HTTPS 200 with the full header contract (8 attempts over ~2 minutes)'; exit 1; }
           http_status="$(curl -sS -o /dev/null -w '%{http_code}' --max-time 30 http://athenaeumpopuli.org/ || echo 000)"
           case "$http_status" in
             301|302|307|308) echo "plain HTTP redirects to HTTPS ($http_status)" ;;

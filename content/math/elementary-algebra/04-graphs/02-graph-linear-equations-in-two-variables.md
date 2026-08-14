@@ -749,8 +749,8 @@ No; it is not a solution and the point is not on the line.
   answer="Yes; it is a solution and the point is on the line."
   hint="Substitute $x=-1$ and $y=1$ into $y=x+2$ and compare the two sides."
 >}}
-Yes; it is a solution and the point is on the line.
 No; it is not a solution and the point is not on the line.
+Yes; it is a solution and the point is on the line.
 {{< /multiplechoice >}}
 
 {{< multiplechoice

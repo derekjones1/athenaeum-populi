@@ -141,6 +141,7 @@ $4 \cdot 2 + 1$ is an **expression** (no equal sign); $x \div 25$ is an
 {{< fillin
   question="An equation is two expressions joined by an equal sign. In the equation $4 + 3 = 7$, what number does the left side, $4 + 3$, equal?"
   answer="7"
+  answerForm="decimal"
   hint="Simplify the expression on the left side of the equal sign."
 >}}
 
@@ -314,9 +315,9 @@ addition and subtraction (left to right).
   hint="Read the left number first. The result of a subtraction is called the difference, not the sum."
 >}}
 16 minus 9, the difference of sixteen and nine
-16 plus 9, the sum of sixteen and nine
 9 minus 16, the difference of nine and sixteen
 16 minus 9, the sum of sixteen and nine
+16 plus 9, the sum of sixteen and nine
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -324,10 +325,10 @@ addition and subtraction (left to right).
   answer="28 divided by 4, the quotient of twenty-eight and four"
   hint="The number under the division is read second, and the result of a division is called the quotient."
 >}}
-28 divided by 4, the quotient of twenty-eight and four
+28 divided by 4, the product of twenty-eight and four
 4 divided by 28, the quotient of four and twenty-eight
 28 times 4, the product of twenty-eight and four
-28 divided by 4, the product of twenty-eight and four
+28 divided by 4, the quotient of twenty-eight and four
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -335,10 +336,10 @@ addition and subtraction (left to right).
   answer="fourteen is less than twenty-one"
   hint="The smaller side of the symbol faces the smaller number. There is no line under this symbol."
 >}}
-fourteen is less than twenty-one
-fourteen is greater than twenty-one
-fourteen is less than or equal to twenty-one
 twenty-one is less than fourteen
+fourteen is less than twenty-one
+fourteen is less than or equal to twenty-one
+fourteen is greater than twenty-one
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -346,10 +347,10 @@ twenty-one is less than fourteen
   answer="thirty-six is greater than or equal to nineteen"
   hint="Read left to right, and let the line under the symbol add the words *or equal to*."
 >}}
-thirty-six is greater than or equal to nineteen
-thirty-six is greater than nineteen
 thirty-six is less than or equal to nineteen
 nineteen is greater than or equal to thirty-six
+thirty-six is greater than or equal to nineteen
+thirty-six is greater than nineteen
 {{< /multiplechoice >}}
 
 ### Identify expressions and equations
@@ -397,10 +398,10 @@ equation
   answer="$3^7$"
   hint="The repeated factor is the base; count how many times it appears to get the exponent."
 >}}
-$3^7$
 $7^3$
-$3^6$
+$3^7$
 $3 \cdot 7$
+$3^6$
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -416,9 +417,9 @@ $3 \cdot 7$
   answer="$5 \cdot 5 \cdot 5$"
   hint="The base is the factor that repeats, and the exponent counts how many times it is written."
 >}}
-$5 \cdot 5 \cdot 5$
 $3 \cdot 3 \cdot 3 \cdot 3 \cdot 3$
 $5 \cdot 3$
+$5 \cdot 5 \cdot 5$
 $5 + 5 + 5$
 {{< /multiplechoice >}}
 
@@ -427,10 +428,10 @@ $5 + 5 + 5$
   answer="$2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$"
   hint="An exponent tells how many factors of the base to multiply — not what to multiply the base by. Count the factors carefully."
 >}}
-$2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$
-$2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$
 $8 \cdot 8$
+$2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$
 $2 \cdot 8$
+$2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$
 {{< /multiplechoice >}}
 
 ### Simplify expressions using the order of operations

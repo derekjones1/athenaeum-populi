@@ -1283,6 +1283,19 @@ const FORM_PREDICATES = {
   // The mirror-image conversion ("Write t^{1/2} as a radical expression"):
   // the response must actually contain a radical.
   radical: (latex) => /\\sqrt/.test(latex),
+  // "Give the exact answer": a full-precision machine decimal is value-equal
+  // to \sqrt{130} or \frac{\ln 8}{3\ln 2} within the grader's tolerance, so
+  // the shape IS the exercise — the response may not be a bare decimal.
+  exact: (latex) => asDecimal(latex) === null,
+  // "Write the sum using summation notation": the expanded sum printed in
+  // the question is value-equal to the sigma form, so the notation IS the
+  // exercise.
+  summation: (latex) => /\\sum/.test(latex),
+  // "Condense … to one logarithm": the printed multi-log sum is value-equal
+  // to the condensed form, so the response must be exactly one logarithm in
+  // one term.
+  'single-logarithm': (latex) => (latex.match(/\\log|\\ln/g) || []).length === 1
+    && splitTopLevelTerms(bareLatex(latex)).length === 1,
   'mixed-number': (latex) => {
     const mixed = asMixedNumber(latex);
     return mixed !== null && mixed.numerator < mixed.denominator;
@@ -1361,6 +1374,36 @@ const FORM_PREDICATES = {
       if (group) radicands.push([opener[1], group[0]]);
     }
     const radicandIsNumeric = (value) => !/[a-zA-Z]/.test(value.replace(/\\[a-zA-Z]+/g, ' '));
+    // An EXPLICIT same-index product of radicals is never fully simplified —
+    // the Product Property always combines it — so the copied prompt of a
+    // "multiply radicals" exercise (`(\sqrt[3]{9y^2})(\sqrt[3]{6y})`, or the
+    // same with \cdot) must not pass the form its own answer declares.
+    // Scoped to explicit products (\cdot, \times, or parenthesized radical
+    // factors): the corpus legitimately writes rationalized numerators as
+    // bare juxtapositions like `\sqrt{10}\sqrt{y}`, which stay accepted.
+    for (const term of splitTopLevelTerms(bare)) {
+      const flat = term.replace(/\\left\s*/g, '').replace(/\\right\s*/g, '');
+      const indices = [...flat.matchAll(/\\sqrt\s*(?:\[\s*(\d+)\s*\])?\s*\{/g)].map((m) => m[1] ?? '2');
+      const hasSameIndexPair = indices.length > new Set(indices).size;
+      // Explicit same-index products always combine under the Product
+      // Property: `(\sqrt[3]{9y^2})(\sqrt[3]{6y})` and the \cdot form must
+      // not pass the form their own multiplied-out answers declare.
+      if (hasSameIndexPair && (/\\cdot|\\times|\)\s*\(/.test(flat))) return false;
+      // The conjugate-rationalization keys are the deliberate exception:
+      // this corpus authors them factored — `\frac{\sqrt5(\sqrt x-\sqrt2)}{x-2}`,
+      // even `\frac{(\sqrt p+\sqrt2)^2}{p-2}` — so the two distribute-me
+      // shapes below are rejected only OUTSIDE a fraction term.
+      if (/^\\[tdc]?frac/.test(flat.trim())) continue;
+      // A radical multiplying a parenthesized group with a same-index
+      // radical distributes: `\sqrt6(1+3\sqrt6)`.
+      if (hasSameIndexPair && /[()]/.test(flat)) return false;
+      // A parenthesized group containing a radical, raised to a power, is an
+      // unexpanded product: `(6-\sqrt5)^2` must not pass the form its own
+      // expanded answer (`41-12\sqrt5`) declares.
+      for (const powered of flat.matchAll(/\(([^()]*)\)\s*\^/g)) {
+        if (/\\sqrt/.test(powered[1])) return false;
+      }
+    }
     for (const [indexArg, radicand] of radicands) {
       // Unevaluated ARITHMETIC under the radical is never simplified when the
       // radicand is all numerals: `\sqrt{64+225}` is a sum the learner was
@@ -1372,6 +1415,10 @@ const FORM_PREDICATES = {
         && (/\\[tdc]?frac|\/|\\cdot|\\times/.test(radicand) || splitTopLevelTerms(radicand).length > 1)) {
         return false;
       }
+      // A NEGATIVE numeric radicand is never a simplified answer: in the
+      // complex-number sections the imaginary unit is factored out first, so
+      // `\sqrt{-11}` must not pass where the key is `i\sqrt{11}`.
+      if (radicandIsNumeric(radicand) && /^\s*-/.test(radicand)) return false;
       // A SUM under the radical (`\sqrt{4+x}`, `\sqrt{x^2+y^2}`) is not a
       // product: the factor tests below would read its leading term ("4 holds
       // a square") and reject an irreducible radical forever. A form check
@@ -1949,6 +1996,9 @@ const FORM_PHRASES = {
   percent: 'as a percent, with the % sign',
   'rational-exponent': 'with a rational exponent, not a radical',
   radical: 'as a radical expression',
+  exact: 'in exact form, not a decimal approximation',
+  summation: 'in summation notation, with a Σ',
+  'single-logarithm': 'condensed to one logarithm',
   'mixed-number': 'as a mixed number',
   'improper-fraction': 'as an improper fraction',
   'fraction-or-mixed-number': 'as a fraction or mixed number',

@@ -1312,9 +1312,9 @@ $(x_1, y_1)$ and $(x_2, y_2)$ is $m = \tfrac{y_2 - y_1}{x_2 - x_1}$.
   answer="undefined"
   hint="Every point has the same $x$-value, so the run between any two points is $0$ — and you cannot divide by $0$."
 >}}
+undefined
 $0$
 $4$
-undefined
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -1322,8 +1322,8 @@ undefined
   answer="undefined"
   hint="This is a vertical line; think about what the denominator of $\tfrac{\text{rise}}{\text{run}}$ becomes."
 >}}
-$0$
 $-5$
+$0$
 undefined
 {{< /multiplechoice >}}
 

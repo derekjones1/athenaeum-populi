@@ -435,8 +435,8 @@ one of the equations is not linear.
   answer="No"
   hint="Substitute $x-1$ for $y$ in $y=x^2+1$ and check the discriminant of the resulting quadratic."
 >}}
-Yes
 No
+Yes
 {{< /multiplechoice >}}
 
 ### Solve a System of Nonlinear Equations Using Substitution
@@ -461,8 +461,8 @@ No
   answer="No"
   hint="Substitute $x=y-1$ into $2y^2-x=0$ and check the discriminant of the resulting quadratic in $y$."
 >}}
-Yes
 No
+Yes
 {{< /multiplechoice >}}
 
 ### Solve a System of Nonlinear Equations Using Elimination
@@ -497,8 +497,8 @@ No
   answer="No"
   hint="Solve $l^2+w^2=2{,}500$ and $lw=1200$ for the screen's length and width, then compare each dimension to $38$ and $27$."
 >}}
-Yes
 No
+Yes
 {{< /multiplechoice >}}
 
 ---

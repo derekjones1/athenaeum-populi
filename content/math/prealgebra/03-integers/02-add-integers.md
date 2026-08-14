@@ -53,6 +53,7 @@ positives. So $5 + 3 = 8$.
 {{< fillin
   question="Model the expression, then simplify: $2 + 4$"
   answer="6"
+  answerForm="decimal"
   hint="Both addends are positive, so combine $2$ positives with $4$ more positives."
 >}}
 
@@ -69,6 +70,7 @@ negatives. So $-5 + (-3) = -8$.
 {{< fillin
   question="Model the expression, then simplify: $-2 + (-4)$"
   answer="-6"
+  answerForm="decimal"
   hint="Both addends are negative, so combine $2$ negatives with $4$ more negatives."
 >}}
 
@@ -105,6 +107,7 @@ so the result is negative.
 {{< fillin
   question="Model the expression, then simplify: $2 + (-4)$"
   answer="-2"
+  answerForm="decimal"
   hint="Pair up the $2$ positives with $2$ of the $4$ negatives as neutral pairs, then count what's left."
 >}}
 
@@ -134,6 +137,7 @@ and are removed, leaving $2$ positives. So $5 + (-3) = 2$.
 {{< fillin
   question="Model the expression, then simplify: $(-2) + 4$"
   answer="2"
+  answerForm="decimal"
   hint="Pair up $2$ of the positives with the $2$ negatives as neutral pairs, then count what's left."
 >}}
 

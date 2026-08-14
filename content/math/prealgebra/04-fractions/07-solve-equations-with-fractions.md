@@ -58,8 +58,8 @@ $\tfrac{5}{10}$. So $x=-\tfrac{4}{5}$ is *not* a solution.
   answer="yes"
   hint="Substitute $\tfrac{5}{6}$ for $x$, rewrite both sides with a common denominator, and check whether the equation is true."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ## Solve equations with fractions using the Addition, Subtraction, and Division Properties of Equality
@@ -323,8 +323,8 @@ of Equality** — for any numbers $a$, $b$, $c$: if $a=b$, then $ac=bc$.
   answer="no"
   hint="Substitute $1$ for $y$ and rewrite $1 - \tfrac{1}{3}$ with denominator 12."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -332,8 +332,8 @@ no
   answer="yes"
   hint="Rewrite $\tfrac{3}{4}$ and $\tfrac{1}{3}$ with the LCD 12 before subtracting."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -359,8 +359,8 @@ no
   answer="yes"
   hint="The LCD of 30, 5, and 6 is 30 — rewrite every fraction with that denominator."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -368,8 +368,8 @@ no
   answer="no"
   hint="Substitute and add over the LCD 30; watch the sign of the numerator."
 >}}
-yes
 no
+yes
 {{< /multiplechoice >}}
 
 ### Solve equations with fractions using the Addition, Subtraction, and Division Properties of Equality

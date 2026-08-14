@@ -195,8 +195,8 @@ Since each y-value is paired with only one x-value, this function is one-to-one.
   hint="A function uses each input at most once; a one-to-one function also uses each output at most once."
 >}}
 ⓐ one-to-one function; ⓑ function, but not one-to-one
-ⓐ function, but not one-to-one; ⓑ one-to-one function
 ⓐ not a function; ⓑ function, but not one-to-one
+ⓐ function, but not one-to-one; ⓑ one-to-one function
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -204,9 +204,9 @@ Since each y-value is paired with only one x-value, this function is one-to-one.
   answer="ⓐ not a function; ⓑ function, but not one-to-one"
   hint="Look first for repeated input values, then for repeated output values."
 >}}
-ⓐ one-to-one function; ⓑ not a function
 ⓐ not a function; ⓑ function, but not one-to-one
 ⓐ function, but not one-to-one; ⓑ one-to-one function
+ⓐ one-to-one function; ⓑ not a function
 {{< /multiplechoice >}}
 
 To help us determine whether a relation is a function, we use the vertical line test. A set of points in a rectangular coordinate system is the graph of a function if every vertical line intersects the graph in at most one point. Also, if any vertical line intersects the graph in more than one point, the graph does not represent a function.
@@ -238,9 +238,9 @@ Since any vertical line intersects the graph in at most one point, the graph is 
   answer="ⓐ not a function; ⓑ one-to-one function"
   hint="Use the vertical line test first. Apply the horizontal line test only to a graph that is a function."
 >}}
+ⓐ one-to-one function; ⓑ function, but not one-to-one
 ⓐ not a function; ⓑ one-to-one function
 ⓐ function, but not one-to-one; ⓑ not a function
-ⓐ one-to-one function; ⓑ function, but not one-to-one
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -248,9 +248,9 @@ Since any vertical line intersects the graph in at most one point, the graph is 
   answer="ⓐ function, but not one-to-one; ⓑ one-to-one function"
   hint="A graph may pass the vertical line test but fail the horizontal line test."
 >}}
+ⓐ one-to-one function; ⓑ function, but not one-to-one
 ⓐ not a function; ⓑ one-to-one function
 ⓐ function, but not one-to-one; ⓑ one-to-one function
-ⓐ one-to-one function; ⓑ function, but not one-to-one
 {{< /multiplechoice >}}
 
 ## Find the Inverse of a Function
@@ -376,9 +376,9 @@ Notice how the graph of the original function and the graph of the inverse funct
   answer="Reflect the graph across the line $y=x$."
   hint="Every point $(a,b)$ on a function becomes $(b,a)$ on its inverse."
 >}}
-Reflect the graph across the line $y=x$.
-Reflect the graph across the $x$-axis.
 Shift the graph one unit to the right.
+Reflect the graph across the $x$-axis.
+Reflect the graph across the line $y=x$.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -386,9 +386,9 @@ Shift the graph one unit to the right.
   answer="It becomes $(b,a)$."
   hint="Finding an inverse interchanges the input and output coordinates."
 >}}
-It becomes $(-a,b)$.
 It becomes $(b,a)$.
 It becomes $(a,-b)$.
+It becomes $(-a,b)$.
 {{< /multiplechoice >}}
 
 When we began our discussion of an inverse function, we talked about how the inverse function ‘undoes’ what the original function did to a value in its domain in order to get back to the original x-value.
@@ -573,8 +573,8 @@ We summarize the steps below.
   hint="Every x-value has a single y-value, but check whether any y-value repeats."
 >}}
 function, but not one-to-one
-one-to-one function
 not a function
+one-to-one function
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -582,9 +582,9 @@ not a function
   answer="one-to-one function"
   hint="Check that each x-value has its own y-value, then check that no y-value repeats."
 >}}
-one-to-one function
 function, but not one-to-one
 not a function
+one-to-one function
 {{< /multiplechoice >}}
 
 ### Find the Inverse of a Function

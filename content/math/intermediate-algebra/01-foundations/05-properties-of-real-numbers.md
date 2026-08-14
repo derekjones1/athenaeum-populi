@@ -338,9 +338,9 @@ $$\frac{10 - 3p}{0} \text{ is undefined.}$$
   hint="Here a nonzero quantity is being divided by $0$. Division by zero is undefined."
   answer="undefined"
 >}}
-undefined
 $0$
 $18 - 6c$
+undefined
 $1$
 {{< /multiplechoice >}}
 
