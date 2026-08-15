@@ -624,7 +624,7 @@ no
 >}}
 $\tfrac{n}{250} = \tfrac{100}{35}$
 $\tfrac{n}{250} = \tfrac{35}{100}$
-$\tfrac{n}{35} = \tfrac{250}{100}$
+$\tfrac{n}{100} = \tfrac{35}{250}$
 $\tfrac{250}{n} = \tfrac{35}{100}$
 {{< /multiplechoice >}}
 
@@ -635,7 +635,7 @@ $\tfrac{250}{n} = \tfrac{35}{100}$
 >}}
 $\tfrac{n}{45} = \tfrac{30}{100}$
 $\tfrac{45}{n} = \tfrac{100}{30}$
-$\tfrac{45}{30} = \tfrac{n}{100}$
+$\tfrac{30}{45} = \tfrac{n}{100}$
 $\tfrac{45}{n} = \tfrac{30}{100}$
 {{< /multiplechoice >}}
 

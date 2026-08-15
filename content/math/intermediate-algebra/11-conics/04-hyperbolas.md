@@ -269,7 +269,7 @@ $$
 We summarize the steps for easy reference.
 
 {{< callout type="info" >}}
-### How To: Graph a hyperbola centered at $(h,k)$
+### How To: Graph a hyperbola not centered at the origin, with center $(h,k)$
 
 1. Write the equation in standard form.
 2. Determine whether the transverse axis is horizontal or vertical.

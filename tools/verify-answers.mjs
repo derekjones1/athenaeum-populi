@@ -109,6 +109,12 @@ const RELATION_OPERATORS = new Set(['Equal', 'NotEqual', 'Less', 'LessEqual', 'G
  * sign the exercises define away.
  */
 function needsPositiveDomain(expr) {
+  // Logarithms carry the same domain restriction as even roots. Omitting them
+  // let the sampler evaluate a log identity at a negative argument, where the
+  // branch cut makes the two sides genuinely differ, and report a sound
+  // re-expression ($\ln(x^2)$ vs $2\ln(x)$) as a FAILURE — the checker
+  // contradicting the runtime grader, which accepts it.
+  if (expr.operator === 'Ln' || expr.operator === 'Log') return true;
   if (expr.operator === 'Sqrt' || expr.operator === 'Root') return true;
   if (expr.operator === 'Power') {
     const exponent = expr.ops[1];
@@ -241,7 +247,15 @@ const questionSpans = (question) => mathSpans(question, { allowNewlines: true })
   .map((span) => span.tex);
 
 const SOLVE_RE = /(?:^|[.?!]\s)\s*solve\b/i;
-const SOLVE_FOR_RE = /\bsolve[^.?!$]*?\bfor\s+\$([a-zA-Z])\$/i;
+// "Solve … for <var>". The `$` used to be excluded from the run between
+// "solve" and "for", which meant the pattern could only match when the
+// equation itself was NOT in math delimiters — i.e. almost never, silently
+// dropping the whole solve-a-formula class into "cannot identify the
+// solved-for variable". The delimiters around the target are optional
+// ("for y, in general") and a subscript is part of the name: the engine reads
+// `d_2` as one atomic symbol, so capturing only `d` names a variable that
+// does not occur in the formula.
+const SOLVE_FOR_RE = /\bsolve[^.?!]*?\bfor\s+\$?([a-zA-Z](?:_[a-zA-Z0-9]+)?)\$?(?![a-zA-Z0-9_])/i;
 const EVALUATE_RE = /(?:^|[.?!]\s)\s*(?:evaluate|find the value of)\b/i;
 
 // An ask whose printed subject is legitimately NOT value-equal to its answer:

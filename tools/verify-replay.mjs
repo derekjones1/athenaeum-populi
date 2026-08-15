@@ -174,7 +174,12 @@ function replayFile(file) {
     // an ordered pair `(3,0)` has a comma and is graded as a scalar, so the
     // cheap test skipped every coordinate exercise while claiming to skip
     // lists.
-    if (sc.params.answerMode === 'unordered' || splitTopLevelCommas(answer).length > 1) {
+    // `answerMode` alone is not the exemption — being a LIST is. An OR here
+    // meant an author could set `answerMode="unordered"` on a scalar answer
+    // and take the exercise out of replay coverage without its answer holding
+    // a single comma, which is precisely the gate going quiet on content it
+    // was written to police.
+    if (splitTopLevelCommas(answer).length > 1) {
       skipped['list-keyed fillin'] += 1;
       continue;
     }

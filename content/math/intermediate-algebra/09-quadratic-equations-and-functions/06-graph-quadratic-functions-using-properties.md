@@ -1111,16 +1111,16 @@ $$
 The $x$-intercepts are the points $(4,0)$ and $(-2,0)$.
 
 {{< fillin
-  question="Find the intercepts of the parabola $f(x)=x^2+2x-8$. Enter the y-intercept first, then the two x-intercepts, separated by commas."
-  answer="(0,-8),(2,0),(-4,0)"
-  answerDisplay="$(0,-8),\ (2,0),\ (-4,0)$"
+  question="Find the intercepts of the parabola $f(x)=x^2+2x-8$. Enter the y-intercept first, then the two x-intercepts with the smaller x-value first, separated by commas."
+  answer="(0,-8),(-4,0),(2,0)"
+  answerDisplay="$(0,-8),\ (-4,0),\ (2,0)$"
   hint="Set $x=0$ for the y-intercept. Set $f(x)=0$ and factor for the x-intercepts."
 >}}
 
 {{< fillin
-  question="Find the intercepts of the parabola $f(x)=x^2-4x-12$. Enter the y-intercept first, then the two x-intercepts, separated by commas."
-  answer="(0,-12),(6,0),(-2,0)"
-  answerDisplay="$(0,-12),\ (6,0),\ (-2,0)$"
+  question="Find the intercepts of the parabola $f(x)=x^2-4x-12$. Enter the y-intercept first, then the two x-intercepts with the smaller x-value first, separated by commas."
+  answer="(0,-12),(-2,0),(6,0)"
+  answerDisplay="$(0,-12),\ (-2,0),\ (6,0)$"
   hint="Set $x=0$ for the y-intercept. Set $f(x)=0$ and factor for the x-intercepts."
 >}}
 
@@ -1244,9 +1244,9 @@ two
 {{< /multiplechoice >}}
 
 {{< fillin
-  question="Find the intercepts of $f(x)=x^2-4x-5$. Enter the y-intercept first, then the two x-intercepts, separated by commas."
-  answer="(0,-5),(5,0),(-1,0)"
-  answerDisplay="$(0,-5),\ (5,0),\ (-1,0)$"
+  question="Find the intercepts of $f(x)=x^2-4x-5$. Enter the y-intercept first, then the two x-intercepts with the smaller x-value first, separated by commas."
+  answer="(0,-5),(-1,0),(5,0)"
+  answerDisplay="$(0,-5),\ (-1,0),\ (5,0)$"
   hint="Set $x=0$ for the y-intercept, and solve $f(x)=0$ for the x-intercepts."
 >}}
 

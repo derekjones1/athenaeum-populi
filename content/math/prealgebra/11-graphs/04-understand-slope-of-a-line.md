@@ -821,7 +821,7 @@ and to the right $4$ — we should get to another point on the line.
 
 {{< fillin
   question="A line passes through the point $(2, -2)$ with slope $m = \tfrac{4}{3}$. Starting at $(2, -2)$ and counting out the rise and run, what point do you land on?"
-  answer="(6, 2)"
+  answer="(5, 2)"
   hint="The rise is $4$ and the run is $3$. Add the rise to the $y$-coordinate and the run to the $x$-coordinate."
 >}}
 

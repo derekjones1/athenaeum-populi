@@ -93,6 +93,26 @@ const extra = [
   ['2 5/9', '2\\\\frac{6}{9}', 'incorrect'],
   ['2 + 6/9', '2\\\\frac{6}{9}', 'correct'], // explicit sum untouched & equal
   ['4/3', '2\\\\frac{6}{9}', 'incorrect'], // NOT 2×(6/9)
+  // A mixed number that multiplies by JUXTAPOSITION lost its whole part in
+  // CE 0.58.0: "2\frac{1}{2}(4)" evaluated to 2·(1/2)·4 = 4 rather than 10.
+  // The defect reached real grading through point-slope answers, in both
+  // directions — the learner's correct form was refused and a wrong line was
+  // accepted against a mixed-number key.
+  ['2\\frac{1}{2}(4)', '10', 'correct'],
+  ['2\\frac{1}{2}\\left(4\\right)', '10', 'correct'],
+  ['2\\frac{1}{2}(4)', '4', 'incorrect'], // the old misparse must not be reachable
+  ['y-3=2\\frac{1}{2}(x-4)', 'y=2.5x-7', 'correct'],
+  ['y=x-1', 'y-3=2\\frac{1}{2}(x-4)', 'incorrect'], // the false accept
+  ['12\\frac{3}{4}(2)', '25.5', 'correct'],
+  ['2\\frac{1}{2}x', '2.5x', 'correct'], // juxtaposed variable, not just "("
+  ['2\\frac{1}{2}\\sqrt{4}', '5', 'correct'], // juxtaposed command
+  ['2\\frac{1}{2}^2', '6.25', 'correct'], // superscript binds the whole number
+  // Untouched: already-correct shapes, and forms that are NOT mixed numbers.
+  ['2\\frac{1}{2}', '2.5', 'correct'],
+  ['2\\frac{1}{2}+1', '3.5', 'correct'],
+  ['2\\frac{1}{2}\\cdot3', '7.5', 'correct'],
+  ['\\frac{1}{2}(4)', '2', 'correct'], // no whole part — a plain coefficient
+  ['2\\frac{x}{2}(4)', '4x', 'correct'], // non-numeric numerator stays a product
   ['\\\\frac{5}{6}', '\\frac{5}{6}', 'correct'], // doubling on student side too
   // "x = value" is accepted for a bare-value answer (solve-for-x exercises),
   // and a bare value is accepted when the author wrote the answer as "x=…".
@@ -457,6 +477,12 @@ const formCases = [
   ['86', '2\\cdot43', 'prime-product', 'form'],
   ['2^4\\cdot5', '2^4\\cdot5', 'prime-product', 'correct'],
   ['4\\cdot20', '2^4\\cdot5', 'prime-product', 'form'],
+  // A zero exponent is worth 1, so padding a correct factorization with "k^0"
+  // kept the value right while adding a base the form never checked. It was
+  // accepted, and with k near 2^53 the primality loop froze the tab for ~2.5s.
+  ['2^2\\times3\\times5\\times7^0', '2^2\\times3\\times5', 'prime-product', 'form'],
+  ['2^2\\times3\\times5\\times9007199254740881^0', '2^2\\times3\\times5', 'prime-product', 'form'],
+  ['2^2\\times3\\times5', '2^2\\times3\\times5', 'prime-product', 'correct'], // unpadded still passes
   // an equivalent fraction with a prescribed denominator is NOT reduced
   ['\\frac{75}{100}', '\\frac{75}{100}', 'denominator:100', 'correct'],
   ['\\frac{3}{4}', '\\frac{75}{100}', 'denominator:100', 'form'],

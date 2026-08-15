@@ -512,9 +512,9 @@ Simplify: (a) $\sqrt{\tfrac{m^{6}}{m^{4}}}$ (b) $\sqrt[3]{\tfrac{a^{8}}{a^{5}}}$
 
 {{< fillin
   question="Simplify: $\sqrt[4]{\tfrac{y^{17}}{y^{5}}}$"
-  answer="y^{3}"
+  answer="\left|y^{3}\right|"
   answerForm="simplified-radical"
-  answerDisplay="$y^{3}$"
+  answerDisplay="$\left|y^{3}\right|$"
   hint="Use the quotient property to combine or reduce the fraction, then extract perfect powers from the radical."
 >}}
 

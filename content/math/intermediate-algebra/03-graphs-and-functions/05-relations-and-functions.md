@@ -119,25 +119,25 @@ $\{\text{January 12},\text{February 3},\text{April 25},\text{May 10},
 \text{May 23},\text{July 24},\text{August 2},\text{September 15}\}$.
 
 {{< multiplechoice
-  question="In the source mapping, Khanh Nguyen is paired with which student ID number?"
-  answer="kn68413"
+  question="In the mapping above, Stephen is paired with which birthday?"
+  answer="July 24"
   hint="Trace the arrow from the named input to the one output paired with it."
 >}}
-kn68413
-sm32479
-jh47983
-ab56781
+July 24
+August 2
+May 23
+February 3
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="In the source mapping, Maria is paired with which birthday?"
-  answer="November 6"
+  question="In the mapping above, Penelope is paired with which birthday?"
+  answer="May 23"
   hint="Trace the arrow from the named input to the one output paired with it."
 >}}
-January 18
-March 15
-December 8
-November 6
+April 25
+May 23
+May 10
+August 2
 {{< /multiplechoice >}}
 
 A graph is yet another way that a relation can be represented. The set of

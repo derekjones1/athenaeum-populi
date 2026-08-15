@@ -97,7 +97,7 @@ $$
 $$
 
 There are two values of $n$ that are solutions. This will give us two pairs of
-consecutive odd integers for our solution: $13,15$ and $-15,-13$.
+consecutive odd integers for our solution: $13,15$ and $-13,-15$.
 
 **Step 6. Check** the answer. Both pairs are consecutive odd integers, and
 $13\cdot15=195$ and $(-13)(-15)=195$.
@@ -106,14 +106,14 @@ $13\cdot15=195$ and $(-13)(-15)=195$.
 195 are 13, 15 and $-13,-15$.
 
 {{< fillin
-  question="The product of two consecutive odd integers is 99. Find the integers. Enter the positive pair followed by the negative pair, separated by commas."
+  question="The product of two consecutive odd integers is 99. Find the integers. Enter the two positive integers from least to greatest, then their opposites in the same order, separated by commas."
   answer="9, 11, -9, -11"
   answerDisplay="$9,\ 11$ and $-9,\ -11$"
   hint="Let $n$ be the first odd integer. Solve $n(n+2)=99$."
 >}}
 
 {{< fillin
-  question="The product of two consecutive even integers is 168. Find the integers. Enter the positive pair followed by the negative pair, separated by commas."
+  question="The product of two consecutive even integers is 168. Find the integers. Enter the two positive integers from least to greatest, then their opposites in the same order, separated by commas."
   answer="12, 14, -12, -14"
   answerDisplay="$12,\ 14$ and $-12,\ -14$"
   hint="Let $n$ be the first even integer. Solve $n(n+2)=168$."
@@ -523,7 +523,7 @@ No new key terms are introduced in this section.
 ### Solve applications modeled by quadratic equations
 
 {{< fillin
-  question="The product of two consecutive odd integers is 255. Find the integers. Enter the positive pair followed by the negative pair, separated by commas."
+  question="The product of two consecutive odd integers is 255. Find the integers. Enter the two positive integers from least to greatest, then their opposites in the same order, separated by commas."
   answer="15, 17, -15, -17"
   answerDisplay="$15,\ 17$ and $-15,\ -17$"
   hint="Let $n$ be the first odd integer and $n+2$ the next. Solve $n(n+2)=255$ and keep both roots."

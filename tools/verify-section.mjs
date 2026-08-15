@@ -17,7 +17,7 @@
  */
 import { readFileSync } from 'node:fs';
 import katex from 'katex';
-import { checkAnswer } from '../assets/js/lib/check-answer.mjs';
+import { ce, checkAnswer, preprocess } from '../assets/js/lib/check-answer.mjs';
 import { parseGraphPlotConfig } from '../assets/js/lib/graph-plot-config.mjs';
 import { lintHugo } from './lints.mjs';
 import { hasUnpairedDollar, mathSpans, shortcodes } from './lib-content.mjs';
@@ -37,6 +37,34 @@ const bad = (m) => {
   fail++;
   console.error(`  ✗ ${m.includes(currentFile) ? m : `${currentFile}: ${m}`}`);
 };
+
+/**
+ * Did the answer parse into something other than what it says?
+ *
+ * Self-grading catches an answer the engine calls INVALID. It cannot catch one
+ * the engine calls valid after reading it as nonsense: the prescript notation
+ * for permutations and combinations, `{}_5P_2`, parses as the product
+ * `5 * "P_2" * _` — perfectly valid, and reflexively equal to itself, so it
+ * sails through the self-grade. The exercise then ships accepting only that
+ * literal spelling and marking the actual answer (20) wrong.
+ *
+ * The bare `_` symbol is the tell, and an unambiguous one: no legitimate
+ * variable is named `_`, while genuine subscripted variables (`x_1`, `a_n`,
+ * `v_0`) parse as single atomic symbols and never produce it. Verified across
+ * all 6,016 authored fill-in answers, which yield zero bare-`_` parses.
+ */
+function parsedAsNonsense(latex) {
+  let expr;
+  try { expr = ce.parse(preprocess(latex)); } catch { return false; }
+  let found = false;
+  const walk = (node) => {
+    if (!node || found) return;
+    if (node.symbol === '_') { found = true; return; }
+    (node.ops ?? []).forEach(walk);
+  };
+  walk(expr);
+  return found;
+}
 
 function propMath(where, name, val) {
   if (val == null) return;
@@ -85,6 +113,8 @@ for (const f of files) {
         bad(`${where}: answer ${JSON.stringify(p.answer)} is not written in its own answerForm ${JSON.stringify(p.answerForm)} — the exercise would reject its own answer`);
       } else if (status !== 'correct') {
         bad(`${where}: answer ${JSON.stringify(p.answer)} does not self-grade 'correct' (got ${status}) — malformed/ungradeable`);
+      } else if (parsedAsNonsense(p.answer)) {
+        bad(`${where}: answer ${JSON.stringify(p.answer)} parses as a nonsense product, not the value it spells — the exercise would accept only this literal notation. Write the value the question asks for.`);
       }
     }
     for (const name of ['question', 'hint', 'answerDisplay']) propMath(where, name, p[name]);

@@ -85,6 +85,17 @@ class FillInElement extends HTMLElement {
     // sink when MathLive mounts so it has the same accessible name as the host.
     // Keep this listener for reconnects because MathLive can rebuild the sink.
     field.addEventListener('mount', () => this._labelKeyboardSink());
+    // ...and again on focus, because MathLive BLANKS the sink's aria-label as
+    // it takes focus — the same reaction it has to `readonly` below. Labelling
+    // only at mount left the element that actually receives the caret unnamed
+    // from the first click onward, and it never self-healed on blur: a screen
+    // reader announced an unnamed edit box for the rest of the session, on the
+    // site's primary exercise type. `focusin` (not `focus`) because the event
+    // is retargeted to the host as it crosses the shadow boundary, and after a
+    // microtask so the re-label lands after MathLive's own handler has run.
+    field.addEventListener('focusin', () => {
+      queueMicrotask(() => this._labelKeyboardSink());
+    });
     // MathLive reads the placeholder as LaTeX \text{...}.
     field.setAttribute('placeholder', `\\text{${this.placeholder}}`);
     this.field = field;
@@ -217,6 +228,28 @@ class FillInElement extends HTMLElement {
     this.field.shadowRoot
       ?.querySelector('[part~="keyboard-sink"]')
       ?.setAttribute('aria-label', label);
+    this._labelShadowControls();
+  }
+
+  /**
+   * MathLive's two icon buttons inside the shadow root — the virtual-keyboard
+   * toggle and the menu — carry `role="button"` and no accessible name at
+   * all: no text, no `aria-label`, no `title`. Their tooltip lives in a custom
+   * `data-tooltip` attribute, which the accessible-name computation does not
+   * read, so assistive tech announced an unnamed button. They are out of the
+   * desktop tab order (`tabindex="-1"`), but they are visible 34x34 controls
+   * that grow on touch, where the keyboard toggle is the only way to open the
+   * math keyboard — exactly the population that needs the name. Borrow the
+   * tooltip MathLive already localized rather than inventing a second string.
+   */
+  _labelShadowControls() {
+    for (const part of ['virtual-keyboard-toggle', 'menu-toggle']) {
+      const control = this.field?.shadowRoot?.querySelector(`[part~="${part}"]`);
+      const tooltip = control?.getAttribute('data-tooltip');
+      if (control && tooltip && !control.getAttribute('aria-label')) {
+        control.setAttribute('aria-label', tooltip);
+      }
+    }
   }
 
   /**

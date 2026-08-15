@@ -234,6 +234,21 @@ function fixLoneDifferentialNumerator(value) {
  *    Integer-times-parenthesis ("3(4)") already parses as a product and is
  *    untouched. The corpus writes repeating decimals with \overline, never
  *    with parentheses, so nothing legitimate is lost.
+ *  - groups a mixed number that is JUXTAPOSED with what follows
+ *    ("2\frac{1}{2}(x-4)" → "\left(2+\frac{1}{2}\right)(x-4)"). Standing
+ *    alone or before an explicit operator, CE 0.58.0 reads "2\frac{1}{2}"
+ *    as the mixed number 2+1/2; but as soon as the next token multiplies by
+ *    juxtaposition — "(", "\left(", a variable, a command, or a "^" — the
+ *    whole part stops binding to the fraction and the value silently
+ *    becomes 2·(1/2)·… . "2\frac{1}{2}(4)" evaluated to 4 instead of 10, so
+ *    a learner writing the point-slope answer "y-3=2\frac{1}{2}(x-4)" was
+ *    graded incorrect AND the wrong line "y=x-1" was accepted against it.
+ *    The rewrite is deliberately NOT applied to a mixed number that ends
+ *    the expression or is followed by an operator: those already parse
+ *    correctly, and `asMixedNumber` anchors on the written shape, so
+ *    rewriting them would break every `answerForm="mixed-number"` exercise.
+ *    Only an all-digit numerator AND denominator qualify, so a genuine
+ *    coefficient times a fraction ("2\frac{x}{2}(4)") is left alone.
  */
 export function preprocess(raw) {
   const despaced = stripGroupingCommas(raw ?? '')
@@ -257,6 +272,14 @@ export function preprocess(raw) {
     .replace(/~/g, ' ');
   return fixLoneDifferentialNumerator(despaced)
     .replace(/(^|[^\d.\w])(\d+) +(\d+)\/(\d+)/g, '$1$2\\frac{$3}{$4}')
+    // A mixed number that multiplies by juxtaposition loses its whole part in
+    // CE 0.58.0 — group it explicitly. The leading boundary refuses a digit
+    // that belongs to an exponent ("x^2\frac{1}{2}"); the lookahead fires only
+    // on the juxtaposition/superscript tokens that trigger the defect.
+    .replace(
+      /(^|[^\d.\w^])(\d+)\s*\\[tdc]?frac\s*\{(\d+)\}\s*\{(\d+)\}(?=\s*(?:[A-Za-z(^]|\\[a-zA-Z]))/g,
+      '$1\\left($2+\\frac{$3}{$4}\\right)',
+    )
     .replace(/((?:\d+)?\.\d+)\s*(?=\(|\\left\()/g, '$1\\cdot ')
     .replace(/−/g, '-')
     .replace(/×/g, '\\times ')
@@ -767,8 +790,19 @@ function checkUnordered(studentRaw, answerRaw) {
 
 const gcd = (a, b) => (b ? gcd(b, a % b) : Math.abs(a));
 
+/**
+ * Trial division, deliberately bounded. This runs synchronously on the main
+ * thread from the Check button, so an unbounded √n loop is a freeze a learner
+ * can trigger: a factor just under 2^53 costs ~9.5e7 iterations, measured at
+ * ~2.5s. Prime factorization is taught on two- and three-digit composites, so
+ * nothing legitimate is anywhere near the ceiling; a factor above it is
+ * reported "not prime", which fails the form and asks for a product of primes
+ * rather than hanging the tab.
+ */
+const PRIME_CHECK_CEILING = 1e12;
+
 function isPrime(n) {
-  if (!Number.isInteger(n) || n < 2) return false;
+  if (!Number.isInteger(n) || n < 2 || n > PRIME_CHECK_CEILING) return false;
   for (let d = 2; d * d <= n; d += 1) if (n % d === 0) return false;
   return true;
 }
@@ -880,6 +914,12 @@ function asProductOfPowers(latex) {
   for (const factor of factors) {
     const match = factor.trim().match(/^(\d+)(?:\s*\^\s*\{?\s*(\d+)\s*\}?)?$/);
     if (!match) return null;
+    // A zero exponent is decoration, not a factor: "k^0" is 1 whatever k is,
+    // so appending it left the value untouched while smuggling k into the
+    // base list. That made a padded response pass `prime-product` — and, with
+    // k chosen large, made the primality loop below the slowest thing on the
+    // page. A factorization does not carry a factor raised to the zero power.
+    if (match[2] !== undefined && Number(match[2]) === 0) return null;
     bases.push(Number(match[1]));
   }
   return bases;

@@ -99,14 +99,14 @@ $-13(-15)=195$.
 consecutive odd integers whose product is 195 are 13, 15, and $-13,-15$.
 
 {{< fillin
-  question="The product of two consecutive odd integers is 99. Find the integers. Enter the two positive integers followed by the two negative integers, separated by commas."
+  question="The product of two consecutive odd integers is 99. Find the integers. Enter the two positive integers from least to greatest, then their opposites in the same order, separated by commas."
   answer="9,11,-9,-11"
   answerDisplay="$9,11,-9,-11$"
   hint="Let the first odd integer be $n$ and the next be $n+2$. Translate the product into an equation."
 >}}
 
 {{< fillin
-  question="The product of two consecutive even integers is 168. Find the integers. Enter the two positive integers followed by the two negative integers, separated by commas."
+  question="The product of two consecutive even integers is 168. Find the integers. Enter the two positive integers from least to greatest, then their opposites in the same order, separated by commas."
   answer="12,14,-12,-14"
   answerDisplay="$12,14,-12,-14$"
   hint="Let the first even integer be $n$ and the next be $n+2$."

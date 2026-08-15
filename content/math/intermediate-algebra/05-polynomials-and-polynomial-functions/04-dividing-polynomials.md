@@ -414,8 +414,8 @@ $$
 >}}
 
 {{< fillin
-  question="For $f(x)=x^2-5x-24$ and $g(x)=x+3$, find $\left(\tfrac{f}{g}\right)(-3)$."
-  answer="-11"
+  question="For $f(x)=x^2-5x-24$ and $g(x)=x+3$, find $\left(\tfrac{f}{g}\right)(-4)$."
+  answer="-12"
   hint="Divide the coefficients and subtract exponents on matching bases; rewrite negative exponents as reciprocals."
 >}}
 

@@ -234,7 +234,7 @@ Since any vertical line intersects the graph in at most one point, the graph is 
 Since any vertical line intersects the graph in at most one point, the graph is the graph of a function. The horizontal line shown on the graph intersects it in two points. This graph does not represent a one-to-one function.
 
 {{< multiplechoice
-  question="Apply the vertical and horizontal line tests to the two graphs. Which pair of classifications is correct?"
+  question="Graph ⓐ is the sideways parabola $x=y^2$, and graph ⓑ is the line $y=2x+1$. Apply the vertical and horizontal line tests. Which pair of classifications is correct?"
   answer="ⓐ not a function; ⓑ one-to-one function"
   hint="Use the vertical line test first. Apply the horizontal line test only to a graph that is a function."
 >}}
@@ -244,7 +244,7 @@ Since any vertical line intersects the graph in at most one point, the graph is 
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Apply the vertical and horizontal line tests to the two graphs. Which pair of classifications is correct?"
+  question="Graph ⓐ is the parabola $y=x^2$, and graph ⓑ is the cubic $y=x^3$. Apply the vertical and horizontal line tests. Which pair of classifications is correct?"
   answer="ⓐ function, but not one-to-one; ⓑ one-to-one function"
   hint="A graph may pass the vertical line test but fail the horizontal line test."
 >}}

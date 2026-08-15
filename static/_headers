@@ -2,9 +2,22 @@
 # Docs: https://developers.cloudflare.com/workers/static-assets/headers/
 #
 # Security baseline for every response. A Content-Security-Policy is
-# deliberately NOT set here yet: the theme inlines scripts and styles, so a
-# CSP needs its own audited allowlist (and a report-only rollout) rather than
-# a guess that could brick KaTeX/MathLive rendering.
+# deliberately NOT set here yet, but the reason is narrower than it used to
+# be. Measured against the current build (275 pages): ZERO inline <script>
+# blocks and zero inline event handlers, so `script-src 'self'` needs no
+# allowlist and no nonce. What still blocks a clean policy:
+#
+#   - 1,353 inline `style=` attributes (KaTeX sizing plus the vendored theme's
+#     search partial) require `style-src 'unsafe-inline'`;
+#   - Pagefind runs WebAssembly in a worker -> `'wasm-unsafe-eval'` and
+#     `worker-src 'self'`;
+#   - MathLive's read-aloud builds audio as a blob URL -> `media-src blob:`,
+#     and that is an accessibility feature, so it must not be broken.
+#
+# `'unsafe-eval'` is NOT required: the compute engine ships a `new Function`
+# codegen path, but grading never reaches it (verified by trapping the
+# Function constructor across a spread of representative answers).
+# Roll any policy out as Content-Security-Policy-Report-Only first.
 #
 # NOTE: forcing http:// -> https:// cannot be done from this file. Enable
 # "Always Use HTTPS" (and then HSTS) on the Cloudflare zone; the

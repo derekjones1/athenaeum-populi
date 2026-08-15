@@ -47,6 +47,15 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
   spans, and holds a `--min-replayed` FLOOR so the gate cannot go quiet on
   part of the corpus (parallel, minutes — part of `npm run ci`, not
   `npm test`)
+- `npm run verify:ledger` — assert every exercise in the corpus carries a
+  current answer-verification record (see "The answer ledger" below); holds a
+  `--min-exercises` FLOOR and a `--max-unverifiable` CEILING so it can go
+  vacuous in neither direction
+- `npm run ledger:stats` — verified/total per shortcode kind
+- `npm run ledger:list` — emit exercises as JSON for a verification pass
+  (`--shard i/n`, `--kind`, `--unverified`)
+- `npm run ledger:merge <dir>` — fold pass result files into the ledger,
+  reporting any hash two passes disagreed on rather than overwriting silently
 - `npm run build` — clean production build plus global Pagefind
 - `npm run check:build` — route, link, search, and file-count gates
 - `npm run ci` — complete local equivalent of CI
@@ -71,6 +80,58 @@ fires on sound content, narrow the rule and add a test for the case it got
 wrong — do not exempt the page. When authoring moves the `--min-verified` or
 `--min-replayed` floor, end the session with `npm run baseline:update` and
 commit the rewrite together with the content.
+
+## The answer ledger
+
+`verify:answers` re-derives an answer only where it can mechanically recognize
+what the prompt asks; 79% of what it skips is skipped as "prompt class not
+mechanically checkable", and it never reads `multiplechoice` or `graphplot` at
+all. Reading a prompt is exactly what a parser cannot do, so that population is
+covered by a reading pass instead, and `data/verification/answer-ledger.json`
+makes the result durable.
+
+An exercise's identity is the sha256 of its own source with whitespace runs
+collapsed. Reflowing a shortcode keeps its verdict; changing any semantic
+character — question, answer, option, hint, config — drops it out of the ledger
+and fails `npm run verify:ledger` until it is read again. The key is the hash
+alone, so an exercise duplicated across books is verified once and moving one
+between files costs nothing.
+
+Three verdicts: `ok`, `defect` (fails the gate — a known-wrong answer must not
+ship), and `unverifiable` (read, but undeterminable from the exercise text
+alone — a figure or table read). The `--max-unverifiable` ceiling keeps the
+third from quietly swallowing the corpus, the same way `--min-exercises` keeps
+extraction from going dark.
+
+**Authoring a new exercise therefore means verifying it.** Derive the answer
+independently, never from the key, and do the arithmetic by running it rather
+than in your head; then record the verdict and re-run the gate. The one wrong
+answer that survived every other gate — a 3x3 system in a knowledge check whose
+declared triple satisfied none of its three printed equations — is what this
+ledger exists to catch.
+
+**Status: complete as of August 15, 2026 — all 6,806 unique exercises carry an
+`ok` record, and `verify:ledger` runs inside `npm test`** with
+`--min-exercises 6806 --max-unverifiable 0`. The ceiling is 0 because the
+residue really did go to zero: the figure-dependent items were re-read with
+`--context 80`, which attaches the page text above the shortcode so a "read the
+graph above" item can see the SVG it names, and the handful still unresolved
+turned out to be exercises whose figure had never been transcribed at all —
+repaired rather than excused.
+
+Two commands drive a re-run:
+
+- `npm run ledger:list -- --unverified --shard i/n` for anything unrecorded;
+- `npm run ledger:list -- --verdict unverifiable --context 80` for the
+  figure-dependent follow-up queue.
+
+Merge with `npm run ledger:merge <dir>`; it reports any hash two passes
+disagreed on instead of overwriting. `prune` drops records stranded by an edit.
+
+The pass was calibrated before it was trusted: 26 provably-wrong answers were
+seeded into a blind sample of 90 real exercises, and the method caught 26/26
+with zero false alarms on the 64 untouched ones. Re-run that calibration if the
+method changes.
 
 ## Reviews and verification protocol
 

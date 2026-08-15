@@ -2,3 +2,11 @@ KaTeX 0.16.22
 
 Vendored from the pinned npm dependency. This must match the KaTeX embedded in
 Hugo 0.164.0; see docs/architecture.md.
+
+LOCAL MODIFICATION — re-apply after any re-vendor:
+  `font-display:swap` is inserted into all 20 @font-face blocks in
+  katex.min.css. Upstream ships them with no font-display, which resolves to
+  `auto` (block-like in Chromium): on a slow connection rendered math can be
+  invisible for up to ~3s on a site whose content is almost entirely math.
+  The property is a font-loading hint only — it does not touch the class
+  contract that Hugo's build-time KaTeX output depends on.

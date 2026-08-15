@@ -428,8 +428,8 @@ $(-\infty,\infty)$
 
 {{< fillin
   question="Use matrices to solve the system $2x - y + 3z = -3$, $-x + 2y - z = 10$, and $x + y + z = 5$. Write the solution as an ordered triple $(x,y,z)$."
-  answer="(-2,5,-2)"
-  answerDisplay="$(-2,5,-2)$"
+  answer="(-2,5,2)"
+  answerDisplay="$(-2,5,2)$"
 >}}
 
 ### 4.6 Solve Systems of Equations Using Determinants

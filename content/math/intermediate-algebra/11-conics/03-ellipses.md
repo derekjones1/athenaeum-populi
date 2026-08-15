@@ -246,7 +246,7 @@ $b>a$, the major axis is vertical so the distance from the center to the
 vertex is $b$.
 
 {{< callout type="info" >}}
-### Standard Form of the Equation of an Ellipse with Center $(h,k)$
+### Standard Form of the Equation of an Ellipse Not Centered at the Origin, with Center $(h,k)$
 
 The standard form of the equation of an ellipse with center $(h,k)$ is
 

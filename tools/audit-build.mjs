@@ -557,6 +557,32 @@ else if (built.length >= maxFiles * filesWarnAt) {
   }
 }
 {
+  // A duplicated `id` is invalid HTML and silently breaks the "Permalink for
+  // this section" links the theme puts on every heading: both permalinks
+  // resolve to the first match, so the second heading becomes unreachable by
+  // its own link. It reached production because Hugo's anchor slug drops
+  // inline math, so two headings differing only inside `$…$` — "…with Center
+  // $(0,0)$" and "…with Center $(h,k)$" — collapsed to one id with no
+  // de-duplicating suffix. Minification strips attribute quotes, so both
+  // spellings have to be read.
+  const duplicates = [];
+  for (const [index, document] of htmlDocuments.entries()) {
+    const seen = new Set();
+    const repeated = new Set();
+    for (const match of document.matchAll(/\sid=(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+))/g)) {
+      const id = match[1] ?? match[2] ?? match[3];
+      if (!id) continue;
+      if (seen.has(id)) repeated.add(id); else seen.add(id);
+    }
+    if (repeated.size) {
+      duplicates.push(`${relative(root, htmlFiles[index])} (${[...repeated].join(', ')})`);
+    }
+  }
+  if (duplicates.length) {
+    problems.push(`duplicate id attribute(s) on ${duplicates.length} page(s): ${duplicates.slice(0, 3).join('; ')}`);
+  }
+}
+{
   // Every interactive component ships exactly one no-JavaScript notice.
   //
   // This is asserted here, over all 275 built documents, rather than in the

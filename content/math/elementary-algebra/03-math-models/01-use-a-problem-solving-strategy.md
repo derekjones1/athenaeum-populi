@@ -394,7 +394,7 @@ Is their sum 1? $-3 + 4 = 1$. Yes, it checks!
 
 {{< fillin
   question="One number is three more than three times another. Their sum is -5. Find the smaller of the two numbers."
-  answer="-2"
+  answer="-3"
   hint="Let x = the first number and $3x + 3$ = the second. Their sum is $x + (3x + 3) = -5$."
 >}}
 

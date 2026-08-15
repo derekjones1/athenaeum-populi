@@ -578,6 +578,33 @@ malformed block — an under-filled group, a group that is not an objective,
 groups out of order, an exercise outside any group, too few exercises
 overall, wrong placement, or a duplicate heading — is a lint error too.
 
+### Notation the grader cannot take yet
+
+The Compute Engine's LaTeX reader, not this repository, sets these limits.
+Each was confirmed by running the notation through the real grader. Three of
+them fail LOUDLY — `verify-section` reports the answer as ungradeable, so the
+page cannot ship — and one used to fail silently until the nonsense-parse
+guard was added. Do not spend authoring time fighting them; write the exercise
+another way, or extend `preprocess()` first and add the test with it.
+
+| Notation | Where it would arise | What happens |
+| --- | --- | --- |
+| `\langle a,b\rangle` | vector component form | parses invalid |
+| `\binom{n}{k}` | binomial theorem | parses invalid |
+| `\lim_{x\to0^+}` | one-sided limits | parses invalid |
+| `{}_nP_r`, `{}_nC_r` | permutations, combinations | parses as a nonsense product; caught by the nonsense-parse guard in `verify-section` |
+| `D`, `N` as variables | `D` for distance, `N` for a count | reserved by the engine as the derivative and numeric-evaluation operators; any answer using them is ungradeable. Rename the variable (`d`, `n`). |
+
+`^\circ` is exact, not decorative: the engine converts it, so `30^\circ`
+and `\frac{\pi}{6}` are the same value and each is accepted for the other.
+A prompt that must have degrees (or must have radians) cannot get that from
+the value check — say so in the question.
+
+`{{< graphplot >}}` grades three answer shapes only — a line, a system of two
+lines, and a quadratic. Any other curve (exponential, logarithmic, sinusoid,
+conic, polar) needs a static inline SVG figure with a `fillin` or
+`multiplechoice` question about it, not an interactive plot.
+
 ## 4. Verify (the workflow)
 
 From the repository root:

@@ -166,9 +166,9 @@ $y > 2x - 1$. Since the boundary line is solid, the inequality includes the
 equal sign, so the graph shows $y \geq 2x - 1$.
 
 {{< fillin
-  question="A dashed boundary line $y = -2x + 3$ is graphed, and the region above and to the left of the line is shaded (this region contains the point $(0, 0)$). Write the complete inequality shown by the graph, solved for y."
-  answer="y>-2x+3"
-  answerDisplay="$y > -2x + 3$"
+  question="A dashed boundary line $y = -2x + 3$ is graphed, and the region below and to the left of the line is shaded (this region contains the point $(0, 0)$). Write the complete inequality shown by the graph, solved for y."
+  answer="y<-2x+3"
+  answerDisplay="$y < -2x + 3$"
   hint="Test the point $(0, 0)$ in both $y > -2x + 3$ and $y < -2x + 3$ to see which is true, then use > or < depending on whether the line is dashed or solid."
 >}}
 

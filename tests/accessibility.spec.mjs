@@ -295,6 +295,57 @@ test('fill-in accessible names speak math instead of exposing raw TeX', async ({
   ).toBe(true);
 });
 
+test('a focused fill-in keeps its accessible name, and the shadow controls have one', async ({
+  page,
+}) => {
+  // MathLive BLANKS the keyboard sink's aria-label as it takes focus — the
+  // same reaction it has to `readonly`. Labelling only at mount left the
+  // element that actually receives the caret unnamed from the first CLICK
+  // onward (programmatic .focus() does not reproduce it), and it never
+  // self-healed on blur, so a screen reader announced an unnamed edit box for
+  // the rest of the session on the site's primary exercise type. Its two
+  // shadow icon buttons ship with no name of their own at all.
+  const path =
+    '/math/elementary-algebra/09-roots-and-radicals/' +
+    '01-simplify-and-use-square-roots/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  const field = page.locator('math-field').first();
+  const names = () =>
+    field.evaluate((el) => ({
+      host: el.getAttribute('aria-label'),
+      sink: el.shadowRoot
+        ?.querySelector('[part~="keyboard-sink"]')
+        ?.getAttribute('aria-label'),
+      keyboardToggle: el.shadowRoot
+        ?.querySelector('[part~="virtual-keyboard-toggle"]')
+        ?.getAttribute('aria-label'),
+      menuToggle: el.shadowRoot
+        ?.querySelector('[part~="menu-toggle"]')
+        ?.getAttribute('aria-label'),
+    }));
+
+  const before = await names();
+  expect(before.sink, 'the sink is named before focus').toBe(before.host);
+
+  // A real pointer focus, which is what triggers MathLive's blanking.
+  await field.click();
+  await expect
+    .poll(async () => (await names()).sink, {
+      message: 'the sink must be re-named after focus, not left blank',
+    })
+    .toBe(before.host);
+
+  await page.keyboard.type('15');
+  const typed = await names();
+  expect(typed.sink, 'the name survives typing').toBe(before.host);
+  // Visible role="button" controls need a name; MathLive leaves them bare.
+  expect(typed.keyboardToggle, 'virtual-keyboard toggle is named').toBeTruthy();
+  expect(typed.menuToggle, 'menu toggle is named').toBeTruthy();
+});
+
 test('multiple-choice option names speak math instead of exposing raw TeX', async ({
   page,
 }) => {

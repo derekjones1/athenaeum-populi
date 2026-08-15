@@ -493,9 +493,9 @@ $$
 
 {{< fillin
   question="Simplify: $\tfrac{2}{4 - \sqrt{6}}$."
-  answer="\frac{2(4 + \sqrt{6})}{10}"
+  answer="\frac{4 + \sqrt{6}}{5}"
   answerForm="simplified-radical"
-  answerDisplay="$\tfrac{2\left(4 + \sqrt{6}\right)}{10}$"
+  answerDisplay="$\tfrac{4 + \sqrt{6}}{5}$"
   hint="Multiply the numerator and denominator by the conjugate $4 + \sqrt{6}$; the denominator becomes $16 - 6 = 10$."
 >}}
 
