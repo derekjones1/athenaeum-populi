@@ -439,3 +439,150 @@ test("tickLabels 'x' labels one axis only, and junk values are rejected", () => 
   assert.ok(!ticks.includes('−5'), 'no y tick labels');
   assert.throws(() => buildGraph({ ...GRID, tickLabels: 'both' }), /tickLabels/);
 });
+
+// ---------------------------------------------------------------------------
+// Label collision avoidance: tick digits, axis letters, and texts are
+// placement obstacles; dashed guides and axis-hugging strokes yield to text.
+// These shipped after precalculus 3.7 rendered with asymptote labels printed
+// across tick numbers, axis letters, and each other.
+
+/** the tight ink box the engine scores against (0.72em over, 0.2em under) */
+function inkBox(e) {
+  const size = Number(e.attrs.fontSize);
+  const w = measureTextWidth(e.text, size, { italic: e.attrs.fontStyle === 'italic' });
+  const X = Number(e.attrs.x), Y = Number(e.attrs.y);
+  const x0 = e.attrs.textAnchor === 'middle' ? X - w / 2 : e.attrs.textAnchor === 'end' ? X - w : X;
+  return [x0, Y - 0.72 * size, x0 + w, Y + 0.2 * size];
+}
+const boxesTouch = (p, q, shrink = 0.5) => (
+  p[0] + shrink < q[2] - shrink && q[0] + shrink < p[2] - shrink
+  && p[1] + shrink < q[3] - shrink && q[1] + shrink < p[3] - shrink);
+const segCrossesBox = (a, b, bb, shrink = 1) => {
+  const box = [bb[0] + shrink, bb[1] + shrink, bb[2] - shrink, bb[3] - shrink];
+  const d = [b[0] - a[0], b[1] - a[1]];
+  let t0 = 0, t1 = 1;
+  for (const [p, q] of [[-d[0], a[0] - box[0]], [d[0], box[2] - a[0]], [-d[1], a[1] - box[1]], [d[1], box[3] - a[1]]]) {
+    if (p === 0) { if (q < 0) return false; continue; }
+    const r = q / p;
+    if (p < 0) t0 = Math.max(t0, r); else t1 = Math.min(t1, r);
+  }
+  return t0 < t1;
+};
+
+test('auto-placed labels never print over tick digits or other labels', () => {
+  // Two figures from precalculus 3.7 that used to fail: the shifted
+  // reciprocal (its x = −2 label landed across the y-axis digit column) and
+  // the three-asymptote graph (y = 0 landed on the x digit 6, point labels
+  // on the digits 4 and 5). Every placed label must clear every other text.
+  const specs = [
+    {
+      xMin: -7, xMax: 7, yMin: -3, yMax: 7, unit: 18, tickLabels: true, tickStep: 1,
+      ariaLabel: 't', rationals: [{ num: [7, 3], den: [2, 1] }],
+      lines: [
+        { x: -2, dashed: true, arrows: false, label: 'x = −2' },
+        { y: 3, dashed: true, arrows: false, label: 'y = 3', labelSide: 'left' },
+      ],
+    },
+    {
+      xMin: -6, xMax: 8, yMin: -6, yMax: 6, unit: 20, tickLabels: true, tickStep: 1,
+      ariaLabel: 't', rationals: [{ num: [-6, 1, 1], den: [10, -7, -4, 1] }],
+      lines: [
+        { x: -2, dashed: true, arrows: false, label: 'x = −2' },
+        { x: 1, dashed: true, arrows: false, label: 'x = 1' },
+        { x: 5, dashed: true, arrows: false, label: 'x = 5' },
+        { y: 0, dashed: true, arrows: false, label: 'y = 0' },
+      ],
+    },
+    {
+      xMin: -6, xMax: 6, yMin: -7, yMax: 5, unit: 20, tickLabels: true, tickStep: 1,
+      ariaLabel: 't', rationals: [{ num: [-24, -4, 4], den: [12, 0, -9, 3] }],
+      lines: [
+        { x: -1, dashed: true, arrows: false, label: 'x = −1' },
+        { x: 2, dashed: true, arrows: false, label: 'x = 2' },
+      ],
+      points: [{ at: [-2, 0], label: '(−2, 0)' }, { at: [3, 0], label: '(3, 0)' }],
+    },
+  ];
+  for (const spec of specs) {
+    const texts = buildGraph(spec).els.filter((e) => e.tag === 'text');
+    const labels = texts.filter((e) => e.attrs.fontSize === '13' && !e.attrs.fontStyle);
+    assert.ok(labels.length >= 2, 'labels rendered');
+    for (const label of labels) {
+      for (const other of texts) {
+        if (other === label) continue;
+        assert.ok(!boxesTouch(inkBox(label), inkBox(other)),
+          `label ${JSON.stringify(label.text)} prints over ${JSON.stringify(other.text)}`);
+      }
+    }
+  }
+});
+
+test('texts annotations are placement obstacles for auto-placed labels', () => {
+  // A texts note parked exactly where the x = 0 label likes to sit (the
+  // toolkit reciprocal corridor); the label must move rather than overprint.
+  const out = buildGraph({
+    xMin: -4, xMax: 4, yMin: -4, yMax: 4, unit: 26, tickLabels: true, tickStep: 1,
+    ariaLabel: 't', rationals: [{ num: [1], den: [0, 1] }],
+    lines: [{ x: 0, dashed: true, arrows: false, label: 'x = 0', labelSide: 'right' }],
+    texts: [{ at: [1.1, 2.6], text: 'y = 1/x', anchor: 'start' }],
+  });
+  const texts = out.els.filter((e) => e.tag === 'text');
+  const label = texts.find((e) => e.text === 'x = 0');
+  const note = texts.find((e) => e.text === 'y = 1/x');
+  assert.ok(!boxesTouch(inkBox(label), inkBox(note)), 'x = 0 label prints over the texts note');
+});
+
+test('dashed guide lines are emitted gapped behind label ink', () => {
+  const out = buildGraph({
+    ...GRID, tickLabels: true, tickStep: 2, ariaLabel: 't',
+    lines: [{ x: 0, dashed: true, arrows: false }],
+    points: [{ at: [0.7, 3], label: 'level point', labelSide: 'w' }],
+  });
+  const label = out.els.find((e) => e.tag === 'text' && e.text === 'level point');
+  const bb = inkBox(label);
+  const dashed = out.els.filter((e) => e.tag === 'line' && e.attrs.strokeDasharray === '6 5');
+  assert.ok(dashed.length >= 2, 'the dashed line splits around the label');
+  for (const l of dashed) {
+    assert.ok(!segCrossesBox([+l.attrs.x1, +l.attrs.y1], [+l.attrs.x2, +l.attrs.y2], bb, -2),
+      'a dashed stroke crosses the label box it should yield to');
+  }
+});
+
+test('dashed strokes gap at tick digits; solid curves stay continuous', () => {
+  // The dashed asymptote at x = 3 runs straight through its own tick digit,
+  // so its dashes gap there — invisible in a dash pattern. The reciprocal
+  // itself hugs the axis across the digit row and must NOT gap: a solid
+  // curve with chunks missing reads as dashing, which is a mathematical
+  // statement (this shipped once and looked exactly that wrong).
+  const out = buildGraph({
+    xMin: -4, xMax: 4, yMin: -4, yMax: 4, unit: 26, tickLabels: true, tickStep: 1,
+    ariaLabel: 't', rationals: [{ num: [1], den: [0, 1] }],
+    lines: [{ x: 3, dashed: true, arrows: false }],
+  });
+  const digits = out.els.filter((e) => e.tag === 'text' && e.attrs.fontSize === '11');
+  const dashed = out.els.filter((e) => e.tag === 'line' && e.attrs.strokeDasharray === '6 5');
+  assert.ok(dashed.length >= 2, 'the dashed line splits around its own tick digit');
+  for (const d of digits) {
+    const bb = inkBox(d);
+    for (const l of dashed) {
+      assert.ok(!segCrossesBox([+l.attrs.x1, +l.attrs.y1], [+l.attrs.x2, +l.attrs.y2], bb),
+        `a dashed stroke prints through tick digit ${JSON.stringify(d.text)}`);
+    }
+  }
+  assert.equal(polylines(out).length, 2,
+    'the reciprocal keeps one unbroken polyline per branch — solid strokes never gap');
+});
+
+test('the origin-adjacent x and y digits never print through each other', () => {
+  const out = buildGraph({
+    xMin: -7, xMax: 7, yMin: -3, yMax: 7, unit: 18, tickLabels: true, tickStep: 1, ariaLabel: 't',
+  });
+  const digits = out.els.filter((e) => e.tag === 'text' && e.attrs.fontSize === '11');
+  for (let i = 0; i < digits.length; i++) {
+    for (let j = i + 1; j < digits.length; j++) {
+      assert.ok(!boxesTouch(inkBox(digits[i]), inkBox(digits[j])),
+        `tick digits ${digits[i].text} and ${digits[j].text} overlap`);
+    }
+  }
+});
+

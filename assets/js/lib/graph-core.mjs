@@ -35,8 +35,11 @@
  *                        year axis reads 1975 while a count axis reads 2,200
  *   maxWidth             CSS max-width (default viewBox width + 20)
  *
- *   points:   [{ at:[x,y], label?, labelSide?, open? }]
+ *   points:   [{ at:[x,y], label?, labelSide?, labelNudge?, open? }]
  *             labelSide: 'e','w','n','s','ne','nw','se','sw' (else auto)
+ *             labelNudge: [dx,dy] px offset applied to the placed label —
+ *             for the rare label that must sit a few px off its natural
+ *             station to clear a curve (pair it with labelSide)
  *             open: true → hollow dot
  *   lines:    [{ through:[[x,y],[x,y]] | slope+intercept | x | y,
  *                label?, labelSide?, labelAt?, dashed?, arrows? }]
@@ -253,6 +256,7 @@ export function buildGraph(props) {
   const allSegments = [...segments]
   const obstacles = [] // px segments labels must clear
   const labelBoxes = [] // placed label bboxes [x0,y0,x1,y1]
+  const strokeGapBoxes = [] // tick digits + axis letters; strokes pass BEHIND these
   const dotPx = [] // plotted dot centres
   const arrowTips = [] // arrowhead tip px points
 
@@ -286,6 +290,51 @@ export function buildGraph(props) {
     }
     if (t0 > t1) return null
     return [[a[0] + t0 * d[0], a[1] + t0 * d[1]], [a[0] + t1 * d[0], a[1] + t1 * d[1]]]
+  }
+
+  /** t-interval (within [0,1]) where segment a→b passes through box bb, or null */
+  function segBoxInterval(a, b, bb) {
+    const d = [b[0] - a[0], b[1] - a[1]]
+    let t0 = 0, t1 = 1
+    for (const [p, q] of [[-d[0], a[0] - bb[0]], [d[0], bb[2] - a[0]], [-d[1], a[1] - bb[1]], [d[1], bb[3] - a[1]]]) {
+      if (p === 0) { if (q < 0) return null; continue }
+      const r = q / p
+      if (p < 0) t0 = Math.max(t0, r); else t1 = Math.min(t1, r)
+    }
+    return t0 < t1 ? [t0, t1] : null
+  }
+
+  /** t-intervals of segment a→b OUTSIDE every gap box (inflated by pad) */
+  function outsideGapRuns(a, b, pad = 1.5, boxes = strokeGapBoxes) {
+    const cuts = []
+    for (const bb of boxes) {
+      const iv = segBoxInterval(a, b, [bb[0] - pad, bb[1] - pad, bb[2] + pad, bb[3] + pad])
+      if (iv) cuts.push(iv)
+    }
+    if (!cuts.length) return [[0, 1]]
+    cuts.sort((p, q) => p[0] - q[0])
+    const runs = []
+    let t = 0
+    for (const [c0, c1] of cuts) {
+      if (c0 > t + 1e-6) runs.push([t, Math.min(c0, 1)])
+      t = Math.max(t, c1)
+      if (t >= 1) break
+    }
+    if (t < 1 - 1e-6) runs.push([t, 1])
+    return runs
+  }
+
+  /** Draw a DASHED segment a→b as sub-segments that pass BEHIND tick digits
+      and axis letters — a dashed asymptote must not strike through the
+      number at its own tick, and a gap in a dash pattern is invisible.
+      Solid strokes never take these gaps: a solid line or curve with chunks
+      missing reads as dashing, which is a mathematical statement. */
+  function addGappedLine(a, b, extra) {
+    for (const [s0, s1] of outsideGapRuns(a, b)) {
+      const p = [a[0] + (b[0] - a[0]) * s0, a[1] + (b[1] - a[1]) * s0]
+      const q = [a[0] + (b[0] - a[0]) * s1, a[1] + (b[1] - a[1]) * s1]
+      add('line', segAttrs(p, q, extra))
+    }
   }
 
   function arrowhead(tip, dir) {
@@ -406,9 +455,24 @@ export function buildGraph(props) {
   if (xMin < 0) arrowhead([gx0 - OVER, axisY], [-1, 0])
   if (yMin < 0) arrowhead([axisX, gy1 + OVER], [0, 1])
   obstacles.push([[gx0 - OVER, axisY], [gx1 + OVER, axisY]], [[axisX, gy0 - OVER], [axisX, gy1 + OVER]])
-  // axis letters just off the arrow tips
+  // Tight ink box of a text node, for collision scoring. Exact advance
+  // widths (no fit-pass safety), ascent/descent bounds of the glyphs this
+  // stack actually inks — the fit pass keeps its own wider margins.
+  const tightBox = (x, y, text, anchor, size, italic = false) => {
+    const w = measureTextWidth(text, size, { italic })
+    const x0 = anchor === 'middle' ? x - w / 2 : anchor === 'end' ? x - w : x
+    return [x0, y - 0.72 * size, x0 + w, y + 0.2 * size]
+  }
+
+  // axis letters just off the arrow tips — registered as label obstacles, so
+  // an auto-placed label cannot print over the x/y letter
   add('text', { x: fmt(gx1 + OVER - 2), y: fmt(axisY - 8), fontSize: String(FS), fill: 'currentColor', textAnchor: 'end', fontStyle: 'italic' }, xLabel)
   add('text', { x: fmt(axisX + 8), y: fmt(gy0 - OVER + 10), fontSize: String(FS), fill: 'currentColor', fontStyle: 'italic' }, yLabel)
+  const xLetterBox = tightBox(gx1 + OVER - 2, axisY - 8, xLabel, 'end', FS, true)
+  const yLetterBox = tightBox(axisX + 8, gy0 - OVER + 10, yLabel, 'start', FS, true)
+  labelBoxes.push(xLetterBox, yLetterBox)
+  strokeGapBoxes.push(xLetterBox, yLetterBox)
+  if (caption) labelBoxes.push(tightBox(W / 2, 14, caption, 'middle', FS))
 
   if (tickLabels !== undefined && tickLabels !== true && tickLabels !== false
     && tickLabels !== 'x' && tickLabels !== 'y') {
@@ -431,6 +495,7 @@ export function buildGraph(props) {
     // get labeled axes. The origin label is dropped only when both axes
     // actually cross there and the single "0" would be ambiguous.
     const originShown = xMin <= 0 && xMax >= 0 && yMin <= 0 && yMax >= 0
+    const xDigits = [], yDigits = []
     const firstX = Math.ceil(xMin / xTickStep) * xTickStep
     const xCount = wantX && firstX <= xMax ? stepCount(firstX, xMax, xTickStep, 'xTickStep') : 0
     for (let index = 0; index < xCount; index++) {
@@ -438,7 +503,8 @@ export function buildGraph(props) {
       if (originShown && Math.abs(mx) < GEOMETRY_EPSILON) continue
       const cx = px([mx, 0])[0]
       add('line', segAttrs([cx, axisY - 3], [cx, axisY + 3], { strokeWidth: '1' }))
-      add('text', { x: fmt(cx), y: fmt(axisY + 4 + tickFS), fontSize: String(tickFS), fill: 'currentColor', textAnchor: 'middle' }, fmtTick(mx, xTickGrouping))
+      const el = { tag: 'text', attrs: { x: fmt(cx), y: fmt(axisY + 4 + tickFS), fontSize: String(tickFS), fill: 'currentColor', textAnchor: 'middle' }, text: fmtTick(mx, xTickGrouping) }
+      els.push(el); xDigits.push(el)
     }
     const firstY = Math.ceil(yMin / yTickStep) * yTickStep
     const yCount = wantY && firstY <= yMax ? stepCount(firstY, yMax, yTickStep, 'yTickStep') : 0
@@ -447,8 +513,39 @@ export function buildGraph(props) {
       if (originShown && Math.abs(my) < GEOMETRY_EPSILON) continue
       const cy = px([0, my])[1]
       add('line', segAttrs([axisX - 3, cy], [axisX + 3, cy], { strokeWidth: '1' }))
-      add('text', { x: fmt(axisX - 6), y: fmt(cy + 4), fontSize: String(tickFS), fill: 'currentColor', textAnchor: 'end' }, fmtTick(my, yTickGrouping))
+      const el = { tag: 'text', attrs: { x: fmt(axisX - 6), y: fmt(cy + 4), fontSize: String(tickFS), fill: 'currentColor', textAnchor: 'end' }, text: fmtTick(my, yTickGrouping) }
+      els.push(el); yDigits.push(el)
     }
+    // On a dense grid the x digit and y digit nearest the origin share the
+    // third-quadrant corner cell (both spell "−1"); slide the y digit LEFT
+    // along its row until it clears, the way set type does, instead of
+    // printing the two digits through each other. Every digit box then
+    // becomes a placement obstacle, so auto-placed labels cannot print over
+    // tick numbers, and a stroke-gap box, so lines and curves pass behind
+    // the numbers rather than through them.
+    const xDigitBoxes = xDigits.map((el) => tightBox(+el.attrs.x, +el.attrs.y, el.text, 'middle', tickFS))
+    const yDigitBoxes = yDigits.map((el) => tightBox(+el.attrs.x, +el.attrs.y, el.text, 'end', tickFS))
+    const overlaps = (p, q) => (
+      Math.min(p[2], q[2]) - Math.max(p[0], q[0]) > 0
+      && Math.min(p[3], q[3]) - Math.max(p[1], q[1]) > 0)
+    yDigits.forEach((el, i) => {
+      // The x digit row cannot make room sideways (its gaps are narrower
+      // than any digit), so a colliding y digit drops just BELOW the row —
+      // set type does the same. If even that space is taken (a next y digit
+      // is already there), keep the original position: the figure is too
+      // dense for this tick labeling and the layout check will say so.
+      const bb = yDigitBoxes[i]
+      const hits = xDigitBoxes.filter((xb) => overlaps(bb, xb))
+      if (!hits.length) return
+      const clearTop = Math.max(...hits.map((xb) => xb[3])) + 1
+      const dropped = [bb[0], clearTop, bb[2], clearTop + (bb[3] - bb[1])]
+      const others = [...xDigitBoxes, ...yDigitBoxes.filter((_, j) => j !== i)]
+      if (others.some((ob) => overlaps(dropped, ob))) return
+      el.attrs.y = fmt(+el.attrs.y + (clearTop - bb[1]))
+      yDigitBoxes[i] = dropped
+    })
+    labelBoxes.push(...xDigitBoxes, ...yDigitBoxes)
+    strokeGapBoxes.push(...xDigitBoxes, ...yDigitBoxes)
   }
 
   if (quadrantLabels) {
@@ -465,13 +562,19 @@ export function buildGraph(props) {
   // --- 4. guides (dashed crosshair to a point) ------------------------------
   for (const g of guides) {
     const p = px(g)
-    add('line', segAttrs([p[0], axisY], p, { strokeWidth: '1', strokeDasharray: '4 3', opacity: '0.7' }))
-    add('line', segAttrs([axisX, p[1]], p, { strokeWidth: '1', strokeDasharray: '4 3', opacity: '0.7' }))
+    addGappedLine([p[0], axisY], p, { strokeWidth: '1', strokeDasharray: '4 3', opacity: '0.7' })
+    addGappedLine([axisX, p[1]], p, { strokeWidth: '1', strokeDasharray: '4 3', opacity: '0.7' })
     obstacles.push([[p[0], axisY], p], [[axisX, p[1]], p])
   }
 
   // --- 5. lines --------------------------------------------------------------
+  // A DASHED line is guide ink (an asymptote, a boundary), so it yields to
+  // label ink the way print art does: its stroke is emitted only after the
+  // label placement pass below, gapped around every label box it crosses.
+  // The element still lands at THIS index (spliced), keeping paint order —
+  // and solid lines, axes, and curves never yield.
   const pendingLineLabels = []
+  const deferredLineStrokes = []
   for (const l of allLines) {
     const [A, B] = lineAnchors(l)
     const clipped = clipLine(A, B)
@@ -483,9 +586,13 @@ export function buildGraph(props) {
     // shorten by arrowhead length so the shaft doesn't poke past the tip
     const s0 = arrows ? [P0[0] + AH * dir[0], P0[1] + AH * dir[1]] : P0
     const s1 = arrows ? [P1[0] - AH * dir[0], P1[1] - AH * dir[1]] : P1
-    add('line', segAttrs(s0, s1, { strokeWidth: '1.8', ...dash }))
+    if (l.dashed) {
+      deferredLineStrokes.push({ index: els.length, a: s0, b: s1, extra: { strokeWidth: '1.8', ...dash } })
+    } else {
+      add('line', segAttrs(s0, s1, { strokeWidth: '1.8', ...dash }))
+    }
     if (arrows) { arrowhead(P1, dir); arrowhead(P0, [-dir[0], -dir[1]]) }
-    obstacles.push([P0, P1])
+    obstacles.push({ seg: [P0, P1], soft: !!l.dashed })
     if (l.label) pendingLineLabels.push({ l, P0, P1, dir })
   }
 
@@ -806,7 +913,8 @@ export function buildGraph(props) {
     const dir = norm(sub(b, a))
     const s0 = headStart ? [a[0] + AH * dir[0], a[1] + AH * dir[1]] : a
     const s1 = headEnd ? [b[0] - AH * dir[0], b[1] - AH * dir[1]] : b
-    add('line', segAttrs(s0, s1, { strokeWidth: '1.4', ...(s.dashed ? { strokeDasharray: '4 3' } : {}) }))
+    if (s.dashed) addGappedLine(s0, s1, { strokeWidth: '1.4', strokeDasharray: '4 3' })
+    else add('line', segAttrs(s0, s1, { strokeWidth: '1.4' }))
     if (headEnd) arrowhead(b, dir)
     if (headStart) arrowhead(a, [-dir[0], -dir[1]])
     obstacles.push([a, b])
@@ -828,6 +936,25 @@ export function buildGraph(props) {
     })
     if (p.label) placed.push({ p, c })
   }
+
+  // --- raw text annotations, computed before placement ----------------------
+  // texts are the exact-placement escape hatch: they are never moved, but
+  // their ink is registered as an obstacle BEFORE the placement pass below,
+  // so auto-placed labels route around them instead of printing through them.
+  // They are still EMITTED after the placed labels, keeping element order
+  // (and therefore serialized output) stable for unaffected figures.
+  const textAnnotations = texts.map((t) => {
+    const p = px(t.at)
+    const size = t.fontSize ? t.fontSize * fsScale : FS
+    const attrs = {
+      x: fmt(p[0] + (t.dx || 0)), y: fmt(p[1] + (t.dy || 0)),
+      fontSize: String(size), fill: 'currentColor',
+      ...(t.anchor ? { textAnchor: t.anchor } : {}),
+      ...(t.italic ? { fontStyle: 'italic' } : {}),
+    }
+    labelBoxes.push(tightBox(+attrs.x, +attrs.y, mathMinus(t.text), t.anchor || 'start', size, !!t.italic))
+    return { attrs, text: mathMinus(t.text) }
+  })
 
   // --- label placement -----------------------------------------------------
   const SIDES = {
@@ -852,8 +979,24 @@ export function buildGraph(props) {
 
   function scoreBox(bb) {
     let worst = Infinity
+    for (const o of obstacles) {
+      const [a, b] = o.seg ?? o
+      for (const q of boxPoints(bb)) worst = Math.min(worst, distToSeg(q, a, b))
+      // A stroke PASSING THROUGH the box is worse than any near miss: score
+      // it negative by penetration depth, or a label prefers sitting across
+      // the y-axis (distance zero) over sitting 2px from a curve (distance
+      // two). A SOFT obstacle (a dashed guide, which is emitted gapped
+      // around label ink) costs a mild flat penalty instead, so the pocket
+      // print art would use — over the dashed asymptote — stays available.
+      const iv = segBoxInterval(a, b, bb)
+      if (iv) {
+        const [t0, t1] = iv
+        const m = [a[0] + (b[0] - a[0]) * (t0 + t1) / 2, a[1] + (b[1] - a[1]) * (t0 + t1) / 2]
+        const depth = Math.min(m[0] - bb[0], bb[2] - m[0], m[1] - bb[1], bb[3] - m[1])
+        if (depth > 0) worst = Math.min(worst, o.soft ? -1.5 : -depth - 2)
+      }
+    }
     for (const q of boxPoints(bb)) {
-      for (const [a, b] of obstacles) worst = Math.min(worst, distToSeg(q, a, b))
       for (const d of dotPx) worst = Math.min(worst, len(sub(q, d)) - 4)
       for (const t of arrowTips) worst = Math.min(worst, len(sub(q, t)) - 6)
     }
@@ -892,7 +1035,7 @@ export function buildGraph(props) {
     }, mathMinus(text))
   }
 
-  for (const { p, c } of placed) placeLabel(c, p.label, p.labelSide)
+  for (const { p, c } of placed) placeLabel(c, p.label, p.labelSide, p.labelNudge)
 
   // line + segment labels
   for (const item of pendingLineLabels) {
@@ -913,11 +1056,14 @@ export function buildGraph(props) {
       return { ap, anchor, bb, sc: scoreBox(bb) - dist * 0.05 }
     }
     const want = l.labelSide === 'left' ? -1 : l.labelSide === 'right' ? 1 : 0
-    const ts = l.labelAt !== undefined ? [l.labelAt] : [0.78, 0.62, 0.86, 0.4, 0.25]
+    // Enough stations along the line that a crowded figure (tick digits,
+    // texts annotations, and curve branches all registered as obstacles)
+    // still has somewhere clean to stand.
+    const ts = l.labelAt !== undefined ? [l.labelAt] : [0.78, 0.62, 0.86, 0.4, 0.25, 0.92, 0.5, 0.12]
     let best = null
     outer: for (const t of ts) {
       for (const sgn of want ? [want] : [1, -1]) {
-        for (const dist of [16 * fsScale, 22 * fsScale]) {
+        for (const dist of [16 * fsScale, 22 * fsScale, 28 * fsScale]) {
           const cand = tryPlace(t, sgn, dist)
           if (!best || cand.sc > best.sc) best = cand
           if (best.sc >= 8) break outer
@@ -931,16 +1077,24 @@ export function buildGraph(props) {
     }, mathMinus(l.label))
   }
 
-  // --- 9. raw text annotations ------------------------------------------------
-  for (const t of texts) {
-    const p = px(t.at)
-    add('text', {
-      x: fmt(p[0] + (t.dx || 0)), y: fmt(p[1] + (t.dy || 0)),
-      fontSize: String(t.fontSize ? t.fontSize * fsScale : FS), fill: 'currentColor',
-      ...(t.anchor ? { textAnchor: t.anchor } : {}),
-      ...(t.italic ? { fontStyle: 'italic' } : {}),
-    }, mathMinus(t.text))
+  // --- 8b. deferred dashed guide strokes ------------------------------------
+  // Every label box is final now, so each dashed line can be emitted gapped
+  // around the label ink it crosses, spliced back at its original position
+  // so paint order is unchanged. Reverse order keeps earlier recorded
+  // indexes valid while splicing.
+  const yieldBoxes = [...strokeGapBoxes, ...labelBoxes]
+  for (const d of [...deferredLineStrokes].reverse()) {
+    const parts = []
+    for (const [s0, s1] of outsideGapRuns(d.a, d.b, 2, yieldBoxes)) {
+      const p = [d.a[0] + (d.b[0] - d.a[0]) * s0, d.a[1] + (d.b[1] - d.a[1]) * s0]
+      const q = [d.a[0] + (d.b[0] - d.a[0]) * s1, d.a[1] + (d.b[1] - d.a[1]) * s1]
+      parts.push({ tag: 'line', attrs: segAttrs(p, q, d.extra) })
+    }
+    els.splice(d.index, 0, ...parts)
   }
+
+  // --- 9. raw text annotations (attrs computed above, before placement) -----
+  for (const t of textAnnotations) add('text', t.attrs, t.text)
 
   // Fit pass: no label can clip, ever. Coordinates are untouched — only the
   // viewBox grows to cover what the placement pass let stick out.

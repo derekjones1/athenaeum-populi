@@ -39,7 +39,11 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
 
 - `npm run serve` — local Hugo server
 - `npm run serve:public` — serve the built `public/` with no livereload
-- `npm test` — unit tests, content validation, answer cross-check, math lint
+- `npm test` — unit tests, content validation, answer cross-check, math
+  lint, figure label readability
+- `npm run check:figures` — build every spec-first figure and fail on any
+  label printed across other ink (part of `npm test`); legacy `data-spec`
+  figures are previewed as their eventual spec-first re-renders, non-gating
 - `npm run verify:replay` — replay every printed question span (source and
   MathLive-normalized spellings) through the grader so no exercise is passable
   by retyping its own prompt; holds a `--min-replayed` FLOOR so the gate

@@ -499,13 +499,57 @@ off, and fonts scale up before a dense figure can shrink its text below
 legibility. Author the mathematical objects and let the engine place them;
 `labelSide` is honored exactly as written wherever you state it.
 
-Layout is machine-checked, twice: the lint builds every authored spec
+The placement pass treats tick digits, the axis letters, `texts`
+annotations, and every already-placed label as obstacles, and it scores a
+stroke passing *through* a candidate box far below one merely nearby — so a
+label routes around the y-axis digit column instead of printing across it.
+Dashed ink also yields the way print art does: dashed guide lines
+(asymptotes, boundaries) are emitted gapped behind any label ink or tick
+digit they cross — a gap in a dash pattern is invisible — and the two
+digits that share the corner cell by the origin de-collide on their own.
+SOLID strokes never gap: a solid curve with chunks missing reads as
+dashing, which is a mathematical statement, so a curve hugging the axis
+draws straight over the digit row exactly as the source books print it.
+The practical consequence for authoring: **write line labels with no
+`labelSide`/`labelAt` pins first** and let the engine choose — a pin is
+honored even into a collision, so state one only to express meaning the
+engine cannot know. For the rare point label that must sit a few pixels off
+its chosen side to clear a curve, `labelNudge: [dx, dy]` (px) shifts it
+without giving up placement scoring; a `texts` entry remains the full
+escape hatch and is never moved.
+
+**Leave a blank line on both sides of the shortcode.** `<ap-figure>` is a
+custom element, so Goldmark does not treat it as an HTML block the way it
+treated the pasted `<div class="ap-figure">` it replaces: welded to the text
+around it, the figure is parsed as inline HTML *inside* that paragraph, and
+every shortcode that follows it up to the next blank line is pulled into the
+same paragraph. The browser then re-parents those `<div>`s out of the `<p>`,
+leaving empty `<fill-in>` / `<multiple-choice>` hosts whose
+`connectedCallback` throws and whose exercise never renders — three exercises
+were lost this way converting precalculus 3.7. The lint enforces the blank
+lines; `tests/figures.spec.mjs` catches the console errors that follow if it
+ever does not.
+
+Layout is machine-checked, three ways: the lint builds every authored spec
 through the real engine (a spec that cannot build fails `npm test`, not the
-reader's browser), and `tests/figures.spec.mjs` renders every page carrying
+reader's browser); `tests/figures.spec.mjs` renders every page carrying
 an `<ap-figure>` in both colour schemes and fails on any text outside the
-fitted viewBox or any console error. What the machines cannot check is
-FIDELITY — that the figure says what the source figure says — so the visual
-comparison against the PDF remains part of authoring (below).
+fitted viewBox or any console error; and the readability gate
+
+```
+npm run check:figures            # or: node tools/check-figure-overlaps.mjs <page.md>
+```
+
+builds every spec-first figure and fails on any label printed across other
+ink deeper than a 3px graze (it runs inside `npm test`). A solid stroke
+crossing a tick digit is reported but never gated — print art draws over
+axis numbers too — while a dashed stroke crossing one IS gated, because the
+engine gaps dashes behind digits and a crossing means that failed. The same
+run previews every legacy `data-spec` figure as the spec-first re-render it
+will get at conversion and reports — without gating — the ones that would
+need label work then. What the machines cannot check is FIDELITY — that the
+figure says what the source figure says — so the visual comparison against
+the PDF remains part of authoring (below).
 
 To eyeball a spec while authoring without a Hugo server, print it as
 standalone SVG:
