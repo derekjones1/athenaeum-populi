@@ -141,6 +141,7 @@ export const PAIRED_SHORTCODES = Object.freeze({
   fillin: false,
   multiplechoice: true,
   graphplot: true,
+  apfigure: true,
   callout: true,
 });
 

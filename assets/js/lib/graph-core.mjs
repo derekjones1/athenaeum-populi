@@ -98,10 +98,65 @@
  */
 
 import { GEOMETRY_EPSILON } from './geometry-constants.mjs'
+import { fitTextBox, measureTextWidth } from './text-metrics.mjs'
 
 const FONT = 13
-const CHAR_W = 6.9 // ≈ px per character at fontSize 13
+const MIN_EFFECTIVE_FONT = 12 // px on screen, after any CSS max-width shrink
 const MAX_GENERATED_STEPS = 10_000
+
+/**
+ * Text can be placed only from measured widths, never estimated ones, and a
+ * figure that renders below MIN_EFFECTIVE_FONT is illegible: when the
+ * builder's natural width exceeds its CSS max-width, the base font scales UP
+ * so the on-screen size never drops below the floor.
+ */
+function fontFloor(naturalWidth, maxWidth) {
+  const shrink = Math.min(1, maxWidth / naturalWidth)
+  return Math.max(FONT, Math.ceil((MIN_EFFECTIVE_FONT / shrink) * 2) / 2)
+}
+
+/**
+ * Final fit pass: expand the viewBox to cover every element the builder
+ * emitted, so no label (or out-of-grid annotation) can ever clip. Sides that
+ * nothing crosses stay exactly at the natural 0/0/W/H, so an in-bounds
+ * figure keeps its historical viewBox byte for byte. `<path>` data is the one
+ * shape not parsed here: paths come from circle arcs and smoothCurve
+ * beziers, both bounded by grid geometry that never approaches the margin.
+ */
+function fitViewBox(els, W, H) {
+  let x0 = 0, y0 = 0, x1 = W, y1 = H
+  const eat = (x, y, pad = 2) => {
+    if (!Number.isFinite(x) || !Number.isFinite(y)) return
+    x0 = Math.min(x0, x - pad); y0 = Math.min(y0, y - pad)
+    x1 = Math.max(x1, x + pad); y1 = Math.max(y1, y + pad)
+  }
+  for (const { tag, attrs, text } of els) {
+    if (tag === 'text') {
+      const b = fitTextBox({
+        x: attrs.x, y: attrs.y, text,
+        fontSize: attrs.fontSize || FONT,
+        textAnchor: attrs.textAnchor,
+        italic: attrs.fontStyle === 'italic',
+      })
+      eat(b[0], b[1], 0); eat(b[2], b[3], 0)
+    } else if (tag === 'line') {
+      eat(+attrs.x1, +attrs.y1); eat(+attrs.x2, +attrs.y2)
+    } else if (tag === 'polyline' || tag === 'polygon') {
+      for (const pair of String(attrs.points).trim().split(/\s+/)) {
+        const [x, y] = pair.split(',')
+        eat(+x, +y)
+      }
+    } else if (tag === 'circle') {
+      const r = +attrs.r
+      eat(+attrs.cx - r, +attrs.cy - r); eat(+attrs.cx + r, +attrs.cy + r)
+    } else if (tag === 'ellipse') {
+      eat(+attrs.cx - +attrs.rx, +attrs.cy - +attrs.ry)
+      eat(+attrs.cx + +attrs.rx, +attrs.cy + +attrs.ry)
+    }
+  }
+  const x = Math.floor(x0), y = Math.floor(y0)
+  return { x, y, w: Math.ceil(x1) - x, h: Math.ceil(y1) - y }
+}
 
 function stepCount(min, max, step, label) {
   const count = Math.floor((max - min) / step) + 1
@@ -176,6 +231,16 @@ export function buildGraph(props) {
   const ox = margin - xMin * ux
   const oy = mTop + yMax * uy
   const px = ([mx, my]) => [ox + ux * mx, oy - uy * my]
+
+  // CSS max-width shrinks a dense figure on screen; scale fonts so nothing
+  // renders below the legibility floor. (The fit pass can widen the final
+  // viewBox a little past W, so the shrink here is the natural-width bound —
+  // within a couple percent of the shipped one.)
+  const cssMaxWidth = props.maxWidth ?? Math.min(W + 20, 360)
+  const FS = fontFloor(W, cssMaxWidth)
+  const fsScale = FS / FONT
+  const tickFS = Math.ceil(11 * fsScale)
+  const quadrantFS = Math.ceil(15 * fsScale)
 
   // grid rectangle in px
   const gx0 = px([xMin, 0])[0], gx1 = px([xMax, 0])[0]
@@ -298,7 +363,7 @@ export function buildGraph(props) {
     }
   }
   if (caption) {
-    add('text', { x: fmt(W / 2), y: '14', fontSize: String(FONT), fill: 'currentColor', textAnchor: 'middle' }, mathMinus(caption))
+    add('text', { x: fmt(W / 2), y: '14', fontSize: String(FS), fill: 'currentColor', textAnchor: 'middle' }, mathMinus(caption))
   }
 
   // --- 2. shaded regions (under everything else) ---------------------------
@@ -342,10 +407,18 @@ export function buildGraph(props) {
   if (yMin < 0) arrowhead([axisX, gy1 + OVER], [0, 1])
   obstacles.push([[gx0 - OVER, axisY], [gx1 + OVER, axisY]], [[axisX, gy0 - OVER], [axisX, gy1 + OVER]])
   // axis letters just off the arrow tips
-  add('text', { x: fmt(gx1 + OVER - 2), y: fmt(axisY - 8), fontSize: String(FONT), fill: 'currentColor', textAnchor: 'end', fontStyle: 'italic' }, xLabel)
-  add('text', { x: fmt(axisX + 8), y: fmt(gy0 - OVER + 10), fontSize: String(FONT), fill: 'currentColor', fontStyle: 'italic' }, yLabel)
+  add('text', { x: fmt(gx1 + OVER - 2), y: fmt(axisY - 8), fontSize: String(FS), fill: 'currentColor', textAnchor: 'end', fontStyle: 'italic' }, xLabel)
+  add('text', { x: fmt(axisX + 8), y: fmt(gy0 - OVER + 10), fontSize: String(FS), fill: 'currentColor', fontStyle: 'italic' }, yLabel)
 
+  if (tickLabels !== undefined && tickLabels !== true && tickLabels !== false
+    && tickLabels !== 'x' && tickLabels !== 'y') {
+    throw new Error("tickLabels must be true, false, 'x', or 'y'")
+  }
   if (tickLabels) {
+    // `true` labels both axes; 'x' or 'y' labels one — source art sometimes
+    // numbers only the axis the discussion reads from.
+    const wantX = tickLabels === true || tickLabels === 'x'
+    const wantY = tickLabels === true || tickLabels === 'y'
     if (!Number.isFinite(xTickStep) || xTickStep <= 0) throw new Error('xTickStep must be a positive number')
     if (!Number.isFinite(yTickStep) || yTickStep <= 0) throw new Error('yTickStep must be a positive number')
     // Digit grouping is right for counts and money and wrong for years, so
@@ -359,22 +432,22 @@ export function buildGraph(props) {
     // actually cross there and the single "0" would be ambiguous.
     const originShown = xMin <= 0 && xMax >= 0 && yMin <= 0 && yMax >= 0
     const firstX = Math.ceil(xMin / xTickStep) * xTickStep
-    const xCount = firstX <= xMax ? stepCount(firstX, xMax, xTickStep, 'xTickStep') : 0
+    const xCount = wantX && firstX <= xMax ? stepCount(firstX, xMax, xTickStep, 'xTickStep') : 0
     for (let index = 0; index < xCount; index++) {
       const mx = firstX + index * xTickStep
       if (originShown && Math.abs(mx) < GEOMETRY_EPSILON) continue
       const cx = px([mx, 0])[0]
       add('line', segAttrs([cx, axisY - 3], [cx, axisY + 3], { strokeWidth: '1' }))
-      add('text', { x: fmt(cx), y: fmt(axisY + 15), fontSize: '11', fill: 'currentColor', textAnchor: 'middle' }, fmtTick(mx, xTickGrouping))
+      add('text', { x: fmt(cx), y: fmt(axisY + 4 + tickFS), fontSize: String(tickFS), fill: 'currentColor', textAnchor: 'middle' }, fmtTick(mx, xTickGrouping))
     }
     const firstY = Math.ceil(yMin / yTickStep) * yTickStep
-    const yCount = firstY <= yMax ? stepCount(firstY, yMax, yTickStep, 'yTickStep') : 0
+    const yCount = wantY && firstY <= yMax ? stepCount(firstY, yMax, yTickStep, 'yTickStep') : 0
     for (let index = 0; index < yCount; index++) {
       const my = firstY + index * yTickStep
       if (originShown && Math.abs(my) < GEOMETRY_EPSILON) continue
       const cy = px([0, my])[1]
       add('line', segAttrs([axisX - 3, cy], [axisX + 3, cy], { strokeWidth: '1' }))
-      add('text', { x: fmt(axisX - 6), y: fmt(cy + 4), fontSize: '11', fill: 'currentColor', textAnchor: 'end' }, fmtTick(my, yTickGrouping))
+      add('text', { x: fmt(axisX - 6), y: fmt(cy + 4), fontSize: String(tickFS), fill: 'currentColor', textAnchor: 'end' }, fmtTick(my, yTickGrouping))
     }
   }
 
@@ -384,7 +457,7 @@ export function buildGraph(props) {
       const qx = sx > 0 ? xMax / 2 : xMin / 2
       const qy = sy > 0 ? yMax / 2 : yMin / 2
       const q = px([qx, qy])
-      add('text', { x: fmt(q[0]), y: fmt(q[1] + 4), fontSize: '15', fill: 'currentColor', textAnchor: 'middle', opacity: '0.75' }, t)
+      add('text', { x: fmt(q[0]), y: fmt(q[1] + 4), fontSize: String(quadrantFS), fill: 'currentColor', textAnchor: 'middle', opacity: '0.75' }, t)
       labelBoxes.push([q[0] - 8, q[1] - 9, q[0] + 8, q[1] + 8])
     }
   }
@@ -763,13 +836,13 @@ export function buildGraph(props) {
     ne: [0.8, -0.8, 'start', 0], nw: [-0.8, -0.8, 'end', 0],
     se: [0.8, 0.8, 'start', 9], sw: [-0.8, 0.8, 'end', 9],
   }
-  const OFF = 14
+  const OFF = 14 * fsScale
 
   function labelBox(anchorPt, text, anchorMode) {
-    const w = String(text).length * CHAR_W
+    const w = measureTextWidth(text, FS)
     const x0 = anchorMode === 'start' ? anchorPt[0] : anchorMode === 'end' ? anchorPt[0] - w : anchorPt[0] - w / 2
-    // text y is the baseline; box spans ~FONT above it
-    return [x0, anchorPt[1] - FONT + 2, x0 + w, anchorPt[1] + 3]
+    // text y is the baseline; box spans ~FS above it
+    return [x0, anchorPt[1] - FS + 2, x0 + w, anchorPt[1] + 3]
   }
   const boxPoints = (bb) => [
     [bb[0], bb[1]], [bb[2], bb[1]], [bb[0], bb[3]], [bb[2], bb[3]],
@@ -802,17 +875,20 @@ export function buildGraph(props) {
     let best = null
     for (const side of order) {
       const [dx, dy, anchor, vAdj] = SIDES[side]
-      const ap = [c[0] + OFF * dx + nx, c[1] + OFF * dy + vAdj + ny]
+      const ap = [c[0] + OFF * dx + nx, c[1] + OFF * dy + vAdj * fsScale + ny]
       const bb = labelBox(ap, text, anchor)
       const sc = scoreBox(bb)
-      if (prefer && side === prefer && (nudge || sc > 2)) { best = { ap, anchor, bb, sc }; break }
+      // An explicit labelSide is the author's call and is always honored:
+      // clipping is impossible now that the viewBox fits itself around every
+      // label, so there is nothing left to protect the author from.
+      if (prefer && side === prefer) { best = { ap, anchor, bb, sc }; break }
       if (!best || sc > best.sc) best = { ap, anchor, bb, sc }
       if (!prefer && sc >= 10) break // good enough, keep natural reading side
     }
     labelBoxes.push(best.bb)
     add('text', {
       x: fmt(best.ap[0]), y: fmt(best.ap[1]),
-      fontSize: String(FONT), fill: 'currentColor', textAnchor: best.anchor,
+      fontSize: String(FS), fill: 'currentColor', textAnchor: best.anchor,
     }, mathMinus(text))
   }
 
@@ -830,7 +906,7 @@ export function buildGraph(props) {
     const n = [-dir[1], dir[0]] // unit normal
     const tryPlace = (t, sgn, dist) => {
       const base = [P0[0] + (P1[0] - P0[0]) * t, P0[1] + (P1[1] - P0[1]) * t]
-      const ap = [base[0] + sgn * dist * n[0], base[1] + sgn * dist * n[1] + 4]
+      const ap = [base[0] + sgn * dist * n[0], base[1] + sgn * dist * n[1] + 4 * fsScale]
       const anchor = Math.abs(n[0]) < 0.3 ? 'middle' : (sgn * n[0] > 0 ? 'start' : 'end')
       const bb = labelBox(ap, l.label, anchor)
       // small bias so tighter offsets and outer positions win ties
@@ -841,7 +917,7 @@ export function buildGraph(props) {
     let best = null
     outer: for (const t of ts) {
       for (const sgn of want ? [want] : [1, -1]) {
-        for (const dist of [16, 22]) {
+        for (const dist of [16 * fsScale, 22 * fsScale]) {
           const cand = tryPlace(t, sgn, dist)
           if (!best || cand.sc > best.sc) best = cand
           if (best.sc >= 8) break outer
@@ -851,7 +927,7 @@ export function buildGraph(props) {
     labelBoxes.push(best.bb)
     add('text', {
       x: fmt(best.ap[0]), y: fmt(best.ap[1]),
-      fontSize: String(FONT), fill: 'currentColor', textAnchor: best.anchor,
+      fontSize: String(FS), fill: 'currentColor', textAnchor: best.anchor,
     }, mathMinus(l.label))
   }
 
@@ -860,16 +936,20 @@ export function buildGraph(props) {
     const p = px(t.at)
     add('text', {
       x: fmt(p[0] + (t.dx || 0)), y: fmt(p[1] + (t.dy || 0)),
-      fontSize: String(t.fontSize || FONT), fill: 'currentColor',
+      fontSize: String(t.fontSize ? t.fontSize * fsScale : FS), fill: 'currentColor',
       ...(t.anchor ? { textAnchor: t.anchor } : {}),
       ...(t.italic ? { fontStyle: 'italic' } : {}),
     }, mathMinus(t.text))
   }
 
+  // Fit pass: no label can clip, ever. Coordinates are untouched — only the
+  // viewBox grows to cover what the placement pass let stick out.
+  const box = fitViewBox(els, W, H)
   return {
-    viewBox: `0 0 ${W} ${H}`,
-    width: W, height: H,
-    maxWidth: props.maxWidth ?? Math.min(W + 20, 360),
+    viewBox: `${box.x} ${box.y} ${box.w} ${box.h}`,
+    width: box.w, height: box.h,
+    box,
+    maxWidth: props.maxWidth ?? Math.min(box.w + 20, 360),
     ariaLabel: props.ariaLabel || 'A coordinate-plane graph.',
     els,
     // px↔math mapping, so the <graph-plot> interactive overlay shares the
@@ -1033,9 +1113,11 @@ export function buildNumberLine(props) {
     add('text', { x: fmtN(tx), y: '16', textAnchor: 'middle', fontSize: '14', fill: 'currentColor' }, mathMinus(title))
   }
 
+  const box = fitViewBox(els, W, H)
   return {
-    viewBox: `0 0 ${W} ${H}`,
-    width: W, height: H,
+    viewBox: `${box.x} ${box.y} ${box.w} ${box.h}`,
+    width: box.w, height: box.h,
+    box,
     maxWidth: props.maxWidth ?? 420,
     ariaLabel: props.ariaLabel || 'A number line.',
     els,
@@ -1102,6 +1184,10 @@ export function buildFigure(props) {
   const H = Math.round((mxY - mnY) * u + 2 * padding)
   const px = ([x, y]) => [padding + (x - mnX) * u, padding + (mxY - y) * u]
 
+  // Same legibility floor as buildGraph: fonts scale up when the CSS
+  // max-width would shrink the figure below MIN_EFFECTIVE_FONT on screen.
+  const FS = fontFloor(W, props.maxWidth ?? Math.min(W + 10, 340))
+
   const els = []
   const add = (tag, attrs, text) => { els.push(text === undefined ? { tag, attrs } : { tag, attrs, text }) }
   const seg = (a, b, extra = {}) => add('line', {
@@ -1118,7 +1204,7 @@ export function buildFigure(props) {
     const vAdj = dy > 0.35 ? 10 : dy < -0.35 ? -2 : 4
     add('text', {
       x: fmtN(pos[0]), y: fmtN(pos[1] + vAdj), textAnchor: anchor,
-      fontSize: String(FONT), fill: 'currentColor',
+      fontSize: String(FS), fill: 'currentColor',
     }, mathMinus(text))
   }
 
@@ -1250,15 +1336,17 @@ export function buildFigure(props) {
     const c = px(t.at)
     add('text', {
       x: fmtN(c[0] + (t.dx || 0)), y: fmtN(c[1] + (t.dy || 0)),
-      fontSize: String(FONT), fill: 'currentColor',
+      fontSize: String(FS), fill: 'currentColor',
       ...(t.anchor ? { textAnchor: t.anchor } : {}),
     }, mathMinus(t.text))
   }
 
+  const box = fitViewBox(els, W, H)
   return {
-    viewBox: `0 0 ${W} ${H}`,
-    width: W, height: H,
-    maxWidth: props.maxWidth ?? Math.min(W + 10, 340),
+    viewBox: `${box.x} ${box.y} ${box.w} ${box.h}`,
+    width: box.w, height: box.h,
+    box,
+    maxWidth: props.maxWidth ?? Math.min(box.w + 10, 340),
     ariaLabel: props.ariaLabel || 'A geometric figure.',
     els,
   }

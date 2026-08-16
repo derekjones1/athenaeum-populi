@@ -9,6 +9,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildGraph, buildFigure, buildNumberLine } from '../assets/js/lib/graph-core.mjs';
+import { fitTextBox, measureTextWidth } from '../assets/js/lib/text-metrics.mjs';
 
 const GRID = { xMin: -5, xMax: 5, yMin: -5, yMax: 5, unit: 20 };
 
@@ -338,4 +339,103 @@ test('figure segment arrows trim the shaft and point at the true target', () => 
   const tip = out.els.find((e) => e.tag === 'polygon').attrs.points.split(' ')[0].split(',').map(Number);
   // the arrow apex is at px of (3,0); the drawn shaft stops short of it
   assert.ok(dist([line.attrs.x2, line.attrs.y2], tip) >= 5);
+});
+
+// ---------------------------------------------------------------------------
+// Label layout: measured text metrics, viewBox auto-fit, and the font floor.
+
+test('an in-bounds figure keeps its natural 0 0 W H viewBox byte for byte', () => {
+  const out = buildGraph({ ...GRID, lines: [{ slope: 1, intercept: 0 }] });
+  assert.equal(out.viewBox, `0 0 ${out.width} ${out.height}`);
+  assert.equal(out.viewBox, '0 0 252 252'); // 10 units * 20px + 2 * 26 margin
+});
+
+test('a long edge label expands the viewBox instead of clipping', () => {
+  const out = buildGraph({
+    ...GRID,
+    points: [{ at: [4.8, 4.8], label: 'maximum observed value', labelSide: 'e' }],
+  });
+  const [x, y, w, h] = out.viewBox.split(' ').map(Number);
+  const label = out.els.find((e) => e.tag === 'text' && e.text === 'maximum observed value');
+  assert.ok(label, 'label rendered');
+  const size = Number(label.attrs.fontSize);
+  const width = measureTextWidth(label.text, size);
+  const right = Number(label.attrs.x) + (label.attrs.textAnchor === 'end' ? 0
+    : label.attrs.textAnchor === 'middle' ? width / 2 : width);
+  assert.ok(x + w >= right, `viewBox right edge ${x + w} covers the label end ${right}`);
+  assert.equal(out.width, w, 'width tracks the fitted viewBox');
+  assert.ok(w > 252, 'the box actually grew');
+});
+
+test('every text element lies inside the fitted viewBox with fit-pass margins', () => {
+  // A deliberately hostile figure: labels at every edge, long tick numbers.
+  const out = buildGraph({
+    xMin: -60, xMax: 60, yMin: -1000, yMax: 7000, xUnit: 2, yUnit: 0.03,
+    tickLabels: true, xTickStep: 20, yTickStep: 2000, gridStep: 20,
+    yGridStep: 1000, xLabel: 'years since 1900', yLabel: 'production',
+    ariaLabel: 'test',
+    points: [
+      { at: [-60, 7000], label: 'northwest corner point', labelSide: 'w' },
+      { at: [60, -1000], label: 'southeast corner point', labelSide: 'e' },
+    ],
+  });
+  const [x, y, w, h] = out.viewBox.split(' ').map(Number);
+  for (const e of out.els.filter((e) => e.tag === 'text')) {
+    const b = fitTextBox({
+      x: e.attrs.x, y: e.attrs.y, text: e.text, fontSize: e.attrs.fontSize,
+      textAnchor: e.attrs.textAnchor, italic: e.attrs.fontStyle === 'italic',
+    });
+    assert.ok(b[0] >= x && b[2] <= x + w && b[1] >= y && b[3] <= y + h,
+      `text ${JSON.stringify(e.text)} box ${b} inside viewBox ${out.viewBox}`);
+  }
+});
+
+test('fonts scale up when CSS max-width would shrink text below the floor', () => {
+  // 28 units wide at 20px/unit = 612px natural, capped at 360 on screen.
+  const out = buildGraph({ xMin: -14, xMax: 14, yMin: -5, yMax: 5, unit: 20, tickLabels: true, ariaLabel: 'wide' });
+  const shrink = out.maxWidth / out.width;
+  for (const e of out.els.filter((e) => e.tag === 'text')) {
+    assert.ok(Number(e.attrs.fontSize) * shrink >= 9.9,
+      `${JSON.stringify(e.text)} renders at ${Number(e.attrs.fontSize) * shrink}px effective`);
+  }
+  const body = out.els.find((e) => e.tag === 'text' && e.attrs.fontStyle === 'italic');
+  assert.ok(Number(body.attrs.fontSize) * shrink >= 11.9, 'axis letters hold the 12px floor');
+});
+
+test('an in-range figure keeps the base 13px font', () => {
+  const out = buildGraph({ ...GRID, points: [{ at: [1, 1], label: 'P' }] });
+  const label = out.els.find((e) => e.tag === 'text' && e.text === 'P');
+  assert.equal(label.attrs.fontSize, '13');
+});
+
+test('number-line titles and figure labels get the same auto-fit', () => {
+  const nl = buildNumberLine({
+    min: -3, max: 3, ariaLabel: 'x <= -2.',
+    marker: { at: -2, type: 'paren' }, shade: 'left',
+    title: 'every real number x with x ≤ −2 (a deliberately long title)',
+  });
+  const [nx, , nw] = nl.viewBox.split(' ').map(Number);
+  assert.ok(nx < 0 && nw > 320, 'long off-centre title widened the box leftward');
+
+  const fig = buildFigure({
+    ariaLabel: 'test',
+    polygons: [{ points: [[0, 0], [3, 0], [0, 2]], vertexLabels: ['a very long vertex label', null, null] }],
+  });
+  const [fx] = fig.viewBox.split(' ').map(Number);
+  assert.ok(fx < 0, 'left vertex label pushed the viewBox left');
+});
+
+test('measured widths order sanely and match Arial advances for digits', () => {
+  assert.ok(measureTextWidth('iii', 13) < measureTextWidth('WWW', 13));
+  assert.ok(Math.abs(measureTextWidth('123', 13) - 3 * 0.556 * 13) < 0.01);
+  assert.ok(measureTextWidth('x', 13, { italic: true }) > measureTextWidth('x', 13));
+});
+
+test("tickLabels 'x' labels one axis only, and junk values are rejected", () => {
+  const out = buildGraph({ xMin: 3, xMax: 12, yMin: -5, yMax: 5, unit: 20, tickLabels: 'x', ariaLabel: 't' });
+  const ticks = out.els.filter((e) => e.tag === 'text' && !e.attrs.fontStyle).map((e) => e.text);
+  assert.ok(ticks.includes('3') && ticks.includes('12'), 'x ticks labeled');
+  assert.ok(!ticks.includes('5') || ticks.filter((t) => t === '5').length === 1, 'no y tick labels beyond the x run');
+  assert.ok(!ticks.includes('−5'), 'no y tick labels');
+  assert.throws(() => buildGraph({ ...GRID, tickLabels: 'both' }), /tickLabels/);
 });

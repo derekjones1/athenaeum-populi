@@ -14,8 +14,13 @@ the active production architecture after the completed framework migration.
 - Hugo renders passthrough math at build time with its embedded KaTeX engine.
   The vendored KaTeX 0.16.22 assets must remain version-matched to Hugo's
   generated markup.
-- Static diagrams are accessible inline SVG. Interactive practice uses the
-  `fillin`, `multiplechoice`, and `graphplot` shortcodes.
+- Static diagrams are accessible inline SVG. New figures are authored as
+  graph-core spec JSON in the `apfigure` shortcode and rendered in the
+  browser by the `<ap-figure>` component (measured text metrics plus a
+  viewBox fit pass, so labels cannot clip); older pages still carry
+  prerendered SVG with its generating `data-spec`, and both forms are
+  lint-validated. Interactive practice uses the `fillin`, `multiplechoice`,
+  and `graphplot` shortcodes.
 
 ## Browser runtime
 
@@ -24,7 +29,8 @@ The browser runtime is vanilla JavaScript and Web Components under
 MathLive 0.110.0 and `@cortex-js/compute-engine` 0.58.0 are excluded from the
 shared bundle and loaded when a page containing a fill-in exercise initializes.
 Graphing logic is likewise split from the shared bundle and loaded only on
-pages containing an interactive GraphPlot.
+pages containing an interactive GraphPlot or a spec-first `<ap-figure>`
+static figure, which share the same lazy geometry engine.
 
 There is no account system, application server, analytics pipeline,
 advertising, or learner-data store.
@@ -73,7 +79,9 @@ page carrying a livereload script or unloaded stylesheets. Set
 `PLAYWRIGHT_SKIP_BUILD=1` when a current build already exists, or `BASE_URL`
 to test a deployment. `npm run test:e2e` drives the grader end-to-end through
 a real MathLive field (`tests/browser-check.spec.mjs`, light scheme only —
-its checks are colour-scheme-independent), and `npm run test:browser` runs
+its checks are colour-scheme-independent), `tests/figures.spec.mjs` renders
+every page carrying a spec-first figure in both colour schemes and fails on
+any label outside its fitted viewBox, and `npm run test:browser` runs
 every Playwright suite in a single server startup. `npm run ci` combines the
 source, replay, built-artifact, and browser gates — the replay gate
 (`npm run verify:replay`) re-runs every printed question span through the

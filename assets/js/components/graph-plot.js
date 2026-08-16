@@ -185,8 +185,11 @@ class GraphPlotElement extends HTMLElement {
   }
   _toMath(e) {
     const rect = this.svg.getBoundingClientRect();
-    const X = ((e.clientX - rect.left) / rect.width) * this.g.width;
-    const Y = ((e.clientY - rect.top) / rect.height) * this.g.height;
+    // The viewBox origin is no longer always 0 0: the fit pass shifts it
+    // whenever a label (e.g. a dragged vertex's) pokes past the natural box.
+    const box = this.g.box || { x: 0, y: 0, w: this.g.width, h: this.g.height };
+    const X = box.x + ((e.clientX - rect.left) / rect.width) * box.w;
+    const Y = box.y + ((e.clientY - rect.top) / rect.height) * box.h;
     return this.g.map.toMath([X, Y]);
   }
 

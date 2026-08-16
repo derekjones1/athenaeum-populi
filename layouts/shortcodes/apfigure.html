@@ -1,0 +1,35 @@
+{{- /*
+  apfigure — spec-first static figure (Graph / NumberLine / Figure).
+
+  The figure is authored as its graph-core spec; the <ap-figure> Web
+  Component renders it in the browser with the shared geometry engine, which
+  measures its labels and fits the viewBox so nothing can clip. This replaces
+  pasting prerendered SVG for NEW figures; existing `ap-figure` divs remain
+  valid. tools/render-figure.mjs renders the same spec to standalone SVG for
+  QA rasterization.
+
+  Params: kind ("graph" | "numberline" | "figure"; default "graph").
+  Inner:  the spec JSON. `ariaLabel` is REQUIRED — it is the figure's
+          accessible name, and the no-JS fallback description.
+*/ -}}
+{{- $kind := .Get "kind" | default "graph" -}}
+{{- if not (in (slice "graph" "numberline" "figure") $kind) -}}
+  {{- errorf "apfigure kind must be graph, numberline, or figure — got %q (%s)" $kind .Position -}}
+{{- end -}}
+{{- $inner := trim .Inner "\n" -}}
+{{- $spec := dict -}}
+{{- with try (transform.Unmarshal $inner) -}}
+  {{- with .Err -}}
+    {{- errorf "apfigure spec is not valid JSON: %s (%s)" . $.Position -}}
+  {{- else -}}
+    {{- $spec = .Value -}}
+  {{- end -}}
+{{- end -}}
+{{- $aria := "" -}}
+{{- if reflect.IsMap $spec -}}{{- $aria = $spec.ariaLabel | default "" -}}{{- end -}}
+{{- if not (trim $aria " ") -}}
+  {{- errorf "apfigure spec needs a non-empty ariaLabel — it is the figure's accessible name (%s)" .Position -}}
+{{- end -}}
+<ap-figure class="ap-figure" data-kind="{{ $kind }}" data-spec="{{ $inner }}" role="img" aria-label="{{ $aria }}">
+  <noscript><p class="ap-figure-noscript">Figure: {{ $aria }}</p></noscript>
+</ap-figure>

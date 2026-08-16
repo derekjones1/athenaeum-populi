@@ -154,9 +154,23 @@ math-field.ap-fillin-field::part(placeholder) {
 }
 .ap-fillin-hint { font-size: 14px; color: var(--ap-muted, #6f6e69); margin: 8px 0 0; }
 
-/* --- Static figures (Graph, NumberLine, Figure) — prerendered SVG --------- */
+/* --- Static figures (Graph, NumberLine, Figure) --------------------------- */
+/* Two delivery forms share the .ap-figure class and these rules: prerendered
+   <div class="ap-figure"> SVG pasted in older content, and the spec-first
+   <ap-figure> Web Component, which is a custom element and therefore inline
+   by default — force block so both layouts match. */
+ap-figure { display: block; }
 .ap-figure { margin: 1.5rem 0; }
 .ap-figure svg { display: block; margin: 0 auto; max-width: 100%; height: auto; }
+.ap-figure-noscript {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--ap-muted, #6f6e69);
+  border: 1px dashed var(--ap-border, #d6d3cd);
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+.ap-figure-error { font-size: 14px; color: var(--ap-error, #b42318); }
 /* Figures draw with currentColor; inherit the page text color so they flip
    with light/dark mode (graph-core's default #111 would vanish in dark mode). */
 .ap-figure svg,

@@ -10,3 +10,4 @@
 import './components/fill-in.js';
 import './components/multiple-choice.js';
 import './components/graph-plot.js';
+import './components/ap-figure.js';

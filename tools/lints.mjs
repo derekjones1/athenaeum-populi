@@ -15,6 +15,14 @@
  */
 
 import { parseGraphPlotConfig } from '../assets/js/lib/graph-plot-config.mjs';
+// The real figure builders, so every authored apfigure spec is proven to
+// build at lint time — the browser can then only ever be handed a spec the
+// engine has already accepted.
+import { buildFigure, buildGraph, buildNumberLine } from '../assets/js/lib/graph-core.mjs';
+
+const APFIGURE_BUILDERS = Object.freeze({
+  graph: buildGraph, numberline: buildNumberLine, figure: buildFigure,
+});
 // The grader's own list-splitting rules, so the lint reasons about authored
 // comma answers exactly the way checkAnswer() will grade them — and the
 // grader itself, so the trivially-satisfiable-prompt check grades a printed
@@ -1670,6 +1678,42 @@ export function lintHugo(src, filename = '') {
       parseGraphPlotConfig(inner.trim(), params.snap || 1);
     } catch (error) {
       err(index, `graphplot: ${error.message}`);
+    }
+  }
+
+  // ---- apfigure shortcode rules --------------------------------------------
+  // Spec-first static figures. The shortcode ships the spec JSON to the
+  // <ap-figure> renderer verbatim, so the lint builds every spec through the
+  // REAL geometry engine: a spec the browser would reject (bad bounds, an
+  // unknown curve kind, a zero radius) fails here, not on the reader's
+  // screen. smoothCurves carries the same freeform acknowledgment the
+  // data-spec rule demands of pasted figures — the engine enforces it, and
+  // the catch below names the fix.
+  for (const { params, inner, index, closed } of shortcodes(mediaSrc, 'apfigure')) {
+    if (!closed) continue; // the unclosed-shortcode rule above already named it
+    const kind = params.kind || 'graph';
+    if (!APFIGURE_BUILDERS[kind]) {
+      err(index, `apfigure: kind must be graph, numberline, or figure — got ${JSON.stringify(kind)}`);
+      continue;
+    }
+    let spec;
+    try {
+      spec = JSON.parse(inner.trim());
+    } catch {
+      err(index, 'apfigure: spec is not valid JSON');
+      continue;
+    }
+    if (!spec || typeof spec !== 'object' || Array.isArray(spec)) {
+      err(index, 'apfigure: spec must be a JSON object of graph-core props');
+      continue;
+    }
+    if (!String(spec.ariaLabel || '').trim()) {
+      err(index, 'apfigure: spec needs a non-empty ariaLabel — it is the figure\'s accessible name');
+    }
+    try {
+      APFIGURE_BUILDERS[kind](spec);
+    } catch (error) {
+      err(index, `apfigure: spec does not build — ${error.message}`);
     }
   }
 

@@ -53,12 +53,14 @@ export default defineConfig({
       },
     },
     {
-      // Only the accessibility suite is colour-scheme-sensitive (contrast is
-      // measured per theme). The grader end-to-end checks are byte-identical
-      // in both schemes, so running them here would double the slowest tests
-      // for zero added signal.
+      // Only the colour-scheme-sensitive suites run twice: accessibility
+      // (contrast is measured per theme) and figures (they draw with
+      // currentColor, so a rendering regression can be theme-specific). The
+      // grader end-to-end checks are byte-identical in both schemes, so
+      // running them here would double the slowest tests for zero added
+      // signal.
       name: 'chromium-dark',
-      testMatch: /accessibility\.spec\.mjs/,
+      testMatch: /accessibility\.spec\.mjs|figures\.spec\.mjs/,
       use: {
         ...devices['Desktop Chrome'],
         colorScheme: 'dark',

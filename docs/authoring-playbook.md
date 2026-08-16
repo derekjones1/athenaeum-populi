@@ -425,17 +425,47 @@ positive, and the answer shape must match one of the supported forms.
 {{</* /callout */>}}
 ```
 
-**Static figures (Graph / NumberLine / Figure):** these are prerendered SVG.
-Hugo can't run the geometry at build time, so generate the SVG with the helper
-and paste the `<div class="ap-figure">…</div>` block it prints:
+**Static figures (Graph / NumberLine / Figure):** author the figure as its
+graph-core spec inside the `apfigure` shortcode — never as hand-written or
+pasted SVG:
+
+```
+{{</* apfigure kind="graph" */>}}
+{"ariaLabel":"The line y = 2x + 1.","lines":[{"slope":2,"intercept":1,"label":"y = 2x + 1"}]}
+{{</* /apfigure */>}}
+```
+
+`kind` is `graph`, `numberline`, or `figure`; the body is one JSON object
+whose properties map to the matching `buildGraph`, `buildNumberLine`, or
+`buildFigure` builder in `assets/js/lib/graph-core.mjs`. Every figure MUST
+carry an `ariaLabel` — it is the accessible name and the no-JS fallback
+description. The `<ap-figure>` Web Component renders the spec in the browser
+with the shared engine, which does all layout from measured text metrics and
+then fits the viewBox around everything it drew, so a label cannot be cut
+off, and fonts scale up before a dense figure can shrink its text below
+legibility. Author the mathematical objects and let the engine place them;
+`labelSide` is honored exactly as written wherever you state it.
+
+Layout is machine-checked, twice: the lint builds every authored spec
+through the real engine (a spec that cannot build fails `npm test`, not the
+reader's browser), and `tests/figures.spec.mjs` renders every page carrying
+an `<ap-figure>` in both colour schemes and fails on any text outside the
+fitted viewBox or any console error. What the machines cannot check is
+FIDELITY — that the figure says what the source figure says — so the visual
+comparison against the PDF remains part of authoring (below).
+
+To eyeball a spec while authoring without a Hugo server, print it as
+standalone SVG:
 
 ```
 node tools/render-figure.mjs graph '{"ariaLabel":"The line y = 2x + 1.","lines":[{"slope":2,"intercept":1,"label":"y = 2x + 1"}]}'
 ```
 
-The accepted JSON properties map to the `buildGraph`, `buildNumberLine`, and
-`buildFigure` helpers in `assets/js/lib/graph-core.mjs`. Every figure MUST
-carry an `ariaLabel`.
+Older sections still carry that helper's pasted `<div class="ap-figure">`
+output with its `data-spec` attribute. The form remains valid and lint-
+covered; convert a page's figures to `apfigure` shortcodes when you next do
+substantive work on the page (the recorded `data-spec` JSON is the spec —
+conversion is mechanical), and author NEW figures spec-first always.
 
 **Draw known shapes with their analytic primitive, never a spline
 approximation.** `buildGraph` has exact primitives: `lines`, `quadratics`
@@ -460,7 +490,8 @@ graph.
 When a graph's window never reaches the origin — a year axis, a dollar axis —
 `tickLabels` still labels both axes along the drawn edges. Turn digit
 grouping off per axis with `xTickGrouping: false` so a year reads 1975 rather
-than 1,975.
+than 1,975. Where the source numbers only one axis, `tickLabels` also takes
+`'x'` or `'y'` to label that axis alone.
 
 `buildNumberLine` draws a single boundary with `marker` + `shade`, and any
 compound set — $(-\infty,2)\cup(2,\infty)$, $[1,3]\cup(5,\infty)$ — with
@@ -483,16 +514,15 @@ unacknowledged `smoothCurves` in a figure spec. Passing a circle or a V
 through it rounds corners and flattens extremes, and
 `tools/graph-core.test.mjs` guards this geometry.
 
-The helper prints the figure with its generating JSON in a `data-spec`
-attribute on the `ap-figure` div. Paste the whole block verbatim and keep
-the attribute: it makes every figure reproducible, reviewable against the
-PDF, and lintable. The lint validates a present `data-spec` (it must parse,
-and any `smoothCurves` entry must carry `freeform: true`).
+The spec in the page IS the figure — reproducible, reviewable against the
+PDF, and lintable. The lint validates every `apfigure` body (JSON that
+parses, a non-empty `ariaLabel`, a spec the engine accepts) and still
+validates a legacy figure's `data-spec` the same way (it must parse, and any
+`smoothCurves` entry must carry `freeform: true`).
 
 Do not paste or download textbook equation images into content. Write equations
-as KaTeX, recreate tabular relationships as Markdown tables, and use the figure
-helper for diagrams and graphs so its accessible SVG is embedded directly in
-the page. File-backed Markdown/HTML images, raster formats (`.png`, `.jpg`,
+as KaTeX, recreate tabular relationships as Markdown tables, and use `apfigure`
+for diagrams and graphs so an accessible SVG renders directly in the page. File-backed Markdown/HTML images, raster formats (`.png`, `.jpg`,
 `.webp`, and similar), and inaccessible inline SVGs are rejected by the
 content lint.
 

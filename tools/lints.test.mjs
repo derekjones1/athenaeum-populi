@@ -1638,3 +1638,42 @@ test('answerDisplay on a multiplechoice is an error, not a silent no-op', () => 
     0,
   );
 });
+
+// ---------------------------------------------------------------------------
+// apfigure — spec-first static figures
+
+const APFIG = (kind, json) => `{{< apfigure kind="${kind}" >}}\n${json}\n{{< /apfigure >}}`;
+const SECTION = 'content/math/book/01-chapter/01-section.md';
+
+test('a sound apfigure spec of every kind lints clean', () => {
+  const cases = [
+    APFIG('graph', '{"ariaLabel":"The line y = 2x + 1.","lines":[{"slope":2,"intercept":1,"label":"y = 2x + 1"}]}'),
+    APFIG('numberline', '{"ariaLabel":"x > 3.","min":-1,"max":5,"marker":{"at":3,"type":"paren"},"shade":"right"}'),
+    APFIG('figure', '{"ariaLabel":"A right triangle.","polygons":[{"points":[[0,0],[4,0],[0,3]],"rightAngles":[0]}]}'),
+  ];
+  for (const source of cases) {
+    const errors = lintHugo(source, SECTION).errors.filter((e) => e.includes('apfigure'));
+    assert.deepEqual(errors, []);
+  }
+});
+
+test('apfigure rejects bad JSON, a bad kind, and a missing ariaLabel', () => {
+  assert(lintHugo(APFIG('graph', '{not json'), SECTION)
+    .errors.some((e) => e.includes('apfigure: spec is not valid JSON')));
+  assert(lintHugo(APFIG('pie', '{"ariaLabel":"x."}'), SECTION)
+    .errors.some((e) => e.includes('kind must be graph, numberline, or figure')));
+  assert(lintHugo(APFIG('graph', '{"lines":[{"slope":1}]}'), SECTION)
+    .errors.some((e) => e.includes('non-empty ariaLabel')));
+});
+
+test('apfigure builds every spec through the real engine and reports what fails', () => {
+  // bounds inverted — buildGraph itself must reject this
+  assert(lintHugo(APFIG('graph', '{"ariaLabel":"x.","xMin":5,"xMax":-5}'), SECTION)
+    .errors.some((e) => e.includes('apfigure: spec does not build')));
+  // unacknowledged smoothCurves — the engine names the freeform requirement
+  assert(lintHugo(APFIG('graph', '{"ariaLabel":"x.","smoothCurves":[{"through":[[0,0],[1,1]]}]}'), SECTION)
+    .errors.some((e) => e.includes('freeform: true')));
+  // an unclosed apfigure is diagnosed as unclosed, not as a spec problem
+  assert(lintHugo('{{< apfigure kind="graph" >}}\n{"ariaLabel":"x."}', SECTION)
+    .errors.some((e) => /unclosed|closing/.test(e)));
+});
