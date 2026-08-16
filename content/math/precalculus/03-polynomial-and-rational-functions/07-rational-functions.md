@@ -115,7 +115,7 @@ that the graph approaches but never crosses. In this case, the graph is
 approaching the vertical line $x=0$ as the input becomes close to zero.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 1 over x with a dashed red vertical line at x=0, labelled x=0, showing the vertical asymptote.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1]}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0","labelSide":"right"}]}
+{"ariaLabel":"The graph of f of x equals 1 over x with a dashed red vertical line at x=0, labelled x=0, showing the vertical asymptote.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1]}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -146,7 +146,7 @@ decreases without bound. In this case, the graph is approaching the
 horizontal line $y=0$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals 1 over x with both asymptotes dashed: a vertical line at x=0 labelled x=0 and a horizontal line at y=0 labelled y=0.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1]}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0","labelSide":"right"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0","labelSide":"left","labelAt":0.24}]}
+{"ariaLabel":"The graph of f of x equals 1 over x with both asymptotes dashed: a vertical line at x=0 labelled x=0 and a horizontal line at y=0 labelled y=0.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[1],"den":[0,1]}],"lines":[{"x":0,"dashed":true,"arrows":false,"label":"x = 0"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0","labelAt":0.24}]}
 {{< /apfigure >}}
 
 {{< callout type="info" >}}
@@ -161,7 +161,7 @@ horizontal line $y=0$.
 behavior of the function graphed below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of a rational function with a vertical asymptote at x=2 and a horizontal asymptote at y=4. The left branch falls from the horizontal asymptote near y=4 as x approaches 2 from the left, dropping toward negative infinity; the right branch drops from positive infinity just right of x=2 and levels off toward y=4 as x increases.","xMin":-6,"xMax":6,"yMin":-12,"yMax":12,"unit":18,"tickLabels":true,"tickStep":2,"rationals":[{"num":[-7,4],"den":[-2,1]}],"lines":[{"x":2,"dashed":true,"arrows":false,"label":"x = 2","labelSide":"right"},{"y":4,"dashed":true,"arrows":false,"label":"y = 4","labelSide":"left"}]}
+{"ariaLabel":"The graph of a rational function with a vertical asymptote at x=2 and a horizontal asymptote at y=4. The left branch falls from the horizontal asymptote near y=4 as x approaches 2 from the left, dropping toward negative infinity; the right branch drops from positive infinity just right of x=2 and levels off toward y=4 as x increases.","xMin":-6,"xMax":6,"yMin":-12,"yMax":12,"unit":18,"tickLabels":true,"tickStep":2,"rationals":[{"num":[-7,4],"den":[-2,1]}],"lines":[{"x":2,"dashed":true,"arrows":false,"label":"x = 2"},{"y":4,"dashed":true,"arrows":false,"label":"y = 4","labelSide":"left"}]}
 {{< /apfigure >}}
 
 **Solution.** Notice that the graph is showing a vertical asymptote at
@@ -357,7 +357,7 @@ is all real numbers except $x=\pm3$.
 function is not defined when $x=\pm3$.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals the quantity x+3 over x squared minus 9, which reduces to 1 over x−3, with a vertical asymptote at x=3 and a horizontal asymptote at y=0.","xMin":-6,"xMax":6,"yMin":-4,"yMax":4,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[3,1],"den":[-9,0,1]}],"lines":[{"x":3,"dashed":true,"arrows":false,"label":"x = 3","labelSide":"right"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0","labelSide":"left"}]}
+{"ariaLabel":"The graph of f of x equals the quantity x+3 over x squared minus 9, which reduces to 1 over x−3, with a vertical asymptote at x=3 and a horizontal asymptote at y=0.","xMin":-6,"xMax":6,"yMin":-4,"yMax":4,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[3,1],"den":[-9,0,1]}],"lines":[{"x":3,"dashed":true,"arrows":false,"label":"x = 3"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}]}
 {{< /apfigure >}}
 
 There is a vertical asymptote at $x=3$ and a hole in the graph at $x=-3$. We
@@ -543,7 +543,7 @@ The slant asymptote is the graph of the line $g(x)=3x+1$. See the graph
 below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals the quantity 3x squared minus 2x plus 1 over x−1, with a vertical asymptote at x=1 and a dashed slant asymptote along y=3x+1.","xMin":-5,"xMax":5,"yMin":-12,"yMax":12,"unit":20,"tickLabels":true,"tickStep":2,"rationals":[{"num":[1,-2,3],"den":[-1,1]}],"lines":[{"x":1,"dashed":true,"arrows":false,"label":"x = 1","labelSide":"right"},{"slope":3,"intercept":1,"dashed":true,"arrows":false,"label":"y = 3x + 1","labelSide":"right"}]}
+{"ariaLabel":"The graph of f of x equals the quantity 3x squared minus 2x plus 1 over x−1, with a vertical asymptote at x=1 and a dashed slant asymptote along y=3x+1.","xMin":-5,"xMax":5,"yMin":-12,"yMax":12,"unit":20,"tickLabels":true,"tickStep":2,"rationals":[{"num":[1,-2,3],"den":[-1,1]}],"lines":[{"x":1,"dashed":true,"arrows":false,"label":"x = 1"},{"slope":3,"intercept":1,"dashed":true,"arrows":false,"label":"y = 3x + 1"}]}
 {{< /apfigure >}}
 
 **Case 3:** If the degree of the denominator = degree of the numerator,
@@ -560,7 +560,7 @@ $f(x)\to3$, resulting in a horizontal asymptote at $y=3$. See the graph
 below. Note that this graph crosses the horizontal asymptote.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals the quantity 3x squared plus 2 over x squared plus 4x minus 5, with vertical asymptotes at x=−5 and x=1 and a horizontal asymptote at y=3.","xMin":-20,"xMax":16,"yMin":-6,"yMax":10,"unit":12,"tickLabels":true,"tickStep":2,"xTickStep":4,"rationals":[{"num":[2,0,3],"den":[-5,4,1]}],"lines":[{"x":-5,"dashed":true,"arrows":false,"label":"x = −5","labelSide":"left","labelAt":0.1},{"x":1,"dashed":true,"arrows":false,"label":"x = 1","labelSide":"right"},{"y":3,"dashed":true,"arrows":false,"label":"y = 3","labelSide":"left"}]}
+{"ariaLabel":"The graph of f of x equals the quantity 3x squared plus 2 over x squared plus 4x minus 5, with vertical asymptotes at x=−5 and x=1 and a horizontal asymptote at y=3.","xMin":-20,"xMax":16,"yMin":-6,"yMax":10,"unit":12,"tickLabels":true,"tickStep":2,"xTickStep":4,"rationals":[{"num":[2,0,3],"den":[-5,4,1]}],"lines":[{"x":-5,"dashed":true,"arrows":false,"label":"x = −5","labelAt":0.1},{"x":1,"dashed":true,"arrows":false,"label":"x = 1"},{"y":3,"dashed":true,"arrows":false,"label":"y = 3"}]}
 {{< /apfigure >}}
 
 Notice that, while the graph of a rational function will never cross a
@@ -732,7 +732,7 @@ The $y$-intercept is $(0,-0.6)$, the $x$-intercepts are $(2,0)$ and
 $(-3,0)$. See the graph below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The same graph of f of x equals the quantity x−2 times x+3, over the quantity x−1 times x+2 times x−5, now marked with its y-intercept at (0, −0.6) and its x-intercepts at (2, 0) and (−3, 0).","xMin":-6,"xMax":8,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-6,1,1],"den":[10,-7,-4,1]}],"lines":[{"x":-2,"dashed":true,"arrows":false,"label":"x = −2"},{"x":1,"dashed":true,"arrows":false,"label":"x = 1"},{"x":5,"dashed":true,"arrows":false,"label":"x = 5"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}],"points":[{"at":[0,-0.6],"label":"(0, −0.6)","labelSide":"se","labelNudge":[8,0]},{"at":[2,0],"label":"(2, 0)"},{"at":[-3,0],"label":"(−3, 0)"}]}
+{"ariaLabel":"The same graph of f of x equals the quantity x−2 times x+3, over the quantity x−1 times x+2 times x−5, now marked with its y-intercept at (0, −0.6) and its x-intercepts at (2, 0) and (−3, 0).","xMin":-6,"xMax":8,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-6,1,1],"den":[10,-7,-4,1]}],"lines":[{"x":-2,"dashed":true,"arrows":false,"label":"x = −2"},{"x":1,"dashed":true,"arrows":false,"label":"x = 1"},{"x":5,"dashed":true,"arrows":false,"label":"x = 5"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}],"points":[{"at":[0,-0.6],"label":"(0, −0.6)","labelNudge":[8,0]},{"at":[2,0],"label":"(2, 0)"},{"at":[-3,0],"label":"(−3, 0)"}]}
 {{< /apfigure >}}
 
 {{< fillin
@@ -789,7 +789,7 @@ For example, the graph of
 $f(x)=\tfrac{(x+1)^2(x-3)}{(x+3)^2(x-2)}$ is shown below.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The graph of f of x equals the quantity x+1 squared times x−3, over the quantity x+3 squared times x−2, with vertical asymptotes at x=−3 and x=2, a horizontal asymptote at y=1, a bounce at the x-intercept (−1, 0), a crossing at the x-intercept (3, 0), and a y-intercept at (0, 1/6).","xMin":-8,"xMax":8,"yMin":-12,"yMax":18,"unit":15,"tickLabels":true,"tickStep":2,"rationals":[{"num":[-3,-5,-1,1],"den":[-18,-3,4,1]}],"lines":[{"x":-3,"dashed":true,"arrows":false,"label":"x = −3"},{"x":2,"dashed":true,"arrows":false,"label":"x = 2"},{"y":1,"dashed":true,"arrows":false,"label":"y = 1","labelSide":"left"}],"points":[{"at":[-1,0],"label":"(−1, 0)","labelSide":"nw","labelNudge":[-6,-2]},{"at":[3,0],"label":"(3, 0)"},{"at":[0,0.16666666666666666]}],"texts":[{"at":[2.2,1.9],"text":"(0, 1/6)","anchor":"start"}]}
+{"ariaLabel":"The graph of f of x equals the quantity x+1 squared times x−3, over the quantity x+3 squared times x−2, with vertical asymptotes at x=−3 and x=2, a horizontal asymptote at y=1, a bounce at the x-intercept (−1, 0), a crossing at the x-intercept (3, 0), and a y-intercept at (0, 1/6).","xMin":-8,"xMax":8,"yMin":-12,"yMax":18,"unit":15,"tickLabels":true,"tickStep":2,"rationals":[{"num":[-3,-5,-1,1],"den":[-18,-3,4,1]}],"lines":[{"x":-3,"dashed":true,"arrows":false,"label":"x = −3"},{"x":2,"dashed":true,"arrows":false,"label":"x = 2"},{"y":1,"dashed":true,"arrows":false,"label":"y = 1"}],"points":[{"at":[-1,0],"label":"(−1, 0)","labelNudge":[-6,-2]},{"at":[3,0],"label":"(3, 0)"},{"at":[0,0.16666666666666666]}],"texts":[{"at":[2.2,1.9],"text":"(0, 1/6)","anchor":"start"}]}
 {{< /apfigure >}}
 
 - At the $x$-intercept $x=-1$ corresponding to the $(x+1)^2$ factor of the
@@ -882,7 +882,7 @@ passing through the $x$-intercepts, the graph will then level off toward an
 output of zero, as indicated by the horizontal asymptote.
 
 {{< apfigure kind="graph" >}}
-{"ariaLabel":"The full graph of f of x equals the quantity x+2 times x−3, over the quantity x+1 squared times x−2, with vertical asymptotes at x=−1 and x=2 and a horizontal asymptote at y=0. Both sides of x=−1 rise toward positive infinity; the graph falls from positive infinity left of x=2 and rises from negative infinity right of x=2, then levels off toward y=0.","xMin":-5,"xMax":5,"yMin":-4,"yMax":6,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-6,-1,1],"den":[-2,-3,0,1]}],"lines":[{"x":-1,"dashed":true,"arrows":false,"label":"x = −1","labelSide":"right"},{"x":2,"dashed":true,"arrows":false,"label":"x = 2","labelSide":"left"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0","labelSide":"left"}]}
+{"ariaLabel":"The full graph of f of x equals the quantity x+2 times x−3, over the quantity x+1 squared times x−2, with vertical asymptotes at x=−1 and x=2 and a horizontal asymptote at y=0. Both sides of x=−1 rise toward positive infinity; the graph falls from positive infinity left of x=2 and rises from negative infinity right of x=2, then levels off toward y=0.","xMin":-5,"xMax":5,"yMin":-4,"yMax":6,"unit":24,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-6,-1,1],"den":[-2,-3,0,1]}],"lines":[{"x":-1,"dashed":true,"arrows":false,"label":"x = −1","labelSide":"right"},{"x":2,"dashed":true,"arrows":false,"label":"x = 2","labelSide":"left"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}]}
 {{< /apfigure >}}
 
 {{< fillin

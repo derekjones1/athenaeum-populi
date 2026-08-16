@@ -1678,6 +1678,90 @@ test('apfigure builds every spec through the real engine and reports what fails'
     .errors.some((e) => /unclosed|closing/.test(e)));
 });
 
+test('a label the engine cannot draw is rejected, not dropped in silence', () => {
+  // Precalculus 3.2 carried eight parabolas whose `label` named the equation
+  // the author meant printed beside the curve. `buildGraph` labels only lines,
+  // segments, points, and region boundaries, so every one of them was
+  // discarded without a word and the figures said less than the source they
+  // were recreated from.
+  const dead = (json) => lintHugo(APFIG('graph', json), SECTION)
+    .errors.filter((e) => e.includes('cannot carry'));
+
+  assert(dead('{"ariaLabel":"A parabola.","quadratics":[{"a":1,"b":4,"c":3,"label":"y = x² + 4x + 3"}]}')
+    .some((e) => e.includes('quadratics entries cannot carry label')));
+  for (const [family, entry] of [
+    ['cubics', '{"a":1,"labelSide":"n"}'],
+    ['polynomials', '{"coeffs":[0,0,1],"label":"f"}'],
+    ['curves', '{"kind":"sqrt","labelAt":0.5}'],
+    ['circles', '{"at":[0,0],"r":2,"label":"C"}'],
+  ]) {
+    assert(dead(`{"ariaLabel":"A curve.","${family}":[${entry}]}`).length > 0, family);
+  }
+
+  // The families that DO carry labels stay clean — the rule names what the
+  // engine can draw, so it must not fire on the ordinary case. That includes
+  // `regions`: its label rides on the boundary line (graph-core forwards
+  // label/labelSide/labelAt to the line renderer), so it is as real as a
+  // `lines` label and rejecting it would ban a working feature.
+  assert.deepEqual(dead('{"ariaLabel":"A line and a point.",'
+    + '"lines":[{"slope":1,"intercept":0,"label":"y = x","labelAt":0.4}],'
+    + '"points":[{"at":[1,1],"label":"(1, 1)","labelSide":"ne","labelNudge":[0,-4]}],'
+    + '"segments":[{"from":[0,0],"to":[2,0],"label":"Domain","labelSide":"left"}]}'), []);
+  assert.deepEqual(dead('{"ariaLabel":"The half-plane above y = x.",'
+    + '"regions":[{"line":{"slope":1,"intercept":0},"side":[0,3],"label":"y > x","labelAt":0.3}]}'), []);
+
+  // And the list is a statement about buildGraph, not about every builder: a
+  // buildFigure circle's `label` is a documented sub-object drawn outside the
+  // rim with a leader line, so kind="figure" must pass untouched.
+  assert.deepEqual(
+    lintHugo(APFIG('figure', '{"ariaLabel":"A circle of radius 2 labelled C.",'
+      + '"circles":[{"at":[0,0],"r":2,"label":{"text":"C"}}]}'), SECTION)
+      .errors.filter((e) => e.includes('cannot carry')),
+    [],
+    'a figure-kind circle label renders — the graph-only rule must not reject it',
+  );
+});
+
+test('a superscript exponent is math noise in prose and the only form a figure has', () => {
+  // The SVG label layer has no typesetter: `f^{-1}(x)` prints those five
+  // characters, which is how precalculus 3.8 shipped four inverse curves
+  // labelled with raw TeX. Superscript digits were always written this way in
+  // figures (`x²`, `x⁶`); the minus has to be allowed on the same terms.
+  const minus = (source) => lintHugo(source, SECTION)
+    .errors.filter((e) => e.includes('superscript minus'));
+
+  assert(minus('The decay constant is 10⁻³ per second.\n').length > 0,
+    'prose math still has to use a braced exponent');
+  assert.deepEqual(
+    minus(APFIG('graph', '{"ariaLabel":"A curve and its inverse.",'
+      + '"texts":[{"at":[1,1],"text":"f⁻¹(x)"}]}')),
+    [],
+    'inside a figure spec the superscript IS the exponent',
+  );
+});
+
+test('apfigure must be blank-line separated, or Goldmark parses it inline', () => {
+  const FIG = APFIG('graph', '{"ariaLabel":"The line y = x.","lines":[{"slope":1,"intercept":0}]}');
+  const blank = (source) => lintHugo(source, SECTION).errors.filter((e) => e.includes('blank line'));
+
+  // Alone, and fully separated, it is clean — including at both file edges,
+  // where there is no neighbouring paragraph to be swallowed by.
+  assert.deepEqual(blank(FIG), []);
+  assert.deepEqual(blank(`Text above.\n\n${FIG}\n\nText below.\n`), []);
+
+  // Text welded to the closing tag is the case that destroyed three
+  // exercises: everything up to the next blank line joins the figure's
+  // paragraph, so the next shortcode renders as an empty custom element.
+  assert(blank(`Text above.\n\n${FIG}\nText below.\n`)
+    .some((e) => e.includes('blank line AFTER it')));
+  assert(blank(`Text above.\n${FIG}\n\nText below.\n`)
+    .some((e) => e.includes('blank line BEFORE it')));
+
+  // Two figures back to back need the separator between them too.
+  assert(blank(`${FIG}\n${FIG}\n`).length > 0);
+  assert.deepEqual(blank(`${FIG}\n\n${FIG}\n`), []);
+});
+
 // ---------------------------------------------------------------------------
 // multiplechoice graph mode — spec-JSON options
 
@@ -1713,4 +1797,21 @@ test('a spec-JSON graph option is validated like an apfigure body', () => {
   // an in-JSON kind that IS valid routes to the right builder
   assert(lintHugo(MC_GRAPH([LINE_SPEC, '{"kind":"numberline","ariaLabel":"x > 3.","min":0,"max":5,"marker":{"at":3,"type":"open"},"shade":"right"}']), SECTION)
     .errors.filter((e) => e.includes('option 1')).length === 0);
+});
+
+test('a graph option body is exempt from the prose superscript-minus rule, like an apfigure body', () => {
+  // Same population, same terms: an option spec's labels are SVG text with no
+  // typesetter, so `f⁻¹(x)` is the only way its exponent can exist. Before the
+  // masking covered multiplechoice mode="graph", the first inverse-function
+  // option written this way would have been flagged as prose math.
+  const errors = lintHugo(MC_GRAPH([
+    LINE_SPEC,
+    '{"ariaLabel":"A curve and its inverse.","texts":[{"at":[1,1],"text":"f⁻¹(x)"}]}',
+  ]), SECTION).errors.filter((e) => e.includes('superscript minus'));
+  assert.deepEqual(errors, []);
+
+  // The exemption is the body, not the page: prose outside the shortcode is
+  // still policed.
+  assert(lintHugo(`The decay constant is 10⁻³ per second.\n\n${MC_GRAPH([LINE_SPEC, CURVE_SPEC])}`, SECTION)
+    .errors.some((e) => e.includes('superscript minus')));
 });

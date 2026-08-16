@@ -44,6 +44,16 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
 - `npm run check:figures` — build every spec-first figure and fail on any
   label printed across other ink (part of `npm test`); legacy `data-spec`
   figures are previewed as their eventual spec-first re-renders, non-gating
+- `npm run figures:status -- <dir>` — the figure-engine conversion queue,
+  derived from the content itself: which pages are already spec-first
+  (skip them) and which still carry legacy `data-spec` figures, pre-spec
+  `<svg>` options, or hand-written SVG with no spec at all; "convert this
+  chapter" starts here (workflow in `docs/authoring-playbook.md` §3)
+- `npm run figures:convert -- [--dry-run] [--gallery out.html] <path>` —
+  the mechanical half of that conversion: rewrites legacy `data-spec` divs
+  as `apfigure` shortcodes and diffs each re-render against the SVG it
+  replaces, separating label drift (expected — the engine improved) from
+  geometry drift (a bug, and a non-zero exit)
 - `npm run verify:replay` — replay every printed question span (source and
   MathLive-normalized spellings) through the grader so no exercise is passable
   by retyping its own prompt; holds a `--min-replayed` FLOOR so the gate

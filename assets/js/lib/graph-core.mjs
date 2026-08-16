@@ -94,8 +94,10 @@
  *             semi-axes in MATH units; from/to (degrees counter-clockwise
  *             from the positive x-axis) draw an exact elliptical arc instead
  *             of the closed curve, e.g. from:0 to:180 for an upper semicircle
- *   regions:  [{ line:<line spec>, side:[x,y] test point, dashed? }]
- *             boundary drawn dashed for strict inequalities
+ *   regions:  [{ line:<line spec>, side:[x,y] test point, dashed?,
+ *                label?, labelSide?, labelAt? }]
+ *             boundary drawn dashed for strict inequalities; the label
+ *             rides on the boundary line and places like any line label
  *   texts:    [{ at:[x,y], text, anchor?, dx?, dy?, fontSize? }]
  *             escape hatch for axis words, quadrant notes, etc.
  */

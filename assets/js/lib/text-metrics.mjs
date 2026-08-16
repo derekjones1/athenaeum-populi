@@ -37,10 +37,19 @@ const W = {
   'm': 833, 'n': 556, 'o': 556, 'p': 556, 'q': 556, 'r': 333, 's': 500,
   't': 278, 'u': 556, 'v': 500, 'w': 722, 'x': 500, 'y': 500, 'z': 500,
   '{': 334, '|': 260, '}': 334, '~': 584,
-  '°': 400, '±': 549, '²': 333, '³': 333, '·': 333, '×': 584, '÷': 549,
+  '°': 400, '±': 549, '·': 333, '×': 584, '÷': 549,
   'Δ': 668, 'θ': 556, 'π': 690, '–': 556, '—': 1000, '…': 1000,
   '′': 188, '″': 354, '←': 1000, '→': 1000, '∈': 871, '−': 584,
   '√': 549, '∞': 713, '∩': 719, '∪': 732, '≠': 549, '≤': 549, '≥': 549,
+  // The superscript block, whole. A figure writes exponents as literal
+  // superscript characters (`x⁶`, `f⁻¹(x)`) because the SVG label layer has
+  // no math typesetting, so these are ordinary label text — and the two that
+  // happened to be measured (² ³) left the other eight falling back to
+  // DEFAULT_ADVANCE, reserving more than twice a superscript digit's real
+  // width and pushing labels off their natural side.
+  '⁰': 278, '¹': 333, '²': 333, '³': 333, '⁴': 278, '⁵': 278, '⁶': 278,
+  '⁷': 278, '⁸': 278, '⁹': 278, '⁻': 167, '⁺': 292, '⁼': 292, '⁽': 167,
+  '⁾': 167, 'ⁿ': 278,
 }
 
 /** Unmeasured characters assume a wide 0.7 em so they can only over-reserve. */

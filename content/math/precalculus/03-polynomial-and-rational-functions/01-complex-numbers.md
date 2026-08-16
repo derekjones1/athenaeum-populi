@@ -126,102 +126,18 @@ Let's consider the number $-2+3i$. The real part of the complex number is
 $-2$ and the imaginary part is $3i$. We plot the ordered pair $(-2,3)$ to
 represent the complex number $-2+3i$ as shown below.
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"The complex plane from −5 to 5 on both axes. An arrow moves from the origin to (−2, 0) along the real axis, then up to the plotted point (−2, 3), labelled −2 + 3i.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"segments":[{"from":[0,0],"to":[-2,0],"arrows":"end"},{"from":[-2,0],"to":[-2,3],"arrows":"end"}],"points":[{"at":[-2,3],"label":"−2 + 3i","labelSide":"nw"}]}'>
-<svg role="img" aria-label="The complex plane from −5 to 5 on both axes. An arrow moves from the origin to (−2, 0) along the real axis, then up to the plotted point (−2, 3), labelled −2 + 3i." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 272" width="272" height="272" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="246" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="48" y1="246" x2="48" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="70" y1="246" x2="70" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="92" y1="246" x2="92" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="114" y1="246" x2="114" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="158" y1="246" x2="158" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="180" y1="246" x2="180" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="202" y1="246" x2="202" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="224" y1="246" x2="224" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="246" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="246" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="224" x2="246" y2="224" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="202" x2="246" y2="202" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="180" x2="246" y2="180" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="158" x2="246" y2="158" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="114" x2="246" y2="114" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="92" x2="246" y2="92" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="70" x2="246" y2="70" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="48" x2="246" y2="48" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="136" x2="248" y2="136" stroke="currentColor" stroke-width="1"/>
-  <line x1="136" y1="24" x2="136" y2="248" stroke="currentColor" stroke-width="1"/>
-  <polygon points="258,136 248,141 248,131" fill="currentColor"/>
-  <polygon points="136,14 141,24 131,24" fill="currentColor"/>
-  <polygon points="14,136 24,131 24,141" fill="currentColor"/>
-  <polygon points="136,258 131,248 141,248" fill="currentColor"/>
-  <text x="256" y="128" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="144" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="26" y1="133" x2="26" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="26" y="151" font-size="11" fill="currentColor" text-anchor="middle">−5</text>
-  <line x1="48" y1="133" x2="48" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="48" y="151" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
-  <line x1="70" y1="133" x2="70" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="70" y="151" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
-  <line x1="92" y1="133" x2="92" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="92" y="151" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
-  <line x1="114" y1="133" x2="114" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="114" y="151" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
-  <line x1="158" y1="133" x2="158" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="158" y="151" font-size="11" fill="currentColor" text-anchor="middle">1</text>
-  <line x1="180" y1="133" x2="180" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="151" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="202" y1="133" x2="202" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="202" y="151" font-size="11" fill="currentColor" text-anchor="middle">3</text>
-  <line x1="224" y1="133" x2="224" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="224" y="151" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="246" y1="133" x2="246" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="246" y="151" font-size="11" fill="currentColor" text-anchor="middle">5</text>
-  <line x1="133" y1="246" x2="139" y2="246" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="250" font-size="11" fill="currentColor" text-anchor="end">−5</text>
-  <line x1="133" y1="224" x2="139" y2="224" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="228" font-size="11" fill="currentColor" text-anchor="end">−4</text>
-  <line x1="133" y1="202" x2="139" y2="202" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="206" font-size="11" fill="currentColor" text-anchor="end">−3</text>
-  <line x1="133" y1="180" x2="139" y2="180" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="184" font-size="11" fill="currentColor" text-anchor="end">−2</text>
-  <line x1="133" y1="158" x2="139" y2="158" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="162" font-size="11" fill="currentColor" text-anchor="end">−1</text>
-  <line x1="133" y1="114" x2="139" y2="114" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="118" font-size="11" fill="currentColor" text-anchor="end">1</text>
-  <line x1="133" y1="92" x2="139" y2="92" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="96" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="133" y1="70" x2="139" y2="70" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="74" font-size="11" fill="currentColor" text-anchor="end">3</text>
-  <line x1="133" y1="48" x2="139" y2="48" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="52" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="133" y1="26" x2="139" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="30" font-size="11" fill="currentColor" text-anchor="end">5</text>
-  <line x1="136" y1="136" x2="102" y2="136" stroke="currentColor" stroke-width="1.4"/>
-  <polygon points="92,136 102,131 102,141" fill="currentColor"/>
-  <line x1="92" y1="136" x2="92" y2="80" stroke="currentColor" stroke-width="1.4"/>
-  <polygon points="92,70 97,80 87,80" fill="currentColor"/>
-  <circle cx="92" cy="70" r="4" fill="currentColor"/>
-  <text x="80.8" y="58.8" font-size="13" fill="currentColor" text-anchor="end">−2 + 3i</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"The complex plane from −5 to 5 on both axes. An arrow moves from the origin to (−2, 0) along the real axis, then up to the plotted point (−2, 3), labelled −2 + 3i.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"segments":[{"from":[0,0],"to":[-2,0],"arrows":"end"},{"from":[-2,0],"to":[-2,3],"arrows":"end"}],"points":[{"at":[-2,3],"label":"−2 + 3i","labelSide":"nw"}]}
+{{< /apfigure >}}
 
 {{< callout type="info" >}}
 **Complex plane.** In the **complex plane**, the horizontal axis is the real
 axis, and the vertical axis is the imaginary axis, as shown below.
 {{< /callout >}}
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A bare complex plane with the horizontal axis labelled real and the vertical axis labelled imaginary, no grid or numbers shown.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":20,"grid":false,"xLabel":"real","yLabel":"imaginary"}'>
-<svg role="img" aria-label="A bare complex plane with the horizontal axis labelled real and the vertical axis labelled imaginary, no grid or numbers shown." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 252" width="252" height="252" font-family="Helvetica, Arial, sans-serif">
-  <line x1="24" y1="126" x2="228" y2="126" stroke="currentColor" stroke-width="1"/>
-  <line x1="126" y1="24" x2="126" y2="228" stroke="currentColor" stroke-width="1"/>
-  <polygon points="238,126 228,131 228,121" fill="currentColor"/>
-  <polygon points="126,14 131,24 121,24" fill="currentColor"/>
-  <polygon points="14,126 24,121 24,131" fill="currentColor"/>
-  <polygon points="126,238 121,228 131,228" fill="currentColor"/>
-  <text x="236" y="118" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">real</text>
-  <text x="134" y="24" font-size="13" fill="currentColor" font-style="italic">imaginary</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A bare complex plane with the horizontal axis labelled real and the vertical axis labelled imaginary, no grid or numbers shown.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":20,"grid":false,"xLabel":"real","yLabel":"imaginary"}
+{{< /apfigure >}}
 
 {{< callout type="info" >}}
 **How to:** given a complex number, represent its components on the complex
@@ -239,84 +155,9 @@ plane.
 **Solution.** The real part of the complex number is $3$, and the imaginary
 part is $-4i$. We plot the ordered pair $(3,-4)$ as shown below.
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"The complex plane from −5 to 5 on both axes. An arrow moves from the origin to (3, 0) along the real axis, then down to the plotted point (3, −4), labelled 3 − 4i.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"segments":[{"from":[0,0],"to":[3,0],"arrows":"end"},{"from":[3,0],"to":[3,-4],"arrows":"end"}],"points":[{"at":[3,-4],"label":"3 − 4i","labelSide":"se"}]}'>
-<svg role="img" aria-label="The complex plane from −5 to 5 on both axes. An arrow moves from the origin to (3, 0) along the real axis, then down to the plotted point (3, −4), labelled 3 − 4i." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 272" width="272" height="272" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="246" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="48" y1="246" x2="48" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="70" y1="246" x2="70" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="92" y1="246" x2="92" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="114" y1="246" x2="114" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="158" y1="246" x2="158" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="180" y1="246" x2="180" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="202" y1="246" x2="202" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="224" y1="246" x2="224" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="246" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="246" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="224" x2="246" y2="224" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="202" x2="246" y2="202" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="180" x2="246" y2="180" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="158" x2="246" y2="158" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="114" x2="246" y2="114" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="92" x2="246" y2="92" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="70" x2="246" y2="70" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="48" x2="246" y2="48" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="136" x2="248" y2="136" stroke="currentColor" stroke-width="1"/>
-  <line x1="136" y1="24" x2="136" y2="248" stroke="currentColor" stroke-width="1"/>
-  <polygon points="258,136 248,141 248,131" fill="currentColor"/>
-  <polygon points="136,14 141,24 131,24" fill="currentColor"/>
-  <polygon points="14,136 24,131 24,141" fill="currentColor"/>
-  <polygon points="136,258 131,248 141,248" fill="currentColor"/>
-  <text x="256" y="128" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="144" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="26" y1="133" x2="26" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="26" y="151" font-size="11" fill="currentColor" text-anchor="middle">−5</text>
-  <line x1="48" y1="133" x2="48" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="48" y="151" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
-  <line x1="70" y1="133" x2="70" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="70" y="151" font-size="11" fill="currentColor" text-anchor="middle">−3</text>
-  <line x1="92" y1="133" x2="92" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="92" y="151" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
-  <line x1="114" y1="133" x2="114" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="114" y="151" font-size="11" fill="currentColor" text-anchor="middle">−1</text>
-  <line x1="158" y1="133" x2="158" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="158" y="151" font-size="11" fill="currentColor" text-anchor="middle">1</text>
-  <line x1="180" y1="133" x2="180" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="180" y="151" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="202" y1="133" x2="202" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="202" y="151" font-size="11" fill="currentColor" text-anchor="middle">3</text>
-  <line x1="224" y1="133" x2="224" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="224" y="151" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="246" y1="133" x2="246" y2="139" stroke="currentColor" stroke-width="1"/>
-  <text x="246" y="151" font-size="11" fill="currentColor" text-anchor="middle">5</text>
-  <line x1="133" y1="246" x2="139" y2="246" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="250" font-size="11" fill="currentColor" text-anchor="end">−5</text>
-  <line x1="133" y1="224" x2="139" y2="224" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="228" font-size="11" fill="currentColor" text-anchor="end">−4</text>
-  <line x1="133" y1="202" x2="139" y2="202" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="206" font-size="11" fill="currentColor" text-anchor="end">−3</text>
-  <line x1="133" y1="180" x2="139" y2="180" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="184" font-size="11" fill="currentColor" text-anchor="end">−2</text>
-  <line x1="133" y1="158" x2="139" y2="158" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="162" font-size="11" fill="currentColor" text-anchor="end">−1</text>
-  <line x1="133" y1="114" x2="139" y2="114" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="118" font-size="11" fill="currentColor" text-anchor="end">1</text>
-  <line x1="133" y1="92" x2="139" y2="92" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="96" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="133" y1="70" x2="139" y2="70" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="74" font-size="11" fill="currentColor" text-anchor="end">3</text>
-  <line x1="133" y1="48" x2="139" y2="48" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="52" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="133" y1="26" x2="139" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="130" y="30" font-size="11" fill="currentColor" text-anchor="end">5</text>
-  <line x1="136" y1="136" x2="192" y2="136" stroke="currentColor" stroke-width="1.4"/>
-  <polygon points="202,136 192,141 192,131" fill="currentColor"/>
-  <line x1="202" y1="136" x2="202" y2="214" stroke="currentColor" stroke-width="1.4"/>
-  <polygon points="202,224 197,214 207,214" fill="currentColor"/>
-  <circle cx="202" cy="224" r="4" fill="currentColor"/>
-  <text x="213.2" y="244.2" font-size="13" fill="currentColor" text-anchor="start">3 − 4i</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"The complex plane from −5 to 5 on both axes. An arrow moves from the origin to (3, 0) along the real axis, then down to the plotted point (3, −4), labelled 3 − 4i.","xMin":-5,"xMax":5,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"segments":[{"from":[0,0],"to":[3,0],"arrows":"end"},{"from":[3,0],"to":[3,-4],"arrows":"end"}],"points":[{"at":[3,-4],"label":"3 − 4i","labelSide":"se"}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Plot the complex number $-4-i$ on the complex plane by giving its ordered pair $(a,b)$."

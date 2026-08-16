@@ -429,6 +429,18 @@ test('measured widths order sanely and match Arial advances for digits', () => {
   assert.ok(measureTextWidth('iii', 13) < measureTextWidth('WWW', 13));
   assert.ok(Math.abs(measureTextWidth('123', 13) - 3 * 0.556 * 13) < 0.01);
   assert.ok(measureTextWidth('x', 13, { italic: true }) > measureTextWidth('x', 13));
+
+  // The superscript block is measured, not guessed. Figures write exponents as
+  // literal superscript characters (`x⁶`, `f⁻¹(x)`) because the SVG label layer
+  // has no typesetter, so an unmeasured one falls back to DEFAULT_ADVANCE —
+  // 0.7 em, more than twice a superscript digit's real 0.278 em — and pushes
+  // the label off the side the placer chose for it.
+  for (const ch of '⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺⁼⁽⁾ⁿ') {
+    assert.ok(measureTextWidth(ch, 13) < measureTextWidth('0', 13),
+      `superscript ${ch} must measure narrower than a full-size digit`);
+  }
+  assert.ok(Math.abs(measureTextWidth('⁶', 13) - 0.278 * 13) < 0.01);
+  assert.ok(measureTextWidth('x⁶', 13) < measureTextWidth('x6', 13));
 });
 
 test("tickLabels 'x' labels one axis only, and junk values are rejected", () => {

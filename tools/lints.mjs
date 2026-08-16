@@ -25,6 +25,28 @@ const APFIGURE_BUILDERS = Object.freeze({
 });
 
 /**
+ * The `buildGraph` prop families that CANNOT carry a label. `lines`,
+ * `segments`, and `points` read `label`/`labelSide`/`labelAt` — and so do
+ * `regions`, whose label rides on the boundary line the engine draws for
+ * them, which is why regions are not listed. A family listed here draws its
+ * stroke and nothing else, so a `label` written on one is dropped without a
+ * word. Precalculus 3.2 shipped eight parabolas each carrying the equation
+ * the author meant to print beside the curve, and not one of them ever
+ * rendered — the figure silently said less than its source. Name a curve
+ * with a `texts` entry, which is placed where it is written.
+ *
+ * This list describes `buildGraph` ONLY. `buildFigure` labels its own
+ * families its own way (a figure circle's `label` is a sub-object drawn
+ * outside the rim with a leader line), so the check is scoped to
+ * kind="graph" below.
+ */
+const UNLABELABLE_FAMILIES = Object.freeze([
+  'quadratics', 'cubics', 'polynomials', 'rationals', 'curves', 'smoothCurves',
+  'circles', 'polylines', 'guides', 'slopeTriangles',
+]);
+const LABEL_KEYS = Object.freeze(['label', 'labelSide', 'labelAt', 'labelNudge']);
+
+/**
  * Validate one figure spec — an apfigure body, or a spec-JSON graph option in
  * a multiplechoice. One implementation for both callers, so the two rules can
  * never drift (lib-content is the precedent: one shortcode grammar per
@@ -49,6 +71,19 @@ function figureSpecErrors(rawJson, kindFromParam) {
   }
   if (!String(spec.ariaLabel || '').trim()) {
     errors.push("spec needs a non-empty ariaLabel — it is the figure's accessible name");
+  }
+  if (kind === 'graph') {
+    for (const family of UNLABELABLE_FAMILIES) {
+      if (!Array.isArray(spec[family])) continue;
+      for (const entry of spec[family]) {
+        if (!entry || typeof entry !== 'object') continue;
+        const dead = LABEL_KEYS.filter((k) => k in entry);
+        if (dead.length) {
+          errors.push(`${family} entries cannot carry ${dead.join('/')} — buildGraph labels only lines, `
+            + 'segments, points, and region boundaries, so this text is dropped silently; name the curve with a texts entry instead');
+        }
+      }
+    }
   }
   try {
     APFIGURE_BUILDERS[kind](spec);
@@ -801,6 +836,34 @@ function maskDocumentation(src) {
 }
 
 /**
+ * `src` with every figure spec body blanked, offsets preserved.
+ *
+ * Figure bodies are graph-core JSON, not prose and not KaTeX, so the rules
+ * that police authored MATH must not read them: their label strings are drawn
+ * straight into SVG by a layer with no typesetter, where `x²` is an exponent
+ * and `x^{2}` is four characters of noise. `figureSpecErrors` is what governs
+ * what may appear inside them.
+ *
+ * A `multiplechoice mode="graph"` body is the same population — its options
+ * are spec JSON validated by the same `figureSpecErrors` — so it is blanked
+ * on the same terms. Every other multiplechoice mode is authored math and
+ * stays fully linted.
+ */
+function withoutFigureSpecs(src, blank) {
+  let out = src;
+  for (const name of ['apfigure', 'multiplechoice']) {
+    for (const { params, inner, index, closed } of shortcodes(src, name)) {
+      if (!closed || !inner) continue;
+      if (name === 'multiplechoice' && params.mode !== 'graph') continue;
+      const at = out.indexOf(inner, index);
+      if (at < 0) continue;
+      out = out.slice(0, at) + blank(inner) + out.slice(at + inner.length);
+    }
+  }
+  return out;
+}
+
+/**
  * Every four-or-more-digit run inside a math span that the corpus would write
  * grouped, with its offset in `source`. The masking is subtle — a near-miss
  * would report text no reader sees — which is why it is one function rather
@@ -1004,8 +1067,12 @@ export function lintHugo(src, filename = '') {
       err(m.index, `array row has ${widest} cells but the spec {${m[1]}} declares ${declared} column(s) — KaTeX fails the production build on this ("Too few columns"); widen the spec to match the widest row`);
     }
   }
-  // Unicode superscript minus can't parse as an exponent.
-  for (const m of src.matchAll(/⁻/g)) {
+  // Unicode superscript minus can't parse as an exponent — in MATH. A figure
+  // spec is not math: its labels are plain SVG text with no typesetter behind
+  // them, so a superscript character is the only way an exponent can appear at
+  // all, which is why `x²` and `x⁶` are already written that way throughout the
+  // figures. Writing `f^{-1}(x)` there prints those five characters verbatim.
+  for (const m of withoutFigureSpecs(src, blank).matchAll(/⁻/g)) {
     err(m.index, 'unicode superscript minus — write a braced exponent like 10^{-3}');
   }
   // Digit grouping. The corpus groups every number of four or more digits as
@@ -1733,10 +1800,32 @@ export function lintHugo(src, filename = '') {
   // screen. smoothCurves carries the same freeform acknowledgment the
   // data-spec rule demands of pasted figures — the engine enforces it, and
   // the catch below names the fix.
-  for (const { params, inner, index, closed } of shortcodes(mediaSrc, 'apfigure')) {
+  for (const { params, inner, index, end, closed } of shortcodes(mediaSrc, 'apfigure')) {
     if (!closed) continue; // the unclosed-shortcode rule above already named it
     for (const problem of figureSpecErrors(inner.trim(), params.kind || 'graph')) {
       err(index, `apfigure: ${problem}`);
+    }
+    // `<ap-figure>` is a custom element, so Goldmark does NOT treat it as an
+    // HTML block the way it treated the pasted `<div class="ap-figure">` this
+    // shortcode replaces. Without a blank line on each side the figure stays
+    // INSIDE the surrounding paragraph, and every shortcode that follows it up
+    // to the next blank line is pulled in as inline HTML too — the browser
+    // then re-parents their `<div>`s out of the `<p>`, leaving empty
+    // `<fill-in>` / `<multiple-choice>` hosts whose connectedCallback throws
+    // and whose exercise never renders. Three exercises were silently lost
+    // this way when precalculus 3.7's figures were converted.
+    // Nothing but whitespace on that side means the file edge, which needs no
+    // separator: there is no paragraph there to merge with.
+    const before = mediaSrc.slice(0, index);
+    const after = mediaSrc.slice(end);
+    if (before.trim() !== '' && !/\n[ \t]*\n[ \t]*$/.test(before)) {
+      err(index, 'apfigure: needs a blank line BEFORE it — without one the figure '
+        + 'is parsed as inline HTML inside the previous paragraph');
+    }
+    if (after.trim() !== '' && !/^[ \t]*\n[ \t]*\n/.test(after)) {
+      err(index, 'apfigure: needs a blank line AFTER it — without one the figure '
+        + 'swallows the following shortcode into its paragraph and that '
+        + "exercise's markup is destroyed");
     }
   }
 

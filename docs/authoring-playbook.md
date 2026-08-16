@@ -518,6 +518,31 @@ its chosen side to clear a curve, `labelNudge: [dx, dy]` (px) shifts it
 without giving up placement scoring; a `texts` entry remains the full
 escape hatch and is never moved.
 
+**Only `lines`, `segments`, `points`, and `regions` can carry a label** in a
+`graph` spec — a region's label rides on the boundary line the engine draws
+for it, so it places like any line label. A curve family — `quadratics`,
+`cubics`, `polynomials`, `rationals`, `curves`, `circles`, `polylines` —
+draws its stroke and nothing else, so a `label` on one is not a placement
+question, it is text the engine never draws. Name a curve with a `texts`
+entry, which prints exactly where it is written. (`kind="figure"` is out of
+scope for this rule: `buildFigure` labels its own families its own way — a
+figure circle's `label` is a sub-object drawn outside the rim with a leader
+line — and the lint knows the difference.) Precalculus 3.2 shipped eight
+parabolas each carrying the equation its author meant printed beside it,
+silently dropped for years; the lint now rejects the dead key rather than
+let a figure say less than the source it was recreated from.
+
+**Write exponents in a figure as superscript characters, never as TeX.** The
+SVG label layer has no typesetter: `f^{-1}(x)` prints those nine characters
+verbatim, which is how precalculus 3.8 shipped four inverse curves labelled
+with raw markup. Write `x²`, `x⁶`, `f⁻¹(x)`. The prose rule against `⁻` (a
+superscript minus cannot parse as an exponent) is a rule about *math spans*
+and does not reach inside a figure body — an `apfigure` body or a
+`multiplechoice mode="graph"` option spec, which is the same population
+validated by the same rules — where the superscript IS the exponent;
+`text-metrics.mjs` measures the whole superscript block so these labels
+place as accurately as any other.
+
 **Leave a blank line on both sides of the shortcode.** `<ap-figure>` is a
 custom element, so Goldmark does not treat it as an HTML block the way it
 treated the pasted `<div class="ap-figure">` it replaces: welded to the text
@@ -563,6 +588,91 @@ output with its `data-spec` attribute. The form remains valid and lint-
 covered; convert a page's figures to `apfigure` shortcodes when you next do
 substantive work on the page (the recorded `data-spec` JSON is the spec —
 conversion is mechanical), and author NEW figures spec-first always.
+
+**Converting a chapter to spec-first figures.** The conversion state is the
+content itself — a page still carrying `<div class="ap-figure"
+data-spec=…>` (or pre-spec `<svg>` option blocks) is unconverted; a page
+whose figures are all `apfigure` shortcodes and spec options is done. No
+separate ledger records this, so nothing can drift. Start from the queue:
+
+```
+npm run figures:status -- content/math/<book>/<chapter>
+```
+
+Pages listed `converted` are finished — do not touch them. Everything else
+carries one of three unconverted forms, and each has its own procedure.
+
+**Legacy `data-spec` divs — run the converter.** The rewrite is mechanical
+(the recorded JSON *is* the spec), so it is a tool, not hand-editing:
+
+```
+npm run figures:convert -- --dry-run --gallery /tmp/diff.html content/math/<book>/<chapter>
+npm run figures:convert -- content/math/<book>/<chapter>
+```
+
+It drops the legacy `"type"` key into the shortcode's `kind` attribute,
+keeps the blank lines around every shortcode, and — the part that matters —
+replays each spec through TODAY's builders and diffs the result against the
+SVG it replaces, classifying every figure as `=` identical, `~` label drift
+(placement or font moved; expected, the engine improved), `~` a dashed guide
+now gapped behind label ink, or `!!` geometry drift, which is a bug. It
+exits non-zero on any `!!`, and `--gallery` writes the drifted pairs
+side by side to eyeball. On precalculus chapter 1, 89 of 101 figures
+re-rendered byte-identical, so the eyeballing was 12 pairs rather than 101.
+Prefer unpinned labels per the placement notes above — the engine now places
+them, and the old hand-chosen `labelSide`/`labelAt` pins predate that. The
+converter does not merely flag a spec for carrying a pin; it renders the spec
+both ways and says which kind of pin it is. `redundant` means the pin names
+the side the engine picks unaided, so deleting it changes no pixel — do that.
+`load-bearing` means dropping it re-places a label, so it is a judgement call:
+keep the pin when it is what the source figure shows, drop it when the engine
+reads better. Precalculus chapter 2 had five pinned specs, two redundant.
+
+Delete the redundant ones with the converter rather than by hand — by hand is
+how a load-bearing pin goes with them:
+
+```
+npm run figures:convert -- --tidy-pins --dry-run content/math/<book>/<chapter>
+npm run figures:convert -- --tidy-pins content/math/<book>/<chapter>
+```
+
+It works per pin, not per spec, because a spec routinely mixes the two, and it
+drops a pin only when re-rendering without it is byte-identical — so a tidied
+page cannot have moved a label. What survives is the honest set: every
+remaining pin overrides the engine, which is the set worth reviewing.
+Precalculus chapter 3 gave up 34 redundant pins across 23 figures this way.
+
+**A converted spec may surface a dead curve label.** Legacy specs sometimes
+carry `label` on a curve family — text no engine ever drew, which the lint
+rejects the moment the spec becomes an `apfigure` body. Do not reflexively
+delete the key: it is a transcription of something the author saw. Check the
+printed figure. Where the source art prints the equation or name beside the
+curve, restore it as a `texts` entry so the figure says as much as the
+source (precalculus 3.2 restored six equations and an `A` this way); where
+the print shows a bare curve, the label was the author's own addition and
+goes (3.2's write-the-equation example, where printing the answer on the
+graph would defeat the exercise). The restored `texts` are placed by hand,
+so run the page back through `check:figures` after adding them.
+
+**Pre-spec `<svg>` graph options** take the separate option-migration
+procedure above, ledger step included — that one rewrites exercise bodies,
+so it is not mechanical.
+
+**Hand-written SVG in a bare `<div class="ap-figure">`** (no `data-spec`) is
+the oldest form and the only one with nothing to copy: no gate can build it,
+so the spec has to be reconstructed from the drawing the way a pre-spec
+option is. Some of these are shapes the engine has no primitive for — bar
+charts, schematic diagrams with funnels and mapping arrows. Extend
+`graph-core` with the primitive rather than hand-assembling the picture out
+of `polygons` and `texts`; a figure spelled out coordinate by coordinate is
+the pasted SVG again with extra steps.
+
+Then gate the page before moving on: `npm run verify-section -- <page>`,
+`node tools/check-figure-overlaps.mjs <page>`, `npm test`, and the visual
+comparison of each converted figure against the PDF, which no gate
+replaces. The `--status` run's `⚠` sibling report (`npm run
+check:figures`) also previews which unconverted figures will need label
+attention when their turn comes.
 
 **Draw known shapes with their analytic primitive, never a spline
 approximation.** `buildGraph` has exact primitives: `lines`, `quadratics`

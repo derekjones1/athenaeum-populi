@@ -638,9 +638,6 @@
   "067ece585f63b03c": {
    "verdict": "ok"
   },
-  "0693f69c1b8fd878": {
-   "verdict": "ok"
-  },
   "069acdf0110c95e3": {
    "verdict": "ok"
   },
@@ -654,9 +651,6 @@
    "verdict": "ok"
   },
   "06b8a702d34d0de0": {
-   "verdict": "ok"
-  },
-  "06c8865f130bc860": {
    "verdict": "ok"
   },
   "06dd347908260562": {
@@ -11291,6 +11285,10 @@
   "84b7526ac4f798b7": {
    "verdict": "ok"
   },
+  "84c054c19fd1f1cb": {
+   "verdict": "ok",
+   "note": "Read from the option specs. f(x)=2x-1 for x<1 ends at (1,1) EXCLUDED (open) and f(x)=1+x for x>=1 starts at (1,2) INCLUDED (solid); only option 0 has that pairing. Option 1 swaps open/closed, option 2 gives the second piece slope -1, option 3 breaks at x=0. answerIndex 0 confirmed."
+  },
   "84c1fdae16b182ef": {
    "verdict": "ok"
   },
@@ -17621,6 +17619,10 @@
   },
   "d2ba4ccd256c6a2d": {
    "verdict": "ok"
+  },
+  "d2c58dcc618f1938": {
+   "verdict": "ok",
+   "note": "Read from the option specs, not the old key. Option 1 is the only one that matches f(x)=x^3 for x<-1 (cubic ending at an OPEN circle at (-1,-1)), f(x)=-2 for -1<x<4 (segment at y=-2, open at both ends), f(x)=sqrt(x) for x>4 (sqrt drawn from x=4 with an open circle at (4,2), since sqrt(4)=2). Option 0 draws the sqrt piece from the origin; option 2 puts the middle piece at y=+2. answerIndex 1 confirmed."
   },
   "d2d6dfcb4ec63d4e": {
    "verdict": "ok"

@@ -304,19 +304,9 @@ variables.
 Because it is not obvious how to define our output variable, we'll start by
 drawing a picture such as the one below.
 
-<div class="ap-figure" data-spec='{"type":"figure","ariaLabel":"A right triangle diagram. From the starting intersection at the top left corner, a horizontal arrow points east to Anna and is labelled Anna walking east, 4 miles per hour. A vertical arrow points south from the same intersection to Emanuel and is labelled Emanuel walking south, 3 miles per hour. A dashed line joins Emanuel to Anna and is labelled Distance between them.","unit":50,"padding":46,"segments":[{"from":[0,3],"to":[4,3],"arrow":true},{"from":[0,3],"to":[0,0],"arrow":true},{"from":[0,0],"to":[4,3],"dashed":true}],"texts":[{"at":[2,3],"text":"Anna walking east, 4 miles/hour","anchor":"middle","dy":-12},{"at":[2.78,0.36],"text":"Distance between them","anchor":"middle"},{"at":[0,0],"text":"Emanuel walking south,","dx":10,"dy":18},{"at":[0,0],"text":"3 miles/hour","dx":10,"dy":33}]}'>
-<svg role="img" aria-label="A right triangle diagram. From the starting intersection at the top left corner, a horizontal arrow points east to Anna and is labelled Anna walking east, 4 miles per hour. A vertical arrow points south from the same intersection to Emanuel and is labelled Emanuel walking south, 3 miles per hour. A dashed line joins Emanuel to Anna and is labelled Distance between them." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 242" width="292" height="242" font-family="Helvetica, Arial, sans-serif">
-  <line x1="46" y1="46" x2="240" y2="46" stroke="currentColor" stroke-width="1.5"/>
-  <polygon points="246,46 238,50 238,42" fill="currentColor"/>
-  <line x1="46" y1="46" x2="46" y2="190" stroke="currentColor" stroke-width="1.5"/>
-  <polygon points="46,196 42,188 50,188" fill="currentColor"/>
-  <line x1="46" y1="196" x2="246" y2="46" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4"/>
-  <text x="146" y="34" font-size="13" fill="currentColor" text-anchor="middle">Anna walking east, 4 miles/hour</text>
-  <text x="185" y="178" font-size="13" fill="currentColor" text-anchor="middle">Distance between them</text>
-  <text x="56" y="214" font-size="13" fill="currentColor">Emanuel walking south,</text>
-  <text x="56" y="229" font-size="13" fill="currentColor">3 miles/hour</text>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A right triangle diagram. From the starting intersection at the top left corner, a horizontal arrow points east to Anna and is labelled Anna walking east, 4 miles per hour. A vertical arrow points south from the same intersection to Emanuel and is labelled Emanuel walking south, 3 miles per hour. A dashed line joins Emanuel to Anna and is labelled Distance between them.","unit":50,"padding":46,"segments":[{"from":[0,3],"to":[4,3],"arrow":true},{"from":[0,3],"to":[0,0],"arrow":true},{"from":[0,0],"to":[4,3],"dashed":true}],"texts":[{"at":[2,3],"text":"Anna walking east, 4 miles/hour","anchor":"middle","dy":-12},{"at":[2.78,0.36],"text":"Distance between them","anchor":"middle"},{"at":[0,0],"text":"Emanuel walking south,","dx":10,"dy":18},{"at":[0,0],"text":"3 miles/hour","dx":10,"dy":33}]}
+{{< /apfigure >}}
 
 Initial Value: They both start at the same intersection so when $t=0$, the
 distance traveled by each person should also be 0. Thus the initial value for
@@ -354,19 +344,9 @@ Recall that we need to know how long it takes for $D$, the distance between
 them, to equal 2 miles. Notice that for any given input $t$, the outputs
 $A(t)$, $E(t)$, and $D(t)$ represent distances.
 
-<div class="ap-figure" data-spec='{"type":"figure","ariaLabel":"The same right triangle with its sides named. The horizontal side from the intersection east to Anna is A, the vertical side from the intersection south to Emanuel is E, and the dashed side joining Emanuel to Anna is D. A small square marks the right angle at the intersection.","unit":50,"padding":34,"segments":[{"from":[0,3],"to":[4,3],"arrow":true,"label":"A"},{"from":[0,3],"to":[0,0],"arrow":true,"labelSide":"right","label":"E"},{"from":[0,0],"to":[4,3],"dashed":true,"label":"D"}],"rightAngles":[{"at":[0,3],"dirs":[[1,0],[0,-1]]}]}'>
-<svg role="img" aria-label="The same right triangle with its sides named. The horizontal side from the intersection east to Anna is A, the vertical side from the intersection south to Emanuel is E, and the dashed side joining Emanuel to Anna is D. A small square marks the right angle at the intersection." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268 218" width="268" height="218" font-family="Helvetica, Arial, sans-serif">
-  <line x1="34" y1="34" x2="228" y2="34" stroke="currentColor" stroke-width="1.5"/>
-  <polygon points="234,34 226,38 226,30" fill="currentColor"/>
-  <text x="134" y="20" text-anchor="middle" font-size="13" fill="currentColor">A</text>
-  <line x1="34" y1="34" x2="34" y2="178" stroke="currentColor" stroke-width="1.5"/>
-  <polygon points="34,184 30,176 38,176" fill="currentColor"/>
-  <text x="22" y="113" text-anchor="end" font-size="13" fill="currentColor">E</text>
-  <line x1="34" y1="184" x2="234" y2="34" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4"/>
-  <text x="126.8" y="97.4" text-anchor="end" font-size="13" fill="currentColor">D</text>
-  <path d="M 44 34 L 44 44 L 34 44" fill="none" stroke="currentColor" stroke-width="1.2"/>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"The same right triangle with its sides named. The horizontal side from the intersection east to Anna is A, the vertical side from the intersection south to Emanuel is E, and the dashed side joining Emanuel to Anna is D. A small square marks the right angle at the intersection.","unit":50,"padding":34,"segments":[{"from":[0,3],"to":[4,3],"arrow":true,"label":"A"},{"from":[0,3],"to":[0,0],"arrow":true,"labelSide":"right","label":"E"},{"from":[0,0],"to":[4,3],"dashed":true,"label":"D"}],"rightAngles":[{"at":[0,3],"dirs":[[1,0],[0,-1]]}]}
+{{< /apfigure >}}
 
 The diagram shows us that we can use the Pythagorean Theorem because we have
 drawn a right angle.
@@ -419,27 +399,9 @@ then be helpful to introduce a coordinate system. While we could place the
 origin anywhere, placing it at Westborough seems convenient. This puts
 Agritown at coordinates $(30,10)$, and Eastborough at $(20,0)$.
 
-<div class="ap-figure" data-spec='{"type":"figure","ariaLabel":"A coordinate diagram. The origin, labelled Westborough, is at (0, 0). Eastborough is the marked point (20, 0) on the horizontal axis, 20 miles east of Westborough. Agritown is the marked point (30, 10). A straight road runs from Westborough to Agritown, and a second road runs from Eastborough to meet it at a right angle.","unit":9,"padding":40,"segments":[{"from":[0,0],"to":[34,0],"arrow":true},{"from":[0,0],"to":[0,13],"arrow":true},{"from":[0,0],"to":[30,10]},{"from":[20,0],"to":[18,6]}],"points":[{"at":[0,0]},{"at":[20,0]},{"at":[30,10]}],"rightAngles":[{"at":[18,6],"dirs":[[12,4],[2,-6]]}],"texts":[{"at":[30,10],"text":"Agritown","anchor":"end","dx":-6,"dy":-8},{"at":[30,10],"text":"(30, 10)","dx":8,"dy":4},{"at":[0,0],"text":"(0, 0)","anchor":"end","dx":-4,"dy":-4},{"at":[0,0],"text":"Westborough","anchor":"middle","dy":16},{"at":[20,0],"text":"(20, 0)","dx":4,"dy":-6},{"at":[20,0],"text":"Eastborough","anchor":"middle","dy":16},{"at":[10,0],"text":"20 miles","anchor":"middle","dy":16}]}'>
-<svg role="img" aria-label="A coordinate diagram. The origin, labelled Westborough, is at (0, 0). Eastborough is the marked point (20, 0) on the horizontal axis, 20 miles east of Westborough. Agritown is the marked point (30, 10). A straight road runs from Westborough to Agritown, and a second road runs from Eastborough to meet it at a right angle." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386 197" width="386" height="197" font-family="Helvetica, Arial, sans-serif">
-  <line x1="40" y1="157" x2="340" y2="157" stroke="currentColor" stroke-width="1.5"/>
-  <polygon points="346,157 338,161 338,153" fill="currentColor"/>
-  <line x1="40" y1="157" x2="40" y2="46" stroke="currentColor" stroke-width="1.5"/>
-  <polygon points="40,40 44,48 36,48" fill="currentColor"/>
-  <line x1="40" y1="157" x2="310" y2="67" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="220" y1="157" x2="202" y2="103" stroke="currentColor" stroke-width="1.5"/>
-  <path d="M 211.5 99.8 L 214.6 109.3 L 205.2 112.5" fill="none" stroke="currentColor" stroke-width="1.2"/>
-  <circle cx="40" cy="157" r="2.5" fill="currentColor"/>
-  <circle cx="220" cy="157" r="2.5" fill="currentColor"/>
-  <circle cx="310" cy="67" r="2.5" fill="currentColor"/>
-  <text x="304" y="59" font-size="13" fill="currentColor" text-anchor="end">Agritown</text>
-  <text x="318" y="71" font-size="13" fill="currentColor">(30, 10)</text>
-  <text x="36" y="153" font-size="13" fill="currentColor" text-anchor="end">(0, 0)</text>
-  <text x="40" y="173" font-size="13" fill="currentColor" text-anchor="middle">Westborough</text>
-  <text x="224" y="151" font-size="13" fill="currentColor">(20, 0)</text>
-  <text x="220" y="173" font-size="13" fill="currentColor" text-anchor="middle">Eastborough</text>
-  <text x="130" y="173" font-size="13" fill="currentColor" text-anchor="middle">20 miles</text>
-</svg>
-</div>
+{{< apfigure kind="figure" >}}
+{"ariaLabel":"A coordinate diagram. The origin, labelled Westborough, is at (0, 0). Eastborough is the marked point (20, 0) on the horizontal axis, 20 miles east of Westborough. Agritown is the marked point (30, 10). A straight road runs from Westborough to Agritown, and a second road runs from Eastborough to meet it at a right angle.","unit":9,"padding":40,"segments":[{"from":[0,0],"to":[34,0],"arrow":true},{"from":[0,0],"to":[0,13],"arrow":true},{"from":[0,0],"to":[30,10]},{"from":[20,0],"to":[18,6]}],"points":[{"at":[0,0]},{"at":[20,0]},{"at":[30,10]}],"rightAngles":[{"at":[18,6],"dirs":[[12,4],[2,-6]]}],"texts":[{"at":[30,10],"text":"Agritown","anchor":"end","dx":-6,"dy":-8},{"at":[30,10],"text":"(30, 10)","dx":8,"dy":4},{"at":[0,0],"text":"(0, 0)","anchor":"end","dx":-4,"dy":-4},{"at":[0,0],"text":"Westborough","anchor":"middle","dy":16},{"at":[20,0],"text":"(20, 0)","dx":4,"dy":-6},{"at":[20,0],"text":"Eastborough","anchor":"middle","dy":16},{"at":[10,0],"text":"20 miles","anchor":"middle","dy":16}]}
+{{< /apfigure >}}
 
 Using this point along with the origin, we can find the slope of the line from
 Westborough to Agritown:
@@ -510,68 +472,21 @@ Typically, there are three types of answers possible, as shown below.
 
 **(a) Exactly one solution**
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"Two lines on a coordinate plane, f rising and g falling. They cross at a single point above the horizontal axis and to the right of the vertical axis.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"lines":[{"slope":2,"intercept":1,"label":"f"},{"slope":-2,"intercept":3,"label":"g"}]}'>
-<svg role="img" aria-label="Two lines on a coordinate plane, f rising and g falling. They cross at a single point above the horizontal axis and to the right of the vertical axis." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" width="260" height="260" font-family="Helvetica, Arial, sans-serif">
-  <line x1="24" y1="130" x2="236" y2="130" stroke="currentColor" stroke-width="1"/>
-  <line x1="130" y1="24" x2="130" y2="236" stroke="currentColor" stroke-width="1"/>
-  <polygon points="246,130 236,135 236,125" fill="currentColor"/>
-  <polygon points="130,14 135,24 125,24" fill="currentColor"/>
-  <polygon points="14,130 24,125 24,135" fill="currentColor"/>
-  <polygon points="130,246 125,236 135,236" fill="currentColor"/>
-  <text x="244" y="122" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="138" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="66.5" y1="231.1" x2="167.5" y2="28.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="172,20 172,31.2 163.1,26.7" fill="currentColor"/>
-  <polygon points="62,240 62,228.8 70.9,233.3" fill="currentColor"/>
-  <line x1="118.5" y1="28.9" x2="219.5" y2="231.1" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="224,240 215.1,233.3 224,228.8" fill="currentColor"/>
-  <polygon points="114,20 122.9,26.7 114,31.2" fill="currentColor"/>
-  <text x="162.1" y="79.6" font-size="13" fill="currentColor" text-anchor="start">f</text>
-  <text x="185.5" y="202.8" font-size="13" fill="currentColor" text-anchor="end">g</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"Two lines on a coordinate plane, f rising and g falling. They cross at a single point above the horizontal axis and to the right of the vertical axis.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"lines":[{"slope":2,"intercept":1,"label":"f"},{"slope":-2,"intercept":3,"label":"g"}]}
+{{< /apfigure >}}
 
 **(b) Infinitely many solutions**
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A single line on a coordinate plane. The graphs of f and g coincide, so the two functions share every point of the line.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"lines":[{"slope":2,"intercept":0,"label":"f = g"}]}'>
-<svg role="img" aria-label="A single line on a coordinate plane. The graphs of f and g coincide, so the two functions share every point of the line." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" width="260" height="260" font-family="Helvetica, Arial, sans-serif">
-  <line x1="24" y1="130" x2="236" y2="130" stroke="currentColor" stroke-width="1"/>
-  <line x1="130" y1="24" x2="130" y2="236" stroke="currentColor" stroke-width="1"/>
-  <polygon points="246,130 236,135 236,125" fill="currentColor"/>
-  <polygon points="130,14 135,24 125,24" fill="currentColor"/>
-  <polygon points="14,130 24,125 24,135" fill="currentColor"/>
-  <polygon points="130,246 125,236 135,236" fill="currentColor"/>
-  <text x="244" y="122" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="138" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="79.5" y1="231.1" x2="180.5" y2="28.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="185,20 185,31.2 176.1,26.7" fill="currentColor"/>
-  <polygon points="75,240 75,228.8 83.9,233.3" fill="currentColor"/>
-  <text x="175.1" y="79.6" font-size="13" fill="currentColor" text-anchor="start">f = g</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A single line on a coordinate plane. The graphs of f and g coincide, so the two functions share every point of the line.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"lines":[{"slope":2,"intercept":0,"label":"f = g"}]}
+{{< /apfigure >}}
 
 **(c) No solutions**
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"Two parallel lines on a coordinate plane, g above f. They have the same slope and never meet.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"lines":[{"slope":2,"intercept":2,"label":"g"},{"slope":2,"intercept":-2,"label":"f"}]}'>
-<svg role="img" aria-label="Two parallel lines on a coordinate plane, g above f. They have the same slope and never meet." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" width="260" height="260" font-family="Helvetica, Arial, sans-serif">
-  <line x1="24" y1="130" x2="236" y2="130" stroke="currentColor" stroke-width="1"/>
-  <line x1="130" y1="24" x2="130" y2="236" stroke="currentColor" stroke-width="1"/>
-  <polygon points="246,130 236,135 236,125" fill="currentColor"/>
-  <polygon points="130,14 135,24 125,24" fill="currentColor"/>
-  <polygon points="14,130 24,125 24,135" fill="currentColor"/>
-  <polygon points="130,246 125,236 135,236" fill="currentColor"/>
-  <text x="244" y="122" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="138" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="53.5" y1="231.1" x2="154.5" y2="28.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="159,20 159,31.2 150.1,26.7" fill="currentColor"/>
-  <polygon points="49,240 49,228.8 57.9,233.3" fill="currentColor"/>
-  <line x1="105.5" y1="231.1" x2="206.5" y2="28.9" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="211,20 211,31.2 202.1,26.7" fill="currentColor"/>
-  <polygon points="101,240 101,228.8 109.9,233.3" fill="currentColor"/>
-  <text x="149.1" y="79.6" font-size="13" fill="currentColor" text-anchor="start">g</text>
-  <text x="201.1" y="79.6" font-size="13" fill="currentColor" text-anchor="start">f</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"Two parallel lines on a coordinate plane, g above f. They have the same slope and never meet.","xMin":-4,"xMax":4,"yMin":-4,"yMax":4,"unit":26,"grid":false,"lines":[{"slope":2,"intercept":2,"label":"g"},{"slope":2,"intercept":-2,"label":"f"}]}
+{{< /apfigure >}}
 
 {{< callout type="info" >}}
   **How to:** given a situation that represents a system of linear equations,
@@ -629,114 +544,9 @@ is smaller.
 
 These graphs are sketched below, with $M(d)$ drawn dashed.
 
-<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A graph of two cost lines against distance driven. The horizontal axis d runs from 0 to 170 miles and the vertical axis, in dollars, runs from 0 to 130. The line K of d equals 0.59d plus 20 starts at 20 dollars, and the line M of d equals 0.63d plus 16 starts at 16 dollars and is steeper. They cross at the marked point (100, 80), after which M lies above K.","xMin":0,"xMax":170,"yMin":0,"yMax":130,"xUnit":3,"yUnit":2.2,"gridStep":10,"tickLabels":true,"tickStep":10,"xLabel":"d","yLabel":"dollars","segments":[{"from":[0,20],"to":[165,117.35],"arrows":"end"},{"from":[0,16],"to":[165,119.95],"arrows":"end","dashed":true}],"points":[{"at":[100,80]}],"texts":[{"at":[35,68],"text":"K(d) = 0.59d + 20"},{"at":[60,42],"text":"M(d) = 0.63d + 16"},{"at":[100,80],"text":"(100, 80)","dx":8,"dy":16}]}'>
-<svg role="img" aria-label="A graph of two cost lines against distance driven. The horizontal axis d runs from 0 to 170 miles and the vertical axis, in dollars, runs from 0 to 130. The line K of d equals 0.59d plus 20 starts at 20 dollars, and the line M of d equals 0.63d plus 16 starts at 16 dollars and is steeper. They cross at the marked point (100, 80), after which M lies above K." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 562 338" width="562" height="338" font-family="Helvetica, Arial, sans-serif">
-  <line x1="56" y1="312" x2="56" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="312" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="116" y1="312" x2="116" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="312" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="176" y1="312" x2="176" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="312" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="236" y1="312" x2="236" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="312" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="296" y1="312" x2="296" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="312" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="356" y1="312" x2="356" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="386" y1="312" x2="386" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="416" y1="312" x2="416" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="446" y1="312" x2="446" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="476" y1="312" x2="476" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="506" y1="312" x2="506" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="536" y1="312" x2="536" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="290" x2="536" y2="290" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="268" x2="536" y2="268" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="536" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="224" x2="536" y2="224" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="202" x2="536" y2="202" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="180" x2="536" y2="180" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="158" x2="536" y2="158" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="136" x2="536" y2="136" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="114" x2="536" y2="114" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="92" x2="536" y2="92" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="70" x2="536" y2="70" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="48" x2="536" y2="48" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="536" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="312" x2="538" y2="312" stroke="currentColor" stroke-width="1"/>
-  <line x1="26" y1="24" x2="26" y2="312" stroke="currentColor" stroke-width="1"/>
-  <polygon points="548,312 538,317 538,307" fill="currentColor"/>
-  <polygon points="26,14 31,24 21,24" fill="currentColor"/>
-  <text x="546" y="304" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">d</text>
-  <text x="34" y="24" font-size="13" fill="currentColor" font-style="italic">dollars</text>
-  <line x1="56" y1="309" x2="56" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="56" y="327" font-size="11" fill="currentColor" text-anchor="middle">10</text>
-  <line x1="86" y1="309" x2="86" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="86" y="327" font-size="11" fill="currentColor" text-anchor="middle">20</text>
-  <line x1="116" y1="309" x2="116" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="116" y="327" font-size="11" fill="currentColor" text-anchor="middle">30</text>
-  <line x1="146" y1="309" x2="146" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="146" y="327" font-size="11" fill="currentColor" text-anchor="middle">40</text>
-  <line x1="176" y1="309" x2="176" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="176" y="327" font-size="11" fill="currentColor" text-anchor="middle">50</text>
-  <line x1="206" y1="309" x2="206" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="206" y="327" font-size="11" fill="currentColor" text-anchor="middle">60</text>
-  <line x1="236" y1="309" x2="236" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="236" y="327" font-size="11" fill="currentColor" text-anchor="middle">70</text>
-  <line x1="266" y1="309" x2="266" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="266" y="327" font-size="11" fill="currentColor" text-anchor="middle">80</text>
-  <line x1="296" y1="309" x2="296" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="296" y="327" font-size="11" fill="currentColor" text-anchor="middle">90</text>
-  <line x1="326" y1="309" x2="326" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="326" y="327" font-size="11" fill="currentColor" text-anchor="middle">100</text>
-  <line x1="356" y1="309" x2="356" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="356" y="327" font-size="11" fill="currentColor" text-anchor="middle">110</text>
-  <line x1="386" y1="309" x2="386" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="386" y="327" font-size="11" fill="currentColor" text-anchor="middle">120</text>
-  <line x1="416" y1="309" x2="416" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="416" y="327" font-size="11" fill="currentColor" text-anchor="middle">130</text>
-  <line x1="446" y1="309" x2="446" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="446" y="327" font-size="11" fill="currentColor" text-anchor="middle">140</text>
-  <line x1="476" y1="309" x2="476" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="476" y="327" font-size="11" fill="currentColor" text-anchor="middle">150</text>
-  <line x1="506" y1="309" x2="506" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="506" y="327" font-size="11" fill="currentColor" text-anchor="middle">160</text>
-  <line x1="536" y1="309" x2="536" y2="315" stroke="currentColor" stroke-width="1"/>
-  <text x="536" y="327" font-size="11" fill="currentColor" text-anchor="middle">170</text>
-  <line x1="23" y1="290" x2="29" y2="290" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="294" font-size="11" fill="currentColor" text-anchor="end">10</text>
-  <line x1="23" y1="268" x2="29" y2="268" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="272" font-size="11" fill="currentColor" text-anchor="end">20</text>
-  <line x1="23" y1="246" x2="29" y2="246" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="250" font-size="11" fill="currentColor" text-anchor="end">30</text>
-  <line x1="23" y1="224" x2="29" y2="224" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="228" font-size="11" fill="currentColor" text-anchor="end">40</text>
-  <line x1="23" y1="202" x2="29" y2="202" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="206" font-size="11" fill="currentColor" text-anchor="end">50</text>
-  <line x1="23" y1="180" x2="29" y2="180" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="184" font-size="11" fill="currentColor" text-anchor="end">60</text>
-  <line x1="23" y1="158" x2="29" y2="158" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="162" font-size="11" fill="currentColor" text-anchor="end">70</text>
-  <line x1="23" y1="136" x2="29" y2="136" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="140" font-size="11" fill="currentColor" text-anchor="end">80</text>
-  <line x1="23" y1="114" x2="29" y2="114" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="118" font-size="11" fill="currentColor" text-anchor="end">90</text>
-  <line x1="23" y1="92" x2="29" y2="92" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="96" font-size="11" fill="currentColor" text-anchor="end">100</text>
-  <line x1="23" y1="70" x2="29" y2="70" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="74" font-size="11" fill="currentColor" text-anchor="end">110</text>
-  <line x1="23" y1="48" x2="29" y2="48" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="52" font-size="11" fill="currentColor" text-anchor="end">120</text>
-  <line x1="23" y1="26" x2="29" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="20" y="30" font-size="11" fill="currentColor" text-anchor="end">130</text>
-  <line x1="26" y1="268" x2="511.8" y2="57.8" stroke="currentColor" stroke-width="1.4"/>
-  <polygon points="521,53.8 513.8,62.4 509.8,53.2" fill="currentColor"/>
-  <line x1="26" y1="276.8" x2="511.9" y2="52.3" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <polygon points="521,48.1 514,56.8 509.8,47.8" fill="currentColor"/>
-  <circle cx="326" cy="136" r="4" fill="currentColor"/>
-  <text x="131" y="162.4" font-size="13" fill="currentColor">K(d) = 0.59d + 20</text>
-  <text x="206" y="219.6" font-size="13" fill="currentColor">M(d) = 0.63d + 16</text>
-  <text x="334" y="152" font-size="13" fill="currentColor">(100, 80)</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A graph of two cost lines against distance driven. The horizontal axis d runs from 0 to 170 miles and the vertical axis, in dollars, runs from 0 to 130. The line K of d equals 0.59d plus 20 starts at 20 dollars, and the line M of d equals 0.63d plus 16 starts at 16 dollars and is steeper. They cross at the marked point (100, 80), after which M lies above K.","xMin":0,"xMax":170,"yMin":0,"yMax":130,"xUnit":3,"yUnit":2.2,"gridStep":10,"tickLabels":true,"tickStep":10,"xLabel":"d","yLabel":"dollars","segments":[{"from":[0,20],"to":[165,117.35],"arrows":"end"},{"from":[0,16],"to":[165,119.95],"arrows":"end","dashed":true}],"points":[{"at":[100,80]}],"texts":[{"at":[24,74],"text":"K(d) = 0.59d + 20"},{"at":[60,42],"text":"M(d) = 0.63d + 16"},{"at":[100,80],"text":"(100, 80)","dx":8,"dy":16}]}
+{{< /apfigure >}}
 
 To find the intersection, we set the equations equal and solve:
 

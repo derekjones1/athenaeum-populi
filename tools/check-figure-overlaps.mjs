@@ -1,8 +1,9 @@
 /**
- * Label-collision report for spec-first figures.
+ * Label-collision report and conversion queue for spec-first figures.
  *
  *   node tools/check-figure-overlaps.mjs content [--near N] [--json]
  *   node tools/check-figure-overlaps.mjs content/math/.../07-rational-functions.md
+ *   node tools/check-figure-overlaps.mjs --status content/math/<book>/<chapter>
  *
  * Builds every figure spec on every page through the REAL builders in
  * assets/js/lib/graph-core.mjs and reports overlapping text: label text that
@@ -17,6 +18,13 @@
  *   - {{< multiplechoice mode="graph" >}} option specs (kind rides in JSON)
  *   - legacy prerendered <div class="ap-figure" data-spec="…"> figures
  *
+ * `--status` skips the geometry entirely and prints the figure-engine
+ * CONVERSION QUEUE instead: per page, whether its figures are all
+ * spec-first (`converted` — skip it), still legacy `data-spec` divs
+ * (`TODO`), or a mix (`mixed`). The state is read from the content itself —
+ * there is no separate ledger to drift — so "convert this chapter" starts
+ * with this command and touches only the pages it lists as unconverted.
+ *
  * Text boxes use the EXACT measured advance widths (no fit-pass safety
  * margin) shrunk by a pixel, so a reported overlap is a real ink collision,
  * not a near miss. `--near N` widens every text box by N px to also surface
@@ -27,16 +35,15 @@ import { join } from 'node:path'
 import { buildGraph, buildNumberLine, buildFigure } from '../assets/js/lib/graph-core.mjs'
 import { measureTextWidth } from '../assets/js/lib/text-metrics.mjs'
 import { shortcodes } from './lib-content.mjs'
+import { decodeHtmlEntities, openTagRe, htmlAttribute } from './lib-html.mjs'
 
 const args = process.argv.slice(2)
 const asJson = args.includes('--json')
+const statusMode = args.includes('--status')
 const nearIx = args.indexOf('--near')
 const NEAR = nearIx >= 0 ? Number(args[nearIx + 1]) : 0
 const roots = args.filter((a, i) => !a.startsWith('--') && (nearIx < 0 || i !== nearIx + 1))
-if (!roots.length) {
-  console.error('usage: node tools/check-figure-overlaps.mjs <content dir or page.md> [--near N] [--json]')
-  process.exit(2)
-}
+if (!roots.length) roots.push('content')
 
 const BUILDERS = { graph: buildGraph, numberline: buildNumberLine, figure: buildFigure }
 
@@ -228,9 +235,9 @@ const mdFiles = (root) => {
   return out.sort()
 }
 
-let skippedPrerendered = 0
 function figureSpecs(src) {
   const specs = []
+  let prerendered = 0
   for (const { params, inner, closed } of shortcodes(src, 'apfigure')) {
     if (!closed) continue
     specs.push({ kind: params.kind || 'graph', json: inner.trim(), where: 'apfigure' })
@@ -239,7 +246,7 @@ function figureSpecs(src) {
     if (!closed || params.mode !== 'graph') continue
     inner.split(/^===OPT===$/m).forEach((opt, i) => {
       const body = opt.trim()
-      if (!body.startsWith('{')) { skippedPrerendered++; return } // pre-spec <svg> option: no spec to build
+      if (!body.startsWith('{')) { prerendered++; return } // pre-spec <svg> option: no spec to build
       specs.push({ kind: null, json: body, where: `mc option ${i}` })
     })
   }
@@ -249,21 +256,69 @@ function figureSpecs(src) {
   // findings are reported as a separate, non-gating class.
   const divRe = /<div[^>]*class="ap-figure"[^>]*data-spec=(?:"([^"]*)"|'([^']*)')/g
   for (const m of src.matchAll(divRe)) {
-    const json = (m[1] ?? m[2])
-      .replace(/&quot;/g, '"').replace(/&#34;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&')
-    specs.push({ kind: null, json, where: 'legacy div', legacy: true })
+    specs.push({ kind: null, json: decodeHtmlEntities(m[1] ?? m[2]), where: 'legacy div', legacy: true })
   }
-  return specs
+  // The oldest form of all: an `ap-figure` div holding hand-written SVG with
+  // no `data-spec` at all. Nothing here can build it, so it is invisible to
+  // every geometry gate — which is exactly why the queue has to count it. A
+  // page carrying one is NOT converted, however many spec-first figures sit
+  // beside it.
+  let unspecced = 0
+  for (const m of src.matchAll(openTagRe('div'))) {
+    if (/class="ap-figure"/.test(m[0]) && !htmlAttribute(m[0], 'data-spec')) unspecced++
+  }
+  return { specs, prerendered, unspecced }
+}
+
+// ---------------------------------------------------------------------------
+// --status: the conversion queue, derived from the content itself
+if (statusMode) {
+  const rows = []
+  for (const file of roots.flatMap(mdFiles)) {
+    const src = readFileSync(file, 'utf8')
+      .replace(/```[\s\S]*?```/g, ' ')
+      .replace(/`[^`\n]*`/g, ' ')
+    const { specs, prerendered, unspecced } = figureSpecs(src)
+    const legacy = specs.filter((s) => s.legacy).length
+    const specFirst = specs.length - legacy
+    if (!specs.length && !prerendered && !unspecced) continue // no figures — nothing to convert
+    const behind = legacy + prerendered + unspecced
+    const state = behind === 0 ? 'converted' : specFirst === 0 ? 'TODO' : 'mixed'
+    rows.push({ file, specFirst, legacy, prerendered, unspecced, state })
+  }
+  if (asJson) {
+    console.log(JSON.stringify({ pages: rows }, null, 2))
+  } else {
+    for (const r of rows) {
+      const parts = []
+      if (r.specFirst) parts.push(`${r.specFirst} spec-first`)
+      if (r.legacy) parts.push(`${r.legacy} legacy`)
+      if (r.prerendered) parts.push(`${r.prerendered} pre-spec option`)
+      if (r.unspecced) parts.push(`${r.unspecced} hand-written SVG (no spec)`)
+      console.log(`${r.state.padEnd(9)} ${r.file}  (${parts.join(', ')})`)
+    }
+    const todo = rows.filter((r) => r.state !== 'converted')
+    const unspecced = rows.reduce((n, r) => n + r.unspecced, 0)
+    console.log(`\n${rows.length} page(s) with figures: `
+      + `${rows.length - todo.length} converted, ${todo.length} still carrying legacy or pre-spec figures.`)
+    if (unspecced) {
+      console.log(`${unspecced} of those are hand-written SVG with no spec at all — `
+        + 'reconstruct the spec from the drawing (no data-spec to copy), or extend graph-core if the shape has no primitive.')
+    }
+  }
+  process.exit(0)
 }
 
 let figures = 0, dirty = 0, grazeOnly = 0, failed = 0
-let legacyFigures = 0, legacyDirty = 0
+let legacyFigures = 0, legacyDirty = 0, skippedPrerendered = 0
 const report = []
 for (const file of roots.flatMap(mdFiles)) {
   const src = readFileSync(file, 'utf8')
     .replace(/```[\s\S]*?```/g, ' ')
     .replace(/`[^`\n]*`/g, ' ')
-  for (const { kind, json, where, legacy } of figureSpecs(src)) {
+  const { specs, prerendered } = figureSpecs(src)
+  skippedPrerendered += prerendered
+  for (const { kind, json, where, legacy } of specs) {
     if (legacy) legacyFigures++
     else figures++
     let spec, built

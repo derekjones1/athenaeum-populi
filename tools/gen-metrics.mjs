@@ -5,7 +5,8 @@ import { chromium } from '@playwright/test';
 const CHARS =
   ' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`' +
   'abcdefghijklmnopqrstuvwxyz{|}~' +
-  '−∞πθ°≤≥≠±·×÷√–—…²³Δ∈∪∩→←′″';
+  '−∞πθ°≤≥≠±·×÷√–—…Δ∈∪∩→←′″' +
+  '⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺⁼⁽⁾ⁿ';
 
 import { fileURLToPath } from 'node:url';
 const browser = await chromium.launch({

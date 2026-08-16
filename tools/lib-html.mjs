@@ -79,3 +79,20 @@ export function hasFileBackedCssImage(css) {
  * from search rather than broken — the failure this pattern exists to catch.
  */
 export const MAIN_CONTENT_RE = /<main\b(?=[^>]*(?:^|\s)id\s*=\s*(?:"content"|'content'|content(?=[\s>])))[^>]*>/i;
+
+/**
+ * The five XML entities, decoded back to text.
+ *
+ * ONE pass, not five replaces, and that is the whole point: a figure spec is
+ * written into `data-spec` with `&` escaped first, so `5 &lt; h` in the
+ * attribute means a literal `<` while `&amp;lt;` means the four characters
+ * `&lt;`. Sequential replaces decode the second into the first — the reader
+ * then builds a figure whose tick label is the string `&lt;`. A single pass
+ * consumes each entity exactly once and cannot double-decode.
+ */
+export const decodeHtmlEntities = (s) => String(s).replace(
+  /&(quot|apos|lt|gt|amp|#34|#39);/g,
+  (_, name) => ({
+    quot: '"', '#34': '"', apos: "'", '#39': "'", lt: '<', gt: '>', amp: '&',
+  }[name]),
+);
