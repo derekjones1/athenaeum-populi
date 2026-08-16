@@ -20,7 +20,8 @@ the active production architecture after the completed framework migration.
   viewBox fit pass, so labels cannot clip); older pages still carry
   prerendered SVG with its generating `data-spec`, and both forms are
   lint-validated. Interactive practice uses the `fillin`, `multiplechoice`,
-  and `graphplot` shortcodes.
+  and `graphplot` shortcodes; graph-mode multiplechoice options may be
+  authored as the same spec JSON and render through `<ap-figure>`.
 
 ## Browser runtime
 

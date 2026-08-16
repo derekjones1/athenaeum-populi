@@ -40,11 +40,13 @@ class ApFigureElement extends HTMLElement {
       g = engine[BUILDERS[kind]](spec);
     } catch (error) {
       console.error('ap-figure failed to render', error);
-      const p = document.createElement('p');
-      p.className = 'ap-figure-error';
-      p.setAttribute('role', 'alert');
-      p.textContent = 'This figure could not be drawn. Please reload the page and try again.';
-      this.append(p);
+      // A <span>, not a <p>: an ap-figure can sit inside a multiplechoice
+      // option <button>, whose content model allows phrasing content only.
+      const msg = document.createElement('span');
+      msg.className = 'ap-figure-error';
+      msg.setAttribute('role', 'alert');
+      msg.textContent = 'This figure could not be drawn. Please reload the page and try again.';
+      this.append(msg);
       return;
     }
 

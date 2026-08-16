@@ -23,6 +23,40 @@ import { buildFigure, buildGraph, buildNumberLine } from '../assets/js/lib/graph
 const APFIGURE_BUILDERS = Object.freeze({
   graph: buildGraph, numberline: buildNumberLine, figure: buildFigure,
 });
+
+/**
+ * Validate one figure spec — an apfigure body, or a spec-JSON graph option in
+ * a multiplechoice. One implementation for both callers, so the two rules can
+ * never drift (lib-content is the precedent: one shortcode grammar per
+ * repository). `kindFromParam` is the apfigure shortcode's kind= param; a
+ * multiplechoice option carries its kind INSIDE the JSON instead. Returns
+ * error strings, empty when the spec is sound.
+ */
+function figureSpecErrors(rawJson, kindFromParam) {
+  let spec;
+  try {
+    spec = JSON.parse(rawJson);
+  } catch {
+    return ['spec is not valid JSON'];
+  }
+  if (!spec || typeof spec !== 'object' || Array.isArray(spec)) {
+    return ['spec must be a JSON object of graph-core props'];
+  }
+  const errors = [];
+  const kind = kindFromParam ?? spec.kind ?? 'graph';
+  if (!APFIGURE_BUILDERS[kind]) {
+    return [`kind must be graph, numberline, or figure — got ${JSON.stringify(kind)}`];
+  }
+  if (!String(spec.ariaLabel || '').trim()) {
+    errors.push("spec needs a non-empty ariaLabel — it is the figure's accessible name");
+  }
+  try {
+    APFIGURE_BUILDERS[kind](spec);
+  } catch (error) {
+    errors.push(`spec does not build — ${error.message}`);
+  }
+  return errors;
+}
 // The grader's own list-splitting rules, so the lint reasons about authored
 // comma answers exactly the way checkAnswer() will grade them — and the
 // grader itself, so the trivially-satisfiable-prompt check grades a printed
@@ -1640,10 +1674,20 @@ export function lintHugo(src, filename = '') {
       } else if (!/^\d+$/.test(params.answerIndex)) {
         err(index, `multiplechoice(graph): answerIndex must be a nonnegative integer, got ${JSON.stringify(params.answerIndex)}`);
       } else {
-        const nOpts = inner.split('===OPT===').filter((s) => s.trim()).length;
-        if (nOpts < 2) err(index, 'multiplechoice(graph): at least two options are required');
-        if (Number(params.answerIndex) >= nOpts) err(index, `multiplechoice(graph): answerIndex ${params.answerIndex} but only ${nOpts} option(s)`);
+        const opts = inner.split('===OPT===').filter((s) => s.trim());
+        if (opts.length < 2) err(index, 'multiplechoice(graph): at least two options are required');
+        if (Number(params.answerIndex) >= opts.length) err(index, `multiplechoice(graph): answerIndex ${params.answerIndex} but only ${opts.length} option(s)`);
         graphAnswerIndexes.push({ index, n: Number(params.answerIndex) });
+        // A spec-JSON option (block starting with `{`) is validated exactly
+        // like an apfigure body; its kind rides inside the JSON. Prerendered
+        // <svg> options stay covered by the inline-SVG accessibility rule.
+        opts.forEach((opt, optIndex) => {
+          const block = opt.trim();
+          if (!block.startsWith('{')) return;
+          for (const problem of figureSpecErrors(block, undefined)) {
+            err(index, `multiplechoice(graph) option ${optIndex}: ${problem}`);
+          }
+        });
       }
     } else {
       const opts = inner.split('\n').map((s) => s.trim()).filter(Boolean);
@@ -1691,29 +1735,8 @@ export function lintHugo(src, filename = '') {
   // the catch below names the fix.
   for (const { params, inner, index, closed } of shortcodes(mediaSrc, 'apfigure')) {
     if (!closed) continue; // the unclosed-shortcode rule above already named it
-    const kind = params.kind || 'graph';
-    if (!APFIGURE_BUILDERS[kind]) {
-      err(index, `apfigure: kind must be graph, numberline, or figure — got ${JSON.stringify(kind)}`);
-      continue;
-    }
-    let spec;
-    try {
-      spec = JSON.parse(inner.trim());
-    } catch {
-      err(index, 'apfigure: spec is not valid JSON');
-      continue;
-    }
-    if (!spec || typeof spec !== 'object' || Array.isArray(spec)) {
-      err(index, 'apfigure: spec must be a JSON object of graph-core props');
-      continue;
-    }
-    if (!String(spec.ariaLabel || '').trim()) {
-      err(index, 'apfigure: spec needs a non-empty ariaLabel — it is the figure\'s accessible name');
-    }
-    try {
-      APFIGURE_BUILDERS[kind](spec);
-    } catch (error) {
-      err(index, `apfigure: spec does not build — ${error.message}`);
+    for (const problem of figureSpecErrors(inner.trim(), params.kind || 'graph')) {
+      err(index, `apfigure: ${problem}`);
     }
   }
 

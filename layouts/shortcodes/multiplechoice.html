@@ -6,8 +6,13 @@
   Two modes:
     TEXT  (default): inner content = one option per line; `answer` = the correct
                      option string (matched verbatim, delimiters and all).
-    GRAPH (mode="graph"): inner content = prerendered <svg> options separated by
-                     a line `===OPT===`; `answerIndex` = 0-based correct option.
+    GRAPH (mode="graph"): inner content = options separated by a line
+                     `===OPT===`; `answerIndex` = 0-based correct option.
+                     An option that starts with `{` is a graph-core spec JSON
+                     (same language as the apfigure shortcode; optional "kind"
+                     key: graph | numberline | figure, default graph) rendered
+                     in the browser by <ap-figure>. Anything else is a
+                     prerendered <svg> block — the legacy form, still valid.
 
   Params: question (req), hint, answer | (mode + answerIndex).
 */ -}}
@@ -56,7 +61,36 @@
            accessible name settles (or its fallback bound fires). */ -}}
       {{- if eq $mode "graph" -}}
         {{- range $i, $svg := split (trim .Inner "\n") "===OPT===" -}}
-          <button type="button" disabled class="ap-mc-option ap-mc-option-graph" data-index="{{ $i }}">{{ $svg | safeHTML }}</button>
+          {{- $spec := trim $svg "\n\t " -}}
+          {{- if hasPrefix $spec "{" -}}
+            {{- /* Spec-first option: validate here so a bad spec fails the
+                 build with a position, not the reader's browser. The lint
+                 catches these first over content/ and additionally proves the
+                 spec builds through the real engine. */ -}}
+            {{- $parsed := dict -}}
+            {{- with try (transform.Unmarshal $spec) -}}
+              {{- with .Err -}}
+                {{- errorf "multiplechoice(graph) option %d spec is not valid JSON: %s (%s)" $i . $.Position -}}
+              {{- else -}}
+                {{- $parsed = .Value -}}
+              {{- end -}}
+            {{- end -}}
+            {{- $aria := "" -}}
+            {{- $kind := "graph" -}}
+            {{- if reflect.IsMap $parsed -}}
+              {{- $aria = $parsed.ariaLabel | default "" -}}
+              {{- $kind = $parsed.kind | default "graph" -}}
+            {{- end -}}
+            {{- if not (in (slice "graph" "numberline" "figure") $kind) -}}
+              {{- errorf "multiplechoice(graph) option %d kind must be graph, numberline, or figure — got %q (%s)" $i $kind $.Position -}}
+            {{- end -}}
+            {{- if not (trim $aria " ") -}}
+              {{- errorf "multiplechoice(graph) option %d spec needs a non-empty ariaLabel — it is the option's accessible name (%s)" $i $.Position -}}
+            {{- end -}}
+            <button type="button" disabled class="ap-mc-option ap-mc-option-graph" data-index="{{ $i }}"><ap-figure data-kind="{{ $kind }}" data-spec="{{ $spec }}" role="img" aria-label="{{ $aria }}"></ap-figure></button>
+          {{- else -}}
+            <button type="button" disabled class="ap-mc-option ap-mc-option-graph" data-index="{{ $i }}">{{ $svg | safeHTML }}</button>
+          {{- end -}}
         {{- end -}}
       {{- else -}}
         {{- range (split (trim .Inner "\n") "\n") -}}

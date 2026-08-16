@@ -170,7 +170,7 @@ ap-figure { display: block; }
   border-radius: 8px;
   padding: 10px 14px;
 }
-.ap-figure-error { font-size: 14px; color: var(--ap-error, #b42318); }
+.ap-figure-error { display: block; font-size: 14px; color: var(--ap-error, #b42318); }
 /* Figures draw with currentColor; inherit the page text color so they flip
    with light/dark mode (graph-core's default #111 would vanish in dark mode). */
 .ap-figure svg,

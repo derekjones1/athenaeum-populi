@@ -1677,3 +1677,40 @@ test('apfigure builds every spec through the real engine and reports what fails'
   assert(lintHugo('{{< apfigure kind="graph" >}}\n{"ariaLabel":"x."}', SECTION)
     .errors.some((e) => /unclosed|closing/.test(e)));
 });
+
+// ---------------------------------------------------------------------------
+// multiplechoice graph mode — spec-JSON options
+
+const MC_GRAPH = (opts) => `{{< multiplechoice
+  question="Which graph shows $y=2x$?"
+  mode="graph"
+  answerIndex="0"
+  hint="Check the slope."
+>}}
+${opts.join('\n===OPT===\n')}
+{{< /multiplechoice >}}`;
+
+const LINE_SPEC = '{"ariaLabel":"The line y = 2x.","lines":[{"slope":2,"intercept":0}]}';
+const CURVE_SPEC = '{"ariaLabel":"The parabola y = x squared.","quadratics":[{"a":1}]}';
+const LEGACY_SVG = '<svg role="img" aria-label="A line." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><line x1="0" y1="0" x2="10" y2="10" stroke="currentColor"/></svg>';
+
+test('spec-JSON graph options lint clean, alone and mixed with legacy SVG', () => {
+  for (const opts of [[LINE_SPEC, CURVE_SPEC], [LINE_SPEC, LEGACY_SVG]]) {
+    const errors = lintHugo(MC_GRAPH(opts), SECTION).errors.filter((e) => e.includes('option'));
+    assert.deepEqual(errors, []);
+  }
+});
+
+test('a spec-JSON graph option is validated like an apfigure body', () => {
+  assert(lintHugo(MC_GRAPH(['{not json', LINE_SPEC]), SECTION)
+    .errors.some((e) => e.includes('multiplechoice(graph) option 0: spec is not valid JSON')));
+  assert(lintHugo(MC_GRAPH([LINE_SPEC, '{"lines":[{"slope":1}]}']), SECTION)
+    .errors.some((e) => e.includes('option 1: spec needs a non-empty ariaLabel')));
+  assert(lintHugo(MC_GRAPH([LINE_SPEC, '{"kind":"pie","ariaLabel":"x."}']), SECTION)
+    .errors.some((e) => e.includes('option 1: kind must be graph, numberline, or figure')));
+  assert(lintHugo(MC_GRAPH([LINE_SPEC, '{"ariaLabel":"x.","xMin":5,"xMax":-5}']), SECTION)
+    .errors.some((e) => e.includes('option 1: spec does not build')));
+  // an in-JSON kind that IS valid routes to the right builder
+  assert(lintHugo(MC_GRAPH([LINE_SPEC, '{"kind":"numberline","ariaLabel":"x > 3.","min":0,"max":5,"marker":{"at":3,"type":"open"},"shade":"right"}']), SECTION)
+    .errors.filter((e) => e.includes('option 1')).length === 0);
+});

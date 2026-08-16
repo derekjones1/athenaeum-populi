@@ -393,9 +393,62 @@ bracket
 ```
 
 **Multiple choice (graph mode)** — "which graph is correct?". Options are
-prerendered `<svg>` blocks separated by a line `===OPT===`, with
-`answerIndex` (0-based). Generate each option SVG with the figure helper
-(below). Every option needs an `aria-label`.
+separated by a line `===OPT===`, with `answerIndex` (0-based). Author each
+option as its graph-core spec JSON — the same spec language as `apfigure`,
+with the kind riding INSIDE the JSON when it is not a plain graph
+(`"kind": "graph" | "numberline" | "figure"`, default `graph`) — and the
+`<ap-figure>` component renders it in the option button with the full
+measured-metrics/auto-fit treatment:
+
+```
+{{</* multiplechoice
+  question="Which graph shows the point $(5, 2)$ plotted correctly?"
+  mode="graph"
+  answerIndex="1"
+  hint="Go right to $x = 5$ first, then up to $y = 2$."
+*/>}}
+{"ariaLabel":"A point plotted at 2 on the x-axis and 5 on the y-axis, with the coordinates reversed.","xMin":0,"xMax":7,"yMin":0,"yMax":7,"tickLabels":true,"points":[{"at":[2,5]}]}
+===OPT===
+{"ariaLabel":"A point plotted at 5 on the x-axis and 2 on the y-axis.","xMin":0,"xMax":7,"yMin":0,"yMax":7,"tickLabels":true,"points":[{"at":[5,2]}]}
+{{</* /multiplechoice */>}}
+```
+
+Every option spec needs an `ariaLabel` — it is the option button's
+accessible name, and for a graph question it must describe the graph
+without giving the answer away in words a screen-reader user would get for
+free. The lint validates every spec option exactly like an `apfigure` body
+(it must parse, carry the `ariaLabel`, and build through the real engine),
+and the figure layout gate covers option figures automatically. Prerendered
+`<svg>` option blocks (the pre-spec form) remain valid and keep their
+`aria-label` requirement; author NEW graph options spec-first always.
+
+**Migrating a legacy graph-choice exercise to spec options.** Unlike the
+figure migration above, this rewrites the exercise's own body, so the
+answer ledger participates by design — a converted exercise is a re-read
+exercise. Per page:
+
+1. Convert each option `<svg>` to its spec. Legacy options carry no
+   `data-spec`, so reconstruct like any pre-spec figure: recover grid,
+   objects, and labels from the SVG geometry, fit analytic primitives
+   (never `smoothCurves`), and keep each option's `aria-label` verbatim.
+   Only the option bodies change: question, hint, `answerIndex`, and option
+   ORDER must stay semantically identical.
+2. Verify old vs new side by side the same way §3 requires for figures:
+   render each new spec with `toSvgString`, lay it beside the old option
+   SVG in a throwaway gallery, screenshot, and inspect every pair. The
+   wrong options matter as much as the right one — a distractor that
+   drifted is a changed exercise.
+3. Re-verify the exercise and record it: the rewritten body has a new
+   hash, so `npm test` fails at `verify:ledger` until the record exists.
+   Run `node tools/answer-ledger.mjs prune content` to drop the stranded
+   old records, then `npm run ledger:list -- --unverified`, independently
+   confirm the `answerIndex` option is the correct graph (read the specs,
+   not the old key), write result files, and `npm run ledger:merge <dir>`.
+4. Gates: `npm run verify-section -- <page>`, `npm test`, `npm run build`,
+   the figure layout spec, and `node tools/screenshot-page.mjs <route>`
+   for light/dark crops. The exercise count is unchanged, so no baseline
+   moves; the all-same-`answerIndex` lint rule still applies across the
+   page.
 
 **Graph it yourself (GraphPlot):** config (answer + grid) is JSON in the body.
 
