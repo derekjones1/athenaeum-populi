@@ -29,6 +29,26 @@ export function htmlAttribute(tag, name) {
 }
 
 /**
+ * A regex source matching ONE opening tag of `name`, quoted values and all.
+ *
+ * The obvious `<div\b[^>]*>` is wrong, and wrong in a way that only showed up
+ * once a figure needed an inequality in its label: a `>` inside a quoted
+ * attribute value does not end a tag. `tools/render-figure.mjs` emits its
+ * provenance as `data-spec='{"ariaLabel":"… k > 0 …", …}'`, so `[^>]*` cut the
+ * tag mid-JSON and the lint reported its own generator's verbatim output as
+ * unparseable — a rule firing on sound content, which playbook §5 calls a bug
+ * in the rule.
+ *
+ * The alternation walks quoted runs whole, so the `>` that terminates the
+ * match is always the one outside quotes. Unquoted attribute values still
+ * cannot contain `>`, which is true of HTML itself.
+ */
+export const openTagSource = (name) => `<${name}\\b(?:[^>'"]|"[^"]*"|'[^']*')*>`;
+
+/** `openTagSource`, compiled — global and case-insensitive, for `matchAll`. */
+export const openTagRe = (name) => new RegExp(openTagSource(name), 'gi');
+
+/**
  * Does this CSS text pull in a file-backed image?
  *
  * `url(#gradient)` is an in-document SVG paint reference, not an image, and is

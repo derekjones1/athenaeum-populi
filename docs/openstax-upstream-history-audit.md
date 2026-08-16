@@ -13,20 +13,20 @@
 
 ## Coverage
 
-- Mapped local sections: 212
-- Sections changed upstream: 11
-- Content-level changes: 6
+- Mapped local sections: 221
+- Sections changed upstream: 14
+- Content-level changes: 9
 - Markup/metadata-only changes: 5
 - Changed Try It records: 3
 - Changed Try Its where local math matches the PDF-era form: 1
-- Local-impact drift decisions recorded: 3
+- Local-impact drift decisions recorded: 4
 
 ## Baselines
 
 - prealgebra (`prealgebra-bundle`): `d2cea8f95118f0eb436d4406a8fc8a8e0e00e8c8`
 - elementary-algebra (`prealgebra-bundle`): `d2cea8f95118f0eb436d4406a8fc8a8e0e00e8c8`
 - intermediate-algebra (`prealgebra-bundle`): `c1bbed4b86ff5c80686d339a6ca5e4e48fae2483`
-- precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864` — scaffolded, 11 sections mapped
+- precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864` — scaffolded, 20 sections mapped
 
 ## Changed mapped sections
 
@@ -99,5 +99,22 @@ Module `m81354`; markup-or-metadata-only. Changed lanes: raw XML only.
 ### precalculus 1.5 — [content/math/precalculus/01-functions/05-transformation-of-functions.md](../content/math/precalculus/01-functions/05-transformation-of-functions.md)
 
 Module `m49312`; markup-or-metadata-only. Changed lanes: raw XML only.
+
+
+### precalculus 3.3 — [content/math/precalculus/03-polynomial-and-rational-functions/03-power-functions-and-polynomial-functions.md](../content/math/precalculus/03-polynomial-and-rational-functions/03-power-functions-and-polynomial-functions.md)
+
+Module `m49346`; content-changed. Changed lanes: instructionalText.
+
+
+### precalculus 3.4 — [content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md](../content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md)
+
+Module `m49347`; content-changed. Changed lanes: instructionalText.
+
+Decision: **retain-local-equivalent.** Between the inferred PDF-era commit d1bd19c6 and the pinned review commit 789b5409, upstream changed this Try It's prompt from 'the function of degree 7' to 'degree 9' and updated nothing else. The edit contradicts the exercise's own printed solution, which gives a zero of -5 with multiplicity 3, a zero of -1 with multiplicity 2, and a zero of 3 with multiplicity 2 — summing to 7, not 9 — and it contradicts the figure's own alt text, which says 'degree 6'. Three different degrees now appear in one exercise. The PDF-era 'degree 7' is the reading consistent with the solution, with the drawn curve, and with the multiplicity arithmetic the exercise is teaching, so the local page retains it and carries a visible source note. Logged upstream in docs/openstax-errata.md. Do not apply the pinned commit's '9' in a later audit without upstream also fixing the solution.
+
+
+### precalculus 3.6 — [content/math/precalculus/03-polynomial-and-rational-functions/06-zeros-of-polynomial-functions.md](../content/math/precalculus/03-polynomial-and-rational-functions/06-zeros-of-polynomial-functions.md)
+
+Module `m49349`; content-changed. Changed lanes: instructionalText.
 
 

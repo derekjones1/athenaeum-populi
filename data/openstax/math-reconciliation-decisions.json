@@ -146,6 +146,21 @@
       ],
       "rationale": "One authored sub-exercise is revalued. It substituted $(0,0)$ into $x + 2y$ for the system $3x + y = 0, x + 2y = -5$, where the point satisfies the first equation but not the second — the pedagogical point — but the answer $0$ is also the substituted value, so a learner reading $x = 0$ off the prompt is graded correct, and the zero also hides the arithmetic behind the multiply-by-zero shortcut. The substitution moves to $(2,-6)$, which has the identical property (it satisfies $3x + y = 0$ and gives $-10 \\ne -5$) and requires the multiplication and addition to be carried out. Deliberate local revaluation: do not reverse it toward $(0,0)$ in a later audit.",
       "covers_note": "Empty by design — an exercise revaluation raises no audit flag; see the Elementary Algebra 1.6 entry."
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49353",
+      "covers": [
+        "heading-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Chapter Test",
+        "Chapter Review Exercises"
+      ],
+      "rationale": "Section 3.9 is the LAST section of chapter 3, and m49353 carries the whole chapter's end matter after its own section exercises: a 'Chapter Review Exercises' set and a 'Chapter Test'. The audit reads those as source headings with no local counterpart and raises heading-needs-review at 0% title similarity. They are deliberately absent: a chapter test covers all nine sections of chapter 3, so folding its items into 3.9's Practice block would attribute chapter-wide material to one section and hide the other eight sections' skills inside a variation page. The section-final Practice block draws only from the module's own '3.9 Section Exercises' set. If chapter-level assessment is wanted later it belongs in a Knowledge Check page, not here.",
+      "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap. Expect the same flag on the final section of every chapter whose module is packaged this way."
     }
   ],
   "upstreamDriftDecisions": [
@@ -185,6 +200,18 @@
       ],
       "status": "retain-local-equivalent",
       "rationale": "Current upstream swaps which rectangle dimension is fourteen less than the other. The local PDF-era version is mathematically equivalent and internally consistent; the current upstream summary remains phrased for the older orientation."
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49347",
+      "sourceElementIds": [
+        "ti_03_04_02",
+        "fs-id1165137932363",
+        "Figure_03_04_010"
+      ],
+      "status": "retain-local-equivalent",
+      "rationale": "Between the inferred PDF-era commit d1bd19c6 and the pinned review commit 789b5409, upstream changed this Try It's prompt from 'the function of degree 7' to 'degree 9' and updated nothing else. The edit contradicts the exercise's own printed solution, which gives a zero of -5 with multiplicity 3, a zero of -1 with multiplicity 2, and a zero of 3 with multiplicity 2 — summing to 7, not 9 — and it contradicts the figure's own alt text, which says 'degree 6'. Three different degrees now appear in one exercise. The PDF-era 'degree 7' is the reading consistent with the solution, with the drawn curve, and with the multiplicity arithmetic the exercise is teaching, so the local page retains it and carries a visible source note. Logged upstream in docs/openstax-errata.md. Do not apply the pinned commit's '9' in a later audit without upstream also fixing the solution."
     }
   ]
 }

@@ -313,6 +313,45 @@ assert.equal(analyze('Write $y=2x^2+4x+5$ in standard form.', 'y=2(x-1)^2+3').st
 assert.equal(analyze('Rewrite $f(x)=2x^2-8x+3$ in the $f(x)=a(x-h)^2+k$ form by completing the square.', 'f(x)=2(x-2)^2-5').status, 'pass');
 assert.equal(analyze('Rewrite $f(x)=2x^2-8x+3$ in the $f(x)=a(x-h)^2+k$ form by completing the square.', 'f(x)=2(x+2)^2-5').status, 'fail');
 
+/* ---- the two complex-argument narrowings (August 15, 2026) ----------------
+ * Both were found by this checker reporting three CORRECT Precalculus §3.1
+ * answers as failures. A correctness check that rejects sound content is a
+ * bug in the check, so each class is skipped — counted out of scope, never
+ * silently dropped — and pinned here with the case it got wrong.
+ */
+
+// Compute Engine 0.58.0 evaluates `Multiply(3, Complex(2,1))` as 3i, dropping
+// the real part, and the corruption happens inside subs(): substituting 2+i
+// into x^2+3x+5 folds to 5+3i+... and yields 8+7i for a value that is 14+7i.
+assert.equal(
+  analyze('If $f(x)=x^2+3x+5$, evaluate $f(2+i)$.', '14+7i').status,
+  'skip',
+  'an argument with imaginary part +1 is the shape subs() gets wrong',
+);
+// Everything one step away still evaluates correctly, and stays checked:
+// imaginary part -1, and any other imaginary magnitude.
+assert.equal(analyze('If $f(x)=2x^2-3x$, evaluate $f(8-i)$.', '102-29i').status, 'pass');
+assert.equal(analyze('If $f(x)=2x^2-3x$, evaluate $f(8-i)$.', '102-30i').status, 'fail');
+assert.equal(analyze('If $f(x)=x^2+3x+5$, evaluate $f(2+5i)$.', '-10+35i').status, 'pass');
+assert.equal(analyze('If $f(x)=x^2+3x+5$, evaluate $f(2+5i)$.', '-4+35i').status, 'fail');
+// …and a real argument is untouched by any of this.
+assert.equal(analyze('If $f(x)=x^2+3x+5$, evaluate $f(2)$.', '15').status, 'pass');
+assert.equal(analyze('If $f(x)=x^2+3x+5$, evaluate $f(2)$.', '16').status, 'fail');
+
+// The re-expression class read `f(8-i)` as a product of a free symbol f with
+// its argument and sampled f at 1.3178, manufacturing a disagreement with the
+// right answer. An application of a name the question DEFINES is
+// function-evaluate's to check, never re-expression's.
+assert.equal(
+  analyze('Let $f(x)=\\tfrac{x+1}{x-4}$. Evaluate $f(-i)$.', '-\\frac{3}{17}+\\frac{5}{17}i').status,
+  'skip',
+  'a defined function name must not be sampled as a free variable',
+);
+// The guard is keyed on the question defining that name — an application of
+// an UNdefined function still falls through as it always did.
+assert.equal(analyze('Simplify: $2(x+3)$.', '2x+6').status, 'pass');
+assert.equal(analyze('Simplify: $2(x+3)$.', '2x+5').status, 'fail');
+
 const doc = [
   '# Section',
   '',

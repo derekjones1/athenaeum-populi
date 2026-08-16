@@ -230,6 +230,10 @@
   "0298ddb94c9948b5": {
    "verdict": "ok"
   },
+  "02a3ebc9fa92ab53": {
+   "verdict": "ok",
+   "note": "(3-4i)-(2+5i) = (3-2)+(-4-5)i = 1-9i; recomputed independently, matches CNXML ti_03_01_03."
+  },
   "02a5fa3ef9864303": {
    "verdict": "ok",
    "note": "The table at the end of the context (x=0,2,4,8,12; H(x)=12.5,13.5,14.5,16.5,18.5) is perfectly linear with slope 0.5 and intercept 12.5, so H(x)=0.5x+12.5, matching the declared answer exactly."
@@ -340,6 +344,10 @@
   "03ead94d7067d971": {
    "verdict": "ok"
   },
+  "03ecd1c2bc668730": {
+   "verdict": "ok",
+   "note": "x^4: even exponent, coefficient +1 (positive) -> both ends increase without bound. Matches CNXML fs-id1165137455119."
+  },
   "03f15858b568136e": {
    "verdict": "ok"
   },
@@ -420,6 +428,10 @@
   },
   "04b4435314c5a1a2": {
    "verdict": "ok"
+  },
+  "04b51256c84b5a18": {
+   "verdict": "ok",
+   "note": "f(x)=3^(x+1) has the variable in the exponent with a constant base -- exponential, not power or polynomial. Matches CNXML fs-id1165134149794 solution \"Neither\"."
   },
   "04bb275056aa2354": {
    "verdict": "ok"
@@ -598,6 +610,10 @@
   "0610ebec522193f5": {
    "verdict": "ok"
   },
+  "061b0f2ba56787f6": {
+   "verdict": "ok",
+   "note": "Paraphrase of CNXML Verbal fs-id1165135314691 solution (sign change between f(a) and f(b) implies a zero in between, by IVT)."
+  },
   "061f213ca3237d40": {
    "verdict": "ok"
   },
@@ -669,6 +685,10 @@
   },
   "070712a2c3cb3d92": {
    "verdict": "ok"
+  },
+  "070faa0c5ae8172a": {
+   "verdict": "ok",
+   "note": "Matches CNXML fs-id1165134087640 solution f(x)=-2/9(x-3)(x+1)(x+3) verbatim; independently confirmed f(0)=2 by node evaluation of the expanded coefficients used to draw the figure."
   },
   "0717867f3a1e1cca": {
    "verdict": "ok"
@@ -811,6 +831,10 @@
   },
   "0894d833ae21cb08": {
    "verdict": "ok"
+  },
+  "08a48543bd7b78db": {
+   "verdict": "ok",
+   "note": "x^4-19x^2+30x = x(x^3-19x+30); tested x=2 as a root of the cubic (8-38+30=0), synthetic-divided to x^2+2x-15=(x+5)(x-3); zeros 0,-5,2,3 — matches CNXML ti_03_04_01 solution."
   },
   "08a672bf4126f51b": {
    "verdict": "ok"
@@ -1043,6 +1067,10 @@
   "0b21f13cb31b9b61": {
    "verdict": "ok"
   },
+  "0b27c49d865065d1": {
+   "verdict": "ok",
+   "note": "Solved y=(x+1)^2-3 (x>=-1) for x: x=-1+sqrt(y+3) (positive root since x+1>=0), so f^{-1}(x)=sqrt(x+3)-1. Matches CNXML exercise fs-id1165137405850 (source #7), which has a solution."
+  },
   "0b3a46c43fbb91d6": {
    "verdict": "ok"
   },
@@ -1184,6 +1212,10 @@
   "0c87fc140f18d188": {
    "verdict": "ok"
   },
+  "0c9349d45e6f3803": {
+   "verdict": "ok",
+   "note": "A(50)=50*50=2500 sq ft (computed via node vertex k-value 2500); matches same CNXML solution."
+  },
   "0c9a18f3bc6c38c7": {
    "verdict": "ok"
   },
@@ -1195,6 +1227,10 @@
   },
   "0ca7aabcd6bfde95": {
    "verdict": "ok"
+  },
+  "0cae772bd5d5807a": {
+   "verdict": "ok",
+   "note": "Section exercise fs-id1165137676536: k=45/(100*3^3)=1/60; solve 60=(1/60)*150*d^3 => d^3=24 => d=cbrt(24)=2.884499... rounds to 2.88 inches. Verified with node arithmetic; matches CNXML solution '≈2.88 inches'; rounding disclosed in the question text."
   },
   "0cb301eb50143de3": {
    "verdict": "ok"
@@ -1292,6 +1328,10 @@
   "0dc4e2f3e8801208": {
    "verdict": "ok"
   },
+  "0dc644a31975d64c": {
+   "verdict": "ok",
+   "note": "(2+sqrt(-12))/2=(2+2i*sqrt(3))/2=1+i*sqrt(3); recomputed independently, matches CNXML end-of-section answer key."
+  },
   "0dcd1f5e86309bda": {
    "verdict": "ok"
   },
@@ -1342,6 +1382,10 @@
   },
   "0e4170ff2f2789bd": {
    "verdict": "ok"
+  },
+  "0e44b32d88dec820": {
+   "verdict": "ok",
+   "note": "Factored (x-5)(x+5)/[x(x-1)(x-5)] = (x+5)/[x(x-1)] after cancelling x-5; VA at zeros of x(x-1): x=0,1; matches CNXML Try It 5."
   },
   "0e48626f3eb589a2": {
    "verdict": "ok"
@@ -1553,6 +1597,10 @@
   },
   "111143a23dc29410": {
    "verdict": "ok"
+  },
+  "111314c54dab7777": {
+   "verdict": "ok",
+   "note": "Practice long-division item 2 (quotient): ran long division of 2x^2-3x+2 by x+2 in node; quotient 2x-7, remainder 16, matching the CNXML solution (fs-id1165134472270)."
   },
   "111b8db3b506335a": {
    "verdict": "ok"
@@ -1943,6 +1991,10 @@
   "1553841462326cae": {
    "verdict": "ok"
   },
+  "1558d2bb9fab2128": {
+   "verdict": "ok",
+   "note": "(6+4i)/i * (-i/-i) = (-6i-4i^2)/(-i^2) = (4-6i)/1 = 4-6i; recomputed independently with node, matches CNXML end-of-section answer key."
+  },
   "15643142763d9624": {
    "verdict": "ok"
   },
@@ -2078,6 +2130,10 @@
   },
   "16d74a6c5f9ae71c": {
    "verdict": "ok"
+  },
+  "16e695e3cb488e49": {
+   "verdict": "ok",
+   "note": "Leading term (the term with the highest power, 6) is -x^6. Matches CNXML ti_03_03_03."
   },
   "16f107d82f1424bb": {
    "verdict": "ok"
@@ -2215,6 +2271,10 @@
   "185f3565d891bd86": {
    "verdict": "ok"
   },
+  "18665533b8575ae7": {
+   "verdict": "ok",
+   "note": "Vertex of f(x)=x^2-2x: h=1,k=f(1)=-1, so (1,-1); computed via node, matches printed function."
+  },
   "1868392536243e49": {
    "verdict": "ok"
   },
@@ -2248,11 +2308,19 @@
   "18e2da1de44c2af6": {
    "verdict": "ok"
   },
+  "18eea05f0a9eb8dc": {
+   "verdict": "ok",
+   "note": "f(0) = (2)^2(-2) / [2(-1)^2(-3)] = -8/-6 = 4/3, so (0,4/3); matches CNXML Try It 8."
+  },
   "18f7089a096baf60": {
    "verdict": "ok"
   },
   "191304f9738f657b": {
    "verdict": "ok"
+  },
+  "191d95f305b4d379": {
+   "verdict": "ok",
+   "note": "Every polynomial function has domain all real numbers, stated directly in the section's own Q&A callout; no division, root, or log restricts x^3+x^2-20x."
   },
   "1931e59050ace8e9": {
    "verdict": "ok"
@@ -2265,6 +2333,10 @@
   },
   "19517721fbe8708f": {
    "verdict": "ok"
+  },
+  "195693f06622ccc2": {
+   "verdict": "ok",
+   "note": "Solved y=x^3+5 for x: f^{-1}(x)=cbrt(x-5). Checked composition symbolically (standard cubic/cube-root inverse pair). Matches CNXML exercise fs-id1165137725343 (source #13), which has a solution."
   },
   "1957ce16a59e8697": {
    "verdict": "ok"
@@ -2344,6 +2416,10 @@
   "1a2cc225a03169c7": {
    "verdict": "ok"
   },
+  "1a37db7da841c1b9": {
+   "verdict": "ok",
+   "note": "(3+2i)+(5-3i)=(3+5)+(2-3)i=8-i; recomputed independently, matches CNXML end-of-section answer key."
+  },
   "1a38d3cdd99ed683": {
    "verdict": "ok"
   },
@@ -2410,6 +2486,10 @@
   "1af90fa0f3e58ee0": {
    "verdict": "ok"
   },
+  "1b02d88c9b1d2370": {
+   "verdict": "ok",
+   "note": "Try It 2 (ti_03_09_02): k=x^2*y=9*8=72; y=72/4^2=72/16=9/2. Verified with node arithmetic; matches CNXML solution."
+  },
   "1b0c01c65c3a55e2": {
    "verdict": "ok"
   },
@@ -2424,6 +2504,10 @@
   },
   "1b3611f36b33319a": {
    "verdict": "ok"
+  },
+  "1b36c6f431a3fb97": {
+   "verdict": "ok",
+   "note": "f(1) = (1+5)/3 = 2 by direct substitution into f(x)=(x+5)/3; matches CNXML ti_03_08_01 solution's intermediate step."
   },
   "1b46a474c0444e7e": {
    "verdict": "ok"
@@ -2448,6 +2532,10 @@
   },
   "1b70aeb5f649d011": {
    "verdict": "ok"
+  },
+  "1b8bfb4e68f34040": {
+   "verdict": "ok",
+   "note": "(-4+4i)-(-6+9i)=(-4+6)+(4-9)i=2-5i; recomputed independently, matches CNXML end-of-section answer key."
   },
   "1b906b98871d8c1f": {
    "verdict": "ok"
@@ -2557,6 +2645,10 @@
   "1c9720593d61487e": {
    "verdict": "ok"
   },
+  "1c9d11c8ff9f65cf": {
+   "verdict": "ok",
+   "note": "Try It 5. Derived independently: zeros 5, 2i, -2i give base cubic x^3-5x^2+4x-20; f(1) of base = -20; a=10/-20=-1/2; f(x)=-1/2x^3+5/2x^2-2x+10, confirmed by node computation of f(1)=10. Matches CNXML ti_03_06_05 solution exactly."
+  },
   "1ca3324440c8dcbb": {
    "verdict": "ok"
   },
@@ -2596,6 +2688,10 @@
   "1d1a8b8e7583a0cb": {
    "verdict": "ok",
    "note": "Least-squares regression on the table (x=900,988,1000,1010,1200,1205; y=70,80,82,84,105,108) gives intercept -38.8405..., which rounds to -38.841, matching the declared answer."
+  },
+  "1d1c5b558dbf7514": {
+   "verdict": "ok",
+   "note": "Computed with node: Math.sqrt(50/(4*Math.PI)) = 1.9947...; rounds to 1.99, matching the question's 'rounded to the nearest hundredth' instruction and the CNXML solution's stated '1.99 inches'."
   },
   "1d230f92e3e7f4ad": {
    "verdict": "ok"
@@ -2656,6 +2752,10 @@
   },
   "1dd01cdf41fcdd9f": {
    "verdict": "ok"
+  },
+  "1dd86ebfb3974ab8": {
+   "verdict": "ok",
+   "note": "Practice synthetic-division item 1: ran synthetic division (k=4) on 2,-6,-7,6 in node; quotient 2x^2+2x+1, remainder 10, matching the CNXML solution (fs-id1165134474179)."
   },
   "1dd9ec78acf18fb8": {
    "verdict": "ok"
@@ -2882,6 +2982,10 @@
   "2095bf37f4da85f1": {
    "verdict": "ok"
   },
+  "209ba78b114d0b4f": {
+   "verdict": "ok",
+   "note": "Degree of numerator (1) < degree of denominator (3, from x^3-16x); HA y=0; matches CNXML source answer."
+  },
   "20a23fc7b9bd5dbe": {
    "verdict": "ok"
   },
@@ -2918,6 +3022,10 @@
   },
   "20dd3d474edcf2d1": {
    "verdict": "ok"
+  },
+  "20eb14b613cce122": {
+   "verdict": "ok",
+   "note": "1-2i has real part 1 and imaginary part -2, ordered pair (1,-2); source solution is an image confirming the plotted point 1-2i, coordinates derived independently."
   },
   "20eb22e2dc36e951": {
    "verdict": "ok"
@@ -3177,6 +3285,10 @@
   "2423edd40de2c01e": {
    "verdict": "ok"
   },
+  "242fe2bb23e04b0a": {
+   "verdict": "ok",
+   "note": "Vertex of f(x)=(x-3)^2+2 is (3,2), a>0, so range [2,infty); matches CNXML solution for fs-id1165135419824."
+  },
   "243e757ce1d1675c": {
    "verdict": "ok",
    "note": "The table above (t=30,50,60,70,90; f(t)=20,40,50,60,70) gives f(60)=50 directly, matching the declared answer."
@@ -3406,6 +3518,10 @@
   "275e6a62145ffab1": {
    "verdict": "ok"
   },
+  "276c73dc15dca37c": {
+   "verdict": "ok",
+   "note": "Practice (Descartes). Sign changes of x^4-x^2-1 (signs +,0,-,0,-1 -> effectively +,-,-): 1 change (1 positive); f(-x) is the same polynomial (only even powers plus a constant), also 1 change (1 negative). Matches CNXML solution for fs-id1165134061970."
+  },
   "278dfe0413da3254": {
    "verdict": "ok"
   },
@@ -3463,6 +3579,10 @@
   },
   "282598a04de48cb1": {
    "verdict": "ok"
+  },
+  "282eb68408b21190": {
+   "verdict": "ok",
+   "note": "Practice long-division item 1 (quotient): ran long division of 3x^2+23x+14 by x+7 in node; quotient 3x+2, remainder 0, matching the CNXML solution (fs-id1165135643143)."
   },
   "283026260d51f43d": {
    "verdict": "ok"
@@ -3557,8 +3677,16 @@
   "290b50d1e5e37048": {
    "verdict": "ok"
   },
+  "291497273e05f8f3": {
+   "verdict": "ok",
+   "note": "-4(2+6i) = -8-24i by distribution; recomputed independently, matches CNXML ti_03_01_04."
+  },
   "292d342f44c9fa9e": {
    "verdict": "ok"
+  },
+  "2935f0c5da5bc416": {
+   "verdict": "ok",
+   "note": "f(-i)=(1-i)/(-4-i); multiplied by conjugate (-4+i)/(-4+i): numerator (1-i)(-4+i)=-3+5i, denominator 16+1=17, giving -3/17+5/17 i; recomputed independently, matches CNXML ti_03_01_07 value (source spells it -3/17+5i/17)."
   },
   "293b5a62fa46a412": {
    "verdict": "ok"
@@ -3641,6 +3769,10 @@
   "2a3db458e57390af": {
    "verdict": "ok"
   },
+  "2a3e719fc4626bc4": {
+   "verdict": "ok",
+   "note": "Figure built by me from 0.02*(x+5)^3(x+1)^2(x-3)^2, chosen exactly to match the CNXML ti_03_04_02 solution (-5 mult 3, -1 mult 2, 3 mult 2, sum=7=degree); verified by node evaluation that the curve touches at -1 and 3 and crosses while flattening at -5."
+  },
   "2a407312247a3546": {
    "verdict": "ok"
   },
@@ -3652,6 +3784,10 @@
   },
   "2a592bc09946be7f": {
    "verdict": "ok"
+  },
+  "2a5e09f2a3aa1adf": {
+   "verdict": "ok",
+   "note": "(3-4i)(2+3i) = 6+9i-8i-12i^2 = 6+i+12 = 18+i; recomputed independently, matches CNXML ti_03_01_05."
   },
   "2a6bfdaea1af69a7": {
    "verdict": "ok"
@@ -3845,6 +3981,10 @@
   "2cc5f5d9526ed3e4": {
    "verdict": "ok"
   },
+  "2cd92b3e7b919d5e": {
+   "verdict": "ok",
+   "note": "Both numerator and denominator expand to degree 3; leading-coefficient ratio 1/2; matches CNXML Try It 8."
+  },
   "2ce16376112f216e": {
    "verdict": "ok"
   },
@@ -3970,6 +4110,10 @@
   "2e25ad55453ef9ef": {
    "verdict": "ok"
   },
+  "2e28efe4337a23e0": {
+   "verdict": "ok",
+   "note": "Vertex of H(t)=-16t^2+96t+112: h=-96/-32=3; matches CNXML solution '3 seconds'."
+  },
   "2e295f26644f042f": {
    "verdict": "ok"
   },
@@ -3981,6 +4125,10 @@
   },
   "2e3ca597a8432763": {
    "verdict": "ok"
+  },
+  "2e405d00b1baa222": {
+   "verdict": "ok",
+   "note": "(5-2i)(3i)=15i-6i^2=15i+6=6+15i; recomputed independently, matches CNXML end-of-section answer key."
   },
   "2e43a62637e8e0c3": {
    "verdict": "ok"
@@ -4063,11 +4211,19 @@
   "2f80b80c271453eb": {
    "verdict": "ok"
   },
+  "2f8754086e0105c8": {
+   "verdict": "ok",
+   "note": "(-5+3i)-(6-i)=(-5-6)+(3+1)i=-11+4i; recomputed independently, matches CNXML end-of-section answer key."
+  },
   "2f9283f173196938": {
    "verdict": "ok"
   },
   "2fb0f2f36310fb6e": {
    "verdict": "ok"
+  },
+  "2fb356675a0e6393": {
+   "verdict": "ok",
+   "note": "Vertex of f(x)=4x^2+x-1: h=-1/8,k=-17/16 (computed via node); matches CNXML solution for fs-id1165134278554."
   },
   "2fb410d0b4a7255d": {
    "verdict": "ok"
@@ -4182,6 +4338,10 @@
   },
   "311e526c1cb3fb3e": {
    "verdict": "ok"
+  },
+  "31342b0bc448d11f": {
+   "verdict": "ok",
+   "note": "Axis of symmetry x=h=1 for f(x)=x^2-2x."
   },
   "313d757ea4953973": {
    "verdict": "ok"
@@ -4429,6 +4589,10 @@
   "33eabe3e56ccb0e2": {
    "verdict": "ok"
   },
+  "33f602cb72445619": {
+   "verdict": "ok",
+   "note": "C(t) = sugar/water = (8+2t)/(300+20t) by direct construction from the stated rates; matches CNXML source exercise's given answer."
+  },
   "33f749d1f9a7555d": {
    "verdict": "ok"
   },
@@ -4553,6 +4717,10 @@
   "3580c1f5057c9e3a": {
    "verdict": "ok"
   },
+  "35a176f8f073fd49": {
+   "verdict": "ok",
+   "note": "Denominator (x-3)^2 zero only at x=3; matches CNXML Try It 7."
+  },
   "35b2d19ed4c420b7": {
    "verdict": "ok"
   },
@@ -4591,6 +4759,10 @@
   },
   "360d6ca4ccea3d2e": {
    "verdict": "ok"
+  },
+  "3628d5e238464e2d": {
+   "verdict": "ok",
+   "note": "Section exercise fs-id1165137658781: k=100/(1*2*5)=10, so y=10xzw. Verified with node arithmetic; matches CNXML solution."
   },
   "362dfd90e909f1d0": {
    "verdict": "ok"
@@ -4817,8 +4989,16 @@
   "38465c8a8a7464d2": {
    "verdict": "ok"
   },
+  "3846adbe2c104268": {
+   "verdict": "ok",
+   "note": "Computed f(2)=8-18=-10 and f(4)=64-36=28 by node arithmetic for f(x)=x^3-9x. Matches CNXML fs-id1165135513620 solution."
+  },
   "385b41c538e7ca2d": {
    "verdict": "ok"
+  },
+  "385d80ce21eac373": {
+   "verdict": "ok",
+   "note": "f(x)=108-13x^9-8x^4+14x^12+2x^3: highest power present is 12 (the 14x^12 term), so at most 12 x-intercepts. Matches CNXML ti_03_03_07."
   },
   "385e320e49c3feee": {
    "verdict": "ok"
@@ -4931,6 +5111,10 @@
   "3998008b828910a9": {
    "verdict": "ok"
   },
+  "399fb24d16f3b83f": {
+   "verdict": "ok",
+   "note": "Try It 3. Only rational candidates for x^3-5x^2+2x+1 are +-1 (constant/leading coeff both 1); computed f(1)=-1, f(-1)=-7, neither 0, so 0 rational zeros. Matches CNXML ti_03_06_03 solution text 'There are no rational zeros.'"
+  },
   "39a3affc69590149": {
    "verdict": "ok"
   },
@@ -4945,6 +5129,10 @@
   },
   "39c24d38f026bbbe": {
    "verdict": "ok"
+  },
+  "39c988cb509dfb62": {
+   "verdict": "ok",
+   "note": "7-2x^2 in general form is -2x^2+7; highest power is 2. Matches CNXML fs-id1165134380913 (\"Degree = 2\")."
   },
   "39ce5532ce1521cb": {
    "verdict": "ok"
@@ -5084,6 +5272,10 @@
   },
   "3ba89fe8e6a5cebe": {
    "verdict": "ok"
+  },
+  "3bac08ba7506b6ec": {
+   "verdict": "ok",
+   "note": "(x+2)^2(x-2)/[2(x-1)^2(x-3)]: denominator zero at x=1,3, neither shared with numerator; matches CNXML Try It 8."
   },
   "3bbc0fc5401f0041": {
    "verdict": "ok"
@@ -5276,6 +5468,10 @@
   },
   "3e92b06b0689a598": {
    "verdict": "ok"
+  },
+  "3ea343a4a05d032b": {
+   "verdict": "ok",
+   "note": "C(t)=3(t+2)(t-3)(t+5) is already factored; zeros -2, 3, -5 by inspection. Matches CNXML fs-id1165133381481 solution (-2,0),(3,0),(-5,0)."
   },
   "3ebcf9f7938b39ac": {
    "verdict": "ok"
@@ -5511,6 +5707,10 @@
   "418b1a5ba6897e8d": {
    "verdict": "ok"
   },
+  "418f0b1449e4fcb1": {
+   "verdict": "ok",
+   "note": "Recreated graph vertex (2,7), y-intercept (0,-1); expands to -2x^2+8x-1; matches CNXML solution for fs-id1165135262616, confirmed against rendered PDF page 272 graph #61."
+  },
   "4192aa0a5671d837": {
    "verdict": "ok"
   },
@@ -5555,6 +5755,10 @@
    "verdict": "ok",
    "note": "Line segment runs from screen (69.1,27.1) to (304.9,262.9) on axes with origin(166,166), 14px/unit; the line is y=-x+3, so its x-intercept is (3,0), matching the declared answer."
   },
+  "420655cacc5dfe33": {
+   "verdict": "ok",
+   "note": "f(8-i)=2(8-i)^2-3(8-i)=2(63-16i)-24+3i=126-32i-24+3i=102-29i; recomputed independently with node, matches CNXML ti_03_01_06."
+  },
   "420ddd0777452290": {
    "verdict": "ok"
   },
@@ -5572,6 +5776,10 @@
   },
   "425530e7a55c8d46": {
    "verdict": "ok"
+  },
+  "427cf5910e32cd9b": {
+   "verdict": "ok",
+   "note": "Practice long-division item 1 (remainder): same division as above; remainder 0, matching the CNXML solution."
   },
   "42806ac99107df01": {
    "verdict": "ok"
@@ -5771,6 +5979,10 @@
   "44b038b589e37e1f": {
    "verdict": "ok"
   },
+  "44b299ebf48673ee": {
+   "verdict": "ok",
+   "note": "Leading coefficient of -x^6 is -1. Matches CNXML ti_03_03_03."
+  },
   "44ba7e26ae4a9521": {
    "verdict": "ok"
   },
@@ -5807,8 +6019,16 @@
   "45019ecb9d6bc360": {
    "verdict": "ok"
   },
+  "451580e4f45a5462": {
+   "verdict": "ok",
+   "note": "Direct paraphrase of the section's own definition (a zero is where f(x)=0, which is the same input as an x-intercept) and of CNXML Verbal exercise fs-id1165135559517's solution."
+  },
   "4516d78831662a69": {
    "verdict": "ok"
+  },
+  "451a29190d14c30e": {
+   "verdict": "ok",
+   "note": "Try It 6. Computed sign changes via node: f(x)=2x^4-10x^3+11x^2-15x+12 has coefficient signs +,-,+,-,+ = 4 sign changes (4,2,or 0 positive); f(-x)=2x^4+10x^3+11x^2+15x+12 has all-positive coefficients = 0 sign changes (0 negative). Matches CNXML ti_03_06_06 solution ('4, 2, or 0 positive real roots and 0 negative real roots')."
   },
   "45209a5079c01cb9": {
    "verdict": "ok"
@@ -5828,6 +6048,10 @@
   "45644ef11844d154": {
    "verdict": "ok"
   },
+  "457a580a32fac8ed": {
+   "verdict": "ok",
+   "note": "Numeric maximization of 100t/(2t^2+75) over t in [0,50] (node scan, step 0.001) peaks at t=6.124; exact critical point sqrt(75/2)=6.1237...; rounds to 6.12, matching the CNXML source answer."
+  },
   "4586ac485085592a": {
    "verdict": "ok"
   },
@@ -5839,6 +6063,10 @@
   },
   "45b071f6729b1fa1": {
    "verdict": "ok"
+  },
+  "45b577e1e61a6231": {
+   "verdict": "ok",
+   "note": "Re-derived independently: (3+4i)(3-4i) = 9 - 12i + 12i - 16i^2 = 9 + 16 = 25. Conjugate pair, so the product is a^2+b^2 = 3^2+4^2 = 25. Record replaces the pre-edit hash: the answerForm was changed from \"decimal\" to \"distributed\" (same grading outcome on this item, but \"decimal\" told the learner to write a complex product as a decimal, while \"distributed\" names the step the exercise asks for). Answer text unchanged."
   },
   "45c380ae32cdc067": {
    "verdict": "ok"
@@ -6056,6 +6284,10 @@
   },
   "47dda8e870ae4696": {
    "verdict": "ok"
+  },
+  "47ddd631a251b08d": {
+   "verdict": "ok",
+   "note": "Solved y=(x+3)/(x-2) for x by cross-multiplying and collecting x terms: f^{-1}(x)=(2x+3)/(x-1). Verified by node composition f(f^{-1}(x))=x for several x values (0,1,2,-3,7.5), all equal to 5 decimal places. Matches CNXML ti_03_08_05."
   },
   "47de71828920d367": {
    "verdict": "ok"
@@ -6358,6 +6590,10 @@
   "4b726b7f53c09995": {
    "verdict": "ok"
   },
+  "4b742116b6580e7e": {
+   "verdict": "ok",
+   "note": "f(x)=2x^3-6x^2-20x has no constant term, so f(0)=0; y-intercept value is 0. Matches CNXML ti_03_03_06."
+  },
   "4b7833f33b39d05d": {
    "verdict": "ok"
   },
@@ -6416,6 +6652,10 @@
   "4c15be78ca46ed7b": {
    "verdict": "ok"
   },
+  "4c1813f1de2e278d": {
+   "verdict": "ok",
+   "note": "Denominator zero at x=1,5 (the 5(x-1)(x-5) factors); domain is R minus {1,5}; matches CNXML Try It 4."
+  },
   "4c188b86d278e399": {
    "verdict": "ok"
   },
@@ -6427,6 +6667,10 @@
   },
   "4c1e3afb9a9db209": {
    "verdict": "ok"
+  },
+  "4c29152dc2ef6d21": {
+   "verdict": "ok",
+   "note": "Practice (Rational Zero Theorem list). Constant term 5 (factors +-1,+-5), leading coeff 2 (factors +-1,+-2) give candidates +-1,+-5,+-1/2,+-5/2. Matches CNXML solution for fs-id1165135486016."
   },
   "4c38262f897b346d": {
    "verdict": "ok"
@@ -6554,6 +6798,10 @@
   "4df57f423b46432f": {
    "verdict": "ok"
   },
+  "4e024d526b13cc47": {
+   "verdict": "ok",
+   "note": "Solved y=3x^2+5 (x<=0) for x: x=-sqrt((y-5)/3) (negative root since x<=0), so f^{-1}(x)=-sqrt((x-5)/3). Matches CNXML exercise fs-id1165135209972 (source #9), which has a solution."
+  },
   "4e065b96b4981c53": {
    "verdict": "ok"
   },
@@ -6587,6 +6835,10 @@
   },
   "4e6e32c2cdcda605": {
    "verdict": "ok"
+  },
+  "4e82bed91880cef9": {
+   "verdict": "ok",
+   "note": "Vertex of h(t)=-4.9t^2+229t+234: k=2909.5612... rounds to 2909.56 (computed via node); matches CNXML solution for fs-id1165135571732."
   },
   "4e8400992b0bebe4": {
    "verdict": "ok"
@@ -6765,6 +7017,10 @@
   "50df19bcf9a33d2d": {
    "verdict": "ok"
   },
+  "50e2de20fb984a6e": {
+   "verdict": "ok",
+   "note": "f(x)=x^5-5x^3+4x has degree 5 (leading coefficient of x^5 is 1, nonzero); max turning points = 5-1 = 4, by the section's own stated theorem."
+  },
   "510b130ab3bb723b": {
    "verdict": "ok"
   },
@@ -6825,6 +7081,10 @@
   "51ce7640f864b673": {
    "verdict": "ok"
   },
+  "51d5e3d39cc3f819": {
+   "verdict": "ok",
+   "note": "x^2+5x-36=(x-4)(x+9); VA at x=4,-9; matches CNXML source answer."
+  },
   "51e19f4e1890c9e5": {
    "verdict": "ok"
   },
@@ -6860,6 +7120,10 @@
   },
   "529dfb16fa7acd9c": {
    "verdict": "ok"
+  },
+  "529f1ee11278a8ac": {
+   "verdict": "ok",
+   "note": "5x+2=0 at x=-2/5; matches CNXML source answer."
   },
   "52a6c85edb0819fc": {
    "verdict": "ok"
@@ -7041,6 +7305,10 @@
   "54e5051f41442db2": {
    "verdict": "ok"
   },
+  "54ee8c6d36dd591a": {
+   "verdict": "ok",
+   "note": "Both degree 1; leading coeffs -2 (from 4-2x) and 3; ratio -2/3; matches CNXML source answer."
+  },
   "54fd2c457f43dfc5": {
    "verdict": "ok"
   },
@@ -7093,11 +7361,19 @@
   "55779c0146d37435": {
    "verdict": "ok"
   },
+  "557f0e9a006f1651": {
+   "verdict": "ok",
+   "note": "Section exercise fs-id1165137696700: k=y*cbrt(x)=5*3=15; y=15/cbrt(125)=15/5=3. Verified with node arithmetic; matches CNXML solution."
+  },
   "5595baa3aadd00a7": {
    "verdict": "ok"
   },
   "55a180d05785aa04": {
    "verdict": "ok"
+  },
+  "55be7ccc89739995": {
+   "verdict": "ok",
+   "note": "Numerator 4x^2-1, denominator x^2+x-6, both degree 2; ratio of leading coeffs 4/1=4; matches CNXML Try It 6."
   },
   "55c4ff7da2871fdc": {
    "verdict": "ok"
@@ -7173,6 +7449,10 @@
   },
   "5650b8f90af52b75": {
    "verdict": "ok"
+  },
+  "56556644ac946793": {
+   "verdict": "ok",
+   "note": "Same function's cancelled factor gives a hole at x=5; reduced value (5+5)/(5*4)=1/2, so (5,1/2); matches CNXML Try It 5."
   },
   "5655b3b5e0672486": {
    "verdict": "ok"
@@ -7252,6 +7532,10 @@
   },
   "5749e96a663f29ea": {
    "verdict": "ok"
+  },
+  "574b780633a41dd0": {
+   "verdict": "ok",
+   "note": "Try It 1: ran coefficient-array long division of 16x^3-12x^2+20x-3 by 4x+5 in node (also hand-verified step by step); got quotient 4x^2-8x+15, remainder -78, matching the CNXML solution exactly."
   },
   "574e51d24d889922": {
    "verdict": "ok",
@@ -7740,6 +8024,10 @@
   "5d2adffe8e4c93ca": {
    "verdict": "ok"
   },
+  "5d35059e9655c495": {
+   "verdict": "ok",
+   "note": "P(6)=6*(-6)=-36 (computed via node); matches CNXML solution product '-36' for fs-id1165134089397."
+  },
   "5d3edf3006787387": {
    "verdict": "ok"
   },
@@ -7857,6 +8145,10 @@
   },
   "5ed34c1bb01fc080": {
    "verdict": "ok"
+  },
+  "5ee13cc7725cc31c": {
+   "verdict": "ok",
+   "note": "Section exercise fs-id1165137731890: k=24*128=3072; length=3072/64=48 inches. Verified with node arithmetic; matches CNXML solution."
   },
   "5f0178c3fd017078": {
    "verdict": "ok"
@@ -8073,6 +8365,10 @@
   "61f28f8019e1a47c": {
    "verdict": "ok"
   },
+  "61f547a40b2011f1": {
+   "verdict": "ok",
+   "note": "Solved y=x^2+1 (x>=0) for x: x=sqrt(y-1), positive root since x>=0, so f^{-1}(x)=sqrt(x-1). Checked f(f^{-1}(x))=(sqrt(x-1))^2+1=x for x>=1. Matches CNXML ti_03_08_03."
+  },
   "61fa07c2766d5a35": {
    "verdict": "ok"
   },
@@ -8147,6 +8443,10 @@
   },
   "62fe5ec8d53c49f3": {
    "verdict": "ok"
+  },
+  "62fed7ea0975830a": {
+   "verdict": "ok",
+   "note": "Try It 2: ran synthetic division (k=-7) on coefficients 3,18,0,-3,40 (0 inserted for the missing x^2 term) in node; got quotient 3x^3-3x^2+21x-150, remainder 1090, matching the CNXML solution's 1,090/(x+7)."
   },
   "630096f1fe9e9b13": {
    "verdict": "ok"
@@ -8336,6 +8636,10 @@
   "655335d7efe2af8e": {
    "verdict": "ok"
   },
+  "6556b057abf8a907": {
+   "verdict": "ok",
+   "note": "a(0) = (0+0-3)/(0-1) = 3, so (0,3); verified by node numeric check and by hand."
+  },
   "655da9809db06f6f": {
    "verdict": "ok"
   },
@@ -8478,6 +8782,10 @@
   "67043dea35e7abca": {
    "verdict": "ok"
   },
+  "670f9c3012b4e6dd": {
+   "verdict": "ok",
+   "note": "Section exercise fs-id1165135176447: k=80/4^2=5, so y=5x^2. Verified with node arithmetic; matches CNXML solution."
+  },
   "6714a187fb5e01f8": {
    "verdict": "ok"
   },
@@ -8516,6 +8824,10 @@
   },
   "67831c53e7992700": {
    "verdict": "ok"
+  },
+  "67918abcb90bc21d": {
+   "verdict": "ok",
+   "note": "Section exercise fs-id1165137619342: k=16/2^2=4, y=4*8^2=256. Verified with node arithmetic; matches CNXML solution."
   },
   "679b754defc9ca20": {
    "verdict": "ok"
@@ -8652,6 +8964,10 @@
   "68da745d8a44d864": {
    "verdict": "ok"
   },
+  "68f834909e0bda7c": {
+   "verdict": "ok",
+   "note": "Denominator x^2-1=(x-1)(x+1) zero at x=±1; domain is R minus {-1,1}; matches CNXML source answer 'All reals x≠-1,1'."
+  },
   "6900d2b9cb446d2c": {
    "verdict": "ok"
   },
@@ -8752,6 +9068,10 @@
   "6a0913090a3318b7": {
    "verdict": "ok"
   },
+  "6a1a67c3d6f95748": {
+   "verdict": "ok",
+   "note": "f(x)=(x^2)^3=x^6: single term, variable to a fixed power (power function) AND expressible in general polynomial form with all but one coefficient zero (also a polynomial function). Matches CNXML fs-id1165137585053 solution text exactly (\"It is also a polynomial, with all coefficients except one equal to zero\")."
+  },
   "6a2870fa229d1708": {
    "verdict": "ok"
   },
@@ -8781,6 +9101,10 @@
   },
   "6a57dfc0e1faeb1d": {
    "verdict": "ok"
+  },
+  "6a715f2f84e44795": {
+   "verdict": "ok",
+   "note": "Recreated graph vertex (2,-3), y-intercept (0,1); expands to x^2-4x+1; matches CNXML solution for fs-id1165134391628, and vertex/y-intercept confirmed against rendered PDF page 272 graph #59."
   },
   "6a807acd100aad4c": {
    "verdict": "ok"
@@ -9144,6 +9468,10 @@
   "6e99d0c10d664a09": {
    "verdict": "ok"
   },
+  "6ea2f06f8bac7fa5": {
+   "verdict": "ok",
+   "note": "Section exercise fs-id1165134047625: k=y*w/(xz)=10*6/15=4, so y=4xz/w. Verified with node arithmetic; matches CNXML solution."
+  },
   "6eb1fe25cfa93f64": {
    "verdict": "ok"
   },
@@ -9444,8 +9772,16 @@
   "72faa4f3e5027d6f": {
    "verdict": "ok"
   },
+  "73040c8dc9319360": {
+   "verdict": "ok",
+   "note": "Practice (Find zeros). Evaluated 2x^3+7x^2-10x-24 at 2, -4, -1.5 via node: all 0. Matches CNXML solution for fs-id1165134212161 (2, -4, -3/2)."
+  },
   "73042ecb03b05c7b": {
    "verdict": "ok"
+  },
+  "73044f866bdf29c9": {
+   "verdict": "ok",
+   "note": "Computed f(1)=7-9-1=-3 and f(2)=7*32-9*16-4=224-144-4=76 by node arithmetic; matches the sign pattern implied by CNXML ti_03_04_04's solution text (f(1) negative, f(2) positive)."
   },
   "730877ff50a4d014": {
    "verdict": "ok"
@@ -9467,6 +9803,10 @@
   },
   "73687feb17d55c03": {
    "verdict": "ok"
+  },
+  "73741eea1ef9100b": {
+   "verdict": "ok",
+   "note": "f(x)=-5x^4: exponent 4 is even, coefficient -5 is negative, so both ends of f decrease without bound. Matches CNXML ti_03_03_02."
   },
   "737690c6f980a482": {
    "verdict": "ok"
@@ -9525,6 +9865,10 @@
   "74441aefdeb7e4b6": {
    "verdict": "ok"
   },
+  "745a13e0c58caa7f": {
+   "verdict": "ok",
+   "note": "Reduced (x+3)/(x+1), both degree 1, ratio of leading coeffs 1/1=1; matches CNXML source answer."
+  },
   "745b49a3ae81df9a": {
    "verdict": "ok"
   },
@@ -9561,6 +9905,10 @@
   },
   "74b572d9c2863b41": {
    "verdict": "ok"
+  },
+  "74bca2b67f5283ce": {
+   "verdict": "ok",
+   "note": "Numerator/denominator both degree 2, leading coeff ratio -4/1=-4; matches CNXML Try It 7 (also matches the pre-combination form's y=-4 shift)."
   },
   "74c41503c95b1b7b": {
    "verdict": "ok"
@@ -9793,6 +10141,10 @@
   "77b9f42bdd013576": {
    "verdict": "ok"
   },
+  "77c1fe4e3d0e02ea": {
+   "verdict": "ok",
+   "note": "Both numerator and denominator expand to degree 3 with leading coefficient 1; ratio 1/1=1; matches CNXML source answer."
+  },
   "77c8292d2f9a6ce8": {
    "verdict": "ok"
   },
@@ -9868,6 +10220,10 @@
   },
   "788328af436c67a6": {
    "verdict": "ok"
+  },
+  "789bb9de62cc297c": {
+   "verdict": "ok",
+   "note": "Already standard form a=2>0, k=8/11, so range f(x)>=8/11; matches CNXML."
   },
   "789bfcf4edcde1fc": {
    "verdict": "ok"
@@ -9947,6 +10303,10 @@
   "79cd93e7139d9203": {
    "verdict": "ok"
   },
+  "79d3809f59135b0f": {
+   "verdict": "ok",
+   "note": "Restored general-form half of ti_03_02_02 (CNXML: g(x)=13+x^2-6x) as multiplechoice, since no answerForm token restricts term order. General form x^2-6x+13 matches CNXML solution; distractors are the printed span itself, another mis-ordering (-6x+x^2+13), and the standard/vertex form (x-3)^2+4 already used as the adjacent fillin's answer."
+  },
   "79d79b4f0e933f63": {
    "verdict": "ok"
   },
@@ -10021,6 +10381,10 @@
   },
   "7aa9bee5a0c250de": {
    "verdict": "ok"
+  },
+  "7aac334a506d7948": {
+   "verdict": "ok",
+   "note": "Practice (Find zeros). Evaluated 6x^3-7x^2+1 at 1, 0.5, -1/3 via node: all 0. Matches CNXML solution for fs-id1165135353055 (1, 1/2, -1/3)."
   },
   "7ac24104793b2bfe": {
    "verdict": "ok"
@@ -10246,6 +10610,10 @@
   "7ce5f7cd5cd211fc": {
    "verdict": "ok"
   },
+  "7d09b54ef0237a64": {
+   "verdict": "ok",
+   "note": "Numerically scanned f(x)=-0.2(x-2)^3(x+1)^2(x-4) at 0.001 steps on [-1,4]: local min at x=0.093, f=-6.474; local max at x=3.573, f=6.951 — matches CNXML ti_03_04_06 solution's stated approximate (0,-6.5) and (3.5,7)."
+  },
   "7d0ea532b0e57adc": {
    "verdict": "ok"
   },
@@ -10432,6 +10800,10 @@
   },
   "7f471d0742571643": {
    "verdict": "ok"
+  },
+  "7f54c27f2d1715e5": {
+   "verdict": "ok",
+   "note": "Computed with node: Math.cbrt(3*200/(4*Math.PI)) = 3.6278...; rounds to 3.63, matching the question's 'rounded to the nearest hundredth' instruction and the CNXML solution's stated '3.63 feet'."
   },
   "7f6a7d1a75d8f689": {
    "verdict": "ok"
@@ -10620,6 +10992,10 @@
   },
   "81a97f77e3ddad8b": {
    "verdict": "ok"
+  },
+  "81b29506fcd0021a": {
+   "verdict": "ok",
+   "note": "Independently derived: 1/x^2 is even, so both sides of x=0 go to +inf and both tails go to 0; matches CNXML Try It 1."
   },
   "81b92283b7dd67d8": {
    "verdict": "ok"
@@ -10833,6 +11209,10 @@
   "83f82994be2151f7": {
    "verdict": "ok"
   },
+  "83fbcd639f17998c": {
+   "verdict": "ok",
+   "note": "x^2+4x+4=(x+2)^2, so f(x)=x^2(x+2)^2 has zero 0 (mult 2) and -2 (mult 2). Matches CNXML fs-id1165135525889 solution."
+  },
   "83fc5d53284f7408": {
    "verdict": "ok"
   },
@@ -10857,9 +11237,17 @@
   "842c8aabeb652648": {
    "verdict": "ok"
   },
+  "843294bbbe8e9a6c": {
+   "verdict": "ok",
+   "note": "Practice (Linear Factorization Theorem). Source text 'Real roots: -1, 1 (with multiplicity 2 and 1)' means -1 has multiplicity 2: base polynomial (x+1)^2(x-1)=x^3+x^2-x-1. Computed base(2)=9 via node; a=4/9=0.444..., matching CNXML solution f(x)=4/9(x^3+x^2-x-1) for fs-id1165135538724 exactly."
+  },
   "8433f52a7f7b4dfb": {
    "verdict": "ok",
    "note": "Least-squares regression on the table (units sold=46,48,50,52,54; profit=250,305,350,390,410) gives slope exactly 20.25, matching the declared answer."
+  },
+  "843f1c214c9a1d49": {
+   "verdict": "ok",
+   "note": "-2x/(x-6): ratio of leading coeffs -2/1=-2; verified by node numeric check."
   },
   "8447b0a1031e2183": {
    "verdict": "ok"
@@ -11304,6 +11692,10 @@
   "8973ff25c2b14691": {
    "verdict": "ok"
   },
+  "8978c36e7b4fe470": {
+   "verdict": "ok",
+   "note": "4-sided corral, perimeter 200: A(x)=x(100-x), vertex at x=50 (computed via node); matches CNXML solution for fs-id1165131857392 ('50 feet by 50 feet')."
+  },
   "89798c65c2b1e1fb": {
    "verdict": "ok"
   },
@@ -11316,6 +11708,10 @@
   "898a2a3f54052697": {
    "verdict": "ok"
   },
+  "89921b487b379621": {
+   "verdict": "ok",
+   "note": "Section exercise fs-id1165137447334: k=x^2*y=9*2=18, so y=18/x^2. Verified with node arithmetic; matches CNXML solution."
+  },
   "899abdf2e44c3d71": {
    "verdict": "ok"
   },
@@ -11327,6 +11723,10 @@
   },
   "89c172eb994be695": {
    "verdict": "ok"
+  },
+  "89cbedd9c3e3b65b": {
+   "verdict": "ok",
+   "note": "From the same expansion, -2x^4-x^3+8x^2+4x, the leading coefficient is -2. Matches CNXML fs-id1165137742433 (\"Coefficient = -2\")."
   },
   "89d4956867050988": {
    "verdict": "ok"
@@ -11351,6 +11751,10 @@
   },
   "8a26b2366ad9b49b": {
    "verdict": "ok"
+  },
+  "8a3d9a4c6510569d": {
+   "verdict": "ok",
+   "note": "Practice (Factor Theorem). Evaluated 2x^3+x^2-5x+2 at -2, 1, 0.5 via node: all 0. Matches CNXML solution for fs-id1165135349107 (-2, 1, 1/2)."
   },
   "8a468808faf7668a": {
    "verdict": "ok"
@@ -11478,6 +11882,10 @@
   "8c33a7f3f7bf2ada": {
    "verdict": "ok",
    "note": "Using the same table: f(1)=6, then f(6)=2, so f(f(1))=2, matching the declared answer."
+  },
+  "8c527830bb941765": {
+   "verdict": "ok",
+   "note": "Computed by hand: 1200+20*12=1440 first-years, 1500-15*12=1320 second-years, ratio 1440/1320=12/11; matches CNXML Try It 3."
   },
   "8c59eddee268bdf6": {
    "verdict": "ok"
@@ -11741,6 +12149,10 @@
   "90296520d48f0cb3": {
    "verdict": "ok"
   },
+  "9038c4c27e0eeb5c": {
+   "verdict": "ok",
+   "note": "Vertex form from vertex (-4,7) and point (0,0): a(0+4)^2+7=0 => a=-7/16; matches CNXML solution."
+  },
   "903dfd800ea2b819": {
    "verdict": "ok"
   },
@@ -11904,6 +12316,10 @@
   "92b788b664aefde8": {
    "verdict": "ok"
   },
+  "92bec74ed1a2382e": {
+   "verdict": "ok",
+   "note": "f(x)=2x^2*4x^3=8x^4 is a single term with a fixed power (power function); g(x) is a 3-term sum (not a power function); h(x) has a variable denominator (not a power function). Matches CNXML ti_03_03_01."
+  },
   "92bf395aef20b55e": {
    "verdict": "ok"
   },
@@ -11912,6 +12328,10 @@
   },
   "92e43474fc296ae2": {
    "verdict": "ok"
+  },
+  "92ec352cd089e3fa": {
+   "verdict": "ok",
+   "note": "1/(x-3)^2-4 combined over a common denominator: [1-4(x-3)^2]/(x-3)^2 = (-4x^2+24x-35)/(x^2-6x+9); expanded and checked by hand; matches CNXML Try It 7."
   },
   "92f2ad7f21843ef8": {
    "verdict": "ok"
@@ -11924,6 +12344,10 @@
   },
   "92fdb72c6d5789a0": {
    "verdict": "ok"
+  },
+  "930fb95aa353ffe6": {
+   "verdict": "ok",
+   "note": "Try It 4. Evaluated f(x)=2x^3+5x^2-11x+4 at -4, 1/2, 1 via node: all equal 0. Matches CNXML ti_03_06_04 solution (-4, 1/2, 1)."
   },
   "931459fbbd81d4b8": {
    "verdict": "ok"
@@ -12063,6 +12487,10 @@
   "9494a8f0f09f7b47": {
    "verdict": "ok"
   },
+  "94964abb930c0e86": {
+   "verdict": "ok",
+   "note": "Direct application of the section's own Graphical-Behavior note (touch = even multiplicity); matches CNXML Verbal fs-id1165135621844 solution (\"factor raised to an even power\")."
+  },
   "94aae2c9cc695939": {
    "verdict": "ok"
   },
@@ -12075,8 +12503,16 @@
   "94bd92f6e99cbc77": {
    "verdict": "ok"
   },
+  "94c0bef2aa017bb6": {
+   "verdict": "ok",
+   "note": "(x-1)(x+3)(x-5)/[(x+2)^2(x-4)] has no common factors; VA at x=-2,4; matches CNXML source answer."
+  },
   "94c2dce428e427c7": {
    "verdict": "ok"
+  },
+  "94c9ef816a42ca2e": {
+   "verdict": "ok",
+   "note": "Practice (Linear Factorization Theorem). Base polynomial x(x+1/2)(x-1/2)=x^3-x/4; computed base(-2)=-7.5 via node; a=6/-7.5=-0.8=-4/5, matching CNXML solution f(x)=-1/5(4x^3-x) for fs-id1165135205845 exactly (-4/5 x^3 + 1/5 x)."
   },
   "94e43280f49a0846": {
    "verdict": "ok"
@@ -12219,6 +12655,10 @@
   "96b8f7b214f3b3c3": {
    "verdict": "ok"
   },
+  "96c337f54fdb6a67": {
+   "verdict": "ok",
+   "note": "Try It 3: ran synthetic division (k=-6) on coefficients 3,14,-23,6 in node; got quotient 3x^2-4x+1, remainder 0, matching the CNXML solution."
+  },
   "96c3ce1227c23202": {
    "verdict": "ok"
   },
@@ -12248,6 +12688,10 @@
   },
   "96e1c2247a7159f8": {
    "verdict": "ok"
+  },
+  "96e36327832ed670": {
+   "verdict": "ok",
+   "note": "Practice (real-world). Solved (w+1)*w*(w-1)=86.625 via node scan: w=4.5 gives 86.625 exactly, so width=4.5, length=5.5, height=3.5. Matches CNXML solution for fs-id1165134043625 ('5.5 by 4.5 by 3.5 inches', length-width-height order stated explicitly in the question)."
   },
   "96e6e3df0beb7df4": {
    "verdict": "ok",
@@ -12325,6 +12769,10 @@
   "97c1223dc9c3b53b": {
    "verdict": "ok"
   },
+  "97d5943efd34b348": {
+   "verdict": "ok",
+   "note": "Try It 1 (ti_03_09_01): k=y/x^2=24/9=8/3; y=(8/3)(4^2)=128/3. Verified with node arithmetic; matches CNXML solution."
+  },
   "97ecbc061cf42f56": {
    "verdict": "ok"
   },
@@ -12333,6 +12781,10 @@
   },
   "97f09523b0f0510c": {
    "verdict": "ok"
+  },
+  "97fc3795e2cca1b8": {
+   "verdict": "ok",
+   "note": "sqrt(-24)=sqrt(4*6)*sqrt(-1)=2*sqrt(6)*i; independently recomputed, matches CNXML ti_03_01_01."
   },
   "98112310542ccc25": {
    "verdict": "ok"
@@ -12376,11 +12828,19 @@
   "987737802966579d": {
    "verdict": "ok"
   },
+  "98777aeeecc640f5": {
+   "verdict": "ok",
+   "note": "Practice (Rational Zero Theorem list). Constant term 1 (factors +-1), leading coeff 6 (factors +-1,+-2,+-3,+-6) give candidates +-1,+-1/2,+-1/3,+-1/6. Matches CNXML solution for fs-id1165132920307."
+  },
   "9883d7e1fddb6961": {
    "verdict": "ok"
   },
   "9885240adeb4ae36": {
    "verdict": "ok"
+  },
+  "988776c4eb4e9bc9": {
+   "verdict": "ok",
+   "note": "Expanded 0.2(x-2)(x+1)(x-5) by hand and with node: (x-2)(x+1)(x-5)=x^3-6x^2+3x+10, times 0.2 = 0.2x^3-1.2x^2+0.6x+2. Matches CNXML ti_03_03_09's y-intercept check (f(0)=2). Replayed the printed factored subject through checkAnswer with form:\"expanded\" -- it returns \"form\" (rejected), and the authored expanded answer self-grades \"correct\"."
   },
   "989655f3a0bafa08": {
    "verdict": "ok"
@@ -12504,6 +12964,10 @@
   },
   "9a19846a22aec403": {
    "verdict": "ok"
+  },
+  "9a1cd846f074780b": {
+   "verdict": "ok",
+   "note": "Figure is a fitted quartic f(x)=3-0.3(x-0.5)^4 (single hump, falls on both sides, exits bottom of frame both ends): even degree, negative leading coefficient, so f decreases without bound on both ends. Matches CNXML ti_03_03_04 solution (\"shape of an even degree power function with a negative coefficient\")."
   },
   "9a2e89f02c1aa81e": {
    "verdict": "ok"
@@ -12706,6 +13170,10 @@
   "9c68ee6bf56579ac": {
    "verdict": "ok"
   },
+  "9c6d9568a91eccec": {
+   "verdict": "ok",
+   "note": "Expanded g(x)=(x+4)(x-1)^2 by node: leading term coefficient of x^3 is +1, so as x->infinity g(x)->infinity; confirmed numerically (g(100) is large and positive). Matches CNXML fs-id1165134328240 solution."
+  },
   "9c707175f3983b25": {
    "verdict": "ok"
   },
@@ -12756,6 +13224,10 @@
   },
   "9d179d6521d77c6c": {
    "verdict": "ok"
+  },
+  "9d17ddf89b19fe78": {
+   "verdict": "ok",
+   "note": "Practice (Descartes). Sign changes of x^3-2x^2+x-1 (signs +,-,+,-): 3 changes (3 or 1 positive); f(-x)=-x^3-2x^2-x-1 (signs -,-,-,-): 0 changes (0 negative). Matches CNXML solution for fs-id1165135485740."
   },
   "9d3170a9cc9731c6": {
    "verdict": "ok"
@@ -12855,6 +13327,10 @@
   },
   "9e43e3c4494a9651": {
    "verdict": "ok"
+  },
+  "9e4459561d60f233": {
+   "verdict": "ok",
+   "note": "Practice (Descartes). Sign changes of 2x^3+37x^2+200x+300 (all positive): 0 changes (0 positive); f(-x)=-2x^3+37x^2-200x+300 (signs -,+,-,+): 3 changes (3 or 1 negative). Matches CNXML solution for fs-id1165134149873."
   },
   "9e4c1f895acb6f8b": {
    "verdict": "ok"
@@ -12956,6 +13432,10 @@
   "9f95c03cc3c72aa3": {
    "verdict": "ok"
   },
+  "9fa74a01e6e4cc41": {
+   "verdict": "ok",
+   "note": "Section exercise fs-id1165137662862: k=16/1^2=16, s=16t^2, 144=16t^2 => t=3 seconds. Verified with node arithmetic; matches CNXML solution. Note: source wording itself reads 'how long for it to fall 144 feet?' (missing 'will it take'), preserved verbatim from CNXML/PDF; not an answer defect."
+  },
   "9fb14a5620c5b527": {
    "verdict": "ok"
   },
@@ -12977,6 +13457,10 @@
   },
   "a008e29bb774a390": {
    "verdict": "ok"
+  },
+  "a0090e6e18e8657e": {
+   "verdict": "ok",
+   "note": "Practice synthetic-division item 2: ran synthetic division (k=7) on 1,-21,147,-343 in node; quotient x^2-14x+49, remainder 0, matching the CNXML solution (fs-id1165134061948)."
   },
   "a0203f7cc099226b": {
    "verdict": "ok"
@@ -13035,6 +13519,10 @@
   "a0cff59578508a27": {
    "verdict": "ok"
   },
+  "a0d119ab96334f68": {
+   "verdict": "ok",
+   "note": "w(0) = (-1)(3)(-5) / [(2)^2(-4)] = 15/-16 = -15/16, so (0,-15/16); verified by node numeric check (-0.9375) and matches CNXML source answer."
+  },
   "a0d56ddd5a82e955": {
    "verdict": "ok"
   },
@@ -13060,8 +13548,16 @@
   "a1208cc8ef39cfeb": {
    "verdict": "ok"
   },
+  "a1344f187493f370": {
+   "verdict": "ok",
+   "note": "Derived linear attendance-price relation from (11,26000),(9,31000), Revenue(p)=p*Q(p), vertex at p=10.7 (computed via node); matches CNXML solution for fs-id1165135449627 ('$10.70')."
+  },
   "a1416ad32856da83": {
    "verdict": "ok"
+  },
+  "a15be3c6efaba88b": {
+   "verdict": "ok",
+   "note": "f(2+i)=(2+i)^2+3(2+i)+5=(3+4i)+(6+3i)+5=14+7i; recomputed independently with node, matches CNXML end-of-section answer key."
   },
   "a1654d006cb10c27": {
    "verdict": "ok"
@@ -13366,6 +13862,10 @@
   "a5845759ef76eeca": {
    "verdict": "ok"
   },
+  "a58851382a8a6a27": {
+   "verdict": "ok",
+   "note": "Denominator x^4-5x^2+4=(x^2-1)(x^2-4) zero at x=±1,±2; matches CNXML source answer 'All reals x≠-1,-2,1,2'."
+  },
   "a58f32d7912abd92": {
    "verdict": "ok"
   },
@@ -13393,6 +13893,10 @@
   "a5e7cde7ac52afd5": {
    "verdict": "ok",
    "note": "Repaired 2026-08-15. f(x)=x^2-5x-24, g(x)=x+3. At x=-3 both f and g vanish, so (f/g)(-3) was 0/0, not -11. Evaluation moved to x=-4: f(-4)=12, g(-4)=-1, quotient -12, which also equals the reduced x-8 at -4."
+  },
+  "a5eaadca0aef3690": {
+   "verdict": "ok",
+   "note": "Cancelled factor (x-1) gives a hole at x=1; reduced value (1+3)/(1+1)=2, so (1,2); matches CNXML source answer."
   },
   "a5efbe3dbf17a867": {
    "verdict": "ok"
@@ -13628,6 +14132,10 @@
   },
   "a8979a2f8c766b96": {
    "verdict": "ok"
+  },
+  "a8a196124885abaf": {
+   "verdict": "ok",
+   "note": "graphplot quadratic answer {a:1,b:-2,c:0} is the exact general-form coefficients of f(x)=x^2-2x."
   },
   "a8a19f5e51b64c24": {
    "verdict": "ok"
@@ -13987,6 +14495,10 @@
   "acc35f3e5db13c2c": {
    "verdict": "ok"
   },
+  "acd189c8a2b89760": {
+   "verdict": "ok",
+   "note": "-x^4: even exponent, coefficient -1 (negative) -> both ends decrease without bound. Matches CNXML fs-id1165137678592."
+  },
   "acd1a40bb78d876e": {
    "verdict": "ok"
   },
@@ -14107,6 +14619,10 @@
   "ae1ea57cdedf2b19": {
    "verdict": "ok"
   },
+  "ae25a5b0f6df3f33": {
+   "verdict": "ok",
+   "note": "Try It 1. Ran synthetic division / Horner evaluation for f(x)=2x^5-3x^4-9x^3+8x^2+2 at x=-3 via node: f(-3)=-412. Matches CNXML ti_03_06_01 solution."
+  },
   "ae2741c4b55b3ceb": {
    "verdict": "ok"
   },
@@ -14146,6 +14662,10 @@
   "ae8e0c156ee08152": {
    "verdict": "ok"
   },
+  "ae94286c5c096f21": {
+   "verdict": "ok",
+   "note": "Vertex of f(x)=2x^2-10x+4: h=5/2,k=-17/2 (computed via node); matches CNXML solution for fs-id1165133344089 ('Minimum is -17/2... at 5/2')."
+  },
   "aea494dae156ca16": {
    "verdict": "ok"
   },
@@ -14161,6 +14681,10 @@
   "aecb5119137915e5": {
    "verdict": "ok"
   },
+  "aed4e3a9dde80844": {
+   "verdict": "ok",
+   "note": "f(x)=3x^2-5x-1: h=5/6,k=-37/12 (computed via node); matches CNXML solution for fs-id1165135409784."
+  },
   "aee2ef150dee4929": {
    "verdict": "ok"
   },
@@ -14169,6 +14693,10 @@
   },
   "af08ce90eb53d3b9": {
    "verdict": "ok"
+  },
+  "af132ca15e2d54ce": {
+   "verdict": "ok",
+   "note": "g(x)=x^2-6x+13: h=3, k=g(3)=4, so (x-3)^2+4; matches CNXML solution."
   },
   "af1695d96d232f15": {
    "verdict": "ok"
@@ -14215,6 +14743,10 @@
   "afbd2ca712c68c5f": {
    "verdict": "ok"
   },
+  "afc1f5439b7aeda6": {
+   "verdict": "ok",
+   "note": "Leading term -2x^2, leading coefficient -2. Matches CNXML fs-id1165134380913 (\"Coefficient = -2\")."
+  },
   "afc35093014e8675": {
    "verdict": "ok"
   },
@@ -14242,6 +14774,10 @@
   },
   "b063cb9177a1a3b3": {
    "verdict": "ok"
+  },
+  "b075b3dd40bf8083": {
+   "verdict": "ok",
+   "note": "Practice (real-world). Solved 2w*w*(w+2)=192 via node scan over integer w: w=4 gives 192 exactly, so width=4, length=8, height=6. Matches CNXML solution for fs-id1165134043608 ('8 by 4 by 6 inches', length-width-height order stated explicitly in the question)."
   },
   "b075fbf4aa8a51bc": {
    "verdict": "ok"
@@ -14469,6 +15005,10 @@
   "b341ae0c030c7d58": {
    "verdict": "ok"
   },
+  "b346b1098464c1aa": {
+   "verdict": "ok",
+   "note": "(3+4i)/(2-i)*(2+i)/(2+i)=(6+3i+8i+4i^2)/(4+1)=(2+11i)/5=2/5+11/5 i; recomputed independently with node, matches CNXML end-of-section answer key; also cross-checked that the single-fraction form (2+11i)/5 grades equal to the authored 2/5+11/5 i via check-answer.mjs."
+  },
   "b34e46403d7c8a85": {
    "verdict": "ok"
   },
@@ -14644,6 +15184,10 @@
   "b50e315cb85e56bf": {
    "verdict": "ok"
   },
+  "b512948d745ae2af": {
+   "verdict": "ok",
+   "note": "Computed h(-7.5) = -7/16*(3.5)^2+7 = 1.640625 via node; below the 4-ft hoop, matches CNXML's 'doesn't make it'."
+  },
   "b513ef45f056f72a": {
    "verdict": "ok"
   },
@@ -14709,6 +15253,10 @@
   },
   "b5cf9860be7edb1c": {
    "verdict": "ok"
+  },
+  "b5eb61f158da0516": {
+   "verdict": "ok",
+   "note": "Practice (Find zeros). Confirmed f(2)=0 for x^3-8x^2+25x-26 via node; dividing by (x-2) leaves x^2-6x+13 with discriminant 36-52=-16, roots 3+-2i. Matches CNXML solution for fs-id1165132940010 (2, 3+2i, 3-2i)."
   },
   "b5ef5280a457bfd0": {
    "verdict": "ok"
@@ -15082,6 +15630,10 @@
   "ba3ae49b617fd74c": {
    "verdict": "ok"
   },
+  "ba3e57f004218fc6": {
+   "verdict": "ok",
+   "note": "General odd-degree, positive-leading-coefficient case behaves like x^3: decreases as x decreases, increases as x increases. Matches CNXML fs-id1165137794232 solution."
+  },
   "ba43efb0e1de409b": {
    "verdict": "ok"
   },
@@ -15153,6 +15705,10 @@
   },
   "bafdae6c93a2eaf4": {
    "verdict": "ok"
+  },
+  "bb030e96a5c53337": {
+   "verdict": "ok",
+   "note": "Axis of symmetry x=5/2 for f(x)=x^2-5x-6."
   },
   "bb0ebcc38ac601df": {
    "verdict": "ok"
@@ -15259,6 +15815,10 @@
   "bc4c988f220ff1fa": {
    "verdict": "ok"
   },
+  "bc4fd3d5089e52bd": {
+   "verdict": "ok",
+   "note": "f(x)=a(x+2)(x-1)(x-3); f(0)=a(2)(-1)(-3)=6a=-4 gives a=-2/3 by node arithmetic. Matches CNXML fs-id1165134347505 solution f(x)=-2/3(x+2)(x-1)(x-3)."
+  },
   "bc51cc7fc9e1a9b4": {
    "verdict": "ok"
   },
@@ -15282,6 +15842,10 @@
   },
   "bc9135717d73a2ee": {
    "verdict": "ok"
+  },
+  "bc96fe544ed963ac": {
+   "verdict": "ok",
+   "note": "Practice factor-check item: ran synthetic division (k=2) on 3,-6,0,-5,10 (0 inserted for missing x^2 term) in node; remainder 0, confirming x-2 IS a factor (quotient 3x^3-5), matching the CNXML solution 'Yes (x-2)(3x^3-5)' (fs-id1165134031382)."
   },
   "bc9fe3d30269bb2a": {
    "verdict": "ok"
@@ -15356,6 +15920,10 @@
   },
   "bd91d2eb8f354c4f": {
    "verdict": "ok"
+  },
+  "bd95919079de7b17": {
+   "verdict": "ok",
+   "note": "Matches CNXML ti_03_04_05 solution f(x)=-1/8(x-2)^3(x+1)^2(x-4) verbatim; independently confirmed the figure's marked intercepts (-1,0),(2,0),(4,0) and y-intercept (0,-4) all satisfy this formula by node evaluation of the expanded coefficients."
   },
   "bd99dd7ed97ba473": {
    "verdict": "ok"
@@ -15464,11 +16032,19 @@
   "beb41557ffaa41fa": {
    "verdict": "ok"
   },
+  "beb93b3d7182c71c": {
+   "verdict": "ok",
+   "note": "Expanded x(4-x^2)(2x+1) by hand and with node: = -2x^4-x^3+8x^2+4x. Highest power is 4. Matches CNXML fs-id1165137742433 (\"Degree = 4\")."
+  },
   "bec5e67c9e489029": {
    "verdict": "ok"
   },
   "becb76247f831432": {
    "verdict": "ok"
+  },
+  "bed216cef93b31fa": {
+   "verdict": "ok",
+   "note": "(-1+2i)(-2+3i)=2-3i-4i+6i^2=2-7i-6=-4-7i; recomputed independently, matches CNXML end-of-section answer key."
   },
   "beddc1128f004f51": {
    "verdict": "ok"
@@ -15542,6 +16118,10 @@
   "bfbf2428329047e1": {
    "verdict": "ok"
   },
+  "bfc669802926e78f": {
+   "verdict": "ok",
+   "note": "sqrt(-9)+3*sqrt(-16)=3i+3*4i=3i+12i=15i; recomputed independently, matches CNXML end-of-section answer key."
+  },
   "bfcb77c8ebc1d80f": {
    "verdict": "ok"
   },
@@ -15605,6 +16185,10 @@
   "c087f8b18976ebae": {
    "verdict": "ok"
   },
+  "c09db71c3fe6cdef": {
+   "verdict": "ok",
+   "note": "g(x)=x^2+2x-3: h=-1,k=-4, so (x+1)^2-4; matches CNXML solution for source exercise fs-id1165135336013."
+  },
   "c0a98d6f0c3fdb31": {
    "verdict": "ok"
   },
@@ -15616,6 +16200,10 @@
   },
   "c0be32287b0d345d": {
    "verdict": "ok"
+  },
+  "c0c341375713f7bd": {
+   "verdict": "ok",
+   "note": "Restates the source's own definition (fs-id1165137651029 verbal exercise, CNXML solution): k multiplies the variable (coefficient); p is the highest power (degree)."
   },
   "c0c913042df8118f": {
    "verdict": "ok"
@@ -15753,6 +16341,10 @@
   "c22b793c74fcee1d": {
    "verdict": "ok"
   },
+  "c22d700b93cc9572": {
+   "verdict": "ok",
+   "note": "P(x)=x(x-12), vertex at x=6 giving numbers 6 and -6 (computed via node); matches CNXML solution numbers for fs-id1165134089397 (source's internal 'maximize f(x)=x^2+12x' annotation is a separate defect noted in the report, not reproduced on the page)."
+  },
   "c23e9f16ef912ed0": {
    "verdict": "ok"
   },
@@ -15788,6 +16380,10 @@
   },
   "c2904d02fa2c0c8d": {
    "verdict": "ok"
+  },
+  "c299d20217f6f5a7": {
+   "verdict": "ok",
+   "note": "Practice (Remainder Theorem). Evaluated 3x^3-2x^2+x-4 at x=-3 via node: -106. Matches CNXML solution for fs-id1165134152708."
   },
   "c29b2b1d7ca43542": {
    "verdict": "ok"
@@ -15899,6 +16495,10 @@
   },
   "c400c7d04a69930e": {
    "verdict": "ok"
+  },
+  "c40c356ab4eafdbf": {
+   "verdict": "ok",
+   "note": "f^{-1}(2) = 3(2)-5 = 1 by direct substitution into f^{-1}(x)=3x-5, confirming f^{-1}(f(1))=1; matches CNXML ti_03_08_01."
   },
   "c412211f94fe66fa": {
    "verdict": "ok"
@@ -16381,6 +16981,10 @@
   "ca4b38ddefe04d15": {
    "verdict": "ok"
   },
+  "ca50d96b51e88a76": {
+   "verdict": "ok",
+   "note": "Right-shift-3 moves reciprocal's x=0 asymptote to x=3; matches CNXML Try It 2 (answerForm=solved:x added after replay flagged the bare printed '3')."
+  },
   "ca5d507805f38a5b": {
    "verdict": "ok"
   },
@@ -16428,6 +17032,10 @@
   },
   "cae7bceafc136aa2": {
    "verdict": "ok"
+  },
+  "caf01f55826bb674": {
+   "verdict": "ok",
+   "note": "f(x)=x^2/(x^2-1) has a variable denominator -- not a single term to a fixed power and not a finite sum of non-negative-integer-power terms, so neither. Matches CNXML fs-id1165135339598 solution \"Neither\"."
   },
   "caf8ee23ab9eb51b": {
    "verdict": "ok"
@@ -16504,6 +17112,10 @@
   "cbf92760bfb201a7": {
    "verdict": "ok"
   },
+  "cc0dc80dd45d7cc0": {
+   "verdict": "ok",
+   "note": "f(x)=0.2(x-2)(x+1)(x-5): f(0)=0.2*(-2)(1)(-5)=0.2*10=2. Matches CNXML ti_03_03_09."
+  },
   "cc18f88b2dda6a53": {
    "verdict": "ok"
   },
@@ -16542,6 +17154,10 @@
   },
   "cc72ebd3d5670dbd": {
    "verdict": "ok"
+  },
+  "cc7ebf37fa66d5f8": {
+   "verdict": "ok",
+   "note": "f(x)=4x^2-x^6+2x-6: highest power present is 6, so degree=6. Matches CNXML ti_03_03_03."
   },
   "cc9bb4129d230d63": {
    "verdict": "ok"
@@ -16808,6 +17424,10 @@
   "d07401969ea39b3d": {
    "verdict": "ok"
   },
+  "d081433d042aaee4": {
+   "verdict": "ok",
+   "note": "(x^2+2x-3)/(x^2-1) = (x+3)(x-1)/[(x-1)(x+1)] reduces to (x+3)/(x+1); VA at x=-1; matches CNXML source answer."
+  },
   "d08b8b8b845c75d1": {
    "verdict": "ok"
   },
@@ -16868,6 +17488,10 @@
   },
   "d11a56734e04ac10": {
    "verdict": "ok"
+  },
+  "d11cdce7b91e78a6": {
+   "verdict": "ok",
+   "note": "With h=12 fixed, V=(1/3)pi r^2(12)=4 pi r^2, so r^2=V/(4pi), r=sqrt(V/(4pi)) (r>=0 physical domain). Cross-checked with checkAnswer against an independently-built alternate LaTeX spelling (sqrt(V)/sqrt(4pi)) -- graded correct. Matches CNXML exercise fs-id1165135209080 (Real-World Applications, cone volume with 12-inch height), which has a solution."
   },
   "d130ece6e5d30e56": {
    "verdict": "ok"
@@ -16941,6 +17565,14 @@
   },
   "d1f8e4f91f3e7a7a": {
    "verdict": "ok"
+  },
+  "d1ff724a37c70a31": {
+   "verdict": "ok",
+   "note": "Solved y=(3x+4)/(5-4x) for x by cross-multiplying and collecting x terms: x(3+4y)=5y-4 => x=(5y-4)/(4y+3), so f^{-1}(x)=(5x-4)/(4x+3). Verified by node composition f(f^{-1}(x))=x for x=0,1,2,-3,7.5 (exact match). Matches CNXML exercise fs-id1165135333251 (source #27), which has a solution."
+  },
+  "d200081046aa7c12": {
+   "verdict": "ok",
+   "note": "x/(2x+1): ratio of leading coeffs 1/2; verified by direct division and by node numeric check."
   },
   "d214256eb245b7cb": {
    "verdict": "ok"
@@ -17101,6 +17733,10 @@
   "d4735089ab26d778": {
    "verdict": "ok"
   },
+  "d493d0484373f8ae": {
+   "verdict": "ok",
+   "note": "f(x)=2x^3-x^2-8x+4 has degree 3; max turning points = 3-1 = 2, by the section's own stated theorem."
+  },
   "d4a3a8e149217233": {
    "verdict": "ok"
   },
@@ -17257,6 +17893,10 @@
   "d6cb638319ca61d4": {
    "verdict": "ok"
   },
+  "d6dfdd78445ab34b": {
+   "verdict": "ok",
+   "note": "Solved y=sqrt(2x+3) for x: x=(y^2-3)/2, y>=0 since original range is f(x)>=0. Checked f(f^{-1}(x))=sqrt(2*(x^2-3)/2+3)=sqrt(x^2)=x for x>=0. Matches CNXML ti_03_08_04 (domain note x>=0 given in answerDisplay)."
+  },
   "d6e304327520d6c5": {
    "verdict": "ok"
   },
@@ -17402,6 +18042,10 @@
   "d8d954e81754ba13": {
    "verdict": "ok"
   },
+  "d8dd0ed9d7209611": {
+   "verdict": "ok",
+   "note": "The exponent on the factor (2x+3) that produces the zero x=-3/2 is 5, by definition of multiplicity. Matches CNXML fs-id1165134155916 solution."
+  },
   "d90b2d91babc6255": {
    "verdict": "ok"
   },
@@ -17498,6 +18142,10 @@
   "da4200a5ec6232e4": {
    "verdict": "ok"
   },
+  "da6ea750c259c50b": {
+   "verdict": "ok",
+   "note": "0.2x^3-1.2x^2+0.6x+2: degree 3 (odd), leading coefficient 0.2 (positive), so as x->-inf f decreases and as x->inf f increases. Matches CNXML ti_03_03_05 solution."
+  },
   "da759514e39d935e": {
    "verdict": "ok"
   },
@@ -17515,6 +18163,10 @@
   },
   "da96d37b3bf435a9": {
    "verdict": "ok"
+  },
+  "da9b6bc9aeac7d0d": {
+   "verdict": "ok",
+   "note": "Factored by grouping: x^2(x+1)-4(x+1)=(x+1)(x^2-4)=(x+1)(x-2)(x+2); zeros -1,2,-2, verified by node substitution (all give 0). Matches CNXML fs-id1165134060477 solution (2,0),(-2,0),(-1,0)."
   },
   "da9be96ee6d18b08": {
    "verdict": "ok"
@@ -17557,6 +18209,10 @@
   },
   "daf755b130d28087": {
    "verdict": "ok"
+  },
+  "daf8fa73e3a4529a": {
+   "verdict": "ok",
+   "note": "2x^3-6x^2-20x = 2x(x^2-3x-10) = 2x(x-5)(x+2); roots at x=-2,0,5, confirmed by node factoring. Matches CNXML ti_03_03_06."
   },
   "dafee3286defdff6": {
    "verdict": "ok"
@@ -17638,6 +18294,10 @@
   },
   "dc1e6648ce4ae0f7": {
    "verdict": "ok"
+  },
+  "dc2604cd99652674": {
+   "verdict": "ok",
+   "note": "f(x)=a(x+3)(x+2)(x-1); f(0)=a(3)(2)(-1)=-6a=12 gives a=-2 by node arithmetic. Matches CNXML fs-id1165135522143 solution f(x)=-2(x+3)(x+2)(x-1)."
   },
   "dc34a15d048ab986": {
    "verdict": "ok"
@@ -17807,6 +18467,10 @@
   "de78440cfddb9f78": {
    "verdict": "ok"
   },
+  "de7c6f8e207fd599": {
+   "verdict": "ok",
+   "note": "Down-shift-4 moves reciprocal's y=0 asymptote to y=-4; matches CNXML Try It 2."
+  },
   "de8c0e928f97cd25": {
    "verdict": "ok"
   },
@@ -17837,8 +18501,16 @@
   "decb5278c4b9db89": {
    "verdict": "ok"
   },
+  "ded140ea13e3887d": {
+   "verdict": "ok",
+   "note": "Practice long-division item 2 (remainder): same division as above; remainder 16, matching the CNXML solution."
+  },
   "dee6e282ec926467": {
    "verdict": "ok"
+  },
+  "deef4209f1c76ccd": {
+   "verdict": "ok",
+   "note": "Practice (Remainder Theorem). Evaluated x^4-1 at x=4 via node: 255. Matches CNXML solution for fs-id1165135487281."
   },
   "df15a924405f863d": {
    "verdict": "ok"
@@ -17876,6 +18548,10 @@
   },
   "df689edf85b0b3fa": {
    "verdict": "ok"
+  },
+  "df6f190e14e3f36e": {
+   "verdict": "ok",
+   "note": "(2x-1)(2x+1)/[(x-2)(x+3)] has no common factors; VA at x=2,-3; matches CNXML Try It 6."
   },
   "df6fb1f8e2c8ed88": {
    "verdict": "ok"
@@ -17948,6 +18624,10 @@
   },
   "e0b8070725286345": {
    "verdict": "ok"
+  },
+  "e0be143c635d4de1": {
+   "verdict": "ok",
+   "note": "Figure is a fitted cubic with roots -3,-1,1 and negative leading coefficient (enters top-left, local min, local max, exits bottom-right): 3 x-intercepts, 2 turning points -> odd degree >= 3; end behavior (falls right, rises left) requires negative leading coefficient. Matches CNXML ti_03_03_08 solution exactly."
   },
   "e0bea25f5cdd4a45": {
    "verdict": "ok"
@@ -18084,6 +18764,10 @@
   "e218d60e3b88a609": {
    "verdict": "ok"
   },
+  "e21e5e9c960ed859": {
+   "verdict": "ok",
+   "note": "Vertex of f(x)=x^2-5x-6: h=5/2, k=-49/4 (computed via node); matches CNXML sibling exercise's own printed vertex for this function."
+  },
   "e2271b03d62ce958": {
    "verdict": "ok"
   },
@@ -18183,6 +18867,10 @@
   "e329e469ab19f484": {
    "verdict": "ok"
   },
+  "e335024872a2731e": {
+   "verdict": "ok",
+   "note": "-4-i has real part -4 and imaginary part -1, so the ordered pair is (-4,-1); matches the point named in CNXML ti_03_01_02's solution image alt text."
+  },
   "e342894cbbb43f09": {
    "verdict": "ok"
   },
@@ -18276,6 +18964,10 @@
   },
   "e44f4b096d2f3fe4": {
    "verdict": "ok"
+  },
+  "e455b7d6f8f70d3c": {
+   "verdict": "ok",
+   "note": "Try It 2. Evaluated f(x)=x^3+4x^2-4x-16 at x=2,-2,-4 via node: all equal 0. Matches CNXML ti_03_06_02 solution (zeros 2,-2,-4)."
   },
   "e459cbd6bfc57a10": {
    "verdict": "ok"
@@ -18439,6 +19131,10 @@
   "e616d591dc140ebd": {
    "verdict": "ok"
   },
+  "e61f4928635f7fb5": {
+   "verdict": "ok",
+   "note": "i = 0+1i, ordered pair (0,1); source solution is an image confirming the plotted point i, coordinates derived independently."
+  },
   "e64446806d270c0f": {
    "verdict": "ok"
   },
@@ -18480,6 +19176,10 @@
   },
   "e6d0d0cb9059c4ad": {
    "verdict": "ok"
+  },
+  "e6d63c8692894781": {
+   "verdict": "ok",
+   "note": "Degree 3 polynomial has at most 3-1=2 turning points. Matches CNXML ti_03_03_09."
   },
   "e6e3b752de3dcf97": {
    "verdict": "ok"
@@ -18641,6 +19341,10 @@
   "e915bc63622e27fe": {
    "verdict": "ok"
   },
+  "e91e5de923fe1b0b": {
+   "verdict": "ok",
+   "note": "Practice (Remainder Theorem). Evaluated -3x^2+6x+24 at x=4 via node: 0. Matches CNXML solution for fs-id1165135571875."
+  },
   "e921d6c8e73d7a8b": {
    "verdict": "ok"
   },
@@ -18752,6 +19456,10 @@
   },
   "eac38f1bff904688": {
    "verdict": "ok"
+  },
+  "ead6789e29050ce8": {
+   "verdict": "ok",
+   "note": "Try It 7. Solved w(w+1)(2w+1)=84 for positive w via node scan: w=3 gives 84 exactly, so width=3, length=w+1=4, height=2w+1=7. Matches CNXML ti_03_06_07 solution '3 meters by 4 meters by 7 meters' (width, length, height order), which the question now states explicitly."
   },
   "ead99fa68312f7af": {
    "verdict": "ok"
@@ -18885,6 +19593,10 @@
   "ec43d4efe5d3f24a": {
    "verdict": "ok"
   },
+  "ec462a9a5dfdb20c": {
+   "verdict": "ok",
+   "note": "Degree 12 polynomial has at most 12-1=11 turning points. Matches CNXML ti_03_03_07."
+  },
   "ec6470681b86f4d2": {
    "verdict": "ok"
   },
@@ -18914,6 +19626,10 @@
   },
   "ec87d6cbf54dcca0": {
    "verdict": "ok"
+  },
+  "ec8885a3d907c0fd": {
+   "verdict": "ok",
+   "note": "f(x)=1/4 x(x-1)^4(x+3)^3 factors give zeros directly: x=0, x=1 (mult4), x=-3 (mult3). CNXML ti_03_04_03's own solution is only an image (no numeric answer to compare), so this is derived independently from the printed factored formula."
   },
   "ec8ae12ab8250a2a": {
    "verdict": "ok"
@@ -18983,6 +19699,10 @@
    "verdict": "ok",
    "note": "Repaired 2026-08-15. Values 12,14,-12,-14 verified; prompt now prescribes the graded ordering."
   },
+  "ed41f418107acee2": {
+   "verdict": "ok",
+   "note": "Solved y=cbrt(x+4) by interchanging x,y and cubing: f^{-1}(x)=x^3-4. Checked by composition with node: f(f^{-1}(x))=cbrt((x^3-4)+4)=x and f^{-1}(f(x))=(cbrt(x+4))^3-4=x. Matches CNXML ti_03_08_02."
+  },
   "ed455a7f9b87a7d0": {
    "verdict": "ok"
   },
@@ -19010,6 +19730,10 @@
   "ed9a717ff1a0e37d": {
    "verdict": "ok"
   },
+  "eda7d4ebd898bac0": {
+   "verdict": "ok",
+   "note": "Positive root of -16t^2+96t+112=0 is t=7 (computed via node quadratic-formula roots [-1,7]); matches CNXML solution '7 seconds'."
+  },
   "edaf92b77e7be265": {
    "verdict": "ok"
   },
@@ -19027,6 +19751,10 @@
   },
   "edd49270d332f2d5": {
    "verdict": "ok"
+  },
+  "ede5dfee2eb2a1f3": {
+   "verdict": "ok",
+   "note": "Solved V=(4/3)pi r^3 for r: r^3=3V/(4pi), r=cbrt(3V/(4pi)). Cross-checked with checkAnswer against an independently-built alternate LaTeX spelling (cbrt(3/(4pi)) * cbrt(V)) -- graded correct, confirming true value equivalence, not just self-identity. Matches CNXML exercise fs-id1165137451866 (Real-World Applications, sphere volume), which has a solution."
   },
   "edf5cf3e99e8ed8f": {
    "verdict": "ok"
@@ -19318,6 +20046,10 @@
   "f128f35a831103b7": {
    "verdict": "ok"
   },
+  "f1377087d746416b": {
+   "verdict": "ok",
+   "note": "Near x=6, numerator -2x is negative (-12); denominator sign flip gives +inf on the left, -inf on the right; verified numerically."
+  },
   "f139dc9479f54ee8": {
    "verdict": "ok"
   },
@@ -19338,6 +20070,10 @@
   },
   "f17e181612af20a2": {
    "verdict": "ok"
+  },
+  "f17f6a5711cc1d67": {
+   "verdict": "ok",
+   "note": "Try It 3 (ti_03_09_03): k=40*2/4^2=5; x=5*10^2/25=500/25=20. Verified with node arithmetic; matches CNXML solution."
   },
   "f1890f15bb30e910": {
    "verdict": "ok"
@@ -19375,6 +20111,10 @@
   },
   "f1fb84852bf6f974": {
    "verdict": "ok"
+  },
+  "f2096e39a0718570": {
+   "verdict": "ok",
+   "note": "Expanded n(x)=-3x(x+2)(x-4) by node: leading term -3x^3; substituting a very negative x (e.g. -100) gives a large positive value, so as x->-infinity n(x)->infinity. Matches CNXML fs-id1165135419774 solution."
   },
   "f20c2f5f13565778": {
    "verdict": "ok"
@@ -19477,6 +20217,10 @@
   },
   "f30aaf892e2d555e": {
    "verdict": "ok"
+  },
+  "f30f50d91b41f976": {
+   "verdict": "ok",
+   "note": "Axis of symmetry x=5/2 for f(x)=2x^2-10x+4, per same CNXML solution."
   },
   "f312122808f4a480": {
    "verdict": "ok"
@@ -19673,6 +20417,10 @@
   "f588339bb90e6261": {
    "verdict": "ok"
   },
+  "f597a1825858574a": {
+   "verdict": "ok",
+   "note": "Near x=-1/2, numerator is negative; denominator changes sign there, giving -inf on the right side and +inf on the left; verified numerically."
+  },
   "f59d2e86891abb54": {
    "verdict": "ok"
   },
@@ -19699,6 +20447,10 @@
   },
   "f5f6ada390b6cb27": {
    "verdict": "ok"
+  },
+  "f5fdd3b2d81e3f8a": {
+   "verdict": "ok",
+   "note": "Both ends fall (f(x)->-infinity as x-> +/- infinity): matches the even/negative case in the end-behavior comparison graphs, so even degree with a negative leading coefficient. Matches CNXML fs-id1165137628462 solution exactly."
   },
   "f601db6cd98c70c9": {
    "verdict": "ok"
@@ -19795,6 +20547,10 @@
   },
   "f74f0caf5fd15a87": {
    "verdict": "ok"
+  },
+  "f75f5d966d1ac68a": {
+   "verdict": "ok",
+   "note": "g(0)=13; matches CNXML solution '(0,13)'."
   },
   "f761fd9461674099": {
    "verdict": "ok"
@@ -20003,6 +20759,10 @@
   "f98fbec4c04dc0a7": {
    "verdict": "ok"
   },
+  "f992f7cf6a37dd08": {
+   "verdict": "ok",
+   "note": "Practice (Factor Theorem). Evaluated 2x^3+5x^2-12x-30 at -2.5, sqrt(6), -sqrt(6) via node: all 0 (within float tolerance). Matches CNXML solution for fs-id1165135453082 (-5/2, sqrt6, -sqrt6)."
+  },
   "f998ce329ef08bb4": {
    "verdict": "ok"
   },
@@ -20189,6 +20949,10 @@
   },
   "fbd3e5038e444fb0": {
    "verdict": "ok"
+  },
+  "fbd603460bf0eef1": {
+   "verdict": "ok",
+   "note": "H(3)=-16*9+96*3+112=256 (computed via node); matches CNXML solution '256 feet'."
   },
   "fbe3c01593307b2d": {
    "verdict": "ok"
@@ -20397,6 +21161,10 @@
   "fe9bf00655074524": {
    "verdict": "ok"
   },
+  "fe9cf0372f871397": {
+   "verdict": "ok",
+   "note": "Computed f(1)=-1+4=3 and f(3)=-81+4=-77 by node arithmetic for f(x)=-x^4+4. Matches CNXML fs-id1165131857356 solution."
+  },
   "fea4b7a3b3f0b970": {
    "verdict": "ok"
   },
@@ -20408,6 +21176,10 @@
   },
   "feac9b82cae7d75d": {
    "verdict": "ok"
+  },
+  "feb3ac45101bdb95": {
+   "verdict": "ok",
+   "note": "Discriminant of x^2-6x+13 is 36-52=-16<0, so 0 real x-intercepts; consistent with CNXML's 'No x-intercepts'."
   },
   "fec3eaf1ce73a655": {
    "verdict": "ok"

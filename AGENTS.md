@@ -61,7 +61,7 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
   package.json's `--min-verified`, `--min-replayed`, and `--min-exercises` in
   place
 - `npm run source:fetch` — fetch the ignored, sparse OpenStax source checkout
-- `npm run source:verify` — verify the committed 212-section map offline
+- `npm run source:verify` — verify the committed 221-section map offline
 - `npm run source:check` — report-only comparison against pinned CNXML
 - `npm run source:history` — review changes since the inferred PDF-era commits
 

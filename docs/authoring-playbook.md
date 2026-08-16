@@ -305,6 +305,10 @@ the two independent things it names:
 | `circle-standard-form` | two coefficient-1 squared terms against a positive integer — $(x-h)^2+(y-k)^2=r^2$ for the circle asks |
 | `exponential-form` | no logarithm left — for "convert from logarithmic to exponential form", where both statements grade equal |
 | `expanded-logarithms` | every written $\log$ takes a single number or variable — for "write $\log_5 25ab$ as a sum of logarithms" |
+| `evaluated-trig` | no trigonometric function left ($\sin$, $\cos$, $\tan$, $\csc$, $\sec$, $\cot$, and their $\arcsin$/$\sin^{-1}$ inverses) — for "find the exact value of $\cos\tfrac{\pi}{4}$", whose printed subject IS its own answer |
+| `evaluated-logarithm` | no logarithm left — for "evaluate $\log_2 8$", the same hazard one function over. Same predicate as `exponential-form`, kept apart because its feedback has to name evaluating rather than converting |
+| `degrees` | one term, ending in $^\circ$, on a plain numeric head — for "convert $\tfrac{5\pi}{4}$ radians to degrees", where the engine reads $^\circ$ as an exact operator and grades the two spellings equal |
+| `radians` | no degree symbol anywhere — the mirror ask. A radian measure has no notation of its own, so ruling out the printed degree form is the whole check |
 | `denominator:<n>` | that exact denominator — for equivalent-fraction asks, which are deliberately **not** reduced |
 | `solved:<variable>` | one written equation with that variable alone on one side and absent from the other — for "Solve the formula $7x+y=11$ for $y$", where equation-equivalence grading accepts the printed formula retyped back; the variable is named because a formula can arrive already solved for the *other* side ($x=5y-10$) |
 
@@ -666,7 +670,7 @@ carried zero of each, and the warning channel was deleted with them. There is
 no non-blocking rule left in the repository and no category of
 known-defective content to grandfather.
 
-The Practice retrofit that used to live here is finished. All 212 mapped
+The Practice retrofit that used to live here is finished. All 221 mapped
 sections carry the block (the documentation test pins that count to the live
 map, so authoring a new mapped section means bumping it here). The final
 block landed on August 9, 2026; the lint rule was promoted from a warning to
@@ -865,6 +869,17 @@ behavior an author will still meet:
   to bounded numeric sampling instead of the engine (see the guard banner
   there), so a pasted conjugate prompt grades `form` — the message the
   `answerForm` was built to produce — rather than freezing the page.
+- **Complex arithmetic: author the answer in $a+bi$ form.** The pinned engine
+  has two defects here and both are silent. It divides by the denominator's
+  modulus rather than its square, so $\tfrac{2+5i}{4-i}$ evaluates wrong; and
+  a coefficient times a complex value whose imaginary part is exactly $+1$
+  loses the real part — `3(2+i)` evaluates to $3i$, not $6+3i$ — while
+  `3(2-i)`, `3(2+5i)` and `(2+i)3` are all correct. A key written as a
+  quotient with a complex denominator, or as a product with an unsimplified
+  $(a+i)$ factor, is therefore not the value it looks like. Written $a+bi$
+  sidesteps both, and a learner who types $\tfrac{3+22i}{17}$ still grades
+  correct against $\tfrac{3}{17}+\tfrac{22}{17}i$. `verify-answers` skips
+  both shapes rather than guess.
 - **Do not "fix" deliberate conversions back.** The four ch. 11 Practice
   prompts authored as `multiplechoice` while the standard-form class was
   open, and the quotient-to-a-power item that became a multiple choice among

@@ -2649,6 +2649,50 @@ const FORM_PREDICATES = {
     }
     return true;
   },
+  // "Find the exact value of $\cos\left(\tfrac{\pi}{4}\right)$" answers
+  // $\tfrac{\sqrt2}{2}$ — and the printed subject IS that value, so retyping
+  // the prompt grades `correct`. The step the ask names is carrying the
+  // evaluation out, and it is finished exactly when no trigonometric function
+  // is left to evaluate. Same absence test as `exponential-form`, over the
+  // trigonometric names instead of the logarithmic ones; `\sin^{-1}` and
+  // `\arcsin` are both spellings of the same unevaluated application, so the
+  // inverse asks of §6.3 are covered by the same predicate. An absence test
+  // needs no closed-world grammar: no value-preserving decoration can REMOVE
+  // ink, so nothing a learner appends can buy the shape.
+  'evaluated-trig': (latex) => !/\\(?:arc)?(?:sin|cos|tan|csc|sec|cot)\b/
+    .test(bareLatex(latex)),
+  // "Evaluate $\log_2 8$" answers 3, the same hazard one function over. The
+  // predicate is `exponential-form`'s, and the duplication is deliberate:
+  // §6's rule is that the feedback has to name the step the exercise asks
+  // for, and "write it in exponential form, with no logarithm left" describes
+  // a conversion the learner was never asked to make. The phrase is the
+  // difference, exactly as `single-power` exists apart from `lowest-terms`.
+  'evaluated-logarithm': (latex) => !/\\log|\\ln\b/.test(bareLatex(latex)),
+  // "Convert $\tfrac{5\pi}{4}$ radians to degrees" answers $225^\circ$, and
+  // the engine converts `^\circ` as an exact operator — $225^\circ$ and
+  // $\tfrac{5\pi}{4}$ are the SAME value to it, so the printed subject grades
+  // correct and only the written unit separates the two.
+  //
+  // Presence of a degree symbol is not enough: `\frac{5\pi}{4}+0^\circ` wears
+  // one without moving the value. So the response has to BE a degree measure
+  // — one load-bearing term, ending in the symbol, on a plain numeric head —
+  // the closed-world shape `percent` uses against the identical attack.
+  degrees: (latex) => {
+    const terms = loadBearingTerms(bareLatex(latex));
+    if (terms.length !== 1) return false;
+    const head = terms[0].trim().match(/^([\s\S]*?)\^\s*\{?\s*\\circ\s*\}?$/);
+    if (!head) return false;
+    const value = head[1].trim();
+    return asDecimal(value) !== null || asFraction(value) !== null
+      || asMixedNumber(value) !== null;
+  },
+  // The mirror ask — "Convert $225^\circ$ to radians", keyed
+  // $\tfrac{5\pi}{4}$ — needs the opposite test, and needs it to be an
+  // ABSENCE: a radian measure has no notation of its own (2 radians is
+  // written `2`), so there is no shape to require, only the degree symbol to
+  // rule out. That refuses the printed subject retyped back, which is the
+  // whole job.
+  radians: (latex) => !/\\circ\b/.test(bareLatex(latex)),
 };
 
 /**
@@ -2727,6 +2771,10 @@ const FORM_PHRASES = {
   'circle-standard-form': 'in standard form, with the squared binomials on the left and the squared radius on the right',
   'exponential-form': 'in exponential form, with no logarithm left',
   'expanded-logarithms': 'as a sum of logarithms of single numbers and variables',
+  'evaluated-trig': 'as an exact value, with the trigonometric function evaluated',
+  'evaluated-logarithm': 'as a number, with the logarithm evaluated',
+  degrees: 'in degrees, with the degree symbol',
+  radians: 'in radians, not degrees',
 };
 
 export function describeAnswerForm(spec) {

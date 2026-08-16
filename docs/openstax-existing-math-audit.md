@@ -15,22 +15,22 @@
 ## Coverage
 
 - Books with mapped sections: 4
-- Numbered sections mapped: 212
-- Metadata matched without a flag: 207
-- Intentional adaptations adjudicated: 5
+- Numbered sections mapped: 221
+- Metadata matched without a flag: 215
+- Intentional adaptations adjudicated: 6
 - Unresolved sections needing review: 0
 - Modules differing from the committed map: 0
-- Objectives automatically located: 785/787
-- Core instructional headings automatically located: 795/798
-- Local interactive questions inventoried: 6264
-- Upstream Try It prompts with a likely local prompt match: 3838/4576
+- Objectives automatically located: 824/826
+- Core instructional headings automatically located: 844/848
+- Local interactive questions inventoried: 6457
+- Upstream Try It prompts with a likely local prompt match: 3837/4576
 
 | Book | Bundle | Authoring status | Chapters | Sections mapped |
 |---|---|---|---:|---:|
 | elementary-algebra | `prealgebra-bundle` | complete | 10/10 | 71/71 |
 | intermediate-algebra | `prealgebra-bundle` | complete | 12/12 | 70/70 |
 | prealgebra | `prealgebra-bundle` | complete | 11/11 | 60/60 |
-| precalculus | `college-algebra-bundle` | scaffolded | 12/12 | 11/73 |
+| precalculus | `college-algebra-bundle` | scaffolded | 12/12 | 20/73 |
 
 The prose percentage is five-word source-shingle traceability, not a quality
 score. Low values can reflect disclosed condensation, reformatted mathematics,
@@ -42,7 +42,7 @@ or intentionally omitted print material.
 |---|---|---|---:|---:|---:|---:|---:|
 | [elementary-algebra 1.1](../content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md) | `m82452` | metadata matched | 3/3 | 3/3 | 62% | 15/22 | 21 |
 | [elementary-algebra 1.2](../content/math/elementary-algebra/01-foundations/02-use-the-language-of-algebra.md) | `m82453` | metadata matched | 5/5 | 5/5 | 8% | 20/36 | 21 |
-| [elementary-algebra 1.3](../content/math/elementary-algebra/01-foundations/03-add-and-subtract-integers.md) | `m82454` | metadata matched | 4/4 | 4/4 | 52% | 23/32 | 44 |
+| [elementary-algebra 1.3](../content/math/elementary-algebra/01-foundations/03-add-and-subtract-integers.md) | `m82454` | metadata matched | 4/4 | 4/4 | 37% | 23/32 | 44 |
 | [elementary-algebra 1.4](../content/math/elementary-algebra/01-foundations/04-multiply-and-divide-integers.md) | `m82455` | metadata matched | 6/6 | 6/6 | 60% | 30/36 | 46 |
 | [elementary-algebra 1.5](../content/math/elementary-algebra/01-foundations/05-visualize-fractions.md) | `m82456` | metadata matched | 6/6 | 6/6 | 56% | 26/26 | 38 |
 | [elementary-algebra 1.6](../content/math/elementary-algebra/01-foundations/06-add-and-subtract-fractions.md) | `m82457` | metadata matched | 4/4 | 4/4 | 44% | 28/28 | 36 |
@@ -79,7 +79,7 @@ or intentionally omitted print material.
 | [elementary-algebra 6.1](../content/math/elementary-algebra/06-polynomials/01-add-and-subtract-polynomials.md) | `m82501` | metadata matched | 5/5 | 5/5 | 36% | 16/30 | 34 |
 | [elementary-algebra 6.2](../content/math/elementary-algebra/06-polynomials/02-use-multiplication-properties-of-exponents.md) | `m82504` | metadata matched | 6/6 | 6/6 | 52% | 21/24 | 39 |
 | [elementary-algebra 6.3](../content/math/elementary-algebra/06-polynomials/03-multiply-polynomials.md) | `m82507` | metadata matched | 3/3 | 3/3 | 45% | 27/38 | 28 |
-| [elementary-algebra 6.4](../content/math/elementary-algebra/06-polynomials/04-special-products.md) | `m82508` | metadata matched | 3/3 | 3/3 | 46% | 22/24 | 39 |
+| [elementary-algebra 6.4](../content/math/elementary-algebra/06-polynomials/04-special-products.md) | `m82508` | metadata matched | 3/3 | 3/3 | 47% | 22/24 | 39 |
 | [elementary-algebra 6.5](../content/math/elementary-algebra/06-polynomials/05-divide-monomials.md) | `m82509` | metadata matched | 5/5 | 5/5 | 35% | 30/36 | 41 |
 | [elementary-algebra 6.6](../content/math/elementary-algebra/06-polynomials/06-divide-polynomials.md) | `m82513` | metadata matched | 2/2 | 2/2 | 36% | 24/24 | 29 |
 | [elementary-algebra 6.7](../content/math/elementary-algebra/06-polynomials/07-integer-exponents-and-scientific-notation.md) | `m82514` | metadata matched | 5/5 | 5/5 | 35% | 35/37 | 47 |
@@ -127,7 +127,7 @@ or intentionally omitted print material.
 | [intermediate-algebra 3.2](../content/math/intermediate-algebra/03-graphs-and-functions/02-slope-of-a-line.md) | `m81370` | metadata matched | 6/6 | 6/6 | 46% | 23/24 | 32 |
 | [intermediate-algebra 3.3](../content/math/intermediate-algebra/03-graphs-and-functions/03-find-the-equation-of-a-line.md) | `m81371` | metadata matched | 5/5 | 5/5 | 79% | 20/20 | 30 |
 | [intermediate-algebra 3.4](../content/math/intermediate-algebra/03-graphs-and-functions/04-graph-linear-inequalities-in-two-variables.md) | `m81372` | metadata matched | 4/4 | 4/4 | 53% | 13/16 | 30 |
-| [intermediate-algebra 3.5](../content/math/intermediate-algebra/03-graphs-and-functions/05-relations-and-functions.md) | `m81373` | metadata matched | 3/3 | 3/3 | 81% | 17/18 | 34 |
+| [intermediate-algebra 3.5](../content/math/intermediate-algebra/03-graphs-and-functions/05-relations-and-functions.md) | `m81373` | metadata matched | 3/3 | 3/3 | 81% | 16/18 | 34 |
 | [intermediate-algebra 3.6](../content/math/intermediate-algebra/03-graphs-and-functions/06-graphs-of-functions.md) | `m81374` | metadata matched | 3/3 | 3/3 | 81% | 18/18 | 33 |
 | [intermediate-algebra 4.1](../content/math/intermediate-algebra/04-systems-of-linear-equations/01-solve-systems-of-linear-equations-with-two-variables.md) | `m81427` | metadata matched | 5/5 | 5/5 | 41% | 24/26 | 32 |
 | [intermediate-algebra 4.2](../content/math/intermediate-algebra/04-systems-of-linear-equations/02-solve-applications-with-systems-of-equations.md) | `m81380` | metadata matched | 3/3 | 3/3 | 35% | 15/20 | 25 |
@@ -252,6 +252,15 @@ or intentionally omitted print material.
 | [precalculus 2.2](../content/math/precalculus/02-linear-functions/02-graphs-of-linear-functions.md) | `m50389` | metadata matched | 5/5 | 7/7 | 69% | 0/0 | 24 |
 | [precalculus 2.3](../content/math/precalculus/02-linear-functions/03-modeling-with-linear-functions.md) | `m49326` | metadata matched | 3/3 | 3/3 | 76% | 0/0 | 17 |
 | [precalculus 2.4](../content/math/precalculus/02-linear-functions/04-fitting-linear-models-to-data.md) | `m49327` | metadata matched | 4/4 | 4/4 | 74% | 0/0 | 14 |
+| [precalculus 3.1](../content/math/precalculus/03-polynomial-and-rational-functions/01-complex-numbers.md) | `m49335` | metadata matched | 4/4 | 6/6 | 58% | 0/0 | 20 |
+| [precalculus 3.2](../content/math/precalculus/03-polynomial-and-rational-functions/02-quadratic-functions.md) | `m49337` | metadata matched | 4/4 | 5/5 | 62% | 0/0 | 29 |
+| [precalculus 3.3](../content/math/precalculus/03-polynomial-and-rational-functions/03-power-functions-and-polynomial-functions.md) | `m49346` | metadata matched | 4/4 | 5/5 | 70% | 0/0 | 27 |
+| [precalculus 3.4](../content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md) | `m49347` | metadata matched | 7/7 | 7/7 | 73% | 0/0 | 23 |
+| [precalculus 3.5](../content/math/precalculus/03-polynomial-and-rational-functions/05-dividing-polynomials.md) | `m49348` | metadata matched | 2/2 | 4/4 | 56% | 0/0 | 10 |
+| [precalculus 3.6](../content/math/precalculus/03-polynomial-and-rational-functions/06-zeros-of-polynomial-functions.md) | `m49349` | metadata matched | 7/7 | 8/8 | 73% | 0/0 | 24 |
+| [precalculus 3.7](../content/math/precalculus/03-polynomial-and-rational-functions/07-rational-functions.md) | `m49351` | metadata matched | 6/6 | 8/8 | 66% | 0/0 | 34 |
+| [precalculus 3.8](../content/math/precalculus/03-polynomial-and-rational-functions/08-inverses-and-radical-functions.md) | `m49352` | metadata matched | 2/2 | 2/2 | 71% | 0/0 | 14 |
+| [precalculus 3.9](../content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md) | `m49353` | adapted-verified | 3/3 | 4/5 | 50% | 0/0 | 12 |
 
 ## Adjudicated intentional adaptations
 
@@ -274,4 +283,8 @@ or intentionally omitted print material.
 ### prealgebra 11.4 — Understand Slope of a Line
 
 - **adapted-verified:** Upstream markup defect: the module's <md:abstract> packs two objectives into a single <item>, so the source parses as five objectives where the section teaches six. The local page has separate 'Graph a line given a point and the slope' and 'Solve slope applications' headings, matching the printed book, so the local objectives list carries six items. Do not collapse them back to match the malformed abstract.
+
+### precalculus 3.9 — Modeling Using Variation
+
+- **adapted-verified:** Section 3.9 is the LAST section of chapter 3, and m49353 carries the whole chapter's end matter after its own section exercises: a 'Chapter Review Exercises' set and a 'Chapter Test'. The audit reads those as source headings with no local counterpart and raises heading-needs-review at 0% title similarity. They are deliberately absent: a chapter test covers all nine sections of chapter 3, so folding its items into 3.9's Practice block would attribute chapter-wide material to one section and hide the other eight sections' skills inside a variation page. The section-final Practice block draws only from the module's own '3.9 Section Exercises' set. If chapter-level assessment is wanted later it belongs in a Knowledge Check page, not here.
 

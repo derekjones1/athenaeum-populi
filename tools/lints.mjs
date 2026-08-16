@@ -29,7 +29,7 @@ import {
 import {
   malformedShortcodeParams, mathSpans, PAIRED_SHORTCODES, shortcodes,
 } from './lib-content.mjs';
-import { hasFileBackedCssImage, htmlAttribute } from './lib-html.mjs';
+import { hasFileBackedCssImage, htmlAttribute, openTagRe } from './lib-html.mjs';
 // The one objectives-callout parser, shared with the structure validator and
 // the source audit so the three tools never diagnose the callout differently.
 import { parseObjectivesCallout } from './lib-openstax-source.mjs';
@@ -134,6 +134,33 @@ const FACTORING_PROMPT_RE = /(?:^|[.?!]\s+)\s*factor\b/i;
  * candidate.
  */
 const ARITHMETIC_PROMPT_RE = /(?:^|[.?!]\s+)\s*(?:add|subtract|multiply|divide|simplify|evaluate|find the (?:sum|difference|product|quotient|value))\b/i;
+
+/**
+ * Does the prompt ask for the VALUE of printed trigonometry? "Find the exact
+ * value of $\cos\left(\tfrac{\pi}{4}\right)$" keys $\tfrac{\sqrt2}{2}$, which
+ * is what the printed subject evaluates to — the arithmetic hazard again,
+ * over a function the numeric extractor deliberately skips.
+ *
+ * "find the exact value" is why this needs its own verb at all:
+ * ARITHMETIC_PROMPT_RE matches "find the value" but not the adjective between,
+ * and widening that regex would pull `\pi`-carrying spans into a numeric path
+ * written to exclude them. The verb has to reach the trig function in the same
+ * sentence, so a later mention ("Find the period. Then sketch $y=\sin x$.")
+ * does not conscript the span.
+ */
+const TRIG_VALUE_PROMPT_RE = new RegExp(
+  String.raw`(?:^|[.?!]\s+)\s*(?:evaluate|compute|find|determine|give|state|what)\b[^.?!]*`
+  + String.raw`\\(?:arc)?(?:sin|cos|tan|csc|sec|cot)\b`,
+  'i',
+);
+
+/**
+ * Does the prompt ask for an angle converted between degrees and radians?
+ * The engine reads `^\circ` as an exact conversion, so the two spellings of
+ * one angle are the same value to it and the printed subject grades correct.
+ * The `degrees`/`radians` tokens grade the written unit the value cannot see.
+ */
+const ANGLE_CONVERSION_PROMPT_RE = /\b(?:convert|express|rewrite|write|give|state|find)\b[^.?!]*\b(?:in|to|into|as)\s+(?:degrees?|radians?)\b/i;
 
 /**
  * Does the prompt ask the learner to carry out an ALGEBRAIC multiplication or
@@ -438,6 +465,22 @@ function isSameExpression(a, b) {
   }
 }
 
+/**
+ * A printed span that STATES something (a relation) or ENUMERATES (a comma) is
+ * not a subject to re-express, so every span extractor below skips one.
+ *
+ * The `\b` is load-bearing, and was missing until August 15, 2026: without it
+ * the `le` alternative matches the opening of `\left`, so every
+ * `\left(…\right)`-fenced span — the fencing MathLive emits and the corpus
+ * writes by default — read as a relation and was silently exempt from every
+ * extractor here. `\leq`/`\geq` are listed beside `\le`/`\ge` because the
+ * boundary that fixes that would otherwise drop the longer spellings.
+ */
+const RELATION_MACROS = String.raw`\\(?:lt|gt|le|leq|ge|geq|ne|neq|text|begin|dots|ldots)\b`;
+const STATES_OR_ENUMERATES_RE = new RegExp(String.raw`[=<>,]|${RELATION_MACROS}`);
+const ENUMERATES_OR_COMPARES_RE = new RegExp(String.raw`[<>,]|${RELATION_MACROS}`);
+const NOT_BARE_ARITHMETIC_RE = new RegExp(String.raw`[=<>,]|\\(?:sqrt|pi)\b|${RELATION_MACROS}`);
+
 function printedPolynomialSubjects(question) {
   const subjects = [];
   for (const span of mathSpans(question, { allowNewlines: true })) {
@@ -448,7 +491,7 @@ function printedPolynomialSubjects(question) {
     // the subject — "Find the sum: $\sum_{i=1}^{40}(5i-21)$" prints a span
     // worth exactly its own value.
     const scan = inner.replace(/\\sum\s*(?:_\{[^{}]*\})?\s*(?:\^(?:\{[^{}]*\}|\S))?/g, ' ');
-    if (/[=<>,]|\\(?:lt|gt|le|ge|ne|neq|text|begin|dots|ldots)/.test(scan)) continue;
+    if (STATES_OR_ENUMERATES_RE.test(scan)) continue;
     // A numeral radical is an algebraic subject too: "Simplify:
     // $(4-3\sqrt{3})(5+2\sqrt{3})$" has no variable, but its printed span is
     // worth exactly its own answer the same way a polynomial product is.
@@ -475,7 +518,7 @@ function printedEquationSubjects(question) {
   const subjects = [];
   for (const span of mathSpans(question, { allowNewlines: true })) {
     const inner = span.tex.trim();
-    if (/[<>,]|\\(?:lt|gt|le|ge|ne|neq|text|begin|dots|ldots)/.test(inner)) continue;
+    if (ENUMERATES_OR_COMPARES_RE.test(inner)) continue;
     const sides = inner.split('=');
     if (sides.length !== 2) continue;
     subjects.push(inner);
@@ -503,8 +546,64 @@ function printedArithmeticSubjects(question) {
     // one quotient, and reading its comma as an enumeration would silently
     // exempt every grouped number in the corpus from this rule.
     const separators = inner.replace(/\{\s*,\s*\}/g, '');
-    if (/[=<>,]|\\(?:lt|gt|le|ge|ne|neq|text|begin|dots|ldots|sqrt|pi)/.test(separators)) continue;
+    if (NOT_BARE_ARITHMETIC_RE.test(separators)) continue;
     if (spanHasVariable(inner)) continue;
+    subjects.push(inner);
+  }
+  return subjects;
+}
+
+/** Every spelling of an unevaluated trigonometric application. */
+const TRIG_APPLICATION_RE = /\\(?:arc)?(?:sin|cos|tan|csc|sec|cot)\b/;
+
+/**
+ * The unevaluated trigonometry a question prints — every whole $…$ span
+ * holding a trigonometric application over a constant argument, for an
+ * exact-value prompt.
+ *
+ * printedArithmeticSubjects() cannot serve this class: it skips any span
+ * carrying `\pi`, because a printed $\pi$ is not the bare arithmetic that
+ * extractor is about. But $\cos\left(\tfrac{\pi}{4}\right)$ is exactly the
+ * hazard — the engine evaluates it to $\tfrac{\sqrt2}{2}$, so the printed
+ * subject of "find the exact value" IS its own answer and retyping the prompt
+ * grades correct.
+ *
+ * Constant arguments only. A span in a variable ($y=\sin(2x)$, $\sin^2
+ * x+\cos^2 x$) can never grade equal to a numeric key, so including it would
+ * only spend engine time; and the asks that print one — amplitude, period,
+ * verify-this-identity — are sound content this rule must stay off.
+ */
+function printedTrigSubjects(question) {
+  const subjects = [];
+  for (const span of mathSpans(question, { allowNewlines: true })) {
+    const inner = span.tex.trim();
+    if (!TRIG_APPLICATION_RE.test(inner)) continue;
+    if (STATES_OR_ENUMERATES_RE.test(inner)) continue;
+    if (spanHasVariable(inner)) continue;
+    subjects.push(inner);
+  }
+  return subjects;
+}
+
+/**
+ * The angle measures a question prints, for a degree/radian conversion ask.
+ *
+ * `^\circ` is an exact operator to the Compute Engine, not decoration: it
+ * grades $225^\circ$ and $\tfrac{5\pi}{4}$ as the same value in both
+ * directions. So "Convert $\tfrac{5\pi}{4}$ radians to degrees" is passable
+ * by retyping the prompt, and so is its mirror — and neither span reaches
+ * printedQuestionValues(), which admits only bare numerals and fractions.
+ *
+ * An angle is written one of two ways, and both are collected: a numeral
+ * wearing the degree symbol, or a constant multiple of $\pi$.
+ */
+function printedAngleSubjects(question) {
+  const subjects = [];
+  for (const span of mathSpans(question, { allowNewlines: true })) {
+    const inner = span.tex.trim();
+    if (STATES_OR_ENUMERATES_RE.test(inner)) continue;
+    if (spanHasVariable(inner)) continue;
+    if (!/\\circ\b/.test(inner) && !/\\pi\b/.test(inner)) continue;
     subjects.push(inner);
   }
   return subjects;
@@ -825,6 +924,44 @@ export function lintHugo(src, filename = '') {
       }
     }
   }
+  // An array row may not carry more cells than its spec declares columns.
+  //
+  // Hugo renders math with KaTeX in strict mode, where this is a hard build
+  // failure ("Too few columns specified in the {array} column argument"). The
+  // section verifier renders with `strict: 'ignore'`, which lets it through —
+  // so eight of these shipped through a green `npm test` on August 15, 2026
+  // and only surfaced at `npm run build`. Every one was a step array that had
+  // grown a column the spec never gained: three parallel `\text{or}` solution
+  // chains under `{lrcl}`, a chained `A &=& LW &=& L(80-2L)`, and an
+  // explanation column written last instead of first.
+  //
+  // The check is structural rather than a stricter KaTeX pass, deliberately.
+  // Raising the verifier to `strict: 'error'` fires on sound content: the math
+  // extractor also yields a handful of prose gaps between adjacent `$…$` runs
+  // ("— the product of any number and "), which Hugo never renders as math but
+  // strict KaTeX rejects for their em-dash. Counting columns has no such
+  // ambiguity — measured against this corpus it agrees with KaTeX exactly, on
+  // all eight failures and all 58,633 other spans.
+  for (const m of src.matchAll(/\\begin\{array\}\{([^}]*)\}([\s\S]*?)\\end\{array\}/g)) {
+    const declared = (m[1].replace(/[|@]\{[^{}]*\}|[\s|]/g, '').match(/[lcr]/g) ?? []).length;
+    if (!declared) continue;
+    let widest = 0;
+    for (const row of m[2].split(/\\\\(?:\[[^\]]*\])?/)) {
+      let depth = 0;
+      let cells = 1;
+      for (let i = 0; i < row.length; i += 1) {
+        const ch = row[i];
+        if (ch === '\\') { i += 1; continue; } // a control sequence, never a cell break
+        if (ch === '{') depth += 1;
+        else if (ch === '}') depth -= 1;
+        else if (ch === '&' && depth === 0) cells += 1;
+      }
+      widest = Math.max(widest, cells);
+    }
+    if (widest > declared) {
+      err(m.index, `array row has ${widest} cells but the spec {${m[1]}} declares ${declared} column(s) — KaTeX fails the production build on this ("Too few columns"); widen the spec to match the widest row`);
+    }
+  }
   // Unicode superscript minus can't parse as an exponent.
   for (const m of src.matchAll(/⁻/g)) {
     err(m.index, 'unicode superscript minus — write a braced exponent like 10^{-3}');
@@ -958,7 +1095,7 @@ export function lintHugo(src, filename = '') {
     if (target && !target.trim().startsWith('#')) err(m.index, imageMessage);
   }
 
-  for (const m of htmlMediaSrc.matchAll(/<svg\b[^>]*>/gi)) {
+  for (const m of htmlMediaSrc.matchAll(openTagRe('svg'))) {
     const role = htmlAttribute(m[0], 'role').trim().toLowerCase();
     const ariaLabel = htmlAttribute(m[0], 'aria-label').trim();
     const labelledBy = htmlAttribute(m[0], 'aria-labelledby').trim().split(/\s+/).filter(Boolean);
@@ -994,7 +1131,9 @@ export function lintHugo(src, filename = '') {
   // produces is the correct output, so the bezier check below must not fire on
   // it. Anything else — a hand-pasted spline with no spec at all — still does.
   const acknowledgedFreeform = [];
-  for (const m of htmlMediaSrc.matchAll(/<div\b[^>]*\bclass\s*=\s*(?:"[^"]*\bap-figure\b[^"]*"|'[^']*\bap-figure\b[^']*')[^>]*>/gi)) {
+  const isApFigure = (tag) => /\bclass\s*=\s*(?:"[^"]*\bap-figure\b[^"]*"|'[^']*\bap-figure\b[^']*')/i.test(tag);
+  for (const m of htmlMediaSrc.matchAll(openTagRe('div'))) {
+    if (!isApFigure(m[0])) continue;
     const raw = htmlAttribute(m[0], 'data-spec');
     if (!raw) continue;
     let spec;
@@ -1019,7 +1158,7 @@ export function lintHugo(src, filename = '') {
   // C¹ knots and zero-slope extrema render visible flat plateaus — the
   // "hand-drawn" look. Only the spline interpolator emits C commands; every
   // analytic primitive emits polylines, lines, or ellipses.
-  for (const m of htmlMediaSrc.matchAll(/<path\b[^>]*>/gi)) {
+  for (const m of htmlMediaSrc.matchAll(openTagRe('path'))) {
     if (!/(?:^|[\s\d.])C[\s\d.]/.test(htmlAttribute(m[0], 'd'))) continue;
     if (acknowledgedFreeform.some(([from, to]) => m.index > from && m.index < to)) continue;
     err(m.index, 'figure curve is spline-interpolated (smoothCurves output) — regenerate it from an analytic primitive (quadratics, cubics, circles, polylines, or curves kind sqrt/cbrt/reciprocal/reciprocal-squared/sine/exp/log); reserve smoothCurves (freeform: true) for source art with no formula, declared in a data-spec');
@@ -1365,6 +1504,8 @@ export function lintHugo(src, filename = '') {
         ...(REEXPRESSION_RE.test(q) ? printedQuestionValues(q) : []),
         ...(FACTORING_PROMPT_RE.test(q) ? printedPolynomialSubjects(q) : []),
         ...(ARITHMETIC_PROMPT_RE.test(q) ? printedArithmeticSubjects(q) : []),
+        ...(TRIG_VALUE_PROMPT_RE.test(q) ? printedTrigSubjects(q) : []),
+        ...(ANGLE_CONVERSION_PROMPT_RE.test(q) ? printedAngleSubjects(q) : []),
         ...(ALGEBRAIC_PRODUCT_PROMPT_RE.test(q) ? printedPolynomialSubjects(q) : []),
         ...(ALGEBRAIC_SIMPLIFY_PROMPT_RE.test(q) ? printedPolynomialSubjects(q) : []),
         ...(STANDARD_FORM_PROMPT_RE.test(q) || EXPONENTIAL_FORM_PROMPT_RE.test(q)

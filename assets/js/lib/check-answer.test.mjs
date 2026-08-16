@@ -837,6 +837,27 @@ const formCases = [
     '\\frac{1}{4}(\\log_2 5+3\\log_2 x-4-2\\log_2 y-7\\log_2 z)', 'expanded-logarithms', 'correct'],
   ['\\log_2\\sqrt[4]{\\tfrac{5x^3}{16y^2z^7}}',
     '\\frac{1}{4}(\\log_2 5+3\\log_2 x-4-2\\log_2 y-7\\log_2 z)', 'expanded-logarithms', 'form'],
+  // evaluated-trig — the printed subject of an exact-value ask IS its answer
+  ['\\frac{\\sqrt{2}}{2}', '\\frac{\\sqrt{2}}{2}', 'evaluated-trig', 'correct'],
+  ['\\cos\\left(\\frac{\\pi}{4}\\right)', '\\frac{\\sqrt{2}}{2}', 'evaluated-trig', 'form'],
+  ['\\sec\\left(\\frac{\\pi}{3}\\right)', '2', 'evaluated-trig', 'form'],
+  // the two spellings of an inverse application are one unevaluated function
+  ['\\frac{\\pi}{6}', '\\frac{\\pi}{6}', 'evaluated-trig', 'correct'],
+  ['\\sin^{-1}\\left(\\frac{1}{2}\\right)', '\\frac{\\pi}{6}', 'evaluated-trig', 'form'],
+  ['\\arcsin\\left(\\frac{1}{2}\\right)', '\\frac{\\pi}{6}', 'evaluated-trig', 'form'],
+  // evaluated-logarithm — exponential-form's predicate, its own feedback
+  ['3', '3', 'evaluated-logarithm', 'correct'],
+  ['\\log_2 8', '3', 'evaluated-logarithm', 'form'],
+  ['\\ln e^{3}', '3', 'evaluated-logarithm', 'form'],
+  // degrees / radians — ^\circ is an exact operator, so the two spellings of
+  // one angle grade equal and only the written unit separates them
+  ['225^\\circ', '225^\\circ', 'degrees', 'correct'],
+  ['\\frac{5\\pi}{4}', '225^\\circ', 'degrees', 'form'],
+  // a degree symbol worn without being one: the value never moved
+  ['\\frac{5\\pi}{4}+0^\\circ', '225^\\circ', 'degrees', 'form'],
+  ['\\frac{5\\pi}{4}', '\\frac{5\\pi}{4}', 'radians', 'correct'],
+  ['225^\\circ', '\\frac{5\\pi}{4}', 'radians', 'form'],
+  ['2', '2', 'radians', 'correct'],
   // simplified-radical tightenings: unevaluated numeral arithmetic and
   // fractions under the root, signed perfect powers, written-out units, and
   // same-index numeral-radical products all reject now

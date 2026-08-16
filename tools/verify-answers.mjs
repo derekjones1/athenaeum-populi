@@ -151,6 +151,35 @@ function hasComplexDivision(expr, assignment) {
 }
 
 /**
+ * A coefficient multiplying a complex value whose imaginary part is exactly
+ * $+1$: Compute Engine 0.58.0 evaluates `Multiply(3, Complex(2, 1))` as
+ * $3i$ — it drops the real part entirely and reads the operand as the bare
+ * imaginary unit. Found August 15, 2026, authoring Precalculus §3.1, where
+ * `3(2+i)` and $(2+i)^2+3(2+i)+5$ both came back short by their real terms.
+ *
+ * The bug is narrow and worth stating exactly, because everything one step
+ * away from it is fine: `3(2-i)` (imaginary part $-1$), `3(2+5i)` (any other
+ * coefficient), and `Multiply(Complex(2,1), 3)` (the same product with its
+ * operands the other way round) all evaluate correctly. Only
+ * coefficient-first times imaginary-part-exactly-$+1$ misfires.
+ *
+ * Detected structurally rather than by evaluating, since the whole problem is
+ * that evaluating lies: walk for a Multiply whose non-leading operand carries
+ * an imaginary part of 1 once the assignment is applied.
+ */
+function hasUnitImaginaryProduct(expr, assignment) {
+  if (expr.operator === 'Multiply') {
+    for (const op of expr.ops.slice(1)) {
+      try {
+        const value = (assignment ? op.subs(assignment) : op).N();
+        if (Math.abs((value.im ?? 0) - 1) < 1e-12 && Math.abs(value.re ?? 0) > 1e-12) return true;
+      } catch { /* unevaluable operand falls through to the walk */ }
+    }
+  }
+  return (expr.ops ?? []).some((op) => hasUnitImaginaryProduct(op, assignment));
+}
+
+/**
  * A written mixed number multiplied by a parenthesized or \cdot factor:
  * the engine reads the mixed number's whole part as a coefficient there
  * ($2\tfrac{2}{5}(\dots)$ becomes $2 \cdot \tfrac{2}{5} \cdot \dots$), so the
@@ -169,6 +198,7 @@ function numericValue(expr, assignment) {
   let value;
   try {
     if (hasComplexDivision(expr, assignment)) return null;
+    if (hasUnitImaginaryProduct(expr, assignment)) return null;
     value = (assignment ? expr.subs(assignment) : expr).N();
   } catch {
     return null;
@@ -268,13 +298,21 @@ const APPROXIMATION_RE = /\bround(?:ed|ing)?\b|\bnearest\b|\bapproximat|\bestima
 // translate prompts.
 const REEXPRESSION_RE = new RegExp([
   String.raw`(?:^|[.?!]\s)\s*(?:add|subtract|multiply|divide|simplify|factor|combine|expand|reduce|rationalize|evaluate)\b`,
-  String.raw`\bfind the (?:sum|difference|product|quotient|value)\b`,
+  // "exact" between the article and the noun is what a trigonometry section
+  // asks with — "Find the exact value of $\cos\left(\tfrac{\pi}{4}\right)$" is
+  // the same substitution-free comparison as "Find the value of", and the
+  // printed span IS the subject to compare against.
+  String.raw`\bfind the (?:exact )?(?:sum|difference|product|quotient|value)\b`,
   String.raw`\bprime factorization\b`,
   String.raw`\bin (?:simplest|lowest) (?:form|terms)\b`,
   String.raw`\bin scientific notation\b`,
   // "(?!…your answer)" keeps a word problem's FORMAT instruction ("Write your
   // answer as an improper fraction") from reading as a re-expression ask.
-  String.raw`\b(?:convert|write|rewrite|express)\b(?!\s+(?:your|the)\s+answer\b)[^.?!]*\b(?:to|as|in)\b[^.?!]*\b(?:decimal|fraction|mixed number|scientific notation|power)\b`,
+  // Degrees and radians join that list because `^\circ` is an exact operator
+  // to the engine, not a unit label: $225^\circ$ and $\tfrac{5\pi}{4}$ are the
+  // same number, so an angle conversion is value-preserving and its answer is
+  // comparable to its printed subject like any other re-expression.
+  String.raw`\b(?:convert|write|rewrite|express)\b(?!\s+(?:your|the)\s+answer\b)[^.?!]*\b(?:to|as|in)\b[^.?!]*\b(?:decimal|fraction|mixed number|scientific notation|power|degrees?|radians?)\b`,
 ].join('|'), 'i');
 
 const pass = (rule) => ({ rule, status: 'pass' });
@@ -410,6 +448,17 @@ function checkReexpression(question, answer, answerMode) {
   if (MIXED_NUMBER_PRODUCT_RE.test(candidates[0].raw) || MIXED_NUMBER_PRODUCT_RE.test(answer)) {
     return skip('re-expression', 'mixed-number product (engine misparse)');
   }
+  // "Let $f(x)=2x^2-3x$. Evaluate $f(8-i)$." prints its definition as a
+  // relation, so only the APPLICATION survives the candidate filter — and the
+  // engine parses `f(8-i)` as a product of a free symbol `f` with its
+  // argument, which sampling then evaluates at f = 1.3178 and reports as a
+  // disagreement with the right answer. An application of a name the question
+  // itself defines belongs to checkFunctionEvaluate; here it can only
+  // manufacture a false failure, which a correctness check must never do.
+  const defined = printedDefinitions(question);
+  if (defined.size > 0 && [...freeVariables(candidates[0].expr)].some((name) => defined.has(name))) {
+    return skip('re-expression', 'applies a function the question defines');
+  }
 
   const { equal, witness } = equivalentNumerically(candidates[0].expr, answerExpr);
   if (equal === false) {
@@ -475,6 +524,28 @@ function printedDefinitions(question) {
  * symbols (a definition like $g(x)=\tfrac{3}{4}f(x)$ with $f$ known only
  * from a table), which the caller's numeric comparison reports unreadable.
  */
+/**
+ * Is this the argument the engine cannot substitute? Compute Engine 0.58.0
+ * evaluates a coefficient times a complex value whose imaginary part is
+ * exactly $+1$ as the bare imaginary unit — `Multiply(3, Complex(2,1))` is
+ * $3i$, not $6+3i$ — and the corruption happens inside `subs()` itself:
+ * substituting $2+i$ into $x^2+3x+5$ folds the $3x+5$ term straight to
+ * `Complex(5,3)`, so by the time the result exists there is no `Multiply`
+ * node left for a structural guard to find. The argument is the only place
+ * this is still visible, so it is tested here, before substitution.
+ *
+ * Narrow on purpose: an imaginary part of $-1$, of any other magnitude, or a
+ * real argument all substitute correctly, and are still checked.
+ */
+function substitutesUnsoundly(expr) {
+  try {
+    const value = expr.N();
+    return Math.abs((value.im ?? 0) - 1) < 1e-12 && Math.abs(value.re ?? 0) > 1e-12;
+  } catch {
+    return false;
+  }
+}
+
 function applicationValue(text, defs) {
   const m = unfenced(text).trim().match(/^([a-zA-Z])\s*\(\s*([\s\S]+?)\s*\)$/);
   if (!m || !defs.has(m[1])) return null;
@@ -484,9 +555,13 @@ function applicationValue(text, defs) {
     inner = expr && freeVariables(expr).size === 0 ? expr : null;
   }
   if (!inner) return null;
+  if (substitutesUnsoundly(inner)) return UNSOUND_SUBSTITUTION;
   const def = defs.get(m[1]);
   return def.rhs.subs({ [def.variable]: inner });
 }
+
+/** Sentinel: an application this engine cannot evaluate soundly. */
+const UNSOUND_SUBSTITUTION = Symbol('unsound-substitution');
 
 /** A written `(a, b)` with numeric coordinates, as [a, b] — or null. */
 function numericPair(raw) {
@@ -572,6 +647,9 @@ function checkFunctionEvaluate(question, answer) {
     .filter((raw) => !DEFINITION_RE.test(unfenced(raw).trim()))
     .map((raw) => applicationValue(raw, defs))
     .filter(Boolean);
+  if (asks.some((ask) => ask === UNSOUND_SUBSTITUTION)) {
+    return skip('function-evaluate', 'complex argument the engine substitutes wrong');
+  }
   if (asks.length !== 1 || splitTopLevelCommas(answer).length > 1) return null;
   // An evaluation must come out a closed number. A residual symbol means the
   // definition leans on a function the question does not print ($g(x)=-f(x)$

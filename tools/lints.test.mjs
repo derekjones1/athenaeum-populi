@@ -746,6 +746,56 @@ test('a standard-form prompt is trivially satisfiable without answerForm', () =>
   }
 });
 
+// ---- the "find the exact value" class, over trigonometry and angles --------
+// $\cos\left(\tfrac{\pi}{4}\right)$ IS $\tfrac{\sqrt2}{2}$ to the engine, and
+// $225^\circ$ IS $\tfrac{5\pi}{4}$ — `^\circ` is an exact operator, not
+// decoration. So both asks print their own answers. Neither span reaches the
+// numeric extractor: it skips `\pi` by design, and an angle in degrees is not
+// a bare numeral either, so each class needs its own verb and extractor.
+test('an exact-value trig or angle-conversion prompt is passable by retyping', () => {
+  const trivial = (error) => error.includes('printed in the question');
+  const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
+  const fillin = (question, answer, form = '') =>
+    `{{< fillin question="${question}" answer="${answer}"${form ? ` answerForm="${form}"` : ''} hint="Use the unit circle." >}}`;
+
+  for (const [question, answer, form, reason] of [
+    ['Find the exact value of $\\cos\\left(\\frac{\\pi}{4}\\right)$.', '\\frac{\\sqrt{2}}{2}', 'evaluated-trig',
+      'the printed cosine evaluates to its own key'],
+    ['Find the exact value of $\\sec\\left(\\frac{\\pi}{3}\\right)$.', '2', 'evaluated-trig',
+      'the reciprocal functions are the same hazard'],
+    ['Evaluate $\\sin^{-1}\\left(\\frac{1}{2}\\right)$.', '\\frac{\\pi}{6}', 'evaluated-trig',
+      'an inverse application is unevaluated ink too'],
+    ['Simplify $\\sin^2 x+\\cos^2 x$.', '1', 'evaluated-trig',
+      'the simplify verb reaches this one, and the same token is what closes it'],
+    ['Convert $\\frac{5\\pi}{4}$ radians to degrees.', '225^\\circ', 'degrees',
+      'the engine grades the two spellings of one angle equal'],
+    ['Convert $225^\\circ$ to radians.', '\\frac{5\\pi}{4}', 'radians',
+      'and equal in the other direction, so the mirror ask needs the mirror token'],
+  ]) {
+    assert(lint(fillin(question, answer)).some(trivial), reason);
+    assert.equal(
+      lint(fillin(question, answer, form)).filter(trivial).length,
+      0,
+      `answerForm=${JSON.stringify(form)} rules the printed span out: ${reason}`,
+    );
+    assert.equal(checkAnswer(answer, answer, { form }), 'correct',
+      `answerForm=${JSON.stringify(form)} still accepts the exercise's own answer`);
+  }
+
+  // Must NOT fire. The extractors take constant arguments only, so every ask
+  // whose printed trigonometry carries a variable stays sound and untagged —
+  // amplitude, period and identity prompts are the bulk of a periodic-functions
+  // section, and a rule that conscripted them would fire on sound content.
+  for (const [question, answer, reason] of [
+    ['Find the amplitude of $y=3\\sin(2x)$.', '3', 'the printed span is a definition in a variable'],
+    ['Find the period of $y=\\sin(2x)$.', '\\pi', 'the key is a constant the printed span never equals'],
+    ['A wheel turns through $\\frac{5\\pi}{4}$ radians. How many radians is that?', '\\frac{5\\pi}{4}',
+      'no conversion is asked, so the angle extractor is never reached'],
+  ]) {
+    assert.equal(lint(fillin(question, answer)).filter(trivial).length, 0, reason);
+  }
+});
+
 // ---- an equation answer makes printed equations retype hazards -------------
 // Equation-equivalence grading accepts every restatement whose
 // moved-to-one-side form is proportional, so "Solve $7x+y=11$ for $y$"
@@ -1402,6 +1452,60 @@ test('a data-spec provenance record must parse and acknowledge spline use', () =
   // entity-escaped specs (as emitted for aria labels with apostrophes) decode
   const escaped = `<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"The line&#39;s graph &amp; grid","lines":[{"slope":1}]}'>${svg}</div>`;
   assert.equal(lintHugo(escaped, 'content/test.md').errors.length, 0);
+
+  // A `>` inside the quoted spec does NOT end the tag. render-figure.mjs emits
+  // a raw one whenever a label names an inequality, and the old `[^>]*>` tail
+  // cut the tag mid-JSON — the lint rejecting its own generator's verbatim
+  // output, on a figure that is entirely sound.
+  const inequality = `<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"A parabola with k > 0 above the axis and k < 0 below it.","quadratics":[{"a":1}]}'>${svg}</div>`;
+  assert.deepEqual(lintHugo(inequality, 'content/test.md').errors, [],
+    'a > inside a quoted attribute value must not truncate the tag');
+  // …and the rule still fires through such a tag, rather than going quiet on it
+  const inequalitySpline = `<div class="ap-figure" data-spec='{"type":"graph","ariaLabel":"k > 0","smoothCurves":[{"through":[[0,0],[1,1]]}]}'>${svg}</div>`;
+  assert(
+    lintHugo(inequalitySpline, 'content/test.md').errors.some((e) => e.includes('freeform')),
+    'the quote-aware scanner still reads the spec it now reaches',
+  );
+});
+
+// An array row may not out-run its column spec. Hugo's KaTeX runs in strict
+// mode and fails the BUILD on this, while the section verifier renders with
+// `strict: 'ignore'` and does not — so eight of these passed a green
+// `npm test` and only surfaced at `npm run build`.
+test('an array row with more cells than its spec declares is an error', () => {
+  const lint = (src) => lintHugo(src, 'content/math/book/01-chapter/01-section.md').errors
+    .filter((e) => e.includes('declares'));
+
+  // The shape that shipped: three parallel "or" solution chains under {lrcl}.
+  const parallel = '$$\\begin{array}{lrcl}\nx^{2} &=& 0 & \\text{or} & x^{2}-1 &=& 0 & \\text{or} & x^{2}-2 &=& 0\n\\end{array}$$';
+  assert.equal(lint(parallel).length, 1, 'eleven cells under a four-column spec is an error');
+  assert.match(lint(parallel)[0], /11 cells/);
+  // Widening the spec to match is the fix, and clears it.
+  assert.deepEqual(
+    lint('$$\\begin{array}{rclcrclcrcl}\nx^{2} &=& 0 & \\text{or} & x^{2}-1 &=& 0 & \\text{or} & x^{2}-2 &=& 0\n\\end{array}$$'),
+    [],
+  );
+  // A chained equation and an explanation column written last are the other
+  // two shapes that shipped.
+  assert.equal(lint('$$\\begin{array}{lrcl}\nA &=& LW &=& L(80-2L)\n\\end{array}$$').length, 1);
+  assert.equal(lint('$$\\begin{array}{lrcl}\n& y &=& (x-4)^2 & \\text{Interchange.}\n\\end{array}$$').length, 1);
+
+  // Must NOT fire on sound content:
+  // the house-standard four-column step array,
+  assert.deepEqual(
+    lint('$$\\begin{array}{lrcl}\n\\text{Subtract.} & x &=& 5 \\\\[4pt]\n\\text{Check.} & y &=& 2\n\\end{array}$$'),
+    [],
+  );
+  // an `&` nested inside a group, which is not a cell break,
+  assert.deepEqual(lint('$$\\begin{array}{rl}\na & \\text{x {and} y}\n\\end{array}$$'), []);
+  // a ragged row with FEWER cells than columns, which KaTeX allows,
+  assert.deepEqual(
+    lint('$$\\begin{array}{lrcl}\n\\text{a} & x &=& 5 \\\\[4pt]\n\\text{b} & y\n\\end{array}$$'),
+    [],
+  );
+  // and a spec carrying rules and padding, whose non-column characters must
+  // not be counted as columns.
+  assert.deepEqual(lint('$$\\begin{array}{|r|l|}\na & b\n\\end{array}$$'), []);
 });
 
 // Digit grouping: four or more digits are grouped; four-digit years are not.

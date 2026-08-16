@@ -42,7 +42,7 @@
       "upstreamChapters": 12,
       "upstreamSections": 73,
       "localChapters": 12,
-      "mappedSections": 11
+      "mappedSections": 20
     }
   },
   "sections": [
@@ -1953,6 +1953,87 @@
       "moduleId": "m49327",
       "sourceTitle": "Fitting Linear Models to Data",
       "moduleSha256": "8765c38377604e4eec697cf583f5ed977fe1e14fe12813c9e82c9733decd9681"
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/01-complex-numbers.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "3.1",
+      "moduleId": "m49335",
+      "sourceTitle": "Complex Numbers",
+      "moduleSha256": "67eae9bd4d699a78e17b316b56f39ae77b0d59d5b8c0dc78bb1e604ce444c8d5"
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/02-quadratic-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "3.2",
+      "moduleId": "m49337",
+      "sourceTitle": "Quadratic Functions",
+      "moduleSha256": "a657ceac3d9b3d7992f420b1482ad1723fe32b411b11d278cd17662b8665fe25"
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/03-power-functions-and-polynomial-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "3.3",
+      "moduleId": "m49346",
+      "sourceTitle": "Power Functions and Polynomial Functions",
+      "moduleSha256": "d5363285e67a8613fc46b2f071d7fed286d64f664b3c313df121da84e4fa1064"
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "3.4",
+      "moduleId": "m49347",
+      "sourceTitle": "Graphs of Polynomial Functions",
+      "moduleSha256": "5a0ac9ac9cca3251f449449a70a530b4dd532614cd2fba2a33c66cfaff47bf3f"
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/05-dividing-polynomials.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "3.5",
+      "moduleId": "m49348",
+      "sourceTitle": "Dividing Polynomials",
+      "moduleSha256": "7123b63ff87836ed9de9fdc289a82da865d293ccdf75aa1a86287526372f71c8"
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/06-zeros-of-polynomial-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "3.6",
+      "moduleId": "m49349",
+      "sourceTitle": "Zeros of Polynomial Functions",
+      "moduleSha256": "ea2a1a64926ebd3159c3fa1130b7e1202a8d563325c034b50b4d960523626b2e"
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/07-rational-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "3.7",
+      "moduleId": "m49351",
+      "sourceTitle": "Rational Functions",
+      "moduleSha256": "bfa56df96090dc05de9f41b2a7df98f6c36e319eb4ae2b98e4fe3e1dfa7bea90"
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/08-inverses-and-radical-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "3.8",
+      "moduleId": "m49352",
+      "sourceTitle": "Inverses and Radical Functions",
+      "moduleSha256": "58e5395654c50d7c5cb4cbebe07caef785662678a42a7f6ecfbe43b10f33d76b"
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "3.9",
+      "moduleId": "m49353",
+      "sourceTitle": "Modeling Using Variation",
+      "moduleSha256": "ab1cbc8de5d6366e19d1511ed6d4a7dc5da8248360d92a6d32614cd3df24ee64"
     }
   ]
 }
