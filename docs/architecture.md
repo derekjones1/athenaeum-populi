@@ -55,9 +55,12 @@ that the generated bundle loads and that representative content is indexed.
 `npm test` is the repository-wide checked-source gate. It runs unit tests,
 validates the complete content hierarchy and frontmatter, verifies every
 authored page through the real answer grader and KaTeX, checks shortcode and
-graph configuration, and enforces the current documentation and authoring
-rules. It also verifies the committed OpenStax map's integrity offline; it
-does not fetch upstream or run `source:check` or `source:history`.
+graph configuration, re-derives every mechanically checkable fill-in answer
+from its own printed question (`verify:answers`), asserts that every exercise
+carries a current answer-ledger record (`verify:ledger`), and enforces the
+current documentation and authoring rules. It also verifies the committed
+OpenStax map's integrity offline; it does not fetch upstream or run
+`source:check` or `source:history`.
 
 `npm run build` creates a clean Hugo production build and the Pagefind index.
 `npm run check:build` then verifies routes, internal links, search coverage,
@@ -72,8 +75,10 @@ to test a deployment. `npm run test:e2e` drives the grader end-to-end through
 a real MathLive field (`tests/browser-check.spec.mjs`, light scheme only —
 its checks are colour-scheme-independent), and `npm run test:browser` runs
 every Playwright suite in a single server startup. `npm run ci` combines the
-source, built-artifact, and browser gates; the GitHub workflow runs exactly
-that script, so the pipeline is encoded once.
+source, replay, built-artifact, and browser gates — the replay gate
+(`npm run verify:replay`) re-runs every printed question span through the
+grader so no exercise is passable by retyping its own prompt; the GitHub
+workflow runs exactly that script, so the pipeline is encoded once.
 
 ## Deployment
 

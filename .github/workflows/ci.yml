@@ -61,9 +61,9 @@ jobs:
       # covering accessibility AND the grader end-to-end suite (regressions
       # that only surface through the real MathLive field). Encoding the
       # sequence once means a gate added to `npm run ci` can never be missed
-      # here. Playwright drives the runner's preinstalled Chrome
-      # (channel: 'chrome' in playwright.config.mjs), so no browser install
-      # step is needed.
+      # here. Playwright launches the runner's preinstalled Chrome through
+      # tools/chrome-stdio-shim.sh (the executablePath in
+      # playwright.config.mjs), so no browser install step is needed.
       - run: npm run ci
 
       # Hand the exact verified `public/` to the deploy job. Deploying a

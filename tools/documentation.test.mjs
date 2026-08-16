@@ -113,6 +113,20 @@ test('the authoring playbook documents the authoring rules', () => {
   assert.match(authoring, /zero errors, and errors are all there is/);
   assert.match(authoring, /\*\*Never add a warning level back\.\*\*/);
   assert.match(authoring, /A rule that fires on sound content is a bug in the rule/);
+  // Authoring an exercise creates a ledger obligation — verify:ledger runs
+  // inside `npm test` — so the step-by-step verify workflow must carry the
+  // recording step, or the next author meets a red gate with no documented
+  // fix.
+  assert.match(authoring, /ledger:list -- --unverified/);
+  assert.match(authoring, /ledger:merge/);
+});
+
+test('AGENTS.md documents the ledger result-file shape the merge reads', () => {
+  // The merge's input format lives in tools/answer-ledger.mjs; an agent told
+  // to "record the verdict" must not have to reverse-engineer the tool.
+  const agents = read('AGENTS.md');
+  assert.match(agents, /\{"results": \[\{"hash"/);
+  assert.match(agents, /fail the merge with nothing written/);
 });
 
 test('the knowledge-check playbook documents the overlap and identity rules', () => {
@@ -120,15 +134,20 @@ test('the knowledge-check playbook documents the overlap and identity rules', ()
   assert.match(knowledgeChecks, /must not overlap/);
   assert.match(knowledgeChecks, /filename, title,\s+`source_chapters`/);
   assert.match(knowledgeChecks, /exercise, problem, and solution element IDs/);
+  // Knowledge-check questions are ledger-covered exercises like any other,
+  // and this playbook overloads the word "ledger" for its source-audit notes
+  // — so the verify list must name the answer ledger explicitly.
+  assert.match(knowledgeChecks, /\*\*answer ledger\*\*/);
 });
 
 test('the OpenStax workflow doc documents every pinned bundle', () => {
   const openStaxWorkflow = read('docs/openstax-source-workflow.md');
   assert.match(openStaxWorkflow, /report-only connection/);
-  // 201 is a frozen historical record — the "Initial reconciliation result"
-  // captured when the three completed algebra books were the whole map. It is
-  // deliberately NOT the live 212 asserted below; do not "fix" it to match.
-  assert.match(openStaxWorkflow, /all 201 numbered sections map deterministically/);
+  // The frozen "Initial reconciliation result" was condensed into git history
+  // on 2026-08-15; what must survive is the live procedure — the exact
+  // commands that regenerate the checked-in audit snapshots.
+  assert.match(openStaxWorkflow, /--output docs\/openstax-existing-math-audit\.md/);
+  assert.match(openStaxWorkflow, /--output docs\/openstax-upstream-history-audit\.md/);
   assert.match(openStaxWorkflow, /does not by itself\s+prove every local equation/);
   assert.match(openStaxWorkflow, /Precalculus 2e is pinned and scaffolded, with authoring underway/);
   assert.match(openStaxWorkflow, /moduleScope: "mapped-collections"/);
@@ -486,6 +505,20 @@ test('Chrome launches only through the stdio shim, and the shim detaches both st
   // spawn EACCES that reads nothing like "chmod the shim"; catch it here.
   const mode = statSync(new URL('tools/chrome-stdio-shim.sh', repositoryRoot)).mode;
   assert.ok(mode & 0o111, 'tools/chrome-stdio-shim.sh must be executable');
+  // The CI workflow's comment once described a `channel: 'chrome'` launch the
+  // config no longer used — a reader porting that claim would detach the shim
+  // and bring the post-suite hang back. Pin the comment to the mechanism.
+  const ciWorkflow = read('.github/workflows/ci.yml');
+  assert.match(
+    ciWorkflow,
+    /chrome-stdio-shim\.sh/,
+    '.github/workflows/ci.yml should describe the shim launch',
+  );
+  assert.doesNotMatch(
+    ciWorkflow,
+    /channel: 'chrome'/,
+    "ci.yml must not claim a channel: 'chrome' launch — Chrome launches through the shim's executablePath",
+  );
 });
 
 test('the README no longer instructs a browser install', () => {

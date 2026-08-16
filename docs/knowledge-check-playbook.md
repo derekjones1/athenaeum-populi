@@ -79,14 +79,18 @@ document the discrepancy; do not silently change one to fit another.
    ledger. Every section in the range must be represented.
 2. Re-read each selected question and answer on the rendered PDF pages, then
    independently solve it. Self-grading proves parseability, not correctness.
-3. Run
+3. Record each independently derived verdict in the **answer ledger** (not the
+   source ledger above — see AGENTS.md §The answer ledger): every new question
+   needs a record, and `npm test` fails at `verify:ledger` until it exists.
+   The mechanics are step 3 of the authoring playbook's §4.
+4. Run
    `npm run verify-section -- content/.../knowledge-check-XX-YY.md`; it
    additionally fails on any `hint=`.
-4. Run `npm test`; it validates the complete `content/` tree, every Knowledge
+5. Run `npm test`; it validates the complete `content/` tree, every Knowledge
    Check range and heading, real-grader parseability, and all authoring lints.
    For a new cumulative page, also run `npm run build && npm run check:build`.
-5. In the browser, confirm sidebar placement, chapter/section grouping, no hint
+6. In the browser, confirm sidebar placement, chapter/section grouping, no hint
    controls, no print-source labels, correctly rendered math, and working right
    and wrong submissions from every chapter.
-6. Include the full source ledger, discrepancies, visual pages checked, and
+7. Include the full source ledger, discrepancies, visual pages checked, and
    uncommitted files in the handoff.

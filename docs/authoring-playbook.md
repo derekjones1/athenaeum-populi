@@ -12,7 +12,8 @@ not valid authoring syntax.
 ## Scope
 
 This playbook currently governs the OpenStax mathematics books (Prealgebra 2e,
-Elementary Algebra 2e, Intermediate Algebra 2e). Its structural, source-first,
+Elementary Algebra 2e, Intermediate Algebra 2e, and the in-progress
+Precalculus 2e). Its structural, source-first,
 component, and verification rules are written to generalize to future
 subjects. Its mathematical-notation rules and the prohibition on file-backed
 instructional images are math-specific decisions: an image-dependent subject
@@ -615,25 +616,36 @@ From the repository root:
 2. Independently solve every touched interactive question and compare both the
    prompt and answer with the source Answer Key. Do not infer correctness from
    self-grading.
-3. `npm run verify-section -- content/<subject>/<book>/<ch>/<sec>.md`
+3. Record those derivations in the **answer ledger** — authoring or editing an
+   exercise is what creates the obligation, and `npm test` fails at
+   `verify:ledger` until the record exists.
+   `npm run ledger:list -- --unverified` prints every unrecorded exercise
+   with its hash; write one or more result files
+   (`{"results": [{"hash": "…", "verdict": "ok" | "defect" | "unverifiable",
+   "note": "…"}]}`) from the step-2 derivations — never from the authored
+   key — and fold them in with `npm run ledger:merge <dir>`. After editing
+   existing exercises, `node tools/answer-ledger.mjs prune content` drops the
+   records stranded by their old text.
+4. `npm run verify-section -- content/<subject>/<book>/<ch>/<sec>.md`
    — lints, renders every math run, and confirms that each fill-in answer is
    parseable by the real grader. Fix every ✗. Warnings on a page you authored
    or revised are defects, not backlog: clear them, or say in the handoff
    which pre-existing ones you left and why (§5).
-4. Run `npm test`. It includes whole-repository structure validation,
+5. Run `npm test`. It includes whole-repository structure validation,
    per-page real-grader verification, the corpus-wide answer cross-check
    (`npm run verify:answers` — every mechanically checkable answer is
-   re-derived numerically from its own question), unit tests, repo-wide
+   re-derived numerically from its own question), the answer-ledger gate,
+   unit tests, repo-wide
    authoring lints, documentation consistency checks, and KaTeX parsing.
    `npm run validate` remains available as a focused structure-only command.
    A cross-check failure means the answer disagrees with the printed
    question: solve it independently before touching either side, and if the
    checker is wrong about sound content, narrow the checker (§5 rules).
-5. For chapter/bulk work, run `npm run build` and `npm run check:build` (or
+6. For chapter/bulk work, run `npm run build` and `npm run check:build` (or
    `npm run ci`). The production audit checks, among other things, that math
    pages load the pinned KaTeX CSS and that its hidden accessibility layer
    cannot appear as duplicate visible math.
-6. Open every changed page with `npm run serve`. Confirm real components
+7. Open every changed page with `npm run serve`. Confirm real components
    render and grade, prose/math spacing is visible, formulas appear once, and
    figures match the PDF. Also open a changed chapter landing page.
    `node tools/screenshot-page.mjs <route>` captures light/dark full-page
@@ -641,7 +653,7 @@ From the repository root:
    or unlabelled SVGs — use the crops for the figure-vs-PDF comparison, and
    inspect curve tips and corners at zoom, where spline and stroke defects
    hide.
-7. Run `git diff --check` and report the changed/untracked files plus the
+8. Run `git diff --check` and report the changed/untracked files plus the
    source ledger and pages visually checked. Do not commit unless asked.
 
 ## 5. Working rules
@@ -655,14 +667,13 @@ no non-blocking rule left in the repository and no category of
 known-defective content to grandfather.
 
 The Practice retrofit that used to live here is finished. All 212 mapped
-sections carry the block — prealgebra 60/60, elementary-algebra 71/71,
-intermediate-algebra 70/70, and the eleven authored Precalculus 2e sections
-(ch. 1 Functions 7, ch. 2 Linear Functions 4), which landed on August 9,
-2026. The lint rule was promoted from a warning to an error the same day, and
-the published backlog count was deleted along with the `--check-docs` flag
-and the tooling that maintained it. Precalculus 2e's ten scaffolded chapters
-will each need their blocks as their section pages land — but as an error on
-the page being written, not as a worklist.
+sections carry the block (the documentation test pins that count to the live
+map, so authoring a new mapped section means bumping it here). The final
+block landed on August 9, 2026; the lint rule was promoted from a warning to
+an error the same day, and the published backlog count was deleted along with
+the `--check-docs` flag and the tooling that maintained it. Precalculus 2e's
+remaining scaffolded chapters will each need their blocks as their section
+pages land — but as an error on the page being written, not as a worklist.
 
 Everything else that used to live here has been fixed rather than documented:
 numerically coded categorical answers are `multiplechoice`, four-digit numbers
@@ -682,16 +693,18 @@ The working rules that remain:
 - **A rule that fires on sound content is a bug in the rule.** Narrow it, with
   a test for the case it was wrong about — do not add an exemption for the
   page.
-- **End the session with `npm run baseline:update`.** It runs both gates,
-  recounts the `--min-verified` floor and the `--min-replayed` floor, rewrites
-  each in place in `package.json`, and refuses to lower either without an
-  explicit flag. Committing its rewrite with the content is what keeps
-  `npm run ci` green without a hand-edited count. The two ratchet differently:
+- **End the session with `npm run baseline:update`.** It runs the three
+  counting gates, recounts the `--min-verified`, `--min-replayed`, and
+  `--min-exercises` floors, rewrites each in place in `package.json`, and
+  refuses to lower any of them without an explicit flag. Committing its
+  rewrite with the content is what keeps `npm run ci` green without a
+  hand-edited count. The baselines ratchet differently:
   `--min-verified` is an exact match (a move either way is news about what the
-  cross-check can read), `--min-replayed` is a floor (the span count rises
-  with ordinary authoring; only a drop means the replay gate went quiet).
+  cross-check can read); `--min-replayed` and `--min-exercises` are floors
+  (both counts rise with ordinary authoring; only a drop means a gate went
+  quiet).
 
-## 6. Trivially satisfiable prompts: the remaining classes
+## 6. Trivially satisfiable prompts: the closed classes
 
 A fill-in whose answer is value-equal to an expression printed in its own
 question is passable by retyping the prompt. `answerForm` is the fix — it
@@ -701,315 +714,174 @@ land once the content it governs is already clean, so each verb's rule ships
 with that verb's retrofit.
 
 Measured across the corpus, 1,761 fill-ins were passable this way — the sum of
-the per-class counts below, which is the only figure that can still be checked
-against a record. The classes were measured one at a time as each was
-separated out, so read the table as the account and not any single headline
-number. Every class is now closed — token, retrofit, and lint rule each:
+the per-class counts below, measured one at a time as each class was separated
+out. Every class is closed — token, retrofit, and lint rule each — and the
+blow-by-blow record of how each closed is in this file's git history:
 
-| Class | Count | Needs | Status |
-|---|---|---|---|
-| Factor | 274 | `factored` | **done** — token, retrofit, and lint rule all landed |
-| Numeric arithmetic | 566 | `decimal` / `fraction` / `lowest-terms` / `single-power` | **done** — same three parts |
-| Multiply, Divide (algebraic) | 231 | `expanded`, `single-term`, `single-fraction` | **done** — same three parts |
-| Simplify, Add, Subtract (algebraic) | 401 | `no-like-terms`, `polynomial`, `distributed`, `single-fraction` | **done** |
-| Radicals | 207 | `simplified-radical` | **done** — and the numeral-radical/series gap in its lint scan is closed too (see below) |
-| Reducing a rational expression | 47 | `reduced-fraction` | **done** — token, retrofit, and lint rule all landed |
-| "Write it in standard form" | 26 | `vertex-form`, `conic-standard-form`, `circle-standard-form` | **done** — token, retrofit, and lint verb (August 9, 2026) |
-| Logarithm conversion / expansion | 3 | `exponential-form`, `expanded-logarithms` | **done** — same three parts |
-| Composition and page-context combinations | 6 | `distributed`, `no-like-terms`, `expanded` | **done** — `(f\circ g)(x)` builds a substituted candidate, definitions printed in page prose now reach the extractor, and `(fg)(x)` juxtaposition counts as the product ask |
+| Class | Count | Tokens |
+|---|---|---|
+| Factor | 274 | `factored` |
+| Numeric arithmetic | 566 | `decimal` / `fraction` / `lowest-terms` / `single-power` |
+| Multiply, Divide (algebraic) | 231 | `expanded`, `single-term`, `single-fraction` |
+| Simplify, Add, Subtract (algebraic) | 401 | `no-like-terms`, `polynomial`, `distributed`, `single-fraction` |
+| Radicals | 207 | `simplified-radical` |
+| Reducing a rational expression | 47 | `reduced-fraction` |
+| "Write it in standard form" | 26 | `vertex-form`, `conic-standard-form`, `circle-standard-form` |
+| Logarithm conversion / expansion | 3 | `exponential-form`, `expanded-logarithms` |
+| Composition and page-context combinations | 6 | `distributed`, `no-like-terms`, `expanded` |
 
-Two things the numeric pass established that are worth carrying forward. The
-measured 751 was 566 once the radicals and the incidental collisions were
-separated out — a word problem whose answer happens to equal a printed quantity
-("Jazmine ran 8 miles… find her running speed" → `8`) is sound content, and the
-rule must never fire on it. And a token that closes a hole is not automatically
-the right token: `lowest-terms` rejects a printed nested power, but its feedback
-would tell the learner to reduce a fraction that isn't there. `single-power`
-exists because the message has to match the ask, not just the shape.
+The rules the programme was built on. A new token, verb, or extractor has to
+respect every one of them:
 
-Three rules the whole programme was built on. They are what a new token has to
-respect.
+- **Choose the evidence by what the engine does to the distinction.** If the
+  CAS can *evaluate* the difference away, the predicate must read the LaTeX;
+  otherwise it should read the parse, which already knows about `\left(`,
+  juxtaposition and unary signs. `(x+2)(x+4)` survives as a product, so
+  `factored` reads the parse. `\frac{40}{88}` is evaluated to `\tfrac{5}{11}`,
+  so `lowest-terms` reads the LaTeX. Several tokens need both: `single-term`
+  takes the term structure from the parse and the written `\cdot` from the
+  LaTeX, because `\tfrac{3}{7}\cdot 21n` canonicalizes to its own answer.
+- **Gate each candidate path behind its own verb.** The rule in
+  `tools/lints.mjs` unions per-verb extractors deliberately. Widening a shared
+  extractor instead would put a thousand sound-but-untagged exercises in scope
+  at once, and a rule that fires on sound content cannot land in a lint whose
+  every rule blocks.
+- **The feedback has to name the step the exercise actually asks for.** A
+  token that closes the hole is not automatically the right token:
+  `lowest-terms` rejects a printed nested power, but would tell the learner to
+  reduce a fraction that is not there — `single-power` exists for that reason
+  alone. Check the sentence `describeAnswerForm` will produce before settling
+  on a token.
+- **A token whose shape the wrong answer already satisfies is not a check.**
+  "Find and simplify $f(g(x))$" answers to a sum, and the unexpanded
+  `2(3x+5)^2+1` already is one, so it passed the `expanded` it declared. The
+  ask is "expand the square", which `distributed` names, and
+  `expanded distributed` composes to exactly the requirement. Replay the built
+  candidate through the declared form before trusting a token.
+- **A form check FAILS OPEN.** A response half the predicate cannot read (a
+  decimal, a radical, an absolute value where it expects polynomials) falls
+  back to value grading — a form check must never reject a correct answer it
+  cannot read.
+- **An incidental value collision is not a defect.** A word problem whose
+  answer happens to equal a printed quantity ("Jazmine ran 8 miles… find her
+  running speed" → `8`) is sound content, and so is a built candidate that is
+  *structurally* the authored answer (where the substitution IS the answer,
+  writing it is the correct response). Structural, never value:
+  `2(3x+5)^2+1` and `18x^2+60x+51` are equal in value and different in shape,
+  which is the whole hazard.
 
-**Choose the evidence by what the engine does to the distinction.** If the CAS
-can *evaluate* the difference away, the predicate must read the LaTeX;
-otherwise it should read the parse, which already knows about `\left(`,
-juxtaposition and unary signs. `(x+2)(x+4)` survives as a product, so `factored`
-reads the parse. `\frac{40}{88}` is evaluated to `\tfrac{5}{11}`, so
-`lowest-terms` reads the LaTeX. Several tokens need both: `single-term` takes
-the term structure from the parse and the written `\cdot` from the LaTeX,
-because `\tfrac{3}{7}\cdot 21n` canonicalizes to its own answer.
+### Shapes beyond a printed span
 
-**Gate each candidate path behind its own verb.** The rule in `tools/lints.mjs`
-unions per-verb extractors deliberately. Widening a shared extractor instead
-would put a thousand sound-but-untagged exercises in scope at once, and a rule
-that fires on sound content cannot land in a lint whose every rule blocks.
+Most extractors ask one question — "is something printed here also the
+answer?". Two closed classes need more than that, and theirs are the
+extractors an author will meet most in function-heavy material:
 
-**A token that closes the hole is not automatically the right token.** The
-feedback has to name the step the exercise actually asks for. `lowest-terms`
-rejects a printed nested power, but would tell the learner to reduce a fraction
-that is not there — `single-power` exists for that reason alone. Check the
-sentence `describeAnswerForm` will produce before settling on a token.
-
-### The last class closed: `reduced-fraction`
-
-Reducing a rational expression — "Simplify $\frac{x^2-x-2}{x^2-3x+2}$" to
-$\frac{x+1}{x-1}$ — was the last class open. Prompt and answer are *both* a
-single fraction; what separates them is cancelling a common polynomial factor,
-which is a gcd computation rather than a shape, and the Compute Engine's
-`simplify()` does not reliably perform it. The `reduced-fraction` predicate
-computes it exactly: it reads the WRITTEN halves (the engine folds numeral
-fractions before any predicate can see them), converts each to an
-integer-coefficient polynomial (BigInt), and requires their multivariate gcd —
-primitive-PRS Euclidean, so bivariate factors and opposite-sign binomials like
-$2-x$ vs $x-2$ both count — to be the constant $1$. A half the reader cannot
-digest (a decimal, a radical, an absolute value) FAILS OPEN to value grading:
-a form check must never reject a correct answer it cannot read. The shape gate
-is deliberately stricter than `single-fraction` — exactly one written
-fraction, with no fraction bar (`\frac`, `\div`, or `/`) inside either half —
-so a complex-fraction prompt and a `\tfrac{a}{b}^5` both fail the form and the
-token can silence the lint on them.
-
-The lint's former both-sides-single-fraction exemption is deleted, and the 47
-are retrofitted: 42 tagged `reduced-fraction`, the rest resolved individually
-(a quotient-to-a-power item became a multiple choice among fraction forms
-because no token's feedback names that ask). One operational note survives the
-closure: the re-expression rule checks the cheap declared form *before*
-grading a candidate span through the engine, because grading is
-value-then-form (a span the form rejects can never grade `correct`) and the
-equivalence ladder's `simplify()` effectively never returns on a conjugate
-radical quotient.
-
-That non-termination is now also closed at runtime, where a learner reaches
-it synchronously on the main thread by pasting a "rationalize a two-term
-denominator" prompt (§9.5) back as the response. Measured against the pinned
-0.58.0 the engine has two distinct hang sites, and `ce.timeLimit` interrupts
-neither: `isEqual()` never returns once either operand keeps a
-radical-denominator quotient ($\tfrac{\sqrt{2}}{\sqrt{x}-\sqrt{3}}$ — against
-*any* comparand), and `simplify()` never returns on some differences of
-variable-radical expressions with no radical denominator at all — the case
-this note originally recorded. `equivalent()` in `lib/check-answer.mjs` now
-routes both classes to bounded numeric sampling instead of the engine (see
-the guard banner there), so a pasted conjugate prompt grades `form` — the
-message the `answerForm` was built to produce — rather than freezing the
-page. Sampling also decides where the engine merely false-negatived, which
-surfaced two §6 retrofits the old false negatives had been masking: the
-higher-roots two-term sum (now tagged `simplified-radical`, with the
-like-radicals key refined to the source's own convention — same radicand
-stays separate when the coefficients are unlike terms) and the
-knowledge-check radical quotient whose answer keeps $\sqrt{y}$ under the
-bar (now multiple choice, the resolution recorded above for the
-quotient-to-a-power item). The lint's form-first ordering above remains
-correct as the cheaper check.
-
-### A seventh shape: the operation written but not carried out
-
-Every class above is a printed *span* that equals the answer, and every
-extractor asks the same question — "is something printed here also the
-answer?". Intermediate Algebra ch. 5 authoring turned up a shape that question
-cannot see: the hazard is a **combination** of two printed spans.
-
-"For $f(x)=2x^2-4x+1$ and $g(x)=5x^2+8x+3$, find $(f+g)(x)$" prints neither
-$7x^2+4x+4$ nor anything value-equal to it — and yet
-`(2x^2-4x+1)+(5x^2+8x+3)`, the operation written but not performed, grades
-`correct`. The learner types back what the question already told them and
-never combines a like term. Three phrasings carry it, and each now has its own
-extractor in `tools/lints.mjs` that **builds** the candidate rather than
-finding it:
+**The operation written but not carried out.** "For $f(x)=2x^2-4x+1$ and
+$g(x)=5x^2+8x+3$, find $(f+g)(x)$" prints neither $7x^2+4x+4$ nor anything
+value-equal to it — and yet `(2x^2-4x+1)+(5x^2+8x+3)`, the operation written
+but not performed, grades `correct`: the learner types back what the question
+already told them and never combines a like term. The extractors in
+`tools/lints.mjs` **build** that candidate rather than finding it:
 
 | Phrasing | Candidate built | Typical token |
 |---|---|---|
-| `find $(f\pm g)(x)$`, `$(f\cdot g)(x)$`, `$\left(\tfrac{f}{g}\right)(x)$` | the two definitions joined by that operation | `no-like-terms`, `expanded` |
+| `find $(f\pm g)(x)$`, `$(f\cdot g)(x)$`, `$(fg)(x)$`, `$\left(\tfrac{f}{g}\right)(x)$` | the two definitions joined by that operation | `no-like-terms`, `expanded` |
+| `find $f(g(x))$` or `$(f\circ g)(x)$` | the outer definition with the inner substituted for `x` | `expanded distributed`, `no-like-terms` |
 | "Subtract $X$ from $Y$" | $(Y)-(X)$, in the order the wording fixes | `no-like-terms` |
 | "…find the quotient when $A$ is divided by $B$" | $\tfrac{A}{B}$ | `expanded` |
 
-Two boundaries are load-bearing, and both are asserted in
-`tools/lints.test.mjs`. An ask evaluated at a *number* — `(f+g)(2)`, answer
-$40$ — builds nothing, because no restatement of the definitions equals a
-number. And "find the **remainder** when $A$ is divided by $B$" names no
-quotient, so it stays out of scope; only the word "quotient" opens that path.
+Definitions printed in page prose ("For the next three questions, use
+$f(x)=6x+1$…") reach the extractor as fallbacks — safe by construction, since
+a wrongly paired definition builds a candidate that never grades `correct`.
+The boundaries are load-bearing, and asserted in `tools/lints.test.mjs`: an
+ask evaluated at a *number* (`(f+g)(2)`, `f(g(2))`) builds nothing, because no
+restatement of the definitions equals a number; "find the **remainder** when
+$A$ is divided by $B$" names no quotient, so only the word "quotient" opens
+that path; and a division leaving a nonzero remainder needs no exception —
+$\tfrac{A}{B}$ simply is not equal to the quotient, so the grader rejects it
+and the rule falls silent on its own arithmetic.
 
-A division leaving a nonzero remainder needs no exception: $\tfrac{A}{B}$
-simply is not equal to the quotient, so the grader rejects it and the rule
-falls silent on its own arithmetic. That is the rule staying honest about the
-exact-division case rather than special-casing around it.
+**The ask that NAMES a form.** "Write the point-slope form of an equation of a
+line that passes through $(1,5)$ and $(4,11)$" prints nothing to retype — the
+hazard is the learner's own correct *value* in the shape the ask exists to
+rule out (the engine grades the distributed `y-5=2x-2` and the scaled
+`2y-10=4(x-1)` equal to the authored `y-5=2(x-1)`). The lint verb is a table,
+`NAMED_FORM_ASKS`, mapping each named-form phrase to the token(s) that grade
+it — ANY of them, because one phrase can name different shapes: "exponential
+form" is the log conversion (`exponential-form`), the repeated multiplication
+(`single-power`), and the prime factorization (`prime-product`). The ask
+patterns demand a producing verb (write/rewrite/enter/…) or an "equation … in
+<name> form" clause, so a prompt that merely *mentions* the form is not
+conscripted; list answers are out of scope because the grader's form check
+never runs on them. A companion rule requires `lowest-terms` when a
+"simplest/simplified form" ask has a numeral-fraction answer.
 
-The retrofit that shipped with the rule was 17 exercises in
-intermediate-algebra ch. 5 and 6 more in the prealgebra and elementary-algebra
-"Add and Subtract Polynomials" sections — all six of those the "Subtract $X$
-from $Y$" wording, which is the one phrasing of the three that had spread
-beyond ch. 5.
+Two wording rules are the author's share of that class:
 
-### The eighth shape closed: "write it in standard form"
+- A two-point point-slope ask accepts the *other* point's equally-correct
+  equation by value, so the prompt must pin the point ("using $(1,5)$ as
+  $(x_1,y_1)$") — a wording rule, not a token.
+- Slope-intercept happens to grade unequal against a point-slope answer
+  today; that is an engine accident the predicates do not depend on, which is
+  why the mirror `slope-intercept-form` token exists at all.
 
-Intermediate Algebra ch. 10–12 authoring (August 8, 2026) turned up the class;
-it closed the next day the way every class closes — token, retrofit, and lint
-verb together. "Write $y=-x^2+2x-4$ in standard form" answers $y=-(x-1)^2-3$,
-and "Write $25x^2+9y^2-100x-54y-44=0$ in standard form" answers
-$\tfrac{(x-2)^2}{9}+\tfrac{(y-3)^2}{25}=1$ — both value-equal to the printed
-subject by construction, because completing the square changes the shape and
-not the value, so retyping the prompt graded `correct`. No pre-existing token
-could separate them without also rejecting the correct answer.
+### Standing notes from the closures
 
-Three tokens carry the class, because "standard form" names three different
-target shapes and the feedback has to name the right one: `vertex-form`
-($a(x-h)^2+k$ in either orientation, with an optional written `y=` / `x=` /
-`f(x)=` label stripped off the LaTeX — the parse would read `f(x)=…` as an
-equation on a function application), `conic-standard-form` (fractions of
-coefficient-1 squared terms against exactly $1$; a numerator that keeps its
-general-form coefficient, $\tfrac{9x^2}{144}$, fails because that division was
-the ask), and `circle-standard-form` ($(x-h)^2+(y-k)^2=r^2$). The lint verb
-matches "standard form" / "vertex form" / the spelled-out
-"$f(x)=a(x-h)^2+k$ form" and feeds a new extractor over printed EQUATION
-spans — the one span shape every other extractor deliberately excludes — and a
-definition span `f(x)=RHS` also contributes its bare right-hand side, because
-the learner answers without the label and the labelled span itself does not
-grade equal to anything (the engine reads `f(x)` as an application, not a
-variable). The verb is gated but loose; the equation-span extractor is what
-keeps the prealgebra "write in standard form" number-words prompt and the
-augmented-matrix ask out of scope, since neither prints a bare two-sided
-equation.
+Facts that outlived the programme — each explains a lint error or a grader
+behavior an author will still meet:
 
-The retrofit was 26 tagged exercises: the 19 in-page Try Its recorded when the
-class was found (4 in `11-conics/02-parabolas.md`, 4 in `03-ellipses.md`, 4 in
-`04-hyperbolas.md`, 7 in §9.7 — where the hazard span is the *right-hand side*
-of the printed `f(x)=…` definition, which a whole-span replay misses), the
-knowledge-check circle/vertex/hyperbola items, and the §9.7 vertex-from-a-point
-items whose expanded forms would otherwise pass. The 11.1 circle asks and the
-arch applications are tagged too: not retypeable, but a value-equal
-non-standard equation (`x^2+y^2-121=0`, a doubled ellipse equation) passed
-before the tags. The four ch. 11 Practice prompts that had been authored as
-`multiplechoice` while the class was open remain multiple choice — sound
-content, converted deliberately, recorded here so nobody "fixes" them back
-without noticing they predate the token.
-
-Closing the class surfaced a **worse** defect the self-grading gates cannot
-see: five answers were authored as slash quotients with a juxtaposed factor —
-`-1/20(x-20)^2+20` (four arch applications) and `y=1/2x-5/2`
-(knowledge-check 01–06) — which the engine reads as $\tfrac{-1}{20(x-20)^2}+20$
-and $y=\tfrac{1}{2x}-\tfrac52$. The authored value was not the intended one,
-and a learner typing the intended answer was marked **wrong** (MathLive turns
-a typed `/` into a real `\frac`, so the learner cannot even reproduce the
-authored string). Both sides of the self-check mis-parse identically, which is
-why no existing gate fired. The answers are rewritten with explicit `\frac`
-and a lint rule now rejects any answer matching a slash quotient followed by a
-juxtaposed letter, parenthesis, or macro.
-
-The same sweep closed the last two blind spots in the re-expression scan
-(playbook rule: fold every hole the sweep finds into the rule, not just the
-instance). `printedPolynomialSubjects` now reads a `\sum` span — the sigma's
-bounds are structure, and its `=` had been read as a relation, hiding "Find
-the sum $\sum_{i=1}^{30}(6i-4)$" → `2670` — and counts a numeral radical as an
-algebraic subject, which put every "Simplify: $\sqrt{\smash[b]{\cdot}}$"
-numeral prompt in scope for the first time. That forced 30 retrofits
-(`decimal` for integer answers, `fraction lowest-terms` for radical-free
-fractions, `simplified-radical` for the rest) and three tightenings of
-`simplified-radical` itself, which had been too weak to reject
-$\sqrt{64+225}$, $\sqrt{\tfrac{25}{16}}$, $\sqrt{-8}$, $\sqrt{1}$, or
-$\sqrt{3}\cdot\sqrt{6}$: numeral radicands reject unevaluated arithmetic and
-fractions, the perfect-power scan reads through the sign, and a same-index
-product of numeral radicals fails (numeral only — the corpus's own worked
-answers keep $\sqrt{10}\sqrt{y}$ as a product). The composition asks closed
-the same day: `(f\circ g)(x)` builds the outer definition with the inner one
-substituted for `x`, definitions printed in page prose ("For the next three
-questions, use $f(x)=6x+1$…") now reach the extractor as fallbacks — safe by
-construction, since a wrongly paired definition builds a candidate that simply
-never grades `correct` — and `(fg)(x)` juxtaposition counts as the product
-ask.
-
-To re-run the audit that found all of this: replay every math span printed in
-a question back through `checkAnswer` against that exercise's own answer, one
-file per process — the engine carries state across calls and will otherwise
-report false positives — and for any span of the shape `label = RHS`, replay
-the bare RHS too.
-
-### The nested-application phrasing, and a token that was too weak
-
-Precalculus 2e ch. 1–2 authoring (August 9, 2026) found two more holes in the
-seventh shape, both in the same audit and both closed with the content that
-exposed them.
-
-The first is a **phrasing** the extractor could not read. `(f\circ g)(x)` was
-in scope; `f(g(x))` — the nesting written out, which precalculus uses at least
-as often — was not, so "Given $f(x)=2x^2+1$ and $g(x)=3x+5$, find and simplify
-$f(g(x))$" was passable by typing `2(3x+5)^2+1`. `FUNCTION_NESTED_ASK_RE` now
-feeds the same candidate builder, under the same guard: the inner argument
-must be exactly `x`, because `f(g(2))` answers with a number no restatement
-equals.
-
-The second is a **token that was too weak for its ask**. `expanded` requires a
-top-level sum — and `2(3x+5)^2+1` already is one, so it passed the form it
-declared. The ask is "expand the square", which is what `distributed` names,
-and `expanded distributed` composes to exactly the requirement. Two composition
-exercises and one difference quotient were retrofitted (`no-like-terms
-polynomial` for the quotient, since a difference quotient's hazard is the
-fraction bar rather than a like term). The lesson generalizes the §6 rule
-about naming the right step: a token whose *shape* the wrong answer already
-satisfies is not a check, and only replaying the built candidate through the
-declared form catches it.
-
-Closing the phrasing surfaced its own over-fire, and narrowing it is the third
-part. "Given $f(x)=\sqrt{x}+2$ and $g(x)=x^2+3$, find and simplify $f(g(x))$"
-answers $\sqrt{x^2+3}+2$ — the substitution *is* the answer, with nothing left
-to carry out, so writing it is the correct response. A built candidate that is
-**structurally** the authored answer is therefore filtered out, the same way a
-printed span identical to its answer already was ("Add: $5a+7b$"). Structural,
-never value: `2(3x+5)^2+1` and `18x^2+60x+51` are equal in value and different
-in shape, which is the whole hazard, so a value comparison here would silence
-the class it was built to catch.
-
-### The ninth shape closed: the ask that NAMES a form
-
-The §2.1 point-slope finding (August 9, 2026) generalized into a class the
-retype scan can never see: a prompt that **names** the target form while
-printing nothing to retype. "Write the point-slope form of an equation of a
-line that passes through $(1,5)$ and $(4,11)$" prints two coordinates — no
-subject span exists — but the engine grades the distributed `y-5=2x-2` and the
-scaled `2y-10=4(x-1)` equal to the authored `y-5=2(x-1)`, and grades any
-value-equal expression (`3(x-4)+2`, `\frac{-x-6}{3}`) equal to a bare
-slope-intercept answer. The hazard is the learner's own correct *value* in the
-shape the ask exists to rule out.
-
-Two new tokens carry the linear-equations half: `point-slope-form` and
-`slope-intercept-form` (shapes in the token table above). The lint verb is a
-table, `NAMED_FORM_ASKS`, mapping each named-form phrase to the token(s) that
-grade it — ANY of them, because one phrase can name different shapes:
-"exponential form" is the log conversion (`exponential-form`), the repeated
-multiplication (`single-power`), and the prime factorization (`prime-product`).
-The table also covers "decimal form" (`decimal`), "factored form" (`factored`),
-and "as a mixed number" (`mixed-number`/`fraction-or-mixed-number`); a
-companion rule requires `lowest-terms` when a "simplest/simplified form" ask
-has a numeral-fraction answer. The ask patterns demand a producing verb
-(write/rewrite/enter/…) or an "equation … in <name> form" clause, so a prompt
-that merely *mentions* the form is not conscripted; list answers are out of
-scope because the grader's form check never runs on them. The retrofit was 54
-exercises across all four books.
-
-Probing the class surfaced two false-**reject** defects, both of the kind the
-self-grading gates cannot see because the authored answer is only ever
-compared against itself:
-
-- **An interval-notation ask authored as an inequality.** "…write the solution
-  in interval notation" answered `u>10` marks the learner who types
-  `(10,\infty)` as instructed **incorrect** — the engine grades an inequality
-  and an interval unequal in both directions. The answer is rewritten as the
-  interval and a lint rule now requires an interval-shaped answer (every
-  `\cup`-joined part opens with `[` or `(`) behind any interval-notation ask.
-- **A function-notation response the grader could not read.** `f(x)` boxes as
-  `Multiply(f, x)` (capital names as an application), so a learner answering a
-  prompt phrased "If $f(x)$ is a linear function…" with `f(x)=-7x+3` was
-  graded incorrect against the authored `y=-7x+3`. `checkAnswer` now strips a
-  written one-letter-applied-to-one-letter label — only when no further `=`
+- **Write quotients as explicit `\frac` in `answer`.** A slash quotient with a
+  juxtaposed factor (`-1/20(x-20)^2+20`, `y=1/2x-5/2`) parses as
+  $\tfrac{-1}{20(x-20)^2}+20$ and $y=\tfrac{1}{2x}-\tfrac52$: the authored
+  value is silently not the intended one, both sides of the self-check
+  mis-parse identically so no self-grading gate fires, and a learner typing
+  the intended answer is marked wrong (MathLive turns a typed `/` into a real
+  `\frac`, so the learner cannot even reproduce the authored string). The
+  lint rejects any answer matching a slash quotient followed by a juxtaposed
+  letter, parenthesis, or macro.
+- **An interval-notation ask needs an interval-shaped answer.** The engine
+  grades an inequality and an interval unequal in both directions, so `u>10`
+  behind "write the solution in interval notation" marks the learner who
+  types `(10,\infty)` as instructed incorrect. The lint requires an
+  interval-shaped answer (every `\cup`-joined part opens with `[` or `(`)
+  behind any interval-notation ask.
+- **A written function label is stripped before grading.** `f(x)` boxes as
+  `Multiply(f, x)` (capital names as an application), so `checkAnswer` strips
+  a written one-letter-applied-to-one-letter label — only when no further `=`
   remains, so a genuine equation response is never half-eaten — and the
-  variable-name guard does not apply to it: the prompt said $f(x)$, the author
-  wrote $y$, and both mean the output.
+  variable-name guard does not apply to it: a prompt that says $f(x)$ and an
+  author who wrote $y$ both mean the output.
+- **The re-expression lint checks the declared form BEFORE grading a
+  candidate span through the engine**, because grading is value-then-form (a
+  span the form rejects can never grade `correct`) and the engine's
+  `simplify()` effectively never returns on a conjugate radical quotient.
+- **The engine can hang, and the grader routes around it.**
+  Measured against the pinned 0.58.0 the engine has two distinct hang sites,
+  and `ce.timeLimit` interrupts neither: `isEqual()` never returns once either
+  operand keeps a radical-denominator quotient
+  ($\tfrac{\sqrt{2}}{\sqrt{x}-\sqrt{3}}$ — against *any* comparand), and
+  `simplify()` never returns on some differences of variable-radical
+  expressions. `equivalent()` in `lib/check-answer.mjs` routes both classes
+  to bounded numeric sampling instead of the engine (see the guard banner
+  there), so a pasted conjugate prompt grades `form` — the message the
+  `answerForm` was built to produce — rather than freezing the page.
+- **Do not "fix" deliberate conversions back.** The four ch. 11 Practice
+  prompts authored as `multiplechoice` while the standard-form class was
+  open, and the quotient-to-a-power item that became a multiple choice among
+  fraction forms (no token's feedback names that ask), are sound content
+  converted deliberately — they predate their tokens.
 
-Two residual loosenesses are recorded rather than closed, deliberately. A
-two-point point-slope ask accepts the *other* point's equally-correct
-point-slope equation by value, so the prompt must pin the point ("using
-$(1,5)$ as $(x_1,y_1)$") — a wording rule, not a token. And slope-intercept
-happens to grade unequal against a point-slope answer today; that is an engine
-accident the predicates do not depend on, which is why the mirror token exists
-at all.
+### Re-running the audit
+
+Replay every math span printed in a question back through `checkAnswer`
+against that exercise's own answer, one file per process — the engine carries
+state across calls and will otherwise report false positives — and for any
+span of the shape `label = RHS`, replay the bare RHS too, because the
+labelled span itself does not grade equal to anything (the engine reads
+`f(x)` as an application). `npm run verify:replay` runs the whole-span half
+of this continuously, in both source and MathLive-normalized spellings; the
+bare-RHS variant of a printed definition span is still the manual audit's
+job.
 
 ## Done checklist
 
@@ -1027,6 +899,8 @@ at all.
 - [ ] Every re-expression prompt carries an `answerForm`; categorical answers
       are `multiplechoice`, never digit codes.
 - [ ] Every touched answer independently solved and checked against the source key.
+- [ ] Every new or edited exercise's independently derived verdict recorded in
+      the answer ledger (`npm run verify:ledger` green).
 - [ ] Confirmed upstream defects logged in `docs/openstax-errata.md`; dismissed
       suspicions recorded in its "Reviewed and *not* errata" list.
 - [ ] No file-backed instructional images; recreated figures compared visually.

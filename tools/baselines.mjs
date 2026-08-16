@@ -1,22 +1,24 @@
 /**
  * The published quality baselines and how to rewrite them.
  *
- * Two numbers about this corpus are published in a place a corpus walk cannot
- * reach on its own, both wired into package.json scripts: the verified-answers
- * floor (`--min-verified N`) and the replayed-spans floor
- * (`--min-replayed N`). The gates that CHECK them live with the tools that
- * compute them (`verify-answers`, `verify-replay`); this module is the one
- * place that knows where each number is WRITTEN, so the checkers and the
- * rewriter (`tools/update-baselines.mjs`) can never disagree about what they
- * point at.
+ * Three numbers about this corpus are published in a place a corpus walk
+ * cannot reach on its own, all wired into package.json scripts: the
+ * verified-answers floor (`--min-verified N`), the replayed-spans floor
+ * (`--min-replayed N`), and the answer-ledger floor (`--min-exercises N`).
+ * The gates that CHECK them live with the tools that compute them
+ * (`verify-answers`, `verify-replay`, `answer-ledger check`); this module is
+ * the one place that knows where each number is WRITTEN, so the checkers and
+ * the rewriter (`tools/update-baselines.mjs`) can never disagree about what
+ * they point at.
  *
- * The two ratchet differently, on purpose. `--min-verified` is an EXACT match:
- * the cross-check's job is to read a known set of fill-ins, so a move in
- * either direction is news. `--min-replayed` is a FLOOR: the replay gate's
- * span count rises with ordinary authoring and with any form predicate that
- * admits more spellings, and only a DROP means it has gone quiet on part of
- * the corpus. An exact match there would go red on unrelated commits and be
- * bumped without being read, which is how a ratchet becomes a rubber stamp.
+ * The baselines ratchet differently, on purpose. `--min-verified` is an EXACT
+ * match: the cross-check's job is to read a known set of fill-ins, so a move
+ * in either direction is news. `--min-replayed` and `--min-exercises` are
+ * FLOORS: both counts rise with ordinary authoring (spans with any form
+ * predicate that admits more spellings, exercises with every new section),
+ * and only a DROP means a gate has gone quiet on part of the corpus. An
+ * exact match there would go red on unrelated commits and be bumped without
+ * being read, which is how a ratchet becomes a rubber stamp.
  *
  * Every apply* function is pure text→text and THROWS when its pattern no
  * longer matches: a baseline the tools cannot find must fail loud, never be
@@ -59,6 +61,20 @@ export function applyMinReplayed(packageJsonText, replayed) {
   return packageJsonText.replace(MIN_REPLAYED_RE, `--min-replayed ${replayed}`);
 }
 
+/** The wired answer-ledger floor in package.json. */
+export const MIN_EXERCISES_RE = /--min-exercises (\d+)/;
+
+export function readMinExercises(packageJsonText) {
+  const match = packageJsonText.match(MIN_EXERCISES_RE);
+  if (!match) throw new Error('package.json no longer carries a --min-exercises floor');
+  return Number(match[1]);
+}
+
+export function applyMinExercises(packageJsonText, exercises) {
+  readMinExercises(packageJsonText); // throw before touching anything
+  return packageJsonText.replace(MIN_EXERCISES_RE, `--min-exercises ${exercises}`);
+}
+
 /**
  * The lines each tool prints its count on, and the pattern that reads it.
  * Both tools print ONLY on their success path, so a failed run has no number
@@ -89,6 +105,19 @@ export const BASELINE_SOURCES = Object.freeze([
     apply: applyMinReplayed,
     fell: 'replayed span count fell',
     why: 'That is the replay gate reading less of the corpus than it used to.',
+  },
+  {
+    name: '--min-exercises',
+    label: 'answer-ledger',
+    tool: 'tools/answer-ledger.mjs',
+    // The ledger CLI takes a mode before the root; the runner splices these in.
+    args: ['check'],
+    pattern: /answer ledger: (\d+) unique exercises, every one carries a verification record/,
+    literal: 'unique exercises, every one carries a verification record',
+    read: readMinExercises,
+    apply: applyMinExercises,
+    fell: 'unique exercise count fell',
+    why: 'That is extraction reading less of the corpus than it used to, or content being removed.',
   },
 ]);
 

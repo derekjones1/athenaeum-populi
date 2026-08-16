@@ -124,53 +124,36 @@ not a publishing instruction.
 The OpenStax checkouts themselves remain under ignored `sources/`; the large
 source repositories are not copied into this Git repository.
 
-## Initial reconciliation result
+## Checked-in audit snapshots
 
-This section is a point-in-time record of the FIRST reconciliation — the
-three algebra books only, before any Precalculus section was mapped. For
-current coverage (all books, including Precalculus), regenerate and read
-`docs/openstax-existing-math-audit.md` (`npm run source:check`).
-
-At OpenStax commit
-`38cae454e644abf9f0a623e876994553881597c9`:
-
-- all 201 numbered sections map deterministically to unique CNXML modules;
-- 196 sections match the source title/objective/heading checks without a flag;
-- 5 disclosed adaptations were reviewed and recorded explicitly;
-- 0 metadata or instructional-heading flags remain unresolved;
-- all 3,519 regular-section interactions are inventoried; and
-- 3,635 of 4,576 upstream Try It records have a likely local prompt match.
-
-The Try It number is deliberately a heuristic, not a one-to-one coverage
-claim. OpenStax multipart items can become several local questions, different
-source items can resemble one another, and many source exercises were
-intentionally omitted.
-
-The historical comparison found 10 mapped section modules changed since the
-inferred PDF-era commits: 6 content-level and 4 markup/metadata-only. Three Try
-It records changed, and 3 local-impact decisions are recorded.
-
-The checked-in snapshots are the
-[existing-math audit](openstax-existing-math-audit.md) and the
-[upstream-history audit](openstax-upstream-history-audit.md). After a reviewed
-lock or decision change, regenerate them exactly with:
+The current audit state is the pair of generated reports committed beside
+this doc: the [existing-math audit](openstax-existing-math-audit.md) and the
+[upstream-history audit](openstax-upstream-history-audit.md). After a
+reviewed lock or decision change — and after authoring adds mapped sections —
+regenerate them exactly with:
 
 ```sh
 npm run source:check -- --output docs/openstax-existing-math-audit.md
 npm run source:history -- --output docs/openstax-upstream-history-audit.md
 ```
 
+The Try It prompt-match number in the audit is deliberately a heuristic, not
+a one-to-one coverage claim: OpenStax multipart items can become several
+local questions, different source items can resemble one another, and many
+source exercises were intentionally omitted. The point-in-time record of the
+FIRST reconciliation (the three algebra books, at the initial
+`38cae454e644abf9f0a623e876994553881597c9` lock, before any Precalculus
+section was mapped) is in this file's git history.
+
 ## Precalculus 2e
 
 Precalculus 2e is pinned and scaffolded, with authoring underway. Its review
 target is `789b54099106b071d1d32bfcee454fed72eb4768` in the college-algebra
 bundle, and `content/math/precalculus` holds the book cover page and all
-twelve chapter landings mapped to the upstream chapter structure. All seven
-sections of chapter 1 are authored (modules `m49301`, `m49304`, `m49306`,
-`m49308`, `m49312`, `m49314`, and `m49320`), as are all four sections of
-chapter 2 (modules `m49324`, `m50389`, `m49326`, and `m49327`), so the book
-currently contributes 11 of 73 upstream sections to the map and the audit's
-section matrix.
+twelve chapter landings mapped to the upstream chapter structure. Sections
+are authored chapter by chapter; the committed map records which, and
+`npm run source:verify` prints the current per-book coverage — do not restate
+the count here, it drifts.
 
 Its authored baseline is `d1bd19c69107ba7f45775670809ae161d63db864`, the last
 upstream commit on or before the local `sources/precalculus-2e_-_WEB.pdf`
@@ -182,8 +165,7 @@ Each unwritten chapter landing declares `authoring_status: scaffolded` in its
 frontmatter. That marker is what allows its `## Sections` overview to be empty:
 the chapter-landing lint would otherwise require section bullets, and the
 content validator requires those bullets to match authored pages exactly.
-Chapter 1's landing has dropped the marker and lists all seven of its
-sections.
+A chapter's landing drops the marker with its first authored section page.
 
 As sections are written, add each page with its `source_section` frontmatter,
 remove `authoring_status` from that chapter's landing once its first section
@@ -207,31 +189,12 @@ blindly applying current upstream.
 
 This is why updates stop for review.
 
-Two smaller upstream errata were found in Precalculus 2e module `m49301`
-(section 1.1) during authoring and were deliberately not propagated:
-
-- `Figure_01_01_009`'s alt text describes "an upward-facing parabola with a
-  vertex at (0,1)". The PDF, and the module's own Try It (solve $f(x)=1$;
-  answer $x=0$ or $x=2$), both fix the curve as $f(x)=(x-1)^2$ — vertex
-  $(1,0)$, $y$-intercept $1$. The local figure follows the PDF geometry.
-- `Table_01_01_10`'s `summary` attribute says the goldfish memory span is
-  2100 hours, while the table cell and the surrounding prose
-  ($P(\text{goldfish})=2160$) both say 2160. The local table says 2160.
-
-Chapter 2 authoring found six more, none propagated. In `m49324` (section
-2.1) three figure alt texts name points that are not on the line they
-describe, or belong to a different figure: `..._013` puts $(2,-7)$ and
-$(3,0)$ on $y=2x-7$ (neither satisfies it; the $x$-intercept is $3.5$),
-`..._012` describes the Analysis line instead of the maglev-train graph, and
-`..._008a` repeats the points of `..._014`. In `m49326` (section 2.3) the
-truck-rental rate row labels the second function $P(d)$ although the module
-defines only $K(d)$ and $M(d)$; that same table's `summary` describes an
-entirely different table (Indiana and Alabama house values, apparently copied
-from section 2.4); and the sentence setting up the comparison names Move It
-Your Way where the inequality $K(d)<M(d)$, the surrounding sentences, and the
-question all mean Keep on Trucking. The local pages follow the PDF and the
-modules' own mathematics, and the 2.3 page carries a visible source note
-beside the corrected sentence.
+Smaller confirmed upstream defects found during authoring — wrong-figure alt
+texts, a self-contradicting table summary, a mislabelled function — are
+written up in `docs/openstax-errata.md` (below) rather than enumerated here.
+The local pages follow the PDF and the modules' own mathematics, and where a
+local sentence had to be corrected the page carries a visible source note
+beside it.
 
 A caution learned the same way: `tools/cnxml-preview.py` drops the spaces
 between adjacent TeX tokens, so correct source mathematics can look mangled in

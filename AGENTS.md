@@ -41,26 +41,24 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
 - `npm run serve:public` — serve the built `public/` with no livereload
 - `npm test` — unit tests, content validation, answer cross-check, math lint
 - `npm run verify:replay` — replay every printed question span (source and
-  MathLive-normalized spellings) through the grader; fails any exercise
-  passable by copying its own prompt; reports the two exclusions by count and
-  unit (list-keyed fillins, form-rejected spans) alongside the allowlisted
-  spans, and holds a `--min-replayed` FLOOR so the gate cannot go quiet on
-  part of the corpus (parallel, minutes — part of `npm run ci`, not
-  `npm test`)
+  MathLive-normalized spellings) through the grader so no exercise is passable
+  by retyping its own prompt; holds a `--min-replayed` FLOOR so the gate
+  cannot go quiet on part of the corpus (parallel, minutes — part of
+  `npm run ci`, not `npm test`)
 - `npm run verify:ledger` — assert every exercise in the corpus carries a
   current answer-verification record (see "The answer ledger" below); holds a
   `--min-exercises` FLOOR and a `--max-unverifiable` CEILING so it can go
   vacuous in neither direction
 - `npm run ledger:stats` — verified/total per shortcode kind
 - `npm run ledger:list` — emit exercises as JSON for a verification pass
-  (`--shard i/n`, `--kind`, `--unverified`)
-- `npm run ledger:merge <dir>` — fold pass result files into the ledger,
-  reporting any hash two passes disagreed on rather than overwriting silently
+  (`--shard i/n`, `--kind`, `--unverified`, `--verdict`, `--context N`)
+- `npm run ledger:merge <dir>` — fold pass result files into the ledger;
+  result files that disagree about a hash fail the merge with nothing written
 - `npm run build` — clean production build plus global Pagefind
 - `npm run check:build` — route, link, search, and file-count gates
 - `npm run ci` — complete local equivalent of CI
-- `npm run baseline:update` — recount the verified-answers and replayed-spans
-  floors and rewrite package.json's `--min-verified` and `--min-replayed` in
+- `npm run baseline:update` — recount the three published floors and rewrite
+  package.json's `--min-verified`, `--min-replayed`, and `--min-exercises` in
   place
 - `npm run source:fetch` — fetch the ignored, sparse OpenStax source checkout
 - `npm run source:verify` — verify the committed 212-section map offline
@@ -77,9 +75,9 @@ an empty worked Solution, all-same graph answer positions) followed on
 August 10, 2026, when the corpus carried zero of each; the working rules that
 outlived that programme are in `docs/authoring-playbook.md` §5. If a rule
 fires on sound content, narrow the rule and add a test for the case it got
-wrong — do not exempt the page. When authoring moves the `--min-verified` or
-`--min-replayed` floor, end the session with `npm run baseline:update` and
-commit the rewrite together with the content.
+wrong — do not exempt the page. When authoring moves any published floor
+(`--min-verified`, `--min-replayed`, `--min-exercises`), end the session with
+`npm run baseline:update` and commit the rewrite together with the content.
 
 ## The answer ledger
 
@@ -105,14 +103,16 @@ extraction from going dark.
 
 **Authoring a new exercise therefore means verifying it.** Derive the answer
 independently, never from the key, and do the arithmetic by running it rather
-than in your head; then record the verdict and re-run the gate. The one wrong
+than in your head; then record the verdict and re-run the gate (the recording
+step is §4 of the authoring playbook). The one wrong
 answer that survived every other gate — a 3x3 system in a knowledge check whose
 declared triple satisfied none of its three printed equations — is what this
 ledger exists to catch.
 
-**Status: complete as of August 15, 2026 — all 6,806 unique exercises carry an
-`ok` record, and `verify:ledger` runs inside `npm test`** with
-`--min-exercises 6806 --max-unverifiable 0`. The ceiling is 0 because the
+**Status: complete as of August 15, 2026 — every unique exercise carries an
+`ok` record, and `verify:ledger` runs inside `npm test`** with the current
+count as its `--min-exercises` floor (package.json owns the number;
+`baseline:update` moves it) and `--max-unverifiable 0`. The ceiling is 0 because the
 residue really did go to zero: the figure-dependent items were re-read with
 `--context 80`, which attaches the page text above the shortcode so a "read the
 graph above" item can see the SVG it names, and the handful still unresolved
@@ -125,8 +125,15 @@ Two commands drive a re-run:
 - `npm run ledger:list -- --verdict unverifiable --context 80` for the
   figure-dependent follow-up queue.
 
-Merge with `npm run ledger:merge <dir>`; it reports any hash two passes
-disagreed on instead of overwriting. `prune` drops records stranded by an edit.
+A pass writes result files, each shaped
+`{"results": [{"hash": "…", "verdict": "…", "note": "…"?}]}`, and
+`npm run ledger:merge <dir>` folds every `*.json` in the directory into the
+ledger. Result files that disagree about a hash fail the merge with nothing
+written — one of those passes read the exercise wrong, so re-read it rather
+than let file order pick a winner. A merge that changes an already-recorded
+verdict prints the change; that is the legitimate re-read flow.
+`node tools/answer-ledger.mjs prune content` drops records stranded by an
+edit.
 
 The pass was calibrated before it was trusted: 26 provably-wrong answers were
 seeded into a blind sample of 90 real exercises, and the method caught 26/26

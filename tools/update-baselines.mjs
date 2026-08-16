@@ -7,15 +7,16 @@
  * move them: run it at the END of an authoring session and commit what it
  * rewrote together with the content that moved the numbers.
  *
- * It recomputes reality — a real `verify-answers` run and a real
- * `verify-replay` run — then rewrites both numbers in package.json.
+ * It recomputes reality — a real `verify-answers` run, a real `verify-replay`
+ * run, and a real `answer-ledger check` run — then rewrites every moved
+ * number in package.json.
  *
- * BOTH tools are run, and both numbers are considered, every time. The
+ * EVERY tool is run, and every number is considered, every time. The
  * previous version exited 0 the moment `--min-verified` was unchanged, which
  * is the NORMAL end-of-session case, so anything appended after that point
  * would never have executed; it also never invoked the replay tool at all.
- * Structure follows from that: measure both, guard each independently, exit
- * "already current" only when NEITHER moved, and write once.
+ * Structure follows from that: measure all of them, guard each independently,
+ * exit "already current" only when NONE moved, and write once.
  *
  * Direction guards, because a baseline moving the wrong way is a finding, not
  * an update: neither count may fall (`--allow-decrease` to acknowledge a
@@ -80,7 +81,7 @@ function countFrom({ code, out, err }, { label, pattern }) {
 // running them at once would oversubscribe rather than finish sooner.
 const measurements = {};
 for (const source of BASELINE_SOURCES) {
-  measurements[source.name] = countFrom(await run([source.tool, root]), source);
+  measurements[source.name] = countFrom(await run([source.tool, ...(source.args ?? []), root]), source);
 }
 
 /* ---- 2. current state and guards ----------------------------------------- */

@@ -131,17 +131,37 @@ test('a recorded defect fails the gate, and unverifiable has its own ceiling', (
   assert.match(capped.out, /over the --max-unverifiable ceiling/);
 });
 
-test('merge folds agent result files in and reports a disagreement', () => {
+test('merge folds agent result files in, and disagreeing files fail it with nothing written', () => {
   const dir = scratch({ 'a.md': PAGE });
   mkdirSync(join(dir, 'data', 'verification'), { recursive: true });
   writeFileSync(join(dir, 'data/verification/answer-ledger.json'), JSON.stringify({ schemaVersion: 1, entries: {} }));
   const results = join(dir, 'results');
   mkdirSync(results);
-  writeFileSync(join(results, '01.json'), JSON.stringify({ results: [{ hash: 'aaaa', verdict: 'ok' }] }));
+  writeFileSync(join(results, '01.json'), JSON.stringify({ results: [{ hash: 'aaaa', verdict: 'ok' }, { hash: 'bbbb', verdict: 'ok' }] }));
   writeFileSync(join(results, '02.json'), JSON.stringify({ results: [{ hash: 'aaaa', verdict: 'defect', note: 'wrong' }] }));
+  // Two passes disagreeing means one of them read the exercise wrong, and no
+  // merge order can decide which. An `ok` must never bury a `defect` (or the
+  // reverse) on a coin flip of file naming: the merge fails and writes NOTHING
+  // — not even the undisputed record — so a red merge is safe to rerun whole.
+  const out = run(dir, ['merge', results]);
+  assert.equal(out.code, 1, out.out);
+  assert.match(out.out, /conflict aaaa: ok \(01\.json\) vs defect \(02\.json\)/);
+  assert.match(out.out, /nothing merged/);
+  const ledger = JSON.parse(readFileSync(join(dir, 'data/verification/answer-ledger.json'), 'utf8'));
+  assert.deepEqual(ledger.entries, {}, 'a conflicted merge writes nothing');
+});
+
+test('merge updates an already-recorded verdict, visibly — that is the re-read flow', () => {
+  const dir = scratch({ 'a.md': PAGE });
+  mkdirSync(join(dir, 'data', 'verification'), { recursive: true });
+  writeFileSync(join(dir, 'data/verification/answer-ledger.json'),
+    JSON.stringify({ schemaVersion: 1, entries: { aaaa: { verdict: 'unverifiable', note: 'needs the figure' } } }));
+  const results = join(dir, 'results');
+  mkdirSync(results);
+  writeFileSync(join(results, '01.json'), JSON.stringify({ results: [{ hash: 'aaaa', verdict: 'ok' }] }));
   const out = run(dir, ['merge', results]);
   assert.equal(out.code, 0, out.out);
-  assert.match(out.out, /conflict aaaa/, 'two passes disagreeing must be reported, not silently overwritten');
+  assert.match(out.out, /updated aaaa: unverifiable → ok/, 'a changed verdict is printed, never silent');
   const ledger = JSON.parse(readFileSync(join(dir, 'data/verification/answer-ledger.json'), 'utf8'));
-  assert.equal(ledger.entries.aaaa.verdict, 'defect');
+  assert.equal(ledger.entries.aaaa.verdict, 'ok');
 });

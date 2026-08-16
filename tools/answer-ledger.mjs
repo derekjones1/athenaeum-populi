@@ -114,25 +114,45 @@ function main() {
     const dir = positional[0];
     if (!dir) usage(2);
     const ledger = readLedger();
-    let added = 0;
+    // Fold the whole batch together BEFORE touching the ledger. Two result
+    // files disagreeing about a hash means one of the passes read the
+    // exercise wrong, and no merge order can decide which — so nothing is
+    // written and the merge fails until the exercise is re-read. A verdict
+    // that differs from the ledger's EXISTING entry is a different thing:
+    // that is how a re-read updates a verdict (unverifiable → ok after a
+    // --context pass), so it merges, visibly.
+    const batch = new Map();
     let conflicted = 0;
     for (const file of readdirSync(dir).filter((f) => f.endsWith('.json')).sort()) {
-      const batch = JSON.parse(readFileSync(join(dir, file), 'utf8'));
-      for (const record of batch.results ?? []) {
+      const parsed = JSON.parse(readFileSync(join(dir, file), 'utf8'));
+      for (const record of parsed.results ?? []) {
         if (!record.hash || !record.verdict) continue;
-        const existing = ledger.entries[record.hash];
-        if (existing && existing.verdict !== record.verdict) {
+        const prior = batch.get(record.hash);
+        if (prior && prior.verdict !== record.verdict) {
           conflicted += 1;
-          console.error(`  conflict ${record.hash}: ${existing.verdict} vs ${record.verdict} (${file})`);
+          console.error(`  conflict ${record.hash}: ${prior.verdict} (${prior.file}) vs ${record.verdict} (${file})`);
+          continue; // keep reading so every conflict is reported in one run
         }
-        ledger.entries[record.hash] = record.note
-          ? { verdict: record.verdict, note: record.note }
-          : { verdict: record.verdict };
-        added += 1;
+        batch.set(record.hash, { verdict: record.verdict, note: record.note, file });
       }
     }
+    if (conflicted) {
+      console.error(`✖ ${conflicted} conflict(s) between result files — nothing merged; re-read those exercises and rerun`);
+      process.exit(1);
+    }
+    let updated = 0;
+    for (const [hash, record] of batch) {
+      const existing = ledger.entries[hash];
+      if (existing && existing.verdict !== record.verdict) {
+        updated += 1;
+        console.log(`  updated ${hash}: ${existing.verdict} → ${record.verdict}`);
+      }
+      ledger.entries[hash] = record.note
+        ? { verdict: record.verdict, note: record.note }
+        : { verdict: record.verdict };
+    }
     writeLedger(ledger);
-    console.log(`merged ${added} record(s) into ${LEDGER_PATH}; ${Object.keys(ledger.entries).length} total${conflicted ? `; ${conflicted} conflict(s)` : ''}`);
+    console.log(`merged ${batch.size} record(s) into ${LEDGER_PATH}; ${Object.keys(ledger.entries).length} total${updated ? `; ${updated} verdict(s) updated` : ''}`);
     return;
   }
 
