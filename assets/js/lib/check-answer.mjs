@@ -503,19 +503,89 @@ function numericallyEquivalent(studentExpr, answerExpr) {
  * sample point, student·answer₀ must agree with answer·student₀. The scaled
  * and rearranged restatements grading has always accepted stay equal; a
  * differing symbol, slope, or constant fails a sample. A side vanishing
- * where the other does not is already a decision, and two unknown-free
- * statements are the same condition when both hold or both fail (`343=7^3`
- * and `3=\log_7 343` are the same true statement).
+ * where the other does not is already a decision.
+ *
+ * Two UNKNOWN-FREE equations are compared side by side, in either
+ * orientation — never by whether each statement merely holds. Comparing
+ * truth values makes every true equation equal to every other: `1+1=2`
+ * graded `correct` against `5^2=25`, so any exercise keyed to a closed
+ * numeric equation was passable by typing arithmetic unrelated to it, and no
+ * `answerForm` could catch it (a bare true equation satisfies "no logarithm
+ * left" just as the intended answer does). Ten exercises across four books
+ * were exposed, all of them "write the equation/proportion" asks.
+ *
+ * This comparison stays permissive about restating the SAME relation, which
+ * is what the equation path is for: the sides are compared by VALUE, so
+ * `0.01=10^{-2}` still grades against an authored `10^{-2}=\frac{1}{100}`,
+ * and the reversed orientation grades too. What it no longer accepts is a
+ * DIFFERENT true statement — including the printed prompt of a conversion
+ * ask, since `\log_5 25=2` has sides 2 and 2 where `5^2=25` has 25 and 25.
+ * That makes the equation path reinforce `exponential-form` rather than
+ * quietly undo it.
  */
+/**
+ * Index of the `)` closing the `(` at `open`, or -1. Depth-aware, so a nested
+ * group does not end the argument early — `\log((x+1)(x+2))` must read its
+ * whole argument, not stop at the first `)`.
+ */
+function matchingParenIndex(latex, open) {
+  let depth = 0;
+  for (let i = open; i < latex.length; i += 1) {
+    if (latex[i] === '(') depth += 1;
+    else if (latex[i] === ')') {
+      depth -= 1;
+      if (depth === 0) return i;
+    }
+  }
+  return -1;
+}
+
+/**
+ * Can the logarithm rules still break this argument apart?
+ *
+ * They cannot when it is a single atom (one number or one variable), and they
+ * cannot when it is a top-level SUM: there is no rule turning $\log(x+3)$ into
+ * anything simpler, so `\ln(x+3)+\ln(x-1)` is a finished expansion. They still
+ * can when the argument is a product, a quotient, a power, or a juxtaposition
+ * — `25ab`, `\frac{a}{b}`, `x^2`, `(x+3)(x-1)` — which is what
+ * `expanded-logarithms` exists to refuse.
+ *
+ * "Top level" means outside every bracket: the `+` in `(x+3)(x-1)` is nested,
+ * so that argument is a product and stays rejected. A leading sign is not an
+ * operator.
+ */
+function irreducibleLogArgument(argument) {
+  const arg = argument.replace(/\s+/g, '');
+  if (arg === '') return false;
+  if (/^(?:\d+(?:\.\d+)?|[a-zA-Z])$/.test(arg)) return true;
+  let depth = 0;
+  for (let i = 0; i < arg.length; i += 1) {
+    const char = arg[i];
+    if (char === '(' || char === '{' || char === '[') depth += 1;
+    else if (char === ')' || char === '}' || char === ']') depth -= 1;
+    else if ((char === '+' || char === '-') && depth === 0 && i > 0) {
+      // An exponent's own sign (`x^{-2}`) is nested; a caret immediately
+      // before is not, so guard the one unbracketed spelling too.
+      if (arg[i - 1] !== '^') return true;
+    }
+  }
+  return false;
+}
+
 function equationsEquivalent(studentExpr, answerExpr) {
   if (studentExpr.ops?.length !== 2 || answerExpr.ops?.length !== 2) return false;
   const sides = [studentExpr, answerExpr]
     .map((expr) => ce.box(['Subtract', expr.ops[0], expr.ops[1]]));
   const vars = [...new Set(sides.flatMap((side) => side.unknowns))];
   if (vars.length === 0) {
-    const values = sides.map((side) => side.N());
-    if (!values.every((v) => Number.isFinite(v.re) && Number.isFinite(v.im))) return false;
-    return sampleIsZero(values[0]) === sampleIsZero(values[1]);
+    const written = [studentExpr, answerExpr].map((eq) => eq.ops.map((op) => op.N()));
+    const finite = (v) => Number.isFinite(v?.re) && Number.isFinite(v?.im);
+    if (!written.flat().every(finite)) return false;
+    const same = (a, b) => Math.hypot(a.re - b.re, a.im - b.im)
+      <= SAMPLE_TOLERANCE * Math.max(1, Math.hypot(a.re, a.im), Math.hypot(b.re, b.im));
+    const [student, answer] = written;
+    return (same(student[0], answer[0]) && same(student[1], answer[1]))
+      || (same(student[0], answer[1]) && same(student[1], answer[0]));
   }
   const samples = [];
   let bothVanished = 0;
@@ -2622,15 +2692,49 @@ const FORM_PREDICATES = {
   // only the written notation separates them. The conversion is complete
   // exactly when no logarithm is left.
   'exponential-form': (latex) => !/\\log|\\ln\b/.test(bareLatex(latex)),
+  // "Change the function $y=3(0.5)^x$ to one having $e$ as the base" answers
+  // $3e^{(\ln 0.5)x}$ — the SAME function, so the printed subject grades
+  // `correct` by construction and only the written base can refuse it. The
+  // conversion is finished exactly when no base other than $e$ is raised to
+  // an exponent that involves the variable. A power with a numeric exponent
+  // (`x^2`) is a power function, not an exponential, and is left alone.
+  'base-e': (latex) => {
+    const bare = bareLatex(latex).replace(/\\left\s*|\\right\s*/g, '');
+    for (let i = bare.indexOf('^'); i !== -1; i = bare.indexOf('^', i + 1)) {
+      const exponent = bare[i + 1] === '{'
+        ? readBalancedGroup(bare.slice(i + 1), 0)?.[0] ?? ''
+        : bare.slice(i + 1, i + 2);
+      // Only an exponent carrying the variable makes this an exponential.
+      if (!/[a-zA-Z]/.test(exponent.replace(/\\[a-zA-Z]+/g, ''))) continue;
+      const before = bare.slice(0, i).replace(/\s+$/, '');
+      const base = before.endsWith(')')
+        ? before.slice(before.lastIndexOf('(') + 1, -1)
+        : before.match(/(?:\\[a-zA-Z]+|[0-9.]+|[a-zA-Z])$/)?.[0] ?? '';
+      if (base.replace(/\s+/g, '') !== 'e') return false;
+    }
+    return true;
+  },
   // "Use properties of logarithms to write $\log_5 25ab$ as a sum of
-  // logarithms" answers $2+\log_5 a+\log_5 b$. Every written `\log` must take
-  // a single atom — one number or one variable — so the printed compound
-  // argument (`25ab`, a radical, a quotient) is what fails. A response with
-  // no logarithm at all passes: a fully-simplified expansion can evaluate
-  // every term away, and there is nothing left unexpanded to reject.
+  // logarithms" answers $2+\log_5 a+\log_5 b$. Every written logarithm must
+  // take an argument the log rules cannot break apart, so the printed
+  // compound argument (`25ab`, a radical, a quotient, a power) is what fails.
+  // A response with no logarithm at all passes: a fully-simplified expansion
+  // can evaluate every term away, and there is nothing left unexpanded to
+  // reject.
+  //
+  // `\ln` counts. The opener used to match only `\log`, so a natural-log
+  // expression entered the loop zero times and the predicate returned true
+  // for EVERY input — it failed open on exactly the prompts §4.5 is built
+  // from, and a learner could pass by retyping `\ln(3x^2y)`.
+  //
+  // An argument that is a top-level SUM is accepted, because no log rule
+  // splits a sum: `\ln(x+3)+\ln(x-1)` is the fully expanded form of
+  // `\ln((x+3)(x-1))`, and demanding a bare atom there would reject the
+  // correct answer — a rule firing on sound content. Only a product,
+  // quotient, power, or juxtaposition is still expandable.
   'expanded-logarithms': (latex) => {
     const bare = bareLatex(latex);
-    const opener = /\\log(?:_(?:\{[^{}]*\}|[0-9a-zA-Z]))?\s*/g;
+    const opener = /\\(?:log(?:_(?:\{[^{}]*\}|[0-9a-zA-Z]))?|ln)\s*/g;
     let match;
     while ((match = opener.exec(bare)) !== null) {
       const rest = bare.slice(match.index + match[0].length);
@@ -2638,14 +2742,14 @@ const FORM_PREDICATES = {
       if (rest[0] === '{') {
         argument = readBalancedGroup(rest, 0)?.[0] ?? '';
       } else if (rest[0] === '(') {
-        const close = rest.indexOf(')');
+        const close = matchingParenIndex(rest, 0);
         argument = close === -1 ? '' : rest.slice(1, close);
       } else if (rest[0] === '\\') {
         return false; // \sqrt, \frac — a compound argument however it is read
       } else {
         argument = rest.match(/^[0-9a-zA-Z.]+/)?.[0] ?? '';
       }
-      if (!/^(?:\d+(?:\.\d+)?|[a-zA-Z])$/.test(argument.replace(/\s+/g, ''))) return false;
+      if (!irreducibleLogArgument(argument)) return false;
     }
     return true;
   },
@@ -2770,6 +2874,7 @@ const FORM_PHRASES = {
   'conic-standard-form': 'in standard form, with each squared term over its denominator and the right side equal to 1',
   'circle-standard-form': 'in standard form, with the squared binomials on the left and the squared radius on the right',
   'exponential-form': 'in exponential form, with no logarithm left',
+  'base-e': 'with $e$ as the base',
   'expanded-logarithms': 'as a sum of logarithms of single numbers and variables',
   'evaluated-trig': 'as an exact value, with the trigonometric function evaluated',
   'evaluated-logarithm': 'as a number, with the logarithm evaluated',

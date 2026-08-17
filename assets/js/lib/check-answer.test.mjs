@@ -126,6 +126,26 @@ const extra = [
   ['y=5', 'x=5', 'incorrect'], // both equations: variable must match
   ['5', 'x=5', 'correct'], // bare value vs authored equation
   ['x=-3', '-3>-7', 'incorrect'], // never unwrapped against an inequality
+  // Two CLOSED equations compare side by side, not by truth value. Comparing
+  // whether each statement merely holds made EVERY true equation equal to
+  // every other, so any exercise keyed to a closed numeric equation — the
+  // "write the equation/proportion" asks in four books — was passable by
+  // typing unrelated arithmetic, and no answerForm could catch it.
+  ['1+1=2', '5^2=25', 'incorrect'],
+  ['0=0', '10^6=1{,}000{,}000', 'incorrect'],
+  ['1+1=2', '343=7^3', 'incorrect'],
+  ['1+1=2', '7 + 6 = 13', 'incorrect'],
+  ['\\frac{1}{2}=\\frac{2}{4}', '\\frac{5}{9}=\\frac{20}{36}', 'incorrect'], // a different true proportion
+  // The printed prompt of a conversion ask is now rejected on VALUE too, so
+  // the equation path reinforces `exponential-form` instead of undoing it.
+  ['\\log_5(25)=2', '5^2=25', 'incorrect'],
+  // …while restating the SAME relation stays accepted, which is what the
+  // equation path is for: either orientation, and sides compared by value.
+  ['5^2=25', '5^2=25', 'correct'],
+  ['25=5^2', '5^2=25', 'correct'], // reversed orientation
+  ['0.01=10^{-2}', '10^{-2}=\\frac{1}{100}', 'correct'], // side written another way
+  ['6 + 7 = 13', '7 + 6 = 13', 'correct'], // commuted
+  ['\\frac{20}{36}=\\frac{5}{9}', '\\frac{5}{9}=\\frac{20}{36}', 'correct'],
   // A written `f(x)=` label cannot be unwrapped from the parse — `f(x)` boxes
   // as Multiply(f, x), so a learner answering a function-notation prompt with
   // `f(x)=-7x+3` was graded incorrect against the authored `y=-7x+3`. The
@@ -829,7 +849,20 @@ const formCases = [
   // exponential-form — two TRUE statements grade equal, so only the written
   // notation separates the conversion from the prompt retyped
   ['343=7^3', '343=7^3', 'exponential-form', 'correct'],
-  ['3=\\log_7 343', '343=7^3', 'exponential-form', 'form'],
+  // Once the closed-equation path compared sides instead of truth values, the
+  // printed prompt stopped being the right VALUE in the wrong shape and became
+  // simply a different statement — so it is refused before the form check.
+  ['3=\\log_7 343', '343=7^3', 'exponential-form', 'incorrect'],
+  // The token still separates a value-equal response that has NOT finished the
+  // conversion — a logarithm left standing in an otherwise correct value.
+  ['10^{\\log 100}', '100', 'exponential-form', 'form'],
+  ['100', '100', 'exponential-form', 'correct'],
+  // base-e — "change this function to one having e as the base" answers the
+  // SAME function, so the printed subject grades correct by construction and
+  // only the written base can refuse it.
+  ['3e^{(\\ln0.5)x}', '3e^{(\\ln0.5)x}', 'base-e', 'correct'],
+  ['3(0.5)^x', '3e^{(\\ln0.5)x}', 'base-e', 'form'],
+  ['x^2', 'x^2', 'base-e', 'correct'], // a numeric exponent is a power function, not an exponential
   // expanded-logarithms — every written log takes a single atom
   ['2+\\log_5 a+\\log_5 b', '2+\\log_5 a+\\log_5 b', 'expanded-logarithms', 'correct'],
   ['\\log_5 25ab', '2+\\log_5 a+\\log_5 b', 'expanded-logarithms', 'form'],
@@ -837,6 +870,21 @@ const formCases = [
     '\\frac{1}{4}(\\log_2 5+3\\log_2 x-4-2\\log_2 y-7\\log_2 z)', 'expanded-logarithms', 'correct'],
   ['\\log_2\\sqrt[4]{\\tfrac{5x^3}{16y^2z^7}}',
     '\\frac{1}{4}(\\log_2 5+3\\log_2 x-4-2\\log_2 y-7\\log_2 z)', 'expanded-logarithms', 'form'],
+  // `\ln` is a logarithm. The opener matched only `\log`, so a natural-log
+  // expression entered the scan zero times and the predicate passed EVERY
+  // input — the form check failed open on precisely the §4.5 prompts, and a
+  // learner could pass by retyping the printed expression.
+  ['\\ln 3+2\\ln x+\\ln y', '\\ln 3+2\\ln x+\\ln y', 'expanded-logarithms', 'correct'],
+  ['\\ln(3x^2y)', '\\ln 3+2\\ln x+\\ln y', 'expanded-logarithms', 'form'],
+  ['\\ln a-\\ln b', '\\ln a-\\ln b', 'expanded-logarithms', 'correct'],
+  ['\\ln\\frac{a}{b}', '\\ln a-\\ln b', 'expanded-logarithms', 'form'],
+  // A top-level SUM inside the logarithm is already fully expanded — no log
+  // rule splits a sum — so demanding a bare atom would reject the correct
+  // answer. The nested sums of a PRODUCT of binomials are still expandable.
+  ['\\ln(x+3)+\\ln(x-1)', '\\ln(x+3)+\\ln(x-1)', 'expanded-logarithms', 'correct'],
+  ['\\ln((x+3)(x-1))', '\\ln(x+3)+\\ln(x-1)', 'expanded-logarithms', 'form'],
+  ['\\log(x^2+1)', '\\log(x^2+1)', 'expanded-logarithms', 'correct'], // a power inside a sum is not a power rule
+  ['\\log(x^2)', '2\\log x', 'expanded-logarithms', 'form'], // a bare power still is
   // evaluated-trig — the printed subject of an exact-value ask IS its answer
   ['\\frac{\\sqrt{2}}{2}', '\\frac{\\sqrt{2}}{2}', 'evaluated-trig', 'correct'],
   ['\\cos\\left(\\frac{\\pi}{4}\\right)', '\\frac{\\sqrt{2}}{2}', 'evaluated-trig', 'form'],

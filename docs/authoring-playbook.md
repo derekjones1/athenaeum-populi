@@ -303,7 +303,8 @@ the two independent things it names:
 | `vertex-form` | one $a(x-h)^2+k$ term shape (either orientation, optional written `y=`/`x=`/`f(x)=` label): exactly one squared-binomial term plus at most a constant — for "Write $y=2x^2+4x+5$ in standard form" |
 | `conic-standard-form` | an equation with one side exactly $1$ and the other a sum/difference of $\ge 2$ fractions, each a coefficient-1 squared term ($x^2$, $(y-k)^2$) over a positive integer — for ellipse/hyperbola "write in standard form" |
 | `circle-standard-form` | two coefficient-1 squared terms against a positive integer — $(x-h)^2+(y-k)^2=r^2$ for the circle asks |
-| `exponential-form` | no logarithm left — for "convert from logarithmic to exponential form", where both statements grade equal |
+| `exponential-form` | no logarithm left — for "convert from logarithmic to exponential form". The closed-equation grading path now compares the two equations side by side rather than by truth value, so a retyped conversion prompt is refused on value alone; this token remains for the feedback sentence and for the value-equal responses that still carry a logarithm |
+| `base-e` | no base other than $e$ raised to a variable exponent — for "change $y=3(0.5)^x$ to one having $e$ as the base", where the answer IS the printed function rewritten. A numeric exponent ($x^2$) is a power function and is left alone |
 | `expanded-logarithms` | every written $\log$ takes a single number or variable — for "write $\log_5 25ab$ as a sum of logarithms" |
 | `evaluated-trig` | no trigonometric function left ($\sin$, $\cos$, $\tan$, $\csc$, $\sec$, $\cot$, and their $\arcsin$/$\sin^{-1}$ inverses) — for "find the exact value of $\cos\tfrac{\pi}{4}$", whose printed subject IS its own answer |
 | `evaluated-logarithm` | no logarithm left — for "evaluate $\log_2 8$", the same hazard one function over. Same predicate as `exponential-form`, kept apart because its feedback has to name evaluating rather than converting |
@@ -683,9 +684,17 @@ branches split at each pole on their own), `circles` (a real SVG ellipse),
 `polylines`
 (straight joins — required for corners such as $y=\lvert x\rvert$), and
 `curves` with kinds `sqrt`, `cbrt`, `reciprocal`, `reciprocal-squared`,
-`sine`, `exp`, and `log` (each accepts `a`, `h`, `k` for $a\,f(x-h)+k$;
-`sine` adds `b` and draws $k+a\sin\bigl(b(x-h)\bigr)$, while `exp` and `log`
-take `b` as the base and draw $k+a\,b^{x-h}$ and $k+a\log_b(x-h)$). Quadratics, cubics, polynomials, and
+`sine`, `exp`, `log`, and `logistic` (each accepts `a`, `h`, `k` for
+$a\,f(x-h)+k$; `sine` adds `b` and draws $k+a\sin\bigl(b(x-h)\bigr)$, while
+`exp` and `log` take `b` as the base and draw $k+a\,b^{x-h}$ and
+$k+a\log_b(x-h)$). `log` also takes `reflect: true`, mirroring the branch
+about its vertical asymptote to draw $k+a\log_b(h-x)$ on $x<h$ — the
+$y$-axis-reflected logarithm, which has no other analytic spelling.
+`logistic` draws $k+\tfrac{c}{1+a e^{-b(x-h)}}$ using the TEXTBOOK's parameter
+names, so `c` is the carrying capacity and `a` is the shape parameter, **not**
+the vertical scale `a` names on every other kind. Both were added while
+authoring chapter 4, where six curves had been hand-sampled as dense point
+lists for want of them. Quadratics, cubics, polynomials, and
 curves accept `from`/`to` to trim the drawn domain, e.g. to end a curve with
 an arrow mid-grid the way source art does. Match the source's arrow
 conventions: no arrowhead where a domain actually ends (the origin of
@@ -907,7 +916,7 @@ carried zero of each, and the warning channel was deleted with them. There is
 no non-blocking rule left in the repository and no category of
 known-defective content to grandfather.
 
-The Practice retrofit that used to live here is finished. All 221 mapped
+The Practice retrofit that used to live here is finished. All 229 mapped
 sections carry the block (the documentation test pins that count to the live
 map, so authoring a new mapped section means bumping it here). The final
 block landed on August 9, 2026; the lint rule was promoted from a warning to

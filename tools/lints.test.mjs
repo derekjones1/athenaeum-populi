@@ -717,8 +717,6 @@ test('a standard-form prompt is trivially satisfiable without answerForm', () =>
       'a general-form hyperbola grades equal to its standard form'],
     ['Write $x^2+y^2+10x+6y+30=0$ in standard form.', '(x+5)^2+(y+3)^2=4', 'circle-standard-form',
       'a general-form circle grades equal to its standard form'],
-    ['Convert the equation from logarithmic to exponential form: $3=\\log_7 343$.', '343=7^3', 'exponential-form',
-      'two true statements grade equal, so only the notation separates them'],
     ['Use properties of logarithms to write $\\log_5 25ab$ as a sum of logarithms, simplifying if possible.',
       '2+\\log_5 a+\\log_5 b', 'expanded-logarithms',
       'a compound-argument logarithm grades equal to its expansion'],
@@ -744,6 +742,35 @@ test('a standard-form prompt is trivially satisfiable without answerForm', () =>
   ]) {
     assert.equal(lint(fillin(question, answer)).filter(trivial).length, 0, reason);
   }
+});
+
+// ---- the logarithmic→exponential conversion closed at the GRADER ----------
+// This class used to sit in the table above, justified as "two true statements
+// grade equal, so only the notation separates them" — the closed-equation path
+// compared truth values, so `3=\log_7 343` graded `correct` against `343=7^3`
+// and `answerForm` was the only thing refusing it. That comparison also made
+// `1+1=2` grade correct against the same key, which no token could ever catch,
+// so the path now compares the two equations SIDE BY SIDE. The printed prompt
+// is refused on value alone, and the lint no longer has a hazard to report.
+test('a logarithmic-to-exponential prompt is no longer trivially satisfiable', () => {
+  const trivial = (error) => error.includes('printed in the question');
+  const lint = (source) => lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors;
+  const question = 'Convert the equation from logarithmic to exponential form: $3=\\log_7 343$.';
+  const answer = '343=7^3';
+
+  // The sides carry it: `3=\log_7 343` is 3 and 3, `343=7^3` is 343 and 343.
+  assert.equal(checkAnswer('3=\\log_7 343', answer, {}), 'incorrect');
+  assert.equal(checkAnswer('1+1=2', answer, {}), 'incorrect');
+  assert.equal(checkAnswer(answer, answer, {}), 'correct');
+  assert.equal(checkAnswer('7^3=343', answer, {}), 'correct'); // either orientation
+
+  // …so the prompt no longer needs `answerForm` to be safe. The token stays
+  // valid and keeps accepting the answer; it is simply no longer load-bearing.
+  const fillin = (form = '') =>
+    `{{< fillin question="${question}" answer="${answer}"${form ? ` answerForm="${form}"` : ''} hint="Rewrite it." >}}`;
+  assert.equal(lint(fillin()).filter(trivial).length, 0);
+  assert.equal(lint(fillin('exponential-form')).filter(trivial).length, 0);
+  assert.equal(checkAnswer(answer, answer, { form: 'exponential-form' }), 'correct');
 });
 
 // ---- the "find the exact value" class, over trigonometry and angles --------

@@ -73,13 +73,22 @@
  *             quadratics, cubics, circles, polylines, or curves.
  *             arrows default false and may be true, 'start', or 'end'
  *   curves:   [{ kind:'sqrt'|'cbrt'|'reciprocal'|'reciprocal-squared'|'sine'
- *                     |'exp'|'log',
- *                a?, h?, k?, b?, from?, to?, dashed?, arrows? }]
+ *                     |'exp'|'log'|'logistic',
+ *                a?, h?, k?, b?, c?, reflect?, from?, to?, dashed?, arrows? }]
  *             named analytic curves a·f(x−h)+k sampled from their exact
  *             equations. 'sine' draws k + a·sin(b·(x−h)) with angular
  *             frequency b (default 1); 'exp' draws k + a·b^(x−h) and 'log'
  *             draws k + a·log_b(x−h), both with base b (default e), the log
- *             sampled in y so its vertical tangent stays smooth. Quadratics,
+ *             sampled in y so its vertical tangent stays smooth.
+ *             'log' also takes reflect:true, mirroring the branch about its
+ *             vertical asymptote to draw k + a·log_b(h−x) on x < h — the
+ *             y-axis-reflected logarithm, which otherwise has no analytic
+ *             spelling at all.
+ *             'logistic' draws k + c/(1 + a·e^(−b(x−h))): the S-curve of
+ *             §4.7–4.8, written with the TEXTBOOK's parameter names, so `c`
+ *             is the carrying capacity and `a` is the model's shape
+ *             parameter — NOT the vertical scale `a` names on every other
+ *             kind. Quadratics,
  *             cubics, polynomials, and curves accept
  *             from/to (math x; y for sideways quadratics) to trim the drawn
  *             domain, e.g. to end a curve with an arrow mid-grid.
@@ -401,14 +410,26 @@ export function buildGraph(props) {
   })
 
   // --- 1. grid ------------------------------------------------------------
+  // The grid step is stated in MATH units, so an axis with many units to the
+  // pixel draws them on top of each other: a "Cases" axis running 0–1,100 at
+  // 0.5 px per unit emitted 1,100 horizontal lines half a pixel apart, which
+  // renders as a solid grey block rather than a grid. Coarsen the step to the
+  // smallest multiple of itself that clears MIN_GRID_PX (10px), so the lattice still
+  // lands on the same values and only the crowding goes away.
+  const MIN_GRID_PX = 10
+  const spacedStep = (step, unitPx) => {
+    const perLine = Math.abs(step * unitPx)
+    if (!(perLine > 0) || perLine >= MIN_GRID_PX) return step
+    return step * Math.ceil(MIN_GRID_PX / perLine)
+  }
   if (grid) {
-    for (let index = 0; index < xGridCount; index++) {
-      const mx = xMin + index * xGridStep
+    const xStep = spacedStep(xGridStep, ux)
+    const yStep = spacedStep(yGridStep, uy)
+    for (let mx = xMin; mx <= xMax + 1e-9; mx += xStep) {
       if (mx === 0 && yMin <= 0 && yMax >= 0) continue
       add('line', segAttrs(px([mx, yMin]), px([mx, yMax]), { strokeWidth: '0.4', opacity: '0.2' }))
     }
-    for (let index = 0; index < yGridCount; index++) {
-      const my = yMin + index * yGridStep
+    for (let my = yMin; my <= yMax + 1e-9; my += yStep) {
       if (my === 0 && xMin <= 0 && xMax >= 0) continue
       add('line', segAttrs(px([xMin, my]), px([xMax, my]), { strokeWidth: '0.4', opacity: '0.2' }))
     }
@@ -602,14 +623,22 @@ export function buildGraph(props) {
   // Sample densely enough that curves remain visually smooth even where their
   // slope changes quickly. Runs are split whenever a curve leaves the grid,
   // preventing an off-canvas point from stretching a polyline across it.
-  function drawPolynomialCurve(spec, { independentMin, independentMax, pointAt, errorName, unitPx = ux, toIndependent = (v) => v }) {
+  function drawPolynomialCurve(spec, {
+    independentMin, independentMax, pointAt, errorName, unitPx = ux,
+    toIndependent = (v) => v, independentDecreasing = false,
+  }) {
     if (!Number.isFinite(spec.a) || spec.a === 0) throw new Error(`${errorName} needs a nonzero numeric a`)
-    for (const [key, clamp] of [['from', Math.max], ['to', Math.min]]) {
+    // `from`/`to` are always stated in math x. Where the independent variable
+    // runs the OTHER way — a reflected logarithm, sampled in y, whose y falls
+    // as x rises — the smaller x is the larger bound, so the two clamps swap.
+    // Without this, trimming a mirrored branch reports an empty domain.
+    for (const key of ['from', 'to']) {
       if (spec[key] === undefined) continue
       if (!Number.isFinite(spec[key])) throw new Error(`${errorName} ${key} must be a finite number`)
       const t = toIndependent(spec[key])
-      if (key === 'from') independentMin = clamp(independentMin, t)
-      else independentMax = clamp(independentMax, t)
+      const boundsTheMinimum = independentDecreasing ? key === 'to' : key === 'from'
+      if (boundsTheMinimum) independentMin = Math.max(independentMin, t)
+      else independentMax = Math.min(independentMax, t)
     }
     if (!(independentMax > independentMin)) throw new Error(`${errorName} from/to leave no domain to draw`)
     const samples = Math.max(240, Math.ceil((independentMax - independentMin) * unitPx * 4))
@@ -872,12 +901,35 @@ export function buildGraph(props) {
       const b = c.b ?? Math.E
       if (!Number.isFinite(b) || b <= 0 || b === 1) throw new Error('log curve needs a positive base b other than 1')
       const lnB = Math.log(b)
+      // `reflect` mirrors the branch about its vertical asymptote, drawing
+      // k + a·log_b(h − x) on x < h. Without it the primitive can only open
+      // rightward, so every y-axis-reflected logarithm — f(x)=log(−x), and
+      // the "write the equation" graphs of §4.4 — had to be hand-sampled as a
+      // dense polyline, which is the pasted-SVG problem with extra steps.
+      const side = c.reflect ? -1 : 1
       // sampled in y so the vertical tangent at the asymptote stays smooth
       drawPolynomialCurve(spec, {
         independentMin: yMin, independentMax: yMax,
-        pointAt: (y) => [h + b ** ((y - k) / a), y], errorName: 'log curve',
+        pointAt: (y) => [h + side * b ** ((y - k) / a), y], errorName: 'log curve',
         unitPx: uy,
-        toIndependent: (x) => k + a * Math.log(Math.max(1e-12, x - h)) / lnB,
+        toIndependent: (x) => k + a * Math.log(Math.max(1e-12, side * (x - h))) / lnB,
+        independentDecreasing: side * a < 0,
+      })
+    } else if (c.kind === 'logistic') {
+      // y = k + c/(1 + a·e^(−b(x−h))) — the textbook's own parameter names, so
+      // a spec reads the way the model is printed. NOTE that `a` here is the
+      // model's shape parameter, not the vertical scale it names on every
+      // other kind; `c` is the carrying capacity the curve levels off at.
+      const capacity = c.c
+      const shape = c.a ?? 1
+      const rate = c.b ?? 1
+      if (!Number.isFinite(capacity) || capacity === 0) throw new Error('logistic curve needs a nonzero capacity c')
+      if (!Number.isFinite(shape) || shape <= 0) throw new Error('logistic curve needs a positive shape a')
+      if (!Number.isFinite(rate) || rate === 0) throw new Error('logistic curve needs a nonzero growth rate b')
+      drawPolynomialCurve(spec, {
+        independentMin: xMin, independentMax: xMax,
+        pointAt: (x) => [x, k + capacity / (1 + shape * Math.exp(-rate * (x - h)))],
+        errorName: 'logistic curve',
       })
     } else if (c.kind === 'reciprocal') {
       drawPolynomialCurve(spec, {

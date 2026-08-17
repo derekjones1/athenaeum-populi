@@ -98,7 +98,7 @@ not a publishing instruction.
 - `data/openstax/math-source-lock.json` (schema 2) records each bundle's
   official repository, current reviewed commit, module scope, and license,
   plus every book's collection, inferred PDF-era commit, and authoring status.
-- `data/openstax/math-source-map.json` (schema 2) connects all 221 authored
+- `data/openstax/math-source-map.json` (schema 2) connects all 229 authored
   local section paths to stable OpenStax module IDs and module SHA-256
   fingerprints, attributes each section to its bundle, and records per-book
   chapter and section coverage against the upstream collection.

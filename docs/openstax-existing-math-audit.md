@@ -15,14 +15,14 @@
 ## Coverage
 
 - Books with mapped sections: 4
-- Numbered sections mapped: 221
-- Metadata matched without a flag: 215
+- Numbered sections mapped: 229
+- Metadata matched without a flag: 223
 - Intentional adaptations adjudicated: 6
 - Unresolved sections needing review: 0
 - Modules differing from the committed map: 0
-- Objectives automatically located: 824/826
-- Core instructional headings automatically located: 844/848
-- Local interactive questions inventoried: 6457
+- Objectives automatically located: 856/858
+- Core instructional headings automatically located: 886/890
+- Local interactive questions inventoried: 6658
 - Upstream Try It prompts with a likely local prompt match: 3837/4576
 
 | Book | Bundle | Authoring status | Chapters | Sections mapped |
@@ -30,7 +30,7 @@
 | elementary-algebra | `prealgebra-bundle` | complete | 10/10 | 71/71 |
 | intermediate-algebra | `prealgebra-bundle` | complete | 12/12 | 70/70 |
 | prealgebra | `prealgebra-bundle` | complete | 11/11 | 60/60 |
-| precalculus | `college-algebra-bundle` | scaffolded | 12/12 | 20/73 |
+| precalculus | `college-algebra-bundle` | scaffolded | 12/12 | 28/73 |
 
 The prose percentage is five-word source-shingle traceability, not a quality
 score. Low values can reflect disclosed condensation, reformatted mathematics,
@@ -241,26 +241,34 @@ or intentionally omitted print material.
 | [prealgebra 11.2](../content/math/prealgebra/11-graphs/02-graphing-linear-equations.md) | `m81345` | metadata matched | 3/3 | 3/3 | 65% | 15/15 | 31 |
 | [prealgebra 11.3](../content/math/prealgebra/11-graphs/03-graphing-with-intercepts.md) | `m81350` | metadata matched | 4/4 | 4/4 | 63% | 14/14 | 32 |
 | [prealgebra 11.4](../content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md) | `m81354` | adapted-verified | 5/5 | 6/6 | 60% | 30/30 | 41 |
-| [precalculus 1.1](../content/math/precalculus/01-functions/01-functions-and-function-notation.md) | `m49301` | metadata matched | 5/5 | 7/7 | 77% | 0/0 | 29 |
-| [precalculus 1.2](../content/math/precalculus/01-functions/02-domain-and-range.md) | `m49304` | metadata matched | 2/2 | 5/5 | 60% | 0/0 | 21 |
-| [precalculus 1.3](../content/math/precalculus/01-functions/03-rates-of-change-and-behavior-of-graphs.md) | `m49306` | metadata matched | 4/4 | 5/5 | 72% | 0/0 | 15 |
+| [precalculus 1.1](../content/math/precalculus/01-functions/01-functions-and-function-notation.md) | `m49301` | metadata matched | 5/5 | 7/7 | 76% | 0/0 | 29 |
+| [precalculus 1.2](../content/math/precalculus/01-functions/02-domain-and-range.md) | `m49304` | metadata matched | 2/2 | 5/5 | 53% | 0/0 | 21 |
+| [precalculus 1.3](../content/math/precalculus/01-functions/03-rates-of-change-and-behavior-of-graphs.md) | `m49306` | metadata matched | 4/4 | 5/5 | 71% | 0/0 | 15 |
 | [precalculus 1.4](../content/math/precalculus/01-functions/04-composition-of-functions.md) | `m49308` | metadata matched | 5/5 | 6/6 | 78% | 0/0 | 25 |
-| [precalculus 1.5](../content/math/precalculus/01-functions/05-transformation-of-functions.md) | `m49312` | metadata matched | 5/5 | 6/6 | 71% | 0/0 | 23 |
-| [precalculus 1.6](../content/math/precalculus/01-functions/06-absolute-value-functions.md) | `m49314` | metadata matched | 3/3 | 4/4 | 48% | 0/0 | 16 |
+| [precalculus 1.5](../content/math/precalculus/01-functions/05-transformation-of-functions.md) | `m49312` | metadata matched | 5/5 | 6/6 | 51% | 0/0 | 23 |
+| [precalculus 1.6](../content/math/precalculus/01-functions/06-absolute-value-functions.md) | `m49314` | metadata matched | 3/3 | 4/4 | 21% | 0/0 | 16 |
 | [precalculus 1.7](../content/math/precalculus/01-functions/07-inverse-functions.md) | `m49320` | metadata matched | 4/4 | 4/4 | 76% | 0/0 | 23 |
-| [precalculus 2.1](../content/math/precalculus/02-linear-functions/01-linear-functions.md) | `m49324` | metadata matched | 5/5 | 7/7 | 66% | 0/0 | 25 |
-| [precalculus 2.2](../content/math/precalculus/02-linear-functions/02-graphs-of-linear-functions.md) | `m50389` | metadata matched | 5/5 | 7/7 | 69% | 0/0 | 24 |
-| [precalculus 2.3](../content/math/precalculus/02-linear-functions/03-modeling-with-linear-functions.md) | `m49326` | metadata matched | 3/3 | 3/3 | 76% | 0/0 | 17 |
+| [precalculus 2.1](../content/math/precalculus/02-linear-functions/01-linear-functions.md) | `m49324` | metadata matched | 5/5 | 7/7 | 60% | 0/0 | 25 |
+| [precalculus 2.2](../content/math/precalculus/02-linear-functions/02-graphs-of-linear-functions.md) | `m50389` | metadata matched | 5/5 | 7/7 | 21% | 0/0 | 24 |
+| [precalculus 2.3](../content/math/precalculus/02-linear-functions/03-modeling-with-linear-functions.md) | `m49326` | metadata matched | 3/3 | 3/3 | 74% | 0/0 | 17 |
 | [precalculus 2.4](../content/math/precalculus/02-linear-functions/04-fitting-linear-models-to-data.md) | `m49327` | metadata matched | 4/4 | 4/4 | 74% | 0/0 | 14 |
 | [precalculus 3.1](../content/math/precalculus/03-polynomial-and-rational-functions/01-complex-numbers.md) | `m49335` | metadata matched | 4/4 | 6/6 | 58% | 0/0 | 20 |
-| [precalculus 3.2](../content/math/precalculus/03-polynomial-and-rational-functions/02-quadratic-functions.md) | `m49337` | metadata matched | 4/4 | 5/5 | 62% | 0/0 | 29 |
+| [precalculus 3.2](../content/math/precalculus/03-polynomial-and-rational-functions/02-quadratic-functions.md) | `m49337` | metadata matched | 4/4 | 5/5 | 49% | 0/0 | 29 |
 | [precalculus 3.3](../content/math/precalculus/03-polynomial-and-rational-functions/03-power-functions-and-polynomial-functions.md) | `m49346` | metadata matched | 4/4 | 5/5 | 70% | 0/0 | 27 |
-| [precalculus 3.4](../content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md) | `m49347` | metadata matched | 7/7 | 7/7 | 73% | 0/0 | 23 |
+| [precalculus 3.4](../content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md) | `m49347` | metadata matched | 7/7 | 7/7 | 35% | 0/0 | 23 |
 | [precalculus 3.5](../content/math/precalculus/03-polynomial-and-rational-functions/05-dividing-polynomials.md) | `m49348` | metadata matched | 2/2 | 4/4 | 56% | 0/0 | 10 |
 | [precalculus 3.6](../content/math/precalculus/03-polynomial-and-rational-functions/06-zeros-of-polynomial-functions.md) | `m49349` | metadata matched | 7/7 | 8/8 | 73% | 0/0 | 24 |
-| [precalculus 3.7](../content/math/precalculus/03-polynomial-and-rational-functions/07-rational-functions.md) | `m49351` | metadata matched | 6/6 | 8/8 | 66% | 0/0 | 34 |
+| [precalculus 3.7](../content/math/precalculus/03-polynomial-and-rational-functions/07-rational-functions.md) | `m49351` | metadata matched | 6/6 | 8/8 | 36% | 0/0 | 34 |
 | [precalculus 3.8](../content/math/precalculus/03-polynomial-and-rational-functions/08-inverses-and-radical-functions.md) | `m49352` | metadata matched | 2/2 | 2/2 | 71% | 0/0 | 14 |
 | [precalculus 3.9](../content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md) | `m49353` | adapted-verified | 3/3 | 4/5 | 50% | 0/0 | 12 |
+| [precalculus 4.1](../content/math/precalculus/04-exponential-and-logarithmic-functions/01-exponential-functions.md) | `m49361` | metadata matched | 4/4 | 7/7 | 10% | 0/0 | 27 |
+| [precalculus 4.2](../content/math/precalculus/04-exponential-and-logarithmic-functions/02-graphs-of-exponential-functions.md) | `m49362` | metadata matched | 2/2 | 3/3 | 41% | 0/0 | 30 |
+| [precalculus 4.3](../content/math/precalculus/04-exponential-and-logarithmic-functions/03-logarithmic-functions.md) | `m49363` | metadata matched | 5/5 | 6/6 | 44% | 0/0 | 21 |
+| [precalculus 4.4](../content/math/precalculus/04-exponential-and-logarithmic-functions/04-graphs-of-logarithmic-functions.md) | `m49364` | metadata matched | 2/2 | 4/4 | 26% | 0/0 | 19 |
+| [precalculus 4.5](../content/math/precalculus/04-exponential-and-logarithmic-functions/05-logarithmic-properties.md) | `m49365` | metadata matched | 6/6 | 7/7 | 17% | 0/0 | 28 |
+| [precalculus 4.6](../content/math/precalculus/04-exponential-and-logarithmic-functions/06-exponential-and-logarithmic-equations.md) | `m49366` | metadata matched | 5/5 | 6/6 | 43% | 0/0 | 30 |
+| [precalculus 4.7](../content/math/precalculus/04-exponential-and-logarithmic-functions/07-exponential-and-logarithmic-models.md) | `m49367` | metadata matched | 5/5 | 6/6 | 8% | 0/0 | 27 |
+| [precalculus 4.8](../content/math/precalculus/04-exponential-and-logarithmic-functions/08-fitting-exponential-models-to-data.md) | `m49368` | metadata matched | 3/3 | 3/3 | 22% | 0/0 | 19 |
 
 ## Adjudicated intentional adaptations
 

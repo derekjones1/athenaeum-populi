@@ -598,3 +598,117 @@ test('the origin-adjacent x and y digits never print through each other', () => 
   }
 });
 
+
+// The logistic S-curve and the y-axis-reflected logarithm had no analytic
+// spelling, so §§4.4, 4.7 and 4.8 drew six of them as dense hand-sampled
+// point lists — the pasted-SVG problem with extra steps, and exactly what the
+// playbook says to fix by extending the engine instead.
+
+test('the logistic curve draws its exact formula, not a spline through samples', () => {
+  const model = (x) => 1000 / (1 + 999 * Math.exp(-0.6030 * x));
+  const window = { xMin: 0, xMax: 26, yMin: 0, yMax: 1100, unit: 15, yUnit: 0.5, ariaLabel: 't' };
+
+  const drawn = polylines(buildGraph({
+    ...window, curves: [{ kind: 'logistic', c: 1000, a: 999, b: 0.6030 }],
+  }));
+  assert.equal(drawn.length, 1, 'the S-curve is one unbroken run inside the grid');
+
+  // Render the closed form as an explicit polyline in the SAME window, so the
+  // two share one pixel mapping and the comparison needs no calibration.
+  const n = 2600;
+  const exact = polylines(buildGraph({
+    ...window,
+    polylines: [{ through: Array.from({ length: n + 1 }, (_, i) => {
+      const x = 26 * i / n;
+      return [x, model(x)];
+    }) }],
+  }))[0];
+
+  let worst = 0;
+  for (const [px, py] of drawn[0]) {
+    const near = exact.reduce((best, q) => (
+      Math.abs(q[0] - px) < Math.abs(best[0] - px) ? q : best));
+    if (Math.abs(near[0] - px) < 0.5) worst = Math.max(worst, Math.abs(near[1] - py));
+  }
+  assert.ok(worst < 1.5,
+    `logistic primitive is ${worst.toFixed(2)}px from its own closed form`);
+
+  // Its defining features, which a spline through samples guarantees neither of:
+  // it levels off at the capacity, and reaches half of it at ln(a)/b.
+  const ys = drawn[0].map((p) => p[1]);
+  const top = Math.min(...ys); // pixels grow downward, so the plateau is the min
+  const halfPixel = (Math.max(...ys) + top) / 2;
+  const half = drawn[0].reduce((best, p) => (
+    Math.abs(p[1] - halfPixel) < Math.abs(best[1] - halfPixel) ? p : best));
+  const xs = drawn[0].map((p) => p[0]);
+  const halfMathX = (half[0] - Math.min(...xs)) * 26 / (Math.max(...xs) - Math.min(...xs));
+  assert.ok(Math.abs(halfMathX - Math.log(999) / 0.6030) < 0.6,
+    `half the carrying capacity should fall near ln(a)/b, got x=${halfMathX.toFixed(2)}`);
+});
+
+test('a reflected log curve opens leftward from its asymptote', () => {
+  // f(x) = log_2(-(x-1)): asymptote x = 1, defined only for x < 1.
+  const mirrored = buildGraph({
+    xMin: -8, xMax: 4, yMin: -4, yMax: 4, unit: 26, ariaLabel: 't',
+    curves: [{ kind: 'log', b: 2, h: 1, reflect: true }],
+  });
+  const plain = buildGraph({
+    xMin: -8, xMax: 4, yMin: -4, yMax: 4, unit: 26, ariaLabel: 't',
+    curves: [{ kind: 'log', b: 2, h: 1 }],
+  });
+  const [mPts] = polylines(mirrored);
+  const [pPts] = polylines(plain);
+  assert.ok(mPts.length > 2 && pPts.length > 2);
+
+  // The two branches sit on opposite sides of the same asymptote.
+  const mMax = Math.max(...mPts.map((p) => p[0]));
+  const pMin = Math.min(...pPts.map((p) => p[0]));
+  assert.ok(Math.max(...mPts.map((p) => p[0])) <= pMin + 1,
+    'the reflected branch stays left of where the ordinary branch begins');
+  assert.ok(Math.min(...pPts.map((p) => p[0])) >= mMax - 1);
+
+  // y pixels grow downward, so a curve falling in value as x rises has both
+  // coordinates increasing together — the mirror of the ordinary branch.
+  const mDir = (mPts[mPts.length - 1][0] - mPts[0][0]) * (mPts[mPts.length - 1][1] - mPts[0][1]);
+  const pDir = (pPts[pPts.length - 1][0] - pPts[0][0]) * (pPts[pPts.length - 1][1] - pPts[0][1]);
+  assert.ok(mDir > 0, 'the reflected log descends as x increases');
+  assert.ok(pDir < 0, 'the ordinary log still rises as x increases');
+});
+
+test('from/to trims a reflected log branch instead of reporting an empty domain', () => {
+  // `from`/`to` are stated in math x, but a reflected branch is sampled in y
+  // and runs the other way, so the two clamps have to swap. They did not, and
+  // trimming a mirrored curve threw "from/to leave no domain to draw".
+  const out = buildGraph({
+    xMin: -10, xMax: 10, yMin: -3, yMax: 6, unit: 18, ariaLabel: 't',
+    curves: [{ kind: 'log', a: 2, reflect: true, from: -10, to: -0.333 }],
+  });
+  const [pts] = polylines(out);
+  assert.ok(pts.length > 2, 'the trimmed branch still draws');
+});
+
+test('a grid never collapses into a solid block on a small-unit axis', () => {
+  // The grid step is stated in MATH units. A "Cases" axis running 0–1,100 at
+  // 0.5 px per unit emitted 1,100 horizontal lines half a pixel apart, which
+  // renders as a grey block rather than a grid — it shipped that way in the
+  // §4.7 flu figure.
+  const out = buildGraph({
+    xMin: 0, xMax: 26, yMin: 0, yMax: 1100, unit: 15, yUnit: 0.5,
+    tickLabels: true, xTickStep: 2, yTickStep: 100, ariaLabel: 't',
+  });
+  const faint = out.els.filter((e) => e.tag === 'line' && e.attrs.opacity === '0.2');
+  const horizontal = [...new Set(faint
+    .filter((e) => e.attrs.y1 === e.attrs.y2)
+    .map((e) => Number(e.attrs.y1)))].sort((a, b) => a - b);
+  assert.ok(horizontal.length > 2, 'the grid is still drawn');
+  for (let i = 1; i < horizontal.length; i += 1) {
+    assert.ok(horizontal[i] - horizontal[i - 1] >= 9.5,
+      `grid lines ${horizontal[i - 1]} and ${horizontal[i]} are too close to read as a grid`);
+  }
+
+  // An ordinary window is untouched: one line per unit, exactly as before.
+  const plain = buildGraph({ ...GRID, ariaLabel: 't' });
+  const plainH = plain.els.filter((e) => e.tag === 'line' && e.attrs.opacity === '0.2'
+    && e.attrs.y1 === e.attrs.y2);
+  assert.equal(plainH.length, 10, 'a 20px-per-unit grid still draws every integer line');
+});

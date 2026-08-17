@@ -47,6 +47,10 @@
   "00883b645f75f31f": {
    "verdict": "ok"
   },
+  "009778efbac2eeb3": {
+   "verdict": "ok",
+   "note": "node: Math.exp(-0.5) = 0.6065306... -> 0.60653; matches CNXML solution."
+  },
   "009d3520f6b7aa45": {
    "verdict": "ok"
   },
@@ -184,6 +188,10 @@
   },
   "022658572fb47e33": {
    "verdict": "ok"
+  },
+  "0226634179f5d96f": {
+   "verdict": "ok",
+   "note": "b=4>1 growth, unshifted: range (0,\\infty), matches parent-function characteristics box."
   },
   "0227c6a8aa827263": {
    "verdict": "ok"
@@ -411,6 +419,10 @@
   "0489fbf7eac06856": {
    "verdict": "ok"
   },
+  "048d4a8b6968b043": {
+   "verdict": "ok",
+   "note": "Practice #5: quotient rule gives log_b(13)-log_b(17). Matches CNXML solution."
+  },
   "048f814cfcec8196": {
    "verdict": "ok"
   },
@@ -441,6 +453,10 @@
   },
   "04be17b4764f3ea0": {
    "verdict": "ok"
+  },
+  "04c11aaff2b8c1ed": {
+   "verdict": "ok",
+   "note": "Charge decreases by a constant dollar amount ($5) each session, a linear (not exponential) pattern; matches CNXML solution."
   },
   "04cd8de1959759ee": {
    "verdict": "ok"
@@ -620,6 +636,10 @@
   "06226365ba633398": {
    "verdict": "ok"
   },
+  "06234ad4cea7a3c8": {
+   "verdict": "ok",
+   "note": "g(0)=4*3^0=4, so y-intercept (0,4); matches CNXML solution exactly."
+  },
   "063db713df5c98e8": {
    "verdict": "ok"
   },
@@ -673,6 +693,10 @@
   },
   "06f82828a0ba98b2": {
    "verdict": "ok"
+  },
+  "06fa5176737908f1": {
+   "verdict": "ok",
+   "note": "Re-hashed by the parent adding answerForm=\"base-e\"; question and answer otherwise unchanged. b^x = e^{x ln b}, so 3(0.5)^x = 3e^{(ln 0.5)x}. Checked numerically at x=3: 3(0.125)=0.375 and 3e^{3 ln 0.5}=0.375. The token is required because the answer IS the printed function rewritten, so value grading alone accepts the prompt retyped."
   },
   "06fde302404ab6ef": {
    "verdict": "ok"
@@ -807,6 +831,10 @@
   },
   "086ddea6f88ffa2b": {
    "verdict": "ok"
+  },
+  "0870e41003c3ea75": {
+   "verdict": "ok",
+   "note": "Try It 4: ln(1/x^2)=ln(x^-2)=-2 ln x. Matches CNXML solution."
   },
   "0882a73e3036c414": {
    "verdict": "ok"
@@ -973,6 +1001,10 @@
   },
   "0a57db1f7146e249": {
    "verdict": "ok"
+  },
+  "0a58f6e67195c91f": {
+   "verdict": "ok",
+   "note": "3+e^{2t}=7e^{2t} => 3=6e^{2t} => e^{2t}=1/2 => t=-ln2/2, written -\\frac{1}{2}\\ln2. Verified self-grades correct under exact-log and printed equation is rejected."
   },
   "0a5dc712cbae95a8": {
    "verdict": "ok"
@@ -1381,6 +1413,10 @@
    "verdict": "ok",
    "note": "Factored (x-5)(x+5)/[x(x-1)(x-5)] = (x+5)/[x(x-1)] after cancelling x-5; VA at zeros of x(x-1): x=0,1; matches CNXML Try It 5."
   },
+  "0e4605bf2574a029": {
+   "verdict": "ok",
+   "note": "e^{2x}-e^x-6=0 factors (e^x-3)(e^x+2)=0; reject negative root, x=ln3. Verified exact-log."
+  },
   "0e48626f3eb589a2": {
    "verdict": "ok"
   },
@@ -1765,11 +1801,19 @@
   "129521ad7971ab1e": {
    "verdict": "ok"
   },
+  "129cd858d726158f": {
+   "verdict": "ok",
+   "note": "Carrying capacity is the constant c=150 in f(x)=150/(1+8e^{-2x}) (CNXML fs-id1165134350316, solution '150'), the limiting value as x grows without bound, not an evaluated point. Printed formula moved to surrounding prose (not the fillin's own question text) so verify-replay does not flag it as retyping a printed span."
+  },
   "12a2f14172aa407a": {
    "verdict": "ok"
   },
   "12a6170fa3b26177": {
    "verdict": "ok"
+  },
+  "12aba12ae5f306b2": {
+   "verdict": "ok",
+   "note": "a=1/2<1 so vertical compression (not stretch) of f(x)=4^x."
   },
   "12af426e539d4b11": {
    "verdict": "ok"
@@ -1848,6 +1892,10 @@
   },
   "139ae6dabc637861": {
    "verdict": "ok"
+  },
+  "13b5af65e72a7950": {
+   "verdict": "ok",
+   "note": "d=3 so asymptote y=3; matches CNXML solution exactly (h(x)=2^x+3 -> horizontal asymptote h(x)=3)."
   },
   "13bc18fc29d5f628": {
    "verdict": "ok"
@@ -2062,6 +2110,10 @@
   "1607c26f04669dc4": {
    "verdict": "ok"
   },
+  "1629faebd6325fa8": {
+   "verdict": "ok",
+   "note": "h(-7)=-1/2*(1/2)^-7+6 computed with node: -58; matches CNXML solution exactly."
+  },
   "163653c17fcb5853": {
    "verdict": "ok"
   },
@@ -2106,6 +2158,10 @@
   },
   "16bec161628b3a05": {
    "verdict": "ok"
+  },
+  "16c6110f994018b4": {
+   "verdict": "ok",
+   "note": "Population decreasing by a constant factor (1/8) each equal period is exponential decay; matches CNXML solution 'exponential; the population decreases by a proportional rate.'"
   },
   "16cd30254473d858": {
    "verdict": "ok"
@@ -2258,6 +2314,10 @@
   },
   "185724c39e46ddc4": {
    "verdict": "ok"
+  },
+  "185c0c9c884cbe0d": {
+   "verdict": "ok",
+   "note": "Domain of 3log(x-2)+1: x-2>0 -> x>2 -> (2,inf). Matches CNXML ti_04_04_07 solution."
   },
   "185d1a22bc3c7d15": {
    "verdict": "ok"
@@ -2790,8 +2850,16 @@
   "1e3580f232bfc150": {
    "verdict": "ok"
   },
+  "1e3641dc4d0a88e6": {
+   "verdict": "ok",
+   "note": "Evaluated the reproduced model at x=12: 522.8859*1.19645^12=4499.38, matching CNXML's printed \\$4,499.38."
+  },
   "1e3be80bd4626754": {
    "verdict": "ok"
+  },
+  "1e4621c2842dae2f": {
+   "verdict": "ok",
+   "note": "Try It 13: change-of-base with n=e gives ln(8)/ln(0.5); ln(8)/ln(0.5) = -3 exactly (node), matching log_{0.5}(8)=-3 by direct check (0.5^-3=8). Matches CNXML solution."
   },
   "1e4ad0859f27df8d": {
    "verdict": "ok"
@@ -3011,6 +3079,10 @@
   "20d103dc2fb4ed41": {
    "verdict": "ok"
   },
+  "20d2755a60ff5f7f": {
+   "verdict": "ok",
+   "note": "node: solved 9000*(1+r/2)^20=13373.53 for r, got r=0.0400000262 -> 4%; matches CNXML solution."
+  },
   "20dc11b17515cb87": {
    "verdict": "ok"
   },
@@ -3101,6 +3173,10 @@
   },
   "21c87c1975726934": {
    "verdict": "ok"
+  },
+  "21ecaf32f7237300": {
+   "verdict": "ok",
+   "note": "Parent-authored, added to restore the missing third part of source exercise 27 (asymptote/domain/range). A vertical shift changes neither the inputs allowed nor the domain of 2^x, so the domain stays all reals: (-inf, inf)."
   },
   "21f6200ed58324ca": {
    "verdict": "ok"
@@ -3216,6 +3292,10 @@
   "234259e4482d865e": {
    "verdict": "ok"
   },
+  "2358fbe1429c2656": {
+   "verdict": "ok",
+   "note": "36^{3b-2b}=36^b=6^{2b}; 216^{2-b}=6^{3(2-b)}; 2b=6-3b => b=6/5. Verified numerically via node (both sides equal ~73.716)."
+  },
   "2369a3badc19194b": {
    "verdict": "ok"
   },
@@ -3264,6 +3344,10 @@
   "23f9a96253138ead": {
    "verdict": "ok"
   },
+  "24091d40ba8a0e0f": {
+   "verdict": "ok",
+   "note": "node: 40000/(1+0.06/4)^(4*18) = 13693.1999... -> 13693; matches CNXML Try It #9 solution."
+  },
   "240bbbbd928b8bd6": {
    "verdict": "ok"
   },
@@ -3292,6 +3376,10 @@
   },
   "2471250c723a2f0a": {
    "verdict": "ok"
+  },
+  "2476547f5a46f6a8": {
+   "verdict": "ok",
+   "note": "e^{-3k}=38 => k=-ln38/3, written -\\frac{\\ln 38}{3}. Verified exact-log self-grades and rejects printed span."
   },
   "24784e989d216e61": {
    "verdict": "ok"
@@ -3346,6 +3434,10 @@
   },
   "253e7dbf4023a6d9": {
    "verdict": "ok"
+  },
+  "2546bec070dff549": {
+   "verdict": "ok",
+   "note": "Try It 5: 2log_3(4)=log_3(4^2)=log_3(16). Matches CNXML solution."
   },
   "2547b7b0e205ebd9": {
    "verdict": "ok"
@@ -3458,14 +3550,26 @@
   "269c6df410d20f65": {
    "verdict": "ok"
   },
+  "26ab538f5ea39be6": {
+   "verdict": "ok",
+   "note": "5^{2x}=5^{3x+2}: bases match, 2x=3x+2 => x=-2. Independently solved."
+  },
   "26b77abe952dbffc": {
    "verdict": "ok"
+  },
+  "26c1c28664a15856": {
+   "verdict": "ok",
+   "note": "Reproduced via OLS on debt vs ln(x), x=1..11 (years 2000-2010): a=141.9124, b=10.4537, matching CNXML fs-id1322269 (Try It #2)."
   },
   "26c8a6202fbdfac7": {
    "verdict": "ok"
   },
   "26d6f45a92bff6be": {
    "verdict": "ok"
+  },
+  "26d79b94ebb0de15": {
+   "verdict": "ok",
+   "note": "Asymptote y=d with d=3."
   },
   "26dfccce773f8d00": {
    "verdict": "ok"
@@ -3668,6 +3772,10 @@
   "28f0c7f8505823fd": {
    "verdict": "ok"
   },
+  "28f1acc866c500c2": {
+   "verdict": "ok",
+   "note": "ln(1)=0 in any base; matches CNXML Section Exercise 51 (fs-id1165137736480)."
+  },
   "290b50d1e5e37048": {
    "verdict": "ok"
   },
@@ -3809,6 +3917,10 @@
   },
   "2a9b4c3ce6b1021d": {
    "verdict": "ok"
+  },
+  "2a9cc43f26bc9e19": {
+   "verdict": "ok",
+   "note": "ln(x^2)=ln1 => x^2=1 => x=1 or x=-1; both satisfy domain x^2>0. Unordered pair, verified with checkAnswer {unordered:true}."
   },
   "2aa4009a581c55c0": {
    "verdict": "ok"
@@ -4136,6 +4248,10 @@
   "2e51e4dc1cc6299e": {
    "verdict": "ok"
   },
+  "2e779866f8ac7504": {
+   "verdict": "ok",
+   "note": "f(x)=-5(4)^x-1: as x->infinity, 4^x->infinity so f->-infinity; matches CNXML solution exactly (computed independently, not copied from key)."
+  },
   "2e87a9eec7cee3f7": {
    "verdict": "ok"
   },
@@ -4147,6 +4263,10 @@
   },
   "2eed2c677d13e738": {
    "verdict": "ok"
+  },
+  "2ef78cc164f018fc": {
+   "verdict": "ok",
+   "note": "ln(x+1)=5 => x+1=e^5 => x=e^5-1. Independently solved."
   },
   "2efe83c3e244e53d": {
    "verdict": "ok"
@@ -4383,6 +4503,10 @@
    "verdict": "ok",
    "note": "Verified by hand 2026-08-15. Both graphs ARE on the page, just outside the 80-line context window the pass used: graph (a) g at line 382 (upward parabola, vertex (3,-1), x-intercepts 2 and 4 => g(x)=(x-3)^2-1) and graph (b) f at line 461 (downward parabola, vertex (3,6), through (0,-3) => f(x)=-(x-3)^2+6). f(2)=5 and g(5)=3, so g(f(2))=3, matching the declared answer."
   },
+  "31a1647955fb41cb": {
+   "verdict": "ok",
+   "note": "Range sits above the asymptote y=3: (3,\\infty); matches CNXML solution's stated range (all reals strictly greater than 3)."
+  },
   "31af01ee52ee4cf2": {
    "verdict": "ok"
   },
@@ -4448,6 +4572,10 @@
   },
   "32382f19714f6a72": {
    "verdict": "ok"
+  },
+  "32477c333798bc16": {
+   "verdict": "ok",
+   "note": "Computed 25*(2/5)=10 using ln(e^(2/5))=2/5; matches CNXML Section Exercise 53 (fs-id1165137762957)."
   },
   "32537c35b530c046": {
    "verdict": "ok"
@@ -4530,6 +4658,10 @@
   },
   "334f9c7cc08dec82": {
    "verdict": "ok"
+  },
+  "3352b0bb973043ca": {
+   "verdict": "ok",
+   "note": "The domain of ln is (0,infinity), so ln(-500) is undefined for reals; matches CNXML Try It 8, converted to multiple choice since the answer is categorical (undefined), not a number."
   },
   "33582220259749a1": {
    "verdict": "ok"
@@ -4644,6 +4776,10 @@
   },
   "34b80be664d813ee": {
    "verdict": "ok"
+  },
+  "34bb8303f5ee18ee": {
+   "verdict": "ok",
+   "note": "As x->-infinity, 4^x->0 so f->-1 (the asymptote); matches CNXML solution exactly."
   },
   "34bbf463a6c02366": {
    "verdict": "ok"
@@ -4772,6 +4908,10 @@
   },
   "364baaca8ff177fe": {
    "verdict": "ok"
+  },
+  "364eac72934678e6": {
+   "verdict": "ok",
+   "note": "P(180)=1350*e^{(ln2/20)*180}=1350*2^9=691200 exactly (node computed, uses unrounded k); matches CNXML's '≈691,200'."
   },
   "36519b6af083d99b": {
    "verdict": "ok"
@@ -4917,6 +5057,10 @@
   "37879b83ceb63baa": {
    "verdict": "ok"
   },
+  "378b0f408fc9ca67": {
+   "verdict": "ok",
+   "note": "Practice #33: log_3(22)=ln(22)/ln(3)=2.813590... (node), rounds to 2.81359. Matches CNXML solution."
+  },
   "37900651b0f4df9a": {
    "verdict": "ok"
   },
@@ -4925,6 +5069,10 @@
   },
   "3796eab2002f4d22": {
    "verdict": "ok"
+  },
+  "3799f2874671ba78": {
+   "verdict": "ok",
+   "note": "Parent CORRECTED the source here. k = ln(0.5)/10.4 = -0.0666487673615332, which to four decimal places is -0.0666. The CNXML key prints -0.0667, which would imply a half-life of 10.392 h rather than the stated 10.4 h. Recomputed in node; e^(k*10.4)=0.5 confirms. Source defect logged as errata #39."
   },
   "379af0901f07307d": {
    "verdict": "ok"
@@ -4946,6 +5094,10 @@
   },
   "37c607dff1c42c1c": {
    "verdict": "ok"
+  },
+  "37d04ecc38fe8fdc": {
+   "verdict": "ok",
+   "note": "Solved 116=(1/4)(1/8)^x -> x=ln(464)/ln(1/8) computed with node: -2.952660331709191, rounds to -2.953; matches CNXML solution exactly."
   },
   "37d50ebd7dde7498": {
    "verdict": "ok"
@@ -5063,6 +5215,10 @@
   "393421a5b447bfde": {
    "verdict": "ok"
   },
+  "393b6b128a062f5c": {
+   "verdict": "ok",
+   "note": "log_a(b)=c converts to a^c=b by definition; matches CNXML Section Exercise 7 (fs-id1165137473551)."
+  },
   "393e5f16d481362b": {
    "verdict": "ok"
   },
@@ -5105,6 +5261,10 @@
   "3998008b828910a9": {
    "verdict": "ok"
   },
+  "3999280be4005289": {
+   "verdict": "ok",
+   "note": "Try It 8: x^2-9 factors to (x-3)(x+3); confirmed by float substitution at x=5 (node) that ln of the printed quotient equals (1/2)ln(x-1)+ln(2x+1)-ln(x+3)-ln(x-3). Matches CNXML solution (terms reordered)."
+  },
   "399fb24d16f3b83f": {
    "verdict": "ok",
    "note": "Try It 3. Only rational candidates for x^3-5x^2+2x+1 are +-1 (constant/leading coeff both 1); computed f(1)=-1, f(-1)=-7, neither 0, so 0 rational zeros. Matches CNXML ti_03_06_03 solution text 'There are no rational zeros.'"
@@ -5123,6 +5283,10 @@
   },
   "39c24d38f026bbbe": {
    "verdict": "ok"
+  },
+  "39c7e66bcab99eaf": {
+   "verdict": "ok",
+   "note": "Parent key point (4,1) for log_4(x); f(x)=(1/2)log_4(x) scales y-coordinates by 1/2, giving (4, 1/2). Independently derived from the vertical-compression rule (matches CNXML ti_04_04_06, which only states domain/range/asymptote, not this point, so this specific fact is independently computed, not copied)."
   },
   "39c988cb509dfb62": {
    "verdict": "ok",
@@ -5237,6 +5401,10 @@
   "3b41b8adc399c925": {
    "verdict": "ok"
   },
+  "3b4d8ad27d1e3a2e": {
+   "verdict": "ok",
+   "note": "node: -2*Math.exp(-1-1) = -0.27067... -> -0.2707; matches CNXML solution."
+  },
   "3b53dba5d523e3d3": {
    "verdict": "ok"
   },
@@ -5286,6 +5454,10 @@
   "3bd9ccb518b73ec7": {
    "verdict": "ok"
   },
+  "3be25ebdc5b1ec08": {
+   "verdict": "ok",
+   "note": "3^2=9 converts to log_3(9)=2; distractors are base/argument/exponent swaps of the correct conversion."
+  },
   "3bf0b5dc2c08052d": {
    "verdict": "ok"
   },
@@ -5309,6 +5481,10 @@
   },
   "3c383b0397e6e38e": {
    "verdict": "ok"
+  },
+  "3c5f96090fbdd378": {
+   "verdict": "ok",
+   "note": "k=-ln(2)/30; solving 1/200=e^{kt} gives t=229.3157<230, so 'less than'; matches CNXML."
   },
   "3c72f5e4824fd658": {
    "verdict": "ok"
@@ -5376,6 +5552,10 @@
   "3d4d006a6686fc90": {
    "verdict": "ok"
   },
+  "3d6e28169c9a47bd": {
+   "verdict": "ok",
+   "note": "P(0)=175/(1+6.995)=21.89, rounds to 22, matching CNXML fs-id1661534 (Numeric #11)."
+  },
   "3d7749138a4c853b": {
    "verdict": "ok"
   },
@@ -5417,6 +5597,10 @@
   },
   "3e13c3649cefe7db": {
    "verdict": "ok"
+  },
+  "3e1ba71fb3f59a9f": {
+   "verdict": "ok",
+   "note": "Matches CNXML solution's own phrasing: the asymptote is the value the function's outputs approach as x grows extremely large or extremely small."
   },
   "3e1ce3be3fe5a167": {
    "verdict": "ok"
@@ -5533,6 +5717,10 @@
   "3f6234e56f84ac0f": {
    "verdict": "ok"
   },
+  "3f73c6eae51f1725": {
+   "verdict": "ok",
+   "note": "Half-life measures decay to half the original amount, so it is associated with exponential decay; matches CNXML verbal exercise."
+  },
   "3f73e1208f63b746": {
    "verdict": "ok"
   },
@@ -5637,6 +5825,10 @@
   },
   "40e65ec257fbb8a3": {
    "verdict": "ok"
+  },
+  "40e9f1c6a84cad05": {
+   "verdict": "ok",
+   "note": "node: 100*Math.exp(-0.173*365) = 3.7711598e-26 -> 3.77x10^-26; matches CNXML solution 3.77E-26."
   },
   "40f352116dd324e6": {
    "verdict": "ok"
@@ -5753,6 +5945,10 @@
    "verdict": "ok",
    "note": "f(8-i)=2(8-i)^2-3(8-i)=2(63-16i)-24+3i=126-32i-24+3i=102-29i; recomputed independently with node, matches CNXML ti_03_01_06."
   },
+  "42080d6a12869ab5": {
+   "verdict": "ok",
+   "note": "P(0)=68/(1+16)=4, matching CNXML fs-id1440057 (koi, #17)."
+  },
   "420ddd0777452290": {
    "verdict": "ok"
   },
@@ -5770,6 +5966,10 @@
   },
   "425530e7a55c8d46": {
    "verdict": "ok"
+  },
+  "426d1ba81eebd855": {
+   "verdict": "ok",
+   "note": "Try It 9: log3-log4+log5-log6 = log(3*5/(4*6)) = log(15/24) = log(5/8) reduced; verified numerically (node, log10). Matches CNXML solution's stated reduced form."
   },
   "427cf5910e32cd9b": {
    "verdict": "ok",
@@ -5807,6 +6007,10 @@
   },
   "4300ecc061b0d28e": {
    "verdict": "ok"
+  },
+  "43070fdfd3fb2448": {
+   "verdict": "ok",
+   "note": "Unshifted parent function asymptote is always y=0."
   },
   "430def64e86daf3c": {
    "verdict": "ok"
@@ -5904,11 +6108,19 @@
   "43ea045e49e832e7": {
    "verdict": "ok"
   },
+  "43ef41c4c01b6063": {
+   "verdict": "ok",
+   "note": "Directly from the problem statement: t years after 2011, (0,129) and (2,236)."
+  },
   "43f485768cee4c80": {
    "verdict": "ok"
   },
   "43fbbd2071255d3a": {
    "verdict": "ok"
+  },
+  "441053506fcf056e": {
+   "verdict": "ok",
+   "note": "log_5(25)=2 is 5^2=25 by definition; matches CNXML Try It 1b."
   },
   "44107b1349f08108": {
    "verdict": "ok"
@@ -5986,6 +6198,10 @@
   "44bedbc3e3003862": {
    "verdict": "ok"
   },
+  "44c1daad025619e4": {
+   "verdict": "ok",
+   "note": "Reproduced Table 9's fit via OLS on f(x) vs ln(x) (x=1..6): a=5.06276, b=1.93387, matching CNXML fs-id1650282's coefficients (5.063, 1.934) exactly. NOTE: the raw CNXML solution prints the function as log(x) rather than ln(x); my OLS regression against ln(x) reproduces the coefficients exactly, confirming ln is correct and log is an upstream transcription defect (reported in this file's footer and in my report to the parent)."
+  },
   "44c2bc90849b2749": {
    "verdict": "ok"
   },
@@ -6045,6 +6261,10 @@
   "457a580a32fac8ed": {
    "verdict": "ok",
    "note": "Numeric maximization of 100t/(2t^2+75) over t in [0,50] (node scan, step 0.001) peaks at t=6.124; exact critical point sqrt(75/2)=6.1237...; rounds to 6.12, matching the CNXML source answer."
+  },
+  "458644f3180f4c8f": {
+   "verdict": "ok",
+   "note": "Computed Math.log10(Math.sqrt(2))=0.150514... -> 0.151 to nearest thousandth; matches CNXML Section Exercise 57 (fs-id1165137527828)."
   },
   "4586ac485085592a": {
    "verdict": "ok"
@@ -6109,6 +6329,10 @@
   },
   "46676476187e2254": {
    "verdict": "ok"
+  },
+  "46791da6c54a814c": {
+   "verdict": "ok",
+   "note": "Arguments equal: -2x^2-7x=x-2 => x^2+4x-1=0 => x=-2+/-sqrt5 (approx 0.236, -4.236); domain requires x-2>0 i.e. x>2, neither candidate qualifies, so no solution. Verified numerically; categorical multiplechoice."
   },
   "467f55bf6876783f": {
    "verdict": "ok"
@@ -6291,6 +6515,10 @@
   },
   "47e873da6cd2084f": {
    "verdict": "ok"
+  },
+  "47ee1b71448ef438": {
+   "verdict": "ok",
+   "note": "Practice #19: combine x^2*x^(2/3) and y^3*y^(5/3) exponents (cube root as 1/3 power); verified by float substitution x=2,y=3 (node) equals (8/3)log(x)+(14/3)log(y). Matches CNXML solution."
   },
   "47fec9953e1ec75d": {
    "verdict": "ok"
@@ -7039,6 +7267,10 @@
   "51748301415b4a83": {
    "verdict": "ok"
   },
+  "5175649ea91ae430": {
+   "verdict": "ok",
+   "note": "Ordering log_b(x) curves by base at a fixed x>1: smaller base gives a larger (steeper) value, so ascending base order b=2,e,5,10,25 gives descending curve height A,B,C,D,E. f(x)=ln(x) has base e, the second-smallest base, so it is curve B. Matches CNXML fs-id1165135194197 solution B; independently confirmed via node computing log values at x=9.8 (curve A=3.29 > B=2.28 > C=1.42 > D=0.99 > E=0.71)."
+  },
   "5178ed26ef15cac8": {
    "verdict": "ok"
   },
@@ -7172,6 +7404,10 @@
   },
   "53728d3c6cba0450": {
    "verdict": "ok"
+  },
+  "53776fbe5d96083e": {
+   "verdict": "ok",
+   "note": "Practice #17: sqrt(x^3 y^-4)=(x^3y^-4)^(1/2); power rule gives (3/2)log(x)-2log(y). Matches CNXML solution."
   },
   "53840cdd1251452e": {
    "verdict": "ok"
@@ -7312,6 +7548,10 @@
   "55095723c2650c83": {
    "verdict": "ok"
   },
+  "551133f0851590b9": {
+   "verdict": "ok",
+   "note": "P(3)=558/(1+54.8*e^(-0.462*3))=37.95, rounds to 38, matching CNXML eip-idm1412767296 (wolves, #23)."
+  },
   "55166a61767e4947": {
    "verdict": "ok"
   },
@@ -7358,6 +7598,10 @@
   "557f0e9a006f1651": {
    "verdict": "ok",
    "note": "Section exercise fs-id1165137696700: k=y*cbrt(x)=5*3=15; y=15/cbrt(125)=15/5=3. Verified with node arithmetic; matches CNXML solution."
+  },
+  "5594d2c23c1a664e": {
+   "verdict": "ok",
+   "note": "node: b=(730.89/29.495)^(1/130)=1.025000..., a=29.495/b^20=17.9999... -> a≈18,b≈1.025; matches CNXML solution y≈18*1.025^x."
   },
   "5595baa3aadd00a7": {
    "verdict": "ok"
@@ -7552,6 +7796,10 @@
   "5788591692b1cca6": {
    "verdict": "ok"
   },
+  "578ddb3d318164fb": {
+   "verdict": "ok",
+   "note": "Reflected about x-axis (a<0), so range flips below the asymptote: (-\\infty,-2), matches CNXML solution."
+  },
   "5797846b12a64720": {
    "verdict": "ok"
   },
@@ -7572,6 +7820,10 @@
   },
   "57b481da9574a627": {
    "verdict": "ok"
+  },
+  "57b5353b1c29b201": {
+   "verdict": "ok",
+   "note": "Reflect f(x)=3^x about y-axis (x->-x) then stretch by 4: g(x)=4(3)^{-x}; matches CNXML solution exactly."
   },
   "57b75a8ae6e8ade9": {
    "verdict": "ok"
@@ -7648,6 +7900,10 @@
   "58cd44f3dae431e6": {
    "verdict": "ok"
   },
+  "58d278d02623f41e": {
+   "verdict": "ok",
+   "note": "Computed 6*(ln(4)/ln(8))=6*(2/3)=4 (log_8(4)=2/3 since 8^(2/3)=4); matches CNXML Section Exercise 45 (fs-id1165135190140)."
+  },
   "58d6bc7bce90256f": {
    "verdict": "ok"
   },
@@ -7662,6 +7918,10 @@
   },
   "5906beac28c8cec1": {
    "verdict": "ok"
+  },
+  "59097f6f9e154cf7": {
+   "verdict": "ok",
+   "note": "Practice #35: log_6(5.38)=ln(5.38)/ln(6)=0.939131... (node), rounds to 0.93913. Matches CNXML solution."
   },
   "5911577853dcf144": {
    "verdict": "ok"
@@ -7707,6 +7967,14 @@
   },
   "597dd1940acc0d33": {
    "verdict": "ok"
+  },
+  "59915838f7de2f88": {
+   "verdict": "ok",
+   "note": "f(x)=log_3(x+4): asymptote at x=-4 (argument x+4=0). Matches CNXML ti_04_04_04 solution domain (-4,inf)/asymptote x=-4."
+  },
+  "59917db7b4123c40": {
+   "verdict": "ok",
+   "note": "node: 1.39*Math.pow(1.006,18) = 1.548026... -> 1.548."
   },
   "59937c816c87f94c": {
    "verdict": "ok"
@@ -8031,6 +8299,10 @@
   "5d4eb2a0c6ff2f70": {
    "verdict": "ok"
   },
+  "5d4f5ade58775d85": {
+   "verdict": "ok",
+   "note": "t=703800000*ln(0.8)/ln(0.5)=226572993.18... rounds to 226572993 years (nearest year, matching the worked Example's own precision)."
+  },
   "5d5cbf2333d90322": {
    "verdict": "ok",
    "note": "The polyline is constant at y=-2 for x<=-1, rises linearly to (1,2), then constant at y=2 for x>=1 (confirmed by converting the polyline's screen coordinates); this is single-valued everywhere, so it passes the vertical line test and is a 'function', matching the declared answer."
@@ -8106,6 +8378,10 @@
   },
   "5e430d89ad3e8b3c": {
    "verdict": "ok"
+  },
+  "5e551ef2a2bf4c22": {
+   "verdict": "ok",
+   "note": "y-axis reflection does not change range; still (0,\\infty), matches CNXML Try It ti_04_02_05 solution stating range (0,\\infty)."
   },
   "5e64362ddc1d81ab": {
    "verdict": "ok"
@@ -8451,8 +8727,16 @@
   "6319075bd3fb48e6": {
    "verdict": "ok"
   },
+  "632a667e49dbde15": {
+   "verdict": "ok",
+   "note": "x=ln1000/ln2=9.9657842... rounds to 9.97 (2 decimal places as the prompt asks). Computed via node."
+  },
   "632b4b5d4d8eef70": {
    "verdict": "ok"
+  },
+  "6339e59800e0e742": {
+   "verdict": "ok",
+   "note": "2^{-3n}*1/4=2^{-3n-2}=2^{n+2} => -3n-2=n+2 => n=-1. Verified numerically (both sides equal 2)."
   },
   "633a7320f6ecd360": {
    "verdict": "ok"
@@ -8707,6 +8991,10 @@
   "65f0f747698d5941": {
    "verdict": "ok"
   },
+  "65f38b4e19c21e3b": {
+   "verdict": "ok",
+   "note": "d=-2 so asymptote y=-2, matches CNXML solution."
+  },
   "66115bcd9071a6eb": {
    "verdict": "ok"
   },
@@ -8755,6 +9043,10 @@
   "66c1b3d918dec627": {
    "verdict": "ok"
   },
+  "66c230175bd8ebd9": {
+   "verdict": "ok",
+   "note": "k=-ln(2)/80000000=-8.6643e-9, rounds to -8.7e-9 (2 sig figs); matches CNXML Try It 1."
+  },
   "66c52e79505e0d0d": {
    "verdict": "ok"
   },
@@ -8766,6 +9058,10 @@
   },
   "66e6ba346ad490c7": {
    "verdict": "ok"
+  },
+  "66e6dc97fdeb2ed5": {
+   "verdict": "ok",
+   "note": "Domain of log_{1/5}(x) is (0,inf) for any base, since argument x itself must be positive. Matches CNXML ti_04_04_03 solution (domain (0,inf))."
   },
   "66e7d1a322f50d8e": {
    "verdict": "ok"
@@ -8782,6 +9078,10 @@
   },
   "6714a187fb5e01f8": {
    "verdict": "ok"
+  },
+  "67155d6c7a7a70ce": {
+   "verdict": "ok",
+   "note": "node: 8*Math.pow(1.2,3-5) = 5.55555... -> 5.5556."
   },
   "67179131b85c1289": {
    "verdict": "ok"
@@ -9019,6 +9319,10 @@
   "6964d73a053b801e": {
    "verdict": "ok"
   },
+  "696c500ac2d69a20": {
+   "verdict": "ok",
+   "note": "Try It 2: numerator 7x^2+21x=7x(x+3) cancels the 7x factor in the denominator, leaving (x+3)/((x-1)(x-2)); confirmed by float substitution at x=5 (node) that log_3 of the printed quotient equals log_3(x+3)-log_3(x-1)-log_3(x-2). Matches CNXML solution."
+  },
   "697ca19dea2c7e32": {
    "verdict": "ok"
   },
@@ -9033,6 +9337,10 @@
   },
   "69a774671d337703": {
    "verdict": "ok"
+  },
+  "69aa4beed75517a1": {
+   "verdict": "ok",
+   "note": "Domain of ln(1/2-x): 1/2-x>0 -> x<1/2 -> (-inf,1/2). Matches CNXML fs-id1165135264771 solution (also verifies its stated range (-inf,inf), not asked here)."
   },
   "69aa87fedb4fa049": {
    "verdict": "ok"
@@ -9123,6 +9431,10 @@
   },
   "6abdb8c7f7a46c40": {
    "verdict": "ok"
+  },
+  "6ac8434c0641cd73": {
+   "verdict": "ok",
+   "note": "Try It 12: halving concentration is the mirror of Example 12's doubling; pH_new=-log(C/2)=P+log(2). log10(2)=0.301029996 (node), rounds to 0.301. No printed CNXML solution for this Try It, but it's the direct algebraic mirror of the worked Example immediately above it, which is fully solved in the source (P-log(2)≈P-0.301 for doubling)."
   },
   "6ad37a0399bf66ca": {
    "verdict": "ok"
@@ -9386,6 +9698,10 @@
   "6dcfb3660f10978e": {
    "verdict": "ok"
   },
+  "6dd8378ac6331fca": {
+   "verdict": "ok",
+   "note": "a=3 from (0,3); b^3=375/3=125 so b=5 exactly; matches CNXML solution y=3*5^x."
+  },
   "6ddb7a9285997683": {
    "verdict": "ok"
   },
@@ -9499,6 +9815,10 @@
   "6f0413e870d9354c": {
    "verdict": "ok"
   },
+  "6f212ee3207bbe79": {
+   "verdict": "ok",
+   "note": "Taking ln of both sides of y=b^x gives ln(y)=ln(b^x)=x ln(b) by the power rule of logarithms; matches CNXML solution's first derivation step exactly."
+  },
   "6f2402ed3c840376": {
    "verdict": "ok"
   },
@@ -9535,6 +9855,10 @@
   "6f9a49464beff5e4": {
    "verdict": "ok"
   },
+  "6f9b0c69aea0800c": {
+   "verdict": "ok",
+   "note": "2^-1=1/2 converts to log_2(1/2)=-1; distractors are base/argument/exponent swaps."
+  },
   "6fb2005539381e24": {
    "verdict": "ok"
   },
@@ -9546,6 +9870,10 @@
   },
   "6fdfe96f0e587568": {
    "verdict": "ok"
+  },
+  "6ff857969c6e23a6": {
+   "verdict": "ok",
+   "note": "2^y=1/32=2^-5, so y=-5; matches CNXML Try It 4."
   },
   "6ffca2c246c4cb93": {
    "verdict": "ok"
@@ -9573,6 +9901,10 @@
   },
   "705b5a65c0beaa9a": {
    "verdict": "ok"
+  },
+  "705c55d5376296d6": {
+   "verdict": "ok",
+   "note": "e^k=h converts to ln(h)=k by definition; matches CNXML Section Exercise 25 (fs-id1165135296148)."
   },
   "7069041854d87f88": {
    "verdict": "ok"
@@ -9706,6 +10038,10 @@
   "7214b4d843276692": {
    "verdict": "ok"
   },
+  "7214f7fd351cf482": {
+   "verdict": "ok",
+   "note": "Computed via node: x=ln3/ln(2/3)=-2.709511291... rounds to -2.7095. Verified checkAnswer self-grades correct under decimal and rejects the printed equation."
+  },
   "721626f2ff833af9": {
    "verdict": "ok"
   },
@@ -9732,6 +10068,10 @@
   },
   "723e1f20fba460e4": {
    "verdict": "ok"
+  },
+  "7242d6b2a35a8a38": {
+   "verdict": "ok",
+   "note": "Same derivation as the preceding item expressed as a percent: -0.0666487673615332 -> -6.66% to two decimal places. Source's -6.67% corrected; errata #39."
   },
   "72438bf063197148": {
    "verdict": "ok"
@@ -10066,6 +10406,10 @@
   "76f808f3c98bf860": {
    "verdict": "ok"
   },
+  "76f880380c88d646": {
+   "verdict": "ok",
+   "note": "Solved system a*b=3, a*b^2=4.5 -> b=1.5 exactly, a=2 exactly; matches CNXML solution f(x)=2(1.5)^x."
+  },
   "76fe513db0670362": {
    "verdict": "ok"
   },
@@ -10083,6 +10427,14 @@
   },
   "7725ae5d49b337d7": {
    "verdict": "ok"
+  },
+  "772bba39a54adbcc": {
+   "verdict": "ok",
+   "note": "Practice #9: product rule combines ln7+lnx+lny into ln(7xy). Matches CNXML solution."
+  },
+  "7738ac41f958b95a": {
+   "verdict": "ok",
+   "note": "Computed log(sqrt(6))/log(6)=0.5 exactly (6^(1/2)=sqrt(6)); matches CNXML Section Exercise 43 (fs-id1165137590077)."
   },
   "773cae40b69fd28d": {
    "verdict": "ok"
@@ -10194,6 +10546,10 @@
    "verdict": "ok",
    "note": "The figure is an ellipse centered at (-2,1) with rx=1, ry=2 (confirmed from cx=86,cy=86,rx=20,ry=40 on the given axes); a vertical line at x=-2 hits it at y=-1 and y=3, so it fails the vertical line test and is 'not a function', matching the declared answer."
   },
+  "785ca82c52c09a16": {
+   "verdict": "ok",
+   "note": "Shift f(x)=4^x down 3: f(x)=4^x-3; matches CNXML solution exactly."
+  },
   "78624dfe0434c46a": {
    "verdict": "ok"
   },
@@ -10294,6 +10650,14 @@
   "798f37c910a89b6d": {
    "verdict": "ok"
   },
+  "798fe6cb99855556": {
+   "verdict": "ok",
+   "note": "f(x)=-log(-x): argument -x>0 -> x<0 -> domain (-inf,0). Matches CNXML ti_04_04_08 solution."
+  },
+  "79af79d559961558": {
+   "verdict": "ok",
+   "note": "Graph read from source page 469 (crop of exercise 47's figure): vertical asymptote near x=1, curve decreasing, passes through (0,0), and reaches about (-5, 2.6) at its arrow. f(x)=log_2(-(x-1)) satisfies all of this: f(0)=log_2(1)=0, f(-5)=log_2(6)=2.585, asymptote at x=1 (argument -(x-1)=0). Matches CNXML fs-id1165135439871 solution f(x)=log_2(-(x-1))."
+  },
   "79cd93e7139d9203": {
    "verdict": "ok"
   },
@@ -10373,6 +10737,10 @@
   "7a94c75cebe235b0": {
    "verdict": "ok"
   },
+  "7aa85d1b2f485899": {
+   "verdict": "ok",
+   "note": "Reproduced via OLS on ln(f(x)) vs x for Table 7 (x=1..6, f=1125,1495,2310,3294,4650,6361) in node: a=776.6824, b=1.4260, matching CNXML fs-id1514386 exactly (776.682, 1.426)."
+  },
   "7aa9bee5a0c250de": {
    "verdict": "ok"
   },
@@ -10419,6 +10787,10 @@
   },
   "7af9ac028ae81a22": {
    "verdict": "ok"
+  },
+  "7b023e63c05b7f2b": {
+   "verdict": "ok",
+   "note": "node: Math.sqrt(236/129) = 1.35257... -> 1.3526; matches CNXML solution w(t)=129(1.3526)^t."
   },
   "7b1734747b3705e2": {
    "verdict": "ok"
@@ -10620,6 +10992,10 @@
   "7d3449e451577375": {
    "verdict": "ok"
   },
+  "7d3c6a53716deefd": {
+   "verdict": "ok",
+   "note": "Practice #7 (MC): ln(1/4^k)=ln(4^-k)=-k ln(4); power rule. Matches CNXML solution."
+  },
   "7d4810386609d8c3": {
    "verdict": "ok"
   },
@@ -10814,6 +11190,10 @@
   "7f916d9e5666a107": {
    "verdict": "ok"
   },
+  "7f940263fa68c346": {
+   "verdict": "ok",
+   "note": "Question rewritten by parent from ASCII to KaTeX; answer unchanged. P(0)=1000/(1+9)=100, so doubling means P(t)=200: 1+9e^{-0.6t}=5 -> e^{-0.6t}=4/9 -> t=ln(9/4)/0.6=1.3515503603605 -> 1.4 to the nearest tenth."
+  },
   "7fa5f808832d96b3": {
    "verdict": "ok"
   },
@@ -10889,6 +11269,10 @@
   },
   "80906a1d805c7397": {
    "verdict": "ok"
+  },
+  "8098f3a10a8845bb": {
+   "verdict": "ok",
+   "note": "Graph shows asymptote y=3 and passes through (0,2), decreasing: y=-2^x+3 (verify: at x=0, -1+3=2; decreasing since a=-1); matches CNXML solution y=-2^x+3 exactly (fs-id1165135191679, PDF exercise 39)."
   },
   "8098f6fc2d87c811": {
    "verdict": "ok"
@@ -11451,6 +11835,10 @@
   "863382cc6a749368": {
    "verdict": "ok"
   },
+  "8639e78721358dbc": {
+   "verdict": "ok",
+   "note": "t=2ln(11/3)=2.598565968... rounds to 2.5986. Computed via node; verified with checkAnswer."
+  },
   "864830e043d4b380": {
    "verdict": "ok"
   },
@@ -11781,6 +12169,10 @@
   "8aae8cc25da6bb0f": {
    "verdict": "ok"
   },
+  "8ad96fbe8924917b": {
+   "verdict": "ok",
+   "note": "Question rewritten by parent from ASCII to KaTeX; answer unchanged. Decaying 30% per hour means the hourly factor is 0.7, so 125e^{kt}=125(0.7)^t gives k=ln(0.7)=-0.35667494393873245 -> -0.3567 to four decimal places."
+  },
   "8adeb503d19bd976": {
    "verdict": "ok"
   },
@@ -11801,6 +12193,10 @@
   },
   "8b19355b48c4ab3b": {
    "verdict": "ok"
+  },
+  "8b1af31d98d48d31": {
+   "verdict": "ok",
+   "note": "Differences in f(x) are linear in ln(x) (slope ~3 from x=1 to x=10), i.e. concave-down, decelerating growth -- logarithmic; matches CNXML solution."
   },
   "8b2565119ae95651": {
    "verdict": "ok"
@@ -11858,6 +12254,10 @@
   },
   "8bed0af4b57fd58f": {
    "verdict": "ok"
+  },
+  "8bff9943b75f2eb6": {
+   "verdict": "ok",
+   "note": "Vertical stretch/compression never moves the parent's y=0 asymptote."
   },
   "8c08040a1b8e8abc": {
    "verdict": "ok"
@@ -11924,6 +12324,10 @@
   "8ceda1b089c7f1c7": {
    "verdict": "ok"
   },
+  "8cfc562c179e26e7": {
+   "verdict": "ok",
+   "note": "25=5^2, so 5^{2x}=5^{2(3x+2)} => 2x=6x+4 => x=-1. Independently solved."
+  },
   "8cfcfc220c16eac5": {
    "verdict": "ok"
   },
@@ -11947,6 +12351,10 @@
   },
   "8d4e9c56af36ee64": {
    "verdict": "ok"
+  },
+  "8d593d6eae730e80": {
+   "verdict": "ok",
+   "note": "f(x)=e^x compressed by 1/3 -> (1/3)e^x, reflected x-axis -> -(1/3)e^x, shifted down 2 -> -(1/3)e^x-2; matches CNXML Try It ti_04_02_06 solution exactly."
   },
   "8d5b499c25fcf52e": {
    "verdict": "ok"
@@ -11999,6 +12407,10 @@
   "8dfcad40f6fe9357": {
    "verdict": "ok"
   },
+  "8e14595ded5ad204": {
+   "verdict": "ok",
+   "note": "log_2(9k)=-2 => 9k=1/4 => k=1/36. Verified numerically (log2(9*(1/36))=-2)."
+  },
   "8e184063f0d4dc19": {
    "verdict": "ok"
   },
@@ -12022,6 +12434,10 @@
   },
   "8e53d8e2ecdb609e": {
    "verdict": "ok"
+  },
+  "8e69f8c4693bf94b": {
+   "verdict": "ok",
+   "note": "Reflect f(x)=4^x about y-axis (x->-x): f(x)=4^{-x}; matches CNXML solution exactly."
   },
   "8e75de6eef04be96": {
    "verdict": "ok"
@@ -12120,6 +12536,10 @@
   "8fba45dd057972f8": {
    "verdict": "ok"
   },
+  "8fd3a60d8d597e1d": {
+   "verdict": "ok",
+   "note": "Question rewritten by parent from ASCII to KaTeX; answer unchanged. p(3)=500/(1+49e^{-2.1})=500/7.00042=71.4248 -> 71 to the nearest whole number."
+  },
   "8fd9479bda3e41ed": {
    "verdict": "ok"
   },
@@ -12134,6 +12554,10 @@
   },
   "9000ecb5b72cb5f6": {
    "verdict": "ok"
+  },
+  "9006b741c64ece71": {
+   "verdict": "ok",
+   "note": "1650e^{0.5t}=20000 => t=ln(20000/1650)/0.5=4.9899... rounds to about 5 years, matching source's stated precision."
   },
   "901287fccd39d132": {
    "verdict": "ok"
@@ -12159,6 +12583,10 @@
   },
   "905309c42e0782d8": {
    "verdict": "ok"
+  },
+  "905425f481a3cf40": {
+   "verdict": "ok",
+   "note": "Try It 6: quotient+product+power rules on log(x^2y^3/z^4) give 2log(x)+3log(y)-4log(z). Matches CNXML solution."
   },
   "905d4b780af93b2e": {
    "verdict": "ok"
@@ -12204,6 +12632,14 @@
   },
   "910134ae1dc73671": {
    "verdict": "ok"
+  },
+  "91086374897da618": {
+   "verdict": "ok",
+   "note": "j(x)=1095.6^{-2x}=(1095.6^{-2})^x has a positive constant base, a valid exponential function."
+  },
+  "910906e0aad70e72": {
+   "verdict": "ok",
+   "note": "ln(w)=n converts to e^n=w by definition; matches CNXML Section Exercise 15 (fs-id1165137735890)."
   },
   "910bed745984eca5": {
    "verdict": "ok"
@@ -12292,6 +12728,10 @@
   "925eb58b015e069e": {
    "verdict": "ok"
   },
+  "9272a2a6ecf37e1a": {
+   "verdict": "ok",
+   "note": "Domain of ln(4x+17)-5: 4x+17>0 -> x>-17/4 -> (-17/4,inf). Matches CNXML fs-id1165135415813 solution."
+  },
   "928117d72fb79938": {
    "verdict": "ok"
   },
@@ -12333,6 +12773,10 @@
   },
   "92f2ad7f21843ef8": {
    "verdict": "ok"
+  },
+  "92f7ec5a7ad14006": {
+   "verdict": "ok",
+   "note": "A=100-69=31; T(15)=95 gives k=ln(26/31)/15; solving T(t)=80 gives t=88.36, rounds to 88 minutes (node computed); matches CNXML 'about 88 minutes'."
   },
   "92fa3d7e40bb1547": {
    "verdict": "ok"
@@ -12455,6 +12899,10 @@
   "942daacc5658091f": {
    "verdict": "ok"
   },
+  "94313154b4ed0c46": {
+   "verdict": "ok",
+   "note": "log_10(1,000,000)=6 is 10^6=1,000,000 by definition; matches CNXML Try It 1a."
+  },
   "94366211f74002c0": {
    "verdict": "ok"
   },
@@ -12541,6 +12989,10 @@
   },
   "952a412c68192ce2": {
    "verdict": "ok"
+  },
+  "954111361873649b": {
+   "verdict": "ok",
+   "note": "f(15)=1000/(1+999e^{-0.6030*15})=894.57, rounds to 895 (node computed); matches CNXML Try It 5."
   },
   "95485c9e304755ec": {
    "verdict": "ok"
@@ -12716,6 +13168,10 @@
   "971b18fae9d22455": {
    "verdict": "ok"
   },
+  "97208cdad3d7d7ed": {
+   "verdict": "ok",
+   "note": "Computed Math.log10(8500)=3.929419... -> 3.929 to the nearest thousandth; matches CNXML Try It 7 (8,500x case)."
+  },
   "97267947987c3a36": {
    "verdict": "ok"
   },
@@ -12748,6 +13204,10 @@
   },
   "977a65b074dba90a": {
    "verdict": "ok"
+  },
+  "977c95211546ee52": {
+   "verdict": "ok",
+   "note": "Vertical shift log_2(x)+2 does not change the domain of the parent log_2(x), which is (0,inf). Matches CNXML ti_04_04_05 solution."
   },
   "977d779c957680b0": {
    "verdict": "ok"
@@ -12860,6 +13320,10 @@
   },
   "98c04cbe6c571e85": {
    "verdict": "ok"
+  },
+  "98c1bb35399f3cbc": {
+   "verdict": "ok",
+   "note": "g(0)=-2*0.25^0=-2, so y-intercept (0,-2); matches CNXML solution exactly."
   },
   "98c9a145c4c823f4": {
    "verdict": "ok"
@@ -13014,6 +13478,10 @@
   },
   "9aaf5a4571913555": {
    "verdict": "ok"
+  },
+  "9ab08ff39518a39b": {
+   "verdict": "ok",
+   "note": "Try It 14: log_5(100)=ln(100)/ln(5)=2.8613531... (node), rounds to 2.861, matching the CNXML solution's own rounding (4.6051/1.6094=2.861)."
   },
   "9ab3131144ea5dfb": {
    "verdict": "ok"
@@ -13190,6 +13658,10 @@
   "9cb845be50d267d7": {
    "verdict": "ok"
   },
+  "9cdc9e3e75e0cf20": {
+   "verdict": "ok",
+   "note": "f(0)=1 (leading coefficient) and constant ratio 1.2 (common ratio/base) give f(x)=1.2^x; matches CNXML solution exactly."
+  },
   "9cec2136b1fce969": {
    "verdict": "ok"
   },
@@ -13256,6 +13728,10 @@
   },
   "9d7b8831e241e8b8": {
    "verdict": "ok"
+  },
+  "9d7d58d016e6a432": {
+   "verdict": "ok",
+   "note": "Parent rewrote the question: it previously asked for the answer 'in thousands, rounded to the nearest whole thousand' but keyed 25.634, which is neither. The source's own solution reads 'about 25,634 seals'. Recomputed the shipped logistic model at x=23: 25.65665979/(1+6.113686306e^{-0.3852149008*23}) = 25.6340 thousand = 25,634 seals."
   },
   "9d822ae30fd02b26": {
    "verdict": "ok"
@@ -13387,6 +13863,10 @@
   "9ee480fe8412f45b": {
    "verdict": "ok"
   },
+  "9ee857c31263fc2f": {
+   "verdict": "ok",
+   "note": "Domain of any b^x is all reals; (-\\infty,\\infty)."
+  },
   "9ef8e69c3cc58015": {
    "verdict": "ok",
    "note": "Using the same table: f(3)=8, then g(8)=4, so g(f(3))=4, matching the declared answer."
@@ -13426,6 +13906,10 @@
   },
   "9f7d15ff39f31306": {
    "verdict": "ok"
+  },
+  "9f91026613b1a2f1": {
+   "verdict": "ok",
+   "note": "Parent rewrote the question for the same units mismatch. The limiting value of c/(1+ae^{-bx}) is c = 25.65665979 thousand = 25,657 seals to the nearest whole number, matching the source's printed 'the carrying capacity is 25,657'."
   },
   "9f95c03cc3c72aa3": {
    "verdict": "ok"
@@ -13614,6 +14098,10 @@
   "a23657d9e299bfab": {
    "verdict": "ok"
   },
+  "a23e608fdec20787": {
+   "verdict": "ok",
+   "note": "Solved 4=7.85(1.15)^x-2.27 -> x=ln((4+2.27)/7.85)/ln(1.15) computed with node: -1.6079998... rounds to -1.608, matches CNXML Try It ti_04_02_03 solution exactly."
+  },
   "a2416996d04f3b9f": {
    "verdict": "ok"
   },
@@ -13641,6 +14129,10 @@
   "a28a16d47008a1b5": {
    "verdict": "ok"
   },
+  "a292d6e419a11688": {
+   "verdict": "ok",
+   "note": "10^y=1,000,000=10^6, so y=6; matches CNXML Try It 5."
+  },
   "a29332a8d53c0cbb": {
    "verdict": "ok"
   },
@@ -13658,6 +14150,10 @@
   },
   "a2ca15124a8a2421": {
    "verdict": "ok"
+  },
+  "a2cdb7abb8a329ae": {
+   "verdict": "ok",
+   "note": "Reproduced via OLS on ln(debt) vs month (x=1..8) in node: a=522.885859836532, b=1.1964525610274865, matching CNXML fs-id1335101 (Try It #1) to the printed precision."
   },
   "a2dbc57c3799734d": {
    "verdict": "ok"
@@ -13730,6 +14226,10 @@
   },
   "a3d21737ba03c6b8": {
    "verdict": "ok"
+  },
+  "a3de73249e149f40": {
+   "verdict": "ok",
+   "note": "Domain of log_3(x+4): x+4>0 -> x>-4 -> (-4,inf). Matches CNXML ti_04_04_04 solution."
   },
   "a3fff50e4abcb836": {
    "verdict": "ok"
@@ -13926,6 +14426,10 @@
   "a6394ffc93738dfb": {
    "verdict": "ok"
   },
+  "a63cbf2e16bf4531": {
+   "verdict": "ok",
+   "note": "a=2000 from (0,2000); b^2=20/2000=0.01 so b=0.1 exactly; matches CNXML solution f(x)=2000(0.1)^x."
+  },
   "a641a69418decaf8": {
    "verdict": "ok"
   },
@@ -13937,6 +14441,10 @@
   },
   "a65d2bf95cd4b24f": {
    "verdict": "ok"
+  },
+  "a669bfb3d1c7baec": {
+   "verdict": "ok",
+   "note": "node: 6500*(1+0.036/2)^(2*20) = 13268.5808... -> 13268.58; matches CNXML solution."
   },
   "a6700985ce00a7f8": {
    "verdict": "ok"
@@ -13986,6 +14494,10 @@
   "a6e8adf91e1a14e1": {
    "verdict": "ok"
   },
+  "a6f6a0b8e4f46f6c": {
+   "verdict": "ok",
+   "note": "ln x=4 => x=e^4. Independently solved by isolating ln x."
+  },
   "a6fc093c982d9ecb": {
    "verdict": "ok"
   },
@@ -14001,6 +14513,10 @@
   },
   "a713293b8697e7f6": {
    "verdict": "ok"
+  },
+  "a71bd743ab51a4ed": {
+   "verdict": "ok",
+   "note": "Consecutive f(x)-values share a constant ratio of 1.2 (verified by direct division, node computed), so the data is exponential; matches CNXML solution."
   },
   "a71f99ca1a51fd20": {
    "verdict": "ok"
@@ -14141,6 +14657,10 @@
   "a8b35629a2c99ecf": {
    "verdict": "ok"
   },
+  "a8be2a4812338027": {
+   "verdict": "ok",
+   "note": "Matches CNXML Try It #6 solution f(x)=sqrt(2)(sqrt(2))^x for the graph passing through (0,sqrt(2))."
+  },
   "a8be8d902c556aea": {
    "verdict": "ok"
   },
@@ -14246,6 +14766,10 @@
   "aa0da1baf17f2d34": {
    "verdict": "ok"
   },
+  "aa11445d7dfd669c": {
+   "verdict": "ok",
+   "note": "Practice #11: quotient rule then 28/7=4 gives log_b(4). Matches CNXML solution."
+  },
   "aa13150ee4742ec4": {
    "verdict": "ok"
   },
@@ -14277,6 +14801,10 @@
   "aa62fccc6765c232": {
    "verdict": "ok"
   },
+  "aa63b1dedbb96dd6": {
+   "verdict": "ok",
+   "note": "Domain of log(x-5)+2: solve x-5>0 -> x>5 -> (5,inf). Matches CNXML ti_04_04_02 solution."
+  },
   "aa82fcee747ac397": {
    "verdict": "ok"
   },
@@ -14291,6 +14819,10 @@
   },
   "aa9f1dfb14f7a6c8": {
    "verdict": "ok"
+  },
+  "aaa3e19a68f75ad2": {
+   "verdict": "ok",
+   "note": "f(x)=log(3x+1): asymptote where 3x+1=0 -> x=-1/3. Matches CNXML fs-id1165137737027 solution domain (-1/3,inf)/asymptote x=-1/3."
   },
   "aabb38a12ef24394": {
    "verdict": "ok"
@@ -14411,6 +14943,10 @@
   },
   "abc8a7083760968c": {
    "verdict": "ok"
+  },
+  "abca4389319f9405": {
+   "verdict": "ok",
+   "note": "k=ln(2)/20=0.0346574, rounds to 0.03466 (node computed); matches CNXML solution exactly."
   },
   "abcb62a001f9c0a0": {
    "verdict": "ok"
@@ -14566,6 +15102,10 @@
   "ada9ba50a5199c19": {
    "verdict": "ok"
   },
+  "ada9cacb16748c07": {
+   "verdict": "ok",
+   "note": "e^{3x-5}=(47-7.9)/7=5.5857...; x=(ln(5.5857...)+5)/3=2.24007... rounds to 2.2401 (nearest ten-thousandth). Computed via node."
+  },
   "adb21612b443e696": {
    "verdict": "ok"
   },
@@ -14654,6 +15194,10 @@
   "ae6774a73c1c0273": {
    "verdict": "ok"
   },
+  "ae862b932e406b7c": {
+   "verdict": "ok",
+   "note": "5^3=125 converts to log_5(125)=3; distractors are base/argument/exponent swaps."
+  },
   "ae8b181597ccd38b": {
    "verdict": "ok"
   },
@@ -14685,6 +15229,10 @@
   },
   "aee2ef150dee4929": {
    "verdict": "ok"
+  },
+  "af01d534b758f4ac": {
+   "verdict": "ok",
+   "note": "121^y=11 means y=1/2 since sqrt(121)=11=121^(1/2); matches CNXML Try It 3."
   },
   "af08020120738869": {
    "verdict": "ok"
@@ -14961,6 +15509,10 @@
   "b2b67a370ba9b39d": {
    "verdict": "ok"
   },
+  "b2bc43232b79cc3a": {
+   "verdict": "ok",
+   "note": "Try It 11: distribute the 4, then power/product/quotient rules; confirmed by float substitution at x=2 (node) that the printed expression equals log(x^12(x+5)^4/(2x+3)^4). Matches CNXML solution."
+  },
   "b2c62707b81d0352": {
    "verdict": "ok"
   },
@@ -15198,6 +15750,10 @@
   "b53713f040085a12": {
    "verdict": "ok"
   },
+  "b53b61f641de82a6": {
+   "verdict": "ok",
+   "note": "Practice #21: quotient rule then 6x^9/3x^2=2x^7 gives ln(2x^7). Matches CNXML solution."
+  },
   "b53edfe6d32eb951": {
    "verdict": "ok"
   },
@@ -15212,6 +15768,10 @@
   },
   "b55794c89b3b44c7": {
    "verdict": "ok"
+  },
+  "b56892659bcfe67e": {
+   "verdict": "ok",
+   "note": "Practice #15: quotient+product+power rules give 15log(x)+13log(y)-19log(z). Matches CNXML solution."
   },
   "b57cae684612c6f2": {
    "verdict": "ok"
@@ -15271,6 +15831,10 @@
   "b5fd53eb1d7c0ed0": {
    "verdict": "ok"
   },
+  "b609064c94a8d87c": {
+   "verdict": "ok",
+   "note": "Computed Math.log10(123)=2.089905... -> 2.0899 to 4 decimal places; matches CNXML Try It 6."
+  },
   "b60b0c999debf3a5": {
    "verdict": "ok"
   },
@@ -15309,6 +15873,10 @@
   },
   "b663b2133e24fa58": {
    "verdict": "ok"
+  },
+  "b66569632dd0c37a": {
+   "verdict": "ok",
+   "note": "Reproduced via a from-scratch Nelder-Mead nonlinear least-squares fit of the logistic model to the harbor-seal data (x=0..15): converged to c=25.65666, a=6.11369, b=0.38521, matching CNXML fs-id1425215 (Try It #3a) to 5+ significant digits."
   },
   "b66e1760365e92c6": {
    "verdict": "ok"
@@ -15370,6 +15938,10 @@
   "b6e797f8585eeb10": {
    "verdict": "ok"
   },
+  "b6e9651d4f01c1d9": {
+   "verdict": "ok",
+   "note": "node: b=(481.07/75.98)^(1/3) = 1.84999... -> 1.85; matches CNXML solution y≈12*1.85^x (only b is asked)."
+  },
   "b70232d191f25679": {
    "verdict": "ok"
   },
@@ -15396,6 +15968,10 @@
   },
   "b730e51ca7c6ae42": {
    "verdict": "ok"
+  },
+  "b752cd927f12e75b": {
+   "verdict": "ok",
+   "note": "Reflect f(x)=10^x about x-axis (multiply by -1) then shift up 7: g(x)=-10^x+7; matches CNXML solution exactly."
   },
   "b75f936cbe14f9c7": {
    "verdict": "ok"
@@ -15504,6 +16080,10 @@
   },
   "b894350a757c920d": {
    "verdict": "ok"
+  },
+  "b8960e0421572a5e": {
+   "verdict": "ok",
+   "note": "g(x)=0.875^x has 0<b<1, a valid exponential base; independently confirmed."
   },
   "b8a6103b0f941c12": {
    "verdict": "ok"
@@ -15858,6 +16438,10 @@
    "verdict": "ok",
    "note": "The relation given in the immediately preceding text, {(-3,27),(-2,8),(-1,1),(0,0),(1,1),(2,8),(3,27)}, has seven distinct x-values (-3,-2,-1,0,1,2,3) each appearing exactly once, so it is a function; 'yes' is correct."
   },
+  "bcc799b637805eb2": {
+   "verdict": "ok",
+   "note": "node: 1.2*Math.exp(6)-0.3 = 483.81456... -> 483.8146; matches CNXML solution."
+  },
   "bcccab76d26a6b9b": {
    "verdict": "ok"
   },
@@ -16123,6 +16707,10 @@
   "bfcb77c8ebc1d80f": {
    "verdict": "ok"
   },
+  "bfd0238b899e7084": {
+   "verdict": "ok",
+   "note": "f(x)=3log(x-2)+1: asymptote at x=2 (argument x-2=0), unaffected by stretch/vertical shift. Matches CNXML ti_04_04_07 solution domain (2,inf)/asymptote x=2."
+  },
   "bfde7693d81e0605": {
    "verdict": "ok"
   },
@@ -16358,6 +16946,10 @@
   "c26220883bddf78f": {
    "verdict": "ok"
   },
+  "c26ddb309ffb5f5c": {
+   "verdict": "ok",
+   "note": "3-x=4x-8 => x=11/5=2.2; domain checks: 3-x=0.8>0, 4x-8=0.8>0, both hold. Verified numerically."
+  },
   "c2706628cfe4e6e1": {
    "verdict": "ok"
   },
@@ -16366,6 +16958,10 @@
   },
   "c2776ff8677f08c2": {
    "verdict": "ok"
+  },
+  "c27c971a18f55751": {
+   "verdict": "ok",
+   "note": "sqrt5=5^{1/2}, so 5^x=5^{1/2} => x=1/2. Independently solved."
   },
   "c27efc273dcb1036": {
    "verdict": "ok"
@@ -16436,6 +17032,10 @@
   },
   "c36dea40cf1abbd1": {
    "verdict": "ok"
+  },
+  "c372e6b66c5e7adb": {
+   "verdict": "ok",
+   "note": "Domain of log_5(x-2)+1: solve x-2>0 -> x>2 -> (2,inf). Matches CNXML ti_04_04_01 solution."
   },
   "c372f6871257e326": {
    "verdict": "ok"
@@ -16546,6 +17146,10 @@
   "c48f6df4618b33f7": {
    "verdict": "ok"
   },
+  "c4a0ada8ad6461c4": {
+   "verdict": "ok",
+   "note": "Half of carrying capacity 558 is 279; solved 558/(1+54.8e^(-0.462x))=279 for x: x=ln(54.8)/0.462=8.666, rounds to 8.7, matching CNXML eip-idm365524000 (wolves, #25)."
+  },
   "c4a7e2f11dc1627b": {
    "verdict": "ok"
   },
@@ -16554,6 +17158,10 @@
   },
   "c4c4b6bab89cc718": {
    "verdict": "ok"
+  },
+  "c4c78e9efbdaa192": {
+   "verdict": "ok",
+   "note": "Continuous rate r=0.75>0 in ae^{rt}, so this is continuous growth; matches CNXML solution."
   },
   "c4dafb8ffa26ee0a": {
    "verdict": "ok"
@@ -16597,6 +17205,10 @@
   },
   "c55bbf7b7a47b27c": {
    "verdict": "ok"
+  },
+  "c55f465f16bafe4c": {
+   "verdict": "ok",
+   "note": "Re-hashed by the parent adding answerForm=\"base-e\"; question and answer otherwise unchanged. 0.738^x = e^{x ln 0.738} and ln(0.738) = -0.30381698, so the base-e model is 731.92e^{-0.3038x} to four decimal places. Reproduced in node."
   },
   "c560ae75b8533205": {
    "verdict": "ok",
@@ -16661,6 +17273,10 @@
   },
   "c61e33ebaa16c540": {
    "verdict": "ok"
+  },
+  "c62a292bcebf4e20": {
+   "verdict": "ok",
+   "note": "Reflection about y-axis of f(x)=1.25^x replaces x with -x: g(x)=1.25^{-x}, matches CNXML Try It ti_04_02_05's method (same reflection type as the worked Example 5, mirrored about the other axis)."
   },
   "c63971c1143c1775": {
    "verdict": "ok"
@@ -16824,6 +17440,10 @@
   "c83e0905faefceeb": {
    "verdict": "ok"
   },
+  "c842af1e53275d1c": {
+   "verdict": "ok",
+   "note": "f(x)=3+ln(x-1): asymptote where x-1=0 -> x=1. Matches CNXML ti_04_04_10 solution."
+  },
   "c858fddc3cb2fb3b": {
    "verdict": "ok"
   },
@@ -16903,6 +17523,10 @@
    "verdict": "ok",
    "note": "The second base-10 block SVG shows 4 hundred-squares, 0 ten-rods (no 'ap-ten' element used), and 7 individual unit-block rects: 4(100)+0(10)+7(1)=407, matching the declared answer."
   },
+  "c9556cccede7c6bb": {
+   "verdict": "ok",
+   "note": "log_7 n=2 => n=7^2=49. Verified numerically (5*log_7(49)=10)."
+  },
   "c95b59ee7bd5765b": {
    "verdict": "ok"
   },
@@ -16955,6 +17579,10 @@
   "c9de47765eae8515": {
    "verdict": "ok"
   },
+  "c9df087de141f7ea": {
+   "verdict": "ok",
+   "note": "Try It 3: power rule, ln x^2 = 2 ln x. Matches CNXML solution."
+  },
   "c9fbe63a46377edd": {
    "verdict": "ok"
   },
@@ -16992,6 +17620,10 @@
   "ca6a6dcee91a6000": {
    "verdict": "ok"
   },
+  "ca6dd324e5fc4412": {
+   "verdict": "ok",
+   "note": "Practice #3: 7x*2y=14xy=2*7*x*y; product rule gives log_b(2)+log_b(7)+log_b(x)+log_b(y). Matches CNXML solution."
+  },
   "ca8cca17990795cc": {
    "verdict": "ok"
   },
@@ -17003,6 +17635,10 @@
   },
   "caa45cf5414d5592": {
    "verdict": "ok"
+  },
+  "cab1aced609941a8": {
+   "verdict": "ok",
+   "note": "Solved 5=3(1/2)^{x-1}-2 -> x=1+ln(7/3)/ln(1/2) computed with node: -0.2223924213364481, rounds to -0.222; matches CNXML solution exactly."
   },
   "cab535f483248417": {
    "verdict": "ok"
@@ -17098,6 +17734,10 @@
   "cbb487a16bf6c1ad": {
    "verdict": "ok"
   },
+  "cbc06ff9d43116ba": {
+   "verdict": "ok",
+   "note": "node: 1.25*1.012^18 - 1.39*1.006^18 = 0.0013578885 -> 0.001 to the nearest thousandth."
+  },
   "cbd352cd3e34b79e": {
    "verdict": "ok"
   },
@@ -17137,6 +17777,10 @@
   },
   "cc4d40ba5d5b3b0f": {
    "verdict": "ok"
+  },
+  "cc51a83eb429c29f": {
+   "verdict": "ok",
+   "note": "Computed Math.log10(0.001)=-3 exactly (10^-3=0.001); matches CNXML Section Exercise 47 (fs-id1165137755960)."
   },
   "cc60b49b55b07303": {
    "verdict": "ok"
@@ -17229,6 +17873,10 @@
   "cdc7aff7ab0b71ab": {
    "verdict": "ok"
   },
+  "cdc9b270bd3375f6": {
+   "verdict": "ok",
+   "note": "t=ln(1/200)/(-ln(2)/30)=229.3157 (node computed); matches CNXML Try It 2 exactly."
+  },
   "cdcead60aaff8e80": {
    "verdict": "ok"
   },
@@ -17299,8 +17947,20 @@
   "ce709240f2eec216": {
    "verdict": "ok"
   },
+  "ce7cb28cd7b75469": {
+   "verdict": "ok",
+   "note": "Practice #23: power rule on each term then product/quotient rules; verified by float substitution x=2,y=3,z=4 (node) equals log(xz^3/sqrt(y)). Matches CNXML solution."
+  },
+  "ce9bca363f5b5505": {
+   "verdict": "ok",
+   "note": "t=-ln(2)/(-0.0115)=60.27, rounds to 60 days (node computed); matches CNXML solution 'about 60 days'."
+  },
   "ce9d81a067f102b7": {
    "verdict": "ok"
+  },
+  "ceaa8fa43de24411": {
+   "verdict": "ok",
+   "note": "g(6)=1/3*7^4 computed with node: 800.3333333333334 = 2401/3 exactly; matches CNXML solution 800+1/3≈800.3333."
   },
   "cecadc9750676d6f": {
    "verdict": "ok"
@@ -17325,6 +17985,10 @@
   },
   "cf0a9a90a67d7c48": {
    "verdict": "ok"
+  },
+  "cf0dbfb0b04c1b50": {
+   "verdict": "ok",
+   "note": "Reproduced Table 10's fit via OLS on f(x) vs ln(x), x=1..8: a=7.5436, b=-2.2678, matching the CNXML's commented-out solution (7.544, -2.268) for exercise fs-id1426060. Evaluated at x=10: 7.544-2.268*ln(10)=2.32, rounds to 2.3, matching CNXML fs-id1451593's printed 'f(10)≈2.3'."
   },
   "cf14cd1eddcd23d8": {
    "verdict": "ok"
@@ -17398,6 +18062,10 @@
   "d01137f2d06b433e": {
    "verdict": "ok"
   },
+  "d011993eda30efe3": {
+   "verdict": "ok",
+   "note": "Solved 5*log10(x+2) = 4 - log10(x) numerically by bisection: node -e bisection on f(x)=5*log10(x+2)-(4-log10(x)) over (0.001,10) gives x=3.048678, rounds to 3.049. Matches CNXML ti_04_04_09 solution x≈3.049."
+  },
   "d0144c183e85564d": {
    "verdict": "ok"
   },
@@ -17425,6 +18093,10 @@
   "d081433d042aaee4": {
    "verdict": "ok",
    "note": "(x^2+2x-3)/(x^2-1) = (x+3)(x-1)/[(x-1)(x+1)] reduces to (x+3)/(x+1); VA at x=-1; matches CNXML source answer."
+  },
+  "d085a1029edf55a0": {
+   "verdict": "ok",
+   "note": "f(x)=b^{x+c}+d with d=3, so range is (d,\\infty)=(3,\\infty); matches CNXML's own d=3 case worked earlier in section."
   },
   "d08b8b8b845c75d1": {
    "verdict": "ok"
@@ -17593,6 +18265,10 @@
   "d2631a3864255a2d": {
    "verdict": "ok"
   },
+  "d264fa0bccc77ab2": {
+   "verdict": "ok",
+   "note": "Consecutive y-values share ratio ~1.6487=sqrt(e); model y=2e^{0.5x} verified against three data points by direct evaluation (node computed); matches CNXML Try It 6."
+  },
   "d26745a11a492faa": {
    "verdict": "ok"
   },
@@ -17754,6 +18430,10 @@
   "d4d082eedd7ca528": {
    "verdict": "ok"
   },
+  "d4d3fa5b4149094a": {
+   "verdict": "ok",
+   "note": "Try It 10: power rule on each term then product/quotient rules; confirmed by float substitution at x=2 (node) that the printed sum equals log(5(x-1)^3*sqrt(x)/(7x-1)). Matches CNXML solution."
+  },
   "d4d475bffab10d13": {
    "verdict": "ok"
   },
@@ -17775,6 +18455,10 @@
   "d512e38e95173db3": {
    "verdict": "ok"
   },
+  "d53596ae82bc4ade": {
+   "verdict": "ok",
+   "note": "P(0)=90/(1+5)=15, so y-intercept (0,15), matching CNXML fs-id1697174 (Numeric #15)."
+  },
   "d540072f6ac94a73": {
    "verdict": "ok"
   },
@@ -17789,6 +18473,10 @@
   },
   "d54d9dfab99164a6": {
    "verdict": "ok"
+  },
+  "d55090b935681577": {
+   "verdict": "ok",
+   "note": "node: 100000*Math.exp(0.12*30) = 3659823.4443... -> 3659823.44; matches CNXML Try It #11 solution."
   },
   "d554d7a02ed1473b": {
    "verdict": "ok"
@@ -18075,6 +18763,10 @@
   "d94e13e84ff68f66": {
    "verdict": "ok"
   },
+  "d9526af45bf97886": {
+   "verdict": "ok",
+   "note": "Carrying capacity is the numerator constant, 175, matching CNXML fs-id1661534 (Numeric #11)."
+  },
   "d966e331d0cb99ba": {
    "verdict": "ok"
   },
@@ -18137,6 +18829,10 @@
   },
   "da231ca13918860f": {
    "verdict": "ok"
+  },
+  "da312427b632f1d9": {
+   "verdict": "ok",
+   "note": "node: 100000*(1+0.12/52)^(52*30) = 3644675.8823... -> 3644675.88; matches CNXML Try It #8 solution."
   },
   "da3513e7e5eff831": {
    "verdict": "ok"
@@ -18346,6 +19042,10 @@
   "dca85764ec041789": {
    "verdict": "ok"
   },
+  "dcb7504510763717": {
+   "verdict": "ok",
+   "note": "A=6500*e^{0.0725*20}=27710.24 (nearest cent). Computed via node."
+  },
   "dcb7bb9950b9aff2": {
    "verdict": "ok"
   },
@@ -18539,6 +19239,10 @@
   "df4060db72586141": {
    "verdict": "ok"
   },
+  "df4fd154e6e3e112": {
+   "verdict": "ok",
+   "note": "A=165-75=90; T(30)=145 gives k=ln(7/9)/30=-0.008377 (node computed); matches CNXML solution exactly."
+  },
   "df57ee3e60b2cc57": {
    "verdict": "ok"
   },
@@ -18550,6 +19254,10 @@
   },
   "df689edf85b0b3fa": {
    "verdict": "ok"
+  },
+  "df6d109d0d097ac0": {
+   "verdict": "ok",
+   "note": "ln(x(x-3))=ln(7x) => x^2-3x=7x => x^2-10x=0 => x=0 or x=10; x=0 rejected (domain x>0, x-3>0), x=10 valid (checked ln10+ln7=ln70 numerically). Single valid solution."
   },
   "df6f190e14e3f36e": {
    "verdict": "ok",
@@ -18578,6 +19286,10 @@
   },
   "dfbe17e53b658e40": {
    "verdict": "ok"
+  },
+  "dfc80ebb444eb463": {
+   "verdict": "ok",
+   "note": "node: -Math.pow(4, 2*(-1)+3) = -4; matches CNXML solution f(-1)=-4."
   },
   "dfd53c4fab0e78d5": {
    "verdict": "ok"
@@ -18636,6 +19348,10 @@
   },
   "e0dd8d740e51ed50": {
    "verdict": "ok"
+  },
+  "e0e4b088edd432b7": {
+   "verdict": "ok",
+   "note": "ln(9-8x)=1 => 9-8x=e => x=(9-e)/8. Independently solved, no domain issue since 9-8x=e>0."
   },
   "e0e7f6b6e7ea0881": {
    "verdict": "ok"
@@ -18730,6 +19446,10 @@
   "e1d3bb088e1e1dd0": {
    "verdict": "ok"
   },
+  "e1d3e91c341ca816": {
+   "verdict": "ok",
+   "note": "2^x is always positive, so 2^x=-100 has no real solution; categorical multiplechoice, distractors are plausible-looking but wrong log expressions."
+  },
   "e1dc29bb25ef3ac7": {
    "verdict": "ok"
   },
@@ -18784,6 +19504,10 @@
   },
   "e23ecf3b26db8f03": {
    "verdict": "ok"
+  },
+  "e2543e9ff74f165f": {
+   "verdict": "ok",
+   "note": "Solved 68/(1+16e^(-0.28x))=20 for x: x=-ln(0.15)/0.28=6.775, rounds to 6.8, matching CNXML fs-id1394672 (koi, #19)."
   },
   "e2766b7cd5811d6b": {
    "verdict": "ok"
@@ -18897,6 +19621,10 @@
   "e37562b44d0b7408": {
    "verdict": "ok"
   },
+  "e37ca3b427ed2c53": {
+   "verdict": "ok",
+   "note": "Try It 7: ln(cbrt(x^2))=ln(x^(2/3))=(2/3)ln x. Matches CNXML solution."
+  },
   "e37dc37244a32ef4": {
    "verdict": "ok"
   },
@@ -18914,6 +19642,10 @@
   },
   "e3be7f7ae8f30617": {
    "verdict": "ok"
+  },
+  "e3cecd64082fc2d8": {
+   "verdict": "ok",
+   "note": "Solving 900=1000/(1+9e^{-0.6t}) gives t=ln(81)/0.6=7.32, rounds to 7.3 years (node computed); matches CNXML 'about 7.3 years'."
   },
   "e3d1156212d6150d": {
    "verdict": "ok"
@@ -18960,6 +19692,10 @@
   },
   "e43e875aa2ab5488": {
    "verdict": "ok"
+  },
+  "e4447057084619b9": {
+   "verdict": "ok",
+   "note": "Practice #25: change-of-base formula with n=e gives ln(15)/ln(7). Matches CNXML solution."
   },
   "e447048dc2d1ec74": {
    "verdict": "ok"
@@ -19058,6 +19794,10 @@
   "e4fcdd8c3ee8d199": {
    "verdict": "ok"
   },
+  "e50516b5ac452579": {
+   "verdict": "ok",
+   "note": "node: 54000/(1+0.082/365)^(365*5) = 35838.7637... -> 35838.76; matches CNXML solution."
+  },
   "e517b9d1b6949c08": {
    "verdict": "ok"
   },
@@ -19112,6 +19852,10 @@
   "e5caa77a53c7b6dc": {
    "verdict": "ok"
   },
+  "e5cc524301a195ac": {
+   "verdict": "ok",
+   "note": "Practice #13: -log_b(1/7)=-log_b(7^-1)=-(-log_b7)=log_b7 by the power rule (the two negative signs cancel). Matches CNXML solution."
+  },
   "e5d08c624d06918f": {
    "verdict": "ok"
   },
@@ -19136,6 +19880,10 @@
   "e61f4928635f7fb5": {
    "verdict": "ok",
    "note": "i = 0+1i, ordered pair (0,1); source solution is an image confirming the plotted point i, coordinates derived independently."
+  },
+  "e6393b95b3accb11": {
+   "verdict": "ok",
+   "note": "e^{2x}-e^x-2=0 factors (e^x-2)(e^x+1)=0; reject e^x=-1, so x=ln2. Verified exact-log self-grades and rejects printed span."
   },
   "e64446806d270c0f": {
    "verdict": "ok"
@@ -19416,6 +20164,10 @@
   "e9f9cb2c433510a9": {
    "verdict": "ok"
   },
+  "ea1724e451db9a0a": {
+   "verdict": "ok",
+   "note": "ln(9(x^2-10))=ln10 => 9(x^2-10)=10 => x^2=100/9 => x=+/-10/3; domain x^2-10>0 holds for both since (10/3)^2=100/9>10. Unordered pair, verified with checkAnswer {unordered:true}."
+  },
   "ea1e44e7bc2c8773": {
    "verdict": "ok"
   },
@@ -19446,6 +20198,10 @@
   },
   "ea9c7830a7986d37": {
    "verdict": "ok"
+  },
+  "eaa40d447c2e0198": {
+   "verdict": "ok",
+   "note": "Solved h(p)=67.682-5.792 ln(p)=62 by hand and via node: p=exp((67.682-62)/5.792)=2.6671, rounds to 2.67, matching CNXML fs-id1086028."
   },
   "eab2d69459494218": {
    "verdict": "ok"
@@ -19676,6 +20432,10 @@
   "ecd01c1919798947": {
    "verdict": "ok"
   },
+  "ecd2d71a079ea102": {
+   "verdict": "ok",
+   "note": "Doubling-time formula t=ln2/k with t=3 gives k=ln2/3; exact symbolic form, matches CNXML Try It 3."
+  },
   "ecd523f52fa39764": {
    "verdict": "ok"
   },
@@ -19728,6 +20488,10 @@
   },
   "ed6deb30e676b6d8": {
    "verdict": "ok"
+  },
+  "ed95ce1c7003d092": {
+   "verdict": "ok",
+   "note": "c^d=k converts to log_c(k)=d by definition; matches CNXML Section Exercise 17 (fs-id1165135194695)."
   },
   "ed9a717ff1a0e37d": {
    "verdict": "ok"
@@ -19982,6 +20746,10 @@
   "f090072d61f2a3b6": {
    "verdict": "ok"
   },
+  "f09301642998a532": {
+   "verdict": "ok",
+   "note": "A(3)=125*e^{ln(0.7)*3}=42.875, rounds to 43 mg (node computed); matches CNXML solution 'A≈43 mg'."
+  },
   "f09a9d7e297259b7": {
    "verdict": "ok"
   },
@@ -20086,6 +20854,10 @@
   "f19ce867f1bc5f65": {
    "verdict": "ok"
   },
+  "f19dc1f1d5485619": {
+   "verdict": "ok",
+   "note": "e^{2x}-e^x-132=0 factors (e^x-12)(e^x+11)=0; reject negative root, x=ln12. Verified exact-log."
+  },
   "f1b9d488e29e0781": {
    "verdict": "ok"
   },
@@ -20156,6 +20928,10 @@
   },
   "f24e03a3301ad3a5": {
    "verdict": "ok"
+  },
+  "f25a4c09eae4a4e8": {
+   "verdict": "ok",
+   "note": "Solving 110=90e^{kt}+75 with k=-0.008377 gives t=112.74, rounds to 113 minutes (node computed); matches CNXML 'about 113 minutes'."
   },
   "f2660e219fb2dce7": {
    "verdict": "ok"
@@ -20256,6 +21032,10 @@
   },
   "f3f0eb05139625bc": {
    "verdict": "ok"
+  },
+  "f3f652e2d404e19e": {
+   "verdict": "ok",
+   "note": "f(x)=2ln(x+3)-1: asymptote x=-3 matches the graphed asymptote; checked f(0)=2ln3-1≈1.2, f(5)=2ln8-1≈3.16 against the plotted curve's height at those x-values (visually consistent with the source PDF figure). Matches CNXML eip-id1525883/ti_04_04_11 solution f(x)=2ln(x+3)-1."
   },
   "f3f794ce507ef3a3": {
    "verdict": "ok"
@@ -20454,6 +21234,10 @@
    "verdict": "ok",
    "note": "Both ends fall (f(x)->-infinity as x-> +/- infinity): matches the even/negative case in the end-behavior comparison graphs, so even degree with a negative leading coefficient. Matches CNXML fs-id1165137628462 solution exactly."
   },
+  "f601b19fdf71e128": {
+   "verdict": "ok",
+   "note": "Try It 1: 8k=2^3*k, product+power rules give 3log_b(2)+log_b(k); matches CNXML solution."
+  },
   "f601db6cd98c70c9": {
    "verdict": "ok"
   },
@@ -20532,6 +21316,10 @@
   "f705dcd33c2c9ff3": {
    "verdict": "ok"
   },
+  "f7189f91bb5848cd": {
+   "verdict": "ok",
+   "note": "Evaluated the reproduced model at x=16: 141.912+10.454*ln(16)=170.90 thousand, rounds to 171,000, matching CNXML's printed 'about 171,000 games'."
+  },
   "f72892a9d521a787": {
    "verdict": "ok"
   },
@@ -20601,6 +21389,10 @@
   },
   "f7f3d39e75afb490": {
    "verdict": "ok"
+  },
+  "f7ff47245b4ad2f7": {
+   "verdict": "ok",
+   "note": "By the same base-ordering logic, h(x)=log_5(x) has the third-smallest base, so it is curve C. Matches CNXML fs-id1165137758154 solution C."
   },
   "f8184e6451f89b40": {
    "verdict": "ok"
@@ -20712,6 +21504,10 @@
   },
   "f922bc6bbb2860f6": {
    "verdict": "ok"
+  },
+  "f925965754e51e35": {
+   "verdict": "ok",
+   "note": "T_s=70, A=-30, T(1)=45 gives k=ln(5/6); solving T(t)=60 gives t=6.026 (node computed); matches CNXML Try It 4."
   },
   "f92ece265511e684": {
    "verdict": "ok"
@@ -21055,6 +21851,10 @@
   "fd3d03ea883c8e71": {
    "verdict": "ok"
   },
+  "fd431fef84392a56": {
+   "verdict": "ok",
+   "note": "log(S)=c iff b^c=S with b=10,c=-2,S=1/100: 10^{-2}=1/100. Verified 10^-2=0.01 numerically."
+  },
   "fd4bcea76333a6b2": {
    "verdict": "ok"
   },
@@ -21144,6 +21944,10 @@
   },
   "fe42137a7b7ad555": {
    "verdict": "ok"
+  },
+  "fe640b4b2bd8b486": {
+   "verdict": "ok",
+   "note": "64*4^{3x}=2^6*2^{6x}=2^{6+6x}=2^4 => 6+6x=4 => x=-1/3. Verified numerically via node (both sides equal 16)."
   },
   "fe6f336d240d4f63": {
    "verdict": "ok"

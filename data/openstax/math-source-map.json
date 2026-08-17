@@ -42,7 +42,7 @@
       "upstreamChapters": 12,
       "upstreamSections": 73,
       "localChapters": 12,
-      "mappedSections": 20
+      "mappedSections": 28
     }
   },
   "sections": [
@@ -2034,6 +2034,78 @@
       "moduleId": "m49353",
       "sourceTitle": "Modeling Using Variation",
       "moduleSha256": "ab1cbc8de5d6366e19d1511ed6d4a7dc5da8248360d92a6d32614cd3df24ee64"
+    },
+    {
+      "localPath": "content/math/precalculus/04-exponential-and-logarithmic-functions/01-exponential-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "4.1",
+      "moduleId": "m49361",
+      "sourceTitle": "Exponential Functions",
+      "moduleSha256": "f9d1ac4b848a93247f61c77a2aa13396894a2b40bd36bfd100cbd149eaa4ebbb"
+    },
+    {
+      "localPath": "content/math/precalculus/04-exponential-and-logarithmic-functions/02-graphs-of-exponential-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "4.2",
+      "moduleId": "m49362",
+      "sourceTitle": "Graphs of Exponential Functions",
+      "moduleSha256": "4e1a0d4858afc43f543d20c2f03f2be1bf30ec60c49bba9adb3f3ae77254113a"
+    },
+    {
+      "localPath": "content/math/precalculus/04-exponential-and-logarithmic-functions/03-logarithmic-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "4.3",
+      "moduleId": "m49363",
+      "sourceTitle": "Logarithmic Functions",
+      "moduleSha256": "099985e632e6e9ad3689fd74c1a423f454e71ab4920de5014318220df7d82fe6"
+    },
+    {
+      "localPath": "content/math/precalculus/04-exponential-and-logarithmic-functions/04-graphs-of-logarithmic-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "4.4",
+      "moduleId": "m49364",
+      "sourceTitle": "Graphs of Logarithmic Functions",
+      "moduleSha256": "ee072d83b8b786b648a4f4539a119654affac56990be4ccab9b8d2795bb7adc6"
+    },
+    {
+      "localPath": "content/math/precalculus/04-exponential-and-logarithmic-functions/05-logarithmic-properties.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "4.5",
+      "moduleId": "m49365",
+      "sourceTitle": "Logarithmic Properties",
+      "moduleSha256": "c0c1906eef6898d2ab903be6cb10e79c1722f6fc135e1f9c98ca5c512bb9ccd3"
+    },
+    {
+      "localPath": "content/math/precalculus/04-exponential-and-logarithmic-functions/06-exponential-and-logarithmic-equations.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "4.6",
+      "moduleId": "m49366",
+      "sourceTitle": "Exponential and Logarithmic Equations",
+      "moduleSha256": "07444c4b8e645421f3321b614847ed476ceaaae58cd836fcb38e0d1a76605d0c"
+    },
+    {
+      "localPath": "content/math/precalculus/04-exponential-and-logarithmic-functions/07-exponential-and-logarithmic-models.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "4.7",
+      "moduleId": "m49367",
+      "sourceTitle": "Exponential and Logarithmic Models",
+      "moduleSha256": "cc1c7a0deb4c5cc1780934707e512bc194c00dba7e1fa3948652a221e327eb6a"
+    },
+    {
+      "localPath": "content/math/precalculus/04-exponential-and-logarithmic-functions/08-fitting-exponential-models-to-data.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "4.8",
+      "moduleId": "m49368",
+      "sourceTitle": "Fitting Exponential Models to Data",
+      "moduleSha256": "7d2b7b342c1b5c32eca3a3874ee8a0649dcfb960fd9d0a81cf150ac60bc40f10"
     }
   ]
 }

@@ -13,9 +13,9 @@
 
 ## Coverage
 
-- Mapped local sections: 221
-- Sections changed upstream: 14
-- Content-level changes: 9
+- Mapped local sections: 229
+- Sections changed upstream: 15
+- Content-level changes: 10
 - Markup/metadata-only changes: 5
 - Changed Try It records: 3
 - Changed Try Its where local math matches the PDF-era form: 1
@@ -26,7 +26,7 @@
 - prealgebra (`prealgebra-bundle`): `d2cea8f95118f0eb436d4406a8fc8a8e0e00e8c8`
 - elementary-algebra (`prealgebra-bundle`): `d2cea8f95118f0eb436d4406a8fc8a8e0e00e8c8`
 - intermediate-algebra (`prealgebra-bundle`): `c1bbed4b86ff5c80686d339a6ca5e4e48fae2483`
-- precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864` — scaffolded, 20 sections mapped
+- precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864` — scaffolded, 28 sections mapped
 
 ## Changed mapped sections
 
@@ -116,5 +116,10 @@ Decision: **retain-local-equivalent.** Between the inferred PDF-era commit d1bd1
 ### precalculus 3.6 — [content/math/precalculus/03-polynomial-and-rational-functions/06-zeros-of-polynomial-functions.md](../content/math/precalculus/03-polynomial-and-rational-functions/06-zeros-of-polynomial-functions.md)
 
 Module `m49349`; content-changed. Changed lanes: instructionalText.
+
+
+### precalculus 4.4 — [content/math/precalculus/04-exponential-and-logarithmic-functions/04-graphs-of-logarithmic-functions.md](../content/math/precalculus/04-exponential-and-logarithmic-functions/04-graphs-of-logarithmic-functions.md)
+
+Module `m49364`; content-changed. Changed lanes: instructionalText.
 
 
