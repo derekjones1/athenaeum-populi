@@ -401,9 +401,9 @@ called solving a **literal equation**.
 >}}
 
 {{< fillin
-  question="While on a tour in Greece, Tatyana saw that the temperature was $40°$ Celsius. Solve for $F$ in the formula $C = \tfrac{5}{9}(F - 32)$ to find the temperature in degrees Fahrenheit."
+  question="While on a tour in Greece, Tatyana saw that the temperature was $40^\circ$ Celsius. Solve for $F$ in the formula $C = \tfrac{5}{9}(F - 32)$ to find the temperature in degrees Fahrenheit."
   answer="104"
-  answerDisplay="$104°$ F"
+  answerDisplay="$104^\circ$ F"
   hint="Substitute $C = 40$, multiply both sides by $\tfrac{9}{5}$ to undo the fraction, then add 32."
 >}}
 

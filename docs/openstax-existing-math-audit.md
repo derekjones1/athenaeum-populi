@@ -15,14 +15,14 @@
 ## Coverage
 
 - Books with mapped sections: 4
-- Numbered sections mapped: 229
-- Metadata matched without a flag: 223
-- Intentional adaptations adjudicated: 6
+- Numbered sections mapped: 233
+- Metadata matched without a flag: 226
+- Intentional adaptations adjudicated: 7
 - Unresolved sections needing review: 0
 - Modules differing from the committed map: 0
-- Objectives automatically located: 856/858
-- Core instructional headings automatically located: 886/890
-- Local interactive questions inventoried: 6658
+- Objectives automatically located: 874/876
+- Core instructional headings automatically located: 907/912
+- Local interactive questions inventoried: 6766
 - Upstream Try It prompts with a likely local prompt match: 3837/4576
 
 | Book | Bundle | Authoring status | Chapters | Sections mapped |
@@ -30,7 +30,7 @@
 | elementary-algebra | `prealgebra-bundle` | complete | 10/10 | 71/71 |
 | intermediate-algebra | `prealgebra-bundle` | complete | 12/12 | 70/70 |
 | prealgebra | `prealgebra-bundle` | complete | 11/11 | 60/60 |
-| precalculus | `college-algebra-bundle` | scaffolded | 12/12 | 28/73 |
+| precalculus | `college-algebra-bundle` | scaffolded | 12/12 | 32/73 |
 
 The prose percentage is five-word source-shingle traceability, not a quality
 score. Low values can reflect disclosed condensation, reformatted mathematics,
@@ -263,12 +263,16 @@ or intentionally omitted print material.
 | [precalculus 3.9](../content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md) | `m49353` | adapted-verified | 3/3 | 4/5 | 50% | 0/0 | 12 |
 | [precalculus 4.1](../content/math/precalculus/04-exponential-and-logarithmic-functions/01-exponential-functions.md) | `m49361` | metadata matched | 4/4 | 7/7 | 10% | 0/0 | 27 |
 | [precalculus 4.2](../content/math/precalculus/04-exponential-and-logarithmic-functions/02-graphs-of-exponential-functions.md) | `m49362` | metadata matched | 2/2 | 3/3 | 41% | 0/0 | 30 |
-| [precalculus 4.3](../content/math/precalculus/04-exponential-and-logarithmic-functions/03-logarithmic-functions.md) | `m49363` | metadata matched | 5/5 | 6/6 | 44% | 0/0 | 21 |
+| [precalculus 4.3](../content/math/precalculus/04-exponential-and-logarithmic-functions/03-logarithmic-functions.md) | `m49363` | metadata matched | 5/5 | 6/6 | 43% | 0/0 | 21 |
 | [precalculus 4.4](../content/math/precalculus/04-exponential-and-logarithmic-functions/04-graphs-of-logarithmic-functions.md) | `m49364` | metadata matched | 2/2 | 4/4 | 26% | 0/0 | 19 |
 | [precalculus 4.5](../content/math/precalculus/04-exponential-and-logarithmic-functions/05-logarithmic-properties.md) | `m49365` | metadata matched | 6/6 | 7/7 | 17% | 0/0 | 28 |
 | [precalculus 4.6](../content/math/precalculus/04-exponential-and-logarithmic-functions/06-exponential-and-logarithmic-equations.md) | `m49366` | metadata matched | 5/5 | 6/6 | 43% | 0/0 | 30 |
 | [precalculus 4.7](../content/math/precalculus/04-exponential-and-logarithmic-functions/07-exponential-and-logarithmic-models.md) | `m49367` | metadata matched | 5/5 | 6/6 | 8% | 0/0 | 27 |
 | [precalculus 4.8](../content/math/precalculus/04-exponential-and-logarithmic-functions/08-fitting-exponential-models-to-data.md) | `m49368` | metadata matched | 3/3 | 3/3 | 22% | 0/0 | 19 |
+| [precalculus 5.1](../content/math/precalculus/05-trigonometric-functions/01-angles.md) | `m49371` | metadata matched | 5/5 | 7/7 | 41% | 0/0 | 27 |
+| [precalculus 5.2](../content/math/precalculus/05-trigonometric-functions/02-unit-circle-sine-and-cosine-functions.md) | `m49372` | metadata matched | 3/3 | 6/6 | 65% | 0/0 | 23 |
+| [precalculus 5.3](../content/math/precalculus/05-trigonometric-functions/03-the-other-trigonometric-functions.md) | `m49374` | metadata matched | 5/5 | 6/6 | 39% | 0/0 | 35 |
+| [precalculus 5.4](../content/math/precalculus/05-trigonometric-functions/04-right-triangle-trigonometry.md) | `m49384` | adapted-verified | 5/5 | 2/3 | 49% | 0/0 | 23 |
 
 ## Adjudicated intentional adaptations
 
@@ -295,4 +299,8 @@ or intentionally omitted print material.
 ### precalculus 3.9 — Modeling Using Variation
 
 - **adapted-verified:** Section 3.9 is the LAST section of chapter 3, and m49353 carries the whole chapter's end matter after its own section exercises: a 'Chapter Review Exercises' set and a 'Chapter Test'. The audit reads those as source headings with no local counterpart and raises heading-needs-review at 0% title similarity. They are deliberately absent: a chapter test covers all nine sections of chapter 3, so folding its items into 3.9's Practice block would attribute chapter-wide material to one section and hide the other eight sections' skills inside a variation page. The section-final Practice block draws only from the module's own '3.9 Section Exercises' set. If chapter-level assessment is wanted later it belongs in a Knowledge Check page, not here.
+
+### precalculus 5.4 — Right Triangle Trigonometry
+
+- **adapted-verified:** Section 5.4 is the LAST section of chapter 5, and m49384 carries the whole chapter's end matter after its own Section Exercises: a 'Review Exercises' set (whose subsections link back to m49371, m49372, m49374 and m49384) and a 'Practice Test'. The audit reads those as source headings of 5.4 with no local counterpart and raises heading-needs-review. They are deliberately absent: both cover all four sections of chapter 5, so folding their items into 5.4's Practice block would attribute chapter-wide material to one section and hide the other three sections' skills inside a right-triangle page. The section-final Practice block draws only from the module's own '5.4 Section Exercises' set. Chapter-level assessment belongs in a Knowledge Check page, not here. Same adjudication as content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md (m49353), whose covers_note predicted this recurrence.
 

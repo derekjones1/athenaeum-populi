@@ -313,6 +313,131 @@ test('the default mode stays ordered', async (t) => {
   }
 });
 
+// A declared answerForm used to be dropped the moment an answer held a
+// top-level comma: both list paths returned their verdict before the scalar
+// path's form check, so "Find $\cos t$ and $\sin t$, separated by a comma"
+// accepted its own printed prompt with `evaluated-trig` declared. The form
+// describes how ONE value is written, so it distributes over the members.
+const listFormCases = [
+  // ordered — the trigonometry ask that found this
+  ['\\frac{\\sqrt3}{2},\\frac{1}{2}', '\\frac{\\sqrt3}{2},\\frac{1}{2}', 'evaluated-trig', 'correct'],
+  ['\\cos\\frac{\\pi}{6},\\sin\\frac{\\pi}{6}', '\\frac{\\sqrt3}{2},\\frac{1}{2}', 'evaluated-trig', 'form'],
+  // one bad member is enough, in either position
+  ['\\frac{\\sqrt3}{2},\\sin\\frac{\\pi}{6}', '\\frac{\\sqrt3}{2},\\frac{1}{2}', 'evaluated-trig', 'form'],
+  ['\\cos\\frac{\\pi}{6},\\frac{1}{2}', '\\frac{\\sqrt3}{2},\\frac{1}{2}', 'evaluated-trig', 'form'],
+  // the degree/radian pair, whose values are equal and whose writing is not
+  ['\\frac{\\pi}{6},\\frac{\\pi}{3}', '\\frac{\\pi}{6},\\frac{\\pi}{3}', 'radians', 'correct'],
+  ['30^\\circ,60^\\circ', '\\frac{\\pi}{6},\\frac{\\pi}{3}', 'radians', 'form'],
+  // a wrong VALUE is still reported as wrong, never as a form complaint
+  ['\\frac{1}{2},\\frac{1}{2}', '\\frac{\\sqrt3}{2},\\frac{1}{2}', 'evaluated-trig', 'incorrect'],
+  ['\\cos\\frac{\\pi}{4},\\sin\\frac{\\pi}{6}', '\\frac{\\sqrt3}{2},\\frac{1}{2}', 'evaluated-trig', 'incorrect'],
+  // a grouped integer keeps the scalar reading, so its form check is the
+  // scalar one and the split must not manufacture two members from it
+  ['400,000', '400,000', 'decimal', 'correct'],
+];
+test('answerForm applies to every member of a list answer', async (t) => {
+  for (const [student, answer, form, expected] of listFormCases) {
+    await t.test(`${student}  vs  ${answer}  [${form}]`, () => {
+      assert.equal(checkAnswer(student, answer, { form }), expected);
+    });
+  }
+});
+
+// The engine reads `^\circ` as an angle and folds it onto one turn, so
+// `1400^\circ` boxed to the same expression as `320^\circ` and every
+// coterminal-angle exercise was passable by retyping its own prompt. The mark
+// is spelled out as the conversion factor on the parse path, which keeps the
+// degree/radian equality the playbook documents and drops the reduction.
+test('a degree measure is a quantity, not an angle folded onto one turn', async (t) => {
+  const cases = [
+    // the defect: coterminal representatives are NOT equal measures
+    ['1400^\\circ', '320^\\circ', 'incorrect'],
+    ['870^\\circ', '150^\\circ', 'incorrect'],
+    ['415^\\circ', '55^\\circ', 'incorrect'],
+    ['720^\\circ', '0^\\circ', 'incorrect'],
+    // …and the asymmetric negative case that made the old behaviour useless
+    // even as a coterminal check
+    ['-540^\\circ', '180^\\circ', 'incorrect'],
+    // a measure past one turn still equals itself
+    ['1080^\\circ', '1080^\\circ', 'correct'],
+    ['1400^\\circ', '1400^\\circ', 'correct'],
+    // the documented degree/radian equality is untouched, both directions
+    ['30^\\circ', '\\frac{\\pi}{6}', 'correct'],
+    ['\\frac{\\pi}{6}', '30^\\circ', 'correct'],
+    ['225^\\circ', '\\frac{5\\pi}{4}', 'correct'],
+    ['-135^\\circ', '-\\frac{3\\pi}{4}', 'correct'],
+    // and degrees inside a trigonometric argument still evaluate, including
+    // past one turn where folding is the CORRECT thing for sine to do
+    ['\\cos(315^\\circ)', '\\frac{\\sqrt2}{2}', 'correct'],
+    ['\\sin(390^\\circ)', '\\frac{1}{2}', 'correct'],
+  ];
+  for (const [student, answer, expected] of cases) {
+    await t.test(`${student}  vs  ${answer}`, () => {
+      assert.equal(checkAnswer(student, answer), expected);
+    });
+  }
+});
+
+// `\circ` without a superscript is function composition, and must not be
+// mistaken for a degree mark.
+test('function composition is not a degree mark', () => {
+  assert.equal(checkAnswer('f\\circ g', 'f\\circ g'), 'correct');
+});
+
+test('answerForm applies to every member of an unordered answer', () => {
+  const key = '\\frac{1}{2},\\frac{\\sqrt3}{2}';
+  assert.equal(checkAnswer('\\frac{\\sqrt3}{2},\\frac{1}{2}', key, { mode: 'unordered', form: 'evaluated-trig' }), 'correct');
+  assert.equal(checkAnswer('\\sin\\frac{\\pi}{3},\\cos\\frac{\\pi}{3}', key, { mode: 'unordered', form: 'evaluated-trig' }), 'form');
+});
+
+// The list FORM check and the list VALUE check must split members the same
+// way. The value graders rejoin a digit-grouped member ("1,536"); the form
+// check re-split on raw commas and saw an orphan "1" that is no degree
+// measure, so declaring a form DEMOTED a fully correct answer — and only ever
+// for members that reach 1,000.
+test('the list form check splits members exactly as the value graders do', () => {
+  const key = '90^\\circ,1536^\\circ';
+  assert.equal(checkAnswer('90^\\circ,1,536^\\circ', key), 'correct');
+  assert.equal(checkAnswer('90^\\circ,1,536^\\circ', key, { form: 'degrees' }), 'correct');
+  assert.equal(checkAnswer('1,536^\\circ,90^\\circ', key, { mode: 'unordered', form: 'degrees' }), 'correct');
+  // …and the token still catches a member genuinely written in the wrong form.
+  assert.equal(checkAnswer('90^\\circ,\\frac{128\\pi}{15}', key, { form: 'degrees' }), 'form');
+});
+
+// An ordered pair is compared MEMBER BY MEMBER. Nothing else in equivalent()
+// can decide one: `isEqual` on two tuples only reports what canonicalization
+// already folded, and `Subtract` of two tuples is a type error, so the
+// `simplify()` fallback is dead. That left the whole "Enter your answer as an
+// ordered pair" convention grading on canonical identity alone.
+test('ordered pairs compare member by member', async (t) => {
+  const cases = [
+    // the defect: MathLive's own spelling of the key, marked wrong because
+    // Negate(Divide(√3,2)) is not the same tree as Divide(Negate(√3),2)
+    ['\\left(\\frac{1}{2},-\\frac{\\sqrt3}{2}\\right)', '(1/2,-\\sqrt3/2)', 'correct'],
+    ['\\left(\\tfrac12,-\\tfrac{\\sqrt3}{2}\\right)', '(1/2,-\\sqrt3/2)', 'correct'],
+    ['(2,x+x)', '(2,2x)', 'correct'],
+    // and the pairs that must still be told apart
+    ['(1/2,\\sqrt3/2)', '(1/2,-\\sqrt3/2)', 'incorrect'],
+    ['(-1/2,-\\sqrt3/2)', '(1/2,-\\sqrt3/2)', 'incorrect'],
+    ['(0,-\\sqrt3/2)', '(1/2,-\\sqrt3/2)', 'incorrect'],
+    // order is meaning: a pair is not a set
+    ['(-\\sqrt3/2,1/2)', '(1/2,-\\sqrt3/2)', 'incorrect'],
+    // arity is meaning too
+    ['(1/2,-\\sqrt3/2,0)', '(1/2,-\\sqrt3/2)', 'incorrect'],
+    // a container is never equivalent to a scalar
+    ['1/2', '(1/2,-\\sqrt3/2)', 'incorrect'],
+    // the same rule reaches the other ordered containers the corpus keys
+    ['[-1,\\sqrt{4}]', '[-1,2]', 'correct'],
+    ['[-1,3]', '[-1,2]', 'incorrect'],
+    ['\\left(-\\infty,\\tfrac{1}{2}\\right)', '(-\\infty,0.5)', 'correct'],
+  ];
+  for (const [student, answer, expected] of cases) {
+    await t.test(`${student}  vs  ${answer}`, () => {
+      assert.equal(checkAnswer(student, answer), expected);
+    });
+  }
+});
+
 // ---- answerForm: the shape of a right value ------------------------------
 // A re-expression prompt ("Simplify $-\tfrac{40}{88}$") has the printed
 // subject as a correct value, so value grading alone accepts the prompt
@@ -433,6 +558,17 @@ const formCases = [
   // Formula exercise asks for. The narrowing is deliberate, and the prompt
   // now says so ("Enter the exact form, as a simplified radical").
   ['130^{\\frac{1}{2}}', '\\sqrt{130}', 'exact-radical', 'form'],
+  // `exact` is the same ask where the response is a CONTAINER, so no shape
+  // token can describe it: "Solve … Enter both solutions in exact form" keys
+  // an unordered pair of points, and `exact-radical` would report `form` on
+  // the exact answer itself (the second member of each pair is `0`). The
+  // 16-digit approximation IS value-equal — the pair grades correct without a
+  // form — so, as everywhere in this table, only the writing can reject it.
+  ['(-\\sqrt3,0)', '(-\\sqrt3,0)', 'exact', 'correct'],
+  ['(-\\sqrt3,0)', '(-\\sqrt3,0)', 'exact-radical', 'form'],
+  ['(-1.732050807568877,0)', '(-\\sqrt3,0)', 'exact', 'form'],
+  ['\\sqrt{130}', '\\sqrt{130}', 'exact', 'correct'],
+  ['11.40175425099138', '\\sqrt{130}', 'exact', 'form'],
   ['\\ln 8+4', '\\ln 8+4', 'exact-log', 'correct'],
   ['\\ln 8', '\\ln 8', 'exact-log', 'correct'],
   ['\\ln 9+2', '\\ln 9+2', 'exact-log', 'correct'],
@@ -893,6 +1029,15 @@ const formCases = [
   ['\\frac{\\pi}{6}', '\\frac{\\pi}{6}', 'evaluated-trig', 'correct'],
   ['\\sin^{-1}\\left(\\frac{1}{2}\\right)', '\\frac{\\pi}{6}', 'evaluated-trig', 'form'],
   ['\\arcsin\\left(\\frac{1}{2}\\right)', '\\frac{\\pi}{6}', 'evaluated-trig', 'form'],
+  // single-trig-function — "Simplify $(\tan t)(\cos t)$" answers $\sin t$,
+  // value-equal to the printed product, so only the writing separates them.
+  // The answer IS a trigonometric function, so the test counts applications
+  // rather than forbidding them the way evaluated-trig does.
+  ['\\sin t', '\\sin t', 'single-trig-function', 'correct'],
+  ['(\\tan t)(\\cos t)', '\\sin t', 'single-trig-function', 'form'],
+  ['\\frac{\\sin t}{\\cos t}', '\\tan t', 'single-trig-function', 'form'],
+  // a coefficient is part of a simplified result, not an unapplied step
+  ['2\\sin t', '2\\sin t', 'single-trig-function', 'correct'],
   // evaluated-logarithm — exponential-form's predicate, its own feedback
   ['3', '3', 'evaluated-logarithm', 'correct'],
   ['\\log_2 8', '3', 'evaluated-logarithm', 'form'],
@@ -906,6 +1051,20 @@ const formCases = [
   ['\\frac{5\\pi}{4}', '\\frac{5\\pi}{4}', 'radians', 'correct'],
   ['225^\\circ', '\\frac{5\\pi}{4}', 'radians', 'form'],
   ['2', '2', 'radians', 'correct'],
+  // ALL THREE spellings of the degree mark, in both predicates. The parse path
+  // folds `\degree` and a bare `°` into pi/180 exactly as it folds `^\circ`,
+  // so a form token that read only the literal `^\circ` disagreed with the
+  // grader about what a degree measure is: `225\degree` was told "now write it
+  // in degrees" (advice already followed), and `320°` satisfied `radians` —
+  // waving through the printed-subject retype that token exists to refuse.
+  ['225^{\\circ}', '225^\\circ', 'degrees', 'correct'],
+  ['225\\degree', '225^\\circ', 'degrees', 'correct'],
+  ['225°', '225^\\circ', 'degrees', 'correct'],
+  ['320\\degree', '\\frac{16\\pi}{9}', 'radians', 'form'],
+  ['320°', '\\frac{16\\pi}{9}', 'radians', 'form'],
+  // A bare `\circ` is function composition, not an angle, so it fails no form
+  // it never violated — the narrowing from `\circ` to the degree mark.
+  ['f\\circ g', 'f\\circ g', 'radians', 'correct'],
   // simplified-radical tightenings: unevaluated numeral arithmetic and
   // fractions under the root, signed perfect powers, written-out units, and
   // same-index numeral-radical products all reject now

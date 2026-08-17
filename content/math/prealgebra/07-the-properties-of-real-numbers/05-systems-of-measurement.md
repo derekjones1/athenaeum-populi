@@ -386,15 +386,15 @@ It is about $62$ miles to the next rest stop.
 ## Convert between Fahrenheit and Celsius temperatures
 
 Have you ever been in a foreign country and heard the weather forecast? If
-the forecast is for $22°\text{C}$, what does that mean?
+the forecast is for $22^\circ\text{C}$, what does that mean?
 
-The U.S. system uses degrees Fahrenheit, written $°\text{F}$. The
-metric system uses degrees Celsius, written $°\text{C}$. On the
-Celsius scale, water freezes at $0°\text{C}$ and boils at
-$100°\text{C}$. On the Fahrenheit scale, water freezes at
-$32°\text{F}$ and boils at $212°\text{F}$. Normal body
-temperature is about $37°\text{C}$, which is equivalent to
-$98.6°\text{F}$.
+The U.S. system uses degrees Fahrenheit, written $^\circ\text{F}$. The
+metric system uses degrees Celsius, written $^\circ\text{C}$. On the
+Celsius scale, water freezes at $0^\circ\text{C}$ and boils at
+$100^\circ\text{C}$. On the Fahrenheit scale, water freezes at
+$32^\circ\text{F}$ and boils at $212^\circ\text{F}$. Normal body
+temperature is about $37^\circ\text{C}$, which is equivalent to
+$98.6^\circ\text{F}$.
 
 If we know the temperature in one system, we can use a formula to convert
 it to the other system.
@@ -413,13 +413,13 @@ it to the other system.
   $$F = \tfrac{9}{5}C + 32$$
 {{< /callout >}}
 
-**Example.** Convert $50°\text{F}$ into degrees Celsius.
+**Example.** Convert $50^\circ\text{F}$ into degrees Celsius.
 
 Substitute $50$ for $F$ in the conversion formula, then simplify:
 
 $$C = \tfrac{5}{9}(50 - 32) = \tfrac{5}{9}(18) = 10$$
 
-A temperature of $50°\text{F}$ is equivalent to $10°\text{C}$.
+A temperature of $50^\circ\text{F}$ is equivalent to $10^\circ\text{C}$.
 
 {{< fillin
   question="Convert 41°F to degrees Celsius."
@@ -428,13 +428,13 @@ A temperature of $50°\text{F}$ is equivalent to $10°\text{C}$.
 >}}
 
 **Example.** The weather forecast for Paris predicts a high of
-$20°\text{C}$. Convert the temperature into degrees Fahrenheit.
+$20^\circ\text{C}$. Convert the temperature into degrees Fahrenheit.
 
 Substitute $20$ for $C$ in the conversion formula, then simplify:
 
 $$F = \tfrac{9}{5}(20) + 32 = 36 + 32 = 68$$
 
-So $20°\text{C}$ is equivalent to $68°\text{F}$.
+So $20^\circ\text{C}$ is equivalent to $68^\circ\text{F}$.
 
 {{< fillin
   question="Convert 10°C to degrees Fahrenheit."

@@ -299,6 +299,7 @@ the two independent things it names:
 | `radical` | the WHOLE response is `coefficient? \sqrt[n]{radicand}`, one term and one factor, no exponent on the radical, an integer index $\ge 2$, and a variable in the radicand — the mirror conversion, otherwise passable by retyping the printed exponent form |
 | `exact-log` | the WHOLE response is `integer? logarithm` or `\frac{logarithm}{logarithm or integer}`, optionally plus or minus one integer, each logarithm taking a single numeral or variable — **and no decimal point anywhere** — for "enter the exact answer" asks whose key is a logarithm |
 | `exact-radical` | the WHOLE response is `coefficient? \sqrt[n]{radicand}` with no decimal point anywhere, and `simplified-radical` besides — for "enter the exact form" asks whose key is a radical. `simplified-radical` alone cannot serve them: it passes any response holding no radical, including the rational-arithmetic approximation $\tfrac{1140175425099138}{100000000000000}$ |
+| `exact` | no decimal point anywhere in the response, and nothing else — the "in exact form" ask for a response that has no single shape to require. Use it when `exact-log`/`exact-radical` cannot apply because the answer is a CONTAINER: "Enter both solutions in exact form" keyed $(-\sqrt3,0),(\sqrt3,0)$ has an ordered pair whose second member is $0$, and demanding a radical there would report `form` on the exact answer the exercise prints. Being an absence test it is the weakest of this family — compose it with a shape token whenever the response does have a shape worth naming |
 | `summation` | the WHOLE response is `coefficient? \sum_{lower}^{upper} body`, one term and one factor, both bounds written — "write the sum using summation notation" is otherwise passable by retyping the printed expanded sum |
 | `single-logarithm` | exactly one logarithm in one term, and the term IS the logarithm (no outside coefficient — $2\log_2\sqrt{5x/y}$ is the Power Property left unapplied) — "condense to one logarithm" is otherwise passable by retyping the printed multi-log sum |
 | `mixed-number` | a whole number and a proper fraction |
@@ -326,6 +327,7 @@ the two independent things it names:
 | `base-e` | no base other than $e$ raised to a variable exponent — for "change $y=3(0.5)^x$ to one having $e$ as the base", where the answer IS the printed function rewritten. A numeric exponent ($x^2$) is a power function and is left alone |
 | `expanded-logarithms` | every written $\log$ takes a single number or variable — for "write $\log_5 25ab$ as a sum of logarithms" |
 | `evaluated-trig` | no trigonometric function left ($\sin$, $\cos$, $\tan$, $\csc$, $\sec$, $\cot$, and their $\arcsin$/$\sin^{-1}$ inverses) — for "find the exact value of $\cos\tfrac{\pi}{4}$", whose printed subject IS its own answer |
+| `single-trig-function` | exactly one trigonometric application written — for "simplify $(\tan t)(\cos t)$", whose answer $\sin t$ is value-equal to the printed product. `evaluated-trig` cannot serve here: the answer IS a trigonometric function, so the test counts applications instead of forbidding them, the way `single-logarithm` does one family over. A coefficient is allowed ($2\sin t$), because in a simplification it is part of the result rather than an unapplied step |
 | `evaluated-logarithm` | no logarithm left — for "evaluate $\log_2 8$", the same hazard one function over. Same predicate as `exponential-form`, kept apart because its feedback has to name evaluating rather than converting |
 | `degrees` | one term, ending in $^\circ$, on a plain numeric head — for "convert $\tfrac{5\pi}{4}$ radians to degrees", where the engine reads $^\circ$ as an exact operator and grades the two spellings equal |
 | `radians` | no degree symbol anywhere — the mirror ask. A radian measure has no notation of its own, so ruling out the printed degree form is the whole check |
@@ -335,6 +337,18 @@ the two independent things it names:
 A right value in the wrong shape reports back as "That value is right — now
 write it in lowest terms", so the learner is told what is missing rather than
 that they are wrong. A wrong value is still just wrong.
+
+**A form applies to every member of a list answer.** An `answer` holding a
+top-level comma (`"\frac{\sqrt3}{2},\frac12"`, or any `answerMode="unordered"`
+key) is graded member by member, and the declared form is required of each
+member in turn — a form describes how *one* value is written, so the
+requirement distributes. Until August 16, 2026 both list paths returned their
+verdict before the form check ever ran, so the token was silently dropped the
+moment an answer held a comma: "Find $\cos t$ and $\sin t$, separated by a
+comma" accepted its own printed $\cos\tfrac{\pi}{6},\sin\tfrac{\pi}{6}$ with
+`evaluated-trig` declared. `tools/verify-replay.mjs` skipped the whole
+list-keyed class for that reason and so could not report it; with the grader
+fixed the exemption is gone and those 451 fillins are replayed like any other.
 
 Which evidence the requirement is checked against depends on what it separates.
 A **numeral** form is checked against the LaTeX, because the Compute Engine
@@ -868,7 +882,20 @@ another way, or extend `preprocess()` first and add the test with it.
 `^\circ` is exact, not decorative: the engine converts it, so `30^\circ`
 and `\frac{\pi}{6}` are the same value and each is accepted for the other.
 A prompt that must have degrees (or must have radians) cannot get that from
-the value check — say so in the question.
+the value check — say so in the question, and declare `degrees` or `radians`.
+
+The engine also read `^\circ` as an *angle* and folded it onto one turn, so
+`1400^\circ` boxed to the same expression as `320^\circ` and every
+coterminal-angle exercise in §5.1 was passable by retyping its own prompt —
+with no form token able to refuse it, since `degrees` asks how the response is
+written and the retype is written in degrees. The reduction was asymmetric
+(`-540^\circ` boxed to `-\pi`, not `\pi`), so it was not even usable as a
+coterminal check. Since August 16, 2026 `checkAnswer` spells the mark out as
+`\cdot\frac{\pi}{180}` on the parse path: the value is ordinary arithmetic,
+`30^\circ` still equals `\frac{\pi}{6}`, and `1400^\circ` no longer equals
+`320^\circ`. **A coterminal answer is therefore compared strictly** — the key
+names one representative and only that one grades correct, so say which the
+question wants ("the coterminal angle between $0^\circ$ and $360^\circ$").
 
 `{{< graphplot >}}` grades three answer shapes only — a line, a system of two
 lines, and a quadratic. Any other curve (exponential, logarithmic, sinusoid,
@@ -935,7 +962,7 @@ carried zero of each, and the warning channel was deleted with them. There is
 no non-blocking rule left in the repository and no category of
 known-defective content to grandfather.
 
-The Practice retrofit that used to live here is finished. All 229 mapped
+The Practice retrofit that used to live here is finished. All 233 mapped
 sections carry the block (the documentation test pins that count to the live
 map, so authoring a new mapped section means bumping it here). The final
 block landed on August 9, 2026; the lint rule was promoted from a warning to

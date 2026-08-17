@@ -11,12 +11,21 @@
  * form. Source-only replay let `\tfrac12+\tfrac14+…` grade 'invalid' while
  * the same sum typed into the field graded 'correct'.
  *
- * NOT replayed — TWO classes, both counted and reported, never silent:
+ * NOT replayed — ONE class, counted and reported, never silent:
  *
- *   · list-keyed FILLINS, whose unordered/comma-list keys make list grading
- *     return before the form check ever runs; and
  *   · form-rejected SPANS, where the exercise's own answerForm refuses the
  *     printed spelling, so no learner could submit it as an answer.
+ *
+ * A second class used to sit beside it: list-keyed FILLINS, exempted because
+ * both list paths in checkAnswer() returned their verdict before the form
+ * check ever ran, so a declared answerForm was ignored the moment an answer
+ * held a top-level comma. That was a grader defect this gate described rather
+ * than reported, and it took 451 fillins out of coverage — "Find $\cos t$ and
+ * $\sin t$, separated by a comma" could accept its own printed
+ * $\cos\frac{\pi}{6},\sin\frac{\pi}{6}$ with `evaluated-trig` declared. The
+ * grader now applies the declared form to every member of a list
+ * (`listFormAccepted`), so the exemption has nothing left to stand on and the
+ * class is replayed like any other: +768 spans, 0 new failures.
  *
  * Everything else is replayed. The four shape-based whole-class skips this
  * gate used to carry — spans with a top-level `=`, spans containing a comma,
@@ -58,7 +67,7 @@ import { availableParallelism } from 'node:os';
 import { execFile } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { walkMarkdown, mathSpans, shortcodes } from './lib-content.mjs';
-import { checkAnswer, checkFormAsGraded, splitTopLevelCommas } from '../assets/js/lib/check-answer.mjs';
+import { checkAnswer, checkFormAsGraded } from '../assets/js/lib/check-answer.mjs';
 
 // file (repo-relative) + a question prefix that names ONE fillin + the exact
 // printed SPAN that coincides + why that coincidence is sound.
@@ -122,6 +131,7 @@ export const SOUND_COINCIDENCES = [
   ['content/math/prealgebra/11-graphs/03-graphing-with-intercepts.md', 'The equation $x = -7$ has', 'x = -7', 'vertical line x = a: it crosses the x-axis at that same a'],
   ['content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md', 'Use a geoboard model: wha', '-2', 'the slope coincides with a printed rise/run'],
   ['content/math/prealgebra/knowledge-check-01-06.md', 'The ages, in months, of 10 children in a preschool class are: 55, 55, 50, 51, 52, 50, 53, 51, 55, 49. Find the mo', '55', 'the mode IS a printed datum'],
+  ['content/math/precalculus/05-trigonometric-functions/02-unit-circle-sine-and-cosine-functions.md', 'A certain angle $t$ corresponds to a point on the unit circle at', '\\left(-\\tfrac{\\sqrt2}{2},\\tfrac{\\sqrt2}{2}\\right)', 'the unit-circle identification itself: $(\\cos t,\\sin t)$ IS the point, so on the unit circle the printed point states its own answer and copying it is the correct response. The source Try It (m49372, after Example 1) is written this way deliberately — it follows the example that establishes $\\cos t=x$ and $\\sin t=y$ — and no answerForm can separate the two, because the response and the printed span are the same value in the same shape'],
 ];
 
 /**
@@ -153,7 +163,6 @@ export function mathliveSpelling(tex) {
  * as though they were the same measurement.
  */
 export const SKIP_CLASSES = [
-  { key: 'list-keyed fillin', unit: 'fillin' },
   { key: 'allowlisted span', unit: 'span' },
   { key: 'form-rejected span', unit: 'span' },
 ];
@@ -169,20 +178,6 @@ function replayFile(file) {
     const q = sc.params.question || '';
     const answer = sc.params.answer || '';
     if (!q || !answer) continue;
-    // A list key really does return before the form check. Which commas make
-    // a list is decided by the GRADER's own splitter, not by `includes(',')`:
-    // an ordered pair `(3,0)` has a comma and is graded as a scalar, so the
-    // cheap test skipped every coordinate exercise while claiming to skip
-    // lists.
-    // `answerMode` alone is not the exemption — being a LIST is. An OR here
-    // meant an author could set `answerMode="unordered"` on a scalar answer
-    // and take the exercise out of replay coverage without its answer holding
-    // a single comma, which is precisely the gate going quiet on content it
-    // was written to police.
-    if (splitTopLevelCommas(answer).length > 1) {
-      skipped['list-keyed fillin'] += 1;
-      continue;
-    }
     // Allowlist entries are read per SPAN, so a fillin with one sound
     // coincidence still has every other span it prints replayed.
     const exempt = new Set(SOUND_COINCIDENCES

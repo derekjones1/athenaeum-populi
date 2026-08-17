@@ -29,7 +29,7 @@ and the operations using them.
 
 Have you ever experienced a temperature below zero? A **negative number**
 is a number that is less than $0$. Very cold temperatures are measured in
-degrees below zero. For example, $-1°\text{F}$ (read "negative one degree
+degrees below zero. For example, $-1^\circ\text{F}$ (read "negative one degree
 Fahrenheit") is $1$ degree below $0$. A minus sign is shown before a number
 to indicate that it is negative.
 
@@ -353,7 +353,7 @@ temperature is $12$ degrees Fahrenheit below zero; (b) the football team
 had a gain of $3$ yards; (c) the elevation of the Dead Sea is $1{,}302$
 feet below sea level; (d) a checking account is overdrawn by $\text{\textdollar}40$.
 
-(a) *Below zero* signals a negative number: $-12°\text{F}$. (b) *Gain*
+(a) *Below zero* signals a negative number: $-12^\circ\text{F}$. (b) *Gain*
 signals a positive number: $3$ yards. (c) *Below sea level* signals a
 negative number: $-1{,}302$ feet. (d) *Overdrawn* signals a negative
 number: $-\text{\textdollar}40$.

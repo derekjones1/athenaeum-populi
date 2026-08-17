@@ -17,6 +17,7 @@ import {
   mathSpans,
   parseFrontmatter,
   shortcodeParams,
+  shortcodeParamSpans,
   shortcodes,
   walkFiles,
   walkMarkdown,
@@ -153,6 +154,29 @@ test('shortcodes yields params, body, and offset', () => {
   assert.equal(found.inner.trim(), 'yes\nno');
   assert.equal(found.closed, true);
   assert.equal(src.slice(found.index, found.index + 19), '{{< multiplechoice ');
+});
+
+test('shortcodeParamSpans locates a value that unescaping made unfindable', () => {
+  // `shortcodeParams` returns UNESCAPED values, so a caller cannot find one
+  // again with indexOf once the source wrote `\"` — and a checker that skips
+  // what it cannot locate exempts exactly those params without saying so.
+  const open = ' question="\\"Convert\\" 126° to radians." answer="1" ';
+  const spans = shortcodeParamSpans(open);
+  assert.equal(open.indexOf(shortcodeParams(open).question), -1, 'precondition: indexOf cannot find the unescaped value');
+  assert.equal(spans.question.raw, '\\"Convert\\" 126° to radians.');
+  assert.equal(open.slice(spans.question.index, spans.question.index + spans.question.raw.length), spans.question.raw);
+  // A plain param resolves the same way.
+  assert.equal(spans.answer.raw, '1');
+  assert.equal(open.slice(spans.answer.index, spans.answer.index + 1), '1');
+});
+
+test('a shortcode reports where its opening body starts', () => {
+  const src = 'Intro.\n{{< fillin question="Q." answer="1" >}}\n';
+  const [found] = [...shortcodes(src, 'fillin')];
+  assert.equal(src.slice(found.openIndex, found.openIndex + found.open.length), found.open);
+  // …so a param span resolves to a file offset by simple addition.
+  const span = shortcodeParamSpans(found.open).answer;
+  assert.equal(src.slice(found.openIndex + span.index, found.openIndex + span.index + 1), '1');
 });
 
 test('shortcodes reports an unclosed paired tag rather than an empty body', () => {

@@ -128,7 +128,7 @@ $(2 \cdot 8) \cdot 5$
 >}}
 
 {{< fillin
-  question="Use the formula $F = \tfrac{9}{5}C + 32$ to convert $35°C$ to degrees Fahrenheit."
+  question="Use the formula $F = \tfrac{9}{5}C + 32$ to convert $35^\circ$C to degrees Fahrenheit."
   answer="95"
   answerDisplay="95°F"
 >}}
@@ -270,9 +270,9 @@ $(2 \cdot 8) \cdot 5$
 ### 9.3 Use Properties of Angles, Triangles, and the Pythagorean Theorem
 
 {{< fillin
-  question="Find the complement of a 52° angle."
+  question="Find the complement of a $52^\circ$ angle."
   answer="38"
-  answerDisplay="38°"
+  answerDisplay="$38^\circ$"
 >}}
 
 {{< fillin

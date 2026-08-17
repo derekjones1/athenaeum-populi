@@ -138,7 +138,7 @@ $A = L \cdot W$.
 {{< callout type="info" >}}
   **Properties of rectangles.**
 
-  - Rectangles have four sides and four right ($90°$) angles.
+  - Rectangles have four sides and four right ($90^\circ$) angles.
   - The lengths of opposite sides are equal.
   - The perimeter, $P$, of a rectangle is the sum of twice the length and
     twice the width: $P = 2L + 2W$.
@@ -318,13 +318,13 @@ is why the formula for the area of a triangle is $A = \tfrac{1}{2}bh$.
 To find the area of a triangle, you need to know its base and height. The
 **base** is the length of one side of the triangle, usually the side at
 the bottom. The **height** is the length of the line that connects the
-base to the opposite vertex, and makes a $90°$ angle with the base.
+base to the opposite vertex, and makes a $90^\circ$ angle with the base.
 
 {{< callout type="info" >}}
   **Triangle properties.** For any triangle $\Delta ABC$, the sum of the
-  measures of the angles is $180°$:
+  measures of the angles is $180^\circ$:
 
-  $$m\angle A + m\angle B + m\angle C = 180°$$
+  $$m\angle A + m\angle B + m\angle C = 180^\circ$$
 
   The perimeter of a triangle is the sum of the lengths of the sides:
 

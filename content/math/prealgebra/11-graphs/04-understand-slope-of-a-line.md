@@ -47,7 +47,7 @@ shown below.
 
 Does it look like a line? Now we stretch one part of the rubber band straight
 up from the left peg and around a third peg to make the sides of a right
-triangle. We carefully make a $90°$ angle around the third peg, so that one
+triangle. We carefully make a $90^\circ$ angle around the third peg, so that one
 side is vertical and the other is horizontal.
 
 <svg viewBox="0 0 160 160" role="img" aria-label="The same geoboard. The rubber band now forms a right triangle: a vertical side going up from the bottom-left peg, a horizontal side going right, and the diagonal hypotenuse connecting them." style="max-width: 200px; display: block; margin: 1.5rem auto">

@@ -370,4 +370,38 @@ assert.equal(fillins[0].line, 7);
 assert.equal(fillins[0].params.answer, '2');
 assert.equal(analyzeFillin(fillins[0].params).status, 'pass');
 
+/* ---- a subject the FIGURE pins is not this checker's to compare ---------- */
+// "Given the triangle shown below, find the value of $\sin t$" answers 7/25.
+// The figure fixes t; the checker reads text. Sampling t compares sin(1.3178)
+// with 7/25 and reports a disagreement that says nothing about the answer.
+assert.equal(
+  analyze('Given the triangle shown below, find the value of $\\sin t$.', '7/25').status,
+  'skip',
+);
+assert.equal(
+  analyze('Using the figure, find the value of $\\cos\\theta$.', '\\frac{3}{5}').status,
+  'skip',
+);
+// The referent is the discriminator, not the free variable: a subject that is
+// identically constant stays in scope and still catches a wrong answer.
+assert.equal(analyze('Simplify $\\frac{x}{x}$.', '1').status, 'pass');
+assert.equal(analyze('Simplify $\\frac{x}{x}$.', '2').status, 'fail');
+// …and a re-expression whose variable survives into the answer stays in scope.
+assert.equal(analyze('Simplify $(\\tan t)(\\cos t)$.', '\\sin t').status, 'pass');
+assert.equal(analyze('Simplify $(\\tan t)(\\cos t)$.', '\\cos t').status, 'fail');
+
+/* ---- degree measures are read exactly as the grader reads them ---------- */
+// The engine folds `^\circ` onto one turn, so `-540^\circ` boxes to `-pi`
+// unless the mark is spelled out as the conversion factor first. checkAnswer
+// does that; this checker must do the SAME, or a sound conversion answer fails
+// a cross-check that is really comparing two readings of one printed span.
+assert.equal(analyze('Convert $-540^\\circ$ to radians.', '-3\\pi').status, 'pass');
+assert.equal(analyze('Convert $-540^\\circ$ to radians.', '-\\pi').status, 'fail');
+assert.equal(analyze('Convert $1400^\\circ$ to radians.', '\\frac{70\\pi}{9}').status, 'pass');
+assert.equal(analyze('Convert $1400^\\circ$ to radians.', '\\frac{16\\pi}{9}').status, 'fail');
+// the ordinary sub-one-turn conversions keep working, both directions
+assert.equal(analyze('Convert $126^\\circ$ to radians.', '\\frac{7\\pi}{10}').status, 'pass');
+assert.equal(analyze('Convert $\\frac{5\\pi}{4}$ radians to degrees.', '225^\\circ').status, 'pass');
+assert.equal(analyze('Convert $\\frac{5\\pi}{4}$ radians to degrees.', '224^\\circ').status, 'fail');
+
 console.log('verify-answers tests passed');

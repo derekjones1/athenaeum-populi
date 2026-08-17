@@ -537,13 +537,143 @@ test('a factoring prompt is trivially satisfiable without answerForm', () => {
     'a declared single-fraction on a rational reduction is exercised and found too weak',
   );
 
-  // A form beside a list answer grades nothing — the grader returns first.
+  // A form beside a list answer used to grade nothing, because the grader
+  // returned from its list paths first, and the rule here rejected it as a
+  // silent no-op. checkAnswer now applies the declared form to every member,
+  // so the declaration is meaningful and must be ACCEPTED — this is the
+  // inverted assertion, kept so the rule cannot quietly come back.
   assert(
-    lintHugo(
+    !lintHugo(
       '{{< fillin question="Solve $x^2=9$." answer="-3,3" answerMode="unordered" answerForm="factored" hint="Both signs." >}}',
       'content/math/book/01-chapter/01-section.md',
-    ).errors.some((error) => error.includes('not applied to a comma-separated answer')),
-    'answerForm on a list answer is a silent no-op and must be rejected',
+    ).errors.some((error) => error.includes('comma-separated answer')),
+    'answerForm on a list answer is applied per member and must not be rejected',
+  );
+});
+
+// A plain YAML scalar ends at its first `: `, so an unquoted title with a
+// colon is a nested mapping and Hugo refuses to build the site. §5.2 shipped
+// one that passed all of `npm test`.
+test('frontmatter with an unquoted colon is rejected', () => {
+  const at = 'content/math/book/01-chapter/01-section.md';
+  const errs = (src) => lintHugo(src, at).errors;
+  const bad = '---\ntitle: Unit Circle: Sine and Cosine Functions\nweight: 2\n---\n\ntext\n';
+  assert(
+    errs(bad).some((e) => e.includes('holds an unquoted')),
+    'an unquoted `: ` in a frontmatter value is rejected',
+  );
+  // Quoting it is the fix, and a value with a colon but no space after it
+  // (a URL, a time) is valid YAML and must not be flagged.
+  for (const good of [
+    '---\ntitle: "Unit Circle: Sine and Cosine Functions"\nweight: 2\n---\n\ntext\n',
+    '---\ntitle: Angles\nsource_url: https://openstax.org/books\nweight: 2\n---\n\ntext\n',
+    '---\ntitle: Angles\ndescription: >-\n  A folded block: it may hold a colon.\nweight: 2\n---\n\ntext\n',
+  ]) {
+    assert.deepEqual(errs(good).filter((e) => e.includes('holds an unquoted')), []);
+  }
+});
+
+// A word cannot be typed into a math input. §5.3 keyed `\text{undefined}` and
+// told the learner to "enter undefined" — which MathLive reads as `def\in ed`,
+// marking the correct learner wrong.
+test('a word keyed as a fillin answer is rejected', () => {
+  const at = 'content/math/book/01-chapter/01-section.md';
+  const errs = (src) => lintHugo(src, at).errors;
+
+  assert(
+    errs('{{< fillin question="Find $\\tan\\tfrac{\\pi}{2}$." answer="\\text{undefined}" answerDisplay="undefined" hint="Cosine is zero there." >}}')
+      .some((e) => e.includes('the answer is a WORD')),
+    'a \\text{…} fillin answer is rejected — the math input cannot produce a word',
+  );
+  // The same categorical answer as a multiplechoice is exactly the fix, and
+  // must not trip the rule.
+  assert.deepEqual(
+    errs('{{< multiplechoice question="Find $\\tan\\tfrac{\\pi}{2}$." answer="Undefined" hint="Cosine is zero there." >}}\n$0$\n$1$\n$-1$\nUndefined\n{{< /multiplechoice >}}')
+      .filter((e) => e.includes('the answer is a WORD')),
+    [],
+  );
+  // \text{} inside a larger MATHEMATICAL answer is a unit label, not a word
+  // answer, and the rule must not reach it.
+  assert.deepEqual(
+    errs('{{< fillin question="How fast is it going?" answer="12" answerDisplay="$12$ m/s" hint="Divide." >}}')
+      .filter((e) => e.includes('the answer is a WORD')),
+    [],
+  );
+});
+
+// Mathematics in an exercise string is typeset, never spelled with lookalike
+// characters — the drift the first trigonometry pass introduced in 95 places.
+test('unicode mathematics in an exercise string is rejected', () => {
+  const at = 'content/math/book/01-chapter/01-section.md';
+  const errs = (src) => lintHugo(src, at).errors;
+
+  assert(
+    errs('{{< fillin question="Convert 126° to radians." answer="\\frac{7\\pi}{10}" answerForm="radians" hint="Multiply." >}}')
+      .some((e) => e.includes('unicode math character "°" in question')),
+    'a raw degree sign in a question is rejected',
+  );
+  assert(
+    errs('{{< fillin question="Find $x$." answer="1" hint="Recall −17π/6 is coterminal." >}}')
+      .some((e) => e.includes('unicode math character "π" in hint')),
+    'a raw pi in a hint is rejected',
+  );
+  assert(
+    errs('{{< fillin question="Find $\\cos(315°)$." answer="1" hint="Reference angle." >}}')
+      .some((e) => e.includes('degree glyph inside math')),
+    'a degree glyph inside math is rejected — ^\\circ is the spelling KaTeX sets',
+  );
+  // The same rule reads BODY PROSE, not only exercise params. The raw-prose
+  // rule above is deliberately param-scoped (legacy pages write "the symbol °
+  // represents degrees"), but no such exemption survives inside `$…$`.
+  assert(
+    errs('An angle of $315°$ in standard position.\n')
+      .some((e) => e.includes('degree glyph inside math')),
+    'a degree glyph inside math in body prose is rejected',
+  );
+  assert(
+    errs('Water boils at $100°\\text{C}$.\n')
+      .some((e) => e.includes('degree glyph inside math')),
+    'temperature is not exempt INSIDE math — $100^\\circ\\text{C}$ is the spelling',
+  );
+  // A figure spec keeps the glyph: plain SVG text has no typesetter behind it.
+  assert.deepEqual(
+    errs('{{< apfigure kind="graph" >}}\n{"ariaLabel":"a","texts":[{"at":[0,0],"text":"$30°$"}]}\n{{< /apfigure >}}\n')
+      .filter((e) => /degree glyph/.test(e)),
+    [],
+  );
+  // A param whose source writes `\"` is read like any other. The rule used to
+  // locate the value with `src.indexOf(params[key])`, which cannot find a
+  // value the param grammar has UNESCAPED, and then skipped what it could not
+  // locate — three corpus params exempted from these rules with no error and
+  // no counter. Offsets come from the raw span now, so nothing is skippable.
+  assert(
+    errs('{{< fillin question="\\"Convert\\" 126° to radians." answer="1" hint="Multiply." >}}')
+      .some((e) => e.includes('unicode math character "°" in question')),
+    'an escaped-quote param is linted, not silently skipped',
+  );
+  assert(
+    errs('{{< fillin question="\\"Find\\" $\\cos(315°)$." answer="1" hint="Reference angle." >}}')
+      .some((e) => e.includes('degree glyph inside math')),
+    'an escaped-quote param is linted for in-math glyphs too',
+  );
+  // The typeset spelling is what the rule is asking for, and passes.
+  assert.deepEqual(
+    errs('{{< fillin question="Convert $126^\\circ$ to radians." answer="\\frac{7\\pi}{10}" answerForm="radians" hint="Multiply by $\\tfrac{\\pi}{180}$." >}}')
+      .filter((e) => /unicode math character|degree glyph/.test(e)),
+    [],
+  );
+  // Temperature is prose, not mathematics, and keeps its degree sign.
+  assert.deepEqual(
+    errs('{{< fillin question="A turkey leaves the oven at 165°F and cools in a 75°F room. Find $T$." answer="1" hint="Use the model." >}}')
+      .filter((e) => /unicode math character|degree glyph/.test(e)),
+    [],
+  );
+  // A FIGURE label has no typesetter behind it, so `30°` is correct there —
+  // and the rule is scoped to exercise strings, so it never sees a spec.
+  assert.deepEqual(
+    errs('{{< apfigure kind="graph" >}}\n{"ariaLabel":"An angle.","texts":[{"at":[1,1],"text":"135°"}]}\n{{< /apfigure >}}')
+      .filter((e) => /unicode math character|degree glyph/.test(e)),
+    [],
   );
 });
 

@@ -64,7 +64,7 @@ $$C=\tfrac{5}{9}(F-32)$$
 
 and substitutes 75 for $F$ to calculate
 
-$$\tfrac{5}{9}(75-32)\approx 24\ \text{°C}.$$
+$$\tfrac{5}{9}(75-32)\approx 24^\circ\text{C}.$$
 
 Knowing that a comfortable 75 degrees Fahrenheit is about 24 degrees Celsius,
 Betty gets the week's weather forecast for Milan, and wants to convert all of

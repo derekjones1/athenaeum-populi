@@ -161,6 +161,21 @@
    ],
    "rationale": "Section 3.9 is the LAST section of chapter 3, and m49353 carries the whole chapter's end matter after its own section exercises: a 'Chapter Review Exercises' set and a 'Chapter Test'. The audit reads those as source headings with no local counterpart and raises heading-needs-review at 0% title similarity. They are deliberately absent: a chapter test covers all nine sections of chapter 3, so folding its items into 3.9's Practice block would attribute chapter-wide material to one section and hide the other eight sections' skills inside a variation page. The section-final Practice block draws only from the module's own '3.9 Section Exercises' set. If chapter-level assessment is wanted later it belongs in a Knowledge Check page, not here.",
    "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap. Expect the same flag on the final section of every chapter whose module is packaged this way."
+  },
+  {
+   "localPath": "content/math/precalculus/05-trigonometric-functions/04-right-triangle-trigonometry.md",
+   "bundle": "college-algebra-bundle",
+   "moduleId": "m49384",
+   "covers": [
+    "heading-needs-review"
+   ],
+   "status": "adapted-verified",
+   "sourceItems": [
+    "Review Exercises",
+    "Practice Test"
+   ],
+   "rationale": "Section 5.4 is the LAST section of chapter 5, and m49384 carries the whole chapter's end matter after its own Section Exercises: a 'Review Exercises' set (whose subsections link back to m49371, m49372, m49374 and m49384) and a 'Practice Test'; the printed book carries both under 'Chapter Review' (PDF pages 618 onward), after section 5.4 ends. The audit reads those as source headings of 5.4 with no local counterpart and raises heading-needs-review. They are deliberately absent: both cover all four sections of chapter 5, so folding their items into 5.4's Practice block would attribute chapter-wide material to one section and hide the other three sections' skills inside a right-triangle page. Section 5.4's own six headings are all present, in source order, and the section-final Practice block draws only from the module's own '5.4 Section Exercises' set. Do not 'resolve' this flag by transcribing chapter review material into the section page; chapter-level assessment belongs in a Knowledge Check page, not here. Same adjudication as content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md (m49353), whose covers_note predicted this recurrence.",
+   "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap."
   }
  ],
  "upstreamDriftDecisions": [
@@ -270,6 +285,18 @@
    "status": "correct-local-source-defect",
    "errataEntry": 35,
    "rationale": "The module's common-logarithm notation sentence is wrong twice. It lists log_b(x) among the common-logarithm notations, though a base-b logarithm is not the common (base-10) logarithm the paragraph above defines; and it deprecates lg(x) for being unspecified, though ISO 80000-2 fixes lg at base 10 and it is bare log(x) that is ambiguous - which is exactly what the module's own preceding paragraph explains (log means log_2 in computer science and log_10 in mathematics). The first half was corrected during the chapter-4 authoring pass; the second followed on 2026-08-17, because after the first correction the sentence introduced log(x) as the common logarithm and then deprecated lg(x) for being unspecified, a contradiction sharper than the source's. This page writes \"log(x) or lg(x) as the common logarithm\" and \"Writing log(x) without specifying a base\". A visible Source note sits beside the paragraph and the attribution footer discloses the correction."
+  },
+  {
+   "localPath": "content/math/precalculus/05-trigonometric-functions/02-unit-circle-sine-and-cosine-functions.md",
+   "bundle": "college-algebra-bundle",
+   "moduleId": "m49372",
+   "sourceElementIds": [
+    "fs-id1165134258657",
+    "fs-id1165135264623"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 44,
+   "rationale": "The module's reference-angle definition names the reference angle and the angle it is measured from with the same symbol t, so it reads \"the reference angle of t is t\" - false for every angle outside quadrant I, and contradicted both by the paragraph's own bound of 0 to 90 degrees and by its figure Figure_05_02_020, which draws the two as distinct rays. The same book one section earlier (m49371, fs-id1165135191896 and the Coterminal and Reference Angles note fs-id1165135246672) defines the term as t-prime in both places it states it, and this sentence opens \"Recall that\", so it is recalling that definition with the prime dropped. The primeless form recurs in the module's Key Concepts bullet and in the Verbal exercise solution fs-id1165135264623. This page writes t-prime in the running prose and in the Key concepts bullet, matching its own recreated reference-angle panels, which are labelled t-prime. A visible Source note sits beside the paragraph and the attribution footer discloses the correction."
   }
  ]
 }

@@ -302,7 +302,7 @@ measures of both angles.
 Let $a$ be the measure of the first angle and $b$ be the measure of the
 second angle. One small angle is ten more than three times the other, so
 $a=3b+10$. The sum of the measures of the angles of a triangle is $180$, and
-one angle of a right triangle already measures $90°$, so
+one angle of a right triangle already measures $90^\circ$, so
 $a+b+90=180$. The system is $\begin{cases} a=3b+10 \\ a+b+90=180
 \end{cases}$.
 
@@ -310,7 +310,7 @@ Substitute $3b+10$ for $a$ in the second equation: $(3b+10)+b+90=180$, so
 $4b+100=180$, so $4b=80$, and $b=20$. Substitute $b=20$ into $a=3b+10$ to
 find $a$: $a=3(20)+10=70$.
 
-The measures of the small angles are $20°$ and $70°$.
+The measures of the small angles are $20^\circ$ and $70^\circ$.
 
 {{< fillin
   question="The measure of one of the small angles of a right triangle is 2 more than 3 times the measure of the other small angle. Find the measures of both angles as an ordered pair (smaller angle, larger angle)."

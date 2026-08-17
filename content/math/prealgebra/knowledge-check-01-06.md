@@ -235,7 +235,7 @@ weight: 7
 >}}
 
 {{< fillin
-  question="Early one morning, the temperature in Syracuse was -8°F. By noon, it had risen 12°. What was the temperature at noon (in °F)?"
+  question="Early one morning, the temperature in Syracuse was -8°F. By noon, it had risen $12^\circ$. What was the temperature at noon (in °F)?"
   answer="4"
   answerDisplay="4°F"
 >}}

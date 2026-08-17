@@ -38,11 +38,60 @@ export const ce = new ComputeEngine();
 // and nothing here declares or assumes engine state, so one box per source
 // string is safe to share. The cap only bounds a corpus-wide lint run; a page
 // grades a handful of strings.
+/**
+ * A degree measure, spelled as the plain quantity it is.
+ *
+ * The engine reads `^\circ` as an ANGLE and normalizes it onto one turn:
+ * `1400^\circ` boxes to `16/9·pi` — the box for `320^\circ` — so
+ * checkAnswer("1400^\circ", "320^\circ") graded **correct**. 1400 degrees is
+ * not 320 degrees, and the exercise class that breaks on it is the one §5.1
+ * is built from: "find an angle coterminal with $1400^\circ$" is passable by
+ * retyping $1400^\circ$, and no answerForm can refuse it, because `degrees`
+ * asks how the response is written and the response is written in degrees.
+ * The reduction is asymmetric too (`-540^\circ` boxes to `-pi`, not `pi`), so
+ * it cannot even be relied on as a coterminal check.
+ *
+ * Rewriting the mark as the literal conversion factor is the whole fix: the
+ * value becomes ordinary arithmetic, which the engine does not fold onto a
+ * circle. $30^\circ$ still boxes to $\tfrac{\pi}{6}$, so the documented
+ * degree/radian equality survives untouched; $1400^\circ$ now boxes to
+ * $\tfrac{70\pi}{9}$ and stops equalling $\tfrac{16\pi}{9}$.
+ *
+ * Applied on the PARSE path only. The `degrees` form predicate reads the
+ * written LaTeX and must keep seeing the mark it exists to require, so
+ * preprocess() — whose output is what the form check is handed — is left
+ * alone. `\circ` without a superscript is function composition and is not
+ * touched.
+ *
+ * The bare `°` GLYPH counts as a mark: the engine reads `1400°` as an angle
+ * exactly as it reads `1400^\circ`, so leaving it out would have fixed the
+ * spelling an author is told to use while leaving the one they reach for by
+ * habit broken. (`^\circ` is still the spelling the content lint requires —
+ * this is about what the grader must not be fooled by, not about what pages
+ * are allowed to write.)
+ *
+ * One source string, three readings, because the `degrees`/`radians` form
+ * predicates must agree with the parse path about what a degree mark IS. They
+ * did not: both were written against the literal `^\circ` while the parse path
+ * learned all three spellings, so `225\degree` — a degree measure by the
+ * engine's own reading — was told "now write it in degrees", and `320°`
+ * satisfied `radians`, waving through the printed-subject retype that token
+ * exists to refuse. A spelling the grader folds into π/180 is a degree mark
+ * everywhere or nowhere.
+ */
+const DEGREE_MARK_SOURCE = String.raw`\\degree(?![a-zA-Z])|\^\s*\{\s*\\circ\s*\}|\^\s*\\circ(?![a-zA-Z])|°`;
+const DEGREE_MARK = new RegExp(DEGREE_MARK_SOURCE, 'g');
+/** Does the writing wear a degree mark anywhere? */
+const DEGREE_MARK_ANYWHERE = new RegExp(DEGREE_MARK_SOURCE);
+/** `head` + a trailing degree mark, with nothing after it. */
+const DEGREE_MARK_AT_END = new RegExp(String.raw`^([\s\S]*?)(?:${DEGREE_MARK_SOURCE})$`);
+export const spellDegreesAsQuantity = (latex) => latex.replace(DEGREE_MARK, '\\cdot\\frac{\\pi}{180}');
+
 const PARSE_CACHE_LIMIT = 256;
 const parseCache = new Map();
 function parseLatex(source) {
   if (parseCache.has(source)) return parseCache.get(source);
-  const expr = ce.parse(source);
+  const expr = ce.parse(spellDegreesAsQuantity(source));
   if (parseCache.size >= PARSE_CACHE_LIMIT) parseCache.clear();
   parseCache.set(source, expr);
   return expr;
@@ -619,9 +668,46 @@ function equationsEquivalent(studentExpr, answerExpr) {
   });
 }
 
+/**
+ * The ordered containers a response can be, as the engine boxes them:
+ * `(0,4/3)` is a Tuple, `[-1,1]` a List, `(2,3]` an Interval whose endpoints
+ * wear an `Open` wrapper. All three are order-sensitive, so they compare
+ * position by position — and `Open` joins them so an interval's endpoints are
+ * compared through the same recursion rather than by identity.
+ *
+ * A `Set` is deliberately absent: `\{1,2\}` is unordered, and grading it
+ * positionally would be a new wrong answer, not a fixed one.
+ */
+const ORDERED_CONTAINERS = new Set(['Tuple', 'List', 'Interval', 'Open']);
+const orderedContainer = (expr) => (ORDERED_CONTAINERS.has(expr.operator) ? expr.ops ?? [] : null);
+
 function equivalent(studentExpr, answerExpr) {
   try {
     if (studentExpr.isSame(answerExpr)) return true;
+    // A container compares MEMBER BY MEMBER, through this same function.
+    //
+    // Nothing below can decide one. `isEqual` on two tuples only reports what
+    // canonicalization already folded, and `Subtract` of two tuples is a type
+    // error, so the final `simplify()` fallback is dead here — which left the
+    // whole ordered-pair convention ("Enter your answer as an ordered pair")
+    // grading on canonical identity alone. Members the engine happens to fold
+    // passed; anything else did not. `\left(\tfrac12,-\tfrac{\sqrt3}{2}\right)`
+    // — the answerDisplay of §5.2's own coordinate item, and what MathLive
+    // emits — boxes its second member as Negate(Divide(√3,2)) where the key's
+    // `-\sqrt3/2` boxes as Divide(Negate(√3),2), and a correct answer was
+    // marked wrong. `(2,x+x)` against `(2,2x)` failed the same way.
+    //
+    // A container against a non-container is never equivalent: a pair is not
+    // a scalar, and the bare-list reading of `a,b` belongs to the list graders
+    // above, which split before anything is parsed.
+    const studentMembers = orderedContainer(studentExpr);
+    const answerMembers = orderedContainer(answerExpr);
+    if (studentMembers || answerMembers) {
+      return studentMembers !== null && answerMembers !== null
+        && studentExpr.operator === answerExpr.operator
+        && studentMembers.length === answerMembers.length
+        && studentMembers.every((member, i) => equivalent(member, answerMembers[i]));
+    }
     // Equation-vs-equation takes the sound proportionality check; an
     // equation against anything else is never equivalent (the variable
     // equations worth unwrapping were unwrapped by the caller).
@@ -711,7 +797,10 @@ function equivalentAllowingVariableEquation(studentExpr, answerExpr) {
 
 function parseValid(raw) {
   try {
-    const expression = ce.parse(preprocess(raw));
+    // Through parseLatex, so a list member's degree mark is spelled out the
+    // same way a scalar's is — otherwise "1400^\circ,760^\circ" would keep
+    // the reduction the scalar path no longer has.
+    const expression = parseLatex(preprocess(raw));
     return expression.isValid ? expression : null;
   } catch {
     return null;
@@ -2012,6 +2101,24 @@ const FORM_PREDICATES = {
     if (index !== null && !(isIntegerLiteral(index) && Number(index) >= 2)) return false;
     return FORM_PREDICATES['simplified-radical'](latex);
   },
+  // "…in exact form" where the response has no single shape to require.
+  //
+  // `exact-log` and `exact-radical` both answer that ask by demanding a
+  // closed-world shape — one logarithm, one radical — which is right when the
+  // response IS one value. It is not right for a response that is a
+  // CONTAINER: "Solve … Enter both solutions in exact form" is keyed
+  // `(-\sqrt3,0),(\sqrt3,0)`, and no shape token can describe an ordered pair
+  // whose second member is `0`. Declaring `exact-radical` there would report
+  // 'form' on the exact answer the exercise prints.
+  //
+  // So this is an ABSENCE test, the shape `radians` and `evaluated-logarithm`
+  // already take: what "exact" rules out is the decimal approximation, and
+  // nothing else. It refuses the 16-digit readout that the value check accepts
+  // (`(-1.732050807568877,0),(1.732050807568877,0)` grades equal to the
+  // radical), which is the whole hazard. Being one-way, it needs no grammar
+  // and fails open on writing it cannot read; compose it with a shape token
+  // when the response does have a shape worth naming.
+  exact: (latex) => !WRITES_A_DECIMAL.test(bareLatex(latex)),
   // "Write the sum using summation notation": the expanded sum printed in
   // the question is value-equal to the sigma form, so the notation IS the
   // exercise.
@@ -2765,6 +2872,23 @@ const FORM_PREDICATES = {
   // ink, so nothing a learner appends can buy the shape.
   'evaluated-trig': (latex) => !/\\(?:arc)?(?:sin|cos|tan|csc|sec|cot)\b/
     .test(bareLatex(latex)),
+  // "Simplify $(\tan t)(\cos t)$" answers $\sin t$ — value-equal to the
+  // printed product by the quotient identity, so the prompt retyped back
+  // grades correct and only the writing separates them. `evaluated-trig`
+  // cannot be the token here: the answer IS a trigonometric function, and
+  // requiring none would refuse it. What the ask names is CONDENSING to one
+  // function, so the test counts applications instead of forbidding them —
+  // `single-logarithm`'s job, one function family over.
+  //
+  // Deliberately NOT `single-logarithm`'s stricter "the term IS the function"
+  // rule: a simplification legitimately answers $2\sin t$ or $-\sqrt3\cos t$,
+  // where the coefficient is part of the simplified result rather than an
+  // unapplied step. Counting is still a one-way test — no value-preserving
+  // rewrite removes an application it does not have — so it needs no
+  // closed-world grammar and fails open on writing it cannot read.
+  'single-trig-function': (latex) => (
+    (bareLatex(latex).match(/\\(?:arc)?(?:sin|cos|tan|csc|sec|cot)\b/g) || []).length === 1
+  ),
   // "Evaluate $\log_2 8$" answers 3, the same hazard one function over. The
   // predicate is `exponential-form`'s, and the duplication is deliberate:
   // §6's rule is that the feedback has to name the step the exercise asks
@@ -2781,10 +2905,13 @@ const FORM_PREDICATES = {
   // one without moving the value. So the response has to BE a degree measure
   // — one load-bearing term, ending in the symbol, on a plain numeric head —
   // the closed-world shape `percent` uses against the identical attack.
+  //
+  // The mark is DEGREE_MARK's, not a literal `^\circ`, so every spelling the
+  // parse path folds into π/180 satisfies the token that names it.
   degrees: (latex) => {
     const terms = loadBearingTerms(bareLatex(latex));
     if (terms.length !== 1) return false;
-    const head = terms[0].trim().match(/^([\s\S]*?)\^\s*\{?\s*\\circ\s*\}?$/);
+    const head = terms[0].trim().match(DEGREE_MARK_AT_END);
     if (!head) return false;
     const value = head[1].trim();
     return asDecimal(value) !== null || asFraction(value) !== null
@@ -2795,8 +2922,11 @@ const FORM_PREDICATES = {
   // ABSENCE: a radian measure has no notation of its own (2 radians is
   // written `2`), so there is no shape to require, only the degree symbol to
   // rule out. That refuses the printed subject retyped back, which is the
-  // whole job.
-  radians: (latex) => !/\\circ\b/.test(bareLatex(latex)),
+  // whole job — but only if it rules out every spelling of the symbol, so it
+  // reads DEGREE_MARK too. Narrowing from the old `\circ` to the mark also
+  // stops a bare `\circ` (function composition, which carries no angle) from
+  // failing a form it never violated.
+  radians: (latex) => !DEGREE_MARK_ANYWHERE.test(bareLatex(latex)),
 };
 
 /**
@@ -2850,6 +2980,7 @@ const FORM_PHRASES = {
   radical: 'as a radical expression',
   'exact-log': 'in exact logarithmic form, not a decimal approximation',
   'exact-radical': 'in exact form, as a simplified radical rather than a decimal approximation',
+  exact: 'in exact form, not as a decimal approximation',
   summation: 'in summation notation, with a Σ',
   'single-logarithm': 'condensed to one logarithm',
   'mixed-number': 'as a mixed number',
@@ -2877,6 +3008,7 @@ const FORM_PHRASES = {
   'base-e': 'with $e$ as the base',
   'expanded-logarithms': 'as a sum of logarithms of single numbers and variables',
   'evaluated-trig': 'as an exact value, with the trigonometric function evaluated',
+  'single-trig-function': 'as a single trigonometric function',
   'evaluated-logarithm': 'as a number, with the logarithm evaluated',
   degrees: 'in degrees, with the degree symbol',
   radians: 'in radians, not degrees',
@@ -2999,6 +3131,51 @@ export function checkFormAsGraded(raw, spec) {
   return formAcceptedAsWritten(preprocess(raw ?? ''), spec);
 }
 
+/**
+ * The form check for a LIST answer, applied to each member.
+ *
+ * Both list paths return their verdict before the scalar path's form check
+ * ever runs, so a declared `answerForm` was silently ignored the moment an
+ * answer held a top-level comma. That is the retype hole the tokens exist to
+ * close, reopened by punctuation: "Find $\cos t$ and $\sin t$, separated by a
+ * comma" keyed `\frac{\sqrt3}{2},\frac12` accepted the printed
+ * `\cos\frac{\pi}{6},\sin\frac{\pi}{6}` with `evaluated-trig` declared,
+ * because the list grader never asked. tools/verify-replay.mjs documented the
+ * gap and skipped the whole class rather than reporting it, so 451 list-keyed
+ * fillins sat outside the corpus gate.
+ *
+ * A form describes how ONE value is written, so the requirement distributes
+ * over the members: every member of a `decimal` list is a decimal, every
+ * member of an `evaluated-trig` list has no trigonometric function left.
+ *
+ * The members are the ones the VALUE grader used — split from the raw
+ * response and then reconciled against the authored member count by
+ * mergeGroupedNumbers, exactly as checkOrderedList/checkUnordered do it.
+ * Splitting on raw commas alone was not the same reading: both value graders
+ * rejoin a digit-grouped member ("1,536"), so `90^\circ, 1,536^\circ` graded
+ * as the two members it is, while the form check saw three — the orphan "1"
+ * being no degree measure at all. A fully correct answer was demoted to
+ * `form` by the presence of a form token, and only ever for members that
+ * reach 1,000. One splitting rule, threaded from the same answer, is the only
+ * way the two cannot drift.
+ */
+function listFormAccepted(studentRaw, answerRaw, spec) {
+  const answerParts = splitTopLevelCommas(answerRaw ?? '');
+  let members = splitTopLevelCommas(studentRaw ?? '');
+  if (members.length !== answerParts.length) members = mergeGroupedNumbers(members);
+  if (members.length < 2) return checkFormAsGraded(studentRaw, spec);
+  return members.every((member) => checkFormAsGraded(member, spec));
+}
+
+/**
+ * A list verdict, with the declared form applied. Only a `correct` value can
+ * become `form`: the same ordering the scalar path uses, so a learner whose
+ * value is wrong is never told to rewrite it.
+ */
+const withListForm = (verdict, studentRaw, answerRaw, spec) => (
+  verdict === 'correct' && !listFormAccepted(studentRaw, answerRaw, spec) ? 'form' : verdict
+);
+
 export function checkAnswer(studentRaw, answerRaw, options = {}) {
   let student = preprocess(studentRaw);
   if (!student) return 'empty';
@@ -3007,11 +3184,11 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
   if (student.includes('\\placeholder')) return 'invalid';
 
   if (options.unordered === true || options.mode === 'unordered') {
-    return checkUnordered(studentRaw, answerRaw);
+    return withListForm(checkUnordered(studentRaw, answerRaw), studentRaw, answerRaw, options.form);
   }
 
   const asList = checkOrderedList(studentRaw, answerRaw);
-  if (asList !== null) return asList;
+  if (asList !== null) return withListForm(asList, studentRaw, answerRaw, options.form);
 
   const written = student;
   student = readFunctionNotation(student);

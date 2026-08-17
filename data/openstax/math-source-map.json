@@ -42,7 +42,7 @@
       "upstreamChapters": 12,
       "upstreamSections": 73,
       "localChapters": 12,
-      "mappedSections": 28
+      "mappedSections": 32
     }
   },
   "sections": [
@@ -2106,6 +2106,42 @@
       "moduleId": "m49368",
       "sourceTitle": "Fitting Exponential Models to Data",
       "moduleSha256": "7d2b7b342c1b5c32eca3a3874ee8a0649dcfb960fd9d0a81cf150ac60bc40f10"
+    },
+    {
+      "localPath": "content/math/precalculus/05-trigonometric-functions/01-angles.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "5.1",
+      "moduleId": "m49371",
+      "sourceTitle": "Angles",
+      "moduleSha256": "7a1b27d6d178b0a7f89b3b3252f7f440f12a1e60d7e9a08c59c7407a92b4ef3a"
+    },
+    {
+      "localPath": "content/math/precalculus/05-trigonometric-functions/02-unit-circle-sine-and-cosine-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "5.2",
+      "moduleId": "m49372",
+      "sourceTitle": "Unit Circle: Sine and Cosine Functions",
+      "moduleSha256": "c077229b183cf61abf2c57229dbc284c052ca20081cfe6ac618b19c8a86c6996"
+    },
+    {
+      "localPath": "content/math/precalculus/05-trigonometric-functions/03-the-other-trigonometric-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "5.3",
+      "moduleId": "m49374",
+      "sourceTitle": "The Other Trigonometric Functions",
+      "moduleSha256": "71dd34da0ae68ed1f0be7d668d2e0c7406836900599baac85f49185f406b5479"
+    },
+    {
+      "localPath": "content/math/precalculus/05-trigonometric-functions/04-right-triangle-trigonometry.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "5.4",
+      "moduleId": "m49384",
+      "sourceTitle": "Right Triangle Trigonometry",
+      "moduleSha256": "16e3c73bd05ae5bb4bad9356d79be0dd33d4f5192359cd90b52fb0eaf8658b4f"
     }
   ]
 }

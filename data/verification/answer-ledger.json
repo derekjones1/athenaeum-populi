@@ -16,6 +16,10 @@
   "0035cfe053a5f4a6": {
    "verdict": "ok"
   },
+  "003d4ac0320d8519": {
+   "verdict": "ok",
+   "note": "-7π/4+2π=π/4 (QI, all positive): tan(π/4)=1; numeric check Math.tan(-7π/4)=1 to 1e-15"
+  },
   "003fcaef398c56d5": {
    "verdict": "ok"
   },
@@ -72,6 +76,10 @@
   },
   "00d16bfab4d2ee8e": {
    "verdict": "ok"
+  },
+  "00d33ec8660fafd6": {
+   "verdict": "ok",
+   "note": "Try It 2: triangle 33-56-65, computed each ratio directly (33/65, 56/65, 33/56, and their reciprocals 65/56, 65/33, 56/33); matches CNXML solution."
   },
   "00df5579ed0a3360": {
    "verdict": "ok"
@@ -297,9 +305,6 @@
   "032893656cad352d": {
    "verdict": "ok"
   },
-  "03293d6a4c4a5b92": {
-   "verdict": "ok"
-  },
   "033b583f688c968c": {
    "verdict": "ok"
   },
@@ -490,8 +495,16 @@
   "04fd683a1c8adfc4": {
    "verdict": "ok"
   },
+  "04fec9f1673dba11": {
+   "verdict": "ok",
+   "note": "sin is odd: sin(-pi/6)=-sin(pi/6)=-1/2; equivalently QIV with ref angle pi/6, sine negative there"
+  },
   "04ff8fc7913aed56": {
    "verdict": "ok"
+  },
+  "0503117872a22d2e": {
+   "verdict": "ok",
+   "note": "C=(5/9)(F-32) at C=40: F = 40*9/5 + 32 = 72+32 = 104 degrees Fahrenheit."
   },
   "05083a6739e26809": {
    "verdict": "ok"
@@ -631,6 +644,10 @@
   "0610ebec522193f5": {
    "verdict": "ok"
   },
+  "0616fe5b903de57d": {
+   "verdict": "ok",
+   "note": "Coordinates on the unit circle at 5π/3. 5π/3 is in quadrant IV with reference angle 2π - 5π/3 = π/3; cos(π/3)=1/2 and sin(π/3)=√3/2, and in quadrant IV x>0, y<0, so the point is (1/2, -√3/2). Numerically cos(5π/3)=0.5 and sin(5π/3)=-0.8660254 ✓. Matches the source Answer Key for this Try It verbatim (m49372: \"(1/2, -√3/2)\"), which the source itself prints as a parenthesized ordered pair. Re-keyed from the bare comma list \"1/2,-\\sqrt3/2\" to \"(1/2,-\\sqrt3/2)\" so the ordered pair the answerDisplay prints is the response that grades."
+  },
   "061b0f2ba56787f6": {
    "verdict": "ok",
    "note": "Paraphrase of CNXML Verbal fs-id1165135314691 solution (sign change between f(a) and f(b) implies a zero in between, by IVT)."
@@ -647,6 +664,10 @@
   },
   "063db713df5c98e8": {
    "verdict": "ok"
+  },
+  "063dea6b00c709c5": {
+   "verdict": "ok",
+   "note": "d=12m so r=6m; s = 6*(63*pi/180) = 6.5973445725385655, rounds to 6.60 at 2dp (node computed)"
   },
   "064783c92a8417a5": {
    "verdict": "ok"
@@ -1305,6 +1326,10 @@
   "0d2699fb95823db7": {
    "verdict": "ok"
   },
+  "0d2f0b38cb9337e5": {
+   "verdict": "ok",
+   "note": "cos t=√2/2 ⇒ sec t=1/cos t=√2"
+  },
   "0d400994b01a1d77": {
    "verdict": "ok"
   },
@@ -1684,6 +1709,10 @@
   "1178a8ec185fae61": {
    "verdict": "ok"
   },
+  "117e702a7cf48dce": {
+   "verdict": "ok",
+   "note": "cot(-7π/4)=cot(π/4)=1 (QI positive); numeric check confirms"
+  },
   "1180980fe52deb66": {
    "verdict": "ok"
   },
@@ -1761,6 +1790,10 @@
   },
   "1210890bdab1267b": {
    "verdict": "ok"
+  },
+  "1220adf6053fcc52": {
+   "verdict": "ok",
+   "note": "870 - 360 = 510; 510 - 360 = 150, so alpha = 150 deg, 0<=alpha<360; matches pinned CNXML solution alpha=150 deg (line 1400-1404 of m49371 index.cnxml)"
   },
   "123856fb7b2753f2": {
    "verdict": "ok"
@@ -1953,6 +1986,10 @@
   },
   "143410d06c3b1b44": {
    "verdict": "ok"
+  },
+  "145094c0704cf943": {
+   "verdict": "ok",
+   "note": "44*pi/9 - 18*pi/9 = 26*pi/9 (still > 2*pi=18*pi/9), - 18*pi/9 again = 8*pi/9, in [0,2*pi)"
   },
   "1459dc4b3b47bf04": {
    "verdict": "ok"
@@ -2281,9 +2318,6 @@
   "18158b029b1cf998": {
    "verdict": "ok"
   },
-  "1816931aaf6f1aa9": {
-   "verdict": "ok"
-  },
   "1817a1e83b9ebb06": {
    "verdict": "ok"
   },
@@ -2512,6 +2546,10 @@
   "1aa2088eb8d0ffe3": {
    "verdict": "ok"
   },
+  "1aa6e58e5d058f1d": {
+   "verdict": "ok",
+   "note": "cos is even: cos(-pi/6)=cos(pi/6)=sqrt3/2; equivalently -pi/6 coterminal with 11pi/6 in QIV, ref angle pi/6, cosine positive there"
+  },
   "1aa89145a5d48cc7": {
    "verdict": "ok"
   },
@@ -2545,6 +2583,10 @@
   },
   "1b0c01c65c3a55e2": {
    "verdict": "ok"
+  },
+  "1b19156a53a480dd": {
+   "verdict": "ok",
+   "note": "cot(315°): QIV ref 45°, cos+/sin- ⇒ negative: cot(315°)=-1; node check Math.cos(315°rad)/Math.sin(315°rad)=-0.9999999999999996"
   },
   "1b25ba29b3ba7bdf": {
    "verdict": "ok"
@@ -2585,6 +2627,10 @@
   },
   "1b70aeb5f649d011": {
    "verdict": "ok"
+  },
+  "1b743ff792d266f0": {
+   "verdict": "ok",
+   "note": "pi/6 = 30 deg special angle, cos(pi/6) = sqrt3/2, x-coordinate of point (sqrt3/2, 1/2)"
   },
   "1b8bfb4e68f34040": {
    "verdict": "ok",
@@ -2839,6 +2885,10 @@
   },
   "1e161cacb712aeae": {
    "verdict": "ok"
+  },
+  "1e1b6b3a78ae3c8a": {
+   "verdict": "ok",
+   "note": "pi/3 = 60 deg special angle, sin(pi/3) = sqrt3/2, y-coordinate of point (1/2, sqrt3/2)"
   },
   "1e1f324d71f19ac2": {
    "verdict": "ok"
@@ -3095,6 +3145,10 @@
   "20fc3dd32089e310": {
    "verdict": "ok"
   },
+  "20ff312871a2517f": {
+   "verdict": "ok",
+   "note": "sin t=cos t/cot t=0.5/0.58=0.862068966, csc t=1/sin t=1.16 exactly at 2dp; matches CNXML solution csc t≈1.16"
+  },
   "21044f99c68e6edd": {
    "verdict": "ok"
   },
@@ -3195,6 +3249,10 @@
   "221914eece0f16bd": {
    "verdict": "ok"
   },
+  "221b9805d94d2389": {
+   "verdict": "ok",
+   "note": "v = r*omega = 14 in * 0.5 rad/s = 7 in/s exactly"
+  },
   "22204f1cab81ca55": {
    "verdict": "ok"
   },
@@ -3230,6 +3288,10 @@
   },
   "2261dd74b4ee1edd": {
    "verdict": "ok"
+  },
+  "2277e82768a009e1": {
+   "verdict": "ok",
+   "note": "Try It 6: ladder = 50/sin(5*pi/12) = 51.7638..., computed with node -e, rounds to 52 ft; matches CNXML solution 'About 52 ft'."
   },
   "2278770a838d2b38": {
    "verdict": "ok"
@@ -3275,6 +3337,10 @@
   },
   "22f89f2a9f752a62": {
    "verdict": "ok"
+  },
+  "22f9e0e370d86ded": {
+   "verdict": "ok",
+   "note": "point (√2/2,√2/2): sec t=1/x=√2; matches CNXML solution"
   },
   "23133471f710e4af": {
    "verdict": "ok"
@@ -3327,6 +3393,10 @@
   },
   "23da85997e315469": {
    "verdict": "ok"
+  },
+  "23e49aa154b69a6a": {
+   "verdict": "ok",
+   "note": "cot(π/4)=cos/sin=(√2/2)/(√2/2)=1"
   },
   "23e895d45323b79a": {
    "verdict": "ok"
@@ -3458,6 +3528,10 @@
   },
   "25800d96f7981e39": {
    "verdict": "ok"
+  },
+  "2589c931ec63df35": {
+   "verdict": "ok",
+   "note": "F=(9/5)C+32 at C=35: (9/5)(35)+32 = 63+32 = 95 degrees Fahrenheit."
   },
   "2595847794369cde": {
    "verdict": "ok"
@@ -3620,6 +3694,10 @@
   "27a2b449ba44e13b": {
    "verdict": "ok"
   },
+  "27a91827d7fe55b7": {
+   "verdict": "ok",
+   "note": "(tan t)(cos t)=(sin t/cos t)(cos t)=sin t; matches CNXML Try It 6 solution exactly"
+  },
   "27aa980b6b9fe26e": {
    "verdict": "ok",
    "note": "Each network input is paired with three program outputs, so an input has more than one output: not a function. 'No' is correct."
@@ -3659,6 +3737,10 @@
   },
   "280c25d90e9b9524": {
    "verdict": "ok"
+  },
+  "281afcdeb2751040": {
+   "verdict": "ok",
+   "note": "csc(π/3)=1/sin(π/3)=1/(√3/2)=2/√3=2√3/3, rationalized as source does"
   },
   "281d2c420a762bf0": {
    "verdict": "ok"
@@ -3898,6 +3980,10 @@
   "2a81194581e4bf8d": {
    "verdict": "ok"
   },
+  "2a878bf583a993bf": {
+   "verdict": "ok",
+   "note": "sine is odd: sin(-t)=-sin(t)=-√2/2"
+  },
   "2a8a09b987386e34": {
    "verdict": "ok"
   },
@@ -4061,6 +4147,10 @@
   },
   "2c769b11eeaab6ee": {
    "verdict": "ok"
+  },
+  "2c7c0b66467d95e0": {
+   "verdict": "ok",
+   "note": "node: 1/Math.cos(310°·π/180)=1.5557238268604126, rounds to 1.556; matches CNXML solution 1.556"
   },
   "2c88f71663963877": {
    "verdict": "ok"
@@ -4537,6 +4627,10 @@
   "321306a89b306b3c": {
    "verdict": "ok"
   },
+  "321466dfa0d697bf": {
+   "verdict": "ok",
+   "note": "4800 RPM = 4800*2*pi/60 = 160*pi rad/s = 502.6548... rad/s; d=120mm so r=60mm=0.06m; v = r*omega = 0.06*502.6548 = 30.159289474462014 m/s, rounds to 30.16 at 2dp (node computed); matches pinned CNXML solution '30.16 m/s' (line 3413)"
+  },
   "321a297cf0d7a463": {
    "verdict": "ok"
   },
@@ -4675,6 +4769,10 @@
   "336a784e924bac34": {
    "verdict": "ok"
   },
+  "336aed1737843712": {
+   "verdict": "ok",
+   "note": "-540 deg * pi/180 = -3*pi rad"
+  },
   "3377cf4814bcee50": {
    "verdict": "ok"
   },
@@ -4683,6 +4781,10 @@
   },
   "338e775b99746117": {
    "verdict": "ok"
+  },
+  "3394b31cc3ce3b4b": {
+   "verdict": "ok",
+   "note": "Section Exercise 19 (same Figure 14): tan A = opposite/adjacent = 10/4 = 5/2; matches CNXML solution."
   },
   "339e48da6daa0241": {
    "verdict": "ok"
@@ -4739,6 +4841,10 @@
   },
   "343ef4e131244882": {
    "verdict": "ok"
+  },
+  "344c7d52c25dfce1": {
+   "verdict": "ok",
+   "note": "sec t=-17/8 ⇒ cos t=-8/17; sin²t=1-64/289=225/289, sin t=±15/17; 0<t<π ⇒ sin positive ⇒ 15/17; sqrt(225/289)=0.8823529...=15/17 confirmed numerically"
   },
   "34632770d16e8897": {
    "verdict": "ok"
@@ -5194,6 +5300,10 @@
   "38ebb03ca3eba148": {
    "verdict": "ok"
   },
+  "38f3a24222d80a56": {
+   "verdict": "ok",
+   "note": "cos(pi) = -1 exactly, point (-1,0) on unit circle at pi rad (180 deg)"
+  },
   "38f5b240a9cb3aee": {
    "verdict": "ok"
   },
@@ -5240,8 +5350,16 @@
   "3966be4c30010b25": {
    "verdict": "ok"
   },
+  "396cbc15c56a0b4a": {
+   "verdict": "ok",
+   "note": "sec(π/6)=1/cos(π/6)=1/(√3/2)=2/√3=2√3/3, rationalized form matches source convention"
+  },
   "396f72aa971f3420": {
    "verdict": "ok"
+  },
+  "396f8414db1395b5": {
+   "verdict": "ok",
+   "note": "2*pi/3 rad = 120 deg is in QII, reference angle = pi - 2*pi/3 = pi/3"
   },
   "3970a521965b7f74": {
    "verdict": "ok"
@@ -5507,6 +5625,10 @@
   "3cbf4f368f16d499": {
    "verdict": "ok"
   },
+  "3cc1b5c005304b4d": {
+   "verdict": "ok",
+   "note": "f(-x)=3sin²(-x)cos(-x)+sec(-x)=3(-sinx)²(cosx)+secx=3sin²x cosx+secx=f(x) ⇒ even; note source's sibling exercise (2sinx cosx+secx, no solution given) is a different function, this one's answer 'even' is in the CNXML"
+  },
   "3cca283727463d8e": {
    "verdict": "ok"
   },
@@ -5738,6 +5860,10 @@
   },
   "3faed5fa8d97052e": {
    "verdict": "ok"
+  },
+  "3fb19a6a35042e6a": {
+   "verdict": "ok",
+   "note": "Section Exercise 39 part a: c=50, B=21deg, a=c*cos(21deg)=46.6790, computed with node; matches CNXML solution."
   },
   "3fb86266b5d5bfa9": {
    "verdict": "ok"
@@ -6097,6 +6223,10 @@
   "43d4aa82b8279cf1": {
    "verdict": "ok"
   },
+  "43d5ec91dda7250e": {
+   "verdict": "ok",
+   "note": "Section Exercise 62 (23-ft ladder, 80deg): height=23*sin(80deg)=22.6506, computed with node; matches CNXML solution."
+  },
   "43d97de6644aadd0": {
    "verdict": "ok"
   },
@@ -6296,6 +6426,10 @@
   },
   "45f5a4ca264a76bc": {
    "verdict": "ok"
+  },
+  "45f76d3cb244fbcf": {
+   "verdict": "ok",
+   "note": "Try It 5 part a: adjacent = 20*cos(pi/3) = 10, computed with node; matches CNXML solution 'adjacent=10'."
   },
   "46094aaeb99d5895": {
    "verdict": "ok"
@@ -6611,6 +6745,10 @@
   "491f02bd2081bec4": {
    "verdict": "ok"
   },
+  "4922ede6102cb2dd": {
+   "verdict": "ok",
+   "note": "Point (-1/2, -√3/2) on the unit circle. csc t = 1/y = 1/(-√3/2) = -2/√3 = -2√3/3; numerically 1/(-0.8660254) = -1.1547005 and -2(1.7320508)/3 = -1.1547005 ✓. Matches the source Answer Key for this Graphical exercise verbatim (m49374: \"csc t = -2√3/3\"). This item previously asked for sin t, whose answer -√3/2 is printed three times on the same screen — in the lead-in sentence, as the figure's point label, and as its y-axis annotation — so it was answerable by reading rather than by working. csc t is on this Practice group's objective (secant, cosecant, tangent, cotangent), needs the reciprocal step, and appears nowhere in the figure."
+  },
   "492b26613523f2b0": {
    "verdict": "ok"
   },
@@ -6667,6 +6805,10 @@
   },
   "49c034076cc0f50d": {
    "verdict": "ok"
+  },
+  "49cac183752c69a1": {
+   "verdict": "ok",
+   "note": "126 deg * pi/180 = 126/180*pi = 7*pi/10 (gcd(126,180)=18)"
   },
   "49ce21aa477b2978": {
    "verdict": "ok"
@@ -6953,6 +7095,10 @@
   "4cb8041f5be482a0": {
    "verdict": "ok"
   },
+  "4cc4f6ddf6528954": {
+   "verdict": "ok",
+   "note": "node: cot(4π/7)=Math.cos(4π/7)/Math.sin(4π/7)=-0.22824347439014986, rounds to -0.228; matches CNXML solution -0.228"
+  },
   "4cca0995b99eac75": {
    "verdict": "ok"
   },
@@ -6973,6 +7119,10 @@
   },
   "4d0a050bb8a703c3": {
    "verdict": "ok"
+  },
+  "4d222b55b8d56346": {
+   "verdict": "ok",
+   "note": "5*pi/3 rad (=300 deg) is in QIV; reference angle = 2*pi - 5*pi/3 = pi/3"
   },
   "4d328584d474a723": {
    "verdict": "ok"
@@ -7171,6 +7321,10 @@
   },
   "4fef49e0670c7b51": {
    "verdict": "ok"
+  },
+  "4ff73e2d36a2d1ef": {
+   "verdict": "ok",
+   "note": "smallest x, second 2x, third x+14; x+2x+(x+14)=180 gives 4x=166, x=41.5, so the angles are 41.5, 83, 55.5 — sorted smallest to largest as the question asks, 41.5, 55.5, 83."
   },
   "4ffa4f2248187c5a": {
    "verdict": "ok"
@@ -7514,6 +7668,10 @@
   "54a5b9461caa78f0": {
    "verdict": "ok"
   },
+  "54a73476b46de54c": {
+   "verdict": "ok",
+   "note": "Try It 5 part c: missing angle = pi/2 - pi/3 = pi/6; matches CNXML solution."
+  },
   "54b4e44fb89ddd72": {
    "verdict": "ok"
   },
@@ -7746,6 +7904,10 @@
   "5701710aa4a6e2a7": {
    "verdict": "ok"
   },
+  "570a474ba779b0f4": {
+   "verdict": "ok",
+   "note": "Section Exercise 9: tan(pi/4)=cot(pi/2-pi/4)=cot(pi/4); matches CNXML solution 'pi/4'."
+  },
   "570e7419724a53be": {
    "verdict": "ok"
   },
@@ -7808,6 +7970,10 @@
   },
   "57997db963267f1b": {
    "verdict": "ok"
+  },
+  "579ab8a4e0fc5a8b": {
+   "verdict": "ok",
+   "note": "0.5 rad/s * 180/pi = 28.64788975654116 deg/s, rounds to 28.65 at 2dp (node computed)"
   },
   "57a41f422a3d1bde": {
    "verdict": "ok"
@@ -7894,6 +8060,10 @@
   "58bd41ed34613bf3": {
    "verdict": "ok"
   },
+  "58c07c5acb45eb2e": {
+   "verdict": "ok",
+   "note": "coordinates on unit circle satisfy -1<=x,y<=1, so range of sin and cos is [-1,1]"
+  },
   "58c627d4143bb8dc": {
    "verdict": "ok"
   },
@@ -7906,6 +8076,10 @@
   "58d278d02623f41e": {
    "verdict": "ok",
    "note": "Computed 6*(ln(4)/ln(8))=6*(2/3)=4 (log_8(4)=2/3 since 8^(2/3)=4); matches CNXML Section Exercise 45 (fs-id1165135190140)."
+  },
+  "58d3dd0598e8b295": {
+   "verdict": "ok",
+   "note": "pi/3 = 60 deg special angle, cos(pi/3) = 1/2, x-coordinate of point (1/2, sqrt3/2)"
   },
   "58d6bc7bce90256f": {
    "verdict": "ok"
@@ -7987,6 +8161,10 @@
   },
   "59ac533e496ede58": {
    "verdict": "ok"
+  },
+  "59b368ec9d79def4": {
+   "verdict": "ok",
+   "note": "240 deg is between 180 and 270, so terminal side lies in QIII"
   },
   "59b7a66e619de17a": {
    "verdict": "ok"
@@ -8072,6 +8250,10 @@
   },
   "5aa1f0796ccde72f": {
    "verdict": "ok"
+  },
+  "5ac7c138d7b15454": {
+   "verdict": "ok",
+   "note": "sin(t)>0 means y>0, cos(t)>0 means x>0, both positive only in QI"
   },
   "5acabdeb3164a3cd": {
    "verdict": "ok"
@@ -8238,6 +8420,10 @@
   "5c5580bb9a468274": {
    "verdict": "ok"
   },
+  "5c58ea79702b4812": {
+   "verdict": "ok",
+   "note": "45 rot/min * 2*pi rad/rot / 60 s/min = 90*pi/60 = 3*pi/2 rad/s; matches pinned CNXML solution 3*pi/2 rad/s (line 2359-2368)"
+  },
   "5c5c91b6d9e47368": {
    "verdict": "ok"
   },
@@ -8322,6 +8508,10 @@
   },
   "5d92357aed8ebc2a": {
    "verdict": "ok"
+  },
+  "5d9e00e9b510772c": {
+   "verdict": "ok",
+   "note": "a rise of 12 degrees from -8 degrees F gives -8+12 = 4 degrees F at noon."
   },
   "5da3ce2ac6e873be": {
    "verdict": "ok"
@@ -8572,6 +8762,10 @@
   "60c5afb34ba8f8d0": {
    "verdict": "ok"
   },
+  "60c75a2f4fdb0f74": {
+   "verdict": "ok",
+   "note": "complementary angles sum to 90 degrees, so the complement of 52 degrees is 90-52 = 38 degrees."
+  },
   "60dbf6e90da21797": {
    "verdict": "ok"
   },
@@ -8728,6 +8922,10 @@
   "63110894daeba557": {
    "verdict": "ok"
   },
+  "631375b4737764a9": {
+   "verdict": "ok",
+   "note": "Try It 5 part b: opposite = 20*sin(pi/3) = 10*sqrt(3) = 17.320508..., computed with node; matches CNXML solution 'opposite=10 sqrt3'."
+  },
   "6319075bd3fb48e6": {
    "verdict": "ok"
   },
@@ -8826,6 +9024,10 @@
   },
   "642a7870b98f347d": {
    "verdict": "ok"
+  },
+  "642d8a553dc85ae1": {
+   "verdict": "ok",
+   "note": "sec t/csc t=(1/cos t)/(1/sin t)=sin t/cos t=tan t; matches CNXML solution exactly, single-trig-function form appropriate"
   },
   "643c72f51a88c139": {
    "verdict": "ok"
@@ -8942,6 +9144,10 @@
   },
   "658396a4d3c3a107": {
    "verdict": "ok"
+  },
+  "658c0c00176d9ad7": {
+   "verdict": "ok",
+   "note": "300 deg is between 270 and 360, terminal side in QIV"
   },
   "65964b93e8f194d9": {
    "verdict": "ok"
@@ -9138,6 +9344,14 @@
   },
   "67bb8cbf07fa9df5": {
    "verdict": "ok"
+  },
+  "67ca61ad5df69b1c": {
+   "verdict": "ok",
+   "note": "point (0,-1): cot t=x/y=0/-1=0"
+  },
+  "67e5500b6131745a": {
+   "verdict": "ok",
+   "note": "secant is even: sec(-t)=sec(t)=3.1"
   },
   "67e7f27065977bdc": {
    "verdict": "ok"
@@ -9426,6 +9640,10 @@
   },
   "6aad24626b67b773": {
    "verdict": "ok"
+  },
+  "6ab0bc601d805024": {
+   "verdict": "ok",
+   "note": "cot t=1/tan t=1/(-15/8)=-8/15"
   },
   "6ab1029fbd8f9443": {
    "verdict": "ok"
@@ -9898,9 +10116,6 @@
    "verdict": "ok",
    "note": "With t measured in years after 2011, the 2011 count gives (0,129) and the 2013 count gives (2,236)."
   },
-  "7053d3e885073e75": {
-   "verdict": "ok"
-  },
   "705b5a65c0beaa9a": {
    "verdict": "ok"
   },
@@ -9913,6 +10128,10 @@
   },
   "706b43eb15a4810b": {
    "verdict": "ok"
+  },
+  "7070b82ca1a6543d": {
+   "verdict": "ok",
+   "note": "Section Exercise 37 part a: b=15, B=15deg, a=b/tan(15deg)=55.9808, computed with node; matches CNXML solution."
   },
   "70790f4f40bee6c7": {
    "verdict": "ok"
@@ -9969,9 +10188,6 @@
    "verdict": "ok"
   },
   "7169227aaf20da12": {
-   "verdict": "ok"
-  },
-  "716b667af698a74e": {
    "verdict": "ok"
   },
   "7174964459330c94": {
@@ -10270,6 +10486,10 @@
   "74eb067a12fa4beb": {
    "verdict": "ok"
   },
+  "74f0744a2b498366": {
+   "verdict": "ok",
+   "note": "7π/6 QIII ref angle π/6: sin=-1/2, csc=1/sin=-2; node check 1/Math.sin(7π/6)=-2.0000000000000013"
+  },
   "74fbb3f53746dd0e": {
    "verdict": "ok"
   },
@@ -10298,9 +10518,6 @@
    "verdict": "ok"
   },
   "755d7b2de68c0eef": {
-   "verdict": "ok"
-  },
-  "7571f62e77dfa14b": {
    "verdict": "ok"
   },
   "7578876f9ba0ebc8": {
@@ -10470,6 +10687,10 @@
   },
   "777b63e41a915955": {
    "verdict": "ok"
+  },
+  "777e14a928281ee9": {
+   "verdict": "ok",
+   "note": "node: Math.tan(5π/8)=-2.4142135623730954, rounds to -2.414; matches CNXML solution -2.414"
   },
   "778774e9bf4864c7": {
    "verdict": "ok"
@@ -10660,6 +10881,10 @@
    "verdict": "ok",
    "note": "3x-4y=-9, 5x+3y=14; x3 and x4 make the y-coefficients -12 and +12, adding gives 29x=29, x=1, then y=3. sympy solve returns {x:1, y:3}."
   },
+  "79a050a296049bc6": {
+   "verdict": "ok",
+   "note": "5*pi/6 rad = 150 deg, between 90 and 180, terminal side in QII"
+  },
   "79af79d559961558": {
    "verdict": "ok",
    "note": "Graph read from source page 469 (crop of exercise 47's figure): vertical asymptote near x=1, curve decreasing, passes through (0,0), and reaches about (-5, 2.6) at its arrow. f(x)=log_2(-(x-1)) satisfies all of this: f(0)=log_2(1)=0, f(-5)=log_2(6)=2.585, asymptote at x=1 (argument -(x-1)=0). Matches CNXML fs-id1165135439871 solution f(x)=log_2(-(x-1))."
@@ -10785,11 +11010,19 @@
   "7ae4160ebc8f0a50": {
    "verdict": "ok"
   },
+  "7ae4a384a4d56661": {
+   "verdict": "ok",
+   "note": "3/4 of full rotation = (3/4)*2*pi = 3*pi/2"
+  },
   "7ae5a359e1d9aeba": {
    "verdict": "ok"
   },
   "7aea4a1922bc6889": {
    "verdict": "ok"
+  },
+  "7aeed607046ecbb4": {
+   "verdict": "ok",
+   "note": "135 deg is in QII, reference angle = 180-135 = 45 deg"
   },
   "7af9ac028ae81a22": {
    "verdict": "ok"
@@ -10979,6 +11212,10 @@
   "7cc9fee11a207c89": {
    "verdict": "ok"
   },
+  "7ccf1a83203af0b3": {
+   "verdict": "ok",
+   "note": "s = r*theta = 10*(50*pi/180) = 8.726646259971648, rounds to 8.73 at 2dp (node computed)"
+  },
   "7ce5f7cd5cd211fc": {
    "verdict": "ok"
   },
@@ -11011,8 +11248,16 @@
   "7d4e65de6378e628": {
    "verdict": "ok"
   },
+  "7d556b69c6ee86cc": {
+   "verdict": "ok",
+   "note": "theta = 2A/r^2 = 2*150000/400^2 = 300000/160000 = 1.875, rounds to 1.88 at 2dp; matches pinned CNXML solution '1.88' (line 2113)"
+  },
   "7d5c32ff9cde1fff": {
    "verdict": "ok"
+  },
+  "7d5eac003c3510b9": {
+   "verdict": "ok",
+   "note": "135 deg is between 90 and 180, terminal side in QII"
   },
   "7d6093dbdbd6a941": {
    "verdict": "ok"
@@ -11095,6 +11340,10 @@
   "7e35bae1b02c7379": {
    "verdict": "ok"
   },
+  "7e3801e78141a704": {
+   "verdict": "ok",
+   "note": "135 deg is QII, reference angle 45 deg, sine positive in QII: sin(135)=sin(45)=sqrt2/2; numerically Math.sin(135*pi/180)=0.7071067811865476"
+  },
   "7e3a8223ec9412e4": {
    "verdict": "ok"
   },
@@ -11128,6 +11377,10 @@
   },
   "7ebdcc270c0bdff7": {
    "verdict": "ok"
+  },
+  "7ec2826c86ce6d84": {
+   "verdict": "ok",
+   "note": "point (0,-1): tan t=y/x=-1/0, undefined (x=0); MC option 'Undefined' correct, matches restructuring rationale in front-matter changelog"
   },
   "7ec4244039dd880d": {
    "verdict": "ok"
@@ -11496,6 +11749,10 @@
   "82eca8120023ad62": {
    "verdict": "ok"
   },
+  "82f1619a5c68804a": {
+   "verdict": "ok",
+   "note": "sec(π/3)=1/cos(π/3)=1/(1/2)=2; matches CNXML"
+  },
   "82f61e002c2021c1": {
    "verdict": "ok"
   },
@@ -11656,6 +11913,10 @@
   },
   "847e90aa09bf5fa3": {
    "verdict": "ok"
+  },
+  "8486ea0d07c04554": {
+   "verdict": "ok",
+   "note": "-110 + 360 = 250 deg, within [0,360)"
   },
   "8497ab44c2ace9c8": {
    "verdict": "ok"
@@ -12782,6 +13043,10 @@
    "verdict": "ok",
    "note": "1/(x-3)^2-4 combined over a common denominator: [1-4(x-3)^2]/(x-3)^2 = (-4x^2+24x-35)/(x^2-6x+9); expanded and checked by hand; matches CNXML Try It 7."
   },
+  "92f2368eae87ef0e": {
+   "verdict": "ok",
+   "note": "cotangent is odd: cot(-t)=-cot(t)=-√3"
+  },
   "92f2ad7f21843ef8": {
    "verdict": "ok"
   },
@@ -12807,6 +13072,10 @@
   },
   "9317975f37524cf1": {
    "verdict": "ok"
+  },
+  "9323e3b59ff95cdf": {
+   "verdict": "ok",
+   "note": "Section Exercise 31 part 2: same isosceles-right-triangle reasoning, b=15; matches CNXML solution."
   },
   "93273b02c05123ba": {
    "verdict": "ok"
@@ -12911,6 +13180,10 @@
   "9413a0726a6a977d": {
    "verdict": "ok"
   },
+  "9428186de1653212": {
+   "verdict": "ok",
+   "note": "Section Exercise 29 part 2: b = 7/tan(30deg) = 7 sqrt3 = 12.1244, computed with node; matches CNXML solution 'b=7 sqrt3'."
+  },
   "942daacc5658091f": {
    "verdict": "ok"
   },
@@ -13004,6 +13277,10 @@
   },
   "952a412c68192ce2": {
    "verdict": "ok"
+  },
+  "953fe3e93c4059db": {
+   "verdict": "ok",
+   "note": "Point (-√2/2, √2/2) on the unit circle; on the unit circle cos t = x and sin t = y, so cos t = -√2/2 and sin t = √2/2. The point is on the circle: (√2/2)^2+(√2/2)^2 = 1/2+1/2 = 1 ✓. Matches the source Answer Key for this Try It verbatim (m49372: \"cos(t) = -√2/2, sin(t) = √2/2\"). Re-keyed from the bare comma list \"-\\sqrt2/2,\\sqrt2/2\" to the ordered pair \"(-\\sqrt2/2,\\sqrt2/2)\" so the response the prompt asks for is the response that grades: as a bare list the parenthesized pair a learner reads off the figure was graded incorrect."
   },
   "954111361873649b": {
    "verdict": "ok",
@@ -13208,6 +13485,10 @@
   "97595f58a4f47d5a": {
    "verdict": "ok"
   },
+  "97600550ae91dcbc": {
+   "verdict": "ok",
+   "note": "Section Exercise 29 (Figure with 7, b, c, 30 degrees): c = 7/sin(30deg) = 14, computed with node; matches CNXML solution 'c=14'."
+  },
   "976a78ceee4e1964": {
    "verdict": "ok"
   },
@@ -13397,6 +13678,10 @@
   "9994e0b052031485": {
    "verdict": "ok"
   },
+  "99972499fcc1d157": {
+   "verdict": "ok",
+   "note": "point (√2/2,-√2/2): tan t=y/x=(-√2/2)/(√2/2)=-1"
+  },
   "999bde6ed062d998": {
    "verdict": "ok"
   },
@@ -13578,6 +13863,10 @@
   },
   "9bac318e973dfad0": {
    "verdict": "ok"
+  },
+  "9baeefdf432a6e34": {
+   "verdict": "ok",
+   "note": "Unchanged answer; re-derived because adding answerForm=\"exact\" re-keyed the record. Solve x^2-y^2=3 and 2x^2+y^2=6 by elimination: adding gives 3x^2=9, so x^2=3 and x=±√3. Back-substituting into x^2-y^2=3 gives y^2=0, so y=0. Solutions (-√3,0) and (√3,0); check in 2x^2+y^2: 2(3)+0=6 ✓. answerForm=\"exact\" added because the prompt says \"in exact form\" and the value check accepts a 16-digit decimal ((-1.732050807568877,0),(1.732050807568877,0)) — confirmed against the real grader, which now reports 'form' for it. exact-radical cannot serve this key: the pair's second member is 0, so that predicate reports 'form' on the exact answer itself."
   },
   "9bb0b18df2d3b506": {
    "verdict": "ok"
@@ -14218,6 +14507,10 @@
   "a3a625848c32eba3": {
    "verdict": "ok"
   },
+  "a3ae3b9d82594a3f": {
+   "verdict": "ok",
+   "note": "point (-1/2,-√3/2): cot t=x/y=(-1/2)/(-√3/2)=1/√3=√3/3; matches CNXML solution"
+  },
   "a3af5974d91afc9f": {
    "verdict": "ok"
   },
@@ -14232,6 +14525,10 @@
   },
   "a3c6441c5611799d": {
    "verdict": "ok"
+  },
+  "a3c6fe1997c1aeaa": {
+   "verdict": "ok",
+   "note": "sin(pi) = 0 exactly, y-coordinate of point (-1,0) at pi rad"
   },
   "a3d21737ba03c6b8": {
    "verdict": "ok"
@@ -14388,6 +14685,10 @@
   "a59af4f540e76ea0": {
    "verdict": "ok"
   },
+  "a5ad120519c4baaf": {
+   "verdict": "ok",
+   "note": "sin(t)<0 means y<0, cos(t)>0 means x>0; x>0,y<0 is QIV"
+  },
   "a5af7299c9d9c347": {
    "verdict": "ok"
   },
@@ -14450,6 +14751,10 @@
   },
   "a65d2bf95cd4b24f": {
    "verdict": "ok"
+  },
+  "a65fd0caaf0784b9": {
+   "verdict": "ok",
+   "note": "240 deg is in QIII (180<240<270), reference angle = 240-180 = 60 deg"
   },
   "a669bfb3d1c7baec": {
    "verdict": "ok",
@@ -15057,6 +15362,10 @@
   "ace8787bf760b3cb": {
    "verdict": "ok"
   },
+  "acea5770c2b5695f": {
+   "verdict": "ok",
+   "note": "s = r*theta = 10*(215*pi/180) = 37.52457891787808, rounds to 37.525 at 3dp (node computed)"
+  },
   "acf4acda49db9fe0": {
    "verdict": "ok"
   },
@@ -15070,9 +15379,6 @@
    "verdict": "ok"
   },
   "ad11762cfd64f841": {
-   "verdict": "ok"
-  },
-  "ad13df4db4bd61de": {
    "verdict": "ok"
   },
   "ad1a271d9261e795": {
@@ -15412,6 +15718,10 @@
   "b11eb2920b1c5ab9": {
    "verdict": "ok"
   },
+  "b121b4e504d3362b": {
+   "verdict": "ok",
+   "note": "sec(-7π/4)=sec(π/4)=√2 (QI positive); numeric check confirms"
+  },
   "b1237c84c0af0b6e": {
    "verdict": "ok"
   },
@@ -15435,6 +15745,10 @@
   },
   "b157c37d5321625b": {
    "verdict": "ok"
+  },
+  "b18c259e65064855": {
+   "verdict": "ok",
+   "note": "-300 + 360 = 60 deg, within [0,360)"
   },
   "b1a21712d21fc007": {
    "verdict": "ok"
@@ -15487,6 +15801,10 @@
   },
   "b1f8628946be776c": {
    "verdict": "ok"
+  },
+  "b20c423e11e4ce26": {
+   "verdict": "ok",
+   "note": "Try It 4: csc(pi/6) and sec(pi/3) are cofunctions of complementary angles pi/6+pi/3=pi/2, so sec(pi/3)=csc(pi/6)=2; matches CNXML solution."
   },
   "b23ce77f3d198368": {
    "verdict": "ok"
@@ -16310,6 +16628,10 @@
   "bb1654327ebf082b": {
    "verdict": "ok"
   },
+  "bb25321839eb55d3": {
+   "verdict": "ok",
+   "note": "node: cot(-π/8)=Math.cos(-π/8)/Math.sin(-π/8)=-2.414213562373095, rounds to -2.414 at 3dp"
+  },
   "bb27d6b5ee925f11": {
    "verdict": "ok"
   },
@@ -16665,6 +16987,10 @@
   "bf3377b9f1cfc46e": {
    "verdict": "ok"
   },
+  "bf34b559dea4fc4a": {
+   "verdict": "ok",
+   "note": "Section Exercise 37 part b: c=b/sin(15deg)=57.9555, computed with node; matches CNXML solution."
+  },
   "bf42b6c32c5111e6": {
    "verdict": "ok"
   },
@@ -16700,6 +17026,10 @@
   },
   "bfa3f86603265cbe": {
    "verdict": "ok"
+  },
+  "bfa683428d0690b4": {
+   "verdict": "ok",
+   "note": "Try It 3 part b: sec(pi/4)=hyp/adj=sqrt2 s/s=sqrt2; matches CNXML solution."
   },
   "bfb32de3a54cf5c4": {
    "verdict": "ok"
@@ -16930,6 +17260,10 @@
   },
   "c20fcaaa7e89f530": {
    "verdict": "ok"
+  },
+  "c21c9c97774ba772": {
+   "verdict": "ok",
+   "note": "'Nineteen less than p is no less than 47' translates to p-19>=47; adding 19 gives p>=66, the keyed answer."
   },
   "c22b57194ee9a0bb": {
    "verdict": "ok"
@@ -17269,6 +17603,10 @@
   "c5deb2844db6eb64": {
    "verdict": "ok"
   },
+  "c5e5fc614a998217": {
+   "verdict": "ok",
+   "note": "sin t=cos t=√2/2 ⇒ tan t=sin/cos=1"
+  },
   "c5f5769ba119a986": {
    "verdict": "ok"
   },
@@ -17280,6 +17618,10 @@
   },
   "c6000cd3b3795b2c": {
    "verdict": "ok"
+  },
+  "c6132476a380097e": {
+   "verdict": "ok",
+   "note": "135 deg is QII, reference angle 45 deg, cosine negative in QII: cos(135)=-cos(45)=-sqrt2/2; numerically Math.cos(135*pi/180)=-0.7071067811865475"
   },
   "c61e33ebaa16c540": {
    "verdict": "ok"
@@ -17344,6 +17686,14 @@
   },
   "c6dcba5b10acff6e": {
    "verdict": "ok"
+  },
+  "c6f53471266e000f": {
+   "verdict": "ok",
+   "note": "sec(120°)=1/cos(120°)=1/(-1/2)=-2; node check 1/Math.cos(120°·π/180)=-2.000000000000001"
+  },
+  "c705c37bac1c56ef": {
+   "verdict": "ok",
+   "note": "v = r*omega = (6378+242 km)*0.25 rad/hr = 6620*0.25 = 1655 km/hr; matches pinned CNXML solution '1655 kilometers per hour' (line 2570)"
   },
   "c709abf8698c40b3": {
    "verdict": "ok"
@@ -17675,6 +18025,10 @@
   "cad69b4e6babef14": {
    "verdict": "ok"
   },
+  "cad8262687217128": {
+   "verdict": "ok",
+   "note": "-3*pi/4 rad * 180/pi = -135 deg"
+  },
   "cae67dabb03c35da": {
    "verdict": "ok"
   },
@@ -17916,6 +18270,10 @@
   "ce0f46be6fb0d0d4": {
    "verdict": "ok"
   },
+  "ce11e1914b7c1c92": {
+   "verdict": "ok",
+   "note": "Section Exercise 7: cos(pi/3)=sin(pi/2-pi/3)=sin(pi/6); matches CNXML solution 'pi/6'."
+  },
   "ce1c83305af10bee": {
    "verdict": "ok"
   },
@@ -18114,6 +18472,10 @@
   "d08dc0ac0f09d58a": {
    "verdict": "ok"
   },
+  "d096ae7f381a1309": {
+   "verdict": "ok",
+   "note": "Section Exercise 31 (hyp 15 sqrt2, angle B=45deg, isosceles right triangle): leg = hyp/sqrt2 = 15; matches CNXML solution 'a=15,b=15'."
+  },
   "d09ad10b6499877d": {
    "verdict": "ok"
   },
@@ -18126,6 +18488,10 @@
   },
   "d0bcc04576123394": {
    "verdict": "ok"
+  },
+  "d0c33c8d7ffcf99c": {
+   "verdict": "ok",
+   "note": "point (√2/2,√2/2): tan t=y/x=1; matches CNXML solution for this exact point (tan t=1, sec t=√2, csc t=√2)"
   },
   "d0c5428332dcbac5": {
    "verdict": "ok"
@@ -18593,6 +18959,10 @@
   "d6cb638319ca61d4": {
    "verdict": "ok"
   },
+  "d6cf07d6eb903651": {
+   "verdict": "ok",
+   "note": "pi/9 rad * 180/pi = 180/9 = 20 deg"
+  },
   "d6dfdd78445ab34b": {
    "verdict": "ok",
    "note": "Solved y=sqrt(2x+3) for x: x=(y^2-3)/2, y>=0 since original range is f(x)>=0. Checked f(f^{-1}(x))=sqrt(2*(x^2-3)/2+3)=sqrt(x^2)=x for x>=0. Matches CNXML ti_03_08_04 (domain note x>=0 given in answerDisplay)."
@@ -18718,6 +19088,10 @@
   "d887fcbe8614849e": {
    "verdict": "ok"
   },
+  "d894e81cd1b3f0ff": {
+   "verdict": "ok",
+   "note": "Try It 1: triangle 7-24-25 (source alt text), sin t = opposite/hyp = 7/25; matches CNXML solution."
+  },
   "d89bf77a34ad4f79": {
    "verdict": "ok"
   },
@@ -18825,6 +19199,10 @@
   "d9f12ef424d89769": {
    "verdict": "ok"
   },
+  "da04271f407c2923": {
+   "verdict": "ok",
+   "note": "'Four more than a is at most 15' translates to a+4<=15; subtracting 4 gives a<=11, the keyed answer."
+  },
   "da0555c4befc1458": {
    "verdict": "ok"
   },
@@ -18882,6 +19260,10 @@
   "da9d73251edb761d": {
    "verdict": "ok"
   },
+  "daaa4302398854cc": {
+   "verdict": "ok",
+   "note": "same point: sec t=1/x=1/(√2/2)=2/√2=√2"
+  },
   "dab07e453f369f0a": {
    "verdict": "ok"
   },
@@ -18924,6 +19306,10 @@
   },
   "dafee3286defdff6": {
    "verdict": "ok"
+  },
+  "db0ef133cea8a2c1": {
+   "verdict": "ok",
+   "note": "Try It 3 part a: 45-45-90 triangle legs s,s, hyp sqrt2 s; sin(pi/4)=s/(sqrt2 s)=1/sqrt2; matches CNXML solution."
   },
   "db11537f3ff0e13c": {
    "verdict": "ok"
@@ -19315,6 +19701,10 @@
   "dff1e4e8f89a3f9f": {
    "verdict": "ok"
   },
+  "e01c7a7cb3b23389": {
+   "verdict": "ok",
+   "note": "Section Exercise 65 (Seattle building, 2deg, 2 miles): height=2*5280*tan(2deg)=368.7633 ft, computed with node; matches CNXML solution."
+  },
   "e02acbc51000b82e": {
    "verdict": "ok"
   },
@@ -19477,6 +19867,14 @@
   "e1f599e0a9ab9a11": {
    "verdict": "ok"
   },
+  "e202f0e3b52c9410": {
+   "verdict": "ok",
+   "note": "135 deg is between 90 and 180, terminal side in QII"
+  },
+  "e2063c54e9278722": {
+   "verdict": "ok",
+   "note": "0.5 rad/s -> RPM = 0.5*60/(2*pi) = 30/(2*pi) = 4.7746482927568605, rounds to 4.77 at 2dp (node computed)"
+  },
   "e20a29699312507d": {
    "verdict": "ok"
   },
@@ -19543,9 +19941,6 @@
    "verdict": "ok"
   },
   "e2ae5e9b3265430d": {
-   "verdict": "ok"
-  },
-  "e2b823068aabb0e6": {
    "verdict": "ok"
   },
   "e2bb517e707dfa21": {
@@ -20082,6 +20477,10 @@
   "e8c62691ae4db080": {
    "verdict": "ok"
   },
+  "e8d70dfcff5678c7": {
+   "verdict": "ok",
+   "note": "-120 + 360 = 240 deg, within [0,360)"
+  },
   "e8e947d98a9d8ab0": {
    "verdict": "ok"
   },
@@ -20090,6 +20489,10 @@
   },
   "e9021b61ca4a63cc": {
    "verdict": "ok"
+  },
+  "e905224000b8c682": {
+   "verdict": "ok",
+   "note": "sin(pi/3) = sqrt(3)/2 = 0.8660254037844386, rounds to 0.8660 at 4dp (node computed)"
   },
   "e90a68a815319184": {
    "verdict": "ok"
@@ -20224,6 +20627,10 @@
   "ead6789e29050ce8": {
    "verdict": "ok",
    "note": "Try It 7. Solved w(w+1)(2w+1)=84 for positive w via node scan: w=3 gives 84 exactly, so width=3, length=w+1=4, height=2w+1=7. Matches CNXML ti_03_06_07 solution '3 meters by 4 meters by 7 meters' (width, length, height order), which the question now states explicitly."
+  },
+  "ead88a8aa98f662a": {
+   "verdict": "ok",
+   "note": "sin t=tan t·cos t=1.3×0.61=0.793, rounds to 0.79; matches CNXML solution sin(t)≈0.79"
   },
   "ead99fa68312f7af": {
    "verdict": "ok"
@@ -20625,6 +21032,10 @@
   "eeca4381ce688cd4": {
    "verdict": "ok"
   },
+  "eecb8c85c1084467": {
+   "verdict": "ok",
+   "note": "315 deg is in QIV, reference angle 45 deg, sine negative in QIV: sin(315)=-sin(45)=-sqrt2/2; numerically Math.sin(315*pi/180)=-0.7071067811865474"
+  },
   "eef5a0ec741dd1fb": {
    "verdict": "ok",
    "note": "Repaired 2026-08-15. From (2,-2) with slope 4/3, rise 4 and run 3 land on (2+3,-2+4)=(5,2). The declared (6,2) gives slope 4/4=1 and contradicted the exercise's own hint."
@@ -20682,6 +21093,10 @@
   },
   "efa955062d350948": {
    "verdict": "ok"
+  },
+  "efa9c3a1a236620b": {
+   "verdict": "ok",
+   "note": "-17*pi/6 + 12*pi/6 = -5*pi/6 (still negative), + 12*pi/6 again = 7*pi/6, which lies in [0,2*pi)"
   },
   "efadc6195fdc3ca7": {
    "verdict": "ok"
@@ -20864,6 +21279,10 @@
    "verdict": "ok",
    "note": "e^{2x}-e^x-132=0 factors (e^x-12)(e^x+11)=0; reject negative root, x=ln12. Verified exact-log."
   },
+  "f1ac65e43a0c9922": {
+   "verdict": "ok",
+   "note": "Section Exercise 17 (Figure 14, sides 4 and 10): hyp = sqrt(4^2+10^2) = sqrt(116) = 2 sqrt(29); sin A = 10/(2 sqrt29) = 5 sqrt29/29, computed with node; matches CNXML solution."
+  },
   "f1b9d488e29e0781": {
    "verdict": "ok"
   },
@@ -21033,6 +21452,10 @@
   "f3d0b3468231ff0b": {
    "verdict": "ok"
   },
+  "f3dbc9f3bb29dc7b": {
+   "verdict": "ok",
+   "note": "Section Exercise 39 part b: b=c*sin(21deg)=17.9184, computed with node; matches CNXML solution."
+  },
   "f3ded21075b0fa48": {
    "verdict": "ok"
   },
@@ -21157,6 +21580,10 @@
   "f517a180cb23f8f9": {
    "verdict": "ok"
   },
+  "f519f013c6725529": {
+   "verdict": "ok",
+   "note": "315 deg is in QIV, reference angle 45 deg, cosine positive in QIV: cos(315)=cos(45)=sqrt2/2; numerically Math.cos(315*pi/180)=0.7071067811865476=sqrt2/2"
+  },
   "f51c63f1e3e83e2a": {
    "verdict": "ok"
   },
@@ -21229,6 +21656,10 @@
   },
   "f5d6db63d1c574d2": {
    "verdict": "ok"
+  },
+  "f5de63373c842ac2": {
+   "verdict": "ok",
+   "note": "150 deg * pi/180 = 150/180*pi = 5*pi/6"
   },
   "f5ed4ebedd827091": {
    "verdict": "ok"
@@ -21335,6 +21766,10 @@
   },
   "f7293d19d4d7c815": {
    "verdict": "ok"
+  },
+  "f737d1e52360b3a4": {
+   "verdict": "ok",
+   "note": "s = r*theta = 5.02*(pi/3) = 5.2569317070069195, rounds to 5.26 at 2dp (node computed)"
   },
   "f7401ba0bc207317": {
    "verdict": "ok"
@@ -21674,9 +22109,6 @@
   "fab9497069f1da24": {
    "verdict": "ok"
   },
-  "faba4d31ccfb6d4d": {
-   "verdict": "ok"
-  },
   "facd8977d304acea": {
    "verdict": "ok"
   },
@@ -21849,6 +22281,10 @@
   "fd0f2671cf84130b": {
    "verdict": "ok"
   },
+  "fd13b3f1f94eefd4": {
+   "verdict": "ok",
+   "note": "sin^2t = 1-cos^2t = 1-(24/25)^2 = 1-576/625 = 49/625, sin t = +/-7/25; QIV means sin t<0, so sin t = -7/25"
+  },
   "fd2968aa30c7f756": {
    "verdict": "ok"
   },
@@ -21873,6 +22309,10 @@
   },
   "fd54ba867f365401": {
    "verdict": "ok"
+  },
+  "fd55149f097a12de": {
+   "verdict": "ok",
+   "note": "tan t=sin/cos=(15/17)/(-8/17)=-15/8"
   },
   "fd6d0b62ee958151": {
    "verdict": "ok"

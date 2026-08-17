@@ -104,7 +104,7 @@ import {
 // strategy, and one set of HTML readers, so this lint and the verifiers can
 // never disagree about what a page says.
 import {
-  malformedShortcodeParams, mathSpans, PAIRED_SHORTCODES, shortcodes,
+  malformedShortcodeParams, mathSpans, PAIRED_SHORTCODES, shortcodeParamSpans, shortcodes,
 } from './lib-content.mjs';
 import { hasFileBackedCssImage, htmlAttribute, openTagRe } from './lib-html.mjs';
 // The one objectives-callout parser, shared with the structure validator and
@@ -410,8 +410,11 @@ export const NAMED_FORM_ASKS = [
     // rational, and the fraction shape is what separates it from 1.5.
     ask: /\b(?:enter|give|write|leave|find)\b[^.?!]*\bexact (?:answer|form)\b/i,
     name: 'the exact (non-approximate) form',
+    // `exact` last: it is the weakest of these (an absence test, no shape),
+    // and it is what a CONTAINER answer takes — an ordered pair or a list of
+    // points has no single shape for the others to describe.
     tokens: ['exact-log', 'exact-radical', 'simplified-radical', 'radical', 'fraction',
-      'mixed-number', 'improper-fraction', 'fraction-or-mixed-number'],
+      'mixed-number', 'improper-fraction', 'fraction-or-mixed-number', 'exact'],
   },
   {
     // "Write the sum using summation notation": the printed expanded sum is
@@ -864,6 +867,20 @@ function withoutFigureSpecs(src, blank) {
 }
 
 /**
+ * `source` with every math span's contents blanked, offsets preserved, so a
+ * prose-only rule cannot fire on a symbol that IS typeset. The `$` delimiters
+ * are left in place: only what they wrap is masked.
+ */
+function maskMathSpans(source, blank) {
+  let out = source;
+  for (const { tex, display, index } of mathSpans(source, { allowNewlines: true })) {
+    const at = index + (display ? 2 : 1);
+    out = out.slice(0, at) + blank(tex) + out.slice(at + tex.length);
+  }
+  return out;
+}
+
+/**
  * Every four-or-more-digit run inside a math span that the corpus would write
  * grouped, with its offset in `source`. The masking is subtle — a near-miss
  * would report text no reader sees — which is why it is one function rather
@@ -995,6 +1012,22 @@ export function lintHugo(src, filename = '') {
   const isRegularSection = /[/\\]content[/\\]math[/\\][^/\\]+[/\\]\d{2}-[^/\\]+[/\\]\d{2}-[^/\\]+\.md$/i
     .test(filename.replace(/^\.?[/\\]?/, '/'));
 
+  // ---- frontmatter YAML that Hugo cannot parse -----------------------------
+  // A plain YAML scalar ends at its first `: `, so
+  // `title: Unit Circle: Sine and Cosine Functions` is a mapping value inside
+  // a mapping value and the site build dies on it — "mapping value is not
+  // allowed in this context". Every tool here reads frontmatter line by line
+  // and saw a perfectly good title, so §5.2 shipped a page that passed the
+  // whole of `npm test` and could not be built. The value has to be quoted.
+  const frontmatter = src.startsWith('---\n') ? src.slice(4, src.indexOf('\n---', 3)) : '';
+  for (const m of frontmatter.matchAll(/^([A-Za-z_][\w-]*):[ \t]+(\S.*)$/gm)) {
+    const [, key, value] = m;
+    const quoted = /^["'>|]/.test(value.trim());
+    if (!quoted && /:[ \t]/.test(value)) {
+      err(4 + m.index, `frontmatter \`${key}\` holds an unquoted \`: \` — YAML reads it as a nested mapping and the site build fails; wrap the value in double quotes`);
+    }
+  }
+
   // ---- section objectives --------------------------------------------------
   // The opening callout states the section's objectives as a Markdown list,
   // one item per objective. That list is the anchor for the `## Practice`
@@ -1074,6 +1107,68 @@ export function lintHugo(src, filename = '') {
   // figures. Writing `f^{-1}(x)` there prints those five characters verbatim.
   for (const m of withoutFigureSpecs(src, blank).matchAll(/⁻/g)) {
     err(m.index, 'unicode superscript minus — write a braced exponent like 10^{-3}');
+  }
+  // Mathematics in an EXERCISE is typeset, not spelled with lookalike
+  // characters. Chapters 1-4 write every symbol as TeX inside `$…$`; the
+  // first trigonometry pass wrote 25 question strings as raw `240°`,
+  // `−17π/6`, `0° ≤ α < 360°`, which render in the page font beside
+  // KaTeX-set math and which tools/verify-replay.mjs cannot read as math
+  // spans — so the retype gate never sees the very quantity the question is
+  // about.
+  //
+  // Scoped to the reader-facing TEXT parameters of an exercise, which is
+  // where the mismatch shows and where the gate goes blind. Deliberately NOT
+  // body prose: legacy pages legitimately write "a 2 × 2 matrix" and "the
+  // symbol ° represents degrees", and pre-spec-first figures carry `180°`
+  // inside pasted `<svg><text>` — none of which is math set in the page font.
+  // A FIGURE label is the same exemption the superscript-minus rule draws:
+  // plain SVG text with no typesetter, so `√3/2` and `30°` are correct there.
+  //
+  // `°` is exempt as a unit of TEMPERATURE (`165°F`, `100° Fahrenheit`),
+  // which is prose, and is written that way in §4.7's cooling models.
+  const UNICODE_MATH = /[°πθαβγλμω√≤≥≠]/g;
+  const DEGREE_OF_TEMPERATURE = /°\s*(?:F\b|C\b|Fahrenheit|Celsius)/gi;
+  for (const sc of [...shortcodes(mediaSrc, 'fillin'), ...shortcodes(mediaSrc, 'multiplechoice')]) {
+    // Spans, not `mediaSrc.indexOf(sc.params[key])`. The params are unescaped,
+    // so indexOf cannot find the value of any param whose source wrote `\"`,
+    // and the `at < 0` guard that followed then skipped it — three corpus
+    // params exempted from these rules with no error and no counter. The span
+    // is the value as written, at its exact offset, and the checks below read
+    // characters, which `\"`-unescaping does not change.
+    const spans = shortcodeParamSpans(sc.open);
+    for (const key of ['question', 'hint', 'answerDisplay', 'answer']) {
+      if (!sc.params[key]) continue;
+      const span = spans[key];
+      const text = span.raw;
+      const at = sc.openIndex + span.index;
+      const prose = maskMathSpans(text, blank).replace(DEGREE_OF_TEMPERATURE, blank);
+      for (const m of prose.matchAll(UNICODE_MATH)) {
+        err(at + m.index, `unicode math character ${JSON.stringify(m[0])} in ${key} — typeset it as TeX inside $…$ (° for temperature and figure-spec labels are exempt)`);
+      }
+    }
+  }
+  // A degree glyph INSIDE math is the same defect one layer in: `$315°$` sets
+  // an upright ordinary character where `$315^\circ$` sets the raised ring, so
+  // a page mixes two spellings of one symbol, and the `degrees` form predicate
+  // — which reads the written LaTeX for a degree mark — is left reading a
+  // spelling the author never meant to be different.
+  //
+  // WHOLE PAGE, not just the exercise params the unicode rule above is scoped
+  // to. That scoping is right for the raw-prose rule, whose exemptions ("the
+  // symbol ° represents degrees", `165°F`, pasted `<svg><text>` labels) are all
+  // things written OUTSIDE math. None of them survives inside `$…$`: there, a
+  // degree is always `^\circ`, temperature included (`$22^\circ\text{C}$`).
+  // Scoping this one to params too would have grandfathered the 203 in-math
+  // glyphs the body prose of §5.1–5.4 and six older pages carried, which is
+  // the backlog this rule exists to prevent. Those are cleaned; this keeps
+  // them clean.
+  //
+  // Figure specs and `<svg>` keep the glyph — plain SVG text has no typesetter
+  // behind it, exactly as the superscript-minus rule already allows.
+  for (const span of mathSpans(withoutFigureSpecs(mediaSrc, blank), { maskCode: true, allowNewlines: true })) {
+    for (const m of span.tex.matchAll(/°/g)) {
+      err(span.index + m.index, 'degree glyph inside math — write ^\\circ, the spelling KaTeX sets and the `degrees` answerForm reads');
+    }
   }
   // Digit grouping. The corpus groups every number of four or more digits as
   // `1{,}000`. Four-digit calendar years are the one exception and stay bare
@@ -1523,6 +1618,22 @@ export function lintHugo(src, filename = '') {
     if (codesACategoricalAnswer(q)) {
       err(index, `${where}: the question encodes a categorical answer as a number ("answer 1 for yes") — use multiplechoice with the alternatives as its options, so the learner picks the choice instead of a code and cannot pass by guessing a digit`);
     }
+    // ---- a WORD keyed as a fill-in answer, which the input cannot produce.
+    // The learner types into a MathLive field, not a text box, and the field
+    // reads what they type as mathematics: typing "undefined" emits
+    // `def\in ed`, because "in" is the ∈ operator and the leading "un" is
+    // swallowed. So the only response that grades correct is the literal
+    // LaTeX `\text{undefined}` — backslash, braces and all — which no learner
+    // would write and no hint could reasonably ask for. §5.3 shipped exactly
+    // that, with a question that told the learner to "enter undefined" and
+    // then marked them wrong for doing it.
+    //
+    // "Undefined", "does not exist", "none" and their kin are CATEGORICAL
+    // answers, and the rule for those is already the rule above: pick a
+    // choice, do not type a word.
+    if (/\\text(?:rm|it|bf|tt|sf)?\s*\{/.test(params.answer ?? '')) {
+      err(index, `${where}: the answer is a WORD (${JSON.stringify(params.answer)}), and the fillin's math input cannot produce one — typing "undefined" emits \`def\\in ed\`, so only the literal LaTeX grades correct. Use multiplechoice with the words as its options`);
+    }
     // ---- trivially satisfiable re-expression prompt.
     // A prompt that asks the learner to restate a printed value in another
     // form has an answer that is value-equal to that value by construction,
@@ -1536,17 +1647,31 @@ export function lintHugo(src, filename = '') {
       if (unknown.length) {
         err(index, `${where}: answerForm token(s) ${unknown.map((t) => JSON.stringify(t)).join(', ')} name no form — use ${ANSWER_FORM_TOKENS.join(', ')}`);
       }
-      // The grader returns from its list paths before the form is ever checked,
-      // so a form declared beside a comma answer grades nothing at all. Silent
-      // no-ops are worse than errors: the exercise looks guarded and is not.
-      if (params.answerMode === 'unordered' || answerParts.length > 1) {
-        err(index, `${where}: answerForm is not applied to a comma-separated answer — list grading returns before the form check, so the declared form ${JSON.stringify(params.answerForm)} silently grades nothing`);
-      }
+      // A rule used to sit here forbidding `answerForm` beside a comma
+      // answer, because the grader returned from its list paths before the
+      // form was ever checked and the declared token silently graded nothing.
+      // That was a grader defect described as an authoring rule: it left the
+      // list-keyed exercises with NO way to be guarded at all, which is how
+      // "Find $\cos t$ and $\sin t$, separated by a comma" came to accept its
+      // own printed prompt. checkAnswer now applies the declared form to every
+      // member of a list, so declaring one there is correct and the rule is
+      // gone.
     }
     // ---- prompt asks for a NAMED form the value check cannot see.
-    // Scoped to scalar answers: the form check never runs on list answers
-    // (see the rule above), so a list ask cannot be conscripted into one.
-    if (answerParts.length === 1 && params.answerMode !== 'unordered') {
+    //
+    // A LIST-keyed prompt is held to this too. The scalar-only narrowing that
+    // used to gate these three rules was the other half of the deleted rule
+    // above: while `answerForm` beside a comma answer was forbidden, demanding
+    // one from a list would have demanded the impossible. checkAnswer now
+    // applies a declared form to every member of an ordered *and* an unordered
+    // list, so the narrowing outlived its reason — and while it stood, a
+    // list-keyed "…as a decimal" or "…in simplest form" was the one shape of
+    // re-expression prompt still passable by retyping the printed value.
+    //
+    // The two ANSWER-SHAPE tests below read per MEMBER, because each anchors
+    // on a single numeral: whole-string, a comma list matches neither, which
+    // would have re-created the same exemption one layer down.
+    {
       const declared = parseAnswerForm(params.answerForm ?? '').tokens;
       for (const { ask, name, tokens } of NAMED_FORM_ASKS) {
         if (ask.test(q) && !tokens.some((token) => declared.includes(token))) {
@@ -1555,21 +1680,21 @@ export function lintHugo(src, filename = '') {
       }
       // "…as a fraction in simplest form" on a numeral answer: value grading
       // accepts the unreduced $\frac{6}{8}$ the ask exists to rule out.
-      if (/\bsimpl(?:est|ified) form\b|\bfully simplified\b/i.test(q) && NUMERAL_FRACTION_ANSWER_RE.test(params.answer || '')
-        && !parseAnswerForm(params.answerForm ?? '').tokens.includes('lowest-terms')) {
+      if (/\bsimpl(?:est|ified) form\b|\bfully simplified\b/i.test(q)
+        && answerParts.some((part) => NUMERAL_FRACTION_ANSWER_RE.test(part))
+        && !declared.includes('lowest-terms')) {
         err(index, `${where}: the question asks for simplest form and the answer is a numeral fraction, but value grading accepts the unreduced equivalents — add "lowest-terms" to answerForm`);
       }
-    }
-    // ---- prompt asks for a percent and the KEY is %-shaped. Keyed on the
-    // answer's own shape so number-only percent prompts ("enter 40 for
-    // 40%", "without the percent sign") can never be conscripted: when the
-    // authored key ends in \%, the value check reads 9.3% and 0.093 as
-    // equal, so the sign IS the exercise.
-    if (answerParts.length === 1 && params.answerMode !== 'unordered'
-      && /\b(?:enter|write|give|express|convert)\b[^.?!]*\bpercent\b/i.test(q)
-      && /\\%\s*$/.test((params.answer || '').trim())
-      && !parseAnswerForm(params.answerForm ?? '').tokens.includes('percent')) {
-      err(index, `${where}: the question asks for a percent and the answer is %-shaped, but value grading accepts the bare decimal — add "percent" to answerForm`);
+      // ---- prompt asks for a percent and the KEY is %-shaped. Keyed on the
+      // answer's own shape so number-only percent prompts ("enter 40 for
+      // 40%", "without the percent sign") can never be conscripted: when the
+      // authored key ends in \%, the value check reads 9.3% and 0.093 as
+      // equal, so the sign IS the exercise.
+      if (/\b(?:enter|write|give|express|convert)\b[^.?!]*\bpercent\b/i.test(q)
+        && answerParts.some((part) => /\\%\s*$/.test(part.trim()))
+        && !declared.includes('percent')) {
+        err(index, `${where}: the question asks for a percent and the answer is %-shaped, but value grading accepts the bare decimal — add "percent" to answerForm`);
+      }
     }
     // ---- prompt asks for interval notation: the authored answer must BE one.
     // The engine grades an inequality and an interval unequal in BOTH

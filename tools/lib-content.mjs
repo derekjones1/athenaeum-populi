@@ -136,6 +136,31 @@ export function shortcodeParams(body) {
   return params;
 }
 
+/**
+ * Where each param's value physically sits, as `{ [name]: { raw, index } }`
+ * with `index` relative to `body` (add a shortcode's `openIndex` for a
+ * file offset).
+ *
+ * `shortcodeParams` returns UNESCAPED values, which is what a checker wants to
+ * read but not something it can find again: a caller locating the value with
+ * `src.indexOf(params[key])` fails on exactly the params whose `\"` was
+ * unescaped, and a checker that skips what it cannot locate then exempts them
+ * without saying so. Offsets come from here instead, so a rule sees every
+ * param or fails loudly.
+ *
+ * `raw` is the value as written. Escaping only ever turns `\"` into `"`, so a
+ * rule about characters (unicode lookalikes, a degree glyph, whitespace) reads
+ * the same verdict off either spelling — and off `raw` it reads exact offsets.
+ */
+export function shortcodeParamSpans(body) {
+  const spans = {};
+  for (const match of body.matchAll(PARAM_RE)) {
+    // +1 for the opening quote that PARAM_RE's group excludes.
+    spans[match[1]] = { raw: match[2], index: match.index + match[0].length - match[2].length - 1 };
+  }
+  return spans;
+}
+
 /** The shortcodes this repository defines, and whether they are paired. */
 export const PAIRED_SHORTCODES = Object.freeze({
   fillin: false,
@@ -152,6 +177,8 @@ export const PAIRED_SHORTCODES = Object.freeze({
  *   inner  — the body between the opening and closing tags (paired only)
  *   index  — offset of the opening tag, for diagnostics
  *   open   — the raw opening-tag body, so a caller can check its param syntax
+ *   openIndex — file offset of `open`, so `shortcodeParamSpans(open)` offsets
+ *            can be turned into file offsets
  *   closed — false when a paired shortcode has no closing tag. Callers must
  *            diagnose that as its own defect: an unclosed `multiplechoice`
  *            used to fall through to "at least two options are required",
@@ -176,7 +203,12 @@ export function* shortcodes(src, name, { paired = PAIRED_SHORTCODES[name] ?? fal
         closed = false;
       }
     }
-    yield { params: shortcodeParams(m[1]), inner, index: m.index, end, open: m[1], closed };
+    // The opening tag is `prefix + m[1] + ">}}"`, so the body starts three
+    // characters before the tag's end.
+    const openIndex = m.index + m[0].length - 3 - m[1].length;
+    yield {
+      params: shortcodeParams(m[1]), inner, index: m.index, end, open: m[1], openIndex, closed,
+    };
   }
 }
 

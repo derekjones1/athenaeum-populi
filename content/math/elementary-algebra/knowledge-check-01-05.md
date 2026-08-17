@@ -424,7 +424,7 @@ weight: 6
 {{< fillin
   question="The measure of one angle of a triangle is twice the measure of the smallest angle. The measure of the third angle is 14 more than the measure of the smallest angle. Find the measures of all three angles, in degrees, from smallest to largest, separated by commas."
   answer="41.5, 55.5, 83"
-  answerDisplay="41.5°, 55.5°, 83°"
+  answerDisplay="$41.5^\circ$, $55.5^\circ$, $83^\circ$"
 >}}
 
 {{< fillin

@@ -478,6 +478,7 @@ Yes
 {{< fillin
   question="Solve $\left\{\begin{array}{l}x^2-y^2=3\\2x^2+y^2=6\end{array}\right.$ using elimination. Enter both solutions in exact form."
   answer="(-\sqrt3,0),(\sqrt3,0)"
+  answerForm="exact"
   answerMode="unordered"
   answerDisplay="$(-\sqrt3,0),(\sqrt3,0)$"
   hint="Add the equations to eliminate $y^2$, solve for $x^2$, and then find $y$."

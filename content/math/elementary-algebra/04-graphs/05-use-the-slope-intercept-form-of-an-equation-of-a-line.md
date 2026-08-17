@@ -309,8 +309,8 @@ $C$, on the Celsius scale to temperatures, $F$, on the Fahrenheit scale.
 (c) Even though this equation uses $F$ and $C$, it is still in slope-intercept form.
 Comparing $F = mC + b$ to $F = \tfrac{9}{5}C + 32$: the slope, $\tfrac{9}{5}$, means
 that the Fahrenheit temperature increases $9$ degrees when the Celsius temperature
-increases $5$ degrees. The $F$-intercept means that when the temperature is $0°$ on
-the Celsius scale, it is $32°$ on the Fahrenheit scale.
+increases $5$ degrees. The $F$-intercept means that when the temperature is $0^\circ$ on
+the Celsius scale, it is $32^\circ$ on the Fahrenheit scale.
 
 (d) To graph the equation we start at the $F$-intercept $(0, 32)$, then count out the
 rise of $9$ and the run of $5$ to get a second point.

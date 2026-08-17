@@ -538,8 +538,8 @@ $$F=\tfrac{9}{5}(20)+32=36+32=68$$
 equation uses $F$ and $C$, it is still in slope-intercept form. The slope,
 $\tfrac{9}{5}$, means that the temperature Fahrenheit ($F$) increases $9$
 degrees when the temperature Celsius ($C$) increases $5$ degrees. The
-$F$-intercept means that when the temperature is $0°$ on the Celsius scale,
-it is $32°$ on the Fahrenheit scale.
+$F$-intercept means that when the temperature is $0^\circ$ on the Celsius scale,
+it is $32^\circ$ on the Fahrenheit scale.
 
 (d) Graph the equation. Start at the $F$-intercept $(0,32)$, and then count
 out the rise of $9$ and the run of $5$ to get a second point.

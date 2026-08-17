@@ -548,13 +548,13 @@ The solution in interval notation is $[75, \infty)$.
 {{< fillin
   question="Translate and solve: 'Nineteen less than p is no less than 47.' Write the solution as an inequality."
   answer="p\geq66"
-  hint="'Nineteen less than p' translates to $p - 19$. 'Is no less than' means the same as ≥. Then add 19 to both sides."
+  hint="'Nineteen less than p' translates to $p - 19$. 'Is no less than' means the same as $\ge$. Then add 19 to both sides."
 >}}
 
 {{< fillin
   question="Translate and solve: 'Four more than a is at most 15.' Write the solution as an inequality."
   answer="a\leq11"
-  hint="'Four more than a' translates to $a + 4$. 'Is at most' means the same as ≤. Then subtract 4 from both sides."
+  hint="'Four more than a' translates to $a + 4$. 'Is at most' means the same as $\le$. Then subtract 4 from both sides."
 >}}
 
 ## Key terms

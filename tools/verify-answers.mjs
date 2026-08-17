@@ -57,7 +57,9 @@
  */
 
 import { existsSync, readFileSync } from 'node:fs';
-import { ce, preprocess, splitTopLevelCommas } from '../assets/js/lib/check-answer.mjs';
+import {
+  ce, preprocess, splitTopLevelCommas, spellDegreesAsQuantity,
+} from '../assets/js/lib/check-answer.mjs';
 import {
   blankPreservingOffsets, mathSpans, shortcodeParams, shortcodes, walkMarkdown,
 } from './lib-content.mjs';
@@ -77,7 +79,12 @@ export function parseMath(latex) {
   const prepared = preprocess(latex.replace(/\\\$/g, '').trim());
   if (!prepared) return null;
   try {
-    const expr = ce.parse(prepared);
+    // Through the grader's own degree spelling, or the two disagree about what
+    // a degree measure IS: the engine folds `^\circ` onto one turn, so
+    // `-540^\circ` boxes to `-pi` here while checkAnswer reads it as `-3pi`,
+    // and "Convert $-540^\circ$ to radians" keyed `-3\pi` fails a cross-check
+    // that is comparing two different readings of the same printed span.
+    const expr = ce.parse(spellDegreesAsQuantity(prepared));
     return expr.isValid ? expr : null;
   } catch {
     return null;
@@ -315,6 +322,12 @@ const REEXPRESSION_RE = new RegExp([
   String.raw`\b(?:convert|write|rewrite|express)\b(?!\s+(?:your|the)\s+answer\b)[^.?!]*\b(?:to|as|in)\b[^.?!]*\b(?:decimal|fraction|mixed number|scientific notation|power|degrees?|radians?)\b`,
 ].join('|'), 'i');
 
+// A question that points at a figure, graph, or table for the value of its
+// own subject. The checker reads text; whatever such a question shows is
+// outside what it can see, so a printed subject whose variable is pinned
+// there is not comparable to the answer.
+const EXTERNAL_REFERENT_RE = /\b(?:shown|given|pictured)\s+(?:below|above)\b|\b(?:in|from|using|on)\s+the\s+(?:figure|graph|table|diagram|triangle|circle)\b|\bthe\s+(?:figure|graph|table|diagram|triangle|circle)\s+shown\b/i;
+
 const pass = (rule) => ({ rule, status: 'pass' });
 const fail = (rule, detail) => ({ rule, status: 'fail', detail });
 const skip = (rule, reason) => ({ rule, status: 'skip', reason });
@@ -458,6 +471,25 @@ function checkReexpression(question, answer, answerMode) {
   const defined = printedDefinitions(question);
   if (defined.size > 0 && [...freeVariables(candidates[0].expr)].some((name) => defined.has(name))) {
     return skip('re-expression', 'applies a function the question defines');
+  }
+  // The same false-failure trap one step out: "Given the triangle shown below,
+  // find the value of $\sin t$" prints a subject whose variable is pinned by
+  // the FIGURE, not by the text, and answers it with a constant. Sampling t
+  // then compares sin(1.3178) with 7/25 and reports a disagreement that says
+  // nothing about the answer. Whenever the subject carries a variable the
+  // answer does not, something the checker cannot read — a figure, a table, a
+  // preceding sentence — supplies its value, so the comparison is not this
+  // checker's to make. A variable on BOTH sides is a genuine re-expression
+  // ("simplify $(\tan t)(\cos t)$" → $\sin t$) and stays in scope.
+  // …and only when the question actually points OUTSIDE its own text for the
+  // value. Skipping on the free variable alone costs 24 sound checks across
+  // the corpus — "simplify $\frac{x}{x}$" answers 1 legitimately, and its
+  // subject is identically constant — so the referent is the discriminator,
+  // not the variable.
+  const answerVariables = freeVariables(answerExpr);
+  const unpinned = [...freeVariables(candidates[0].expr)].filter((name) => !answerVariables.has(name));
+  if (unpinned.length > 0 && EXTERNAL_REFERENT_RE.test(question)) {
+    return skip('re-expression', `printed subject reads ${unpinned.join(', ')} from a figure or table the checker cannot see`);
   }
 
   const { equal, witness } = equivalentNumerically(candidates[0].expr, answerExpr);
