@@ -67,7 +67,7 @@ flour — cubic measure. (f) You are measuring the area of the roof —
 square measure.
 
 {{< fillin
-  question="A can of paint covers a wall with area 200 square feet using 2 cans. How many square feet does 1 can cover? (This is testing the square-measure idea: paint coverage is an area rate.)"
+  question="It takes 2 cans of paint to cover a wall with an area of 200 square feet. How many square feet does 1 can cover?"
   answer="100"
   hint="Divide the total area by the number of cans: $200 / 2$."
 >}}

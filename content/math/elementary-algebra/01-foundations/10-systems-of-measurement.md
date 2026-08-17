@@ -509,7 +509,7 @@ are in the bottle? Round to the nearest tenth of an ounce.
 The water bottle has $16.7$ ounces.
 
 {{< fillin
-  question="How many quarts of soda are in $a 2-L$ bottle? Round to the nearest tenth."
+  question="How many quarts of soda are in a 2-liter bottle? Round to the nearest tenth."
   answer="2.1"
   hint="Multiply 2 liters by the conversion factor 1.06 quarts per liter."
 >}}

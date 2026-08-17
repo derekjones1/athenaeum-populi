@@ -52,12 +52,31 @@ Before writing:
 4. Preserve the source's objectives, exposition, definitions, procedures,
    examples, and mathematics. Omit only material explicitly allowed by the
    request/playbook. Never silently invent, condense, or “repair” source
-   content. If the CNXML, PDF, official answer, and independent calculation
-   disagree, stop and record the discrepancy with the evidence before choosing
-   a reviewed resolution. Repairing the source is not an option even when the
-   source is wrong: an exercise whose printed answer is defensible on the
-   source's own terms ships as printed, and the defect gets logged (below)
-   rather than edited away.
+   content. **“The source” means the pinned OpenStax CNXML/PDF, never this
+   repo's pages.** The pinned files are never edited under any circumstance;
+   “repairing the source” means making this repo's transcription deviate from
+   what the source printed without a recorded decision. When the source looks
+   wrong, exactly one of three cases applies:
+   - **Defensible as printed → ship as printed.** A printed answer or sentence
+     that is questionable but defensible on the source's own terms (a valid
+     alternate form, the source's own rounding or ordering convention)
+     transcribes as printed. Do not improve it; record the dismissed suspicion
+     in the errata file's "Reviewed and *not* errata" list (rule 5).
+   - **Confirmed source defect → correct the local page, without asking.**
+     When the printed content fails on its own terms — the CNXML, PDF,
+     official answer, and independent calculation disagree, confirmed against
+     the raw CNXML plus one independent check — record the discrepancy with
+     the evidence, then correct the local page to the module's own
+     mathematics, place a visible source note beside the correction, record
+     the local handling in `data/openstax/math-reconciliation-decisions.json`,
+     and log the defect (rule 5). This is the reviewed resolution; it does not
+     require a human's approval. The upstream files still do not change.
+   - **Locally authored fields → just fix them.** Content with no source
+     counterpart — `hint` text, distractor bodies, aria labels, and other
+     scaffolding this playbook requires you to write — is not source content
+     and is outside this rule entirely. Correct defects in it freely, with no
+     source note, decision entry, or approval; an errata entry is needed only
+     if the underlying mistake traces back to the source itself.
 5. **Log confirmed upstream defects in `docs/openstax-errata.md` without
    asking.** Verify against the raw CNXML plus one independent check (the PDF,
    an answer key, or a parallel module), then write the entry — module id,

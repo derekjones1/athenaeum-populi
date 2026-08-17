@@ -893,10 +893,16 @@ geometric
 >}}
 
 {{< fillin
-  question="Dave just got his first full-time job after graduating from high school at age 18. He decided to invest \$450 per month in an IRA (an annuity). The interest on the annuity is 6% which is compounded monthly. How much will be in Adam’s account when he retires at his sixty-fifth birthday?"
+  question="Dave just got his first full-time job after graduating from high school at age 18. He decided to invest \$450 per month in an IRA (an annuity). The interest on the annuity is 6% which is compounded monthly. How much will be in Dave’s account when he retires at his sixty-fifth birthday?"
   answer="1409344.19"
   answerDisplay="\$1,409,344.19"
 >}}
+
+{{< callout type="info" >}}
+  **Source note.** The source exercise (m81420, §12.4) introduces Dave and
+  then asks about “Adam’s” account, a person it never defines. This page
+  writes “Dave’s”. The printed answer, \$1,409,344.19, is unaffected.
+{{< /callout >}}
 
 ### 12.4 Binomial Theorem
 
@@ -920,4 +926,4 @@ geometric
   answer="210"
 >}}
 
-<small>This knowledge check is adapted from the Chapter 7–12 [Review Exercises and Practice Tests](https://openstax.org/books/intermediate-algebra-2e/pages/7-review-exercises) of Intermediate Algebra 2e by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked a usable odd-numbered Practice Test question), converted them to interactive exercises with instant feedback, split multipart questions into separate exercises, and rephrased graphing, diagram, word-answer, interval, and one radical-quotient question as graphing, value, equation, interval, and multiple-choice questions. All answers come from the book's Answer Key.</small>
+<small>This knowledge check is adapted from the Chapter 7–12 [Review Exercises and Practice Tests](https://openstax.org/books/intermediate-algebra-2e/pages/7-review-exercises) of Intermediate Algebra 2e by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked a usable odd-numbered Practice Test question), converted them to interactive exercises with instant feedback, split multipart questions into separate exercises, and rephrased graphing, diagram, word-answer, interval, and one radical-quotient question as graphing, value, equation, interval, and multiple-choice questions. All answers come from the book's Answer Key. One correction: the source's §12.4 annuity question introduces Dave and then asks about “Adam’s” account, naming a person it never defines; this page writes “Dave’s”. The printed answer, \$1,409,344.19, is unaffected.</small>

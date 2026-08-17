@@ -280,7 +280,7 @@ the numerator is left as a sum.
   answer="\frac{3y+14}{18}"
   answerForm="single-fraction"
   answerDisplay="$\tfrac{3y+14}{18}$"
-  hint="$6 = 2 \cdot 3$ and $9 = 3 \cdot 3$, so the LCD is $18$. Rewrite each fraction over $18$, then add the numerators — $24$ and a variable term aren't like terms, so leave the sum as is."
+  hint="$6 = 2 \cdot 3$ and $9 = 3 \cdot 3$, so the LCD is $18$. Rewrite each fraction over $18$, then add the numerators — $3y$ and $14$ aren't like terms, so leave the sum as is."
 >}}
 
 {{< fillin

@@ -542,11 +542,21 @@ The property owner can use 21–95 hcf and still fall within the “normal usage
 billing range.
 
 {{< fillin
-  question="Due to the drought in California, many communities now have tiered water rates. There are different rates for Conservation Usage, Normal Usage and Excessive Usage. The usage is measured in the number of hundred cubic feet (hcf) the property owner uses. During the summer, a property owner will pay \$24.72 plus \$1.32 per hcf for Conservation Usage. The bill for Conservation Usage would be between or equal to \$31.32 and \$52.12. How many hcf can the owner use if she wants her usage to stay in the conservation range? Enter the least and greatest hcf, separated by commas."
+  question="Due to the drought in California, many communities now have tiered water rates. There are different rates for Conservation Usage, Normal Usage and Excessive Usage. The usage is measured in the number of hundred cubic feet (hcf) the property owner uses. During the summer, a property owner will pay \$24.72 plus \$1.32 per hcf for Conservation Usage. The bill for Conservation Usage would be between or equal to \$31.32 and \$51.12. How many hcf can the owner use if she wants her usage to stay in the conservation range? Enter the least and greatest hcf, separated by commas."
   answer="5,20"
   answerDisplay="$5,20$ hcf"
-  hint="Write $31.32\leq24.72+1.32x\leq52.12$, then isolate $x$ in all three parts."
+  hint="Write $31.32\leq24.72+1.32x\leq51.12$, then isolate $x$ in all three parts."
 >}}
+
+{{< callout type="info" >}}
+  **Source note.** The source module (m81367) prints this exercise’s
+  Conservation Usage bill ceiling as \$52.12, which does not produce its own
+  Answer Key result: $(52.12-24.72)/1.32=20.76$ hcf, not $20$. The bill at
+  exactly $20$ hcf is $24.72+1.32(20)=51.12$ dollars, which this page prints,
+  so the printed answer follows from the printed question. The parallel
+  Normal Usage example above is exact as printed and is left as the source
+  has it.
+{{< /callout >}}
 
 ## Key terms
 
@@ -623,4 +633,4 @@ no solution
 
 ---
 
-<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 2.6](https://openstax.org/books/intermediate-algebra-2e/pages/2-6-solve-compound-inequalities), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/). Changes: adapted the text and examples for web presentation, converted selected Try It exercises to interactive answer checks, and adapted selected end-of-section exercises into the section-final interactive Practice block.</small>
+<small>Adapted from [OpenStax Intermediate Algebra 2e, Section 2.6](https://openstax.org/books/intermediate-algebra-2e/pages/2-6-solve-compound-inequalities), by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/). Changes: adapted the text and examples for web presentation, converted selected Try It exercises to interactive answer checks, and adapted selected end-of-section exercises into the section-final interactive Practice block. One correction: the source prints the Conservation Usage bill ceiling as \$52.12, which gives $(52.12-24.72)/1.32=20.76$ hcf rather than the 20 hcf its own Answer Key states; this page prints \$51.12, the bill at exactly 20 hcf, so the printed answer follows from the printed question. The parallel Normal Usage example is exact as printed and is left alone.</small>

@@ -551,7 +551,7 @@ There are no factors that multiply to $10$ and add to $6$. The polynomial is
   answer="$(2t+5)(5t-3)$"
 >}}
 It is prime
-$(5t-3)(2t+5)$ is the only form; it is prime
+$(2t-5)(5t+3)$
 $(2t+5)(5t-3)$
 {{< /multiplechoice >}}
 

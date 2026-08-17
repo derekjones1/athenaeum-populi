@@ -133,7 +133,7 @@ $$\frac{43}{22} = 1.9\overline{54}$$
   answer="2.4545"
   answerForm="decimal"
   answerDisplay="$2.\overline{45} \approx 2.4545$"
-  hint="Divide $27$ by $11$ — the digit $4$ shows once before a single digit starts repeating endlessly."
+  hint="Divide $27$ by $11$ — a two-digit block starts repeating endlessly right after the decimal point."
 >}}
 
 {{< fillin

@@ -581,7 +581,7 @@ The table below shows a set of data.
 >}}
 
 {{< fillin
-  question="Exponential regression on a different data table, $x=1$ through $8$ with $f(1)=7.5$ down to $f(8)=2.9$, gives the logarithmic model $f(x)=7.544-2.268\ln(x)$. Use that model to find the value of $f(10)$, rounded to the nearest tenth."
+  question="Logarithmic regression on a different data table, $x=1$ through $8$ with $f(1)=7.5$ down to $f(8)=2.9$, gives the model $f(x)=7.544-2.268\ln(x)$. Use that model to find the value of $f(10)$, rounded to the nearest tenth."
   answer="2.3"
   answerForm="decimal"
   hint="Substitute $x=10$ into the model and evaluate."

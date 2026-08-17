@@ -199,7 +199,7 @@ $x=0$ into $7x+2y=-6$ gives $2y=-6$, so $y=-3$. The solution is $(0,-3)$.
 {{< fillin
   question="Solve the system by elimination: $3x - 4y = -9$ and $5x + 3y = 14$. What is y?"
   answer="3"
-  hint="Multiply the first equation by 3 and the second by 4 so the x-coefficients become opposites, then add and solve for x first."
+  hint="Multiply the first equation by 3 and the second by 4 so the y-coefficients become opposites, then add and solve for x first, then substitute back to find y."
 >}}
 
 When a system has fractions, clear them first by multiplying each equation

@@ -566,9 +566,9 @@ $g$ shifts left 2 units and $h$ shifts right 2 units.
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="The source prints $f(x)=x^2$, $g(x)=x^2+5$, and $h(x)=x^2-5$. Graph them on the same rectangular coordinate system and describe the effect of the constant."
+  question="Graph $f(x)=x^2$, $g(x)=x^2+5$, and $h(x)=x^2-5$ on the same rectangular coordinate system and describe the effect of the constant."
   answer="$g$ shifts up 5 units and $h$ shifts down 5 units."
-  hint="In the printed formulas, the constants are outside the square."
+  hint="In each formula, the constant is added or subtracted outside the square."
 >}}
 $g$ shifts left 5 units and $h$ shifts right 5 units.
 $g$ shifts right 5 units and $h$ shifts left 5 units.

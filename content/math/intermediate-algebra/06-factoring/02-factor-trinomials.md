@@ -495,7 +495,7 @@ prime
   question="Factor completely using trial and error: $6p^2-19pq+10q^2$."
   answer="(2p-5q)(3p-2q)"
   answerForm="factored"
-  hint="Use opposite signs and test factor pairs of $6$ and $10$."
+  hint="The last term is positive and the middle term negative, so both signs are negative — test factor pairs of $6$ and $10$."
 >}}
 
 ### Factor trinomials of the form $ax^2+bx+c$ using the “ac” method

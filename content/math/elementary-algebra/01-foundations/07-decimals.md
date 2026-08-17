@@ -536,7 +536,7 @@ $\tfrac{43}{22} = 1.9\overline{54}$.
 >}}
 2.318 (a terminating decimal)
 2.318318... (the block 318 repeats forever)
-2.31818... (the block 81 repeats forever)
+2.38181... (the block 81 repeats forever)
 2.31818... (the 3 does not repeat, then the block 18 repeats forever)
 {{< /multiplechoice >}}
 

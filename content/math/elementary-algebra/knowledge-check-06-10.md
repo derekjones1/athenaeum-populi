@@ -494,10 +494,17 @@ aliases:
 >}}
 
 {{< fillin
-  question="A helicopter flying at an altitude of 600 feet dropped a package to a lifeboat. Use the formula $t = \tfrac{\sqrt{h}}{4}$ to find how many seconds it took for the package to reach the hiker. Round your answer to the nearest tenth of a second."
+  question="A helicopter flying at an altitude of 600 feet dropped a package to a lifeboat. Use the formula $t = \tfrac{\sqrt{h}}{4}$ to find how many seconds it took for the package to reach the lifeboat. Round your answer to the nearest tenth of a second."
   answer="6.1"
   answerDisplay="6.1 seconds"
 >}}
+
+{{< callout type="info" >}}
+  **Source note.** The source exercise (m82553, §9.8) drops the package to a
+  lifeboat but asks how long it took to reach “the hiker” — the recipient
+  of the neighbouring 900-foot exercise. This page writes “the lifeboat”.
+  The printed answer, 6.1 seconds, is unaffected.
+{{< /callout >}}
 
 ### 9.7 Higher Roots
 
@@ -632,4 +639,4 @@ down
   answerDisplay="$(-5, -1)$"
 >}}
 
-<small>This knowledge check is adapted from the Chapter 6–10 [Review Exercises and Practice Tests](https://openstax.org/books/elementary-algebra-2e/pages/6-review-exercises) of Elementary Algebra 2e by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked usable Practice Test questions), converted them to interactive exercises with instant feedback, split multi-part questions into separate exercises, rephrased word-answer and graph-reading questions as value, list, and multiple-choice questions, and took all answers from the book's Answer Key.</small>
+<small>This knowledge check is adapted from the Chapter 6–10 [Review Exercises and Practice Tests](https://openstax.org/books/elementary-algebra-2e/pages/6-review-exercises) of Elementary Algebra 2e by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked usable Practice Test questions), converted them to interactive exercises with instant feedback, split multi-part questions into separate exercises, rephrased word-answer and graph-reading questions as value, list, and multiple-choice questions, and took all answers from the book's Answer Key. One correction: the source's §9.8 question drops the package to a lifeboat but asks when it reaches “the hiker” — the recipient of the neighbouring 900-foot question; this page writes “the lifeboat”. The printed answer, 6.1 seconds, is unaffected.</small>

@@ -174,7 +174,7 @@ This rational expression is undefined for $x = 2$.
 $$\frac{(-1)^2+8(-1)+7}{(-1)^2-4} = \frac{1-8+7}{1-4} = \frac{-7+7}{-3} = \frac{0}{-3} = 0$$
 
 {{< fillin
-  question="Evaluate $\frac{y^2+1}{2y-3}$ for $y = 1$. Give a fraction."
+  question="Evaluate $\frac{y^2+1}{2y-3}$ for $y = 1$."
   answer="-2"
   hint="Substitute $1$ for $y$: the numerator is $2$ and the denominator is $-1$."
 >}}

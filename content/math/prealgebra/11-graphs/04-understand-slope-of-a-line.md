@@ -1384,7 +1384,7 @@ undefined
 ### Solve slope applications
 
 {{< fillin
-  question="One way to find the slope of a roof is to set a 12-inch level on the roof surface and measure from the free end of the level down to the roof. For the roof shown in the source, that vertical measurement is $4$ inches. What is the slope of the roof?"
+  question="One way to find the slope of a roof is to set a 12-inch level on the roof surface and measure from the free end of the level down to the roof. For one roof, that vertical measurement is $4$ inches. What is the slope of the roof?"
   answer="\frac{1}{3}"
   answerDisplay="$\tfrac{1}{3}$"
   hint="The level gives the run of $12$ inches and the measurement gives the rise of $4$ inches; simplify $\tfrac{\text{rise}}{\text{run}}$."

@@ -382,7 +382,7 @@ Point $F$ is on the $x$-axis at $x = 3$. The coordinates of point $F$ are
 $(3, 0)$.
 
 {{< fillin
-  question="A point on a graph lies directly above -2 on the x-axis and directly to the right of 5 on the y-axis. What are its coordinates as an ordered pair (x, y)?"
+  question="A point on a graph lies directly above -2 on the x-axis and directly to the left of 5 on the y-axis. What are its coordinates as an ordered pair (x, y)?"
   answer="(-2,5)"
   hint="Read the x-value straight up or down from the point, and the y-value straight across from it."
 >}}

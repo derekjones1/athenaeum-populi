@@ -203,7 +203,7 @@ $\{-3,0,1,2,4\}$. Notice that while $-3$ repeats, it is only listed once.
 $\{-2,-1,3,4,5\}$. Notice that while $-2$ repeats, it is only listed once.
 
 {{< fillin
-  question="For the source graph with points $(-3,3),(-2,2),(-1,0),(0,-1),(2,-2),(4,-4)$, enter the domain as a comma-separated list."
+  question="For the graph with points $(-3,3),(-2,2),(-1,0),(0,-1),(2,-2),(4,-4)$, enter the domain as a comma-separated list."
   answer="-3,-2,-1,0,2,4"
   answerMode="unordered"
   answerDisplay="$-3,-2,-1,0,2,4$"
@@ -211,9 +211,10 @@ $\{-2,-1,3,4,5\}$. Notice that while $-2$ repeats, it is only listed once.
 >}}
 
 {{< fillin
-  question="For the source graph with points $(-3,0),(-3,5),(-3,-6),(-1,-2),(1,2),(4,-4)$, enter the range as a comma-separated list in the order shown in the Answer Key."
-  answer="-6,0,5,-2,2,-4"
-  answerDisplay="$-6,0,5,-2,2,-4$"
+  question="For the graph with points $(-3,0),(-3,5),(-3,-6),(-1,-2),(1,2),(4,-4)$, enter the range as a comma-separated list."
+  answer="-6,-4,-2,0,2,5"
+  answerMode="unordered"
+  answerDisplay="$-6,-4,-2,0,2,5$"
   hint="List the $y$-coordinates, writing repeated values only once."
 >}}
 
@@ -294,7 +295,7 @@ function.
 798\text{-}367\text{-}8541\}$.
 
 {{< multiplechoice
-  question="The source mapping pairs NBC with three programs, HGTV with three programs, and HBO with three programs. Is the relation a function?"
+  question="A mapping pairs NBC with three programs, HGTV with three programs, and HBO with three programs. Is the relation a function?"
   answer="No"
   hint="Trace the arrow from the named input to the one output paired with it."
 >}}
@@ -303,7 +304,7 @@ Yes
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="In the source phone-number mapping, Neal, Krystal, Kelvin, George, Christa, and Mike are each paired with exactly one number. Is the relation a function?"
+  question="In a phone-number mapping, Neal, Krystal, Kelvin, George, Christa, and Mike are each paired with exactly one number. Is the relation a function?"
   answer="Yes"
   hint="Trace the arrow from the named input to the one output paired with it."
 >}}

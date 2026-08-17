@@ -394,7 +394,7 @@ The $y$-intercept is $(0,-8)$.
   answer="-3, \frac{5}{6}"
   answerMode="unordered"
   answerDisplay="$-3, \tfrac{5}{6}$"
-  hint="Set the function equal to zero and factor $(3x-?)(2x+?)$."
+  hint="Set the function equal to zero and factor it as $(6x+?)(x+?)$, then set each factor equal to zero."
 >}}
 
 ## Solve applications modeled by polynomial equations

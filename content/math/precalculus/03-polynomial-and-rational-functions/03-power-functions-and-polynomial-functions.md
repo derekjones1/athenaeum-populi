@@ -102,14 +102,23 @@ powers because they can be written as $f(x)=x^{1/2}$ or $f(x)=x^{1/3}$.
 
 {{< multiplechoice
   question="Which of the following functions is a power function? $f(x)=2x^2\cdot 4x^3$, $g(x)=-x^5+5x^3-4x$, or $h(x)=\tfrac{2x^5-1}{3x^2+4}$"
-  answer="$f(x)$, because it combines into the single term $8x^4$"
+  answer="$f(x)$, because it combines into the single term $8x^5$"
   hint="Combine $f$ into a single term first, then check whether each function is one term with a variable raised to a fixed power."
 >}}
-$f(x)$, because it combines into the single term $8x^4$
+$f(x)$, because it combines into the single term $8x^5$
 $g(x)$, because it already has a variable base
 $h(x)$, because the numerator has a variable raised to a power
 None of them are power functions
 {{< /multiplechoice >}}
+
+{{< callout type="info" >}}
+  **Source note.** The source module’s Try It justifies this answer with
+  “$f(x)=8x^4$”. Multiplying $2x^2$ by $4x^3$ adds the exponents,
+  so the single term is $8x^5$: at $x=2$ the product is $2(4)\cdot4(8)=256$,
+  which is $8x^5$ and not $8x^4=128$. This page writes $8x^5$. The
+  conclusion the solution reaches — that $f$ is the only power function of
+  the three — is unchanged.
+{{< /callout >}}
 
 ## Identifying end behavior of power functions
 
@@ -984,4 +993,4 @@ power/polynomial/neither classifications, two pure-power end-behavior
 judgements, a general odd-degree end-behavior judgement, two
 degree-and-leading-coefficient pairs (four fill-ins), and an
 end-behavior-to-degree-and-coefficient conclusion — into 12 interactive
-components in a closing Practice block, one group per objective.</small>
+components in a closing Practice block, one group per objective. One correction: where the source's Try It justifies its answer with “$f(x)=8x^4$”, this page writes $8x^5$, since $2x^2\cdot4x^3=8x^{2+3}$; the conclusion the solution reaches — that $f$ is the only power function of the three — is unchanged.</small>

@@ -1906,7 +1906,7 @@ yes
   question="Graph $y = 3x - 1$ by placing two points on the line."
   ariaLabel="A blank coordinate grid from −7 to 7 on both axes, with tick marks every 2 units."
   answerDisplay="$y = 3x - 1$"
-  hint="Make a table of solutions: when $x = 0$, $y = -1$; when $x = 1$, $y = 2$. Plot those two points and the grader will draw the line through them."
+  hint="Make a table of solutions: when $x = 0$, $y = -1$; when $x = 1$, $y = 2$. Plot those two points — the line through them is the graph."
 >}}
 {"answer":{"slope":3,"intercept":-1},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
 {{< /graphplot >}}

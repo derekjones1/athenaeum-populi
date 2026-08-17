@@ -406,7 +406,7 @@ $[80,\infty)$.
   question="A wolf population is growing exponentially. In 2011, 129 wolves were counted. By 2013, the population had reached 236 wolves. What two points, in the form $(t,\text{population})$ with $t$ measured in years after 2011, can be used to derive an exponential equation modeling this situation? Enter both, in order of increasing $t$, separated by a comma."
   answer="(0,129),(2,236)"
   answerDisplay="$(0,129)$ and $(2,236)$"
-  hint="Let $t$ be years after 2011; the first count gives the initial value and the second is six years... actually two years later."
+  hint="Let $t$ be years after 2011; the first count gives the initial value, and the second count comes two years later."
 >}}
 
 {{< fillin
