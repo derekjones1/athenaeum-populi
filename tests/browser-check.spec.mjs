@@ -353,6 +353,68 @@ test('a graph-plot line is graded through the keyboard path', async ({ page }) =
   expect(await card.evaluate((el) => el.contains(document.activeElement))).toBe(true);
 });
 
+test('a points-mode graph-plot grades a five-point set with partial credit', async ({ page }) => {
+  // The authored plot-the-points Try It for f(x) = 2^(x−1) + 3 in precalculus
+  // 4.2: five targets at the named inputs x = 0…4, on a snap-0.5 grid (two of
+  // the outputs are half-units). Selected by its answer config, the way the
+  // line-mode test selects by answer, so reordering the page cannot silently
+  // retarget it.
+  await gotoBuiltPage(
+    page,
+    '/math/precalculus/04-exponential-and-logarithmic-functions/02-graphs-of-exponential-functions/',
+  );
+  const card = page.locator('graph-plot[data-config*="points"]');
+  await expect(card).toHaveCount(1);
+  await waitForUpgrade(card, (el) => Boolean(el.g) && typeof el.buildGraph === 'function');
+  await expect
+    .poll(async () => card.evaluate((el) => JSON.stringify(el.answer.points)))
+    .toBe(JSON.stringify([[0, 3.5], [1, 4], [2, 5], [3, 7], [4, 11]]));
+  await expect(card.locator('.ap-graphplot-instructions'))
+    .toHaveText('Place all 5 points asked for in the question.');
+  await card.scrollIntoViewIfNeeded();
+
+  const addPoint = card.getByRole('button', { name: 'Add point' });
+  const check = card.getByRole('button', { name: 'Check' });
+  for (let i = 0; i < 5; i += 1) await addPoint.click();
+  await expect.poll(async () => card.evaluate((el) => el.pts.length)).toBe(5);
+  // The answer's length is the cap: a sixth point must be refused.
+  await expect(addPoint).toBeDisabled();
+
+  const moveTo = async (index, target) => {
+    const handle = card.locator('circle[role="button"]').nth(index);
+    await handle.focus();
+    for (let guard = 0; guard < 60; guard += 1) {
+      const at = await card.evaluate((el, i) => el.pts[i], index);
+      if (at[0] === target[0] && at[1] === target[1]) return;
+      if (at[0] < target[0]) await page.keyboard.press('ArrowRight');
+      else if (at[0] > target[0]) await page.keyboard.press('ArrowLeft');
+      else if (at[1] < target[1]) await page.keyboard.press('ArrowUp');
+      else await page.keyboard.press('ArrowDown');
+    }
+    throw new Error(`point ${index} never reached ${target}`);
+  };
+
+  // Four points right, the fifth at (4, 10.5) instead of (4, 11): partial
+  // credit that names the count, not a bare "incorrect".
+  const targets = [[0, 3.5], [1, 4], [2, 5], [3, 7], [4, 10.5]];
+  for (let i = 0; i < targets.length; i += 1) await moveTo(i, targets[i]);
+  await check.click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('pointsPartial');
+  await expect(card.locator('.ap-fillin-feedback'))
+    .toHaveText('4 of the 5 points are placed correctly — adjust the others.');
+
+  // Fix the fifth point; the full set now matches (order-agnosticism itself
+  // is unit-tested in check-graph.test.mjs).
+  await moveTo(4, [4, 11]);
+  await check.click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('correct');
+  await expect(card.locator('.ap-fillin-feedback')).toHaveText(/^Correct\b/);
+});
+
 test('a correct Enter-key submission keeps focus inside the exercise', async ({ page }) => {
   await gotoBuiltPage(page, '/math/prealgebra/09-math-models-and-geometry/07-solve-a-formula-for-a-specific-variable/');
 

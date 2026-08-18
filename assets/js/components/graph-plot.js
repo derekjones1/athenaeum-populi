@@ -2,7 +2,8 @@
  * <graph-plot> — framework-free "graph it yourself" exercise.
  * The student places or drags points; the component rebuilds the object those
  * points determine (via buildGraph) and grades the OBJECT (checkGraphPlot),
- * with diagnostic feedback. Geometry + grader load lazily from the graphplot
+ * with diagnostic feedback. In `points` mode the placed set IS the object:
+ * the answer lists up to 12 target points and every one must be placed. Geometry + grader load lazily from the graphplot
  * engine (no MathLive).
  *
  * Config arrives as JSON in a data-config attribute: { answer, grid }.
@@ -28,7 +29,15 @@ const COLOR = {
   systemPartial: 'var(--ap-warning, #9a6700)',
   vertexRight: 'var(--ap-warning, #9a6700)',
   shapeRight: 'var(--ap-warning, #9a6700)',
+  pointsPartial: 'var(--ap-warning, #9a6700)',
+  notCollinear: 'var(--ap-warning, #9a6700)',
 };
+// Instruction sentences spell counts out ("three points"), matching the prose
+// register of the fixed strings below. plotPoints is capped at 12, so the
+// list is complete.
+const COUNT_WORDS = [, , 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
+// `points` mode phrases its instructions from the answer's point count, so it
+// lives in _instructionsText/_message rather than these fixed maps.
 const INSTRUCTIONS = {
   line: 'Place two points on the line.',
   system: 'Place two points on each line — the first two make one line, the next two the other.',
@@ -59,7 +68,9 @@ class GraphPlotElement extends HTMLElement {
     this.ariaLabel = this.dataset.ariaLabel || '';
     this.snap = cfg.snap;
     this.mode = cfg.mode;
-    this.maxPoints = this.mode === 'system' ? 4 : 2;
+    this.maxPoints = this.mode === 'system' ? 4
+      : this.mode === 'points' ? this.answer.points.length
+        : this.mode === 'line' ? (this.answer.plotPoints ?? 2) : 2;
     this.xMin = cfg.xMin; this.xMax = cfg.xMax;
     this.yMin = cfg.yMin; this.yMax = cfg.yMax;
     this.pts = [];
@@ -80,7 +91,7 @@ class GraphPlotElement extends HTMLElement {
   _buildShell() {
     const instr = document.createElement('p');
     instr.className = 'ap-graphplot-instructions';
-    instr.textContent = INSTRUCTIONS[this.mode];
+    instr.textContent = this._instructionsText();
     // The same sentence was also concatenated into the SVG's aria-label, so a
     // screen reader read the instructions twice — once as visible prose and
     // again as part of the figure's name. Reference the prose instead.
@@ -135,6 +146,18 @@ class GraphPlotElement extends HTMLElement {
     }
   }
 
+  _instructionsText() {
+    if (this.mode === 'points') {
+      return this.maxPoints === 1
+        ? 'Place the point asked for in the question.'
+        : `Place all ${this.maxPoints} points asked for in the question.`;
+    }
+    if (this.mode === 'line' && this.maxPoints > 2) {
+      return `Place ${COUNT_WORDS[this.maxPoints]} points on the line.`;
+    }
+    return INSTRUCTIONS[this.mode];
+  }
+
   _btn(label, onClick) {
     const b = document.createElement('button');
     b.type = 'button';
@@ -160,6 +183,7 @@ class GraphPlotElement extends HTMLElement {
       const eng = await import(graphplotEngineUrl);
       this.buildGraph = eng.buildGraph;
       this.checkGraphPlot = eng.checkGraphPlot;
+      this.correctPointCount = eng.correctPointCount;
 
       this.svg.addEventListener('pointerdown', (e) => this._onDown(e));
       this.svg.addEventListener('pointermove', (e) => this._onMove(e));
@@ -201,7 +225,15 @@ class GraphPlotElement extends HTMLElement {
         const a = (p[1] - v[1]) / (p[0] - v[0]) ** 2;
         quadratics.push({ a, b: -2 * a * v[0], c: a * v[0] * v[0] + v[1] });
       }
-    } else {
+    } else if (this.mode === 'line') {
+      // One line only, previewed through the first two points — with
+      // plotPoints > 2 the later points are dots on (or off) that line, never
+      // the start of a second line.
+      const [p, q] = this.pts;
+      if (p && q && (p[0] !== q[0] || p[1] !== q[1])) {
+        lines.push(p[0] === q[0] ? { x: p[0] } : { through: [p, q] });
+      }
+    } else if (this.mode === 'system') {
       for (let i = 0; i + 1 < this.pts.length; i += 2) {
         const [p, q] = [this.pts[i], this.pts[i + 1]];
         if (p && q && (p[0] !== q[0] || p[1] !== q[1])) {
@@ -361,6 +393,18 @@ class GraphPlotElement extends HTMLElement {
   }
 
   _message(status) {
+    if (status === 'needMore' && this.mode === 'points') {
+      return this.maxPoints === 1
+        ? 'Place the point on the grid first.'
+        : `Place all ${this.maxPoints} points on the grid first.`;
+    }
+    if (status === 'needMore' && this.mode === 'line' && this.maxPoints > 2) {
+      return `Place ${COUNT_WORDS[this.maxPoints]} different points on the grid first.`;
+    }
+    if (status === 'pointsPartial') {
+      const n = this.correctPointCount(this.pts, this.answer.points);
+      return `${n} of the ${this.maxPoints} points ${n === 1 ? 'is' : 'are'} placed correctly — adjust the others.`;
+    }
     return {
       needMore: NEED_MORE[this.mode],
       incorrect: 'Not quite — adjust your points and try again.',
@@ -369,6 +413,7 @@ class GraphPlotElement extends HTMLElement {
       systemPartial: 'One of your lines is correct — adjust the other.',
       vertexRight: 'The vertex is right — check how the parabola opens (move your second point).',
       shapeRight: 'The shape is right — move the vertex.',
+      notCollinear: 'Your points do not all lie on one straight line — line them up first.',
     }[status] || '';
   }
 }

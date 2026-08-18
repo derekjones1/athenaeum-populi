@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { checkGraphPlot, quadraticVertex } from './check-graph.mjs';
+import { checkGraphPlot, correctPointCount, quadraticVertex } from './check-graph.mjs';
 import { buildGraph, buildNumberLine, toSvgString } from './graph-core.mjs';
 import { findFreeGridPoint, parseGraphPlotConfig } from './graph-plot-config.mjs';
 
@@ -64,6 +64,39 @@ const cases = [
   // second point directly above vertex determines nothing
   [[[2, -1], [2, 3]], { quadratic: { a: 1, b: -4, c: 3 } }, 'needMore'],
   [[[2, -1]], { quadratic: { a: 1, b: -4, c: 3 } }, 'needMore'],
+
+  // --- LINE mode with plotPoints -----------------------------------------
+  // "plot three points on y = 2x + 1" — ANY three points on the line pass
+  [[[0, 1], [1, 3], [2, 5]], { slope: 2, intercept: 1, plotPoints: 3 }, 'correct'],
+  [[[-1, -1], [3, 7], [1, 3]], { slope: 2, intercept: 1, plotPoints: 3 }, 'correct'],
+  // three collinear points on the WRONG line keep the line diagnostics
+  [[[0, 2], [1, 4], [2, 6]], { slope: 2, intercept: 1, plotPoints: 3 }, 'slopeRight'],
+  [[[0, 1], [1, 4], [2, 7]], { slope: 2, intercept: 1, plotPoints: 3 }, 'interceptRight'],
+  // two on the line, one off it: no single line exists to grade
+  [[[0, 1], [1, 3], [2, 6]], { slope: 2, intercept: 1, plotPoints: 3 }, 'notCollinear'],
+  // vertical target with three points
+  [[[3, -2], [3, 0], [3, 5]], { x: 3, plotPoints: 3 }, 'correct'],
+  [[[3, -2], [3, 0], [4, 5]], { x: 3, plotPoints: 3 }, 'notCollinear'],
+  // not enough yet, and a drag-created duplicate is "need more", not wrong
+  [[[0, 1], [1, 3]], { slope: 2, intercept: 1, plotPoints: 3 }, 'needMore'],
+  [[[0, 1], [1, 3], [1, 3]], { slope: 2, intercept: 1, plotPoints: 3 }, 'needMore'],
+
+  // --- POINTS mode ------------------------------------------------------
+  // the five standard points of y = x², placed in a different order
+  [[[0, 0], [1, 1], [-1, 1], [2, 4], [-2, 4]],
+    { points: [[-2, 4], [-1, 1], [0, 0], [1, 1], [2, 4]] }, 'correct'],
+  // four of five right
+  [[[0, 0], [1, 1], [-1, 1], [2, 4], [-2, 3]],
+    { points: [[-2, 4], [-1, 1], [0, 0], [1, 1], [2, 4]] }, 'pointsPartial'],
+  // none right
+  [[[3, 3], [4, 4], [5, 5], [6, 6], [7, 7]],
+    { points: [[-2, 4], [-1, 1], [0, 0], [1, 1], [2, 4]] }, 'incorrect'],
+  // not enough points yet
+  [[[0, 0], [1, 1]],
+    { points: [[-2, 4], [-1, 1], [0, 0], [1, 1], [2, 4]] }, 'needMore'],
+  // a single-point answer ("plot the point (3, −2)")
+  [[[3, -2]], { points: [[3, -2]] }, 'correct'],
+  [[[-2, 3]], { points: [[3, -2]] }, 'incorrect'],
 ];
 
 let n = 0;
@@ -75,6 +108,12 @@ for (const [pts, answer, expected] of cases) {
   );
   n++;
 }
+
+assert.equal(
+  correctPointCount([[0, 0], [1, 1], [9, 9]], [[1, 1], [0, 0], [2, 4]]),
+  2,
+  'correctPointCount counts matched targets, order-agnostic',
+);
 
 assert.deepEqual(quadraticVertex({ a: 1, b: -4, c: 3 }), [2, -1]);
 const [h0, k0] = quadraticVertex({ a: -2 });
@@ -133,6 +172,22 @@ assert.equal(
   null,
   'a full grid reports no free point',
 );
+// A valid points answer parses into points mode, including snap-fraction
+// targets when the snap allows them.
+assert.equal(
+  parseGraphPlotConfig('{"answer":{"points":[[-2,4],[-1,1],[0,0],[1,1],[2,4]]},"grid":{}}', 1).mode,
+  'points',
+);
+assert.equal(
+  parseGraphPlotConfig('{"answer":{"points":[[1.5,2]]},"grid":{}}', 0.5).mode,
+  'points',
+);
+assert.equal(
+  parseGraphPlotConfig('{"answer":{"slope":2,"intercept":1,"plotPoints":3},"grid":{}}', 1).mode,
+  'line',
+);
+
+const thirteen = JSON.stringify(Array.from({ length: 13 }, (_, i) => [i - 6, 0]));
 for (const [raw, snap, pattern] of [
   ['{', 1, /valid JSON/],
   ['{"answer":{"slope":1},"grid":{"xMin":2,"xMax":1}}', 1, /minimum/],
@@ -140,6 +195,18 @@ for (const [raw, snap, pattern] of [
   ['{"answer":{"quadratic":{"a":0}},"grid":{}}', 1, /nonzero/],
   ['{"answer":{"x":1,"slope":2},"grid":{}}', 1, /exactly one/],
   ['{"answer":{"slope":1},"grid":{"xMin":0,"xMax":1,"xGridStep":0.00001}}', 1, /too many/],
+  ['{"answer":{"points":[]},"grid":{}}', 1, /non-empty/],
+  ['{"answer":{"points":[[0,0],[1]]},"grid":{}}', 1, /pair of finite numbers/],
+  ['{"answer":{"points":[[0,0],[1,1],[0,0]]},"grid":{}}', 1, /same point/],
+  ['{"answer":{"points":[[0,9]]},"grid":{}}', 1, /outside the grid/],
+  ['{"answer":{"points":[[0.5,0]]},"grid":{}}', 1, /not reachable/],
+  ['{"answer":{"points":[[0,0]],"slope":1},"grid":{}}', 1, /exactly one/],
+  [`{"answer":{"points":${thirteen}},"grid":{}}`, 1, /at most 12/],
+  ['{"answer":{"slope":2,"plotPoints":1},"grid":{}}', 1, /between 2 and 12/],
+  ['{"answer":{"slope":2,"plotPoints":13},"grid":{}}', 1, /between 2 and 12/],
+  ['{"answer":{"slope":2,"plotPoints":2.5},"grid":{}}', 1, /between 2 and 12/],
+  ['{"answer":{"quadratic":{"a":1},"plotPoints":3},"grid":{}}', 1, /only to a line/],
+  ['{"answer":{"system":[{"slope":1,"plotPoints":3},{"slope":2}]},"grid":{}}', 1, /does not support plotPoints/],
 ]) {
   assert.throws(() => parseGraphPlotConfig(raw, snap), pattern);
 }

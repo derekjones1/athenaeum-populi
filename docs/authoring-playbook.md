@@ -498,7 +498,19 @@ exercise. Per page:
 ```
 
 `answer` shapes: `{slope,intercept}`, `{x}`, `{y}`, `{system:[…]}`,
-`{quadratic:{a,b,c}}`.
+`{quadratic:{a,b,c}}`, `{points:[[x,y],…]}`. A `points` answer lists 1–12
+distinct targets (5 is the typical precalculus table size); the learner must
+place every one, in any order, and each target must sit inside the grid
+bounds and on the snap lattice or validation rejects the config. Partial
+credit feedback reports how many are placed correctly.
+
+A line answer may add `plotPoints: N` (2–12), e.g.
+`{"slope": 2, "intercept": -1, "plotPoints": 3}` for "plot three points on
+the line": the learner places N distinct points of their own choosing and
+all of them must lie on the line. Use this — not fixed `points` targets —
+when the question leaves the choice of points to the learner; use `points`
+when the question names the x-values. `plotPoints` exists only on a lone
+line answer, never on system members or quadratics.
 
 GraphPlot configuration is validated during `npm test`: grid bounds and steps
 must be finite, minimums must be below maximums, snap/grid/tick steps must be
@@ -897,10 +909,14 @@ coterminal check. Since August 16, 2026 `checkAnswer` spells the mark out as
 names one representative and only that one grades correct, so say which the
 question wants ("the coterminal angle between $0^\circ$ and $360^\circ$").
 
-`{{< graphplot >}}` grades three answer shapes only — a line, a system of two
-lines, and a quadratic. Any other curve (exponential, logarithmic, sinusoid,
-conic, polar) needs a static inline SVG figure with a `fillin` or
-`multiplechoice` question about it, not an interactive plot.
+`{{< graphplot >}}` grades four answer shapes only — a line, a system of two
+lines, a quadratic, and a set of 1–12 points (`{"points": [[…],…]}`,
+order-agnostic). The points form covers "graph by plotting points" exercises
+for any function — name the x-values in the question and list the table's
+points as the answer — but only the placed points are graded, never the curve
+through them. A curve that must be judged as a curve (exponential,
+logarithmic, sinusoid, conic, polar) still needs a static figure with a
+`fillin` or `multiplechoice` question about it, not an interactive plot.
 
 ## 4. Verify (the workflow)
 

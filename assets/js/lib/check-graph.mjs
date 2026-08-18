@@ -7,9 +7,14 @@
  * Answer forms (the GraphPlot shortcode passes these as JSON):
  *   { slope, intercept }            y = slope·x + intercept
  *   { y: b } / { x: a }             horizontal / vertical line
+ *   …any line answer may add plotPoints: N (2–12, default 2) — the student
+ *   must place N distinct points and ALL of them must lie on the line;
+ *   which points they choose is free
  *   { system: [<line>, <line>] }    two lines (4 points; order-agnostic)
  *   { quadratic: { a, b?, c? } }    parabola y = ax² + bx + c
  *                                   (student places vertex, then one point)
+ *   { points: [[x, y], …] }         a set of 1–12 points the student must
+ *                                   place, any order ("plot the points…")
  *
  * Points snap to the grid, so computed slopes/intercepts are exact for
  * lattice-reachable answers; EPS only absorbs float noise.
@@ -23,6 +28,8 @@
  *   'systemPartial'   system: exactly one of the two lines matches
  *   'vertexRight'     parabola: vertex matches, opening (a) doesn't
  *   'shapeRight'      parabola: a matches, vertex doesn't
+ *   'pointsPartial'   points: some but not all of the set is placed right
+ *   'notCollinear'    line with plotPoints > 2: the points make no single line
  */
 
 // Constants only — check-graph grades in the browser with no MathLive and no
@@ -62,6 +69,17 @@ export function quadraticVertex({ a, b = 0, c = 0 }) {
 
 const distinct = (p, q) => p && q && (p[0] !== q[0] || p[1] !== q[1]);
 
+/**
+ * How many answer points have a matching placed point. Both sets are distinct
+ * (the component refuses duplicate placements; the config parser refuses
+ * duplicate targets), so counting per-target is a true 1:1 matching. Exported
+ * for the component's "3 of 5 points are placed correctly" feedback.
+ */
+export function correctPointCount(pts, targets) {
+  const placed = pts.filter(Boolean);
+  return targets.filter((t) => placed.some((p) => near(p[0], t[0]) && near(p[1], t[1]))).length;
+}
+
 export function checkGraphPlot(pts, answer) {
   if (answer.system) {
     if (pts.length < 4 || !distinct(pts[0], pts[1]) || !distinct(pts[2], pts[3])) {
@@ -77,6 +95,13 @@ export function checkGraphPlot(pts, answer) {
       best = Math.max(best, n);
     }
     return best === 2 ? 'correct' : best === 1 ? 'systemPartial' : 'incorrect';
+  }
+
+  if (answer.points) {
+    if (pts.filter(Boolean).length < answer.points.length) return 'needMore';
+    const matched = correctPointCount(pts, answer.points);
+    return matched === answer.points.length ? 'correct'
+      : matched > 0 ? 'pointsPartial' : 'incorrect';
   }
 
   if (answer.quadratic) {
@@ -95,6 +120,20 @@ export function checkGraphPlot(pts, answer) {
     return vOk && aOk ? 'correct' : vOk ? 'vertexRight' : aOk ? 'shapeRight' : 'incorrect';
   }
 
-  if (pts.length < 2 || !distinct(pts[0], pts[1])) return 'needMore';
-  return gradeLine(lineOf(pts[0], pts[1]), normLine(answer));
+  const placed = pts.filter(Boolean);
+  const required = answer.plotPoints ?? 2;
+  if (placed.length < required) return 'needMore';
+  for (let i = 0; i < placed.length; i += 1) {
+    for (let j = i + 1; j < placed.length; j += 1) {
+      if (!distinct(placed[i], placed[j])) return 'needMore';
+    }
+  }
+  const s = lineOf(placed[0], placed[1]);
+  if (placed.length > 2) {
+    // The first two points name a candidate line; every remaining point must
+    // sit on it, or there is no single line to grade against the answer.
+    const onS = (p) => (s.x !== undefined ? near(p[0], s.x) : near(p[1], s.m * p[0] + s.b));
+    if (!placed.every(onS)) return 'notCollinear';
+  }
+  return gradeLine(s, normLine(answer));
 }

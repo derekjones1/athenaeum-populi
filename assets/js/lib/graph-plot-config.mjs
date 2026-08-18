@@ -1,10 +1,40 @@
 import { GRAPH_PLOT_RENDER_DEFAULTS } from './graph-core.mjs';
+import { GEOMETRY_EPSILON } from './geometry-constants.mjs';
 
 const finite = (value) => typeof value === 'number' && Number.isFinite(value);
+
+// A readability ceiling, not an engine limit: past a dozen handles the grid is
+// crowded enough that dragging and checking stop being instructive. Typical
+// precalculus point-plotting exercises ask for about five.
+export const MAX_ANSWER_POINTS = 12;
+
+function validatePoints(points) {
+  if (!Array.isArray(points) || points.length === 0) {
+    throw new Error('A points answer must be a non-empty array of [x, y] pairs');
+  }
+  if (points.length > MAX_ANSWER_POINTS) {
+    throw new Error(`A points answer supports at most ${MAX_ANSWER_POINTS} points`);
+  }
+  points.forEach((point, index) => {
+    if (!Array.isArray(point) || point.length !== 2 || !point.every(finite)) {
+      throw new Error(`Answer point ${index + 1} must be an [x, y] pair of finite numbers`);
+    }
+  });
+  for (let i = 0; i < points.length; i += 1) {
+    for (let j = i + 1; j < points.length; j += 1) {
+      if (points[i][0] === points[j][0] && points[i][1] === points[j][1]) {
+        throw new Error(`Answer points ${i + 1} and ${j + 1} are the same point`);
+      }
+    }
+  }
+}
 
 function validateLine(line, where) {
   if (!line || typeof line !== 'object' || Array.isArray(line)) {
     throw new Error(`${where} must be an object`);
+  }
+  if (where !== 'Line answer' && line.plotPoints !== undefined) {
+    throw new Error(`${where} does not support plotPoints`);
   }
   const forms = ['x', 'y', 'slope'].filter((name) => line[name] !== undefined);
   if (forms.length !== 1) throw new Error(`${where} needs exactly one of x, y, or slope`);
@@ -47,6 +77,7 @@ export function parseGraphPlotConfig(raw, snapRaw = 1) {
   const answerForms = [
     answer.system !== undefined,
     answer.quadratic !== undefined,
+    answer.points !== undefined,
     answer.x !== undefined || answer.y !== undefined || answer.slope !== undefined,
   ].filter(Boolean).length;
   if (answerForms !== 1) throw new Error('Graph answer must use exactly one answer form');
@@ -64,8 +95,19 @@ export function parseGraphPlotConfig(raw, snapRaw = 1) {
       throw new Error('Quadratic answer needs finite a, b, and c values with a nonzero a');
     }
     mode = 'quadratic';
+  } else if (answer.points !== undefined) {
+    validatePoints(answer.points);
+    mode = 'points';
   } else {
     validateLine(answer, 'Line answer');
+    if (answer.plotPoints !== undefined
+      && (!Number.isInteger(answer.plotPoints)
+        || answer.plotPoints < 2 || answer.plotPoints > MAX_ANSWER_POINTS)) {
+      throw new Error(`plotPoints must be an integer between 2 and ${MAX_ANSWER_POINTS}`);
+    }
+  }
+  if (mode !== 'line' && answer.plotPoints !== undefined) {
+    throw new Error('plotPoints applies only to a line answer');
   }
 
   const authoredGrid = config.grid ?? {};
@@ -103,6 +145,22 @@ export function parseGraphPlotConfig(raw, snapRaw = 1) {
   const columns = Math.floor((xMax - xMin) / snap) + 2;
   const rows = Math.floor((yMax - yMin) / snap) + 2;
   if (columns * rows > 100_000) throw new Error('Graph snap creates too many selectable grid points');
+
+  if (mode === 'points') {
+    // Every target must be a point the student can actually reach: inside the
+    // grid bounds and on the snap lattice. An unreachable target ships an
+    // unwinnable exercise, so it fails here (and in npm test, which parses
+    // every authored config through this function).
+    const onSnap = (v) => Math.abs(v - Math.round(v / snap) * snap) < GEOMETRY_EPSILON;
+    answer.points.forEach(([x, y], index) => {
+      if (x < xMin || x > xMax || y < yMin || y > yMax) {
+        throw new Error(`Answer point ${index + 1} lies outside the grid bounds`);
+      }
+      if (!onSnap(x) || !onSnap(y)) {
+        throw new Error(`Answer point ${index + 1} is not reachable with snap ${snap}`);
+      }
+    });
+  }
 
   // `grid` carries the resolved bounds too, so a caller can spread it straight
   // into buildGraph as the whole render config.

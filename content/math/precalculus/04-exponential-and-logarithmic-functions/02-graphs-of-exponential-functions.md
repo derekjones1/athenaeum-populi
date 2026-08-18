@@ -280,8 +280,18 @@ Shift the graph of $f(x)=b^x$ left 1 unit and down 3 units.
 The domain is $(-\infty,\infty)$; the range is $(-3,\infty)$; the horizontal
 asymptote is $y=-3$.
 
+{{< graphplot
+  question="Graph $f(x)=2^{x-1}+3$ following the same steps, by plotting the points with $x=0$, $1$, $2$, $3$, and $4$."
+  answerDisplay="The points $(0,3.5)$, $(1,4)$, $(2,5)$, $(3,7)$, and $(4,11)$"
+  ariaLabel="A blank coordinate grid running from −4 to 6 horizontally and from −1 to 12 vertically."
+  hint="The graph of $y=2^x$ shifts right 1 unit and up 3 units, so evaluate $f$ at each listed input; for example, $f(0)=2^{-1}+3=3.5$."
+  snap="0.5"
+>}}
+{"answer": {"points": [[0, 3.5], [1, 4], [2, 5], [3, 7], [4, 11]]}, "grid": {"xMin": -4, "xMax": 6, "yMin": -1, "yMax": 12}}
+{{< /graphplot >}}
+
 {{< fillin
-  question="Graph $f(x)=2^{x-1}+3$ following the same steps. What is its range? Write your answer in interval notation."
+  question="What is the range of that same function, $f(x)=2^{x-1}+3$? Write your answer in interval notation."
   answer="(3,\infty)"
   answerDisplay="$(3,\infty)$"
   hint="Identify $d$ from the form $b^{x+c}+d$, then the range is $(d,\infty)$."
@@ -772,13 +782,14 @@ and $h(x)=2^{-x}$ against $f(x)=2^x$; the reflected curve
 $g(x)=-\left(\tfrac{1}{4}\right)^x$ of Example 5; and the unlabeled Practice
 graph of $y=-2^x+3$. Omitted the section's Media link to an external
 graphing-calculator resource, which carries no additional mathematics.
-Converted every "Try It" into interactive fill-in or multiple-choice
-components with instant feedback; where a Try It asked to "sketch" or
-"graph" a curve the engine cannot grade (every exponential in this section),
-the response mode instead asks for the domain, range, asymptote, or a
-derived equation that the source's own solution states in words — the
-sketch itself is not graded, matching every other exponential/logarithmic
-curve in this book. After the first full domain/range/asymptote drill
+Converted every "Try It" into interactive components with instant feedback;
+the shifted-curve Try It $f(x)=2^{x-1}+3$ is graded as a plot-the-points
+graph exercise at the five named inputs $x=0$ through $4$ (its outputs land
+on a half-unit grid), while the other Try Its that ask to "sketch" or
+"graph" an exponential — whose graphs offer fewer than five grid-reachable
+points — instead ask for the domain, range, asymptote, or a derived
+equation that the source's own solution states in words, with the curve
+itself not graded. After the first full domain/range/asymptote drill
 (Try It 1), later Try Its omit repeating the domain, which is $(-\infty,
 \infty)$ for every function in this section and so carries no new
 information once established; each still preserves every quantity whose

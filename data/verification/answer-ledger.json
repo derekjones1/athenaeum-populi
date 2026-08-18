@@ -1484,9 +1484,6 @@
   "0ec5795275c94c42": {
    "verdict": "ok"
   },
-  "0edb4ba9fa3282b1": {
-   "verdict": "ok"
-  },
   "0edc59877dc9bbdf": {
    "verdict": "ok"
   },
@@ -4144,6 +4141,10 @@
   },
   "2c6c9ce925e9aea4": {
    "verdict": "ok"
+  },
+  "2c7185703caa2f7e": {
+   "verdict": "ok",
+   "note": "Re-derived: the reciprocal squared function 1/x^2 shifted right 3 and down 4 is f(x)=1/(x-3)^2-4, undefined at x=3, so the vertical asymptote is x=3. Wording reconciled to the source Try It (m49351 says 'reciprocal squared'; the page had dropped 'squared'); answer unchanged."
   },
   "2c769b11eeaab6ee": {
    "verdict": "ok"
@@ -8159,6 +8160,10 @@
   "59a39d59cc3978ba": {
    "verdict": "ok"
   },
+  "59a82df1da969f00": {
+   "verdict": "ok",
+   "note": "Re-derived: as x approaches +/-infinity, 1/(x-3)^2 approaches 0, so f(x)=1/(x-3)^2-4 approaches -4; horizontal asymptote y=-4. Hint reconciled to 'reciprocal squared'; answer unchanged."
+  },
   "59ac533e496ede58": {
    "verdict": "ok"
   },
@@ -8646,6 +8651,10 @@
   },
   "5f7dc30c7104c840": {
    "verdict": "ok"
+  },
+  "5f7e4da1231ed3e1": {
+   "verdict": "ok",
+   "note": "Re-derived: 2^(x-1)>0 for all x, so f(x)=2^(x-1)+3>3 with infimum 3 not attained; range (3,infinity). Matches source answer 'the range is (3,∞)'. Question reworded from the pre-graphplot combined form; answer unchanged."
   },
   "5f8b390515691d4e": {
    "verdict": "ok"
@@ -10552,6 +10561,10 @@
   },
   "75e051f15fba03c9": {
    "verdict": "ok"
+  },
+  "75e9741e3ea6d3d4": {
+   "verdict": "ok",
+   "note": "Re-derived: f(x)=-(3/4)x+6 has slope -0.75, intercept 6; on the snap-1 grid [-8,10]x[-8,8] the line's only reachable lattice points are f(0)=6, f(4)=3, f(8)=0, so plotPoints:3 is exactly satisfiable and matches the source solution's three marked points (0,6),(4,3),(8,0)."
   },
   "75f6a11f7a48bd6f": {
    "verdict": "ok"
@@ -17105,6 +17118,10 @@
   "c050b61db781a74b": {
    "verdict": "ok"
   },
+  "c0759b20852deb7a": {
+   "verdict": "ok",
+   "note": "Re-derived each target: f(x)=2^(x-1)+3 gives f(0)=2^-1+3=3.5, f(1)=2^0+3=4, f(2)=2+3=5, f(3)=4+3=7, f(4)=8+3=11; all five on the 0.5 snap lattice and inside [-4,6]x[-1,12]. Matches source Try It (m49362) 'Graph f(x)=2^(x-1)+3'."
+  },
   "c0871c6f9d9b6879": {
    "verdict": "ok"
   },
@@ -17967,10 +17984,6 @@
   "ca4b38ddefe04d15": {
    "verdict": "ok"
   },
-  "ca50d96b51e88a76": {
-   "verdict": "ok",
-   "note": "Right-shift-3 moves reciprocal's x=0 asymptote to x=3; matches CNXML Try It 2 (answerForm=solved:x added after replay flagged the bare printed '3')."
-  },
   "ca5d507805f38a5b": {
    "verdict": "ok"
   },
@@ -18461,10 +18474,6 @@
   "d081433d042aaee4": {
    "verdict": "ok",
    "note": "(x^2+2x-3)/(x^2-1) = (x+3)(x-1)/[(x-1)(x+1)] reduces to (x+3)/(x+1); VA at x=-1; matches CNXML source answer."
-  },
-  "d085a1029edf55a0": {
-   "verdict": "ok",
-   "note": "f(x)=b^{x+c}+d with d=3, so range is (d,\\infty)=(3,\\infty); matches CNXML's own d=3 case worked earlier in section."
   },
   "d08b8b8b845c75d1": {
    "verdict": "ok"
@@ -19565,10 +19574,6 @@
   "de78440cfddb9f78": {
    "verdict": "ok"
   },
-  "de7c6f8e207fd599": {
-   "verdict": "ok",
-   "note": "Down-shift-4 moves reciprocal's y=0 asymptote to y=-4; matches CNXML Try It 2."
-  },
   "de8c0e928f97cd25": {
    "verdict": "ok"
   },
@@ -19960,6 +19965,10 @@
   },
   "e2eca41c5ed91349": {
    "verdict": "ok"
+  },
+  "e2f3aa405396aef0": {
+   "verdict": "ok",
+   "note": "Re-derived each target: f(x)=log2(x)+2 gives f(1/2)=-1+2=1, f(1)=0+2=2, f(2)=1+2=3, f(4)=2+2=4, f(8)=3+2=5; all five on the 0.5 snap lattice and inside [-2,9]x[-1,7]. Matches source Try It (m49364) 'Sketch a graph of f(x)=log_2(x)+2 alongside its parent function'."
   },
   "e2f428d7031b58df": {
    "verdict": "ok"

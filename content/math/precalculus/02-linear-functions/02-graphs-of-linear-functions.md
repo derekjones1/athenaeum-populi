@@ -99,7 +99,7 @@ change in the equation for the function.
   ariaLabel="A blank coordinate grid running from −8 to 10 horizontally and from −8 to 8 vertically."
   hint="Choose multiples of 4 as input values so every output is a whole number: $f(0)=6$, $f(4)=3$, and $f(8)=0$."
 >}}
-{"answer":{"slope":-0.75,"intercept":6},"grid":{"xMin":-8,"xMax":10,"yMin":-8,"yMax":8}}
+{"answer":{"slope":-0.75,"intercept":6,"plotPoints":3},"grid":{"xMin":-8,"xMax":10,"yMin":-8,"yMax":8}}
 {{< /graphplot >}}
 
 ## Graphing a function using the y-intercept and slope

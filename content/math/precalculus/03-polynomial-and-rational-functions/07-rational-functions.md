@@ -220,18 +220,18 @@ $$\text{as }x\to\pm\infty,\ f(x)\to3$$
 left 2 and up 3 along with the function.
 
 {{< fillin
-  question="The reciprocal function is shifted right 3 units and down 4 units. Find the vertical asymptote of the resulting graph."
+  question="The reciprocal squared function is shifted right 3 units and down 4 units. Find the vertical asymptote of the resulting graph."
   answer="x=3"
   answerForm="solved:x"
   answerDisplay="$x=3$"
-  hint="A horizontal shift right by $h$ moves the reciprocal function's asymptote at $x=0$ to $x=h$."
+  hint="A horizontal shift right by $h$ moves the reciprocal squared function's asymptote at $x=0$ to $x=h$."
 >}}
 
 {{< fillin
   question="Find the horizontal asymptote of that same shifted graph."
   answer="y=-4"
   answerDisplay="$y=-4$"
-  hint="A vertical shift down by $k$ moves the reciprocal function's asymptote at $y=0$ to $y=-k$."
+  hint="A vertical shift down by $k$ moves the reciprocal squared function's asymptote at $y=0$ to $y=-k$."
 >}}
 
 ## Solving applied problems involving rational functions

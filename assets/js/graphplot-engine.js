@@ -5,4 +5,4 @@
  * FillIn engine: geometry + grader, NO MathLive / Compute Engine.
  */
 export { buildGraph, buildNumberLine, buildFigure } from './lib/graph-core.mjs';
-export { checkGraphPlot } from './lib/check-graph.mjs';
+export { checkGraphPlot, correctPointCount } from './lib/check-graph.mjs';
