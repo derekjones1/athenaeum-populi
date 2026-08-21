@@ -517,12 +517,12 @@ Graph using the slope intercept.
 </div>
 
 {{< graphplot
-  question="Graph the linear function $f(x)=-3x-1$ by placing two points on the line."
+  question="Graph the linear function $f(x)=-3x-1$ by placing three points on the line."
   ariaLabel="A blank coordinate grid from negative 7 to 7 on both axes."
   answerDisplay="$f(x)=-3x-1$"
   hint="Start at the $y$-intercept $(0,-1)$; the slope $-3$ means down 3, right 1."
 >}}
-{"answer":{"slope":-3,"intercept":-1},"grid":{}}
+{"answer":{"slope":-3,"intercept":-1,"plotPoints":3},"grid":{}}
 {{< /graphplot >}}
 
 {{< fillin

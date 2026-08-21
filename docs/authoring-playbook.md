@@ -389,6 +389,16 @@ itself, so a malformed one still self-grades, and a correct `answerDisplay`
 `10^{-3}`. The lint rejects both an unbraced multi-digit exponent and an
 unbraced negative one.
 
+**Never write `\\` in a math span outside a `\begin{…}` environment.** KaTeX
+reads it as a row break and then sets whatever follows as literal letters, so
+`$x=-\\tfrac{b}{2a}$` renders a line break and the word "tfrac". It does not
+throw, so `verify-section`'s KaTeX pass calls the page clean and only a reader
+notices. This is what a shell or Python heredoc that ate one backslash leaves
+behind — intermediate algebra 9.6 acquired one exactly that way. Inside
+`\begin{array}`, `{aligned}`, `{cases}` or `{matrix}` a `\\` is the row
+separator and is correct; the lint fires only on spans that open no
+environment.
+
 Every retained source “Try It” or check must become a real `fillin`,
 `multiplechoice`, or `graphplot` component. Never ship a static prompt followed
 by `<details><summary>Check answer</summary>` or plain answer prose. Choose the
@@ -450,7 +460,27 @@ measured-metrics/auto-fit treatment:
 Every option spec needs an `ariaLabel` — it is the option button's
 accessible name, and for a graph question it must describe the graph
 without giving the answer away in words a screen-reader user would get for
-free. The lint validates every spec option exactly like an `apfigure` body
+free. The line between those is **describe, never evaluate**. Naming
+coordinates is fine and is the house convention ("A line falling from left to
+right, crossing the x-axis at −4 and the y-axis at −2"), because the learner
+still has to do the mathematics to know which coordinates are the right ones —
+that is equitable access, not a leak. What leaks is a label that judges its own
+option: "…with the coordinates reversed", "…with the y-coordinate's sign
+flipped", "…with the vertex plotted well to the right of its actual peak".
+Those announce *this is the wrong one*, and a screen-reader user answers by
+elimination without reading a graph. Write what is drawn and let the reader
+judge it.
+
+**Every distractor must differ from the correct option in the drawn objects,
+never only in a marked point.** An option carrying the identical curves with
+the dot moved off the intersection cannot be labelled honestly at all — any
+truthful description of it names the answer — and it is weak besides. Vary the
+slope sign, the intercept sign, the steepness, the opening direction, or make
+the pair parallel; then mark each option's own true crossing or vertex, and pin
+every shared feature identically across options so exactly one thing varies.
+Watch for a system whose two lines share a $y$-intercept: every
+intercept-preserving distractor then crosses at the same point, so the
+intercepts are what you have to vary. The lint validates every spec option exactly like an `apfigure` body
 (it must parse, carry the `ariaLabel`, and build through the real engine),
 and the figure layout gate covers option figures automatically. Prerendered
 `<svg>` option blocks (the pre-spec form) remain valid and keep their
@@ -488,33 +518,278 @@ exercise. Per page:
 
 ```
 {{</* graphplot
-  question="Graph the line $y = -4x$ by placing two points on it."
+  question="Graph the line $y = -4x$ by placing three points on it."
   answerDisplay="$y = -4x$"
   ariaLabel="A blank grid from −7 to 7 on both axes."
   hint="The line passes through the origin."
 */>}}
-{"answer": {"slope": -4, "intercept": 0}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
+{"answer": {"slope": -4, "intercept": 0, "plotPoints": 3}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
 {{</* /graphplot */>}}
 ```
 
 `answer` shapes: `{slope,intercept}`, `{x}`, `{y}`, `{system:[…]}`,
-`{quadratic:{a,b,c}}`, `{points:[[x,y],…]}`. A `points` answer lists 1–12
+`{asymptotes:[…]}`, `{quadratic:{a,b,c}}`, `{points:[[x,y],…]}`. A `points`
+answer lists 1–12
 distinct targets (5 is the typical precalculus table size); the learner must
 place every one, in any order, and each target must sit inside the grid
 bounds and on the snap lattice or validation rejects the config. Partial
 credit feedback reports how many are placed correctly.
 
-A line answer may add `plotPoints: N` (2–12), e.g.
+An `asymptotes` answer lists one to three distinct member lines — each
+`{x}`, `{y}`, or `{slope,intercept}`, so vertical, horizontal, and slant
+asymptotes all grade — e.g.
+`{"asymptotes": [{"x": 2}, {"x": -3}, {"y": 4}]}` for "place the
+asymptotes of $f$". The learner draws each member with two points
+(consecutive pairs make one line each, previewed dashed); the placed set is
+graded order-agnostic with partial-credit feedback ("1 of the 2 asymptotes
+is placed correctly"). Every member must have at least two snap-lattice
+points inside the grid or validation rejects the config — the same
+drawability guard `system` members carry — so keep asymptote equations
+lattice-friendly (an answer of $x=-\tfrac{2}{5}$ needs a fillin, not a
+graphplot, unless the snap is that fine). Use this form to convert
+"find the vertical/horizontal asymptotes" prompts from fillin or multiple
+choice into graphing whenever the equations are lattice-reachable; it has
+no `plotPoints` and is exempt from the three-point rule below because two
+points per member is already `2×N`.
+
+A line or quadratic answer may add `plotPoints: N` (2–12), e.g.
 `{"slope": 2, "intercept": -1, "plotPoints": 3}` for "plot three points on
 the line": the learner places N distinct points of their own choosing and
-all of them must lie on the line. Use this — not fixed `points` targets —
-when the question leaves the choice of points to the learner; use `points`
-when the question names the x-values. `plotPoints` exists only on a lone
-line answer, never on system members or quadratics.
+all of them must lie on the line (for a quadratic, the vertex first, then
+N−1 more points all on one parabola). Use this — not fixed `points`
+targets — when the question leaves the choice of points to the learner;
+use `points` when the question names the x-values. `plotPoints` never
+exists on system members.
+
+**Author `plotPoints: 3` (or more) on every line and quadratic answer** —
+the lint rejects a line or quadratic graphplot that asks for only two
+placed points, because a two-point line (or vertex-plus-one parabola) can
+be reproduced from the answer display without engaging the graph. Pick the
+grid so at least N snap-lattice points actually sit on the answer object;
+validation counts them and rejects an unwinnable ask, and a quadratic's
+vertex must itself be on the snap lattice inside the grid.
+
+**Leave slack above `plotPoints` — validation now requires it.** A grid
+admitting exactly N reachable lattice points is winnable but has a single
+solution set: the learner has no choice of points, which is the freedom
+`plotPoints` exists to give. Fractional slopes are where this bites: on
+−7..7, $y = \tfrac14 x + 2$ reaches only $(-4,1)$, $(0,2)$, $(4,3)$.
+Doubling the grid is the usual fix (that line reaches seven points on
+−14..14) and costs nothing but tick density. This was a counting rule the
+author was asked to surface in the handoff, and eight exercises shipped
+tight anyway; the reachable count is now a gate, so a line or quadratic
+whose reachable points merely *equal* `plotPoints` fails `npm run lint`
+with the widen-or-lower-plotPoints fix named. Widen rather than lower where
+you can — and do not widen past the section's established convention
+without saying you did.
+
+Reachability is measured against what the component can actually produce:
+snapping rounds to the lattice and *then* clamps to the bounds, so each
+bound is reachable whether or not it sits on the lattice (every drag past
+the edge lands there). `snapToGrid`, `reachableValues`, and the validator
+share that one model — do not reintroduce a second one.
 
 GraphPlot configuration is validated during `npm test`: grid bounds and steps
 must be finite, minimums must be below maximums, snap/grid/tick steps must be
 positive, and the answer shape must match one of the supported forms.
+
+**Converting an MC/fillin exercise to a graphplot (the conversion
+ledger).** `data/verification/graphplot-conversion-ledger.json` is the
+adjudicated queue of multiple-choice and fillin exercises that should
+become graphplots — each `convert` entry names the answer form (`mode`) and
+sketches the answer/grid (`proposal`), each `keep` entry says why the
+exercise stays as it is, so a conversion session never starts by re-reading
+the corpus. To convert:
+
+1. `npm run graphable:list -- --verdict convert` — pick entries (the
+   current file:line travels with each one).
+2. Treat the `proposal` as a hypothesis: re-derive the answer independently
+   from the prompt (run the arithmetic), pick grid/snap so validation's
+   reachability guards pass, and keep the pedagogical ask intact — reword
+   the question only as far as "…and place it/them on the grid" requires.
+   Two proposal fields are known-unreliable and must not be copied:
+   - A proposal that says to author a fractional slope "in the engine's
+     exact-fraction spelling" is **wrong**. The config is JSON and
+     `parseGraphPlotConfig` requires `typeof value === 'number'`, so
+     $\tfrac13$ is `0.3333333333333333` and $-\tfrac{14}{3}$ is
+     `-4.666666666666667`. The grader's `1e-9` tolerance absorbs the float
+     error; the lattice points a learner can actually place divide exactly.
+   - The proposed `grid` is a default, not a reading of the page. **Follow
+     the section's existing graphplot convention** (`grep -n '"answer"'` the
+     file) — the proposals lean on −6..6, where $y = 2.5x - 5$ reaches
+     exactly three lattice points and `plotPoints: 3` leaves the learner no
+     choice at all.
+3. **Read the converted exercise against the page immediately above it.**
+   A fill-in that asked for one intermediate value ("let $y = 0$, solve for
+   $x$") can sit under the worked example of the *same* equation without
+   harm; the graphplot that replaces it cannot, because the example's
+   three-point solution table now IS the answer, and the exercise becomes
+   transcription. When that happens, check the pinned CNXML for the Try It
+   that actually follows the example — a page that substituted the example's
+   own equation for the source Try It has a fidelity defect the conversion
+   merely exposed, and restoring the source equation fixes both.
+
+   **The worse variant: the exercise's own answer graph, pre-rendered above
+   it.** Intermediate algebra 9.6 carried it eight times — a prompt sentence
+   ("Graph $f(x)=\ldots$ by using its properties."), then a
+   `<div class="ap-figure">` holding the solved graph with the vertex named in
+   its `aria-label`, then a fill-in asking for that vertex. The static answer
+   is *why* the fill-in only ever asked for one scalar, and a screen-reader
+   user was handed the answer verbatim. Delete the figure and replace the whole
+   prompt + figure + fill-in triad with one blank-grid `graphplot`. Check the
+   CNXML first: on 9.6 it carried no figure there at all, which is what
+   identified the answer graph as a local artifact rather than a
+   transcription. `grep -n 'aria-label="The graph of' <file>` finds the shape.
+4. **Every section that has graphing questions keeps at least one of them a
+   graph-recognition multiple choice — decide it per section, and never
+   escalate it.** Recognizing a correct graph among plausible wrong ones is
+   a distinct skill from producing one, and the ledger adjudicates one
+   exercise at a time, so it cannot see what a section is left holding. Count
+   the section's graphing questions — the `graphplot`s it already has plus
+   every entry the queue wants converted, Practice block included — and
+   apply the rule mechanically:
+
+   - **More than one graphing question in the section:** keep exactly one as
+     a `mode="graph"` multiple choice and convert every other, the Practice
+     block's included. Keep the one with the most diagnostic distractors —
+     reversed coordinates, an inverted slope sign, a swapped intercept, a
+     vertex off by a unit. If none of the section's candidates is already a
+     recognition MC, author the keeper as one (spec-first options, per
+     "Multiple choice (graph mode)" above); a converted exercise turned back
+     into a recognition MC counts.
+   - **Exactly one graphing question in the section:** convert it. A lone
+     item is worth more as production practice than as recognition, and the
+     section is not the right unit to protect a skill it barely covers.
+
+   The count is per section, not per chapter or per book. Audit the whole
+   corpus against it with:
+
+   ```sh
+   for f in $(grep -rl 'graphplot\|mode="graph"' --include='*.md' content/math/ \
+               | grep -v '/knowledge-check-'); do
+     gp=$(grep -c '{{< graphplot' $f); mc=$(grep -c 'mode="graph"' $f)
+     tot=$((gp+mc))
+     if { [ $tot -gt 1 ] && [ $mc -ne 1 ]; } || { [ $tot -eq 1 ] && [ $mc -ne 0 ]; }
+       then echo "VIOLATION gp=$gp mc=$mc $f"; fi
+   done
+   ```
+
+   **`knowledge-check-XX-YY.md` pages are outside this *counting* rule**, for
+   the same reason they are exempt from the 2–3 question cap: they are
+   cumulative assessments, not sections, and the section is the unit the rule
+   is about. They are **not** outside conversion. Until August 18, 2026 the
+   conversion ledger said otherwise — every graph-topic entry on a knowledge
+   check carried `keep` with "knowledge-check page — automatic keep" — and that
+   blanket adjudication is retired. A knowledge check gets the same pass a
+   section does, with its own classification, described below.
+
+   **Classifying a knowledge check's graph questions.** A cumulative
+   assessment mixes three kinds of graph-related item, and each has exactly
+   one treatment:
+
+   - **Identification** — the skill is recognizing or classifying a graph
+     ("which description gives the graph of…", "identify the type of graph",
+     "which way does it open"). It stays a `multiplechoice`, but its options
+     become rendered figures, spec-first per "Multiple choice (graph mode)"
+     above, instead of prose descriptions. Each distractor figure depicts
+     exactly the misconception its prose distractor described: do not invent
+     new distractors, drop options, or reorder them.
+   - **Disguised graphing** — the item is a `multiplechoice` or `fillin` only
+     because a drawn graph could not be graded, and the learner has to
+     construct the graph mentally to answer. The tell is in the source: an
+     instruction that says "graph", and an Answer Key that prints a figure
+     inside the exercise's `<solution>`. Convert it to a `graphplot`.
+   - **Already right** — everything else. That includes graph-*reading* items
+     whose figure the source prints inside `<problem>` (a given, not a leaked
+     answer), value asks the source poses as values, and anything no answer
+     form can grade — a shaded half-plane above all.
+
+   Three rules govern what the buckets do not settle:
+
+   - **Match the source section's interaction level.** If the section a
+     knowledge-check item points back to now asks learners to graph, the item
+     should too; where that section carries no `graphplot` at all, do not
+     introduce one on the knowledge check.
+   - **A rendered figure can leak the answer to a NEIGHBOURING item.** An
+     identification question's option figures print the object's vertex,
+     intercepts and asymptotes, and its `ariaLabel` names them in words — so a
+     property fill-in about the same object, anywhere near it, stops being
+     derivable and becomes readable. This is the pre-rendered-answer-graph
+     hazard one item over, and nothing gates it. Read the items on both sides
+     before settling the option specs, and put the identification question
+     *after* the property questions about the same object.
+   - **Say what the conversion costs.** A drawn graph takes far longer than an
+     MC click, and a knowledge check is already long. Converting several items
+     on one page is a length decision — report it in the handoff rather than
+     making it silently.
+
+   Prealgebra, Elementary Algebra and Intermediate Algebra are compliant.
+   Precalculus is not yet, because its conversion queue has not been worked;
+   bring each section into line as its conversion lands, and promote this
+   check to a lint error once the last book is clean — it is mechanical, and
+   nothing but the outstanding backlog is keeping it out of
+   `tools/lints.mjs`.
+
+   **One adjudicated exception, and the reason the promotion is not automatic:**
+   intermediate algebra §3.4 (Graph Linear Inequalities in Two Variables)
+   holds three `graphplot`s and *two* `mode="graph"` MCs. Neither MC can
+   become a graphplot — their distractors encode dashed-versus-solid boundary
+   style and which side of the line is shaded, and there is no answer form
+   that grades shading — so "convert every other" has nothing to convert, and
+   demoting one to a prose-option MC would trade a rendered-graph item for a
+   worse one purely to satisfy a counter. The rule as written assumes every
+   surplus recognition MC *could* have been a graphplot. Before this check
+   becomes a lint error, that clause needs restating (the natural form: a
+   section keeps at least one recognition MC, and converts every recognition
+   MC a graphplot answer form can express).
+5. **Sweep for exercises the conversion strands but the queue never named.**
+   A workaround is often a *pair* — "what is the $x$-coordinate of the
+   intersection?" followed by "…and the $y$-coordinate?" — and the ledger
+   adjudicates only the first. Grep the neighbourhood for `For the same`
+   and for a hint that cites a value no exercise on the page produces any
+   more; that hint is the tell. Delete the residue rather than leaving a
+   fill-in whose hint refers to a deleted answer.
+6. Do not restate what the component already prints. `<graph-plot>` emits
+   its own instruction line ("Place two points on each line — the first two
+   make one line, the next two the other"), so a question ending in the same
+   sentence renders it twice.
+7. The rewritten exercise is a re-read exercise: `node
+   tools/answer-ledger.mjs prune content` drops the stranded old record,
+   then record the new verdict per §4.
+8. `node tools/graphplot-conversion.mjs prune content` — the conversion
+   strands the queue entry; pruning it is how the queue burns down.
+9. If a converted fillin is named in `SOUND_COINCIDENCES`
+   (`tools/verify-replay.mjs`), delete that entry — its exercise no longer
+   exists, and the allowlist test fails with "the question prefix must name
+   exactly ONE fillin, matched 0". This is the common case, not an edge one:
+   "graph $x = a$, what is the $x$-value…" fillins are exempted *because*
+   the prompt states its own answer, which is the same workaround that put
+   them in the conversion queue.
+10. If the section keeps a provenance footer describing its component
+    choices, reconcile it; then `npm run verify-section -- <page>` and `npm
+    test`. Converting a fillin moves the replay floor, so end the session
+    with `npm run baseline:update`. Merging two exercises into one graphplot
+    also lowers the exercise-count floor, which the tool refuses without
+    `--allow-decrease` — account for the drop before passing it (removed
+    fillins' scalar printed spans should bracket the replay delta).
+11. Run `npm run ci`, not just `npm test`: adding graphplots *above* an
+    existing one renumbers the page, and any Playwright spec that reached
+    its card by position silently retargets. Select a `graph-plot` in a test
+    by its authored config —
+    ``graph-plot[data-config*='"slope":3,"intercept":-1']`` — never by
+    `.nth(n)`.
+
+New graph-topic exercises land in the queue automatically: `npm run
+graphable:candidates` surfaces any graph-topic MC/fillin with no ledger
+entry (three deliberately conservative signals — MC with rendered-graph
+options, graph/sketch/plot prompts, asymptote prompts; widen
+`isGraphTopic` in `tools/graphplot-conversion.mjs` to grow the queue), and
+`npm run graphable:merge <dir>` folds a reading pass's verdicts in with the
+answer ledger's conflict-refusing contract. The decision it refuses to let
+file order settle is the verdict *and* the `mode`: two passes that both say
+`convert` but disagree on the answer form have read the exercise
+differently. `note` and `proposal` are prose (the proposal is a hypothesis
+the converter re-derives), so differing wording merges, first file winning.
 
 **Callouts / cards** (Hextra shortcodes):
 
@@ -563,6 +838,18 @@ engine cannot know. For the rare point label that must sit a few pixels off
 its chosen side to clear a curve, `labelNudge: [dx, dy]` (px) shifts it
 without giving up placement scoring; a `texts` entry remains the full
 escape hatch and is never moved.
+
+**The grid bounds are not a clip.** The fit pass sizes the viewBox around
+everything drawn, so an object bigger than the stated window enlarges the
+figure rather than being cut off at its edge: a `circles` entry with
+`ry: 49` on a −12..12 grid renders a 388×1376 SVG. This bites hardest on a
+`mode="graph"` option set, where every option must share one window — an
+oversized distractor drags the whole set into a frame that leaves the
+correct option a few pixels tall. Size the window to the largest object any
+option draws, and if that makes the correct one unreadable, say so rather
+than shipping four unreadable figures. (`quadratics`, `curves` and
+`hyperbolas` do clip, so only the closed families — `circles` above all —
+have this behavior.)
 
 **Only `lines`, `segments`, `points`, and `regions` can carry a label** in a
 `graph` spec — a region's label rides on the boundary line the engine draws
@@ -726,6 +1013,12 @@ approximation.** `buildGraph` has exact primitives: `lines`, `quadratics`
 $[a_0,a_1,\dots]$ for any degree, so a fitted quartic or quintic renders
 from its exact formula), `rationals` (a `num`/`den` coefficient pair, whose
 branches split at each pole on their own), `circles` (a real SVG ellipse),
+`hyperbolas` (the standard-form conic: `{ at:[h,k], a, b }` draws
+$\frac{(x-h)^2}{a^2}-\frac{(y-k)^2}{b^2}=1$ opening left/right from vertices
+$(h\pm a,k)$, and `vertical: true` draws
+$\frac{(y-k)^2}{a^2}-\frac{(x-h)^2}{b^2}=1$ opening up/down from $(h,k\pm a)$;
+the dashed asymptotes and central rectangle of the textbook construction are
+their own objects — author them as dashed `lines` and `segments`),
 `polylines`
 (straight joins — required for corners such as $y=\lvert x\rvert$), and
 `curves` with kinds `sqrt`, `cbrt`, `reciprocal`, `reciprocal-squared`,

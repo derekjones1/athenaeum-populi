@@ -420,15 +420,17 @@ Shift the graph $f(x)=x^2$ down 3.
   ariaLabel="A blank coordinate grid from negative 6 to 6 on the x-axis and negative 7 to 8 on the y-axis."
   hint="Start with the vertex of $y=x^2$ and shift it vertically."
 >}}
-{"answer":{"quadratic":{"a":1,"b":0,"c":-5}},"grid":{"xMin":-6,"xMax":6,"yMin":-7,"yMax":8}}
+{"answer":{"quadratic":{"a":1,"b":0,"c":-5},"plotPoints":3},"grid":{"xMin":-6,"xMax":6,"yMin":-7,"yMax":8}}
 {{< /graphplot >}}
 
-{{< fillin
-  question="Graph $f(x)=x^2+7$ using a vertical shift. Enter the $y$-coordinate of the vertex."
-  answer="7"
-  answerDisplay="$7$"
-  hint="The vertex of $y=x^2$ is $(0,0)$."
+{{< graphplot
+  question="Graph $f(x)=x^2+7$ using a vertical shift."
+  answerDisplay="$f(x)=x^2+7$"
+  ariaLabel="A blank coordinate grid from negative 4 to 4 on the x-axis and 0 to 12 on the y-axis."
+  hint="Start with the vertex of $y=x^2$ and shift it vertically."
 >}}
+{"answer":{"quadratic":{"a":1,"b":0,"c":7},"plotPoints":3},"grid":{"xMin":-4,"xMax":4,"yMin":0,"yMax":12}}
+{{< /graphplot >}}
 
 ## Graph Quadratic Functions of the Form $f(x)=(x-h)^2$
 
@@ -729,19 +731,23 @@ Shift the graph $f(x)=x^2$ to the right 5 units.
 </svg>
 </div>
 
-{{< fillin
-  question="Graph $f(x)=(x-4)^2$ using a horizontal shift. Enter the $x$-coordinate of the vertex."
-  answer="4"
-  answerDisplay="$4$"
-  hint="Compare $(x-4)^2$ with $(x-h)^2$."
+{{< graphplot
+  question="Graph $f(x)=(x-4)^2$ using a horizontal shift."
+  answerDisplay="$f(x)=(x-4)^2$"
+  ariaLabel="A blank coordinate grid from 0 to 8 on the x-axis and negative 2 to 8 on the y-axis."
+  hint="Compare $(x-4)^2$ with $(x-h)^2$ to find the horizontal shift."
 >}}
+{"answer":{"quadratic":{"a":1,"b":-8,"c":16},"plotPoints":3},"grid":{"xMin":0,"xMax":8,"yMin":-2,"yMax":8}}
+{{< /graphplot >}}
 
-{{< fillin
-  question="Graph $f(x)=(x+6)^2$ using a horizontal shift. Enter the $x$-coordinate of the vertex."
-  answer="-6"
-  answerDisplay="$-6$"
-  hint="Rewrite $x+6$ as $x-(-6)$."
+{{< graphplot
+  question="Graph $f(x)=(x+6)^2$ using a horizontal shift."
+  answerDisplay="$f(x)=(x+6)^2$"
+  ariaLabel="A blank coordinate grid from negative 10 to negative 2 on the x-axis and negative 2 to 8 on the y-axis."
+  hint="Rewrite $x+6$ as $x-(-6)$ to find the horizontal shift."
 >}}
+{"answer":{"quadratic":{"a":1,"b":12,"c":36},"plotPoints":3},"grid":{"xMin":-10,"xMax":-2,"yMin":-2,"yMax":8}}
+{{< /graphplot >}}
 
 Now that we know the effect of the constants $h$ and $k$, we will graph a
 quadratic function of the form $f(x)=(x-h)^2+k$ by first drawing the basic
@@ -856,19 +862,23 @@ $f(x)=(x+1)^2-2$, shift the graph $f(x)=(x+1)^2$ down 2 units.
 </svg>
 </div>
 
-{{< fillin
-  question="Graph $f(x)=(x+2)^2-3$ using transformations. Enter the vertex as an ordered pair."
-  answer="(-2,-3)"
-  answerDisplay="$(-2,-3)$"
-  hint="The vertex of $a(x-h)^2+k$ is $(h,k)$."
+{{< graphplot
+  question="Graph $f(x)=(x+2)^2-3$ using transformations."
+  answerDisplay="$f(x)=(x+2)^2-3$"
+  ariaLabel="A blank coordinate grid from negative 6 to 2 on the x-axis and negative 5 to 5 on the y-axis."
+  hint="The vertex of $a(x-h)^2+k$ is $(h,k)$; shift $y=x^2$ left 2 and down 3."
 >}}
+{"answer":{"quadratic":{"a":1,"b":4,"c":1},"plotPoints":3},"grid":{"xMin":-6,"xMax":2,"yMin":-5,"yMax":5}}
+{{< /graphplot >}}
 
-{{< fillin
-  question="Graph $f(x)=(x-3)^2+1$ using transformations. Enter the vertex as an ordered pair."
-  answer="(3,1)"
-  answerDisplay="$(3,1)$"
-  hint="Read $h$ and $k$ from vertex form."
+{{< graphplot
+  question="Graph $f(x)=(x-3)^2+1$ using transformations."
+  answerDisplay="$f(x)=(x-3)^2+1$"
+  ariaLabel="A blank coordinate grid from negative 1 to 7 on the x-axis and negative 1 to 9 on the y-axis."
+  hint="Read $h$ and $k$ from vertex form; shift $y=x^2$ right 3 and up 1."
 >}}
+{"answer":{"quadratic":{"a":1,"b":-6,"c":10},"plotPoints":3},"grid":{"xMin":-1,"xMax":7,"yMin":-1,"yMax":9}}
+{{< /graphplot >}}
 
 ## Graph Quadratic Functions of the Form $f(x)=ax^2$
 
@@ -1129,12 +1139,20 @@ to get the points for $g(x)=3x^2$.
 </svg>
 </div>
 
-{{< fillin
-  question="Graph $f(x)=-3x^2$. Enter the $y$-coordinate of the vertex."
-  answer="0"
-  answerDisplay="$0$"
-  hint="Multiplying the $y$-values changes the opening and width, not the vertex."
+{{< multiplechoice
+  question="Which graph shows $f(x)=-3x^2$?"
+  mode="graph"
+  answerIndex="2"
+  hint="Check whether the negative sign makes the parabola open downward, and whether $|{-3}|>1$ makes it narrower than $y=x^2$."
 >}}
+{"ariaLabel": "An upward-opening parabola with vertex (0, -3).", "xMin": -3, "xMax": 3, "yMin": -8, "yMax": 8, "tickLabels": true, "quadratics": [{"a": 1, "b": 0, "c": -3}]}
+===OPT===
+{"ariaLabel": "A narrow upward-opening parabola with vertex (0, 0).", "xMin": -3, "xMax": 3, "yMin": -8, "yMax": 8, "tickLabels": true, "quadratics": [{"a": 3, "b": 0, "c": 0}]}
+===OPT===
+{"ariaLabel": "A narrow downward-opening parabola with vertex (0, 0).", "xMin": -3, "xMax": 3, "yMin": -8, "yMax": 8, "tickLabels": true, "quadratics": [{"a": -3, "b": 0, "c": 0}]}
+===OPT===
+{"ariaLabel": "A downward-opening parabola with vertex (0, 0).", "xMin": -3, "xMax": 3, "yMin": -8, "yMax": 8, "tickLabels": true, "quadratics": [{"a": -1, "b": 0, "c": 0}]}
+{{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Graph $f(x)=2x^2$. Compared with $f(x)=x^2$, which description is correct?"
@@ -1481,10 +1499,10 @@ $f(x)=-2(x+1)^2+4$, shift the graph $f(x)=-2(x+1)^2$ up 4 units.
 {{< graphplot
   question="Graph $f(x)=-3x^2+12x-4$ by using transformations."
   answerDisplay="$f(x)=-3x^2+12x-4=-3(x-2)^2+8$"
-  ariaLabel="A blank coordinate grid from negative 3 to 7 on the x-axis and negative 3 to 10 on the y-axis."
+  ariaLabel="A blank coordinate grid from negative 3 to 7 on the x-axis and negative 5 to 10 on the y-axis."
   hint="Complete the square to locate the vertex, then use the coefficient to choose another point."
 >}}
-{"answer":{"quadratic":{"a":-3,"b":12,"c":-4}},"grid":{"xMin":-3,"xMax":7,"yMin":-3,"yMax":10}}
+{"answer":{"quadratic":{"a":-3,"b":12,"c":-4},"plotPoints":3},"grid":{"xMin":-3,"xMax":7,"yMin":-5,"yMax":10}}
 {{< /graphplot >}}
 
 {{< fillin
@@ -2111,7 +2129,7 @@ quadratic function.
   ariaLabel="A blank coordinate grid from negative 5 to 5 on the x-axis and negative 2 to 12 on the y-axis."
   hint="Start with the vertex of $y=x^2$ and shift it vertically."
 >}}
-{"answer":{"quadratic":{"a":1,"b":0,"c":3}},"grid":{"xMin":-5,"xMax":5,"yMin":-2,"yMax":12}}
+{"answer":{"quadratic":{"a":1,"b":0,"c":3},"plotPoints":3},"grid":{"xMin":-5,"xMax":5,"yMin":-2,"yMax":12}}
 {{< /graphplot >}}
 
 {{< graphplot
@@ -2120,7 +2138,7 @@ quadratic function.
   ariaLabel="A blank coordinate grid from negative 6 to 6 on the x-axis and negative 6 to 8 on the y-axis."
   hint="Start with the vertex of $y=x^2$ and shift it vertically."
 >}}
-{"answer":{"quadratic":{"a":1,"b":0,"c":-4}},"grid":{"xMin":-6,"xMax":6,"yMin":-6,"yMax":8}}
+{"answer":{"quadratic":{"a":1,"b":0,"c":-4},"plotPoints":3},"grid":{"xMin":-6,"xMax":6,"yMin":-6,"yMax":8}}
 {{< /graphplot >}}
 
 {{< fillin
@@ -2138,7 +2156,7 @@ quadratic function.
   ariaLabel="A blank coordinate grid from negative 2 to 6 on the x-axis and negative 2 to 10 on the y-axis."
   hint="Start with the vertex of $y=x^2$ and shift it horizontally."
 >}}
-{"answer":{"quadratic":{"a":1,"b":-4,"c":4}},"grid":{"xMin":-2,"xMax":6,"yMin":-2,"yMax":10}}
+{"answer":{"quadratic":{"a":1,"b":-4,"c":4},"plotPoints":3},"grid":{"xMin":-2,"xMax":6,"yMin":-2,"yMax":10}}
 {{< /graphplot >}}
 
 {{< graphplot
@@ -2147,7 +2165,7 @@ quadratic function.
   ariaLabel="A blank coordinate grid from 0 to 10 on the x-axis and negative 2 to 12 on the y-axis."
   hint="Start with the vertex of $y=x^2$ and shift it horizontally."
 >}}
-{"answer":{"quadratic":{"a":1,"b":-10,"c":25}},"grid":{"xMin":0,"xMax":10,"yMin":-2,"yMax":12}}
+{"answer":{"quadratic":{"a":1,"b":-10,"c":25},"plotPoints":3},"grid":{"xMin":0,"xMax":10,"yMin":-2,"yMax":12}}
 {{< /graphplot >}}
 
 {{< fillin
@@ -2165,7 +2183,7 @@ quadratic function.
   ariaLabel="A blank coordinate grid from negative 4 to 4 on the x-axis and negative 10 to 2 on the y-axis."
   hint="Choose a few points on $y=x^2$ and multiply the $y$-values by $-2$."
 >}}
-{"answer":{"quadratic":{"a":-2,"b":0,"c":0}},"grid":{"xMin":-4,"xMax":4,"yMin":-10,"yMax":2}}
+{"answer":{"quadratic":{"a":-2,"b":0,"c":0},"plotPoints":3},"grid":{"xMin":-4,"xMax":4,"yMin":-10,"yMax":2}}
 {{< /graphplot >}}
 
 {{< graphplot
@@ -2174,7 +2192,7 @@ quadratic function.
   ariaLabel="A blank coordinate grid from negative 6 to 6 on the x-axis and negative 2 to 8 on the y-axis."
   hint="Choose a few points on $y=x^2$ and multiply the $y$-values by $\tfrac12$."
 >}}
-{"answer":{"quadratic":{"a":0.5,"b":0,"c":0}},"grid":{"xMin":-6,"xMax":6,"yMin":-2,"yMax":8}}
+{"answer":{"quadratic":{"a":0.5,"b":0,"c":0},"plotPoints":3},"grid":{"xMin":-6,"xMax":6,"yMin":-2,"yMax":8}}
 {{< /graphplot >}}
 
 {{< multiplechoice
@@ -2194,7 +2212,7 @@ skinnier
   ariaLabel="A blank coordinate grid from negative 6 to 4 on the x-axis and negative 3 to 9 on the y-axis."
   hint="Complete the square to locate the vertex, then use the coefficient to choose another point."
 >}}
-{"answer":{"quadratic":{"a":1,"b":4,"c":3}},"grid":{"xMin":-6,"xMax":4,"yMin":-3,"yMax":9}}
+{"answer":{"quadratic":{"a":1,"b":4,"c":3},"plotPoints":3},"grid":{"xMin":-6,"xMax":4,"yMin":-3,"yMax":9}}
 {{< /graphplot >}}
 
 {{< fillin

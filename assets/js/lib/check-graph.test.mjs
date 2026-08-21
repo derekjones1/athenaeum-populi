@@ -1,7 +1,11 @@
 import assert from 'node:assert/strict';
-import { checkGraphPlot, correctPointCount, quadraticVertex } from './check-graph.mjs';
+import {
+  checkGraphPlot, correctAsymptoteCount, correctPointCount, quadraticVertex,
+} from './check-graph.mjs';
 import { buildGraph, buildNumberLine, toSvgString } from './graph-core.mjs';
-import { findFreeGridPoint, parseGraphPlotConfig } from './graph-plot-config.mjs';
+import {
+  findFreeGridPoint, parseGraphPlotConfig, reachableValues, resolveGraphPress, snapToGrid,
+} from './graph-plot-config.mjs';
 
 const cases = [
   // --- LINE mode --------------------------------------------------------
@@ -65,6 +69,21 @@ const cases = [
   [[[2, -1], [2, 3]], { quadratic: { a: 1, b: -4, c: 3 } }, 'needMore'],
   [[[2, -1]], { quadratic: { a: 1, b: -4, c: 3 } }, 'needMore'],
 
+  // --- PARABOLA mode with plotPoints -------------------------------------
+  // vertex plus two symmetric points, all on y = x² − 4x + 3
+  [[[2, -1], [0, 3], [4, 3]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'correct'],
+  [[[2, -1], [1, 0], [3, 0]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'correct'],
+  // three consistent points on the WRONG parabola keep the diagnostics
+  [[[2, -1], [4, 5], [0, 5]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'vertexRight'],
+  [[[3, -1], [1, 3], [5, 3]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'shapeRight'],
+  // third point off the parabola the first two determine: nothing to grade
+  [[[2, -1], [0, 3], [4, 2]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'notOnParabola'],
+  // a third point straight above the vertex can never be on the parabola
+  [[[2, -1], [0, 3], [2, 3]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'notOnParabola'],
+  // not enough yet, and a duplicate placement is "need more", not wrong
+  [[[2, -1], [0, 3]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'needMore'],
+  [[[2, -1], [0, 3], [0, 3]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'needMore'],
+
   // --- LINE mode with plotPoints -----------------------------------------
   // "plot three points on y = 2x + 1" — ANY three points on the line pass
   [[[0, 1], [1, 3], [2, 5]], { slope: 2, intercept: 1, plotPoints: 3 }, 'correct'],
@@ -80,6 +99,35 @@ const cases = [
   // not enough yet, and a drag-created duplicate is "need more", not wrong
   [[[0, 1], [1, 3]], { slope: 2, intercept: 1, plotPoints: 3 }, 'needMore'],
   [[[0, 1], [1, 3], [1, 3]], { slope: 2, intercept: 1, plotPoints: 3 }, 'needMore'],
+
+  // --- ASYMPTOTES mode --------------------------------------------------
+  // vertical x = 2 and horizontal y = 3, pairs in either order
+  [[[2, -5], [2, 5], [-4, 3], [4, 3]], { asymptotes: [{ x: 2 }, { y: 3 }] }, 'correct'],
+  [[[-4, 3], [4, 3], [2, -5], [2, 5]], { asymptotes: [{ x: 2 }, { y: 3 }] }, 'correct'],
+  // a horizontal member spelled as a zero-slope line still matches
+  [[[-4, 3], [4, 3], [2, -5], [2, 5]], { asymptotes: [{ x: 2 }, { slope: 0, intercept: 3 }] }, 'correct'],
+  // one of the two placed right
+  [[[2, -5], [2, 5], [-4, 4], [4, 4]], { asymptotes: [{ x: 2 }, { y: 3 }] }, 'asymptotePartial'],
+  // both pairs drawing the SAME correct line match only one target
+  [[[2, -5], [2, 5], [2, 0], [2, 3]], { asymptotes: [{ x: 2 }, { y: 3 }] }, 'asymptotePartial'],
+  // neither right
+  [[[1, -5], [1, 5], [-4, 4], [4, 4]], { asymptotes: [{ x: 2 }, { y: 3 }] }, 'incorrect'],
+  // a single vertical asymptote ("find the vertical asymptote…")
+  [[[-1, 0], [-1, 3]], { asymptotes: [{ x: -1 }] }, 'correct'],
+  [[[1, 0], [1, 3]], { asymptotes: [{ x: -1 }] }, 'incorrect'],
+  // a slant asymptote is a plain line answer member
+  [[[0, -1], [2, 1]], { asymptotes: [{ slope: 1, intercept: -1 }] }, 'correct'],
+  [[[0, 1], [2, 3]], { asymptotes: [{ slope: 1, intercept: -1 }] }, 'incorrect'],
+  // three members: two verticals and the horizontal
+  [[[2, -5], [2, 5], [-3, -5], [-3, 5], [-6, 4], [6, 4]],
+    { asymptotes: [{ x: 2 }, { x: -3 }, { y: 4 }] }, 'correct'],
+  [[[2, -5], [2, 5], [-3, -5], [-3, 5], [-6, 1], [6, 1]],
+    { asymptotes: [{ x: 2 }, { x: -3 }, { y: 4 }] }, 'asymptotePartial'],
+  // crossing asymptotes may legitimately share their intersection point
+  [[[2, 4], [2, 0], [2, 4], [-2, 4]], { asymptotes: [{ x: 2 }, { y: 4 }] }, 'correct'],
+  // not enough points, and a collapsed pair draws nothing
+  [[[2, -5], [2, 5], [-4, 3]], { asymptotes: [{ x: 2 }, { y: 3 }] }, 'needMore'],
+  [[[2, -5], [2, 5], [4, 3], [4, 3]], { asymptotes: [{ x: 2 }, { y: 3 }] }, 'needMore'],
 
   // --- POINTS mode ------------------------------------------------------
   // the five standard points of y = x², placed in a different order
@@ -113,6 +161,15 @@ assert.equal(
   correctPointCount([[0, 0], [1, 1], [9, 9]], [[1, 1], [0, 0], [2, 4]]),
   2,
   'correctPointCount counts matched targets, order-agnostic',
+);
+
+assert.equal(
+  correctAsymptoteCount(
+    [[-3, -5], [-3, 5], [-6, 1], [6, 1], [2, -5], [2, 5]],
+    [{ x: 2 }, { x: -3 }, { y: 4 }],
+  ),
+  2,
+  'correctAsymptoteCount counts matched member lines, order-agnostic',
 );
 
 assert.deepEqual(quadraticVertex({ a: 1, b: -4, c: 3 }), [2, -1]);
@@ -160,8 +217,11 @@ assert.match(serialized, /stroke-linejoin="round"/);
 assert.match(serialized, /font-weight="600"/);
 assert.doesNotMatch(serialized, /strokeLinejoin|fontWeight/);
 
+// A points answer, so the 2×2 grid is about findFreeGridPoint's behaviour on a
+// nearly-full lattice and not about the plotPoints slack rule (which such a
+// grid can never satisfy).
 const narrowConfig = parseGraphPlotConfig(
-  '{"answer":{"slope":1,"intercept":0},"grid":{"xMin":0,"xMax":1,"yMin":0,"yMax":1}}',
+  '{"answer":{"points":[[0,0]]},"grid":{"xMin":0,"xMax":1,"yMin":0,"yMax":1}}',
   1,
 );
 const firstFree = findFreeGridPoint(narrowConfig, [[1, 1]]);
@@ -186,6 +246,16 @@ assert.equal(
   parseGraphPlotConfig('{"answer":{"slope":2,"intercept":1,"plotPoints":3},"grid":{}}', 1).mode,
   'line',
 );
+// Asymptote answers: one to three member lines, any mix of vertical,
+// horizontal, and slant.
+assert.equal(
+  parseGraphPlotConfig('{"answer":{"asymptotes":[{"x":2},{"y":3}]},"grid":{}}', 1).mode,
+  'asymptotes',
+);
+assert.equal(
+  parseGraphPlotConfig('{"answer":{"asymptotes":[{"x":2},{"x":-3},{"slope":1,"intercept":-1}]},"grid":{}}', 1).mode,
+  'asymptotes',
+);
 
 const thirteen = JSON.stringify(Array.from({ length: 13 }, (_, i) => [i - 6, 0]));
 for (const [raw, snap, pattern] of [
@@ -205,9 +275,113 @@ for (const [raw, snap, pattern] of [
   ['{"answer":{"slope":2,"plotPoints":1},"grid":{}}', 1, /between 2 and 12/],
   ['{"answer":{"slope":2,"plotPoints":13},"grid":{}}', 1, /between 2 and 12/],
   ['{"answer":{"slope":2,"plotPoints":2.5},"grid":{}}', 1, /between 2 and 12/],
-  ['{"answer":{"quadratic":{"a":1},"plotPoints":3},"grid":{}}', 1, /only to a line/],
+  ['{"answer":{"points":[[0,0]],"plotPoints":3},"grid":{}}', 1, /only to a line or quadratic/],
   ['{"answer":{"system":[{"slope":1,"plotPoints":3},{"slope":2}]},"grid":{}}', 1, /does not support plotPoints/],
+  // Unwinnable exercises: fewer reachable lattice points than the ask.
+  ['{"answer":{"slope":0.3,"intercept":0.05},"grid":{}}', 1, /only 0 snap-1 point/],
+  ['{"answer":{"slope":2,"intercept":0,"plotPoints":5},"grid":{"xMin":-1,"xMax":1,"yMin":-2,"yMax":2}}', 1, /only 3 snap-1 point/],
+  ['{"answer":{"x":1.5},"grid":{}}', 1, /only 0 snap-1 point/],
+  // A quadratic whose vertex is off the snap lattice can never be matched.
+  ['{"answer":{"quadratic":{"a":1,"b":1}},"grid":{}}', 1, /vertex \(-0.5, -0.25\) is not reachable/],
+  // Asymptote answers: 1–3 distinct member lines, each drawable on the lattice.
+  ['{"answer":{"asymptotes":[]},"grid":{}}', 1, /one to three/],
+  ['{"answer":{"asymptotes":[{"x":1},{"x":2},{"x":3},{"x":4}]},"grid":{}}', 1, /one to three/],
+  ['{"answer":{"asymptotes":[{"y":3},{"slope":0,"intercept":3}]},"grid":{}}', 1, /Asymptotes 1 and 2 are the same line/],
+  ['{"answer":{"asymptotes":[{"x":2,"y":3}]},"grid":{}}', 1, /exactly one of x, y, or slope/],
+  ['{"answer":{"asymptotes":[{"x":2}],"plotPoints":3},"grid":{}}', 1, /only to a line or quadratic/],
+  ['{"answer":{"asymptotes":[{"x":2,"plotPoints":3}]},"grid":{}}', 1, /does not support plotPoints/],
+  ['{"answer":{"asymptotes":[{"x":2}],"slope":1},"grid":{}}', 1, /exactly one answer form/],
+  ['{"answer":{"asymptotes":[{"x":1.5}]},"grid":{}}', 1, /Asymptote 1 has only 0 snap-1 point/],
+  ['{"answer":{"asymptotes":[{"x":2},{"y":0.5}]},"grid":{}}', 1, /Asymptote 2 has only 0 snap-1 point/],
+  // The same drawability guard now covers system members too.
+  ['{"answer":{"system":[{"slope":1,"intercept":0.5},{"slope":2}]},"grid":{}}', 1, /System line 1 has only 0 snap-1 point/],
+  // A grid admitting EXACTLY plotPoints reachable points is winnable but
+  // forced — one admissible point set, none of the choice plotPoints exists to
+  // give. Eight exercises shipped that way while the rule lived only in the
+  // playbook as "count them and surface it in the handoff".
+  ['{"answer":{"slope":0.25,"intercept":2,"plotPoints":3},"grid":{}}', 1, /exactly 3 reachable snap-1 point/],
+  ['{"answer":{"quadratic":{"a":-3,"b":12,"c":-4},"plotPoints":3},"grid":{"xMin":-3,"xMax":7,"yMin":-3,"yMax":10}}', 1, /exactly 3 reachable snap-1 point/],
 ]) {
   assert.throws(() => parseGraphPlotConfig(raw, snap), pattern);
 }
+
+// …and the widened grids the corpus now carries do pass: seven reachable
+// points for the line, five for the parabola once f(0) = f(4) = −4 fits.
+assert.equal(
+  parseGraphPlotConfig('{"answer":{"slope":0.25,"intercept":2,"plotPoints":3},"grid":{"xMin":-14,"xMax":14,"yMin":-14,"yMax":14}}', 1).mode,
+  'line',
+);
+assert.equal(
+  parseGraphPlotConfig('{"answer":{"quadratic":{"a":-3,"b":12,"c":-4},"plotPoints":3},"grid":{"xMin":-3,"xMax":7,"yMin":-5,"yMax":10}}', 1).mode,
+  'quadratic',
+);
+
+// --- reachability follows snapToGrid, clamping included --------------------
+// Snapping rounds and only THEN clamps, so a bound that is not itself on the
+// lattice is still reachable: every drag past that edge lands on it. Modelling
+// reachability as "an exact multiple of snap" alone rejected authored targets
+// the learner can place.
+assert.deepEqual(snapToGrid([6.4, -99], { xMin: -6.5, xMax: 6.5, yMin: -6.5, yMax: 6.5, snap: 1 }), [6, -6.5]);
+assert.deepEqual(snapToGrid([9, 0], { xMin: -6.5, xMax: 6.5, yMin: -6.5, yMax: 6.5, snap: 1 }), [6.5, 0]);
+assert.deepEqual(reachableValues(-2.5, 2.5, 1), [-2.5, -2, -1, 0, 1, 2, 2.5]);
+assert.deepEqual(reachableValues(-2, 2, 0.5), [-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2]);
+assert.equal(
+  parseGraphPlotConfig('{"answer":{"points":[[6.5,0]]},"grid":{"xMin":-6.5,"xMax":6.5,"yMin":-6.5,"yMax":6.5}}', 1).mode,
+  'points',
+  'a target on a non-lattice grid edge is reachable by dragging into the edge',
+);
+assert.equal(
+  parseGraphPlotConfig('{"answer":{"x":6.5,"plotPoints":3},"grid":{"xMin":-6.5,"xMax":6.5,"yMin":-6.5,"yMax":6.5}}', 1).mode,
+  'line',
+  'and a vertical line standing on that edge is drawable',
+);
+
+// --- resolveGraphPress ----------------------------------------------------
+// A press resolves to the lattice point it SNAPS ONTO, not to whatever handle
+// falls inside a fixed radius.
+const bounds = { xMin: -6, xMax: 6, yMin: -6, yMax: 6 };
+const press = (state, at) => resolveGraphPress({ maxPoints: 4, mode: 'line', snap: 1, ...bounds, ...state }, at);
+
+// The snap-0.5 regression: the neighbouring lattice point is 0.5 away, well
+// inside the old 0.6-unit grab radius, so pressing an EMPTY neighbour grabbed
+// the placed point and dragged it there — silently moving a point the learner
+// had already put in the right place.
+assert.deepEqual(
+  press({ snap: 0.5, pts: [[0, 0]] }, [0.5, 0]),
+  { place: [0.5, 0] },
+  'an empty neighbour on a half-unit lattice takes a new point, not the neighbour',
+);
+assert.deepEqual(press({ snap: 0.5, pts: [[0, 0]] }, [0.1, 0.1]), { grab: 0 }, 'a press on the point’s own cell grabs it');
+// The snap-1 dead band: 0.57 units away diagonally was too far for the radius
+// but still snapped back onto the occupied cell, so the press did nothing.
+assert.deepEqual(press({ pts: [[0, 0]] }, [0.4, 0.4]), { grab: 0 });
+assert.deepEqual(press({ pts: [[0, 0]] }, [0.6, 0]), { place: [1, 0] });
+
+// Two crossing asymptotes legitimately share their intersection point, and
+// check-graph grades that as correct (see the case above) — so the third
+// point, which opens the second pair, may land on the first pair's cell.
+assert.deepEqual(
+  press({ mode: 'asymptotes', pts: [[0, 0], [2, 2]] }, [0, 0]),
+  { place: [0, 0] },
+  'a new PAIR may start on a point an earlier pair already holds',
+);
+assert.deepEqual(
+  press({ mode: 'asymptotes', pts: [[0, 0]] }, [0, 0]),
+  { grab: 0 },
+  'but the second point of the SAME pair must differ, so that press grabs',
+);
+assert.deepEqual(
+  press({ mode: 'line', pts: [[0, 0], [2, 2]] }, [0, 0]),
+  { grab: 0 },
+  'and every other mode grades a duplicate as needMore, so it still grabs',
+);
+// Once every point is placed nothing competes with grabbing, so a near miss
+// takes the nearest handle rather than demanding its exact cell.
+assert.deepEqual(
+  press({ maxPoints: 2, pts: [[0, 0], [4, 4]] }, [3.4, 4]),
+  { grab: 1 },
+  'a press that snaps to the free cell next door still grabs when the grid is full',
+);
+assert.equal(press({ maxPoints: 2, pts: [[0, 0], [4, 4]] }, [2, 2]), null);
+
 console.log(`check-graph: ${n} cases passed`);

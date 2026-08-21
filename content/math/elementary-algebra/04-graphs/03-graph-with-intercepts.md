@@ -615,17 +615,18 @@ A third point is $(2, 4)$.
 </svg>
 </div>
 
-{{< fillin
-  question="Graph the line using the intercepts: $x - 2y = 4$. What is the x-intercept?"
-  answer="(4,0)"
-  hint="Let $y = 0$ and solve for x."
+{{< multiplechoice
+  question="Which graph shows $x - 2y = 4$?"
+  mode="graph"
+  answerIndex="1"
+  hint="Let $y = 0$ to find where the line should cross the $x$-axis, and let $x = 0$ to find where it should cross the $y$-axis, then match those crossings to each option."
 >}}
-
-{{< fillin
-  question="Graph the line using the intercepts: $x - 2y = 4$. What is the y-intercept?"
-  answer="(0,-2)"
-  hint="Let $x = 0$ and solve for y."
->}}
+{"ariaLabel":"A line falling from left to right, crossing the x-axis at −4 and the y-axis at −2.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":-0.5,"intercept":-2}],"points":[{"at":[-4,0]},{"at":[0,-2]}]}
+===OPT===
+{"ariaLabel":"A line rising from left to right, crossing the x-axis at 4 and the y-axis at −2.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":0.5,"intercept":-2}],"points":[{"at":[4,0]},{"at":[0,-2]}]}
+===OPT===
+{"ariaLabel":"A steeper line rising from left to right, crossing the x-axis at −2 and the y-axis at 4.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":2,"intercept":4}],"points":[{"at":[-2,0]},{"at":[0,4]}]}
+{{< /multiplechoice >}}
 
 **Example.** Graph $4x - 3y = 12$ using the intercepts.
 
@@ -699,17 +700,14 @@ We list the points in the table below and show the graph.
 </svg>
 </div>
 
-{{< fillin
-  question="Graph the line using the intercepts: $5x - 2y = 10$. What is the x-intercept?"
-  answer="(2,0)"
-  hint="Let $y = 0$ and solve for x."
+{{< graphplot
+  question="Graph $5x - 2y = 10$ using the intercepts."
+  answerDisplay="$5x - 2y = 10$"
+  ariaLabel="A blank coordinate grid from −12 to 12 on both axes."
+  hint="Let $y = 0$ to find the $x$-intercept and let $x = 0$ to find the $y$-intercept, then draw the line through them."
 >}}
-
-{{< fillin
-  question="Graph the line using the intercepts: $5x - 2y = 10$. What is the y-intercept?"
-  answer="(0,-5)"
-  hint="Let $x = 0$ and solve for y."
->}}
+{"answer":{"slope":2.5,"intercept":-5,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
 
 **Example.** Graph $y = 5x$ using the intercepts.
 
@@ -786,17 +784,14 @@ Plot the three points, check that they line up, and draw the line.
 </svg>
 </div>
 
-{{< fillin
-  question="Graph using the intercepts: $y = 4x$. What is the x-intercept?"
-  answer="(0,0)"
-  hint="Let $y = 0$ and solve for x — notice both intercepts land on the same point."
+{{< graphplot
+  question="Graph $y = 4x$ using the intercepts. Since the $x$- and $y$-intercepts are the same point, plot two more points to draw the line."
+  answerDisplay="$y = 4x$"
+  ariaLabel="A blank coordinate grid from −12 to 12 on both axes."
+  hint="Both intercepts are at the origin — try $x = 1$ and $x = -1$ to find two more points."
 >}}
-
-{{< fillin
-  question="Graph using the intercepts: $y = 4x$. Give a second point on the line, using $x = 1$."
-  answer="(1,4)"
-  hint="Substitute $x = 1$ into $y = 4x$ and solve for y."
->}}
+{"answer":{"slope":4,"intercept":0,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
 
 When an equation has both $x$ and $y$ on the same side, as in $Ax + By = C$,
 finding the intercepts is often the fastest way to graph the line — but it's
@@ -1031,7 +1026,7 @@ $(0, b)$ where a line crosses the $y$-axis; it occurs when $x$ is zero.
   ariaLabel="A blank coordinate grid from −12 to 12 on both axes."
   hint="Let $y = 0$ to find the $x$-intercept and let $x = 0$ to find the $y$-intercept, then draw the line through them."
 >}}
-{"answer":{"slope":0.2,"intercept":2},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{"answer":{"slope":0.2,"intercept":2,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
 
 {{< graphplot
@@ -1040,7 +1035,7 @@ $(0, b)$ where a line crosses the $y$-axis; it occurs when $x$ is zero.
   ariaLabel="A blank coordinate grid from −12 to 12 on both axes."
   hint="Let $y = 0$ to get the $x$-intercept and let $x = 0$ to get the $y$-intercept, then draw the line through them."
 >}}
-{"answer":{"slope":1.5,"intercept":-3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{"answer":{"slope":1.5,"intercept":-3,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
 
 

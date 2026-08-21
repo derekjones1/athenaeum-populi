@@ -292,15 +292,17 @@ test('a graph-plot line is graded through the keyboard path', async ({ page }) =
     '/math/elementary-algebra/04-graphs/02-graph-linear-equations-in-two-variables/',
   );
 
-  // y = 3x - 1, on a ±12 grid at snap 1.
-  const card = page.locator('graph-plot').filter({
-    has: page.locator('.ap-graphplot-question'),
-  }).nth(0);
+  // y = 3x - 1, on a ±12 grid at snap 1. Selected by its authored config, not
+  // by position: this used to be `.nth(0)` and broke the moment the page grew
+  // graph-plots above it, pointing the keyboard path at a different answer.
+  const card = page.locator(
+    String.raw`graph-plot[data-config*='"slope":3,"intercept":-1']`,
+  ).filter({ has: page.locator('.ap-graphplot-question') });
   await expect(card).toHaveCount(1);
   await waitForUpgrade(card, (el) => Boolean(el.g) && typeof el.buildGraph === 'function');
   await expect
     .poll(async () => card.evaluate((el) => JSON.stringify(el.answer)))
-    .toBe(JSON.stringify({ slope: 3, intercept: -1 }));
+    .toBe(JSON.stringify({ slope: 3, intercept: -1, plotPoints: 3 }));
   await card.scrollIntoViewIfNeeded();
 
   const addPoint = card.getByRole('button', { name: 'Add point' });
@@ -311,7 +313,8 @@ test('a graph-plot line is graded through the keyboard path', async ({ page }) =
   // it by one snap step, and Check grades the object the points determine.
   await addPoint.click();
   await addPoint.click();
-  await expect.poll(async () => card.evaluate((el) => el.pts.length)).toBe(2);
+  await addPoint.click();
+  await expect.poll(async () => card.evaluate((el) => el.pts.length)).toBe(3);
 
   // Drive each handle from wherever it landed to a chosen lattice point, so
   // the test does not depend on findFreeGridPoint's ordering.
@@ -329,18 +332,27 @@ test('a graph-plot line is graded through the keyboard path', async ({ page }) =
     throw new Error(`point ${index} never reached ${target}`);
   };
 
-  // (0,-1) and (1,0): the intercept is right, the slope is 1 rather than 3.
-  // A diagnostic status, not a bare "incorrect" — teaching which half is right
-  // is the whole reason check-graph returns more than a boolean.
+  // (0,-1), (1,0), (2,1): collinear on y = x − 1 — the intercept is right,
+  // the slope is 1 rather than 3. A diagnostic status, not a bare
+  // "incorrect" — teaching which half is right is the whole reason
+  // check-graph returns more than a boolean.
   await moveTo(0, [1, 0]);
   await moveTo(1, [0, -1]);
+  await moveTo(2, [2, 1]);
   await check.click();
   await expect
     .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
     .toBe('interceptRight');
 
-  // Raise the first point to (1,2): slope 3 through the same intercept.
+  // Raise the first point to (1,2): the three points no longer make one line.
   await moveTo(0, [1, 2]);
+  await check.click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('notCollinear');
+
+  // Lift the third point to (2,5): slope 3 through the same intercept.
+  await moveTo(2, [2, 5]);
   await check.click();
   await expect
     .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
@@ -409,6 +421,212 @@ test('a points-mode graph-plot grades a five-point set with partial credit', asy
   // is unit-tested in check-graph.test.mjs).
   await moveTo(4, [4, 11]);
   await check.click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('correct');
+  await expect(card.locator('.ap-fillin-feedback')).toHaveText(/^Correct\b/);
+});
+
+test('a quadratic graph-plot requires vertex plus two on-parabola points', async ({ page }) => {
+  // The authored sketch exercise for f(x) = x² − 2x in precalculus 3.2:
+  // vertex (1, −1), plotPoints 3 — the learner places the vertex and then two
+  // more points that must all sit on one parabola before anything is graded.
+  await gotoBuiltPage(
+    page,
+    '/math/precalculus/03-polynomial-and-rational-functions/02-quadratic-functions/',
+  );
+  const card = page.locator('graph-plot[data-config*="quadratic"]');
+  await expect(card).toHaveCount(1);
+  await waitForUpgrade(card, (el) => Boolean(el.g) && typeof el.buildGraph === 'function');
+  await expect
+    .poll(async () => card.evaluate((el) => JSON.stringify(el.answer)))
+    .toBe(JSON.stringify({ quadratic: { a: 1, b: -2, c: 0 }, plotPoints: 3 }));
+  await expect(card.locator('.ap-graphplot-instructions'))
+    .toHaveText('Place the vertex first, then two more points on the parabola.');
+  await card.scrollIntoViewIfNeeded();
+
+  const addPoint = card.getByRole('button', { name: 'Add point' });
+  const check = card.getByRole('button', { name: 'Check' });
+  for (let i = 0; i < 3; i += 1) await addPoint.click();
+  await expect.poll(async () => card.evaluate((el) => el.pts.length)).toBe(3);
+  await expect(addPoint).toBeDisabled();
+
+  const moveTo = async (index, target) => {
+    const handle = card.locator('circle[role="button"]').nth(index);
+    await handle.focus();
+    for (let guard = 0; guard < 40; guard += 1) {
+      const at = await card.evaluate((el, i) => el.pts[i], index);
+      if (at[0] === target[0] && at[1] === target[1]) return;
+      if (at[0] < target[0]) await page.keyboard.press('ArrowRight');
+      else if (at[0] > target[0]) await page.keyboard.press('ArrowLeft');
+      else if (at[1] < target[1]) await page.keyboard.press('ArrowUp');
+      else await page.keyboard.press('ArrowDown');
+    }
+    throw new Error(`point ${index} never reached ${target}`);
+  };
+
+  // Vertex and (0,0) determine y = (x−1)² − 1; (3,0) is NOT on it, so there
+  // is no single parabola to grade — the diagnostic teaches that before any
+  // right/wrong verdict.
+  await moveTo(0, [1, -1]);
+  await moveTo(1, [0, 0]);
+  await moveTo(2, [3, 0]);
+  await check.click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('notOnParabola');
+
+  // Slide the stray point to the symmetric root (2,0): all three now sit on
+  // the answer parabola.
+  await moveTo(2, [2, 0]);
+  await check.click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('correct');
+  await expect(card.locator('.ap-fillin-feedback')).toHaveText(/^Correct\b/);
+});
+
+test('an asymptotes graph-plot grades member lines with partial credit', async ({ page }) => {
+  // The authored place-the-asymptotes Try It for f(x) = (2x−1)(2x+1) over
+  // (x−2)(x+3) in precalculus 3.7: two vertical asymptotes, x = 2 and
+  // x = −3, each drawn with its own pair of points and graded
+  // order-agnostic.
+  await gotoBuiltPage(
+    page,
+    '/math/precalculus/03-polynomial-and-rational-functions/07-rational-functions/',
+  );
+  const card = page.locator('graph-plot[data-config*="asymptotes"]');
+  await expect(card).toHaveCount(1);
+  await waitForUpgrade(card, (el) => Boolean(el.g) && typeof el.buildGraph === 'function');
+  await expect
+    .poll(async () => card.evaluate((el) => JSON.stringify(el.answer)))
+    .toBe(JSON.stringify({ asymptotes: [{ x: 2 }, { x: -3 }] }));
+  await expect(card.locator('.ap-graphplot-instructions'))
+    .toHaveText('Place two points on each asymptote — the first two make one asymptote, the next two the other.');
+  await card.scrollIntoViewIfNeeded();
+
+  const addPoint = card.getByRole('button', { name: 'Add point' });
+  const check = card.getByRole('button', { name: 'Check' });
+  for (let i = 0; i < 4; i += 1) await addPoint.click();
+  await expect.poll(async () => card.evaluate((el) => el.pts.length)).toBe(4);
+  // Two points per member is the cap: a fifth point must be refused.
+  await expect(addPoint).toBeDisabled();
+
+  const moveTo = async (index, target) => {
+    const handle = card.locator('circle[role="button"]').nth(index);
+    await handle.focus();
+    for (let guard = 0; guard < 40; guard += 1) {
+      const at = await card.evaluate((el, i) => el.pts[i], index);
+      if (at[0] === target[0] && at[1] === target[1]) return;
+      if (at[0] < target[0]) await page.keyboard.press('ArrowRight');
+      else if (at[0] > target[0]) await page.keyboard.press('ArrowLeft');
+      else if (at[1] < target[1]) await page.keyboard.press('ArrowUp');
+      else await page.keyboard.press('ArrowDown');
+    }
+    throw new Error(`point ${index} never reached ${target}`);
+  };
+
+  // First pair on x = 2 (right), second pair on x = 3 (wrong): partial
+  // credit that names the count, not a bare "incorrect".
+  await moveTo(0, [2, -5]);
+  await moveTo(1, [2, 5]);
+  await moveTo(2, [3, -5]);
+  await moveTo(3, [3, 5]);
+  // The preview lines draw DASHED — the guide-ink convention every static
+  // asymptote figure in the book uses.
+  expect(await card.locator('.ap-graphplot-svg line[stroke-dasharray]').count())
+    .toBeGreaterThanOrEqual(2);
+  await check.click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('asymptotePartial');
+  await expect(card.locator('.ap-fillin-feedback'))
+    .toHaveText('1 of the 2 asymptotes is placed correctly — adjust the other.');
+
+  // Slide the second pair to x = −3: both members now match, in the
+  // opposite order from the authored list.
+  await moveTo(2, [-3, -5]);
+  await moveTo(3, [-3, 5]);
+  await check.click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('correct');
+  await expect(card.locator('.ap-fillin-feedback')).toHaveText(/^Correct\b/);
+});
+
+/**
+ * Press at a math coordinate, inverting <graph-plot>'s own `_toMath`: the
+ * viewBox origin is not always 0 0 (the fit pass shifts it when a label pokes
+ * out), so the page pixel has to be derived from `g.box` and `g.map`, exactly
+ * as the component derives math coordinates from the pixel.
+ */
+async function pressGraphAt(page, card, at) {
+  const px = await card.evaluate((el, p) => {
+    const rect = el.querySelector('.ap-graphplot-svg').getBoundingClientRect();
+    const box = el.g.box || { x: 0, y: 0, w: el.g.width, h: el.g.height };
+    const [X, Y] = el.g.map.toPx(p);
+    return {
+      x: rect.left + ((X - box.x) / box.w) * rect.width,
+      y: rect.top + ((Y - box.y) / box.h) * rect.height,
+    };
+  }, at);
+  await page.mouse.click(px.x, px.y);
+}
+
+test('pressing an empty lattice point places a point, on a half-unit snap', async ({ page }) => {
+  // The POINTER path, which no browser test drove — every graph-plot test
+  // above works the keyboard. <graph-plot> resolved a press by a fixed
+  // 0.6-unit grab radius, which was fine while every snap was 1 and became
+  // wrong the moment the corpus grew snap 0.5: the neighbouring lattice point
+  // is then 0.5 away, inside that radius, so pressing an EMPTY neighbour
+  // grabbed the already-placed point instead of placing a second one.
+  await gotoBuiltPage(
+    page,
+    '/math/precalculus/04-exponential-and-logarithmic-functions/02-graphs-of-exponential-functions/',
+  );
+  const card = page.locator('graph-plot[data-config*="points"]');
+  await expect(card).toHaveCount(1);
+  await waitForUpgrade(card, (el) => Boolean(el.g) && typeof el.buildGraph === 'function');
+  await expect.poll(async () => card.evaluate((el) => el.snap)).toBe(0.5);
+  await card.scrollIntoViewIfNeeded();
+
+  await pressGraphAt(page, card, [0, 3.5]);
+  await expect.poll(async () => card.evaluate((el) => JSON.stringify(el.pts))).toBe('[[0,3.5]]');
+
+  // Half a unit to the right: its own lattice point, and empty.
+  await pressGraphAt(page, card, [0.5, 3.5]);
+  await expect
+    .poll(async () => card.evaluate((el) => JSON.stringify(el.pts)))
+    .toBe('[[0,3.5],[0.5,3.5]]');
+
+  // A press inside a placed point's own cell still grabs it rather than
+  // stacking a second point there.
+  await pressGraphAt(page, card, [0, 3.6]);
+  await expect.poll(async () => card.evaluate((el) => el.pts.length)).toBe(2);
+});
+
+test('crossing asymptotes can be drawn through their shared point', async ({ page }) => {
+  // Both asymptotes of 4y² − 9x² = 36 pass through the origin, and the grader
+  // accepts a point shared across pairs — but click-to-place refused a
+  // coincident point outright, so the natural approach (press the origin for
+  // each line) failed with no feedback at all.
+  await gotoBuiltPage(page, '/math/intermediate-algebra/11-conics/04-hyperbolas/');
+
+  const card = page.locator('graph-plot[data-config*="asymptotes"]');
+  await expect(card).toHaveCount(1);
+  await waitForUpgrade(card, (el) => Boolean(el.g) && typeof el.buildGraph === 'function');
+  await card.scrollIntoViewIfNeeded();
+
+  await pressGraphAt(page, card, [0, 0]);
+  await pressGraphAt(page, card, [2, 3]);
+  // The second pair starts on the point the first pair already holds.
+  await pressGraphAt(page, card, [0, 0]);
+  await pressGraphAt(page, card, [2, -3]);
+  await expect
+    .poll(async () => card.evaluate((el) => JSON.stringify(el.pts)))
+    .toBe('[[0,0],[2,3],[0,0],[2,-3]]');
+
+  await card.getByRole('button', { name: 'Check' }).click();
   await expect
     .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
     .toBe('correct');

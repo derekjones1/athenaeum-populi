@@ -275,12 +275,14 @@ $m=\tfrac{3}{4}$, it can also be written as $m=\tfrac{-3}{-4}$ (negative
 divided by negative is positive!). Go back to $(1,-1)$ and count out the
 rise, $-3$, and the run, $-4$.
 
-{{< fillin
-  question="Graph the line through $(2,-2)$ with slope $m=\tfrac{4}{3}$. Starting at the given point and using the rise and run, enter the second point."
-  answer="(5,2)"
-  answerDisplay="$(5,2)$"
-  hint="Move up $4$ and right $3$ from $(2,-2)$."
+{{< graphplot
+  question="Graph the line through $(2,-2)$ with slope $m=\tfrac{4}{3}$."
+  answerDisplay="$y=\tfrac{4}{3}x-\tfrac{14}{3}$"
+  ariaLabel="A blank grid from −7 to 11 on the x-axis and −8 to 10 on the y-axis."
+  hint="Move up $4$ and right $3$ from $(2,-2)$ to find a second point, and repeat for a third."
 >}}
+{"answer": {"slope": 1.3333333333333333, "intercept": -4.666666666666667, "plotPoints": 3}, "grid": {"xMin": -7, "xMax": 11, "yMin": -8, "yMax": 10}}
+{{< /graphplot >}}
 
 {{< callout type="info" >}}
   **Graph a line given a point and the slope.**
@@ -291,6 +293,19 @@ rise, $-3$, and the run, $-4$.
      second point.
   4. Connect the points with a line.
 {{< /callout >}}
+
+{{< multiplechoice
+  question="Which graph shows the line through $(-3,0)$ with slope $m=2$?"
+  mode="graph"
+  answerIndex="1"
+  hint="Slope $2$ means rise $2$ for every run $1$, so the line climbs steeply from left to right. Rule out any line that falls, and any that climbs only gently."
+>}}
+{"ariaLabel":"A line marked at (−3, 0) that rises gently from left to right, climbing about 1 unit for every 2 it moves right.","xMin":-7,"xMax":7,"yMin":-10,"yMax":10,"unit":18,"tickLabels":true,"tickStep":2,"lines":[{"slope":0.5,"intercept":1.5}],"points":[{"at":[-3,0]}]}
+===OPT===
+{"ariaLabel":"A line marked at (−3, 0) that rises steeply from left to right, climbing about 2 units for every 1 it moves right.","xMin":-7,"xMax":7,"yMin":-10,"yMax":10,"unit":18,"tickLabels":true,"tickStep":2,"lines":[{"slope":2,"intercept":6}],"points":[{"at":[-3,0]}]}
+===OPT===
+{"ariaLabel":"A line marked at (−3, 0) that falls steeply from left to right, dropping about 2 units for every 1 it moves right.","xMin":-7,"xMax":7,"yMin":-10,"yMax":10,"unit":18,"tickLabels":true,"tickStep":2,"lines":[{"slope":-2,"intercept":-6}],"points":[{"at":[-3,0]}]}
+{{< /multiplechoice >}}
 
 ## Graph a line using its slope and intercept
 
@@ -447,12 +462,14 @@ rise and run to mark the second point. Draw the line.
 </svg>
 </div>
 
-{{< fillin
-  question="Graph $y=-x-3$ using its slope and y-intercept. Enter the y-intercept."
-  answer="(0,-3)"
-  answerDisplay="$(0,-3)$"
-  hint="In $y=mx+b$, the y-intercept is $(0,b)$."
+{{< graphplot
+  question="Graph $y=-x-3$ using its slope and $y$-intercept."
+  answerDisplay="$y=-x-3$"
+  ariaLabel="A blank grid from −7 to 7 on both axes."
+  hint="Plot the $y$-intercept $(0,-3)$, then use the slope $-1$ to place two more points."
 >}}
+{"answer": {"slope": -1, "intercept": -3, "plotPoints": 3}, "grid": {}}
+{{< /graphplot >}}
 
 ## Choose the most convenient method to graph a line
 
@@ -907,19 +924,19 @@ undefined
 {{< graphplot
   question="Graph the line with $y$-intercept $3$ and slope $m=-\tfrac{2}{5}$."
   answerDisplay="$y=-\tfrac{2}{5}x+3$"
-  ariaLabel="A blank grid from −7 to 7 on both axes."
-  hint="Plot $(0,3)$, then count down $2$ and right $5$ to find a second point."
+  ariaLabel="A blank grid from −14 to 14 on both axes."
+  hint="Plot $(0,3)$, then count down $2$ and right $5$ for the next point, and up $2$ and left $5$ for a third."
 >}}
-{"answer": {"slope": -0.4, "intercept": 3}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
+{"answer": {"slope": -0.4, "intercept": 3, "plotPoints": 3}, "grid": {"xMin": -14, "xMax": 14, "yMin": -14, "yMax": 14}}
 {{< /graphplot >}}
 
 {{< graphplot
   question="Graph the line through $(-4,2)$ with slope $m=4$."
   answerDisplay="$y=4x+18$"
   ariaLabel="A blank grid from −6 to 1 on the x-axis and −2 to 20 on the y-axis."
-  hint="Starting at $(-4,2)$, count up $4$ and right $1$ to find a second point."
+  hint="Starting at $(-4,2)$, count up $4$ and right $1$ to find a second point, and repeat for a third."
 >}}
-{"answer": {"slope": 4, "intercept": 18}, "grid": {"xMin": -6, "xMax": 1, "yMin": -2, "yMax": 20, "xUnit": 40, "yUnit": 12}}
+{"answer": {"slope": 4, "intercept": 18, "plotPoints": 3}, "grid": {"xMin": -6, "xMax": 1, "yMin": -2, "yMax": 20, "xUnit": 40, "yUnit": 12}}
 {{< /graphplot >}}
 
 ### Graph a line using its slope and intercept
@@ -941,9 +958,9 @@ undefined
   question="Graph the line $y=3x-1$ using its slope and $y$-intercept."
   answerDisplay="$y=3x-1$"
   ariaLabel="A blank grid from −7 to 7 on both axes."
-  hint="Plot the $y$-intercept $(0,-1)$, then use the slope $3$ to find a second point."
+  hint="Plot the $y$-intercept $(0,-1)$, then use the slope $3$ twice to mark two more points."
 >}}
-{"answer": {"slope": 3, "intercept": -1}, "grid": {}}
+{"answer": {"slope": 3, "intercept": -1, "plotPoints": 3}, "grid": {}}
 {{< /graphplot >}}
 
 ### Choose the most convenient method to graph a line
@@ -1009,12 +1026,12 @@ the maximum possible payment
 {{< /multiplechoice >}}
 
 {{< graphplot
-  question="Graph the equation $P=31+1.75w$ by placing two points on the line."
+  question="Graph the equation $P=31+1.75w$ by placing three points on the line."
   answerDisplay="$P=31+1.75w$"
   ariaLabel="A blank grid for P versus w, from 0 to 20 on the w-axis and 0 to 70 on the P-axis."
   hint="Start at the $P$-intercept $(0,31)$ and use the slope $1.75$."
 >}}
-{"answer": {"slope": 1.75, "intercept": 31}, "grid": {"xMin": 0, "xMax": 20, "yMin": 0, "yMax": 70, "xUnit": 18, "yUnit": 5, "yGridStep": 5, "yTickStep": 10}}
+{"answer": {"slope": 1.75, "intercept": 31, "plotPoints": 3}, "grid": {"xMin": 0, "xMax": 20, "yMin": 0, "yMax": 70, "xUnit": 18, "yUnit": 5, "yGridStep": 5, "yTickStep": 10}}
 {{< /graphplot >}}
 
 ### Use slopes to identify parallel and perpendicular lines

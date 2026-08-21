@@ -499,13 +499,6 @@ aliases:
   answerDisplay="6.1 seconds"
 >}}
 
-{{< callout type="info" >}}
-  **Source note.** The source exercise (m82553, §9.8) drops the package to a
-  lifeboat but asks how long it took to reach “the hiker” — the recipient
-  of the neighbouring 900-foot exercise. This page writes “the lifeboat”.
-  The printed answer, 6.1 seconds, is unaffected.
-{{< /callout >}}
-
 ### 9.7 Higher Roots
 
 {{< fillin
@@ -607,14 +600,6 @@ aliases:
 
 ### 10.5 Graphing Quadratic Equations in Two Variables
 
-{{< multiplechoice
-  question="For the parabola $y = 3x^2 + 6x + 8$, determine which way it opens."
-  answer="up"
->}}
-up
-down
-{{< /multiplechoice >}}
-
 {{< fillin
   question="For the parabola $y = 3x^2 + 6x + 8$, find the axis of symmetry. Enter the value of $x$."
   answer="-1"
@@ -627,16 +612,22 @@ down
   answerDisplay="$(-1, 5)$"
 >}}
 
-{{< fillin
-  question="For the parabola $y = x^2 + 10x + 24$, find the axis of symmetry. Enter the value of $x$."
-  answer="-5"
-  answerDisplay="$x = -5$"
+{{< multiplechoice
+  question="Which graph shows the parabola $y = 3x^2 + 6x + 8$?"
+  mode="graph"
+  answerIndex="0"
 >}}
+{"ariaLabel":"A narrow parabola opening upward with its lowest point at (−1, 5), crossing the y-axis at (0, 8).","xMin":-5,"xMax":3,"yMin":-14,"yMax":14,"tickLabels":true,"tickStep":2,"quadratics":[{"a":3,"b":6,"c":8}]}
+===OPT===
+{"ariaLabel":"A narrow parabola opening downward with its highest point at (−1, −5), crossing the y-axis at (0, −8).","xMin":-5,"xMax":3,"yMin":-14,"yMax":14,"tickLabels":true,"tickStep":2,"quadratics":[{"a":-3,"b":-6,"c":-8}]}
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="For the parabola $y = x^2 + 10x + 24$, find the vertex."
-  answer="(-5,-1)"
-  answerDisplay="$(-5, -1)$"
+{{< graphplot
+  question="Graph the parabola $y = x^2 + 10x + 24$ using its intercepts, its vertex, and its axis of symmetry."
+  answerDisplay="the parabola with vertex $(-5, -1)$, axis of symmetry $x = -5$, and intercepts $(-6, 0)$, $(-4, 0)$, and $(0, 24)$"
+  ariaLabel="A blank grid from −11 to 3 on the x-axis and −5 to 25 on the y-axis."
 >}}
+{"answer":{"quadratic":{"a":1,"b":10,"c":24},"plotPoints":3},"grid":{"xMin":-11,"xMax":3,"yMin":-5,"yMax":25}}
+{{< /graphplot >}}
 
-<small>This knowledge check is adapted from the Chapter 6–10 [Review Exercises and Practice Tests](https://openstax.org/books/elementary-algebra-2e/pages/6-review-exercises) of Elementary Algebra 2e by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked usable Practice Test questions), converted them to interactive exercises with instant feedback, split multi-part questions into separate exercises, rephrased word-answer and graph-reading questions as value, list, and multiple-choice questions, and took all answers from the book's Answer Key. One correction: the source's §9.8 question drops the package to a lifeboat but asks when it reaches “the hiker” — the recipient of the neighbouring 900-foot question; this page writes “the lifeboat”. The printed answer, 6.1 seconds, is unaffected.</small>
+<small>This knowledge check is adapted from the Chapter 6–10 [Review Exercises and Practice Tests](https://openstax.org/books/elementary-algebra-2e/pages/6-review-exercises) of Elementary Algebra 2e by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked usable Practice Test questions), converted them to interactive exercises with instant feedback, split multi-part questions into separate exercises, rephrased word-answer and graph-reading questions as value, list, and multiple-choice questions, asked the opens-upward-or-downward question with rendered graphs rather than the words “up” and “down”, combined the axis-of-symmetry and vertex parts of one parabola question into a single graphing question the reader draws on an interactive grid, and took all answers from the book's Answer Key. One correction: the source's §9.8 question drops the package to a lifeboat but asks when it reaches “the hiker” — the recipient of the neighbouring 900-foot question; this page writes “the lifeboat”. The printed answer is unaffected.</small>

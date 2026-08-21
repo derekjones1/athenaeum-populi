@@ -68,9 +68,6 @@
   "00b159cd6f0ac3bf": {
    "verdict": "ok"
   },
-  "00b4dbbb1e0f9e5a": {
-   "verdict": "ok"
-  },
   "00cabcd918019b5b": {
    "verdict": "ok"
   },
@@ -82,6 +79,9 @@
    "note": "Try It 2: triangle 33-56-65, computed each ratio directly (33/65, 56/65, 33/56, and their reciprocals 65/56, 65/33, 56/33); matches CNXML solution."
   },
   "00df5579ed0a3360": {
+   "verdict": "ok"
+  },
+  "00e4938534b21e0f": {
    "verdict": "ok"
   },
   "00e918265a7907ad": {
@@ -218,6 +218,10 @@
   "02394e95a6bd1709": {
    "verdict": "ok"
   },
+  "0240459ee288f3bf": {
+   "verdict": "ok",
+   "note": "System of y = -4x (slope -4, intercept 0) and y = -4 (horizontal). Member 1 lattice points inside -7..7: (0,0), (1,-4). Member 2 lattice points: (0,-4), (2,-4). The two lines intersect where -4x = -4, i.e. x = 1, at (1,-4)."
+  },
   "024a83c6a37d477c": {
    "verdict": "ok"
   },
@@ -262,9 +266,6 @@
   "02ae6346ce70b9a9": {
    "verdict": "ok"
   },
-  "02b7a1b17719d101": {
-   "verdict": "ok"
-  },
   "02d7776235756fe8": {
    "verdict": "ok"
   },
@@ -280,9 +281,6 @@
   "030724ba7ad76453": {
    "verdict": "ok",
    "note": "Repaired 2026-08-15. '45 is 30% of what number?' had TWO correct options: 45/n=30/100 and 45/30=n/100 are the same proportion by alternation (both give n=150). The alternated distractor was replaced with 30/45=n/100 (n=66.67); the four options now yield 13.50, 13.50, 66.67, 150.00 so only the declared answer is correct."
-  },
-  "0308073ca33dda5c": {
-   "verdict": "ok"
   },
   "030e1a07afb5149b": {
    "verdict": "ok"
@@ -341,6 +339,10 @@
   "039ebe80d65de61b": {
    "verdict": "ok"
   },
+  "039f60245b973e81": {
+   "verdict": "ok",
+   "note": "re-derived: f(x)=(x-4)^2=x^2-8x+16, vertex (4,0) on lattice; matches CNXML Try It (fs-id1169148837213); grid 0..8/-2..8 gives 5 reachable points (gpcheck slack 2)."
+  },
   "03abfd8b16c795c8": {
    "verdict": "ok"
   },
@@ -348,9 +350,6 @@
    "verdict": "ok"
   },
   "03c7fe66d4d23048": {
-   "verdict": "ok"
-  },
-  "03cc921e17218202": {
    "verdict": "ok"
   },
   "03d34c1493ddae38": {
@@ -404,6 +403,10 @@
   },
   "04497ba7eb567706": {
    "verdict": "ok"
+  },
+  "045966b2ed8ff868": {
+   "verdict": "ok",
+   "note": "3x+y=-3 gives y=-3x-3 and 2x+3y=5 gives y=-(2/3)x+5/3, matching the authored members; they meet at (-2,3), which satisfies both printed equations. Grades correct on a valid placement, systemPartial on a wrong line. Re-recorded after the same wording fix."
   },
   "045ca4bd32e0c3ca": {
    "verdict": "ok"
@@ -492,6 +495,10 @@
   "04e5e07ce99cfc48": {
    "verdict": "ok"
   },
+  "04f57204cfcca5c8": {
+   "verdict": "ok",
+   "note": "Point (-4,2) matches the answer JSON and checkGraphPlot grades it correct; matches the original multiplechoice's coordinates exactly."
+  },
   "04fd683a1c8adfc4": {
    "verdict": "ok"
   },
@@ -533,8 +540,9 @@
   "0537a8c3c17df4aa": {
    "verdict": "ok"
   },
-  "053889f0786325ae": {
-   "verdict": "ok"
+  "053ab0c32f867a02": {
+   "verdict": "ok",
+   "note": "x + y = -2 solved for y: y = -x - 2, slope -1, intercept -2. Snap-lattice points inside -7..7: (0,-2), (2,-4), (-2,0)."
   },
   "053bad54fd6f2380": {
    "verdict": "ok"
@@ -560,10 +568,11 @@
   "054b0bd5098b17f8": {
    "verdict": "ok"
   },
-  "054ccacfcd91e013": {
-   "verdict": "ok"
+  "054c2c55c0351197": {
+   "verdict": "ok",
+   "note": "re-derived vertex (2,0) from f(x)=-3x^2+12x-12: axis x=-12/(2*-3)=2, f(2)=-12+24-12=0; matches source Try It and prior fillin key. gpcheck: 5 reachable lattice points on grid -2..6 x -14..2, slack 2 above plotPoints:3."
   },
-  "0564e29811f90791": {
+  "054ccacfcd91e013": {
    "verdict": "ok"
   },
   "0565a4ef1a477d83": {
@@ -684,9 +693,6 @@
   "067ece585f63b03c": {
    "verdict": "ok"
   },
-  "069acdf0110c95e3": {
-   "verdict": "ok"
-  },
   "069c388dbc72c81d": {
    "verdict": "ok"
   },
@@ -697,9 +703,6 @@
    "verdict": "ok"
   },
   "06b8a702d34d0de0": {
-   "verdict": "ok"
-  },
-  "06dd347908260562": {
    "verdict": "ok"
   },
   "06dd5dea83edb35a": {
@@ -742,6 +745,10 @@
   },
   "071e5424068673dd": {
    "verdict": "ok"
+  },
+  "072000ce647a9683": {
+   "verdict": "ok",
+   "note": "re-derived: 'Which graph shows y=x^2+2x-8?' — for a=1,b=2,c=-8 the vertex is (-b/2a, f(-1)) = (-1,-9) and the roots (via quadratic formula, disc=4+32=36) are x=-4,2; option index 1 (0-based) is quadratics:[{a:1,b:2,c:-8}], matching authored answerIndex=1. Option 0 is the reflected downward-opening parabola y=-x^2-2x+8 (a sign-flipped, same roots -4,2, vertex (-1,9)). Option 2 is quadratics:[{a:1,b:-2,c:-8}] = y=x^2-2x-8, an upward-opening parabola with the same y-intercept -8 but roots of the opposite sign, -2 and 4, vertex (1,-9)."
   },
   "072effebb3275e97": {
    "verdict": "ok"
@@ -822,25 +829,24 @@
   "0810b094f952e568": {
    "verdict": "ok"
   },
-  "081eb78ddbc7bdc9": {
-   "verdict": "ok"
-  },
   "0828539da008a0c3": {
-   "verdict": "ok"
-  },
-  "082be2cf70ccd0d0": {
    "verdict": "ok"
   },
   "082df281d95e64b5": {
    "verdict": "ok"
   },
+  "082e3a78064389bb": {
+   "verdict": "ok",
+   "note": "EA KC 06-10 §10.5, from Ch.10 Practice Test \"For each parabola, find...\" for y=x^2+10x+24 (m82559, exercise fs-id1166502240468; key: up, x=-5, (-5,-1), y:(0,24), x:(-6,0),(-4,0)). Re-derived independently: a=1, b=10, c=24; axis x=-b/2a=-5; vertex y=25-50+24=-1 so (-5,-1); x^2+10x+24=(x+6)(x+4) gives x-intercepts (-6,0) and (-4,0); y-intercept (0,24). Authored quadratic {a:1,b:10,c:24} is exactly that parabola; on the -11..3 by -5..25 grid it has 11 snap-1 lattice points and its vertex (-5,-1) is on the lattice, so plotPoints:3 leaves the learner real choice."
+  },
+  "082f4e56ded3078d": {
+   "verdict": "ok",
+   "note": "f(x) = -3x/4 + 6: f(0)=6, f(4)=3, f(8)=0, matching the displayed points. Grid widened -8..10 x -8..8 -> -12..12 both axes for plotPoints slack (6 reachable, was exactly 3)."
+  },
   "0834aa9783b87ae6": {
    "verdict": "ok"
   },
   "083b02615bdac902": {
-   "verdict": "ok"
-  },
-  "08456e972d39b10c": {
    "verdict": "ok"
   },
   "0848c96aaf741520": {
@@ -933,9 +939,6 @@
    "verdict": "ok"
   },
   "095ebd22ed357d7e": {
-   "verdict": "ok"
-  },
-  "096528fd583f4ec6": {
    "verdict": "ok"
   },
   "096ce8b701b42a85": {
@@ -1101,10 +1104,21 @@
   "0addea351f654178": {
    "verdict": "ok"
   },
+  "0ae3776f56f07bae": {
+   "verdict": "ok",
+   "note": "IA KC 07-12 §10.1, same Practice Test item, part (b) (m81450), whose problem prints a figure captioned 'an exponential line passing through the points (negative 1, 1 over 2), (0, 1), and (1, 2)' and whose key reads 'One-to-one function'. Recreated as y = 2^x with those three points marked. Re-derived: 2^-1 = 1/2, 2^0 = 1, 2^1 = 2, so the three printed points are on the curve; 2^x is strictly increasing, so it passes both the vertical and the horizontal line test and is one-to-one. Options and answer unchanged."
+  },
+  "0aea5d29ad9dc352": {
+   "verdict": "ok",
+   "note": "re-derived: f(x)=x^2+7=x^2+0x+7, vertex (0,7) on lattice; CNXML Try It (exercise fs-id1169149336332, m81405) prints the identical stem; grid -4..4/0..12 gives 5 reachable snap-lattice points for plotPoints:3 (gpcheck slack 2)."
+  },
   "0af551a9b036ca3d": {
    "verdict": "ok"
   },
   "0b0021a92bd400de": {
+   "verdict": "ok"
+  },
+  "0b0252efeeb24351": {
    "verdict": "ok"
   },
   "0b03e2831ec48f4b": {
@@ -1130,9 +1144,6 @@
    "verdict": "ok"
   },
   "0b5eea6326b5167f": {
-   "verdict": "ok"
-  },
-  "0b5f9e0f9b2e1f18": {
    "verdict": "ok"
   },
   "0b61fdf351c07780": {
@@ -1317,6 +1328,9 @@
   "0d14bd6b63aa58c4": {
    "verdict": "ok"
   },
+  "0d150e1d186f676b": {
+   "verdict": "ok"
+  },
   "0d1cd7c81a0474e1": {
    "verdict": "ok"
   },
@@ -1329,6 +1343,10 @@
   "0d2f0b38cb9337e5": {
    "verdict": "ok",
    "note": "cos t=√2/2 ⇒ sec t=1/cos t=√2"
+  },
+  "0d3ab254867939ba": {
+   "verdict": "ok",
+   "note": "IA KC 07-12 §11.1, converted from prose options to rendered figures. Re-derived: completing the square, x^2+10x + y^2+6y = -30 becomes (x+5)^2-25 + (y+3)^2-9 = -30, i.e. (x+5)^2+(y+3)^2 = 4 — a circle centered (-5,-3) of radius 2, which is option 0 and agrees with the standard-form fill-in above it on the same page. The distractors render the printed prose distractors exactly: the sign-flipped centre (5,3) (1), an ellipse at the correct centre (2), and radius 4 instead of 2 (3). Order and answer position unchanged."
   },
   "0d400994b01a1d77": {
    "verdict": "ok"
@@ -1369,11 +1387,18 @@
   "0d8cca947be46d75": {
    "verdict": "ok"
   },
+  "0d8e8e7fa77be9e3": {
+   "verdict": "ok"
+  },
   "0d96637faeb8695d": {
    "verdict": "ok"
   },
   "0da32d7a5f86ebe5": {
    "verdict": "ok"
+  },
+  "0da3514591d90125": {
+   "verdict": "ok",
+   "note": "y = -4x is slope -4 through the origin. Grid widened -7..7 -> -14..14 for plotPoints slack (7 reachable, was exactly 3: only x = -1, 0, 1 fit)."
   },
   "0db35c337354c11a": {
    "verdict": "ok"
@@ -1391,11 +1416,19 @@
   "0dcd1f5e86309bda": {
    "verdict": "ok"
   },
+  "0dd7a3f259805ffd": {
+   "verdict": "ok",
+   "note": "y = 4x is slope 4 through the origin, both intercepts at (0,0). Grid widened -7..7 -> -14..14 for plotPoints slack (7 reachable, was exactly 3)."
+  },
   "0de58b903ddcf2fa": {
    "verdict": "ok"
   },
   "0de5a2ca3c84aee3": {
    "verdict": "ok"
+  },
+  "0de81c279fa49e7d": {
+   "verdict": "ok",
+   "note": "EA KC 01-05 §4.2, Ch.4 Review Exercise 581 (m82488) 'Graph Vertical and Horizontal lines: x = 3'; Answer Key p. 1220 prints the answer graph (visually inspected: a vertical line at x=3). Re-derived: x=3 is satisfied by every point with x-coordinate 3 and by no other, so the graph is the vertical line through (3,0). Authored {x:3,plotPoints:3}; on -12..12 that column holds 25 snap-1 lattice points."
   },
   "0dee04bf6a4afd43": {
    "verdict": "ok"
@@ -1592,9 +1625,6 @@
   "1045e1dd1884aba1": {
    "verdict": "ok"
   },
-  "1051cf93dc4d611c": {
-   "verdict": "ok"
-  },
   "1053b55444a1cf47": {
    "verdict": "ok",
    "note": "Above -2 on the x-axis fixes x=-2; left of 5 on the y-axis places it at height y=5 on the negative-x side. Point is (-2,5)."
@@ -1629,8 +1659,12 @@
   "10aceae2c2bf8562": {
    "verdict": "ok"
   },
-  "10b3fa73ec8862ce": {
+  "10cbef210c14d4f5": {
    "verdict": "ok"
+  },
+  "10cda6e47a5d93dd": {
+   "verdict": "ok",
+   "note": "y=-3x has slope -3, intercept 0; checkGraphPlot grades three collinear derived points correct and a non-collinear set notCollinear, with 9 reachable lattice points >> plotPoints:3."
   },
   "10ce4900e1499ffb": {
    "verdict": "ok"
@@ -1785,9 +1819,6 @@
   "120b115ac4602297": {
    "verdict": "ok"
   },
-  "1210890bdab1267b": {
-   "verdict": "ok"
-  },
   "1220adf6053fcc52": {
    "verdict": "ok",
    "note": "870 - 360 = 510; 510 - 360 = 150, so alpha = 150 deg, 0<=alpha<360; matches pinned CNXML solution alpha=150 deg (line 1400-1404 of m49371 index.cnxml)"
@@ -1821,6 +1852,10 @@
   },
   "127d5561031b26bd": {
    "verdict": "ok"
+  },
+  "127f572417161e75": {
+   "verdict": "ok",
+   "note": "y=(1/3)x-1 has slope 1/3=0.3333333333333333, intercept -1; checkGraphPlot grades derived points correct, at least 9 lattice points reachable at multiples of 3 for plotPoints:3."
   },
   "127fbae1060a9405": {
    "verdict": "ok"
@@ -1866,22 +1901,23 @@
   "12c03754b1aac49b": {
    "verdict": "ok"
   },
-  "12c38e8dbcb5a98a": {
-   "verdict": "ok"
-  },
   "12c51e3ccc5a73c6": {
    "verdict": "ok"
   },
   "12ccaa73c1576cac": {
    "verdict": "ok"
   },
+  "12deed4bbbe28e1e": {
+   "verdict": "ok",
+   "note": "y = -x^2 has a = -1 < 0 so it opens downward, and b = c = 0 puts the vertex at (0,0); option 2 is quadratics [{a:-1}], the downward parabola through the origin. Option 0 (a = 1) inverts the opening and option 1 (a = -1, c = -1) shifts the vertex to (0,-1); each was rendered through toSvgString and inspected, and all three are visually distinct."
+  },
   "12e4bc66dd1c570b": {
    "verdict": "ok"
   },
-  "12e8ca9b3185ee1d": {
+  "12f014c12453fd4f": {
    "verdict": "ok"
   },
-  "12f014c12453fd4f": {
+  "12fa03e12a6330b7": {
    "verdict": "ok"
   },
   "130acaf1a777aff1": {
@@ -1909,6 +1945,9 @@
    "verdict": "ok"
   },
   "136d3075634ef3dd": {
+   "verdict": "ok"
+  },
+  "136efb437dbcdfb1": {
    "verdict": "ok"
   },
   "1370b2de1943eac3": {
@@ -1942,9 +1981,6 @@
   "13bc7ee787aa19df": {
    "verdict": "ok"
   },
-  "13ca67486616e7e7": {
-   "verdict": "ok"
-  },
   "13e2cb9ef6b06f8f": {
    "verdict": "ok"
   },
@@ -1958,9 +1994,6 @@
    "verdict": "ok"
   },
   "13faa6c9e789857c": {
-   "verdict": "ok"
-  },
-  "14022f797fb399c9": {
    "verdict": "ok"
   },
   "1408844a28e07b1b": {
@@ -2055,13 +2088,7 @@
   "1525929f560fc16c": {
    "verdict": "ok"
   },
-  "1531f161c6a3f632": {
-   "verdict": "ok"
-  },
   "153b1fab2a739677": {
-   "verdict": "ok"
-  },
-  "153c39a5802eea15": {
    "verdict": "ok"
   },
   "153e91a8ed6b066a": {
@@ -2149,9 +2176,6 @@
   "1629faebd6325fa8": {
    "verdict": "ok",
    "note": "h(-7)=-1/2*(1/2)^-7+6 computed with node: -58; matches CNXML solution exactly."
-  },
-  "163653c17fcb5853": {
-   "verdict": "ok"
   },
   "164501dfdf843c97": {
    "verdict": "ok"
@@ -2343,9 +2367,6 @@
    "verdict": "ok"
   },
   "18555b4ddb8aa077": {
-   "verdict": "ok"
-  },
-  "185724c39e46ddc4": {
    "verdict": "ok"
   },
   "185c0c9c884cbe0d": {
@@ -2601,9 +2622,6 @@
    "verdict": "ok",
    "note": "f(1) = (1+5)/3 = 2 by direct substitution into f(x)=(x+5)/3; matches CNXML ti_03_08_01 solution's intermediate step."
   },
-  "1b46a474c0444e7e": {
-   "verdict": "ok"
-  },
   "1b4bcbdaf8127ca1": {
    "verdict": "ok"
   },
@@ -2708,13 +2726,14 @@
   "1c4a203ebc907d4d": {
    "verdict": "ok"
   },
+  "1c55797990babf03": {
+   "verdict": "ok",
+   "note": "x - y = 6 solved for y: y = x - 6, slope 1, intercept -6. Snap-lattice points inside -7..7: (0,-6), (6,0), (1,-5)."
+  },
   "1c6a297d4175f2c2": {
    "verdict": "ok"
   },
   "1c715fb9b0455208": {
-   "verdict": "ok"
-  },
-  "1c72691a1a194023": {
    "verdict": "ok"
   },
   "1c7e3f4b886c6150": {
@@ -2798,6 +2817,10 @@
   "1d2df7e7958e60d6": {
    "verdict": "ok"
   },
+  "1d428a9c69f1ed41": {
+   "verdict": "ok",
+   "note": "System of y = 3 (horizontal) and y = 3x (slope 3, intercept 0). Member 1 lattice points inside -7..7: (0,3), (2,3). Member 2 lattice points: (0,0), (1,3). The two lines intersect where 3 = 3x, i.e. x = 1, at (1,3)."
+  },
   "1d442b5f0e587d69": {
    "verdict": "ok"
   },
@@ -2871,9 +2894,6 @@
   "1e013d2207f6fa1f": {
    "verdict": "ok"
   },
-  "1e07f33e6787e081": {
-   "verdict": "ok"
-  },
   "1e0a1c5d5c40c85b": {
    "verdict": "ok"
   },
@@ -2905,6 +2925,9 @@
    "note": "Try It 13: change-of-base with n=e gives ln(8)/ln(0.5); ln(8)/ln(0.5) = -3 exactly (node), matching log_{0.5}(8)=-3 by direct check (0.5^-3=8). Matches CNXML solution."
   },
   "1e4ad0859f27df8d": {
+   "verdict": "ok"
+  },
+  "1e500438e9b40c00": {
    "verdict": "ok"
   },
   "1e5eeb88b292fded": {
@@ -2979,6 +3002,9 @@
   "1f5ec2c7a567121d": {
    "verdict": "ok"
   },
+  "1f6a0f258686d203": {
+   "verdict": "ok"
+  },
   "1f6ec0fc619929f8": {
    "verdict": "ok"
   },
@@ -3040,9 +3066,6 @@
    "verdict": "ok"
   },
   "2030dd1bd58e6d7a": {
-   "verdict": "ok"
-  },
-  "20327489535c8dad": {
    "verdict": "ok"
   },
   "2037177f9b5254bb": {
@@ -3119,6 +3142,10 @@
   "20c5a11acf8dbcfc": {
    "verdict": "ok"
   },
+  "20c6b7165a545a81": {
+   "verdict": "ok",
+   "note": "IA KC 07-12 §11.3, converted from prose options to rendered figures. Re-derived: dividing 4x^2+49y^2=196 by 196 gives x^2/49 + y^2/4 = 1, so a^2=49 sits under x^2 and the ellipse is horizontal with vertices (±7,0) and co-vertices (0,±2) — option 1. The distractors render the printed prose distractors exactly: a circle of radius 7 (0), the denominators used as distances without taking square roots, giving (±4,0) and (0,±49) (2), and the correct ellipse rotated to vertical (3). Order and answer position unchanged. Note the shared window is ±50 because distractor 2 reaches y=±49; the correct ellipse is small in that frame but its wide, flat shape is what distinguishes it."
+  },
   "20d103dc2fb4ed41": {
    "verdict": "ok"
   },
@@ -3170,9 +3197,6 @@
   "21367a31d3209bce": {
    "verdict": "ok"
   },
-  "213882b510762828": {
-   "verdict": "ok"
-  },
   "21396d876cbcb6e9": {
    "verdict": "ok"
   },
@@ -3209,6 +3233,10 @@
   "21a4a328565310e4": {
    "verdict": "ok"
   },
+  "21a999d7e52bc35b": {
+   "verdict": "ok",
+   "note": "re-derived: 4y^2-9x^2=36 -> y^2/9-x^2/4=1, vertical transverse axis, a=3, b=2, asymptotes y=+-(a/b)x=+-1.5x; matches recorded answer. Each member reaches 5 lattice points in [-6,6]x[-6,6] at x=-4,-2,0,2,4 (y=-6,-3,0,3,6 resp. mirrored), well above the >=2 asymptote minimum; rendered and visually confirmed both lines are distinct from each other and from the axes, meeting only at the origin."
+  },
   "21aed9c032d5eee7": {
    "verdict": "ok"
   },
@@ -3227,6 +3255,10 @@
   },
   "21f6200ed58324ca": {
    "verdict": "ok"
+  },
+  "2201678ee7e3e0db": {
+   "verdict": "ok",
+   "note": "Re-derived independently after the parent widened this MC's shared option grid from -7..7 to y -10..10 (the readability gate failed the old grid: option 1's line left the top of the frame beside the y-axis letter, a 3.0px text-arrowhead overlap). The mathematics is unchanged. The stem asks for the line through (-3,0) with slope m=2; that line is y=2x+6, and answerIndex 1 draws exactly it with (-3,0) marked. Both distractors keep the same marked point and vary only the slope: index 0 is m=0.5 (the reciprocal — rise and run swapped), index 2 is m=-2 (sign inverted). Checked each line passes through (-3,0): 2(-3)+6=0, 0.5(-3)+1.5=0, -2(-3)-6=0. Rendered all three at the new grid and confirmed the arrowheads now clear the axis labels."
   },
   "2204e4cd670271af": {
    "verdict": "ok"
@@ -3317,6 +3349,10 @@
   "22c914aabdec495f": {
    "verdict": "ok"
   },
+  "22cebf475a7d5010": {
+   "verdict": "ok",
+   "note": "IA KC 07-12 §10.3, converted from prose options to rendered figures. Re-derived: log_3 1 = 0 so the curve passes through (1,0); the base 3 exceeds 1 so it increases; and log_3 x is undefined for x <= 0 with values falling without bound as x approaches 0, so x=0 is a vertical asymptote — option 2. The distractors render the printed prose distractors exactly: the exponential 3^x with horizontal asymptote y=0 through (0,1) (0); the reflected -log_3 x, decreasing through (1,0) with the same vertical asymptote (1); and the line y=x-1 through (1,0) (3). Order and answer position unchanged. This exercise stays a recognition MC because a logarithmic curve has no gradeable graphplot answer form."
+  },
   "22e0c3c81e3b1213": {
    "verdict": "ok"
   },
@@ -3388,6 +3424,10 @@
   "23d75fe7ff795e9a": {
    "verdict": "ok"
   },
+  "23d968e280f2369e": {
+   "verdict": "ok",
+   "note": "IA KC 07-12 §11.4, converted from prose options to rendered figures. Re-derived: dividing 64x^2-9y^2=576 by 576 gives x^2/9 - y^2/64 = 1; the positive term is in x, so the hyperbola opens left and right with a=3 and vertices (±3,0) — option 2. The distractors render the printed prose distractors exactly: the same hyperbola opening up and down with vertices (0,±3) (0), an ellipse with vertices (±3,0) (1), and vertices at (±8,0), i.e. a and b swapped (3). Order and answer position unchanged."
+  },
   "23da85997e315469": {
    "verdict": "ok"
   },
@@ -3404,9 +3444,6 @@
   "24091d40ba8a0e0f": {
    "verdict": "ok",
    "note": "node: 40000/(1+0.06/4)^(4*18) = 13693.1999... -> 13693; matches CNXML Try It #9 solution."
-  },
-  "240bbbbd928b8bd6": {
-   "verdict": "ok"
   },
   "2412cd674a3a330d": {
    "verdict": "ok"
@@ -3560,6 +3597,10 @@
   "25ed3fafa1648dc8": {
    "verdict": "ok"
   },
+  "25f00c520794963d": {
+   "verdict": "ok",
+   "note": "4x + y = -3 solved for y: y = -4x - 3, slope -4, intercept -3. Snap-lattice points inside -7..7: (0,-3), (-1,1), (-2,5)."
+  },
   "25f47bbca64a5f24": {
    "verdict": "ok"
   },
@@ -3621,6 +3662,10 @@
   "26c1c28664a15856": {
    "verdict": "ok",
    "note": "Reproduced via OLS on debt vs ln(x), x=1..11 (years 2000-2010): a=141.9124, b=10.4537, matching CNXML fs-id1322269 (Try It #2)."
+  },
+  "26c8064be9e41d68": {
+   "verdict": "ok",
+   "note": "y = (1/4)x + 2 is already solved for y: slope 0.25, intercept 2. Grid widened from -7..7 to -14..14 so the ask is not forced to a unique solution set: y is an integer exactly when x is a multiple of 4, giving seven reachable snap-1 lattice points inside the grid -- (-12,-1), (-8,0), (-4,1), (0,2), (4,3), (8,4), (12,5) -- comfortably above the plotPoints:3 requirement, where the old -7..7 grid admitted exactly three. Answer values themselves unchanged and re-derived."
   },
   "26c8a6202fbdfac7": {
    "verdict": "ok"
@@ -3709,6 +3754,9 @@
    "verdict": "ok"
   },
   "27c97105b8f77643": {
+   "verdict": "ok"
+  },
+  "27dac81ff5c5242a": {
    "verdict": "ok"
   },
   "27ec8a02bc25ba9c": {
@@ -3822,9 +3870,6 @@
    "verdict": "ok"
   },
   "28c9b71f1d25519b": {
-   "verdict": "ok"
-  },
-  "28cabd5954677f91": {
    "verdict": "ok"
   },
   "28cbc3cd4726e648": {
@@ -4000,9 +4045,6 @@
   "2aa4009a581c55c0": {
    "verdict": "ok"
   },
-  "2aa5aa419c60580a": {
-   "verdict": "ok"
-  },
   "2aae8b9075513b71": {
    "verdict": "ok"
   },
@@ -4015,9 +4057,6 @@
   "2ad014b1e5fcead7": {
    "verdict": "ok"
   },
-  "2ad2a1e7ae22cbaf": {
-   "verdict": "ok"
-  },
   "2ad4e30ee9dd1056": {
    "verdict": "ok"
   },
@@ -4028,9 +4067,6 @@
    "verdict": "ok"
   },
   "2aed76ba1e003444": {
-   "verdict": "ok"
-  },
-  "2af1eee5d7294a22": {
    "verdict": "ok"
   },
   "2af9c22ea8810818": {
@@ -4067,9 +4103,6 @@
    "verdict": "ok"
   },
   "2b49c86fb9a564da": {
-   "verdict": "ok"
-  },
-  "2b571577291b35da": {
    "verdict": "ok"
   },
   "2b67b984817d1131": {
@@ -4166,9 +4199,6 @@
    "verdict": "ok"
   },
   "2cad312793315ebd": {
-   "verdict": "ok"
-  },
-  "2cc5f5d9526ed3e4": {
    "verdict": "ok"
   },
   "2cd92b3e7b919d5e": {
@@ -4339,6 +4369,10 @@
   "2e87a9eec7cee3f7": {
    "verdict": "ok"
   },
+  "2e9bb8d9423fe3e1": {
+   "verdict": "ok",
+   "note": "x = 5 is the vertical line through 5 on the x-axis; option 1 is lines [{x:5}]. Option 0 is x = -5 and option 2 is the horizontal y = 5 (the axis-confusion error). Rendered and inspected: key is vertical crossing the x-axis at 5."
+  },
   "2ec35c1e7894ef03": {
    "verdict": "ok",
    "note": "(2t+5)(5t-3) expands to 10t^2+19t-15 (sympy). Distractor (2t-5)(5t+3) expands to 10t^2-19t-15; 'It is prime' is false since it factors. Exactly one option is correct."
@@ -4347,9 +4381,6 @@
    "verdict": "ok"
   },
   "2eeab5169fabc423": {
-   "verdict": "ok"
-  },
-  "2eed2c677d13e738": {
    "verdict": "ok"
   },
   "2ef78cc164f018fc": {
@@ -4392,7 +4423,7 @@
   "2f58ba30d37256bd": {
    "verdict": "ok"
   },
-  "2f5cdfc5674795a6": {
+  "2f590540ff957866": {
    "verdict": "ok"
   },
   "2f6632220297ffae": {
@@ -4490,9 +4521,6 @@
   "30471e7ba6aa9e89": {
    "verdict": "ok"
   },
-  "3050ab9e35feb9bf": {
-   "verdict": "ok"
-  },
   "30525e0285bdbcb4": {
    "verdict": "ok"
   },
@@ -4535,9 +4563,6 @@
   "30fb7f2c57d79f4e": {
    "verdict": "ok"
   },
-  "31115ec845a6e79f": {
-   "verdict": "ok"
-  },
   "311e526c1cb3fb3e": {
    "verdict": "ok"
   },
@@ -4547,6 +4572,10 @@
   },
   "313d757ea4953973": {
    "verdict": "ok"
+  },
+  "314b5e4de84f0e1a": {
+   "verdict": "ok",
+   "note": "re-derived f(x)=sqrt(x-2) at x=2,3,6: f(2)=0, f(3)=1, f(6)=2, matches CNXML Try It fs-id1169145731036 exactly (3 named points); all on integer lattice inside grid [-4,10]x[-4,4], matching the sibling sqrt(x+2) exercise's kept-MC grid."
   },
   "314e58b656bcdd61": {
    "verdict": "ok"
@@ -4696,9 +4725,6 @@
   "325dc3b52746b443": {
    "verdict": "ok"
   },
-  "3268935f66db13e6": {
-   "verdict": "ok"
-  },
   "326cdaaa76620370": {
    "verdict": "ok"
   },
@@ -4764,6 +4790,9 @@
   "33603a9af2f53889": {
    "verdict": "ok"
   },
+  "3364d5f58a7aa1e7": {
+   "verdict": "ok"
+  },
   "33671930ef097c2f": {
    "verdict": "ok"
   },
@@ -4800,9 +4829,6 @@
    "verdict": "ok"
   },
   "33c503bca48e08ad": {
-   "verdict": "ok"
-  },
-  "33c681d7020149ff": {
    "verdict": "ok"
   },
   "33cccdf149519bdb": {
@@ -4874,15 +4900,9 @@
   "34aedaf7ec493fde": {
    "verdict": "ok"
   },
-  "34b80be664d813ee": {
-   "verdict": "ok"
-  },
   "34bb8303f5ee18ee": {
    "verdict": "ok",
    "note": "As x->-infinity, 4^x->0 so f->-1 (the asymptote); matches CNXML solution exactly."
-  },
-  "34bbf463a6c02366": {
-   "verdict": "ok"
   },
   "34c8d6f4763ba3bb": {
    "verdict": "ok"
@@ -4894,9 +4914,6 @@
    "verdict": "ok"
   },
   "34e18a689b364395": {
-   "verdict": "ok"
-  },
-  "34e7da0dd5ec17c8": {
    "verdict": "ok"
   },
   "34e9c0d383828608": {
@@ -4941,6 +4958,10 @@
   "357017f510e84e69": {
    "verdict": "ok"
   },
+  "357d07e2de83c049": {
+   "verdict": "ok",
+   "note": "Parent-authored graphplot replacing an answer-figure-plus-fillin pair the section's conversion agent left behind. Re-derived from the printed question: f(x)=x^2+2x-8 has axis x=-b/2a=-1 and vertex (-1,-9), and factors as (x+4)(x-2) so the x-intercepts are (-4,0) and (2,0); f(0)=-8. On the authored grid (-6..4 by -10..8) the answer parabola reaches 9 snap-lattice points against plotPoints 3, so there is real slack and the vertex itself is on the lattice inside the grid. The worked example immediately above graphs f(x)=x^2-6x+8, a different equation, so the exercise is not transcription; the deleted static figure had named this vertex in its aria-label, directly above the fillin that asked for it."
+  },
   "357fe6e60dd26f18": {
    "verdict": "ok"
   },
@@ -4950,9 +4971,6 @@
   "35a176f8f073fd49": {
    "verdict": "ok",
    "note": "Denominator (x-3)^2 zero only at x=3; matches CNXML Try It 7."
-  },
-  "35b2d19ed4c420b7": {
-   "verdict": "ok"
   },
   "35b8c87d0ff2744d": {
    "verdict": "ok"
@@ -4996,6 +5014,10 @@
   },
   "362dfd90e909f1d0": {
    "verdict": "ok"
+  },
+  "3630e5a0ee5a6b3b": {
+   "verdict": "ok",
+   "note": "y-intercept 4 with slope -5/2 falls steeply through (0,4); option 1 draws slope -2.5 intercept 4. Option 0 is the sign-inverted +5/2 and option 2 the reciprocal -2/5. All three mark (0,4). Rendered and inspected."
   },
   "3633b1f4a4781771": {
    "verdict": "ok"
@@ -5203,9 +5225,6 @@
    "verdict": "ok",
    "note": "Solved 116=(1/4)(1/8)^x -> x=ln(464)/ln(1/8) computed with node: -2.952660331709191, rounds to -2.953; matches CNXML solution exactly."
   },
-  "37d50ebd7dde7498": {
-   "verdict": "ok"
-  },
   "37d760e9849f130e": {
    "verdict": "ok"
   },
@@ -5289,9 +5308,6 @@
   "38cc351ac1224ad0": {
    "verdict": "ok"
   },
-  "38cdd48d2b6d0ab5": {
-   "verdict": "ok"
-  },
   "38d0b8db496a18ed": {
    "verdict": "ok"
   },
@@ -5304,9 +5320,6 @@
   "38f3a24222d80a56": {
    "verdict": "ok",
    "note": "cos(pi) = -1 exactly, point (-1,0) on unit circle at pi rad (180 deg)"
-  },
-  "38f5b240a9cb3aee": {
-   "verdict": "ok"
   },
   "38f6794bc5ab4756": {
    "verdict": "ok"
@@ -5410,6 +5423,10 @@
   },
   "39ce5532ce1521cb": {
    "verdict": "ok"
+  },
+  "39d2ad34507d48b1": {
+   "verdict": "ok",
+   "note": "y = -4 is a horizontal line (no x-dependence). Snap-lattice points inside -7..7: (0,-4), (3,-4), (-3,-4)."
   },
   "39e714aa721211d1": {
    "verdict": "ok"
@@ -5536,9 +5553,6 @@
   "3b62da34af4d3c21": {
    "verdict": "ok"
   },
-  "3b66d4a3a4d9f0a1": {
-   "verdict": "ok"
-  },
   "3b730cff57351829": {
    "verdict": "ok"
   },
@@ -5581,9 +5595,6 @@
    "verdict": "ok"
   },
   "3bf53cf2524d48dd": {
-   "verdict": "ok"
-  },
-  "3bfe60e5afff930c": {
    "verdict": "ok"
   },
   "3c08d9ba6d4c3d4a": {
@@ -5635,6 +5646,10 @@
   },
   "3cd1e77400cf9eb4": {
    "verdict": "ok"
+  },
+  "3cda7772a0280011": {
+   "verdict": "ok",
+   "note": "5x-2y=10 solves to y=2.5x-5; answer {slope:2.5,intercept:-5} matches, derived points grade correct, a sign-flipped-intercept guess grades slopeRight not correct."
   },
   "3ce2246a951bd50d": {
    "verdict": "ok"
@@ -5734,7 +5749,13 @@
   "3e421a49e4b6307d": {
    "verdict": "ok"
   },
+  "3e4634bfe146f061": {
+   "verdict": "ok"
+  },
   "3e4bbd11d175c539": {
+   "verdict": "ok"
+  },
+  "3e4d4dd438b87f3c": {
    "verdict": "ok"
   },
   "3e4e79734aecbe19": {
@@ -5753,9 +5774,6 @@
    "verdict": "ok"
   },
   "3e77e3dbd5c1bf50": {
-   "verdict": "ok"
-  },
-  "3e81d14d12ddd958": {
    "verdict": "ok"
   },
   "3e851230da46d652": {
@@ -5810,9 +5828,6 @@
   "3f2502b638a0652c": {
    "verdict": "ok"
   },
-  "3f2882766d7fe70e": {
-   "verdict": "ok"
-  },
   "3f2a97bf0f9cc0cb": {
    "verdict": "ok"
   },
@@ -5836,6 +5851,10 @@
   },
   "3f6234e56f84ac0f": {
    "verdict": "ok"
+  },
+  "3f6b66d20de57d25": {
+   "verdict": "ok",
+   "note": "y=3 horizontal line; answer {y:3} matches and grades correct; this exact task (\"Graph y=3\") is duplicated later on the same page (line ~799) — flagged for parent, not scored as a defect here."
   },
   "3f73c6eae51f1725": {
    "verdict": "ok",
@@ -5923,6 +5942,14 @@
   "4084749b3a796f8c": {
    "verdict": "ok"
   },
+  "4090a23e285c43d0": {
+   "verdict": "ok",
+   "note": "x - 2y = 4 solves to y = 0.5x - 2, with intercepts (4,0) and (0,-2); option 1 draws slope 0.5 intercept -2 and marks both. Option 0 flips the slope sign to cross at (-4,0); option 2 swaps the intercepts to (-2,0) and (0,4). Rendered and inspected."
+  },
+  "409496b593a22714": {
+   "verdict": "ok",
+   "note": "IA KC 07-12 §10.1, Ch.10 Practice Test 'Determine whether each graph is the graph of a function and if so, is it one-to-one' part (a) (m81450), whose problem prints a figure captioned 'a parabola opening to the right with vertex (negative 3, 0)' and whose key reads 'Not a function'. The local page had described that figure in prose; it is now recreated as the sideways parabola x = y^2 - 3, matching the source's stated vertex. Re-derived: x = y^2 - 3 has two y-values for every x > -3 (e.g. x=1 gives y=±2), so it fails the vertical line test and is not a function. Options and answer unchanged."
+  },
   "4097175028b4db1d": {
    "verdict": "ok"
   },
@@ -5966,8 +5993,9 @@
   "40f49815ff1b4414": {
    "verdict": "ok"
   },
-  "4105bcc2b4f5f014": {
-   "verdict": "ok"
+  "4106471ead931466": {
+   "verdict": "ok",
+   "note": "y = 3 is a horizontal line (no x-dependence). Snap-lattice points inside -7..7: (0,3), (3,3), (-3,3)."
   },
   "4109a65e756feaa3": {
    "verdict": "ok"
@@ -5978,6 +6006,9 @@
   "41302e4bab56b1be": {
    "verdict": "ok"
   },
+  "41349814ddcf9363": {
+   "verdict": "ok"
+  },
   "413a0dc7a7069609": {
    "verdict": "ok"
   },
@@ -5985,9 +6016,6 @@
    "verdict": "ok"
   },
   "4148f73b278d787c": {
-   "verdict": "ok"
-  },
-  "415ddbfea1c2afea": {
    "verdict": "ok"
   },
   "416041d4928afc3b": {
@@ -6023,10 +6051,6 @@
   },
   "4192aa0a5671d837": {
    "verdict": "ok"
-  },
-  "41977c5ac0a0b5f6": {
-   "verdict": "ok",
-   "note": "y=3x-1 passes through (0,-1) and (1,2); slope 3 and intercept -1 match the graded spec."
   },
   "41a50249bdc49f77": {
    "verdict": "ok"
@@ -6069,9 +6093,17 @@
    "verdict": "ok",
    "note": "Line segment runs from screen (69.1,27.1) to (304.9,262.9) on axes with origin(166,166), 14px/unit; the line is y=-x+3, so its x-intercept is (3,0), matching the declared answer."
   },
+  "41fb073ba827eafb": {
+   "verdict": "ok",
+   "note": "x=y^2: at y=-2,-1,1,2 -> x=4,1,1,4, plus vertex (0,0); points [[0,0],[1,1],[1,-1],[4,2],[4,-2]] all re-derived by direct substitution and confirmed against pinned CNXML solution image alt text ('(4,2) and (4,-2)... (1,1)/(1,-1)... vertex (0,0)'). All 5 targets inside grid -2..6/-4..4 and on the integer snap lattice (validator accepted)."
+  },
   "420655cacc5dfe33": {
    "verdict": "ok",
    "note": "f(8-i)=2(8-i)^2-3(8-i)=2(63-16i)-24+3i=126-32i-24+3i=102-29i; recomputed independently with node, matches CNXML ti_03_01_06."
+  },
+  "4207b7f59af74a99": {
+   "verdict": "ok",
+   "note": "4x+y>-4 has boundary 4x+y=-4 -> y=-4x-4, so slope -4 and intercept -4. Grid widened -7..7 -> -14..14 for plotPoints slack (7 reachable, was exactly 3)."
   },
   "42080d6a12869ab5": {
    "verdict": "ok",
@@ -6104,9 +6136,6 @@
    "note": "Practice long-division item 1 (remainder): same division as above; remainder 0, matching the CNXML solution."
   },
   "42806ac99107df01": {
-   "verdict": "ok"
-  },
-  "42a4e8cc440c8fe8": {
    "verdict": "ok"
   },
   "42c5b95ee912099f": {
@@ -6219,9 +6248,6 @@
    "verdict": "ok"
   },
   "43c33cd8f90c9aa5": {
-   "verdict": "ok"
-  },
-  "43d4aa82b8279cf1": {
    "verdict": "ok"
   },
   "43d5ec91dda7250e": {
@@ -6422,6 +6448,9 @@
   "45db1ece707ed635": {
    "verdict": "ok"
   },
+  "45e72284d2e69cb5": {
+   "verdict": "ok"
+  },
   "45f42526856f06ac": {
    "verdict": "ok"
   },
@@ -6493,9 +6522,6 @@
   "46abcdfba6879552": {
    "verdict": "ok"
   },
-  "46b24fd1f6547e09": {
-   "verdict": "ok"
-  },
   "46bc44ab6958c940": {
    "verdict": "ok"
   },
@@ -6556,9 +6582,6 @@
   "471c24720354a098": {
    "verdict": "ok"
   },
-  "472c65ff44350f6e": {
-   "verdict": "ok"
-  },
   "4732829dff03e7f2": {
    "verdict": "ok"
   },
@@ -6593,6 +6616,9 @@
   "479b420c7ea1b765": {
    "verdict": "ok",
    "note": "Repaired 2026-08-15. n(n+2)=99 gives n=9 or n=-11, so the pairs are 9,11 and -11,-9. Values were already right; the prompt now PRESCRIBES the graded order ('positives least to greatest, then their opposites in the same order') because upstream OpenStax uses three different orderings and grading here is ordered."
+  },
+  "479f1fc01a4319dd": {
+   "verdict": "ok"
   },
   "47a1f4c3b02771e0": {
    "verdict": "ok"
@@ -6686,9 +6712,6 @@
   "482d5ac1b8efe630": {
    "verdict": "ok"
   },
-  "48374177ef692c69": {
-   "verdict": "ok"
-  },
   "4863dcf5730ea69d": {
    "verdict": "ok"
   },
@@ -6703,6 +6726,10 @@
   },
   "488cf398e3cda678": {
    "verdict": "ok"
+  },
+  "488fbfd2e50e1459": {
+   "verdict": "ok",
+   "note": "y=4x through the origin; answer {slope:4,intercept:0} matches, derived points grade correct, a reciprocal-slope guess grades interceptRight not correct."
   },
   "4898e947f15a4357": {
    "verdict": "ok"
@@ -6723,9 +6750,6 @@
    "verdict": "ok"
   },
   "48ce8a6f1c83f525": {
-   "verdict": "ok"
-  },
-  "48ea13715db0c903": {
    "verdict": "ok"
   },
   "48f27516e0019c0b": {
@@ -6835,9 +6859,6 @@
   "4a0b18180b9c1308": {
    "verdict": "ok"
   },
-  "4a19ba20569cd58a": {
-   "verdict": "ok"
-  },
   "4a22f972283a914d": {
    "verdict": "ok"
   },
@@ -6887,10 +6908,7 @@
   "4a943916e81f6e54": {
    "verdict": "ok"
   },
-  "4a9535ccd55ced1d": {
-   "verdict": "ok"
-  },
-  "4aac174ac5de3c4b": {
+  "4a98c956513e4af2": {
    "verdict": "ok"
   },
   "4ab87881f911abd5": {
@@ -6914,9 +6932,6 @@
   "4adf97e3dbbd016d": {
    "verdict": "ok"
   },
-  "4ae665b4ffb0b0a0": {
-   "verdict": "ok"
-  },
   "4aff5f429834a859": {
    "verdict": "ok"
   },
@@ -6924,9 +6939,6 @@
    "verdict": "ok"
   },
   "4b0c1b98668950a7": {
-   "verdict": "ok"
-  },
-  "4b0e1d8443501577": {
    "verdict": "ok"
   },
   "4b2b66f132497257": {
@@ -7211,6 +7223,9 @@
   "4e6e32c2cdcda605": {
    "verdict": "ok"
   },
+  "4e7c92c87fc69c2b": {
+   "verdict": "ok"
+  },
   "4e82bed91880cef9": {
    "verdict": "ok",
    "note": "Vertex of h(t)=-4.9t^2+229t+234: k=2909.5612... rounds to 2909.56 (computed via node); matches CNXML solution for fs-id1165135571732."
@@ -7269,6 +7284,10 @@
   "4f5241c6da801556": {
    "verdict": "ok"
   },
+  "4f5ba0034c879217": {
+   "verdict": "ok",
+   "note": "recognition MC authored fresh from the -3x^2 Try It (CNXML fs-id1169148943450, printed 'Graph f(x)=-3x^2.'), section's keeper per the graph-recognition balance rule (page had 9 graphplots + 0 mode=graph MC before conversion, 14 graphplots after). 4 spec-first options on one grid (-3..3/-8..8): index0 a=1,c=-3 (mistakes the coefficient for a vertical shift, vertex (0,-3), no reflection/stretch), index1 a=3 (missing reflection, correct width), index2 a=-3 (CORRECT, answerIndex 2, matches -3x^2), index3 a=-1 (missing stretch, correct reflection). Each renders a genuinely different parabola (opening direction, width, and/or vertex differ) per §5a; rendered all four with svgshot.mjs and visually confirmed the shapes read as described."
+  },
   "4f650e45f41d6509": {
    "verdict": "ok"
   },
@@ -7291,9 +7310,6 @@
    "verdict": "ok"
   },
   "4f99f973e86cdf1f": {
-   "verdict": "ok"
-  },
-  "4f9b7b2ad112252a": {
    "verdict": "ok"
   },
   "4fa649dd1167f556": {
@@ -7397,6 +7413,10 @@
    "verdict": "ok",
    "note": "f(x)=x^5-5x^3+4x has degree 5 (leading coefficient of x^5 is 1, nonzero); max turning points = 5-1 = 4, by the section's own stated theorem."
   },
+  "50ea86a5ab9cec3a": {
+   "verdict": "ok",
+   "note": "Point-slope from (2,5), m=-1/3: y-5=(-1/3)(x-2) => y = 17/3 - x/3, a non-terminating intercept written to full double precision as slope -0.3333333333333333, intercept 5.666666666666667 (matches authored values). On the -7..7/-7..7 grid with snap 1, y is an integer only when x ≡ 2 (mod 3); candidates x=-7,-4,-1,2,5,8 within [-7,7] narrow to x=-7 (y=8, off-grid), x=-4 (y=7), x=-1 (y=6), x=2 (y=5), x=5 (y=4), x=8 (off-grid). Four lattice points are reachable — (-4,7), (-1,6), (2,5), (5,4) — comfortably above the required plotPoints:3."
+  },
   "510b130ab3bb723b": {
    "verdict": "ok"
   },
@@ -7444,6 +7464,9 @@
    "verdict": "ok"
   },
   "51b60b08e7afc85a": {
+   "verdict": "ok"
+  },
+  "51b974b0c2d0fd3a": {
    "verdict": "ok"
   },
   "51bc945a1d62614f": {
@@ -7527,6 +7550,10 @@
   "52f8c42943e4ef3a": {
    "verdict": "ok"
   },
+  "5304fe1e1a094961": {
+   "verdict": "ok",
+   "note": "Through (0,3) with slope -2/5: y = -0.4x + 3, and the displayed (5,1) satisfies it. Grid widened -7..7 -> -14..14 for plotPoints slack (5 reachable, was exactly 3) — matching the -14..14 sibling directly below it."
+  },
   "5311b2f4f698823e": {
    "verdict": "ok"
   },
@@ -7603,9 +7630,6 @@
   "53e21982a1ee5289": {
    "verdict": "ok"
   },
-  "53e4a68851609905": {
-   "verdict": "ok"
-  },
   "53ee124447eff1ca": {
    "verdict": "ok"
   },
@@ -7666,6 +7690,9 @@
   "549046c1d37516a1": {
    "verdict": "ok"
   },
+  "549558d2ad92badf": {
+   "verdict": "ok"
+  },
   "54a5b9461caa78f0": {
    "verdict": "ok"
   },
@@ -7677,9 +7704,6 @@
    "verdict": "ok"
   },
   "54c4047a7d772a84": {
-   "verdict": "ok"
-  },
-  "54cb2d8014ffcc95": {
    "verdict": "ok"
   },
   "54d74deeb4356c8f": {
@@ -7705,9 +7729,6 @@
    "verdict": "ok"
   },
   "5504dde457477c87": {
-   "verdict": "ok"
-  },
-  "55095723c2650c83": {
    "verdict": "ok"
   },
   "551133f0851590b9": {
@@ -7934,6 +7955,10 @@
   "573d4e5879a68178": {
    "verdict": "ok"
   },
+  "57489d7bf4e54a18": {
+   "verdict": "ok",
+   "note": "re-derived: f(x)=(x-3)^2+1=x^2-6x+10, vertex (3,1) on lattice; matches CNXML Try It (fs-id1169148957608); grid -1..7/-1..9 gives 5 reachable points (gpcheck slack 2)."
+  },
   "5749e96a663f29ea": {
    "verdict": "ok"
   },
@@ -8132,6 +8157,9 @@
    "verdict": "ok"
   },
   "59680f2ec4284ec6": {
+   "verdict": "ok"
+  },
+  "596d1b20e15cfa89": {
    "verdict": "ok"
   },
   "596d7357f2d7e9c1": {
@@ -8447,6 +8475,10 @@
   "5c9f61ed168a2588": {
    "verdict": "ok"
   },
+  "5ca28b4653999b22": {
+   "verdict": "ok",
+   "note": "IA KC 07-12 §11.4, converted from prose options to rendered figures. Re-derived: 9(x^2-4x) - 25(y^2+2y) = 214 becomes 9(x-2)^2 - 36 - 25(y+1)^2 + 25 = 214, i.e. 9(x-2)^2 - 25(y+1)^2 = 225, so (x-2)^2/25 - (y+1)^2/9 = 1 — a hyperbola centered (2,-1) opening left and right with a=5 and vertices (-3,-1) and (7,-1), which is option 2 and agrees with the standard-form fill-in above it on the same page. The distractors render the printed prose distractors exactly: an ellipse at the same centre (0), the sign-flipped centre (-2,1) (1), and the up-down orientation with vertices (2,-4) and (2,2) (3). Order and answer position unchanged."
+  },
   "5ca491547d7aa14c": {
    "verdict": "ok"
   },
@@ -8725,6 +8757,9 @@
   "6046142d37096694": {
    "verdict": "ok"
   },
+  "604b992658f9746a": {
+   "verdict": "ok"
+  },
   "6051fa9a31a475d0": {
    "verdict": "ok"
   },
@@ -8865,9 +8900,6 @@
    "verdict": "ok"
   },
   "626ecdb780af0cf3": {
-   "verdict": "ok"
-  },
-  "62911851d1dd2603": {
    "verdict": "ok"
   },
   "629779e2099e3fb3": {
@@ -9099,6 +9131,9 @@
   "6503ea7f39f5c34f": {
    "verdict": "ok"
   },
+  "651387536a7c8c47": {
+   "verdict": "ok"
+  },
   "6521ef7d7f2ab571": {
    "verdict": "ok"
   },
@@ -9113,6 +9148,10 @@
   },
   "65389ac166b1a20f": {
    "verdict": "ok"
+  },
+  "653cdb4185a86ed8": {
+   "verdict": "ok",
+   "note": "x=-y^2 mirror of the previous: at y=-2,-1,1,2 -> x=-4,-1,-1,-4, plus vertex (0,0); points match CNXML Try It solution ('(-4,2) and (-4,-2)'). All inside grid -6..2/-4..4 and on lattice."
   },
   "65417e028567db91": {
    "verdict": "ok"
@@ -9170,9 +9209,6 @@
   "65a7f4530d9311ba": {
    "verdict": "ok"
   },
-  "65b4bff47fef5e56": {
-   "verdict": "ok"
-  },
   "65b759b4c995dd0c": {
    "verdict": "ok"
   },
@@ -9214,6 +9250,10 @@
    "verdict": "ok",
    "note": "d=-2 so asymptote y=-2, matches CNXML solution."
   },
+  "65f7d4f2c02cecc0": {
+   "verdict": "ok",
+   "note": "EA KC 06-10 §10.5, Ch.10 Practice Test 'For each parabola, find (a) which way it opens...' for y=3x^2+6x+8 (m82559, fs-id1166502099710; key part (a) 'up'). Re-derived: 3x^2+6x+8 = 3(x+1)^2+5, so the parabola opens upward with vertex (-1,5) and y-intercept (0,8) — option 0 is exactly that curve. Option 1 is its reflection in the x-axis, -3x^2-6x-8 = -3(x+1)^2-5, which opens downward with vertex (-1,-5) and y-intercept (0,-8): the distractor the printed option 'down' described. The exercise was moved below the axis-of-symmetry and vertex fill-ins about the same parabola so the option figures cannot answer them."
+  },
   "66115bcd9071a6eb": {
    "verdict": "ok"
   },
@@ -9248,6 +9288,9 @@
    "verdict": "ok"
   },
   "66828e62ceb9ec90": {
+   "verdict": "ok"
+  },
+  "6694b4fee483bd84": {
    "verdict": "ok"
   },
   "6697db2332864ec1": {
@@ -9607,6 +9650,10 @@
   "6a2bca073aa498ba": {
    "verdict": "ok"
   },
+  "6a3133f38c0e1683": {
+   "verdict": "ok",
+   "note": "x=-4(y+2)^2+4: vertex (h,k)=(4,-2); y-intercepts (x=0): (y+2)^2=1 -> y=-1,-3 -> (0,-1),(0,-3), re-derived by node. Matches CNXML solution image alt text ('vertex (4,-2)... y intercepts (0,-1) and (0,-3)'). Distinct from worked Example 11.17 (x=-4(y+1)^2+4, vertex (4,-1)) immediately above -- different numbers, no leakage. Points inside grid -2..6/-6..2, integer lattice."
+  },
   "6a3525814c1e5851": {
    "verdict": "ok"
   },
@@ -9647,6 +9694,10 @@
   "6a913f013963f462": {
    "verdict": "ok"
   },
+  "6aa8192705d3b588": {
+   "verdict": "ok",
+   "note": "-x+4y=8 -> 4y=x+8 -> y=x/4+2, so slope 1/4 and intercept 2; x-intercept (-8,0), y-intercept (0,2). Grid widened -7..7 -> -14..14 for plotPoints slack; the widening also brings the x-intercept (-8,0) onto the grid, which an exercise asking to graph 'using the intercepts' needs."
+  },
   "6aad24626b67b773": {
    "verdict": "ok"
   },
@@ -9658,9 +9709,6 @@
    "verdict": "ok"
   },
   "6ab14b9ff341933a": {
-   "verdict": "ok"
-  },
-  "6abdb8c7f7a46c40": {
    "verdict": "ok"
   },
   "6ac8434c0641cd73": {
@@ -9792,9 +9840,6 @@
    "verdict": "ok"
   },
   "6c71ee518f9b375f": {
-   "verdict": "ok"
-  },
-  "6c75ed19eca57e83": {
    "verdict": "ok"
   },
   "6c7617bbdd926b4e": {
@@ -10013,9 +10058,6 @@
   "6eb53442917baf90": {
    "verdict": "ok"
   },
-  "6ebec5b56104451f": {
-   "verdict": "ok"
-  },
   "6ec01c4cf7e9703b": {
    "verdict": "ok"
   },
@@ -10084,9 +10126,6 @@
    "verdict": "ok",
    "note": "2^-1=1/2 converts to log_2(1/2)=-1; distractors are base/argument/exponent swaps."
   },
-  "6fb2005539381e24": {
-   "verdict": "ok"
-  },
   "6fc19f48427b529e": {
    "verdict": "ok"
   },
@@ -10105,6 +10144,10 @@
   },
   "70047116ea98e06f": {
    "verdict": "ok"
+  },
+  "70277ed940521965": {
+   "verdict": "ok",
+   "note": "Point-slope from (1, -2) with m = 3/4: y + 2 = (3/4)(x - 1), so y = 0.75x - 2.75 (matches the authored slope/intercept). Grid widened from -7..7 to -14..14 for the same reason as the sibling above: y is an integer exactly when x = 1 (mod 4), giving seven reachable snap-1 lattice points inside the grid -- (-11,-11), (-7,-8), (-3,-5), (1,-2), (5,1), (9,4), (13,7) -- where the old -7..7 grid admitted exactly three, forcing a unique solution set. Answer values themselves unchanged and re-derived."
   },
   "702b8d9c2357e9ab": {
    "verdict": "ok"
@@ -10253,9 +10296,6 @@
   "71f61922d9aa1c1e": {
    "verdict": "ok"
   },
-  "720bf7198fbc821a": {
-   "verdict": "ok"
-  },
   "720d7389c3403562": {
    "verdict": "ok"
   },
@@ -10273,9 +10313,6 @@
    "verdict": "ok"
   },
   "721d2b7a1d2012fe": {
-   "verdict": "ok"
-  },
-  "7223ad5c6d0c4e4d": {
    "verdict": "ok"
   },
   "7223c43eef817da6": {
@@ -10384,6 +10421,10 @@
   "73c43d185bddf81f": {
    "verdict": "ok"
   },
+  "73d0afdd398eaa23": {
+   "verdict": "ok",
+   "note": "x=-2 vertical line; answer {x:-2} matches, checkGraphPlot grades the derived placement correct and a flipped-sign guess incorrect."
+  },
   "73d1866a8fdc3adc": {
    "verdict": "ok"
   },
@@ -10398,6 +10439,10 @@
   },
   "741ef79f4a889d15": {
    "verdict": "ok"
+  },
+  "7426efa886557fbc": {
+   "verdict": "ok",
+   "note": "re-derived vertex (-1,8) from f(x)=-3x^2-6x+5: axis x=-(-6)/(2*-3)=-1, f(-1)=-3+6+5=8. gpcheck: 5 reachable lattice points on grid -5..3 x -6..10, slack 2."
   },
   "7427d569f688cba2": {
    "verdict": "ok"
@@ -10446,9 +10491,6 @@
   "7468ed9de3e9e123": {
    "verdict": "ok"
   },
-  "7469d47e1d7f07e5": {
-   "verdict": "ok"
-  },
   "74845e65b4652592": {
    "verdict": "ok"
   },
@@ -10462,6 +10504,9 @@
    "verdict": "ok"
   },
   "74a970864ecb560e": {
+   "verdict": "ok"
+  },
+  "74b50456031a4ead": {
    "verdict": "ok"
   },
   "74b572d9c2863b41": {
@@ -10506,9 +10551,6 @@
    "verdict": "ok"
   },
   "75025a6fa2baa7aa": {
-   "verdict": "ok"
-  },
-  "750327e294b8e1f4": {
    "verdict": "ok"
   },
   "7510630fa971decd": {
@@ -10562,10 +10604,6 @@
   "75e051f15fba03c9": {
    "verdict": "ok"
   },
-  "75e9741e3ea6d3d4": {
-   "verdict": "ok",
-   "note": "Re-derived: f(x)=-(3/4)x+6 has slope -0.75, intercept 6; on the snap-1 grid [-8,10]x[-8,8] the line's only reachable lattice points are f(0)=6, f(4)=3, f(8)=0, so plotPoints:3 is exactly satisfiable and matches the source solution's three marked points (0,6),(4,3),(8,0)."
-  },
   "75f6a11f7a48bd6f": {
    "verdict": "ok"
   },
@@ -10590,9 +10628,6 @@
   "763698b5110f5858": {
    "verdict": "ok"
   },
-  "763e7fcaf2ca6e6d": {
-   "verdict": "ok"
-  },
   "7646fd64415c92a9": {
    "verdict": "ok"
   },
@@ -10600,9 +10635,6 @@
    "verdict": "ok"
   },
   "7651458a7c21a2ce": {
-   "verdict": "ok"
-  },
-  "76589bde38351b90": {
    "verdict": "ok"
   },
   "76628f44b19a3059": {
@@ -10616,6 +10648,10 @@
   },
   "76a701297b1cc43e": {
    "verdict": "ok"
+  },
+  "76b18cd8ce3022a1": {
+   "verdict": "ok",
+   "note": "Same exercise as 416d6f66430fe8d3, re-hashed after the parent tightened the shared option grid from y -7..3 to y -4..3. The mathematics is untouched; the change gives the discriminating feature more room, since what separates option 0 from option 1 is a peak 0.25 above the axis versus a dip 0.25 below it, and at the old range that band was a few pixels tall. Re-derived: y=-x^2+5x-6 opens downward, axis x=-5/(2*-1)=2.5, vertex (2.5,0.25), and -(x-2)(x-3) gives x-intercepts (2,0) and (3,0) — answerIndex 0 draws exactly that. Distractor 1 is the vertical reflection a=1,b=-5,c=6 (vertex (2.5,-0.25), same roots); distractor 2 is a=-1,b=5,c=-4 (vertex (2.5,2.25), roots 1 and 4). Rendered all three at the new range and confirmed the readability gate reports no real overlaps."
   },
   "76b37f8ed25bc785": {
    "verdict": "ok"
@@ -10772,6 +10808,10 @@
   "782a4805e82369aa": {
    "verdict": "ok"
   },
+  "782c024681bf2d35": {
+   "verdict": "ok",
+   "note": "EA KC 01-05 §5.1, from Ch.5 Review Exercises \"solve the following systems of equations by graphing\" (m82499, exercise fs-id1168345398688; key prints (3,-3) plus the answer graph). Re-derived independently: 3x+y=6 gives y=-3x+6; x+3y=-6 gives y=-x/3-2; -3x+6=-x/3-2 gives -8x/3=-8, x=3, y=-3. Substitution check: 3(3)+(-3)=6 and 3+3(-3)=-6. Authored system members {slope:-3,intercept:6} and {slope:-1/3,intercept:-2} are those two lines; on the -6..6 grid each has 5 snap-1 lattice points, and the crossing (3,-3) is inside the grid."
+  },
   "7836058e0354ae0a": {
    "verdict": "ok"
   },
@@ -10789,13 +10829,7 @@
   "78624dfe0434c46a": {
    "verdict": "ok"
   },
-  "7866c16121722a0e": {
-   "verdict": "ok"
-  },
   "786743ba2578ec1e": {
-   "verdict": "ok"
-  },
-  "78695c2a37d08468": {
    "verdict": "ok"
   },
   "786a1aa2e2b31682": {
@@ -10833,6 +10867,9 @@
    "verdict": "ok",
    "note": "The vertical segment is drawn at screen x=98 on the same axes, giving value x=-3, matching the declared answer 'x=-3'."
   },
+  "78edaadaf0b8c46e": {
+   "verdict": "ok"
+  },
   "78edc697e30dd52c": {
    "verdict": "ok"
   },
@@ -10848,6 +10885,10 @@
   },
   "7929f4a0ad6c7530": {
    "verdict": "ok"
+  },
+  "792be8ec4f20fd43": {
+   "verdict": "ok",
+   "note": "Vertical asymptotes of (2x-1)(2x+1)/((x-2)(x+3)): denominator zeros x=2, x=-3; numerator nonzero there (15, 35), so no cancellation - both are true vertical asymptotes and both lattice-reachable on the +-6 grid. Config asymptotes [{x:2},{x:-3}] matches."
   },
   "792ee7170d01a007": {
    "verdict": "ok"
@@ -11275,6 +11316,9 @@
   "7d6093dbdbd6a941": {
    "verdict": "ok"
   },
+  "7d60f41563672177": {
+   "verdict": "ok"
+  },
   "7d7147b7cbd8f6dd": {
    "verdict": "ok"
   },
@@ -11302,9 +11346,6 @@
   "7d9b8089fa9fecdd": {
    "verdict": "ok"
   },
-  "7d9f0f11a3c896e9": {
-   "verdict": "ok"
-  },
   "7da0a380a41ad70f": {
    "verdict": "ok"
   },
@@ -11313,6 +11354,10 @@
   },
   "7dab69f82c7eb094": {
    "verdict": "ok"
+  },
+  "7dce4d8a27d29020": {
+   "verdict": "ok",
+   "note": "re-derived: g(x)=2^x+1 shifts f(x)=2^x up 1, moving the horizontal asymptote y=0 to y=1; matches recorded answer. Line y=1 has 9 lattice points (x=-4..4) inside grid xMin=-4,xMax=4,yMin=-2,yMax=8, well above the >=2 asymptote minimum."
   },
   "7dd331bb7ca074da": {
    "verdict": "ok"
@@ -11447,9 +11492,6 @@
    "verdict": "ok",
    "note": "Computed with node: Math.cbrt(3*200/(4*Math.PI)) = 3.6278...; rounds to 3.63, matching the question's 'rounded to the nearest hundredth' instruction and the CNXML solution's stated '3.63 feet'."
   },
-  "7f6a7d1a75d8f689": {
-   "verdict": "ok"
-  },
   "7f722bc5334c432c": {
    "verdict": "ok"
   },
@@ -11512,9 +11554,6 @@
    "verdict": "ok",
    "note": "The table above (x=0..9, f(x)=74,28,1,53,56,3,36,45,14,47) shows f(2)=1, so the unique solution to f(x)=1 is x=2, matching the declared answer."
   },
-  "8046b82bfbb76eeb": {
-   "verdict": "ok"
-  },
   "804bee8257527af8": {
    "verdict": "ok"
   },
@@ -11522,9 +11561,6 @@
    "verdict": "ok"
   },
   "80506005f1a0e946": {
-   "verdict": "ok"
-  },
-  "8056eefe4e131cc6": {
    "verdict": "ok"
   },
   "8057049125f1778c": {
@@ -11630,6 +11666,10 @@
   },
   "818f59b9fe9e82b7": {
    "verdict": "ok"
+  },
+  "81909b4241bd209f": {
+   "verdict": "ok",
+   "note": "y = -x - 3 falls with slope -1 through (0,-3); option 2 draws slope -1 intercept -3. Option 0 is the sign-flipped y = x - 3 and option 1 is y = -3x - 1 (slope and intercept read in the wrong order). Rendered and inspected."
   },
   "8192baedf5ab7fb6": {
    "verdict": "ok"
@@ -11754,9 +11794,6 @@
    "verdict": "ok"
   },
   "82bd191a58b3db59": {
-   "verdict": "ok"
-  },
-  "82c1cbf221d34caa": {
    "verdict": "ok"
   },
   "82eca8120023ad62": {
@@ -12067,6 +12104,10 @@
   "85c3bb5dc444745e": {
    "verdict": "ok"
   },
+  "85c442b72e294f98": {
+   "verdict": "ok",
+   "note": "re-derived f(x)=cbrt(x-2) at x=-6,1,2,3: f(-6)=-2, f(1)=-1, f(2)=0, f(3)=1 (Math.cbrt verified in node); all on integer lattice inside grid [-9,9]x[-3,3]. Note: CNXML fs-id1169147868760's media alt-text for this Try It misdescribes one of these points as (3,2) instead of (3,1) (cbrt(3-2)=cbrt(1)=1, not 2) -- an alt-text-only source defect, flagged for the errata log, not something I changed. The authored points here use the correct value."
+  },
   "85c90e582cbd1fd0": {
    "verdict": "ok"
   },
@@ -12107,9 +12148,6 @@
    "verdict": "ok"
   },
   "8622c177116d46f0": {
-   "verdict": "ok"
-  },
-  "8631fe2ba39f95b5": {
    "verdict": "ok"
   },
   "863382cc6a749368": {
@@ -12165,9 +12203,6 @@
    "verdict": "ok",
    "note": "t = sqrt(600)/4 = 24.49489.../4 = 6.1237, which rounds to 6.1 seconds. Recipient corrected to 'the lifeboat' (upstream errata #42, m82553 fs-id1169595303723); the sibling 900-foot hiker exercise gives sqrt(900)/4 = 7.5, matching its own printed answer."
   },
-  "86e7f3261451922b": {
-   "verdict": "ok"
-  },
   "86ee896e8202b479": {
    "verdict": "ok"
   },
@@ -12208,9 +12243,6 @@
    "verdict": "ok"
   },
   "87447af8e87b0727": {
-   "verdict": "ok"
-  },
-  "8744a4c1b9835058": {
    "verdict": "ok"
   },
   "8748373d11d8d393": {
@@ -12326,9 +12358,6 @@
   "88fceb80e03314db": {
    "verdict": "ok"
   },
-  "8924f822f687783c": {
-   "verdict": "ok"
-  },
   "893034aa75fe8352": {
    "verdict": "ok"
   },
@@ -12435,6 +12464,9 @@
   "8a5d852bf5b3c9f6": {
    "verdict": "ok"
   },
+  "8a789ad9a870c393": {
+   "verdict": "ok"
+  },
   "8a953aa74edb1840": {
    "verdict": "ok"
   },
@@ -12475,8 +12507,9 @@
   "8afd68c2205f7a56": {
    "verdict": "ok"
   },
-  "8b19355b48c4ab3b": {
-   "verdict": "ok"
+  "8b11e6f077df94f8": {
+   "verdict": "ok",
+   "note": "x=-y^2-4y+12: axis y=-b/2a=-2, vertex x=-4+8+12=16 -> (16,-2); x-intercept (y=0) x=12 -> (12,0), mirror across axis y=-2 is (12,-4); y-intercepts (x=0): y^2+4y-12=0 -> y=2,-6 -> (0,2),(0,-6). All re-derived by node and match CNXML solution image alt text verbatim ('vertex (16,-2)', 'x intercept (12,0)'). All 5 points inside grid -2..18/-8..4, integer lattice."
   },
   "8b1af31d98d48d31": {
    "verdict": "ok",
@@ -12500,7 +12533,7 @@
   "8b49ff924c292f3d": {
    "verdict": "ok"
   },
-  "8b54b35d21f1cf8f": {
+  "8b549fcd359455d8": {
    "verdict": "ok"
   },
   "8b598af551c1f08e": {
@@ -12582,6 +12615,10 @@
   "8c64cab0bd96dd5a": {
    "verdict": "ok"
   },
+  "8c77bf04420fa858": {
+   "verdict": "ok",
+   "note": "re-derived: x-3y=-3 -> y=(1/3)x+1 (slope 0.3333333333333333, intercept 1), x+y=5 -> y=-x+5 (slope -1, intercept 5); intersection (3,2) matches CNXML m81427 Try It fs-id1167835367659 verbatim. Grid -6..6 matches sibling elementary-algebra/05-systems-of-linear-equations/01 conversion of the identical system. Line 1 reaches 5 snap points (x=-6,-3,0,3,6), line 2 reaches 8 (x=-1..6); both >=2, gpcheck parses clean."
+  },
   "8c814c1858294f42": {
    "verdict": "ok"
   },
@@ -12599,6 +12636,10 @@
   },
   "8cc1d3f2a19c6bbe": {
    "verdict": "ok"
+  },
+  "8cc998b29469b379": {
+   "verdict": "ok",
+   "note": "Parent re-authored this graph-mode MC's option set. Re-derived independently: y=x+2 and y=-2x+2 meet where x+2=-2x+2, so 3x=0, x=0 and y=2 — the intersection is (0,2), and answerIndex 1 is the option drawing those two lines with a point marked at (0,2). Distractors each differ in the DRAWN lines, not in a moved dot: index 0 flips both intercept signs (y=x-2, y=-2x-2, crossing (0,-2)), index 2 is a parallel pair (y=x+2, y=x-2, no solution), index 3 flips the second slope's sign (y=x+2, y=2x+2, both rising). The original option set had index 0 carrying the identical correct lines with a decoy dot, which no truthful ariaLabel can describe without naming the answer, and — because both source lines share the y-intercept 2 — every intercept-preserving distractor crossed at (0,2) too."
   },
   "8ccaa312417285c4": {
    "verdict": "ok"
@@ -12674,8 +12715,16 @@
   "8dc54c2b3bde9266": {
    "verdict": "ok"
   },
+  "8dcbaeee9b471b05": {
+   "verdict": "ok",
+   "note": "IA KC 07-12 §9.6, converted from the prose options 'down'/'up' to rendered figures. Re-derived: y = -x^2-8x-16 = -(x+4)^2, so it opens downward with vertex (-4,0) and y-intercept (0,-16) — option 0. Option 1 is its reflection (x+4)^2, opening upward from the same vertex: the printed 'up' distractor. Both options are drawn in the same window with only the sign of a differing. The exercise was moved to the end of its six-question block so the option figures cannot answer the axis, vertex, intercept and maximum fill-ins about the same parabola."
+  },
   "8dceeabd6723aef0": {
    "verdict": "ok"
+  },
+  "8dd450120c09875b": {
+   "verdict": "ok",
+   "note": "IA KC 01-06 §3.6, converted from prose options to rendered figures. Re-derived: f(x)=x^2+1 has a=1>0 and is x^2 shifted up one, so it opens upward with vertex (0,1) — option 1. The distractors render the printed prose distractors exactly: (x-1)^2, an upward parabola with vertex (1,0) (0); the line y=x+1 through (0,1) (2); and -x^2+1, a downward parabola with vertex (0,1) (3). Option order and answer position unchanged."
   },
   "8dd82aec163588cf": {
    "verdict": "ok"
@@ -12734,9 +12783,6 @@
   "8e75de6eef04be96": {
    "verdict": "ok"
   },
-  "8e76953166821273": {
-   "verdict": "ok"
-  },
   "8e83f0fa1434141f": {
    "verdict": "ok"
   },
@@ -12765,9 +12811,6 @@
    "verdict": "ok"
   },
   "8eff835562206ec8": {
-   "verdict": "ok"
-  },
-  "8f1298b89b846070": {
    "verdict": "ok"
   },
   "8f1b0b728b6773d2": {
@@ -12864,9 +12907,6 @@
    "verdict": "ok",
    "note": "Vertex form from vertex (-4,7) and point (0,0): a(0+4)^2+7=0 => a=-7/16; matches CNXML solution."
   },
-  "903dfd800ea2b819": {
-   "verdict": "ok"
-  },
   "90451fd0c3c95453": {
    "verdict": "ok"
   },
@@ -12897,6 +12937,10 @@
   },
   "908fda56f900eed8": {
    "verdict": "ok"
+  },
+  "90984f397a54ccb0": {
+   "verdict": "ok",
+   "note": "IA KC 07-12 §11.3, converted from prose options to rendered figures. Re-derived: in x^2/16 + y^2/81 = 1 the larger denominator 81 sits under y^2, so the ellipse is vertical with a=9 and b=4: vertices (0,±9), co-vertices (±4,0) — option 0. The distractors render the printed prose distractors exactly: the denominators used as distances without square roots, (0,±81) and (±16,0) (1), the correct ellipse rotated to horizontal (2), and a circle of radius 9 (3). Order and answer position unchanged; the shared window is ±90 because distractor 1 reaches y=±81."
   },
   "90a683f15c788a99": {
    "verdict": "ok"
@@ -12933,6 +12977,10 @@
   "910bed745984eca5": {
    "verdict": "ok"
   },
+  "910c6f470d5fb565": {
+   "verdict": "ok",
+   "note": "re-derived: y=-x-3 has slope -1, y-intercept (0,-3); default -7..7 grid (bare {}) gives 12 reachable snap-lattice points for plotPoints:3, slack 9 (gpcheck)."
+  },
   "9114ac902b834fba": {
    "verdict": "ok"
   },
@@ -12953,6 +13001,10 @@
   },
   "917395a128a9b77e": {
    "verdict": "ok"
+  },
+  "917442e228fb9146": {
+   "verdict": "ok",
+   "note": "Point (-1,-2) matches the answer JSON and checkGraphPlot grades it correct."
   },
   "917a0f8f99b677bb": {
    "verdict": "ok"
@@ -13129,9 +13181,6 @@
   "938359b389c3a2fd": {
    "verdict": "ok"
   },
-  "939bff44b6412900": {
-   "verdict": "ok"
-  },
   "93a7d338b99e0319": {
    "verdict": "ok"
   },
@@ -13147,16 +13196,10 @@
   "93c0beee34385794": {
    "verdict": "ok"
   },
-  "93c0e0cdb827f77e": {
-   "verdict": "ok"
-  },
   "93c91ce43633c70e": {
    "verdict": "ok"
   },
   "93cd3bb515db83e6": {
-   "verdict": "ok"
-  },
-  "93d93894414ceca2": {
    "verdict": "ok"
   },
   "93e3f3a89afef20c": {
@@ -13197,9 +13240,6 @@
    "verdict": "ok",
    "note": "Section Exercise 29 part 2: b = 7/tan(30deg) = 7 sqrt3 = 12.1244, computed with node; matches CNXML solution 'b=7 sqrt3'."
   },
-  "942daacc5658091f": {
-   "verdict": "ok"
-  },
   "94313154b4ed0c46": {
    "verdict": "ok",
    "note": "log_10(1,000,000)=6 is 10^6=1,000,000 by definition; matches CNXML Try It 1a."
@@ -13237,9 +13277,6 @@
   "94964abb930c0e86": {
    "verdict": "ok",
    "note": "Direct application of the section's own Graphical-Behavior note (touch = even multiplicity); matches CNXML Verbal fs-id1165135621844 solution (\"factor raised to an even power\")."
-  },
-  "94aae2c9cc695939": {
-   "verdict": "ok"
   },
   "94ad2c2d043dacf4": {
    "verdict": "ok"
@@ -13404,6 +13441,10 @@
   "96a4330396002343": {
    "verdict": "ok"
   },
+  "96aa72b2c1dbd1e4": {
+   "verdict": "ok",
+   "note": "-3x+y=-1 gives y=3x-1 and 2x+y=4 gives y=-2x+4, meeting at (1,2), which satisfies both printed equations; option 1 draws that pair and marks (1,2). Option 0 swaps the intercepts between the two slopes so the crossing moves to (-1,1); option 2 is a parallel pair with no solution. Rendered and inspected."
+  },
   "96b7620341392737": {
    "verdict": "ok"
   },
@@ -13487,9 +13528,6 @@
    "verdict": "ok"
   },
   "974abf8ad1a1fc4a": {
-   "verdict": "ok"
-  },
-  "974cf97b9c0bdbe9": {
    "verdict": "ok"
   },
   "97556f0ff720f767": {
@@ -13583,6 +13621,9 @@
   "9843da5e02ce1b77": {
    "verdict": "ok"
   },
+  "984d31ebc5d6c8d3": {
+   "verdict": "ok"
+  },
   "98539db7756c2b7e": {
    "verdict": "ok"
   },
@@ -13623,6 +13664,10 @@
   },
   "98a964b04491c2e3": {
    "verdict": "ok"
+  },
+  "98ba259ac423288d": {
+   "verdict": "ok",
+   "note": "The question names the point (5,2), which is on the snap-1 lattice inside the -7..7 grid; checkGraphPlot grades [[5,2]] correct, the reversed [[2,5]] incorrect, and the near miss [[5,1]] incorrect."
   },
   "98bc9031f5ec3ea4": {
    "verdict": "ok"
@@ -13677,9 +13722,6 @@
    "verdict": "ok"
   },
   "9969ac75e165585d": {
-   "verdict": "ok"
-  },
-  "9971e5f187c89781": {
    "verdict": "ok"
   },
   "997c830e1b5e8bb5": {
@@ -13844,6 +13886,9 @@
   "9b37cda8b877d6fc": {
    "verdict": "ok"
   },
+  "9b37e9a0fc15e690": {
+   "verdict": "ok"
+  },
   "9b3a26d563f2e081": {
    "verdict": "ok"
   },
@@ -13966,6 +14011,10 @@
   "9c88eb5083d3ef81": {
    "verdict": "ok"
   },
+  "9cac09ac74b776d9": {
+   "verdict": "ok",
+   "note": "x=3(y-1)^2+2 standard form x=a(y-k)^2+h with k=1,h=2 -> vertex (2,1); x-intercept (y=0): x=3(1)+2=5 -> (5,0), mirror across axis y=1 is (5,2). All re-derived and match CNXML Try It (module m81413, immediately after Example 11.16's different equation x=2(y-2)^2+1, vertex (1,2) -- no worked-example leakage, numbers differ). Points inside grid -1..8/-3..5, integer lattice."
+  },
   "9cb7ce06c65d5254": {
    "verdict": "ok"
   },
@@ -14065,8 +14114,9 @@
   "9d95bddc71ec44f3": {
    "verdict": "ok"
   },
-  "9d96a6e0b8d67f52": {
-   "verdict": "ok"
+  "9da3c79f5e3fcb75": {
+   "verdict": "ok",
+   "note": "y = x is already solved for y: slope 1, intercept 0. Snap-lattice points on the line inside -7..7: (0,0), (1,1), (-1,-1)."
   },
   "9da50414c94fc261": {
    "verdict": "ok"
@@ -14133,9 +14183,6 @@
    "verdict": "ok"
   },
   "9e5f98a076b3759f": {
-   "verdict": "ok"
-  },
-  "9e6dad5bfbcacf72": {
    "verdict": "ok"
   },
   "9e6e2f60b7047d53": {
@@ -14390,6 +14437,10 @@
   },
   "a1fcd711338cb14b": {
    "verdict": "ok"
+  },
+  "a2105e69f2807d2e": {
+   "verdict": "ok",
+   "note": "y=-x^2+8x-12: vertex (4,4) and roots (2,0),(6,0) re-derived by node (x=-b/2a=4, y=4; x^2-8x+12=(x-2)(x-6)). quadratic answer {a:-1,b:8,c:-12} matches. gpcheck: 7 reachable integer lattice points on grid -1..9/-6..5, need 3 -> slack 4."
   },
   "a2180cb54b7b7856": {
    "verdict": "ok"
@@ -14692,6 +14743,10 @@
   "a5922df4a28b538b": {
    "verdict": "ok"
   },
+  "a5983e27540303fc": {
+   "verdict": "ok",
+   "note": "Point (3,-5) matches the answer JSON and checkGraphPlot grades it correct."
+  },
   "a598e953951316fd": {
    "verdict": "ok"
   },
@@ -14725,14 +14780,12 @@
   "a5efed8a574af72f": {
    "verdict": "ok"
   },
-  "a5f44740ee9a7ff4": {
-   "verdict": "ok"
-  },
   "a5f8a19f4d4b6f50": {
    "verdict": "ok"
   },
   "a60a6736bf324fcf": {
-   "verdict": "ok"
+   "verdict": "ok",
+   "note": "Restored multiplechoice, retained as one of prealgebra ch11's two graph-recognition items. Derivation: 2x + y = 2 solved for y gives y = -2x + 2, slope -2 (falling), y-intercept (0, 2); at x=1, y=0 and at x=2, y=-2. Option [0] is labelled with exactly those three points and is the key (answerIndex=0) -- correct. Option [1] rises through (1, 4), i.e. slope +2 (slope sign inverted); option [2] crosses at (0, -2), i.e. intercept sign inverted. Both distractors are wrong, so exactly one option grades correct."
   },
   "a619dcd00744775f": {
    "verdict": "ok"
@@ -14779,6 +14832,10 @@
   "a6767497e9d2e04c": {
    "verdict": "ok"
   },
+  "a677ac35c2a2fba9": {
+   "verdict": "ok",
+   "note": "4x + 2y = 8 solves to y = -2x + 4, matching the authored slope -2 and intercept 4; 13 snap-1 lattice points are reachable on the -12..12 grid against plotPoints 3, checkGraphPlot grades three of them correct, and the preceding example's table points (0,-2),(3,0),(6,2) now grade incorrect. Equation restored to the pinned CNXML Try It (m82481) that follows the 2x-3y=6 example."
+  },
   "a67bc1538d411ab1": {
    "verdict": "ok"
   },
@@ -14824,6 +14881,10 @@
   "a6f6a0b8e4f46f6c": {
    "verdict": "ok",
    "note": "ln x=4 => x=e^4. Independently solved by isolating ln x."
+  },
+  "a6f751c13834f644": {
+   "verdict": "ok",
+   "note": "re-derived vertex (1,2) from f(x)=x^2-2x+3: axis x=1, f(1)=1-2+3=2. gpcheck: 7 reachable lattice points on grid -4..6 x -2..12, slack 4."
   },
   "a6fc093c982d9ecb": {
    "verdict": "ok"
@@ -14950,6 +15011,13 @@
   "a82d97bf14baf8e5": {
    "verdict": "ok"
   },
+  "a8303df0ecb0a270": {
+   "verdict": "ok",
+   "note": "IA KC 01-06 §3.1, Ch.3 Practice Test 'Graph the line for each of the following equations: y = 5/3 x - 1' (m81374), whose key prints the answer graph through (-3,-6), (0,-1) and (3,4). Re-derived: 5/3(-3)-1 = -6, 5/3(0)-1 = -1, 5/3(3)-1 = 4, all on the line. Authored {slope:5/3,intercept:-1,plotPoints:3}; the grid is -14..14 rather than the section default because on -7..7 the line reaches exactly three lattice points, which would leave the learner no choice — on -14..14 it reaches six."
+  },
+  "a844e4f171dcdf6b": {
+   "verdict": "ok"
+  },
   "a84cdf057dbf53f9": {
    "verdict": "ok"
   },
@@ -14974,12 +15042,12 @@
   "a8979a2f8c766b96": {
    "verdict": "ok"
   },
-  "a8a196124885abaf": {
-   "verdict": "ok",
-   "note": "graphplot quadratic answer {a:1,b:-2,c:0} is the exact general-form coefficients of f(x)=x^2-2x."
-  },
   "a8a19f5e51b64c24": {
    "verdict": "ok"
+  },
+  "a8b107bb9bb1a3e5": {
+   "verdict": "ok",
+   "note": "x=2(y-3)^2+2: vertex (h,k)=(2,3); at y=2 and y=4, x=2(1)+2=4 for both (mirror pair across axis y=3). The equation's own x-intercept (y=0) is (20,0), off any reasonable grid, so the mirror-pair-at-y=2,4 substitute (proposal's approach) was used instead and re-verified by node. Points inside grid -1..8/-1..7, integer lattice."
   },
   "a8b35629a2c99ecf": {
    "verdict": "ok"
@@ -14998,9 +15066,6 @@
    "verdict": "ok"
   },
   "a8d3ad5be82ba952": {
-   "verdict": "ok"
-  },
-  "a8df0703d5001c0e": {
    "verdict": "ok"
   },
   "a8e00609c7b6d6c0": {
@@ -15211,6 +15276,9 @@
   "ab2cc69eb4463f17": {
    "verdict": "ok"
   },
+  "ab3038c1e5d423ac": {
+   "verdict": "ok"
+  },
   "ab33c707cab83edd": {
    "verdict": "ok"
   },
@@ -15356,6 +15424,10 @@
   "acc35f3e5db13c2c": {
    "verdict": "ok"
   },
+  "acc8978e586984d4": {
+   "verdict": "ok",
+   "note": "x=-2(y+3)^2+2: vertex (h,k)=(2,-3); y-intercepts (x=0): (y+3)^2=1 -> y=-2,-4 -> (0,-2),(0,-4), re-derived by node and matches CNXML solution image alt text verbatim. Points inside grid -4..4/-7..1, integer lattice."
+  },
   "acd189c8a2b89760": {
    "verdict": "ok",
    "note": "-x^4: even exponent, coefficient -1 (negative) -> both ends decrease without bound. Matches CNXML fs-id1165137678592."
@@ -15439,6 +15511,10 @@
   },
   "adb27d3ee4d80f81": {
    "verdict": "ok"
+  },
+  "adb59ec9fd8b7401": {
+   "verdict": "ok",
+   "note": "Recognition MC authored for the rule-4 keeper: correct option (index 2) is a=1,b=-8,c=12, vertex=(-b/2a, f(4))=(4,-4) re-derived, roots (2,0)/(6,0) confirmed by factoring x^2-8x+12=(x-2)(x-6); the three distractors (vertex shifted to (5,-4) same shape, direction inverted at the same vertex, correct vertex with narrower a=4 giving roots (3,0)/(5,0)) each independently re-derived and rendered with svgshot.mjs to confirm they are visually distinct and wrong for exactly one reason."
   },
   "adb993a92473505f": {
    "verdict": "ok"
@@ -15536,9 +15612,6 @@
    "verdict": "ok",
    "note": "Vertex of f(x)=2x^2-10x+4: h=5/2,k=-17/2 (computed via node); matches CNXML solution for fs-id1165133344089 ('Minimum is -17/2... at 5/2')."
   },
-  "aea494dae156ca16": {
-   "verdict": "ok"
-  },
   "aea4f43b8fc1e423": {
    "verdict": "ok"
   },
@@ -15585,9 +15658,6 @@
    "verdict": "ok"
   },
   "af2a6f2049335776": {
-   "verdict": "ok"
-  },
-  "af38e1c1cedea625": {
    "verdict": "ok"
   },
   "af3e7e4555ccb895": {
@@ -15766,9 +15836,6 @@
   "b1a21712d21fc007": {
    "verdict": "ok"
   },
-  "b1a29b738b2f7c51": {
-   "verdict": "ok"
-  },
   "b1a3ea6410e95929": {
    "verdict": "ok"
   },
@@ -15833,6 +15900,10 @@
   },
   "b255fe9414d6cf61": {
    "verdict": "ok"
+  },
+  "b26851211df15846": {
+   "verdict": "ok",
+   "note": "EA KC 01-05 §5.1, from Ch.5 Review Exercises (m82499, exercise fs-id1168345384933; key prints (5,4) plus the answer graph). Re-derived independently: 2x-y=6 gives y=2x-6; setting 2x-6=4 gives x=5, y=4. Substitution check: 2(5)-4=6. Authored members {slope:2,intercept:-6} and {y:4}; on the -6..6 grid they have 7 and 13 snap-1 lattice points, and the crossing (5,4) is inside the grid."
   },
   "b29636b7d81596ff": {
    "verdict": "ok"
@@ -15921,9 +15992,6 @@
    "verdict": "ok"
   },
   "b39ea2cd161ccdbc": {
-   "verdict": "ok"
-  },
-  "b3a434e2571c52da": {
    "verdict": "ok"
   },
   "b3aad724b106478c": {
@@ -16034,9 +16102,6 @@
   "b49d6d220b939db4": {
    "verdict": "ok"
   },
-  "b4aebb2fa7a440d9": {
-   "verdict": "ok"
-  },
   "b4bb1cef2e8abd76": {
    "verdict": "ok"
   },
@@ -16134,9 +16199,6 @@
   "b5a2d2b89867bfdb": {
    "verdict": "ok"
   },
-  "b5b551885ba47f05": {
-   "verdict": "ok"
-  },
   "b5b91267b82f8301": {
    "verdict": "ok"
   },
@@ -16147,9 +16209,6 @@
    "verdict": "ok"
   },
   "b5cf48b3148926c6": {
-   "verdict": "ok"
-  },
-  "b5cf9860be7edb1c": {
    "verdict": "ok"
   },
   "b5eb61f158da0516": {
@@ -16170,6 +16229,10 @@
   },
   "b5fd53eb1d7c0ed0": {
    "verdict": "ok"
+  },
+  "b6041e67835b6225": {
+   "verdict": "ok",
+   "note": "y=-4 horizontal line; answer {y:-4} matches, derived placement grades correct, a sign-flipped guess (y=4) grades slopeRight not correct."
   },
   "b609064c94a8d87c": {
    "verdict": "ok",
@@ -16309,6 +16372,10 @@
   "b730e51ca7c6ae42": {
    "verdict": "ok"
   },
+  "b73d024cdfa43297": {
+   "verdict": "ok",
+   "note": "re-derived vertex (-3,0) from f(x)=4x^2+24x+36: axis x=-24/8=-3, f(-3)=36-72+36=0. gpcheck: 5 reachable lattice points on grid -6..0 x -2..17, slack 2."
+  },
   "b752cd927f12e75b": {
    "verdict": "ok",
    "note": "Reflect f(x)=10^x about x-axis (multiply by -1) then shift up 7: g(x)=-10^x+7; matches CNXML solution exactly."
@@ -16371,6 +16438,9 @@
   "b7f519a099c32873": {
    "verdict": "ok"
   },
+  "b7f965ccf53a72ec": {
+   "verdict": "ok"
+  },
   "b8110268be7d8c16": {
    "verdict": "ok"
   },
@@ -16393,9 +16463,6 @@
    "verdict": "ok"
   },
   "b83695761d925fbf": {
-   "verdict": "ok"
-  },
-  "b843d8232186c75e": {
    "verdict": "ok"
   },
   "b845dde0f68c3147": {
@@ -16477,6 +16544,10 @@
   "b9111c7b7fe705a9": {
    "verdict": "ok"
   },
+  "b916f01a5760b8c5": {
+   "verdict": "ok",
+   "note": "PA KC 07-11 §11.1, Ch.11 Practice Test 'Plot and label these points' (m81354), whose key prints the answer graph with all five points. Re-derived by inspection of the printed prompt: the five ordered pairs are (2,5), (-1,-3), (-4,0), (3,-5) and (-2,1), and a points answer grades exactly the placement of those five. All five are distinct, on the snap-1 lattice and inside the -7..7 grid; the component grades them order-agnostically with partial-credit feedback."
+  },
   "b91caec4fd96adb1": {
    "verdict": "ok"
   },
@@ -16515,6 +16586,10 @@
   },
   "b97b4b3f520aa686": {
    "verdict": "ok"
+  },
+  "b9913461ac13bac7": {
+   "verdict": "ok",
+   "note": "x=-y^2+2y-3: axis y=1, vertex x=-1+2-3=-2 -> (-2,1); x-intercept (y=0) x=-3 -> (-3,0), mirror across y=1 is (-3,2); extra points at y=-1,3 both give x=-6 (checked by substitution), matching mirror pair across axis. Discriminant of y^2-2y+3 is -8 (no real y-intercepts), consistent with CNXML ('it has no y-intercepts'). All 5 points inside grid -8..2/-4..6, integer lattice."
   },
   "b99a26746b0192a1": {
    "verdict": "ok"
@@ -16601,9 +16676,6 @@
   "babe83a1a3299702": {
    "verdict": "ok"
   },
-  "babfcc93d0740057": {
-   "verdict": "ok"
-  },
   "bac1b7b4fe0cee0c": {
    "verdict": "ok"
   },
@@ -16676,6 +16748,9 @@
    "verdict": "ok"
   },
   "bb9cea2b288cdb5a": {
+   "verdict": "ok"
+  },
+  "bb9faf2393d40912": {
    "verdict": "ok"
   },
   "bba9af8f6559ddf5": {
@@ -16769,6 +16844,9 @@
   "bc9135717d73a2ee": {
    "verdict": "ok"
   },
+  "bc9202067e255fe1": {
+   "verdict": "ok"
+  },
   "bc96fe544ed963ac": {
    "verdict": "ok",
    "note": "Practice factor-check item: ran synthetic division (k=2) on 3,-6,0,-5,10 (0 inserted for missing x^2 term) in node; remainder 0, confirming x-2 IS a factor (quotient 3x^3-5), matching the CNXML solution 'Yes (x-2)(3x^3-5)' (fs-id1165134031382)."
@@ -16781,6 +16859,10 @@
   },
   "bcb9b8643c3efa19": {
    "verdict": "ok"
+  },
+  "bcbe8c60e4d9ba56": {
+   "verdict": "ok",
+   "note": "(4,-4) is right of the y-axis and below the x-axis; option 1 plots [4,-4]. Option 0 is [-4,4] (coordinates reversed) and option 2 is [4,4] (y sign flipped). All three specs rendered through toSvgString and inspected: the keyed dot sits lower-right, the distractors upper-left and upper-right."
   },
   "bcc1dafb7b5c0108": {
    "verdict": "ok",
@@ -16894,6 +16976,9 @@
   "be3c61c4389642a8": {
    "verdict": "ok"
   },
+  "be3e99be26396d42": {
+   "verdict": "ok"
+  },
   "be4437b38ccb1cc7": {
    "verdict": "ok"
   },
@@ -16936,6 +17021,14 @@
   },
   "be84140b100b7398": {
    "verdict": "ok"
+  },
+  "be868fadd5358be8": {
+   "verdict": "ok",
+   "note": "PA KC 07-11 §11.2, Ch.11 Practice Test 'find three solutions to each equation and then graph each line: 2x + 3y = -6' (m81354), whose key prints the answer graph through (0,-2) and (-3,0). Re-derived: solving for y gives y = -2/3 x - 2; substituting -3, 0 and 3 gives 0, -2 and -4, so (-3,0), (0,-2) and (3,-4) are three solutions and the line has slope -2/3 and intercept -2. Authored {slope:-2/3,intercept:-2,plotPoints:3}; on -7..7 the line reaches five snap-1 lattice points, so plotPoints 3 leaves the learner a choice."
+  },
+  "be889b475f835a37": {
+   "verdict": "ok",
+   "note": "IA KC 01-06 §3.2, Ch.3 Practice Test 'Graph the line with slope 1/2 containing the point (-3,-4)' (m81374), whose key prints the answer graph through (-3,-4), (-1,-3) and (1,-2). Re-derived: y - (-4) = 1/2(x - (-3)) gives y = x/2 - 5/2; substituting -3, -1 and 1 gives -4, -3 and -2. Authored {slope:0.5,intercept:-2.5,plotPoints:3}; on -7..7 the line reaches eight snap-1 lattice points (every odd x)."
   },
   "be8c862d45bdde0f": {
    "verdict": "ok"
@@ -16997,6 +17090,10 @@
   "bf1e4ac7889cc9a9": {
    "verdict": "ok"
   },
+  "bf2a54db39c81477": {
+   "verdict": "ok",
+   "note": "IA KC 01-06 §3.4, converted from prose options to rendered figures. Re-derived: y > 3/2 x + 5 is strict, so the boundary line is dashed, and 'y greater than' shades the half-plane above it — option 3, which draws y = 3/2 x + 5 dashed with the region containing (0,10) shaded. The three distractors render the three printed prose distractors exactly: solid+above (0), dashed+below (1), solid+below (2). Option order and answer position are unchanged from the prose version."
+  },
   "bf3377b9f1cfc46e": {
    "verdict": "ok"
   },
@@ -17033,6 +17130,10 @@
   },
   "bf84fe379010ea5b": {
    "verdict": "ok"
+  },
+  "bf925adedda9f1b2": {
+   "verdict": "ok",
+   "note": "Slope 4/3 through (2,-2) means y = (4/3)x - 14/3, rising steeply; option 1 draws slope 1.3333333333333333 intercept -4.666666666666667. Option 0 is the sign-inverted -4/3 and option 2 the reciprocal 3/4. All three mark (2,-2), so only the slope differs. Rendered and inspected."
   },
   "bfa08c8f8756aeb0": {
    "verdict": "ok"
@@ -17086,9 +17187,6 @@
    "verdict": "ok"
   },
   "c00bb3a9d664e728": {
-   "verdict": "ok"
-  },
-  "c011b50ae64353b6": {
    "verdict": "ok"
   },
   "c0136878199cb6bb": {
@@ -17180,6 +17278,10 @@
   },
   "c116a5094ef48c3e": {
    "verdict": "ok"
+  },
+  "c11e1de3977a20a2": {
+   "verdict": "ok",
+   "note": "IA KC 07-12 §11.1, converted from prose options to rendered figures. Re-derived: dividing 3x^2+3y^2=27 by 3 gives x^2+y^2=9, a circle centered at the origin of radius 3 — option 2. The distractors render the printed prose distractors exactly: a circle of radius 9 (0), an upward parabola with vertex at the origin (1), and an ellipse with vertices (0,±3) (3, whose unstated horizontal semi-axis is drawn as 1 and named in the ariaLabel). Order and answer position unchanged."
   },
   "c13a6be4a4415327": {
    "verdict": "ok"
@@ -17278,6 +17380,10 @@
   "c20fcaaa7e89f530": {
    "verdict": "ok"
   },
+  "c21bbc42aacb5fcd": {
+   "verdict": "ok",
+   "note": "f(x)=-3x^2+12x-4: h=-b/2a=2, k=f(2)=-12+24-4=8, so -3(x-2)^2+8 as displayed. yMin lowered -3 -> -5 so f(0)=f(4)=-4 are reachable, giving 5 lattice points (was exactly 3)."
+  },
   "c21c9c97774ba772": {
    "verdict": "ok",
    "note": "'Nineteen less than p is no less than 47' translates to p-19>=47; adding 19 gives p>=66, the keyed answer."
@@ -17336,6 +17442,10 @@
   "c2904d02fa2c0c8d": {
    "verdict": "ok"
   },
+  "c299754c3d19c711": {
+   "verdict": "ok",
+   "note": "x-3y=-3 gives y=(1/3)x+1 and x+y=5 gives y=-x+5, matching the authored members; they meet at (3,2), which satisfies both printed equations. A four-point lattice placement grades correct and a wrong second line grades systemPartial. Re-recorded after dropping the question's duplicate 'Place two points on each line' clause, which the component already prints."
+  },
   "c299d20217f6f5a7": {
    "verdict": "ok",
    "note": "Practice (Remainder Theorem). Evaluated 3x^3-2x^2+x-4 at x=-3 via node: -106. Matches CNXML solution for fs-id1165134152708."
@@ -17347,9 +17457,6 @@
    "verdict": "ok"
   },
   "c2afc96c1e57afc4": {
-   "verdict": "ok"
-  },
-  "c2b6aa4e89476119": {
    "verdict": "ok"
   },
   "c2e0567e6ea8857a": {
@@ -17514,6 +17621,10 @@
   "c4a7e2f11dc1627b": {
    "verdict": "ok"
   },
+  "c4aa1e3ed764129f": {
+   "verdict": "ok",
+   "note": "IA KC 07-12 §8.7, Ch.8 Practice Test '(a) find the domain (b) graph the function (c) use the graph to determine the range' for g(x)=sqrt(x+2) (m81448); the key's part (b) prints a square-root graph starting at (-2,0) and passing through (-1,1) and (2,2). This is part (b) itself, so it becomes a graphplot rather than a recognition MC. Re-derived: sqrt(-2+2)=0, sqrt(-1+2)=1, sqrt(2+2)=2, giving exactly the key's three points. Authored {points:[[-2,0],[-1,1],[2,2]]}; all three are on the snap-1 lattice inside -4..8 by -4..4."
+  },
   "c4c2cacf84ccb9e5": {
    "verdict": "ok"
   },
@@ -17604,6 +17715,10 @@
   },
   "c5becc0f167057c0": {
    "verdict": "ok"
+  },
+  "c5c1e9c992acb892": {
+   "verdict": "ok",
+   "note": "re-derived: f(x)=(x+2)^2-3=x^2+4x+1, vertex (-2,-3) on lattice; matches CNXML Try It (fs-id1169149089502); grid -6..2/-5..5 gives 5 reachable points (gpcheck slack 2)."
   },
   "c5c6f340131277b0": {
    "verdict": "ok"
@@ -17730,9 +17845,6 @@
   "c7141c45c5be2104": {
    "verdict": "ok"
   },
-  "c71d2f0ce2811557": {
-   "verdict": "ok"
-  },
   "c71dc230ea91bb3d": {
    "verdict": "ok"
   },
@@ -17824,6 +17936,10 @@
   "c858fddc3cb2fb3b": {
    "verdict": "ok"
   },
+  "c8634ce506ad6225": {
+   "verdict": "ok",
+   "note": "re-derived vertex (-1,-1) from f(x)=-3x^2-6x-4: axis x=-(-6)/(2*-3)=-1, f(-1)=-3+6-4=-1. gpcheck: 5 reachable lattice points on grid -4..2 x -14..2, slack 2."
+  },
   "c86500ef3115049a": {
    "verdict": "ok"
   },
@@ -17849,9 +17965,6 @@
    "verdict": "ok"
   },
   "c889e653c38929d7": {
-   "verdict": "ok"
-  },
-  "c89aec8685181b72": {
    "verdict": "ok"
   },
   "c89f086bf6aad3ab": {
@@ -17966,7 +18079,7 @@
   "c9fd7d743132acb3": {
    "verdict": "ok"
   },
-  "ca0232da83ab7294": {
+  "ca16f9b5ae1af8c7": {
    "verdict": "ok"
   },
   "ca2adaf87a68a242": {
@@ -18003,9 +18116,6 @@
   "ca93e6c9d5a86922": {
    "verdict": "ok",
    "note": "51/22 = 2.318181...; only the '3 does not repeat, then 18 repeats' option names that number. 2.318, 2.318318..., 2.38181... are all different numbers."
-  },
-  "ca9b07657bd465eb": {
-   "verdict": "ok"
   },
   "caa171f4cbd2b3f0": {
    "verdict": "ok"
@@ -18110,6 +18220,9 @@
    "verdict": "ok"
   },
   "cb9ca1a6de475ea5": {
+   "verdict": "ok"
+  },
+  "cbad6d176fc9bc4a": {
    "verdict": "ok"
   },
   "cbb487a16bf6c1ad": {
@@ -18245,6 +18358,9 @@
   "cd85d0178d5a8a02": {
    "verdict": "ok"
   },
+  "cd9f7057b7614851": {
+   "verdict": "ok"
+  },
   "cdb1da1c6e97dace": {
    "verdict": "ok"
   },
@@ -18377,6 +18493,10 @@
   "cf17edcbb7508cf7": {
    "verdict": "ok"
   },
+  "cf1b40157b4a80ec": {
+   "verdict": "ok",
+   "note": "x = -2 is a vertical line (no y-dependence). Snap-lattice points inside -7..7: (-2,0), (-2,3), (-2,-3)."
+  },
   "cf25113b37d68357": {
    "verdict": "ok"
   },
@@ -18426,9 +18546,6 @@
    "verdict": "ok"
   },
   "cfc0c84722b0b4bd": {
-   "verdict": "ok"
-  },
-  "cfe25d603a20ed60": {
    "verdict": "ok"
   },
   "cfe8fec240481222": {
@@ -18567,10 +18684,10 @@
    "verdict": "ok",
    "note": "On the 20px/unit grid centered at (226,226), point B's circle sits at pixel (186,126), which converts to (-2,5), matching the declared answer exactly."
   },
-  "d176a9de8e7a5040": {
+  "d170a75bbb777506": {
    "verdict": "ok"
   },
-  "d182867e850299e9": {
+  "d176a9de8e7a5040": {
    "verdict": "ok"
   },
   "d185d77825c46d98": {
@@ -18685,9 +18802,6 @@
    "verdict": "ok",
    "note": "Read from the option specs, not the old key. Option 1 is the only one that matches f(x)=x^3 for x<-1 (cubic ending at an OPEN circle at (-1,-1)), f(x)=-2 for -1<x<4 (segment at y=-2, open at both ends), f(x)=sqrt(x) for x>4 (sqrt drawn from x=4 with an open circle at (4,2), since sqrt(4)=2). Option 0 draws the sqrt piece from the origin; option 2 puts the middle piece at y=+2. answerIndex 1 confirmed."
   },
-  "d2d6dfcb4ec63d4e": {
-   "verdict": "ok"
-  },
   "d2dc0553926817b3": {
    "verdict": "ok"
   },
@@ -18796,6 +18910,10 @@
   "d4735089ab26d778": {
    "verdict": "ok"
   },
+  "d487b145e8b25168": {
+   "verdict": "ok",
+   "note": "re-derived: 'Which graph shows x = 4?' — option index 1 (0-based) is {x:4}, a vertical line crossing the x-axis at 4, matching authored answerIndex=1; option 0 is the sign-flipped vertical line at x=-4 and option 2 is the vertical/horizontal-confusion distractor y=4; all three share the same -7..7 grid."
+  },
   "d493d0484373f8ae": {
    "verdict": "ok",
    "note": "f(x)=2x^3-x^2-8x+4 has degree 3; max turning points = 3-1 = 2, by the section's own stated theorem."
@@ -18809,10 +18927,10 @@
   "d4ba4705dfb65887": {
    "verdict": "ok"
   },
-  "d4c8211bba849dd7": {
+  "d4be95b81f2ea434": {
    "verdict": "ok"
   },
-  "d4d082eedd7ca528": {
+  "d4c8211bba849dd7": {
    "verdict": "ok"
   },
   "d4d3fa5b4149094a": {
@@ -18820,9 +18938,6 @@
    "note": "Try It 10: power rule on each term then product/quotient rules; confirmed by float substitution at x=2 (node) that the printed sum equals log(5(x-1)^3*sqrt(x)/(7x-1)). Matches CNXML solution."
   },
   "d4d475bffab10d13": {
-   "verdict": "ok"
-  },
-  "d4d709ce28224975": {
    "verdict": "ok"
   },
   "d4dbe69121635e0a": {
@@ -18868,6 +18983,10 @@
   },
   "d55c6178f75e98b1": {
    "verdict": "ok"
+  },
+  "d564e43acd68a6f9": {
+   "verdict": "ok",
+   "note": "Point (-3,5) matches the answer JSON and checkGraphPlot grades it correct."
   },
   "d56b6a9ededb6003": {
    "verdict": "ok"
@@ -18950,14 +19069,15 @@
   "d6907434863e4a4e": {
    "verdict": "ok"
   },
-  "d69a62dafa3819f6": {
-   "verdict": "ok"
-  },
   "d69f072e569d4253": {
    "verdict": "ok"
   },
   "d6a31e2f196462e2": {
    "verdict": "ok"
+  },
+  "d6a81820e2d64601": {
+   "verdict": "ok",
+   "note": "5x - 2y = 10 solves to y = 2.5x - 5, with intercepts (2,0) and (0,-5); option 1 draws slope 2.5 intercept -5 and marks both. Option 0 flips the slope sign to cross at (-2,0); option 2 swaps the intercept values across the axes to (-5,0) and (0,2). Rendered and inspected."
   },
   "d6aa963adc132a4f": {
    "verdict": "ok"
@@ -19080,9 +19200,6 @@
    "verdict": "ok"
   },
   "d85afd1de92bb9d3": {
-   "verdict": "ok"
-  },
-  "d86598d710998296": {
    "verdict": "ok"
   },
   "d86a9d8c3d60445b": {
@@ -19279,6 +19396,10 @@
   "dab96057586fc886": {
    "verdict": "ok"
   },
+  "daba3f8e3ddf6659": {
+   "verdict": "ok",
+   "note": "re-derived: line through (2,-2) slope 4/3 -> y=(4/3)x-14/3 (intercept -14/3=-4.666666666666667); grid xMin-7..11 yMin-8..10 gives 5 reachable snap-lattice points [(-1,-6),(2,-2),(5,2),(8,6),(11,10)] for plotPoints:3, slack 2 (gpcheck)."
+  },
   "dabd4406325f5aef": {
    "verdict": "ok"
   },
@@ -19451,16 +19572,13 @@
    "verdict": "ok",
    "note": "A=6500*e^{0.0725*20}=27710.24 (nearest cent). Computed via node."
   },
-  "dcb7bb9950b9aff2": {
-   "verdict": "ok"
-  },
   "dcc21a110f2a59f4": {
    "verdict": "ok"
   },
-  "dce3f47e053378eb": {
+  "dce6e6029d1824ba": {
    "verdict": "ok"
   },
-  "dce6e6029d1824ba": {
+  "dd0ad0c7f057b5ad": {
    "verdict": "ok"
   },
   "dd0b5e561218655d": {
@@ -19571,7 +19689,13 @@
   "de6f0b673ff1b25e": {
    "verdict": "ok"
   },
+  "de73be3fdba279f9": {
+   "verdict": "ok"
+  },
   "de78440cfddb9f78": {
+   "verdict": "ok"
+  },
+  "de87222663223298": {
    "verdict": "ok"
   },
   "de8c0e928f97cd25": {
@@ -19656,10 +19780,6 @@
    "verdict": "ok",
    "note": "ln(x(x-3))=ln(7x) => x^2-3x=7x => x^2-10x=0 => x=0 or x=10; x=0 rejected (domain x>0, x-3>0), x=10 valid (checked ln10+ln7=ln70 numerically). Single valid solution."
   },
-  "df6f190e14e3f36e": {
-   "verdict": "ok",
-   "note": "(2x-1)(2x+1)/[(x-2)(x+3)] has no common factors; VA at x=2,-3; matches CNXML Try It 6."
-  },
   "df6fb1f8e2c8ed88": {
    "verdict": "ok"
   },
@@ -19726,9 +19846,6 @@
    "verdict": "ok"
   },
   "e07097193bfbd95f": {
-   "verdict": "ok"
-  },
-  "e08c132e130d1dd3": {
    "verdict": "ok"
   },
   "e0b3211bfae0fa65": {
@@ -19811,8 +19928,15 @@
   "e16b09f87dfc383d": {
    "verdict": "ok"
   },
+  "e183fd63a5382230": {
+   "verdict": "ok"
+  },
   "e18bda04b40f1504": {
    "verdict": "ok"
+  },
+  "e18d4212cecfc806": {
+   "verdict": "ok",
+   "note": "EA KC 01-05 §4.3, Ch.4 Review Exercise 593 (m82488) 'Graph a Line Using the Intercepts: x + y = -2'; Answer Key p. 1220 prints the answer graph (visually inspected: a falling line through (-2,0) and (0,-2)). Re-derived: setting y=0 gives x=-2 and setting x=0 gives y=-2, so the intercepts are (-2,0) and (0,-2) and the line is y=-x-2. Authored {slope:-1,intercept:-2,plotPoints:3}; both intercepts are on the snap-1 lattice inside -12..12."
   },
   "e190f3f68a72893e": {
    "verdict": "ok"
@@ -19824,9 +19948,6 @@
    "verdict": "ok"
   },
   "e1a8261d18d4b26d": {
-   "verdict": "ok"
-  },
-  "e1a9d115caeaad34": {
    "verdict": "ok"
   },
   "e1abb86cd266c4c7": {
@@ -19879,9 +20000,6 @@
   "e2063c54e9278722": {
    "verdict": "ok",
    "note": "0.5 rad/s -> RPM = 0.5*60/(2*pi) = 30/(2*pi) = 4.7746482927568605, rounds to 4.77 at 2dp (node computed)"
-  },
-  "e20a29699312507d": {
-   "verdict": "ok"
   },
   "e20c9cdc6ee2f305": {
    "verdict": "ok"
@@ -19942,12 +20060,6 @@
   "e2a09ff3c8933a41": {
    "verdict": "ok"
   },
-  "e2a9983390623ae6": {
-   "verdict": "ok"
-  },
-  "e2ae5e9b3265430d": {
-   "verdict": "ok"
-  },
   "e2bb517e707dfa21": {
    "verdict": "ok"
   },
@@ -19982,9 +20094,6 @@
   "e300c321d232e9a8": {
    "verdict": "ok"
   },
-  "e3027ca9e289c88a": {
-   "verdict": "ok"
-  },
   "e305e32699ccd134": {
    "verdict": "ok"
   },
@@ -19993,6 +20102,10 @@
   },
   "e309b7ba6a82a7e5": {
    "verdict": "ok"
+  },
+  "e311894f2e961177": {
+   "verdict": "ok",
+   "note": "EA KC 01-05 §4.2, Ch.4 Review Exercise 577 (m82488) 'Graph a Linear Equation by Plotting Points: x - y = 6'; Answer Key p. 1220 prints the answer graph (visually inspected: a rising line through (0,-6) and (6,0)). Re-derived: x-y=6 gives y=x-6, so slope 1 and intercept -6; (0,-6), (3,-3) and (6,0) each satisfy x-y=6. Authored {slope:1,intercept:-6,plotPoints:3}; on -12..12 the line has 19 snap-1 lattice points, so the learner has real choice."
   },
   "e3132b333d2c7d78": {
    "verdict": "ok"
@@ -20038,7 +20151,13 @@
   "e37dc37244a32ef4": {
    "verdict": "ok"
   },
+  "e38164da355db45f": {
+   "verdict": "ok"
+  },
   "e3839abf6449119c": {
+   "verdict": "ok"
+  },
+  "e38bc3da2ccf0d0e": {
    "verdict": "ok"
   },
   "e3920c8fc20214e9": {
@@ -20080,9 +20199,6 @@
    "verdict": "ok"
   },
   "e4090d61a4f3d587": {
-   "verdict": "ok"
-  },
-  "e41acb90234fea46": {
    "verdict": "ok"
   },
   "e420728cf98d2df5": {
@@ -20183,6 +20299,10 @@
   "e4c1f6dcdc5f3144": {
    "verdict": "ok"
   },
+  "e4ca378961947a0f": {
+   "verdict": "ok",
+   "note": "re-derived: f(x)=(x+6)^2=x^2+12x+36, vertex (-6,0) on lattice; matches CNXML Try It (fs-id1169148821362); grid -10..-2/-2..8 gives 5 reachable points (gpcheck slack 2)."
+  },
   "e4cd7710efde6aa3": {
    "verdict": "ok"
   },
@@ -20253,10 +20373,10 @@
   "e57a1409d8d1d7ee": {
    "verdict": "ok"
   },
-  "e5a071a4f1dcf39e": {
+  "e5ae5f3dd5d6a684": {
    "verdict": "ok"
   },
-  "e5ae5f3dd5d6a684": {
+  "e5c8aa4ac993141f": {
    "verdict": "ok"
   },
   "e5caa77a53c7b6dc": {
@@ -20271,6 +20391,10 @@
   },
   "e5d0fe3b5e4eb7ff": {
    "verdict": "ok"
+  },
+  "e5d15e3294886499": {
+   "verdict": "ok",
+   "note": "re-derived vertex (-1,-2) from f(x)=5x^2+10x+3: axis x=-10/10=-1, f(-1)=5-10+3=-2. gpcheck: 5 reachable lattice points on grid -4..2 x -4..19, slack 2."
   },
   "e5f1c8e544476118": {
    "verdict": "ok"
@@ -20410,9 +20534,6 @@
   "e793b6c6ea11d8ca": {
    "verdict": "ok"
   },
-  "e7a5ad7974936b38": {
-   "verdict": "ok"
-  },
   "e7aa41d039c308a9": {
    "verdict": "ok"
   },
@@ -20483,6 +20604,10 @@
   "e8b2c548ab55bc26": {
    "verdict": "ok"
   },
+  "e8b2c8202588a934": {
+   "verdict": "ok",
+   "note": "re-derived f(x)=-cbrt(x) at x=-8,-1,0,1,8: f(-8)=2, f(-1)=1, f(0)=0, f(1)=-1, f(8)=-2 (Math.cbrt verified in node), matches the 5-point pattern from the parent worked example's cbrt(x) table with signs flipped for the reflection; all on integer lattice inside grid [-9,9]x[-3,3], matching the page's other cube-root figures."
+  },
   "e8c62691ae4db080": {
    "verdict": "ok"
   },
@@ -20492,6 +20617,10 @@
   },
   "e8e947d98a9d8ab0": {
    "verdict": "ok"
+  },
+  "e8f3dbdde3e7421e": {
+   "verdict": "ok",
+   "note": "y-intercept 3 with slope -2/5 gives y = -0.4x + 3; the hint's (5,1) and (-5,5) both satisfy it. Grid widened -7..7 -> -14..14 for plotPoints slack (5 reachable lattice points, was exactly 3)."
   },
   "e8f64f01d1745a4d": {
    "verdict": "ok"
@@ -20512,9 +20641,6 @@
   "e91e5de923fe1b0b": {
    "verdict": "ok",
    "note": "Practice (Remainder Theorem). Evaluated -3x^2+6x+24 at x=4 via node: 0. Matches CNXML solution for fs-id1165135571875."
-  },
-  "e921d6c8e73d7a8b": {
-   "verdict": "ok"
   },
   "e9241629219cd614": {
    "verdict": "ok"
@@ -20879,6 +21005,10 @@
   "ed27c822f4232df7": {
    "verdict": "ok"
   },
+  "ed2d791bed22261a": {
+   "verdict": "ok",
+   "note": "y=5x^2+10x+3 gives vertex (-1,-2) and a=5>0 (opens upward), matching the authored quadratic answer and the pre-rewrite multiplechoice's 'Vertex (-1,-2); opens upward'; the figure immediately above is Example 10.52's unrelated y=2x^2-4x-3, so nothing leaks."
+  },
   "ed3f8410b83e7c13": {
    "verdict": "ok",
    "note": "Repaired 2026-08-15. Values 12,14,-12,-14 verified; prompt now prescribes the graded ordering."
@@ -21016,16 +21146,10 @@
   "eea39c198f5b15a4": {
    "verdict": "ok"
   },
-  "eea403da420f190a": {
-   "verdict": "ok"
-  },
   "eeae7beb1eea41b9": {
    "verdict": "ok"
   },
   "eeaf3a5732a83fb6": {
-   "verdict": "ok"
-  },
-  "eeb001731f58a9ea": {
    "verdict": "ok"
   },
   "eeb71872c55c6542": {
@@ -21079,10 +21203,10 @@
   "ef50eb2a2729efd7": {
    "verdict": "ok"
   },
-  "ef55bee9efda0d6c": {
+  "ef58f7895cd5515c": {
    "verdict": "ok"
   },
-  "ef58f7895cd5515c": {
+  "ef5b88fa0e18ff8c": {
    "verdict": "ok"
   },
   "ef736889e43cfcfc": {
@@ -21281,6 +21405,9 @@
   "f18ae5823d1c4349": {
    "verdict": "ok"
   },
+  "f19851c00410ead2": {
+   "verdict": "ok"
+  },
   "f19ce867f1bc5f65": {
    "verdict": "ok"
   },
@@ -21312,9 +21439,6 @@
    "verdict": "ok"
   },
   "f1f9157f4db98031": {
-   "verdict": "ok"
-  },
-  "f1f9c0ebd21f3361": {
    "verdict": "ok"
   },
   "f1fb84852bf6f974": {
@@ -21418,8 +21542,9 @@
   "f2dadd54b8dcfa15": {
    "verdict": "ok"
   },
-  "f2e62c2a1745887c": {
-   "verdict": "ok"
+  "f2ee1da828835a3a": {
+   "verdict": "ok",
+   "note": "re-derived: 3x+y=-3 -> y=-3x-3 (slope -3, intercept -3), 2x+3y=5 -> y=-(2/3)x+5/3 (slope -0.6666666666666666, intercept 1.6666666666666667); intersection (-2,3) matches CNXML m81427 Practice exercise fs-id1167830924068 verbatim. Grid -6..6 matches sibling elementary-algebra Practice conversion of the identical system. Line 1 reaches 5 snap points (x=-3..1), line 2 reaches 4 (x=-5,-2,1,4 mod 3); both >=2, gpcheck parses clean."
   },
   "f2f6f9edba71d888": {
    "verdict": "ok"
@@ -21438,9 +21563,6 @@
    "verdict": "ok"
   },
   "f3497389fd1343f2": {
-   "verdict": "ok"
-  },
-  "f357dd06afd5220d": {
    "verdict": "ok"
   },
   "f3611dd6fc098def": {
@@ -21523,6 +21645,9 @@
   "f45f8099d3d36540": {
    "verdict": "ok"
   },
+  "f461b574e21a3ebb": {
+   "verdict": "ok"
+  },
   "f464426b460af3b0": {
    "verdict": "ok"
   },
@@ -21545,9 +21670,6 @@
    "verdict": "ok"
   },
   "f4aacb405b1e56ed": {
-   "verdict": "ok"
-  },
-  "f4b851523cc394dc": {
    "verdict": "ok"
   },
   "f4c66a27328a4c9f": {
@@ -21635,9 +21757,6 @@
   "f57712b7532b8356": {
    "verdict": "ok"
   },
-  "f5800e6e2fc89311": {
-   "verdict": "ok"
-  },
   "f588339bb90e6261": {
    "verdict": "ok"
   },
@@ -21709,6 +21828,9 @@
    "verdict": "ok",
    "note": "Distinct x-coordinates of the six listed points: -3,-2,-1,0,2,4."
   },
+  "f642c2cb79895dc9": {
+   "verdict": "ok"
+  },
   "f649c3cc233859b8": {
    "verdict": "ok"
   },
@@ -21716,9 +21838,6 @@
    "verdict": "ok"
   },
   "f67231e0f5261a88": {
-   "verdict": "ok"
-  },
-  "f67db5c317d907e6": {
    "verdict": "ok"
   },
   "f6823a7eea6bbaf2": {
@@ -21780,16 +21899,10 @@
    "verdict": "ok",
    "note": "s = r*theta = 5.02*(pi/3) = 5.2569317070069195, rounds to 5.26 at 2dp (node computed)"
   },
-  "f7401ba0bc207317": {
-   "verdict": "ok"
-  },
   "f741cd7c3cb67e92": {
    "verdict": "ok"
   },
   "f74846dc4f9408ba": {
-   "verdict": "ok"
-  },
-  "f74f0caf5fd15a87": {
    "verdict": "ok"
   },
   "f75f5d966d1ac68a": {
@@ -21887,6 +22000,9 @@
   "f859b4e6d4ddf1b1": {
    "verdict": "ok"
   },
+  "f85a57cb7297da09": {
+   "verdict": "ok"
+  },
   "f85e0c5b4746d1d9": {
    "verdict": "ok"
   },
@@ -21939,9 +22055,6 @@
    "verdict": "ok"
   },
   "f8f39536a824ca92": {
-   "verdict": "ok"
-  },
-  "f8f640c87350bd23": {
    "verdict": "ok"
   },
   "f90c2399b6d9f3a0": {
@@ -22075,9 +22188,6 @@
   "fa59efcd0b1f438c": {
    "verdict": "ok"
   },
-  "fa60605e0e3e8553": {
-   "verdict": "ok"
-  },
   "fa6621e547455ec5": {
    "verdict": "ok"
   },
@@ -22179,9 +22289,6 @@
    "verdict": "ok"
   },
   "fb9f7a238f3ee389": {
-   "verdict": "ok"
-  },
-  "fbb39ad598d590b1": {
    "verdict": "ok"
   },
   "fbbf549895dce891": {
@@ -22369,6 +22476,9 @@
   "fdef47976c116c04": {
    "verdict": "ok"
   },
+  "fdf6943f7c0bf5c0": {
+   "verdict": "ok"
+  },
   "fe00aa1a2c1ab60e": {
    "verdict": "ok"
   },
@@ -22384,16 +22494,10 @@
   "fe0fe5544f9ac10f": {
    "verdict": "ok"
   },
-  "fe1dd8b53e3f226d": {
-   "verdict": "ok"
-  },
   "fe2398793e1066db": {
    "verdict": "ok"
   },
   "fe25a78e6243fe55": {
-   "verdict": "ok"
-  },
-  "fe29f6a59b1d6dfa": {
    "verdict": "ok"
   },
   "fe301b2b9c481c47": {
@@ -22435,9 +22539,6 @@
    "note": "Computed f(1)=-1+4=3 and f(3)=-81+4=-77 by node arithmetic for f(x)=-x^4+4. Matches CNXML fs-id1165131857356 solution."
   },
   "fea4b7a3b3f0b970": {
-   "verdict": "ok"
-  },
-  "fea6af9f7cb97f67": {
    "verdict": "ok"
   },
   "fea8ea733b52048b": {

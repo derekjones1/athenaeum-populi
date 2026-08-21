@@ -202,12 +202,18 @@ solution of the equation. The graph also passes through $(4, 0)$: substituting i
 $y = -x + 4$ — wait, let's check $(1,2)$ in $y = 4x - 2$ instead: $2 \stackrel{?}{=}
 4(1) - 2$, so $2 = 2$. ✓
 
-{{< fillin
-  question="Graph the line $y = -x - 3$ using its slope and y-intercept. What is the y-intercept as an ordered pair $(x, y)$?"
-  answer="(0,-3)"
-  answerDisplay="$(0, -3)$"
-  hint="In y = mx + b form, the y-intercept is always the point (0, b)."
+{{< multiplechoice
+  question="Which graph shows $y = -x - 3$?"
+  mode="graph"
+  answerIndex="2"
+  hint="Find where the line crosses the $y$-axis first, then check whether it rises or falls — a negative slope falls from left to right."
 >}}
+{"ariaLabel":"A line rising from lower left to upper right, crossing the y-axis three units below the origin.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":1,"intercept":-3}]}
+===OPT===
+{"ariaLabel":"A steep line falling from upper left to lower right, crossing the y-axis one unit below the origin.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":-3,"intercept":-1}]}
+===OPT===
+{"ariaLabel":"A line falling from upper left to lower right, crossing the y-axis three units below the origin.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":-1,"intercept":-3}]}
+{{< /multiplechoice >}}
 
 ## Choose the most convenient method to graph a line
 
@@ -852,21 +858,21 @@ Now repeat the identification directly from a second equation in slope-intercept
 ### Graph a line using its slope and intercept
 
 {{< graphplot
-  question="Graph the line $y = x + 4$ using its slope and $y$-intercept by placing two points on it."
+  question="Graph the line $y = x + 4$ using its slope and $y$-intercept by placing three points on it."
   answerDisplay="$y = x + 4$"
   ariaLabel="A blank coordinate grid from negative ten to ten on both axes."
   hint="Plot the $y$-intercept $(0, 4)$ first, then use slope $1 = \tfrac{1}{1}$ to move up $1$ and right $1$."
 >}}
-{"answer":{"slope":1,"intercept":4},"grid":{"xMin":-10,"xMax":10,"yMin":-10,"yMax":10}}
+{"answer":{"slope":1,"intercept":4,"plotPoints":3},"grid":{"xMin":-10,"xMax":10,"yMin":-10,"yMax":10}}
 {{< /graphplot >}}
 
 {{< graphplot
-  question="Graph the line $y = 2x - 3$ using its slope and $y$-intercept by placing two points on it."
+  question="Graph the line $y = 2x - 3$ using its slope and $y$-intercept by placing three points on it."
   answerDisplay="$y = 2x - 3$"
   ariaLabel="A blank coordinate grid from negative ten to ten on both axes."
   hint="Plot the $y$-intercept $(0, -3)$ first, then use slope $2 = \tfrac{2}{1}$ to move up $2$ and right $1$."
 >}}
-{"answer":{"slope":2,"intercept":-3},"grid":{"xMin":-10,"xMax":10,"yMin":-10,"yMax":10}}
+{"answer":{"slope":2,"intercept":-3,"plotPoints":3},"grid":{"xMin":-10,"xMax":10,"yMin":-10,"yMax":10}}
 {{< /graphplot >}}
 
 ### Choose the most convenient method to graph a line
@@ -926,12 +932,12 @@ The cost increases by \$0.32 when the miles driven increase by $1$; at $0$ miles
 {{< /multiplechoice >}}
 
 {{< graphplot
-  question="Graph the equation $C = 0.32m + 15$ by placing two points on the line."
+  question="Graph the equation $C = 0.32m + 15$ by placing three points on the line."
   answerDisplay="$C = 0.32m + 15$"
   ariaLabel="A blank coordinate grid with miles m from negative one to five hundred on the horizontal axis and cost C from negative one to one hundred eighty dollars on the vertical axis."
-  hint="Start with the $C$-intercept $(0, 15)$. The calculated point $(400, 143)$ gives a second point on the line."
+  hint="Start with the $C$-intercept $(0, 15)$. The calculated point $(400, 143)$ gives another point on the line — then find one more the same way."
 >}}
-{"answer":{"slope":0.32,"intercept":15},"grid":{"xMin":-1,"xMax":500,"yMin":-1,"yMax":180}}
+{"answer":{"slope":0.32,"intercept":15,"plotPoints":3},"grid":{"xMin":-1,"xMax":500,"yMin":-1,"yMax":180}}
 {{< /graphplot >}}
 
 ### Use slopes to identify parallel lines

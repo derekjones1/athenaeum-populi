@@ -96,10 +96,10 @@ change in the equation for the function.
 {{< graphplot
   question="Graph $f(x)=-\tfrac{3}{4}x+6$ by plotting points."
   answerDisplay="The line through $(0,6)$, $(4,3)$, and $(8,0)$"
-  ariaLabel="A blank coordinate grid running from −8 to 10 horizontally and from −8 to 8 vertically."
+  ariaLabel="A blank coordinate grid from −12 to 12 on both axes."
   hint="Choose multiples of 4 as input values so every output is a whole number: $f(0)=6$, $f(4)=3$, and $f(8)=0$."
 >}}
-{"answer":{"slope":-0.75,"intercept":6,"plotPoints":3},"grid":{"xMin":-8,"xMax":10,"yMin":-8,"yMax":8}}
+{"answer":{"slope":-0.75,"intercept":6,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
 
 ## Graphing a function using the y-intercept and slope
@@ -278,7 +278,7 @@ Then show the vertical shift.
   ariaLabel="A blank coordinate grid running from −10 to 10 on both axes."
   hint="The stretch factor is the coefficient of $x$ and the shift is the constant term; the finished line passes through $(0,4)$ and $(1,6)$."
 >}}
-{"answer":{"slope":2,"intercept":4},"grid":{"xMin":-10,"xMax":10,"yMin":-10,"yMax":10}}
+{"answer":{"slope":2,"intercept":4,"plotPoints":3},"grid":{"xMin":-10,"xMax":10,"yMin":-10,"yMax":10}}
 {{< /graphplot >}}
 
 {{< callout type="info" >}}
@@ -1041,7 +1041,7 @@ negative reciprocals of each other.
   ariaLabel="A blank coordinate grid running from −8 to 8 on both axes."
   hint="Use the two intercepts to find the slope: $m=\tfrac{4-0}{0-(-2)}=2$; the $y$-intercept is $4$."
 >}}
-{"answer":{"slope":2,"intercept":4},"grid":{"xMin":-8,"xMax":8,"yMin":-8,"yMax":8}}
+{"answer":{"slope":2,"intercept":4,"plotPoints":3},"grid":{"xMin":-8,"xMax":8,"yMin":-8,"yMax":8}}
 {{< /graphplot >}}
 
 {{< graphplot
@@ -1050,7 +1050,7 @@ negative reciprocals of each other.
   ariaLabel="A blank coordinate grid running from −8 to 8 on both axes."
   hint="Every point on this line has $x$-coordinate $-2$, no matter its $y$-coordinate, so the line is vertical."
 >}}
-{"answer":{"x":-2},"grid":{"xMin":-8,"xMax":8,"yMin":-8,"yMax":8}}
+{"answer":{"x":-2,"plotPoints":3},"grid":{"xMin":-8,"xMax":8,"yMin":-8,"yMax":8}}
 {{< /graphplot >}}
 
 {{< graphplot
@@ -1059,7 +1059,7 @@ negative reciprocals of each other.
   ariaLabel="A blank coordinate grid running from −8 to 8 on both axes."
   hint="The output is $3$ for every input, so the graph is a horizontal line."
 >}}
-{"answer":{"y":3},"grid":{"xMin":-8,"xMax":8,"yMin":-8,"yMax":8}}
+{"answer":{"y":3,"plotPoints":3},"grid":{"xMin":-8,"xMax":8,"yMin":-8,"yMax":8}}
 {{< /graphplot >}}
 
 ### Write the equation for a linear function from the graph of a line

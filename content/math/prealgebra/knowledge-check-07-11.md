@@ -526,6 +526,14 @@ $(2 \cdot 8) \cdot 5$
   answerDisplay="$(5, 0)$"
 >}}
 
+{{< graphplot
+  question="Plot the points $(2, 5)$, $(-1, -3)$, $(-4, 0)$, $(3, -5)$, and $(-2, 1)$."
+  answerDisplay="$(2, 5)$, $(-1, -3)$, $(-4, 0)$, $(3, -5)$, and $(-2, 1)$"
+  ariaLabel="A blank grid from −7 to 7 on both axes."
+>}}
+{"answer":{"points":[[2,5],[-1,-3],[-4,0],[3,-5],[-2,1]]},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
+{{< /graphplot >}}
+
 ### 11.2 Graphing Linear Equations
 
 {{< fillin
@@ -544,6 +552,14 @@ $(2 \cdot 8) \cdot 5$
   answer="-4"
   answerDisplay="$(3, -4)$"
 >}}
+
+{{< graphplot
+  question="Find three solutions to $2x + 3y = -6$ and graph the line."
+  answerDisplay="$y = -\tfrac{2}{3}x - 2$, through $(-3, 0)$, $(0, -2)$, and $(3, -4)$"
+  ariaLabel="A blank grid from −7 to 7 on both axes."
+>}}
+{"answer":{"slope":-0.6666666666666666,"intercept":-2,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
+{{< /graphplot >}}
 
 ### 11.3 Graphing with Intercepts
 
@@ -567,85 +583,9 @@ $(2 \cdot 8) \cdot 5$
 
 ### 11.4 Understand Slope of a Line
 
-<div class="ap-figure">
-<svg role="img" aria-label="A line falling from left to right through the points (−4, 6) and (2, −6). A slope triangle from (−4, 6) down to (2, 6) and then to (2, −6) marks a run of 6 to the right and a rise of −12 down." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 372" width="292" height="372" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="346" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="346" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="346" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="346" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="346" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="346" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="166" y1="346" x2="166" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="346" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="346" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="346" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="346" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="346" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="346" x2="266" y2="346" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="326" x2="266" y2="326" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="266" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="266" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="266" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="266" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="266" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="266" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="166" x2="266" y2="166" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="266" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="266" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="266" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="266" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="266" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="266" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="186" x2="268" y2="186" stroke="currentColor" stroke-width="1"/>
-  <line x1="146" y1="24" x2="146" y2="348" stroke="currentColor" stroke-width="1"/>
-  <polygon points="278,186 268,191 268,181" fill="currentColor"/>
-  <polygon points="146,14 151,24 141,24" fill="currentColor"/>
-  <polygon points="14,186 24,181 24,191" fill="currentColor"/>
-  <polygon points="146,358 141,348 151,348" fill="currentColor"/>
-  <text x="276" y="178" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="154" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="26" y1="183" x2="26" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="26" y="201" font-size="11" fill="currentColor" text-anchor="middle">−6</text>
-  <line x1="66" y1="183" x2="66" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="66" y="201" font-size="11" fill="currentColor" text-anchor="middle">−4</text>
-  <line x1="106" y1="183" x2="106" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="106" y="201" font-size="11" fill="currentColor" text-anchor="middle">−2</text>
-  <line x1="186" y1="183" x2="186" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="186" y="201" font-size="11" fill="currentColor" text-anchor="middle">2</text>
-  <line x1="226" y1="183" x2="226" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="226" y="201" font-size="11" fill="currentColor" text-anchor="middle">4</text>
-  <line x1="266" y1="183" x2="266" y2="189" stroke="currentColor" stroke-width="1"/>
-  <text x="266" y="201" font-size="11" fill="currentColor" text-anchor="middle">6</text>
-  <line x1="143" y1="346" x2="149" y2="346" stroke="currentColor" stroke-width="1"/>
-  <text x="140" y="350" font-size="11" fill="currentColor" text-anchor="end">−8</text>
-  <line x1="143" y1="306" x2="149" y2="306" stroke="currentColor" stroke-width="1"/>
-  <text x="140" y="310" font-size="11" fill="currentColor" text-anchor="end">−6</text>
-  <line x1="143" y1="266" x2="149" y2="266" stroke="currentColor" stroke-width="1"/>
-  <text x="140" y="270" font-size="11" fill="currentColor" text-anchor="end">−4</text>
-  <line x1="143" y1="226" x2="149" y2="226" stroke="currentColor" stroke-width="1"/>
-  <text x="140" y="230" font-size="11" fill="currentColor" text-anchor="end">−2</text>
-  <line x1="143" y1="146" x2="149" y2="146" stroke="currentColor" stroke-width="1"/>
-  <text x="140" y="150" font-size="11" fill="currentColor" text-anchor="end">2</text>
-  <line x1="143" y1="106" x2="149" y2="106" stroke="currentColor" stroke-width="1"/>
-  <text x="140" y="110" font-size="11" fill="currentColor" text-anchor="end">4</text>
-  <line x1="143" y1="66" x2="149" y2="66" stroke="currentColor" stroke-width="1"/>
-  <text x="140" y="70" font-size="11" fill="currentColor" text-anchor="end">6</text>
-  <line x1="143" y1="26" x2="149" y2="26" stroke="currentColor" stroke-width="1"/>
-  <text x="140" y="30" font-size="11" fill="currentColor" text-anchor="end">8</text>
-  <line x1="47.5" y1="28.9" x2="204.5" y2="343.1" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="209,352 200.1,345.3 209,340.8" fill="currentColor"/>
-  <polygon points="43,20 51.9,26.7 43,31.2" fill="currentColor"/>
-  <line x1="66" y1="66" x2="66" y2="306" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <line x1="66" y1="306" x2="186" y2="306" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 3"/>
-  <circle cx="66" cy="66" r="4" fill="currentColor"/>
-  <circle cx="186" cy="306" r="4" fill="currentColor"/>
-  <text x="54.8" y="86.2" font-size="13" fill="currentColor" text-anchor="end">(−4, 6)</text>
-  <text x="197.2" y="294.8" font-size="13" fill="currentColor" text-anchor="start">(2, −6)</text>
-  <text x="142" y="246" font-size="13" fill="currentColor" text-anchor="end">rise = −12</text>
-  <text x="126" y="329" font-size="13" fill="currentColor" text-anchor="middle">run = 6</text>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A line falling from left to right through the points (−4, 6) and (2, −6). A slope triangle from (−4, 6) down to (−4, −6) and then across to (2, −6) marks a rise of −12 down and a run of 6 to the right.","xMin":-6,"xMax":6,"yMin":-8,"yMax":8,"tickLabels":true,"tickStep":2,"lines":[{"slope":-2,"intercept":-2}],"slopeTriangles":[{"from":[-4,6],"to":[2,-6],"riseLabel":"rise = −12","runLabel":"run = 6","riseNudge":[90,56]}],"points":[{"at":[-4,6],"label":"(−4, 6)"},{"at":[2,-6],"label":"(2, −6)"}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Find the slope of the line graphed above, which passes through $(-4, 6)$ and $(2, -6)$."
@@ -664,4 +604,4 @@ $(2 \cdot 8) \cdot 5$
   answerDisplay="$\tfrac{1}{50}$"
 >}}
 
-<small>This knowledge check is adapted from the Chapter 7–11 [Review Exercises and Practice Tests](https://openstax.org/books/prealgebra-2e/pages/7-review-exercises) of Prealgebra 2e by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (Chapter 10's Practice Test answer key is even-numbered instead of odd — used even-numbered questions there; substituted Review Exercises where a section lacked usable Practice Test questions elsewhere), converted them to interactive exercises with instant feedback, split multi-part questions into separate exercises, rephrased word-answer and graphing-only questions as value questions, and took all answers from the book's Answer Key.</small>
+<small>This knowledge check is adapted from the Chapter 7–11 [Review Exercises and Practice Tests](https://openstax.org/books/prealgebra-2e/pages/7-review-exercises) of Prealgebra 2e by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/prealgebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (Chapter 10's Practice Test answer key is even-numbered instead of odd — used even-numbered questions there; substituted Review Exercises where a section lacked usable Practice Test questions elsewhere), converted them to interactive exercises with instant feedback, split multi-part questions into separate exercises, rephrased word-answer questions as value questions, kept the graphing questions as graphing questions the reader draws on an interactive grid, recreated the needed figure as an accessible inline graph, and took all answers from the book's Answer Key.</small>

@@ -11,8 +11,15 @@
  *   must place N distinct points and ALL of them must lie on the line;
  *   which points they choose is free
  *   { system: [<line>, <line>] }    two lines (4 points; order-agnostic)
+ *   { asymptotes: [<line>, …] }     one to three asymptote lines, two points
+ *                                   each (consecutive pairs; order-agnostic).
+ *                                   Members are {x}, {y}, or slope lines, so
+ *                                   vertical, horizontal, AND slant
+ *                                   asymptotes all grade
  *   { quadratic: { a, b?, c? } }    parabola y = ax² + bx + c
- *                                   (student places vertex, then one point)
+ *                                   (student places vertex, then one point;
+ *                                   plotPoints: N asks for the vertex plus
+ *                                   N−1 points, all on one parabola)
  *   { points: [[x, y], …] }         a set of 1–12 points the student must
  *                                   place, any order ("plot the points…")
  *
@@ -29,7 +36,10 @@
  *   'vertexRight'     parabola: vertex matches, opening (a) doesn't
  *   'shapeRight'      parabola: a matches, vertex doesn't
  *   'pointsPartial'   points: some but not all of the set is placed right
+ *   'asymptotePartial' asymptotes: some but not all of the set is placed right
  *   'notCollinear'    line with plotPoints > 2: the points make no single line
+ *   'notOnParabola'   quadratic with plotPoints > 2: the extra points are not
+ *                     all on one parabola through the placed vertex
  */
 
 // Constants only — check-graph grades in the browser with no MathLive and no
@@ -80,6 +90,21 @@ export function correctPointCount(pts, targets) {
   return targets.filter((t) => placed.some((p) => near(p[0], t[0]) && near(p[1], t[1]))).length;
 }
 
+/**
+ * How many authored asymptotes have a matching student line. Each consecutive
+ * pair of points draws one line; a degenerate pair draws none. Counting
+ * per-target is a true maximum matching: the targets are distinct lines (the
+ * config parser refuses duplicates), and one student line can only ever equal
+ * one of them. Exported for the component's "1 of the 2 asymptotes…" feedback.
+ */
+export function correctAsymptoteCount(pts, targets) {
+  const lines = [];
+  for (let i = 0; i + 1 < pts.length; i += 2) {
+    if (distinct(pts[i], pts[i + 1])) lines.push(lineOf(pts[i], pts[i + 1]));
+  }
+  return targets.filter((t) => lines.some((s) => gradeLine(s, normLine(t)) === 'correct')).length;
+}
+
 export function checkGraphPlot(pts, answer) {
   if (answer.system) {
     if (pts.length < 4 || !distinct(pts[0], pts[1]) || !distinct(pts[2], pts[3])) {
@@ -97,6 +122,20 @@ export function checkGraphPlot(pts, answer) {
     return best === 2 ? 'correct' : best === 1 ? 'systemPartial' : 'incorrect';
   }
 
+  if (answer.asymptotes) {
+    // Same pairing contract as `system`, generalized to 1–3 members: each
+    // consecutive pair of points draws one asymptote. Points may repeat
+    // ACROSS pairs (two asymptotes legitimately cross), but a pair that
+    // collapses to one point draws nothing.
+    const wanted = answer.asymptotes.length;
+    if (pts.filter(Boolean).length < 2 * wanted) return 'needMore';
+    for (let i = 0; i + 1 < pts.length; i += 2) {
+      if (!distinct(pts[i], pts[i + 1])) return 'needMore';
+    }
+    const matched = correctAsymptoteCount(pts, answer.asymptotes);
+    return matched === wanted ? 'correct' : matched > 0 ? 'asymptotePartial' : 'incorrect';
+  }
+
   if (answer.points) {
     if (pts.filter(Boolean).length < answer.points.length) return 'needMore';
     const matched = correctPointCount(pts, answer.points);
@@ -106,15 +145,26 @@ export function checkGraphPlot(pts, answer) {
 
   if (answer.quadratic) {
     // pts[0] is the vertex; pts[1] any other point (different x, or no
-    // parabola is determined).
-    if (pts.length < 2 || !pts[0] || !pts[1] || pts[0][0] === pts[1][0]) {
+    // parabola is determined). With plotPoints > 2 the later points must lie
+    // on the parabola the first two determine, or there is no single
+    // parabola to grade against the answer.
+    const wanted = answer.plotPoints ?? 2;
+    const placedQ = pts.filter(Boolean);
+    if (placedQ.length < wanted || !pts[0] || !pts[1] || pts[0][0] === pts[1][0]) {
       return 'needMore';
+    }
+    for (let i = 0; i < placedQ.length; i += 1) {
+      for (let j = i + 1; j < placedQ.length; j += 1) {
+        if (!distinct(placedQ[i], placedQ[j])) return 'needMore';
+      }
     }
     const { a } = answer.quadratic;
     const [h, k] = quadraticVertex(answer.quadratic);
     const [hs, ks] = pts[0];
     const [px, py] = pts[1];
     const as = (py - ks) / (px - hs) ** 2;
+    const onParabola = (p) => p[0] !== hs && near(p[1], as * (p[0] - hs) ** 2 + ks);
+    if (!placedQ.slice(2).every(onParabola)) return 'notOnParabola';
     const vOk = near(hs, h) && near(ks, k);
     const aOk = near(as, a);
     return vOk && aOk ? 'correct' : vOk ? 'vertexRight' : aOk ? 'shapeRight' : 'incorrect';

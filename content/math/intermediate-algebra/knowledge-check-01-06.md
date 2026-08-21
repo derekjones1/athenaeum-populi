@@ -244,6 +244,14 @@ no
   answerDisplay="$(0,3)$"
 >}}
 
+{{< graphplot
+  question="Graph the line $y = \tfrac{5}{3}x - 1$."
+  answerDisplay="$y = \tfrac{5}{3}x - 1$, through $(-3, -6)$, $(0, -1)$, and $(3, 4)$"
+  ariaLabel="A blank grid from −14 to 14 on both axes."
+>}}
+{"answer":{"slope":1.6666666666666667,"intercept":-1,"plotPoints":3},"grid":{"xMin":-14,"xMax":14,"yMin":-14,"yMax":14}}
+{{< /graphplot >}}
+
 ### 3.2 Slope of a Line
 
 {{< fillin
@@ -259,6 +267,14 @@ parallel
 perpendicular
 neither
 {{< /multiplechoice >}}
+
+{{< graphplot
+  question="Graph the line with slope $m = \tfrac{1}{2}$ that contains the point $(-3, -4)$."
+  answerDisplay="$y = \tfrac{1}{2}x - \tfrac{5}{2}$, through $(-3, -4)$, $(-1, -3)$, and $(1, -2)$"
+  ariaLabel="A blank grid from −7 to 7 on both axes."
+>}}
+{"answer":{"slope":0.5,"intercept":-2.5,"plotPoints":3},"grid":{"xMin":-7,"xMax":7,"yMin":-7,"yMax":7}}
+{{< /graphplot >}}
 
 ### 3.3 Find the Equation of a Line
 
@@ -285,13 +301,17 @@ no
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which description gives the graph of $y > \tfrac{3}{2}x + 5$?"
-  answer="a dashed boundary line with the region above the line shaded"
+  question="Which graph shows $y > \tfrac{3}{2}x + 5$?"
+  mode="graph"
+  answerIndex="3"
 >}}
-a solid boundary line with the region above the line shaded
-a dashed boundary line with the region below the line shaded
-a solid boundary line with the region below the line shaded
-a dashed boundary line with the region above the line shaded
+{"ariaLabel":"A solid boundary line through (0, 5) rising steeply to the right, with the region above the line shaded.","xMin":-8,"xMax":4,"yMin":-10,"yMax":10,"unit":16,"gridStep":1,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":1.5,"intercept":5},"side":[0,10],"dashed":false}]}
+===OPT===
+{"ariaLabel":"A dashed boundary line through (0, 5) rising steeply to the right, with the region below the line shaded.","xMin":-8,"xMax":4,"yMin":-10,"yMax":10,"unit":16,"gridStep":1,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":1.5,"intercept":5},"side":[0,0],"dashed":true}]}
+===OPT===
+{"ariaLabel":"A solid boundary line through (0, 5) rising steeply to the right, with the region below the line shaded.","xMin":-8,"xMax":4,"yMin":-10,"yMax":10,"unit":16,"gridStep":1,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":1.5,"intercept":5},"side":[0,0],"dashed":false}]}
+===OPT===
+{"ariaLabel":"A dashed boundary line through (0, 5) rising steeply to the right, with the region above the line shaded.","xMin":-8,"xMax":4,"yMin":-10,"yMax":10,"unit":16,"gridStep":1,"tickLabels":true,"tickStep":2,"regions":[{"line":{"slope":1.5,"intercept":5},"side":[0,10],"dashed":true}]}
 {{< /multiplechoice >}}
 
 ### 3.5 Relations and Functions
@@ -335,13 +355,17 @@ $\{0,1,8,27\}$
 >}}
 
 {{< multiplechoice
-  question="Which description gives the graph of $f(x) = x^2 + 1$?"
-  answer="an upward-opening parabola with vertex $(0,1)$"
+  question="Which graph shows $f(x) = x^2 + 1$?"
+  mode="graph"
+  answerIndex="1"
 >}}
-an upward-opening parabola with vertex $(1,0)$
-an upward-opening parabola with vertex $(0,1)$
-a straight line through $(0,1)$
-a downward-opening parabola with vertex $(0,1)$
+{"ariaLabel":"A parabola opening upward with its lowest point at (1, 0).","xMin":-4,"xMax":4,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"tickStep":1,"quadratics":[{"a":1,"b":-2,"c":1}]}
+===OPT===
+{"ariaLabel":"A parabola opening upward with its lowest point at (0, 1).","xMin":-4,"xMax":4,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"tickStep":1,"quadratics":[{"a":1,"c":1}]}
+===OPT===
+{"ariaLabel":"A straight line through (0, 1), rising from left to right.","xMin":-4,"xMax":4,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":1,"intercept":1}]}
+===OPT===
+{"ariaLabel":"A parabola opening downward with its highest point at (0, 1).","xMin":-4,"xMax":4,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"tickStep":1,"quadratics":[{"a":-1,"c":1}]}
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -634,4 +658,4 @@ yes
   answerDisplay="14 inches"
 >}}
 
-<small>This knowledge check is adapted from the Chapter 1–6 [Review Exercises and Practice Tests](https://openstax.org/books/intermediate-algebra-2e/pages/1-review-exercises) of Intermediate Algebra 2e by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked usable Practice Test questions), converted them to interactive exercises with instant feedback, split multipart questions into separate exercises, rephrased graphing, word-answer, and interval questions as value, ordered-pair, interval, and multiple-choice questions, and took all answers from the book's Answer Key.</small>
+<small>This knowledge check is adapted from the Chapter 1–6 [Review Exercises and Practice Tests](https://openstax.org/books/intermediate-algebra-2e/pages/1-review-exercises) of Intermediate Algebra 2e by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked usable Practice Test questions), converted them to interactive exercises with instant feedback, split multipart questions into separate exercises, rephrased word-answer and interval questions as value, ordered-pair, interval, and multiple-choice questions, kept the graphing questions as graphing questions the reader draws on an interactive grid, asked the two “which graph” questions with rendered graphs rather than prose descriptions, and took all answers from the book's Answer Key.</small>

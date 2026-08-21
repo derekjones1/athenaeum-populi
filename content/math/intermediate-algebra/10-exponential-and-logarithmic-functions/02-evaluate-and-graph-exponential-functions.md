@@ -524,12 +524,14 @@ Access these online resources for additional instruction and practice with evalu
   hint="Substitute $x=0$ into $g(x)=4^{x-1}$: $g(0)=4^{0-1}=4^{-1}$."
 >}}
 
-{{< fillin
-  question="The graph of $g(x)=2^x+1$ is the graph of $f(x)=2^x$ shifted up 1 unit. What is the equation of the horizontal asymptote of $g$?"
-  answer="y=1"
-  answerForm="solved:y"
+{{< graphplot
+  question="The graph of $g(x)=2^x+1$ is the graph of $f(x)=2^x$ shifted up 1 unit. Graph the horizontal asymptote of $g$."
+  answerDisplay="$y=1$"
+  ariaLabel="A blank grid from −4 to 4 on the x-axis and −2 to 8 on the y-axis."
   hint="A vertical shift of $k$ units moves the horizontal asymptote $y=0$ to $y=k$."
 >}}
+{"answer": {"asymptotes": [{"y": 1}]}, "grid": {"xMin": -4, "xMax": 4, "yMin": -2, "yMax": 8}}
+{{< /graphplot >}}
 
 ### Solve Exponential equations
 

@@ -1749,8 +1749,8 @@ test('a math span cut by a table cell boundary is rejected', () => {
 test('an absurd grid span is a lint error, not a runtime throw', () => {
   const SECTION = 'content/math/book/01-chapter/01-section.md';
   const graphplot = (grid, snap = 1) => [
-    `{{< graphplot question="Graph the line." ariaLabel="A grid." hint="Plot two points." snap="${snap}" >}}`,
-    `{"answer":{"slope":1,"intercept":0},"grid":${grid}}`,
+    `{{< graphplot question="Graph the line." ariaLabel="A grid." hint="Plot three points." snap="${snap}" >}}`,
+    `{"answer":{"slope":1,"intercept":0,"plotPoints":3},"grid":${grid}}`,
     '{{< /graphplot >}}',
   ].join('\n');
   const errorsOf = (grid, snap) => lintHugo(graphplot(grid, snap), SECTION).errors
@@ -1767,12 +1767,43 @@ test('an absurd grid span is a lint error, not a runtime throw', () => {
 
   // An author who turns the labels off is asking for something renderable, and
   // the same grid is then fine.
-  assert.equal(errorsOf('{"xMin":-100000,"xMax":100000,"yMin":-7,"yMax":7,"gridStep":1000,"tickLabels":false}', 1000).length, 0);
+  // (y spans the same range as x: at snap 1000 the answer line y = x only
+  // passes through snap-lattice points where both coordinates are multiples
+  // of 1000, and the reachability guard would rightly reject a ±7 y-range.)
+  assert.equal(errorsOf('{"xMin":-100000,"xMax":100000,"yMin":-100000,"yMax":100000,"gridStep":1000,"tickLabels":false}', 1000).length, 0);
 
   // The ordinary authored grids stay silent.
   assert.equal(errorsOf('{}').length, 0);
   assert.equal(errorsOf('{"xMin":-10,"xMax":10,"yMin":-10,"yMax":10}').length, 0);
   assert.equal(errorsOf('{"xMin":-20,"xMax":20,"yMin":-20,"yMax":20,"gridStep":2,"tickStep":4}').length, 0);
+});
+
+// ---- graphplot: two-point line and quadratic answers are corpus policy errors
+// A two-handle line (or vertex-plus-one parabola) can be reproduced from the
+// answer display without engaging the graph, so authored exercises must ask
+// for at least three placed points. Systems stay exempt — plotPoints does not
+// exist on system members.
+test('a graphplot answer asking for only two points fails the lint', () => {
+  const SECTION = 'content/math/book/01-chapter/01-section.md';
+  const block = (answer) => [
+    '{{< graphplot question="Graph it." ariaLabel="A grid." hint="Plot points." >}}',
+    `{"answer":${answer},"grid":{}}`,
+    '{{< /graphplot >}}',
+  ].join('\n');
+  const errorsOf = (answer) => lintHugo(block(answer), SECTION).errors
+    .filter((error) => error.includes('at least three placed points'));
+
+  assert.equal(errorsOf('{"slope":2,"intercept":1}').length, 1);
+  assert.equal(errorsOf('{"quadratic":{"a":1}}').length, 1);
+  assert.equal(errorsOf('{"slope":2,"intercept":1,"plotPoints":2}').length, 1);
+  assert.equal(errorsOf('{"slope":2,"intercept":1,"plotPoints":3}').length, 0);
+  assert.equal(errorsOf('{"quadratic":{"a":1},"plotPoints":3}').length, 0);
+  assert.equal(errorsOf('{"system":[{"slope":1,"intercept":0},{"slope":-1,"intercept":2}]}').length, 0);
+  assert.equal(errorsOf('{"points":[[1,1],[2,2]]}').length, 0);
+  // Asymptote sets are exempt the same way systems are: two points per member
+  // is already 2×N, and plotPoints does not exist on the form.
+  assert.equal(errorsOf('{"asymptotes":[{"x":2},{"y":3}]}').length, 0);
+  assert.equal(errorsOf('{"asymptotes":[{"x":2}]}').length, 0);
 });
 
 // ---- answerDisplay is not a multiplechoice parameter ------------------------
@@ -1894,6 +1925,52 @@ test('a superscript exponent is math noise in prose and the only form a figure h
       + '"texts":[{"at":[1,1],"text":"f⁻¹(x)"}]}')),
     [],
     'inside a figure spec the superscript IS the exponent',
+  );
+});
+
+test('a stray double backslash in math is caught, but a row separator is not', () => {
+  // KaTeX reads `\\` as a row break and sets what follows as literal letters,
+  // so `$x=-\\tfrac{b}{2a}$` renders a line break and the word "tfrac" and
+  // never throws — verify-section's KaTeX pass reports it clean and the page
+  // merely looks wrong. A heredoc that ate one backslash put exactly this into
+  // intermediate algebra 9.6. Inside \begin{…} a `\\` is the row separator,
+  // which is every legitimate use in the corpus.
+  const stray = (source) => lintHugo(source, SECTION)
+    .errors.filter((e) => e.includes('stray'));
+
+  assert(stray('The axis is $x=-\\\\tfrac{b}{2a}$ here.\n').length > 0,
+    'a doubled backslash outside an environment is an escaping bug');
+  assert.deepEqual(
+    stray('$\\begin{array}{l} x - y = -1 \\\\ 2x - y = -5 \\end{array}$\n'),
+    [],
+    'inside \\begin{array} the double backslash separates rows',
+  );
+  assert.deepEqual(
+    stray('$$\\begin{aligned} a &= b \\\\ c &= d \\end{aligned}$$\n'),
+    [],
+    'display math with an environment is equally fine',
+  );
+
+  // The environments are BLANKED, not used to skip the span. Skipping on sight
+  // of a `\begin{` disabled the rule for every span that also carries one, so
+  // the heredoc defect survived whenever it shared a span with a legitimate
+  // environment — which is exactly where nobody would look for it.
+  assert(
+    stray('$x=-\\\\tfrac{b}{2a}\\begin{cases} 1 & x>0 \\\\ -1 & x \\le 0 \\end{cases}$\n').length > 0,
+    'a stray outside the environment is caught even when the span opens one',
+  );
+  assert.deepEqual(
+    stray('$\\begin{array}{l} \\begin{aligned} a &= b \\\\ c &= d \\end{aligned} \\\\ e \\end{array}$\n'),
+    [],
+    'nested environments are blanked as one run, separators and all',
+  );
+
+  // Fenced code is documentation, not authored math: a shell snippet holding a
+  // `$…$`-looking run reported a stray on the raw source.
+  assert.deepEqual(
+    stray('Run it:\n\n```sh\nprintf "$x \\\\ y"\n```\n'),
+    [],
+    'a fenced code block is not a math span',
   );
 });
 

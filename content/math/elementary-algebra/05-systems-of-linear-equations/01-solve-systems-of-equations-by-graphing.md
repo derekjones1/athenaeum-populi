@@ -280,17 +280,14 @@ $y = 6$ — its graph is a vertical or horizontal line. You can still graph it
 on the same plane and find where it crosses the other line exactly the way
 we've been doing.
 
-{{< fillin
-  question="Solve the system by graphing: $\{x - 3y = -3,\ x + y = 5\}$. After graphing both lines, what is the x-coordinate of the point where they intersect?"
-  answer="3"
-  hint="From the second equation, $x = 5 - y$. Substitute that into the first equation and solve for y first, then find x."
+{{< graphplot
+  question="Solve the system by graphing: $\{x - 3y = -3,\ x + y = 5\}$."
+  answerDisplay="$x - 3y = -3$ and $x + y = 5$"
+  ariaLabel="A blank coordinate grid from −6 to 6 on both axes."
+  hint="Solve each equation for $y$: $x - 3y = -3$ becomes $y = \tfrac{1}{3}x + 1$, and $x + y = 5$ becomes $y = -x + 5$. Use each line's slope and $y$-intercept to place two points on it."
 >}}
-
-{{< fillin
-  question="For the same system, what is the y-coordinate of the intersection point?"
-  answer="2"
-  hint="Once you know $x = 3$, substitute into $x + y = 5$ to find y."
->}}
+{"answer":{"system":[{"slope":0.3333333333333333,"intercept":1},{"slope":-1,"intercept":5}]},"grid":{"xMin":-6,"xMax":6,"yMin":-6,"yMax":6}}
+{{< /graphplot >}}
 
 ## Determine the number of solutions of a linear system
 
@@ -650,17 +647,27 @@ no
 
 ### Solve a system of linear equations by graphing
 
-{{< fillin
+{{< graphplot
   question="Solve by graphing: $\left\{\begin{array}{l}3x+y=-3 \\ 2x+3y=5\end{array}\right.$"
-  answer="(-2,3)"
-  hint="Graph both lines on the same coordinate plane, then read the ordered pair where they intersect."
+  answerDisplay="$3x + y = -3$ and $2x + 3y = 5$"
+  ariaLabel="A blank coordinate grid from −6 to 6 on both axes."
+  hint="Solve each equation for $y$: $3x + y = -3$ becomes $y = -3x - 3$, and $2x + 3y = 5$ becomes $y = -\tfrac{2}{3}x + \tfrac{5}{3}$. Use each line's slope and $y$-intercept to place two points on it."
 >}}
+{"answer":{"system":[{"slope":-3,"intercept":-3},{"slope":-0.6666666666666666,"intercept":1.6666666666666667}]},"grid":{"xMin":-6,"xMax":6,"yMin":-6,"yMax":6}}
+{{< /graphplot >}}
 
-{{< fillin
-  question="Solve by graphing: $\left\{\begin{array}{l}-3x+y=-1 \\ 2x+y=4\end{array}\right.$"
-  answer="(1,2)"
-  hint="Write each equation in slope–intercept form, graph both lines, and identify their intersection."
+{{< multiplechoice
+  question="Which graph shows the solution of the system $\left\{\begin{array}{l}-3x+y=-1 \\ 2x+y=4\end{array}\right.$?"
+  mode="graph"
+  answerIndex="1"
+  hint="Solve each equation for $y$: $-3x + y = -1$ becomes $y = 3x - 1$, and $2x + y = 4$ becomes $y = -2x + 4$. Look for the option whose two lines have those slopes and $y$-intercepts and cross at the point that satisfies both equations."
 >}}
+{"ariaLabel":"A line descending steeply through the y-axis just below zero and a line rising steeply through the y-axis well above zero, crossing to the left of the y-axis.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":-2,"intercept":-1},{"slope":3,"intercept":4}],"points":[{"at":[-1,1]}]}
+===OPT===
+{"ariaLabel":"A line rising steeply through the y-axis just below zero and a line falling through the y-axis well above zero, crossing to the right of the y-axis above the x-axis.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":3,"intercept":-1},{"slope":-2,"intercept":4}],"points":[{"at":[1,2]}]}
+===OPT===
+{"ariaLabel":"Two parallel lines with the same upward slope, one crossing below the x-axis and the other crossing above it, never meeting.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":1,"intercept":-2},{"slope":1,"intercept":3}]}
+{{< /multiplechoice >}}
 
 ### Determine the number of solutions of a linear system
 

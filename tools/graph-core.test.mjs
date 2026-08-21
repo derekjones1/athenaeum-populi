@@ -687,6 +687,91 @@ test('from/to trims a reflected log branch instead of reporting an empty domain'
   assert.ok(pts.length > 2, 'the trimmed branch still draws');
 });
 
+// The hyperbola is a conic like the circle, not an a·f(x−h)+k function shape,
+// so it is its own top-level family. Every drawn point must satisfy the
+// standard-form equation exactly — a spline through plotted points would not.
+
+/** invert the fixed pixel mapping (margin 26) back to math coordinates */
+const toMath = ([pxX, pxY], { xMin, yMax, unit }) => [
+  (pxX - 26) / unit + xMin,
+  yMax - (pxY - 26) / unit,
+];
+
+/** the branch's turnaround point: near the vertex the curve is flat to fmt's
+    0.1px rounding, so the extreme pixel is a tie shared by a stretch of
+    samples — average the tied stretch rather than trusting any single one */
+const turnaround = (branch, axis, dir) => {
+  const extreme = dir * Math.max(...branch.map((p) => dir * p[axis]));
+  const near = branch.filter((p) => Math.abs(p[axis] - extreme) <= 1);
+  return [
+    near.reduce((s, p) => s + p[0], 0) / near.length,
+    near.reduce((s, p) => s + p[1], 0) / near.length,
+  ];
+};
+
+test('a hyperbola draws two branches lying exactly on its standard-form equation', () => {
+  const window = { xMin: -7, xMax: 7, yMin: -7, yMax: 7, unit: 20, ariaLabel: 't' };
+  // x²/9 − y²/16 = 1: vertices (±3, 0), branches open left and right
+  const out = buildGraph({ ...window, hyperbolas: [{ at: [0, 0], a: 3, b: 4 }] });
+  const branches = polylines(out);
+  assert.equal(branches.length, 2, 'a hyperbola is two branch runs');
+
+  for (const branch of branches) {
+    // endpoints are trimmed under the arrowheads, so test interior points
+    for (const p of branch.slice(2, -2)) {
+      const [x, y] = toMath(p, window);
+      // 0.03 covers fmt's 0.1px serialization rounding; spline error is ~10×
+      const residual = Math.abs((x * x) / 9 - (y * y) / 16 - 1);
+      assert.ok(residual < 0.03,
+        `(${x.toFixed(3)}, ${y.toFixed(3)}) is off the hyperbola by ${residual.toFixed(4)}`);
+    }
+  }
+
+  // The vertices: each branch turns around exactly at (±3, 0).
+  const [right, left] = branches[0][0][0] > branches[1][0][0]
+    ? branches : [branches[1], branches[0]];
+  const rightVertex = toMath(turnaround(right, 0, -1), window);
+  const leftVertex = toMath(turnaround(left, 0, 1), window);
+  assert.ok(dist(rightVertex, [3, 0]) < 0.05, `right vertex at (3,0), got ${rightVertex}`);
+  assert.ok(dist(leftVertex, [-3, 0]) < 0.05, `left vertex at (-3,0), got ${leftVertex}`);
+});
+
+test('vertical: true opens a translated hyperbola up and down from its centre', () => {
+  const window = { xMin: -7, xMax: 7, yMin: -7, yMax: 7, unit: 20, ariaLabel: 't' };
+  // (y+1)²/4 − (x−1)²/9 = 1: centre (1,−1), vertices (1, 1) and (1, −3)
+  const out = buildGraph({
+    ...window, hyperbolas: [{ at: [1, -1], a: 2, b: 3, vertical: true }],
+  });
+  const branches = polylines(out);
+  assert.equal(branches.length, 2);
+
+  for (const branch of branches) {
+    for (const p of branch.slice(2, -2)) {
+      const [x, y] = toMath(p, window);
+      const residual = Math.abs(((y + 1) ** 2) / 4 - ((x - 1) ** 2) / 9 - 1);
+      assert.ok(residual < 0.03,
+        `(${x.toFixed(3)}, ${y.toFixed(3)}) is off the hyperbola by ${residual.toFixed(4)}`);
+    }
+  }
+
+  // pixels grow downward: the upper branch has the smaller y-pixels
+  const [upper, lower] = branches[0][0][1] < branches[1][0][1]
+    ? branches : [branches[1], branches[0]];
+  const upperVertex = toMath(turnaround(upper, 1, 1), window);
+  const lowerVertex = toMath(turnaround(lower, 1, -1), window);
+  assert.ok(dist(upperVertex, [1, 1]) < 0.05, `upper vertex at (1,1), got ${upperVertex}`);
+  assert.ok(dist(lowerVertex, [1, -3]) < 0.05, `lower vertex at (1,-3), got ${lowerVertex}`);
+});
+
+test('hyperbola spec validation rejects bad centres, semi-axes, and from/to', () => {
+  assert.throws(() => buildGraph({ ...GRID, hyperbolas: [{ at: [0, 0], a: 0, b: 2 }] }));
+  assert.throws(() => buildGraph({ ...GRID, hyperbolas: [{ at: [0, 0], a: 2, b: -1 }] }));
+  assert.throws(() => buildGraph({ ...GRID, hyperbolas: [{ at: [Infinity, 0], a: 2, b: 2 }] }));
+  assert.throws(() => buildGraph({ ...GRID, hyperbolas: [{ a: 2, b: 2 }] }));
+  assert.throws(() => buildGraph({ ...GRID, hyperbolas: [{ at: [0, 0], a: 2, b: 2, from: 1 }] }),
+    /from\/to/);
+});
+
 test('a grid never collapses into a solid block on a small-unit axis', () => {
   // The grid step is stated in MATH units. A "Cases" axis running 0–1,100 at
   // 0.5 px per unit emitted 1,100 horizontal lines half a pixel apart, which

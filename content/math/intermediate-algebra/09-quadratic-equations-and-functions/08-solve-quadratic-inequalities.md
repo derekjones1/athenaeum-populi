@@ -138,14 +138,18 @@ zero. These are the values of $x$ that make the parabola below the $x$-axis.
 We do not include the values 2 and 4, as the inequality is less than only.
 The solution, in interval notation, is $(2,4)$.
 
-{{< graphplot
-  question="Graph $y=x^2+2x-8$."
-  answerDisplay="$y=x^2+2x-8$"
-  ariaLabel="A blank coordinate grid from −6 to 4 on the x-axis and −10 to 4 on the y-axis."
-  hint="Find the axis of symmetry and vertex, then plot one more point on the parabola."
+{{< multiplechoice
+  question="Which graph shows $y=x^2+2x-8$?"
+  mode="graph"
+  answerIndex="1"
+  hint="Find the vertex and $x$-intercepts, then check which way the parabola opens."
 >}}
-{"answer":{"quadratic":{"a":1,"b":2,"c":-8}},"grid":{"xMin":-6,"xMax":4,"yMin":-10,"yMax":4}}
-{{< /graphplot >}}
+{"ariaLabel":"A downward-opening parabola with vertex (-1, 9), crossing the x-axis at (-4, 0) and (2, 0).","xMin":-6,"xMax":6,"yMin":-10,"yMax":10,"tickLabels":true,"quadratics":[{"a":-1,"b":-2,"c":8}]}
+===OPT===
+{"ariaLabel":"An upward-opening parabola with vertex (-1, -9), crossing the x-axis at (-4, 0) and (2, 0).","xMin":-6,"xMax":6,"yMin":-10,"yMax":10,"tickLabels":true,"quadratics":[{"a":1,"b":2,"c":-8}]}
+===OPT===
+{"ariaLabel":"An upward-opening parabola with vertex (1, -9), crossing the x-axis at (-2, 0) and (4, 0).","xMin":-6,"xMax":6,"yMin":-10,"yMax":10,"tickLabels":true,"quadratics":[{"a":1,"b":-2,"c":-8}]}
+{{< /multiplechoice >}}
 
 {{< fillin
   question="Solve $x^2+2x-8<0$ graphically. Write the solution in interval notation."
@@ -236,7 +240,7 @@ $(-\infty,-6]\cup[-2,\infty)$.
   ariaLabel="A blank coordinate grid from −10 to 2 on the x-axis and −10 to 6 on the y-axis."
   hint="Find the axis of symmetry and vertex, then plot one more point on the parabola."
 >}}
-{"answer":{"quadratic":{"a":-1,"b":-6,"c":-5}},"grid":{"xMin":-10,"xMax":2,"yMin":-10,"yMax":6}}
+{"answer":{"quadratic":{"a":-1,"b":-6,"c":-5},"plotPoints":3},"grid":{"xMin":-10,"xMax":2,"yMin":-10,"yMax":6}}
 {{< /graphplot >}}
 
 {{< fillin

@@ -9,7 +9,9 @@
  * Config arrives as JSON in a data-config attribute: { answer, grid }.
  */
 import { graphplotEngineUrl } from '@params';
-import { findFreeGridPoint, parseGraphPlotConfig } from '../lib/graph-plot-config.mjs';
+import {
+  findFreeGridPoint, parseGraphPlotConfig, resolveGraphPress, snapToGrid,
+} from '../lib/graph-plot-config.mjs';
 // The one U+2212 formatter. This file used to carry its own copy, so a change
 // to the shared one silently missed the point-handle labels.
 import { mathMinus as fmt } from '../lib/graph-core.mjs';
@@ -30,7 +32,9 @@ const COLOR = {
   vertexRight: 'var(--ap-warning, #9a6700)',
   shapeRight: 'var(--ap-warning, #9a6700)',
   pointsPartial: 'var(--ap-warning, #9a6700)',
+  asymptotePartial: 'var(--ap-warning, #9a6700)',
   notCollinear: 'var(--ap-warning, #9a6700)',
+  notOnParabola: 'var(--ap-warning, #9a6700)',
 };
 // Instruction sentences spell counts out ("three points"), matching the prose
 // register of the fixed strings below. plotPoints is capped at 12, so the
@@ -69,8 +73,9 @@ class GraphPlotElement extends HTMLElement {
     this.snap = cfg.snap;
     this.mode = cfg.mode;
     this.maxPoints = this.mode === 'system' ? 4
-      : this.mode === 'points' ? this.answer.points.length
-        : this.mode === 'line' ? (this.answer.plotPoints ?? 2) : 2;
+      : this.mode === 'asymptotes' ? this.answer.asymptotes.length * 2
+        : this.mode === 'points' ? this.answer.points.length
+          : (this.answer.plotPoints ?? 2);
     this.xMin = cfg.xMin; this.xMax = cfg.xMax;
     this.yMin = cfg.yMin; this.yMax = cfg.yMax;
     this.pts = [];
@@ -155,6 +160,15 @@ class GraphPlotElement extends HTMLElement {
     if (this.mode === 'line' && this.maxPoints > 2) {
       return `Place ${COUNT_WORDS[this.maxPoints]} points on the line.`;
     }
+    if (this.mode === 'quadratic' && this.maxPoints > 2) {
+      return `Place the vertex first, then ${COUNT_WORDS[this.maxPoints - 1]} more points on the parabola.`;
+    }
+    if (this.mode === 'asymptotes') {
+      const n = this.answer.asymptotes.length;
+      if (n === 1) return 'Place two points on the asymptote.';
+      if (n === 2) return 'Place two points on each asymptote — the first two make one asymptote, the next two the other.';
+      return `Place two points on each of the ${COUNT_WORDS[n]} asymptotes — each pair of points in turn makes one asymptote.`;
+    }
     return INSTRUCTIONS[this.mode];
   }
 
@@ -184,6 +198,7 @@ class GraphPlotElement extends HTMLElement {
       this.buildGraph = eng.buildGraph;
       this.checkGraphPlot = eng.checkGraphPlot;
       this.correctPointCount = eng.correctPointCount;
+      this.correctAsymptoteCount = eng.correctAsymptoteCount;
 
       this.svg.addEventListener('pointerdown', (e) => this._onDown(e));
       this.svg.addEventListener('pointermove', (e) => this._onMove(e));
@@ -200,13 +215,9 @@ class GraphPlotElement extends HTMLElement {
   }
 
   // --- geometry helpers -----------------------------------------------------
-  _clamp(v, lo, hi) { return Math.min(hi, Math.max(lo, v)); }
-  _snapPt([x, y]) {
-    return [
-      this._clamp(Math.round(x / this.snap) * this.snap, this.xMin, this.xMax),
-      this._clamp(Math.round(y / this.snap) * this.snap, this.yMin, this.yMax),
-    ];
-  }
+  // Snapping lives in graph-plot-config so validation measures reachability
+  // against the same rounding-then-clamping the component performs.
+  _snapPt(at) { return snapToGrid(at, this); }
   _toMath(e) {
     const rect = this.svg.getBoundingClientRect();
     // The viewBox origin is no longer always 0 0: the fit pass shifts it
@@ -233,11 +244,16 @@ class GraphPlotElement extends HTMLElement {
       if (p && q && (p[0] !== q[0] || p[1] !== q[1])) {
         lines.push(p[0] === q[0] ? { x: p[0] } : { through: [p, q] });
       }
-    } else if (this.mode === 'system') {
+    } else if (this.mode === 'system' || this.mode === 'asymptotes') {
+      // Asymptote pairs preview dashed — guide-ink convention for asymptotes
+      // everywhere else in the book's figures.
       for (let i = 0; i + 1 < this.pts.length; i += 2) {
         const [p, q] = [this.pts[i], this.pts[i + 1]];
         if (p && q && (p[0] !== q[0] || p[1] !== q[1])) {
-          lines.push(p[0] === q[0] ? { x: p[0] } : { through: [p, q] });
+          lines.push({
+            ...(p[0] === q[0] ? { x: p[0] } : { through: [p, q] }),
+            ...(this.mode === 'asymptotes' ? { dashed: true } : {}),
+          });
         }
       }
     }
@@ -301,6 +317,9 @@ class GraphPlotElement extends HTMLElement {
   _handleName(i) {
     if (this.mode === 'quadratic' && i === 0) return 'Vertex';
     if (this.mode === 'system') return `Point ${i + 1} (line ${i < 2 ? 1 : 2})`;
+    if (this.mode === 'asymptotes' && this.answer.asymptotes.length > 1) {
+      return `Point ${i + 1} (asymptote ${Math.floor(i / 2) + 1})`;
+    }
     return `Point ${i + 1}`;
   }
 
@@ -308,18 +327,18 @@ class GraphPlotElement extends HTMLElement {
   _onDown(e) {
     if (this.done || !this.g) return;
     e.preventDefault();
-    const at = this._toMath(e);
-    const grabbed = this.pts.findIndex((p) => Math.hypot(p[0] - at[0], p[1] - at[1]) < 0.6);
-    if (grabbed >= 0) {
-      this.dragIndex = grabbed;
-    } else if (this.pts.length < this.maxPoints) {
-      const p = this._snapPt(at);
-      if (this.pts.some((q) => q[0] === p[0] && q[1] === p[1])) return;
+    // Grab-or-place is decided in graph-plot-config, against the snapped cell
+    // rather than a fixed radius — see resolveGraphPress for why.
+    const action = resolveGraphPress(this, this._toMath(e));
+    if (!action) return;
+    if (action.grab !== undefined) {
+      this.dragIndex = action.grab;
+    } else {
       this.dragIndex = this.pts.length;
-      this.pts.push(p);
+      this.pts.push(action.place);
       this._resetStatus();
       this._render();
-    } else return;
+    }
     this.svg.setPointerCapture(e.pointerId);
   }
   _onMove(e) {
@@ -401,9 +420,22 @@ class GraphPlotElement extends HTMLElement {
     if (status === 'needMore' && this.mode === 'line' && this.maxPoints > 2) {
       return `Place ${COUNT_WORDS[this.maxPoints]} different points on the grid first.`;
     }
+    if (status === 'needMore' && this.mode === 'quadratic' && this.maxPoints > 2) {
+      return `Place the vertex and ${COUNT_WORDS[this.maxPoints - 1]} more points, each at a different x-value.`;
+    }
+    if (status === 'needMore' && this.mode === 'asymptotes') {
+      const n = this.answer.asymptotes.length;
+      return n === 1 ? 'Place two different points on the grid first.'
+        : `Place ${COUNT_WORDS[2 * n]} points — two for each asymptote.`;
+    }
     if (status === 'pointsPartial') {
       const n = this.correctPointCount(this.pts, this.answer.points);
       return `${n} of the ${this.maxPoints} points ${n === 1 ? 'is' : 'are'} placed correctly — adjust the others.`;
+    }
+    if (status === 'asymptotePartial') {
+      const k = this.answer.asymptotes.length;
+      const n = this.correctAsymptoteCount(this.pts, this.answer.asymptotes);
+      return `${n} of the ${k} asymptotes ${n === 1 ? 'is' : 'are'} placed correctly — adjust the ${k - n === 1 ? 'other' : 'others'}.`;
     }
     return {
       needMore: NEED_MORE[this.mode],
@@ -411,9 +443,12 @@ class GraphPlotElement extends HTMLElement {
       slopeRight: 'Your line has the right steepness — check where it crosses the y-axis.',
       interceptRight: 'It crosses the y-axis in the right place — check the slope.',
       systemPartial: 'One of your lines is correct — adjust the other.',
-      vertexRight: 'The vertex is right — check how the parabola opens (move your second point).',
+      vertexRight: this.maxPoints > 2
+        ? 'The vertex is right — check how the parabola opens (move your other points).'
+        : 'The vertex is right — check how the parabola opens (move your second point).',
       shapeRight: 'The shape is right — move the vertex.',
       notCollinear: 'Your points do not all lie on one straight line — line them up first.',
+      notOnParabola: 'Your points do not all lie on one parabola — adjust them so every point sits on the curve.',
     }[status] || '';
   }
 }

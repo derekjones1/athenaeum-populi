@@ -676,13 +676,14 @@ the graph below.
 {"ariaLabel":"The graph of f of x equals the quantity x−2 times x+3, over the quantity x−1 times x+2 times x−5, with vertical asymptotes at x=−2, x=1, and x=5, and a horizontal asymptote at y=0.","xMin":-6,"xMax":8,"yMin":-6,"yMax":6,"unit":20,"tickLabels":true,"tickStep":1,"rationals":[{"num":[-6,1,1],"den":[10,-7,-4,1]}],"lines":[{"x":-2,"dashed":true,"arrows":false,"label":"x = −2"},{"x":1,"dashed":true,"arrows":false,"label":"x = 1"},{"x":5,"dashed":true,"arrows":false,"label":"x = 5"},{"y":0,"dashed":true,"arrows":false,"label":"y = 0"}]}
 {{< /apfigure >}}
 
-{{< fillin
-  question="Find the vertical asymptotes of the function $f(x)=\tfrac{(2x-1)(2x+1)}{(x-2)(x+3)}$. If there is more than one, separate them with a comma."
-  answer="x=2,x=-3"
-  answerMode="unordered"
-  answerDisplay="$x=2$ or $x=-3$"
+{{< graphplot
+  question="Find the vertical asymptotes of the function $f(x)=\tfrac{(2x-1)(2x+1)}{(x-2)(x+3)}$ and place them on the grid."
+  answerDisplay="$x=2$ and $x=-3$"
+  ariaLabel="A blank grid from −6 to 6 on both axes."
   hint="The two factors already sit in the denominator with no matching factor in the numerator, so each gives an asymptote."
 >}}
+{"answer": {"asymptotes": [{"x": 2}, {"x": -3}]}, "grid": {"xMin": -6, "xMax": 6, "yMin": -6, "yMax": 6}}
+{{< /graphplot >}}
 
 {{< fillin
   question="Find the horizontal asymptote of that same function."
@@ -1210,8 +1211,11 @@ displaying either would hand a learner the answer to its own interactive
 question, and converted both Try Its into fillin components about their
 asymptotes, intercept, and removable discontinuity instead; omitted the
 "Media" callout's four external video links, which carry no transcribable
-mathematics; converted every retained "Try It" into interactive `fillin` or
-`multiplechoice` components, using multiple choice for every arrow-notation
+mathematics; converted every retained "Try It" into interactive `fillin`,
+`multiplechoice`, or `graphplot` components, using a place-the-asymptotes
+`graphplot` for the vertical-asymptote Try It on
+$f(x)=\tfrac{(2x-1)(2x+1)}{(x-2)(x+3)}$ (its two asymptotes are
+lattice-reachable), multiple choice for every arrow-notation
 end-/local-behavior judgment (not gradable as free-response math), an
 ordered pair with default ordered grading for every removable-discontinuity
 hole, `answerMode="unordered"` for every multi-asymptote list, and

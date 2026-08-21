@@ -454,13 +454,14 @@ vertical
   hint="In standard form, $a^2=25$, and since the $y^2$-term is positive, the vertices are $(0,\pm a)$."
 >}}
 
-{{< fillin
-  question="For the hyperbola $4y^2-9x^2=36$, enter both asymptote equations in the form $y=mx$, separated by a comma."
-  answer="y = \frac{3}{2}x , y = -\frac{3}{2}x"
-  answerMode="unordered"
-  answerDisplay="$y = \frac{3}{2}x , y = -\frac{3}{2}x$"
+{{< graphplot
+  question="For the hyperbola $4y^2-9x^2=36$, graph both asymptotes."
+  answerDisplay="$y = \frac{3}{2}x,\ y = -\frac{3}{2}x$"
+  ariaLabel="A blank grid from −6 to 6 on both axes."
   hint="Divide by $36$ to get $\frac{y^2}{9}-\frac{x^2}{4}=1$, so $a=3$ and $b=2$; since the transverse axis is vertical, the asymptotes are $y=\pm\frac{a}{b}x$."
 >}}
+{"answer": {"asymptotes": [{"slope": 1.5, "intercept": 0}, {"slope": -1.5, "intercept": 0}]}, "grid": {"xMin": -6, "xMax": 6, "yMin": -6, "yMax": 6}}
+{{< /graphplot >}}
 
 ### Graph a hyperbola with center at $(h,k)$
 

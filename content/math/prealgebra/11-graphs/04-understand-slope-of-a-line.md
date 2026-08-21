@@ -875,14 +875,18 @@ point, $(3, 0)$. Connect the points with a line.
 </svg>
 </div>
 
-{{< graphplot
-  question="Graph the line with $y$-intercept $4$ and slope $m = -\tfrac{5}{2}$ by placing two points on the line."
-  ariaLabel="A blank coordinate grid from negative 4 to 6 on the x-axis and negative 4 to 6 on the y-axis."
-  answerDisplay="$y = -\tfrac{5}{2}x + 4$"
-  hint="Start at the $y$-intercept $(0, 4)$. The slope $-\tfrac{5}{2}$ means count down $5$ and right $2$ to reach the second point."
+{{< multiplechoice
+  question="Which graph shows the line with $y$-intercept $4$ and slope $m = -\tfrac{5}{2}$?"
+  mode="graph"
+  answerIndex="1"
+  hint="The slope $-\tfrac{5}{2}$ is negative, so the line falls from left to right, and it falls steeply — down $5$ for every $2$ across. Rule out any line that rises, and any line that falls only gently."
 >}}
-{"answer":{"slope":-2.5,"intercept":4},"grid":{"xMin":-4,"xMax":6,"yMin":-4,"yMax":6}}
-{{< /graphplot >}}
+{"ariaLabel":"A line marked at (0, 4) that rises steeply from left to right, climbing about 5 units for every 2 it moves right.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":2.5,"intercept":4}],"points":[{"at":[0,4]}]}
+===OPT===
+{"ariaLabel":"A line marked at (0, 4) that falls steeply from left to right, dropping about 5 units for every 2 it moves right.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":-2.5,"intercept":4}],"points":[{"at":[0,4]}]}
+===OPT===
+{"ariaLabel":"A line marked at (0, 4) that falls gently from left to right, dropping only about 2 units for every 5 it moves right.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":-0.4,"intercept":4}],"points":[{"at":[0,4]}]}
+{{< /multiplechoice >}}
 
 **Example.** Graph the line passing through the point $(-1, -3)$ whose
 slope is $m = 4$.
@@ -1359,27 +1363,31 @@ undefined
 ### Graph a line given a point and the slope
 
 {{< graphplot
-  question="Graph the line that passes through $(0, 3)$ with slope $m = -\tfrac{2}{5}$ by placing two points on it."
+  question="Graph the line that passes through $(0, 3)$ with slope $m = -\tfrac{2}{5}$ by placing three points on it."
   answerDisplay="The line through $(0, 3)$ and $(5, 1)$"
-  ariaLabel="A blank grid from -7 to 7 on both axes."
-  hint="Start at $(0, 3)$, then count the run of $5$ to the right and the rise of $2$ down to reach a second point."
+  ariaLabel="A blank grid from -14 to 14 on both axes."
+  hint="Start at $(0, 3)$, then count the run of $5$ to the right and the rise of $2$ down to reach a second point — and $5$ left with $2$ up for a third."
 >}}
-{"answer": {"slope": -0.4, "intercept": 3}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
+{"answer": {"slope": -0.4, "intercept": 3, "plotPoints": 3}, "grid": {"xMin": -14, "xMax": 14, "yMin": -14, "yMax": 14}}
 {{< /graphplot >}}
 
-{{< fillin
-  question="To graph the line through $(1, -2)$ with slope $m = \tfrac{3}{4}$, start at $(1, -2)$ and use the slope to locate a second point. Moving right $4$ and up $3$, which point do you reach? Write it in the form $(x, y)$."
-  answer="(5,1)"
-  answerDisplay="$(5, 1)$"
-  hint="Add the run to the $x$-coordinate and the rise to the $y$-coordinate."
+{{< graphplot
+  question="Graph the line that passes through $(1, -2)$ with slope $m = \tfrac{3}{4}$ by placing three points on it."
+  answerDisplay="The line through $(1, -2)$ and $(5, 1)$"
+  ariaLabel="A blank grid from -14 to 14 on both axes."
+  hint="Start at $(1, -2)$, then count the run of $4$ to the right and the rise of $3$ up to reach a second point — and $4$ left with $3$ down for a third."
 >}}
+{"answer": {"slope": 0.75, "intercept": -2.75, "plotPoints": 3}, "grid": {"xMin": -14, "xMax": 14, "yMin": -14, "yMax": 14}}
+{{< /graphplot >}}
 
-{{< fillin
-  question="To graph the line through $(2, 5)$ with slope $m = -\tfrac{1}{3}$, start at $(2, 5)$ and use the slope to locate a second point. Moving right $3$ and down $1$, which point do you reach? Write it in the form $(x, y)$."
-  answer="(5,4)"
-  answerDisplay="$(5, 4)$"
-  hint="A negative slope means the rise is downward, so subtract it from the $y$-coordinate."
+{{< graphplot
+  question="Graph the line that passes through $(2, 5)$ with slope $m = -\tfrac{1}{3}$ by placing three points on it."
+  answerDisplay="The line through $(2, 5)$ and $(5, 4)$"
+  ariaLabel="A blank grid from -7 to 7 on both axes."
+  hint="Start at $(2, 5)$, then count the run of $3$ to the right and the rise of $1$ down to reach a second point — and $3$ left with $1$ up for a third."
 >}}
+{"answer": {"slope": -0.3333333333333333, "intercept": 5.666666666666667, "plotPoints": 3}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
+{{< /graphplot >}}
 
 ### Solve slope applications
 

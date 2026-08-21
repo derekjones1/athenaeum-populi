@@ -1516,7 +1516,7 @@ no
   ariaLabel="A blank coordinate grid from negative 7 to 7 on both axes."
   hint="Choose three values for $x$, such as $-1$, $0$, and $1$, and compute the matching $y$-values."
 >}}
-{"answer": {"slope": 3, "intercept": -1}, "grid": {}}
+{"answer": {"slope": 3, "intercept": -1, "plotPoints": 3}, "grid": {}}
 {{< /graphplot >}}
 
 {{< graphplot
@@ -1525,19 +1525,23 @@ no
   ariaLabel="A blank coordinate grid from negative 7 to 7 on both axes."
   hint="Choose three values for $x$, such as $-1$, $0$, and $1$, and compute the matching $y$-values."
 >}}
-{"answer": {"slope": 2, "intercept": 0}, "grid": {}}
+{"answer": {"slope": 2, "intercept": 0, "plotPoints": 3}, "grid": {}}
 {{< /graphplot >}}
 
 ### Graph vertical and horizontal lines
 
-{{< graphplot
-  question="Graph the equation $x=4$."
-  answerDisplay="$x=4$"
-  ariaLabel="A blank coordinate grid from negative 7 to 7 on both axes."
-  hint="Every point on a vertical line shares the same $x$-coordinate."
+{{< multiplechoice
+  question="Which graph shows $x = 4$?"
+  mode="graph"
+  answerIndex="1"
+  hint="A vertical line has the same $x$-value at every point on it. Find where each line crosses the $x$-axis, not the $y$-axis."
 >}}
-{"answer": {"x": 4}, "grid": {}}
-{{< /graphplot >}}
+{"ariaLabel":"A vertical line crossing the x-axis at negative 4.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"x":-4}]}
+===OPT===
+{"ariaLabel":"A vertical line crossing the x-axis at 4.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"x":4}]}
+===OPT===
+{"ariaLabel":"A horizontal line crossing the y-axis at 4.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"y":4}]}
+{{< /multiplechoice >}}
 
 {{< graphplot
   question="Graph the equation $y=3$."
@@ -1545,7 +1549,7 @@ no
   ariaLabel="A blank coordinate grid from negative 7 to 7 on both axes."
   hint="Every point on a horizontal line shares the same $y$-coordinate."
 >}}
-{"answer": {"y": 3}, "grid": {}}
+{"answer": {"y": 3, "plotPoints": 3}, "grid": {}}
 {{< /graphplot >}}
 
 ### Find the $x$- and $y$-intercepts
@@ -1569,10 +1573,10 @@ no
 {{< graphplot
   question="Graph $-x+4y=8$ using the intercepts."
   answerDisplay="$-x+4y=8$"
-  ariaLabel="A blank coordinate grid from negative 7 to 7 on both axes."
+  ariaLabel="A blank coordinate grid from negative 14 to 14 on both axes."
   hint="Find the $x$-intercept by letting $y=0$ and the $y$-intercept by letting $x=0$, then draw the line through them."
 >}}
-{"answer": {"slope": 0.25, "intercept": 2}, "grid": {}}
+{"answer": {"slope": 0.25, "intercept": 2, "plotPoints": 3}, "grid": {"xMin": -14, "xMax": 14, "yMin": -14, "yMax": 14}}
 {{< /graphplot >}}
 
 {{< graphplot
@@ -1581,7 +1585,7 @@ no
   ariaLabel="A blank coordinate grid from negative 7 to 7 on both axes."
   hint="Find the $x$-intercept by letting $y=0$ and the $y$-intercept by letting $x=0$, then draw the line through them."
 >}}
-{"answer": {"slope": -1, "intercept": -3}, "grid": {}}
+{"answer": {"slope": -1, "intercept": -3, "plotPoints": 3}, "grid": {}}
 {{< /graphplot >}}
 
 ---

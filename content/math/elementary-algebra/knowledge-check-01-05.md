@@ -493,54 +493,30 @@ weight: 6
   answer="(0, -1), (3, 1), (-3, -3)"
 >}}
 
-<div class="ap-figure">
-<svg role="img" aria-label="A line on a coordinate grid from negative 7 to 7 on both axes. The line passes through the points (0, negative 1) and (3, 1), rising from lower left to upper right." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332" width="332" height="332" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="306" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="306" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="306" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="306" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="306" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="306" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="306" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="306" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="306" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="306" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="306" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="306" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="306" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="306" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="306" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="306" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="306" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="306" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="306" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="24" y1="166" x2="308" y2="166" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="308" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,166 308,171 308,161" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,166 24,161 24,171" fill="currentColor"/>
-  <polygon points="166,318 161,308 171,308" fill="currentColor"/>
-  <text x="316" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="28.3" y1="277.8" x2="303.7" y2="94.2" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="312,88.7 306.5,98.4 300.9,90.1" fill="currentColor"/>
-  <polygon points="20,283.3 25.5,273.6 31.1,281.9" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A line on a coordinate grid from negative 7 to 7 on both axes. The line passes through the points (0, negative 1) and (3, 1), rising from lower left to upper right.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"lines":[{"slope":0.6666666666666666,"intercept":-1}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="The graph of $y = \tfrac{2}{3}x - 1$ is shown above. One of the ordered pairs $(0, -1)$, $(3, 1)$, $(-3, -3)$, $(6, 4)$ is not a point on the line. Which one?"
   answer="(6, 4)"
 >}}
+
+{{< graphplot
+  question="Graph the equation $x - y = 6$ by plotting points."
+  answerDisplay="$y = x - 6$, through $(0, -6)$, $(3, -3)$, and $(6, 0)$"
+  ariaLabel="A blank grid from −12 to 12 on both axes."
+>}}
+{"answer":{"slope":1,"intercept":-6,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
+
+{{< graphplot
+  question="Graph the equation $x = 3$."
+  answerDisplay="the vertical line through $(3, 0)$"
+  ariaLabel="A blank grid from −12 to 12 on both axes."
+>}}
+{"answer":{"x":3,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
 
 ### 4.3 Graph with Intercepts
 
@@ -558,6 +534,14 @@ weight: 6
   question="Find the $y$-intercept of the graph of the equation $4x - 3y = 12$. Enter it as an ordered pair."
   answer="(0, -4)"
 >}}
+
+{{< graphplot
+  question="Graph the equation $x + y = -2$ using its intercepts."
+  answerDisplay="$y = -x - 2$, through the intercepts $(-2, 0)$ and $(0, -2)$"
+  ariaLabel="A blank grid from −12 to 12 on both axes."
+>}}
+{"answer":{"slope":-1,"intercept":-2,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
 
 ### 4.4 Understand Slope of a Line
 
@@ -633,50 +617,9 @@ weight: 6
 
 ### 4.7 Graphs of Linear Inequalities
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid from negative 7 to 7 on both axes. The solid boundary line y equals two-thirds x minus 3 passes through (0, negative 3) and (6, 1). The region above and to the left of the line is shaded." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332" width="332" height="332" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="306" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="306" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="306" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="306" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="306" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="306" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="306" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="306" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="306" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="306" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="306" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="306" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="306" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="306" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="306" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="306" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="306" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="306" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="306" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="306" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="306" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="306" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="306" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="306" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="306" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="306" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="306" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <polygon points="26,26 306,26 306,132.7 46,306 26,306" fill="currentColor" opacity="0.12" stroke="none"/>
-  <line x1="24" y1="166" x2="308" y2="166" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="308" stroke="currentColor" stroke-width="1"/>
-  <polygon points="318,166 308,171 308,161" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,166 24,161 24,171" fill="currentColor"/>
-  <polygon points="166,318 161,308 171,308" fill="currentColor"/>
-  <text x="316" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="45.3" y1="306.5" x2="303.7" y2="134.2" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="312,128.7 306.5,138.4 300.9,130.1" fill="currentColor"/>
-  <polygon points="37,312 42.5,302.3 48.1,310.6" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid from negative 7 to 7 on both axes. The solid boundary line y equals two-thirds x minus 3 passes through (0, negative 3) and (6, 1). The region above and to the left of the line is shaded.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"regions":[{"line":{"slope":0.6666666666666666,"intercept":-3},"side":[0,0]}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Write the inequality shown by the graph above, with the boundary line $y = \tfrac{2}{3}x - 3$. Enter the full inequality."
@@ -684,51 +627,9 @@ weight: 6
   answerDisplay="$y \geq \tfrac{2}{3}x - 3$"
 >}}
 
-<div class="ap-figure">
-<svg role="img" aria-label="A coordinate grid running from negative 7 to 8 across and negative 7 to 7 up. The solid boundary line x minus 2y equals 6 passes through (0, negative 3) and (6, 0). The region below and to the right of the line is shaded." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 332" width="352" height="332" font-family="Helvetica, Arial, sans-serif">
-  <line x1="26" y1="306" x2="26" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="46" y1="306" x2="46" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="66" y1="306" x2="66" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="86" y1="306" x2="86" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="106" y1="306" x2="106" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="126" y1="306" x2="126" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="146" y1="306" x2="146" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="186" y1="306" x2="186" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="206" y1="306" x2="206" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="226" y1="306" x2="226" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="246" y1="306" x2="246" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="266" y1="306" x2="266" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="286" y1="306" x2="286" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="306" y1="306" x2="306" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="326" y1="306" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="306" x2="326" y2="306" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="286" x2="326" y2="286" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="266" x2="326" y2="266" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="246" x2="326" y2="246" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="226" x2="326" y2="226" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="206" x2="326" y2="206" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="186" x2="326" y2="186" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="146" x2="326" y2="146" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="126" x2="326" y2="126" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="106" x2="326" y2="106" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="86" x2="326" y2="86" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="66" x2="326" y2="66" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="46" x2="326" y2="46" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <line x1="26" y1="26" x2="326" y2="26" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
-  <polygon points="326,146 326,306 26,306 26,296" fill="currentColor" opacity="0.12" stroke="none"/>
-  <line x1="24" y1="166" x2="328" y2="166" stroke="currentColor" stroke-width="1"/>
-  <line x1="166" y1="24" x2="166" y2="308" stroke="currentColor" stroke-width="1"/>
-  <polygon points="338,166 328,171 328,161" fill="currentColor"/>
-  <polygon points="166,14 171,24 161,24" fill="currentColor"/>
-  <polygon points="14,166 24,161 24,171" fill="currentColor"/>
-  <polygon points="166,318 161,308 171,308" fill="currentColor"/>
-  <text x="336" y="158" font-size="13" fill="currentColor" text-anchor="end" font-style="italic">x</text>
-  <text x="174" y="24" font-size="13" fill="currentColor" font-style="italic">y</text>
-  <line x1="28.9" y1="294.5" x2="323.1" y2="147.5" stroke="currentColor" stroke-width="1.8"/>
-  <polygon points="332,143 325.3,151.9 320.8,143" fill="currentColor"/>
-  <polygon points="20,299 26.7,290.1 31.2,299" fill="currentColor"/>
-</svg>
-</div>
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A coordinate grid running from negative 7 to 8 across and negative 7 to 7 up. The solid boundary line x minus 2y equals 6 passes through (0, negative 3) and (6, 0). The region below and to the right of the line is shaded.","xMin":-7,"xMax":8,"yMin":-7,"yMax":7,"regions":[{"line":{"slope":0.5,"intercept":-3},"side":[0,-6]}]}
+{{< /apfigure >}}
 
 {{< fillin
   question="Write the inequality shown by the shaded region in the graph above, with the boundary line $x - 2y = 6$. Enter the full inequality, using the boundary line as given."
@@ -740,17 +641,21 @@ weight: 6
 
 ### 5.1 Solve Systems of Equations by Graphing
 
-{{< fillin
-  question="Solve the system of equations by graphing: $3x + y = 6$ and $x + 3y = -6$. Write the solution as an ordered pair $(x, y)$."
-  answer="(3, -3)"
-  answerDisplay="$(3, -3)$"
+{{< graphplot
+  question="Solve the system of equations by graphing: $3x + y = 6$ and $x + 3y = -6$."
+  answerDisplay="the lines cross at $(3, -3)$"
+  ariaLabel="A blank grid from −6 to 6 on both axes."
 >}}
+{"answer":{"system":[{"slope":-3,"intercept":6},{"slope":-0.3333333333333333,"intercept":-2}]},"grid":{"xMin":-6,"xMax":6,"yMin":-6,"yMax":6}}
+{{< /graphplot >}}
 
-{{< fillin
-  question="Solve the system of equations by graphing: $2x - y = 6$ and $y = 4$. Write the solution as an ordered pair $(x, y)$."
-  answer="(5, 4)"
-  answerDisplay="$(5, 4)$"
+{{< graphplot
+  question="Solve the system of equations by graphing: $2x - y = 6$ and $y = 4$."
+  answerDisplay="the lines cross at $(5, 4)$"
+  ariaLabel="A blank grid from −6 to 6 on both axes."
 >}}
+{"answer":{"system":[{"slope":2,"intercept":-6},{"y":4}]},"grid":{"xMin":-6,"xMax":6,"yMin":-6,"yMax":6}}
+{{< /graphplot >}}
 
 {{< fillin
   question="LaVelle is making a pitcher of caffe mocha. For each ounce of chocolate syrup, she uses five ounces of coffee. How many ounces of chocolate syrup does she need to make 48 ounces of caffe mocha?"
@@ -896,4 +801,4 @@ no
 yes
 {{< /multiplechoice >}}
 
-<small>This knowledge check is adapted from the Chapter 1–5 [Review Exercises and Practice Tests](https://openstax.org/books/elementary-algebra-2e/pages/1-review-exercises) of Elementary Algebra 2e by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked usable Practice Test questions), converted them to interactive exercises with instant feedback, split multi-part questions into separate exercises, rephrased word-answer, graph-reading, and fill-in-the-symbol questions as value, list, and full-inequality questions, recreated needed figures as accessible inline graphs, and took all answers from the book's Answer Key.</small>
+<small>This knowledge check is adapted from the Chapter 1–5 [Review Exercises and Practice Tests](https://openstax.org/books/elementary-algebra-2e/pages/1-review-exercises) of Elementary Algebra 2e by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked usable Practice Test questions), converted them to interactive exercises with instant feedback, split multi-part questions into separate exercises, rephrased word-answer, graph-reading, and fill-in-the-symbol questions as value, list, and full-inequality questions, kept the two “solve the system by graphing” questions as graphing questions the reader draws on an interactive grid, recreated needed figures as accessible inline graphs, and took all answers from the book's Answer Key.</small>

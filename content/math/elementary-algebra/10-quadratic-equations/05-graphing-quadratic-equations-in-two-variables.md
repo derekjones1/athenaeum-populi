@@ -267,13 +267,16 @@ then connect them with a smooth curve.
 The result is the graph of $y=x^2-1$.
 
 {{< multiplechoice
-  question="Graph $y=-x^2$. Which description identifies its graph?"
-  hint="Use $x=-2,-1,0,1,2$ and plot the corresponding values of $y$."
-  answer="A downward-opening parabola with vertex $(0,0)$"
+  question="Which graph shows $y=-x^2$?"
+  mode="graph"
+  answerIndex="2"
+  hint="Substitute $x=-2,-1,0,1,2$ and check the sign of each $y$-value, then check where the curve turns."
 >}}
-An upward-opening parabola with vertex $(0,0)$
-A downward-opening parabola with vertex $(0,-1)$
-A downward-opening parabola with vertex $(0,0)$
+{"ariaLabel":"A parabola opening upward with its lowest point at the origin.","xMin":-4,"xMax":4,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"tickStep":1,"quadratics":[{"a":1}]}
+===OPT===
+{"ariaLabel":"A parabola opening downward with its highest point one unit below the origin.","xMin":-4,"xMax":4,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"tickStep":1,"quadratics":[{"a":-1,"c":-1}]}
+===OPT===
+{"ariaLabel":"A parabola opening downward with its highest point at the origin.","xMin":-4,"xMax":4,"yMin":-5,"yMax":5,"unit":22,"tickLabels":true,"tickStep":1,"quadratics":[{"a":-1}]}
 {{< /multiplechoice >}}
 
 How do the equations $y=x^2$ and $y=x^2-1$ differ? What is the difference
@@ -1759,15 +1762,14 @@ are $(2.5,0)$ and $(-0.6,0)$. Graph the parabola using the points found.
 </svg>
 </div>
 
-{{< multiplechoice
-  question="Graph $y=5x^2+10x+3$. Which description identifies its vertex and orientation?"
+{{< graphplot
+  question="Graph $y=5x^2+10x+3$."
+  answerDisplay="$y=5x^2+10x+3$"
+  ariaLabel="A blank coordinate grid from −7 to 7 on the x-axis and −7 to 20 on the y-axis."
   hint="Find $x=-\tfrac{b}{2a}$, substitute, and inspect the sign of $a$."
-  answer="Vertex $(-1,-2)$; opens upward"
 >}}
-Vertex $(-1,-2)$; opens upward
-Vertex $(-1,2)$; opens downward
-Vertex $(1,-2)$; opens upward
-{{< /multiplechoice >}}
+{"answer": {"quadratic": {"a": 5, "b": 10, "c": 3}, "plotPoints": 3}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 20}}
+{{< /graphplot >}}
 
 ## Solve maximum and minimum applications
 
@@ -2079,7 +2081,7 @@ zero
   ariaLabel="A blank grid from −7 to 7 on both axes."
   hint="Find the vertex and axis of symmetry first, then plot the $x$- and $y$-intercepts."
 >}}
-{"answer": {"quadratic": {"a": 1, "b": 6, "c": 5}}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
+{"answer": {"quadratic": {"a": 1, "b": 6, "c": 5}, "plotPoints": 3}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
 {{< /graphplot >}}
 
 {{< fillin
@@ -2094,7 +2096,7 @@ zero
   ariaLabel="A blank grid from −7 to 7 on both axes."
   hint="Find the vertex and axis of symmetry first, then plot the $x$- and $y$-intercepts."
 >}}
-{"answer": {"quadratic": {"a": 1, "b": 4, "c": 3}}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
+{"answer": {"quadratic": {"a": 1, "b": 4, "c": 3}, "plotPoints": 3}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
 {{< /graphplot >}}
 
 ### Solve maximum and minimum applications

@@ -245,15 +245,13 @@ $(-\infty,\infty)$
 $(-2,\infty)$
 {{< /multiplechoice >}}
 
-{{< multiplechoice
-  question="Which description gives the graph of the function?"
-  answer="a square-root curve beginning at $(-2,0)$ and increasing to the right"
+{{< graphplot
+  question="Graph the function by plotting the points at $x = -2$, $x = -1$, and $x = 2$."
+  answerDisplay="$(-2, 0)$, $(-1, 1)$, and $(2, 2)$"
+  ariaLabel="A blank grid from −4 to 8 on the x-axis and −4 to 4 on the y-axis."
 >}}
-a straight line through $(-2,0)$
-a square-root curve beginning at $(2,0)$ and increasing to the right
-a square-root curve beginning at $(-2,0)$ and decreasing to the right
-a square-root curve beginning at $(-2,0)$ and increasing to the right
-{{< /multiplechoice >}}
+{"answer":{"points":[[-2,0],[-1,1],[2,2]]},"grid":{"xMin":-4,"xMax":8,"yMin":-4,"yMax":4}}
+{{< /graphplot >}}
 
 {{< multiplechoice
   question="Use the graph to determine the range."
@@ -364,14 +362,6 @@ $[0,\infty)$
 
 For the next six questions, use $y=-x^2-8x-16$.
 
-{{< multiplechoice
-  question="Which direction does the parabola open?"
-  answer="down"
->}}
-down
-up
-{{< /multiplechoice >}}
-
 {{< fillin
   question="Find the equation of the axis of symmetry."
   answer="x=-4"
@@ -401,12 +391,22 @@ up
   answer="0"
 >}}
 
+{{< multiplechoice
+  question="Which graph shows the parabola?"
+  mode="graph"
+  answerIndex="0"
+>}}
+{"ariaLabel":"A parabola opening downward with its highest point at (−4, 0), crossing the y-axis at (0, −16).","xMin":-8,"xMax":0,"yMin":-18,"yMax":18,"tickLabels":true,"xTickStep":2,"yTickStep":6,"quadratics":[{"a":-1,"b":-8,"c":-16}]}
+===OPT===
+{"ariaLabel":"A parabola opening upward with its lowest point at (−4, 0), crossing the y-axis at (0, 16).","xMin":-8,"xMax":0,"yMin":-18,"yMax":18,"tickLabels":true,"xTickStep":2,"yTickStep":6,"quadratics":[{"a":1,"b":8,"c":16}]}
+{{< /multiplechoice >}}
+
 {{< graphplot
   question="Graph $f(x)=-2x^2+8x+4$ using intercepts, the vertex, and the equation of the axis of symmetry."
   answerDisplay="$f(x)=-2x^2+8x+4$"
   ariaLabel="A blank grid from −2 to 6 on the x-axis and −2 to 14 on the y-axis."
 >}}
-{"answer":{"quadratic":{"a":-2,"b":8,"c":4}},"grid":{"xMin":-2,"xMax":6,"yMin":-2,"yMax":14}}
+{"answer":{"quadratic":{"a":-2,"b":8,"c":4},"plotPoints":3},"grid":{"xMin":-2,"xMax":6,"yMin":-2,"yMax":14}}
 {{< /graphplot >}}
 
 ### 9.7 Graph Quadratic Functions Using Transformations
@@ -416,7 +416,7 @@ up
   answerDisplay="$f(x)=x^2-4x-1$"
   ariaLabel="A blank grid from −4 to 8 on the x-axis and −8 to 10 on the y-axis."
 >}}
-{"answer":{"quadratic":{"a":1,"b":-4,"c":-1}},"grid":{"xMin":-4,"xMax":8,"yMin":-8,"yMax":10}}
+{"answer":{"quadratic":{"a":1,"b":-4,"c":-1},"plotPoints":3},"grid":{"xMin":-4,"xMax":8,"yMin":-8,"yMax":10}}
 {{< /graphplot >}}
 
 ### 9.8 Solve Quadratic Inequalities
@@ -455,8 +455,12 @@ For the next three questions, use $f(x)=6x+1$ and $g(x)=8x-3$.
   answerForm="distributed no-like-terms"
 >}}
 
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"A parabola opening to the right with its vertex at (−3, 0).","xMin":-4,"xMax":6,"yMin":-4,"yMax":4,"tickLabels":true,"quadratics":[{"a":1,"c":-3,"sideways":true}]}
+{{< /apfigure >}}
+
 {{< multiplechoice
-  question="A graph is a sideways parabola opening to the right. Determine whether the graph is the graph of a function and, if so, whether it is one-to-one."
+  question="Determine whether the graph above is the graph of a function and, if so, whether it is one-to-one."
   answer="not a function"
 >}}
 not a function
@@ -464,8 +468,12 @@ a one-to-one function
 a function, but not one-to-one
 {{< /multiplechoice >}}
 
+{{< apfigure kind="graph" >}}
+{"ariaLabel":"An increasing exponential curve through (−1, one half), (0, 1), and (1, 2), approaching a dashed horizontal asymptote at y = 0 on the left.","xMin":-5,"xMax":4,"yMin":-2,"yMax":8,"tickLabels":true,"curves":[{"kind":"exp","b":2}],"lines":[{"y":0,"dashed":true,"arrows":false}],"points":[{"at":[-1,0.5]},{"at":[0,1]},{"at":[1,2]}]}
+{{< /apfigure >}}
+
 {{< multiplechoice
-  question="A graph is an increasing exponential curve. Determine whether the graph is the graph of a function and, if so, whether it is one-to-one."
+  question="Determine whether the graph above is the graph of a function and, if so, whether it is one-to-one."
   answer="a one-to-one function"
 >}}
 a one-to-one function
@@ -524,13 +532,17 @@ how much will be in the account in 8 years by each method of compounding?
 >}}
 
 {{< multiplechoice
-  question="Which description gives the graph of $y=\log_3 x$?"
-  answer="an increasing logarithmic curve with vertical asymptote $x=0$ that passes through $(1,0)$"
+  question="Which graph shows $y=\log_3 x$?"
+  mode="graph"
+  answerIndex="2"
 >}}
-an increasing exponential curve with horizontal asymptote $y=0$ that passes through $(0,1)$
-a decreasing logarithmic curve with vertical asymptote $x=0$ that passes through $(1,0)$
-an increasing logarithmic curve with vertical asymptote $x=0$ that passes through $(1,0)$
-a straight line through $(1,0)$
+{"ariaLabel":"An increasing exponential curve through (0, 1), approaching a dashed horizontal asymptote at y = 0 on the left.","xMin":-1,"xMax":8,"yMin":-4,"yMax":4,"tickLabels":true,"curves":[{"kind":"exp","b":3}],"lines":[{"y":0,"dashed":true,"arrows":false}],"points":[{"at":[0,1]}]}
+===OPT===
+{"ariaLabel":"A curve with a dashed vertical asymptote at x = 0, passing through (1, 0) and falling to the right.","xMin":-1,"xMax":8,"yMin":-4,"yMax":4,"tickLabels":true,"curves":[{"kind":"log","b":3,"a":-1}],"lines":[{"x":0,"dashed":true,"arrows":false}],"points":[{"at":[1,0]}]}
+===OPT===
+{"ariaLabel":"A curve with a dashed vertical asymptote at x = 0, passing through (1, 0) and rising to the right.","xMin":-1,"xMax":8,"yMin":-4,"yMax":4,"tickLabels":true,"curves":[{"kind":"log","b":3}],"lines":[{"x":0,"dashed":true,"arrows":false}],"points":[{"at":[1,0]}]}
+===OPT===
+{"ariaLabel":"A straight line through (1, 0) and (0, −1), rising from lower left to upper right.","xMin":-1,"xMax":8,"yMin":-4,"yMax":4,"tickLabels":true,"lines":[{"slope":1,"intercept":-1}],"points":[{"at":[1,0]}]}
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -630,13 +642,17 @@ hyperbola
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which description gives the graph of $3x^2+3y^2=27$?"
-  answer="a circle centered at $(0,0)$ with radius 3"
+  question="Which graph shows $3x^2+3y^2=27$?"
+  mode="graph"
+  answerIndex="2"
 >}}
-a circle centered at $(0,0)$ with radius 9
-a parabola with vertex $(0,0)$
-a circle centered at $(0,0)$ with radius 3
-an ellipse with vertices $(0,\pm3)$
+{"ariaLabel":"A circle centered at the origin with radius 9.","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"circles":[{"at":[0,0],"r":9}]}
+===OPT===
+{"ariaLabel":"A parabola opening upward with its vertex at the origin.","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"quadratics":[{"a":1}]}
+===OPT===
+{"ariaLabel":"A circle centered at the origin with radius 3.","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"circles":[{"at":[0,0],"r":3}]}
+===OPT===
+{"ariaLabel":"An ellipse centered at the origin with vertices at (0, −3) and (0, 3) and co-vertices at (−1, 0) and (1, 0).","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"circles":[{"at":[0,0],"rx":1,"ry":3}]}
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -657,13 +673,17 @@ hyperbola
 >}}
 
 {{< multiplechoice
-  question="Which description gives the graph of $x^2+y^2+10x+6y+30=0$?"
-  answer="a circle centered at $(-5,-3)$ with radius 2"
+  question="Which graph shows $x^2+y^2+10x+6y+30=0$?"
+  mode="graph"
+  answerIndex="0"
 >}}
-a circle centered at $(-5,-3)$ with radius 2
-a circle centered at $(5,3)$ with radius 2
-an ellipse centered at $(-5,-3)$
-a circle centered at $(-5,-3)$ with radius 4
+{"ariaLabel":"A circle centered at (−5, −3) with radius 2.","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":14,"gridStep":2,"tickLabels":true,"tickStep":2,"circles":[{"at":[-5,-3],"r":2}]}
+===OPT===
+{"ariaLabel":"A circle centered at (5, 3) with radius 2.","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":14,"gridStep":2,"tickLabels":true,"tickStep":2,"circles":[{"at":[5,3],"r":2}]}
+===OPT===
+{"ariaLabel":"An ellipse centered at (−5, −3) with a horizontal semi-axis of 3 and a vertical semi-axis of 1.5.","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":14,"gridStep":2,"tickLabels":true,"tickStep":2,"circles":[{"at":[-5,-3],"rx":3,"ry":1.5}]}
+===OPT===
+{"ariaLabel":"A circle centered at (−5, −3) with radius 4.","xMin":-10,"xMax":10,"yMin":-10,"yMax":10,"unit":14,"gridStep":2,"tickLabels":true,"tickStep":2,"circles":[{"at":[-5,-3],"r":4}]}
 {{< /multiplechoice >}}
 
 ### 11.2 Parabolas
@@ -680,7 +700,7 @@ a circle centered at $(-5,-3)$ with radius 4
   answerDisplay="$y=2(x-1)^2-4$"
   ariaLabel="A blank grid from −4 to 6 on the x-axis and −6 to 12 on the y-axis."
 >}}
-{"answer":{"quadratic":{"a":2,"b":-4,"c":-2}},"grid":{"xMin":-4,"xMax":6,"yMin":-6,"yMax":12}}
+{"answer":{"quadratic":{"a":2,"b":-4,"c":-2},"plotPoints":3},"grid":{"xMin":-4,"xMax":6,"yMin":-6,"yMax":12}}
 {{< /graphplot >}}
 
 ### 11.3 Ellipses
@@ -696,13 +716,17 @@ hyperbola
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which description gives the graph of $4x^2+49y^2=196$?"
-  answer="a horizontal ellipse centered at $(0,0)$ with vertices $(\pm7,0)$ and co-vertices $(0,\pm2)$"
+  question="Which graph shows $4x^2+49y^2=196$?"
+  mode="graph"
+  answerIndex="1"
 >}}
-a circle centered at $(0,0)$ with radius 7
-a horizontal ellipse centered at $(0,0)$ with vertices $(\pm7,0)$ and co-vertices $(0,\pm2)$
-a horizontal ellipse centered at $(0,0)$ with vertices $(\pm4,0)$ and co-vertices $(0,\pm49)$
-a vertical ellipse centered at $(0,0)$ with vertices $(0,\pm7)$ and co-vertices $(\pm2,0)$
+{"ariaLabel":"A circle centered at the origin with radius 7.","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"circles":[{"at":[0,0],"r":7}]}
+===OPT===
+{"ariaLabel":"A horizontal ellipse centered at the origin with vertices at (−7, 0) and (7, 0) and co-vertices at (0, −2) and (0, 2).","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"circles":[{"at":[0,0],"rx":7,"ry":2}]}
+===OPT===
+{"ariaLabel":"An ellipse centered at the origin with vertices at (−4, 0) and (4, 0) and co-vertices at (0, −49) and (0, 49).","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"circles":[{"at":[0,0],"rx":4,"ry":49}]}
+===OPT===
+{"ariaLabel":"A vertical ellipse centered at the origin with vertices at (0, −7) and (0, 7) and co-vertices at (−2, 0) and (2, 0).","xMin":-50,"xMax":50,"yMin":-50,"yMax":50,"unit":6,"gridStep":10,"tickLabels":true,"tickStep":10,"circles":[{"at":[0,0],"rx":2,"ry":7}]}
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -716,13 +740,17 @@ hyperbola
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which description gives the graph of $\tfrac{x^2}{16}+\tfrac{y^2}{81}=1$?"
-  answer="a vertical ellipse centered at $(0,0)$ with vertices $(0,\pm9)$ and co-vertices $(\pm4,0)$"
+  question="Which graph shows $\tfrac{x^2}{16}+\tfrac{y^2}{81}=1$?"
+  mode="graph"
+  answerIndex="0"
 >}}
-a vertical ellipse centered at $(0,0)$ with vertices $(0,\pm9)$ and co-vertices $(\pm4,0)$
-a vertical ellipse centered at $(0,0)$ with vertices $(0,\pm81)$ and co-vertices $(\pm16,0)$
-a horizontal ellipse centered at $(0,0)$ with vertices $(\pm9,0)$ and co-vertices $(0,\pm4)$
-a circle centered at $(0,0)$ with radius 9
+{"ariaLabel":"A vertical ellipse centered at the origin with vertices at (0, −9) and (0, 9) and co-vertices at (−4, 0) and (4, 0).","xMin":-90,"xMax":90,"yMin":-90,"yMax":90,"unit":4,"gridStep":15,"tickLabels":true,"tickStep":15,"circles":[{"at":[0,0],"rx":4,"ry":9}]}
+===OPT===
+{"ariaLabel":"A vertical ellipse centered at the origin with vertices at (0, −81) and (0, 81) and co-vertices at (−16, 0) and (16, 0).","xMin":-90,"xMax":90,"yMin":-90,"yMax":90,"unit":4,"gridStep":15,"tickLabels":true,"tickStep":15,"circles":[{"at":[0,0],"rx":16,"ry":81}]}
+===OPT===
+{"ariaLabel":"A horizontal ellipse centered at the origin with vertices at (−9, 0) and (9, 0) and co-vertices at (0, −4) and (0, 4).","xMin":-90,"xMax":90,"yMin":-90,"yMax":90,"unit":4,"gridStep":15,"tickLabels":true,"tickStep":15,"circles":[{"at":[0,0],"rx":9,"ry":4}]}
+===OPT===
+{"ariaLabel":"A circle centered at the origin with radius 9.","xMin":-90,"xMax":90,"yMin":-90,"yMax":90,"unit":4,"gridStep":15,"tickLabels":true,"tickStep":15,"circles":[{"at":[0,0],"r":9}]}
 {{< /multiplechoice >}}
 
 {{< fillin
@@ -745,13 +773,17 @@ ellipse
 {{< /multiplechoice >}}
 
 {{< multiplechoice
-  question="Which description gives the graph of $64x^2-9y^2=576$?"
-  answer="a hyperbola centered at $(0,0)$ that opens left and right with vertices $(\pm3,0)$"
+  question="Which graph shows $64x^2-9y^2=576$?"
+  mode="graph"
+  answerIndex="2"
 >}}
-a hyperbola centered at $(0,0)$ that opens up and down with vertices $(0,\pm3)$
-an ellipse centered at $(0,0)$ with vertices $(\pm3,0)$
-a hyperbola centered at $(0,0)$ that opens left and right with vertices $(\pm3,0)$
-a hyperbola centered at $(0,0)$ that opens left and right with vertices $(\pm8,0)$
+{"ariaLabel":"A hyperbola centered at the origin opening up and down, with vertices at (0, −3) and (0, 3).","xMin":-12,"xMax":12,"yMin":-12,"yMax":12,"unit":16,"gridStep":2,"tickLabels":true,"tickStep":2,"hyperbolas":[{"at":[0,0],"a":3,"b":8,"vertical":true}]}
+===OPT===
+{"ariaLabel":"An ellipse centered at the origin with vertices at (−3, 0) and (3, 0) and co-vertices at (0, −1.5) and (0, 1.5).","xMin":-12,"xMax":12,"yMin":-12,"yMax":12,"unit":16,"gridStep":2,"tickLabels":true,"tickStep":2,"circles":[{"at":[0,0],"rx":3,"ry":1.5}]}
+===OPT===
+{"ariaLabel":"A hyperbola centered at the origin opening left and right, with vertices at (−3, 0) and (3, 0).","xMin":-12,"xMax":12,"yMin":-12,"yMax":12,"unit":16,"gridStep":2,"tickLabels":true,"tickStep":2,"hyperbolas":[{"at":[0,0],"a":3,"b":8}]}
+===OPT===
+{"ariaLabel":"A hyperbola centered at the origin opening left and right, with vertices at (−8, 0) and (8, 0).","xMin":-12,"xMax":12,"yMin":-12,"yMax":12,"unit":16,"gridStep":2,"tickLabels":true,"tickStep":2,"hyperbolas":[{"at":[0,0],"a":8,"b":3}]}
 {{< /multiplechoice >}}
 
 {{< multiplechoice
@@ -772,13 +804,17 @@ parabola
 >}}
 
 {{< multiplechoice
-  question="Which description gives the graph of $9x^2-25y^2-36x-50y-214=0$?"
-  answer="a hyperbola centered at $(2,-1)$ that opens left and right with vertices $(-3,-1)$ and $(7,-1)$"
+  question="Which graph shows $9x^2-25y^2-36x-50y-214=0$?"
+  mode="graph"
+  answerIndex="2"
 >}}
-an ellipse centered at $(2,-1)$
-a hyperbola centered at $(-2,1)$ that opens left and right
-a hyperbola centered at $(2,-1)$ that opens left and right with vertices $(-3,-1)$ and $(7,-1)$
-a hyperbola centered at $(2,-1)$ that opens up and down with vertices $(2,-4)$ and $(2,2)$
+{"ariaLabel":"An ellipse centered at (2, −1) with a horizontal semi-axis of 5 and a vertical semi-axis of 3.","xMin":-9,"xMax":9,"yMin":-6,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"circles":[{"at":[2,-1],"rx":5,"ry":3}]}
+===OPT===
+{"ariaLabel":"A hyperbola centered at (−2, 1) opening left and right, with vertices at (−7, 1) and (3, 1).","xMin":-9,"xMax":9,"yMin":-6,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"hyperbolas":[{"at":[-2,1],"a":5,"b":3}]}
+===OPT===
+{"ariaLabel":"A hyperbola centered at (2, −1) opening left and right, with vertices at (−3, −1) and (7, −1).","xMin":-9,"xMax":9,"yMin":-6,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"hyperbolas":[{"at":[2,-1],"a":5,"b":3}]}
+===OPT===
+{"ariaLabel":"A hyperbola centered at (2, −1) opening up and down, with vertices at (2, −4) and (2, 2).","xMin":-9,"xMax":9,"yMin":-6,"yMax":4,"unit":18,"tickLabels":true,"tickStep":2,"hyperbolas":[{"at":[2,-1],"a":3,"b":5,"vertical":true}]}
 {{< /multiplechoice >}}
 
 ### 11.5 Solve Systems of Nonlinear Equations
@@ -898,12 +934,6 @@ geometric
   answerDisplay="\$1,409,344.19"
 >}}
 
-{{< callout type="info" >}}
-  **Source note.** The source exercise (m81420, §12.4) introduces Dave and
-  then asks about “Adam’s” account, a person it never defines. This page
-  writes “Dave’s”. The printed answer, \$1,409,344.19, is unaffected.
-{{< /callout >}}
-
 ### 12.4 Binomial Theorem
 
 {{< fillin
@@ -926,4 +956,4 @@ geometric
   answer="210"
 >}}
 
-<small>This knowledge check is adapted from the Chapter 7–12 [Review Exercises and Practice Tests](https://openstax.org/books/intermediate-algebra-2e/pages/7-review-exercises) of Intermediate Algebra 2e by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked a usable odd-numbered Practice Test question), converted them to interactive exercises with instant feedback, split multipart questions into separate exercises, and rephrased graphing, diagram, word-answer, interval, and one radical-quotient question as graphing, value, equation, interval, and multiple-choice questions. All answers come from the book's Answer Key. One correction: the source's §12.4 annuity question introduces Dave and then asks about “Adam’s” account, naming a person it never defines; this page writes “Dave’s”. The printed answer, \$1,409,344.19, is unaffected.</small>
+<small>This knowledge check is adapted from the Chapter 7–12 [Review Exercises and Practice Tests](https://openstax.org/books/intermediate-algebra-2e/pages/7-review-exercises) of Intermediate Algebra 2e by Lynn Marecek and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/intermediate-algebra-2e). Changes: selected odd-numbered questions from each chapter's Practice Test (substituting Review Exercises where a section lacked a usable odd-numbered Practice Test question), converted them to interactive exercises with instant feedback, split multipart questions into separate exercises, and rephrased diagram, word-answer, interval, and one radical-quotient question as graphing, value, equation, interval, and multiple-choice questions. Graphing questions are drawn on an interactive grid; the “which graph” questions offer rendered graphs rather than prose descriptions, and the two graphs the source prints beside its function/one-to-one question are recreated as accessible inline graphs. All answers come from the book's Answer Key. One correction: the source's §12.4 annuity question introduces Dave and then asks about “Adam’s” account, naming a person it never defines; this page writes “Dave’s”. The printed answer is unaffected.</small>

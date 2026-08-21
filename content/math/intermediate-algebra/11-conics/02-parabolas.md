@@ -99,24 +99,26 @@ $$
 So $x=4$ or $x=2$. The $x$-intercepts are $(4,0)$ and $(2,0)$. Graph the parabola through these points, with vertex $(3,1)$ and axis of symmetry $x=3$.
 
 {{< multiplechoice
-  question="Graph $y=-x^2+5x-6$ by using properties."
-  answer="The parabola opens downward, has axis $x=\tfrac{5}{2}$, vertex $(\tfrac{5}{2},\tfrac{1}{4})$, and x-intercepts $(2,0)$ and $(3,0)$."
-  hint="Use $x=-\tfrac{b}{2a}$, then find the intercepts."
+  question="Which graph correctly shows $y=-x^2+5x-6$ graphed by using its properties?"
+  mode="graph"
+  answerIndex="0"
+  hint="Find the axis of symmetry with $x=-\tfrac{b}{2a}$ to locate the vertex, then check which way the parabola opens."
 >}}
-The parabola opens downward, has axis $x=5$, vertex $(5,-6)$, and x-intercepts $(2,0)$ and $(3,0)$.
-The parabola opens upward, has axis $x=\tfrac{5}{2}$, vertex $(\tfrac{5}{2},-\tfrac{1}{4})$, and x-intercepts $(2,0)$ and $(3,0)$.
-The parabola opens downward, has axis $x=\tfrac{5}{2}$, vertex $(\tfrac{5}{2},\tfrac{1}{4})$, and x-intercepts $(2,0)$ and $(3,0)$.
+{"ariaLabel":"A downward-opening parabola that rises only just above the x-axis, crossing it at two points close together, with its vertex marked at the peak.","xMin":-1,"xMax":6,"yMin":-4,"yMax":3,"tickLabels":true,"quadratics":[{"a":-1,"b":5,"c":-6}],"points":[{"at":[2.5,0.25],"label":"vertex"},{"at":[2,0]},{"at":[3,0]}]}
+===OPT===
+{"ariaLabel":"An upward-opening parabola that dips only just below the x-axis, crossing it at two points close together, with its vertex marked at the lowest point.","xMin":-1,"xMax":6,"yMin":-4,"yMax":3,"tickLabels":true,"quadratics":[{"a":1,"b":-5,"c":6}],"points":[{"at":[2.5,-0.25],"label":"vertex"},{"at":[2,0]},{"at":[3,0]}]}
+===OPT===
+{"ariaLabel":"A downward-opening parabola that rises well above the x-axis, crossing it at two points further apart, with its vertex marked at the peak.","xMin":-1,"xMax":6,"yMin":-4,"yMax":3,"tickLabels":true,"quadratics":[{"a":-1,"b":5,"c":-4}],"points":[{"at":[2.5,2.25],"label":"vertex"},{"at":[1,0]},{"at":[4,0]}]}
 {{< /multiplechoice >}}
 
-{{< multiplechoice
+{{< graphplot
   question="Graph $y=-x^2+8x-12$ by using properties."
-  answer="The parabola opens downward, has axis $x=4$, vertex $(4,4)$, and x-intercepts $(2,0)$ and $(6,0)$."
+  answerDisplay="$y=-x^2+8x-12$"
+  ariaLabel="A blank coordinate grid from −1 to 9 on the x-axis and −6 to 5 on the y-axis."
   hint="Factor to find the x-intercepts."
 >}}
-The parabola opens upward, has axis $x=4$, vertex $(4,-4)$, and x-intercepts $(2,0)$ and $(6,0)$.
-The parabola opens downward, has axis $x=4$, vertex $(4,4)$, and x-intercepts $(2,0)$ and $(6,0)$.
-The parabola opens downward, has axis $x=8$, vertex $(8,-12)$, and x-intercepts $(2,0)$ and $(6,0)$.
-{{< /multiplechoice >}}
+{"answer": {"quadratic": {"a": -1, "b": 8, "c": -12}, "plotPoints": 3}, "grid": {"xMin": -1, "xMax": 9, "yMin": -6, "yMax": 5}}
+{{< /graphplot >}}
 
 The next example reviews the method of graphing a parabola from the standard form of its equation, $y=a(x-h)^2+k$.
 
@@ -207,25 +209,23 @@ To graph a parabola that opens to the left or to the right is basically the same
 
 Since the vertex is $(0,0)$, both the $x$- and $y$-intercepts are the point $(0,0)$. To graph the parabola we need more points. In this case it is easiest to choose values of $y$. When $y=1$, $x=2$; when $y=2$, $x=8$. We also plot the points symmetric to $(2,1)$ and $(8,2)$ across the $y$-axis, the points $(2,-1)$ and $(8,-2)$. Graph the parabola.
 
-{{< multiplechoice
-  question="Graph $x=y^2$ by using properties."
-  answer="It opens right with vertex $(0,0)$ and passes through $(1,1)$, $(1,-1)$, $(4,2)$, and $(4,-2)$."
+{{< graphplot
+  question="Graph $x=y^2$ by using properties, plotting the points at $y=-2,-1,0,1,2$."
+  answerDisplay="The points $(0,0)$, $(1,1)$, $(1,-1)$, $(4,2)$, and $(4,-2)$"
+  ariaLabel="A blank coordinate grid running from −2 to 6 horizontally and from −4 to 4 vertically."
   hint="Choose convenient positive and negative values of y."
 >}}
-It opens right with vertex $(0,0)$ and passes through $(1,1)$, $(1,-1)$, $(4,2)$, and $(4,-2)$.
-It opens left with vertex $(0,0)$ and passes through $(-1,1)$, $(-1,-1)$, $(-4,2)$, and $(-4,-2)$.
-It opens up with vertex $(0,0)$ and passes through $(1,1)$ and $(-1,1)$.
-{{< /multiplechoice >}}
+{"answer": {"points": [[0, 0], [1, 1], [1, -1], [4, 2], [4, -2]]}, "grid": {"xMin": -2, "xMax": 6, "yMin": -4, "yMax": 4}}
+{{< /graphplot >}}
 
-{{< multiplechoice
-  question="Graph $x=-y^2$ by using properties."
-  answer="It opens left with vertex $(0,0)$ and passes through $(-1,1)$, $(-1,-1)$, $(-4,2)$, and $(-4,-2)$."
+{{< graphplot
+  question="Graph $x=-y^2$ by using properties, plotting the points at $y=-2,-1,0,1,2$."
+  answerDisplay="The points $(0,0)$, $(-1,1)$, $(-1,-1)$, $(-4,2)$, and $(-4,-2)$"
+  ariaLabel="A blank coordinate grid running from −6 to 2 horizontally and from −4 to 4 vertically."
   hint="The sign of a determines whether the horizontal parabola opens left or right."
 >}}
-It opens right with vertex $(0,0)$ and passes through $(1,1)$, $(1,-1)$, $(4,2)$, and $(4,-2)$.
-It opens left with vertex $(0,0)$ and passes through $(-1,1)$, $(-1,-1)$, $(-4,2)$, and $(-4,-2)$.
-It opens down with vertex $(0,0)$ and passes through $(1,-1)$ and $(-1,-1)$.
-{{< /multiplechoice >}}
+{"answer": {"points": [[0, 0], [-1, 1], [-1, -1], [-4, 2], [-4, -2]]}, "grid": {"xMin": -6, "xMax": 2, "yMin": -4, "yMax": 4}}
+{{< /graphplot >}}
 
 In the next example, the vertex is not the origin.
 
@@ -249,25 +249,23 @@ $$
 
 so $y=4$ or $y=-2$. The $y$-intercepts are $(0,4)$ and $(0,-2)$. Connect the points to graph the parabola.
 
-{{< multiplechoice
-  question="Graph $x=-y^2-4y+12$ by using properties."
-  answer="It opens left with vertex $(16,-2)$, axis $y=-2$, x-intercept $(12,0)$, and y-intercepts $(0,2)$ and $(0,-6)$."
+{{< graphplot
+  question="Graph $x=-y^2-4y+12$ by using properties, plotting the vertex, the x-intercept and its mirror image across the axis of symmetry, and both y-intercepts."
+  answerDisplay="The points $(16,-2)$, $(12,0)$, $(12,-4)$, $(0,2)$, and $(0,-6)$"
+  ariaLabel="A blank coordinate grid running from −2 to 18 horizontally and from −8 to 4 vertically."
   hint="First find $y=-\tfrac{b}{2a}$."
 >}}
-It opens right with vertex $(-16,-2)$, axis $y=-2$, x-intercept $(-12,0)$, and y-intercepts $(0,2)$ and $(0,-6)$.
-It opens left with vertex $(16,-2)$, axis $y=-2$, x-intercept $(12,0)$, and y-intercepts $(0,2)$ and $(0,-6)$.
-It opens left with vertex $(12,-4)$, axis $y=-4$, and y-intercepts $(0,2)$ and $(0,-6)$.
-{{< /multiplechoice >}}
+{"answer": {"points": [[16, -2], [12, 0], [12, -4], [0, 2], [0, -6]]}, "grid": {"xMin": -2, "xMax": 18, "yMin": -8, "yMax": 4}}
+{{< /graphplot >}}
 
-{{< multiplechoice
-  question="Graph $x=-y^2+2y-3$ by using properties."
-  answer="It opens left with vertex $(-2,1)$, axis $y=1$, and x-intercept $(-3,0)$; it has no y-intercepts."
+{{< graphplot
+  question="Graph $x=-y^2+2y-3$ by using properties, plotting the vertex, the x-intercept and its mirror image across the axis of symmetry, and the points at $y=-1$ and $y=3$."
+  answerDisplay="The points $(-2,1)$, $(-3,0)$, $(-3,2)$, $(-6,-1)$, and $(-6,3)$"
+  ariaLabel="A blank coordinate grid running from −8 to 2 horizontally and from −4 to 6 vertically."
   hint="Complete the square or find the axis of symmetry first."
 >}}
-It opens left with vertex $(-3,2)$, axis $y=2$, and y-intercept $(0,1)$.
-It opens right with vertex $(2,1)$, axis $y=1$, and x-intercept $(3,0)$; it has no y-intercepts.
-It opens left with vertex $(-2,1)$, axis $y=1$, and x-intercept $(-3,0)$; it has no y-intercepts.
-{{< /multiplechoice >}}
+{"answer": {"points": [[-2, 1], [-3, 0], [-3, 2], [-6, -1], [-6, 3]]}, "grid": {"xMin": -8, "xMax": 2, "yMin": -4, "yMax": 6}}
+{{< /graphplot >}}
 
 In the table, we see the relationship between the equation in standard form and the properties of the parabola. The How To box lists the steps for graphing a parabola in the standard form $x=a(y-k)^2+h$. We will use this procedure in the next example.
 
@@ -291,9 +289,23 @@ $$
 
 A square cannot be negative, so there is no real solution. So there are no $y$-intercepts. Graph the parabola.
 
-{{< fillin question="Graph $x=3(y-1)^2+2$ using properties. Enter the vertex." answer="(2,1)" answerDisplay="$(2,1)$" hint="Compare with $x=a(y-k)^2+h$." >}}
+{{< graphplot
+  question="Graph $x=3(y-1)^2+2$ using properties, plotting the vertex and the x-intercept with its mirror image across the axis of symmetry."
+  answerDisplay="The points $(2,1)$, $(5,0)$, and $(5,2)$"
+  ariaLabel="A blank coordinate grid running from −1 to 8 horizontally and from −3 to 5 vertically."
+  hint="Compare with $x=a(y-k)^2+h$ to find the vertex, then let $y=0$ for the x-intercept and reflect it across the axis of symmetry."
+>}}
+{"answer": {"points": [[2, 1], [5, 0], [5, 2]]}, "grid": {"xMin": -1, "xMax": 8, "yMin": -3, "yMax": 5}}
+{{< /graphplot >}}
 
-{{< fillin question="Graph $x=2(y-3)^2+2$ using properties. Enter the vertex." answer="(2,3)" answerDisplay="$(2,3)$" hint="Compare with $x=a(y-k)^2+h$." >}}
+{{< graphplot
+  question="Graph $x=2(y-3)^2+2$ using properties, plotting the vertex and the points at $y=2$ and $y=4$."
+  answerDisplay="The points $(2,3)$, $(4,2)$, and $(4,4)$"
+  ariaLabel="A blank coordinate grid running from −1 to 8 horizontally and from −1 to 7 vertically."
+  hint="Compare with $x=a(y-k)^2+h$ to find the vertex, then evaluate at $y=2$ and $y=4$."
+>}}
+{"answer": {"points": [[2, 3], [4, 2], [4, 4]]}, "grid": {"xMin": -1, "xMax": 8, "yMin": -1, "yMax": 7}}
+{{< /graphplot >}}
 
 In the next example, we notice the $a$ is negative and so the parabola opens to the left.
 
@@ -316,9 +328,23 @@ $$
 
 Thus $y=0$ or $y=-2$. The $y$-intercepts are $(0,0)$ and $(0,-2)$. Graph the parabola.
 
-{{< fillin question="Graph $x=-4(y+2)^2+4$ using properties. Enter the vertex." answer="(4,-2)" answerDisplay="$(4,-2)$" hint="Compare with $x=a(y-k)^2+h$." >}}
+{{< graphplot
+  question="Graph $x=-4(y+2)^2+4$ using properties, plotting the vertex and both y-intercepts."
+  answerDisplay="The points $(4,-2)$, $(0,-1)$, and $(0,-3)$"
+  ariaLabel="A blank coordinate grid running from −2 to 6 horizontally and from −6 to 2 vertically."
+  hint="Compare with $x=a(y-k)^2+h$ to find the vertex, then let $x=0$ for the y-intercepts."
+>}}
+{"answer": {"points": [[4, -2], [0, -1], [0, -3]]}, "grid": {"xMin": -2, "xMax": 6, "yMin": -6, "yMax": 2}}
+{{< /graphplot >}}
 
-{{< fillin question="Graph $x=-2(y+3)^2+2$ using properties. Enter the vertex." answer="(2,-3)" answerDisplay="$(2,-3)$" hint="Compare with $x=a(y-k)^2+h$." >}}
+{{< graphplot
+  question="Graph $x=-2(y+3)^2+2$ using properties, plotting the vertex and both y-intercepts."
+  answerDisplay="The points $(2,-3)$, $(0,-2)$, and $(0,-4)$"
+  ariaLabel="A blank coordinate grid running from −4 to 4 horizontally and from −7 to 1 vertically."
+  hint="Compare with $x=a(y-k)^2+h$ to find the vertex, then let $x=0$ for the y-intercepts."
+>}}
+{"answer": {"points": [[2, -3], [0, -2], [0, -4]]}, "grid": {"xMin": -4, "xMax": 4, "yMin": -7, "yMax": 1}}
+{{< /graphplot >}}
 
 The next example requires that we first put the equation in standard form and then use the properties.
 

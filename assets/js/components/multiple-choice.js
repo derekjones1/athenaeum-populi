@@ -79,13 +79,20 @@ class MultipleChoiceElement extends HTMLElement {
     this.group = this.querySelector('.ap-mc-options');
     const mathOptions = this.options.filter((btn) => (btn.dataset.value || '').includes('$'));
     const mathQuestion = (this.dataset.question || '').includes('$');
-    if (this.mode !== 'text' || (mathOptions.length === 0 && !mathQuestion)) {
+    if (mathOptions.length === 0 && !mathQuestion) {
       // Nothing to serialize: the server-rendered names are already final, so
-      // there is nothing to wait for. Graph options (SVG, no `data-value`) and
-      // prose-only questions never touch the engine and enable at once.
+      // there is nothing to wait for. Prose-only questions with prose or graph
+      // options never touch the engine and enable at once.
       this.dataset.speech = 'ready';
       this._enableOptions();
     } else {
+      // The mode is deliberately NOT part of this test. A graph-mode question
+      // is still a question, and the group's server-rendered name is the
+      // question with its `$` delimiters stripped — so "Which graph shows
+      // $\tfrac{x^2}{16}+\tfrac{y^2}{81}=1$?" announced itself as raw TeX
+      // until the knowledge-check conversion put math-bearing questions on
+      // graph-mode options. Graph options carry no `data-value`, so
+      // `mathOptions` is empty there and only the question is serialized.
       this._speakLabels(mathOptions, mathQuestion);
     }
 

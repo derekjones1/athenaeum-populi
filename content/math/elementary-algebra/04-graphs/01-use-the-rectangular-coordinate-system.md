@@ -230,14 +230,16 @@ $2$ and $3$.) The point $\left(3, \tfrac{5}{2}\right)$ is in Quadrant I.
 </div>
 
 {{< multiplechoice
-  question="Plot the point $(4, -4)$ in a rectangular coordinate system. In which quadrant does it lie?"
-  answer="Quadrant IV"
+  question="Which graph shows the point $(4, -4)$ plotted correctly?"
+  mode="graph"
+  answerIndex="1"
   hint="A positive $x$-coordinate paired with a negative $y$-coordinate places the point to the right of the $y$-axis and below the $x$-axis."
 >}}
-Quadrant III
-Quadrant IV
-Quadrant I
-Quadrant II
+{"ariaLabel":"A point plotted at -4 on the x-axis and 4 on the y-axis, in the upper left, with the coordinates reversed.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"points":[{"at":[-4,4]}]}
+===OPT===
+{"ariaLabel":"A point plotted at 4 on the x-axis and -4 on the y-axis, in the lower right.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"points":[{"at":[4,-4]}]}
+===OPT===
+{"ariaLabel":"A point plotted at 4 on the x-axis and 4 on the y-axis, in the upper right, with the y-coordinate's sign flipped.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"points":[{"at":[4,4]}]}
 {{< /multiplechoice >}}
 
 We can summarize the sign patterns of the quadrants this way.
@@ -686,49 +688,41 @@ $x$- and $y$-values are substituted in for $x$ and $y$.
 
 ### Plot points in a rectangular coordinate system
 
-{{< multiplechoice
-  question="Plot $(-4, 2)$ in a rectangular coordinate system. In which quadrant is the point located?"
-  answer="Quadrant II"
+{{< graphplot
+  question="Plot the point $(-4, 2)$ on the grid."
+  answerDisplay="$(-4, 2)$"
+  ariaLabel="A blank coordinate grid from −6 to 6 on both axes."
   hint="Move left because the $x$-coordinate is negative, then up because the $y$-coordinate is positive."
 >}}
-Quadrant II
-Quadrant III
-Quadrant IV
-Quadrant I
-{{< /multiplechoice >}}
+{"answer":{"points":[[-4,2]]},"grid":{"xMin":-6,"xMax":6,"yMin":-6,"yMax":6}}
+{{< /graphplot >}}
 
-{{< multiplechoice
-  question="Plot $(-1, -2)$ in a rectangular coordinate system. In which quadrant is the point located?"
-  answer="Quadrant III"
+{{< graphplot
+  question="Plot the point $(-1, -2)$ on the grid."
+  answerDisplay="$(-1, -2)$"
+  ariaLabel="A blank coordinate grid from −6 to 6 on both axes."
   hint="Both coordinates are negative, so move left from the origin and then down."
 >}}
-Quadrant II
-Quadrant IV
-Quadrant I
-Quadrant III
-{{< /multiplechoice >}}
+{"answer":{"points":[[-1,-2]]},"grid":{"xMin":-6,"xMax":6,"yMin":-6,"yMax":6}}
+{{< /graphplot >}}
 
-{{< multiplechoice
-  question="Plot $(3, -5)$ in a rectangular coordinate system. In which quadrant is the point located?"
-  answer="Quadrant IV"
+{{< graphplot
+  question="Plot the point $(3, -5)$ on the grid."
+  answerDisplay="$(3, -5)$"
+  ariaLabel="A blank coordinate grid from −6 to 6 on both axes."
   hint="A positive $x$-coordinate moves right of the $y$-axis, and a negative $y$-coordinate moves below the $x$-axis."
 >}}
-Quadrant III
-Quadrant I
-Quadrant II
-Quadrant IV
-{{< /multiplechoice >}}
+{"answer":{"points":[[3,-5]]},"grid":{"xMin":-6,"xMax":6,"yMin":-6,"yMax":6}}
+{{< /graphplot >}}
 
-{{< multiplechoice
-  question="Plot $(-3, 5)$ in a rectangular coordinate system. In which quadrant is the point located?"
-  answer="Quadrant II"
+{{< graphplot
+  question="Plot the point $(-3, 5)$ on the grid."
+  answerDisplay="$(-3, 5)$"
+  ariaLabel="A blank coordinate grid from −6 to 6 on both axes."
   hint="The point is left of the $y$-axis because $x$ is negative and above the $x$-axis because $y$ is positive."
 >}}
-Quadrant II
-Quadrant III
-Quadrant I
-Quadrant IV
-{{< /multiplechoice >}}
+{"answer":{"points":[[-3,5]]},"grid":{"xMin":-6,"xMax":6,"yMin":-6,"yMax":6}}
+{{< /graphplot >}}
 
 {{< multiplechoice
   question="Plot $\left(\tfrac{5}{3}, 2\right)$ in a rectangular coordinate system. In which quadrant is the point located?"
@@ -818,4 +812,4 @@ yes
 
 ---
 
-<small>This section is adapted from [Elementary Algebra 2e, Section 4.1: Use the Rectangular Coordinate System](https://openstax.org/books/elementary-algebra-2e/pages/4-1-use-the-rectangular-coordinate-system) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the quadrant and plotted-point figures as accessible inline graphics and the rewriting/solution steps as tables; omitted the Be Prepared quiz and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, splitting multipart items into adjacent components and using categorical choices for quadrant and solution checks.</small>
+<small>This section is adapted from [Elementary Algebra 2e, Section 4.1: Use the Rectangular Coordinate System](https://openstax.org/books/elementary-algebra-2e/pages/4-1-use-the-rectangular-coordinate-system) by Lynn Marecek, MaryAnne Anthony-Smith, and Andrea Honeycutt Mathis, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/elementary-algebra-2e). Changes: recreated the quadrant and plotted-point figures as accessible inline graphics and the rewriting/solution steps as tables; omitted the Be Prepared quiz and Media links; converted the practice problems ("Try Its") into interactive exercises with instant feedback; and adapted selected end-of-section exercises into the interactive Practice block, splitting multipart items into adjacent components, using interactive graphing for point-plotting exercises, and categorical choices for the one non-lattice quadrant check and the solution checks.</small>

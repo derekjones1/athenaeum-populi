@@ -301,12 +301,18 @@ second point, $(5, 2)$, then connect the two points with a line.
 </svg>
 </div>
 
-{{< fillin
-  question="Graph the line passing through the point $(2, -2)$ with slope $m = \tfrac{4}{3}$. Starting at $(2, -2)$ and counting the rise and run, what is the second point as an ordered pair $(x, y)$?"
-  answer="(5,2)"
-  answerDisplay="$(5, 2)$"
-  hint="From (2, -2), count up 4 (the rise) and right 3 (the run)."
+{{< multiplechoice
+  question="Which graph shows the line through $(2, -2)$ with slope $m = \tfrac{4}{3}$?"
+  mode="graph"
+  answerIndex="1"
+  hint="Check whether the line rises or falls through the marked point, then compare how steep it is — a slope of $\tfrac{4}{3}$ climbs more than it runs."
 >}}
+{"ariaLabel":"A line marked at (2, −2) that falls steeply from left to right, dropping more than it moves sideways.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":-1.3333333333333333,"intercept":0.6666666666666667}],"points":[{"at":[2,-2]}]}
+===OPT===
+{"ariaLabel":"A line marked at (2, −2) that rises steeply from left to right, climbing more than it moves sideways.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":1.3333333333333333,"intercept":-4.666666666666667}],"points":[{"at":[2,-2]}]}
+===OPT===
+{"ariaLabel":"A line marked at (2, −2) that rises gently from left to right, climbing less than it moves sideways.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":0.75,"intercept":-3.5}],"points":[{"at":[2,-2]}]}
+{{< /multiplechoice >}}
 
 ## Solve slope applications
 
@@ -584,21 +590,21 @@ undefined
 ### Graph a line given a point and the slope
 
 {{< graphplot
-  question="Graph the line through $(1, -2)$ with slope $m = \tfrac{3}{4}$ by placing two points on it."
+  question="Graph the line through $(1, -2)$ with slope $m = \tfrac{3}{4}$ by placing three points on it."
   answerDisplay="A line through $(1, -2)$ with slope $\tfrac{3}{4}$"
   ariaLabel="A blank coordinate grid from −12 to 12 on both axes."
   hint="Plot $(1, -2)$ first, then use rise $3$ and run $4$ to locate another point."
 >}}
-{"answer":{"slope":0.75,"intercept":-2.75},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{"answer":{"slope":0.75,"intercept":-2.75,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
 
 {{< graphplot
-  question="Graph the line through $(-3, 4)$ with slope $m = -\tfrac{3}{2}$ by placing two points on it."
+  question="Graph the line through $(-3, 4)$ with slope $m = -\tfrac{3}{2}$ by placing three points on it."
   answerDisplay="A line through $(-3, 4)$ with slope $-\tfrac{3}{2}$"
   ariaLabel="A blank coordinate grid from −12 to 12 on both axes."
   hint="Plot $(-3, 4)$ first, then use a drop of $3$ and a run of $2$ to locate another point."
 >}}
-{"answer":{"slope":-1.5,"intercept":-0.5},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{"answer":{"slope":-1.5,"intercept":-0.5,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
 
 ### Solve slope applications

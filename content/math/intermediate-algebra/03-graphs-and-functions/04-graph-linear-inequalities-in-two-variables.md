@@ -2254,10 +2254,10 @@ no
 {{< graphplot
   question="Graph the boundary line for the inequality $4x+y>-4$."
   answerDisplay="$y=-4x-4$"
-  ariaLabel="A blank grid from −7 to 7 on both axes."
+  ariaLabel="A blank grid from −14 to 14 on both axes."
   hint="Solve for $y$: $y=-4x-4$, so the line has slope $-4$ and $y$-intercept $-4$."
 >}}
-{"answer": {"slope": -4, "intercept": -4}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
+{"answer": {"slope": -4, "intercept": -4, "plotPoints": 3}, "grid": {"xMin": -14, "xMax": 14, "yMin": -14, "yMax": 14}}
 {{< /graphplot >}}
 
 {{< multiplechoice
@@ -2277,7 +2277,7 @@ solid; the side containing the origin
   ariaLabel="A blank grid from −7 to 7 on both axes."
   hint="Solve for $y$: $y=-2x-4$, so the line has slope $-2$ and $y$-intercept $-4$."
 >}}
-{"answer": {"slope": -2, "intercept": -4}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
+{"answer": {"slope": -2, "intercept": -4, "plotPoints": 3}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
 {{< /graphplot >}}
 
 {{< multiplechoice
@@ -2306,7 +2306,7 @@ dashed; the side not containing the origin
   ariaLabel="A blank grid with x from 0 to 40 and y from 0 to 60."
   hint="Solve $15x+10y=500$ for $y$: $y=50-1.5x$."
 >}}
-{"answer": {"slope": -1.5, "intercept": 50}, "grid": {"xMin": 0, "xMax": 40, "yMin": 0, "yMax": 60}}
+{"answer": {"slope": -1.5, "intercept": 50, "plotPoints": 3}, "grid": {"xMin": 0, "xMax": 40, "yMin": 0, "yMax": 60}}
 {{< /graphplot >}}
 
 ---

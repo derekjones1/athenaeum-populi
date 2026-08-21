@@ -103,6 +103,13 @@
  *             semi-axes in MATH units; from/to (degrees counter-clockwise
  *             from the positive x-axis) draw an exact elliptical arc instead
  *             of the closed curve, e.g. from:0 to:180 for an upper semicircle
+ *   hyperbolas: [{ at:[h,k], a, b, vertical?, dashed?, arrows? }]
+ *             the standard-form conic (x−h)²/a² − (y−k)²/b² = 1: two branches
+ *             opening left/right from vertices (h±a, k). vertical:true graphs
+ *             (y−k)²/a² − (x−h)²/b² = 1 instead, opening up/down from
+ *             (h, k±a). Branches clip to the grid (no from/to). The dashed
+ *             asymptotes and central rectangle of the textbook construction
+ *             are their own objects — author them as `lines` and `segments`.
  *   regions:  [{ line:<line spec>, side:[x,y] test point, dashed?,
  *                label?, labelSide?, labelAt? }]
  *             boundary drawn dashed for strict inequalities; the label
@@ -224,7 +231,7 @@ export function buildGraph(props) {
     quadrantLabels = false,
     points = [], lines = [], quadratics = [], cubics = [], polynomials = [], rationals = [],
     smoothCurves = [], segments = [], guides = [],
-    circles = [], polylines = [], curves = [],
+    circles = [], hyperbolas = [], polylines = [], curves = [],
     slopeTriangles = [], regions = [], texts = [],
   } = props
 
@@ -740,7 +747,7 @@ export function buildGraph(props) {
   // the rendered curve cannot overshoot a stated minimum or maximum.
   for (const curve of smoothCurves) {
     if (curve.freeform !== true) {
-      throw new Error('smoothCurves is spline interpolation for genuinely freeform source art and requires an explicit freeform: true — draw a known or generic shape from an analytic primitive instead (quadratics, cubics, circles, polylines, or curves with kind sqrt/cbrt/reciprocal/reciprocal-squared/sine/exp/log)')
+      throw new Error('smoothCurves is spline interpolation for genuinely freeform source art and requires an explicit freeform: true — draw a known or generic shape from an analytic primitive instead (quadratics, cubics, circles, hyperbolas, polylines, or curves with kind sqrt/cbrt/reciprocal/reciprocal-squared/sine/exp/log/logistic)')
     }
     const through = curve.through
     if (!Array.isArray(through) || through.length < 2) throw new Error('smoothCurve needs at least two through points')
@@ -858,6 +865,43 @@ export function buildGraph(props) {
       const q = at(a0 + ((a1 - a0) * i) / 36)
       if (prev) obstacles.push([prev, q])
       prev = q
+    }
+  }
+
+  // --- 6c'. hyperbolas --------------------------------------------------------
+  // The standard-form conic, drawn from its exact equation. Each branch is
+  // sampled along the conjugate-axis direction — y for a left/right opener,
+  // x for an up/down one — so the vertex, where the tangent is perpendicular
+  // to the transverse axis, stays smooth (the same trick the log curve uses
+  // at its vertical asymptote).
+  for (const hyp of hyperbolas) {
+    if (!Array.isArray(hyp.at) || hyp.at.length !== 2 || !hyp.at.every(Number.isFinite)
+      || !Number.isFinite(hyp.a) || hyp.a <= 0 || !Number.isFinite(hyp.b) || hyp.b <= 0) {
+      throw new Error('hyperbola needs a finite at:[h,k] centre and positive semi-axes a and b')
+    }
+    if (hyp.from !== undefined || hyp.to !== undefined) {
+      throw new Error('hyperbola does not take from/to — its branches clip to the grid')
+    }
+    const [h, k] = hyp.at
+    const { a, b } = hyp
+    for (const side of [1, -1]) {
+      const spec = { a, dashed: hyp.dashed, arrows: hyp.arrows }
+      if (hyp.vertical) {
+        // (y−k)²/a² − (x−h)²/b² = 1: branches y = k ± a·√(1 + ((x−h)/b)²)
+        drawPolynomialCurve(spec, {
+          independentMin: xMin, independentMax: xMax,
+          pointAt: (x) => [x, k + side * a * Math.hypot(1, (x - h) / b)],
+          errorName: 'hyperbola',
+        })
+      } else {
+        // (x−h)²/a² − (y−k)²/b² = 1: branches x = h ± a·√(1 + ((y−k)/b)²)
+        drawPolynomialCurve(spec, {
+          independentMin: yMin, independentMax: yMax,
+          pointAt: (y) => [h + side * a * Math.hypot(1, (y - k) / b), y],
+          errorName: 'hyperbola',
+          unitPx: uy,
+        })
+      }
     }
   }
 

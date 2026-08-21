@@ -1172,7 +1172,7 @@ function
   ariaLabel="A blank grid from −10 to 10 on the x-axis and −10 to 100 on the y-axis."
   hint="Plot the vertex at the origin, then use symmetry about the $y$-axis."
 >}}
-{"answer": {"quadratic": {"a": 1, "b": 0, "c": 0}}, "grid": {"xMin": -10, "xMax": 10, "yMin": -10, "yMax": 100, "xUnit": 18, "yUnit": 3.2, "yGridStep": 10, "yTickStep": 10}}
+{"answer": {"quadratic": {"a": 1, "b": 0, "c": 0}, "plotPoints": 3}, "grid": {"xMin": -10, "xMax": 10, "yMin": -10, "yMax": 100, "xUnit": 18, "yUnit": 3.2, "yGridStep": 10, "yTickStep": 10}}
 {{< /graphplot >}}
 
 {{< multiplechoice

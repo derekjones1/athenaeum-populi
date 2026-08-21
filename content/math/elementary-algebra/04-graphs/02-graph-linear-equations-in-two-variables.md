@@ -345,17 +345,14 @@ is incorrect, you can still draw a line, but it will be the wrong line. If
 you use three points and one is incorrect, the points will not line up —
 this tells you something is wrong and you need to check your work.
 
-{{< fillin
-  question="Graph $y = -3x$ by plotting points. Let $x = 1$. Find y."
-  answer="-3"
-  hint="$y = -3(1)$."
+{{< graphplot
+  question="Graph $y = -3x$ by plotting points."
+  answerDisplay="$y = -3x$"
+  ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
+  hint="Choose several $x$-values, compute $y = -3x$, plot the ordered pairs, and draw the line through them."
 >}}
-
-{{< fillin
-  question="For the equation $y = -3x$, let $x = -2$. Find y."
-  answer="6"
-  hint="$y = -3(-2)$."
->}}
+{"answer":{"slope":-3,"intercept":0,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
 
 When an equation includes a fraction as the coefficient of $x$, we can still
 substitute any numbers for $x$. But the math is easier if we make "good"
@@ -381,17 +378,14 @@ $$x = 0: \quad y = \tfrac{1}{2}(0) + 3 = 3 \qquad x = 2: \quad y = \tfrac{1}{2}(
 Plotting the points, checking that they line up, and drawing the line gives
 the graph of $y = \tfrac{1}{2}x + 3$.
 
-{{< fillin
-  question="Graph $y = \tfrac{1}{3}x - 1$ by plotting points. To avoid fractions, let $x = 3$. Find y."
-  answer="0"
-  hint="$y = \tfrac{1}{3}(3) - 1$."
+{{< graphplot
+  question="Graph $y = \tfrac{1}{3}x - 1$ by plotting points."
+  answerDisplay="$y = \tfrac{1}{3}x - 1$"
+  ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
+  hint="Choose $x$-values that are multiples of $3$ so $\tfrac{1}{3}x$ comes out even, compute $y$, plot the ordered pairs, and draw the line through them."
 >}}
-
-{{< fillin
-  question="For the equation $y = \tfrac{1}{3}x - 1$, let $x = 6$. Find y."
-  answer="1"
-  hint="$y = \tfrac{1}{3}(6) - 1$."
->}}
+{"answer":{"slope":0.3333333333333333,"intercept":-1,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
 
 So far, all the equations we graphed had $y$ given in terms of $x$. Now
 we'll graph an equation with $x$ and $y$ on the same side, such as $2x + y =
@@ -435,17 +429,14 @@ choose any three points to graph a line, how will you know if your graph
 matches the one shown in the answer key? If the points where the graphs
 cross the $x$- and $y$-axes are the same, the graphs match!
 
-{{< fillin
-  question="Graph the equation 2x - 3y = 6 (a different way): let $y = 0$ and solve for x."
-  answer="3"
-  hint="$2x - 3(0) = 6$, so $2x = 6$."
+{{< graphplot
+  question="Graph the equation $4x + 2y = 8$."
+  answerDisplay="$4x + 2y = 8$"
+  ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
+  hint="Let $x = 0$ to find one point and $y = 0$ to find another, then pick a third value of $x$ and solve for $y$."
 >}}
-
-{{< fillin
-  question="For the equation $2x - 3y = 6$, let $x = 0$ and solve for y."
-  answer="-2"
-  hint="$2(0) - 3y = 6$, so $-3y = 6$."
->}}
+{"answer":{"slope":-2,"intercept":4,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
 
 ## Graph vertical and horizontal lines
 
@@ -529,17 +520,27 @@ The equation has only one variable, $x$, and $x$ is always equal to $2$. We
 create a table where $x$ is always $2$, then put in any values for $y$. The
 graph is a vertical line passing through the $x$-axis at $2$.
 
-{{< fillin
-  question="Graph the equation $x = 5$. What is the x-coordinate of every point on this line?"
-  answer="5"
-  hint="The equation $x = 5$ says x is always 5, no matter what y is."
+{{< multiplechoice
+  question="Which graph shows $x = 5$?"
+  mode="graph"
+  answerIndex="1"
+  hint="A vertical line has the same $x$-value at every point on it. Find where each line crosses the $x$-axis, not the $y$-axis."
 >}}
+{"ariaLabel":"A vertical line crossing the x-axis at negative 5.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"x":-5}]}
+===OPT===
+{"ariaLabel":"A vertical line crossing the x-axis at 5.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"x":5}]}
+===OPT===
+{"ariaLabel":"A horizontal line crossing the y-axis at 5.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"y":5}]}
+{{< /multiplechoice >}}
 
-{{< fillin
-  question="Graph the equation $x = -2$. At what x-coordinate does this vertical line cross the x-axis?"
-  answer="-2"
-  hint="A vertical line $x = a$ crosses the x-axis at $(a, 0)$."
+{{< graphplot
+  question="Graph the equation $x = -2$."
+  answerDisplay="$x = -2$"
+  ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
+  hint="A vertical line $x = a$ passes through every point whose first coordinate is $a$."
 >}}
+{"answer":{"x":-2,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
 
 What if the equation has $y$ but no $x$? Let's graph the equation $y = 4$.
 This time the $y$-value is a constant, so in this equation $y$ does not
@@ -616,17 +617,23 @@ The equation $y = -1$ has only one variable, $y$. The value of $y$ is
 constant. All the ordered pairs in its table have the same $y$-coordinate.
 The graph is a horizontal line passing through the $y$-axis at $-1$.
 
-{{< fillin
-  question="Graph the equation $y = -4$. What is the y-coordinate of every point on this line?"
-  answer="-4"
-  hint="The equation $y = -4$ says y is always -4, no matter what x is."
+{{< graphplot
+  question="Graph the equation $y = -4$."
+  answerDisplay="$y = -4$"
+  ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
+  hint="The equation $y = -4$ says $y$ is always $-4$, no matter what $x$ is."
 >}}
+{"answer":{"y":-4,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
 
-{{< fillin
-  question="Graph the equation $y = 3$. At what point does this horizontal line cross the y-axis?"
-  answer="(0,3)"
-  hint="A horizontal line $y = b$ crosses the y-axis at $(0, b)$."
+{{< graphplot
+  question="Graph the equation $y = 3$."
+  answerDisplay="$y = 3$"
+  ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
+  hint="A horizontal line $y = b$ passes through every point whose second coordinate is $b$."
 >}}
+{"answer":{"y":3,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{{< /graphplot >}}
 
 The equations for vertical and horizontal lines look very similar to
 equations like $y = 4x$. What is the difference between the equations
@@ -770,7 +777,7 @@ No; it is not a solution and the point is not on the line.
   ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
   hint="Choose several $x$-values, compute $y=3x-1$, plot the ordered pairs, and draw the line through them."
 >}}
-{"answer":{"slope":3,"intercept":-1},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{"answer":{"slope":3,"intercept":-1,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
 
 {{< graphplot
@@ -779,7 +786,7 @@ No; it is not a solution and the point is not on the line.
   ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
   hint="Choose several $x$-values, compute $y=-2x+2$, plot the ordered pairs, and draw the line through them."
 >}}
-{"answer":{"slope":-2,"intercept":2},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{"answer":{"slope":-2,"intercept":2,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
 
 ### Graph vertical and horizontal lines
@@ -790,7 +797,7 @@ No; it is not a solution and the point is not on the line.
   ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
   hint="Every point has first coordinate $4$, so draw a vertical line through $x=4$."
 >}}
-{"answer":{"x":4},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{"answer":{"x":4,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
 
 {{< graphplot
@@ -799,7 +806,7 @@ No; it is not a solution and the point is not on the line.
   ariaLabel="A blank coordinate grid from negative 12 to 12 on both axes."
   hint="Every point has second coordinate $3$, so draw a horizontal line through $y=3$."
 >}}
-{"answer":{"y":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
+{"answer":{"y":3,"plotPoints":3},"grid":{"xMin":-12,"xMax":12,"yMin":-12,"yMax":12}}
 {{< /graphplot >}}
 
 ---

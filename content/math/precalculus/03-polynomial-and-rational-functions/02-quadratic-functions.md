@@ -936,7 +936,7 @@ modeled by the equation $H(t)=-16t^2+80t+40$.
   ariaLabel="A blank grid from -7 to 7 on both axes."
   hint="Plot the vertex and one or two nearby points, then draw the U-shape through them."
 >}}
-{"answer": {"quadratic": {"a": 1, "b": -2, "c": 0}}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
+{"answer": {"quadratic": {"a": 1, "b": -2, "c": 0}, "plotPoints": 3}, "grid": {"xMin": -7, "xMax": 7, "yMin": -7, "yMax": 7}}
 {{< /graphplot >}}
 
 {{< fillin

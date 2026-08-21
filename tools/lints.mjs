@@ -42,7 +42,7 @@ const APFIGURE_BUILDERS = Object.freeze({
  */
 const UNLABELABLE_FAMILIES = Object.freeze([
   'quadratics', 'cubics', 'polynomials', 'rationals', 'curves', 'smoothCurves',
-  'circles', 'polylines', 'guides', 'slopeTriangles',
+  'circles', 'hyperbolas', 'polylines', 'guides', 'slopeTriangles',
 ]);
 const LABEL_KEYS = Object.freeze(['label', 'labelSide', 'labelAt', 'labelNudge']);
 
@@ -144,6 +144,35 @@ function blankBalancedMacro(source, macroRe, blank) {
     out = out.slice(0, m.index) + blank(out.slice(m.index, end)) + out.slice(end);
     re.lastIndex = end;
   }
+  return out;
+}
+
+/**
+ * Blank every `\begin{…}…\end{…}` run — nesting included — preserving the
+ * source offsets, so a caller can read what a math span says OUTSIDE its
+ * environments. `\\` is the row separator inside one and an escaping bug
+ * outside one, and a single span can hold both.
+ */
+function blankMathEnvironments(source, blank) {
+  let out = source;
+  let depth = 0;
+  let start = -1;
+  for (const m of source.matchAll(/\\(begin|end)\{[^{}]*\}/g)) {
+    if (m[1] === 'begin') {
+      if (depth === 0) start = m.index;
+      depth += 1;
+    } else if (depth > 0) {
+      depth -= 1;
+      if (depth === 0) {
+        const end = m.index + m[0].length;
+        out = out.slice(0, start) + blank(out.slice(start, end)) + out.slice(end);
+      }
+    }
+  }
+  // An unclosed `\begin{…}` is a different defect — KaTeX throws on it, so the
+  // verifier's render pass already reports it. Blank to the end of the span
+  // rather than report every row separator inside the unterminated run.
+  if (depth > 0) out = out.slice(0, start) + blank(out.slice(start));
   return out;
 }
 
@@ -1100,6 +1129,28 @@ export function lintHugo(src, filename = '') {
       err(m.index, `array row has ${widest} cells but the spec {${m[1]}} declares ${declared} column(s) — KaTeX fails the production build on this ("Too few columns"); widen the spec to match the widest row`);
     }
   }
+  // A stray `\\` in a math span outside a multi-row environment is an escaping
+  // bug that NOTHING else catches. KaTeX reads `\\` as a row break and then
+  // sets whatever follows as literal letters, so `$x=-\\tfrac{b}{2a}$` renders
+  // as a line break plus the word "tfrac" — it does not throw, so the KaTeX
+  // gate in verify-section passes it, and the page merely looks wrong. This is
+  // how a shell/Python heredoc that ate one backslash reaches the corpus.
+  // Inside \begin{array}/{aligned}/{cases}/{matrix} a `\\` IS the row
+  // separator, which is every one of the corpus's 217 legitimate uses — so
+  // the environments are BLANKED and whatever is left of the span is checked.
+  // Skipping the whole span on sight of a `\begin{` (the first spelling of
+  // this rule) disabled it for any span that also carries an environment:
+  // `$x=-\\tfrac{b}{2a}\begin{cases}…\end{cases}$` reported clean while
+  // holding exactly the defect the rule exists to catch.
+  //
+  // `mediaSrc` + maskCode, like the degree rule below: a fenced `printf "$x
+  // \\ y"` is shell, not authored math, and reported a stray on the raw src.
+  for (const { tex, display, index } of mathSpans(withoutFigureSpecs(mediaSrc, blank), { maskCode: true, allowNewlines: true })) {
+    const at = blankMathEnvironments(tex, blank).search(/\\\\(?!\\)/);
+    if (at >= 0) {
+      err(index + (display ? 2 : 1) + at, `stray \`\\\\\` in math, outside any \\begin{…} environment — KaTeX sets it as a row break and prints the rest literally (\`\\\\tfrac\` renders as the word "tfrac"), and it never throws, so no other gate sees it; write a single backslash`);
+    }
+  }
   // Unicode superscript minus can't parse as an exponent — in MATH. A figure
   // spec is not math: its labels are plain SVG text with no typesetter behind
   // them, so a superscript character is the only way an exponent can appear at
@@ -1365,7 +1416,7 @@ export function lintHugo(src, filename = '') {
   for (const m of htmlMediaSrc.matchAll(openTagRe('path'))) {
     if (!/(?:^|[\s\d.])C[\s\d.]/.test(htmlAttribute(m[0], 'd'))) continue;
     if (acknowledgedFreeform.some(([from, to]) => m.index > from && m.index < to)) continue;
-    err(m.index, 'figure curve is spline-interpolated (smoothCurves output) — regenerate it from an analytic primitive (quadratics, cubics, circles, polylines, or curves kind sqrt/cbrt/reciprocal/reciprocal-squared/sine/exp/log); reserve smoothCurves (freeform: true) for source art with no formula, declared in a data-spec');
+    err(m.index, 'figure curve is spline-interpolated (smoothCurves output) — regenerate it from an analytic primitive (quadratics, cubics, circles, hyperbolas, polylines, or curves kind sqrt/cbrt/reciprocal/reciprocal-squared/sine/exp/log/logistic); reserve smoothCurves (freeform: true) for source art with no formula, declared in a data-spec');
   }
 
   for (const m of mediaSrc.matchAll(/\*\*Solution\.\*\*[ \t]*(?:\r?\n[ \t]*)+(?=(?:\{\{<\s*(?:fillin|multiplechoice|graphplot)\b|#{1,6}\s|---[ \t]*$|(?![\s\S])))/gm)) {
@@ -1911,7 +1962,19 @@ export function lintHugo(src, filename = '') {
     }
     if (!params.ariaLabel) err(index, 'graphplot: missing ariaLabel — describe the empty grid in prose');
     try {
-      parseGraphPlotConfig(inner.trim(), params.snap || 1);
+      const cfg = parseGraphPlotConfig(inner.trim(), params.snap || 1);
+      // Corpus policy, not an engine limit: a two-point line (or vertex-plus-
+      // one parabola) can be gamed from the answer display without engaging
+      // the graph, so authored line and quadratic exercises must ask for at
+      // least three placed points (`plotPoints: 3` or more). Systems and
+      // asymptote sets are exempt — plotPoints does not exist on their
+      // members, and an asymptote's equation is derived from the function in
+      // the prompt rather than restated by it, so two points per member is
+      // the honest ask.
+      if ((cfg.mode === 'line' || cfg.mode === 'quadratic')
+        && (cfg.answer.plotPoints ?? 2) < 3) {
+        err(index, `graphplot: a ${cfg.mode} answer must ask for at least three placed points — add "plotPoints": 3 (or more) to the answer`);
+      }
     } catch (error) {
       err(index, `graphplot: ${error.message}`);
     }

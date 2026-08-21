@@ -333,12 +333,14 @@ $$
 
 The solution to the system is $(4,-1)$.
 
-{{< fillin
-  question="Solve the system by graphing: $\{x-3y=-3,\ x+y=5\}$. Enter the point of intersection as an ordered pair."
-  answer="(3,2)"
-  answerDisplay="$(3,2)$"
-  hint="From the second equation, x = 5 - y. Substitute into the first equation to find y first, then find x."
+{{< graphplot
+  question="Solve the system by graphing: $\{x-3y=-3,\ x+y=5\}$."
+  answerDisplay="$x-3y=-3$ and $x+y=5$"
+  ariaLabel="A blank coordinate grid from −6 to 6 on both axes."
+  hint="Solve each equation for $y$: $x-3y=-3$ becomes $y=\tfrac{1}{3}x+1$, and $x+y=5$ becomes $y=-x+5$. Use each line's slope and $y$-intercept to place two points on it."
 >}}
+{"answer":{"system":[{"slope":0.3333333333333333,"intercept":1},{"slope":-1,"intercept":5}]},"grid":{"xMin":-6,"xMax":6,"yMin":-6,"yMax":6}}
+{{< /graphplot >}}
 
 {{< callout type="info" >}}
   **Solve a system of linear equations by graphing.**
@@ -1087,19 +1089,29 @@ yes
 
 ### Solve a system of linear equations by graphing
 
-{{< fillin
-  question="Solve the system by graphing: $\{3x+y=-3,\ 2x+3y=5\}$. Enter the point of intersection as an ordered pair."
-  answer="(-2,3)"
-  answerDisplay="$(-2,3)$"
-  hint="Write the first equation in slope-intercept form, then graph both lines and find where they cross."
+{{< graphplot
+  question="Solve the system by graphing: $\{3x+y=-3,\ 2x+3y=5\}$."
+  answerDisplay="$3x+y=-3$ and $2x+3y=5$"
+  ariaLabel="A blank coordinate grid from −6 to 6 on both axes."
+  hint="Solve each equation for $y$: $3x+y=-3$ becomes $y=-3x-3$, and $2x+3y=5$ becomes $y=-\tfrac{2}{3}x+\tfrac{5}{3}$. Use each line's slope and $y$-intercept to place two points on it."
 >}}
+{"answer":{"system":[{"slope":-3,"intercept":-3},{"slope":-0.6666666666666666,"intercept":1.6666666666666667}]},"grid":{"xMin":-6,"xMax":6,"yMin":-6,"yMax":6}}
+{{< /graphplot >}}
 
-{{< fillin
-  question="Solve the system by graphing: $\{y=x+2,\ y=-2x+2\}$. Enter the point of intersection as an ordered pair."
-  answer="(0,2)"
-  answerDisplay="$(0,2)$"
-  hint="Both equations are already in slope-intercept form — graph each line directly from its slope and y-intercept."
+{{< multiplechoice
+  question="Which graph shows the solution of the system $\{y=x+2,\ y=-2x+2\}$?"
+  mode="graph"
+  answerIndex="1"
+  hint="Both equations are already solved for $y$ — graph each line from its slope and $y$-intercept, then find where the two lines cross."
 >}}
+{"ariaLabel":"A gently rising line and a steeply falling line, crossing each other on the y-axis below the origin.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":1,"intercept":-2},{"slope":-2,"intercept":-2}],"points":[{"at":[0,-2]}]}
+===OPT===
+{"ariaLabel":"A gently rising line and a steeply falling line, crossing each other on the y-axis above the origin.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":1,"intercept":2},{"slope":-2,"intercept":2}],"points":[{"at":[0,2]}]}
+===OPT===
+{"ariaLabel":"Two parallel lines rising at the same rate, one meeting the y-axis above the origin and the other below it, never crossing.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":1,"intercept":2},{"slope":1,"intercept":-2}]}
+===OPT===
+{"ariaLabel":"Two lines that both rise to the right, one more steeply than the other, crossing each other on the y-axis above the origin.","xMin":-6,"xMax":6,"yMin":-6,"yMax":6,"unit":22,"tickLabels":true,"tickStep":1,"lines":[{"slope":1,"intercept":2},{"slope":2,"intercept":2}],"points":[{"at":[0,2]}]}
+{{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Solve the system by graphing: $\{-2x+4y=4,\ y=\tfrac{1}{2}x\}$. How many solutions does the system have?"

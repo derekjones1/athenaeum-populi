@@ -68,6 +68,17 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
   (`--shard i/n`, `--kind`, `--unverified`, `--verdict`, `--context N`)
 - `npm run ledger:merge <dir>` — fold pass result files into the ledger;
   result files that disagree about a hash fail the merge with nothing written
+- `npm run graphable:candidates` / `npm run graphable:list` /
+  `npm run graphable:merge <dir>` / `npm run graphable:stats` — the
+  graphplot-conversion ledger
+  (`data/verification/graphplot-conversion-ledger.json`): an adjudicated
+  queue of the MC/fillin exercises that could be authored as interactive
+  `graphplot` exercises instead. `candidates` emits the unread queue
+  (`--shard i/n`); `list --verdict convert` is where a conversion session
+  starts; merge has the answer ledger's conflict-refusing contract, and
+  `node tools/graphplot-conversion.mjs prune content` retires entries whose
+  exercise was converted or edited (workflow in
+  `docs/authoring-playbook.md` §3)
 - `npm run build` — clean production build plus global Pagefind
 - `npm run check:build` — route, link, search, and file-count gates
 - `npm run ci` — complete local equivalent of CI
