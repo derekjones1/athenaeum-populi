@@ -1,10 +1,33 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { mkdtempSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { isGraphTopic, recordProblem, CONVERT_MODES } from './graphplot-conversion.mjs';
+
+/**
+ * A results directory and a ledger path of its own, both removed afterwards.
+ *
+ * `merge` writes the ledger named on its command line, and these tests used to
+ * name none — so they ran against `data/verification/graphplot-conversion-
+ * ledger.json` in the working tree. They passed only because every case was
+ * expected to THROW before the write; the moment conflict detection regressed,
+ * or a success-path case was added (below), `npm test` would have written the
+ * repo's own load-bearing ledger from fixture hashes like 'feedbeeffeedbeef'.
+ * A test must not be one bug away from mutating the corpus it checks.
+ */
+function sandbox(t) {
+  const dir = mkdtempSync(join(tmpdir(), 'graphable-'));
+  t.after(() => rmSync(dir, { recursive: true, force: true }));
+  return { dir, ledger: join(dir, 'ledger.json') };
+}
+
+const merge = ({ dir, ledger }) => execFileSync(
+  'node',
+  ['tools/graphplot-conversion.mjs', 'merge', dir, '--ledger', ledger],
+  { stdio: 'pipe', encoding: 'utf8' },
+);
 
 const exercise = (kind, question, raw = '') => ({
   kind, params: { question }, raw: raw || question,
@@ -44,8 +67,9 @@ test('recordProblem enforces the adjudication contract', () => {
   assert.match(recordProblem({ hash: 'a', verdict: 'keep' }), /note/);
 });
 
-test('merge refuses a batch with conflicting verdicts for one exercise', () => {
-  const dir = mkdtempSync(join(tmpdir(), 'graphable-'));
+test('merge refuses a batch with conflicting verdicts for one exercise', (t) => {
+  const box = sandbox(t);
+  const { dir } = box;
   writeFileSync(join(dir, 'a.json'), JSON.stringify({
     results: [{ hash: 'feedbeeffeedbeef', verdict: 'keep', note: 'reads a shown graph' }],
   }));
@@ -53,22 +77,24 @@ test('merge refuses a batch with conflicting verdicts for one exercise', () => {
     results: [{ hash: 'feedbeeffeedbeef', verdict: 'convert', mode: 'line', proposal: 'p', note: 'drawable' }],
   }));
   assert.throws(
-    () => execFileSync('node', ['tools/graphplot-conversion.mjs', 'merge', dir], { stdio: 'pipe' }),
+    () => merge(box),
     (error) => {
       assert.match(String(error.stderr), /conflict feedbeeffeedbeef/);
       assert.match(String(error.stderr), /nothing merged/);
       return true;
     },
   );
+  assert.equal(existsSync(box.ledger), false, 'a refused merge writes no ledger at all');
 });
 
-test('merge refuses a batch that agrees on convert but disagrees on the mode', () => {
+test('merge refuses a batch that agrees on convert but disagrees on the mode', (t) => {
   // The verdict is not the whole decision — `mode` names the answer form the
   // converting session will author. Comparing verdicts alone let two passes
   // that had read the same exercise as a line and as a quadratic merge
   // cleanly, with the alphabetically-later result file picking, which is the
   // file-order resolution this refusal exists to prevent.
-  const dir = mkdtempSync(join(tmpdir(), 'graphable-'));
+  const box = sandbox(t);
+  const { dir } = box;
   writeFileSync(join(dir, 'a.json'), JSON.stringify({
     results: [{
       hash: 'feedbeeffeedbeef', verdict: 'convert', mode: 'line', proposal: 'p', note: 'a line',
@@ -80,11 +106,48 @@ test('merge refuses a batch that agrees on convert but disagrees on the mode', (
     }],
   }));
   assert.throws(
-    () => execFileSync('node', ['tools/graphplot-conversion.mjs', 'merge', dir], { stdio: 'pipe' }),
+    () => merge(box),
     (error) => {
       assert.match(String(error.stderr), /conflict feedbeeffeedbeef: convert\/line .* vs convert\/quadratic/);
       assert.match(String(error.stderr), /nothing merged/);
       return true;
     },
+  );
+  assert.equal(existsSync(box.ledger), false, 'a refused merge writes no ledger at all');
+});
+
+test('merge folds an agreeing batch in, and re-adjudication updates it visibly', (t) => {
+  // The success path the refusal cases never covered — which is why nothing
+  // caught that these tests were writing the repository's own ledger.
+  const box = sandbox(t);
+  const { dir, ledger } = box;
+  writeFileSync(join(dir, 'a.json'), JSON.stringify({
+    results: [
+      { hash: 'aaaaaaaaaaaaaaaa', verdict: 'keep', note: 'reads a shown graph' },
+      {
+        hash: 'bbbbbbbbbbbbbbbb', verdict: 'convert', mode: 'line',
+        proposal: '{"answer":{"slope":2,"intercept":0},"plotPoints":3}', note: 'drawable line',
+      },
+    ],
+  }));
+  const first = merge(box);
+  assert.match(first, /merged 2 record\(s\)/);
+  const entries = JSON.parse(readFileSync(ledger, 'utf8')).entries;
+  assert.equal(entries.aaaaaaaaaaaaaaaa.verdict, 'keep');
+  assert.equal(entries.bbbbbbbbbbbbbbbb.mode, 'line');
+  assert.equal(entries.bbbbbbbbbbbbbbbb.proposal, '{"answer":{"slope":2,"intercept":0},"plotPoints":3}');
+
+  // A verdict that differs from the LEDGER's is the re-read flow, not a
+  // conflict: it merges, and says so.
+  writeFileSync(join(dir, 'a.json'), JSON.stringify({
+    results: [{
+      hash: 'bbbbbbbbbbbbbbbb', verdict: 'convert', mode: 'quadratic',
+      proposal: '{"answer":{"quadratic":{"a":1}}}', note: 're-read: it is a parabola',
+    }],
+  }));
+  assert.match(merge(box), /updated bbbbbbbbbbbbbbbb: convert\/line → convert\/quadratic/);
+  assert.equal(
+    JSON.parse(readFileSync(ledger, 'utf8')).entries.bbbbbbbbbbbbbbbb.mode,
+    'quadratic',
   );
 });

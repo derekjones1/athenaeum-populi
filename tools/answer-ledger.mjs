@@ -34,9 +34,12 @@
  * `--min-verified` is for verify-answers.
  */
 import { createHash } from 'node:crypto';
-import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
-import { join, relative, resolve } from 'node:path';
+import { readFileSync } from 'node:fs';
+import { relative, resolve } from 'node:path';
 import { walkMarkdown, shortcodes, blankPreservingOffsets } from './lib-content.mjs';
+import {
+  mergeResults, parseLedgerArgs, pruneLedger, readLedger as readLedgerAt, shardSlice,
+} from './lib-ledger.mjs';
 
 export const LEDGER_PATH = 'data/verification/answer-ledger.json';
 
@@ -85,107 +88,68 @@ export function extractExercises(root) {
 }
 
 export function readLedger(path = LEDGER_PATH) {
-  if (!existsSync(path)) return { schemaVersion: 1, entries: {} };
-  return JSON.parse(readFileSync(path, 'utf8'));
+  return readLedgerAt(path);
 }
 
-function writeLedger(ledger, path = LEDGER_PATH) {
-  const ordered = Object.fromEntries(Object.entries(ledger.entries).sort(([a], [b]) => (a < b ? -1 : 1)));
-  writeFileSync(path, `${JSON.stringify({ ...ledger, entries: ordered }, null, 1)}\n`);
-}
-
-function usage(code) {
-  console.error('usage: node tools/answer-ledger.mjs <check|list|merge|prune|stats> [root|resultsDir] [flags]');
-  process.exit(code);
+function usage(detail) {
+  console.error(`answer-ledger: ${detail}`);
+  console.error('usage: node tools/answer-ledger.mjs <check|list|merge|prune|stats> [root|resultsDir] [--kind k] [--verdict v] [--unverified] [--shard i/n] [--context N] [--min-exercises N] [--max-unverifiable N] [--ledger path]');
+  process.exit(2);
 }
 
 function main() {
-  const args = process.argv.slice(2);
-  const mode = args[0];
-  if (!mode || !['check', 'list', 'merge', 'prune', 'stats'].includes(mode)) usage(2);
-  const positional = args.slice(1).filter((a) => !a.startsWith('--'));
-  const flag = (name) => {
-    const hit = args.find((a) => a === `--${name}` || a.startsWith(`--${name}=`));
-    if (!hit) return null;
-    return hit.includes('=') ? hit.split('=').slice(1).join('=') : args[args.indexOf(hit) + 1];
-  };
+  let cli;
+  try {
+    cli = parseLedgerArgs(process.argv.slice(2), {
+      commands: ['check', 'list', 'merge', 'prune', 'stats'],
+      valueFlags: ['kind', 'verdict', 'shard', 'context', 'min-exercises', 'max-unverifiable'],
+      boolFlags: ['unverified'],
+    });
+  } catch (error) {
+    usage(error.message);
+    return;
+  }
+  const { command, positional, flag, bool } = cli;
+  const ledgerPath = flag('ledger') ?? LEDGER_PATH;
 
-  if (mode === 'merge') {
+  if (command === 'merge') {
     const dir = positional[0];
-    if (!dir) usage(2);
-    const ledger = readLedger();
-    // Fold the whole batch together BEFORE touching the ledger. Two result
-    // files disagreeing about a hash means one of the passes read the
-    // exercise wrong, and no merge order can decide which — so nothing is
-    // written and the merge fails until the exercise is re-read. A verdict
-    // that differs from the ledger's EXISTING entry is a different thing:
-    // that is how a re-read updates a verdict (unverifiable → ok after a
-    // --context pass), so it merges, visibly.
-    const batch = new Map();
-    let conflicted = 0;
-    for (const file of readdirSync(dir).filter((f) => f.endsWith('.json')).sort()) {
-      const parsed = JSON.parse(readFileSync(join(dir, file), 'utf8'));
-      for (const record of parsed.results ?? []) {
-        if (!record.hash || !record.verdict) continue;
-        const prior = batch.get(record.hash);
-        if (prior && prior.verdict !== record.verdict) {
-          conflicted += 1;
-          console.error(`  conflict ${record.hash}: ${prior.verdict} (${prior.file}) vs ${record.verdict} (${file})`);
-          continue; // keep reading so every conflict is reported in one run
-        }
-        batch.set(record.hash, { verdict: record.verdict, note: record.note, file });
-      }
-    }
-    if (conflicted) {
-      console.error(`✖ ${conflicted} conflict(s) between result files — nothing merged; re-read those exercises and rerun`);
-      process.exit(1);
-    }
-    let updated = 0;
-    for (const [hash, record] of batch) {
-      const existing = ledger.entries[hash];
-      if (existing && existing.verdict !== record.verdict) {
-        updated += 1;
-        console.log(`  updated ${hash}: ${existing.verdict} → ${record.verdict}`);
-      }
-      ledger.entries[hash] = record.note
+    if (!dir) usage('merge needs a results directory');
+    mergeResults({
+      dir,
+      path: ledgerPath,
+      // A record missing its hash or verdict used to be skipped in silence,
+      // which drops a reading pass's verdict without saying so. It is now the
+      // same refusal the conversion ledger already gave — one merge contract,
+      // in one place, for both queues.
+      validate: (record) => (!record.hash ? 'missing hash'
+        : !record.verdict ? 'missing verdict' : null),
+      decisionOf: (record) => record.verdict,
+      toRecord: (record) => (record.note
         ? { verdict: record.verdict, note: record.note }
-        : { verdict: record.verdict };
-    }
-    writeLedger(ledger);
-    console.log(`merged ${batch.size} record(s) into ${LEDGER_PATH}; ${Object.keys(ledger.entries).length} total${updated ? `; ${updated} verdict(s) updated` : ''}`);
+        : { verdict: record.verdict }),
+    });
     return;
   }
 
   const root = positional[0] || 'content';
   const exercises = extractExercises(resolve(root));
 
-  if (mode === 'prune') {
-    // Editing an exercise strands the verdict recorded against its old text.
-    // That is harmless to the gate (a stranded hash matches nothing) but it
-    // accumulates, and a ledger full of records for content that no longer
-    // exists is the kind of true-but-not-load-bearing artifact that makes a
-    // later reader trust the wrong number. Dropping them is explicit, never a
-    // silent side effect of `merge`.
-    const ledger = readLedger();
-    const live = new Set(exercises.map((e) => e.hash));
-    const stale = Object.keys(ledger.entries).filter((h) => !live.has(h));
-    for (const hash of stale) delete ledger.entries[hash];
-    writeLedger(ledger);
-    console.log(`pruned ${stale.length} stranded record(s); ${Object.keys(ledger.entries).length} remain`);
+  if (command === 'prune') {
+    pruneLedger({ path: ledgerPath, live: new Set(exercises.map((e) => e.hash)) });
     return;
   }
 
-  if (mode === 'list') {
+  if (command === 'list') {
     const kind = flag('kind');
-    const shard = flag('shard');
     let subset = kind ? exercises.filter((e) => e.kind === kind) : exercises;
-    const unverifiedOnly = args.includes('--unverified');
+    const unverifiedOnly = bool('unverified');
     // `--verdict unverifiable` is the follow-up queue: the items a reader saw
     // but could not settle from the shortcode alone. Pair it with `--context N`
     // so the figure or table they name travels with them.
     const verdict = flag('verdict');
     if (unverifiedOnly || verdict) {
-      const ledger = readLedger();
+      const ledger = readLedgerAt(ledgerPath);
       subset = subset.filter((e) => (unverifiedOnly
         ? !ledger.entries[e.hash]
         : ledger.entries[e.hash]?.verdict === verdict));
@@ -195,11 +159,13 @@ function main() {
     // verify it twice while making the shard sizes lie.
     const seen = new Set();
     let unique = subset.filter((e) => (seen.has(e.hash) ? false : seen.add(e.hash)));
+    const shard = flag('shard');
     if (shard) {
-      const [i, n] = shard.split('/').map(Number);
-      if (!Number.isInteger(i) || !Number.isInteger(n) || i < 1 || i > n) usage(2);
-      const size = Math.ceil(unique.length / n);
-      unique = unique.slice((i - 1) * size, i * size);
+      try {
+        unique = shardSlice(unique, shard);
+      } catch (error) {
+        usage(error.message);
+      }
     }
     // A "read the graph above" exercise cannot be verified from the shortcode
     // alone — the figure it names is elsewhere on the page. `--context N`
@@ -220,13 +186,13 @@ function main() {
     return;
   }
 
-  const ledger = readLedger();
+  const ledger = readLedgerAt(ledgerPath);
   const unique = new Map();
   for (const e of exercises) if (!unique.has(e.hash)) unique.set(e.hash, e);
   const missing = [...unique.values()].filter((e) => !ledger.entries[e.hash]);
   const defects = [...unique.values()].filter((e) => ledger.entries[e.hash]?.verdict === 'defect');
 
-  if (mode === 'stats') {
+  if (command === 'stats') {
     const byKind = {};
     for (const e of unique.values()) {
       byKind[e.kind] ??= { total: 0, verified: 0 };

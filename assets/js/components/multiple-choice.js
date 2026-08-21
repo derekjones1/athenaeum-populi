@@ -93,6 +93,14 @@ class MultipleChoiceElement extends HTMLElement {
       // until the knowledge-check conversion put math-bearing questions on
       // graph-mode options. Graph options carry no `data-value`, so
       // `mathOptions` is empty there and only the question is serialized.
+      //
+      // Which is why the gate is per-target, not per-widget: `disabled` exists
+      // so no option is clickable before ITS OWN name is final, and an option
+      // with no math has a final name already. Gating those on the question's
+      // serialization left a page of graph questions — rendered graphs that
+      // need no serialization at all — fully inert for the whole LABEL_GATE_MS
+      // window whenever the engine fetch was slow or offline.
+      if (mathOptions.length === 0) this._enableOptions();
       this._speakLabels(mathOptions, mathQuestion);
     }
 
@@ -128,9 +136,16 @@ class MultipleChoiceElement extends HTMLElement {
    * all-or-nothing.
    */
   _enableOptions() {
+    // Cancelling the deadline comes FIRST, before the idempotence guard: the
+    // options can now be enabled before serialization is even started (a
+    // graph-mode question with math in it has final option names already), so
+    // a later call may be the one that settles the labels. Returning early
+    // without clearing would leave the timer to fire after a SUCCESSFUL
+    // serialization and overwrite the spoken question with the generic
+    // fallback name.
+    clearTimeout(this._labelGate);
     if (this._enabled) return;
     this._enabled = true;
-    clearTimeout(this._labelGate);
     for (const btn of this.options) btn.disabled = false;
   }
 

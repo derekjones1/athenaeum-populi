@@ -427,10 +427,10 @@ test('a points-mode graph-plot grades a five-point set with partial credit', asy
   await expect(card.locator('.ap-fillin-feedback')).toHaveText(/^Correct\b/);
 });
 
-test('a quadratic graph-plot requires vertex plus two on-parabola points', async ({ page }) => {
+test('a quadratic graph-plot grades the parabola three points determine, in any order', async ({ page }) => {
   // The authored sketch exercise for f(x) = x² − 2x in precalculus 3.2:
-  // vertex (1, −1), plotPoints 3 — the learner places the vertex and then two
-  // more points that must all sit on one parabola before anything is graded.
+  // plotPoints 3, so the three placed points determine the parabola on their
+  // own and the ORDER they were placed in is not part of the answer.
   await gotoBuiltPage(
     page,
     '/math/precalculus/03-polynomial-and-rational-functions/02-quadratic-functions/',
@@ -442,7 +442,7 @@ test('a quadratic graph-plot requires vertex plus two on-parabola points', async
     .poll(async () => card.evaluate((el) => JSON.stringify(el.answer)))
     .toBe(JSON.stringify({ quadratic: { a: 1, b: -2, c: 0 }, plotPoints: 3 }));
   await expect(card.locator('.ap-graphplot-instructions'))
-    .toHaveText('Place the vertex first, then two more points on the parabola.');
+    .toHaveText('Place three points on the parabola.');
   await card.scrollIntoViewIfNeeded();
 
   const addPoint = card.getByRole('button', { name: 'Add point' });
@@ -465,20 +465,36 @@ test('a quadratic graph-plot requires vertex plus two on-parabola points', async
     throw new Error(`point ${index} never reached ${target}`);
   };
 
-  // Vertex and (0,0) determine y = (x−1)² − 1; (3,0) is NOT on it, so there
-  // is no single parabola to grade — the diagnostic teaches that before any
-  // right/wrong verdict.
+  // (1,−1), (0,0) and (3,0) all sit on y = ½x² − 1½x — three points at
+  // distinct x-values always determine SOME parabola — so this is the wrong
+  // parabola, not "no parabola". The preview is drawn solid: dashed ink is the
+  // asymptote guide convention and must not appear on a curve answer.
   await moveTo(0, [1, -1]);
   await moveTo(1, [0, 0]);
   await moveTo(2, [3, 0]);
+  expect(await card.locator('.ap-graphplot-svg line[stroke-dasharray]').count()).toBe(0);
+  await check.click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('incorrect');
+
+  // Two points at the same x-value is what notOnParabola actually means: no
+  // function of x passes through both, so there is nothing to grade.
+  await moveTo(2, [0, 3]);
   await check.click();
   await expect
     .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
     .toBe('notOnParabola');
 
-  // Slide the stray point to the symmetric root (2,0): all three now sit on
-  // the answer parabola.
-  await moveTo(2, [2, 0]);
+  // The answer parabola, with the vertex placed LAST — the case that used to
+  // be told its points "do not all lie on one parabola" while every one of
+  // them sat on the answer curve.
+  await moveTo(2, [1, -1]);
+  await moveTo(1, [2, 0]);
+  await moveTo(0, [0, 0]);
+  await expect
+    .poll(async () => card.evaluate((el) => JSON.stringify(el.pts)))
+    .toBe('[[0,0],[2,0],[1,-1]]');
   await check.click();
   await expect
     .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
@@ -504,6 +520,15 @@ test('an asymptotes graph-plot grades member lines with partial credit', async (
   await expect(card.locator('.ap-graphplot-instructions'))
     .toHaveText('Place two points on each asymptote — the first two make one asymptote, the next two the other.');
   await card.scrollIntoViewIfNeeded();
+
+  // The empty grid carries NO dashed ink of its own, which is what makes the
+  // count below a measurement of the preview rather than of the grid.
+  const dashedGuides = () => card.evaluate((el) => [...new Set(
+    Array.from(el.querySelectorAll('.ap-graphplot-svg line[stroke-dasharray]'))
+      .filter((line) => line.getAttribute('x1') === line.getAttribute('x2'))
+      .map((line) => line.getAttribute('x1')),
+  )]);
+  expect(await card.locator('.ap-graphplot-svg line[stroke-dasharray]').count()).toBe(0);
 
   const addPoint = card.getByRole('button', { name: 'Add point' });
   const check = card.getByRole('button', { name: 'Check' });
@@ -533,9 +558,13 @@ test('an asymptotes graph-plot grades member lines with partial credit', async (
   await moveTo(2, [3, -5]);
   await moveTo(3, [3, 5]);
   // The preview lines draw DASHED — the guide-ink convention every static
-  // asymptote figure in the book uses.
-  expect(await card.locator('.ap-graphplot-svg line[stroke-dasharray]').count())
-    .toBeGreaterThanOrEqual(2);
+  // asymptote figure in the book uses. Counted as distinct dashed COLUMNS,
+  // one per completed pair, rather than as <line> elements: a vertical
+  // asymptote is emitted as two segments wherever an unbroken one would
+  // strike through an axis label, so the element count here is 3. `>= 2`
+  // against every dashed line in the SVG measured neither — it would have
+  // kept passing with the `dashed: true` spread deleted.
+  expect(await dashedGuides()).toHaveLength(2);
   await check.click();
   await expect
     .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })

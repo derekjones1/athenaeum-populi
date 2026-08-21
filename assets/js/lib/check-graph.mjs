@@ -16,10 +16,12 @@
  *                                   Members are {x}, {y}, or slope lines, so
  *                                   vertical, horizontal, AND slant
  *                                   asymptotes all grade
- *   { quadratic: { a, b?, c? } }    parabola y = ax² + bx + c
- *                                   (student places vertex, then one point;
- *                                   plotPoints: N asks for the vertex plus
- *                                   N−1 points, all on one parabola)
+ *   { quadratic: { a, b?, c? } }    parabola y = ax² + bx + c. plotPoints: N
+ *                                   (3–12) asks for N points on the curve, in
+ *                                   any order — they determine it on their
+ *                                   own. Without plotPoints the student places
+ *                                   the vertex and then one other point, the
+ *                                   only reading two points admit
  *   { points: [[x, y], …] }         a set of 1–12 points the student must
  *                                   place, any order ("plot the points…")
  *
@@ -38,13 +40,20 @@
  *   'pointsPartial'   points: some but not all of the set is placed right
  *   'asymptotePartial' asymptotes: some but not all of the set is placed right
  *   'notCollinear'    line with plotPoints > 2: the points make no single line
- *   'notOnParabola'   quadratic with plotPoints > 2: the extra points are not
- *                     all on one parabola through the placed vertex
+ *   'notOnParabola'   quadratic with plotPoints > 2: the placed points lie on
+ *                     no parabola at all — two share an x-value, one is off
+ *                     the curve the others determine, or they are collinear
  */
 
 // Constants only — check-graph grades in the browser with no MathLive and no
 // Compute Engine on the page, and this import must never change that.
 import { GEOMETRY_EPSILON } from './geometry-constants.mjs';
+import { quadraticAt, quadraticThroughVertex, quadraticVertex } from './graph-algebra.mjs';
+
+// Re-exported so the grader stays the one import site for everything that
+// grades a parabola; the formula itself lives in the leaf both this file and
+// the author-time validator read.
+export { quadraticVertex };
 
 const near = (a, b) => Math.abs(a - b) < GEOMETRY_EPSILON;
 
@@ -70,11 +79,6 @@ function gradeLine(s, t) {
   const mOk = near(s.m, t.m);
   const bOk = near(s.b, t.b);
   return mOk && bOk ? 'correct' : mOk ? 'slopeRight' : bOk ? 'interceptRight' : 'incorrect';
-}
-
-/** vertex [h, k] of y = ax² + bx + c */
-export function quadraticVertex({ a, b = 0, c = 0 }) {
-  return [-b / (2 * a), c - (b * b) / (4 * a)];
 }
 
 const distinct = (p, q) => p && q && (p[0] !== q[0] || p[1] !== q[1]);
@@ -103,6 +107,37 @@ export function correctAsymptoteCount(pts, targets) {
     if (distinct(pts[i], pts[i + 1])) lines.push(lineOf(pts[i], pts[i + 1]));
   }
   return targets.filter((t) => lines.some((s) => gradeLine(s, normLine(t)) === 'correct')).length;
+}
+
+/**
+ * The unique parabola y = ax² + bx + c through `points`, or null when there is
+ * none to grade: two points share an x-value (no function passes through
+ * both), or a point lies off the curve the first three determine, or that
+ * curve is degenerate (a = 0 — the points are collinear, which is a line and
+ * not a parabola).
+ *
+ * Order-agnostic by construction, which is the point: the placed points, not
+ * the order they were placed in, are the object being graded. Exported so
+ * <graph-plot>'s live preview draws the same parabola this file grades.
+ */
+export function parabolaThrough(points) {
+  if (points.length < 3) return null;
+  for (let i = 0; i < points.length; i += 1) {
+    for (let j = i + 1; j < points.length; j += 1) {
+      if (near(points[i][0], points[j][0])) return null;
+    }
+  }
+  const [[x1, y1], [x2, y2], [x3, y3]] = points;
+  const d = (x1 - x2) * (x1 - x3) * (x2 - x3);
+  const a = (x3 * (y2 - y1) + x2 * (y1 - y3) + x1 * (y3 - y2)) / d;
+  const b = (x3 * x3 * (y1 - y2) + x2 * x2 * (y3 - y1) + x1 * x1 * (y2 - y3)) / d;
+  const c = (x2 * x3 * (x2 - x3) * y1 + x3 * x1 * (x3 - x1) * y2
+    + x1 * x2 * (x1 - x2) * y3) / d;
+  if (!Number.isFinite(a) || !Number.isFinite(b) || !Number.isFinite(c)) return null;
+  if (near(a, 0)) return null;
+  const parabola = { a, b, c };
+  return points.every((point) => near(point[1], quadraticAt(parabola, point[0])))
+    ? parabola : null;
 }
 
 export function checkGraphPlot(pts, answer) {
@@ -144,29 +179,39 @@ export function checkGraphPlot(pts, answer) {
   }
 
   if (answer.quadratic) {
-    // pts[0] is the vertex; pts[1] any other point (different x, or no
-    // parabola is determined). With plotPoints > 2 the later points must lie
-    // on the parabola the first two determine, or there is no single
-    // parabola to grade against the answer.
+    // Three or more points determine the parabola on their own, so grading is
+    // ORDER-AGNOSTIC — the same contract every other multi-point answer form
+    // here uses. It has to be: "Graph y = x² + 10x + 24 using its intercepts,
+    // its vertex, and its axis of symmetry" is answered by (−6, 0), (−4, 0)
+    // and (0, 24) — the three points that exercise's own answerDisplay names,
+    // none of which is the vertex. Anchoring the fit on pts[0] told a learner
+    // who placed exactly those that their points "do not all lie on one
+    // parabola", which was false of a curve they had drawn correctly.
+    //
+    // Two points determine no parabola at all, so the 2-point form — the
+    // engine's floor, which corpus policy (see tools/lints.mjs) forbids
+    // authoring — keeps the vertex-first contract it needs.
     const wanted = answer.plotPoints ?? 2;
     const placedQ = pts.filter(Boolean);
-    if (placedQ.length < wanted || !pts[0] || !pts[1] || pts[0][0] === pts[1][0]) {
-      return 'needMore';
-    }
+    if (placedQ.length < wanted) return 'needMore';
     for (let i = 0; i < placedQ.length; i += 1) {
       for (let j = i + 1; j < placedQ.length; j += 1) {
         if (!distinct(placedQ[i], placedQ[j])) return 'needMore';
       }
     }
-    const { a } = answer.quadratic;
+    let student;
+    if (wanted > 2) {
+      student = parabolaThrough(placedQ);
+      if (!student) return 'notOnParabola';
+    } else {
+      if (!pts[0] || !pts[1]) return 'needMore';
+      student = quadraticThroughVertex(pts[0], pts[1]);
+      if (!student) return 'needMore'; // second point shares the vertex's x
+    }
     const [h, k] = quadraticVertex(answer.quadratic);
-    const [hs, ks] = pts[0];
-    const [px, py] = pts[1];
-    const as = (py - ks) / (px - hs) ** 2;
-    const onParabola = (p) => p[0] !== hs && near(p[1], as * (p[0] - hs) ** 2 + ks);
-    if (!placedQ.slice(2).every(onParabola)) return 'notOnParabola';
+    const [hs, ks] = quadraticVertex(student);
     const vOk = near(hs, h) && near(ks, k);
-    const aOk = near(as, a);
+    const aOk = near(student.a, answer.quadratic.a);
     return vOk && aOk ? 'correct' : vOk ? 'vertexRight' : aOk ? 'shapeRight' : 'incorrect';
   }
 

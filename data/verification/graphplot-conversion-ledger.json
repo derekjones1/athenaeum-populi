@@ -1,0 +1,1345 @@
+{
+ "schemaVersion": 1,
+ "entries": {
+  "039ebe80d65de61b": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "053bad54fd6f2380": {
+   "verdict": "keep",
+   "note": "notgraph: isGraphTopic matched the word 'plot' in a garden plot, not a graph — nothing here is about a coordinate system at all"
+  },
+  "053c2e6358ca04ca": {
+   "verdict": "keep",
+   "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
+  },
+  "0610ebec522193f5": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "064d1e72eb6b45ec": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "072000ce647a9683": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "0810b094f952e568": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "0891e3fadd6a7d88": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "08bebfaf2eab1b55": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "08c40eb85b918df1": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "09702b6b04e9f14c": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "0a5dc712cbae95a8": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "0ae3776f56f07bae": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "0c3d5335c11c1267": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "0d3ab254867939ba": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "0d45085a4362f35a": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "0dc4e2f3e8801208": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "0e130e5aff02b307": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "0e44b32d88dec820": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "0e4c3000549faddf": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "0f618dbf8c89e011": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "10405ed11076550c": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "1053b55444a1cf47": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "111b8db3b506335a": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "12a2f14172aa407a": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "12aba12ae5f306b2": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "12deed4bbbe28e1e": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "13b5af65e72a7950": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "15d9a0dbb516aa71": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "16d74a6c5f9ae71c": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "1817a1e83b9ebb06": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "198fad2c1e8def20": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "1bf2ad278c500102": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "1cab8895c946feb3": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "1d230f92e3e7f4ad": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "1dddbcda44a17807": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "1e3be80bd4626754": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "1f522f3ccc420e02": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "209ba78b114d0b4f": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "20ae208caf46d810": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "20c6b7165a545a81": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "20d103dc2fb4ed41": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "20eb14b613cce122": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "2201678ee7e3e0db": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "22cebf475a7d5010": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "23c99a79ed1cedaa": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "23d968e280f2369e": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "26d79b94ebb0de15": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "27ed46e4147c8167": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "282598a04de48cb1": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "289fdc0d7eb2bb04": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "2a3e719fc4626bc4": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "2a8a09b987386e34": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "2a9b4c3ce6b1021d": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "2b91e0df7d67a9df": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "2c7185703caa2f7e": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "2c7c0b66467d95e0": {
+   "verdict": "keep",
+   "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
+  },
+  "2cd92b3e7b919d5e": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "2ce3efb8b3e9322e": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "2d39707f5f24b3c6": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "2dbd2d363f1c8334": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "2df26e81801b440e": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "2e4bf170d2bfe5ab": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "2e9bb8d9423fe3e1": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "315d125634b7fffd": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "31a10f3ad82862e1": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "31f97d4d9ef5a9be": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "31fee9482246f731": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "322af1260a1aff48": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "327078088fa99be8": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "330dea4e1d1db6ce": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "354f379854e5311e": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "35a176f8f073fd49": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "3630e5a0ee5a6b3b": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "37d04ecc38fe8fdc": {
+   "verdict": "keep",
+   "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
+  },
+  "385d80ce21eac373": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "39c7e66bcab99eaf": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "3b256dd90f810bdc": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "3b2bc023e1f6c2a0": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "3b56c5da15e2bd39": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "3bac08ba7506b6ec": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "3ce344e188948764": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "3d2a92fe46f8c540": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "3e1ba71fb3f59a9f": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "3e3552f3cc5b3674": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "3e64c57ae5256574": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "3e77e3dbd5c1bf50": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "3f105be071c4178f": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "4090a23e285c43d0": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "409496b593a22714": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "40f352116dd324e6": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "418f0b1449e4fcb1": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "41fa16081508d46e": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "43070fdfd3fb2448": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "4381f80c427ad109": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "45a9878fc8a6c5c4": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "46dafc9ec316d625": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "46de94ce02667bd3": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "4c6b1dadc8851f30": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "4cc4f6ddf6528954": {
+   "verdict": "keep",
+   "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
+  },
+  "4f5ba0034c879217": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "50e2de20fb984a6e": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "5175649ea91ae430": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "51d5e3d39cc3f819": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "529f1ee11278a8ac": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "53728d3c6cba0450": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "53984f8e374c29cf": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "53ff69ed715d438c": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "54ee8c6d36dd591a": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "55779c0146d37435": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "55be7ccc89739995": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "56d6e6756d7158fb": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "57276341bbcf0d69": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "575f67a1b834f415": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "57b367f70c32ed1b": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "57b5353b1c29b201": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "58f8f4de8a7fdf22": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "59915838f7de2f88": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "59a82df1da969f00": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "5ae310f156a14dcc": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "5b50e416d3becf80": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "5ca28b4653999b22": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "5d5cbf2333d90322": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "5dee6328857ae88f": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "5e963a718fc544a2": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "6003961a1682bb8f": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "60dbf6e90da21797": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "6138883758bf38fb": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "632a667e49dbde15": {
+   "verdict": "keep",
+   "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
+  },
+  "637daf8fe06ba818": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "658396a4d3c3a107": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "65e2d952479d8cc9": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "65f38b4e19c21e3b": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "65f7d4f2c02cecc0": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "663ecc0b3d18a1ea": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "66e6dc97fdeb2ed5": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "67ac96892f1a27ca": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "69812ff553811fa2": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "6a715f2f84e44795": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "6b5fa3a1bb435011": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "6f4b2b61c74c103c": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "703a901092ddead5": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "734d14adb57bc11a": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "745a13e0c58caa7f": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "745dc3ffdc4ee858": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "74bca2b67f5283ce": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "7512749c40e08dc9": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "76b18cd8ce3022a1": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "77448b8f8d1a70a0": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "776c74366de22aaa": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "777e14a928281ee9": {
+   "verdict": "keep",
+   "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
+  },
+  "77b3c808e0f38006": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "77c1fe4e3d0e02ea": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "78018a204dde12fd": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "784cc7ad0d83d0f2": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "785ca82c52c09a16": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "78ecda1da02f6279": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "7942685891441558": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "7949641851b409e1": {
+   "verdict": "keep",
+   "note": "notgraph: isGraphTopic matched the word 'plot' in a garden plot, not a graph — nothing here is about a coordinate system at all"
+  },
+  "798fe6cb99855556": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "79af79d559961558": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "79f933adea58b6c0": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "7a3dcee96fc2838a": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "7aa85d1b2f485899": {
+   "verdict": "keep",
+   "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
+  },
+  "7aac334a506d7948": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "7d4e65de6378e628": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "7da1fffe6f640e36": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "7e14699669c527b1": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "7e1e56246679669f": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "7e2a7185752f09e2": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "8098f3a10a8845bb": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "8167f452b10b0446": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "81909b4241bd209f": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "81da6509c1456de6": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "8365a40e29cce05f": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "8497ab44c2ace9c8": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "84c054c19fd1f1cb": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "851ca640002124ff": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "861a5bbb9ac0bc0b": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "86c5d0486f942fe8": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "881b69cd3025a7c8": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "8a970f7e0dc4f523": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "8b1af31d98d48d31": {
+   "verdict": "keep",
+   "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
+  },
+  "8bff9943b75f2eb6": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "8c5b1f075a7079ca": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "8cc998b29469b379": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "8dcbaeee9b471b05": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "8dd450120c09875b": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "8e69f8c4693bf94b": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "90984f397a54ccb0": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "90a683f15c788a99": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "91d4e14e280542c5": {
+   "verdict": "keep",
+   "note": "quadrant: the graded ask is which quadrant the point falls in, not where it goes on the grid; this section's plotting itself is covered by its own recognition multiple choice"
+  },
+  "922886706fdb6eb1": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "928dfbea07dd204d": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "92ac6f2816865611": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "92fb095e6f225d37": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "93cd3bb515db83e6": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "93f7a3451f3b7739": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "94093ecfc1829a81": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "946f4acc4b0cf6af": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "94964abb930c0e86": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "94c0bef2aa017bb6": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "965d6f5ec8bbec8a": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "96aa72b2c1dbd1e4": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "9a1cd846f074780b": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "9b9fb9cbe5cadb11": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "9bcc7a6b3e804e09": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "9bd086063ea034ce": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "9c0e13f2377320f9": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "9d0e66b28120ec8b": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "9dddbd0e1338fa5e": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "9e570c8d1769c38b": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "9ee857c31263fc2f": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "9fb14a5620c5b527": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "a56d701e91f17633": {
+   "verdict": "keep",
+   "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
+  },
+  "a60a6736bf324fcf": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "a7f887823c37b167": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "a8be2a4812338027": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "aa62fccc6765c232": {
+   "verdict": "keep",
+   "note": "quadrant: the graded ask is which quadrant the point falls in, not where it goes on the grid; this section's plotting itself is covered by its own recognition multiple choice"
+  },
+  "aaa3e19a68f75ad2": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "aadfb919e519e47c": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "adb21612b443e696": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "adb59ec9fd8b7401": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "ae1ea57cdedf2b19": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "afc93464f778cf8b": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "afdf350daef81425": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "b148f6dce90c4341": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "b1a3ea6410e95929": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "b1dd42e565e37d2d": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "b39ea2cd161ccdbc": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "b4197409f6e9939b": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "b46cfbf9d987231c": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "b54bdbd48491632f": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "b5920dd9839395b9": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "b5b9bdc69909e479": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "b5f69484a3020963": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "b635e095fda4660c": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "b6613845f1b46b5b": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "b67a484d93f2a2d0": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "b69c86b6906ecf29": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "b752cd927f12e75b": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "b894350a757c920d": {
+   "verdict": "keep",
+   "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
+  },
+  "b95b3cce9430328d": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "b95e2241c64d1a4f": {
+   "verdict": "keep",
+   "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
+  },
+  "b9d989afea6c1507": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "b9edaa436ed20c95": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "bac1b7b4fe0cee0c": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "bbe29339f9b00eb8": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "bcbe8c60e4d9ba56": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "bce24459d5dfbef3": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "bcf4a42a0d8a1ab0": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "be7644bf81257e86": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "be836ce18da8697a": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "be95fc6abd50b622": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "bf2a54db39c81477": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "bf925adedda9f1b2": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "bfd0238b899e7084": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "c11e1de3977a20a2": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "c15c4af39537d406": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "c1833f124297dbbf": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "c19cfc2776c234c8": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "c1a62ce7a08112f1": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "c22b57194ee9a0bb": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "c31482e0b78c6769": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "c3737ddcf78c0671": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "c51114b08023a80c": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "c7f7619312ecaf6e": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "c842af1e53275d1c": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "c9b787f5fa65c936": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "cab1aced609941a8": {
+   "verdict": "keep",
+   "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
+  },
+  "cc4d40ba5d5b3b0f": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "ccaea499c79491ca": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "ce709240f2eec216": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "cfb09470eafb4853": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "d081433d042aaee4": {
+   "verdict": "keep",
+   "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "d0e70afe93ff5dad": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "d16d4e958ebc3d64": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "d16fb7bfd945ac6f": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "d1868fe62d7bf144": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "d1ea050795d529ce": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "d2c58dcc618f1938": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "d487b145e8b25168": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "d493d0484373f8ae": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "d53596ae82bc4ade": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "d59e044ae00e567a": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "d6a81820e2d64601": {
+   "verdict": "keep",
+   "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "d949223ee485c6b4": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "d966e331d0cb99ba": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "dab96057586fc886": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "db3a87ede92b8d0c": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "dbf5277be9ed4e9e": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "dcc21a110f2a59f4": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "dce6e6029d1824ba": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "dd4b9102046621dd": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "ddb349115a82568c": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "de0d869dd8782876": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "e0be143c635d4de1": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "e1000da2a1ad368d": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "e109d033f72dd494": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "e13ef7bb348bf920": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "e190f3f68a72893e": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "e29c50ff87bf0e77": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "e335024872a2731e": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "e35986a65d74afb9": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "e3d1156212d6150d": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "e4642389e77e8c2e": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "e61f4928635f7fb5": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "e70b47bc3fef60db": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "ea3031a39798bf4b": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "ec2e6a041713af3d": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "ec871b427fe7fc6e": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "edb9e8b6a175b09e": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "eeaf3a5732a83fb6": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "f0bfb78b0c3a0a75": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "f1377087d746416b": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "f1b9d488e29e0781": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "f39ac1aeb84807b5": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "f3f652e2d404e19e": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "f517a180cb23f8f9": {
+   "verdict": "keep",
+   "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "f52ac1b1aa9de7cf": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "f572488dd34ddda6": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "f597a1825858574a": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "f5cb7aa48bd38377": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "f5fdd3b2d81e3f8a": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "f61bc3ea2c79a399": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "f639d2db1e905e5b": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "f6a1b59f22f8bb82": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "f741cd7c3cb67e92": {
+   "verdict": "keep",
+   "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "f7ff47245b4ad2f7": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "faa9c3c2c49ae808": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "fd03a245e6a71aad": {
+   "verdict": "keep",
+   "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "fd2968aa30c7f756": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "fd736553b9441508": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "ff27adb8d20ef241": {
+   "verdict": "keep",
+   "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "ff6aa687f0357814": {
+   "verdict": "keep",
+   "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  }
+ }
+}

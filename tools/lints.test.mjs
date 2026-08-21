@@ -1965,6 +1965,21 @@ test('a stray double backslash in math is caught, but a row separator is not', (
     'nested environments are blanked as one run, separators and all',
   );
 
+  // The heredoc can eat the backslash on `\begin` ITSELF, and that is still
+  // the defect this rule is for: `\\begin{cases}` is a row break followed by
+  // the literal word "begin". The environment regex matched on the SECOND
+  // backslash of the pair, blanked from there through `\end{cases}`, and left
+  // a single lone backslash that the `\\` search cannot match — so the span
+  // holding the defect reported clean.
+  assert(
+    stray('$f(x)=\\\\begin{cases} 1 & x>0 \\\\ -1 & x \\le 0 \\end{cases}$\n').length > 0,
+    'a doubled backslash on \\begin itself is the escaping bug, not an environment',
+  );
+  assert(
+    stray('$x=\\\\\\begin{cases} 1 & x>0 \\\\ -1 & x \\le 0 \\end{cases}$\n').length > 0,
+    'a stray pair BEFORE a real environment opener is still caught',
+  );
+
   // Fenced code is documentation, not authored math: a shell snippet holding a
   // `$…$`-looking run reported a stray on the raw source.
   assert.deepEqual(

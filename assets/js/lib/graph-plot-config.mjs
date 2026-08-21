@@ -1,5 +1,6 @@
 import { GRAPH_PLOT_RENDER_DEFAULTS } from './graph-core.mjs';
 import { GEOMETRY_EPSILON } from './geometry-constants.mjs';
+import { quadraticAt, quadraticVertex } from './graph-algebra.mjs';
 
 const finite = (value) => typeof value === 'number' && Number.isFinite(value);
 
@@ -95,17 +96,6 @@ export function parseGraphPlotConfig(raw, snapRaw = 1) {
       throw new Error('An asymptotes answer must contain one to three lines');
     }
     answer.asymptotes.forEach((line, index) => validateLine(line, `Asymptote ${index + 1}`));
-    // {y: 3} and {slope: 0, intercept: 3} are the same line, so duplicates are
-    // compared on the normalized line, not the authored spelling.
-    const lineKey = (l) => (l.x !== undefined
-      ? `x:${l.x}` : `m:${l.slope ?? 0},b:${l.y ?? l.intercept ?? 0}`);
-    for (let i = 0; i < answer.asymptotes.length; i += 1) {
-      for (let j = i + 1; j < answer.asymptotes.length; j += 1) {
-        if (lineKey(answer.asymptotes[i]) === lineKey(answer.asymptotes[j])) {
-          throw new Error(`Asymptotes ${i + 1} and ${j + 1} are the same line`);
-        }
-      }
-    }
     mode = 'asymptotes';
   } else if (answer.quadratic !== undefined) {
     const q = answer.quadratic;
@@ -211,8 +201,11 @@ export function parseGraphPlotConfig(raw, snapRaw = 1) {
     let reachable = 0;
     if (mode === 'quadratic') {
       const q = answer.quadratic;
-      reachable = xs.filter((x) => reachesY(q.a * x * x + (q.b ?? 0) * x + (q.c ?? 0))).length;
-      const [h, k] = [-(q.b ?? 0) / (2 * q.a), (q.c ?? 0) - (q.b ?? 0) ** 2 / (4 * q.a)];
+      reachable = xs.filter((x) => reachesY(quadraticAt(q, x))).length;
+      // The grader's own formula, not a second copy of it: a sign or a
+      // float-stability correction made in one place used to leave the
+      // validator accepting a vertex the grader would never match.
+      const [h, k] = quadraticVertex(q);
       if (!reachesX(h) || !reachesY(k)) {
         throw new Error(`The parabola's vertex (${h}, ${k}) is not reachable with snap ${snap}`);
       }
@@ -229,12 +222,37 @@ export function parseGraphPlotConfig(raw, snapRaw = 1) {
     // the playbook as "count them and surface it in the handoff", which is the
     // kind of rule nothing enforces; this is the gate.
     if (reachable === required) {
-      throw new Error(`The answer has exactly ${required} reachable snap-${snap} point(s) inside the grid, so the ${required} placed points are forced and the learner has no choice of which to plot — widen the grid (doubling it is the usual fix, and costs only tick density) or lower plotPoints`);
+      // The remedy has to name something the config actually has. Without an
+      // authored plotPoints the ask is the engine's default of 2, and "lower
+      // plotPoints" pointed at a key that is not there.
+      const remedy = answer.plotPoints === undefined
+        ? 'widen the grid so more than the two points the line needs are reachable'
+        : 'widen the grid (doubling it is the usual fix, and costs only tick density) or lower plotPoints';
+      throw new Error(`The answer has exactly ${required} reachable snap-${snap} point(s) inside the grid, so the ${required} placed points are forced and the learner has no choice of which to plot — ${remedy}`);
     }
   }
   if (mode === 'system' || mode === 'asymptotes') {
     const members = answer.system ?? answer.asymptotes;
     const noun = mode === 'system' ? 'System line' : 'Asymptote';
+    const plural = mode === 'system' ? 'System lines' : 'Asymptotes';
+    // Both member-list forms get both checks. Writing the duplicate guard as a
+    // special case inside the asymptotes branch left `system` accepting two
+    // identical lines — an exercise that grades 'correct' for drawing one line
+    // twice — while correctAsymptoteCount's per-target counting justified
+    // itself with "the config parser refuses duplicates", a claim only half
+    // the parser made good on.
+    //
+    // {y: 3} and {slope: 0, intercept: 3} are the same line, so duplicates are
+    // compared on the normalized line, not the authored spelling.
+    const lineKey = (l) => (l.x !== undefined
+      ? `x:${l.x}` : `m:${l.slope ?? 0},b:${l.y ?? l.intercept ?? 0}`);
+    for (let i = 0; i < members.length; i += 1) {
+      for (let j = i + 1; j < members.length; j += 1) {
+        if (lineKey(members[i]) === lineKey(members[j])) {
+          throw new Error(`${plural} ${i + 1} and ${j + 1} are the same line`);
+        }
+      }
+    }
     members.forEach((line, index) => {
       const reachable = latticePointsOnLine(line);
       if (reachable < 2) {
@@ -303,16 +321,23 @@ export function resolveGraphPress(state, at) {
   let here = -1;
   pts.forEach((q, i) => { if (q[0] === p[0] && q[1] === p[1]) here = i; });
 
-  // Two crossing asymptotes — or the two lines of a system — legitimately
-  // share their intersection point, and check-graph grades that as correct;
-  // only the two points WITHIN one pair must differ. So while points remain to
-  // be placed, a press on a cell held by an EARLIER pair places the next point
-  // there rather than grabbing. Without this the natural way to draw the
-  // hyperbola asymptotes that both pass through the origin — press (0,0) for
-  // each line — was refused with no feedback. Every other mode grades a
-  // duplicate as 'needMore', so there a press on an occupied cell still grabs.
-  const paired = mode === 'system' || mode === 'asymptotes';
-  const shares = paired && here >= 0 && next < maxPoints
+  // Crossing asymptotes legitimately share a point — every hyperbola's two
+  // asymptotes meet at its centre — and check-graph grades that as correct, so
+  // in ASYMPTOTES mode a press on a cell an earlier pair holds opens the next
+  // pair there rather than grabbing. Without it the natural way to draw the
+  // asymptotes of 4y² − 9x² = 36, both through the origin, was to press (0,0)
+  // for each line and be refused with no feedback.
+  //
+  // It costs something, and the cost is why `system` does not get it: while
+  // points remain unplaced, a point of an earlier pair cannot be grabbed by
+  // pointer at all — a press meant to nudge it silently stacks a coincident
+  // point instead. In asymptotes mode that is the price of the shared centre,
+  // and the keyboard handles (Tab, then arrow keys) still reach every point.
+  // In system mode there is nothing to buy with it: two lines cross at the
+  // solution, which is what the learner is solving FOR rather than a point
+  // they set out to plot twice. So there a press on an occupied cell grabs,
+  // the same as every other mode.
+  const shares = mode === 'asymptotes' && here >= 0 && next < maxPoints
     && Math.floor(here / 2) !== Math.floor(next / 2);
 
   if (here >= 0 && !shares) return { grab: here };

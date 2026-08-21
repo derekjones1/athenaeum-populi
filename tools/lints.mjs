@@ -148,6 +148,25 @@ function blankBalancedMacro(source, macroRe, blank) {
 }
 
 /**
+ * Every offset in `source` where a backslash actually STARTS a control
+ * sequence. Backslashes pair up — `\\` is one token, the row separator — so
+ * within a run of n backslashes only the last one begins a macro, and only
+ * when n is odd. `\begin` opens an environment, `\\begin` does not, and
+ * `\\\begin` (a stray backslash before a real one) does again.
+ */
+function controlSequenceStarts(source) {
+  const starts = new Set();
+  for (let i = 0; i < source.length; i += 1) {
+    if (source[i] !== '\\') continue;
+    let run = 1;
+    while (source[i + run] === '\\') run += 1;
+    if (run % 2 === 1) starts.add(i + run - 1);
+    i += run - 1;
+  }
+  return starts;
+}
+
+/**
  * Blank every `\begin{…}…\end{…}` run — nesting included — preserving the
  * source offsets, so a caller can read what a math span says OUTSIDE its
  * environments. `\\` is the row separator inside one and an escaping bug
@@ -157,7 +176,15 @@ function blankMathEnvironments(source, blank) {
   let out = source;
   let depth = 0;
   let start = -1;
+  const openers = controlSequenceStarts(source);
   for (const m of source.matchAll(/\\(begin|end)\{[^{}]*\}/g)) {
+    // `\\begin{cases}` is NOT an environment: the `\\` is a row break and
+    // "begin{cases}" is literal text — precisely the heredoc-mangled defect
+    // the caller exists to catch. The regex happily matches on the SECOND
+    // backslash of the pair, so without this test the run was blanked from
+    // there to `\end{cases}`, leaving one lone backslash that the caller's
+    // `\\` search cannot see. The rule reported that span clean.
+    if (!openers.has(m.index)) continue;
     if (m[1] === 'begin') {
       if (depth === 0) start = m.index;
       depth += 1;

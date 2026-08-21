@@ -78,7 +78,11 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
   starts; merge has the answer ledger's conflict-refusing contract, and
   `node tools/graphplot-conversion.mjs prune content` retires entries whose
   exercise was converted or edited (workflow in
-  `docs/authoring-playbook.md` §3)
+  `docs/authoring-playbook.md` §3). The queue is currently EMPTY — all 335
+  are adjudicated `keep` — so `list --verdict convert` printing `[]` is the
+  true state, not a missing ledger: every command but `merge` now fails
+  loudly if the file is absent, `init` creates it, and `--ledger <path>`
+  points at another one
 - `npm run build` — clean production build plus global Pagefind
 - `npm run check:build` — route, link, search, and file-count gates
 - `npm run ci` — complete local equivalent of CI

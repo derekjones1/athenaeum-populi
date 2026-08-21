@@ -12,6 +12,9 @@ import { graphplotEngineUrl } from '@params';
 import {
   findFreeGridPoint, parseGraphPlotConfig, resolveGraphPress, snapToGrid,
 } from '../lib/graph-plot-config.mjs';
+// The vertex-form → standard-form conversion the grader also reads. A leaf
+// module, so pulling it into this eager bundle costs nothing.
+import { quadraticThroughVertex } from '../lib/graph-algebra.mjs';
 // The one U+2212 formatter. This file used to carry its own copy, so a change
 // to the shared one silently missed the point-handle labels.
 import { mathMinus as fmt } from '../lib/graph-core.mjs';
@@ -42,6 +45,15 @@ const COLOR = {
 const COUNT_WORDS = [, , 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
 // `points` mode phrases its instructions from the answer's point count, so it
 // lives in _instructionsText/_message rather than these fixed maps.
+//
+// The two-point `line` and `quadratic` wordings below are the ENGINE's floor
+// (plotPoints defaults to 2), which corpus policy forbids authoring: lints.mjs
+// requires plotPoints ≥ 3 on both forms, so on this site they render only in
+// unit tests. They are not dead — a 2-point config still parses, and deleting
+// them would leave `_instructionsText` returning undefined for one — but do
+// not reach for them as live copy: for shipped content the counted strings in
+// `_instructionsText`/`_message` are what a learner reads. Two points also
+// determine no parabola, which is why only this branch names the vertex.
 const INSTRUCTIONS = {
   line: 'Place two points on the line.',
   system: 'Place two points on each line — the first two make one line, the next two the other.',
@@ -161,7 +173,9 @@ class GraphPlotElement extends HTMLElement {
       return `Place ${COUNT_WORDS[this.maxPoints]} points on the line.`;
     }
     if (this.mode === 'quadratic' && this.maxPoints > 2) {
-      return `Place the vertex first, then ${COUNT_WORDS[this.maxPoints - 1]} more points on the parabola.`;
+      // Three or more points determine the parabola on their own, so no point
+      // is privileged and none is asked for first — the grader reads the set.
+      return `Place ${COUNT_WORDS[this.maxPoints]} points on the parabola.`;
     }
     if (this.mode === 'asymptotes') {
       const n = this.answer.asymptotes.length;
@@ -199,6 +213,7 @@ class GraphPlotElement extends HTMLElement {
       this.checkGraphPlot = eng.checkGraphPlot;
       this.correctPointCount = eng.correctPointCount;
       this.correctAsymptoteCount = eng.correctAsymptoteCount;
+      this.parabolaThrough = eng.parabolaThrough;
 
       this.svg.addEventListener('pointerdown', (e) => this._onDown(e));
       this.svg.addEventListener('pointermove', (e) => this._onMove(e));
@@ -231,11 +246,17 @@ class GraphPlotElement extends HTMLElement {
   _objects() {
     const lines = [], quadratics = [];
     if (this.mode === 'quadratic') {
-      const [v, p] = this.pts;
-      if (v && p && p[0] !== v[0]) {
-        const a = (p[1] - v[1]) / (p[0] - v[0]) ** 2;
-        quadratics.push({ a, b: -2 * a * v[0], c: a * v[0] * v[0] + v[1] });
-      }
+      // Preview exactly the parabola checkGraphPlot will grade: with three or
+      // more points, the curve through all of them in any order; with two, the
+      // vertex-anchored one those two determine. Previewing the vertex-
+      // anchored curve for a 3-point exercise would have drawn a parabola
+      // through the learner's first two points that their third point visibly
+      // missed, while the grader called the same three points correct.
+      const placed = this.pts.filter(Boolean);
+      const q = this.maxPoints > 2
+        ? (placed.length >= 3 ? this.parabolaThrough(placed) : null)
+        : (placed.length >= 2 ? quadraticThroughVertex(placed[0], placed[1]) : null);
+      if (q) quadratics.push(q);
     } else if (this.mode === 'line') {
       // One line only, previewed through the first two points — with
       // plotPoints > 2 the later points are dots on (or off) that line, never
@@ -269,7 +290,11 @@ class GraphPlotElement extends HTMLElement {
       ...this.grid,
       ariaLabel: this.ariaLabel,
       points: this.pts.map((at, i) => ({
-        at, ...(this.mode === 'quadratic' && i === 0 ? { label: 'vertex' } : {}),
+        // Only the 2-point form privileges the first point as the vertex;
+        // with plotPoints ≥ 3 the points are an unordered set on the curve,
+        // and labelling one of them 'vertex' would be a claim about a point
+        // the learner never designated.
+        at, ...(this.mode === 'quadratic' && i === 0 && this.maxPoints === 2 ? { label: 'vertex' } : {}),
       })),
       lines, quadratics,
     });
@@ -315,7 +340,7 @@ class GraphPlotElement extends HTMLElement {
   }
 
   _handleName(i) {
-    if (this.mode === 'quadratic' && i === 0) return 'Vertex';
+    if (this.mode === 'quadratic' && i === 0 && this.maxPoints === 2) return 'Vertex';
     if (this.mode === 'system') return `Point ${i + 1} (line ${i < 2 ? 1 : 2})`;
     if (this.mode === 'asymptotes' && this.answer.asymptotes.length > 1) {
       return `Point ${i + 1} (asymptote ${Math.floor(i / 2) + 1})`;
@@ -421,7 +446,11 @@ class GraphPlotElement extends HTMLElement {
       return `Place ${COUNT_WORDS[this.maxPoints]} different points on the grid first.`;
     }
     if (status === 'needMore' && this.mode === 'quadratic' && this.maxPoints > 2) {
-      return `Place the vertex and ${COUNT_WORDS[this.maxPoints - 1]} more points, each at a different x-value.`;
+      // What actually returns needMore here is too few points or two placed on
+      // the same cell. Points sharing an x-value are a different failure with
+      // its own status (notOnParabola), so naming x-values here sent a learner
+      // whose real mistake was a coincident point to check the wrong thing.
+      return `Place ${COUNT_WORDS[this.maxPoints]} different points on the parabola.`;
     }
     if (status === 'needMore' && this.mode === 'asymptotes') {
       const n = this.answer.asymptotes.length;
@@ -448,7 +477,7 @@ class GraphPlotElement extends HTMLElement {
         : 'The vertex is right — check how the parabola opens (move your second point).',
       shapeRight: 'The shape is right — move the vertex.',
       notCollinear: 'Your points do not all lie on one straight line — line them up first.',
-      notOnParabola: 'Your points do not all lie on one parabola — adjust them so every point sits on the curve.',
+      notOnParabola: 'Your points do not all lie on one parabola — no two can share an x-value, and every point must sit on the same curve.',
     }[status] || '';
   }
 }

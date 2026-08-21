@@ -70,16 +70,32 @@ const cases = [
   [[[2, -1]], { quadratic: { a: 1, b: -4, c: 3 } }, 'needMore'],
 
   // --- PARABOLA mode with plotPoints -------------------------------------
-  // vertex plus two symmetric points, all on y = x² − 4x + 3
+  // Three points determine the parabola on their own, so the ORDER they were
+  // placed in is not part of the answer — the same contract every other
+  // multi-point form here uses. Anchoring the fit on pts[0] as the vertex
+  // instead told a learner who had plotted the curve correctly, but had not
+  // put the vertex first, that their points "do not all lie on one parabola".
   [[[2, -1], [0, 3], [4, 3]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'correct'],
   [[[2, -1], [1, 0], [3, 0]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'correct'],
+  // the same three points, vertex placed LAST
+  [[[0, 3], [4, 3], [2, -1]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'correct'],
+  // and three points on the curve with no vertex among them at all — which is
+  // exactly what "graph it using its intercepts" asks a learner to plot
+  [[[1, 0], [3, 0], [0, 3]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'correct'],
   // three consistent points on the WRONG parabola keep the diagnostics
   [[[2, -1], [4, 5], [0, 5]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'vertexRight'],
   [[[3, -1], [1, 3], [5, 3]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'shapeRight'],
-  // third point off the parabola the first two determine: nothing to grade
-  [[[2, -1], [0, 3], [4, 2]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'notOnParabola'],
-  // a third point straight above the vertex can never be on the parabola
+  // Three points at distinct x-values ALWAYS lie on one parabola, so this is
+  // simply the wrong parabola — 'notOnParabola' would be a false claim about
+  // the learner's own points.
+  [[[2, -1], [0, 3], [4, 2]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'incorrect'],
+  // notOnParabola is what is left when there is genuinely no parabola: two
+  // points sharing an x-value (no function passes through both), three
+  // collinear points (a line is not a parabola), and a fourth point off the
+  // curve the others determine.
   [[[2, -1], [0, 3], [2, 3]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'notOnParabola'],
+  [[[2, -1], [3, 0], [4, 1]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'notOnParabola'],
+  [[[2, -1], [0, 3], [4, 3], [1, 5]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 4 }, 'notOnParabola'],
   // not enough yet, and a duplicate placement is "need more", not wrong
   [[[2, -1], [0, 3]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'needMore'],
   [[[2, -1], [0, 3], [0, 3]], { quadratic: { a: 1, b: -4, c: 3 }, plotPoints: 3 }, 'needMore'],
@@ -336,6 +352,40 @@ assert.equal(
   'and a vertical line standing on that edge is drawable',
 );
 
+// Duplicate members are refused on BOTH member-list forms. The guard lived
+// inside the asymptotes branch only, so a system answer listing one line twice
+// parsed clean and shipped an exercise that graded 'correct' for drawing that
+// line twice — while correctAsymptoteCount justified its per-target counting
+// with "the config parser refuses duplicates".
+for (const [form, config] of [
+  ['system', '{"answer":{"system":[{"slope":1,"intercept":0},{"slope":1,"intercept":0}]}}'],
+  ['system spelled differently', '{"answer":{"system":[{"y":3},{"slope":0,"intercept":3}]}}'],
+  ['asymptotes', '{"answer":{"asymptotes":[{"x":2},{"x":2}]}}'],
+]) {
+  assert.throws(
+    () => parseGraphPlotConfig(config, 1),
+    /are the same line/,
+    `${form}: a member list must not repeat a line`,
+  );
+}
+
+// The slack rule's remedy has to name something the config actually carries:
+// without an authored plotPoints the ask is the engine's default of 2, and
+// "lower plotPoints" pointed at a key that is not there.
+assert.throws(
+  () => parseGraphPlotConfig('{"answer":{"slope":1,"intercept":0},"grid":{"xMin":0,"xMax":1,"yMin":0,"yMax":1}}', 1),
+  (error) => {
+    assert.match(error.message, /exactly 2 reachable/);
+    assert.doesNotMatch(error.message, /plotPoints/, 'do not name a key the answer does not have');
+    return true;
+  },
+);
+assert.throws(
+  () => parseGraphPlotConfig('{"answer":{"slope":1,"intercept":0,"plotPoints":3},"grid":{"xMin":0,"xMax":2,"yMin":0,"yMax":2}}', 1),
+  /lower plotPoints/,
+  'but when it IS authored, lowering it is a real remedy',
+);
+
 // --- resolveGraphPress ----------------------------------------------------
 // A press resolves to the lattice point it SNAPS ONTO, not to whatever handle
 // falls inside a fixed radius.
@@ -374,6 +424,21 @@ assert.deepEqual(
   press({ mode: 'line', pts: [[0, 0], [2, 2]] }, [0, 0]),
   { grab: 0 },
   'and every other mode grades a duplicate as needMore, so it still grabs',
+);
+// SYSTEM mode does not get the shared-cell rule. Generalizing it there bought
+// nothing — two lines cross at the solution, which is what the learner is
+// solving FOR rather than a point they set out to plot twice — and cost the
+// pointer its only way to adjust an earlier pair: a press meant to nudge
+// line 1's first point silently stacked a coincident point on top of it.
+assert.deepEqual(
+  press({ mode: 'system', pts: [[0, 3], [1, 1]] }, [0, 3]),
+  { grab: 0 },
+  'a press on an earlier system pair grabs that point rather than stacking one',
+);
+assert.deepEqual(
+  press({ mode: 'system', pts: [[0, 3], [1, 1], [2, 2]] }, [1, 1]),
+  { grab: 1 },
+  'and it keeps grabbing once the second pair is under way',
 );
 // Once every point is placed nothing competes with grabbing, so a near miss
 // takes the nearest handle rather than demanding its exact cell.

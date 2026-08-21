@@ -522,9 +522,15 @@ test('a slow speech engine leaves options disabled until their names settle', as
   const gated = await page.evaluate(() =>
     [...document.querySelectorAll('multiple-choice')]
       .filter((widget) => !['ready', 'failed'].includes(widget.dataset.speech))
-      .map((widget) =>
-        [...widget.querySelectorAll('.ap-mc-option')].every((button) => button.disabled),
-      ),
+      .map((widget) => {
+        const options = [...widget.querySelectorAll('.ap-mc-option')];
+        const math = options.filter((button) => (button.dataset.value || '').includes('$'));
+        return {
+          mathOptions: math.length,
+          mathDisabled: math.every((button) => button.disabled),
+          allDisabled: options.every((button) => button.disabled),
+        };
+      }),
   );
   // Without this the test would pass on a page that settled everything before
   // the first read — a green run proving nothing.
@@ -533,8 +539,25 @@ test('a slow speech engine leaves options disabled until their names settle', as
     'holding the engine must leave at least one math widget unsettled',
   ).toBeGreaterThan(0);
   expect(
-    gated.every(Boolean),
+    gated.every((widget) => widget.mathDisabled),
     'an option whose accessible name has not settled must stay disabled',
+  ).toBe(true);
+
+  // The gate is per-TARGET, and this is the other half of that. An option
+  // that carries no math has a final server-rendered name and nothing to wait
+  // for — graph-mode options are rendered graphs, so `mathOptions` is 0 and
+  // only the QUESTION is serialized. Gating those buttons on the question's
+  // serialization left a whole page of graph questions inert for the entire
+  // LABEL_GATE_MS window whenever the engine fetch was slow or offline, which
+  // is exactly the condition this test holds open.
+  const graphOnly = gated.filter((widget) => widget.mathOptions === 0);
+  expect(
+    graphOnly.length,
+    'the page must carry an unsettled math-question widget whose options are graphs',
+  ).toBeGreaterThan(0);
+  expect(
+    graphOnly.every((widget) => !widget.allDisabled),
+    'options with nothing to serialize must not wait on the question label',
   ).toBe(true);
 
   release();

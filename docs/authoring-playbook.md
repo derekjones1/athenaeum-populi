@@ -555,11 +555,27 @@ points per member is already `2×N`.
 A line or quadratic answer may add `plotPoints: N` (2–12), e.g.
 `{"slope": 2, "intercept": -1, "plotPoints": 3}` for "plot three points on
 the line": the learner places N distinct points of their own choosing and
-all of them must lie on the line (for a quadratic, the vertex first, then
-N−1 more points all on one parabola). Use this — not fixed `points`
-targets — when the question leaves the choice of points to the learner;
-use `points` when the question names the x-values. `plotPoints` never
-exists on system members.
+all of them must lie on the line. Use this — not fixed `points` targets —
+when the question leaves the choice of points to the learner; use `points`
+when the question names the x-values. `plotPoints` never exists on system
+members.
+
+**A quadratic with `plotPoints: 3` or more is graded ORDER-AGNOSTICALLY,
+and the vertex need not be among the placed points.** Three points at
+distinct x-values determine the parabola on their own, so the grader fits
+the curve through the learner's whole set and compares its `a` and vertex
+with the answer — the same contract every other multi-point form here
+uses. It has to be that way: "Graph $y = x^2 + 10x + 24$ using its
+intercepts, its vertex, and its axis of symmetry" is answered by
+$(-6,0)$, $(-4,0)$ and $(0,24)$ — the three points that exercise's own
+`answerDisplay` names, none of which is the vertex — and anchoring the fit
+on the first placed point told a learner who plotted exactly those that
+their points "do not all lie on one parabola". So do not write a question
+that depends on which point is placed first, and do not promise a "vertex"
+handle label: it appears only on the two-point form, which corpus policy
+forbids authoring. `notOnParabola` now means what it says — two points
+share an x-value, the points are collinear, or a point lies off the curve
+the others determine.
 
 **Author `plotPoints: 3` (or more) on every line and quadratic answer** —
 the lint rejects a line or quadratic graphplot that asks for only two
@@ -599,7 +615,27 @@ adjudicated queue of multiple-choice and fillin exercises that should
 become graphplots — each `convert` entry names the answer form (`mode`) and
 sketches the answer/grid (`proposal`), each `keep` entry says why the
 exercise stays as it is, so a conversion session never starts by re-reading
-the corpus. To convert:
+the corpus.
+
+**Commit the ledger file.** It is the whole point of the tool, and it was
+lost once already: the file was never committed, `readConversionLedger`
+returned an empty ledger for a missing path, and `stats` reported "0
+adjudicated, 335 unread" — indistinguishable from a queue nobody had
+started. Every command except `merge` now refuses to run without it
+(`init` creates it deliberately; `--ledger <path>` points at another one,
+which is how the tests avoid writing this one).
+
+**The queue is currently at zero.** All 335 graph-topic MC/fillin
+exercises are adjudicated `keep`: the corpus's graph-production exercises
+are already graphplots (138 of them) with one `mode="graph"` recognition
+multiple choice per section (33). What remains flagged is graph *reads*,
+number-line inequalities whose answer is interval notation, curve families
+with no answer form (exponential, logarithmic, radical, absolute value,
+piecewise, conic, inequality regions), asymptote-equation asks, graphing-
+calculator estimates, and algebra steps whose prompt merely says "graph".
+Adding an answer form to the engine is what would reopen this queue —
+re-run `npm run graphable:candidates` after doing so, since `prune` plus a
+new form is the only way new `convert` work appears. To convert:
 
 1. `npm run graphable:list -- --verdict convert` — pick entries (the
    current file:line travels with each one).

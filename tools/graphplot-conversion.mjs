@@ -4,11 +4,15 @@
  * `graphplot` exercises instead, so a future session can convert them without
  * re-reading the corpus first.
  *
+ *   node tools/graphplot-conversion.mjs init                  create the queue
  *   node tools/graphplot-conversion.mjs candidates content   the unread queue
  *   node tools/graphplot-conversion.mjs list content [--verdict convert]
  *   node tools/graphplot-conversion.mjs merge <resultsDir>
  *   node tools/graphplot-conversion.mjs stats content
  *   node tools/graphplot-conversion.mjs prune content
+ *
+ * `--ledger <path>` points every command at a different ledger file, which is
+ * how the tests exercise `merge` without writing the repo's own.
  *
  * WHY THIS EXISTS. The GraphPlot engine grades lines, systems, parabolas,
  * point sets, and asymptote sets — but most graph-topic exercises predate
@@ -36,9 +40,12 @@
  *   'keep'     read, and staying MC/fillin on purpose; `note` says why, so
  *              the next sweep does not re-litigate it.
  */
-import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
-import { join, resolve } from 'node:path';
+import { existsSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { extractExercises } from './answer-ledger.mjs';
+import {
+  mergeResults, parseLedgerArgs, pruneLedger, readLedger, shardSlice, writeLedger,
+} from './lib-ledger.mjs';
 
 export const CONVERSION_LEDGER_PATH = 'data/verification/graphplot-conversion-ledger.json';
 
@@ -69,13 +76,7 @@ export function graphTopicExercises(root) {
 }
 
 export function readConversionLedger(path = CONVERSION_LEDGER_PATH) {
-  if (!existsSync(path)) return { schemaVersion: 1, entries: {} };
-  return JSON.parse(readFileSync(path, 'utf8'));
-}
-
-function writeConversionLedger(ledger, path = CONVERSION_LEDGER_PATH) {
-  const ordered = Object.fromEntries(Object.entries(ledger.entries).sort(([a], [b]) => (a < b ? -1 : 1)));
-  writeFileSync(path, `${JSON.stringify({ ...ledger, entries: ordered }, null, 1)}\n`);
+  return readLedger(path);
 }
 
 /** Validate one adjudication record; returns an error string or null. */
@@ -90,102 +91,86 @@ export function recordProblem(record) {
   return null;
 }
 
-function usage(code) {
-  console.error('usage: node tools/graphplot-conversion.mjs <candidates|list|merge|prune|stats> [root|resultsDir] [flags]');
-  process.exit(code);
+function usage(detail) {
+  console.error(`graphplot-conversion: ${detail}`);
+  console.error('usage: node tools/graphplot-conversion.mjs <init|candidates|list|merge|prune|stats> [root|resultsDir] [--verdict v] [--shard i/n] [--ledger path]');
+  process.exit(2);
 }
 
-function main() {
-  const args = process.argv.slice(2);
-  const mode = args[0];
-  if (!mode || !['candidates', 'list', 'merge', 'prune', 'stats'].includes(mode)) usage(2);
-  const positional = args.slice(1).filter((a) => !a.startsWith('--'));
-  const flag = (name) => {
-    const hit = args.find((a) => a === `--${name}` || a.startsWith(`--${name}=`));
-    if (!hit) return null;
-    return hit.includes('=') ? hit.split('=').slice(1).join('=') : args[args.indexOf(hit) + 1];
-  };
+// The decision two reading passes must AGREE on. `note` and `proposal` are
+// free prose (the proposal is explicitly a hypothesis the converter
+// re-derives), so differing wording is not a conflict; first file wins. The
+// mode is part of it because two passes that both say 'convert' but disagree
+// on `line` vs `quadratic` have read the exercise differently, and comparing
+// only the verdict let the alphabetically-later result file pick the answer
+// form in silence.
+const decisionOf = (record) => `${record.verdict}${record.mode ? `/${record.mode}` : ''}`;
 
-  if (mode === 'merge') {
-    const dir = positional[0];
-    if (!dir) usage(2);
-    const ledger = readConversionLedger();
-    // Same contract as the answer ledger's merge: fold the whole batch first,
-    // refuse it entirely on a conflicting DECISION for one hash (one of those
-    // passes read the exercise wrong — re-read it, never let file order pick),
-    // and let a batch decision that differs from the LEDGER's update it
-    // visibly (that is the legitimate re-adjudication flow).
-    //
-    // The decision is the verdict AND the mode: two passes that both say
-    // 'convert' but disagree on `line` vs `quadratic` have read the exercise
-    // differently, and comparing only the verdict let the alphabetically-later
-    // result file pick the answer form silently — exactly the file-order
-    // resolution this refusal exists to prevent. `note` and `proposal` are
-    // free prose (the proposal is explicitly a hypothesis the converter
-    // re-derives), so differing wording is not a conflict; first file wins.
-    const batch = new Map();
-    let bad = 0;
-    const decisionOf = (r) => `${r.verdict}${r.mode ? `/${r.mode}` : ''}`;
-    for (const file of readdirSync(dir).filter((f) => f.endsWith('.json')).sort()) {
-      const parsed = JSON.parse(readFileSync(join(dir, file), 'utf8'));
-      for (const record of parsed.results ?? []) {
-        const problem = recordProblem(record);
-        if (problem) {
-          bad += 1;
-          console.error(`  invalid record in ${file}: ${problem} (${record.hash ?? 'no hash'})`);
-          continue;
-        }
-        const prior = batch.get(record.hash);
-        if (prior && decisionOf(prior) !== decisionOf(record)) {
-          bad += 1;
-          console.error(`  conflict ${record.hash}: ${decisionOf(prior)} (${prior.file}) vs ${decisionOf(record)} (${file})`);
-          continue;
-        }
-        batch.set(record.hash, {
-          verdict: record.verdict,
-          ...(record.mode ? { mode: record.mode } : {}),
-          ...(record.proposal ? { proposal: record.proposal } : {}),
-          note: record.note,
-          file,
-        });
-      }
-    }
-    if (bad) {
-      console.error(`✖ ${bad} invalid/conflicting record(s) — nothing merged; fix the result files and rerun`);
+function main() {
+  let cli;
+  try {
+    cli = parseLedgerArgs(process.argv.slice(2), {
+      commands: ['init', 'candidates', 'list', 'merge', 'prune', 'stats'],
+      valueFlags: ['verdict', 'shard'],
+    });
+  } catch (error) {
+    usage(error.message);
+    return;
+  }
+  const { command, positional, flag } = cli;
+  const ledgerPath = flag('ledger') ?? CONVERSION_LEDGER_PATH;
+
+  if (command === 'init') {
+    // Creating the queue is a deliberate act, so that every OTHER command can
+    // treat a missing ledger as loss rather than as a fresh start.
+    if (existsSync(ledgerPath)) {
+      console.error(`✖ ${ledgerPath} already exists — init would discard ${Object.keys(readLedger(ledgerPath).entries).length} adjudication(s)`);
       process.exit(1);
     }
-    let updated = 0;
-    for (const [hash, { file, ...record }] of batch) {
-      const existing = ledger.entries[hash];
-      if (existing && decisionOf(existing) !== decisionOf(record)) {
-        updated += 1;
-        console.log(`  updated ${hash}: ${decisionOf(existing)} → ${decisionOf(record)}`);
-      }
-      ledger.entries[hash] = record;
-    }
-    writeConversionLedger(ledger);
-    console.log(`merged ${batch.size} record(s) into ${CONVERSION_LEDGER_PATH}; ${Object.keys(ledger.entries).length} total${updated ? `; ${updated} verdict(s) updated` : ''}`);
+    writeLedger({ schemaVersion: 1, entries: {} }, ledgerPath);
+    console.log(`created ${ledgerPath}; every graph-topic exercise is unread until a pass merges verdicts`);
+    return;
+  }
+
+  if (command === 'merge') {
+    const dir = positional[0];
+    if (!dir) usage('merge needs a results directory');
+    mergeResults({
+      dir,
+      path: ledgerPath,
+      validate: recordProblem,
+      decisionOf,
+      toRecord: (record) => ({
+        verdict: record.verdict,
+        ...(record.mode ? { mode: record.mode } : {}),
+        ...(record.proposal ? { proposal: record.proposal } : {}),
+        note: record.note,
+      }),
+    });
     return;
   }
 
   const root = positional[0] || 'content';
   const exercises = graphTopicExercises(resolve(root));
-  const ledger = readConversionLedger();
+  // Required, not defaulted: see readLedger. An absent conversion ledger is
+  // the reading pass's verdicts lost, and this queue has already been lost
+  // once by being reported as empty.
+  let ledger;
+  try {
+    ledger = readLedger(ledgerPath, { required: true });
+  } catch (error) {
+    console.error(`✖ graphplot-conversion: ${error.message}`);
+    process.exit(1);
+  }
 
-  if (mode === 'prune') {
+  if (command === 'prune') {
     // A converted exercise's MC/fillin source is gone, so its hash matches
-    // nothing — pruning is how conversions burn the queue down. Stale entries
-    // from ordinary edits are also dropped; the next `candidates` run
-    // resurfaces the edited exercise for re-adjudication.
-    const live = new Set(exercises.map((e) => e.hash));
-    const stale = Object.keys(ledger.entries).filter((h) => !live.has(h));
-    for (const hash of stale) delete ledger.entries[hash];
-    writeConversionLedger(ledger);
-    console.log(`pruned ${stale.length} stranded record(s); ${Object.keys(ledger.entries).length} remain`);
+    // nothing — pruning is how conversions burn the queue down.
+    pruneLedger({ path: ledgerPath, live: new Set(exercises.map((e) => e.hash)) });
     return;
   }
 
-  if (mode === 'stats') {
+  if (command === 'stats') {
     const live = new Set(exercises.map((e) => e.hash));
     const entries = Object.entries(ledger.entries);
     const liveEntries = entries.filter(([hash]) => live.has(hash));
@@ -209,14 +194,15 @@ function main() {
   // candidates / list — both emit the same JSON shape ledger:list uses, so
   // the same reading/conversion briefs work on either.
   let subset;
-  if (mode === 'candidates') {
-    const shard = flag('shard');
+  if (command === 'candidates') {
     subset = exercises.filter((e) => !ledger.entries[e.hash]);
+    const shard = flag('shard');
     if (shard) {
-      const [i, n] = shard.split('/').map(Number);
-      if (!Number.isInteger(i) || !Number.isInteger(n) || i < 1 || i > n) usage(2);
-      const size = Math.ceil(subset.length / n);
-      subset = subset.slice((i - 1) * size, i * size);
+      try {
+        subset = shardSlice(subset, shard);
+      } catch (error) {
+        usage(error.message);
+      }
     }
   } else {
     const verdict = flag('verdict');
@@ -226,7 +212,7 @@ function main() {
   }
   process.stdout.write(`${JSON.stringify(subset.map((e) => ({
     hash: e.hash, kind: e.kind, path: e.path, line: e.line, params: e.params, inner: e.inner.trim(),
-    ...(mode === 'list' && ledger.entries[e.hash] ? { adjudication: ledger.entries[e.hash] } : {}),
+    ...(command === 'list' && ledger.entries[e.hash] ? { adjudication: ledger.entries[e.hash] } : {}),
   })), null, 1)}\n`);
 }
 
