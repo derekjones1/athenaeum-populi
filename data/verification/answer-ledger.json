@@ -91,6 +91,10 @@
   "00e918265a7907ad": {
    "verdict": "ok"
   },
+  "00ecceab9a68123a": {
+   "verdict": "ok",
+   "note": "sin(2x)=sin(x+x)=sinx cosx+cosx sinx=2 sinx cosx by the sum formula for sine; confirmed by numeric sampling of x -- functions are the Same, matching the CNXML-printed solution."
+  },
   "00f33e29c21f5d69": {
    "verdict": "ok"
   },
@@ -171,6 +175,10 @@
   "01b7b2105065a098": {
    "verdict": "ok"
   },
+  "01b895f145f3c48b": {
+   "verdict": "ok",
+   "note": "#11 (fs-id1668430, multiplechoice): cos6t+cos4t=2cos((6t+4t)/2)cos((6t-4t)/2)=2cos(5t)cos(t); confirmed numerically at t=0.61, matches CNXML solution 2cos5t cost. Distractors 2sin5t sint, cos5t cost, 2cos5t sint confirmed numerically distinct."
+  },
   "01ba71d17b455417": {
    "verdict": "ok"
   },
@@ -241,6 +249,10 @@
   },
   "024dfbe28ac79872": {
    "verdict": "ok"
+  },
+  "02506bddb9ce9dc3": {
+   "verdict": "ok",
+   "note": "tan(pi/2-x)=sin(pi/2-x)/cos(pi/2-x)=cosx/sinx=cotx; confirmed by numeric sampling of x; same retype hazard as the sec item, hence multiplechoice."
   },
   "0253b0a8861d75ac": {
    "verdict": "ok",
@@ -399,12 +411,12 @@
   "03fbf9aad3a9b825": {
    "verdict": "ok"
   },
+  "03ffda337f4fa123": {
+   "verdict": "ok",
+   "note": "sin(x-3pi/4)=sinx cos(3pi/4)-cosx sin(3pi/4) = -sqrt2/2 sinx - sqrt2/2 cosx; confirmed by numeric sampling at x=0.4,1.2,-0.9 (agree to 1e-12)."
+  },
   "0401f10f70dd003a": {
    "verdict": "ok"
-  },
-  "0407d0a258812ff1": {
-   "verdict": "ok",
-   "note": "node: Math.acos(0.5)=1.0471975511965979=π/3."
   },
   "042ba854d315ff51": {
    "verdict": "ok"
@@ -781,6 +793,10 @@
   "072effebb3275e97": {
    "verdict": "ok"
   },
+  "073616ae5c2e1e41": {
+   "verdict": "ok",
+   "note": "sinα=-4/5,QIV ⇒ cosα=3/5 (positive, QIV). α/2 is in QII (since 270°<α<360° ⇒ 135°<α/2<180°), so cosine is negative: cos(α/2)=-√((1-3/5)/2)=-√(1/5)=-2/√5 (node-checked, matches source's -2/√5)."
+  },
   "0742dc944983e42c": {
    "verdict": "ok"
   },
@@ -1014,6 +1030,10 @@
   },
   "09ed62e1002b151a": {
    "verdict": "ok"
+  },
+  "09f2970f5809a2a6": {
+   "verdict": "ok",
+   "note": "Figure triangle base 12 / height 5 / hyp 13; α is opposite the base (12) and adjacent to the height (5): sinα=12/13, cosα=5/13. sin2α=120/169, cos2α=-119/169, tan2α=-120/119 (node-checked; the negative cos2α is correct since α>45°)."
   },
   "09fbc118c8476bc4": {
    "verdict": "ok"
@@ -1333,6 +1353,10 @@
   "0cbcf495e038ec38": {
    "verdict": "ok"
   },
+  "0cc0d41bc5530cf5": {
+   "verdict": "ok",
+   "note": "TI2: sin(x+y)cos(x-y)=(1/2)[sin((x+y)+(x-y))+sin((x+y)-(x-y))]=(1/2)(sin2x+sin2y); matches CNXML solution and product-to-sum formula, structurally derived."
+  },
   "0cc33e3263066994": {
    "verdict": "ok"
   },
@@ -1341,10 +1365,6 @@
   },
   "0ccbb093c0776bc3": {
    "verdict": "ok"
-  },
-  "0cd89a5ae1e021c6": {
-   "verdict": "ok",
-   "note": "node: Math.atan(Math.tan(11*Math.PI/9))=0.6981317007977313=2π/9 (11π/9 is in quadrant III, tan shares value with 11π/9-π=2π/9, which is in the restricted domain)."
   },
   "0cdb9d61381ef0ef": {
    "verdict": "ok"
@@ -1407,6 +1427,10 @@
   },
   "0d763c75acdc4046": {
    "verdict": "ok"
+  },
+  "0d79c849c4a081df": {
+   "verdict": "ok",
+   "note": "cofunction: pi/2-pi/7 = 9pi/14-2pi/14 = 5pi/14, so sin(pi/7)=cos(5pi/14); confirmed sin(pi/7) numerically equals cos(5pi/14); distractors are plausible-but-wrong cofunction arithmetic."
   },
   "0d7dd1cadbb94b01": {
    "verdict": "ok"
@@ -1611,9 +1635,9 @@
   "0f618dbf8c89e011": {
    "verdict": "ok"
   },
-  "0f721e976aadfd8d": {
+  "0f84671a35feb23a": {
    "verdict": "ok",
-   "note": "node: Math.atan(-Math.sqrt(3))=-1.0471975511965976=-π/3 (source Algebraic #13, solution -π/3)."
+   "note": "(tan(3x/2)-tan(7x/5))/(1+tan(3x/2)tan(7x/5)) = tan(3x/2-7x/5) = tan(x/10) since 3/2-7/5=15/10-14/10=1/10; confirmed by numeric sampling at x=0.3,1.1,-0.7 (agree to 1e-6, tan near-singular so looser tolerance)."
   },
   "0f8509b141e9a9d8": {
    "verdict": "ok"
@@ -2215,6 +2239,10 @@
   "15c5250f8bed05d5": {
    "verdict": "ok"
   },
+  "15d3b5241dae34c7": {
+   "verdict": "ok",
+   "note": "Try It ti_07_01_04 (CNXML source): 25-9sin^2(t) = (5-3sin t)(5+3sin t), a difference of squares; confirmed numerically at t=1 (18.62733923553786 both sides)."
+  },
   "15d77cd03b895254": {
    "verdict": "ok"
   },
@@ -2256,10 +2284,6 @@
   "162c2a5afe1af25b": {
    "verdict": "ok",
    "note": "node: Math.asin(6/10)=0.6435011087932844, rounds to 0.6435; triangle hyp=10, opposite=6 (Figure 9), matches source's 0.6435 radians."
-  },
-  "163b3423cf8d4b29": {
-   "verdict": "ok",
-   "note": "solved 4x+2=pi/2+k*pi for x = pi/8-1/2+k*pi/4 via node -e; k=0 gives x=pi/8-1/2=-0.1073, nearest candidate to 0 (k=1 gives 0.678, k=-1 gives -0.893)."
   },
   "164501dfdf843c97": {
    "verdict": "ok"
@@ -2612,6 +2636,10 @@
   },
   "1a0bab485810b93b": {
    "verdict": "ok"
+  },
+  "1a1cd001b138c3a4": {
+   "verdict": "ok",
+   "note": "Try It ti_07_01_05 (CNXML source): cos(t)/(1+sin t) = (1-sin t)/cos t, proved by multiplying by (1-sin t)/(1-sin t) and using 1-sin^2t=cos^2t; confirmed numerically at t=1 (0.2934079930260234 both sides). Distractors (1+sin t)/cos t, (sin t-1)/cos t, (1-sin t)/sin t all confirmed numerically distinct."
   },
   "1a2cc225a03169c7": {
    "verdict": "ok"
@@ -3093,10 +3121,6 @@
   "1f4a4f6e03faeece": {
    "verdict": "ok"
   },
-  "1f4b42cfd69ea4ac": {
-   "verdict": "ok",
-   "note": "matches source's own printed solution text verbatim (reflected across y=-1, becoming increasing)."
-  },
   "1f522f3ccc420e02": {
    "verdict": "ok"
   },
@@ -3549,6 +3573,14 @@
   "23f423034e794498": {
    "verdict": "ok"
   },
+  "23f61ad00c8acda1": {
+   "verdict": "ok",
+   "note": "Same figure triangle as fs-id2148715 (sinα=12/13, cosα=5/13); α is acute so α/2 is in quadrant I (all positive). sin(α/2)=√((1-5/13)/2)=2√13/13, cos(α/2)=√((1+5/13)/2)=3√13/13, tan(α/2)=sinα/(1+cosα)=2/3 (node-checked against all three source values)."
+  },
+  "23fe758360ec4755": {
+   "verdict": "ok",
+   "note": "tan(pi-theta) = (tan pi - tan theta)/(1+tan pi tan theta) = -tan theta since tan pi=0; confirmed by numeric sampling of theta."
+  },
   "24091d40ba8a0e0f": {
    "verdict": "ok",
    "note": "node: 40000/(1+0.06/4)^(4*18) = 13693.1999... -> 13693; matches CNXML Try It #9 solution."
@@ -3624,6 +3656,14 @@
   },
   "24fb485c94d1567d": {
    "verdict": "ok"
+  },
+  "24fe207bcd72af5e": {
+   "verdict": "ok",
+   "note": "cos(x+2pi/3)=cosx cos(2pi/3)-sinx sin(2pi/3) = -1/2 cosx - (sqrt3/2) sinx; confirmed by numeric sampling at x=0.4,1.2,-0.9 (agree to 1e-12)."
+  },
+  "2500b1e3bae79ca7": {
+   "verdict": "ok",
+   "note": "cos(105deg)=cos(45+60); Math.cos(105 deg in rad) vs (sqrt2-sqrt6)/4 agree to 1e-12."
   },
   "2513ee46a408f1a7": {
    "verdict": "ok"
@@ -3785,6 +3825,10 @@
   },
   "26c8a6202fbdfac7": {
    "verdict": "ok"
+  },
+  "26cc0e23638634f3": {
+   "verdict": "ok",
+   "note": "sinα=5/8,QI: cosα=√39/8; cos(2α)=1-2sin²α=1-2(25/64)=7/32 (node-checked)."
   },
   "26d6f45a92bff6be": {
    "verdict": "ok"
@@ -4080,6 +4124,10 @@
   },
   "2a0ed5776f7a3a3a": {
    "verdict": "ok"
+  },
+  "2a1150fe441d83c3": {
+   "verdict": "ok",
+   "note": "sin²xcos²x=(sinxcosx)²=(1/2 sin2x)²=1/4 sin²2x=1/4·(1-cos4x)/2=(1-cos4x)/8; confirmed numerically at x=0.4123. Retype of the printed subject fails single-trig-function (2 applications vs. 1), confirmed against the real grader."
   },
   "2a15c1109021cb27": {
    "verdict": "ok"
@@ -4491,6 +4539,10 @@
   "2e4ec990a820a4e8": {
    "verdict": "ok"
   },
+  "2e4fe741c2c81ff3": {
+   "verdict": "ok",
+   "note": "TI5 (adapted from verify-identity to simplify-to-single-function): tanθcotθ-cos²θ = (sinθ/cosθ)(cosθ/sinθ)-cos²θ = 1-cos²θ = sin²θ, matches CNXML's own worked steps for this Try It."
+  },
   "2e51e4dc1cc6299e": {
    "verdict": "ok"
   },
@@ -4508,6 +4560,10 @@
   "2e9bb8d9423fe3e1": {
    "verdict": "ok",
    "note": "x = 5 is the vertical line through 5 on the x-axis; option 1 is lines [{x:5}]. Option 0 is x = -5 and option 2 is the horizontal y = 5 (the axis-confusion error). Rendered and inspected: key is vertical crossing the x-axis at 5."
+  },
+  "2ea3ce806461124f": {
+   "verdict": "ok",
+   "note": "Varies 47-63F, avg(55) first at t=10 rising -> T(t)=8sin(pi/12*(t-10))+55; solved T(t)=51 numerically over [0,24): roots at t=0 and t=8; first time AFTER midnight is t=8. Matches source exercise #19 solution (8 a.m.)."
   },
   "2ec35c1e7894ef03": {
    "verdict": "ok",
@@ -5056,6 +5112,10 @@
    "verdict": "ok",
    "note": "As x->-infinity, 4^x->0 so f->-1 (the asymptote); matches CNXML solution exactly."
   },
+  "34c6eefd0984dc47": {
+   "verdict": "ok",
+   "note": "#41 (fs-id2920769): cos44°-cos22°=-2sin33°sin11°; computed in node: -2*sin(33°)*sin(11°)=-0.20784405422813623, rounds to -0.2078, matches CNXML solution '-2sin(33°)sin(11°), -0.2078'."
+  },
   "34c8d6f4763ba3bb": {
    "verdict": "ok"
   },
@@ -5228,6 +5288,10 @@
   "36b013f4698c6ba1": {
    "verdict": "ok"
   },
+  "36b0b87c256d017b": {
+   "verdict": "ok",
+   "note": "y=3sin(3x) first max for x>0: 3x=pi/2 -> x=pi/6, y=3, matching the source's own five-key-point table (pi/6, 3)."
+  },
   "36b37678d04fb0a1": {
    "verdict": "ok"
   },
@@ -5262,10 +5326,6 @@
   "36f8cd577418d333": {
    "verdict": "ok"
   },
-  "36f919c241b99b47": {
-   "verdict": "ok",
-   "note": "node: Math.acos(Math.sin(-11*Math.PI/4))=2.356194490192346=3π/4 (matches source)."
-  },
   "36f9212060ff48bf": {
    "verdict": "ok"
   },
@@ -5295,6 +5355,10 @@
   },
   "37259b316c31d566": {
    "verdict": "ok"
+  },
+  "372687a4f59cb4d5": {
+   "verdict": "ok",
+   "note": "fs-id1812346 (CNXML solution: False). (tan x/sec x)sin(-x) = sin(x)*(-sin x) = -sin^2 x, not cos^2 x; confirmed numerically at x=1 (-0.7080734182735713 vs cos^2(1)=0.2919265817264289, not equal)."
   },
   "3731c78698fe7e67": {
    "verdict": "ok"
@@ -5589,6 +5653,10 @@
    "verdict": "ok",
    "note": "Parent key point (4,1) for log_4(x); f(x)=(1/2)log_4(x) scales y-coordinates by 1/2, giving (4, 1/2). Independently derived from the vertical-compression rule (matches CNXML ti_04_04_06, which only states domain/range/asymptote, not this point, so this specific fact is independently computed, not copied)."
   },
+  "39c958c528de66c4": {
+   "verdict": "ok",
+   "note": "2 sin theta=sqrt3 -> sin theta=sqrt3/2 -> theta=pi/3,2pi/3 on [0,2pi); standard."
+  },
   "39c988cb509dfb62": {
    "verdict": "ok",
    "note": "7-2x^2 in general form is -2x^2+7; highest power is 2. Matches CNXML fs-id1165134380913 (\"Degree = 2\")."
@@ -5641,6 +5709,10 @@
   },
   "3a605868d0021c50": {
    "verdict": "ok"
+  },
+  "3a62e46ef33a8d29": {
+   "verdict": "ok",
+   "note": "acos(-0.2)=1.772154->1.7722, 2pi-1.772154=4.511031->4.5110 (node), period 2pi; representatives in [0,2pi) as pinned. Parent re-derivation after edit."
   },
   "3a7a9064272f4ae4": {
    "verdict": "ok"
@@ -6072,6 +6144,10 @@
   "3fa0b5239378e1c2": {
    "verdict": "ok"
   },
+  "3fa795b045b59794": {
+   "verdict": "ok",
+   "note": "TI4 (adapted to multiplechoice): sin(3θ)+sinθ=2sin((3θ+θ)/2)cos((3θ-θ)/2)=2sin(2θ)cos(θ), matches CNXML. Distractors 2cos(2θ)sin(θ), sin(2θ)cos(θ), 2sin(2θ)sin(θ) confirmed numerically distinct from the correct value and each other at θ=0.7."
+  },
   "3fa82d6a67f82e40": {
    "verdict": "ok"
   },
@@ -6179,6 +6255,10 @@
   },
   "40cf4791f27e9b78": {
    "verdict": "ok"
+  },
+  "40cfe5f1450edbf2": {
+   "verdict": "ok",
+   "note": "2cos^2(theta)+cos(theta)=0 -> cos(theta)(2cos(theta)+1)=0 -> cos theta=0 (pi/2,3pi/2) or cos theta=-1/2 (2pi/3,4pi/3) on [0,2pi); domain added to match source's own key and the surrounding examples' convention (source Try It omits an explicit interval)."
   },
   "40ddc17efd595415": {
    "verdict": "ok"
@@ -6316,6 +6396,10 @@
   "420655cacc5dfe33": {
    "verdict": "ok",
    "note": "f(8-i)=2(8-i)^2-3(8-i)=2(63-16i)-24+3i=126-32i-24+3i=102-29i; recomputed independently with node, matches CNXML ti_03_01_06."
+  },
+  "4207298ce14972e0": {
+   "verdict": "ok",
+   "note": "TI1: cos(2θ)cos(4θ)=(1/2)[cos(2θ-4θ)+cos(2θ+4θ)]=(1/2)(cosθ2θ+cos6θ); derived independently and confirmed numerically to 1e-9 (node), matches CNXML solution (1/2)(cos6θ+cos2θ)."
   },
   "4207b7f59af74a99": {
    "verdict": "ok",
@@ -6624,6 +6708,10 @@
   "45391d45d2129e49": {
    "verdict": "ok"
   },
+  "45418c65fcfd3541": {
+   "verdict": "ok",
+   "note": "sin^2x-2sinx-4=0: quadratic formula roots = 1+-sqrt5 = 3.236 and -1.236 (node-computed), both outside [-1,1], so no real solution for sin x; matches source key 'There are no solutions.' Authored as multiplechoice since a nonexistence claim has no free-response answer."
+  },
   "45485dfec164844e": {
    "verdict": "ok"
   },
@@ -6635,10 +6723,6 @@
   },
   "45644ef11844d154": {
    "verdict": "ok"
-  },
-  "4579cab827b88fee": {
-   "verdict": "ok",
-   "note": "period of A csc(Bx) is 2pi/|B|; B=2 gives P=pi, independently computed."
   },
   "457a580a32fac8ed": {
    "verdict": "ok",
@@ -7220,6 +7304,10 @@
    "verdict": "ok",
    "note": "f(x)=2x^3-6x^2-20x has no constant term, so f(0)=0; y-intercept value is 0. Matches CNXML ti_03_03_06."
   },
+  "4b760ef4ebde2fa6": {
+   "verdict": "ok",
+   "note": "No damping, raised 5cm (max at t=0 -> cosine), first returns to highest position after one full period T=1/3s -> omega=2*pi/(1/3)=6*pi; y=5cos(6*pi t). Matches CNXML Try It solution."
+  },
   "4b7833f33b39d05d": {
    "verdict": "ok"
   },
@@ -7554,6 +7642,10 @@
    "verdict": "ok",
    "note": "both slopes 1/3, intercepts differ -> parallel; key p1279 #13"
   },
+  "4f7847d87ae2ccc9": {
+   "verdict": "ok",
+   "note": "2 cos theta=-sqrt2 -> cos theta=-sqrt2/2 -> theta=3pi/4,5pi/4 on [0,2pi); standard."
+  },
   "4f817b6a4e8dba3f": {
    "verdict": "ok"
   },
@@ -7592,6 +7684,10 @@
   },
   "4fd4e99a3f696c0a": {
    "verdict": "ok"
+  },
+  "4fd9337df961abe4": {
+   "verdict": "ok",
+   "note": "A=(40-24)/2=8, D=(40+24)/2=32, B=2pi/24=pi/12; high pinned to 6 PM by the question (added clause, disclosed in footer): 8*sin(pi/12*6)+32=40 (node). Parent re-derivation after sign-pinning edit."
   },
   "4fdb7660deec2e97": {
    "verdict": "ok"
@@ -7666,6 +7762,10 @@
   "50d7b29a2e7fbee7": {
    "verdict": "ok"
   },
+  "50dbe225c630d2df": {
+   "verdict": "ok",
+   "note": "#27 (fs-id1507419): sin76°+sin14°=2sin45°cos31°=2*(√2/2)*cos31°=√2cos(31°); confirmed numerically, matches CNXML solution √2 cos(31°)."
+  },
   "50df19bcf9a33d2d": {
    "verdict": "ok"
   },
@@ -7685,6 +7785,10 @@
   },
   "511d39564a4e0c02": {
    "verdict": "ok"
+  },
+  "512378c741ad30fb": {
+   "verdict": "ok",
+   "note": "asin(0.27)=0.273393->0.2734, pi-0.273393=2.868200->2.8682 (node), period 2pi. Parent re-derivation after edit."
   },
   "512de624a3aab2e0": {
    "verdict": "ok"
@@ -8403,6 +8507,10 @@
   "58f8f4de8a7fdf22": {
    "verdict": "ok"
   },
+  "58fd508d9d097521": {
+   "verdict": "ok",
+   "note": "Try It ti_07_01_03 (CNXML source): (sin^2t-1)/(t*sin t*tan-tan) factors to (sin t+1)/tan t via difference of squares over tan t(sin t-1); confirmed numerically at t=1 (1.1823949218024703 both sides). Distractors (sin t-1)/tan t, (1-sin t)/tan t, (sin t+1)/cot t all confirmed numerically distinct from the correct value."
+  },
   "5906beac28c8cec1": {
    "verdict": "ok"
   },
@@ -8436,10 +8544,6 @@
   },
   "5952377559cc86b1": {
    "verdict": "ok"
-  },
-  "595b122f157bad6c": {
-   "verdict": "ok",
-   "note": "π/8≈0.3927 is already in (-π/2,π/2), so tan^{-1}(tan(π/8))=π/8 exactly; confirmed Math.atan(Math.tan(Math.PI/8))=Math.PI/8 numerically."
   },
   "595cc08560cf5422": {
    "verdict": "ok"
@@ -9036,6 +9140,10 @@
   },
   "602647115d9f7ad3": {
    "verdict": "ok"
+  },
+  "602e8518dc78d8fb": {
+   "verdict": "ok",
+   "note": "h(t)=4cos(pi/2 t): amplitude 4, period 2*pi/(pi/2)=4. Matches source exercise #31 solution (amplitude 4, period 4, freq 1/4 Hz). Amplitude and period coincidentally both equal 4 -- verified independently, not a defect."
   },
   "60355d3f5eb01ef9": {
    "verdict": "ok"
@@ -9640,6 +9748,10 @@
   "67179131b85c1289": {
    "verdict": "ok"
   },
+  "671cfb82847cec4b": {
+   "verdict": "ok",
+   "note": "tan(u-v)=sin(u-v)/cos(u-v), expand both with sum/difference formulas and divide by cos u cos v: (tanu-tanv)/(1+tanu tanv); confirmed by numeric sampling of (u,v) pairs -- statement is True, matching the CNXML-printed solution."
+  },
   "671eebec4282fa77": {
    "verdict": "ok"
   },
@@ -9663,6 +9775,10 @@
   },
   "674f14116ea653de": {
    "verdict": "ok"
+  },
+  "67560e1df83f37d8": {
+   "verdict": "ok",
+   "note": "sin(11pi/12)=sin(pi-pi/12)=sin(pi/12)=(sqrt6-sqrt2)/4; Math.sin vs key agree to 1e-12."
   },
   "675e9e97ea042e87": {
    "verdict": "ok"
@@ -10389,6 +10505,10 @@
   "6eec008ef9cd4726": {
    "verdict": "ok"
   },
+  "6eef464b1b6a78c1": {
+   "verdict": "ok",
+   "note": "asin(2/20)=5.7392deg->5.7deg (node); rekeyed 5.7^\\circ with degrees form per source key and corpus convention. Parent re-derivation after edit."
+  },
   "6f017bb3128a3d77": {
    "verdict": "ok"
   },
@@ -10512,6 +10632,10 @@
   },
   "70a5f871e0a1f7a4": {
    "verdict": "ok"
+  },
+  "70b1e80d25a50571": {
+   "verdict": "ok",
+   "note": "fs-id2170891 (CNXML solution: sec x). tan(x)sin(x)+sec(x)cos^2(x) = sin^2x/cos x + cos x = (sin^2x+cos^2x)/cos x = sec x; confirmed numerically at x=1 (1.8508157176809257 vs sec(1)=1.8508157176809255)."
   },
   "70bf274fd1d50cfd": {
    "verdict": "ok"
@@ -10735,6 +10859,10 @@
   },
   "7390be94cc0f8be2": {
    "verdict": "ok"
+  },
+  "73926e713ca5299d": {
+   "verdict": "ok",
+   "note": "4sin^2x-2=0 -> sin^2x=1/2 -> sin x=+-sqrt2/2 -> x=pi/4,3pi/4,5pi/4,7pi/4; all four quadrants confirmed via node Math.sin check."
   },
   "73a31efd5751b145": {
    "verdict": "ok"
@@ -10992,10 +11120,6 @@
   "76d52e0c2faefb06": {
    "verdict": "ok"
   },
-  "76f72064afe091e2": {
-   "verdict": "ok",
-   "note": "node: Math.asin(-0.5)=-0.5235987755982989=-π/6 (source Algebraic #9)."
-  },
   "76f7601e032b9cdd": {
    "verdict": "ok"
   },
@@ -11245,10 +11369,6 @@
   "7954e9882d48cf46": {
    "verdict": "ok"
   },
-  "79569ff53622d043": {
-   "verdict": "ok",
-   "note": "node: Math.acos(-Math.SQRT2/2)=2.356194490192345=3π/4 (source Algebraic #11, solution 3π/4)."
-  },
   "796d5657f75323e9": {
    "verdict": "ok"
   },
@@ -11405,6 +11525,10 @@
   "7ad8432a4030f763": {
    "verdict": "ok"
   },
+  "7add8e20d5217d1c": {
+   "verdict": "ok",
+   "note": "sin⁴(3x)=(sin²3x)²=((1-cos6x)/2)²=1/4-1/2cos6x+1/4cos²6x=1/4-1/2cos6x+1/8+1/8cos12x=3/8-1/2cos6x+1/8cos12x=(3+cos12x-4cos6x)/8, matching the source. Confirmed numerically at x=0.2231; all three distractors confirmed distinct from the true value."
+  },
   "7ae4160ebc8f0a50": {
    "verdict": "ok"
   },
@@ -11494,6 +11618,10 @@
   },
   "7bc2187a589d419f": {
    "verdict": "ok"
+  },
+  "7bcac171ad12c396": {
+   "verdict": "ok",
+   "note": "h(t)=8sin(6*pi*t): amplitude 8, period 2*pi/(6*pi)=1/3. Matches source exercise #29 solution (amplitude 8, period 1/3, freq 3 Hz; asked only for amplitude+period per this section's objective wording)."
   },
   "7bd177a75c0b675b": {
    "verdict": "ok"
@@ -11785,6 +11913,10 @@
   "7eae46362ba83697": {
    "verdict": "ok"
   },
+  "7eb5a23fde360168": {
+   "verdict": "ok",
+   "note": "a=10,c=0.5,p=2 -> omega=2*pi/2=pi; y=10e^{-0.5t}cos(pi t). Matches CNXML Try It solution."
+  },
   "7ebdcc270c0bdff7": {
    "verdict": "ok"
   },
@@ -11983,6 +12115,10 @@
   },
   "8116ede627dcf829": {
    "verdict": "ok"
+  },
+  "8119c53fdfb4a53c": {
+   "verdict": "ok",
+   "note": "y=3cos(3*pi*x): amplitude |A|=3; period 2*pi/(3*pi)=2/3. Matches CNXML Try It solution."
   },
   "8129b01a4095fe60": {
    "verdict": "ok"
@@ -12518,6 +12654,10 @@
   "8622c177116d46f0": {
    "verdict": "ok"
   },
+  "8629c45883128568": {
+   "verdict": "ok",
+   "note": "asin(25/200)=7.1808deg->7.2deg (node); rekeyed 7.2^\\circ with degrees form per source key and corpus convention. Parent re-derivation after edit."
+  },
   "863382cc6a749368": {
    "verdict": "ok"
   },
@@ -12819,6 +12959,10 @@
   "8a26b2366ad9b49b": {
    "verdict": "ok"
   },
+  "8a28c9ef47c0441e": {
+   "verdict": "ok",
+   "note": "cos⁴θ-sin⁴θ=(cos²θ+sin²θ)(cos²θ-sin²θ)=1·cos(2θ)=cos(2θ), a pure algebraic identity (node-checked numerically at θ=0.61234)."
+  },
   "8a3d9a4c6510569d": {
    "verdict": "ok",
    "note": "Practice (Factor Theorem). Evaluated 2x^3+x^2-5x+2 at -2, 1, 0.5 via node: all 0. Matches CNXML solution for fs-id1165135349107 (-2, 1, 1/2)."
@@ -12828,6 +12972,10 @@
   },
   "8a475a64f5718f09": {
    "verdict": "ok"
+  },
+  "8a4d47b38d71a83d": {
+   "verdict": "ok",
+   "note": "sinx=1/8,QI ⇒ cosx=√63/8=3√7/8. sin2x=2sinxcosx=3√7/32; cos2x=1-2sin²x=31/32; tan2x=3√7/31. All three node-checked against the source solution."
   },
   "8a5d852bf5b3c9f6": {
    "verdict": "ok"
@@ -13127,6 +13275,10 @@
   "8e184063f0d4dc19": {
    "verdict": "ok"
   },
+  "8e20178644ce7d77": {
+   "verdict": "ok",
+   "note": "same value as caf7458156c38afa: cos(pi/12)=(sqrt2+sqrt6)/4, confirmed numerically."
+  },
   "8e22b5eb5894689e": {
    "verdict": "ok"
   },
@@ -13185,6 +13337,10 @@
   },
   "8ef43b9ec03e5e6a": {
    "verdict": "ok"
+  },
+  "8efd8868b43740ea": {
+   "verdict": "ok",
+   "note": "cos(2θ)cosθ=(cos²θ-sin²θ)cosθ=cos³θ-cosθsin²θ; all three distractors (sign/term variants) confirmed numerically distinct from the true value at θ=0.5931."
   },
   "8eff835562206ec8": {
    "verdict": "ok"
@@ -13834,6 +13990,10 @@
   },
   "96b8f7b214f3b3c3": {
    "verdict": "ok"
+  },
+  "96be0e0e7c0ccb1e": {
+   "verdict": "ok",
+   "note": "sec(pi/2-theta)=1/cos(pi/2-theta)=1/sin(theta)=csc(theta); confirmed by numeric sampling of theta; retyping the printed subject grades correct against the key (checked with checkAnswer), which is why this is multiplechoice rather than fillin."
   },
   "96c337f54fdb6a67": {
    "verdict": "ok",
@@ -14868,6 +15028,10 @@
   "a23657d9e299bfab": {
    "verdict": "ok"
   },
+  "a23b116c005a8818": {
+   "verdict": "ok",
+   "note": "2sin(3theta)=1 -> sin(3theta)=1/2 -> 3theta=pi/6+2k*pi or 5pi/6+2k*pi -> theta=pi/18+2k*pi/3 or 5pi/18+2k*pi/3; k=0,1,2 for each family on [0,2pi) reproduces all six printed values exactly (hand-derived and cross-checked)."
+  },
   "a23e608fdec20787": {
    "verdict": "ok",
    "note": "Solved 4=7.85(1.15)^x-2.27 -> x=ln((4+2.27)/7.85)/ln(1.15) computed with node: -1.6079998... rounds to -1.608, matches CNXML Try It ti_04_02_03 solution exactly."
@@ -14918,6 +15082,10 @@
   "a2b5d374c841c2c5": {
    "verdict": "ok"
   },
+  "a2c1c6f942b521a3": {
+   "verdict": "ok",
+   "note": "tan(2pi/3+pi/4)=tan(165deg); Math.tan vs (1-sqrt3)/(1+sqrt3) agree to 1e-12."
+  },
   "a2ca15124a8a2421": {
    "verdict": "ok"
   },
@@ -14933,6 +15101,10 @@
   },
   "a2e3cc4d278ef58f": {
    "verdict": "ok"
+  },
+  "a3020a451a15f553": {
+   "verdict": "ok",
+   "note": "2cos(3theta)=-sqrt2 -> cos(3theta)=-sqrt2/2 -> 3theta=3pi/4+2k*pi or 5pi/4+2k*pi -> theta=pi/4+2k*pi/3 or 5pi/12+2k*pi/3; k=0,1,2 reproduces the six printed values (3pi/12=pi/4, kept unreduced as printed in the source key)."
   },
   "a302a8c1e0b51aff": {
    "verdict": "ok"
@@ -14966,6 +15138,10 @@
   },
   "a343fe2058676bce": {
    "verdict": "ok"
+  },
+  "a37133f39df64edc": {
+   "verdict": "ok",
+   "note": "tan(19pi/12)=tan(285deg)=-tan(75deg)=-(2+sqrt3); Math.tan vs -2-sqrt3 agree to 1e-12."
   },
   "a37c28e9d1cc164a": {
    "verdict": "ok"
@@ -15014,6 +15190,10 @@
   },
   "a400912411cb48f2": {
    "verdict": "ok"
+  },
+  "a4018f8ac6fe5fef": {
+   "verdict": "ok",
+   "note": "#7 (fs-id2036362): 2sin(5x)cos(3x)=2*(1/2)[sin8x+sin2x]=sin2x+sin8x; confirmed numerically at x=0.77, matches CNXML solution sin(2x)+sin(8x)."
   },
   "a408c144ca12047f": {
    "verdict": "ok"
@@ -15821,6 +16001,10 @@
   "ac42e104ebb3d895": {
    "verdict": "ok"
   },
+  "ac467f1e82513e6f": {
+   "verdict": "ok",
+   "note": "fs-id2427617 (CNXML solution: True, with proof shown). 3sin^2(theta)+4cos^2(theta) = 3(sin^2+cos^2)+cos^2 = 3+cos^2(theta); confirmed numerically at theta=1 (3.291926581726429 both sides)."
+  },
   "ac54229ec98b64d9": {
    "verdict": "ok"
   },
@@ -15879,6 +16063,10 @@
   },
   "acd8c440dc1159a7": {
    "verdict": "ok"
+  },
+  "acdedbf481ed30dc": {
+   "verdict": "ok",
+   "note": "2 sin x+1=0 -> sin x=-1/2 -> x=7pi/6,11pi/6 on [0,2pi); standard unit-circle solve, independently re-derived."
   },
   "ace8787bf760b3cb": {
    "verdict": "ok"
@@ -15947,10 +16135,6 @@
   },
   "adb27d3ee4d80f81": {
    "verdict": "ok"
-  },
-  "adb4d97619f3c21f": {
-   "verdict": "ok",
-   "note": "g undefined where cos(pi/2 x)=0, i.e. pi/2 x=pi/2+k*pi -> x=1+2k; smallest positive is 1, independently computed."
   },
   "adb59ec9fd8b7401": {
    "verdict": "ok",
@@ -16167,6 +16351,10 @@
   "b063cb9177a1a3b3": {
    "verdict": "ok"
   },
+  "b064b4cba48d1340": {
+   "verdict": "ok",
+   "note": "tan^2x-sqrt3 tan x=0 -> tan x(tan x-sqrt3)=0 -> tan x=0 (0,pi) or tan x=sqrt3 (pi/3,4pi/3); union sorted matches source key."
+  },
   "b075b3dd40bf8083": {
    "verdict": "ok",
    "note": "Practice (real-world). Solved 2w*w*(w+2)=192 via node scan over integer w: w=4 gives 192 exactly, so width=4, length=8, height=6. Matches CNXML solution for fs-id1165134043608 ('8 by 4 by 6 inches', length-width-height order stated explicitly in the question)."
@@ -16271,6 +16459,10 @@
   "b148f6dce90c4341": {
    "verdict": "ok"
   },
+  "b149a546dd91ad8d": {
+   "verdict": "ok",
+   "note": "cos^3t=cost -> cost(cos^2t-1)=0 -> cost=0 (pi/2,3pi/2) or cos^2t=1 i.e. sint=0 (0,pi); union matches source key."
+  },
   "b14fd84bc7b01747": {
    "verdict": "ok"
   },
@@ -16280,6 +16472,10 @@
   "b18c259e65064855": {
    "verdict": "ok",
    "note": "-300 + 360 = 60 deg, within [0,360)"
+  },
+  "b1a03cc514660de2": {
+   "verdict": "ok",
+   "note": "fs-id2796242 (CNXML solution: sin x). sin(x)cos(x)sec(x) = sin(x)cos(x)/cos(x) = sin x; confirmed numerically at x=1 (0.8414709848078965 both sides)."
   },
   "b1a21712d21fc007": {
    "verdict": "ok"
@@ -16448,6 +16644,10 @@
   },
   "b3aad724b106478c": {
    "verdict": "ok"
+  },
+  "b3ba250306ca87fb": {
+   "verdict": "ok",
+   "note": "fs-id2595511 (CNXML solution: False). csc^2(x)(1+sin^2 x) = csc^2 x + 1 = cot^2 x + 2, not cot^2 x; confirmed numerically at x=1 (2.412282927437392 vs cot^2(1)=0.41228292743739187, not equal)."
   },
   "b3c2c446195efa1e": {
    "verdict": "ok"
@@ -16840,6 +17040,10 @@
    "verdict": "ok",
    "note": "Reflect f(x)=10^x about x-axis (multiply by -1) then shift up 7: g(x)=-10^x+7; matches CNXML solution exactly."
   },
+  "b756c3822b64f314": {
+   "verdict": "ok",
+   "note": "#39 (fs-id2155191): cos58°+cos12°=2cos35°cos23°; computed in node: 2*cos(35°)*cos(23°)=1.5080668649670106, rounds to 1.5081, matches CNXML solution '2cos(35°)cos(23°), 1.5081'."
+  },
   "b75f936cbe14f9c7": {
    "verdict": "ok"
   },
@@ -16974,6 +17178,10 @@
   },
   "b8d23ac191a95c84": {
    "verdict": "ok"
+  },
+  "b8db1af2f971eb50": {
+   "verdict": "ok",
+   "note": "sin^2(theta)=2cos(theta)+2 -> substitute 1-cos^2 -> (cos theta+1)^2=0 -> cos theta=-1 -> theta=pi on [0,2pi]; algebra re-derived independently."
   },
   "b8de2e2af0fd8737": {
    "verdict": "ok"
@@ -17137,6 +17345,10 @@
   "ba99b1119de94952": {
    "verdict": "ok"
   },
+  "ba9bc5831719ffb2": {
+   "verdict": "ok",
+   "note": "Table (0,-4)(3,-1)(6,2)(9,-1)(12,-4)(15,-1)(18,2): amplitude (2-(-4))/2=3, midline (2+(-4))/2=-1, period 12 -> B=pi/6, minimum at x=0 -> -cos form. y=-3cos(pi/6 x)-1 numerically checked against all 7 table points (matches source exercise #5 solution)."
+  },
   "ba9f553181cb8cdc": {
    "verdict": "ok"
   },
@@ -17250,6 +17462,10 @@
   "bbcf8317efa31bf7": {
    "verdict": "ok"
   },
+  "bbd55d10230846e0": {
+   "verdict": "ok",
+   "note": "12sin^2t+cost-6=0 -> sub 1-cos^2t -> 12cos^2t-cost-6=0 -> quadratic formula cost=(1+-17)/24 = 3/4 or -2/3 (node-computed); four solutions cos^-1(3/4), cos^-1(-2/3), 2pi-cos^-1(-2/3), 2pi-cos^-1(3/4) match source key exactly."
+  },
   "bbdd1a4f8f57b5fd": {
    "verdict": "ok"
   },
@@ -17307,6 +17523,10 @@
   },
   "bc6f9535f0ec3968": {
    "verdict": "ok"
+  },
+  "bc73abf4e3aaf6c8": {
+   "verdict": "ok",
+   "note": "(2sinxcosx)/(2cos²x-1)=sin(2x)/cos(2x)=tan(2x); confirmed as an identity numerically at x=0.4123. Retype of the printed subject fails single-trig-function (2 applications vs. 1), confirmed against the real grader."
   },
   "bc8809c8275cfec1": {
    "verdict": "ok"
@@ -17542,6 +17762,10 @@
   "becb76247f831432": {
    "verdict": "ok"
   },
+  "bed091233bd7ecf3": {
+   "verdict": "ok",
+   "note": "#17 (fs-id2011827): cos45°cos15°=(1/2)[cos30°+cos60°]=(1/2)[(√3/2)+(1/2)]=(1+√3)/4; confirmed numerically (degrees converted to radians explicitly), matches CNXML solution (1/4)(1+√3)."
+  },
   "bed216cef93b31fa": {
    "verdict": "ok",
    "note": "(-1+2i)(-2+3i)=2-3i-4i+6i^2=2-7i-6=-4-7i; recomputed independently, matches CNXML end-of-section answer key."
@@ -17632,6 +17856,10 @@
   "bfb32de3a54cf5c4": {
    "verdict": "ok"
   },
+  "bfbc801634076974": {
+   "verdict": "ok",
+   "note": "2sin(π/4)cos(π/4)=sin(2·π/4)=sin(π/2) by the double-angle formula; numerically both sides equal 1 (node-checked). Retype of the printed subject fails the declared single-trig-function form (2 applications vs. the answer's 1), confirmed against the real grader."
+  },
   "bfbd03003187f802": {
    "verdict": "ok"
   },
@@ -17704,6 +17932,10 @@
   "c050b61db781a74b": {
    "verdict": "ok"
   },
+  "c051033801666a10": {
+   "verdict": "ok",
+   "note": "a=10, decays 15%/s -> r=0.85, oscillates 18/s -> omega=2*pi*18=36*pi. D(t)=10(0.85)^t cos(36 pi t). Matches source exercise #37 solution."
+  },
   "c0759b20852deb7a": {
    "verdict": "ok",
    "note": "Re-derived each target: f(x)=2^(x-1)+3 gives f(0)=2^-1+3=3.5, f(1)=2^0+3=4, f(2)=2+3=5, f(3)=4+3=7, f(4)=8+3=11; all five on the 0.5 snap lattice and inside [-4,6]x[-1,12]. Matches source Try It (m49362) 'Graph f(x)=2^(x-1)+3'."
@@ -17764,6 +17996,10 @@
   },
   "c0e8ba5bfe8ab948": {
    "verdict": "ok"
+  },
+  "c0e998ee54cc44f3": {
+   "verdict": "ok",
+   "note": "#5 (fs-id1298302): 16sin(16x)sin(11x)=16*(1/2)[cos(5x)-cos(27x)]=8cos(5x)-8cos(27x); confirmed numerically at x=1.234 (identity holds), matches CNXML solution 8(cos5x-cos27x)."
   },
   "c0e9d612362a4f09": {
    "verdict": "ok"
@@ -17993,6 +18229,10 @@
   },
   "c3500b7e60931fc7": {
    "verdict": "ok"
+  },
+  "c36d62381035e132": {
+   "verdict": "ok",
+   "note": "Try It ti_07_01_02 adapted to single-trig-function: cot(t)/csc(t) = (cos t/sin t)/(1/sin t) = cos t; confirmed numerically at t=1 (0.5403023058681397 vs cos(1)=0.5403023058681398) and via checkAnswer self-grade correct, subject-vs-key grades incorrect (not correct)."
   },
   "c36dea40cf1abbd1": {
    "verdict": "ok"
@@ -18449,6 +18689,10 @@
    "verdict": "ok",
    "note": "f(x)=3+ln(x-1): asymptote where x-1=0 -> x=1. Matches CNXML ti_04_04_10 solution."
   },
+  "c8529b6f04d06992": {
+   "verdict": "ok",
+   "note": "a=17, 17*r^3=13 -> r=(13/17)^(1/3)=0.914460..., rounds to 0.9145; omega=2*pi*14=28*pi. D(t)=17(0.9145)^t cos(28 pi t), numerically confirmed 17*0.9145^3~=13.0002 (rounding tolerance). Matches source exercise #39 solution."
+  },
   "c858fddc3cb2fb3b": {
    "verdict": "ok"
   },
@@ -18682,6 +18926,10 @@
    "verdict": "ok",
    "note": "f(x)=x^2/(x^2-1) has a variable denominator -- not a single term to a fixed power and not a finite sum of non-negative-integer-power terms, so neither. Matches CNXML fs-id1165135339598 solution \"Neither\"."
   },
+  "caf7458156c38afa": {
+   "verdict": "ok",
+   "note": "cos(pi/3-pi/4)=cos(pi/12); Math.cos(pi/12) vs (sqrt6+sqrt2)/4 agree to 1e-12."
+  },
   "caf8ee23ab9eb51b": {
    "verdict": "ok"
   },
@@ -18836,10 +19084,6 @@
   },
   "cc9cc786cf39935d": {
    "verdict": "ok"
-  },
-  "cc9f02fa593949aa": {
-   "verdict": "ok",
-   "note": "node: Math.asin(-1)=-1.5707963267948966=-π/2."
   },
   "ccaea499c79491ca": {
    "verdict": "ok"
@@ -19506,11 +19750,19 @@
   "d4e0cd85a326a146": {
    "verdict": "ok"
   },
+  "d4eb68c6154169c7": {
+   "verdict": "ok",
+   "note": "sin(π/8)=√((1-cos(π/4))/2)=√((2-√2)/4)=√(2-√2)/2 (node-checked to ~1e-16). Retype of the printed subject fails evaluated-trig, confirmed against the real grader."
+  },
   "d4eb7334c27d3d5e": {
    "verdict": "ok"
   },
   "d504b718ae9095bd": {
    "verdict": "ok"
+  },
+  "d5082a7f756f27c9": {
+   "verdict": "ok",
+   "note": "tan(pi/3)=1.732050807569=sqrt3 (node); period pi so family pi/3+k*pi; representative pinned to (-pi/2,pi/2) by the question. Parent re-derivation after representative-pinning edit."
   },
   "d512e38e95173db3": {
    "verdict": "ok"
@@ -19617,11 +19869,19 @@
   "d665d3d6ec940457": {
    "verdict": "ok"
   },
+  "d66d090e96ff4a69": {
+   "verdict": "ok",
+   "note": "Try It ti_07_01_01 adapted to a pure-number simplification: csc(t)*cos(t)*tan(t) = (1/sin t)(cos t)(sin t/cos t) = 1 for all t; confirmed numerically at t=1 (node: 1.0000000000000002)."
+  },
   "d66f3b1253534f5d": {
    "verdict": "ok"
   },
   "d674709a01fb82b3": {
    "verdict": "ok"
+  },
+  "d67d40de93943e71": {
+   "verdict": "ok",
+   "note": "fs-id2641075 (CNXML solution: 1/sin x). (sec x+csc x)/(1+tan x): numerator=(sin x+cos x)/(sin x cos x), denominator=(cos x+sin x)/cos x, quotient=1/sin x; confirmed numerically at x=1 (1.188395105778121 vs 1/sin(1)=1.1883951057781212)."
   },
   "d683eaae8fbb6ee6": {
    "verdict": "ok"
@@ -19671,16 +19931,8 @@
   "d70d9c9ba1328e9f": {
    "verdict": "ok"
   },
-  "d712589aefd65227": {
-   "verdict": "ok",
-   "note": "node: Math.atan(-1)=-0.7853981633974483=-π/4."
-  },
   "d714b31a4f6b69e5": {
    "verdict": "ok"
-  },
-  "d72854a319b0512d": {
-   "verdict": "ok",
-   "note": "cot(-x)=-cot x (odd), cos(-x)=cos x (even), sin(-x)=-sin x (odd), giving -cotx cosx - sinx; matches source's printed solution exactly; retyping the printed subject verbatim was confirmed via checkAnswer to grade correct against this answer with no available answerForm to block it, so the component is multiplechoice rather than fillin."
   },
   "d72ea2e3558c369b": {
    "verdict": "ok"
@@ -19803,6 +20055,10 @@
   "d8a1c3c59ac02e6d": {
    "verdict": "ok"
   },
+  "d8a5b662610352b1": {
+   "verdict": "ok",
+   "note": "High 105F at 5PM(t=17), avg 85F -> amplitude 20; T(t)=20cos(pi/12*(t-17))+85; T(9)=20*cos(pi/12*(-8))+85=20*cos(-2pi/3)+85=20*(-0.5)+85=75. Matches source exercise #17 solution (75 F)."
+  },
   "d8bfad7d8cda6d52": {
    "verdict": "ok"
   },
@@ -19852,6 +20108,10 @@
   "d9526af45bf97886": {
    "verdict": "ok",
    "note": "Carrying capacity is the numerator constant, 175, matching CNXML fs-id1661534 (Numeric #11)."
+  },
+  "d9620cd4d01ea004": {
+   "verdict": "ok",
+   "note": "tan(5π/12)=(1-cos(5π/6))/sin(5π/6)=(1+√3/2)/(1/2)=2+√3 (node-checked to ~1e-15). Retype of the printed subject fails evaluated-trig, confirmed against the real grader."
   },
   "d966e331d0cb99ba": {
    "verdict": "ok"
@@ -20333,10 +20593,6 @@
   "df24d37b4a19ee4d": {
    "verdict": "ok"
   },
-  "df3bafb00dc170fa": {
-   "verdict": "ok",
-   "note": "node: Math.acos(-1)=3.141592653589793=π."
-  },
   "df4060db72586141": {
    "verdict": "ok"
   },
@@ -20444,6 +20700,10 @@
   "e0bea25f5cdd4a45": {
    "verdict": "ok"
   },
+  "e0d4544081e83dc8": {
+   "verdict": "ok",
+   "note": "#13 (fs-id2591836): cos7x+cos(-7x)=cos7x+cos7x (cosine even)=2cos(7x); confirmed numerically at x=0.53, matches CNXML solution 2cos(7x)."
+  },
   "e0dd8d740e51ed50": {
    "verdict": "ok"
   },
@@ -20481,6 +20741,10 @@
   "e109d033f72dd494": {
    "verdict": "ok"
   },
+  "e10ca0482b21151d": {
+   "verdict": "ok",
+   "note": "#9 (fs-id2698945): sin(-x)sin(5x)=-sin(x)sin(5x)=-(1/2)[cos4x-cos6x]=(1/2)cos6x-(1/2)cos4x; confirmed numerically at x=0.77, matches CNXML solution (1/2)(cos6x-cos4x)."
+  },
   "e11ee7438879ad3a": {
    "verdict": "ok",
    "note": "Option 2 (0-indexed) is curves:[{kind:arctangent}], the only bounded, increasing, origin-passing curve among the four rendered options (verified by rendering all four with svgshot.mjs and inspecting each: option0=unbounded restricted tangent, option1=arcsine on [-1,1] with closed dots, option2=arctangent (correct), option3=-arctangent, decreasing)."
@@ -20508,6 +20772,10 @@
   },
   "e159a7a11c48e9b2": {
    "verdict": "ok"
+  },
+  "e15d8a5af9577465": {
+   "verdict": "ok",
+   "note": "TI3: cos(11π/12)cos(π/12)=(1/2)[cos(5π/6)+cos(π)]=(1/2)(-√3/2-1)=(-2-√3)/4; confirmed numerically in node (Math.cos in radians) to 1e-9, matches CNXML solution exactly."
   },
   "e16b09f87dfc383d": {
    "verdict": "ok"
@@ -20619,10 +20887,6 @@
   "e2543e9ff74f165f": {
    "verdict": "ok",
    "note": "Solved 68/(1+16e^(-0.28x))=20 for x: x=-ln(0.15)/0.28=6.775, rounds to 6.8, matching CNXML fs-id1394672 (koi, #19)."
-  },
-  "e263d622a87fbf53": {
-   "verdict": "ok",
-   "note": "tan(x+pi)=tan x is exactly the statement that adding pi returns the same output, i.e. the period is pi; matches source's printed reasoning (recast as MC to avoid the printed-pi retype hazard confirmed via checkAnswer)."
   },
   "e2766b7cd5811d6b": {
    "verdict": "ok"
@@ -20998,6 +21262,10 @@
   "e5f298b13cfd1fea": {
    "verdict": "ok"
   },
+  "e5f364b2a2f15b40": {
+   "verdict": "ok",
+   "note": "Re-derived independently: cos⁴x=((1+cos2x)/2)²=1/4+1/2cos2x+1/4cos²2x=1/4+1/2cos2x+1/8+1/8cos4x=3/8+1/2cos2x+1/8cos4x, ×10 = 15/4+5cos2x+5/4cos4x, matching the source. Distractors confirmed numerically distinct at x=0.4123."
+  },
   "e601b9c4d362d61e": {
    "verdict": "ok"
   },
@@ -21129,6 +21397,10 @@
   },
   "e793b6c6ea11d8ca": {
    "verdict": "ok"
+  },
+  "e7a7e70cf461398b": {
+   "verdict": "ok",
+   "note": "#23 (fs-id1384324): 2sin100°sin20°=cos80°-cos120° via sinαsinβ=(1/2)[cos(α-β)-cos(α+β)] times 2; confirmed numerically, matches CNXML solution cos(80°)-cos(120°)."
   },
   "e7aa41d039c308a9": {
    "verdict": "ok"
@@ -21375,10 +21647,6 @@
   },
   "eae446a6a330408c": {
    "verdict": "ok"
-  },
-  "eaf331f1086bde03": {
-   "verdict": "ok",
-   "note": "asymptotes of A csc(Bx) at k*pi/|B|; smallest positive is pi/2, independently computed."
   },
   "eb05c7b5baa537fb": {
    "verdict": "ok"
@@ -22790,6 +23058,10 @@
   "f9d68a405833e66e": {
    "verdict": "ok"
   },
+  "f9e3d1ecfca70a14": {
+   "verdict": "ok",
+   "note": "sec^2x=1 -> cos^2x=1 -> cos x=+-1 -> x=0,pi on [0,2pi); standard."
+  },
   "f9e5b8f1b721d637": {
    "verdict": "ok"
   },
@@ -22934,6 +23206,10 @@
   },
   "fb9f7a238f3ee389": {
    "verdict": "ok"
+  },
+  "fbb8a8393cb4d43e": {
+   "verdict": "ok",
+   "note": "Authored answer is the corrected key (a=5, c=6, f=2/pi) for source defect errata #53 (printed key 6, -6 contradicts its own equation); independently derived by matching f(t)=5e^{-6t}cos(4t) against ae^{-ct}cos(omega t)."
   },
   "fbbf549895dce891": {
    "verdict": "ok"
@@ -23106,6 +23382,10 @@
   "fdbfced0f243ff54": {
    "verdict": "ok"
   },
+  "fdcb2c28e0ff53a4": {
+   "verdict": "ok",
+   "note": "Table (0,2)(pi/4,7)(pi/2,2)(3pi/4,-3)(pi,2)(5pi/4,7)(3pi/2,2): amplitude (7-(-3))/2=5, midline (7-3)/2=2, midline crossing rising at x=0 -> sine form, max at x=pi/4 -> B=2. y=5sin(2x)+2 numerically checked against all 7 table points (matches source exercise #7 solution)."
+  },
   "fdd2706e614bd32a": {
    "verdict": "ok"
   },
@@ -23210,6 +23490,10 @@
   },
   "fee062069bd67bee": {
    "verdict": "ok"
+  },
+  "fee74e0ffb389c78": {
+   "verdict": "ok",
+   "note": "atan(-0.34)=-0.327739->-0.3277 (node), period pi; representative in (-pi/2,pi/2) as pinned. Parent re-derivation after edit."
   },
   "fefe041df94c6eb9": {
    "verdict": "ok"

@@ -371,6 +371,21 @@ function checkSolve(question, answer, explicitTarget = null) {
     return skip('solve', 'formula with values given in prose');
   }
 
+  // A general-solution family ("$\frac{\pi}{6}+2k\pi$") carries an integer
+  // parameter that is not a variable of the equation. Substituting the family
+  // leaves that parameter free, and the sampler then evaluates it over the
+  // reals — where the equality genuinely does not hold (it holds only at
+  // integer values, and only to rounding precision when the representative is
+  // a rounded decimal), so a correct family is reported as a wrong root. The
+  // reading pass owns these; sampling cannot.
+  const familyParameter = parts.some((part, i) => {
+    // The assignment's VALUE, whatever variable it names: a mis-labelled
+    // "y = 4" must still reach the wrong-variable failure below.
+    const value = answered[i] ? answered[i].value : part.expr;
+    return [...freeVariables(value)].some((name) => !equationVariables.includes(name));
+  });
+  if (familyParameter) return skip('solve', 'general-solution family with a free integer parameter');
+
   for (const [i, part] of parts.entries()) {
     const assignment = answered[i];
     if (assignment && assignment.variable !== target) {
@@ -497,6 +512,19 @@ function checkReexpression(question, answer, answerMode) {
   const unpinned = [...freeVariables(candidates[0].expr)].filter((name) => !answerVariables.has(name));
   if (unpinned.length > 0 && EXTERNAL_REFERENT_RE.test(question)) {
     return skip('re-expression', `printed subject reads ${unpinned.join(', ')} from a figure or table the checker cannot see`);
+  }
+  // The same trap with the value pinned by the question's own mathematics:
+  // "Given that $\sin\alpha=-\tfrac45$ and $\alpha$ lies in quadrant IV, find
+  // the exact value of $\cos(\tfrac{\alpha}{2})$" answers with a constant, and
+  // the subject's alpha is bound by the printed constraint relation — which the
+  // sampler cannot honor, so free sampling compares the answer against the
+  // subject at an alpha where the constraint is false and manufactures a
+  // disagreement. A relation span sharing the unpinned variable is the tell.
+  const pinnedByRelation = spans.some((expr) => expr
+    && RELATION_OPERATORS.has(expr.operator)
+    && [...freeVariables(expr)].some((name) => unpinned.includes(name)));
+  if (unpinned.length > 0 && pinnedByRelation) {
+    return skip('re-expression', `printed subject reads ${unpinned.join(', ')} from a constraint the sampler cannot honor`);
   }
 
   const { equal, witness } = equivalentNumerically(candidates[0].expr, answerExpr);

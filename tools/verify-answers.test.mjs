@@ -29,6 +29,24 @@ assert.equal(
   'skip',
 );
 
+// a general-solution family carries an integer parameter that is not a
+// variable of the equation; sampling it over the reals falsifies a correct
+// family (precalculus 7.5 keys "1.7722+2k\pi,4.5110+2k\pi" for cos θ = −0.2),
+// so the class skips rather than judge what only the reading pass can read
+{
+  const family = analyze(
+    'Solve $\\cos\\theta=-0.2$, giving each family of solutions to four decimal places, using $k$ for any integer and representative angles in $[0,2\\pi)$.',
+    '1.7722+2k\\pi,4.5110+2k\\pi',
+    { answerMode: 'unordered' },
+  );
+  assert.equal(family.status, 'skip');
+  assert.match(family.reason, /free integer parameter/);
+}
+// …and the narrowing reaches only parameterized families: a plain wrong root
+// on the same equation shape still fails
+assert.equal(analyze('Solve $\\cos\\theta=-1$.', '0').status, 'fail');
+assert.equal(analyze('Solve $\\cos\\theta=-1$.', '\\pi').status, 'pass');
+
 // inequalities print no equation to substitute into
 assert.equal(analyze('Solve: $3x < 9$.', 'x<3').status, 'skip');
 
@@ -413,6 +431,19 @@ assert.equal(analyze('Simplify $\\frac{x}{x}$.', '2').status, 'fail');
 // …and a re-expression whose variable survives into the answer stays in scope.
 assert.equal(analyze('Simplify $(\\tan t)(\\cos t)$.', '\\sin t').status, 'pass');
 assert.equal(analyze('Simplify $(\\tan t)(\\cos t)$.', '\\cos t').status, 'fail');
+// A printed constraint relation pins the subject's variable the same way a
+// figure does: "Given that sin α = −4/5 and α lies in quadrant IV, find the
+// exact value of cos(α/2)" (precalculus 7.3) answers with a constant that free
+// sampling of α can only contradict. The relation span sharing the unpinned
+// variable is the tell; the ask stays out of scope.
+{
+  const constrained = analyze(
+    'Given that $\\sin\\alpha=-\\tfrac45$ and $\\alpha$ lies in quadrant IV, find the exact value of $\\cos\\left(\\tfrac{\\alpha}{2}\\right)$.',
+    '-2/\\sqrt{5}',
+  );
+  assert.equal(constrained.status, 'skip');
+  assert.match(constrained.reason, /constraint the sampler cannot honor/);
+}
 
 /* ---- degree measures are read exactly as the grader reads them ---------- */
 // The engine folds `^\circ` onto one turn, so `-540^\circ` boxes to `-pi`

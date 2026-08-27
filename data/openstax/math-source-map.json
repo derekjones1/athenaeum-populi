@@ -42,7 +42,7 @@
       "upstreamChapters": 12,
       "upstreamSections": 73,
       "localChapters": 12,
-      "mappedSections": 35
+      "mappedSections": 41
     }
   },
   "sections": [
@@ -2169,6 +2169,60 @@
       "moduleId": "m49390",
       "sourceTitle": "Inverse Trigonometric Functions",
       "moduleSha256": "97c66042d3d978a570d83efdfdadffeafc00cd9e4145f29c54c87124aa724d53"
+    },
+    {
+      "localPath": "content/math/precalculus/07-trigonometric-identities-and-equations/01-simplifying-and-verifying-trigonometric-identities.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "7.1",
+      "moduleId": "m49393",
+      "sourceTitle": "Simplifying and Verifying Trigonometric Identities",
+      "moduleSha256": "127998ee2cb1b1aa44beb4df1bee6aab9b593dddaf3e7e919e1e047d2ef59747"
+    },
+    {
+      "localPath": "content/math/precalculus/07-trigonometric-identities-and-equations/02-sum-and-difference-identities.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "7.2",
+      "moduleId": "m49395",
+      "sourceTitle": "Sum and Difference Identities",
+      "moduleSha256": "b1d667f198a070590ded5a2a4ffdbb32c5c86d9b4cad8f3e3b0b1922fb19c64e"
+    },
+    {
+      "localPath": "content/math/precalculus/07-trigonometric-identities-and-equations/03-double-angle-half-angle-and-reduction-formulas.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "7.3",
+      "moduleId": "m49396",
+      "sourceTitle": "Double-Angle, Half-Angle, and Reduction Formulas",
+      "moduleSha256": "3ac803d81877dc0fb60f4a94ec5c17ec3b2df7b4eb033effd6845aed28d1b13e"
+    },
+    {
+      "localPath": "content/math/precalculus/07-trigonometric-identities-and-equations/04-sum-to-product-and-product-to-sum-formulas.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "7.4",
+      "moduleId": "m49397",
+      "sourceTitle": "Sum-to-Product and Product-to-Sum Formulas",
+      "moduleSha256": "518e82cad5d41cb19f9a3e5389d70d54c2c80817461c8be92df6d9178b1d2899"
+    },
+    {
+      "localPath": "content/math/precalculus/07-trigonometric-identities-and-equations/05-solving-trigonometric-equations.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "7.5",
+      "moduleId": "m49398",
+      "sourceTitle": "Solving Trigonometric Equations",
+      "moduleSha256": "bea40de87c9c0beb6555d8d6a29b59b133ee8f6836e324cf4f954ba2af1502b1"
+    },
+    {
+      "localPath": "content/math/precalculus/07-trigonometric-identities-and-equations/06-modeling-with-trigonometric-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "7.6",
+      "moduleId": "m49399",
+      "sourceTitle": "Modeling with Trigonometric Functions",
+      "moduleSha256": "9211168fa400315837f46b8b9b9d0ead5ea3a9e1fff631b3858523c897229e67"
     }
   ]
 }

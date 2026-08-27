@@ -1,302 +1,335 @@
 {
- "schemaVersion": 2,
- "targetCommits": {
-  "prealgebra-bundle": "38cae454e644abf9f0a623e876994553881597c9",
-  "college-algebra-bundle": "789b54099106b071d1d32bfcee454fed72eb4768"
- },
- "metadataDecisions": [
-  {
-   "localPath": "content/math/precalculus/02-linear-functions/04-fitting-linear-models-to-data.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49327",
-   "covers": [],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "CNX_Precalc_Figure_02_04_007"
-   ],
-   "rationale": "Figure 7 is a 21-panel Wikimedia correlation composite (credit: DenisBoigelot) plotting thousands of points per panel. It cannot be reproduced as accessible inline SVG under the no-file-backed-images rule, and it has no formula to render from. It is replaced by eight panels built from explicit point sets recorded in each figure's data-spec, spanning the same pedagogical range: r = 1 and r = -1 drawn exactly from y = 0.8x + 1 and y = 9 - 0.8x; r = 0.8, 0.4, 0.0, -0.4, -0.8 generated as y = 5 + 1.9(rho*z_x + sqrt(1-rho^2)*z_e) with z_e orthogonal to z_x, rounded to 0.1, and verified at r = 0.8065, 0.4009, 0.0082, -0.3908, -0.7984; and a nonlinear r = 0 panel from y = 8 - 0.28(x-5)^2 with symmetric jitter. The Wikimedia credit is retained in the attribution footer, which also discloses the substitution. This is a deliberate local replacement, not a transcription of the source figure: do not reverse it toward the composite in a later audit.",
-   "covers_note": "Empty by design. This adaptation is a figure substitution, not a title/objective/heading flag, so no audit flag adjudicates it; the entry exists as a durable record."
+  "schemaVersion": 2,
+  "targetCommits": {
+    "prealgebra-bundle": "38cae454e644abf9f0a623e876994553881597c9",
+    "college-algebra-bundle": "789b54099106b071d1d32bfcee454fed72eb4768"
   },
-  {
-   "localPath": "content/math/elementary-algebra/04-graphs/04-understand-slope-of-a-line.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m82483",
-   "covers": [
-    "objective-needs-review",
-    "heading-needs-review"
-   ],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Use geoboards to model slope"
-   ],
-   "rationale": "The attribution footer explicitly discloses that the geoboard activity was condensed into one accessible worked introduction to rise and run. The retained page still teaches the underlying objective."
-  },
-  {
-   "localPath": "content/math/elementary-algebra/07-factoring/04-factor-special-products.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m82528",
-   "covers": [
-    "objective-needs-review"
-   ],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Choose method to factor a polynomial completely"
-   ],
-   "rationale": "OpenStax lists this fourth objective but has no corresponding fourth instructional section heading. The local page repeatedly asks learners to factor completely while retaining all three source method sections."
-  },
-  {
-   "localPath": "content/math/prealgebra/02-the-language-of-algebra/03-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81271",
-   "covers": [
-    "heading-needs-review",
-    "objective-needs-review"
-   ],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Model the Subtraction Property of Equality"
-   ],
-   "rationale": "The attribution footer explicitly discloses replacement of the envelope-and-counters manipulative figures with a direct statement of the Subtraction Property. The local objectives list therefore carries five items where the source abstract has six."
-  },
-  {
-   "localPath": "content/math/prealgebra/03-integers/02-add-integers.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81276",
-   "covers": [
-    "heading-needs-review"
-   ],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Translate Word Phrases to Algebraic Expressions",
-    "Add Integers in Applications"
-   ],
-   "rationale": "The local page combines the two closely related source headings into one translated-phrases-and-applications section, consistent with its disclosed prose condensation."
-  },
-  {
-   "localPath": "content/math/prealgebra/09-math-models-and-geometry/06-solve-geometry-applications-volume-and-surface-area.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81328",
-   "covers": [
-    "heading-needs-review"
-   ],
-   "status": "omitted-approved",
-   "sourceItems": [
-    "Summary of Geometry Formulas"
-   ],
-   "rationale": "The attribution footer explicitly discloses omission of the end-of-chapter formula summary because every formula is retained where it is introduced."
-  },
-  {
-   "localPath": "content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81354",
-   "covers": [
-    "objective-needs-review"
-   ],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Graph a line given a point and the slope\nSolve slope applications"
-   ],
-   "rationale": "Upstream markup defect: the module's <md:abstract> packs two objectives into a single <item>, so the source parses as five objectives where the section teaches six. The local page has separate 'Graph a line given a point and the slope' and 'Solve slope applications' headings, matching the printed book, so the local objectives list carries six items. Do not collapse them back to match the malformed abstract."
-  },
-  {
-   "localPath": "content/math/elementary-algebra/01-foundations/06-add-and-subtract-fractions.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m82457",
-   "covers": [],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Try It: Evaluate $-\\tfrac{1}{2} - y$",
-    "Try It: Evaluate $3ab^2$"
-   ],
-   "rationale": "Two Try It exercises are revalued, not rewritten. Upstream evaluates $-\\tfrac12 - y$ at $y = -\\tfrac14$, whose answer $-\\tfrac14$ is the substituted value itself — a fixed point — and $3ab^2$ at $a = -\\tfrac23, b = -\\tfrac12$, whose answer $-\\tfrac12$ is the substituted $b$. In both, a learner who reads the printed substitution back into the box is graded correct without evaluating anything, and the replay gate (npm run verify:replay) fails the exercise for exactly that reason. The substituted values move to $y = -\\tfrac34$ (answer $\\tfrac14$) and $b = -\\tfrac13$ (answer $-\\tfrac29$); the expressions, the method, and the arithmetic difficulty are unchanged, and no printed span of either new prompt grades correct. Deliberate local revaluation: do not reverse it toward the upstream numbers in a later audit.",
-   "covers_note": "Empty by design. An exercise revaluation touches no baseline SHA, title, objective or heading, so source:check adjudicates no flag for it and this entry is the only durable record."
-  },
-  {
-   "localPath": "content/math/intermediate-algebra/01-foundations/03-fractions.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81359",
-   "covers": [],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Try It: Evaluate $3ab^2$"
-   ],
-   "rationale": "The same revaluation as the Elementary Algebra 1.6 copy of this Try It: upstream evaluates $3ab^2$ at $a = -\\tfrac23, b = -\\tfrac12$, and the answer $-\\tfrac12$ is the substituted $b$ read straight back off the prompt, so the exercise is passable without evaluating it. $b$ moves to $-\\tfrac13$ and the answer to $-\\tfrac29$; expression, method and difficulty are unchanged. Deliberate local revaluation: do not reverse it in a later audit.",
-   "covers_note": "Empty by design — an exercise revaluation raises no audit flag; see the Elementary Algebra 1.6 entry."
-  },
-  {
-   "localPath": "content/math/prealgebra/04-fractions/05-add-and-subtract-fractions-with-different-denominators.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81289",
-   "covers": [],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Try It: Evaluate $3ab^2$"
-   ],
-   "rationale": "The same revaluation as the Elementary Algebra 1.6 and Intermediate Algebra 1.3 copies of this Try It: the upstream answer $-\\tfrac12$ is the substituted $b$, so the printed prompt answers itself. $b$ moves to $-\\tfrac13$ and the answer to $-\\tfrac29$. Deliberate local revaluation: do not reverse it in a later audit.",
-   "covers_note": "Empty by design — an exercise revaluation raises no audit flag; see the Elementary Algebra 1.6 entry."
-  },
-  {
-   "localPath": "content/math/elementary-algebra/05-systems-of-linear-equations/01-solve-systems-of-equations-by-graphing.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m82490",
-   "covers": [],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Try It: determine whether an ordered pair is a solution of a system"
-   ],
-   "rationale": "One authored sub-exercise is revalued. It substituted $(0,0)$ into $x + 2y$ for the system $3x + y = 0, x + 2y = -5$, where the point satisfies the first equation but not the second — the pedagogical point — but the answer $0$ is also the substituted value, so a learner reading $x = 0$ off the prompt is graded correct, and the zero also hides the arithmetic behind the multiply-by-zero shortcut. The substitution moves to $(2,-6)$, which has the identical property (it satisfies $3x + y = 0$ and gives $-10 \\ne -5$) and requires the multiplication and addition to be carried out. Deliberate local revaluation: do not reverse it toward $(0,0)$ in a later audit.",
-   "covers_note": "Empty by design — an exercise revaluation raises no audit flag; see the Elementary Algebra 1.6 entry."
-  },
-  {
-   "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49353",
-   "covers": [
-    "heading-needs-review"
-   ],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Chapter Test",
-    "Chapter Review Exercises"
-   ],
-   "rationale": "Section 3.9 is the LAST section of chapter 3, and m49353 carries the whole chapter's end matter after its own section exercises: a 'Chapter Review Exercises' set and a 'Chapter Test'. The audit reads those as source headings with no local counterpart and raises heading-needs-review at 0% title similarity. They are deliberately absent: a chapter test covers all nine sections of chapter 3, so folding its items into 3.9's Practice block would attribute chapter-wide material to one section and hide the other eight sections' skills inside a variation page. The section-final Practice block draws only from the module's own '3.9 Section Exercises' set. If chapter-level assessment is wanted later it belongs in a Knowledge Check page, not here.",
-   "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap. Expect the same flag on the final section of every chapter whose module is packaged this way."
-  },
-  {
-   "localPath": "content/math/precalculus/05-trigonometric-functions/04-right-triangle-trigonometry.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49384",
-   "covers": [
-    "heading-needs-review"
-   ],
-   "status": "adapted-verified",
-   "sourceItems": [
-    "Review Exercises",
-    "Practice Test"
-   ],
-   "rationale": "Section 5.4 is the LAST section of chapter 5, and m49384 carries the whole chapter's end matter after its own Section Exercises: a 'Review Exercises' set (whose subsections link back to m49371, m49372, m49374 and m49384) and a 'Practice Test'; the printed book carries both under 'Chapter Review' (PDF pages 618 onward), after section 5.4 ends. The audit reads those as source headings of 5.4 with no local counterpart and raises heading-needs-review. They are deliberately absent: both cover all four sections of chapter 5, so folding their items into 5.4's Practice block would attribute chapter-wide material to one section and hide the other three sections' skills inside a right-triangle page. Section 5.4's own six headings are all present, in source order, and the section-final Practice block draws only from the module's own '5.4 Section Exercises' set. Do not 'resolve' this flag by transcribing chapter review material into the section page; chapter-level assessment belongs in a Knowledge Check page, not here. Same adjudication as content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md (m49353), whose covers_note predicted this recurrence.",
-   "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap."
-  }
- ],
- "upstreamDriftDecisions": [
-  {
-   "localPath": "content/math/elementary-algebra/01-foundations/02-use-the-language-of-algebra.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m82453",
-   "sourceElementIds": [
-    "fs-id1170655121545",
-    "fs-id1170655120589",
-    "fs-id1170655162128"
-   ],
-   "status": "retain-local-equivalent",
-   "rationale": "Current upstream swaps which rectangle dimension is six less than the other. The local PDF-era version is mathematically equivalent and internally consistent; the current upstream summary table still describes the older orientation."
-  },
-  {
-   "localPath": "content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/07-solve-linear-inequalities.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m82470",
-   "sourceElementIds": [
-    "fs-id1168345426388",
-    "fs-id1168345440730",
-    "fs-id1168341917017",
-    "fs-id1168345667902"
-   ],
-   "status": "retain-local-upstream-inconsistent",
-   "rationale": "Current upstream changes the right side from negative three-fifths to positive three-fifths but leaves a solution graphic saying contradiction/no solution. Positive three-fifths makes the inequality an identity. The local negative-three-fifths prompt and contradiction answer are mathematically correct and match the PDF-era source."
-  },
-  {
-   "localPath": "content/math/intermediate-algebra/01-foundations/01-use-the-language-of-algebra.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81422",
-   "sourceElementIds": [
-    "fs-id1167836606933",
-    "fs-id1167836606939",
-    "fs-id1167836606950"
-   ],
-   "status": "retain-local-equivalent",
-   "rationale": "Current upstream swaps which rectangle dimension is fourteen less than the other. The local PDF-era version is mathematically equivalent and internally consistent; the current upstream summary remains phrased for the older orientation."
-  },
-  {
-   "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49347",
-   "sourceElementIds": [
-    "ti_03_04_02",
-    "fs-id1165137932363",
-    "Figure_03_04_010"
-   ],
-   "status": "retain-local-equivalent",
-   "rationale": "Between the inferred PDF-era commit d1bd19c6 and the pinned review commit 789b5409, upstream changed this Try It's prompt from 'the function of degree 7' to 'degree 9' and updated nothing else. The edit contradicts the exercise's own printed solution, which gives a zero of -5 with multiplicity 3, a zero of -1 with multiplicity 2, and a zero of 3 with multiplicity 2 — summing to 7, not 9 — and it contradicts the figure's own alt text, which says 'degree 6'. Three different degrees now appear in one exercise. The PDF-era 'degree 7' is the reading consistent with the solution, with the drawn curve, and with the multiplicity arithmetic the exercise is teaching, so the local page retains it and carries a visible source note. Logged upstream in docs/openstax-errata.md. Do not apply the pinned commit's '9' in a later audit without upstream also fixing the solution."
-  }
- ],
- "sourceDefectDecisions": [
-  {
-   "localPath": "content/math/intermediate-algebra/02-solving-linear-equations/06-solve-compound-inequalities.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81367",
-   "sourceElementIds": [
-    "fs-id1167835322185"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 41,
-   "rationale": "The module's tiered-water-rate Try It prints the Conservation Usage bill ceiling as $52.12 and an Answer Key of 5-20 hcf. The two disagree: (52.12-24.72)/1.32 = 20.7575..., while the bill at exactly 20 hcf is 24.72+1.32(20) = 51.12. The lower bound is exact either way, (31.32-24.72)/1.32 = 5. This page prints $51.12 so the printed answer follows from the printed question; correcting the answer to 5-20.76 hcf would also be consistent but reads oddly against the parallel items. The parallel Normal Usage example in the same module is exact as printed ((57.06-24.72)/1.54 = 21 and (171.02-24.72)/1.54 = 95) and is transcribed unchanged. A visible Source note sits beside the exercise and the attribution footer discloses the correction."
-  },
-  {
-   "localPath": "content/math/intermediate-algebra/knowledge-check-07-12.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m81420",
-   "sourceElementIds": [
-    "exercise 341"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 16,
-   "rationale": "The module's IRA annuity exercise introduces Dave and then asks about \"Adam's\" account, naming a person it never defines. Only the name is defective: 450*((1+0.005)^564 - 1)/0.005 = 1409344.1866, matching the printed $1,409,344.19. This page writes \"Dave's\" throughout. A visible Source note sits beside the exercise and the attribution footer discloses the correction. localPath is a knowledge-check composite and is deliberately absent from math-source-map.json."
-  },
-  {
-   "localPath": "content/math/elementary-algebra/knowledge-check-06-10.md",
-   "bundle": "prealgebra-bundle",
-   "moduleId": "m82553",
-   "sourceElementIds": [
-    "fs-id1169595303723"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 42,
-   "rationale": "The module's 600-foot exercise drops the package to a lifeboat and then asks when it reached \"the hiker\", the recipient of its neighbour fs-id1169595265302 (the 900-foot variant, whose printed 7.5 seconds matches sqrt(900)/4). Only the recipient is defective: sqrt(600)/4 = 6.1237, matching the printed 6.1 seconds. This page writes \"the lifeboat\". A visible Source note sits beside the exercise and the attribution footer discloses the correction. localPath is a knowledge-check composite and is deliberately absent from math-source-map.json."
-  },
-  {
-   "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/03-power-functions-and-polynomial-functions.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49346",
-   "sourceElementIds": [
-    "fs-id1165137660222",
-    "fs-id1165134312227"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 43,
-   "rationale": "The module's Try It solution justifies its verdict with \"f(x) is a power function because it can be written as f(x) = 8x^4\", but the Try It's own function is f(x) = 2x^2 * 4x^3 = 8x^5. The two disagree at every x but 0 and 1; at x = 2 the product is 256 while 8x^4 is 128. The verdict is right and only the exponent is wrong, so this page writes 8x^5 and keeps the rest of the solution. A visible Source note sits beside the exercise and the attribution footer discloses the correction."
-  },
-  {
-   "localPath": "content/math/precalculus/04-exponential-and-logarithmic-functions/03-logarithmic-functions.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49363",
-   "sourceElementIds": [
-    "para-00002"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 35,
-   "rationale": "The module's common-logarithm notation sentence is wrong twice. It lists log_b(x) among the common-logarithm notations, though a base-b logarithm is not the common (base-10) logarithm the paragraph above defines; and it deprecates lg(x) for being unspecified, though ISO 80000-2 fixes lg at base 10 and it is bare log(x) that is ambiguous - which is exactly what the module's own preceding paragraph explains (log means log_2 in computer science and log_10 in mathematics). The first half was corrected during the chapter-4 authoring pass; the second followed on 2026-08-17, because after the first correction the sentence introduced log(x) as the common logarithm and then deprecated lg(x) for being unspecified, a contradiction sharper than the source's. This page writes \"log(x) or lg(x) as the common logarithm\" and \"Writing log(x) without specifying a base\". A visible Source note sits beside the paragraph and the attribution footer discloses the correction."
-  },
-  {
-   "localPath": "content/math/precalculus/05-trigonometric-functions/02-unit-circle-sine-and-cosine-functions.md",
-   "bundle": "college-algebra-bundle",
-   "moduleId": "m49372",
-   "sourceElementIds": [
-    "fs-id1165134258657",
-    "fs-id1165135264623"
-   ],
-   "status": "correct-local-source-defect",
-   "errataEntry": 44,
-   "rationale": "The module's reference-angle definition names the reference angle and the angle it is measured from with the same symbol t, so it reads \"the reference angle of t is t\" - false for every angle outside quadrant I, and contradicted both by the paragraph's own bound of 0 to 90 degrees and by its figure Figure_05_02_020, which draws the two as distinct rays. The same book one section earlier (m49371, fs-id1165135191896 and the Coterminal and Reference Angles note fs-id1165135246672) defines the term as t-prime in both places it states it, and this sentence opens \"Recall that\", so it is recalling that definition with the prime dropped. The primeless form recurs in the module's Key Concepts bullet and in the Verbal exercise solution fs-id1165135264623. This page writes t-prime in the running prose and in the Key concepts bullet, matching its own recreated reference-angle panels, which are labelled t-prime. A visible Source note sits beside the paragraph and the attribution footer discloses the correction."
-  }
- ]
+  "metadataDecisions": [
+    {
+      "localPath": "content/math/precalculus/02-linear-functions/04-fitting-linear-models-to-data.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49327",
+      "covers": [],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "CNX_Precalc_Figure_02_04_007"
+      ],
+      "rationale": "Figure 7 is a 21-panel Wikimedia correlation composite (credit: DenisBoigelot) plotting thousands of points per panel. It cannot be reproduced as accessible inline SVG under the no-file-backed-images rule, and it has no formula to render from. It is replaced by eight panels built from explicit point sets recorded in each figure's data-spec, spanning the same pedagogical range: r = 1 and r = -1 drawn exactly from y = 0.8x + 1 and y = 9 - 0.8x; r = 0.8, 0.4, 0.0, -0.4, -0.8 generated as y = 5 + 1.9(rho*z_x + sqrt(1-rho^2)*z_e) with z_e orthogonal to z_x, rounded to 0.1, and verified at r = 0.8065, 0.4009, 0.0082, -0.3908, -0.7984; and a nonlinear r = 0 panel from y = 8 - 0.28(x-5)^2 with symmetric jitter. The Wikimedia credit is retained in the attribution footer, which also discloses the substitution. This is a deliberate local replacement, not a transcription of the source figure: do not reverse it toward the composite in a later audit.",
+      "covers_note": "Empty by design. This adaptation is a figure substitution, not a title/objective/heading flag, so no audit flag adjudicates it; the entry exists as a durable record."
+    },
+    {
+      "localPath": "content/math/elementary-algebra/04-graphs/04-understand-slope-of-a-line.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m82483",
+      "covers": [
+        "objective-needs-review",
+        "heading-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Use geoboards to model slope"
+      ],
+      "rationale": "The attribution footer explicitly discloses that the geoboard activity was condensed into one accessible worked introduction to rise and run. The retained page still teaches the underlying objective."
+    },
+    {
+      "localPath": "content/math/elementary-algebra/07-factoring/04-factor-special-products.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m82528",
+      "covers": [
+        "objective-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Choose method to factor a polynomial completely"
+      ],
+      "rationale": "OpenStax lists this fourth objective but has no corresponding fourth instructional section heading. The local page repeatedly asks learners to factor completely while retaining all three source method sections."
+    },
+    {
+      "localPath": "content/math/prealgebra/02-the-language-of-algebra/03-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81271",
+      "covers": [
+        "heading-needs-review",
+        "objective-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Model the Subtraction Property of Equality"
+      ],
+      "rationale": "The attribution footer explicitly discloses replacement of the envelope-and-counters manipulative figures with a direct statement of the Subtraction Property. The local objectives list therefore carries five items where the source abstract has six."
+    },
+    {
+      "localPath": "content/math/prealgebra/03-integers/02-add-integers.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81276",
+      "covers": [
+        "heading-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Translate Word Phrases to Algebraic Expressions",
+        "Add Integers in Applications"
+      ],
+      "rationale": "The local page combines the two closely related source headings into one translated-phrases-and-applications section, consistent with its disclosed prose condensation."
+    },
+    {
+      "localPath": "content/math/prealgebra/09-math-models-and-geometry/06-solve-geometry-applications-volume-and-surface-area.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81328",
+      "covers": [
+        "heading-needs-review"
+      ],
+      "status": "omitted-approved",
+      "sourceItems": [
+        "Summary of Geometry Formulas"
+      ],
+      "rationale": "The attribution footer explicitly discloses omission of the end-of-chapter formula summary because every formula is retained where it is introduced."
+    },
+    {
+      "localPath": "content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81354",
+      "covers": [
+        "objective-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Graph a line given a point and the slope\nSolve slope applications"
+      ],
+      "rationale": "Upstream markup defect: the module's <md:abstract> packs two objectives into a single <item>, so the source parses as five objectives where the section teaches six. The local page has separate 'Graph a line given a point and the slope' and 'Solve slope applications' headings, matching the printed book, so the local objectives list carries six items. Do not collapse them back to match the malformed abstract."
+    },
+    {
+      "localPath": "content/math/elementary-algebra/01-foundations/06-add-and-subtract-fractions.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m82457",
+      "covers": [],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Try It: Evaluate $-\\tfrac{1}{2} - y$",
+        "Try It: Evaluate $3ab^2$"
+      ],
+      "rationale": "Two Try It exercises are revalued, not rewritten. Upstream evaluates $-\\tfrac12 - y$ at $y = -\\tfrac14$, whose answer $-\\tfrac14$ is the substituted value itself — a fixed point — and $3ab^2$ at $a = -\\tfrac23, b = -\\tfrac12$, whose answer $-\\tfrac12$ is the substituted $b$. In both, a learner who reads the printed substitution back into the box is graded correct without evaluating anything, and the replay gate (npm run verify:replay) fails the exercise for exactly that reason. The substituted values move to $y = -\\tfrac34$ (answer $\\tfrac14$) and $b = -\\tfrac13$ (answer $-\\tfrac29$); the expressions, the method, and the arithmetic difficulty are unchanged, and no printed span of either new prompt grades correct. Deliberate local revaluation: do not reverse it toward the upstream numbers in a later audit.",
+      "covers_note": "Empty by design. An exercise revaluation touches no baseline SHA, title, objective or heading, so source:check adjudicates no flag for it and this entry is the only durable record."
+    },
+    {
+      "localPath": "content/math/intermediate-algebra/01-foundations/03-fractions.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81359",
+      "covers": [],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Try It: Evaluate $3ab^2$"
+      ],
+      "rationale": "The same revaluation as the Elementary Algebra 1.6 copy of this Try It: upstream evaluates $3ab^2$ at $a = -\\tfrac23, b = -\\tfrac12$, and the answer $-\\tfrac12$ is the substituted $b$ read straight back off the prompt, so the exercise is passable without evaluating it. $b$ moves to $-\\tfrac13$ and the answer to $-\\tfrac29$; expression, method and difficulty are unchanged. Deliberate local revaluation: do not reverse it in a later audit.",
+      "covers_note": "Empty by design — an exercise revaluation raises no audit flag; see the Elementary Algebra 1.6 entry."
+    },
+    {
+      "localPath": "content/math/prealgebra/04-fractions/05-add-and-subtract-fractions-with-different-denominators.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81289",
+      "covers": [],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Try It: Evaluate $3ab^2$"
+      ],
+      "rationale": "The same revaluation as the Elementary Algebra 1.6 and Intermediate Algebra 1.3 copies of this Try It: the upstream answer $-\\tfrac12$ is the substituted $b$, so the printed prompt answers itself. $b$ moves to $-\\tfrac13$ and the answer to $-\\tfrac29$. Deliberate local revaluation: do not reverse it in a later audit.",
+      "covers_note": "Empty by design — an exercise revaluation raises no audit flag; see the Elementary Algebra 1.6 entry."
+    },
+    {
+      "localPath": "content/math/elementary-algebra/05-systems-of-linear-equations/01-solve-systems-of-equations-by-graphing.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m82490",
+      "covers": [],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Try It: determine whether an ordered pair is a solution of a system"
+      ],
+      "rationale": "One authored sub-exercise is revalued. It substituted $(0,0)$ into $x + 2y$ for the system $3x + y = 0, x + 2y = -5$, where the point satisfies the first equation but not the second — the pedagogical point — but the answer $0$ is also the substituted value, so a learner reading $x = 0$ off the prompt is graded correct, and the zero also hides the arithmetic behind the multiply-by-zero shortcut. The substitution moves to $(2,-6)$, which has the identical property (it satisfies $3x + y = 0$ and gives $-10 \\ne -5$) and requires the multiplication and addition to be carried out. Deliberate local revaluation: do not reverse it toward $(0,0)$ in a later audit.",
+      "covers_note": "Empty by design — an exercise revaluation raises no audit flag; see the Elementary Algebra 1.6 entry."
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49353",
+      "covers": [
+        "heading-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Chapter Test",
+        "Chapter Review Exercises"
+      ],
+      "rationale": "Section 3.9 is the LAST section of chapter 3, and m49353 carries the whole chapter's end matter after its own section exercises: a 'Chapter Review Exercises' set and a 'Chapter Test'. The audit reads those as source headings with no local counterpart and raises heading-needs-review at 0% title similarity. They are deliberately absent: a chapter test covers all nine sections of chapter 3, so folding its items into 3.9's Practice block would attribute chapter-wide material to one section and hide the other eight sections' skills inside a variation page. The section-final Practice block draws only from the module's own '3.9 Section Exercises' set. If chapter-level assessment is wanted later it belongs in a Knowledge Check page, not here.",
+      "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap. Expect the same flag on the final section of every chapter whose module is packaged this way."
+    },
+    {
+      "localPath": "content/math/precalculus/05-trigonometric-functions/04-right-triangle-trigonometry.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49384",
+      "covers": [
+        "heading-needs-review"
+      ],
+      "status": "adapted-verified",
+      "sourceItems": [
+        "Review Exercises",
+        "Practice Test"
+      ],
+      "rationale": "Section 5.4 is the LAST section of chapter 5, and m49384 carries the whole chapter's end matter after its own Section Exercises: a 'Review Exercises' set (whose subsections link back to m49371, m49372, m49374 and m49384) and a 'Practice Test'; the printed book carries both under 'Chapter Review' (PDF pages 618 onward), after section 5.4 ends. The audit reads those as source headings of 5.4 with no local counterpart and raises heading-needs-review. They are deliberately absent: both cover all four sections of chapter 5, so folding their items into 5.4's Practice block would attribute chapter-wide material to one section and hide the other three sections' skills inside a right-triangle page. Section 5.4's own six headings are all present, in source order, and the section-final Practice block draws only from the module's own '5.4 Section Exercises' set. Do not 'resolve' this flag by transcribing chapter review material into the section page; chapter-level assessment belongs in a Knowledge Check page, not here. Same adjudication as content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md (m49353), whose covers_note predicted this recurrence.",
+      "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap."
+    }
+  ],
+  "upstreamDriftDecisions": [
+    {
+      "localPath": "content/math/elementary-algebra/01-foundations/02-use-the-language-of-algebra.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m82453",
+      "sourceElementIds": [
+        "fs-id1170655121545",
+        "fs-id1170655120589",
+        "fs-id1170655162128"
+      ],
+      "status": "retain-local-equivalent",
+      "rationale": "Current upstream swaps which rectangle dimension is six less than the other. The local PDF-era version is mathematically equivalent and internally consistent; the current upstream summary table still describes the older orientation."
+    },
+    {
+      "localPath": "content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/07-solve-linear-inequalities.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m82470",
+      "sourceElementIds": [
+        "fs-id1168345426388",
+        "fs-id1168345440730",
+        "fs-id1168341917017",
+        "fs-id1168345667902"
+      ],
+      "status": "retain-local-upstream-inconsistent",
+      "rationale": "Current upstream changes the right side from negative three-fifths to positive three-fifths but leaves a solution graphic saying contradiction/no solution. Positive three-fifths makes the inequality an identity. The local negative-three-fifths prompt and contradiction answer are mathematically correct and match the PDF-era source."
+    },
+    {
+      "localPath": "content/math/intermediate-algebra/01-foundations/01-use-the-language-of-algebra.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81422",
+      "sourceElementIds": [
+        "fs-id1167836606933",
+        "fs-id1167836606939",
+        "fs-id1167836606950"
+      ],
+      "status": "retain-local-equivalent",
+      "rationale": "Current upstream swaps which rectangle dimension is fourteen less than the other. The local PDF-era version is mathematically equivalent and internally consistent; the current upstream summary remains phrased for the older orientation."
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49347",
+      "sourceElementIds": [
+        "ti_03_04_02",
+        "fs-id1165137932363",
+        "Figure_03_04_010"
+      ],
+      "status": "retain-local-equivalent",
+      "rationale": "Between the inferred PDF-era commit d1bd19c6 and the pinned review commit 789b5409, upstream changed this Try It's prompt from 'the function of degree 7' to 'degree 9' and updated nothing else. The edit contradicts the exercise's own printed solution, which gives a zero of -5 with multiplicity 3, a zero of -1 with multiplicity 2, and a zero of 3 with multiplicity 2 — summing to 7, not 9 — and it contradicts the figure's own alt text, which says 'degree 6'. Three different degrees now appear in one exercise. The PDF-era 'degree 7' is the reading consistent with the solution, with the drawn curve, and with the multiplicity arithmetic the exercise is teaching, so the local page retains it and carries a visible source note. Logged upstream in docs/openstax-errata.md. Do not apply the pinned commit's '9' in a later audit without upstream also fixing the solution."
+    }
+  ],
+  "sourceDefectDecisions": [
+    {
+      "localPath": "content/math/intermediate-algebra/02-solving-linear-equations/06-solve-compound-inequalities.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81367",
+      "sourceElementIds": [
+        "fs-id1167835322185"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 41,
+      "rationale": "The module's tiered-water-rate Try It prints the Conservation Usage bill ceiling as $52.12 and an Answer Key of 5-20 hcf. The two disagree: (52.12-24.72)/1.32 = 20.7575..., while the bill at exactly 20 hcf is 24.72+1.32(20) = 51.12. The lower bound is exact either way, (31.32-24.72)/1.32 = 5. This page prints $51.12 so the printed answer follows from the printed question; correcting the answer to 5-20.76 hcf would also be consistent but reads oddly against the parallel items. The parallel Normal Usage example in the same module is exact as printed ((57.06-24.72)/1.54 = 21 and (171.02-24.72)/1.54 = 95) and is transcribed unchanged. A visible Source note sits beside the exercise and the attribution footer discloses the correction."
+    },
+    {
+      "localPath": "content/math/intermediate-algebra/knowledge-check-07-12.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m81420",
+      "sourceElementIds": [
+        "exercise 341"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 16,
+      "rationale": "The module's IRA annuity exercise introduces Dave and then asks about \"Adam's\" account, naming a person it never defines. Only the name is defective: 450*((1+0.005)^564 - 1)/0.005 = 1409344.1866, matching the printed $1,409,344.19. This page writes \"Dave's\" throughout. A visible Source note sits beside the exercise and the attribution footer discloses the correction. localPath is a knowledge-check composite and is deliberately absent from math-source-map.json."
+    },
+    {
+      "localPath": "content/math/elementary-algebra/knowledge-check-06-10.md",
+      "bundle": "prealgebra-bundle",
+      "moduleId": "m82553",
+      "sourceElementIds": [
+        "fs-id1169595303723"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 42,
+      "rationale": "The module's 600-foot exercise drops the package to a lifeboat and then asks when it reached \"the hiker\", the recipient of its neighbour fs-id1169595265302 (the 900-foot variant, whose printed 7.5 seconds matches sqrt(900)/4). Only the recipient is defective: sqrt(600)/4 = 6.1237, matching the printed 6.1 seconds. This page writes \"the lifeboat\". A visible Source note sits beside the exercise and the attribution footer discloses the correction. localPath is a knowledge-check composite and is deliberately absent from math-source-map.json."
+    },
+    {
+      "localPath": "content/math/precalculus/03-polynomial-and-rational-functions/03-power-functions-and-polynomial-functions.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49346",
+      "sourceElementIds": [
+        "fs-id1165137660222",
+        "fs-id1165134312227"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 43,
+      "rationale": "The module's Try It solution justifies its verdict with \"f(x) is a power function because it can be written as f(x) = 8x^4\", but the Try It's own function is f(x) = 2x^2 * 4x^3 = 8x^5. The two disagree at every x but 0 and 1; at x = 2 the product is 256 while 8x^4 is 128. The verdict is right and only the exponent is wrong, so this page writes 8x^5 and keeps the rest of the solution. A visible Source note sits beside the exercise and the attribution footer discloses the correction."
+    },
+    {
+      "localPath": "content/math/precalculus/04-exponential-and-logarithmic-functions/03-logarithmic-functions.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49363",
+      "sourceElementIds": [
+        "para-00002"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 35,
+      "rationale": "The module's common-logarithm notation sentence is wrong twice. It lists log_b(x) among the common-logarithm notations, though a base-b logarithm is not the common (base-10) logarithm the paragraph above defines; and it deprecates lg(x) for being unspecified, though ISO 80000-2 fixes lg at base 10 and it is bare log(x) that is ambiguous - which is exactly what the module's own preceding paragraph explains (log means log_2 in computer science and log_10 in mathematics). The first half was corrected during the chapter-4 authoring pass; the second followed on 2026-08-17, because after the first correction the sentence introduced log(x) as the common logarithm and then deprecated lg(x) for being unspecified, a contradiction sharper than the source's. This page writes \"log(x) or lg(x) as the common logarithm\" and \"Writing log(x) without specifying a base\". A visible Source note sits beside the paragraph and the attribution footer discloses the correction."
+    },
+    {
+      "localPath": "content/math/precalculus/05-trigonometric-functions/02-unit-circle-sine-and-cosine-functions.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49372",
+      "sourceElementIds": [
+        "fs-id1165134258657",
+        "fs-id1165135264623"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 44,
+      "rationale": "The module's reference-angle definition names the reference angle and the angle it is measured from with the same symbol t, so it reads \"the reference angle of t is t\" - false for every angle outside quadrant I, and contradicted both by the paragraph's own bound of 0 to 90 degrees and by its figure Figure_05_02_020, which draws the two as distinct rays. The same book one section earlier (m49371, fs-id1165135191896 and the Coterminal and Reference Angles note fs-id1165135246672) defines the term as t-prime in both places it states it, and this sentence opens \"Recall that\", so it is recalling that definition with the prime dropped. The primeless form recurs in the module's Key Concepts bullet and in the Verbal exercise solution fs-id1165135264623. This page writes t-prime in the running prose and in the Key concepts bullet, matching its own recreated reference-angle panels, which are labelled t-prime. A visible Source note sits beside the paragraph and the attribution footer discloses the correction."
+    },
+    {
+      "localPath": "content/math/precalculus/07-trigonometric-identities-and-equations/02-sum-and-difference-identities.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49395",
+      "sourceElementIds": [
+        "fs-id2260064"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 51,
+      "rationale": "Example 10 asks to show tan(theta) = (m2-m1)/(1+m1m2) for the acute angle between two lines, but its own worked solution sets theta = theta1 - theta2 and derives (m1-m2)/(1+m1m2) - the negative of the stated goal - and its figure draws theta1 > theta2, matching the derivation. Confirmed in the raw CNXML and the printed PDF (folio 697 / PDF page 707). The local page states the goal the solution actually proves ((m1-m2)/(1+m1m2)), keeps the source's derivation verbatim, places a visible Source note beside the statement, and discloses the correction in the attribution footer. No graded item depends on the sign."
+    },
+    {
+      "localPath": "content/math/precalculus/07-trigonometric-identities-and-equations/03-double-angle-half-angle-and-reduction-formulas.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49396",
+      "sourceElementIds": [
+        "ti_07_03_01"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 52,
+      "rationale": "The Try It prints 'with theta in quadrant I' inside a problem whose given (sin alpha = 5/8), ask (cos(2 alpha)), and printed solution (7/32) are all stated in alpha; no theta exists elsewhere in the item. Confirmed in the raw CNXML and the printed PDF (folio 693 / PDF page 703), with the arithmetic independently reproduced (1 - 2*(5/8)^2 = 7/32). The local page states alpha throughout, with a visible Source note beside the item."
+    },
+    {
+      "localPath": "content/math/precalculus/07-trigonometric-identities-and-equations/06-modeling-with-trigonometric-functions.md",
+      "bundle": "college-algebra-bundle",
+      "moduleId": "m49399",
+      "sourceElementIds": [
+        "ti_07_06_04"
+      ],
+      "status": "correct-local-source-defect",
+      "errataEntry": 53,
+      "rationale": "The Try It's printed key (initial displacement 6, damping constant -6) contradicts its own equation f(t)=5e^{-6t}cos(4t): under the module's model f(t)=a e^{-ct} cos(omega t), a=5 (6 appears nowhere in the equation) and the module's own sign convention keys the damping constant positive (its spring example answers ln(2)/3). Frequency 2/pi is correct as printed. Confirmed in raw CNXML and PDF. A graded answer that would mark a correct learner wrong, so the local page keys 5, 6, 2/pi, names the model explicitly in the question, and discloses the correction in the footer."
+    }
+  ]
 }

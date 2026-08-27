@@ -2,31 +2,25 @@
 title: Trigonometric Identities and Equations
 description: Simplifying and verifying identities, sum and difference identities, double-angle and half-angle formulas, solving trigonometric equations, and modeling.
 source_chapter: "7"
-authoring_status: scaffolded
 weight: 8
 ---
 
-This chapter is scaffolded but not yet written. Its provenance is pinned to
-OpenStax Precalculus 2e chapter 7, which covers simplifying and verifying
-identities, sum and difference identities, double-angle and half-angle
-formulas, solving trigonometric equations, and modeling.
+Math is everywhere, even in places we might not immediately recognize. For
+example, mathematical relationships describe the transmission of images,
+light, and sound. In this chapter, we discuss how to manipulate trigonometric
+equations algebraically by applying various formulas and trigonometric
+identities, and investigate some of the ways that trigonometric equations are
+used to model real-life phenomena.
 
 ## Sections
 
-No section pages are published yet. Each one is listed here as it is
-authored, in the order shown in the roadmap below.
-
-## Upstream roadmap
-
-The pinned source maps this chapter to 6 numbered sections:
-
-- 7.1 Simplifying and Verifying Trigonometric Identities
-- 7.2 Sum and Difference Identities
-- 7.3 Double-Angle, Half-Angle, and Reduction Formulas
-- 7.4 Sum-to-Product and Product-to-Sum Formulas
-- 7.5 Solving Trigonometric Equations
-- 7.6 Modeling with Trigonometric Functions
+- **Simplifying and Verifying Trigonometric Identities** — verify the fundamental trigonometric identities and use algebra with the Pythagorean, reciprocal, quotient, and even-odd identities to simplify trigonometric expressions.
+- **Sum and Difference Identities** — use the sum and difference formulas for cosine, sine, and tangent to evaluate exact values, rewrite expressions, apply cofunction identities, and verify identities.
+- **Double-Angle, Half-Angle, and Reduction Formulas** — use double-angle formulas to evaluate and verify, reduction formulas to lower powers, and half-angle formulas with quadrant-determined signs to find exact values.
+- **Sum-to-Product and Product-to-Sum Formulas** — express products of sines and cosines as sums and sums as products, evaluate exact values, and verify identities with the conversion formulas.
+- **Solving Trigonometric Equations** — solve linear, quadratic-form, multiple-angle, and identity-based trigonometric equations exactly on an interval or in general form, with a calculator when needed, and in right-triangle applications.
+- **Modeling with Trigonometric Functions** — determine amplitude and period, fit sinusoidal functions to data and scenarios, and model simple and damped harmonic motion with bounding curves.
 
 ---
 
-<small>The section roadmap above lists the numbered section titles of [Precalculus 2e, Chapter 7](https://openstax.org/books/precalculus-2e/pages/7-introduction) by Jay Abramson, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e). It records the chapter structure this book is being written against; no section pages are published yet.</small>
+<small>The sections above are adapted from [Precalculus 2e, Chapter 7](https://openstax.org/books/precalculus-2e/pages/7-introduction) by Jay Abramson, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/precalculus-2e).</small>

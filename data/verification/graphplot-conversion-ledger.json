@@ -1,6 +1,10 @@
 {
  "schemaVersion": 1,
  "entries": {
+  "00ecceab9a68123a": {
+   "verdict": "keep",
+   "note": "Graph-comparison ask over two sinusoid curves (sin 2x vs 2 sin x cos x); no graphplot answer form grades a curve as a curve, and the item's skill is recognizing the identity, not producing a graph. Same adjudication class as the chapter-6 trig-curve keeps."
+  },
   "0253b0a8861d75ac": {
    "verdict": "keep",
    "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
