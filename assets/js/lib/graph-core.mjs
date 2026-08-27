@@ -73,11 +73,22 @@
  *             quadratics, cubics, circles, polylines, or curves.
  *             arrows default false and may be true, 'start', or 'end'
  *   curves:   [{ kind:'sqrt'|'cbrt'|'reciprocal'|'reciprocal-squared'|'sine'
+ *                     |'cosine'|'tangent'|'secant'|'cosecant'|'cotangent'
+ *                     |'arcsine'|'arccosine'|'arctangent'
  *                     |'exp'|'log'|'logistic',
  *                a?, h?, k?, b?, c?, reflect?, from?, to?, dashed?, arrows? }]
  *             named analytic curves a·f(x−h)+k sampled from their exact
  *             equations. 'sine' draws k + a·sin(b·(x−h)) with angular
- *             frequency b (default 1); 'exp' draws k + a·b^(x−h) and 'log'
+ *             frequency b (default 1); 'cosine', 'tangent', 'secant',
+ *             'cosecant', and 'cotangent' do the same for their functions,
+ *             with each branch of the asymptotic four splitting on its own
+ *             wherever the curve leaves the grid (draw the dashed vertical
+ *             asymptotes themselves as `lines`). 'arcsine' draws
+ *             k + a·arcsin(b·(x−h)) on its closed domain |b·(x−h)| ≤ 1 and
+ *             'arccosine' k + a·arccos(b·(x−h)), both sampled parametrically
+ *             so the vertical tangents at the domain endpoints stay smooth;
+ *             'arctangent' draws k + a·arctan(b·(x−h)) with its horizontal
+ *             asymptotes approached, never touched. 'exp' draws k + a·b^(x−h) and 'log'
  *             draws k + a·log_b(x−h), both with base b (default e), the log
  *             sampled in y so its vertical tangent stays smooth.
  *             'log' also takes reflect:true, mirroring the branch about its
@@ -747,7 +758,7 @@ export function buildGraph(props) {
   // the rendered curve cannot overshoot a stated minimum or maximum.
   for (const curve of smoothCurves) {
     if (curve.freeform !== true) {
-      throw new Error('smoothCurves is spline interpolation for genuinely freeform source art and requires an explicit freeform: true — draw a known or generic shape from an analytic primitive instead (quadratics, cubics, circles, hyperbolas, polylines, or curves with kind sqrt/cbrt/reciprocal/reciprocal-squared/sine/exp/log/logistic)')
+      throw new Error('smoothCurves is spline interpolation for genuinely freeform source art and requires an explicit freeform: true — draw a known or generic shape from an analytic primitive instead (quadratics, cubics, circles, hyperbolas, polylines, or curves with kind sqrt/cbrt/reciprocal/reciprocal-squared/sine/cosine/tangent/secant/cosecant/cotangent/arcsine/arccosine/arctangent/exp/log/logistic)')
     }
     const through = curve.through
     if (!Array.isArray(through) || through.length < 2) throw new Error('smoothCurve needs at least two through points')
@@ -927,12 +938,49 @@ export function buildGraph(props) {
         pointAt: (t) => [h + t * t * t, k + a * t], errorName: 'cbrt curve',
         toIndependent: (x) => Math.cbrt(x - h),
       })
-    } else if (c.kind === 'sine') {
+    } else if (c.kind === 'sine' || c.kind === 'cosine' || c.kind === 'tangent'
+      || c.kind === 'secant' || c.kind === 'cosecant' || c.kind === 'cotangent'
+      || c.kind === 'arctangent') {
+      // The direct trig kinds, all sampled in x as k + a·f(b·(x−h)). The
+      // asymptotic four (tangent, secant, cosecant, cotangent) need no pole
+      // handling of their own: near a pole the value leaves [yMin, yMax] and
+      // the run splits there, exactly as reciprocal branches do. Arctangent
+      // is bounded, so it samples the same way with no branches at all.
       const b = c.b ?? 1
-      if (!Number.isFinite(b) || b === 0) throw new Error('sine curve needs a nonzero numeric b (angular frequency)')
+      if (!Number.isFinite(b) || b === 0) throw new Error(`${c.kind} curve needs a nonzero numeric b (angular frequency)`)
+      const f = {
+        sine: Math.sin,
+        cosine: Math.cos,
+        tangent: Math.tan,
+        secant: (t) => 1 / Math.cos(t),
+        cosecant: (t) => 1 / Math.sin(t),
+        cotangent: (t) => Math.cos(t) / Math.sin(t),
+        arctangent: Math.atan,
+      }[c.kind]
       drawPolynomialCurve(spec, {
         independentMin: xMin, independentMax: xMax,
-        pointAt: (x) => [x, k + a * Math.sin(b * (x - h))], errorName: 'sine curve',
+        pointAt: (x) => [x, k + a * f(b * (x - h))], errorName: `${c.kind} curve`,
+      })
+    } else if (c.kind === 'arcsine' || c.kind === 'arccosine') {
+      // k + a·arcsin(b·(x−h)) on the closed domain |b·(x−h)| ≤ 1, sampled
+      // parametrically in the angle t so the vertical tangents at the domain
+      // endpoints stay smooth (the sqrt-kind trick). x runs with t for
+      // arcsine (b > 0), against it for arccosine — the clamp swap that
+      // independentDecreasing exists for.
+      const b = c.b ?? 1
+      if (!Number.isFinite(b) || b === 0) throw new Error(`${c.kind} curve needs a nonzero numeric b`)
+      const isArcsine = c.kind === 'arcsine'
+      const [tMin, tMax] = isArcsine ? [-Math.PI / 2, Math.PI / 2] : [0, Math.PI]
+      const xOfT = isArcsine ? Math.sin : Math.cos
+      const tOfX = isArcsine ? Math.asin : Math.acos
+      // The domain endpoints are real endpoints of the function, not a place
+      // the grid cut it off, so arrows default off (an arrowhead would also
+      // trim the stroke short of the endpoint it exists to reach).
+      drawPolynomialCurve({ arrows: false, ...spec }, {
+        independentMin: tMin, independentMax: tMax,
+        pointAt: (t) => [h + xOfT(t) / b, k + a * t], errorName: `${c.kind} curve`,
+        toIndependent: (x) => tOfX(Math.max(-1, Math.min(1, b * (x - h)))),
+        independentDecreasing: isArcsine ? b < 0 : b > 0,
       })
     } else if (c.kind === 'exp') {
       const b = c.b ?? Math.E

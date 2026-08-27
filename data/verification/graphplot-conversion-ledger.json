@@ -1,6 +1,14 @@
 {
  "schemaVersion": 1,
  "entries": {
+  "0253b0a8861d75ac": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
+  },
+  "032b7aacce535901": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
+  },
   "039ebe80d65de61b": {
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
@@ -20,6 +28,10 @@
   "064d1e72eb6b45ec": {
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "069ac07670cbeb83": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
   },
   "072000ce647a9683": {
    "verdict": "keep",
@@ -173,6 +185,10 @@
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
   },
+  "21163bd39056badd": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
+  },
   "2201678ee7e3e0db": {
    "verdict": "keep",
    "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
@@ -297,6 +313,10 @@
    "verdict": "keep",
    "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
   },
+  "36b60e9275a98ea7": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
+  },
   "37d04ecc38fe8fdc": {
    "verdict": "keep",
    "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
@@ -353,6 +373,10 @@
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
   },
+  "3fcb79ec6240de71": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
+  },
   "4090a23e285c43d0": {
    "verdict": "keep",
    "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
@@ -392,6 +416,10 @@
   "46de94ce02667bd3": {
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "499d81d383e78f67": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
   },
   "4c6b1dadc8851f30": {
    "verdict": "keep",
@@ -560,6 +588,14 @@
   "6b5fa3a1bb435011": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "6bb5ce36f42a7c2c": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
+  },
+  "6d54848e9e31be9e": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
   },
   "6f4b2b61c74c103c": {
    "verdict": "keep",
@@ -873,6 +909,10 @@
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
   },
+  "a922832eb7a6513a": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
+  },
   "aa62fccc6765c232": {
    "verdict": "keep",
    "note": "quadrant: the graded ask is which quadrant the point falls in, not where it goes on the grid; this section's plotting itself is covered by its own recognition multiple choice"
@@ -884,6 +924,10 @@
   "aadfb919e519e47c": {
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "ab3e52f68ba32647": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
   },
   "adb21612b443e696": {
    "verdict": "keep",
@@ -929,6 +973,10 @@
    "verdict": "keep",
    "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
   },
+  "b4d4c1e9343c41d3": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
+  },
   "b54bdbd48491632f": {
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
@@ -936,6 +984,10 @@
   "b5920dd9839395b9": {
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "b5a7880291013911": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
   },
   "b5b9bdc69909e479": {
    "verdict": "keep",
@@ -968,6 +1020,10 @@
   "b894350a757c920d": {
    "verdict": "keep",
    "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
+  },
+  "b95556e8f3bbde10": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
   },
   "b95b3cce9430328d": {
    "verdict": "keep",
@@ -1004,6 +1060,10 @@
   "bcf4a42a0d8a1ab0": {
    "verdict": "keep",
    "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "bdedc937036458d6": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
   },
   "be7644bf81257e86": {
    "verdict": "keep",
@@ -1064,6 +1124,10 @@
   "c51114b08023a80c": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "c523115c4bb7ee19": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
   },
   "c7f7619312ecaf6e": {
    "verdict": "keep",
@@ -1197,6 +1261,10 @@
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
   },
+  "e11ee7438879ad3a": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
+  },
   "e13ef7bb348bf920": {
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
@@ -1320,6 +1388,10 @@
   "faa9c3c2c49ae808": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "fb831ea69a11407e": {
+   "verdict": "keep",
+   "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
   },
   "fd03a245e6a71aad": {
    "verdict": "keep",

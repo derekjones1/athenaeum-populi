@@ -1443,7 +1443,7 @@ export function lintHugo(src, filename = '') {
   for (const m of htmlMediaSrc.matchAll(openTagRe('path'))) {
     if (!/(?:^|[\s\d.])C[\s\d.]/.test(htmlAttribute(m[0], 'd'))) continue;
     if (acknowledgedFreeform.some(([from, to]) => m.index > from && m.index < to)) continue;
-    err(m.index, 'figure curve is spline-interpolated (smoothCurves output) — regenerate it from an analytic primitive (quadratics, cubics, circles, hyperbolas, polylines, or curves kind sqrt/cbrt/reciprocal/reciprocal-squared/sine/exp/log/logistic); reserve smoothCurves (freeform: true) for source art with no formula, declared in a data-spec');
+    err(m.index, 'figure curve is spline-interpolated (smoothCurves output) — regenerate it from an analytic primitive (quadratics, cubics, circles, hyperbolas, polylines, or curves kind sqrt/cbrt/reciprocal/reciprocal-squared/sine/cosine/tangent/secant/cosecant/cotangent/arcsine/arccosine/arctangent/exp/log/logistic); reserve smoothCurves (freeform: true) for source art with no formula, declared in a data-spec');
   }
 
   for (const m of mediaSrc.matchAll(/\*\*Solution\.\*\*[ \t]*(?:\r?\n[ \t]*)+(?=(?:\{\{<\s*(?:fillin|multiplechoice|graphplot)\b|#{1,6}\s|---[ \t]*$|(?![\s\S])))/gm)) {

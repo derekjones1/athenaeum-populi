@@ -1058,9 +1058,18 @@ their own objects — author them as dashed `lines` and `segments`),
 `polylines`
 (straight joins — required for corners such as $y=\lvert x\rvert$), and
 `curves` with kinds `sqrt`, `cbrt`, `reciprocal`, `reciprocal-squared`,
-`sine`, `exp`, `log`, and `logistic` (each accepts `a`, `h`, `k` for
-$a\,f(x-h)+k$; `sine` adds `b` and draws $k+a\sin\bigl(b(x-h)\bigr)$, while
-`exp` and `log` take `b` as the base and draw $k+a\,b^{x-h}$ and
+`sine`, `cosine`, `tangent`, `secant`, `cosecant`, `cotangent`, `arcsine`,
+`arccosine`, `arctangent`, `exp`, `log`, and `logistic` (each accepts `a`,
+`h`, `k` for
+$a\,f(x-h)+k$; the trigonometric kinds add `b` and draw
+$k+a\,f\bigl(b(x-h)\bigr)$ — `sine` gives $k+a\sin\bigl(b(x-h)\bigr)$ and so
+on. The asymptotic four (`tangent`, `secant`, `cosecant`, `cotangent`) split
+into branches on their own wherever the curve leaves the grid; their dashed
+vertical asymptotes are NOT drawn for you — author them as dashed `lines`.
+`arcsine` and `arccosine` draw only their closed domain
+$\lvert b(x-h)\rvert\le 1$, sampled parametrically so the vertical tangents
+at the endpoints stay smooth. `exp` and `log` take `b` as the base and draw
+$k+a\,b^{x-h}$ and
 $k+a\log_b(x-h)$). `log` also takes `reflect: true`, mirroring the branch
 about its vertical asymptote to draw $k+a\log_b(h-x)$ on $x<h$ — the
 $y$-axis-reflected logarithm, which has no other analytic spelling.
@@ -1307,7 +1316,7 @@ carried zero of each, and the warning channel was deleted with them. There is
 no non-blocking rule left in the repository and no category of
 known-defective content to grandfather.
 
-The Practice retrofit that used to live here is finished. All 233 mapped
+The Practice retrofit that used to live here is finished. All 236 mapped
 sections carry the block (the documentation test pins that count to the live
 map, so authoring a new mapped section means bumping it here). The final
 block landed on August 9, 2026; the lint rule was promoted from a warning to

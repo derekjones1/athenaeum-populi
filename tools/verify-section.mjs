@@ -116,6 +116,15 @@ for (const f of files) {
       } else if (parsedAsNonsense(p.answer)) {
         bad(`${where}: answer ${JSON.stringify(p.answer)} parses as a nonsense product, not the value it spells — the exercise would accept only this literal notation. Write the value the question asks for.`);
       }
+      // An angle-valued answer under evaluated-trig alone is degree-spoofable:
+      // the predicate only bans trig functions, and the engine reads ^\circ as
+      // an exact conversion factor, so 40° grades correct against 2π/9. The
+      // radians (or degrees) token is what pins the written unit.
+      const forms = (p.answerForm || '').split(/\s+/).filter(Boolean);
+      if (forms.includes('evaluated-trig') && !forms.includes('radians') && !forms.includes('degrees')
+        && /\\pi\b/.test(p.answer || '')) {
+        bad(`${where}: answer ${JSON.stringify(p.answer)} is an angle in radians but declares only evaluated-trig — a degree-marked spelling of the same number (e.g. 40^\\circ for 2\\pi/9) would grade correct. Declare answerForm="evaluated-trig radians".`);
+      }
     }
     for (const name of ['question', 'hint', 'answerDisplay']) propMath(where, name, p[name]);
   }

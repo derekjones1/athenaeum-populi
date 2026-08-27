@@ -42,7 +42,7 @@
       "upstreamChapters": 12,
       "upstreamSections": 73,
       "localChapters": 12,
-      "mappedSections": 32
+      "mappedSections": 35
     }
   },
   "sections": [
@@ -2142,6 +2142,33 @@
       "moduleId": "m49384",
       "sourceTitle": "Right Triangle Trigonometry",
       "moduleSha256": "16e3c73bd05ae5bb4bad9356d79be0dd33d4f5192359cd90b52fb0eaf8658b4f"
+    },
+    {
+      "localPath": "content/math/precalculus/06-periodic-functions/01-graphs-of-the-sine-and-cosine-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "6.1",
+      "moduleId": "m49387",
+      "sourceTitle": "Graphs of the Sine and Cosine Functions",
+      "moduleSha256": "b5b272b9da0e191a539f578c6b20cceba669d48fffc9c9e7078d0d90cd15dc3d"
+    },
+    {
+      "localPath": "content/math/precalculus/06-periodic-functions/02-graphs-of-the-other-trigonometric-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "6.2",
+      "moduleId": "m49389",
+      "sourceTitle": "Graphs of the Other Trigonometric Functions",
+      "moduleSha256": "c1d1bda6c7e893c2c32668406eafa62b5ed2a62a40cfd5f6bd00ac474d6dd72f"
+    },
+    {
+      "localPath": "content/math/precalculus/06-periodic-functions/03-inverse-trigonometric-functions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "6.3",
+      "moduleId": "m49390",
+      "sourceTitle": "Inverse Trigonometric Functions",
+      "moduleSha256": "97c66042d3d978a570d83efdfdadffeafc00cd9e4145f29c54c87124aa724d53"
     }
   ]
 }

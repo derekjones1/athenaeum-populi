@@ -193,6 +193,95 @@ test('sine curve rejects a zero angular frequency', () => {
   assert.throws(() => buildGraph({ ...GRID, curves: [{ kind: 'sine', b: 0 }] }));
 });
 
+test('cosine curve samples the exact function', () => {
+  const out = buildGraph({ ...GRID, grid: false, curves: [{ kind: 'cosine' }] });
+  const pl = polylines(out).flat();
+  for (const [x, y] of [[0, 1], [Math.PI / 2, 0], [Math.PI, -1], [-Math.PI, -1]]) {
+    const closest = Math.min(...pl.map((p) => dist(p, [126 + x * 20, 126 - y * 20])));
+    assert.ok(closest < 0.6, `cos(x) sampled ${closest}px from (${x.toFixed(2)}, ${y})`);
+  }
+});
+
+test('tangent branches split at each vertical asymptote', () => {
+  const out = buildGraph({ ...GRID, grid: false, curves: [{ kind: 'tangent' }] });
+  // poles at ±π/2 and ±3π/2 cut [-5, 5] into five visible branches
+  assert.equal(polylines(out).length, 5);
+  const pl = polylines(out).flat();
+  for (const [x, y] of [[0, 0], [Math.PI / 4, 1], [-Math.PI / 4, -1], [Math.PI, 0]]) {
+    const closest = Math.min(...pl.map((p) => dist(p, [126 + x * 20, 126 - y * 20])));
+    assert.ok(closest < 0.6, `tan(x) sampled ${closest}px from (${x.toFixed(2)}, ${y})`);
+  }
+  // no branch touches the asymptote x = π/2 (px 126 + π/2·20)
+  for (const branch of polylines(out)) {
+    for (const p of branch) assert.ok(Math.abs(p[0] - (126 + Math.PI / 2 * 20)) > 0.5);
+  }
+});
+
+test('secant and cosecant never enter the forbidden band |y| < 1', () => {
+  for (const kind of ['secant', 'cosecant']) {
+    const out = buildGraph({ ...GRID, grid: false, curves: [{ kind }] });
+    assert.ok(polylines(out).length >= 3, `${kind} must split into branches`);
+    for (const p of polylines(out).flat()) {
+      assert.ok(Math.abs(p[1] - 126) > 20 - 0.6, `${kind} entered |y| < 1 at ${p}`);
+    }
+  }
+  // cosecant has a pole at x = 0: nothing may sit on the y-axis
+  const csc = buildGraph({ ...GRID, grid: false, curves: [{ kind: 'cosecant' }] });
+  for (const p of polylines(csc).flat()) assert.ok(Math.abs(p[0] - 126) > 0.5);
+});
+
+test('cotangent passes its zeros and splits at x = 0', () => {
+  const out = buildGraph({ ...GRID, grid: false, curves: [{ kind: 'cotangent' }] });
+  const pl = polylines(out).flat();
+  for (const [x, y] of [[Math.PI / 2, 0], [-Math.PI / 2, 0], [Math.PI / 4, 1]]) {
+    const closest = Math.min(...pl.map((p) => dist(p, [126 + x * 20, 126 - y * 20])));
+    assert.ok(closest < 0.6, `cot(x) sampled ${closest}px from (${x.toFixed(2)}, ${y})`);
+  }
+  for (const p of pl) assert.ok(Math.abs(p[0] - 126) > 0.5, 'cot must stay off its x = 0 asymptote');
+});
+
+test('arcsine spans its closed domain, vertical tangents included', () => {
+  const out = buildGraph({ ...GRID, grid: false, curves: [{ kind: 'arcsine' }] });
+  const pl = polylines(out).flat();
+  for (const [x, y] of [[0, 0], [1, Math.PI / 2], [-1, -Math.PI / 2], [0.5, Math.PI / 6]]) {
+    const closest = Math.min(...pl.map((p) => dist(p, [126 + x * 20, 126 - y * 20])));
+    assert.ok(closest < 0.6, `arcsin(x) sampled ${closest}px from (${x}, ${y.toFixed(2)})`);
+  }
+  for (const p of pl) assert.ok(p[0] >= 126 - 20 - 0.6 && p[0] <= 126 + 20 + 0.6, 'arcsin domain is [-1, 1]');
+});
+
+test('arccosine falls from (-1, π) to (1, 0) and honors from/to', () => {
+  const out = buildGraph({ ...GRID, grid: false, curves: [{ kind: 'arccosine' }] });
+  const pl = polylines(out).flat();
+  for (const [x, y] of [[1, 0], [0, Math.PI / 2], [-1, Math.PI]]) {
+    const closest = Math.min(...pl.map((p) => dist(p, [126 + x * 20, 126 - y * 20])));
+    assert.ok(closest < 0.6, `arccos(x) sampled ${closest}px from (${x}, ${y.toFixed(2)})`);
+  }
+  const trimmed = buildGraph({
+    ...GRID, grid: false, curves: [{ kind: 'arccosine', from: -0.5, to: 0.5 }],
+  });
+  for (const p of polylines(trimmed).flat()) {
+    assert.ok(p[0] >= 126 - 0.5 * 20 - 0.6 && p[0] <= 126 + 0.5 * 20 + 0.6,
+      'from/to must trim the arccosine domain despite x running against the parameter');
+  }
+});
+
+test('arctangent stays strictly between its horizontal asymptotes', () => {
+  const out = buildGraph({ ...GRID, grid: false, curves: [{ kind: 'arctangent' }] });
+  const pl = polylines(out).flat();
+  for (const [x, y] of [[0, 0], [1, Math.PI / 4], [-1, -Math.PI / 4]]) {
+    const closest = Math.min(...pl.map((p) => dist(p, [126 + x * 20, 126 - y * 20])));
+    assert.ok(closest < 0.6, `arctan(x) sampled ${closest}px from (${x}, ${y.toFixed(2)})`);
+  }
+  for (const p of pl) assert.ok(Math.abs(p[1] - 126) < Math.PI / 2 * 20, 'arctan is bounded by y = ±π/2');
+});
+
+test('the trig kinds reject a zero angular frequency', () => {
+  for (const kind of ['cosine', 'tangent', 'secant', 'cosecant', 'cotangent', 'arcsine', 'arccosine', 'arctangent']) {
+    assert.throws(() => buildGraph({ ...GRID, curves: [{ kind, b: 0 }] }), undefined, `${kind} b: 0`);
+  }
+});
+
 test('cubics honor from/to domain trimming', () => {
   const out = buildGraph({ ...GRID, grid: false, cubics: [{ a: 0.1, to: 2 }] });
   const [pl] = polylines(out);

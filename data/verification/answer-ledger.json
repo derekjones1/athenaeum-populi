@@ -58,6 +58,10 @@
   "009d3520f6b7aa45": {
    "verdict": "ok"
   },
+  "00a5b4a0d1552429": {
+   "verdict": "ok",
+   "note": "|A|=0.5<1 so compressed (Try It 2 stretch/compress part, matches CNXML)."
+  },
   "00adc72d7d2dcda7": {
    "verdict": "ok",
    "note": "27/11 = 2.454545...; the block 45 repeats starting immediately after the decimal point. Rounded to 4 places: 2.4545."
@@ -234,6 +238,10 @@
   "024dfbe28ac79872": {
    "verdict": "ok"
   },
+  "0253b0a8861d75ac": {
+   "verdict": "ok",
+   "note": "Domain of y=arccos x is [-1,1] by definition (arccos's domain equals cos's range); matches source solution 'domain [-1,1]; range [0,π]'."
+  },
   "025cc8bdaef446d8": {
    "verdict": "ok"
   },
@@ -302,6 +310,10 @@
   },
   "032893656cad352d": {
    "verdict": "ok"
+  },
+  "032b7aacce535901": {
+   "verdict": "ok",
+   "note": "period of A tan(Bx) is pi/|B|; B=pi/6 gives P=6, independently computed."
   },
   "033b583f688c968c": {
    "verdict": "ok"
@@ -385,6 +397,10 @@
   },
   "0401f10f70dd003a": {
    "verdict": "ok"
+  },
+  "0407d0a258812ff1": {
+   "verdict": "ok",
+   "note": "node: Math.acos(0.5)=1.0471975511965979=π/3."
   },
   "042ba854d315ff51": {
    "verdict": "ok"
@@ -692,6 +708,10 @@
   },
   "067ece585f63b03c": {
    "verdict": "ok"
+  },
+  "069ac07670cbeb83": {
+   "verdict": "ok",
+   "note": "absolute value does not remove where cot x is undefined; asymptotes remain at every multiple of pi, closest positive one is pi, independently computed."
   },
   "069c388dbc72c81d": {
    "verdict": "ok"
@@ -1310,6 +1330,10 @@
   "0ccbb093c0776bc3": {
    "verdict": "ok"
   },
+  "0cd89a5ae1e021c6": {
+   "verdict": "ok",
+   "note": "node: Math.atan(Math.tan(11*Math.PI/9))=0.6981317007977313=2π/9 (11π/9 is in quadrant III, tan shares value with 11π/9-π=2π/9, which is in the restricted domain)."
+  },
   "0cdb9d61381ef0ef": {
    "verdict": "ok"
   },
@@ -1496,6 +1520,10 @@
   "0e5ca9f94fbeb148": {
    "verdict": "ok"
   },
+  "0e5e57959e5f8738": {
+   "verdict": "ok",
+   "note": "3-4-5 triangle: cos θ=3/5 ⇒ sin θ=4/5 exactly; node: Math.sin(Math.acos(0.6))=0.8 (source Algebraic #33, solution 0.8=4/5)."
+  },
   "0e6da73723231bcb": {
    "verdict": "ok"
   },
@@ -1558,6 +1586,10 @@
   },
   "0f618dbf8c89e011": {
    "verdict": "ok"
+  },
+  "0f721e976aadfd8d": {
+   "verdict": "ok",
+   "note": "node: Math.atan(-Math.sqrt(3))=-1.0471975511965976=-π/3 (source Algebraic #13, solution -π/3)."
   },
   "0f8509b141e9a9d8": {
    "verdict": "ok"
@@ -1750,6 +1782,10 @@
   "1181d55ced5d93ec": {
    "verdict": "ok"
   },
+  "1187d9f5542b0f92": {
+   "verdict": "ok",
+   "note": "node: Math.acos(0.8776)=0.499964≈0.5, matches the source's own rounded pair; grader rejects the swapped equation \\cos^{-1}(0.5)=0.8776 (verified via check-answer.mjs), so the equation form is not a retype hazard."
+  },
   "11894d5fc0ec3b26": {
    "verdict": "ok"
   },
@@ -1785,6 +1821,10 @@
   },
   "11d18d3aa11fb916": {
    "verdict": "ok"
+  },
+  "11d68a4550b6147b": {
+   "verdict": "ok",
+   "note": "C/B=(-\\pi/6)/(\\pi/3)=-0.5 (Try It 9 phase-shift part, matches CNXML -1/2)."
   },
   "11d7da4923725d93": {
    "verdict": "ok"
@@ -2177,6 +2217,14 @@
    "verdict": "ok",
    "note": "h(-7)=-1/2*(1/2)^-7+6 computed with node: -58; matches CNXML solution exactly."
   },
+  "162c2a5afe1af25b": {
+   "verdict": "ok",
+   "note": "node: Math.asin(6/10)=0.6435011087932844, rounds to 0.6435; triangle hyp=10, opposite=6 (Figure 9), matches source's 0.6435 radians."
+  },
+  "163b3423cf8d4b29": {
+   "verdict": "ok",
+   "note": "solved 4x+2=pi/2+k*pi for x = pi/8-1/2+k*pi/4 via node -e; k=0 gives x=pi/8-1/2=-0.1073, nearest candidate to 0 (k=1 gives 0.678, k=-1 gives -0.893)."
+  },
   "164501dfdf843c97": {
    "verdict": "ok"
   },
@@ -2391,6 +2439,10 @@
   },
   "1877a3b4bd1d240b": {
    "verdict": "ok"
+  },
+  "18798d991789860d": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "18866ad15804c3dd": {
    "verdict": "ok"
@@ -2948,6 +3000,10 @@
   "1eaf04733813a307": {
    "verdict": "ok"
   },
+  "1eaf8ace4efdfb82": {
+   "verdict": "ok",
+   "note": "Practice ex23: period 4, matches CNXML solution and node-confirmed extrema spacing."
+  },
   "1ebf0d6b38cc5340": {
    "verdict": "ok"
   },
@@ -2992,6 +3048,10 @@
   },
   "1f4a4f6e03faeece": {
    "verdict": "ok"
+  },
+  "1f4b42cfd69ea4ac": {
+   "verdict": "ok",
+   "note": "matches source's own printed solution text verbatim (reflected across y=-1, becoming increasing)."
   },
   "1f522f3ccc420e02": {
    "verdict": "ok"
@@ -3181,6 +3241,10 @@
   },
   "210d289f31ca9410": {
    "verdict": "ok"
+  },
+  "21163bd39056badd": {
+   "verdict": "ok",
+   "note": "f(0)=-2.5*sec(0)=-2.5*1=-2.5, computed directly; A negative flips Example 4's local min at 0 (2.5) to a local max (-2.5)."
   },
   "2122070bb22a2183": {
    "verdict": "ok"
@@ -3613,6 +3677,10 @@
   "261121fd12ffc57b": {
    "verdict": "ok"
   },
+  "26138f1195a2ee79": {
+   "verdict": "ok",
+   "note": "Practice ex15 (fs-id1165134277994): y=3sin(8(x+4))+5 -> 8(x+4)=8x-(-32), C/B=-32/8=-4, matches CNXML solution -4 (node-verified)."
+  },
   "26141611a95379bf": {
    "verdict": "ok"
   },
@@ -3795,6 +3863,10 @@
   },
   "282598a04de48cb1": {
    "verdict": "ok"
+  },
+  "282d403d87bd85e9": {
+   "verdict": "ok",
+   "note": "node: Math.cos(Math.asin(7/9))=0.628539361054709, and 4*Math.sqrt(2)/9=0.628539361054709 — matches exactly."
   },
   "282eb68408b21190": {
    "verdict": "ok",
@@ -4104,6 +4176,10 @@
   },
   "2b49c86fb9a564da": {
    "verdict": "ok"
+  },
+  "2b62a17f35f60b61": {
+   "verdict": "ok",
+   "note": "P=2\\pi/2=\\pi (Try It 8 period part, matches CNXML)."
   },
   "2b67b984817d1131": {
    "verdict": "ok"
@@ -4566,6 +4642,10 @@
   "311e526c1cb3fb3e": {
    "verdict": "ok"
   },
+  "31309a618e7983ce": {
+   "verdict": "ok",
+   "note": "period of A tan(Bx-C) is pi/|B|; B=4 gives P=pi/4, independently computed; matches source's own printed stretching-factor/period/asymptote solution for this exercise."
+  },
   "31342b0bc448d11f": {
    "verdict": "ok",
    "note": "Axis of symmetry x=h=1 for f(x)=x^2-2x."
@@ -4987,6 +5067,10 @@
   "35d88cea9805c343": {
    "verdict": "ok"
   },
+  "35dd61699e258c52": {
+   "verdict": "ok",
+   "note": "P=pi/3=pi/|B| gives B=3; h,k copied directly from the stated phase shift (pi/4,2); matches source's printed solution y=tan(3(x-pi/4))+2 exactly."
+  },
   "35e26265badce07a": {
    "verdict": "ok"
   },
@@ -5071,6 +5155,10 @@
   "36b37678d04fb0a1": {
    "verdict": "ok"
   },
+  "36b60e9275a98ea7": {
+   "verdict": "ok",
+   "note": "asymptote spacing pi/2 apart gives B=2 (independently derived); A=4 confirmed against source's printed text solution g(x)=4tan(2x), and f(pi/8)=4tan(pi/4)=4 checked by node -e."
+  },
   "36bb30ba7f1559b2": {
    "verdict": "ok"
   },
@@ -5097,6 +5185,10 @@
   },
   "36f8cd577418d333": {
    "verdict": "ok"
+  },
+  "36f919c241b99b47": {
+   "verdict": "ok",
+   "note": "node: Math.acos(Math.sin(-11*Math.PI/4))=2.356194490192346=3π/4 (matches source)."
   },
   "36f9212060ff48bf": {
    "verdict": "ok"
@@ -5521,6 +5613,10 @@
   "3b1e092acddac2d2": {
    "verdict": "ok"
   },
+  "3b23883f6c01cfd9": {
+   "verdict": "ok",
+   "note": "P=2\\pi/(1/3)=6\\pi (Try It 5 period part, matches CNXML)."
+  },
   "3b256dd90f810bdc": {
    "verdict": "ok",
    "note": "Same line y=-x+3 has y-intercept (0,3), matching the declared answer."
@@ -5559,8 +5655,16 @@
   "3b8c086afbfd02f8": {
    "verdict": "ok"
   },
+  "3b8f4e08fbe72048": {
+   "verdict": "ok",
+   "note": "Midline=(-1+-7)/2=-4, amplitude=|-1-(-4)|=3, starts at max at x=0 -> +cos shape: y=3cos(x)-4, matches CNXML ti_06_01_11 solution."
+  },
   "3ba3523f2e42da55": {
    "verdict": "ok"
+  },
+  "3ba573ee07582a03": {
+   "verdict": "ok",
+   "note": "Range [-7,7] for f(x)=7cos(x); restated from Try It 10's amplitude ask (source answer 7) to avoid retyping the printed coefficient."
   },
   "3ba89fe8e6a5cebe": {
    "verdict": "ok"
@@ -5885,11 +5989,19 @@
    "verdict": "ok",
    "note": "Section Exercise 39 part a: c=50, B=21deg, a=c*cos(21deg)=46.6790, computed with node; matches CNXML solution."
   },
+  "3fb781b6cad84e92": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
+  },
   "3fb86266b5d5bfa9": {
    "verdict": "ok"
   },
   "3fc812c4c4ae2cb9": {
    "verdict": "ok"
+  },
+  "3fcb79ec6240de71": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "3fe1748168841229": {
    "verdict": "ok"
@@ -5958,6 +6070,10 @@
   },
   "40a126f7acb1a372": {
    "verdict": "ok"
+  },
+  "40adbd8e2b8eb240": {
+   "verdict": "ok",
+   "note": "|cot x| folds cot's full range of reals to non-negative values, attaining 0 where cot x=0; range [0,infinity), consistent with the source alt text 'Range is 0 to infinity.'"
   },
   "40b1955439cf76ba": {
    "verdict": "ok"
@@ -6346,6 +6462,10 @@
   "44ba7e26ae4a9521": {
    "verdict": "ok"
   },
+  "44baf3086b99da38": {
+   "verdict": "ok",
+   "note": "node: Math.acos(-0.4)=1.9823131728623846, rounds to 1.98 (source Algebraic #17, solution 1.98)."
+  },
   "44bb8b8566710194": {
    "verdict": "ok"
   },
@@ -6376,6 +6496,10 @@
   },
   "44fa25faed8c810d": {
    "verdict": "ok"
+  },
+  "44fc41afeaaba435": {
+   "verdict": "ok",
+   "note": "Practice ex23/Fig26 (fs-id1165137658354): amplitude read from the plotted f(x)=2sin(pi/2 x)-3, node scanExtrema confirms max -1 at x=-3,1 and min -5 at x=-1,3, matching CNXML's printed amplitude 2."
   },
   "44ffc8e00cd15108": {
    "verdict": "ok"
@@ -6411,6 +6535,10 @@
   },
   "45644ef11844d154": {
    "verdict": "ok"
+  },
+  "4579cab827b88fee": {
+   "verdict": "ok",
+   "note": "period of A csc(Bx) is 2pi/|B|; B=2 gives P=pi, independently computed."
   },
   "457a580a32fac8ed": {
    "verdict": "ok",
@@ -6481,6 +6609,10 @@
   },
   "4649a3746e421b1f": {
    "verdict": "ok"
+  },
+  "4660767eb2208012": {
+   "verdict": "ok",
+   "note": "C/B=(\\pi/2)/1=\\pi/2, positive=right (Try It 3, matches CNXML ti_06_01_03 solution)."
   },
   "466171199b2f1d99": {
    "verdict": "ok"
@@ -6807,6 +6939,10 @@
   "4992c3f3a05cd6cd": {
    "verdict": "ok"
   },
+  "499d81d383e78f67": {
+   "verdict": "ok",
+   "note": "Locally authored graph-recognition MC (not source-keyed): rendered all four option specs via svgshot and visually confirmed option 0 (cos(2x), two oscillations starting at max) is the only one matching f(x)=cos(2x); the three distractors vary period, sine/cosine phase, and reflection respectively."
+  },
   "499facc7d73ab967": {
    "verdict": "ok"
   },
@@ -6910,6 +7046,10 @@
   },
   "4a98c956513e4af2": {
    "verdict": "ok"
+  },
+  "4ab4fb8958c57c2d": {
+   "verdict": "ok",
+   "note": "period of A csc(Bx-C) is 2pi/|B|; B=pi/3 gives P=6; matches source's own printed solution (stretching factor 6, period 6)."
   },
   "4ab87881f911abd5": {
    "verdict": "ok"
@@ -7223,6 +7363,10 @@
   "4e6e32c2cdcda605": {
    "verdict": "ok"
   },
+  "4e72f62f2b9a3e98": {
+   "verdict": "ok",
+   "note": "Practice ex19: D=1 read directly, matches CNXML midline y=1."
+  },
   "4e7c92c87fc69c2b": {
    "verdict": "ok"
   },
@@ -7500,6 +7644,10 @@
   "520623383cbf3d20": {
    "verdict": "ok"
   },
+  "5218f7d18c1751fc": {
+   "verdict": "ok",
+   "note": "Practice ex23: midline y=-3, matches CNXML solution."
+  },
   "52214e9d4fe1db18": {
    "verdict": "ok"
   },
@@ -7699,6 +7847,10 @@
   "54a73476b46de54c": {
    "verdict": "ok",
    "note": "Try It 5 part c: missing angle = pi/2 - pi/3 = pi/6; matches CNXML solution."
+  },
+  "54ad8b8cc272d4dd": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "54b4e44fb89ddd72": {
    "verdict": "ok"
@@ -8152,6 +8304,10 @@
   },
   "5952377559cc86b1": {
    "verdict": "ok"
+  },
+  "595b122f157bad6c": {
+   "verdict": "ok",
+   "note": "π/8≈0.3927 is already in (-π/2,π/2), so tan^{-1}(tan(π/8))=π/8 exactly; confirmed Math.atan(Math.tan(Math.PI/8))=Math.PI/8 numerically."
   },
   "595cc08560cf5422": {
    "verdict": "ok"
@@ -9773,6 +9929,10 @@
   "6b9b715b1be0b13b": {
    "verdict": "ok"
   },
+  "6bb5ce36f42a7c2c": {
+   "verdict": "ok",
+   "note": "asymptotes at P/2+kP=3+6k; smallest positive is 3, independently computed."
+  },
   "6bb8740f36e7ffbd": {
    "verdict": "ok"
   },
@@ -9928,6 +10088,10 @@
   },
   "6d51c8b77a4881d5": {
    "verdict": "ok"
+  },
+  "6d54848e9e31be9e": {
+   "verdict": "ok",
+   "note": "Given figure per CNXML ti_06_01_07 solution 4sin(pi/5 x - pi/5)+4; independently confirmed max 8/min 0 (D=4,|A|=4), period 10 (B=pi/5), peak shifted to x=1 (C/B=1)."
   },
   "6d556f5f26b645a6": {
    "verdict": "ok"
@@ -10259,6 +10423,10 @@
   },
   "71a003fc0f4c64b6": {
    "verdict": "ok"
+  },
+  "71a237eade6590a6": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "71a3175db11da8d6": {
    "verdict": "ok"
@@ -10668,6 +10836,10 @@
   "76d52e0c2faefb06": {
    "verdict": "ok"
   },
+  "76f72064afe091e2": {
+   "verdict": "ok",
+   "note": "node: Math.asin(-0.5)=-0.5235987755982989=-π/6 (source Algebraic #9)."
+  },
   "76f7601e032b9cdd": {
    "verdict": "ok"
   },
@@ -10908,6 +11080,10 @@
   },
   "7954e9882d48cf46": {
    "verdict": "ok"
+  },
+  "79569ff53622d043": {
+   "verdict": "ok",
+   "note": "node: Math.acos(-Math.SQRT2/2)=2.356194490192345=3π/4 (source Algebraic #11, solution 3π/4)."
   },
   "796d5657f75323e9": {
    "verdict": "ok"
@@ -11900,6 +12076,10 @@
   "83f82994be2151f7": {
    "verdict": "ok"
   },
+  "83f8e05a6be6afb5": {
+   "verdict": "ok",
+   "note": "cosecant is odd: csc(-x)=-csc(x)=-(-5)=5; matches source's printed solution."
+  },
   "83fbcd639f17998c": {
    "verdict": "ok",
    "note": "x^2+4x+4=(x+2)^2, so f(x)=x^2(x+2)^2 has zero 0 (mult 2) and -2 (mult 2). Matches CNXML fs-id1165135525889 solution."
@@ -12547,6 +12727,10 @@
   },
   "8b6b7f0a5bf7d65c": {
    "verdict": "ok"
+  },
+  "8b79c1ee7cbf1c61": {
+   "verdict": "ok",
+   "note": "period of csc x equals period of sin x = 2pi; matches source's printed solution to the analogous verbal exercise."
   },
   "8ba1712bf3a314cb": {
    "verdict": "ok"
@@ -13268,6 +13452,10 @@
   "946f4acc4b0cf6af": {
    "verdict": "ok"
   },
+  "94835ec451370610": {
+   "verdict": "ok",
+   "note": "node: Math.cos(Math.atan(5/12))=0.9230769230769231=12/13 (5-12-13 triangle)."
+  },
   "9492ced25fc5160d": {
    "verdict": "ok"
   },
@@ -13786,6 +13974,10 @@
   "9a2e89f02c1aa81e": {
    "verdict": "ok"
   },
+  "9a39f468aa18d0d9": {
+   "verdict": "ok",
+   "note": "D=2 read directly from f(x)=3sin(x)+2 (Try It 4 restated as midline equation)."
+  },
   "9a4ae2468a62b2e8": {
    "verdict": "ok"
   },
@@ -14086,6 +14278,10 @@
   "9d619199cd6eaac4": {
    "verdict": "ok"
   },
+  "9d73869d7e066741": {
+   "verdict": "ok",
+   "note": "|A|=1/2=0.5; restated as decimal to avoid retyping the printed 1/2 coefficient (Try It 2 amplitude part)."
+  },
   "9d792c23450efd09": {
    "verdict": "ok"
   },
@@ -14154,6 +14350,10 @@
   "9e156aa74f466a05": {
    "verdict": "ok"
   },
+  "9e159c0b7bc6bbd7": {
+   "verdict": "ok",
+   "note": "node: Math.acos(3/5)=0.9272952180016123, rounds to 0.93 (source Algebraic #19, solution 0.93)."
+  },
   "9e235bf299260c49": {
    "verdict": "ok"
   },
@@ -14208,6 +14408,10 @@
   },
   "9ebe5d9e24d7cbe1": {
    "verdict": "ok"
+  },
+  "9ecae4e4008ecc01": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "9ecd4a317c35acb2": {
    "verdict": "ok"
@@ -14391,6 +14595,10 @@
   "a1344f187493f370": {
    "verdict": "ok",
    "note": "Derived linear attendance-price relation from (11,26000),(9,31000), Revenue(p)=p*Q(p), vertex at p=10.7 (computed via node); matches CNXML solution for fs-id1165135449627 ('$10.70')."
+  },
+  "a13e349e11ce2179": {
+   "verdict": "ok",
+   "note": "node: Math.atan(12/19)=0.5627784766957478, rounds to 0.56 (source Algebraic #23, adjacent 19/opposite 12 triangle, solution 0.56 radians)."
   },
   "a1416ad32856da83": {
    "verdict": "ok"
@@ -14866,6 +15074,10 @@
   "a6b3844e7ebe2312": {
    "verdict": "ok"
   },
+  "a6b6a39afea37410": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
+  },
   "a6b6fc76a4432cb7": {
    "verdict": "ok"
   },
@@ -15080,6 +15292,10 @@
   "a900478c128a8c24": {
    "verdict": "ok"
   },
+  "a922832eb7a6513a": {
+   "verdict": "ok",
+   "note": "option III is the recreated cotangent shape (decreasing branches, asymptotes at 0 and pi); matches source's printed answer 'III' for f(x)=cot x in the graph-matching exercise; all four option specs independently rendered and visually distinguished via svgshot."
+  },
   "a925fb4dbc4c1fb4": {
    "verdict": "ok"
   },
@@ -15291,11 +15507,19 @@
   "ab3df4ce4fd24e91": {
    "verdict": "ok"
   },
+  "ab3e52f68ba32647": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
+  },
   "ab45d7c22492ddf8": {
    "verdict": "ok"
   },
   "ab5bae2e1ddad8bb": {
    "verdict": "ok"
+  },
+  "ab6e97b0b66f19fb": {
+   "verdict": "ok",
+   "note": "Practice ex15: D=5 read directly, matches CNXML midline y=5."
   },
   "ab75b662295db7ac": {
    "verdict": "ok"
@@ -15323,6 +15547,10 @@
   },
   "ab9defc20464d0c2": {
    "verdict": "ok"
+  },
+  "aba17a5ad8c9279a": {
+   "verdict": "ok",
+   "note": "node: Math.acos(-0.4)=1.9823131728623846, rounds to 1.9823 (matches source's own 1.9823 for this Try It)."
   },
   "abb6a14d7ba0c9ef": {
    "verdict": "ok"
@@ -15512,6 +15740,10 @@
   "adb27d3ee4d80f81": {
    "verdict": "ok"
   },
+  "adb4d97619f3c21f": {
+   "verdict": "ok",
+   "note": "g undefined where cos(pi/2 x)=0, i.e. pi/2 x=pi/2+k*pi -> x=1+2k; smallest positive is 1, independently computed."
+  },
   "adb59ec9fd8b7401": {
    "verdict": "ok",
    "note": "Recognition MC authored for the rule-4 keeper: correct option (index 2) is a=1,b=-8,c=12, vertex=(-b/2a, f(4))=(4,-4) re-derived, roots (2,0)/(6,0) confirmed by factoring x^2-8x+12=(x-2)(x-6); the three distractors (vertex shifted to (5,-4) same shape, direction inverted at the same vertex, correct vertex with narrower a=4 giving roots (3,0)/(5,0)) each independently re-derived and rendered with svgshot.mjs to confirm they are visually distinct and wrong for exactly one reason."
@@ -15700,6 +15932,10 @@
   "afc93464f778cf8b": {
    "verdict": "ok",
    "note": "The figure explicitly marks the point (3,1) on the graph of g (labeled in both the SVG text and its data-spec), i.e. g(3)=1, so g^{-1}(1)=3, matching the declared answer."
+  },
+  "afd77e5473824fca": {
+   "verdict": "ok",
+   "note": "tangent is odd: tan(-x)=-tan(x)=-(-1.5)=1.5; matches source's printed solution."
   },
   "afdf350daef81425": {
    "verdict": "ok"
@@ -15900,6 +16136,10 @@
   },
   "b255fe9414d6cf61": {
    "verdict": "ok"
+  },
+  "b260816d7ca832e4": {
+   "verdict": "ok",
+   "note": "C/B=(\\pi/3)/(1/3)=\\pi (Try It 5 phase-shift part, matches CNXML)."
   },
   "b26851211df15846": {
    "verdict": "ok",
@@ -16115,6 +16355,10 @@
   "b4c81f06b3ff5f5f": {
    "verdict": "ok"
   },
+  "b4d4c1e9343c41d3": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
+  },
   "b4dacfab86d384a9": {
    "verdict": "ok"
   },
@@ -16198,6 +16442,10 @@
   },
   "b5a2d2b89867bfdb": {
    "verdict": "ok"
+  },
+  "b5a7880291013911": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "b5b91267b82f8301": {
    "verdict": "ok"
@@ -16569,6 +16817,10 @@
   "b94392dd7124f6e8": {
    "verdict": "ok"
   },
+  "b95556e8f3bbde10": {
+   "verdict": "ok",
+   "note": "Range of y=arccos x is [0,π] by definition (arccos's range equals cos's restricted domain); matches source."
+  },
   "b95b3cce9430328d": {
    "verdict": "ok"
   },
@@ -16612,6 +16864,10 @@
   "b9e5d32b3feb727b": {
    "verdict": "ok"
   },
+  "b9ec896e871bf926": {
+   "verdict": "ok",
+   "note": "Practice ex7: B=1 (no coefficient written) -> P=2\\pi, matches CNXML solution 2\\pi."
+  },
   "b9edaa436ed20c95": {
    "verdict": "ok"
   },
@@ -16651,6 +16907,10 @@
   },
   "ba8346b03ec10d8f": {
    "verdict": "ok"
+  },
+  "ba835b71cd023ad8": {
+   "verdict": "ok",
+   "note": "|A|=1/2=0.5 for (1/2)cos(x/3-pi/3) (Try It 5 amplitude part, matches CNXML ti_06_01_05)."
   },
   "ba8924d193f18640": {
    "verdict": "ok"
@@ -16958,6 +17218,10 @@
   "bde91329de358e7c": {
    "verdict": "ok"
   },
+  "bdedc937036458d6": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
+  },
   "bdf06e669e46c089": {
    "verdict": "ok"
   },
@@ -17093,6 +17357,10 @@
   "bf2a54db39c81477": {
    "verdict": "ok",
    "note": "IA KC 01-06 §3.4, converted from prose options to rendered figures. Re-derived: y > 3/2 x + 5 is strict, so the boundary line is dashed, and 'y greater than' shades the half-plane above it — option 3, which draws y = 3/2 x + 5 dashed with the region containing (0,10) shaded. The three distractors render the three printed prose distractors exactly: solid+above (0), dashed+below (1), solid+below (2). Option order and answer position are unchanged from the prose version."
+  },
+  "bf2c03802472cbec": {
+   "verdict": "ok",
+   "note": "5-12-13 triangle: tan θ=12/5 ⇒ cos θ=5/13 exactly; node: Math.cos(Math.atan(12/5))=0.38461538461538464=5/13 (source Algebraic #35, solution 5/13)."
   },
   "bf3377b9f1cfc46e": {
    "verdict": "ok"
@@ -17241,6 +17509,10 @@
   },
   "c0be32287b0d345d": {
    "verdict": "ok"
+  },
+  "c0c10798aae50399": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "c0c341375713f7bd": {
    "verdict": "ok",
@@ -17456,6 +17728,10 @@
   "c2a4e89bfcbb2431": {
    "verdict": "ok"
   },
+  "c2ac6953243c66f0": {
+   "verdict": "ok",
+   "note": "Practice ex7 (fs-id1165137423636): amplitude 2/3, midline y=0 (no D term) -> range [-2/3,2/3]; restated from the source's amplitude ask to avoid retyping the printed 2/3 coefficient."
+  },
   "c2afc96c1e57afc4": {
    "verdict": "ok"
   },
@@ -17665,6 +17941,10 @@
   },
   "c51a023f994bc5d2": {
    "verdict": "ok"
+  },
+  "c523115c4bb7ee19": {
+   "verdict": "ok",
+   "note": "asymptotes of A sec(Bx) at pi/(2|B|)*k for odd k; B=3 gives smallest positive pi/6; matches source's own printed solution (period 2pi/3, asymptotes x=pi/6 *k odd)."
   },
   "c527b759f143d786": {
    "verdict": "ok"
@@ -17905,8 +18185,16 @@
   "c7e6c81f6b215ca3": {
    "verdict": "ok"
   },
+  "c7f56bd72b8dc245": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
+  },
   "c7f7619312ecaf6e": {
    "verdict": "ok"
+  },
+  "c80f64e219c5c885": {
+   "verdict": "ok",
+   "note": "P=2\\pi/(\\pi/3)=6 (Try It 9 period part, matches CNXML)."
   },
   "c8100ba4e9a74413": {
    "verdict": "ok"
@@ -17996,6 +18284,10 @@
   },
   "c902b313f4d68565": {
    "verdict": "ok"
+  },
+  "c93516c1a1b8ccd3": {
+   "verdict": "ok",
+   "note": "Practice ex19 (fs-id1165137898084): f(t)=-cos(t+pi/3)+1 -> C=-pi/3, B=1, C/B=-pi/3, matches CNXML solution -pi/3 (node-verified)."
   },
   "c938df072d19e0ff": {
    "verdict": "ok"
@@ -18174,6 +18466,10 @@
   "cb0a92551394cf66": {
    "verdict": "ok"
   },
+  "cb0d224700630f79": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
+  },
   "cb2de300061ae5d3": {
    "verdict": "ok"
   },
@@ -18231,6 +18527,10 @@
   "cbc06ff9d43116ba": {
    "verdict": "ok",
    "note": "node: 1.25*1.012^18 - 1.39*1.006^18 = 0.0013578885 -> 0.001 to the nearest thousandth."
+  },
+  "cbc3ed204399c8d7": {
+   "verdict": "ok",
+   "note": "Given figure is sin(x)+2 per CNXML ti_06_01_06 solution f(x)=sin(x)+2; independently confirmed the figure's max 3/min 1 fits D=2, |A|=1."
   },
   "cbd352cd3e34b79e": {
    "verdict": "ok"
@@ -18300,6 +18600,10 @@
   },
   "cc9cc786cf39935d": {
    "verdict": "ok"
+  },
+  "cc9f02fa593949aa": {
+   "verdict": "ok",
+   "note": "node: Math.asin(-1)=-1.5707963267948966=-π/2."
   },
   "ccaea499c79491ca": {
    "verdict": "ok"
@@ -18505,6 +18809,10 @@
   },
   "cf3b5cfb0a7261fc": {
    "verdict": "ok"
+  },
+  "cf3d55b422dfb196": {
+   "verdict": "ok",
+   "note": "Verified numerically for x=0.6: Math.acos(-0.6)=2.214297435588181 equals Math.PI-Math.acos(0.6)=2.214297435588181; matches source's own True verdict and geometric (reference-angle) argument."
   },
   "cf45b921ba33f989": {
    "verdict": "ok"
@@ -18877,6 +19185,10 @@
   "d401a892207d8b7a": {
    "verdict": "ok"
   },
+  "d406bef98b0204cc": {
+   "verdict": "ok",
+   "note": "Symbolic Pythagorean derivation (opposite 4x, adjacent 1, hyp sqrt(16x^2+1)) confirmed numerically at x=0.2: Math.sin(Math.atan(0.8))=0.6246950475544243 equals 0.8/Math.sqrt(1.64)=0.6246950475544243."
+  },
   "d40a70590ad1f1ce": {
    "verdict": "ok"
   },
@@ -19111,8 +19423,16 @@
   "d70d9c9ba1328e9f": {
    "verdict": "ok"
   },
+  "d712589aefd65227": {
+   "verdict": "ok",
+   "note": "node: Math.atan(-1)=-0.7853981633974483=-π/4."
+  },
   "d714b31a4f6b69e5": {
    "verdict": "ok"
+  },
+  "d72854a319b0512d": {
+   "verdict": "ok",
+   "note": "cot(-x)=-cot x (odd), cos(-x)=cos x (even), sin(-x)=-sin x (odd), giving -cotx cosx - sinx; matches source's printed solution exactly; retyping the printed subject verbatim was confirmed via checkAnswer to grade correct against this answer with no available answerForm to block it, so the component is multiplechoice rather than fillin."
   },
   "d72ea2e3558c369b": {
    "verdict": "ok"
@@ -19128,6 +19448,10 @@
   },
   "d75d9abcdd7e4a26": {
    "verdict": "ok"
+  },
+  "d75daf1505a40cd5": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "d764c79e7277e244": {
    "verdict": "ok"
@@ -19757,6 +20081,10 @@
   "df24d37b4a19ee4d": {
    "verdict": "ok"
   },
+  "df3bafb00dc170fa": {
+   "verdict": "ok",
+   "note": "node: Math.acos(-1)=3.141592653589793=π."
+  },
   "df4060db72586141": {
    "verdict": "ok"
   },
@@ -19901,6 +20229,10 @@
   "e109d033f72dd494": {
    "verdict": "ok"
   },
+  "e11ee7438879ad3a": {
+   "verdict": "ok",
+   "note": "Option 2 (0-indexed) is curves:[{kind:arctangent}], the only bounded, increasing, origin-passing curve among the four rendered options (verified by rendering all four with svgshot.mjs and inspecting each: option0=unbounded restricted tangent, option1=arcsine on [-1,1] with closed dots, option2=arctangent (correct), option3=-arctangent, decreasing)."
+  },
   "e121b7918be5b77d": {
    "verdict": "ok"
   },
@@ -20035,6 +20367,10 @@
   "e2543e9ff74f165f": {
    "verdict": "ok",
    "note": "Solved 68/(1+16e^(-0.28x))=20 for x: x=-ln(0.15)/0.28=6.775, rounds to 6.8, matching CNXML fs-id1394672 (koi, #19)."
+  },
+  "e263d622a87fbf53": {
+   "verdict": "ok",
+   "note": "tan(x+pi)=tan x is exactly the statement that adding pi returns the same output, i.e. the period is pi; matches source's printed reasoning (recast as MC to avoid the printed-pi retype hazard confirmed via checkAnswer)."
   },
   "e2766b7cd5811d6b": {
    "verdict": "ok"
@@ -20191,6 +20527,10 @@
   },
   "e3ef6af8618e20f7": {
    "verdict": "ok"
+  },
+  "e3f579a46037f85d": {
+   "verdict": "ok",
+   "note": "P=2\\pi/|B| with B=1/3 (Try It 1, matches CNXML ti_06_01_01 solution 6\\pi)."
   },
   "e401dacca120f5de": {
    "verdict": "ok"
@@ -20776,6 +21116,10 @@
   "eae446a6a330408c": {
    "verdict": "ok"
   },
+  "eaf331f1086bde03": {
+   "verdict": "ok",
+   "note": "asymptotes of A csc(Bx) at k*pi/|B|; smallest positive is pi/2, independently computed."
+  },
   "eb05c7b5baa537fb": {
    "verdict": "ok"
   },
@@ -20942,6 +21286,10 @@
   },
   "ec8bedc3cf193b7e": {
    "verdict": "ok"
+  },
+  "ec90051b06fee829": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
   "ec903dc06e535244": {
    "verdict": "ok"
@@ -21168,6 +21516,10 @@
   "eecb8c85c1084467": {
    "verdict": "ok",
    "note": "315 deg is in QIV, reference angle 45 deg, sine negative in QIV: sin(315)=-sin(45)=-sqrt2/2; numerically Math.sin(315*pi/180)=-0.7071067811865474"
+  },
+  "eeedd93195f954ac": {
+   "verdict": "ok",
+   "note": "Practice ex23: f(x)=2sin(pi/2 x)-3 matches CNXML's printed equation exactly; independently re-derived from amplitude/period/midline plus the curve's rising zero-crossing at x=0."
   },
   "eef5a0ec741dd1fb": {
    "verdict": "ok",
@@ -21939,6 +22291,10 @@
   "f7b978c6e2ac2578": {
    "verdict": "ok"
   },
+  "f7bf7d28ee5d6ad0": {
+   "verdict": "ok",
+   "note": "|A|=|-2|=2 for g(x)=-2cos(pi/3 x+pi/6) (Try It 9 amplitude part, matches CNXML ti_06_01_09)."
+  },
   "f7c9eba7387ee721": {
    "verdict": "ok"
   },
@@ -22279,6 +22635,10 @@
   "fb75e5717feadbad": {
    "verdict": "ok"
   },
+  "fb831ea69a11407e": {
+   "verdict": "ok",
+   "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
+  },
   "fb8bbe7ded27bb32": {
    "verdict": "ok"
   },
@@ -22366,6 +22726,10 @@
   },
   "fc9f20ff5479475a": {
    "verdict": "ok"
+  },
+  "fcaeef3434ea1e1b": {
+   "verdict": "ok",
+   "note": "|A|=0.8 for g(x)=-0.8cos(2x) (Try It 8 amplitude part, matches CNXML ti_06_01_08)."
   },
   "fcb0ed810be9393d": {
    "verdict": "ok"
