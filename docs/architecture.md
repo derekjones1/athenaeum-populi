@@ -71,6 +71,8 @@ OpenStax map's integrity offline; it does not fetch upstream or run
 
 `npm run build` creates a clean Hugo production build and the Pagefind index.
 `npm run check:build` then verifies routes, internal links, search coverage,
+the SEO surface (corpus-unique composed `<title>`s, canonicals, and the
+breadcrumb/entity JSON-LD — see `tools/check-seo.mjs`),
 generated assets, and the 20,000-file ceiling. `npm run test:a11y` runs
 axe-core in Chromium against representative pages in light and dark themes,
 failing on serious or critical WCAG violations. It never measures a

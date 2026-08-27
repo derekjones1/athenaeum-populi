@@ -133,6 +133,28 @@ Book root `_index.md` also needs `license:` and `source:` (and carries
 `_index.md` needs `source_chapter:`. Knowledge-check pages need
 `source_chapters:` (e.g. `"1-6"`). `npm run validate` checks all of this.
 
+This front matter is also the page's entire search-listing surface, composed
+by the templates — nothing extra to author, but the fields must be right:
+
+- The `<title>` tag (the search-result headline, NOT the on-page H1) is
+  composed by `layouts/_partials/utils/seo-title.html` from `title` plus the
+  book and `source_section`/`source_chapter` context — e.g. *"Solve Equations
+  with Decimals – Prealgebra Practice, Section 5.4 | Athenaeum Populi"*. The
+  section number is load-bearing: OpenStax reuses section titles within one
+  book, and composed titles must be corpus-unique. A page may override the
+  whole composition with `seo_title:` in front matter; do that only for a
+  genuine collision the standard forms cannot break.
+- `layouts/_partials/seo-jsonld.html` emits JSON-LD from the same fields: a
+  `BreadcrumbList` on every page, `Book` on book roots (from `license:` and
+  `source:`), `LearningResource` on chapters and sections, `Quiz` on
+  knowledge checks. `description` becomes the node's description, so it must
+  stay a real summary, not a placeholder.
+- `npm run check:seo` (part of `npm run check:build`, so also CI) verifies
+  every built page: one non-empty suffixed title, unique across the corpus,
+  a matching canonical, a parseable breadcrumb trail ending at the page, and
+  the book-entity node. A new page that fails it usually has missing or
+  duplicated front matter, not a template problem.
+
 Every numbered section opens with its objectives callout, stating **one
 objective per Markdown list item**:
 

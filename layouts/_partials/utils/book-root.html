@@ -1,0 +1,24 @@
+{{- /* Return the book page a given page belongs to, or "" when it is not
+     book-scoped (home, subject shelves, About).
+
+     The book is the ancestor (or self) sitting directly under the subject
+     shelf — e.g. /math/prealgebra for anything beneath it. This is the same
+     walk the sidebar override uses to root navigation.
+
+     Callers: utils/contact-mailto.html, utils/seo-title.html,
+     seo-jsonld.html. */ -}}
+{{- $page := . -}}
+{{- $book := "" -}}
+{{- $subjectRoot := $page.FirstSection -}}
+{{- /* Root-level leaf pages (About) report home as their first section;
+     they are not book-scoped. */ -}}
+{{- if and $subjectRoot (not $subjectRoot.IsHome) -}}
+  {{- range $p := ($page.Ancestors | append $page) -}}
+    {{- with $p.Parent -}}
+      {{- if eq .RelPermalink $subjectRoot.RelPermalink -}}
+        {{- $book = $p -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $book -}}

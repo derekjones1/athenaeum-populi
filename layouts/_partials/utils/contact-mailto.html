@@ -16,15 +16,7 @@
 {{- $email := "" -}}
 {{- with site.Params.contact -}}{{- $email = .email | default "" -}}{{- end -}}
 {{- if $email -}}
-  {{- $book := "" -}}
-  {{- $subjectRoot := $page.FirstSection -}}
-  {{- range $p := ($page.Ancestors | append $page) -}}
-    {{- with $p.Parent -}}
-      {{- if and $subjectRoot (eq .RelPermalink $subjectRoot.RelPermalink) -}}
-        {{- $book = $p -}}
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
+  {{- $book := partial "utils/book-root.html" $page -}}
   {{- $emailSubject := $page.Title | plainify -}}
   {{- with $book -}}
     {{- if $page.Params.source_section -}}

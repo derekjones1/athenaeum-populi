@@ -1,0 +1,109 @@
+{{- /* Structured data (JSON-LD) for search engines. Renders nothing
+     visible; its one user-facing effect is in search-result listings
+     (e.g. the Math › Prealgebra › Decimals breadcrumb trail replacing the
+     raw URL under the headline).
+
+     Every node is built as a Hugo dict and emitted through jsonify, so the
+     output is always well-formed JSON no matter what the titles contain.
+
+     What each page kind gets:
+       home            WebSite (+ publisher Organization)
+       every other     BreadcrumbList mirroring the visible breadcrumb,
+       page            including its book-root linkTitle exception
+       book root       Book (license, source attribution, publisher)
+       chapter         LearningResource (unit) inside its Book
+       section         LearningResource (lesson, practice) inside its Book
+       knowledge check Quiz inside its Book
+
+     tools/check-seo.mjs validates all of this against the built site. */ -}}
+{{- $page := . -}}
+{{- $lang := site.Language.LanguageCode | default "en" -}}
+{{- $org := dict "@type" "Organization" "name" site.Title "url" site.Home.Permalink -}}
+{{- $licenseURLs := dict
+      "CC BY 4.0"       "https://creativecommons.org/licenses/by/4.0/"
+      "CC BY-SA 4.0"    "https://creativecommons.org/licenses/by-sa/4.0/"
+      "CC BY-NC-SA 4.0" "https://creativecommons.org/licenses/by-nc-sa/4.0/" -}}
+{{- $graph := slice -}}
+
+{{- if $page.IsHome -}}
+  {{- $graph = $graph | append (dict
+        "@type" "WebSite"
+        "name" site.Title
+        "url" site.Home.Permalink
+        "description" (partial "utils/page-description.html" $page | htmlUnescape | chomp)
+        "inLanguage" $lang
+        "publisher" $org) -}}
+{{- else -}}
+
+  {{- /* Breadcrumb trail: the same items, names, and book-root exception as
+       the visible breadcrumb partial. */ -}}
+  {{- $items := slice -}}
+  {{- $trail := slice -}}
+  {{- range $page.Ancestors.Reverse -}}
+    {{- if not .IsHome -}}{{- $trail = $trail | append . -}}{{- end -}}
+  {{- end -}}
+  {{- $trail = $trail | append $page -}}
+  {{- range $i, $p := $trail -}}
+    {{- $name := partial "utils/title" $p -}}
+    {{- with $p.Parent -}}
+      {{- if and (not .IsHome) .Parent.IsHome -}}
+        {{- /* Book roots use linkTitle "Overview" in the book-scoped
+             sidebar; the trail should identify the book itself. */ -}}
+        {{- $name = $p.Title -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $items = $items | append (dict
+          "@type" "ListItem"
+          "position" (add $i 1)
+          "name" ($name | plainify | htmlUnescape)
+          "item" $p.Permalink) -}}
+  {{- end -}}
+  {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "itemListElement" $items) -}}
+
+  {{- /* Book-interior entity. */ -}}
+  {{- $book := partial "utils/book-root.html" $page -}}
+  {{- with $book -}}
+    {{- $bookRef := dict "@type" "Book" "name" (.Title | plainify | htmlUnescape) "url" .Permalink -}}
+    {{- $license := index $licenseURLs (.Params.license | default "") -}}
+    {{- $source := .Params.source -}}
+    {{- $entity := dict
+          "name" ($page.Title | plainify | htmlUnescape)
+          "description" (partial "utils/page-description.html" $page | htmlUnescape | chomp)
+          "url" $page.Permalink
+          "inLanguage" $lang -}}
+    {{- if $license -}}{{- $entity = merge $entity (dict "license" $license) -}}{{- end -}}
+    {{- if eq .RelPermalink $page.RelPermalink -}}
+      {{- $entity = merge $entity (dict "@type" "Book" "publisher" $org) -}}
+      {{- with $source -}}
+        {{- $entity = merge $entity (dict "isBasedOn" (dict "@type" "CreativeWork" "name" .)) -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $entity = merge $entity (dict "isPartOf" $bookRef "provider" $org) -}}
+      {{- if $page.Params.source_section -}}
+        {{- $entity = merge $entity (dict
+              "@type" "LearningResource"
+              "learningResourceType" "Lesson"
+              "educationalUse" "practice") -}}
+        {{- with $source -}}
+          {{- $entity = merge $entity (dict "isBasedOn" (dict "@type" "CreativeWork" "name" (printf "%s, Section %s" . $page.Params.source_section))) -}}
+        {{- end -}}
+      {{- else if $page.Params.source_chapters -}}
+        {{- $entity = merge $entity (dict
+              "@type" "Quiz"
+              "educationalUse" "self-assessment") -}}
+      {{- else if $page.Params.source_chapter -}}
+        {{- $entity = merge $entity (dict
+              "@type" "LearningResource"
+              "learningResourceType" "unit") -}}
+        {{- with $source -}}
+          {{- $entity = merge $entity (dict "isBasedOn" (dict "@type" "CreativeWork" "name" (printf "%s, Chapter %s" . $page.Params.source_chapter))) -}}
+        {{- end -}}
+      {{- else -}}
+        {{- $entity = merge $entity (dict "@type" "LearningResource") -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $graph = $graph | append $entity -}}
+  {{- end -}}
+{{- end -}}
+
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>

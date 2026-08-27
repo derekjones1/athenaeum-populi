@@ -84,7 +84,8 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
   loudly if the file is absent, `init` creates it, and `--ledger <path>`
   points at another one
 - `npm run build` — clean production build plus global Pagefind
-- `npm run check:build` — route, link, search, and file-count gates
+- `npm run check:build` — route, link, search, SEO (composed titles,
+  breadcrumb/entity JSON-LD), and file-count gates
 - `npm run ci` — complete local equivalent of CI
 - `npm run baseline:update` — recount the three published floors and rewrite
   package.json's `--min-verified`, `--min-replayed`, and `--min-exercises` in

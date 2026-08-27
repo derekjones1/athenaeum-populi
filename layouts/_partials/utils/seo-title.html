@@ -1,0 +1,57 @@
+{{- /* Return the <title> tag text for a page. This is the search-result
+     headline and browser-tab label ONLY — the on-page H1, sidebar, and
+     breadcrumb keep using the plain front-matter title.
+
+     The composed forms add the context a search listing needs (book,
+     chapter number, the practice differentiator) that the bare page title
+     lacks once it is ripped out of the site's navigation:
+
+       home            Athenaeum Populi – Free Interactive Textbooks
+       subject shelf   Math – Free Interactive Textbooks | Athenaeum Populi
+       book root       Prealgebra – Free Interactive Math Textbook | Athenaeum Populi
+       chapter         Decimals – Prealgebra, Chapter 5 | Athenaeum Populi
+       section         Solve Equations with Decimals – Prealgebra Practice, Section 5.4 | Athenaeum Populi
+       knowledge check Knowledge Check: Chapters 1–6 – Prealgebra | Athenaeum Populi
+       anything else   About | Athenaeum Populi
+
+     A page may override the whole thing with `seo_title` in front matter.
+     tools/check-seo.mjs asserts every built page carries a suffixed,
+     corpus-unique title. */ -}}
+{{- $page := . -}}
+{{- $siteTitle := site.Title -}}
+{{- $title := "" -}}
+{{- if $page.Params.seo_title -}}
+  {{- $title = $page.Params.seo_title -}}
+{{- else if $page.IsHome -}}
+  {{- $title = printf "%s – Free Interactive Textbooks" $siteTitle -}}
+{{- else -}}
+  {{- $pageTitle := $page.Title | plainify | htmlUnescape -}}
+  {{- $core := $pageTitle -}}
+  {{- $book := partial "utils/book-root.html" $page -}}
+  {{- with $book -}}
+    {{- $bookTitle := .Title | plainify | htmlUnescape -}}
+    {{- if eq .RelPermalink $page.RelPermalink -}}
+      {{- /* The book's own cover page: name the subject shelf too. */ -}}
+      {{- $subject := "" -}}
+      {{- with .Parent -}}{{- $subject = .Title | plainify | htmlUnescape -}}{{- end -}}
+      {{- $core = printf "%s – Free Interactive %s Textbook" $bookTitle $subject -}}
+    {{- else if $page.Params.source_section -}}
+      {{- /* The section number is load-bearing: OpenStax reuses section
+           titles within one book (Prealgebra 2.3 and 8.1 share theirs),
+           and the checker requires corpus-unique titles. */ -}}
+      {{- $core = printf "%s – %s Practice, Section %s" $pageTitle $bookTitle $page.Params.source_section -}}
+    {{- else if $page.Params.source_chapter -}}
+      {{- $core = printf "%s – %s, Chapter %s" $pageTitle $bookTitle $page.Params.source_chapter -}}
+    {{- else -}}
+      {{- /* Other book-scoped pages (knowledge checks). */ -}}
+      {{- $core = printf "%s – %s" $pageTitle $bookTitle -}}
+    {{- end -}}
+  {{- else -}}
+    {{- if and $page.IsSection $page.Parent $page.Parent.IsHome -}}
+      {{- /* Subject shelves: Math, Biology, Chemistry, Physics. */ -}}
+      {{- $core = printf "%s – Free Interactive Textbooks" $pageTitle -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $title = printf "%s | %s" $core $siteTitle -}}
+{{- end -}}
+{{- return $title -}}

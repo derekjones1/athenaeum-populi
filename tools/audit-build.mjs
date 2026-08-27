@@ -493,8 +493,13 @@ else if (built.length >= maxFiles * filesWarnAt) {
         allowed: /(?:^|\/)(?:fillin|graphplot)-engine\./.test(relative(root, file)) ? ENGINE_INERT_HOSTS : BASE_INERT_HOSTS,
         text: readFileSync(file, 'utf8'),
       })),
-    ...htmlDocuments.flatMap((document, index) => [...document.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)]
-      .map((match) => ({ label: `inline script (document ${index})`, allowed: BASE_INERT_HOSTS, text: match[1] }))),
+    ...htmlDocuments.flatMap((document, index) => [...document.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)]
+      // JSON-LD blocks are inert data the browser never executes — the same
+      // exemption the CDN dependency check applies. Their schema.org /
+      // creativecommons.org URLs are the point, and check-seo.mjs already
+      // requires every such block to parse as JSON.
+      .filter((match) => htmlAttribute(`<script ${match[1]}>`, 'type').toLowerCase() !== 'application/ld+json')
+      .map((match) => ({ label: `inline script (document ${index})`, allowed: BASE_INERT_HOSTS, text: match[2] }))),
   ];
   // Absolute AND protocol-relative forms: on the HTTPS site,
   // src="//host/x.js" loads executable HTTPS code exactly like
