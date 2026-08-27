@@ -680,3 +680,40 @@ test('a correct Enter-key submission keeps focus inside the exercise', async ({ 
   expect(await page.evaluate(() => document.activeElement !== document.body)).toBe(true);
   expect(await card.evaluate((el) => el.contains(document.activeElement))).toBe(true);
 });
+
+test('every rail and sidebar carries a contact mailto whose subject names the page', async ({ page }) => {
+  // utils/contact-mailto.html: the "Questions or concerns?" link renders in
+  // the right rail (toc.html, xl+) and twice in the sidebar (sidebar.html:
+  // the phone drawer, and a tablet copy that custom.css hides at xl+ where
+  // the rail takes over) — same href in all three, subject pre-filled as
+  // "<Book> <section#> - <Title>" from the OpenStax front matter, so a
+  // reader's email arrives already saying where they were.
+  const cases = [
+    ['/math/precalculus/05-trigonometric-functions/01-angles/',
+      'mailto:contact@athenaeumpopuli.org?subject=Precalculus%205.1%20-%20Angles'],
+    ['/math/precalculus/05-trigonometric-functions/',
+      'mailto:contact@athenaeumpopuli.org?subject=Precalculus%20Chapter%205%20-%20Trigonometric%20Functions'],
+    ['/math/precalculus/knowledge-check-01-06/',
+      'mailto:contact@athenaeumpopuli.org?subject=Precalculus%20-%20Knowledge%20Check%3A%20Chapters%201%E2%80%936'],
+  ];
+  for (const [route, href] of cases) {
+    await gotoBuiltPage(page, route);
+    const railLink = page.locator('nav.hextra-toc a[href^="mailto:"]');
+    await expect(railLink, `rail contact link on ${route}`).toHaveCount(1);
+    await expect(railLink).toHaveAttribute('href', href);
+    const sidebarLinks = page.locator('aside a[href^="mailto:"]');
+    await expect(sidebarLinks, `sidebar contact links on ${route}`).toHaveCount(2);
+    for (const link of await sidebarLinks.all()) {
+      await expect(link).toHaveAttribute('href', href);
+    }
+  }
+
+  // The About page opens with a Contact us section whose in-content link
+  // (contact-email shortcode) carries the same address, subject "About".
+  await gotoBuiltPage(page, '/about/');
+  const aboutLink = page.locator('article a[href^="mailto:"], main a[href^="mailto:"]').first();
+  await expect(aboutLink).toHaveAttribute(
+    'href', 'mailto:contact@athenaeumpopuli.org?subject=About',
+  );
+  await expect(aboutLink).toHaveText('contact@athenaeumpopuli.org');
+});

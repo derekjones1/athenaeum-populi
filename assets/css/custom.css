@@ -317,3 +317,17 @@ multiple-choice:not(:defined) .ap-mc-option {
   color: var(--ap-muted, #6f6e69);
   margin: 8px 0 0;
 }
+
+/* --- Contact link ----------------------------------------------------------
+   The "Questions or concerns? Email us!" mailto renders in two places: the
+   right rail's sticky bottom block (xl+, layouts/_partials/toc.html) and the
+   left sidebar (layouts/_partials/sidebar.html) for every width below that —
+   the phone drawer and the md–xl sidebar. This rule retires the sidebar copy
+   exactly where the rail takes over (80rem = Tailwind's xl, the rail's own
+   breakpoint), so the link appears once at every width. The compiled theme
+   CSS has no hx:xl:hidden utility to do this, hence the bespoke class. */
+@media (min-width: 80rem) {
+  .ap-contact-sidebar {
+    display: none;
+  }
+}

@@ -4,6 +4,15 @@ description: What Athenaeum Populi is, how it is built, and how it stays free an
 toc: false
 ---
 
+## Contact us
+
+Questions, concerns, corrections, or ideas — about a section, a graded
+answer, or the site itself? Email us at {{< contact-email >}}. When you
+write from a book page, the "Questions or concerns?" link there fills in
+the subject line with the section you were reading.
+
+## What is Athenaeum Populi?
+
 Athenaeum Populi is a free, nonprofit, open-source library of textbooks with
 interactive learning objects. It exists to make high-quality learning material
 freely usable by anyone, anywhere, in as many languages as possible.

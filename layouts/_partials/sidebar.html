@@ -51,6 +51,12 @@
            Math are both page-backed menu entries). -->
       {{ template "sidebar-main" (dict "context" site.Home "pageURL" $pageURL "page" $context "toc" true "scope" true "navRoot" $navRoot) -}}
       {{ template "sidebar-footer" }}
+      {{- /* Athenaeum: contact link (see utils/contact-mailto.html). This ul
+           is the phone drawer, where the right rail's copy of the link never
+           exists — no width class needed. */ -}}
+      {{- with partial "utils/contact-mailto.html" $context -}}
+        <li class="hx:mt-5">{{ template "sidebar-item-link" dict "active" false "open" false "title" "Questions or concerns? Email us!" "link" . }}</li>
+      {{- end -}}
     </ul>
 
     <!-- Sidebar on large screen -->
@@ -61,6 +67,13 @@
       <ul class="hx:flex hx:flex-col hx:gap-1 hx:max-md:hidden">
         {{ template "sidebar-main" (dict "context" $navRoot "page" $context  "pageURL" $pageURL) }}
         {{ template "sidebar-footer" }}
+        {{- /* Athenaeum: contact link for tablet widths (md–xl), where the
+             left sidebar shows but the right rail — which carries the same
+             link — doesn't exist yet. .ap-contact-sidebar (custom.css) hides
+             it at xl+ so the link renders exactly once at every width. */ -}}
+        {{- with partial "utils/contact-mailto.html" $context -}}
+          <li class="hx:mt-5 ap-contact-sidebar">{{ template "sidebar-item-link" dict "active" false "open" false "title" "Questions or concerns? Email us!" "link" . }}</li>
+        {{- end -}}
       </ul>
     {{ end -}}
   </div>

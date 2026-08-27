@@ -44,6 +44,12 @@ disableKinds = ["taxonomy", "term"]
 
 # --- Params -----------------------------------------------------------------
 [params]
+  # Reader-facing contact address. Rendered as a persistent "Questions or
+  # concerns?" mailto link in the right rail (layouts/_partials/toc.html),
+  # with the subject line pre-filled from the page being read.
+  [params.contact]
+    email = "contact@athenaeumpopuli.org"
+
   # Let the documentation rails use the viewport edges. The article itself
   # keeps Hextra's readable max-width inside the space between the two rails.
   [params.page]

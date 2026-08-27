@@ -1,0 +1,40 @@
+{{- /* Return the reader-contact mailto href for a page, or "" when
+     site.Params.contact.email is unset.
+
+     The subject line names what the reader was looking at, so their email
+     arrives already saying where they were: "<Book> <section#> - <Title>"
+     from the OpenStax front matter (`source_section` on sections,
+     `source_chapter` on chapter indexes), "<Book> - <Title>" for other
+     book-scoped pages (knowledge checks), and the bare page title elsewhere.
+     The book is the ancestor (or self) sitting directly under the subject
+     shelf — the same walk the sidebar override uses to root navigation.
+
+     Callers: toc.html (right rail), sidebar.html (drawer / narrow screens),
+     and the contact-email shortcode (in-content links, e.g. About). */ -}}
+{{- $page := . -}}
+{{- $href := "" -}}
+{{- $email := "" -}}
+{{- with site.Params.contact -}}{{- $email = .email | default "" -}}{{- end -}}
+{{- if $email -}}
+  {{- $book := "" -}}
+  {{- $subjectRoot := $page.FirstSection -}}
+  {{- range $p := ($page.Ancestors | append $page) -}}
+    {{- with $p.Parent -}}
+      {{- if and $subjectRoot (eq .RelPermalink $subjectRoot.RelPermalink) -}}
+        {{- $book = $p -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $emailSubject := $page.Title | plainify -}}
+  {{- with $book -}}
+    {{- if $page.Params.source_section -}}
+      {{- $emailSubject = printf "%s %s - %s" .Title $page.Params.source_section ($page.Title | plainify) -}}
+    {{- else if $page.Params.source_chapter -}}
+      {{- $emailSubject = printf "%s Chapter %s - %s" .Title $page.Params.source_chapter ($page.Title | plainify) -}}
+    {{- else if ne .RelPermalink $page.RelPermalink -}}
+      {{- $emailSubject = printf "%s - %s" .Title ($page.Title | plainify) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $href = printf "mailto:%s?subject=%s" $email (replace ($emailSubject | urlquery) "+" "%20") -}}
+{{- end -}}
+{{- return $href -}}

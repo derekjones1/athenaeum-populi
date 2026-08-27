@@ -1,0 +1,8 @@
+{{- /* In-content contact link: renders site.Params.contact.email as a
+     mailto whose subject names the current page, via the same
+     utils/contact-mailto.html partial the right rail and sidebar use.
+     Takes no arguments; renders nothing when no contact email is
+     configured. */ -}}
+{{- $email := "" -}}
+{{- with site.Params.contact -}}{{- $email = .email | default "" -}}{{- end -}}
+{{- with $email -}}<a href="{{ partial "utils/contact-mailto.html" $.Page | safeURL }}">{{ . }}</a>{{- end -}}
