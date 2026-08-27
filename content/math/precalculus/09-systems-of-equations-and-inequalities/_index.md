@@ -3,7 +3,7 @@ title: Systems of Equations and Inequalities
 description: Linear systems in two and three variables, nonlinear systems, partial fractions, matrices and matrix operations, Gaussian elimination, inverses, and Cramer’s Rule.
 source_chapter: "9"
 authoring_status: scaffolded
-weight: 9
+weight: 10
 ---
 
 This chapter is scaffolded but not yet written. Its provenance is pinned to

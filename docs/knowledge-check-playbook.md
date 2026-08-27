@@ -39,9 +39,28 @@ before building cumulative assessments for an image-dependent subject.
   odd-numbered answers, but parity can change by chapter—inspect the actual key
   pages rather than assuming.
 - Same shortcodes as sections (`{{</* fillin */>}}`,
-  `{{</* multiplechoice */>}}`), just without hints. `answer` LaTeX is
-  single-backslash; the grader must self-grade each answer `correct` (run
-  `npm run verify-section`).
+  `{{</* multiplechoice */>}}`, `{{</* graphplot */>}}`), just without hints —
+  the no-hint lint reads the whole file, so it covers `graphplot`'s `hint=`
+  too, and the regular-section graphplot-requires-hint rule does not apply
+  here. `answer` LaTeX is single-backslash; the grader must self-grade each
+  answer `correct` (run `npm run verify-section`).
+- **Graphing coverage follows the source.** Where a section's Review
+  Exercises / Practice Test pool leans on "graph the function" / "sketch"
+  asks and the object family has a graphplot answer form (line, points,
+  quadratic, asymptotes, system — the authoring playbook's GraphPlot section
+  is the grammar), represent that section with at least one `graphplot`
+  item, keyed from a source item whose printed Answer Key shows the answer
+  graph. Inspect that key graph visually and re-derive the object from the
+  printed function — the picture is the official answer, so "visibly present
+  in the key" means the graph. All graphplot validation applies unchanged
+  (lattice reachability, `plotPoints` slack, the three-point rule). Where
+  the family has no answer form (exponential, logarithmic, and trigonometric
+  curves stay static figures, per the graphplot conversion ledger's
+  adjudications), property fill-ins and recognition MCs remain the right
+  representation — do not force a conversion. A multipart source item
+  ("standard form, vertex, intercepts, and graph") may contribute its graph
+  part as the graphplot; record the split in the ledger like any other
+  part-selection.
 - Use `answerMode="unordered"` when an item asks for a set of roots or solutions
   whose order is immaterial. Do not use it for ordered pairs/triples, sequences,
   or any prompt that prescribes an order.
@@ -62,7 +81,9 @@ Build a ledger before authoring. For every selected item record:
 - chapter and section, plus the printed Practice Test or Review Exercise
   number;
 - visually inspected question page and Answer Key page;
-- exact CNXML and printed prompts, plus the official answer;
+- exact CNXML and printed prompts, plus the official answer (for a
+  `graphplot`, the Answer Key's printed graph is the official answer — record
+  the key page and what the graph shows: intercepts, vertex, asymptotes);
 - independently computed answer;
 - chosen component and any unavoidable response-mode adaptation.
 

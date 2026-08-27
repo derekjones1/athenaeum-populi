@@ -3,7 +3,7 @@ title: Introduction to Calculus
 description: Finding limits numerically and graphically, the properties of limits, continuity, and a first look at derivatives.
 source_chapter: "12"
 authoring_status: scaffolded
-weight: 12
+weight: 13
 ---
 
 This chapter is scaffolded but not yet written. Its provenance is pinned to

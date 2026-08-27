@@ -13,6 +13,10 @@
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
   },
+  "0460805cf4d276a6": {
+   "verdict": "keep",
+   "note": "Knowledge Check item; same shown-graph interval read as its sibling — recognition MC stays"
+  },
   "053bad54fd6f2380": {
    "verdict": "keep",
    "note": "notgraph: isGraphTopic matched the word 'plot' in a garden plot, not a graph — nothing here is about a coordinate system at all"
@@ -129,6 +133,10 @@
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
   },
+  "16025f27bd57889c": {
+   "verdict": "keep",
+   "note": "Knowledge Check item; vertical asymptote as an equation answer (x=5) matches the section convention; an asymptotes graphplot would leak its sibling horizontal-asymptote answer on the same page"
+  },
   "16d74a6c5f9ae71c": {
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
@@ -160,6 +168,10 @@
   "1e3be80bd4626754": {
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "1f1353de26a6a550": {
+   "verdict": "keep",
+   "note": "Knowledge Check item; scalar width of the same optimization — nothing to plot"
   },
   "1f522f3ccc420e02": {
    "verdict": "keep",
@@ -341,6 +353,10 @@
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
   },
+  "3ba3f0fd9b762450": {
+   "verdict": "keep",
+   "note": "Knowledge Check item; answer is the transformed EQUATION 7(6.5)^{-x}, not a drawable line/parabola — graphplot has no exponential answer form"
+  },
   "3bac08ba7506b6ec": {
    "verdict": "keep",
    "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
@@ -465,6 +481,10 @@
    "verdict": "keep",
    "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
   },
+  "5571a1c713099439": {
+   "verdict": "keep",
+   "note": "Knowledge Check item; optimization word problem whose answer is a scalar length — nothing to plot"
+  },
   "55779c0146d37435": {
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
@@ -472,6 +492,10 @@
   "55be7ccc89739995": {
    "verdict": "keep",
    "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "568ba0bf94396014": {
+   "verdict": "keep",
+   "note": "Knowledge Check item (no-hint cumulative test, fillin/MC only per knowledge-check playbook); reads an interval off a shown parabola — recognition MC, not a plot-the-object ask"
   },
   "56d6e6756d7158fb": {
    "verdict": "keep",
@@ -584,6 +608,10 @@
   "6a715f2f84e44795": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "6b2877d06311ff09": {
+   "verdict": "keep",
+   "note": "Knowledge Check item; horizontal asymptote equation answer (y=1), same reasoning as its sibling"
   },
   "6b5fa3a1bb435011": {
    "verdict": "keep",
@@ -900,6 +928,10 @@
   "a60a6736bf324fcf": {
    "verdict": "keep",
    "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "a672e15791724b9d": {
+   "verdict": "keep",
+   "note": "Knowledge Check item; vertical asymptote equation answer for a log function — graphplot asymptote form is for drawable member lines on section pages, KC stays fillin"
   },
   "a7f887823c37b167": {
    "verdict": "keep",

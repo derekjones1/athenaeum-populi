@@ -377,6 +377,13 @@ function checkSolve(question, answer, explicitTarget = null) {
       return fail('solve', `answer ${JSON.stringify(part.raw)} solves for ${assignment.variable}, prompt asks for ${target}`);
     }
     const value = assignment ? assignment.value : part.expr;
+    // subs() itself corrupts an imaginary-part-exactly-+1 root (see
+    // substitutesUnsoundly), so the root must be screened before the
+    // substitution exists — afterwards there is no Multiply node left for
+    // numericValue's structural guards to find.
+    if (substitutesUnsoundly(value)) {
+      return skip('solve', 'complex root the engine substitutes wrong');
+    }
     const { equal, witness } = equivalentNumerically(
       equation.ops[0].subs({ [target]: value }),
       equation.ops[1].subs({ [target]: value }),
@@ -726,6 +733,11 @@ function checkFunctionSolve(question, answer) {
   if (roots.some((root) => !root.expr)) return skip('function-solve', 'unparseable answer (e.g. "no solution")');
   for (const root of roots) {
     const value = asAssignment(root.expr)?.value ?? root.expr;
+    // Same pre-substitution screen as checkSolve: subs() corrupts an
+    // imaginary-part-exactly-+1 root before any later guard can see it.
+    if (substitutesUnsoundly(value)) {
+      return skip('function-solve', 'complex root the engine substitutes wrong');
+    }
     const { equal, witness } = equivalentNumerically(def.rhs.subs({ [def.variable]: value }), k);
     if (equal === false) {
       return fail('function-solve', `root ${JSON.stringify(root.raw)} does not satisfy the target (${describePoint(witness)})`);

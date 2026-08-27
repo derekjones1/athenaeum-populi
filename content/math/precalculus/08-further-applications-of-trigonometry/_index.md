@@ -3,7 +3,7 @@ title: Further Applications of Trigonometry
 description: The Law of Sines and Law of Cosines, polar coordinates and their graphs, the polar form of complex numbers, parametric equations, and vectors.
 source_chapter: "8"
 authoring_status: scaffolded
-weight: 8
+weight: 9
 ---
 
 This chapter is scaffolded but not yet written. Its provenance is pinned to

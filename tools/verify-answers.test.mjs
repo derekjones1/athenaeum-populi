@@ -338,6 +338,30 @@ assert.equal(analyze('If $f(x)=x^2+3x+5$, evaluate $f(2+5i)$.', '-4+35i').status
 assert.equal(analyze('If $f(x)=x^2+3x+5$, evaluate $f(2)$.', '15').status, 'pass');
 assert.equal(analyze('If $f(x)=x^2+3x+5$, evaluate $f(2)$.', '16').status, 'fail');
 
+/* ---- the solve-class twin of the same narrowing (August 26, 2026) ---------
+ * Found by this checker reporting the chapters 1–6 Knowledge Check's CORRECT
+ * roots of $x^2-4x+5=0$ ("2+i,2-i") as a failure: checkSolve pre-substitutes
+ * the root, subs() folds $-4(2+i)$ to $-4i$ (dropping the $-8$), and the
+ * left side "evaluates" to 8 with no Multiply node left for numericValue's
+ * structural guards to see. The +1-imaginary-part root is screened before
+ * substitution, in checkSolve and checkFunctionSolve both.
+ */
+assert.equal(
+  analyze('Solve $x^2-4x+5=0$ over the complex number system. Enter both solutions, separated by a comma.', '2+i,2-i').status,
+  'skip',
+  'a root with imaginary part exactly +1 is the shape subs() gets wrong',
+);
+assert.equal(
+  analyze('For $f(x)=x^2-4x+5$, solve $f(x)=0$.', '2+i,2-i').status,
+  'skip',
+);
+// Everything one step away still substitutes correctly, and stays checked:
+// an imaginary part of -1, and real roots.
+assert.equal(analyze('Solve $x^2-4x+5=0$.', '2-i').status, 'pass');
+assert.equal(analyze('Solve $x^2-4x+5=0$.', '3-i').status, 'fail');
+assert.equal(analyze('Solve $x^2-4x-5=0$. Enter both solutions, separated by a comma.', '5,-1').status, 'pass');
+assert.equal(analyze('Solve $x^2-4x-5=0$. Enter both solutions, separated by a comma.', '5,1').status, 'fail');
+
 // The re-expression class read `f(8-i)` as a product of a free symbol f with
 // its argument and sampled f at 1.3178, manufacturing a disagreement with the
 // right answer. An application of a name the question DEFINES is

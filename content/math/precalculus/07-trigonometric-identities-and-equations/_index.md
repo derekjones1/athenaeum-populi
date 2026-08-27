@@ -3,7 +3,7 @@ title: Trigonometric Identities and Equations
 description: Simplifying and verifying identities, sum and difference identities, double-angle and half-angle formulas, solving trigonometric equations, and modeling.
 source_chapter: "7"
 authoring_status: scaffolded
-weight: 7
+weight: 8
 ---
 
 This chapter is scaffolded but not yet written. Its provenance is pinned to

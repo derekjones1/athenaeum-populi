@@ -3,7 +3,7 @@ title: Sequences, Probability and Counting Theory
 description: Sequences and their notations, arithmetic and geometric sequences, series, counting principles, the Binomial Theorem, and probability.
 source_chapter: "11"
 authoring_status: scaffolded
-weight: 11
+weight: 12
 ---
 
 This chapter is scaffolded but not yet written. Its provenance is pinned to

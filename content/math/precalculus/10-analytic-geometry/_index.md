@@ -3,7 +3,7 @@ title: Analytic Geometry
 description: The ellipse, the hyperbola, and the parabola, rotation of axes, and conic sections in polar coordinates.
 source_chapter: "10"
 authoring_status: scaffolded
-weight: 10
+weight: 11
 ---
 
 This chapter is scaffolded but not yet written. Its provenance is pinned to

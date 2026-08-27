@@ -148,6 +148,10 @@
   "01940fa70f4ced39": {
    "verdict": "ok"
   },
+  "01a41e2eb953386e": {
+   "verdict": "ok",
+   "note": "tan period pi/B=pi/6; key p1336 PT#21"
+  },
   "01a7cacd16d0ab1f": {
    "verdict": "ok"
   },
@@ -429,6 +433,10 @@
   },
   "045e3867a65de7bc": {
    "verdict": "ok"
+  },
+  "0460805cf4d276a6": {
+   "verdict": "ok",
+   "note": "same parabola -> decreasing (-inf,2); key p1271 #27"
   },
   "0465a3ff3ce13c30": {
    "verdict": "ok"
@@ -862,6 +870,10 @@
   "082f4e56ded3078d": {
    "verdict": "ok",
    "note": "f(x) = -3x/4 + 6: f(0)=6, f(4)=3, f(8)=0, matching the displayed points. Grid widened -8..10 x -8..8 -> -12..12 both axes for plotPoints slack (6 reachable, was exactly 3)."
+  },
+  "0832eb53e6f9c1f9": {
+   "verdict": "ok",
+   "note": "b^3=60.75/2.25=27 -> b=3, a=2.25/9=0.25; key p1315 #3"
   },
   "0834aa9783b87ae6": {
    "verdict": "ok"
@@ -1496,6 +1508,10 @@
   "0e4170ff2f2789bd": {
    "verdict": "ok"
   },
+  "0e430b73a2d0bc2f": {
+   "verdict": "ok",
+   "note": "x+4=+-18 -> x=14,-22; key p1272 #69"
+  },
   "0e44b32d88dec820": {
    "verdict": "ok",
    "note": "Factored (x-5)(x+5)/[x(x-1)(x-5)] = (x+5)/[x(x-1)] after cancelling x-5; VA at zeros of x(x-1): x=0,1; matches CNXML Try It 5."
@@ -1539,6 +1555,10 @@
   "0eae72763be2156e": {
    "verdict": "ok"
   },
+  "0eb01ba83862780c": {
+   "verdict": "ok",
+   "note": "s=r*theta=7*85pi/180=10.3847 -> 10.385; key p1324 #5"
+  },
   "0eb1795ca275cba8": {
    "verdict": "ok"
   },
@@ -1574,6 +1594,10 @@
   },
   "0f2ec107cef6fdbb": {
    "verdict": "ok"
+  },
+  "0f372156cb1ff877": {
+   "verdict": "ok",
+   "note": "each input a,c,e appears once -> function; key p1270 #1 \"function\""
   },
   "0f3e6616bcd49fbb": {
    "verdict": "ok"
@@ -1804,6 +1828,10 @@
   "11ad41642266c641": {
    "verdict": "ok"
   },
+  "11b0b76ae49f2d07": {
+   "verdict": "ok",
+   "note": "x^2-4x-12=(x-6)(x+2), exclude -2,6; key p1271 #21"
+  },
   "11b428a0b09bf428": {
    "verdict": "ok"
   },
@@ -1953,6 +1981,10 @@
   },
   "12e4bc66dd1c570b": {
    "verdict": "ok"
+  },
+  "12e6421033b5056f": {
+   "verdict": "ok",
+   "note": "(y+3)^2=4x+5 -> x=((y+3)^2-5)/4; roundtrip g(f(7))=7 checked; key p1298 #47"
   },
   "12f014c12453fd4f": {
    "verdict": "ok"
@@ -2207,6 +2239,10 @@
   "15fa9d9be7e2f780": {
    "verdict": "ok"
   },
+  "16025f27bd57889c": {
+   "verdict": "ok",
+   "note": "denominator zero at x=5, no common factor; key p1297 #37"
+  },
   "16041e309723c51f": {
    "verdict": "ok"
   },
@@ -2292,6 +2328,10 @@
   "16e695e3cb488e49": {
    "verdict": "ok",
    "note": "Leading term (the term with the highest power, 6) is -x^6. Matches CNXML ti_03_03_03."
+  },
+  "16ead049a3a8b54e": {
+   "verdict": "ok",
+   "note": "roots -2,4,-1/2 each substitute to 0 exactly; key p1297 #31"
   },
   "16f107d82f1424bb": {
    "verdict": "ok"
@@ -3028,6 +3068,10 @@
   "1f11361ff613897c": {
    "verdict": "ok"
   },
+  "1f1353de26a6a550": {
+   "verdict": "ok",
+   "note": "w=(600-300)/2=150; key p1297 #11"
+  },
   "1f168e21d9da2167": {
    "verdict": "ok"
   },
@@ -3646,6 +3690,10 @@
   "25b5bcfc9c4adb78": {
    "verdict": "ok"
   },
+  "25c10bfa541ebffc": {
+   "verdict": "ok",
+   "note": "cos(pi/6)=sqrt3/2 -> pi/6; acos numeric check; key p1335 #29"
+  },
   "25c344e279a40578": {
    "verdict": "ok"
   },
@@ -3823,6 +3871,10 @@
   },
   "27c97105b8f77643": {
    "verdict": "ok"
+  },
+  "27d8692ad476afc1": {
+   "verdict": "ok",
+   "note": "k=6/2=3, y=3*8*3=72; key p1298 #51"
   },
   "27dac81ff5c5242a": {
    "verdict": "ok"
@@ -4187,6 +4239,10 @@
   "2b8ac80e7645ea02": {
    "verdict": "ok"
   },
+  "2b8d432599f4f89c": {
+   "verdict": "ok",
+   "note": "15sin70deg=14.09539 -> 14.0954; key p1325 #49"
+  },
   "2b8e0186f4a0d5ed": {
    "verdict": "ok"
   },
@@ -4438,6 +4494,10 @@
   "2e51e4dc1cc6299e": {
    "verdict": "ok"
   },
+  "2e66d1a18eb34081": {
+   "verdict": "ok",
+   "note": "rate 53000/40=1325/yr, 85000+5*1325=91625; key p1279 #33"
+  },
   "2e779866f8ac7504": {
    "verdict": "ok",
    "note": "f(x)=-5(4)^x-1: as x->infinity, 4^x->infinity so f->-infinity; matches CNXML solution exactly (computed independently, not copied from key)."
@@ -4523,6 +4583,10 @@
   "2f8754086e0105c8": {
    "verdict": "ok",
    "note": "(-5+3i)-(6-i)=(-5-6)+(3+1)i=-11+4i; recomputed independently, matches CNXML end-of-section answer key."
+  },
+  "2f91285768081e8a": {
+   "verdict": "ok",
+   "note": "5-6(3x+2)=-7-18x; key p1271 #35"
   },
   "2f9283f173196938": {
    "verdict": "ok"
@@ -4671,6 +4735,10 @@
   },
   "3162de4e8175cfe6": {
    "verdict": "ok"
+  },
+  "3164babcac83a52c": {
+   "verdict": "ok",
+   "note": "sum of logs -> log8(5*13*x*y)=log8(65xy); key p1316 #27"
   },
   "316ffe689c703495": {
    "verdict": "ok"
@@ -4850,6 +4918,10 @@
   },
   "33339b8f89a4becb": {
    "verdict": "ok"
+  },
+  "3337e156776a0ead": {
+   "verdict": "ok",
+   "note": "base 0.825<1 -> decay; key p1315 #1"
   },
   "3338622430eca32f": {
    "verdict": "ok"
@@ -5052,6 +5124,10 @@
    "verdict": "ok",
    "note": "Denominator (x-3)^2 zero only at x=3; matches CNXML Try It 7."
   },
+  "35b890124121a2c1": {
+   "verdict": "ok",
+   "note": "highest power 5; key p1297 #13"
+  },
   "35b8c87d0ff2744d": {
    "verdict": "ok"
   },
@@ -5246,6 +5322,10 @@
   },
   "376aaf594ebadaf9": {
    "verdict": "ok"
+  },
+  "376df053598b74a3": {
+   "verdict": "ok",
+   "note": "perp slope -1/5, b=20+1=21; key p1279 #19 y=-0.2x+21"
   },
   "376e66d81f563dd6": {
    "verdict": "ok"
@@ -5662,6 +5742,10 @@
   "3ba3523f2e42da55": {
    "verdict": "ok"
   },
+  "3ba3f0fd9b762450": {
+   "verdict": "ok",
+   "note": "reflect y-axis: x->-x, stretch 7 -> 7(6.5)^(-x); key p1315 #11"
+  },
   "3ba573ee07582a03": {
    "verdict": "ok",
    "note": "Range [-7,7] for f(x)=7cos(x); restated from Try It 10's amplitude ask (source answer 7) to avoid retyping the printed coefficient."
@@ -5688,6 +5772,10 @@
   "3bd9ccb518b73ec7": {
    "verdict": "ok"
   },
+  "3bda6ec3fd802fd9": {
+   "verdict": "ok",
+   "note": "RE#21 m49327 (fs-id1165135205940, \"Sketch a graph of f(t)=2t-5\", variable t->x for the grid): slope 2, intercept -5; key p1279 #21 graph marks (0,-5) and (2.5,0), both on y=2x-5; 8 reachable lattice points on -7..7 for plotPoints 3"
+  },
   "3be25ebdc5b1ec08": {
    "verdict": "ok",
    "note": "3^2=9 converts to log_3(9)=2; distractors are base/argument/exponent swaps of the correct conversion."
@@ -5712,6 +5800,10 @@
   },
   "3c383b0397e6e38e": {
    "verdict": "ok"
+  },
+  "3c3c51b37b76d265": {
+   "verdict": "ok",
+   "note": "QII: pi-3pi/4=pi/4; key p1325 #21"
   },
   "3c5f96090fbdd378": {
    "verdict": "ok",
@@ -5916,6 +6008,10 @@
   },
   "3ee3675dd755ce1d": {
    "verdict": "ok"
+  },
+  "3eed832e4930fd62": {
+   "verdict": "ok",
+   "note": "y=9+10x -> x=(y-9)/10; key p1272 #73"
   },
   "3ef75948f2de28d0": {
    "verdict": "ok"
@@ -6194,6 +6290,10 @@
   },
   "41c78535145c17e6": {
    "verdict": "ok"
+  },
+  "41de4ac288224f08": {
+   "verdict": "ok",
+   "note": "tan pi/4 = 1; key p1325 #27"
   },
   "41e8fbb3b69c36ff": {
    "verdict": "ok",
@@ -6689,6 +6789,10 @@
   },
   "46f0147ff6eb93c9": {
    "verdict": "ok"
+  },
+  "470167b117d65bf9": {
+   "verdict": "ok",
+   "note": "3(-x)^4=3x^4 -> even; key p1271 #57"
   },
   "47030baec9c45478": {
    "verdict": "ok"
@@ -7277,6 +7381,10 @@
    "verdict": "ok",
    "note": "5*pi/3 rad (=300 deg) is in QIV; reference angle = 2*pi - 5*pi/3 = pi/3"
   },
+  "4d286caffa19929e": {
+   "verdict": "ok",
+   "note": "-7<3x-2<7 -> -5/3<x<3; key p1272 #71"
+  },
   "4d328584d474a723": {
    "verdict": "ok"
   },
@@ -7367,6 +7475,10 @@
    "verdict": "ok",
    "note": "Practice ex19: D=1 read directly, matches CNXML midline y=1."
   },
+  "4e78bf881669c9a4": {
+   "verdict": "ok",
+   "note": "exponential with positive stretch -> range (0,inf); key p1315 #9"
+  },
   "4e7c92c87fc69c2b": {
    "verdict": "ok"
   },
@@ -7437,6 +7549,10 @@
   },
   "4f761c43cde983b9": {
    "verdict": "ok"
+  },
+  "4f76b7a807c37e61": {
+   "verdict": "ok",
+   "note": "both slopes 1/3, intercepts differ -> parallel; key p1279 #13"
   },
   "4f817b6a4e8dba3f": {
    "verdict": "ok"
@@ -7927,6 +8043,10 @@
   "5570fb1bafd3defd": {
    "verdict": "ok"
   },
+  "5571a1c713099439": {
+   "verdict": "ok",
+   "note": "A=L(600-L)/2 max at L=300; key p1297 #11 \"300 by 150, longer side parallel to river\""
+  },
   "55779c0146d37435": {
    "verdict": "ok"
   },
@@ -8039,11 +8159,19 @@
   "568b17633f8e0dc5": {
    "verdict": "ok"
   },
+  "568ba0bf94396014": {
+   "verdict": "ok",
+   "note": "vertex x=2 (a=1,b=-4 -> x=4/2=2), opens up -> increasing (2,inf); key p1271 #27"
+  },
   "568d00c34da5bbdb": {
    "verdict": "ok"
   },
   "56a03bde49b87338": {
    "verdict": "ok"
+  },
+  "56b2fa4a97c50395": {
+   "verdict": "ok",
+   "note": "u^2-u-110=0 -> u=11 (u=-10 rejected) -> x=ln11; key p1316 #45"
   },
   "56bc35f8d259c77e": {
    "verdict": "ok"
@@ -8186,6 +8314,10 @@
   },
   "57fd10909b29d387": {
    "verdict": "ok"
+  },
+  "57fec753f4f3125d": {
+   "verdict": "ok",
+   "note": "rate 10500/yr, 55000+6*10500=118000; key p1279 #25"
   },
   "580368403a551864": {
    "verdict": "ok"
@@ -8799,6 +8931,10 @@
   },
   "5ec1a699548cde36": {
    "verdict": "ok"
+  },
+  "5ecb8136e7b72704": {
+   "verdict": "ok",
+   "note": "m=(17-5)/(3-7)=-3, b=5+21=26; key p1279 #5"
   },
   "5ed34c1bb01fc080": {
    "verdict": "ok"
@@ -9874,6 +10010,10 @@
   "6ad37a0399bf66ca": {
    "verdict": "ok"
   },
+  "6ad8a6bd808dc9ca": {
+   "verdict": "ok",
+   "note": "199e^(-.625t)=1 -> t=ln199/.625=8.469 -> 8.5; key p1316 #59"
+  },
   "6adbe2d6c06c2157": {
    "verdict": "ok"
   },
@@ -9900,6 +10040,10 @@
   },
   "6b27d7fa1ebc9fbd": {
    "verdict": "ok"
+  },
+  "6b2877d06311ff09": {
+   "verdict": "ok",
+   "note": "deg num = deg den -> y=1/1=1; key p1297 #37"
   },
   "6b37b28cdf84f0f8": {
    "verdict": "ok"
@@ -9947,6 +10091,10 @@
   },
   "6bd5d43f9b5096eb": {
    "verdict": "ok"
+  },
+  "6bfd1647eb3fae3f": {
+   "verdict": "ok",
+   "note": "synthetic division root 2: 1,0,4 r12 -> x^2+4; identity p(5)=(5-2)q(5)+12 checked; key p1297 #25"
   },
   "6c00f79be483744d": {
    "verdict": "ok"
@@ -10215,6 +10363,10 @@
   "6ea2f06f8bac7fa5": {
    "verdict": "ok",
    "note": "Section exercise fs-id1165134047625: k=y*w/(xz)=10*6/15=4, so y=4xz/w. Verified with node arithmetic; matches CNXML solution."
+  },
+  "6eb0c770d9a0570d": {
+   "verdict": "ok",
+   "note": "3(5-6x)+2=17-18x; key p1271 #35"
   },
   "6eb1fe25cfa93f64": {
    "verdict": "ok"
@@ -10531,6 +10683,10 @@
   },
   "72ce1d1942dade05": {
    "verdict": "ok"
+  },
+  "72d70b44f1e8db6a": {
+   "verdict": "ok",
+   "note": "2pi/(pi/6)=12; key p1336 PT#17"
   },
   "72f003f017ef7b70": {
    "verdict": "ok"
@@ -10909,6 +11065,10 @@
   "777b63e41a915955": {
    "verdict": "ok"
   },
+  "777c7505a637292f": {
+   "verdict": "ok",
+   "note": "-210*pi/180=-7pi/6 exact; key p1324 #3"
+  },
   "777e14a928281ee9": {
    "verdict": "ok",
    "note": "node: Math.tan(5π/8)=-2.4142135623730954, rounds to -2.414; matches CNXML solution -2.414"
@@ -11032,6 +11192,10 @@
   "78b69427a295b10a": {
    "verdict": "ok"
   },
+  "78da0953c7a3f063": {
+   "verdict": "ok",
+   "note": "(4-2)+(3-5)i=2-2i; key p1297 #1"
+  },
   "78dfcbb51428eeed": {
    "verdict": "ok"
   },
@@ -11134,6 +11298,10 @@
   },
   "79f933adea58b6c0": {
    "verdict": "ok"
+  },
+  "7a0336d352142719": {
+   "verdict": "ok",
+   "note": "4x+20>0 -> x>-5 -> (-5,inf); key p1316 #25"
   },
   "7a088124605fe3cc": {
    "verdict": "ok"
@@ -11333,6 +11501,10 @@
   "7bd283e26eae359b": {
    "verdict": "ok"
   },
+  "7be6e714f2fc3acc": {
+   "verdict": "ok",
+   "note": "6x+42=6(x+7) -> shift -7; key p1336 PT#21"
+  },
   "7bee29de850fc462": {
    "verdict": "ok"
   },
@@ -11448,6 +11620,10 @@
   },
   "7ce5f7cd5cd211fc": {
    "verdict": "ok"
+  },
+  "7d0422dea9fff3da": {
+   "verdict": "ok",
+   "note": "x=(4+-sqrt(16-20))/2=2+-i, verified by substitution; key p1297 #5"
   },
   "7d09b54ef0237a64": {
    "verdict": "ok",
@@ -11699,6 +11875,10 @@
   "7fe71b208e2673e1": {
    "verdict": "ok"
   },
+  "7fef812365d00f34": {
+   "verdict": "ok",
+   "note": "15000 outside 5600-6900 data range -> extrapolation; key p1279 #35"
+  },
   "7fefcab4a668475e": {
    "verdict": "ok"
   },
@@ -11790,6 +11970,10 @@
   },
   "80f87395dcad0d41": {
    "verdict": "ok"
+  },
+  "81040be64e39613c": {
+   "verdict": "ok",
+   "note": "sin 60deg = sqrt3/2, numeric to 1e-15; key p1325 #17"
   },
   "810fb617ab42853b": {
    "verdict": "ok"
@@ -12260,6 +12444,10 @@
   "8563cda2699960b9": {
    "verdict": "ok"
   },
+  "85697d332a9e5fb8": {
+   "verdict": "ok",
+   "note": "(1/625)^(-x-3)=5^(4x+12); 5^(3-4x-12)=5^3 -> x=-3; key p1316 #39"
+  },
   "85762832f0378b51": {
    "verdict": "ok"
   },
@@ -12713,6 +12901,10 @@
   "8b49ff924c292f3d": {
    "verdict": "ok"
   },
+  "8b509dc1e21b9043": {
+   "verdict": "ok",
+   "note": "coefficient of x^5 is 4; key p1297 #13"
+  },
   "8b549fcd359455d8": {
    "verdict": "ok"
   },
@@ -13164,6 +13356,10 @@
   "910c6f470d5fb565": {
    "verdict": "ok",
    "note": "re-derived: y=-x-3 has slope -1, y-intercept (0,-3); default -7..7 grid (bare {}) gives 12 reachable snap-lattice points for plotPoints:3, slack 9 (gpcheck)."
+  },
+  "910de9e98d2b2037": {
+   "verdict": "ok",
+   "note": "RE#7 m49353 (fs-id1165137477136, multipart standard-form/vertex/intercepts/graph -> graph part): a=1,b=-4,c=-5; vertex (2,-9), zeros 5,-1, y-int -5 all re-derived; key p1297 #7 graph matches exactly; 9 reachable lattice points on -7..7 x -10..7"
   },
   "9114ac902b834fba": {
    "verdict": "ok"
@@ -14142,6 +14338,10 @@
   "9bd09b41287a503d": {
    "verdict": "ok"
   },
+  "9bd47b15bca17ab3": {
+   "verdict": "ok",
+   "note": "cos=5/13 -> sin=12/13 -> tan=12/5; numeric tan(acos(5/13))=2.4; key p1335 #37"
+  },
   "9be826ed74a85ded": {
    "verdict": "ok"
   },
@@ -15037,6 +15237,10 @@
   "a6700985ce00a7f8": {
    "verdict": "ok"
   },
+  "a672e15791724b9d": {
+   "verdict": "ok",
+   "note": "argument zero at x=-5 -> VA x=-5; key p1316 #25"
+  },
   "a6767497e9d2e04c": {
    "verdict": "ok"
   },
@@ -15298,6 +15502,10 @@
   },
   "a925fb4dbc4c1fb4": {
    "verdict": "ok"
+  },
+  "a92d5fc1fb4cc977": {
+   "verdict": "ok",
+   "note": "cos(pi/2)=0=sin(0deg); cofunction 90-90=0; key p1325 #41 \"0\""
   },
   "a92ea734546044ef": {
    "verdict": "ok"
@@ -15859,6 +16067,10 @@
   "aed4e3a9dde80844": {
    "verdict": "ok",
    "note": "f(x)=3x^2-5x-1: h=5/6,k=-37/12 (computed via node); matches CNXML solution for fs-id1165135409784."
+  },
+  "aed7c6428c7d3a41": {
+   "verdict": "ok",
+   "note": "x=64^(1/3)=4; key p1315 #17"
   },
   "aee2ef150dee4929": {
    "verdict": "ok"
@@ -16734,6 +16946,10 @@
   "b88b3fcb3141779b": {
    "verdict": "ok"
   },
+  "b88cfaec4afa38cd": {
+   "verdict": "ok",
+   "note": "ref angle 45deg QIV, sec positive -> sqrt2; numeric 1/cos(315deg)=1.41421; key p1325 #31"
+  },
   "b8928691268e2d00": {
    "verdict": "ok"
   },
@@ -17481,6 +17697,10 @@
   "c0475240a106e994": {
    "verdict": "ok"
   },
+  "c04e6d8f55cb1b60": {
+   "verdict": "ok",
+   "note": "signs +--+ = 2 changes -> 2 or 0 positive; f(-x) 1 change -> 1 negative; key p1297 #35"
+  },
   "c050b61db781a74b": {
    "verdict": "ok"
   },
@@ -17949,6 +18169,10 @@
   "c527b759f143d786": {
    "verdict": "ok"
   },
+  "c53687c0cc3d8c9c": {
+   "verdict": "ok",
+   "note": "k=36/9=4, y=4*16=64; key p1298 #49"
+  },
   "c53db6b22cb36fa3": {
    "verdict": "ok"
   },
@@ -18175,6 +18399,10 @@
   },
   "c7d9dff610b9b6de": {
    "verdict": "ok"
+  },
+  "c7e362a52d29cb61": {
+   "verdict": "ok",
+   "note": "1+29e^(-.62t)=4/3 -> t=ln87/.62=7.203 -> 7.2; key p1316 #65"
   },
   "c7e5e5befcdd0d0d": {
    "verdict": "ok"
@@ -18591,9 +18819,17 @@
   "cc72ebd3d5670dbd": {
    "verdict": "ok"
   },
+  "cc796030019aed05": {
+   "verdict": "ok",
+   "note": "ln2+lnb+(1/2)ln(b+1)-(1/2)ln(b-1); numerically equal to key p1316 #33 form at b=3 to 1e-15"
+  },
   "cc7ebf37fa66d5f8": {
    "verdict": "ok",
    "note": "f(x)=4x^2-x^6+2x-6: highest power present is 6, so degree=6. Matches CNXML ti_03_03_03."
+  },
+  "cc8ff336a54d84bb": {
+   "verdict": "ok",
+   "note": "-2(9)+3(-3)=-18-9=-27; key p1270 #5"
   },
   "cc9bb4129d230d63": {
    "verdict": "ok"
@@ -19131,6 +19367,10 @@
   "d32608c8d954203c": {
    "verdict": "ok"
   },
+  "d32d56e115dbec36": {
+   "verdict": "ok",
+   "note": "RE#39 m49353 (fs-id1165137863121, intercepts/asymptotes/sketch -> asymptotes part): den (x+2)(x-1) zero at 1,-2 with num -24,-15 nonzero -> VA x=1,x=-2; equal degrees -> HA y=3/1=3; key p1298 #39 prints exactly these with the graph"
+  },
   "d346a12557a614d2": {
    "verdict": "ok"
   },
@@ -19160,6 +19400,10 @@
   },
   "d3ab9d1e618e4376": {
    "verdict": "ok"
+  },
+  "d3b0d21ccf27daa5": {
+   "verdict": "ok",
+   "note": "10^-6=0.000001 -> -6; key p1316 #19"
   },
   "d3c6ce8b7aea3e61": {
    "verdict": "ok"
@@ -19194,6 +19438,10 @@
   },
   "d41842884a8956b8": {
    "verdict": "ok"
+  },
+  "d419e63568dd36d7": {
+   "verdict": "ok",
+   "note": "f(5)=2 <-> f^-1(2)=5 by definition; key p1272 #79"
   },
   "d4273d774e663b20": {
    "verdict": "ok"
@@ -19455,6 +19703,10 @@
   },
   "d764c79e7277e244": {
    "verdict": "ok"
+  },
+  "d76fad81f2b37690": {
+   "verdict": "ok",
+   "note": "(x+1)^3 -> multiplicity 3; key p1297 #19"
   },
   "d77146de5d1dd853": {
    "verdict": "ok",
@@ -20674,6 +20926,10 @@
   "e51e5f904e28f02a": {
    "verdict": "ok"
   },
+  "e532dea9a564b507": {
+   "verdict": "ok",
+   "note": "300*0.83^24=3.4276 -> 3.43 mg; key p1316 #55 prints \"3.43 g\" - source unit erratum, mg is correct (300 mg shrinking), logged in errata file"
+  },
   "e5345b81386a3bd7": {
    "verdict": "ok"
   },
@@ -20882,6 +21138,10 @@
   },
   "e7b998f3637060d4": {
    "verdict": "ok"
+  },
+  "e7c541e1a452e1da": {
+   "verdict": "ok",
+   "note": "3y=7-2x -> y=-2x/3+7/3, a linear function; key p1279 #1 \"Yes\""
   },
   "e7d51793100abd01": {
    "verdict": "ok"
@@ -21356,6 +21616,10 @@
   "ed2d791bed22261a": {
    "verdict": "ok",
    "note": "y=5x^2+10x+3 gives vertex (-1,-2) and a=5>0 (opens upward), matching the authored quadratic answer and the pre-rewrite multiplechoice's 'Vertex (-1,-2); opens upward'; the figure immediately above is Example 10.52's unrelated y=2x^2-4x-3, so nothing leaks."
+  },
+  "ed372295d6ba4717": {
+   "verdict": "ok",
+   "note": "remainder 12, same division; key p1297 #25"
   },
   "ed3f8410b83e7c13": {
    "verdict": "ok",
@@ -22189,6 +22453,10 @@
   "f65f9bb91da5c100": {
    "verdict": "ok"
   },
+  "f6701aaa67bce0fa": {
+   "verdict": "ok",
+   "note": "consecutive ratios all ~1.45 constant -> exponential; key p1316 #61"
+  },
   "f67231e0f5261a88": {
    "verdict": "ok"
   },
@@ -22317,6 +22585,10 @@
    "verdict": "ok",
    "note": "By the same base-ordering logic, h(x)=log_5(x) has the third-smallest base, so it is curve C. Matches CNXML fs-id1165137758154 solution C."
   },
+  "f81047ce7ecb7f58": {
+   "verdict": "ok",
+   "note": "(pi/6)(x+6) -> shift -6; key p1336 PT#17"
+  },
   "f8184e6451f89b40": {
    "verdict": "ok"
   },
@@ -22376,6 +22648,10 @@
   },
   "f8990e3ee008fef9": {
    "verdict": "ok"
+  },
+  "f89c5ed5dd2eb1ea": {
+   "verdict": "ok",
+   "note": "zeros -3,1/2,-1 from factors; all three verified f=0; key p1297 #19"
   },
   "f89cc87a0e3c8d95": {
    "verdict": "ok"
@@ -22565,6 +22841,10 @@
   "fa8d98240430eb43": {
    "verdict": "ok"
   },
+  "fa9926dfc7ef34e6": {
+   "verdict": "ok",
+   "note": "y=(x-2)^2, x>=2 -> inverse sqrt(x)+2; key p1298 #43"
+  },
   "faa6c972328264d0": {
    "verdict": "ok"
   },
@@ -22641,6 +22921,10 @@
   },
   "fb8bbe7ded27bb32": {
    "verdict": "ok"
+  },
+  "fb9312b97e6b093e": {
+   "verdict": "ok",
+   "note": "h(-x)=-1/x-3x=-h(x) -> odd; key p1271 #59"
   },
   "fb99ea2939708448": {
    "verdict": "ok"
