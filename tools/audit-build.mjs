@@ -392,6 +392,42 @@ if (mathDocuments.some((document) => {
 })) {
   problems.push('KaTeX stylesheet link does not resolve to a built file');
 }
+// KaTeX loads fonts with font-display:swap, and Safari repaints the swapped
+// glyphs without re-running layout on KaTeX's absolutely-positioned vlists,
+// leaving e.g. a \begin{cases} brace where fallback-font metrics put it until
+// a zoom or resize forces a reflow. Every rendered math page must therefore
+// preload the faces the corpus uses so first layout sees real metrics — and
+// each preload must carry `crossorigin`, or the CORS-mode font fetch cannot
+// reuse it and the browser downloads the file twice.
+const KATEX_PRELOAD_FACES = [
+  'KaTeX_Main-Regular', 'KaTeX_Main-Bold', 'KaTeX_Math-Italic', 'KaTeX_AMS-Regular',
+  'KaTeX_Size1-Regular', 'KaTeX_Size2-Regular', 'KaTeX_Size3-Regular', 'KaTeX_Size4-Regular',
+];
+function katexFontPreloads(document) {
+  const preloads = [];
+  for (const match of document.matchAll(/<link\b[^>]*>/gi)) {
+    const rel = htmlAttribute(match[0], 'rel').toLowerCase().split(/\s+/);
+    if (!rel.includes('preload') || htmlAttribute(match[0], 'as').toLowerCase() !== 'font') continue;
+    preloads.push({ href: htmlAttribute(match[0], 'href'), crossorigin: /(?:^|\s)crossorigin\b/i.test(match[0]) });
+  }
+  return preloads;
+}
+for (const document of mathDocuments) {
+  const preloads = katexFontPreloads(document);
+  if (KATEX_PRELOAD_FACES.some((face) => !preloads.some(({ href }) => href.endsWith(`/${face}.woff2`)))) {
+    problems.push('KaTeX font preload links missing on a rendered math page');
+    break;
+  }
+}
+if (mathDocuments.some((document) => katexFontPreloads(document).some(({ crossorigin }) => !crossorigin))) {
+  problems.push('KaTeX font preload without crossorigin (font fetch cannot reuse it)');
+}
+if (mathDocuments.some((document) => katexFontPreloads(document).some(({ href }) => {
+  if (!href || /^(?:[a-z]+:)?\/\//i.test(href)) return false;
+  return !existsSync(join(root, href.split(/[?#]/, 1)[0].replace(/^\/+/, '')));
+}))) {
+  problems.push('KaTeX font preload does not resolve to a built file');
+}
 if (mathDocuments.some((document) => {
   const mathml = (document.match(/\bkatex-mathml\b/g) || []).length;
   const visual = (document.match(/\bkatex-html\b/g) || []).length;

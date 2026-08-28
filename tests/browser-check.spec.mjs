@@ -717,3 +717,70 @@ test('every rail and sidebar carries a contact mailto whose subject names the pa
   );
   await expect(aboutLink).toHaveText('contact@athenaeumpopuli.org');
 });
+
+test('KaTeX display math sits on the math axis, and the WebKit baseline shim is shipped but inert here', async ({ page }) => {
+  // Safari 26.5 lays out KaTeX's vlist-t2 inline-tables with their baseline
+  // at the table bottom in some zoom states (a cases brace a full depth below
+  // its rows; a determinant block ~40px high against "D ="). The head-bundle
+  // shim probes each vlist-t2 against a temporary baseline strut and corrects
+  // only elements that measure wrong — so in this healthy engine it must be a
+  // verified no-op that leaves no probe artifacts, while the geometry check
+  // itself would catch any future engine/CSS drift that moves rows off the
+  // math axis (the vendored-KaTeX version-coupling failure mode).
+  await gotoBuiltPage(page, '/math/precalculus/09-systems-of-equations-and-inequalities/08-solving-systems-with-cramers-rule/');
+  await page.evaluate(() => document.fonts.ready);
+  await page.evaluate(() => new Promise((resolve) => {
+    requestAnimationFrame(() => requestAnimationFrame(resolve));
+  }));
+
+  const headSrc = await page.locator('script[src*="main-head"]').getAttribute('src');
+  const bundle = await (await page.request.get(headSrc)).text();
+  expect(bundle, 'baseline shim missing from the head bundle').toContain('vlist-t2');
+
+  const audit = await page.evaluate(() => {
+    const out = { corrected: 0, struts: 0, blocks: [] };
+    out.corrected = [...document.querySelectorAll('.katex .vlist-t2')]
+      .filter((el) => el.style.verticalAlign !== '').length;
+    out.struts = [...document.querySelectorAll('.katex span')]
+      .filter((el) => el.style.height === '1px' && el.style.width === '0px').length;
+    for (const disp of document.querySelectorAll('.katex-display')) {
+      const kh = disp.querySelector('.katex-html');
+      const base = kh && kh.querySelector('.base');
+      const tables = kh ? [...kh.querySelectorAll('.mtable')] : [];
+      if (!base || !tables.length) continue;
+      const strut = document.createElement('span');
+      strut.style.cssText = 'display:inline-block;width:0;height:1px;vertical-align:baseline;';
+      base.appendChild(strut);
+      const baseline = strut.getBoundingClientRect().bottom;
+      strut.remove();
+      let top = Infinity;
+      let bottom = -Infinity;
+      for (const t of tables) {
+        const r = t.getBoundingClientRect();
+        top = Math.min(top, r.top);
+        bottom = Math.max(bottom, r.bottom);
+      }
+      out.blocks.push((top + bottom) / 2 - baseline);
+    }
+    return out;
+  });
+  expect(audit.corrected, 'shim corrected elements in a healthy engine').toBe(0);
+  expect(audit.struts, 'probe struts leaked into the DOM').toBe(0);
+  expect(audit.blocks.length).toBeGreaterThan(30);
+  for (const delta of audit.blocks) {
+    // Rows center sits just above the baseline (the math axis, ~ -6px at this
+    // font size); a vlist-t2 baseline failure shifts it by tens of pixels.
+    expect(delta, 'display rows off the math axis').toBeGreaterThan(-12);
+    expect(delta, 'display rows off the math axis').toBeLessThan(0);
+  }
+
+  // Exercise the shim's re-probe path (it re-runs on resize) and confirm it
+  // stays inert rather than accumulating corrections.
+  await page.setViewportSize({ width: 900, height: 800 });
+  await page.evaluate(() => new Promise((resolve) => {
+    requestAnimationFrame(() => requestAnimationFrame(resolve));
+  }));
+  const after = await page.evaluate(() => [...document.querySelectorAll('.katex .vlist-t2')]
+    .filter((el) => el.style.verticalAlign !== '').length);
+  expect(after, 'shim corrected elements after resize in a healthy engine').toBe(0);
+});

@@ -76,6 +76,20 @@
   {{ $noop := .WordCount -}}
   {{- $engine := site.Params.math.engine | default "katex" -}}
   {{ if and (.Page.Store.Get "hasMath") (eq $engine "katex") -}}
+    {{- /* Preload the KaTeX faces the corpus uses so the first layout already
+          has real font metrics. KaTeX loads fonts with font-display:swap, and
+          Safari repaints the swapped glyphs without re-running layout on
+          KaTeX's absolutely-positioned vlists — a \begin{cases} brace keeps
+          the position computed from fallback-font metrics until something
+          (zoom, resize) forces a reflow. `crossorigin` is required even
+          same-origin: font fetches are CORS-mode, and omitting it makes the
+          preload a separate credentialed fetch the renderer cannot reuse. */ -}}
+    {{- $katexFontBase := urls.JoinPath (site.Params.math.katex.base | default "/katex") "fonts" }}
+    {{- range slice
+      "KaTeX_Main-Regular" "KaTeX_Main-Bold" "KaTeX_Math-Italic" "KaTeX_AMS-Regular"
+      "KaTeX_Size1-Regular" "KaTeX_Size2-Regular" "KaTeX_Size3-Regular" "KaTeX_Size4-Regular" }}
+    <link rel="preload" href="{{ urls.JoinPath $katexFontBase (printf "%s.woff2" .) }}" as="font" type="font/woff2" crossorigin />
+    {{- end }}
     {{ partialCached "scripts/katex.html" . -}}
   {{ else if and (.Page.Store.Get "hasMath") (eq $engine "mathjax") -}}
     {{ partialCached "scripts/mathjax.html" . -}}

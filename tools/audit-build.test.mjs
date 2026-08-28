@@ -183,8 +183,21 @@ try {
 
   const pairedMath = '<span class="katex"><span class="katex-mathml"><math></math></span><span class="katex-html">x</span></span>';
   const katexLink = '<link rel="stylesheet" href="/katex/katex.min.css">';
-  prepare(pairedMath, [], { head: katexLink });
-  assert.equal(audit().status, 0, 'paired KaTeX output with the vendored stylesheet should pass');
+  // The full preload contract: every face the corpus uses, each with
+  // `crossorigin`, each resolving to an emitted font file. Safari repaints
+  // swapped KaTeX fonts without re-laying-out the vlists, so math pages must
+  // load real metrics before first layout.
+  const katexFaces = [
+    'KaTeX_Main-Regular', 'KaTeX_Main-Bold', 'KaTeX_Math-Italic', 'KaTeX_AMS-Regular',
+    'KaTeX_Size1-Regular', 'KaTeX_Size2-Regular', 'KaTeX_Size3-Regular', 'KaTeX_Size4-Regular',
+  ];
+  const katexFontFiles = katexFaces.map((face) => join('katex', 'fonts', `${face}.woff2`));
+  const katexPreloads = katexFaces
+    .map((face) => `<link rel="preload" href="/katex/fonts/${face}.woff2" as="font" type="font/woff2" crossorigin>`)
+    .join('');
+  const katexHead = katexPreloads + katexLink;
+  prepare(pairedMath, katexFontFiles, { head: katexHead });
+  assert.equal(audit().status, 0, 'paired KaTeX output with the vendored stylesheet and font preloads should pass');
 
   prepare(pairedMath);
   assert.match(
@@ -193,18 +206,41 @@ try {
     'rendered math without its stylesheet must fail',
   );
 
-  prepare(pairedMath, [], { head: '<link rel="stylesheet" href="/katex/katex.css">' });
+  prepare(pairedMath, katexFontFiles, { head: katexPreloads + '<link rel="stylesheet" href="/katex/katex.css">' });
   assert.match(
     audit().stderr,
     /stylesheet link does not resolve to a built file/,
     'a plausible KaTeX URL must still resolve to an emitted build artifact',
   );
 
-  prepare('<span class="katex"><span class="katex-mathml"><math></math></span></span>', [], { head: katexLink });
+  prepare('<span class="katex"><span class="katex-mathml"><math></math></span></span>', katexFontFiles, { head: katexHead });
   assert.match(
     audit().stderr,
     /visual\/accessibility render count mismatch/,
     'a missing KaTeX visual or accessibility layer must fail',
+  );
+
+  prepare(pairedMath, katexFontFiles, { head: katexLink });
+  assert.match(
+    audit().stderr,
+    /KaTeX font preload links missing/,
+    'rendered math without the font preloads regresses the Safari first-layout fix and must fail',
+  );
+
+  prepare(pairedMath, katexFontFiles, {
+    head: katexHead.replaceAll(' crossorigin', '').replace('as="font"', 'as="font" crossorigin'),
+  });
+  assert.match(
+    audit().stderr,
+    /font preload without crossorigin/,
+    'a font preload without crossorigin double-fetches and must fail',
+  );
+
+  prepare(pairedMath, [], { head: katexHead });
+  assert.match(
+    audit().stderr,
+    /font preload does not resolve to a built file/,
+    'a font preload must point at an emitted font file',
   );
 
   prepare('<p>Semantic content.</p>', [], { katexCss: '.katex{font-size:1em}' });

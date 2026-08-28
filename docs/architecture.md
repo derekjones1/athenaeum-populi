@@ -13,7 +13,19 @@ the active production architecture after the completed framework migration.
   authoring or delivery path.
 - Hugo renders passthrough math at build time with its embedded KaTeX engine.
   The vendored KaTeX 0.16.22 assets must remain version-matched to Hugo's
-  generated markup.
+  generated markup. Math pages preload the KaTeX font faces the corpus uses
+  (with `crossorigin`, or the CORS-mode font fetch double-downloads) so the
+  first layout has real font metrics; the build audit enforces the preload
+  set. Separately, WebKit (observed Safari 26.5, zoom-dependent) computes the
+  baseline of KaTeX's `vlist-t2` inline-tables at the table bottom, dropping
+  a `\begin{cases}` brace a full depth below its rows and floating tall
+  determinant blocks ~a row above their `D =`. The head-bundle shim
+  `assets/js/head/katex-webkit-baseline.js` fixes this by measurement, not
+  UA-sniffing: it probes each `vlist-t2` against a temporary baseline strut
+  and corrects only elements that measure wrong (re-probing on resize/zoom
+  and font arrival, undoing itself when the engine state is healthy). The
+  browser suite pins both halves: shim shipped, inert on a healthy engine,
+  and every display block's rows on the math axis.
 - Static diagrams are accessible inline SVG. New figures are authored as
   graph-core spec JSON in the `apfigure` shortcode and rendered in the
   browser by the `<ap-figure>` component (measured text metrics plus a
