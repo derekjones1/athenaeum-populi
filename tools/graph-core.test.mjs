@@ -886,3 +886,104 @@ test('a grid never collapses into a solid block on a small-unit axis', () => {
     && e.attrs.y1 === e.attrs.y2);
   assert.equal(plainH.length, 10, 'a 20px-per-unit grid still draws every integer line');
 });
+
+test('quadratic-boundary regions shade the test-point side of the parabola', () => {
+  // y >= x^2 - 4: test point (0,0) is above the vertex, so the fill runs from
+  // the parabola up to the top window edge.
+  const out = buildGraph({ ...GRID, regions: [{ quadratic: { a: 1, c: -4 }, side: [0, 0] }] });
+  const fills = out.els.filter((e) => e.tag === 'polygon' && e.attrs.opacity === '0.12');
+  assert.equal(fills.length, 1);
+  const pts = fills[0].attrs.points.split(' ').map((p) => p.split(',').map(Number));
+  // closure corners sit on the top edge (math yMax=5 → px y 26 with margin 26)
+  const topEdge = pts.filter(([, y]) => Math.abs(y - 26) < 0.5);
+  assert.ok(topEdge.length >= 2, 'fill closes along the top window edge when shading above');
+  // the boundary parabola itself is stroked
+  const curves = out.els.filter((e) => e.tag === 'path' || e.tag === 'polyline');
+  assert.ok(curves.length >= 1, 'the boundary parabola is drawn');
+  // vertex of the sampled boundary reaches y = -4 (px y = 26 + 9*20 = 206)
+  const vertexY = Math.max(...pts.map(([, y]) => y));
+  assert.ok(Math.abs(vertexY - 206) < 1.5, `boundary reaches the vertex (got px y ${vertexY})`);
+});
+
+test('quadratic-boundary regions shade below when the test point is below', () => {
+  // y <= x^2 - 4 shades down to the bottom edge, and dashed marks the strict boundary
+  const out = buildGraph({ ...GRID, regions: [{ quadratic: { a: 1, c: -4 }, side: [0, -4.9], dashed: true }] });
+  const fill = out.els.find((e) => e.tag === 'polygon' && e.attrs.opacity === '0.12');
+  const pts = fill.attrs.points.split(' ').map((p) => p.split(',').map(Number));
+  const bottomEdge = pts.filter(([, y]) => Math.abs(y - 226) < 0.5); // yMin=-5 → 26+10*20
+  assert.ok(bottomEdge.length >= 2, 'fill closes along the bottom window edge when shading below');
+  const dashedEls = out.els.filter((e) => e.attrs && e.attrs.strokeDasharray);
+  assert.ok(dashedEls.length >= 1, 'strict boundary is drawn dashed');
+});
+
+test('sideways quadratic regions close against a vertical window edge', () => {
+  // x <= y^2 (sideways, test point left of the curve) closes along x = xMin
+  const out = buildGraph({ ...GRID, regions: [{ quadratic: { a: 1, sideways: true }, side: [-3, 0] }] });
+  const fill = out.els.find((e) => e.tag === 'polygon' && e.attrs.opacity === '0.12');
+  const pts = fill.attrs.points.split(' ').map((p) => p.split(',').map(Number));
+  const leftEdge = pts.filter(([x]) => Math.abs(x - 26) < 0.5); // xMin=-5 → px 26
+  assert.ok(leftEdge.length >= 2, 'fill closes along the left window edge');
+});
+
+test('quadratic-boundary region spec validation', () => {
+  assert.throws(() => buildGraph({ ...GRID, regions: [{ quadratic: { a: 0 }, side: [0, 0] }] }),
+    /nonzero/);
+  assert.throws(() => buildGraph({ ...GRID, regions: [{ quadratic: { a: 1 }, side: [0, 0] }] }),
+    /off the boundary/);
+  assert.throws(() => buildGraph({ ...GRID, regions: [{ quadratic: { a: 1 }, side: [1, 3], label: 'R' }] }),
+    /texts entry/);
+  assert.throws(() => buildGraph({ ...GRID, regions: [{ quadratic: { a: 1 }, line: { y: 0 }, side: [1, 3] }] }),
+    /not both/);
+  assert.throws(() => buildGraph({ ...GRID, regions: [{ quadratic: { a: 1 } }] }),
+    /side test point/);
+});
+
+test('figure polygons can carry a translucent fill under every stroke', () => {
+  const out = buildFigure({
+    ariaLabel: 't',
+    polygons: [
+      { points: [[0, 0], [4, 0], [5, 2], [1, 2]], fill: true },
+      { points: [[1, -1], [5, -1], [4, 3], [0, 3]], fill: true },
+    ],
+  });
+  const fills = out.els.filter((e) => e.tag === 'polygon' && e.attrs.opacity === '0.12');
+  assert.equal(fills.length, 2, 'each filled polygon paints one translucent body');
+  // fills come before any polygon edge stroke, so strokes stay on top
+  const firstStroke = out.els.findIndex((e) => e.tag === 'line');
+  const lastFill = out.els.map((e, i) => (e.tag === 'polygon' && e.attrs.opacity === '0.12' ? i : -1))
+    .reduce((a, b) => Math.max(a, b), -1);
+  assert.ok(lastFill < firstStroke, 'fills are painted under the edge strokes');
+  // an unfilled polygon adds no body
+  const plain = buildFigure({ ariaLabel: 't', polygons: [{ points: [[0, 0], [2, 0], [1, 2]] }] });
+  assert.equal(plain.els.filter((e) => e.tag === 'polygon' && e.attrs.opacity === '0.12').length, 0);
+});
+
+test('a gapTexts segment passes behind text entries instead of striking through them', () => {
+  const out = buildFigure({
+    ariaLabel: 't',
+    texts: [{ at: [2, 1], text: 'b2', anchor: 'middle' }],
+    segments: [{ from: [0, 0], to: [4, 2], gapTexts: true }],
+  });
+  const lines = out.els.filter((e) => e.tag === 'line');
+  assert.ok(lines.length >= 2, `the shaft splits around the text (got ${lines.length} line(s))`);
+  // no drawn run may enter the text's box
+  const text = out.els.find((e) => e.tag === 'text');
+  const tx = Number(text.attrs.x), ty = Number(text.attrs.y);
+  for (const l of lines) {
+    const mids = [0.25, 0.5, 0.75].map((t) => [
+      Number(l.attrs.x1) + t * (Number(l.attrs.x2) - Number(l.attrs.x1)),
+      Number(l.attrs.y1) + t * (Number(l.attrs.y2) - Number(l.attrs.y1)),
+    ]);
+    for (const [mx, my] of mids) {
+      const inside = Math.abs(mx - tx) < 8 && my < ty + 2 && my > ty - 12;
+      assert.ok(!inside, `a drawn run passes through the text at (${mx.toFixed(1)}, ${my.toFixed(1)})`);
+    }
+  }
+  // without gapTexts the same segment is one unbroken line
+  const solid = buildFigure({
+    ariaLabel: 't',
+    texts: [{ at: [2, 1], text: 'b2', anchor: 'middle' }],
+    segments: [{ from: [0, 0], to: [4, 2] }],
+  });
+  assert.equal(solid.els.filter((e) => e.tag === 'line').length, 1);
+});

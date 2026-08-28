@@ -819,31 +819,107 @@ function commasAreAllGrouping(value) {
 }
 
 /**
- * Rejoin student parts that a digit-grouping comma split apart, so a learner
- * who writes "1,536" inside a list is not counted as supplying two members.
- * Only ever used to reconcile a count mismatch — never to override a split
- * that already matches, because "…,-64,125" must stay two members when the
- * answer has five.
+ * Every way to rejoin student parts that digit-grouping commas split apart,
+ * such that exactly `targetCount` members remain — so a learner who writes
+ * "750,000, 350,000" for a two-member answer is read as the two grouped
+ * amounts, not as one four-comma scalar. Only ever used to reconcile a count
+ * mismatch — never to override a split that already matches, because
+ * "…,-64,125" must stay two members when the answer has five.
  *
- * Whether a comma is grouping is decided by stripGroupingCommas() itself —
- * rejoin the parts and merge exactly when the comma collapses — so this stays
- * in step with the one grouping rule and a number with several grouping
- * commas ("1,048,576") rejoins comma by comma.
+ * The predecessor (`mergeGroupedNumbers`) merged greedily left to right,
+ * which collapsed "750,000,350,000" — whitespace is gone by this point —
+ * into ONE fully-grouped scalar and graded the correct answer `incorrect`.
+ * Targeting the answer's member count instead enumerates the (bounded)
+ * coalescings that could mean what the learner typed; the caller then grades
+ * each reading and a correct answer under ANY reading is correct. A wrong
+ * answer cannot become right this way: every reading still has to match the
+ * key member for member.
+ *
+ * Whether a comma is grouping is still decided by stripGroupingCommas()
+ * itself — a run of parts may join exactly when its rejoined commas all
+ * collapse — so this stays in step with the one grouping rule and a number
+ * with several grouping commas ("1,048,576") joins across them.
  */
-function mergeGroupedNumbers(parts) {
-  const merged = [];
-  for (const part of parts) {
-    const previous = merged.at(-1);
-    if (previous !== undefined) {
-      const joined = `${previous},${part}`;
-      if (splitTopLevelCommas(stripGroupingCommas(joined)).length === 1) {
-        merged[merged.length - 1] = joined;
-        continue;
+function groupedReadings(parts, targetCount) {
+  const readings = [];
+  const seen = new Set();
+  const joinable = (a, b) => splitTopLevelCommas(stripGroupingCommas(`${a},${b}`)).length === 1;
+  const walk = (index, current) => {
+    if (readings.length >= 64) return;
+    const remaining = parts.length - index;
+    // prune: even one-part-per-member cannot reach the target any more
+    if (current.length + remaining < targetCount) return;
+    if (index === parts.length) {
+      if (current.length === targetCount) {
+        const key = current.join(' ');
+        if (!seen.has(key)) {
+          seen.add(key);
+          readings.push([...current]);
+        }
+      }
+      return;
+    }
+    const previous = current.at(-1);
+    if (previous !== undefined && joinable(previous, parts[index])) {
+      current[current.length - 1] = `${previous},${parts[index]}`;
+      walk(index + 1, current);
+      current[current.length - 1] = previous;
+    }
+    if (current.length < targetCount) {
+      current.push(parts[index]);
+      walk(index + 1, current);
+      current.pop();
+    }
+  };
+  walk(0, []);
+  return readings;
+}
+
+/**
+ * Candidate rewrites of a parenthesized tuple whose member count exceeds the
+ * answer's because digit-grouping commas were read as separators —
+ * "(x,x+4000,78,000-x)" typed against a keyed 3-tuple means the 78,000 was
+ * one number. stripGroupingCommas() itself deliberately never strips inside
+ * a delimiter pair (a tuple comma is a separator by default), so the
+ * reconciliation lives here instead, and — like the list readers — it only
+ * runs on a count mismatch and only proposes readings the answer's own arity
+ * asks for; the caller still has to grade each candidate against the key, so
+ * a wrong value cannot become right. Each merged member has its grouping
+ * commas removed so the candidate parses at the target arity.
+ */
+function groupedTupleRewrites(studentRaw, answerRaw) {
+  const normalize = (value) => String(value ?? '').trim().replace(/\\left\s*|\\right\s*/g, '');
+  const tupleParts = (text) => {
+    if (!text.startsWith('(') || !text.endsWith(')')) return null;
+    const inner = text.slice(1, -1);
+    const parts = [];
+    let depth = 0;
+    let start = 0;
+    for (let k = 0; k < inner.length; k += 1) {
+      const ch = inner[k];
+      if (ch === '\\') { k += 1; continue; }
+      if (ch === '(' || ch === '[' || ch === '{') depth += 1;
+      else if (ch === ')' || ch === ']' || ch === '}') {
+        depth -= 1;
+        if (depth < 0) return null;
+      } else if (ch === ',' && depth === 0) {
+        parts.push(inner.slice(start, k));
+        start = k + 1;
       }
     }
-    merged.push(part);
-  }
-  return merged;
+    if (depth !== 0) return null;
+    parts.push(inner.slice(start));
+    return parts.map((part) => part.trim());
+  };
+  const studentParts = tupleParts(normalize(studentRaw));
+  const answerParts = tupleParts(normalize(answerRaw));
+  if (!studentParts || !answerParts) return [];
+  if (studentParts.length <= answerParts.length) return [];
+  if (studentParts.length - answerParts.length > 6) return [];
+  const original = normalize(studentRaw);
+  return groupedReadings(studentParts, answerParts.length)
+    .map((reading) => `(${reading.map((member) => stripGroupingCommas(member)).join(',')})`)
+    .filter((candidate) => candidate !== original);
 }
 
 /**
@@ -875,47 +951,63 @@ function checkOrderedList(studentRaw, answerRaw) {
   // The answer IS a list, so a student who supplies a different number of
   // members is wrong — never fall through to a comparison of two strings that
   // digit-grouping has mangled into the same shape. Reconcile a mismatch
-  // first, though: a student may legitimately group a member ("1,536"), and
-  // the answerDisplay often shows exactly that form.
-  let studentParts = splitTopLevelCommas(studentRaw ?? '');
-  if (studentParts.length !== answerParts.length) {
-    studentParts = mergeGroupedNumbers(studentParts);
+  // first, though: a student may legitimately group members ("1,536", or a
+  // whole list of grouped amounts, "750,000, 350,000"), and the
+  // answerDisplay often shows exactly that form. A split that already
+  // matches the count is never re-read.
+  const rawParts = splitTopLevelCommas(studentRaw ?? '');
+  const readings = rawParts.length === answerParts.length
+    ? [rawParts]
+    : groupedReadings(rawParts, answerParts.length);
+  if (readings.length === 0) return { verdict: 'incorrect', members: null };
+
+  let sawParseable = false;
+  for (const reading of readings) {
+    const students = reading.map(parseValid);
+    if (students.some((part) => !part)) continue;
+    sawParseable = true;
+    if (students.every((student, i) => equivalentAllowingVariableEquation(student, answers[i]))) {
+      return { verdict: 'correct', members: reading };
+    }
   }
-  if (studentParts.length !== answerParts.length) return 'incorrect';
-
-  const students = studentParts.map(parseValid);
-  if (students.some((part) => !part)) return 'invalid';
-
-  return students.every((student, i) => equivalentAllowingVariableEquation(student, answers[i]))
-    ? 'correct'
-    : 'incorrect';
+  return { verdict: sawParseable ? 'incorrect' : 'invalid', members: null };
 }
 
 function checkUnordered(studentRaw, answerRaw) {
-  let studentParts = splitTopLevelCommas(studentRaw);
   const answerParts = splitTopLevelCommas(answerRaw);
-  // Same reconciliation the ordered path applies: a digit-grouping comma
-  // inside a member ("1,536") must not count as an extra member.
-  if (studentParts.length !== answerParts.length) {
-    studentParts = mergeGroupedNumbers(studentParts);
-  }
-  if (studentParts.length < 2 || studentParts.length !== answerParts.length) return 'incorrect';
-
-  const students = studentParts.map(parseValid);
   const answers = answerParts.map(parseValid);
-  if (students.some((part) => !part)) return 'invalid';
   if (answers.some((part) => !part)) {
     console.warn(`FillIn: unordered answer prop is not valid LaTeX math: ${answerRaw}`);
-    return 'incorrect';
+    return { verdict: 'incorrect', members: null };
   }
 
-  const unused = [...students];
-  for (const expected of answers) {
-    const match = unused.findIndex((candidate) => equivalentAllowingVariableEquation(candidate, expected));
-    if (match === -1) return 'incorrect';
-    unused.splice(match, 1);
+  // Same reconciliation the ordered path applies: digit-grouping commas
+  // inside members must not count as extra members, and every reading that
+  // could mean what the learner typed is graded.
+  const rawParts = splitTopLevelCommas(studentRaw);
+  const readings = rawParts.length === answerParts.length
+    ? [rawParts]
+    : groupedReadings(rawParts, answerParts.length);
+
+  let sawParseable = false;
+  let sawCountable = false;
+  for (const reading of readings) {
+    if (reading.length < 2) continue;
+    sawCountable = true;
+    const students = reading.map(parseValid);
+    if (students.some((part) => !part)) continue;
+    sawParseable = true;
+    const unused = [...students];
+    let matched = true;
+    for (const expected of answers) {
+      const match = unused.findIndex((candidate) => equivalentAllowingVariableEquation(candidate, expected));
+      if (match === -1) { matched = false; break; }
+      unused.splice(match, 1);
+    }
+    if (matched) return { verdict: 'correct', members: reading };
   }
-  return 'correct';
+  if (!sawCountable) return { verdict: 'incorrect', members: null };
+  return { verdict: sawParseable ? 'incorrect' : 'invalid', members: null };
 }
 
 /* ---------------------------------------------------------------------------
@@ -3159,21 +3251,22 @@ export function checkFormAsGraded(raw, spec) {
  * reach 1,000. One splitting rule, threaded from the same answer, is the only
  * way the two cannot drift.
  */
-function listFormAccepted(studentRaw, answerRaw, spec) {
-  const answerParts = splitTopLevelCommas(answerRaw ?? '');
-  let members = splitTopLevelCommas(studentRaw ?? '');
-  if (members.length !== answerParts.length) members = mergeGroupedNumbers(members);
-  if (members.length < 2) return checkFormAsGraded(studentRaw, spec);
+function listFormAccepted(studentRaw, members, spec) {
+  if (!members || members.length < 2) return checkFormAsGraded(studentRaw, spec);
   return members.every((member) => checkFormAsGraded(member, spec));
 }
 
 /**
  * A list verdict, with the declared form applied. Only a `correct` value can
  * become `form`: the same ordering the scalar path uses, so a learner whose
- * value is wrong is never told to rewrite it.
+ * value is wrong is never told to rewrite it. The members checked are the
+ * exact reading the value grader accepted — threading them from the grader
+ * is the only way the two splits cannot drift.
  */
-const withListForm = (verdict, studentRaw, answerRaw, spec) => (
-  verdict === 'correct' && !listFormAccepted(studentRaw, answerRaw, spec) ? 'form' : verdict
+const withListForm = (result, studentRaw, spec) => (
+  result.verdict === 'correct' && !listFormAccepted(studentRaw, result.members, spec)
+    ? 'form'
+    : result.verdict
 );
 
 export function checkAnswer(studentRaw, answerRaw, options = {}) {
@@ -3184,11 +3277,11 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
   if (student.includes('\\placeholder')) return 'invalid';
 
   if (options.unordered === true || options.mode === 'unordered') {
-    return withListForm(checkUnordered(studentRaw, answerRaw), studentRaw, answerRaw, options.form);
+    return withListForm(checkUnordered(studentRaw, answerRaw), studentRaw, options.form);
   }
 
   const asList = checkOrderedList(studentRaw, answerRaw);
-  if (asList !== null) return withListForm(asList, studentRaw, answerRaw, options.form);
+  if (asList !== null) return withListForm(asList, studentRaw, options.form);
 
   const written = student;
   student = readFunctionNotation(student);
@@ -3214,7 +3307,16 @@ export function checkAnswer(studentRaw, answerRaw, options = {}) {
     return 'incorrect';
   }
 
-  if (!equivalentAllowingVariableEquation(studentExpr, answerExpr)) return 'incorrect';
+  if (!equivalentAllowingVariableEquation(studentExpr, answerExpr)) {
+    // A tuple with too many members may be a digit-grouping misread — retry
+    // the arity-reconciled readings once. Each candidate has strictly fewer
+    // commas than the response, so the recursion cannot loop.
+    for (const candidate of groupedTupleRewrites(studentRaw, answerRaw)) {
+      const verdict = checkAnswer(candidate, answerRaw, options);
+      if (verdict === 'correct' || verdict === 'form') return verdict;
+    }
+    return 'incorrect';
+  }
   // Right value, wrong shape: report the form so the feedback names what to
   // change. The form reads the same function-notation-normalized writing the
   // value was graded on — a label the value check ignored must not be the

@@ -1448,3 +1448,40 @@ test('diagnostic: how far the engine reaches (never fails the suite)', async (t)
     });
   }
 });
+
+// The greedy left-to-right merge collapsed a LIST of grouped amounts into one
+// fully-grouped scalar — "750,000, 350,000" (whitespace is trimmed by the
+// splitter) merged into a single "750,000,350,000" and the correct answer
+// graded incorrect. Reconciliation now targets the ANSWER's member count and
+// grades every reading that could mean what the learner typed; a wrong value
+// still has to fail because every reading is compared member for member.
+// Found authoring Precalculus ch. 9 (six-figure money lists, matrix rows).
+test('a list of digit-grouped members is read at the answer member count', () => {
+  const money = '750000,350000';
+  assert.equal(checkAnswer('750,000, 350,000', money), 'correct');
+  assert.equal(checkAnswer('750,000,350,000', money), 'correct'); // no disambiguating space survives the split either way
+  assert.equal(checkAnswer('750,000, 350,001', money), 'incorrect');
+  assert.equal(checkAnswer('750,000', money), 'incorrect'); // one member for two stays wrong
+  const row = '800, 1400, 600';
+  assert.equal(checkAnswer('800, 1,400, 600', row), 'correct');
+  assert.equal(checkAnswer('800, 1,400, 601', row), 'incorrect');
+  assert.equal(checkAnswer('1,400, 800, 600', '800, 1400, 600'), 'incorrect'); // order still matters
+  assert.equal(checkAnswer('1,536, 90', '90, 1536', { mode: 'unordered' }), 'correct');
+});
+
+// Inside a delimiter pair a comma is a separator by default —
+// stripGroupingCommas() deliberately keeps "(1,536)" a pair — so a tuple with
+// too many members is reconciled the same way the lists are: readings at the
+// key's own arity, graded against the key. "(x,x+4000,78,000-x)" is the
+// Precalculus 9.2 salary problem's natural spelling of its 3-tuple.
+test('a tuple with grouped members is reconciled to the answer arity', () => {
+  const key = '(x,x+4000,78000-x)';
+  assert.equal(checkAnswer('(x,x+4000,78,000-x)', key), 'correct');
+  assert.equal(checkAnswer('\\left(x,x+4000,78,000-x\\right)', key), 'correct');
+  assert.equal(checkAnswer('(x,x+4000,79,000-x)', key), 'incorrect');
+  assert.equal(checkAnswer('(750,000, 350,000)', '(750000,350000)'), 'correct');
+  assert.equal(checkAnswer('(750,000, 350,001)', '(750000,350000)'), 'incorrect');
+  // arity already matching is never re-read: (1,536) stays the pair it types
+  assert.equal(checkAnswer('(1,536)', '(1,536)'), 'correct');
+  assert.equal(checkAnswer('(1536)', '(1,536)'), 'incorrect');
+});

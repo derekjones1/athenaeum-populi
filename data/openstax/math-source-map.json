@@ -42,7 +42,7 @@
       "upstreamChapters": 12,
       "upstreamSections": 73,
       "localChapters": 12,
-      "mappedSections": 49
+      "mappedSections": 57
     }
   },
   "sections": [
@@ -2295,6 +2295,78 @@
       "moduleId": "m49412",
       "sourceTitle": "Vectors",
       "moduleSha256": "16760071707bb1be77d13d3f5545b9debdbd31e0902fcbed0a0e3332900ff5ae"
+    },
+    {
+      "localPath": "content/math/precalculus/09-systems-of-equations-and-inequalities/01-systems-of-linear-equations-two-variables.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "9.1",
+      "moduleId": "m49420",
+      "sourceTitle": "Systems of Linear Equations: Two Variables",
+      "moduleSha256": "e87ad1749a8fdfbc3fa2cc0a275ba541685918748941819676ca99b04fb3d2f9"
+    },
+    {
+      "localPath": "content/math/precalculus/09-systems-of-equations-and-inequalities/02-systems-of-linear-equations-three-variables.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "9.2",
+      "moduleId": "m49419",
+      "sourceTitle": "Systems of Linear Equations: Three Variables",
+      "moduleSha256": "a5262806cdee35dcb4d062e6c1eae601c6f039a06e7179bba3a509d03c1a9373"
+    },
+    {
+      "localPath": "content/math/precalculus/09-systems-of-equations-and-inequalities/03-systems-of-nonlinear-equations-and-inequalities-two-variables.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "9.3",
+      "moduleId": "m49431",
+      "sourceTitle": "Systems of Nonlinear Equations and Inequalities: Two Variables",
+      "moduleSha256": "3601eacd088c27bfe7c773010062c94e30c9d988d5118ba92242bdd37cd5fd14"
+    },
+    {
+      "localPath": "content/math/precalculus/09-systems-of-equations-and-inequalities/04-partial-fractions.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "9.4",
+      "moduleId": "m49432",
+      "sourceTitle": "Partial Fractions",
+      "moduleSha256": "534724d24739789c342bee0f1a4a9dd0ee946261cf0101d701af55589f29faef"
+    },
+    {
+      "localPath": "content/math/precalculus/09-systems-of-equations-and-inequalities/05-matrices-and-matrix-operations.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "9.5",
+      "moduleId": "m49433",
+      "sourceTitle": "Matrices and Matrix Operations",
+      "moduleSha256": "3714ab2c27e006a483960c9d1290a5304db45264f07efd49ac4fcb871553652f"
+    },
+    {
+      "localPath": "content/math/precalculus/09-systems-of-equations-and-inequalities/06-solving-systems-with-gaussian-elimination.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "9.6",
+      "moduleId": "m49434",
+      "sourceTitle": "Solving Systems with Gaussian Elimination",
+      "moduleSha256": "97b425e131bf633f4eae72a37cbf406278dfe219692d2cbdd51121eb5b760d6f"
+    },
+    {
+      "localPath": "content/math/precalculus/09-systems-of-equations-and-inequalities/07-solving-systems-with-inverses.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "9.7",
+      "moduleId": "m49435",
+      "sourceTitle": "Solving Systems with Inverses",
+      "moduleSha256": "9fb8562e01949dab44c79513c56a498e2beeb264a4e68a6da8a6880aeba392b5"
+    },
+    {
+      "localPath": "content/math/precalculus/09-systems-of-equations-and-inequalities/08-solving-systems-with-cramers-rule.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "9.8",
+      "moduleId": "m49436",
+      "sourceTitle": "Solving Systems with Cramer's Rule",
+      "moduleSha256": "8b019287dde63a899203d5033d97780d26817fe1631161b90359f7419bc94fba"
     }
   ]
 }

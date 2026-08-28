@@ -181,10 +181,6 @@
    "verdict": "keep",
    "note": "polar plotting: no polar graphplot form; polar lattice is not the snap lattice"
   },
-  "1ef65eaceef21e4a": {
-   "verdict": "keep",
-   "note": "categorical curve identification; polar curve not gradeable as a curve"
-  },
   "1f1353de26a6a550": {
    "verdict": "keep",
    "note": "Knowledge Check item; scalar width of the same optimization — nothing to plot"
@@ -233,9 +229,17 @@
    "verdict": "keep",
    "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
   },
+  "244c6fcc144b3b49": {
+   "verdict": "keep",
+   "note": "polar symmetry classification MC; categorical answer, no polar graphplot mode"
+  },
   "26d79b94ebb0de15": {
    "verdict": "keep",
    "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "2730a997a5f885b5": {
+   "verdict": "keep",
+   "note": "which-graph MC over shaded inequality regions; regions are not graphplot-gradeable"
   },
   "27ed46e4147c8167": {
    "verdict": "keep",
@@ -393,6 +397,10 @@
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
   },
+  "3e4f16a2fd036a65": {
+   "verdict": "keep",
+   "note": "which-graph MC over a shaded inequality region; regions are not graphplot-gradeable"
+  },
   "3e64c57ae5256574": {
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
@@ -449,10 +457,6 @@
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
   },
-  "488dca3e3d64c0b7": {
-   "verdict": "keep",
-   "note": "categorical symmetry-test answer; nothing to plot"
-  },
   "499d81d383e78f67": {
    "verdict": "keep",
    "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
@@ -460,10 +464,6 @@
   "4c6b1dadc8851f30": {
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
-  },
-  "4c9432bf14af0280": {
-   "verdict": "keep",
-   "note": "categorical curve identification; polar curve not gradeable as a curve"
   },
   "4cc4f6ddf6528954": {
    "verdict": "keep",
@@ -569,10 +569,6 @@
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
   },
-  "5d751dad853c8fb5": {
-   "verdict": "keep",
-   "note": "parametric curve with orientation; orientation is the learning target and is not gradeable, curve shapes (ellipse/sideways parabola/root segment) outside graphplot forms"
-  },
   "5dee6328857ae88f": {
    "verdict": "keep",
    "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
@@ -580,6 +576,10 @@
   "5e963a718fc544a2": {
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "5f35315d229cdab9": {
+   "verdict": "keep",
+   "note": "name-the-shape MC over a lemniscate; polar curve not graphplot-gradeable"
   },
   "6003961a1682bb8f": {
    "verdict": "keep",
@@ -629,9 +629,9 @@
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
   },
-  "68f5cedd72025080": {
+  "6849454c6be14209": {
    "verdict": "keep",
-   "note": "categorical curve identification; polar curve not gradeable as a curve"
+   "note": "fillin asks for boundary intersection points with irrational coordinates (sqrt2-1, 2sqrt2-2); off any snap lattice"
   },
   "69812ff553811fa2": {
    "verdict": "keep",
@@ -640,6 +640,10 @@
   "6a715f2f84e44795": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "6ae2969195cff4e9": {
+   "verdict": "keep",
+   "note": "name-the-shape MC over a rose curve; polar curve not graphplot-gradeable"
   },
   "6b2877d06311ff09": {
    "verdict": "keep",
@@ -669,6 +673,10 @@
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
   },
+  "742a6f04ae48bdec": {
+   "verdict": "keep",
+   "note": "rose-curve name/petal-count MC; polar curve not graphplot-gradeable"
+  },
   "745a13e0c58caa7f": {
    "verdict": "keep",
    "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
@@ -692,10 +700,6 @@
   "77448b8f8d1a70a0": {
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
-  },
-  "774751ce5904940c": {
-   "verdict": "keep",
-   "note": "categorical symmetry-test answer; nothing to plot"
   },
   "776c74366de22aaa": {
    "verdict": "keep",
@@ -789,10 +793,6 @@
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
   },
-  "81790c4c83fa975b": {
-   "verdict": "keep",
-   "note": "categorical curve identification; polar curve not gradeable as a curve"
-  },
   "81909b4241bd209f": {
    "verdict": "keep",
    "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
@@ -885,6 +885,10 @@
    "verdict": "keep",
    "note": "quadrant: the graded ask is which quadrant the point falls in, not where it goes on the grid; this section's plotting itself is covered by its own recognition multiple choice"
   },
+  "9217092bdc7b0548": {
+   "verdict": "keep",
+   "note": "polar symmetry classification MC; categorical answer, no polar graphplot mode"
+  },
   "922146a36cb8bc2d": {
    "verdict": "keep",
    "note": "parametric curve with orientation; orientation is the learning target and is not gradeable, curve shapes (ellipse/sideways parabola/root segment) outside graphplot forms"
@@ -937,13 +941,13 @@
    "verdict": "keep",
    "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
   },
+  "99ef6b6c893c892d": {
+   "verdict": "keep",
+   "note": "polar symmetry classification MC; categorical answer, no polar graphplot mode"
+  },
   "9a1cd846f074780b": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
-  },
-  "9a7c2f207e304fd6": {
-   "verdict": "keep",
-   "note": "categorical symmetry-test answer; nothing to plot"
   },
   "9b9fb9cbe5cadb11": {
    "verdict": "keep",
@@ -960,6 +964,10 @@
   "9c0e13f2377320f9": {
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "9cdf37abceed74d8": {
+   "verdict": "keep",
+   "note": "polar symmetry classification MC; categorical answer, no polar graphplot mode"
   },
   "9d0e66b28120ec8b": {
    "verdict": "keep",
@@ -985,10 +993,6 @@
    "verdict": "keep",
    "note": "parametric curve with orientation; orientation is the learning target and is not gradeable, curve shapes (ellipse/sideways parabola/root segment) outside graphplot forms"
   },
-  "a356b260e1aaa9b0": {
-   "verdict": "keep",
-   "note": "categorical symmetry-test answer; nothing to plot"
-  },
   "a56d701e91f17633": {
    "verdict": "keep",
    "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
@@ -1000,6 +1004,10 @@
   "a672e15791724b9d": {
    "verdict": "keep",
    "note": "Knowledge Check item; vertical asymptote equation answer for a log function — graphplot asymptote form is for drawable member lines on section pages, KC stays fillin"
+  },
+  "a7f5bb28a1701566": {
+   "verdict": "keep",
+   "note": "name-the-shape MC over an inner-loop limacon; polar curve not graphplot-gradeable"
   },
   "a7f887823c37b167": {
    "verdict": "keep",
@@ -1021,6 +1029,10 @@
    "verdict": "keep",
    "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
   },
+  "aad3140325694c0c": {
+   "verdict": "keep",
+   "note": "system-classification MC; categorical answer, and boundary intercepts (-0.6, -0.65) are off the snap lattice"
+  },
   "aadfb919e519e47c": {
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
@@ -1028,6 +1040,10 @@
   "ab3e52f68ba32647": {
    "verdict": "keep",
    "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
+  },
+  "acbdbd837992ab55": {
+   "verdict": "keep",
+   "note": "polar symmetry classification MC; categorical answer, no polar graphplot mode"
   },
   "adb21612b443e696": {
    "verdict": "keep",
@@ -1060,10 +1076,6 @@
   "b1dd42e565e37d2d": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
-  },
-  "b2ca36512c5581ab": {
-   "verdict": "keep",
-   "note": "categorical symmetry-test answer; nothing to plot"
   },
   "b39ea2cd161ccdbc": {
    "verdict": "keep",
@@ -1137,10 +1149,6 @@
    "verdict": "keep",
    "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
   },
-  "b9bf0db726a7aa55": {
-   "verdict": "keep",
-   "note": "categorical curve identification; polar curve not gradeable as a curve"
-  },
   "b9d989afea6c1507": {
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
@@ -1184,6 +1192,10 @@
   "be95fc6abd50b622": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "beca6c4ecb107b14": {
+   "verdict": "keep",
+   "note": "name-the-shape MC over a spiral; polar curve not graphplot-gradeable"
   },
   "bf2a54db39c81477": {
    "verdict": "keep",
@@ -1237,10 +1249,6 @@
    "verdict": "keep",
    "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
   },
-  "c796aec92aaaad5e": {
-   "verdict": "keep",
-   "note": "categorical curve identification; polar curve not gradeable as a curve"
-  },
   "c7f7619312ecaf6e": {
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
@@ -1269,6 +1277,10 @@
    "verdict": "keep",
    "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
   },
+  "cf401972097d1450": {
+   "verdict": "keep",
+   "note": "name-the-shape MC over a polar circle; polar curve not graphplot-gradeable"
+  },
   "cfb09470eafb4853": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
@@ -1296,10 +1308,6 @@
   "d1ea050795d529ce": {
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
-  },
-  "d1fd6bcda9760867": {
-   "verdict": "keep",
-   "note": "categorical curve identification; polar curve not gradeable as a curve"
   },
   "d2c58dcc618f1938": {
    "verdict": "keep",
@@ -1340,6 +1348,10 @@
   "db3a87ede92b8d0c": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "dbd3db3fec3cf6bf": {
+   "verdict": "keep",
+   "note": "parametric ellipse with orientation; graphplot grades lines/quadratics/points only"
   },
   "dbf5277be9ed4e9e": {
    "verdict": "keep",
@@ -1509,6 +1521,10 @@
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
   },
+  "fa49c7a14560e150": {
+   "verdict": "keep",
+   "note": "system-classification MC; categorical answer, and a dependent system is one line drawn twice — not expressible as a graphplot two-line system"
+  },
   "faa9c3c2c49ae808": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
@@ -1533,9 +1549,17 @@
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
   },
+  "fe4ad35d458c58c6": {
+   "verdict": "keep",
+   "note": "name-the-shape MC over a cardioid; polar curve not graphplot-gradeable"
+  },
   "ff27adb8d20ef241": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "ff2af6fce8d06a47": {
+   "verdict": "keep",
+   "note": "which-graph MC over shaded inequality regions; regions are not graphplot-gradeable"
   },
   "ff6aa687f0357814": {
    "verdict": "keep",

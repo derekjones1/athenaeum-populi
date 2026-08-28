@@ -121,10 +121,13 @@
  *             (h, k±a). Branches clip to the grid (no from/to). The dashed
  *             asymptotes and central rectangle of the textbook construction
  *             are their own objects — author them as `lines` and `segments`.
- *   regions:  [{ line:<line spec>, side:[x,y] test point, dashed?,
- *                label?, labelSide?, labelAt? }]
+ *   regions:  [{ line:<line spec> | quadratic:<quadratic spec>, side:[x,y]
+ *                test point, dashed?, label?, labelSide?, labelAt? }]
  *             boundary drawn dashed for strict inequalities; the label
- *             rides on the boundary line and places like any line label
+ *             rides on the boundary line and places like any line label.
+ *             A quadratic boundary shades between the parabola and the
+ *             window edge on the test point's side; it cannot carry a
+ *             label (curve strokes draw no text) — use a texts entry
  *   texts:    [{ at:[x,y], text, anchor?, dx?, dy?, fontSize? }]
  *             escape hatch for axis words, quadrant notes, etc.
  */
@@ -133,6 +136,40 @@ import { GEOMETRY_EPSILON } from './geometry-constants.mjs'
 import { fitTextBox, measureTextWidth } from './text-metrics.mjs'
 
 const FONT = 13
+
+/** t-interval (within [0,1]) where segment a→b passes through box bb, or null */
+function segBoxInterval(a, b, bb) {
+  const d = [b[0] - a[0], b[1] - a[1]]
+  let t0 = 0, t1 = 1
+  for (const [p, q] of [[-d[0], a[0] - bb[0]], [d[0], bb[2] - a[0]], [-d[1], a[1] - bb[1]], [d[1], bb[3] - a[1]]]) {
+    if (p === 0) { if (q < 0) return null; continue }
+    const r = q / p
+    if (p < 0) t0 = Math.max(t0, r); else t1 = Math.min(t1, r)
+  }
+  return t0 < t1 ? [t0, t1] : null
+}
+
+/** t-intervals of segment a→b OUTSIDE every box (each inflated by pad) —
+    shared by buildGraph (strokes pass behind tick digits) and buildFigure
+    (gapTexts segments pass behind text entries, the Sarrus-mnemonic case) */
+function segmentRunsOutsideBoxes(a, b, pad, boxes) {
+  const cuts = []
+  for (const bb of boxes) {
+    const iv = segBoxInterval(a, b, [bb[0] - pad, bb[1] - pad, bb[2] + pad, bb[3] + pad])
+    if (iv) cuts.push(iv)
+  }
+  if (!cuts.length) return [[0, 1]]
+  cuts.sort((p, q) => p[0] - q[0])
+  const runs = []
+  let t = 0
+  for (const [c0, c1] of cuts) {
+    if (c0 > t + 1e-6) runs.push([t, Math.min(c0, 1)])
+    t = Math.max(t, c1)
+    if (t >= 1) break
+  }
+  if (t < 1 - 1e-6) runs.push([t, 1])
+  return runs
+}
 const MIN_EFFECTIVE_FONT = 12 // px on screen, after any CSS max-width shrink
 const MAX_GENERATED_STEPS = 10_000
 
@@ -282,6 +319,7 @@ export function buildGraph(props) {
 
   const els = []
   const allLines = [...lines] // regions append their boundary lines
+  const allQuadratics = [...quadratics] // quadratic-boundary regions append here
   const allSegments = [...segments]
   const obstacles = [] // px segments labels must clear
   const labelBoxes = [] // placed label bboxes [x0,y0,x1,y1]
@@ -321,37 +359,8 @@ export function buildGraph(props) {
     return [[a[0] + t0 * d[0], a[1] + t0 * d[1]], [a[0] + t1 * d[0], a[1] + t1 * d[1]]]
   }
 
-  /** t-interval (within [0,1]) where segment a→b passes through box bb, or null */
-  function segBoxInterval(a, b, bb) {
-    const d = [b[0] - a[0], b[1] - a[1]]
-    let t0 = 0, t1 = 1
-    for (const [p, q] of [[-d[0], a[0] - bb[0]], [d[0], bb[2] - a[0]], [-d[1], a[1] - bb[1]], [d[1], bb[3] - a[1]]]) {
-      if (p === 0) { if (q < 0) return null; continue }
-      const r = q / p
-      if (p < 0) t0 = Math.max(t0, r); else t1 = Math.min(t1, r)
-    }
-    return t0 < t1 ? [t0, t1] : null
-  }
-
   /** t-intervals of segment a→b OUTSIDE every gap box (inflated by pad) */
-  function outsideGapRuns(a, b, pad = 1.5, boxes = strokeGapBoxes) {
-    const cuts = []
-    for (const bb of boxes) {
-      const iv = segBoxInterval(a, b, [bb[0] - pad, bb[1] - pad, bb[2] + pad, bb[3] + pad])
-      if (iv) cuts.push(iv)
-    }
-    if (!cuts.length) return [[0, 1]]
-    cuts.sort((p, q) => p[0] - q[0])
-    const runs = []
-    let t = 0
-    for (const [c0, c1] of cuts) {
-      if (c0 > t + 1e-6) runs.push([t, Math.min(c0, 1)])
-      t = Math.max(t, c1)
-      if (t >= 1) break
-    }
-    if (t < 1 - 1e-6) runs.push([t, 1])
-    return runs
-  }
+  const outsideGapRuns = (a, b, pad = 1.5, boxes = strokeGapBoxes) => segmentRunsOutsideBoxes(a, b, pad, boxes)
 
   /** Draw a DASHED segment a→b as sub-segments that pass BEHIND tick digits
       and axis letters — a dashed asymptote must not strike through the
@@ -458,6 +467,44 @@ export function buildGraph(props) {
 
   // --- 2. shaded regions (under everything else) ---------------------------
   for (const r of regions) {
+    if (r.quadratic) {
+      if (r.line) throw new Error('region takes line or quadratic, not both')
+      if (r.label !== undefined) {
+        throw new Error('a quadratic-boundary region cannot carry a label — curve strokes draw no text; name it with a texts entry')
+      }
+      const q = r.quadratic
+      const qa = q.a, qb = q.b ?? 0, qc = q.c ?? 0
+      if (![qa, qb, qc].every(Number.isFinite) || qa === 0) {
+        throw new Error('region quadratic needs finite coefficients with a nonzero')
+      }
+      if (!Array.isArray(r.side) || r.side.length !== 2 || !r.side.every(Number.isFinite)) {
+        throw new Error('region needs a side test point [x, y]')
+      }
+      const value = (t) => qa * t * t + qb * t + qc
+      // dependent coordinate: y for y = f(x), x for a sideways x = f(y)
+      const dep = q.sideways ? 0 : 1
+      const test = r.side[dep] - value(r.side[1 - dep])
+      if (test === 0) throw new Error('region side test point must be off the boundary')
+      const [iMin, iMax] = q.sideways ? [yMin, yMax] : [xMin, xMax]
+      const [dMin, dMax] = q.sideways ? [xMin, xMax] : [yMin, yMax]
+      const clampDep = (v) => Math.min(dMax, Math.max(dMin, v))
+      const SAMPLES = 96
+      const pts = []
+      for (let i = 0; i <= SAMPLES; i++) {
+        const t = iMin + (i / SAMPLES) * (iMax - iMin)
+        const v = clampDep(value(t))
+        pts.push(px(q.sideways ? [v, t] : [t, v]))
+      }
+      const edge = test > 0 ? dMax : dMin
+      pts.push(px(q.sideways ? [edge, iMax] : [iMax, edge]))
+      pts.push(px(q.sideways ? [edge, iMin] : [iMin, edge]))
+      add('polygon', {
+        points: pts.map((p) => p.map(fmt).join(',')).join(' '),
+        fill: 'currentColor', opacity: '0.12', stroke: 'none',
+      })
+      allQuadratics.push({ ...q, dashed: r.dashed ?? q.dashed })
+      continue
+    }
     const [A, B] = lineAnchors(r.line)
     // signed side of the test point relative to the boundary, in px space
     const a = px(A), b = px(B), d = sub(b, a)
@@ -682,7 +729,7 @@ export function buildGraph(props) {
     }
   }
 
-  for (const q of quadratics) {
+  for (const q of allQuadratics) {
     const b = q.b ?? 0, c = q.c ?? 0
     if (q.sideways) {
       drawPolynomialCurve(q, {
@@ -1437,12 +1484,23 @@ const fmtN = (n) => String(+Number(n).toFixed(1))
  *   unit       px per math unit (default 30)
  *   padding    px around the fitted geometry (default 30)
  *   polygons   [{ points: [[x,y]…],
+ *                 fill?: true                 — translucent currentColor fill
+ *                                (0.12, the shaded-region grammar; fills of
+ *                                overlapping polygons read darker, which is
+ *                                how a plane-intersection schematic shows
+ *                                its overlap)
  *                 edgeLabels?:   [str|null…]  — edge i joins points i, i+1;
  *                                labels sit OUTSIDE on the edge normal
  *                 vertexLabels?: [str|null…]  — pushed away from centroid
  *                 dashedEdges?:  [i…],
  *                 rightAngles?:  [i…]         — square mark at vertex i }]
- *   segments   [{ from, to, dashed?, label?, labelSide?: 'left'|'right' }]
+ *   segments   [{ from, to, dashed?, arrow?: true|'both',
+ *                 label?, labelSide?: 'left'|'right',
+ *                 gapTexts?: true — the drawn shaft skips every texts
+ *                                entry's box, so a stroke may pass BEHIND
+ *                                text (a Sarrus-mnemonic diagonal crossing
+ *                                its matrix entries) without striking
+ *                                through it }]
  *              labelSide is relative to the from→to direction (default left)
  *   rightAngles [{ at, dirs: [[dx,dy],[dx,dy]] }] standalone marks (e.g.
  *              where a height meets a base); dirs point INTO the corner
@@ -1519,6 +1577,15 @@ export function buildFigure(props) {
     })
   }
 
+  // ---- polygon fills first, so every stroke stays on top of every fill
+  for (const poly of polygons) {
+    if (!poly.fill) continue
+    add('polygon', {
+      points: poly.points.map(px).map((q) => q.map(fmtN).join(',')).join(' '),
+      fill: 'currentColor', opacity: '0.12', stroke: 'none',
+    })
+  }
+
   // ---- polygons
   for (const poly of polygons) {
     const pts = poly.points.map(px)
@@ -1560,6 +1627,17 @@ export function buildFigure(props) {
     add('polygon', { points: pts, fill: 'currentColor' })
   }
 
+  // px boxes of every texts entry, for gapTexts segments. The box mirrors
+  // how the text element is anchored below: x from the anchor mode, the
+  // baseline sitting ~0.8em above the descender line.
+  const textBoxes = texts.map((t) => {
+    const c = px(t.at)
+    const w = measureTextWidth(String(t.text), FS)
+    const x0 = c[0] + (t.dx || 0) - (t.anchor === 'middle' ? w / 2 : t.anchor === 'end' ? w : 0)
+    const yBase = c[1] + (t.dy || 0)
+    return [x0, yBase - 0.8 * FS, x0 + w, yBase + 0.2 * FS]
+  })
+
   // ---- standalone segments (heights, braces…, mapping arrows)
   for (const s of segments) {
     const a = px(s.from), b = px(s.to)
@@ -1569,7 +1647,14 @@ export function buildFigure(props) {
     const dir = norm(sub(b, a))
     const headEnd = s.arrow ? [b[0] - 6 * dir[0], b[1] - 6 * dir[1]] : b
     const headStart = s.arrow === 'both' ? [a[0] + 6 * dir[0], a[1] + 6 * dir[1]] : a
-    seg(headStart, headEnd, s.dashed ? DASH : {})
+    if (s.gapTexts) {
+      const at = (t) => [headStart[0] + t * (headEnd[0] - headStart[0]), headStart[1] + t * (headEnd[1] - headStart[1])]
+      for (const [t0, t1] of segmentRunsOutsideBoxes(headStart, headEnd, 2.5, textBoxes)) {
+        seg(at(t0), at(t1), s.dashed ? DASH : {})
+      }
+    } else {
+      seg(headStart, headEnd, s.dashed ? DASH : {})
+    }
     if (s.arrow) {
       arrowMark(b, sub(b, a))
       if (s.arrow === 'both') arrowMark(a, sub(a, b))

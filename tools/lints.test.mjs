@@ -2064,3 +2064,31 @@ test('a graph option body is exempt from the prose superscript-minus rule, like 
   assert(lintHugo(`The decay constant is 10⁻³ per second.\n\n${MC_GRAPH([LINE_SPEC, CURVE_SPEC])}`, SECTION)
     .errors.some((e) => e.includes('superscript minus')));
 });
+
+test('an escaped dollar inside inline math is caught; display math and prose escapes are not', () => {
+  // Hugo's passthrough splits an inline span at `\$` and hands KaTeX a
+  // fragment starting with a bare backslash, so `hugo` dies with "Unexpected
+  // character: '\'" — and only `hugo` runs that parser, so every fast gate
+  // passes the page. Precalc 9.7 shipped `$\$10{,}500$` exactly this way and
+  // broke `npm run ci` at the build step.
+  const dollar = (source) => lintHugo(source, SECTION)
+    .errors.filter((e) => e.includes('escaped dollar'));
+
+  assert(dollar('Soriya plans to invest $\\$10{,}500$ into two bonds.\n').length > 0,
+    'the shipped 9.7 defect is caught');
+  assert.deepEqual(
+    dollar('$$\\$3.99 \\div 24 = \\$0.17$$\n'),
+    [],
+    'display math legitimately sets currency with an escaped dollar',
+  );
+  assert.deepEqual(
+    dollar('Soriya plans to invest \\$10,500 into two bonds at $8.5\\%$ return.\n'),
+    [],
+    'the house prose spelling and an ordinary inline span stay clean',
+  );
+  assert.deepEqual(
+    dollar('  question="Patty paid \\$35 for a purse on sale for \\$10 off."\n'),
+    [],
+    'prose escapes with no math delimiter in front stay clean — the corpus is full of them',
+  );
+});

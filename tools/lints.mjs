@@ -1178,6 +1178,19 @@ export function lintHugo(src, filename = '') {
       err(index + (display ? 2 : 1) + at, `stray \`\\\\\` in math, outside any \\begin{…} environment — KaTeX sets it as a row break and prints the rest literally (\`\\\\tfrac\` renders as the word "tfrac"), and it never throws, so no other gate sees it; write a single backslash`);
     }
   }
+  // A single `$` immediately followed by an escaped dollar (`$\$…`) fails the
+  // production build and nothing else sees it: Hugo's passthrough closes the
+  // span at the escaped dollar's own `$`, hands KaTeX the bare backslash left
+  // between them, and `hugo` dies with "Unexpected character: '\'" — but only
+  // `hugo` runs that parser, so `npm test` passes the page (precalc 9.7
+  // shipped `$\$10{,}500$` through every fast gate and broke `npm run ci` at
+  // the build step). Display math is fine (`$$\$3.99$$` renders a dollar
+  // sign) and a prose escape with no math delimiter in front (`\$10,500`) is
+  // the house spelling for money, so the rule is exactly the three-character
+  // sequence `$\$` not preceded by another `$` or a backslash.
+  for (const m of withoutFigureSpecs(mediaSrc, blank).matchAll(/(?<![$\\])\$\\\$/g)) {
+    err(m.index, 'a `$` immediately followed by an escaped dollar (`$\\$…`) — the production build fails on it (Hugo\'s passthrough closes the span at the escaped dollar and KaTeX throws on the bare backslash) while every fast gate passes it; write the amount in prose as `\\$10,500` or use display math');
+  }
   // Unicode superscript minus can't parse as an exponent — in MATH. A figure
   // spec is not math: its labels are plain SVG text with no typesetter behind
   // them, so a superscript character is the only way an exponent can appear at
