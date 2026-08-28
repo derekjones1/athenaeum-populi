@@ -453,6 +453,14 @@ const contentImageAssets = built.filter((file) => imageAssetPattern.test(file) &
 if (contentImageAssets.length) {
   problems.push(`${contentImageAssets.length} content image asset(s) remain (only the nine explicit site-chrome icons/logos are allowed)`);
 }
+// The same nine are also a floor: favicons.html, site.webmanifest, and the
+// navbar reference every one of them unconditionally, so a missing file is a
+// shipped 404 (the navbar logo shipped that way once, silently).
+const builtSet = new Set(built);
+const missingSiteChrome = [...allowedSiteChrome].filter((file) => !builtSet.has(file));
+if (missingSiteChrome.length) {
+  problems.push(`${missingSiteChrome.length} site-chrome icon/logo file(s) missing (favicons.html and the navbar reference all nine)`);
+}
 // The provider rejects an artifact ABOVE the cap, so the gate draws its line
 // where the provider does. The warning is what gives advance notice: a hard
 // failure at the wall is a failure discovered on the deploy that needed to

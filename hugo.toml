@@ -44,11 +44,27 @@ disableKinds = ["taxonomy", "term"]
 
 # --- Params -----------------------------------------------------------------
 [params]
+  # Social-card image (og:image / twitter:image on every page): the 512px
+  # raster site icon — scrapers ignore SVG, so this must be a PNG.
+  images = ["android-chrome-512x512.png"]
+
   # Reader-facing contact address. Rendered as a persistent "Questions or
   # concerns?" mailto link in the right rail (layouts/_partials/toc.html),
   # with the subject line pre-filled from the page being read.
   [params.contact]
     email = "contact@athenaeumpopuli.org"
+
+  # Navbar logo (book glyph, static/images/). The dark variant must be named
+  # explicitly — the theme otherwise reuses the light (black-ink) file, which
+  # is invisible on the dark navbar.
+  [params.navbar]
+    displayTitle = true
+    displayLogo = true
+    [params.navbar.logo]
+      path = "images/logo.svg"
+      dark = "images/logo-dark.svg"
+      width = "22"
+      height = "22"
 
   # Let the documentation rails use the viewport edges. The article itself
   # keeps Hextra's readable max-width inside the space between the two rails.

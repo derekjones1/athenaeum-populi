@@ -49,6 +49,23 @@ function prepare(body, extraFiles = [], { head = '', katexCss = validKatexCss } 
     join(fixture, 'index.html'),
     `<!doctype html><head>${head}</head><nav><img src="/images/logo.svg" alt="Logo"></nav><main id="content">${body}</main>`,
   );
+  // The nine site-chrome icons/logos are a required floor (favicons.html and
+  // the navbar reference them all); the baseline fixture ships the full set.
+  for (const file of [
+    'android-chrome-192x192.png',
+    'android-chrome-512x512.png',
+    'apple-touch-icon.png',
+    'favicon-16x16.png',
+    'favicon-32x32.png',
+    'favicon.ico',
+    'favicon.svg',
+    join('images', 'logo-dark.svg'),
+    join('images', 'logo.svg'),
+  ]) {
+    const path = join(fixture, file);
+    mkdirSync(dirname(path), { recursive: true });
+    writeFileSync(path, 'fixture');
+  }
   for (const file of extraFiles) {
     const path = join(fixture, file);
     mkdirSync(dirname(path), { recursive: true });
@@ -66,6 +83,14 @@ function audit() {
 try {
   prepare('<p>Semantic content.</p>');
   assert.equal(audit().status, 0, 'theme chrome outside main#content should be allowed');
+
+  prepare('<p>Semantic content.</p>');
+  rmSync(join(fixture, 'images', 'logo-dark.svg'));
+  assert.match(
+    audit().stderr,
+    /site-chrome icon\/logo file\(s\) missing/,
+    'a missing navbar logo or favicon is a shipped 404, not an optional asset',
+  );
 
   prepare('<p>placeholder</p>');
   writeFileSync(
