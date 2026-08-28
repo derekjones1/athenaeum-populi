@@ -42,7 +42,7 @@
       "upstreamChapters": 12,
       "upstreamSections": 73,
       "localChapters": 12,
-      "mappedSections": 41
+      "mappedSections": 49
     }
   },
   "sections": [
@@ -2223,6 +2223,78 @@
       "moduleId": "m49399",
       "sourceTitle": "Modeling with Trigonometric Functions",
       "moduleSha256": "9211168fa400315837f46b8b9b9d0ead5ea3a9e1fff631b3858523c897229e67"
+    },
+    {
+      "localPath": "content/math/precalculus/08-further-applications-of-trigonometry/01-non-right-triangles-law-of-sines.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "8.1",
+      "moduleId": "m49404",
+      "sourceTitle": "Non-right Triangles: Law of Sines",
+      "moduleSha256": "76c431dd238fbda94b3ce628f91ba9a2910fc9a75234603dba53d78148b18253"
+    },
+    {
+      "localPath": "content/math/precalculus/08-further-applications-of-trigonometry/02-non-right-triangles-law-of-cosines.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "8.2",
+      "moduleId": "m49405",
+      "sourceTitle": "Non-right Triangles: Law of Cosines",
+      "moduleSha256": "87f7460e0454b6046dbae9b7a7875cae995ab65c0f8b2c02a9341d66fd0e56ce"
+    },
+    {
+      "localPath": "content/math/precalculus/08-further-applications-of-trigonometry/03-polar-coordinates.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "8.3",
+      "moduleId": "m49406",
+      "sourceTitle": "Polar Coordinates",
+      "moduleSha256": "eaef72d753e625134090d8c3ce02e20f2b1da15a282696c47da281b7452a0765"
+    },
+    {
+      "localPath": "content/math/precalculus/08-further-applications-of-trigonometry/04-polar-coordinates-graphs.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "8.4",
+      "moduleId": "m49407",
+      "sourceTitle": "Polar Coordinates: Graphs",
+      "moduleSha256": "3783ce0448cac5515ba6b1f416af9cfe01275f4388ab45e1b443d98127fb12d8"
+    },
+    {
+      "localPath": "content/math/precalculus/08-further-applications-of-trigonometry/05-polar-form-of-complex-numbers.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "8.5",
+      "moduleId": "m49408",
+      "sourceTitle": "Polar Form of Complex Numbers",
+      "moduleSha256": "a12116e77556f3093bb3b66fccdb6be69aafa32421860627468625fdbb48ac82"
+    },
+    {
+      "localPath": "content/math/precalculus/08-further-applications-of-trigonometry/06-parametric-equations.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "8.6",
+      "moduleId": "m49409",
+      "sourceTitle": "Parametric Equations",
+      "moduleSha256": "f18aba1f87276e229883ce3786c474b0f11ba870792615e9be3988d6d3323516"
+    },
+    {
+      "localPath": "content/math/precalculus/08-further-applications-of-trigonometry/07-parametric-equations-graphs.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "8.7",
+      "moduleId": "m49411",
+      "sourceTitle": "Parametric Equations: Graphs",
+      "moduleSha256": "ca22a64e28d55660e31887d683aa222826c00b1c74b048e2c8f9406546ec7647"
+    },
+    {
+      "localPath": "content/math/precalculus/08-further-applications-of-trigonometry/08-vectors.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "8.8",
+      "moduleId": "m49412",
+      "sourceTitle": "Vectors",
+      "moduleSha256": "16760071707bb1be77d13d3f5545b9debdbd31e0902fcbed0a0e3332900ff5ae"
     }
   ]
 }

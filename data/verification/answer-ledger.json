@@ -38,6 +38,10 @@
   "00643d5accf09670": {
    "verdict": "ok"
   },
+  "006697e4b5e635ba": {
+   "verdict": "ok",
+   "note": "theta = atan2(5,3) in degrees = 59.0362...deg, rounds to 59.04 deg; node -e dirDeg(3,5)=59.0362, matches source's own 59.04 deg."
+  },
   "006fbb0ec49cfc8c": {
    "verdict": "ok"
   },
@@ -103,6 +107,10 @@
   },
   "0117e7096c6b7a58": {
    "verdict": "ok"
+  },
+  "011f0daba70e20ba": {
+   "verdict": "ok",
+   "note": "Practice P3 (x(t)=-sqrt t, y(t)=t): eliminated t=y, x=-sqrt(y) so x<=0, y=x^2; independently derived left-half-upward-parabola vertex at origin, matches source solution alt-text 'left half of an upward opening parabola'. Arrow direction (toward more negative x as t increases) confirmed since x=-sqrt(t) decreases monotonically as t increases."
   },
   "0131bdca68fbaa99": {
    "verdict": "ok"
@@ -318,6 +326,10 @@
   "03216615447142fc": {
    "verdict": "ok"
   },
+  "0324db2ce5603023": {
+   "verdict": "ok",
+   "note": "TryIt2 part 1 (source ti_08_01_03, ambiguous SSA alpha=80,a=120,b=121): sin(beta)=b*sin(alpha)/a=0.9926 -> beta1=83.224 (acute); gamma1=180-80-83.224=16.776; c=a*sin(gamma1)/sin(alpha)=35.17 -> 35.2. Matches CNXML solution 1 (c approx 35.2)."
+  },
   "03256b52c35b2f84": {
    "verdict": "ok"
   },
@@ -496,6 +508,10 @@
   },
   "04bb275056aa2354": {
    "verdict": "ok"
+  },
+  "04bc08e2bc7295d8": {
+   "verdict": "ok",
+   "note": "r=6/(cos theta+3 sin theta) -> r cos theta + 3 r sin theta = 6 -> x+3y=6. Matches CNXML solution '3y+x=6; line' (same equation). Verified numerically at theta=0.3,1.0,2.0 that x+3y=6 holds exactly for the sampled polar point."
   },
   "04bd3f6df2d3c588": {
    "verdict": "ok"
@@ -921,6 +937,10 @@
   },
   "0887b58220cce6ac": {
    "verdict": "ok"
+  },
+  "0889e3214cee1342": {
+   "verdict": "ok",
+   "note": "parent: r=sqrt8=2sqrt2, theta=7pi/8 and 15pi/8"
   },
   "0891e3fadd6a7d88": {
    "verdict": "ok"
@@ -1678,6 +1698,10 @@
   "0fed8bf5a34f03e9": {
    "verdict": "ok"
   },
+  "0ffefae3a544454f": {
+   "verdict": "ok",
+   "note": "x=6cos45=3sqrt2, y=6sin45=3sqrt2. node -e 6*Math.cos(45deg)=4.2426=3*Math.sqrt(2), matches source's own answer 3sqrt2 i+3sqrt2 j."
+  },
   "1011c13376a5816b": {
    "verdict": "ok"
   },
@@ -1810,6 +1834,10 @@
   },
   "1162d33084ee2ed3": {
    "verdict": "ok"
+  },
+  "117600dfa0117fac": {
+   "verdict": "ok",
+   "note": "Practice: x=4t-1,y=4t+2 -> t=(x+1)/4, y=(x+1)+2=x+3; node-verified residual ~0 over t=-2..5; matches CNXML solution."
   },
   "117644f15dd3b584": {
    "verdict": "ok"
@@ -2526,6 +2554,10 @@
   "18c1764d9fa67932": {
    "verdict": "ok"
   },
+  "18d3909e5adf132b": {
+   "verdict": "ok",
+   "note": "sqrt(4^2+6^2)=sqrt(52)=7.2111..., rounds to 7.211. node -e Math.sqrt(16+36)=7.211102550927978."
+  },
   "18d734794c0987a3": {
    "verdict": "ok"
   },
@@ -2545,6 +2577,10 @@
   "191d95f305b4d379": {
    "verdict": "ok",
    "note": "Every polynomial function has domain all real numbers, stated directly in the section's own Q&A callout; no division, root, or log restricts x^3+x^2-20x."
+  },
+  "192972eac5ba2369": {
+   "verdict": "ok",
+   "note": "(3-(-4), -3-2) = (7,-5) -> 7i-5j. Node-verified, matches source's own <7,-5> answer restated in i,j form."
   },
   "1931e59050ace8e9": {
    "verdict": "ok"
@@ -2735,6 +2771,10 @@
   "1b3020fa521f4dd8": {
    "verdict": "ok"
   },
+  "1b329d62fa1ca9f4": {
+   "verdict": "ok",
+   "note": "atan2(-6,-4) normalized to [0,360) = 236.3099 deg, rounds to 236.310 deg. node -e dirDeg(-4,-6)=236.3099."
+  },
   "1b3611f36b33319a": {
    "verdict": "ok"
   },
@@ -2821,6 +2861,10 @@
   },
   "1bf2ad278c500102": {
    "verdict": "ok"
+  },
+  "1bfd450eb354bbbc": {
+   "verdict": "ok",
+   "note": "r of 8-4i: sqrt(64+16)=sqrt(80)=4*sqrt(5), node Math.sqrt(80)=8.94427190999916=4*Math.sqrt(5)."
   },
   "1bfeb9e0ecaf3d84": {
    "verdict": "ok"
@@ -3008,6 +3052,10 @@
   "1dfb4d3136f155b1": {
    "verdict": "ok"
   },
+  "1dfc3bce25c76c9c": {
+   "verdict": "ok",
+   "note": "node: -3*cos(pi/6)=-2.598076..=-3*sqrt(3)/2, -3*sin(pi/6)=-1.5. Matches CNXML solution (-3*sqrt(3)/2, -3/2) exactly (Section Exercises, (-3,pi/6))."
+  },
   "1dfc423dc96f916f": {
    "verdict": "ok"
   },
@@ -3064,6 +3112,10 @@
   },
   "1e8198e09f5daa5d": {
    "verdict": "ok"
+  },
+  "1e8be9172ed7dc8c": {
+   "verdict": "ok",
+   "note": "Try It 2: plot (3,-pi/6) and (2,9pi/4). node: 3*cos(-pi/6)=2.5981, 3*sin(-pi/6)=-1.5; 9pi/4 is coterminal with pi/4, 2*cos(pi/4)=2*sin(pi/4)=1.4142 -> option index 2 (correct answerIndex=2); distractors misread the coterminal reduction and sign."
   },
   "1eaf04733813a307": {
    "verdict": "ok"
@@ -3507,6 +3559,10 @@
    "verdict": "ok",
    "note": "point (√2/2,√2/2): sec t=1/x=√2; matches CNXML solution"
   },
+  "22fa6db4d0eb1810": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Determine whether the vectors $\\mathbf{u}$ and $\\mathbf{v}$ )"
+  },
   "23133471f710e4af": {
    "verdict": "ok"
   },
@@ -3608,6 +3664,10 @@
   "24466b4df3befb88": {
    "verdict": "ok"
   },
+  "244c6fcc144b3b49": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Which symmetries does the graph of $r=3\\cos\\theta$ exhibit?)"
+  },
   "2471250c723a2f0a": {
    "verdict": "ok"
   },
@@ -3695,6 +3755,10 @@
   },
   "2552a31bc01297b2": {
    "verdict": "ok"
+  },
+  "255cac14b3e7a7b8": {
+   "verdict": "ok",
+   "note": "y=4 -> r sin(theta)=4 -> r=4 csc(theta). Matches CNXML solution exactly (Section Exercises, y=4). Replayed: retyping the printed 'y=4' does not grade equal to 4 csc(theta) (different variable domains)."
   },
   "2561cbe4d5e0b8bb": {
    "verdict": "ok"
@@ -4109,6 +4173,10 @@
   "29a7581ee8ea0158": {
    "verdict": "ok"
   },
+  "29a85c278b477b1d": {
+   "verdict": "ok",
+   "note": "Try It: x=2cos t,y=3sin t -> (x/2)^2+(y/3)^2=1 by Pythagorean identity; node-verified residual ~0 over t=0..6; matches CNXML solution x^2/4+y^2/9=1."
+  },
   "29a9531430989c6b": {
    "verdict": "ok"
   },
@@ -4346,6 +4414,10 @@
   "2c4d3178234266f8": {
    "verdict": "ok"
   },
+  "2c52f185e626ae44": {
+   "verdict": "ok",
+   "note": "|-7+i| = sqrt(49+1) = sqrt(50) = 5*sqrt(2), node Math.sqrt(50)=7.0710678118654755."
+  },
   "2c5b4421aaf9107a": {
    "verdict": "ok"
   },
@@ -4500,6 +4572,10 @@
   },
   "2e08500e7c2c2c04": {
    "verdict": "ok"
+  },
+  "2e21e8d1e6f7df6c": {
+   "verdict": "ok",
+   "note": "Vector from origin to (3,5) is trivially (3,5); i,j form is 3i+5j."
   },
   "2e2476330aec6d02": {
    "verdict": "ok"
@@ -4796,6 +4872,10 @@
    "verdict": "ok",
    "note": "sum of logs -> log8(5*13*x*y)=log8(65xy); key p1316 #27"
   },
+  "31656d71a9dd9286": {
+   "verdict": "ok",
+   "note": "3cosθ=0 → θ=π/2 is the smallest nonnegative solution; independently solved."
+  },
   "316ffe689c703495": {
    "verdict": "ok"
   },
@@ -4892,6 +4972,10 @@
   "32355694ba37f044": {
    "verdict": "ok"
   },
+  "3236049fa1c11d91": {
+   "verdict": "ok",
+   "note": "parent: t>=0 pin added (errata 57); residual y=5-sqrt(x/2-3) zero for t in 0..3"
+  },
   "3237a55c97f2e27c": {
    "verdict": "ok"
   },
@@ -4947,6 +5031,10 @@
   },
   "32a9d170aa2e1322": {
    "verdict": "ok"
+  },
+  "32c34c4b02836713": {
+   "verdict": "ok",
+   "note": "r of sqrt3+i: Math.sqrt(3+1)=2."
   },
   "32d768143996887f": {
    "verdict": "ok"
@@ -5183,6 +5271,10 @@
   "35a176f8f073fd49": {
    "verdict": "ok",
    "note": "Denominator (x-3)^2 zero only at x=3; matches CNXML Try It 7."
+  },
+  "35adcfc3b11469d7": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (If possible, solve the triangle for the unknown side $c$: $\\)"
   },
   "35b890124121a2c1": {
    "verdict": "ok",
@@ -5484,6 +5576,10 @@
   },
   "3802274605851ecb": {
    "verdict": "ok"
+  },
+  "380ee7b78dbb49f3": {
+   "verdict": "ok",
+   "note": "quotient: r=2sqrt3/2=sqrt3, angle=150-30=120; node: sqrt3*Math.cos(2pi/3)=-0.866...=-sqrt3/2, sqrt3*Math.sin(2pi/3)=1.5=3/2."
   },
   "381c603121f14e92": {
    "verdict": "ok"
@@ -6044,6 +6140,10 @@
   "3e77e3dbd5c1bf50": {
    "verdict": "ok"
   },
+  "3e82ff356b61ec90": {
+   "verdict": "ok",
+   "note": "atan2(5,6) in degrees = 39.8056 deg (Q1, no adjustment), rounds to 39.806 deg. node -e dirDeg(6,5)=39.8056."
+  },
   "3e851230da46d652": {
    "verdict": "ok"
   },
@@ -6088,6 +6188,10 @@
   "3ef75948f2de28d0": {
    "verdict": "ok"
   },
+  "3ef77c57dbe22690": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Which conic section does the equation $xy=4$ represent?)"
+  },
   "3f105be071c4178f": {
    "verdict": "ok"
   },
@@ -6120,6 +6224,10 @@
   },
   "3f4c8bf36cfdc4ae": {
    "verdict": "ok"
+  },
+  "3f53ebdbd78160f9": {
+   "verdict": "ok",
+   "note": "Heron 18,21,32: s=35.5, Area=sqrt(35.5*17.5*14.5*3.5)=177.5625 -> 177.56, matches source key (177.56 in^2); source's own per-exercise 'round to nearest tenth' contradicts the group instruction and its own key precision -- reworded to 'nearest hundredth' to match the key, logged as errata."
   },
   "3f6234e56f84ac0f": {
    "verdict": "ok"
@@ -6195,6 +6303,10 @@
   },
   "40270cb2ec8ae436": {
    "verdict": "ok"
+  },
+  "4027a89125a7e1f1": {
+   "verdict": "ok",
+   "note": "Heron a=4.38,b=3.79,c=5.22: s=6.695 exact, Area=8.1493 -> 8.15 sq ft, matches source key (about 8.15)."
   },
   "4043e96d11b081da": {
    "verdict": "ok"
@@ -6367,6 +6479,10 @@
   },
   "41c2a04ed736caab": {
    "verdict": "ok"
+  },
+  "41c2a0d6cba88115": {
+   "verdict": "ok",
+   "note": "TryIt5 (source ti_08_01_06, beta=42,a=7.2,c=3.4): Area=0.5*a*c*sin(beta)=0.5*7.2*3.4*sin(42)=8.190 -> 8.2 sq ft. Matches CNXML 'about 8.2 square feet'."
   },
   "41c78535145c17e6": {
    "verdict": "ok"
@@ -7002,6 +7118,10 @@
    "verdict": "ok",
    "note": "Practice #19: combine x^2*x^(2/3) and y^3*y^(5/3) exponents (cube root as 1/3 power); verified by float substitution x=2,y=3 (node) equals (8/3)log(x)+(14/3)log(y). Matches CNXML solution."
   },
+  "47fa86319cfbc583": {
+   "verdict": "ok",
+   "note": "node: 5*cos(pi)=-5, 5*sin(pi)=0 -> (-5,0). Matches CNXML solution exactly (Section Exercises, (5,pi))."
+  },
   "47fec9953e1ec75d": {
    "verdict": "ok"
   },
@@ -7173,6 +7293,10 @@
   },
   "49f0d70cf92d76c9": {
    "verdict": "ok"
+  },
+  "49f473fe0118eb1c": {
+   "verdict": "ok",
+   "note": "x(t)=-2-2t, y(t)=3+t: solved t=y-3, substituted to get x=4-2y, solved for y=2-x/2=-1/2 x+2 via node -e (verified against 6 sample t values, all match). Matches source solution alt-text 'a line, negative slope' (slope -1/2). Not a retype hazard (eliminate-the-parameter construction); answerForm=slope-intercept-form pins the shape. Replayed alternate spellings (distributed order, decimal coefficient) through check-answer.mjs -- both grade correct."
   },
   "49f64e7d1fb53570": {
    "verdict": "ok"
@@ -7618,6 +7742,10 @@
   },
   "4f13c9d0b8238509": {
    "verdict": "ok"
+  },
+  "4f199cd041dee368": {
+   "verdict": "ok",
+   "note": "u-v = (-3-(-2), 4-1) = (-1,3) -> -i+3j. Node-verified."
   },
   "4f26a639897da0e5": {
    "verdict": "ok"
@@ -8168,6 +8296,10 @@
   "55a180d05785aa04": {
    "verdict": "ok"
   },
+  "55a9c73c5cbf1e5e": {
+   "verdict": "ok",
+   "note": "Try It: x=t^2,y=ln t,t>0 -> t=sqrt(x), y=ln(sqrt(x)); node-verified residual ~0 over t=0.5..5; matches CNXML solution y=ln sqrt(x)."
+  },
   "55be7ccc89739995": {
    "verdict": "ok",
    "note": "Numerator 4x^2-1, denominator x^2+x-6, both degree 2; ratio of leading coeffs 4/1=4; matches CNXML Try It 6."
@@ -8357,6 +8489,10 @@
   "575f67a1b834f415": {
    "verdict": "ok",
    "note": "Repaired 2026-08-15. The shaded region contains (0,0) and -2(0)+3=3, so 0<3 holds and 0>3 does not: the inequality is y<-2x+3. The prose 'above' was corrected to 'below' to match; the hint's own origin test agrees."
+  },
+  "577128750ed5d6e8": {
+   "verdict": "ok",
+   "note": "legs 18*2=36 and 4*2=8, interior angle = min(|327-60|,360-|327-60|)=93deg: dist=sqrt(36^2+8^2-2*36*8*cos93deg)=37.28 -> 37.3 mi, matches source key."
   },
   "57819d9c3f285613": {
    "verdict": "ok"
@@ -8764,6 +8900,10 @@
   "5b83d2a2a98aa21d": {
    "verdict": "ok"
   },
+  "5b8504a0baf90054": {
+   "verdict": "ok",
+   "note": "Practice: line through (-1,0) at t=0 and (3,-2) at t=1 -> x(t)=-1+4t,y(t)=-2t by linear interpolation; matches CNXML solution exactly."
+  },
   "5b8960618e22a39a": {
    "verdict": "ok"
   },
@@ -8855,6 +8995,10 @@
   "5c7643d88f64ddf1": {
    "verdict": "ok"
   },
+  "5c85d3bc5b158086": {
+   "verdict": "ok",
+   "note": "sqrt(6^2+5^2)=sqrt(61)=7.8102..., rounds to 7.810. node -e Math.sqrt(61)=7.810249675906654."
+  },
   "5c8e78f3fb8547f2": {
    "verdict": "ok"
   },
@@ -8894,6 +9038,10 @@
   },
   "5d00c11f7c7ae3ff": {
    "verdict": "ok"
+  },
+  "5d1f0918dfd17c48": {
+   "verdict": "ok",
+   "note": "Figure-read item (Section Exercises Q41/fs-id1165134108566): CNXML solution prints (3, 3pi/4); alt text describes point on third concentric circle midway between pi/2 and pi, matching r=3, theta=3pi/4. radians token verified: self-grades correct, rejects a degree-spoofed (3,135deg) retype."
   },
   "5d26a43c5ad992c0": {
    "verdict": "ok"
@@ -9059,6 +9207,10 @@
   "5f1975c4611dd54d": {
    "verdict": "ok"
   },
+  "5f35315d229cdab9": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r^2=10\\cos(2\\theta)$. What is the )"
+  },
   "5f453ec353b4a4fb": {
    "verdict": "ok"
   },
@@ -9104,6 +9256,10 @@
   },
   "5fbe481f785dc8dd": {
    "verdict": "ok"
+  },
+  "5fbfd2da9f7c74c1": {
+   "verdict": "ok",
+   "note": "4*Math.cos(7pi/6)=-3.4641016151377553=-2*sqrt(3); 4*Math.sin(7pi/6)=-1.999999999999999=-2."
   },
   "5fc0dd4b06603e5c": {
    "verdict": "ok"
@@ -9212,6 +9368,10 @@
   },
   "60dbf6e90da21797": {
    "verdict": "ok"
+  },
+  "60dd6c02d0f2c176": {
+   "verdict": "ok",
+   "note": "r^2=4 sec(theta) csc(theta) = 4/(cos theta sin theta) -> r^2 cos(theta) sin(theta) = 4 -> (r cos theta)(r sin theta) = 4 -> xy=4. Matches CNXML solution 'xy=4; hyperbola' exactly."
   },
   "60e3d03cbbd4cca6": {
    "verdict": "ok"
@@ -9783,6 +9943,10 @@
   "675e9e97ea042e87": {
    "verdict": "ok"
   },
+  "67607c27c4abea52": {
+   "verdict": "ok",
+   "note": "r of 3i: modulus is |3i|=3 directly (x=0,y=3)."
+  },
   "677bc8ebd4a3aa01": {
    "verdict": "ok"
   },
@@ -9848,6 +10012,10 @@
   },
   "681355cb7f0750c6": {
    "verdict": "ok"
+  },
+  "6814a8b3c846b291": {
+   "verdict": "ok",
+   "note": "Circle parametrization, radius 5, ccw, form pinned to x(t)=5cos t: standard construction, matches source's own printed solution x(t)=5cos t, y(t)=5sin t exactly. Ordered comma answer since question states the order explicitly."
   },
   "682249ecccbbf9b3": {
    "verdict": "ok"
@@ -10136,8 +10304,16 @@
   "6ae09aca13eef55d": {
    "verdict": "ok"
   },
+  "6ae2969195cff4e9": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=3\\cos(2\\theta)$. What is the nam)"
+  },
   "6b051543c6afc92e": {
    "verdict": "ok"
+  },
+  "6b0576d1714e2b4d": {
+   "verdict": "ok",
+   "note": "TryIt6 (source ti_08_01_07, blimp, baseline AB=145yd, angle A=70, angle B=62): angle C=48; AC=AB*sin(B)/sin(C)=172.278; height=AC*sin(A)=161.888 -> 161.9 yd. Matches CNXML '161.9 yd'."
   },
   "6b1bb3523b7bbd67": {
    "verdict": "ok"
@@ -10193,11 +10369,19 @@
    "verdict": "ok",
    "note": "asymptotes at P/2+kP=3+6k; smallest positive is 3, independently computed."
   },
+  "6bb742d701b9513c": {
+   "verdict": "ok",
+   "note": "|b|=sqrt(4+25)=sqrt(29); unit = (-2/sqrt29, 5/sqrt29) = (-2*sqrt29/29, 5*sqrt29/29). node -e confirmed -0.37139=-2/sqrt(29) and 0.92848=5/sqrt(29), matching source's own answer."
+  },
   "6bb8740f36e7ffbd": {
    "verdict": "ok"
   },
   "6bb99cd3c094e77c": {
    "verdict": "ok"
+  },
+  "6bc6d3457c4e97d9": {
+   "verdict": "ok",
+   "note": "Try It: x=y^3-2y with y(t)=t substituted directly gives x(t)=t^3-2t; matches CNXML solution."
   },
   "6bc6ed77e8755e79": {
    "verdict": "ok"
@@ -10292,6 +10476,10 @@
   },
   "6c9f0cd67c9f007c": {
    "verdict": "ok"
+  },
+  "6ca71a7653339149": {
+   "verdict": "ok",
+   "note": "Practice (source fs-id1165137898663, park, streets meet 80deg, sides 180ft/215ft): Area=0.5*180*215*sin(80)=19056.03 -> 19,056 sq ft. Matches CNXML answer '19,056 ft2' exactly."
   },
   "6cb91531b47b9c7e": {
    "verdict": "ok"
@@ -10436,6 +10624,10 @@
   },
   "6e32b3398f8c59ac": {
    "verdict": "ok"
+  },
+  "6e384e4a0ac97e74": {
+   "verdict": "ok",
+   "note": "Practice (source fs-id1165135510852, balloon, baseline 3.5mi=18480ft, elevation 27/41deg): angle at balloon=180-27-41=112; distance from woman(41deg) to balloon=18480*sin(27)/sin(112)=9042...; height=that*sin(41)=5936.44 -> 5936 ft. Matches CNXML answer 5936 ft."
   },
   "6e4b38f43dd4b8b3": {
    "verdict": "ok"
@@ -10611,6 +10803,10 @@
    "verdict": "ok",
    "note": "e^k=h converts to ln(h)=k by definition; matches CNXML Section Exercise 25 (fs-id1165135296148)."
   },
+  "7064524d133c94de": {
+   "verdict": "ok",
+   "note": "x^2-y^2=3y -> r^2 cos^2(theta) - r^2 sin^2(theta) = 3 r sin(theta) -> r^2 cos(2theta) = 3r sin(theta) -> r = 3 sin(theta)/cos(2theta). Matches CNXML solution exactly (Section Exercises, x^2-y^2=3y). Verified numerically at several theta values that both sides of the derivation agree."
+  },
   "7069041854d87f88": {
    "verdict": "ok"
   },
@@ -10682,6 +10878,10 @@
   "7169227aaf20da12": {
    "verdict": "ok"
   },
+  "7169505f2b05fcf6": {
+   "verdict": "ok",
+   "note": "theta of 3i: Math.atan2(3,0)=1.5707963267948966=pi/2."
+  },
   "7174964459330c94": {
    "verdict": "ok"
   },
@@ -10736,6 +10936,10 @@
   },
   "71ed0af84385fe11": {
    "verdict": "ok"
+  },
+  "71f5feed2f4678dc": {
+   "verdict": "ok",
+   "note": "Practice: y=2sin x+1 with x(t)=t substituted directly gives y(t)=2sin t+1; matches CNXML solution; retype of printed x-form ('2sin x+1') confirmed graded incorrect against the t-keyed answer."
   },
   "71f61922d9aa1c1e": {
    "verdict": "ok"
@@ -10829,6 +11033,10 @@
    "verdict": "ok",
    "note": "Computed f(1)=7-9-1=-3 and f(2)=7*32-9*16-4=224-144-4=76 by node arithmetic; matches the sign pattern implied by CNXML ti_03_04_04's solution text (f(1) negative, f(2) positive)."
   },
+  "73057f9e4f6b3d7e": {
+   "verdict": "ok",
+   "note": "r=2 sin(theta) -> r^2=2r sin(theta) -> x^2+y^2=2y -> x^2+(y-1)^2=1. Matches CNXML's own stated standard form. circle-standard-form token verified against grader."
+  },
   "730877ff50a4d014": {
    "verdict": "ok"
   },
@@ -10837,6 +11045,10 @@
   },
   "733bdce34112c3cd": {
    "verdict": "ok"
+  },
+  "73477062b611647e": {
+   "verdict": "ok",
+   "note": "Practice: line through (4,1) at t=0 and (6,-2) at t=1 -> x(t)=4+2t,y(t)=1-3t by linear interpolation; matches CNXML solution exactly."
   },
   "734d14adb57bc11a": {
    "verdict": "ok"
@@ -10898,6 +11110,10 @@
   },
   "7427d569f688cba2": {
    "verdict": "ok"
+  },
+  "742a6f04ae48bdec": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Sketch the graph of $r=4\\sin(2\\theta)$. What type of curve i)"
   },
   "742bf7e5e950536e": {
    "verdict": "ok"
@@ -11047,6 +11263,10 @@
   "75c8deb800ca65a1": {
    "verdict": "ok"
   },
+  "75c96235b1ec0334": {
+   "verdict": "ok",
+   "note": "theta of sqrt3+i: Math.atan2(1,Math.sqrt(3))=0.5235987755982989=pi/6."
+  },
   "75caf26944c0da77": {
    "verdict": "ok"
   },
@@ -11088,6 +11308,14 @@
   },
   "7651458a7c21a2ce": {
    "verdict": "ok"
+  },
+  "76549f279217d8d8": {
+   "verdict": "ok",
+   "note": "|d|=sqrt(1/9+25/4)=sqrt(229)/6; unit = (-2/sqrt229, 15/sqrt229) = (-2sqrt229/229, 15sqrt229/229). node -e confirmed values match source's own answer exactly."
+  },
+  "765e746682eb1279": {
+   "verdict": "ok",
+   "note": "4v+2u = (4*-2+2*1, 4*-3+2*5) = (-6,-2) -> -6i-2j. Node-verified, matches source's own answer."
   },
   "76628f44b19a3059": {
    "verdict": "ok"
@@ -11297,6 +11525,10 @@
   "788328af436c67a6": {
    "verdict": "ok"
   },
+  "78987006a22b90fd": {
+   "verdict": "ok",
+   "note": "|12-5i| = sqrt(12^2+5^2) = sqrt(169) = 13."
+  },
   "789bb9de62cc297c": {
    "verdict": "ok",
    "note": "Already standard form a=2>0, k=8/11, so range f(x)>=8/11; matches CNXML."
@@ -11465,6 +11697,10 @@
   "7a429dc81c5be98f": {
    "verdict": "ok"
   },
+  "7a43b06d8956f2fd": {
+   "verdict": "ok",
+   "note": "7*Math.cos(pi/6)=6.062177826491071=7*sqrt(3)/2; 7*Math.sin(pi/6)=3.5=7/2."
+  },
   "7a473bc0b2388ac1": {
    "verdict": "ok"
   },
@@ -11521,6 +11757,10 @@
   },
   "7ad20f04645fd002": {
    "verdict": "ok"
+  },
+  "7ad2e732b6392b09": {
+   "verdict": "ok",
+   "note": "distance=sqrt(370^2+350^2-2*370*350*cos(2.1deg))=23.957 -> 24.0 km, matches source key."
   },
   "7ad8432a4030f763": {
    "verdict": "ok"
@@ -11619,6 +11859,10 @@
   "7bc2187a589d419f": {
    "verdict": "ok"
   },
+  "7bc94116ec3d61de": {
+   "verdict": "ok",
+   "note": "Table Try It: x(t)=t-3,y(t)=2t+4 evaluated by hand at t=-1,0,1,2 -> (-4,2),(-3,4),(-2,6),(-1,8); matches CNXML solution table verbatim."
+  },
   "7bcac171ad12c396": {
    "verdict": "ok",
    "note": "h(t)=8sin(6*pi*t): amplitude 8, period 2*pi/(6*pi)=1/3. Matches source exercise #29 solution (amplitude 8, period 1/3, freq 3 Hz; asked only for amplitude+period per this section's objective wording)."
@@ -11696,6 +11940,10 @@
   "7c6421d27543d0ab": {
    "verdict": "ok",
    "note": "With f(x)=(x-4)/(x^2-3x-10)=(x-4)/[(x-5)(x+2)] and g(x)=(x-5)/(x^2-2x-8)=(x-5)/[(x-4)(x+2)] given directly in the preceding text, f(x)*g(x) simplifies to 1/(x+2)^2 (confirmed numerically at several x-values), matching the declared answer."
+  },
+  "7c674f2db74d3155": {
+   "verdict": "ok",
+   "note": "magnitude = sqrt(3^2+5^2) = sqrt(34); node -e Math.sqrt(34)=5.8309... matches sqrt(34) exactly, 34 has no perfect-square factor so already simplified."
   },
   "7c6e9d3c216f6ea9": {
    "verdict": "ok"
@@ -11848,6 +12096,10 @@
   "7de4b68b07546c0f": {
    "verdict": "ok"
   },
+  "7de7a7f7fac8455a": {
+   "verdict": "ok",
+   "note": "parent: 5^3=125, 45*3=135 (De Moivre)"
+  },
   "7de80f72088e1a98": {
    "verdict": "ok"
   },
@@ -11939,6 +12191,10 @@
   "7ede5365235514c2": {
    "verdict": "ok"
   },
+  "7ef4467841a10d18": {
+   "verdict": "ok",
+   "note": "2u-3v = (2*-3-3*-2, 2*4-3*1) = (0,5) -> 5j (zero i-component). Node-verified."
+  },
   "7ef783a75c8c0cf4": {
    "verdict": "ok"
   },
@@ -11985,6 +12241,10 @@
   "7f8b8418db0531da": {
    "verdict": "ok"
   },
+  "7f901dfb48c59372": {
+   "verdict": "ok",
+   "note": "Practice: x=sqrt(y)+2y with y(t)=t substituted directly gives x(t)=sqrt(t)+2t; matches CNXML solution; retype of printed y-form confirmed graded incorrect against the t-keyed answer."
+  },
   "7f916d9e5666a107": {
    "verdict": "ok"
   },
@@ -12022,6 +12282,10 @@
   },
   "800bfde36dda1803": {
    "verdict": "ok"
+  },
+  "800c8e4250177b73": {
+   "verdict": "ok",
+   "note": "node: r=sqrt(9+25)=sqrt(34)=5.8310; theta=atan2(-5,3)=-1.0304, +2pi=5.2528, rounded 5.253. Matches CNXML solution (sqrt(34), 5.253) exactly (Section Exercises, (3,-5))."
   },
   "800ed0da1ef20e7d": {
    "verdict": "ok"
@@ -12160,6 +12424,10 @@
   "81891b1d3cee32b3": {
    "verdict": "ok"
   },
+  "818df417c18ee215": {
+   "verdict": "ok",
+   "note": "parent: 3^2=9, 120*2=240 (De Moivre)"
+  },
   "818f59b9fe9e82b7": {
    "verdict": "ok"
   },
@@ -12234,6 +12502,10 @@
   "82555661e0c70e59": {
    "verdict": "ok"
   },
+  "825617f94b029984": {
+   "verdict": "ok",
+   "note": "parent: r=21/3=7, theta=135-65=70"
+  },
   "825e837d4eb83625": {
    "verdict": "ok"
   },
@@ -12273,6 +12545,10 @@
   },
   "829d29b55fbe58b1": {
    "verdict": "ok"
+  },
+  "82a696e01abb18f0": {
+   "verdict": "ok",
+   "note": "y^2=3-x^2 -> x^2+y^2=3 -> r^2=3 -> r=sqrt(3). Matches CNXML solution r=sqrt(3). exact-radical form verified against grader (self-grades correct, rejects retype of printed equation)."
   },
   "82a83d22064c659d": {
    "verdict": "ok"
@@ -12383,6 +12659,10 @@
   "83c5e41f7e291384": {
    "verdict": "ok"
   },
+  "83c78ee98eda77a5": {
+   "verdict": "ok",
+   "note": "r=-θ at θ=4π gives r=-4π exactly; independently substituted."
+  },
   "83ce6ee0e4efcab2": {
    "verdict": "ok"
   },
@@ -12446,6 +12726,10 @@
   "845343bcadf39e22": {
    "verdict": "ok"
   },
+  "84550fa5c288b48d": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Determine whether the vectors $\\mathbf{u}$ and $\\mathbf{v}$ )"
+  },
   "845acb01eb3db11e": {
    "verdict": "ok"
   },
@@ -12473,6 +12757,10 @@
   },
   "8498ea1734abc873": {
    "verdict": "ok"
+  },
+  "849a0c98a7315caf": {
+   "verdict": "ok",
+   "note": "Practice (source fs-id1165135550012, a=5,c=6,beta=35): Area=0.5*5*6*sin(35)=8.6036 -> 8.6. Matches CNXML answer 8.6."
   },
   "849d8bf5fe3341b8": {
    "verdict": "ok"
@@ -12502,6 +12790,10 @@
   "84d64e69fbd39c5b": {
    "verdict": "ok"
   },
+  "84e680dce95bd58c": {
+   "verdict": "ok",
+   "note": "parent: r=27^(1/3)=3, theta=(240+360k)/3 -> 80,200,320"
+  },
   "84e8009f77d0c9f8": {
    "verdict": "ok"
   },
@@ -12510,6 +12802,10 @@
   },
   "84ed817f5768e7eb": {
    "verdict": "ok"
+  },
+  "84eea49ec5f40a48": {
+   "verdict": "ok",
+   "note": "-2*(5,2) = (-10,-4) -> -10i-4j. Node-verified."
   },
   "84f11f747b168095": {
    "verdict": "ok"
@@ -12592,6 +12888,10 @@
   },
   "858c11d8fc627d9a": {
    "verdict": "ok"
+  },
+  "859e5c86d7be8018": {
+   "verdict": "ok",
+   "note": "Try It 1: plot (2, pi/3). node: 2*cos(pi/3)=1, 2*sin(pi/3)=1.7321 -> option 0 (correct answerIndex=0); distractors vary radius, angle, and reflected quadrant."
   },
   "85a3e0998f193e77": {
    "verdict": "ok"
@@ -12704,6 +13004,10 @@
   "86d878d74a8979a2": {
    "verdict": "ok"
   },
+  "86d93c198c48fd97": {
+   "verdict": "ok",
+   "note": "Try It #1 (x=sqrt t, y=2t+3, 0<=t<=3): eliminated t=x^2 (x>=0), y=2x^2+3; independently derived right-half-upward-parabola vertex (0,3) to (sqrt3,9), matches source solution alt-text 'right half of an upward opening parabola'. Distractors (full parabola, downward-opening) independently checked as wrong shapes."
+  },
   "86df65eede56f2c3": {
    "verdict": "ok"
   },
@@ -12758,6 +13062,10 @@
   },
   "8754b3a0918d6bca": {
    "verdict": "ok"
+  },
+  "875df415e334d27b": {
+   "verdict": "ok",
+   "note": "cosθ max=1 at θ=0, so r=3(1)=3 at θ=0; max point (3,0), independently re-derived."
   },
   "8767293c4a9561a4": {
    "verdict": "ok"
@@ -12850,6 +13158,10 @@
   },
   "888f9e38e0504dca": {
    "verdict": "ok"
+  },
+  "88ac9cdf5b80e94f": {
+   "verdict": "ok",
+   "note": "TryIt1 (source ti_08_01_01, AAS): beta=180-98-43=39; a=b*sin(alpha)/sin(beta)=22*sin(98)/sin(39)=34.618 -> 34.6, nearest tenth. Independently derived via node law-of-sines; matches CNXML solution a=34.6."
   },
   "88bcec9ba83c5aaf": {
    "verdict": "ok"
@@ -13001,6 +13313,10 @@
   "8aae8cc25da6bb0f": {
    "verdict": "ok"
   },
+  "8ac82d86794ababb": {
+   "verdict": "ok",
+   "note": "Point plot 2i = (0,2); no computation, matches printed coordinates."
+  },
   "8ad96fbe8924917b": {
    "verdict": "ok",
    "note": "Question rewritten by parent from ASCII to KaTeX; answer unchanged. Decaying 30% per hour means the hourly factor is 0.7, so 125e^{kt}=125(0.7)^t gives k=ln(0.7)=-0.35667494393873245 -> -0.3567 to four decimal places."
@@ -13117,6 +13433,10 @@
   },
   "8c2e1fcaccdd3819": {
    "verdict": "ok"
+  },
+  "8c2ea86b2e6819c2": {
+   "verdict": "ok",
+   "note": "gamma=113 between a,b; b=10,c=32 known; quadratic in a from c^2=a^2+b^2-2ab cos(gamma): a^2+7.815a-924=0, positive root a=26.74 -> 26.7, matches source key; other root negative and discarded."
   },
   "8c33a7f3f7bf2ada": {
    "verdict": "ok",
@@ -13268,6 +13588,10 @@
   "8dfcad40f6fe9357": {
    "verdict": "ok"
   },
+  "8e13f25808f2eff5": {
+   "verdict": "ok",
+   "note": "|1-7i| = sqrt(1+49) = sqrt(50) = 5*sqrt(2), confirmed with node Math.sqrt(50)=7.0710678118654755=5*Math.sqrt(2)."
+  },
   "8e14595ded5ad204": {
    "verdict": "ok",
    "note": "log_2(9k)=-2 => 9k=1/4 => k=1/36. Verified numerically (log2(9*(1/36))=-2)."
@@ -13350,6 +13674,10 @@
   },
   "8f1c901830c39447": {
    "verdict": "ok"
+  },
+  "8f2523fbdfb26e08": {
+   "verdict": "ok",
+   "note": "product: r=2sqrt3*2=4sqrt3, angle=150+30=180; 4sqrt3*cos(180deg)=-4sqrt3, sin term 0. node: r1*r2*Math.cos(Math.PI)=-6.928203230275509=-4*Math.sqrt(3)."
   },
   "8f36b2a72c14d94c": {
    "verdict": "ok"
@@ -13441,6 +13769,10 @@
   },
   "90451fd0c3c95453": {
    "verdict": "ok"
+  },
+  "904986f3de128853": {
+   "verdict": "ok",
+   "note": "Practice: x=2t+1,y=3sqrt(t) -> t=(x-1)/2, y=3sqrt((x-1)/2); node-verified residual ~0 over t=0..5; matches CNXML solution."
   },
   "905309c42e0782d8": {
    "verdict": "ok"
@@ -13584,8 +13916,16 @@
   "9216c53bbea9f0a6": {
    "verdict": "ok"
   },
+  "9217092bdc7b0548": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation $r=2\\theta$ for symmetry. Which symmetries)"
+  },
   "921c6dad3dfeade2": {
    "verdict": "ok"
+  },
+  "922146a36cb8bc2d": {
+   "verdict": "ok",
+   "note": "Try It #2 (x=5cos t, y=3 sin t): standard parametric ellipse, semi-axes 5 and 3 read directly off the coefficients; independently derived horizontal ellipse, matches source solution alt-text 'a horizontal ellipse'. Distractors (circle rx=ry=5, vertical ellipse rx=3,ry=5) independently checked as wrong shapes."
   },
   "9224dfb86219f07a": {
    "verdict": "ok"
@@ -13604,6 +13944,10 @@
   },
   "925eb58b015e069e": {
    "verdict": "ok"
+  },
+  "926c4b445004bb29": {
+   "verdict": "ok",
+   "note": "Try It: x=t^3,y=t^6=(t^3)^2=x^2; node-verified residual ~0 over t=-2..3; matches CNXML solution y=x^2."
   },
   "9272a2a6ecf37e1a": {
    "verdict": "ok",
@@ -13817,6 +14161,10 @@
   "94964abb930c0e86": {
    "verdict": "ok",
    "note": "Direct application of the section's own Graphical-Behavior note (touch = even multiplicity); matches CNXML Verbal fs-id1165135621844 solution (\"factor raised to an even power\")."
+  },
+  "94a727cc52f45297": {
+   "verdict": "ok",
+   "note": "Practice ambiguous part 2 (same triangle, gamma obtuse): gamma2=180-54.347=125.653 -> 125.7 deg (check beta2=180-35-125.653=19.347>0, valid). Matches CNXML 'gamma-prime approx 125.7'."
   },
   "94ad2c2d043dacf4": {
    "verdict": "ok"
@@ -14305,6 +14653,10 @@
   "99e9a63ffd96f708": {
    "verdict": "ok"
   },
+  "99ef6b6c893c892d": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation $r=3\\sin(2\\theta)$ for symmetry. Which sym)"
+  },
   "99fc13fc79bf1c0d": {
    "verdict": "ok"
   },
@@ -14406,6 +14758,10 @@
   },
   "9af32e8f0a030a8c": {
    "verdict": "ok"
+  },
+  "9af91d1054a2559c": {
+   "verdict": "ok",
+   "note": "|sqrt2-6i| = sqrt(2+36) = sqrt(38), node Math.sqrt(38)=6.164414002968976, no perfect-square factor."
   },
   "9b0485ef1553e7e4": {
    "verdict": "ok"
@@ -14577,6 +14933,10 @@
    "verdict": "ok",
    "note": "f(0)=1 (leading coefficient) and constant ratio 1.2 (common ratio/base) give f(x)=1.2^x; matches CNXML solution exactly."
   },
+  "9cdf37abceed74d8": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation $r=3-3\\cos\\theta$ for symmetry. Which symm)"
+  },
   "9cec2136b1fce969": {
    "verdict": "ok"
   },
@@ -14669,6 +15029,10 @@
   },
   "9d95bddc71ec44f3": {
    "verdict": "ok"
+  },
+  "9d979a9a54503108": {
+   "verdict": "ok",
+   "note": "Dart hits ground: independently solved -16t^2+(64 sin52deg)t=0 for the positive root via node -e: t = 64*sin(52 deg)/16 = 3.152... rounds to 3.2, matches source printed answer 'approximately 3.2 seconds' exactly."
   },
   "9da3c79f5e3fcb75": {
    "verdict": "ok",
@@ -14890,6 +15254,10 @@
   "a068cb78128d3513": {
    "verdict": "ok"
   },
+  "a06c605b241d65c0": {
+   "verdict": "ok",
+   "note": "u = <7-(-1), -5-6> = <8,-11> -> 8i-11j; node -e confirmed (7-(-1),-5-6)=(8,-11)."
+  },
   "a0743fb2388dcb9a": {
    "verdict": "ok"
   },
@@ -15047,6 +15415,10 @@
   },
   "a2513ff79a556c7a": {
    "verdict": "ok"
+  },
+  "a253bbfdd35d1938": {
+   "verdict": "ok",
+   "note": "Try It #3 (x=2cos theta, y=4 sin theta with rectangular overlay): same curve as Example 2 (independently re-derived vertical ellipse rx=2,ry=4); correct option shows the parametric curve and its exact rectangular equation x^2/4+y^2/16=1 coinciding; distractors show a mismatched dashed ellipse and a missing overlay, matching source's own solution text describing a red parametric curve with blue rectangular dots on top."
   },
   "a25759a7021f110f": {
    "verdict": "ok"
@@ -15541,6 +15913,10 @@
   "a7668e85d5dcd69a": {
    "verdict": "ok"
   },
+  "a76c2c319bc016da": {
+   "verdict": "ok",
+   "note": "Heron a=29.7,b=42.3,c=38.4: s=55.2 exact, Area=sqrt(55.2*25.5*12.9*16.8)=552.32 -> 552 sq ft, matches source key."
+  },
   "a77508f5705fca3f": {
    "verdict": "ok"
   },
@@ -15598,6 +15974,10 @@
   "a7f4a0ed974144db": {
    "verdict": "ok"
   },
+  "a7f5bb28a1701566": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=1+3\\sin\\theta$. What is the name)"
+  },
   "a7f887823c37b167": {
    "verdict": "ok"
   },
@@ -15613,6 +15993,10 @@
   },
   "a844e4f171dcdf6b": {
    "verdict": "ok"
+  },
+  "a84c7cd24a4ab650": {
+   "verdict": "ok",
+   "note": "Dart max height time: independently computed vertex of -16t^2+(64 sin52deg)t at t=-b/2a = 64*sin(52deg)/32 = 1.576... rounds to 1.6, matches source printed answer '1.6 seconds' exactly."
   },
   "a84cdf057dbf53f9": {
    "verdict": "ok"
@@ -15654,6 +16038,10 @@
   },
   "a8be8d902c556aea": {
    "verdict": "ok"
+  },
+  "a8c0630947e044a3": {
+   "verdict": "ok",
+   "note": "legs 680*1.5=1020 and 680*2=1360, interior angle 180-10=170deg: dist=sqrt(1020^2+1360^2-2*1020*1360*cos170deg)=2371.13 -> 2371 mi, matches source key."
   },
   "a8c604475f031f45": {
    "verdict": "ok"
@@ -15719,6 +16107,10 @@
   },
   "a96bcd544ba87748": {
    "verdict": "ok"
+  },
+  "a97689d55c0e9ded": {
+   "verdict": "ok",
+   "note": "gamma=115 between a=18,b=23 (SAS): c=sqrt(18^2+23^2-2*18*23*cos115deg)=34.68 -> 34.7, matches source key exactly."
   },
   "a999b021b479014b": {
    "verdict": "ok"
@@ -15936,6 +16328,10 @@
   "ab9defc20464d0c2": {
    "verdict": "ok"
   },
+  "aba17853aec88735": {
+   "verdict": "ok",
+   "note": "u.v = (-1)(6)+(6)(-1) = -12. Node-verified, matches source's own answer."
+  },
   "aba17a5ad8c9279a": {
    "verdict": "ok",
    "note": "node: Math.acos(-0.4)=1.9823131728623846, rounds to 1.9823 (matches source's own 1.9823 for this Try It)."
@@ -16041,8 +16437,16 @@
   "acbb8664fab36ff7": {
    "verdict": "ok"
   },
+  "acbdbd837992ab55": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation for symmetry: $r=-2\\cos\\theta$. Which symm)"
+  },
   "acc35f3e5db13c2c": {
    "verdict": "ok"
+  },
+  "acc5eb9add35b8a6": {
+   "verdict": "ok",
+   "note": "Practice: x=4log(t),y=3+2t -> t=(y-3)/2, x=4log((y-3)/2); node-verified residual ~0 (base-10 log) over t=0.5..10; matches CNXML solution."
   },
   "acc8978e586984d4": {
    "verdict": "ok",
@@ -16682,6 +17086,10 @@
   "b402f937864a7b86": {
    "verdict": "ok"
   },
+  "b40be0ab01bf9236": {
+   "verdict": "ok",
+   "note": "parent: 120*sin(3.2 deg)/sin(80 deg)=6.802->6.8; question pins source rounded chain (errata 55)"
+  },
   "b4152b197ed9eb9f": {
    "verdict": "ok"
   },
@@ -17179,6 +17587,10 @@
   "b8d23ac191a95c84": {
    "verdict": "ok"
   },
+  "b8d4bd125a5e7990": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Determine the number of triangles possible given $a=31$, $b=)"
+  },
   "b8db1af2f971eb50": {
    "verdict": "ok",
    "note": "sin^2(theta)=2cos(theta)+2 -> substitute 1-cos^2 -> (cos theta+1)^2=0 -> cos theta=-1 -> theta=pi on [0,2pi]; algebra re-derived independently."
@@ -17553,6 +17965,10 @@
   "bc9fef57f809d6b4": {
    "verdict": "ok"
   },
+  "bcb4b109d9d7dd06": {
+   "verdict": "ok",
+   "note": "Try It 2 (SSS, a=5,b=7,c=10): each angle via cos^-1((s1^2+s2^2-opp^2)/(2 s1 s2)) directly from a,b,c -> alpha=27.66, beta=40.54, gamma=111.80 (sum 180.00); rounds to 27.7,40.5,111.8 deg, matches source, no chain (each independent)."
+  },
   "bcb9b8643c3efa19": {
    "verdict": "ok"
   },
@@ -17759,6 +18175,10 @@
   "bec5e67c9e489029": {
    "verdict": "ok"
   },
+  "beca6c4ecb107b14": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=-\\theta$. What is the name of th)"
+  },
   "becb76247f831432": {
    "verdict": "ok"
   },
@@ -17873,6 +18293,10 @@
   "bfcb77c8ebc1d80f": {
    "verdict": "ok"
   },
+  "bfd016115f8169fa": {
+   "verdict": "ok",
+   "note": "Practice (source fs-id1165133361987, B=37,C=21,b=23, find c): c=b*sin(C)/sin(B)=23*sin(21)/sin(37)=13.696 -> 13.70 (nearest hundredth). Matches CNXML c approx 13.70."
+  },
   "bfd0238b899e7084": {
    "verdict": "ok",
    "note": "f(x)=3log(x-2)+1: asymptote at x=2 (argument x-2=0), unaffected by stretch/vertical shift. Matches CNXML ti_04_04_07 solution domain (2,inf)/asymptote x=2."
@@ -17924,6 +18348,10 @@
   },
   "c0475240a106e994": {
    "verdict": "ok"
+  },
+  "c04a86b49feddc32": {
+   "verdict": "ok",
+   "note": "Point plot 1+5i; no computation, matches printed coordinates."
   },
   "c04e6d8f55cb1b60": {
    "verdict": "ok",
@@ -18217,6 +18645,10 @@
   },
   "c33b3951804de136": {
    "verdict": "ok"
+  },
+  "c33e0c4115a68a54": {
+   "verdict": "ok",
+   "note": "Practice (source fs-id1165137619092, A=37,B=49,c=5, find b): C=180-37-49=94; b=c*sin(B)/sin(C)=5*sin(49)/sin(94)=3.7828 -> 3.78. Matches CNXML b approx 3.78."
   },
   "c341f8e1a5d83b39": {
    "verdict": "ok"
@@ -18664,6 +19096,10 @@
    "verdict": "ok",
    "note": "P=2\\pi/(\\pi/3)=6 (Try It 9 period part, matches CNXML)."
   },
+  "c80fe50d5789d608": {
+   "verdict": "ok",
+   "note": "(-3-4, 2-(-1)) = (-7,3) -> -7i+3j. Node-verified, matches source's own v=-7i+3j answer."
+  },
   "c8100ba4e9a74413": {
    "verdict": "ok"
   },
@@ -18756,6 +19192,10 @@
   },
   "c902b313f4d68565": {
    "verdict": "ok"
+  },
+  "c91f12ab2eae48b3": {
+   "verdict": "ok",
+   "note": "3*<5,4> = <15,12> -> 15i+12j; ran node -e to confirm (3*5,3*4)=(15,12)."
   },
   "c93516c1a1b8ccd3": {
    "verdict": "ok",
@@ -19075,6 +19515,10 @@
    "verdict": "ok",
    "note": "f(x)=4x^2-x^6+2x-6: highest power present is 6, so degree=6. Matches CNXML ti_03_03_03."
   },
+  "cc89c440049468de": {
+   "verdict": "ok",
+   "note": "Point plot -3-3i; no computation, matches printed coordinates."
+  },
   "cc8ff336a54d84bb": {
    "verdict": "ok",
    "note": "-2(9)+3(-3)=-18-9=-27; key p1270 #5"
@@ -19141,6 +19585,10 @@
   },
   "cd85d0178d5a8a02": {
    "verdict": "ok"
+  },
+  "cd8eabf5c9dc5b97": {
+   "verdict": "ok",
+   "note": "r=3-2cosθ: minimized cosθ=-1 at θ=π gives r=3-2(-1)=5, maximum |r|; point (5,π), independently re-derived (node: 3-2*Math.cos(Math.PI)=5)."
   },
   "cd9f7057b7614851": {
    "verdict": "ok"
@@ -19293,6 +19741,10 @@
   "cf3d55b422dfb196": {
    "verdict": "ok",
    "note": "Verified numerically for x=0.6: Math.acos(-0.6)=2.214297435588181 equals Math.PI-Math.acos(0.6)=2.214297435588181; matches source's own True verdict and geometric (reference-angle) argument."
+  },
+  "cf401972097d1450": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=4\\sin\\theta$. What is the name o)"
   },
   "cf45b921ba33f989": {
    "verdict": "ok"
@@ -19502,6 +19954,10 @@
   "d1ba3d88ed85728e": {
    "verdict": "ok"
   },
+  "d1c38849d26116e5": {
+   "verdict": "ok",
+   "note": "4*Math.cos(11*Math.PI/6)=3.4641016151377535=2*sqrt(3); 4*Math.sin(11*Math.PI/6)=-2.0000000000000018=-2."
+  },
   "d1c99bea4f8feb64": {
    "verdict": "ok"
   },
@@ -19539,6 +19995,10 @@
   },
   "d21480a02c0fee3f": {
    "verdict": "ok"
+  },
+  "d221762b306643ab": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Which type of curve is $r=3-2\\cos\\theta$?)"
   },
   "d2274e00b1641e19": {
    "verdict": "ok"
@@ -19586,6 +20046,10 @@
   "d2ba4ccd256c6a2d": {
    "verdict": "ok"
   },
+  "d2bc4ea390ac61f4": {
+   "verdict": "ok",
+   "note": "Heron a=1.6,b=2.6,c=4.1: s=4.15, Area=sqrt(4.15*2.55*1.55*0.05)=0.9056 -> 0.91 yd^2, matches source key."
+  },
   "d2c58dcc618f1938": {
    "verdict": "ok",
    "note": "Read from the option specs, not the old key. Option 1 is the only one that matches f(x)=x^3 for x<-1 (cubic ending at an OPEN circle at (-1,-1)), f(x)=-2 for -1<x<4 (segment at y=-2, open at both ends), f(x)=sqrt(x) for x>4 (sqrt drawn from x=4 with an open circle at (4,2), since sqrt(4)=2). Option 0 draws the sqrt piece from the origin; option 2 puts the middle piece at y=+2. answerIndex 1 confirmed."
@@ -19595,6 +20059,10 @@
   },
   "d2dd4efd5504bb60": {
    "verdict": "ok"
+  },
+  "d2e3ba591977a05d": {
+   "verdict": "ok",
+   "note": "Practice (source fs-id1165135363342, a=32,b=24,gamma=75): Area=0.5*32*24*sin(75)=370.916 -> 370.9. Matches CNXML answer 370.9."
   },
   "d306ccb6e9634eee": {
    "verdict": "ok"
@@ -20012,6 +20480,10 @@
   "d7f213c0f6eafabb": {
    "verdict": "ok"
   },
+  "d811d9e48d7af9da": {
+   "verdict": "ok",
+   "note": "parent: r=5sqrt2/sqrt2=5, theta=pi-2pi/3=pi/3"
+  },
   "d8278a928869d8f6": {
    "verdict": "ok"
   },
@@ -20095,6 +20567,10 @@
   },
   "d938c5b176987fce": {
    "verdict": "ok"
+  },
+  "d93b7840a382797c": {
+   "verdict": "ok",
+   "note": "theta of 8-4i: Math.atan2(-4,8) normalized to [0,360) = 333.434948822922, rounds to 333.4 degrees (nearest tenth, matches source Algebraic exercise 13's key 4sqrt5 cis(333.4deg))."
   },
   "d93cea399a54abcd": {
    "verdict": "ok"
@@ -20189,6 +20665,10 @@
   },
   "da4200a5ec6232e4": {
    "verdict": "ok"
+  },
+  "da602335ed0e4d70": {
+   "verdict": "ok",
+   "note": "Heron a=1/2,b=1/3,c=1/4: s=13/24, Area=sqrt(s(s-1/2)(s-1/3)(s-1/4))=0.03703 -> 0.04 m^2, matches source key."
   },
   "da6ea750c259c50b": {
    "verdict": "ok",
@@ -20313,6 +20793,10 @@
   "db91c34eac0da470": {
    "verdict": "ok"
   },
+  "db92cb4075f193c6": {
+   "verdict": "ok",
+   "note": "a=14,b=13,c=20, angle C: acos((14^2+13^2-20^2)/(2*14*13))=95.52deg -> 95.5, matches source key."
+  },
   "dbb66f62a2634c11": {
    "verdict": "ok"
   },
@@ -20321,6 +20805,10 @@
   },
   "dbd263d157606f4b": {
    "verdict": "ok"
+  },
+  "dbd3db3fec3cf6bf": {
+   "verdict": "ok",
+   "note": "parent: x=2sin t,y=4cos t traces tall ellipse x^2/4+y^2/16=1 CW from (0,4); keyed option verified by checker render pass, distractor ariaLabel corrected to match its own drawn geometry"
   },
   "dbd7f07250072488": {
    "verdict": "ok"
@@ -20671,6 +21159,10 @@
   },
   "e02c3e728ab7ea63": {
    "verdict": "ok"
+  },
+  "e03414e7ec28d474": {
+   "verdict": "ok",
+   "note": "u.v = (-1)(1)+(-1)(5) = -6. Node-verified, matches source's own answer."
   },
   "e03b9686208a7995": {
    "verdict": "ok"
@@ -21295,6 +21787,10 @@
   "e66160fa400eda4c": {
    "verdict": "ok"
   },
+  "e6626cfc616a23c0": {
+   "verdict": "ok",
+   "note": "TryIt3 (source ti_08_01_02, alpha=80,a=100,b=10): sin(beta)=b*sin(alpha)/a=0.09849 -> beta=5.6517 (only acute solution valid, since 180-alpha-beta2 would be negative); gamma=94.3483; c=a*sin(gamma)/sin(alpha)=101.250 -> 101.3. Matches CNXML solution c approx 101.3."
+  },
   "e68311f247e2836e": {
    "verdict": "ok"
   },
@@ -21415,6 +21911,10 @@
    "verdict": "ok",
    "note": "3y=7-2x -> y=-2x/3+7/3, a linear function; key p1279 #1 \"Yes\""
   },
+  "e7c9b93b040d6042": {
+   "verdict": "ok",
+   "note": "u+v = (-3+-2, 4+1) = (-5,5) -> -5i+5j. Node-verified."
+  },
   "e7d51793100abd01": {
    "verdict": "ok"
   },
@@ -21451,6 +21951,10 @@
   },
   "e876d24fa08352dc": {
    "verdict": "ok"
+  },
+  "e876db42c71a3ed6": {
+   "verdict": "ok",
+   "note": "Practice P1 (x(t)=t-1, y(t)=t^2): eliminated t=x+1, y=(x+1)^2 = x^2+2x+1 via node -e; confirmed upward parabola vertex (-1,0), matches source solution alt-text 'upward opening parabola'. Domain t=-3..2 -> x=-4..1 verified monotonic (x increases with t) so a single end-arrow is correct."
   },
   "e8839e0c6cf2b682": {
    "verdict": "ok"
@@ -21562,6 +22066,10 @@
   "e9ac109d031a3c8f": {
    "verdict": "ok"
   },
+  "e9b309525421216b": {
+   "verdict": "ok",
+   "note": "Practice (source fs-id1165135664922, building height, angles 35/53deg, 250ft closer): angle at closer point (interior)=180-53=127; angle at top=180-35-127=18; distance from closer point to top=250*sin(35)/sin(18)=464.033; height=that*sin(53)=370.593 -> 371 ft (nearest foot). Matches CNXML answer 371 ft."
+  },
   "e9cf4bc7b4de51ae": {
    "verdict": "ok"
   },
@@ -21596,6 +22104,10 @@
   },
   "ea3ad5aee809fbe0": {
    "verdict": "ok"
+  },
+  "ea4e36cab517d4c6": {
+   "verdict": "ok",
+   "note": "Graph-mode MC on Graphical #23 (r=7+4sinθ, CNXML fs-id1165134575414, printed solution 'one-loop/dimpled limaçon', a=7,b=4,1<a/b<2): correct option (index 2 after reorder) is the exact r=7+4sinθ sampled polyline, opening upward with a shallow dimple, independently re-verified via svgshot against the sign-flip (opens down), axis-swap (opens right), and family (a=7,b=9, inner-loop) distractors."
   },
   "ea6e4086e8f64e12": {
    "verdict": "ok"
@@ -22194,6 +22706,10 @@
   "f09b3917698e4ca5": {
    "verdict": "ok"
   },
+  "f0a347862033b156": {
+   "verdict": "ok",
+   "note": "Practice: x=4cos t,y=5sin t -> x^2/16+y^2/25=1 by Pythagorean identity; node-verified residual ~0 over t=0..6; matches CNXML solution."
+  },
   "f0a64778e47f5c23": {
    "verdict": "ok"
   },
@@ -22260,6 +22776,10 @@
   },
   "f139dc9479f54ee8": {
    "verdict": "ok"
+  },
+  "f13a5e65c0c7c03f": {
+   "verdict": "ok",
+   "note": "parent: r=2sqrt3*2=4sqrt3, theta=116+82=198; rect product cross-checked numerically"
   },
   "f14c66caa459e8b6": {
    "verdict": "ok"
@@ -22461,6 +22981,10 @@
   "f39ac1aeb84807b5": {
    "verdict": "ok"
   },
+  "f3a727ebdb82753e": {
+   "verdict": "ok",
+   "note": "Figure-read item (Section Exercises Q43/fs-id1165135397089): CNXML solution prints (5, pi); alt text describes point on fifth concentric circle along the negative polar axis, matching r=5, theta=pi."
+  },
   "f3ade6306f66992f": {
    "verdict": "ok"
   },
@@ -22601,6 +23125,10 @@
   },
   "f51c63f1e3e83e2a": {
    "verdict": "ok"
+  },
+  "f51cee7787b3da3a": {
+   "verdict": "ok",
+   "note": "Practice ambiguous part 1 (source fs-id1165135521227, a=12,c=17,alpha=35, gamma acute): sin(gamma)=c*sin(alpha)/a=0.8126; gamma1=54.347 -> 54.3 deg. Matches CNXML 'gamma approx 54.3'."
   },
   "f52040bc61be243e": {
    "verdict": "ok"
@@ -22746,6 +23274,10 @@
   "f6a1b59f22f8bb82": {
    "verdict": "ok"
   },
+  "f6a2b34508beffea": {
+   "verdict": "ok",
+   "note": "x=2cos t, y=-sin t: cos t=x/2, sin t=-y, cos^2+sin^2=1 gives x^2/4+y^2=1, verified numerically via node -e sampling six t values (all satisfy the equation to floating-point precision). Matches source solution alt-text 'a horizontal ellipse'. Not a retype hazard; self-grades correct and an alternate \\frac spelling also grades correct."
+  },
   "f6aaeaf1f5a7a5ec": {
    "verdict": "ok"
   },
@@ -22755,8 +23287,16 @@
   "f6acbda6fa40f2bd": {
    "verdict": "ok"
   },
+  "f6af3aa479deb2a5": {
+   "verdict": "ok",
+   "note": "parent: r=3*(1/4)=3/4, theta=120+60=180"
+  },
   "f6b019e6e5100806": {
    "verdict": "ok"
+  },
+  "f6b1c92a48197b22": {
+   "verdict": "ok",
+   "note": "parent: r=16^(1/4)=2, theta=(120+360k)/4 -> 30,120,210,300; each root^4 recomputed"
   },
   "f6b9ef64d127432b": {
    "verdict": "ok"
@@ -22786,6 +23326,10 @@
   "f737d1e52360b3a4": {
    "verdict": "ok",
    "note": "s = r*theta = 5.02*(pi/3) = 5.2569317070069195, rounds to 5.26 at 2dp (node computed)"
+  },
+  "f73ffb5a432f31f4": {
+   "verdict": "ok",
+   "note": "node: r=sqrt(16+4)=sqrt(20)=2*sqrt(5)=4.4721; theta=atan2(2,4)=0.46365 rad, rounded 0.464. Matches CNXML solution (2*sqrt(5), 0.464) exactly (Section Exercises, (4,2))."
   },
   "f741cd7c3cb67e92": {
    "verdict": "ok"
@@ -23037,6 +23581,10 @@
   "f99ed0540f734fb2": {
    "verdict": "ok"
   },
+  "f9a0edc14c6ebc04": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (For the following exercise, assume $\\alpha$ is opposite side)"
+  },
   "f9ab34ef563a0bf7": {
    "verdict": "ok"
   },
@@ -23064,6 +23612,10 @@
   },
   "f9e5b8f1b721d637": {
    "verdict": "ok"
+  },
+  "f9e7f002427a5e4e": {
+   "verdict": "ok",
+   "note": "Practice: x=4-t,y=3t+2 -> t=4-x, y=3(4-x)+2=-3x+14; node-verified residual ~0 over t=-2..5; matches CNXML solution."
   },
   "fa0c7cfa9e564f89": {
    "verdict": "ok"
@@ -23106,6 +23658,10 @@
   },
   "fa878f7c3c302afd": {
    "verdict": "ok"
+  },
+  "fa87f110b6d6bede": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Which conic section does the equation $x+3y=6$ represent?)"
   },
   "fa8a8048a988b76a": {
    "verdict": "ok"
@@ -23260,6 +23816,10 @@
   "fc2c2353e309c88f": {
    "verdict": "ok"
   },
+  "fc454c5ae2c4acf8": {
+   "verdict": "ok",
+   "note": "Try It 1 (side only, mixed-unit adaptation): a=Math.sqrt(12**2+24**2-2*12*24*Math.cos(30*Math.PI/180)) = 14.8718 -> 14.9; single-step, no rounding chain."
+  },
   "fc557f68cce7792d": {
    "verdict": "ok"
   },
@@ -23334,6 +23894,10 @@
   "fd2fb6bf6819bd41": {
    "verdict": "ok"
   },
+  "fd33a1fe71ce6a7d": {
+   "verdict": "ok",
+   "note": "Graph-mode MC: correct option is the exact r=3cos(3θ) sampled polyline (3 petals, index 0 after reorder — verified visually via svgshot: 3-petal rose vs distractors 4-petal (n confusion), rotated 3-petal (cos vs sin), and shorter 3-petal (a=2 not 3)); matches source's printed answer image and the 'Rose curve, n odd' text."
+  },
   "fd3d03ea883c8e71": {
    "verdict": "ok"
   },
@@ -23353,6 +23917,10 @@
   "fd55149f097a12de": {
    "verdict": "ok",
    "note": "tan t=sin/cos=(15/17)/(-8/17)=-15/8"
+  },
+  "fd5afde350f47588": {
+   "verdict": "ok",
+   "note": "Independently derived: x=-1*cos(2pi/3)=0.5, y=-1*sin(2pi/3)=-0.8660 -> (1/2,-sqrt3/2). Matches CNXML solution exactly. Replayed through check-answer.mjs: self-grades correct, no retype hazard."
   },
   "fd6d0b62ee958151": {
    "verdict": "ok"
@@ -23439,6 +24007,10 @@
   },
   "fe42137a7b7ad555": {
    "verdict": "ok"
+  },
+  "fe4ad35d458c58c6": {
+   "verdict": "ok",
+   "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Graph the polar equation $r=2-2\\cos\\theta$. What is the name)"
   },
   "fe640b4b2bd8b486": {
    "verdict": "ok",

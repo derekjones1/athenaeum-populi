@@ -115,16 +115,16 @@ test('the source lock pins one upstream bundle per book', () => {
   assert.equal(lock.bundles['college-algebra-bundle'].moduleScope, 'mapped-collections');
 });
 
-test('committed provenance maps all 242 local math sections exactly once', () => {
+test('committed provenance maps all 250 local math sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 242);
-  assert.equal(result.actualCount, 242);
+  assert.equal(result.expectedCount, 250);
+  assert.equal(result.actualCount, 250);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
   assert.equal(counts['intermediate-algebra'].length, 70);
-  assert.equal(counts.precalculus.length, 41);
+  assert.equal(counts.precalculus.length, 49);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
@@ -149,7 +149,7 @@ test('the Precalculus book is mapped chapter-complete with its authored sections
     upstreamChapters: 12,
     upstreamSections: 73,
     localChapters: 12,
-    mappedSections: 41,
+    mappedSections: 49,
   });
   assert.deepEqual(
     Object.keys(result.map.bundles).sort(),
