@@ -1014,6 +1014,12 @@ function checkIntersection(question, answer) {
 function checkLineEquation(question, answer) {
   if (!/\b(?:write|find)\b[^.?!]*\b(?:equation|linear function|point-slope form|slope-intercept form)\b/i.test(question)
     && !/expression that \$y\$ equals/i.test(question)) return null;
+  // "Find the equation of the parabola through…" names a conic, and a keyed
+  // conic carries a squared variable: neither is a line, however many
+  // printed points the question offers (Precalculus §10.3's latus-rectum
+  // items print three).
+  if (/\bequation\s+(?:of|for)\s+(?:the|this|a|an|its|each)?\s*(?:parabola|ellipse|hyperbola|circle|conic)\b/i.test(question)) return null;
+  if (/\^\s*\{?\s*2\b/.test(answer)) return null;
   if (splitTopLevelCommas(answer).length > 1) return null;
   let points = printedPoints(question);
   let requiredSlope = null;
@@ -1186,6 +1192,12 @@ function checkCircleEquation(question, answer) {
  */
 function checkStandardFormRewrite(question, answer) {
   if (!/\bstandard form\b|\bvertex form\b|\bcompleting the square\b/i.test(question)) return null;
+  // A follow-up that quotes the rewritten form and asks for a FEATURE of it
+  // ("…rewritten in standard form as $x^2=-\tfrac14y$, give the equation of
+  // the directrix") is not a rewrite ask: its answer ($y=\tfrac{1}{16}$) is
+  // not value-equal to the printed subject and must not be graded as one.
+  // ("vertex form" is the rewrite's own name, not a feature — keep it.)
+  if (/\b(?:give|find|enter|identify|state|write)\b[^.?!]*\b(?:directrix|focus|foci|(?:co-?)?vert(?:ex|ices)(?!\s+form)|axis of symmetry|latus rectum|cent(?:er|re)|asymptotes?|eccentricity)\b/i.test(question)) return null;
   const subjects = [];
   for (const raw of questionSpans(question)) {
     if (/[<>]/.test(raw)) continue;

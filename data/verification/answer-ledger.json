@@ -112,6 +112,10 @@
    "verdict": "ok",
    "note": "Practice P3 (x(t)=-sqrt t, y(t)=t): eliminated t=y, x=-sqrt(y) so x<=0, y=x^2; independently derived left-half-upward-parabola vertex at origin, matches source solution alt-text 'left half of an upward opening parabola'. Arrow direction (toward more negative x as t increases) confirmed since x=-sqrt(t) decreases monotonically as t increases."
   },
+  "0126adff95a31dfc": {
+   "verdict": "ok",
+   "note": "Inverse annuity: goal=10000,r=1+0.042/12,n=24; solved a1=goal*(1-r)/(1-r^n)=400.14 (node), rounds to nearest dollar 400; matches CNXML fs-id1165135191500 solution ($400 per month)."
+  },
   "0131bdca68fbaa99": {
    "verdict": "ok"
   },
@@ -144,6 +148,10 @@
   },
   "0160928d5a3a2969": {
    "verdict": "ok"
+  },
+  "01659b124cac70b8": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 882): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "016737e23e9fd905": {
    "verdict": "ok"
@@ -202,11 +210,19 @@
   "01c254a83323f930": {
    "verdict": "ok"
   },
+  "01c257ebe3e1bbd7": {
+   "verdict": "ok",
+   "note": "d = 1/2 - 0 = 1/2, confirmed exact-fraction; \\frac{1}{2} self-grades correct under form=fraction and 0.5 reports form (checked against the real grader)."
+  },
   "01c2c7cc218f42d7": {
    "verdict": "ok"
   },
   "01c7ec3eb8c4b989": {
    "verdict": "ok"
+  },
+  "01cff9c9be1d2582": {
+   "verdict": "ok",
+   "note": "from (y-4)^2/4-(x-3)^2/16=1: a^2=4 -> a=2, vertical axis -> vertices (3,6),(3,2); matches source fs-id2272094."
   },
   "01d79b8d5a1979c1": {
    "verdict": "ok"
@@ -214,6 +230,14 @@
   "01dd32e2e1ed19c7": {
    "verdict": "ok",
    "note": "2x+3y=8, 3x+5y=10 -> elimination gives x=10, y=-4. Node-verified both equations satisfied."
+  },
+  "01de6e1f9ffa7d12": {
+   "verdict": "ok",
+   "note": "f(x)=2x^2-4 is the bare printed expression; node check-answer.mjs confirms the printed \\lim retype grades incorrect against this key."
+  },
+  "01ea818ff4cfcab3": {
+   "verdict": "ok",
+   "note": "pattern-fit to 1/e^2,1/e,1,e,e^2,...; exponent sequence n-3 gives -2,-1,0,1,2, matching (CNXML Try It ti_11_01_06)."
   },
   "01f08fa6d8aaad13": {
    "verdict": "ok"
@@ -227,6 +251,10 @@
   "0204d7349cf8f387": {
    "verdict": "ok"
   },
+  "021559dafc008871": {
+   "verdict": "ok",
+   "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — Which conic section is represented by $x^2-10x+4y-10=0$?"
+  },
   "022658572fb47e33": {
    "verdict": "ok"
   },
@@ -236,6 +264,10 @@
   },
   "0227c6a8aa827263": {
    "verdict": "ok"
+  },
+  "02328652f9c43442": {
+   "verdict": "ok",
+   "note": "sum(0.76k+1): terms 1.76,2.52,3.28,... consecutive differences constant (0.76) but ratios are not (2.52/1.76=1.432, 3.28/2.52=1.302) so series is not geometric; matches CNXML solution text for ti_11_04_13/eip-id1387862 ('The series is not geometric')."
   },
   "0234260b94aa8d50": {
    "verdict": "ok"
@@ -359,6 +391,10 @@
   "033fe1ec0e8245fe": {
    "verdict": "ok"
   },
+  "0349cfbf0363c966": {
+   "verdict": "ok",
+   "note": "Same ellipse: c^2=36-4=32,c=4sqrt2; foci (+-4sqrt2,0); matches CNXML fs-id1355522."
+  },
   "034ecef92423051f": {
    "verdict": "ok"
   },
@@ -367,6 +403,14 @@
   },
   "0368995ff1a28ece": {
    "verdict": "ok"
+  },
+  "03699ae1eaa31ec2": {
+   "verdict": "ok",
+   "note": "Practice: C(17,6) computed by BigInt factorial quotient = 12376; matches CNXML Algebraic exercise fs-id1165135241276 (printed 12,376)."
+  },
+  "03699d8d60b1a621": {
+   "verdict": "ok",
+   "note": "Focus (0,1/4) -> 4p=1 -> x^2=y; matches source exercise fs-id1525645's key exactly (item 51 of the Graphical set, whose own graph prints Vertex (0,0) and Focus (0,1/4)). Self-checked correct under the token."
   },
   "0372c4bb2be76fc4": {
    "verdict": "ok"
@@ -398,6 +442,10 @@
   },
   "03d34c1493ddae38": {
    "verdict": "ok"
+  },
+  "03dfdb3a032821b1": {
+   "verdict": "ok",
+   "note": "focus (0,7/2) form (0,p) -> x^2=4py; 4p=4(7/2)=14 -> x^2=14y; matches source TI3 exactly."
   },
   "03e2f87179eb8480": {
    "verdict": "ok"
@@ -500,6 +548,10 @@
   "04a09a4cad80f197": {
    "verdict": "ok"
   },
+  "04a40aae2c243b30": {
+   "verdict": "ok",
+   "note": "parent re-derived: in lim_{x->2} f(x)=16,807 the function whose limit is taken is f(x)=(3x+1)^5 (the key formerly named only the base 3x+1); (3(2)+1)^5=7^5=16807 checked in node."
+  },
   "04b1a7e11a426245": {
    "verdict": "ok"
   },
@@ -593,6 +645,10 @@
   "05276cea84066da3": {
    "verdict": "ok"
   },
+  "052d085e955490cf": {
+   "verdict": "ok",
+   "note": "d=(a5-a3)/2=(17-7)/2=5; a2=a3-d=7-5=2."
+  },
   "0537a8c3c17df4aa": {
    "verdict": "ok"
   },
@@ -630,6 +686,10 @@
   },
   "054ccacfcd91e013": {
    "verdict": "ok"
+  },
+  "05524f6f0c224656": {
+   "verdict": "ok",
+   "note": "Practice, objective 1 (Verbal exercise fs-id1662244): categorical, recast as multiplechoice. Source solution: 'An experiment is an activity with an observable result.'"
   },
   "0565a4ef1a477d83": {
    "verdict": "ok"
@@ -670,6 +730,10 @@
   },
   "05a7057a15a2dbca": {
    "verdict": "ok"
+  },
+  "05a9c96a67f606e0": {
+   "verdict": "ok",
+   "note": "r(2-cosθ)=1 → 2r=1+x → square → 4x²+4y²=1+2x+x² → 3x²+4y²-2x-1=0; matches Algebraic exercise fs-id1924146."
   },
   "05a9cf984046bc7b": {
    "verdict": "ok"
@@ -753,6 +817,10 @@
   "067ece585f63b03c": {
    "verdict": "ok"
   },
+  "0691745c82a17773": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 750): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "069ac07670cbeb83": {
    "verdict": "ok",
    "note": "absolute value does not remove where cot x is undefined; asymptotes remain at every multiple of pi, closest positive one is pi, independently computed."
@@ -766,8 +834,16 @@
   "06a118d9cc27ee0b": {
    "verdict": "ok"
   },
+  "06aa28ea6330c219": {
+   "verdict": "ok",
+   "note": "Practice: C(6,2) computed by BigInt factorial quotient = 15; matches CNXML Algebraic exercise fs-id1165135526110."
+  },
   "06b8a702d34d0de0": {
    "verdict": "ok"
+  },
+  "06c95001f21f3ab7": {
+   "verdict": "ok",
+   "note": "4p=-12->p=-3; directrix x=h-p=-1-(-3)=2; matches source key d:x=2."
   },
   "06dd5dea83edb35a": {
    "verdict": "ok"
@@ -880,6 +956,14 @@
   "07d1c08fae6cf19a": {
    "verdict": "ok"
   },
+  "07d4b3652d0f5a80": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 875): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "07d73df1a3629cf1": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 248): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "07d90120a4ef2ce8": {
    "verdict": "ok"
   },
@@ -901,6 +985,10 @@
   "0810b094f952e568": {
    "verdict": "ok"
   },
+  "0815d48469ec262c": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 294): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "0828539da008a0c3": {
    "verdict": "ok"
   },
@@ -914,6 +1002,10 @@
   "082f4e56ded3078d": {
    "verdict": "ok",
    "note": "f(x) = -3x/4 + 6: f(0)=6, f(4)=3, f(8)=0, matching the displayed points. Grid widened -8..10 x -8..8 -> -12..12 both axes for plotPoints slack (6 reachable, was exactly 3)."
+  },
+  "082fee4d7684d2b8": {
+   "verdict": "ok",
+   "note": "2+1.6+1.28+1.024+...: a1=2,r=0.8; S=a1/(1-r)=10 (node); matches CNXML fs-id1165137862576 solution (S=2/(1-0.8))."
   },
   "0832eb53e6f9c1f9": {
    "verdict": "ok",
@@ -993,6 +1085,10 @@
   },
   "091195669a0481a0": {
    "verdict": "ok"
+  },
+  "092e61a5d43aef95": {
+   "verdict": "ok",
+   "note": "(1/5+1/x)/(10+2x) = [(x+5)/5x] / [2(x+5)] = 1/(10x); at x=-5, 1/(-50) = -1/50; matches CNXML Try It 6 solution."
   },
   "0936c3fe28e86a37": {
    "verdict": "ok"
@@ -1158,6 +1254,10 @@
   "0aa9dd310f9b47d5": {
    "verdict": "ok"
   },
+  "0aaa6ec85c6ea193": {
+   "verdict": "ok",
+   "note": "lim_{x->4}(x^3-5) = 64-5 = 59; matches CNXML Try It 2 solution."
+  },
   "0aaac9fc78a6a1ad": {
    "verdict": "ok"
   },
@@ -1205,6 +1305,10 @@
   "0b0252efeeb24351": {
    "verdict": "ok"
   },
+  "0b0298c842f4cab8": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 848): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "0b03e2831ec48f4b": {
    "verdict": "ok"
   },
@@ -1220,6 +1324,10 @@
   "0b27c49d865065d1": {
    "verdict": "ok",
    "note": "Solved y=(x+1)^2-3 (x>=-1) for x: x=-1+sqrt(y+3) (positive root since x+1>=0), so f^{-1}(x)=sqrt(x+3)-1. Matches CNXML exercise fs-id1165137405850 (source #7), which has a solution."
+  },
+  "0b386b233adafd80": {
+   "verdict": "ok",
+   "note": "a1=18, r=1/3: 18, 18*(1/3)=6, 6*(1/3)=2, 2*(1/3)=2/3, (2/3)*(1/3)=2/9. Matches CNXML solution {18,6,2,2/3,2/9}."
   },
   "0b3a46c43fbb91d6": {
    "verdict": "ok"
@@ -1361,6 +1469,10 @@
   "0c74a8a68c27dc7e": {
    "verdict": "ok"
   },
+  "0c7ea451829a06bb": {
+   "verdict": "ok",
+   "note": "Common ratio of -6,-12,-24,-48,-96,... = -12/-6 = 2, confirmed across all consecutive pairs. Matches CNXML Algebraic #9 solution r=2."
+  },
   "0c826a63b74d26da": {
    "verdict": "ok"
   },
@@ -1440,9 +1552,17 @@
   "0d2699fb95823db7": {
    "verdict": "ok"
   },
+  "0d2f071e79880c88": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 677): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "0d2f0b38cb9337e5": {
    "verdict": "ok",
    "note": "cos t=√2/2 ⇒ sec t=1/cos t=√2"
+  },
+  "0d32bec7a839e1cd": {
+   "verdict": "ok",
+   "note": "Try It 9: 2^6=64 subsets."
   },
   "0d3ab254867939ba": {
    "verdict": "ok",
@@ -1453,6 +1573,10 @@
   },
   "0d45085a4362f35a": {
    "verdict": "ok"
+  },
+  "0d4f441a162aeb61": {
+   "verdict": "ok",
+   "note": "20 plants, 6 tulips/6 roses/8 daisies; 20!/(6!6!8!)=116,396,280 (node BigInt), matches CNXML key."
   },
   "0d5a9e93c13e3cb8": {
    "verdict": "ok"
@@ -1501,6 +1625,10 @@
   "0d96637faeb8695d": {
    "verdict": "ok"
   },
+  "0d9ad2aa767421c9": {
+   "verdict": "ok",
+   "note": "L=19; independently recomputed 2*(-3)^2+1 = 2*9+1 = 19 via node."
+  },
   "0da32d7a5f86ebe5": {
    "verdict": "ok"
   },
@@ -1521,12 +1649,20 @@
    "verdict": "ok",
    "note": "(2+sqrt(-12))/2=(2+2i*sqrt(3))/2=1+i*sqrt(3); recomputed independently, matches CNXML end-of-section answer key."
   },
+  "0dccf7f4a9dc4ca5": {
+   "verdict": "ok",
+   "note": "parent re-record after option shuffle: f(10)=150 is a position value, 150 ft east at t=10 s (source Try It solution b)."
+  },
   "0dcd1f5e86309bda": {
    "verdict": "ok"
   },
   "0dd7a3f259805ffd": {
    "verdict": "ok",
    "note": "y = 4x is slope 4 through the origin, both intercepts at (0,0). Grid widened -7..7 -> -14..14 for plotPoints slack (7 reachable, was exactly 3)."
+  },
+  "0de241a16aa9d80f": {
+   "verdict": "ok",
+   "note": "piecewise 2n^3 (odd) / 5n/2 (even) for n=1..6, computed by loop: 2,5,54,10,250,15 (CNXML Try It ti_11_01_03)."
   },
   "0de58b903ddcf2fa": {
    "verdict": "ok"
@@ -1540,6 +1676,10 @@
   },
   "0dee04bf6a4afd43": {
    "verdict": "ok"
+  },
+  "0df9c4b012382cfa": {
+   "verdict": "ok",
+   "note": "In-page Try It (ti_11_07_01, construct a probability model for a fair coin): categorical, recast as multiplechoice; source solution gives Heads 1/2, Tails 1/2, which sums to 1 as every valid model must — the three distractors do not."
   },
   "0dfeb031a122f2d2": {
    "verdict": "ok"
@@ -1627,6 +1767,10 @@
   "0eae72763be2156e": {
    "verdict": "ok"
   },
+  "0eb005e2f8cd6d91": {
+   "verdict": "ok",
+   "note": "Practice (Real-World #55) MC: option text is the source's own printed solution sentence for s(0)=0, s(5)=0 together, verbatim; distractors swap the launch/landing times and misattribute the statements to velocity."
+  },
   "0eb01ba83862780c": {
    "verdict": "ok",
    "note": "s=r*theta=7*85pi/180=10.3847 -> 10.385; key p1324 #5"
@@ -1677,6 +1821,10 @@
   "0f40dd8c94c5466f": {
    "verdict": "ok"
   },
+  "0f51163f3af376ad": {
+   "verdict": "ok",
+   "note": "Algebraic exercise 9 (fs-id1165135190857): 6x^2-17x+12 = (2x-3)(3x-4); expression reduces to 3x-4 for x!=3/2; at x=3/2, 3(1.5)-4=0.5=1/2; matches CNXML solution 1/2."
+  },
   "0f5c711b79c5a80e": {
    "verdict": "ok"
   },
@@ -1710,6 +1858,10 @@
   },
   "0fc91f72fccf5bbc": {
    "verdict": "ok"
+  },
+  "0fd024d38647aa67": {
+   "verdict": "ok",
+   "note": "y^2=-16x: p=4p/4=-4, focus=(p,0)=(-4,0); matches source TI1."
   },
   "0fd29a45c3a832ec": {
    "verdict": "ok"
@@ -1751,11 +1903,19 @@
   "10405ed11076550c": {
    "verdict": "ok"
   },
+  "10432741670f49de": {
+   "verdict": "ok",
+   "note": "asymptote slope b/a=1/2 and vertex distance a=10 -> b=5 -> x^2/100-y^2/25=1; matches source fs-id1925773 exactly."
+  },
   "10443f8e175df4dc": {
    "verdict": "ok"
   },
   "1045e1dd1884aba1": {
    "verdict": "ok"
+  },
+  "105128fa47a1add7": {
+   "verdict": "ok",
+   "note": "Practice, objective 1 (Verbal exercise fs-id1446155): categorical, recast as multiplechoice. Source solution: 'probability; restricted to values between 0 and 1, inclusive.'"
   },
   "1053b55444a1cf47": {
    "verdict": "ok",
@@ -1926,6 +2086,10 @@
   "11ba964abeff67e6": {
    "verdict": "ok"
   },
+  "11c5524ce58c50e6": {
+   "verdict": "ok",
+   "note": "Half-diameter 800mm: 800^2/1280=500; matches source TI6(b) exactly. Exact, no rounding."
+  },
   "11c9c6a2a7e7af41": {
    "verdict": "ok"
   },
@@ -2002,6 +2166,10 @@
   },
   "12748020a56590fd": {
    "verdict": "ok"
+  },
+  "12750ab6d4bbe024": {
+   "verdict": "ok",
+   "note": "a1=-1, a_n=(-3)^(n-1)/(a_(n-1)-2) for n=2..5, computed with exact-rational tracking: -1,1,-9,27/11,891/5 (source Algebraic #29, printed solution matches; 891/5 under 1000)."
   },
   "1279428be892f353": {
    "verdict": "ok"
@@ -2150,11 +2318,19 @@
   "13f2bc9ba83cfa5e": {
    "verdict": "ok"
   },
+  "13f5ba5415cecbf4": {
+   "verdict": "ok",
+   "note": "vertices (1,1),(11,1): center (6,1), a=5,a^2=25; focus (12,1): c=6,c^2=36; b^2=36-25=11 -> (x-6)^2/25-(y-1)^2/11=1; matches source fs-id2303167."
+  },
   "13f7b6a67332c39d": {
    "verdict": "ok"
   },
   "13faa6c9e789857c": {
    "verdict": "ok"
+  },
+  "13fe5fea9e99b42b": {
+   "verdict": "ok",
+   "note": "Matches the printed solution for fs-id1165137794235 (does not exist, source exercise 13): the left branch reaches the filled point (4,4) while the separate hooked piece beyond x=4 starts at an unrelated open circle near (4.3,5.7), so the two branches disagree."
   },
   "1408844a28e07b1b": {
    "verdict": "ok"
@@ -2180,6 +2356,10 @@
   "145094c0704cf943": {
    "verdict": "ok",
    "note": "44*pi/9 - 18*pi/9 = 26*pi/9 (still > 2*pi=18*pi/9), - 18*pi/9 again = 8*pi/9, in [0,2*pi)"
+  },
+  "145283943a247cfc": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 94): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "1459dc4b3b47bf04": {
    "verdict": "ok"
@@ -2218,6 +2398,10 @@
   "14aef943d17107d5": {
    "verdict": "ok"
   },
+  "14af81404a57f305": {
+   "verdict": "ok",
+   "note": "Try It 1a: C(7,3) computed by BigInt factorial quotient = 35; matches CNXML solution ti_11_06_01(a)."
+  },
   "14bac4d4ee8925e9": {
    "verdict": "ok"
   },
@@ -2248,11 +2432,19 @@
   "1525929f560fc16c": {
    "verdict": "ok"
   },
+  "1533e372b2606767": {
+   "verdict": "ok",
+   "note": "g(x)={sqrt(x),0<=x<4; 2x,x>=4}. left-limit at 4 = sqrt(4)=2; right-limit = 2*4=8. Both exist, unequal -> jump discontinuity. Matches source Try It 1(b) solution."
+  },
   "153b1fab2a739677": {
    "verdict": "ok"
   },
   "153e91a8ed6b066a": {
    "verdict": "ok"
+  },
+  "1548f8a264cbe647": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L337 of 04-series-and-their-notations.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
   "154eead9c324cdf3": {
    "verdict": "ok"
@@ -2301,6 +2493,10 @@
   "15b22a3968d84bbf": {
    "verdict": "ok"
   },
+  "15b2bd424de9cdd6": {
+   "verdict": "ok",
+   "note": "C(10,3)*C(6,5)*C(5,2)=120*6*10=7200 (node BigInt), matches CNXML key."
+  },
   "15c1f2cb70ea6a19": {
    "verdict": "ok"
   },
@@ -2325,6 +2521,10 @@
   },
   "15e8b38cdfd3cb64": {
    "verdict": "ok"
+  },
+  "15ebcb701d4e6aee": {
+   "verdict": "ok",
+   "note": "x^2=-(1/4)y: 4p=-1/4->p=-1/16; directrix y=-p=1/16; matches source key d:y=1/16."
   },
   "15efd1d2271f8a1c": {
    "verdict": "ok"
@@ -2390,6 +2590,10 @@
   "1692cbf977dcbb39": {
    "verdict": "ok"
   },
+  "169c8c5fcc08c57e": {
+   "verdict": "ok",
+   "note": "Practice obj4-1b: substitute y=6 into x^2/400+y^2/144=1 -> x^2=400*(1-36/144)=300 -> x=sqrt300=17.3205...->17.32; matches CNXML fs-id1377350 solution 'Distance = 17.32 feet'; full precision and rounded-intermediate paths agree."
+  },
   "16b32ce3e3c84b2e": {
    "verdict": "ok"
   },
@@ -2447,6 +2651,10 @@
   "1717240a25107dae": {
    "verdict": "ok"
   },
+  "171879c528896547": {
+   "verdict": "ok",
+   "note": "vertices (1,-2),(1,8): center k=3, a=5, a^2=25; foci (1,-10),(1,16): c=13, c^2=169; b^2=169-25=144 -> (y-3)^2/25-(x-1)^2/144=1; matches source Try It 3, verified in Node."
+  },
   "171921dea5f9ac7d": {
    "verdict": "ok"
   },
@@ -2486,6 +2694,10 @@
   },
   "17886b18fec8dd8b": {
    "verdict": "ok"
+  },
+  "1789b00c15bfa7fc": {
+   "verdict": "ok",
+   "note": "At x=6, f(6)=pi/6 exists (Condition 1 holds, defined by the 2<=x<=6 piece); left-hand limit=pi/6 and right-hand limit=12*pi both exist but differ -> Condition 2 fails (jump-type failure), independently derived since the source Try It 4 solution only names the x-value."
   },
   "17b4d5844a16eaf0": {
    "verdict": "ok"
@@ -2598,6 +2810,10 @@
   "18c1764d9fa67932": {
    "verdict": "ok"
   },
+  "18cab4b92a0364f7": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 161): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "18d3909e5adf132b": {
    "verdict": "ok",
    "note": "sqrt(4^2+6^2)=sqrt(52)=7.2111..., rounds to 7.211. node -e Math.sqrt(16+36)=7.211102550927978."
@@ -2612,8 +2828,16 @@
    "verdict": "ok",
    "note": "f(0) = (2)^2(-2) / [2(-1)^2(-3)] = -8/-6 = 4/3, so (0,4/3); matches CNXML Try It 8."
   },
+  "18ef86a486b8e250": {
+   "verdict": "ok",
+   "note": "(y+4)^2/100-(x-3)^2/64=1: center read directly from shifted binomials, (3,-4); matches source Try It 5 (kept 3 of its 5 requested quantities)."
+  },
   "18f7089a096baf60": {
    "verdict": "ok"
+  },
+  "18fa1170b22d1b0a": {
+   "verdict": "ok",
+   "note": "parent: option order rotated for position balance; answer re-derived earlier in this session (conic type from A,C / discriminant; rotation effect; theta from cot 2theta) — Which conic section is represented by $2x^2+3y^2-8x-12y+2=0$"
   },
   "191304f9738f657b": {
    "verdict": "ok"
@@ -2717,6 +2941,10 @@
   "1a0bab485810b93b": {
    "verdict": "ok"
   },
+  "1a155634a968f8d6": {
+   "verdict": "ok",
+   "note": "directrix y=4>0,e=3/2 → ep=6 → r=6/(1+1.5sinθ) = 12/(2+3sinθ); matches Algebraic exercise fs-id2900253."
+  },
   "1a1cd001b138c3a4": {
    "verdict": "ok",
    "note": "Try It ti_07_01_05 (CNXML source): cos(t)/(1+sin t) = (1-sin t)/cos t, proved by multiplying by (1-sin t)/(1-sin t) and using 1-sin^2t=cos^2t; confirmed numerically at t=1 (0.2934079930260234 both sides). Distractors (1+sin t)/cos t, (sin t-1)/cos t, (1-sin t)/sin t all confirmed numerically distinct."
@@ -2756,11 +2984,19 @@
   "1a707aacb42f97c3": {
    "verdict": "ok"
   },
+  "1a71177b0c7acc23": {
+   "verdict": "ok",
+   "note": "Try It 2b: (2x+5y)^3 expanded via Binomial Theorem with BigInt coefficients = 8x^3+60x^2y+150xy^2+125y^3; matches CNXML solution ti_11_06_02(b)."
+  },
   "1a767168689b3b6f": {
    "verdict": "ok"
   },
   "1a843ba07db78647": {
    "verdict": "ok"
+  },
+  "1a9ff45efbac17b2": {
+   "verdict": "ok",
+   "note": "a1=2, a_n=2a_(n-1)+1 for n=2..5, computed by loop: 2,5,11,23,47 (CNXML Try It ti_11_01_07)."
   },
   "1aa02b6bc9409fa1": {
    "verdict": "ok"
@@ -2802,6 +3038,10 @@
   },
   "1af90fa0f3e58ee0": {
    "verdict": "ok"
+  },
+  "1b0282f6a3e75483": {
+   "verdict": "ok",
+   "note": "10^3=1000, 3-digit string with repetition (matches CNXML key)."
   },
   "1b02d88c9b1d2370": {
    "verdict": "ok",
@@ -2859,9 +3099,21 @@
    "verdict": "ok",
    "note": "pi/6 = 30 deg special angle, cos(pi/6) = sqrt3/2, x-coordinate of point (sqrt3/2, 1/2)"
   },
+  "1b7eebd8d66f59a4": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L429 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
+  },
+  "1b883906fca0326e": {
+   "verdict": "ok",
+   "note": "Read from the authored figure: left branch (quadratic a=0.42,b=1.092,c=0.01) ends at the open circle (0,0), matching the printed answer key's part a (0)."
+  },
   "1b8bfb4e68f34040": {
    "verdict": "ok",
    "note": "(-4+4i)-(-6+9i)=(-4+6)+(4-9)i=2-5i; recomputed independently, matches CNXML end-of-section answer key."
+  },
+  "1b8c2390f907c01a": {
+   "verdict": "ok",
+   "note": "Try It 2: 3*4*5=60, multiplication principle."
   },
   "1b906b98871d8c1f": {
    "verdict": "ok"
@@ -2875,11 +3127,19 @@
   "1ba2fefbe3eac904": {
    "verdict": "ok"
   },
+  "1ba512b105badaac": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 457): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "1bad7f205f287703": {
    "verdict": "ok"
   },
   "1bb4188c77f4b32e": {
    "verdict": "ok"
+  },
+  "1bbb969ba153f526": {
+   "verdict": "ok",
+   "note": "parent: r=2/(4-cos t) = 0.5/(1-0.25 cos t): e=1/4 ellipse, ep=0.5 -> p=2, directrix x=-2; vertices r(0)=2/3 -> (0.667,0), r(pi)=2/5 -> (-0.4,0); keyed option 0 matches; distractors differ in orientation/directrix"
   },
   "1bbbee5ef7118c10": {
    "verdict": "ok"
@@ -2907,6 +3167,10 @@
   },
   "1be8e7b56e7398a2": {
    "verdict": "ok"
+  },
+  "1bef4c7bd320dcd1": {
+   "verdict": "ok",
+   "note": "c^2=25+36=61 -> foci (sqrt61,0),(-sqrt61,0); matches source fs-id2129321."
   },
   "1bf23eb3f890548c": {
    "verdict": "ok"
@@ -2941,6 +3205,10 @@
   },
   "1c4a203ebc907d4d": {
    "verdict": "ok"
+  },
+  "1c531c82724cabe0": {
+   "verdict": "ok",
+   "note": "Vertex (0,20) opens down, x^2=4p(y-20); edge (50,0): 2500=4p(-20) -> 4p=-125 -> x^2=-125(y-20); matches source exercise fs-id2085442's key exactly."
   },
   "1c55797990babf03": {
    "verdict": "ok",
@@ -2997,6 +3265,10 @@
   },
   "1ccacebe33afa3ec": {
    "verdict": "ok"
+  },
+  "1cdd3d3ee12ddfcb": {
+   "verdict": "ok",
+   "note": "Practice obj3-1: 4x^2-8x+16y^2-32y-44=0 -> 4(x-1)^2+16(y-1)^2=64 -> (x-1)^2/16+(y-1)^2/4=1; center (1,1); matches CNXML fs-id1332813 solution."
   },
   "1ceee5664a048538": {
    "verdict": "ok"
@@ -3055,6 +3327,10 @@
   "1d7989225bfb9418": {
    "verdict": "ok"
   },
+  "1d7bb396aab3d94e": {
+   "verdict": "ok",
+   "note": "10+18+26+...+162: a1=10,d=8,an=162,n=20 (node), matches sum_{k=1}^{20}(8k+2) per CNXML fs-id1165135404219 solution; verified 8(1)+2=10 and 8(20)+2=162."
+  },
   "1d7fe045e7e093b5": {
    "verdict": "ok"
   },
@@ -3082,6 +3358,10 @@
   "1dbf4fd282e1925a": {
    "verdict": "ok"
   },
+  "1dc98390d69e4ecb": {
+   "verdict": "ok",
+   "note": "f(x)=x^3-2x-15 is a polynomial; polynomial functions are continuous on all of (-infty,infty). Matches source exercise fs-id1165135684888 solution 'Continuous on (-infty,infty)'."
+  },
   "1dd01cdf41fcdd9f": {
    "verdict": "ok"
   },
@@ -3097,6 +3377,10 @@
   },
   "1df3d408e5500612": {
    "verdict": "ok"
+  },
+  "1df5c875e4a28f08": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 472): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "1dfae0113238a44a": {
    "verdict": "ok"
@@ -3169,6 +3453,10 @@
    "verdict": "ok",
    "note": "Try It 2: plot (3,-pi/6) and (2,9pi/4). node: 3*cos(-pi/6)=2.5981, 3*sin(-pi/6)=-1.5; 9pi/4 is coterminal with pi/4, 2*cos(pi/4)=2*sin(pi/4)=1.4142 -> option index 2 (correct answerIndex=2); distractors misread the coterminal reduction and sign."
   },
+  "1e9bd8b0ead0e445": {
+   "verdict": "ok",
+   "note": "Algebraic exercise 47 (fs-id1165135394188): f(x+h)-f(x) = [(x+h)^2+4(x+h)-100]-[x^2+4x-100] = h(2x+h+4); divided by h gives 2x+h+4; matches CNXML solution 2x+h+4. Confirmed via node: f=(x,h)=>x*x+4*x-100; (f(x+h)-f(x))/h equals 2x+h+4 numerically for several (x,h) pairs."
+  },
   "1eaf04733813a307": {
    "verdict": "ok"
   },
@@ -3176,11 +3464,19 @@
    "verdict": "ok",
    "note": "Practice ex23: period 4, matches CNXML solution and node-confirmed extrema spacing."
   },
+  "1ebca9cfae6c474f": {
+   "verdict": "ok",
+   "note": "TI8a: piecewise graph (Figure 18 analog) reconstructed with breaks only at x=1 and x=3 (open circles at both), so continuous on (-inf,1)U(1,3)U(3,inf); matches source Try It solution's stated continuity intervals exactly."
+  },
   "1ebf0d6b38cc5340": {
    "verdict": "ok"
   },
   "1ec2b5a610088a36": {
    "verdict": "ok"
+  },
+  "1ec79b0fd7eb14fb": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 101): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "1eebba9ddb9f73ff": {
    "verdict": "ok"
@@ -3243,8 +3539,16 @@
   "1f7253b4016872b4": {
    "verdict": "ok"
   },
+  "1f7486b25c7702d3": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 138): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "1f7c092b1cc2fad6": {
    "verdict": "ok"
+  },
+  "1f7f2d948f001078": {
+   "verdict": "ok",
+   "note": "f(x)=sqrt(x-4) requires x-4>=0, i.e. x>=4; sqrt is continuous everywhere it is defined -> continuous on [4,infty). Matches source exercise fs-id1165135693153 solution 'Continuous on [4,infty)'."
   },
   "1f8d148198360012": {
    "verdict": "ok"
@@ -3345,6 +3649,10 @@
   "209ba78b114d0b4f": {
    "verdict": "ok",
    "note": "Degree of numerator (1) < degree of denominator (3, from x^3-16x); HA y=0; matches CNXML source answer."
+  },
+  "20a1e06dba2d84cb": {
+   "verdict": "ok",
+   "note": "T_8 = 10+4(8) = 42."
   },
   "20a23fc7b9bd5dbe": {
    "verdict": "ok"
@@ -3455,6 +3763,10 @@
   "2168adae102d0381": {
    "verdict": "ok"
   },
+  "216be2284ac6f819": {
+   "verdict": "ok",
+   "note": "vertices (0,+-2) a^2=4; foci (0,+-2sqrt5) c^2=20; b^2=20-4=16 -> y^2/4-x^2/16=1; matches source Try It 2."
+  },
   "216f5ff7bd423bcf": {
    "verdict": "ok"
   },
@@ -3495,6 +3807,10 @@
   },
   "21f6200ed58324ca": {
    "verdict": "ok"
+  },
+  "220141c553f577ca": {
+   "verdict": "ok",
+   "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — Identify the graph of the nondegenerate conic section $16x^2"
   },
   "2201678ee7e3e0db": {
    "verdict": "ok",
@@ -3577,6 +3893,10 @@
   "228b02f3dae36184": {
    "verdict": "ok"
   },
+  "22a7ea171edcf0b8": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 803): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "22aa5027de0df032": {
    "verdict": "ok"
   },
@@ -3628,6 +3948,10 @@
   "231df892bf933893": {
    "verdict": "ok"
   },
+  "23212861d58adf8b": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L381 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
+  },
   "234259e4482d865e": {
    "verdict": "ok"
   },
@@ -3659,6 +3983,10 @@
   },
   "23925c653954782b": {
    "verdict": "ok"
+  },
+  "2393913dd3fbe7d2": {
+   "verdict": "ok",
+   "note": "c^2=49+49=98 -> c=7sqrt(2) -> foci (2+7sqrt2,-7),(2-7sqrt2,-7); matches source fs-id1636747."
   },
   "23b103f1acab64fa": {
    "verdict": "ok"
@@ -3706,6 +4034,10 @@
   },
   "241520f98a499681": {
    "verdict": "ok"
+  },
+  "2416ded28402981f": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 386): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "241facaa6ac7f941": {
    "verdict": "ok"
@@ -3776,6 +4108,10 @@
   },
   "24fb485c94d1567d": {
    "verdict": "ok"
+  },
+  "24fdd33347b81095": {
+   "verdict": "ok",
+   "note": "Matches the printed solution for fs-id1165137935628 (2, source exercise 7); the authored quadratic y=-2x^2+4 gives f(1)=2 (open circle at x=1 from the left branch), node-checked."
   },
   "24fe207bcd72af5e": {
    "verdict": "ok",
@@ -3883,6 +4219,10 @@
   "25fc5fcdbcc64cdc": {
    "verdict": "ok"
   },
+  "2605cc626b6932fd": {
+   "verdict": "ok",
+   "note": "sum_{k=2}^{5}(3k-1): terms 5,8,11,14, sum=38; matches CNXML ti_11_04_01."
+  },
   "260fdca34c486638": {
    "verdict": "ok"
   },
@@ -3942,6 +4282,10 @@
   },
   "26b77abe952dbffc": {
    "verdict": "ok"
+  },
+  "26c133bda904c0ac": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 434): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "26c1c28664a15856": {
    "verdict": "ok",
@@ -4366,6 +4710,10 @@
    "verdict": "ok",
    "note": "ln(x^2)=ln1 => x^2=1 => x=1 or x=-1; both satisfy domain x^2>0. Unordered pair, verified with checkAnswer {unordered:true}."
   },
+  "2aa37615de002666": {
+   "verdict": "ok",
+   "note": "y^2/4-x^2/81=1: a^2=4 -> a=2 -> vertices (0,2),(0,-2); matches source fs-id1688303."
+  },
   "2aa4009a581c55c0": {
    "verdict": "ok"
   },
@@ -4417,11 +4765,19 @@
   "2b225c6e3c1146e3": {
    "verdict": "ok"
   },
+  "2b266f1e46f55a98": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 347): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "2b3454142870d031": {
    "verdict": "ok"
   },
   "2b38785b15d95073": {
    "verdict": "ok"
+  },
+  "2b4109a6464ed09d": {
+   "verdict": "ok",
+   "note": "TI9: f(x)=5x^2-x+4 at x=2: f'(x)=10x-1, f'(2)=19; f(2)=20-2+4=22; tangent y=19(x-2)+22=19x-16. Confirmed numerically node: slope 19.0000000018, intercept -16.0000000035. Matches source Try It solution y=19x-16."
   },
   "2b496492d56ba10b": {
    "verdict": "ok"
@@ -4479,6 +4835,10 @@
   "2bf7294e4380d44f": {
    "verdict": "ok"
   },
+  "2bfd53f69e0b8d3f": {
+   "verdict": "ok",
+   "note": "vertical axis, slope=+-a/b=+-2/4=+-1/2 -> y=1/2(x-3)+4,y=-1/2(x-3)+4; matches source fs-id2272094."
+  },
   "2c0631414e0696f3": {
    "verdict": "ok"
   },
@@ -4487,6 +4847,10 @@
   },
   "2c1f112a25792a42": {
    "verdict": "ok"
+  },
+  "2c2286bdd9d4498f": {
+   "verdict": "ok",
+   "note": "f(x)=(x^2-6x)/(x-6)=x(x-6)/(x-6)=x for x!=6; lim_{x->6}=6 (finite), f(6) undefined (0/0) -> removable discontinuity. Matches source Try It 1(a) solution."
   },
   "2c321e34073beea4": {
    "verdict": "ok"
@@ -4517,6 +4881,10 @@
   },
   "2c769b11eeaab6ee": {
    "verdict": "ok"
+  },
+  "2c7b4086fbdde764": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 463): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "2c7c0b66467d95e0": {
    "verdict": "ok",
@@ -4577,6 +4945,10 @@
   "2d2760ca31831eb2": {
    "verdict": "ok"
   },
+  "2d3876f8d74ce17e": {
+   "verdict": "ok",
+   "note": "sum 15*(-0.3)^k: geometric with r=-0.3, |r|<1, sum defined; matches CNXML ti_11_04_11/eip-662."
+  },
   "2d39707f5f24b3c6": {
    "verdict": "ok"
   },
@@ -4601,6 +4973,10 @@
   "2d610c556b7f9a4f": {
    "verdict": "ok"
   },
+  "2d655e75a248cb22": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 378): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "2d76df2f32514fd4": {
    "verdict": "ok",
    "note": "Real-World Applications #57 (fs-id1165134072299). Set x=truck driver, y=office manager=x+4000, z=warehouse manager=78000-x; independently confirmed the three stated relations (z+y=82000, y-x=4000, z+x=78000) all hold for every x via node, so the system is genuinely dependent with infinitely many solutions. Matches CNXML key 'There are infinitely many solutions; we need more information.'"
@@ -4622,6 +4998,10 @@
   },
   "2db13e4527e6270f": {
    "verdict": "ok"
+  },
+  "2db5f953f3e96949": {
+   "verdict": "ok",
+   "note": "r=10/(5-4sinθ): θ=π/2 → r=10, point (0,10); θ=3π/2 → r=10/9, point (0,-10/9); matches Algebraic 'graph the conic' exercise fs-id1872482 (solution figure-only; vertices independently derived by script)."
   },
   "2db6fbcb3f2cc933": {
    "verdict": "ok"
@@ -4649,6 +5029,10 @@
   "2df26e81801b440e": {
    "verdict": "ok"
   },
+  "2df94a8657bfe98a": {
+   "verdict": "ok",
+   "note": "(x-1)^2/9-(y-2)^2/16=1: center (1,2), a^2=9 -> a=3 -> vertices (4,2),(-2,2); matches source fs-id2609263 solution."
+  },
   "2df9a137a493acb5": {
    "verdict": "ok"
   },
@@ -4660,6 +5044,14 @@
   },
   "2e08500e7c2c2c04": {
    "verdict": "ok"
+  },
+  "2e118bc8e075624e": {
+   "verdict": "ok",
+   "note": "MC: unordered r-of-n selection is a combination; matches source Section Exercise 5's own explanation and formula."
+  },
+  "2e18c3bc03f23267": {
+   "verdict": "ok",
+   "note": "lim_{x->3}(x^2-x-6)/(x^2-9) = (x+2)/(x+3) at x=3 = 5/6 = 0.8333..., rounds to 0.83; node-sampled at x=3+-0.1,0.01,0.001,0.0001 confirms convergence to 0.8333; matches the printed solution for fs-id1165135195366 (source exercise 31)."
   },
   "2e21e8d1e6f7df6c": {
    "verdict": "ok",
@@ -4690,6 +5082,10 @@
   "2e3ca597a8432763": {
    "verdict": "ok"
   },
+  "2e3dc9248b4fbbb0": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 811): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "2e405d00b1baa222": {
    "verdict": "ok",
    "note": "(5-2i)(3i)=15i-6i^2=15i+6=6+15i; recomputed independently, matches CNXML end-of-section answer key."
@@ -4706,6 +5102,10 @@
   "2e4fe741c2c81ff3": {
    "verdict": "ok",
    "note": "TI5 (adapted from verify-identity to simplify-to-single-function): tanθcotθ-cos²θ = (sinθ/cosθ)(cosθ/sinθ)-cos²θ = 1-cos²θ = sin²θ, matches CNXML's own worked steps for this Try It."
+  },
+  "2e50bbc2bf8d7109": {
+   "verdict": "ok",
+   "note": "c^2=144+81=225 -> c=15 -> foci (15,0),(-15,0); matches source Try It 4."
   },
   "2e51e4dc1cc6299e": {
    "verdict": "ok"
@@ -4729,12 +5129,20 @@
    "verdict": "ok",
    "note": "Varies 47-63F, avg(55) first at t=10 rising -> T(t)=8sin(pi/12*(t-10))+55; solved T(t)=51 numerically over [0,24): roots at t=0 and t=8; first time AFTER midnight is t=8. Matches source exercise #19 solution (8 a.m.)."
   },
+  "2eb7318c725b0412": {
+   "verdict": "ok",
+   "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — If the equation of a conic section is written in the form $A"
+  },
   "2ec35c1e7894ef03": {
    "verdict": "ok",
    "note": "(2t+5)(5t-3) expands to 10t^2+19t-15 (sympy). Distractor (2t-5)(5t+3) expands to 10t^2-19t-15; 'It is prime' is false since it factors. Exactly one option is correct."
   },
   "2ecb067770f0d973": {
    "verdict": "ok"
+  },
+  "2edf4a7f4fd4be18": {
+   "verdict": "ok",
+   "note": "a_n=2^n/n^3 for n=1..4, computed by loop: 2,1/2,8/27,1/4 (source Algebraic #10, printed solution matches)."
   },
   "2eeab5169fabc423": {
    "verdict": "ok"
@@ -4763,6 +5171,10 @@
   },
   "2f2bd9cedd9bb008": {
    "verdict": "ok"
+  },
+  "2f35d6eea9a2d087": {
+   "verdict": "ok",
+   "note": "x^2=8y: p=8/4=2, focus=(0,p)=(0,2); matches source TI2."
   },
   "2f3ddcd010056997": {
    "verdict": "ok"
@@ -4848,8 +5260,16 @@
   "2ffcb489b37a22c5": {
    "verdict": "ok"
   },
+  "30026cd1e183fc46": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 287): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "30038d5ba67a9da6": {
    "verdict": "ok"
+  },
+  "300ecab5ca2790ee": {
+   "verdict": "ok",
+   "note": "parent: option order rotated for position balance; answer re-derived earlier in this session (conic type from A,C / discriminant; rotation effect; theta from cot 2theta) — Identify the graph of the nondegenerate conic section $16y^2"
   },
   "301074c81e5a4acc": {
    "verdict": "ok"
@@ -4894,6 +5314,10 @@
    "verdict": "ok",
    "note": "Practice #45 (CNXML fs-id1165135154304, (x^3+6x^2+5x+9)/(x^2+1)^2, source solution (x+6)/(x^2+1)+(4x+3)/(x^2+1)^2). Independently solved via x^3+6x^2+5x+9=(Ax+B)(x^2+1)+(Cx+D), expand and compare coefficients (A=1,B=6,C=4,D=3); matches source. Cross-checked as exact-rational identity via node (17 sample points, no real poles). Grader: self=correct, retype-of-printed=form. Note: chose this exercise over the group's fs-id1165135333748 ((x^2+5x+5)/(x+2)^2) and fs-id1165135641578 ((2x-9)/(x^2-x)^2), whose printed denominators are repeated LINEAR factors despite being filed under the 'repeated irreducible quadratic' exercise group — both still algebraically correct as printed, but off-objective; dismissed as Practice candidates for that reason, not as defects."
   },
+  "307edc22d71a641a": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 221): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "3082a3ccddbe68e8": {
    "verdict": "ok"
   },
@@ -4902,6 +5326,10 @@
   },
   "308d022ae773adb1": {
    "verdict": "ok"
+  },
+  "308eeae2505a3ff7": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 41): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "309ade03fe59da3c": {
    "verdict": "ok"
@@ -4986,6 +5414,10 @@
   "318a38883283b229": {
    "verdict": "ok"
   },
+  "318b460ba09692ed": {
+   "verdict": "ok",
+   "note": "r(1+2cosθ)=2 → r=2-2x → square → x²+y²=4-8x+4x² → 3x²-y²-8x+4=0, i.e. 4-8x+3x²-y²=0; matches ti_10_05_04."
+  },
   "31971f50d51763af": {
    "verdict": "ok"
   },
@@ -5002,6 +5434,14 @@
   },
   "31af01ee52ee4cf2": {
    "verdict": "ok"
+  },
+  "31bcacd372ccaaca": {
+   "verdict": "ok",
+   "note": "-1-3-5-7...: a1=-1,d=-2; Sn=-n^2 (closed form); n=8 gives -64 (not <-75), n=9 gives -81 (<-75), so smallest n=9 (node loop); matches CNXML fs-id1165135500068 solution (9 terms)."
+  },
+  "31c78ff35366158c": {
+   "verdict": "ok",
+   "note": "(x^2-11x+28)/(7-x) = (x-4)(x-7)/-(x-7) = -(x-4) = 4-x; at x=7, 4-7=-3; matches CNXML Try It 5 solution."
   },
   "31cbbb56b5abccb3": {
    "verdict": "ok"
@@ -5064,6 +5504,10 @@
   "32355694ba37f044": {
    "verdict": "ok"
   },
+  "32356688dc2589c1": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 550): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "3236049fa1c11d91": {
    "verdict": "ok",
    "note": "parent: t>=0 pin added (errata 57); residual y=5-sqrt(x/2-3) zero for t in 0..3"
@@ -5107,6 +5551,10 @@
   },
   "326cdaaa76620370": {
    "verdict": "ok"
+  },
+  "326f098fac57271c": {
+   "verdict": "ok",
+   "note": "Infinite geometric a1=2,r=1/3; S=a1/(1-r)=3 (node); matches CNXML ti_11_04_12."
   },
   "327078088fa99be8": {
    "verdict": "ok",
@@ -5181,6 +5629,10 @@
   "3364d5f58a7aa1e7": {
    "verdict": "ok"
   },
+  "3366b8cf7278fd38": {
+   "verdict": "ok",
+   "note": "Try It 3: sixth term (r=5) of (3x-y)^9 = C(9,5)*(3x)^4*(-y)^5, BigInt computation = -10206x^4y^5; matches CNXML solution ti_11_06_03."
+  },
   "33671930ef097c2f": {
    "verdict": "ok"
   },
@@ -5191,11 +5643,23 @@
    "verdict": "ok",
    "note": "-540 deg * pi/180 = -3*pi rad"
   },
+  "336f9f59bcfb3002": {
+   "verdict": "ok",
+   "note": "Practice obj3, same equation rotated by theta=60: node -e rotate(1,3*Math.sqrt(3),4,0,1,-2,60) gives Ap=5.5, Cp=-0.5, Dp=sqrt3/2, Ep=0.5, F=-2; x2 -> 11x'^2-y'^2+sqrt3x'+y'-4=0. Matches source's printed solution exactly."
+  },
   "3377cf4814bcee50": {
    "verdict": "ok"
   },
   "337ed0cd7a10e0f1": {
    "verdict": "ok"
+  },
+  "337f62701a483b3d": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 73): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "33881d495cd60628": {
+   "verdict": "ok",
+   "note": "Practice: (4a-b)^3 expanded via Binomial Theorem with BigInt coefficients = 64a^3-48a^2b+12ab^2-b^3; matches CNXML Algebraic exercise fs-id1165137442493."
   },
   "338e775b99746117": {
    "verdict": "ok"
@@ -5257,9 +5721,17 @@
   "343ef4e131244882": {
    "verdict": "ok"
   },
+  "34430ed455735df9": {
+   "verdict": "ok",
+   "note": "TI3: f(x)=(10x+11)/(5x+4), quotient-rule derivative simplifies to -15/(5a+4)^2; confirmed numerically at a=2: node central-difference -0.076530612 vs -15/(14)^2=-0.076530612. Matches source Try It solution."
+  },
   "344c7d52c25dfce1": {
    "verdict": "ok",
    "note": "sec t=-17/8 ⇒ cos t=-8/17; sin²t=1-64/289=225/289, sin t=±15/17; 0<t<π ⇒ sin positive ⇒ 15/17; sqrt(225/289)=0.8823529...=15/17 confirmed numerically"
+  },
+  "345b5892f7caa718": {
+   "verdict": "ok",
+   "note": "-6,-12,-24,-48,-96: ratios all 2 (-12/-6=2, -24/-12=2, -48/-24=2, -96/-48=2) -> geometric. Matches CNXML Algebraic #9 solution."
   },
   "34632770d16e8897": {
    "verdict": "ok"
@@ -5360,6 +5832,10 @@
   "3580c1f5057c9e3a": {
    "verdict": "ok"
   },
+  "358fdc97dacd2ccc": {
+   "verdict": "ok",
+   "note": "As x->0, 2/x grows without bound, so sin(2/x) oscillates over [-1,1] without approaching one value; matches the printed source solution (does not exist)."
+  },
   "35a176f8f073fd49": {
    "verdict": "ok",
    "note": "Denominator (x-3)^2 zero only at x=3; matches CNXML Try It 7."
@@ -5449,6 +5925,10 @@
   "36540c067eb369b5": {
    "verdict": "ok"
   },
+  "365eb882ae13443f": {
+   "verdict": "ok",
+   "note": "Try It 7: P(7,5)=7*6*5*4*3=2520 (node BigInt)."
+  },
   "367817655c931878": {
    "verdict": "ok"
   },
@@ -5511,6 +5991,10 @@
   "36e9a61419f401e3": {
    "verdict": "ok"
   },
+  "36f4a3836d967565": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 818): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "36f8cd577418d333": {
    "verdict": "ok"
   },
@@ -5531,6 +6015,10 @@
   },
   "370a1b0735fa6c48": {
    "verdict": "ok"
+  },
+  "370a7b6bc37dd257": {
+   "verdict": "ok",
+   "note": "a1=-19, iterating an=an-1-1.4 five times -> -19,-20.4,-21.8,-23.2,-24.6 (matches source key)."
   },
   "3717485deb970608": {
    "verdict": "ok"
@@ -5645,6 +6133,10 @@
   "37c607dff1c42c1c": {
    "verdict": "ok"
   },
+  "37cabf8ca175723c": {
+   "verdict": "ok",
+   "note": "slope=+-b/a=+-6/5 -> y=6/5x,y=-6/5x; matches source fs-id2129321."
+  },
   "37d04ecc38fe8fdc": {
    "verdict": "ok",
    "note": "Solved 116=(1/4)(1/8)^x -> x=ln(464)/ln(1/8) computed with node: -2.952660331709191, rounds to -2.953; matches CNXML solution exactly."
@@ -5704,6 +6196,10 @@
   "385e320e49c3feee": {
    "verdict": "ok"
   },
+  "38690daa8bbdcb23": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 215): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "386f0c774249af6e": {
    "verdict": "ok"
   },
@@ -5759,6 +6255,10 @@
   "390071ca4db0517f": {
    "verdict": "ok"
   },
+  "39092cce23d6323f": {
+   "verdict": "ok",
+   "note": "Locally authored notation-reading item on Example 1: f(x) is the expression inside the limit, 2x+5. Verified the full printed span 'lim_{x->3}(2x+5)=11' retyped grades incorrect against the bare answer '2x+5' (checkAnswer -> incorrect), so this is not a retype hazard; no answerForm needed per brief."
+  },
   "392468232143e67a": {
    "verdict": "ok"
   },
@@ -5812,6 +6312,10 @@
   },
   "39757eb744770492": {
    "verdict": "ok"
+  },
+  "397bbd2d3954f2a5": {
+   "verdict": "ok",
+   "note": "r=-16/-32=0.5=1/2; verified forward -32*(1/2)=-16, -16*(1/2)=-8, -8*(1/2)=-4, all match. Recursive formula a_n=(1/2)a_{n-1}. Matches CNXML Algebraic #25 solution."
   },
   "398357eb605b2b68": {
    "verdict": "ok"
@@ -5873,6 +6377,14 @@
   "3a05dff67990b030": {
    "verdict": "ok"
   },
+  "3a0ce19249fa2a12": {
+   "verdict": "ok",
+   "note": "Common ratio of 100,20,4,4/5,... = 20/100 = 1/5, confirmed by dividing every consecutive pair; matches CNXML solution r=1/5."
+  },
+  "3a24f5a3ce6525ca": {
+   "verdict": "ok",
+   "note": "cos with subtraction sign → directrix x=-p; ep=2/3, e=1/3 → p=2, x=-2; matches ti_10_05_01."
+  },
   "3a264d72ab837871": {
    "verdict": "ok"
   },
@@ -5906,6 +6418,10 @@
   "3a605868d0021c50": {
    "verdict": "ok"
   },
+  "3a62b78b880feab4": {
+   "verdict": "ok",
+   "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — Without rotating axes, identify the conic for $10x^2-9xy+4y^"
+  },
   "3a62e46ef33a8d29": {
    "verdict": "ok",
    "note": "acos(-0.2)=1.772154->1.7722, 2pi-1.772154=4.511031->4.5110 (node), period 2pi; representatives in [0,2pi) as pinned. Parent re-derivation after edit."
@@ -5926,8 +6442,16 @@
   "3a932597d5b5989d": {
    "verdict": "ok"
   },
+  "3aaae02066e09857": {
+   "verdict": "ok",
+   "note": "Practice #13 (Algebraic): f(x)=(5-2x)/(3+2x), quotient rule gives f'(x) = [(-2)(3+2x)-(5-2x)(2)]/(3+2x)^2 = -16/(3+2x)^2; confirmed numerically node at x=1: -0.64 matches -16/25=-0.64. Matches source exercise 13 solution."
+  },
   "3ac12c534845a432": {
    "verdict": "ok"
+  },
+  "3acba85d78283c3d": {
+   "verdict": "ok",
+   "note": "a1=1,d=5: iterated by loop -> 1,6,11,16,21."
   },
   "3acc2c5bd86b97e2": {
    "verdict": "ok"
@@ -5981,6 +6505,10 @@
   },
   "3b41b8adc399c925": {
    "verdict": "ok"
+  },
+  "3b45a9eac77a9caa": {
+   "verdict": "ok",
+   "note": "P_5=293*1.026^5=333.1228... (node: 293*Math.pow(1.026,5)=333.1228506), rounds to 333. Matches CNXML solution 'about 333'."
   },
   "3b4d8ad27d1e3a2e": {
    "verdict": "ok",
@@ -6122,6 +6650,10 @@
   "3cda7772a0280011": {
    "verdict": "ok",
    "note": "5x-2y=10 solves to y=2.5x-5; answer {slope:2.5,intercept:-5} matches, derived points grade correct, a sign-flipped-intercept guess grades slopeRight not correct."
+  },
+  "3cde85825c8a19e5": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 557): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "3ce2246a951bd50d": {
    "verdict": "ok"
@@ -6348,6 +6880,10 @@
   "3f6234e56f84ac0f": {
    "verdict": "ok"
   },
+  "3f68d17ef74119f2": {
+   "verdict": "ok",
+   "note": "Try It 8: C(10,3)=120 (node BigInt)."
+  },
   "3f6b66d20de57d25": {
    "verdict": "ok",
    "note": "y=3 horizontal line; answer {y:3} matches and grades correct; this exact task (\"Graph y=3\") is duplicated later on the same page (line ~799) — flagged for parent, not scored as a defect here."
@@ -6481,6 +7017,10 @@
   "40b27f59ef135e17": {
    "verdict": "ok"
   },
+  "40b5627a5263f26d": {
+   "verdict": "ok",
+   "note": "parent re-record after option shuffle: an undefined limit means unbounded outputs or unequal one-sided limits (the module's own Verbal solution); the other three options describe f(c) or the domain, which a limit does not depend on."
+  },
   "40c475824c45d0d9": {
    "verdict": "ok",
    "note": "Try It 1 (ti_09_02_01), CNXML system {2x+y-2z=-1;3x-3y-z=5;x-2y+3z=6}. Independently solved by elimination; substituted (1,-1,1) into all three printed equations via node -e, all true. Matches CNXML solution."
@@ -6532,6 +7072,10 @@
   },
   "41349814ddcf9363": {
    "verdict": "ok"
+  },
+  "4134ddb50a211403": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 529): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "413a0dc7a7069609": {
    "verdict": "ok"
@@ -6655,6 +7199,10 @@
   "422e5d8ef4490ad4": {
    "verdict": "ok"
   },
+  "4230ec28667fb1a6": {
+   "verdict": "ok",
+   "note": "Try It 2, rewrite 13x^2-6sqrt3xy+7y^2=16 without x'y' term. cot(2theta)=(13-7)/(-6sqrt3)=-1/sqrt3 -> theta=60 deg. node -e rotate(13,-6*Math.sqrt(3),7,0,0,-16,60) gives Ap~4, Cp~16, F=-16 -> 4x'^2+16y'^2=16 -> x'^2/4+y'^2/1=1. Matches source solution exactly. Replayed the printed span 13x^2-6sqrt3xy+7y^2=16 against the answer under conic-standard-form: result 'incorrect' (never 'correct'); answer self-grades 'correct'."
+  },
   "423823d9a032c23b": {
    "verdict": "ok"
   },
@@ -6745,6 +7293,14 @@
   "437148c2d37cacb4": {
    "verdict": "ok"
   },
+  "43730a2f8e404dda": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 486): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "437892c2e95a410c": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 618): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "4381f80c427ad109": {
    "verdict": "ok"
   },
@@ -6825,6 +7381,10 @@
   "4438434babdc703a": {
    "verdict": "ok"
   },
+  "443bb7456118bbb3": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 50): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "4442077bf3551ff4": {
    "verdict": "ok"
   },
@@ -6863,6 +7423,10 @@
   },
   "4486e47ffcfaef1d": {
    "verdict": "ok"
+  },
+  "449a2f766b780cb3": {
+   "verdict": "ok",
+   "note": "a_n=(n+1)!/(2n) for n=1..5, computed with BigInt-safe factorials: 1,3/2,4,15,72 (CNXML Try It ti_11_01_09)."
   },
   "449ae4522e7afebc": {
    "verdict": "ok"
@@ -6938,6 +7502,10 @@
   },
   "45019ecb9d6bc360": {
    "verdict": "ok"
+  },
+  "450e9d96cf62a146": {
+   "verdict": "ok",
+   "note": "parent: theta=45 deg rotation of x^2-10xy+y^2-24=0 computed exactly: A'=1/2-5+1/2=-4, C'=1/2+5+1/2=6 -> -4x'^2+6y'^2=24 -> y'^2/4-x'^2/6=1; source answer figure self-inconsistent (errata 62)"
   },
   "451580e4f45a5462": {
    "verdict": "ok",
@@ -7055,6 +7623,10 @@
   "46676476187e2254": {
    "verdict": "ok"
   },
+  "466a7a366f2c7874": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 401): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "46791da6c54a814c": {
    "verdict": "ok",
    "note": "Arguments equal: -2x^2-7x=x-2 => x^2+4x-1=0 => x=-2+/-sqrt5 (approx 0.236, -4.236); domain requires x-2>0 i.e. x>2, neither candidate qualifies, so no solution. Verified numerically; categorical multiplechoice."
@@ -7157,11 +7729,19 @@
   "4732829dff03e7f2": {
    "verdict": "ok"
   },
+  "4735ed12142711d0": {
+   "verdict": "ok",
+   "note": "lim_{x->1}(x^2-1)/(x^2-3x+2) = (x+1)/(x-2) at x=1 = -2 exactly; node-sampled and algebraically simplified; matches the printed solution for fs-id1165137836967 (source exercise 33, printed -2.00)."
+  },
   "473aa0b82c3753b3": {
    "verdict": "ok"
   },
   "4744f10c681809c2": {
    "verdict": "ok"
+  },
+  "474936b32ee053da": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 737): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "4753aff1516d7215": {
    "verdict": "ok"
@@ -7283,6 +7863,10 @@
   "481e199fbdc81654": {
    "verdict": "ok"
   },
+  "4821a67625cc772f": {
+   "verdict": "ok",
+   "note": "a_n=24-4n evaluated at n=1..5 by loop -> 20,16,12,8,4 (matches source key)."
+  },
   "4828566a91c4316a": {
    "verdict": "ok"
   },
@@ -7291,6 +7875,14 @@
   },
   "482d5ac1b8efe630": {
    "verdict": "ok"
+  },
+  "4830ecb53b0368fe": {
+   "verdict": "ok",
+   "note": "Try It 1: 3+4=7, addition principle (disjoint option groups)."
+  },
+  "483a8b694d167b82": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 146): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "4863dcf5730ea69d": {
    "verdict": "ok"
@@ -7305,8 +7897,16 @@
    "verdict": "ok",
    "note": "2x-3y=-9, 5x+4y=58. Solved independently: 4*eq1=8x-12y=-36, 3*eq2=15x+12y=174, sum: 23x=138 -> x=6; back into eq1: 12-3y=-9 -> y=7. Verified against both original equations. Matches CNXML fs-id1165137433552 (6,7)."
   },
+  "4889b0108c272381": {
+   "verdict": "ok",
+   "note": "L=46; independently recomputed 2*5^2-4=46 via node."
+  },
   "488bd523be05165c": {
    "verdict": "ok"
+  },
+  "488c899885195827": {
+   "verdict": "ok",
+   "note": "5,10,15,20: ratios 10/5=2, 15/10=1.5 unequal -> not geometric; matches CNXML solution."
   },
   "488cf398e3cda678": {
    "verdict": "ok"
@@ -7332,6 +7932,10 @@
   },
   "48c71d4bd0501ecb": {
    "verdict": "ok"
+  },
+  "48c7a589e45bbbe6": {
+   "verdict": "ok",
+   "note": "TI8b: same reconstructed graph; not differentiable at x=1 and x=3 (the only discontinuities, no interior corners); matches source Try It solution's stated differentiability intervals exactly."
   },
   "48ce8a6f1c83f525": {
    "verdict": "ok"
@@ -7503,6 +8107,10 @@
   "4a98c956513e4af2": {
    "verdict": "ok"
   },
+  "4a9a6bf0a80ee610": {
+   "verdict": "ok",
+   "note": "pattern-fit to -3/4,-9/8,-27/12,-81/16,-243/20,...; verified -3^n/(4n) reproduces all five terms by loop, -27/12 reduces to -9/4 matching CNXML's unreduced spelling (CNXML Try It ti_11_01_05)."
+  },
   "4ab4fb8958c57c2d": {
    "verdict": "ok",
    "note": "period of A csc(Bx-C) is 2pi/|B|; B=pi/3 gives P=6; matches source's own printed solution (stretching factor 6, period 6)."
@@ -7536,6 +8144,14 @@
   },
   "4b0c1b98668950a7": {
    "verdict": "ok"
+  },
+  "4b16d7ceb0584574": {
+   "verdict": "ok",
+   "note": "Left-hand limit of f(x)=1/x as x->2^- is f(2)=1/2 (the x<=2 branch is itself continuous). Matches source Try It 2 solution."
+  },
+  "4b25cd4e05734260": {
+   "verdict": "ok",
+   "note": "Pendulum: a1=3,r=3/4; S=a1/(1-r)=12 (node); matches CNXML fs-id1165137696127 solution (12 feet)."
   },
   "4b2b66f132497257": {
    "verdict": "ok",
@@ -7571,6 +8187,10 @@
   "4b742116b6580e7e": {
    "verdict": "ok",
    "note": "f(x)=2x^3-6x^2-20x has no constant term, so f(0)=0; y-intercept value is 0. Matches CNXML ti_03_03_06."
+  },
+  "4b75b18b46883a07": {
+   "verdict": "ok",
+   "note": "Practice: fourth term (r=3) of (3x-2y)^5 = C(5,3)*(3x)^2*(-2y)^3, BigInt computation = -720x^2y^3; matches CNXML exercise fs-id1165137696650."
   },
   "4b760ef4ebde2fa6": {
    "verdict": "ok",
@@ -7756,11 +8376,23 @@
   "4d649c01fe8f40a6": {
    "verdict": "ok"
   },
+  "4d8a96e66ea97866": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 539): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "4d8d78236ad38837": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 921): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "4d8eb4e93bcecb32": {
    "verdict": "ok"
   },
   "4da9f6ff87cc7738": {
    "verdict": "ok"
+  },
+  "4db91c2195d34005": {
+   "verdict": "ok",
+   "note": "Practice obj1-3: 4x^2+40x+25y^2-100y+100=0 -> 4(x+5)^2+25(y-2)^2=100 -> (x+5)^2/25+(y-2)^2/4=1; matches CNXML fs-id1364961 solution ((5)^2,(2)^2 denominators); replayed the printed general form through checkAnswer with form:conic-standard-form -> reports form (not correct)."
   },
   "4db963c82daa9531": {
    "verdict": "ok"
@@ -7802,6 +8434,10 @@
   "4e25abac22b1e880": {
    "verdict": "ok",
    "note": "The addition SVG shows a group of 8 unit-block rects, a '+' sign, then a group of 4 unit-block rects: 8+4=12, matching the declared answer."
+  },
+  "4e2971ea7127f3c6": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 339): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "4e31bba84130b414": {
    "verdict": "ok"
@@ -7861,8 +8497,20 @@
   "4eac865a0debef00": {
    "verdict": "ok"
   },
+  "4eb1ae2b89f89232": {
+   "verdict": "ok",
+   "note": "Practice (MC): of the four printed expressions, only (x^3+2y^2-z)^5 has a base with three unlike terms that cannot be rewritten as a binomial (the other three bases are, or reduce to, two-term expressions); matches CNXML solution for exercise fs-id1165137757975."
+  },
+  "4ecbd5d7fe9fc807": {
+   "verdict": "ok",
+   "note": "a_n=4n/(-2)^n for n=1..5, computed by loop: -2,2,-3/2,1,-5/8 (CNXML Try It ti_11_01_02)."
+  },
   "4ecfe758e4f5fad0": {
    "verdict": "ok"
+  },
+  "4eddb597d706676f": {
+   "verdict": "ok",
+   "note": "Latus endpoints share focus x-coord 0; with vertex (-3,-1), p=0-(-3)=3, 4p=12 -> (y+1)^2=12(x+3); matches source exercise fs-id1741214's key exactly. Self-checked correct under the token."
   },
   "4ee36063234ace6a": {
    "verdict": "ok"
@@ -7900,6 +8548,10 @@
   },
   "4f2e1206a8e3b50f": {
    "verdict": "ok"
+  },
+  "4f44b8eb5ae76119": {
+   "verdict": "ok",
+   "note": "d=16-18=-2, constant across 18,16,14,12,10 -> arithmetic, yes."
   },
   "4f5241c6da801556": {
    "verdict": "ok"
@@ -7987,6 +8639,10 @@
   "50215289ec65ba25": {
    "verdict": "ok"
   },
+  "5032f5a5ec73300b": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 128): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "5033ed84dc294eeb": {
    "verdict": "ok"
   },
@@ -8066,6 +8722,10 @@
   "511d39564a4e0c02": {
    "verdict": "ok"
   },
+  "511d8d838d442804": {
+   "verdict": "ok",
+   "note": "C(12,4)=495 (node BigInt); confirmed retyping 'C(12,4)' grades incorrect via checkAnswer."
+  },
   "512378c741ad30fb": {
    "verdict": "ok",
    "note": "asin(0.27)=0.273393->0.2734, pi-0.273393=2.868200->2.8682 (node), period 2pi. Parent re-derivation after edit."
@@ -8075,6 +8735,10 @@
   },
   "513a1b27ac9242af": {
    "verdict": "ok"
+  },
+  "5157b1de78227bf0": {
+   "verdict": "ok",
+   "note": "piecewise n^2/(2n+1) (n<=5) / n^2-5 (n>5) for n=1..8, computed by loop: 1/3,4/5,9/7,16/9,25/11,31,44,59 (source Algebraic #17, printed solution matches; all members under 1000)."
   },
   "515ca4778732243a": {
    "verdict": "ok"
@@ -8184,6 +8848,10 @@
   },
   "52d0c0bcb86a6379": {
    "verdict": "ok"
+  },
+  "52d9bb6dd16b3e8d": {
+   "verdict": "ok",
+   "note": "f(x)={pi*x/4,x<2; pi/x,2<=x<=6; 2*pi*x,x>6}. Checked x=2: left=pi*2/4=pi/2, at-point (2<=x<=6 branch)=pi/2, right-limit=pi/2 -> continuous at 2. Checked x=6: at-point value pi/6, right-limit=2*pi*6=12*pi; pi/6 != 12*pi -> discontinuous only at x=6. Matches source Try It 4 solution 'x=6'; computed with node -e to confirm pi/2 vs pi/6 vs 12pi numerically."
   },
   "52e478d99713dcc6": {
    "verdict": "ok"
@@ -8424,6 +9092,10 @@
   "5561cae963a4b2d3": {
    "verdict": "ok"
   },
+  "556694492633b5d2": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 757): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "5567b6499c68b9c1": {
    "verdict": "ok"
   },
@@ -8479,6 +9151,10 @@
   },
   "55d8a3002ee442b8": {
    "verdict": "ok"
+  },
+  "55dd851bc126b6f5": {
+   "verdict": "ok",
+   "note": "parent: cooling tower a=20 (waist 40 m), top point (30, 30*sqrt5): 900/400 - 4500/b^2 = 1 -> b^2 = 4500/1.25 = 3600 exactly; question now pins the exact height so the rounded 67.082 chain (b^2=3599.9958) cannot mislead"
   },
   "55e58dd20ed0fd04": {
    "verdict": "ok"
@@ -8588,6 +9264,10 @@
   "56c5366de26df85a": {
    "verdict": "ok"
   },
+  "56cf25ef02e6231b": {
+   "verdict": "ok",
+   "note": "directrix x=1>0,e=1 → addition sign: r=1/(1+cosθ); matches Algebraic exercise fs-id1929508."
+  },
   "56d00ebb42a38c27": {
    "verdict": "ok"
   },
@@ -8615,6 +9295,10 @@
   },
   "5715f35a5da2da08": {
    "verdict": "ok"
+  },
+  "571ea0028606a069": {
+   "verdict": "ok",
+   "note": "49x^2+16y^2=784 divided by 784 gives x^2/16+y^2/49=1; matches CNXML fs-id1229749; replayed printed general form 49x^2+16y^2=784 through checkAnswer with form:conic-standard-form -> reports form, confirming the token blocks the retype."
   },
   "571f57775febbc2c": {
    "verdict": "ok"
@@ -8685,6 +9369,10 @@
    "verdict": "ok",
    "note": "0.5 rad/s * 180/pi = 28.64788975654116 deg/s, rounds to 28.65 at 2dp (node computed)"
   },
+  "579b89e841a2dfb3": {
+   "verdict": "ok",
+   "note": "x=8y^2 divided by 8: y^2=(1/8)x; matches source exercise fs-id1938698's key y^2=1/8x. Self-checked correct under answerForm=parabola-standard-form via check-answer.mjs; original span x=8y^2 reports form."
+  },
   "57a41f422a3d1bde": {
    "verdict": "ok"
   },
@@ -8713,8 +9401,16 @@
   "57c93789d1a78554": {
    "verdict": "ok"
   },
+  "57d36a32887553fe": {
+   "verdict": "ok",
+   "note": "String has 12 symbols, #x3 @x2 $x3 %x4; 12!/(3!2!3!4!)=277200 (node BigInt), matches CNXML key ratio (source leaves the quotient unevaluated)."
+  },
   "57dd3a5a1c49d484": {
    "verdict": "ok"
+  },
+  "57de51221757e167": {
+   "verdict": "ok",
+   "note": "Complete the square in y: y^2-6y+9=-12x-21+9 -> (y-3)^2=-12x-12=-12(x+1); matches source exercise fs-id1154421's key exactly (node-verified by expanding back)."
   },
   "57fd10909b29d387": {
    "verdict": "ok"
@@ -8833,6 +9529,10 @@
   "59359392169a8598": {
    "verdict": "ok"
   },
+  "593d31facc209ac3": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 64): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "593f938c8beafdda": {
    "verdict": "ok"
   },
@@ -8906,6 +9606,10 @@
   },
   "5a043f53944ba1b4": {
    "verdict": "ok"
+  },
+  "5a0b391520115bab": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 587): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "5a0f35e5ed1887ef": {
    "verdict": "ok"
@@ -8998,6 +9702,10 @@
   },
   "5ae310f156a14dcc": {
    "verdict": "ok"
+  },
+  "5aea94a410d5ae7b": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 935): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "5b01b7a31174509c": {
    "verdict": "ok"
@@ -9094,6 +9802,10 @@
   "5b938ddb1a537597": {
    "verdict": "ok"
   },
+  "5ba6d5ded2417c63": {
+   "verdict": "ok",
+   "note": "TI1: AROC=(9-1.5)/(-2.5-(-5))=7.5/2.5=3; matches source Try It solution 3."
+  },
   "5baa5acd85d79c74": {
    "verdict": "ok"
   },
@@ -9127,6 +9839,10 @@
   "5c18845593860999": {
    "verdict": "ok"
   },
+  "5c1ac4074b35082a": {
+   "verdict": "ok",
+   "note": "Practice #9 (Algebraic): f(x)=2x^2+x-3, f'(x)=4x+1 by the definition; confirmed numerically node at x=3: 13.0000000027 vs formula 4(3)+1=13. Matches source exercise 9 solution."
+  },
   "5c1d814544942d9e": {
    "verdict": "ok"
   },
@@ -9144,6 +9860,10 @@
   },
   "5c338e511c1eb530": {
    "verdict": "ok"
+  },
+  "5c3ad3d4766d7e16": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L187 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
   "5c3b200fe657ae83": {
    "verdict": "ok"
@@ -9208,6 +9928,10 @@
   "5cea36b0202cd156": {
    "verdict": "ok"
   },
+  "5cf10cf6a29acf4f": {
+   "verdict": "ok",
+   "note": "-1,3,-9,27: r=3/-1=-3, a1=-1, a_n=a1*r^(n-1)=-1*(-3)^(n-1)=-(-3)^(n-1). Matches CNXML solution a_n=-(-3)^{n-1}."
+  },
   "5d00c11f7c7ae3ff": {
    "verdict": "ok"
   },
@@ -9235,12 +9959,20 @@
   "5d43eb7516d6c883": {
    "verdict": "ok"
   },
+  "5d48e613480f6b4e": {
+   "verdict": "ok",
+   "note": "f(x)=sin(12*pi/x); sine is defined and continuous for every real input, and the argument 12*pi/x is undefined only at x=0 -> domain (and continuity interval) is (-infty,0) union (0,infty). Matches source exercise fs-id1165135693795 solution '(-infty,0) union (0,infty)' exactly."
+  },
   "5d4eb2a0c6ff2f70": {
    "verdict": "ok"
   },
   "5d4f5ade58775d85": {
    "verdict": "ok",
    "note": "t=703800000*ln(0.8)/ln(0.5)=226572993.18... rounds to 226572993 years (nearest year, matching the worked Example's own precision)."
+  },
+  "5d50c4f4eff91951": {
+   "verdict": "ok",
+   "note": "TI6a: f(x)=x^3-3x, f(1)=1-3=-2 by direct substitution. Matches source Try It solution's first value (-2)."
   },
   "5d5cbf2333d90322": {
    "verdict": "ok",
@@ -9313,6 +10045,10 @@
   "5e2f798c911d5aaa": {
    "verdict": "ok"
   },
+  "5e31dd13c12e357a": {
+   "verdict": "ok",
+   "note": "f(x)={1/x,x<=2; 9x-11.5,x>2}. f(2)=1/2 exists (Condition 1 holds). left-limit=1/2, right-limit=9*2-11.5=6.5. Unequal -> Condition 2 fails -> not continuous. Matches source Try It 2 solution text (left-hand limit 1/2, right-hand limit 6.5)."
+  },
   "5e38727c7d80458c": {
    "verdict": "ok",
    "note": "y-2x=5, -3y+6x=-15: second equation is -3 times the first (dependent). General solution y=2x+5, i.e. (x,2x+5). Node-verified for a sample x."
@@ -9360,6 +10096,10 @@
   "5ec1a699548cde36": {
    "verdict": "ok"
   },
+  "5ec6f8b33f198892": {
+   "verdict": "ok",
+   "note": "4 sizes * 2 cotton types * 5 colors = 40 (matches CNXML key)."
+  },
   "5ecb8136e7b72704": {
    "verdict": "ok",
    "note": "m=(17-5)/(3-7)=-3, b=5+21=26; key p1279 #5"
@@ -9389,6 +10129,10 @@
   },
   "5f453ec353b4a4fb": {
    "verdict": "ok"
+  },
+  "5f4623dd5153024c": {
+   "verdict": "ok",
+   "note": "Algebraic exercise 31 (fs-id1165135406979): 2*lim f(x) + sqrt(lim g(x)) = 2(3)+sqrt(5) = 6+sqrt(5); matches CNXML solution. Verified via checkAnswer that the abstract symbolic printed subject '2f(x)+\\sqrt{g(x)}' does not grade correct against '6+\\sqrt5' (checkAnswer -> incorrect), so this is not a retype hazard; exact form declared defensively to block a decimal-approximation entry (verified 'form' under exact for a full-precision decimal)."
   },
   "5f48abecb89d0372": {
    "verdict": "ok"
@@ -9437,6 +10181,10 @@
    "verdict": "ok",
    "note": "4*Math.cos(7pi/6)=-3.4641016151377553=-2*sqrt(3); 4*Math.sin(7pi/6)=-1.999999999999999=-2."
   },
+  "5fc06d0af46fd95e": {
+   "verdict": "ok",
+   "note": "Practice obj4-1a: semi-ellipse height 12 (b), span 40 (2a=40,a=20); x^2/400+y^2/144=1; matches CNXML fs-id1377350 solution."
+  },
   "5fc0dd4b06603e5c": {
    "verdict": "ok"
   },
@@ -9454,6 +10202,10 @@
   },
   "5fe467b1a9b4a055": {
    "verdict": "ok"
+  },
+  "5fea268eff908f09": {
+   "verdict": "ok",
+   "note": "a_n=1.25*(-4)^(n-1) for n=1..4, computed by loop: 1.25,-5,20,-80 (source Algebraic #12, printed solution matches)."
   },
   "5ffc00db3fe2dfa0": {
    "verdict": "ok"
@@ -9476,6 +10228,10 @@
   "602e8518dc78d8fb": {
    "verdict": "ok",
    "note": "h(t)=4cos(pi/2 t): amplitude 4, period 2*pi/(pi/2)=4. Matches source exercise #31 solution (amplitude 4, period 4, freq 1/4 Hz). Amplitude and period coincidentally both equal 4 -- verified independently, not a defect."
+  },
+  "6035120d7fae7e74": {
+   "verdict": "ok",
+   "note": "Try It 5: parents on 2 ends (2 ways) times 3! for middle three children = 2*6=12."
   },
   "60355d3f5eb01ef9": {
    "verdict": "ok"
@@ -9535,6 +10291,10 @@
   "60b93b68c24d9e48": {
    "verdict": "ok"
   },
+  "60c27566c9956ec8": {
+   "verdict": "ok",
+   "note": "d=5-3=2, a1=3; a_n=3+2(n-1)=2n+1, matches source key an=1+2n (identical polynomial); replayed the printed span 3,5,7 against key 2n+1 through the real grader -> incorrect, so no retype hazard and no answerForm needed."
+  },
   "60c5afb34ba8f8d0": {
    "verdict": "ok"
   },
@@ -9578,6 +10338,10 @@
   },
   "6138883758bf38fb": {
    "verdict": "ok"
+  },
+  "613fefa770344639": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L373 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
   "6172ec0676337387": {
    "verdict": "ok"
@@ -9668,6 +10432,10 @@
   "62cd2adf62a9ffa8": {
    "verdict": "ok"
   },
+  "62d190004423bbb2": {
+   "verdict": "ok",
+   "note": "2^10=1024 subsets of a 10-element set, matches CNXML key."
+  },
   "62e7ea3593139250": {
    "verdict": "ok"
   },
@@ -9676,6 +10444,10 @@
   },
   "62eaa230ede3e14f": {
    "verdict": "ok"
+  },
+  "62ee0b2d92fe5745": {
+   "verdict": "ok",
+   "note": "a6=25,a8=6.25, r^2=6.25/25=0.25, positive root r=0.5 (question pins positive ratio since r=-0.5 is also mathematically valid). a1=a6/r^5=25/0.03125=800 (node-computed); terms 800,400,200,100,50. Matches CNXML Algebraic #17 solution."
   },
   "62f376a1882b985d": {
    "verdict": "ok"
@@ -9923,6 +10695,10 @@
   "6571ded775d3ad80": {
    "verdict": "ok"
   },
+  "6579313bf5375539": {
+   "verdict": "ok",
+   "note": "parent re-record after option shuffle: average velocity 110/2=55 mi/h over the interval; the 62 mi/h reading at an instant is the instantaneous velocity (source Verbal solution)."
+  },
   "6581397b04197d94": {
    "verdict": "ok"
   },
@@ -9973,6 +10749,10 @@
   "65d96294702db5c6": {
    "verdict": "ok"
   },
+  "65dfcece493ee48a": {
+   "verdict": "ok",
+   "note": "Practice (Graphical, ex.33 analog): the source's <problem> is empty; the figure was reconstructed from a 300dpi crop of the rendered PDF (true page 1240): a piecewise-linear zigzag from open(-4,0) through corners at (-2,2),(0,0),(1,1),(3,-2),(4,0) to open(5,-2), then a disconnected curve starting at open(5,3) rising away -- the only discontinuity is the jump at x=5, matching the source's own printed solution 'Discontinuous at x=5.'"
+  },
   "65e2d952479d8cc9": {
    "verdict": "ok",
    "note": "The plotted line (pixel endpoints (127.1,264.9)-(264.9,127.1) on the same 20px/unit grid) has slope 1 and y-intercept -5, giving x-intercept (5,0) and y-intercept (0,-5), matching the declared answer exactly."
@@ -10009,8 +10789,16 @@
   "662a0c952055c10e": {
    "verdict": "ok"
   },
+  "662a4bc8ebd943b0": {
+   "verdict": "ok",
+   "note": "academia = 8 letters, a x3; 8!/3!=6720 (node BigInt), matches CNXML key."
+  },
   "662c5a751fcf260e": {
    "verdict": "ok"
+  },
+  "662e886a65b678c2": {
+   "verdict": "ok",
+   "note": "a1=5, r=1/5: 5, 5*(1/5)=1, 1*(1/5)=1/5, (1/5)*(1/5)=1/25, (1/25)*(1/5)=1/125. Matches CNXML Algebraic #15 solution."
   },
   "663ecc0b3d18a1ea": {
    "verdict": "ok"
@@ -10055,6 +10843,10 @@
   "66cbadf4a3b9dcfb": {
    "verdict": "ok"
   },
+  "66cbf79a2ef9e5c0": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 425): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "66cc99c847c63274": {
    "verdict": "ok"
   },
@@ -10074,9 +10866,17 @@
   "67043dea35e7abca": {
    "verdict": "ok"
   },
+  "670dbe058c22c03e": {
+   "verdict": "ok",
+   "note": "latus endpoints (h+p,k+2p)=(9,1) and (h+p,k-2p)=(9,-3); matches source TI4."
+  },
   "670f9c3012b4e6dd": {
    "verdict": "ok",
    "note": "Section exercise fs-id1165135176447: k=80/4^2=5, so y=5x^2. Verified with node arithmetic; matches CNXML solution."
+  },
+  "6711fdc88907b5cb": {
+   "verdict": "ok",
+   "note": "1,3,9,27: r=3/1=3, a1=1, a_n=1*3^(n-1)=3^(n-1). Matches CNXML Algebraic #35 solution."
   },
   "6714a187fb5e01f8": {
    "verdict": "ok"
@@ -10207,6 +11007,10 @@
   "6826395cbafd4d9f": {
    "verdict": "ok"
   },
+  "682a5e5a72685d73": {
+   "verdict": "ok",
+   "note": "Practice: first three terms (k=0,1,2) of (a+b)^17 via BigInt Binomial Theorem = a^17+17a^16b+136a^15b^2; matches CNXML exercise fs-id1165137565755."
+  },
   "682c5eea8bdf1007": {
    "verdict": "ok"
   },
@@ -10300,6 +11104,10 @@
    "verdict": "ok",
    "note": "Denominator x^2-1=(x-1)(x+1) zero at x=±1; domain is R minus {-1,1}; matches CNXML source answer 'All reals x≠-1,1'."
   },
+  "69001b62610e26a9": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 729): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "6900d2b9cb446d2c": {
    "verdict": "ok"
   },
@@ -10347,6 +11155,10 @@
   },
   "695bde9b42d608ad": {
    "verdict": "ok"
+  },
+  "695c9ac3d1a6387b": {
+   "verdict": "ok",
+   "note": "Sequence 2,4/3,8/9,16/27,...: first term stated directly, a1=2."
   },
   "695d5deab0d4df3b": {
    "verdict": "ok"
@@ -10562,6 +11374,18 @@
   "6b7bb813b08945a2": {
    "verdict": "ok"
   },
+  "6b8d50b88b35bc12": {
+   "verdict": "ok",
+   "note": "Algebraic exercise 7 (fs-id1165135190687): (x^2-9)/(x-3) = (x-3)(x+3)/(x-3) = x+3; at x=3, 6; matches CNXML solution 6."
+  },
+  "6b919c48d3fd2c3d": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 173): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "6b99024aece83ee1": {
+   "verdict": "ok",
+   "note": "horizontal transverse axis, slope=+-b/a=+-9/12=+-3/4 -> y=3/4x,y=-3/4x; matches source Try It 4."
+  },
   "6b9b715b1be0b13b": {
    "verdict": "ok"
   },
@@ -10638,6 +11462,10 @@
   "6c5126aca473afdc": {
    "verdict": "ok"
   },
+  "6c5ded847706b483": {
+   "verdict": "ok",
+   "note": "Practice obj2-2: 81x^2+49y^2=1 -> x^2/(1/81)+y^2/(1/49)=1; since 1/49>1/81 major axis y, a^2=1/49,a=1/7; vertices (0,+-1/7); matches CNXML fs-id1404169 solution."
+  },
   "6c5ff6a12747ff5b": {
    "verdict": "ok"
   },
@@ -10680,6 +11508,10 @@
   "6ca71a7653339149": {
    "verdict": "ok",
    "note": "Practice (source fs-id1165137898663, park, streets meet 80deg, sides 180ft/215ft): Area=0.5*180*215*sin(80)=19056.03 -> 19,056 sq ft. Matches CNXML answer '19,056 ft2' exactly."
+  },
+  "6cad238bb3b0c625": {
+   "verdict": "ok",
+   "note": "5+4+3=12 distinct objects total, 2^12=4096, matches CNXML key."
   },
   "6cb91531b47b9c7e": {
    "verdict": "ok"
@@ -10806,6 +11638,10 @@
   "6e12d6681107cf8a": {
    "verdict": "ok"
   },
+  "6e12d8a52e2fe391": {
+   "verdict": "ok",
+   "note": "asymptote slope b/a=1 and vertex distance a=5 -> b=5 -> x^2/25-y^2/25=1; matches source fs-id1925599 exactly."
+  },
   "6e1473360de885d9": {
    "verdict": "ok"
   },
@@ -10853,6 +11689,10 @@
   "6e616b4bb34aacbb": {
    "verdict": "ok"
   },
+  "6e624479eda9547f": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 609): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "6e76057d0ffa7622": {
    "verdict": "ok"
   },
@@ -10894,12 +11734,20 @@
   "6ed1d6df0b58e607": {
    "verdict": "ok"
   },
+  "6eeb55d671fdc564": {
+   "verdict": "ok",
+   "note": "(y-3)^2=-12(x+1): h=-1,k=3 -> vertex (-1,3); matches source key V:(-1,3)."
+  },
   "6eec008ef9cd4726": {
    "verdict": "ok"
   },
   "6eef464b1b6a78c1": {
    "verdict": "ok",
    "note": "asin(2/20)=5.7392deg->5.7deg (node); rekeyed 5.7^\\circ with degrees form per source key and corpus convention. Parent re-derivation after edit."
+  },
+  "6ef8b39623444848": {
+   "verdict": "ok",
+   "note": "P(5,2)=5*4=20 (node BigInt); confirmed retyping 'P(5,2)' grades incorrect against 20 via checkAnswer, so no answerForm needed."
   },
   "6f017bb3128a3d77": {
    "verdict": "ok"
@@ -10909,6 +11757,10 @@
   },
   "6f0413e870d9354c": {
    "verdict": "ok"
+  },
+  "6f1ada54306cf3d2": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 33): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "6f212ee3207bbe79": {
    "verdict": "ok",
@@ -10968,18 +11820,34 @@
   "6fc5d301354279f8": {
    "verdict": "ok"
   },
+  "6fdd6320c928bb55": {
+   "verdict": "ok",
+   "note": "20/4=5 and sin(x)/x -> 1 as x->0; independently confirmed by node-sampling f(x)=20sin(x)/(4x) at x=+-0.1,0.01,0.001,0.0001, matching the printed source solution (5)."
+  },
   "6fdfe96f0e587568": {
    "verdict": "ok"
+  },
+  "6fe28c45e3e011e2": {
+   "verdict": "ok",
+   "note": "Locally authored notation-reading item on Example 4: L = 7^5 = 16807, matching Example 4's own worked solution and the CNXML ('16,807')."
   },
   "6ff857969c6e23a6": {
    "verdict": "ok",
    "note": "2^y=1/32=2^-5, so y=-5; matches CNXML Try It 4."
+  },
+  "6ff9b7de5ac5099c": {
+   "verdict": "ok",
+   "note": "a2=4,a3=32: r=32/4=8, a1=4/8=0.5, a6=a1*r^5=0.5*8^5=0.5*32768=16384 (node-computed). Matches CNXML solution a6=16,384."
   },
   "6ffca2c246c4cb93": {
    "verdict": "ok"
   },
   "70047116ea98e06f": {
    "verdict": "ok"
+  },
+  "7011fd28a3200928": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 928): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "70277ed940521965": {
    "verdict": "ok",
@@ -11055,6 +11923,10 @@
   },
   "70f146f253e6b5dc": {
    "verdict": "ok"
+  },
+  "7119403ddb5348dd": {
+   "verdict": "ok",
+   "note": "parent: option order rotated for position balance; answer re-derived earlier in this session (conic type from A,C / discriminant; rotation effect; theta from cot 2theta) — What effect does the $xy$ term have on the graph of a conic "
   },
   "711c3f784f1aa484": {
    "verdict": "ok"
@@ -11146,8 +12018,16 @@
   "71e1167942d18ce5": {
    "verdict": "ok"
   },
+  "71e4e3a1fe32f742": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 303): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "71ed0af84385fe11": {
    "verdict": "ok"
+  },
+  "71f5276fb16f0fb8": {
+   "verdict": "ok",
+   "note": "Two-digit numbers 10-99 containing digit 0: {10,20,...,90} = 9 numbers (script-enumerated), 2^9=512, matches CNXML key."
   },
   "71f5feed2f4678dc": {
    "verdict": "ok",
@@ -11155,6 +12035,10 @@
   },
   "71f61922d9aa1c1e": {
    "verdict": "ok"
+  },
+  "720c83ecb3aa6b49": {
+   "verdict": "ok",
+   "note": "f(x)={x^2+4,x!=1; 2,x=1}. lim_{x->1}(x^2+4)=1+4=5. f(1)=2. 5!=2, limit finite and exists -> removable discontinuity. Matches source exercise fs-id1165135699575 solution exactly."
   },
   "720d7389c3403562": {
    "verdict": "ok"
@@ -11175,6 +12059,10 @@
   "721d2b7a1d2012fe": {
    "verdict": "ok"
   },
+  "72232b8aed0c2d40": {
+   "verdict": "ok",
+   "note": "parent re-record after option shuffle: s(2)=96 is the height after 2 s, 96 ft; -16(4)+80(2)=96 checked."
+  },
   "7223c43eef817da6": {
    "verdict": "ok"
   },
@@ -11192,6 +12080,10 @@
   },
   "723e1f20fba460e4": {
    "verdict": "ok"
+  },
+  "723ede80fff4c344": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 236): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "7242d6b2a35a8a38": {
    "verdict": "ok",
@@ -11258,6 +12150,10 @@
   "733bdce34112c3cd": {
    "verdict": "ok"
   },
+  "733e3b7bd56476a7": {
+   "verdict": "ok",
+   "note": "Practice #27: f(x)=x^3+1 at x=2: f'(x)=3x^2, f'(2)=12; f(2)=9; tangent y=12(x-2)+9=12x-15. Confirmed numerically node slope 11.9999999999, intercept -14.9999999998. Matches source exercise 27 solution y=12x-15."
+  },
   "73477062b611647e": {
    "verdict": "ok",
    "note": "Practice: line through (4,1) at t=0 and (6,-2) at t=1 -> x(t)=4+2t,y(t)=1-3t by linear interpolation; matches CNXML solution exactly."
@@ -11294,6 +12190,10 @@
   "73aea86316661467": {
    "verdict": "ok"
   },
+  "73b4ecc7d584ab8d": {
+   "verdict": "ok",
+   "note": "Opens right y^2=4px with p=320 (focus distance from vertex) -> y^2=1280x; matches source TI6(a) exactly. Exact, no rounding."
+  },
   "73c43d185bddf81f": {
    "verdict": "ok"
   },
@@ -11312,6 +12212,10 @@
   },
   "74025230a1683507": {
    "verdict": "ok"
+  },
+  "74080d116de856c3": {
+   "verdict": "ok",
+   "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — Without rotating axes, identify the conic for $x^2-9xy+3y^2-"
   },
   "741ef79f4a889d15": {
    "verdict": "ok"
@@ -11470,6 +12374,10 @@
   "7598a8ce097a24a5": {
    "verdict": "ok"
   },
+  "759ea5beebb1d109": {
+   "verdict": "ok",
+   "note": "Same ellipse: a^2=49,b^2=16, major axis y, c^2=33,c=sqrt33; foci (0,+-sqrt33); matches CNXML fs-id1229749."
+  },
   "75ac6f2d6fc3a98d": {
    "verdict": "ok"
   },
@@ -11522,6 +12430,10 @@
   },
   "7646fd64415c92a9": {
    "verdict": "ok"
+  },
+  "764b5998c0b621f6": {
+   "verdict": "ok",
+   "note": "6!=720 (source Algebraic #39, printed solution matches). Replayed the printed span 6! against key 720 with form=decimal through check-answer.mjs: reports form, not correct, confirming the retype hazard is closed."
   },
   "764d1dfaff9f7cf7": {
    "verdict": "ok"
@@ -11746,6 +12658,10 @@
   "7878f0992d76788e": {
    "verdict": "ok"
   },
+  "787b88e15648917c": {
+   "verdict": "ok",
+   "note": "Practice #29: f(x)=x^2-kx tangent to y=4x-9. f'(x)=2x-k=4 => x=(4+k)/2; substituting into f(x)=4x-9 and simplifying gives x^2=9, so x=3 or x=-3, giving k=2x-4 = 2 or -10. Confirmed by node solve: k values 2 and -10. Matches source exercise 29 solution k=-10 or k=2 (unordered two-member list, per house convention for a plus-or-minus pair)."
+  },
   "788328af436c67a6": {
    "verdict": "ok"
   },
@@ -11762,6 +12678,10 @@
   },
   "78a3609717c0e282": {
    "verdict": "ok"
+  },
+  "78ab98b1db0cd39a": {
+   "verdict": "ok",
+   "note": "Locally authored notation-reading item on Example 1: L is the evaluated limit, 11, matching Example 1's own worked solution and the CNXML."
   },
   "78b57c410194adf5": {
    "verdict": "ok"
@@ -11855,6 +12775,10 @@
    "verdict": "ok",
    "note": "3x-4y=-9, 5x+3y=14; x3 and x4 make the y-coefficients -12 and +12, adding gives 29x=29, x=1, then y=3. sympy solve returns {x:1, y:3}."
   },
+  "799bc4ce4bb3b878": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 941): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "79a050a296049bc6": {
    "verdict": "ok",
    "note": "5*pi/6 rad = 150 deg, between 90 and 180, terminal side in QII"
@@ -11862,6 +12786,10 @@
   "79af79d559961558": {
    "verdict": "ok",
    "note": "Graph read from source page 469 (crop of exercise 47's figure): vertical asymptote near x=1, curve decreasing, passes through (0,0), and reaches about (-5, 2.6) at its arrow. f(x)=log_2(-(x-1)) satisfies all of this: f(0)=log_2(1)=0, f(-5)=log_2(6)=2.585, asymptote at x=1 (argument -(x-1)=0). Matches CNXML fs-id1165135439871 solution f(x)=log_2(-(x-1))."
+  },
+  "79c7e2a30150ccba": {
+   "verdict": "ok",
+   "note": "sum(-3/8)^k, k=1..inf: a1=r=-3/8; S=a1/(1-r)=-3/11 (node, exact rational); matches CNXML ti_11_04_14/eip-id1387940."
   },
   "79cd93e7139d9203": {
    "verdict": "ok"
@@ -11891,6 +12819,10 @@
   },
   "7a294e1073d4a538": {
    "verdict": "ok"
+  },
+  "7a2a1c54105618c6": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L391 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
   "7a2c4bfd9f1aac25": {
    "verdict": "ok"
@@ -12017,6 +12949,10 @@
   "7af9ac028ae81a22": {
    "verdict": "ok"
   },
+  "7affbce52d5e0777": {
+   "verdict": "ok",
+   "note": "parent re-record after figure fix (straight ray, slope 1/2, from a filled origin, drawn for x>=0 only): no graph left of 0, so the left-hand limit at 0 does not exist."
+  },
   "7b023e63c05b7f2b": {
    "verdict": "ok",
    "note": "node: Math.sqrt(236/129) = 1.35257... -> 1.3526; matches CNXML solution w(t)=129(1.3526)^t."
@@ -12024,6 +12960,10 @@
   "7b07587036fdd615": {
    "verdict": "ok",
    "note": "Practice #15 (fs-id1165135367787): C=[[16,3,7,18],[90,5,3,29]]; -4C computed in Node = [[-64,-12,-28,-72],[-360,-20,-12,-116]], row 1 = -64,-12,-28,-72. Matches CNXML solution exactly."
+  },
+  "7b0dda2afb37a0dd": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, 8.6 parameterize-the-line): x=-2+6t, y=3+4t re-derived by the parent from the printed endpoints ((-2,3) at t=0, (4,7) at t=1); checker-confirmed; matches the printed Answer Key. Re-recorded after the label wording was dropped once the grader learned to read x(t)= labels on list members."
   },
   "7b1734747b3705e2": {
    "verdict": "ok"
@@ -12102,6 +13042,10 @@
   "7bd177a75c0b675b": {
    "verdict": "ok"
   },
+  "7bd181dce37751f5": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 480): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "7bd283e26eae359b": {
    "verdict": "ok"
   },
@@ -12133,11 +13077,19 @@
   "7bff4ccb47e74774": {
    "verdict": "ok"
   },
+  "7c1a242146fc9e65": {
+   "verdict": "ok",
+   "note": "Derived from the recreated figure (module m49454, CNX_Precalc_Figure_12_03_203): open circle at (-1,0) ends the left branch, filled point at (-1,2) begins the right branch (a break at x=-1), a second open circle sits at (1,0) on the continuous right branch (a hole at x=1), and the dashed reference line at x=2 marks the vertical-asymptote reading the source's own solution names. Cross-checked against the printed solution for the companion exercise fs-id1165135693911, which states all three: 'At x=-1, the limit does not exist. At x=1, f(1) does not exist. At x=2, there appears to be a vertical asymptote.' The paired exercise asking only for the x-coordinates (fs-id1165135693895) carries no printed solution in the source, so this fill-in was authored independently from the figure and cross-checked against fs-id1165135693911's text rather than copied from an unverifiable key."
+  },
   "7c20075f111f5d76": {
    "verdict": "ok"
   },
   "7c24e38583e47694": {
    "verdict": "ok"
+  },
+  "7c3b3e7d2997fc42": {
+   "verdict": "ok",
+   "note": "SUSPECTED SOURCE DEFECT, corrected: Algebraic exercise 53 (fs-id1165135417784), f(x)=sqrt(x). Independently derived (sqrt(x+h)-sqrt(x))/h = [(x+h)-x]/[h(sqrt(x+h)+sqrt(x))] = h/[h(sqrt(x+h)+sqrt(x))] = 1/(sqrt(x+h)+sqrt(x)) -- POSITIVE. Confirmed numerically: f=(x)=>Math.sqrt(x); at x=4,h=1e-6, (f(x+h)-f(x))/h ~ 0.24999996..., matching 1/(sqrt(4+h)+sqrt(4)) ~ 0.25 (positive), not -0.25. The pinned CNXML's own printed solution is -1/(sqrt(x+h)+sqrt(x)) (negative) -- confirmed via checkAnswer that the printed unevaluated difference-quotient span grades 'correct' against the POSITIVE key and 'incorrect' against the source's NEGATIVE key, an independent confirmation from the grader's own equivalence engine. Shipped the mathematically correct POSITIVE value as the keyed MC option per the source-fidelity 'provably wrong answer' exception; the source's own (incorrect) negative form is kept as a distractor option. Flagged for the parent to log in docs/openstax-errata.md."
   },
   "7c3daae91eacbe0a": {
    "verdict": "ok"
@@ -12282,6 +13234,14 @@
    "verdict": "ok",
    "note": "theta = 2A/r^2 = 2*150000/400^2 = 300000/160000 = 1.875, rounds to 1.88 at 2dp; matches pinned CNXML solution '1.88' (line 2113)"
   },
+  "7d594a8cac68f8ef": {
+   "verdict": "ok",
+   "note": "pattern-fit to 1,1,4/3,2,16/5,...; verified 2^(n-1)/n reproduces all five terms by loop (source Algebraic #23, printed solution 2^n/(2n) or 2^(n-1)/n, both equal)."
+  },
+  "7d5a2ba0d5f477c5": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 409): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "7d5c32ff9cde1fff": {
    "verdict": "ok"
   },
@@ -12378,12 +13338,20 @@
   "7e35bae1b02c7379": {
    "verdict": "ok"
   },
+  "7e378245e304ae67": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 323): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "7e3801e78141a704": {
    "verdict": "ok",
    "note": "135 deg is QII, reference angle 45 deg, sine positive in QII: sin(135)=sin(45)=sqrt2/2; numerically Math.sin(135*pi/180)=0.7071067811865476"
   },
   "7e3a8223ec9412e4": {
    "verdict": "ok"
+  },
+  "7e4c2c6eea83d5ea": {
+   "verdict": "ok",
+   "note": "parent re-record after option shuffle: lim_{x->a} p(x)=p(a) is the polynomial property in the page's own table; the three distractors name discontinuous cases."
   },
   "7e516bc0e3d87b97": {
    "verdict": "ok"
@@ -12409,6 +13377,10 @@
   },
   "7eac51f3c35aba7d": {
    "verdict": "ok"
+  },
+  "7eacefe5aafbccdc": {
+   "verdict": "ok",
+   "note": "vertices (+-3,0) -> a=3,a^2=9; focus (5,0) -> c=5,c^2=25; b^2=25-9=16 -> x^2/9-y^2/16=1; matches source fs-id1388303."
   },
   "7eae46362ba83697": {
    "verdict": "ok"
@@ -12451,6 +13423,10 @@
   },
   "7efde2d328dca724": {
    "verdict": "ok"
+  },
+  "7f003e4b578fe2f1": {
+   "verdict": "ok",
+   "note": "Focus (0,-4) form (0,p) -> x^2=4py with p=-4 -> x^2=-16y; matches source exercise fs-id1980973's key exactly. Self-checked correct under the token."
   },
   "7f07cd3f1b8e8e24": {
    "verdict": "ok"
@@ -12566,6 +13542,10 @@
   "8057049125f1778c": {
    "verdict": "ok"
   },
+  "80679b15bdda6af9": {
+   "verdict": "ok",
+   "note": "2*6=12, coin outcomes times die outcomes (matches CNXML key)."
+  },
   "8069141488b658fd": {
    "verdict": "ok"
   },
@@ -12574,6 +13554,10 @@
   },
   "8079b473e5a68311": {
    "verdict": "ok"
+  },
+  "808cf7c0901ae454": {
+   "verdict": "ok",
+   "note": "4x^2+y^2-24x+2y+21=0: complete the square, 4(x-3)^2-36+(y+1)^2-1+21=0 -> 4(x-3)^2+(y+1)^2=16 -> (x-3)^2/4+(y+1)^2/16=1; matches CNXML fs-id1388898; replayed printed general form through checkAnswer with form:conic-standard-form -> reports form."
   },
   "80906a1d805c7397": {
    "verdict": "ok"
@@ -12663,6 +13647,10 @@
   "81682006916fef11": {
    "verdict": "ok"
   },
+  "816f7d38331b0f14": {
+   "verdict": "ok",
+   "note": "Practice obj1-2: center(-3,4), vertex(1,4): a=4,a^2=16; focus(-3+2sqrt3,4): c=2sqrt3,c^2=12; b^2=16-12=4; (x+3)^2/16+(y-4)^2/4=1 matches CNXML fs-id1346675 solution."
+  },
   "81767f3310ba4a82": {
    "verdict": "ok"
   },
@@ -12694,6 +13682,10 @@
   },
   "81a97f77e3ddad8b": {
    "verdict": "ok"
+  },
+  "81af574cc4adace4": {
+   "verdict": "ok",
+   "note": "Same chamber: c=sqrt(57600-25600)=sqrt(32000)=178.885...; 2c=357.77...->358 feet; matches CNXML fs-id1403957 part (b); full-precision and rounded-intermediate paths agree (no discrepancy)."
   },
   "81b29506fcd0021a": {
    "verdict": "ok",
@@ -12751,6 +13743,10 @@
   "824076a27feb9ccc": {
    "verdict": "ok"
   },
+  "8242f03ca06f1060": {
+   "verdict": "ok",
+   "note": "a1=0,a2=1,a3=1, a_n=a_(n-1)/a_(n-2)+a_(n-3) for n=4..8, computed with exact-rational tracking: 0,1,1,1,2,3,5/2,17/6 (CNXML Try It ti_11_01_08)."
+  },
   "82555661e0c70e59": {
    "verdict": "ok"
   },
@@ -12760,6 +13756,10 @@
   },
   "825e837d4eb83625": {
    "verdict": "ok"
+  },
+  "8261f1020bb07cb4": {
+   "verdict": "ok",
+   "note": "Complete the square in x: x^2-4x+4=-2y+6+4 -> (x-2)^2=-2y+10=-2(y-5); h=2,k=5,4p=-2->p=-1/2; focus=(h,k+p)=(2,4.5); matches source exercise fs-id1989230's key F:(2,9/2) exactly."
   },
   "8262e371907d8b57": {
    "verdict": "ok"
@@ -12820,6 +13820,14 @@
   "82bd191a58b3db59": {
    "verdict": "ok"
   },
+  "82c343911b8684c4": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L399 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
+  },
+  "82e337a8e08a3b94": {
+   "verdict": "ok",
+   "note": "Annuity a1=200,r=1+0.06/12=1.005,n=120; Sn=32775.8694 (node), rounds to 32775.87; matches CNXML ti_11_04_15."
+  },
   "82eca8120023ad62": {
    "verdict": "ok"
   },
@@ -12878,6 +13886,10 @@
   "8365a40e29cce05f": {
    "verdict": "ok"
   },
+  "8373758565082053": {
+   "verdict": "ok",
+   "note": "Practice obj3-2: same ellipse, a^2=16 (x-term) major axis x, vertices (1+-4,1)=(5,1),(-3,1); matches CNXML fs-id1332813 solution."
+  },
   "8375e97c5579ebba": {
    "verdict": "ok"
   },
@@ -12918,6 +13930,10 @@
   "83ce6ee0e4efcab2": {
    "verdict": "ok"
   },
+  "83d314b4423deddc": {
+   "verdict": "ok",
+   "note": "TI5: s(t)=-16t^2+64t+6, s'(t)=-32t+64, s'(2)=0; confirmed numerically node central-difference at t=2: 0. Matches source Try It solution."
+  },
   "83d825ac0ef3e076": {
    "verdict": "ok",
    "note": "Using the table above (x=0..9; f=7,6,5,8,4,0,2,1,9,3; g=9,5,6,2,1,8,7,3,4,0): g(5)=8, then f(8)=9, so f(g(5))=9, matching the declared answer."
@@ -12938,6 +13954,10 @@
   },
   "83fc5d53284f7408": {
    "verdict": "ok"
+  },
+  "83fe9023dfbc3dfe": {
+   "verdict": "ok",
+   "note": "Algebraic exercise 37 (fs-id1165135449709): piecewise f, x>0 branch is x-3; lim_{x->0+} f(x) = 0-3 = -3; matches CNXML solution -3."
   },
   "84017b05298bbdaa": {
    "verdict": "ok"
@@ -13041,6 +14061,10 @@
   "84c1fdae16b182ef": {
    "verdict": "ok"
   },
+  "84c6ce8d21177434": {
+   "verdict": "ok",
+   "note": "lim_{x->-4}(10x+36)^3 = (-40+36)^3 = (-4)^3 = -64; matches CNXML Try It 4 solution."
+  },
   "84cdb02f607c00b2": {
    "verdict": "ok"
   },
@@ -13106,6 +14130,14 @@
   "8528b1b53a087e83": {
    "verdict": "ok"
   },
+  "852b1750462d385c": {
+   "verdict": "ok",
+   "note": "sum_{k=1}^{8}3^k evaluated by loop = 9840; matches CNXML ti_11_04_07."
+  },
+  "8532e9e5fc818dff": {
+   "verdict": "ok",
+   "note": "d=47-50=-3, a1=50; a_n=50-3(n-1)=53-3n, checked against terms 50,47,44,41 by substitution n=1..4."
+  },
   "853794c12590f522": {
    "verdict": "ok"
   },
@@ -13114,6 +14146,10 @@
   },
   "8538c94994c1d90e": {
    "verdict": "ok"
+  },
+  "853910fa4497eb4a": {
+   "verdict": "ok",
+   "note": "c^2=4+81=85 -> foci (0,sqrt85),(0,-sqrt85); matches source fs-id1688303."
   },
   "853d675df679069c": {
    "verdict": "ok"
@@ -13140,14 +14176,30 @@
    "verdict": "ok",
    "note": "(1/625)^(-x-3)=5^(4x+12); 5^(3-4x-12)=5^3 -> x=-3; key p1316 #39"
   },
+  "8570155870e0d627": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L313 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
+  },
   "85762832f0378b51": {
    "verdict": "ok"
+  },
+  "8579a686c4ee12d7": {
+   "verdict": "ok",
+   "note": "(sqrt(16-h)-4)/h, conjugate: [(16-h)-16]/[h(sqrt(16-h)+4)] = -1/(sqrt(16-h)+4); at h=0, -1/8; matches CNXML Try It 7 solution."
   },
   "857c1af9cc4c4221": {
    "verdict": "ok"
   },
+  "85815d1280a5019b": {
+   "verdict": "ok",
+   "note": "P(11,5)=11*10*9*8*7=55440 (node BigInt); confirmed retyping 'P(11,5)' grades incorrect via checkAnswer."
+  },
   "858c11d8fc627d9a": {
    "verdict": "ok"
+  },
+  "858f5316fca5f585": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L91 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
   "859e5c86d7be8018": {
    "verdict": "ok",
@@ -13228,6 +14280,14 @@
   "864830e043d4b380": {
    "verdict": "ok"
   },
+  "864c25ea5def1e2f": {
+   "verdict": "ok",
+   "note": "parent re-record after adding 'give the exact answer in terms of pi' and answerForm exact: V'(r)=4 pi r^2, V'(3)=36 pi (central difference 113.0973 = 36 pi checked in parent-derive.py)."
+  },
+  "8666b8ce16b2b88b": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 911): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "866aa5e1bb56ff5c": {
    "verdict": "ok"
   },
@@ -13239,6 +14299,10 @@
   },
   "868d11e87d99d7ae": {
    "verdict": "ok"
+  },
+  "8690fa956cfa2dfd": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 797): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "86a5b0a4b78337eb": {
    "verdict": "ok"
@@ -13327,6 +14391,10 @@
    "verdict": "ok",
    "note": "cosθ max=1 at θ=0, so r=3(1)=3 at θ=0; max point (3,0), independently re-derived."
   },
+  "87601234acab3b2e": {
+   "verdict": "ok",
+   "note": "d=37-25=12; recursive rule a_n=a_{n-1}+12 for n>=2, matches source key exactly."
+  },
   "8767293c4a9561a4": {
    "verdict": "ok"
   },
@@ -13341,6 +14409,10 @@
   },
   "879ed02043cc8eab": {
    "verdict": "ok"
+  },
+  "87a186cc3b125c54": {
+   "verdict": "ok",
+   "note": "Arithmetic series a1=13,d=8,an=69,n=8; Sn=328 (node); matches CNXML ti_11_04_03."
   },
   "87b4f5bd8d841f6f": {
    "verdict": "ok"
@@ -13450,6 +14522,10 @@
   "893974823d206b7d": {
    "verdict": "ok"
   },
+  "8945eb50b589e13b": {
+   "verdict": "ok",
+   "note": "Practice obj2, -2x^2+8xy+1=0, theta=45: node -e rotate(-2,8,0,0,0,1,45) gives Ap=3, Bp=2, Cp=-5, F=1 -> 3x'^2+2x'y'-5y'^2+1=0. Matches source's printed solution exactly. Not retype-passable from the printed subject (verified via check-answer.mjs, incorrect)."
+  },
   "89463b1e305acf1b": {
    "verdict": "ok"
   },
@@ -13458,6 +14534,10 @@
   },
   "8949aecb4ab8891e": {
    "verdict": "ok"
+  },
+  "894c8ca5e58a4499": {
+   "verdict": "ok",
+   "note": "Practice obj4, 8x^2+4sqrt2xy+4y^2-10x+1=0: B^2-4AC = (4sqrt2)^2-4(8)(4) = 32-128 = -96. node -e disc(8,4*Math.sqrt(2),4)=-96. Matches source's printed 'B^2-4AC=-96<0, ellipse' (the discriminant value itself, -96, is what this fillin asks for)."
   },
   "8952410a889ddb68": {
    "verdict": "ok"
@@ -13497,6 +14577,10 @@
   "89b50f9708b8d304": {
    "verdict": "ok"
   },
+  "89bcb4ec908a6140": {
+   "verdict": "ok",
+   "note": "f(x)=2x^2+1 is the bare printed expression; node check-answer.mjs confirms the printed \\lim retype grades incorrect against this key."
+  },
   "89bdcd2656da46ae": {
    "verdict": "ok"
   },
@@ -13509,6 +14593,10 @@
   },
   "89d4956867050988": {
    "verdict": "ok"
+  },
+  "89e13eb1e25ebb0e": {
+   "verdict": "ok",
+   "note": "Practice (Extensions): C(n,k)=C(7,2) forces n=7,k=2; term = C(7,2)*(5x)^5*(3y)^2, BigInt computation = 590625x^5y^2; matches CNXML exercise fs-id1165137836673 (printed 590,625x^5y^2)."
   },
   "89e85ade14e2633a": {
    "verdict": "ok"
@@ -13577,6 +14665,10 @@
    "verdict": "ok",
    "note": "Point plot 2i = (0,2); no computation, matches printed coordinates."
   },
+  "8aca4f6044c162d1": {
+   "verdict": "ok",
+   "note": "Practice #19: AROC between (4,-3) and (-2,-1) = (-1-(-3))/(-2-4) = 2/-6 = -1/3; confirmed numerically node -0.3333333333333333. Matches source exercise 19 solution -1/3."
+  },
   "8ad96fbe8924917b": {
    "verdict": "ok",
    "note": "Question rewritten by parent from ASCII to KaTeX; answer unchanged. Decaying 30% per hour means the hourly factor is 0.7, so 125e^{kt}=125(0.7)^t gives k=ln(0.7)=-0.35667494393873245 -> -0.3567 to four decimal places."
@@ -13611,6 +14703,10 @@
    "verdict": "ok",
    "note": "Differences in f(x) are linear in ln(x) (slope ~3 from x=1 to x=10), i.e. concave-down, decelerating growth -- logarithmic; matches CNXML solution."
   },
+  "8b1db3076e119b32": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 352): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "8b2565119ae95651": {
    "verdict": "ok"
   },
@@ -13642,6 +14738,10 @@
   "8b617b7f096d9c7e": {
    "verdict": "ok"
   },
+  "8b66b9197f50c573": {
+   "verdict": "ok",
+   "note": "MC: 'or' of two disjoint events uses the Addition Principle; matches source Section Exercise 3's own explanation."
+  },
   "8b6aa62e51fcd786": {
    "verdict": "ok"
   },
@@ -13667,8 +14767,16 @@
   "8bcc51ab3989e74a": {
    "verdict": "ok"
   },
+  "8bd5258a0d1511bb": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 86): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "8be5f8aa1d970179": {
    "verdict": "ok"
+  },
+  "8be7e95c0f5cb6f7": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L439 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
   "8be8df14136b43a0": {
    "verdict": "ok"
@@ -13686,6 +14794,10 @@
   "8c0891dd719eba4a": {
    "verdict": "ok"
   },
+  "8c10f7aa65ea0e33": {
+   "verdict": "ok",
+   "note": "TI2: f(x)=3x^2+7x, f'(a)=6a+7 by the definition; confirmed numerically, node: (f(2+1e-6)-f(2-1e-6))/2e-6 = 18.999999998 vs 6(2)+7=19. Matches source Try It solution."
+  },
   "8c17c2f26aeb3c65": {
    "verdict": "ok"
   },
@@ -13694,6 +14806,10 @@
   },
   "8c269b13647b0c60": {
    "verdict": "ok"
+  },
+  "8c2cbba8a6d795ff": {
+   "verdict": "ok",
+   "note": "Try It 4: P(5,3)=5*4*3=60 (node BigInt)."
   },
   "8c2e1fcaccdd3819": {
    "verdict": "ok"
@@ -13722,6 +14838,10 @@
   },
   "8c64cab0bd96dd5a": {
    "verdict": "ok"
+  },
+  "8c6715394ace9cb3": {
+   "verdict": "ok",
+   "note": "Try It 6: P(7,7)=7!=5040 (node BigInt)."
   },
   "8c77bf04420fa858": {
    "verdict": "ok",
@@ -13777,6 +14897,10 @@
   "8d19f54753b1ce6e": {
    "verdict": "ok"
   },
+  "8d2f60354f9d576f": {
+   "verdict": "ok",
+   "note": "parent re-record after option shuffle: f'(20)=-10 is a velocity, 10 ft/s westward at t=20 s (source Try It solution d)."
+  },
   "8d303a5aba0209fa": {
    "verdict": "ok"
   },
@@ -13795,6 +14919,10 @@
   },
   "8d5b499c25fcf52e": {
    "verdict": "ok"
+  },
+  "8d6d6cc8e9ff8840": {
+   "verdict": "ok",
+   "note": "r(1+cosθ)=5 → r=5/(1+cosθ), θ=0 → r=5/2, vertex (5/2,0); matches Algebraic 'graph the conic' exercise fs-id1703944 (solution is figure-only in source; vertex independently derived by script)."
   },
   "8d8bcb1b86f335ec": {
    "verdict": "ok"
@@ -13855,6 +14983,10 @@
   },
   "8dfcad40f6fe9357": {
    "verdict": "ok"
+  },
+  "8e0f7d4ef7c0fb04": {
+   "verdict": "ok",
+   "note": "f(x)=(9-x^2)/(x^2-3x) = -(x-3)(x+3)/[x(x-3)] = -(x+3)/x for x!=3,0. f(3) undefined (0 in denominator). lim_{x->3} = -(3+3)/3 = -2, finite -> removable discontinuity at x=3. Matches source Try It 3 solution."
   },
   "8e13f25808f2eff5": {
    "verdict": "ok",
@@ -13926,6 +15058,10 @@
   },
   "8ed1b84e0315c3bb": {
    "verdict": "ok"
+  },
+  "8ee4ee898a287c69": {
+   "verdict": "ok",
+   "note": "As x->0, -1/x^2 -> -infinity, so the inner e^(-1/x^2) -> 0 and the outer exponential -> e^0 = 1; node-sampled confirms f(x)=1.0 at x=+-0.1,...,0.0001; matches the printed solution for fs-id1165137731539 (source exercise 43)."
   },
   "8ef43b9ec03e5e6a": {
    "verdict": "ok"
@@ -14000,6 +15136,10 @@
   "8fb2fce2d30ad17f": {
    "verdict": "ok"
   },
+  "8fb9c69b762de370": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 660): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "8fba45dd057972f8": {
    "verdict": "ok"
   },
@@ -14022,6 +15162,10 @@
   },
   "8ff9dd00cc5eb70f": {
    "verdict": "ok"
+  },
+  "8fff73344645233e": {
+   "verdict": "ok",
+   "note": "24,-12,6,-3: ratio r=-1/2 constant, |r|<1 so geometric and sum defined; matches CNXML ti_11_04_10/eip-827."
   },
   "9006b741c64ece71": {
    "verdict": "ok",
@@ -14098,6 +15242,10 @@
   "90d18ab799fc2d6a": {
    "verdict": "ok"
   },
+  "90d7365bbf5d9ea7": {
+   "verdict": "ok",
+   "note": "a1=3, a_n=-3*a_(n-1) for n=2..5, computed by loop: 3,-9,27,-81,243 (source Algebraic #27, printed solution matches)."
+  },
   "90e817311fa62a41": {
    "verdict": "ok"
   },
@@ -14109,6 +15257,10 @@
   },
   "910134ae1dc73671": {
    "verdict": "ok"
+  },
+  "9105bd75380b76bc": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 167): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "91086374897da618": {
    "verdict": "ok",
@@ -14169,6 +15321,10 @@
   "918877764843d09e": {
    "verdict": "ok"
   },
+  "91baa57135071e65": {
+   "verdict": "ok",
+   "note": "(x-3)^2/25-(y+4)^2/4=1: a=5,b=2, horizontal axis, slope=+-b/a=+-2/5 -> y=2/5(x-3)-4,y=-2/5(x-3)-4; matches source fs-id2301300."
+  },
   "91bc953d90c98a6d": {
    "verdict": "ok"
   },
@@ -14193,6 +15349,10 @@
   "920eef6f1a4496f2": {
    "verdict": "ok"
   },
+  "9210dd1877691133": {
+   "verdict": "ok",
+   "note": "Matches the printed solution for fs-id1165135183014 (-4, source exercise 3); also the authored figure's quadratic y=-2x^2+4 gives f(-2)=-4 (open circle), node-checked."
+  },
   "9216c53bbea9f0a6": {
    "verdict": "ok"
   },
@@ -14212,6 +15372,10 @@
   },
   "922886706fdb6eb1": {
    "verdict": "ok"
+  },
+  "922c6d513f3e3207": {
+   "verdict": "ok",
+   "note": "d=11-6=5, a_n=6+5(n-1)=5n+1; solve 56=5n+1 -> n=11."
   },
   "923d97e8fa5de530": {
    "verdict": "ok"
@@ -14235,6 +15399,10 @@
   },
   "928117d72fb79938": {
    "verdict": "ok"
+  },
+  "928898aa8dd008c0": {
+   "verdict": "ok",
+   "note": "-4x^2+24x+16y^2-128y+156=0: -4(x^2-6x+9)+16(y^2-8y+16)=-156-36+256=64; divide by 64 -> (y-4)^2/4-(x-3)^2/16=1; expanded back and confirmed equal to the original general form; matches source fs-id2272094."
   },
   "928dfbea07dd204d": {
    "verdict": "ok",
@@ -14341,6 +15509,10 @@
   "938359b389c3a2fd": {
    "verdict": "ok"
   },
+  "938f9b8454cf4664": {
+   "verdict": "ok",
+   "note": "Practice obj2-1a: x^2/16+y^2/9=1, a^2=16>b^2=9 major axis x, vertices (+-4,0); matches CNXML fs-id1331349 solution."
+  },
   "93a7d338b99e0319": {
    "verdict": "ok"
   },
@@ -14349,6 +15521,10 @@
   },
   "93b0a90741c4d868": {
    "verdict": "ok"
+  },
+  "93b62d8fb82d9142": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 825): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "93bc66af80bb2057": {
    "verdict": "ok"
@@ -14396,6 +15572,14 @@
   "9413a0726a6a977d": {
    "verdict": "ok"
   },
+  "9421491cae350cef": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 196): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "9421b50c435688d8": {
+   "verdict": "ok",
+   "note": "y^2=(1/8)x: 4p=1/8->p=1/32; focus=(1/32,0); matches source key F:(1/32,0)."
+  },
   "9428186de1653212": {
    "verdict": "ok",
    "note": "Section Exercise 29 part 2: b = 7/tan(30deg) = 7 sqrt3 = 12.1244, computed with node; matches CNXML solution 'b=7 sqrt3'."
@@ -14428,6 +15612,10 @@
   "946f4acc4b0cf6af": {
    "verdict": "ok"
   },
+  "947c913fa12da34d": {
+   "verdict": "ok",
+   "note": "f(x)={3+x,x<1; x,x=1; x^2,x>1}. f(1)=1 (middle piece, Condition 1 holds). left-limit=3+1=4, right-limit=1^2=1. Both exist, unequal -> jump discontinuity. Matches source Algebraic exercise fs-id1165135690280 solution (left-hand limit 4, right-hand limit 1)."
+  },
   "94835ec451370610": {
    "verdict": "ok",
    "note": "node: Math.cos(Math.atan(5/12))=0.9230769230769231=12/13 (5-12-13 triangle)."
@@ -14451,6 +15639,10 @@
   },
   "94aedd46afcf6d3c": {
    "verdict": "ok"
+  },
+  "94b5d9bee855c62f": {
+   "verdict": "ok",
+   "note": "(y+1)^2=4(x-8): h=8,k=-1 -> vertex (8,-1); matches source TI4."
   },
   "94bd92f6e99cbc77": {
    "verdict": "ok"
@@ -14540,6 +15732,10 @@
   "95ad791eb1718cbf": {
    "verdict": "ok"
   },
+  "95bc9f2217de1a0a": {
+   "verdict": "ok",
+   "note": "y^2=-16x: p=-4, directrix x=-p=4; matches source TI1."
+  },
   "95c8c770c6ace167": {
    "verdict": "ok"
   },
@@ -14563,6 +15759,10 @@
   },
   "963a17350bec5956": {
    "verdict": "ok"
+  },
+  "963a471e32e3fb2d": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 628): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "963b01bf302b26c5": {
    "verdict": "ok"
@@ -14599,6 +15799,10 @@
   },
   "968cc9316565fc57": {
    "verdict": "ok"
+  },
+  "969231f0e544e954": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 671): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "969bd4270ebc42e0": {
    "verdict": "ok"
@@ -14731,11 +15935,19 @@
   "977d779c957680b0": {
    "verdict": "ok"
   },
+  "977f2fdec4dc8cbe": {
+   "verdict": "ok",
+   "note": "x^2=8y: p=2, directrix y=-p=-2; matches source TI2."
+  },
   "978211c04b1b4883": {
    "verdict": "ok"
   },
   "97829096d7c0d01f": {
    "verdict": "ok"
+  },
+  "9785ee563efdfa96": {
+   "verdict": "ok",
+   "note": "Practice obj2, 4x^2-xy+4y^2-2=0, theta=45: node -e rotate(4,-1,4,0,0,-2,45) gives Ap=3.5, Cp=4.5, F=-2 -> x2 -> 7x'^2+9y'^2-4=0. Matches source's printed solution '7x'^2+9y'^2-4=0' exactly. Answer self-grades correct; printed subject 4x^2-xy+4y^2-2=0 grades incorrect against it (distinct symbols, not retype-passable)."
   },
   "979fb474cef2a25d": {
    "verdict": "ok"
@@ -14743,12 +15955,20 @@
   "97ab224cf451345a": {
    "verdict": "ok"
   },
+  "97b4c79690db4b90": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 891): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "97c1223dc9c3b53b": {
    "verdict": "ok"
   },
   "97d5943efd34b348": {
    "verdict": "ok",
    "note": "Try It 1 (ti_03_09_01): k=y/x^2=24/9=8/3; y=(8/3)(4^2)=128/3. Verified with node arithmetic; matches CNXML solution."
+  },
+  "97defb8647e47eb8": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 506): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "97ecbc061cf42f56": {
    "verdict": "ok"
@@ -14759,12 +15979,20 @@
   "97f09523b0f0510c": {
    "verdict": "ok"
   },
+  "97f78a4940a44bba": {
+   "verdict": "ok",
+   "note": "Same ellipse: center (h,k)=(3,-1) from standard form derived above; matches CNXML fs-id1388898."
+  },
   "97fc3795e2cca1b8": {
    "verdict": "ok",
    "note": "sqrt(-24)=sqrt(4*6)*sqrt(-1)=2*sqrt(6)*i; independently recomputed, matches CNXML ti_03_01_01."
   },
   "98112310542ccc25": {
    "verdict": "ok"
+  },
+  "9816da0e74e6714d": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 27): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "9818351c32c63a1d": {
    "verdict": "ok",
@@ -14893,6 +16121,10 @@
   },
   "9934670f320b8d04": {
    "verdict": "ok"
+  },
+  "99454feee4906763": {
+   "verdict": "ok",
+   "note": "a1=0,d=2/3: iterated with exact fractions -> 0, 2/3, 4/3, 2, 8/3 (matches source key)."
   },
   "9954618b86401afc": {
    "verdict": "ok"
@@ -15063,6 +16295,10 @@
   "9b15d1ab852aaba3": {
    "verdict": "ok"
   },
+  "9b20f8532ea8a2bc": {
+   "verdict": "ok",
+   "note": "The sqrt branch y=2.828*sqrt(x-2) reaches the filled point (4,4) exactly (2.828*sqrt(2)=4.0, node-checked), matching the printed answer key's parts g/h/i (4, 4, 4)."
+  },
   "9b28314cf638cdb2": {
    "verdict": "ok"
   },
@@ -15080,6 +16316,10 @@
   },
   "9b37e9a0fc15e690": {
    "verdict": "ok"
+  },
+  "9b387c7409c39325": {
+   "verdict": "ok",
+   "note": "a_n=12*(-1/2)^(n-1): n=1..5 gives 12, -6, 3, -1.5, 0.75 (node-computed), i.e. 12,-6,3,-3/2,3/4. Matches CNXML Algebraic #33 solution."
   },
   "9b3a26d563f2e081": {
    "verdict": "ok"
@@ -15205,6 +16445,10 @@
   "9c7d533da9916744": {
    "verdict": "ok"
   },
+  "9c8249828df852d9": {
+   "verdict": "ok",
+   "note": "(x-2)^2/49-(y+7)^2/49=1: center (2,-7), a^2=49 -> a=7 -> vertices (9,-7),(-5,-7); matches source fs-id1636747."
+  },
   "9c82b131937402b9": {
    "verdict": "ok"
   },
@@ -15241,6 +16485,10 @@
   },
   "9cf3186ab3fbecb5": {
    "verdict": "ok"
+  },
+  "9cf535ba231e12b0": {
+   "verdict": "ok",
+   "note": "y^2=-16x: p=-4, latus endpoints (p,2p)=(-4,-8) and (p,-2p)=(-4,8); matches source TI1 exactly."
   },
   "9cfa8c82963693f7": {
    "verdict": "ok"
@@ -15294,6 +16542,10 @@
   "9d619199cd6eaac4": {
    "verdict": "ok"
   },
+  "9d6de5d416bc5bb3": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 653): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "9d73869d7e066741": {
    "verdict": "ok",
    "note": "|A|=1/2=0.5; restated as decimal to avoid retyping the printed 1/2 coefficient (Try It 2 amplitude part)."
@@ -15339,6 +16591,14 @@
   },
   "9db87283547a4ca5": {
    "verdict": "ok"
+  },
+  "9dbae011f9bab2ad": {
+   "verdict": "ok",
+   "note": "lim_{x->-12}(-2x+2) = -2(-12)+2 = 24+2 = 26; matches CNXML Try It 1 solution, confirmed by node arithmetic."
+  },
+  "9dcd359aadef5ff5": {
+   "verdict": "ok",
+   "note": "Figure shows a filled point at (2,-2) (left limit) and a separate open circle at (2,0) (right limit); values differ so the two-sided limit does not exist, matching the printed answer key's parts d/e/f (-2, 0, DNE)."
   },
   "9dce1219fb74d385": {
    "verdict": "ok"
@@ -15456,6 +16716,10 @@
    "verdict": "ok",
    "note": "Domain of any b^x is all reals; (-\\infty,\\infty)."
   },
+  "9eeff276b24d7f46": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L139 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
+  },
   "9ef8e69c3cc58015": {
    "verdict": "ok",
    "note": "Using the same table: f(3)=8, then g(8)=4, so g(f(3))=4, matching the declared answer."
@@ -15492,6 +16756,10 @@
   },
   "9f7d15ff39f31306": {
    "verdict": "ok"
+  },
+  "9f8c5abfa1803a94": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 791): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "9f91026613b1a2f1": {
    "verdict": "ok",
@@ -15534,6 +16802,10 @@
    "verdict": "ok",
    "note": "Practice synthetic-division item 2: ran synthetic division (k=7) on 1,-21,147,-343 in node; quotient x^2-14x+49, remainder 0, matching the CNXML solution (fs-id1165134061948)."
   },
+  "a00da61b3b82cbaa": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 708): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "a0203f7cc099226b": {
    "verdict": "ok"
   },
@@ -15557,6 +16829,10 @@
   },
   "a068cb78128d3513": {
    "verdict": "ok"
+  },
+  "a069b78bfc1856af": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 644): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "a06c605b241d65c0": {
    "verdict": "ok",
@@ -15689,6 +16965,10 @@
   "a2180cb54b7b7856": {
    "verdict": "ok"
   },
+  "a218db8b93d597f9": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 901): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "a21f74e84f18b0f2": {
    "verdict": "ok"
   },
@@ -15700,6 +16980,10 @@
   },
   "a22b94a518d9cb59": {
    "verdict": "ok"
+  },
+  "a232e33c116f9b31": {
+   "verdict": "ok",
+   "note": "(x-2)^2=-2(y-5): h=2 -> axis of symmetry x=h=2; consistent with source key V:(2,5) (axis of symmetry not separately printed in source but follows directly from h)."
   },
   "a23657d9e299bfab": {
    "verdict": "ok"
@@ -15795,6 +17079,10 @@
   "a31c5faef536da9c": {
    "verdict": "ok"
   },
+  "a31cb224de9fc39b": {
+   "verdict": "ok",
+   "note": "d = 16-18 = -2, confirmed by iterating the sequence."
+  },
   "a31ffbd5e8bd09fd": {
    "verdict": "ok"
   },
@@ -15822,6 +17110,10 @@
   "a37133f39df64edc": {
    "verdict": "ok",
    "note": "tan(19pi/12)=tan(285deg)=-tan(75deg)=-(2+sqrt3); Math.tan vs -2-sqrt3 agree to 1e-12."
+  },
+  "a3740c68f0cf7f62": {
+   "verdict": "ok",
+   "note": "a0=10 (starting run time), d=4 (weekly increase); a_n=a0+dn = 10+4n."
   },
   "a37c28e9d1cc164a": {
    "verdict": "ok"
@@ -15881,6 +17173,10 @@
   "a40c6af7d711248e": {
    "verdict": "ok"
   },
+  "a41104c86f6e7b93": {
+   "verdict": "ok",
+   "note": "Try It 1b: C(11,4) computed by BigInt factorial quotient = 330; matches CNXML solution ti_11_06_01(b)."
+  },
   "a41d59e2c5be1dd9": {
    "verdict": "ok"
   },
@@ -15896,6 +17192,10 @@
   "a4401a8d8f154997": {
    "verdict": "ok"
   },
+  "a450ae402b617758": {
+   "verdict": "ok",
+   "note": "Right-hand limit of f(x)=9x-11.5 as x->2^+ = 9(2)-11.5 = 18-11.5 = 6.5. Matches source Try It 2 solution exactly."
+  },
   "a457b693c419faee": {
    "verdict": "ok"
   },
@@ -15907,6 +17207,10 @@
   },
   "a464bd8976e6e0ec": {
    "verdict": "ok"
+  },
+  "a464e119ecb12d64": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 602): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "a46d460e96e2bb25": {
    "verdict": "ok"
@@ -15920,6 +17224,10 @@
   "a48216a8238ef4a4": {
    "verdict": "ok"
   },
+  "a48965c9595a6e5d": {
+   "verdict": "ok",
+   "note": "(x+2)^2=-20(y-3) already standard form: h=-2,k=3 -> vertex (-2,3); matches source TI5."
+  },
   "a49b71afbaca1651": {
    "verdict": "ok"
   },
@@ -15929,11 +17237,19 @@
   "a4a5e7d506da1281": {
    "verdict": "ok"
   },
+  "a4ab1b9fc2958a1d": {
+   "verdict": "ok",
+   "note": "e=1,p=1,x<0 → subtraction: r=1/(1-cosθ); matches ti_10_05_03."
+  },
   "a4ae5bbc85fae327": {
    "verdict": "ok"
   },
   "a4ba50565dfce0f1": {
    "verdict": "ok"
+  },
+  "a4d4466507221c36": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 744): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "a4d96bc88a97583d": {
    "verdict": "ok"
@@ -16062,6 +17378,10 @@
   "a619dcd00744775f": {
    "verdict": "ok"
   },
+  "a61c7e2516e54a21": {
+   "verdict": "ok",
+   "note": "Locally authored notation-reading item on Example 4 (lim_{x->2}(3x+1)^5=16,807): a=2, printed under the lim."
+  },
   "a61f2dd47ec80054": {
    "verdict": "ok"
   },
@@ -16093,6 +17413,10 @@
   "a65fd0caaf0784b9": {
    "verdict": "ok",
    "note": "240 deg is in QIII (180<240<270), reference angle = 240-180 = 60 deg"
+  },
+  "a6624b6c072968bc": {
+   "verdict": "ok",
+   "note": "TI6b: f(x)=x^3-3x, f'(x)=3x^2-3, f'(0)=-3 by direct substitution; confirmed numerically node central-difference -2.9999999999990004. Matches source Try It solution's fourth value (-3)."
   },
   "a669bfb3d1c7baec": {
    "verdict": "ok",
@@ -16152,6 +17476,10 @@
   "a6c9b15cd37cc845": {
    "verdict": "ok"
   },
+  "a6cf97bd42b8a4ea": {
+   "verdict": "ok",
+   "note": "-0.125,0.25,-0.5,1,-2: ratios all -2 (0.25/-0.125=-2, -0.5/0.25=-2, 1/-0.5=-2, -2/1=-2). Matches CNXML Algebraic #7 solution r=-2."
+  },
   "a6e01d9523acd466": {
    "verdict": "ok"
   },
@@ -16174,6 +17502,10 @@
   },
   "a70a136d2cc80713": {
    "verdict": "ok"
+  },
+  "a70ba0b748db28f1": {
+   "verdict": "ok",
+   "note": "Annuity a1=150,r=1+0.03/12=1.0025,n=24; Sn=3705.4227 (node), rounds to 3705.42; matches CNXML fs-id1165135205791 solution (3,705.42)."
   },
   "a70f2b394b32f9d2": {
    "verdict": "ok",
@@ -16278,6 +17610,10 @@
   "a7d9dfd3e4a3c65a": {
    "verdict": "ok"
   },
+  "a7dc5ba7c82508a8": {
+   "verdict": "ok",
+   "note": "(6-x)/|x-6| as x->6+: x-6>0 so |x-6|=x-6, giving -(x-6)/(x-6)=-1; matches CNXML Try It 9 solution. MC because one-sided notation is unparseable and the answer is graded categorically."
+  },
   "a7df7866b2bbcf3f": {
    "verdict": "ok"
   },
@@ -16296,6 +17632,18 @@
   },
   "a7f887823c37b167": {
    "verdict": "ok"
+  },
+  "a806657428566694": {
+   "verdict": "ok",
+   "note": "(x-4)^2/36+(y-2)^2/20=1: center (h,k)=(4,2) read directly from standard form; matches CNXML fs-id1361228."
+  },
+  "a81d80afc006bab6": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 79): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "a81f515e11255c34": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 857): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "a824cf5ce796fe5e": {
    "verdict": "ok"
@@ -16317,11 +17665,19 @@
   "a84cdf057dbf53f9": {
    "verdict": "ok"
   },
+  "a851ca1b1537bc69": {
+   "verdict": "ok",
+   "note": "y=-4x^2 divided by -4: x^2=-(1/4)y; matches source exercise fs-id2195621's key x^2=-1/4y. Self-checked correct under the token; original span reports form."
+  },
   "a85cc807caafe9c3": {
    "verdict": "ok"
   },
   "a86d91b02198576e": {
    "verdict": "ok"
+  },
+  "a886d8947ea41bcb": {
+   "verdict": "ok",
+   "note": "Derived from the recreated Figure 15-style graph (module m49454, CNX_Precalc_Figure_12_03_201): at x=-3 the left curve piece ends in an open circle and a separate filled point sits above it, giving f(-3) defined (Condition 1) but the left- and right-hand limits at -3 unequal (Condition 2 fails, so Condition 3 also fails) -> '1, but not 2 or 3'. Matches the source's own solution for this x-value (fs-id1165135693540)."
   },
   "a88c06cb4f7f7db1": {
    "verdict": "ok"
@@ -16384,6 +17740,10 @@
   "a900478c128a8c24": {
    "verdict": "ok"
   },
+  "a9100d60f298637f": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 317): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "a922832eb7a6513a": {
    "verdict": "ok",
    "note": "option III is the recreated cotangent shape (decreasing branches, asymptotes at 0 and pi); matches source's printed answer 'III' for f(x)=cot x in the graph-matching exercise; all four option specs independently rendered and visually distinguished via svgshot."
@@ -16391,12 +17751,20 @@
   "a925fb4dbc4c1fb4": {
    "verdict": "ok"
   },
+  "a92d4a8bbb53d7ea": {
+   "verdict": "ok",
+   "note": "lim_{x->-1}(x^4-4x^3+5) = 1-4(-1)+5 = 1+4+5 = 10; matches CNXML Try It 3 solution."
+  },
   "a92d5fc1fb4cc977": {
    "verdict": "ok",
    "note": "cos(pi/2)=0=sin(0deg); cofunction 90-90=0; key p1325 #41 \"0\""
   },
   "a92ea734546044ef": {
    "verdict": "ok"
+  },
+  "a92f0e65c9663dcb": {
+   "verdict": "ok",
+   "note": "c^2=9+16=25 -> c=5 -> foci (6,2),(-4,2); matches source fs-id2609263."
   },
   "a92f7ca28ff1be13": {
    "verdict": "ok"
@@ -16481,6 +17849,10 @@
   "aa13150ee4742ec4": {
    "verdict": "ok"
   },
+  "aa173196d44b3738": {
+   "verdict": "ok",
+   "note": "lim_{x->1}(10-10x^2)/(x^2-3x+2) = -10(1+x)/(x-2) at x=1 = 20 exactly; node-sampled and algebraically simplified; matches the printed solution for fs-id1165137770148 (source exercise 35, printed 20.00)."
+  },
   "aa2bb4548b67bfde": {
    "verdict": "ok",
    "note": "Using the same endpoints (-4,-3) and (-10,-11) given in the text, the midpoint is ((-4-10)/2,(-3-11)/2) = (-7,-7), matching the declared answer exactly."
@@ -16512,6 +17884,10 @@
   "aa63b1dedbb96dd6": {
    "verdict": "ok",
    "note": "Domain of log(x-5)+2: solve x-5>0 -> x>5 -> (5,inf). Matches CNXML ti_04_04_02 solution."
+  },
+  "aa65f1ffd6a11fc8": {
+   "verdict": "ok",
+   "note": "d=26-17=9; recursive rule a_n=a_{n-1}+9 for n>=2, matches source key exactly."
   },
   "aa82fcee747ac397": {
    "verdict": "ok"
@@ -16562,6 +17938,10 @@
   },
   "aafbe7fa5ed438fe": {
    "verdict": "ok"
+  },
+  "ab000ea458367231": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 364): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "ab02bf99d3244115": {
    "verdict": "ok"
@@ -16783,6 +18163,10 @@
   "acd1a40bb78d876e": {
    "verdict": "ok"
   },
+  "acd6e7697d0a9036": {
+   "verdict": "ok",
+   "note": "Algebraic exercise 39 (fs-id1165135415855): left branch at x=0 gives 2(0)^2+2(0)+1=1, right branch gives 0-3=-3; 1 != -3 so the two-sided limit does not exist because the one-sided limits disagree; matches CNXML solution wording exactly ('does not exist; right-hand limit is not the same as the left-hand limit'). Distractors: f(0)=1 misconception (limit=f(0)), unbounded-near-0 mischaracterization (contrasts with exercise 13's correct unbounded case), and a one-branch-only misconception."
+  },
   "acd6ee43c93e9a8d": {
    "verdict": "ok"
   },
@@ -16821,8 +18205,16 @@
   "ad1a271d9261e795": {
    "verdict": "ok"
   },
+  "ad222de4c1a1e846": {
+   "verdict": "ok",
+   "note": "Matches the printed solution for fs-id1165135181688 (does not exist, source exercise 9): the figure's left branch approaches 2 at x=1 while the right branch (sqrt curve) starts at an open circle at 0, so the two-sided limit does not exist."
+  },
   "ad332becea12c309": {
    "verdict": "ok"
+  },
+  "ad3472aef772f94b": {
+   "verdict": "ok",
+   "note": "same equation, e=1/3 (node: e=0.333…, ep=2/3, p=2); matches ti_10_05_01 solution."
   },
   "ad55d6ba3c2ffde7": {
    "verdict": "ok"
@@ -16842,11 +18234,19 @@
   "ad7246240e6da16e": {
    "verdict": "ok"
   },
+  "ad82c6af53a7c327": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 202): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "ad83d454b7392f53": {
    "verdict": "ok"
   },
   "ad8e802b1db05b70": {
    "verdict": "ok"
+  },
+  "ad8f306db6f76ba4": {
+   "verdict": "ok",
+   "note": "diffs of 1,3,6,10,15 are 2,3,4,5 (not constant) -> not arithmetic, no."
   },
   "ad9ba39b513211cd": {
    "verdict": "ok"
@@ -17014,14 +18414,26 @@
   "af1b6439cc8f528d": {
    "verdict": "ok"
   },
+  "af1bb4b60e8d31a8": {
+   "verdict": "ok",
+   "note": "Correct option paraphrases the printed solution for fs-id1165137810884: f(a) is the actual output at x=a, while the limit describes the value f(x) approaches near a without ever using x=a itself."
+  },
   "af24a08d00807b5b": {
    "verdict": "ok"
   },
   "af2a6f2049335776": {
    "verdict": "ok"
   },
+  "af342368660065cc": {
+   "verdict": "ok",
+   "note": "1/3,1/2,3/4,9/8: ratio r=3/2 constant (checked all three consecutive ratios), |r|>1 so geometric but sum not defined; matches CNXML fs-id1165135497153."
+  },
   "af3e7e4555ccb895": {
    "verdict": "ok"
+  },
+  "af3f3b7969800864": {
+   "verdict": "ok",
+   "note": "P(15,9)=1,816,214,400 (node BigInt fact(15)/fact(6)), matches CNXML key."
   },
   "af5a472b43275589": {
    "verdict": "ok"
@@ -17071,11 +18483,23 @@
   "afeca79d27ecddc9": {
    "verdict": "ok"
   },
+  "aff016a0397d1a65": {
+   "verdict": "ok",
+   "note": "Practice obj3, x^2+3sqrt3xy+4y^2+y-2=0: cot(2theta)=(1-4)/(3sqrt3)=-1/sqrt3, and since cot(2theta)<0 the section's own convention puts theta in (45,90); 2theta=120 gives theta=60 deg, matching source's printed 'theta=60 deg'."
+  },
   "aff496b102d79093": {
    "verdict": "ok"
   },
+  "b01235feebfde159": {
+   "verdict": "ok",
+   "note": "Practice obj1-1: point (5,0) gives b^2=25; focus (0,-2) gives c^2=4; c^2=a^2-b^2 => a^2=29; x^2/25+y^2/29=1. Node: 25+4=29. Independently derived from CNXML fs-id1374803/fs-id1304004's printed data (source solution: x^2/25+y^2/29=1)."
+  },
   "b031cc8800b8fe7c": {
    "verdict": "ok"
+  },
+  "b047e28e9094b37d": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 596): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "b055c6f35ebcb513": {
    "verdict": "ok"
@@ -17180,6 +18604,10 @@
   "b1237c84c0af0b6e": {
    "verdict": "ok"
   },
+  "b12e091a2cca4c29": {
+   "verdict": "ok",
+   "note": "vertical transverse axis (y-term positive), a^2=100 -> a=10 -> vertices (3,-4+-10)=(3,6),(3,-14); matches source Try It 5."
+  },
   "b132decd6baa11d5": {
    "verdict": "ok"
   },
@@ -17208,6 +18636,10 @@
   "b18c259e65064855": {
    "verdict": "ok",
    "note": "-300 + 360 = 60 deg, within [0,360)"
+  },
+  "b19abd0bce91b1a2": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 693): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "b1a03cc514660de2": {
    "verdict": "ok",
@@ -17252,6 +18684,10 @@
   },
   "b1ea8d31ad70d0a2": {
    "verdict": "ok"
+  },
+  "b1eb32782793d057": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L421 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
   "b1f0226f3204412f": {
    "verdict": "ok"
@@ -17341,8 +18777,16 @@
   "b3252594981221f4": {
    "verdict": "ok"
   },
+  "b3288a858007d976": {
+   "verdict": "ok",
+   "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — Which conic section is represented by $4x^2-y^2+8x-1=0$?"
+  },
   "b32b7efa8a442884": {
    "verdict": "ok"
+  },
+  "b32f722deb0c5cb5": {
+   "verdict": "ok",
+   "note": "a_n=n!/n^2 for n=1..4, computed with BigInt-safe factorials: 1,1/2,2/3,3/2 (source Algebraic #43, printed solution matches)."
   },
   "b33220ae0da2e555": {
    "verdict": "ok"
@@ -17350,6 +18794,10 @@
   "b33b65bc109c5896": {
    "verdict": "ok",
    "note": "Section Exercises Algebraic #11 (fs-id1165137823124), system {3x-4y+2z=-15;2x+4y+z=16;2x+3y+5z=20}. Independently solved by elimination and confirmed via node that (-1,4,2) satisfies all three equations exactly. Matches CNXML solution."
+  },
+  "b3416b01888bd188": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 777): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "b341ae0c030c7d58": {
    "verdict": "ok"
@@ -17473,6 +18921,10 @@
   },
   "b4592cd0742c9fb7": {
    "verdict": "ok"
+  },
+  "b45b5f0c2ae2ca26": {
+   "verdict": "ok",
+   "note": "r=2/(3-cosθ) ÷3 → 2/3 over 1-(1/3)cosθ, e=1/3<1 → ellipse; matches CNXML Try It ti_10_05_01."
   },
   "b4640ff1142a1ece": {
    "verdict": "ok"
@@ -17769,6 +19221,10 @@
   "b712d9e4dc252698": {
    "verdict": "ok"
   },
+  "b71d245151f9d2bc": {
+   "verdict": "ok",
+   "note": "(x-3)/(sqrt(x)-sqrt(3)), conjugate: (x-3)(sqrt(x)+sqrt(3))/(x-3) = sqrt(x)+sqrt(3); at x=3, 2*sqrt(3); matches CNXML Try It 8 solution. Confirmed exact-radical rejects the printed lim retype (checkAnswer -> 'form') and self-grades correct."
+  },
   "b729348f78d588a0": {
    "verdict": "ok"
   },
@@ -17985,8 +19441,16 @@
   "b92612453f603fbc": {
    "verdict": "ok"
   },
+  "b926eb1500a70a95": {
+   "verdict": "ok",
+   "note": "Try It 1: a^2=16 (foci/vertices on y-axis), c^2=15, b^2=a^2-c^2=1; x^2/1+y^2/16=1 matches CNXML solution fs-id1376848; independently re-derived, not copied."
+  },
   "b92c6d3081880cf0": {
    "verdict": "ok"
+  },
+  "b932cde3da8786d8": {
+   "verdict": "ok",
+   "note": "Try It 2a: (x-y)^5 expanded term-by-term via Binomial Theorem with BigInt coefficients = x^5-5x^4y+10x^3y^2-10x^2y^3+5xy^4-y^5; matches CNXML solution ti_11_06_02(a)."
   },
   "b93ad2c87e332280": {
    "verdict": "ok"
@@ -18000,6 +19464,10 @@
   "b95556e8f3bbde10": {
    "verdict": "ok",
    "note": "Range of y=arccos x is [0,π] by definition (arccos's range equals cos's restricted domain); matches source."
+  },
+  "b95950246d52d97a": {
+   "verdict": "ok",
+   "note": "h=8,k=-1,4p=4->p=1; focus=(h+p,k)=(9,-1); matches source TI4."
   },
   "b95b3cce9430328d": {
    "verdict": "ok"
@@ -18088,6 +19556,10 @@
   },
   "ba52c50cd0ae08fd": {
    "verdict": "ok"
+  },
+  "ba59525dc6dc7209": {
+   "verdict": "ok",
+   "note": "x=40: 1600=-125(y-20) -> y=20-1600/125=20-12.8=7.2; matches source key 'height is 7.2 feet' exactly. Exact terminating decimal, no rounding divergence."
   },
   "ba8346b03ec10d8f": {
    "verdict": "ok"
@@ -18248,6 +19720,10 @@
   "bc00350c38025aee": {
    "verdict": "ok"
   },
+  "bc0439fdbff20f13": {
+   "verdict": "ok",
+   "note": "recursive rule for -8,-6,-3,1,6,...; verified by loop that a_n=a_(n-1)+n for n=2..5 reproduces -6,-3,1,6 from a_1=-8 (source Algebraic #35, printed solution matches); replayed a_n=a_(n-1)+n against itself through check-answer.mjs (self-grades correct) and against a shifted-index alternative (grades incorrect), confirming the pinned-shape wording is load-bearing."
+  },
   "bc082d3c8df6b3b7": {
    "verdict": "ok"
   },
@@ -18295,6 +19771,10 @@
   "bc8809c8275cfec1": {
    "verdict": "ok"
   },
+  "bc898dc14958ea5d": {
+   "verdict": "ok",
+   "note": "x^2/9-y^2/25=1: a^2=9 -> a=3 -> vertices (3,0),(-3,0); matches source Try It 1."
+  },
   "bc8c49114ba57b96": {
    "verdict": "ok"
   },
@@ -18331,6 +19811,10 @@
   "bcc1dafb7b5c0108": {
    "verdict": "ok",
    "note": "The relation given in the immediately preceding text, {(-3,27),(-2,8),(-1,1),(0,0),(1,1),(2,8),(3,27)}, has seven distinct x-values (-3,-2,-1,0,1,2,3) each appearing exactly once, so it is a function; 'yes' is correct."
+  },
+  "bcc2cf955bafa780": {
+   "verdict": "ok",
+   "note": "r=5/(1+2sinθ) already standard (denominator constant 1), e=2, ep=5 → p=5/2; sin+addition sign → directrix y=p=5/2. Matches Algebraic exercise fs-id2920062 (CNXML solution: 'Hyperbola with e=2 and directrix 5/2 units above the pole')."
   },
   "bcc799b637805eb2": {
    "verdict": "ok",
@@ -18380,11 +19864,27 @@
   "bd465d328b5b5abd": {
    "verdict": "ok"
   },
+  "bd491c03eb78c749": {
+   "verdict": "ok",
+   "note": "0.4-2+10-50+...: a1=0.4,r=-5,n=7; Sn=5208.4 (node); matches CNXML fs-id1165137784642 solution."
+  },
   "bd4f6fc45ec7169d": {
    "verdict": "ok"
   },
+  "bd5c1e564ffb2e6f": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 766): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "bd5eb1cb99ddac44": {
    "verdict": "ok"
+  },
+  "bd6f7905b534973f": {
+   "verdict": "ok",
+   "note": "c^2=4+16=20 -> c=2sqrt5 -> foci (3,4+2sqrt5),(3,4-2sqrt5); matches source fs-id2272094."
+  },
+  "bd703c5c381002e4": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L241 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
   "bd832485cb79f37a": {
    "verdict": "ok"
@@ -18419,6 +19919,10 @@
   },
   "bdc2d42e3071f9f6": {
    "verdict": "ok"
+  },
+  "bdcdcddebb223e33": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L366 of 04-series-and-their-notations.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
   "bde8a19c78eca91a": {
    "verdict": "ok"
@@ -18489,6 +19993,10 @@
   "be7644bf81257e86": {
    "verdict": "ok"
   },
+  "be7a39e1ebf30f44": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 242): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "be7d2e111cd265a3": {
    "verdict": "ok"
   },
@@ -18508,6 +20016,10 @@
   },
   "be8c862d45bdde0f": {
    "verdict": "ok"
+  },
+  "be9068d392534aa0": {
+   "verdict": "ok",
+   "note": "Practice #7 (Algebraic): f(x)=-2x+1, f'(x)=-2 by the definition (linear function, constant derivative equal to its slope); confirmed numerically node -2.000000000279556. Matches source exercise 7 solution."
   },
   "be92b79459b241b6": {
    "verdict": "ok"
@@ -18732,6 +20244,10 @@
    "verdict": "ok",
    "note": "Re-derived each target: f(x)=2^(x-1)+3 gives f(0)=2^-1+3=3.5, f(1)=2^0+3=4, f(2)=2+3=5, f(3)=4+3=7, f(4)=8+3=11; all five on the 0.5 snap lattice and inside [-4,6]x[-1,12]. Matches source Try It (m49362) 'Graph f(x)=2^(x-1)+3'."
   },
+  "c08087b4b39a03d4": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 395): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "c0871c6f9d9b6879": {
    "verdict": "ok"
   },
@@ -18861,6 +20377,10 @@
   "c19cfc2776c234c8": {
    "verdict": "ok"
   },
+  "c1a1b544cb83da0c": {
+   "verdict": "ok",
+   "note": "parent converted fillin to MC (the engine grades x+2 and any hole-shifted quotient equal to the key): the graph is the line y=x+2 (slope 1, y-intercept 2 from the spec) with a hole at x=-3, so (x^2+5x+6)/(x+3)=(x+2)(x+3)/(x+3) is the only option undefined at -3 with that line; (x^2+x-6)/(x-2) has its hole at 2, x+2 has none, (x^2+5x+6)/(x+2) reduces to x+3."
+  },
   "c1a3d794fb17cbbc": {
    "verdict": "ok",
    "note": "-2x+5y=-42, 7x+2y=30 -> elimination gives x=6, y=-6. Node-verified both equations."
@@ -18879,6 +20399,10 @@
   },
   "c1d2b8abc067f6fc": {
    "verdict": "ok"
+  },
+  "c1de4010e1eacd87": {
+   "verdict": "ok",
+   "note": "Practice obj2-1b: same ellipse, c^2=16-9=7,c=sqrt7; foci (+-sqrt7,0); matches CNXML fs-id1331349 solution."
   },
   "c1de9342e0393374": {
    "verdict": "ok"
@@ -18996,6 +20520,10 @@
   "c2e541aa7aad9824": {
    "verdict": "ok"
   },
+  "c2e88dc65234452f": {
+   "verdict": "ok",
+   "note": "Practice obj4-2: a=60 (half of 120), c=30; b=sqrt(3600-900)=sqrt2700=30sqrt3=51.9615...->51.96; matches CNXML fs-id1352120 solution 'Approximately 51.96 feet'."
+  },
   "c2f4a4f4c036f43c": {
    "verdict": "ok"
   },
@@ -19080,6 +20608,10 @@
   },
   "c3d38c3daa87b09d": {
    "verdict": "ok"
+  },
+  "c3d56f5b873b515c": {
+   "verdict": "ok",
+   "note": "Algebraic exercise 13 (fs-id1165135190770): (x^2+2x-3)/(x-3) = (x+3)(x-1)/(x-3); numerator at x=3 is 6*2=12 (nonzero) while denominator -> 0, so the expression is unbounded near x=3 and the limit does not exist; matches CNXML solution 'does not exist'. Distractors include a mischaracterization (finite-but-unequal one-sided limits, contrasting with exercise 39's correct case of that kind) and numeric misreads (12 from the numerator alone, 0 from the denominator)."
   },
   "c3d5e371ef4e37dd": {
    "verdict": "ok"
@@ -19217,6 +20749,10 @@
   "c527b759f143d786": {
    "verdict": "ok"
   },
+  "c531c2c5fdc83c4f": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 228): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "c53687c0cc3d8c9c": {
    "verdict": "ok",
    "note": "k=36/9=4, y=4*16=64; key p1298 #49"
@@ -19321,6 +20857,10 @@
   "c62a292bcebf4e20": {
    "verdict": "ok",
    "note": "Reflection about y-axis of f(x)=1.25^x replaces x with -x: g(x)=1.25^{-x}, matches CNXML Try It ti_04_02_05's method (same reflection type as the worked Example 5, mirrored about the other axis)."
+  },
+  "c62f40e1a0ed363c": {
+   "verdict": "ok",
+   "note": "f(x)=2x+5/x; polynomial term continuous everywhere, 5/x undefined only at x=0 -> discontinuous at x=0 only. Matches source exercise fs-id1165135692926 solution 'Discontinuous at x=0'."
   },
   "c63971c1143c1775": {
    "verdict": "ok"
@@ -19428,11 +20968,23 @@
   "c74e72c9afb561c0": {
    "verdict": "ok"
   },
+  "c753b686cb7ab3e3": {
+   "verdict": "ok",
+   "note": "d=(a33-a13)/20=(-160-(-60))/20=-5; a1=a13-12d=-60-12(-5)=0; terms 0,-5,-10,-15,-20 (matches source key)."
+  },
+  "c75802a25fc8d713": {
+   "verdict": "ok",
+   "note": "c^2=a^2+b^2=9+25=34 -> foci (sqrt(34),0),(-sqrt(34),0); matches source Try It 1."
+  },
   "c75c57094d6c6e63": {
    "verdict": "ok"
   },
   "c75cf987f4d36ae4": {
    "verdict": "ok"
+  },
+  "c75db1c268a1e583": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L305 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
   "c768020a42864c90": {
    "verdict": "ok"
@@ -19463,6 +21015,10 @@
   },
   "c7d9dff610b9b6de": {
    "verdict": "ok"
+  },
+  "c7dd7068df5ecee9": {
+   "verdict": "ok",
+   "note": "x^2=4y: 4p=4->p=1; focus=(0,1); matches source exercise fs-id1931374's key exactly."
   },
   "c7e362a52d29cb61": {
    "verdict": "ok",
@@ -19589,6 +21145,10 @@
    "verdict": "ok",
    "note": "3*<5,4> = <15,12> -> 15i+12j; ran node -e to confirm (3*5,3*4)=(15,12)."
   },
+  "c92e19e875c491be": {
+   "verdict": "ok",
+   "note": "x=36y^2 divided by 36: y^2=(1/36)x; matches source exercise fs-id1980920's key y^2=1/36x. Self-checked correct under the token."
+  },
   "c93516c1a1b8ccd3": {
    "verdict": "ok",
    "note": "Practice ex19 (fs-id1165137898084): f(t)=-cos(t+pi/3)+1 -> C=-pi/3, B=1, C/B=-pi/3, matches CNXML solution -pi/3 (node-verified)."
@@ -19608,6 +21168,10 @@
   "c94a3a2df7741d89": {
    "verdict": "ok",
    "note": "The second base-10 block SVG shows 4 hundred-squares, 0 ten-rods (no 'ap-ten' element used), and 7 individual unit-block rects: 4(100)+0(10)+7(1)=407, matching the declared answer."
+  },
+  "c94c8c41006d1366": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 868): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "c9556cccede7c6bb": {
    "verdict": "ok",
@@ -19674,6 +21238,10 @@
   },
   "c9fd7d743132acb3": {
    "verdict": "ok"
+  },
+  "ca066c53bbe6950a": {
+   "verdict": "ok",
+   "note": "vertical transverse axis, slope=+-a/b=+-2/9 -> y=2/9x,y=-2/9x; matches source fs-id1688303."
   },
   "ca16f9b5ae1af8c7": {
    "verdict": "ok"
@@ -19778,6 +21346,10 @@
    "verdict": "ok",
    "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
+  "cb1bf76171f8e0d7": {
+   "verdict": "ok",
+   "note": "initial term of -8,-6,-3,1,6,...; the first listed value is a_1=-8 (source Algebraic #35, printed recursive solution a_1=-8,a_n=a_(n-1)+n)."
+  },
   "cb2de300061ae5d3": {
    "verdict": "ok"
   },
@@ -19820,6 +21392,14 @@
   "cb72100e1f682fae": {
    "verdict": "ok"
   },
+  "cb729aff1f572ede": {
+   "verdict": "ok",
+   "note": "Boulder: a1=6,d=8,n=10; a10=78,S10=420 (node); matches CNXML fs-id1165135181425 solution (420 feet)."
+  },
+  "cb84d4dacd328f62": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 700): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "cb8f8d0618930065": {
    "verdict": "ok"
   },
@@ -19842,6 +21422,10 @@
   },
   "cbd352cd3e34b79e": {
    "verdict": "ok"
+  },
+  "cbe07dc8a9cb8288": {
+   "verdict": "ok",
+   "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — For the equation $Ax^2+Bxy+Cy^2+Dx+Ey+F=0$, what information"
   },
   "cbe7731832740dc2": {
    "verdict": "ok"
@@ -19868,6 +21452,10 @@
   "cc2e280d290a0223": {
    "verdict": "ok"
   },
+  "cc301c7ae950e8a1": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 521): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "cc33bc87ddca2461": {
    "verdict": "ok"
   },
@@ -19892,6 +21480,10 @@
   },
   "cc6a2e07dfc838f0": {
    "verdict": "ok"
+  },
+  "cc6c31ed4ab11223": {
+   "verdict": "ok",
+   "note": "r=8/(4-5cosθ), ÷4 → e=5/4>1 hyperbola, ep=2, p=1.6, directrix x=-p=-1.6; vertices θ=0→r=-8→(-8,0), θ=π→r=8/9→(-8/9,0). Matches Algebraic 'graph the conic' exercise fs-id1479120 (solution figure-only). Correct option is index 1; curve polylines and all 4 options' geometry independently re-sampled and verified against the focus-directrix relation (residual <1e-4) after finding the ORIGINAL page's polyline points for this MC failed that check by several units — replaced with correct samples."
   },
   "cc714f828595da95": {
    "verdict": "ok"
@@ -19920,6 +21512,10 @@
   },
   "cc9cc786cf39935d": {
    "verdict": "ok"
+  },
+  "ccab07f267ada581": {
+   "verdict": "ok",
+   "note": "At x=4 on the same recreated figure: a filled point sits at (4,-3) (Condition 1 holds, f(4)=-3), the curve itself is unbroken through an open circle at (4,2) (Condition 2 holds, limit=2), but the limit (2) does not equal f(4) (-3), so Condition 3 fails. Matches the source's own solution for this x-value (fs-id1165135693591): '1 and 2, but not 3'."
   },
   "ccaea499c79491ca": {
    "verdict": "ok"
@@ -19953,6 +21549,10 @@
   },
   "ccdeb97584eece6c": {
    "verdict": "ok"
+  },
+  "cceb9891ee7528a8": {
+   "verdict": "ok",
+   "note": "Whispering chamber 480x320: a=240,a^2=57600; b=160,b^2=25600; x^2/57600+y^2/25600=1 matches CNXML fs-id1403957 part (a)."
   },
   "cd03864ef7c6d519": {
    "verdict": "ok"
@@ -20224,6 +21824,10 @@
   "d07401969ea39b3d": {
    "verdict": "ok"
   },
+  "d07be0ee0d6ccc4e": {
+   "verdict": "ok",
+   "note": "y^2=(1/36)x: 4p=1/36->p=1/144; latus endpoints (p,2p)=(1/144,1/72) and (p,-2p)=(1/144,-1/72); matches source key F:(1/144,0) scaled (2p=1/72 computed directly, node-verified)."
+  },
   "d081433d042aaee4": {
    "verdict": "ok",
    "note": "(x^2+2x-3)/(x^2-1) = (x+3)(x-1)/[(x-1)(x+1)] reduces to (x+3)/(x+1); VA at x=-1; matches CNXML source answer."
@@ -20304,6 +21908,10 @@
   "d130ece6e5d30e56": {
    "verdict": "ok"
   },
+  "d1511d3b61964e38": {
+   "verdict": "ok",
+   "note": "f(x)=|x-2|/(x^2-2x); numerator defined everywhere, denominator x(x-2)=0 at x=0 and x=2 -> discontinuous at 0 and 2. Matches source exercise fs-id1165135685159 solution 'Discontinuous at x=0 and x=2'."
+  },
   "d1567f7829c28447": {
    "verdict": "ok"
   },
@@ -20337,6 +21945,10 @@
   },
   "d193c739bb75c9b4": {
    "verdict": "ok"
+  },
+  "d19f16f9573c1bcf": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 265): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "d1a0eb513107bf30": {
    "verdict": "ok"
@@ -20377,6 +21989,10 @@
   },
   "d1f8e4f91f3e7a7a": {
    "verdict": "ok"
+  },
+  "d1fd920a0820da6a": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 841): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "d1ff724a37c70a31": {
    "verdict": "ok",
@@ -20483,6 +22099,10 @@
    "verdict": "ok",
    "note": "RE#39 m49353 (fs-id1165137863121, intercepts/asymptotes/sketch -> asymptotes part): den (x+2)(x-1) zero at 1,-2 with num -24,-15 nonzero -> VA x=1,x=-2; equal degrees -> HA y=3/1=3; key p1298 #39 prints exactly these with the graph"
   },
+  "d3440a67977d80c0": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 580): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "d346a12557a614d2": {
    "verdict": "ok"
   },
@@ -20491,6 +22111,10 @@
   },
   "d359b40232979ad4": {
    "verdict": "ok"
+  },
+  "d35bd8d38ce4f625": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 184): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "d360b9bf8023b15b": {
    "verdict": "ok"
@@ -20555,6 +22179,10 @@
    "verdict": "ok",
    "note": "f(5)=2 <-> f^-1(2)=5 by definition; key p1272 #79"
   },
+  "d425030f3bf1e8ae": {
+   "verdict": "ok",
+   "note": "Practice #21 MC: points (7,-2) and (7,10) share x=7, so the average-rate-of-change denominator is 0 -- undefined; matches source exercise 21 solution 'undefined'. Distractors are plausible wrong arithmetic (differences of the coordinates)."
+  },
   "d4273d774e663b20": {
    "verdict": "ok"
   },
@@ -20599,6 +22227,10 @@
   "d4ba4705dfb65887": {
    "verdict": "ok"
   },
+  "d4be3e7c0560a726": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 416): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "d4be95b81f2ea434": {
    "verdict": "ok"
   },
@@ -20634,6 +22266,10 @@
   },
   "d512e38e95173db3": {
    "verdict": "ok"
+  },
+  "d528efe29a4f3a8e": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L297 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
   "d53596ae82bc4ade": {
    "verdict": "ok",
@@ -20689,11 +22325,19 @@
   "d5d333450bd4bf67": {
    "verdict": "ok"
   },
+  "d5d62c01f8aba430": {
+   "verdict": "ok",
+   "note": "Half-width 6, depth 4: x^2=4py -> 36=16p -> p=2.25; matches source exercise fs-id2641725's key 'At the point 2.25 feet above the vertex' exactly. Exact value, no rounding divergence between full precision and source intermediates."
+  },
   "d5d71a520b1b70c3": {
    "verdict": "ok"
   },
   "d5dba8cb57642a68": {
    "verdict": "ok"
+  },
+  "d5dbf5e3bb5f052c": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L257 of 04-series-and-their-notations.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
   "d5ee5b96c966e3ed": {
    "verdict": "ok"
@@ -20716,6 +22360,10 @@
   "d61d10f732ebeaf2": {
    "verdict": "ok"
   },
+  "d61e4a318a27cbf5": {
+   "verdict": "ok",
+   "note": "Matches the printed solution for fs-id1165137455877 (4, source exercise 11); the authored sqrt branch y=2.309*sqrt(x-1) gives f(4)=4 (2.309*sqrt(3)=4.0, node-checked)."
+  },
   "d6234701d6beaee6": {
    "verdict": "ok"
   },
@@ -20725,11 +22373,27 @@
   "d62e33161576821f": {
    "verdict": "ok"
   },
+  "d6326ca44d2804a5": {
+   "verdict": "ok",
+   "note": "d=-4-3=-7, a_n=3-7(n-1)=10-7n; solve -60=10-7n -> n=10 (matches source key)."
+  },
   "d636c6dd2eb8cc04": {
    "verdict": "ok"
   },
+  "d6394b070637db11": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 108): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "d647f9e4c9cf4364": {
    "verdict": "ok"
+  },
+  "d6597d49a465ab16": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 771): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "d65b22adc8c29f4c": {
+   "verdict": "ok",
+   "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — Which conic section is represented by $3x^2+6xy+3y^2-36y-125"
   },
   "d65f72c486ac0f99": {
    "verdict": "ok"
@@ -20776,6 +22440,10 @@
   "d6cb638319ca61d4": {
    "verdict": "ok"
   },
+  "d6ce20f1f3286063": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 783): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "d6cf07d6eb903651": {
    "verdict": "ok",
    "note": "pi/9 rad * 180/pi = 180/9 = 20 deg"
@@ -20810,6 +22478,10 @@
   },
   "d74d45205bce9619": {
    "verdict": "ok"
+  },
+  "d74d7944dc42cfa2": {
+   "verdict": "ok",
+   "note": "sum_{k=1}^{10}(5-6k) evaluated by loop = -280; matches CNXML ti_11_04_04."
   },
   "d750065d18ce8844": {
    "verdict": "ok"
@@ -20850,6 +22522,10 @@
   "d7c54a180978645d": {
    "verdict": "ok"
   },
+  "d7c7068412b2d04f": {
+   "verdict": "ok",
+   "note": "-32,-16,-8,-4,...: first term stated directly, a1=-32. Matches CNXML Algebraic #25 solution."
+  },
   "d7d510398041194b": {
    "verdict": "ok"
   },
@@ -20858,6 +22534,10 @@
   },
   "d7dbe8b1429ddcc5": {
    "verdict": "ok"
+  },
+  "d7e01b93ce5d3778": {
+   "verdict": "ok",
+   "note": "t_n=5n-4 for n=1..5, computed by loop: 1,6,11,16,21 (CNXML Try It ti_11_01_01)."
   },
   "d7e10ab290d9c043": {
    "verdict": "ok"
@@ -20950,11 +22630,19 @@
    "verdict": "ok",
    "note": "The exponent on the factor (2x+3) that produces the zero x=-3/2 is 5, by definition of multiplicity. Matches CNXML fs-id1165134155916 solution."
   },
+  "d8debb5c0b0a7b37": {
+   "verdict": "ok",
+   "note": "Try It 10: CARRIER has 7 letters, R x3; 7!/3!=840 (node BigInt)."
+  },
   "d90b2d91babc6255": {
    "verdict": "ok"
   },
   "d912dd73506cb093": {
    "verdict": "ok"
+  },
+  "d918f35b1c27be4f": {
+   "verdict": "ok",
+   "note": "a_n=n!/(n^2-n-1) for n=1..4, computed with BigInt-safe factorials: -1,2,6/5,24/11 (source Algebraic #45, printed solution matches)."
   },
   "d91ba5dfa93c43ec": {
    "verdict": "ok"
@@ -21164,6 +22852,10 @@
   "db11537f3ff0e13c": {
    "verdict": "ok"
   },
+  "db2a835198498563": {
+   "verdict": "ok",
+   "note": "diffs of 4,16,64,256,1024 are 12,48,192,768 (not constant) -> not arithmetic, no."
+  },
   "db2ac76a43c03023": {
    "verdict": "ok"
   },
@@ -21279,6 +22971,10 @@
   "dc7373ce97e5506e": {
    "verdict": "ok"
   },
+  "dc750aee8cc6fa5c": {
+   "verdict": "ok",
+   "note": "initial term of 25,37,49,61,... is literally the first listed value, 25."
+  },
   "dc8b62c81793e95a": {
    "verdict": "ok"
   },
@@ -21316,6 +23012,10 @@
   "dd0b5e561218655d": {
    "verdict": "ok"
   },
+  "dd0fc206cfe6b5fa": {
+   "verdict": "ok",
+   "note": "latus endpoints (h+2p,k+p)=(-12,-2) and (h-2p,k+p)=(8,-2); matches source TI5."
+  },
   "dd193139210acd4f": {
    "verdict": "ok"
   },
@@ -21324,6 +23024,10 @@
   },
   "dd2d5db442e98636": {
    "verdict": "ok"
+  },
+  "dd318056ea3efed0": {
+   "verdict": "ok",
+   "note": "9+3+1+1/3+1/9: a1=9,r=1/3,n=5; Sn=121/9≈13.444 (node, exact rational 121/9); matches CNXML fs-id1165135203490 solution."
   },
   "dd42cc119b2be6ba": {
    "verdict": "ok"
@@ -21369,6 +23073,10 @@
   },
   "ddab0fc30f2bf57d": {
    "verdict": "ok"
+  },
+  "ddaeea9fb03d6526": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 448): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "ddb02bf7652b3ed7": {
    "verdict": "ok"
@@ -21439,6 +23147,10 @@
   "de9a5d292fbf800b": {
    "verdict": "ok"
   },
+  "dea49d9cb626f4fc": {
+   "verdict": "ok",
+   "note": "a1=7, an=0.2a_{n-1}: 7, 1.4, 0.28, 0.056, 0.0112 by repeated multiplication. Matches CNXML Algebraic #23 solution."
+  },
   "deaeab70e214fd94": {
    "verdict": "ok"
   },
@@ -21470,6 +23182,10 @@
   "deef4209f1c76ccd": {
    "verdict": "ok",
    "note": "Practice (Remainder Theorem). Evaluated x^4-1 at x=4 via node: 255. Matches CNXML solution for fs-id1165135487281."
+  },
+  "df0834090ec70be4": {
+   "verdict": "ok",
+   "note": "7*tan(x)/(3x) = (7/3)*(tan x / x) -> 7/3 exactly as x->0 (tan x / x -> 1); node-sampled; matches the printed solution for fs-id1165135188629 (source exercise 39)."
   },
   "df15a924405f863d": {
    "verdict": "ok"
@@ -21562,6 +23278,10 @@
    "verdict": "ok",
    "note": "Section Exercise 65 (Seattle building, 2deg, 2 miles): height=2*5280*tan(2deg)=368.7633 ft, computed with node; matches CNXML solution."
   },
+  "e01f5f63c8fd7feb": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L447 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
+  },
   "e02acbc51000b82e": {
    "verdict": "ok"
   },
@@ -21583,6 +23303,14 @@
   },
   "e07097193bfbd95f": {
    "verdict": "ok"
+  },
+  "e088ea732ebe231a": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 534): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "e09748a1e3dbd7e3": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 716): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "e0b3211bfae0fa65": {
    "verdict": "ok"
@@ -21693,6 +23421,10 @@
   "e190f3f68a72893e": {
    "verdict": "ok"
   },
+  "e192105dad7cecd7": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 441): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "e1a08239f0053532": {
    "verdict": "ok"
   },
@@ -21742,6 +23474,10 @@
   "e1eeb86e25f2a5b7": {
    "verdict": "ok"
   },
+  "e1f322eebe795534": {
+   "verdict": "ok",
+   "note": "a is the value printed under the limit symbol; independently confirmed a=5 for lim_{x->5}(2x^2-4)=46."
+  },
   "e1f599e0a9ab9a11": {
    "verdict": "ok"
   },
@@ -21783,6 +23519,10 @@
   },
   "e23ecf3b26db8f03": {
    "verdict": "ok"
+  },
+  "e247378ed646bd7b": {
+   "verdict": "ok",
+   "note": "parent re-record after option shuffle: f'(30)=-20 is the rate at 12:30 p.m., losing 20 gal/min (source solution)."
   },
   "e2543e9ff74f165f": {
    "verdict": "ok",
@@ -21846,6 +23586,10 @@
   "e300c321d232e9a8": {
    "verdict": "ok"
   },
+  "e301d5b4d33231f7": {
+   "verdict": "ok",
+   "note": "Arithmetic series a1=1.4,d=0.2,n=11,an=3.4; Sn=n/2*(a1+an)=26.4 (node); matches CNXML ti_11_04_02."
+  },
   "e305e32699ccd134": {
    "verdict": "ok"
   },
@@ -21871,6 +23615,10 @@
   "e335024872a2731e": {
    "verdict": "ok",
    "note": "-4-i has real part -4 and imaginary part -1, so the ordered pair is (-4,-1); matches the point named in CNXML ti_03_01_02's solution image alt text."
+  },
+  "e339f37a8a088bc3": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 723): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "e342894cbbb43f09": {
    "verdict": "ok"
@@ -21951,6 +23699,10 @@
   "e401dacca120f5de": {
    "verdict": "ok"
   },
+  "e404e85b217f9a1c": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 685): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "e40631ce275f1e94": {
    "verdict": "ok"
   },
@@ -22019,6 +23771,10 @@
   "e480d52bf6fc47aa": {
    "verdict": "ok"
   },
+  "e481e217d87e8f9c": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 372): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "e482e5f56d4dc537": {
    "verdict": "ok"
   },
@@ -22048,6 +23804,10 @@
   },
   "e4b8cbf6a12ffe4d": {
    "verdict": "ok"
+  },
+  "e4bf6b249c9b815d": {
+   "verdict": "ok",
+   "note": "pattern-fit to 9,-81,729,-6561,59049,...; verified (-1)^(n+1)*9^n reproduces all five terms by loop (CNXML Try It ti_11_01_04)."
   },
   "e4c0d9ef70b2f87c": {
    "verdict": "ok"
@@ -22080,6 +23840,10 @@
   "e4fcdd8c3ee8d199": {
    "verdict": "ok"
   },
+  "e4fee3390673c98a": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 256): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "e50516b5ac452579": {
    "verdict": "ok",
    "note": "node: 54000/(1+0.082/365)^(365*5) = 35838.7637... -> 35838.76; matches CNXML solution."
@@ -22100,6 +23864,10 @@
   },
   "e5345b81386a3bd7": {
    "verdict": "ok"
+  },
+  "e5361387a9d72cc0": {
+   "verdict": "ok",
+   "note": "5+4+7=16, addition principle over disjoint color groups (matches CNXML key)."
   },
   "e53e240d8fb690e1": {
    "verdict": "ok"
@@ -22136,6 +23904,10 @@
   },
   "e57a1409d8d1d7ee": {
    "verdict": "ok"
+  },
+  "e581b4bf743d15db": {
+   "verdict": "ok",
+   "note": "4p=-20->p=-5; directrix y=k-p=3-(-5)=8; matches source TI5."
   },
   "e5ae5f3dd5d6a684": {
    "verdict": "ok"
@@ -22233,6 +24005,10 @@
   "e6d0d0cb9059c4ad": {
    "verdict": "ok"
   },
+  "e6d3c60dd070d058": {
+   "verdict": "ok",
+   "note": "r(7+8cosθ)=7 → r=7/(7+8cosθ), ÷7 → e=8/7>1 → hyperbola; matches Algebraic exercise fs-id1999312 (CNXML solution: 'Hyperbola with e=8/7...')."
+  },
   "e6d63c8692894781": {
    "verdict": "ok",
    "note": "Degree 3 polynomial has at most 3-1=2 turning points. Matches CNXML ti_03_03_09."
@@ -22245,6 +24021,10 @@
   },
   "e703ea774c6d7d40": {
    "verdict": "ok"
+  },
+  "e7074b759f67cad4": {
+   "verdict": "ok",
+   "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L407 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
   "e709f218e51cb61e": {
    "verdict": "ok"
@@ -22305,6 +24085,10 @@
   },
   "e793b6c6ea11d8ca": {
    "verdict": "ok"
+  },
+  "e7a4e02562ce3b10": {
+   "verdict": "ok",
+   "note": "3.2+3.4+...+5.6: a1=3.2,d=0.2,an=5.6,n=13 (node); Sn=57.2; matches CNXML fs-id1165137745115 solution S13=13(3.2+5.6)/2=57.2."
   },
   "e7a7e70cf461398b": {
    "verdict": "ok",
@@ -22377,6 +24161,10 @@
   "e89132cbfed01928": {
    "verdict": "ok"
   },
+  "e897ad5ed19db0ad": {
+   "verdict": "ok",
+   "note": "vertical transverse axis, slope=+-a/b=+-10/8=+-5/4, through (3,-4) -> y=5/4(x-3)-4,y=-5/4(x-3)-4; matches source Try It 5."
+  },
   "e898133ad723db8c": {
    "verdict": "ok"
   },
@@ -22402,6 +24190,10 @@
   "e8d70dfcff5678c7": {
    "verdict": "ok",
    "note": "-120 + 360 = 240 deg, within [0,360)"
+  },
+  "e8d7a8042965bb88": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 330): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "e8e947d98a9d8ab0": {
    "verdict": "ok"
@@ -22447,6 +24239,10 @@
   },
   "e948eb22f329d79b": {
    "verdict": "ok"
+  },
+  "e94f3c10a4232f83": {
+   "verdict": "ok",
+   "note": "x^2/144-y^2/81=1: a^2=144 -> a=12 -> vertices (12,0),(-12,0); matches source Try It 4 solution (kept 3 of its 4 requested quantities)."
   },
   "e95313ce42b5e40f": {
    "verdict": "ok"
@@ -22527,6 +24323,10 @@
   "ea701bd11f1be6c5": {
    "verdict": "ok"
   },
+  "ea79052c5db9ce4e": {
+   "verdict": "ok",
+   "note": "12!/6! = 479001600/720 = 665280 (source Algebraic #41, printed solution 665,280 matches). Replayed the printed span through check-answer.mjs with form=decimal: reports form, not correct."
+  },
   "ea79ca0f42f53126": {
    "verdict": "ok"
   },
@@ -22588,11 +24388,19 @@
   "eb2cf44cc751f126": {
    "verdict": "ok"
   },
+  "eb2d1ac25b691a90": {
+   "verdict": "ok",
+   "note": "100,20,4,4/5: ratios 20/100=1/5, 4/20=1/5, (4/5)/4=1/5, all equal -> geometric; matches CNXML solution."
+  },
   "eb3bcc9fd78e9a1d": {
    "verdict": "ok"
   },
   "eb485e22e3ddffa2": {
    "verdict": "ok"
+  },
+  "eb5f55c38b54ac96": {
+   "verdict": "ok",
+   "note": "x^2=8y: p=2, latus endpoints (2p,p)=(4,2) and (-2p,p)=(-4,2); matches source TI2."
   },
   "eb61b9f34c07ca53": {
    "verdict": "ok"
@@ -22672,6 +24480,14 @@
   "ec0553ba4f013af2": {
    "verdict": "ok"
   },
+  "ec0becf220170517": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 573): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "ec0d032af87b6d3a": {
+   "verdict": "ok",
+   "note": "Constant summand 4 added 5 times: sum_{k=1}^{5}4; matches CNXML fs-id1165135333032 solution."
+  },
   "ec1d23d12b2389e0": {
    "verdict": "ok"
   },
@@ -22689,6 +24505,10 @@
   },
   "ec3058f43180828a": {
    "verdict": "ok"
+  },
+  "ec37918f216b874a": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 564): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "ec3f50c7c96b4354": {
    "verdict": "ok"
@@ -22872,15 +24692,27 @@
   "edc86dee34b27e0f": {
    "verdict": "ok"
   },
+  "edcdb6303e5b6c3a": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 512): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
   "edcfb245326d2f83": {
    "verdict": "ok"
   },
   "edd49270d332f2d5": {
    "verdict": "ok"
   },
+  "ede3bfacb73755bd": {
+   "verdict": "ok",
+   "note": "x^2/25-y^2/36=1: a^2=25 -> a=5 -> vertices (5,0),(-5,0); matches source fs-id2129321."
+  },
   "ede5dfee2eb2a1f3": {
    "verdict": "ok",
    "note": "Solved V=(4/3)pi r^3 for r: r^3=3V/(4pi), r=cbrt(3V/(4pi)). Cross-checked with checkAnswer against an independently-built alternate LaTeX spelling (cbrt(3/(4pi)) * cbrt(V)) -- graded correct, confirming true value equivalence, not just self-identity. Matches CNXML exercise fs-id1165137451866 (Real-World Applications, sphere volume), which has a solution."
+  },
+  "ede9888a6e741a05": {
+   "verdict": "ok",
+   "note": "f(x)=(x^2-16)/(x+4)=(x-4)(x+4)/(x+4)=x-4 for x!=-4. f(-4) undefined; lim_{x->-4}=-4-4=-8, finite -> removable discontinuity, f(-4) not defined. Matches source Algebraic exercise fs-id1165135698280 solution."
   },
   "edf5cf3e99e8ed8f": {
    "verdict": "ok"
@@ -23086,6 +24918,10 @@
   "efffc0b3b1aa7b8f": {
    "verdict": "ok"
   },
+  "f0001e055be2a211": {
+   "verdict": "ok",
+   "note": "TI10: s=-16t^2+60t-12, s'(t)=-32t+60, s'(4)=-128+60=-68; confirmed numerically node central-difference -67.9999999846. Matches source Try It solution -68 ft/sec."
+  },
   "f0050dbb218a0ff5": {
    "verdict": "ok"
   },
@@ -23104,8 +24940,16 @@
   "f05fd312d775772f": {
    "verdict": "ok"
   },
+  "f064a36bde8f1b66": {
+   "verdict": "ok",
+   "note": "x^2/36+y^2/4=1: a^2=36>b^2=4 so major axis x, vertices (+-6,0); matches CNXML fs-id1355522."
+  },
   "f06838b018608c37": {
    "verdict": "ok"
+  },
+  "f07e722ac8e11678": {
+   "verdict": "ok",
+   "note": "Growth 2.6%/week means ratio 1.026 per week; formula P_n=293*1.026^n (a0=293). Source CNXML prints \"293\\cdot1.026a^{n}\" with a stray 'a', a transcription typo -- corrected here; confirmed against the pattern of Example 6 (P_n=284*1.04^n, no stray letter) and against part b's independently-computed value."
   },
   "f0859eb61d0e7166": {
    "verdict": "ok"
@@ -23167,6 +25011,10 @@
   "f0d1741f71011726": {
    "verdict": "ok"
   },
+  "f0d551a41cd136bd": {
+   "verdict": "ok",
+   "note": "r=4/(7+2cosθ), ÷7 → e=2/7; matches Algebraic exercise fs-id1403116 (CNXML solution: 'Ellipse with e=2/7...')."
+  },
   "f0d95daf82745e9a": {
    "verdict": "ok"
   },
@@ -23176,11 +25024,19 @@
   "f0e2d14e3088a525": {
    "verdict": "ok"
   },
+  "f0ec43ff762545b2": {
+   "verdict": "ok",
+   "note": "-1-1/4-1/16-1/64...: a1=-1,r=1/4; S=a1/(1-r)=-4/3 (node, exact rational); matches CNXML fs-id1165137738012 solution S=-4/3."
+  },
   "f0f80e3dabc2248c": {
    "verdict": "ok"
   },
   "f0fed407547c8b48": {
    "verdict": "ok"
+  },
+  "f1006699d978ddd4": {
+   "verdict": "ok",
+   "note": "KC 7-12 (multiplechoice, line 495): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "f111193faed6df1c": {
    "verdict": "ok"
@@ -23312,8 +25168,16 @@
   "f240d3b516dc2c8f": {
    "verdict": "ok"
   },
+  "f2497ff1d07dd111": {
+   "verdict": "ok",
+   "note": "TI4: f(x)=9sqrt(x), f'(x)=9/(2sqrt(x)), f'(9)=9/6=3/2; confirmed numerically node central-difference at a=9: 1.499999998. Matches source Try It solution."
+  },
   "f24e03a3301ad3a5": {
    "verdict": "ok"
+  },
+  "f25174a8603e1f24": {
+   "verdict": "ok",
+   "note": "Try It 3: 5!=120 (node BigInt fact(5))."
   },
   "f25a4c09eae4a4e8": {
    "verdict": "ok",
@@ -23416,6 +25280,10 @@
   "f3ade6306f66992f": {
    "verdict": "ok"
   },
+  "f3b22766ce206bd0": {
+   "verdict": "ok",
+   "note": "Practice obj3-3: x^2+8x+4y^2-40y+112=0 -> (x+4)^2+4(y-5)^2=4 -> (x+4)^2/4+(y-5)^2/1=1; a^2=4,b^2=1,c^2=3,c=sqrt3; foci (-4+-sqrt3,5); matches CNXML fs-id1326410 solution."
+  },
   "f3d0b3468231ff0b": {
    "verdict": "ok"
   },
@@ -23489,6 +25357,10 @@
   },
   "f46b56ff2b91eeff": {
    "verdict": "ok"
+  },
+  "f47f6c375ff5c8ab": {
+   "verdict": "ok",
+   "note": "Try It 2: center=midpoint((-3,3),(5,3))=(1,3); a=|5-1|=4,a^2=16; c=|1+2sqrt3-1|=2sqrt3,c^2=12; b^2=16-12=4; (x-1)^2/16+(y-3)^2/4=1 matches CNXML fs-id1385632."
   },
   "f480167c0c26d070": {
    "verdict": "ok"
@@ -23607,6 +25479,14 @@
   "f59d2e86891abb54": {
    "verdict": "ok"
   },
+  "f5a11eb7f853c415": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 120): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "f5a8276cf0d285ab": {
+   "verdict": "ok",
+   "note": "Same ellipse: a^2=36>b^2=20 major axis x, vertices (4+-6,2)=(-2,2),(10,2); matches CNXML fs-id1361228."
+  },
   "f5aa0a7d553d408a": {
    "verdict": "ok"
   },
@@ -23674,6 +25554,10 @@
   "f649c3cc233859b8": {
    "verdict": "ok"
   },
+  "f65ee42689cae856": {
+   "verdict": "ok",
+   "note": "Algebraic exercise 51 (fs-id1165135331069): f(x)=1/x; (1/(x+h)-1/x)/h = [x-(x+h)]/[hx(x+h)] = -h/[hx(x+h)] = -1/(x(x+h)); matches CNXML solution -1/(x(x+h)). Verified via checkAnswer that reduced-fraction reports 'form' on the printed difference-quotient span (blocking the retype-passable single-fraction reading) while self-grading correct."
+  },
   "f65f9bb91da5c100": {
    "verdict": "ok"
   },
@@ -23689,6 +25573,10 @@
   },
   "f6925a98c693cbce": {
    "verdict": "ok"
+  },
+  "f696efb9f1541d38": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 281): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "f69913b5f7ca5527": {
    "verdict": "ok"
@@ -23860,6 +25748,10 @@
   "f83d7d945959ec7e": {
    "verdict": "ok"
   },
+  "f8498fed55ecd4cd": {
+   "verdict": "ok",
+   "note": "Practice (Graphical, ex.31 analog): the source's <problem> is empty (question posed only via a printed figure); the figure was reconstructed piecewise-linear from a 300dpi crop of the rendered PDF (true page 1239): a ray y=-1 for x<=-2 open at (-2,-1), diagonal y=2x from open(-2,-4) to closed(0,0), flat y=1 from open(0,1) to closed(2,1), then y=7-3x for x>2 -- discontinuous exactly at x=-2 and x=0 (both are one-sided jumps), matching the source's own printed solution 'Discontinuous at x=-2 and x=0.'"
+  },
   "f84f468eec256853": {
    "verdict": "ok"
   },
@@ -23979,6 +25871,10 @@
   },
   "f94ef103ffbbcc11": {
    "verdict": "ok"
+  },
+  "f954fc7b48c9b88c": {
+   "verdict": "ok",
+   "note": "initial term of 17,26,35,... is the first listed value, 17."
   },
   "f95550de6f931c81": {
    "verdict": "ok"
@@ -24264,6 +26160,10 @@
   "fc2c2353e309c88f": {
    "verdict": "ok"
   },
+  "fc39cf99a000b712": {
+   "verdict": "ok",
+   "note": "Matches the printed solution for fs-id1165137806213 (-4, source exercise 5); both one-sided limits at x=-2 are -4 in the authored figure."
+  },
   "fc454c5ae2c4acf8": {
    "verdict": "ok",
    "note": "Try It 1 (side only, mixed-unit adaptation): a=Math.sqrt(12**2+24**2-2*12*24*Math.cos(30*Math.PI/180)) = 14.8718 -> 14.9; single-step, no rounding chain."
@@ -24288,6 +26188,10 @@
   },
   "fc7f15866872cd0a": {
    "verdict": "ok"
+  },
+  "fc947877e3ab60eb": {
+   "verdict": "ok",
+   "note": "f(x)=x/(4x^2+4x+1)=x/(2x+1)^2 blows up to -infinity as x->-1/2 from both sides (node-sampled at increasingly close x, values -15, -1275, -125250, -12502500 on both sides); matches the printed solution for fs-id1165135209740 (source exercise 37: does not exist, decreases without bound)."
   },
   "fc9f0b28557bce89": {
    "verdict": "ok"
@@ -24332,6 +26236,10 @@
   "fd13b3f1f94eefd4": {
    "verdict": "ok",
    "note": "sin^2t = 1-cos^2t = 1-(24/25)^2 = 1-576/625 = 49/625, sin t = +/-7/25; QIV means sin t<0, so sin t = -7/25"
+  },
+  "fd1c55d645f26d4a": {
+   "verdict": "ok",
+   "note": "r=(4/3)/2=2/3; verified forward: 2*(2/3)=4/3, (4/3)*(2/3)=8/9, (8/9)*(2/3)=16/27, all match. Recursive formula a_n=(2/3)a_{n-1}; matches CNXML solution."
   },
   "fd2968aa30c7f756": {
    "verdict": "ok"
@@ -24384,6 +26292,10 @@
   },
   "fd7b40f37043f047": {
    "verdict": "ok"
+  },
+  "fd800dda59b1d99f": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 57): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
   "fd8ef93abf643890": {
    "verdict": "ok",
@@ -24552,6 +26464,14 @@
   "ff39d5a7febb1ab5": {
    "verdict": "ok"
   },
+  "ff3cf7a2b3d7ef8b": {
+   "verdict": "ok",
+   "note": "KC 7-12 (fillin, line 635): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "ff4e3f35bc20bcf0": {
+   "verdict": "ok",
+   "note": "Locally authored substitution (not in source, disclosed in footer): a=-3 is the printed subscript for lim_{x->-3}(2x^2+1)=19."
+  },
   "ff6aa687f0357814": {
    "verdict": "ok"
   },
@@ -24579,8 +26499,16 @@
   "ffa531851f90692b": {
    "verdict": "ok"
   },
+  "ffa64171fe9bb933": {
+   "verdict": "ok",
+   "note": "B={-23,-16,-7,-2,20,36,48,72}: positive={20,36,48,72}(4), odd={-23,-7}(2), disjoint, 4+2=6 (verified by script filter, matches CNXML key)."
+  },
   "ffa81ea8961eeafe": {
    "verdict": "ok"
+  },
+  "ffa9bfb2da134967": {
+   "verdict": "ok",
+   "note": "Locally authored notation-reading item on Example 1 (lim_{x->3}(2x+5)=11): a is the value x approaches, printed as 3 under the lim in the question. Verified checkAnswer('3','3',{form:'decimal'}) -> correct."
   },
   "ffafdc6cf4d953c6": {
    "verdict": "ok"

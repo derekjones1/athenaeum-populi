@@ -343,7 +343,8 @@ the two independent things it names:
 | `point-slope-form` | one equation, one side the bare output variable plus at most a constant, the other a single $m(x-x_1)$ term (either orientation) — for "Write the point-slope form…", where the engine grades the distributed and scaled restatements equal; the collapsed origin case $y=mx$ passes |
 | `slope-intercept-form` | after an optional written `y=`/`f(x)=` label, at most one $mx$ monomial plus at most a constant — for "Write the equation in slope-intercept form", whether the answer is authored as the equation or as the bare expression following $y=$ |
 | `vertex-form` | one $a(x-h)^2+k$ term shape (either orientation, optional written `y=`/`x=`/`f(x)=` label): exactly one squared-binomial term plus at most a constant — for "Write $y=2x^2+4x+5$ in standard form" |
-| `conic-standard-form` | an equation with one side exactly $1$ and the other a sum/difference of $\ge 2$ fractions, each a coefficient-1 squared term ($x^2$, $(y-k)^2$) over a positive integer — for ellipse/hyperbola "write in standard form" |
+| `conic-standard-form` | an equation with one side exactly $1$ and the other a sum/difference of $\ge 2$ fractions, each a coefficient-1 squared term ($x^2$, $(y-k)^2$) over a positive integer (a bare squared term counts as over the unwritten $1$, so $(y-1)^2-\tfrac{x^2}{4}=1$ passes) — for ellipse/hyperbola "write in standard form". Primed variables ($x'$, $y'$ of a rotated-axes conic) are folded onto one symbol before the shape is read, so $\tfrac{x'^2}{4}+\tfrac{y'^2}{9}=1$ is keyable |
+| `parabola-standard-form` | an equation with one side a single coefficient-1 squared unit ($x^2$, $y^2$, $(x-h)^2$, $(y-k)^2$) and the other ONE term in the other variable — an optional numeric coefficient (the $4p$: integer, decimal, or written fraction) on the bare variable or its shifted binomial, or that variable/binomial over an integer — for the conic chapter's "write the parabola in standard form" $(x-h)^2=4p(y-k)$ asks, which `vertex-form` cannot serve (it wants the function reading $y=a(x-h)^2+k$) and which the general form, $x=\tfrac{y^2}{8}$, and the distributed $(x-2)^2=-8y-8$ all otherwise pass on value |
 | `circle-standard-form` | two coefficient-1 squared terms against a positive integer — $(x-h)^2+(y-k)^2=r^2$ for the circle asks |
 | `exponential-form` | no logarithm left — for "convert from logarithmic to exponential form". The closed-equation grading path now compares the two equations side by side rather than by truth value, so a retyped conversion prompt is refused on value alone; this token remains for the feedback sentence and for the value-equal responses that still carry a logarithm |
 | `base-e` | no base other than $e$ raised to a variable exponent — for "change $y=3(0.5)^x$ to one having $e$ as the base", where the answer IS the printed function rewritten. A numeric exponent ($x^2$) is a power function and is left alone |
@@ -1108,6 +1109,26 @@ render plain in the PDF — pass `arrows: false` on them. `segments` take
 `arrows` too, for the labelled "Domain"/"Range" extent rays drawn beside a
 graph.
 
+**Curves with no primitive are sampled from their exact equation into
+`polylines`, and `polylines` are NOT clipped to the grid.** Rotated conics
+(Precalculus §10.4, sampled parametrically and rotated), polar conics
+(§10.5, $r(\theta)$ sampled with hyperbola branches split where the
+denominator changes sign), damped waves, and polar roses all ship this way;
+the sampling is analytic, not a spline. Unlike every named family, a
+`polylines` run is drawn wherever its points lie, so drop every sample outside
+the window (splitting a branch into separate runs where it leaves) or the
+curve runs off the figure. In `figure` mode, which has no ellipse primitive,
+sample ≥120 points for a closed ellipse — a 24-point polygon shows its
+corners at the zoom a reader uses. The double-cone conic-section schematics
+of chapter 10 (a cone cut by a plane, hidden portions dashed) come from
+`node tools/cone-schematic.mjs` — an exact construction under the §9.2
+oblique projection — never from an hourglass wireframe; keep such a
+composite to two panels, because a `figure` wider than ~340 px scales its
+label font up until adjacent titles collide. And a `figure`-mode dimension
+diagram (the §10.2 cooling towers) draws the object it dimensions: the
+tower's sides are sampled from the tower's own hyperbola, not left as bare
+dimension lines.
+
 When a graph's window never reaches the origin — a year axis, a dollar axis —
 `tickLabels` still labels both axes along the drawn edges. Turn digit
 grouping off per axis with `xTickGrouping: false` so a year reads 1975 rather
@@ -1249,7 +1270,9 @@ another way, or extend `preprocess()` first and add the test with it.
 | `\binom{n}{k}` | binomial theorem | parses invalid |
 | `\lim_{x\to0^+}` | one-sided limits | parses invalid |
 | `{}_nP_r`, `{}_nC_r` | permutations, combinations | parses as a nonsense product; caught by the nonsense-parse guard in `verify-section` |
+| `2(4i-3j)-(2i-j)` (an unsimplified vector combination) | vectors (Precalculus §8.8) | `i` is the engine's imaginary unit, and the pinned engine's complex arithmetic is wrong (see `tools/verify-answers.mjs` `hasComplexDivision`), so a parenthesized combination grades `incorrect` against its keyed result even though the same shape in $x,y$ grades correct. The distributed spelling (`8i-6j-2i+j`) and the simplified result both grade correct, so no finished answer is refused — key vector results as bare $ai+bj$ and leave this alone. Folding `i`/`j` into basis symbols would fix the arithmetic but make every "compute $2\mathbf{u}-\mathbf{v}$" item passable by retyping its prompt, so it would have to ship with a form token on each of those keys |
 | `D`, `N` as variables | `D` for distance, `N` for a count | reserved by the engine as the derivative and numeric-evaluation operators; any answer using them is ungradeable. Rename the variable (`d`, `n`). |
+| `x'`, `x^{\prime}` (a primed variable) | rotated axes (Precalculus §10.4), where every answer is written in $x'$ and $y'$ | **taken since August 28, 2026**, by folding rather than parsing: `preprocess()` rewrites every spelling of a primed letter — the key's `x'`, MathLive's `x^{\prime}` / `x^{\doubleprime}` / `x^{\prime2}`, `\theta'` — onto one subscripted symbol (`x_{p}`, `x_{pp}`) on both sides, so a primed answer grades on value and shape like any other. The engine on its own rejects `x'^2` as invalid and reads `x^{\prime}` as a power of an unknown symbol. Consequence: a genuine `f'(x)` derivative is folded too and reads as the symbol $f_p$ applied to $x$ — no answer in the corpus keys one; chapter 12's derivative answers are the resulting expressions, and since August 29, 2026 a learner's written label is stripped before grading the way `f(x)=` is: `f'(x)=2x+3`, MathLive's `f^{\prime}\left(x\right)=2x+3`, `f'(3)=6`, `f(2)=5` (a numeral argument is a label reading only, never the output quantity $y$), and the Leibniz `\frac{dy}{dx}=2x+3` all grade on the value that follows |
 
 `^\circ` is exact, not decorative: the engine converts it, so `30^\circ`
 and `\frac{\pi}{6}` are the same value and each is accepted for the other.
@@ -1338,14 +1361,15 @@ carried zero of each, and the warning channel was deleted with them. There is
 no non-blocking rule left in the repository and no category of
 known-defective content to grandfather.
 
-The Practice retrofit that used to live here is finished. All 258 mapped
+The Practice retrofit that used to live here is finished. All 274 mapped
 sections carry the block (the documentation test pins that count to the live
 map, so authoring a new mapped section means bumping it here). The final
 block landed on August 9, 2026; the lint rule was promoted from a warning to
 an error the same day, and the published backlog count was deleted along with
 the `--check-docs` flag and the tooling that maintained it. Precalculus 2e's
-remaining scaffolded chapters will each need their blocks as their section
-pages land — but as an error on the page being written, not as a worklist.
+final chapter landed on August 29, 2026 with its blocks, so no scaffolded
+chapter remains; a future book's sections will each need theirs as they land —
+as an error on the page being written, not as a worklist.
 
 Everything else that used to live here has been fixed rather than documented:
 numerically coded categorical answers are `multiplechoice`, four-digit numbers
@@ -1398,7 +1422,7 @@ blow-by-blow record of how each closed is in this file's git history:
 | Simplify, Add, Subtract (algebraic) | 401 | `no-like-terms`, `polynomial`, `distributed`, `single-fraction` |
 | Radicals | 207 | `simplified-radical` |
 | Reducing a rational expression | 47 | `reduced-fraction` |
-| "Write it in standard form" | 26 | `vertex-form`, `conic-standard-form`, `circle-standard-form` |
+| "Write it in standard form" | 26 | `vertex-form`, `conic-standard-form`, `circle-standard-form`, `parabola-standard-form` |
 | Logarithm conversion / expansion | 3 | `exponential-form`, `expanded-logarithms` |
 | Composition and page-context combinations | 6 | `distributed`, `no-like-terms`, `expanded` |
 
@@ -1553,6 +1577,53 @@ behavior an author will still meet:
   open, and the quotient-to-a-power item that became a multiple choice among
   fraction forms (no token's feedback names that ask), are sound content
   converted deliberately — they predate their tokens.
+- **The engine evaluates factorials and finite sigma sums, and it cannot
+  read a `!` inside a form predicate** (measured for Precalculus ch. 11,
+  August 28, 2026). Retyping `5!`, `\frac{12!}{6!6!}`, or `\sum_{k=1}^{5}k^2`
+  grades `correct` against the keyed integer, so every "evaluate" ask declares
+  `decimal` (integer result) or `fraction` (fraction result) — both report
+  `form` on the printed expression. A symbolic factorial quotient that
+  simplifies to a polynomial ($\tfrac{(n+2)!}{n!}$) takes `polynomial`, which
+  refuses the printed quotient and accepts the factored and expanded
+  spellings; one that simplifies to a fraction ($\tfrac{n!}{(n+1)!}$) is
+  passable under every token, because `single-fraction` and
+  `reduced-fraction` fail open on the `!` they cannot read — pose it as a
+  `multiplechoice`. `\binom{n}{r}` is invalid and `C(n,r)`, `P(n,r)`,
+  `{}_nC_r` grade `incorrect` against their values, so a count keys as the
+  bare number and the printed $C(10,3)$ is not a retype hazard. Recursive
+  formulas grade well on subscripts (`a_n=a_{n-1}+3`, reordered spellings
+  accepted, a shifted index refused), so the question pins the shape ("in the
+  form $a_n=\ldots$ in terms of $a_{n-1}$, for $n\ge2$") and keys $a_1$ as
+  its own fill-in.
+
+- **The engine evaluates `\lim` and differentiates `\frac{d}{dx}`** (measured
+  for Precalculus ch. 12, August 29, 2026). `\lim_{x\to2}(x^2+1)` typed as a
+  response grades `correct` against a keyed $5$, and so does
+  `\frac{d}{dx}(x^2+3x)` against $2x+3$, so every "evaluate the limit" fill-in
+  declares `decimal` (integer or terminating decimal), `fraction` (with "as a
+  fraction" in the question — a rounded decimal is `incorrect`, not `form`),
+  or `exact-radical` (a bare radical), each of which reports `form` on the
+  printed `\lim` span; a radical inside a fraction or a sum has no token that
+  refuses the span and is posed as a multiple choice, as is every limit that
+  does not exist. One-sided notation (`\lim_{x\to a^+}`) is `invalid` to the
+  engine, so one-sided limits are asked in words and keyed as numbers. A
+  derivative ask prints the function as `f(x)=…` and asks for `f'(x)` — the
+  printed body retyped is `incorrect` against its derivative, and
+  `\frac{d}{dx}` never appears in a question — with `polynomial` on an
+  integer-coefficient polynomial derivative (it refuses a fraction
+  coefficient, and `expanded` refuses a one-term key) and `reduced-fraction`
+  on a rational one; a learner's `f'(x)=`, `f'(3)=`, or `\frac{dy}{dx}=`
+  label is stripped before grading. The substituted difference quotient
+  `\frac{(x+h)^2-x^2}{h}` grades equal to its simplification: `polynomial`
+  refuses it for polynomial $f$ and `reduced-fraction` for $f(x)=\tfrac1x$,
+  but for $f(x)=\sqrt{x}$ every token fails open, so that item is a multiple
+  choice.
+- **A rational function grades equal to its reduced form, hole and all.**
+  `x+2` — and even `\frac{x^2-x-6}{x-2}`, whose removable hole sits at a
+  different $x$ — grade `correct` against a keyed `\frac{x^2+5x+6}{x+3}`, so
+  "find an equation represented by this graph with a hole" and "construct a
+  function with removable discontinuities at…" cannot be fill-ins; pose them
+  as multiple choice among candidate quotients.
 
 ### Re-running the audit
 

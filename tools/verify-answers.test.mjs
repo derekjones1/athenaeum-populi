@@ -460,3 +460,32 @@ assert.equal(analyze('Convert $\\frac{5\\pi}{4}$ radians to degrees.', '225^\\ci
 assert.equal(analyze('Convert $\\frac{5\\pi}{4}$ radians to degrees.', '224^\\circ').status, 'fail');
 
 console.log('verify-answers tests passed');
+
+// Precalculus §10.3 (Aug 28 2026): a feature ask that quotes a rewritten
+// standard form is not a rewrite ask, and "the equation of the parabola"
+// through printed points is not a line — both classifiers must stand aside
+// rather than grade a correct key wrong.
+{
+  const directrix = analyzeFillin({
+    question: 'For the equation $y=-4x^2$, rewritten in standard form as $x^2=-\\tfrac{1}{4}y$, give the equation of the directrix, as an equation.',
+    answer: 'y=1/16',
+  });
+  assert.notEqual(directrix.status, 'fail', `directrix ask misread as a rewrite: ${JSON.stringify(directrix)}`);
+  assert.notEqual(directrix.className, 'standard-form-rewrite');
+  const stillRewrite = analyzeFillin({
+    question: 'Write $y=2x^2+4x+5$ in standard form.',
+    answer: '2(x+1)^2+4',
+  });
+  assert.equal(stillRewrite.status, 'fail', 'a wrong completed square still fails');
+  const parabola = analyzeFillin({
+    question: 'The vertex of a parabola is $(-3,-1)$, and the endpoints of its latus rectum are $(0,5)$ and $(0,-7)$. Find the equation of the parabola, in standard form.',
+    answer: '(y+1)^2=12(x+3)',
+  });
+  assert.notEqual(parabola.status, 'fail', `parabola ask misread as a line: ${JSON.stringify(parabola)}`);
+  assert.notEqual(parabola.className, 'line-equation');
+  const stillLine = analyzeFillin({
+    question: 'Find the equation of the line through $(1,2)$ and $(3,8)$.',
+    answer: 'y=3x-2',
+  });
+  assert.equal(stillLine.status, 'fail', 'a wrong line still fails');
+}

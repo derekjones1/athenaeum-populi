@@ -149,7 +149,7 @@ test('the OpenStax workflow doc documents every pinned bundle', () => {
   assert.match(openStaxWorkflow, /--output docs\/openstax-existing-math-audit\.md/);
   assert.match(openStaxWorkflow, /--output docs\/openstax-upstream-history-audit\.md/);
   assert.match(openStaxWorkflow, /does not by itself\s+prove every local equation/);
-  assert.match(openStaxWorkflow, /Precalculus 2e is pinned and scaffolded, with authoring underway/);
+  assert.match(openStaxWorkflow, /Precalculus 2e is pinned and complete/);
   assert.match(openStaxWorkflow, /moduleScope: "mapped-collections"/);
   assert.match(openStaxWorkflow, /Every command accepts `--bundle KEY`/);
 

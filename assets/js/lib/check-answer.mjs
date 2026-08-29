@@ -205,11 +205,14 @@ function splitEquationSides(latex) {
 /**
  * Is a written term a coefficient-1 squared conic unit — `x^2`, `y^2`, or a
  * squared binomial `(x-2)^2` / `(y+3)^2`? Whitespace must already be removed.
+ * The variable may carry the `_{p…}` subscript that `foldPrimes()` writes for
+ * a primed letter, so the rotated-axes conics of Precalculus §10.4
+ * ($\tfrac{x'^2}{4}+\tfrac{y'^2}{9}=1$) read as the same shape.
  * The coefficient-1 requirement is the point: `9x^2` and `\frac{9x^2}{144}`
  * are the general form's terms, and accepting them would accept the very
  * restatement the standard-form predicates exist to reject.
  */
-const isSquaredConicUnit = (term) => /^(?:[a-zA-Z]|\([a-zA-Z][+-]\d+\))\^\{?2\}?$/.test(term);
+const isSquaredConicUnit = (term) => /^(?:[a-zA-Z](?:_\{p+\})?|\([a-zA-Z](?:_\{p+\})?[+-]\d+\))\^\{?2\}?$/.test(term);
 
 /**
  * The Compute Engine reads a `\frac` with a lone `d` numerator as Leibniz
@@ -299,8 +302,42 @@ function fixLoneDifferentialNumerator(value) {
  *    Only an all-digit numerator AND denominator qualify, so a genuine
  *    coefficient times a fraction ("2\frac{x}{2}(4)") is left alone.
  */
+/**
+ * A primed variable is one symbol to the learner and an invalid parse to the
+ * Compute Engine: `x'` is rejected outright, and MathLive writes a typed
+ * apostrophe as `x^{\prime}` (two as `x^{\doubleprime}`, a following
+ * exponent inside the same group as `x^{\prime2}`), which the engine reads as
+ * a power of a symbol it does not know. The rotated-axes conics of
+ * Precalculus §10.4 are written entirely in $x'$ and $y'$, so every spelling
+ * folds onto a subscripted symbol — `x'` → `x_{p}`, `x''` → `x_{pp}` — with
+ * any trailing exponent lifted back out (`x^{\prime2}` → `x_{p}^{2}`).
+ * The fold is applied to key and response alike, so the two only have to
+ * agree after it; nothing in the corpus keys a genuine `_{p}` subscript.
+ * Applied to a control word too (`\theta'` → `\theta_{p}`).
+ */
+const PRIME_MARK = /'|\\doubleprime(?![a-zA-Z])|\\prime(?![a-zA-Z])/g;
+const primeSubscript = (marks) => {
+  let count = 0;
+  for (const mark of marks.match(PRIME_MARK) ?? []) count += mark === '\\doubleprime' ? 2 : 1;
+  return `_{${'p'.repeat(count)}}`;
+};
+export function foldPrimes(raw) {
+  const symbol = String.raw`((?:\\[a-zA-Z]+|[a-zA-Z]))`;
+  return String(raw ?? '')
+    // braced superscript that OPENS with prime marks: x^{\prime}, x^{\prime2}
+    .replace(
+      new RegExp(String.raw`${symbol}\s*\^\{((?:\s*(?:'|(?:\\doubleprime|\\prime)(?![a-zA-Z])))+)([^{}]*)\}`, 'g'),
+      (m, v, marks, rest) => `${v}${primeSubscript(marks)}${rest.trim() ? `^{${rest.trim()}}` : ''}`,
+    )
+    // bare marks: x', x'', x\prime, x^\prime
+    .replace(
+      new RegExp(String.raw`${symbol}((?:\s*\^?(?:'|(?:\\doubleprime|\\prime)(?![a-zA-Z])))+)`, 'g'),
+      (m, v, marks) => `${v}${primeSubscript(marks)}`,
+    );
+}
+
 export function preprocess(raw) {
-  const despaced = stripGroupingCommas(raw ?? '')
+  const despaced = stripGroupingCommas(foldPrimes(raw ?? ''))
     .replace(/\\\\(?=[a-zA-Z])/g, '\\')
     .replace(/\\[,;:!]/g, '')
     // The rest of TeX's always-ignorable spacing, which `\,`/`\;`/`\:`/`\!`
@@ -533,7 +570,23 @@ function numericallyEquivalent(studentExpr, answerExpr) {
     });
     const value = diff.subs(assignment).N();
     if (!Number.isFinite(value.re) || !Number.isFinite(value.im)) continue; // singularity — try another point
-    if (!sampleIsZero(value)) return false;
+    if (!sampleIsZero(value)) {
+      // A disagreement at a point where either side is non-real is a point
+      // OUTSIDE the expressions' common real domain, and the pinned engine's
+      // complex arithmetic is known-wrong there (division by |b| rather than
+      // |b|², see tools/verify-answers.mjs `hasComplexDivision`): the
+      // rationalized derivative \frac{\sqrt{x-1}}{2(x-1)} "disagreed" with
+      // the keyed \frac{1}{2\sqrt{x-1}} at x = 0.61 and graded incorrect.
+      // Equality is decided on the real domain the exercise is about, so such
+      // a point is skipped like a singularity; the SAMPLES_REQUIRED floor
+      // still fails safe when too few real-domain points remain.
+      const nonReal = [studentExpr, answerExpr].some((side) => {
+        const v = side.subs(assignment).N();
+        return !Number.isFinite(v.re) || !Number.isFinite(v.im) || Math.abs(v.im) > SAMPLE_TOLERANCE;
+      });
+      if (nonReal) continue;
+      return false;
+    }
     agreed += 1;
   }
   return agreed >= SAMPLES_REQUIRED;
@@ -799,8 +852,14 @@ function parseValid(raw) {
   try {
     // Through parseLatex, so a list member's degree mark is spelled out the
     // same way a scalar's is — otherwise "1400^\circ,760^\circ" would keep
-    // the reduction the scalar path no longer has.
-    const expression = parseLatex(preprocess(raw));
+    // the reduction the scalar path no longer has. And through
+    // readFunctionNotation, so a member's written function label is read
+    // the way the scalar path reads one: "x(t)=-2+6t, y(t)=3+4t" answers a
+    // parameterize-the-line ask in the notation the question itself uses,
+    // and used to grade incorrect against the keyed "-2+6t,3+4t" while the
+    // `x=…, y=…` spelling (an equation the member comparison unwraps) and a
+    // lone "x(t)=-2+6t" scalar both graded correct.
+    const expression = parseLatex(readFunctionNotation(preprocess(raw)));
     return expression.isValid ? expression : null;
   } catch {
     return null;
@@ -851,7 +910,7 @@ function groupedReadings(parts, targetCount) {
     if (current.length + remaining < targetCount) return;
     if (index === parts.length) {
       if (current.length === targetCount) {
-        const key = current.join(' ');
+        const key = current.join('\x00');
         if (!seen.has(key)) {
           seen.add(key);
           readings.push([...current]);
@@ -1089,7 +1148,7 @@ function bareLatex(latex) {
  * application, which no equation unwrap in the grader reads.
  */
 function stripWrittenLabel(bare) {
-  const label = bare.match(/^[a-zA-Z]\s*(?:\(\s*[a-zA-Z]\s*\))?\s*=/);
+  const label = bare.match(/^[a-zA-Z](?:_\{p+\})?\s*(?:\(\s*(?:[a-zA-Z]|-?\d+(?:\.\d+)?)\s*\))?\s*=/);
   return label ? bare.slice(label[0].length) : bare;
 }
 
@@ -2759,7 +2818,8 @@ const FORM_PREDICATES = {
   // value-equal to the printed subject by construction. The response must be
   // an equation whose one side is exactly `1` and whose other side is a sum
   // or difference of at least two fractions, each a coefficient-1 squared
-  // term ($x^2$, $y^2$, or a squared binomial) over a positive integer. A
+  // term ($x^2$, $y^2$, or a squared binomial) over a positive integer (a
+  // bare squared term counts as over the unwritten 1). A
   // numerator that keeps its general-form coefficient (`\frac{9x^2}{144}`)
   // fails — that division was the step the exercise asks for.
   //
@@ -2773,15 +2833,66 @@ const FORM_PREDICATES = {
     if (!sides) return false;
     const [one, body] = sides[0] === '1' ? sides : [sides[1], sides[0]];
     if (one !== '1') return false;
-    const terms = splitTopLevelTerms(body).map((term) => term.trim());
+    // splitTopLevelTerms keeps a LEADING sign on the first term (there is no
+    // earlier term to split it from), and the shape test is sign-blind — a
+    // hyperbola written with its negative term first,
+    // $-\frac{x^2}{16}+\frac{y^2}{4}=1$, is the same standard form.
+    const terms = splitTopLevelTerms(body).map((term) => term.trim().replace(/^[+-]\s*/, ''));
     if (terms.length < 2) return false;
     return terms.every((term) => {
+      // A bare squared unit is the fraction over 1 with its denominator
+      // unwritten — $(y-1)^2-\frac{x^2}{4}=1$ IS the standard form of a
+      // hyperbola with $a=1$, and the source prints it that way rather than
+      // as $\frac{(y-1)^2}{1}$. The general form still fails on its right
+      // side or on a coefficient ($4(y-1)^2-x^2=4$).
+      if (isSquaredConicUnit(term)) return true;
       const halves = writtenFractionHalves(term)
         ?? term.match(/^([^/]+)\/(\d+)$/)?.slice(1);
       if (!halves) return false;
       const [numerator, denominator] = halves.map((half) => half.replace(/\s+/g, ''));
       return isSquaredConicUnit(numerator) && /^\d+$/.test(denominator) && Number(denominator) > 0;
     });
+  },
+  // The parabola of the same class, in the conic chapter's own shape: "Write
+  // $x^2-4x+8y+12=0$ in standard form" answers $(x-2)^2=-8(y+1)$, and the
+  // origin cases $y^2=8x$ / $x^2=-6y$ are the same shape with both shifts
+  // zero. `vertex-form` cannot serve it — that token wants $a(x-h)^2+k$ on
+  // one side of a bare `y=` label, which is the FUNCTION reading the conic
+  // chapter deliberately replaces with $(x-h)^2=4p(y-k)$. The response must
+  // be an equation whose one side is a single coefficient-1 squared unit
+  // ($x^2$, $y^2$, $(x-h)^2$, $(y-k)^2$) and whose other side is one term in
+  // the OTHER variable: an optional numeric coefficient (integer, decimal, or
+  // written fraction, or radical — the $4p$) on the bare variable or on its shifted
+  // binomial, or that variable/binomial over an integer denominator. The
+  // general form fails on its term count; $x=\frac{y^2}{8}$ fails because
+  // neither side is a bare squared unit; the half-completed
+  // $x^2=4x-8y-12$ fails on the sum. Both orientations pass.
+  'parabola-standard-form': (latex) => {
+    const sides = splitEquationSides(latex);
+    if (!sides) return false;
+    const variable = String.raw`([a-zA-Z])(?:_\{p+\})?`;
+    const shifted = String.raw`(?:${variable}|\(${variable}[+-]\d+\))`;
+    const squaredUnit = new RegExp(String.raw`^${shifted}\^\{?2\}?$`);
+    // The 4p may be irrational — a focus at $(\sqrt2,0)$ gives $y^2=4\sqrt2x$ —
+    // so a coefficient is an integer/decimal, a written fraction, a radical,
+    // or an integer times a radical.
+    const radical = String.raw`\\sqrt(?:\{\d+\}|\d)`;
+    const coefficient = String.raw`(?:\d+(?:\.\d+)?|\\[tdc]?frac\{[+-]?\d+\}\{\d+\}|\\[tdc]?frac\d\d|\d*${radical})?`;
+    const linearTerm = new RegExp(String.raw`^[+-]?${coefficient}(?:\\cdot)?${shifted}$`);
+    const linearOverInteger = new RegExp(String.raw`^[+-]?\\[tdc]?frac\{\(?${variable}(?:[+-]\d+)?\)?\}\{\d+\}$`);
+    // The same quotient written with a slash, $(x-2)^2=(y-1)/2$ — the
+    // sibling `conic-standard-form` reads both spellings, and a value-equal
+    // response in the very shape the ask names must never report 'form'.
+    const linearOverIntegerSlash = new RegExp(String.raw`^[+-]?\(?${variable}(?:[+-]\d+)?\)?/\d+$`);
+    const letterOf = (match) => match.slice(1).find((group) => group !== undefined);
+    const isParabola = (squared, linear) => {
+      const unit = squared.match(squaredUnit);
+      if (!unit) return false;
+      const term = linear.match(linearTerm) ?? linear.match(linearOverInteger)
+        ?? linear.match(linearOverIntegerSlash);
+      return term !== null && letterOf(unit) !== letterOf(term);
+    };
+    return isParabola(sides[0], sides[1]) || isParabola(sides[1], sides[0]);
   },
   // The circle of the same class: "Write $x^2+y^2+10x+6y+30=0$ in standard
   // form" answers $(x+5)^2+(y+3)^2=4$. Standard form here is two coefficient-1
@@ -3095,6 +3206,7 @@ const FORM_PHRASES = {
   'slope-intercept-form': 'in slope-intercept form, y = mx + b',
   'vertex-form': 'in vertex form, with the square completed',
   'conic-standard-form': 'in standard form, with each squared term over its denominator and the right side equal to 1',
+  'parabola-standard-form': 'in standard form, with the squared term alone on one side and a single multiple of the other variable (or its shifted binomial) on the other',
   'circle-standard-form': 'in standard form, with the squared binomials on the left and the squared radius on the right',
   'exponential-form': 'in exponential form, with no logarithm left',
   'base-e': 'with $e$ as the base',
@@ -3164,7 +3276,16 @@ export function checkForm(studentRaw, spec) {
  * against its own text stays reflexive — the invariant self-grading
  * (tools/verify-section.mjs) relies on.
  */
-const FUNCTION_APPLICATION_RE = /^[a-zA-Z]\s*(?:\\left\s*)?\(\s*([a-zA-Z])\s*(?:\\right\s*)?\)\s*/;
+/**
+ * The name may carry the `_{p…}` subscript foldPrimes() writes for a prime —
+ * chapter 12's derivative asks invite `f'(x)=2x+3` (MathLive: `f^{\prime}(x)=`),
+ * which folds to `f_{p}(x)=…` before this reads it — and the argument may be
+ * a numeral (`f'(3)=6`, `f(2)=5`) for the LABEL reading only: an application
+ * at a number is a value, never the output quantity `y` of an equation.
+ */
+const FUNCTION_APPLICATION_RE = /^[a-zA-Z](?:_\{p+\})?\s*(?:\\left\s*)?\(\s*([a-zA-Z]|-?\d+(?:\.\d+)?)\s*(?:\\right\s*)?\)\s*/;
+/** A written Leibniz label, `\frac{dy}{dx}=…` — stripped the way `f'(x)=` is. */
+const LEIBNIZ_LABEL_RE = /^\\[tdc]?frac\s*\{\s*d[a-zA-Z]?\s*\}\s*\{\s*d[a-zA-Z]\s*\}\s*=(?![=<>])/;
 
 /**
  * Does the writing give `y` a meaning of its own? Variables here are single
@@ -3177,13 +3298,17 @@ const FUNCTION_APPLICATION_RE = /^[a-zA-Z]\s*(?:\\left\s*)?\(\s*([a-zA-Z])\s*(?:
 const writesY = (latex) => latex.replace(/\\[a-zA-Z]+/g, ' ').includes('y');
 
 function readFunctionNotation(latex) {
+  const leibniz = latex.match(LEIBNIZ_LABEL_RE);
+  if (leibniz && !latex.slice(leibniz[0].length).includes('=')) {
+    return latex.slice(leibniz[0].length).trim();
+  }
   const application = latex.match(FUNCTION_APPLICATION_RE);
   if (!application) return latex;
   const rest = latex.slice(application[0].length);
   if (/^=(?![=<>])/.test(rest) && !rest.slice(1).includes('=')) {
     return rest.slice(1).trim();
   }
-  if (rest.includes('=') && application[1] !== 'y' && !writesY(rest)) {
+  if (/^[a-zA-Z]$/.test(application[1]) && rest.includes('=') && application[1] !== 'y' && !writesY(rest)) {
     return `y${rest}`;
   }
   return latex;
@@ -3200,7 +3325,7 @@ function readFunctionNotation(latex) {
  */
 function functionLabelEquation(latex) {
   const application = latex.match(FUNCTION_APPLICATION_RE);
-  if (!application) return null;
+  if (!application || !/^[a-zA-Z]$/.test(application[1])) return null;
   const rest = latex.slice(application[0].length);
   if (!/^=(?![=<>])/.test(rest) || rest.slice(1).includes('=')) return null;
   if (application[1] === 'y' || writesY(rest)) return null;

@@ -38,11 +38,11 @@
     },
     "precalculus": {
       "bundle": "college-algebra-bundle",
-      "authoringStatus": "scaffolded",
+      "authoringStatus": "complete",
       "upstreamChapters": 12,
       "upstreamSections": 73,
       "localChapters": 12,
-      "mappedSections": 57
+      "mappedSections": 73
     }
   },
   "sections": [
@@ -2367,6 +2367,150 @@
       "moduleId": "m49436",
       "sourceTitle": "Solving Systems with Cramer's Rule",
       "moduleSha256": "8b019287dde63a899203d5033d97780d26817fe1631161b90359f7419bc94fba"
+    },
+    {
+      "localPath": "content/math/precalculus/10-analytic-geometry/01-the-ellipse.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "10.1",
+      "moduleId": "m49438",
+      "sourceTitle": "The Ellipse",
+      "moduleSha256": "70f04e4b512f35ec5617f5b8c7045e5c7ac4a4473a6bf69a464f0477135d5a5e"
+    },
+    {
+      "localPath": "content/math/precalculus/10-analytic-geometry/02-the-hyperbola.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "10.2",
+      "moduleId": "m49439",
+      "sourceTitle": "The Hyperbola",
+      "moduleSha256": "f202b645610d2b3d6d52ecbcee83f4f95c67b6d77a633d626efb88eb18286918"
+    },
+    {
+      "localPath": "content/math/precalculus/10-analytic-geometry/03-the-parabola.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "10.3",
+      "moduleId": "m49440",
+      "sourceTitle": "The Parabola",
+      "moduleSha256": "af9a04fd189c87014cdd9134404525fdc55477f5db511455c6d6d99be3e863b6"
+    },
+    {
+      "localPath": "content/math/precalculus/10-analytic-geometry/04-rotation-of-axes.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "10.4",
+      "moduleId": "m49441",
+      "sourceTitle": "Rotation of Axes",
+      "moduleSha256": "d772bd955269f294ad433abb0d9b09fc0d9052cd929cbc13a6751e748e769ff9"
+    },
+    {
+      "localPath": "content/math/precalculus/10-analytic-geometry/05-conic-sections-in-polar-coordinates.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "10.5",
+      "moduleId": "m49442",
+      "sourceTitle": "Conic Sections in Polar Coordinates",
+      "moduleSha256": "fcc8e508be4191c3d80e890fc3623171d56ff2b350b27fa67885a37ca5f7d1a8"
+    },
+    {
+      "localPath": "content/math/precalculus/11-sequences-probability-and-counting-theory/01-sequences-and-their-notations.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "11.1",
+      "moduleId": "m49444",
+      "sourceTitle": "Sequences and Their Notations",
+      "moduleSha256": "19a073807f83ebba2ed7d8e8db18474bd9640b246df4b5438ca219a76a8eeddd"
+    },
+    {
+      "localPath": "content/math/precalculus/11-sequences-probability-and-counting-theory/02-arithmetic-sequences.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "11.2",
+      "moduleId": "m49445",
+      "sourceTitle": "Arithmetic Sequences",
+      "moduleSha256": "7bc2719ed6f8338a7d76d7b082e22f00d16ae27a1cf7b5127624ef18564178de"
+    },
+    {
+      "localPath": "content/math/precalculus/11-sequences-probability-and-counting-theory/03-geometric-sequences.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "11.3",
+      "moduleId": "m49446",
+      "sourceTitle": "Geometric Sequences",
+      "moduleSha256": "447ab1761c7a2845b48af9711291244004d056c1209cb38398673839f6329ec5"
+    },
+    {
+      "localPath": "content/math/precalculus/11-sequences-probability-and-counting-theory/04-series-and-their-notations.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "11.4",
+      "moduleId": "m49447",
+      "sourceTitle": "Series and Their Notations",
+      "moduleSha256": "64185677bb53d1d0fdfcf03f8569541bbc1821a7304d1cb41fd9c678efbdc728"
+    },
+    {
+      "localPath": "content/math/precalculus/11-sequences-probability-and-counting-theory/05-counting-principles.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "11.5",
+      "moduleId": "m49448",
+      "sourceTitle": "Counting Principles",
+      "moduleSha256": "5dab69ee46ae70231986b2d244d448b904594520087736a52ce7bbd567c0fba5"
+    },
+    {
+      "localPath": "content/math/precalculus/11-sequences-probability-and-counting-theory/06-binomial-theorem.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "11.6",
+      "moduleId": "m49449",
+      "sourceTitle": "Binomial Theorem",
+      "moduleSha256": "2f3cb191efaa04dab5c1f704aa47f6bfa2645efdcd56a01cdaaf6c5b424a7fcc"
+    },
+    {
+      "localPath": "content/math/precalculus/11-sequences-probability-and-counting-theory/07-probability.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "11.7",
+      "moduleId": "m49450",
+      "sourceTitle": "Probability",
+      "moduleSha256": "ec4357f1d27c0d9f411413075dc01dea326fbc77fe4f4b032f8c95c1b5cccfa7"
+    },
+    {
+      "localPath": "content/math/precalculus/12-introduction-to-calculus/01-finding-limits-numerical-and-graphical-approaches.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "12.1",
+      "moduleId": "m49452",
+      "sourceTitle": "Finding Limits: Numerical and Graphical Approaches",
+      "moduleSha256": "f1b1310fea76259c9d92f574e388f7458a32f06636f51debb94ad2a5708ea1b8"
+    },
+    {
+      "localPath": "content/math/precalculus/12-introduction-to-calculus/02-finding-limits-properties-of-limits.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "12.2",
+      "moduleId": "m49453",
+      "sourceTitle": "Finding Limits: Properties of Limits",
+      "moduleSha256": "239efbbc055450819e397454bebe6a5368af399d2bc2b688a5222b8ca79877c9"
+    },
+    {
+      "localPath": "content/math/precalculus/12-introduction-to-calculus/03-continuity.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "12.3",
+      "moduleId": "m49454",
+      "sourceTitle": "Continuity",
+      "moduleSha256": "d576f7864c36b84b246a199b4c2b35c38a5c575b44a266e53f8ebd4f29f0a5ba"
+    },
+    {
+      "localPath": "content/math/precalculus/12-introduction-to-calculus/04-derivatives.md",
+      "bundle": "college-algebra-bundle",
+      "book": "precalculus",
+      "sourceSection": "12.4",
+      "moduleId": "m49455",
+      "sourceTitle": "Derivatives",
+      "moduleSha256": "a81dd626fad3b0d7484235fc580af4f09c0aadab8f8962ced969013f656b7971"
     }
   ]
 }

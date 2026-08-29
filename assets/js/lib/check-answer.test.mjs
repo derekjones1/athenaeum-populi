@@ -13,6 +13,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
+  foldPrimes,
   ANSWER_FORM_TOKENS, checkAnswer, checkFormAsGraded, describeAnswerForm, parseAnswerForm,
   preprocess,
 } from './check-answer.mjs';
@@ -47,6 +48,30 @@ const extra = [
   // student, answer, expected
   ['\\frac{1}{2}', '0.5', 'correct'],
   ['0.5', '\\frac{1}{2}', 'correct'],
+  // Sampled equality is decided on the expressions' common REAL domain. Two
+  // of the sample points (0.61, 0.23) sit left of x = 1, where \sqrt{x-1} is
+  // complex and the pinned engine's complex division is wrong, so the
+  // rationalized spelling of a radical derivative "disagreed" with its key
+  // there and graded incorrect (Precalculus 12.4 knowledge-check item). A
+  // non-real sample point is now skipped like a singularity …
+  ['\\frac{\\sqrt{x-1}}{2(x-1)}', '\\frac{1}{2\\sqrt{x-1}}', 'correct'],
+  ['\\frac{\\sqrt{x-1}}{2x-2}', '\\frac{1}{2\\sqrt{x-1}}', 'correct'],
+  // … while real-domain disagreements still fail, and a radical whose real
+  // domain holds too few sample points fails SAFE rather than open.
+  ['\\frac{-\\sqrt{x-1}}{2(x-1)}', '\\frac{1}{2\\sqrt{x-1}}', 'incorrect'],
+  ['\\frac{\\sqrt{x-1}}{x-1}', '\\frac{1}{2\\sqrt{x-1}}', 'incorrect'],
+  ['\\sqrt{1-x}', '\\sqrt{x-1}', 'incorrect'],
+  ['\\frac{\\sqrt{x-8}}{2(x-8)}', '\\frac{1}{2\\sqrt{x-8}}', 'incorrect'],
+  // A list member's written function label is read the way a scalar's is:
+  // "parameterize the line" is answered in the question's own x(t)/y(t)
+  // notation, and the labelled pair graded incorrect while the `x=`/`y=`
+  // spelling and a lone labelled scalar both graded correct. Order is still
+  // the list's order, and a wrong value under a label is still wrong.
+  ['x(t)=-2+6t, y(t)=3+4t', '-2+6t,3+4t', 'correct'],
+  ['x(t)=-2+6t,y(t)=3+4t', '-2+6t,3+4t', 'correct'],
+  ['x=-2+6t, y=3+4t', '-2+6t,3+4t', 'correct'],
+  ['x(t)=3+4t, y(t)=-2+6t', '-2+6t,3+4t', 'incorrect'],
+  ['x(t)=-2+6t, y(t)=3-4t', '-2+6t,3+4t', 'incorrect'],
   // Decimal implicit multiplication: the engine reads "0.32(400)" as
   // repeating-decimal notation (0.32400400…) unless preprocess() makes the
   // product explicit. "compute $0.32(400) + 15$" is the lessons' own
@@ -159,6 +184,16 @@ const extra = [
   ['f(x)=-7x+4', 'y=-7x+3', 'incorrect'], // wrong value still wrong
   ['f(x)=', 'y=-7x+3', 'invalid'], // a label with nothing after it is no answer
   ['y-5=2(x-1)', 'y-5=2(x-1)', 'correct'], // a genuine equation is never half-eaten
+  // A derivative-notation label is stripped the same way (Precalculus ch. 12,
+  // August 29, 2026): the prime folds to `f_{p}(x)=` before the label is read,
+  // a numeral argument is a label reading only, and Leibniz's `dy/dx=` is a label.
+  ["f'(x)=2x+3", '2x+3', 'correct'],
+  ["f^{\\prime}\\left(x\\right)=2x+3", '2x+3', 'correct'], // MathLive's spelling of a typed apostrophe
+  ["f'(3)=6", '6', 'correct'],
+  ['f(2)=5', '5', 'correct'],
+  ['\\frac{dy}{dx}=2x+3', '2x+3', 'correct'],
+  ["f'(x)=2x+4", '2x+3', 'incorrect'], // wrong value still wrong
+  ['f(3)-4=2', 'y-4=2', 'incorrect'], // a numeral argument is never read as the output quantity
   // The application as an OUTPUT QUANTITY inside an equation — the point-slope
   // response a function-notation prompt invites — reads as `y`.
   ['f(x)-4=-\\frac{1}{2}(x+1)', 'y-4=-\\frac{1}{2}(x+1)', 'correct'],
@@ -944,6 +979,52 @@ const formCases = [
   ['(x+5)^2+(y+3)^2=4', '(x+5)^2+(y+3)^2=4', 'circle-standard-form', 'correct'],
   ['x^2+y^2+10x+6y+30=0', '(x+5)^2+(y+3)^2=4', 'circle-standard-form', 'form'],
   ['x^2+y^2=121', 'x^2+y^2=121', 'circle-standard-form', 'correct'],
+  // a bare squared term is the fraction over an unwritten 1 — the source's
+  // own spelling of an a=1 hyperbola — while the general form still fails on
+  // its coefficient or its right side
+  ['(y-1)^2-\\frac{x^2}{4}=1', '(y-1)^2-\\frac{x^2}{4}=1', 'conic-standard-form', 'correct'],
+  ['4(y-1)^2-x^2=4', '(y-1)^2-\\frac{x^2}{4}=1', 'conic-standard-form', 'form'],
+  ['x^2+4y^2=1', 'x^2+4y^2=1', 'conic-standard-form', 'form'],
+  // the negative term written first is the same standard form (a leading
+  // sign stays attached to the first split term and must be ignored)
+  ['-\\frac{x^2}{16}+\\frac{y^2}{4}=1', '\\frac{y^2}{4}-\\frac{x^2}{16}=1', 'conic-standard-form', 'correct'],
+  ['-\\frac{x^2}{16}+\\frac{y^2}{9}=1', '\\frac{y^2}{4}-\\frac{x^2}{16}=1', 'conic-standard-form', 'incorrect'],
+  // primed variables (Precalculus §10.4's rotated axes) fold onto one symbol
+  // in every spelling MathLive or a key can write, and still grade the shape
+  ["\\frac{x'^2}{4}+\\frac{y'^2}{9}=1", "\\frac{x'^2}{4}+\\frac{y'^2}{9}=1", 'conic-standard-form', 'correct'],
+  ['\\frac{x^{\\prime2}}{4}+\\frac{y^{\\prime2}}{9}=1', "\\frac{x'^2}{4}+\\frac{y'^2}{9}=1", 'conic-standard-form', 'correct'],
+  ['\\frac{x^{\\prime2}}{9}+\\frac{y^{\\prime2}}{4}=1', "\\frac{x'^2}{4}+\\frac{y'^2}{9}=1", 'conic-standard-form', 'incorrect'],
+  ["9x'^2+4y'^2=36", "\\frac{x'^2}{4}+\\frac{y'^2}{9}=1", 'conic-standard-form', 'form'],
+  ['x^2+2xy+y^2=4', "\\frac{x'^2}{4}+\\frac{y'^2}{9}=1", 'conic-standard-form', 'incorrect'],
+  // parabola-standard-form — the conic chapter's (x-h)^2 = 4p(y-k): one side a
+  // bare squared unit, the other one multiple of the other variable or its
+  // shifted binomial. The general form, the function reading x = y^2/8, the
+  // half-completed square, and the distributed right side all fail
+  ['y^2=8x', 'y^2=8x', 'parabola-standard-form', 'correct'],
+  ['x=\\frac{y^2}{8}', 'y^2=8x', 'parabola-standard-form', 'form'],
+  ['x^2=-6y', 'x^2=-6y', 'parabola-standard-form', 'correct'],
+  ['y^2=x', 'y^2=x', 'parabola-standard-form', 'correct'],
+  ['(x-2)^2=-8(y+1)', '(x-2)^2=-8(y+1)', 'parabola-standard-form', 'correct'],
+  ['-8(y+1)=(x-2)^2', '(x-2)^2=-8(y+1)', 'parabola-standard-form', 'correct'],
+  ['\\left(x-2\\right)^2=-8\\left(y+1\\right)', '(x-2)^2=-8(y+1)', 'parabola-standard-form', 'correct'],
+  ['{(x-2)}^2=-8(y+1)', '(x-2)^2=-8(y+1)', 'parabola-standard-form', 'correct'],
+  ['x^2-4x+8y+12=0', '(x-2)^2=-8(y+1)', 'parabola-standard-form', 'form'],
+  ['x^2=4x-8y-12', '(x-2)^2=-8(y+1)', 'parabola-standard-form', 'form'],
+  // a fractional 4p written as a quotient over an integer, in either
+  // spelling — `\frac{y-1}{2}` and the slash `(y-1)/2` are the same shape
+  ['(x-2)^2=\\frac{y-1}{2}', '(x-2)^2=\\frac{1}{2}(y-1)', 'parabola-standard-form', 'correct'],
+  ['(x-2)^2=(y-1)/2', '(x-2)^2=\\frac{1}{2}(y-1)', 'parabola-standard-form', 'correct'],
+  ['(x-2)^2=y/2', '(x-2)^2=\\frac{1}{2}(y-1)', 'parabola-standard-form', 'incorrect'],
+  ['(x-2)^2=(y-1)/(2)', '(x-2)^2=\\frac{1}{2}(y-1)', 'parabola-standard-form', 'form'],
+  ['(x-2)^2=-8y-8', '(x-2)^2=-8(y+1)', 'parabola-standard-form', 'form'],
+  ['(x-2)^2=\\frac{y+1}{2}', '(x-2)^2=\\frac{1}{2}(y+1)', 'parabola-standard-form', 'correct'],
+  ['(x-2)^2=\\frac{1}{2}(y+1)', '(x-2)^2=\\frac{1}{2}(y+1)', 'parabola-standard-form', 'correct'],
+  ['(y-3)^2=-12(x-1)', '(y-3)^2=-12(x-2)', 'parabola-standard-form', 'incorrect'],
+  // an irrational 4p (focus at (√2, 0)) is still one coefficient
+  ['y^2=4\\sqrt{2}x', 'y^2=4\\sqrt{2}x', 'parabola-standard-form', 'correct'],
+  ['y^2=4\\sqrt2x', 'y^2=4\\sqrt{2}x', 'parabola-standard-form', 'correct'],
+  ['(x+1)^2=-2\\sqrt{5}(y-3)', '(x+1)^2=-2\\sqrt{5}(y-3)', 'parabola-standard-form', 'correct'],
+  ['x^2+2x-4\\sqrt{2}y+1=0', '(x+1)^2=4\\sqrt{2}y', 'parabola-standard-form', 'form'],
   // point-slope-form — the prompt prints nothing to retype, but the engine
   // grades the distributed and the scaled restatements equal to the authored
   // equation, so only the m(x-x_1) shape separates them
@@ -977,6 +1058,7 @@ const formCases = [
   ['\\frac{-x}{3}-2', '-\\frac{1}{3}x-2', 'slope-intercept-form', 'correct'],
   ['y=-\\frac{1}{3}x-2', '-\\frac{1}{3}x-2', 'slope-intercept-form', 'correct'],
   ['f(x)=-7x+3', 'y=-7x+3', 'slope-intercept-form', 'correct'],
+  ["f'(x)=2x+3", '2x+3', 'polynomial', 'correct'], // a derivative label is stripped before the shape is read
   ['f\\left(x\\right)=-7x+3', 'y=-7x+3', 'slope-intercept-form', 'correct'],
   ['x', 'x', 'slope-intercept-form', 'correct'],
   // the stripped label reaches EVERY form predicate, not just the two that
@@ -1484,4 +1566,30 @@ test('a tuple with grouped members is reconciled to the answer arity', () => {
   // arity already matching is never re-read: (1,536) stays the pair it types
   assert.equal(checkAnswer('(1,536)', '(1,536)'), 'correct');
   assert.equal(checkAnswer('(1536)', '(1,536)'), 'incorrect');
+});
+
+test('a primed variable folds onto one symbol in every spelling', () => {
+  // MathLive writes a typed apostrophe as ^{\\prime}, two as ^{\\doubleprime},
+  // and a following exponent inside the same group; keys write x'. All of
+  // them must reach the engine as the same subscripted symbol.
+  assert.equal(foldPrimes("x'"), 'x_{p}');
+  assert.equal(foldPrimes("x'^2"), 'x_{p}^2');
+  assert.equal(foldPrimes('x^{\\prime}'), 'x_{p}');
+  assert.equal(foldPrimes('x^{\\prime2}'), 'x_{p}^{2}');
+  assert.equal(foldPrimes('x^{\\prime 2}'), 'x_{p}^{2}');
+  assert.equal(foldPrimes('x^\\prime'), 'x_{p}');
+  assert.equal(foldPrimes("x''"), 'x_{pp}');
+  assert.equal(foldPrimes('y^{\\doubleprime}'), 'y_{pp}');
+  assert.equal(foldPrimes("\\theta'"), '\\theta_{p}');
+  assert.equal(foldPrimes("(x',y')"), '(x_{p},y_{p})');
+  // an apostrophe directly followed by a letter — the cross term x'y' — folds
+  // both symbols (the letter guard applies to the \prime control word only)
+  assert.equal(foldPrimes("2x'y'"), '2x_{p}y_{p}');
+  assert.equal(checkAnswer("3x^{\\prime2}+2x^{\\prime}y^{\\prime}-5y^{\\prime2}+1=0", "3x'^2+2x'y'-5y'^2+1=0"), 'correct');
+  // nothing to fold stays byte-identical
+  assert.equal(foldPrimes('\\frac{x^2}{4}+\\frac{y^2}{9}=1'), '\\frac{x^2}{4}+\\frac{y^2}{9}=1');
+  // and the folded spellings grade equal, wrong values still wrong
+  assert.equal(checkAnswer("(x',y')", '(x^{\\prime},y^{\\prime})'), 'correct');
+  assert.equal(checkAnswer("(2\\sqrt{3},-1)", "(2\\sqrt{3},-1)"), 'correct');
+  assert.equal(checkAnswer("x'=2", "x'=3"), 'incorrect');
 });

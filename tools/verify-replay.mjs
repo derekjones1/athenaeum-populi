@@ -126,6 +126,7 @@ export const SOUND_COINCIDENCES = [
   ['content/math/prealgebra/11-graphs/03-graphing-with-intercepts.md', 'The equation $x = -7$ has', 'x = -7', 'vertical line x = a: it crosses the x-axis at that same a'],
   ['content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md', 'Use a geoboard model: wha', '-2', 'the slope coincides with a printed rise/run'],
   ['content/math/prealgebra/knowledge-check-01-06.md', 'The ages, in months, of 10 children in a preschool class are: 55, 55, 50, 51, 52, 50, 53, 51, 55, 49. Find the mo', '55', 'the mode IS a printed datum'],
+  ['content/math/precalculus/knowledge-check-07-12.md', 'How many ways are there to choose a number from the set', '6', 'the count of qualifying set members (−6, 4, 12, 18, 24, 32) coincides with the printed divisor 6'],
   ['content/math/precalculus/05-trigonometric-functions/02-unit-circle-sine-and-cosine-functions.md', 'A certain angle $t$ corresponds to a point on the unit circle at', '\\left(-\\tfrac{\\sqrt2}{2},\\tfrac{\\sqrt2}{2}\\right)', 'the unit-circle identification itself: $(\\cos t,\\sin t)$ IS the point, so on the unit circle the printed point states its own answer and copying it is the correct response. The source Try It (m49372, after Example 1) is written this way deliberately — it follows the example that establishes $\\cos t=x$ and $\\sin t=y$ — and no answerForm can separate the two, because the response and the printed span are the same value in the same shape'],
 ];
 

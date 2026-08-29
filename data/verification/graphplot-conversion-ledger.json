@@ -17,6 +17,10 @@
    "verdict": "keep",
    "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
   },
+  "03699d8d60b1a621": {
+   "verdict": "keep",
+   "note": "Write-the-equation ask (standard form of a conic): the answer is an equation guarded by conic-standard-form / parabola-standard-form; no graph is produced and a conic has no graphplot answer form."
+  },
   "039ebe80d65de61b": {
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
@@ -109,9 +113,17 @@
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
   },
+  "0fd024d38647aa67": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
+  },
   "10405ed11076550c": {
    "verdict": "keep",
    "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "10432741670f49de": {
+   "verdict": "keep",
+   "note": "Asymptote-equation ask for a hyperbola: the answer is a pair of line equations keyed as an unordered list; the hyperbola itself has no graphplot answer form and the asymptotes are derived features, not a graph to draw. Same class as the chapter-3 asymptote-equation keeps."
   },
   "1053b55444a1cf47": {
    "verdict": "keep",
@@ -137,6 +149,10 @@
    "verdict": "keep",
    "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
   },
+  "13fe5fea9e99b42b": {
+   "verdict": "keep",
+   "note": "a limit or function value read from a static graph (or a graphing-utility estimate); nothing for a learner to plot — graphplot grades lines, systems, quadratics, and point sets only"
+  },
   "15d9a0dbb516aa71": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
@@ -153,9 +169,21 @@
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
   },
+  "18ef86a486b8e250": {
+   "verdict": "keep",
+   "note": "Write-the-equation ask (standard form of a conic): the answer is an equation guarded by conic-standard-form / parabola-standard-form; no graph is produced and a conic has no graphplot answer form."
+  },
   "198fad2c1e8def20": {
    "verdict": "keep",
    "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "1b883906fca0326e": {
+   "verdict": "keep",
+   "note": "a limit or function value read from a static graph (or a graphing-utility estimate); nothing for a learner to plot — graphplot grades lines, systems, quadratics, and point sets only"
+  },
+  "1bbb969ba153f526": {
+   "verdict": "keep",
+   "note": "Graph-recognition MC over polar-conic candidates (section 10.5 keeps its recognition MCs); a polar conic has no graphplot answer form — graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets, never a curve as a curve."
   },
   "1bf2ad278c500102": {
    "verdict": "keep",
@@ -164,6 +192,10 @@
   "1cab8895c946feb3": {
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "1cdd3d3ee12ddfcb": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
   },
   "1d230f92e3e7f4ad": {
    "verdict": "keep",
@@ -180,6 +212,10 @@
   "1e8be9172ed7dc8c": {
    "verdict": "keep",
    "note": "polar plotting: no polar graphplot form; polar lattice is not the snap lattice"
+  },
+  "1ebca9cfae6c474f": {
+   "verdict": "keep",
+   "note": "a function value, derivative estimate, continuity interval, or discontinuity location read from a static graph — no plottable answer"
   },
   "1f1353de26a6a550": {
    "verdict": "keep",
@@ -213,6 +249,10 @@
    "verdict": "keep",
    "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
   },
+  "220141c553f577ca": {
+   "verdict": "keep",
+   "note": "Identify-the-conic-type ask from a general-form equation: categorical recognition, no graph is produced; a conic has no graphplot answer form."
+  },
   "2201678ee7e3e0db": {
    "verdict": "keep",
    "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
@@ -232,6 +272,10 @@
   "244c6fcc144b3b49": {
    "verdict": "keep",
    "note": "polar symmetry classification MC; categorical answer, no polar graphplot mode"
+  },
+  "24fdd33347b81095": {
+   "verdict": "keep",
+   "note": "a limit or function value read from a static graph (or a graphing-utility estimate); nothing for a learner to plot — graphplot grades lines, systems, quadratics, and point sets only"
   },
   "26d79b94ebb0de15": {
    "verdict": "keep",
@@ -269,6 +313,10 @@
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
   },
+  "2bfd53f69e0b8d3f": {
+   "verdict": "keep",
+   "note": "Asymptote-equation ask for a hyperbola: the answer is a pair of line equations keyed as an unordered list; the hyperbola itself has no graphplot answer form and the asymptotes are derived features, not a graph to draw. Same class as the chapter-3 asymptote-equation keeps."
+  },
   "2c7185703caa2f7e": {
    "verdict": "keep",
    "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
@@ -304,6 +352,14 @@
   "2e9bb8d9423fe3e1": {
    "verdict": "keep",
    "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "2f35d6eea9a2d087": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
+  },
+  "300ecab5ca2790ee": {
+   "verdict": "keep",
+   "note": "Identify-the-conic-type ask from a general-form equation: categorical recognition, no graph is produced; a conic has no graphplot answer form."
   },
   "315d125634b7fffd": {
    "verdict": "keep",
@@ -348,6 +404,10 @@
   "36b60e9275a98ea7": {
    "verdict": "keep",
    "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
+  },
+  "37cabf8ca175723c": {
+   "verdict": "keep",
+   "note": "Asymptote-equation ask for a hyperbola: the answer is a pair of line equations keyed as an unordered list; the hyperbola itself has no graphplot answer form and the asymptotes are derived features, not a graph to draw. Same class as the chapter-3 asymptote-equation keeps."
   },
   "37d04ecc38fe8fdc": {
    "verdict": "keep",
@@ -457,6 +517,10 @@
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
   },
+  "48c7a589e45bbbe6": {
+   "verdict": "keep",
+   "note": "a function value, derivative estimate, continuity interval, or discontinuity location read from a static graph — no plottable answer"
+  },
   "499d81d383e78f67": {
    "verdict": "keep",
    "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
@@ -525,6 +589,10 @@
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
   },
+  "571ea0028606a069": {
+   "verdict": "keep",
+   "note": "Write-the-equation ask (standard form of a conic): the answer is an equation guarded by conic-standard-form / parabola-standard-form; no graph is produced and a conic has no graphplot answer form."
+  },
   "57276341bbcf0d69": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
@@ -564,6 +632,14 @@
   "5ca28b4653999b22": {
    "verdict": "keep",
    "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "5d48e613480f6b4e": {
+   "verdict": "keep",
+   "note": "discontinuity locations / a domain read from a static graph of sin(12pi/x) or a piecewise curve — no plottable answer"
+  },
+  "5d50c4f4eff91951": {
+   "verdict": "keep",
+   "note": "a function value, derivative estimate, continuity interval, or discontinuity location read from a static graph — no plottable answer"
   },
   "5d5cbf2333d90322": {
    "verdict": "keep",
@@ -605,6 +681,10 @@
    "verdict": "keep",
    "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
   },
+  "65dfcece493ee48a": {
+   "verdict": "keep",
+   "note": "a function value, derivative estimate, continuity interval, or discontinuity location read from a static graph — no plottable answer"
+  },
   "65e2d952479d8cc9": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
@@ -624,6 +704,10 @@
   "66e6dc97fdeb2ed5": {
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "670dbe058c22c03e": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
   },
   "67ac96892f1a27ca": {
    "verdict": "keep",
@@ -653,13 +737,25 @@
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
   },
+  "6b99024aece83ee1": {
+   "verdict": "keep",
+   "note": "Asymptote-equation ask for a hyperbola: the answer is a pair of line equations keyed as an unordered list; the hyperbola itself has no graphplot answer form and the asymptotes are derived features, not a graph to draw. Same class as the chapter-3 asymptote-equation keeps."
+  },
   "6bb5ce36f42a7c2c": {
    "verdict": "keep",
    "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
   },
+  "6c5ded847706b483": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
+  },
   "6d54848e9e31be9e": {
    "verdict": "keep",
    "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
+  },
+  "6e12d8a52e2fe391": {
+   "verdict": "keep",
+   "note": "Asymptote-equation ask for a hyperbola: the answer is a pair of line equations keyed as an unordered list; the hyperbola itself has no graphplot answer form and the asymptotes are derived features, not a graph to draw. Same class as the chapter-3 asymptote-equation keeps."
   },
   "6f4b2b61c74c103c": {
    "verdict": "keep",
@@ -668,6 +764,10 @@
   "703a901092ddead5": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "7119403ddb5348dd": {
+   "verdict": "keep",
+   "note": "Identify-the-conic-type ask from a general-form equation: categorical recognition, no graph is produced; a conic has no graphplot answer form."
   },
   "734d14adb57bc11a": {
    "verdict": "keep",
@@ -729,6 +829,10 @@
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
   },
+  "787b88e15648917c": {
+   "verdict": "keep",
+   "note": "a function value, derivative estimate, continuity interval, or discontinuity location read from a static graph — no plottable answer"
+  },
   "78ecda1da02f6279": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
@@ -764,6 +868,14 @@
   "7aac334a506d7948": {
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "7affbce52d5e0777": {
+   "verdict": "keep",
+   "note": "a categorical read of a static graph (which rational function has this hole; does the left-hand limit exist) — no plottable answer"
+  },
+  "7c1a242146fc9e65": {
+   "verdict": "keep",
+   "note": "discontinuity locations / a domain read from a static graph of sin(12pi/x) or a piecewise curve — no plottable answer"
   },
   "7d4e65de6378e628": {
    "verdict": "keep",
@@ -873,6 +985,10 @@
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
   },
+  "8ee4ee898a287c69": {
+   "verdict": "keep",
+   "note": "a limit or function value read from a static graph (or a graphing-utility estimate); nothing for a learner to plot — graphplot grades lines, systems, quadratics, and point sets only"
+  },
   "90984f397a54ccb0": {
    "verdict": "keep",
    "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
@@ -881,9 +997,17 @@
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
   },
+  "91baa57135071e65": {
+   "verdict": "keep",
+   "note": "Asymptote-equation ask for a hyperbola: the answer is a pair of line equations keyed as an unordered list; the hyperbola itself has no graphplot answer form and the asymptotes are derived features, not a graph to draw. Same class as the chapter-3 asymptote-equation keeps."
+  },
   "91d4e14e280542c5": {
    "verdict": "keep",
    "note": "quadrant: the graded ask is which quadrant the point falls in, not where it goes on the grid; this section's plotting itself is covered by its own recognition multiple choice"
+  },
+  "9210dd1877691133": {
+   "verdict": "keep",
+   "note": "a limit or function value read from a static graph (or a graphing-utility estimate); nothing for a learner to plot — graphplot grades lines, systems, quadratics, and point sets only"
   },
   "9217092bdc7b0548": {
    "verdict": "keep",
@@ -909,6 +1033,10 @@
    "verdict": "keep",
    "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
   },
+  "938f9b8454cf4664": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
+  },
   "93cd3bb515db83e6": {
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
@@ -929,9 +1057,17 @@
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
   },
+  "94b5d9bee855c62f": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
+  },
   "94c0bef2aa017bb6": {
    "verdict": "keep",
    "note": "asymptotevalue: asks for the EQUATION of an asymptote, not for asymptotes placed on a grid; the one place-them-on-the-grid ask in this book is already a graphplot (precalculus 3.7)"
+  },
+  "95bc9f2217de1a0a": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
   },
   "965d6f5ec8bbec8a": {
    "verdict": "keep",
@@ -941,6 +1077,10 @@
    "verdict": "keep",
    "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
   },
+  "977f2fdec4dc8cbe": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
+  },
   "99ef6b6c893c892d": {
    "verdict": "keep",
    "note": "polar symmetry classification MC; categorical answer, no polar graphplot mode"
@@ -948,6 +1088,10 @@
   "9a1cd846f074780b": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "9b20f8532ea8a2bc": {
+   "verdict": "keep",
+   "note": "a limit or function value read from a static graph (or a graphing-utility estimate); nothing for a learner to plot — graphplot grades lines, systems, quadratics, and point sets only"
   },
   "9b9fb9cbe5cadb11": {
    "verdict": "keep",
@@ -969,9 +1113,17 @@
    "verdict": "keep",
    "note": "polar symmetry classification MC; categorical answer, no polar graphplot mode"
   },
+  "9cf535ba231e12b0": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
+  },
   "9d0e66b28120ec8b": {
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "9dcd359aadef5ff5": {
+   "verdict": "keep",
+   "note": "a limit or function value read from a static graph (or a graphing-utility estimate); nothing for a learner to plot — graphplot grades lines, systems, quadratics, and point sets only"
   },
   "9dddbd0e1338fa5e": {
    "verdict": "keep",
@@ -993,6 +1145,10 @@
    "verdict": "keep",
    "note": "parametric curve with orientation; orientation is the learning target and is not gradeable, curve shapes (ellipse/sideways parabola/root segment) outside graphplot forms"
   },
+  "a48965c9595a6e5d": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
+  },
   "a56d701e91f17633": {
    "verdict": "keep",
    "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
@@ -1000,6 +1156,10 @@
   "a60a6736bf324fcf": {
    "verdict": "keep",
    "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
+  },
+  "a6624b6c072968bc": {
+   "verdict": "keep",
+   "note": "a function value, derivative estimate, continuity interval, or discontinuity location read from a static graph — no plottable answer"
   },
   "a672e15791724b9d": {
    "verdict": "keep",
@@ -1012,6 +1172,10 @@
   "a7f887823c37b167": {
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
+  },
+  "a806657428566694": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
   },
   "a8be2a4812338027": {
    "verdict": "keep",
@@ -1045,6 +1209,10 @@
    "verdict": "keep",
    "note": "polar symmetry classification MC; categorical answer, no polar graphplot mode"
   },
+  "ad222de4c1a1e846": {
+   "verdict": "keep",
+   "note": "a limit or function value read from a static graph (or a graphing-utility estimate); nothing for a learner to plot — graphplot grades lines, systems, quadratics, and point sets only"
+  },
   "adb21612b443e696": {
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
@@ -1064,6 +1232,10 @@
   "afdf350daef81425": {
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
+  },
+  "b01235feebfde159": {
+   "verdict": "keep",
+   "note": "Write-the-equation ask (standard form of a conic): the answer is an equation guarded by conic-standard-form / parabola-standard-form; no graph is produced and a conic has no graphplot answer form."
   },
   "b148f6dce90c4341": {
    "verdict": "keep",
@@ -1140,6 +1312,10 @@
   "b95556e8f3bbde10": {
    "verdict": "keep",
    "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
+  },
+  "b95950246d52d97a": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
   },
   "b95b3cce9430328d": {
    "verdict": "keep",
@@ -1225,6 +1401,10 @@
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
   },
+  "c1a1b544cb83da0c": {
+   "verdict": "keep",
+   "note": "a categorical read of a static graph (which rational function has this hole; does the left-hand limit exist) — no plottable answer"
+  },
   "c1a62ce7a08112f1": {
    "verdict": "keep",
    "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
@@ -1261,6 +1441,10 @@
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
   },
+  "ca066c53bbe6950a": {
+   "verdict": "keep",
+   "note": "Asymptote-equation ask for a hyperbola: the answer is a pair of line equations keyed as an unordered list; the hyperbola itself has no graphplot answer form and the asymptotes are derived features, not a graph to draw. Same class as the chapter-3 asymptote-equation keeps."
+  },
   "cab1aced609941a8": {
    "verdict": "keep",
    "note": "calculator: the ask is a graphing-calculator/utility estimate, so the graded answer is the numeric result, not a placed object"
@@ -1268,6 +1452,10 @@
   "cc4d40ba5d5b3b0f": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
+  },
+  "cc6c31ed4ab11223": {
+   "verdict": "keep",
+   "note": "Graph-recognition MC over polar-conic candidates (section 10.5 keeps its recognition MCs); a polar conic has no graphplot answer form — graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets, never a curve as a curve."
   },
   "ccaea499c79491ca": {
    "verdict": "keep",
@@ -1329,6 +1517,10 @@
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
   },
+  "d61e4a318a27cbf5": {
+   "verdict": "keep",
+   "note": "a limit or function value read from a static graph (or a graphing-utility estimate); nothing for a learner to plot — graphplot grades lines, systems, quadratics, and point sets only"
+  },
   "d6a81820e2d64601": {
    "verdict": "keep",
    "note": "recognition: a mode=\"graph\" recognition multiple choice — the counterpart to the production graphplots, kept at roughly one per section so the book still asks learners to READ a graph as well as draw one"
@@ -1364,6 +1556,10 @@
   "dce6e6029d1824ba": {
    "verdict": "keep",
    "note": "numberline: a number-line graph whose graded answer is interval notation; <graph-plot> has no number-line answer form, and buildNumberLine is a static figure renderer"
+  },
+  "dd0fc206cfe6b5fa": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
   },
   "dd4b9102046621dd": {
    "verdict": "keep",
@@ -1421,6 +1617,10 @@
    "verdict": "keep",
    "note": "classify: a judgment about a graph (shape, function/one-to-one, conic type, end behavior, method) rather than a drawable object"
   },
+  "e581b4bf743d15db": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
+  },
   "e61f4928635f7fb5": {
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
@@ -1433,6 +1633,14 @@
    "verdict": "keep",
    "note": "parametric curve with orientation; orientation is the learning target and is not gradeable, curve shapes (ellipse/sideways parabola/root segment) outside graphplot forms"
   },
+  "e897ad5ed19db0ad": {
+   "verdict": "keep",
+   "note": "Asymptote-equation ask for a hyperbola: the answer is a pair of line equations keyed as an unordered list; the hyperbola itself has no graphplot answer form and the asymptotes are derived features, not a graph to draw. Same class as the chapter-3 asymptote-equation keeps."
+  },
+  "e94f3c10a4232f83": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
+  },
   "ea3031a39798bf4b": {
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
@@ -1440,6 +1648,10 @@
   "ea4e36cab517d4c6": {
    "verdict": "keep",
    "note": "polar curve recognition MC; polar curves not gradeable by graphplot"
+  },
+  "eb5f55c38b54ac96": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
   },
   "ec2e6a041713af3d": {
    "verdict": "keep",
@@ -1457,6 +1669,10 @@
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
   },
+  "f064a36bde8f1b66": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
+  },
   "f0bfb78b0c3a0a75": {
    "verdict": "keep",
    "note": "noform: the curve has no <graph-plot> answer form — the engine grades line, system, quadratic, points and asymptotes only"
@@ -1472,6 +1688,10 @@
   "f39ac1aeb84807b5": {
    "verdict": "keep",
    "note": "algebrastep: the prompt names graphing, but the graded ask is a scalar or expression (a value, a vertex, an equation, a transformed formula); the section carries the graphing itself elsewhere"
+  },
+  "f3b22766ce206bd0": {
+   "verdict": "keep",
+   "note": "Feature read of a conic (center/vertices/foci/directrix/latus rectum) keyed as coordinates or an equation: the \"graph\" verb names the source exercise's task, but the graded deliverable is a computed feature, and the conic curve itself has no graphplot answer form (graphplot grades lines, systems, y=f(x) quadratics, and lattice point sets only; sideways parabolas, ellipses, and hyperbolas are outside it)."
   },
   "f3f652e2d404e19e": {
    "verdict": "keep",
@@ -1521,6 +1741,10 @@
    "verdict": "keep",
    "note": "graphread: a graph READ: the figure is given and the learner extracts a value from it, so replacing it with a blank grid would invert the exercise"
   },
+  "f8498fed55ecd4cd": {
+   "verdict": "keep",
+   "note": "a function value, derivative estimate, continuity interval, or discontinuity location read from a static graph — no plottable answer"
+  },
   "fa49c7a14560e150": {
    "verdict": "keep",
    "note": "system-classification MC; categorical answer, and a dependent system is one line drawn twice — not expressible as a graphplot two-line system"
@@ -1532,6 +1756,10 @@
   "fb831ea69a11407e": {
    "verdict": "keep",
    "note": "trig graph exercise: every key point of a sine/cosine/tangent-family or inverse-trig curve lands on multiples of pi (or the item asks a feature of a drawn curve, not a plot), off the graphplot snap lattice; graphplot also has no sinusoid answer form — stays a static apfigure with fillin/graph-mode MC per the settled chapter 5-8 disposition"
+  },
+  "fc39cf99a000b712": {
+   "verdict": "keep",
+   "note": "a limit or function value read from a static graph (or a graphing-utility estimate); nothing for a learner to plot — graphplot grades lines, systems, quadratics, and point sets only"
   },
   "fd03a245e6a71aad": {
    "verdict": "keep",

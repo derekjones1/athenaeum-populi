@@ -45,7 +45,7 @@
   {{- errorf "fillin answerMode must be 'expression' or 'unordered' (%s)" .Position -}}
 {{- end -}}
 {{- $answerForm := .Get "answerForm" | default "" -}}
-{{- $formTokens := slice "fraction" "decimal" "percent" "rational-exponent" "radical" "exact-log" "exact-radical" "exact" "summation" "single-logarithm" "mixed-number" "improper-fraction" "fraction-or-mixed-number" "lowest-terms" "scientific-notation" "prime-product" "single-power" "expanded" "no-like-terms" "polynomial" "distributed" "simplified-radical" "single-term" "single-fraction" "reduced-fraction" "factored" "point-slope-form" "slope-intercept-form" "vertex-form" "conic-standard-form" "circle-standard-form" "exponential-form" "base-e" "expanded-logarithms" "evaluated-trig" "single-trig-function" "evaluated-logarithm" "degrees" "radians" -}}
+{{- $formTokens := slice "fraction" "decimal" "percent" "rational-exponent" "radical" "exact-log" "exact-radical" "exact" "summation" "single-logarithm" "mixed-number" "improper-fraction" "fraction-or-mixed-number" "lowest-terms" "scientific-notation" "prime-product" "single-power" "expanded" "no-like-terms" "polynomial" "distributed" "simplified-radical" "single-term" "single-fraction" "reduced-fraction" "factored" "point-slope-form" "slope-intercept-form" "vertex-form" "conic-standard-form" "parabola-standard-form" "circle-standard-form" "exponential-form" "base-e" "expanded-logarithms" "evaluated-trig" "single-trig-function" "evaluated-logarithm" "degrees" "radians" -}}
 {{- range (split $answerForm " ") -}}
   {{- $token := trim . " " -}}
   {{- if $token -}}

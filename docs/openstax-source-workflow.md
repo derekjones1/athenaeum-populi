@@ -98,7 +98,7 @@ not a publishing instruction.
 - `data/openstax/math-source-lock.json` (schema 2) records each bundle's
   official repository, current reviewed commit, module scope, and license,
   plus every book's collection, inferred PDF-era commit, and authoring status.
-- `data/openstax/math-source-map.json` (schema 2) connects all 258 authored
+- `data/openstax/math-source-map.json` (schema 2) connects all 274 authored
   local section paths to stable OpenStax module IDs and module SHA-256
   fingerprints, attributes each section to its bundle, and records per-book
   chapter and section coverage against the upstream collection.
@@ -147,13 +147,14 @@ section was mapped) is in this file's git history.
 
 ## Precalculus 2e
 
-Precalculus 2e is pinned and scaffolded, with authoring underway. Its review
-target is `789b54099106b071d1d32bfcee454fed72eb4768` in the college-algebra
-bundle, and `content/math/precalculus` holds the book cover page and all
-twelve chapter landings mapped to the upstream chapter structure. Sections
-are authored chapter by chapter; the committed map records which, and
-`npm run source:verify` prints the current per-book coverage — do not restate
-the count here, it drifts.
+Precalculus 2e is pinned and complete: every one of its 73 upstream numbered
+sections is authored locally (the last chapter, Introduction to Calculus,
+landed on August 29, 2026), so chapter-by-chapter parity is enforced for it
+exactly as for the three algebra books. Its review target is
+`789b54099106b071d1d32bfcee454fed72eb4768` in the college-algebra bundle, and
+`content/math/precalculus` holds the book cover page, all twelve chapter
+landings mapped to the upstream chapter structure, and their section pages;
+`npm run source:verify` prints the per-book coverage.
 
 Its authored baseline is `d1bd19c69107ba7f45775670809ae161d63db864`, the last
 upstream commit on or before the local `sources/precalculus-2e_-_WEB.pdf`
@@ -161,18 +162,18 @@ build date of 2026-04-20. That is the same inference rule that reproduces the
 three existing books' baselines exactly, but it remains an inference: a strong
 comparison candidate, not a proven OpenStax build ID.
 
-Each unwritten chapter landing declares `authoring_status: scaffolded` in its
-frontmatter. That marker is what allows its `## Sections` overview to be empty:
-the chapter-landing lint would otherwise require section bullets, and the
-content validator requires those bullets to match authored pages exactly.
-A chapter's landing drops the marker with its first authored section page.
-
-As sections are written, add each page with its `source_section` frontmatter,
-remove `authoring_status` from that chapter's landing once its first section
-page exists, list the section in the landing's `## Sections` overview, then
-rerun `node tools/openstax-source.mjs build-map` and commit the refreshed map.
-`build-map` fails if a marker outlives the first authored section in its
-chapter, so an unwritten chapter can never be mistaken for a finished one.
+While the book was being written, each unwritten chapter landing declared
+`authoring_status: scaffolded` in its frontmatter — the marker that allowed an
+empty `## Sections` overview past the chapter-landing lint and the content
+validator's bullets-match-pages check. No chapter carries it any more, and
+`build-map` refuses one on a `complete` book. The procedure it belonged to
+still applies to any future scaffolded book: add each page with its
+`source_section` frontmatter, remove `authoring_status` from that chapter's
+landing once its first section page exists, list the section in the landing's
+`## Sections` overview, then rerun `node tools/openstax-source.mjs build-map`
+and commit the refreshed map; `build-map` fails if a marker outlives the first
+authored section in its chapter, so an unwritten chapter can never be mistaken
+for a finished one.
 When all 73 sections exist, change the book's `authoringStatus` to `complete`
 in the lock; from then on the tooling enforces full chapter-by-chapter parity
 with the upstream collection and the book joins the audited section matrix.

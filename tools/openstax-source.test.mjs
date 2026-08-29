@@ -109,22 +109,22 @@ test('the source lock pins one upstream bundle per book', () => {
     assert.match(config.authoredBaselineCommit, /^[0-9a-f]{40}$/, `${book} pins a baseline commit`);
   }
   assert.equal(lock.books.get('precalculus').bundleKey, 'college-algebra-bundle');
-  assert.equal(lock.books.get('precalculus').authoringStatus, 'scaffolded');
+  assert.equal(lock.books.get('precalculus').authoringStatus, 'complete');
   assert.equal(lock.books.get('prealgebra').bundleKey, 'prealgebra-bundle');
   assert.equal(lock.books.get('prealgebra').authoringStatus, 'complete');
   assert.equal(lock.bundles['college-algebra-bundle'].moduleScope, 'mapped-collections');
 });
 
-test('committed provenance maps all 258 local math sections exactly once', () => {
+test('committed provenance maps all 274 local math sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 258);
-  assert.equal(result.actualCount, 258);
+  assert.equal(result.expectedCount, 274);
+  assert.equal(result.actualCount, 274);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
   assert.equal(counts['intermediate-algebra'].length, 70);
-  assert.equal(counts.precalculus.length, 57);
+  assert.equal(counts.precalculus.length, 73);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
@@ -140,16 +140,16 @@ test('committed provenance maps all 258 local math sections exactly once', () =>
   }
 });
 
-test('the Precalculus book is mapped chapter-complete with its authored sections only', () => {
+test('the Precalculus book is mapped complete, every upstream section authored', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
   assert.deepEqual(result.map.books.precalculus, {
     bundle: 'college-algebra-bundle',
-    authoringStatus: 'scaffolded',
+    authoringStatus: 'complete',
     upstreamChapters: 12,
     upstreamSections: 73,
     localChapters: 12,
-    mappedSections: 57,
+    mappedSections: 73,
   });
   assert.deepEqual(
     Object.keys(result.map.bundles).sort(),

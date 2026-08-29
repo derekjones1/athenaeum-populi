@@ -4,8 +4,8 @@ The Hugo migration is complete; this repository is the production
 architecture. For content work, follow `docs/authoring-playbook.md`; for
 knowledge checks, also follow `docs/knowledge-check-playbook.md`. See
 `docs/architecture.md` for the current build and deployment design. For the
-OpenStax math books — the three completed algebra books and the scaffolded
-Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
+OpenStax math books — the three algebra books and Precalculus 2e, all four
+complete — also follow `docs/openstax-source-workflow.md`.
 
 ## Stack and constraints
 
@@ -27,13 +27,12 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
   changes into `content/` automatically.
 - The lock pins one commit per upstream bundle: `prealgebra-bundle` for the
   three algebra books and `college-algebra-bundle` for Precalculus 2e. Books
-  carry an `authoringStatus`; `content/math/precalculus` is `scaffolded`: its
-  chapter landings and pinned provenance are in place and its section pages
-  are being authored chapter by chapter (the source map records the current
-  count — do not restate it here, it drifts). Chapters that still lack a
-  section page declare `authoring_status: scaffolded`; drop that marker from
-  a chapter as soon as it has a section page, and rerun
-  `node tools/openstax-source.mjs build-map` after authoring new sections.
+  carry an `authoringStatus`; all four are `complete` (Precalculus 2e's last
+  chapter landed on August 29, 2026), so every upstream numbered section has
+  a local page and chapter parity is enforced book-wide. A future scaffolded
+  book marks its unwritten chapter landings `authoring_status: scaffolded`,
+  drops the marker from a chapter as soon as it has a section page, and
+  reruns `node tools/openstax-source.mjs build-map` after authoring.
 
 ## Commands
 
@@ -78,7 +77,7 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
   starts; merge has the answer ledger's conflict-refusing contract, and
   `node tools/graphplot-conversion.mjs prune content` retires entries whose
   exercise was converted or edited (workflow in
-  `docs/authoring-playbook.md` §3). The queue is currently EMPTY — all 335
+  `docs/authoring-playbook.md` §3). The queue is currently EMPTY — all 448
   are adjudicated `keep` — so `list --verdict convert` printing `[]` is the
   true state, not a missing ledger: every command but `merge` now fails
   loudly if the file is absent, `init` creates it, and `--ledger <path>`
@@ -91,7 +90,7 @@ Precalculus 2e — also follow `docs/openstax-source-workflow.md`.
   package.json's `--min-verified`, `--min-replayed`, and `--min-exercises` in
   place
 - `npm run source:fetch` — fetch the ignored, sparse OpenStax source checkout
-- `npm run source:verify` — verify the committed 258-section map offline
+- `npm run source:verify` — verify the committed 274-section map offline
 - `npm run source:check` — report-only comparison against pinned CNXML
 - `npm run source:history` — review changes since the inferred PDF-era commits
 
