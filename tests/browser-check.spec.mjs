@@ -1011,3 +1011,110 @@ test('the shelf drawer names its books, and the navbar switches shape by width',
   expect(wide.library).toBe(0);
   expect(wide.titleLeft).toBeGreaterThanOrEqual(0);
 });
+
+test('the navbar folds to logo, search, and scroll-to-top while reading, and unfolds at the top', async ({ page }) => {
+  // A row of six shelf links pinned above every paragraph is noise for a
+  // learner inside one book. assets/js/navbar-compact.js marks the container
+  // once the page has scrolled; assets/css/custom.css ("Compact navbar on
+  // scroll") decides what folds: the painted bar drops to 3rem with the logo
+  // and search centred, while the sticky container keeps its 4rem in flow so
+  // the article does not jump, and the rails follow the shorter bar.
+  await page.setViewportSize({ width: 1440, height: 800 });
+  await gotoBuiltPage(page, '/math/prealgebra/03-integers/03-subtract-integers/');
+
+  const shape = () => page.evaluate(() => {
+    const visible = (el) => Boolean(el) && el.getBoundingClientRect().width > 0;
+    const container = document.querySelector('.hextra-nav-container');
+    const nav = container.querySelector('nav');
+    const box = (el) => el.getBoundingClientRect();
+    const logoBox = box(nav.querySelector('a'));
+    const searchBox = box(nav.querySelector('.hextra-search-wrapper'));
+    return {
+      compact: document.documentElement.classList.contains('ap-nav-compact'),
+      height: Math.round(box(nav).height),
+      flowHeight: Math.round(box(container).height),
+      // Gap between the logo and the search box, and whether the pair sits
+      // in the middle of the viewport (centre within 40px of the midpoint).
+      adjacent: Math.round(searchBox.left - logoBox.right) < 24,
+      centred: Math.abs((logoBox.left + searchBox.right) / 2 - window.innerWidth / 2) < 40,
+      sidebarTop: Math.round(box(document.querySelector('.hextra-sidebar-container')).top),
+      tocTop: Math.round(box(document.querySelector('.hextra-toc > div')).top),
+      logo: visible(nav.querySelector('a > img')),
+      title: visible(nav.querySelector('a > span')),
+      shelves: [...nav.querySelectorAll('.ap-nav-shelf')].filter(visible).length,
+      pages: [...nav.querySelectorAll('.ap-nav-page')].filter(visible).length,
+      search: visible(nav.querySelector('.hextra-search-input')),
+      top: visible(nav.querySelector('.ap-nav-top')),
+    };
+  });
+
+  expect(await shape()).toEqual({
+    // `centred` says nothing here: the logo and search span the whole bar.
+    compact: false, height: 64, flowHeight: 64, adjacent: false, centred: expect.any(Boolean), sidebarTop: 64, tocTop: 64,
+    logo: true, title: true, shelves: 6, pages: 2, search: true, top: false,
+  });
+
+  // The article must not move when the bar folds: the first heading keeps
+  // its viewport position across the threshold.
+  const headingTop = () => page.evaluate(() =>
+    Math.round(document.querySelector('main h2').getBoundingClientRect().top));
+  await page.evaluate(() => window.scrollTo(0, 900));
+  await expect.poll(async () => (await shape()).compact).toBe(true);
+  const foldedHeadingTop = await headingTop();
+  expect(await shape()).toEqual({
+    compact: true, height: 48, flowHeight: 64, adjacent: true, centred: true, sidebarTop: 48, tocTop: 48,
+    logo: true, title: false, shelves: 0, pages: 0, search: true, top: true,
+  });
+  await page.evaluate(() => window.scrollTo(0, 60));
+  await expect.poll(async () => (await shape()).compact).toBe(false);
+  await page.evaluate(() => window.scrollTo(0, 900));
+  await expect.poll(async () => (await shape()).compact).toBe(true);
+  expect(await headingTop(), 'article shifted when the bar folded').toBe(foldedHeadingTop);
+  // Folded controls are out of the tab order, not merely invisible: Tab from
+  // the logo must land on the search box, never on a hidden shelf link.
+  await page.evaluate(() => document.querySelector('.hextra-nav-container nav > a').focus());
+  await page.keyboard.press('Tab');
+  expect(await page.evaluate(() => document.activeElement.id)).toBe('hextra-search-input-navbar');
+
+  // The button scrolls to the top, the full bar returns, and focus — which
+  // would otherwise fall to <body> as the button leaves the layout — is on
+  // the logo link.
+  await page.locator('.ap-nav-top').click();
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
+  await expect.poll(async () => (await shape()).compact).toBe(false);
+  expect((await shape()).shelves).toBe(6);
+  expect(await page.evaluate(
+    () => document.activeElement === document.querySelector('.hextra-nav-container nav > a'),
+  )).toBe(true);
+
+  // Below md the shelves already live in the hamburger drawer; folding must
+  // leave the hamburger in place beside the logo and the button.
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.evaluate(() => window.scrollTo(0, 900));
+  await expect.poll(async () => (await shape()).compact).toBe(true);
+  const hamburgerVisible = await page.locator('.hextra-hamburger-menu').isVisible();
+  expect(hamburgerVisible).toBe(true);
+  expect((await shape()).top).toBe(true);
+});
+
+test('heading lists in the rail and sidebar typeset inline math instead of printing TeX', async ({ page }) => {
+  // The section headings render their $...$ through Hugo's passthrough, but
+  // the "On this page" rail (layouts/_partials/toc.html) and the sidebar's
+  // in-page heading list (sidebar.html, shown below xl) print each heading's
+  // .Title themselves; both go through the mathtext partial so a reader never
+  // sees "$m = \\tfrac{\\text{rise}}{\\text{run}}$". tools/build/audit-build.mjs
+  // guards every page for the same leak at build time.
+  await page.setViewportSize({ width: 1440, height: 800 });
+  await gotoBuiltPage(page, '/math/elementary-algebra/04-graphs/04-understand-slope-of-a-line/');
+  const rail = page.locator('.hextra-toc a', { hasText: 'to find the slope of a line from its graph' }).first();
+  await expect(rail).toBeVisible();
+  await expect(rail.locator('.katex')).toHaveCount(1);
+  expect(await rail.innerText()).not.toContain('$');
+
+  // The sidebar list is rendered for the active page and shown by the theme
+  // only in some layouts; assert the markup, which is what either layout shows.
+  const sidebar = page.locator('.hextra-sidebar-container a[href^="#"]', { hasText: 'to find the slope of a line from its graph' });
+  await expect(sidebar).toHaveCount(1);
+  await expect(sidebar.locator('.katex')).toHaveCount(1);
+  expect(await sidebar.evaluate((el) => el.textContent)).not.toContain('$');
+});

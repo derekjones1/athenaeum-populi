@@ -20,9 +20,9 @@ expressions and see how factoring is used to solve certain types of equations.
 - **Greatest Common Factor and Factor by Grouping** — finding the greatest
   common factor of two or more expressions, factoring the greatest common
   factor from a polynomial, and factoring by grouping.
-- **Factor Trinomials of the Form $x^2+bx+c$** — factoring trinomials whose
+- **Factor Trinomials of the Form x²+bx+c** — factoring trinomials whose
   leading coefficient is $1$, including those with two variables.
-- **Factor Trinomials of the Form $ax^2+bx+c$** — factoring trinomials with a
+- **Factor Trinomials of the Form ax²+bx+c** — factoring trinomials with a
   leading coefficient other than $1$ by trial and error and by the "ac" method,
   after first factoring out any greatest common factor.
 - **Factor Special Products** — factoring perfect square trinomials, factoring

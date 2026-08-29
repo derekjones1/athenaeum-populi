@@ -13,3 +13,5 @@ import './components/math/graph-plot.js';
 import './components/math/ap-figure.js';
 import './components/text/text-in.js';
 import './components/text/self-check.js';
+// Site chrome (not a component): folds the sticky navbar down while reading.
+import './navbar-compact.js';

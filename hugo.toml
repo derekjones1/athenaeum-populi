@@ -96,11 +96,16 @@ disableKinds = ["taxonomy", "term"]
     type = "pagefind"
 
 # Top navbar = the published subject categories and project information.
+# `class = "ap-nav-page"` marks the entries that fold away with the shelves
+# once the reader scrolls (assets/js/navbar-compact.js, "Compact navbar on
+# scroll" in assets/css/custom.css); search and the logo stay.
 [menu]
   [[menu.main]]
     name = "Home"
     pageRef = "/"
     weight = 1
+    [menu.main.params]
+      class = "ap-nav-page"
   # The six shelves appear twice, never both visible: as flat links from xl
   # (80rem) up, where they fit beside the title, and folded into one "Library"
   # dropdown from md (48rem) to xl, where six flat links overflowed the bar and
@@ -197,6 +202,8 @@ disableKinds = ["taxonomy", "term"]
     name = "About"
     pageRef = "/about"
     weight = 9
+    [menu.main.params]
+      class = "ap-nav-page"
   [[menu.main]]
     name = "Search"
     weight = 10

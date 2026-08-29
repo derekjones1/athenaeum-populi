@@ -101,6 +101,21 @@ try {
   prepare('<p>Semantic content.</p>');
   assert.equal(audit().status, 0, 'theme chrome outside main#content should be allowed');
 
+  // Inline math inside the article is the passthrough renderer's job, so a
+  // $...$ run there is not the audit's concern; the same run in the rail's
+  // heading list or the <title> is a heading/title that bypassed mathtext.
+  prepare('<p>Simplify $x^2+bx+c$.</p><h2>Factor $x^2+bx+c$</h2>');
+  assert.equal(audit().status, 0, 'raw TeX inside main#content is rendered by Hugo, not a chrome leak');
+  prepare('<p>Semantic content.</p>');
+  writeFileSync(
+    join(fixture, 'index.html'),
+    readFileSync(join(fixture, 'index.html'), 'utf8')
+      .replace('</main>', '</main><nav class="hextra-toc"><a href="#f">Factor $x^2+bx+c$</a></nav>'),
+  );
+  assert.match(audit().stderr, /site chrome prints raw TeX/, 'a rail heading printed as TeX must fail the build');
+  prepare('<h1>Factor $x^2+bx+c$</h1><p>Semantic content.</p>');
+  assert.match(audit().stderr, /page <h1> prints raw TeX/, 'a front-matter title written in TeX must fail the build');
+
   prepare('<p>Semantic content.</p>');
   rmSync(join(fixture, 'images', 'logo-dark.svg'));
   assert.match(

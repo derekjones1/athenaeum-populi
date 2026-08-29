@@ -478,6 +478,26 @@ const contentDocuments = htmlDocuments.map((document) => ({
 if (contentDocuments.some(({ content, redirect }) => !content && !redirect)) {
   problems.push('main#content missing or empty');
 }
+// Raw TeX outside the article. Headings with inline $...$ math render through
+// Hugo's passthrough inside main#content, but the right rail (toc.html) and
+// the sidebar's in-page heading list (sidebar.html) print each heading's
+// .Title themselves and must route it through the mathtext partial. A page's
+// front-matter `title` reaches <title>, breadcrumbs, the pager, JSON-LD, and
+// the search index as plain text, so it must be written in Unicode (x²+bx+c),
+// never TeX — the <h1> check catches that at the source.
+const RAW_TEX_RE = /\$[^$]{1,200}\$/;
+function chromeText(document) {
+  const content = mainContent(document);
+  return (content ? document.replace(content, '') : document)
+    .replace(/<(script|style)\b[\s\S]*?<\/\1>/gi, '')
+    .replace(/<[^>]+>/g, ' ');
+}
+if (htmlDocuments.some((document) => RAW_TEX_RE.test(chromeText(document)))) {
+  problems.push('site chrome prints raw TeX (a $...$ run outside main#content: a heading list not routed through the mathtext partial, or a front-matter title written in TeX)');
+}
+if (htmlDocuments.some((document) => RAW_TEX_RE.test(document.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? ''))) {
+  problems.push('page <h1> prints raw TeX (write the front-matter title in Unicode, e.g. x²+bx+c)');
+}
 const contentHtml = contentDocuments.map(({ content }) => content).filter(Boolean).join('\n');
 // Media elements remain active even when nested in raw <pre>/<code>.
 // `<img>` is handled separately below — mediafigure's own well-formed `<img>`

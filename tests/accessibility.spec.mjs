@@ -682,6 +682,38 @@ test('the expanded search combobox has no serious or critical axe violations', a
   ).toBe(0);
 });
 
+test('the compact navbar has no serious or critical axe violations', async ({
+  page,
+}, testInfo) => {
+  // The scrolled navbar is a state no full-page scan reaches: every scan above
+  // runs from the top of the document, where the bar is Hextra's own. Scroll
+  // into the article, wait for assets/js/navbar-compact.js to fold the bar,
+  // and scan only the bar — content straddling its bottom edge would
+  // otherwise trip the scroll-dependent target-size rule (see the graded
+  // fill-in test below) for reasons that have nothing to do with the navbar.
+  const path = '/math/prealgebra/03-integers/03-subtract-integers/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  await page.evaluate(() => window.scrollTo(0, 900));
+  await expect(page.locator('html')).toHaveClass(/ap-nav-compact/);
+  await expect(page.locator('.ap-nav-top')).toBeVisible();
+
+  const results = await new AxeBuilder({ page })
+    .include('.hextra-nav-container')
+    .withTags(WCAG_TAGS)
+    .analyze();
+  const blockingViolations = results.violations.filter((violation) =>
+    BLOCKING_IMPACTS.has(violation.impact),
+  );
+  expect(
+    blockingViolations.length,
+    `Blocking axe violations in the compact navbar (${currentTheme(testInfo)} theme):\n\n` +
+      formatViolations(blockingViolations),
+  ).toBe(0);
+});
+
 test('a graded fill-in has no serious or critical axe violations', async ({
   page,
 }, testInfo) => {

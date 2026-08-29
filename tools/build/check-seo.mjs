@@ -5,8 +5,9 @@
  *
  * Per page (all of public/, 404 excluded):
  *   - exactly one non-empty <title>, suffixed "| <site>" (home uses its own
- *     fixed form), and unique across the corpus — two pages sharing a title
- *     means the composition lost the context that disambiguates them;
+ *     fixed form), unique across the corpus — two pages sharing a title
+ *     means the composition lost the context that disambiguates them — and
+ *     free of raw $...$ TeX, which a tab or search listing would show verbatim;
  *   - a canonical <link> pointing at the page's own route;
  *   - every ld+json block parses, contains no leftover HTML entities
  *     (the plainify/htmlUnescape boundary regressing), and:
@@ -70,6 +71,9 @@ for (const { file, route } of pages) {
   } else if (!title || !title.endsWith(` | ${SITE_TITLE}`) || title === ` | ${SITE_TITLE}`) {
     fail(route, `<title> ${JSON.stringify(title)} is not a non-empty "… | ${SITE_TITLE}"`);
   }
+  // A <title> is plain text everywhere it is shown (tab, history, search
+  // result), so a front-matter title must be Unicode, never $...$ TeX.
+  if (/\$[^$]{1,200}\$/.test(title)) fail(route, `<title> ${JSON.stringify(title)} contains raw TeX — write the front-matter title in Unicode (x²+bx+c)`);
   if (title) titles.set(title, [...(titles.get(title) ?? []), route]);
 
   // --- canonical -------------------------------------------------------

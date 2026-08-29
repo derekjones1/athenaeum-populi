@@ -1,5 +1,5 @@
 ---
-title: Factor Trinomials of the Form $x^2+bx+c$
+title: Factor Trinomials of the Form x²+bx+c
 description: >-
   Reversing FOIL to factor trinomials of the form x²+bx+c by finding two numbers
   whose product is c and whose sum is b, including trinomials with a negative

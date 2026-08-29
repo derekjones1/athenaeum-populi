@@ -1,5 +1,5 @@
 ---
-title: Factor Trinomials of the Form $ax^2+bx+c$
+title: Factor Trinomials of the Form ax²+bx+c
 description: >-
   A preliminary strategy for factoring polynomials completely, then factoring
   trinomials of the form ax² + bx + c by trial and error and by the "ac" method

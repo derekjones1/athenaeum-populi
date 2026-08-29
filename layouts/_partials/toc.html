@@ -4,13 +4,14 @@
      bottom block, addressed to site.Params.contact.email with the subject
      line pre-filled from the page being read — book title plus the OpenStax
      section/chapter number where the front matter carries one, e.g.
-     "Precalculus 5.1 - Angles". Everything else is verbatim theme code. */}}
+     "Precalculus 5.1 - Angles"; renders inline $...$ math in heading titles
+     through the mathtext partial instead of printing the raw TeX; and drops
+     the theme's own "Scroll to top" button, since the compact navbar carries
+     that control at every width. Everything else is verbatim theme code. */}}
 {{- $toc := .Params.toc | default true -}}
 {{- $onThisPage := (T "onThisPage") | default "On this page"}}
 {{- $tags := (T "tags") | default "Tags"}}
 {{- $editThisPage := (T "editThisPage") | default "Edit this page"}}
-{{- $backToTop := (T "backToTop") | default "Scroll to top" -}}
-
 {{/* Contact link: href (with the per-page subject) built by the shared
      utils/contact-mailto.html partial, which sidebar.html and the
      contact-email shortcode also use. */}}
@@ -63,15 +64,8 @@
           {{- end -}}
           <a class="hx:inline-block hx:rounded-sm hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50 hx:hextra-focus-visible-inset" href="{{ $editURL }}" target="_blank" rel="noreferrer">{{ $editThisPage }}</a>
         {{- end -}}
-        {{/* Scroll To Top */}}
-        <button id="backToTop" tabindex="-1" class="hx:cursor-pointer hx:transition-all hx:duration-75 hx:opacity-0 hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50">
-          <span>
-            {{- $backToTop -}}
-          </span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:inline hx:ltr:ml-1 hx:rtl:mr-1 hx:h-3.5 hx:w-3.5 hx:rounded-full hx:border hx:border-gray-500 hx:hover:border-gray-900 hx:dark:border-gray-400 hx:dark:hover:border-gray-100 hx:contrast-more:border-gray-800 hx:contrast-more:dark:border-gray-50">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-          </svg>
-        </button>
+        {{/* Athenaeum: no "Scroll to top" here — the compact navbar carries the
+             one scroll-to-top control at every width (layouts/_partials/navbar.html). */}}
       </div>
     </div>
   {{ end -}}
@@ -92,7 +86,8 @@
     {{- if .Title }}
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
         <a class="{{ $class }} hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#{{ anchorize .ID }}">
-          {{- .Title | safeHTML | plainify | htmlUnescape }}
+          {{- /* Athenaeum: headings may carry inline $...$ math; the body renders it via Hugo's passthrough, the rail must too. */ -}}
+          {{- partial "mathtext" (.Title | safeHTML | plainify | htmlUnescape) }}
         </a>
       </li>
     {{- end -}}

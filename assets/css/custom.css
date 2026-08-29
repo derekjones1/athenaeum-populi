@@ -353,6 +353,74 @@ multiple-choice:not(:defined) .ap-mc-option {
   }
 }
 
+/* --- Compact navbar on scroll ----------------------------------------------
+   assets/js/navbar-compact.js sets .ap-nav-compact on <html> once the reader
+   has scrolled into the article. In that state the bar is a shorter (3rem)
+   centred row — logo, search box, "Scroll to top" button
+   (layouts/_partials/navbar.html) — and the shelf links (flat and Library
+   dropdown), Home/About (.ap-nav-page, hugo.toml [menu]), and the title text
+   fold away; the hamburger below md is pinned to the right edge. `display:
+   none` rather than opacity so the hidden links leave the tab order with the
+   layout, and `!important` for the same reason as the width rules above —
+   the theme's md:inline-flex utilities sit at equal specificity.
+
+   The sticky container is in normal flow, so shrinking IT would shift the
+   whole article 16px at the threshold. It keeps its 4rem; only the painted
+   bar (nav + blur backdrop) is 3rem, the transparent strip beneath passes
+   pointer events through, and the two rails move their sticky offset up to
+   meet the shorter bar (--navbar-height also feeds the sidebar's height). */
+.ap-nav-top {
+  display: none;
+  min-width: 40px;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.ap-nav-compact .ap-nav-shelf,
+.ap-nav-compact .ap-nav-library,
+.ap-nav-compact .ap-nav-page {
+  display: none !important;
+}
+.ap-nav-compact nav > a:first-child > span {
+  display: none;
+}
+.ap-nav-compact .ap-nav-top {
+  display: inline-flex;
+}
+.ap-nav-compact {
+  --navbar-height: 3rem;
+}
+.ap-nav-compact .hextra-nav-container {
+  height: 4rem; /* in-flow height stays; the theme sizes it from the nav */
+  pointer-events: none;
+}
+.ap-nav-compact .hextra-nav-container-blur {
+  height: 3rem;
+}
+.ap-nav-compact .hextra-nav-container > nav {
+  pointer-events: auto;
+  position: relative;
+  height: 3rem;
+  justify-content: center;
+}
+.ap-nav-compact nav > a:first-child {
+  margin-right: 0 !important; /* the theme's ltr:mr-auto pushes the rest right */
+}
+.ap-nav-compact .hextra-hamburger-menu {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 48rem) {
+  .ap-nav-compact .hextra-sidebar-container {
+    top: 3rem;
+  }
+}
+.ap-nav-compact .hextra-toc > div {
+  top: 3rem;
+}
+
 /* --- <text-in> ------------------------------------------------------------
    Short text answers (a term, a name). Same card as .ap-fillin; the field is a
    plain <input>, so there is no MathLive placeholder part to style. */

@@ -177,7 +177,7 @@ aliases:
   answerDisplay="$(a - 3)(b - 2)$"
 >}}
 
-### 7.2 Factor Trinomials of the Form $x^2+bx+c$
+### 7.2 Factor Trinomials of the Form x²+bx+c
 
 {{< fillin
   question="Factor completely: $x^2 + 13x + 42$."
@@ -193,7 +193,7 @@ aliases:
   answerDisplay="$(u + 8)(u + 9)$"
 >}}
 
-### 7.3 Factor Trinomials of the Form $ax^2+bx+c$
+### 7.3 Factor Trinomials of the Form ax²+bx+c
 
 {{< fillin
   question="Factor completely: $3a^3 - 6a^2 - 72a$."
