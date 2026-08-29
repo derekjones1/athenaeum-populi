@@ -17,7 +17,7 @@
 
      tools/check-seo.mjs validates all of this against the built site. */ -}}
 {{- $page := . -}}
-{{- $lang := site.Language.LanguageCode | default "en" -}}
+{{- $lang := site.Language.Locale | default "en" -}}
 {{- /* The logo is the raster site icon, not the SVG: search engines require
      a fetchable raster image for publisher-logo treatment. */ -}}
 {{- $org := dict "@type" "Organization" "name" site.Title "url" site.Home.Permalink

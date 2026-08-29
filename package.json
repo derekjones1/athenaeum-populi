@@ -5,7 +5,7 @@
   "description": "Hugo build of Athenaeum Populi. Keep the dependency list deliberately small and document any new runtime dependency in the README and lockfile.",
   "scripts": {
     "build": "npm run build:hugo && npm run search:index",
-    "build:hugo": "hugo --gc --minify --cleanDestinationDir --cacheDir \"$(pwd)/.hugo_cache\"",
+    "build:hugo": "hugo --gc --minify --cleanDestinationDir --panicOnWarning --cacheDir \"$(pwd)/.hugo_cache\"",
     "search:index": "pagefind --site public --root-selector 'main#content' --exclude-selectors '.katex,svg,template,.ap-mc-options,.ap-mc-feedback'",
     "check:routes": "node tools/check-route-parity.mjs",
     "check:links": "node tools/check-links.mjs",
