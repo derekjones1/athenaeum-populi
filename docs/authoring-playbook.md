@@ -395,7 +395,7 @@ punctuation, hyphen-versus-space, and a leading article.
 
 **Self-check (`selfcheck`)** — a free-response prompt with a model answer to
 compare against. Nothing is graded or stored: the learner writes, reveals
-the model answer, and marks the item understood or for review:
+the model answer, and marks the item correct or for review:
 
 ```
 {{</* selfcheck question="Why do scientists publish their results?" hint="Think about verification." */>}}

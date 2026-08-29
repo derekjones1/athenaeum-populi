@@ -1,7 +1,7 @@
 {{- /*
   selfcheck — free-response prompt with a model answer to compare against.
   Nothing is graded or stored: the learner writes, reveals the model answer,
-  and marks the item understood or for review. Paired shortcode; the inner
+  and marks the item correct or for review. Paired shortcode; the inner
   content is the model answer in Markdown.
 
     Usage: a paired selfcheck shortcode with question="Why do scientists
@@ -45,7 +45,7 @@
       <div class="ap-selfcheck-model">{{ $inner | markdownify }}</div>
     </details>
     <div class="ap-selfcheck-marks" role="group" aria-label="Rate your response to: {{ $qplain }}">
-      <button type="button" disabled class="ap-selfcheck-mark" data-verdict="understood" aria-pressed="false">I had it</button>
+      <button type="button" disabled class="ap-selfcheck-mark" data-verdict="correct" aria-pressed="false">Mark as correct</button>
       <button type="button" disabled class="ap-selfcheck-mark" data-verdict="review" aria-pressed="false">Review again</button>
     </div>
     <p class="ap-selfcheck-feedback" role="status" aria-live="polite"></p>

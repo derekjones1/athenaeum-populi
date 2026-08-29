@@ -765,20 +765,20 @@ test('self-check marks enable on upgrade, and rating swaps status and aria-press
   ));
   await card.scrollIntoViewIfNeeded();
 
-  const understood = card.locator('.ap-selfcheck-mark[data-verdict="understood"]');
+  const correctMark = card.locator('.ap-selfcheck-mark[data-verdict="correct"]');
   const review = card.locator('.ap-selfcheck-mark[data-verdict="review"]');
-  await expect(understood).toBeEnabled();
+  await expect(correctMark).toBeEnabled();
   await expect(review).toBeEnabled();
 
-  await understood.click();
-  await expect(card.locator('.ap-selfcheck-feedback')).toHaveText('Marked as understood.');
-  await expect(understood).toHaveAttribute('aria-pressed', 'true');
+  await correctMark.click();
+  await expect(card.locator('.ap-selfcheck-feedback')).toHaveText('Marked as correct.');
+  await expect(correctMark).toHaveAttribute('aria-pressed', 'true');
   await expect(review).toHaveAttribute('aria-pressed', 'false');
 
   await review.click();
   await expect(card.locator('.ap-selfcheck-feedback')).toHaveText(/^Marked for review/);
   await expect(review).toHaveAttribute('aria-pressed', 'true');
-  await expect(understood).toHaveAttribute('aria-pressed', 'false');
+  await expect(correctMark).toHaveAttribute('aria-pressed', 'false');
 
   // The model answer is a native <details>, unaffected by rating clicks.
   const details = card.locator('details.ap-selfcheck-answer');

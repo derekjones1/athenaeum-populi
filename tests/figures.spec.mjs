@@ -11,6 +11,17 @@
 // at module load), and the discovery is itself asserted non-empty so a broken
 // grep can never pass by testing nothing. Runs in both colour schemes:
 // figures draw with currentColor, so a regression can be theme-specific.
+//
+// Cost discipline: these tests walk the WHOLE corpus (119 routes, 1,056
+// figures at the time of writing) and they grow with it. The first version
+// made three round trips per figure (scroll, wait, evaluate) and one grep per
+// legacy route; at ~108 s locally it sat just under Playwright's 120 s test
+// timeout and went over it on the slower GitHub runner, which is how a green
+// local `npm run ci` produced a red push. Each page is now one wait plus one
+// in-page evaluation over all of its figures, discovery runs once per test,
+// and every corpus-walking test sets its own timeout from the route count so
+// the ceiling scales with the corpus instead of being a fixed number a new
+// chapter can silently exhaust.
 import { test, expect } from '@playwright/test';
 import { execFileSync } from 'node:child_process';
 import { gotoBuiltPage } from './helpers.mjs';
@@ -28,33 +39,56 @@ function routesContaining(needle) {
     .map((p) => p.replace(/^public/, '').replace(/index\.html$/, ''));
 }
 
+/**
+ * A per-test timeout that grows with the corpus: a fixed floor for startup
+ * plus a per-route budget generous enough for the CI runner (each route is
+ * one navigation with networkidle, one render wait, one evaluation).
+ */
+function corpusTimeout(routeCount) {
+  return 60_000 + routeCount * 4_000;
+}
+
+/** Collect console and page errors for one route visit. */
+function collectErrors(page) {
+  const errors = [];
+  const onConsole = (msg) => { if (msg.type() === 'error') errors.push(msg.text()); };
+  const onPageError = (error) => errors.push(String(error));
+  page.on('console', onConsole);
+  page.on('pageerror', onPageError);
+  return {
+    errors,
+    stop() {
+      page.off('console', onConsole);
+      page.off('pageerror', onPageError);
+    },
+  };
+}
+
 test('every spec-first figure on the site renders inside its viewBox', async ({ page }) => {
   const routes = routesContaining('<ap-figure');
   expect(routes.length, 'no built page carries an <ap-figure> — discovery or build is broken').toBeGreaterThan(0);
+  test.setTimeout(corpusTimeout(routes.length));
 
   for (const route of routes) {
-    const errors = [];
-    const onConsole = (msg) => { if (msg.type() === 'error') errors.push(msg.text()); };
-    const onPageError = (error) => errors.push(String(error));
-    page.on('console', onConsole);
-    page.on('pageerror', onPageError);
-
+    const collected = collectErrors(page);
     await gotoBuiltPage(page, route);
-    const figures = page.locator('ap-figure');
-    const count = await figures.count();
+    const count = await page.locator('ap-figure').count();
     expect(count, `${route} matched discovery but has no <ap-figure>`).toBeGreaterThan(0);
 
-    for (let i = 0; i < count; i++) {
-      const fig = figures.nth(i);
-      await fig.scrollIntoViewIfNeeded();
-      // The engine loads lazily; the SVG appears when the spec has rendered.
-      const svg = fig.locator('svg');
-      await expect(svg, `figure ${i} on ${route} did not render`).toHaveCount(1, { timeout: 20_000 });
+    // <ap-figure> renders on connect once the lazy engine bundle arrives (no
+    // intersection gating), so one wait covers every figure on the page.
+    await page.waitForFunction(
+      () => [...document.querySelectorAll('ap-figure')].every((el) => el.querySelector('svg')),
+      null,
+      { timeout: 20_000 },
+    ).catch(() => { /* reported below with the figure index */ });
 
-      const problems = await fig.evaluate((el, index) => {
+    const problems = await page.evaluate(() => {
+      const found = [];
+      [...document.querySelectorAll('ap-figure')].forEach((el, index) => {
         const s = el.querySelector('svg');
+        if (!s) { found.push(`figure ${index}: did not render`); return; }
         const [x, y, w, h] = s.getAttribute('viewBox').split(' ').map(Number);
-        const found = [];
         if (!s.getAttribute('aria-label')) found.push(`figure ${index}: svg has no aria-label`);
         if (el.getAttribute('role')) found.push(`figure ${index}: host kept role=img — double announcement`);
         for (const t of s.querySelectorAll('text')) {
@@ -67,14 +101,13 @@ test('every spec-first figure on the site renders inside its viewBox', async ({ 
               + `outside viewBox [${x} ${y} ${w} ${h}]`);
           }
         }
-        return found;
-      }, i);
-      expect(problems, `layout problems on ${route}`).toEqual([]);
-    }
+      });
+      return found;
+    });
+    expect(problems, `layout problems on ${route}`).toEqual([]);
 
-    expect(errors, `console errors on ${route}`).toEqual([]);
-    page.off('console', onConsole);
-    page.off('pageerror', onPageError);
+    collected.stop();
+    expect(collected.errors, `console errors on ${route}`).toEqual([]);
   }
 });
 
@@ -89,33 +122,33 @@ test('every mediafigure image on every page renders without a broken img or cons
   const routes = routesContaining('class=ap-mediafigure');
   expect(routes.length, 'no built page carries class=ap-mediafigure — discovery or build is broken')
     .toBeGreaterThan(0);
+  test.setTimeout(corpusTimeout(routes.length));
 
   for (const route of routes) {
-    const errors = [];
-    const onConsole = (msg) => { if (msg.type() === 'error') errors.push(msg.text()); };
-    const onPageError = (error) => errors.push(String(error));
-    page.on('console', onConsole);
-    page.on('pageerror', onPageError);
-
+    const collected = collectErrors(page);
     await gotoBuiltPage(page, route);
-    const images = page.locator('.ap-mediafigure img');
-    const count = await images.count();
+    const count = await page.locator('.ap-mediafigure img').count();
     expect(count, `${route} matched discovery but has no mediafigure img`).toBeGreaterThan(0);
 
-    for (let i = 0; i < count; i += 1) {
-      const image = images.nth(i);
-      await image.scrollIntoViewIfNeeded();
-      await expect
-        .poll(async () => image.evaluate((img) => img.complete && img.naturalWidth > 0), {
-          timeout: 10_000,
-          message: `${route} image ${i} did not load`,
-        })
-        .toBe(true);
-    }
+    // Lazy-loaded images only fetch near the viewport, so bring each into
+    // view from inside the page (one evaluation, no per-image round trips)
+    // and then wait for all of them to complete.
+    await page.evaluate(async () => {
+      for (const img of document.querySelectorAll('.ap-mediafigure img')) {
+        img.scrollIntoView({ block: 'center' });
+        await new Promise((resolve) => requestAnimationFrame(resolve));
+      }
+    });
+    await expect
+      .poll(async () => page.evaluate(
+        () => [...document.querySelectorAll('.ap-mediafigure img')]
+          .map((img, index) => (img.complete && img.naturalWidth > 0 ? null : index))
+          .filter((index) => index !== null),
+      ), { timeout: 20_000, message: `${route} has images that did not load` })
+      .toEqual([]);
 
-    expect(errors, `console errors on ${route}`).toEqual([]);
-    page.off('console', onConsole);
-    page.off('pageerror', onPageError);
+    collected.stop();
+    expect(collected.errors, `console errors on ${route}`).toEqual([]);
   }
 });
 
@@ -124,7 +157,10 @@ test('legacy pasted figures still render their SVG untouched', async ({ page }) 
   // prerendered <div class="ap-figure"> SVG must keep working unchanged.
   // Minified production HTML drops the attribute quotes, so match the two
   // markers separately: a div-delivered figure page still carries data-spec.
-  const legacy = routesContaining('data-spec').filter((r) => !routesContaining('<ap-figure').includes(r));
+  // Both discoveries run once — the previous version re-grepped the whole
+  // build tree once per legacy route inside a filter.
+  const specFirst = new Set(routesContaining('<ap-figure'));
+  const legacy = routesContaining('data-spec').filter((r) => !specFirst.has(r));
   expect(legacy.length).toBeGreaterThan(0);
   await gotoBuiltPage(page, legacy[0]);
   expect(await page.locator('div.ap-figure svg').count()).toBeGreaterThan(0);

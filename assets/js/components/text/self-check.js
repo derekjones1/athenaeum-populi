@@ -12,12 +12,12 @@
 let hintSequence = 0;
 
 const MESSAGES = {
-  understood: 'Marked as understood.',
+  correct: 'Marked as correct.',
   review: 'Marked for review — reread the section, then try the question again.',
 };
 
 const COLOR = {
-  understood: 'var(--ap-success, #1a7f37)',
+  correct: 'var(--ap-success, #1a7f37)',
   review: 'var(--ap-warning, #9a6700)',
 };
 
