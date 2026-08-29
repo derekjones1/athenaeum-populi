@@ -67,8 +67,42 @@ The lock is bundle-keyed and each book carries its own `contentPath`, so the
 pipeline is not specific to `content/math`: Biology 2e is pinned at
 `biology-bundle` with `contentPath: "content/life-health-sciences/biology"`
 and `authoringStatus: "scaffolded"` — its collection (which nests unit,
-chapter, and module) is mapped with zero local chapters, stated visibly by
-`build-map`/`verify-map` rather than omitted.
+chapter, and module) is mapped chapter by chapter as authoring proceeds, and
+`build-map`/`verify-map` state the book's local/upstream counts on every
+run rather than omitting a book that has few or no pages yet.
+
+## Media and text-answer components
+
+The math books forbid file-backed images outright (content lint and build
+audit). An image-dependent subject needs a sanctioned path, and it is one
+narrow path rather than an exception: `npm run source:media`
+(`tools/source/vendor-media.mjs`) reads each figure a chapter's modules
+reference straight from the pinned checkout's commit (`git show`, so the
+blobless clone fetches only those blobs), resizes to ≤800/≤1600 px without
+upscaling, encodes WebP into `static/media/<book>/`, and records
+dimensions, variants, source SHA-256, alt, caption, and a photo/diagram kind
+in `data/media/<book>.json`. That manifest is the contract: the
+`mediafigure` shortcode resolves `src="<book>/<stem>"` against it for
+width/height/srcset and fails the build on an unvendored stem; the content
+lint requires every `src` to be in it; and `audit-build` treats the
+manifest as both the allowlist for `/media/**` and a floor (a listed file
+missing from the build fails). Every other embedding form stays banned. On
+the dark theme a diagram sits on a white plate and a photo is left alone,
+driven by the manifest's kind and overridable per figure.
+
+Two components serve prose subjects beside the math ones: `<text-in>`
+(`layouts/shortcodes/textin.html`, `assets/js/components/text/text-in.js`),
+a plain text field graded by `assets/js/lib/text/check-text.mjs` —
+normalized exact match against the key plus an author-listed `accept` list,
+deliberately without fuzzy tolerance; and `<self-check>`
+(`selfcheck.html`, `self-check.js`), a written response with a model
+answer revealed by a native `<details>` and a self-mark that writes only a
+live region, functional without JavaScript. Both follow the fill-in's
+accessibility contract (named control before it is interactive, `role=status`
+feedback, focus retained on success, honest no-JS state) and are covered by
+the browser suite, whose axe scans also caught that Hextra's blue info
+callout fails AA for muted figure captions and its own links — fixed in
+`assets/css/custom.css` for that ground only.
 
 ## Search
 

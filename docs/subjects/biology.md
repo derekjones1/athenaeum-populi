@@ -301,3 +301,22 @@ Record every item in the source ledger with its exercise or definition id.
 - [ ] Practice: every group has an auto-graded item; every source exercise set represented; glossary recall items lint-clean
 - [ ] footer: CC BY-NC-SA 4.0, deep link, full `Changes:` clause
 - [ ] `npm run verify-section`, `npm test`, ledger verdicts merged, `node tools/source/openstax-source.mjs build-map` rerun and the map committed
+
+## Budgets to watch as the book grows
+
+- **HTML total.** `tools/build/audit-build.mjs` caps the built HTML at 220 MiB;
+  the four math books plus chapter 1 measure 196.5 MB (`find public -name
+  index.html -exec cat {} + | wc -c`). A biology section page is ~125–135 KB
+  (no KaTeX), so the remaining 206 sections and 46 landings project to
+  roughly 35 MB more — the cap will be reached around unit 6–7. Raise it
+  deliberately in that file, with the new measurement in the commit message,
+  when a unit's gate run reports it; never by rounding up in advance.
+- **Sidebar share** (`maxSidebarShare 0.45`) is per page: the biology sidebar
+  lists every chapter of the book, so re-check the audit line after each unit.
+- **Browser suite time.** `tests/figures.spec.mjs` walks every route; its
+  timeout scales with the route count, but watch its wall time in the
+  browser-suite tail after each chapter.
+- **Chapter close-out** also runs `npm run source:check -- --bundle
+  biology-bundle` (report-only): chapter 1 audits clean — 8/8 objectives and
+  8/8 headings located, 0 unresolved review items — and a heading the audit
+  cannot locate is the signal that a page renamed or dropped a source section.

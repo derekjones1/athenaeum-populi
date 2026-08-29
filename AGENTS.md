@@ -35,10 +35,12 @@ source workflow.
   `biology-bundle` for Biology 2e. Books carry an `authoringStatus`; the four
   math books are `complete` (Precalculus 2e's last chapter landed on August
   29, 2026), so every upstream numbered section has a local page and chapter
-  parity is enforced book-wide. Biology is `scaffolded`: its lock and section
-  map exist, but `content/life-health-sciences/biology` has no chapter
-  landings yet, so `build-map`/`verify-map` print it with zero chapters and
-  zero sections mapped — visibly, never silently. A scaffolded book marks its
+  parity is enforced book-wide. Biology is `scaffolded`: chapter 1 (two
+  sections) is authored under `content/life-health-sciences/biology` and
+  the other 46 chapters have no landing yet, so `build-map`/`verify-map`
+  print it as "1/47 chapters, 2/208 sections mapped" — visibly, never
+  silently — and the biology subject playbook (`docs/subjects/biology.md`)
+  governs its authoring. A scaffolded book marks its
   unwritten chapter landings `authoring_status: scaffolded`, drops the marker
   from a chapter as soon as it has a section page, and reruns
   `node tools/source/openstax-source.mjs build-map` after authoring. Every
