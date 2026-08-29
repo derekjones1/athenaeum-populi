@@ -101,28 +101,104 @@ disableKinds = ["taxonomy", "term"]
     name = "Home"
     pageRef = "/"
     weight = 1
+  # The six shelves appear twice, never both visible: as flat links from xl
+  # (80rem) up, where they fit beside the title, and folded into one "Library"
+  # dropdown from md (48rem) to xl, where six flat links overflowed the bar and
+  # pushed the site title off-screen. Below md Hextra's hamburger drawer takes
+  # over and lists the flat entries (the drawer skips `drawer = false`). The
+  # `class` param is emitted by layouts/_partials/navbar-link.html and switched
+  # by the media rules in assets/css/custom.css.
   [[menu.main]]
+    identifier = "math"
     name = "Math"
     pageRef = "/math"
     weight = 2
+    [menu.main.params]
+      class = "ap-nav-shelf"
   [[menu.main]]
-    name = "Biology"
-    pageRef = "/biology"
+    identifier = "physical-sciences"
+    name = "Physical Sciences"
+    pageRef = "/physical-sciences"
+    weight = 3
+    [menu.main.params]
+      class = "ap-nav-shelf"
+  [[menu.main]]
+    identifier = "life-health-sciences"
+    name = "Life & Health Sciences"
+    pageRef = "/life-health-sciences"
+    weight = 4
+    [menu.main.params]
+      class = "ap-nav-shelf"
+  [[menu.main]]
+    identifier = "engineering-computing"
+    name = "Engineering & Computing"
+    pageRef = "/engineering-computing"
+    weight = 5
+    [menu.main.params]
+      class = "ap-nav-shelf"
+  [[menu.main]]
+    identifier = "social-sciences-business"
+    name = "Social Sciences & Business"
+    pageRef = "/social-sciences-business"
+    weight = 6
+    [menu.main.params]
+      class = "ap-nav-shelf"
+  [[menu.main]]
+    identifier = "humanities"
+    name = "Humanities"
+    pageRef = "/humanities"
+    weight = 7
+    [menu.main.params]
+      class = "ap-nav-shelf"
+  [[menu.main]]
+    identifier = "library"
+    name = "Library"
+    weight = 8
+    [menu.main.params]
+      class = "ap-nav-library"
+      drawer = false
+  [[menu.main]]
+    identifier = "library-math"
+    parent = "library"
+    name = "Math"
+    pageRef = "/math"
+    weight = 1
+  [[menu.main]]
+    identifier = "library-physical-sciences"
+    parent = "library"
+    name = "Physical Sciences"
+    pageRef = "/physical-sciences"
+    weight = 2
+  [[menu.main]]
+    identifier = "library-life-health-sciences"
+    parent = "library"
+    name = "Life & Health Sciences"
+    pageRef = "/life-health-sciences"
     weight = 3
   [[menu.main]]
-    name = "Chemistry"
-    pageRef = "/chemistry"
+    identifier = "library-engineering-computing"
+    parent = "library"
+    name = "Engineering & Computing"
+    pageRef = "/engineering-computing"
     weight = 4
   [[menu.main]]
-    name = "Physics"
-    pageRef = "/physics"
+    identifier = "library-social-sciences-business"
+    parent = "library"
+    name = "Social Sciences & Business"
+    pageRef = "/social-sciences-business"
     weight = 5
+  [[menu.main]]
+    identifier = "library-humanities"
+    parent = "library"
+    name = "Humanities"
+    pageRef = "/humanities"
+    weight = 6
   [[menu.main]]
     name = "About"
     pageRef = "/about"
-    weight = 6
+    weight = 9
   [[menu.main]]
     name = "Search"
-    weight = 7
+    weight = 10
     [menu.main.params]
       type = "search"

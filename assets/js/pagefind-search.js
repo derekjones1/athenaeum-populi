@@ -13,12 +13,15 @@
 
   const labels = {
     math: 'Math',
-    biology: 'Biology',
-    chemistry: 'Chemistry',
-    physics: 'Physics',
+    'physical-sciences': 'Physical Sciences',
+    'life-health-sciences': 'Life & Health Sciences',
+    'engineering-computing': 'Engineering & Computing',
+    'social-sciences-business': 'Social Sciences & Business',
+    humanities: 'Humanities',
     prealgebra: 'Prealgebra',
     'elementary-algebra': 'Elementary Algebra',
     'intermediate-algebra': 'Intermediate Algebra',
+    precalculus: 'Precalculus',
   };
 
   function loadPagefind() {

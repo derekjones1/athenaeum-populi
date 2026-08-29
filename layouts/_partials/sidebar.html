@@ -123,6 +123,11 @@
       {{- if or (eq $menuType "search") (eq $menuType "theme-toggle") (eq $menuType "language-switch") $isIconOnly -}}
         {{- continue -}}
       {{- end -}}
+      {{- /* The navbar's width-switched duplicates (hugo.toml [menu]) opt out
+           of the drawer so each shelf is listed once here. */ -}}
+      {{- if eq $menuItem.Params.drawer false -}}
+        {{- continue -}}
+      {{- end -}}
 
       {{- $menuTitle := or (T $menuItem.Identifier) $menuItem.Name -}}
       {{- /* Dropdown parents mirror navbar behavior: render a labeled group of child links. */ -}}
@@ -322,7 +327,12 @@
         {{- range $items.ByWeight -}}
           {{- $active := eq $pageURL .RelPermalink -}}
           <li class="hx:flex hx:flex-col">
-            {{- template "sidebar-item-link" dict "active" $active "open" false "title" (partial "utils/title" .) "link" .RelPermalink -}}
+            {{- /* Book roots carry linkTitle "Overview" for their own
+                 book-scoped sidebar; listed as the subject's children they
+                 must read as the books themselves (the same exception
+                 breadcrumb.html makes), or every shelf drawer says
+                 "Overview" four times. */ -}}
+            {{- template "sidebar-item-link" dict "active" $active "open" false "title" .Title "link" .RelPermalink -}}
           </li>
         {{- end -}}
       {{- end -}}

@@ -331,3 +331,24 @@ multiple-choice:not(:defined) .ap-mc-option {
     display: none;
   }
 }
+
+/* --- Width-switched navbar ------------------------------------------------
+   Six shelf links plus Home, About, and search fit beside the site title only
+   from xl (80rem) up; between md (48rem, where Hextra swaps the hamburger
+   drawer for inline links) and xl they overflowed the bar and pushed the
+   title off the left edge. hugo.toml therefore lists the shelves twice — flat
+   (.ap-nav-shelf) and folded into one "Library" dropdown (.ap-nav-library) —
+   and these rules show exactly one set at every width. `!important` because
+   the theme's own md:inline-flex / md:inline-block utilities sit at the same
+   specificity and load order must not decide this. Below md both sets carry
+   the theme's hx:hidden already. */
+@media (min-width: 48rem) and (max-width: 79.99rem) {
+  .ap-nav-shelf {
+    display: none !important;
+  }
+}
+@media (min-width: 80rem) {
+  .ap-nav-library {
+    display: none !important;
+  }
+}

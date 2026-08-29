@@ -784,3 +784,45 @@ test('KaTeX display math sits on the math axis, and the WebKit baseline shim is 
     .filter((el) => el.style.verticalAlign !== '').length);
   expect(after, 'shim corrected elements after resize in a healthy engine').toBe(0);
 });
+
+test('the shelf drawer names its books, and the navbar switches shape by width', async ({ page }) => {
+  // Book roots carry linkTitle "Overview" for their own book-scoped sidebar;
+  // listed under the shelf they must read as the books, not "Overview" ×4
+  // (layouts/_partials/sidebar.html, sidebar-scoped-branch).
+  await page.setViewportSize({ width: 390, height: 844 });
+  await gotoBuiltPage(page, '/math/');
+  await page.locator('.hextra-hamburger-menu').click();
+  const drawerLinks = await page.locator('.hextra-sidebar-container a:visible').allInnerTexts();
+  const trimmed = drawerLinks.map((text) => text.trim());
+  for (const book of ['Prealgebra', 'Elementary Algebra', 'Intermediate Algebra', 'Precalculus']) {
+    expect(trimmed, `drawer lists ${book}`).toContain(book);
+  }
+  expect(trimmed.filter((text) => text === 'Overview')).toEqual([]);
+  // Every shelf appears exactly once in the drawer — the navbar's width-switched
+  // "Library" duplicate (hugo.toml [menu], drawer = false) must not leak in.
+  for (const shelf of ['Math', 'Physical Sciences', 'Life & Health Sciences', 'Engineering & Computing', 'Social Sciences & Business', 'Humanities']) {
+    expect(trimmed.filter((text) => text === shelf), `${shelf} once in the drawer`).toHaveLength(1);
+  }
+
+  // Between md and xl the six flat shelf links fold into one "Library"
+  // dropdown; from xl up the flat links return and the dropdown goes. Either
+  // way the site title must stay on screen (assets/css/custom.css, ap-nav-*).
+  const shape = () => page.evaluate(() => {
+    const visible = (el) => el.getBoundingClientRect().width > 0;
+    const nav = document.querySelector('nav');
+    return {
+      titleLeft: Math.round(nav.querySelector('a').getBoundingClientRect().left),
+      flat: [...nav.querySelectorAll('.ap-nav-shelf')].filter(visible).length,
+      library: [...nav.querySelectorAll('.ap-nav-library')].filter(visible).length,
+    };
+  });
+  await page.setViewportSize({ width: 1000, height: 800 });
+  expect(await shape()).toEqual({ titleLeft: 24, flat: 0, library: 1 });
+  await page.locator('.ap-nav-library .hextra-nav-menu-toggle').click();
+  await expect(page.locator('.ap-nav-library [role="menuitem"]')).toHaveCount(6);
+  await page.setViewportSize({ width: 1440, height: 800 });
+  const wide = await shape();
+  expect(wide.flat).toBe(6);
+  expect(wide.library).toBe(0);
+  expect(wide.titleLeft).toBeGreaterThanOrEqual(0);
+});

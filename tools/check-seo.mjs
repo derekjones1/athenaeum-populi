@@ -116,7 +116,7 @@ for (const { file, route } of pages) {
   }
 
   // --- book-interior entities -----------------------------------------
-  const bookMatch = route.match(/^\/math\/([^/]+)\/(.*)$/);
+  const bookMatch = route.match(/^\/[^/]+\/([^/]+)\/(.*)$/);
   if (bookMatch) {
     const expected = bookMatch[2] === '' ? ['Book'] : ['LearningResource', 'Quiz'];
     const found = expected.flatMap((type) => typed(type));
