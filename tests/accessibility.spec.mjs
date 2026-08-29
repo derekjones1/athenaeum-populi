@@ -711,6 +711,15 @@ test('a graded fill-in has no serious or critical axe violations', async ({
   // can strand focus on <body> or leave a control with no accessible name.
   expect(await card.evaluate((el) => document.activeElement !== document.body)).toBe(true);
 
+  // Scan from the top of the document. axe's target-size rule judges each
+  // control at the CURRENT scroll position, and after scrolling a card into
+  // view whatever sits under the sticky navbar's bottom edge is "partially
+  // obscured" — a scan that passes or fails on which element happens to
+  // straddle that edge, which differs between macOS and the Linux runner's
+  // font metrics. Focus is asserted above, before the scroll, so retention
+  // is still what was measured.
+  await page.evaluate(() => window.scrollTo(0, 0));
+
   const results = await new AxeBuilder({ page }).withTags(WCAG_TAGS).analyze();
   const blocking = results.violations.filter((violation) =>
     BLOCKING_IMPACTS.has(violation.impact),
@@ -750,6 +759,15 @@ test('a text-in input is named by its question and stays clean after a correct a
     .poll(async () => card.evaluate((el) => el.status), { timeout: 10_000 })
     .toBe('correct');
   expect(await card.evaluate((el) => document.activeElement !== document.body)).toBe(true);
+
+  // Scan from the top of the document. axe's target-size rule judges each
+  // control at the CURRENT scroll position, and after scrolling a card into
+  // view whatever sits under the sticky navbar's bottom edge is "partially
+  // obscured" — a scan that passes or fails on which element happens to
+  // straddle that edge, which differs between macOS and the Linux runner's
+  // font metrics. Focus is asserted above, before the scroll, so retention
+  // is still what was measured.
+  await page.evaluate(() => window.scrollTo(0, 0));
 
   const results = await new AxeBuilder({ page }).withTags(WCAG_TAGS).analyze();
   const blocking = results.violations.filter((violation) =>
