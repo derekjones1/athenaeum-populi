@@ -33,3 +33,4 @@
 # with a 207 KiB backup archive inside, one `git add -A` away from being
 # committed. Nothing here is a build input; delete the directory whenever.
 /_to_delete/
+/docs/accounts-plan.md
