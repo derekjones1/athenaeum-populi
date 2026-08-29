@@ -11,3 +11,5 @@ import './components/math/fill-in.js';
 import './components/shared/multiple-choice.js';
 import './components/math/graph-plot.js';
 import './components/math/ap-figure.js';
+import './components/text/text-in.js';
+import './components/text/self-check.js';

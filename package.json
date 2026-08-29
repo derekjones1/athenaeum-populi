@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run build:hugo && npm run search:index",
     "build:hugo": "hugo --gc --minify --cleanDestinationDir --panicOnWarning --cacheDir \"$(pwd)/.hugo_cache\"",
-    "search:index": "pagefind --site public --root-selector 'main#content' --exclude-selectors '.katex,svg,template,.ap-mc-options,.ap-mc-feedback'",
+    "search:index": "pagefind --site public --root-selector 'main#content' --exclude-selectors '.katex,svg,template,.ap-mc-options,.ap-mc-feedback,.ap-selfcheck-answer,.ap-selfcheck-feedback,.ap-textin-feedback'",
     "check:routes": "node tools/build/check-route-parity.mjs",
     "check:links": "node tools/build/check-links.mjs",
     "check:search": "node tools/build/check-pagefind.mjs",
@@ -27,8 +27,8 @@
     "validate": "node tools/lint/validate-content.mjs content 0",
     "verify:content": "node tools/verify/verify-all.mjs content",
     "verify:answers": "node tools/verify/verify-answers.mjs content --min-verified 3160",
-    "verify:replay": "node tools/verify/verify-replay.mjs content --min-replayed 8130",
-    "verify:ledger": "node tools/verify/answer-ledger.mjs check content --min-exercises 8279 --max-unverifiable 0",
+    "verify:replay": "node tools/verify/verify-replay.mjs content --min-replayed 8136",
+    "verify:ledger": "node tools/verify/answer-ledger.mjs check content --min-exercises 8308 --max-unverifiable 0",
     "ledger:stats": "node tools/verify/answer-ledger.mjs stats content",
     "ledger:list": "node tools/verify/answer-ledger.mjs list content",
     "ledger:merge": "node tools/verify/answer-ledger.mjs merge",
@@ -43,12 +43,13 @@
     "source:check": "node tools/source/openstax-source.mjs audit",
     "source:history": "node tools/source/openstax-source.mjs history",
     "source:status": "node tools/source/openstax-source.mjs status",
+    "source:media": "node tools/source/vendor-media.mjs",
     "test:e2e": "playwright test tests/browser-check.spec.mjs"
   },
   "engines": {
     "node": ">=22"
   },
-  "//search": "search:index excludes rendered math (.katex) from the index entirely: flattening the visual KaTeX DOM turns stacked fractions into mathematically false digit strings (2/3 became 32 in excerpts), and the MathML layer would surface raw token noise instead. Excerpts skip equations rather than corrupt them. .ap-mc-options / .ap-mc-feedback are multiple-choice control noise, not content.",
+  "//search": "search:index excludes rendered math (.katex) from the index entirely: flattening the visual KaTeX DOM turns stacked fractions into mathematically false digit strings (2/3 became 32 in excerpts), and the MathML layer would surface raw token noise instead. Excerpts skip equations rather than corrupt them. .ap-mc-options / .ap-mc-feedback are multiple-choice control noise, not content. .ap-selfcheck-answer is a model answer a learner reveals deliberately — indexing it would leak every critical-thinking key into search excerpts; .ap-selfcheck-feedback and .ap-textin-feedback are empty live regions.",
   "//deps": "esbuild is NOT listed: Hugo Pipes js.Build embeds esbuild. katex/mathlive/pagefind are pinned: KaTeX assets are vendored for offline builds, MathLive supplies math input, and Pagefind builds one global site-wide search index.",
   "//versions": "KaTeX 0.16.22 matches the engine embedded in Hugo 0.164.0; its CSS must match Hugo's generated HTML. MathLive 0.110.0 and @cortex-js/compute-engine 0.58.0 are pinned because grading behavior is version-sensitive. Upgrade these versions only as a coordinated, fully verified architecture change.",
   "dependencies": {

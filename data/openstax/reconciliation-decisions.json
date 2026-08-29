@@ -2,7 +2,8 @@
  "schemaVersion": 2,
  "targetCommits": {
   "prealgebra-bundle": "38cae454e644abf9f0a623e876994553881597c9",
-  "college-algebra-bundle": "789b54099106b071d1d32bfcee454fed72eb4768"
+  "college-algebra-bundle": "789b54099106b071d1d32bfcee454fed72eb4768",
+  "biology-bundle": "63f8b6f8d129dd1582989bb755011e9a6d523471"
  },
  "metadataDecisions": [
   {

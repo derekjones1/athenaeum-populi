@@ -45,3 +45,9 @@
 # not a year.
 /katex/*
   Cache-Control: public, max-age=86400
+
+# Vendored textbook figures (static/media/<book>/*.webp) carry the source
+# file's stem, not a content hash, so they get a day like the KaTeX assets —
+# never `immutable`, which audit-build couples to hashed names.
+/media/*
+  Cache-Control: public, max-age=86400

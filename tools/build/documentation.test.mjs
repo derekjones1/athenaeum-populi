@@ -92,7 +92,6 @@ test('the playbooks live in docs/ only', () => {
 test('the authoring playbook documents the authoring rules', () => {
   const authoring = read('docs/authoring-playbook.md');
   assert.match(authoring, /plain Markdown with Hugo shortcodes/);
-  assert.match(authoring, /answerMode="unordered"/);
   assert.match(authoring, /Run `npm test`/);
   assert.match(authoring, /chapters and Knowledge Checks share one sequential weight order/);
   assert.match(authoring, /before July 22, 2026[\s\S]*grandfathered/);
@@ -108,10 +107,6 @@ test('the authoring playbook documents the authoring rules', () => {
   // The missing-block rule is an ERROR now that the retrofit is finished; the
   // playbook must say so, or the next author reads it as optional.
   assert.match(authoring, /reports a\s+missing one as an \*\*error\*\*/);
-  // Value grading cannot see the shape of a response, so a re-expression prompt
-  // is only gradeable with an answerForm. The playbook must document the tokens
-  // and the rule, or the next such exercise ships passable by retyping it.
-  assert.match(authoring, /answerForm="lowest-terms"/);
   assert.match(authoring, /A categorical answer is never a number/);
   // The retrofit is done, but §5's working rules outlived it and several other
   // sections cite them by number — so the section stays, under its own title.
@@ -125,6 +120,17 @@ test('the authoring playbook documents the authoring rules', () => {
   // fix.
   assert.match(authoring, /ledger:list -- --unverified/);
   assert.match(authoring, /ledger:merge/);
+});
+
+test('the math subject playbook documents the answerForm and fillin answer-shape rules', () => {
+  // Value grading cannot see the shape of a response, so a re-expression prompt
+  // is only gradeable with an answerForm. The math playbook must document the
+  // tokens and the rule, or the next such exercise ships passable by retyping
+  // it. This content moved out of the subject-neutral core into the math
+  // subject playbook; the unordered-list fillin rule moved with it.
+  const math = read('docs/subjects/math.md');
+  assert.match(math, /answerMode="unordered"/);
+  assert.match(math, /answerForm="lowest-terms"/);
 });
 
 test('AGENTS.md documents the ledger result-file shape the merge reads', () => {
@@ -202,15 +208,16 @@ test('package.json keeps the scripts the test gate composes', () => {
 
 // ---- answerForm token parity, in both directions ---------------------------
 
-test('the playbook documents every answerForm token', () => {
+test('the math playbook documents every answerForm token', () => {
   // Derived from the predicates rather than re-listed here: the token list used
   // to be copied into the playbook by hand, so adding a predicate could leave
   // the playbook silently behind. Iterating the export makes a new token fail
-  // here until it is documented.
-  const authoring = read('docs/authoring-playbook.md');
+  // here until it is documented. The whole answerForm table lives in the math
+  // subject playbook, not the subject-neutral core.
+  const math = read('docs/subjects/math.md');
   for (const token of ANSWER_FORM_TOKENS) {
-    assert.match(authoring, new RegExp(`\`${token.replace(/[<>]/g, '\\$&')}\``),
-      `the playbook documents the ${token} answerForm token`);
+    assert.match(math, new RegExp(`\`${token.replace(/[<>]/g, '\\$&')}\``),
+      `the math playbook documents the ${token} answerForm token`);
   }
 });
 
@@ -355,7 +362,7 @@ const VERSION_CLAIMS = [
     ['package.json', /"@cortex-js\/compute-engine": "(\d+(?:\.\d+)*)"/],
     ['package.json', /compute-engine (\d+(?:\.\d+)*) are pinned/],
     ['docs/architecture.md', /compute-engine` (\d+(?:\.\d+)*) are excluded/],
-    ['docs/authoring-playbook.md', /Measured against the pinned\s+(\d+(?:\.\d+)*) the engine/],
+    ['docs/subjects/math.md', /Measured against the pinned\s+(\d+(?:\.\d+)*) the engine/],
   ]],
   ['Pagefind', [
     ['package.json', /"pagefind": "(\d+(?:\.\d+)*)"/],

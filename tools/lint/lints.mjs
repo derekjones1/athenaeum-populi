@@ -110,6 +110,53 @@ import { hasFileBackedCssImage, htmlAttribute, openTagRe } from '../lib/html.mjs
 // The one objectives-callout parser, shared with the structure validator and
 // the source audit so the three tools never diagnose the callout differently.
 import { parseObjectivesCallout } from '../lib/openstax-source.mjs';
+// The real textin grading normalizer, so the word-count/retype-hazard/
+// duplicate-accept-member rules below reason about a textin answer exactly
+// the way check-text.mjs will grade it.
+import { normalizeText } from '../../assets/js/lib/text/check-text.mjs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+
+/**
+ * Every `data/media/<book>.json` manifest on disk, keyed by book. Read
+ * lazily (only when a mediafigure shortcode is actually found) and cached
+ * per lintHugo call via the caller-supplied `mediaManifests` option so tests
+ * never have to touch disk.
+ */
+function loadMediaManifestsFromDisk() {
+  const manifests = new Map();
+  const dir = path.join(REPO_ROOT, 'data/media');
+  if (!existsSync(dir)) return manifests;
+  for (const file of readdirSync(dir)) {
+    if (!file.endsWith('.json')) continue;
+    try {
+      manifests.set(file.slice(0, -'.json'.length), JSON.parse(readFileSync(path.join(dir, file), 'utf8')));
+    } catch {
+      // A malformed manifest is treated as absent below — the "no manifest"
+      // error names the real fix (re-run vendor-media) rather than a JSON
+      // parse trace.
+    }
+  }
+  return manifests;
+}
+
+/** Get a manifest by book name from either a Map or a plain object. */
+function manifestEntry(manifests, book) {
+  if (!manifests) return undefined;
+  return manifests instanceof Map ? manifests.get(book) : manifests[book];
+}
+
+/** Does `needle` (already normalized) occur as a whole-word run in `haystack` (already normalized)? */
+function containsWholeWordRun(haystack, needle) {
+  if (!needle) return false;
+  const escaped = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`(^|\\s)${escaped}(?=$|\\s)`).test(haystack);
+}
+
+const UNESCAPED_DOLLAR_RE = /(^|[^\\])\$/;
 
 /**
  * Does the question tell the learner what order to enter a comma-separated
@@ -571,7 +618,7 @@ function printedQuestionValues(question) {
  * Kept separate from printedQuestionValues() and reached only through
  * FACTORING_PROMPT_RE. Widening the shared numeric candidate list instead would
  * put every "Simplify: $…$" prompt in scope in the same commit; those need
- * their own form tokens and their own retrofit (playbook §6), and a rule that
+ * their own form tokens and their own retrofit (math playbook §6), and a rule that
  * fires on a thousand sound-but-untagged exercises cannot land at all.
  *
  * Backslash macros are stripped before the letter test so `\tfrac`, `\cdot` and
@@ -757,7 +804,7 @@ function printedAngleSubjects(question) {
  * types what the question already told them and never combines a like term.
  *
  * So these build the candidate instead of finding it. Each is gated on its own
- * phrasing for the same reason the span extractors are (playbook §6: widening
+ * phrasing for the same reason the span extractors are (math playbook §6: widening
  * a shared extractor puts a thousand sound-but-untagged exercises in scope at
  * once), and each returns at most one candidate — the single restatement the
  * wording actually invites, not every rearrangement of the printed parts.
@@ -1042,8 +1089,17 @@ function elementSuppliesName(block, id) {
   return false;
 }
 
-export function lintHugo(src, filename = '') {
+export function lintHugo(src, filename = '', options = {}) {
   const errors = [];
+  // Lazy and cached per call: only touch disk if a mediafigure shortcode is
+  // actually present, and never touch disk at all when a caller (a test)
+  // supplies `mediaManifests` explicitly.
+  let diskMediaManifests;
+  const mediaManifestFor = (book) => {
+    if (options.mediaManifests) return manifestEntry(options.mediaManifests, book);
+    if (diskMediaManifests === undefined) diskMediaManifests = loadMediaManifestsFromDisk();
+    return manifestEntry(diskMediaManifests, book);
+  };
   const err = (i, msg) => errors.push(`L${lineOf(src, i)}: ${msg}`);
   // Hugo expands shortcode syntax even when Markdown presents it as code.
   // Documentation must use Hugo's comment-escaped form (`{{</* name */>}}`)
@@ -1065,7 +1121,7 @@ export function lintHugo(src, filename = '') {
   const htmlMediaSrc = maskMarkdownCodeBlocks(uncommented, blank, false)
     .replace(/(`+)([\s\S]*?)\1/g, blank);
   const isKnowledgeCheck = /knowledge-check-\d+-\d+\.md$/.test(filename);
-  const isRegularSection = /[/\\]content[/\\]math[/\\][^/\\]+[/\\]\d{2}-[^/\\]+[/\\]\d{2}-[^/\\]+\.md$/i
+  const isRegularSection = /[/\\]content[/\\][^/\\]+[/\\][^/\\]+[/\\]\d{2}-[^/\\]+[/\\]\d{2}-[^/\\]+\.md$/i
     .test(filename.replace(/^\.?[/\\]?/, '/'));
 
   // ---- frontmatter YAML that Hugo cannot parse -----------------------------
@@ -1535,11 +1591,32 @@ export function lintHugo(src, filename = '') {
     }
   }
 
+  // The mirror image: a closing tag on a shortcode whose template never reads
+  // .Inner. Hugo refuses the whole page ("does not evaluate .Inner … yet a
+  // closing tag was provided"), so the build — not the author — is where it
+  // would otherwise surface. Both pilot biology authors wrote it, because the
+  // self-closing `/>}}` spelling is not in this repository's grammar either.
+  for (const [name, paired] of Object.entries(PAIRED_SHORTCODES)) {
+    if (paired) continue;
+    for (const m of mediaSrc.matchAll(new RegExp(`\\{\\{<\\s*/${name}\\s*>\\}\\}`, 'g'))) {
+      err(m.index, `{{< /${name} >}}: ${name} is an unpaired shortcode — write {{< ${name} … >}} with no closing tag and no self-closing slash (Hugo refuses a closing tag on a shortcode that never reads .Inner)`);
+    }
+  }
+
   // ---- interactive practice-set size rule ----------------------------------
   const fillins = [...shortcodes(mediaSrc, 'fillin')];
   const multiplechoices = [...shortcodes(mediaSrc, 'multiplechoice')];
   const graphplots = [...shortcodes(mediaSrc, 'graphplot')];
-  const practiceQuestions = [...fillins, ...multiplechoices, ...graphplots]
+  const textins = [...shortcodes(mediaSrc, 'textin')];
+  const selfchecks = [...shortcodes(mediaSrc, 'selfcheck')];
+  // Auto-graded kinds only — a `selfcheck` has no key, so it never counts as
+  // proof a learner mastered the objective on its own; it must share a group
+  // with at least one graded item. `practiceQuestions` (below) still counts
+  // selfchecks toward the raw practice-set size and consecutive-question
+  // rules, since a self-check is still an interactive practice item.
+  const autoGradedQuestions = [...fillins, ...multiplechoices, ...graphplots, ...textins]
+    .sort((a, b) => a.index - b.index);
+  const practiceQuestions = [...fillins, ...multiplechoices, ...graphplots, ...textins, ...selfchecks]
     .sort((a, b) => a.index - b.index);
 
   // ---- section-final Practice block ----------------------------------------
@@ -1607,6 +1684,7 @@ export function lintHugo(src, filename = '') {
 
       const inRange = ({ index }) => index >= practiceRange[0] && index < practiceRange[1];
       const blockQuestions = practiceQuestions.filter(inRange);
+      const blockAutoGraded = autoGradedQuestions.filter(inRange);
       const groups = [...mediaSrc.matchAll(/^### +(.+?)[ \t]*$/gm)]
         .map((m) => ({ index: m.index, end: m.index + m[0].length, title: m[1].trim() }))
         .filter(inRange)
@@ -1643,6 +1721,12 @@ export function lintHugo(src, filename = '') {
             .length;
           if (count < MIN_PER_OBJECTIVE) {
             err(group.index, `Practice group \`### ${group.title}\` has ${count} interactive exercise(s) — at least ${MIN_PER_OBJECTIVE} are required`);
+          }
+          const autoGradedCount = blockAutoGraded
+            .filter(({ index }) => index >= group.end && index < group.limit)
+            .length;
+          if (autoGradedCount < 1) {
+            err(group.index, `Practice group \`### ${group.title}\` has no auto-graded exercise (fillin, multiplechoice, graphplot, or textin) — a group of only selfchecks does not cover its objective`);
           }
         }
       }
@@ -2017,6 +2101,128 @@ export function lintHugo(src, filename = '') {
       }
     } catch (error) {
       err(index, `graphplot: ${error.message}`);
+    }
+  }
+
+  // ---- textin shortcode rules -----------------------------------------------
+  // The word counterpart of fillin: grading lives in check-text.mjs
+  // (normalized exact match, no math), so the hazards it cannot catch by
+  // self-grading are caught here — a text field has no spoken-math name, a
+  // multi-word "answer" is really a sentence not a term, an accept member
+  // that collides with the answer after normalization hides a duplicate, and
+  // an answer printed inside its own question is a retype hazard the same
+  // way a fillin's is.
+  for (const { params, index } of shortcodes(mediaSrc, 'textin')) {
+    const where = `textin (${(params.question || '?').slice(0, 40)}…)`;
+    const q = params.question || '';
+    const answer = params.answer || '';
+    if (!q.trim()) err(index, 'textin: missing non-empty question');
+    if (!answer.trim()) err(index, `${where}: missing non-empty answer`);
+    for (const name of ['answerMode', 'answerForm']) {
+      if (params[name] !== undefined) {
+        err(index, `${where}: textin does not take ${JSON.stringify(name)} — it grades words, not values; use fillin for a math answer`);
+      }
+    }
+    for (const name of ['question', 'answer', 'accept', 'hint', 'answerDisplay']) {
+      const value = params[name];
+      if (value !== undefined && UNESCAPED_DOLLAR_RE.test(value)) {
+        err(index, `${where}: ${name} must not contain \`$\` math — a text field has no spoken-math name; use multiplechoice for a prompt that needs math`);
+      }
+    }
+    const members = [];
+    if (answer.trim()) members.push({ raw: answer, norm: normalizeText(answer), label: `answer ${JSON.stringify(answer)}` });
+    for (const raw of (params.accept || '').split('|')) {
+      if (!raw) continue;
+      members.push({ raw, norm: normalizeText(raw), label: `accept member ${JSON.stringify(raw)}` });
+    }
+    for (const member of members) {
+      if (!member.norm) {
+        err(index, `${where}: ${member.label} is empty after normalization`);
+        continue;
+      }
+      const words = member.norm.split(' ').filter(Boolean);
+      if (words.length > 4) {
+        err(index, `${where}: ${member.label} is ${words.length} words — keep a text answer to 4 words or fewer`);
+      }
+    }
+    for (let i = 0; i < members.length; i += 1) {
+      for (let j = i + 1; j < members.length; j += 1) {
+        if (members[i].norm && members[i].norm === members[j].norm) {
+          err(index, `${where}: ${members[j].label} normalizes the same as ${members[i].label} — remove the duplicate`);
+        }
+      }
+    }
+    const qNorm = normalizeText(q);
+    for (const member of members) {
+      if (member.norm && containsWholeWordRun(qNorm, member.norm)) {
+        err(index, `${where}: ${member.label} appears as a whole-word run in the question (normalized) — a learner can pass by retyping the prompt`);
+      }
+    }
+    if (isRegularSection && !(params.hint || '').trim()) {
+      err(index, `${where}: regular-section exercise is missing a hint`);
+    }
+  }
+
+  // ---- selfcheck shortcode rules ---------------------------------------------
+  // No key at all — the model answer is the paired inner content — so the
+  // rules here are structural: the paired body is non-empty, none of the
+  // graded-shortcode params leaked in from a copy-paste, and regular
+  // sections still get a hint.
+  for (const { params, inner, index, closed } of shortcodes(mediaSrc, 'selfcheck')) {
+    const where = `selfcheck (${(params.question || '?').slice(0, 40)}…)`;
+    if (!(params.question || '').trim()) err(index, 'selfcheck: missing non-empty question');
+    if (!closed) continue; // the unclosed-shortcode rule above already named it
+    if (!inner.trim()) err(index, `${where}: needs a non-empty model answer as its inner content`);
+    for (const name of ['answer', 'accept', 'answerDisplay', 'answerMode', 'answerForm']) {
+      if (params[name] !== undefined) {
+        err(index, `${where}: selfcheck does not take ${JSON.stringify(name)} — a self-check has no key; its model answer is the inner content`);
+      }
+    }
+    if (isRegularSection && !(params.hint || '').trim()) {
+      err(index, `${where}: regular-section exercise is missing a hint`);
+    }
+  }
+
+  // ---- mediafigure shortcode rules -------------------------------------------
+  // The ONLY sanctioned file-backed image path. The shortcode template
+  // itself refuses to build against a missing manifest/entry (errorf), but
+  // the lint has to catch that before Hugo ever runs, and adds checks the
+  // template does not: alt length, alt-vs-caption distinctness, and the
+  // eager flag's shape.
+  for (const { params, inner, index, closed } of shortcodes(mediaSrc, 'mediafigure')) {
+    if (!closed) continue; // the unclosed-shortcode rule above already named it
+    const src = (params.src || '').trim();
+    const alt = (params.alt || '').trim();
+    const caption = inner.trim();
+    const where = `mediafigure (${src || '?'})`;
+    if (!src) {
+      err(index, 'mediafigure: missing non-empty src');
+    } else {
+      const parts = src.split('/');
+      if (parts.length !== 2 || !parts[0] || !parts[1]) {
+        err(index, `${where}: src must be "<book>/<stem>"`);
+      } else {
+        const [book, stem] = parts;
+        const manifest = mediaManifestFor(book);
+        if (!manifest) {
+          err(index, `${where}: no media manifest data/media/${book}.json — run \`npm run source:media\` first`);
+        } else if (!manifest.figures || !manifest.figures[stem]) {
+          err(index, `${where}: ${JSON.stringify(stem)} is not in data/media/${book}.json — run \`npm run source:media\` to vendor it`);
+        }
+      }
+    }
+    if (!alt) {
+      err(index, `${where}: missing non-empty alt`);
+    } else if (alt.length > 600) {
+      err(index, `${where}: alt is ${alt.length} characters — keep it to 600 or fewer`);
+    } else if (caption && alt.replace(/\s+/g, ' ').trim().toLowerCase() === caption.replace(/\s+/g, ' ').trim().toLowerCase()) {
+      err(index, `${where}: alt is identical to the caption after whitespace/case normalization — alt must describe the image, not repeat the caption`);
+    }
+    if (params.eager !== undefined && params.eager !== 'true') {
+      err(index, `${where}: eager must be "true" (or omitted)`);
+    }
+    if (params.kind !== undefined && !["photo", "diagram"].includes(params.kind)) {
+      err(index, `${where}: kind must be "photo" or "diagram" (or omitted to take the manifest's guess)`);
     }
   }
 

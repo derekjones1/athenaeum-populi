@@ -1,0 +1,52 @@
+{{- /*
+  textin — short TEXT answer (a term, a name, a short phrase) graded in the
+  browser by normalized exact match. The word counterpart of `fillin`, whose
+  math input cannot take words at all; the lint routes word answers here and
+  value answers there.
+
+  Params:
+    question   (required) prose prompt — no `$…$` math (a text field has no
+               speech serializer; use multiplechoice when the prompt needs math)
+    answer     (required) the keyed answer, plain text
+    accept     optional `|`-separated alternates (plural, British spelling,
+               abbreviation) graded as correct too
+    answerDisplay   optional pretty form echoed on success
+    hint       optional hint
+    placeholder     empty-field prompt (default "Your answer")
+
+  Grading lives in assets/js/lib/text/check-text.mjs; the <text-in> component
+  (assets/js/components/text/text-in.js) upgrades this static shell.
+*/ -}}
+{{- $question := .Get "question" -}}
+{{- $answer := .Get "answer" -}}
+{{- if or (not (trim ($question | default "") " ")) (not (trim ($answer | default "") " ")) -}}
+  {{- errorf "textin shortcode needs both a non-empty 'question' and 'answer' (%s)" .Position -}}
+{{- end -}}
+{{- range (slice "answerMode" "answerForm") -}}
+  {{- with $.Get . -}}
+    {{- errorf "textin does not take %q — it grades words, not values; use fillin for a math answer (%s)" . $.Position -}}
+  {{- end -}}
+{{- end -}}
+{{- range (slice "question" "answer" "accept" "hint" "answerDisplay") -}}
+  {{- $value := $.Get . | default "" -}}
+  {{- if findRE `(^|[^\\])\$` (printf "%v" $value) -}}
+    {{- errorf "textin %q must not contain `$` math — a text field has no spoken-math name; use multiplechoice for a prompt that needs math (%s)" . $.Position -}}
+  {{- end -}}
+{{- end -}}
+{{- $placeholder := .Get "placeholder" | default "Your answer" -}}
+<text-in
+  data-answer="{{ $answer }}"
+  {{ with .Get "accept" }}data-accept="{{ . }}"{{ end }}
+  data-placeholder="{{ $placeholder }}"
+  data-question="{{ $question }}">
+  <div class="ap-textin">
+    <p class="ap-textin-question">{{ partial "mathtext" $question }}</p>
+    <noscript><p class="ap-noscript-notice">Interactive practice requires JavaScript.</p></noscript>
+    {{- with .Get "answerDisplay" }}
+      <template data-slot="answer-display">{{ partial "mathtext" . }}</template>
+    {{- end }}
+    {{- with .Get "hint" }}
+      <template data-slot="hint">{{ partial "mathtext" . }}</template>
+    {{- end }}
+  </div>
+</text-in>

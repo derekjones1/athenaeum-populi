@@ -16,6 +16,11 @@ const EXCLUDED_CORE_SECTION_CLASSES = new Set([
   'key-concepts',
   'section-exercises',
   'writing',
+  'summary',
+  'multiple-choice',
+  'critical-thinking',
+  'visual-exercise',
+  'free-response',
 ]);
 
 const MATCH_STOPWORDS = new Set([
@@ -313,6 +318,21 @@ export function normalizeWhitespace(value) {
   return String(value || '').replace(/\s+/g, ' ').trim();
 }
 
+/**
+ * Parse an OpenStax collection. Most collections are flat: every top-level
+ * `<subcollection>` under `<content>` is a chapter (its own `<content>` holds
+ * `<module>` children directly). Some collections (e.g. Biology 2e) nest one
+ * more level: a top-level `<subcollection>` is a *unit* whose `<content>`
+ * holds chapter `<subcollection>` elements instead of modules directly. This
+ * parser handles both shapes: a subcollection is a chapter exactly when its
+ * own `<content>` has direct `<module>` children; otherwise it is treated as
+ * a unit and its nested chapter subcollections are read instead. Chapters are
+ * numbered 1-based in document order across every unit.
+ *
+ * A collection may also carry top-level `<module>` elements outside any
+ * subcollection — a preface before the first chapter, appendices after the
+ * last — collected as `frontMatterModuleIds` / `backMatterModuleIds`.
+ */
 export function parseCollectionXml(xml) {
   const document = parseXml(xml);
   const collection = firstElement(document, 'collection');
@@ -321,20 +341,46 @@ export function parseCollectionXml(xml) {
   const content = firstElement(collection, 'content');
   if (!metadata || !content) throw new Error('collection XML needs metadata and content');
 
-  const chapters = elementChildren(content, 'subcollection').map((subcollection, index) => {
+  const chapters = [];
+  const frontMatterModuleIds = [];
+  const backMatterModuleIds = [];
+  let unitIndex = 0;
+
+  const addChapter = (subcollection, unit) => {
     const chapterContent = firstElement(subcollection, 'content');
     const moduleIds = elementChildren(chapterContent, 'module').map((module) => module.attributes.document);
     if (moduleIds.some((moduleId) => !moduleId)) {
-      throw new Error(`collection chapter ${index + 1} contains a module without a document id`);
+      throw new Error(`collection chapter ${chapters.length + 1} contains a module without a document id`);
     }
-    return {
-      chapter: index + 1,
+    chapters.push({
+      chapter: chapters.length + 1,
       title: directText(subcollection, 'title'),
+      unit,
       moduleIds,
       introModuleId: moduleIds[0] || null,
       sectionModuleIds: moduleIds.slice(1),
-    };
-  });
+    });
+  };
+
+  for (const child of elementChildren(content)) {
+    const name = localName(child);
+    if (name === 'module') {
+      const moduleId = child.attributes.document;
+      if (!moduleId) throw new Error('collection XML contains a top-level module without a document id');
+      (chapters.length ? backMatterModuleIds : frontMatterModuleIds).push(moduleId);
+      continue;
+    }
+    if (name !== 'subcollection') continue;
+    const childContent = firstElement(child, 'content');
+    const directModuleIds = elementChildren(childContent, 'module');
+    if (directModuleIds.length > 0) {
+      addChapter(child, null);
+      continue;
+    }
+    unitIndex += 1;
+    const unit = { index: unitIndex, title: directText(child, 'title') };
+    for (const nested of elementChildren(childContent, 'subcollection')) addChapter(nested, unit);
+  }
 
   return {
     title: directText(metadata, 'title'),
@@ -342,6 +388,8 @@ export function parseCollectionXml(xml) {
     uuid: directText(metadata, 'uuid'),
     license: directText(metadata, 'license'),
     chapters,
+    frontMatterModuleIds,
+    backMatterModuleIds,
   };
 }
 
@@ -469,25 +517,44 @@ export function parseModuleXml(xml) {
 }
 
 function localInteractions(body) {
-  const interactions = [];
-  for (const match of body.matchAll(/\{\{<\s*(fillin|multiplechoice|graphplot)\b([\s\S]*?)>\}\}/g)) {
+  const matches = [];
+  // fillin/multiplechoice/graphplot are math shortcodes (MathLive input,
+  // graded values). textin is their word counterpart — a short-text answer,
+  // still expressed as a self-closing shortcode with the same question/answer
+  // param shape, so it shares this pass.
+  for (const match of body.matchAll(/\{\{<\s*(fillin|multiplechoice|graphplot|textin)\b([\s\S]*?)>\}\}/g)) {
     const params = shortcodeParams(match[2]);
-    const question = params.question || '';
-    const answer = params.answerDisplay || params.answer || '';
-    interactions.push({
+    matches.push({
+      index: match.index,
       type: match[1],
-      question,
-      answer,
-      semanticQuestion: normalizeSemanticText(question),
-      semanticAnswer: normalizeSemanticText(answer),
-      // Through the shared extractor, which shields `\$`. Scanning raw meant an
-      // authored money amount opened a span, so every later span in the same
-      // string was sliced at the wrong delimiter and compared as garbage.
-      questionMath: mathSpans(question, { allowNewlines: true }).map((span) => normalizeSemanticText(span.tex)),
-      answerMath: mathSpans(answer, { allowNewlines: true }).map((span) => normalizeSemanticText(span.tex)),
+      question: params.question || '',
+      answer: params.answerDisplay || params.answer || '',
     });
   }
-  return interactions;
+  // selfcheck is paired and has no answer param at all — its inner Markdown
+  // content (the model answer a learner reveals) stands in for the answer.
+  for (const match of body.matchAll(/\{\{<\s*selfcheck\b([\s\S]*?)>\}\}([\s\S]*?)\{\{<\s*\/selfcheck\s*>\}\}/g)) {
+    const params = shortcodeParams(match[1]);
+    matches.push({
+      index: match.index,
+      type: 'selfcheck',
+      question: params.question || '',
+      answer: normalizeWhitespace(match[2]),
+    });
+  }
+  matches.sort((left, right) => left.index - right.index);
+  return matches.map(({ type, question, answer }) => ({
+    type,
+    question,
+    answer,
+    semanticQuestion: normalizeSemanticText(question),
+    semanticAnswer: normalizeSemanticText(answer),
+    // Through the shared extractor, which shields `\$`. Scanning raw meant an
+    // authored money amount opened a span, so every later span in the same
+    // string was sliced at the wrong delimiter and compared as garbage.
+    questionMath: mathSpans(question, { allowNewlines: true }).map((span) => normalizeSemanticText(span.tex)),
+    answerMath: mathSpans(answer, { allowNewlines: true }).map((span) => normalizeSemanticText(span.tex)),
+  }));
 }
 
 function markdownPlainText(markdown) {
@@ -599,8 +666,14 @@ export function loadSourceLock(repositoryRoot) {
         throw new Error(`${relativeLock}: book ${bookKey} is declared in more than one bundle`);
       }
       const book = bundle.books[bookKey];
-      for (const field of ['sourceSlug', 'collectionId', 'collectionPath']) {
+      for (const field of ['sourceSlug', 'collectionId', 'collectionPath', 'contentPath']) {
         if (!book[field]) throw new Error(`${relativeLock}: ${bundleKey}/${bookKey} is missing ${field}`);
+      }
+      if (book.contentPath.startsWith('/') || book.contentPath.endsWith('/')) {
+        throw new Error(`${relativeLock}: ${bundleKey}/${bookKey} contentPath must not have a leading or trailing slash`);
+      }
+      if (!book.contentPath.startsWith('content/')) {
+        throw new Error(`${relativeLock}: ${bundleKey}/${bookKey} contentPath must start with "content/"`);
       }
       if (!/^[0-9a-f]{40}$/.test(book.authoredBaselineCommit || '')) {
         throw new Error(`${relativeLock}: ${bundleKey}/${bookKey} has an invalid authoredBaselineCommit`);
@@ -657,14 +730,16 @@ function loadCollections(lock, sourceDirectories) {
 
 /** Authored chapter landings for a book, whether or not any section pages
  * inside them exist yet. A scaffolded book is exactly this: chapter landings
- * with no numbered sections. */
-export function localChapterIndexes(repositoryRoot, bookKey) {
-  const bookRoot = path.join(repositoryRoot, 'content/math', bookKey);
+ * with no numbered sections. `book` is the lock's book config (it carries
+ * `contentPath`, the book's own content root — no longer assumed to be
+ * `content/math/<bookKey>`). */
+export function localChapterIndexes(repositoryRoot, book) {
+  const bookRoot = path.join(repositoryRoot, book.contentPath);
   if (!existsSync(bookRoot)) return [];
   return readdirSync(bookRoot, { withFileTypes: true })
     .filter((entry) => entry.isDirectory() && /^\d{2}-/.test(entry.name))
     .map((entry) => {
-      const localPath = `content/math/${bookKey}/${entry.name}/_index.md`;
+      const localPath = `${book.contentPath}/${entry.name}/_index.md`;
       const absolute = path.join(repositoryRoot, localPath);
       const attributes = existsSync(absolute)
         ? parseFrontmatter(readFileSync(absolute, 'utf8')).attributes
@@ -681,58 +756,58 @@ export function localChapterIndexes(repositoryRoot, bookKey) {
 }
 
 export function buildSourceMap(repositoryRoot, sourceDirectories, lock = loadSourceLock(repositoryRoot)) {
-  const contentRoot = path.join(repositoryRoot, 'content/math');
   const collections = loadCollections(lock, sourceDirectories);
   const entries = [];
   const errors = [];
   const chapterLocalCounts = new Map();
 
-  for (const absolutePath of [...walkMarkdown(contentRoot)].sort()) {
-    const relativePath = path.relative(repositoryRoot, absolutePath).split(path.sep).join('/');
-    const book = relativePath.split('/')[2];
-    const config = collections.get(book);
-    if (!config) continue;
-    const markdown = readFileSync(absolutePath, 'utf8');
-    const local = parseLocalSection(markdown);
-    if (!local.sourceSection) continue;
-    const sectionMatch = local.sourceSection.match(/^(\d+)\.(\d+)$/);
-    if (!sectionMatch) {
-      errors.push(`${relativePath}: invalid source_section ${JSON.stringify(local.sourceSection)}`);
-      continue;
+  for (const [book, config] of collections) {
+    const contentRoot = path.join(repositoryRoot, config.contentPath);
+    if (!existsSync(contentRoot)) continue;
+    for (const absolutePath of [...walkMarkdown(contentRoot)].sort()) {
+      const relativePath = path.relative(repositoryRoot, absolutePath).split(path.sep).join('/');
+      const markdown = readFileSync(absolutePath, 'utf8');
+      const local = parseLocalSection(markdown);
+      if (!local.sourceSection) continue;
+      const sectionMatch = local.sourceSection.match(/^(\d+)\.(\d+)$/);
+      if (!sectionMatch) {
+        errors.push(`${relativePath}: invalid source_section ${JSON.stringify(local.sourceSection)}`);
+        continue;
+      }
+      const chapterNumber = Number(sectionMatch[1]);
+      const sectionNumber = Number(sectionMatch[2]);
+      const chapter = config.collection.chapters[chapterNumber - 1];
+      if (!chapter) {
+        errors.push(`${relativePath}: upstream collection has no chapter ${chapterNumber}`);
+        continue;
+      }
+      const moduleId = chapter.sectionModuleIds[sectionNumber - 1];
+      if (!moduleId) {
+        errors.push(`${relativePath}: upstream chapter ${chapterNumber} has no section ${sectionNumber}`);
+        continue;
+      }
+      const modulePath = path.join(config.sourceRoot, 'modules', moduleId, 'index.cnxml');
+      if (!existsSync(modulePath)) {
+        errors.push(`${relativePath}: missing modules/${moduleId}/index.cnxml`);
+        continue;
+      }
+      const moduleXml = readFileSync(modulePath, 'utf8');
+      const module = parseModuleXml(moduleXml);
+      if (module.moduleId !== moduleId) {
+        errors.push(`${relativePath}: ${modulePath} identifies itself as ${module.moduleId}, expected ${moduleId}`);
+      }
+      entries.push({
+        localPath: relativePath,
+        bundle: config.bundleKey,
+        book,
+        sourceSection: local.sourceSection,
+        moduleId,
+        sourceTitle: module.title,
+        moduleSha256: sha256(moduleXml),
+      });
+      const chapterKey = `${book}:${chapterNumber}`;
+      chapterLocalCounts.set(chapterKey, (chapterLocalCounts.get(chapterKey) || 0) + 1);
     }
-    const chapterNumber = Number(sectionMatch[1]);
-    const sectionNumber = Number(sectionMatch[2]);
-    const chapter = config.collection.chapters[chapterNumber - 1];
-    if (!chapter) {
-      errors.push(`${relativePath}: upstream collection has no chapter ${chapterNumber}`);
-      continue;
-    }
-    const moduleId = chapter.sectionModuleIds[sectionNumber - 1];
-    if (!moduleId) {
-      errors.push(`${relativePath}: upstream chapter ${chapterNumber} has no section ${sectionNumber}`);
-      continue;
-    }
-    const modulePath = path.join(config.sourceRoot, 'modules', moduleId, 'index.cnxml');
-    if (!existsSync(modulePath)) {
-      errors.push(`${relativePath}: missing modules/${moduleId}/index.cnxml`);
-      continue;
-    }
-    const moduleXml = readFileSync(modulePath, 'utf8');
-    const module = parseModuleXml(moduleXml);
-    if (module.moduleId !== moduleId) {
-      errors.push(`${relativePath}: ${modulePath} identifies itself as ${module.moduleId}, expected ${moduleId}`);
-    }
-    entries.push({
-      localPath: relativePath,
-      bundle: config.bundleKey,
-      book,
-      sourceSection: local.sourceSection,
-      moduleId,
-      sourceTitle: module.title,
-      moduleSha256: sha256(moduleXml),
-    });
-    const chapterKey = `${book}:${chapterNumber}`;
-    chapterLocalCounts.set(chapterKey, (chapterLocalCounts.get(chapterKey) || 0) + 1);
   }
 
   const books = {};
@@ -740,7 +815,7 @@ export function buildSourceMap(repositoryRoot, sourceDirectories, lock = loadSou
     const { collection } = config;
     const upstreamSections = collection.chapters.reduce((sum, chapter) => sum + chapter.sectionModuleIds.length, 0);
     const mappedSections = entries.filter((entry) => entry.book === bookKey).length;
-    const chapterIndexes = localChapterIndexes(repositoryRoot, bookKey);
+    const chapterIndexes = localChapterIndexes(repositoryRoot, config);
     const complete = config.authoringStatus === 'complete';
 
     for (const chapterIndex of chapterIndexes) {
@@ -827,6 +902,24 @@ export function buildSourceMap(repositoryRoot, sourceDirectories, lock = loadSou
   };
 }
 
+/**
+ * One human-readable line per book, used by both `build-map` and `verify-map`
+ * so a book with zero mapped sections is stated, never silently absent from
+ * the output — an unmapped book must never look like a clean run.
+ */
+export function formatBookSummaryLine(bookKey, summary) {
+  return `${bookKey}: ${summary.authoringStatus} — `
+    + `${summary.localChapters}/${summary.upstreamChapters} chapters, `
+    + `${summary.mappedSections}/${summary.upstreamSections} sections mapped`;
+}
+
+/** "n/a" rather than "0/0" when the audited scope's modules carry zero
+ * `note.try` elements at all (e.g. a non-math book) — 0/0 could read as a
+ * hidden failure instead of the true absence of the construct. */
+export function formatTriesCoverage(likely, total) {
+  return total ? `${likely}/${total}` : 'n/a';
+}
+
 export function verifyCommittedSourceMap(repositoryRoot, lock = loadSourceLock(repositoryRoot)) {
   const mapPath = path.join(repositoryRoot, 'data/openstax/source-map.json');
   if (!existsSync(mapPath)) return { errors: ['data/openstax/source-map.json is missing'], map: null };
@@ -851,12 +944,14 @@ export function verifyCommittedSourceMap(repositoryRoot, lock = loadSourceLock(r
   }
 
   const expected = new Map();
-  for (const absolutePath of [...walkMarkdown(path.join(repositoryRoot, 'content/math'))].sort()) {
-    const relativePath = path.relative(repositoryRoot, absolutePath).split(path.sep).join('/');
-    const book = relativePath.split('/')[2];
-    if (!lock.books.has(book)) continue;
-    const local = parseLocalSection(readFileSync(absolutePath, 'utf8'));
-    if (local.sourceSection) expected.set(relativePath, { book, sourceSection: local.sourceSection, title: local.title });
+  for (const [book, config] of lock.books) {
+    const contentRoot = path.join(repositoryRoot, config.contentPath);
+    if (!existsSync(contentRoot)) continue;
+    for (const absolutePath of [...walkMarkdown(contentRoot)].sort()) {
+      const relativePath = path.relative(repositoryRoot, absolutePath).split(path.sep).join('/');
+      const local = parseLocalSection(readFileSync(absolutePath, 'utf8'));
+      if (local.sourceSection) expected.set(relativePath, { book, sourceSection: local.sourceSection, title: local.title });
+    }
   }
   const actual = new Map();
   for (const entry of map.sections || []) {

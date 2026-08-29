@@ -19,6 +19,7 @@
           "sourceSlug": "prealgebra-2e",
           "collectionId": "col30939",
           "collectionPath": "collections/prealgebra-2e.collection.xml",
+          "contentPath": "content/math/prealgebra",
           "authoredBaselineCommit": "d2cea8f95118f0eb436d4406a8fc8a8e0e00e8c8",
           "authoredBaselineConfidence": "inferred-from-local-pdf-metadata",
           "authoringStatus": "complete"
@@ -27,6 +28,7 @@
           "sourceSlug": "elementary-algebra-2e",
           "collectionId": "col31130",
           "collectionPath": "collections/elementary-algebra-2e.collection.xml",
+          "contentPath": "content/math/elementary-algebra",
           "authoredBaselineCommit": "d2cea8f95118f0eb436d4406a8fc8a8e0e00e8c8",
           "authoredBaselineConfidence": "inferred-from-local-pdf-metadata",
           "authoringStatus": "complete"
@@ -35,6 +37,7 @@
           "sourceSlug": "intermediate-algebra-2e",
           "collectionId": "col31234",
           "collectionPath": "collections/intermediate-algebra-2e.collection.xml",
+          "contentPath": "content/math/intermediate-algebra",
           "authoredBaselineCommit": "c1bbed4b86ff5c80686d339a6ca5e4e48fae2483",
           "authoredBaselineConfidence": "inferred-from-local-pdf-metadata",
           "authoringStatus": "complete"
@@ -59,9 +62,35 @@
           "sourceSlug": "precalculus-2e",
           "collectionId": "col11667",
           "collectionPath": "collections/precalculus-2e.collection.xml",
+          "contentPath": "content/math/precalculus",
           "authoredBaselineCommit": "d1bd19c69107ba7f45775670809ae161d63db864",
           "authoredBaselineConfidence": "inferred-from-local-pdf-metadata",
           "authoringStatus": "complete"
+        }
+      }
+    },
+    "biology-bundle": {
+      "repository": "https://github.com/openstax/osbooks-biology-bundle",
+      "gitUrl": "https://github.com/openstax/osbooks-biology-bundle.git",
+      "branch": "main",
+      "commit": "63f8b6f8d129dd1582989bb755011e9a6d523471",
+      "commitDate": "2026-07-22T15:15:41Z",
+      "sourceDir": "sources/openstax/osbooks-biology-bundle",
+      "moduleScope": "mapped-collections",
+      "license": {
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
+        "spdx": "CC-BY-NC-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "books": {
+        "biology": {
+          "sourceSlug": "biology-2e",
+          "collectionId": "col24361",
+          "collectionPath": "collections/biology-2e.collection.xml",
+          "contentPath": "content/life-health-sciences/biology",
+          "authoredBaselineCommit": "5c58838d2594bc5817127fdc47e127c30b44f2c2",
+          "authoredBaselineConfidence": "inferred-from-local-pdf-metadata",
+          "authoringStatus": "scaffolded"
         }
       }
     }

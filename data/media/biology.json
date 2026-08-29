@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "book": "biology",
+  "bundle": "biology-bundle",
+  "commit": "63f8b6f8d129dd1582989bb755011e9a6d523471",
+  "figures": {
+    "Figure_01_00_00": {
+      "source": "media/Figure_01_00_00.jpg",
+      "sourceSha256": "6bdf1f892ff8d142bf2c0d7f38c579806ff9f6887285585dcf05766ba43179cc",
+      "module": "m66426",
+      "kind": "photo",
+      "width": 1118,
+      "height": 600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 429,
+          "file": "Figure_01_00_00-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 600,
+          "file": "Figure_01_00_00-1118.webp"
+        }
+      ],
+      "alt": "Photo depicts Earth from space.",
+      "caption": "This NASA image is a composite of several satellite-based views of Earth. To make the whole-Earth image, NASA scientists combine observations of different parts of the planet. (credit: NASA/GSFC/NOAA/USGS)"
+    },
+    "Figure_01_01_01-3978": {
+      "source": "media/Figure_01_01_01-3978.jpg",
+      "sourceSha256": "4ea5ab969725c7754935a2879d330585f718ea10a59d9931f01ec6247ea5a92f",
+      "module": "m66427",
+      "kind": "photo",
+      "width": 825,
+      "height": 333,
+      "variants": [
+        {
+          "width": 800,
+          "height": 323,
+          "file": "Figure_01_01_01-3978-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 333,
+          "file": "Figure_01_01_01-3978-825.webp"
+        }
+      ],
+      "alt": "Photo A depicts round colonies of blue-green algae. Each algae cell is about 5 microns across. Photo B depicts round fossil structures called stromatalites along a watery shoreline.",
+      "caption": "Formerly called blue-green algae, these (a) cyanobacteria, magnified 300x under a light microscope, are some of Earth’s oldest life forms. These (b) stromatolites along the shores of Lake Thetis in Western Australia are ancient structures formed by layering cyanobacteria in shallow waters. (credit a: modification of work by NASA; credit b: modification of work by Ruth Ellison; scale-bar data from Matt Russell)"
+    },
+    "Figure_01_01_02-db21": {
+      "source": "media/Figure_01_01_02-db21.jpg",
+      "sourceSha256": "c358e263fa3221778e413c4328ba57f3e3e807a2053dc5e7978296bea7b2d371",
+      "module": "m66427",
+      "kind": "photo",
+      "width": 544,
+      "height": 395,
+      "variants": [
+        {
+          "width": 544,
+          "height": 395,
+          "file": "Figure_01_01_02-db21-544.webp"
+        }
+      ],
+      "alt": "Photo depicts E. coli bacteria aggregated together.",
+      "caption": "Escherichia coli ( E. coli ) bacteria, in this scanning electron micrograph, are normal residents of our digestive tracts that aid in absorbing vitamin K and other nutrients. However, virulent strains are sometimes responsible for disease outbreaks. (credit: Eric Erbe, digital colorization by Christopher Pooley, both of USDA, ARS, EMU)"
+    },
+    "Figure_01_01_03": {
+      "source": "media/Figure_01_01_03.png",
+      "sourceSha256": "52281a944fe9aacfeb65e03f08e6be73066f12e04b0ed84dd8266691acf6f3d2",
+      "module": "m66427",
+      "kind": "diagram",
+      "width": 1601,
+      "height": 1601,
+      "variants": [
+        {
+          "width": 800,
+          "height": 800,
+          "file": "Figure_01_01_03-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1600,
+          "file": "Figure_01_01_03-1600.webp"
+        }
+      ],
+      "alt": "A collage includes a photo of planets in our solar system, a DNA molecule, scientific equipment, a cross-section of the ocean floor, scientific symbols, a magnetic field, beakers of fluid, and a geometry problem.",
+      "caption": "The diversity of scientific fields includes astronomy, biology, computer science, geology, logic, physics, chemistry, mathematics, and many other fields. (credit: “Image Editor”/Flickr)"
+    },
+    "Figure_01_01_04-8ef9": {
+      "source": "media/Figure_01_01_04-8ef9.jpg",
+      "sourceSha256": "717e584f549c2ffadbbfe35e960bac13925d2e499393befd5d8d07a1c1bb2f03",
+      "module": "m66427",
+      "kind": "photo",
+      "width": 544,
+      "height": 892,
+      "variants": [
+        {
+          "width": 544,
+          "height": 892,
+          "file": "Figure_01_01_04-8ef9-544.webp"
+        }
+      ],
+      "alt": "Painting depicts Sir Francis Bacon in a long robe.",
+      "caption": "Historians credit Sir Francis Bacon (1561–1626) as the first to define the scientific method. (credit: Paul van Somer)"
+    },
+    "Figure_01_01_05-9aa6": {
+      "source": "media/Figure_01_01_05-9aa6.jpg",
+      "sourceSha256": "6424168403e853faf7cdfb403dd94508a649de172f23f087d1f18a2bb9198b61",
+      "module": "m66427",
+      "kind": "photo",
+      "width": 469,
+      "height": 798,
+      "variants": [
+        {
+          "width": 469,
+          "height": 798,
+          "file": "Figure_01_01_05-9aa6-469.webp"
+        }
+      ],
+      "alt": "A flow chart shows the steps in the scientific method. In step 1, an observation is made. In step 2, a question is asked about the observation. In step 3, an answer to the question, called a hypothesis, is proposed. In step 4, a prediction is made based on the hypothesis. In step 5, an experiment is done to test the prediction. In step 6, the results are analyzed to determine whether or not the hypothesis is correct. If the hypothesis is incorrect, another hypothesis is made. In either case, the results are reported.",
+      "caption": "The scientific method consists of a series of well-defined steps. If a hypothesis is not supported by experimental data, one can propose a new hypothesis."
+    },
+    "Figure_01_01_07": {
+      "source": "media/Figure_01_01_07.jpg",
+      "sourceSha256": "859742ace7076e7b8941ba52f3bc218d984a131906a042288b7f200318133c5a",
+      "module": "m66427",
+      "kind": "photo",
+      "width": 544,
+      "height": 546,
+      "variants": [
+        {
+          "width": 544,
+          "height": 546,
+          "file": "Figure_01_01_07-544.webp"
+        }
+      ],
+      "alt": "The human genome projects logo is shown, depicting a human being inside a D N A double helix. The words chemistry, biology, physics, ethics, informatics, and engineering surround the circular image.",
+      "caption": "The Human Genome Project was a 13-year collaborative effort among researchers working in several different science fields. Researchers completed the project, which sequenced the entire human genome, in 2003. (credit: the U.S. Department of Energy Genome Programs ( http://genomics.energy.gov )"
+    },
+    "Figure_01_01_08": {
+      "source": "media/Figure_01_01_08.png",
+      "sourceSha256": "8e6fbeda455a725bb48c8b29303749b1b482e811b9ab9bd9ad33b7e1b0f535c8",
+      "module": "m66427",
+      "kind": "diagram",
+      "width": 1089,
+      "height": 879,
+      "variants": [
+        {
+          "width": 800,
+          "height": 645,
+          "file": "Figure_01_01_08-800.webp"
+        },
+        {
+          "width": 1089,
+          "height": 879,
+          "file": "Figure_01_01_08-1089.webp"
+        }
+      ],
+      "alt": "Image shows a squirrel being held by a person.",
+      "caption": "After Hurricane Irma struck the Caribbean and Florida in 2017, thousands of baby squirrels like this one were thrown from their nests. Thanks to applied science, scientists knew how to rehabilitate the squirrel. (credit: audreyjm529, Flickr)"
+    },
+    "Figure_01_01_09new": {
+      "source": "media/Figure_01_01_09new.png",
+      "sourceSha256": "0e6dbbdd6ffc5839a359b93fa16dafa7fb0f7510997733f623419c6ad117da37",
+      "module": "m66427",
+      "kind": "diagram",
+      "width": 469,
+      "height": 608,
+      "variants": [
+        {
+          "width": 469,
+          "height": 608,
+          "file": "Figure_01_01_09new-469.webp"
+        }
+      ],
+      "alt": "Diagram defines two types of reasoning. In inductive reasoning, a general conclusion is drawn from a number of observations. In deductive reasoning, specific results are predicted from a general premise. An example of inductive reasoning is given. In this example, three observations are made: (1) Members of a species are not all the same. (2) Individuals compete for resources. (3) Species are generally adapted to their environment. From these observations, the following conclusion is drawn: Individuals most adapted to their environment are more likely to survive and pass their traits on to the next generation. An example of deductive reasoning is also given. In this example, the general premise is that individuals most adapted to their environment are more likely to survive and pass their traits on to the next generation. From this premise, it is predicted that, if global climate change causes the temperature in an ecosystem to increase, those individuals better adapted to a warmer climate will outcompete those that are not.",
+      "caption": "Scientists use two types of reasoning, inductive and deductive reasoning, to advance scientific knowledge. As is the case in this example, the conclusion from inductive reasoning can often become the premise for deductive reasoning."
+    },
+    "Figure_01_02_09": {
+      "source": "media/Figure_01_02_09.jpg",
+      "sourceSha256": "edd925b2ce27734b42dcdc4fd9a60056fce0f92db599db57a9923f0b03e6c6e0",
+      "module": "m66428",
+      "kind": "photo",
+      "width": 544,
+      "height": 354,
+      "variants": [
+        {
+          "width": 544,
+          "height": 354,
+          "file": "Figure_01_02_09-544.webp"
+        }
+      ],
+      "alt": "A photo shows a light-colored toad covered in bright green spots.",
+      "caption": "A toad represents a highly organized structure consisting of cells, tissues, organs, and organ systems. (credit: “Ivengo”/Wikimedia Commons)"
+    },
+    "Figure_01_02_10": {
+      "source": "media/Figure_01_02_10.jpg",
+      "sourceSha256": "bea9a5edf482bfab2d7f18faf984898a5b336030519ddc9e7c409f096daac0c6",
+      "module": "m66428",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_01_02_10-544.webp"
+        }
+      ],
+      "alt": "A photograph of the Mimosa pudica shows a plant with many tiny leaves connected to a central stem. Four of these stems connect together.",
+      "caption": "The leaves of this sensitive plant ( Mimosa pudica ) will instantly droop and fold when touched. After a few minutes, the plant returns to normal. (credit: Alex Lomas)"
+    },
+    "Figure_01_02_11": {
+      "source": "media/Figure_01_02_11.jpg",
+      "sourceSha256": "1acd6a4b3eadffb917d7d3a024a7b596f0245d17b996067c2fc1e4dfbf2246b9",
+      "module": "m66428",
+      "kind": "photo",
+      "width": 544,
+      "height": 319,
+      "variants": [
+        {
+          "width": 544,
+          "height": 319,
+          "file": "Figure_01_02_11-544.webp"
+        }
+      ],
+      "alt": "A photograph depicts a mother cat nursing three kittens: one has an orange and white tabby coat, another is black with a white foot, while the third has a black and white tabby coat.",
+      "caption": "Although no two look alike, these kittens have inherited genes from both parents and share many of the same characteristics. (credit: Rocky Mountain Feline Rescue)"
+    },
+    "Figure_01_02_12": {
+      "source": "media/Figure_01_02_12.jpg",
+      "sourceSha256": "a0dcaf833f193c942aadc6b872ed9bc5d49913ab2aa74ea3ddfc1f1f6244fe0a",
+      "module": "m66428",
+      "kind": "photo",
+      "width": 544,
+      "height": 388,
+      "variants": [
+        {
+          "width": 544,
+          "height": 388,
+          "file": "Figure_01_02_12-544.webp"
+        }
+      ],
+      "alt": "A photos shows a white, furry polar bear.",
+      "caption": "Polar bears ( Ursus maritimus ) and other mammals living in ice-covered regions maintain their body temperature by generating heat and reducing heat loss through thick fur and a dense layer of fat under their skin. (credit: “longhorndave”/Flickr)"
+    },
+    "Figure_01_02_13": {
+      "source": "media/Figure_01_02_13.jpg",
+      "sourceSha256": "85ef470a9da194e575280050371353e2086ad6b6890bf5abec73d09ef2e389db",
+      "module": "m66428",
+      "kind": "photo",
+      "width": 544,
+      "height": 679,
+      "variants": [
+        {
+          "width": 544,
+          "height": 679,
+          "file": "Figure_01_02_13-544.webp"
+        }
+      ],
+      "alt": "Photo shows a large bird with an extremely wide wingspan in flight. It is a California condor, and it has a tag on its wing.",
+      "caption": "The California condor ( Gymnogyps californianus ) uses chemical energy derived from food to power flight. California condors are an endangered species. This bird has a wing tag that helps biologists identify the individual. (credit: Pacific Southwest Region U.S. Fish and Wildlife Service)"
+    },
+    "Figure_01_02_14": {
+      "source": "media/Figure_01_02_14.jpg",
+      "sourceSha256": "c232dc9bf05c02958676571a2df55dac81b3407355c29c6e6733201a771faea0",
+      "module": "m66428",
+      "kind": "photo",
+      "width": 544,
+      "height": 940,
+      "variants": [
+        {
+          "width": 544,
+          "height": 940,
+          "file": "Figure_01_02_14-544.webp"
+        }
+      ],
+      "alt": "Molecular model depicts a D N A molecule, showing its double helix structure. The double helix is made up of two separate vertical strands of small particles, or atoms. These strands are connected by horizontal bands of particles. The vertical strands are twisted, and the structure has the shape of a spiral staircase.",
+      "caption": "All molecules, including this DNA molecule, are comprised of atoms. (credit: “brian0918”/Wikimedia Commons)"
+    },
+    "Figure_01_02_15": {
+      "source": "media/Figure_01_02_15.jpg",
+      "sourceSha256": "5b58d9a22ed673393884d3dc3a33efdc490cfdc4d4d747d7ae915cac1698f75e",
+      "module": "m66428",
+      "kind": "photo",
+      "width": 1024,
+      "height": 821,
+      "variants": [
+        {
+          "width": 800,
+          "height": 641,
+          "file": "Figure_01_02_15-800.webp"
+        },
+        {
+          "width": 1024,
+          "height": 821,
+          "file": "Figure_01_02_15-1024.webp"
+        }
+      ],
+      "alt": "A flow chart shows the hierarchy of living organisms. From smallest to largest, this hierarchy includes: (1) Organelles, such as nuclei, that exist inside cells. (2) Cells, such as a white blood cell. (3) Tissues, such as human skin tissue. (4) Organs such as the stomach make up the human digestive system, an example of an organ system. (5) Organisms, populations, and communities. In a forest, each pine tree is an organism. Together, all the pine trees make up a population. All the plant and animal species in the forest comprise a community. (6) Ecosystems: the coastal ecosystem in the Southeastern United States includes living organisms and the environment in which they live. (7) The biosphere: encompasses all the ecosystems on Earth.",
+      "caption": "shows the biological levels of organization of living things. From a single organelle to the entire biosphere, living organisms are parts of a highly structured hierarchy. (credit “organelles”: modification of work by Umberto Salvagnin; credit “cells”: modification of work by Bruce Wetzel, Harry Schaefer/ National Cancer Institute; credit “tissues”: modification of work by Kilbad; Fama Clamosa; Mikael Häggström; credit “organs”: modification of work by Mariana Ruiz Villareal; credit “organisms”: modification of work by \"Crystal\"/Flickr; credit “ecosystems”: modification of work by US Fish and Wildlife Service Headquarters; credit “biosphere”: modification of work by NASA)"
+    },
+    "Figure_01_02_16-c1d2": {
+      "source": "media/Figure_01_02_16-c1d2.jpg",
+      "sourceSha256": "b74c88997b9f52f4048ca58a3baf08deeca595595c94c792b1cab4dbfff748b7",
+      "module": "m66428",
+      "kind": "photo",
+      "width": 800,
+      "height": 540,
+      "variants": [
+        {
+          "width": 800,
+          "height": 540,
+          "file": "Figure_01_02_16-c1d2-800.webp"
+        }
+      ],
+      "alt": "This phylogenetic tree shows that the three domains of life, bacteria, archaea and eukarya, all arose from a common ancestor.",
+      "caption": "Microbiologist Carl Woese constructed this phylogenetic tree using data that he obtained from sequencing ribosomal RNA genes. The tree shows the separation of living organisms into three domains: Bacteria, Archaea, and Eukarya. Bacteria and Archaea are prokaryotes, single-celled organisms lacking intracellular organelles. (credit: Eric Gaba; NASA Astrobiology Institute)"
+    },
+    "Figure_01_02_17abcd": {
+      "source": "media/Figure_01_02_17abcd.png",
+      "sourceSha256": "efd120ddd5e63087e3c6ec95c425a23f04af4e8cc37ba9dd06d7e7341cff5ad4",
+      "module": "m66428",
+      "kind": "diagram",
+      "width": 2086,
+      "height": 2154,
+      "variants": [
+        {
+          "width": 800,
+          "height": 826,
+          "file": "Figure_01_02_17abcd-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1652,
+          "file": "Figure_01_02_17abcd-1600.webp"
+        }
+      ],
+      "alt": "There are four photos shown. Photo A is a micrograph, showing tubelike bacteria. Photo B shows a steaming body of water, refered to as a hot vent. Some of the water is a typical blue, while the outer edges are rust colored. Photo C shows a tall sunflower, with a thick stem and bright yellow petals. Photo D shows a muscular lion that has a thick mane of hair around its neck and head.",
+      "caption": "These images represent different domains. The (a) bacteria in this micrograph belong to Domain Bacteria, while the (b) extremophiles (not visible) living in this hot vent belong to Domain Archaea. Both the (c) sunflower and (d) lion are part of Domain Eukarya. (credit a: modification of work by Drew March; credit b: modification of work by Steve Jurvetson; credit c: modification of work by Michael Arrighi; credit d: modification of work by Leszek Leszcynski)"
+    },
+    "Figure_01_02_18": {
+      "source": "media/Figure_01_02_18.jpg",
+      "sourceSha256": "3f4798dfb3ba7030dd7f5c111ca8f18cf51044db5b7a50241d12af7e009c0c3b",
+      "module": "m66428",
+      "kind": "photo",
+      "width": 544,
+      "height": 418,
+      "variants": [
+        {
+          "width": 544,
+          "height": 418,
+          "file": "Figure_01_02_18-544.webp"
+        }
+      ],
+      "alt": "Photo depicts scientist digging fossils out of the dirt.",
+      "caption": "Researchers work on excavating dinosaur fossils at a site in Castellón, Spain. (credit: Mario Modesto)"
+    },
+    "Figure_01_02_19": {
+      "source": "media/Figure_01_02_19.jpg",
+      "sourceSha256": "4c5f12e6110255f230c24123c7eded678e7c10ee90d28276ea13f8ed35699adf",
+      "module": "m66428",
+      "kind": "photo",
+      "width": 544,
+      "height": 379,
+      "variants": [
+        {
+          "width": 544,
+          "height": 379,
+          "file": "Figure_01_02_19-544.webp"
+        }
+      ],
+      "alt": "Photo depicts a scientist working in the lab.",
+      "caption": "This forensic scientist works in a DNA extraction room at the U.S. Army Criminal Investigation Laboratory at Fort Gillem, GA. (credit: United States Army CID Command Public Affairs)"
+    }
+  }
+}

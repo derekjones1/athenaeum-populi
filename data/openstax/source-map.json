@@ -9,6 +9,10 @@
     "college-algebra-bundle": {
       "repository": "https://github.com/openstax/osbooks-college-algebra-bundle",
       "commit": "789b54099106b071d1d32bfcee454fed72eb4768"
+    },
+    "biology-bundle": {
+      "repository": "https://github.com/openstax/osbooks-biology-bundle",
+      "commit": "63f8b6f8d129dd1582989bb755011e9a6d523471"
     }
   },
   "books": {
@@ -43,9 +47,35 @@
       "upstreamSections": 73,
       "localChapters": 12,
       "mappedSections": 73
+    },
+    "biology": {
+      "bundle": "biology-bundle",
+      "authoringStatus": "scaffolded",
+      "upstreamChapters": 47,
+      "upstreamSections": 208,
+      "localChapters": 1,
+      "mappedSections": 2
     }
   },
   "sections": [
+    {
+      "localPath": "content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "1.1",
+      "moduleId": "m66427",
+      "sourceTitle": "The Science of Biology",
+      "moduleSha256": "50b50a4c4c42fdb005ebf445b6726dbbab247881bf77a982e180ae6714a23599"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/01-the-study-of-life/02-themes-and-concepts-of-biology.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "1.2",
+      "moduleId": "m66428",
+      "sourceTitle": "Themes and Concepts of Biology",
+      "moduleSha256": "9303a6f3a478471f5c3deb0a1eaec09e49289d8bed319e65a86f0a9c34c0add0"
+    },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",
       "bundle": "prealgebra-bundle",

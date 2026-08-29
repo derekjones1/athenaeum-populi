@@ -60,10 +60,16 @@ function overviewCount(source, heading) {
   return [...block.matchAll(/^- \*\*[^*]+\*\*/gm)].length;
 }
 
-const mathRoot = join(root, 'math');
-if (existsSync(mathRoot)) {
-  for (const bookName of readdirSync(mathRoot)) {
-    const book = join(mathRoot, bookName);
+// Every shelf's every book, not just content/math/*. `docs` is a
+// published-documentation tree, not a shelf of books — it was already
+// checked above — so it is skipped here rather than walked for chapters that
+// do not exist.
+for (const shelfName of readdirSync(root)) {
+  if (shelfName === 'docs') continue;
+  const shelf = join(root, shelfName);
+  if (!statSync(shelf).isDirectory()) continue;
+  for (const bookName of readdirSync(shelf)) {
+    const book = join(shelf, bookName);
     if (!statSync(book).isDirectory()) continue;
     const chapters = readdirSync(book)
       .filter((name) => /^\d{2}-/.test(name) && statSync(join(book, name)).isDirectory())

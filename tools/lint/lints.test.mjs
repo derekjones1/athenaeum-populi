@@ -1563,6 +1563,217 @@ test('the section-final Practice block is enforced', () => {
   );
 });
 
+test('isRegularSection generalizes to any shelf, not just content/math', () => {
+  const biologyPath = 'content/life-health-sciences/biology/01-x/01-y.md';
+  assert(
+    lintHugo('{{< fillin question="Practice" answer="1" >}}', biologyPath).errors
+      .some((e) => e.includes('missing a hint')),
+    'the Practice hint rule fires on a biology section, not only content/math',
+  );
+});
+
+test('the Practice-block consecutive-question cap exemption applies on every shelf now that isRegularSection generalizes', () => {
+  // Before isRegularSection generalized, a shelf other than content/math never
+  // set practiceRange, so its Practice block's own exercises were counted
+  // against the 2-3 consecutive-question cap meant for in-page practice sets
+  // — a latent false positive this generalization fixes.
+  const path = 'content/life-health-sciences/biology/01-x/01-y.md';
+  const objectives = objectivesCallout(['Describe cell structure']);
+  const keyTerms = '## Key terms\n\n**cell** — definition.';
+  const practice = [
+    '## Practice',
+    '### Describe cell structure',
+    [fillin('a1'), fillin('a2'), fillin('a3'), fillin('a4'), fillin('a5')].join('\n\n'),
+  ].join('\n\n');
+  const page = `---\ntitle: A Section\nweight: 1\n---\n\n${objectives}\n\n## Teach\n\nProse.\n\n${keyTerms}\n\n${practice}`;
+  const { errors } = lintHugo(page, path);
+  assert.equal(
+    errors.filter((e) => e.includes('more than three consecutive')).length,
+    0,
+    `Practice-block questions are exempt from the 2-3 consecutive cap on every shelf: ${errors.join('; ')}`,
+  );
+});
+
+test('a Practice group of only selfchecks does not cover its objective', () => {
+  const sectionPath = 'content/life-health-sciences/biology/01-x/01-y.md';
+  const objectives = objectivesCallout(['Describe cell structure', 'Explain organelle function']);
+  const keyTerms = '## Key terms\n\n**cell** — definition.';
+  const selfcheckQ = (q) => `{{< selfcheck question="${q}" hint="Think." >}}\nModel answer.\n{{< /selfcheck >}}`;
+  const practice = [
+    '## Practice',
+    '### Describe cell structure',
+    [selfcheckQ('s1'), selfcheckQ('s2')].join('\n\n'),
+    '### Explain organelle function',
+    [fillin('f1'), fillin('f2'), fillin('f3')].join('\n\n'),
+  ].join('\n\n');
+  const page = `---\ntitle: A Section\nweight: 1\n---\n\n${objectives}\n\n## Teach\n\nProse.\n\n${keyTerms}\n\n${practice}`;
+  assert(
+    lintHugo(page, sectionPath).errors.some((e) => e.includes('has no auto-graded exercise')),
+    'a group of only selfchecks does not prove the objective was mastered — it needs a graded item too',
+  );
+});
+
+test('textin shortcode rules', () => {
+  const good = '{{< textin question="Name the powerhouse of the cell." answer="mitochondria" hint="Think ATP." >}}';
+  assert.equal(
+    lintHugo(good, 'content/life-health-sciences/biology/01-x/01-y.md').errors.length,
+    0,
+    `a well-formed textin lints clean: ${lintHugo(good, 'content/life-health-sciences/biology/01-x/01-y.md').errors.join('; ')}`,
+  );
+
+  assert(
+    lintHugo('{{< textin question="" answer="mitochondria" hint="h" >}}', 'content/test.md')
+      .errors.some((e) => e.includes('missing non-empty question')),
+    'an empty question is rejected',
+  );
+  assert(
+    lintHugo('{{< textin question="Name it." answer="" hint="h" >}}', 'content/test.md')
+      .errors.some((e) => e.includes('missing non-empty answer')),
+    'an empty answer is rejected',
+  );
+  assert(
+    lintHugo('{{< textin question="Name it." answer="a" answerMode="unordered" hint="h" >}}', 'content/test.md')
+      .errors.some((e) => e.includes('does not take "answerMode"')),
+    'answerMode is rejected — textin grades words, not values',
+  );
+  assert(
+    lintHugo('{{< textin question="Name it." answer="a" answerForm="exact" hint="h" >}}', 'content/test.md')
+      .errors.some((e) => e.includes('does not take "answerForm"')),
+    'answerForm is rejected — textin grades words, not values',
+  );
+  assert(
+    lintHugo('{{< textin question="Name $x$." answer="a" hint="h" >}}', 'content/test.md')
+      .errors.some((e) => e.includes('must not contain `$` math')),
+    'unescaped math in a text field is rejected',
+  );
+  assert(
+    lintHugo('{{< textin question="Name it." answer="the cell membrane surrounding organelles today" hint="h" >}}', 'content/test.md')
+      .errors.some((e) => e.includes('is 5 words')),
+    'a text answer over four words (after normalization drops the leading article) is rejected',
+  );
+  assert(
+    lintHugo('{{< textin question="Name it." answer="cell" accept="cell" hint="h" >}}', 'content/test.md')
+      .errors.some((e) => e.includes('normalizes the same as')),
+    'an accept member identical to the answer after normalization is rejected',
+  );
+  assert(
+    lintHugo('{{< textin question="What surrounds the mitochondria?" answer="mitochondria" hint="h" >}}', 'content/test.md')
+      .errors.some((e) => e.includes('appears as a whole-word run in the question')),
+    'an answer printed whole inside its own question is a retype hazard',
+  );
+  assert(
+    lintHugo('{{< textin question="Name it." answer="mitochondria" >}}', 'content/math/book/01-chapter/01-section.md')
+      .errors.some((e) => e.includes('missing a hint')),
+    'regular-section textin exercises require a hint',
+  );
+  assert.equal(
+    lintHugo('{{< textin question="Name it." answer="mitochondria" >}}', 'content/math/book/knowledge-check-01-06.md').errors.length,
+    0,
+    'knowledge-check textin exercises intentionally omit hints',
+  );
+});
+
+test('selfcheck shortcode rules', () => {
+  const good = '{{< selfcheck question="Why do cells divide?" hint="Think mitosis." >}}\nCells divide to grow and repair tissue.\n{{< /selfcheck >}}';
+  assert.equal(
+    lintHugo(good, 'content/life-health-sciences/biology/01-x/01-y.md').errors.length,
+    0,
+    `a well-formed selfcheck lints clean: ${lintHugo(good, 'content/life-health-sciences/biology/01-x/01-y.md').errors.join('; ')}`,
+  );
+
+  assert(
+    lintHugo('{{< selfcheck question="" hint="h" >}}\nModel.\n{{< /selfcheck >}}', 'content/test.md')
+      .errors.some((e) => e.includes('missing non-empty question')),
+    'an empty question is rejected',
+  );
+  assert(
+    lintHugo('{{< selfcheck question="Why?" hint="h" >}}\n\n{{< /selfcheck >}}', 'content/test.md')
+      .errors.some((e) => e.includes('needs a non-empty model answer')),
+    'an empty paired inner body is rejected',
+  );
+  assert(
+    lintHugo('{{< selfcheck question="Why?" answer="x" hint="h" >}}\nModel.\n{{< /selfcheck >}}', 'content/test.md')
+      .errors.some((e) => e.includes('does not take "answer"')),
+    'a self-check has no key — answer is rejected',
+  );
+  assert(
+    lintHugo('{{< selfcheck question="Why?" >}}\nModel.\n{{< /selfcheck >}}', 'content/math/book/01-chapter/01-section.md')
+      .errors.some((e) => e.includes('missing a hint')),
+    'regular-section selfcheck exercises require a hint',
+  );
+  assert.equal(
+    lintHugo('{{< selfcheck question="Why?" >}}\nModel.\n{{< /selfcheck >}}', 'content/math/book/knowledge-check-01-06.md').errors.length,
+    0,
+    'knowledge-check selfcheck exercises intentionally omit hints',
+  );
+});
+
+test('mediafigure is not caught by the generic file-backed-image ban, and lints clean with a manifest', () => {
+  const manifests = { biology: { figures: { 'fig-1': { file: 'fig-1.webp', width: 400, height: 300 } } } };
+  const source = '{{< mediafigure src="biology/fig-1" alt="A labeled diagram of a cell." >}}\nA cell diagram. (credit: OpenStax)\n{{< /mediafigure >}}';
+  const { errors } = lintHugo(source, 'content/test.md', { mediaManifests: manifests });
+  assert.equal(
+    errors.filter((e) => e.includes('file-backed image')).length,
+    0,
+    'the generic figure/img/picture ban must not fire on mediafigure — it is the one sanctioned file-backed-image path',
+  );
+  assert.equal(errors.length, 0, `mediafigure with a valid manifest and distinct alt/caption lints clean: ${errors.join('; ')}`);
+});
+
+test('mediafigure shortcode rules', () => {
+  const manifests = { biology: { figures: { 'fig-1': { file: 'fig-1.webp', width: 400, height: 300 } } } };
+  const wrap = (attrs, inner = 'Caption.') => `{{< mediafigure ${attrs} >}}\n${inner}\n{{< /mediafigure >}}`;
+  const lint = (attrs, inner) => lintHugo(wrap(attrs, inner), 'content/test.md', { mediaManifests: manifests }).errors;
+
+  assert(
+    lintHugo('{{< mediafigure src="biology/fig-1" alt="A diagram." >}}', 'content/test.md', { mediaManifests: manifests })
+      .errors.some((e) => e.includes('is never closed')),
+    'an unclosed mediafigure is rejected',
+  );
+  assert(
+    lint('src="biology/fig-1"').some((e) => e.includes('missing non-empty alt')),
+    'alt is required',
+  );
+  assert(
+    lint('src="biology/fig-1" alt="Caption."', 'Caption.').some((e) => e.includes('identical to the caption')),
+    'alt identical to the caption after normalization is rejected',
+  );
+  assert(
+    lint('src="biology/missing-stem" alt="A diagram."').some((e) => e.includes('is not in data/media/biology.json')),
+    'a stem not vendored into the manifest is rejected',
+  );
+  assert(
+    lint('src="chemistry/fig-1" alt="A diagram."').some((e) => e.includes('no media manifest data/media/chemistry.json')),
+    'a book with no manifest at all is rejected',
+  );
+  assert(
+    lint('src="biology_fig-1" alt="A diagram."').some((e) => e.includes('must be "<book>/<stem>"')),
+    'src must be shaped <book>/<stem>',
+  );
+  assert(
+    lint(`src="biology/fig-1" alt="${'A'.repeat(601)}"`).some((e) => e.includes('characters — keep it to 600')),
+    'an alt over 600 characters is rejected',
+  );
+  assert(
+    lint('src="biology/fig-1" alt="A diagram." eager="yes"').some((e) => e.includes('eager must be')),
+    'a non-"true" eager value is rejected',
+  );
+  assert.equal(
+    lint('src="biology/fig-1" alt="A diagram." eager="true"').length,
+    0,
+    'eager="true" is valid',
+  );
+  assert(
+    lint('src="biology/fig-1" alt="A diagram." kind="sketch"').some((e) => e.includes('kind must be "photo" or "diagram"')),
+    'an unknown kind is rejected',
+  );
+  assert.equal(
+    lint('src="biology/fig-1" alt="A diagram." kind="photo"').length,
+    0,
+    'kind="photo" is valid',
+  );
+});
+
 // ---- figure curve precision ------------------------------------------------
 
 // smoothCurves spline output (a cubic-bezier path) is an error; analytic
@@ -2091,4 +2302,19 @@ test('an escaped dollar inside inline math is caught; display math and prose esc
     [],
     'prose escapes with no math delimiter in front stay clean — the corpus is full of them',
   );
+});
+
+// ---- closing tag on an unpaired shortcode ----------------------------------
+
+test('a closing tag on an unpaired shortcode (textin, fillin) is rejected', () => {
+  for (const name of ['textin', 'fillin']) {
+    const src = `{{< ${name} question="Q?" answer="cell" hint="h" >}}{{< /${name} >}}`;
+    const { errors } = lintHugo(src, 'content/test.md');
+    assert(
+      errors.some((e) => e.includes(`${name} is an unpaired shortcode`)),
+      `expected the unpaired-closing-tag lint for ${name}, got ${JSON.stringify(errors)}`,
+    );
+  }
+  const { errors } = lintHugo('{{< textin question="Q?" answer="cell" hint="h" >}}', 'content/test.md');
+  assert(!errors.some((e) => e.includes('unpaired shortcode')), 'the unpaired form itself is clean');
 });

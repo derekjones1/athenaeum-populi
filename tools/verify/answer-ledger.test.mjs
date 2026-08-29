@@ -50,8 +50,38 @@ test('every answer-carrying shortcode kind is extracted, and code fences are not
   });
   const found = extractExercises(join(dir, 'content'));
   assert.deepEqual(found.map((e) => e.kind).sort(), ['fillin', 'multiplechoice']);
-  assert.equal(EXERCISE_KINDS.length, 3, 'graphplot must stay in the extracted set');
+  assert.equal(EXERCISE_KINDS.length, 5, 'graphplot, textin, and selfcheck must stay in the extracted set');
   assert.ok(!found.some((e) => e.raw.includes('Not real')), 'a fenced sample is not an exercise');
+});
+
+test('textin and selfcheck are extracted, and a selfcheck hash covers its inner model answer', () => {
+  const dir = scratch({
+    'a.md': `---
+title: Sample
+---
+
+## Practice
+
+{{< textin question="Name the organelle that makes ATP." answer="mitochondria" >}}
+
+{{< selfcheck question="Why do cells divide?" >}}
+Cells divide to grow, repair, and reproduce.
+{{< /selfcheck >}}
+`,
+  });
+  const found = extractExercises(join(dir, 'content'));
+  assert.deepEqual(found.map((e) => e.kind).sort(), ['selfcheck', 'textin']);
+
+  const textin = found.find((e) => e.kind === 'textin');
+  assert.match(textin.raw, /answer="mitochondria"/);
+
+  const selfcheck = found.find((e) => e.kind === 'selfcheck');
+  assert.match(selfcheck.raw, /Cells divide to grow, repair, and reproduce\./, 'raw spans open to close, so the paired inner content is included');
+
+  // The model answer IS the exercise for a selfcheck — editing it must change
+  // identity, or a re-read model answer would keep its stale verdict.
+  const editedInner = selfcheck.raw.replace('grow, repair, and reproduce', 'grow and repair');
+  assert.notEqual(exerciseHash(editedInner), exerciseHash(selfcheck.raw), 'the inner model answer is identity for a selfcheck');
 });
 
 // Both streams, always: failures go to stderr and successes to stdout, so a

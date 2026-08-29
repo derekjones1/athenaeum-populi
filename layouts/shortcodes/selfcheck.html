@@ -1,0 +1,56 @@
+{{- /*
+  selfcheck — free-response prompt with a model answer to compare against.
+  Nothing is graded or stored: the learner writes, reveals the model answer,
+  and marks the item understood or for review. Paired shortcode; the inner
+  content is the model answer in Markdown.
+
+    Usage: a paired selfcheck shortcode with question="Why do scientists
+    publish?" and an optional hint; the inner content is the model answer
+    paragraph(s).
+
+  Params: question (required), hint (optional). `answer`, `accept`,
+  `answerDisplay` are rejected — a self-check has no key.
+
+  The shell is fully functional without JavaScript: a labelled <textarea>, a
+  native <details> holding the model answer, and two rating buttons that ship
+  natively `disabled` until <self-check> (assets/js/components/text/self-check.js)
+  enables them. Pagefind excludes `.ap-selfcheck-answer`, so the model answer
+  never leaks into search excerpts.
+*/ -}}
+{{- $question := .Get "question" -}}
+{{- if not (trim ($question | default "") " ") -}}
+  {{- errorf "selfcheck shortcode needs a non-empty 'question' (%s)" .Position -}}
+{{- end -}}
+{{- $inner := trim .Inner "\n\t " -}}
+{{- if not $inner -}}
+  {{- errorf "selfcheck shortcode needs a model answer as its inner content (%s)" .Position -}}
+{{- end -}}
+{{- range (slice "answer" "accept" "answerDisplay" "answerMode" "answerForm") -}}
+  {{- with $.Get . -}}
+    {{- errorf "selfcheck does not take %q — a self-check has no key; its model answer is the inner content (%s)" . $.Position -}}
+  {{- end -}}
+{{- end -}}
+{{- if or (findRE `(^|[^\\])\$` $question) (findRE `(^|[^\\])\$` (.Get "hint" | default "")) (findRE `(^|[^\\])\$` $inner) -}}
+  {{- .Page.Store.Set "hasMath" true -}}
+{{- end -}}
+{{- $id := printf "ap-selfcheck-%s" (.Ordinal | string) -}}
+{{- $qplain := replaceRE `\$` "" $question -}}
+<self-check data-question="{{ $question }}">
+  <div class="ap-selfcheck">
+    <p class="ap-selfcheck-question" id="{{ $id }}-question">{{ partial "mathtext" $question }}</p>
+    <label class="ap-selfcheck-label" for="{{ $id }}-response">Your response</label>
+    <textarea class="ap-selfcheck-response" id="{{ $id }}-response" rows="4" aria-describedby="{{ $id }}-question" autocomplete="off"></textarea>
+    <details class="ap-selfcheck-answer">
+      <summary>Show model answer</summary>
+      <div class="ap-selfcheck-model">{{ $inner | markdownify }}</div>
+    </details>
+    <div class="ap-selfcheck-marks" role="group" aria-label="Rate your response to: {{ $qplain }}">
+      <button type="button" disabled class="ap-selfcheck-mark" data-verdict="understood" aria-pressed="false">I had it</button>
+      <button type="button" disabled class="ap-selfcheck-mark" data-verdict="review" aria-pressed="false">Review again</button>
+    </div>
+    <p class="ap-selfcheck-feedback" role="status" aria-live="polite"></p>
+    {{- with .Get "hint" }}
+      <template data-slot="hint">{{ partial "mathtext" . }}</template>
+    {{- end }}
+  </div>
+</self-check>

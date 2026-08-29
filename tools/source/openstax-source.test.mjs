@@ -1,10 +1,13 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 import {
   collectionModuleIds,
+  formatBookSummaryLine,
+  formatTriesCoverage,
   loadSourceLock,
   normalizeSemanticText,
   parseCollectionXml,
@@ -15,6 +18,7 @@ import {
 } from '../lib/openstax-source.mjs';
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+const biologySourceDir = path.join(repositoryRoot, 'sources/openstax/osbooks-biology-bundle');
 
 test('XML parser preserves namespaces, mixed content, and entities', () => {
   const document = parseXml('<x:root a="1 &amp; 2">before<x:item>3</x:item>after</x:root>');
@@ -45,6 +49,52 @@ test('collection mapping treats only the first chapter module as the introductio
   `);
   assert.deepEqual(collection.chapters[0].sectionModuleIds, ['section-1', 'section-2']);
   assert.equal(collection.chapters[0].introModuleId, 'intro');
+  assert.equal(collection.chapters[0].unit, null, 'a flat collection has no unit nesting');
+  assert.deepEqual(collection.frontMatterModuleIds, []);
+  assert.deepEqual(collection.backMatterModuleIds, []);
+});
+
+test('collection mapping flattens unit -> chapter -> module nesting on the fixture', () => {
+  const xml = readFileSync(
+    path.join(repositoryRoot, 'tools/fixtures/openstax/biology-2e-nested.collection.xml'),
+    'utf8',
+  );
+  const collection = parseCollectionXml(xml);
+  assert.equal(collection.slug, 'biology-2e-nested-fixture');
+  assert.deepEqual(collection.frontMatterModuleIds, ['m-preface']);
+  assert.deepEqual(collection.backMatterModuleIds, ['m-appendix']);
+  assert.equal(collection.chapters.length, 4);
+
+  assert.deepEqual(collection.chapters.map((chapter) => chapter.chapter), [1, 2, 3, 4]);
+  assert.deepEqual(collection.chapters.map((chapter) => chapter.title), [
+    'Chapter One', 'Chapter Two', 'Chapter Three', 'Chapter Four',
+  ]);
+  assert.deepEqual(collection.chapters.map((chapter) => chapter.unit), [
+    { index: 1, title: 'Unit One' },
+    { index: 1, title: 'Unit One' },
+    { index: 2, title: 'Unit Two' },
+    { index: 2, title: 'Unit Two' },
+  ]);
+  assert.deepEqual(collection.chapters[0].moduleIds, ['m-1-0', 'm-1-1', 'm-1-2']);
+  assert.equal(collection.chapters[0].introModuleId, 'm-1-0');
+  assert.deepEqual(collection.chapters[0].sectionModuleIds, ['m-1-1', 'm-1-2']);
+  assert.deepEqual(collection.chapters[2].moduleIds, ['m-3-0', 'm-3-1']);
+  assert.deepEqual(collection.chapters[2].sectionModuleIds, ['m-3-1']);
+  assert.deepEqual(collection.chapters[3].sectionModuleIds, ['m-4-1', 'm-4-2', 'm-4-3']);
+});
+
+test('collection mapping flattens unit -> chapter -> module nesting on the real Biology 2e checkout', { skip: !existsSync(biologySourceDir) && 'run npm run source:fetch -- --bundle biology-bundle first' }, () => {
+  const xml = readFileSync(
+    path.join(biologySourceDir, 'collections/biology-2e.collection.xml'),
+    'utf8',
+  );
+  const collection = parseCollectionXml(xml);
+  assert.equal(collection.chapters.length, 47);
+  const upstreamSections = collection.chapters.reduce((sum, chapter) => sum + chapter.sectionModuleIds.length, 0);
+  assert.equal(upstreamSections, 208);
+  assert.ok(collection.chapters.every((chapter) => chapter.unit && Number.isInteger(chapter.unit.index) && chapter.unit.title));
+  assert.deepEqual(collection.frontMatterModuleIds, ['m66425']);
+  assert.deepEqual(collection.backMatterModuleIds, ['m66719', 'm66716', 'm66717']);
 });
 
 test('CNXML extraction keeps math signs and excludes chapter review material', () => {
@@ -99,32 +149,75 @@ test('every mapped module id is collected for a collection-scoped sparse checkou
 
 test('the source lock pins one upstream bundle per book', () => {
   const lock = loadSourceLock(repositoryRoot);
-  assert.deepEqual(lock.bundleKeys, ['prealgebra-bundle', 'college-algebra-bundle']);
+  assert.deepEqual(lock.bundleKeys, ['prealgebra-bundle', 'college-algebra-bundle', 'biology-bundle']);
   assert.deepEqual(
     [...lock.books.keys()].sort(),
-    ['elementary-algebra', 'intermediate-algebra', 'precalculus', 'prealgebra'].sort(),
+    ['biology', 'elementary-algebra', 'intermediate-algebra', 'precalculus', 'prealgebra'].sort(),
   );
   for (const [book, config] of lock.books) {
     assert.ok(lock.bundles[config.bundleKey], `${book} resolves to a declared bundle`);
     assert.match(config.authoredBaselineCommit, /^[0-9a-f]{40}$/, `${book} pins a baseline commit`);
+    assert.match(config.contentPath, /^content\/[^/]/, `${book} pins a contentPath under content/`);
+    assert.ok(!config.contentPath.endsWith('/'), `${book} contentPath has no trailing slash`);
   }
   assert.equal(lock.books.get('precalculus').bundleKey, 'college-algebra-bundle');
   assert.equal(lock.books.get('precalculus').authoringStatus, 'complete');
   assert.equal(lock.books.get('prealgebra').bundleKey, 'prealgebra-bundle');
   assert.equal(lock.books.get('prealgebra').authoringStatus, 'complete');
   assert.equal(lock.bundles['college-algebra-bundle'].moduleScope, 'mapped-collections');
+  assert.equal(lock.books.get('biology').bundleKey, 'biology-bundle');
+  assert.equal(lock.books.get('biology').authoringStatus, 'scaffolded');
+  assert.equal(lock.books.get('biology').contentPath, 'content/life-health-sciences/biology');
+  assert.equal(lock.bundles['biology-bundle'].moduleScope, 'mapped-collections');
 });
 
-test('committed provenance maps all 274 local math sections exactly once', () => {
+test('loadSourceLock rejects a book missing contentPath, naming the book', () => {
+  const lock = JSON.parse(readFileSync(path.join(repositoryRoot, 'data/openstax/source-lock.json'), 'utf8'));
+  delete lock.bundles['biology-bundle'].books.biology.contentPath;
+  const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'openstax-lock-'));
+  try {
+    mkdirSync(path.join(tempRoot, 'data/openstax'), { recursive: true });
+    writeFileSync(path.join(tempRoot, 'data/openstax/source-lock.json'), JSON.stringify(lock));
+    assert.throws(
+      () => loadSourceLock(tempRoot),
+      /biology-bundle\/biology is missing contentPath/,
+    );
+  } finally {
+    rmSync(tempRoot, { recursive: true, force: true });
+  }
+});
+
+test('formatBookSummaryLine states an unmapped book visibly rather than silently', () => {
+  const summary = {
+    bundle: 'biology-bundle',
+    authoringStatus: 'scaffolded',
+    upstreamChapters: 47,
+    upstreamSections: 208,
+    localChapters: 0,
+    mappedSections: 0,
+  };
+  assert.equal(
+    formatBookSummaryLine('biology', summary),
+    'biology: scaffolded — 0/47 chapters, 0/208 sections mapped',
+  );
+});
+
+test('formatTriesCoverage reports n/a rather than 0/0 for a book with no note.try elements', () => {
+  assert.equal(formatTriesCoverage(0, 0), 'n/a');
+  assert.equal(formatTriesCoverage(3, 5), '3/5');
+});
+
+test('committed provenance maps all 276 local sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 274);
-  assert.equal(result.actualCount, 274);
+  assert.equal(result.expectedCount, 276);
+  assert.equal(result.actualCount, 276);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
   assert.equal(counts['intermediate-algebra'].length, 70);
   assert.equal(counts.precalculus.length, 73);
+  assert.equal(counts.biology.length, 2);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
@@ -134,6 +227,7 @@ test('committed provenance maps all 274 local math sections exactly once', () =>
     'elementary-algebra': 'prealgebra-bundle',
     'intermediate-algebra': 'prealgebra-bundle',
     precalculus: 'college-algebra-bundle',
+    biology: 'biology-bundle',
   };
   for (const entry of result.map.sections) {
     assert.equal(entry.bundle, bundleForBook[entry.book], `${entry.localPath} is attributed to its pinned bundle`);
@@ -153,8 +247,21 @@ test('the Precalculus book is mapped complete, every upstream section authored',
   });
   assert.deepEqual(
     Object.keys(result.map.bundles).sort(),
-    ['college-algebra-bundle', 'prealgebra-bundle'],
+    ['biology-bundle', 'college-algebra-bundle', 'prealgebra-bundle'],
   );
+});
+
+test('the Biology book is pinned and scaffolded, its local landings and mapped sections counted visibly', () => {
+  const result = verifyCommittedSourceMap(repositoryRoot);
+  assert.deepEqual(result.errors, []);
+  assert.deepEqual(result.map.books.biology, {
+    bundle: 'biology-bundle',
+    authoringStatus: 'scaffolded',
+    upstreamChapters: 47,
+    upstreamSections: 208,
+    localChapters: 1,
+    mappedSections: 2,
+  });
 });
 
 test('reconciliation decisions refer to mapped paths and modules', () => {

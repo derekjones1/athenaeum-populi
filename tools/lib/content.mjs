@@ -168,6 +168,9 @@ export const PAIRED_SHORTCODES = Object.freeze({
   graphplot: true,
   apfigure: true,
   callout: true,
+  textin: false,
+  selfcheck: true,
+  mediafigure: true,
 });
 
 /**

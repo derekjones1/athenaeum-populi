@@ -1,11 +1,47 @@
 /** Production artifact guardrails, including Cloudflare's 20,000-file cap. */
-import { existsSync, readFileSync, statSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { join, relative, sep } from 'node:path';
 import { walkFiles } from '../lib/content.mjs';
 import { htmlAttribute, hasFileBackedCssImage, MAIN_CONTENT_RE } from '../lib/html.mjs';
 
 const root = process.argv[2] || 'public';
+// The media manifest directory: `--data-dir <dir>` or a bare second
+// positional argument, so audit-build.test.mjs can point this at a fixture
+// manifest without touching the repository's real data/media. Every
+// manifest's every variant file is the sole allowlisted exception to the
+// "no file-backed images" rule below, and only inside its own
+// <figure class="ap-mediafigure">.
+const mediaDataDirFlagIndex = process.argv.indexOf('--data-dir');
+const mediaDataDir = mediaDataDirFlagIndex !== -1
+  ? process.argv[mediaDataDirFlagIndex + 1]
+  : (process.argv[3] && !process.argv[3].startsWith('--') ? process.argv[3] : 'data/media');
+function loadMediaManifests(dir) {
+  const manifests = new Map();
+  if (!existsSync(dir)) return manifests;
+  for (const file of readdirSync(dir)) {
+    if (!file.endsWith('.json')) continue;
+    try {
+      manifests.set(file.slice(0, -'.json'.length), JSON.parse(readFileSync(join(dir, file), 'utf8')));
+    } catch {
+      // A malformed manifest allowlists nothing for that book — the mediafigure
+      // shortcode itself already refuses to build against one, so this can
+      // only ever be a hand-corrupted fixture, not real vendored content.
+    }
+  }
+  return manifests;
+}
+const mediaManifests = loadMediaManifests(mediaDataDir);
+// "media/<book>/<file>" for every vendored variant across every manifest —
+// the ONLY file-backed image paths this audit allows anywhere in the build.
+const mediaVariantFiles = new Set();
+for (const [book, manifest] of mediaManifests) {
+  for (const entry of Object.values(manifest.figures || {})) {
+    for (const variant of entry.variants || []) {
+      mediaVariantFiles.add(join('media', book, variant.file).split(sep).join('/'));
+    }
+  }
+}
 // Cloudflare Pages/Workers static assets: 20,000 files on the Free plan,
 // 100,000 on Paid (Wrangler >= 4.34.0; CI pins 4.112.0, so the tooling
 // qualifies either way). The repository cannot know which plan the account
@@ -444,8 +480,42 @@ if (contentDocuments.some(({ content, redirect }) => !content && !redirect)) {
 }
 const contentHtml = contentDocuments.map(({ content }) => content).filter(Boolean).join('\n');
 // Media elements remain active even when nested in raw <pre>/<code>.
-if (/<(?:img|picture|object|embed)\b|<source\b[^>]*\bsrcset\s*=|<image\b/i.test(contentHtml)) {
+// `<img>` is handled separately below — mediafigure's own well-formed `<img>`
+// inside `<figure class="ap-mediafigure">` is the one sanctioned exception —
+// so it is deliberately absent from this ban list.
+if (/<(?:picture|object|embed)\b|<source\b[^>]*\bsrcset\s*=|<image\b/i.test(contentHtml)) {
   problems.push('file-backed content image markup');
+}
+// A mediafigure's own <img>, inside its own <figure class="ap-mediafigure">,
+// naming a vendored manifest variant with the full accessibility/layout
+// contract (alt/width/height/decoding, plus every srcset candidate also a
+// vendored variant) is the ONLY <img> this audit allows anywhere in
+// main#content. Everything else — an <img> anywhere else, or a malformed one
+// inside a mediafigure — still fails as a file-backed image.
+const mediaFigureRanges = [];
+for (const figureMatch of contentHtml.matchAll(/<figure\b[^>]*>[\s\S]*?<\/figure>/gi)) {
+  if (/(?:^|\s)ap-mediafigure(?:\s|$)/.test(htmlAttribute(figureMatch[0], 'class'))) {
+    mediaFigureRanges.push([figureMatch.index, figureMatch.index + figureMatch[0].length]);
+  }
+}
+const inMediaFigure = (index) => mediaFigureRanges.some(([start, end]) => index >= start && index < end);
+for (const match of contentHtml.matchAll(/<img\b[^>]*>/gi)) {
+  if (!inMediaFigure(match.index)) {
+    problems.push('file-backed content image markup');
+    continue;
+  }
+  const src = htmlAttribute(match[0], 'src').replace(/^\/+/, '');
+  const srcset = htmlAttribute(match[0], 'srcset');
+  const srcsetCandidates = srcset ? srcset.split(',').map((c) => c.trim().split(/\s+/)[0]).filter(Boolean) : [];
+  const alt = htmlAttribute(match[0], 'alt');
+  const width = htmlAttribute(match[0], 'width');
+  const height = htmlAttribute(match[0], 'height');
+  const decoding = htmlAttribute(match[0], 'decoding');
+  const srcOk = mediaVariantFiles.has(src);
+  const srcsetOk = srcsetCandidates.every((c) => mediaVariantFiles.has(c.replace(/^\/+/, '')));
+  if (!srcOk || !srcsetOk || !alt.trim() || !width.trim() || !height.trim() || !decoding.trim()) {
+    problems.push('mediafigure <img> is malformed (src/srcset must each name a vendored manifest variant, and alt/width/height/decoding are all required)');
+  }
 }
 for (const match of contentHtml.matchAll(/<(?:input|video)\b[^>]*>/gi)) {
   if (htmlAttribute(match[0], 'type').toLowerCase() === 'image' || htmlAttribute(match[0], 'poster')) {
@@ -485,17 +555,29 @@ const allowedSiteChrome = new Set([
   join('images', 'logo-dark.svg'),
   join('images', 'logo.svg'),
 ].map((file) => join(root, file)));
-const contentImageAssets = built.filter((file) => imageAssetPattern.test(file) && !allowedSiteChrome.has(file));
+// Every vendored media variant file, relative to root, is also allowed —
+// it is the same allowlist the content-image ban above checks `<img src>`
+// and `srcset` candidates against, applied here to the raw built-file list.
+const allowedMediaVariants = new Set([...mediaVariantFiles].map((file) => join(root, file)));
+const contentImageAssets = built.filter((file) => imageAssetPattern.test(file)
+  && !allowedSiteChrome.has(file) && !allowedMediaVariants.has(file));
 if (contentImageAssets.length) {
-  problems.push(`${contentImageAssets.length} content image asset(s) remain (only the nine explicit site-chrome icons/logos are allowed)`);
+  problems.push(`${contentImageAssets.length} content image asset(s) remain (only the nine explicit site-chrome icons/logos and vendored media manifest variants are allowed)`);
 }
 // The same nine are also a floor: favicons.html, site.webmanifest, and the
 // navbar reference every one of them unconditionally, so a missing file is a
-// shipped 404 (the navbar logo shipped that way once, silently).
+// shipped 404 (the navbar logo shipped that way once, silently). Every
+// manifest variant is the same kind of floor — a mediafigure references it
+// by name, so a variant a manifest declares but the build never shipped is a
+// broken image on a real page.
 const builtSet = new Set(built);
 const missingSiteChrome = [...allowedSiteChrome].filter((file) => !builtSet.has(file));
 if (missingSiteChrome.length) {
   problems.push(`${missingSiteChrome.length} site-chrome icon/logo file(s) missing (favicons.html and the navbar reference all nine)`);
+}
+const missingMediaVariants = [...allowedMediaVariants].filter((file) => !builtSet.has(file));
+if (missingMediaVariants.length) {
+  problems.push(`${missingMediaVariants.length} vendored media manifest variant file(s) missing from the build (declared in a data/media manifest but never shipped)`);
 }
 // The provider rejects an artifact ABOVE the cap, so the gate draws its line
 // where the provider does. The warning is what gives advance notice: a hard
@@ -647,7 +729,7 @@ else if (built.length >= maxFiles * filesWarnAt) {
   const NOSCRIPT_NOTICE = /class=(?:"[^"]*\bap-noscript-notice\b[^"]*"|'[^']*\bap-noscript-notice\b[^']*'|ap-noscript-notice\b)/g;
   const missing = [];
   for (const [index, document] of htmlDocuments.entries()) {
-    const components = (document.match(/<(?:fill-in|graph-plot)\b/g) || []).length;
+    const components = (document.match(/<(?:fill-in|graph-plot|text-in)\b/g) || []).length;
     const notices = (document.match(NOSCRIPT_NOTICE) || []).length;
     if (components !== notices) {
       missing.push(`${htmlFiles[index]}: ${components} interactive component(s), ${notices} noscript notice(s)`);

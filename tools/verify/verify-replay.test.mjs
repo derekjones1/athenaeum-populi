@@ -27,10 +27,17 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
+import { mkdtempSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { spawnSync } from 'node:child_process';
+
 import { walkMarkdown, mathSpans, shortcodes } from '../lib/content.mjs';
 import {
   SKIP_CLASSES, SOUND_COINCIDENCES, mathliveSpelling, parseReplayArgs,
 } from './verify-replay.mjs';
+
+const REPLAY_TOOL = new URL('./verify-replay.mjs', import.meta.url).pathname;
 
 // The learner's field re-emits compact source TeX in a normalized spelling,
 // and the gate replays both. A source-only replay reported 'invalid' for
@@ -162,4 +169,25 @@ test('the command line is parsed, not positionally assumed', async (t) => {
     assert.throws(() => parseReplayArgs(['--nope']), /unknown option/);
     assert.throws(() => parseReplayArgs(['content', 'other']), /unexpected argument/);
   });
+});
+
+test('a textin question that IS its own answer fails replay, and a safe one is counted', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'replay-textin-'));
+  try {
+    const file = join(dir, 'a.md');
+    writeFileSync(file, [
+      '---\ntitle: Sample\n---\n',
+      '{{< textin question="mitochondria" answer="mitochondria" >}}',
+      '',
+      '{{< textin question="Name the organelle that makes ATP." answer="mitochondria" >}}',
+    ].join('\n'));
+    const result = spawnSync(process.execPath, [REPLAY_TOOL, '--file', file], { encoding: 'utf8' });
+    assert.equal(result.status, 0, result.stderr);
+    const parsed = JSON.parse(result.stdout);
+    assert.equal(parsed.replayed, 2, 'each textin question counts as one replayed span for the --min-replayed floor');
+    assert.equal(parsed.failures.length, 1, `only the retype-passable question fails: ${JSON.stringify(parsed.failures)}`);
+    assert.match(parsed.failures[0], /accepts its own printed question/);
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
 });

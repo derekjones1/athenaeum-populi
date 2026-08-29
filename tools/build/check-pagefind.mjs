@@ -20,14 +20,19 @@ function main() {
   // The book list (reporting + sanity floor) also derives from SOURCE. A
   // hardcoded allowlist silently stopped covering Precalculus the day it
   // was published; the coverage contract itself is the all-routes check
-  // below.
-  const contentMath = join(contentRoot, 'math');
-  if (!existsSync(contentMath)) throw new Error(`Content subject directory missing: ${contentMath}`);
-  const requiredBooks = readdirSync(contentMath, { withFileTypes: true })
+  // below. Every shelf's every book, not just content/math — a shelf with
+  // no books yet (a new subject area whose landing page exists but has no
+  // authored textbook) is fine and contributes none, not a failure.
+  const shelves = readdirSync(contentRoot, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
     .map((entry) => entry.name)
     .sort();
-  if (!requiredBooks.length) throw new Error(`No authored textbook directories under ${contentMath}`);
+  if (!shelves.length) throw new Error(`No content shelves found under ${contentRoot}`);
+  const requiredBooks = shelves.flatMap((shelfName) => readdirSync(join(contentRoot, shelfName), { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => `${shelfName}/${entry.name}`))
+    .sort();
+  if (!requiredBooks.length) throw new Error(`No authored textbook directories under ${contentRoot}`);
 
   if (!existsSync(entryPath)) throw new Error(`Pagefind index not found: ${entryPath}`);
   const entry = JSON.parse(readFileSync(entryPath, 'utf8'));

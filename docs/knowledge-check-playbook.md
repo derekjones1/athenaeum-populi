@@ -4,12 +4,15 @@ A Knowledge Check is a cumulative, book-level self-test — not a section. It is
 the one deliberate departure from section-page exercise patterns: **quizzes have
 no hints.**
 
-Read and follow `docs/authoring-playbook.md` first. Its source-fidelity,
-component, math, image, verification, and handoff rules all apply here.
+Read and follow `docs/authoring-playbook.md` and `docs/subjects/math.md`
+first. The core's source-fidelity, component, verification, and handoff
+rules all apply here, and so does the math playbook's notation and
+`answerForm` vocabulary.
 
 Like the authoring playbook, this playbook currently governs the OpenStax
-mathematics books; adapt both together, with a reviewed subject playbook,
-before building cumulative assessments for an image-dependent subject.
+mathematics books; adapt it, alongside a reviewed subject playbook, before
+building cumulative assessments for another subject (Biology 2e's is
+`docs/subjects/biology.md`, but Biology has no knowledge checks yet).
 
 ## Placement
 

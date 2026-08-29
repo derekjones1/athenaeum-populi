@@ -1,11 +1,16 @@
 # Athenaeum Populi — Hugo agent notes
 
 The Hugo migration is complete; this repository is the production
-architecture. For content work, follow `docs/authoring-playbook.md`; for
-knowledge checks, also follow `docs/knowledge-check-playbook.md`. See
-`docs/architecture.md` for the current build and deployment design. For the
-OpenStax math books — the three algebra books and Precalculus 2e, all four
-complete — also follow `docs/source/openstax-source-workflow.md`.
+architecture. For content work, follow `docs/authoring-playbook.md` — the
+subject-neutral core — plus the subject playbook under `docs/subjects/` for
+the book you are authoring; for knowledge checks, also follow
+`docs/knowledge-check-playbook.md`. See `docs/architecture.md` for the
+current build and deployment design. For the OpenStax math books — the three
+algebra books and Precalculus 2e, all four complete — also follow
+`docs/subjects/math.md` and `docs/source/openstax-source-workflow.md`.
+Biology 2e is pinned but `scaffolded` (no chapters authored yet); its
+subject-specific rules are in `docs/subjects/biology.md`, on top of the same
+source workflow.
 
 ## Stack and constraints
 
@@ -26,13 +31,20 @@ complete — also follow `docs/source/openstax-source-workflow.md`.
   and current upstream `main` as a review candidate. Never synchronize upstream
   changes into `content/` automatically.
 - The lock pins one commit per upstream bundle: `prealgebra-bundle` for the
-  three algebra books and `college-algebra-bundle` for Precalculus 2e. Books
-  carry an `authoringStatus`; all four are `complete` (Precalculus 2e's last
-  chapter landed on August 29, 2026), so every upstream numbered section has
-  a local page and chapter parity is enforced book-wide. A future scaffolded
-  book marks its unwritten chapter landings `authoring_status: scaffolded`,
-  drops the marker from a chapter as soon as it has a section page, and
-  reruns `node tools/source/openstax-source.mjs build-map` after authoring.
+  three algebra books, `college-algebra-bundle` for Precalculus 2e, and
+  `biology-bundle` for Biology 2e. Books carry an `authoringStatus`; the four
+  math books are `complete` (Precalculus 2e's last chapter landed on August
+  29, 2026), so every upstream numbered section has a local page and chapter
+  parity is enforced book-wide. Biology is `scaffolded`: its lock and section
+  map exist, but `content/life-health-sciences/biology` has no chapter
+  landings yet, so `build-map`/`verify-map` print it with zero chapters and
+  zero sections mapped — visibly, never silently. A scaffolded book marks its
+  unwritten chapter landings `authoring_status: scaffolded`, drops the marker
+  from a chapter as soon as it has a section page, and reruns
+  `node tools/source/openstax-source.mjs build-map` after authoring. Every
+  book's lock entry also carries a `contentPath` — the `content/` directory
+  the tooling walks for that book — so a book need not live under
+  `content/math`.
 
 ## Commands
 
@@ -47,7 +59,7 @@ complete — also follow `docs/source/openstax-source-workflow.md`.
   derived from the content itself: which pages are already spec-first
   (skip them) and which still carry legacy `data-spec` figures, pre-spec
   `<svg>` options, or hand-written SVG with no spec at all; "convert this
-  chapter" starts here (workflow in `docs/authoring-playbook.md` §3)
+  chapter" starts here (workflow in `docs/subjects/math.md`)
 - `npm run figures:convert -- [--dry-run] [--gallery out.html] <path>` —
   the mechanical half of that conversion: rewrites legacy `data-spec` divs
   as `apfigure` shortcodes and diffs each re-render against the SVG it
@@ -77,7 +89,7 @@ complete — also follow `docs/source/openstax-source-workflow.md`.
   starts; merge has the answer ledger's conflict-refusing contract, and
   `node tools/verify/graphplot-conversion.mjs prune content` retires entries whose
   exercise was converted or edited (workflow in
-  `docs/authoring-playbook.md` §3). The queue is currently EMPTY — all 448
+  `docs/subjects/math.md`). The queue is currently EMPTY — all 448
   are adjudicated `keep` — so `list --verdict convert` printing `[]` is the
   true state, not a missing ledger: every command but `merge` now fails
   loudly if the file is absent, `init` creates it, and `--ledger <path>`
@@ -90,9 +102,11 @@ complete — also follow `docs/source/openstax-source-workflow.md`.
   package.json's `--min-verified`, `--min-replayed`, and `--min-exercises` in
   place
 - `npm run source:fetch` — fetch the ignored, sparse OpenStax source checkout
-- `npm run source:verify` — verify the committed 274-section map offline
+- `npm run source:verify` — verify the committed 276-section map offline
 - `npm run source:check` — report-only comparison against pinned CNXML
 - `npm run source:history` — review changes since the inferred PDF-era commits
+- `npm run source:media -- --book KEY --chapter N` — vendor a chapter's raster
+  figures from the pinned checkout into `static/media/<book>/` as WebP
 
 Every `source:*` command takes `--bundle KEY` to work on one bundle at a time.
 

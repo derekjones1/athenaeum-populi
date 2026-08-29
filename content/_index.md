@@ -11,7 +11,7 @@ toc: false
 {{< cards >}}
   {{< card link="/math" title="Math" >}}
   {{< card link="/physical-sciences" title="Physical Sciences" subtitle="Coming soon." >}}
-  {{< card link="/life-health-sciences" title="Life & Health Sciences" subtitle="Coming soon." >}}
+  {{< card link="/life-health-sciences" title="Life & Health Sciences" subtitle="Biology — being written." >}}
   {{< card link="/engineering-computing" title="Engineering & Computing" subtitle="Coming soon." >}}
   {{< card link="/social-sciences-business" title="Social Sciences & Business" subtitle="Coming soon." >}}
   {{< card link="/humanities" title="Humanities" subtitle="Coming soon." >}}

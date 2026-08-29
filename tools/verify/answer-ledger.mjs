@@ -43,8 +43,15 @@ import {
 
 export const LEDGER_PATH = 'data/verification/answer-ledger.json';
 
-/** The three shortcodes that carry a gradeable answer. */
-export const EXERCISE_KINDS = Object.freeze(['fillin', 'multiplechoice', 'graphplot']);
+/**
+ * The shortcodes that carry a gradeable answer, plus the two non-graded
+ * interactive forms whose content still deserves a durable human-equivalent
+ * read: `textin` (a normalized-text key, checked in check-text.mjs, not the
+ * math grader) and `selfcheck` (no key at all — its model answer, the paired
+ * inner content, is the thing to verify, so its hash below has to include
+ * that inner content or an edited model answer would keep its old verdict).
+ */
+export const EXERCISE_KINDS = Object.freeze(['fillin', 'multiplechoice', 'graphplot', 'textin', 'selfcheck']);
 
 /**
  * Exercise identity. Whitespace runs collapse to one space so that reflowing

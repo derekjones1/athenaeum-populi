@@ -1,0 +1,55 @@
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <md:title>Biology 2e (nested fixture)</md:title>
+    <md:language>en</md:language>
+    <md:license url="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</md:license>
+    <md:uuid>8d50a0af-948b-4204-a71d-4826cba765b8</md:uuid>
+    <md:slug>biology-2e-nested-fixture</md:slug>
+  </metadata>
+  <col:content>
+    <col:module document="m-preface"/>
+    <col:subcollection>
+      <md:title>Unit One</md:title>
+      <col:content>
+        <col:subcollection>
+          <md:title>Chapter One</md:title>
+          <col:content>
+            <col:module document="m-1-0"/>
+            <col:module document="m-1-1"/>
+            <col:module document="m-1-2"/>
+          </col:content>
+        </col:subcollection>
+        <col:subcollection>
+          <md:title>Chapter Two</md:title>
+          <col:content>
+            <col:module document="m-2-0"/>
+            <col:module document="m-2-1"/>
+            <col:module document="m-2-2"/>
+          </col:content>
+        </col:subcollection>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Unit Two</md:title>
+      <col:content>
+        <col:subcollection>
+          <md:title>Chapter Three</md:title>
+          <col:content>
+            <col:module document="m-3-0"/>
+            <col:module document="m-3-1"/>
+          </col:content>
+        </col:subcollection>
+        <col:subcollection>
+          <md:title>Chapter Four</md:title>
+          <col:content>
+            <col:module document="m-4-0"/>
+            <col:module document="m-4-1"/>
+            <col:module document="m-4-2"/>
+            <col:module document="m-4-3"/>
+          </col:content>
+        </col:subcollection>
+      </col:content>
+    </col:subcollection>
+    <col:module document="m-appendix"/>
+  </col:content>
+</col:collection>

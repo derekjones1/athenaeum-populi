@@ -1,0 +1,77 @@
+{{- /*
+  mediafigure — a vendored raster figure (photo, micrograph, diagram) with its
+  alt text, caption, and optional extended description. The ONLY sanctioned
+  path for a file-backed image: `src` must name an entry in a media manifest
+  (data/media/<book>.json, written by tools/source/vendor-media.mjs), which is
+  also the build audit's allowlist, so an image that was never vendored —
+  or a hand-dropped file — cannot ship. The math books' prohibition on
+  file-backed images (content lint + audit-build) is unchanged for every other
+  embedding form.
+
+    Usage: a paired mediafigure shortcode with src="biology/Figure_01_01_01-3978"
+    and alt="…"; the inner content is the caption in Markdown, keeping the
+    printed credit line.
+
+  Params:
+    src        (required) `<book>/<stem>` — the manifest key
+    alt        (required) the accessible description; ≤ 600 characters (lint)
+    longdesc   optional extended description rendered as a <details> after
+               the caption, for diagrams whose meaning is not in the caption
+    eager      "true" to load without `loading="lazy"` (first figure on a page)
+    kind       "photo" or "diagram" — overrides the manifest's guess (JPEG =
+               photo, otherwise diagram); diagrams get a light plate on the
+               dark theme, photos do not
+
+  The <img> carries width/height from the manifest (no layout shift), a
+  srcset of every vendored variant, and never upscales: a 430 px diagram
+  renders at 430 px, a 1600 px photo at the column width.
+*/ -}}
+{{- $src := .Get "src" | default "" -}}
+{{- $alt := trim (.Get "alt" | default "") " " -}}
+{{- if not $src -}}
+  {{- errorf "mediafigure needs 'src' as <book>/<stem> (%s)" .Position -}}
+{{- end -}}
+{{- if not $alt -}}
+  {{- errorf "mediafigure %q needs a non-empty 'alt' — every figure must have an accessible description (%s)" $src .Position -}}
+{{- end -}}
+{{- $parts := split $src "/" -}}
+{{- if ne (len $parts) 2 -}}
+  {{- errorf "mediafigure src %q must be <book>/<stem> (%s)" $src .Position -}}
+{{- end -}}
+{{- $book := index $parts 0 -}}
+{{- $stem := index $parts 1 -}}
+{{- $manifest := index hugo.Data.media $book -}}
+{{- if not $manifest -}}
+  {{- errorf "mediafigure %q: no media manifest data/media/%s.json — run tools/source/vendor-media.mjs first (%s)" $src $book .Position -}}
+{{- end -}}
+{{- $entry := index $manifest.figures $stem -}}
+{{- if not $entry -}}
+  {{- errorf "mediafigure %q: %q is not in data/media/%s.json — vendor the module's media before referencing it (%s)" $src $stem $book .Position -}}
+{{- end -}}
+{{- $variants := sort $entry.variants "width" -}}
+{{- $largest := index $variants (sub (len $variants) 1) -}}
+{{- $srcset := slice -}}
+{{- range $variants -}}
+  {{- $srcset = $srcset | append (printf "/media/%s/%s %dw" $book .file (int .width)) -}}
+{{- end -}}
+{{- $kind := .Get "kind" | default ($entry.kind | default "diagram") -}}
+{{- if not (in (slice "photo" "diagram") $kind) -}}
+  {{- errorf "mediafigure %q: kind must be photo or diagram, got %q (%s)" $src $kind .Position -}}
+{{- end -}}
+{{- $caption := trim .Inner "\n\t " -}}
+<figure class="ap-mediafigure" data-stem="{{ $stem }}" data-kind="{{ $kind }}">
+  <img src="/media/{{ $book }}/{{ $largest.file }}"
+    {{- if gt (len $variants) 1 }} srcset="{{ delimit $srcset ", " }}" sizes="(min-width: 48rem) min({{ int $largest.width }}px, 44rem), 100vw"{{ end }}
+    width="{{ int $largest.width }}" height="{{ int $largest.height }}"
+    alt="{{ $alt }}"
+    {{- if ne (.Get "eager") "true" }} loading="lazy"{{ end }} decoding="async">
+  {{- with $caption }}
+  <figcaption class="ap-mediafigure-caption">{{ . | markdownify }}</figcaption>
+  {{- end }}
+  {{- with .Get "longdesc" }}
+  <details class="ap-mediafigure-longdesc">
+    <summary>Extended description</summary>
+    <p>{{ . | markdownify }}</p>
+  </details>
+  {{- end }}
+</figure>

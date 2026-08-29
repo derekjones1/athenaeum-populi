@@ -19,11 +19,27 @@ reviewed commit. Every book belongs to exactly one bundle.
   the checkout is scoped to the modules the Precalculus collection actually
   references (`moduleScope: "mapped-collections"`, 87 modules instead of the
   full tree).
+- [`openstax/osbooks-biology-bundle`](https://github.com/openstax/osbooks-biology-bundle)
+  — Biology 2e. This bundle also ships Concepts of Biology and Biology for AP
+  Courses, so it too is `moduleScope: "mapped-collections"`, scoped to the
+  modules the Biology 2e collection actually references.
 
 Books carry an `authoringStatus`. `complete` means every upstream numbered
 section is authored locally and chapter-by-chapter parity is enforced;
 `scaffolded` and `in-progress` mean the book's provenance is pinned while its
 pages are still being written, so parity is only checked for what exists.
+Biology is `scaffolded`: its lock and pinned commit exist, but
+`content/life-health-sciences/biology` has no chapter or section pages yet, so
+`build-map`/`verify-map` print it with zero chapters and zero sections mapped
+— visibly, not silently — until authoring begins.
+
+Every book's lock entry also carries a `contentPath` (for example
+`content/math/precalculus`, `content/life-health-sciences/biology`): the
+directory under `content/` the tooling walks for that book's chapter landings
+and numbered sections. Books no longer have to share one `content/math` root —
+`contentPath` is what let this reconciliation pipeline carry Biology 2e, the
+first book outside `content/math`, without a special case anywhere else in
+`tools/lib/openstax-source.mjs`.
 
 ## Quick start
 
@@ -98,7 +114,7 @@ not a publishing instruction.
 - `data/openstax/source-lock.json` (schema 2) records each bundle's
   official repository, current reviewed commit, module scope, and license,
   plus every book's collection, inferred PDF-era commit, and authoring status.
-- `data/openstax/source-map.json` (schema 2) connects all 274 authored
+- `data/openstax/source-map.json` (schema 2) connects all 276 authored
   local section paths to stable OpenStax module IDs and module SHA-256
   fingerprints, attributes each section to its bundle, and records per-book
   chapter and section coverage against the upstream collection.
@@ -177,6 +193,57 @@ for a finished one.
 When all 73 sections exist, change the book's `authoringStatus` to `complete`
 in the lock; from then on the tooling enforces full chapter-by-chapter parity
 with the upstream collection and the book joins the audited section matrix.
+
+## Biology 2e
+
+Biology 2e is pinned and `scaffolded`: the lock, the collection mapping, and
+the vendored-media pipeline are in place, but `content/life-health-sciences/biology`
+carries no chapter landings or section pages yet. `npm run source:verify` and
+`build-map` therefore print `biology: scaffolded — 0/47 chapters, 0/208
+sections mapped` — a book with zero authored content is stated on its own
+line, not folded silently into a "0 errors" run. Its pinned commit is
+`63f8b6f8d129dd1582989bb755011e9a6d523471` in the `biology-bundle`.
+
+Biology 2e's `collections/biology-2e.collection.xml` nests one level deeper
+than the algebra and Precalculus collections: 8 units (`<col:subcollection>`
+elements with no direct `<module>` children) each contain 2–8 chapters
+(`<col:subcollection>` elements whose `<content>` holds `<module>` children
+directly), for 47 chapters and 208 upstream sections total. `parseCollectionXml`
+handles both shapes with one rule — a subcollection is a chapter exactly when
+its own `<content>` holds `<module>` children directly, otherwise it is a unit
+and its nested chapter subcollections are read instead — and numbers chapters
+1-based in document order across every unit, recording `{ index, title }` on
+`chapter.unit` (`null` for a flat collection like Precalculus's). The preface
+module and the three appendix modules are top-level `<col:module>` elements
+outside any subcollection, collected as `frontMatterModuleIds` /
+`backMatterModuleIds` rather than mistaken for empty chapters.
+
+Biology's end-of-chapter material uses different CNXML section classes than
+the math books (`summary`, `multiple-choice`, `critical-thinking`,
+`visual-exercise`, `free-response` instead of `key-concepts`,
+`section-exercises`, `writing`), all excluded from the audited core
+instructional text the same way. Its modules also carry no `note.try`
+elements at all — Biology has no math-style Try It prompts — so the audit
+reports that lane as `n/a` rather than a misleading `0/0`. When biology
+sections are authored, their interactive exercises will lean on `textin`
+(short-text answers, graded by normalized exact match — the word counterpart
+of `fillin`, which cannot take words) and `selfcheck` (an ungraded
+free-response prompt with a revealable model answer) alongside the existing
+`multiplechoice`; the audit's local-interaction scan recognizes all of these.
+
+Once a chapter's modules are ready to vendor, `npm run source:media` renders
+the raster figures a chapter references into `static/media/<book>/` as WebP at
+≤800/≤1600 px and records them in `data/media/<book>.json`:
+
+```sh
+npm run source:media -- --book biology --chapter 1 --dry-run
+npm run source:media -- --book biology --chapter 1
+```
+
+It reads blobs with `git show <commit>:media/<file>` from the blobless
+sparse clone, so it needs the fetch's commit to actually hold the referenced
+media blob; it is local-only tooling and needs `sips` and `cwebp` on the
+machine running it.
 
 ### Important upstream inconsistency
 

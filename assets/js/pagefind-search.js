@@ -22,6 +22,7 @@
     'elementary-algebra': 'Elementary Algebra',
     'intermediate-algebra': 'Intermediate Algebra',
     precalculus: 'Precalculus',
+    biology: 'Biology',
   };
 
   function loadPagefind() {

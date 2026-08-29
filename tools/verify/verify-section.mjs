@@ -15,10 +15,12 @@
  * Exit 0 + "ALL CLEAN" = passes. ⚠ = human glance and does not fail. Uses
  * KaTeX plus the production answer grader.
  */
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import katex from 'katex';
 import { ce, checkAnswer, preprocess } from '../../assets/js/lib/math/check-answer.mjs';
 import { parseGraphPlotConfig } from '../../assets/js/lib/math/graph-plot-config.mjs';
+import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 import { lintHugo } from '../lint/lints.mjs';
 import { hasUnpairedDollar, mathSpans, shortcodes } from '../lib/content.mjs';
 
@@ -146,6 +148,62 @@ for (const f of files) {
     try { parseGraphPlotConfig(inner.trim(), p.snap || 1); }
     catch (e) { bad(`graphplot: ${e.message}`); }
     for (const name of ['question', 'hint', 'answerDisplay']) propMath('graphplot', name, p[name]);
+  }
+
+  // 7. textin answers — the word grader (check-text.mjs), not the math
+  // grader: the answer and every `|`-separated accept member must self-grade
+  // 'correct' against the answer, exactly like a fillin's answer must
+  // self-grade against itself.
+  for (const { params: p } of shortcodes(interactiveSrc, 'textin')) {
+    const where = `textin (${(p.question || '?').slice(0, 40)}…)`;
+    if (p.answer != null) {
+      if (checkText(p.answer, p.answer, { accept: p.accept }) !== 'correct') {
+        bad(`${where}: answer ${JSON.stringify(p.answer)} does not self-grade 'correct'`);
+      }
+      for (const member of (p.accept || '').split('|').filter(Boolean)) {
+        if (checkText(member, p.answer, { accept: p.accept }) !== 'correct') {
+          bad(`${where}: accept member ${JSON.stringify(member)} does not grade 'correct' against the answer`);
+        }
+      }
+    }
+    for (const name of ['question', 'hint', 'answerDisplay']) propMath(where, name, p[name]);
+  }
+
+  // 8. selfcheck — no key to grade, so the checkable content is structural:
+  // the paired inner model answer must actually be there, and its
+  // question/hint must render like any other learner-facing math.
+  for (const { params: p, inner, closed } of shortcodes(interactiveSrc, 'selfcheck')) {
+    if (!closed) continue; // the lint reports the unclosed tag by name
+    const where = `selfcheck (${(p.question || '?').slice(0, 40)}…)`;
+    if (!inner.trim()) bad(`${where}: inner model answer is empty`);
+    for (const name of ['question', 'hint']) propMath(where, name, p[name]);
+  }
+
+  // 9. mediafigure — src must resolve to a vendored manifest entry, and alt
+  // must be present. The shortcode template already refuses to build
+  // without these (errorf) and the lint catches it before Hugo runs; this is
+  // the same check made independently against the real manifest on disk.
+  for (const { params: p, closed } of shortcodes(interactiveSrc, 'mediafigure')) {
+    if (!closed) continue; // the lint reports the unclosed tag by name
+    const src = p.src || '';
+    const where = `mediafigure (${src || '?'})`;
+    const parts = src.split('/');
+    if (parts.length !== 2 || !parts[0] || !parts[1]) {
+      bad(`${where}: src must be "<book>/<stem>"`);
+    } else {
+      const [book, stem] = parts;
+      const manifestPath = join('data/media', `${book}.json`);
+      if (!existsSync(manifestPath)) {
+        bad(`${where}: no media manifest ${manifestPath}`);
+      } else {
+        let manifest = null;
+        try { manifest = JSON.parse(readFileSync(manifestPath, 'utf8')); } catch { manifest = null; }
+        if (!manifest || !manifest.figures || !manifest.figures[stem]) {
+          bad(`${where}: ${JSON.stringify(stem)} is not in ${manifestPath}`);
+        }
+      }
+    }
+    if (!(p.alt || '').trim()) bad(`${where}: alt is empty`);
   }
 }
 

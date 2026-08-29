@@ -13,6 +13,8 @@ import {
   auditExistingMath,
   buildSourceMap,
   collectionModuleIds,
+  formatBookSummaryLine,
+  formatTriesCoverage,
   loadSourceLock,
   parseLocalSection,
   parseModuleXml,
@@ -237,7 +239,7 @@ function buildMap(options) {
   writeFileSync(target, `${JSON.stringify(result.map, null, 2)}\n`);
   console.log(`Mapped ${result.map.sections.length} sections at ${path.relative(repositoryRoot, target)}.`);
   for (const [book, summary] of Object.entries(result.map.books)) {
-    console.log(`  ${book} (${summary.bundle}, ${summary.authoringStatus}): ${summary.mappedSections}/${summary.upstreamSections} upstream sections`);
+    console.log(`  ${formatBookSummaryLine(book, summary)}`);
   }
 }
 
@@ -249,7 +251,7 @@ function verifyMap() {
   }
   console.log(`OpenStax source map: ${result.actualCount} local sections mapped to pinned CNXML modules.`);
   for (const [book, summary] of Object.entries(result.map.books || {})) {
-    console.log(`  ${book} (${summary.bundle}, ${summary.authoringStatus}): ${summary.mappedSections}/${summary.upstreamSections} upstream sections`);
+    console.log(`  ${formatBookSummaryLine(book, summary)}`);
   }
 }
 
@@ -300,7 +302,7 @@ function formatMarkdown(audit, sourceCommits, output) {
     `- Objectives automatically located: ${summary.objectivesMatched}/${summary.objectivesTotal}`,
     `- Core instructional headings automatically located: ${summary.headingsMatched}/${summary.headingsTotal}`,
     `- Local interactive questions inventoried: ${summary.localInteractions}`,
-    `- Upstream Try It prompts with a likely local prompt match: ${summary.sourceTriesLikelyMatched}/${summary.sourceTriesTotal}`,
+    `- Upstream Try It prompts with a likely local prompt match: ${formatTriesCoverage(summary.sourceTriesLikelyMatched, summary.sourceTriesTotal)}`,
     '',
     '| Book | Bundle | Authoring status | Chapters | Sections mapped |',
     '|---|---|---|---:|---:|',
@@ -379,14 +381,11 @@ function printAuditSummary(audit, sourceCommits) {
   console.log(`Unresolved review items: ${summary.needsReview}`);
   console.log(`Objectives located: ${summary.objectivesMatched}/${summary.objectivesTotal}`);
   console.log(`Headings located: ${summary.headingsMatched}/${summary.headingsTotal}`);
-  console.log(`Likely Try It prompt matches: ${summary.sourceTriesLikelyMatched}/${summary.sourceTriesTotal}`);
+  console.log(`Likely Try It prompt matches: ${formatTriesCoverage(summary.sourceTriesLikelyMatched, summary.sourceTriesTotal)}`);
   console.log(`Local interactions inventoried: ${summary.localInteractions}`);
   if (summary.changedUpstream) console.log(`Changed upstream modules: ${summary.changedUpstream}`);
   for (const book of audit.books) {
-    console.log(
-      `  ${book.book} (${book.bundle}, ${book.authoringStatus}): `
-      + `${book.mappedSections}/${book.upstreamSections} sections, ${book.localChapters}/${book.upstreamChapters} chapters`,
-    );
+    console.log(`  ${formatBookSummaryLine(book.book, book)}`);
   }
 
   const flagged = audit.sections.filter((section) => section.reviewFlags.length);

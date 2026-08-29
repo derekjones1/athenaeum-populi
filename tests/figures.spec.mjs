@@ -78,6 +78,47 @@ test('every spec-first figure on the site renders inside its viewBox', async ({ 
   }
 });
 
+test('every mediafigure image on every page renders without a broken img or console error', async ({ page }) => {
+  // The raster counterpart of the spec-first-figure gate above: mediafigure
+  // (layouts/shortcodes/mediafigure.html) is a vendored `<img>`, not an
+  // SVG the browser builds from a spec, so there is no viewBox geometry to
+  // check — but a broken vendored file, a wrong manifest path, or a
+  // component erroring out on the same page would surface identically here:
+  // an image that never completes loading, or a console error from a
+  // sibling component that failed nearby.
+  const routes = routesContaining('class=ap-mediafigure');
+  expect(routes.length, 'no built page carries class=ap-mediafigure — discovery or build is broken')
+    .toBeGreaterThan(0);
+
+  for (const route of routes) {
+    const errors = [];
+    const onConsole = (msg) => { if (msg.type() === 'error') errors.push(msg.text()); };
+    const onPageError = (error) => errors.push(String(error));
+    page.on('console', onConsole);
+    page.on('pageerror', onPageError);
+
+    await gotoBuiltPage(page, route);
+    const images = page.locator('.ap-mediafigure img');
+    const count = await images.count();
+    expect(count, `${route} matched discovery but has no mediafigure img`).toBeGreaterThan(0);
+
+    for (let i = 0; i < count; i += 1) {
+      const image = images.nth(i);
+      await image.scrollIntoViewIfNeeded();
+      await expect
+        .poll(async () => image.evaluate((img) => img.complete && img.naturalWidth > 0), {
+          timeout: 10_000,
+          message: `${route} image ${i} did not load`,
+        })
+        .toBe(true);
+    }
+
+    expect(errors, `console errors on ${route}`).toEqual([]);
+    page.off('console', onConsole);
+    page.off('pageerror', onPageError);
+  }
+});
+
 test('legacy pasted figures still render their SVG untouched', async ({ page }) => {
   // The conversion is per-page and gradual: a book page that still carries
   // prerendered <div class="ap-figure"> SVG must keep working unchanged.

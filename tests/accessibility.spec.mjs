@@ -33,6 +33,14 @@ const REPRESENTATIVE_PAGES = [
     path: '/math/intermediate-algebra/knowledge-check-01-06/',
   },
   {
+    name: 'text-in and self-check exercises with mediafigures',
+    path: '/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology/',
+  },
+  {
+    name: 'second biology section (text-in, self-check, mediafigures)',
+    path: '/life-health-sciences/biology/01-the-study-of-life/02-themes-and-concepts-of-biology/',
+  },
+  {
     name: '404 page',
     path: '/404.html',
     title: 'Page not found – Athenaeum Populi',
@@ -55,6 +63,8 @@ async function waitForPageReady(page) {
     const fillIns = [...document.querySelectorAll('fill-in')];
     const choices = [...document.querySelectorAll('multiple-choice')];
     const graphs = [...document.querySelectorAll('graph-plot')];
+    const textIns = [...document.querySelectorAll('text-in')];
+    const selfChecks = [...document.querySelectorAll('self-check')];
 
     const fillInsReady = fillIns.every((exercise) => {
       const field = exercise.querySelector('math-field');
@@ -93,7 +103,20 @@ async function waitForPageReady(page) {
       );
     });
 
-    return fillInsReady && choicesReady && graphsReady;
+    const textInsReady = textIns.every((exercise) => {
+      const check = exercise.querySelector('.ap-textin-check');
+      return customElements.get('text-in') && check && !check.disabled;
+    });
+
+    const selfChecksReady = selfChecks.every(
+      (exercise) =>
+        customElements.get('self-check') &&
+        [...exercise.querySelectorAll('.ap-selfcheck-mark')].every(
+          (mark) => !mark.disabled,
+        ),
+    );
+
+    return fillInsReady && choicesReady && graphsReady && textInsReady && selfChecksReady;
   });
 }
 
@@ -697,4 +720,82 @@ test('a graded fill-in has no serious or critical axe violations', async ({
     `Blocking axe violations on a graded fill-in (${currentTheme(testInfo)} theme):\n\n` +
       formatViolations(blocking),
   ).toBe(0);
+});
+
+test('a text-in input is named by its question and stays clean after a correct answer', async ({
+  page,
+}, testInfo) => {
+  // <text-in> has no speech serializer (its shortcode rejects `$` math
+  // entirely), so unlike <fill-in> there is no TeX to strip — but the same
+  // failure mode applies: a description of the box ("Your answer") is not a
+  // name, and grading must not strand focus on <body>.
+  const path =
+    '/life-health-sciences/biology/01-the-study-of-life/' +
+    '02-themes-and-concepts-of-biology/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  const card = page.locator('text-in[data-answer="homeostasis"]');
+  await expect(card).toHaveCount(1);
+  const question = await card.getAttribute('data-question');
+  const field = card.locator('.ap-textin-field');
+  await expect(field).toHaveAttribute('aria-label', question);
+  expect(question).not.toMatch(/\\[a-zA-Z]+|[{}$]/);
+
+  await field.click();
+  await field.fill('The Homoeostasis');
+  await card.getByRole('button', { name: /check/i }).click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 10_000 })
+    .toBe('correct');
+  expect(await card.evaluate((el) => document.activeElement !== document.body)).toBe(true);
+
+  const results = await new AxeBuilder({ page }).withTags(WCAG_TAGS).analyze();
+  const blocking = results.violations.filter((violation) =>
+    BLOCKING_IMPACTS.has(violation.impact),
+  );
+  expect(
+    blocking.length,
+    `Blocking axe violations on a graded text-in (${currentTheme(testInfo)} theme):\n\n` +
+      formatViolations(blocking),
+  ).toBe(0);
+});
+
+test('every mediafigure image has alt text, and a longdesc summary is keyboard-operable', async ({
+  page,
+}) => {
+  for (const path of [
+    '/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology/',
+    '/life-health-sciences/biology/01-the-study-of-life/02-themes-and-concepts-of-biology/',
+  ]) {
+    await page.goto(path, { waitUntil: 'domcontentloaded' });
+    await assertProductionBuild(page, path);
+    await waitForPageReady(page);
+
+    const images = page.locator('.ap-mediafigure img');
+    const count = await images.count();
+    expect(count, `${path} has no mediafigure images`).toBeGreaterThan(0);
+    const alts = await images.evaluateAll((imgs) => imgs.map((img) => img.getAttribute('alt')));
+    for (const alt of alts) {
+      expect(alt, `${path}: every mediafigure img needs non-empty alt`).toBeTruthy();
+      expect(alt.trim().length, `${path}: mediafigure alt must not be blank`).toBeGreaterThan(0);
+    }
+
+    const summaries = page.locator('details.ap-mediafigure-longdesc summary');
+    const summaryCount = await summaries.count();
+    expect(summaryCount, `${path} should carry at least one longdesc`).toBeGreaterThan(0);
+    for (let i = 0; i < summaryCount; i += 1) {
+      const summary = summaries.nth(i);
+      const details = page.locator('details.ap-mediafigure-longdesc').nth(i);
+      await expect(details).not.toHaveAttribute('open', '');
+      await summary.focus();
+      await page.keyboard.press('Enter');
+      await expect(details).toHaveAttribute('open', '');
+      // And the reverse, proving the control is a real toggle rather than an
+      // Enter-only one-shot reveal.
+      await page.keyboard.press('Enter');
+      await expect(details).not.toHaveAttribute('open', '');
+    }
+  }
 });

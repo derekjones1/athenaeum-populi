@@ -681,6 +681,191 @@ test('a correct Enter-key submission keeps focus inside the exercise', async ({ 
   expect(await card.evaluate((el) => el.contains(document.activeElement))).toBe(true);
 });
 
+/**
+ * <text-in> and <self-check> — the Biology books' word-answer and
+ * free-response components. Neither uses MathLive or the lazy engine bundle
+ * (both ship in the eager `components.js` bundle alongside multiple-choice),
+ * so `waitForUpgrade` only needs to wait on `customElements.define`, not a
+ * lazy import.
+ */
+
+test('a text-in grades wrong then right, and an Enter-key submission focuses the feedback', async ({ page }) => {
+  await gotoBuiltPage(
+    page,
+    '/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology/',
+  );
+
+  const card = page.locator('text-in[data-answer="deductive"]');
+  await expect(card).toHaveCount(1);
+  await waitForUpgrade(card, (el) => (
+    Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check'))
+  ));
+  await card.scrollIntoViewIfNeeded();
+
+  const field = card.locator('.ap-textin-field');
+  await field.click();
+  await field.fill('ribozyme');
+  await card.getByRole('button', { name: /check/i }).click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('incorrect');
+  await expect(card.locator('.ap-textin-feedback')).toHaveText(/^Not quite/);
+
+  // Submitted through the field's own Enter key, not the Check button — the
+  // path <fill-in>'s equivalent test exists to guard, and nothing here had
+  // covered for <text-in>.
+  await field.fill('deductive');
+  await field.press('Enter');
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('correct');
+  await expect(card.locator('.ap-textin-feedback')).toHaveText(/^Correct/);
+  expect(await field.evaluate((el) => el.readOnly)).toBe(true);
+  await expect(card.locator('.ap-textin-check')).toBeDisabled();
+  expect(
+    await card.evaluate((el) => document.activeElement === el.querySelector('.ap-textin-feedback')),
+  ).toBe(true);
+});
+
+test('a text-in accepts its alternate spelling and ignores case and a leading article', async ({ page }) => {
+  await gotoBuiltPage(
+    page,
+    '/life-health-sciences/biology/01-the-study-of-life/' +
+      '02-themes-and-concepts-of-biology/',
+  );
+
+  // "…is called ________." keyed "homeostasis", accepting "homoeostasis".
+  const card = page.locator('text-in[data-answer="homeostasis"]');
+  await expect(card).toHaveCount(1);
+  await waitForUpgrade(card, (el) => (
+    Boolean(customElements.get('text-in')) && Boolean(el.querySelector('.ap-textin-check'))
+  ));
+  await card.scrollIntoViewIfNeeded();
+
+  const field = card.locator('.ap-textin-field');
+  await field.click();
+  await field.fill('The Homoeostasis');
+  await card.getByRole('button', { name: /check/i }).click();
+  await expect
+    .poll(async () => card.evaluate((el) => el.status), { timeout: 5000 })
+    .toBe('correct');
+  await expect(card.locator('.ap-textin-feedback')).toHaveText(/^Correct/);
+});
+
+test('self-check marks enable on upgrade, and rating swaps status and aria-pressed', async ({ page }) => {
+  await gotoBuiltPage(
+    page,
+    '/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology/',
+  );
+
+  const card = page.locator('self-check').first();
+  await waitForUpgrade(card, (el) => (
+    Boolean(customElements.get('self-check'))
+    && [...el.querySelectorAll('.ap-selfcheck-mark')].every((button) => !button.disabled)
+  ));
+  await card.scrollIntoViewIfNeeded();
+
+  const understood = card.locator('.ap-selfcheck-mark[data-verdict="understood"]');
+  const review = card.locator('.ap-selfcheck-mark[data-verdict="review"]');
+  await expect(understood).toBeEnabled();
+  await expect(review).toBeEnabled();
+
+  await understood.click();
+  await expect(card.locator('.ap-selfcheck-feedback')).toHaveText('Marked as understood.');
+  await expect(understood).toHaveAttribute('aria-pressed', 'true');
+  await expect(review).toHaveAttribute('aria-pressed', 'false');
+
+  await review.click();
+  await expect(card.locator('.ap-selfcheck-feedback')).toHaveText(/^Marked for review/);
+  await expect(review).toHaveAttribute('aria-pressed', 'true');
+  await expect(understood).toHaveAttribute('aria-pressed', 'false');
+
+  // The model answer is a native <details>, unaffected by rating clicks.
+  const details = card.locator('details.ap-selfcheck-answer');
+  await expect(details).not.toHaveAttribute('open', '');
+  await card.locator('.ap-selfcheck-answer summary').click();
+  await expect(details).toHaveAttribute('open', '');
+});
+
+test('with JavaScript off, text-in shows its notice and self-check keeps its native disabled/details behavior', async ({ browser }) => {
+  // The <fill-in>/<graph-plot> honesty test's counterpart for the two new
+  // components: what a no-JS reader actually meets (a notice standing in for
+  // <text-in>'s input) versus what stays usable without any component
+  // upgrading at all (self-check's server-rendered <details>).
+  const route =
+    '/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology/';
+  const context = await browser.newContext({ javaScriptEnabled: false });
+  try {
+    const page = await context.newPage();
+    await gotoBuiltPage(page, route);
+
+    const textInCount = await page.locator('text-in').count();
+    const selfCheckCount = await page.locator('self-check').count();
+    expect(textInCount).toBeGreaterThan(0);
+    expect(selfCheckCount).toBeGreaterThan(0);
+
+    const notices = page.locator('text-in .ap-noscript-notice');
+    await expect(notices).toHaveCount(textInCount);
+    await expect(notices.first()).toBeVisible();
+    await expect(page.locator('.ap-textin-field')).toHaveCount(0);
+
+    const marks = page.locator('.ap-selfcheck-mark');
+    expect(await marks.count()).toBeGreaterThan(0);
+    for (const disabled of await marks.evaluateAll((buttons) => buttons.map((b) => b.disabled))) {
+      expect(disabled).toBe(true);
+    }
+
+    const details = page.locator('details.ap-selfcheck-answer').first();
+    await expect(details).not.toHaveAttribute('open', '');
+    await page.locator('.ap-selfcheck-answer summary').first().click();
+    await expect(details).toHaveAttribute('open', '');
+  } finally {
+    await context.close();
+  }
+});
+
+test('every mediafigure image on both biology sections loads from its vendored media path', async ({ page }) => {
+  const errors = [];
+  const onConsole = (msg) => { if (msg.type() === 'error') errors.push(msg.text()); };
+  page.on('console', onConsole);
+
+  for (const route of [
+    '/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology/',
+    '/life-health-sciences/biology/01-the-study-of-life/02-themes-and-concepts-of-biology/',
+  ]) {
+    await gotoBuiltPage(page, route);
+    const images = page.locator('.ap-mediafigure img');
+    const count = await images.count();
+    expect(count, `${route} has no mediafigure images`).toBeGreaterThan(0);
+
+    for (let i = 0; i < count; i += 1) {
+      const image = images.nth(i);
+      await image.scrollIntoViewIfNeeded();
+      await expect
+        .poll(async () => image.evaluate((img) => img.complete && img.naturalWidth > 0), {
+          timeout: 10_000,
+        })
+        .toBe(true);
+      const attrs = await image.evaluate((img) => ({
+        width: img.getAttribute('width'),
+        height: img.getAttribute('height'),
+        alt: img.getAttribute('alt'),
+        decoding: img.getAttribute('decoding'),
+        currentSrc: img.currentSrc,
+      }));
+      expect(attrs.width, `${route} image ${i} missing width`).toBeTruthy();
+      expect(attrs.height, `${route} image ${i} missing height`).toBeTruthy();
+      expect(attrs.alt, `${route} image ${i} missing alt`).toBeTruthy();
+      expect(attrs.decoding, `${route} image ${i} missing decoding`).toBe('async');
+      expect(attrs.currentSrc, `${route} image ${i} not served from /media/biology/`)
+        .toMatch(/\/media\/biology\//);
+    }
+  }
+
+  page.off('console', onConsole);
+  expect(errors, 'console errors while loading mediafigures').toEqual([]);
+});
+
 test('every rail and sidebar carries a contact mailto whose subject names the page', async ({ page }) => {
   // utils/contact-mailto.html: the "Questions or concerns?" link renders in
   // the right rail (toc.html, xl+) and twice in the sidebar (sidebar.html:

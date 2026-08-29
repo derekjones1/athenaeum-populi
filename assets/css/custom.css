@@ -352,3 +352,135 @@ multiple-choice:not(:defined) .ap-mc-option {
     display: none !important;
   }
 }
+
+/* --- <text-in> ------------------------------------------------------------
+   Short text answers (a term, a name). Same card as .ap-fillin; the field is a
+   plain <input>, so there is no MathLive placeholder part to style. */
+.ap-textin {
+  border: 1px solid var(--ap-border, #d6d3cd);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  max-width: 560px;
+}
+.ap-textin-question { display: block; font-size: 16px; margin: 0 0 12px; }
+.ap-textin-row { display: flex; gap: 8px; align-items: stretch; }
+.ap-textin-field {
+  flex: 1;
+  min-width: 0;
+  min-height: 42px;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 17px;
+  padding: 6px 10px;
+  border: 1px solid var(--ap-border, #d6d3cd);
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+}
+.ap-textin-field::placeholder { color: #6f6e69; opacity: 1; }
+.dark .ap-textin-field::placeholder { color: #b0afa6; }
+.ap-textin-field:read-only { opacity: 0.8; }
+.ap-textin-check {
+  font: inherit;
+  font-size: 15px;
+  padding: 6px 14px;
+  border: 1px solid var(--ap-border, #d6d3cd);
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+.ap-textin-check:disabled { cursor: default; opacity: 0.6; }
+.ap-textin-feedback { font-size: 15px; margin: 10px 0 0; min-height: 22px; }
+
+/* --- <self-check> --------------------------------------------------------- */
+.ap-selfcheck {
+  border: 1px solid var(--ap-border, #d6d3cd);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  max-width: 560px;
+}
+.ap-selfcheck-question { display: block; font-size: 16px; margin: 0 0 12px; }
+.ap-selfcheck-label { display: block; font-size: 13px; color: var(--ap-muted, #6f6e69); margin-bottom: 4px; }
+.ap-selfcheck-response {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 15px;
+  padding: 8px 10px;
+  border: 1px solid var(--ap-border, #d6d3cd);
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  resize: vertical;
+}
+.ap-selfcheck-answer { margin: 12px 0 0; }
+.ap-selfcheck-answer > summary { cursor: pointer; font-size: 15px; padding: 4px 0; }
+.ap-selfcheck-model {
+  margin-top: 8px;
+  padding: 10px 14px;
+  border-left: 3px solid var(--ap-border, #d6d3cd);
+  font-size: 15px;
+}
+.ap-selfcheck-model > :first-child { margin-top: 0; }
+.ap-selfcheck-model > :last-child { margin-bottom: 0; }
+.ap-selfcheck-marks { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.ap-selfcheck-mark {
+  font: inherit;
+  font-size: 15px;
+  padding: 6px 14px;
+  border: 1px solid var(--ap-border, #d6d3cd);
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+.ap-selfcheck-mark:disabled { cursor: default; opacity: 0.55; }
+.ap-selfcheck-mark[aria-pressed="true"] { border-color: currentColor; font-weight: 600; }
+.ap-selfcheck-feedback { font-size: 15px; margin: 10px 0 0; min-height: 22px; }
+self-check:not(:defined) .ap-selfcheck-mark { pointer-events: none; opacity: 0.55; cursor: default; }
+
+/* --- mediafigure (vendored raster figures) ---------------------------------
+   Photos and diagrams from the source book, served from /media/<book>/. Never
+   upscaled: the width attribute is the largest vendored variant, and
+   max-width keeps a 430 px diagram at 430 px. Diagrams were drawn for white
+   paper, so the dark theme backs every image with a light plate rather than
+   inverting it — a micrograph inverted is a different micrograph. */
+.ap-mediafigure { margin: 1.5rem 0; }
+.ap-mediafigure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.dark .ap-mediafigure[data-kind="diagram"] img { background: #fff; padding: 4px; box-sizing: border-box; }
+.ap-mediafigure-caption {
+  font-size: 14px;
+  color: var(--ap-muted, #6f6e69);
+  margin: 8px auto 0;
+  max-width: 44rem;
+}
+.dark .ap-mediafigure-caption { color: #b0afa6; }
+.ap-mediafigure-caption > p { margin: 0; }
+.ap-mediafigure-longdesc { font-size: 14px; margin: 6px auto 0; max-width: 44rem; }
+.ap-mediafigure-longdesc > summary { cursor: pointer; }
+
+/* --- Figures and links inside a blue callout ------------------------------
+   Hextra's info callout is a `hx:bg-blue-100` (#dbeafe) box with no class of
+   its own. Two things fail AA on that tint that pass on the page ground:
+   the muted figure caption (#6f6e69 → 3.96:1) and the theme's own link
+   colour (#2769be → 4.47:1). The first Biology sections put a Career
+   Connection photo and a Link to Learning inside such callouts, which is
+   how the axe scan finally exercised the pairing. Captions inherit the
+   callout's dark-blue text; links take blue-800 (≈7.4:1). The dark-mode
+   callout is `bg-blue-900/30` over #111, where the existing light link and
+   caption tones already clear AA, so only the light ground is touched. */
+[class~="hx:bg-blue-100"] .ap-mediafigure-caption,
+.dark [class~="hx:bg-blue-100"] .ap-mediafigure-caption {
+  color: inherit;
+}
+html:not(.dark) .content [class~="hx:bg-blue-100"] a:not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  color: #1e40af;
+}

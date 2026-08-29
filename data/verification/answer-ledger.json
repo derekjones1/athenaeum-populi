@@ -1138,6 +1138,10 @@
   "09c503da8c138fa3": {
    "verdict": "ok"
   },
+  "09c6a8662a6b2c98": {
+   "verdict": "ok",
+   "note": "Review Question fs-id2575162: solution C = 'cell', matches option list (organ, organelle, cell, macromolecule)."
+  },
   "09d19f94553066ce": {
    "verdict": "ok"
   },
@@ -1180,6 +1184,10 @@
   },
   "0a05494a0431a996": {
    "verdict": "ok"
+  },
+  "0a066f7f3ac739c4": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2054588: model answer restates the source solution (fs-id1988804) as a full sentence, same ordered list of eight items."
   },
   "0a0b3d80d6d46e57": {
    "verdict": "ok"
@@ -5932,6 +5940,10 @@
   "367817655c931878": {
    "verdict": "ok"
   },
+  "3685807f40f6cb92": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1967739: solution D = 'at the branch tips', matches option list (at the base, within the branches, at the nodes, at the branch tips)."
+  },
   "368bf1899fd53f3f": {
    "verdict": "ok"
   },
@@ -9034,6 +9046,10 @@
   "54c4047a7d772a84": {
    "verdict": "ok"
   },
+  "54cf96b892db2b14": {
+   "verdict": "ok",
+   "note": "MC keyed 'peer review' matches CNXML exercise fs-id1694297 solution C in source option order (publication, public speaking, peer review, the scientific method); the 'Reporting Scientific Work' prose supports peer review uniquely for this description."
+  },
   "54d74deeb4356c8f": {
    "verdict": "ok"
   },
@@ -10920,6 +10936,10 @@
    "verdict": "ok",
    "note": "sin(11pi/12)=sin(pi-pi/12)=sin(pi/12)=(sqrt6-sqrt2)/4; Math.sin vs key agree to 1e-12."
   },
+  "675930dbf9603444": {
+   "verdict": "ok",
+   "note": "selfcheck; model answer (vaccines) reproduces CNXML exercise fs-id2273326 solution's own example and reasoning."
+  },
   "675e9e97ea042e87": {
    "verdict": "ok"
   },
@@ -11035,6 +11055,10 @@
   },
   "68572fb4a7ede265": {
    "verdict": "ok"
+  },
+  "68575cc2422c3b68": {
+   "verdict": "ok",
+   "note": "MC keyed 'microorganisms' matches CNXML exercise fs-id2197874 solution B in source option order (plants, microorganisms, birds, dinosaurs); no other option is defensible."
   },
   "685cd3bd97123c81": {
    "verdict": "ok"
@@ -11696,6 +11720,10 @@
   "6e76057d0ffa7622": {
    "verdict": "ok"
   },
+  "6e7e16a900fc3c8e": {
+   "verdict": "ok",
+   "note": "MC keyed 'inductive reasoning' matches CNXML exercise fs-id2739507 solution A in source option order (inductive reasoning, deductive reasoning, neither..., both...); a single observation-to-conclusion pattern with no tested hypothesis is inductive, not deductive."
+  },
   "6e7f6da2587ef7a6": {
    "verdict": "ok"
   },
@@ -11727,6 +11755,10 @@
   },
   "6ec1be200fe64970": {
    "verdict": "ok"
+  },
+  "6ec42ecdc38ab8fc": {
+   "verdict": "ok",
+   "note": "Review Question fs-id3095300: solution A. Section text states viruses 'are not made of cells'; it separately states viruses CAN reproduce (by hijacking a host cell), so option D is not also true."
   },
   "6ecb83a0844b96dc": {
    "verdict": "ok"
@@ -11774,6 +11806,10 @@
   },
   "6f3cc9907cced848": {
    "verdict": "ok"
+  },
+  "6f46707f15968b67": {
+   "verdict": "ok",
+   "note": "selfcheck; model answer reproduces CNXML exercise fs-id2062496 solution (disease effects on the body, pollution on habitat, plant response to environment inside biology; metamorphic rock formation and planetary orbits outside it)."
   },
   "6f4b2b61c74c103c": {
    "verdict": "ok"
@@ -12752,6 +12788,10 @@
   "796d5657f75323e9": {
    "verdict": "ok"
   },
+  "7971be77953d9526": {
+   "verdict": "ok",
+   "note": "Visual Connection (fs-id1690230/fs-id1429210): keyed false statement 'Communities exist within populations which exist within ecosystems' reverses the actual containment (populations exist within communities); the other three options each state a true containment per the section text and the flow-chart figure."
+  },
   "7979123eafd2b017": {
    "verdict": "ok"
   },
@@ -13581,6 +13621,10 @@
   "80bdbd83e7a72a54": {
    "verdict": "ok"
   },
+  "80c435658e178ba6": {
+   "verdict": "ok",
+   "note": "Glossary recall, term-00019/fs-id2989543 'biochemistry'. Locally authored recall item; meaning matches the glossary definition exactly."
+  },
   "80d34149a07a03a2": {
    "verdict": "ok"
   },
@@ -13727,6 +13771,10 @@
   },
   "821b528a007d1efb": {
    "verdict": "ok"
+  },
+  "821b638020e95c07": {
+   "verdict": "ok",
+   "note": "Glossary recall, term 'phylogenetic tree' (fs-id1251488). Locally authored recall item; meaning paraphrases the glossary definition without naming the term."
   },
   "8222c2c3d8cf1d87": {
    "verdict": "ok"
@@ -13898,6 +13946,10 @@
   },
   "8386761f83400637": {
    "verdict": "ok"
+  },
+  "838f5e4cb8d9ea0d": {
+   "verdict": "ok",
+   "note": "MC keyed 'inductive reasoning' matches CNXML exercise fs-id1967894 solution D in source option order (deductive reasoning, the scientific method, hypothesis-based science, inductive reasoning); matches the section's own definition of inductive reasoning."
   },
   "83948ef0d81dfe62": {
    "verdict": "ok"
@@ -14547,6 +14599,10 @@
   },
   "896ecabbe0ad4d55": {
    "verdict": "ok"
+  },
+  "8973ee88ebc63ed2": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1443260: solution B = 'eukaryotic cells', matches option list (prokaryotic cells, eukaryotic cells, living organisms, bacteria)."
   },
   "8973ff25c2b14691": {
    "verdict": "ok"
@@ -16429,6 +16485,10 @@
   "9c598d1be966433d": {
    "verdict": "ok"
   },
+  "9c663f149bdd5cac": {
+   "verdict": "ok",
+   "note": "Glossary recall, term-00022/fs-id1778556 'paleontology'. Locally authored recall item; meaning matches the glossary definition exactly; 'palaeontology' accepted as the British spelling."
+  },
   "9c67eba0f2333cf9": {
    "verdict": "ok"
   },
@@ -17300,6 +17360,10 @@
   "a55667e6c319b1c7": {
    "verdict": "ok"
   },
+  "a5626c910155d674": {
+   "verdict": "ok",
+   "note": "Review Question fs-id2169252: solution D = 'biosphere, ecosystem, community, population, organism', matches option list verbatim."
+  },
   "a56948064a256154": {
    "verdict": "ok"
   },
@@ -17929,6 +17993,10 @@
   },
   "aae49f1ceb737a81": {
    "verdict": "ok"
+  },
+  "aae6dd92c40aaadf": {
+   "verdict": "ok",
+   "note": "parent re-read after adding accept=\"homoeostasis\" (checker 1.2 defect 2): prompt is the glossary meaning of homeostasis verbatim; answer not printed in the prompt; British spelling now accepted"
   },
   "aae914b2d3c67455": {
    "verdict": "ok"
@@ -18645,6 +18713,10 @@
    "verdict": "ok",
    "note": "fs-id2796242 (CNXML solution: sin x). sin(x)cos(x)sec(x) = sin(x)cos(x)/cos(x) = sin x; confirmed numerically at x=1 (0.8414709848078965 both sides)."
   },
+  "b1a05d357ff90b9e": {
+   "verdict": "ok",
+   "note": "MC keyed 'computer science' matches CNXML exercise fs-id1512007 solution D in source option order (biology, astronomy, physics, computer science); section text supports the other three as natural sciences."
+  },
   "b1a21712d21fc007": {
    "verdict": "ok"
   },
@@ -18820,6 +18892,10 @@
   },
   "b3806182cd1942b1": {
    "verdict": "ok"
+  },
+  "b38c4ff563e71c03": {
+   "verdict": "ok",
+   "note": "selfcheck; model answer reproduces CNXML exercise fs-id2862427 solution verbatim (evolutionary purpose of cancer / preventing cellular reproduction)."
   },
   "b395cb82eaba3fb1": {
    "verdict": "ok"
@@ -19070,6 +19146,10 @@
   },
   "b5cf48b3148926c6": {
    "verdict": "ok"
+  },
+  "b5d10d1a4dddd002": {
+   "verdict": "ok",
+   "note": "selfcheck; model answer (dead car battery example) reproduces CNXML exercise fs-id2171449 solution's own worked example and reasoning."
   },
   "b5eb61f158da0516": {
    "verdict": "ok",
@@ -19567,6 +19647,10 @@
   "ba835b71cd023ad8": {
    "verdict": "ok",
    "note": "|A|=1/2=0.5 for (1/2)cos(x/3-pi/3) (Try It 5 amplitude part, matches CNXML ti_06_01_05)."
+  },
+  "ba8759d4a9949695": {
+   "verdict": "ok",
+   "note": "textin glossary recall; prompt paraphrases the single glossary term 'deductive reasoning' meaning ('form of logical thinking that uses a general inclusive statement to predict specific results') without printing the answer; accept covers the two-word form."
   },
   "ba8924d193f18640": {
    "verdict": "ok"
@@ -21024,6 +21108,10 @@
    "verdict": "ok",
    "note": "1+29e^(-.62t)=4/3 -> t=ln87/.62=7.203 -> 7.2; key p1316 #65"
   },
+  "c7e4ab72dac7dae0": {
+   "verdict": "ok",
+   "note": "selfcheck matching-table item; model answer matches CNXML exercise fs-id1889238 solution '1: C; 2: F; 3: A; 4: B; 5: D; 6: E ... original hypothesis is incorrect ...' verbatim mapping and conclusion."
+  },
   "c7e5e5befcdd0d0d": {
    "verdict": "ok"
   },
@@ -21471,6 +21559,10 @@
   "cc51a83eb429c29f": {
    "verdict": "ok",
    "note": "Computed Math.log10(0.001)=-3 exactly (10^-3=0.001); matches CNXML Section Exercise 47 (fs-id1165137755960)."
+  },
+  "cc52f6e0cec5e95e": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2750556: model answer is the source solution (fs-id1571225) verbatim."
   },
   "cc60b49b55b07303": {
    "verdict": "ok"
@@ -23474,6 +23566,10 @@
   "e1eeb86e25f2a5b7": {
    "verdict": "ok"
   },
+  "e1f1b5800a9bc2b5": {
+   "verdict": "ok",
+   "note": "parent re-read after adding accept=\"applied sciences\" (checker 1.1 concern): prompt is the glossary meaning of applied science; answer not printed in the prompt"
+  },
   "e1f322eebe795534": {
    "verdict": "ok",
    "note": "a is the value printed under the limit symbol; independently confirmed a=5 for lim_{x->5}(2x^2-4)=46."
@@ -23563,6 +23659,10 @@
   },
   "e2be21bacab80ea0": {
    "verdict": "ok"
+  },
+  "e2da6f4a8b4a91bf": {
+   "verdict": "ok",
+   "note": "Review Question fs-id2196908: solution C = 'population', matches option list (family, community, population, ecosystem)."
   },
   "e2e7a399359cc619": {
    "verdict": "ok"
@@ -24802,6 +24902,10 @@
    "verdict": "ok",
    "note": "The number line runs 3.0 to 4.0 in tenths; the marked point at pixel x=84 is 1 tick (0.1) to the right of 3.0, i.e. 3.1, matching the declared answer."
   },
+  "eec9aa84b815ac1d": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2583878: model answer is the source solution (fs-id2163953) verbatim."
+  },
   "eeca4381ce688cd4": {
    "verdict": "ok"
   },
@@ -25755,6 +25859,10 @@
   "f84f468eec256853": {
    "verdict": "ok"
   },
+  "f8514d466b4e2d09": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2106026: model answer is the source solution (fs-id2162573) verbatim."
+  },
   "f8536ea2c35c97a0": {
    "verdict": "ok"
   },
@@ -25996,6 +26104,10 @@
   "fa7ca1c7c3f2a837": {
    "verdict": "ok"
   },
+  "fa85feb2d6795f7f": {
+   "verdict": "ok",
+   "note": "selfcheck inductive/deductive classification item; model answer matches CNXML exercise fs-id1595691 solution '1: inductive; 2: deductive; 3: deductive; 4: inductive.'"
+  },
   "fa878f7c3c302afd": {
    "verdict": "ok"
   },
@@ -26167,6 +26279,10 @@
   "fc454c5ae2c4acf8": {
    "verdict": "ok",
    "note": "Try It 1 (side only, mixed-unit adaptation): a=Math.sqrt(12**2+24**2-2*12*24*Math.cos(30*Math.PI/180)) = 14.8718 -> 14.9; single-step, no rounding chain."
+  },
+  "fc45ddae41196a88": {
+   "verdict": "ok",
+   "note": "MC keyed 'hypothesis' matches CNXML exercise fs-id1260889 solution A in source option order (hypothesis, variable, theory, control); the section's own definition of hypothesis supports it uniquely."
   },
   "fc557f68cce7792d": {
    "verdict": "ok"

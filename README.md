@@ -36,15 +36,18 @@ index at `public/pagefind/`.
 
 ## Content work
 
-Follow [docs/authoring-playbook.md](docs/authoring-playbook.md) for sections and
-[docs/knowledge-check-playbook.md](docs/knowledge-check-playbook.md) for
-cumulative knowledge checks. Content lives under `content/` in the hierarchy
-Subject → Book → Chapter → Section.
+Follow [docs/authoring-playbook.md](docs/authoring-playbook.md) — the
+subject-neutral core — plus the subject playbook under
+[docs/subjects/](docs/subjects/) for the book (`math.md` or `biology.md`) for
+sections, and [docs/knowledge-check-playbook.md](docs/knowledge-check-playbook.md)
+for cumulative knowledge checks. Content lives under `content/` in the
+hierarchy Subject → Book → Chapter → Section.
 
 The completed OpenStax math books also have a pinned, report-only source
-reconciliation workflow. See
+reconciliation workflow, now shared by the pinned-but-`scaffolded` Biology 2e.
+See
 [docs/source/openstax-source-workflow.md](docs/source/openstax-source-workflow.md) before
-changing those books. `npm run source:verify` checks the committed 274-section
+changing those books. `npm run source:verify` checks the committed 276-section
 map offline; after `npm run source:fetch`, `npm run source:check` audits the
 local pages without rewriting them.
 

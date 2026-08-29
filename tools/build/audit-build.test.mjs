@@ -73,11 +73,28 @@ function prepare(body, extraFiles = [], { head = '', katexCss = validKatexCss } 
   }
 }
 
+// A directory that `prepare()` never creates (it wipes and rebuilds the
+// fixture root from scratch each call), so every test below gets an EMPTY
+// media-manifest set by default — never the repository's real data/media —
+// unless a test writes its own manifest here first.
+const mediaManifestDir = join(fixture, 'media-manifests');
+
 function audit() {
-  return spawnSync(process.execPath, ['tools/build/audit-build.mjs', fixture], {
+  return spawnSync(process.execPath, ['tools/build/audit-build.mjs', fixture, '--data-dir', mediaManifestDir], {
     cwd: new URL('../..', import.meta.url),
     encoding: 'utf8',
   });
+}
+
+function writeMediaManifest(book, figures) {
+  mkdirSync(mediaManifestDir, { recursive: true });
+  writeFileSync(join(mediaManifestDir, `${book}.json`), JSON.stringify({ schemaVersion: 1, book, figures }));
+}
+
+function writeMediaVariant(book, file, content = 'fixture') {
+  const path = join(fixture, 'media', book, file);
+  mkdirSync(dirname(path), { recursive: true });
+  writeFileSync(path, content);
 }
 
 try {
@@ -267,6 +284,57 @@ try {
     assert.match(result.stderr, new RegExp(expected), result.stderr);
   }
 
+  // ---- mediafigure: the one sanctioned file-backed image ------------------
+  // A vendored raster figure's own <img>, inside its own
+  // <figure class="ap-mediafigure">, naming a manifest variant with the full
+  // accessibility/layout contract, is the ONLY <img> this audit allows
+  // anywhere in main#content.
+  const mediaImg = (attrs) => `<figure class="ap-mediafigure"><img src="/media/biology/fig-1-400.webp" alt="A labeled diagram of a cell." width="400" height="300" decoding="async"${attrs}><figcaption>A cell diagram.</figcaption></figure>`;
+
+  prepare(mediaImg(''));
+  writeMediaManifest('biology', { 'fig-1': { variants: [{ width: 400, height: 300, file: 'fig-1-400.webp' }] } });
+  writeMediaVariant('biology', 'fig-1-400.webp');
+  const wellFormed = audit();
+  assert.equal(wellFormed.status, 0, `a well-formed mediafigure with a matching manifest and shipped variant should pass: ${wellFormed.stderr}`);
+
+  prepare('<img src="/media/biology/fig-1-400.webp" alt="A labeled diagram of a cell." width="400" height="300" decoding="async">');
+  writeMediaManifest('biology', { 'fig-1': { variants: [{ width: 400, height: 300, file: 'fig-1-400.webp' }] } });
+  writeMediaVariant('biology', 'fig-1-400.webp');
+  assert.match(
+    audit().stderr,
+    /file-backed content image markup/,
+    'an <img> outside a <figure class="ap-mediafigure"> is still a banned file-backed image, even when it names a real manifest variant',
+  );
+
+  prepare(mediaImg('').replace(' width="400"', ''));
+  writeMediaManifest('biology', { 'fig-1': { variants: [{ width: 400, height: 300, file: 'fig-1-400.webp' }] } });
+  writeMediaVariant('biology', 'fig-1-400.webp');
+  assert.match(
+    audit().stderr,
+    /mediafigure <img> is malformed/,
+    'a mediafigure <img> missing width must fail — no layout shift is part of the contract',
+  );
+
+  prepare(mediaImg(''));
+  writeMediaManifest('biology', { 'fig-1': { variants: [{ width: 400, height: 300, file: 'fig-1-400.webp' }] } });
+  writeMediaVariant('biology', 'fig-1-400.webp');
+  writeMediaVariant('biology', 'unlisted-extra.webp'); // built, but no manifest names it
+  assert.match(
+    audit().stderr,
+    /content image asset\(s\) remain/,
+    'a built /media/ file that no manifest variant names must still fail as an unexpected content image asset',
+  );
+
+  prepare(mediaImg(''));
+  writeMediaManifest('biology', { 'fig-1': { variants: [{ width: 400, height: 300, file: 'fig-1-400.webp' }] } });
+  // The manifest declares the variant, but it was never vendored into the
+  // build — a mediafigure page would reference a broken image on production.
+  assert.match(
+    audit().stderr,
+    /vendored media manifest variant file\(s\) missing from the build/,
+    'a manifest variant absent from the built output must fail as a floor',
+  );
+
   // ---- the duplicated-chrome budget, sabotaged ----------------------------
   // A gate that has never been seen to fail has not been tested. Each shape
   // below is a real duplication of navigation markup, and each must trip the
@@ -313,6 +381,7 @@ try {
   for (const [label, body] of [
     ['a fill-in with no notice', `${fillin(true)}${fillin(false)}`],
     ['a graph-plot with no notice', `${fillin(true)}<graph-plot><div><p>Q</p></div></graph-plot>`],
+    ['a text-in with no notice', `${fillin(true)}<text-in><div class="ap-textin"><p>Q</p></div></text-in>`],
     ['a duplicated notice', `${fillin(true)}<p class="ap-noscript-notice">Interactive practice requires JavaScript.</p>`],
   ]) {
     prepare(body);

@@ -68,6 +68,7 @@ import { execFile } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { walkMarkdown, mathSpans, shortcodes } from '../lib/content.mjs';
 import { checkAnswer, checkFormAsGraded } from '../../assets/js/lib/math/check-answer.mjs';
+import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 
 // file (repo-relative) + a question prefix that names ONE fillin + the exact
 // printed SPAN that coincides + why that coincidence is sound.
@@ -227,6 +228,20 @@ function replayFile(file) {
       else skipped['form-rejected span'] += 1;
     }
   }
+  // textin — the word grader (check-text.mjs). There is no per-span
+  // extraction to do: a text field is one short phrase, so the whole
+  // printed question IS the candidate a learner could retype, and each
+  // question counted here is one replayed span for the --min-replayed floor.
+  for (const sc of shortcodes(src, 'textin')) {
+    const q = sc.params.question || '';
+    const answer = sc.params.answer || '';
+    if (!q || !answer) continue;
+    if (checkText(q, answer, { accept: sc.params.accept }) === 'correct') {
+      const line = src.slice(0, sc.index).split('\n').length;
+      failures.push(`${rel}:${line} textin accepts its own printed question as the answer (answer=${JSON.stringify(answer)})`);
+    }
+    replayed += 1;
+  }
   return { replayed, failures, skipped };
 }
 
@@ -273,7 +288,7 @@ export function parseReplayArgs(argv) {
 }
 
 async function orchestrate({ root, minReplayed }) {
-  const files = walkMarkdown(`${root}/math`);
+  const files = walkMarkdown(root);
   const self = fileURLToPath(import.meta.url);
   const workers = Math.max(1, availableParallelism() - 1);
   const failures = [];

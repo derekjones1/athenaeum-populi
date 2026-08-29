@@ -41,7 +41,14 @@
 {{- with .Get "answerDisplay" -}}
   {{- errorf "multiplechoice does not support 'answerDisplay' — the chosen option is the answer (%s)" $.Position -}}
 {{- end -}}
-{{- .Page.Store.Set "hasMath" true -}}
+{{- /* mathtext.html has no .Page to reach the Store with, so this is the
+     only place that can flag a page as needing the math runtime for a
+     multiplechoice. Set it only when there is actually math to render —
+     the question, an option line, or the hint carries an unescaped `$` —
+     rather than unconditionally on every multiplechoice, math or not. */ -}}
+{{- if or (findRE `(^|[^\\])\$` $question) (findRE `(^|[^\\])\$` .Inner) (findRE `(^|[^\\])\$` (.Get "hint" | default "")) -}}
+  {{- .Page.Store.Set "hasMath" true -}}
+{{- end -}}
 {{- /* The question names the option group, so a screen-reader user browsing
      738 widgets hears WHICH question a group belongs to instead of the old
      generic "Answer choices". Interim name = question minus `$` delimiters
