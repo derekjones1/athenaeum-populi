@@ -142,14 +142,16 @@ source repositories are not copied into this Git repository.
 
 ## Checked-in audit snapshots
 
-The current audit state is the pair of generated reports committed beside
-this doc: the [existing-math audit](openstax-existing-math-audit.md) and the
-[upstream-history audit](openstax-upstream-history-audit.md). After a
-reviewed lock or decision change — and after authoring adds mapped sections —
-regenerate them exactly with:
+The current audit state is the generated reports committed beside this doc:
+the [existing-math audit](openstax-existing-math-audit.md) (the two math
+bundles), the [existing-biology audit](openstax-existing-biology-audit.md)
+(the biology bundle), and the [upstream-history audit](openstax-upstream-history-audit.md).
+After a reviewed lock or decision change — and after authoring adds mapped
+sections — regenerate them exactly with:
 
 ```sh
-npm run source:check -- --output docs/source/openstax-existing-math-audit.md
+npm run source:check -- --bundle prealgebra-bundle --bundle college-algebra-bundle --output docs/source/openstax-existing-math-audit.md
+npm run source:check -- --bundle biology-bundle --output docs/source/openstax-existing-biology-audit.md
 npm run source:history -- --output docs/source/openstax-upstream-history-audit.md
 ```
 

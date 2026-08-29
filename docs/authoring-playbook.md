@@ -565,6 +565,11 @@ From the repository root:
    or unlabelled SVGs — use the crops for the figure-vs-PDF comparison, and
    inspect curve tips and corners at zoom, where spline and stroke defects
    hide.
+   `node tools/build/screenshot-components.mjs <route>` crops every component
+   on the page in both themes, each driven into its reviewable state (a wrong
+   answer graded, a model answer revealed, an extended description opened) —
+   read those PNGs for every new exercise and figure; a full-page capture of a
+   long section is unreadable and never shows a component's graded state.
 8. Run `git diff --check` and report the changed/untracked files plus the
    source ledger and pages visually checked. Do not commit unless asked.
 

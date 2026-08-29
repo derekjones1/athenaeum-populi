@@ -234,6 +234,12 @@ Both entry points drive the installed Chrome through
 
 - `tools/build/screenshot-page.mjs` launches with `executablePath` pointing at the
   shim.
+- `tools/build/screenshot-components.mjs </route/> [outDir] [--only kind,kind]`
+  crops every fill-in, text-in, multiple-choice, self-check, graph-plot,
+  spec-first figure, mediafigure, and callout on a built page in both themes,
+  each driven into its reviewable state first (a wrong answer graded, a model
+  answer revealed, an extended description opened); the component-level
+  review the Biology pilot did by hand, one PNG per component per theme.
 - `playwright.config.mjs` sets the same `executablePath` in its shared
   `launchOptions`.
 

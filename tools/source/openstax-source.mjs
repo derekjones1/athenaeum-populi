@@ -270,7 +270,7 @@ function reportLink(output, localPath) {
 function formatMarkdown(audit, sourceCommits, output) {
   const { summary, sections, books } = audit;
   const lines = [
-    '# Existing Math ↔ OpenStax Source Audit',
+    '# Existing Content ↔ OpenStax Source Audit',
     '',
     '> This is a report-only triage artifact. “Metadata matched” means that the',
     '> local section maps to the expected module and its title, objectives, and',

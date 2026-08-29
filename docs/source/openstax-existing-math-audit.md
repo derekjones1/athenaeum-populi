@@ -1,4 +1,4 @@
-# Existing Math ↔ OpenStax Source Audit
+# Existing Content ↔ OpenStax Source Audit
 
 > This is a report-only triage artifact. “Metadata matched” means that the
 > local section maps to the expected module and its title, objectives, and
@@ -15,22 +15,22 @@
 ## Coverage
 
 - Books with mapped sections: 4
-- Numbered sections mapped: 233
-- Metadata matched without a flag: 226
+- Numbered sections mapped: 274
+- Metadata matched without a flag: 265
 - Intentional adaptations adjudicated: 7
-- Unresolved sections needing review: 0
+- Unresolved sections needing review: 2
 - Modules differing from the committed map: 0
-- Objectives automatically located: 874/876
-- Core instructional headings automatically located: 907/912
-- Local interactive questions inventoried: 6766
-- Upstream Try It prompts with a likely local prompt match: 3837/4576
+- Objectives automatically located: 1034/1038
+- Core instructional headings automatically located: 1108/1114
+- Local interactive questions inventoried: 7545
+- Upstream Try It prompts with a likely local prompt match: 3847/4580
 
 | Book | Bundle | Authoring status | Chapters | Sections mapped |
 |---|---|---|---:|---:|
 | elementary-algebra | `prealgebra-bundle` | complete | 10/10 | 71/71 |
 | intermediate-algebra | `prealgebra-bundle` | complete | 12/12 | 70/70 |
 | prealgebra | `prealgebra-bundle` | complete | 11/11 | 60/60 |
-| precalculus | `college-algebra-bundle` | scaffolded | 12/12 | 32/73 |
+| precalculus | `college-algebra-bundle` | complete | 12/12 | 73/73 |
 
 The prose percentage is five-word source-shingle traceability, not a quality
 score. Low values can reflect disclosed condensation, reformatted mathematics,
@@ -40,239 +40,296 @@ or intentionally omitted print material.
 
 | Local section | Module | Status | Objectives | Headings | Prose trace | Try Its likely | Local interactions |
 |---|---|---|---:|---:|---:|---:|---:|
-| [elementary-algebra 1.1](../content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md) | `m82452` | metadata matched | 3/3 | 3/3 | 62% | 15/22 | 21 |
-| [elementary-algebra 1.2](../content/math/elementary-algebra/01-foundations/02-use-the-language-of-algebra.md) | `m82453` | metadata matched | 5/5 | 5/5 | 8% | 20/36 | 21 |
-| [elementary-algebra 1.3](../content/math/elementary-algebra/01-foundations/03-add-and-subtract-integers.md) | `m82454` | metadata matched | 4/4 | 4/4 | 37% | 23/32 | 44 |
-| [elementary-algebra 1.4](../content/math/elementary-algebra/01-foundations/04-multiply-and-divide-integers.md) | `m82455` | metadata matched | 6/6 | 6/6 | 60% | 30/36 | 46 |
-| [elementary-algebra 1.5](../content/math/elementary-algebra/01-foundations/05-visualize-fractions.md) | `m82456` | metadata matched | 6/6 | 6/6 | 56% | 26/26 | 38 |
-| [elementary-algebra 1.6](../content/math/elementary-algebra/01-foundations/06-add-and-subtract-fractions.md) | `m82457` | metadata matched | 4/4 | 4/4 | 44% | 28/28 | 36 |
-| [elementary-algebra 1.7](../content/math/elementary-algebra/01-foundations/07-decimals.md) | `m82458` | metadata matched | 5/5 | 5/5 | 57% | 30/34 | 46 |
-| [elementary-algebra 1.8](../content/math/elementary-algebra/01-foundations/08-the-real-numbers.md) | `m82459` | metadata matched | 4/4 | 4/4 | 70% | 22/28 | 44 |
-| [elementary-algebra 1.9](../content/math/elementary-algebra/01-foundations/09-properties-of-real-numbers.md) | `m82460` | metadata matched | 4/4 | 4/4 | 69% | 33/36 | 48 |
-| [elementary-algebra 1.10](../content/math/elementary-algebra/01-foundations/10-systems-of-measurement.md) | `m82461` | metadata matched | 6/6 | 6/6 | 66% | 30/30 | 43 |
-| [elementary-algebra 2.1](../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/01-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md) | `m82463` | metadata matched | 5/5 | 5/5 | 60% | 23/24 | 33 |
-| [elementary-algebra 2.2](../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/02-solve-equations-using-the-division-and-multiplication-properties-of-equality.md) | `m82464` | metadata matched | 4/4 | 4/4 | 50% | 28/28 | 36 |
-| [elementary-algebra 2.3](../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/03-solve-equations-with-variables-and-constants-on-both-sides.md) | `m82465` | metadata matched | 3/3 | 3/3 | 57% | 20/20 | 26 |
-| [elementary-algebra 2.4](../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/04-use-a-general-strategy-to-solve-linear-equations.md) | `m82467` | metadata matched | 2/2 | 2/2 | 56% | 22/22 | 27 |
-| [elementary-algebra 2.5](../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/05-solve-equations-with-fractions-or-decimals.md) | `m82468` | metadata matched | 2/2 | 2/2 | 38% | 20/20 | 25 |
-| [elementary-algebra 2.6](../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/06-solve-a-formula-for-a-specific-variable.md) | `m82469` | metadata matched | 2/2 | 2/2 | 62% | 14/16 | 19 |
-| [elementary-algebra 2.7](../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/07-solve-linear-inequalities.md) | `m82470` | metadata matched | 5/5 | 5/5 | 41% | 26/26 | 24 |
-| [elementary-algebra 3.1](../content/math/elementary-algebra/03-math-models/01-use-a-problem-solving-strategy.md) | `m82472` | metadata matched | 3/3 | 3/3 | 54% | 22/22 | 33 |
-| [elementary-algebra 3.2](../content/math/elementary-algebra/03-math-models/02-solve-percent-applications.md) | `m82473` | metadata matched | 5/5 | 5/5 | 67% | 28/28 | 42 |
-| [elementary-algebra 3.3](../content/math/elementary-algebra/03-math-models/03-solve-mixture-applications.md) | `m82475` | metadata matched | 4/4 | 3/3 | 29% | 14/16 | 19 |
-| [elementary-algebra 3.4](../content/math/elementary-algebra/03-math-models/04-solve-geometry-applications-triangles-rectangles-and-the-pythagorean-theorem.md) | `m82476` | metadata matched | 3/3 | 3/3 | 44% | 28/28 | 34 |
-| [elementary-algebra 3.5](../content/math/elementary-algebra/03-math-models/05-solve-uniform-motion-applications.md) | `m82477` | metadata matched | 1/1 | 1/1 | 52% | 10/10 | 15 |
-| [elementary-algebra 3.6](../content/math/elementary-algebra/03-math-models/06-solve-applications-with-linear-inequalities.md) | `m82478` | metadata matched | 1/1 | 1/1 | 67% | 12/12 | 17 |
-| [elementary-algebra 4.1](../content/math/elementary-algebra/04-graphs/01-use-the-rectangular-coordinate-system.md) | `m82480` | metadata matched | 4/4 | 4/4 | 71% | 16/18 | 22 |
-| [elementary-algebra 4.2](../content/math/elementary-algebra/04-graphs/02-graph-linear-equations-in-two-variables.md) | `m82481` | metadata matched | 3/3 | 3/3 | 47% | 15/18 | 22 |
-| [elementary-algebra 4.3](../content/math/elementary-algebra/04-graphs/03-graph-with-intercepts.md) | `m82482` | metadata matched | 3/3 | 3/3 | 74% | 11/12 | 20 |
-| [elementary-algebra 4.4](../content/math/elementary-algebra/04-graphs/04-understand-slope-of-a-line.md) | `m82483` | adapted-verified | 5/6 | 5/6 | 12% | 25/30 | 19 |
-| [elementary-algebra 4.5](../content/math/elementary-algebra/04-graphs/05-use-the-slope-intercept-form-of-an-equation-of-a-line.md) | `m82485` | metadata matched | 7/7 | 7/7 | 39% | 33/34 | 29 |
-| [elementary-algebra 4.6](../content/math/elementary-algebra/04-graphs/06-find-the-equation-of-a-line.md) | `m82486` | metadata matched | 5/5 | 5/5 | 21% | 24/24 | 17 |
-| [elementary-algebra 4.7](../content/math/elementary-algebra/04-graphs/07-graphs-of-linear-inequalities.md) | `m82488` | metadata matched | 3/3 | 3/3 | 19% | 13/14 | 14 |
-| [elementary-algebra 5.1](../content/math/elementary-algebra/05-systems-of-linear-equations/01-solve-systems-of-equations-by-graphing.md) | `m82490` | metadata matched | 4/4 | 4/4 | 20% | 22/24 | 16 |
-| [elementary-algebra 5.2](../content/math/elementary-algebra/05-systems-of-linear-equations/02-solving-systems-of-equations-by-substitution.md) | `m82494` | metadata matched | 2/2 | 2/2 | 33% | 22/24 | 17 |
-| [elementary-algebra 5.3](../content/math/elementary-algebra/05-systems-of-linear-equations/03-solve-systems-of-equations-by-elimination.md) | `m82495` | metadata matched | 3/3 | 3/3 | 14% | 18/20 | 14 |
-| [elementary-algebra 5.4](../content/math/elementary-algebra/05-systems-of-linear-equations/04-solve-applications-with-systems-of-equations.md) | `m82497` | metadata matched | 4/4 | 4/4 | 36% | 15/20 | 18 |
-| [elementary-algebra 5.5](../content/math/elementary-algebra/05-systems-of-linear-equations/05-solve-mixture-applications-with-systems-of-equations.md) | `m82498` | metadata matched | 2/2 | 2/2 | 27% | 9/12 | 11 |
-| [elementary-algebra 5.6](../content/math/elementary-algebra/05-systems-of-linear-equations/06-graphing-systems-of-linear-inequalities.md) | `m82499` | metadata matched | 3/3 | 3/3 | 14% | 11/16 | 14 |
-| [elementary-algebra 6.1](../content/math/elementary-algebra/06-polynomials/01-add-and-subtract-polynomials.md) | `m82501` | metadata matched | 5/5 | 5/5 | 36% | 16/30 | 34 |
-| [elementary-algebra 6.2](../content/math/elementary-algebra/06-polynomials/02-use-multiplication-properties-of-exponents.md) | `m82504` | metadata matched | 6/6 | 6/6 | 52% | 21/24 | 39 |
-| [elementary-algebra 6.3](../content/math/elementary-algebra/06-polynomials/03-multiply-polynomials.md) | `m82507` | metadata matched | 3/3 | 3/3 | 45% | 27/38 | 28 |
-| [elementary-algebra 6.4](../content/math/elementary-algebra/06-polynomials/04-special-products.md) | `m82508` | metadata matched | 3/3 | 3/3 | 47% | 22/24 | 39 |
-| [elementary-algebra 6.5](../content/math/elementary-algebra/06-polynomials/05-divide-monomials.md) | `m82509` | metadata matched | 5/5 | 5/5 | 35% | 30/36 | 41 |
-| [elementary-algebra 6.6](../content/math/elementary-algebra/06-polynomials/06-divide-polynomials.md) | `m82513` | metadata matched | 2/2 | 2/2 | 36% | 24/24 | 29 |
-| [elementary-algebra 6.7](../content/math/elementary-algebra/06-polynomials/07-integer-exponents-and-scientific-notation.md) | `m82514` | metadata matched | 5/5 | 5/5 | 35% | 35/37 | 47 |
-| [elementary-algebra 7.1](../content/math/elementary-algebra/07-factoring/01-greatest-common-factor-and-factor-by-grouping.md) | `m82564` | metadata matched | 3/3 | 3/3 | 48% | 31/32 | 41 |
-| [elementary-algebra 7.2](../content/math/elementary-algebra/07-factoring/02-factor-trinomials-of-the-form-x2-bx-c.md) | `m82566` | metadata matched | 2/2 | 2/2 | 60% | 24/24 | 26 |
-| [elementary-algebra 7.3](../content/math/elementary-algebra/07-factoring/03-factor-trinomials-of-the-form-ax2-bx-c.md) | `m82527` | metadata matched | 4/4 | 4/4 | 38% | 24/26 | 38 |
-| [elementary-algebra 7.4](../content/math/elementary-algebra/07-factoring/04-factor-special-products.md) | `m82528` | adapted-verified | 3/4 | 3/3 | 41% | 29/34 | 41 |
-| [elementary-algebra 7.5](../content/math/elementary-algebra/07-factoring/05-general-strategy-for-factoring-polynomials.md) | `m82529` | metadata matched | 1/1 | 1/1 | 13% | 16/20 | 17 |
-| [elementary-algebra 7.6](../content/math/elementary-algebra/07-factoring/06-quadratic-equations.md) | `m82530` | metadata matched | 3/3 | 3/3 | 44% | 20/28 | 25 |
-| [elementary-algebra 8.1](../content/math/elementary-algebra/08-rational-expressions-and-equations/01-simplify-rational-expressions.md) | `m82532` | metadata matched | 4/4 | 4/4 | 39% | 27/32 | 28 |
-| [elementary-algebra 8.2](../content/math/elementary-algebra/08-rational-expressions-and-equations/02-multiply-and-divide-rational-expressions.md) | `m82533` | metadata matched | 2/2 | 2/2 | 24% | 11/26 | 13 |
-| [elementary-algebra 8.3](../content/math/elementary-algebra/08-rational-expressions-and-equations/03-add-and-subtract-rational-expressions-with-a-common-denominator.md) | `m82534` | metadata matched | 3/3 | 3/3 | 36% | 6/16 | 12 |
-| [elementary-algebra 8.4](../content/math/elementary-algebra/08-rational-expressions-and-equations/04-add-and-subtract-rational-expressions-with-unlike-denominators.md) | `m82535` | metadata matched | 4/4 | 4/4 | 25% | 12/24 | 14 |
-| [elementary-algebra 8.5](../content/math/elementary-algebra/08-rational-expressions-and-equations/05-simplify-complex-rational-expressions.md) | `m82537` | metadata matched | 2/2 | 2/2 | 39% | 16/18 | 10 |
-| [elementary-algebra 8.6](../content/math/elementary-algebra/08-rational-expressions-and-equations/06-solve-rational-equations.md) | `m82538` | metadata matched | 2/2 | 2/2 | 38% | 20/24 | 11 |
-| [elementary-algebra 8.7](../content/math/elementary-algebra/08-rational-expressions-and-equations/07-solve-proportion-and-similar-figure-applications.md) | `m82539` | metadata matched | 2/2 | 2/2 | 31% | 10/20 | 14 |
-| [elementary-algebra 8.8](../content/math/elementary-algebra/08-rational-expressions-and-equations/08-solve-uniform-motion-and-work-applications.md) | `m82543` | metadata matched | 2/2 | 2/2 | 22% | 0/10 | 12 |
-| [elementary-algebra 8.9](../content/math/elementary-algebra/08-rational-expressions-and-equations/09-use-direct-and-inverse-variation.md) | `m82560` | metadata matched | 2/2 | 2/2 | 58% | 4/14 | 7 |
-| [elementary-algebra 9.1](../content/math/elementary-algebra/09-roots-and-radicals/01-simplify-and-use-square-roots.md) | `m82545` | metadata matched | 4/4 | 4/4 | 28% | 7/22 | 24 |
-| [elementary-algebra 9.2](../content/math/elementary-algebra/09-roots-and-radicals/02-simplify-square-roots.md) | `m82546` | metadata matched | 2/2 | 2/2 | 49% | 10/34 | 18 |
-| [elementary-algebra 9.3](../content/math/elementary-algebra/09-roots-and-radicals/03-add-and-subtract-square-roots.md) | `m82547` | metadata matched | 2/2 | 2/2 | 26% | 9/30 | 13 |
-| [elementary-algebra 9.4](../content/math/elementary-algebra/09-roots-and-radicals/04-multiply-square-roots.md) | `m82548` | metadata matched | 2/2 | 2/2 | 42% | 21/32 | 19 |
-| [elementary-algebra 9.5](../content/math/elementary-algebra/09-roots-and-radicals/05-divide-square-roots.md) | `m82550` | metadata matched | 3/3 | 3/3 | 56% | 27/28 | 36 |
-| [elementary-algebra 9.6](../content/math/elementary-algebra/09-roots-and-radicals/06-solve-equations-with-square-roots.md) | `m82551` | metadata matched | 2/2 | 2/2 | 19% | 10/18 | 16 |
-| [elementary-algebra 9.7](../content/math/elementary-algebra/09-roots-and-radicals/07-higher-roots.md) | `m82552` | metadata matched | 4/4 | 4/4 | 10% | 28/30 | 31 |
-| [elementary-algebra 9.8](../content/math/elementary-algebra/09-roots-and-radicals/08-rational-exponents.md) | `m82553` | metadata matched | 3/3 | 3/3 | 40% | 28/30 | 29 |
-| [elementary-algebra 10.1](../content/math/elementary-algebra/10-quadratic-equations/01-solve-quadratic-equations-using-the-square-root-property.md) | `m82555` | metadata matched | 2/2 | 2/2 | 28% | 8/26 | 13 |
-| [elementary-algebra 10.2](../content/math/elementary-algebra/10-quadratic-equations/02-solve-quadratic-equations-by-completing-the-square.md) | `m82556` | metadata matched | 3/3 | 3/3 | 56% | 28/28 | 12 |
-| [elementary-algebra 10.3](../content/math/elementary-algebra/10-quadratic-equations/03-solve-quadratic-equations-using-the-quadratic-formula.md) | `m82557` | metadata matched | 3/3 | 2/2 | 23% | 4/4 | 20 |
-| [elementary-algebra 10.4](../content/math/elementary-algebra/10-quadratic-equations/04-solve-applications-modeled-by-quadratic-equations.md) | `m82558` | metadata matched | 1/1 | 1/1 | 78% | 10/10 | 15 |
-| [elementary-algebra 10.5](../content/math/elementary-algebra/10-quadratic-equations/05-graphing-quadratic-equations-in-two-variables.md) | `m82559` | metadata matched | 5/5 | 5/5 | 55% | 23/24 | 27 |
-| [intermediate-algebra 1.1](../content/math/intermediate-algebra/01-foundations/01-use-the-language-of-algebra.md) | `m81422` | metadata matched | 6/6 | 6/6 | 79% | 22/22 | 40 |
-| [intermediate-algebra 1.2](../content/math/intermediate-algebra/01-foundations/02-integers.md) | `m81423` | metadata matched | 7/7 | 7/7 | 71% | 17/24 | 50 |
-| [intermediate-algebra 1.3](../content/math/intermediate-algebra/01-foundations/03-fractions.md) | `m81359` | metadata matched | 5/5 | 5/5 | 65% | 20/20 | 31 |
-| [intermediate-algebra 1.4](../content/math/intermediate-algebra/01-foundations/04-decimals.md) | `m81425` | metadata matched | 7/7 | 7/7 | 69% | 16/22 | 47 |
-| [intermediate-algebra 1.5](../content/math/intermediate-algebra/01-foundations/05-properties-of-real-numbers.md) | `m81360` | metadata matched | 3/3 | 3/3 | 67% | 24/24 | 32 |
-| [intermediate-algebra 2.1](../content/math/intermediate-algebra/02-solving-linear-equations/01-use-a-general-strategy-to-solve-linear-equations.md) | `m81362` | metadata matched | 3/3 | 3/3 | 67% | 26/26 | 37 |
-| [intermediate-algebra 2.2](../content/math/intermediate-algebra/02-solving-linear-equations/02-use-a-problem-solving-strategy.md) | `m81363` | metadata matched | 4/4 | 4/4 | 72% | 28/28 | 42 |
-| [intermediate-algebra 2.3](../content/math/intermediate-algebra/02-solving-linear-equations/03-solve-a-formula-for-a-specific-variable.md) | `m81364` | metadata matched | 2/2 | 2/2 | 68% | 22/22 | 30 |
-| [intermediate-algebra 2.4](../content/math/intermediate-algebra/02-solving-linear-equations/04-solve-mixture-and-uniform-motion-applications.md) | `m81365` | metadata matched | 4/4 | 4/4 | 76% | 18/18 | 31 |
-| [intermediate-algebra 2.5](../content/math/intermediate-algebra/02-solving-linear-equations/05-solve-linear-inequalities.md) | `m81366` | metadata matched | 4/4 | 4/4 | 59% | 23/26 | 32 |
-| [intermediate-algebra 2.6](../content/math/intermediate-algebra/02-solving-linear-equations/06-solve-compound-inequalities.md) | `m81367` | metadata matched | 3/3 | 3/3 | 31% | 14/14 | 11 |
-| [intermediate-algebra 2.7](../content/math/intermediate-algebra/02-solving-linear-equations/07-solve-absolute-value-inequalities.md) | `m81426` | metadata matched | 4/4 | 4/4 | 55% | 14/20 | 16 |
-| [intermediate-algebra 3.1](../content/math/intermediate-algebra/03-graphs-and-functions/01-graph-linear-equations-in-two-variables.md) | `m81369` | metadata matched | 5/5 | 5/5 | 79% | 20/22 | 21 |
-| [intermediate-algebra 3.2](../content/math/intermediate-algebra/03-graphs-and-functions/02-slope-of-a-line.md) | `m81370` | metadata matched | 6/6 | 6/6 | 46% | 23/24 | 32 |
-| [intermediate-algebra 3.3](../content/math/intermediate-algebra/03-graphs-and-functions/03-find-the-equation-of-a-line.md) | `m81371` | metadata matched | 5/5 | 5/5 | 79% | 20/20 | 30 |
-| [intermediate-algebra 3.4](../content/math/intermediate-algebra/03-graphs-and-functions/04-graph-linear-inequalities-in-two-variables.md) | `m81372` | metadata matched | 4/4 | 4/4 | 53% | 13/16 | 30 |
-| [intermediate-algebra 3.5](../content/math/intermediate-algebra/03-graphs-and-functions/05-relations-and-functions.md) | `m81373` | metadata matched | 3/3 | 3/3 | 81% | 16/18 | 34 |
-| [intermediate-algebra 3.6](../content/math/intermediate-algebra/03-graphs-and-functions/06-graphs-of-functions.md) | `m81374` | metadata matched | 3/3 | 3/3 | 81% | 18/18 | 33 |
-| [intermediate-algebra 4.1](../content/math/intermediate-algebra/04-systems-of-linear-equations/01-solve-systems-of-linear-equations-with-two-variables.md) | `m81427` | metadata matched | 5/5 | 5/5 | 41% | 24/26 | 32 |
-| [intermediate-algebra 4.2](../content/math/intermediate-algebra/04-systems-of-linear-equations/02-solve-applications-with-systems-of-equations.md) | `m81380` | metadata matched | 3/3 | 3/3 | 35% | 15/20 | 25 |
-| [intermediate-algebra 4.3](../content/math/intermediate-algebra/04-systems-of-linear-equations/03-solve-mixture-applications-with-systems-of-equations.md) | `m81381` | metadata matched | 3/3 | 3/3 | 33% | 10/14 | 19 |
-| [intermediate-algebra 4.4](../content/math/intermediate-algebra/04-systems-of-linear-equations/04-solve-systems-of-equations-with-three-variables.md) | `m81428` | metadata matched | 3/3 | 3/3 | 43% | 12/12 | 16 |
-| [intermediate-algebra 4.5](../content/math/intermediate-algebra/04-systems-of-linear-equations/05-solve-systems-of-equations-using-matrices.md) | `m81429` | metadata matched | 3/3 | 3/3 | 58% | 13/16 | 18 |
-| [intermediate-algebra 4.6](../content/math/intermediate-algebra/04-systems-of-linear-equations/06-solve-systems-of-equations-using-determinants.md) | `m81431` | metadata matched | 4/4 | 4/4 | 59% | 15/16 | 30 |
-| [intermediate-algebra 4.7](../content/math/intermediate-algebra/04-systems-of-linear-equations/07-graphing-systems-of-linear-inequalities.md) | `m81432` | metadata matched | 3/3 | 3/3 | 42% | 12/16 | 20 |
-| [intermediate-algebra 5.1](../content/math/intermediate-algebra/05-polynomials-and-polynomial-functions/01-add-and-subtract-polynomials.md) | `m81383` | metadata matched | 4/4 | 4/4 | 55% | 15/22 | 36 |
-| [intermediate-algebra 5.2](../content/math/intermediate-algebra/05-polynomials-and-polynomial-functions/02-properties-of-exponents-and-scientific-notation.md) | `m81384` | metadata matched | 3/3 | 3/3 | 43% | 26/26 | 57 |
-| [intermediate-algebra 5.3](../content/math/intermediate-algebra/05-polynomials-and-polynomial-functions/03-multiply-polynomials.md) | `m81385` | metadata matched | 6/6 | 6/6 | 31% | 20/22 | 42 |
-| [intermediate-algebra 5.4](../content/math/intermediate-algebra/05-polynomials-and-polynomial-functions/04-dividing-polynomials.md) | `m81386` | metadata matched | 6/6 | 6/6 | 18% | 21/22 | 40 |
-| [intermediate-algebra 6.1](../content/math/intermediate-algebra/06-factoring/01-greatest-common-factor-and-factor-by-grouping.md) | `m81437` | metadata matched | 3/3 | 3/3 | 27% | 11/16 | 25 |
-| [intermediate-algebra 6.2](../content/math/intermediate-algebra/06-factoring/02-factor-trinomials.md) | `m81387` | metadata matched | 4/4 | 4/4 | 8% | 28/28 | 40 |
-| [intermediate-algebra 6.3](../content/math/intermediate-algebra/06-factoring/03-factor-special-products.md) | `m81388` | metadata matched | 3/3 | 3/3 | 50% | 17/24 | 33 |
-| [intermediate-algebra 6.4](../content/math/intermediate-algebra/06-factoring/04-general-strategy-for-factoring-polynomials.md) | `m81389` | metadata matched | 1/1 | 1/1 | 19% | 16/18 | 25 |
-| [intermediate-algebra 6.5](../content/math/intermediate-algebra/06-factoring/05-polynomial-equations.md) | `m81390` | metadata matched | 4/4 | 4/4 | 16% | 22/24 | 44 |
-| [intermediate-algebra 7.1](../content/math/intermediate-algebra/07-rational-expressions-and-functions/01-multiply-and-divide-rational-expressions.md) | `m81392` | metadata matched | 5/5 | 5/5 | 30% | 23/24 | 38 |
-| [intermediate-algebra 7.2](../content/math/intermediate-algebra/07-rational-expressions-and-functions/02-add-and-subtract-rational-expressions.md) | `m81439` | metadata matched | 5/5 | 5/5 | 35% | 22/22 | 33 |
-| [intermediate-algebra 7.3](../content/math/intermediate-algebra/07-rational-expressions-and-functions/03-simplify-complex-rational-expressions.md) | `m81440` | metadata matched | 2/2 | 2/2 | 26% | 18/18 | 23 |
-| [intermediate-algebra 7.4](../content/math/intermediate-algebra/07-rational-expressions-and-functions/04-solve-rational-equations.md) | `m81393` | metadata matched | 3/3 | 3/3 | 53% | 20/20 | 30 |
-| [intermediate-algebra 7.5](../content/math/intermediate-algebra/07-rational-expressions-and-functions/05-solve-applications-with-rational-equations.md) | `m81394` | metadata matched | 6/6 | 6/6 | 10% | 22/22 | 38 |
-| [intermediate-algebra 7.6](../content/math/intermediate-algebra/07-rational-expressions-and-functions/06-solve-rational-inequalities.md) | `m81441` | metadata matched | 2/2 | 2/2 | 11% | 12/12 | 18 |
-| [intermediate-algebra 8.1](../content/math/intermediate-algebra/08-roots-and-radicals/01-simplify-expressions-with-roots.md) | `m81444` | metadata matched | 3/3 | 3/3 | 28% | 21/24 | 51 |
-| [intermediate-algebra 8.2](../content/math/intermediate-algebra/08-roots-and-radicals/02-simplify-radical-expressions.md) | `m81445` | metadata matched | 2/2 | 2/2 | 61% | 22/26 | 43 |
-| [intermediate-algebra 8.3](../content/math/intermediate-algebra/08-roots-and-radicals/03-simplify-rational-exponents.md) | `m81396` | metadata matched | 3/3 | 3/3 | 56% | 19/20 | 40 |
-| [intermediate-algebra 8.4](../content/math/intermediate-algebra/08-roots-and-radicals/04-add-subtract-and-multiply-radical-expressions.md) | `m81397` | metadata matched | 3/3 | 3/3 | 66% | 18/22 | 43 |
-| [intermediate-algebra 8.5](../content/math/intermediate-algebra/08-roots-and-radicals/05-divide-radical-expressions.md) | `m81446` | metadata matched | 3/3 | 3/3 | 70% | 18/18 | 31 |
-| [intermediate-algebra 8.6](../content/math/intermediate-algebra/08-roots-and-radicals/06-solve-radical-equations.md) | `m81398` | metadata matched | 3/3 | 3/3 | 75% | 24/24 | 33 |
-| [intermediate-algebra 8.7](../content/math/intermediate-algebra/08-roots-and-radicals/07-use-radicals-in-functions.md) | `m81447` | metadata matched | 3/3 | 3/3 | 62% | 16/16 | 37 |
-| [intermediate-algebra 8.8](../content/math/intermediate-algebra/08-roots-and-radicals/08-use-the-complex-number-system.md) | `m81448` | metadata matched | 5/5 | 5/5 | 83% | 20/28 | 46 |
-| [intermediate-algebra 9.1](../content/math/intermediate-algebra/09-quadratic-equations-and-functions/01-solve-quadratic-equations-using-the-square-root-property.md) | `m81400` | metadata matched | 2/2 | 2/2 | 34% | 18/20 | 25 |
-| [intermediate-algebra 9.2](../content/math/intermediate-algebra/09-quadratic-equations-and-functions/02-solve-quadratic-equations-by-completing-the-square.md) | `m81401` | metadata matched | 3/3 | 3/3 | 60% | 20/20 | 28 |
-| [intermediate-algebra 9.3](../content/math/intermediate-algebra/09-quadratic-equations-and-functions/03-solve-quadratic-equations-using-the-quadratic-formula.md) | `m81449` | metadata matched | 3/3 | 3/3 | 44% | 18/18 | 29 |
-| [intermediate-algebra 9.4](../content/math/intermediate-algebra/09-quadratic-equations-and-functions/04-solve-equations-in-quadratic-form.md) | `m81402` | metadata matched | 1/1 | 1/1 | 68% | 10/10 | 15 |
-| [intermediate-algebra 9.5](../content/math/intermediate-algebra/09-quadratic-equations-and-functions/05-solve-applications-of-quadratic-equations.md) | `m81403` | metadata matched | 1/1 | 1/1 | 54% | 14/14 | 19 |
-| [intermediate-algebra 9.6](../content/math/intermediate-algebra/09-quadratic-equations-and-functions/06-graph-quadratic-functions-using-properties.md) | `m81404` | metadata matched | 5/5 | 5/5 | 64% | 22/22 | 43 |
-| [intermediate-algebra 9.7](../content/math/intermediate-algebra/09-quadratic-equations-and-functions/07-graph-quadratic-functions-using-transformations.md) | `m81405` | metadata matched | 5/5 | 5/5 | 60% | 22/22 | 36 |
-| [intermediate-algebra 9.8](../content/math/intermediate-algebra/09-quadratic-equations-and-functions/08-solve-quadratic-inequalities.md) | `m81406` | metadata matched | 2/2 | 2/2 | 52% | 10/10 | 17 |
-| [intermediate-algebra 10.1](../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/01-finding-composite-and-inverse-functions.md) | `m81408` | metadata matched | 3/3 | 3/3 | 81% | 16/18 | 29 |
-| [intermediate-algebra 10.2](../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/02-evaluate-and-graph-exponential-functions.md) | `m81409` | metadata matched | 3/3 | 3/3 | 60% | 14/16 | 23 |
-| [intermediate-algebra 10.3](../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/03-evaluate-and-graph-logarithmic-functions.md) | `m81410` | metadata matched | 5/5 | 5/5 | 71% | 18/20 | 57 |
-| [intermediate-algebra 10.4](../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/04-use-the-properties-of-logarithms.md) | `m81411` | metadata matched | 2/2 | 2/2 | 77% | 15/20 | 25 |
-| [intermediate-algebra 10.5](../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/05-solve-exponential-and-logarithmic-equations.md) | `m81450` | metadata matched | 3/3 | 3/3 | 74% | 14/16 | 25 |
-| [intermediate-algebra 11.1](../content/math/intermediate-algebra/11-conics/01-distance-and-midpoint-formulas-circles.md) | `m81452` | metadata matched | 4/4 | 4/4 | 66% | 22/22 | 33 |
-| [intermediate-algebra 11.2](../content/math/intermediate-algebra/11-conics/02-parabolas.md) | `m81413` | metadata matched | 3/3 | 3/3 | 6% | 16/16 | 30 |
-| [intermediate-algebra 11.3](../content/math/intermediate-algebra/11-conics/03-ellipses.md) | `m81414` | metadata matched | 4/4 | 3/3 | 70% | 14/14 | 25 |
-| [intermediate-algebra 11.4](../content/math/intermediate-algebra/11-conics/04-hyperbolas.md) | `m81415` | metadata matched | 3/3 | 3/3 | 68% | 12/12 | 23 |
-| [intermediate-algebra 11.5](../content/math/intermediate-algebra/11-conics/05-solve-systems-of-nonlinear-equations.md) | `m81453` | metadata matched | 4/4 | 4/4 | 46% | 15/16 | 17 |
-| [intermediate-algebra 12.1](../content/math/intermediate-algebra/12-sequences-series-and-binomial-theorem/01-sequences.md) | `m81417` | metadata matched | 5/5 | 5/5 | 75% | 24/24 | 39 |
-| [intermediate-algebra 12.2](../content/math/intermediate-algebra/12-sequences-series-and-binomial-theorem/02-arithmetic-sequences.md) | `m81418` | metadata matched | 3/3 | 3/3 | 67% | 16/16 | 44 |
-| [intermediate-algebra 12.3](../content/math/intermediate-algebra/12-sequences-series-and-binomial-theorem/03-geometric-sequences-and-series.md) | `m81419` | metadata matched | 5/5 | 5/5 | 40% | 20/20 | 41 |
-| [intermediate-algebra 12.4](../content/math/intermediate-algebra/12-sequences-series-and-binomial-theorem/04-binomial-theorem.md) | `m81420` | metadata matched | 3/3 | 3/3 | 57% | 16/18 | 31 |
-| [prealgebra 1.1](../content/math/prealgebra/01-whole-numbers/01-introduction.md) | `m81243` | metadata matched | 6/6 | 6/6 | 27% | 9/20 | 25 |
-| [prealgebra 1.2](../content/math/prealgebra/01-whole-numbers/02-add-whole-numbers.md) | `m81244` | metadata matched | 5/5 | 5/5 | 11% | 9/30 | 26 |
-| [prealgebra 1.3](../content/math/prealgebra/01-whole-numbers/03-subtract-whole-numbers.md) | `m81245` | metadata matched | 5/5 | 5/5 | 29% | 19/26 | 24 |
-| [prealgebra 1.4](../content/math/prealgebra/01-whole-numbers/04-multiply-whole-numbers.md) | `m81255` | metadata matched | 5/5 | 5/5 | 16% | 14/34 | 24 |
-| [prealgebra 1.5](../content/math/prealgebra/01-whole-numbers/05-divide-whole-numbers.md) | `m81256` | metadata matched | 5/5 | 5/5 | 21% | 24/26 | 23 |
-| [prealgebra 2.1](../content/math/prealgebra/02-the-language-of-algebra/01-use-the-language-of-algebra.md) | `m81268` | metadata matched | 4/4 | 4/4 | 14% | 20/24 | 30 |
-| [prealgebra 2.2](../content/math/prealgebra/02-the-language-of-algebra/02-evaluate-simplify-and-translate-expressions.md) | `m81270` | metadata matched | 4/4 | 4/4 | 12% | 18/30 | 26 |
-| [prealgebra 2.3](../content/math/prealgebra/02-the-language-of-algebra/03-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md) | `m81271` | adapted-verified | 6/6 | 5/6 | 16% | 17/24 | 30 |
-| [prealgebra 2.4](../content/math/prealgebra/02-the-language-of-algebra/04-find-multiples-and-factors.md) | `m81272` | metadata matched | 4/4 | 4/4 | 12% | 5/16 | 21 |
-| [prealgebra 2.5](../content/math/prealgebra/02-the-language-of-algebra/05-prime-factorization-and-the-least-common-multiple.md) | `m81273` | metadata matched | 2/2 | 2/2 | 79% | 12/14 | 20 |
-| [prealgebra 3.1](../content/math/prealgebra/03-integers/01-introduction-to-integers.md) | `m81275` | metadata matched | 5/5 | 5/5 | 28% | 12/26 | 41 |
-| [prealgebra 3.2](../content/math/prealgebra/03-integers/02-add-integers.md) | `m81276` | metadata matched | 5/5 | 5/5 | 21% | 24/30 | 41 |
-| [prealgebra 3.3](../content/math/prealgebra/03-integers/03-subtract-integers.md) | `m81277` | metadata matched | 5/5 | 5/5 | 21% | 25/34 | 44 |
-| [prealgebra 3.4](../content/math/prealgebra/03-integers/04-multiply-and-divide-integers.md) | `m81278` | metadata matched | 5/5 | 5/5 | 28% | 20/26 | 37 |
-| [prealgebra 3.5](../content/math/prealgebra/03-integers/05-solve-equations-using-integers-the-division-property-of-equality.md) | `m81281` | metadata matched | 5/5 | 5/5 | 23% | 11/18 | 30 |
-| [prealgebra 4.1](../content/math/prealgebra/04-fractions/01-visualize-fractions.md) | `m81285` | metadata matched | 7/7 | 7/7 | 10% | 27/36 | 38 |
-| [prealgebra 4.2](../content/math/prealgebra/04-fractions/02-multiply-and-divide-fractions.md) | `m81286` | metadata matched | 4/4 | 4/4 | 12% | 25/36 | 30 |
-| [prealgebra 4.3](../content/math/prealgebra/04-fractions/03-multiply-and-divide-mixed-numbers-and-complex-fractions.md) | `m81287` | metadata matched | 4/4 | 4/4 | 24% | 30/30 | 35 |
-| [prealgebra 4.4](../content/math/prealgebra/04-fractions/04-add-and-subtract-fractions-with-common-denominators.md) | `m81288` | metadata matched | 4/4 | 4/4 | 16% | 15/22 | 25 |
-| [prealgebra 4.5](../content/math/prealgebra/04-fractions/05-add-and-subtract-fractions-with-different-denominators.md) | `m81289` | metadata matched | 6/6 | 6/6 | 12% | 28/36 | 38 |
-| [prealgebra 4.6](../content/math/prealgebra/04-fractions/06-add-and-subtract-mixed-numbers.md) | `m81290` | metadata matched | 5/5 | 5/5 | 18% | 26/28 | 27 |
-| [prealgebra 4.7](../content/math/prealgebra/04-fractions/07-solve-equations-with-fractions.md) | `m81291` | metadata matched | 4/4 | 4/4 | 18% | 20/28 | 32 |
-| [prealgebra 5.1](../content/math/prealgebra/05-decimals/01-decimals.md) | `m81293` | metadata matched | 6/6 | 6/6 | 69% | 17/20 | 38 |
-| [prealgebra 5.2](../content/math/prealgebra/05-decimals/02-decimal-operations.md) | `m81295` | metadata matched | 4/4 | 4/4 | 71% | 31/34 | 49 |
-| [prealgebra 5.3](../content/math/prealgebra/05-decimals/03-decimals-and-fractions.md) | `m81298` | metadata matched | 4/4 | 4/4 | 58% | 24/24 | 41 |
-| [prealgebra 5.4](../content/math/prealgebra/05-decimals/04-solve-equations-with-decimals.md) | `m81300` | metadata matched | 3/3 | 3/3 | 67% | 18/18 | 35 |
-| [prealgebra 5.5](../content/math/prealgebra/05-decimals/05-averages-and-probability.md) | `m81302` | metadata matched | 4/4 | 4/4 | 73% | 18/18 | 33 |
-| [prealgebra 5.6](../content/math/prealgebra/05-decimals/06-ratios-and-rate.md) | `m81303` | metadata matched | 5/5 | 5/5 | 79% | 19/22 | 43 |
-| [prealgebra 5.7](../content/math/prealgebra/05-decimals/07-simplify-and-use-square-roots.md) | `m81304` | metadata matched | 5/5 | 5/5 | 31% | 16/26 | 39 |
-| [prealgebra 6.1](../content/math/prealgebra/06-percents/01-understand-percent.md) | `m81306` | metadata matched | 3/3 | 3/3 | 48% | 26/26 | 36 |
-| [prealgebra 6.2](../content/math/prealgebra/06-percents/02-solve-general-applications-of-percent.md) | `m81313` | metadata matched | 3/3 | 3/3 | 60% | 22/22 | 38 |
-| [prealgebra 6.3](../content/math/prealgebra/06-percents/03-solve-sales-tax-commission-and-discount-applications.md) | `m81307` | metadata matched | 4/4 | 4/4 | 59% | 16/16 | 35 |
-| [prealgebra 6.4](../content/math/prealgebra/06-percents/04-solve-simple-interest-applications.md) | `m81308` | metadata matched | 2/2 | 2/2 | 66% | 14/14 | 26 |
-| [prealgebra 6.5](../content/math/prealgebra/06-percents/05-solve-proportions-and-their-applications.md) | `m81311` | metadata matched | 5/5 | 5/5 | 50% | 30/30 | 50 |
-| [prealgebra 7.1](../content/math/prealgebra/07-the-properties-of-real-numbers/01-rational-and-irrational-numbers.md) | `m81315` | metadata matched | 2/2 | 2/2 | 68% | 6/8 | 21 |
-| [prealgebra 7.2](../content/math/prealgebra/07-the-properties-of-real-numbers/02-commutative-and-associative-properties.md) | `m81316` | metadata matched | 3/3 | 3/3 | 47% | 18/24 | 25 |
-| [prealgebra 7.3](../content/math/prealgebra/07-the-properties-of-real-numbers/03-distributive-property.md) | `m81317` | metadata matched | 2/2 | 2/2 | 51% | 23/32 | 28 |
-| [prealgebra 7.4](../content/math/prealgebra/07-the-properties-of-real-numbers/04-properties-of-identity-inverses-and-zero.md) | `m81318` | metadata matched | 4/4 | 4/4 | 56% | 14/22 | 24 |
-| [prealgebra 7.5](../content/math/prealgebra/07-the-properties-of-real-numbers/05-systems-of-measurement.md) | `m81330` | metadata matched | 6/6 | 6/6 | 53% | 16/30 | 31 |
-| [prealgebra 8.1](../content/math/prealgebra/08-solving-linear-equations/01-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md) | `m81320` | metadata matched | 4/4 | 4/4 | 58% | 21/24 | 29 |
-| [prealgebra 8.2](../content/math/prealgebra/08-solving-linear-equations/02-solve-equations-using-the-division-and-multiplication-properties-of-equality.md) | `m81321` | metadata matched | 2/2 | 2/2 | 49% | 8/14 | 20 |
-| [prealgebra 8.3](../content/math/prealgebra/08-solving-linear-equations/03-solve-equations-with-variables-and-constants-on-both-sides.md) | `m81322` | metadata matched | 4/4 | 4/4 | 59% | 25/34 | 32 |
-| [prealgebra 8.4](../content/math/prealgebra/08-solving-linear-equations/04-solve-equations-with-fraction-or-decimal-coefficients.md) | `m81323` | metadata matched | 2/2 | 2/2 | 50% | 14/16 | 24 |
-| [prealgebra 9.1](../content/math/prealgebra/09-math-models-and-geometry/01-use-a-problem-solving-strategy.md) | `m81324` | metadata matched | 3/3 | 3/3 | 29% | 17/20 | 28 |
-| [prealgebra 9.2](../content/math/prealgebra/09-math-models-and-geometry/02-solve-money-applications.md) | `m81325` | metadata matched | 2/2 | 2/2 | 31% | 10/10 | 19 |
-| [prealgebra 9.3](../content/math/prealgebra/09-math-models-and-geometry/03-use-properties-of-angles-triangles-and-the-pythagorean-theorem.md) | `m81326` | metadata matched | 3/3 | 3/3 | 37% | 14/14 | 36 |
-| [prealgebra 9.4](../content/math/prealgebra/09-math-models-and-geometry/04-use-properties-of-rectangles-triangles-and-trapezoids.md) | `m81332` | metadata matched | 4/4 | 4/4 | 46% | 31/32 | 48 |
-| [prealgebra 9.5](../content/math/prealgebra/09-math-models-and-geometry/05-solve-geometry-applications-circles-and-irregular-figures.md) | `m81327` | metadata matched | 2/2 | 2/2 | 28% | 6/12 | 21 |
-| [prealgebra 9.6](../content/math/prealgebra/09-math-models-and-geometry/06-solve-geometry-applications-volume-and-surface-area.md) | `m81328` | omitted-approved | 4/4 | 4/5 | 29% | 19/20 | 37 |
-| [prealgebra 9.7](../content/math/prealgebra/09-math-models-and-geometry/07-solve-a-formula-for-a-specific-variable.md) | `m81329` | metadata matched | 2/2 | 2/2 | 7% | 18/18 | 32 |
-| [prealgebra 10.1](../content/math/prealgebra/10-polynomials/01-add-and-subtract-polynomials.md) | `m81334` | metadata matched | 5/5 | 5/5 | 47% | 17/20 | 36 |
-| [prealgebra 10.2](../content/math/prealgebra/10-polynomials/02-use-multiplication-properties-of-exponents.md) | `m81335` | metadata matched | 6/6 | 6/6 | 56% | 33/34 | 55 |
-| [prealgebra 10.3](../content/math/prealgebra/10-polynomials/03-multiply-polynomials.md) | `m81336` | metadata matched | 3/3 | 3/3 | 45% | 29/34 | 37 |
-| [prealgebra 10.4](../content/math/prealgebra/10-polynomials/04-divide-monomials.md) | `m81337` | metadata matched | 5/5 | 5/5 | 32% | 36/36 | 54 |
-| [prealgebra 10.5](../content/math/prealgebra/10-polynomials/05-integer-exponents-and-scientific-notation.md) | `m81342` | metadata matched | 5/5 | 5/5 | 37% | 30/34 | 41 |
-| [prealgebra 10.6](../content/math/prealgebra/10-polynomials/06-introduction-to-factoring-polynomials.md) | `m81347` | metadata matched | 2/2 | 2/2 | 52% | 27/28 | 41 |
-| [prealgebra 11.1](../content/math/prealgebra/11-graphs/01-use-the-rectangular-coordinate-system.md) | `m81340` | metadata matched | 5/5 | 5/5 | 62% | 17/28 | 31 |
-| [prealgebra 11.2](../content/math/prealgebra/11-graphs/02-graphing-linear-equations.md) | `m81345` | metadata matched | 3/3 | 3/3 | 65% | 15/15 | 31 |
-| [prealgebra 11.3](../content/math/prealgebra/11-graphs/03-graphing-with-intercepts.md) | `m81350` | metadata matched | 4/4 | 4/4 | 63% | 14/14 | 32 |
-| [prealgebra 11.4](../content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md) | `m81354` | adapted-verified | 5/5 | 6/6 | 60% | 30/30 | 41 |
-| [precalculus 1.1](../content/math/precalculus/01-functions/01-functions-and-function-notation.md) | `m49301` | metadata matched | 5/5 | 7/7 | 76% | 0/0 | 29 |
-| [precalculus 1.2](../content/math/precalculus/01-functions/02-domain-and-range.md) | `m49304` | metadata matched | 2/2 | 5/5 | 53% | 0/0 | 21 |
-| [precalculus 1.3](../content/math/precalculus/01-functions/03-rates-of-change-and-behavior-of-graphs.md) | `m49306` | metadata matched | 4/4 | 5/5 | 71% | 0/0 | 15 |
-| [precalculus 1.4](../content/math/precalculus/01-functions/04-composition-of-functions.md) | `m49308` | metadata matched | 5/5 | 6/6 | 78% | 0/0 | 25 |
-| [precalculus 1.5](../content/math/precalculus/01-functions/05-transformation-of-functions.md) | `m49312` | metadata matched | 5/5 | 6/6 | 51% | 0/0 | 23 |
-| [precalculus 1.6](../content/math/precalculus/01-functions/06-absolute-value-functions.md) | `m49314` | metadata matched | 3/3 | 4/4 | 21% | 0/0 | 16 |
-| [precalculus 1.7](../content/math/precalculus/01-functions/07-inverse-functions.md) | `m49320` | metadata matched | 4/4 | 4/4 | 76% | 0/0 | 23 |
-| [precalculus 2.1](../content/math/precalculus/02-linear-functions/01-linear-functions.md) | `m49324` | metadata matched | 5/5 | 7/7 | 60% | 0/0 | 25 |
-| [precalculus 2.2](../content/math/precalculus/02-linear-functions/02-graphs-of-linear-functions.md) | `m50389` | metadata matched | 5/5 | 7/7 | 21% | 0/0 | 24 |
-| [precalculus 2.3](../content/math/precalculus/02-linear-functions/03-modeling-with-linear-functions.md) | `m49326` | metadata matched | 3/3 | 3/3 | 74% | 0/0 | 17 |
-| [precalculus 2.4](../content/math/precalculus/02-linear-functions/04-fitting-linear-models-to-data.md) | `m49327` | metadata matched | 4/4 | 4/4 | 74% | 0/0 | 14 |
-| [precalculus 3.1](../content/math/precalculus/03-polynomial-and-rational-functions/01-complex-numbers.md) | `m49335` | metadata matched | 4/4 | 6/6 | 58% | 0/0 | 20 |
-| [precalculus 3.2](../content/math/precalculus/03-polynomial-and-rational-functions/02-quadratic-functions.md) | `m49337` | metadata matched | 4/4 | 5/5 | 49% | 0/0 | 29 |
-| [precalculus 3.3](../content/math/precalculus/03-polynomial-and-rational-functions/03-power-functions-and-polynomial-functions.md) | `m49346` | metadata matched | 4/4 | 5/5 | 70% | 0/0 | 27 |
-| [precalculus 3.4](../content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md) | `m49347` | metadata matched | 7/7 | 7/7 | 35% | 0/0 | 23 |
-| [precalculus 3.5](../content/math/precalculus/03-polynomial-and-rational-functions/05-dividing-polynomials.md) | `m49348` | metadata matched | 2/2 | 4/4 | 56% | 0/0 | 10 |
-| [precalculus 3.6](../content/math/precalculus/03-polynomial-and-rational-functions/06-zeros-of-polynomial-functions.md) | `m49349` | metadata matched | 7/7 | 8/8 | 73% | 0/0 | 24 |
-| [precalculus 3.7](../content/math/precalculus/03-polynomial-and-rational-functions/07-rational-functions.md) | `m49351` | metadata matched | 6/6 | 8/8 | 36% | 0/0 | 34 |
-| [precalculus 3.8](../content/math/precalculus/03-polynomial-and-rational-functions/08-inverses-and-radical-functions.md) | `m49352` | metadata matched | 2/2 | 2/2 | 71% | 0/0 | 14 |
-| [precalculus 3.9](../content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md) | `m49353` | adapted-verified | 3/3 | 4/5 | 50% | 0/0 | 12 |
-| [precalculus 4.1](../content/math/precalculus/04-exponential-and-logarithmic-functions/01-exponential-functions.md) | `m49361` | metadata matched | 4/4 | 7/7 | 10% | 0/0 | 27 |
-| [precalculus 4.2](../content/math/precalculus/04-exponential-and-logarithmic-functions/02-graphs-of-exponential-functions.md) | `m49362` | metadata matched | 2/2 | 3/3 | 41% | 0/0 | 30 |
-| [precalculus 4.3](../content/math/precalculus/04-exponential-and-logarithmic-functions/03-logarithmic-functions.md) | `m49363` | metadata matched | 5/5 | 6/6 | 43% | 0/0 | 21 |
-| [precalculus 4.4](../content/math/precalculus/04-exponential-and-logarithmic-functions/04-graphs-of-logarithmic-functions.md) | `m49364` | metadata matched | 2/2 | 4/4 | 26% | 0/0 | 19 |
-| [precalculus 4.5](../content/math/precalculus/04-exponential-and-logarithmic-functions/05-logarithmic-properties.md) | `m49365` | metadata matched | 6/6 | 7/7 | 17% | 0/0 | 28 |
-| [precalculus 4.6](../content/math/precalculus/04-exponential-and-logarithmic-functions/06-exponential-and-logarithmic-equations.md) | `m49366` | metadata matched | 5/5 | 6/6 | 43% | 0/0 | 30 |
-| [precalculus 4.7](../content/math/precalculus/04-exponential-and-logarithmic-functions/07-exponential-and-logarithmic-models.md) | `m49367` | metadata matched | 5/5 | 6/6 | 8% | 0/0 | 27 |
-| [precalculus 4.8](../content/math/precalculus/04-exponential-and-logarithmic-functions/08-fitting-exponential-models-to-data.md) | `m49368` | metadata matched | 3/3 | 3/3 | 22% | 0/0 | 19 |
-| [precalculus 5.1](../content/math/precalculus/05-trigonometric-functions/01-angles.md) | `m49371` | metadata matched | 5/5 | 7/7 | 41% | 0/0 | 27 |
-| [precalculus 5.2](../content/math/precalculus/05-trigonometric-functions/02-unit-circle-sine-and-cosine-functions.md) | `m49372` | metadata matched | 3/3 | 6/6 | 65% | 0/0 | 23 |
-| [precalculus 5.3](../content/math/precalculus/05-trigonometric-functions/03-the-other-trigonometric-functions.md) | `m49374` | metadata matched | 5/5 | 6/6 | 39% | 0/0 | 35 |
-| [precalculus 5.4](../content/math/precalculus/05-trigonometric-functions/04-right-triangle-trigonometry.md) | `m49384` | adapted-verified | 5/5 | 2/3 | 49% | 0/0 | 23 |
+| [elementary-algebra 1.1](../../content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md) | `m82452` | metadata matched | 3/3 | 3/3 | 62% | 15/22 | 21 |
+| [elementary-algebra 1.2](../../content/math/elementary-algebra/01-foundations/02-use-the-language-of-algebra.md) | `m82453` | metadata matched | 5/5 | 5/5 | 8% | 20/36 | 21 |
+| [elementary-algebra 1.3](../../content/math/elementary-algebra/01-foundations/03-add-and-subtract-integers.md) | `m82454` | metadata matched | 4/4 | 4/4 | 37% | 23/32 | 44 |
+| [elementary-algebra 1.4](../../content/math/elementary-algebra/01-foundations/04-multiply-and-divide-integers.md) | `m82455` | metadata matched | 6/6 | 6/6 | 60% | 30/36 | 46 |
+| [elementary-algebra 1.5](../../content/math/elementary-algebra/01-foundations/05-visualize-fractions.md) | `m82456` | metadata matched | 6/6 | 6/6 | 56% | 26/26 | 38 |
+| [elementary-algebra 1.6](../../content/math/elementary-algebra/01-foundations/06-add-and-subtract-fractions.md) | `m82457` | metadata matched | 4/4 | 4/4 | 44% | 28/28 | 36 |
+| [elementary-algebra 1.7](../../content/math/elementary-algebra/01-foundations/07-decimals.md) | `m82458` | metadata matched | 5/5 | 5/5 | 57% | 30/34 | 46 |
+| [elementary-algebra 1.8](../../content/math/elementary-algebra/01-foundations/08-the-real-numbers.md) | `m82459` | metadata matched | 4/4 | 4/4 | 70% | 22/28 | 44 |
+| [elementary-algebra 1.9](../../content/math/elementary-algebra/01-foundations/09-properties-of-real-numbers.md) | `m82460` | metadata matched | 4/4 | 4/4 | 69% | 33/36 | 48 |
+| [elementary-algebra 1.10](../../content/math/elementary-algebra/01-foundations/10-systems-of-measurement.md) | `m82461` | metadata matched | 6/6 | 6/6 | 66% | 30/30 | 43 |
+| [elementary-algebra 2.1](../../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/01-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md) | `m82463` | metadata matched | 5/5 | 5/5 | 60% | 23/24 | 33 |
+| [elementary-algebra 2.2](../../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/02-solve-equations-using-the-division-and-multiplication-properties-of-equality.md) | `m82464` | metadata matched | 4/4 | 4/4 | 50% | 28/28 | 36 |
+| [elementary-algebra 2.3](../../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/03-solve-equations-with-variables-and-constants-on-both-sides.md) | `m82465` | metadata matched | 3/3 | 3/3 | 57% | 20/20 | 26 |
+| [elementary-algebra 2.4](../../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/04-use-a-general-strategy-to-solve-linear-equations.md) | `m82467` | metadata matched | 2/2 | 2/2 | 56% | 22/22 | 27 |
+| [elementary-algebra 2.5](../../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/05-solve-equations-with-fractions-or-decimals.md) | `m82468` | metadata matched | 2/2 | 2/2 | 38% | 20/20 | 25 |
+| [elementary-algebra 2.6](../../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/06-solve-a-formula-for-a-specific-variable.md) | `m82469` | metadata matched | 2/2 | 2/2 | 62% | 14/16 | 19 |
+| [elementary-algebra 2.7](../../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/07-solve-linear-inequalities.md) | `m82470` | metadata matched | 5/5 | 5/5 | 41% | 26/26 | 24 |
+| [elementary-algebra 3.1](../../content/math/elementary-algebra/03-math-models/01-use-a-problem-solving-strategy.md) | `m82472` | metadata matched | 3/3 | 3/3 | 54% | 22/22 | 33 |
+| [elementary-algebra 3.2](../../content/math/elementary-algebra/03-math-models/02-solve-percent-applications.md) | `m82473` | metadata matched | 5/5 | 5/5 | 67% | 28/28 | 42 |
+| [elementary-algebra 3.3](../../content/math/elementary-algebra/03-math-models/03-solve-mixture-applications.md) | `m82475` | metadata matched | 4/4 | 3/3 | 29% | 14/16 | 19 |
+| [elementary-algebra 3.4](../../content/math/elementary-algebra/03-math-models/04-solve-geometry-applications-triangles-rectangles-and-the-pythagorean-theorem.md) | `m82476` | metadata matched | 3/3 | 3/3 | 44% | 28/28 | 34 |
+| [elementary-algebra 3.5](../../content/math/elementary-algebra/03-math-models/05-solve-uniform-motion-applications.md) | `m82477` | metadata matched | 1/1 | 1/1 | 52% | 10/10 | 15 |
+| [elementary-algebra 3.6](../../content/math/elementary-algebra/03-math-models/06-solve-applications-with-linear-inequalities.md) | `m82478` | metadata matched | 1/1 | 1/1 | 67% | 12/12 | 17 |
+| [elementary-algebra 4.1](../../content/math/elementary-algebra/04-graphs/01-use-the-rectangular-coordinate-system.md) | `m82480` | metadata matched | 4/4 | 4/4 | 71% | 18/18 | 22 |
+| [elementary-algebra 4.2](../../content/math/elementary-algebra/04-graphs/02-graph-linear-equations-in-two-variables.md) | `m82481` | metadata matched | 3/3 | 3/3 | 47% | 17/18 | 19 |
+| [elementary-algebra 4.3](../../content/math/elementary-algebra/04-graphs/03-graph-with-intercepts.md) | `m82482` | metadata matched | 3/3 | 3/3 | 74% | 11/12 | 17 |
+| [elementary-algebra 4.4](../../content/math/elementary-algebra/04-graphs/04-understand-slope-of-a-line.md) | `m82483` | adapted-verified | 5/6 | 5/6 | 12% | 27/30 | 19 |
+| [elementary-algebra 4.5](../../content/math/elementary-algebra/04-graphs/05-use-the-slope-intercept-form-of-an-equation-of-a-line.md) | `m82485` | metadata matched | 7/7 | 7/7 | 39% | 33/34 | 29 |
+| [elementary-algebra 4.6](../../content/math/elementary-algebra/04-graphs/06-find-the-equation-of-a-line.md) | `m82486` | metadata matched | 5/5 | 5/5 | 21% | 24/24 | 17 |
+| [elementary-algebra 4.7](../../content/math/elementary-algebra/04-graphs/07-graphs-of-linear-inequalities.md) | `m82488` | metadata matched | 3/3 | 3/3 | 19% | 13/14 | 14 |
+| [elementary-algebra 5.1](../../content/math/elementary-algebra/05-systems-of-linear-equations/01-solve-systems-of-equations-by-graphing.md) | `m82490` | metadata matched | 4/4 | 4/4 | 20% | 22/24 | 15 |
+| [elementary-algebra 5.2](../../content/math/elementary-algebra/05-systems-of-linear-equations/02-solving-systems-of-equations-by-substitution.md) | `m82494` | metadata matched | 2/2 | 2/2 | 33% | 22/24 | 17 |
+| [elementary-algebra 5.3](../../content/math/elementary-algebra/05-systems-of-linear-equations/03-solve-systems-of-equations-by-elimination.md) | `m82495` | metadata matched | 3/3 | 3/3 | 14% | 18/20 | 14 |
+| [elementary-algebra 5.4](../../content/math/elementary-algebra/05-systems-of-linear-equations/04-solve-applications-with-systems-of-equations.md) | `m82497` | metadata matched | 4/4 | 4/4 | 36% | 15/20 | 18 |
+| [elementary-algebra 5.5](../../content/math/elementary-algebra/05-systems-of-linear-equations/05-solve-mixture-applications-with-systems-of-equations.md) | `m82498` | metadata matched | 2/2 | 2/2 | 27% | 9/12 | 11 |
+| [elementary-algebra 5.6](../../content/math/elementary-algebra/05-systems-of-linear-equations/06-graphing-systems-of-linear-inequalities.md) | `m82499` | metadata matched | 3/3 | 3/3 | 14% | 11/16 | 14 |
+| [elementary-algebra 6.1](../../content/math/elementary-algebra/06-polynomials/01-add-and-subtract-polynomials.md) | `m82501` | metadata matched | 5/5 | 5/5 | 36% | 16/30 | 34 |
+| [elementary-algebra 6.2](../../content/math/elementary-algebra/06-polynomials/02-use-multiplication-properties-of-exponents.md) | `m82504` | metadata matched | 6/6 | 6/6 | 52% | 21/24 | 39 |
+| [elementary-algebra 6.3](../../content/math/elementary-algebra/06-polynomials/03-multiply-polynomials.md) | `m82507` | metadata matched | 3/3 | 3/3 | 45% | 27/38 | 28 |
+| [elementary-algebra 6.4](../../content/math/elementary-algebra/06-polynomials/04-special-products.md) | `m82508` | metadata matched | 3/3 | 3/3 | 47% | 22/24 | 39 |
+| [elementary-algebra 6.5](../../content/math/elementary-algebra/06-polynomials/05-divide-monomials.md) | `m82509` | metadata matched | 5/5 | 5/5 | 35% | 30/36 | 41 |
+| [elementary-algebra 6.6](../../content/math/elementary-algebra/06-polynomials/06-divide-polynomials.md) | `m82513` | metadata matched | 2/2 | 2/2 | 36% | 24/24 | 29 |
+| [elementary-algebra 6.7](../../content/math/elementary-algebra/06-polynomials/07-integer-exponents-and-scientific-notation.md) | `m82514` | metadata matched | 5/5 | 5/5 | 35% | 35/37 | 47 |
+| [elementary-algebra 7.1](../../content/math/elementary-algebra/07-factoring/01-greatest-common-factor-and-factor-by-grouping.md) | `m82564` | metadata matched | 3/3 | 3/3 | 48% | 31/32 | 41 |
+| [elementary-algebra 7.2](../../content/math/elementary-algebra/07-factoring/02-factor-trinomials-of-the-form-x2-bx-c.md) | `m82566` | metadata matched | 2/2 | 2/2 | 60% | 24/24 | 26 |
+| [elementary-algebra 7.3](../../content/math/elementary-algebra/07-factoring/03-factor-trinomials-of-the-form-ax2-bx-c.md) | `m82527` | metadata matched | 4/4 | 4/4 | 38% | 24/26 | 38 |
+| [elementary-algebra 7.4](../../content/math/elementary-algebra/07-factoring/04-factor-special-products.md) | `m82528` | adapted-verified | 3/4 | 3/3 | 41% | 29/34 | 41 |
+| [elementary-algebra 7.5](../../content/math/elementary-algebra/07-factoring/05-general-strategy-for-factoring-polynomials.md) | `m82529` | metadata matched | 1/1 | 1/1 | 13% | 16/20 | 17 |
+| [elementary-algebra 7.6](../../content/math/elementary-algebra/07-factoring/06-quadratic-equations.md) | `m82530` | metadata matched | 3/3 | 3/3 | 44% | 20/28 | 25 |
+| [elementary-algebra 8.1](../../content/math/elementary-algebra/08-rational-expressions-and-equations/01-simplify-rational-expressions.md) | `m82532` | metadata matched | 4/4 | 4/4 | 39% | 27/32 | 28 |
+| [elementary-algebra 8.2](../../content/math/elementary-algebra/08-rational-expressions-and-equations/02-multiply-and-divide-rational-expressions.md) | `m82533` | metadata matched | 2/2 | 2/2 | 24% | 11/26 | 13 |
+| [elementary-algebra 8.3](../../content/math/elementary-algebra/08-rational-expressions-and-equations/03-add-and-subtract-rational-expressions-with-a-common-denominator.md) | `m82534` | metadata matched | 3/3 | 3/3 | 36% | 6/16 | 12 |
+| [elementary-algebra 8.4](../../content/math/elementary-algebra/08-rational-expressions-and-equations/04-add-and-subtract-rational-expressions-with-unlike-denominators.md) | `m82535` | metadata matched | 4/4 | 4/4 | 25% | 12/24 | 14 |
+| [elementary-algebra 8.5](../../content/math/elementary-algebra/08-rational-expressions-and-equations/05-simplify-complex-rational-expressions.md) | `m82537` | metadata matched | 2/2 | 2/2 | 39% | 16/18 | 10 |
+| [elementary-algebra 8.6](../../content/math/elementary-algebra/08-rational-expressions-and-equations/06-solve-rational-equations.md) | `m82538` | metadata matched | 2/2 | 2/2 | 38% | 20/24 | 11 |
+| [elementary-algebra 8.7](../../content/math/elementary-algebra/08-rational-expressions-and-equations/07-solve-proportion-and-similar-figure-applications.md) | `m82539` | metadata matched | 2/2 | 2/2 | 31% | 10/20 | 14 |
+| [elementary-algebra 8.8](../../content/math/elementary-algebra/08-rational-expressions-and-equations/08-solve-uniform-motion-and-work-applications.md) | `m82543` | metadata matched | 2/2 | 2/2 | 22% | 0/10 | 12 |
+| [elementary-algebra 8.9](../../content/math/elementary-algebra/08-rational-expressions-and-equations/09-use-direct-and-inverse-variation.md) | `m82560` | metadata matched | 2/2 | 2/2 | 58% | 4/14 | 7 |
+| [elementary-algebra 9.1](../../content/math/elementary-algebra/09-roots-and-radicals/01-simplify-and-use-square-roots.md) | `m82545` | metadata matched | 4/4 | 4/4 | 28% | 7/22 | 24 |
+| [elementary-algebra 9.2](../../content/math/elementary-algebra/09-roots-and-radicals/02-simplify-square-roots.md) | `m82546` | metadata matched | 2/2 | 2/2 | 49% | 10/34 | 18 |
+| [elementary-algebra 9.3](../../content/math/elementary-algebra/09-roots-and-radicals/03-add-and-subtract-square-roots.md) | `m82547` | metadata matched | 2/2 | 2/2 | 26% | 9/30 | 13 |
+| [elementary-algebra 9.4](../../content/math/elementary-algebra/09-roots-and-radicals/04-multiply-square-roots.md) | `m82548` | metadata matched | 2/2 | 2/2 | 42% | 21/32 | 19 |
+| [elementary-algebra 9.5](../../content/math/elementary-algebra/09-roots-and-radicals/05-divide-square-roots.md) | `m82550` | metadata matched | 3/3 | 3/3 | 56% | 27/28 | 36 |
+| [elementary-algebra 9.6](../../content/math/elementary-algebra/09-roots-and-radicals/06-solve-equations-with-square-roots.md) | `m82551` | metadata matched | 2/2 | 2/2 | 19% | 10/18 | 16 |
+| [elementary-algebra 9.7](../../content/math/elementary-algebra/09-roots-and-radicals/07-higher-roots.md) | `m82552` | metadata matched | 4/4 | 4/4 | 10% | 28/30 | 31 |
+| [elementary-algebra 9.8](../../content/math/elementary-algebra/09-roots-and-radicals/08-rational-exponents.md) | `m82553` | metadata matched | 3/3 | 3/3 | 40% | 28/30 | 29 |
+| [elementary-algebra 10.1](../../content/math/elementary-algebra/10-quadratic-equations/01-solve-quadratic-equations-using-the-square-root-property.md) | `m82555` | metadata matched | 2/2 | 2/2 | 28% | 8/26 | 13 |
+| [elementary-algebra 10.2](../../content/math/elementary-algebra/10-quadratic-equations/02-solve-quadratic-equations-by-completing-the-square.md) | `m82556` | metadata matched | 3/3 | 3/3 | 56% | 28/28 | 12 |
+| [elementary-algebra 10.3](../../content/math/elementary-algebra/10-quadratic-equations/03-solve-quadratic-equations-using-the-quadratic-formula.md) | `m82557` | metadata matched | 3/3 | 2/2 | 23% | 4/4 | 20 |
+| [elementary-algebra 10.4](../../content/math/elementary-algebra/10-quadratic-equations/04-solve-applications-modeled-by-quadratic-equations.md) | `m82558` | metadata matched | 1/1 | 1/1 | 78% | 10/10 | 15 |
+| [elementary-algebra 10.5](../../content/math/elementary-algebra/10-quadratic-equations/05-graphing-quadratic-equations-in-two-variables.md) | `m82559` | metadata matched | 5/5 | 5/5 | 55% | 23/24 | 27 |
+| [intermediate-algebra 1.1](../../content/math/intermediate-algebra/01-foundations/01-use-the-language-of-algebra.md) | `m81422` | metadata matched | 6/6 | 6/6 | 79% | 22/22 | 40 |
+| [intermediate-algebra 1.2](../../content/math/intermediate-algebra/01-foundations/02-integers.md) | `m81423` | metadata matched | 7/7 | 7/7 | 71% | 17/24 | 50 |
+| [intermediate-algebra 1.3](../../content/math/intermediate-algebra/01-foundations/03-fractions.md) | `m81359` | metadata matched | 5/5 | 5/5 | 65% | 20/20 | 31 |
+| [intermediate-algebra 1.4](../../content/math/intermediate-algebra/01-foundations/04-decimals.md) | `m81425` | metadata matched | 7/7 | 7/7 | 69% | 16/22 | 47 |
+| [intermediate-algebra 1.5](../../content/math/intermediate-algebra/01-foundations/05-properties-of-real-numbers.md) | `m81360` | metadata matched | 3/3 | 3/3 | 67% | 24/24 | 32 |
+| [intermediate-algebra 2.1](../../content/math/intermediate-algebra/02-solving-linear-equations/01-use-a-general-strategy-to-solve-linear-equations.md) | `m81362` | metadata matched | 3/3 | 3/3 | 67% | 26/26 | 37 |
+| [intermediate-algebra 2.2](../../content/math/intermediate-algebra/02-solving-linear-equations/02-use-a-problem-solving-strategy.md) | `m81363` | metadata matched | 4/4 | 4/4 | 72% | 28/28 | 42 |
+| [intermediate-algebra 2.3](../../content/math/intermediate-algebra/02-solving-linear-equations/03-solve-a-formula-for-a-specific-variable.md) | `m81364` | metadata matched | 2/2 | 2/2 | 68% | 22/22 | 30 |
+| [intermediate-algebra 2.4](../../content/math/intermediate-algebra/02-solving-linear-equations/04-solve-mixture-and-uniform-motion-applications.md) | `m81365` | metadata matched | 4/4 | 4/4 | 76% | 18/18 | 31 |
+| [intermediate-algebra 2.5](../../content/math/intermediate-algebra/02-solving-linear-equations/05-solve-linear-inequalities.md) | `m81366` | metadata matched | 4/4 | 4/4 | 59% | 23/26 | 32 |
+| [intermediate-algebra 2.6](../../content/math/intermediate-algebra/02-solving-linear-equations/06-solve-compound-inequalities.md) | `m81367` | metadata matched | 3/3 | 3/3 | 31% | 14/14 | 11 |
+| [intermediate-algebra 2.7](../../content/math/intermediate-algebra/02-solving-linear-equations/07-solve-absolute-value-inequalities.md) | `m81426` | metadata matched | 4/4 | 4/4 | 55% | 14/20 | 16 |
+| [intermediate-algebra 3.1](../../content/math/intermediate-algebra/03-graphs-and-functions/01-graph-linear-equations-in-two-variables.md) | `m81369` | metadata matched | 5/5 | 5/5 | 79% | 19/22 | 21 |
+| [intermediate-algebra 3.2](../../content/math/intermediate-algebra/03-graphs-and-functions/02-slope-of-a-line.md) | `m81370` | metadata matched | 6/6 | 6/6 | 46% | 23/24 | 33 |
+| [intermediate-algebra 3.3](../../content/math/intermediate-algebra/03-graphs-and-functions/03-find-the-equation-of-a-line.md) | `m81371` | metadata matched | 5/5 | 5/5 | 79% | 20/20 | 30 |
+| [intermediate-algebra 3.4](../../content/math/intermediate-algebra/03-graphs-and-functions/04-graph-linear-inequalities-in-two-variables.md) | `m81372` | metadata matched | 4/4 | 4/4 | 53% | 13/16 | 30 |
+| [intermediate-algebra 3.5](../../content/math/intermediate-algebra/03-graphs-and-functions/05-relations-and-functions.md) | `m81373` | metadata matched | 3/3 | 3/3 | 81% | 16/18 | 34 |
+| [intermediate-algebra 3.6](../../content/math/intermediate-algebra/03-graphs-and-functions/06-graphs-of-functions.md) | `m81374` | metadata matched | 3/3 | 3/3 | 81% | 18/18 | 33 |
+| [intermediate-algebra 4.1](../../content/math/intermediate-algebra/04-systems-of-linear-equations/01-solve-systems-of-linear-equations-with-two-variables.md) | `m81427` | metadata matched | 5/5 | 5/5 | 41% | 24/26 | 32 |
+| [intermediate-algebra 4.2](../../content/math/intermediate-algebra/04-systems-of-linear-equations/02-solve-applications-with-systems-of-equations.md) | `m81380` | metadata matched | 3/3 | 3/3 | 35% | 15/20 | 25 |
+| [intermediate-algebra 4.3](../../content/math/intermediate-algebra/04-systems-of-linear-equations/03-solve-mixture-applications-with-systems-of-equations.md) | `m81381` | metadata matched | 3/3 | 3/3 | 33% | 10/14 | 19 |
+| [intermediate-algebra 4.4](../../content/math/intermediate-algebra/04-systems-of-linear-equations/04-solve-systems-of-equations-with-three-variables.md) | `m81428` | metadata matched | 3/3 | 3/3 | 43% | 12/12 | 16 |
+| [intermediate-algebra 4.5](../../content/math/intermediate-algebra/04-systems-of-linear-equations/05-solve-systems-of-equations-using-matrices.md) | `m81429` | metadata matched | 3/3 | 3/3 | 58% | 13/16 | 18 |
+| [intermediate-algebra 4.6](../../content/math/intermediate-algebra/04-systems-of-linear-equations/06-solve-systems-of-equations-using-determinants.md) | `m81431` | metadata matched | 4/4 | 4/4 | 59% | 15/16 | 30 |
+| [intermediate-algebra 4.7](../../content/math/intermediate-algebra/04-systems-of-linear-equations/07-graphing-systems-of-linear-inequalities.md) | `m81432` | metadata matched | 3/3 | 3/3 | 42% | 12/16 | 20 |
+| [intermediate-algebra 5.1](../../content/math/intermediate-algebra/05-polynomials-and-polynomial-functions/01-add-and-subtract-polynomials.md) | `m81383` | metadata matched | 4/4 | 4/4 | 55% | 15/22 | 36 |
+| [intermediate-algebra 5.2](../../content/math/intermediate-algebra/05-polynomials-and-polynomial-functions/02-properties-of-exponents-and-scientific-notation.md) | `m81384` | metadata matched | 3/3 | 3/3 | 43% | 26/26 | 57 |
+| [intermediate-algebra 5.3](../../content/math/intermediate-algebra/05-polynomials-and-polynomial-functions/03-multiply-polynomials.md) | `m81385` | metadata matched | 6/6 | 6/6 | 31% | 20/22 | 42 |
+| [intermediate-algebra 5.4](../../content/math/intermediate-algebra/05-polynomials-and-polynomial-functions/04-dividing-polynomials.md) | `m81386` | metadata matched | 6/6 | 6/6 | 18% | 21/22 | 40 |
+| [intermediate-algebra 6.1](../../content/math/intermediate-algebra/06-factoring/01-greatest-common-factor-and-factor-by-grouping.md) | `m81437` | metadata matched | 3/3 | 3/3 | 27% | 11/16 | 25 |
+| [intermediate-algebra 6.2](../../content/math/intermediate-algebra/06-factoring/02-factor-trinomials.md) | `m81387` | metadata matched | 4/4 | 4/4 | 8% | 28/28 | 40 |
+| [intermediate-algebra 6.3](../../content/math/intermediate-algebra/06-factoring/03-factor-special-products.md) | `m81388` | metadata matched | 3/3 | 3/3 | 50% | 17/24 | 33 |
+| [intermediate-algebra 6.4](../../content/math/intermediate-algebra/06-factoring/04-general-strategy-for-factoring-polynomials.md) | `m81389` | metadata matched | 1/1 | 1/1 | 19% | 16/18 | 25 |
+| [intermediate-algebra 6.5](../../content/math/intermediate-algebra/06-factoring/05-polynomial-equations.md) | `m81390` | metadata matched | 4/4 | 4/4 | 16% | 22/24 | 44 |
+| [intermediate-algebra 7.1](../../content/math/intermediate-algebra/07-rational-expressions-and-functions/01-multiply-and-divide-rational-expressions.md) | `m81392` | metadata matched | 5/5 | 5/5 | 30% | 23/24 | 38 |
+| [intermediate-algebra 7.2](../../content/math/intermediate-algebra/07-rational-expressions-and-functions/02-add-and-subtract-rational-expressions.md) | `m81439` | metadata matched | 5/5 | 5/5 | 35% | 22/22 | 33 |
+| [intermediate-algebra 7.3](../../content/math/intermediate-algebra/07-rational-expressions-and-functions/03-simplify-complex-rational-expressions.md) | `m81440` | metadata matched | 2/2 | 2/2 | 26% | 18/18 | 23 |
+| [intermediate-algebra 7.4](../../content/math/intermediate-algebra/07-rational-expressions-and-functions/04-solve-rational-equations.md) | `m81393` | metadata matched | 3/3 | 3/3 | 53% | 20/20 | 30 |
+| [intermediate-algebra 7.5](../../content/math/intermediate-algebra/07-rational-expressions-and-functions/05-solve-applications-with-rational-equations.md) | `m81394` | metadata matched | 6/6 | 6/6 | 10% | 22/22 | 38 |
+| [intermediate-algebra 7.6](../../content/math/intermediate-algebra/07-rational-expressions-and-functions/06-solve-rational-inequalities.md) | `m81441` | metadata matched | 2/2 | 2/2 | 11% | 12/12 | 18 |
+| [intermediate-algebra 8.1](../../content/math/intermediate-algebra/08-roots-and-radicals/01-simplify-expressions-with-roots.md) | `m81444` | metadata matched | 3/3 | 3/3 | 28% | 21/24 | 51 |
+| [intermediate-algebra 8.2](../../content/math/intermediate-algebra/08-roots-and-radicals/02-simplify-radical-expressions.md) | `m81445` | metadata matched | 2/2 | 2/2 | 61% | 22/26 | 43 |
+| [intermediate-algebra 8.3](../../content/math/intermediate-algebra/08-roots-and-radicals/03-simplify-rational-exponents.md) | `m81396` | metadata matched | 3/3 | 3/3 | 56% | 19/20 | 40 |
+| [intermediate-algebra 8.4](../../content/math/intermediate-algebra/08-roots-and-radicals/04-add-subtract-and-multiply-radical-expressions.md) | `m81397` | metadata matched | 3/3 | 3/3 | 66% | 18/22 | 43 |
+| [intermediate-algebra 8.5](../../content/math/intermediate-algebra/08-roots-and-radicals/05-divide-radical-expressions.md) | `m81446` | metadata matched | 3/3 | 3/3 | 70% | 18/18 | 31 |
+| [intermediate-algebra 8.6](../../content/math/intermediate-algebra/08-roots-and-radicals/06-solve-radical-equations.md) | `m81398` | metadata matched | 3/3 | 3/3 | 75% | 24/24 | 33 |
+| [intermediate-algebra 8.7](../../content/math/intermediate-algebra/08-roots-and-radicals/07-use-radicals-in-functions.md) | `m81447` | metadata matched | 3/3 | 3/3 | 62% | 16/16 | 37 |
+| [intermediate-algebra 8.8](../../content/math/intermediate-algebra/08-roots-and-radicals/08-use-the-complex-number-system.md) | `m81448` | metadata matched | 5/5 | 5/5 | 83% | 20/28 | 46 |
+| [intermediate-algebra 9.1](../../content/math/intermediate-algebra/09-quadratic-equations-and-functions/01-solve-quadratic-equations-using-the-square-root-property.md) | `m81400` | metadata matched | 2/2 | 2/2 | 34% | 18/20 | 25 |
+| [intermediate-algebra 9.2](../../content/math/intermediate-algebra/09-quadratic-equations-and-functions/02-solve-quadratic-equations-by-completing-the-square.md) | `m81401` | metadata matched | 3/3 | 3/3 | 60% | 20/20 | 28 |
+| [intermediate-algebra 9.3](../../content/math/intermediate-algebra/09-quadratic-equations-and-functions/03-solve-quadratic-equations-using-the-quadratic-formula.md) | `m81449` | metadata matched | 3/3 | 3/3 | 44% | 18/18 | 29 |
+| [intermediate-algebra 9.4](../../content/math/intermediate-algebra/09-quadratic-equations-and-functions/04-solve-equations-in-quadratic-form.md) | `m81402` | metadata matched | 1/1 | 1/1 | 68% | 10/10 | 15 |
+| [intermediate-algebra 9.5](../../content/math/intermediate-algebra/09-quadratic-equations-and-functions/05-solve-applications-of-quadratic-equations.md) | `m81403` | metadata matched | 1/1 | 1/1 | 54% | 14/14 | 19 |
+| [intermediate-algebra 9.6](../../content/math/intermediate-algebra/09-quadratic-equations-and-functions/06-graph-quadratic-functions-using-properties.md) | `m81404` | metadata matched | 5/5 | 5/5 | 64% | 22/22 | 43 |
+| [intermediate-algebra 9.7](../../content/math/intermediate-algebra/09-quadratic-equations-and-functions/07-graph-quadratic-functions-using-transformations.md) | `m81405` | metadata matched | 5/5 | 5/5 | 60% | 22/22 | 36 |
+| [intermediate-algebra 9.8](../../content/math/intermediate-algebra/09-quadratic-equations-and-functions/08-solve-quadratic-inequalities.md) | `m81406` | metadata matched | 2/2 | 2/2 | 52% | 10/10 | 17 |
+| [intermediate-algebra 10.1](../../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/01-finding-composite-and-inverse-functions.md) | `m81408` | metadata matched | 3/3 | 3/3 | 81% | 16/18 | 29 |
+| [intermediate-algebra 10.2](../../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/02-evaluate-and-graph-exponential-functions.md) | `m81409` | metadata matched | 3/3 | 3/3 | 60% | 14/16 | 23 |
+| [intermediate-algebra 10.3](../../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/03-evaluate-and-graph-logarithmic-functions.md) | `m81410` | metadata matched | 5/5 | 5/5 | 71% | 18/20 | 57 |
+| [intermediate-algebra 10.4](../../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/04-use-the-properties-of-logarithms.md) | `m81411` | metadata matched | 2/2 | 2/2 | 77% | 15/20 | 25 |
+| [intermediate-algebra 10.5](../../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/05-solve-exponential-and-logarithmic-equations.md) | `m81450` | metadata matched | 3/3 | 3/3 | 74% | 14/16 | 25 |
+| [intermediate-algebra 11.1](../../content/math/intermediate-algebra/11-conics/01-distance-and-midpoint-formulas-circles.md) | `m81452` | metadata matched | 4/4 | 4/4 | 66% | 22/22 | 33 |
+| [intermediate-algebra 11.2](../../content/math/intermediate-algebra/11-conics/02-parabolas.md) | `m81413` | metadata matched | 3/3 | 3/3 | 6% | 16/16 | 30 |
+| [intermediate-algebra 11.3](../../content/math/intermediate-algebra/11-conics/03-ellipses.md) | `m81414` | metadata matched | 4/4 | 3/3 | 70% | 14/14 | 25 |
+| [intermediate-algebra 11.4](../../content/math/intermediate-algebra/11-conics/04-hyperbolas.md) | `m81415` | metadata matched | 3/3 | 3/3 | 68% | 12/12 | 23 |
+| [intermediate-algebra 11.5](../../content/math/intermediate-algebra/11-conics/05-solve-systems-of-nonlinear-equations.md) | `m81453` | metadata matched | 4/4 | 4/4 | 46% | 15/16 | 17 |
+| [intermediate-algebra 12.1](../../content/math/intermediate-algebra/12-sequences-series-and-binomial-theorem/01-sequences.md) | `m81417` | metadata matched | 5/5 | 5/5 | 75% | 24/24 | 39 |
+| [intermediate-algebra 12.2](../../content/math/intermediate-algebra/12-sequences-series-and-binomial-theorem/02-arithmetic-sequences.md) | `m81418` | metadata matched | 3/3 | 3/3 | 67% | 16/16 | 44 |
+| [intermediate-algebra 12.3](../../content/math/intermediate-algebra/12-sequences-series-and-binomial-theorem/03-geometric-sequences-and-series.md) | `m81419` | metadata matched | 5/5 | 5/5 | 40% | 20/20 | 41 |
+| [intermediate-algebra 12.4](../../content/math/intermediate-algebra/12-sequences-series-and-binomial-theorem/04-binomial-theorem.md) | `m81420` | metadata matched | 3/3 | 3/3 | 57% | 16/18 | 31 |
+| [prealgebra 1.1](../../content/math/prealgebra/01-whole-numbers/01-introduction.md) | `m81243` | metadata matched | 6/6 | 6/6 | 27% | 9/20 | 25 |
+| [prealgebra 1.2](../../content/math/prealgebra/01-whole-numbers/02-add-whole-numbers.md) | `m81244` | metadata matched | 5/5 | 5/5 | 11% | 9/30 | 26 |
+| [prealgebra 1.3](../../content/math/prealgebra/01-whole-numbers/03-subtract-whole-numbers.md) | `m81245` | metadata matched | 5/5 | 5/5 | 29% | 19/26 | 24 |
+| [prealgebra 1.4](../../content/math/prealgebra/01-whole-numbers/04-multiply-whole-numbers.md) | `m81255` | metadata matched | 5/5 | 5/5 | 16% | 14/34 | 24 |
+| [prealgebra 1.5](../../content/math/prealgebra/01-whole-numbers/05-divide-whole-numbers.md) | `m81256` | metadata matched | 5/5 | 5/5 | 21% | 24/26 | 23 |
+| [prealgebra 2.1](../../content/math/prealgebra/02-the-language-of-algebra/01-use-the-language-of-algebra.md) | `m81268` | metadata matched | 4/4 | 4/4 | 14% | 20/24 | 30 |
+| [prealgebra 2.2](../../content/math/prealgebra/02-the-language-of-algebra/02-evaluate-simplify-and-translate-expressions.md) | `m81270` | metadata matched | 4/4 | 4/4 | 12% | 18/30 | 26 |
+| [prealgebra 2.3](../../content/math/prealgebra/02-the-language-of-algebra/03-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md) | `m81271` | adapted-verified | 6/6 | 5/6 | 16% | 17/24 | 30 |
+| [prealgebra 2.4](../../content/math/prealgebra/02-the-language-of-algebra/04-find-multiples-and-factors.md) | `m81272` | metadata matched | 4/4 | 4/4 | 12% | 5/16 | 21 |
+| [prealgebra 2.5](../../content/math/prealgebra/02-the-language-of-algebra/05-prime-factorization-and-the-least-common-multiple.md) | `m81273` | metadata matched | 2/2 | 2/2 | 79% | 12/14 | 20 |
+| [prealgebra 3.1](../../content/math/prealgebra/03-integers/01-introduction-to-integers.md) | `m81275` | metadata matched | 5/5 | 5/5 | 28% | 12/26 | 41 |
+| [prealgebra 3.2](../../content/math/prealgebra/03-integers/02-add-integers.md) | `m81276` | metadata matched | 5/5 | 5/5 | 21% | 24/30 | 41 |
+| [prealgebra 3.3](../../content/math/prealgebra/03-integers/03-subtract-integers.md) | `m81277` | metadata matched | 5/5 | 5/5 | 21% | 25/34 | 44 |
+| [prealgebra 3.4](../../content/math/prealgebra/03-integers/04-multiply-and-divide-integers.md) | `m81278` | metadata matched | 5/5 | 5/5 | 28% | 20/26 | 37 |
+| [prealgebra 3.5](../../content/math/prealgebra/03-integers/05-solve-equations-using-integers-the-division-property-of-equality.md) | `m81281` | metadata matched | 5/5 | 5/5 | 23% | 11/18 | 30 |
+| [prealgebra 4.1](../../content/math/prealgebra/04-fractions/01-visualize-fractions.md) | `m81285` | metadata matched | 7/7 | 7/7 | 10% | 27/36 | 38 |
+| [prealgebra 4.2](../../content/math/prealgebra/04-fractions/02-multiply-and-divide-fractions.md) | `m81286` | metadata matched | 4/4 | 4/4 | 12% | 25/36 | 30 |
+| [prealgebra 4.3](../../content/math/prealgebra/04-fractions/03-multiply-and-divide-mixed-numbers-and-complex-fractions.md) | `m81287` | metadata matched | 4/4 | 4/4 | 24% | 30/30 | 35 |
+| [prealgebra 4.4](../../content/math/prealgebra/04-fractions/04-add-and-subtract-fractions-with-common-denominators.md) | `m81288` | metadata matched | 4/4 | 4/4 | 16% | 15/22 | 25 |
+| [prealgebra 4.5](../../content/math/prealgebra/04-fractions/05-add-and-subtract-fractions-with-different-denominators.md) | `m81289` | metadata matched | 6/6 | 6/6 | 12% | 28/36 | 38 |
+| [prealgebra 4.6](../../content/math/prealgebra/04-fractions/06-add-and-subtract-mixed-numbers.md) | `m81290` | metadata matched | 5/5 | 5/5 | 18% | 26/28 | 27 |
+| [prealgebra 4.7](../../content/math/prealgebra/04-fractions/07-solve-equations-with-fractions.md) | `m81291` | metadata matched | 4/4 | 4/4 | 18% | 20/28 | 32 |
+| [prealgebra 5.1](../../content/math/prealgebra/05-decimals/01-decimals.md) | `m81293` | metadata matched | 6/6 | 6/6 | 69% | 17/20 | 38 |
+| [prealgebra 5.2](../../content/math/prealgebra/05-decimals/02-decimal-operations.md) | `m81295` | metadata matched | 4/4 | 4/4 | 71% | 31/34 | 49 |
+| [prealgebra 5.3](../../content/math/prealgebra/05-decimals/03-decimals-and-fractions.md) | `m81298` | metadata matched | 4/4 | 4/4 | 58% | 24/24 | 41 |
+| [prealgebra 5.4](../../content/math/prealgebra/05-decimals/04-solve-equations-with-decimals.md) | `m81300` | metadata matched | 3/3 | 3/3 | 67% | 18/18 | 35 |
+| [prealgebra 5.5](../../content/math/prealgebra/05-decimals/05-averages-and-probability.md) | `m81302` | metadata matched | 4/4 | 4/4 | 73% | 18/18 | 33 |
+| [prealgebra 5.6](../../content/math/prealgebra/05-decimals/06-ratios-and-rate.md) | `m81303` | metadata matched | 5/5 | 5/5 | 79% | 19/22 | 43 |
+| [prealgebra 5.7](../../content/math/prealgebra/05-decimals/07-simplify-and-use-square-roots.md) | `m81304` | metadata matched | 5/5 | 5/5 | 31% | 16/26 | 39 |
+| [prealgebra 6.1](../../content/math/prealgebra/06-percents/01-understand-percent.md) | `m81306` | metadata matched | 3/3 | 3/3 | 48% | 26/26 | 36 |
+| [prealgebra 6.2](../../content/math/prealgebra/06-percents/02-solve-general-applications-of-percent.md) | `m81313` | metadata matched | 3/3 | 3/3 | 60% | 22/22 | 38 |
+| [prealgebra 6.3](../../content/math/prealgebra/06-percents/03-solve-sales-tax-commission-and-discount-applications.md) | `m81307` | metadata matched | 4/4 | 4/4 | 59% | 16/16 | 35 |
+| [prealgebra 6.4](../../content/math/prealgebra/06-percents/04-solve-simple-interest-applications.md) | `m81308` | metadata matched | 2/2 | 2/2 | 66% | 14/14 | 26 |
+| [prealgebra 6.5](../../content/math/prealgebra/06-percents/05-solve-proportions-and-their-applications.md) | `m81311` | metadata matched | 5/5 | 5/5 | 50% | 30/30 | 50 |
+| [prealgebra 7.1](../../content/math/prealgebra/07-the-properties-of-real-numbers/01-rational-and-irrational-numbers.md) | `m81315` | metadata matched | 2/2 | 2/2 | 68% | 6/8 | 21 |
+| [prealgebra 7.2](../../content/math/prealgebra/07-the-properties-of-real-numbers/02-commutative-and-associative-properties.md) | `m81316` | metadata matched | 3/3 | 3/3 | 47% | 18/24 | 25 |
+| [prealgebra 7.3](../../content/math/prealgebra/07-the-properties-of-real-numbers/03-distributive-property.md) | `m81317` | metadata matched | 2/2 | 2/2 | 51% | 23/32 | 28 |
+| [prealgebra 7.4](../../content/math/prealgebra/07-the-properties-of-real-numbers/04-properties-of-identity-inverses-and-zero.md) | `m81318` | metadata matched | 4/4 | 4/4 | 56% | 14/22 | 24 |
+| [prealgebra 7.5](../../content/math/prealgebra/07-the-properties-of-real-numbers/05-systems-of-measurement.md) | `m81330` | metadata matched | 6/6 | 6/6 | 53% | 16/30 | 31 |
+| [prealgebra 8.1](../../content/math/prealgebra/08-solving-linear-equations/01-solve-equations-using-the-subtraction-and-addition-properties-of-equality.md) | `m81320` | metadata matched | 4/4 | 4/4 | 58% | 21/24 | 29 |
+| [prealgebra 8.2](../../content/math/prealgebra/08-solving-linear-equations/02-solve-equations-using-the-division-and-multiplication-properties-of-equality.md) | `m81321` | metadata matched | 2/2 | 2/2 | 49% | 8/14 | 20 |
+| [prealgebra 8.3](../../content/math/prealgebra/08-solving-linear-equations/03-solve-equations-with-variables-and-constants-on-both-sides.md) | `m81322` | metadata matched | 4/4 | 4/4 | 59% | 25/34 | 32 |
+| [prealgebra 8.4](../../content/math/prealgebra/08-solving-linear-equations/04-solve-equations-with-fraction-or-decimal-coefficients.md) | `m81323` | metadata matched | 2/2 | 2/2 | 50% | 14/16 | 24 |
+| [prealgebra 9.1](../../content/math/prealgebra/09-math-models-and-geometry/01-use-a-problem-solving-strategy.md) | `m81324` | metadata matched | 3/3 | 3/3 | 29% | 17/20 | 28 |
+| [prealgebra 9.2](../../content/math/prealgebra/09-math-models-and-geometry/02-solve-money-applications.md) | `m81325` | metadata matched | 2/2 | 2/2 | 31% | 10/10 | 19 |
+| [prealgebra 9.3](../../content/math/prealgebra/09-math-models-and-geometry/03-use-properties-of-angles-triangles-and-the-pythagorean-theorem.md) | `m81326` | metadata matched | 3/3 | 3/3 | 37% | 14/14 | 36 |
+| [prealgebra 9.4](../../content/math/prealgebra/09-math-models-and-geometry/04-use-properties-of-rectangles-triangles-and-trapezoids.md) | `m81332` | metadata matched | 4/4 | 4/4 | 46% | 31/32 | 48 |
+| [prealgebra 9.5](../../content/math/prealgebra/09-math-models-and-geometry/05-solve-geometry-applications-circles-and-irregular-figures.md) | `m81327` | metadata matched | 2/2 | 2/2 | 28% | 6/12 | 21 |
+| [prealgebra 9.6](../../content/math/prealgebra/09-math-models-and-geometry/06-solve-geometry-applications-volume-and-surface-area.md) | `m81328` | omitted-approved | 4/4 | 4/5 | 29% | 19/20 | 37 |
+| [prealgebra 9.7](../../content/math/prealgebra/09-math-models-and-geometry/07-solve-a-formula-for-a-specific-variable.md) | `m81329` | metadata matched | 2/2 | 2/2 | 7% | 18/18 | 32 |
+| [prealgebra 10.1](../../content/math/prealgebra/10-polynomials/01-add-and-subtract-polynomials.md) | `m81334` | metadata matched | 5/5 | 5/5 | 47% | 17/20 | 36 |
+| [prealgebra 10.2](../../content/math/prealgebra/10-polynomials/02-use-multiplication-properties-of-exponents.md) | `m81335` | metadata matched | 6/6 | 6/6 | 56% | 33/34 | 55 |
+| [prealgebra 10.3](../../content/math/prealgebra/10-polynomials/03-multiply-polynomials.md) | `m81336` | metadata matched | 3/3 | 3/3 | 45% | 29/34 | 37 |
+| [prealgebra 10.4](../../content/math/prealgebra/10-polynomials/04-divide-monomials.md) | `m81337` | metadata matched | 5/5 | 5/5 | 32% | 36/36 | 54 |
+| [prealgebra 10.5](../../content/math/prealgebra/10-polynomials/05-integer-exponents-and-scientific-notation.md) | `m81342` | metadata matched | 5/5 | 5/5 | 37% | 30/34 | 41 |
+| [prealgebra 10.6](../../content/math/prealgebra/10-polynomials/06-introduction-to-factoring-polynomials.md) | `m81347` | metadata matched | 2/2 | 2/2 | 52% | 27/28 | 41 |
+| [prealgebra 11.1](../../content/math/prealgebra/11-graphs/01-use-the-rectangular-coordinate-system.md) | `m81340` | metadata matched | 5/5 | 5/5 | 62% | 20/28 | 31 |
+| [prealgebra 11.2](../../content/math/prealgebra/11-graphs/02-graphing-linear-equations.md) | `m81345` | metadata matched | 3/3 | 3/3 | 65% | 15/15 | 31 |
+| [prealgebra 11.3](../../content/math/prealgebra/11-graphs/03-graphing-with-intercepts.md) | `m81350` | metadata matched | 4/4 | 4/4 | 62% | 14/14 | 31 |
+| [prealgebra 11.4](../../content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md) | `m81354` | adapted-verified | 5/5 | 6/6 | 60% | 30/30 | 41 |
+| [precalculus 1.1](../../content/math/precalculus/01-functions/01-functions-and-function-notation.md) | `m49301` | metadata matched | 5/5 | 7/7 | 76% | 0/0 | 29 |
+| [precalculus 1.2](../../content/math/precalculus/01-functions/02-domain-and-range.md) | `m49304` | metadata matched | 2/2 | 5/5 | 53% | 0/0 | 21 |
+| [precalculus 1.3](../../content/math/precalculus/01-functions/03-rates-of-change-and-behavior-of-graphs.md) | `m49306` | metadata matched | 4/4 | 5/5 | 71% | 0/0 | 15 |
+| [precalculus 1.4](../../content/math/precalculus/01-functions/04-composition-of-functions.md) | `m49308` | metadata matched | 5/5 | 6/6 | 78% | 0/0 | 25 |
+| [precalculus 1.5](../../content/math/precalculus/01-functions/05-transformation-of-functions.md) | `m49312` | metadata matched | 5/5 | 6/6 | 51% | 0/0 | 23 |
+| [precalculus 1.6](../../content/math/precalculus/01-functions/06-absolute-value-functions.md) | `m49314` | metadata matched | 3/3 | 4/4 | 21% | 0/0 | 16 |
+| [precalculus 1.7](../../content/math/precalculus/01-functions/07-inverse-functions.md) | `m49320` | metadata matched | 4/4 | 4/4 | 76% | 0/0 | 23 |
+| [precalculus 2.1](../../content/math/precalculus/02-linear-functions/01-linear-functions.md) | `m49324` | metadata matched | 5/5 | 7/7 | 60% | 0/0 | 25 |
+| [precalculus 2.2](../../content/math/precalculus/02-linear-functions/02-graphs-of-linear-functions.md) | `m50389` | metadata matched | 5/5 | 7/7 | 21% | 0/0 | 24 |
+| [precalculus 2.3](../../content/math/precalculus/02-linear-functions/03-modeling-with-linear-functions.md) | `m49326` | metadata matched | 3/3 | 3/3 | 74% | 0/0 | 17 |
+| [precalculus 2.4](../../content/math/precalculus/02-linear-functions/04-fitting-linear-models-to-data.md) | `m49327` | metadata matched | 4/4 | 4/4 | 74% | 0/0 | 14 |
+| [precalculus 3.1](../../content/math/precalculus/03-polynomial-and-rational-functions/01-complex-numbers.md) | `m49335` | metadata matched | 4/4 | 6/6 | 58% | 0/0 | 20 |
+| [precalculus 3.2](../../content/math/precalculus/03-polynomial-and-rational-functions/02-quadratic-functions.md) | `m49337` | metadata matched | 4/4 | 5/5 | 49% | 0/0 | 29 |
+| [precalculus 3.3](../../content/math/precalculus/03-polynomial-and-rational-functions/03-power-functions-and-polynomial-functions.md) | `m49346` | metadata matched | 4/4 | 5/5 | 70% | 0/0 | 27 |
+| [precalculus 3.4](../../content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md) | `m49347` | metadata matched | 7/7 | 7/7 | 35% | 0/0 | 23 |
+| [precalculus 3.5](../../content/math/precalculus/03-polynomial-and-rational-functions/05-dividing-polynomials.md) | `m49348` | metadata matched | 2/2 | 4/4 | 56% | 0/0 | 10 |
+| [precalculus 3.6](../../content/math/precalculus/03-polynomial-and-rational-functions/06-zeros-of-polynomial-functions.md) | `m49349` | metadata matched | 7/7 | 8/8 | 73% | 0/0 | 24 |
+| [precalculus 3.7](../../content/math/precalculus/03-polynomial-and-rational-functions/07-rational-functions.md) | `m49351` | metadata matched | 6/6 | 8/8 | 36% | 0/0 | 34 |
+| [precalculus 3.8](../../content/math/precalculus/03-polynomial-and-rational-functions/08-inverses-and-radical-functions.md) | `m49352` | metadata matched | 2/2 | 2/2 | 71% | 0/0 | 14 |
+| [precalculus 3.9](../../content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md) | `m49353` | adapted-verified | 3/3 | 4/5 | 50% | 0/0 | 12 |
+| [precalculus 4.1](../../content/math/precalculus/04-exponential-and-logarithmic-functions/01-exponential-functions.md) | `m49361` | metadata matched | 4/4 | 7/7 | 10% | 0/0 | 27 |
+| [precalculus 4.2](../../content/math/precalculus/04-exponential-and-logarithmic-functions/02-graphs-of-exponential-functions.md) | `m49362` | metadata matched | 2/2 | 3/3 | 41% | 0/0 | 31 |
+| [precalculus 4.3](../../content/math/precalculus/04-exponential-and-logarithmic-functions/03-logarithmic-functions.md) | `m49363` | metadata matched | 5/5 | 6/6 | 43% | 0/0 | 21 |
+| [precalculus 4.4](../../content/math/precalculus/04-exponential-and-logarithmic-functions/04-graphs-of-logarithmic-functions.md) | `m49364` | metadata matched | 2/2 | 4/4 | 26% | 0/0 | 20 |
+| [precalculus 4.5](../../content/math/precalculus/04-exponential-and-logarithmic-functions/05-logarithmic-properties.md) | `m49365` | metadata matched | 6/6 | 7/7 | 17% | 0/0 | 28 |
+| [precalculus 4.6](../../content/math/precalculus/04-exponential-and-logarithmic-functions/06-exponential-and-logarithmic-equations.md) | `m49366` | metadata matched | 5/5 | 6/6 | 43% | 0/0 | 30 |
+| [precalculus 4.7](../../content/math/precalculus/04-exponential-and-logarithmic-functions/07-exponential-and-logarithmic-models.md) | `m49367` | metadata matched | 5/5 | 6/6 | 8% | 0/0 | 27 |
+| [precalculus 4.8](../../content/math/precalculus/04-exponential-and-logarithmic-functions/08-fitting-exponential-models-to-data.md) | `m49368` | metadata matched | 3/3 | 3/3 | 22% | 0/0 | 19 |
+| [precalculus 5.1](../../content/math/precalculus/05-trigonometric-functions/01-angles.md) | `m49371` | metadata matched | 5/5 | 7/7 | 41% | 0/0 | 27 |
+| [precalculus 5.2](../../content/math/precalculus/05-trigonometric-functions/02-unit-circle-sine-and-cosine-functions.md) | `m49372` | metadata matched | 3/3 | 6/6 | 65% | 0/0 | 23 |
+| [precalculus 5.3](../../content/math/precalculus/05-trigonometric-functions/03-the-other-trigonometric-functions.md) | `m49374` | metadata matched | 5/5 | 6/6 | 39% | 0/0 | 35 |
+| [precalculus 5.4](../../content/math/precalculus/05-trigonometric-functions/04-right-triangle-trigonometry.md) | `m49384` | adapted-verified | 5/5 | 2/3 | 49% | 0/0 | 23 |
+| [precalculus 6.1](../../content/math/precalculus/06-periodic-functions/01-graphs-of-the-sine-and-cosine-functions.md) | `m49387` | metadata matched | 2/2 | 6/6 | 15% | 0/0 | 28 |
+| [precalculus 6.2](../../content/math/precalculus/06-periodic-functions/02-graphs-of-the-other-trigonometric-functions.md) | `m49389` | objective-needs-review | 4/6 | 8/8 | 4% | 0/0 | 21 |
+| [precalculus 6.3](../../content/math/precalculus/06-periodic-functions/03-inverse-trigonometric-functions.md) | `m49390` | metadata matched | 4/4 | 4/4 | 38% | 0/0 | 25 |
+| [precalculus 7.1](../../content/math/precalculus/07-trigonometric-identities-and-equations/01-simplifying-and-verifying-trigonometric-identities.md) | `m49393` | metadata matched | 2/2 | 3/3 | 51% | 0/0 | 11 |
+| [precalculus 7.2](../../content/math/precalculus/07-trigonometric-identities-and-equations/02-sum-and-difference-identities.md) | `m49395` | metadata matched | 5/5 | 6/6 | 21% | 0/0 | 15 |
+| [precalculus 7.3](../../content/math/precalculus/07-trigonometric-identities-and-equations/03-double-angle-half-angle-and-reduction-formulas.md) | `m49396` | metadata matched | 4/4 | 5/5 | 33% | 0/0 | 14 |
+| [precalculus 7.4](../../content/math/precalculus/07-trigonometric-identities-and-equations/04-sum-to-product-and-product-to-sum-formulas.md) | `m49397` | metadata matched | 2/2 | 3/3 | 38% | 0/0 | 15 |
+| [precalculus 7.5](../../content/math/precalculus/07-trigonometric-identities-and-equations/05-solving-trigonometric-equations.md) | `m49398` | metadata matched | 7/7 | 7/7 | 20% | 0/0 | 19 |
+| [precalculus 7.6](../../content/math/precalculus/07-trigonometric-identities-and-equations/06-modeling-with-trigonometric-functions.md) | `m49399` | metadata matched | 4/4 | 5/5 | 57% | 0/0 | 14 |
+| [precalculus 8.1](../../content/math/precalculus/08-further-applications-of-trigonometry/01-non-right-triangles-law-of-sines.md) | `m49404` | metadata matched | 3/3 | 5/5 | 23% | 0/0 | 17 |
+| [precalculus 8.2](../../content/math/precalculus/08-further-applications-of-trigonometry/02-non-right-triangles-law-of-cosines.md) | `m49405` | metadata matched | 3/3 | 4/4 | 62% | 0/0 | 14 |
+| [precalculus 8.3](../../content/math/precalculus/08-further-applications-of-trigonometry/03-polar-coordinates.md) | `m49406` | metadata matched | 5/5 | 6/6 | 49% | 0/0 | 17 |
+| [precalculus 8.4](../../content/math/precalculus/08-further-applications-of-trigonometry/04-polar-coordinates-graphs.md) | `m49407` | metadata matched | 2/2 | 3/3 | 32% | 0/0 | 19 |
+| [precalculus 8.5](../../content/math/precalculus/08-further-applications-of-trigonometry/05-polar-form-of-complex-numbers.md) | `m49408` | metadata matched | 8/8 | 8/8 | 39% | 0/0 | 27 |
+| [precalculus 8.6](../../content/math/precalculus/08-further-applications-of-trigonometry/06-parametric-equations.md) | `m49409` | metadata matched | 4/4 | 4/4 | 69% | 0/0 | 15 |
+| [precalculus 8.7](../../content/math/precalculus/08-further-applications-of-trigonometry/07-parametric-equations-graphs.md) | `m49411` | metadata matched | 2/2 | 2/2 | 60% | 0/0 | 11 |
+| [precalculus 8.8](../../content/math/precalculus/08-further-applications-of-trigonometry/08-vectors.md) | `m49412` | metadata matched | 7/7 | 10/10 | 64% | 0/0 | 23 |
+| [precalculus 9.1](../../content/math/precalculus/09-systems-of-equations-and-inequalities/01-systems-of-linear-equations-two-variables.md) | `m49420` | metadata matched | 5/5 | 7/7 | 57% | 1/1 | 21 |
+| [precalculus 9.2](../../content/math/precalculus/09-systems-of-equations-and-inequalities/02-systems-of-linear-equations-three-variables.md) | `m49419` | metadata matched | 3/3 | 3/3 | 45% | 0/0 | 11 |
+| [precalculus 9.3](../../content/math/precalculus/09-systems-of-equations-and-inequalities/03-systems-of-nonlinear-equations-and-inequalities-two-variables.md) | `m49431` | metadata matched | 4/4 | 4/4 | 43% | 0/0 | 12 |
+| [precalculus 9.4](../../content/math/precalculus/09-systems-of-equations-and-inequalities/04-partial-fractions.md) | `m49432` | metadata matched | 4/4 | 4/4 | 39% | 0/0 | 12 |
+| [precalculus 9.5](../../content/math/precalculus/09-systems-of-equations-and-inequalities/05-matrices-and-matrix-operations.md) | `m49433` | metadata matched | 3/3 | 3/3 | 55% | 0/0 | 11 |
+| [precalculus 9.6](../../content/math/precalculus/09-systems-of-equations-and-inequalities/06-solving-systems-with-gaussian-elimination.md) | `m49434` | metadata matched | 4/4 | 4/4 | 43% | 0/0 | 17 |
+| [precalculus 9.7](../../content/math/precalculus/09-systems-of-equations-and-inequalities/07-solving-systems-with-inverses.md) | `m49435` | metadata matched | 2/2 | 3/3 | 44% | 0/0 | 12 |
+| [precalculus 9.8](../../content/math/precalculus/09-systems-of-equations-and-inequalities/08-solving-systems-with-cramers-rule.md) | `m49436` | heading-needs-review | 5/5 | 5/6 | 35% | 0/0 | 17 |
+| [precalculus 10.1](../../content/math/precalculus/10-analytic-geometry/01-the-ellipse.md) | `m49438` | metadata matched | 4/4 | 5/5 | 56% | 0/2 | 24 |
+| [precalculus 10.2](../../content/math/precalculus/10-analytic-geometry/02-the-hyperbola.md) | `m49439` | metadata matched | 5/5 | 6/6 | 64% | 0/0 | 30 |
+| [precalculus 10.3](../../content/math/precalculus/10-analytic-geometry/03-the-parabola.md) | `m49440` | metadata matched | 4/4 | 5/5 | 29% | 0/0 | 33 |
+| [precalculus 10.4](../../content/math/precalculus/10-analytic-geometry/04-rotation-of-axes.md) | `m49441` | metadata matched | 4/4 | 4/4 | 27% | 0/0 | 18 |
+| [precalculus 10.5](../../content/math/precalculus/10-analytic-geometry/05-conic-sections-in-polar-coordinates.md) | `m49442` | metadata matched | 3/3 | 3/3 | 40% | 0/0 | 15 |
+| [precalculus 11.1](../../content/math/precalculus/11-sequences-probability-and-counting-theory/01-sequences-and-their-notations.md) | `m49444` | metadata matched | 3/3 | 4/4 | 61% | 0/0 | 21 |
+| [precalculus 11.2](../../content/math/precalculus/11-sequences-probability-and-counting-theory/02-arithmetic-sequences.md) | `m49445` | metadata matched | 4/4 | 5/5 | 55% | 0/0 | 21 |
+| [precalculus 11.3](../../content/math/precalculus/11-sequences-probability-and-counting-theory/03-geometric-sequences.md) | `m49446` | metadata matched | 4/4 | 6/6 | 50% | 1/1 | 20 |
+| [precalculus 11.4](../../content/math/precalculus/11-sequences-probability-and-counting-theory/04-series-and-their-notations.md) | `m49447` | metadata matched | 5/5 | 6/6 | 50% | 0/0 | 27 |
+| [precalculus 11.5](../../content/math/precalculus/11-sequences-probability-and-counting-theory/05-counting-principles.md) | `m49448` | metadata matched | 6/6 | 7/7 | 59% | 0/0 | 28 |
+| [precalculus 11.6](../../content/math/precalculus/11-sequences-probability-and-counting-theory/06-binomial-theorem.md) | `m49449` | metadata matched | 1/1 | 4/4 | 57% | 0/0 | 12 |
+| [precalculus 11.7](../../content/math/precalculus/11-sequences-probability-and-counting-theory/07-probability.md) | `m49450` | metadata matched | 5/5 | 7/7 | 63% | 0/0 | 19 |
+| [precalculus 12.1](../../content/math/precalculus/12-introduction-to-calculus/01-finding-limits-numerical-and-graphical-approaches.md) | `m49452` | metadata matched | 3/3 | 3/3 | 62% | 0/0 | 24 |
+| [precalculus 12.2](../../content/math/precalculus/12-introduction-to-calculus/02-finding-limits-properties-of-limits.md) | `m49453` | metadata matched | 4/4 | 4/4 | 63% | 0/0 | 28 |
+| [precalculus 12.3](../../content/math/precalculus/12-introduction-to-calculus/03-continuity.md) | `m49454` | metadata matched | 3/3 | 4/4 | 56% | 0/0 | 19 |
+| [precalculus 12.4](../../content/math/precalculus/12-introduction-to-calculus/04-derivatives.md) | `m49455` | metadata matched | 4/4 | 6/6 | 65% | 0/0 | 27 |
+
+## Flag details
+
+### precalculus 6.2 — Graphs of the Other Trigonometric Functions
+
+Flags: `objective-needs-review`
+
+- Objective (80% token coverage): Analyze the graph of y=tan x.
+- Objective (75% token coverage): Graph variations of y=tan x.
+
+### precalculus 9.8 — Solving Systems with Cramer's Rule
+
+Flags: `heading-needs-review`
+
+- Source heading (0% best title similarity): Review Exercises
+
 
 ## Adjudicated intentional adaptations
 
@@ -302,5 +359,5 @@ or intentionally omitted print material.
 
 ### precalculus 5.4 — Right Triangle Trigonometry
 
-- **adapted-verified:** Section 5.4 is the LAST section of chapter 5, and m49384 carries the whole chapter's end matter after its own Section Exercises: a 'Review Exercises' set (whose subsections link back to m49371, m49372, m49374 and m49384) and a 'Practice Test'. The audit reads those as source headings of 5.4 with no local counterpart and raises heading-needs-review. They are deliberately absent: both cover all four sections of chapter 5, so folding their items into 5.4's Practice block would attribute chapter-wide material to one section and hide the other three sections' skills inside a right-triangle page. The section-final Practice block draws only from the module's own '5.4 Section Exercises' set. Chapter-level assessment belongs in a Knowledge Check page, not here. Same adjudication as content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md (m49353), whose covers_note predicted this recurrence.
+- **adapted-verified:** Section 5.4 is the LAST section of chapter 5, and m49384 carries the whole chapter's end matter after its own Section Exercises: a 'Review Exercises' set (whose subsections link back to m49371, m49372, m49374 and m49384) and a 'Practice Test'; the printed book carries both under 'Chapter Review' (PDF pages 618 onward), after section 5.4 ends. The audit reads those as source headings of 5.4 with no local counterpart and raises heading-needs-review. They are deliberately absent: both cover all four sections of chapter 5, so folding their items into 5.4's Practice block would attribute chapter-wide material to one section and hide the other three sections' skills inside a right-triangle page. Section 5.4's own six headings are all present, in source order, and the section-final Practice block draws only from the module's own '5.4 Section Exercises' set. Do not 'resolve' this flag by transcribing chapter review material into the section page; chapter-level assessment belongs in a Knowledge Check page, not here. Same adjudication as content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md (m49353), whose covers_note predicted this recurrence.
 

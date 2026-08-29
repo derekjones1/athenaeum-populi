@@ -53,6 +53,7 @@ function capture(path, pattern, label) {
 // it lands.
 const GENERATED_OR_LOCAL_DOCS = new Set([
   'openstax-existing-math-audit.md',
+  'openstax-existing-biology-audit.md',
   'openstax-upstream-history-audit.md',
   'openstax-errata.md',
 ]);
