@@ -15,7 +15,7 @@ npm run serve
 
 No browser install step is needed: the Playwright suites drive the Chrome
 already installed on the machine, launched through
-`tools/chrome-stdio-shim.sh`. See `AGENTS.md` §Browsers.
+`tools/build/chrome-stdio-shim.sh`. See `AGENTS.md` §Browsers.
 
 Open <http://localhost:1313>. npm supplies the browser dependencies and fronts
 verification, source-reconciliation, and Pagefind commands; Hugo builds and
@@ -43,7 +43,7 @@ Subject → Book → Chapter → Section.
 
 The completed OpenStax math books also have a pinned, report-only source
 reconciliation workflow. See
-[docs/openstax-source-workflow.md](docs/openstax-source-workflow.md) before
+[docs/source/openstax-source-workflow.md](docs/source/openstax-source-workflow.md) before
 changing those books. `npm run source:verify` checks the committed 274-section
 map offline; after `npm run source:fetch`, `npm run source:check` audits the
 local pages without rewriting them.

@@ -22,7 +22,7 @@
        to the fingerprinted files too. */ -}}
 {{- if site.Params.components.enable -}}
   {{- $engineURL := "" -}}
-  {{- with resources.Get "js/fillin-engine.js" -}}
+  {{- with resources.Get "js/engines/fillin-engine.js" -}}
     {{- $eopts := dict "minify" hugo.IsProduction "targetPath" "js/fillin-engine.js" "format" "esm" -}}
     {{- with try (. | js.Build $eopts) -}}
       {{- with .Err -}}{{- errorf "js.Build failed for fillin-engine: %s" . -}}
@@ -34,7 +34,7 @@
     {{- end -}}
   {{- end -}}
   {{- $graphplotURL := "" -}}
-  {{- with resources.Get "js/graphplot-engine.js" -}}
+  {{- with resources.Get "js/engines/graphplot-engine.js" -}}
     {{- $gopts := dict "minify" hugo.IsProduction "targetPath" "js/graphplot-engine.js" "format" "esm" -}}
     {{- with try (. | js.Build $gopts) -}}
       {{- with .Err -}}{{- errorf "js.Build failed for graphplot-engine: %s" . -}}

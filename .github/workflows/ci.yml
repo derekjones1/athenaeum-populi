@@ -62,7 +62,7 @@ jobs:
       # that only surface through the real MathLive field). Encoding the
       # sequence once means a gate added to `npm run ci` can never be missed
       # here. Playwright launches the runner's preinstalled Chrome through
-      # tools/chrome-stdio-shim.sh (the executablePath in
+      # tools/build/chrome-stdio-shim.sh (the executablePath in
       # playwright.config.mjs), so no browser install step is needed.
       - run: npm run ci
 
@@ -139,7 +139,7 @@ jobs:
         if: steps.head.outputs.fresh == 'true'
         run: |
           # The full policy contract is parsed and asserted BEFORE deploy by
-          # tools/audit-build.mjs; this confirms the edge actually serves it.
+          # tools/build/audit-build.mjs; this confirms the edge actually serves it.
           #
           # Bounded polling with a cache-busting query, not one fixed sleep:
           # a single probe once hit a Cloudflare edge cache entry from BEFORE

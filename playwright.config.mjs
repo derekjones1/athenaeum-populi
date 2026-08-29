@@ -16,7 +16,7 @@ const baseURL = process.env.BASE_URL || 'http://127.0.0.1:1315';
 // shim, so the override keeps working. `npx playwright install` remains
 // forbidden (AGENTS.md §Browsers) — the shim resolves the machine's Chrome.
 const chromeShim = fileURLToPath(
-  new URL('./tools/chrome-stdio-shim.sh', import.meta.url),
+  new URL('./tools/build/chrome-stdio-shim.sh', import.meta.url),
 );
 
 // The `ci` script runs `npm run build` and `npm run check:build` immediately

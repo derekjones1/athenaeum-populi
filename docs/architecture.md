@@ -61,7 +61,7 @@ access. After `npm run source:fetch`, `npm run source:check` performs a
 report-only comparison and `npm run source:history` distinguishes inferred
 PDF-era content from later upstream changes. None of these commands writes to
 `content/`; upstream changes require explicit review and the normal content
-verification gates. See `docs/openstax-source-workflow.md`.
+verification gates. See `docs/source/openstax-source-workflow.md`.
 
 ## Search
 
@@ -84,7 +84,7 @@ OpenStax map's integrity offline; it does not fetch upstream or run
 `npm run build` creates a clean Hugo production build and the Pagefind index.
 `npm run check:build` then verifies routes, internal links, search coverage,
 the SEO surface (corpus-unique composed `<title>`s, canonicals, and the
-breadcrumb/entity JSON-LD — see `tools/check-seo.mjs`),
+breadcrumb/entity JSON-LD — see `tools/build/check-seo.mjs`),
 generated assets, and the 20,000-file ceiling. `npm run test:a11y` runs
 axe-core in Chromium against representative pages in light and dark themes,
 failing on serious or critical WCAG violations. It never measures a

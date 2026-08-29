@@ -5,7 +5,7 @@ architecture. For content work, follow `docs/authoring-playbook.md`; for
 knowledge checks, also follow `docs/knowledge-check-playbook.md`. See
 `docs/architecture.md` for the current build and deployment design. For the
 OpenStax math books — the three algebra books and Precalculus 2e, all four
-complete — also follow `docs/openstax-source-workflow.md`.
+complete — also follow `docs/source/openstax-source-workflow.md`.
 
 ## Stack and constraints
 
@@ -32,7 +32,7 @@ complete — also follow `docs/openstax-source-workflow.md`.
   a local page and chapter parity is enforced book-wide. A future scaffolded
   book marks its unwritten chapter landings `authoring_status: scaffolded`,
   drops the marker from a chapter as soon as it has a section page, and
-  reruns `node tools/openstax-source.mjs build-map` after authoring.
+  reruns `node tools/source/openstax-source.mjs build-map` after authoring.
 
 ## Commands
 
@@ -75,7 +75,7 @@ complete — also follow `docs/openstax-source-workflow.md`.
   `graphplot` exercises instead. `candidates` emits the unread queue
   (`--shard i/n`); `list --verdict convert` is where a conversion session
   starts; merge has the answer ledger's conflict-refusing contract, and
-  `node tools/graphplot-conversion.mjs prune content` retires entries whose
+  `node tools/verify/graphplot-conversion.mjs prune content` retires entries whose
   exercise was converted or edited (workflow in
   `docs/authoring-playbook.md` §3). The queue is currently EMPTY — all 448
   are adjudicated `keep` — so `list --verdict convert` printing `[]` is the
@@ -161,7 +161,7 @@ ledger. Result files that disagree about a hash fail the merge with nothing
 written — one of those passes read the exercise wrong, so re-read it rather
 than let file order pick a winner. A merge that changes an already-recorded
 verdict prints the change; that is the legitimate re-read flow.
-`node tools/answer-ledger.mjs prune content` drops records stranded by an
+`node tools/verify/answer-ledger.mjs prune content` drops records stranded by an
 edit.
 
 The pass was calibrated before it was trusted: 26 provably-wrong answers were
@@ -178,7 +178,7 @@ noise. Look instead for:
 
 - **Drifted duplication.** Two copies of the same idea that are consistent by
   luck rather than by construction — one shortcode grammar per tool, one
-  directory walker per script. `tools/lib-content.mjs` and `tools/lib-html.mjs`
+  directory walker per script. `tools/lib/content.mjs` and `tools/lib/html.mjs`
   are where a shared primitive belongs.
 - **Gates gone vacuous.** A check that still passes because it stopped
   checking. Watch `verify:answers`' per-class out-of-scope counts: zero
@@ -213,10 +213,10 @@ asks for a `chrome-headless-shell` build that is also absent. That prompt is
 the trap; do not take it.
 
 Both entry points drive the installed Chrome through
-`tools/chrome-stdio-shim.sh`, so no environment variable is needed and
+`tools/build/chrome-stdio-shim.sh`, so no environment variable is needed and
 `npm run ci` passes clean out of the box:
 
-- `tools/screenshot-page.mjs` launches with `executablePath` pointing at the
+- `tools/build/screenshot-page.mjs` launches with `executablePath` pointing at the
   shim.
 - `playwright.config.mjs` sets the same `executablePath` in its shared
   `launchOptions`.

@@ -7,7 +7,7 @@
  * imported inside the components, so esbuild splits them into lazy chunks that
  * never touch this shared bundle.
  */
-import './components/fill-in.js';
-import './components/multiple-choice.js';
-import './components/graph-plot.js';
-import './components/ap-figure.js';
+import './components/math/fill-in.js';
+import './components/shared/multiple-choice.js';
+import './components/math/graph-plot.js';
+import './components/math/ap-figure.js';

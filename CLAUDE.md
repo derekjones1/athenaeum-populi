@@ -7,7 +7,7 @@ list, and the do-not-commit-unless-asked etiquette.
 
 For content work read `docs/authoring-playbook.md`; for cumulative
 assessments also read `docs/knowledge-check-playbook.md`; for the OpenStax
-math books follow `docs/openstax-source-workflow.md` and treat the pinned
-CNXML commit in `data/openstax/math-source-lock.json` as the transcription
+math books follow `docs/source/openstax-source-workflow.md` and treat the pinned
+CNXML commit in `data/openstax/source-lock.json` as the transcription
 authority. Verify with `npm run verify-section -- <page>` and `npm test`
 before handing work back.

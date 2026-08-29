@@ -37,11 +37,11 @@ Before writing:
 1. Read `AGENTS.md`, this playbook, and—when applicable—the Knowledge Check
    playbook. Inspect `git status` and preserve unrelated work.
 2. For an OpenStax math book listed in
-   `data/openstax/math-source-lock.json`, follow
-   `docs/openstax-source-workflow.md`: use the pinned CNXML as the
+   `data/openstax/source-lock.json`, follow
+   `docs/source/openstax-source-workflow.md`: use the pinned CNXML as the
    semantic/transcription authority and render the corresponding local PDF as
    edition evidence and the visual authority. Numbered sections resolve to
-   modules through `data/openstax/math-source-map.json`; current upstream
+   modules through `data/openstax/source-map.json`; current upstream
    `main` is only an update candidate. For a source not covered by the lock,
    use the local source PDF as the content authority.
 3. Keep a source ledger in working notes. For locked OpenStax material, record
@@ -68,7 +68,7 @@ Before writing:
      the raw CNXML plus one independent check — record the discrepancy with
      the evidence, then correct the local page to the module's own
      mathematics, place a visible source note beside the correction, record
-     the local handling in `data/openstax/math-reconciliation-decisions.json`,
+     the local handling in `data/openstax/reconciliation-decisions.json`,
      and log the defect (rule 5). This is the reviewed resolution; it does not
      require a human's approval. The upstream files still do not change.
    - **Locally authored fields → just fix them.** Content with no source
@@ -177,7 +177,7 @@ name and write whole numbers") hides one from the coverage rule, and
 `source:check` flags the count divergence. Keep the wording of an objective
 whose source text is flattened MathML in KaTeX (`$a^{m/n}$`). Where the local
 page deliberately omits an objective, record the decision in
-`data/openstax/math-reconciliation-decisions.json` with
+`data/openstax/reconciliation-decisions.json` with
 `covers: ["objective-needs-review"]`.
 
 Every chapter `_index.md` contains a reader-facing overview in this exact
@@ -369,7 +369,7 @@ requirement distributes. Until August 16, 2026 both list paths returned their
 verdict before the form check ever ran, so the token was silently dropped the
 moment an answer held a comma: "Find $\cos t$ and $\sin t$, separated by a
 comma" accepted its own printed $\cos\tfrac{\pi}{6},\sin\tfrac{\pi}{6}$ with
-`evaluated-trig` declared. `tools/verify-replay.mjs` skipped the whole
+`evaluated-trig` declared. `tools/verify/verify-replay.mjs` skipped the whole
 list-keyed class for that reason and so could not report it; with the grader
 fixed the exemption is gone and those 451 fillins are replayed like any other.
 
@@ -527,12 +527,12 @@ exercise. Per page:
    drifted is a changed exercise.
 3. Re-verify the exercise and record it: the rewritten body has a new
    hash, so `npm test` fails at `verify:ledger` until the record exists.
-   Run `node tools/answer-ledger.mjs prune content` to drop the stranded
+   Run `node tools/verify/answer-ledger.mjs prune content` to drop the stranded
    old records, then `npm run ledger:list -- --unverified`, independently
    confirm the `answerIndex` option is the correct graph (read the specs,
    not the old key), write result files, and `npm run ledger:merge <dir>`.
 4. Gates: `npm run verify-section -- <page>`, `npm test`, `npm run build`,
-   the figure layout spec, and `node tools/screenshot-page.mjs <route>`
+   the figure layout spec, and `node tools/build/screenshot-page.mjs <route>`
    for light/dark crops. The exercise count is unchanged, so no baseline
    moves; the all-same-`answerIndex` lint rule still applies across the
    page.
@@ -787,7 +787,7 @@ new form is the only way new `convert` work appears. To convert:
    bring each section into line as its conversion lands, and promote this
    check to a lint error once the last book is clean — it is mechanical, and
    nothing but the outstanding backlog is keeping it out of
-   `tools/lints.mjs`.
+   `tools/lint/lints.mjs`.
 
    **One adjudicated exception, and the reason the promotion is not automatic:**
    intermediate algebra §3.4 (Graph Linear Inequalities in Two Variables)
@@ -813,12 +813,12 @@ new form is the only way new `convert` work appears. To convert:
    make one line, the next two the other"), so a question ending in the same
    sentence renders it twice.
 7. The rewritten exercise is a re-read exercise: `node
-   tools/answer-ledger.mjs prune content` drops the stranded old record,
+   tools/verify/answer-ledger.mjs prune content` drops the stranded old record,
    then record the new verdict per §4.
-8. `node tools/graphplot-conversion.mjs prune content` — the conversion
+8. `node tools/verify/graphplot-conversion.mjs prune content` — the conversion
    strands the queue entry; pruning it is how the queue burns down.
 9. If a converted fillin is named in `SOUND_COINCIDENCES`
-   (`tools/verify-replay.mjs`), delete that entry — its exercise no longer
+   (`tools/verify/verify-replay.mjs`), delete that entry — its exercise no longer
    exists, and the allowlist test fails with "the question prefix must name
    exactly ONE fillin, matched 0". This is the common case, not an edge one:
    "graph $x = a$, what is the $x$-value…" fillins are exempted *because*
@@ -842,7 +842,7 @@ New graph-topic exercises land in the queue automatically: `npm run
 graphable:candidates` surfaces any graph-topic MC/fillin with no ledger
 entry (three deliberately conservative signals — MC with rendered-graph
 options, graph/sketch/plot prompts, asymptote prompts; widen
-`isGraphTopic` in `tools/graphplot-conversion.mjs` to grow the queue), and
+`isGraphTopic` in `tools/verify/graphplot-conversion.mjs` to grow the queue), and
 `npm run graphable:merge <dir>` folds a reading pass's verdicts in with the
 answer ledger's conflict-refusing contract. The decision it refuses to let
 file order settle is the verdict *and* the `mode`: two passes that both say
@@ -870,7 +870,7 @@ pasted SVG:
 
 `kind` is `graph`, `numberline`, or `figure`; the body is one JSON object
 whose properties map to the matching `buildGraph`, `buildNumberLine`, or
-`buildFigure` builder in `assets/js/lib/graph-core.mjs`. Every figure MUST
+`buildFigure` builder in `assets/js/lib/math/graph-core.mjs`. Every figure MUST
 carry an `ariaLabel` — it is the accessible name and the no-JS fallback
 description. The `<ap-figure>` Web Component renders the spec in the browser
 with the shared engine, which does all layout from measured text metrics and
@@ -954,7 +954,7 @@ an `<ap-figure>` in both colour schemes and fails on any text outside the
 fitted viewBox or any console error; and the readability gate
 
 ```
-npm run check:figures            # or: node tools/check-figure-overlaps.mjs <page.md>
+npm run check:figures            # or: node tools/figures/check-figure-overlaps.mjs <page.md>
 ```
 
 builds every spec-first figure and fails on any label printed across other
@@ -972,7 +972,7 @@ To eyeball a spec while authoring without a Hugo server, print it as
 standalone SVG:
 
 ```
-node tools/render-figure.mjs graph '{"ariaLabel":"The line y = 2x + 1.","lines":[{"slope":2,"intercept":1,"label":"y = 2x + 1"}]}'
+node tools/figures/render-figure.mjs graph '{"ariaLabel":"The line y = 2x + 1.","lines":[{"slope":2,"intercept":1,"label":"y = 2x + 1"}]}'
 ```
 
 Older sections still carry that helper's pasted `<div class="ap-figure">`
@@ -1060,7 +1060,7 @@ of `polygons` and `texts`; a figure spelled out coordinate by coordinate is
 the pasted SVG again with extra steps.
 
 Then gate the page before moving on: `npm run verify-section -- <page>`,
-`node tools/check-figure-overlaps.mjs <page>`, `npm test`, and the visual
+`node tools/figures/check-figure-overlaps.mjs <page>`, `npm test`, and the visual
 comparison of each converted figure against the PDF, which no gate
 replaces. The `--status` run's `⚠` sibling report (`npm run
 check:figures`) also previews which unconverted figures will need label
@@ -1121,7 +1121,7 @@ curve runs off the figure. In `figure` mode, which has no ellipse primitive,
 sample ≥120 points for a closed ellipse — a 24-point polygon shows its
 corners at the zoom a reader uses. The double-cone conic-section schematics
 of chapter 10 (a cone cut by a plane, hidden portions dashed) come from
-`node tools/cone-schematic.mjs` — an exact construction under the §9.2
+`node tools/figures/cone-schematic.mjs` — an exact construction under the §9.2
 oblique projection — never from an hourglass wireframe; keep such a
 composite to two panels, because a `figure` wider than ~340 px scales its
 label font up until adjacent titles collide. And a `figure`-mode dimension
@@ -1154,7 +1154,7 @@ that truly has no formula; it now requires `freeform: true` in each entry,
 and the content lint warns on its rendered output and rejects an
 unacknowledged `smoothCurves` in a figure spec. Passing a circle or a V
 through it rounds corners and flattens extremes, and
-`tools/graph-core.test.mjs` guards this geometry.
+`tools/figures/graph-core.test.mjs` guards this geometry.
 
 The spec in the page IS the figure — reproducible, reviewable against the
 PDF, and lintable. The lint validates every `apfigure` body (JSON that
@@ -1270,7 +1270,7 @@ another way, or extend `preprocess()` first and add the test with it.
 | `\binom{n}{k}` | binomial theorem | parses invalid |
 | `\lim_{x\to0^+}` | one-sided limits | parses invalid |
 | `{}_nP_r`, `{}_nC_r` | permutations, combinations | parses as a nonsense product; caught by the nonsense-parse guard in `verify-section` |
-| `2(4i-3j)-(2i-j)` (an unsimplified vector combination) | vectors (Precalculus §8.8) | `i` is the engine's imaginary unit, and the pinned engine's complex arithmetic is wrong (see `tools/verify-answers.mjs` `hasComplexDivision`), so a parenthesized combination grades `incorrect` against its keyed result even though the same shape in $x,y$ grades correct. The distributed spelling (`8i-6j-2i+j`) and the simplified result both grade correct, so no finished answer is refused — key vector results as bare $ai+bj$ and leave this alone. Folding `i`/`j` into basis symbols would fix the arithmetic but make every "compute $2\mathbf{u}-\mathbf{v}$" item passable by retyping its prompt, so it would have to ship with a form token on each of those keys |
+| `2(4i-3j)-(2i-j)` (an unsimplified vector combination) | vectors (Precalculus §8.8) | `i` is the engine's imaginary unit, and the pinned engine's complex arithmetic is wrong (see `tools/verify/verify-answers.mjs` `hasComplexDivision`), so a parenthesized combination grades `incorrect` against its keyed result even though the same shape in $x,y$ grades correct. The distributed spelling (`8i-6j-2i+j`) and the simplified result both grade correct, so no finished answer is refused — key vector results as bare $ai+bj$ and leave this alone. Folding `i`/`j` into basis symbols would fix the arithmetic but make every "compute $2\mathbf{u}-\mathbf{v}$" item passable by retyping its prompt, so it would have to ship with a form token on each of those keys |
 | `D`, `N` as variables | `D` for distance, `N` for a count | reserved by the engine as the derivative and numeric-evaluation operators; any answer using them is ungradeable. Rename the variable (`d`, `n`). |
 | `x'`, `x^{\prime}` (a primed variable) | rotated axes (Precalculus §10.4), where every answer is written in $x'$ and $y'$ | **taken since August 28, 2026**, by folding rather than parsing: `preprocess()` rewrites every spelling of a primed letter — the key's `x'`, MathLive's `x^{\prime}` / `x^{\doubleprime}` / `x^{\prime2}`, `\theta'` — onto one subscripted symbol (`x_{p}`, `x_{pp}`) on both sides, so a primed answer grades on value and shape like any other. The engine on its own rejects `x'^2` as invalid and reads `x^{\prime}` as a power of an unknown symbol. Consequence: a genuine `f'(x)` derivative is folded too and reads as the symbol $f_p$ applied to $x$ — no answer in the corpus keys one; chapter 12's derivative answers are the resulting expressions, and since August 29, 2026 a learner's written label is stripped before grading the way `f(x)=` is: `f'(x)=2x+3`, MathLive's `f^{\prime}\left(x\right)=2x+3`, `f'(3)=6`, `f(2)=5` (a numeral argument is a label reading only, never the output quantity $y$), and the Leibniz `\frac{dy}{dx}=2x+3` all grade on the value that follows |
 
@@ -1319,7 +1319,7 @@ From the repository root:
    (`{"results": [{"hash": "…", "verdict": "ok" | "defect" | "unverifiable",
    "note": "…"}]}`) from the step-2 derivations — never from the authored
    key — and fold them in with `npm run ledger:merge <dir>`. After editing
-   existing exercises, `node tools/answer-ledger.mjs prune content` drops the
+   existing exercises, `node tools/verify/answer-ledger.mjs prune content` drops the
    records stranded by their old text.
 4. `npm run verify-section -- content/<subject>/<book>/<ch>/<sec>.md`
    — lints, renders every math run, and confirms that each fill-in answer is
@@ -1343,7 +1343,7 @@ From the repository root:
 7. Open every changed page with `npm run serve`. Confirm real components
    render and grade, prose/math spacing is visible, formulas appear once, and
    figures match the PDF. Also open a changed chapter landing page.
-   `node tools/screenshot-page.mjs <route>` captures light/dark full-page
+   `node tools/build/screenshot-page.mjs <route>` captures light/dark full-page
    shots plus a high-zoom crop of every figure and fails on duplicate KaTeX
    or unlabelled SVGs — use the crops for the figure-vs-PDF comparison, and
    inspect curve tips and corners at zoom, where spline and stroke defects
@@ -1438,7 +1438,7 @@ respect every one of them:
   takes the term structure from the parse and the written `\cdot` from the
   LaTeX, because `\tfrac{3}{7}\cdot 21n` canonicalizes to its own answer.
 - **Gate each candidate path behind its own verb.** The rule in
-  `tools/lints.mjs` unions per-verb extractors deliberately. Widening a shared
+  `tools/lint/lints.mjs` unions per-verb extractors deliberately. Widening a shared
   extractor instead would put a thousand sound-but-untagged exercises in scope
   at once, and a rule that fires on sound content cannot land in a lint whose
   every rule blocks.
@@ -1477,7 +1477,7 @@ $g(x)=5x^2+8x+3$, find $(f+g)(x)$" prints neither $7x^2+4x+4$ nor anything
 value-equal to it — and yet `(2x^2-4x+1)+(5x^2+8x+3)`, the operation written
 but not performed, grades `correct`: the learner types back what the question
 already told them and never combines a like term. The extractors in
-`tools/lints.mjs` **build** that candidate rather than finding it:
+`tools/lint/lints.mjs` **build** that candidate rather than finding it:
 
 | Phrasing | Candidate built | Typical token |
 |---|---|---|
@@ -1489,7 +1489,7 @@ already told them and never combines a like term. The extractors in
 Definitions printed in page prose ("For the next three questions, use
 $f(x)=6x+1$…") reach the extractor as fallbacks — safe by construction, since
 a wrongly paired definition builds a candidate that never grades `correct`.
-The boundaries are load-bearing, and asserted in `tools/lints.test.mjs`: an
+The boundaries are load-bearing, and asserted in `tools/lint/lints.test.mjs`: an
 ask evaluated at a *number* (`(f+g)(2)`, `f(g(2))`) builds nothing, because no
 restatement of the definitions equals a number; "find the **remainder** when
 $A$ is divided by $B$" names no quotient, so only the word "quotient" opens

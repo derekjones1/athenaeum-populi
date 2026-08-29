@@ -1,5 +1,5 @@
 # Canonical public routes from the final Next/Nextra static export.
-# Snapshot of the final pre-Hugo export; consumed by tools/check-route-parity.mjs.
+# Snapshot of the final pre-Hugo export; consumed by tools/build/check-route-parity.mjs.
 /
 /404/
 /about/

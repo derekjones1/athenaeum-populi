@@ -6,7 +6,7 @@ import {
 /**
  * End-to-end proof that the grader fixes hold in the real page, driven through
  * real keystrokes into the real MathLive field. Node-level unit tests live in
- * assets/js/lib/check-answer.test.mjs; these guard the integration, where the
+ * assets/js/lib/math/check-answer.test.mjs; these guard the integration, where the
  * field's own LaTeX rewriting is what produces the broken shape.
  *
  * Every navigation goes through `gotoBuiltPage`, which asserts the response
@@ -208,7 +208,7 @@ test('with JavaScript off the page is honest, and with it on the controls arrive
   //
   // Asserting a server-HTML fact through a browser is a ten-second round trip
   // that re-tests a Hugo template: `.ap-mc-option[disabled]` is emitted
-  // unconditionally, and `tools/audit-build.mjs` already proves — over all 275
+  // unconditionally, and `tools/build/audit-build.mjs` already proves — over all 275
   // built documents rather than this one — that every fill-in and graph-plot
   // ships exactly one no-JavaScript notice. What only a browser can decide is
   // what each mode actually PRESENTS: whether the notice is the thing the
