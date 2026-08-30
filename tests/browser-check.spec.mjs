@@ -1118,3 +1118,34 @@ test('heading lists in the rail and sidebar typeset inline math instead of print
   await expect(sidebar.locator('.katex')).toHaveCount(1);
   expect(await sidebar.evaluate((el) => el.textContent)).not.toContain('$');
 });
+
+test('the biology sidebar nests chapters under their unit, and a math sidebar stays flat', async ({ page }) => {
+  // The unit is a level of the hierarchy: sidebar.html reads the book's
+  // `units` list from data/openstax/source-map.json (recorded by build-map
+  // from the pinned collection) and wraps each unit's chapters in a labelled
+  // <li>. Math collections have no units, so their sidebars must not gain a
+  // label. Checked on a section page, where the whole book tree renders.
+  await gotoBuiltPage(page, '/life-health-sciences/biology/02-the-chemical-foundation-of-life/02-water/');
+  // The aside renders the book tree twice — the phone drawer list and the
+  // desktop list — so one unit appears twice; only the desktop copy is
+  // visible at this viewport.
+  const units = page.locator('aside .ap-sidebar-unit');
+  await expect(units).toHaveCount(2);
+  const visible = page.locator('aside .ap-sidebar-unit:visible');
+  await expect(visible).toHaveCount(1);
+  await expect(visible.locator('> .ap-sidebar-unit-label')).toHaveText('Unit 1: The Chemistry of Life');
+  // The unit's own list holds exactly the authored chapters of that unit, in
+  // source order, and every chapter or section link in the book sits inside
+  // a unit — in both copies.
+  const chapterTitles = await visible.locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
+  expect(chapterTitles).toEqual(['The Study of Life', 'The Chemical Foundation of Life', 'Biological Macromolecules']);
+  const bookLinks = page.locator('aside a[href^="/life-health-sciences/biology/0"]');
+  const insideUnit = page.locator('aside .ap-sidebar-unit a[href^="/life-health-sciences/biology/0"]');
+  expect(await bookLinks.count()).toBe(26);
+  expect(await insideUnit.count()).toBe(26);
+  // The label is text, not a control: nothing to focus, nothing to click.
+  await expect(page.locator('aside .ap-sidebar-unit-label a, aside .ap-sidebar-unit-label button')).toHaveCount(0);
+
+  await gotoBuiltPage(page, '/math/precalculus/01-functions/01-functions-and-function-notation/');
+  await expect(page.locator('aside .ap-sidebar-unit')).toHaveCount(0);
+});

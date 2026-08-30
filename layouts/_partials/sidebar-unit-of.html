@@ -1,0 +1,18 @@
+{{- /*
+  sidebar-unit-of — which unit the sidebar loop is in after this item.
+
+  Takes: item (the page being listed), units (the book's `units` list from
+  data/openstax/source-map.json, possibly empty), openUnit (the unit index the
+  loop is currently inside, 0 for none). Returns the item's unit index when
+  its `source_chapter` falls in one of the units, otherwise `openUnit`
+  unchanged — a knowledge-check page has no source_chapter and stays in the
+  open unit. A partial because a template define cannot return a value.
+*/ -}}
+{{- $result := .openUnit -}}
+{{- with .item.Params.source_chapter -}}
+  {{- $chapter := int . -}}
+  {{- range $.units -}}
+    {{- if in .chapters $chapter -}}{{- $result = .index -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{ return $result }}

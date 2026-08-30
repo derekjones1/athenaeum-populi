@@ -115,6 +115,27 @@
   {{- $mainMenuEntries := slice -}}
 
   {{- $items := where (union .context.RegularPages .context.Sections) "Params.sidebar.exclude" "!=" true -}}
+  {{- /* Unit level. A book whose source collection groups chapters into
+       units (Biology 2e: eight) has that grouping recorded by
+       `openstax-source.mjs build-map` in data/openstax/source-map.json as
+       the book's `units` list, keyed to the book by its `contentPath`. When
+       this context is such a book, both loops below — the level-0 list the
+       desktop sidebar starts from, and the children list the phone drawer
+       reaches through the scoped branch — nest each run of chapters that
+       belongs to one unit inside a labelled <li>, "Unit 1: The Chemistry of
+       Life", so the hierarchy reads unit → chapter → section, exactly the
+       source's. Math books have no `units` key and render flat, as before.
+       A chapter's unit comes from its `source_chapter`; a page without one
+       (a knowledge check) stays inside whichever unit is open. */ -}}
+  {{- $units := slice -}}
+  {{- with .context.File -}}
+    {{- $dir := printf "content/%s" (strings.TrimSuffix "/" .Dir) -}}
+    {{- with index hugo.Data.openstax "source-map" -}}
+      {{- range $bookKey, $book := .books -}}
+        {{- if and (eq $book.contentPath $dir) $book.units -}}{{- $units = $book.units -}}{{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
   {{- if $useMainMenu -}}
     {{- range $menuItem := site.Menus.main -}}
       {{- $menuType := $menuItem.Params.type | default "" -}}
@@ -260,7 +281,10 @@
           {{- end -}}
         {{- end -}}
       {{- else -}}
+        {{- $openUnit := 0 -}}
         {{- range $items.ByWeight }}
+          {{- template "sidebar-unit-boundary" dict "item" . "units" $units "openUnit" $openUnit -}}
+          {{- $openUnit = partial "sidebar-unit-of" (dict "item" . "units" $units "openUnit" $openUnit) -}}
           {{- if .Params.sidebar.separator -}}
             <li class="[word-break:break-word] hx:mt-5 hx:mb-2 hx:px-2 hx:py-1.5 hx:text-sm hx:font-semibold hx:text-gray-900 hx:first:mt-0 hx:dark:text-gray-100">
               <span class="hx:cursor-default">{{ partial "utils/title" . }}</span>
@@ -278,11 +302,17 @@
             </li>
           {{- end -}}
         {{- end -}}
+        {{- if $openUnit }}
+          </ul></li>
+        {{- end -}}
       {{- end -}}
     {{- else -}}
+      {{- $openUnit := 0 -}}
       <div class="hextra-sidebar-children hx:ltr:pr-0 hx:rtl:pl-0 hx:overflow-hidden">
         <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'>
           {{- range $items.ByWeight }}
+            {{- template "sidebar-unit-boundary" dict "item" . "units" $units "openUnit" $openUnit -}}
+            {{- $openUnit = partial "sidebar-unit-of" (dict "item" . "units" $units "openUnit" $openUnit) -}}
             {{- $active := eq $pageURL .RelPermalink -}}
             {{- $shouldOpen := or (.Params.sidebar.open) (.IsAncestor $page) $active | default true }}
             {{- $linkTitle := partial "utils/title" . -}}
@@ -293,6 +323,9 @@
               {{- end }}
               {{ template "sidebar-tree" dict "context" . "page" $page "pageURL" $pageURL "level" (add $level 1) "toc" $toc }}
             </li>
+          {{- end -}}
+          {{- if $openUnit }}
+            </ul></li>
           {{- end -}}
         </ul>
       </div>
@@ -414,4 +447,23 @@
 
 {{- define "sidebar-collapsible-button" -}}
   <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg>
+{{- end -}}
+
+{{- /* Unit grouping helpers, shared by the level-0 and children loops.
+     "sidebar-unit-boundary" emits the markup a boundary needs — closing the
+     open unit's list when the item belongs to a different unit, then opening
+     the item's unit with its label — and nothing when the item stays in the
+     open unit or belongs to none. The matching partial "sidebar-unit-of"
+     (layouts/_partials/sidebar-unit-of.html) returns the unit the loop is in
+     after the item, since a define cannot return a value. */ -}}
+{{- define "sidebar-unit-boundary" -}}
+  {{- $unitIndex := partial "sidebar-unit-of" (dict "item" .item "units" .units "openUnit" 0) -}}
+  {{- if and $unitIndex (ne $unitIndex .openUnit) -}}
+    {{- if .openUnit }}</ul></li>{{ end -}}
+    {{- range .units -}}{{- if eq .index $unitIndex }}
+    <li class="hx:flex hx:flex-col ap-sidebar-unit">
+      <span class="ap-sidebar-unit-label hx:mt-3 hx:mb-1 hx:px-2 hx:py-1.5 hx:text-sm hx:font-semibold hx:text-gray-900 hx:dark:text-gray-100 hx:cursor-default [word-break:break-word]">Unit {{ .index }}: {{ .title }}</span>
+      <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'>
+    {{- end -}}{{- end -}}
+  {{- end -}}
 {{- end -}}
