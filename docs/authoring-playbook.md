@@ -27,7 +27,10 @@ Automated checks can prove that syntax renders and an authored answer grades
 against itself, and `npm run verify:answers` additionally cross-checks
 mathematical consistency for roughly half the corpus (solve prompts by
 substitution, evaluate-at prompts by substitution, re-expression prompts by
-value equivalence — all numeric, against the printed question only). They
+value equivalence — all numeric, against the printed question only), while
+`npm run verify:source-keys` compares a prose book's multiple-choice keys,
+textin answers, and self-check model answers to the pinned module's own
+solutions and glossary. They
 cannot prove that the transcription is faithful, and the cross-check cannot
 see word problems, rounding asks, or anything whose subject lives in prose,
 so independent solving against the source Answer Key remains required.
@@ -544,9 +547,13 @@ From the repository root:
    or revised are defects, not backlog: clear them, or say in the handoff
    which pre-existing ones you left and why (§5).
 5. Run `npm test`. It includes whole-repository structure validation,
-   per-page real-grader verification, the corpus-wide answer cross-check
+   per-page real-grader verification, the corpus-wide answer cross-checks
    (`npm run verify:answers` — every mechanically checkable answer is
-   re-derived numerically from its own question), the answer-ledger gate,
+   re-derived numerically from its own question; `npm run verify:source-keys`
+   — every prose-book key is compared to the pinned source's own), the
+   answer-ledger gate (which, for a prose shelf, also requires the
+   orchestrator's own solve of every graded item — see the subject
+   playbook),
    unit tests, repo-wide
    authoring lints, documentation consistency checks, and KaTeX parsing.
    `npm run validate` remains available as a focused structure-only command.
@@ -583,7 +590,7 @@ carried zero of each, and the warning channel was deleted with them. There is
 no non-blocking rule left in the repository and no category of
 known-defective content to grandfather.
 
-The Practice retrofit that used to live here is finished. All 284 mapped
+The Practice retrofit that used to live here is finished. All 318 mapped
 sections carry the block (the documentation test pins that count to the live
 map, so authoring a new mapped section means bumping it here). The final
 block landed on August 9, 2026; the lint rule was promoted from a warning to

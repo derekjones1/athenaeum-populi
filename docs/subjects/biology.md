@@ -177,6 +177,80 @@ Three cases the chemistry chapters settled (unit 1):
   the glossary `textin` for such a term an `accept` list with the spelled-out
   forms (`alpha helix`, `alpha-helix`).
 
+Cases the cell chapters settled (unit 2):
+
+- **A sub-figure that is its own image is its own `mediafigure`.** When a
+  source `<figure>` holds `<subfigure>` children with separate image files
+  (4.3's animal and plant cell, stems `…01a_corrected` and `…01b`), render
+  them as two consecutive figures — the first with the source caption, the
+  second with a one-line caption naming it panel (b) — never as one figure
+  whose alt claims to show both (the pilot page shipped that way and panel
+  (b) was simply missing). A single image with lettered panels stays one
+  figure, its alt naming what each panel shows.
+- **Source alts can be screen-reader spellings, not descriptions.** Many
+  cell-chapter alts are letter-spaced TTS text ("A T P", "upper case C lower
+  case o upper case A", "N A D P superscript plus sign baseline"). Write a
+  plain alt from the image, move any walk-through into `longdesc`, and say
+  so in the footer; this is a local rewrite of an accessibility field, not
+  an erratum.
+- **A source key that the module's own text contradicts is corrected on the
+  page and logged.** Unit 2 found four (errata 115, 116, 120, 121: a
+  photosystem, a double-keyed carbon-fixation item, "half" for "twice", a
+  plant cell plate in a prokaryote). The page keys the answer the section
+  supports, the footer names the change, the errata entry quotes the
+  passage, and the ledger verdict is `ok` with the erratum number — never a
+  shipped `defect`, which fails `verify:ledger`.
+- **Every keyed answer gets three readings, as in math.** The author keys
+  it from the pinned CNXML; the checker re-derives it against the raw CNXML
+  and the section text; and the orchestrator ANSWERS it. After the checker
+  reports, run `npm run solve:emit -- <chapter dir> --out <dir>`, answer
+  every packet item in writing (question and options only — the key,
+  accept list, and hint are stripped), naming any other option that is also
+  defensible, then `npm run solve:compare -- answers.json content --out
+  <dir>`. Agreement is recorded; each disagreement or flag is settled
+  against the module's own sentence and recorded with an `adjudicated`
+  note — the source is the authority, and this pass exists to catch a key
+  that is obviously wrong (a misprint, a double-keyed item, a wrong ratio),
+  not to overrule the module with general knowledge. A key the module's
+  text contradicts is corrected (erratum + `DISCLOSED_DEVIATIONS` line in
+  `verify-source-keys.mjs`); a key the module supports stands even when the
+  chemistry is looser than a specialist would write (erratum 123, the
+  two-photon NADPH item — logged, keyed as the module teaches, its hint
+  rewritten to follow the module rather than invent a rationale).
+  `ledger:merge` the compare output; `verify:ledger --require-solved`
+  fails until every multiplechoice and textin on the shelf carries the
+  solve. `npm run verify:source-keys` (in `npm test`) separately proves the
+  page keys what the source keys and lists every deliberate departure by
+  erratum number. The units 1–2 run (August 30, 2026): 320 items, 311
+  agreed outright, 3 disagreed and 6 were flagged — all nine settled for
+  the key by the module's text, three of them exposing source defects
+  (errata 123–125).
+- **An edited option is a deviation too** — it changes what is gradable
+  (erratum 116's reworded distractor, erratum 122's typo-fixed one).
+- **A Critical Thinking question keeps its preamble.** An analogy or
+  scenario that opens the source question ("you would use a spoon rather
+  than a fork…") is part of the question; do not trim it to the final
+  sentence.
+- **A feature box keeps its title and its citations.** `**Career
+  Connection.** *Cancer Biologist.*` — the `<note>`'s `<title>` follows the
+  bold name in italics; a reference list the box ends with is kept as a
+  parenthetical after the sentence it supports rather than dropped.
+- **`accept` lists the plural of every multi-word answer** (`glucose
+  transporters`, `integral membrane proteins`, `septa`) and the compound
+  form the section itself uses (`integral membrane protein` for a textin
+  keyed `integral`); every checker in unit 2 found one missing.
+- **`P<sub>i</sub>`** is the one sanctioned inline HTML subscript (no
+  Unicode subscript letter exists); everything with a glyph — `H⁺`, `CO₂`,
+  `FADH₂`, `Ca²⁺`, `PO₄³⁻`, `G₁`, `IP₃` — uses it. ΔG/ΔH/ΔS in prose are the
+  Unicode Δ; the one genuine equation, `ΔG = ΔH − TΔS`, is `$…$`. The source
+  auditor folds a Unicode sub/superscript digit into its own token so that
+  `CO₂` matches a `<sub>2</sub>` heading.
+- **An objective no source item tests may get one author-written item**:
+  a multiple choice built strictly from the page's own table or sentence,
+  or a self-check whose model answer paraphrases one paragraph, with no new
+  claim — disclosed in the ledger and the footer. Prefer a glossary
+  `textin` when a term fits the objective.
+
 ## Media: vendored figures
 
 Biology 2e is image-dependent (about 1,500 raster figures). They ship as
@@ -358,8 +432,10 @@ Record every item in the source ledger with its exercise or definition id.
 ## Budgets to watch as the book grows
 
 - **HTML total.** `tools/build/audit-build.mjs` caps the built HTML at 220 MiB;
-  the four math books plus chapter 1 measure 196.5 MB (`find public -name
-  index.html -exec cat {} + | wc -c`). A biology section page is ~125–135 KB
+  the four math books plus chapter 1 measured 196.5 MB, and with units 1–2
+  (44 sections, 10 landings) the HTML total is 198.3 MiB (`find public -name
+  index.html -exec cat {} + | wc -c`); the audit's own "MiB" line counts
+  every built file, WebP included. A biology section page is ~125–135 KB
   (no KaTeX), so the remaining 206 sections and 46 landings project to
   roughly 35 MB more — the cap will be reached around unit 6–7. Raise it
   deliberately in that file, with the new measurement in the commit message,
@@ -370,6 +446,7 @@ Record every item in the source ledger with its exercise or definition id.
   timeout scales with the route count, but watch its wall time in the
   browser-suite tail after each chapter.
 - **Chapter close-out** also runs `npm run source:check -- --bundle
-  biology-bundle` (report-only): chapter 1 audits clean — 8/8 objectives and
-  8/8 headings located, 0 unresolved review items — and a heading the audit
-  cannot locate is the signal that a page renamed or dropped a source section.
+  biology-bundle` (report-only): units 1–2 audit clean — 44/44 sections,
+  every objective and heading located, 0 unresolved review items — and a
+  heading the audit cannot locate is the signal that a page renamed or
+  dropped a source section.

@@ -8,7 +8,7 @@ the book you are authoring; for knowledge checks, also follow
 current build and deployment design. For the OpenStax math books — the three
 algebra books and Precalculus 2e, all four complete — also follow
 `docs/subjects/math.md` and `docs/source/openstax-source-workflow.md`.
-Biology 2e is pinned and `in-progress` (unit 1, chapters 1–3, is authored); its
+Biology 2e is pinned and `in-progress` (units 1–2, chapters 1–10, are authored); its
 subject-specific rules are in `docs/subjects/biology.md`, on top of the same
 source workflow.
 
@@ -35,10 +35,10 @@ source workflow.
   `biology-bundle` for Biology 2e. Books carry an `authoringStatus`; the four
   math books are `complete` (Precalculus 2e's last chapter landed on August
   29, 2026), so every upstream numbered section has a local page and chapter
-  parity is enforced book-wide. Biology is `in-progress`: unit 1 (chapters
-  1–3, ten sections) is authored under `content/life-health-sciences/biology`
-  and the other 44 chapters have no landing yet, so `build-map`/`verify-map`
-  print it as "3/47 chapters, 10/208 sections mapped" — visibly, never
+  parity is enforced book-wide. Biology is `in-progress`: units 1–2 (chapters
+  1–10, 44 sections) are authored under `content/life-health-sciences/biology`
+  and the other 37 chapters have no landing yet, so `build-map`/`verify-map`
+  print it as "10/47 chapters, 44/208 sections mapped" — visibly, never
   silently — and the biology subject playbook (`docs/subjects/biology.md`)
   governs its authoring. A book still being written marks its
   unwritten chapter landings `authoring_status: scaffolded`, drops the marker
@@ -72,10 +72,27 @@ source workflow.
   by retyping its own prompt; holds a `--min-replayed` FLOOR so the gate
   cannot go quiet on part of the corpus (parallel, minutes — part of
   `npm run ci`, not `npm test`)
+- `npm run verify:source-keys` — compare every `multiplechoice` key, `textin`
+  answer, and `selfcheck` model answer on a mapped page against the pinned
+  CNXML's own `<solution>` and glossary — the third, agent-free reading of a
+  prose book's keys (the math books get theirs from `verify:answers`); a key
+  that departs from the source on purpose must be listed in the tool's
+  `DISCLOSED_DEVIATIONS` with its erratum number; holds an EXACT
+  `--min-confirmed` baseline (part of `npm test`)
 - `npm run verify:ledger` — assert every exercise in the corpus carries a
   current answer-verification record (see "The answer ledger" below); holds a
   `--min-exercises` FLOOR and a `--max-unverifiable` CEILING so it can go
-  vacuous in neither direction
+  vacuous in neither direction, and `--require-solved <prefix>` refuses a
+  `multiplechoice` or `textin` under a prose shelf whose record carries no
+  orchestrator solve
+- `npm run solve:emit -- <root> --out <dir>` / `npm run solve:compare -- <answers.json> content --out <dir>`
+  — the orchestrator's own pass over a prose book's graded questions: `emit`
+  writes every multiplechoice and textin with the key, accept list, and hint
+  stripped; the orchestrator answers them in writing; `compare` grades the
+  answers against the live keys (the real text grader for textin), prints
+  every disagreement and "also defensible" flag, refuses to record one until
+  it carries an `adjudicated` note settled against the CNXML, and writes the
+  ledger records (`solved: { by, result }`) for `ledger:merge`
 - `npm run ledger:stats` — verified/total per shortcode kind
 - `npm run ledger:list` — emit exercises as JSON for a verification pass
   (`--shard i/n`, `--kind`, `--unverified`, `--verdict`, `--context N`)
@@ -104,7 +121,7 @@ source workflow.
   package.json's `--min-verified`, `--min-replayed`, and `--min-exercises` in
   place
 - `npm run source:fetch` — fetch the ignored, sparse OpenStax source checkout
-- `npm run source:verify` — verify the committed 284-section map offline
+- `npm run source:verify` — verify the committed 318-section map offline
 - `npm run source:check` — report-only comparison against pinned CNXML
 - `npm run source:history` — review changes since the inferred PDF-era commits
 - `npm run source:media -- --book KEY --chapter N` — vendor a chapter's raster
@@ -129,7 +146,16 @@ wrong — do not exempt the page. When authoring moves any published floor
 `verify:answers` re-derives an answer only where it can mechanically recognize
 what the prompt asks; 79% of what it skips is skipped as "prompt class not
 mechanically checkable", and it never reads `multiplechoice` or `graphplot` at
-all. Reading a prompt is exactly what a parser cannot do, so that population is
+all. `verify:source-keys` covers the prose books' `multiplechoice`, `textin`,
+and `selfcheck` items by comparing each to the pinned module's own key — but
+only where the page item transcribes a source exercise; an author-written
+item has no source key to compare against. Neither tool can tell whether the
+SOURCE key is right (Biology unit 2 carried four wrong ones), so a prose
+book's graded items get one more reading: the orchestrator answers every
+multiplechoice and textin with the keys hidden (`solve:emit` /
+`solve:compare`), settles each disagreement against the module's text, and
+the ledger record carries the result; `verify:ledger --require-solved`
+makes that reading a condition of green for the life-sciences shelf. Reading a prompt is exactly what a parser cannot do, so that population is
 covered by a reading pass instead, and `data/verification/answer-ledger.json`
 makes the result durable.
 

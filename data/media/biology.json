@@ -4,6 +4,45 @@
   "bundle": "biology-bundle",
   "commit": "63f8b6f8d129dd1582989bb755011e9a6d523471",
   "figures": {
+    "09_01_01_fix": {
+      "source": "media/09_01_01_fix.jpg",
+      "sourceSha256": "6bdd9b232c37b923fec9732a3567afe02ca0a3bc1a7d9c0bc8360c96b51f4eb1",
+      "module": "m66378",
+      "kind": "photo",
+      "width": 1559,
+      "height": 1500,
+      "variants": [
+        {
+          "width": 800,
+          "height": 769,
+          "file": "09_01_01_fix-800.webp"
+        },
+        {
+          "width": 1559,
+          "height": 1500,
+          "file": "09_01_01_fix-1559.webp"
+        }
+      ],
+      "alt": "The illustration shows four forms of chemical signaling. In autocrine signaling, a cell targets itself. In signaling across a gap junction, a cell targets a cell connected via gap junctions. In paracrine signaling, a cell targets a nearby cell. In endocrine signaling, a cell targets a distant cell via the bloodstream",
+      "caption": "In chemical signaling, a cell may target itself (autocrine signaling), a cell connected by gap junctions, a nearby cell (paracrine signaling), or a distant cell (endocrine signaling). Paracrine signaling acts on nearby cells, endocrine signaling uses the circulatory system to transport ligands, and autocrine signaling acts on the signaling cell. Signaling via gap junctions involves signaling molecules moving directly between adjacent cells."
+    },
+    "7.8_Pyruvate_Oxidation-XYZ": {
+      "source": "media/7.8_Pyruvate_Oxidation-XYZ.jpg",
+      "sourceSha256": "5e43cba599e0a14ed55c51a0f57548a22a4ebb23d5af3c589217427d8e2e0170",
+      "module": "m66467",
+      "kind": "photo",
+      "width": 470,
+      "height": 352,
+      "variants": [
+        {
+          "width": 470,
+          "height": 352,
+          "file": "7.8_Pyruvate_Oxidation-XYZ-470.webp"
+        }
+      ],
+      "alt": "This illustration shows the conversion of pyruvate into acetyl upper case C lower case o upper case A. The Pyruvate begins outside the mitochondrion, in the cytosol. When the pyruvate enters the mitochondrion through the pyruvate carrier protein, a carboxyl group is removed from pyruvate, releasing carbon dioxide. Then, a redox reaction forms acetate and N A D H. In step three, the acetate is transferred coenzyme A, forming acetyl upper C lower o upper A.",
+      "caption": "Upon entering the mitochondrial matrix, a multienzyme complex converts pyruvate into acetyl CoA. In the process, carbon dioxide is released, and one molecule of NADH is formed. Credit: Rao, A., Ryan, K. and Tag, A. Department of Biology, Texas A&M University."
+    },
     "Figure_01_00_00": {
       "source": "media/Figure_01_00_00.jpg",
       "sourceSha256": "6bdf1f892ff8d142bf2c0d7f38c579806ff9f6887285585dcf05766ba43179cc",
@@ -1109,6 +1148,23 @@
       "alt": "Photo shows a river otter swimming. The river otter has thick fur that is smooth and wet.",
       "caption": "Hydrophobic lipids in aquatic mammals' fur, such as this river otter, protect them from the elements. (credit: Ken Bosma)"
     },
+    "Figure_03_03_01a_corrected": {
+      "source": "media/Figure_03_03_01a_corrected.png",
+      "sourceSha256": "a8d51f109c1b3b59c8906f58d4b9dab229b487c6f1b37968ff6eead8039b1119",
+      "module": "m66449",
+      "kind": "diagram",
+      "width": 519,
+      "height": 620,
+      "variants": [
+        {
+          "width": 519,
+          "height": 620,
+          "file": "Figure_03_03_01a_corrected-519.webp"
+        }
+      ],
+      "alt": "Part a: This illustration shows a typical eukaryotic animal cell, which is egg shaped. The fluid inside the cell is called the cytoplasm, and the cell is surrounded by a cell membrane. The nucleus takes up about one-half the width of the cell. Inside the nucleus is the chromatin, which is composed of DNA and associated proteins. A region of the chromatin is condensed into the nucleolus, a structure where ribosomes are synthesized. The nucleus is encased in a nuclear envelope, which is perforated by protein-lined pores that allow entry of material into the nucleus. The nucleus is surrounded by the rough and smooth endoplasmic reticulum, or ER. The smooth ER is the site of lipid synthesis. The rough ER has embedded ribosomes that give it a bumpy appearance. It synthesizes membrane and secretory proteins. In addition to the ER, many other organelles float inside the cytoplasm. These include the Golgi apparatus, which modifies proteins and lipids synthesized in the ER. The Golgi apparatus is made of layers of flat membranes. Mitochondria, which produce food for the cell, have an outer membrane and a highly folded inner membrane. Other, smaller organelles include peroxisomes that house oxidative metabolism, lysosomes that digest food, and vacuoles. Ribosomes, responsible for protein synthesis, also float freely in the cytoplasm and are depicted as small dots. The last cellular component shown is the cytoskeleton, which has four different types of components: microfilaments, intermediate filaments, microtubules, and centrosomes. Microfilaments are fibrous proteins that line the cell membrane and make up the cellular cortex. Intermediate filaments are fibrous proteins that hold organelles in place. Microtubules form the mitotic spindle and maintain cell shape. Centrosomes are made of two tubular structures at right angles to one another. They form the microtubule-organizing center.",
+      "caption": "These figures show the major organelles and other cell components of (a) a typical animal cell and (b) a typical eukaryotic plant cell. The plant cell has a cell wall, chloroplasts, plastids, and a central vacuole—structures not in animal cells. Most cells do not have lysosomes or centrosomes."
+    },
     "Figure_03_03_02-f094": {
       "source": "media/Figure_03_03_02-f094.jpg",
       "sourceSha256": "3b176ddb6b52efc5a8f1f88ad216eb01e32aa17f7ac1cc7628ace51ad514e83f",
@@ -1578,6 +1634,2940 @@
       ],
       "alt": "The chemical structure of glyceraldehyde, a simple monosaccharide and an aldotriose.",
       "caption": ""
+    },
+    "Figure_04_00_00-2013": {
+      "source": "media/Figure_04_00_00-2013.jpg",
+      "sourceSha256": "f9f0ae599fa8280de2cecb8cf5a8a0189e6b3cf92a25c786e550862b898f0ec7",
+      "module": "m66444",
+      "kind": "photo",
+      "width": 1500,
+      "height": 445,
+      "variants": [
+        {
+          "width": 800,
+          "height": 237,
+          "file": "Figure_04_00_00-2013-800.webp"
+        },
+        {
+          "width": 1500,
+          "height": 445,
+          "file": "Figure_04_00_00-2013-1500.webp"
+        }
+      ],
+      "alt": "Part a: Human cheek cells as viewed by light microscopy have an irregular round shape and a well-defined nucleus that takes up about one-half of the cell. Part b: Onion skin cells, also viewed by light microscopy, are long and thin with a rectangular shape defined by a cell wall. They are about as wide as a cheek cell, but at least five times as long. The cell wall and nucleus are well defined in the micrograph. The onion cell nucleus is about the same size as the cheek cell nucleus. Part c: In this scanning electron micrograph of bacterial cells, the cell surface has a three-dimensional shape. Three of the bacteria are oval in shape. The fourth is round and has protrusions called pili. One pilus connects this bacterium to another.",
+      "caption": "(a) Nasal sinus cells (viewed with a light microscope), (b) onion cells (viewed with a light microscope), and (c) Vibrio tasmaniensis bacterial cells (seen through a scanning electron microscope) are from very different organisms, yet all share certain basic cell structure characteristics. (credit a: modification of work by Ed Uthman, MD; credit b: modification of work by Umberto Salvagnin; credit c: modification of work by Anthony D'Onofrio, William H. Fowle, Eric J. Stewart, and Kim Lewis of the Lewis Lab at Northeastern University; scale-bar data from Matt Russell)"
+    },
+    "Figure_04_01_01ab_new": {
+      "source": "media/Figure_04_01_01ab_new.jpg",
+      "sourceSha256": "940b346c3f2245fb587b25fce87a94d35d00b9be2ce2cf478350b248f6eac044",
+      "module": "m66445",
+      "kind": "photo",
+      "width": 667,
+      "height": 541,
+      "variants": [
+        {
+          "width": 667,
+          "height": 541,
+          "file": "Figure_04_01_01ab_new-667.webp"
+        }
+      ],
+      "alt": "Part a: This light microscope has binocular lenses and four objective lenses. The sample stage is directly beneath the objective lens. The light microscope sits on a tabletop and can be easily carried. Part b: The electron microscope shown here sits in a museum. It is about the size of a desk, and a person can sit in front of it to operate it. A column taller than a person rises from the center of the scope.",
+      "caption": "(a) Most light microscopes in a college biology lab can magnify cells up to approximately 400 times and have a resolution of about 200 nanometers. (b) Electron microscopes provide a much higher magnification, 100,000x, and have a resolution of 50 picometers. (credit a: modification of work by \"GcG\"/Wikimedia Commons; credit b: modification of work by Evan Bench)"
+    },
+    "Figure_04_01_02-c8a2": {
+      "source": "media/Figure_04_01_02-c8a2.jpg",
+      "sourceSha256": "17d5fe533d07da7a67b5e80daf00ca6a317fb16e6da2b6a58ec5a04344a62440",
+      "module": "m66445",
+      "kind": "photo",
+      "width": 1120,
+      "height": 455,
+      "variants": [
+        {
+          "width": 800,
+          "height": 325,
+          "file": "Figure_04_01_02-c8a2-800.webp"
+        },
+        {
+          "width": 1120,
+          "height": 455,
+          "file": "Figure_04_01_02-c8a2-1120.webp"
+        }
+      ],
+      "alt": "Part a: Salmonella through a light microscope appear as tiny purple dots. Part b: In this scanning electron micrograph, bacteria appear as three-dimensional ovals. The human cells are much larger with a complex, folded appearance. Some of the bacteria lie on the surface of the human cells, and some are squeezed between them.",
+      "caption": "(a) These Salmonella bacteria appear as tiny purple dots when viewed with a light microscope. (b) This scanning electron microscope micrograph shows Salmonella bacteria (in red) invading human cells (yellow). Even though subfigure (b) shows a different Salmonella specimen than subfigure (a), you can still observe the comparative increase in magnification and detail. (credit a: modification of work by CDC/Armed Forces Institute of Pathology, Charles N. Farmer, Rocky Mountain Laboratories; credit b: modification of work by NIAID, NIH; scale-bar data from Matt Russell)"
+    },
+    "Figure_04_01_03-42e9": {
+      "source": "media/Figure_04_01_03-42e9.jpg",
+      "sourceSha256": "566cd0842fb31db716a70438d6f40cd404d8df0de39415f5a44b4c931373808f",
+      "module": "m66445",
+      "kind": "photo",
+      "width": 544,
+      "height": 347,
+      "variants": [
+        {
+          "width": 544,
+          "height": 347,
+          "file": "Figure_04_01_03-42e9-544.webp"
+        }
+      ],
+      "alt": "Both normal cells and cells infected with HPV have an irregular, round shape and a well-defined nucleus. Infected cells, however, are two to three times as large as uninfected cells, and some have two nuclei.",
+      "caption": "These uterine cervix cells, viewed through a light microscope, are from a Pap smear. Normal cells are on the left. The cells on the right are infected with human papillomavirus (HPV). Notice that the infected cells are larger. Also, two of these cells each have two nuclei instead of one, the normal number. (credit: modification of work by Ed Uthman, MD; scale-bar data from Matt Russell)"
+    },
+    "Figure_04_02_01-5016": {
+      "source": "media/Figure_04_02_01-5016.jpg",
+      "sourceSha256": "a1f965b4e909dc3f7dd600058661ba1f07751748d5a53e587d568fbcebfb33c4",
+      "module": "m66446",
+      "kind": "photo",
+      "width": 544,
+      "height": 381,
+      "variants": [
+        {
+          "width": 544,
+          "height": 381,
+          "file": "Figure_04_02_01-5016-544.webp"
+        }
+      ],
+      "alt": "In this illustration, the prokaryotic cell has an oval shape. The circular chromosome is concentrated in a region called the nucleoid. The fluid inside the cell is called the cytoplasm. Ribosomes, depicted as small circles, float in the cytoplasm. The cytoplasm is encased by a plasma membrane, which in turn is encased by a cell wall. A capsule surrounds the cell wall. The bacterium depicted has a flagellum protruding from one narrow end. Pili are small protrusions that project from the capsule in all directions.",
+      "caption": "This figure shows the generalized structure of a prokaryotic cell. All prokaryotes have chromosomal DNA localized in a nucleoid, ribosomes, a cell membrane, and a cell wall. The other structures shown are present in some, but not all, bacteria."
+    },
+    "Figure_04_02_02": {
+      "source": "media/Figure_04_02_02.png",
+      "sourceSha256": "808d5743d31b8fd5b018a95f60336e3c3a0e3a29cc6a62365d8e6da4af9677d2",
+      "module": "m66446",
+      "kind": "diagram",
+      "width": 2226,
+      "height": 1382,
+      "variants": [
+        {
+          "width": 800,
+          "height": 496,
+          "file": "Figure_04_02_02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 993,
+          "file": "Figure_04_02_02-1600.webp"
+        }
+      ],
+      "alt": "Relative sizes on a logarithmic scale, from 0.1 n m to 1 m, are shown. Objects are shown from smallest to largest. The smallest object shown, an atom, is about .1 n m in size. The next largest objects shown are lipids and proteins; these molecules are between 1 and 10 n m. A flu virus is just under 100 n m. Bacteria and mitochondria are both about 1 greek mu m. Plant and animal cells are both between 10 and 100 greek mu m. A human egg is between 100 greek mu m and 1 m m. A frog egg is about 1 m m, A chicken egg and an ostrich egg are both between 10 and 100 m m, but an ostrich egg is larger. For comparison, a human is approximately 1 m tall. Appropriate instruments to view different size ranges are also shown. An electron microscope is used for things from less than .1 n m to almost 100 greek mu m. A light microscope is used for things from 100 n m to over 1 m m. The naked eye is used for things 100 greek mu m and up.",
+      "caption": "This figure shows relative sizes of microbes on a logarithmic scale (recall that each unit of increase in a logarithmic scale represents a 10-fold increase in the quantity measured)."
+    },
+    "Figure_04_02_03": {
+      "source": "media/Figure_04_02_03.png",
+      "sourceSha256": "05e4dbb6ea881d4d84e5133b30c720d94e17e5bcd4f651600ea655ddc3d42231",
+      "module": "m66446",
+      "kind": "diagram",
+      "width": 469,
+      "height": 157,
+      "variants": [
+        {
+          "width": 469,
+          "height": 157,
+          "file": "Figure_04_02_03-469.webp"
+        }
+      ],
+      "alt": "On the left, a sphere 1 mm in diameter is encased in a box of the same width. On the right, the same sphere is encased in a box 2 mm in diameter.",
+      "caption": "Notice that as a cell increases in size, its surface area-to-volume ratio decreases. When there is insufficient surface area to support a cell’s increasing volume, a cell will either divide or die. The cube-like cell on the left has a volume of 1 mm 3 and a surface area of 6 mm 2 , with a surface area-to-volume ratio of 6 to 1; whereas, the cube-like cell on the right has a volume of 8 mm 3 and a surface area of 24 mm 2 , with a surface area-to-volume ratio of 3 to 1."
+    },
+    "Figure_04_03_01b": {
+      "source": "media/Figure_04_03_01b.png",
+      "sourceSha256": "c4bc61caeed5b4e353c467d719bc8cb4644f180bfa87e16880bea7b33b439552",
+      "module": "m66449",
+      "kind": "diagram",
+      "width": 1235,
+      "height": 908,
+      "variants": [
+        {
+          "width": 800,
+          "height": 588,
+          "file": "Figure_04_03_01b-800.webp"
+        },
+        {
+          "width": 1235,
+          "height": 908,
+          "file": "Figure_04_03_01b-1235.webp"
+        }
+      ],
+      "alt": "Part b: This illustration depicts a typical eukaryotic plant cell. The nucleus of a plant cell contains chromatin and a nucleolus, the same as an animal cell. Other structures that the plant cell has in common with the animal cell include rough and smooth endoplasmic reticulum, the Golgi apparatus, mitochondria, peroxisomes, and ribosomes. The fluid inside the plant cell is called the cytoplasm, just as it is in an animal cell. The plant cell has three of the four cytoskeletal components found in animal cells: microtubules, intermediate filaments, and microfilaments. Plant cells do not have centrosomes. Plant cells have four structures not found in animals cells: chloroplasts, plastids, a central vacuole, and a cell wall. Chloroplasts are responsible for photosynthesis; they have an outer membrane, an inner membrane, and stack of membranes inside the inner membrane. The central vacuole is a very large, fluid-filled structure that maintains pressure against the cell wall. Plastids store pigments. The cell wall is outside the cell membrane.",
+      "caption": "These figures show the major organelles and other cell components of (a) a typical animal cell and (b) a typical eukaryotic plant cell. The plant cell has a cell wall, chloroplasts, plastids, and a central vacuole—structures not in animal cells. Most cells do not have lysosomes or centrosomes."
+    },
+    "Figure_04_03_02-ee9a": {
+      "source": "media/Figure_04_03_02-ee9a.jpg",
+      "sourceSha256": "0a1671b71a32e4cc81ac9899c4641828ec24444242471df259f80bad42453fb0",
+      "module": "m66449",
+      "kind": "photo",
+      "width": 801,
+      "height": 396,
+      "variants": [
+        {
+          "width": 800,
+          "height": 395,
+          "file": "Figure_04_03_02-ee9a-800.webp"
+        },
+        {
+          "width": 801,
+          "height": 396,
+          "file": "Figure_04_03_02-ee9a-801.webp"
+        }
+      ],
+      "alt": "The plasma membrane is composed of a phospholipid bilayer. In the bilayer, the two long hydrophobic tails of phospholipids face toward the center, and the hydrophilic head group faces the exterior. Integral membrane proteins and protein channels span the entire bilayer. Protein channels have a pore in the middle. Peripheral membrane proteins sit on the surface of the phospholipids, and are associated with the phospholipid head groups. On the exterior side of the membrane, carbohydrates are attached to certain proteins and lipids. Filaments of the cytoskeleton line the interior of the membrane.",
+      "caption": "The eukaryotic plasma membrane is a phospholipid bilayer with proteins and cholesterol embedded in it."
+    },
+    "Figure_04_03_03a": {
+      "source": "media/Figure_04_03_03a.jpg",
+      "sourceSha256": "7a1cf6f88bacebcc49af81981ae9b42a4e3203e100b50dbde80a4d91aad0ad49",
+      "module": "m66449",
+      "kind": "photo",
+      "width": 675,
+      "height": 239,
+      "variants": [
+        {
+          "width": 675,
+          "height": 239,
+          "file": "Figure_04_03_03a-675.webp"
+        }
+      ],
+      "alt": "The left part of this figure is a transmission electron micrograph of microvilli, which appear as long, slender stalks extending from the plasma membrane. The right side illustrates cells containing microvilli. The microvilli cover the surface of the cell facing the interior of the small intestine.",
+      "caption": "Microvilli, as they appear on cells lining the small intestine, increase the surface area available for absorption. These microvilli are only on the area of the plasma membrane that faces the cavity from which substances will be absorbed. (credit \"micrograph\": modification of work by Louisa Howard)"
+    },
+    "Figure_04_03_04": {
+      "source": "media/Figure_04_03_04.jpg",
+      "sourceSha256": "5d0700538b7d15555621133c34f0b762d686a8214c446182a57769d88b718daf",
+      "module": "m66449",
+      "kind": "photo",
+      "width": 544,
+      "height": 367,
+      "variants": [
+        {
+          "width": 544,
+          "height": 367,
+          "file": "Figure_04_03_04-544.webp"
+        }
+      ],
+      "alt": "The two-dimensional image depicts the nucleus of a cell as a circular object with two membranes; several gaps appear in the circle, representing nuclear pores. Surrounding the nucleus are membranous sacks representing the endoplasmic reticulum. Inside the nucleus is another circle, approximately ten percent of the total size of the nucleus, representing the nucleolus.",
+      "caption": "The nucleus stores chromatin (DNA plus proteins) in a gel-like substance called the nucleoplasm. The nucleolus is a condensed chromatin region where ribosome synthesis occurs. We call the nucleus' boundary the nuclear envelope. It consists of two phospholipid bilayers: an outer and an inner membrane. The nuclear membrane is continuous with the endoplasmic reticulum. Nuclear pores allow substances to enter and exit the nucleus."
+    },
+    "Figure_04_03_05": {
+      "source": "media/Figure_04_03_05.jpg",
+      "sourceSha256": "bd3a0aa787c06c098d87ed3148ad262d12f99c2a19fc4c57973d242bbb1e5b76",
+      "module": "m66449",
+      "kind": "photo",
+      "width": 1120,
+      "height": 576,
+      "variants": [
+        {
+          "width": 800,
+          "height": 411,
+          "file": "Figure_04_03_05-800.webp"
+        },
+        {
+          "width": 1120,
+          "height": 576,
+          "file": "Figure_04_03_05-1120.webp"
+        }
+      ],
+      "alt": "Part a: In this illustration, DNA tightly coiled into two thick cylinders is shown in the upper right. A close-up shows how the DNA is coiled around proteins called histones. Part b: This image shows paired chromosomes. The chromosomes are shown as a collection of slender tubes.",
+      "caption": "(a) This image shows various levels of chromatin's organization (DNA and protein). (b) This image shows paired chromosomes. (credit b: modification of work by NIH; scale-bar data from Matt Russell)"
+    },
+    "Figure_04_03_06-c2a1": {
+      "source": "media/Figure_04_03_06-c2a1.jpg",
+      "sourceSha256": "fabd4408649d69e9cd7c68e352c94f9691c2d6a5e018b2829f955992c0dc55f1",
+      "module": "m66449",
+      "kind": "photo",
+      "width": 544,
+      "height": 440,
+      "variants": [
+        {
+          "width": 544,
+          "height": 440,
+          "file": "Figure_04_03_06-c2a1-544.webp"
+        }
+      ],
+      "alt": "The ribosome consists of a small subunit and a large subunit, which is about three times as big as the small one. The large subunit sits on top of the small one. A chain of m R N A threads between the large and small subunits. A protein chain extends from the top of the large subunit.",
+      "caption": "A large subunit (top) and a small subunit (bottom) comprise ribosomes. During protein synthesis, ribosomes assemble amino acids into proteins."
+    },
+    "Figure_04_03_07": {
+      "source": "media/Figure_04_03_07.jpg",
+      "sourceSha256": "afc410b76e7db4f4b5177a95be76736a72ef859113772cb28706d962c60e241f",
+      "module": "m66449",
+      "kind": "photo",
+      "width": 544,
+      "height": 245,
+      "variants": [
+        {
+          "width": 544,
+          "height": 245,
+          "file": "Figure_04_03_07-544.webp"
+        }
+      ],
+      "alt": "This transmission electron micrograph of a mitochondrion shows an oval outer membrane and an inner membrane with many folds called cristae. Inside the inner membrane is a space called the mitochondrial matrix.",
+      "caption": "This electron micrograph shows a mitochondrion through an electron microscope. This organelle has an outer membrane and an inner membrane. The inner membrane contains folds, called cristae, which increase its surface area. We call the space between the two membranes the intermembrane space, and the space inside the inner membrane the mitochondrial matrix. ATP synthesis takes place on the inner membrane. (credit: modification of work by Matthew Britton; scale-bar data from Matt Russell)"
+    },
+    "Figure_04_03_08": {
+      "source": "media/Figure_04_03_08.jpg",
+      "sourceSha256": "135dced1980352aa4bc40682c487f69400050c569efaf0ff2d595c2db7107cdd",
+      "module": "m66449",
+      "kind": "photo",
+      "width": 544,
+      "height": 331,
+      "variants": [
+        {
+          "width": 544,
+          "height": 331,
+          "file": "Figure_04_03_08-544.webp"
+        }
+      ],
+      "alt": "The image depicts two tube-like structures, one on top of the other, at right angles. Each of the tubes is labeled as the centriole. Each tube is composed of smaller tubes grouped in threes; these are labeled 'microtubule triplet.' Each centriole tube is composed of nine triplets arranged to form the wall of the tube.",
+      "caption": "The centrosome consists of two centrioles that lie at right angles to each other. Each centriole is a cylinder comprised of nine triplets of microtubules. Nontubulin proteins (indicated by the green lines) hold the microtubule triplets together."
+    },
+    "Figure_04_03_09": {
+      "source": "media/Figure_04_03_09.jpg",
+      "sourceSha256": "4e44aeae666d1ed6462c8161cbef4efa85f5c6b298d065baec294e4f57491274",
+      "module": "m66449",
+      "kind": "photo",
+      "width": 1013,
+      "height": 233,
+      "variants": [
+        {
+          "width": 800,
+          "height": 184,
+          "file": "Figure_04_03_09-800.webp"
+        },
+        {
+          "width": 1013,
+          "height": 233,
+          "file": "Figure_04_03_09-1013.webp"
+        }
+      ],
+      "alt": "This illustration shows three glucose subunits that are attached together. Dashed lines at each end indicate that many more subunits make up an entire cellulose fiber. Each glucose subunit is a closed ring composed of carbon, hydrogen, and oxygen atoms.",
+      "caption": "Cellulose is a long chain of β-glucose molecules connected by a 1-4 linkage. The dashed lines at each end of the figure indicate a series of many more glucose units. The size of the page makes it impossible to portray an entire cellulose molecule."
+    },
+    "Figure_04_03_10-0e77": {
+      "source": "media/Figure_04_03_10-0e77.jpg",
+      "sourceSha256": "4ca8b65bf0cea5fb2d38bd4c18cd1aced6609c79fd8bdd363a10ef0aa8d1259a",
+      "module": "m66449",
+      "kind": "photo",
+      "width": 544,
+      "height": 429,
+      "variants": [
+        {
+          "width": 544,
+          "height": 429,
+          "file": "Figure_04_03_10-0e77-544.webp"
+        }
+      ],
+      "alt": "This illustration shows a chloroplast, which has an outer membrane and an inner membrane. The space between the outer and inner membranes is called the intermembrane space. Inside the inner membrane are flat, pancake-like structures called thylakoids. The thylakoids form stacks called grana. The liquid inside the inner membrane is called the stroma, and the space inside the thylakoids is called the thylakoid space.",
+      "caption": "The chloroplast has an outer membrane, an inner membrane, and membrane structures - thylakoids that are stacked into grana. We call the space inside the thylakoid membranes the thylakoid space. The light harvesting reactions take place in the thylakoid membranes, and sugar synthesis takes place in the fluid inside the inner membrane, which we call the stroma. Chloroplasts also have their own genome, which is contained on a single circular chromosome."
+    },
+    "Figure_04_04_01-08bf": {
+      "source": "media/Figure_04_04_01-08bf.png",
+      "sourceSha256": "f6730dd4030ccf06d4ffa37e11e703b68e4b37e7015235673ef1b9b91def3346",
+      "module": "m66452",
+      "kind": "diagram",
+      "width": 586,
+      "height": 835,
+      "variants": [
+        {
+          "width": 586,
+          "height": 835,
+          "file": "Figure_04_04_01-08bf-586.webp"
+        }
+      ],
+      "alt": "The left part of this figure shows the rough E R with an integral membrane protein embedded in it. The part of the protein facing the inside of the E R has a carbohydrate attached to it. The protein is shown leaving the E R in a vesicle that fuses with the cis side of the Golgi apparatus. The Golgi apparatus consists of several layers of membranes, called cisternae. As the protein passes through the cisternae, it is further modified by the addition of more carbohydrates. Eventually, it leaves the trans face of the Golgi in a vesicle. The vesicle fuses with the cell membrane so that the carbohydrate that was on the inside of the vesicle now faces the outside of the membrane. At the same time, the contents of the vesicle are ejected from the cell.",
+      "caption": "Membrane and secretory proteins are synthesized in the rough endoplasmic reticulum (RER). The RER also sometimes modifies proteins. In this illustration, a (green) integral membrane protein is modified by attachment of a (purple) carbohydrate in the ER. Vesicles with the integral protein bud from the ER and fuse with the Golgi apparatus' cis face. As the protein passes along the Golgi’s cisternae, the addition of more carbohydrates further modifies it. After its synthesis is complete, it exits as an integral membrane protein of the vesicle that buds from the Golgi’s trans face. When the vesicle fuses with the cell membrane, the protein becomes an integral portion of that cell membrane. (credit: modification of work by Magnus Manske)"
+    },
+    "Figure_04_04_02_new": {
+      "source": "media/Figure_04_04_02_new.jpg",
+      "sourceSha256": "e38fa4793388ca9b28ead7b68a5989640d22a4f88338605d99747c65c8616a37",
+      "module": "m66452",
+      "kind": "photo",
+      "width": 544,
+      "height": 257,
+      "variants": [
+        {
+          "width": 544,
+          "height": 257,
+          "file": "Figure_04_04_02_new-544.webp"
+        }
+      ],
+      "alt": "In this transmission electron micrograph, the nucleus is the most prominent feature. The nucleolus is a circular, dark region inside the nucleus. A nuclear pore can be seen in the nuclear envelope that surrounds the nucleus. The rough endoplasmic reticulum surrounds the nucleus, appearing as many layers of membranes. A mitochondrion sits between the layers of the E R membrane.",
+      "caption": "This transmission electron micrograph shows the rough endoplasmic reticulum and other organelles in a pancreatic cell. (credit: modification of work by Louisa Howard)"
+    },
+    "Figure_04_04_03-9d07": {
+      "source": "media/Figure_04_04_03-9d07.jpg",
+      "sourceSha256": "47e7a4b0589f0bb4b7783b0e2b2e0e688355e98a6dc7b5318cc778fa52bd46f3",
+      "module": "m66452",
+      "kind": "photo",
+      "width": 544,
+      "height": 275,
+      "variants": [
+        {
+          "width": 544,
+          "height": 275,
+          "file": "Figure_04_04_03-9d07-544.webp"
+        }
+      ],
+      "alt": "In this transmission electron micrograph, the Golgi apparatus appears as a stack of membranes surrounded by unnamed organelles.",
+      "caption": "The Golgi apparatus in this white blood cell is visible as a stack of semicircular, flattened rings in the lower portion of the image. You can see several vesicles near the Golgi apparatus. (credit: modification of work by Louisa Howard)"
+    },
+    "Figure_04_04_04-4e69": {
+      "source": "media/Figure_04_04_04-4e69.jpg",
+      "sourceSha256": "21be7cf3681dfa581fc061c0acd7ae2292dfe522dc3669c255f4fe64147400da",
+      "module": "m66452",
+      "kind": "photo",
+      "width": 787,
+      "height": 548,
+      "variants": [
+        {
+          "width": 787,
+          "height": 548,
+          "file": "Figure_04_04_04-4e69-787.webp"
+        }
+      ],
+      "alt": "In this illustration, a eukaryotic cell is shown consuming a bacterium. As the bacterium is consumed, it is encapsulated in a vesicle. The vesicle fuses with a lysosome, and proteins inside the lysosome digest the bacterium.",
+      "caption": "A macrophage has engulfed (phagocytized) a potentially pathogenic bacterium and then fuses with lysosomes within the cell to destroy the pathogen. Other organelles are present in the cell but for simplicity we do not show them."
+    },
+    "Figure_04_05_01": {
+      "source": "media/Figure_04_05_01.jpg",
+      "sourceSha256": "288fefea4b31ba2081c39d0edaec7d0808bf0059c713bbe56d0c3a4b10a6c610",
+      "module": "m66454",
+      "kind": "photo",
+      "width": 545,
+      "height": 695,
+      "variants": [
+        {
+          "width": 545,
+          "height": 695,
+          "file": "Figure_04_05_01-545.webp"
+        }
+      ],
+      "alt": "Microfilaments line the inside of the plasma membrane, whereas microtubules radiate out from the center of the cell. Intermediate filaments form a network throughout the cell that holds organelles in place.",
+      "caption": "Microfilaments thicken the cortex around the cell's inner edge. Like rubber bands, they resist tension. There are microtubules in the cell's interior where they maintain their shape by resisting compressive forces. There are intermediate filaments throughout the cell that hold organelles in place."
+    },
+    "Figure_04_05_02": {
+      "source": "media/Figure_04_05_02.jpg",
+      "sourceSha256": "f8bf5dd3ee13aac6aaa07e6f86afb3fa0f87666fe6faf5bc13bbe38c20a3f0ea",
+      "module": "m66454",
+      "kind": "photo",
+      "width": 544,
+      "height": 753,
+      "variants": [
+        {
+          "width": 544,
+          "height": 753,
+          "file": "Figure_04_05_02-544.webp"
+        }
+      ],
+      "alt": "This illustration shows two actin filaments wound together. Each actin filament is composed of many actin subunits connected together to form a chain.",
+      "caption": "Two intertwined actin strands comprise microfilaments."
+    },
+    "Figure_04_05_03": {
+      "source": "media/Figure_04_05_03.jpg",
+      "sourceSha256": "44c14daa1681cc26cf6851c3625e20b1668c1bebb6fa49f0dbac2156659b0fee",
+      "module": "m66454",
+      "kind": "photo",
+      "width": 544,
+      "height": 116,
+      "variants": [
+        {
+          "width": 544,
+          "height": 116,
+          "file": "Figure_04_05_03-544.webp"
+        }
+      ],
+      "alt": "This illustration shows 10 intermediate filament fibers bundled together.",
+      "caption": "Intermediate filaments consist of several intertwined strands of fibrous proteins."
+    },
+    "Figure_04_05_04ab": {
+      "source": "media/Figure_04_05_04ab.jpg",
+      "sourceSha256": "6c36fdfc67b4978d3843ceb9c44a762e5ea697bfbbe5031f3b3755c8e44c2db1",
+      "module": "m66454",
+      "kind": "photo",
+      "width": 800,
+      "height": 426,
+      "variants": [
+        {
+          "width": 800,
+          "height": 426,
+          "file": "Figure_04_05_04ab-800.webp"
+        }
+      ],
+      "alt": "The left part of this figure is a molecular model of 13 polymerized dimers of alpha- and beta-tubulin joined together to form a hollow tube. The right part of this image shows the tubulin structure as a ring of spheres connected together.",
+      "caption": "Microtubules are hollow. Their walls consist of 13 polymerized dimers of α-tubulin and β-tubulin (right image). The left image shows the tube's molecular structure."
+    },
+    "Figure_04_05_05": {
+      "source": "media/Figure_04_05_05.jpg",
+      "sourceSha256": "0aba9888bcae1c347652d341952dc3f5324d564d16b53b43c8ae9ae07c1ee644",
+      "module": "m66454",
+      "kind": "photo",
+      "width": 544,
+      "height": 428,
+      "variants": [
+        {
+          "width": 544,
+          "height": 428,
+          "file": "Figure_04_05_05-544.webp"
+        }
+      ],
+      "alt": "This transmission electron micrograph shows a cross section of nine microtubule doublets that form a hollow tube. Another microtubule doublet sits in the center of the tube.",
+      "caption": "This transmission electron micrograph of two flagella shows the microtubules' 9 + 2 array: nine microtubule doublets surround a single microtubule doublet. (credit: modification of work by Dartmouth Electron Microscope Facility, Dartmouth College; scale-bar data from Matt Russell)"
+    },
+    "Figure_04_06_01": {
+      "source": "media/Figure_04_06_01.png",
+      "sourceSha256": "f38ae6bbb86bf169d14580113efd8f0e86ce62e8c46148bc0b6fa1ea83df63a3",
+      "module": "m66455",
+      "kind": "diagram",
+      "width": 1792,
+      "height": 1835,
+      "variants": [
+        {
+          "width": 800,
+          "height": 819,
+          "file": "Figure_04_06_01-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1638,
+          "file": "Figure_04_06_01-1600.webp"
+        }
+      ],
+      "alt": "This illustration shows the plasma membrane. Embedded in the plasma membrane are integral membrane proteins called integrins. On the exterior of the cell is a vast network of collagen fibers. The fibers are attached to the integrins via a protein called fibronectin. Proteoglycan complexes also extend from the plasma membrane to the extracellular matrix. A close-up view shows that each proteoglycan complex is composed of a polysaccharide core. Proteins branch from this core, and carbohydrates branch from the proteins. The inside of the cytoplasmic membrane is lined with microfilaments of the cytoskeleton.",
+      "caption": "The extracellular matrix consists of a network of proteins and carbohydrates."
+    },
+    "Figure_04_06_02": {
+      "source": "media/Figure_04_06_02.png",
+      "sourceSha256": "40f8e5fa2e6503f874facc59a40fb14d438dd80fdd051f0e6f106f23dd7d54be",
+      "module": "m66455",
+      "kind": "diagram",
+      "width": 1057,
+      "height": 617,
+      "variants": [
+        {
+          "width": 800,
+          "height": 467,
+          "file": "Figure_04_06_02-800.webp"
+        },
+        {
+          "width": 1057,
+          "height": 617,
+          "file": "Figure_04_06_02-1057.webp"
+        }
+      ],
+      "alt": "This illustration shows two plant cells side-by-side. A gap in the cell wall, a plasmodesma, allows fluid and small molecules to pass from the cytoplasm of one cell to the cytoplasm of the other.",
+      "caption": "A plasmodesma is a channel between two adjacent plant cells' cell walls. Plasmodesmata allow materials to pass from one plant cell's cytoplasm to an adjacent cell's cytoplasm."
+    },
+    "Figure_04_06_03": {
+      "source": "media/Figure_04_06_03.png",
+      "sourceSha256": "048dd5b54a229d03b5d72409fa61704606cc77bd8ad47caaa58e4637260e288e",
+      "module": "m66455",
+      "kind": "diagram",
+      "width": 936,
+      "height": 844,
+      "variants": [
+        {
+          "width": 800,
+          "height": 721,
+          "file": "Figure_04_06_03-800.webp"
+        },
+        {
+          "width": 936,
+          "height": 844,
+          "file": "Figure_04_06_03-936.webp"
+        }
+      ],
+      "alt": "This illustration shows two cell membranes joined together by a matrix of tight junctions.",
+      "caption": "Tight junctions form watertight connections between adjacent animal cells. Proteins create tight junction adherence. (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "Figure_04_06_04": {
+      "source": "media/Figure_04_06_04.png",
+      "sourceSha256": "e52bb3dc9c4e74280fb2c05b4f82a41a265135eb8a54da7fdf4ae56e9192961a",
+      "module": "m66455",
+      "kind": "diagram",
+      "width": 1070,
+      "height": 970,
+      "variants": [
+        {
+          "width": 800,
+          "height": 725,
+          "file": "Figure_04_06_04-800.webp"
+        },
+        {
+          "width": 1070,
+          "height": 970,
+          "file": "Figure_04_06_04-1070.webp"
+        }
+      ],
+      "alt": "This illustration shows two cells fused together by a desmosome. Cadherins extend from each cell and join the two cells together. Intermediate filaments connect to cadherins on the inside of the cell.",
+      "caption": "A desmosome forms a very strong spot weld between cells. Linking cadherins and intermediate filaments create it. (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "Figure_04_06_05": {
+      "source": "media/Figure_04_06_05.png",
+      "sourceSha256": "0a39be80b94bfadb4d6ffe790c4bb5b9f359c8345b0b6257272cdcdc8cbb82ba",
+      "module": "m66455",
+      "kind": "diagram",
+      "width": 949,
+      "height": 998,
+      "variants": [
+        {
+          "width": 800,
+          "height": 841,
+          "file": "Figure_04_06_05-800.webp"
+        },
+        {
+          "width": 949,
+          "height": 998,
+          "file": "Figure_04_06_05-949.webp"
+        }
+      ],
+      "alt": "This illustration shows two cells joined together with protein pores called gap junctions that allow water and small molecules to pass through.",
+      "caption": "A gap junction is a protein-lined pore that allows water and small molecules to pass between adjacent animal cells. (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "Figure_05_00_00": {
+      "source": "media/Figure_05_00_00.jpg",
+      "sourceSha256": "248c701f28e33d2a1bb4b3d6dac59b40a09cc19f9c2146949b319486da453611",
+      "module": "m66372",
+      "kind": "photo",
+      "width": 1117,
+      "height": 569,
+      "variants": [
+        {
+          "width": 800,
+          "height": 407,
+          "file": "Figure_05_00_00-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 569,
+          "file": "Figure_05_00_00-1117.webp"
+        }
+      ],
+      "alt": "This photo shows the hustle and bustle of Grand Central Station.",
+      "caption": "Despite its seeming hustle and bustle, Grand Central Station functions with a high level of organization: People and objects move from one location to another, they cross or are contained within certain boundaries, and they provide a constant flow as part of larger activity. Analogously, a plasma membrane’s functions involve movement within the cell and across boundaries' activities. (credit: modification of work by Randy Le’Moine)"
+    },
+    "Figure_05_01_01-52bf": {
+      "source": "media/Figure_05_01_01-52bf.jpg",
+      "sourceSha256": "6833112e70dc787e405fb80b6857843724bfdbb84d4bcb8e32ba5a7df28827db",
+      "module": "m66373",
+      "kind": "photo",
+      "width": 1200,
+      "height": 766,
+      "variants": [
+        {
+          "width": 800,
+          "height": 510,
+          "file": "Figure_05_01_01-52bf-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 766,
+          "file": "Figure_05_01_01-52bf-1200.webp"
+        }
+      ],
+      "alt": "This illustration shows a phospholipid bilayer with proteins and cholesterol embedded in it. Integral membrane proteins span the entire membrane. Protein channels are integral membrane proteins with a central pore through which molecules can pass. Peripheral proteins are associated with the phospholipid head groups on one side of the membrane only. A glycoprotein is shown with the protein portion of the molecule embedded in the membrane and the carbohydrate portion jutting out from the membrane. A glycolipid is also shown with the lipid portion embedded in the membrane and the carbohydrate portion jutting out of the membrane.",
+      "caption": "The plasma membrane fluid mosaic model describes the plasma membrane as a fluid combination of phospholipids, cholesterol, and proteins. Carbohydrates attached to lipids (glycolipids) and to proteins (glycoproteins) extend from the membrane's outward-facing surface. Credit: Rao, A., Ryan, K., Fletcher, S., Hawkins, A. and Tag, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_05_01_02": {
+      "source": "media/Figure_05_01_02.png",
+      "sourceSha256": "90a16a6b03fc061688b920ecb51946f416057fc4669ce14d44739424372f6440",
+      "module": "m66373",
+      "kind": "diagram",
+      "width": 2007,
+      "height": 1288,
+      "variants": [
+        {
+          "width": 800,
+          "height": 513,
+          "file": "Figure_05_01_02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1027,
+          "file": "Figure_05_01_02-1600.webp"
+        }
+      ],
+      "alt": "An illustration of a phospholipid shows a hydrophilic head group composed of phosphate connected to a three-carbon glycerol molecule, and two hydrophobic tails composed of long hydrocarbon chains.",
+      "caption": "A hydrophilic head and two hydrophobic tails comprise this phospholipid molecule. The hydrophilic head group consists of a phosphate-containing group attached to a glycerol molecule. The hydrophobic tails, each containing either a saturated or an unsaturated fatty acid, are long hydrocarbon chains."
+    },
+    "Figure_05_01_03-f9be": {
+      "source": "media/Figure_05_01_03-f9be.jpg",
+      "sourceSha256": "00503c4045698678fd626588f6c60aa9b1cbc8edea67c1376ad82d89d8697251",
+      "module": "m66373",
+      "kind": "photo",
+      "width": 544,
+      "height": 682,
+      "variants": [
+        {
+          "width": 544,
+          "height": 682,
+          "file": "Figure_05_01_03-f9be-544.webp"
+        }
+      ],
+      "alt": "The image on the left shows a spherical lipid bilayer, shown as a half sphere whose surface is covered in the spherical polar heads, and thin, strandlike tails extend inward. In the core of the sphere is another half sphere, with the same anatomy but with the polar heads facing inward and the strandlike tails facing out toward the tails of the outer layer. The image on the right shows a smaller sphere that has a single lipid layer only, with the spherical heads facing outward. The image at the bottom shows a lipid bilayer sheet; whose polar heads form the upper and lower surfaces, with tails extending toward each other in the middle.",
+      "caption": "In an aqueous solution, phospholipids usually arrange themselves with their polar heads facing outward and their hydrophobic tails facing inward. (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "Figure_05_01_04-8e5f": {
+      "source": "media/Figure_05_01_04-8e5f.jpg",
+      "sourceSha256": "87239a5bab6dc67d0fdf0c0db83c67902e54630b97d35a702dbd5afd5af760b9",
+      "module": "m66373",
+      "kind": "photo",
+      "width": 544,
+      "height": 349,
+      "variants": [
+        {
+          "width": 544,
+          "height": 349,
+          "file": "Figure_05_01_04-8e5f-544.webp"
+        }
+      ],
+      "alt": "The left part of this illustration shows an integral membrane protein with a single alpha-helix that spans the membrane. The middle part shows a protein with several alpha-helices spanning the membrane. The right part shows a protein with two beta-sheets spanning the membrane.",
+      "caption": "Integral membrane proteins may have one or more alpha-helices that span the membrane (examples 1 and 2), or they may have beta-sheets that span the membrane (example 3). (credit: “Foobar”/Wikimedia Commons)"
+    },
+    "Figure_05_01_05-f922": {
+      "source": "media/Figure_05_01_05-f922.jpg",
+      "sourceSha256": "a84533049cec3746a3b19aaa0ac75683278152b6271cde52f3483a0076bae06f",
+      "module": "m66373",
+      "kind": "photo",
+      "width": 544,
+      "height": 633,
+      "variants": [
+        {
+          "width": 544,
+          "height": 633,
+          "file": "Figure_05_01_05-f922-544.webp"
+        }
+      ],
+      "alt": "This illustration shows the plasma membrane of a T cell. C D 4 receptors extend from the membrane into the extracellular space. The H I V virus recognizes part of the C D 4 receptor and attaches to it.",
+      "caption": "HIV binds to the CD4 receptor, a glycoprotein on T cell surfaces. (credit: modification of work by NIH, NIAID)"
+    },
+    "Figure_05_02_01-8fd6": {
+      "source": "media/Figure_05_02_01-8fd6.jpg",
+      "sourceSha256": "bbad1ff66351cf8ce55052af89c438951ed1c89f04720e82a5e381390c20ccee",
+      "module": "m66374",
+      "kind": "photo",
+      "width": 1200,
+      "height": 836,
+      "variants": [
+        {
+          "width": 800,
+          "height": 557,
+          "file": "Figure_05_02_01-8fd6-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 836,
+          "file": "Figure_05_02_01-8fd6-1200.webp"
+        }
+      ],
+      "alt": "This illustration shows that the inside and outside of a plasma membrane are different, with the exterior covered in the spherical heads, and the interior filled with the strandlike tails.",
+      "caption": "The plasma membrane's exterior surface is not identical to its interior surface. Credit: Rao, A., Ryan, K., Fletcher, S., Hawkins, A. and Tag, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_05_02_02-9936": {
+      "source": "media/Figure_05_02_02-9936.jpg",
+      "sourceSha256": "b3795ca75808d432a21e868965c38ae5300f98ca169d0f6449e5d9017e538034",
+      "module": "m66374",
+      "kind": "photo",
+      "width": 800,
+      "height": 348,
+      "variants": [
+        {
+          "width": 800,
+          "height": 348,
+          "file": "Figure_05_02_02-9936-800.webp"
+        }
+      ],
+      "alt": "The left part of this illustration shows a substance on one side of a membrane only, in the extracellular fluid. The middle part shows that, after some time, some of the substance has diffused across the plasma membrane, from the extracellular fluid and into the cytoplasm. The right part shows that, after more time, an equal amount of the substance is on each side of the membrane.",
+      "caption": "Diffusion through a permeable membrane moves a substance from a high concentration area (extracellular fluid, in this case) down its concentration gradient (into the cytoplasm). (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "Figure_05_02_04-fcc1": {
+      "source": "media/Figure_05_02_04-fcc1.jpg",
+      "sourceSha256": "5844cbe922991acae3040e6b66dc0403221115568592d03b0103440f5b50a480",
+      "module": "m66374",
+      "kind": "photo",
+      "width": 1200,
+      "height": 903,
+      "variants": [
+        {
+          "width": 800,
+          "height": 602,
+          "file": "Figure_05_02_04-fcc1-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 903,
+          "file": "Figure_05_02_04-fcc1-1200.webp"
+        }
+      ],
+      "alt": "This illustration shows two channel proteins in the plasma membrane. One protein is labeled gate closed, and there is no space for particles to pass through. The other is labeled gate open, and there is a space for substances to pass through. Substances of the same type appear on both sides of the membrane near the open-gated protein.",
+      "caption": "Ion Channel Proteins. Ion channel proteins are gated. When they are closed, no ions can pass through them. However, when a channel opens, select ions diffuse through the channel. Channel proteins are highly specific, letting only a specific ion or subset of ions pass. Credit: Rao, A., Ryan, K., Tag, A. and Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "Figure_05_02_05-71ff": {
+      "source": "media/Figure_05_02_05-71ff.jpg",
+      "sourceSha256": "a5c25c52bb44888fd806026fb8b4616c1508fe72d6bae9978588b998f71e57ea",
+      "module": "m66374",
+      "kind": "photo",
+      "width": 1200,
+      "height": 901,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_05_02_05-71ff-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 901,
+          "file": "Figure_05_02_05-71ff-1200.webp"
+        }
+      ],
+      "alt": "This illustration shows a carrier protein embedded in the membrane with an opening that initially faces the extracellular surface, labeled the hydrophilic pocket. After a substance binds the carrier, it changes shape so that the opening faces the cytoplasm. The change is labeled conformational change. After, the substance is released.",
+      "caption": "Some substances are able to move down their concentration gradient across the plasma membrane with the aid of carrier proteins. Carrier proteins change shape as they move molecules across the membrane. Credit: Rao, A., Tag, A. and Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "Figure_05_02_06-d985": {
+      "source": "media/Figure_05_02_06-d985.jpg",
+      "sourceSha256": "7fd635848ca26b737451c718627c3627cdc377e3c980f0cfe9abd8f4433c02ed",
+      "module": "m66374",
+      "kind": "photo",
+      "width": 544,
+      "height": 308,
+      "variants": [
+        {
+          "width": 544,
+          "height": 308,
+          "file": "Figure_05_02_06-d985-544.webp"
+        }
+      ],
+      "alt": "This illustration shows a container whose contents are separated by a semipermeable membrane. Initially, there is a high concentration of solute on the right side of the membrane and a low concentration of the left. Over time, water diffuses across the membrane toward the side of the container that initially had a higher concentration of solute (lower concentration of water). As a result of osmosis, the water level is higher on this side of the membrane, and the solute concentration is the same on both sides.",
+      "caption": "In osmosis, water always moves from an area of higher water concentration to one of lower concentration. In the diagram, the solute cannot pass through the selectively permeable membrane, but the water can."
+    },
+    "Figure_05_02_07": {
+      "source": "media/Figure_05_02_07.png",
+      "sourceSha256": "afae8f2cb21d55db92eec780728de2966a6a3d02ab797b56f0441a411b9c3e43",
+      "module": "m66374",
+      "kind": "diagram",
+      "width": 1800,
+      "height": 1324,
+      "variants": [
+        {
+          "width": 800,
+          "height": 588,
+          "file": "Figure_05_02_07-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1177,
+          "file": "Figure_05_02_07-1600.webp"
+        }
+      ],
+      "alt": "The left part shows bloated red blood cells, lysed, bathed in a hypotonic solution. The middle part shows healthy red blood cells bathed in an isotonic solution, and the right part of this illustration shows shriveled red blood cells bathed in a hypertonic solution.",
+      "caption": "Three different scenarios involving red blood cells (RBC) are shown. Left: A RBC placed in a hypotonic solution, where the concentration of solutes in the surrounding fluid is lower than those in the cell, will cause water to rush into the RBC and lead to lysis of the cell. Middle: there is no net water movement into or out of the cell as the concentration of the solutes inside the cell equal or is isotonic to that of the surrounding fluid. Right: a RBC placed in a hypertonic solution, where the concentration of solutes in the surrounding fluid is greater than that in the cell will cause water to rush out of the cell and into the surrounding fluid. This will cause the RBC to shrivel. Credit: Tag, A., Rao, A., Hawkins, A and Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "Figure_05_02_08-2288": {
+      "source": "media/Figure_05_02_08-2288.jpg",
+      "sourceSha256": "5852ac4a4278c0c146117396de188698db9a14be22b6e1ee9c3050aa2a13ccf3",
+      "module": "m66374",
+      "kind": "photo",
+      "width": 544,
+      "height": 210,
+      "variants": [
+        {
+          "width": 544,
+          "height": 210,
+          "file": "Figure_05_02_08-2288-544.webp"
+        }
+      ],
+      "alt": "The left part of this image shows a plant cell bathed in a hypertonic solution so that the plasma membrane has pulled away completely from the cell wall, and the central vacuole has shrunk. Water moves out of the plant cell. The middle part shows a plant cell bathed in an isotonic solution; the plasma membrane has pulled away from the cell wall a bit, and the central vacuole size is unchanged. Water moves both in and out of the plant cell. The right part shows a plant cell in a hypotonic solution. The central vacuole is large, and the plasma membrane is pressed against the cell wall. Water is moving into the plant cell.",
+      "caption": "The turgor pressure within a plant cell depends on the solution's tonicity in which it is bathed. (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "Figure_05_02_09": {
+      "source": "media/Figure_05_02_09.jpg",
+      "sourceSha256": "07d5464bbc802e48316c66c0672dac22f63be2a6afdd63fc6dc01898ca27a682",
+      "module": "m66374",
+      "kind": "photo",
+      "width": 675,
+      "height": 300,
+      "variants": [
+        {
+          "width": 675,
+          "height": 300,
+          "file": "Figure_05_02_09-675.webp"
+        }
+      ],
+      "alt": "The left photo shows a plant that has wilted, with dark green leaves that are shriveled, and appear dry. The photo on the right shows a healthy plant, with broad light green leaves that appear soft and pliable.",
+      "caption": "Without adequate water, the plant on the left has lost turgor pressure, visible in its wilting. Watering the plant (right) will restore the turgor pressure. (credit: Victor M. Vicente Selvas)"
+    },
+    "Figure_05_02_10": {
+      "source": "media/Figure_05_02_10.jpg",
+      "sourceSha256": "c5033719e335522613481c5e5817a3e2c29f4355be7caec670aa039789e29aad",
+      "module": "m66374",
+      "kind": "photo",
+      "width": 544,
+      "height": 250,
+      "variants": [
+        {
+          "width": 544,
+          "height": 250,
+          "file": "Figure_05_02_10-544.webp"
+        }
+      ],
+      "alt": "A bright field light microscopy shows an oval-shaped cell. Contractile vacuoles are prominent structures embedded in the cell membrane that pump out water.",
+      "caption": "A paramecium’s contractile vacuole, here visualized using bright field light microscopy at 480x magnification, continuously pumps water out of the organism’s body to keep it from bursting in a hypotonic medium. (credit: modification of work by NIH; scale-bar data from Matt Russell)"
+    },
+    "Figure_05_03_01-d7da": {
+      "source": "media/Figure_05_03_01-d7da.jpg",
+      "sourceSha256": "ef9e97c62261015186cfdc1bdc1dbf33a74a5ebc05deb7df90c041d38503efe6",
+      "module": "m66375",
+      "kind": "photo",
+      "width": 725,
+      "height": 547,
+      "variants": [
+        {
+          "width": 725,
+          "height": 547,
+          "file": "Figure_05_03_01-d7da-725.webp"
+        }
+      ],
+      "alt": "This illustration shows a membrane bilayer with a potassium channel embedded in it. The cytoplasm has a high concentration of potassium associated with a negatively charged molecule. The extracellular fluid has a high concentration of sodium associated with chlorine ions.",
+      "caption": "Electrochemical gradients arise from the combined effects of concentration gradients and electrical gradients. Na + ions are at higher concentration outside the cell, and K + ions are at higher concentration inside of the cell, and yet the inside of the cell has negative net charge compared to the other side of the membrane. This is due to the presence of K + binding proteins and other negatively charged molecules. The difference in electrical charges attracts the positively charged Na ions toward the inside of the cell, the electrical gradient, while the K ions tend to flow through K channels toward the outside of the cell due to the concentration difference, the concentration gradient. Structures labeled A represent proteins. (credit: “Synaptitude”/Wikimedia Commons)"
+    },
+    "Figure_05_03_02-3f77": {
+      "source": "media/Figure_05_03_02-3f77.jpg",
+      "sourceSha256": "4cbf81b742baa34f7ce18f2256e195e3808e1b88d590160ea176f2b1dc1e178d",
+      "module": "m66375",
+      "kind": "photo",
+      "width": 544,
+      "height": 232,
+      "variants": [
+        {
+          "width": 544,
+          "height": 232,
+          "file": "Figure_05_03_02-3f77-544.webp"
+        }
+      ],
+      "alt": "This illustration shows a plasma membrane with three transport proteins embedded in it. The left image shows a uniporter that transports a substance in one direction. The middle image shows a symporter that transports two different substances in the same direction. The right image shows an antiporter that transports two different substances in opposite directions.",
+      "caption": "A uniporter carries one molecule or ion. A symporter carries two different molecules or ions, both in the same direction. An antiporter also carries two different molecules or ions, but in different directions. (credit: modification of work by “Lupask”/Wikimedia Commons)"
+    },
+    "Figure_05_03_03-62aa": {
+      "source": "media/Figure_05_03_03-62aa.jpg",
+      "sourceSha256": "42eb68c02bbcb7ba35e0817b01d269dea48e4a586919feb8845ce532b13cf768",
+      "module": "m66375",
+      "kind": "photo",
+      "width": 1200,
+      "height": 899,
+      "variants": [
+        {
+          "width": 800,
+          "height": 599,
+          "file": "Figure_05_03_03-62aa-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 899,
+          "file": "Figure_05_03_03-62aa-1200.webp"
+        }
+      ],
+      "alt": "This illustration shows the sodium-potassium pump. Initially, the pumps opening faces the cytoplasm, where three sodium ions bind to it. The antiporter hydrolyzes an A T P to A D P and, as a result, undergoes a conformational change. The sodium ions are released into the extracellular space. Two potassium ions from the extracellular space now bind the antiporter, which changes conformation again, releasing the potassium ions into the cytoplasm.",
+      "caption": "The sodium-potassium pump is an example of primary active transport that moves ions, sodium and potassium ions in this instance, across a membrane against their concentration gradients. The energy is provided by the hydrolysis of ATP. Three sodium ions are moved out of the cell for every 2 potassium ions that are brought into the cell. This creates an electrochemical gradient that is crucial for living cells. Credit: Rao, A., Ryan, K. and Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "Figure_05_03_04-851f": {
+      "source": "media/Figure_05_03_04-851f.png",
+      "sourceSha256": "e40e6a60a454c8aeb16cd8b94e7fe2816325cd05a8d61edb12a536e1320324e6",
+      "module": "m66375",
+      "kind": "diagram",
+      "width": 6692,
+      "height": 5000,
+      "variants": [
+        {
+          "width": 800,
+          "height": 597,
+          "file": "Figure_05_03_04-851f-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1195,
+          "file": "Figure_05_03_04-851f-1600.webp"
+        }
+      ],
+      "alt": "This illustration shows a membrane bilayer with two integral membrane proteins embedded in it. The first, a sodium-potassium pump, uses energy from A T P hydrolysis to pump three sodium ions out of the cell for every two potassium ions it pumps into the cell. The result is a high concentration of sodium outside the cell and a high concentration of potassium inside the cell. There is also a low concentration of glucose outside the cell, and a high concentration inside. A sodium-amino acid co-transporter simultaneously transports sodium and the glucose into the cell. Text within the image reads as follows: Primary Active Transport: the sodium potassium pump moves sodium ions using the energy of ATP hydrolysis to establish a concentration gradient of sodium ions. Secondary active transport: Sodium ions moving with the concentration gradient established by the sodium potassium pump drives the transport of glucose against its concentration gradient.",
+      "caption": "An electrochemical gradient (Na + concentration - green), is generated by primary active transport. The energy stored in the Na + gradient provides the energy to move other substances against their concentration gradients (Glucose - blue), a process called co-transport or secondary active transport. Credit: Rao, A., Ryan, K., Tag, A. and Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "Figure_05_04_01": {
+      "source": "media/Figure_05_04_01.png",
+      "sourceSha256": "bfe714a98d62378f5fa2d1842f3c9ea365fbb8a09d25b7a514d124a7947bf5ea",
+      "module": "m66376",
+      "kind": "diagram",
+      "width": 1338,
+      "height": 1295,
+      "variants": [
+        {
+          "width": 800,
+          "height": 774,
+          "file": "Figure_05_04_01-800.webp"
+        },
+        {
+          "width": 1338,
+          "height": 1295,
+          "file": "Figure_05_04_01-1338.webp"
+        }
+      ],
+      "alt": "This illustration shows a plasma membrane forming a pocket around a particle in the extracellular fluid. The membrane subsequently engulfs the particle, which becomes trapped in a vacuole inside the cell.",
+      "caption": "In phagocytosis, the cell membrane surrounds the particle and engulfs it. (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "Figure_05_04_02": {
+      "source": "media/Figure_05_04_02.png",
+      "sourceSha256": "77d912a69fd09a46b4a92d78090872e11fdd8c953425aa1ee5e2799bbf8924da",
+      "module": "m66376",
+      "kind": "diagram",
+      "width": 1088,
+      "height": 1295,
+      "variants": [
+        {
+          "width": 800,
+          "height": 952,
+          "file": "Figure_05_04_02-800.webp"
+        },
+        {
+          "width": 1088,
+          "height": 1295,
+          "file": "Figure_05_04_02-1088.webp"
+        }
+      ],
+      "alt": "This illustration shows a plasma membrane forming a pocket around fluid in the extracellular fluid. The membrane subsequently engulfs the fluid, which becomes trapped in a vacuole.",
+      "caption": "In pinocytosis, the cell membrane invaginates, surrounds a small volume of fluid, and pinches off. (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "Figure_05_04_03": {
+      "source": "media/Figure_05_04_03.png",
+      "sourceSha256": "510b982cecb981182bd20cff5bd755a20c647f313b1ba70c10473624611f16c0",
+      "module": "m66376",
+      "kind": "diagram",
+      "width": 865,
+      "height": 1240,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1147,
+          "file": "Figure_05_04_03-800.webp"
+        },
+        {
+          "width": 865,
+          "height": 1240,
+          "file": "Figure_05_04_03-865.webp"
+        }
+      ],
+      "alt": "This illustration shows a part of the plasma membrane that is clathrin-coated on the cytoplasmic side and has receptors on the extracellular side. The receptors bind a substance, then pinch off to form a vesicle.",
+      "caption": "In receptor-mediated endocytosis, the cell's uptake of substances targets a single type of substance that binds to the receptor on the cell membrane's external surface. (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "Figure_05_04_04": {
+      "source": "media/Figure_05_04_04.png",
+      "sourceSha256": "83b6e14dc691617a854a043db93788e1f79ae7d01fa3e2369385655adbf19b9a",
+      "module": "m66376",
+      "kind": "diagram",
+      "width": 1148,
+      "height": 1250,
+      "variants": [
+        {
+          "width": 800,
+          "height": 871,
+          "file": "Figure_05_04_04-800.webp"
+        },
+        {
+          "width": 1148,
+          "height": 1250,
+          "file": "Figure_05_04_04-1148.webp"
+        }
+      ],
+      "alt": "This illustration shows vesicles fusing with the plasma membrane and releasing their contents to the extracellular fluid.",
+      "caption": "In exocytosis, vesicles containing substances fuse with the plasma membrane. The contents then release to the cell's exterior. (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "Figure_06_00_01-db8f": {
+      "source": "media/Figure_06_00_01-db8f.jpg",
+      "sourceSha256": "35cd5ea274ee206e02c15f6f2e36b968d289eea9c6b66a84713b30b5e2f03b7c",
+      "module": "m66456",
+      "kind": "photo",
+      "width": 1118,
+      "height": 451,
+      "variants": [
+        {
+          "width": 800,
+          "height": 322,
+          "file": "Figure_06_00_01-db8f-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 451,
+          "file": "Figure_06_00_01-db8f-1118.webp"
+        }
+      ],
+      "alt": "In this photo, a hummingbird drinks from a feeder.",
+      "caption": "A hummingbird needs energy to maintain prolonged periods of flight. The bird obtains its energy from taking in food and transforming the nutrients into energy through a series of biochemical reactions. The flight muscles in birds are extremely efficient in energy production. (credit: modification of work by Cory Zanker)"
+    },
+    "Figure_06_01_01": {
+      "source": "media/Figure_06_01_01.jpg",
+      "sourceSha256": "2cb0b595c757828f1b10f9e3bf04cc83e331d9bf9a05ae68f6e00a3e210c30e1",
+      "module": "m66457",
+      "kind": "photo",
+      "width": 660,
+      "height": 793,
+      "variants": [
+        {
+          "width": 660,
+          "height": 793,
+          "file": "Figure_06_01_01-660.webp"
+        }
+      ],
+      "alt": "This diagram shows energy from the sun being transferred to producers, such as plants, as well as releasing heat. The producers in turn transfer the energy to consumers and decomposers, which release heat. Animals also transfer energy to decomposers.",
+      "caption": "Most life forms on earth obtain their energy from the sun. Plants use photosynthesis to capture sunlight, and herbivores eat those plants to obtain energy. Carnivores eat the herbivores, and decomposers digest plant and animal matter."
+    },
+    "Figure_06_01_02": {
+      "source": "media/Figure_06_01_02.jpg",
+      "sourceSha256": "d1ca6af884fc7d09fd2ebbbef25cae4a0d5d8c736b86cf276d92294c4135dd87",
+      "module": "m66457",
+      "kind": "photo",
+      "width": 800,
+      "height": 403,
+      "variants": [
+        {
+          "width": 800,
+          "height": 403,
+          "file": "Figure_06_01_02-800.webp"
+        }
+      ],
+      "alt": "The photo on the left shows acorns growing on an oak tree. The photo on the right shows a squirrel eating.",
+      "caption": "Plants, like this oak tree and acorn, use energy from sunlight to make sugar and other organic molecules. Both plants and animals (like this squirrel) use cellular respiration to derive energy from the organic molecules that plants originally produced. (credit “acorn”: modification of work by Noel Reynolds; credit “squirrel”: modification of work by Dawn Huczek)"
+    },
+    "Figure_06_01_03": {
+      "source": "media/Figure_06_01_03.png",
+      "sourceSha256": "3f7923aa3371798e5f30ebb03393fda168bd81a6e790ce25936bb985c73bdd81",
+      "module": "m66457",
+      "kind": "diagram",
+      "width": 1600,
+      "height": 504,
+      "variants": [
+        {
+          "width": 800,
+          "height": 252,
+          "file": "Figure_06_01_03-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 504,
+          "file": "Figure_06_01_03-1600.webp"
+        }
+      ],
+      "alt": "Anabolic and catabolic pathways are shown. In the anabolic pathway (top), four small molecules have energy added to them to make one large molecule. In the catabolic pathway (bottom), one large molecule is broken down into two components: four small molecules plus energy.",
+      "caption": "Anabolic pathways are those that require energy to synthesize larger molecules. Catabolic pathways are those that generate energy by breaking down larger molecules. Both types of pathways are required for maintaining the cell’s energy balance."
+    },
+    "Figure_06_01_04": {
+      "source": "media/Figure_06_01_04.jpg",
+      "sourceSha256": "419732eb7a56e1927d9e607117a57573fb2866be5857a8df50c6b70d10e67f9d",
+      "module": "m66457",
+      "kind": "photo",
+      "width": 800,
+      "height": 382,
+      "variants": [
+        {
+          "width": 800,
+          "height": 382,
+          "file": "Figure_06_01_04-800.webp"
+        }
+      ],
+      "alt": "At the base of the evolutionary tree is the prokaryotic ancestor. This ancestor gave rise to archaebacteria, eubacteria, and Protista, which in turn gave rise to plants, fungi, and animals.",
+      "caption": "This tree shows the evolution of the various branches of life. The vertical dimension is time. Early life forms, in blue, used anaerobic metabolism to obtain energy from their surroundings."
+    },
+    "Figure_06_02_01": {
+      "source": "media/Figure_06_02_01.png",
+      "sourceSha256": "efdfe5a32e12a3a29ba0685e443137c1612704a7e9a1daca9e59ae5dc1f5f57c",
+      "module": "m66461",
+      "kind": "diagram",
+      "width": 2089,
+      "height": 597,
+      "variants": [
+        {
+          "width": 800,
+          "height": 228,
+          "file": "Figure_06_02_01-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 457,
+          "file": "Figure_06_02_01-1600.webp"
+        }
+      ],
+      "alt": "The left side of this diagram depicts energy being transferred from an ice cream cone to two boys riding a bike; this is described as chemical energy to kinetic energy. The right side depicts a plant converting light energy into chemical energy.",
+      "caption": "Here are two examples of energy transferring from one system to another and transformed from one form to another. Humans can convert the chemical energy in food, like this ice cream cone, into kinetic energy (the energy of movement to ride a bicycle). Plants can convert electromagnetic radiation (light energy) from the sun into chemical energy. (credit “ice cream”: modification of work by D. Sharon Pruitt; credit “kids on bikes”: modification of work by Michelle Riggen-Ransom; credit “leaf”: modification of work by Cory Zanker)"
+    },
+    "Figure_06_02_02": {
+      "source": "media/Figure_06_02_02.jpg",
+      "sourceSha256": "65a5d86ab0cd4e78112c4e167f9c2ec972edae234cf888c051270a5782bea985",
+      "module": "m66461",
+      "kind": "photo",
+      "width": 544,
+      "height": 493,
+      "variants": [
+        {
+          "width": 544,
+          "height": 493,
+          "file": "Figure_06_02_02-544.webp"
+        }
+      ],
+      "alt": "This diagram shows that solids have a regular packing arrangement and low entropy, whereas liquids have irregular packing and higher entropy.",
+      "caption": "Entropy is a measure of randomness or disorder in a system. Gases have higher entropy than liquids, and liquids have higher entropy than solids."
+    },
+    "Figure_06_03_01ab": {
+      "source": "media/Figure_06_03_01ab.jpg",
+      "sourceSha256": "9b17b62f34bd82eaa4a68c89a3f96931fb213c442328dfcf956997f25878ac76",
+      "module": "m66459",
+      "kind": "photo",
+      "width": 800,
+      "height": 356,
+      "variants": [
+        {
+          "width": 800,
+          "height": 356,
+          "file": "Figure_06_03_01ab-800.webp"
+        }
+      ],
+      "alt": "The photo on the left shows a river that is blocked by a giant cement wall, called a dam. The photo on the right shows a waterfall.",
+      "caption": "Water behind a dam has potential energy. Moving water, such as in a waterfall or a rapidly flowing river, has kinetic energy. (credit “dam”: modification of work by \"Pascal\"/Flickr; credit “waterfall”: modification of work by Frank Gualtieri)"
+    },
+    "Figure_06_03_02ab": {
+      "source": "media/Figure_06_03_02ab.jpg",
+      "sourceSha256": "83e8034e94d567d6690d58ff34ad74de3059cc3ed129e2953d3b348e825a1691",
+      "module": "m66459",
+      "kind": "photo",
+      "width": 542,
+      "height": 620,
+      "variants": [
+        {
+          "width": 542,
+          "height": 620,
+          "file": "Figure_06_03_02ab-542.webp"
+        }
+      ],
+      "alt": "The molecular formula of octane (top), which is a chain of eight carbons and eighteen hydrogens, fuels a racecar speeding along a track (bottom).",
+      "caption": "The molecules in gasoline contain chemical energy within the chemical bonds. This energy transforms into kinetic energy that allows a car to race on a racetrack. (credit “car”: modification of work by Russell Trow)"
+    },
+    "Figure_06_03_03-0c82": {
+      "source": "media/Figure_06_03_03-0c82.jpg",
+      "sourceSha256": "c50c868475aec8d9dcc2fdd34dec4b569f3cef4fa89e6660d0644f5a3c02d2e1",
+      "module": "m66459",
+      "kind": "photo",
+      "width": 1280,
+      "height": 480,
+      "variants": [
+        {
+          "width": 800,
+          "height": 300,
+          "file": "Figure_06_03_03-0c82-800.webp"
+        },
+        {
+          "width": 1280,
+          "height": 480,
+          "file": "Figure_06_03_03-0c82-1280.webp"
+        }
+      ],
+      "alt": "The two plots show the change in Gibbs free energy as reactants are converted to products. Gibbs free energy decreases with time for an exergonic reaction (left), and the reaction is spontaneous. Gibbs free energy increases with time for an endergonic reaction (right), and the reaction is not spontaneous.",
+      "caption": "Exergonic and endergonic reactions result in changes in Gibbs free energy (G). Exergonic reactions have a net release of energy and are spontaneous reactions. Endergonic reactions require an input of energy to proceed and are nonspontaneous reactions. Both Exergonic and endergonic reactions require initial activation energy for the reaction to occur.Credit: Tag, A., Rao, A., Fletcher, S. and Ryan, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_06_03_04": {
+      "source": "media/Figure_06_03_04.jpg",
+      "sourceSha256": "4e9562a33053c4595e01fc9ab544408983cf394f14e966f82e2609bc2a431589",
+      "module": "m66459",
+      "kind": "photo",
+      "width": 469,
+      "height": 396,
+      "variants": [
+        {
+          "width": 469,
+          "height": 396,
+          "file": "Figure_06_03_04-469.webp"
+        }
+      ],
+      "alt": "This plot shows the activation energy for an exergonic reaction. As the reaction proceeds, energy initially increases to overcome the activation energy. In a catalyzed reaction, the activation energy is much lower. The energy then decreases such that the Gibbs free energy of the products is less than that of the reactants. The activation energy is the peak of the energy plot minus the energy of the reactants. The Gibbs free energy (delta G) is the energy of the products minus the energy of the reactants.",
+      "caption": "Activation energy is the energy required for a reaction to proceed, and it is lower if the reaction is catalyzed. This diagram's horizontal axis describes the sequence of events in time."
+    },
+    "Figure_06_04_01-aa87": {
+      "source": "media/Figure_06_04_01-aa87.jpg",
+      "sourceSha256": "fd03f4a0d3bdfcf1da066ad7e85359e1d357731b70baf8a628775379cd5db69c",
+      "module": "m66462",
+      "kind": "photo",
+      "width": 469,
+      "height": 277,
+      "variants": [
+        {
+          "width": 469,
+          "height": 277,
+          "file": "Figure_06_04_01-aa87-469.webp"
+        }
+      ],
+      "alt": "The molecular structure of adenosine triphosphate is shown. Three phosphate groups, called alpha, beta, and gamma, are attached to a ribose sugar. Adenine is also attached to the ribose.",
+      "caption": "ATP is the cell's primary energy currency. It has an adenosine backbone with three phosphate groups attached."
+    },
+    "Figure_06_04_02": {
+      "source": "media/Figure_06_04_02.png",
+      "sourceSha256": "7fc59e19c2f0b120527b0ff8eece3138d695df084f738362f3736574a8bfcfa0",
+      "module": "m66462",
+      "kind": "diagram",
+      "width": 469,
+      "height": 370,
+      "variants": [
+        {
+          "width": 469,
+          "height": 370,
+          "file": "Figure_06_04_02-469.webp"
+        }
+      ],
+      "alt": "This illustration shows the sodium-potassium pump embedded in the cell membrane. A T P hydrolysis catalyzes a conformational change in the pump that allows sodium ions to move from the cytoplasmic side to the extracellular side of the membrane, and potassium ions to move from the extracellular side to the cytoplasmic side of the membrane as well.",
+      "caption": "The sodium-potassium pump is an example of energy coupling. The energy derived from exergonic ATP hydrolysis pumps sodium and potassium ions across the cell membrane."
+    },
+    "Figure_06_05_01-7ad6": {
+      "source": "media/Figure_06_05_01-7ad6.jpg",
+      "sourceSha256": "88ade29b6468d979d76aae7cf09f88e45dcbac14b602de3dc8c6accb1f797b4f",
+      "module": "m66463",
+      "kind": "photo",
+      "width": 542,
+      "height": 464,
+      "variants": [
+        {
+          "width": 542,
+          "height": 464,
+          "file": "Figure_06_05_01-7ad6-542.webp"
+        }
+      ],
+      "alt": "This plot shows that a catalyst decreases the activation energy for a reaction but does not change the Gibbs free energy.",
+      "caption": "Enzymes lower the reaction's activation energy but do not change the reaction's free energy."
+    },
+    "Figure_06_05_03": {
+      "source": "media/Figure_06_05_03.jpg",
+      "sourceSha256": "3b9a6f34c54ebd1979715d57fcb06b97663587b80364a833b40a48c61bf67bb6",
+      "module": "m66463",
+      "kind": "photo",
+      "width": 800,
+      "height": 322,
+      "variants": [
+        {
+          "width": 800,
+          "height": 322,
+          "file": "Figure_06_05_03-800.webp"
+        }
+      ],
+      "alt": "In this diagram, a substrate binds the active site of an enzyme and, in the process, both the shape of the enzyme and the shape of the substrate change. The substrate is converted to products that then leave the enzymes active site.",
+      "caption": "According to the induced-fit model, both enzyme and substrate undergo dynamic conformational changes upon binding. The enzyme contorts the substrate into its transition state, thereby increasing the reaction's rate."
+    },
+    "Figure_06_05_04": {
+      "source": "media/Figure_06_05_04.png",
+      "sourceSha256": "98d48f5845b447b09e8349957a49d261c4568f076f433a36a404a08de239ad82",
+      "module": "m66463",
+      "kind": "diagram",
+      "width": 1084,
+      "height": 778,
+      "variants": [
+        {
+          "width": 800,
+          "height": 574,
+          "file": "Figure_06_05_04-800.webp"
+        },
+        {
+          "width": 1084,
+          "height": 778,
+          "file": "Figure_06_05_04-1084.webp"
+        }
+      ],
+      "alt": "This plot shows rate of reaction versus substrate concentration for an enzyme in the absence of inhibitor, and for enzyme in the presence of competitive and noncompetitive inhibitors. Both competitive and noncompetitive inhibitors slow the rate of reaction, but competitive inhibitors can be overcome by high concentrations of substrate, whereas noncompetitive inhibitors cannot.",
+      "caption": "Competitive and noncompetitive inhibition affect the reaction's rate differently. Competitive inhibitors affect the initial rate but do not affect the maximal rate; whereas, noncompetitive inhibitors affect the maximal rate."
+    },
+    "Figure_06_05_05-d31b": {
+      "source": "media/Figure_06_05_05-d31b.jpg",
+      "sourceSha256": "8da7602410ee7bc2f2b5497e55c1ff414c1ea5fc5bb8a4724fb4138436115e03",
+      "module": "m66463",
+      "kind": "photo",
+      "width": 1200,
+      "height": 900,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_06_05_05-d31b-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 900,
+          "file": "Figure_06_05_05-d31b-1200.webp"
+        }
+      ],
+      "alt": "The left part of this diagram shows allosteric inhibition. The allosteric inhibitor binds to the enzyme at a site other than the active site. The shape of the active site is altered so that the enzyme can no longer bind to its substrate. The right part of this diagram shows allosteric activation. The allosteric activator binds to the enzyme at a site other than the active site. The shape of the active site is changed, allowing substrate to bind at a higher affinity.",
+      "caption": "Allosteric inhibitors modify the enzyme's active site so that substrate binding is reduced or prevented. In contrast, allosteric activators modify the enzyme's active site so that the affinity for the substrate increases. Credit: Rao, A., Hawkins, A., Fletcher, S. and Tag, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_06_05_06-0593": {
+      "source": "media/Figure_06_05_06-0593.jpg",
+      "sourceSha256": "217fdd6c06022062f4b518f4002f7258581798aa26d82de60ad1be96f695179f",
+      "module": "m66463",
+      "kind": "photo",
+      "width": 799,
+      "height": 853,
+      "variants": [
+        {
+          "width": 799,
+          "height": 853,
+          "file": "Figure_06_05_06-0593-799.webp"
+        }
+      ],
+      "alt": "Shown are the molecular structures for Vitamin A, folic acid, Vitamin B1, Vitamin C, Vitamin B2, Vitamin D2, Vitamin B6, and Vitamin E.",
+      "caption": "Vitamins are important coenzymes or precursors of coenzymes, and are required for enzymes to function properly. Multivitamin capsules usually contain mixtures of all the vitamins at different percentages."
+    },
+    "Figure_06_05_07-c078": {
+      "source": "media/Figure_06_05_07-c078.jpg",
+      "sourceSha256": "9483a288910f9187caf825dd12c92e0bb1217385d11c619e229081e51abfb850",
+      "module": "m66463",
+      "kind": "photo",
+      "width": 1200,
+      "height": 900,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_06_05_07-c078-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 900,
+          "file": "Figure_06_05_07-c078-1200.webp"
+        }
+      ],
+      "alt": "This diagram shows a metabolic pathway in which three enzymes convert a substrate, in three steps, into a final product. The image shows isoluecine binding to a allosteric site, which inhibits Threonine from binding to the active site. When Isoleucine is no longer bound, Threonine binds to the active site. Then it proceeds through four additional enzymes labeled intermediate A, B, C, and D.",
+      "caption": "Metabolic pathways are a series of reactions that multiple enzymes catalyze. Feedback inhibition, where the pathway's end product inhibits an upstream step, is an important regulatory mechanism in cells. Metabolic pathways are a series of reactions catalyzed by multiple enzymes (Intermediates A – D, Enzymes 1 – 5). Feedback inhibition occurs when the pathway's end product (here isoleucine) inhibits an upstream enzyme (indicated by red bar). In this example, isoleucine will bind to Threonine Deaminase (at the allosteric site) and prevent threonine from binding to this enzyme’s active site, effectively blocking this metabolic pathway. When isoleucine levels decrease, Threonine will then bind to Threonine Deaminase’s active site and the metabolic pathway will resume. This is an important regulatory mechanism in cells to inhibit the overproduction of a product. Credit: Rao, A., Ryan, K., Tag, A., Hawkins, A. and Fletcher S. Department of Biology, Texas A&M University."
+    },
+    "Figure_06_05_08": {
+      "source": "media/Figure_06_05_08.jpg",
+      "sourceSha256": "09000536566993e1368fdb999eec5d337aaa1c3cc3371d298487ccd6ea7ba428",
+      "module": "m66463",
+      "kind": "photo",
+      "width": 450,
+      "height": 338,
+      "variants": [
+        {
+          "width": 450,
+          "height": 338,
+          "file": "Figure_06_05_08-450.webp"
+        }
+      ],
+      "alt": "This photo shows several red capsule pills.",
+      "caption": "Have you ever wondered how pharmaceutical drugs are developed? (credit: Deborah Austin)"
+    },
+    "Figure_07_00_01-aeea": {
+      "source": "media/Figure_07_00_01-aeea.jpg",
+      "sourceSha256": "8322e4943e52589b082824e9dfdffc4f974e931537e344f62b09b2b79c869a47",
+      "module": "m66464",
+      "kind": "photo",
+      "width": 1118,
+      "height": 370,
+      "variants": [
+        {
+          "width": 800,
+          "height": 264,
+          "file": "Figure_07_00_01-aeea-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 370,
+          "file": "Figure_07_00_01-aeea-1118.webp"
+        }
+      ],
+      "alt": "A photograph shows an energy plant on a hillside with clouds of white steam immediately above the plant",
+      "caption": "This geothermal energy plant transforms thermal energy from deep in the ground into electrical energy, which can be easily used. (credit: modification of work by the U.S. Department of Defense)"
+    },
+    "Figure_07_01_00": {
+      "source": "media/Figure_07_01_00.png",
+      "sourceSha256": "ca65c0e1d4c7b24edd73ea28d6b2e8641af9cd4ebb1bc5511731c128cdf0d3bf",
+      "module": "m66465",
+      "kind": "diagram",
+      "width": 1200,
+      "height": 901,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_07_01_00-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 901,
+          "file": "Figure_07_01_00-1200.webp"
+        }
+      ],
+      "alt": "A progression of oxidation and reduction. The illustration shows that as methane loses electrons as it passes through oxidation processes, first becoming methanol, then formaldehyde, then formic acid, then carbon dioxide. The illustration shows that if the reverse occurred, and carbon dioxide progressed to methane, it would be adding electrons and going through reduction.",
+      "caption": "Stages of oxidation/reduction of a single carbon. Electrons are lost from carbon as methane is oxidized to carbon dioxide. The loss of electrons is also accompanied by the loss of energy. Electrons are gained during the reduction of carbon dioxide to methane. The gain of an electron is accompanied by a gain in potential energy and often by the addition of a proton (H + ). Credit: Ryan, K., Rao, A.and Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "Figure_07_01_01ab": {
+      "source": "media/Figure_07_01_01ab.jpg",
+      "sourceSha256": "d24d181fc3bd21c6d84e995caa778a3b3e04024a7685dd34c46b74a46bb59f39",
+      "module": "m66465",
+      "kind": "photo",
+      "width": 726,
+      "height": 481,
+      "variants": [
+        {
+          "width": 726,
+          "height": 481,
+          "file": "Figure_07_01_01ab-726.webp"
+        }
+      ],
+      "alt": "This illustration shows the molecular structure of N A D superscript plus sign baseline and N A D H. Both compounds are composed of an adenine nucleotide and a nicotinamide nucleotide, which bond together to form a dinucleotide. The nicotinamide nucleotide is at the 5 prime end, and the adenine nucleotide is at the 3 prime end. Nicotinamide is a nitrogenous base, meaning it has nitrogen in a six-membered carbon ring. In N A D H, one extra hydrogen is associated with this ring, which is not found in N A D superscript plus sign baseline.",
+      "caption": "The oxidized form of the electron carrier (NAD + ) is shown on the left, and the reduced form (NADH) is shown on the right. The nitrogenous base in NADH has one more hydrogen ion and two more electrons than in NAD + ."
+    },
+    "Figure_07_01_02": {
+      "source": "media/Figure_07_01_02.jpg",
+      "sourceSha256": "20d5cdf70aa8730945abc1d1d46aa1593392f8c4ebc9a127b6659ec9d5867e28",
+      "module": "m66465",
+      "kind": "photo",
+      "width": 469,
+      "height": 277,
+      "variants": [
+        {
+          "width": 469,
+          "height": 277,
+          "file": "Figure_07_01_02-469.webp"
+        }
+      ],
+      "alt": "This illustration shows the molecular structure of A T P. This molecule is an adenine nucleotide with a string of three phosphate groups attached to it. The phosphate groups are named alpha, beta, and gamma in order of increasing distance from the ribose sugar to which they are attached.",
+      "caption": "ATP (adenosine triphosphate) has three phosphate groups that can be removed by hydrolysis (addition of H 2 O) to form ADP (adenosine diphosphate) or AMP (adenosine monophosphate). The negative charges on the phosphate group naturally repel each other, requiring energy to bond them together and releasing energy when these bonds are broken."
+    },
+    "Figure_07_01_03-372c": {
+      "source": "media/Figure_07_01_03-372c.jpg",
+      "sourceSha256": "bc9384a8b63db04145f729d65b3ebadca2af6836f7e111ff92b4952afdba4be2",
+      "module": "m66465",
+      "kind": "photo",
+      "width": 1200,
+      "height": 872,
+      "variants": [
+        {
+          "width": 800,
+          "height": 581,
+          "file": "Figure_07_01_03-372c-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 872,
+          "file": "Figure_07_01_03-372c-1200.webp"
+        }
+      ],
+      "alt": "This illustration shows a substrate-level phosphorylation reaction in which the gamma phosphate of A T P is attached to a protein. The substrate, phosphate group, and A D P bind to an enzyme. And the result is the product and A T P.",
+      "caption": "In phosphorylation reactions, the gamma (third) phosphate of ATP is attached to a protein. In substrate-level phosphorylation, a phosphate group that is covalently attached to another molecule is transferred to ADP to form ATP. Credit: Rao, A., Ryan, K. and Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "Figure_07_01_04-30c9": {
+      "source": "media/Figure_07_01_04-30c9.jpg",
+      "sourceSha256": "394d01ff2d29ab9dfcf93fd57f0b1f2018dda6c1802818a00f16cfa3458e693b",
+      "module": "m66465",
+      "kind": "photo",
+      "width": 544,
+      "height": 415,
+      "variants": [
+        {
+          "width": 544,
+          "height": 415,
+          "file": "Figure_07_01_04-30c9-544.webp"
+        }
+      ],
+      "alt": "This illustration shows the structure of a mitochondrion, which has an outer membrane and an inner membrane. The inner membrane has many folds, called cristae. The space between the outer membrane and the inner membrane is called the intermembrane space, and the central space of the mitochondrion is called the matrix. A T P synthase enzymes and the electron transport chain are located in the inner membrane.",
+      "caption": "In eukaryotes, oxidative phosphorylation takes place in mitochondria. In prokaryotes, this process takes place in the plasma membrane. (Credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "Figure_07_02_00": {
+      "source": "media/Figure_07_02_00.jpg",
+      "sourceSha256": "4d69cb488cad0e453385cd1da1c62f974d17f0dfe6d92793b7f2a1b0c0385489",
+      "module": "m66466",
+      "kind": "photo",
+      "width": 834,
+      "height": 626,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_07_02_00-800.webp"
+        },
+        {
+          "width": 834,
+          "height": 626,
+          "file": "Figure_07_02_00-834.webp"
+        }
+      ],
+      "alt": "The illustration shows a simplified process of glucose moving through the stages of glycolysis. First two A T P are added, then the glucose is split into two branches, with N A D H and two A T P being released. The net products are 2 pyruvate molecules and 2 N A D H and 2 A T P molecules.",
+      "caption": "Glycolysis begins with an energy investment phase which requires 2 ATP to phosphorylate the starting glucose molecule. The 6-carbon intermediate is then split into 2, 3-carbon sugar molecules. In the energy recovery phase, each 3-carbon sugar is then oxidized to pyruvate with the energy transferred to form NADH and 2 ATP. Credit: Rao, A. and Ryan, K. Department of Biology, Texas A&M University"
+    },
+    "Figure_07_02_01-0ee2": {
+      "source": "media/Figure_07_02_01-0ee2.jpg",
+      "sourceSha256": "dee072c75cc8638bf6f6139c4ad0c0577980209fcb068dfb36eac230533dbd1a",
+      "module": "m66466",
+      "kind": "photo",
+      "width": 1115,
+      "height": 314,
+      "variants": [
+        {
+          "width": 800,
+          "height": 225,
+          "file": "Figure_07_02_01-0ee2-800.webp"
+        },
+        {
+          "width": 1115,
+          "height": 314,
+          "file": "Figure_07_02_01-0ee2-1115.webp"
+        }
+      ],
+      "alt": "This illustration shows the steps in the first half of glycolysis. In step one, the enzyme hexokinase uses one A T P molecule in the phosphorylation of glucose. In step two, glucose dash 6 dash phosphate is rearranged to form fructose dash 6 dash phosphate by phosphoglucose isomerase. In step three, phosphofructokinase uses a second A T P molecule in the phosphorylation of the substrate, forming fructose dash 1, 6 dash bisphosphate. In step four, the enzyme fructose bisphosphate aldolase splits the substrate into two, forming glyceraldeyde dash 3 dash phosphate and dihydroxyacetone-phosphate. In step five, triose phosphate isomerase converts the dihydroxyacetone-phosphate into glyceraldehyde dash 3 dash phosphate.",
+      "caption": "The first half of glycolysis uses two ATP molecules in the phosphorylation of glucose, which is then split into two three-carbon molecules."
+    },
+    "Figure_07_02_02": {
+      "source": "media/Figure_07_02_02.jpg",
+      "sourceSha256": "e976bf7358af1fce96d3b11ee039517691d4927bfebfeffcb7c78d597f274dd0",
+      "module": "m66466",
+      "kind": "photo",
+      "width": 1115,
+      "height": 468,
+      "variants": [
+        {
+          "width": 800,
+          "height": 335,
+          "file": "Figure_07_02_02-800.webp"
+        },
+        {
+          "width": 1115,
+          "height": 468,
+          "file": "Figure_07_02_02-1115.webp"
+        }
+      ],
+      "alt": "This illustration shows the steps in the second half of glycolysis. In step six, the enzyme glyceraldehyde dash 3 dash phosphate dehydrogenase produces one N A D H molecule and forms 1, 3 dash bisphosphoglycerate. In step seven, the enzyme phosphoglycerate kinase removes a phosphate group from the substrate, forming one A T P molecule and 3 dash phosphoglycerate. In step eight, the enzyme phosphoglycerate mutase rearranges the substrate to form 2 dash phosphoglycerate. In step nine, the enzyme enolase rearranges the substrate to form phosphoenolpyruvate. In step ten, a phosphate group is removed from the substrate, forming one A T P molecule and pyruvate.",
+      "caption": "The second half of glycolysis involves phosphorylation without ATP investment (step 6) and produces two NADH and four ATP molecules per glucose."
+    },
+    "Figure_07_03_02": {
+      "source": "media/Figure_07_03_02.jpg",
+      "sourceSha256": "9d63413b9c710766df96b0dafc8b71ea4b268dffdf8ed960d33050eb34373102",
+      "module": "m66467",
+      "kind": "photo",
+      "width": 1033,
+      "height": 1050,
+      "variants": [
+        {
+          "width": 800,
+          "height": 813,
+          "file": "Figure_07_03_02-800.webp"
+        },
+        {
+          "width": 1033,
+          "height": 1050,
+          "file": "Figure_07_03_02-1033.webp"
+        }
+      ],
+      "alt": "This illustration shows the eight steps of the citric acid cycle. In the first step, the acetyl group from acetyl uppercase C lower case o upper case A is transferred to a four-carbon oxaloacetate molecule to form a six-carbon citrate molecule. In the second step, citrate is rearranged to form isocitrate. In the third step, isocitrate is oxidized to alpha-ketoglutarate. In the process, one N A D H is formed from N A D superscript plus sign baseline; and one carbon dioxide is released. In the fourth step, alpha-ketoglutarate is oxidized and upper C lower o upper A is added, forming succinyl upper C lower o upper A. In the process, another N A D H is formed and another carbon dioxide is released. In the fifth step, upper C lower o upper A is released from succinyl upper C lower o upper A, forming succinate. In the process, one G T P is formed, which is later converted into A T P. In the sixth step, succinate is oxidized to fumarate, and one F A D is reduced to F A D H subscript 2 baseline. In the seventh step, fumarate is converted into malate. In the eighth step, malate is oxidized to oxaloacetate, and another N A D H is formed.",
+      "caption": "In the citric acid cycle, the acetyl group from acetyl CoA is attached to a four-carbon oxaloacetate molecule to form a six-carbon citrate molecule. Through a series of steps, citrate is oxidized, releasing two carbon dioxide molecules for each acetyl group fed into the cycle. In the process, three NAD + molecules are reduced to NADH, one FAD molecule is reduced to FADH 2 , and one ATP or GTP (depending on the cell type) is produced (by substrate-level phosphorylation). Because the final product of the citric acid cycle is also the first reactant, the cycle runs continuously in the presence of sufficient reactants. Credit: Rao, A., Ryan, K., Tag, A., and Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "Figure_07_04_01-1396": {
+      "source": "media/Figure_07_04_01-1396.jpg",
+      "sourceSha256": "d751c3e7061dc832a1d35ffbca01d563b64af6487933767166d2ff561f953e45",
+      "module": "m66468",
+      "kind": "photo",
+      "width": 544,
+      "height": 461,
+      "variants": [
+        {
+          "width": 544,
+          "height": 461,
+          "file": "Figure_07_04_01-1396-544.webp"
+        }
+      ],
+      "alt": "This illustration shows the electron transport chain embedded in the inner mitochondrial membrane. The electron transport chain consists of four electron complexes. Complex I oxidizes N A D H to N A D superscript plus sign baseline; and simultaneously pumps a proton across the membrane to the intermembrane space. The two electrons released from N A D H are shuttled to coenzyme Q, then to complex I I I, to cytochrome c, to complex I V, then to molecular oxygen. In the process, two more protons are pumped across the membrane to the intermembrane space, and molecular oxygen is reduced to form water. Complex I I removes two electrons from F A D H subscript 2 baseline, thereby forming F A D. The electrons are shuttled to coenzyme Q, then to complex I I I, cytochrome c, complex I V, and molecular oxygen as in the case of N A D H oxidation.",
+      "caption": "The electron transport chain is a series of electron transporters embedded in the inner mitochondrial membrane that shuttles electrons from NADH and FADH 2 to molecular oxygen. In the process, protons are pumped from the mitochondrial matrix to the intermembrane space, and oxygen is reduced to form water."
+    },
+    "Figure_07_04_02": {
+      "source": "media/Figure_07_04_02.png",
+      "sourceSha256": "642e19bf884a7df737e32f350f6c9d1a9b3f16c4263d15a2d81a76da8c116866",
+      "module": "m66468",
+      "kind": "diagram",
+      "width": 469,
+      "height": 575,
+      "variants": [
+        {
+          "width": 469,
+          "height": 575,
+          "file": "Figure_07_04_02-469.webp"
+        }
+      ],
+      "alt": "This illustration shows an A T P synthase enzyme embedded in the inner mitochondrial membrane. A T P synthase allows protons to move from an area of high concentration in the intermembrane space to an area of low concentration in the mitochondrial matrix. The energy derived from this exergonic process is used to synthesize A T P from A D P and inorganic phosphate.",
+      "caption": "ATP synthase is a complex, molecular machine that uses a proton (H + ) gradient to form ATP from ADP and inorganic phosphate (Pi). (Credit: modification of work by Klaus Hoffmeier)"
+    },
+    "Figure_07_04_03-5144": {
+      "source": "media/Figure_07_04_03-5144.png",
+      "sourceSha256": "525f58c1542452491affc59a648a33c59449b3745eebc4deac9ece2bff8eb7e5",
+      "module": "m66468",
+      "kind": "diagram",
+      "width": 1800,
+      "height": 1325,
+      "variants": [
+        {
+          "width": 800,
+          "height": 589,
+          "file": "Figure_07_04_03-5144-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1177,
+          "file": "Figure_07_04_03-5144-1600.webp"
+        }
+      ],
+      "alt": "This illustration shows the electron transport chain, the A T P synthase enzyme embedded in the inner mitochondrial membrane, and chemiosmosis occurring in the mitochondrial matrix. The electron transport chain oxidizes substrates and, in the process, pumps protons into the intermembrane space. A T P synthase allows protons to leak back into the matrix and synthesizes A T P in chemiosmosis.",
+      "caption": "In oxidative phosphorylation, the pH gradient formed by the electron transport chain is used by ATP synthase to form ATP. Credit: Rao, A., Ryan, K., Fletcher, S. and Tag, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_07_05_01": {
+      "source": "media/Figure_07_05_01.jpg",
+      "sourceSha256": "853de53768ac085ceb12a44614e3f17d5d1ba9cbc239a85b05e973bfdbc2ea34",
+      "module": "m66469",
+      "kind": "photo",
+      "width": 544,
+      "height": 423,
+      "variants": [
+        {
+          "width": 544,
+          "height": 423,
+          "file": "Figure_07_05_01-544.webp"
+        }
+      ],
+      "alt": "This photo shows a bloom of green bacteria in water.",
+      "caption": "The green color seen in these coastal waters is from an eruption of hydrogen sulfide–producing bacteria. These anaerobic, sulfate-reducing bacteria release hydrogen sulfide gas as they decompose algae in the water. (credit: modification of work by NASA/Jeff Schmaltz, MODIS Land Rapid Response Team at NASA GSFC, Visible Earth Catalog of NASA images)"
+    },
+    "Figure_07_05_02-7db7": {
+      "source": "media/Figure_07_05_02-7db7.png",
+      "sourceSha256": "e5db8a6fef3d373cf47737648284229994e4f16223697e365ee34f946a3bdf76",
+      "module": "m66469",
+      "kind": "diagram",
+      "width": 1500,
+      "height": 1125,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_07_05_02-7db7-800.webp"
+        },
+        {
+          "width": 1500,
+          "height": 1125,
+          "file": "Figure_07_05_02-7db7-1500.webp"
+        }
+      ],
+      "alt": "This illustration shows that during glycolysis, glucose is broken down into two pyruvate molecules and, in the process, two N A D H are formed from N A D superscript plus sign baseline. During lactic acid fermentation, the two pyruvate molecules are converted into lactate, and N A D H is recycled back into N A D superscript plus sign baseline.",
+      "caption": "During glycolysis, glucose is oxidized to pyruvate while NAD+ is reduced to NADH. Two molecules of ATP are also produced by substrate level phosphorylation. In the absence of oxygen in some cell types, fermentation allows the reduction of pyruvate to lactate and the reoxidation of NADH to NAD+. The regeneration of NAD+ allows glycolysis to continue to make ATP by substrate level phosphorylation. Credit: Rao, A., Ryan, K., Tag, A., and Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "Figure_07_05_03": {
+      "source": "media/Figure_07_05_03.jpg",
+      "sourceSha256": "ec15decf6d9ce2c09313242b67faca7f9a145a3566d3e198c3bb7f5a6a63c9bb",
+      "module": "m66469",
+      "kind": "photo",
+      "width": 544,
+      "height": 432,
+      "variants": [
+        {
+          "width": 544,
+          "height": 432,
+          "file": "Figure_07_05_03-544.webp"
+        }
+      ],
+      "alt": "This photo shows large cylindrical fermentation tanks stacked one on top of the other.",
+      "caption": "Fermentation of grape juice into wine produces CO 2 as a byproduct. Fermentation tanks have valves so that the pressure inside the tanks created by the carbon dioxide produced can be released."
+    },
+    "Figure_07_06_01": {
+      "source": "media/Figure_07_06_01.png",
+      "sourceSha256": "e0cd0b3dcf91a6c5da29ba2e85ac27a69960d127ae34ab7ed5bc4b7f774c402c",
+      "module": "m66470",
+      "kind": "diagram",
+      "width": 1587,
+      "height": 1038,
+      "variants": [
+        {
+          "width": 800,
+          "height": 523,
+          "file": "Figure_07_06_01-800.webp"
+        },
+        {
+          "width": 1587,
+          "height": 1038,
+          "file": "Figure_07_06_01-1587.webp"
+        }
+      ],
+      "alt": "This illustration shows that the amino acids alanine, glycine, threonine, cysteine, and serine can be converted into pyruvate. Leucine, lysine, phenylalanine, tyrosine, tryptophan, and isoleucine can be converted into acetyl upper case C lower case o upper case A. Arginine, proline, histidine, glutamine, and glutamate can be converted into alpha-ketoglutarate. Isoleucine, valine, methionine, and threonine can be converted into succinyl upper C lower o upper A. Tyrosine and phenylalanine can be converted into fumarate, and aspartate and asparagine can be converted into oxaloacetate. All of these conversion products are inputs to or intermediates in the citric acid cycle, and can be fed into the citric acid cycle at the appropriate point.",
+      "caption": "The carbon skeletons of certain amino acids (indicated in boxes) derived from proteins can feed into the citric acid cycle. (credit: modification of work by Mikael Häggström)"
+    },
+    "Figure_07_06_02": {
+      "source": "media/Figure_07_06_02.png",
+      "sourceSha256": "3bf3325e04627b6dd074c2dbaa50f367f35ed640878a991dd62ac4a76e0d0877",
+      "module": "m66470",
+      "kind": "diagram",
+      "width": 1121,
+      "height": 346,
+      "variants": [
+        {
+          "width": 800,
+          "height": 247,
+          "file": "Figure_07_06_02-800.webp"
+        },
+        {
+          "width": 1121,
+          "height": 346,
+          "file": "Figure_07_06_02-1121.webp"
+        }
+      ],
+      "alt": "This illustration shows that glycogen, fats, and proteins can be catabolized via aerobic respiration. Glycogen is broken down into glucose, which feeds into glycolysis at the start. Fats are broken down into glycerol, which is processed by glycolysis, and fatty acids are converted into acetyl CoA. Proteins are broken down into amino acids, which are processed at various stages of aerobic respiration, including glycolysis, acetyl CoA formation, and the citric acid cycle.",
+      "caption": "Glycogen from the liver and muscles, as well as other carbohydrates, hydrolyzed into glucose-1-phosphate, together with fats and proteins, can feed into the catabolic pathways for carbohydrates."
+    },
+    "Figure_07_07_01": {
+      "source": "media/Figure_07_07_01.png",
+      "sourceSha256": "b8a7283a3b25ba74c109b116bec16a7b0fa4f3c0cb4e4d703d23972b5ddd9659",
+      "module": "m66471",
+      "kind": "diagram",
+      "width": 1087,
+      "height": 736,
+      "variants": [
+        {
+          "width": 800,
+          "height": 541,
+          "file": "Figure_07_07_01-800.webp"
+        },
+        {
+          "width": 1087,
+          "height": 736,
+          "file": "Figure_07_07_01-1087.webp"
+        }
+      ],
+      "alt": "When insulin in the bloodstream binds the insulin receptor in the plasma membrane of a target cell, a vesicle containing the glucose transporter Glut-4 fuses with the plasma membrane. Glut-4 is a transporter that allows glucose to enter the cell.",
+      "caption": "GLUT4 is a glucose transporter that is stored in vesicles. A cascade of events that occurs upon insulin binding to a receptor in the plasma membrane causes GLUT4-containing vesicles to fuse with the plasma membrane so that glucose may be transported into the cell."
+    },
+    "Figure_07_07_02": {
+      "source": "media/Figure_07_07_02.jpg",
+      "sourceSha256": "be68942734337b0a1d001a488238676ca9af75558a00084fa7e916ba96af602b",
+      "module": "m66471",
+      "kind": "photo",
+      "width": 1119,
+      "height": 707,
+      "variants": [
+        {
+          "width": 800,
+          "height": 505,
+          "file": "Figure_07_07_02-800.webp"
+        },
+        {
+          "width": 1119,
+          "height": 707,
+          "file": "Figure_07_07_02-1119.webp"
+        }
+      ],
+      "alt": "This illustration shows that glycolysis is regulated via three key enzymes: hexokinase, phosphofructokinase, and phosphoglycerate kinase. The first two enzymes hydrolyze an ATP and the third one produces ATP.",
+      "caption": "The glycolysis pathway is primarily regulated at the three key enzymatic steps (1, 3, and 10) as indicated. Note that the first two steps that are regulated occur early in the pathway and involve hydrolysis of ATP."
+    },
+    "Figure_08_00_01-951e": {
+      "source": "media/Figure_08_00_01-951e.jpg",
+      "sourceSha256": "5857f131f98dc8f581cf1a0f70b729b99cef3e592c2508403177cb12e4738104",
+      "module": "m66472",
+      "kind": "photo",
+      "width": 975,
+      "height": 488,
+      "variants": [
+        {
+          "width": 800,
+          "height": 400,
+          "file": "Figure_08_00_01-951e-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 488,
+          "file": "Figure_08_00_01-951e-975.webp"
+        }
+      ],
+      "alt": "The image shows a map of the world, colored by the levels of chlorophyll a on land and in the ocean.",
+      "caption": "This world map shows Earth’s distribution of photosynthetic activity determined by chlorophyll a concentrations. On land, chlorophyll is evident from terrestrial plants, and within oceanic zones, from chlorophyll from phytoplankton. (credit: modification of work by SeaWiFS Project, NASA/Goddard Space Flight Center and ORBIMAGE)"
+    },
+    "Figure_08_01_01-7a57": {
+      "source": "media/Figure_08_01_01-7a57.jpg",
+      "sourceSha256": "d75d6c685ee4fcfa685e13ef57623b135026533dca3cdb1b3bf796101e36b3c2",
+      "module": "m66473",
+      "kind": "photo",
+      "width": 1118,
+      "height": 611,
+      "variants": [
+        {
+          "width": 800,
+          "height": 437,
+          "file": "Figure_08_01_01-7a57-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 611,
+          "file": "Figure_08_01_01-7a57-1118.webp"
+        }
+      ],
+      "alt": "Photo a shows a fern leaf. Photo b shows thick, green algae growing on water. Micrograph c shows cyanobacteria, which are green rods about 10 microns long. Photo D shows black smoke pouring out of a deep sea vent covered with red worms. Micrograph E shows rod-shaped bacteria about 1.5 microns long.",
+      "caption": "Photoautotrophs including (a) plants, (b) algae, and (c) cyanobacteria synthesize their organic compounds via photosynthesis using sunlight as an energy source. Cyanobacteria and planktonic algae can grow over enormous areas in water, at times completely covering the surface. In a (d) deep sea vent, chemoautotrophs, such as these (e) thermophilic bacteria, capture energy from inorganic compounds to produce organic compounds. The ecosystem surrounding the vents has a diverse array of animals, such as tubeworms, crustaceans, and octopuses that derive energy from the bacteria. (credit a: modification of work by Steve Hillebrand, U.S. Fish and Wildlife Service; credit b: modification of work by \"eutrophication&hypoxia\"/Flickr; credit c: modification of work by NASA; credit d: University of Washington, NOAA; credit e: modification of work by Mark Amend, West Coast and Polar Regions Undersea Research Center, UAF, NOAA)"
+    },
+    "Figure_08_01_02-266c": {
+      "source": "media/Figure_08_01_02-266c.jpg",
+      "sourceSha256": "ddb354ad16438cf24f1956a476ad9ba45b1fa0d05edcfdf6ad676885f0dd4a20",
+      "module": "m66473",
+      "kind": "photo",
+      "width": 544,
+      "height": 363,
+      "variants": [
+        {
+          "width": 544,
+          "height": 363,
+          "file": "Figure_08_01_02-266c-544.webp"
+        }
+      ],
+      "alt": "A photo shows deer running through tall grass beside a forest.",
+      "caption": "The energy stored in carbohydrate molecules from photosynthesis passes through the food chain. The predator that eats these deer receives a portion of the energy that originated in the photosynthetic vegetation that the deer consumed. (credit: modification of work by Steve VanRiper, U.S. Fish and Wildlife Service)"
+    },
+    "Figure_08_01_03-5dca": {
+      "source": "media/Figure_08_01_03-5dca.jpg",
+      "sourceSha256": "f623cc3d8b0018cd8de0c947a5e8c6b293d2ab3a4d0279f7a29fdf36e62d17d6",
+      "module": "m66473",
+      "kind": "photo",
+      "width": 544,
+      "height": 725,
+      "variants": [
+        {
+          "width": 544,
+          "height": 725,
+          "file": "Figure_08_01_03-5dca-544.webp"
+        }
+      ],
+      "alt": "Photo of a tree with labels shows photosynthesis. Arrows indicate that the tree uses carbon dioxide, water, and sunlight to make sugars and oxygen. Water is absorbed through the tree's roots; sunlight is absorbed through the tree's leaves; the tree also absorbs carbon dioxide, and releases oxygen.",
+      "caption": "Photosynthesis uses solar energy, carbon dioxide, and water to produce energy-storing carbohydrates. Oxygen is generated as a waste product of photosynthesis."
+    },
+    "Figure_08_01_04": {
+      "source": "media/Figure_08_01_04.jpg",
+      "sourceSha256": "973e370f67565beb39eab2f7552a50c572a840caa6b8b6854c622bcfe33b6ecc",
+      "module": "m66473",
+      "kind": "photo",
+      "width": 753,
+      "height": 195,
+      "variants": [
+        {
+          "width": 753,
+          "height": 195,
+          "file": "Figure_08_01_04-753.webp"
+        }
+      ],
+      "alt": "The photosynthesis equation is shown. According to this equation, six carbon dioxide and six water molecules produce one sugar molecule and six oxygen molecules. The sugar molecule is made of six carbons, twelve hydrogens, and six oxygens. Sunlight is used as an energy source.",
+      "caption": "The basic equation for photosynthesis is deceptively simple. In reality, the process takes place in many steps involving intermediate reactants and products. Glucose, the primary energy source in cells, is made from two three-carbon G3Ps."
+    },
+    "Figure_08_01_05": {
+      "source": "media/Figure_08_01_05.png",
+      "sourceSha256": "cd8ff6aae23ca46b7d71dd675c6e99e261b2e863ecad17bb5587ec29f4211c46",
+      "module": "m66473",
+      "kind": "diagram",
+      "width": 544,
+      "height": 364,
+      "variants": [
+        {
+          "width": 544,
+          "height": 364,
+          "file": "Figure_08_01_05-544.webp"
+        }
+      ],
+      "alt": "This illustration shows a chloroplast, which has an outer membrane and an inner membrane. The space between the outer and inner membranes is called the intermembrane space. Inside the inner membrane are flat, pancake-like structures called thylakoids. The thylakoids form stacks called grana. The liquid inside the inner membrane is called the stroma, and the space inside the thylakoid is called the thylakoid lumen.",
+      "caption": "Photosynthesis takes place in chloroplasts, which have an outer membrane and an inner membrane. Stacks of thylakoids called grana form a third membrane layer."
+    },
+    "Figure_08_01_06-7c77": {
+      "source": "media/Figure_08_01_06-7c77.jpg",
+      "sourceSha256": "287fdce8a789d3ff19b55eb082feac4710f45b341c24491d6ffc69609f92cdc6",
+      "module": "m66473",
+      "kind": "photo",
+      "width": 1200,
+      "height": 900,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_08_01_06-7c77-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 900,
+          "file": "Figure_08_01_06-7c77-1200.webp"
+        }
+      ],
+      "alt": "This illustration shows a chloroplast with an outer membrane, an inner membrane, and stacks of membranes inside the inner membrane called thylakoids. The entire stack is called a granum. In the light reactions, energy from sunlight is converted into chemical energy in the form of A T P and N A D P H. In the process, water is used and oxygen is produced. Energy from A T P and N A D P H are used to power the Calvin cycle, which produces G 3 P from carbon dioxide. A T P is broken down to A D P and Pi, and N A D P H is oxidized to N A D P superscript plus sign baseline. The cycle is completed when the light reactions convert these molecules back into A T P and N A D P H.",
+      "caption": "Photosynthesis takes place in two stages: light-dependent reactions and the Calvin cycle. Light-dependent reactions, which take place in the thylakoid membrane, use light energy to make ATP and NADPH. The Calvin cycle, which takes place in the stroma, uses energy derived from these compounds to make G3P from CO 2 . Credit: Rao, A., Ryan, K., Fletcher, S., Hawkins, A. and Tag, A. Texas A&M University."
+    },
+    "Figure_08_01_07": {
+      "source": "media/Figure_08_01_07.jpg",
+      "sourceSha256": "0cc07657780cca82a559130b0db2c050c856eb8a1d62d9008d5cd6d1dd05d0ab",
+      "module": "m66473",
+      "kind": "photo",
+      "width": 530,
+      "height": 333,
+      "variants": [
+        {
+          "width": 530,
+          "height": 333,
+          "file": "Figure_08_01_07-530.webp"
+        }
+      ],
+      "alt": "A photo shows people shopping in a grocery store.",
+      "caption": "Foods that humans consume originate from photosynthesis. (credit: Associação Brasileira de Supermercados)"
+    },
+    "Figure_08_02_01-c52d": {
+      "source": "media/Figure_08_02_01-c52d.jpg",
+      "sourceSha256": "32fdc5b7ca3d86674d580dfb190419b80fbecd736a28a8d24a8a5fa16b5a80c6",
+      "module": "m66474",
+      "kind": "photo",
+      "width": 544,
+      "height": 680,
+      "variants": [
+        {
+          "width": 544,
+          "height": 680,
+          "file": "Figure_08_02_01-c52d-544.webp"
+        }
+      ],
+      "alt": "A photo shows the silhouette of a grassy plant against the sun at sunset.",
+      "caption": "Photoautotrophs can capture visible light energy in specific wavelengths from the sun, converting it into the chemical energy used to build food molecules. (credit: Gerry Atwell)"
+    },
+    "Figure_08_02_02": {
+      "source": "media/Figure_08_02_02.png",
+      "sourceSha256": "6446e0d4e11586759628959a4faeb6a6ebd05c3b8d65603269de03689aaf1fe9",
+      "module": "m66474",
+      "kind": "diagram",
+      "width": 1089,
+      "height": 722,
+      "variants": [
+        {
+          "width": 800,
+          "height": 530,
+          "file": "Figure_08_02_02-800.webp"
+        },
+        {
+          "width": 1089,
+          "height": 722,
+          "file": "Figure_08_02_02-1089.webp"
+        }
+      ],
+      "alt": "The illustration shows two waves. The distance between the crests (or troughs) is the wavelength. The crest is the upper portion of the wave, the trough is the lower portion of the wave.",
+      "caption": "The wavelength of a single wave is the distance between two consecutive points of similar position (two crests or two troughs) along the wave."
+    },
+    "Figure_08_02_03-20d5": {
+      "source": "media/Figure_08_02_03-20d5.jpg",
+      "sourceSha256": "8c59fbbacb6d18852a79bff41d0e1c1ec9adf4f45a5840de7037745e4c36082a",
+      "module": "m66474",
+      "kind": "photo",
+      "width": 750,
+      "height": 364,
+      "variants": [
+        {
+          "width": 750,
+          "height": 364,
+          "file": "Figure_08_02_03-20d5-750.webp"
+        }
+      ],
+      "alt": "The illustration lists the types of electromagnetic radiation in order of increasing wavelength. These include gamma rays, X-rays, ultraviolet, visible, infrared, and radio. Gamma rays have a very short wavelength, on the order of one thousandth of a nanometer. Radio waves have a very long wavelength, on the order of one kilometer. Visible light ranges from 380 nanometers at the violet end of the spectrum, to 750 nanometers at the red end of the spectrum.",
+      "caption": "The sun emits energy in the form of electromagnetic radiation. This radiation exists at different wavelengths, each of which has its own characteristic energy. All electromagnetic radiation, including visible light, is characterized by its wavelength."
+    },
+    "Figure_08_02_04-8e70": {
+      "source": "media/Figure_08_02_04-8e70.jpg",
+      "sourceSha256": "94ba57c8bb358ef3384b13285df0efe9121efd5ab1cdf4bc152e24fb3445a630",
+      "module": "m66474",
+      "kind": "photo",
+      "width": 750,
+      "height": 344,
+      "variants": [
+        {
+          "width": 750,
+          "height": 344,
+          "file": "Figure_08_02_04-8e70-750.webp"
+        }
+      ],
+      "alt": "The illustration shows the colors of visible light. In order of decreasing wavelength, these are red, orange, yellow, green, blue, indigo, and violet.",
+      "caption": "The colors of visible light do not carry the same amount of energy. Violet has the shortest wavelength and therefore carries the most energy, whereas red has the longest wavelength and carries the least amount of energy. (credit: modification of work by NASA)"
+    },
+    "Figure_08_02_041": {
+      "source": "media/Figure_08_02_041.png",
+      "sourceSha256": "047379507ffec7a45c2a1983f3beb1783a66a2dade61d2c76c46dfef9dd47c21",
+      "module": "m66474",
+      "kind": "diagram",
+      "width": 1500,
+      "height": 1125,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_08_02_041-800.webp"
+        },
+        {
+          "width": 1500,
+          "height": 1125,
+          "file": "Figure_08_02_041-1500.webp"
+        }
+      ],
+      "alt": "A ground state atom is depicted with an electron in an inner shell. A photon is pictured hitting the atom. The result is pictured as an excited state atom. The electron has moved to an outer shell.",
+      "caption": "Light energy can excite electrons. When a photon of light energy interacts with an electron, the electron may absorb the energy and jump from its lowest energy ground state to an excited state. Credit: Rao, A. and Ryan, K. Department of Biology, Texas A&M University."
+    },
+    "Figure_08_02_05abcd-d386": {
+      "source": "media/Figure_08_02_05abcd-d386.jpg",
+      "sourceSha256": "c037d40398d75c249cd491d507ccfbabea5d58291cb599a5e0795331d98b1e7d",
+      "module": "m66474",
+      "kind": "photo",
+      "width": 1200,
+      "height": 878,
+      "variants": [
+        {
+          "width": 800,
+          "height": 585,
+          "file": "Figure_08_02_05abcd-d386-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 878,
+          "file": "Figure_08_02_05abcd-d386-1200.webp"
+        }
+      ],
+      "alt": "Chlorophyll a and chlorophyll b are made up of a long hydrocarbon chain attached to a large, complex ring made up of nitrogen and carbon. Magnesium is associated with the center of the ring. Chlorophyll b differs from chlorophyll a in that it has a C H O group instead of a C H 3 group associated with one part of the ring. Beta-carotene is a branched hydrocarbon with a six-membered carbon ring at each end. Each chart shows the absorbance spectra for chlorophyll a, chlorophyll b, and beta-carotene. The three pigments absorb blue-green and orange-red wavelengths of light but have slightly different spectra.",
+      "caption": "(a) Chlorophyll a , (b) chlorophyll b , and (c) β -carotene are hydrophobic organic pigments found in the thylakoid membrane. Chlorophyll a and b , which are identical except for the part indicated in the red box, are responsible for the green color of leaves. β -carotene is responsible for the orange color in carrots. Each pigment has (d) a unique absorbance spectrum. Credit: Rao, A., Ryan, K., Tag, A., Fletcher, S. and Hawkins, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_08_02_06": {
+      "source": "media/Figure_08_02_06.jpg",
+      "sourceSha256": "1c318818f426dbf929d3154f1c51dc1b69278033cec94934b521c64d1d1a0807",
+      "module": "m66474",
+      "kind": "photo",
+      "width": 544,
+      "height": 363,
+      "variants": [
+        {
+          "width": 544,
+          "height": 363,
+          "file": "Figure_08_02_06-544.webp"
+        }
+      ],
+      "alt": "The photo shows undergrowth in a forest.",
+      "caption": "Plants that commonly grow in the shade have adapted to low levels of light by changing the relative concentrations of their chlorophyll pigments. (credit: Jason Hollinger)"
+    },
+    "Figure_08_02_07ab-3d69": {
+      "source": "media/Figure_08_02_07ab-3d69.png",
+      "sourceSha256": "eadd8ff7fb8713dcb885d47e4bb4e4bc65b0dc32e53701178333544e5169a01f",
+      "module": "m66474",
+      "kind": "diagram",
+      "width": 1500,
+      "height": 1125,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_08_02_07ab-3d69-800.webp"
+        },
+        {
+          "width": 1500,
+          "height": 1125,
+          "file": "Figure_08_02_07ab-3d69-1500.webp"
+        }
+      ],
+      "alt": "A photosystem is shown embedded in the thylakoid membrane. The reaction center is surrounded by the light-harvesting complexes, which contain pigment molecules. When a photon interacts with the pigment molecules, they transfer light energy toward a pair of chlorophyll a molecules in the reaction center. As a result, an electron is excited and transferred to the primary electron acceptor. Two released electrons are used to replace excited electrons.",
+      "caption": "A photosystem consists of 1) a light-harvesting complex and 2) a reaction center. Pigments in the light-harvesting complex pass light energy to two special chlorophyll a molecules in the reaction center. The light excites an electron from the chlorophyll a pair, which passes to the primary electron acceptor. The excited electron must then be replaced. Credit: Rao, A., Ryan, K., Fletcher, S. and Hawkins, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_08_02_08-07c9": {
+      "source": "media/Figure_08_02_08-07c9.jpg",
+      "sourceSha256": "16a790fb0414112b9bfae396dc6f7258ae7883876a8aae649ef4d2a99dd6636b",
+      "module": "m66474",
+      "kind": "photo",
+      "width": 1032,
+      "height": 776,
+      "variants": [
+        {
+          "width": 800,
+          "height": 601,
+          "file": "Figure_08_02_08-07c9-800.webp"
+        },
+        {
+          "width": 1032,
+          "height": 776,
+          "file": "Figure_08_02_08-07c9-1032.webp"
+        }
+      ],
+      "alt": "This illustration shows the components involved in the light reactions, which are all embedded in the thylakoid membrane. Photosystem I I uses light energy to strip electrons from water, producing half an oxygen molecule and two protons in the process. The excited electron is then passed through the chloroplast electron transport chain to photosystem I. Photosystem I passes the electron to N A D P superscript plus sign baseline reductase, which uses it to convert N A D P superscript plus sign baseline and a proton to N A D P H. As the electron transport chain moves electrons, it pumps protons into the thylakoid lumen. The splitting of water also adds protons to the lumen, and the reduction of N A D P H removes protons from the stroma. The net result is a low lower case p upper case H inside the thylakoid lumen, and a high lower p upper H outside, in the stroma. A T P synthase embedded the thylakoid membrane moves protons down their electrochemical gradient, from the lumen to the stroma, and uses the energy from this gradient to make A T P.",
+      "caption": "In the photosystem II (PSII) reaction center, energy from sunlight is used to extract electrons from water. The electrons travel through the chloroplast electron transport chain to photosystem I (PSI), which reduces NADP + to NADPH. The electron transport chain moves protons across the thylakoid membrane into the lumen. At the same time, splitting of water adds protons to the lumen, and reduction of NADPH removes protons from the stroma. The net result is a low pH in the thylakoid lumen, and a high pH in the stroma. ATP synthase uses this electrochemical gradient to make ATP. Credit: Rao, A., Ryan, K., Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "Figure_08_03_01-d12d": {
+      "source": "media/Figure_08_03_01-d12d.jpg",
+      "sourceSha256": "cae5bfed7e4fc14b1fba2cd3f5c002b2f7bbe095b7455ed382fce809d18bf3b5",
+      "module": "m66475",
+      "kind": "photo",
+      "width": 1200,
+      "height": 902,
+      "variants": [
+        {
+          "width": 800,
+          "height": 601,
+          "file": "Figure_08_03_01-d12d-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 902,
+          "file": "Figure_08_03_01-d12d-1200.webp"
+        }
+      ],
+      "alt": "This illustration shows that A T P and N A D P H produced in the light reactions are used in the Calvin cycle to make sugar.",
+      "caption": "Light reactions harness energy from the sun to produce chemical bonds, ATP, and NADPH. These energy-carrying molecules are made in the stroma where carbon fixation takes place. Credit: Rao, A., Ryan, K., Tag, A., Fletcher, S. and Hawkins, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_08_03_02": {
+      "source": "media/Figure_08_03_02.png",
+      "sourceSha256": "e627d0b55087605fc7f7419df3401fe4dbda7146a8f8c3b5e4251808cee874a0",
+      "module": "m66475",
+      "kind": "diagram",
+      "width": 1500,
+      "height": 1125,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_08_03_02-800.webp"
+        },
+        {
+          "width": 1500,
+          "height": 1125,
+          "file": "Figure_08_03_02-1500.webp"
+        }
+      ],
+      "alt": "A diagram of the Calvin cycle is shown with its three stages: carbon fixation, 3 dash phosphoglycerate (3 dash P G A) reduction, and regeneration of upper case R lower case u upper case B upper case P. In stage 1, the enzyme upper R lower u upper B lower i lower s upper C upper O adds a carbon dioxide to the five-carbon molecule upper R lower u upper B upper P, producing two three-carbon 3 dash P G A molecules. In stage 2, two N A D P H and two A T P are used to reduce 3 dash P G A to G 3 P. In stage 3 upper R lower u upper B upper P is regenerated from G 3 P. One A T P is used in the process. Three complete cycles produces one new G 3 P, which is shunted out of the cycle and made into glucose, whose molecular formula is upper C subscript 6 baseline upper H subscript 12 baseline upper O subscript 6 baseline.",
+      "caption": "The Calvin cycle has three stages. In stage 1, the enzyme RuBisCO incorporates carbon dioxide into an organic molecule, 3-PGA. In stage 2, the organic molecule is reduced using electrons supplied by NADPH. In stage 3, RuBP, the molecule that starts the cycle, is regenerated so that the cycle can continue. Only one carbon dioxide molecule is incorporated at a time, so the cycle must be completed three times to produce a single three-carbon G3P molecule, and six times to produce a six-carbon glucose molecule. Credit: Rao, A., Ryan, K., Tag, A., Fletcher, S. and Hawkins, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_08_03_03-cd68": {
+      "source": "media/Figure_08_03_03-cd68.jpg",
+      "sourceSha256": "7206ebaaa25817172e01d7b320153fb41ed75f480df3dec22317a4f88741e276",
+      "module": "m66475",
+      "kind": "photo",
+      "width": 544,
+      "height": 714,
+      "variants": [
+        {
+          "width": 544,
+          "height": 714,
+          "file": "Figure_08_03_03-cd68-544.webp"
+        }
+      ],
+      "alt": "This photo shows short, round prickly cacti growing in cracks in a rock.",
+      "caption": "The harsh conditions of the desert have led plants like these cacti to evolve variations of the light-independent reactions of photosynthesis. These variations increase the efficiency of water usage, helping to conserve water and energy. (credit: Piotr Wojtkowski)"
+    },
+    "Figure_08_03_04_1": {
+      "source": "media/Figure_08_03_04_1.png",
+      "sourceSha256": "d91ee4b65203b9bf6c48856cf71529342ff68d766faa41b7754d8e86d96a3f79",
+      "module": "m66475",
+      "kind": "diagram",
+      "width": 1200,
+      "height": 899,
+      "variants": [
+        {
+          "width": 800,
+          "height": 599,
+          "file": "Figure_08_03_04_1-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 899,
+          "file": "Figure_08_03_04_1-1200.webp"
+        }
+      ],
+      "alt": "Light energy enters a chloroplast and is converted to A T P. The A T P enters a process to reduce C O 2 to sugars. This process produces oxygen. On the other side of the image, the sugars enter the citric acid cycle. They give off C O 2. Then, oxidative phosphorylation consumes O 2 and A T P is produced. Metabolites are given off.",
+      "caption": "Connection between Photosynthesis and Respiration Photosynthesis in chloroplasts is the process by which light energy is converted to chemical energy and stored in sugars. Initially, the light energy is converted into chemical energy during ATP synthesis in a process that gives off oxygen. The energy in ATP is then used to reduce CO2 to simple sugars. In contrast, cellular respiration is the process in which the chemical energy stored in sugars is converted into ATP, a source of chemical energy that can be used by the rest of the cell. In the process of converting the energy stored in the sugars to ATP, CO2 is released and oxygen is consumed. Credit: Rao, A., Ryan, and Tag, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_08_03_05": {
+      "source": "media/Figure_08_03_05.jpg",
+      "sourceSha256": "0bfa2be16cd9d7c9d37b7adb8a9851196550c3b425aaa54cfb23ea0f83d2ab08",
+      "module": "m66475",
+      "kind": "photo",
+      "width": 800,
+      "height": 667,
+      "variants": [
+        {
+          "width": 800,
+          "height": 667,
+          "file": "Figure_08_03_05-800.webp"
+        }
+      ],
+      "alt": "This photograph shows a giraffe eating leaves from a tree. Labels indicate that the giraffe consumes oxygen and releases carbon dioxide, whereas the tree consumes carbon dioxide and releases oxygen during photosynthesis. Plants use oxygen and carbon dioxide for cellular respiration.",
+      "caption": "Photosynthesis consumes carbon dioxide and produces oxygen. Aerobic respiration consumes oxygen and produces carbon dioxide. These two processes play an important role in the carbon cycle. (credit: modification of work by Stuart Bassil)"
+    },
+    "Figure_09_01_00-79cf": {
+      "source": "media/Figure_09_01_00-79cf.jpg",
+      "sourceSha256": "072da321c3aaad4a4e899a5a04942c9e122cc12a9fc498b3f7d7d8f554519e30",
+      "module": "m66377",
+      "kind": "photo",
+      "width": 1118,
+      "height": 350,
+      "variants": [
+        {
+          "width": 800,
+          "height": 250,
+          "file": "Figure_09_01_00-79cf-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 350,
+          "file": "Figure_09_01_00-79cf-1118.webp"
+        }
+      ],
+      "alt": "This photo shows a crowd of people at a festival.",
+      "caption": "Have you ever become separated from a friend while in a crowd? If so, you know the challenge of searching for someone when surrounded by thousands of other people. If you and your friend have cell phones, your chances of finding each other are good. Cell phone networks use various methods of encoding to ensure that the signals reach their intended recipients without interference. Similarly, cells must communicate using specific signals and receptors to ensure that messages are clear. (credit: modification of work by Vincent and Bella Productions)"
+    },
+    "Figure_09_01_02": {
+      "source": "media/Figure_09_01_02.jpg",
+      "sourceSha256": "93bf8ce4f6375b05b28aa0e6c717e5a714d06b5b88a3bc10809b38ea560c4af6",
+      "module": "m66378",
+      "kind": "photo",
+      "width": 544,
+      "height": 688,
+      "variants": [
+        {
+          "width": 544,
+          "height": 688,
+          "file": "Figure_09_01_02-544.webp"
+        }
+      ],
+      "alt": "This illustration shows closely juxtaposed bulbous protrusions of presynaptic and postsynaptic cells. The presynaptic cell stores neurotransmitter in synaptic vesicles. When signaling occurs, the vesicles fuse with the cell membrane, thereby releasing the neutrotransmitter, which then binds to receptors on the postsynaptic cell. An enzyme on the surface of the postsynaptic cell destroys the neurotrasmitter, thereby terminating the signal.",
+      "caption": "The distance between the presynaptic cell and the postsynaptic cell—called the synaptic gap—is very small and allows for rapid diffusion of the neurotransmitter. Enzymes in the synapatic gap degrade some types of neurotransmitters to terminate the signal."
+    },
+    "Figure_09_01_03": {
+      "source": "media/Figure_09_01_03.jpg",
+      "sourceSha256": "7f9ee46020a413ca56c2b3cdde1fab53026ab0f0c8b357299b1583417501d4a4",
+      "module": "m66378",
+      "kind": "photo",
+      "width": 544,
+      "height": 514,
+      "variants": [
+        {
+          "width": 544,
+          "height": 514,
+          "file": "Figure_09_01_03-544.webp"
+        }
+      ],
+      "alt": "This illustration shows a hydrophobic signaling molecule that diffuses across the plasma membrane and binds an intracellular receptor in the cytoplasm. The intracellular receptor-signaling molecule complex then travels to the nucleus and binds D N A.",
+      "caption": "Hydrophobic signaling molecules typically diffuse across the plasma membrane and interact with intracellular receptors in the cytoplasm. Many intracellular receptors are transcription factors that interact with DNA in the nucleus and regulate gene expression."
+    },
+    "Figure_09_01_04-54fe": {
+      "source": "media/Figure_09_01_04-54fe.jpg",
+      "sourceSha256": "fd8925d8b89adc13ef4bd4b6eeb30a5275b786a2d11f8ab9eba1f90085309b6f",
+      "module": "m66378",
+      "kind": "photo",
+      "width": 1000,
+      "height": 750,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_09_01_04-54fe-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 750,
+          "file": "Figure_09_01_04-54fe-1000.webp"
+        }
+      ],
+      "alt": "A gated channel is closed within the plasma membrane. A signaling molecule binds to a site on the channel protein, and the channel opens. When the signaling molecule is no longer bound, the channel closes.",
+      "caption": "Gated ion channels located in the plasma membrane allow for the controlled flow of ions into and out of the cell. The channel proteins remain closed until a signaling molecule (orange teardrop) binds to the channel protein. Then the channel protein changes conformation and allows ions (yellow circles) to flow into (or out of) the cell. When the signaling molecule is released, the channel protein resumes its closed conformation, preventing ion flow. Credit: Rao, A. and Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "Figure_09_01_05": {
+      "source": "media/Figure_09_01_05.png",
+      "sourceSha256": "22f501efa08c9f487b37c6a92f60e9340a031348d04dabaccf59ab3a83f1df1f",
+      "module": "m66378",
+      "kind": "diagram",
+      "width": 1248,
+      "height": 1404,
+      "variants": [
+        {
+          "width": 800,
+          "height": 900,
+          "file": "Figure_09_01_05-800.webp"
+        },
+        {
+          "width": 1248,
+          "height": 1404,
+          "file": "Figure_09_01_05-1248.webp"
+        }
+      ],
+      "alt": "This illustration shows the activation pathway for a heterotrimeric G protein, which has three subunits: alpha, beta, and gamma, all associated with the inside of the plasma membrane. When a signaling molecule binds to a G protein-coupled receptor in the plasma membrane, a G D P molecule associated with the alpha subunit is exchanged for G T P. The alpha subunit dissociates from the beta and gamma subunits and triggers a cellular response. Hydrolysis of G T P to G D P terminates the signal.",
+      "caption": "Heterotrimeric G-proteins have three subunits: α , β , and γ . When a signaling molecule binds to a G-protein-coupled receptor in the plasma membrane, a GDP molecule associated with the α subunit is exchanged for GTP. The β and γ subunits dissociate from the α subunit, and a cellular response is triggered either by the α subunit or the dissociated βγ pair. Hydrolysis of GTP to GDP terminates the signal."
+    },
+    "Figure_09_01_06-c601": {
+      "source": "media/Figure_09_01_06-c601.jpg",
+      "sourceSha256": "c817a6bd6ff0031036b16f632cd6303c290e43899740c48b5738901472bf5f26",
+      "module": "m66378",
+      "kind": "photo",
+      "width": 544,
+      "height": 682,
+      "variants": [
+        {
+          "width": 544,
+          "height": 682,
+          "file": "Figure_09_01_06-c601-544.webp"
+        }
+      ],
+      "alt": "This 1866 poster warns people about a cholera epidemic and gives advice for preventing the disease.",
+      "caption": "Transmitted primarily through contaminated drinking water, cholera is a major cause of death in the developing world and in areas where natural disasters interrupt the availability of clean water. The cholera bacterium, Vibrio cholerae , creates a toxin that modifies G-protein-mediated cell signaling pathways in the intestines. Modern sanitation eliminates the threat of cholera outbreaks, such as the one that swept through New York City in 1866. This poster from that era shows how, at that time, the way that the disease was transmitted was not understood. (credit: New York City Sanitary Commission)"
+    },
+    "Figure_09_01_07-83ac": {
+      "source": "media/Figure_09_01_07-83ac.png",
+      "sourceSha256": "9dc6124d4d4ecf882886c0f76aa55cac1d21216547053589bf49444f83e9af1c",
+      "module": "m66378",
+      "kind": "diagram",
+      "width": 1800,
+      "height": 1400,
+      "variants": [
+        {
+          "width": 800,
+          "height": 622,
+          "file": "Figure_09_01_07-83ac-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1244,
+          "file": "Figure_09_01_07-83ac-1600.webp"
+        }
+      ],
+      "alt": "This illustration shows two receptor tyrosine kinase monomers embedded in the plasma membrane. Upon binding of a signaling molecule to the extracellular domain, the receptors dimerize. Tyrosine residues on the intracellular surface are then phosphorylated, triggering a cellular response. The cellular response involves binding of relay proteins, which result in Cellular Response 1 and Cellular Response 2.",
+      "caption": "1) A receptor tyrosine kinase is an enzyme-linked receptor with a single helical transmembrane region, and extracellular and intracellular domains. 2) Binding of a signaling molecule to the extracellular domain causes the receptor to dimerize. 3) Tyrosine residues on the intracellular domain are then autophosphorylated, 4) triggering a downstream cellular response. The signal is terminated by a phosphatase that removes the phosphates from the phosphotyrosine residues. Credit: Rao, A., Ryan, K., Tag, A., Fletcher, S. and Hawkins, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_09_01_08": {
+      "source": "media/Figure_09_01_08.jpg",
+      "sourceSha256": "afecb3617965159aaaa8a9e4beb5a68c9c52d955993c065b322d2e6d995b842c",
+      "module": "m66378",
+      "kind": "photo",
+      "width": 544,
+      "height": 579,
+      "variants": [
+        {
+          "width": 544,
+          "height": 579,
+          "file": "Figure_09_01_08-544.webp"
+        }
+      ],
+      "alt": "The molecular structures of estradiol, testosterone, and cholesterol are shown. All three molecules share a four-ring structure but differ in the types of functional groups attached to it.",
+      "caption": "Steroid hormones have similar chemical structures to their precursor, cholesterol. Because these molecules are small and hydrophobic, they can diffuse directly across the plasma membrane into the cell, where they interact with internal receptors."
+    },
+    "Figure_09_02_01": {
+      "source": "media/Figure_09_02_01.png",
+      "sourceSha256": "d0d558412d139eb60e2bb3a97eaea062996db0404a95a4d9afc96a9489fc7aaf",
+      "module": "m66379",
+      "kind": "diagram",
+      "width": 469,
+      "height": 936,
+      "variants": [
+        {
+          "width": 469,
+          "height": 936,
+          "file": "Figure_09_02_01-469.webp"
+        }
+      ],
+      "alt": "This illustration shows the epidermal growth factor receptor, which is embedded in the plasma membrane. Upon binding of a signaling molecule to the receptor's extracellular domain, the receptor dimerizes, and intracellular residues are phosphorylated. Phosphorylation of the receptor triggers the phosphorylation of a protein called M E K by R A F. M E K, in turn, phosphorylates E R K. E R K stimulates protein translation in the cytoplasm, and transcription in the nucleus. Activation of E R K stimulates cell proliferation, cell migration and adhesion, and angiogenesis, which is the growth of new blood vessels. E R K inhibits apoptosis.",
+      "caption": "The epidermal growth factor (EGF) receptor (EGFR) is a receptor tyrosine kinase involved in the regulation of cell growth, wound healing, and tissue repair. When EGF binds to the EGFR, a cascade of downstream events causes the cell to grow and divide. If EGFR is activated at inappropriate times, uncontrolled cell growth (cancer) may occur."
+    },
+    "Figure_09_02_02-01c8": {
+      "source": "media/Figure_09_02_02-01c8.jpg",
+      "sourceSha256": "c078fec55b606a0bed6303f1f302446302ee009330f133a1cb1a30b49e25d144",
+      "module": "m66379",
+      "kind": "photo",
+      "width": 544,
+      "height": 621,
+      "variants": [
+        {
+          "width": 544,
+          "height": 621,
+          "file": "Figure_09_02_02-01c8-544.webp"
+        }
+      ],
+      "alt": "Molecular structures of phosphoserine, phosphothreonine and phosphotyrosine are shown. In each molecule, a phosphate is attached to an oxygen on the amino acid.",
+      "caption": "In protein phosphorylation, a phosphate group (PO 4 -3 ) is added to residues of the amino acids serine, threonine, and tyrosine."
+    },
+    "Figure_09_02_03-0373": {
+      "source": "media/Figure_09_02_03-0373.jpg",
+      "sourceSha256": "8823bd451cfcd75159f6f5888d201111be22cc4d26c538fcbf9c8fd70cd32bab",
+      "module": "m66379",
+      "kind": "photo",
+      "width": 800,
+      "height": 356,
+      "variants": [
+        {
+          "width": 800,
+          "height": 356,
+          "file": "Figure_09_02_03-0373-800.webp"
+        }
+      ],
+      "alt": "Cyclic A M P is made from A T P by the enzyme adenylyl cyclase. In the process, a pyrophosphate molecule composed of two phosphate residues is released. Cyclic A M P gets its name because the phosphate group is attached to the ribose ring in two places, forming a circle.",
+      "caption": "This diagram shows the mechanism for the formation of cyclic AMP (cAMP). cAMP serves as a second messenger to activate or inactivate proteins within the cell. Termination of the signal occurs when an enzyme called phosphodiesterase converts cAMP into AMP."
+    },
+    "Figure_09_02_04-8d26": {
+      "source": "media/Figure_09_02_04-8d26.jpg",
+      "sourceSha256": "028778fb1a549260cc3449408508eb508ab40ace86c62bcd8c220cd9405b06ab",
+      "module": "m66379",
+      "kind": "photo",
+      "width": 800,
+      "height": 743,
+      "variants": [
+        {
+          "width": 800,
+          "height": 743,
+          "file": "Figure_09_02_04-8d26-800.webp"
+        }
+      ],
+      "alt": "The molecular structures of P I P subscript 2 baseline, D A G, and I P subscript 3 baseline are shown. P I P subscript 2 baseline is a phospholipid that is cleaved by phospholipase C to form D A G, which has a long hydrophobic tail, and I P subscript 3 baseline, a ring structure with three phosphates attached.",
+      "caption": "The enzyme phospholipase C breaks down PIP 2 into IP 3 and DAG, both of which serve as second messengers."
+    },
+    "Figure_09_03_01": {
+      "source": "media/Figure_09_03_01.png",
+      "sourceSha256": "44641af2ea2556d649a5f4d25f02ca988c934b631881d533d8322aaf5379d8a5",
+      "module": "m66380",
+      "kind": "diagram",
+      "width": 1065,
+      "height": 1279,
+      "variants": [
+        {
+          "width": 800,
+          "height": 960,
+          "file": "Figure_09_03_01-800.webp"
+        },
+        {
+          "width": 1065,
+          "height": 1279,
+          "file": "Figure_09_03_01-1065.webp"
+        }
+      ],
+      "alt": "This illustration shows the pathway by which E R K, a M A P kinase, activates protein synthesis. Phosphorylated E R K phosphorylates M N K 1, which in turn phosphorylates lower e upper I upper F dash 4 E, which is associated with lower m upper R upper N upper A. When lower e upper I upper F dash 4 E is phosphorylated, the m R N A unfolds and protein synthesis begins.",
+      "caption": "ERK is a MAP kinase that activates translation when it is phosphorylated. ERK phosphorylates MNK1, which in turn phosphorylates eIF-4E, an elongation initiation factor that, with other initiation factors, is associated with mRNA. When eIF-4E becomes phosphorylated, the mRNA unfolds, allowing protein synthesis in the nucleus to begin. (See for the phosphorylation pathway that activates ERK.)"
+    },
+    "Figure_09_03_02-cc77": {
+      "source": "media/Figure_09_03_02-cc77.jpg",
+      "sourceSha256": "fb45219f7f83dfc99d121ac24b6d77e68d6e39ce27b5c845c53fa620846e64e8",
+      "module": "m66380",
+      "kind": "photo",
+      "width": 544,
+      "height": 819,
+      "variants": [
+        {
+          "width": 544,
+          "height": 819,
+          "file": "Figure_09_03_02-cc77-544.webp"
+        }
+      ],
+      "alt": "This photo shows a histological section of a foot of a 15-day-old mouse embryo. Tissue connects the space between the toes.",
+      "caption": "The histological section of a foot of a 15-day-old mouse embryo, visualized using light microscopy, reveals areas of tissue between the toes, which apoptosis will eliminate before the mouse reaches its full gestational age at 27 days. (credit: modification of work by Michal Mañas)"
+    },
+    "Figure_09_04_01-108c": {
+      "source": "media/Figure_09_04_01-108c.jpg",
+      "sourceSha256": "7361ec9878abd7e7fddf7a4c75c7200056cd0aca3108dd4c4d92fef91f8c4ab5",
+      "module": "m66383",
+      "kind": "photo",
+      "width": 544,
+      "height": 544,
+      "variants": [
+        {
+          "width": 544,
+          "height": 544,
+          "file": "Figure_09_04_01-108c-544.webp"
+        }
+      ],
+      "alt": "The photo shows yeast cells, some of which have buds protruding from them.",
+      "caption": "Budding Saccharomyces cerevisiae yeast cells can communicate by releasing a signaling molecule called mating factor. In this micrograph, they are visualized using differential interference contrast microscopy, a light microscopy technique that enhances the contrast of the sample."
+    },
+    "Figure_09_04_02": {
+      "source": "media/Figure_09_04_02.png",
+      "sourceSha256": "7353426a3054a552c4ca8069d13722f3337a978b767e3f9f709f83cc3046d5c1",
+      "module": "m66383",
+      "kind": "diagram",
+      "width": 725,
+      "height": 895,
+      "variants": [
+        {
+          "width": 725,
+          "height": 895,
+          "file": "Figure_09_04_02-725.webp"
+        }
+      ],
+      "alt": "The left part of this illustration shows a single bacterial cell. The cell produces autoinducers, which diffuse away from the cell and cannot bind the intracellular receptor. The right part of this illustration shows many bacterial cells. More autoinducers are present, which bind receptors that in turn bind DNA and regulate the expression of certain genes. Autoinducer gene expression is turned on, resulting in a positive-feedback loop.",
+      "caption": "Autoinducers are small molecules or proteins produced by bacteria that regulate gene expression."
+    },
+    "Figure_09_04_03": {
+      "source": "media/Figure_09_04_03.png",
+      "sourceSha256": "f7630a533792ddeeb072802c0d0a560036f9c43f52d50d5d7af3ed90c3890d0b",
+      "module": "m66383",
+      "kind": "diagram",
+      "width": 725,
+      "height": 316,
+      "variants": [
+        {
+          "width": 725,
+          "height": 316,
+          "file": "Figure_09_04_03-725.webp"
+        }
+      ],
+      "alt": "Part a: This electron micrograph shows a film of bacteria. Part b: This photo shows a Hawaiian bobtail squid.",
+      "caption": "Cell-cell communication enables these (a) Staphylococcus aureus bacteria to work together to form a biofilm inside a hospital patient’s catheter, seen here via scanning electron microscopy. S. aureus is the main cause of hospital-acquired infections. (b) Hawaiian bobtail squid have a symbiotic relationship with the bioluminescent bacteria Vibrio fischeri . The luminescence makes it difficult to see the squid from below because it effectively eliminates its shadow. In return for camouflage, the squid provides food for the bacteria. Free-living V. fischeri do not produce luciferase, the enzyme responsible for luminescence, but V. fischeri living in a symbiotic relationship with the squid do. Quorum sensing determines whether the bacteria should produce the luciferase enzyme. (credit a: modifications of work by CDC/Janice Carr; credit b: modifications of work by Cliff1066/Flickr)"
+    },
+    "Figure_10_00_02abc": {
+      "source": "media/Figure_10_00_02abc.jpg",
+      "sourceSha256": "b90ed6eb6a336831bff6ab0c7272b1360a3f9b62f8cb1053fc6fde6cbe86a707",
+      "module": "m66476",
+      "kind": "photo",
+      "width": 1117,
+      "height": 284,
+      "variants": [
+        {
+          "width": 800,
+          "height": 203,
+          "file": "Figure_10_00_02abc-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 284,
+          "file": "Figure_10_00_02abc-1117.webp"
+        }
+      ],
+      "alt": "Image A shows two conjoined cells forming a dumbbell shape; the fertilization envelope has been removed so that the mesh-like outer layer can be seen. Image B shows the sea urchin embryo when it has divided into 16 conjoined cells; the overall shape is rounder than in image A. Image C shows a water melon sea urchin which appears as a peach-colored ball covered in white protruding spines.",
+      "caption": "A sea urchin begins life as a single diploid cell (zygote) that (a) divides through cell division to form two genetically identical daughter cells, visible here through scanning electron microscopy (SEM). After four rounds of cell division, (b) there are 16 cells, as seen in this SEM image. After many rounds of cell division, the individual develops into a complex, multicellular organism, as seen in this (c) mature sea urchin. (credit a: modification of work by Evelyn Spiegel, Louisa Howard; credit b: modification of work by Evelyn Spiegel, Louisa Howard; credit c: modification of work by Marco Busdraghi; scale-bar data from Matt Russell)"
+    },
+    "Figure_10_01_01-5016": {
+      "source": "media/Figure_10_01_01-5016.jpg",
+      "sourceSha256": "a1f965b4e909dc3f7dd600058661ba1f07751748d5a53e587d568fbcebfb33c4",
+      "module": "m66477",
+      "kind": "photo",
+      "width": 544,
+      "height": 381,
+      "variants": [
+        {
+          "width": 544,
+          "height": 381,
+          "file": "Figure_10_01_01-5016-544.webp"
+        }
+      ],
+      "alt": "The illustration shows a prokaryotic cell with a single, circular chromosome floating free in the cytoplasm.",
+      "caption": "Prokaryotes, including both Bacteria and Archaea, have a single, circular chromosome located in a central region called the nucleoid."
+    },
+    "Figure_10_01_02-1062": {
+      "source": "media/Figure_10_01_02-1062.jpg",
+      "sourceSha256": "6648d0c4897ddc5bab394e1dabd89c28bb812ccafe4250112695a4245345e645",
+      "module": "m66477",
+      "kind": "photo",
+      "width": 544,
+      "height": 430,
+      "variants": [
+        {
+          "width": 544,
+          "height": 430,
+          "file": "Figure_10_01_02-1062-544.webp"
+        }
+      ],
+      "alt": "The 23 chromosomes from a human female are each dyed a different color so they can be distinguished. During most of the cell cycle, each chromosome is elongated into a thin strand that folds over on itself, like a piece of spaghetti. The chromosomes fill the entire spherical nucleus, but each one is contained in a different part, resulting in a multi-colored sphere. During mitosis, the chromosomes condense into thick, compact bars, each a different color. These bars can be arranged in numerical order to form a karyotype. There are two copies of each chromosome in the karyotype.",
+      "caption": "There are 23 pairs of homologous chromosomes in a female human somatic cell. The condensed chromosomes are viewed within the nucleus (top), removed from a cell during mitosis (also called karyokinesis or nuclear division) and spread out on a slide (right), and artificially arranged according to length (left); an arrangement like this is called a karyotype. In this image, the chromosomes were exposed to fluorescent stains for differentiation of the different chromosomes. A method of staining called “chromosome painting” employs fluorescent dyes that highlight chromosomes in different colors. (credit: National Human Genome Project/NIH)"
+    },
+    "Figure_10_01_03-3c7b": {
+      "source": "media/Figure_10_01_03-3c7b.jpg",
+      "sourceSha256": "5aab3f5405e15b86a4025f4a4692afa3369e421d92ba1bf55c3c3cf810783987",
+      "module": "m66477",
+      "kind": "photo",
+      "width": 800,
+      "height": 992,
+      "variants": [
+        {
+          "width": 800,
+          "height": 992,
+          "file": "Figure_10_01_03-3c7b-800.webp"
+        }
+      ],
+      "alt": "A detail of a nucleosome shows 8 Histone proteins and 146 or 147 Nucleotide Base pairs; they are connected by a linker region to the Amino tail of the histone protein. Then, several levels of magnification reveal details of DNA. A D N A double helix is about 2 nanometers wide. The double helix wraps around proteins called histones to form nucleosomes. The entire D N A molecule wraps around many histones, creating the appearance of beads on a string in the radial loop domains and heterochromatin. The chromatin fiber further condenses into the chromosome at about 1400 nanometers wide.",
+      "caption": "Each linear chromosome in a eukaryotic cell is packaged into chromatin, a combination of DNA and proteins. The double-stranded DNA helix associates with the core histones to form nucleosomes. These nucleosomes are further organized into a 30 nm fiber by the linker histone, H1. The fiber then associates with additional proteins to form loops and higher-order heterochromatin packing. DNA packing reaches its most condensed state during metaphase in mitosis in preparation for chromosome separation. Chromatin packing is dynamic and undergoes reversible changes in response to changes in gene expression and the cell cycle. Credit: Rao, A., Ryan, K. Fletcher, S. Hawkins, A. and Tag, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_10_02_01-418e": {
+      "source": "media/Figure_10_02_01-418e.jpg",
+      "sourceSha256": "08df4b4ad10580a0c4bd0a603022e7e38067b17e35d9d1e48ace713adcfd7e36",
+      "module": "m66478",
+      "kind": "photo",
+      "width": 800,
+      "height": 561,
+      "variants": [
+        {
+          "width": 800,
+          "height": 561,
+          "file": "Figure_10_02_01-418e-800.webp"
+        }
+      ],
+      "alt": "Like a clock, the cell cycles from interphase to the mitotic phase and back to interphase. Most of the cell cycle is spent in interphase, which is subdivided into G subscript 1 baseline, S, and G subscript 2 baseline phases. Cell growth occurs during G subscript 1 baseline, D N A synthesis occurs during S, and more growth occurs during G subscript 2 baseline. The mitotic phase consists of mitosis, in which the nuclear chromatin is divided, and cytokinesis, in which the cytoplasm is divided, resulting in two daughter cells.",
+      "caption": "The cell cycle in multicellular organisms consists of interphase and the mitotic phase. During interphase, the cell grows and the nuclear DNA is duplicated. Interphase is followed by the mitotic phase. During the mitotic phase, the duplicated chromosomes are segregated and distributed into daughter nuclei. Following mitosis, the cytoplasm is usually divided as well by cytokinesis, resulting in two genetically identical daughter cells."
+    },
+    "Figure_10_02_02-ae45": {
+      "source": "media/Figure_10_02_02-ae45.png",
+      "sourceSha256": "662b76969aefa06a124b2506df2fd7662cb0c602005393712c062160a169fab5",
+      "module": "m66478",
+      "kind": "diagram",
+      "width": 1792,
+      "height": 2239,
+      "variants": [
+        {
+          "width": 800,
+          "height": 999,
+          "file": "Figure_10_02_02-ae45-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1999,
+          "file": "Figure_10_02_02-ae45-1600.webp"
+        }
+      ],
+      "alt": "This diagram shows the five phases of mitosis and cytokinesis. During prophase, the chromosomes condense and become visible, spindle fibers emerge from the centrosomes, the nuclear envelope breaks down, and the nucleolus disappears. During prometaphase, the chromosomes continue to condense and kinetochores appear at the centromeres. Mitotic spindle microtubules attach to the kinetochores, and centrosomes move toward opposite poles. During metaphase, the mitotic spindle is fully developed, and centrosomes are at opposite poles of the cell. Chromosomes line up at the metaphase plate and each sister chromatid is attached to a spindle fiber originating from the opposite pole. During anaphase, the cohesin proteins that were binding the sister chromatids together break down. The sister chromatids, which are now called chromosomes, move toward opposite poles of the cell. Non-kinetochore spindle fibers lengthen, elongating the cell. During telophase, chromosomes arrive at the opposite poles and begin to decondense. The nuclear envelope reforms. During cytokinesis in animals, a cleavage furrow separates the two daughter cells. In plants, a cell plate separates the two cells.",
+      "caption": "G2 of Interphase – The last stage of interphase is the second gap period, G2. During this stage, cells grow, replenish energy and synthesize needed macromolecules, such as proteins and lipids. Mitosis - When G2 is complete, the cell will enter mitosis. Although there are 5 phases in mitosis, with the exception of the metaphase to anaphase transition, these phases are not discrete and happen as a continuous process. Prophase is the first stage in mitosis. The nuclear envelope begins to break down and chromosomes condense and are now visible. Spindle fibers start to appear and centrosomes begin to move towards opposite poles. Prometaphase - Chromosomes continue to condense and are more visible. Kinetochores appear at the centromere and kinetochore microtubules attach. Centrosomes continue to move towards opposite poles. Metaphase – The mitotic spindle is fully developed and centrosomes are at opposite poles. Chromosomes are aligned at the “equatorial plate”, and each sister chromatid rests on one side of the plate, with spindle fibers attached to them. Anaphase - Sister chromatids are pulled apart by spindle fibers and are separated from each other. Each chromatid is now a chromosome. Telophase and Cytokinesis - Chromosomes arrive at opposite poles and start to decondense and become less visible. The nuclear envelope reassembles and begins to surround each new set of chromosomes. The mitotic spindle assembly breaks down and the division of the cytoplasm begins via cytokinesis. This physical separation into two cells are remarkably different processes in plant and animal cells. Credit: Rao, A., Hawkins, A.and Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "Figure_10_02_03-d5cd": {
+      "source": "media/Figure_10_02_03-d5cd.jpg",
+      "sourceSha256": "9ec5530014f18101a781f15ed4ae0976862cea74e1066dbdec428cff393e4188",
+      "module": "m66478",
+      "kind": "photo",
+      "width": 544,
+      "height": 398,
+      "variants": [
+        {
+          "width": 544,
+          "height": 398,
+          "file": "Figure_10_02_03-d5cd-544.webp"
+        }
+      ],
+      "alt": "This illustration shows two sister chromatids. Each has a kinetochore at the centromere, and mitotic spindle microtubules radiate from the kinetochore.",
+      "caption": "During prometaphase, mitotic spindle microtubules from opposite poles attach to each sister chromatid at the kinetochore. In anaphase, the connection between the sister chromatids breaks down, and the microtubules pull the chromosomes toward opposite poles."
+    },
+    "Figure_10_02_04-2134": {
+      "source": "media/Figure_10_02_04-2134.jpg",
+      "sourceSha256": "3fce510e5a5c83a07a47953c93b5d1f2c883cdccd889f0e3e9b7fb9267e73062",
+      "module": "m66478",
+      "kind": "photo",
+      "width": 1300,
+      "height": 516,
+      "variants": [
+        {
+          "width": 800,
+          "height": 317,
+          "file": "Figure_10_02_04-2134-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 516,
+          "file": "Figure_10_02_04-2134-1300.webp"
+        }
+      ],
+      "alt": "Part a: This illustration shows cytokinesis in a typical animal cell. Part b: Cytokinesis is shown in a typical plant cell. In an animal cell, a contractile ring of actin filaments forms a cleavage furrow that divides the cell in two. In a plant cell, Golgi vesicles coalesce at the metaphase plate. A cell plate grows from the center outward, and the vesicles form a plasma membrane that divides the cytoplasm.",
+      "caption": "Animal cell cleavage - Contraction of actin filaments by myosin pull the “equator” of the cell causing an invagination of the cell (a fissure called a cleavage furrow). The cleavage furrow gets continuously deeper until it eventually divides the cell into two new, independent daughter cells. Plant cell wall formation - A mixture of enzymes, proteins, and glucose molecules are transported via vesicles to the center of the cell. These vesicles continuously build upon each other until a completely new cell wall has emerged and two new cells are formed, independent of one another. Credit: Rao, A., Ryan, K., Hawkins, A.and Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "Figure_10_02_06": {
+      "source": "media/Figure_10_02_06.png",
+      "sourceSha256": "90f8df71af36d0bd6f3ce2fa114e58499fdd6fe2f7f715c1c6755e1cc6b8653f",
+      "module": "m66478",
+      "kind": "diagram",
+      "width": 825,
+      "height": 415,
+      "variants": [
+        {
+          "width": 800,
+          "height": 402,
+          "file": "Figure_10_02_06-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 415,
+          "file": "Figure_10_02_06-825.webp"
+        }
+      ],
+      "alt": "Left: This figure shows an illustration of whitefish blastula cells with a scanning pattern from right to left, and from top to bottom. Right: A micrograph of whitefish blastula cells in various phases of the cell cycle is shown.",
+      "caption": "Slowly scan whitefish blastula cells with the high-power objective as illustrated in image (a) to identify their mitotic stage. (b) A microscopic image of the scanned cells is shown. (credit “micrograph”: modification of work by Linda Flora; scale-bar data from Matt Russell)"
+    },
+    "Figure_10_03_01-7556": {
+      "source": "media/Figure_10_03_01-7556.jpg",
+      "sourceSha256": "504cf50a0bb0e5f87fca72fd5cb9fc095678cd71d1689cf2a60f2dff886aa44f",
+      "module": "m66479",
+      "kind": "photo",
+      "width": 800,
+      "height": 611,
+      "variants": [
+        {
+          "width": 800,
+          "height": 611,
+          "file": "Figure_10_03_01-7556-800.webp"
+        }
+      ],
+      "alt": "This illustration shows the three major checkpoints of the cell cycle: G subscript 1 baseline checkpoint restriction, G subscript 2 baseline checkpoint, and M checkpoint in the mitotic phase.",
+      "caption": "The cell cycle is controlled at three checkpoints. The integrity of the DNA is assessed at the G 1 checkpoint. Proper chromosome duplication is assessed at the G 2 checkpoint. Attachment of each kinetochore to a spindle fiber is assessed at the M checkpoint."
+    },
+    "Figure_10_03_02-820d": {
+      "source": "media/Figure_10_03_02-820d.jpg",
+      "sourceSha256": "b4e8e04242fc617f0efc04e287fe68cfb9c58358ef4e9ba17f82b787cfe74a56",
+      "module": "m66479",
+      "kind": "photo",
+      "width": 544,
+      "height": 329,
+      "variants": [
+        {
+          "width": 544,
+          "height": 329,
+          "file": "Figure_10_03_02-820d-544.webp"
+        }
+      ],
+      "alt": "This graph shows the concentrations of different cyclin proteins during various phases of the cell cycle. Cyclin D concentrations increase in G subscript 1 baseline phase, and decrease at the end of mitosis. Cyclin E levels rise during G subscript 1 baseline phase and fall during S phase. Cyclin A levels rise during S phase and fall during mitosis. Cyclin B levels rise in S phase and fall during mitosis.",
+      "caption": "The concentrations of cyclin proteins change throughout the cell cycle. There is a direct correlation between cyclin accumulation and the three major cell-cycle checkpoints. Also note the sharp decline of cyclin levels following each checkpoint (the transition between phases of the cell cycle), as cyclin is degraded by cytoplasmic enzymes. (credit: modification of work by \"WikiMiMa\"/Wikimedia Commons)"
+    },
+    "Figure_10_03_03_prev": {
+      "source": "media/Figure_10_03_03_prev.jpg",
+      "sourceSha256": "4aee7b9b9655e6a211e84dd6a99e91ad89d2cf92b8fead96a1231543643311be",
+      "module": "m66479",
+      "kind": "photo",
+      "width": 544,
+      "height": 1018,
+      "variants": [
+        {
+          "width": 544,
+          "height": 1018,
+          "file": "Figure_10_03_03_prev-544.webp"
+        }
+      ],
+      "alt": "This illustration shows a cyclin protein binding to a upper case C lower case d lower case k. The cyclin slash upper C lower d lower k complex is activated when a kinase phosphorylates it. The cyclin slash upper C lower d lower k complex, in turn, phosphorylates other proteins, thus advancing the cell cycle.",
+      "caption": "Cyclin-dependent kinases (Cdks) are protein kinases that, when fully activated, can phosphorylate and thus activate other proteins that advance the cell cycle past a checkpoint. To become fully activated, a Cdk must bind to a cyclin protein and then be phosphorylated by another kinase."
+    },
+    "Figure_10_03_04": {
+      "source": "media/Figure_10_03_04.png",
+      "sourceSha256": "db71a033e1597c639fe26e77c7a04d49171fbf7b4e7ec982ed6c555d8569df3e",
+      "module": "m66479",
+      "kind": "diagram",
+      "width": 728,
+      "height": 476,
+      "variants": [
+        {
+          "width": 728,
+          "height": 476,
+          "file": "Figure_10_03_04-728.webp"
+        }
+      ],
+      "alt": "This illustration shows the regulation of the cell cycle by the upper case R lower case b protein. Unphosphorylated upper R lower b binds the transcription factor E 2 F. E 2 F cannot bind the D N A, and transcription is blocked. Cell growth triggers the phosphorylation of R b. Phosphorylated R b releases E 2 F, which binds the D N A and turns on gene expression, thus advancing the cell cycle.",
+      "caption": "Rb halts the cell cycle and releases its hold in response to cell growth."
+    },
+    "Figure_10_04_01-9310": {
+      "source": "media/Figure_10_04_01-9310.png",
+      "sourceSha256": "25716ce467a17dc4a8fb07db95f3782a2c83cfb519f48b8620b6694f250ae066",
+      "module": "m66480",
+      "kind": "diagram",
+      "width": 1450,
+      "height": 1198,
+      "variants": [
+        {
+          "width": 800,
+          "height": 661,
+          "file": "Figure_10_04_01-9310-800.webp"
+        },
+        {
+          "width": 1450,
+          "height": 1198,
+          "file": "Figure_10_04_01-9310-1450.webp"
+        }
+      ],
+      "alt": "Part a: This illustration shows cell cycle regulation by normal lower case p 5 3, which arrests the cell cycle in response to D N A damage, cell cycle abnormalities, or hypoxia. Once the damage is repaired, the cell cycle restarts. If the damage cannot be repaired, apoptosis, meaning programmed cell death, occurs. Part b: Mutated p 5 3 does not arrest the cell cycle in response to cellular damage. As a result, the cell cycle continues, and the cell may become cancerous.",
+      "caption": "The role of normal p53 is to monitor DNA and the supply of oxygen (hypoxia is a condition of reduced oxygen supply). If damage is detected, p53 triggers repair mechanisms. If repairs are unsuccessful, p53 signals apoptosis. A cell with an abnormal p53 protein cannot repair damaged DNA and thus cannot signal apoptosis. Cells with abnormal p53 can become cancerous. (credit: modification of work by Thierry Soussi)"
+    },
+    "Figure_10_05_01-2ecc": {
+      "source": "media/Figure_10_05_01-2ecc.jpg",
+      "sourceSha256": "2aebf1154054db97290ced2c0112c2001676d9b40d1d499258898ac64c796d40",
+      "module": "m66481",
+      "kind": "photo",
+      "width": 800,
+      "height": 1207,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1207,
+          "file": "Figure_10_05_01-2ecc-800.webp"
+        }
+      ],
+      "alt": "This illustration shows the steps of binary fission in prokaryotes. Replication of the single, circular chromosome begins at the origin of replication and continues simultaneously in both directions. As the D N A is replicated, the cell elongates, and upper case F lower case t lower case s upper case Z proteins migrate toward the center of the cell where they form a ring. The upper F lower t lower s upper Z ring directs the formation of a septum that divides the cell in two once D N A replication is complete.",
+      "caption": "These images show the steps of binary fission in prokaryotes. (credit: modification of work by “Mcstrother”/Wikimedia Commons)"
+    },
+    "Figure_B06_03_05abcd_new": {
+      "source": "media/Figure_B06_03_05abcd_new.png",
+      "sourceSha256": "b533ddfb73b1cfba10ffcb98e785015d67f6dcb0233e8acead61abeba82572fe",
+      "module": "m66459",
+      "kind": "diagram",
+      "width": 1043,
+      "height": 835,
+      "variants": [
+        {
+          "width": 800,
+          "height": 640,
+          "file": "Figure_B06_03_05abcd_new-800.webp"
+        },
+        {
+          "width": 1043,
+          "height": 835,
+          "file": "Figure_B06_03_05abcd_new-1043.webp"
+        }
+      ],
+      "alt": "There are four photos show. The first photo shows a pile of wood chips and dirt, with small plants growing from this. The second photo shows a small baby bird breaking out of its egg as it hatches. The third photo shows a large patch of desert where someone has drawn patterns in the sand. The fourth photo shows a grassy hill outside where people climb into giant inflatable balls and roll down the hillside.",
+      "caption": "This figure shows some examples of endergonic processes (ones that require energy) and exergonic processes (ones that release energy). These include (a) a compost pile decomposing, (b) a chick developing from a fertilized egg, (c) sand art destruction, and (d) a ball rolling down a hill. (credit a: modification of work by Natalie Maynor; credit b: modification of work by USDA; credit c: modification of work by “Athlex”/Flickr; credit d: modification of work by Harry Malsch)"
+    },
+    "celldivision": {
+      "source": "media/celldivision.png",
+      "sourceSha256": "0e52638ca6062a4e5a9faf01eb1a20e33f96c555e27af4e55eeeacf1bbbf7407",
+      "module": "m66480",
+      "kind": "diagram",
+      "width": 1500,
+      "height": 1125,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "celldivision-800.webp"
+        },
+        {
+          "width": 1500,
+          "height": 1125,
+          "file": "celldivision-1500.webp"
+        }
+      ],
+      "alt": "Three situations are shown. In the first, normal cell division and normal apoptosis creates a balance between the number of new cells and the number of cell deaths, resulting in a stable number of cells and homeostasis. In the second, increased cell division and normal apoptosis results in an increased number of cells and a tumor. In the third, normal cell division and decreased apoptosis results in an increased number of cells and a tumor.",
+      "caption": "Cell Division and Apoptosis. In an adult organism, normal cell division is balanced by apoptosis (programmed cell death) to maintain a constant cell number in homeostasis. Either an increase in cell division or a decrease in apoptosis leads an increase in the number of cells and tumor formation. Credit: Rao, A. and Ryan, K. Department of Biology, Texas A&M University."
+    },
+    "cytokinesis": {
+      "source": "media/cytokinesis.png",
+      "sourceSha256": "e80c01bfb97c6b962388d358b5d36a60bbb3e8f58c95b1f5e9c8ce1251016595",
+      "module": "m66478",
+      "kind": "diagram",
+      "width": 1200,
+      "height": 900,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "cytokinesis-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 900,
+          "file": "cytokinesis-1200.webp"
+        }
+      ],
+      "alt": "A cell shows overlapping microtubules extending throughout the cell. At the center of the cell, sister chomratids line up. At their center are kinetochores. And at the very ends of the cell, away from the center, are centrosomes.",
+      "caption": "Mitotic Cell at Metaphase. The microtubule spindle has completed the alignment of chromosomes at the metaphase plate in preparation for the separation of sister chromatids during anaphase. Credit: Fletcher, S., Ryan, K. and Rao, A., Department of Biology, Texas A&M University."
+    },
+    "gradient": {
+      "source": "media/gradient.png",
+      "sourceSha256": "f394e90e12f4cc4acd99d43599d5b53fcafd94d6c2c67a374b67474fd3c16538",
+      "module": "m66375",
+      "kind": "diagram",
+      "width": 1500,
+      "height": 1120,
+      "variants": [
+        {
+          "width": 800,
+          "height": 597,
+          "file": "gradient-800.webp"
+        },
+        {
+          "width": 1500,
+          "height": 1120,
+          "file": "gradient-1500.webp"
+        }
+      ],
+      "alt": "This illustration shows a membrane bilayer with a potassium channel called a proton pump embedded in it. Hydrogen ions flow out of the cell through a proton pump, then back into the cell as part of the sucrose-proton cotransporter. Sucrose flows with the protons from the lower concentration outside the cell to the higher concentration inside the cell, which is against the concentration gradient.",
+      "caption": "Proton Gradient provides energy for a secondary active transporter. The proton pump creates an electrochemical gradient of protons (hydrogen ions, H+) using ATP to drive primary active transport. This gradient allows for cotransport/secondary transport of sucrose against its concentration gradient as protons come down their concentration gradient via their membrane cotransporter protein. Credit: Rao, A. Tag, A. and Ryan, K. Department of Biology, Texas A&M University."
     }
   }
 }

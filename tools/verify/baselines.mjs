@@ -1,19 +1,21 @@
 /**
  * The published quality baselines and how to rewrite them.
  *
- * Three numbers about this corpus are published in a place a corpus walk
+ * Four numbers about this corpus are published in a place a corpus walk
  * cannot reach on its own, all wired into package.json scripts: the
  * verified-answers floor (`--min-verified N`), the replayed-spans floor
- * (`--min-replayed N`), and the answer-ledger floor (`--min-exercises N`).
+ * (`--min-replayed N`), the answer-ledger floor (`--min-exercises N`), and
+ * the source-key cross-check baseline (`--min-confirmed N`).
  * The gates that CHECK them live with the tools that compute them
- * (`verify-answers`, `verify-replay`, `answer-ledger check`); this module is
+ * (`verify-answers`, `verify-replay`, `answer-ledger check`,
+ * `verify-source-keys`); this module is
  * the one place that knows where each number is WRITTEN, so the checkers and
  * the rewriter (`tools/verify/update-baselines.mjs`) can never disagree about what
  * they point at.
  *
- * The baselines ratchet differently, on purpose. `--min-verified` is an EXACT
- * match: the cross-check's job is to read a known set of fill-ins, so a move
- * in either direction is news. `--min-replayed` and `--min-exercises` are
+ * The baselines ratchet differently, on purpose. `--min-verified` and
+ * `--min-confirmed` are EXACT matches: each cross-check's job is to read a
+ * known set of answers, so a move in either direction is news. `--min-replayed` and `--min-exercises` are
  * FLOORS: both counts rise with ordinary authoring (spans with any form
  * predicate that admits more spellings, exercises with every new section),
  * and only a DROP means a gate has gone quiet on part of the corpus. An
@@ -75,6 +77,20 @@ export function applyMinExercises(packageJsonText, exercises) {
   return packageJsonText.replace(MIN_EXERCISES_RE, `--min-exercises ${exercises}`);
 }
 
+/** The wired source-key cross-check baseline in package.json. */
+export const MIN_CONFIRMED_RE = /--min-confirmed (\d+)/;
+
+export function readMinConfirmed(packageJsonText) {
+  const match = packageJsonText.match(MIN_CONFIRMED_RE);
+  if (!match) throw new Error('package.json no longer carries a --min-confirmed baseline');
+  return Number(match[1]);
+}
+
+export function applyMinConfirmed(packageJsonText, confirmed) {
+  readMinConfirmed(packageJsonText); // throw before touching anything
+  return packageJsonText.replace(MIN_CONFIRMED_RE, `--min-confirmed ${confirmed}`);
+}
+
 /**
  * The lines each tool prints its count on, and the pattern that reads it.
  * Both tools print ONLY on their success path, so a failed run has no number
@@ -118,6 +134,17 @@ export const BASELINE_SOURCES = Object.freeze([
     apply: applyMinExercises,
     fell: 'unique exercise count fell',
     why: 'That is extraction reading less of the corpus than it used to, or content being removed.',
+  },
+  {
+    name: '--min-confirmed',
+    label: 'verify-source-keys',
+    tool: 'tools/verify/verify-source-keys.mjs',
+    pattern: /source-key cross-check: (\d+) keyed answers confirmed against the pinned CNXML/,
+    literal: 'keyed answers confirmed against the pinned CNXML',
+    read: readMinConfirmed,
+    apply: applyMinConfirmed,
+    fell: 'confirmed source-key count fell',
+    why: 'That is the source cross-check matching fewer page items to their pinned modules, not growth.',
   },
 ]);
 

@@ -202,6 +202,13 @@ export function descendants(node, predicate, { prune = () => false } = {}) {
 
 export function normalizeText(value) {
   return decodeXmlEntities(String(value || ''))
+    // A Unicode sub/superscript digit (CO₂, G₀, 10⁻⁷) becomes its own token,
+    // the way a source <sub>/<sup> element does once its tags are stripped,
+    // so a page heading "Acetyl CoA to CO₂" matches the source's "CO<sub>2</sub>".
+    .replace(/[\u2080-\u2089\u2070\u00B9\u00B2\u00B3\u2074-\u2079]/g, (digit) => ` ${digit.normalize('NFKC')}`)
+    // The source writes the increment operator (U+2206 ∆) where the page
+    // writes the Greek capital delta (U+0394 Δ); the two are the same "ΔG".
+    .replace(/\u2206/g, '\u0394')
     .normalize('NFKC')
     .toLocaleLowerCase('en-US')
     .replace(/[−–—]/g, '-')

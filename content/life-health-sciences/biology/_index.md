@@ -42,14 +42,32 @@ closes with how plants and animals are built and how ecosystems work.
   structures and roles of carbohydrates, lipids, proteins, and nucleic
   acids.
 
+### Unit 2: The Cell
+
+- **Cell Structure** — how cells are studied, prokaryotic and eukaryotic
+  cells, the organelles and endomembrane system, the cytoskeleton, and the
+  junctions that connect cells.
+- **Structure and Function of Plasma Membranes** — the fluid mosaic model,
+  passive transport (diffusion, osmosis, tonicity), active transport, and
+  bulk transport.
+- **Metabolism** — energy and metabolic pathways, kinetic, potential, free,
+  and activation energy, the laws of thermodynamics, ATP, and enzymes.
+- **Cellular Respiration** — electron carriers, glycolysis, pyruvate
+  oxidation and the citric acid cycle, oxidative phosphorylation,
+  fermentation, the connections between metabolic pathways, and how
+  respiration is regulated.
+- **Photosynthesis** — an overview, the light-dependent reactions, and the
+  Calvin cycle.
+- **Cell Communication** — signaling molecules and receptors, how a signal
+  propagates and is responded to, and signaling in single-celled organisms.
+- **Cell Reproduction** — chromosomes and genomes, the cell cycle and its
+  control, cancer, and binary fission.
+
 ## Planned contents
 
 Biology 2e has eight units and 47 chapters. Beyond the chapters listed
 above, the following are still to come, in this order:
 
-- **Unit 2: The Cell** — Cell Structure; Structure and Function of Plasma
-  Membranes; Metabolism; Cellular Respiration; Photosynthesis; Cell
-  Communication; Cell Reproduction.
 - **Unit 3: Genetics** — Meiosis and Sexual Reproduction; Mendel's
   Experiments and Heredity; Modern Understandings of Inheritance; DNA
   Structure and Function; Genes and Proteins; Gene Expression; Biotechnology

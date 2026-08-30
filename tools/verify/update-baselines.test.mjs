@@ -2,9 +2,9 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import {
-  BASELINE_SOURCES, MIN_EXERCISES_RE, MIN_REPLAYED_RE, MIN_VERIFIED_RE,
-  applyMinExercises, applyMinReplayed, applyMinVerified,
-  planBaselineUpdate, readMinExercises, readMinReplayed, readMinVerified,
+  BASELINE_SOURCES, MIN_CONFIRMED_RE, MIN_EXERCISES_RE, MIN_REPLAYED_RE, MIN_VERIFIED_RE,
+  applyMinConfirmed, applyMinExercises, applyMinReplayed, applyMinVerified,
+  planBaselineUpdate, readMinConfirmed, readMinExercises, readMinReplayed, readMinVerified,
 } from './baselines.mjs';
 
 const read = (name) => readFileSync(new URL(`../../${name}`, import.meta.url), 'utf8');
@@ -14,8 +14,11 @@ const read = (name) => readFileSync(new URL(`../../${name}`, import.meta.url), '
 const VERIFIED_FIXTURE = '"verify:answers": "node tools/verify/verify-answers.mjs content --min-verified 2587",';
 const REPLAYED_FIXTURE = '"verify:replay": "node tools/verify/verify-replay.mjs content --min-replayed 5997",';
 const LEDGER_FIXTURE = '"verify:ledger": "node tools/verify/answer-ledger.mjs check content --min-exercises 6806 --max-unverifiable 0",';
-const ALL_FIXTURE = `${VERIFIED_FIXTURE}\n  ${REPLAYED_FIXTURE}\n  ${LEDGER_FIXTURE}`;
-const CURRENT = { '--min-verified': 2587, '--min-replayed': 5997, '--min-exercises': 6806 };
+const CONFIRMED_FIXTURE = '"verify:source-keys": "node tools/verify/verify-source-keys.mjs content --min-confirmed 455",';
+const ALL_FIXTURE = `${VERIFIED_FIXTURE}\n  ${REPLAYED_FIXTURE}\n  ${LEDGER_FIXTURE}\n  ${CONFIRMED_FIXTURE}`;
+const CURRENT = {
+  '--min-verified': 2587, '--min-replayed': 5997, '--min-exercises': 6806, '--min-confirmed': 455,
+};
 
 test('the min-verified floor reads and rewrites', () => {
   assert.equal(readMinVerified(VERIFIED_FIXTURE), 2587);
@@ -41,6 +44,13 @@ test('the min-exercises floor reads and rewrites, leaving the ceiling alone', ()
   assert.match(next, /--max-unverifiable 0/);
 });
 
+test('the min-confirmed baseline reads and rewrites', () => {
+  assert.equal(readMinConfirmed(CONFIRMED_FIXTURE), 455);
+  const next = applyMinConfirmed(CONFIRMED_FIXTURE, 512);
+  assert.match(next, /--min-confirmed 512/);
+  assert.doesNotMatch(next, /455/);
+});
+
 test('a rephrased script line fails loud instead of being skipped', () => {
   assert.throws(
     () => applyMinVerified('"verify:answers": "node tools/verify/verify-answers.mjs content"', 1),
@@ -54,6 +64,10 @@ test('a rephrased script line fails loud instead of being skipped', () => {
     () => applyMinExercises('"verify:ledger": "node tools/verify/answer-ledger.mjs check content"', 1),
     /no longer carries/,
   );
+  assert.throws(
+    () => applyMinConfirmed('"verify:source-keys": "node tools/verify/verify-source-keys.mjs content"', 1),
+    /no longer carries/,
+  );
 });
 
 test('the live package.json still matches every shared pattern', () => {
@@ -63,6 +77,7 @@ test('the live package.json still matches every shared pattern', () => {
   assert.ok(MIN_VERIFIED_RE.test(text), 'package.json still matches its verified-answers pattern');
   assert.ok(MIN_REPLAYED_RE.test(text), 'package.json still matches its replay pattern');
   assert.ok(MIN_EXERCISES_RE.test(text), 'package.json still matches its answer-ledger pattern');
+  assert.ok(MIN_CONFIRMED_RE.test(text), 'package.json still matches its source-key pattern');
 });
 
 // ---- the guards, decided from text and numbers alone -----------------------
@@ -87,12 +102,13 @@ test('an update plan considers every baseline, not just the first', async (t) =>
 
   await t.test('all moved baselines are rewritten in one pass', () => {
     const plan = planBaselineUpdate(ALL_FIXTURE, {
-      '--min-verified': 2701, '--min-replayed': 6100, '--min-exercises': 6900,
+      '--min-verified': 2701, '--min-replayed': 6100, '--min-exercises': 6900, '--min-confirmed': 512,
     });
-    assert.equal(plan.moved.length, 3);
+    assert.equal(plan.moved.length, 4);
     assert.match(plan.rewritten, /--min-verified 2701/);
     assert.match(plan.rewritten, /--min-replayed 6100/);
     assert.match(plan.rewritten, /--min-exercises 6900/);
+    assert.match(plan.rewritten, /--min-confirmed 512/);
   });
 
   await t.test('each drop is reported on its own, in any baseline', () => {
@@ -101,9 +117,9 @@ test('an update plan considers every baseline, not just the first', async (t) =>
     const ledgerFell = planBaselineUpdate(ALL_FIXTURE, { ...CURRENT, '--min-exercises': 6500 });
     assert.deepEqual(ledgerFell.dropped.map((b) => b.name), ['--min-exercises']);
     const allFell = planBaselineUpdate(ALL_FIXTURE, {
-      '--min-verified': 2500, '--min-replayed': 5000, '--min-exercises': 6500,
+      '--min-verified': 2500, '--min-replayed': 5000, '--min-exercises': 6500, '--min-confirmed': 400,
     });
-    assert.equal(allFell.dropped.length, 3, 'a legitimate drop in one is not permission to lose another');
+    assert.equal(allFell.dropped.length, 4, 'a legitimate drop in one is not permission to lose another');
   });
 
   await t.test('a missing measurement is an error, never a silent zero', () => {
@@ -111,6 +127,9 @@ test('an update plan considers every baseline, not just the first', async (t) =>
       /no measurement supplied for --min-replayed/);
     assert.throws(() => planBaselineUpdate(ALL_FIXTURE, { '--min-verified': 2587, '--min-replayed': 5997 }),
       /no measurement supplied for --min-exercises/);
+    assert.throws(() => planBaselineUpdate(ALL_FIXTURE, {
+      '--min-verified': 2587, '--min-replayed': 5997, '--min-exercises': 6806,
+    }), /no measurement supplied for --min-confirmed/);
   });
 });
 
@@ -123,6 +142,7 @@ test('each baseline pattern matches the line its tool actually prints', async (t
     '--min-verified': '✓ answer cross-check: 2988/6016 fill-ins mathematically verified (re-expression 2111); 3028 out of scope; 0 failure(s)',
     '--min-replayed': '✓ question-math replay: 5997 scalar printed spans replayed across 268 files (source + normalized spellings), none accepted (59 recorded sound coincidences)',
     '--min-exercises': '✓ answer ledger: 6806 unique exercises, every one carries a verification record (6806 independently re-derived, 0 unverifiable from the exercise text alone)',
+    '--min-confirmed': '✓ source-key cross-check: 455 keyed answers confirmed against the pinned CNXML across 318 mapped sections (multiplechoice 166, textin 143, selfcheck 146); 5 disclosed correction(s); 548 unmatched to any source exercise; 371 prose-keyed; 0 failure(s)',
   };
   for (const source of BASELINE_SOURCES) {
     await t.test(source.label, () => {

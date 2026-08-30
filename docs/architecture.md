@@ -52,7 +52,7 @@ advertising, or learner-data store.
 
 The completed Prealgebra 2e, Elementary Algebra 2e, and Intermediate Algebra
 2e books remain reviewed Markdown, not generated output. A committed lock and
-284-section map under `data/openstax/` connect each page to a stable CNXML
+318-section map under `data/openstax/` connect each page to a stable CNXML
 module in the official OpenStax source repository. The upstream checkout is a
 sparse, ignored cache under `sources/openstax/`.
 
@@ -66,7 +66,7 @@ verification gates. See `docs/source/openstax-source-workflow.md`.
 The lock is bundle-keyed and each book carries its own `contentPath`, so the
 pipeline is not specific to `content/math`: Biology 2e is pinned at
 `biology-bundle` with `contentPath: "content/life-health-sciences/biology"`
-and `authoringStatus: "in-progress"` (unit 1 authored) — its collection
+and `authoringStatus: "in-progress"` (units 1–2 authored) — its collection
 (which nests unit, chapter, and module) is mapped chapter by chapter as
 authoring proceeds, and
 `build-map`/`verify-map` state the book's local/upstream counts on every
@@ -152,7 +152,9 @@ that the generated bundle loads and that representative content is indexed.
 validates the complete content hierarchy and frontmatter, verifies every
 authored page through the real answer grader and KaTeX, checks shortcode and
 graph configuration, re-derives every mechanically checkable fill-in answer
-from its own printed question (`verify:answers`), asserts that every exercise
+from its own printed question (`verify:answers`), compares every prose-book
+key, textin answer, and self-check model answer to the pinned CNXML's own
+solution and glossary (`verify:source-keys`), asserts that every exercise
 carries a current answer-ledger record (`verify:ledger`), and enforces the
 current documentation and authoring rules. It also verifies the committed
 OpenStax map's integrity offline; it does not fetch upstream or run

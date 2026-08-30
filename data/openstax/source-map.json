@@ -58,8 +58,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 47,
       "upstreamSections": 208,
-      "localChapters": 3,
-      "mappedSections": 10,
+      "localChapters": 10,
+      "mappedSections": 44,
       "units": [
         {
           "index": 1,
@@ -249,6 +249,312 @@
       "moduleId": "m66443",
       "sourceTitle": "Nucleic Acids",
       "moduleSha256": "158d2f849951a3ded531574f05e66bc32545ff1379398f6789affe01ee42d6ab"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/04-cell-structure/01-studying-cells.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "4.1",
+      "moduleId": "m66445",
+      "sourceTitle": "Studying Cells",
+      "moduleSha256": "1baa3714a0bc2a388d7877862ee95a69f46c0eeb1276c237d1d6fa906c6e79b2"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/04-cell-structure/02-prokaryotic-cells.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "4.2",
+      "moduleId": "m66446",
+      "sourceTitle": "Prokaryotic Cells",
+      "moduleSha256": "7e5a5108333172c1f18609309851e8ca920caefabdc0e549743ea6e07b45924a"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/04-cell-structure/03-eukaryotic-cells.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "4.3",
+      "moduleId": "m66449",
+      "sourceTitle": "Eukaryotic Cells",
+      "moduleSha256": "0df884f0905d2bc0deaa565b6926bab58c410ea6105fb4aa2d3459f259ae237d"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/04-cell-structure/04-the-endomembrane-system-and-proteins.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "4.4",
+      "moduleId": "m66452",
+      "sourceTitle": "The Endomembrane System and Proteins",
+      "moduleSha256": "c60057c901782de98eedc4b397c222d5a3b71a4e60a44195ab7d0af7d5824191"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/04-cell-structure/05-the-cytoskeleton.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "4.5",
+      "moduleId": "m66454",
+      "sourceTitle": "The Cytoskeleton",
+      "moduleSha256": "feba3c3ee0e6b5359895c78f7d08d7b665b271baad9b58614a60fbb23821c5f1"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/04-cell-structure/06-connections-between-cells-and-cellular-activities.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "4.6",
+      "moduleId": "m66455",
+      "sourceTitle": "Connections between Cells and Cellular Activities",
+      "moduleSha256": "a9634c50a5e7a55a88c1e5dd5a3a652b402b95ca1b858e06949b9c09b4f0e7dc"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/01-components-and-structure.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "5.1",
+      "moduleId": "m66373",
+      "sourceTitle": "Components and Structure",
+      "moduleSha256": "bbf02c6bbb488c9a789eb6590edd8de80372eb1a7f5357d0dd6faee5ce9889fc"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/02-passive-transport.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "5.2",
+      "moduleId": "m66374",
+      "sourceTitle": "Passive Transport",
+      "moduleSha256": "21b049d387c1316c854e307d0eaeef30699af25852a52a7aab217178a285f308"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/03-active-transport.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "5.3",
+      "moduleId": "m66375",
+      "sourceTitle": "Active Transport",
+      "moduleSha256": "782896685da398ebc600cf9578e34ac2314795507dcfa1d2dd8f1c68d7c10bce"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/04-bulk-transport.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "5.4",
+      "moduleId": "m66376",
+      "sourceTitle": "Bulk Transport",
+      "moduleSha256": "e2e5f807d007e3478442b74ada00241f167cb2315123c7d843cca7d222908f09"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/06-metabolism/01-energy-and-metabolism.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "6.1",
+      "moduleId": "m66457",
+      "sourceTitle": "Energy and Metabolism",
+      "moduleSha256": "4057d62610b6f65482efaa14c6f96dc9a36279798ab96c443dd7f327ff530b0b"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/06-metabolism/02-potential-kinetic-free-and-activation-energy.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "6.2",
+      "moduleId": "m66459",
+      "sourceTitle": "Potential, Kinetic, Free, and Activation Energy",
+      "moduleSha256": "e9584eaa75e7149c38c8f4359b5c6006f9dc4a9e05c08b2ce372c27b08f798b2"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/06-metabolism/03-the-laws-of-thermodynamics.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "6.3",
+      "moduleId": "m66461",
+      "sourceTitle": "The Laws of Thermodynamics",
+      "moduleSha256": "4b46064564c69dbdb16a8652e6415bd568d0855aad1d32ae3e8f696ffb2d9da4"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/06-metabolism/04-atp-adenosine-triphosphate.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "6.4",
+      "moduleId": "m66462",
+      "sourceTitle": "ATP: Adenosine Triphosphate",
+      "moduleSha256": "20bec814db512250387bb87ae1bff82675effad961bffe1ad767af37ee70c369"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/06-metabolism/05-enzymes.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "6.5",
+      "moduleId": "m66463",
+      "sourceTitle": "Enzymes",
+      "moduleSha256": "fd61085b93b06bdd253c2d5e967f7139a16f92a222edef2e6365a2624ee72c2f"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/07-cellular-respiration/01-energy-in-living-systems.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "7.1",
+      "moduleId": "m66465",
+      "sourceTitle": "Energy in Living Systems",
+      "moduleSha256": "c03c7a68c2814536822d1667f2fe61505eda4bbf0a00ad2cd0af627fdea612d8"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/07-cellular-respiration/02-glycolysis.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "7.2",
+      "moduleId": "m66466",
+      "sourceTitle": "Glycolysis",
+      "moduleSha256": "487f6a82d2fa4c49be4033833cac7f8600bba74581064e4c612cbad4180ec870"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/07-cellular-respiration/03-oxidation-of-pyruvate-and-the-citric-acid-cycle.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "7.3",
+      "moduleId": "m66467",
+      "sourceTitle": "Oxidation of Pyruvate and the Citric Acid Cycle",
+      "moduleSha256": "902982133a4356c99b52af1a708b24af52deb16be3fe1274603ea14953c791ad"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/07-cellular-respiration/04-oxidative-phosphorylation.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "7.4",
+      "moduleId": "m66468",
+      "sourceTitle": "Oxidative Phosphorylation",
+      "moduleSha256": "9d7d2e1dea3e48701a17953b067c4fe3ab8efa98bf6ff16aa131ee160f1bb817"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/07-cellular-respiration/05-metabolism-without-oxygen.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "7.5",
+      "moduleId": "m66469",
+      "sourceTitle": "Metabolism without Oxygen",
+      "moduleSha256": "737b003da21767b52c0d264bdefd2eaaf15ab060f9b3ca078676f943b09e025d"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/07-cellular-respiration/06-connections-of-carbohydrate-protein-and-lipid-metabolic-pathways.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "7.6",
+      "moduleId": "m66470",
+      "sourceTitle": "Connections of Carbohydrate, Protein, and Lipid Metabolic Pathways",
+      "moduleSha256": "aaf1dee0d8d27353af578b991a32c56ff4f82ea0a1838d2039c02ac679a06870"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/07-cellular-respiration/07-regulation-of-cellular-respiration.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "7.7",
+      "moduleId": "m66471",
+      "sourceTitle": "Regulation of Cellular Respiration",
+      "moduleSha256": "a6dfc91bd6a779fd21d9a0aaafac0d962da2614b31a41a241ee421d4a751cb60"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/08-photosynthesis/01-overview-of-photosynthesis.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "8.1",
+      "moduleId": "m66473",
+      "sourceTitle": "Overview of Photosynthesis",
+      "moduleSha256": "5755431c72cfe48d65189a6153e244ab2e0936bca7b10f3cbb80909118631e1c"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/08-photosynthesis/02-the-light-dependent-reactions-of-photosynthesis.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "8.2",
+      "moduleId": "m66474",
+      "sourceTitle": "The Light-Dependent Reactions of Photosynthesis",
+      "moduleSha256": "37d57d881f9635b54f4143e846be06ce5e5a77e75813795b68b7a18b1cfbb36e"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/08-photosynthesis/03-using-light-energy-to-make-organic-molecules.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "8.3",
+      "moduleId": "m66475",
+      "sourceTitle": "Using Light Energy to Make Organic Molecules",
+      "moduleSha256": "b75d55472ed2b8c74f141cd9ae4b754b974e9900dcbab82d97a8aeb189b196b9"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/09-cell-communication/01-signaling-molecules-and-cellular-receptors.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "9.1",
+      "moduleId": "m66378",
+      "sourceTitle": "Signaling Molecules and Cellular Receptors",
+      "moduleSha256": "52a42d97f3eaa44bff1a6c9717dcba3307a672e0e12dd5a38b7f29f15a50db65"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/09-cell-communication/02-propagation-of-the-signal.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "9.2",
+      "moduleId": "m66379",
+      "sourceTitle": "Propagation of the Signal",
+      "moduleSha256": "04431ab852d559ae839ef0d59a195bf656bf96f9cf31475335f5ede90ed81312"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/09-cell-communication/03-response-to-the-signal.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "9.3",
+      "moduleId": "m66380",
+      "sourceTitle": "Response to the Signal",
+      "moduleSha256": "00f29d2331b6fc8dd715ec2c4e08a7ed0e7aa5b65c4740c66e7ec6705504630e"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/09-cell-communication/04-signaling-in-single-celled-organisms.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "9.4",
+      "moduleId": "m66383",
+      "sourceTitle": "Signaling in Single-Celled Organisms",
+      "moduleSha256": "f13bff637b0ca51036fd51d947a580a5b9a4b7405f3f6beeac63da51fa4f806f"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/10-cell-reproduction/01-cell-division.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "10.1",
+      "moduleId": "m66477",
+      "sourceTitle": "Cell Division",
+      "moduleSha256": "f50c5b46cfb55054714df2472af2050a276fe96682a998bb86d24a1d6793b8e1"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/10-cell-reproduction/02-the-cell-cycle.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "10.2",
+      "moduleId": "m66478",
+      "sourceTitle": "The Cell Cycle",
+      "moduleSha256": "bc75a85ec9c2d8320b18fab8aa2f95417971a410cdb0284d65ffb6e148accf61"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/10-cell-reproduction/03-control-of-the-cell-cycle.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "10.3",
+      "moduleId": "m66479",
+      "sourceTitle": "Control of the Cell Cycle",
+      "moduleSha256": "a0d5fa65df98f40a82b2b22bf1549b3856267aa205cf2997973cd3f17b27adeb"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/10-cell-reproduction/04-cancer-and-the-cell-cycle.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "10.4",
+      "moduleId": "m66480",
+      "sourceTitle": "Cancer and the Cell Cycle",
+      "moduleSha256": "e13ebe1ae17d358032ecc38f6ccd05c7d1f18974b4422b0025bbf806187ee89b"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/10-cell-reproduction/05-prokaryotic-cell-division.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "10.5",
+      "moduleId": "m66481",
+      "sourceTitle": "Prokaryotic Cell Division",
+      "moduleSha256": "4acaeeb28d72ca2748c00a2cdc190ec3625ecf2187b417a013a092f23eeb1250"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

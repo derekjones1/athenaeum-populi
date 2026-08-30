@@ -53,6 +53,11 @@ export const LEDGER_PATH = 'data/verification/answer-ledger.json';
  */
 export const EXERCISE_KINDS = Object.freeze(['fillin', 'multiplechoice', 'graphplot', 'textin', 'selfcheck']);
 
+/** The kinds `solve-check.mjs` hands to the orchestrator, and the results a
+ * `solved` field may carry. */
+export const SOLVED_KINDS = new Set(['multiplechoice', 'textin']);
+export const SOLVED_RESULTS = new Set(['agrees', 'adjudicated']);
+
 /**
  * Exercise identity. Whitespace runs collapse to one space so that reflowing
  * a shortcode across lines is not a semantic change; everything else — every
@@ -100,7 +105,7 @@ export function readLedger(path = LEDGER_PATH) {
 
 function usage(detail) {
   console.error(`answer-ledger: ${detail}`);
-  console.error('usage: node tools/verify/answer-ledger.mjs <check|list|merge|prune|stats> [root|resultsDir] [--kind k] [--verdict v] [--unverified] [--shard i/n] [--context N] [--min-exercises N] [--max-unverifiable N] [--ledger path]');
+  console.error('usage: node tools/verify/answer-ledger.mjs <check|list|merge|prune|stats> [root|resultsDir] [--kind k] [--verdict v] [--unverified] [--shard i/n] [--context N] [--min-exercises N] [--max-unverifiable N] [--require-solved prefix[,prefix]] [--ledger path]');
   process.exit(2);
 }
 
@@ -109,7 +114,7 @@ function main() {
   try {
     cli = parseLedgerArgs(process.argv.slice(2), {
       commands: ['check', 'list', 'merge', 'prune', 'stats'],
-      valueFlags: ['kind', 'verdict', 'shard', 'context', 'min-exercises', 'max-unverifiable'],
+      valueFlags: ['kind', 'verdict', 'shard', 'context', 'min-exercises', 'max-unverifiable', 'require-solved'],
       boolFlags: ['unverified'],
     });
   } catch (error) {
@@ -130,11 +135,19 @@ function main() {
       // same refusal the conversion ledger already gave — one merge contract,
       // in one place, for both queues.
       validate: (record) => (!record.hash ? 'missing hash'
-        : !record.verdict ? 'missing verdict' : null),
+        : !record.verdict ? 'missing verdict'
+          : record.solved && !SOLVED_RESULTS.has(record.solved.result) ? 'solved.result must be agrees or adjudicated'
+            : record.solved && record.solved.result === 'adjudicated' && !record.solved.note ? 'an adjudicated solve needs a note'
+              : null),
       decisionOf: (record) => record.verdict,
-      toRecord: (record) => (record.note
-        ? { verdict: record.verdict, note: record.note }
-        : { verdict: record.verdict }),
+      // `solved` is the orchestrator's own answer to the question (see
+      // solve-check.mjs); it rides along with the verdict so a re-read that
+      // does not repeat the solve keeps the record of it.
+      toRecord: (record) => ({
+        verdict: record.verdict,
+        ...(record.note ? { note: record.note } : {}),
+        ...(record.solved ? { solved: record.solved } : {}),
+      }),
     });
     return;
   }
@@ -198,6 +211,15 @@ function main() {
   for (const e of exercises) if (!unique.has(e.hash)) unique.set(e.hash, e);
   const missing = [...unique.values()].filter((e) => !ledger.entries[e.hash]);
   const defects = [...unique.values()].filter((e) => ledger.entries[e.hash]?.verdict === 'defect');
+  // `--require-solved prefix[,prefix]`: every multiplechoice/textin under a
+  // prefix must carry the orchestrator's `solved` result. A prose book's
+  // questions have no arithmetic to re-derive, so the solve IS the third
+  // reading, and a section cannot go green without it.
+  const solvedPrefixes = (flag('require-solved') ?? '').split(',').map((p) => p.trim()).filter(Boolean);
+  const unsolved = [...unique.values()].filter((e) => SOLVED_KINDS.has(e.kind)
+    && solvedPrefixes.some((prefix) => e.path.startsWith(prefix))
+    && !ledger.entries[e.hash]?.solved);
+  const solvedCount = [...unique.values()].filter((e) => ledger.entries[e.hash]?.solved).length;
 
   if (command === 'stats') {
     const byKind = {};
@@ -235,6 +257,10 @@ function main() {
   if (defects.length) {
     const sample = defects.slice(0, 5).map((e) => `${e.path}:${e.line} — ${ledger.entries[e.hash].note ?? 'recorded defect'}`);
     problems.push(`${defects.length} exercise(s) are recorded as DEFECTIVE and still shipped:\n    ${sample.join('\n    ')}`);
+  }
+  if (unsolved.length) {
+    const sample = unsolved.slice(0, 5).map((e) => `${e.path}:${e.line} (${e.kind}, ${e.hash})`);
+    problems.push(`${unsolved.length} exercise(s) under ${solvedPrefixes.join(', ')} have no orchestrator solve (see tools/verify/solve-check.mjs):\n    ${sample.join('\n    ')}${unsolved.length > 5 ? `\n    …and ${unsolved.length - 5} more` : ''}`);
   }
   if (problems.length) {
     console.error(`✖ answer ledger: ${problems.join('\n  ')}`);

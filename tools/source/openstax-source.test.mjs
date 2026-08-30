@@ -15,6 +15,7 @@ import {
   parseModuleXml,
   parseXml,
   verifyCommittedSourceMap,
+  normalizeText,
 } from '../lib/openstax-source.mjs';
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -207,17 +208,17 @@ test('formatTriesCoverage reports n/a rather than 0/0 for a book with no note.tr
   assert.equal(formatTriesCoverage(3, 5), '3/5');
 });
 
-test('committed provenance maps all 284 local sections exactly once', () => {
+test('committed provenance maps all 318 local sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 284);
-  assert.equal(result.actualCount, 284);
+  assert.equal(result.expectedCount, 318);
+  assert.equal(result.actualCount, 318);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
   assert.equal(counts['intermediate-algebra'].length, 70);
   assert.equal(counts.precalculus.length, 73);
-  assert.equal(counts.biology.length, 10);
+  assert.equal(counts.biology.length, 44);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
@@ -261,8 +262,8 @@ test('the Biology book is pinned and in progress, its local landings and mapped 
     authoringStatus: 'in-progress',
     upstreamChapters: 47,
     upstreamSections: 208,
-    localChapters: 3,
-    mappedSections: 10,
+    localChapters: 10,
+    mappedSections: 44,
     // The source's unit → chapter grouping, recorded so the sidebar can nest
     // chapters under their unit and so the grouping cannot drift from the
     // pinned collection. Every chapter 1–47 in exactly one unit.
@@ -391,4 +392,11 @@ test('a local section exposes its objectives list for the audit parity check', (
     'Prose.',
   ].join('\n'));
   assert.deepEqual(prose.objectives, [], 'prose objectives are not silently split into items');
+});
+
+test('normalizeText tokenizes a Unicode sub/superscript digit the way a stripped <sub>/<sup> element reads', () => {
+  assert.equal(normalizeText('Acetyl CoA to CO₂'), normalizeText('Acetyl CoA to CO 2'));
+  assert.equal(normalizeText('G₀ Phase'), normalizeText('G 0 Phase'));
+  assert.equal(normalizeText('10⁻⁷'), normalizeText('10 - 7'));
+  assert.notEqual(normalizeText('CO₂'), normalizeText('CO'));
 });

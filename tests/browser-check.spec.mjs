@@ -1130,19 +1130,33 @@ test('the biology sidebar nests chapters under their unit, and a math sidebar st
   // desktop list — so one unit appears twice; only the desktop copy is
   // visible at this viewport.
   const units = page.locator('aside .ap-sidebar-unit');
-  await expect(units).toHaveCount(2);
+  await expect(units).toHaveCount(4);
   const visible = page.locator('aside .ap-sidebar-unit:visible');
-  await expect(visible).toHaveCount(1);
-  await expect(visible.locator('> .ap-sidebar-unit-label')).toHaveText('Unit 1: The Chemistry of Life');
-  // The unit's own list holds exactly the authored chapters of that unit, in
-  // source order, and every chapter or section link in the book sits inside
-  // a unit — in both copies.
-  const chapterTitles = await visible.locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
-  expect(chapterTitles).toEqual(['The Study of Life', 'The Chemical Foundation of Life', 'Biological Macromolecules']);
-  const bookLinks = page.locator('aside a[href^="/life-health-sciences/biology/0"]');
-  const insideUnit = page.locator('aside .ap-sidebar-unit a[href^="/life-health-sciences/biology/0"]');
-  expect(await bookLinks.count()).toBe(26);
-  expect(await insideUnit.count()).toBe(26);
+  await expect(visible).toHaveCount(2);
+  await expect(visible.locator('> .ap-sidebar-unit-label')).toHaveText([
+    'Unit 1: The Chemistry of Life',
+    'Unit 2: The Cell',
+  ]);
+  // Each unit's own list holds exactly the authored chapters of that unit,
+  // in source order, and every chapter or section link in the book sits
+  // inside a unit — in both copies.
+  const unit1Titles = await visible.nth(0).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
+  expect(unit1Titles).toEqual(['The Study of Life', 'The Chemical Foundation of Life', 'Biological Macromolecules']);
+  const unit2Titles = await visible.nth(1).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
+  expect(unit2Titles).toEqual([
+    'Cell Structure',
+    'Structure and Function of Plasma Membranes',
+    'Metabolism',
+    'Cellular Respiration',
+    'Photosynthesis',
+    'Cell Communication',
+    'Cell Reproduction',
+  ]);
+  // 10 chapter landings + 44 sections, rendered twice.
+  const bookLinks = page.locator('aside a[href^="/life-health-sciences/biology/"]:not([href="/life-health-sciences/biology/"])');
+  const insideUnit = page.locator('aside .ap-sidebar-unit a[href^="/life-health-sciences/biology/"]');
+  expect(await bookLinks.count()).toBe(108);
+  expect(await insideUnit.count()).toBe(108);
   // The label is text, not a control: nothing to focus, nothing to click.
   await expect(page.locator('aside .ap-sidebar-unit-label a, aside .ap-sidebar-unit-label button')).toHaveCount(0);
 

@@ -14,19 +14,19 @@
 ## Coverage
 
 - Books with mapped sections: 1
-- Numbered sections mapped: 10
-- Metadata matched without a flag: 10
+- Numbered sections mapped: 44
+- Metadata matched without a flag: 44
 - Intentional adaptations adjudicated: 0
 - Unresolved sections needing review: 0
 - Modules differing from the committed map: 0
-- Objectives automatically located: 36/36
-- Core instructional headings automatically located: 43/43
-- Local interactive questions inventoried: 116
+- Objectives automatically located: 129/129
+- Core instructional headings automatically located: 132/132
+- Local interactive questions inventoried: 473
 - Upstream Try It prompts with a likely local prompt match: n/a
 
 | Book | Bundle | Authoring status | Chapters | Sections mapped |
 |---|---|---|---:|---:|
-| biology | `biology-bundle` | in-progress | 3/47 | 10/208 |
+| biology | `biology-bundle` | in-progress | 10/47 | 44/208 |
 
 The prose percentage is five-word source-shingle traceability, not a quality
 score. Low values can reflect disclosed condensation, reformatted mathematics,
@@ -38,11 +38,45 @@ or intentionally omitted print material.
 |---|---|---|---:|---:|---:|---:|---:|
 | [biology 1.1](../../content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md) | `m66427` | metadata matched | 4/4 | 4/4 | 96% | 0/0 | 14 |
 | [biology 1.2](../../content/life-health-sciences/biology/01-the-study-of-life/02-themes-and-concepts-of-biology.md) | `m66428` | metadata matched | 4/4 | 4/4 | 97% | 0/0 | 15 |
-| [biology 2.1](../../content/life-health-sciences/biology/02-the-chemical-foundation-of-life/01-atoms-isotopes-ions-and-molecules-the-building-blocks.md) | `m66430` | metadata matched | 4/4 | 9/9 | 93% | 0/0 | 11 |
-| [biology 2.2](../../content/life-health-sciences/biology/02-the-chemical-foundation-of-life/02-water.md) | `m66434` | metadata matched | 4/4 | 7/7 | 94% | 0/0 | 11 |
-| [biology 2.3](../../content/life-health-sciences/biology/02-the-chemical-foundation-of-life/03-carbon.md) | `m66436` | metadata matched | 2/2 | 4/4 | 94% | 0/0 | 8 |
+| [biology 2.1](../../content/life-health-sciences/biology/02-the-chemical-foundation-of-life/01-atoms-isotopes-ions-and-molecules-the-building-blocks.md) | `m66430` | metadata matched | 4/4 | 9/9 | 94% | 0/0 | 11 |
+| [biology 2.2](../../content/life-health-sciences/biology/02-the-chemical-foundation-of-life/02-water.md) | `m66434` | metadata matched | 4/4 | 7/7 | 95% | 0/0 | 11 |
+| [biology 2.3](../../content/life-health-sciences/biology/02-the-chemical-foundation-of-life/03-carbon.md) | `m66436` | metadata matched | 2/2 | 4/4 | 95% | 0/0 | 8 |
 | [biology 3.1](../../content/life-health-sciences/biology/03-biological-macromolecules/01-synthesis-of-biological-macromolecules.md) | `m66438` | metadata matched | 2/2 | 2/2 | 95% | 0/0 | 8 |
 | [biology 3.2](../../content/life-health-sciences/biology/03-biological-macromolecules/02-carbohydrates.md) | `m66440` | metadata matched | 3/3 | 2/2 | 96% | 0/0 | 13 |
 | [biology 3.3](../../content/life-health-sciences/biology/03-biological-macromolecules/03-lipids.md) | `m66441` | metadata matched | 6/6 | 4/4 | 97% | 0/0 | 14 |
 | [biology 3.4](../../content/life-health-sciences/biology/03-biological-macromolecules/04-proteins.md) | `m66442` | metadata matched | 4/4 | 4/4 | 96% | 0/0 | 13 |
 | [biology 3.5](../../content/life-health-sciences/biology/03-biological-macromolecules/05-nucleic-acids.md) | `m66443` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 9 |
+| [biology 4.1](../../content/life-health-sciences/biology/04-cell-structure/01-studying-cells.md) | `m66445` | metadata matched | 3/3 | 2/2 | 98% | 0/0 | 11 |
+| [biology 4.2](../../content/life-health-sciences/biology/04-cell-structure/02-prokaryotic-cells.md) | `m66446` | metadata matched | 4/4 | 1/1 | 96% | 0/0 | 9 |
+| [biology 4.3](../../content/life-health-sciences/biology/04-cell-structure/03-eukaryotic-cells.md) | `m66449` | metadata matched | 4/4 | 8/8 | 97% | 0/0 | 11 |
+| [biology 4.4](../../content/life-health-sciences/biology/04-cell-structure/04-the-endomembrane-system-and-proteins.md) | `m66452` | metadata matched | 2/2 | 3/3 | 96% | 0/0 | 10 |
+| [biology 4.5](../../content/life-health-sciences/biology/04-cell-structure/05-the-cytoskeleton.md) | `m66454` | metadata matched | 4/4 | 3/3 | 97% | 0/0 | 14 |
+| [biology 4.6](../../content/life-health-sciences/biology/04-cell-structure/06-connections-between-cells-and-cellular-activities.md) | `m66455` | metadata matched | 3/3 | 2/2 | 97% | 0/0 | 11 |
+| [biology 5.1](../../content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/01-components-and-structure.md) | `m66373` | metadata matched | 3/3 | 2/2 | 98% | 0/0 | 10 |
+| [biology 5.2](../../content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/02-passive-transport.md) | `m66374` | metadata matched | 3/3 | 6/6 | 98% | 0/0 | 16 |
+| [biology 5.3](../../content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/03-active-transport.md) | `m66375` | metadata matched | 2/2 | 3/3 | 93% | 0/0 | 16 |
+| [biology 5.4](../../content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/04-bulk-transport.md) | `m66376` | metadata matched | 2/2 | 2/2 | 97% | 0/0 | 9 |
+| [biology 6.1](../../content/life-health-sciences/biology/06-metabolism/01-energy-and-metabolism.md) | `m66457` | metadata matched | 2/2 | 2/2 | 96% | 0/0 | 8 |
+| [biology 6.2](../../content/life-health-sciences/biology/06-metabolism/02-potential-kinetic-free-and-activation-energy.md) | `m66459` | metadata matched | 4/4 | 3/3 | 67% | 0/0 | 14 |
+| [biology 6.3](../../content/life-health-sciences/biology/06-metabolism/03-the-laws-of-thermodynamics.md) | `m66461` | metadata matched | 2/2 | 2/2 | 98% | 0/0 | 7 |
+| [biology 6.4](../../content/life-health-sciences/biology/06-metabolism/04-atp-adenosine-triphosphate.md) | `m66462` | metadata matched | 2/2 | 0/0 | 100% | 0/0 | 7 |
+| [biology 6.5](../../content/life-health-sciences/biology/06-metabolism/05-enzymes.md) | `m66463` | metadata matched | 3/3 | 2/2 | 98% | 0/0 | 11 |
+| [biology 7.1](../../content/life-health-sciences/biology/07-cellular-respiration/01-energy-in-living-systems.md) | `m66465` | metadata matched | 2/2 | 2/2 | 98% | 0/0 | 8 |
+| [biology 7.2](../../content/life-health-sciences/biology/07-cellular-respiration/02-glycolysis.md) | `m66466` | metadata matched | 2/2 | 3/3 | 98% | 0/0 | 5 |
+| [biology 7.3](../../content/life-health-sciences/biology/07-cellular-respiration/03-oxidation-of-pyruvate-and-the-citric-acid-cycle.md) | `m66467` | metadata matched | 2/2 | 3/3 | 99% | 0/0 | 5 |
+| [biology 7.4](../../content/life-health-sciences/biology/07-cellular-respiration/04-oxidative-phosphorylation.md) | `m66468` | metadata matched | 2/2 | 3/3 | 92% | 0/0 | 9 |
+| [biology 7.5](../../content/life-health-sciences/biology/07-cellular-respiration/05-metabolism-without-oxygen.md) | `m66469` | metadata matched | 2/2 | 1/1 | 90% | 0/0 | 6 |
+| [biology 7.6](../../content/life-health-sciences/biology/07-cellular-respiration/06-connections-of-carbohydrate-protein-and-lipid-metabolic-pathways.md) | `m66470` | metadata matched | 2/2 | 3/3 | 99% | 0/0 | 5 |
+| [biology 7.7](../../content/life-health-sciences/biology/07-cellular-respiration/07-regulation-of-cellular-respiration.md) | `m66471` | metadata matched | 2/2 | 2/2 | 97% | 0/0 | 6 |
+| [biology 8.1](../../content/life-health-sciences/biology/08-photosynthesis/01-overview-of-photosynthesis.md) | `m66473` | metadata matched | 3/3 | 3/3 | 94% | 0/0 | 13 |
+| [biology 8.2](../../content/life-health-sciences/biology/08-photosynthesis/02-the-light-dependent-reactions-of-photosynthesis.md) | `m66474` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 15 |
+| [biology 8.3](../../content/life-health-sciences/biology/08-photosynthesis/03-using-light-energy-to-make-organic-molecules.md) | `m66475` | metadata matched | 3/3 | 2/2 | 98% | 0/0 | 15 |
+| [biology 9.1](../../content/life-health-sciences/biology/09-cell-communication/01-signaling-molecules-and-cellular-receptors.md) | `m66378` | metadata matched | 3/3 | 3/3 | 96% | 0/0 | 13 |
+| [biology 9.2](../../content/life-health-sciences/biology/09-cell-communication/02-propagation-of-the-signal.md) | `m66379` | metadata matched | 3/3 | 2/2 | 94% | 0/0 | 10 |
+| [biology 9.3](../../content/life-health-sciences/biology/09-cell-communication/03-response-to-the-signal.md) | `m66380` | metadata matched | 3/3 | 5/5 | 97% | 0/0 | 13 |
+| [biology 9.4](../../content/life-health-sciences/biology/09-cell-communication/04-signaling-in-single-celled-organisms.md) | `m66383` | metadata matched | 2/2 | 2/2 | 95% | 0/0 | 11 |
+| [biology 10.1](../../content/life-health-sciences/biology/10-cell-reproduction/01-cell-division.md) | `m66477` | metadata matched | 3/3 | 2/2 | 99% | 0/0 | 10 |
+| [biology 10.2](../../content/life-health-sciences/biology/10-cell-reproduction/02-the-cell-cycle.md) | `m66478` | metadata matched | 4/4 | 3/3 | 96% | 0/0 | 15 |
+| [biology 10.3](../../content/life-health-sciences/biology/10-cell-reproduction/03-control-of-the-cell-cycle.md) | `m66479` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 12 |
+| [biology 10.4](../../content/life-health-sciences/biology/10-cell-reproduction/04-cancer-and-the-cell-cycle.md) | `m66480` | metadata matched | 4/4 | 2/2 | 94% | 0/0 | 13 |
+| [biology 10.5](../../content/life-health-sciences/biology/10-cell-reproduction/05-prokaryotic-cell-division.md) | `m66481` | metadata matched | 2/2 | 1/1 | 98% | 0/0 | 9 |

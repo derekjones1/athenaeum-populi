@@ -195,3 +195,50 @@ test('merge updates an already-recorded verdict, visibly — that is the re-read
   const ledger = JSON.parse(readFileSync(join(dir, 'data/verification/answer-ledger.json'), 'utf8'));
   assert.equal(ledger.entries.aaaa.verdict, 'ok');
 });
+
+// ---- the orchestrator's solve ---------------------------------------------
+// solve-check.mjs records `solved` on the record; merge must keep it, and
+// `check --require-solved <prefix>` must refuse a graded item under the prefix
+// that has none — a prose section cannot go green until it was answered.
+test('merge keeps a solved result, validates its shape, and --require-solved gates a prefix', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'ledger-'));
+  mkdirSync(join(dir, 'content/life-health-sciences'), { recursive: true });
+  mkdirSync(join(dir, 'content/math'), { recursive: true });
+  mkdirSync(join(dir, 'data/verification'), { recursive: true });
+  writeFileSync(join(dir, 'content/life-health-sciences/a.md'), PAGE);
+  writeFileSync(join(dir, 'content/math/b.md'), PAGE.replace('Which is prime?', 'Which is even?').replace('answer="7"', 'answer="9"'));
+  writeFileSync(join(dir, 'data/verification/answer-ledger.json'), JSON.stringify({ schemaVersion: 1, entries: {} }));
+  const found = extractExercises(join(dir, 'content'));
+  const prose = found.filter((e) => e.path.includes('life-health-sciences'));
+  const math = found.filter((e) => e.path.includes('/math/'));
+
+  // every exercise verified, none solved
+  mkdirSync(join(dir, 'results'));
+  writeFileSync(join(dir, 'results/read.json'), JSON.stringify({ results: found.map((e) => ({ hash: e.hash, verdict: 'ok' })) }));
+  assert.equal(run(dir, ['merge', 'results']).code, 0);
+  assert.equal(run(dir, ['check', 'content']).code, 0, 'without --require-solved the gate is unchanged');
+  const unsolved = run(dir, ['check', 'content', '--require-solved', 'content/life-health-sciences']);
+  assert.equal(unsolved.code, 1);
+  assert.match(unsolved.out, /1 exercise\(s\) under content\/life-health-sciences have no orchestrator solve/);
+
+  // a malformed solve is refused
+  mkdirSync(join(dir, 'bad'));
+  writeFileSync(join(dir, 'bad/solve.json'), JSON.stringify({ results: [
+    { hash: prose[1].hash, verdict: 'ok', solved: { by: 'orchestrator', result: 'adjudicated' } },
+  ] }));
+  const bad = run(dir, ['merge', 'bad']);
+  assert.equal(bad.code, 1);
+  assert.match(bad.out, /an adjudicated solve needs a note/);
+
+  // the solve merges, survives, and satisfies the gate; math needs none
+  mkdirSync(join(dir, 'solved'));
+  writeFileSync(join(dir, 'solved/solve.json'), JSON.stringify({ results: [
+    { hash: prose[1].hash, verdict: 'ok', note: 'kept', solved: { by: 'orchestrator', result: 'agrees' } },
+  ] }));
+  assert.equal(run(dir, ['merge', 'solved']).code, 0);
+  const ledger = JSON.parse(readFileSync(join(dir, 'data/verification/answer-ledger.json'), 'utf8'));
+  assert.deepEqual(ledger.entries[prose[1].hash], { verdict: 'ok', note: 'kept', solved: { by: 'orchestrator', result: 'agrees' } });
+  assert.equal(ledger.entries[math[1].hash].solved, undefined);
+  const solved = run(dir, ['check', 'content', '--require-solved', 'content/life-health-sciences']);
+  assert.equal(solved.code, 0, solved.out);
+});
