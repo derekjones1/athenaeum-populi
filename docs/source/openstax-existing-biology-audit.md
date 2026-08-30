@@ -14,19 +14,19 @@
 ## Coverage
 
 - Books with mapped sections: 1
-- Numbered sections mapped: 2
-- Metadata matched without a flag: 2
+- Numbered sections mapped: 10
+- Metadata matched without a flag: 10
 - Intentional adaptations adjudicated: 0
 - Unresolved sections needing review: 0
 - Modules differing from the committed map: 0
-- Objectives automatically located: 8/8
-- Core instructional headings automatically located: 8/8
-- Local interactive questions inventoried: 29
+- Objectives automatically located: 36/36
+- Core instructional headings automatically located: 43/43
+- Local interactive questions inventoried: 116
 - Upstream Try It prompts with a likely local prompt match: n/a
 
 | Book | Bundle | Authoring status | Chapters | Sections mapped |
 |---|---|---|---:|---:|
-| biology | `biology-bundle` | scaffolded | 1/47 | 2/208 |
+| biology | `biology-bundle` | in-progress | 3/47 | 10/208 |
 
 The prose percentage is five-word source-shingle traceability, not a quality
 score. Low values can reflect disclosed condensation, reformatted mathematics,
@@ -38,3 +38,11 @@ or intentionally omitted print material.
 |---|---|---|---:|---:|---:|---:|---:|
 | [biology 1.1](../../content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md) | `m66427` | metadata matched | 4/4 | 4/4 | 96% | 0/0 | 14 |
 | [biology 1.2](../../content/life-health-sciences/biology/01-the-study-of-life/02-themes-and-concepts-of-biology.md) | `m66428` | metadata matched | 4/4 | 4/4 | 97% | 0/0 | 15 |
+| [biology 2.1](../../content/life-health-sciences/biology/02-the-chemical-foundation-of-life/01-atoms-isotopes-ions-and-molecules-the-building-blocks.md) | `m66430` | metadata matched | 4/4 | 9/9 | 93% | 0/0 | 11 |
+| [biology 2.2](../../content/life-health-sciences/biology/02-the-chemical-foundation-of-life/02-water.md) | `m66434` | metadata matched | 4/4 | 7/7 | 94% | 0/0 | 11 |
+| [biology 2.3](../../content/life-health-sciences/biology/02-the-chemical-foundation-of-life/03-carbon.md) | `m66436` | metadata matched | 2/2 | 4/4 | 94% | 0/0 | 8 |
+| [biology 3.1](../../content/life-health-sciences/biology/03-biological-macromolecules/01-synthesis-of-biological-macromolecules.md) | `m66438` | metadata matched | 2/2 | 2/2 | 95% | 0/0 | 8 |
+| [biology 3.2](../../content/life-health-sciences/biology/03-biological-macromolecules/02-carbohydrates.md) | `m66440` | metadata matched | 3/3 | 2/2 | 96% | 0/0 | 13 |
+| [biology 3.3](../../content/life-health-sciences/biology/03-biological-macromolecules/03-lipids.md) | `m66441` | metadata matched | 6/6 | 4/4 | 97% | 0/0 | 14 |
+| [biology 3.4](../../content/life-health-sciences/biology/03-biological-macromolecules/04-proteins.md) | `m66442` | metadata matched | 4/4 | 4/4 | 96% | 0/0 | 13 |
+| [biology 3.5](../../content/life-health-sciences/biology/03-biological-macromolecules/05-nucleic-acids.md) | `m66443` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 9 |

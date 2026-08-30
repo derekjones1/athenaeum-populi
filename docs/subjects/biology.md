@@ -55,7 +55,37 @@ data/media/biology.json                                             media manife
 upstream section number; `source_chapter` / `source_section` carry the same
 numbers as strings. The cover lists every chapter under `### Unit N: <unit
 title>` headings inside `## Chapters` (the validator collects the bullets
-across those sub-headings). A chapter landing is created when its first
+across those sub-headings).
+
+**The book's structure is the source's structure, for all eight units.**
+Biology 2e groups its 47 chapters into units (Unit 1 *The Chemistry of
+Life* holds chapters 1–3, Unit 2 *The Cell* holds chapters 4–10, and so on
+through Unit 8 *Ecology*), and the site keeps exactly that grouping: each
+unit is a `### Unit N: <title>` heading on the cover, in source order and
+with the source's title, and its chapters are the bullets beneath it, in
+source order, with the source's chapter titles. Chapters are never
+regrouped, merged, split, renamed, or renumbered, sections keep their
+upstream `C.S` numbers, and a chapter moves from the cover's "Planned
+contents" list to its unit heading only when its landing exists. As unit 1
+is authored the cover looks like `### Unit 1: The Chemistry of Life`
+followed by *The Study of Life*, *The Chemical Foundation of Life*, and
+*Biological Macromolecules*; every later unit follows the same pattern.
+`node tools/source/openstax-source.mjs verify-map` checks the chapter and
+section numbering against the pinned collection.
+
+The unit is a real level of the site's hierarchy, not only a cover heading.
+`build-map` reads the collection's unit → chapter nesting and records it in
+`data/openstax/source-map.json` as the book's `units` list (index, title,
+chapter numbers); `verify-map` checks that every chapter sits in exactly one
+unit, in order, titled. `layouts/_partials/sidebar.html` reads that list and
+nests each authored chapter under a "Unit N: <title>" label, so the sidebar
+reads unit → chapter → section for Biology while the math books, whose
+collections have no units, stay flat. URLs do not carry the unit
+(`/life-health-sciences/biology/02-…/01-…/`): the directory layout, the
+lints, the validator, and the provenance map all key on book → chapter →
+section, and nesting a unit directory would change published routes for no
+gain. A unit with no authored chapter yet does not appear in the sidebar; it
+waits on the cover's "Planned contents" list. A chapter landing is created when its first
 section lands, never earlier — the book stays `authoringStatus: scaffolded`
 in the lock until unit 1 is complete, `in-progress` after that, and
 `complete` only when all 208 sections exist. The cover's `seo_title:`
@@ -123,6 +153,29 @@ then `docs/subjects/math.md`'s notation rules apply to that span. Units and
 numbers:
 `5 µm`, `37 °C`, `1,000` with a plain comma in prose. Never put math in a
 `textin` question or answer — the lint rejects it.
+
+Three cases the chemistry chapters settled (unit 1):
+
+- **Ion charges are Unicode and trailing**: `Cl⁻`, `OH⁻`, `HCO₃⁻`, `COO⁻`,
+  `SO₄²⁻`, `Ca²⁺`. The lint's superscript-minus rule allows a minus that
+  follows a letter, subscript digit, superscript digit, or closing paren and
+  is not followed by a superscript digit.
+- **Numeric exponents are math**: `$1 \times 10^{-7}$`, `$6.02 \times
+  10^{23}$`, `$9.11 \times 10^{-28}$`. A Unicode `10⁻⁷` is rejected (it is an
+  exponent, not a charge), and a page that sets one exponent in `$…$` sets
+  the neighbouring positive ones the same way so the two do not mix in a
+  sentence.
+- **Display chemical equations are text, not KaTeX.** The source's
+  `<equation>` blocks in 2.1 and 2.2 are reactions, not mathematics; each
+  becomes its own short paragraph in Unicode with arrows — `2H₂O₂ → 2H₂O +
+  O₂`, `HCO₃⁻ + H⁺ ⇌ H₂CO₃` — and the footer says "chemical equations set as
+  Unicode text". KaTeX loads only for the numeric-exponent spans above.
+- **Greek nomenclature prefixes are prose.** `α-helix`, `β-pleated sheet`,
+  `ω-3 fatty acid`, `α-carbon` keep the printed glyph everywhere, exercise
+  strings included: the exercise lint's unicode-math rule exempts a Greek
+  letter followed by a hyphen (a bare `θ` or `α = 30°` is still math). Give
+  the glossary `textin` for such a term an `accept` list with the spelled-out
+  forms (`alpha helix`, `alpha-helix`).
 
 ## Media: vendored figures
 

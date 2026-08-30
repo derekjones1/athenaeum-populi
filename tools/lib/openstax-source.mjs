@@ -863,13 +863,31 @@ export function buildSourceMap(repositoryRoot, sourceDirectories, lock = loadSou
       }
     }
 
+    // The unit → chapter grouping is source structure, so it travels with the
+    // map: a book whose collection nests units (Biology 2e's eight) records
+    // each unit's index, title, and 1-based chapter numbers, and the sidebar
+    // reads this list to nest the book's chapters under their unit. A flat
+    // collection records no `units` key at all.
+    const units = [];
+    for (const chapter of collection.chapters) {
+      if (!chapter.unit) continue;
+      let unit = units.find((entry) => entry.index === chapter.unit.index);
+      if (!unit) {
+        unit = { index: chapter.unit.index, title: chapter.unit.title, chapters: [] };
+        units.push(unit);
+      }
+      unit.chapters.push(chapter.chapter);
+    }
+
     books[bookKey] = {
       bundle: config.bundleKey,
+      contentPath: config.contentPath,
       authoringStatus: config.authoringStatus,
       upstreamChapters: collection.chapters.length,
       upstreamSections,
       localChapters: chapterIndexes.length,
       mappedSections,
+      ...(units.length ? { units } : {}),
     };
   }
 
@@ -999,6 +1017,34 @@ export function verifyCommittedSourceMap(repositoryRoot, lock = loadSourceLock(r
     if (!summary) continue;
     const config = lock.books.get(bookKey);
     if (summary.bundle !== config.bundleKey) errors.push(`source map book ${bookKey} is attributed to bundle ${summary.bundle}`);
+    if (summary.contentPath !== config.contentPath) {
+      errors.push(`source map book ${bookKey} records contentPath ${summary.contentPath}, lock says ${config.contentPath}`);
+    }
+    // Units are generated from the pinned collection, so offline the check is
+    // structural: every chapter 1..upstreamChapters in exactly one unit, units
+    // numbered 1..n in order, every unit titled. A book whose collection has
+    // no units carries no key.
+    if (summary.units !== undefined) {
+      const seen = new Map();
+      if (!Array.isArray(summary.units) || !summary.units.length) {
+        errors.push(`source map book ${bookKey} records an empty units list`);
+      } else {
+        summary.units.forEach((unit, position) => {
+          if (unit.index !== position + 1) errors.push(`source map book ${bookKey} unit ${unit.index} is out of order`);
+          if (!unit.title || !unit.title.trim()) errors.push(`source map book ${bookKey} unit ${unit.index} has no title`);
+          for (const chapter of unit.chapters || []) {
+            if (seen.has(chapter)) errors.push(`source map book ${bookKey} lists chapter ${chapter} in units ${seen.get(chapter)} and ${unit.index}`);
+            seen.set(chapter, unit.index);
+          }
+        });
+        for (let chapter = 1; chapter <= summary.upstreamChapters; chapter += 1) {
+          if (!seen.has(chapter)) errors.push(`source map book ${bookKey} chapter ${chapter} belongs to no unit`);
+        }
+        for (const chapter of seen.keys()) {
+          if (chapter < 1 || chapter > summary.upstreamChapters) errors.push(`source map book ${bookKey} unit lists chapter ${chapter}, beyond ${summary.upstreamChapters}`);
+        }
+      }
+    }
     if (summary.authoringStatus !== config.authoringStatus) {
       errors.push(`source map book ${bookKey} records authoringStatus ${summary.authoringStatus}, lock says ${config.authoringStatus}`);
     }

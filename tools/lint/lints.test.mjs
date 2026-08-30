@@ -617,6 +617,20 @@ test('unicode mathematics in an exercise string is rejected', () => {
       .some((e) => e.includes('unicode math character "π" in hint')),
     'a raw pi in a hint is rejected',
   );
+  // A Greek letter that PREFIXES a name with a hyphen is nomenclature, not a
+  // variable — Biology 3.4 asks about the α-helix and the β-pleated sheet in
+  // a multiple choice, and the glossary prints both that way.
+  assert.deepEqual(
+    errs('{{< multiplechoice question="The α-helix and the β-pleated sheet are part of which protein structure?" answer="secondary" hint="Think about ω-3 naming too." >}}\nprimary\nsecondary\ntertiary\nquaternary\n{{< /multiplechoice >}}')
+      .filter((e) => e.includes('unicode math character')),
+    [],
+    'a hyphenated Greek prefix in an exercise string is prose',
+  );
+  assert(
+    errs('{{< fillin question="Find α if the angle is 30 degrees." answer="30" hint="Look." >}}')
+      .some((e) => e.includes('unicode math character "α" in question')),
+    'a bare Greek variable is still math',
+  );
   assert(
     errs('{{< fillin question="Find $\\cos(315°)$." answer="1" hint="Reference angle." >}}')
       .some((e) => e.includes('degree glyph inside math')),
@@ -2131,6 +2145,15 @@ test('a superscript exponent is math noise in prose and the only form a figure h
 
   assert(minus('The decay constant is 10⁻³ per second.\n').length > 0,
     'prose math still has to use a braced exponent');
+  assert(minus('The inverse is written f⁻¹(x) in prose.\n').length > 0,
+    'an inverse-function exponent in prose is still an exponent');
+  assert(minus('A bare ⁻ sign with nothing before it.\n').length > 0,
+    'a superscript minus that trails nothing is not an ion charge');
+  assert.deepEqual(
+    minus('Bicarbonate ions (HCO₃⁻) bind hydrogen ions (H⁺); chloride is Cl⁻, sulfate is SO₄²⁻, and the carboxyl group ionizes to COO⁻.\n'),
+    [],
+    'a trailing ion charge in chemistry prose is the biology playbook\'s own notation',
+  );
   assert.deepEqual(
     minus(APFIG('graph', '{"ariaLabel":"A curve and its inverse.",'
       + '"texts":[{"at":[1,1],"text":"f⁻¹(x)"}]}')),

@@ -35,14 +35,18 @@ closes with how plants and animals are built and how ecosystems work.
 - **The Study of Life** — what biology is, how science works (observation,
   hypothesis, experiment, theory), and the properties, levels of
   organization, and evolutionary connections shared by all living things.
+- **The Chemical Foundation of Life** — atoms, isotopes, ions, and chemical
+  bonds; the properties of water that make life possible; and carbon's
+  hydrocarbons, isomers, and functional groups.
+- **Biological Macromolecules** — how monomers join into polymers, and the
+  structures and roles of carbohydrates, lipids, proteins, and nucleic
+  acids.
 
 ## Planned contents
 
 Biology 2e has eight units and 47 chapters. Beyond the chapters listed
 above, the following are still to come, in this order:
 
-- **Unit 1: The Chemistry of Life** — The Chemical Foundation of Life;
-  Biological Macromolecules.
 - **Unit 2: The Cell** — Cell Structure; Structure and Function of Plasma
   Membranes; Metabolism; Cellular Respiration; Photosynthesis; Cell
   Communication; Cell Reproduction.

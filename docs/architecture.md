@@ -52,7 +52,7 @@ advertising, or learner-data store.
 
 The completed Prealgebra 2e, Elementary Algebra 2e, and Intermediate Algebra
 2e books remain reviewed Markdown, not generated output. A committed lock and
-276-section map under `data/openstax/` connect each page to a stable CNXML
+284-section map under `data/openstax/` connect each page to a stable CNXML
 module in the official OpenStax source repository. The upstream checkout is a
 sparse, ignored cache under `sources/openstax/`.
 
@@ -66,10 +66,17 @@ verification gates. See `docs/source/openstax-source-workflow.md`.
 The lock is bundle-keyed and each book carries its own `contentPath`, so the
 pipeline is not specific to `content/math`: Biology 2e is pinned at
 `biology-bundle` with `contentPath: "content/life-health-sciences/biology"`
-and `authoringStatus: "scaffolded"` — its collection (which nests unit,
-chapter, and module) is mapped chapter by chapter as authoring proceeds, and
+and `authoringStatus: "in-progress"` (unit 1 authored) — its collection
+(which nests unit, chapter, and module) is mapped chapter by chapter as
+authoring proceeds, and
 `build-map`/`verify-map` state the book's local/upstream counts on every
-run rather than omitting a book that has few or no pages yet.
+run rather than omitting a book that has few or no pages yet. Each book's
+summary in the map also carries its `contentPath` and, for a collection
+that nests units, a `units` list (index, title, chapter numbers) that
+`verify-map` checks structurally and that `layouts/_partials/sidebar.html`
+reads — matched to the book by `contentPath` — to nest the book's chapters
+under "Unit N: <title>" labels, so the sidebar's hierarchy for Biology is
+unit → chapter → section without the URL or directory layout changing.
 
 ## Media and text-answer components
 

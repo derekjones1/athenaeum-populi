@@ -28,10 +28,9 @@ Books carry an `authoringStatus`. `complete` means every upstream numbered
 section is authored locally and chapter-by-chapter parity is enforced;
 `scaffolded` and `in-progress` mean the book's provenance is pinned while its
 pages are still being written, so parity is only checked for what exists.
-Biology is `scaffolded`: its lock and pinned commit exist, but
-`content/life-health-sciences/biology` has no chapter or section pages yet, so
-`build-map`/`verify-map` print it with zero chapters and zero sections mapped
-— visibly, not silently — until authoring begins.
+Biology is `in-progress`: its lock and pinned commit exist and unit 1 is
+authored, so `build-map`/`verify-map` print it as `3/47 chapters, 10/208
+sections mapped` — visibly, not silently — until the book is complete.
 
 Every book's lock entry also carries a `contentPath` (for example
 `content/math/precalculus`, `content/life-health-sciences/biology`): the
@@ -114,7 +113,7 @@ not a publishing instruction.
 - `data/openstax/source-lock.json` (schema 2) records each bundle's
   official repository, current reviewed commit, module scope, and license,
   plus every book's collection, inferred PDF-era commit, and authoring status.
-- `data/openstax/source-map.json` (schema 2) connects all 276 authored
+- `data/openstax/source-map.json` (schema 2) connects all 284 authored
   local section paths to stable OpenStax module IDs and module SHA-256
   fingerprints, attributes each section to its bundle, and records per-book
   chapter and section coverage against the upstream collection.
@@ -198,12 +197,13 @@ with the upstream collection and the book joins the audited section matrix.
 
 ## Biology 2e
 
-Biology 2e is pinned and `scaffolded`: the lock, the collection mapping, and
-the vendored-media pipeline are in place, but `content/life-health-sciences/biology`
-carries no chapter landings or section pages yet. `npm run source:verify` and
-`build-map` therefore print `biology: scaffolded — 0/47 chapters, 0/208
-sections mapped` — a book with zero authored content is stated on its own
-line, not folded silently into a "0 errors" run. Its pinned commit is
+Biology 2e is pinned and `in-progress`: the lock, the collection mapping, and
+the vendored-media pipeline are in place, and `content/life-health-sciences/biology`
+carries unit 1 (chapters 1–3, ten sections). `npm run source:verify` and
+`build-map` therefore print `biology: in-progress — 3/47 chapters, 10/208
+sections mapped` — a partly authored book is stated on its own line, not
+folded silently into a "0 errors" run (a book with nothing authored would
+print `scaffolded — 0/47 chapters, 0/208 sections mapped` the same way). Its pinned commit is
 `63f8b6f8d129dd1582989bb755011e9a6d523471` in the `biology-bundle`.
 
 Biology 2e's `collections/biology-2e.collection.xml` nests one level deeper

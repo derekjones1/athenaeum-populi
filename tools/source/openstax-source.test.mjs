@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -166,7 +166,7 @@ test('the source lock pins one upstream bundle per book', () => {
   assert.equal(lock.books.get('prealgebra').authoringStatus, 'complete');
   assert.equal(lock.bundles['college-algebra-bundle'].moduleScope, 'mapped-collections');
   assert.equal(lock.books.get('biology').bundleKey, 'biology-bundle');
-  assert.equal(lock.books.get('biology').authoringStatus, 'scaffolded');
+  assert.equal(lock.books.get('biology').authoringStatus, 'in-progress');
   assert.equal(lock.books.get('biology').contentPath, 'content/life-health-sciences/biology');
   assert.equal(lock.bundles['biology-bundle'].moduleScope, 'mapped-collections');
 });
@@ -207,17 +207,17 @@ test('formatTriesCoverage reports n/a rather than 0/0 for a book with no note.tr
   assert.equal(formatTriesCoverage(3, 5), '3/5');
 });
 
-test('committed provenance maps all 276 local sections exactly once', () => {
+test('committed provenance maps all 284 local sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 276);
-  assert.equal(result.actualCount, 276);
+  assert.equal(result.expectedCount, 284);
+  assert.equal(result.actualCount, 284);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
   assert.equal(counts['intermediate-algebra'].length, 70);
   assert.equal(counts.precalculus.length, 73);
-  assert.equal(counts.biology.length, 2);
+  assert.equal(counts.biology.length, 10);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
@@ -239,6 +239,7 @@ test('the Precalculus book is mapped complete, every upstream section authored',
   assert.deepEqual(result.errors, []);
   assert.deepEqual(result.map.books.precalculus, {
     bundle: 'college-algebra-bundle',
+    contentPath: 'content/math/precalculus',
     authoringStatus: 'complete',
     upstreamChapters: 12,
     upstreamSections: 73,
@@ -251,17 +252,60 @@ test('the Precalculus book is mapped complete, every upstream section authored',
   );
 });
 
-test('the Biology book is pinned and scaffolded, its local landings and mapped sections counted visibly', () => {
+test('the Biology book is pinned and in progress, its local landings and mapped sections counted visibly', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
   assert.deepEqual(result.map.books.biology, {
     bundle: 'biology-bundle',
-    authoringStatus: 'scaffolded',
+    contentPath: 'content/life-health-sciences/biology',
+    authoringStatus: 'in-progress',
     upstreamChapters: 47,
     upstreamSections: 208,
-    localChapters: 1,
-    mappedSections: 2,
+    localChapters: 3,
+    mappedSections: 10,
+    // The source's unit → chapter grouping, recorded so the sidebar can nest
+    // chapters under their unit and so the grouping cannot drift from the
+    // pinned collection. Every chapter 1–47 in exactly one unit.
+    units: [
+      { index: 1, title: 'The Chemistry of Life', chapters: [1, 2, 3] },
+      { index: 2, title: 'The Cell', chapters: [4, 5, 6, 7, 8, 9, 10] },
+      { index: 3, title: 'Genetics', chapters: [11, 12, 13, 14, 15, 16, 17] },
+      { index: 4, title: 'Evolutionary Processes', chapters: [18, 19, 20] },
+      { index: 5, title: 'Biological Diversity', chapters: [21, 22, 23, 24, 25, 26, 27, 28, 29] },
+      { index: 6, title: 'Plant Structure and Function', chapters: [30, 31, 32] },
+      { index: 7, title: 'Animal Structure and Function', chapters: [33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43] },
+      { index: 8, title: 'Ecology', chapters: [44, 45, 46, 47] },
+    ],
   });
+  assert.equal(result.map.books.precalculus.units, undefined, 'a flat collection records no units key');
+});
+
+test('verify-map rejects a units list that drops, duplicates, or misorders a chapter', () => {
+  const map = JSON.parse(readFileSync(path.join(repositoryRoot, 'data/openstax/source-map.json'), 'utf8'));
+  const check = (mutate) => {
+    const copy = JSON.parse(JSON.stringify(map));
+    mutate(copy.books.biology);
+    const dir = mkdtempSync(path.join(os.tmpdir(), 'ap-units-'));
+    try {
+      // A throwaway repository root holding only the lock, the mutated map,
+      // and the biology cover: enough for verifyCommittedSourceMap's book
+      // summary checks to run and nothing else to differ.
+      mkdirSync(path.join(dir, 'data/openstax'), { recursive: true });
+      cpSync(path.join(repositoryRoot, 'data/openstax/source-lock.json'), path.join(dir, 'data/openstax/source-lock.json'));
+      writeFileSync(path.join(dir, 'data/openstax/source-map.json'), JSON.stringify(copy));
+      copy.sections = [];
+      for (const book of Object.values(copy.books)) book.mappedSections = 0;
+      writeFileSync(path.join(dir, 'data/openstax/source-map.json'), JSON.stringify(copy));
+      return verifyCommittedSourceMap(dir).errors.filter((e) => /unit/.test(e));
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  };
+  assert.deepEqual(check(() => {}), [], 'the committed grouping is structurally sound');
+  assert.match(check((b) => { b.units[0].chapters = [1, 2]; }).join('\n'), /chapter 3 belongs to no unit/);
+  assert.match(check((b) => { b.units[1].chapters.push(3); }).join('\n'), /chapter 3 in units 1 and 2/);
+  assert.match(check((b) => { b.units.reverse(); }).join('\n'), /out of order/);
+  assert.match(check((b) => { b.units[7].title = ' '; }).join('\n'), /unit 8 has no title/);
 });
 
 test('reconciliation decisions refer to mapped paths and modules', () => {

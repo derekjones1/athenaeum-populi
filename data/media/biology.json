@@ -373,6 +373,1211 @@
       ],
       "alt": "Photo depicts a scientist working in the lab.",
       "caption": "This forensic scientist works in a DNA extraction room at the U.S. Army Criminal Investigation Laboratory at Fort Gillem, GA. (credit: United States Army CID Command Public Affairs)"
+    },
+    "Figure_02_00_01-d709": {
+      "source": "media/Figure_02_00_01-d709.jpg",
+      "sourceSha256": "fd4a44ff46d83ea0a8a7a2f029224cc0ab3e64d3bba6cbc094492a1a0323d753",
+      "module": "m66429",
+      "kind": "photo",
+      "width": 1118,
+      "height": 376,
+      "variants": [
+        {
+          "width": 800,
+          "height": 269,
+          "file": "Figure_02_00_01-d709-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 376,
+          "file": "Figure_02_00_01-d709-1118.webp"
+        }
+      ],
+      "alt": "A molecular model shows hundreds of atoms, represented by yellow, red, black, blue and white balls, connected together by rods to form a molecule. The molecule has a complex but very specific three-dimensional structure with rings and branches.",
+      "caption": "Atoms are the building blocks of molecules in the universe—air, soil, water, rocks . . . and also the cells of all living organisms. In this model of an organic molecule, the atoms of carbon (black), hydrogen (white), nitrogen (blue), oxygen (red), and phosphorus (yellow) are in proportional atomic size. The silver rods indicate chemical bonds. (credit: modification of work by Christian Guthier)"
+    },
+    "Figure_02_01_01-7c45": {
+      "source": "media/Figure_02_01_01-7c45.jpg",
+      "sourceSha256": "9041f9a3c43d232d687ad576df488837dea7200ee5239f4180938834af6cacb8",
+      "module": "m66430",
+      "kind": "photo",
+      "width": 544,
+      "height": 337,
+      "variants": [
+        {
+          "width": 544,
+          "height": 337,
+          "file": "Figure_02_01_01-7c45-544.webp"
+        }
+      ],
+      "alt": "This illustration shows that, like planets orbiting the sun, electrons orbit the nucleus of an atom. The nucleus contains two neutrally charged neutrons, and two positively charged protons represented by spheres. A single, circular orbital surrounding the nucleus contains two negatively charged electrons on opposite sides.",
+      "caption": "Elements, such as helium, depicted here, are made up of atoms. Atoms are made up of protons and neutrons located within the nucleus, with electrons in orbitals surrounding the nucleus."
+    },
+    "Figure_02_01_03-26c7": {
+      "source": "media/Figure_02_01_03-26c7.jpg",
+      "sourceSha256": "a229d66e68603a2cff1f4e2c8252347958689eb509fe745ba2de2f106a768d7c",
+      "module": "m66430",
+      "kind": "photo",
+      "width": 800,
+      "height": 642,
+      "variants": [
+        {
+          "width": 800,
+          "height": 642,
+          "file": "Figure_02_01_03-26c7-800.webp"
+        }
+      ],
+      "alt": "Photo shows scientists unearthing a mammoth skeleton.",
+      "caption": "Scientists can determine the age of carbon-containing remains less than about 50,000 years old, such as this pygmy mammoth, using carbon dating. (credit: Bill Faulkner, NPS)"
+    },
+    "Figure_02_01_03-carbon": {
+      "source": "media/Figure_02_01_03-carbon.jpg",
+      "sourceSha256": "91a153c687a37b4aaede2021c2ee9a9dc88fc04be198ba08be79f8e603ef2968",
+      "module": "m66430",
+      "kind": "photo",
+      "width": 469,
+      "height": 252,
+      "variants": [
+        {
+          "width": 469,
+          "height": 252,
+          "file": "Figure_02_01_03-carbon-469.webp"
+        }
+      ],
+      "alt": "Carbon is indicated by its atomic symbol, a capital C. Carbon has the atomic number six and two stable isotopes, carbon-12 and carbon-13.",
+      "caption": "Carbon has an atomic number of six, and two stable isotopes with mass numbers of twelve and thirteen, respectively. Its relative atomic mass is 12.011"
+    },
+    "Figure_02_01_04": {
+      "source": "media/Figure_02_01_04.png",
+      "sourceSha256": "1ef9afc00d52ffadd1d3df1d34cee8d6f13cc14460694d24ed4037042236bf23",
+      "module": "m66430",
+      "kind": "diagram",
+      "width": 1300,
+      "height": 1016,
+      "variants": [
+        {
+          "width": 800,
+          "height": 625,
+          "file": "Figure_02_01_04-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1016,
+          "file": "Figure_02_01_04-1300.webp"
+        }
+      ],
+      "alt": "The periodic table consists of eighteen groups and seven periods. Each element has its own square. Within each square is the following information; the atomic number, the symbol, the relative atomic mass, and the name. For example, hydrogen's atomic number is 1, symbol is the letter H; relative atomic mass is 1.01, and name is hydrogen. Two additional rows of elements, known as the lanthanides and actinides, are placed beneath the main table. The lanthanides include elements 57 through 71 and belong in period seven between groups three and four. The actinides include elements 89 through 98 and belong in period eight between the same groups. These elements are placed separately to make the table more compact. For each element, the name, atomic symbol, atomic number, and atomic mass are provided. The atomic number is a whole number that represents the number of protons. The atomic mass, which is the average mass of different isotopes, is estimated to two decimal places. The elements are divided into three categories: metals, nonmetals and metalloids. These form a diagonal line from period two, group thirteen to period six, group seventeen. All elements to the left of the metalloids are metals, and all elements to the right are nonmetals.",
+      "caption": "The periodic table shows each element's atomic mass and atomic number. The atomic number appears above the symbol for the element and the approximate atomic mass appears below it."
+    },
+    "Figure_02_01_05-331f": {
+      "source": "media/Figure_02_01_05-331f.jpg",
+      "sourceSha256": "bb21ae196eee18e87ea6660e1ae5cc7b3f7faaa49ee1c11403c7dccc30b81aaa",
+      "module": "m66430",
+      "kind": "photo",
+      "width": 322,
+      "height": 322,
+      "variants": [
+        {
+          "width": 322,
+          "height": 322,
+          "file": "Figure_02_01_05-331f-322.webp"
+        }
+      ],
+      "alt": "Three concentric circles around the nucleus of a hydrogen atom represent principal shells. These are named 1 n, 2 n, and 3 n in order of increasing distance from the nucleus. An electron orbits in the shell closest to the nucleus, 1 n. The nucleus is marked with an H for hydrogen.",
+      "caption": "In 1913, Niels Bohrs developed the Bohr model in which electrons exist within principal shells. An electron normally exists in the lowest energy shell available, which is the one closest to the nucleus. Energy from a photon of light can bump it up to a higher energy shell, but this situation is unstable, and the electron quickly decays back to the ground state. In the process, it releases a photon of light."
+    },
+    "Figure_02_01_06": {
+      "source": "media/Figure_02_01_06.png",
+      "sourceSha256": "342c1772e301ce5fc66436430254faf63cbfda3782ff2e8183f6ba942ecb70df",
+      "module": "m66430",
+      "kind": "diagram",
+      "width": 1047,
+      "height": 704,
+      "variants": [
+        {
+          "width": 800,
+          "height": 538,
+          "file": "Figure_02_01_06-800.webp"
+        },
+        {
+          "width": 1047,
+          "height": 704,
+          "file": "Figure_02_01_06-1047.webp"
+        }
+      ],
+      "alt": "Bohr diagrams of elements from groups 1, 14, 17 and 18, and periods 1, 2 and 3 are shown. Period 1, in which the 1n shell is filling, contains hydrogen and helium. Hydrogen, in group 1, has one valence electron. Helium, in group 18, has two valence electrons. The 1n shell holds a maximum of two electrons, so the shell is full and the electron configuration is stable. Period 2, in which the 2n shell is filling, contains lithium, carbon, fluorine, and neon. Lithium, in group 1, has 1 valence electron. Carbon, in group 14, has 4 valence electrons. Fluorine, in group 17, has 7 valence electrons. Neon, in group 18, has 8 valence electrons, a full octet. Period 3, in which the 3n shell is filling, contains sodium, silicon, chlorine, and argon. Sodium, in group 1, has 1 valence electron. Silicon, in group 14, has 4 valence electrons. Chlorine, in group 17, has 7 valence electrons. Argon, in group 18, has 8 valence electrons, a full octet.",
+      "caption": "Bohr diagrams indicate how many electrons fill each principal shell. Group 18 elements (helium, neon, and argon) have a full outer, or valence, shell. A full valence shell is the most stable electron configuration. Elements in other groups have partially filled valence shells and gain or lose electrons to achieve a stable electron configuration."
+    },
+    "Figure_02_01_07": {
+      "source": "media/Figure_02_01_07.jpg",
+      "sourceSha256": "d408899d8fcce87aad2f47822e70eb51cf4f762736472c42ac3e30d7c2b6635a",
+      "module": "m66430",
+      "kind": "photo",
+      "width": 1117,
+      "height": 735,
+      "variants": [
+        {
+          "width": 800,
+          "height": 526,
+          "file": "Figure_02_01_07-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 735,
+          "file": "Figure_02_01_07-1117.webp"
+        }
+      ],
+      "alt": "Illustration shows 1 n s, 2 n s and 2 n p subshells. The 1 n s subshell and 2 n s subshells are both spheres, but the 2 n s sphere is larger than the 1 n s sphere. The 2 n p subshell is made up of three dumbbells that radiate out from the center of the atom along X, Y, and Z axes.",
+      "caption": "The s subshells are shaped like spheres. Both the 1n and 2n principal shells have an s orbital, but the size of the sphere is larger in the 2n orbital. Each sphere is a single orbital. Three dumbbell-shaped orbitals comprise p subshells. Principal shell 2n has a p subshell, but shell 1 does not."
+    },
+    "Figure_02_01_10": {
+      "source": "media/Figure_02_01_10.jpg",
+      "sourceSha256": "a413aed3c50733f8005a518aba0170f11539b20c9c1e16622639a1a6aa4b33a5",
+      "module": "m66430",
+      "kind": "photo",
+      "width": 800,
+      "height": 176,
+      "variants": [
+        {
+          "width": 800,
+          "height": 176,
+          "file": "Figure_02_01_10-800.webp"
+        }
+      ],
+      "alt": "A sodium and a chlorine atom sit side by side. The sodium atom has one valence electron, and the chlorine atom has seven. Six of chlorines electrons form pairs at the top, bottom and right sides of the valence shell. The seventh electron sits alone on the left side. The sodium atom transfers its valence electron to chlorines valence shell, where it pairs with the unpaired left electron. An arrow indicates a reaction takes place. After the reaction takes place, the sodium becomes a cation with a charge of plus one and an empty valence shell, while the chlorine becomes an anion with a charge of minus one and a full valence shell containing eight electrons.",
+      "caption": "In the formation of an ionic compound, metals lose electrons and nonmetals gain electrons to achieve an octet."
+    },
+    "Figure_02_01_17": {
+      "source": "media/Figure_02_01_17.jpg",
+      "sourceSha256": "99cbf91fc04808df56ebaf43235f9a021ff6eb473b91ee6d2be5a733b5c37efd",
+      "module": "m66430",
+      "kind": "photo",
+      "width": 800,
+      "height": 381,
+      "variants": [
+        {
+          "width": 800,
+          "height": 381,
+          "file": "Figure_02_01_17-800.webp"
+        }
+      ],
+      "alt": "In the first image, an oxygen atom is shown with six valence electrons. Four of these valence electrons form pairs at the top and right sides of the valence shell. The other two electrons are alone on the bottom and left sides. A hydrogen atom sits next to each the lone electron of the oxygen. Each hydrogen has only one valence electron. An arrow indicates that a reaction takes place. After the reaction, in the second image, each unpaired electron in the oxygen joins an electron from one of the hydrogen atoms so that the valence rings are now connected together. The bond that forms between oxygen and hydrogen can also be represented by a dash.",
+      "caption": "Two or more atoms may bond with each other to form a molecule. When two hydrogens and an oxygen share electrons via covalent bonds it forms a water molecule."
+    },
+    "Figure_02_01_18": {
+      "source": "media/Figure_02_01_18.png",
+      "sourceSha256": "dfeb30ad45239f8000cb7f47ed2a91452a387afb85aff8901dc2bdb87df3fa64",
+      "module": "m66430",
+      "kind": "diagram",
+      "width": 1538,
+      "height": 389,
+      "variants": [
+        {
+          "width": 800,
+          "height": 202,
+          "file": "Figure_02_01_18-800.webp"
+        },
+        {
+          "width": 1538,
+          "height": 389,
+          "file": "Figure_02_01_18-1538.webp"
+        }
+      ],
+      "alt": "Two oxygen atoms are shown side-by-side. Each has six valence electrons, two that are paired and two that are unpaired. An arrow indicates that a reaction takes place. After the reaction, the four unpaired electrons join to form a double bond. This double bond can also be depicted by an equal sign between two Os.",
+      "caption": "A double bond joins the oxygen atoms in an O 2 molecule."
+    },
+    "Figure_02_01_20": {
+      "source": "media/Figure_02_01_20.jpg",
+      "sourceSha256": "38e5a95245976ad03cd6eff48670b0f62ea51a68fa3e9e2ece2ef1555e7017f6",
+      "module": "m66430",
+      "kind": "photo",
+      "width": 800,
+      "height": 675,
+      "variants": [
+        {
+          "width": 800,
+          "height": 675,
+          "file": "Figure_02_01_20-800.webp"
+        }
+      ],
+      "alt": "Table compares water, methane and carbon dioxide molecules. In water, oxygen has a stronger pull on electrons than hydrogen resulting in a polar covalent O-H bond. Likewise in carbon dioxide the oxygen has a stronger pull on electrons than carbon and the bond is polar covalent. However, water has a bent shape because two lone pairs of electrons push the hydrogen atoms together so the molecule is polar. By contrast carbon dioxide has two double bonds that repel each other, resulting in a linear shape. The polar bonds in carbon dioxide cancel each other out, resulting in a nonpolar molecule. In methane, the bond between carbon and hydrogen is nonpolar and the molecule is a symmetrical tetrahedron with hydrogens spaced as far apart as possible on the three-dimensional sphere. Since methane is symmetrical with nonpolar bonds, it is a nonpolar molecule.",
+      "caption": "Whether a molecule is polar or nonpolar depends both on bond type and molecular shape. Both water and carbon dioxide have polar covalent bonds, but carbon dioxide is linear, so the partial charges on the molecule cancel each other out."
+    },
+    "Figure_02_02_01-54cd": {
+      "source": "media/Figure_02_02_01-54cd.jpg",
+      "sourceSha256": "b3a4153193d3181f3a532aa7d461a4e27e981b94c98724cc68770c1c8314ee8f",
+      "module": "m66434",
+      "kind": "photo",
+      "width": 800,
+      "height": 600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_02_02_01-54cd-800.webp"
+        }
+      ],
+      "alt": "Four water molecules are shown, with hydrogen bonds between them. The hydrogen bonds are dotted lines connecting the hydrogen atom from one molecule with an oxygen atom from another molecule.",
+      "caption": "The polarity of water. The polarity of water is due to the differing electronegativities of hydrogen and oxygen. As a consequence, hydrogen bonds are formed when the slightly negative oxygen on one water molecule is attracted to the slightly positive hydrogen of another water molecule. Credit: Rao, A., Fletcher, S., Ryan, K., Tag, A. and Hawkins, A. Department of Biology, Texas A&M University"
+    },
+    "Figure_02_02_02-58f7": {
+      "source": "media/Figure_02_02_02-58f7.jpg",
+      "sourceSha256": "42750862e86d320852da6e7b34dc001c6464ab86413b8ffdab1c2e8418ba7098",
+      "module": "m66434",
+      "kind": "photo",
+      "width": 1118,
+      "height": 471,
+      "variants": [
+        {
+          "width": 800,
+          "height": 337,
+          "file": "Figure_02_02_02-58f7-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 471,
+          "file": "Figure_02_02_02-58f7-1118.webp"
+        }
+      ],
+      "alt": "Illustration A shows the molecular structure of ice. The water molecules are arranged in hexagons, and are bonded together with hydrogen bonds. The hexagonal arrangements have a good deal of space between them. Image B shows ice floes floating on ocean water near a mountain range that rises out of the water.",
+      "caption": "Hydrogen bonding makes ice less dense than liquid water. The (a) lattice structure of ice makes it less dense than the liquid water's freely flowing molecules, enabling it to (b) float on water. (credit a: modification of work by Jane Whitney, image created using Visual Molecular Dynamics (VMD) software W. Humphrey W., A. Dalke, and K. Schulten, “VMD—Visual Molecular Dynamics,” Journal of Molecular Graphics 14 (1996): 33-38. ; credit b: modification of work by Carlos Ponte)"
+    },
+    "Figure_02_02_03-096d": {
+      "source": "media/Figure_02_02_03-096d.jpg",
+      "sourceSha256": "606eeac864098d659afbcec3b6a34ba295e2b1ea6c256a1eff40f0b96c5ae62a",
+      "module": "m66434",
+      "kind": "photo",
+      "width": 544,
+      "height": 233,
+      "variants": [
+        {
+          "width": 544,
+          "height": 233,
+          "file": "Figure_02_02_03-096d-544.webp"
+        }
+      ],
+      "alt": "When sodium chloride dissolves in water, the positively charged sodium ions interact with the oxygen of water, and the negatively charged chlorine ions interact with the hydrogen of water. A negatively charged chlorine ion is shown surrounded by water molecules whose hydrogen atoms are oriented inward toward the chlorine ion. A positively charged sodium ion is shown surrounded by water molecules whose oxygen atoms are oriented inward toward the sodium ion.chloride dissolves in water, the positively charged sodium ions interact with the oxygen of water, and the negatively charged chlorine ions interact with the hydrogen of water.",
+      "caption": "When we mix table salt (NaCl) in water, it forms spheres of hydration around the ions."
+    },
+    "Figure_02_02_04": {
+      "source": "media/Figure_02_02_04.jpg",
+      "sourceSha256": "78e1a056da01b551491d7b45f7b5f03ad362d7af91857459beac4fecda40b907",
+      "module": "m66434",
+      "kind": "photo",
+      "width": 544,
+      "height": 361,
+      "variants": [
+        {
+          "width": 544,
+          "height": 361,
+          "file": "Figure_02_02_04-544.webp"
+        }
+      ],
+      "alt": "A photograph shows a needle floating at the surface of a glass of water. Though the needle floats, it appears to be slightly sinking below the surface.",
+      "caption": "A needle's weight pulls the surface downward. At the same time, the surface tension pulls it up, suspending it on the water's surface preventing it from sinking. Notice the indentation in the water around the needle. (credit: Cory Zanker)"
+    },
+    "Figure_02_02_05-1bfb": {
+      "source": "media/Figure_02_02_05-1bfb.jpg",
+      "sourceSha256": "1b037aae115ce1578b8e427f2f750c2709c834b24802729ea87c08d018c3bd4d",
+      "module": "m66434",
+      "kind": "photo",
+      "width": 544,
+      "height": 560,
+      "variants": [
+        {
+          "width": 544,
+          "height": 560,
+          "file": "Figure_02_02_05-1bfb-544.webp"
+        }
+      ],
+      "alt": "A thin hollow tube sits in a beaker of water. The water level inside the tube is higher than the water level in the beaker due to capillary action.",
+      "caption": "The adhesive forces exerted by the glass' internal surface exceeding the cohesive forces between the water molecules themselves causes capillary action in a glass tube. (credit: modification of work by Pearson-Scott Foresman, donated to the Wikimedia Foundation)"
+    },
+    "Figure_02_02_06": {
+      "source": "media/Figure_02_02_06.jpg",
+      "sourceSha256": "0b44969f21eac92969ab446bde6011ec1abee5601e96a7020090e2e592e60b5b",
+      "module": "m66434",
+      "kind": "photo",
+      "width": 544,
+      "height": 299,
+      "variants": [
+        {
+          "width": 544,
+          "height": 299,
+          "file": "Figure_02_02_06-544.webp"
+        }
+      ],
+      "alt": "Photo shows an insect with long, thin legs standing on the surface of water.",
+      "caption": "Water’s cohesive and adhesive properties allow this water strider ( Gerris sp.) to stay afloat. (credit: Tim Vickers)"
+    },
+    "Figure_02_02_07": {
+      "source": "media/Figure_02_02_07.jpg",
+      "sourceSha256": "d2a447829e0c022966d204f2461085e530a6b153bb2b8ca7863ff70a6bec44e6",
+      "module": "m66434",
+      "kind": "photo",
+      "width": 544,
+      "height": 654,
+      "variants": [
+        {
+          "width": 544,
+          "height": 654,
+          "file": "Figure_02_02_07-544.webp"
+        }
+      ],
+      "alt": "The lower case p upper case H scale, which ranges from zero to 14, sits next to a bar with the colors of the rainbow. The p H of common substances are given. These include gastric acid with a p H around one, lemon juice with a p H around two, orange juice with a p H around three, tomato juice with a p H around four, black coffee with a p H around five, urine with a p H around six, distilled water with a p H around seven, sea water with a p H around eight, baking soda with a p H around nine, milk of magnesia with a p H around ten, ammonia solution with a p H around 11, soapy water with a p H around 12, and bleach with a p H around 13.",
+      "caption": "The pH scale measures hydrogen ions' (H + ) concentration in a solution. (credit: modification of work by Edward Stevens)"
+    },
+    "Figure_02_02_08": {
+      "source": "media/Figure_02_02_08.jpg",
+      "sourceSha256": "33056e9a07d06abf12a506d273f1b233d07afff3d03d1f87cc27df32b353139c",
+      "module": "m66434",
+      "kind": "photo",
+      "width": 800,
+      "height": 87,
+      "variants": [
+        {
+          "width": 800,
+          "height": 87,
+          "file": "Figure_02_02_08-800.webp"
+        }
+      ],
+      "alt": "An upper case H subscript 2 baseline upper case O molecule can combine with an upper case C upper case O subscript 2 baseline molecule to form H subscript 2 baseline C O subscript 3 baseline, or carbonic acid. A proton may dissociate from H subscript 2 baseline C O subscript 3 baseline, forming bicarbonate, or H C O subscript 3 baseline superscript negative, in the process. The reaction is reversible so that if acid is added protons combined with bicarbonate to form carbonic acid.",
+      "caption": "This diagram shows the body’s buffering of blood pH levels. The blue arrows show the process of raising pH as more CO 2 is made. The purple arrows indicate the reverse process: the lowering of pH as more bicarbonate is created."
+    },
+    "Figure_02_03_01f": {
+      "source": "media/Figure_02_03_01f.jpg",
+      "sourceSha256": "f25d60ed3ca26b7d0f9280fe098aac9a63d1e599c749a01c8b2eef91b6f62701",
+      "module": "m66436",
+      "kind": "photo",
+      "width": 1117,
+      "height": 596,
+      "variants": [
+        {
+          "width": 800,
+          "height": 427,
+          "file": "Figure_02_03_01f-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 596,
+          "file": "Figure_02_03_01f-1117.webp"
+        }
+      ],
+      "alt": "Methane, the simplest hydrocarbon, is composed of four hydrogen atoms surrounding a central carbon. The bonds between the four hydrogen atoms and the central carbon are spaced as far apart as possible. The resulting shape is tetrahedral, with hydrogen atoms projecting upward and off to three sides around the central carbon.",
+      "caption": "Methane has a tetrahedral geometry, with each of the four hydrogen atoms spaced 109.5° apart."
+    },
+    "Figure_02_03_02-d747": {
+      "source": "media/Figure_02_03_02-d747.jpg",
+      "sourceSha256": "5348343d7d8f402f3223b68c3ff5dc224b376ed14bbc156748a6b3e1d1b55b71",
+      "module": "m66436",
+      "kind": "photo",
+      "width": 543,
+      "height": 221,
+      "variants": [
+        {
+          "width": 543,
+          "height": 221,
+          "file": "Figure_02_03_02-d747-543.webp"
+        }
+      ],
+      "alt": "Methane, the simplest hydrocarbon, is composed of four hydrogen atoms surrounding a central carbon. The bond between the four hydrogen atoms and the central carbon spaced as far apart as possible. This results in a tetrahedral shape with hydrogen atoms projecting upward and off to three sides around the central carbon. Ethane is composed of two carbons connected by a single bond. Each carbon also has three hydrogen atoms connected to it. The hydrogens are spaced as far apart from each other and from the other carbon so again the shape is tetrahedral. Ethene, like ethane, is composed of two carbon atoms, but in this case the carbons are connected by a double bond. Each carbon also has two hydrogen atoms connected to it, for a total of three bonds. The three bonds are spaced as far apart as possible around carbon, which means they are all on the same plane and pointing off in three directions. As a result, the molecule is planar, or flat.",
+      "caption": "When carbon forms single bonds with other atoms, the shape is tetrahedral. When two carbon atoms form a double bond, the shape is planar, or flat. Single bonds, like those in ethane, are able to rotate. Double bonds, like those in ethene, cannot rotate, so the atoms on either side are locked in place."
+    },
+    "Figure_02_03_04": {
+      "source": "media/Figure_02_03_04.png",
+      "sourceSha256": "d3d1b59d7fda5d8d02725bd0382879c952ea9f5ff579d00293d5033596fbf955",
+      "module": "m66436",
+      "kind": "diagram",
+      "width": 725,
+      "height": 977,
+      "variants": [
+        {
+          "width": 725,
+          "height": 977,
+          "file": "Figure_02_03_04-725.webp"
+        }
+      ],
+      "alt": "Part A shows butane and isobutane are structural isomers. Both molecules have four carbons and ten hydrogens, but in butane the carbons form a single chain, while in isobutane the carbons form a branched chain. Part B shows cis dash 2 butene and trans dash 2 butene each consist of a four-carbon chain. The two central carbons are connected by a double bond resulting in a planar, or flat shape. In the cis isomer, both terminal upper case C upper case H subscript 3 baseline groups are on the same side of the plane, and two hydrogen atoms are on the opposite side. Imagine a person with arms stretched out and upwards and legs spread apart, with a glove on the left hand and a sock on the left foot: this represents a cis configuration. In cis-butene the terminal upper C upper H subscript 3 baseline groups are on opposite sides of the plane. Now, imagine a person with outstretched arms and legs, but this time with a glove on the left hand and a sock on the right foot: this is what a trans configuration looks like. Part C shows two enantiomers, each with different arrangement of hydrogen, bromine, chlorine and fluorine around a central carbon. The molecules are mirror images of one another.",
+      "caption": "We call molecules that have the same number and type of atoms arranged differently isomers. (a) Structural isomers have a different covalent arrangement of atoms. (b) Geometric isomers have a different arrangement of atoms around a double bond. (c) Enantiomers are mirror images of each other."
+    },
+    "Figure_02_03_05": {
+      "source": "media/Figure_02_03_05.png",
+      "sourceSha256": "e9a4436dbb6d6924c66736e881d3b72665078b595464520a8c9b855da582520f",
+      "module": "m66436",
+      "kind": "diagram",
+      "width": 1592,
+      "height": 447,
+      "variants": [
+        {
+          "width": 800,
+          "height": 224,
+          "file": "Figure_02_03_05-800.webp"
+        },
+        {
+          "width": 1592,
+          "height": 447,
+          "file": "Figure_02_03_05-1592.webp"
+        }
+      ],
+      "alt": "Four molecular structures are shown. Cyclopentane is a ring consisting of five carbons, each with two hydrogens attached. Cyclohexane is a ring of six carbons, each with two hydrogens attached. Benzene is a six-carbon ring with alternating double bonds. Each carbon has one hydrogen attached. Pyridine is the same as benzene, but a nitrogen is substituted for one of the carbons. No hydrogens are attached to the nitrogen.",
+      "caption": "Carbon can form five- and six-membered rings. Single or double bonds may connect the carbons in the ring, and nitrogen may be substituted for carbon."
+    },
+    "Figure_02_03_05-1847": {
+      "source": "media/Figure_02_03_05-1847.jpg",
+      "sourceSha256": "e0e88dffbc2b83f57c2fc2537d4a204330f6dbd60b29f0410ab78b3919cbfe41",
+      "module": "m66436",
+      "kind": "photo",
+      "width": 800,
+      "height": 606,
+      "variants": [
+        {
+          "width": 800,
+          "height": 606,
+          "file": "Figure_02_03_05-1847-800.webp"
+        }
+      ],
+      "alt": "Oleic acid and eliadic acid both consist of a long carbon chain. In oleic acid the chain is kinked due to the presence of a double bond about half way down, while in eliadic acid the chain is straight.",
+      "caption": "These space-filling models show a cis (oleic acid) and a trans (eliadic acid) fatty acid. Notice the bend in the molecule caused by the cis configuration."
+    },
+    "Figure_02_03_06-7bbb": {
+      "source": "media/Figure_02_03_06-7bbb.jpg",
+      "sourceSha256": "6cc5e63fade9a6ad290cb6895145bf02d14c7b4d05c31275d9bf9c2ca288c0d3",
+      "module": "m66436",
+      "kind": "photo",
+      "width": 1200,
+      "height": 901,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_02_03_06-7bbb-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 901,
+          "file": "Figure_02_03_06-7bbb-1200.webp"
+        }
+      ],
+      "alt": "Molecular models of D-and L-alanine are shown. The two molecules, which contain the same number of carbon, oxygen, hydrogen, and nitrogen atoms, are mirror images of one another. Below the images, a left hand is shown near the L-isomer and the right hand is shown near the D-isomer.",
+      "caption": "Enantiomers are molecules that are mirror images of each other and are non-superimposable. The L/D naming system is from the Latin words for left and right: laevus and dexter, respectively. This example shows the L and D isomers of the amino acid alanine. Credit: Rao, A., Hawkins, A., Fletcher, S. and Ryan K. Department of Biology, Texas A&M University."
+    },
+    "Figure_02_03_07-41a2": {
+      "source": "media/Figure_02_03_07-41a2.jpg",
+      "sourceSha256": "3e6abb5a9bc55d84c48d5ce807b4cc7edbc4b65170b8788ba8f15c7902d770d6",
+      "module": "m66436",
+      "kind": "photo",
+      "width": 721,
+      "height": 883,
+      "variants": [
+        {
+          "width": 721,
+          "height": 883,
+          "file": "Figure_02_03_07-41a2-721.webp"
+        }
+      ],
+      "alt": "Table shows the structure and properties of different functional groups. Hydroxyl groups, which consist of upper case O upper case H attached to a carbon chain, are polar. Methyl groups, which consist of three hydrogens attached to a carbon chain, are nonpolar. Carbonyl groups, which consist of an oxygen double bonded to a carbon in the middle of a hydrocarbon chain, are polar. Carboxyl groups, which consist of a carbon with a double bonded oxygen and an upper O upper H group attached to a carbon chain, are able to ionize, releasing H positive ions into solution. Carboxyl groups are considered acidic. Amino groups, which consist of two hydrogens attached to a nitrogen, are able to accept H positive ions from solution, forming H subscript 3 baseline positive. Amino groups are considered basic. Phosphate groups consist of a phosphorous with one double bonded oxygen and two upper O upper H groups. Another oxygen forms a link from the phosphorous to a carbon chain. Both upper O upper H groups in phosphorous can lose an H positive ion, and phosphate groups are considered acidic. Sulfhydryl group has an upper-case S upper-case H group bonded to a carbon chain. The bond is polar due to the small difference in electronegativity of sulfur and hydrogen.",
+      "caption": "These functional groups are in many different biological molecules. R, also known as R-group, is an abbreviation for any group in which a carbon or hydrogen atom is attached to the rest of the molecule."
+    },
+    "Figure_02_03_08-57ba": {
+      "source": "media/Figure_02_03_08-57ba.jpg",
+      "sourceSha256": "d189aa4fb533589c058cf170538d9082373a54e2bec4d039be1a0e387f55d9fb",
+      "module": "m66436",
+      "kind": "photo",
+      "width": 550,
+      "height": 403,
+      "variants": [
+        {
+          "width": 550,
+          "height": 403,
+          "file": "Figure_02_03_08-57ba-550.webp"
+        }
+      ],
+      "alt": "Molecular models show hydrogen bonding between thymine and adenine, and between cytosine and guanine. These four DNA bases are organic molecules containing carbon, nitrogen, oxygen, and hydrogen in complex ring structures. Hydrogen bonds between the bases hold them together.",
+      "caption": "Hydrogen bonds connect two strands of DNA together to create the double-helix structure."
+    },
+    "Figure_03_00_01-d483": {
+      "source": "media/Figure_03_00_01-d483.jpg",
+      "sourceSha256": "af090ea993364bfd13f7c55076a6293014ed7d5188bb186b94205090cd6cdcef",
+      "module": "m66437",
+      "kind": "photo",
+      "width": 544,
+      "height": 258,
+      "variants": [
+        {
+          "width": 544,
+          "height": 258,
+          "file": "Figure_03_00_01-d483-544.webp"
+        }
+      ],
+      "alt": "Photo shows a variety of cheeses, fruits, and breads served on a tray.",
+      "caption": "Foods such as bread, fruit, and cheese are rich sources of biological macromolecules. (credit: modification of work by Bengt Nyman)"
+    },
+    "Figure_03_01_01": {
+      "source": "media/Figure_03_01_01.jpg",
+      "sourceSha256": "2517297967c1ff92d670be441d583cb67c62dbe9f151944751db3189208070f2",
+      "module": "m66438",
+      "kind": "photo",
+      "width": 800,
+      "height": 181,
+      "variants": [
+        {
+          "width": 800,
+          "height": 181,
+          "file": "Figure_03_01_01-800.webp"
+        }
+      ],
+      "alt": "Shown is the reaction of two glucose monomers to form maltose. When maltose is formed, a water molecule is released. The components of the linkage are upper case O upper case H from one glucose molecule combining with one upper case H from the second glucose molecule.",
+      "caption": "In the dehydration synthesis reaction above, two glucose molecules link to form the disaccharide maltose. In the process, it forms a water molecule."
+    },
+    "Figure_03_01_02": {
+      "source": "media/Figure_03_01_02.jpg",
+      "sourceSha256": "4399386100e2943bfad2014b6c78ced575d94f51435bda6d705d1fb5d2a4c0b5",
+      "module": "m66438",
+      "kind": "photo",
+      "width": 800,
+      "height": 184,
+      "variants": [
+        {
+          "width": 800,
+          "height": 184,
+          "file": "Figure_03_01_02-800.webp"
+        }
+      ],
+      "alt": "Shown is the breakdown of maltose to form two glucose monomers. Water is a reactant. The water molecule, upper case H subscript 2 baseline upper case O, breaks apart, with upper O upper H obtained by one of the glucose molecules, and upper H obtained by the second glucose molecule.",
+      "caption": "In the hydrolysis reaction here, the disaccharide maltose breaks down to form two glucose monomers by adding a water molecule. Note that this reaction is the reverse of the synthesis reaction in ."
+    },
+    "Figure_03_02_01-40f7": {
+      "source": "media/Figure_03_02_01-40f7.jpg",
+      "sourceSha256": "78eeee8ff14be27e94356fa138b0b9ddd714b9720de8660ded6e41eea1ef393f",
+      "module": "m66440",
+      "kind": "photo",
+      "width": 800,
+      "height": 1077,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1077,
+          "file": "Figure_03_02_01-40f7-800.webp"
+        }
+      ],
+      "alt": "The molecular structures of glyceraldehyde, an aldose, and dihydroxyacetone, a ketose, are shown. Both sugars have a three-carbon backbone. Glyceraldehyde has a carbonyl group (c double bonded to O) at one end of the carbon chain with hydroxyl (OH) groups attached to the other carbons. Dihydroxyacetone has a carbonyl group in the middle of the chain and alcohol groups at each end. The molecular structures of linear forms of ribose, a pentose, and glucose, a hexose, are also shown. Both ribose and glucose are aldoses with a carbonyl group at the end of chain,and hydroxyl groups attached to the other carbons.",
+      "caption": "Scientists classify monosaccharides based on the position of their carbonyl group and the number of carbons in the backbone. Aldoses have a carbonyl group (indicated in green) at the end of the carbon chain, and ketoses have a carbonyl group in the middle of the carbon chain. Trioses, pentoses, and hexoses have three-, five-, and six- carbon backbones, respectively."
+    },
+    "Figure_03_02_02": {
+      "source": "media/Figure_03_02_02.png",
+      "sourceSha256": "f259c71b4900556ac59f1db0b120f341462ebdc334be209bdd02cc985afa60b6",
+      "module": "m66440",
+      "kind": "diagram",
+      "width": 725,
+      "height": 550,
+      "variants": [
+        {
+          "width": 725,
+          "height": 550,
+          "file": "Figure_03_02_02-725.webp"
+        }
+      ],
+      "alt": "The molecular structures of the linear forms of glucose, galactose, and fructose are shown. Glucose and galactose are both aldoses with a carbonyl group (carbon double-bonded to oxygen) at one end of the molecule. A hydroxyl (OH) group is attached to each of the other residues. In glucose, the hydroxyl group attached to the third carbon is on the left side of the molecular structure and all other hydroxyl groups are on the right. In galactose, the hydroxyl groups attached to the third and fourth carbons are on the left, and the hydroxyl groups attached to the second, fifth and sixth carbon are on the right. Fructose is a ketose with C doubled bonded to O at the second carbon. All other carbons have hydroxyl groups associated with them. The hydroxyl group associated with the third carbon is on the left, and all the other hydroxyl groups are on the right.",
+      "caption": "Glucose, galactose, and fructose are all hexoses. They are structural isomers, meaning they have the same chemical formula (C 6 H 12 O 6 ) but a different atom arrangement."
+    },
+    "Figure_03_02_03": {
+      "source": "media/Figure_03_02_03.jpg",
+      "sourceSha256": "f5b0b390908cfb962862648be9f0893be07278d8bbd8777d3b86fdec89645323",
+      "module": "m66440",
+      "kind": "photo",
+      "width": 800,
+      "height": 952,
+      "variants": [
+        {
+          "width": 800,
+          "height": 952,
+          "file": "Figure_03_02_03-800.webp"
+        }
+      ],
+      "alt": "The conversion of glucose between linear and ring forms is shown. The glucose ring has five carbons and an oxygen. In alpha glucose, the first hydroxyl group is locked in a down position, and in beta glucose, the ring is locked in an up position. Structures for ring forms of ribose and fructose are also shown. Both sugars have a ring with four carbons and an oxygen.",
+      "caption": "Five and six carbon monosaccharides exist in equilibrium between linear and ring forms. When the ring forms, the side chain it closes on locks into an α or β position. Fructose and ribose also form rings, although they form five-membered rings as opposed to the six-membered ring of glucose."
+    },
+    "Figure_03_02_04": {
+      "source": "media/Figure_03_02_04.jpg",
+      "sourceSha256": "9525032666190e18a40dc58c0193f772ef3a1df552e07b5d332ba1b894a54656",
+      "module": "m66440",
+      "kind": "photo",
+      "width": 552,
+      "height": 600,
+      "variants": [
+        {
+          "width": 552,
+          "height": 600,
+          "file": "Figure_03_02_04-552.webp"
+        }
+      ],
+      "alt": "The formation of sucrose from glucose and fructose is shown. In sucrose, the number one carbon of the glucose ring is connected to the number two carbon of fructose via an oxygen.",
+      "caption": "Sucrose forms when a glucose monomer and a fructose monomer join in a dehydration reaction to form a glycosidic bond. In the process, a water molecule is lost. By convention, the carbon atoms in a monosaccharide are numbered from the terminal carbon closest to the carbonyl group. In sucrose, a glycosidic linkage forms between carbon 1 in glucose and carbon 2 in fructose."
+    },
+    "Figure_03_02_05": {
+      "source": "media/Figure_03_02_05.jpg",
+      "sourceSha256": "73224722bb414696cb9d791784b361edd42c05da43881915321adc34dd960bd0",
+      "module": "m66440",
+      "kind": "photo",
+      "width": 800,
+      "height": 1180,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1180,
+          "file": "Figure_03_02_05-800.webp"
+        }
+      ],
+      "alt": "The chemical structures of maltose, lactose, and sucrose are shown. Both maltose and lactose are made from two glucose monomers joined together in ring form. In maltose, the oxygen in the glycosidic bond points downward. In lactose, the oxygen in the glycosidic bond points upward. Sucrose is made from glucose and fructose monomers. The oxygen in the glycosidic bond points downward.",
+      "caption": "Common disaccharides include maltose (grain sugar), lactose (milk sugar), and sucrose (table sugar)."
+    },
+    "Figure_03_02_06": {
+      "source": "media/Figure_03_02_06.png",
+      "sourceSha256": "53483e7ffc2d78e9df0c21cae0bd7879ac78213df191f558c64f2867962bd4f4",
+      "module": "m66440",
+      "kind": "diagram",
+      "width": 1600,
+      "height": 2628,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1314,
+          "file": "Figure_03_02_06-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2628,
+          "file": "Figure_03_02_06-1600.webp"
+        }
+      ],
+      "alt": "The chemical structures of amylose and amylopectin are shown. Amylose consists of unbranched chains of glucose subunits, and amylopectin consists of branched chains of glucose subunits.",
+      "caption": "Amylose and amylopectin are two different starch forms. Unbranched glucose monomer chains comprise amylose by α 1-4 glycosidic linkages. Branched glucose monomer chains comprise amylopectin by α 1-4 and α 1-6 glycosidic linkages. Because of the way the subunits are joined, the glucose chains have a helical structure. Glycogen (not shown) is similar in structure to amylopectin but more highly branched."
+    },
+    "Figure_03_02_07-cc7d": {
+      "source": "media/Figure_03_02_07-cc7d.jpg",
+      "sourceSha256": "a190b7cc135a01c22b0b094315f6d17154613ac87de04b640a9f4c87067aeba2",
+      "module": "m66440",
+      "kind": "photo",
+      "width": 1000,
+      "height": 771,
+      "variants": [
+        {
+          "width": 800,
+          "height": 616,
+          "file": "Figure_03_02_07-cc7d-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 771,
+          "file": "Figure_03_02_07-cc7d-1000.webp"
+        }
+      ],
+      "alt": "Three different magnifications of cellulose are shown. The microfibril is shown as a string-like tube. Further magnification shows that the microfibril is made up of chains of glucose molecules. Further magnification shows the structure of the glucose and that they are linked by hydrogen bonds.",
+      "caption": "Cellulose is an organic compound composed of linear chains of hundreds to thousands of linked glucose molecules. The glucose monomers form hydrogen bonds, holding the chains firmly together side-by-side and form strong microfibrils. This rigidity is an important structural component of the cell walls found in plants. Credit: Ryan, K. Rao, A. and Hawkins, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_03_02_08": {
+      "source": "media/Figure_03_02_08.jpg",
+      "sourceSha256": "85ed050a2bf0b677b48d5b335464858fe6ee549fa3dc99de83da1617640bff07",
+      "module": "m66440",
+      "kind": "photo",
+      "width": 544,
+      "height": 467,
+      "variants": [
+        {
+          "width": 544,
+          "height": 467,
+          "file": "Figure_03_02_08-544.webp"
+        }
+      ],
+      "alt": "A photograph shows a bee in flight, getting nectar from a flower.",
+      "caption": "Insects have a hard outer exoskeleton made of chitin, a type of polysaccharide. (credit: Louise Docker)"
+    },
+    "Figure_03_03_01": {
+      "source": "media/Figure_03_03_01.jpg",
+      "sourceSha256": "56a767fa2cf1838a6d7d15828551a137ed937f3fd7bcaa78fa936e0f2885d21f",
+      "module": "m66441",
+      "kind": "photo",
+      "width": 544,
+      "height": 544,
+      "variants": [
+        {
+          "width": 544,
+          "height": 544,
+          "file": "Figure_03_03_01-544.webp"
+        }
+      ],
+      "alt": "Photo shows a river otter swimming. The river otter has thick fur that is smooth and wet.",
+      "caption": "Hydrophobic lipids in aquatic mammals' fur, such as this river otter, protect them from the elements. (credit: Ken Bosma)"
+    },
+    "Figure_03_03_02-f094": {
+      "source": "media/Figure_03_03_02-f094.jpg",
+      "sourceSha256": "3b176ddb6b52efc5a8f1f88ad216eb01e32aa17f7ac1cc7628ace51ad514e83f",
+      "module": "m66441",
+      "kind": "photo",
+      "width": 800,
+      "height": 1056,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1056,
+          "file": "Figure_03_03_02-f094-800.webp"
+        }
+      ],
+      "alt": "The structures of glycerol, a fatty acid, and a triacylglycerol are shown. Glycerol is a chain of three carbons, with a hydroxyl (upper O upper H) group attached to each carbon. A fatty acid has an acetyl (upper C upper O upper O upper H) group attached to a long carbon chain. In triacylglycerol, a fatty acid is attached to each of glycerols three hydroxyl groups via the carboxyl group. A water molecule is lost in the reaction so the structure of the linkage is C dash O dash C, with an oxygen double bonded to the second carbon.",
+      "caption": "Joining three fatty acids to a glycerol backbone in a dehydration reaction forms triacylglycerol. Three water molecules release in the process."
+    },
+    "Figure_03_03_03-9520": {
+      "source": "media/Figure_03_03_03-9520.jpg",
+      "sourceSha256": "4d47116c861466dd66efeaeabcecf4511d72dec5fc905bc5837cd0eafff1809e",
+      "module": "m66441",
+      "kind": "photo",
+      "width": 800,
+      "height": 126,
+      "variants": [
+        {
+          "width": 800,
+          "height": 126,
+          "file": "Figure_03_03_03-9520-800.webp"
+        }
+      ],
+      "alt": "The structure of stearic acid is shown. This fatty acid has a hydrocarbon chain seventeen residues long attached to an acetyl group. All bonds between the carbons are single bonds.",
+      "caption": "Stearic acid is a common saturated fatty acid."
+    },
+    "Figure_03_03_04-a3a2": {
+      "source": "media/Figure_03_03_04-a3a2.jpg",
+      "sourceSha256": "650e0eeae5289c25eba302033b0530a3f89a572a6e34861db1e865ee7d5644a1",
+      "module": "m66441",
+      "kind": "photo",
+      "width": 800,
+      "height": 126,
+      "variants": [
+        {
+          "width": 800,
+          "height": 126,
+          "file": "Figure_03_03_04-a3a2-800.webp"
+        }
+      ],
+      "alt": "The structure of oleic acid is shown. This fatty acid has a hydrocarbon chain seventeen residues long attached to an acetyl group. The bond between carbon eight and carbon nine is a double bond.",
+      "caption": "Oleic acid is a common unsaturated fatty acid."
+    },
+    "Figure_03_03_05-ff6c": {
+      "source": "media/Figure_03_03_05-ff6c.jpg",
+      "sourceSha256": "016bbcda3d75847a62d0d62e5cfa6df0a904a9688e435bf3f6353ae4495d211e",
+      "module": "m66441",
+      "kind": "photo",
+      "width": 800,
+      "height": 814,
+      "variants": [
+        {
+          "width": 800,
+          "height": 814,
+          "file": "Figure_03_03_05-ff6c-800.webp"
+        }
+      ],
+      "alt": "A comparison of saturated and unsaturated fatty acids is shown. Stearic acid, a saturated fatty acid, has a hydrocarbon chain seventeen residues long attached to an acetyl group. Oleic acid also has a seventeen-residue hydrocarbon chain, but a double bond exists between the eighth and ninth carbon in the chain. In cis oleic acid, the hydrogens are on the same side of the double bond. In the cis oleic acid, the 2 hydrogens on the same side cause the chain to bend. In trans oleic acid, they are on opposite sides.",
+      "caption": "Saturated fatty acids have hydrocarbon chains connected by single bonds only. Unsaturated fatty acids have one or more double bonds. Each double bond may be in a cis or trans configuration. In the cis configuration, both hydrogens are on the same side of the hydrocarbon chain. In the trans configuration, the hydrogens are on opposite sides. A cis double bond causes a kink in the chain."
+    },
+    "Figure_03_03_07-cb9e": {
+      "source": "media/Figure_03_03_07-cb9e.jpg",
+      "sourceSha256": "b28a3541e541adaa22e4f6435fd95c0c40a5193a0dedcdd9259fae97f5fac861",
+      "module": "m66441",
+      "kind": "photo",
+      "width": 469,
+      "height": 329,
+      "variants": [
+        {
+          "width": 469,
+          "height": 329,
+          "file": "Figure_03_03_07-cb9e-469.webp"
+        }
+      ],
+      "alt": "The molecular structures of alpha-linolenic acid, an omega-3 fatty acid is shown. Alpha-linolenic acid has three double bonds located eight, eleven, and fourteen residues from the acetyl group. It has a hooked shape.",
+      "caption": "Alpha-linolenic acid is an example of an omega-3 fatty acid. It has three cis double bonds and, as a result, a curved shape. For clarity, the diagram does not show the carbons. Each singly bonded carbon has two hydrogens associated with it, which the diagram also does not show."
+    },
+    "Figure_03_03_08": {
+      "source": "media/Figure_03_03_08.png",
+      "sourceSha256": "90a16a6b03fc061688b920ecb51946f416057fc4669ce14d44739424372f6440",
+      "module": "m66441",
+      "kind": "diagram",
+      "width": 2007,
+      "height": 1288,
+      "variants": [
+        {
+          "width": 800,
+          "height": 513,
+          "file": "Figure_03_03_08-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1027,
+          "file": "Figure_03_03_08-1600.webp"
+        }
+      ],
+      "alt": "The molecular structure of a phospholipid is shown. It consists of two fatty acids attached to the first and second carbons in glycerol, and a phosphate group attached to the third position. In the illustration one of the fatty acids is saturated and straight, and the second is unsaturated and bent. Both are below the glycerol molecule. The phosphate group may be further modified by addition of another molecule to one of its oxygens indicated by upper-case R. Two molecules may modify the phosphate group, choline and serine. The glycerol and phosphate group make up the hydrophilic head of the molecule, while the fatty acids attached below make up the hydrophobic tails.",
+      "caption": "A phospholipid is a molecule with two fatty acids and a modified phosphate group attached to a glycerol backbone. Adding a charged or polar chemical group may modify the phosphate."
+    },
+    "Figure_03_03_09-0814": {
+      "source": "media/Figure_03_03_09-0814.jpg",
+      "sourceSha256": "54347a68bd709e71d059a2ce2c804869b9cbf1ae45ebe53c083cc41faf60d57e",
+      "module": "m66441",
+      "kind": "photo",
+      "width": 544,
+      "height": 289,
+      "variants": [
+        {
+          "width": 544,
+          "height": 289,
+          "file": "Figure_03_03_09-0814-544.webp"
+        }
+      ],
+      "alt": "An illustration of a phospholipids bilayer is shown. The phospholipids bilayer consists of two layers of phospholipids. The hydrophobic tails of the phospholipids face one another while the hydrophilic head groups face outward.",
+      "caption": "The phospholipid bilayer is the major component of all cellular membranes. The hydrophilic head groups of the phospholipids face the aqueous solution. The hydrophobic tails are sequestered in the middle of the bilayer."
+    },
+    "Figure_03_03_10-a6ce": {
+      "source": "media/Figure_03_03_10-a6ce.jpg",
+      "sourceSha256": "1acf14c350626b49776596eb10312e5d11325112747288bd365e366de1b9a699",
+      "module": "m66441",
+      "kind": "photo",
+      "width": 544,
+      "height": 635,
+      "variants": [
+        {
+          "width": 544,
+          "height": 635,
+          "file": "Figure_03_03_10-a6ce-544.webp"
+        }
+      ],
+      "alt": "The structures of cholesterol and cortisol are shown. Each of these molecules is composed of three six-carbon rings fused to a five-carbon ring. Cholesterol has a branched hydrocarbon attached to the five-carbon ring, and a hydroxyl group attached to the terminal six-carbon ring. Cortisol has a two-carbon chain modified with a double-bonded oxygen, a hydroxyl group attached to the five-carbon ring, and an oxygen double-bonded to the terminal six-carbon ring.",
+      "caption": "Four fused hydrocarbon rings comprise steroids such as cholesterol and cortisol."
+    },
+    "Figure_03_03_11": {
+      "source": "media/Figure_03_03_11.jpg",
+      "sourceSha256": "452a57fd4f8dd225e9ca7b997dbb1c5c1ad85718e7b9407ec0e2141e11cb6e5b",
+      "module": "m66441",
+      "kind": "photo",
+      "width": 544,
+      "height": 407,
+      "variants": [
+        {
+          "width": 544,
+          "height": 407,
+          "file": "Figure_03_03_11-544.webp"
+        }
+      ],
+      "alt": "The photo shows leaves on a plant; the leaves appear thick, shiny, and waxy.",
+      "caption": "Lipids comprise waxy coverings on some leaves. (credit: Roger Griffith)"
+    },
+    "Figure_03_04_01": {
+      "source": "media/Figure_03_04_01.png",
+      "sourceSha256": "78807c4f025ee6886ca3486a9916d8a8a97a6abd8e9322669cdbb976cbd0315c",
+      "module": "m66442",
+      "kind": "diagram",
+      "width": 1030,
+      "height": 746,
+      "variants": [
+        {
+          "width": 800,
+          "height": 579,
+          "file": "Figure_03_04_01-800.webp"
+        },
+        {
+          "width": 1030,
+          "height": 746,
+          "file": "Figure_03_04_01-1030.webp"
+        }
+      ],
+      "alt": "The molecular structure of an amino acid is given. An amino acid has an alpha carbon to which an amino group, a carboxyl group, a hydrogen, and a side chain are attached. The side chain varies for different amino acids, and is designated as the R - group.",
+      "caption": "Amino acids have a central asymmetric carbon to which an amino group, a carboxyl group, a hydrogen atom, and a side chain (R group) are attached."
+    },
+    "Figure_03_04_02-fd30": {
+      "source": "media/Figure_03_04_02-fd30.jpg",
+      "sourceSha256": "525e2d9f5ce97e85082386a8b0ba42728592abcd3b20b18d5f2f0be0bfc350ed",
+      "module": "m66442",
+      "kind": "photo",
+      "width": 1043,
+      "height": 966,
+      "variants": [
+        {
+          "width": 800,
+          "height": 741,
+          "file": "Figure_03_04_02-fd30-800.webp"
+        },
+        {
+          "width": 1043,
+          "height": 966,
+          "file": "Figure_03_04_02-fd30-1043.webp"
+        }
+      ],
+      "alt": "The molecular structures of the twenty amino acids commonly found in proteins are given. These are divided into five categories: nonpolar aliphatic, polar uncharged, positively charged, negatively charged, and aromatic. Nonpolar aliphatic amino acids include glycine, alanine, valine, leucine, methionine, isoleucine, and proline. Polar uncharged amino acids include serine, threonine, cysteine, asparagine, and glutamine. Positively charged amino acids include lysine, arginine, and histidine. Negatively charged amino acids include aspartate and glutamate. Aromatic amino acids include phenylalanine, tyrosine, and tryptophan. For example, in the amino acid glycine, the R group is a single hydrogen; but in alanine the R group is upper C upper H subscript 3 baseline.",
+      "caption": "There are 20 common amino acids commonly found in proteins, each with a different R group (variant group) that determines its chemical nature."
+    },
+    "Figure_03_04_03": {
+      "source": "media/Figure_03_04_03.jpg",
+      "sourceSha256": "52cb34b47ce0980e2b121b9f9ee3139b301af9e93ef1618762e76574a228fb99",
+      "module": "m66442",
+      "kind": "photo",
+      "width": 421,
+      "height": 303,
+      "variants": [
+        {
+          "width": 421,
+          "height": 303,
+          "file": "Figure_03_04_03-421.webp"
+        }
+      ],
+      "alt": "The formation of a peptide bond between two amino acids is shown. When the peptide bond forms, the carbon from the carbonyl group becomes attached to the nitrogen from the amino group. The upper O upper H from the carboxyl group and an upper H from the amino group form a molecule of water.",
+      "caption": "Peptide bond formation is a dehydration synthesis reaction. The carboxyl group of one amino acid is linked to the incoming amino acid's amino group. In the process, it releases a water molecule."
+    },
+    "Figure_03_04_04": {
+      "source": "media/Figure_03_04_04.jpg",
+      "sourceSha256": "a311bba491872df07af14ff0f25a54910e7df15d0b158c16d76f9ae35fa07758",
+      "module": "m66442",
+      "kind": "photo",
+      "width": 1117,
+      "height": 546,
+      "variants": [
+        {
+          "width": 800,
+          "height": 391,
+          "file": "Figure_03_04_04-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 546,
+          "file": "Figure_03_04_04-1117.webp"
+        }
+      ],
+      "alt": "The amino acid sequences for the A chain and B chain of bovine insulin are shown. The A chain is 21 amino acids in length, and the B chain is 30 amino acids in length. One disulfide, or S S bond, connects two cysteine residues in the A chain. Two other disulfide linkages connect the A chain to the B chain.",
+      "caption": "Bovine serum insulin is a protein hormone comprised of two peptide chains, A (21 amino acids long) and B (30 amino acids long). In each chain, three-letter abbreviations that represent the amino acids' names in the order they are present indicate primary structure. The amino acid cysteine (cys) has a sulfhydryl (SH) group as a side chain. Two sulfhydryl groups can react in the presence of oxygen to form a disulfide (S-S) bond. Two disulfide bonds connect the A and B chains together, and a third helps the A chain fold into the correct shape. Note that all disulfide bonds are the same length, but we have drawn them different sizes for clarity."
+    },
+    "Figure_03_04_05-3127": {
+      "source": "media/Figure_03_04_05-3127.jpg",
+      "sourceSha256": "e3bb4abff78c333bedb8ad9021bc642d9d643386b8d4f2d7f6c15cb5df36aec3",
+      "module": "m66442",
+      "kind": "photo",
+      "width": 1200,
+      "height": 900,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_03_04_05-3127-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 900,
+          "file": "Figure_03_04_05-3127-1200.webp"
+        }
+      ],
+      "alt": "Several representations of hemoglobin proteins are shown under normal and sickle cell conditions. In primary structure, the sixth amino acid is replaced by valine. In secondary and tertiary structures, the sickle cell is revealed by a misshapen molecule. As a result, in function, normal hemoglobins do not associate with each other, and each can carry oxygen. But in sickle cell conditions, the proteins aggregate into a fiber and oxygen carrying capacity is reduced.",
+      "caption": "Because of this change of one amino acid in the chain, hemoglobin molecules form long fibers that distort the biconcave, or disc-shaped, red blood cells and causes them to assume a crescent or “sickle” shape, which clogs blood vessels (Figure 3.27). The beta (β)- chain of hemoglobin is 147 amino acids in length, yet a single amino acid substitution in the primary sequence leads to changes in secondary, tertiary, and quaternary structures and sickle cell anemia. In normal hemoglobin, the amino acid at position six is glutamate. In sickle cell hemoglobin glutamate is replaced by valine. (credit: Rao, A., Tag, A. Ryan, K. and Fletcher, S. Department of Biology, Texas A&M University)"
+    },
+    "Figure_03_04_06": {
+      "source": "media/Figure_03_04_06.jpg",
+      "sourceSha256": "a07cdabcaafe9828bde1a0e7eae4e7c963a1fff7e2b9c82ce0c167b98b82bc99",
+      "module": "m66442",
+      "kind": "photo",
+      "width": 545,
+      "height": 364,
+      "variants": [
+        {
+          "width": 545,
+          "height": 364,
+          "file": "Figure_03_04_06-545.webp"
+        }
+      ],
+      "alt": "This electron micrograph shows red blood cells from a patient with sickle cell anemia. Most of the cells have a normal, disk shape, but about one in five has a sickle shape. A normal blood cell is eight microns across.",
+      "caption": "In this blood smear, visualized at 535x magnification using bright field microscopy, sickle cells are crescent shaped, while normal cells are disc-shaped. (credit: modification of work by Ed Uthman; scale-bar data from Matt Russell)"
+    },
+    "Figure_03_04_07-ffb1": {
+      "source": "media/Figure_03_04_07-ffb1.jpg",
+      "sourceSha256": "e98883885e5f9b8bda1e551bf1e55ae5f3757a4166b507605fc28b7803010947",
+      "module": "m66442",
+      "kind": "photo",
+      "width": 1000,
+      "height": 741,
+      "variants": [
+        {
+          "width": 800,
+          "height": 592,
+          "file": "Figure_03_04_07-ffb1-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 741,
+          "file": "Figure_03_04_07-ffb1-1000.webp"
+        }
+      ],
+      "alt": "The illustration shows an alpha helix protein structure, which coils like a spring, and a beta-pleated sheet structure, which forms flat sheets stacked together. In an alpha-helix, hydrogen bonding occurs between the carbonyl group of one amino acid and the amino group of the amino acid that occurs four residues later. In a beta-pleated sheet, hydrogen bonding occurs between two different lengths of peptide that are antiparallel to one another.",
+      "caption": "The α -helix and β -pleated sheet are secondary protein structures formed when hydrogen bonds form between the carbonyl oxygen and the amino hydrogen in the peptide backbone. Certain amino acids have a propensity to form an α-helix while others favor β-pleated sheet formation. Black = carbon, White = hydrogen, Blue = nitrogen, and Red = oxygen. Credit: Rao, A., Ryan, K. Fletcher, S. and Tag, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_03_04_08": {
+      "source": "media/Figure_03_04_08.jpg",
+      "sourceSha256": "9f00ecd2c980a2efe1be851486e90ddb9931a29d24af3935674033dd1524fdd1",
+      "module": "m66442",
+      "kind": "photo",
+      "width": 1117,
+      "height": 637,
+      "variants": [
+        {
+          "width": 800,
+          "height": 456,
+          "file": "Figure_03_04_08-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 637,
+          "file": "Figure_03_04_08-1117.webp"
+        }
+      ],
+      "alt": "This illustration shows a polypeptide backbone folded into a three-dimensional structure. Chemical interactions between amino acid side chains maintain its shape. These include an ionic bond between an amino group and a carboxyl group, hydrophobic interactions between two hydrophobic side chains, a hydrogen bond between a hydroxyl group and a carbonyl group, and a disulfide linkage.",
+      "caption": "A variety of chemical interactions determine the proteins' tertiary structure. These include hydrophobic interactions, ionic bonding, hydrogen bonding, and disulfide linkages."
+    },
+    "Figure_03_04_09-fda7": {
+      "source": "media/Figure_03_04_09-fda7.jpg",
+      "sourceSha256": "5d91d20b10e84f4e078d1ea5e48d9f3049507a95ef7e91a942bbada8bb38b724",
+      "module": "m66442",
+      "kind": "photo",
+      "width": 1300,
+      "height": 975,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_03_04_09-fda7-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 975,
+          "file": "Figure_03_04_09-fda7-1300.webp"
+        }
+      ],
+      "alt": "Shown are the four levels of protein structure. The primary structure is the amino acid sequence. Secondary structure is a regular folding pattern due to hydrogen bonding. Tertiary structure is the three-dimensional folding pattern of the protein due to interactions between amino acid side chains. Quaternary structure is the interaction of two or more polypeptide chains.",
+      "caption": "Observe the four levels of protein structure in these illustrations. Credit: Rao, A. Ryan, K. and Tag, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_03_05_01-d787": {
+      "source": "media/Figure_03_05_01-d787.jpg",
+      "sourceSha256": "1c35719b73b28c16df39be53e7d6c9464c068f735da5de64179c58d4a1148609",
+      "module": "m66443",
+      "kind": "photo",
+      "width": 1118,
+      "height": 1105,
+      "variants": [
+        {
+          "width": 800,
+          "height": 790,
+          "file": "Figure_03_05_01-d787-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 1105,
+          "file": "Figure_03_05_01-d787-1118.webp"
+        }
+      ],
+      "alt": "The molecular structure of a nucleotide is shown. The core of the nucleotide is a pentose whose carbon residues are numbered one prime through five prime. The base is attached to the one prime carbon, and the phosphate is attached to the five prime carbon. Two kinds of pentose are found in nucleotides: ribose and deoxyribose. Deoxyribose has an H instead of O H at the two prime position. Five kinds of base are found in nucleotides. Two of these, adenine and guanine, are purine bases with two rings fused together. The other three, cytosine, thymine and uracil, have one six-membered ring.",
+      "caption": "Three components comprise a nucleotide: a nitrogenous base, a pentose sugar, and one or more phosphate groups. Carbon residues in the pentose are numbered 1′ through 5′ (the prime distinguishes these residues from those in the base, which are numbered without using a prime notation). The base is attached to the ribose's 1′ position, and the phosphate is attached to the 5′ position. When a polynucleotide forms, the incoming nucleotide's 5′ phosphate attaches to the 3′ hydroxyl group at the end of the growing chain. Two types of pentose are in nucleotides, deoxyribose (found in DNA) and ribose (found in RNA). Deoxyribose is similar in structure to ribose, but it has an H instead of an OH at the 2′ position. We can divide bases into two categories: purines and pyrimidines. Purines have a double ring structure, and pyrimidines have a single ring."
+    },
+    "Figure_03_05_02-fbf5": {
+      "source": "media/Figure_03_05_02-fbf5.jpg",
+      "sourceSha256": "f034c41d98de71b52aa4a5b9c6252d77e3829ab6c7815d8721a044ce9601db74",
+      "module": "m66443",
+      "kind": "photo",
+      "width": 544,
+      "height": 581,
+      "variants": [
+        {
+          "width": 544,
+          "height": 581,
+          "file": "Figure_03_05_02-fbf5-544.webp"
+        }
+      ],
+      "alt": "The molecular structure of D N A is shown. D N A consists of two antiparallel strands twisted in a double helix. The phosphate backbone is on the outside, and the nitrogenous bases face one another on the inside. The bases appear as strands between the phosphate backbone of the double helix.",
+      "caption": "Native DNA is an antiparallel double helix. The phosphate backbone (indicated by the curvy lines) is on the outside, and the bases are on the inside. Each base from one strand interacts via hydrogen bonding with a base from the opposing strand. (credit: Jerome Walker/Dennis Myts)"
+    },
+    "Figure_03_05_03-4351": {
+      "source": "media/Figure_03_05_03-4351.png",
+      "sourceSha256": "4796f21cf31cb9093571c472fa3e2680ed26b50972120da01f2d5a31c0c80383",
+      "module": "m66443",
+      "kind": "diagram",
+      "width": 469,
+      "height": 285,
+      "variants": [
+        {
+          "width": 469,
+          "height": 285,
+          "file": "Figure_03_05_03-4351-469.webp"
+        }
+      ],
+      "alt": "Hydrogen bonding between thymine and adenine and between guanine and cytosine is shown. Thymine forms two hydrogen bonds with adenine, and guanine forms three hydrogen bonds with cytosine. The phosphate backbones of each strand are on the outside and run in opposite directions.",
+      "caption": "In a double stranded DNA molecule, the two strands run antiparallel to one another so that one strand runs 5′ to 3′ and the other 3′ to 5′. The phosphate backbone is located on the outside, and the bases are in the middle. Adenine forms hydrogen bonds (or base pairs) with thymine, and guanine base pairs with cytosine."
+    },
+    "Figure_03_05_04": {
+      "source": "media/Figure_03_05_04.jpg",
+      "sourceSha256": "5c6e1e3cbf257a4e16a5bed2bdfff42cd543aacf1efcce0191890ca357516e4b",
+      "module": "m66443",
+      "kind": "photo",
+      "width": 544,
+      "height": 260,
+      "variants": [
+        {
+          "width": 544,
+          "height": 260,
+          "file": "Figure_03_05_04-544.webp"
+        }
+      ],
+      "alt": "An illustration of a ribosome is shown. m R N A sits between the large and small subunits. t R N A molecules bind the ribosome and add amino acids to the growing peptide chain.",
+      "caption": "A ribosome has two parts: a large subunit and a small subunit. The mRNA sits in between the two subunits. A tRNA molecule recognizes a codon on the mRNA, binds to it by complementary base pairing, and adds the correct amino acid to the growing peptide chain."
+    },
+    "Figure_03_Asses_01": {
+      "source": "media/Figure_03_Asses_01.png",
+      "sourceSha256": "bbed2c5e3c55e521e1281f5eb654dc21a4523866e3401ff9b9f24f2f24d93c63",
+      "module": "m66438",
+      "kind": "diagram",
+      "width": 313,
+      "height": 209,
+      "variants": [
+        {
+          "width": 313,
+          "height": 209,
+          "file": "Figure_03_Asses_01-313.webp"
+        }
+      ],
+      "alt": "The generic structure of amino acids is shown. A nitrogen atom is single bonded to two hydrogen atoms and one carbon atoms. The carbon atom is single bonded to one hydrogen atom, one R atom, and one carbon atom. R represents different carbon-based side chains. The carbon atom is double bonded to one oxygen atom and single bonded to a hydroxide atom.",
+      "caption": ""
+    },
+    "Figure_03_Asses_02": {
+      "source": "media/Figure_03_Asses_02.png",
+      "sourceSha256": "247998cf75af47a5434c5f24b09a7eab9d555f5d8d1a9ad611cbd57acb5bdb1f",
+      "module": "m66440",
+      "kind": "diagram",
+      "width": 502,
+      "height": 257,
+      "variants": [
+        {
+          "width": 502,
+          "height": 257,
+          "file": "Figure_03_Asses_02-502.webp"
+        }
+      ],
+      "alt": "A chemical structure diagram of dihydroxyacetone (C3H6O3), featuring a central carbonyl group and two terminal hydroxyl groups attached to a three-carbon chain.",
+      "caption": ""
+    },
+    "Figure_03_Asses_03": {
+      "source": "media/Figure_03_Asses_03.png",
+      "sourceSha256": "4472268251df37c1709e14d616a91e5943c0bbafac91fb92c7baeb318be39f23",
+      "module": "m66440",
+      "kind": "diagram",
+      "width": 422,
+      "height": 297,
+      "variants": [
+        {
+          "width": 422,
+          "height": 297,
+          "file": "Figure_03_Asses_03-422.webp"
+        }
+      ],
+      "alt": "The chemical structure of glyceraldehyde, a simple monosaccharide and an aldotriose.",
+      "caption": ""
     }
   }
 }

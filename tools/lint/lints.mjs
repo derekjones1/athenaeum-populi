@@ -1252,8 +1252,15 @@ export function lintHugo(src, filename = '', options = {}) {
   // them, so a superscript character is the only way an exponent can appear at
   // all, which is why `x²` and `x⁶` are already written that way throughout the
   // figures. Writing `f^{-1}(x)` there prints those five characters verbatim.
-  for (const m of withoutFigureSpecs(src, blank).matchAll(/⁻/g)) {
-    err(m.index, 'unicode superscript minus — write a braced exponent like 10^{-3}');
+  // The other legitimate home of the character is an ion charge in chemistry
+  // prose — `Cl⁻`, `HCO₃⁻`, `COO⁻`, `SO₄²⁻` — which the biology playbook
+  // prescribes (formulas are Unicode, never `$…$`). A charge is a TRAILING
+  // sign: it follows a letter, a subscript digit, a closing paren, or a
+  // superscript digit and is not itself followed by a superscript digit. An
+  // exponent (`10⁻³`, `f⁻¹`) always has a superscript digit after the sign,
+  // so the two never overlap.
+  for (const m of withoutFigureSpecs(src, blank).matchAll(/(?<![A-Za-z\u2080-\u2089)\u00B2\u00B3\u2074-\u2079])⁻|⁻(?=[\u2070\u00B9\u00B2\u00B3\u2074-\u2079])/g)) {
+    err(m.index, 'unicode superscript minus — write a braced exponent like 10^{-3} (an ion charge such as `Cl⁻` or `HCO₃⁻` is allowed)');
   }
   // Mathematics in an EXERCISE is typeset, not spelled with lookalike
   // characters. Chapters 1-4 write every symbol as TeX inside `$…$`; the
@@ -1273,7 +1280,13 @@ export function lintHugo(src, filename = '', options = {}) {
   //
   // `°` is exempt as a unit of TEMPERATURE (`165°F`, `100° Fahrenheit`),
   // which is prose, and is written that way in §4.7's cooling models.
+  //
+  // A Greek letter used as a NOMENCLATURE PREFIX — `α-helix`, `β-pleated
+  // sheet`, `ω-3 fatty acid`, `α-carbon` — is a word, not a variable: the
+  // biology glossary prints it that way and a learner types it that way. The
+  // hyphen is what marks the prefix; a bare `θ` or `α = 30` stays math.
   const UNICODE_MATH = /[°πθαβγλμω√≤≥≠]/g;
+  const GREEK_PREFIX = /[αβγλμω]-/g;
   const DEGREE_OF_TEMPERATURE = /°\s*(?:F\b|C\b|Fahrenheit|Celsius)/gi;
   for (const sc of [...shortcodes(mediaSrc, 'fillin'), ...shortcodes(mediaSrc, 'multiplechoice')]) {
     // Spans, not `mediaSrc.indexOf(sc.params[key])`. The params are unescaped,
@@ -1288,7 +1301,7 @@ export function lintHugo(src, filename = '', options = {}) {
       const span = spans[key];
       const text = span.raw;
       const at = sc.openIndex + span.index;
-      const prose = maskMathSpans(text, blank).replace(DEGREE_OF_TEMPERATURE, blank);
+      const prose = maskMathSpans(text, blank).replace(DEGREE_OF_TEMPERATURE, blank).replace(GREEK_PREFIX, blank);
       for (const m of prose.matchAll(UNICODE_MATH)) {
         err(at + m.index, `unicode math character ${JSON.stringify(m[0])} in ${key} — typeset it as TeX inside $…$ (° for temperature and figure-spec labels are exempt)`);
       }
