@@ -2,10 +2,11 @@
      themes/hextra). The one change: a "Scroll to top" button, hidden until
      assets/js/navbar-compact.js marks <html> `ap-nav-compact` once the
      reader has scrolled into the article — at which point the shelf links,
-     Home/About, and the title text fold away and the bar becomes a shorter
-     centred row of the logo, search, and this button (assets/css/custom.css,
-     "Compact navbar on scroll"). Keep the rest byte-identical to the theme
-     file so a theme upgrade is a diff of exactly this hook. */ -}}
+     Home/About, and the title text fold away and the bar becomes a small
+     top-right cluster of the logo, search, and this button, sized to the
+     "On this page" rail column (assets/css/custom.css, "Compact navbar on
+     scroll"). Keep the rest byte-identical to the theme file so a theme
+     upgrade is a diff of exactly this hook. */ -}}
 {{- $navWidth := "hx:max-w-[90rem]" -}}
 {{- with .Site.Params.navbar.width -}}
   {{ if eq . "normal" -}}

@@ -1012,13 +1012,15 @@ test('the shelf drawer names its books, and the navbar switches shape by width',
   expect(wide.titleLeft).toBeGreaterThanOrEqual(0);
 });
 
-test('the navbar folds to logo, search, and scroll-to-top while reading, and unfolds at the top', async ({ page }) => {
+test('the navbar folds to a top-right cluster of logo, search, and scroll-to-top while reading, and unfolds at the top', async ({ page }) => {
   // A row of six shelf links pinned above every paragraph is noise for a
   // learner inside one book. assets/js/navbar-compact.js marks the container
   // once the page has scrolled; assets/css/custom.css ("Compact navbar on
-  // scroll") decides what folds: the painted bar drops to 3rem with the logo
-  // and search centred, while the sticky container keeps its 4rem in flow so
-  // the article does not jump, and the rails follow the shorter bar.
+  // scroll") decides what folds: the bar goes away and a 3rem cluster of the
+  // logo, search, and the button sits at the top-right, over the "On this
+  // page" rail column, while the sticky container keeps its 4rem in flow so
+  // the article does not jump; the sidebar rises to the top and the rail
+  // meets the cluster.
   await page.setViewportSize({ width: 1440, height: 800 });
   await gotoBuiltPage(page, '/math/prealgebra/03-integers/03-subtract-integers/');
 
@@ -1033,10 +1035,14 @@ test('the navbar folds to logo, search, and scroll-to-top while reading, and unf
       compact: document.documentElement.classList.contains('ap-nav-compact'),
       height: Math.round(box(nav).height),
       flowHeight: Math.round(box(container).height),
-      // Gap between the logo and the search box, and whether the pair sits
-      // in the middle of the viewport (centre within 40px of the midpoint).
+      // Gap between the logo and the search box; whether the cluster is
+      // flush with the viewport's right edge (within a scrollbar's width) and
+      // the logo starts on the rail heading's left edge; and whether the
+      // painted backdrop is the cluster's width, not the viewport's.
       adjacent: Math.round(searchBox.left - logoBox.right) < 24,
-      centred: Math.abs((logoBox.left + searchBox.right) / 2 - window.innerWidth / 2) < 40,
+      flushRight: Math.abs(box(nav).right - document.documentElement.clientWidth) < 2,
+      logoOnRail: Math.abs(logoBox.left - box(document.querySelector('.hextra-toc > div')).left) < 2,
+      backdropWidth: Math.round(box(container.querySelector('.hextra-nav-container-blur')).width),
       sidebarTop: Math.round(box(document.querySelector('.hextra-sidebar-container')).top),
       tocTop: Math.round(box(document.querySelector('.hextra-toc > div')).top),
       logo: visible(nav.querySelector('a > img')),
@@ -1049,8 +1055,9 @@ test('the navbar folds to logo, search, and scroll-to-top while reading, and unf
   });
 
   expect(await shape()).toEqual({
-    // `centred` says nothing here: the logo and search span the whole bar.
-    compact: false, height: 64, flowHeight: 64, adjacent: false, centred: expect.any(Boolean), sidebarTop: 64, tocTop: 64,
+    // `flushRight` says nothing here: the full bar is a centred 90rem row.
+    compact: false, height: 64, flowHeight: 64, adjacent: false, flushRight: expect.any(Boolean), logoOnRail: false,
+    backdropWidth: 1440, sidebarTop: 64, tocTop: 64,
     logo: true, title: true, shelves: 6, pages: 2, search: true, top: false,
   });
 
@@ -1062,9 +1069,16 @@ test('the navbar folds to logo, search, and scroll-to-top while reading, and unf
   await expect.poll(async () => (await shape()).compact).toBe(true);
   const foldedHeadingTop = await headingTop();
   expect(await shape()).toEqual({
-    compact: true, height: 48, flowHeight: 64, adjacent: true, centred: true, sidebarTop: 48, tocTop: 48,
+    compact: true, height: 48, flowHeight: 64, adjacent: true, flushRight: true, logoOnRail: true,
+    backdropWidth: 256, sidebarTop: 0, tocTop: 48,
     logo: true, title: false, shelves: 0, pages: 0, search: true, top: true,
   });
+  // The article's top strip is clear: nothing in the container's box catches
+  // a click left of the cluster.
+  expect(await page.evaluate(() => {
+    const hit = document.elementFromPoint(600, 24);
+    return Boolean(hit && hit.closest('.hextra-nav-container'));
+  }), 'the folded bar still covers the article').toBe(false);
   await page.evaluate(() => window.scrollTo(0, 60));
   await expect.poll(async () => (await shape()).compact).toBe(false);
   await page.evaluate(() => window.scrollTo(0, 900));
@@ -1087,14 +1101,32 @@ test('the navbar folds to logo, search, and scroll-to-top while reading, and unf
     () => document.activeElement === document.querySelector('.hextra-nav-container nav > a'),
   )).toBe(true);
 
-  // Below md the shelves already live in the hamburger drawer; folding must
-  // leave the hamburger in place beside the logo and the button.
+  // Below md the shelves already live in the hamburger drawer and the theme
+  // keeps the search box out of the bar; folding must leave the hamburger in
+  // the cluster beside the logo and the button, and the drawer must open
+  // beneath the cluster so the hamburger that closes it stays reachable.
   await page.setViewportSize({ width: 390, height: 844 });
   await page.evaluate(() => window.scrollTo(0, 900));
   await expect.poll(async () => (await shape()).compact).toBe(true);
   const hamburgerVisible = await page.locator('.hextra-hamburger-menu').isVisible();
   expect(hamburgerVisible).toBe(true);
   expect((await shape()).top).toBe(true);
+  expect(await page.evaluate(() => {
+    const box = (sel) => document.querySelector(sel).getBoundingClientRect();
+    const nav = box('.hextra-nav-container nav');
+    const hamburger = box('.hextra-hamburger-menu');
+    return { navRight: Math.round(nav.right), hamburgerInside: hamburger.right <= nav.right + 1 && hamburger.top >= nav.top - 1, navWidth: Math.round(nav.width) };
+  })).toEqual({ navRight: 390, hamburgerInside: true, navWidth: expect.any(Number) });
+  await page.locator('.hextra-hamburger-menu').click();
+  await expect(page.locator('.hextra-sidebar-container')).toHaveAttribute('aria-hidden', 'false');
+  // The theme pads the drawer by --navbar-height plus its banner allowance;
+  // with the variable held at 3rem the drawer's list starts below the
+  // cluster rather than under it.
+  expect(await page.evaluate(() => {
+    const drawer = document.querySelector('.hextra-sidebar-container');
+    return Math.round(parseFloat(getComputedStyle(drawer).paddingTop));
+  }), 'the drawer must start below the 3rem cluster').toBeGreaterThanOrEqual(48);
+  expect(await page.locator('.hextra-hamburger-menu').isVisible()).toBe(true);
 });
 
 test('heading lists in the rail and sidebar typeset inline math instead of printing TeX', async ({ page }) => {

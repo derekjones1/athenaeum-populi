@@ -355,20 +355,28 @@ multiple-choice:not(:defined) .ap-mc-option {
 
 /* --- Compact navbar on scroll ----------------------------------------------
    assets/js/navbar-compact.js sets .ap-nav-compact on <html> once the reader
-   has scrolled into the article. In that state the bar is a shorter (3rem)
-   centred row — logo, search box, "Scroll to top" button
-   (layouts/_partials/navbar.html) — and the shelf links (flat and Library
-   dropdown), Home/About (.ap-nav-page, hugo.toml [menu]), and the title text
-   fold away; the hamburger below md is pinned to the right edge. `display:
-   none` rather than opacity so the hidden links leave the tab order with the
-   layout, and `!important` for the same reason as the width rules above —
-   the theme's md:inline-flex utilities sit at equal specificity.
+   has scrolled into the article. In that state the full-width bar is gone:
+   what remains is a 3rem cluster pinned to the top-right corner — logo,
+   search box, "Scroll to top" button (layouts/_partials/navbar.html), and
+   below md the hamburger — sized and padded like the "On this page" rail
+   column (16rem wide, 1rem inner padding, layouts/_partials/toc.html) so
+   from xl up it sits exactly above that rail, over space the article never
+   uses, and the logo lines up with the rail's heading. The shelf links (flat
+   and Library dropdown), Home/About (.ap-nav-page, hugo.toml [menu]), and
+   the title text fold away with `display: none` rather than opacity so they
+   leave the tab order with the layout, and `!important` for the same reason
+   as the width rules above — the theme's md:inline-flex utilities sit at
+   equal specificity.
 
    The sticky container is in normal flow, so shrinking IT would shift the
-   whole article 16px at the threshold. It keeps its 4rem; only the painted
-   bar (nav + blur backdrop) is 3rem, the transparent strip beneath passes
-   pointer events through, and the two rails move their sticky offset up to
-   meet the shorter bar (--navbar-height also feeds the sidebar's height). */
+   whole article 16px at the threshold. It keeps its 4rem; the painted
+   backdrop (.hextra-nav-container-blur, which carries the theme's light and
+   dark surface and shadow) shrinks to the cluster, everything else in the
+   container's box passes pointer events through, the left sidebar rises to
+   the viewport top, and the rail's sticky offset moves up to meet the
+   cluster. --navbar-height stays 3rem in this state because the phone drawer
+   pads its top by it (themes/hextra/assets/css/components/sidebar.css) and
+   must open beneath the cluster, where the hamburger that closes it lives. */
 .ap-nav-top {
   display: none;
   min-width: 40px;
@@ -389,32 +397,61 @@ multiple-choice:not(:defined) .ap-mc-option {
 }
 .ap-nav-compact {
   --navbar-height: 3rem;
+  --ap-nav-cluster-width: 16rem; /* = the rail column, hx:w-64 in toc.html */
 }
 .ap-nav-compact .hextra-nav-container {
   height: 4rem; /* in-flow height stays; the theme sizes it from the nav */
   pointer-events: none;
 }
 .ap-nav-compact .hextra-nav-container-blur {
+  left: auto;
+  right: 0;
+  width: var(--ap-nav-cluster-width);
   height: 3rem;
+  border-bottom-left-radius: 0.5rem;
 }
 .ap-nav-compact .hextra-nav-container > nav {
   pointer-events: auto;
   position: relative;
+  box-sizing: border-box;
   height: 3rem;
-  justify-content: center;
+  width: var(--ap-nav-cluster-width);
+  max-width: 100%;
+  margin: 0 0 0 auto;
+  padding: 0 0.5rem 0 1rem; /* 1rem: the rail's hx:px-4, so the logo meets "On this page" */
+  gap: 0.25rem;
+  justify-content: flex-start;
 }
 .ap-nav-compact nav > a:first-child {
   margin-right: 0 !important; /* the theme's ltr:mr-auto pushes the rest right */
 }
-.ap-nav-compact .hextra-hamburger-menu {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
+.ap-nav-compact .hextra-search-wrapper {
+  flex: 1 1 auto;
+  min-width: 0;
+  width: auto; /* the theme's md:w-64 is the whole cluster */
+}
+.ap-nav-compact .hextra-search-wrapper kbd {
+  display: none; /* no room for the ⌘K badge beside the placeholder */
+}
+@media (max-width: 47.99rem) {
+  /* Below md the search box is not in the bar (the theme hides it), so the
+     cluster is just logo, button, hamburger: 9rem, packed to the right. */
+  .ap-nav-compact {
+    --ap-nav-cluster-width: 9rem;
+  }
+  .ap-nav-compact .hextra-nav-container > nav {
+    justify-content: flex-end;
+  }
+  .ap-nav-compact .hextra-hamburger-menu {
+    margin-right: 0;
+  }
 }
 @media (min-width: 48rem) {
   .ap-nav-compact .hextra-sidebar-container {
-    top: 3rem;
+    top: 0;
+  }
+  .ap-nav-compact .hextra-sidebar-container > .hextra-scrollbar {
+    height: calc(100vh - var(--menu-height));
   }
 }
 .ap-nav-compact .hextra-toc > div {
