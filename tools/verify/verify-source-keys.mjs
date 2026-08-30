@@ -37,6 +37,17 @@
  * deviation the corpus carries must be listed, so a re-keyed item can never
  * ship without an errata entry behind it.
  *
+ * The comparison needs the pinned CNXML, and `/sources/` is gitignored: it
+ * exists on an authoring machine after `npm run source:fetch` and never in
+ * CI or a fresh clone (docs/architecture.md: `npm test` is offline and does
+ * not fetch upstream). A bundle whose checkout directory is ABSENT is
+ * therefore skipped — every one of its sections counted and named on stderr,
+ * never failed — while a checkout that IS present is held to the full rule,
+ * so a module missing from a real checkout is still a failure. A run that
+ * skipped anything prints its count in a shape the baseline rewriter does
+ * not read and applies no `--min-confirmed` floor: a partial count is not a
+ * baseline, and a skipped gate must never look like a passed one.
+ *
  * Usage: node tools/verify/verify-source-keys.mjs [content-root] [--min-confirmed N] [--verbose]
  *
  * `--min-confirmed N` fails the run when the confirmed count is not EXACTLY N
@@ -337,7 +348,18 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
     (entry) => entry.page === page && entry.exercise === exercise,
   );
 
+  // A bundle with no checkout directory at all is skipped wholesale (see the
+  // header); its sections are tallied here, keyed by bundle, so the caller can
+  // say exactly what went unread. A present checkout is read in full.
+  const skipped = {};
+  const checked = [];
   for (const section of sections) {
+    const sourceDir = bundleSourceDirectory(repositoryRoot, lock, section.bundle);
+    if (existsSync(sourceDir)) checked.push(section);
+    else skipped[section.bundle] = (skipped[section.bundle] || 0) + 1;
+  }
+
+  for (const section of checked) {
     const pagePath = path.join(repositoryRoot, section.localPath);
     const modulePath = path.join(
       bundleSourceDirectory(repositoryRoot, lock, section.bundle),
@@ -389,8 +411,10 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
     }
   }
 
+  // Only a page that was actually read against its module can prove an entry
+  // stale; a deviation on a skipped bundle's page is neither used nor stale.
   for (const deviation of DISCLOSED_DEVIATIONS) {
-    if (!used.has(deviation) && sections.some((section) => section.localPath === deviation.page)) {
+    if (!used.has(deviation) && checked.some((section) => section.localPath === deviation.page)) {
       failures.push({
         page: deviation.page,
         line: 0,
@@ -402,7 +426,42 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
   const confirmed = counts.multiplechoice.confirmed
     + Object.values(counts.textin).reduce((a, b) => a + b, 0)
     + counts.selfcheck.verbatim + counts.selfcheck.reworded;
-  return { counts, confirmed, failures, notes: verbose ? notes : [], sections: sections.length };
+  return {
+    counts, confirmed, failures, notes: verbose ? notes : [],
+    sections: checked.length,
+    skipped,
+    sectionsSkipped: Object.values(skipped).reduce((a, b) => a + b, 0),
+  };
+}
+
+/** The lines a run prints about the bundles it could not read: one per
+ * absent checkout, naming the sections it covers and the command that fetches
+ * it. Empty when every bundle was present. */
+export function skipLines(repositoryRoot, lock, skipped) {
+  return Object.entries(skipped).map(([bundle, count]) => {
+    const dir = path.relative(repositoryRoot, bundleSourceDirectory(repositoryRoot, lock, bundle));
+    return `⊘ ${count} mapped section(s) skipped: bundle ${bundle} is not checked out at ${dir}/ `
+      + `(run npm run source:fetch -- --bundle ${bundle})`;
+  });
+}
+
+/** The one-line summary. A complete run prints the count in the shape
+ * `tools/verify/baselines.mjs` reads (`source-key cross-check: N keyed
+ * answers confirmed against the pinned CNXML`); a run that skipped a bundle
+ * deliberately breaks that shape with a "(partial…)" marker so
+ * `npm run baseline:update` refuses to read a partial count as the baseline. */
+export function summaryLine({ counts, confirmed, failures, sections, sectionsSkipped }) {
+  const mc = counts.multiplechoice;
+  const textin = Object.values(counts.textin).reduce((a, b) => a + b, 0);
+  const selfcheck = counts.selfcheck.verbatim + counts.selfcheck.reworded;
+  const scope = sectionsSkipped
+    ? ` (partial: ${sectionsSkipped} of ${sections + sectionsSkipped} mapped sections skipped, no checkout)`
+    : '';
+  return `${failures.length ? '✖' : sectionsSkipped ? '⊘' : '✓'} source-key cross-check${scope}: `
+    + `${confirmed} keyed answers confirmed against the pinned CNXML across ${sections} mapped sections `
+    + `(multiplechoice ${mc.confirmed}, textin ${textin}, selfcheck ${selfcheck}); `
+    + `${mc.disclosed} disclosed correction(s); ${mc.unmatched + counts.selfcheck.unmatched} unmatched to any source exercise; `
+    + `${mc['prose-key']} prose-keyed; ${failures.length} failure(s)`;
 }
 
 /* ---- CLI ------------------------------------------------------------------ */
@@ -420,18 +479,23 @@ if (process.argv[1] && path.resolve(process.argv[1]) === new URL(import.meta.url
     process.exit(2);
   }
 
-  const { counts, confirmed, failures, notes, sections } = checkCorpus(process.cwd(), { contentRoot, verbose });
+  const repositoryRoot = process.cwd();
+  const result = checkCorpus(repositoryRoot, { contentRoot, verbose });
+  const { confirmed, failures, notes, skipped, sectionsSkipped } = result;
 
   for (const { page, line, detail } of failures) console.error(`✗ ${page}${line ? `:${line}` : ''}\n    ${detail}`);
   for (const note of notes) console.log(`    · ${note}`);
+  for (const line of skipLines(repositoryRoot, loadSourceLock(repositoryRoot), skipped)) console.error(line);
 
-  const mc = counts.multiplechoice;
-  const textin = Object.values(counts.textin).reduce((a, b) => a + b, 0);
-  const selfcheck = counts.selfcheck.verbatim + counts.selfcheck.reworded;
-  console.log(`${failures.length ? '✖' : '✓'} source-key cross-check: ${confirmed} keyed answers confirmed against the pinned CNXML `
-    + `across ${sections} mapped sections (multiplechoice ${mc.confirmed}, textin ${textin}, selfcheck ${selfcheck}); `
-    + `${mc.disclosed} disclosed correction(s); ${mc.unmatched + counts.selfcheck.unmatched} unmatched to any source exercise; `
-    + `${mc['prose-key']} prose-keyed; ${failures.length} failure(s)`);
+  console.log(summaryLine(result));
+
+  if (sectionsSkipped) {
+    if (minConfirmed !== null) {
+      console.error(`  · --min-confirmed ${minConfirmed} not applied: the count above is partial; `
+        + 'fetch every bundle before recording or checking a baseline');
+    }
+    process.exit(failures.length ? 1 : 0);
+  }
 
   if (minConfirmed !== null && confirmed < minConfirmed) {
     console.error(`✖ source-key cross-check confirmed ${confirmed} answers, below the --min-confirmed floor of ${minConfirmed}`);

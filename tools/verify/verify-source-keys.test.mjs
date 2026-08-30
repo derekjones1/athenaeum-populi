@@ -1,13 +1,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { existsSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import path from 'node:path';
 import {
   DISCLOSED_DEVIATIONS, MODEL_COVERAGE_FLOOR,
   checkCorpus, compact, judgeMultipleChoice, judgeSelfcheck, judgeTextin,
-  keyedOptionIndex, pageItems, readModule, termAlternates,
+  keyedOptionIndex, pageItems, readModule, skipLines, summaryLine, termAlternates,
 } from './verify-source-keys.mjs';
+import { BASELINE_SOURCES } from './baselines.mjs';
+import { bundleSourceDirectory, loadSourceLock } from '../lib/openstax-source.mjs';
 
 const repositoryRoot = new URL('../../', import.meta.url).pathname;
+const lock = loadSourceLock(repositoryRoot);
+const mappedSections = JSON.parse(readFileSync(path.join(repositoryRoot, 'data/openstax/source-map.json'), 'utf8')).sections;
+const absentBundles = lock.bundleKeys.filter(
+  (bundle) => !existsSync(bundleSourceDirectory(repositoryRoot, lock, bundle)),
+);
 
 /* ---- the source's ways of naming an option -------------------------------- */
 
@@ -153,9 +162,76 @@ test('every disclosed deviation names a mapped page and an erratum number', () =
   }
 });
 
-test('the corpus carries no undisclosed departure from a source key', () => {
-  const { failures, counts, confirmed } = checkCorpus(repositoryRoot);
+// `/sources/` is gitignored, so this only has a corpus to read on a machine
+// that has run `npm run source:fetch`; in CI it is skipped by name, exactly as
+// the real-checkout test in tools/source/openstax-source.test.mjs is. The
+// fixture tests below prove the skip path itself.
+test('the corpus carries no undisclosed departure from a source key', {
+  skip: absentBundles.length > 0
+    && `run npm run source:fetch first (not checked out: ${absentBundles.join(', ')})`,
+}, () => {
+  const { failures, counts, confirmed, skipped, sectionsSkipped } = checkCorpus(repositoryRoot);
   assert.deepEqual(failures, []);
+  assert.deepEqual(skipped, {});
+  assert.equal(sectionsSkipped, 0);
   assert.equal(counts.multiplechoice.disclosed, DISCLOSED_DEVIATIONS.length, 'every listed deviation is exercised');
   assert.ok(confirmed > 0);
+});
+
+/* ---- a repository with no source checkout (CI, a fresh clone) ------------- */
+
+/** A repository root that carries the real lock and map but none of the
+ * pinned checkouts, plus whatever `extra` sets up inside it. */
+function withBareRepository(extra, body) {
+  const root = mkdtempSync(path.join(tmpdir(), 'verify-source-keys-'));
+  try {
+    mkdirSync(path.join(root, 'data/openstax'), { recursive: true });
+    for (const file of ['source-lock.json', 'source-map.json']) {
+      cpSync(path.join(repositoryRoot, 'data/openstax', file), path.join(root, 'data/openstax', file));
+    }
+    extra(root);
+    return body(root);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+}
+
+test('a bundle with no checkout is skipped by name, not failed, and the floor is not a baseline', () => {
+  withBareRepository(() => {}, (root) => {
+    const result = checkCorpus(root);
+    assert.deepEqual(result.failures, [], 'an absent checkout is not a corpus defect');
+    assert.equal(result.sections, 0);
+    assert.equal(result.confirmed, 0);
+    assert.deepEqual(Object.keys(result.skipped).sort(), [...lock.bundleKeys].sort(), 'every bundle is named');
+    assert.equal(result.sectionsSkipped, mappedSections.length, 'every mapped section is in the skip tally');
+
+    const lines = skipLines(root, loadSourceLock(root), result.skipped);
+    assert.equal(lines.length, lock.bundleKeys.length);
+    for (const line of lines) assert.match(line, /^⊘ \d+ mapped section\(s\) skipped: bundle [\w-]+ is not checked out at sources\/openstax\/[\w-]+\/ \(run npm run source:fetch -- --bundle [\w-]+\)$/);
+
+    // The summary must not be readable as a baseline: update-baselines parses
+    // the count with this exact pattern, and a partial run has no count to
+    // record. A complete run keeps the shape.
+    const { pattern } = BASELINE_SOURCES.find((source) => source.label === 'verify-source-keys');
+    const partial = summaryLine(result);
+    assert.match(partial, /^⊘ source-key cross-check \(partial: \d+ of \d+ mapped sections skipped, no checkout\): 0 keyed answers/);
+    assert.equal(partial.match(pattern), null, 'a partial count cannot be recorded as the baseline');
+    assert.match(summaryLine({ ...result, sectionsSkipped: 0 }), pattern);
+  });
+});
+
+test('a checkout that is present is read in full: a module missing from it is still a failure', () => {
+  const section = mappedSections.find((entry) => entry.bundle === 'biology-bundle');
+  withBareRepository((root) => {
+    // The biology checkout directory exists but holds no modules; the page it
+    // maps is present so the module check is what fires.
+    mkdirSync(bundleSourceDirectory(root, loadSourceLock(root), 'biology-bundle'), { recursive: true });
+    mkdirSync(path.dirname(path.join(root, section.localPath)), { recursive: true });
+    cpSync(path.join(repositoryRoot, section.localPath), path.join(root, section.localPath));
+  }, (root) => {
+    const result = checkCorpus(root, { contentRoot: path.dirname(section.localPath) });
+    assert.equal(result.sectionsSkipped, 0, 'a present checkout skips nothing');
+    assert.ok(result.failures.some((failure) => failure.page === section.localPath
+      && failure.detail.includes(`pinned module ${section.moduleId} is not checked out`)));
+  });
 });

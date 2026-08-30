@@ -158,7 +158,11 @@ solution and glossary (`verify:source-keys`), asserts that every exercise
 carries a current answer-ledger record (`verify:ledger`), and enforces the
 current documentation and authoring rules. It also verifies the committed
 OpenStax map's integrity offline; it does not fetch upstream or run
-`source:check` or `source:history`.
+`source:check` or `source:history`. The one gate that reads the pinned
+CNXML itself, `verify:source-keys`, skips a bundle whose gitignored checkout
+is absent and says so — CI has no `sources/`, so that comparison is a local
+gate, run on an authoring machine before the push (the ledger and replay
+gates, which run everywhere, still hold every key to its recorded verdict).
 
 `npm run build` creates a clean Hugo production build and the Pagefind index.
 `npm run check:build` then verifies routes, internal links, search coverage,

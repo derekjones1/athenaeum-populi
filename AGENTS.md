@@ -78,7 +78,11 @@ source workflow.
   prose book's keys (the math books get theirs from `verify:answers`); a key
   that departs from the source on purpose must be listed in the tool's
   `DISCLOSED_DEVIATIONS` with its erratum number; holds an EXACT
-  `--min-confirmed` baseline (part of `npm test`)
+  `--min-confirmed` baseline (part of `npm test`). Needs the pinned bundles
+  checked out (`npm run source:fetch`): a bundle whose checkout is absent —
+  CI, a fresh clone — is skipped by name on stderr with no floor applied,
+  never failed, so the gate has teeth only on a machine that has fetched
+  every bundle; run it locally before pushing
 - `npm run verify:ledger` — assert every exercise in the corpus carries a
   current answer-verification record (see "The answer ledger" below); holds a
   `--min-exercises` FLOOR and a `--max-unverifiable` CEILING so it can go
