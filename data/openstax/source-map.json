@@ -58,8 +58,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 47,
       "upstreamSections": 208,
-      "localChapters": 18,
-      "mappedSections": 75,
+      "localChapters": 20,
+      "mappedSections": 83,
       "units": [
         {
           "index": 1,
@@ -782,6 +782,51 @@
       "moduleSha256": "58988b5258ffc1ed0269d640106d4f0b1c83521e54aa340f10e24292600ae838"
     },
     {
+      "localPath": "content/life-health-sciences/biology/17-biotechnology-and-genomics/01-biotechnology.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "17.1",
+      "moduleId": "m66511",
+      "sourceTitle": "Biotechnology",
+      "moduleSha256": "6da4733fab3d725fcc6a837f98ca7cb38b9227996cad109bc5eaf62c26a2964c"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/17-biotechnology-and-genomics/02-mapping-genomes.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "17.2",
+      "moduleId": "m66512",
+      "sourceTitle": "Mapping Genomes",
+      "moduleSha256": "7873c8d405e0dfd4cab93b2cdcd5d54c3499e67d58640d7413edd330af0e02b2"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/17-biotechnology-and-genomics/03-whole-genome-sequencing.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "17.3",
+      "moduleId": "m66513",
+      "sourceTitle": "Whole-Genome Sequencing",
+      "moduleSha256": "d454e80064d4380507838fe730138df1c0658b414091db5df4c5fea5fb85f2d9"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/17-biotechnology-and-genomics/04-applying-genomics.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "17.4",
+      "moduleId": "m66514",
+      "sourceTitle": "Applying Genomics",
+      "moduleSha256": "8e615766a088c266273824dbae4c8db8e4b69bd4adbbfe07057401955eb8f88a"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/17-biotechnology-and-genomics/05-genomics-and-proteomics.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "17.5",
+      "moduleId": "m66515",
+      "sourceTitle": "Genomics and Proteomics",
+      "moduleSha256": "929da43003e0cd52a1455e0e8a7bb422ae57cf07cd4347cbbc5005772d1d05a3"
+    },
+    {
       "localPath": "content/life-health-sciences/biology/18-evolution-and-the-origin-of-species/01-understanding-evolution.md",
       "bundle": "biology-bundle",
       "book": "biology",
@@ -834,6 +879,33 @@
       "moduleId": "m66718",
       "sourceTitle": "Adaptive Evolution",
       "moduleSha256": "21bb4e04cf53abfba81ce0b057d1b2edd4948b4db78fb91a5b867e58069f87e9"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/20-phylogenies-and-the-history-of-life/01-organizing-life-on-earth.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "20.1",
+      "moduleId": "m66530",
+      "sourceTitle": "Organizing Life on Earth",
+      "moduleSha256": "c4a9e128cff8db4e70ed9fd10ab5fdad746c74b41c75de810bb9643be93a6754"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/20-phylogenies-and-the-history-of-life/02-determining-evolutionary-relationships.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "20.2",
+      "moduleId": "m66531",
+      "sourceTitle": "Determining Evolutionary Relationships",
+      "moduleSha256": "9c82d59a0d84d38baab21b4cf11ce3beba4af04b97d988d1e19c79bc3d0ff0b3"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/20-phylogenies-and-the-history-of-life/03-perspectives-on-the-phylogenetic-tree.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "20.3",
+      "moduleId": "m66532",
+      "sourceTitle": "Perspectives on the Phylogenetic Tree",
+      "moduleSha256": "129253102b75e9c3db31f16849ea466feac8f2b42e7ac061d48b3bf47e41dcd9"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

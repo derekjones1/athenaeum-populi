@@ -394,7 +394,9 @@ meaning becomes the prompt, the term the answer.
   by the repository tools.
 - One to four words; the lint rejects longer answers — a definition is not a
   recall item.
-- `accept` lists the spellings a correct learner might type: plural,
+- `accept` lists the spellings a correct learner might type, `|`-separated
+  (`accept="a|b|c"` — a comma joins the items into one member the grader
+  can never match, and the lint rejects it): plural,
   British spelling (`fertilisation`), a standard abbreviation (`DNA` for a
   keyed `deoxyribonucleic acid`, or the reverse). Grading already ignores
   case, diacritics, punctuation, hyphen-versus-space, and a leading
@@ -486,15 +488,16 @@ Record every item in the source ledger with its exercise or definition id.
 
 ## Budgets to watch as the book grows
 
-- **HTML total.** `tools/build/audit-build.mjs` caps the built HTML at 220 MiB;
-  the four math books plus chapter 1 measured 196.5 MB, and with units 1–2
-  (44 sections, 10 landings) the HTML total is 198.3 MiB (`find public -name
-  index.html -exec cat {} + | wc -c`); the audit's own "MiB" line counts
-  every built file, WebP included. A biology section page is ~125–135 KB
-  (no KaTeX), so the remaining 206 sections and 46 landings project to
-  roughly 35 MB more — the cap will be reached around unit 6–7. Raise it
-  deliberately in that file, with the new measurement in the commit message,
-  when a unit's gate run reports it; never by rounding up in advance.
+- **HTML total.** `tools/build/audit-build.mjs` caps the built HTML at 400 MiB,
+  raised from 220 on 2026-08-31 when 75 authored sections measured 215.1 MiB.
+  The driver is the sidebar, not the prose: each biology page's `<aside>` was
+  239.1 KiB (22.0 of biology's 27.8 MiB) and grows ~1.18 KiB per new section
+  link on every biology page, while the mean outside the aside is 64.2 KiB.
+  The finished book (256 biology pages, aside ~429 KiB) projects to ~125 MiB
+  of biology + ~187 MiB math + ~23 MiB of eventual knowledge checks ≈ 335 MiB;
+  400 keeps ~19% headroom. The full projection lives in the comment above
+  `maxTotalHtmlBytes`. If the cap trips again, re-measure the aside mean and
+  raise deliberately with the new numbers; never by rounding up in advance.
 - **Sidebar share** (`maxSidebarShare 0.45`) is per page: the biology sidebar
   lists every chapter of the book, so re-check the audit line after each unit.
 - **Browser suite time.** `tests/figures.spec.mjs` walks every route; its

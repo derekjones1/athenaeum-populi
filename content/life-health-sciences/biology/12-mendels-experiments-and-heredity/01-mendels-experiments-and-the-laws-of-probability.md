@@ -172,7 +172,7 @@ prevent accidental or unintentional fertilizations
 {{< textin
   question="The process of mating two individuals that differ, with the goal of achieving a certain characteristic in their offspring, is called ________."
   answer="hybridization"
-  accept="hybridizations, hybridisation, hybridisations"
+  accept="hybridizations|hybridisation|hybridisations"
   hint="Mendel performed this by manually transferring pollen between two true-breeding pea plants that differed in a trait."
 >}}
 

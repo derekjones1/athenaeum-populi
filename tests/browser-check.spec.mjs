@@ -1213,17 +1213,19 @@ test('the biology sidebar nests chapters under their unit, and a math sidebar st
     'DNA Structure and Function',
     'Genes and Proteins',
     'Gene Expression',
+    'Biotechnology and Genomics',
   ]);
   const unit4Titles = await visible.nth(3).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
   expect(unit4Titles).toEqual([
     'Evolution and the Origin of Species',
     'The Evolution of Populations',
+    'Phylogenies and the History of Life',
   ]);
-  // 18 chapter landings + 75 sections, rendered twice.
+  // 20 chapter landings + 83 sections, rendered twice.
   const bookLinks = page.locator('aside a[href^="/life-health-sciences/biology/"]:not([href="/life-health-sciences/biology/"])');
   const insideUnit = page.locator('aside .ap-sidebar-unit a[href^="/life-health-sciences/biology/"]');
-  expect(await bookLinks.count()).toBe(186);
-  expect(await insideUnit.count()).toBe(186);
+  expect(await bookLinks.count()).toBe(206);
+  expect(await insideUnit.count()).toBe(206);
   // The label is text, not a control: nothing to focus, nothing to click.
   await expect(page.locator('aside .ap-sidebar-unit-label a, aside .ap-sidebar-unit-label button')).toHaveCount(0);
 

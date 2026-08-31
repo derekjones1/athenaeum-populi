@@ -1671,6 +1671,16 @@ test('textin shortcode rules', () => {
     'an accept member identical to the answer after normalization is rejected',
   );
   assert(
+    lintHugo('{{< textin question="Name it." answer="cohesin" accept="cohesins, cohesin proteins" hint="h" >}}', 'content/test.md')
+      .errors.some((e) => e.includes('accept is |-separated')),
+    'a comma-joined accept list is rejected — check-text splits on | only, so it is one dead member',
+  );
+  assert.equal(
+    lintHugo('{{< textin question="Name the count." answer="10,000" accept="ten thousand" hint="h" >}}', 'content/test.md').errors.length,
+    0,
+    'a digit-group comma (digits on both sides) is not a list separator',
+  );
+  assert(
     lintHugo('{{< textin question="What surrounds the mitochondria?" answer="mitochondria" hint="h" >}}', 'content/test.md')
       .errors.some((e) => e.includes('appears as a whole-word run in the question')),
     'an answer printed whole inside its own question is a retype hazard',

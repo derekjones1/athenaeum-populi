@@ -91,6 +91,20 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/biology/17-biotechnology-and-genomics/01-biotechnology.md',
+    exercise: 'fs-id1768985',
+    kind: 'key',
+    erratum: 172,
+    reason: 'source keys "all of the above", but the module\'s own sentence "The Flavr Savr tomato did not successfully stay in the market" contradicts the in-the-supermarket option and "does not undergo soft rot" overstates "slow the softening and rotting process"; the page keys the directly-taught "was created to have better flavor and shelf-life"',
+  },
+  {
+    page: 'content/life-health-sciences/biology/17-biotechnology-and-genomics/04-applying-genomics.md',
+    exercise: 'fs-id1685167',
+    kind: 'key',
+    erratum: 166,
+    reason: 'source keys "decrease transplant rejection", which the module never mentions outside this exercise; its own Predicting Disease Risk subsection teaches option (b) ("Predicting disease risk involves screening currently healthy individuals by genome analysis"), so the page keys "predict genetic diseases that a person may have inherited"',
+  },
+  {
     page: 'content/life-health-sciences/biology/19-the-evolution-of-populations/01-population-evolution.md',
     exercise: 'fs-idp1822224',
     kind: 'options',

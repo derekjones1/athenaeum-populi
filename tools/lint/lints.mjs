@@ -2193,6 +2193,14 @@ export function lintHugo(src, filename = '', options = {}) {
       if (words.length > 4) {
         err(index, `${where}: ${member.label} is ${words.length} words — keep a text answer to 4 words or fewer`);
       }
+      // check-text splits accept on `|` only, so accept="a, b" is ONE member
+      // that matches nothing a learner would plausibly type — and with short
+      // items the joined member stays under 4 words, so the rule above never
+      // fires. The one legitimate comma is a digit group ("10,000"), which
+      // has digits on both sides.
+      if (/(?<!\d),|,(?!\d)/.test(member.raw)) {
+        err(index, `${where}: ${member.label} contains a comma — accept is |-separated (a|b|c); a comma-joined list is one member, not alternates`);
+      }
     }
     for (let i = 0; i < members.length; i += 1) {
       for (let j = i + 1; j < members.length; j += 1) {

@@ -89,6 +89,12 @@ closes with how plants and animals are built and how ecosystems work.
   regulate gene expression, from operons through epigenetic, transcriptional,
   post-transcriptional, translational, and post-translational control, and
   how failures of that regulation drive cancer.
+- **Biotechnology and Genomics** — the techniques of manipulating DNA —
+  extraction, gel electrophoresis, PCR, cloning, and genetic engineering of
+  plants and animals — and how genetic and physical maps, whole-genome
+  sequencing, and the growing fields of genomics, metagenomics,
+  pharmacogenomics, and proteomics turn genome information into medicine,
+  agriculture, and industry.
 
 ### Unit 4: Evolutionary Processes
 
@@ -103,15 +109,17 @@ closes with how plants and animals are built and how ecosystems work.
   allele frequencies, the forces — natural selection, genetic drift, gene
   flow, mutation, and nonrandom mating — that drive it, and the ways
   natural selection shapes a population's variation.
+- **Phylogenies and the History of Life** — how phylogenetic trees record
+  evolutionary relationships, how taxonomy classifies organisms and
+  cladistics builds trees from shared derived characters and molecular
+  data under maximum parsimony, and how horizontal gene transfer and
+  genome fusion complicate the classic tree of life into webs and rings.
 
 ## Planned contents
 
 Biology 2e has eight units and 47 chapters. Beyond the chapters listed
 above, the following are still to come, in this order:
 
-- **Unit 3: Genetics** (remaining chapter) — Biotechnology and Genomics.
-- **Unit 4: Evolutionary Processes** (remaining chapter) — Phylogenies and
-  the History of Life.
 - **Unit 5: Biological Diversity** — Viruses; Prokaryotes: Bacteria and
   Archaea; Protists; Fungi; Seedless Plants; Seed Plants; Introduction to
   Animal Diversity; Invertebrates; Vertebrates.

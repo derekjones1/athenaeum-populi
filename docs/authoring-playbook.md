@@ -393,8 +393,10 @@ counterpart of `fillin`, whose math input cannot take words at all:
 `textin` is **unpaired**, exactly like `fillin`: no closing tag. `question`
 must not contain `$…$` math — a text field has no spoken-math name; use
 `multiplechoice` for a prompt that needs math. `accept` lists alternate
-spellings graded as correct too; grading already ignores case, diacritics,
-punctuation, hyphen-versus-space, and a leading article.
+spellings graded as correct too, **`|`-separated** (`accept="a|b|c"` — a
+comma joins the items into one member the grader can never match, and the
+lint rejects it); grading already ignores case, diacritics, punctuation,
+hyphen-versus-space, and a leading article.
 
 **Self-check (`selfcheck`)** — a free-response prompt with a model answer to
 compare against. Nothing is graded or stored: the learner writes, reveals
@@ -646,7 +648,7 @@ carried zero of each, and the warning channel was deleted with them. There is
 no non-blocking rule left in the repository and no category of
 known-defective content to grandfather.
 
-The Practice retrofit that used to live here is finished. All 349 mapped
+The Practice retrofit that used to live here is finished. All 357 mapped
 sections carry the block (the documentation test pins that count to the live
 map, so authoring a new mapped section means bumping it here). The final
 block landed on August 9, 2026; the lint rule was promoted from a warning to

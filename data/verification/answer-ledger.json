@@ -8,6 +8,14 @@
   "0014cfbdce3d179f": {
    "verdict": "ok"
   },
+  "00243cc161cee541": {
+   "verdict": "ok",
+   "note": "Review Question (fs-id2853936, module m66514) — keyed 'D' (all of the above) in the CNXML, matches OpenStax's published site; shipped unmodified.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0024506d002d0ca4": {
    "verdict": "ok"
   },
@@ -54,14 +62,6 @@
   },
   "005dc427984e8d80": {
    "verdict": "ok"
-  },
-  "006374cfcdd0094b": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "00643d5accf09670": {
    "verdict": "ok"
@@ -148,6 +148,14 @@
    "verdict": "ok",
    "note": "Practice P3 (x(t)=-sqrt t, y(t)=t): eliminated t=y, x=-sqrt(y) so x<=0, y=x^2; independently derived left-half-upward-parabola vertex at origin, matches source solution alt-text 'left half of an upward opening parabola'. Arrow direction (toward more negative x as t increases) confirmed since x=-sqrt(t) decreases monotonically as t increases."
   },
+  "011f477cbe28a302": {
+   "verdict": "ok",
+   "note": "glossary definition fs-id2897379 (contig).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0126adff95a31dfc": {
    "verdict": "ok",
    "note": "Inverse annuity: goal=10000,r=1+0.042/12,n=24; solved a1=goal*(1-r)/(1-r^n)=400.14 (node), rounds to nearest dollar 400; matches CNXML fs-id1165135191500 solution ($400 per month)."
@@ -231,6 +239,14 @@
   },
   "01a9188c94b751c9": {
    "verdict": "ok"
+  },
+  "01b49372ae5461f0": {
+   "verdict": "ok",
+   "note": "Review Question exercise fs-id2316890, keyed B in CNXML solution fs-id1428966 (\"introducing recombinant DNA into an organism by any means\").",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "01b7b2105065a098": {
    "verdict": "ok"
@@ -622,6 +638,14 @@
    "verdict": "ok",
    "note": "same parabola -> decreasing (-inf,2); key p1271 #27"
   },
+  "04608f26d9e6b557": {
+   "verdict": "ok",
+   "note": "re-hashed by an accept-separator repair (comma list to |, no member changed): answer \"linkage\" verified against m66488 glossary fs-id1398143 (\"phenomenon in which alleles that are located in close proximity to each other on the same chromosome are more likely to be inherited together\"); accepts \"gene linkage\" (the module's fs-id1412466 phrase) and \"genetic linkage\".",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0465a3ff3ce13c30": {
    "verdict": "ok"
   },
@@ -654,6 +678,14 @@
   "0491b293b540add5": {
    "verdict": "ok"
   },
+  "04954bacaf5c0ca3": {
+   "verdict": "ok",
+   "note": "m66530 exercise fs-idp177641920: source options in source order, solution D = 'Subspecies are the most specific category of classification.' Matches section text (species then subspecies is the most specific).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "04984ef8d08a7a2a": {
    "verdict": "ok"
   },
@@ -663,6 +695,14 @@
   "04a40aae2c243b30": {
    "verdict": "ok",
    "note": "parent re-derived: in lim_{x->2} f(x)=16,807 the function whose limit is taken is f(x)=(3x+1)^5 (the key formerly named only the base 3x+1); (3(2)+1)^5=7^5=16807 checked in node."
+  },
+  "04aeb1c6ea062e37": {
+   "verdict": "ok",
+   "note": "textin built from the glossary definition of ring of life (fs-idm18689456); answer matches the term; question paraphrases the meaning without the contiguous phrase \"ring of life\".",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "04b1a7e11a426245": {
    "verdict": "ok"
@@ -734,6 +774,14 @@
   "04f57204cfcca5c8": {
    "verdict": "ok",
    "note": "Point (-4,2) matches the answer JSON and checkGraphPlot grades it correct; matches the original multiplechoice's coordinates exactly."
+  },
+  "04f88f75fae4691c": {
+   "verdict": "ok",
+   "note": "Glossary recall (definition id fs-idp55211200, term 'maximum parsimony').",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "04fd683a1c8adfc4": {
    "verdict": "ok"
@@ -1072,6 +1120,14 @@
   "0742dc944983e42c": {
    "verdict": "ok"
   },
+  "07562eb725256e61": {
+   "verdict": "ok",
+   "note": "re-hashed by an accept-separator repair (comma list to |, no member changed): answer \"hybridization\" verified against m66486 glossary fs-id1455588 (\"process of mating two individuals that differ with the goal of achieving a certain characteristic in their offspring\"); accepts are the module's plural (fs-id2339300 \"hybridizations\") and British spellings.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "075e20a4dfe3fbd9": {
    "verdict": "ok"
   },
@@ -1184,6 +1240,10 @@
   },
   "0810b094f952e568": {
    "verdict": "ok"
+  },
+  "08113951a104608e": {
+   "verdict": "ok",
+   "note": "Body Visual Connection selfcheck, fig-ch17_01_07/exercise fs-idp48089024, model answer transcribed from CNXML solution fs-idp37573744 verbatim."
   },
   "0815d48469ec262c": {
    "verdict": "ok",
@@ -1450,6 +1510,14 @@
   },
   "0a5dc712cbae95a8": {
    "verdict": "ok"
+  },
+  "0a641f452638cf24": {
+   "verdict": "ok",
+   "note": "glossary definition fs-id2137674 (shotgun sequencing); prompt built from the meaning and the section's cut-and-reassemble description.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0a6b0c72ce573a0d": {
    "verdict": "ok"
@@ -2089,6 +2157,14 @@
   "0e8ec5fe37ea8ccc": {
    "verdict": "ok"
   },
+  "0ea2ebe0be6aba5b": {
+   "verdict": "ok",
+   "note": "re-keyed from the author's 'all of the above' to option b per erratum 166: the module never teaches transplant rejection or children's risks; its Predicting Disease Risk subsection teaches option b directly; disclosed in DISCLOSED_DEVIATIONS kind 'key'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0eae72763be2156e": {
    "verdict": "ok"
   },
@@ -2114,6 +2190,14 @@
   },
   "0efbe22829b4c5b4": {
    "verdict": "ok"
+  },
+  "0efdec9fbc53301b": {
+   "verdict": "ok",
+   "note": "Glossary recall (definition fs-id2370165, term pharmacogenomics, module m66514); accept 'toxicogenomics' per the glossary's own 'also called' synonym.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0f089ed221a5c628": {
    "verdict": "ok"
@@ -2527,6 +2611,14 @@
   },
   "124537e57c86fa6a": {
    "verdict": "ok"
+  },
+  "12580ef8347646d4": {
+   "verdict": "ok",
+   "note": "Review Question exercise fs-idp83844208: keyed C ('They are derived by similar environmental constraints.'), matches the section's own definition of analogy/homoplasy.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "1258352e3699c4ba": {
    "verdict": "ok"
@@ -3243,6 +3335,10 @@
   "17e2834df9bbb5bb": {
    "verdict": "ok"
   },
+  "17eb88c34060d038": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise fs-idp177675648 (why distinguish homology/analogy before building trees): source solution reproduced near-verbatim."
+  },
   "17f0b5bedb334193": {
    "verdict": "ok"
   },
@@ -3406,6 +3502,14 @@
   "1931e59050ace8e9": {
    "verdict": "ok"
   },
+  "19337a947daadf9c": {
+   "verdict": "ok",
+   "note": "Glossary recall (definition id fs-idp29655616, term 'molecular systematics'); prompt reworded from 'molecular evidence' to 'DNA sequence data' to avoid the answer's own word 'molecular' appearing in the question.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "193807a0664ae254": {
    "verdict": "ok",
    "note": "Glossary recall, definition fs-id2200726 (term 'oncogene'). Prompt is the meaning paraphrased away from the answer word; accept list adds the plural.",
@@ -3522,6 +3626,14 @@
   "19ee8d897fcfc3e4": {
    "verdict": "ok"
   },
+  "19fa7b7ca6e2f08a": {
+   "verdict": "ok",
+   "note": "systems biology — glossary def fs-id2937179 (\"study of whole biological systems (genomes and proteomes) based on interactions within the system\"), paraphrased ('networks' for 'systems') to avoid the retype hazard; term matches module's own wording.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "19fe83802685482a": {
    "verdict": "ok"
   },
@@ -3530,6 +3642,10 @@
   },
   "1a0bab485810b93b": {
    "verdict": "ok"
+  },
+  "1a0f46a5d30b8d1d": {
+   "verdict": "ok",
+   "note": "Critical Thinking Q1 (fs-id2119684/fs-id2016560, module m66514) — model answer is the keyed solution verbatim; checkpoints restate it."
   },
   "1a155634a968f8d6": {
    "verdict": "ok",
@@ -3555,6 +3671,10 @@
   },
   "1a39f7c753a384dd": {
    "verdict": "ok"
+  },
+  "1a3b89f6da887b31": {
+   "verdict": "ok",
+   "note": "selfcheck model answer is the source solution for fs-idm35642672 (Critical Thinking Q2) verbatim; checkpoints are its clauses restated with no new claim."
   },
   "1a3f3c2dc590c15a": {
    "verdict": "ok"
@@ -4725,6 +4845,14 @@
   "23133471f710e4af": {
    "verdict": "ok"
   },
+  "2314e31f9fa8b7e6": {
+   "verdict": "ok",
+   "note": "proteomics — glossary def fs-id2155997 (\"study of proteomes' function\").",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "23152123e29bf5fe": {
    "verdict": "ok"
   },
@@ -4738,6 +4866,14 @@
   "2333b7bd4baa2aaa": {
    "verdict": "ok",
    "note": "Glossary definition fs-id2316354, term \"heat\", meaning \"energy transferred from one system to another that is not work (energy of the molecules' motion or particles)\" — prompt is the meaning verbatim; accept=\"heat energy\" covers the synonym the section body itself bolds and uses throughout. Question contains no word of the answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "234075db7b336deb": {
+   "verdict": "ok",
+   "note": "protein signature — glossary def fs-id2570734 (\"set of uniquely expressed proteins in the diseased state\").",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -4778,6 +4914,14 @@
   "2393913dd3fbe7d2": {
    "verdict": "ok",
    "note": "c^2=49+49=98 -> c=7sqrt(2) -> foci (2+7sqrt2,-7),(2-7sqrt2,-7); matches source fs-id1636747."
+  },
+  "23977b0070f1d190": {
+   "verdict": "ok",
+   "note": "textin glossary recall: answer 'genome mapping' matches glossary definition fs-id2023354 verbatim.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "23b103f1acab64fa": {
    "verdict": "ok"
@@ -5082,6 +5226,14 @@
   },
   "26141611a95379bf": {
    "verdict": "ok"
+  },
+  "2616be3abb716f57": {
+   "verdict": "ok",
+   "note": "Review Question exercise fs-id1282023, keyed B in CNXML solution fs-id1235749 (\"is a recombinant protein\").",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "2622fd90a56ed3dd": {
    "verdict": "ok"
@@ -5452,6 +5604,14 @@
   "291497273e05f8f3": {
    "verdict": "ok",
    "note": "-4(2+6i) = -8-24i by distribution; recomputed independently, matches CNXML ti_03_01_04."
+  },
+  "292145eb69d2e2d8": {
+   "verdict": "ok",
+   "note": "exercise fs-id2720660; CNXML solution B = \"the ethics of using information from genomes at the individual level\"; matches the section's closing paragraph on discrimination/ethics.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "292d342f44c9fa9e": {
    "verdict": "ok"
@@ -6053,6 +6213,14 @@
   "2e295f26644f042f": {
    "verdict": "ok"
   },
+  "2e2a2b80cb8a19c1": {
+   "verdict": "ok",
+   "note": "Glossary recall (definition id fs-idp60769824, term 'monophyletic group'); accept includes the source's own parenthetical synonym 'clade'/'clades'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2e2c3b67ca600c28": {
    "verdict": "ok"
   },
@@ -6146,6 +6314,14 @@
   },
   "2eeab5169fabc423": {
    "verdict": "ok"
+  },
+  "2eef6a590070b8f2": {
+   "verdict": "ok",
+   "note": "multiplechoice: answer 'crossing over' matches CNXML solution fs-id2278509 (B) for exercise fs-id1418957, source option order preserved.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "2ef78cc164f018fc": {
    "verdict": "ok",
@@ -6286,6 +6462,14 @@
   "300ecab5ca2790ee": {
    "verdict": "ok",
    "note": "parent: option order rotated for position balance; answer re-derived earlier in this session (conic type from A,C / discriminant; rotation effect; theta from cot 2theta) — Identify the graph of the nondegenerate conic section $16y^2"
+  },
+  "300f46d5f920c30a": {
+   "verdict": "ok",
+   "note": "multiplechoice: answer 'cytogenetic mapping' matches CNXML solution fs-id2762999 (D) for exercise fs-id2386026, source option order preserved.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "301074c81e5a4acc": {
    "verdict": "ok"
@@ -6787,6 +6971,14 @@
   "339e48da6daa0241": {
    "verdict": "ok"
   },
+  "33ab7b7c44fc49de": {
+   "verdict": "ok",
+   "note": "biomarker — glossary def fs-id2100648 (\"individual protein that is uniquely produced in a diseased state\").",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "33ad278a695fc850": {
    "verdict": "ok"
   },
@@ -6823,14 +7015,6 @@
   },
   "33f749d1f9a7555d": {
    "verdict": "ok"
-  },
-  "33f90aead3ec66ed": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "34001e8461b24b1b": {
    "verdict": "ok"
@@ -7769,6 +7953,15 @@
   "3b1e092acddac2d2": {
    "verdict": "ok"
   },
+  "3b1eb5aad59fad73": {
+   "verdict": "ok",
+   "note": "m66530 glossary definition fs-idp85464784 (kingdom): meaning ('domain division...') used as prompt, term as answer; accept='kingdoms' (regular plural).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "settled against m66530's glossary, which defines kingdom as 'domain division in the taxonomic classification system' — the prompt quotes the glossary definition, so the key (kingdom) is right and the solver misparsed the phrasing"
+   }
+  },
   "3b23883f6c01cfd9": {
    "verdict": "ok",
    "note": "P=2\\pi/(1/3)=6\\pi (Try It 5 period part, matches CNXML)."
@@ -8057,6 +8250,14 @@
   "3df979f7dba08017": {
    "verdict": "ok"
   },
+  "3df9d47d862688e3": {
+   "verdict": "ok",
+   "note": "Glossary recall (definition id 'homology', term 'homology').",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "3df9f5e31f038db6": {
    "verdict": "ok"
   },
@@ -8107,6 +8308,14 @@
   },
   "3e5211f90e927b30": {
    "verdict": "ok"
+  },
+  "3e5bb0d24cb7dd6c": {
+   "verdict": "ok",
+   "note": "parent re-verdict after accept='metabolomes' added; answer unchanged, re-read against m66515 glossary",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3e5f527a913a26c9": {
    "verdict": "ok"
@@ -8394,6 +8603,14 @@
   "40adbd8e2b8eb240": {
    "verdict": "ok",
    "note": "|cot x| folds cot's full range of reals to non-negative values, attaining 0 where cot x=0; range [0,infinity), consistent with the source alt text 'Range is 0 to infinity.'"
+  },
+  "40ae8a19f9972b76": {
+   "verdict": "ok",
+   "note": "metabolomics — glossary def fs-id1555243 (\"study of small molecule metabolites in an organism\").",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "40b1955439cf76ba": {
    "verdict": "ok"
@@ -8874,6 +9091,14 @@
   "445eb707b52cee6e": {
    "verdict": "ok"
   },
+  "446660e913fd053e": {
+   "verdict": "ok",
+   "note": "glossary definition fs-id2278509 (whole-genome sequencing).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "446709d046f82598": {
    "verdict": "ok"
   },
@@ -8882,6 +9107,14 @@
   },
   "4470d4440d14a262": {
    "verdict": "ok"
+  },
+  "44739d429226e670": {
+   "verdict": "ok",
+   "note": "Review Question exercise fs-id1014698, keyed B in CNXML solution fs-id2321925 (\"an organic insecticide produced by bacteria\").",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4479e1d8613fc8a6": {
    "verdict": "ok",
@@ -8906,6 +9139,14 @@
   },
   "449ae4522e7afebc": {
    "verdict": "ok"
+  },
+  "449bdb099b8353e9": {
+   "verdict": "ok",
+   "note": "exercise fs-id2936033; CNXML solution D = \"all of the above\"; section supports availability, legal/privacy issues, and informed treatment choices all at once.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "44a223a9fe79a8f3": {
    "verdict": "ok"
@@ -9078,6 +9319,10 @@
   },
   "45e72284d2e69cb5": {
    "verdict": "ok"
+  },
+  "45e9c31fee8732f1": {
+   "verdict": "ok",
+   "note": "Visual Connection selfcheck (fs-id1481511/fs-id2019239, module m66514) — model answer is the module's own keyed solution near-verbatim; checkpoints decompose it with no new claims."
   },
   "45f42526856f06ac": {
    "verdict": "ok"
@@ -10057,6 +10302,14 @@
   "4d53416634826a7d": {
    "verdict": "ok"
   },
+  "4d61902f2f63ccb0": {
+   "verdict": "ok",
+   "note": "m66530 glossary definition fs-idm3629840 (rooted): meaning used as prompt, term as answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4d649c01fe8f40a6": {
    "verdict": "ok"
   },
@@ -10694,6 +10947,14 @@
    "verdict": "ok",
    "note": "m66518 Critical Thinking fs-idp154022048; model answer is the source solution verbatim."
   },
+  "527d40f09fd1337f": {
+   "verdict": "ok",
+   "note": "textin built from the glossary definition of gene transfer agent (GTA) (fs-idp28881728); answer matches, accept covers plural and the section's abbreviation.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "528634683a38b0cb": {
    "verdict": "ok"
   },
@@ -10787,6 +11048,14 @@
   },
   "535cf86d99cec12d": {
    "verdict": "ok"
+  },
+  "535d0b1f21260c02": {
+   "verdict": "ok",
+   "note": "MC transcribes fs-idp131254784 (Review Q3) verbatim; source <solution> keys option A \"single common ancestor\", matching the body's description of the classic tree's trunk.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "535eaef24d49ba3c": {
    "verdict": "ok"
@@ -11145,6 +11414,10 @@
   "562bd78ec30fe93c": {
    "verdict": "ok"
   },
+  "56301c3e1c66b989": {
+   "verdict": "ok",
+   "note": "selfcheck model answer is the source solution for fs-idm75528944 (Critical Thinking Q1) verbatim; checkpoints are its three clauses restated with no new claim."
+  },
   "56347c7e934e289e": {
    "verdict": "ok"
   },
@@ -11212,6 +11485,14 @@
   "56c5b1c791949550": {
    "verdict": "ok",
    "note": "m66465 critical-thinking solution fs-id1380782 (ATP as energy currency vs. direct bond energy) matches the page's model answer verbatim; all four ===CHECKS=== clauses restate the model answer with no added claim."
+  },
+  "56cdfe720989687c": {
+   "verdict": "ok",
+   "note": "Glossary recall, term id fs-id1443896 (\"probe\"), meaning fs-id1728096 used as prompt.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "56cf25ef02e6231b": {
    "verdict": "ok",
@@ -11798,6 +12079,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 935): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "5af27852b725a7af": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1236114, keyed option D (\"a unique set of proteins present in a diseased state\") per source <solution>; matches glossary def of protein signature.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5b01b7a31174509c": {
    "verdict": "ok"
   },
@@ -11846,6 +12135,10 @@
   "5b54619960442536": {
    "verdict": "ok",
    "note": "parent: categorical MC (8,5) not a solution — 2(8)+1=17 != 3(5); dangling clause removed"
+  },
+  "5b57185c0063ab8a": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question fs-id2491698; model answer is the source <solution> verbatim (personalized medicine definition and use)."
   },
   "5b57b5ce5483a782": {
    "verdict": "ok"
@@ -11918,6 +12211,15 @@
   "5bb9fc8796e5e058": {
    "verdict": "ok"
   },
+  "5bbc0d7f3d100e5e": {
+   "verdict": "ok",
+   "note": "m66530 glossary definition fs-idm4716128 (phylum): meaning used as prompt; accept='phyla' per the glossary's own '(plural: phyla)' note.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "settled against m66530's glossary, which defines phylum as '(plural: phyla) kingdom division in the taxonomic classification system' — same glossary phrasing, key (phylum) is right"
+   }
+  },
   "5bbf07f972afd0d3": {
    "verdict": "ok"
   },
@@ -11943,6 +12245,14 @@
   },
   "5bf4abf9f81dd63f": {
    "verdict": "ok"
+  },
+  "5c033802c09ff95b": {
+   "verdict": "ok",
+   "note": "MC transcribes fs-idm63059136 (Review Q4) verbatim; source <solution> keys option C \"ring of life\", matching the glossary definition and the Ring of Life Models section.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "5c12095b0ec5d3a1": {
    "verdict": "ok"
@@ -12059,6 +12369,14 @@
   },
   "5cad7e49e027bd8e": {
    "verdict": "ok"
+  },
+  "5cba12f35ef4f93b": {
+   "verdict": "ok",
+   "note": "MC transcribes fs-idm62610816 (Review Q2) verbatim; source <solution> keys option D \"gene transfer agents\", matching fs-idp26893472 (GTAs described as marine-prokaryote gene-transfer particles).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "5cbfa26ab535fdf5": {
    "verdict": "ok"
@@ -12297,6 +12615,14 @@
   "5f4623dd5153024c": {
    "verdict": "ok",
    "note": "Algebraic exercise 31 (fs-id1165135406979): 2*lim f(x) + sqrt(lim g(x)) = 2(3)+sqrt(5) = 6+sqrt(5); matches CNXML solution. Verified via checkAnswer that the abstract symbolic printed subject '2f(x)+\\sqrt{g(x)}' does not grade correct against '6+\\sqrt5' (checkAnswer -> incorrect), so this is not a retype hazard; exact form declared defensively to block a decimal-approximation entry (verified 'form' under exact for a full-precision decimal)."
+  },
+  "5f46ef3796c0fbc0": {
+   "verdict": "ok",
+   "note": "m66530 exercise fs-idp40672624: source options in source order, solution B = 'organize and classify organisms', matches the section's own sentence defining systematics.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "5f48abecb89d0372": {
    "verdict": "ok"
@@ -12603,6 +12929,14 @@
   "61fc3991825f956a": {
    "verdict": "ok"
   },
+  "6212b65d64aad948": {
+   "verdict": "ok",
+   "note": "m66530 glossary definition fs-idp209954400 (phylogenetic tree): meaning used as prompt; accept='phylogenetic trees' (regular plural).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6219973733b7995b": {
    "verdict": "ok",
    "note": "Glossary recall for 'microRNA (miRNA)'; answer/accept match the glossary term and abbreviation; answer text does not appear in the prompt.",
@@ -12612,11 +12946,27 @@
     "note": "miRNA is the module's own abbreviation, covered by accept; grader agreed"
    }
   },
+  "622955a9c37700f9": {
+   "verdict": "ok",
+   "note": "false negative — glossary def fs-id2925815 (\"incorrect test result that should have been positive\").",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "622ddcb816fd44b9": {
    "verdict": "ok"
   },
   "6248047631d19b9f": {
    "verdict": "ok"
+  },
+  "625819632e07d82c": {
+   "verdict": "ok",
+   "note": "Body Visual Connection MC, fig-ch17_01_06/exercise fs-id1328221, keyed B in CNXML solution fs-id1403862 (blue colonies only). Option d corrected from the source's grammatical typo \"The will be white colonies only.\" to \"There will be white colonies only.\" — a typo present in both CNXML and the printed PDF (p.445); the keyed answer and its meaning are unchanged.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "625e995b7d08f000": {
    "verdict": "ok"
@@ -12629,6 +12979,15 @@
   },
   "629779e2099e3fb3": {
    "verdict": "ok"
+  },
+  "629f7920cab84726": {
+   "verdict": "ok",
+   "note": "m66530 exercise fs-idp28640208: source options in source order (mutations/DNA/evolutionary history/organisms on earth), solution C = 'evolutionary history', which directly echoes the section's own opening definition of phylogeny ('phylogeny is the evolutionary history and relationship of an organism...'). Defensible as printed, not a defect.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "settled against m66530: the module's own Review Question solution keys C (evolutionary history), and its opening sentence defines phylogeny as evolutionary history; DNA is a means of inferring it, not the module's keyed answer"
+   }
   },
   "62ada889cbf1c1ea": {
    "verdict": "ok"
@@ -13165,6 +13524,10 @@
   "66e7d1a322f50d8e": {
    "verdict": "ok"
   },
+  "66eaa6de062c8a36": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise fs-id1894624, model answer transcribed from CNXML solution fs-id2955841 verbatim."
+  },
   "66ef9cafe58348ac": {
    "verdict": "ok"
   },
@@ -13460,6 +13823,14 @@
   "68f834909e0bda7c": {
    "verdict": "ok",
    "note": "Denominator x^2-1=(x-1)(x+1) zero at x=±1; domain is R minus {-1,1}; matches CNXML source answer 'All reals x≠-1,1'."
+  },
+  "68fb175e7ec98e56": {
+   "verdict": "ok",
+   "note": "Locally written from section.summary sentence 'Historically, scientists organized organisms into a taxonomic classification system.' Distractors (phylogenetic tree, systematics, binomial nomenclature) are all module terms; disclosed in footer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "69001b62610e26a9": {
    "verdict": "ok",
@@ -14555,6 +14926,10 @@
   "7174964459330c94": {
    "verdict": "ok"
   },
+  "7176eb812552f140": {
+   "verdict": "ok",
+   "note": "selfcheck model answer = CNXML solution fs-id2626001 verbatim (exercise fs-id1696275, Critical Thinking Q2)."
+  },
   "7177bbd23f1a679b": {
    "verdict": "ok"
   },
@@ -14764,14 +15139,6 @@
   },
   "7332a4e506523bd6": {
    "verdict": "ok"
-  },
-  "7339b0cf83a1fabf": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "733bdce34112c3cd": {
    "verdict": "ok"
@@ -15013,6 +15380,14 @@
   "7512749c40e08dc9": {
    "verdict": "ok"
   },
+  "752d42bbbe73038c": {
+   "verdict": "ok",
+   "note": "textin built from the glossary definition of web of life (fs-idp26484048); answer matches the term; question paraphrases the meaning without the contiguous phrase \"web of life\".",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "754043d08960f75e": {
    "verdict": "ok"
   },
@@ -15190,6 +15565,14 @@
    "verdict": "ok",
    "note": "model answer is CNXML solution fs-id2255187 (m66481) verbatim; rubric checkpoints are clauses of that solution"
   },
+  "76dbbf96d3a7b2a7": {
+   "verdict": "ok",
+   "note": "textin built from the glossary definition of nucleus-first hypothesis (fs-idp66848096); answer matches the term exactly.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "76f7601e032b9cdd": {
    "verdict": "ok"
   },
@@ -15275,6 +15658,10 @@
   "777b63e41a915955": {
    "verdict": "ok"
   },
+  "777b9f1e2dcd4e6e": {
+   "verdict": "ok",
+   "note": "m66530 exercise fs-idp34994416 (Critical Thinking): source solution transcribed verbatim as model answer; checkpoints are verbatim clauses of it."
+  },
   "777c7505a637292f": {
    "verdict": "ok",
    "note": "-210*pi/180=-7pi/6 exact; key p1324 #3"
@@ -15315,6 +15702,14 @@
   },
   "77b3c808e0f38006": {
    "verdict": "ok"
+  },
+  "77b577d4c6a77572": {
+   "verdict": "ok",
+   "note": "Glossary recall (definition fs-id2000981, term pure culture, module m66514); accept 'pure cultures' (plural form the module itself uses in the metagenomics Critical Thinking solution).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "77b7a78731007034": {
    "verdict": "ok"
@@ -15509,6 +15904,14 @@
   },
   "793c22b79a726502": {
    "verdict": "ok"
+  },
+  "793efe6295fe34f9": {
+   "verdict": "ok",
+   "note": "glossary definition fs-id2682614 (genome annotation).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "7942685891441558": {
    "verdict": "ok",
@@ -15873,6 +16276,14 @@
     "result": "agrees"
    }
   },
+  "7b967e92aab9be92": {
+   "verdict": "ok",
+   "note": "Glossary recall (definition id fs-idp48289568, term 'shared ancestral character'); prompt avoids the answer's own words ('shared', 'ancestral', 'character').",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7b9f76bcb66222a0": {
    "verdict": "ok"
   },
@@ -16226,6 +16637,14 @@
   },
   "7dab69f82c7eb094": {
    "verdict": "ok"
+  },
+  "7db0056ac2453bcb": {
+   "verdict": "ok",
+   "note": "textin glossary recall: answer 'physical map' matches glossary definition fs-id1381048 verbatim; prompt reworded ('actual distance' for 'physical distance') solely to avoid the retype-hazard word 'physical'/'map' appearing in the question, no meaning change.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "7dce4d8a27d29020": {
    "verdict": "ok",
@@ -16802,6 +17221,14 @@
   "8224e8dc981349b6": {
    "verdict": "ok"
   },
+  "82299655fa130d10": {
+   "verdict": "ok",
+   "note": "multiplechoice: answer 'all of the above' matches CNXML solution fs-id1570289 (D) for exercise fs-id1425631, source option order preserved.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "823184c8290dc3ae": {
    "verdict": "ok",
    "note": "m66430 Critical Thinking Q2 <solution id=fs-idp140338797191968>: 'Hydrogen bonds and van der Waals interactions form weak associations... They provide the structure and shape necessary for proteins and DNA within cells so that they function properly.' Page model answer matches verbatim; both CHECKS clauses restate this with no added claim."
@@ -16990,6 +17417,14 @@
   },
   "8323f2b6fc330301": {
    "verdict": "ok"
+  },
+  "832645bb0e4f002f": {
+   "verdict": "ok",
+   "note": "multiplechoice: answer 'genetically similar' matches CNXML solution fs-id1771455 (A) for exercise fs-id2609949, source option order preserved.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "8338b383fca8d39a": {
    "verdict": "ok"
@@ -17994,6 +18429,14 @@
   "8b617b7f096d9c7e": {
    "verdict": "ok"
   },
+  "8b62532f8a22d16e": {
+   "verdict": "ok",
+   "note": "textin built from the glossary definition of eukaryote-first hypothesis (fs-idp53549872); answer matches the term exactly.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "8b66b9197f50c573": {
    "verdict": "ok",
    "note": "MC: 'or' of two disjoint events uses the Addition Principle; matches source Section Exercise 3's own explanation."
@@ -18541,6 +18984,14 @@
   "901b1264ccb4b6cd": {
    "verdict": "ok",
    "note": "4c+2a=116.90 and 6c+3a=175.35: the second equation is exactly 1.5 times the first (1.5*4=6, 1.5*2=3, 1.5*116.90=175.35), so the system is dependent -- infinitely many (c,a) pairs satisfy both, matching the Answer Key's 'infinitely many solutions, need more information.'"
+  },
+  "901b9068e8f20c78": {
+   "verdict": "ok",
+   "note": "m66530 glossary definition fs-idm99536784 (systematics): meaning used as prompt, term as answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "901cc76a2beef324": {
    "verdict": "ok"
@@ -19615,6 +20066,14 @@
    "verdict": "ok",
    "note": "Expanded 0.2(x-2)(x+1)(x-5) by hand and with node: (x-2)(x+1)(x-5)=x^3-6x^2+3x+10, times 0.2 = 0.2x^3-1.2x^2+0.6x+2. Matches CNXML ti_03_03_09's y-intercept check (f(0)=2). Replayed the printed factored subject through checkAnswer with form:\"expanded\" -- it returns \"form\" (rejected), and the authored expanded answer self-grades \"correct\"."
   },
+  "98957b15b7ffeaf0": {
+   "verdict": "ok",
+   "note": "glossary definition fs-id1691113 (next-generation sequencing); accept aliases (deep sequencing, massively parallel sequencing) are named in the section's own text, not the glossary.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "989655f3a0bafa08": {
    "verdict": "ok"
   },
@@ -19947,6 +20406,14 @@
     "result": "agrees"
    }
   },
+  "9b66bd5246893ff0": {
+   "verdict": "ok",
+   "note": "parent re-verdict after accept gained the module's own compound form 'genomic fusion' and the plural; answer unchanged, re-read against m66532 glossary and prose",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9b6b92aeb0eb7c71": {
    "verdict": "ok"
   },
@@ -20015,6 +20482,10 @@
   },
   "9bd09b41287a503d": {
    "verdict": "ok"
+  },
+  "9bd3224bfa3ff735": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise fs-id1280378, model answer transcribed from CNXML solution fs-id1296849 verbatim."
   },
   "9bd47b15bca17ab3": {
    "verdict": "ok",
@@ -20357,6 +20828,14 @@
     "result": "agrees"
    }
   },
+  "9eb8d3ab1ca2258f": {
+   "verdict": "ok",
+   "note": "textin built from the glossary definition of mitochondria-first hypothesis (fs-idp27897680); answer matches the glossary spelling, accept covers the singular-organelle spelling the meaning text itself uses (\"mitochondrion\").",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9ebe5d9e24d7cbe1": {
    "verdict": "ok"
   },
@@ -20482,8 +20961,24 @@
   "9fb14a5620c5b527": {
    "verdict": "ok"
   },
+  "9fbc046b57d26140": {
+   "verdict": "ok",
+   "note": "Review Question exercise fs-idp127733920: keyed B ('They evolved from a shared ancestor.'), matches the clade/monophyletic-group definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9fc0d1b9d9ed1749": {
    "verdict": "ok"
+  },
+  "9fd6d4f0c9438fc1": {
+   "verdict": "ok",
+   "note": "Review Question exercise fs-idm4710848: keyed A ('homologous traits'), matches the section text that cladistics organizes homologous traits.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "9fd84c52541e16e5": {
    "verdict": "ok",
@@ -20805,6 +21300,14 @@
   "a29332a8d53c0cbb": {
    "verdict": "ok"
   },
+  "a29453bed21c2bc9": {
+   "verdict": "ok",
+   "note": "Glossary recall (definition fs-id2154950, term metagenomics, module m66514).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a295a555c4c4574a": {
    "verdict": "ok"
   },
@@ -20818,6 +21321,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "a2a7a8ad8fae29e4": {
+   "verdict": "ok",
+   "note": "Visual Connection exercise fs-idp53820672 (fig-ch20_02_04): solution matches verbatim; model answer and checkpoints re-derived from the CNXML solution paragraph."
   },
   "a2b1ab882517a18f": {
    "verdict": "ok"
@@ -21109,6 +21616,14 @@
   },
   "a545cc64bcc9e2fe": {
    "verdict": "ok"
+  },
+  "a54cdfd3cc2e3d72": {
+   "verdict": "ok",
+   "note": "Glossary recall, term id fs-id1771864 (\"lysis buffer\"), meaning fs-id1920763 used as prompt.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a54cee89849c5f0b": {
    "verdict": "ok"
@@ -21552,6 +22067,14 @@
   "a7f887823c37b167": {
    "verdict": "ok"
   },
+  "a8047ac8635acfc1": {
+   "verdict": "ok",
+   "note": "parent re-verdict after accept widened to include the plural compound form the glossary uses (recombinant DNA molecules); answer unchanged, re-read against m66511 glossary",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a806657428566694": {
    "verdict": "ok",
    "note": "(x-4)^2/36+(y-2)^2/20=1: center (h,k)=(4,2) read directly from standard form; matches CNXML fs-id1361228."
@@ -21820,6 +22343,14 @@
   },
   "a9c28c270a419f40": {
    "verdict": "ok"
+  },
+  "a9c6021c2731ca37": {
+   "verdict": "ok",
+   "note": "m66530 glossary definition fs-idm53349056 (binomial nomenclature): meaning used as prompt, term as answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a9cd99267df6343f": {
    "verdict": "ok"
@@ -22241,6 +22772,14 @@
    "verdict": "ok",
    "note": "fs-id2427617 (CNXML solution: True, with proof shown). 3sin^2(theta)+4cos^2(theta) = 3(sin^2+cos^2)+cos^2 = 3+cos^2(theta); confirmed numerically at theta=1 (3.291926581726429 both sides)."
   },
+  "ac4df8b60b2cc7a3": {
+   "verdict": "ok",
+   "note": "glossary definition fs-id1359630 (model organism); prompt avoids the literal term \"model organism\" that appears inside the glossary meaning itself.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ac54229ec98b64d9": {
    "verdict": "ok"
   },
@@ -22315,10 +22854,6 @@
   "acdedbf481ed30dc": {
    "verdict": "ok",
    "note": "2 sin x+1=0 -> sin x=-1/2 -> x=7pi/6,11pi/6 on [0,2pi); standard unit-circle solve, independently re-derived."
-  },
-  "ace775e1354b1cfa": {
-   "verdict": "ok",
-   "note": "parent re-record after correcting the source solution's 2pq rounding slip (.48 → .49, erratum 161); model answer otherwise the verbatim source solution, checkpoints mirror its clauses, arithmetic re-derived exactly (p=20/48, q=28/48, 2pq=.48611 → .49)"
   },
   "ace8787bf760b3cb": {
    "verdict": "ok"
@@ -22532,6 +23067,14 @@
    "verdict": "ok",
    "note": "Vertex of f(x)=2x^2-10x+4: h=5/2,k=-17/2 (computed via node); matches CNXML solution for fs-id1165133344089 ('Minimum is -17/2... at 5/2')."
   },
+  "ae9880c298195457": {
+   "verdict": "ok",
+   "note": "Glossary recall (definition fs-id1693409, term polygenic, module m66514).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "aea4f43b8fc1e423": {
    "verdict": "ok"
   },
@@ -22705,6 +23248,14 @@
   },
   "b031cc8800b8fe7c": {
    "verdict": "ok"
+  },
+  "b032667e618a47dd": {
+   "verdict": "ok",
+   "note": "MC transcribes fs-idm11427024 (Review Q1) verbatim; source <solution> keys option C \"horizontal gene transfer\", matching the section's own defining paragraph (fs-idp25026896).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "b03d80735eca0f6a": {
    "verdict": "ok",
@@ -23037,6 +23588,14 @@
   },
   "b2d8df1a39d4c5e5": {
    "verdict": "ok"
+  },
+  "b2e5db0acfebbf8d": {
+   "verdict": "ok",
+   "note": "textin glossary recall: answer 'genomics' matches glossary definition fs-id1815339/fs-id1815343 (term/meaning) verbatim.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "b2f0e3b1751d40cd": {
    "verdict": "ok"
@@ -23703,11 +24262,23 @@
   "b82ca931640ad073": {
    "verdict": "ok"
   },
+  "b835f3e944ed9f1d": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise fs-idp96392800 (dolphins/fish): source solution reproduced near-verbatim as the model answer."
+  },
   "b83695761d925fbf": {
    "verdict": "ok"
   },
   "b845dde0f68c3147": {
    "verdict": "ok"
+  },
+  "b84c77257c168276": {
+   "verdict": "ok",
+   "note": "parent re-verdict after accept widened to plural forms (RFLPs, restriction fragment length polymorphisms) the module's own prose uses; answer unchanged, re-read against m66512 glossary",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "b84e78502f55b33a": {
    "verdict": "ok"
@@ -23875,6 +24446,15 @@
   },
   "b95e2241c64d1a4f": {
    "verdict": "ok"
+  },
+  "b96689d51c6eeea1": {
+   "verdict": "ok",
+   "note": "summary-derived cloze textin, blanking 'protein analysis' from summary sentence 4 (\"Proteomics approaches rely on protein analysis.\"); exact phrase from the module.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "settled against m66515's summary, which reads verbatim 'Proteomics approaches rely on protein analysis.' — the key is the blanked phrase of that sentence; solver's blind guess named the wrong analysis"
+   }
   },
   "b96c45e406dbe1f2": {
    "verdict": "ok"
@@ -24074,6 +24654,10 @@
    "verdict": "ok",
    "note": "Axis of symmetry x=5/2 for f(x)=x^2-5x-6."
   },
+  "bb0606e6cd30e11b": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise fs-id1456433, model answer transcribed from CNXML solution fs-id1441891 verbatim."
+  },
   "bb06b0c63966e6ab": {
    "verdict": "ok",
    "note": "01-the-process-of-meiosis.md line 278, model answer matches CNXML solution id=\"fs-id1561447\" verbatim; checks (homologs pulled apart to opposite poles, sister chromatids not separated until meiosis II, fused kinetochore ensures both sister chromatids bind the same spindle fiber) restate that solution's clauses with no added claim."
@@ -24151,6 +24735,14 @@
   },
   "bbac8fafab743ffc": {
    "verdict": "ok"
+  },
+  "bbb836dd9c8ca8bf": {
+   "verdict": "ok",
+   "note": "parent re-verdict after singular accept added (drug interaction); summary-derived cloze unchanged, re-read against m66514 summary",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "bbbcde94e576c759": {
    "verdict": "ok"
@@ -24410,6 +25002,10 @@
   "bd9d4f18345d5701": {
    "verdict": "ok"
   },
+  "bdac161da95fc1a9": {
+   "verdict": "ok",
+   "note": "m66530 exercise fs-idp20454112 (Critical Thinking): source solution transcribed verbatim as model answer; checkpoints are verbatim clauses of it."
+  },
   "bdadfc9658c31d71": {
    "verdict": "ok"
   },
@@ -24504,6 +25100,10 @@
   "be4437b38ccb1cc7": {
    "verdict": "ok"
   },
+  "be4846efa7a09d03": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise fs-idp29739984 ('Describe maximum parsimony.'): source solution reproduced near-verbatim as the model answer."
+  },
   "be486334c940c24b": {
    "verdict": "ok"
   },
@@ -24524,6 +25124,14 @@
   },
   "be66be5236f34a01": {
    "verdict": "ok"
+  },
+  "be699ea34cb10957": {
+   "verdict": "ok",
+   "note": "Review Question exercise fs-idp149139024: keyed A ('to decipher accurate phylogenies'), matches the section's framing of maximum parsimony as a tool for accurate phylogenies.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "be71af388cc5ebc7": {
    "verdict": "ok",
@@ -25666,6 +26274,10 @@
   "c67efea0de6d4a48": {
    "verdict": "ok"
   },
+  "c680b5477a20d13b": {
+   "verdict": "ok",
+   "note": "m66530 exercise fs-idp59927904 (Critical Thinking): source solution 'domain, kingdom, phylum, class, order, family, genus, species' used verbatim as model answer; checkpoints are exact comma-separated substrings of it."
+  },
   "c6823796f26163c3": {
    "verdict": "ok"
   },
@@ -25783,6 +26395,10 @@
   },
   "c71dc230ea91bb3d": {
    "verdict": "ok"
+  },
+  "c7223c571683ea93": {
+   "verdict": "ok",
+   "note": "Visual Connection exercise fs-idp197183488 (fig-ch20_02_05): solution matches verbatim; short model answer split into two overlapping token-subset checkpoints."
   },
   "c731064456b3ae2b": {
    "verdict": "ok"
@@ -26228,6 +26844,10 @@
   "cac09ffb3a00b51e": {
    "verdict": "ok"
   },
+  "cacbd2572c460526": {
+   "verdict": "ok",
+   "note": "selfcheck model answer = CNXML solution fs-id1953708 verbatim (exercise fs-id2248830, Critical Thinking Q1)."
+  },
   "cad1eb2df193be7f": {
    "verdict": "ok",
    "note": "Matches m66446 exercise fs-id1195128, solution fs-id1407738 ('Some microbes are beneficial...E. coli...yogurt...'). Model answer verbatim; CHECKS restate it."
@@ -26527,6 +27147,10 @@
   },
   "cd3c3046529e3d53": {
    "verdict": "ok"
+  },
+  "cd3cad7d8b621e09": {
+   "verdict": "ok",
+   "note": "parent re-verdict after one rubric checkpoint clause restored to the model answer's own conjunction ('and identify'); model answer unchanged, traced to the page's systems-biology sentences"
   },
   "cd52d64f5491c5d3": {
    "verdict": "ok",
@@ -26869,6 +27493,14 @@
   },
   "d0ad93a3bdd0d294": {
    "verdict": "ok"
+  },
+  "d0b3f8fa5601b309": {
+   "verdict": "ok",
+   "note": "m66530 glossary definition fs-idm66472720 (taxonomy): meaning used as prompt, term as answer; answer word not present in question.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "d0b41591add95e4a": {
    "verdict": "ok",
@@ -27605,6 +28237,10 @@
     "result": "agrees"
    }
   },
+  "d7282de08369a606": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise fs-id1443535, model answer transcribed from CNXML solution fs-id1015994 verbatim."
+  },
   "d72ea2e3558c369b": {
    "verdict": "ok"
   },
@@ -28078,6 +28714,14 @@
   "db4ced053a0ff0d1": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "db500014343090cb": {
+   "verdict": "ok",
+   "note": "proteome — glossary def fs-id1988758 (\"entire set of proteins that cell type produces\").",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -28593,6 +29237,14 @@
   "df9cf3d19dc95e2e": {
    "verdict": "ok"
   },
+  "dfa40507df6e7d2a": {
+   "verdict": "ok",
+   "note": "glossary definition fs-id2279649 (chain termination method); accept aliases (dideoxy method, Sanger method) are the section's own alternate names for this method.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "dfaa199475cc1db6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -28746,6 +29398,14 @@
   "e103715703a85e25": {
    "verdict": "ok"
   },
+  "e1054f53ca65fe2d": {
+   "verdict": "ok",
+   "note": "parent re-verdict after accept gained 'homoplasies' and the stem's article was dropped so the accepted synonym is also grammatical; answer unchanged, re-read against m66531 glossary",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e108afddb8c2d3ae": {
    "verdict": "ok"
   },
@@ -28869,6 +29529,14 @@
   "e1c147a743975f27": {
    "verdict": "ok"
   },
+  "e1c55ce7e03b6306": {
+   "verdict": "ok",
+   "note": "sortbins built from table tab-ch20-03-01 (transcribed in the body); every item's bin assignment matches the table's Prokaryotes/Eukaryotes group label for its row; interleaved order P,E,P,P,E,P,E,E is not a fixed alternation.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e1ca76fb17ce98cd": {
    "verdict": "ok"
   },
@@ -28967,6 +29635,22 @@
   "e23ecf3b26db8f03": {
    "verdict": "ok"
   },
+  "e244a0a0f0b0586a": {
+   "verdict": "ok",
+   "note": "exercise fs-id2164620; CNXML solution D = \"all of the above\"; section names medical, agricultural, and biofuel applications together.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "e245799430494f61": {
+   "verdict": "ok",
+   "note": "re-keyed from the source's 'all of the above' per erratum 172: the module's own sentence says the tomato did not stay in the market, contradicting option (a); only option (b) is taught directly; disclosed in DISCLOSED_DEVIATIONS kind 'key'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e247378ed646bd7b": {
    "verdict": "ok",
    "note": "parent re-record after option shuffle: f'(30)=-20 is the rate at 12:30 p.m., losing 20 gal/min (source solution)."
@@ -28978,6 +29662,14 @@
   "e25601b33e28ebba": {
    "verdict": "ok",
    "note": "Review Q3 (fs-id1458009), solution B = centrosome; matches 'The two centrosomes will give rise to the mitotic spindle' in the S Phase paragraph.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "e257070621808c4a": {
+   "verdict": "ok",
+   "note": "textin built from the glossary definition of horizontal gene transfer (HGT) (fs-idp68760976); answer matches the term exactly, accept HGT is the section's own abbreviation; no whole-word run of the answer appears in the question.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -29472,6 +30164,14 @@
    "verdict": "ok",
    "note": "re-derived vertex (-1,-2) from f(x)=5x^2+10x+3: axis x=-10/10=-1, f(-1)=5-10+3=-2. gpcheck: 5 reachable lattice points on grid -4..2 x -4..19, slack 2."
   },
+  "e5d76fa368362592": {
+   "verdict": "ok",
+   "note": "re-hashed by an accept-separator repair (comma list to |, no member changed): answer \"cohesin\" verified against m66483 glossary fs-id1228250 (\"proteins that form a complex that seals sister chromatids together at their centromeres until anaphase II of meiosis\"); accepts \"cohesins\" and \"cohesin proteins\" match the module's own prose (fs-id1267021 \"cohesin proteins\").",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e5f1c8e544476118": {
    "verdict": "ok"
   },
@@ -29563,6 +30263,14 @@
   },
   "e6a8ebbface40a3c": {
    "verdict": "ok"
+  },
+  "e6aa3c42d227f7b2": {
+   "verdict": "ok",
+   "note": "exercise fs-id3103556; CNXML solution A = \"uses labeled ddNTPs\", matches section text (only ddNTPs are fluorescently labeled).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e6b34a860768207c": {
    "verdict": "ok"
@@ -29982,6 +30690,14 @@
   "e9ee6178bd683e92": {
    "verdict": "ok"
   },
+  "e9f388afbb222350": {
+   "verdict": "ok",
+   "note": "Glossary recall (definition id fs-idp27309136, term 'cladistics').",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e9f9cb2c433510a9": {
    "verdict": "ok"
   },
@@ -30063,6 +30779,14 @@
   "eab2d69459494218": {
    "verdict": "ok"
   },
+  "eabcea8d539be9bb": {
+   "verdict": "ok",
+   "note": "multiplechoice: answer 'is based on the natural recombination process' matches CNXML solution fs-id2690029 (B) for exercise fs-id1968258, source option order preserved.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "eabd2965fcd8c14c": {
    "verdict": "ok"
   },
@@ -30088,6 +30812,10 @@
   },
   "eae446a6a330408c": {
    "verdict": "ok"
+  },
+  "eae4cc2864783a5e": {
+   "verdict": "ok",
+   "note": "Critical Thinking Q2 (fs-id2321141/fs-id1987001, module m66514) — model answer is the keyed solution verbatim; checkpoints restate it."
   },
   "eb05c7b5baa537fb": {
    "verdict": "ok"
@@ -30386,6 +31114,14 @@
   },
   "ecded472cecc4172": {
    "verdict": "ok"
+  },
+  "ecf8932cb2ac1787": {
+   "verdict": "ok",
+   "note": "Review Question exercise fs-id1448379, keyed C in CNXML solution fs-id1510226 (\"of tissues to cure inheritable disease\").",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ed00155f85f78086": {
    "verdict": "ok"
@@ -30738,6 +31474,10 @@
   },
   "efcfa2c975ac2154": {
    "verdict": "ok"
+  },
+  "efd1447e5bcd20fc": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question fs-id2571119; model answer is the source <solution> verbatim (\"Proteomics has provided a way to detect biomarkers and protein signatures, which have been used to screen for the early detection of cancer.\")."
   },
   "efd74d2f03c5d7b6": {
    "verdict": "ok",
@@ -31720,6 +32460,14 @@
   "f7979c3d8d253fa2": {
    "verdict": "ok"
   },
+  "f79d3fc5c9e4c5e3": {
+   "verdict": "ok",
+   "note": "m66530 glossary definition fs-idm25913024 (taxon): meaning used as prompt; accept='taxa' per the glossary's own '(plural: taxa)' note.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f79e11cccdea7a75": {
    "verdict": "ok"
   },
@@ -31808,6 +32556,10 @@
   },
   "f83d7d945959ec7e": {
    "verdict": "ok"
+  },
+  "f83f85e3b33c7915": {
+   "verdict": "ok",
+   "note": "m66530 exercise fs-idp32012832 (Visual Connection): source solution transcribed near-verbatim as the selfcheck model answer; checkpoints decompose it into 5 clauses, each a verbatim substring of the model."
   },
   "f842e0f7de984190": {
    "verdict": "ok",
@@ -32664,6 +33416,22 @@
   "fec3eaf1ce73a655": {
    "verdict": "ok"
   },
+  "feca2bf0572114a8": {
+   "verdict": "ok",
+   "note": "m66530 exercise fs-idp32779440: source options in source order, solution A = 'sister taxa', matches glossary definition ('two lineages that diverged from the same branch point').",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "fecdd031eb6edc03": {
+   "verdict": "ok",
+   "note": "Glossary recall (definition id fs-idp105098576, term 'shared derived character'); prompt avoids the answer's own words.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "fed0126d10f545b5": {
    "verdict": "ok"
   },
@@ -32808,6 +33576,14 @@
   },
   "ffd5776cd58ffa3c": {
    "verdict": "ok"
+  },
+  "ffe320df33b0ca4b": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1956957, keyed option B (\"a protein that is uniquely produced in a diseased state\") per source <solution>; matches glossary def of biomarker.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ffe332226f6b4457": {
    "verdict": "ok"

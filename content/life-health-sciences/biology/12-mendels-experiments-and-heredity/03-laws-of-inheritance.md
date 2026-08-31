@@ -258,7 +258,7 @@ Men are more likely to experience hemophilia than women.
 {{< textin
   question="The tendency of genes positioned close together on the same chromosome to be inherited as a pair, rather than sorting independently, is called ________."
   answer="linkage"
-  accept="genetic linkage, gene linkage"
+  accept="genetic linkage|gene linkage"
   hint="It happens because the genes involved sit near each other physically on one chromosome, rather than on separate ones."
 >}}
 

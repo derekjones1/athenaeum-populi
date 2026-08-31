@@ -262,7 +262,7 @@ kinetochores
 {{< textin
   question="The proteins that seal sister chromatids together at their centromeres until anaphase II of meiosis are called ________."
   answer="cohesin"
-  accept="cohesins, cohesin proteins"
+  accept="cohesins|cohesin proteins"
   hint="They hold the two identical DNA copies formed during S phase together until they are finally pulled apart in the second meiotic division."
 >}}
 

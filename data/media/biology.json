@@ -6269,6 +6269,169 @@
       "alt": "Multiple ubiquitin groups combine to bind to a protein. The tagged protein is then fed into the hollow tube of a proteasome. The proteasome degrades the protein. This produces ADP and amino acids, and the ubiquitin is also released.",
       "caption": "Proteins with ubiquitin tags are marked for degradation within the proteasome."
     },
+    "Figure_17_01_02-c2e7": {
+      "source": "media/Figure_17_01_02-c2e7.jpg",
+      "sourceSha256": "a6dbf66a5523a47756e5ead421e05708940a90b69227a8d07d8c801db123bf6b",
+      "module": "m66511",
+      "kind": "photo",
+      "width": 800,
+      "height": 530,
+      "variants": [
+        {
+          "width": 800,
+          "height": 530,
+          "file": "Figure_17_01_02-c2e7-800.webp"
+        }
+      ],
+      "alt": "This illustration shows the four main steps of D N A extraction. In the first step, cells in a test tube are lysed using a detergent that disrupts the plasma membrane. In the second step, cell contents are treated with protease to destroy protein, and RNAase to destroy R N A. The resulting slurry is centrifuged to pellet the cell debris. The supernatant, or liquid, containing the D N A is then transferred to a clean test tube. The D N A is precipitated with ethanol. It forms viscous, mucous-like strands that can be spooled on a glass rod.",
+      "caption": "This diagram shows the basic method of DNA extraction."
+    },
+    "Figure_17_01_04": {
+      "source": "media/Figure_17_01_04.jpg",
+      "sourceSha256": "02e7bfeaf2f3ca8f0ca26e62e6055bb38f6bf512f35bf35aa8a1b69fb01cc101",
+      "module": "m66511",
+      "kind": "photo",
+      "width": 1117,
+      "height": 1067,
+      "variants": [
+        {
+          "width": 800,
+          "height": 764,
+          "file": "Figure_17_01_04-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 1067,
+          "file": "Figure_17_01_04-1117.webp"
+        }
+      ],
+      "alt": "Illustration shows the amplification of a D N A sequence by the polymerase chain reaction. P C R consists of three steps; denaturation, annealing, and D N A synthesis; that occur at high, low, and intermediate temperatures. In step 1, the denaturation step, the sample is heated to a high temperature so the D N A strands separate. In step 2, annealing, the sample is cooled so two primers can anneal to the two strands of D N A. The primers are spaced such that the sequence of interest between them will be amplified. In step 3, D N A synthesis, the sample is warmed to the optimal temperature for Taq polymerase, which synthesizes the complementary strand from the primer to the 3 prime end of the molecule. This cycle is repeated again and again. Each time, the newly synthesized strands serve as templates so that the amount of D N A doubles with each cycle. As the cycles continue, more and more strands are the size of the distance between the two primers; in the end, the vast majority of strands are this size.",
+      "caption": "Scientists use polymerase chain reaction, or PCR, to amplify a specific DNA sequence. Primers—short pieces of DNA complementary to each end of the target sequence combine with genomic DNA, Taq polymerase, and deoxynucleotides. Taq polymerase is a DNA polymerase isolated from the thermostable bacterium Thermus aquaticus that is able to withstand the high temperatures that scientists use in PCR. Thermus aquaticus grows in the Lower Geyser Basin of Yellowstone National Park. Reverse transcriptase PCR (RT-PCR) is similar to PCR, but cDNA is made from an RNA template before PCR begins."
+    },
+    "Figure_17_01_06": {
+      "source": "media/Figure_17_01_06.png",
+      "sourceSha256": "041687fe7e4d8ac86cdcae267187e74c92126b85760f14dd5b43c35052dd67ef",
+      "module": "m66511",
+      "kind": "diagram",
+      "width": 1043,
+      "height": 957,
+      "variants": [
+        {
+          "width": 800,
+          "height": 734,
+          "file": "Figure_17_01_06-800.webp"
+        },
+        {
+          "width": 1043,
+          "height": 957,
+          "file": "Figure_17_01_06-1043.webp"
+        }
+      ],
+      "alt": "This figure illustrates the steps in molecular cloning into a plasmid called a cloning vector. The vector has a lac Z gene, which is necessary for metabolizing lactose, and a gene for ampicillin resistance. Within the lac Z gene are restriction sites, sequences of D N A cut by a particular restriction enzyme. The D N A to be cloned and the plasmid are both cut by the same restriction enzyme. The restriction enzyme staggers the cuts on the two strands of D N A, such that each strand has an overhanging single-stranded bit of D N A. On one strand, the sequence of the overhang is G A T C, and on the other, the sequence is C T A G. These two sequences are complementary, and allow the fragment of foreign D N A to anneal with the plasmid. An enzyme called ligase joins the two pieces together. The ligated plasmid is then transformed into a bacterial strain that lacks the lac Z gene and is sensitive to the antibiotic ampicillin. The bacteria are plated on media containing ampicillin, so that only bacteria that have taking up the plasmid; which has an ampicillin resistance gene; will grow. The media also contains X gal, a chemical that is metabolized in the same way as lactose. Plasmids lacking the insert are able to metabolize X gal, releasing a dye from X gal that turns the colony blue. Plasmids with the insert have a disrupted lac Z gene and produce white colonies. Thus, colonies containing the cloned D N A can be selected on the basis of color.",
+      "caption": "This diagram shows the steps involved in molecular cloning."
+    },
+    "Figure_17_01_07": {
+      "source": "media/Figure_17_01_07.png",
+      "sourceSha256": "73a7d36191fcc7a2944d836c9cfd780309811329926b5444883ceec762828701",
+      "module": "m66511",
+      "kind": "diagram",
+      "width": 471,
+      "height": 617,
+      "variants": [
+        {
+          "width": 471,
+          "height": 617,
+          "file": "Figure_17_01_07-471.webp"
+        }
+      ],
+      "alt": "To clone Dolly the sheep, a Scottish Blackface sheep was used as a cytoplasmic donor. Eggs from this sheep were extracted, and the nucleus removed. A Finn Dorset sheep was used as the nuclear donor. Nuclei were extracted from mammary cells, and direct electric current was used to fuse the nuclear D N A with the donor egg. The egg was then allowed to divide to the blastocyst stage, in which a sphere of cells contains a cluster of cells on one side. The blastocyst was implanted in a surrogate mother, resulting in Dolly the sheep.",
+      "caption": "Dolly the sheep was the first mammal to be cloned. To create Dolly, they removed the nucleus from a donor egg cell. They then introduced the nucleus from a second sheep into the cell, which divided to the blastocyst stage before they implanted it in a surrogate mother. (credit: modification of work by \"Squidonius\"/Wikimedia Commons)"
+    },
+    "Figure_17_01_08": {
+      "source": "media/Figure_17_01_08.jpg",
+      "sourceSha256": "76fb9256df19a0ddcceb381c7fbacc503ec1293d928accfe5c6b5e45292fe562",
+      "module": "m66511",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_17_01_08-544.webp"
+        }
+      ],
+      "alt": "To cure disease using an adenovirus vector, a new gene intended to replace a defective one is packaged with the adenovirus genome. The genes that make the virus pathogenic are removed. The modified D N A is put inside the virus' capsid, or protein coat. The person to be cured is infected with the modified virus. Viral D N A enters the nucleus, where the modified gene can replace the defective one.",
+      "caption": "Gene therapy using an adenovirus vector can be used to cure certain genetic diseases in which a person has a defective gene. (credit: NIH)"
+    },
+    "Figure_17_01_09": {
+      "source": "media/Figure_17_01_09.jpg",
+      "sourceSha256": "2a4c56cece1dab2fb8459837ab8894c401d38371892a03736408151ed3824fb4",
+      "module": "m66511",
+      "kind": "photo",
+      "width": 450,
+      "height": 676,
+      "variants": [
+        {
+          "width": 450,
+          "height": 676,
+          "file": "Figure_17_01_09-450.webp"
+        }
+      ],
+      "alt": "Photo shows corn cobs with different colors, including yellow, white, red, and a mixture of these colors.",
+      "caption": "Corn, a major agricultural crop used to create products for a variety of industries, is often modified through plant biotechnology. (credit: Keith Weller, USDA)"
+    },
+    "Figure_17_02_01-b38e": {
+      "source": "media/Figure_17_02_01-b38e.jpg",
+      "sourceSha256": "7a87fe0ab5710a72001e8904d3720a05e072007856339282e2d6de927be26439",
+      "module": "m66512",
+      "kind": "photo",
+      "width": 800,
+      "height": 561,
+      "variants": [
+        {
+          "width": 800,
+          "height": 561,
+          "file": "Figure_17_02_01-b38e-800.webp"
+        }
+      ],
+      "alt": "A homologous pair of chromosomes has three genes, named A, B, and C. Gene A is located near the top of the chromosome, and genes B and C are located close together near the bottom. Each chromosome has different A, B, and C alleles. The alleles may recombine if a crossover occurs between them, so that genetic material from one chromosome is swapped with another. Genes A and B are far apart on the chromosome such that a crossover event occurring almost anywhere in the chromosome will result in the recombination of alleles for these genes. Genes B and C are much closer together, so only crossovers occurring in a very narrow region will result in recombination of these genes.",
+      "caption": "Crossover may occur at different locations on the chromosome. Recombination between genes A and B is more frequent than recombination between genes B and C because genes A and B are farther apart. Therefore, a crossover is more likely to occur between them."
+    },
+    "Figure_17_02_02-61ad": {
+      "source": "media/Figure_17_02_02-61ad.jpg",
+      "sourceSha256": "8ccadbc86337ce393851bc3bf8f44daa80e2bed009190e17ecebfff9073da8f9",
+      "module": "m66512",
+      "kind": "photo",
+      "width": 544,
+      "height": 890,
+      "variants": [
+        {
+          "width": 544,
+          "height": 890,
+          "file": "Figure_17_02_02-61ad-544.webp"
+        }
+      ],
+      "alt": "Cytogenetic maps of the 22 human autosomes and the X and Y chromosomes are shown. The map appears as a black, white, and gray banding pattern unique to each chromosome.",
+      "caption": "A cytogenetic map shows the appearance of a chromosome after scientists stain and exam it under a microscope. (credit: National Human Genome Research Institute)"
+    },
+    "Figure_17_03_01-a947": {
+      "source": "media/Figure_17_03_01-a947.jpg",
+      "sourceSha256": "b156abc664c26a177d7f195d3de84542feeebcad0b1ad4d157742b80566415fd",
+      "module": "m66513",
+      "kind": "photo",
+      "width": 544,
+      "height": 403,
+      "variants": [
+        {
+          "width": 544,
+          "height": 403,
+          "file": "Figure_17_03_01-a947-544.webp"
+        }
+      ],
+      "alt": "A deoxynucleotide consists of a deoxyribose sugar, a base, and three phosphate groups. Dideoxyribose is identical to deoxyribose except that the hydroxyl, upper case O upper case H, group at the 3 prime position is replaced by upper case H. A 3 prime hydroxyl is necessary for elongation of the D N A chain, and the chain therefore stops growing if a dideoxyribose instead of deoxyribose is incorporated into the growing chain.",
+      "caption": "A dideoxynucleotide is similar in structure to a deoxynucleotide, but is missing the 3' hydroxyl group (indicated by the box). When a dideoxynucleotide is incorporated into a DNA strand, DNA synthesis stops."
+    },
     "Figure_18_00_01ab-3e8c": {
       "source": "media/Figure_18_00_01ab-3e8c.jpg",
       "sourceSha256": "a10fa5be3367d22136398e5f621d48ab04cc09eef761a65ae801882bd70237f9",
@@ -6836,6 +6999,279 @@
       "alt": "The photo on the left shows a peacock with a bright blue body and flared tail feathers standing next to a brown, drab peahen. The middle photo shows a large female spider sitting on a web next to its much smaller male counterpart. The photo on the right shows a brightly colored male wood duck swimming next to a drab brown female.",
       "caption": "Sexual dimorphism in (a) peacocks and peahens, (b) Argiope appensa spiders (the female spider is the large one), and in (c) wood ducks. (credit “spiders”: modification of work by “Sanba38”/Wikimedia Commons; credit “duck”: modification of work by Kevin Cole)"
     },
+    "Figure_20_00_01": {
+      "source": "media/Figure_20_00_01.jpg",
+      "sourceSha256": "618f465fbcbde4babcefb41a05c0f28f88fdcdd03a9ec79afe854a5482af13d6",
+      "module": "m66529",
+      "kind": "photo",
+      "width": 1118,
+      "height": 559,
+      "variants": [
+        {
+          "width": 800,
+          "height": 400,
+          "file": "Figure_20_00_01-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 559,
+          "file": "Figure_20_00_01-1118.webp"
+        }
+      ],
+      "alt": "Photo shows a bee collecting nectar from a flower.",
+      "caption": "A bee's life is very different from a flower's, but the two organisms are related. Both are members of the domain Eukarya and have cells containing many similar organelles, genes, and proteins. (credit: modification of work by John Beetham)"
+    },
+    "Figure_20_01_01": {
+      "source": "media/Figure_20_01_01.jpg",
+      "sourceSha256": "0b025f6d80bcb7e73cc8c85591fbd0d2e4c2d83683bbeacf0bbfd05aa4ea708a",
+      "module": "m66530",
+      "kind": "photo",
+      "width": 1117,
+      "height": 336,
+      "variants": [
+        {
+          "width": 800,
+          "height": 240,
+          "file": "Figure_20_01_01-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 336,
+          "file": "Figure_20_01_01-1117.webp"
+        }
+      ],
+      "alt": "The phylogenetic tree in part a is rooted and resembles a living tree, with a common ancestor indicated as the base of the trunk. Two branches form from the trunk. The left branch leads to the domain Bacteria. The right branch branches again, giving rise to Archaea and Eukarya. Smaller branches within each domain indicate the groups present in that domain. The phylogenetic tree in part B is unrooted. It does not resemble a living tree; rather, groups of organisms within the Archaea, Eukarya, and Bacteria domains are arranged in a circle. Lines connect the groups within each domain. The groups within Archaea and Eukarya are then connected together. A line from the Archaea/ Eukarya domains, and another from the Bacteria meet in the center of the circle. There is no root, and therefore no indication of which domain arose first.",
+      "caption": "Both of these phylogenetic trees show the relationship of the three domains of life—Bacteria, Archaea, and Eukarya—but the (a) rooted tree attempts to identify when various species diverged from a common ancestor while the (b) unrooted tree does not. (credit a: modification of work by Eric Gaba)"
+    },
+    "Figure_20_01_02": {
+      "source": "media/Figure_20_01_02.jpg",
+      "sourceSha256": "cca14521fb7bedd293a078c5c6ba40214b5ffc954de749795adbbb1168939782",
+      "module": "m66530",
+      "kind": "photo",
+      "width": 544,
+      "height": 359,
+      "variants": [
+        {
+          "width": 544,
+          "height": 359,
+          "file": "Figure_20_01_02-544.webp"
+        }
+      ],
+      "alt": "Illustration shows a phylogenetic tree that starts at a root, indicating that all organisms on the tree share a common ancestor. Shortly after the root, the tree branches out. One branch gives rise to a single, basal lineage, and the other gives rise to all other organisms on the tree. The next branch forks at one point into four different lineages, an example of polytomy. The final branch gives rise to two lineages, an example of sister taxa.",
+      "caption": "A phylogenetic tree's root indicates that an ancestral lineage gave rise to all organisms on the tree. A branch point indicates where two lineages diverged. A lineage that evolved early and remains unbranched is a basal taxon. When two lineages stem from the same branch point, they are sister taxa. A branch with more than two lineages is a polytomy."
+    },
+    "Figure_20_01_05": {
+      "source": "media/Figure_20_01_05.png",
+      "sourceSha256": "d432b19de5cd97abd53770f3ec1d4c60fc0554f00d6c72ea660cae81f403abd9",
+      "module": "m66530",
+      "kind": "diagram",
+      "width": 1043,
+      "height": 1052,
+      "variants": [
+        {
+          "width": 800,
+          "height": 807,
+          "file": "Figure_20_01_05-800.webp"
+        },
+        {
+          "width": 1043,
+          "height": 1052,
+          "file": "Figure_20_01_05-1043.webp"
+        }
+      ],
+      "alt": "Illustration shows the taxonomic groups shared by various species. All of the organisms shown are in the domain Eukarya: plants, insects, fish, rabbits, cats, foxes, jackals wolves, and dogs. Of these, insects, fish, rabbits, cats, foxes, jackals, wolves and dogs are in the kingdom Animalia. Within the kingdom Animalia, fish, rabbits, cats, foxes, jackals, wolves, and dogs are in the phylum Chordata. Rabbits, cats, foxes, jackals, wolves, and dogs are in the class Mammalia. Cats, foxes, jackals, wolves, and dogs are in the order Carnivora. Foxes, jackals, wolves, and dogs are in the family Canidae. Jackals, wolves and dogs are in the genus Canis. Wolves and Dogs have the species name Canis lupus. Dogs have the subspecies name Canis lupus familiaris.",
+      "caption": "At each sublevel in the taxonomic classification system, organisms become more similar. Dogs and wolves are the same species because they can breed and produce viable offspring, but they are different enough to be classified as different subspecies. (credit “plant”: modification of work by \"berduchwal\"/Flickr; credit “insect”: modification of work by Jon Sullivan; credit “fish”: modification of work by Christian Mehlführer; credit “rabbit”: modification of work by Aidan Wojtas; credit “cat”: modification of work by Jonathan Lidbeck; credit “fox”: modification of work by Kevin Bacher, NPS; credit “jackal”: modification of work by Thomas A. Hermann, NBII, USGS; credit “wolf”: modification of work by Robert Dewar; credit “dog”: modification of work by \"digital_image_fan\"/Flickr)"
+    },
+    "Figure_20_02_01-5b8b": {
+      "source": "media/Figure_20_02_01-5b8b.jpg",
+      "sourceSha256": "5d105a96b046acfed10af3ed156a77cdf9d7140741011d7a58736b2f6dad8b31",
+      "module": "m66531",
+      "kind": "photo",
+      "width": 1117,
+      "height": 495,
+      "variants": [
+        {
+          "width": 800,
+          "height": 354,
+          "file": "Figure_20_02_01-5b8b-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 495,
+          "file": "Figure_20_02_01-5b8b-1117.webp"
+        }
+      ],
+      "alt": "Photo a shows a bird in flight with a corresponding drawing of a bird wing. Photo b is a bat in flight with a corresponding drawing of a bat wing. Both the bird wing and the bat wing share common bones, analogous to the bones in the arms and fingers of humans. However, in the bat wing, the finger bones are long and separate and form a scaffolding on which the wing's membrane is stretched. In the bird wing, the finger bones are short and fused together at the front of the wing.",
+      "caption": "Bat and bird wings are homologous structures, indicating that bats and birds share a common evolutionary past. (credit a: modification of work by Steve Hillebrand, USFWS; credit b: modification of work by U.S. DOI BLM)"
+    },
+    "Figure_20_02_02-6526": {
+      "source": "media/Figure_20_02_02-6526.jpg",
+      "sourceSha256": "77645531da8ab0969a1c0fd2cbc09983e208b20fb2d9a6730d8332d6574d2aa8",
+      "module": "m66531",
+      "kind": "photo",
+      "width": 1117,
+      "height": 872,
+      "variants": [
+        {
+          "width": 800,
+          "height": 624,
+          "file": "Figure_20_02_02-6526-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 872,
+          "file": "Figure_20_02_02-6526-1117.webp"
+        }
+      ],
+      "alt": "Photo a shows a bat wing, photo b shows a bird wing, and photo c shows a honeybee wing, and all three are similar in overall shape. However, the bird wing and bat wing are both made from homologous bones that are similar in appearance. The honeybee wing is made of a thin, membranous material rather than bone.",
+      "caption": "The (c) wing of a honeybee is similar in shape to a (b) bird wing and (a) bat wing, and it serves the same function. However, the honeybee wing is not composed of bones and has a distinctly different structure and embryonic origin. These wing types (insect versus bat and bird) illustrate an analogy—similar structures that do not share an evolutionary history. (credit a: modification of work by U.S. DOI BLM; credit b: modification of work by Steve Hillebrand, USFWS; credit c: modification of work by Jon Sullivan)"
+    },
+    "Figure_20_02_03-eb43": {
+      "source": "media/Figure_20_02_03-eb43.jpg",
+      "sourceSha256": "fcfe50951019882baf3ff44c5b1be0f673f2110f45348523237b39aba17b0ef5",
+      "module": "m66531",
+      "kind": "photo",
+      "width": 544,
+      "height": 788,
+      "variants": [
+        {
+          "width": 544,
+          "height": 788,
+          "file": "Figure_20_02_03-eb43-544.webp"
+        }
+      ],
+      "alt": "The illustration shows a Dalbergia sissoo plant, which is short with pods and teardrop-shaped leaves.",
+      "caption": "Dalbergia sissoo (D. sissoo) is in the Fabaceae, or legume family. Scientists found that D. sissoo shares a DNA marker with species within the Fabaceae family that have antifungal properties. Subsequently, researchers found that D. sissoo had fungicidal activity, supporting the idea that DNA markers are useful to screen plants with potential medicinal properties."
+    },
+    "Figure_20_02_04-43b5": {
+      "source": "media/Figure_20_02_04-43b5.jpg",
+      "sourceSha256": "ae7ec8133351a6b7dae8d7597aaf14b04eb87be7feb34b6fbdbec942bfe2f2b9",
+      "module": "m66531",
+      "kind": "photo",
+      "width": 380,
+      "height": 204,
+      "variants": [
+        {
+          "width": 380,
+          "height": 204,
+          "file": "Figure_20_02_04-43b5-380.webp"
+        }
+      ],
+      "alt": "The illustration shows the V-shaped Vertebrata clade, which includes lampreys, fish, lizards, rabbits, and humans. Lampreys are at the left tip of the V, and humans are at the right tip. Three more lines are drawn parallel to the lamprey line; each of these lines starts further up the right arm of the V than the last. At the end of each line, from left to right, are fish, lizards, and rabbits. Lizards, rabbits, and humans are in the clade Amniota, which form a small V nested in the upper right-hand corner of the V-shaped Vertebrata clade.",
+      "caption": "Lizards, rabbits, and humans all descend from a common ancestor that had an amniotic egg. Thus, lizards, rabbits, and humans all belong to the clade Amniota. Vertebrata is a larger clade that also includes fish and lamprey."
+    },
+    "Figure_20_02_05": {
+      "source": "media/Figure_20_02_05.jpg",
+      "sourceSha256": "afac66d40f1f3d36be4db2368378e7e0a1480882206ef996881bd2672c450f90",
+      "module": "m66531",
+      "kind": "photo",
+      "width": 725,
+      "height": 650,
+      "variants": [
+        {
+          "width": 725,
+          "height": 650,
+          "file": "Figure_20_02_05-725.webp"
+        }
+      ],
+      "alt": "Illustrations show a phylogenetic tree that includes eukaryotic species. A central line represents the trunk of the tree. From this trunk, various groups branch. In order from the bottom, these are diplomonads, microsporidia, trichomonads, flagellates, entamoebae, slime molds, and ciliates. At the top of the tree, animals, fungi and plants all branch from the same point and are shaded to show that they belong in the same clade. Flagellates are on a branch by themselves, and they also form their own clade and are shaded to show this. In another image, Flagellates and ciliates are shaded to show that they branch from different points on the tree and are not considered clades. Likewise, a grouping of animals and plants but not fungi would not be considered a clade. A clade cannot exclude a branch originating at the same point as the others.",
+      "caption": "All the organisms within a clade stem from a single point on the tree. A clade may contain multiple groups, as in the case of animals, fungi and plants, or a single group, as in the case of flagellates. Groups that diverge at a different branch point, or that do not include all groups in a single branch point, are not clades."
+    },
+    "Figure_20_03_01ab": {
+      "source": "media/Figure_20_03_01ab.jpg",
+      "sourceSha256": "0e75b7ad52f1ce3b56f06f8796a799cdc5cdc17221724343b0ed203e40e831a9",
+      "module": "m66532",
+      "kind": "photo",
+      "width": 1117,
+      "height": 563,
+      "variants": [
+        {
+          "width": 800,
+          "height": 403,
+          "file": "Figure_20_03_01ab-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 563,
+          "file": "Figure_20_03_01ab-1117.webp"
+        }
+      ],
+      "alt": "Image a shows Charles Darwin's sketch of lines branching, like those on a tree. Photo b shows a photo of an oak tree with many branches.",
+      "caption": "The (a) concept of the “tree of life” dates to an 1837 Charles Darwin sketch. Like an (b) oak tree, the “tree of life” has a single trunk and many branches. (credit b: modification of work by \"Amada44\"/Wikimedia Commons)"
+    },
+    "Figure_20_03_02-c262": {
+      "source": "media/Figure_20_03_02-c262.jpg",
+      "sourceSha256": "eb6f0a6e5ade724ef1d9945686175d40cd324969ad729351abefc6cb638b20a7",
+      "module": "m66532",
+      "kind": "photo",
+      "width": 1118,
+      "height": 429,
+      "variants": [
+        {
+          "width": 800,
+          "height": 307,
+          "file": "Figure_20_03_02-c262-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 429,
+          "file": "Figure_20_03_02-c262-1118.webp"
+        }
+      ],
+      "alt": "Photo a shows small, oval-shaped red aphids crawling on a leaf. Photo b shows green aphids.",
+      "caption": "(a) Red aphids get their color from red carotenoid pigment. Genes necessary to make this pigment are present in certain fungi, and scientists speculate that aphids acquired these genes through HGT after consuming fungi for food. If mutation inactivates the genes for making carotenoids, the aphids revert back to (b) their green color. Red coloration makes the aphids considerably more conspicuous to predators, but evidence suggests that red aphids are more resistant to insecticides than green ones. Thus, red aphids may be more fit to survive in some environments than green ones. (credit a: modification of work by Benny Mazur; credit b: modification of work by Mick Talbot)"
+    },
+    "Figure_20_03_03-c1e5": {
+      "source": "media/Figure_20_03_03-c1e5.jpg",
+      "sourceSha256": "d18cdf4a21f8a6d3abe763bf8e10cc52d1915bf41eccbad709220230af7e1ec5",
+      "module": "m66532",
+      "kind": "photo",
+      "width": 544,
+      "height": 637,
+      "variants": [
+        {
+          "width": 544,
+          "height": 637,
+          "file": "Figure_20_03_03-c1e5-544.webp"
+        }
+      ],
+      "alt": "Part A shows a eukaryotic cell. The illustration indicates that, within the nucleus, operational genes were inherited from an ancestral bacteria, and informational genes were inherited from an ancestral Archaebacteria. Part B indicates that the outer membrane of Gram negative bacteria is derived from Archaea, and the inner membrane is derived from Gram positive bacteria.",
+      "caption": "The scientific community now widely accepts the theory that mitochondria and chloroplasts are endosymbiotic in origin. More controversial is the proposal that (a) the eukaryotic nucleus resulted from fusing archaeal and bacterial genomes with their operational genes (whose products are involved in biochemical pathways) and informational genes (whose products are involved in transcription and translation), and that (b) Gramnegative bacteria, which have two membranes, resulted from fusing Archaea and Gram-positive bacteria, each of which has a single membrane."
+    },
+    "Figure_20_03_04": {
+      "source": "media/Figure_20_03_04.jpg",
+      "sourceSha256": "4e1741ad3a1646dfaa1eac591d63e586b37de2b42782f71ef6874eebc673b042",
+      "module": "m66532",
+      "kind": "photo",
+      "width": 800,
+      "height": 707,
+      "variants": [
+        {
+          "width": 800,
+          "height": 707,
+          "file": "Figure_20_03_04-800.webp"
+        }
+      ],
+      "alt": "Part A shows the nucleus-first hypothesis. According to this hypothesis, a primary endosymbiotic event resulted in an ancestral eukaryotic cell acquiring a nucleus, and a secondary endosymbiotic event resulted in the acquisition of a mitochondrion. Part B shows the mitochondrion-first hypothesis. According to this hypothesis, the mitochondrion was acquired before the nucleus, but both were acquired by endosymbiosis. Part C shows the eukaryote-first hypothesis. According to this hypothesis, prokaryotes evolved from eukaryotic cells that lost their nuclei and organelles.",
+      "caption": "Three alternate hypotheses of eukaryotic and prokaryotic evolution are (a) the nucleus-first hypothesis, (b) the mitochondrion-first hypothesis, and (c) the eukaryote-first hypothesis."
+    },
+    "Figure_20_03_06-4cf4": {
+      "source": "media/Figure_20_03_06-4cf4.jpg",
+      "sourceSha256": "d26e8187c6da3527f8d2a15042c704f789aa11ffd0aee2e01834505e63b3ca9f",
+      "module": "m66532",
+      "kind": "photo",
+      "width": 544,
+      "height": 399,
+      "variants": [
+        {
+          "width": 544,
+          "height": 399,
+          "file": "Figure_20_03_06-4cf4-544.webp"
+        }
+      ],
+      "alt": "Illustration shows a ring with the words, pool of primitive prokaryotes, in the middle. Three arrows point outward from the ring, pointing at the three domains, Bacteria, Archaea, and Eukarya, indicating that all three domains arose from a common pool of prokaryotes.",
+      "caption": "According to the “ring of life” phylogenetic model, the three domains of life evolved from a pool of primitive prokaryotes."
+    },
     "Figure_B06_03_05abcd_new": {
       "source": "media/Figure_B06_03_05abcd_new.png",
       "sourceSha256": "b533ddfb73b1cfba10ffcb98e785015d67f6dcb0233e8acead61abeba82572fe",
@@ -6892,6 +7328,167 @@
       "alt": "An illustration shows an R N A transcript including seven boxes and their associated lengths in base pairs (abbreviated b p) labeled, left to right, as exon with 50 b p, intron with 110 b p, exon with 70 b p, intron with 20 b p, exon with 130 b p, intron with 75 b p, and exon with 30 b p.",
       "caption": ""
     },
+    "Figure_B17_00_01-b67b": {
+      "source": "media/Figure_B17_00_01-b67b.jpg",
+      "sourceSha256": "3247b8b4a6a4a039ef55b4396b30ce0153af374cee280385be6d093c1c869f85",
+      "module": "m66510",
+      "kind": "photo",
+      "width": 1018,
+      "height": 381,
+      "variants": [
+        {
+          "width": 800,
+          "height": 299,
+          "file": "Figure_B17_00_01-b67b-800.webp"
+        },
+        {
+          "width": 1018,
+          "height": 381,
+          "file": "Figure_B17_00_01-b67b-1018.webp"
+        }
+      ],
+      "alt": "The left part of this image is an illustration of a gene chip. The chip is a grid comprising nine columns and 21 rows. Most cells in the grid are blue, but some are green, yellow, or red. The green, yellow, or red color shows that D N A has hybridized with the chip, indicating the presence of a particular gene. The right part of the image is a satellite image of Spain, with a small region outlined in a square. This image is meant to reinforce the concept that, like regions of the world, D N A can be mapped.",
+      "caption": "Genomics compares the DNA of different organisms, enabling scientists to create maps with which to navigate different organisms' DNA. (credit \"map\": modification of photo by NASA)"
+    },
+    "Figure_B17_01_01ab": {
+      "source": "media/Figure_B17_01_01ab.jpg",
+      "sourceSha256": "395cedf2dd715f50d1691f9eb96f89dbe3b5ccb520506c735d7a6a6657115122",
+      "module": "m66511",
+      "kind": "photo",
+      "width": 1117,
+      "height": 476,
+      "variants": [
+        {
+          "width": 800,
+          "height": 341,
+          "file": "Figure_B17_01_01ab-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 476,
+          "file": "Figure_B17_01_01ab-1117.webp"
+        }
+      ],
+      "alt": "The right side of this image is an old black and white photo of a mailbox plastered with an advertisement that says, Penicillin cures gonorrhea in four hours. See your doctor today. The left side of the image shows a petri dish streaked with bacteria. Bacteria grow everywhere on the plate except where discs containing antibiotic have been placed. These areas are completely devoid of bacterial growth.",
+      "caption": "Fungi, bacteria, and other organisms that have antimicrobial properties produce antibiotics. The first antibiotic discovered was penicillin. Pharmaceutical companies now commercially produce and test antibiotics for their potential to inhibit bacterial growth. (credit \"advertisement\": modification of work by NIH; credit \"test plate\": modification of work by Don Stalons/CDC; scale-bar data from Matt Russell)"
+    },
+    "Figure_B17_01_03": {
+      "source": "media/Figure_B17_01_03.png",
+      "sourceSha256": "5796c2c444166d748aca1ab4082411f7d16f49df4e5c41bf3dca2d9b6c945b02",
+      "module": "m66511",
+      "kind": "diagram",
+      "width": 1971,
+      "height": 1440,
+      "variants": [
+        {
+          "width": 800,
+          "height": 584,
+          "file": "Figure_B17_01_03-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1169,
+          "file": "Figure_B17_01_03-1600.webp"
+        }
+      ],
+      "alt": "Photo shows an agarose gel illuminated under U V light. The gel contains nine lanes from left to right. Each lane was loaded with a sample containing D N A fragments of differing size that separated as they travelled through the gel from top to bottom. The D N A appears as thin, white bands on a black background. Lanes one and nine contain many bands from a D N A standard. These bands are closely spaced toward the top, and spaced farther apart further down the gel. Lanes two through eight contain one or two bands each. Some of these bands are identical in size and run the same distance into the gel. Others run a slightly different distance, indicating a small difference in size. Image b shows a researcher working at a machine where she is observing D N A under ultraviolet light.",
+      "caption": "a) Shown are DNA fragments from seven samples run on a gel, stained with a fluorescent dye, and viewed under UV light; and b) a researcher from International Rice Research Institute, reviewing DNA profiles using UV light. (credit: a: James Jacob, Tompkins Cortland Community College b: International Rice Research Institute)"
+    },
+    "Figure_B17_01_05": {
+      "source": "media/Figure_B17_01_05.jpg",
+      "sourceSha256": "01b58f1f14cd64c6199917712f6390dce865a85ffb726a7b771138b0d78c949b",
+      "module": "m66511",
+      "kind": "photo",
+      "width": 800,
+      "height": 494,
+      "variants": [
+        {
+          "width": 800,
+          "height": 494,
+          "file": "Figure_B17_01_05-800.webp"
+        }
+      ],
+      "alt": "In Southern blotting, D N A is separated on the basis of size by agarose gel electrophoresis. The fragments run through the gel from top to bottom. In the gel shown in this figure, there are so many D N A fragments they appear as a smear in each lane. The D N A from the gel is transferred to a nylon membrane. To do so, the gel is sandwiched between filter paper and the membrane and placed in transfer buffer. Paper towels above the gel wick up the moisture and assist in the transfer. The nylon membrane is then incubated with a radioactively or fluorescently labeled probe that is complementary to the sequence of interest. Discrete bands appear where the sequence of interest is located.",
+      "caption": "Scientists use Southern blotting to find a particular sequence in a DNA sample. Scientists separate DNA fragments on a gel, transfer them to a nylon membrane, and incubate them with a DNA probe complementary to the sequence of interest. Northern blotting is similar to Southern blotting, but scientists run RNA on the gel instead of DNA. In Western blotting, scientists run proteins on a gel and detect them using antibodies."
+    },
+    "Figure_B17_02_02": {
+      "source": "media/Figure_B17_02_02.png",
+      "sourceSha256": "eeaa71922c021fdb6767750dd09b2bf7b757031428fbd42ce555fed130ade92b",
+      "module": "m66514",
+      "kind": "diagram",
+      "width": 469,
+      "height": 345,
+      "variants": [
+        {
+          "width": 469,
+          "height": 345,
+          "file": "Figure_B17_02_02-469.webp"
+        }
+      ],
+      "alt": "The P C A 3 test occurs in three steps. In step one, P C A 3 m R N A anneals to complementary D N A primers that are attached to beads. In step two, the m R N A is amplified using reverse-transcriptase P C R. In step three, the m R N A is detected using a chemiluminescent probe.",
+      "caption": "PCA3 is a gene that is expressed in prostate epithelial cells and overexpressed in cancerous cells. A high PCA3 concentration in urine is indicative of prostate cancer. The PCA3 test is a better indicator of cancer than the more well known PSA test, which measures the level of PSA (prostate-specific antigen) in the blood."
+    },
+    "Figure_B17_03_02": {
+      "source": "media/Figure_B17_03_02.png",
+      "sourceSha256": "02c8b057c24eba1d8ae7cd429cef56c11e7a1a8aeec7413989b00bb9e478900c",
+      "module": "m66513",
+      "kind": "diagram",
+      "width": 1594,
+      "height": 741,
+      "variants": [
+        {
+          "width": 800,
+          "height": 372,
+          "file": "Figure_B17_03_02-800.webp"
+        },
+        {
+          "width": 1594,
+          "height": 741,
+          "file": "Figure_B17_03_02-1594.webp"
+        }
+      ],
+      "alt": "The left part of this illustration shows a parent strand of D N A with the sequence G A T T C A G C, and four daughter strands, each of which was made in the presence of a different dideoxynucleotide: lower case d lower case d upper case A upper case T upper case P, and lower case d lower case d upper case C upper case T upper case P, and lower d lower d upper G upper T upper P, or lower d lower d upper T upper T upper P. The growing chain terminates when a lower d lower d upper N T P is incorporated, resulting in daughter strands of different lengths. The right part of this image shows the separation of the D N A fragments on the basis of size. Each lower d lower d upper N T P is fluorescently labeled with a different color so that the sequence can be read by the size of each fragment and its color.",
+      "caption": "This figure illustrates Frederick Sanger's dideoxy chain termination method. Using dideoxynucleotides, the DNA fragment can terminate at different points. The DNA separates on the basis of size, and we can read these bands based on the fragments’ size."
+    },
+    "Figure_B17_05_01": {
+      "source": "media/Figure_B17_05_01.jpg",
+      "sourceSha256": "be18985b8febd08fb45b9256e79bba2c70a4f0395893697a5b4fb7643149d902",
+      "module": "m66515",
+      "kind": "photo",
+      "width": 544,
+      "height": 498,
+      "variants": [
+        {
+          "width": 544,
+          "height": 498,
+          "file": "Figure_B17_05_01-544.webp"
+        }
+      ],
+      "alt": "In two-hybrid screening, the binding domain of a transcription factor is separated from the activator domain. A bait protein is attached to the D N A binding domain of a transcription factor, and a prey protein is attached to the activator domain. If the prey catches the bait, in other words, binds to it, transcription of a reporter gene occurs. If the prey does not catch the bait, no transcription occurs. Scientists use this transcriptional activation to determine if interaction between the bait and prey has occurred.",
+      "caption": "Scientists use two-hybrid screening to determine whether two proteins interact. In this method, a transcription factor splits into a DNA-binding domain (BD) and an activator domain (AD). The binding domain is able to bind the promoter in the activator domain's absence, but it does not turn on transcription. The bait protein attaches to the BD, and the prey protein attaches to the AD. Transcription occurs only if the prey “catches” the bait."
+    },
+    "Figure_B17_06_01": {
+      "source": "media/Figure_B17_06_01.png",
+      "sourceSha256": "a6fddab5a2ad3132eb21f3fa487802bd73b8fef092ab3569f8e9f3a68e2e20c0",
+      "module": "m66514",
+      "kind": "diagram",
+      "width": 1202,
+      "height": 1098,
+      "variants": [
+        {
+          "width": 800,
+          "height": 730,
+          "file": "Figure_B17_06_01-800.webp"
+        },
+        {
+          "width": 1202,
+          "height": 1098,
+          "file": "Figure_B17_06_01-1202.webp"
+        }
+      ],
+      "alt": "In metagenomics, all of the genomic DNA from a particular environment is cut into fragments and ligated into a cloning vector. The fragments, which may be from several different species, are sequenced. Regions of overlap indicate that two fragments came from the same species. Thus, the genome of each species present can be determined.",
+      "caption": "Metagenomics involves isolating DNA from multiple species within an environmental niche."
+    },
     "Figure_B18_03_05": {
       "source": "media/Figure_B18_03_05.jpg",
       "sourceSha256": "787dcf59587cda96dbbdf3f1b7f774a90f7b567d64923795d9cbf9caec20c140",
@@ -6935,6 +7532,67 @@
       ],
       "alt": "The Hardy-Weinberg principle is used to predict the genotypic distribution of offspring in a given population. In the example given, pea plants have two different alleles for pea color. The dominant capital Y allele results in yellow pea color, and the recessive small y allele results in green pea color. The distribution of individuals in a population of 500 is given. Of the 500 individuals, 245 are homozygous dominant (capital Y capital Y) and produce yellow peas. 210 are heterozygous (capital Y small y) and also produce yellow peas. 45 are homozygous recessive (small y small y) and produce green peas. The frequencies of homozygous dominant, heterozygous, and homozygous recessive individuals are 0.49, 0.42, and 0.09, respectively. Each of the 500 individuals provides two alleles to the gene pool, or 1000 total. The 245 homozygous dominant individuals provide two capital Y alleles to the gene pool, or 490 total. The 210 heterozygous individuals provide 210 capital Y and 210 small y alleles to the gene pool. The 45 homozygous recessive individuals provide two small y alleles to the gene pool, or 90 total. The number of capital Y alleles is 490 from homozygous dominant individuals plus 210 from homozygous recessive individuals, or 700 total. The number of small y alleles is 210 from heterozygous individuals plus 90 from homozygous recessive individuals, or 300 total. The allelic frequency is calculated by dividing the number of each allele by the total number of alleles in the gene pool. For the capital Y allele, the allelic frequency is 700 divided by 1000, or 0.7; this allelic frequency is called p. For the small y allele the allelic frequency is 300 divided by 1000, or 0.3; the allelic frequency is called q. Hardy-Weinberg analysis is used to determine the genotypic frequency in the offspring. The Hardy-Wienberg equation is p-squared plus 2pq plus q-squared equals 1. For the population given, the frequency is 0.7-squared plus 2 times .7 times .3 plus .3-squared equals one. The value for p-squared, 0.49, is the predicted frequency of homozygous dominant (capital Y capital Y) individuals. The value for 2pq, 0.42, is the predicted frequency of heterozygous (capital Y small y) individuals. The value for q-squared, .09, is the predicted frequency of homozygous recessive individuals. Note that the predicted frequency of genotypes in the offspring is the same as the frequency of genotypes in the parent population. If all the genotypic frequencies, .49 plus .42 plus .09, are added together, the result is one.",
       "caption": "When populations are in the Hardy-Weinberg equilibrium, the allelic frequency is stable from generation to generation and we can determine the allele distribution from the Hardy-Weinberg equation. If the allelic frequency measured in the field differs from the predicted value, scientists can make inferences about what evolutionary forces are at play."
+    },
+    "Figure_B20_01_02ab": {
+      "source": "media/Figure_B20_01_02ab.png",
+      "sourceSha256": "7cdf5ef6985aeaa0223887bb9117e302a01b6d0c6b92575770c2e4add612d97a",
+      "module": "m66530",
+      "kind": "diagram",
+      "width": 1899,
+      "height": 516,
+      "variants": [
+        {
+          "width": 800,
+          "height": 217,
+          "file": "Figure_B20_01_02ab-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 434,
+          "file": "Figure_B20_01_02ab-1600.webp"
+        }
+      ],
+      "alt": "The illustration shows the classification of a dog, which belongs in the domain Eukarya, kingdom Animalia, phylum Chordata, class Mammalia, order Carnivora, family Canidae, genus Canis, species Canis lupus, and the subspecies is Canis lupus familiaris.",
+      "caption": "The taxonomic classification system uses a hierarchical model to organize living organisms into increasingly specific categories. The common dog, Canis lupus familiaris , is a subspecies of Canis lupus , which also includes the wolf and dingo. (credit “dog”: modification of work by Janneke Vreugdenhil)"
+    },
+    "Figure_B20_01_05": {
+      "source": "media/Figure_B20_01_05.jpg",
+      "sourceSha256": "5511e68b38e698c581850f68d320e9dc4ac512a5e75652f882e8718f457d879d",
+      "module": "m66530",
+      "kind": "photo",
+      "width": 544,
+      "height": 325,
+      "variants": [
+        {
+          "width": 544,
+          "height": 325,
+          "file": "Figure_B20_01_05-544.webp"
+        }
+      ],
+      "alt": "The ladder-like phylogenetic tree starts with a trunk at the left. A question next to the trunk asks whether a vertebral column is present. If the answer is no, a branch leads downward to lancelet. If the answer is yes, a branch leads upward to another question: is a hinged jaw present? If the answer is no, a branch leads downward to lamprey. If the answer is yes, a branch leads upward to another question: are legs present? If the answer is no, a branch leads downward to fish. If the answer is yes, a branch leads upward to another question: does the egg have amnion? If the answer is no, the branch leads downward to frog. If the answer is yes, the branch leads upward to another question: is hair present? If the answer is no, the branch leads downward to lizard. If the answer is yes, the branch leads upward to rabbit.",
+      "caption": "An organism that lacked a vertebral column roots this ladder-like phylogenetic tree of vertebrates. At each branch point, scientists place organisms with different characters in different groups based on shared characteristics."
+    },
+    "Figure_B20_03_05": {
+      "source": "media/Figure_B20_03_05.png",
+      "sourceSha256": "84017fe2a7863660d39bfcdb2b3d7aebaaef14a7f6585e731aea4a42c30ef3f0",
+      "module": "m66532",
+      "kind": "diagram",
+      "width": 2354,
+      "height": 1414,
+      "variants": [
+        {
+          "width": 800,
+          "height": 480,
+          "file": "Figure_B20_03_05-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 961,
+          "file": "Figure_B20_03_05-1600.webp"
+        }
+      ],
+      "alt": "Illustration A shows the web of life. The base of this web is an ancestral community of primitive cells. This pool of ancestral cells gave rise to the three domains of life, shown as bacteria, archaea, and eukarya. However, because of gene transfer and endosymbiosis events, connections occur between the branches at various points. Thus, eukaryotic chloroplasts and mitochondria originated in bacterial lineages, and archaea and bacteria have exchanged genes. The overall shape of the web has the ancestral community of primitive cells forming a horizontal base like the ground, multiple trunks extending up from it with some cross connections, continuing with tree-like branches reaching upward. Some of the branches also have horizontal cross connections between them, such as those for introducing chloroplasts and mitochondria into Eukarya. Part B is a photo of a multi-trunked Ficus tree.",
+      "caption": "In W. Ford Doolittle's (a) phylogenetic model, the “tree of life” arose from a community of ancestral cells, has multiple trunks, and has connections between branches where horizontal gene transfer has occurred. Visually, this concept is better represented by (b) the multi-trunked Ficus than by an oak's single trunk similar to Darwin's tree in . (credit b: modification of work by \"psyberartist\"/Flickr)"
     },
     "Targeted_Protein_Formation-XZZ": {
       "source": "media/Targeted_Protein_Formation-XZZ.jpg",

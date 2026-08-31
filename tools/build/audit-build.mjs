@@ -67,9 +67,21 @@ const filesWarnAt = 0.9;
 // finished books, so a complete Precalculus sidebar lands near 207 KiB rather
 // than today's 67 KiB). That projects 337 documents / ~182 MiB — which the
 // previous 150 MiB budget would have breached at about +23 pages, mid-book,
-// on an ordinary authoring commit. 220 MiB keeps ~21% headroom over the
-// finished corpus.
-const maxTotalHtmlBytes = 220 * 1024 * 1024;
+// on an ordinary authoring commit. The 220 MiB budget set then kept ~21%
+// headroom over that finished corpus.
+//
+// Re-projected 2026-08-31 for Biology 2e, which was about to breach 220 on
+// an ordinary chapter commit (75 of 208 sections: 438 documents, 215.1 MiB;
+// the 94 biology pages carry a 239.1 KiB mean <aside> — 22.0 of their
+// 27.8 MiB — growing ~1.18 KiB per new section link on EVERY biology page,
+// with a 64.2 KiB mean outside the aside). At completion (208 sections + 47
+// chapter landings + the book root = 256 biology pages, aside ~429 KiB each)
+// biology projects to ~125 MiB; the finished math corpus holds ~187 MiB, and
+// a later biology knowledge-check campaign (~47 chapter pages at the same
+// aside) adds ~23 MiB — ~335 MiB projected. 400 MiB keeps ~19% headroom over
+// that; the duplication gates below (absolute bytes outside main#content)
+// still catch a doubled-chrome regression long before this total does.
+const maxTotalHtmlBytes = 400 * 1024 * 1024;
 const maxPageBytes = 1.5 * 1024 * 1024;
 const maxPageElements = 35_000;
 // Duplicated non-content markup, as an ABSOLUTE mean per page.
