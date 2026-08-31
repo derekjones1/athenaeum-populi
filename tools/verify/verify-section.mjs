@@ -21,6 +21,7 @@ import katex from 'katex';
 import { ce, checkAnswer, preprocess } from '../../assets/js/lib/math/check-answer.mjs';
 import { parseGraphPlotConfig } from '../../assets/js/lib/math/graph-plot-config.mjs';
 import { checkText } from '../../assets/js/lib/text/check-text.mjs';
+import { checkSortbins, parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
 import { lintHugo } from '../lint/lints.mjs';
 import { hasUnpairedDollar, mathSpans, shortcodes } from '../lib/content.mjs';
 
@@ -167,6 +168,22 @@ for (const f of files) {
       }
     }
     for (const name of ['question', 'hint', 'answerDisplay']) propMath(where, name, p[name]);
+  }
+
+  // 7b. sortbins — config through the REAL parser (the same module the
+  // <sort-bins> component and the lint run), and the keyed assignment must
+  // round-trip the grader to 'correct', exactly like a fillin's answer
+  // self-grades against itself.
+  for (const { params: p, inner, closed } of shortcodes(interactiveSrc, 'sortbins')) {
+    if (!closed) continue; // the lint reports the unclosed tag by name
+    const where = `sortbins (${(p.question || '?').slice(0, 40)}…)`;
+    try {
+      const cfg = parseSortbinsConfig(inner.trim());
+      const graded = checkSortbins(cfg.items.map((item) => item.bin), cfg);
+      if (graded.status !== 'correct') {
+        bad(`${where}: keyed assignment does not self-grade 'correct' (got ${graded.status})`);
+      }
+    } catch (e) { bad(`sortbins: ${e.message}`); }
   }
 
   // 8. selfcheck — no key to grade, so the checkable content is structural:

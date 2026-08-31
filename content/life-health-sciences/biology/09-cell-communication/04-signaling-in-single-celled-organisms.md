@@ -57,6 +57,9 @@ Cell-cell communication enables these (a) *Staphylococcus aureus* bacteria to wo
 
 {{< selfcheck question="What advantage might biofilm production confer on the *S. aureus* inside the catheter?" hint="Think about what a dense, crowded surface does to how well a drug can reach every cell in it." >}}
 *S. aureus* produces a biofilm because the higher cell density in the biofilm permits the formation of a dense surface that helps protect the bacteria from antibiotics.
+===CHECKS===
+the higher cell density in the biofilm permits the formation of a dense surface
+helps protect the bacteria from antibiotics
 {{< /selfcheck >}}
 
 Research on the details of quorum sensing has led to advances in growing bacteria for industrial purposes. Recent discoveries suggest that it may be possible to exploit bacterial signaling pathways to control bacterial growth; this process could replace or supplement antibiotics that are no longer effective in certain situations.
@@ -115,10 +118,17 @@ second messenger
 
 {{< selfcheck question="What characteristics make yeasts a good model for learning about signaling in humans?" hint="Compare a yeast's biology (eukaryote or not, single- or multicellular, generation time) with our own." >}}
 Yeasts are eukaryotes and have many of the same systems that humans do; however, they are single-celled, so they are easy to grow, grow rapidly, have a short generation time, and are much simpler than humans.
+===CHECKS===
+yeasts are eukaryotes and have many of the same systems that humans do
+they are single-celled, so they are easy to grow, grow rapidly, have a short generation time
+much simpler than humans
 {{< /selfcheck >}}
 
 {{< selfcheck question="Why is signaling in multicellular organisms more complicated than signaling in single-celled organisms?" hint="Think about how many different cell types, tissues, and distances a multicellular organism's signal has to reach, compared with a single free-living cell." >}}
 Multicellular organisms must coordinate many different events in different cell types that may be very distant from each other. Single-celled organisms are only concerned with their immediate environment and the presence of other cells in the area.
+===CHECKS===
+multicellular organisms must coordinate many different events in different cell types that may be very distant from each other
+single-celled organisms are only concerned with their immediate environment and the presence of other cells in the area
 {{< /selfcheck >}}
 
 ### Relate the role of quorum sensing to the ability of some bacteria to form biofilms
@@ -160,8 +170,12 @@ Inhibit quorum sensing
 
 {{< selfcheck question="*Pseudomonas* infections are very common in hospital settings. Why would it be important for doctors to determine the bacterial load before treating an infected patient?" hint="Consider what changes about a bacterial population's gene expression and drug resistance once its density crosses the quorum-sensing threshold." >}}
 Doctors would need to determine if the patient is simply infected with free bacteria, or has developed a biofilm. Biofilms of *Pseudomonas aeruginosa* have a different pattern of gene expression than free bacteria, leading to increased virulence and resistance to many antibiotics.
+===CHECKS===
+doctors would need to determine if the patient is simply infected with free bacteria, or has developed a biofilm
+biofilms of Pseudomonas aeruginosa have a different pattern of gene expression than free bacteria
+leading to increased virulence and resistance to many antibiotics
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 9.4: Signaling in Single-Celled Organisms](https://openstax.org/books/biology-2e/pages/9-4-signaling-in-single-celled-organisms) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the biofilm/squid photograph re-kinded from the manifest's file-extension guess of "diagram" to "photo" after inspection (both panels are photographs — a scanning electron micrograph and a camera photograph — not a drawn illustration), and the yeast micrograph's alt rewritten from the source's bare "The photo shows yeast cells, some of which have buds protruding from them" to describe the budding stage actually visible; a longdesc added for the low-/high-cell-density autoinducer diagram, whose labeled panels are not fully carried by its one-line caption; feature boxes (two Link to Learning notes and one Evolution Connection) rendered as callouts with their bold names, the interactive-long note's embedded video rendered as a linked title instead of an iframe; both Visual Connection questions kept in the body immediately after their figures — the first (quorum sensing false-statement question) rendered as multiple choice since the source keys a lettered option, the second (catheter biofilm advantage) rendered as a self-check since the source keys a prose solution; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the second Critical Thinking question ("Why is signaling in multicellular organisms more complicated...") grouped under the yeast-signaling objective since it compares single-celled to multicellular signaling in general rather than testing quorum sensing specifically; and three key-term recall items (mating factor, quorum sensing, autoinducer) added from the module's own glossary to give both objective groups an auto-graded item beyond the Review Questions; the Evolution Connection's reference citation is kept as a parenthetical after the sentence it supports.</small>
+<small>This section is adapted from [Biology 2e, Section 9.4: Signaling in Single-Celled Organisms](https://openstax.org/books/biology-2e/pages/9-4-signaling-in-single-celled-organisms) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the biofilm/squid photograph re-kinded from the manifest's file-extension guess of "diagram" to "photo" after inspection (both panels are photographs — a scanning electron micrograph and a camera photograph — not a drawn illustration), and the yeast micrograph's alt rewritten from the source's bare "The photo shows yeast cells, some of which have buds protruding from them" to describe the budding stage actually visible; a longdesc added for the low-/high-cell-density autoinducer diagram, whose labeled panels are not fully carried by its one-line caption; feature boxes (two Link to Learning notes and one Evolution Connection) rendered as callouts with their bold names, the interactive-long note's embedded video rendered as a linked title instead of an iframe; both Visual Connection questions kept in the body immediately after their figures — the first (quorum sensing false-statement question) rendered as multiple choice since the source keys a lettered option, the second (catheter biofilm advantage) rendered as a self-check since the source keys a prose solution; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the second Critical Thinking question ("Why is signaling in multicellular organisms more complicated...") grouped under the yeast-signaling objective since it compares single-celled to multicellular signaling in general rather than testing quorum sensing specifically; and three key-term recall items (mating factor, quorum sensing, autoinducer) added from the module's own glossary to give both objective groups an auto-graded item beyond the Review Questions; the Evolution Connection's reference citation is kept as a parenthetical after the sentence it supports; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

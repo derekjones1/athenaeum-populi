@@ -56,6 +56,13 @@ There are 20 common amino acids commonly found in proteins, each with a differen
 
 {{< selfcheck question="Which categories of amino acid would you expect to find on the surface of a soluble protein, and which would you expect to find in the interior? What distribution of amino acids would you expect to find in a protein embedded in a lipid bilayer?" hint="Think about which side chains are hydrophilic and which are hydrophobic, and which environment — water, or a membrane's fatty interior — each would prefer to face." >}}
 Polar and charged amino acid residues (the remainder after peptide bond formation) are more likely to be found on the surface of soluble proteins where they can interact with water, and nonpolar amino acid side chains are more likely to be found in the interior where they are sequestered from water. In membrane proteins, nonpolar and hydrophobic amino acid side chains associate with the hydrophobic tails of phospholipids, while polar and charged amino acid side chains interact with the polar head groups or with the aqueous solution. However, there are exceptions. Sometimes, positively and negatively charged amino acid side chains interact with one another in the interior of a protein, and polar or charged amino acid side chains that interact with a ligand can be found in the ligand binding pocket.
+===CHECKS===
+polar and charged amino acid residues are more likely to be found on the surface of soluble proteins where they can interact with water
+nonpolar amino acid side chains are more likely to be found in the interior where they are sequestered from water
+nonpolar and hydrophobic amino acid side chains associate with the hydrophobic tails of phospholipids
+polar and charged amino acid side chains interact with the polar head groups or with the aqueous solution
+positively and negatively charged amino acid side chains interact with one another in the interior of a protein
+polar or charged amino acid side chains that interact with a ligand can be found in the ligand binding pocket
 {{< /selfcheck >}}
 
 The chemical nature of the side chain determines the amino acid's nature (that is, whether it is acidic, basic, polar, or nonpolar). For example, the amino acid glycine has a hydrogen atom as the R group. Amino acids such as valine, methionine, and alanine are nonpolar or hydrophobic in nature, while amino acids such as serine, threonine, and cysteine are polar and have hydrophilic side chains. The side chains of lysine and arginine are positively charged, and therefore these amino acids are also basic amino acids. Proline has an R group that is linked to the amino group, forming a ring-like structure. Proline is an exception to the amino acid's standard structure since its amino group is not separate from the side chain (above).
@@ -185,6 +192,17 @@ Proteins are organized at four levels: primary, secondary, tertiary, and (option
   hint="Insulin, which helps regulate the blood glucose level, is an example."
 >}}
 
+{{< multiplechoice
+  question="Proteins help in metabolism by acting as enzymes, carriers, or ________, and provide structural support."
+  answer="hormones"
+  hint="Insulin, a chemical-signaling molecule that regulates blood glucose, is an example of this kind of protein."
+>}}
+chaperones
+amino acids
+polypeptides
+hormones
+{{< /multiplechoice >}}
+
 ### Discuss the relationship between amino acids and proteins
 
 {{< multiplechoice
@@ -238,6 +256,12 @@ quaternary
 
 {{< selfcheck question="Describe the differences in the four protein structures." hint="Work through the four levels in order, from a single chain's amino acid sequence to the assembly of separate polypeptide subunits." >}}
 The sequence and number of amino acids in a polypeptide chain is its primary structure. The local folding of the polypeptide in some regions is the secondary structure of the protein. The three-dimensional structure of a polypeptide is known as its tertiary structure, created in part by chemical interactions such as hydrogen bonds between polar side chains, van der Waals interactions, disulfide linkages, and hydrophobic interactions. Some proteins are formed from multiple polypeptides, also known as subunits, and the interaction of these subunits forms the quaternary structure.
+===CHECKS===
+the sequence and number of amino acids in a polypeptide chain is its primary structure
+the local folding of the polypeptide in some regions is the secondary structure of the protein
+the three-dimensional structure of a polypeptide is known as its tertiary structure
+some proteins are formed from multiple polypeptides, also known as subunits
+the interaction of these subunits forms the quaternary structure
 {{< /selfcheck >}}
 
 {{< textin
@@ -251,10 +275,23 @@ The sequence and number of amino acids in a polypeptide chain is its primary str
 
 {{< selfcheck question="Explain what happens if even one amino acid is substituted for another in a polypeptide chain. Provide a specific example." hint="Think about how a change at the level of the gene can propagate upward through every level of a protein's structure." >}}
 A change in gene sequence can lead to a different amino acid being added to a polypeptide chain instead of the normal one. This causes a change in protein structure and function. For example, in sickle cell anemia, the hemoglobin β chain has a single amino acid substitution—the amino acid glutamic acid in position six is substituted by valine. Because of this change, hemoglobin molecules form aggregates, and the disc-shaped red blood cells assume a crescent shape, which results in serious health problems.
+===CHECKS===
+a change in gene sequence can lead to a different amino acid being added to a polypeptide chain
+this causes a change in protein structure and function
+in sickle cell anemia, the hemoglobin β chain has a single amino acid substitution
+the amino acid glutamic acid in position six is substituted by valine
+hemoglobin molecules form aggregates
+the disc-shaped red blood cells assume a crescent shape
 {{< /selfcheck >}}
 
 {{< selfcheck question="Aquaporins are proteins embedded in the plasma membrane that allow water molecules to move between the extracellular matrix and the intracellular space. Based on its function and location, describe the key features of the protein's shape and the chemical characteristics of its amino acids." hint="Consider which part of the channel touches the membrane's fatty interior and which part touches the water passing through it." >}}
 The protein must form a channel in the plasma membrane that allows water into the cell since water cannot cross the plasma membrane by itself. Since aquaporins are embedded in the plasma membrane and connect with both the intracellular and extracellular spaces, it must be amphipathic like the plasma membrane. The top and bottom of the protein must contain charged or polar amino acids (hydrophilic) to interact with the aqueous environments. The exterior transmembrane region must contain non-polar amino acids (hydrophobic) that can interact with the phospholipid tails. However, the inside of this channel must contain hydrophilic amino acids since they will interact with the traveling water molecules.
+===CHECKS===
+the protein must form a channel in the plasma membrane that allows water into the cell
+it must be amphipathic like the plasma membrane
+the top and bottom of the protein must contain charged or polar amino acids (hydrophilic)
+the exterior transmembrane region must contain non-polar amino acids (hydrophobic) that can interact with the phospholipid tails
+the inside of this channel must contain hydrophilic amino acids since they will interact with the traveling water molecules
 {{< /selfcheck >}}
 
 {{< textin
@@ -265,4 +302,4 @@ The protein must form a channel in the plasma membrane that allows water into th
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 3.4: Proteins](https://openstax.org/books/biology-2e/pages/3-4-proteins) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with seven of the nine re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a molecular illustration, not a photograph — only the sickle-cell blood smear is a true photo) and a longer extended description added for the six figures that are labeled diagrams whose full reading is not carried by their captions (the twenty-amino-acid chart, the insulin chain, the hemoglobin/sickle-cell comparison, the α-helix/β-pleated-sheet illustration, the tertiary-structure interaction diagram, and the four-levels-of-structure diagram); the sickle-cell blood-smear alt corrected from the source's "electron micrograph" to the bright-field light micrograph its own caption names; the twenty-amino-acid figure's alt shortened from over 600 characters to what the image shows, with its category walk-through moved into the longdesc; inline references to figures and the table changed from the source's print numbers ("Table 3.1," "Figure 3.22," "(Figure 3.27)" inside a caption) to descriptive phrases ("the table below," "below," "above") since figures and tables are not numbered here; feature boxes (two Link to Learning notes and one Evolution Connection) rendered as callouts with their bold names; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option, with the solution's garbled parenthetical "nonpolar (e.g., amino acid side chains)" read as "nonpolar amino acid side chains"; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and six key-term recall items (enzyme, hormone, amino acid, polypeptide, quaternary structure, denaturation) added from the glossary to round out every objective group with an auto-graded item.</small>
+<small>This section is adapted from [Biology 2e, Section 3.4: Proteins](https://openstax.org/books/biology-2e/pages/3-4-proteins) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with seven of the nine re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a molecular illustration, not a photograph — only the sickle-cell blood smear is a true photo) and a longer extended description added for the six figures that are labeled diagrams whose full reading is not carried by their captions (the twenty-amino-acid chart, the insulin chain, the hemoglobin/sickle-cell comparison, the α-helix/β-pleated-sheet illustration, the tertiary-structure interaction diagram, and the four-levels-of-structure diagram); the sickle-cell blood-smear alt corrected from the source's "electron micrograph" to the bright-field light micrograph its own caption names; the twenty-amino-acid figure's alt shortened from over 600 characters to what the image shows, with its category walk-through moved into the longdesc; inline references to figures and the table changed from the source's print numbers ("Table 3.1," "Figure 3.22," "(Figure 3.27)" inside a caption) to descriptive phrases ("the table below," "below," "above") since figures and tables are not numbered here; feature boxes (two Link to Learning notes and one Evolution Connection) rendered as callouts with their bold names; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option, with the solution's garbled parenthetical "nonpolar (e.g., amino acid side chains)" read as "nonpolar amino acid side chains"; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and six key-term recall items (enzyme, hormone, amino acid, polypeptide, quaternary structure, denaturation) added from the glossary to round out every objective group with an auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived select-the-term multiple choice added (protein functions, naming hormones from the summary's "enzymes, carriers, or hormones" list, with distractors drawn from the module's own terms) since the first objective's two glossary recall items were both textin and left that group short of three exercises.</small>

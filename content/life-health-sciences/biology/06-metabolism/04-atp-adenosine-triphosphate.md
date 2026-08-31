@@ -40,6 +40,12 @@ The sodium-potassium pump is an example of energy coupling. The energy derived f
 
 {{< selfcheck question="One ATP molecule's hydrolysis releases 7.3 kcal/mol of energy (ΔG = −7.3 kcal/mol of energy). If it takes 2.1 kcal/mol of energy to move one Na⁺ across the membrane (ΔG = +2.1 kcal/mol of energy), how many sodium ions could one ATP molecule's hydrolysis move?" hint="Multiply the per-ion cost by a candidate number of ions and compare the total against the 7.3 kcal/mol one ATP hydrolysis provides — the coupled reaction's overall ΔG must stay negative." >}}
 Three sodium ions could be moved by the hydrolysis of one ATP molecule. The ΔG of the coupled reaction must be negative. Movement of three sodium ions across the membrane will take 6.3 kcal of energy (2.1 kcal × 3 Na⁺ ions = 6.3 kcal). Hydrolysis of ATP provides 7.3 kcal of energy, more than enough to power this reaction. Movement of four sodium ions across the membrane, however, would require 8.4 kcal of energy, more than one ATP molecule can provide.
+===CHECKS===
+three sodium ions could be moved by the hydrolysis of one ATP molecule
+the ΔG of the coupled reaction must be negative
+movement of three sodium ions across the membrane will take 6.3 kcal of energy
+hydrolysis of ATP provides 7.3 kcal of energy, more than enough to power this reaction
+movement of four sodium ions across the membrane would require 8.4 kcal of energy, more than one ATP molecule can provide
 {{< /selfcheck >}}
 
 Often during cellular metabolic reactions, such as nutrient synthesis and breakdown, certain molecules must alter slightly in their conformation to become substrates for the next step in the reaction series. One example is during the very first steps of cellular respiration, when a sugar glucose molecule breaks down in the process of glycolysis. In the first step, ATP is required to phosphorylate glucose, creating a high-energy but unstable intermediate. This phosphorylation reaction powers a conformational change that allows the phosphorylated glucose molecule to convert to the phosphorylated sugar fructose. Fructose is a necessary intermediate for glycolysis to move forward. Here, ATP hydrolysis' exergonic reaction couples with the endergonic reaction of converting glucose into a phosphorylated intermediate in the pathway. Once again, the energy released by breaking a phosphate bond within ATP was used for phosphorylating another molecule, creating an unstable intermediate and powering an important conformational change.
@@ -80,6 +86,23 @@ glucose
 ADP
 {{< /multiplechoice >}}
 
+{{< textin
+  question="ATP is the ________ for living cells."
+  answer="primary energy-supplying molecule"
+  hint="The section summary opens with this description of ATP's overall role."
+>}}
+
+{{< multiplechoice
+  question="ATP donates its phosphate group to another molecule via ________."
+  answer="phosphorylation"
+  hint="This is the process the section names for a phosphate group binding to a molecule."
+>}}
+hydrolysis
+energy coupling
+phosphorylation
+dissociation
+{{< /multiplechoice >}}
+
 ### Describe how energy releases through ATP hydrolysis
 
 {{< multiplechoice
@@ -108,8 +131,13 @@ providing energy to coupled reactions
 
 {{< selfcheck question="Do you think that the E<sub>A</sub> for ATP hydrolysis is relatively low or high? Explain your reasoning." hint="Think about how quickly and spontaneously ATP breaks down on its own, without needing much of a push to get it started." >}}
 The activation energy for hydrolysis is very low. Not only is ATP hydrolysis an exergonic process with a large −ΔG, but ATP is also a very unstable molecule that rapidly breaks down into ADP + P<sub>i</sub> if not utilized quickly. This suggests a very low E<sub>A</sub> since it hydrolyzes so quickly.
+===CHECKS===
+the activation energy for hydrolysis is very low
+ATP hydrolysis is an exergonic process with a large −ΔG
+ATP is a very unstable molecule that rapidly breaks down into ADP + P<sub>i</sub> if not utilized quickly
+this suggests a very low E<sub>A</sub> since it hydrolyzes so quickly
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 6.4: ATP: Adenosine Triphosphate](https://openstax.org/books/biology-2e/pages/6-4-atp-adenosine-triphosphate) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: both figures re-encoded as WebP; the ATP structure figure re-kinded from the manifest's file-extension guess of "photo" to "diagram" (it is a labeled chemical-structure illustration, not a photograph), and both figures gained a longdesc walking through their labeled parts (phosphate groups, ribose, and adenine for the ATP structure; the membrane, ion arrows, and ATP-to-ADP reaction for the sodium-potassium pump), since neither figure's full reading is carried by its caption; the pump figure's alt corrected from the source's misprinted "A T P" spacing to "ATP"; the two chemical equations (ATP hydrolysis and ATP formation) set as short Unicode text paragraphs with an arrow rather than as KaTeX math, since they are reactions, not mathematics; the source's ∆ (increment) glyph set with the Greek Δ used elsewhere in this book's notation; ion charges and the sodium-potassium pump's name set with Unicode superscripts (Na⁺, K⁺); the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the two end-of-section Review Questions and the one Critical Thinking Question adapted into the closing interactive Practice block (two multiple choice and one self-check); and three key-term recall items (ATP, phosphoanhydride bond, energy coupling) added from the glossary so each objective group carries at least one auto-graded item; a source typo ("phosphorylyzing") corrected to "phosphorylating".</small>
+<small>This section is adapted from [Biology 2e, Section 6.4: ATP: Adenosine Triphosphate](https://openstax.org/books/biology-2e/pages/6-4-atp-adenosine-triphosphate) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: both figures re-encoded as WebP; the ATP structure figure re-kinded from the manifest's file-extension guess of "photo" to "diagram" (it is a labeled chemical-structure illustration, not a photograph), and both figures gained a longdesc walking through their labeled parts (phosphate groups, ribose, and adenine for the ATP structure; the membrane, ion arrows, and ATP-to-ADP reaction for the sodium-potassium pump), since neither figure's full reading is carried by its caption; the pump figure's alt corrected from the source's misprinted "A T P" spacing to "ATP"; the two chemical equations (ATP hydrolysis and ATP formation) set as short Unicode text paragraphs with an arrow rather than as KaTeX math, since they are reactions, not mathematics; the source's ∆ (increment) glyph set with the Greek Δ used elsewhere in this book's notation; ion charges and the sodium-potassium pump's name set with Unicode superscripts (Na⁺, K⁺); the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the two end-of-section Review Questions and the one Critical Thinking Question adapted into the closing interactive Practice block (two multiple choice and one self-check); and three key-term recall items (ATP, phosphoanhydride bond, energy coupling) added from the glossary so each objective group carries at least one auto-graded item; a source typo ("phosphorylyzing") corrected to "phosphorylating"; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and two summary-derived items added under the first objective from the section summary's own sentences on ATP's role and on phosphorylation.</small>

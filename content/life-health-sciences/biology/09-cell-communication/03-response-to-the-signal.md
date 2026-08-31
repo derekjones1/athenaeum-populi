@@ -106,6 +106,9 @@ A phosphatase degrades second messengers in the cell.
 
 {{< selfcheck question="What is a possible result of a mutation in a kinase that controls a pathway that stimulates cell growth?" hint="Consider both directions a mutation can push a kinase: locked on, or unable to function at all." >}}
 If a kinase is mutated so that it is always activated, it will continuously signal through the pathway and lead to uncontrolled growth and possibly cancer. If a kinase is mutated so that it cannot function, the cell will not respond to ligand binding.
+===CHECKS===
+if a kinase is mutated so that it is always activated, it will continuously signal through the pathway and lead to uncontrolled growth and possibly cancer
+if a kinase is mutated so that it cannot function, the cell will not respond to ligand binding
 {{< /selfcheck >}}
 
 {{< selfcheck question="A scientist notices that a cancer cell line shows high levels of phosphorylated ERK in the absence of EGF. What are two possible explanations for the increase in phosphorylated ERK? Be specific in which proteins are involved." hint="Think about every step between the EGF receptor and phosphorylated ERK that could get stuck in the 'on' position or fail to get switched back off." >}}
@@ -115,6 +118,11 @@ Possible explanations:
 - An upstream mutation (in Ras, Raf, MEK) constitutively activates the signaling cascade.
 - ERK has a mutation that prevents it from binding to its phosphatase.
 - The cell has a mutation preventing the expression or function of the ERK-specific phosphatase.
+===CHECKS===
+EGFR dimer cannot separate
+an upstream mutation (in Ras, Raf, MEK) constitutively activates the signaling cascade
+ERK has a mutation that prevents it from binding to its phosphatase
+the cell has a mutation preventing the expression or function of the ERK-specific phosphatase
 {{< /selfcheck >}}
 
 ### Identify the function of PKC in signal transduction pathways
@@ -185,6 +193,10 @@ All of the above.
 
 {{< selfcheck question="How does the extracellular matrix control the growth of cells?" hint="Ask what happens to a cell's survival signaling the moment it loses contact with the matrix." >}}
 Receptors on the cell surface must be in contact with the extracellular matrix in order to receive positive signals that allow the cell to live. If the receptors are not activated by binding, the cell will undergo apoptosis. This ensures that cells are in the correct place in the body and helps to prevent invasive cell growth as occurs in metastasis in cancer.
+===CHECKS===
+receptors on the cell surface must be in contact with the extracellular matrix in order to receive positive signals that allow the cell to live
+if the receptors are not activated by binding, the cell will undergo apoptosis
+helps to prevent invasive cell growth as occurs in metastasis in cancer
 {{< /selfcheck >}}
 
 {{< textin
@@ -195,4 +207,4 @@ Receptors on the cell surface must be in contact with the extracellular matrix i
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 9.3: Response to the Signal](https://openstax.org/books/biology-2e/pages/9-3-response-to-the-signal) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the ERK/eIF-4E cascade figure's alt was rewritten from the source's letter-by-letter spelled-out form ("E R K," "lower e upper I upper F dash 4 E") to plain text naming the proteins, with a new extended description walking both panels of the flow diagram as drawn; the mouse-paw micrograph's alt was rewritten to describe what is visually depicted (stain color, digit buds, webbing, scale bar) rather than repeat the caption; the Career Connection feature box was rendered as a callout with its bold name, its embedded citation kept as a live external link; two cross-references to a figure in the previous section (Figure 9.10, not on this page) were reworded from a numbered figure citation to a prose reference to the section that carries it, since figures are not numbered here; the end-of-section Review Questions and Critical Thinking Questions were adapted into the closing interactive Practice block (multiple choice and self-check respectively), with each item's original source order and wording preserved; and four key-term recall items (growth factor, phosphodiesterase, inhibitor, apoptosis) were added from the glossary to round out every objective group with an auto-graded item.</small>
+<small>This section is adapted from [Biology 2e, Section 9.3: Response to the Signal](https://openstax.org/books/biology-2e/pages/9-3-response-to-the-signal) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the ERK/eIF-4E cascade figure's alt was rewritten from the source's letter-by-letter spelled-out form ("E R K," "lower e upper I upper F dash 4 E") to plain text naming the proteins, with a new extended description walking both panels of the flow diagram as drawn; the mouse-paw micrograph's alt was rewritten to describe what is visually depicted (stain color, digit buds, webbing, scale bar) rather than repeat the caption; the Career Connection feature box was rendered as a callout with its bold name, its embedded citation kept as a live external link; two cross-references to a figure in the previous section (Figure 9.10, not on this page) were reworded from a numbered figure citation to a prose reference to the section that carries it, since figures are not numbered here; the end-of-section Review Questions and Critical Thinking Questions were adapted into the closing interactive Practice block (multiple choice and self-check respectively), with each item's original source order and wording preserved; and four key-term recall items (growth factor, phosphodiesterase, inhibitor, apoptosis) were added from the glossary to round out every objective group with an auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

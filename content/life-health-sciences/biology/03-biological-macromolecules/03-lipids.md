@@ -136,6 +136,11 @@ Lipids are a class of macromolecules that are nonpolar and hydrophobic in nature
 
 {{< selfcheck question="Explain at least three functions that lipids serve in plants and/or animals." hint="Think of one function for each major lipid type discussed in this section." >}}
 Fat serves as a valuable way for animals to store energy. It can also provide insulation. Waxes can protect plant leaves and mammalian fur from getting wet. Phospholipids and steroids are important components of animal cell membranes, as well as plant, fungal, and bacterial membranes.
+===CHECKS===
+fat serves as a valuable way for animals to store energy
+it can also provide insulation
+waxes can protect plant leaves and mammalian fur from getting wet
+phospholipids and steroids are important components of animal cell membranes
 {{< /selfcheck >}}
 
 {{< textin
@@ -144,10 +149,22 @@ Fat serves as a valuable way for animals to store energy. It can also provide in
   hint="This is the general term for fats, oils, waxes, phospholipids, and steroids together."
 >}}
 
+{{< textin
+  question="Lipids' major types include fats and oils, waxes, phospholipids, and ________."
+  answer="steroids"
+  accept="steroid"
+  hint="Cholesterol and cortisol, both built from four fused rings, belong to this fourth major type named in the summary."
+>}}
+
 ### Explain the role of fats in storing energy
 
 {{< selfcheck question="Why are fatty acids better than glycogen for storing large amounts of chemical energy?" hint="Compare the energy density and the packaging of fats to that of a branched carbohydrate." >}}
 Fats have a higher energy density than carbohydrates (averaging 9 kcal/gram versus 4.3 kcal/gram respectively). Thus, on a per gram basis, more energy can be stored in fats than can be stored in carbohydrates. Additionally, fats are packaged into spherical globules to minimize interactions with the water-based plasma membrane, while glycogen is a large branched carbohydrate that cannot be compacted for storage.
+===CHECKS===
+fats have a higher energy density than carbohydrates (averaging 9 kcal/gram versus 4.3 kcal/gram respectively)
+more energy can be stored in fats than can be stored in carbohydrates
+fats are packaged into spherical globules to minimize interactions with the water-based plasma membrane
+glycogen is a large branched carbohydrate that cannot be compacted for storage
 {{< /selfcheck >}}
 
 {{< textin
@@ -156,6 +173,17 @@ Fats have a higher energy density than carbohydrates (averaging 9 kcal/gram vers
   accept="triglyceride|triacylglycerols|triglycerides"
   hint="This is the storage form of fat in adipocytes, and its name describes the three fatty acid chains it carries."
 >}}
+
+{{< multiplechoice
+  question="Fats are a ________ and are also known as triacylglycerols or triglycerides."
+  answer="stored form of energy"
+  hint="Compare this role, named in the summary, to what waxes, phospholipids, and steroids do instead."
+>}}
+waxy protective coating
+membrane's major constituent
+fused ring structure
+stored form of energy
+{{< /multiplechoice >}}
 
 ### Differentiate between saturated and unsaturated fatty acids
 
@@ -172,6 +200,10 @@ they tend to dissolve in water easily
 
 {{< selfcheck question="Why have trans fats been banned from some restaurants? How are they created?" hint="Consider what hydrogenation does to the double bonds in the hydrocarbon chain." >}}
 Trans fats are created artificially when hydrogen gas is bubbled through oils to solidify them. The double bonds of the *cis* conformation in the hydrocarbon chain may be converted to double bonds in the *trans* configuration. Some restaurants are banning trans fats because they cause higher levels of LDL, or "bad" cholesterol.
+===CHECKS===
+trans fats are created artificially when hydrogen gas is bubbled through oils to solidify them
+the double bonds of the cis conformation in the hydrocarbon chain may be converted to double bonds in the trans configuration
+some restaurants are banning trans fats because they cause higher levels of LDL, or bad cholesterol
 {{< /selfcheck >}}
 
 {{< textin
@@ -208,6 +240,12 @@ the double bond in hydrocarbon chains
   hint="It has a hydrophilic head and two hydrophobic tails."
 >}}
 
+{{< textin
+  question="Phospholipids comprise the membrane's ________."
+  answer="matrix"
+  hint="The summary names this structural role phospholipids play in every cellular membrane."
+>}}
+
 ### Define the basic structure of a steroid and some steroid functions
 
 {{< textin
@@ -219,7 +257,19 @@ the double bond in hydrocarbon chains
 
 {{< selfcheck question="Part of cortisol's role in the body involves passing through the plasma membrane to initiate signaling inside a cell. Describe how the structures of cortisol and the plasma membrane allow this to occur." hint="Think about which part of the phospholipid bilayer a hydrophobic steroid would interact with." >}}
 Cortisol is a small, generally hydrophobic molecule, while the phospholipids that create plasma membranes have a hydrophilic head and hydrophobic tails. Since cortisol is hydrophobic, it can interact with the sequestered tails of the phospholipids in the center of the plasma membrane. This, along with its small size, allows cortisol to move through the plasma membrane to the inside of the cell.
+===CHECKS===
+cortisol is a small, generally hydrophobic molecule
+the phospholipids that create plasma membranes have a hydrophilic head and hydrophobic tails
+it can interact with the sequestered tails of the phospholipids in the center of the plasma membrane
+allows cortisol to move through the plasma membrane to the inside of the cell
 {{< /selfcheck >}}
+
+{{< textin
+  question="Cholesterol is also the precursor of steroid hormones such as ________."
+  answer="testosterone"
+  accept="estradiol"
+  hint="This sex hormone is named in the summary as an example of a steroid hormone cholesterol precedes."
+>}}
 
 ### Explain how cholesterol helps maintain the plasma membrane's fluid nature
 
@@ -241,6 +291,12 @@ attached to the intracellular surface
   hint="Margarine and shortening are often made this way, and eating a lot of it raises LDL cholesterol."
 >}}
 
+{{< textin
+  question="Cholesterol is an important constituent of the plasma membrane, where it helps to maintain the membrane's ________."
+  answer="fluid nature"
+  hint="The summary names this property of the membrane that cholesterol keeps intact."
+>}}
+
 ---
 
-<small>This section is adapted from [Biology 2e, Section 3.3: Lipids](https://openstax.org/books/biology-2e/pages/3-3-lipids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the manifest's file-type kind guess was wrong for seven of the ten figures (it called every JPEG a photo; the PNG phospholipid diagram it guessed right) — every structural-formula diagram (glycerol/fatty acid/triacylglycerol, stearic acid, oleic acid, the saturated/unsaturated comparison, alpha-linolenic acid, the phospholipid panel, the phospholipid bilayer, and cholesterol/cortisol) is a JPEG or PNG line drawing, not a photo, and is now marked `kind="diagram"`; only the otter and the waxy leaves are true photos. Several source alts used garbled OCR-style phrasing (e.g., "upper O upper H" for OH) and were rewritten to describe the structure cleanly, and a `longdesc` was added to every structural-formula and schematic figure, walking through the molecules and the structural difference each one shows (the kink at a *cis* double bond, the shared four-ring skeleton of cholesterol and cortisol); the two photos keep short alts with no `longdesc`. The one Link to Learning note is rendered as a callout with its bold name and the source URL kept. The end-of-section Review Questions and Critical Thinking Questions are adapted into the closing interactive Practice block (multiple choice and self-check respectively), lightly adding a space between number and unit in one Critical Thinking solution for readability ("9 kcal/gram", "4.3 kcal/gram") and a missing space before "bad" cholesterol in another; the last objective (cholesterol and membrane fluidity) is served by the source's only exercise on cholesterol, its position in the membrane, plus a recall item, because the section's own text and exercises never explain the fluidity mechanism; and seven key-term recall items (lipid, triacylglycerol, unsaturated fatty acid, omega fat, phospholipid, steroid, trans fat) are added from the glossary to round out every objective group to at least two exercises.</small>
+<small>This section is adapted from [Biology 2e, Section 3.3: Lipids](https://openstax.org/books/biology-2e/pages/3-3-lipids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; the manifest's file-type kind guess was wrong for seven of the ten figures (it called every JPEG a photo; the PNG phospholipid diagram it guessed right) — every structural-formula diagram (glycerol/fatty acid/triacylglycerol, stearic acid, oleic acid, the saturated/unsaturated comparison, alpha-linolenic acid, the phospholipid panel, the phospholipid bilayer, and cholesterol/cortisol) is a JPEG or PNG line drawing, not a photo, and is now marked `kind="diagram"`; only the otter and the waxy leaves are true photos. Several source alts used garbled OCR-style phrasing (e.g., "upper O upper H" for OH) and were rewritten to describe the structure cleanly, and a `longdesc` was added to every structural-formula and schematic figure, walking through the molecules and the structural difference each one shows (the kink at a *cis* double bond, the shared four-ring skeleton of cholesterol and cortisol); the two photos keep short alts with no `longdesc`. The one Link to Learning note is rendered as a callout with its bold name and the source URL kept. The end-of-section Review Questions and Critical Thinking Questions are adapted into the closing interactive Practice block (multiple choice and self-check respectively), lightly adding a space between number and unit in one Critical Thinking solution for readability ("9 kcal/gram", "4.3 kcal/gram") and a missing space before "bad" cholesterol in another; the last objective (cholesterol and membrane fluidity) is served by the source's only exercise on cholesterol, its position in the membrane, plus a recall item, because the section's own text and exercises never explain the fluidity mechanism; and seven key-term recall items (lipid, triacylglycerol, unsaturated fatty acid, omega fat, phospholipid, steroid, trans fat) are added from the glossary to round out every objective group to at least two exercises; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and five summary-derived items added, one per objective group left short of three exercises after the glossary pass — a cloze naming steroids as lipids' fourth major type, a select-the-term multiple choice on fats' role as a stored form of energy (distractors drawn from the module's own descriptions of what waxes, phospholipids, and steroids do instead), a cloze naming the membrane's matrix as phospholipids' structural role, a cloze naming testosterone as an example steroid hormone, and a cloze naming the membrane's fluid nature that cholesterol maintains — all four cloze items and the multiple choice drawn from the section's own Summary sentences.</small>

@@ -50,7 +50,7 @@ test('every answer-carrying shortcode kind is extracted, and code fences are not
   });
   const found = extractExercises(join(dir, 'content'));
   assert.deepEqual(found.map((e) => e.kind).sort(), ['fillin', 'multiplechoice']);
-  assert.equal(EXERCISE_KINDS.length, 5, 'graphplot, textin, and selfcheck must stay in the extracted set');
+  assert.equal(EXERCISE_KINDS.length, 6, 'graphplot, textin, selfcheck, and sortbins must stay in the extracted set');
   assert.ok(!found.some((e) => e.raw.includes('Not real')), 'a fenced sample is not an exercise');
 });
 

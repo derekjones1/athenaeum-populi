@@ -286,6 +286,13 @@ matches item b, step 5 matches item d, and step 6 matches item e. The
 original hypothesis is incorrect, since the coffee maker works when plugged
 into the outlet. Alternative hypotheses include that the toaster itself
 might be broken, or that the toaster was not turned on.
+===CHECKS===
+step 1 matches item c
+step 3 matches item a
+step 4 matches item b
+step 6 matches item e
+the original hypothesis is incorrect
+the toaster itself might be broken, or the toaster was not turned on
 {{< /selfcheck >}}
 
 {{< mediafigure src="biology/Figure_01_01_09new" alt="A two-column diagram comparing inductive and deductive reasoning, each illustrated with a worked example about adaptation to a warming climate." longdesc="Inductive reasoning column: three observations — members of a species are not all the same; individuals compete for resources; species are generally adapted to their environment — lead to the conclusion that individuals most adapted to their environment are more likely to survive and pass their traits on to the next generation. Deductive reasoning column: from the general premise that individuals most adapted to their environment are more likely to survive and pass their traits on to the next generation, the diagram predicts that if global climate change raises an ecosystem's temperature, individuals better adapted to a warmer climate will outcompete those that are not." >}}
@@ -305,6 +312,11 @@ distribute evenly during cell division) is used to predict the specific
 outcome that daughter cells match the mother cell. (4) Inductive — a general
 conclusion, that social behavior must have an evolutionary advantage, is
 drawn from observing it across many different kinds of animals.
+===CHECKS===
+(1) Inductive — the general conclusion that wings enable flight is drawn from observing that flying birds and insects all have wings and flap them
+(2) Deductive — a known general trend (insects survive mild winters better) is used to predict a specific future outcome, worse pest problems as the climate warms
+(3) Deductive — a known general process (chromosomes distribute evenly during cell division) is used to predict the specific outcome that daughter cells match the mother cell
+(4) Inductive — a general conclusion, that social behavior must have an evolutionary advantage, is drawn from observing it across many different kinds of animals
 {{< /selfcheck >}}
 
 The scientific method may seem too rigid and structured. It is important to
@@ -649,6 +661,12 @@ how diseases affect human bodies, how pollution impacts a species' habitat,
 or how plants respond to their environments. Topics outside of biology (the
 "study of life") could include how metamorphic rock is formed or how
 planetary orbits function.
+===CHECKS===
+how diseases affect human bodies
+how pollution impacts a species' habitat
+how plants respond to their environments
+how metamorphic rock is formed
+how planetary orbits function
 {{< /selfcheck >}}
 
 ### Summarize the steps of the scientific method
@@ -681,6 +699,12 @@ possibility is a car that will not start: propose the hypothesis that the
 battery is dead, then test it by changing the battery or charging it and
 checking whether the car starts. If it starts, the problem was due to the
 battery, and the hypothesis is accepted.
+===CHECKS===
+should apply the steps of the scientific method
+propose the hypothesis that the battery is dead
+test it by changing the battery or charging it and checking whether the car starts
+if it starts, the problem was due to the battery
+the hypothesis is accepted
 {{< /selfcheck >}}
 
 ### Compare inductive reasoning with deductive reasoning
@@ -720,12 +744,20 @@ both inductive and deductive reasoning
 Answers will vary. One example is the availability of vaccines: vaccines to
 prevent diseases such as polio, measles, tetanus, and influenza affect
 daily life by contributing to individual and societal health.
+===CHECKS===
+the availability of vaccines
+vaccines to prevent diseases such as polio, measles, tetanus, and influenza
+affect daily life
+contributing to individual and societal health
 {{< /selfcheck >}}
 
 {{< selfcheck question="Thinking about the topic of cancer, write a basic science question and an applied science question that a researcher interested in this topic might ask." hint="A basic science question seeks understanding for its own sake; an applied science question seeks a solution to a practical problem." >}}
 Answers will vary. Basic science: what evolutionary purpose might cancer
 serve? Applied science: what strategies might be found to prevent cancer
 from reproducing at the cellular level?
+===CHECKS===
+Basic science: what evolutionary purpose might cancer serve
+Applied science: what strategies might be found to prevent cancer from reproducing at the cellular level
 {{< /selfcheck >}}
 
 {{< textin
@@ -737,4 +769,4 @@ from reproducing at the cellular level?
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 1.1: The Science of Biology](https://openstax.org/books/biology-2e/pages/1-1-the-science-of-biology) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the source alt text edited for the cyanobacteria/stromatolite, E. coli, Francis Bacon, and squirrel photos to describe what is visually shown rather than restate the caption or use a bare "photo depicts" phrase, and a corrected spelling ("stromatolites"); a longer extended description added for the scientific-method flow chart and the inductive/deductive reasoning diagram, both diagrams whose full reading is not carried by their captions; inline references to figures changed from the source's parenthetical figure pointers to descriptive phrases ("see the diagram below") since figures are not numbered here; the source's embedded visual-connection note and its separately printed Visual Connection Question were combined into one on-page item — the matching table kept as a Markdown table in the body, immediately followed by a self-check with the source's answer as the model response — for each of the two visual connections; an unbalanced parenthesis in the Human Genome Project figure's credit line corrected, and its embedded link kept as a Markdown link; double-hyphen dashes normalized to em dashes; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block, sorted under the objective each supports; and two key-term recall items (deductive reasoning, applied science) added from the glossary to round out thin objective groups.</small>
+<small>This section is adapted from [Biology 2e, Section 1.1: The Science of Biology](https://openstax.org/books/biology-2e/pages/1-1-the-science-of-biology) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the source alt text edited for the cyanobacteria/stromatolite, E. coli, Francis Bacon, and squirrel photos to describe what is visually shown rather than restate the caption or use a bare "photo depicts" phrase, and a corrected spelling ("stromatolites"); a longer extended description added for the scientific-method flow chart and the inductive/deductive reasoning diagram, both diagrams whose full reading is not carried by their captions; inline references to figures changed from the source's parenthetical figure pointers to descriptive phrases ("see the diagram below") since figures are not numbered here; the source's embedded visual-connection note and its separately printed Visual Connection Question were combined into one on-page item — the matching table kept as a Markdown table in the body, immediately followed by a self-check with the source's answer as the model response — for each of the two visual connections; an unbalanced parenthesis in the Human Genome Project figure's credit line corrected, and its embedded link kept as a Markdown link; double-hyphen dashes normalized to em dashes; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block, sorted under the objective each supports; and two key-term recall items (deductive reasoning, applied science) added from the glossary to round out thin objective groups; and rubric checkpoints added to each of the section's six self-checks — the two body self-checks that follow the toaster-matching table and the inductive/deductive-reasoning diagram, and the four in the closing Practice block — decomposing each model answer (the source solution) into check-off clauses with no new claims.</small>

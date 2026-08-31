@@ -131,6 +131,12 @@ intermediate filaments and microtubules
 only intermediate filaments
 {{< /multiplechoice >}}
 
+{{< textin
+  question="From narrowest to widest, they are the microfilaments (actin filaments), intermediate filaments, and ________."
+  answer="microtubules"
+  hint="The section's summary lists the three cytoskeletal fiber types in size order, ending with the widest."
+>}}
+
 ### Compare the roles of microfilaments, intermediate filaments, and microtubules
 
 {{< multiplechoice
@@ -146,6 +152,11 @@ only intermediate filaments
 
 {{< selfcheck question="Describe how microfilaments and microtubules are involved in the phagocytosis and destruction of a pathogen by a macrophage." hint="Trace the pathogen's route: which fiber type reshapes the membrane around it, and which fiber type moves the resulting vesicle to a lysosome?" >}}
 A macrophage engulfs a pathogen by rearranging its actin microfilaments to bend the plasma membrane around the pathogen. Once the pathogen is sealed in an endosome inside the macrophage, the vesicle is walked along microtubules until it combines with a lysosome to digest the pathogen.
+===CHECKS===
+rearranging its actin microfilaments to bend the plasma membrane around the pathogen
+the pathogen is sealed in an endosome inside the macrophage
+the vesicle is walked along microtubules
+combines with a lysosome to digest the pathogen
 {{< /selfcheck >}}
 
 {{< textin
@@ -184,10 +195,19 @@ microfilaments; microtubules
 
 {{< selfcheck question="What are the similarities and differences between the structures of centrioles and flagella?" hint="Both are built from microtubules, but only one has two rings of the same structure arranged at right angles to one another." >}}
 Centrioles and flagella are alike in that they are made up of microtubules. In centrioles, two rings of nine microtubule "triplets" are arranged at right angles to one another. This arrangement does not occur in flagella.
+===CHECKS===
+centrioles and flagella are alike in that they are made up of microtubules
+two rings of nine microtubule "triplets" are arranged at right angles to one another
+this arrangement does not occur in flagella
 {{< /selfcheck >}}
 
 {{< selfcheck question="How do cilia and flagella differ?" hint="Compare their length, and how many of each a single cell typically has." >}}
 Cilia and flagella are alike in that they are made up of microtubules. Cilia are short, hair-like structures that exist in large numbers and usually cover the entire surface of the plasma membrane. Flagella, in contrast, are long, hair-like structures; when flagella are present, a cell has just one or two.
+===CHECKS===
+cilia and flagella are alike in that they are made up of microtubules
+cilia are short, hair-like structures that exist in large numbers and usually cover the entire surface of the plasma membrane
+flagella, in contrast, are long, hair-like structures
+when flagella are present, a cell has just one or two
 {{< /selfcheck >}}
 
 {{< textin
@@ -208,6 +228,12 @@ Cilia and flagella are alike in that they are made up of microtubules. Cilia are
 
 {{< selfcheck question="Compare and contrast the boundaries that plant, animal, and bacteria cells use to separate themselves from their surrounding environment." hint="Start with the plasma membrane, which every cell type has, then ask which two of the three types add a cell wall outside it — and of what material." >}}
 All three cell types have a plasma membrane that borders the cytoplasm on its interior side. In animal cells, the exterior side of the plasma membrane is in contact with the extracellular environment. However, in plant and bacteria cells, a cell wall surrounds the outside of the plasma membrane. In plants, the cell wall is made of cellulose, while in bacteria the cell wall is made of peptidoglycan. Gram-negative bacteria also have an additional capsule made of lipopolysaccharides that surrounds their cell wall.
+===CHECKS===
+all three cell types have a plasma membrane that borders the cytoplasm on its interior side
+in animal cells, the exterior side of the plasma membrane is in contact with the extracellular environment
+in plant and bacteria cells, a cell wall surrounds the outside of the plasma membrane
+in plants, the cell wall is made of cellulose, while in bacteria the cell wall is made of peptidoglycan
+Gram-negative bacteria also have an additional capsule made of lipopolysaccharides that surrounds their cell wall
 {{< /selfcheck >}}
 
 {{< multiplechoice
@@ -221,6 +247,17 @@ Golgi apparatus
 Lysosomes
 {{< /multiplechoice >}}
 
+{{< multiplechoice
+  question="According to the table above, which structure is present in animal and plant cells but absent in prokaryotic cells?"
+  answer="Nucleolus"
+  hint="Check each option's own row: only one is “No” under Prokaryotes but “Yes” under both Animal Cells and Plant Cells."
+>}}
+Cell wall
+Ribosomes
+Nucleolus
+Cytoskeleton
+{{< /multiplechoice >}}
+
 ---
 
-<small>This section is adapted from [Biology 2e, Section 4.5: The Cytoskeleton](https://openstax.org/books/biology-2e/pages/4-5-the-cytoskeleton) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with all five re-kinded from the manifest's file-extension guess of "photo" — every source file is a JPEG — to their actual kind after inspection: four are diagrams (the two labeled cell schematics, the actin-subunit illustration, the intermediate-filament bundle illustration, and the paired microtubule molecular-model/schematic figure, whose teaching point is its labeled schematic panel) and only the flagella cross-section is a true photograph (a transmission electron micrograph); a longer extended description added for the three figures whose full labeling is not carried by their captions (the two-panel cell diagram, the labeled actin-subunit illustration, and the paired microtubule model/schematic); the flagella micrograph's alt corrected from the source's singular "a cross section" to the two cross sections the image and its own caption both show; inline references to the figures and the table changed from the source's print numbers ("Figure 4.22," "Table 4.1") to descriptive phrases ("below," "the table below") since figures and tables are not numbered here; the one Link to Learning feature box rendered as a callout with its bold name and its embedded video's real URL kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); six key-term recall items (cytoskeleton, microfilament, intermediate filament, microtubule, flagellum, cilium) added from the glossary so every objective group has at least one; and one multiple-choice item written directly from the section's own comparison table (asking which structure is present in prokaryotic and plant cells but absent in animal cells) because neither the Review Questions nor the Critical Thinking Questions test the fourth objective with an auto-gradable item.</small>
+<small>This section is adapted from [Biology 2e, Section 4.5: The Cytoskeleton](https://openstax.org/books/biology-2e/pages/4-5-the-cytoskeleton) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with all five re-kinded from the manifest's file-extension guess of "photo" — every source file is a JPEG — to their actual kind after inspection: four are diagrams (the two labeled cell schematics, the actin-subunit illustration, the intermediate-filament bundle illustration, and the paired microtubule molecular-model/schematic figure, whose teaching point is its labeled schematic panel) and only the flagella cross-section is a true photograph (a transmission electron micrograph); a longer extended description added for the three figures whose full labeling is not carried by their captions (the two-panel cell diagram, the labeled actin-subunit illustration, and the paired microtubule model/schematic); the flagella micrograph's alt corrected from the source's singular "a cross section" to the two cross sections the image and its own caption both show; inline references to the figures and the table changed from the source's print numbers ("Figure 4.22," "Table 4.1") to descriptive phrases ("below," "the table below") since figures and tables are not numbered here; the one Link to Learning feature box rendered as a callout with its bold name and its embedded video's real URL kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); six key-term recall items (cytoskeleton, microfilament, intermediate filament, microtubule, flagellum, cilium) added from the glossary so every objective group has at least one; one multiple-choice item written directly from the section's own comparison table (asking which structure is present in prokaryotic and plant cells but absent in animal cells) because neither the Review Questions nor the Critical Thinking Questions test the fourth objective with an auto-gradable item; a second table-derived multiple choice added under the same objective to reach the raised per-objective floor (asking which structure is present in animal and plant cells but absent in prokaryotic cells), disclosed here as locally written since it draws only on the page's own table with no new claim; a comparison-table sortbins was evaluated for this section's prokaryote/animal/plant table and rejected — the table's overlapping "Yes/Yes/No" and "Some" values leave only three cells (centrosome, cell wall, chloroplasts) that distinguish a single category without ambiguity, short of the format's four-item minimum; a summary-derived cloze item added under the first objective ("microtubules," completing the fiber-size ordering the summary states); rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

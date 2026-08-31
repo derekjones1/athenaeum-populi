@@ -19,6 +19,12 @@ import { unescapeParamValue } from '../lib/content.mjs';
  * two-option questions, a uniform corpus still keys the first option ~36% of
  * the time — so the assertion is |observed − expected| per position, not a
  * fixed percentage.
+ *
+ * sortbins deliberately has NO analogous gate: every item requires an
+ * assignment, so there is no positional guessing strategy to skew toward
+ * ("always the first bin" cannot beat chance under the config parser's
+ * per-bin ownership cap), and authored item order is already constrained by
+ * the interleave rule in parseSortbinsConfig.
  */
 function collect(root) {
   const perBook = new Map();
@@ -36,8 +42,9 @@ function collect(root) {
     if (segments.length < 3) continue;
     const book = `${segments[0]}/${segments[1]}`;
     const src = readFileSync(file, 'utf8');
-    for (const sc of shortcodes(src, 'multiplechoice')) {
-      if ((sc.params.mode || 'text') === 'graph') continue;
+    const choiceShortcodes = [...shortcodes(src, 'multiplechoice')]
+      .filter((sc) => (sc.params.mode || 'text') !== 'graph');
+    for (const sc of choiceShortcodes) {
       const options = sc.inner.split('\n').map((line) => line.trim()).filter(Boolean);
       const answer = unescapeParamValue(sc.params.answer ?? '');
       const index = options.indexOf(answer);

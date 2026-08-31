@@ -7,7 +7,9 @@
  * the labelled <textarea>, a native <details> holding the model answer, and
  * two self-rating buttons that ship natively `disabled` — so without JS the
  * question, the writing space, and the reveal all still work. This element
- * only enables the rating buttons and writes their result to the live region.
+ * only enables the rating buttons (and the rubric checkboxes, when the item
+ * carries `===CHECKS===` checkpoints) and writes their result to the live
+ * region — with a "You checked N of M points" count when a rubric exists.
  */
 let hintSequence = 0;
 
@@ -34,6 +36,12 @@ class SelfCheckElement extends HTMLElement {
       btn.addEventListener('click', () => this._mark(btn));
       btn.disabled = false;
     });
+
+    // Rubric checkpoints ship natively `disabled` like the marks: without
+    // JS the rubric still reads as a checklist to compare against, and with
+    // it each clause is individually tickable. Nothing is stored.
+    this.checkpoints = Array.from(this.querySelectorAll('.ap-selfcheck-checkpoint input'));
+    this.checkpoints.forEach((box) => { box.disabled = false; });
 
     const hintTpl = this.querySelector('template[data-slot="hint"]');
     if (hintTpl && wrap) {
@@ -63,7 +71,12 @@ class SelfCheckElement extends HTMLElement {
     const verdict = btn.dataset.verdict;
     this.marks.forEach((other) => other.setAttribute('aria-pressed', String(other === btn)));
     if (this.feedback) {
-      this.feedback.textContent = MESSAGES[verdict] || '';
+      let message = MESSAGES[verdict] || '';
+      if (this.checkpoints.length) {
+        const checked = this.checkpoints.filter((box) => box.checked).length;
+        message += ` You checked ${checked} of ${this.checkpoints.length} points.`;
+      }
+      this.feedback.textContent = message;
       this.feedback.style.color = COLOR[verdict] || 'inherit';
     }
   }

@@ -137,6 +137,9 @@ granum
 
 {{< selfcheck question="Why is the third stage of the Calvin cycle called the regeneration stage?" hint="Ask which molecule, needed at the very start of the cycle, is rebuilt during this stage." >}}
 Because RuBP, the molecule needed at the start of the cycle, is regenerated from G3P.
+===CHECKS===
+RuBP, the molecule needed at the start of the cycle
+is regenerated from G3P
 {{< /selfcheck >}}
 
 {{< textin
@@ -179,10 +182,17 @@ the use of ATP and NADPH to reduce CO₂
 
 {{< selfcheck question="Which part of the light-independent reactions would be affected if a cell could not produce the enzyme RuBisCO?" hint="RuBisCO acts at only one step of the cycle — but every later step depends on the product of that step." >}}
 None of the cycle could take place, because RuBisCO is essential in fixing carbon dioxide. Specifically, RuBisCO catalyzes the reaction between carbon dioxide and RuBP at the start of the cycle.
+===CHECKS===
+none of the cycle could take place
+RuBisCO is essential in fixing carbon dioxide
+RuBisCO catalyzes the reaction between carbon dioxide and RuBP at the start of the cycle
 {{< /selfcheck >}}
 
 {{< selfcheck question="Why does it take three turns of the Calvin cycle to produce G3P, the initial product of photosynthesis?" hint="Compare how many carbon atoms G3P has with how many carbon atoms enter the cycle on each turn." >}}
 Because G3P has three carbon atoms, and each turn of the cycle takes in one carbon atom in the form of carbon dioxide.
+===CHECKS===
+G3P has three carbon atoms
+each turn of the cycle takes in one carbon atom in the form of carbon dioxide
 {{< /selfcheck >}}
 
 {{< textin
@@ -197,12 +207,26 @@ Because G3P has three carbon atoms, and each turn of the cycle takes in one carb
 An energy cycle between the plant and the beetle would work as follows: the plant consumes carbon dioxide and releases oxygen as a byproduct of photosynthesis; the beetle consumes oxygen and releases carbon dioxide to create chemical energy during aerobic respiration; the plant takes up that carbon dioxide from the air; and the cycle repeats. The plant would also provide a carbon-based food source for the beetle.
 
 The beetle is a heterotroph and would not survive without the plant, because it would deplete all the oxygen within the terrarium. The plant is an autotroph and could survive without the beetle, but it would be unlikely to grow: through photosynthesis the plant can make and store its own energy in carbon-based molecules and produce oxygen, and that oxygen can then be used to power aerobic respiration in the plant, which releases carbon dioxide. However, since the plant would essentially be reusing its own resources by cycling between carbon- and oxygen-consuming pathways, its growth would be limited.
+===CHECKS===
+the plant consumes carbon dioxide and releases oxygen as a byproduct of photosynthesis
+the beetle consumes oxygen and releases carbon dioxide to create chemical energy during aerobic respiration
+the plant would also provide a carbon-based food source for the beetle
+the beetle is a heterotroph and would not survive without the plant
+the plant is an autotroph and could survive without the beetle
+its growth would be limited
 {{< /selfcheck >}}
 
 {{< selfcheck question="Compare the flow of energy with the flow of nutrients in a closed, sunny ecosystem consisting of a giraffe and a tree." hint="Energy moves through the system in one direction; matter such as carbon and oxygen cycles back and forth between the organisms." >}}
 In the defined ecosystem, energy would radiate from the Sun and be absorbed by the chlorophyll in the leaves of the tree. Photosynthesis would occur in the leaves, transforming the light energy into stored chemical energy in the covalent bonds of carbon molecules. The giraffe would eat the leaves of the tree and digest the carbon molecules to release energy.
 
 In the same ecosystem, nutrients would cycle between the tree and the giraffe. The giraffe would consume oxygen and release carbon dioxide as its cells perform aerobic respiration to create chemical energy. The tree would consume the released carbon dioxide during photosynthesis to create its own stored chemical energy, and release oxygen as a by-product.
+===CHECKS===
+energy would radiate from the Sun and be absorbed by the chlorophyll in the leaves of the tree
+the giraffe would eat the leaves of the tree and digest the carbon molecules to release energy
+nutrients would cycle between the tree and the giraffe
+the giraffe would consume oxygen and release carbon dioxide
+the tree would consume the released carbon dioxide during photosynthesis
+release oxygen as a by-product
 {{< /selfcheck >}}
 
 {{< multiplechoice
@@ -218,4 +242,4 @@ hydrogen
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 8.3: Using Light Energy to Make Organic Molecules](https://openstax.org/books/biology-2e/pages/8-3-using-light-energy-to-make-organic-molecules) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the first figure (the light-reactions membrane diagram) re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection, since it is a drawn illustration, not a photograph; a clean alt and a longdesc written for that figure and for the Calvin-cycle stage diagram, replacing the source alt's garbled letter-by-letter spelling of the labels ("upper case R lower case u...") with a description of what the image shows and a longdesc walking its three phases and quantities; a longdesc also added for the photosynthesis/respiration organelle diagram and for the giraffe/tree photo's three overlaid text boxes, none of which is fully carried by its caption; feature boxes (one Link to Learning, one Evolution Connection) rendered as callouts with their bold names; the note.visual-connection kept in the body immediately after its figure and rendered as a multiplechoice, since the source keys it with a lettered option, and not duplicated in the identical Visual Connection Questions exercise; the five Review Questions and five Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the Critical Thinking terrarium answer's telegraphic list reformatted into complete sentences; the chemical-equation multiple-choice options rendered as Unicode text with arrows rather than KaTeX, since they are reaction sequences, not mathematics; the "Explain how photosynthesis works in the energy cycle" objective group's auto-graded item is a locally authored multiple choice drawn strictly from the page's own Energy Flow prose, since the two source Critical Thinking items for that objective are both free-response; and three key-term recall items (Calvin cycle, carbon fixation, reduction) added from the glossary to round out every objective group with an auto-graded item; in the review question on carbon fixation, the source's option "the use of RuBisCO to form 3-PGA" — which the section's own prose also calls carbon fixation, so the printed item had two correct answers — is changed to "the use of RuBisCO to form G3P", which the section rules out (RuBisCO forms 3-PGA; G3P is made in the reduction stage).</small>
+<small>This section is adapted from [Biology 2e, Section 8.3: Using Light Energy to Make Organic Molecules](https://openstax.org/books/biology-2e/pages/8-3-using-light-energy-to-make-organic-molecules) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the first figure (the light-reactions membrane diagram) re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection, since it is a drawn illustration, not a photograph; a clean alt and a longdesc written for that figure and for the Calvin-cycle stage diagram, replacing the source alt's garbled letter-by-letter spelling of the labels ("upper case R lower case u...") with a description of what the image shows and a longdesc walking its three phases and quantities; a longdesc also added for the photosynthesis/respiration organelle diagram and for the giraffe/tree photo's three overlaid text boxes, none of which is fully carried by its caption; feature boxes (one Link to Learning, one Evolution Connection) rendered as callouts with their bold names; the note.visual-connection kept in the body immediately after its figure and rendered as a multiplechoice, since the source keys it with a lettered option, and not duplicated in the identical Visual Connection Questions exercise; the five Review Questions and five Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the Critical Thinking terrarium answer's telegraphic list reformatted into complete sentences; the chemical-equation multiple-choice options rendered as Unicode text with arrows rather than KaTeX, since they are reaction sequences, not mathematics; the "Explain how photosynthesis works in the energy cycle" objective group's auto-graded item is a locally authored multiple choice drawn strictly from the page's own Energy Flow prose, since the two source Critical Thinking items for that objective are both free-response; and three key-term recall items (Calvin cycle, carbon fixation, reduction) added from the glossary to round out every objective group with an auto-graded item; in the review question on carbon fixation, the source's option "the use of RuBisCO to form 3-PGA" — which the section's own prose also calls carbon fixation, so the printed item had two correct answers — is changed to "the use of RuBisCO to form G3P", which the section rules out (RuBisCO forms 3-PGA; G3P is made in the reduction stage); and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

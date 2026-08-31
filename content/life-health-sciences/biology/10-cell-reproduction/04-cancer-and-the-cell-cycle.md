@@ -86,7 +86,19 @@ Negative regulators
 
 {{< selfcheck question="Outline the steps that lead to a cell becoming cancerous." hint="Start from a single mutated regulator protein and follow what happens across successive generations of daughter cells." >}}
 If one of the genes that produces regulator proteins becomes mutated, it produces a malformed, possibly non-functional, cell-cycle regulator, increasing the chance that more mutations will be left unrepaired in the cell. Each subsequent generation of cells sustains more damage. The cell cycle can speed up as a result of the loss of functional checkpoint proteins. The cells can lose the ability to self-destruct and eventually become "immortalized."
+===CHECKS===
+a mutated gene produces a malformed cell-cycle regulator
+each generation of cells sustains more damage
+the cell cycle can speed up
+cells lose the ability to self-destruct
 {{< /selfcheck >}}
+
+{{< textin
+  question="Rapidly reproducing cancer cells that crowd out normal blood cells cause the blood cancer called ________."
+  answer="leukemia"
+  accept="leukaemia|leukemias"
+  hint="A cancer of the blood rather than a solid tumor — the summary names it in parentheses."
+>}}
 
 ### Understand how proto-oncogenes are normal cell genes that, when mutated, become oncogenes
 
@@ -148,6 +160,11 @@ p21
 
 {{< selfcheck question="Explain the difference between a proto-oncogene and a tumor-suppressor gene." hint="Think about which kind of regulator each codes for, and how many copies of each need to be damaged before the cell cycle runs unchecked." >}}
 A proto-oncogene is a segment of DNA that codes for one of the positive cell cycle regulators. If that gene becomes mutated so that it produces a hyperactivated protein product, it is considered an oncogene. A tumor suppressor gene is a segment of DNA that codes for one of the negative cell cycle regulators. If that gene becomes mutated so that the protein product becomes less active, the cell cycle will run unchecked. A single oncogene can initiate abnormal cell divisions; however, tumor suppressors lose their effectiveness only when both copies of the gene are damaged.
+===CHECKS===
+a proto-oncogene codes for a positive cell cycle regulator
+a tumor suppressor gene codes for a negative cell cycle regulator
+a single oncogene can initiate abnormal cell divisions
+tumor suppressors lose effectiveness only when both copies are damaged
 {{< /selfcheck >}}
 
 ### Explain how mutant tumor suppressors cause cancer
@@ -165,12 +182,21 @@ M to G₁
 
 {{< selfcheck question="List the regulatory mechanisms that might be lost in a cell producing faulty p53." hint="Think about everything a fully functional p53 does in response to DNA damage, from detection through to the cell's last resort." >}}
 Regulatory mechanisms that might be lost include monitoring of the quality of the genomic DNA, recruiting of repair enzymes, and the triggering of apoptosis.
+===CHECKS===
+monitoring the quality of the genomic DNA
+recruiting repair enzymes
+triggering apoptosis
 {{< /selfcheck >}}
 
 {{< selfcheck question="p53 can trigger apoptosis if certain cell-cycle events fail. How does this regulatory outcome benefit a multicellular organism?" hint="Consider what would happen to the daughter cells, and to the organism as a whole, if a damaged cell divided instead of self-destructing." >}}
 If a cell has damaged DNA, the likelihood of producing faulty proteins is higher. The daughter cells of such a damaged parent cell would also produce faulty proteins that might eventually become cancerous. If p53 recognizes this damage and triggers the cell to self-destruct, the damaged DNA is degraded and recycled. No further harm comes to the organism. Another healthy cell is triggered to divide instead.
+===CHECKS===
+damaged cells would produce faulty proteins
+the damaged DNA is degraded and recycled
+no further harm comes to the organism
+another healthy cell divides instead
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 10.4: Cancer and the Cell Cycle](https://openstax.org/books/biology-2e/pages/10-4-cancer-and-the-cell-cycle) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (both kinds matched the manifest's "diagram" guess after inspection); an extended description added to both figures, since neither flow chart's arrows, colors, and box labels are fully carried by its caption; the source alt's letter-by-letter spelling ("lower case p 5 3") rewritten as "p53"; the G₁-checkpoint cross-reference to a numbered figure changed to a descriptive "see the diagram below" since figures are not numbered here; the two feature boxes (the note wrapping the Visual Connection question, and the interactive animation link) rendered as, respectively, the figure plus a multiple choice kept in the body, and a Link to Learning callout with descriptive link text; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items (oncogene, proto-oncogene, tumor suppressor gene) added from the glossary; and one additional multiple choice written locally, strictly from the section's own paragraph on the G₁-to-S transition, since the module's four keyed Review Questions all map to the first three objectives and left the fourth objective ("Explain how mutant tumor suppressors cause cancer") without a second auto-graded item.</small>
+<small>This section is adapted from [Biology 2e, Section 10.4: Cancer and the Cell Cycle](https://openstax.org/books/biology-2e/pages/10-4-cancer-and-the-cell-cycle) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (both kinds matched the manifest's "diagram" guess after inspection); an extended description added to both figures, since neither flow chart's arrows, colors, and box labels are fully carried by its caption; the source alt's letter-by-letter spelling ("lower case p 5 3") rewritten as "p53"; the G₁-checkpoint cross-reference to a numbered figure changed to a descriptive "see the diagram below" since figures are not numbered here; the two feature boxes (the note wrapping the Visual Connection question, and the interactive animation link) rendered as, respectively, the figure plus a multiple choice kept in the body, and a Link to Learning callout with descriptive link text; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items (oncogene, proto-oncogene, tumor suppressor gene) added from the glossary; and one additional multiple choice written locally, strictly from the section's own paragraph on the G₁-to-S transition, since the module's four keyed Review Questions all map to the first three objectives and left the fourth objective ("Explain how mutant tumor suppressors cause cancer") without a second auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived recall item (leukemia) added under the first objective from the section summary's own sentence.</small>

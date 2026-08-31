@@ -206,10 +206,16 @@ the ligands don't bind to carrier proteins during transport
 
 {{< selfcheck question="What is the difference between intracellular signaling and intercellular signaling?" hint="Look at what the Latin prefixes inter- and intra- mean." >}}
 Intracellular signaling occurs within a cell, and intercellular signaling occurs between cells.
+===CHECKS===
+intracellular signaling occurs within a cell
+intercellular signaling occurs between cells
 {{< /selfcheck >}}
 
 {{< selfcheck question="How are the effects of paracrine signaling limited to an area near the signaling cells?" hint="Think about what happens to the ligand molecules once they are released." >}}
 The secreted ligands are quickly removed by degradation or reabsorption into the cell so that they cannot travel far.
+===CHECKS===
+the secreted ligands are quickly removed by degradation or reabsorption into the cell
+they cannot travel far
 {{< /selfcheck >}}
 
 ### Compare internal receptors with cell-surface receptors
@@ -249,10 +255,19 @@ Gated ion channel-linked
 
 {{< selfcheck question="What are the differences between internal receptors and cell-surface receptors?" hint="Consider where each receptor sits, whether the ligand enters the cell, and how each one influences protein production." >}}
 Internal receptors are located inside the cell, and their ligands enter the cell to bind the receptor. The complex formed by the internal receptor and the ligand then enters the nucleus and directly affects protein production by binding to the chromosomal DNA and initiating the making of mRNA that codes for proteins. Cell-surface receptors, however, are embedded in the plasma membrane, and their ligands do not enter the cell. Binding of the ligand to the cell-surface receptor initiates a cell signaling cascade and does not directly influence the making of proteins; however, it may involve the activation of intracellular proteins.
+===CHECKS===
+internal receptors are located inside the cell
+their ligands enter the cell to bind the receptor
+the complex formed by the internal receptor and the ligand then enters the nucleus and directly affects protein production
+cell-surface receptors are embedded in the plasma membrane, and their ligands do not enter the cell
+binding of the ligand to the cell-surface receptor initiates a cell signaling cascade
 {{< /selfcheck >}}
 
 {{< selfcheck question="Cells grown in the laboratory are mixed with a dye molecule that is unable to pass through the plasma membrane. If a ligand is added to the cells, observations show that the dye enters the cells. What type of receptor did the ligand bind to on the cell surface?" hint="Think about what kind of cell-surface receptor, once triggered, forms a physical opening through the membrane." >}}
 An ion channel receptor opened up a pore in the membrane, which allowed the ionic dye to move into the cell.
+===CHECKS===
+an ion channel receptor opened up a pore in the membrane
+allowed the ionic dye to move into the cell
 {{< /selfcheck >}}
 
 ### Recognize the relationship between a ligand’s structure and its mechanism of action
@@ -268,12 +283,25 @@ opening a ligand-gated ion channel
 triggering the exchange of GDP for GTP on a membrane-bound G-protein
 {{< /multiplechoice >}}
 
+{{< textin
+  question="Small hydrophobic ligands (like steroids) are able to penetrate the plasma membrane and bind to ________."
+  answer="internal receptors"
+  accept="internal receptor"
+  hint="This section's summary distinguishes these from the receptors that water-soluble ligands must use instead."
+>}}
+
 {{< selfcheck question="Insulin is a hormone that regulates blood sugar by binding to its receptor, insulin receptor tyrosine kinase. How does insulin's behavior differ from steroid hormone signaling, and what can you infer about its structure?" hint="Ask whether insulin has to cross the plasma membrane to act, and what that implies about whether it is polar or nonpolar." >}}
 Insulin's receptor is an enzyme-linked transmembrane receptor, as can be determined from the "tyrosine kinase" in its name. This receptor is embedded in the plasma membrane, and insulin binds to its extracellular (outer) surface to initiate intracellular signaling cascades.
 
 Normally, steroid hormones cross the plasma membrane to bind with intracellular receptors. These intracellular hormone-receptor complexes then interact directly with DNA to regulate transcription. This limits steroid hormones to be small, non-polar molecules so they can cross the plasma membrane. However, since insulin does not have to cross into the cell it could be large or polar (it is a small, polar molecule).
+===CHECKS===
+insulin's receptor is an enzyme-linked transmembrane receptor
+insulin binds to its extracellular (outer) surface to initiate intracellular signaling cascades
+steroid hormones cross the plasma membrane to bind with intracellular receptors
+insulin does not have to cross into the cell
+it could be large or polar
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 9.1: Signaling Molecules and Cellular Receptors](https://openstax.org/books/biology-2e/pages/9-1-signaling-molecules-and-cellular-receptors) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with five of the eight re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a drawn illustration, not a photograph — only the 1866 cholera-poster reproduction is a true photo); a `longdesc` added to the five figures that are labeled diagrams or flow charts whose full reading is not carried by their captions (the synapse diagram, the intracellular-receptor diagram, the gated-ion-channel panels, the G-protein cycle, and the tyrosine-kinase-receptor panels); the synapse figure's alt rewritten to clean up a source typo ("neutrotransmitter"/"neurotrasmitter") and the intracellular-receptor figure's alt rewritten to spell out "DNA" in place of the source's letter-by-letter "D N A"; ion charges and calcium set as Unicode (Ca²⁺); inline references to figures changed from the source's numbered pointers to descriptive phrases ("below," "above") since figures are not numbered here; Cao et al. 2011) omitted as bibliographic apparatus rather than section content; the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice, since the source keys it to a lettered option; the Key Terms entry for "intercellular signaling," whose glossary definition read "communication between a cell," corrected to "communication between cells" to match the section's own definition of the term (reported as a source defect); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); one Critical Thinking Question (the insulin/steroid comparison) placed under the third objective rather than the second, since it argues the relationship between ligand structure and receptor type; a multiple choice item written from the section's own text on small hydrophobic ligands added to give the third objective an auto-graded item, since no source exercise or glossary term tests it directly; and one key-term recall item (ligand) added from the glossary to round out the first objective group; the Evolution Connection's two reference citations are kept as a parenthetical after the sentence they support; four small source typos are corrected on the page — the glossary's "bind" (for "binds"), a caption's "synapatic", an option's "downsteam", and the letter-spaced "G D P"/"G T P" in two alts are corrected on the page.</small>
+<small>This section is adapted from [Biology 2e, Section 9.1: Signaling Molecules and Cellular Receptors](https://openstax.org/books/biology-2e/pages/9-1-signaling-molecules-and-cellular-receptors) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with five of the eight re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a drawn illustration, not a photograph — only the 1866 cholera-poster reproduction is a true photo); a `longdesc` added to the five figures that are labeled diagrams or flow charts whose full reading is not carried by their captions (the synapse diagram, the intracellular-receptor diagram, the gated-ion-channel panels, the G-protein cycle, and the tyrosine-kinase-receptor panels); the synapse figure's alt rewritten to clean up a source typo ("neutrotransmitter"/"neurotrasmitter") and the intracellular-receptor figure's alt rewritten to spell out "DNA" in place of the source's letter-by-letter "D N A"; ion charges and calcium set as Unicode (Ca²⁺); inline references to figures changed from the source's numbered pointers to descriptive phrases ("below," "above") since figures are not numbered here; Cao et al. 2011) omitted as bibliographic apparatus rather than section content; the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice, since the source keys it to a lettered option; the Key Terms entry for "intercellular signaling," whose glossary definition read "communication between a cell," corrected to "communication between cells" to match the section's own definition of the term (reported as a source defect); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); one Critical Thinking Question (the insulin/steroid comparison) placed under the third objective rather than the second, since it argues the relationship between ligand structure and receptor type; a multiple choice item written from the section's own text on small hydrophobic ligands added to give the third objective an auto-graded item, since no source exercise or glossary term tests it directly; and one key-term recall item (ligand) added from the glossary to round out the first objective group; the Evolution Connection's two reference citations are kept as a parenthetical after the sentence they support; four small source typos are corrected on the page — the glossary's "bind" (for "binds"), a caption's "synapatic", an option's "downsteam", and the letter-spaced "G D P"/"G T P" in two alts are corrected on the page; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived recall item (internal receptors) added under the third objective from the section summary's own sentence.</small>

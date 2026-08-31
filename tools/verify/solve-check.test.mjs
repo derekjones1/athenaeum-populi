@@ -141,3 +141,67 @@ test('the CLI writes no result file while a disagreement is unresolved, and exit
   assert.match(run.stdout, /1 disagree/);
   assert.match(run.stderr, /not writing results/);
 });
+
+
+/* ---- sortbins ------------------------------------------------------------- */
+
+const SORTBINS_PAGE = `---
+title: Sortbins sample
+---
+
+{{< sortbins question="Assign each replication property to the cell type it describes." hint="Never handed to the solver." >}}
+{"bins":["Prokaryotes","Eukaryotes"],"items":[{"label":"Single origin of replication","bin":0},{"label":"Telomerase present","bin":1},{"label":"DNA polymerase III elongates strands","bin":0},{"label":"PCNA sliding clamp","bin":1}]}
+{{< /sortbins >}}
+`;
+
+function sortbinsScratch() {
+  const dir = mkdtempSync(join(tmpdir(), 'solve-sb-'));
+  mkdirSync(join(dir, 'content'), { recursive: true });
+  writeFileSync(join(dir, 'content/b.md'), SORTBINS_PAGE);
+  return dir;
+}
+
+test('a sortbins packet carries bins and item labels — never the assignments or the hint', () => {
+  const dir = sortbinsScratch();
+  const previous = process.cwd();
+  process.chdir(dir);
+  let exercise;
+  try { [exercise] = extractExercises('content'); } finally { process.chdir(previous); }
+  assert.equal(exercise.kind, 'sortbins');
+  const item = packetItem(exercise);
+  assert.deepEqual(Object.keys(item).sort(), ['bins', 'hash', 'items', 'kind', 'line', 'path', 'question']);
+  assert.deepEqual(item.bins, ['Prokaryotes', 'Eukaryotes']);
+  assert.deepEqual(item.items, [
+    'Single origin of replication', 'Telomerase present',
+    'DNA polymerase III elongates strands', 'PCNA sliding clamp',
+  ]);
+  const serialized = JSON.stringify(item);
+  assert.doesNotMatch(serialized, /"bin"\s*:/, 'no assignment index survives into the packet');
+  assert.doesNotMatch(serialized, /hint|Never handed/);
+});
+
+test('a sortbins answer is a full label→bin mapping graded against the config', () => {
+  const dir = sortbinsScratch();
+  const previous = process.cwd();
+  process.chdir(dir);
+  let exercise;
+  try { [exercise] = extractExercises('content'); } finally { process.chdir(previous); }
+
+  const right = {
+    'Single origin of replication': 'Prokaryotes',
+    'Telomerase present': 'Eukaryotes',
+    'DNA polymerase III elongates strands': 'prokaryotes', // label matching is normalized
+    'PCNA sliding clamp': 'Eukaryotes',
+  };
+  assert.equal(gradeAnswer(exercise, right).status, 'agrees');
+
+  const swapped = { ...right, 'Telomerase present': 'Prokaryotes' };
+  const disagreement = gradeAnswer(exercise, swapped);
+  assert.equal(disagreement.status, 'disagrees');
+  assert.match(disagreement.detail, /Telomerase present.*solver: "Prokaryotes"; key: "Eukaryotes"/);
+
+  assert.equal(gradeAnswer(exercise, 'Prokaryotes').status, 'unrecognized', 'a bare string is a solver slip');
+  assert.equal(gradeAnswer(exercise, { ...right, 'Telomerase present': 'Ribosomes' }).status, 'unrecognized', 'an unknown bin is a solver slip');
+  const { 'PCNA sliding clamp': dropped, ...partial } = right;
+  assert.equal(gradeAnswer(exercise, partial).status, 'unrecognized', 'a missing item is a solver slip');
+});

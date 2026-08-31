@@ -14,19 +14,19 @@
 ## Coverage
 
 - Books with mapped sections: 1
-- Numbered sections mapped: 44
-- Metadata matched without a flag: 44
+- Numbered sections mapped: 51
+- Metadata matched without a flag: 51
 - Intentional adaptations adjudicated: 0
 - Unresolved sections needing review: 0
 - Modules differing from the committed map: 0
-- Objectives automatically located: 129/129
-- Core instructional headings automatically located: 132/132
-- Local interactive questions inventoried: 473
+- Objectives automatically located: 156/156
+- Core instructional headings automatically located: 158/158
+- Local interactive questions inventoried: 583
 - Upstream Try It prompts with a likely local prompt match: n/a
 
 | Book | Bundle | Authoring status | Chapters | Sections mapped |
 |---|---|---|---:|---:|
-| biology | `biology-bundle` | in-progress | 10/47 | 44/208 |
+| biology | `biology-bundle` | in-progress | 13/47 | 51/208 |
 
 The prose percentage is five-word source-shingle traceability, not a quality
 score. Low values can reflect disclosed condensation, reformatted mathematics,
@@ -57,7 +57,7 @@ or intentionally omitted print material.
 | [biology 5.3](../../content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/03-active-transport.md) | `m66375` | metadata matched | 2/2 | 3/3 | 93% | 0/0 | 16 |
 | [biology 5.4](../../content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/04-bulk-transport.md) | `m66376` | metadata matched | 2/2 | 2/2 | 97% | 0/0 | 9 |
 | [biology 6.1](../../content/life-health-sciences/biology/06-metabolism/01-energy-and-metabolism.md) | `m66457` | metadata matched | 2/2 | 2/2 | 96% | 0/0 | 8 |
-| [biology 6.2](../../content/life-health-sciences/biology/06-metabolism/02-potential-kinetic-free-and-activation-energy.md) | `m66459` | metadata matched | 4/4 | 3/3 | 67% | 0/0 | 14 |
+| [biology 6.2](../../content/life-health-sciences/biology/06-metabolism/02-potential-kinetic-free-and-activation-energy.md) | `m66459` | metadata matched | 4/4 | 3/3 | 68% | 0/0 | 14 |
 | [biology 6.3](../../content/life-health-sciences/biology/06-metabolism/03-the-laws-of-thermodynamics.md) | `m66461` | metadata matched | 2/2 | 2/2 | 98% | 0/0 | 7 |
 | [biology 6.4](../../content/life-health-sciences/biology/06-metabolism/04-atp-adenosine-triphosphate.md) | `m66462` | metadata matched | 2/2 | 0/0 | 100% | 0/0 | 7 |
 | [biology 6.5](../../content/life-health-sciences/biology/06-metabolism/05-enzymes.md) | `m66463` | metadata matched | 3/3 | 2/2 | 98% | 0/0 | 11 |
@@ -80,3 +80,10 @@ or intentionally omitted print material.
 | [biology 10.3](../../content/life-health-sciences/biology/10-cell-reproduction/03-control-of-the-cell-cycle.md) | `m66479` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 12 |
 | [biology 10.4](../../content/life-health-sciences/biology/10-cell-reproduction/04-cancer-and-the-cell-cycle.md) | `m66480` | metadata matched | 4/4 | 2/2 | 94% | 0/0 | 13 |
 | [biology 10.5](../../content/life-health-sciences/biology/10-cell-reproduction/05-prokaryotic-cell-division.md) | `m66481` | metadata matched | 2/2 | 1/1 | 98% | 0/0 | 9 |
+| [biology 11.1](../../content/life-health-sciences/biology/11-meiosis-and-sexual-reproduction/01-the-process-of-meiosis.md) | `m66483` | metadata matched | 4/4 | 3/3 | 97% | 0/0 | 21 |
+| [biology 11.2](../../content/life-health-sciences/biology/11-meiosis-and-sexual-reproduction/02-sexual-reproduction.md) | `m66484` | metadata matched | 3/3 | 1/1 | 95% | 0/0 | 14 |
+| [biology 12.1](../../content/life-health-sciences/biology/12-mendels-experiments-and-heredity/01-mendels-experiments-and-the-laws-of-probability.md) | `m66486` | metadata matched | 3/3 | 4/4 | 98% | 0/0 | 12 |
+| [biology 12.2](../../content/life-health-sciences/biology/12-mendels-experiments-and-heredity/02-characteristics-and-traits.md) | `m66487` | metadata matched | 4/4 | 3/3 | 96% | 0/0 | 19 |
+| [biology 12.3](../../content/life-health-sciences/biology/12-mendels-experiments-and-heredity/03-laws-of-inheritance.md) | `m66488` | metadata matched | 4/4 | 6/6 | 97% | 0/0 | 15 |
+| [biology 13.1](../../content/life-health-sciences/biology/13-modern-understandings-of-inheritance/01-chromosomal-theory-and-genetic-linkage.md) | `m66491` | metadata matched | 5/5 | 2/2 | 96% | 0/0 | 12 |
+| [biology 13.2](../../content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md) | `m66494` | metadata matched | 4/4 | 7/7 | 98% | 0/0 | 17 |

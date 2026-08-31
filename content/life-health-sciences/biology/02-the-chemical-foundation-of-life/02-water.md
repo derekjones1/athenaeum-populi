@@ -177,7 +177,21 @@ Water is the most abundant molecule in the Earth's atmosphere.
   hint="Water's value for this, one calorie, is unusually high among common liquids."
 >}}
 
+{{< textin
+  question="Water also exhibits a ________, which is key to how organisms cool themselves by evaporating sweat."
+  answer="high heat of vaporization"
+  accept="high heat of vaporisation"
+  hint="This is the amount of energy required to change one gram of a liquid to a gas — the property that lets organisms cool by evaporating sweat."
+>}}
+
 ### Explain why water is an excellent solvent
+
+{{< textin
+  question="________ allow ions and other polar molecules to dissolve in water. Therefore, water is an excellent solvent."
+  answer="Hydrogen bonds"
+  accept="hydrogen bonding"
+  hint="The summary opens its solvent discussion by naming the weak bond between water's slightly positive and slightly negative charges."
+>}}
 
 {{< textin
   question="A substance capable of dissolving other polar molecules and ionic compounds is called a ________."
@@ -196,6 +210,9 @@ Water is the most abundant molecule in the Earth's atmosphere.
 
 {{< selfcheck question="Why can some insects walk on water?" hint="Think about the property that lets water resist rupturing at its surface, and where that property comes from." >}}
 Some insects can walk on water, although they are heavier (denser) than water, because of the surface tension of water. Surface tension results from cohesion, or the attraction between water molecules at the surface of the body of water (the liquid-air/gas interface).
+===CHECKS===
+some insects can walk on water, although they are heavier (denser) than water, because of the surface tension of water
+surface tension results from cohesion, or the attraction between water molecules at the surface of the body of water
 {{< /selfcheck >}}
 
 {{< textin
@@ -248,8 +265,12 @@ Acids donate hydroxide ions (OH⁻); bases donate hydrogen ions (H⁺).
 
 {{< selfcheck question="Discuss how buffers help prevent drastic swings in pH." hint="Think about what a buffer does with free hydrogen ions and hydroxide ions as they appear in solution." >}}
 Buffers absorb the free hydrogen ions and hydroxide ions that result from chemical reactions. Because they can bond these ions, they prevent increases or decreases in pH. An example of a buffer system is the bicarbonate system in the human body. This system is able to absorb hydrogen and hydroxide ions to prevent changes in pH and keep cells functioning properly.
+===CHECKS===
+buffers absorb the free hydrogen ions and hydroxide ions that result from chemical reactions
+because they can bond these ions, they prevent increases or decreases in pH
+the bicarbonate system in the human body is able to absorb hydrogen and hydroxide ions to prevent changes in pH
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 2.2: Water](https://openstax.org/books/biology-2e/pages/2-2-water) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the sodium/chloride hydration-shell figure's alt text rewritten to remove a duplicated, garbled clause in the source attribute; the pH-scale figure's alt shortened to an overview with a new extended description walking the scale from 0 to 14 with its example substances, and an extended description added to the blood-buffering diagram naming the chemical species in each box and the direction of each colored arrow; the display equation for water's dissociation set as a Unicode text line rather than typeset math; three Link to Learning notes rendered as callouts with descriptive link text in place of "click here" or a bare embedded video; in-text references to figures changed from the source's numbered pointers to descriptive phrases ("the figure below"), since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and five key-term recall items (specific heat capacity, solvent, sphere of hydration, cohesion, capillary action) added from the glossary to round out the objective groups.</small>
+<small>This section is adapted from [Biology 2e, Section 2.2: Water](https://openstax.org/books/biology-2e/pages/2-2-water) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the sodium/chloride hydration-shell figure's alt text rewritten to remove a duplicated, garbled clause in the source attribute; the pH-scale figure's alt shortened to an overview with a new extended description walking the scale from 0 to 14 with its example substances, and an extended description added to the blood-buffering diagram naming the chemical species in each box and the direction of each colored arrow; the display equation for water's dissociation set as a Unicode text line rather than typeset math; three Link to Learning notes rendered as callouts with descriptive link text in place of "click here" or a bare embedded video; in-text references to figures changed from the source's numbered pointers to descriptive phrases ("the figure below"), since Hugo does not number figures; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and five key-term recall items (specific heat capacity, solvent, sphere of hydration, cohesion, capillary action) added from the glossary to round out the objective groups; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and two summary-derived textin cloze items added — one under the first objective from the section summary's own sentence on water's high heat of vaporization, and one under the second objective from the section summary's own sentence naming hydrogen bonds as what lets ions and other polar molecules dissolve in water — since the module's four keyed Review Questions and two keyed Critical Thinking Questions had already been used in full.</small>

@@ -170,6 +170,7 @@ export const PAIRED_SHORTCODES = Object.freeze({
   callout: true,
   textin: false,
   selfcheck: true,
+  sortbins: true,
   mediafigure: true,
 });
 

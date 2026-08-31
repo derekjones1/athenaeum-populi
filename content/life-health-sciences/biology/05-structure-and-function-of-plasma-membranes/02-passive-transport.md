@@ -124,6 +124,10 @@ Three different scenarios involving red blood cells (RBC) are shown. Left: A RBC
 
 {{< selfcheck question="A doctor injects a patient with what the doctor thinks is an isotonic saline solution. The patient dies, and an autopsy reveals that many red blood cells have been destroyed. Do you think the solution the doctor injected was really isotonic?" hint="Compare the solution's osmolarity to that of the red blood cells' cytoplasm — which direction would water move if the solution were not truly isotonic?" >}}
 No, it must have been hypotonic, as a hypotonic solution would cause water to enter the cells, thereby making them burst.
+===CHECKS===
+no, it must have been hypotonic
+a hypotonic solution would cause water to enter the cells
+making them burst
 {{< /selfcheck >}}
 
 {{< callout type="info" >}}
@@ -238,14 +242,28 @@ from an area with a low concentration of water to higher concentration
 
 {{< selfcheck question="Which explanation identifies how the following affect the rate of diffusion: molecular size, temperature, solution density, and the distance that must be traveled?" hint="Work through each factor in turn and ask whether it speeds molecules up, slows them down, or lengthens their path." >}}
 Heavy molecules move more slowly than lighter ones, since it takes more energy in the medium to move them along. Increasing or decreasing temperature increases or decreases the energy in the medium, affecting molecular movement. The denser a solution is, the harder it is for molecules to move through it, causing diffusion to slow down due to friction. Living cells require a steady supply of nutrients and a steady rate of waste removal; if the distance these substances need to travel is too great, diffusion cannot move nutrients and waste materials efficiently to sustain life.
+===CHECKS===
+heavy molecules move more slowly than lighter ones
+increasing or decreasing temperature increases or decreases the energy in the medium
+the denser a solution is, the harder it is for molecules to move through it
+if the distance these substances need to travel is too great, diffusion cannot move nutrients and waste materials efficiently
 {{< /selfcheck >}}
 
 {{< selfcheck question="Why does water move through a membrane?" hint="Think about what osmosis is a special case of, and what the solute in the system is unable to do." >}}
 Water moves through a membrane in osmosis because there is a concentration gradient across the membrane of solute and solvent. The solute cannot effectively move to balance the concentration on both sides of the membrane, so water moves to achieve this balance.
+===CHECKS===
+there is a concentration gradient across the membrane of solute and solvent
+the solute cannot effectively move to balance the concentration on both sides of the membrane
+water moves to achieve this balance
 {{< /selfcheck >}}
 
 {{< selfcheck question="Describe two ways that decreasing temperature would affect the rate of diffusion of molecules across a cell's plasma membrane." hint="Consider the kinetic energy of the diffusing molecules themselves, and separately, the state of the membrane they are diffusing through." >}}
 Decreasing temperature will decrease the kinetic energy in the system. A lower temperature means less energy in the molecules, so they will move at a slower speed. Lowering temperature also decreases the kinetic energy of the molecules in the plasma membrane, compressing them together. This increases the density of the plasma membrane, which slows diffusion into the cell.
+===CHECKS===
+decreasing temperature will decrease the kinetic energy in the system
+a lower temperature means less energy in the molecules, so they will move at a slower speed
+lowering temperature also decreases the kinetic energy of the molecules in the plasma membrane, compressing them together
+this increases the density of the plasma membrane, which slows diffusion into the cell
 {{< /selfcheck >}}
 
 {{< textin
@@ -269,10 +287,18 @@ Their bodies tend to lose too much water to their environment.
 
 {{< selfcheck question="Both of the regular intravenous solutions administered in medicine, normal saline and lactated Ringer's solution, are isotonic. Why is this important?" hint="Think about what would happen to the osmotic balance of a patient's blood and tissues if the injected fluid were not isotonic." >}}
 Injection of isotonic solutions ensures that there will be no perturbation of the osmotic balance, and no water taken from tissues or added to them from the blood.
+===CHECKS===
+injection of isotonic solutions ensures that there will be no perturbation of the osmotic balance
+no water taken from tissues or added to them from the blood
 {{< /selfcheck >}}
 
 {{< selfcheck question="A cell develops a mutation in its potassium channels that prevents the ions from leaving the cell. If the cell's aquaporins are still active, what will happen to the cell? Be sure to describe the tonicity and osmolarity of the cell." hint="Work out what happens to the cell's own osmolarity first, then ask which way water will move relative to the extracellular fluid." >}}
 Without functional potassium channels, the potassium ions that are pumped into the cell will accumulate. This increases the osmolarity inside the cell, creating a hypotonic solution. Since the plasma membrane is still selectively permeable to water by the aquaporins, water will flow into the cell. If the potassium concentration is high enough, enough water will eventually flow into the cell to lyse it.
+===CHECKS===
+the potassium ions that are pumped into the cell will accumulate
+this increases the osmolarity inside the cell, creating a hypotonic solution
+water will flow into the cell
+enough water will eventually flow into the cell to lyse it
 {{< /selfcheck >}}
 
 {{< textin
@@ -295,4 +321,4 @@ Without functional potassium channels, the potassium ions that are pumped into t
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 5.2: Passive Transport](https://openstax.org/books/biology-2e/pages/5-2-passive-transport) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with six of the nine re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the membrane cross-section, the diffusion-over-time illustration, the gated-channel and carrier-protein illustrations, the osmosis beaker illustration, and the plant-cell tonicity schematic are all labeled line drawings, not photographs; only the wilted-versus-healthy plant photograph and the paramecium micrograph are true photos, and both were already correctly kinded); an extended description added for the four figures that are labeled diagrams whose full reading is not carried by their captions (the membrane cross-section, the gated-channel-protein diagram, the carrier-protein diagram, and the plant-cell tonicity schematic); inline references to figures changed from the source's print numbers ("Figure 5.7," parenthetical empty cross-references) to the descriptive phrase "below" since figures are not numbered here; the two feature boxes (one Visual Connection, one Link to Learning) kept in place, with the Link to Learning's link text expanded from the source's bare "site" to describe its destination; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and six key-term recall items (passive transport, facilitated transport, osmosis, tonicity, hypotonic, isotonic) added from the glossary to round out every objective group with an auto-graded item.</small>
+<small>This section is adapted from [Biology 2e, Section 5.2: Passive Transport](https://openstax.org/books/biology-2e/pages/5-2-passive-transport) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with six of the nine re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the membrane cross-section, the diffusion-over-time illustration, the gated-channel and carrier-protein illustrations, the osmosis beaker illustration, and the plant-cell tonicity schematic are all labeled line drawings, not photographs; only the wilted-versus-healthy plant photograph and the paramecium micrograph are true photos, and both were already correctly kinded); an extended description added for the four figures that are labeled diagrams whose full reading is not carried by their captions (the membrane cross-section, the gated-channel-protein diagram, the carrier-protein diagram, and the plant-cell tonicity schematic); inline references to figures changed from the source's print numbers ("Figure 5.7," parenthetical empty cross-references) to the descriptive phrase "below" since figures are not numbered here; the two feature boxes (one Visual Connection, one Link to Learning) kept in place, with the Link to Learning's link text expanded from the source's bare "site" to describe its destination; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and six key-term recall items (passive transport, facilitated transport, osmosis, tonicity, hypotonic, isotonic) added from the glossary to round out every objective group with an auto-graded item; and rubric checkpoints added to each self-check, including the body one, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

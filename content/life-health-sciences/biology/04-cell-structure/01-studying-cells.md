@@ -103,7 +103,18 @@ organ
 
 {{< selfcheck question="Trace how cells build up to form a whole organism, naming each level in between." hint="Follow the hierarchy the section describes, from a single cell to the whole body." >}}
 Several cells of one kind that interconnect with each other and perform a shared function form a tissue. Tissues combine to form an organ, such as the stomach, heart, or brain, and several organs make up an organ system, such as the digestive, circulatory, or nervous system. Several systems that function together form an organism, such as a human being.
+===CHECKS===
+cells of one kind that interconnect with each other and perform a shared function form a tissue
+tissues combine to form an organ
+several organs make up an organ system
+several systems that function together form an organism
 {{< /selfcheck >}}
+
+{{< textin
+  question="A cell is the ________ unit of life."
+  answer="smallest"
+  hint="This is the section's opening sentence, distinct from the cell theory's own \"basic unit of life\" wording."
+>}}
 
 ### Compare and contrast light microscopy and electron microscopy
 
@@ -134,18 +145,32 @@ high temperatures
 
 {{< selfcheck question="In your everyday life, you have probably noticed that certain instruments are ideal for certain situations. For example, you would use a spoon rather than a fork to eat soup because a spoon is shaped for scooping, while soup would slip between the tines of a fork. The use of ideal instruments also applies in science. In what situation(s) would the use of a light microscope be ideal, and why?" hint="Light microscopes let you view a living specimen without killing it first." >}}
 A light microscope would be ideal when viewing a small living organism, especially when the cell has been stained to reveal details.
+===CHECKS===
+ideal when viewing a small living organism
+the cell has been stained to reveal details
 {{< /selfcheck >}}
 
 {{< selfcheck question="In what situation(s) would the use of a scanning electron microscope be ideal, and why?" hint="Think about which kind of electron microscope images a cell's outer surface rather than its interior." >}}
 A scanning electron microscope would be ideal when you want to view the minute details of a cell's surface, because its beam of electrons moves back and forth over the surface to convey the image.
+===CHECKS===
+ideal when you want to view the minute details of a cell's surface
+its beam of electrons moves back and forth over the surface
 {{< /selfcheck >}}
 
 {{< selfcheck question="In what situation(s) would a transmission electron microscope be ideal, and why?" hint="This type of electron microscope sends its beam all the way through the specimen rather than scanning its surface." >}}
 A transmission electron microscope would be ideal for viewing the cell's internal structures, because many of the internal structures have membranes that are not visible by the light microscope.
+===CHECKS===
+ideal for viewing the cell's internal structures
+many of the internal structures have membranes that are not visible by the light microscope
 {{< /selfcheck >}}
 
 {{< selfcheck question="What are the advantages and disadvantages of each of these types of microscopes?" hint="Weigh accessibility and the ability to keep the specimen alive against the amount of detail each instrument can reveal." >}}
 The advantages of light microscopes are that they are easily obtained, and the light beam does not kill the cells. However, typical light microscopes are somewhat limited in the amount of detail they can reveal. Electron microscopes are ideal because you can view intricate details, but they are bulky and costly, and preparation for the microscopic examination kills the specimen.
+===CHECKS===
+light microscopes are easily obtained
+the light beam does not kill the cells
+light microscopes are somewhat limited in the amount of detail they can reveal
+preparation for the microscopic examination kills the specimen
 {{< /selfcheck >}}
 
 ### Summarize cell theory
@@ -157,10 +182,27 @@ The advantages of light microscopes are that they are easily obtained, and the l
   hint="Schleiden and Schwann proposed it in the late 1830s; Virchow later made important contributions to it."
 >}}
 
+{{< multiplechoice
+  question="According to the unified cell theory, new cells arise from ________."
+  answer="existing cells"
+  hint="This is the theory's third tenet — think about where a new cell's material ultimately comes from."
+>}}
+spontaneous generation
+existing cells
+non-living matter
+viral infection
+{{< /multiplechoice >}}
+
 {{< selfcheck question="Explain how the formation of an adult human follows the cell theory." hint="Start from a single fertilized cell and track how every added cell after that arises." >}}
 The cell theory states that all living things are made of cells, that the cell is the most basic unit of life, and that new cells arise from existing cells. All humans are multicellular organisms whose smallest building blocks are cells. Adult humans begin with the fusion of a male gamete cell with a female gamete cell to form a fertilized egg, a single cell. That cell then divides into two cells, which each divide into two more cells, and so forth, until all the cells of a human embryo are made. As the embryo passes through all the developmental stages to make an adult human, the cells that are added arise from division of existing cells.
+===CHECKS===
+all living things are made of cells
+the cell is the most basic unit of life
+new cells arise from existing cells
+begin with the fusion of a male gamete cell with a female gamete cell to form a fertilized egg
+the cells that are added arise from division of existing cells
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 4.1: Studying Cells](https://openstax.org/books/biology-2e/pages/4-1-studying-cells) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (all three photographic — two micrographs and one photo of physical instruments — matching the manifest's guess, so none were re-kinded); inline references to figures changed from the source's print numbers ("Figure 4.2a," "Figure 4.3," "Figure 4.4") to "above"/"below" since figures are not numbered here; the two Link to Learning/interactive notes and the Career Connection feature box rendered as callouts with their bold names, the Career Connection's own title set in italics beside the bold name, and its figure kept inside the same callout as in the source; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items (light microscope, electron microscope, unified cell theory) added from the glossary to round out two objective groups with an auto-graded item; because no end-of-section exercise or glossary term addresses the "role of cells in organisms" objective, its group holds the source's "basic unit of life" review question plus one self-check written directly from the section's own cell-tissue-organ-organism paragraph (no new claims), disclosed here since it is not itself a keyed source item.</small>
+<small>This section is adapted from [Biology 2e, Section 4.1: Studying Cells](https://openstax.org/books/biology-2e/pages/4-1-studying-cells) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP (all three photographic — two micrographs and one photo of physical instruments — matching the manifest's guess, so none were re-kinded); inline references to figures changed from the source's print numbers ("Figure 4.2a," "Figure 4.3," "Figure 4.4") to "above"/"below" since figures are not numbered here; the two Link to Learning/interactive notes and the Career Connection feature box rendered as callouts with their bold names, the Career Connection's own title set in italics beside the bold name, and its figure kept inside the same callout as in the source; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items (light microscope, electron microscope, unified cell theory) added from the glossary to round out two objective groups with an auto-graded item; because no end-of-section exercise or glossary term addresses the "role of cells in organisms" objective, its group holds the source's "basic unit of life" review question plus one self-check written directly from the section's own cell-tissue-organ-organism paragraph (no new claims), disclosed here since it is not itself a keyed source item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and two summary-derived recall items added, one under each objective the summary sentences reach but the source's own exercises did not fully round out to three items apiece ("smallest unit of life" under the first objective, "new cells arise from existing cells" as a multiple choice under the third).</small>

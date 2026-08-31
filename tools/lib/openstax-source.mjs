@@ -538,6 +538,17 @@ function localInteractions(body) {
       answer: params.answerDisplay || params.answer || '',
     });
   }
+  // sortbins is paired; its JSON inner (bins, items, assignments) is both
+  // the exercise body and the key, so it stands in for the answer.
+  for (const match of body.matchAll(/\{\{<\s*sortbins\b([\s\S]*?)>\}\}([\s\S]*?)\{\{<\s*\/sortbins\s*>\}\}/g)) {
+    const params = shortcodeParams(match[1]);
+    matches.push({
+      index: match.index,
+      type: 'sortbins',
+      question: params.question || '',
+      answer: normalizeWhitespace(match[2]),
+    });
+  }
   // selfcheck is paired and has no answer param at all — its inner Markdown
   // content (the model answer a learner reveals) stands in for the answer.
   for (const match of body.matchAll(/\{\{<\s*selfcheck\b([\s\S]*?)>\}\}([\s\S]*?)\{\{<\s*\/selfcheck\s*>\}\}/g)) {
@@ -630,6 +641,7 @@ export function parseLocalSection(markdown) {
       multipleChoice: (body.match(/\{\{<\s*multiplechoice\b/g) || []).length,
       graphPlots: (body.match(/\{\{<\s*graphplot\b/g) || []).length,
       inlineSvgs: (body.match(/<svg\b/g) || []).length,
+      sortbins: (body.match(/\{\{<\s*sortbins\b/g) || []).length,
       markdownTables: (body.match(/^\|.*\|\s*$/gm) || []).length,
     },
   };

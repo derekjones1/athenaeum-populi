@@ -408,7 +408,55 @@ Publishing lets other scientists verify, challenge, and reproduce the work.
 
 `question` and an optional `hint` are the only params; `answer`, `accept`,
 and `answerDisplay` are rejected — a self-check has no key. The inner content
-is the model answer, in Markdown.
+is the model answer, in Markdown. The inner content may end with a
+`===CHECKS===` line followed by 2–6 rubric checkpoints — one clause of the
+model answer per line, rendered as check-off boxes ("Did your answer
+mention:") under the revealed model answer, so self-marking is against a
+checklist instead of a wall of prose:
+
+```
+{{</* selfcheck question="Why do scientists publish their results?" hint="Think about verification." */>}}
+Publishing lets other scientists verify, challenge, and reproduce the work.
+===CHECKS===
+other scientists verify the work
+challenge and reproduce the work
+{{</* /selfcheck */>}}
+```
+
+Checkpoints restate the model answer, never extend it — the lint holds each
+clause to the model answer's own words — and contain no `$` math (they are
+checkbox labels). Still ungraded and unstored.
+
+**Sort into bins (`sortbins`)** — categorize 4–12 items into 2–4 labelled
+bins, graded in the browser as the label→bin mapping. Built from a source
+comparison table (the bins are the table's data columns); the config is JSON
+in the body, like `graphplot`:
+
+```
+{{</* sortbins question="Assign each replication property to the cell type it describes." hint="Think about chromosome shape and chromosome ends." */>}}
+{"bins": ["Prokaryotes", "Eukaryotes"],
+ "items": [
+  {"label": "Single origin of replication", "bin": 0},
+  {"label": "Telomerase present", "bin": 1},
+  {"label": "DNA polymerase III elongates strands", "bin": 0},
+  {"label": "PCNA sliding clamp", "bin": 1}]}
+{{</* /sortbins */>}}
+```
+
+`bins` is 2–4 unique labels; `items` is 4–12 `{label, bin}` entries with
+`bin` a 0-based index into `bins`. Every bin owns at least one item and none
+owns more than two-thirds of them (all-in-one-bin is not an exercise).
+Author the items INTERLEAVED, never grouped by bin — the no-JS shell prints
+authored order, so grouped order leaks the key, and the lint rejects it
+(there is no runtime shuffle by design; the JS-free shell stays honest). No
+`$` math anywhere — item and bin labels become button names, and a button
+has no spoken-math name — and no bin-label content word may appear in an
+item label (the giveaway rule, textin's answer-in-question hazard in bin
+form). Interaction is click-to-pick-up, "Place here" per bin, "Check bins"
+to grade — keyboard-complete with no drag. Grading is partial-credit and
+diagnostic: misplaced items return to the tray with a "N of M placed
+correctly" count. Which source tables qualify and how the source cross-check
+reads them are subject-specific; see `docs/subjects/biology.md`.
 
 **Media figure (`mediafigure`)** — a vendored raster figure (photo,
 micrograph, diagram) with its alt text, caption, and optional extended
@@ -451,6 +499,14 @@ group heading repeats its objective verbatim; the lint compares them ignoring
 case, spacing, and trailing punctuation. A section needs at least five
 exercises overall, so a one- or two-objective section carries more than the
 per-objective minimum:
+
+Floors are per book. The defaults above — at least two interactive
+exercises per objective group, at least five per section — hold everywhere,
+and a book may publish a HIGHER floor in the lint's per-book table once its
+corpus already meets it (the retrofit lands first, then the rule, never a
+grandfathered warning). Biology's floor is three exercises per
+objective group and eight per section, landed with the practice retrofit;
+see `docs/subjects/biology.md`.
 
 ```md
 ## Practice
@@ -590,7 +646,7 @@ carried zero of each, and the warning channel was deleted with them. There is
 no non-blocking rule left in the repository and no category of
 known-defective content to grandfather.
 
-The Practice retrofit that used to live here is finished. All 318 mapped
+The Practice retrofit that used to live here is finished. All 325 mapped
 sections carry the block (the documentation test pins that count to the live
 map, so authoring a new mapped section means bumping it here). The final
 block landed on August 9, 2026; the lint rule was promoted from a warning to

@@ -279,10 +279,19 @@ four
 
 {{< selfcheck question="What property of carbon makes it essential for organic life?" hint="Think about how many covalent bonds a single carbon atom can form and what that lets it build." >}}
 Carbon is unique and found in all living things because it can form up to four covalent bonds between atoms or molecules. These can be nonpolar or polar covalent bonds, and they allow for the formation of long chains of carbon molecules that combine to form proteins and DNA.
+===CHECKS===
+carbon can form up to four covalent bonds between atoms or molecules
+these can be nonpolar or polar covalent bonds
+they allow for the formation of long chains of carbon molecules that combine to form proteins and DNA
 {{< /selfcheck >}}
 
 {{< selfcheck question="Compare and contrast saturated and unsaturated triglycerides." hint="Think about whether a double bond is present between carbon atoms, and how that affects whether the fat is liquid or solid at room temperature." >}}
 Saturated triglycerides contain no double bonds between carbon atoms; they are usually solid at room temperature. Unsaturated triglycerides contain at least one double bond between carbon atoms and are usually liquid at room temperature.
+===CHECKS===
+saturated triglycerides contain no double bonds between carbon atoms
+saturated triglycerides are usually solid at room temperature
+unsaturated triglycerides contain at least one double bond between carbon atoms
+unsaturated triglycerides are usually liquid at room temperature
 {{< /selfcheck >}}
 
 ### Describe the role of functional groups in biological molecules
@@ -312,6 +321,12 @@ carbonyl
   hint="Pyridine, with a nitrogen in its ring, is an example."
 >}}
 
+{{< textin
+  question="Functional groups are groups of atoms that confer specific properties to hydrocarbon (or substituted hydrocarbon) chains or rings that define their overall ________."
+  answer="chemical characteristics and function"
+  hint="This is the last clause of the section summary's closing sentence — what a functional group ultimately shapes about the molecule it's attached to."
+>}}
+
 ---
 
-<small>This section is adapted from [Biology 2e, Section 2.3: Carbon](https://openstax.org/books/biology-2e/pages/2-3-carbon) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, all eight set to `kind="diagram"` (the manifest's file-extension guess called six of them photos, but every figure here is a drawn or rendered molecular structure, not a photograph); a longer extended description added to each figure, since a structural formula's meaning is not in its caption; the alt text for the ethane/ethene, isomers, and functional-groups-table figures shortened from source alts of over 600 characters, with the full detail moved into the extended description, and the methane figure's alt rewritten to describe both of its panels; chemical formulas and ions rendered as Unicode sub/superscripts in prose (CH₄, C₄H₁₀, H⁺, COO⁻); the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and three key-term recall items added from the glossary (hydrocarbon under the first objective; functional group and substituted hydrocarbon under the second) to round out the groups.</small>
+<small>This section is adapted from [Biology 2e, Section 2.3: Carbon](https://openstax.org/books/biology-2e/pages/2-3-carbon) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, all eight set to `kind="diagram"` (the manifest's file-extension guess called six of them photos, but every figure here is a drawn or rendered molecular structure, not a photograph); a longer extended description added to each figure, since a structural formula's meaning is not in its caption; the alt text for the ethane/ethene, isomers, and functional-groups-table figures shortened from source alts of over 600 characters, with the full detail moved into the extended description, and the methane figure's alt rewritten to describe both of its panels; chemical formulas and ions rendered as Unicode sub/superscripts in prose (CH₄, C₄H₁₀, H⁺, COO⁻); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); three key-term recall items added from the glossary (hydrocarbon under the first objective; functional group and substituted hydrocarbon under the second) to round out the groups; the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived textin cloze added under the second objective from the section summary's closing sentence on what functional groups define about a molecule's chains or rings.</small>

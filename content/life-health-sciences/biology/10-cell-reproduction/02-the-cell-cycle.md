@@ -229,6 +229,10 @@ separation of sister chromatids
 
 {{< selfcheck question="Briefly describe the events that occur in each phase of interphase." hint="Work through the three stages of interphase in order and note what changes biochemically in each one, even though the cell looks the same under a microscope." >}}
 During G₁, the cell increases in size, the genomic DNA is assessed for damage, and the cell stockpiles energy reserves and the components to synthesize DNA. During the S phase, the chromosomes, the centrosomes, and the centrioles (animal cells) duplicate. During the G₂ phase, the cell recovers from the S phase, continues to grow, duplicates some organelles, and dismantles other organelles.
+===CHECKS===
+in G1 the cell grows and stockpiles energy reserves and components to synthesize DNA
+in the S phase the chromosomes and centrosomes duplicate
+in G2 the cell continues to grow and duplicates some organelles
 {{< /selfcheck >}}
 
 ### Discuss the behavior of chromosomes during karyokinesis/mitosis
@@ -290,10 +294,18 @@ anaphase
 
 {{< selfcheck question="Chemotherapy drugs such as *vincristine* (derived from Madagascar periwinkle plants) and *colchicine* (derived from autumn crocus plants) disrupt mitosis by binding to tubulin (the subunit of microtubules) and interfering with microtubule assembly and disassembly. Exactly what mitotic structure is targeted by these drugs and what effect would that have on cell division?" hint="Ask what structure both drugs bind, then think about what that structure does during mitosis." >}}
 The mitotic spindle is formed of microtubules. Microtubules are polymers of the protein tubulin; therefore, it is the mitotic spindle that is disrupted by these drugs. Without a functional mitotic spindle, the chromosomes will not be sorted or separated during mitosis. The cell will arrest in mitosis and die.
+===CHECKS===
+the mitotic spindle is the structure disrupted
+chromosomes will not be sorted or separated
+the cell will arrest in mitosis and die
 {{< /selfcheck >}}
 
 {{< selfcheck question="What cell-cycle events will be affected in a cell that produces mutated (non-functional) cohesin protein?" hint="Cohesin's job is to hold sister chromatids together after replication — trace forward what would go wrong at each dependent step of mitosis." >}}
 If cohesin is not functional, chromosomes are not packaged after DNA replication in the S phase of interphase. It is likely that the proteins of the centromeric region, such as the kinetochore, would not form. Even if the mitotic spindle fibers could attach to the chromatids without packing, the chromosomes would not be sorted or separated during mitosis.
+===CHECKS===
+chromosomes are not packaged after DNA replication
+the kinetochore would not form
+chromosomes would not be sorted or separated during mitosis
 {{< /selfcheck >}}
 
 ### Explain how the cytoplasmic content is divided during cytokinesis
@@ -309,15 +321,42 @@ cleavage furrow
 mitotic spindle
 {{< /multiplechoice >}}
 
+{{< textin
+  question="In animal cell cytokinesis, the cytoplasmic contents are separated by a contracting ring of ________."
+  answer="actin"
+  accept="actin filaments|actin fibers"
+  hint="The same protein that pairs with myosin in muscle; its filament ring pulls the cell's equator inward."
+>}}
+
 {{< selfcheck question="Describe the similarities and differences between the cytokinesis mechanisms found in animal cells versus those in plant cells." hint="Consider the rigid cell wall unique to plant cells and what that means for how they can partition their cytoplasm." >}}
 There are very few similarities between animal cell and plant cell cytokinesis. In animal cells, a ring of actin fibers is formed around the periphery of the cell at the former metaphase plate (cleavage furrow). The actin ring contracts inward, pulling the plasma membrane toward the center of the cell until the cell is pinched in two. In plant cells, a new cell wall must be formed between the daughter cells. Due to the rigid cell walls of the parent cell, contraction of the middle of the cell is not possible. Instead, a phragmoplast first forms. Subsequently, a cell plate is formed in the center of the cell at the former metaphase plate. The cell plate is formed from Golgi vesicles that contain enzymes, proteins, and glucose. The vesicles fuse and the enzymes build a new cell wall from the proteins and glucose. The cell plate grows toward and eventually fuses with the cell wall of the parent cell.
+===CHECKS===
+in animal cells a ring of actin fibers contracts inward
+the cell is pinched in two
+in plant cells a new cell wall must be formed
+a cell plate is formed from Golgi vesicles
 {{< /selfcheck >}}
 
 ### Define the quiescent G₀ phase
 
 {{< selfcheck question="List some reasons why a cell that has just completed cytokinesis might enter the G₀ phase instead of the G₁ phase." hint="Think about what a cell 'checks' before it commits to another round of division, and what happens if those conditions are not met." >}}
 Many cells temporarily enter G₀ until they reach maturity. Some cells are only triggered to enter G₁ when the organism needs to increase that particular cell type. Some cells only reproduce following an injury to the tissue. Some cells never divide once they reach maturity.
+===CHECKS===
+many cells temporarily enter G₀ until they reach maturity
+some cells only reproduce following an injury
+some cells never divide once they reach maturity
 {{< /selfcheck >}}
+
+{{< multiplechoice
+  question="Mature cardiac muscle and nerve cells that rarely or never divide remain permanently in which phase?"
+  answer="G₀ phase"
+  hint="The quiescent phase sits outside the cycle — these cells have exited the cycle for good."
+>}}
+G₁ phase
+G₀ phase
+S phase
+G₂ phase
+{{< /multiplechoice >}}
 
 {{< textin
   question="A cell that is performing its normal functions but has not initiated preparations for cell division is described as ________."
@@ -328,4 +367,4 @@ hint="This is the state a cell is in during G₀ — think of the word's everyda
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 10.2: The Cell Cycle](https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with three of the six re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a molecular/cellular illustration, not a photograph); a longer extended description added for the five figures whose full labeled content is not carried by their captions (the cell-cycle wheel, the six-panel mitosis walkthrough, the kinetochore-and-spindle metaphase illustration, the two-panel cytokinesis comparison, and the scanning-technique/micrograph pair); inline references to figures and tables changed from the source's print numbers ("Figure 10.5," "Figure 10.6," "Table 10.1," etc.) to descriptive phrases ("below," "the table below," "the drawings of the stages shown above") since figures and tables are not numbered here; the Link to Learning's anchor text expanded from the source's generic "this site" to a description of the destination; feature boxes (one Link to Learning, one Scientific Method Connection) rendered as callouts with their bold names, the Scientific Method box's numbered procedure split around its own embedded figure and continued from step 5 rather than nesting the figure inside a list item, and its two data tables rendered as Markdown tables with their print captions kept as bold titles; the Visual Connection question kept in the body immediately after its figure and rendered as a multiple choice, since the source keys it to a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and one key-term recall item (quiescent) added from the glossary to give the G₀ objective group an auto-graded item, since no Review Question tests that objective directly.</small>
+<small>This section is adapted from [Biology 2e, Section 10.2: The Cell Cycle](https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with three of the six re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a molecular/cellular illustration, not a photograph); a longer extended description added for the five figures whose full labeled content is not carried by their captions (the cell-cycle wheel, the six-panel mitosis walkthrough, the kinetochore-and-spindle metaphase illustration, the two-panel cytokinesis comparison, and the scanning-technique/micrograph pair); inline references to figures and tables changed from the source's print numbers ("Figure 10.5," "Figure 10.6," "Table 10.1," etc.) to descriptive phrases ("below," "the table below," "the drawings of the stages shown above") since figures and tables are not numbered here; the Link to Learning's anchor text expanded from the source's generic "this site" to a description of the destination; feature boxes (one Link to Learning, one Scientific Method Connection) rendered as callouts with their bold names, the Scientific Method box's numbered procedure split around its own embedded figure and continued from step 5 rather than nesting the figure inside a list item, and its two data tables rendered as Markdown tables with their print captions kept as bold titles; the Visual Connection question kept in the body immediately after its figure and rendered as a multiple choice, since the source keys it to a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and one key-term recall item (quiescent) added from the glossary to give the G₀ objective group an auto-graded item, since no Review Question tests that objective directly; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; one summary-derived recall item (actin) added under the cytokinesis objective from the section summary's own sentence; and one locally written multiple choice (permanent G₀ residence of mature cardiac muscle and nerve cells) added under the G₀ objective, built strictly from the section's own sentence and disclosed in the ledger.</small>

@@ -15,6 +15,7 @@
  */
 
 import { parseGraphPlotConfig } from '../../assets/js/lib/math/graph-plot-config.mjs';
+import { parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
 // The real figure builders, so every authored apfigure spec is proven to
 // build at lint time — the browser can then only ever be handed a spec the
 // engine has already accepted.
@@ -114,6 +115,9 @@ import { parseObjectivesCallout } from '../lib/openstax-source.mjs';
 // duplicate-accept-member rules below reason about a textin answer exactly
 // the way check-text.mjs will grade it.
 import { normalizeText } from '../../assets/js/lib/text/check-text.mjs';
+// Coverage measure for selfcheck rubric checkpoints — the same token-set
+// coverage verify-source-keys holds model answers to.
+import { phraseCoverage } from '../lib/openstax-source.mjs';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -1123,6 +1127,11 @@ export function lintHugo(src, filename = '', options = {}) {
   const isKnowledgeCheck = /knowledge-check-\d+-\d+\.md$/.test(filename);
   const isRegularSection = /[/\\]content[/\\][^/\\]+[/\\][^/\\]+[/\\]\d{2}-[^/\\]+[/\\]\d{2}-[^/\\]+\.md$/i
     .test(filename.replace(/^\.?[/\\]?/, '/'));
+  // "shelf/book" for per-book rules (practice floors, rubric requirements):
+  // the two path segments after content/, or '' for a page outside a book.
+  const bookMatch = filename.replace(/^\.?[/\\]?/, '/')
+    .match(/[/\\]content[/\\]([^/\\]+)[/\\]([^/\\]+)[/\\]/);
+  const bookKey = bookMatch ? `${bookMatch[1]}/${bookMatch[2]}` : '';
 
   // ---- frontmatter YAML that Hugo cannot parse -----------------------------
   // A plain YAML scalar ends at its first `: `, so
@@ -1601,6 +1610,16 @@ export function lintHugo(src, filename = '', options = {}) {
       for (const fragment of malformedShortcodeParams(open)) {
         err(index, `${name}: parameter ${JSON.stringify(fragment)} is not \`name="value"\` — Hugo reads it but every tool here drops it, so the value would be graded by nothing`);
       }
+      // Hugo's shortcode parser refuses a raw newline inside a quoted param
+      // ("unterminated quoted string in shortcode parameter-argument") even
+      // though this repository's PARAM_VALUE grammar would read it — a
+      // multi-paragraph caption param once passed every tool here and killed
+      // the build. Join paragraphs with <br><br> instead.
+      for (const [param, { raw }] of Object.entries(shortcodeParamSpans(open))) {
+        if (raw.includes('\n')) {
+          err(index, `${name}: parameter ${JSON.stringify(param)} contains a raw newline — Hugo refuses an unterminated quoted string; keep the value on one line (join paragraphs with <br><br>)`);
+        }
+      }
     }
   }
 
@@ -1622,14 +1641,15 @@ export function lintHugo(src, filename = '', options = {}) {
   const graphplots = [...shortcodes(mediaSrc, 'graphplot')];
   const textins = [...shortcodes(mediaSrc, 'textin')];
   const selfchecks = [...shortcodes(mediaSrc, 'selfcheck')];
+  const sortbins = [...shortcodes(mediaSrc, 'sortbins')];
   // Auto-graded kinds only — a `selfcheck` has no key, so it never counts as
   // proof a learner mastered the objective on its own; it must share a group
   // with at least one graded item. `practiceQuestions` (below) still counts
   // selfchecks toward the raw practice-set size and consecutive-question
   // rules, since a self-check is still an interactive practice item.
-  const autoGradedQuestions = [...fillins, ...multiplechoices, ...graphplots, ...textins]
+  const autoGradedQuestions = [...fillins, ...multiplechoices, ...graphplots, ...textins, ...sortbins]
     .sort((a, b) => a.index - b.index);
-  const practiceQuestions = [...fillins, ...multiplechoices, ...graphplots, ...textins, ...selfchecks]
+  const practiceQuestions = [...fillins, ...multiplechoices, ...graphplots, ...textins, ...sortbins, ...selfchecks]
     .sort((a, b) => a.index - b.index);
 
   // ---- section-final Practice block ----------------------------------------
@@ -1647,8 +1667,24 @@ export function lintHugo(src, filename = '', options = {}) {
   // while the retrofit ran; the last of the 212 mapped sections landed on
   // August 9, 2026, so there is no longer a section the warning could name.
   // See docs/authoring-playbook.md, "The section-final Practice block".
-  const MIN_PER_OBJECTIVE = 2;
-  const MIN_PER_SECTION = 5;
+  // Practice floors are PER BOOK: different content earns different floors,
+  // and a book's raised floor lands as an error only once its corpus is
+  // clean (AGENTS.md: retrofit first, then the rule). The key is
+  // "shelf/book", exactly as mc-distribution.test.mjs keys its per-book
+  // fairness gate. `options.practiceFloors` lets a retrofit run (and the
+  // tests) exercise a floor before it is published here.
+  // Biology's raised floor landed with the practice retrofit (August 2026):
+  // every section carries rubric'd selfchecks, summary-derived items, and —
+  // where a source table supports one — a sortbins, so the corpus was clean
+  // before the number moved (AGENTS.md: retrofit first, then the rule).
+  const PRACTICE_FLOORS = {
+    default: { perObjective: 2, perSection: 5 },
+    'life-health-sciences/biology': { perObjective: 3, perSection: 8 },
+    ...(options.practiceFloors || {}),
+  };
+  const practiceFloor = PRACTICE_FLOORS[bookKey] || PRACTICE_FLOORS.default;
+  const MIN_PER_OBJECTIVE = practiceFloor.perObjective;
+  const MIN_PER_SECTION = practiceFloor.perSection;
   const headings = [...mediaSrc.matchAll(/^## +(.+?)[ \t]*$/gm)]
     .map((m) => ({ index: m.index, end: m.index + m[0].length, title: m[1].trim() }));
   // Case-insensitive: a title-case `## Key Concepts` must not slip out of
@@ -1739,7 +1775,7 @@ export function lintHugo(src, filename = '', options = {}) {
             .filter(({ index }) => index >= group.end && index < group.limit)
             .length;
           if (autoGradedCount < 1) {
-            err(group.index, `Practice group \`### ${group.title}\` has no auto-graded exercise (fillin, multiplechoice, graphplot, or textin) — a group of only selfchecks does not cover its objective`);
+            err(group.index, `Practice group \`### ${group.title}\` has no auto-graded exercise (fillin, multiplechoice, graphplot, textin, or sortbins) — a group of only selfchecks does not cover its objective`);
           }
         }
       }
@@ -2186,6 +2222,37 @@ export function lintHugo(src, filename = '', options = {}) {
     if (!(params.question || '').trim()) err(index, 'selfcheck: missing non-empty question');
     if (!closed) continue; // the unclosed-shortcode rule above already named it
     if (!inner.trim()) err(index, `${where}: needs a non-empty model answer as its inner content`);
+    // Rubric checkpoints: an optional `===CHECKS===` line splits the inner
+    // content into the model answer and 2–6 check-off clauses ("Did your
+    // answer mention: …"). Clauses are derived from the model answer (which
+    // verify-source-keys holds to the source solution), so each must be
+    // covered by the model part's own words — a checkpoint that brings new
+    // words is a new claim in disguise.
+    const checkParts = inner.split(/^[ \t]*===CHECKS===[ \t]*$/m);
+    // Books listed here require every regular-section selfcheck to carry a
+    // rubric. Enabled per book once its corpus is clean; biology landed with
+    // the practice retrofit (August 2026).
+    const RUBRIC_REQUIRED_BOOKS = new Set(['life-health-sciences/biology', ...(options.rubricRequiredBooks || [])]);
+    if (checkParts.length === 1 && isRegularSection && RUBRIC_REQUIRED_BOOKS.has(bookKey)) {
+      err(index, `${where}: this book requires rubric checkpoints — add a ===CHECKS=== line with 2–6 clauses of the model answer`);
+    }
+    if (checkParts.length > 2) {
+      err(index, `${where}: more than one ===CHECKS=== line — one model answer, one checkpoint list`);
+    } else if (checkParts.length === 2) {
+      const modelPart = checkParts[0];
+      if (!modelPart.trim()) err(index, `${where}: the model answer above ===CHECKS=== is empty`);
+      const checkpoints = checkParts[1].split('\n').map((line) => line.trim()).filter(Boolean);
+      if (checkpoints.length < 2 || checkpoints.length > 6) {
+        err(index, `${where}: ${checkpoints.length} checkpoint(s) below ===CHECKS=== — a rubric is 2–6 clauses`);
+      }
+      for (const checkpoint of checkpoints) {
+        if (UNESCAPED_DOLLAR_RE.test(checkpoint)) {
+          err(index, `${where}: checkpoint ${JSON.stringify(checkpoint)} must not contain \`$\` math — checkpoints are checkbox labels`);
+        } else if (phraseCoverage(checkpoint, modelPart) < 0.8) {
+          err(index, `${where}: checkpoint ${JSON.stringify(checkpoint)} is not covered by the model answer's own words — a checkpoint restates a clause of the model answer, never adds one`);
+        }
+      }
+    }
     for (const name of ['answer', 'accept', 'answerDisplay', 'answerMode', 'answerForm']) {
       if (params[name] !== undefined) {
         err(index, `${where}: selfcheck does not take ${JSON.stringify(name)} — a self-check has no key; its model answer is the inner content`);
@@ -2193,6 +2260,73 @@ export function lintHugo(src, filename = '', options = {}) {
     }
     if (isRegularSection && !(params.hint || '').trim()) {
       err(index, `${where}: regular-section exercise is missing a hint`);
+    }
+  }
+
+  // ---- sortbins shortcode rules --------------------------------------------
+  // Categorize-into-bins. The config is parsed through the REAL parser
+  // (parseSortbinsConfig — the same module the <sort-bins> component runs),
+  // so a config the browser would reject fails here, not on the reader's
+  // screen; the structural rules (bin/item bounds, ownership caps, the
+  // interleave rule that keeps the no-JS shell's authored order from
+  // leaking the key) all live in that parser. The rules HERE are the ones
+  // only the page context can judge: params, hints, `$`, giveaway words,
+  // and the blank-line separation every block-level custom element needs.
+  // The config is read from the RAW source, not mediaSrc: Markdown's
+  // indented-code masking blanks 4-space-indented lines, and a pretty-printed
+  // JSON config's item lines are exactly that — the mask ate 10.5's seven
+  // items and reported an empty array. Masking preserves offsets, so the raw
+  // inner is found by the same opening-tag index; a documentation-masked
+  // example never reaches this loop because the iterator runs over mediaSrc.
+  const sortbinsRawInner = new Map();
+  for (const sc of shortcodes(src, 'sortbins')) sortbinsRawInner.set(sc.index, sc.inner);
+  for (const { params, inner, index, end, closed } of sortbins) {
+    if (!closed) continue; // the unclosed-shortcode rule above already named it
+    const rawInner = sortbinsRawInner.get(index) ?? inner;
+    const where = `sortbins (${(params.question || '?').slice(0, 40)}…)`;
+    if (!(params.question || '').trim()) err(index, 'sortbins: missing non-empty question');
+    for (const name of ['answer', 'accept', 'answerDisplay', 'answerMode', 'answerForm']) {
+      if (params[name] !== undefined) {
+        err(index, `${where}: sortbins does not take ${JSON.stringify(name)} — the key is the config's bin indexes in the inner JSON`);
+      }
+    }
+    if ([params.question, params.hint, rawInner].some((v) => UNESCAPED_DOLLAR_RE.test(v || ''))) {
+      err(index, `${where}: sortbins must not contain \`$\` math — labels become button names, and a button has no spoken-math name`);
+    }
+    if (isRegularSection && !(params.hint || '').trim()) {
+      err(index, `${where}: regular-section exercise is missing a hint`);
+    }
+    try {
+      const cfg = parseSortbinsConfig(rawInner.trim());
+      // Giveaway rule — textin's answer-in-question hazard in bin form: a
+      // bin label's content word printed on an item label hands the learner
+      // that item's assignment (or a misdirection) without engaging the
+      // material.
+      for (const bin of cfg.bins) {
+        const words = normalizeText(bin).split(' ').filter((w) => w.length > 3);
+        for (const item of cfg.items) {
+          const label = normalizeText(item.label);
+          for (const word of words) {
+            if (containsWholeWordRun(label, word)) {
+              err(index, `${where}: bin ${JSON.stringify(bin)} word ${JSON.stringify(word)} appears in item ${JSON.stringify(item.label)} — a bin word printed on an item gives its assignment away; reword the item`);
+            }
+          }
+        }
+      }
+    } catch (error) {
+      err(index, `sortbins: ${error.message}`);
+    }
+    // <sort-bins> is a block-level custom element like <ap-figure>: without
+    // a blank line on each side Goldmark keeps it inside the surrounding
+    // paragraph and pulls the following shortcode in as inline HTML too —
+    // the defect that silently destroyed three precalculus exercises.
+    const beforeSrc = mediaSrc.slice(0, index);
+    const afterSrc = mediaSrc.slice(end);
+    if (beforeSrc.trim() !== '' && !/\n[ \t]*\n[ \t]*$/.test(beforeSrc)) {
+      err(index, 'sortbins: needs a blank line BEFORE it — without one the exercise is parsed as inline HTML inside the previous paragraph');
+    }
+    if (afterSrc.trim() !== '' && !/^[ \t]*\n[ \t]*\n/.test(afterSrc)) {
+      err(index, "sortbins: needs a blank line AFTER it — without one it swallows the following shortcode into its paragraph and that exercise's markup is destroyed");
     }
   }
 

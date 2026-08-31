@@ -95,6 +95,9 @@ When protein receptors on the plasma membrane's surface of an animal cell bind t
 
 {{< selfcheck question="Explain how the extracellular matrix functions." hint="Consider what holds a tissue's cells in place and what role the matrix plays when a tissue is healing." >}}
 The extracellular matrix functions in support and attachment for animal tissues. It also functions in the healing and growth of the tissue.
+===CHECKS===
+functions in support and attachment for animal tissues
+functions in the healing and growth of the tissue
 {{< /selfcheck >}}
 
 {{< textin
@@ -102,6 +105,12 @@ The extracellular matrix functions in support and attachment for animal tissues.
   answer="extracellular matrix"
   accept="extracellular matrices"
   hint="Collagen fibers interwoven with proteoglycans are its primary components."
+>}}
+
+{{< textin
+  question="When protein receptors on the plasma membrane's surface of an animal cell bind to a substance in the ________, a chain of reactions begins that changes activities taking place within the cell."
+  answer="extracellular matrix"
+  hint="The section's summary describes this binding as the trigger for the cell's internal chain of reactions."
 >}}
 
 ### List examples of the ways that plant cells and animal cells communicate with adjacent cells
@@ -119,6 +128,10 @@ tight junctions
 
 {{< selfcheck question="How does the structure of a plasmodesma differ from that of a gap junction?" hint="Think about what surrounds a plant cell that does not surround an animal cell, and what that structural difference allows to pass through the channel." >}}
 Plasmodesmata and gap junctions differ because plant cell walls are rigid. Plasmodesmata, which a plant cell needs for transportation and communication, are able to allow movement of really large molecules. Gap junctions are necessary in animal cells for transportation and communication.
+===CHECKS===
+plasmodesmata and gap junctions differ because plant cell walls are rigid
+plasmodesmata are able to allow movement of really large molecules
+gap junctions are necessary in animal cells for transportation and communication
 {{< /selfcheck >}}
 
 {{< textin
@@ -154,6 +167,11 @@ The death molecule passes through gap junctions.
 
 {{< selfcheck question="Pathogenic *E. coli* have recently been shown to degrade tight junction proteins during infection. How would this provide an advantage to the bacteria?" hint="Think about what a tight junction normally prevents from crossing the epithelial layer, and what removing that barrier would let the bacteria do instead." >}}
 *E. coli* infections generally cause food poisoning, meaning that the invading bacteria cross from the lumen of the gut into the rest of the body. Tight junctions hold the epithelial layer that lines the digestive tract together so that the material that crosses into the body is tightly regulated. One way *E. coli* can avoid this regulation is to destroy the tight junctions so that it can enter the body between the epithelial cells, rather than having to go through the cells.
+===CHECKS===
+E. coli infections generally cause food poisoning
+the invading bacteria cross from the lumen of the gut into the rest of the body
+tight junctions hold the epithelial layer that lines the digestive tract together
+destroy the tight junctions so that it can enter the body between the epithelial cells
 {{< /selfcheck >}}
 
 {{< textin
@@ -179,4 +197,4 @@ The death molecule passes through gap junctions.
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 4.6: Connections between Cells and Cellular Activities](https://openstax.org/books/biology-2e/pages/4-6-connections-between-cells-and-cellular-activities) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, all five already correctly guessed as diagrams; each figure's alt shortened to what it shows and teaches, with the full label-by-label walk-through moved into a longdesc, since none of the five captions carries the diagram's labeled detail; the inline print figure reference to a plant-cell-wall figure in a different section (4.3) dropped, since that figure is not on this page, and the remaining same-page figure references changed from the source's blank cross-reference markers to "below"; the Link to Learning note rendered as a callout with its bold name; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and five key-term recall items (extracellular matrix, plasmodesma, tight junction, gap junction, desmosome) added from the glossary to give every objective group an auto-graded item.</small>
+<small>This section is adapted from [Biology 2e, Section 4.6: Connections between Cells and Cellular Activities](https://openstax.org/books/biology-2e/pages/4-6-connections-between-cells-and-cellular-activities) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, all five already correctly guessed as diagrams; each figure's alt shortened to what it shows and teaches, with the full label-by-label walk-through moved into a longdesc, since none of the five captions carries the diagram's labeled detail; the inline print figure reference to a plant-cell-wall figure in a different section (4.3) dropped, since that figure is not on this page, and the remaining same-page figure references changed from the source's blank cross-reference markers to "below"; the Link to Learning note rendered as a callout with its bold name; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and five key-term recall items (extracellular matrix, plasmodesma, tight junction, gap junction, desmosome) added from the glossary to give every objective group an auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived cloze item added under the first objective ("extracellular matrix," completing the summary's sentence on what receptor binding triggers) to reach the raised per-objective floor.</small>

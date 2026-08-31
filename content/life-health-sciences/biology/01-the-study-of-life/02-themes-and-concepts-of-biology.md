@@ -391,10 +391,18 @@ cannot reproduce
 
 {{< selfcheck question="Select two items that biologists agree are necessary in order to consider an organism \"alive.\" For each, give an example of a nonliving object that otherwise fits the definition of \"alive.\"" hint="Look back at the list of eight shared properties, and think of a nonliving thing that has just one of them." >}}
 Answers will vary. Layers of sedimentary rock have order but are not alive. Technology is capable of regulation but is not, of itself, alive.
+===CHECKS===
+layers of sedimentary rock have order but are not alive
+technology is capable of regulation but is not, of itself, alive
 {{< /selfcheck >}}
 
 {{< selfcheck question="You go for a long walk on a hot day. Give an example of a way in which homeostasis keeps your body healthy." hint="Think about what your body does to keep its internal temperature and water balance from changing too much." >}}
 During your walk, you may begin to perspire, which cools your body and helps your body to maintain a constant internal temperature. You might also become thirsty and pause long enough for a cool drink, which will help to restore the water lost during perspiration.
+===CHECKS===
+you may begin to perspire
+cools your body and helps your body to maintain a constant internal temperature
+you might also become thirsty and pause long enough for a cool drink
+restore the water lost during perspiration
 {{< /selfcheck >}}
 
 ### Describe the levels of organization among living things
@@ -445,10 +453,18 @@ biosphere, ecosystem, community, population, organism
 
 {{< selfcheck question="Consider the levels of organization of the biological world, and place each of these items in order from smallest level of organization to most encompassing: skin cell, elephant, water molecule, planet Earth, tropical rainforest, hydrogen atom, wolf pack, liver." hint="Start from the atom and work up through cell, tissue, organ, organism, population, and ecosystem." >}}
 From smallest level of organization to largest: hydrogen atom, water molecule, skin cell, liver, elephant, wolf pack, tropical rainforest, and planet Earth.
+===CHECKS===
+hydrogen atom, water molecule, skin cell
+liver, elephant, wolf pack
+tropical rainforest, and planet Earth
 {{< /selfcheck >}}
 
 {{< selfcheck question="Using examples, explain how biology can be studied from a microscopic approach to a global approach." hint="Walk up the hierarchy of organization, from cell and organelle to organism, population, community, and ecosystem." >}}
 Researchers can approach biology from the smallest to the largest, and everything in between. For instance, an ecologist may study a population of individuals, the population's community, the community's ecosystem, and the ecosystem's part in the biosphere. When studying an individual organism, a biologist could examine the cell and its organelles, the tissues that the cells make up, the organs and their respective organ systems, and the sum total—the organism itself.
+===CHECKS===
+researchers can approach biology from the smallest to the largest, and everything in between
+an ecologist may study a population of individuals, the population's community, the community's ecosystem, and the ecosystem's part in the biosphere
+a biologist could examine the cell and its organelles, the tissues that the cells make up, the organs and their respective organ systems, and the sum total—the organism itself
 {{< /selfcheck >}}
 
 ### Recognize and interpret a phylogenetic tree
@@ -471,6 +487,13 @@ at the branch tips
   hint="Woese built one of these for Bacteria, Archaea, and Eukarya."
 >}}
 
+{{< textin
+  question="Summary: We can use a phylogenetic tree to show ________ among organisms."
+  answer="evolutionary relationships"
+  accept="evolutionary relationship"
+  hint="A phylogenetic tree's nodes and branches are points where, based on genetic or physical traits, one ancestor is believed to have diverged into two species."
+>}}
+
 ### List examples of different subdisciplines in biology
 
 {{< textin
@@ -486,6 +509,12 @@ at the branch tips
   hint="Paleo- means \"ancient\" — this field digs into the ancient past."
 >}}
 
+{{< textin
+  question="Summary: Examples of biology's branches and subdisciplines include molecular biology, microbiology, neurobiology, zoology, and ________, among others."
+  answer="botany"
+  hint="This subdiscipline studies plants; its practitioner is named alongside the zoologist in the Branches of Biological Study section."
+>}}
+
 ---
 
-<small>This section is adapted from [Biology 2e, Section 1.2: Themes and Concepts of Biology](https://openstax.org/books/biology-2e/pages/1-2-themes-and-concepts-of-biology) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the source alt text edited for several photos to name what the image shows rather than only that it is a photo, and a longer extended description added for the levels-of-organization flow chart and the phylogenetic tree (both diagrams whose reading is not fully captured by their captions); feature boxes (two Link to Learning notes, one Evolution Connection, one Career Connection) rendered as callouts with their bold names; the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and four key-term recall items (homeostasis, phylogenetic tree, biochemistry, paleontology) added from the glossary to round out thin objective groups.</small>
+<small>This section is adapted from [Biology 2e, Section 1.2: Themes and Concepts of Biology](https://openstax.org/books/biology-2e/pages/1-2-themes-and-concepts-of-biology) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the source alt text edited for several photos to name what the image shows rather than only that it is a photo, and a longer extended description added for the levels-of-organization flow chart and the phylogenetic tree (both diagrams whose reading is not fully captured by their captions); feature boxes (two Link to Learning notes, one Evolution Connection, one Career Connection) rendered as callouts with their bold names; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); four key-term recall items (homeostasis, phylogenetic tree, biochemistry, paleontology) added from the glossary to round out thin objective groups; the Visual Connection question kept in the body immediately after its figure and rendered as multiple choice; rubric checkpoints added to each of the section's four self-checks, decomposing its model answer (the source solution) into check-off clauses with no new claims; and two summary-derived cloze recall items added to round out the third and fourth objective groups to three items each — "evolutionary relationships" (third objective) and "botany" (fourth objective) — each blanked from the section summary's own sentence.</small>

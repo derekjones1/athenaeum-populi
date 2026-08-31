@@ -54,6 +54,13 @@ ATP synthase is a complex, molecular machine that uses a proton (H⁺) gradient 
 
 {{< selfcheck question="Dinitrophenol (DNP) is an “uncoupler” that makes the inner mitochondrial membrane “leaky” to protons. It was used until 1938 as a weight-loss drug. What effect would you expect DNP to have on the change in pH across the inner mitochondrial membrane? Why do you think this might be an effective weight-loss drug?" hint="Think about what happens to the proton gradient, and to ATP synthase's supply of protons, if protons can leak straight across the membrane instead of only through the synthase." >}}
 After DNP poisoning, the electron transport chain can no longer form a proton gradient, and ATP synthase can no longer make ATP. DNP is an effective diet drug because it uncouples ATP synthesis; in other words, after taking it, a person obtains less energy out of the food they eat. Interestingly, one of the worst side effects of this drug is hyperthermia, or overheating of the body. Since ATP cannot be formed, the energy from electron transport is lost as heat.
+===CHECKS===
+the electron transport chain can no longer form a proton gradient
+ATP synthase can no longer make ATP
+DNP is an effective diet drug because it uncouples ATP synthesis
+a person obtains less energy out of the food they eat
+one of the worst side effects of this drug is hyperthermia
+the energy from electron transport is lost as heat
 {{< /selfcheck >}}
 
 Chemiosmosis (below) is used to generate 90 percent of the ATP made during aerobic glucose catabolism; it is also the method used in the light reactions of photosynthesis to harness the energy of sunlight in the process of photophosphorylation. Recall that the production of ATP using the process of chemiosmosis in mitochondria is called oxidative phosphorylation. The overall result of these reactions is the production of ATP from the energy of the electrons removed from hydrogen atoms. These atoms were originally part of a glucose molecule. At the end of the pathway, the electrons are used to reduce an oxygen molecule to oxygen ions. The extra electrons on the oxygen attract hydrogen ions (protons) from the surrounding medium, and water is formed. Thus, oxygen is the final electron acceptor in the electron transport chain.
@@ -64,6 +71,11 @@ In oxidative phosphorylation, the pH gradient formed by the electron transport c
 
 {{< selfcheck question="Cyanide inhibits cytochrome c oxidase, a component of the electron transport chain. If cyanide poisoning occurs, would you expect the pH of the intermembrane space to increase or decrease? What effect would cyanide have on ATP synthesis?" hint="If complex IV can no longer pass electrons to oxygen, ask what happens to the protons that the earlier complexes are still pumping into the intermembrane space." >}}
 After cyanide poisoning, the electron transport chain can no longer pump electrons into the intermembrane space. The pH of the intermembrane space would increase, the pH gradient would decrease, and ATP synthesis would stop.
+===CHECKS===
+the electron transport chain can no longer pump electrons into the intermembrane space
+the pH of the intermembrane space would increase
+the pH gradient would decrease
+ATP synthesis would stop
 {{< /selfcheck >}}
 
 ## ATP Yield
@@ -99,10 +111,22 @@ oxygen
 
 {{< selfcheck question="How do the roles of ubiquinone and cytochrome c differ from the roles of the other components of the electron transport chain?" hint="Think about mobility: which chain members are anchored complexes, and which shuttle electrons between them?" >}}
 Q and cytochrome c are transport molecules. Their function does not result directly in ATP synthesis in that they are not pumps. Moreover, Q is the only component of the electron transport chain that is not a protein. Ubiquinone and cytochrome c are small, mobile electron carriers, whereas the other components of the electron transport chain are large complexes anchored in the inner mitochondrial membrane.
+===CHECKS===
+Q and cytochrome c are transport molecules
+their function does not result directly in ATP synthesis in that they are not pumps
+Q is the only component of the electron transport chain that is not a protein
+ubiquinone and cytochrome c are small, mobile electron carriers
+the other components of the electron transport chain are large complexes anchored in the inner mitochondrial membrane
 {{< /selfcheck >}}
 
 {{< selfcheck question="What accounts for the different number of ATP molecules that are formed through cellular respiration?" hint="Consider how the intermediates get used for other purposes, how NADH gets shuttled into the mitochondria, and how the chain's composition varies between species." >}}
 Few tissues except muscle produce the maximum possible amount of ATP from nutrients. The intermediates are used to produce needed amino acids, fatty acids, cholesterol, and sugars for nucleic acids. When NADH is transported from the cytoplasm to the mitochondria, an active transport mechanism is used, which decreases the amount of ATP that can be made. The electron transport chain differs in composition between species, so different organisms will make different amounts of ATP using their electron transport chains.
+===CHECKS===
+few tissues except muscle produce the maximum possible amount of ATP from nutrients
+the intermediates are used to produce needed amino acids, fatty acids, cholesterol, and sugars for nucleic acids
+an active transport mechanism is used, which decreases the amount of ATP that can be made
+the electron transport chain differs in composition between species
+different organisms will make different amounts of ATP using their electron transport chains
 {{< /selfcheck >}}
 
 {{< textin
@@ -110,6 +134,12 @@ Few tissues except muscle produce the maximum possible amount of ATP from nutrie
   answer="ubiquinone"
   accept="Q"
   hint="The section abbreviates this molecule's name with a single capital letter."
+>}}
+
+{{< textin
+  question="The level of free energy of the electrons drops from about 60 kcal/mol in NADH or ________ kcal/mol in FADH₂ to about 0 kcal/mol in water."
+  answer="45"
+  hint="The section's summary gives the free-energy level of the electrons FADH₂ donates, between NADH's 60 kcal/mol and water's 0 kcal/mol."
 >}}
 
 {{< textin
@@ -139,6 +169,12 @@ the movement of glucose through the cell membrane
   hint="Hydrogen ions turn this molecular machine as they flow down their electrochemical gradient into the matrix."
 >}}
 
+{{< textin
+  question="The electrons are passed through a series of redox reactions, with a small amount of free energy used at ________ points to transport hydrogen ions across the membrane."
+  answer="three"
+  hint="Complexes I, III, and IV are the points along the chain that pump protons."
+>}}
+
 ---
 
-<small>This section is adapted from [Biology 2e, Section 7.4: Oxidative Phosphorylation](https://openstax.org/books/biology-2e/pages/7-4-oxidative-phosphorylation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with one of three re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (all three are line-drawn schematics of the transport chain and ATP synthase, not photographs); all three source alts, which were transcribed with disruptive letter-by-letter text-to-speech spacing ("A T P," "N A D H"), rewritten from the images, and an extended description added to each since none is a photograph whose full content is carried by its caption; both Visual Connection questions (Dinitrophenol/pH, cyanide/pH) kept in the body immediately after their figures and rendered as self-checks, since the source keys both with a prose solution rather than a lettered option; ion charges (Fe⁺⁺, Fe⁺⁺⁺) and the H⁺, NAD⁺/FAD⁺ superscripts set as Unicode; the copper-ion subscripts Cu<sub>A</sub>/Cu<sub>B</sub> and inorganic phosphate P<sub>i</sub> set as inline HTML since no Unicode subscript letter exists for them; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (ubiquinone, prosthetic group) added from the glossary, plus a third (ATP synthase) to round out the second objective group with an auto-graded item, since this section's own end-of-section sets leave that objective with only the one Review Question above; a stray "B." printed after "ubiquinone" in the source's "Q and Complex II" paragraph (also present in the PDF) is omitted as a source typesetting defect.</small>
+<small>This section is adapted from [Biology 2e, Section 7.4: Oxidative Phosphorylation](https://openstax.org/books/biology-2e/pages/7-4-oxidative-phosphorylation) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with one of three re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (all three are line-drawn schematics of the transport chain and ATP synthase, not photographs); all three source alts, which were transcribed with disruptive letter-by-letter text-to-speech spacing ("A T P," "N A D H"), rewritten from the images, and an extended description added to each since none is a photograph whose full content is carried by its caption; both Visual Connection questions (Dinitrophenol/pH, cyanide/pH) kept in the body immediately after their figures and rendered as self-checks, since the source keys both with a prose solution rather than a lettered option; ion charges (Fe⁺⁺, Fe⁺⁺⁺) and the H⁺, NAD⁺/FAD⁺ superscripts set as Unicode; the copper-ion subscripts Cu<sub>A</sub>/Cu<sub>B</sub> and inorganic phosphate P<sub>i</sub> set as inline HTML since no Unicode subscript letter exists for them; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (ubiquinone, prosthetic group) added from the glossary, plus a third (ATP synthase) to round out the second objective group with an auto-graded item, since this section's own end-of-section sets leave that objective with only the one Review Question above; a stray "B." printed after "ubiquinone" in the source's "Q and Complex II" paragraph (also present in the PDF) is omitted as a source typesetting defect; rubric checkpoints added to all four self-checks, the two body Visual Connections included, decomposing each model answer (the source solution) into check-off clauses with no new claims; and two summary-derived cloze `textin` items added — the 45 kcal/mol free-energy level of FADH₂'s electrons under the first objective, and the three points along the chain that pump hydrogen ions under the second objective — to raise the second objective's group and the section as a whole to the practice floor.</small>

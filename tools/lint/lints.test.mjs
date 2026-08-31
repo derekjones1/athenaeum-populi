@@ -1688,7 +1688,9 @@ test('textin shortcode rules', () => {
 });
 
 test('selfcheck shortcode rules', () => {
-  const good = '{{< selfcheck question="Why do cells divide?" hint="Think mitosis." >}}\nCells divide to grow and repair tissue.\n{{< /selfcheck >}}';
+  // Biology requires rubric checkpoints by default (the landed retrofit),
+  // so the well-formed example carries them.
+  const good = '{{< selfcheck question="Why do cells divide?" hint="Think mitosis." >}}\nCells divide to grow and repair tissue.\n===CHECKS===\ncells divide to grow\nrepair tissue\n{{< /selfcheck >}}';
   assert.equal(
     lintHugo(good, 'content/life-health-sciences/biology/01-x/01-y.md').errors.length,
     0,
@@ -2340,4 +2342,273 @@ test('a closing tag on an unpaired shortcode (textin, fillin) is rejected', () =
   }
   const { errors } = lintHugo('{{< textin question="Q?" answer="cell" hint="h" >}}', 'content/test.md');
   assert(!errors.some((e) => e.includes('unpaired shortcode')), 'the unpaired form itself is clean');
+});
+
+
+// ---- sortbins ---------------------------------------------------------------
+
+const SORTBINS_CFG = JSON.stringify({
+  bins: ['Prokaryotes', 'Eukaryotes'],
+  items: [
+    { label: 'Single origin of replication', bin: 0 },
+    { label: 'Telomerase present', bin: 1 },
+    { label: 'DNA polymerase III elongates strands', bin: 0 },
+    { label: 'PCNA sliding clamp', bin: 1 },
+  ],
+});
+const sortbinsWrap = (attrs, cfg = SORTBINS_CFG) => `{{< sortbins ${attrs} >}}\n${cfg}\n{{< /sortbins >}}`;
+
+test('sortbins shortcode rules', () => {
+  const good = sortbinsWrap('question="Assign each replication property to the cell type it describes." hint="Think chromosome shape."');
+  assert.equal(
+    lintHugo(good, 'content/test.md').errors.length,
+    0,
+    `a well-formed sortbins lints clean: ${lintHugo(good, 'content/test.md').errors.join('; ')}`,
+  );
+
+  assert(
+    lintHugo(sortbinsWrap('question="" hint="h"'), 'content/test.md')
+      .errors.some((e) => e.includes('missing non-empty question')),
+    'an empty question is rejected',
+  );
+  assert(
+    lintHugo(sortbinsWrap('question="Sort these." hint="h" answer="x"'), 'content/test.md')
+      .errors.some((e) => e.includes('does not take "answer"')),
+    'the key lives in the config — answer is rejected',
+  );
+  assert(
+    lintHugo('{{< sortbins question="Sort these." hint="h" >}}\n' + SORTBINS_CFG, 'content/test.md')
+      .errors.some((e) => e.includes('is never closed')),
+    'an unclosed sortbins is rejected',
+  );
+  assert(
+    lintHugo(sortbinsWrap('question="Sort the $x$ things." hint="h"'), 'content/test.md')
+      .errors.some((e) => e.includes('must not contain `$` math')),
+    'sortbins takes no math — labels become button names',
+  );
+  assert(
+    lintHugo(sortbinsWrap('question="Sort these." hint="h"', 'not json {'), 'content/test.md')
+      .errors.some((e) => e.includes('not valid JSON')),
+    'a broken config is reported through the real parser',
+  );
+  assert(
+    lintHugo(sortbinsWrap('question="Sort these."'), 'content/math/book/01-chapter/01-section.md')
+      .errors.some((e) => e.includes('missing a hint')),
+    'regular-section sortbins exercises require a hint',
+  );
+});
+
+test('sortbins config rules run through the real parser', () => {
+  const grouped = JSON.stringify({
+    bins: ['Prokaryotes', 'Eukaryotes'],
+    items: [
+      { label: 'Single origin of replication', bin: 0 },
+      { label: 'DNA polymerase III elongates strands', bin: 0 },
+      { label: 'Telomerase present', bin: 1 },
+      { label: 'PCNA sliding clamp', bin: 1 },
+    ],
+  });
+  assert(
+    lintHugo(sortbinsWrap('question="Sort these." hint="h"', grouped), 'content/test.md')
+      .errors.some((e) => e.includes('grouped by bin')),
+    'authored order grouped by bin leaks the key through the no-JS shell',
+  );
+});
+
+test('sortbins giveaway rule — a bin word printed on an item is rejected', () => {
+  const giveaway = JSON.stringify({
+    bins: ['Prokaryotes', 'Eukaryotes'],
+    items: [
+      { label: 'Single origin of replication', bin: 0 },
+      { label: 'Telomerase present', bin: 1 },
+      { label: 'Found only in prokaryotes', bin: 0 },
+      { label: 'PCNA sliding clamp', bin: 1 },
+    ],
+  });
+  assert(
+    lintHugo(sortbinsWrap('question="Sort these." hint="h"', giveaway), 'content/test.md')
+      .errors.some((e) => e.includes('gives its assignment away')),
+    'a bin-label content word inside an item label is a giveaway',
+  );
+});
+
+test('sortbins must be blank-line separated, or Goldmark parses it inline', () => {
+  const exercise = sortbinsWrap('question="Sort these." hint="h"');
+  const before = `Some prose.\n${exercise}\n\nMore prose.`;
+  assert(
+    lintHugo(before, 'content/test.md').errors.some((e) => e.includes('blank line BEFORE')),
+    'no blank line before is rejected',
+  );
+  const after = `Some prose.\n\n${exercise}\nMore prose.`;
+  assert(
+    lintHugo(after, 'content/test.md').errors.some((e) => e.includes('blank line AFTER')),
+    'no blank line after is rejected',
+  );
+  const clean = `Some prose.\n\n${exercise}\n\nMore prose.`;
+  assert.equal(
+    lintHugo(clean, 'content/test.md').errors.length,
+    0,
+    `blank-line separated sortbins lints clean: ${lintHugo(clean, 'content/test.md').errors.join('; ')}`,
+  );
+});
+
+
+// ---- selfcheck rubric checkpoints -------------------------------------------
+
+const checkpointed = (inner) => `{{< selfcheck question="Why do cells divide?" hint="h" >}}\n${inner}\n{{< /selfcheck >}}`;
+
+test('selfcheck rubric checkpoints — covered clauses pass, everything else is named', () => {
+  const good = checkpointed('Cells divide to grow and to repair damaged tissue.\n===CHECKS===\ncells divide to grow\nto repair damaged tissue');
+  assert.equal(
+    lintHugo(good, 'content/test.md').errors.length,
+    0,
+    `a covered rubric lints clean: ${lintHugo(good, 'content/test.md').errors.join('; ')}`,
+  );
+
+  assert(
+    lintHugo(checkpointed('Model.\n===CHECKS===\nmodel'), 'content/test.md')
+      .errors.some((e) => e.includes('a rubric is 2–6 clauses')),
+    'one checkpoint is not a rubric',
+  );
+  assert(
+    lintHugo(checkpointed('Model words here.\n===CHECKS===\na\nb\nc\nd\ne\nf\ng'), 'content/test.md')
+      .errors.some((e) => e.includes('a rubric is 2–6 clauses')),
+    'seven checkpoints are too many',
+  );
+  assert(
+    lintHugo(checkpointed('Cells divide to grow and to repair damaged tissue.\n===CHECKS===\ncells divide to grow\nmitochondria produce ATP'), 'content/test.md')
+      .errors.some((e) => e.includes('not covered by the model answer')),
+    'a checkpoint bringing its own claim is rejected',
+  );
+  assert(
+    lintHugo(checkpointed('Cells divide to grow and to repair damaged tissue.\n===CHECKS===\ncells divide to grow\nthe $x$ of tissue'), 'content/test.md')
+      .errors.some((e) => e.includes('must not contain `$` math')),
+    'a checkpoint is a checkbox label — no math',
+  );
+  assert(
+    lintHugo(checkpointed('===CHECKS===\ncells divide to grow\nto repair tissue'), 'content/test.md')
+      .errors.some((e) => e.includes('model answer above ===CHECKS=== is empty')),
+    'the model answer must survive the split',
+  );
+  assert(
+    lintHugo(checkpointed('Model one.\n===CHECKS===\nmodel one\nmodel one again\n===CHECKS===\nmodel'), 'content/test.md')
+      .errors.some((e) => e.includes('more than one ===CHECKS=== line')),
+    'a second sentinel is rejected',
+  );
+});
+
+
+// ---- per-book practice floors and rubric requirements -----------------------
+
+const floorPage = (count) => {
+  const textins = Array.from({ length: count }, (_, i) => (
+    `{{< textin question="Name entry ${'x'.repeat(i + 1)} of the study list." answer="term${i}" hint="Recall the list." >}}`
+  )).join('\n\n');
+  return `---
+title: Floor fixture
+---
+
+{{< callout type="info" >}}
+**By the end of this section, you will be able to:**
+
+- Identify the shared terms
+{{< /callout >}}
+
+Body prose.
+
+## Key terms
+
+- **term0** — a term.
+
+## Practice
+
+### Identify the shared terms
+
+${textins}
+`;
+};
+
+test("practice floors are per book — biology's landed floor is 3/8, math keeps 2/5", () => {
+  const bioPath = 'content/life-health-sciences/biology/01-x/01-y.md';
+  const five = floorPage(5);
+  assert(
+    lintHugo(five, bioPath).errors.some((e) => e.includes('at least 8 are required')),
+    "biology's landed floor rejects five exercises by default",
+  );
+  assert.equal(
+    lintHugo(five, 'content/math/precalculus/01-x/01-y.md').errors.length,
+    0,
+    'a math book keeps the 2/5 default',
+  );
+  const eight = floorPage(8);
+  assert.equal(
+    lintHugo(eight, bioPath).errors.length,
+    0,
+    `eight exercises satisfy biology's landed floor: ${lintHugo(eight, bioPath).errors.join('; ')}`,
+  );
+  assert(
+    lintHugo(eight, bioPath, { practiceFloors: { 'life-health-sciences/biology': { perObjective: 3, perSection: 9 } } })
+      .errors.some((e) => e.includes('at least 9 are required')),
+    'an override can still raise a floor for a future retrofit run',
+  );
+});
+
+test('a book can require selfcheck rubrics, per book', () => {
+  const bare = '{{< selfcheck question="Why?" hint="h" >}}\nModel words here.\n{{< /selfcheck >}}';
+  const bioPath = 'content/life-health-sciences/biology/01-x/01-y.md';
+  const opts = { rubricRequiredBooks: ['life-health-sciences/biology'] };
+  assert(
+    lintHugo(bare, bioPath).errors.some((e) => e.includes('requires rubric checkpoints')),
+    'biology requires rubrics by default — the landed retrofit',
+  );
+  assert(
+    lintHugo(bare, bioPath, opts).errors.some((e) => e.includes('requires rubric checkpoints')),
+    'a rubric-required book rejects a bare selfcheck',
+  );
+  assert(
+    !lintHugo(bare, 'content/math/precalculus/01-x/01-y.md', opts).errors.some((e) => e.includes('requires rubric checkpoints')),
+    'other books are untouched by the requirement',
+  );
+  const withRubric = '{{< selfcheck question="Why?" hint="h" >}}\nModel words here.\n===CHECKS===\nmodel words\nwords here\n{{< /selfcheck >}}';
+  assert(
+    !lintHugo(withRubric, bioPath, opts).errors.some((e) => e.includes('requires rubric checkpoints')),
+    'a checkpointed selfcheck satisfies the requirement',
+  );
+});
+
+
+test('an indented pretty-printed sortbins config survives the documentation mask', () => {
+  // Markdown treats 4-space-indented lines as code; the lint must parse the
+  // config from the raw source, or a pretty-printed items array reads as
+  // empty (the mask ate 10.5's seven items).
+  const indented = `{{< sortbins question="Assign each replication property to the cell type." hint="h" >}}
+{
+    "bins": ["Prokaryotes", "Eukaryotes"],
+    "items": [
+        { "label": "Single origin of replication", "bin": 0 },
+        { "label": "Telomerase present", "bin": 1 },
+        { "label": "DNA polymerase III elongates strands", "bin": 0 },
+        { "label": "PCNA sliding clamp", "bin": 1 }
+    ]
+}
+{{< /sortbins >}}`;
+  assert.equal(
+    lintHugo(indented, 'content/test.md').errors.length,
+    0,
+    `indented config lints clean: ${lintHugo(indented, 'content/test.md').errors.join('; ')}`,
+  );
+});
+
+
+test('a raw newline inside a shortcode param is rejected — Hugo refuses it', () => {
+  const multi = '{{< textin question="Name the\nterm." answer="cell" hint="h" >}}';
+  assert(
+    lintHugo(multi, 'content/test.md').errors.some((e) => e.includes('contains a raw newline')),
+    'a multi-line param value must fail before Hugo does',
+  );
+  const single = '{{< textin question="Name the organelle that makes ATP." answer="mitochondria" hint="h" >}}';
+  assert(
+    !lintHugo(single, 'content/test.md').errors.some((e) => e.includes('contains a raw newline')),
+    'single-line params are untouched',
+  );
 });

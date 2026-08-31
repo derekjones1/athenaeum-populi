@@ -63,15 +63,28 @@ closes with how plants and animals are built and how ecosystems work.
 - **Cell Reproduction** — chromosomes and genomes, the cell cycle and its
   control, cancer, and binary fission.
 
+### Unit 3: Genetics
+
+- **Meiosis and Sexual Reproduction** — how the two divisions of meiosis
+  halve the chromosome number and shuffle alleles through crossover and
+  random assortment, and why the variation sexual reproduction creates is
+  an evolutionary advantage across the three life-cycle types.
+- **Mendel's Experiments and Heredity** — Mendel's pea-plant experiments
+  and the laws of probability; genotype, phenotype, and the patterns of
+  dominance; and the laws of segregation and independent assortment, with
+  linkage and epistasis as extensions.
+- **Modern Understandings of Inheritance** — the chromosomal theory of
+  inheritance, genetic linkage and recombination-based chromosome maps, and
+  the chromosomal errors — nondisjunction, aneuploidy, and structural
+  rearrangements — behind inherited disorders.
+
 ## Planned contents
 
 Biology 2e has eight units and 47 chapters. Beyond the chapters listed
 above, the following are still to come, in this order:
 
-- **Unit 3: Genetics** — Meiosis and Sexual Reproduction; Mendel's
-  Experiments and Heredity; Modern Understandings of Inheritance; DNA
-  Structure and Function; Genes and Proteins; Gene Expression; Biotechnology
-  and Genomics.
+- **Unit 3: Genetics** (remaining chapters) — DNA Structure and Function;
+  Genes and Proteins; Gene Expression; Biotechnology and Genomics.
 - **Unit 4: Evolutionary Processes** — Evolution and the Origin of Species;
   The Evolution of Populations; Phylogenies and the History of Life.
 - **Unit 5: Biological Diversity** — Viruses; Prokaryotes: Bacteria and

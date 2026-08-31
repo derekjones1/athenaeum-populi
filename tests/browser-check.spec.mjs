@@ -770,8 +770,18 @@ test('self-check marks enable on upgrade, and rating swaps status and aria-press
   await expect(correctMark).toBeEnabled();
   await expect(review).toBeEnabled();
 
+  // Biology selfchecks carry rubric checkpoints (the practice retrofit).
+  // They live inside the closed <details>, so they are counted here but
+  // only ticked after the reveal below — a learner self-marks against the
+  // rubric they can see.
+  const checkpoints = card.locator('.ap-selfcheck-checkpoints input[type="checkbox"]');
+  const checkpointCount = await checkpoints.count();
+  expect(checkpointCount).toBeGreaterThanOrEqual(2);
+
   await correctMark.click();
-  await expect(card.locator('.ap-selfcheck-feedback')).toHaveText('Marked as correct.');
+  await expect(card.locator('.ap-selfcheck-feedback')).toHaveText(
+    new RegExp(`^Marked as correct\\. You checked 0 of ${checkpointCount} points\\.$`),
+  );
   await expect(correctMark).toHaveAttribute('aria-pressed', 'true');
   await expect(review).toHaveAttribute('aria-pressed', 'false');
 
@@ -785,6 +795,15 @@ test('self-check marks enable on upgrade, and rating swaps status and aria-press
   await expect(details).not.toHaveAttribute('open', '');
   await card.locator('.ap-selfcheck-answer summary').click();
   await expect(details).toHaveAttribute('open', '');
+
+  // With the model answer revealed, the rubric is tickable; re-rating
+  // counts what was checked.
+  await expect(checkpoints.first()).toBeEnabled();
+  await checkpoints.first().check();
+  await correctMark.click();
+  await expect(card.locator('.ap-selfcheck-feedback')).toHaveText(
+    new RegExp(`^Marked as correct\\. You checked 1 of ${checkpointCount} points\\.$`),
+  );
 });
 
 test('with JavaScript off, text-in shows its notice and self-check keeps its native disabled/details behavior', async ({ browser }) => {
@@ -1162,12 +1181,13 @@ test('the biology sidebar nests chapters under their unit, and a math sidebar st
   // desktop list — so one unit appears twice; only the desktop copy is
   // visible at this viewport.
   const units = page.locator('aside .ap-sidebar-unit');
-  await expect(units).toHaveCount(4);
+  await expect(units).toHaveCount(6);
   const visible = page.locator('aside .ap-sidebar-unit:visible');
-  await expect(visible).toHaveCount(2);
+  await expect(visible).toHaveCount(3);
   await expect(visible.locator('> .ap-sidebar-unit-label')).toHaveText([
     'Unit 1: The Chemistry of Life',
     'Unit 2: The Cell',
+    'Unit 3: Genetics',
   ]);
   // Each unit's own list holds exactly the authored chapters of that unit,
   // in source order, and every chapter or section link in the book sits
@@ -1184,14 +1204,66 @@ test('the biology sidebar nests chapters under their unit, and a math sidebar st
     'Cell Communication',
     'Cell Reproduction',
   ]);
-  // 10 chapter landings + 44 sections, rendered twice.
+  const unit3Titles = await visible.nth(2).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
+  expect(unit3Titles).toEqual([
+    'Meiosis and Sexual Reproduction',
+    "Mendel's Experiments and Heredity",
+    'Modern Understandings of Inheritance',
+  ]);
+  // 13 chapter landings + 51 sections, rendered twice.
   const bookLinks = page.locator('aside a[href^="/life-health-sciences/biology/"]:not([href="/life-health-sciences/biology/"])');
   const insideUnit = page.locator('aside .ap-sidebar-unit a[href^="/life-health-sciences/biology/"]');
-  expect(await bookLinks.count()).toBe(108);
-  expect(await insideUnit.count()).toBe(108);
+  expect(await bookLinks.count()).toBe(128);
+  expect(await insideUnit.count()).toBe(128);
   // The label is text, not a control: nothing to focus, nothing to click.
   await expect(page.locator('aside .ap-sidebar-unit-label a, aside .ap-sidebar-unit-label button')).toHaveCount(0);
 
   await gotoBuiltPage(page, '/math/precalculus/01-functions/01-functions-and-function-notation/');
   await expect(page.locator('aside .ap-sidebar-unit')).toHaveCount(0);
+});
+
+
+test('a sort-bins grades the mapping with partial credit and returns misplaced items to the tray', async ({ page }) => {
+  await gotoBuiltPage(page, '/life-health-sciences/biology/10-cell-reproduction/05-prokaryotic-cell-division/');
+  const card = page.locator('sort-bins');
+  await expect(card).toHaveCount(1);
+  await waitForUpgrade(card, (el) => (
+    Boolean(customElements.get('sort-bins')) && !el.querySelector('.ap-sortbins-check')?.disabled
+  ));
+  await card.scrollIntoViewIfNeeded();
+
+  const places = card.locator('.ap-sortbins-place');
+  await expect(card.locator('.ap-sortbins-item')).toHaveCount(7);
+  await expect(places).toHaveCount(4);
+
+  // Grading with the tray still full names the gap, not a wrong answer.
+  await card.locator('.ap-sortbins-check').click();
+  await expect(card.locator('.ap-sortbins-feedback')).toHaveText(/Place all items first/);
+
+  // Everything into the LAST bin: two items are keyed there, so this grades
+  // partial and the five misplaced items return to the tray.
+  const tray = card.locator('.ap-sortbins-tray .ap-sortbins-item');
+  while (await tray.count()) {
+    await tray.first().click();
+    await places.nth(3).click();
+  }
+  await card.locator('.ap-sortbins-check').click();
+  await expect(card.locator('.ap-sortbins-feedback')).toHaveText(/2 of 7 placed correctly — the misplaced items are back in the tray/);
+  await expect(tray).toHaveCount(5);
+
+  // Now the keyed mapping.
+  const key = [
+    ['Single circular chromosome in a nucleoid region', 0],
+    ['Chromosomes attach to the intact nuclear envelope', 1],
+    [/^Mitotic spindle forms from the centrioles$/, 2],
+    ['FtsZ proteins assemble into a ring', 0],
+    ['Division occurs through binary fission', 0],
+  ];
+  for (const [label, bin] of key) {
+    await card.locator('.ap-sortbins-item', { hasText: label }).click();
+    await places.nth(bin).click();
+  }
+  await card.locator('.ap-sortbins-check').click();
+  await expect(card.locator('.ap-sortbins-feedback')).toHaveText(/^Correct/);
+  expect(await card.locator('.ap-sortbins-item').first().getAttribute('aria-disabled')).toBe('true');
 });

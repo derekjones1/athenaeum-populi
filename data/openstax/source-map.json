@@ -58,8 +58,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 47,
       "upstreamSections": 208,
-      "localChapters": 10,
-      "mappedSections": 44,
+      "localChapters": 13,
+      "mappedSections": 51,
       "units": [
         {
           "index": 1,
@@ -555,6 +555,69 @@
       "moduleId": "m66481",
       "sourceTitle": "Prokaryotic Cell Division",
       "moduleSha256": "4acaeeb28d72ca2748c00a2cdc190ec3625ecf2187b417a013a092f23eeb1250"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/11-meiosis-and-sexual-reproduction/01-the-process-of-meiosis.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "11.1",
+      "moduleId": "m66483",
+      "sourceTitle": "The Process of Meiosis",
+      "moduleSha256": "a3408c4f3de5c4f79616e108c61ed04533f0ec6bb2104b606a7fd20fb7835cda"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/11-meiosis-and-sexual-reproduction/02-sexual-reproduction.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "11.2",
+      "moduleId": "m66484",
+      "sourceTitle": "Sexual Reproduction",
+      "moduleSha256": "d550935a2cfbefa66a547d431829c6ad988a25ffc0993844b1b944c09412cc71"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/12-mendels-experiments-and-heredity/01-mendels-experiments-and-the-laws-of-probability.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "12.1",
+      "moduleId": "m66486",
+      "sourceTitle": "Mendel’s Experiments and the Laws of Probability",
+      "moduleSha256": "40fc1e4250b2b967b35890942b28b98ff3e0f008cd8d278a4e0f0282b1c7a4eb"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/12-mendels-experiments-and-heredity/02-characteristics-and-traits.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "12.2",
+      "moduleId": "m66487",
+      "sourceTitle": "Characteristics and Traits",
+      "moduleSha256": "2a7d53143d414a16c88ade54b362c80ae8eb2c5bb6f82e770867a5733e676ed6"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/12-mendels-experiments-and-heredity/03-laws-of-inheritance.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "12.3",
+      "moduleId": "m66488",
+      "sourceTitle": "Laws of Inheritance",
+      "moduleSha256": "39ed7062826d86689f1c1d841147e710eb6e733570ecfb80004dc1b377874848"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/13-modern-understandings-of-inheritance/01-chromosomal-theory-and-genetic-linkage.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "13.1",
+      "moduleId": "m66491",
+      "sourceTitle": "Chromosomal Theory and Genetic Linkage",
+      "moduleSha256": "16d1f2d5236a2914cd23d77af34482aba119e900ae240ae723ffbf05fee295e1"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "13.2",
+      "moduleId": "m66494",
+      "sourceTitle": "Chromosomal Basis of Inherited Disorders",
+      "moduleSha256": "c24da22f2e75eec952b5108f8f0fb6a4c1e1fedb02a5c858717d9a5a2965ae1f"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

@@ -1,0 +1,66 @@
+{{- /*
+  sortbins — categorize-into-bins exercise. The learner sorts a tray of item
+  labels into 2–4 labelled bins and checks the assignment; grading is the
+  label→bin mapping (assets/js/lib/text/check-sortbins.mjs), which the
+  <sort-bins> component (assets/js/components/text/sort-bins.js) runs
+  client-side. Config travels as JSON in the inner content to sidestep
+  quoting, exactly like graphplot; the lint parses it through the REAL
+  parser (parseSortbinsConfig) before Hugo ever runs, so this template only
+  unmarshals to render the static shell.
+
+    Usage: a paired sortbins shortcode with question="Assign each replication
+    property to the cell type it describes." and an optional hint; the inner
+    content is the JSON config {"bins": […], "items": [{"label": …, "bin": N}]}.
+
+  Params: question (required), hint (optional). `answer`, `accept`,
+  `answerDisplay` are rejected — the key is the config's own bin indexes.
+  `$` math is rejected everywhere: item and bin labels become button names,
+  and a button has no spoken-math name (textin's rule).
+
+  The shell is server-rendered and honest without JavaScript: the question,
+  every item, and every bin are visible in authored order (the lint's
+  interleave rule keeps that order from leaking the key); the buttons ship
+  natively `disabled` until <sort-bins> enables them.
+*/ -}}
+{{- $question := .Get "question" -}}
+{{- if not (trim ($question | default "") " ") -}}
+  {{- errorf "sortbins shortcode needs a non-empty 'question' (%s)" .Position -}}
+{{- end -}}
+{{- range (slice "answer" "accept" "answerDisplay" "answerMode" "answerForm") -}}
+  {{- with $.Get . -}}
+    {{- errorf "sortbins does not take %q — the key is the config's bin indexes in the inner JSON (%s)" . $.Position -}}
+  {{- end -}}
+{{- end -}}
+{{- $inner := trim .Inner "\n\t " -}}
+{{- if not $inner -}}
+  {{- errorf "sortbins shortcode needs its JSON config as inner content (%s)" .Position -}}
+{{- end -}}
+{{- if or (findRE `(^|[^\\])\$` $question) (findRE `(^|[^\\])\$` (.Get "hint" | default "")) (findRE `(^|[^\\])\$` $inner) -}}
+  {{- errorf "sortbins must not contain `$` math — labels become button names, and a button has no spoken-math name (%s)" .Position -}}
+{{- end -}}
+{{- $config := transform.Unmarshal $inner -}}
+{{- $id := printf "ap-sortbins-%s" (.Ordinal | string) -}}
+<sort-bins data-config="{{ $inner }}">
+  <div class="ap-sortbins">
+    <p class="ap-sortbins-question" id="{{ $id }}-question">{{ partial "mathtext" $question }}</p>
+    <noscript><p class="ap-noscript-notice">Interactive practice requires JavaScript.</p></noscript>
+    <div class="ap-sortbins-tray" role="group" aria-label="Items to sort" aria-describedby="{{ $id }}-question">
+      {{- range $i, $item := $config.items }}
+      <button type="button" disabled class="ap-sortbins-item" data-item="{{ $i }}" aria-pressed="false">{{ $item.label }}</button>
+      {{- end }}
+    </div>
+    <div class="ap-sortbins-bins">
+      {{- range $bi, $bin := $config.bins }}
+      <div class="ap-sortbins-bin" data-bin="{{ $bi }}" role="group" aria-labelledby="{{ $id }}-bin-{{ $bi }}">
+        <p class="ap-sortbins-bin-title" id="{{ $id }}-bin-{{ $bi }}">{{ $bin }}</p>
+        <ul class="ap-sortbins-bin-items"></ul>
+        <button type="button" disabled class="ap-sortbins-place" data-bin="{{ $bi }}">Place here</button>
+      </div>
+      {{- end }}
+    </div>
+    <button type="button" disabled class="ap-sortbins-check">Check bins</button>
+    {{- with .Get "hint" }}
+      <template data-slot="hint">{{ partial "mathtext" . }}</template>
+    {{- end }}
+  </div>
+</sort-bins>

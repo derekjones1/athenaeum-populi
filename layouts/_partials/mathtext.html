@@ -6,12 +6,19 @@
   Rules:
     - `$...$` runs are rendered with KaTeX (inline mode).
     - `\$` is a literal dollar sign (money), never a delimiter.
+    - prose runs are rendered as inline Markdown (goldmark, unsafe HTML on,
+      exactly like body prose), so `*Drosophila*` italicizes and an allele
+      superscript `I<sup>A</sup>` renders as a superscript instead of the
+      literal tag text the old htmlEscape produced. Aria strings built from
+      these params must go through plainify (see multiplechoice/selfcheck).
 
   Call:  {{ partial "mathtext" "Simplify $\tfrac{3}{4}$ for \$5" }}
   Returns trusted HTML.
 */ -}}
 {{- $src := . -}}
-{{- $NUL := "\x00" -}}
+{{- /* Sentinel must survive goldmark: a NUL byte is sanitized to U+FFFD
+     by the markdown renderer, so use a private-use codepoint instead. */ -}}
+{{- $NUL := "\uE000" -}}
 {{- /* protect escaped dollars so they can't pair as delimiters */ -}}
 {{- $protected := replace $src "\\$" $NUL -}}
 {{- $parts := split $protected "$" -}}
@@ -28,8 +35,11 @@
       {{- end -}}
     {{- end -}}
   {{- else -}}
-    {{- $txt := replace $p $NUL "$" -}}
-    {{- $sb = $sb | append (htmlEscape $txt) -}}
+    {{- /* Markdownify with the escaped dollars still behind the sentinel:
+         a bare `$` restored first would re-enter goldmark's math
+         passthrough and KaTeX-error on money amounts. Restore after. */ -}}
+    {{- $rendered := printf "%s" ($p | markdownify) -}}
+    {{- $sb = $sb | append (replace $rendered $NUL "$") -}}
   {{- end -}}
 {{- end -}}
 {{- return (delimit $sb "" | safeHTML) -}}

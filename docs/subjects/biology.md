@@ -154,6 +154,16 @@ numbers:
 `5 µm`, `37 °C`, `1,000` with a plain comma in prose. Never put math in a
 `textin` question or answer — the lint rejects it.
 
+Exercise-string parameters (`question`, `hint`, `answerDisplay`, and a
+multiple choice's option lines) render through the `mathtext` partial, which
+typesets `$…$` with KaTeX and renders the prose runs as inline Markdown with
+raw HTML allowed — the same pipeline as body prose. So `*Drosophila*`
+italicizes, `**not**` bolds, and an allele superscript `I<sup>A</sup>` or a
+subscript `E<sub>A</sub>` renders properly inside a question or an option
+(before August 30, 2026 these printed as literal tag text — the genetics
+chapters exposed it). Aria strings derived from these params are plainified,
+so markup never reaches a screen reader as tag soup.
+
 Three cases the chemistry chapters settled (unit 1):
 
 - **Ion charges are Unicode and trailing**: `Cl⁻`, `OH⁻`, `HCO₃⁻`, `COO⁻`,
@@ -245,7 +255,9 @@ Cases the cell chapters settled (unit 2):
   Unicode Δ; the one genuine equation, `ΔG = ΔH − TΔS`, is `$…$`. The source
   auditor folds a Unicode sub/superscript digit into its own token so that
   `CO₂` matches a `<sub>2</sub>` heading.
-- **An objective no source item tests may get one author-written item**:
+- **An objective group left thin by the source may get an author-written item**
+— an objective no source item tests, or a group short of the book's floor
+after its source items and summary items are placed:
   a multiple choice built strictly from the page's own table or sentence,
   or a self-check whose model answer paraphrases one paragraph, with no new
   claim — disclosed in the ledger and the footer. Prefer a glossary
@@ -339,6 +351,7 @@ answers). They map onto components as follows:
 | Visual Connection Questions | `section.visual-exercise` (the `note.visual-connection` in the body carries the same item) | the `mediafigure` first, then `multiplechoice` when the source keys a choice, `selfcheck` when it keys prose |
 | Critical Thinking Questions | `section.critical-thinking` | `selfcheck`, the source solution as the model answer |
 | Key terms | `<glossary>` | `textin` recall items (below) |
+| Comparison tables | `<table>` (CALS; the caption is the spanning `<thead>` row) | `sortbins` when the data columns name categories — the columns become the bins, the rows become items (below) |
 
 **Multiple choice.** Options are the source's, in the source's order, each
 on its own line of the shortcode body; `answer` is the keyed option verbatim.
@@ -354,7 +367,13 @@ and say so in `Changes:` — never hand-pick positions.
 content is the source solution, lightly reformatted into complete sentences
 where the key is telegraphic, never extended with new claims. The learner
 writes, reveals, and self-marks; nothing is graded, so a self-check never
-substitutes for the one auto-graded item each Practice group needs.
+substitutes for the one auto-graded item each Practice group needs. Biology
+selfchecks carry a rubric: `===CHECKS===` then 2–6 checkpoints, each a
+clause of the source solution as it appears in the model answer (decompose
+the solution's own sentences — never add a claim it does not make), so the
+learner self-marks against the source's actual points. The rubric
+requirement for this book is a lint error, landed with the practice
+retrofit.
 
 **Text recall** (`textin`). Built from the section's own glossary: the
 meaning becomes the prompt, the term the answer.
@@ -387,11 +406,47 @@ meaning becomes the prompt, the term the answer.
 - Never a textin whose answer is a number, a formula, or a sentence: numbers
   are `fillin` territory, sentences are `selfcheck`.
 
+**Summary items.** The module's `<section class="summary">` is the largest
+keyed corpus after the exercise sets, and it tests concepts where the
+glossary tests vocabulary. Two forms, both built from a single summary
+sentence with **no new claim**:
+
+- a cloze `textin`: blank exactly one content phrase (≤4 words, the textin
+  lint's cap) of the sentence; the surviving prompt must not contain the
+  answer (the retype lint checks), and never blank a word the sentence
+  defines in apposition — such a prompt answers itself;
+- a select-the-term `multiplechoice`: the summary sentence as stem, 3–4
+  distractors of the same category drawn from the same module's own terms;
+  every option and every stem clause must appear in the module.
+
+`verify-source-keys` reports a summary-sourced textin answer with the
+`summary` provenance; a summary-built multiple choice counts as `unmatched`
+(author-written) and rests on the ledger reading and the blind solve, so
+the footer discloses it like any locally written item. When an objective
+group runs thin, reach for a summary item before inventing anything else.
+
+**Sort into bins** (`sortbins`). Built from a source comparison table whose
+data columns name categories (prokaryote/eukaryote, plant/animal…): the
+column headers become the bins, and each item combines a row label with its
+cell value ("Origin of replication | Single | Multiple" → item "Single
+origin of replication" binned under Prokaryotes). Keep the table itself in
+the body as Markdown — the sortbins is its practice form, placed in the
+Practice group of the objective the table serves. `verify-source-keys`
+matches the bins to the table's data columns and fails any item that reads
+strictly better under a different column than the one it is keyed to (a
+deliberate deviation is `kind: "assignment"` in `DISCLOSED_DEVIATIONS`,
+keyed by the table id); the orchestrator blind-solves the full label→bin
+mapping like any other graded item. A table whose columns are quantities,
+units, or steps rather than categories is not sortbins material — transcribe
+it and move on. Syntax and the interleave/giveaway rules are in the core
+playbook §3.
+
 **The `## Practice` block** follows the core rule — one `### ` group per
-objective in callout order, at least two exercises per group, at least five
-per section, every item from the source's keyed sets or the glossary, every
-regular-section item hinted — plus the biology rule that **each group holds
-at least one auto-graded item** (`multiplechoice` or `textin`). Place a
+objective in callout order, every item from the source's keyed sets, the
+summary, or the glossary, every regular-section item hinted — at this book's
+landed floor: **at least three exercises per group, at least eight per
+section** (the core default elsewhere is two/five) — plus the biology rule that **each group holds
+at least one auto-graded item** (`multiplechoice`, `textin`, or `sortbins`). Place a
 Review Question under the objective it tests, its Critical Thinking item
 under the objective it argues, and fill thin groups with glossary recall.
 Record every item in the source ledger with its exercise or definition id.

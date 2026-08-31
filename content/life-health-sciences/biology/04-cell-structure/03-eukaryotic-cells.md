@@ -34,6 +34,9 @@ Panel (b) of the figure above: a typical eukaryotic plant cell, with the cell wa
 
 {{< selfcheck question="If the nucleolus were not able to carry out its function, what other cellular organelles would be affected?" hint="Think about what the nucleolus assembles and where that product is needed next." >}}
 Free ribosomes and the rough endoplasmic reticulum (which contains ribosomes) would not be able to form.
+===CHECKS===
+free ribosomes would not be able to form
+the rough endoplasmic reticulum (which contains ribosomes) would not be able to form
 {{< /selfcheck >}}
 
 ## The Plasma Membrane
@@ -221,6 +224,12 @@ vacuole
 ribosomes
 {{< /multiplechoice >}}
 
+{{< textin
+  question="Unlike a prokaryotic cell, a eukaryotic cell has a ________ (meaning a membrane surrounds its DNA)."
+  answer="true nucleus"
+  hint="The section's summary uses this exact phrase for the membrane-bound nucleus that gives eukaryotic cells their name."
+>}}
+
 ### Compare animal cells with plant cells
 
 {{< multiplechoice
@@ -241,10 +250,27 @@ nuclei
   hint="Fungal and some protistan cells have this structure too, but animal cells do not."
 >}}
 
+{{< multiplechoice
+  question="Plant cells and plant-like cells each have a cell wall, chloroplasts, and a ________."
+  answer="central vacuole"
+  hint="The section's summary names this large, water-storing organelle as the third structure plant cells have that animal cells lack."
+>}}
+lysosome
+central vacuole
+centrosome
+peroxisome
+{{< /multiplechoice >}}
+
 ### State the role of the plasma membrane
 
 {{< selfcheck question="Why are plasma membranes arranged as a bilayer rather than a monolayer?" hint="Think about what would happen to the hydrophobic tails of the phospholipids if they were exposed on both faces of the membrane." >}}
 The plasma membrane is a bilayer because the phospholipids that create it are amphiphilic (hydrophilic head, hydrophobic tail). If the plasma membrane were a monolayer, the hydrophobic tails of the phospholipids would be in direct contact with the inside of the cell. Since the cytoplasm is largely made of water, this interaction would not be stable, and would disrupt the plasma membrane as the tails were repulsed by the cytoplasm — in water, phospholipids spontaneously form spherical droplets with the hydrophilic heads facing outward to isolate the hydrophobic tails from the water. By having a bilayer, the hydrophilic heads are exposed to the aqueous cytoplasm and extracellular space, while the hydrophobic tails interact with each other in the middle of the membrane.
+===CHECKS===
+the phospholipids that create it are amphiphilic (hydrophilic head, hydrophobic tail)
+the hydrophobic tails of the phospholipids would be in direct contact with the inside of the cell
+the cytoplasm is largely made of water
+phospholipids spontaneously form spherical droplets with the hydrophilic heads facing outward
+the hydrophilic heads are exposed to the aqueous cytoplasm and extracellular space, while the hydrophobic tails interact with each other in the middle of the membrane
 {{< /selfcheck >}}
 
 {{< textin
@@ -252,6 +278,12 @@ The plasma membrane is a bilayer because the phospholipids that create it are am
   answer="plasma membrane"
   accept="cell membrane|plasma membranes|cell membranes"
   hint="Integral and peripheral proteins sit in and on this structure, along with embedded cholesterol."
+>}}
+
+{{< textin
+  question="The plasma membrane is a ________ embedded with proteins."
+  answer="phospholipid bilayer"
+  hint="The section's summary opens its plasma-membrane sentence with this two-word structural term."
 >}}
 
 ### Summarize the functions of the major cell organelles
@@ -280,12 +312,22 @@ mitochondria
 
 {{< selfcheck question="You already know that ribosomes are abundant in red blood cells. In what other cells of the body would you find them in great abundance? Why?" hint="Think about which cells in the body must synthesize very large amounts of protein." >}}
 Ribosomes are abundant in muscle cells as well, because muscle cells are constructed of the proteins that ribosomes make.
+===CHECKS===
+ribosomes are abundant in muscle cells
+muscle cells are constructed of the proteins that ribosomes make
 {{< /selfcheck >}}
 
 {{< selfcheck question="What are the structural and functional similarities and differences between mitochondria and chloroplasts?" hint="Consider what both organelles are enclosed by and what they both produce, then consider what only one of them contains." >}}
 Both are similar in that they are enveloped in a double membrane, both have an intermembrane space, and both make ATP. Both mitochondria and chloroplasts have their own DNA. Mitochondria have inner folds called cristae and a matrix, while chloroplasts have chlorophyll and accessory pigments in the thylakoids that form stacks (grana) surrounded by the stroma.
+===CHECKS===
+enveloped in a double membrane
+both have an intermembrane space
+both make ATP
+both mitochondria and chloroplasts have their own DNA
+mitochondria have inner folds called cristae and a matrix
+chloroplasts have chlorophyll and accessory pigments in the thylakoids that form stacks (grana) surrounded by the stroma
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 4.3: Eukaryotic Cells](https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with ten of the eleven re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a drawn illustration, or a diagram paired with a micrograph whose labels carry the teaching — only the mitochondrion electron micrograph is a photograph, and its four baked-in labels are all named in its caption); an extended description added for the six figures that are labeled diagrams whose full reading is not carried by their captions (the animal-cell and plant-cell diagrams, which the source prints as panels (a) and (b) of one figure and this page renders as two consecutive figures — the second carrying a short caption written here — because each panel is its own image; the plasma membrane, the microvilli micrograph-and-diagram pair, the nucleus, the chromatin-and-chromosomes pair, and the ribosome); inline references to figures changed from the source's print-figure links ("(see below)", plain parenthetical links) to descriptive phrases ("above," "below") since figures are not numbered here, and the source's lettered cross-reference "if you look at b" resolved to "the plant-cell panel of the diagram above"; the evolution feature box rendered as a callout with its bold name and the source's own subheading ("Endosymbiosis") kept as an italic clause; the visual-connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; a typo in the source prose ("pathogene defense") corrected to "pathogen defense", and a missing "that" supplied in the Evolution Connection's sentence on symbiosis; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (cell wall, plasma membrane) added from the glossary to round out every objective group with an auto-graded item.</small>
+<small>This section is adapted from [Biology 2e, Section 4.3: Eukaryotic Cells](https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with ten of the eleven re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a drawn illustration, or a diagram paired with a micrograph whose labels carry the teaching — only the mitochondrion electron micrograph is a photograph, and its four baked-in labels are all named in its caption); an extended description added for the six figures that are labeled diagrams whose full reading is not carried by their captions (the animal-cell and plant-cell diagrams, which the source prints as panels (a) and (b) of one figure and this page renders as two consecutive figures — the second carrying a short caption written here — because each panel is its own image; the plasma membrane, the microvilli micrograph-and-diagram pair, the nucleus, the chromatin-and-chromosomes pair, and the ribosome); inline references to figures changed from the source's print-figure links ("(see below)", plain parenthetical links) to descriptive phrases ("above," "below") since figures are not numbered here, and the source's lettered cross-reference "if you look at b" resolved to "the plant-cell panel of the diagram above"; the evolution feature box rendered as a callout with its bold name and the source's own subheading ("Endosymbiosis") kept as an italic clause; the visual-connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; a typo in the source prose ("pathogene defense") corrected to "pathogen defense", and a missing "that" supplied in the Evolution Connection's sentence on symbiosis; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (cell wall, plasma membrane) added from the glossary to round out every objective group with an auto-graded item; rubric checkpoints added to each self-check (the body self-check on the nucleolus included), decomposing its model answer (the source solution) into check-off clauses with no new claims; and three summary-derived recall items added, one per objective still short of the raised floor ("true nucleus" under the first objective, "central vacuole" as a multiple choice under the second, and "phospholipid bilayer" under the third).</small>

@@ -16,8 +16,9 @@
 //   fill-in           a wrong answer graded ("Not quite" feedback shown)
 //   text-in           a wrong answer graded
 //   multiple-choice   the second option chosen (usually wrong; shows feedback)
-//   self-check        the model answer revealed
+//   self-check        the model answer revealed, one rubric checkpoint ticked
 //   graph-plot        as rendered
+//   sort-bins         every item placed in the last bin, then graded
 //   ap-figure         as rendered (spec-first SVG)
 //   mediafigure       as rendered, extended description opened if present
 //   callout           as rendered
@@ -36,8 +37,9 @@ export const KINDS = Object.freeze({
   'fill-in': { selector: 'fill-in', action: 'wrong-fillin' },
   'text-in': { selector: 'text-in', action: 'wrong-textin' },
   'multiple-choice': { selector: 'multiple-choice', action: 'choose-second' },
-  'self-check': { selector: 'self-check', action: 'open-details' },
+  'self-check': { selector: 'self-check', action: 'open-selfcheck' },
   'graph-plot': { selector: 'graph-plot', action: null },
+  'sort-bins': { selector: 'sort-bins', action: 'wrong-sortbins' },
   'ap-figure': { selector: 'ap-figure', action: null },
   mediafigure: { selector: 'figure.ap-mediafigure', action: 'open-details' },
   callout: { selector: '.content > div[class*="hx:rounded-lg"][class*="hx:border"]', action: null },
@@ -94,12 +96,44 @@ async function drive(el, action, page) {
       await page.waitForTimeout(150)
       return
     }
+    case 'wrong-sortbins': {
+      // Every item into the LAST bin: the ownership cap in the config parser
+      // means all-in-one-bin is never the key, so this reliably captures the
+      // graded partial/incorrect feedback state.
+      await page.waitForFunction((node) => node.querySelector('.ap-sortbins-item:not([disabled])'), await el.elementHandle(), { timeout: 15_000 }).catch(() => {})
+      // Click the first TRAY item each pass: moving a button into a bin
+      // reorders the DOM, so nth(i) over all items skips some as they move.
+      const tray = el.locator('.ap-sortbins-tray .ap-sortbins-item')
+      const places = el.locator('.ap-sortbins-place')
+      const bins = await places.count()
+      while (await tray.count()) {
+        await tray.first().click()
+        await places.nth(bins - 1).click()
+      }
+      await el.locator('.ap-sortbins-check').click()
+      await page.waitForTimeout(150)
+      return
+    }
     case 'choose-second': {
       await page.waitForFunction((node) => node.querySelector('.ap-mc-option:not([disabled])'), await el.elementHandle(), { timeout: 15_000 }).catch(() => {})
       const options = el.locator('.ap-mc-option')
       const count = await options.count()
       if (count > 1) await options.nth(1).click()
       await page.waitForTimeout(150)
+      return
+    }
+    case 'open-selfcheck': {
+      // Reveal the model answer, then tick the first rubric checkpoint (if
+      // the item carries one) so review PNGs show the rubric interaction.
+      const scSummary = el.locator('details > summary').first()
+      if (await scSummary.count()) {
+        const open = await scSummary.evaluate((s) => s.parentElement.open)
+        if (!open) await scSummary.click()
+        await page.waitForTimeout(100)
+      }
+      const box = el.locator('.ap-selfcheck-checkpoints input[type="checkbox"]').first()
+      if (await box.count()) await box.check().catch(() => {})
+      await page.waitForTimeout(100)
       return
     }
     case 'open-details': {

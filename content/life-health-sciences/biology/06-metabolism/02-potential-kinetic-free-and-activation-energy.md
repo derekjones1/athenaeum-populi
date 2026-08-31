@@ -65,6 +65,11 @@ This figure shows some examples of endergonic processes (ones that require energ
 
 {{< selfcheck question="Look at each of the processes above, and decide if it is endergonic or exergonic. In each case, does enthalpy increase or decrease, and does entropy increase or decrease?" hint="Ask two questions of each photo: does it need an energy input to happen, and does it move toward more disorder or less?" >}}
 A compost pile decomposing is an exergonic process; enthalpy decreases (energy is released) and entropy increases (large molecules are broken down into smaller ones). A baby developing from a fertilized egg is an endergonic process; enthalpy increases (energy is absorbed) and entropy decreases. Sand art being destroyed is an exergonic process; there is no change in enthalpy, but entropy increases. A ball rolling downhill is an exergonic process; enthalpy decreases (energy is released), but there is no change in entropy.
+===CHECKS===
+a compost pile decomposing is an exergonic process; enthalpy decreases and entropy increases
+a baby developing from a fertilized egg is an endergonic process; enthalpy increases and entropy decreases
+sand art being destroyed is an exergonic process; there is no change in enthalpy, but entropy increases
+a ball rolling downhill is an exergonic process; enthalpy decreases, but there is no change in entropy
 {{< /selfcheck >}}
 
 An important concept in studying metabolism and energy is that of chemical equilibrium. Most chemical reactions are reversible. They can proceed in both directions, releasing energy into their environment in one direction, and absorbing it from the environment in the other direction (below). The same is true for the chemical reactions involved in cell metabolism, such as the breaking down and building up of proteins into and from individual amino acids, respectively. Reactants within a closed system will undergo chemical reactions in both directions until they reach a state of equilibrium, which is one of the lowest possible free energy and a state of maximal entropy. To push the reactants and products away from a state of equilibrium requires energy. Either reactants or products must be added, removed, or changed. If a cell were a closed system, its chemical reactions would reach equilibrium, and it would die because there would be insufficient free energy left to perform the necessary work to maintain life. In a living cell, chemical reactions are constantly moving towards equilibrium, but never reach it. This is because a living cell is an open system. Materials pass in and out, the cell recycles the products of certain chemical reactions into other reactions, and there is never chemical equilibrium. In this way, living organisms are in a constant energy-requiring, uphill battle against equilibrium and entropy. This constant energy supply ultimately comes from sunlight, which produces nutrients in the photosynthesis process.
@@ -93,6 +98,9 @@ Activation energy is the energy required for a reaction to proceed, and it is lo
 
 {{< selfcheck question="If no activation energy were required to break down sucrose (table sugar), would you be able to store it in a sugar bowl?" hint="Ask what would happen to a stable, energy-storing molecule if nothing were holding back its breakdown." >}}
 No. We can store chemical energy because of the need to overcome the barrier to its breakdown.
+===CHECKS===
+we can store chemical energy
+the need to overcome the barrier to its breakdown
 {{< /selfcheck >}}
 
 ## Summary
@@ -129,6 +137,17 @@ A reaction's ΔG can be negative or positive, meaning that the reaction releases
   answer="heat energy"
   hint="It is what typically supplies the activation energy that pushes a reaction over its barrier."
 >}}
+
+{{< multiplechoice
+  question="We define energy as the ability to ________."
+  answer="do work"
+  hint="The section's opening sentence states this directly."
+>}}
+change temperature
+release heat
+do work
+store mass
+{{< /multiplechoice >}}
 
 ### Explain the difference between kinetic and potential energy
 
@@ -177,6 +196,9 @@ Compare the spontaneity between the two reactions.
 
 {{< selfcheck question="Describe the position of the transition state on a vertical energy scale, from low to high, relative to the position of the reactants and products, for both endergonic and exergonic reactions." hint="This high-energy, unstable state sits between the reactants and the products, however the reaction runs." >}}
 The transition state is always higher in energy than the reactants and the products of a reaction (therefore, above), regardless of whether the reaction is endergonic or exergonic.
+===CHECKS===
+the transition state is always higher in energy than the reactants and the products of a reaction
+regardless of whether the reaction is endergonic or exergonic
 {{< /selfcheck >}}
 
 ### Describe endergonic and exergonic reactions
@@ -206,8 +228,12 @@ Endergonic reactions take place slowly and exergonic reactions take place quickl
 
 {{< selfcheck question="Explain in your own words the difference between a spontaneous reaction and one that occurs instantaneously, and what causes this difference." hint="Rusting iron is spontaneous, but it is not fast; think about what makes a spontaneous reaction slow." >}}
 A spontaneous reaction is one that has a negative ΔG and thus releases energy. However, a spontaneous reaction need not occur quickly or suddenly like an instantaneous reaction. It may occur over long periods due to a large energy of activation, which prevents the reaction from occurring quickly.
+===CHECKS===
+a spontaneous reaction is one that has a negative ΔG and releases energy
+a spontaneous reaction need not occur quickly or suddenly like an instantaneous reaction
+it may occur over long periods due to a large energy of activation, which prevents the reaction from occurring quickly
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 6.2: Potential, Kinetic, Free, and Activation Energy](https://openstax.org/books/biology-2e/pages/6-2-potential-kinetic-free-and-activation-energy) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with four of the five re-kinded from the manifest's file-extension guess — the two Gibbs-free-energy line graphs and the octane figure corrected from "photo" to "diagram" (plotted charts and molecular-structure drawings, not photographs), and the four-panel Visual Connection figure corrected from "diagram" to "photo" (all four panels are photographs); a longdesc extended description added for the two Gibbs-free-energy graphs, whose axis labels, curves, and arrows are not fully carried by their captions; the source alt for the four-panel Visual Connection figure ("There are four photos show...") rewritten from the image, since the source text is grammatically broken and does not name what each lettered panel shows — reported as a source defect; a missing space in the Figure 6.9 caption ("...to occur.Credit: Tag...") restored to "...to occur. Credit: Tag..." — reported as a source defect, also present in the printed PDF; the display equation ΔG = ΔH − TΔS set in KaTeX as the one genuine mathematical expression in the section, with ΔG/ΔH/ΔS elsewhere in prose kept as Unicode Δ; the source's increment symbol (∆, U+2206) normalized to the Greek capital delta (Δ, U+0394) throughout for a single consistent glyph; E<sub>A</sub> set with an HTML subscript, since no Unicode subscript "A" glyph exists; both Link to Learning boxes given descriptive anchor text in place of the source's bare "site"/"this"; both Visual Connection questions kept in the body immediately after their figures and rendered as self-checks, since the source keys each with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); and seven key-term recall items (chemical energy, heat energy, kinetic energy, potential energy, free energy, endergonic, exergonic) added from the glossary so every objective group carries at least one auto-graded item.</small>
+<small>This section is adapted from [Biology 2e, Section 6.2: Potential, Kinetic, Free, and Activation Energy](https://openstax.org/books/biology-2e/pages/6-2-potential-kinetic-free-and-activation-energy) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with four of the five re-kinded from the manifest's file-extension guess — the two Gibbs-free-energy line graphs and the octane figure corrected from "photo" to "diagram" (plotted charts and molecular-structure drawings, not photographs), and the four-panel Visual Connection figure corrected from "diagram" to "photo" (all four panels are photographs); a longdesc extended description added for the two Gibbs-free-energy graphs, whose axis labels, curves, and arrows are not fully carried by their captions; the source alt for the four-panel Visual Connection figure ("There are four photos show...") rewritten from the image, since the source text is grammatically broken and does not name what each lettered panel shows — reported as a source defect; a missing space in the Figure 6.9 caption ("...to occur.Credit: Tag...") restored to "...to occur. Credit: Tag..." — reported as a source defect, also present in the printed PDF; the display equation ΔG = ΔH − TΔS set in KaTeX as the one genuine mathematical expression in the section, with ΔG/ΔH/ΔS elsewhere in prose kept as Unicode Δ; the source's increment symbol (∆, U+2206) normalized to the Greek capital delta (Δ, U+0394) throughout for a single consistent glyph; E<sub>A</sub> set with an HTML subscript, since no Unicode subscript "A" glyph exists; both Link to Learning boxes given descriptive anchor text in place of the source's bare "site"/"this"; both Visual Connection questions kept in the body immediately after their figures and rendered as self-checks, since the source keys each with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check, respectively); and seven key-term recall items (chemical energy, heat energy, kinetic energy, potential energy, free energy, endergonic, exergonic) added from the glossary so every objective group carries at least one auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one multiple choice written locally, strictly from the section's own opening sentence defining energy, since the module's Review Questions and Critical Thinking Questions all map to the section's other three objectives and left "Define energy" with only two recall items, disclosed in the ledger.</small>

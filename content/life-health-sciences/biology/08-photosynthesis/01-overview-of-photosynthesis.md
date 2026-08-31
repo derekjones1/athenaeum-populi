@@ -63,6 +63,9 @@ Photosynthesis takes place in chloroplasts, which have an outer membrane and an 
 
 {{< selfcheck question="On a hot, dry day, the guard cells of plants close their stomata to conserve water. What impact will this have on photosynthesis?" hint="Think about what enters a leaf through open stomata that photosynthesis needs as a raw material." >}}
 Levels of carbon dioxide (a necessary photosynthetic substrate) will immediately fall. As a result, the rate of photosynthesis will be inhibited.
+===CHECKS===
+levels of carbon dioxide will immediately fall
+the rate of photosynthesis will be inhibited
 {{< /selfcheck >}}
 
 ## The Two Parts of Photosynthesis
@@ -117,10 +120,18 @@ Only certain organisms (photoautotrophs), can perform photosynthesis; they requi
 
 {{< selfcheck question="Why are carnivores, such as lions, dependent on photosynthesis to survive?" hint="Trace a lion's food back through the animals it eats to what those animals eat." >}}
 Lions eat animals that eat plants.
+===CHECKS===
+lions eat animals
+animals eat plants
 {{< /selfcheck >}}
 
 {{< selfcheck question="Describe how the grey wolf population would be impacted by a volcanic eruption that spewed a dense ash cloud that blocked sunlight in a section of Yellowstone National Park." hint="Follow the loss of sunlight down the food web, from the plants to the smaller animals to the wolves that depend on them." >}}
 The grey wolves are apex predators in their food web, meaning they consume smaller prey animals and are not the prey of any other animal. Blocking sunlight would prevent the plants at the bottom of the food web from performing photosynthesis. This would kill many of the plants, reducing the food sources available to smaller animals in Yellowstone. A smaller prey animal population means that fewer wolves can survive in the area, and the population of grey wolves will decrease.
+===CHECKS===
+grey wolves are apex predators in their food web
+blocking sunlight would prevent the plants from performing photosynthesis
+this would kill many of the plants
+the population of grey wolves will decrease
 {{< /selfcheck >}}
 
 {{< textin
@@ -202,17 +213,30 @@ They both store energy in chemical bonds.
 
 {{< selfcheck question="What is the overall outcome of the light reactions in photosynthesis?" hint="Think about what form of energy goes in and what form of energy comes out, ready for the light-independent reactions to use." >}}
 The outcome of light reactions in photosynthesis is the conversion of solar energy into chemical energy that the chloroplasts can use to do work (mostly anabolic production of carbohydrates from carbon dioxide).
+===CHECKS===
+conversion of solar energy into chemical energy
+the chloroplasts can use to do work
+anabolic production of carbohydrates from carbon dioxide
 {{< /selfcheck >}}
 
 {{< selfcheck question="Why are energy carriers thought of as either 'full' or 'empty'?" hint="Think about what these molecules are carrying between the light-dependent and light-independent reactions, and what is left once they deliver it." >}}
 The energy carriers that move from the light-dependent reaction to the light-independent one are "full" because they bring energy. After the energy is released, the "empty" energy carriers return to the light-dependent reaction to obtain more energy. There is not much actual movement involved. Both ATP and NADPH are produced in the stroma where they are also used and reconverted into ADP, Pi, and NADP⁺.
+===CHECKS===
+the energy carriers are full because they bring energy
+the empty energy carriers return to the light-dependent reaction to obtain more energy
+both ATP and NADPH are produced in the stroma
 {{< /selfcheck >}}
 
 {{< selfcheck question="How does the closing of the stomata limit photosynthesis?" hint="Stomata are the leaf's only opening for gas exchange with the outside air — think about which photosynthetic substrate that traps inside the leaf." >}}
 The stomata regulate the exchange of gases and water vapor between a leaf and its surrounding environment. When the stomata are closed, the water molecules cannot escape the leaf, but the leaf also cannot acquire new carbon dioxide molecules from the environment. This limits the light-independent reactions to only continuing until the carbon dioxide stores in the leaf are depleted.
+===CHECKS===
+the stomata regulate the exchange of gases and water vapor
+the water molecules cannot escape the leaf
+the leaf cannot acquire new carbon dioxide molecules from the environment
+this limits the light-independent reactions to only continuing until the carbon dioxide stores in the leaf are depleted
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 8.1: Overview of Photosynthesis](https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with three of the seven re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the labeled tree diagram, the photosynthesis-equation graphic, and the light-reactions/Calvin-cycle chloroplast illustration all carry their teaching in overlaid labels and arrows rather than as documentary photography), and the labeled tree diagram's alt rewritten from the image to give each arrow's direction (sunlight, water, and carbon dioxide into the tree; oxygen and sugars out); a longer extended description added for the light-reactions/Calvin-cycle chloroplast diagram, whose full arrow-and-label reading is not carried by its caption; the composite photoautotroph/chemoautotroph figure's alt normalized to consistent lowercase panel letters (the source alternated "Photo D" and "Micrograph E" with the rest lowercase); the grocery-store aisle photo's alt expanded from the source's bare "A photo shows people shopping in a grocery store" to name the aisle and shelves it shows; the photosynthesis-equation figure additionally transcribed as two Unicode-text chemical equations (the word form and the balanced numeric form) immediately after it, since a display chemical equation is not KaTeX math here; inline references to figures changed from the source's print numbers to "below"/"above" since figures are not numbered here; feature boxes (one Link to Learning note and one Everyday Connection) rendered as callouts with their bold names; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the "lions" critical-thinking answer turned into a complete sentence; and one key-term recall item (heterotroph) added from the glossary to give its objective group an auto-graded item.</small>
+<small>This section is adapted from [Biology 2e, Section 8.1: Overview of Photosynthesis](https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with three of the seven re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the labeled tree diagram, the photosynthesis-equation graphic, and the light-reactions/Calvin-cycle chloroplast illustration all carry their teaching in overlaid labels and arrows rather than as documentary photography), and the labeled tree diagram's alt rewritten from the image to give each arrow's direction (sunlight, water, and carbon dioxide into the tree; oxygen and sugars out); a longer extended description added for the light-reactions/Calvin-cycle chloroplast diagram, whose full arrow-and-label reading is not carried by its caption; the composite photoautotroph/chemoautotroph figure's alt normalized to consistent lowercase panel letters (the source alternated "Photo D" and "Micrograph E" with the rest lowercase); the grocery-store aisle photo's alt expanded from the source's bare "A photo shows people shopping in a grocery store" to name the aisle and shelves it shows; the photosynthesis-equation figure additionally transcribed as two Unicode-text chemical equations (the word form and the balanced numeric form) immediately after it, since a display chemical equation is not KaTeX math here; inline references to figures changed from the source's print numbers to "below"/"above" since figures are not numbered here; feature boxes (one Link to Learning note and one Everyday Connection) rendered as callouts with their bold names; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the "lions" critical-thinking answer turned into a complete sentence; and one key-term recall item (heterotroph) added from the glossary to give its objective group an auto-graded item; and rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
 

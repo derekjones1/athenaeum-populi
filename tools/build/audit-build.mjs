@@ -749,7 +749,7 @@ else if (built.length >= maxFiles * filesWarnAt) {
   const NOSCRIPT_NOTICE = /class=(?:"[^"]*\bap-noscript-notice\b[^"]*"|'[^']*\bap-noscript-notice\b[^']*'|ap-noscript-notice\b)/g;
   const missing = [];
   for (const [index, document] of htmlDocuments.entries()) {
-    const components = (document.match(/<(?:fill-in|graph-plot|text-in)\b/g) || []).length;
+    const components = (document.match(/<(?:fill-in|graph-plot|text-in|sort-bins)\b/g) || []).length;
     const notices = (document.match(NOSCRIPT_NOTICE) || []).length;
     if (components !== notices) {
       missing.push(`${htmlFiles[index]}: ${components} interactive component(s), ${notices} noscript notice(s)`);

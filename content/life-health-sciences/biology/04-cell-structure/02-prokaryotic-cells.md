@@ -57,6 +57,10 @@ Notice that as a cell increases in size, its surface area-to-volume ratio decrea
 
 {{< selfcheck question="What advantages might small cell size confer on a cell?" hint="Think about how far a molecule has to travel to reach every part of the cytoplasm, and how that distance changes as a cell grows." >}}
 Substances can diffuse more quickly through small cells. Small cells have no need for organelles and therefore do not need to expend energy getting substances across organelle membranes.
+===CHECKS===
+substances can diffuse more quickly through small cells
+small cells have no need for organelles
+do not need to expend energy getting substances across organelle membranes
 {{< /selfcheck >}}
 
 ## Summary
@@ -85,8 +89,19 @@ charophyte algae
 E. coli
 {{< /multiplechoice >}}
 
+{{< textin
+  question="Prokaryotes are single-celled organisms of the domains ________."
+  answer="Bacteria and Archaea"
+  accept="Archaea and Bacteria"
+  hint="The section's summary names the two domains that make up all prokaryotes."
+>}}
+
 {{< selfcheck question="Explain why not all microbes are harmful." hint="Think about the microbiologist connection above — many microbes work with us instead of causing disease." >}}
 Some microbes are beneficial. For instance, *E. coli* bacteria populate the human gut and help break down fiber in the diet. Some foods, such as yogurt, are formed by bacteria.
+===CHECKS===
+some microbes are beneficial
+E. coli bacteria populate the human gut and help break down fiber in the diet
+some foods, such as yogurt, are formed by bacteria
 {{< /selfcheck >}}
 
 ### Compare and contrast prokaryotic and eukaryotic cells
@@ -102,8 +117,19 @@ synthesize proteins
 retain the ability to divide
 {{< /multiplechoice >}}
 
+{{< textin
+  question="All prokaryotes have plasma membranes, cytoplasm, ribosomes, and DNA that is ________."
+  answer="not membrane-bound"
+  hint="This is the key structural feature that separates prokaryotic DNA from a eukaryotic cell's DNA."
+>}}
+
 {{< selfcheck question="Antibiotics are medicines that are used to fight bacterial infections. These medicines kill prokaryotic cells without harming human cells. What part or parts of the bacterial cell do you think antibiotics target? Why?" hint="Think about which structure bacterial cells have that human cells lack entirely." >}}
 The cell wall would be targeted by antibiotics, as well as the bacteria's ability to replicate. This would inhibit the bacteria's ability to reproduce, and it would compromise its defense mechanisms.
+===CHECKS===
+the cell wall would be targeted by antibiotics
+as well as the bacteria's ability to replicate
+inhibit the bacteria's ability to reproduce
+compromise its defense mechanisms
 {{< /selfcheck >}}
 
 ### Describe the relative sizes of different cells
@@ -122,6 +148,12 @@ The cell wall would be targeted by antibiotics, as well as the bacteria's abilit
   hint="Unlike a eukaryotic nucleus, this region has no surrounding membrane."
 >}}
 
+{{< textin
+  question="Prokaryotic cells range in diameter from 0.1 to ________."
+  answer="5.0 μm"
+  hint="The section's summary gives this as the upper end of the prokaryotic size range."
+>}}
+
 ### Explain why cells must be small
 
 {{< multiplechoice
@@ -135,10 +167,24 @@ cell division
 diffusion
 {{< /multiplechoice >}}
 
+{{< multiplechoice
+  question="As a cell increases in size, its surface area-to-volume ratio ________."
+  answer="decreases"
+  hint="Surface area grows with the square of the radius while volume grows with the cube, so one falls behind the other as a cell gets bigger."
+>}}
+remains constant
+decreases
+doubles
+increases
+{{< /multiplechoice >}}
+
 {{< selfcheck question="What advantages might large cell size have?" hint="Large cells can afford something small cells cannot — think about what that makes possible." >}}
 Large cells have organelles that can separate cellular processes, enabling them to build molecules that are more complex.
+===CHECKS===
+large cells have organelles that can separate cellular processes
+build molecules that are more complex
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 4.2: Prokaryotic Cells](https://openstax.org/books/biology-2e/pages/4-2-prokaryotic-cells) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the generalized prokaryotic-cell diagram re-kinded from the manifest's file-extension guess of "photo" to "diagram" (it is a labeled line drawing, not a photograph), and given a longer extended description walking its eight labels, since a labeled diagram's full reading is not carried by its caption; the size-comparison scale figure's over-long source alt was shortened to what the image shows, with its full object-by-object and instrument-bracket walk-through moved into an extended description; the cube-and-sphere comparison figure's alt corrected — the source says the same sphere is shown in both boxes, but the image draws a visibly larger sphere in the larger box, matching the cell-growth point the caption and prose make — and reported as a source defect; the surface-area and volume formulas set in KaTeX rather than as printed running text; the Visual Connection question and its two-part answer split across its two questions — "what advantages might small cell size confer" kept in the body immediately after its figure as a self-check, and "what advantages might large cell size have" placed in the closing Practice block under the objective it argues, since the source pairs one compound solution with two distinct questions; feature boxes (one Career Connection) rendered as a callout with its bold name; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); the "nucleoid" glossary definition's duplicated "central part … central part" phrasing cleaned to "the central region … where the chromosome is located," reported as a source defect; and two key-term recall items (prokaryote, nucleoid) added from the glossary, since the module's own exercise sets do not otherwise cover the relative-sizes objective.</small>
+<small>This section is adapted from [Biology 2e, Section 4.2: Prokaryotic Cells](https://openstax.org/books/biology-2e/pages/4-2-prokaryotic-cells) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the generalized prokaryotic-cell diagram re-kinded from the manifest's file-extension guess of "photo" to "diagram" (it is a labeled line drawing, not a photograph), and given a longer extended description walking its eight labels, since a labeled diagram's full reading is not carried by its caption; the size-comparison scale figure's over-long source alt was shortened to what the image shows, with its full object-by-object and instrument-bracket walk-through moved into an extended description; the cube-and-sphere comparison figure's alt corrected — the source says the same sphere is shown in both boxes, but the image draws a visibly larger sphere in the larger box, matching the cell-growth point the caption and prose make — and reported as a source defect; the surface-area and volume formulas set in KaTeX rather than as printed running text; the Visual Connection question and its two-part answer split across its two questions — "what advantages might small cell size confer" kept in the body immediately after its figure as a self-check, and "what advantages might large cell size have" placed in the closing Practice block under the objective it argues, since the source pairs one compound solution with two distinct questions; feature boxes (one Career Connection) rendered as a callout with its bold name; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); the "nucleoid" glossary definition's duplicated "central part … central part" phrasing cleaned to "the central region … where the chromosome is located," reported as a source defect; and two key-term recall items (prokaryote, nucleoid) added from the glossary, since the module's own exercise sets do not otherwise cover the relative-sizes objective; rubric checkpoints added to each self-check (the body self-check on small cell size included), decomposing its model answer (the source solution) into check-off clauses with no new claims; and four summary-derived recall items added, one per objective, to raise every group to the raised floor ("Bacteria and Archaea," "not membrane-bound," "5.0 μm," and "decreases," each a cloze or multiple choice on a summary sentence the module's own exercises did not otherwise cover).</small>

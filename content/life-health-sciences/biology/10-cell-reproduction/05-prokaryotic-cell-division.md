@@ -85,10 +85,18 @@ septum
 
 {{< selfcheck question="Describe how the duplicated bacterial chromosomes are distributed into new daughter cells without the direction of the mitotic spindle." hint="Consider what the chromosome is attached to as the cell elongates." >}}
 As the chromosome is being duplicated, each origin moves away from the starting point of replication. The chromosomes are attached to the cell membrane via proteins; the growth of the membrane as the cell elongates aids in their movement.
+===CHECKS===
+each origin moves away from the starting point of replication
+the chromosomes are attached to the cell membrane
+growth of the membrane as the cell elongates aids their movement
 {{< /selfcheck >}}
 
 {{< selfcheck question="Name the common components of eukaryotic cell division and binary fission." hint="Think about what must happen to the genetic material and to the cytoplasm in any dividing cell." >}}
 The common components of eukaryotic cell division and binary fission are DNA duplication, segregation of duplicated chromosomes, and division of the cytoplasmic contents.
+===CHECKS===
+DNA duplication
+segregation of duplicated chromosomes
+division of the cytoplasmic contents
 {{< /selfcheck >}}
 
 {{< textin
@@ -132,6 +140,21 @@ FtsZ evolved from tubulin after eukaryotes diversified
   hint="It is structurally and functionally similar to tubulin, the building block of the eukaryotic mitotic spindle."
 >}}
 
+{{< sortbins question="Assign each cell-division feature to the group of organisms it belongs to." hint="Revisit the Evolution Connection table — genetic-material structure, nuclear division, and daughter-cell separation for each group of organisms." >}}
+{
+  "bins": ["Prokaryotes", "Some protists", "Other protists", "Animal cells"],
+  "items": [
+    { "label": "Single circular chromosome in a nucleoid region", "bin": 0 },
+    { "label": "Chromosomes attach to the intact nuclear envelope", "bin": 1 },
+    { "label": "Mitotic spindle forms from the centrioles", "bin": 2 },
+    { "label": "The nuclear envelope dissolves", "bin": 3 },
+    { "label": "FtsZ proteins assemble into a ring", "bin": 0 },
+    { "label": "Mitotic spindle forms from the centrosomes", "bin": 3 },
+    { "label": "Division occurs through binary fission", "bin": 0 }
+  ]
+}
+{{< /sortbins >}}
+
 ---
 
-<small>This section is adapted from [Biology 2e, Section 10.5: Prokaryotic Cell Division](https://openstax.org/books/biology-2e/pages/10-5-prokaryotic-cell-division) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" (it is a labeled illustration, not a photograph), with a longdesc added since its five numbered steps are not carried by its caption; the source's cross-reference to a figure in this chapter's first section is rendered as a descriptive phrase, and the remaining in-text figure and table references are rendered as descriptive phrases ("as shown below," "the table below") since figures and tables are not numbered here; the Evolution Connection feature box (with its nested comparison table) rendered as a callout with its bold name; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block as multiple choice and self-check respectively, with the second Review Question's keyed option corrected from "cell plate" to "septum" (see the source ledger); and five key-term recall items added from the glossary — four from the section's own four glossary terms and one multiple choice written from the feature box's own text — to give each objective group an auto-graded item.</small>
+<small>This section is adapted from [Biology 2e, Section 10.5: Prokaryotic Cell Division](https://openstax.org/books/biology-2e/pages/10-5-prokaryotic-cell-division) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: the figure re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" (it is a labeled illustration, not a photograph), with a longdesc added since its five numbered steps are not carried by its caption; the source's cross-reference to a figure in this chapter's first section is rendered as a descriptive phrase, and the remaining in-text figure and table references are rendered as descriptive phrases ("as shown below," "the table below") since figures and tables are not numbered here; the Evolution Connection feature box (with its nested comparison table) rendered as a callout with its bold name; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block as multiple choice and self-check respectively, with the second Review Question's keyed option corrected from "cell plate" to "septum" (see the source ledger); and five key-term recall items added from the glossary — four from the section's own four glossary terms and one multiple choice written from the feature box's own text — to give each objective group an auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one sort-into-bins exercise added under the homology objective, its items and assignments taken from the Evolution Connection table's own rows (tab-ch10_05_01).</small>

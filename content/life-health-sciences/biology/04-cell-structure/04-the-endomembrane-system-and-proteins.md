@@ -24,6 +24,9 @@ Membrane and secretory proteins are synthesized in the rough endoplasmic reticul
 
 {{< selfcheck question="If a peripheral membrane protein were synthesized in the lumen (inside) of the ER, would it end up on the inside or outside of the plasma membrane?" hint="Follow the carbohydrate in the figure above: note which face of the vesicle it sits on at each stage, and what happens to that face when the vesicle fuses with the plasma membrane." >}}
 It would end up on the outside. After the vesicle passes through the Golgi apparatus and fuses with the plasma membrane, it turns inside out.
+===CHECKS===
+it would end up on the outside
+after the vesicle passes through the Golgi apparatus and fuses with the plasma membrane, it turns inside out
 {{< /selfcheck >}}
 
 ## The Endoplasmic Reticulum
@@ -146,6 +149,10 @@ Golgi apparatus
 
 {{< selfcheck question="In your opinion, is the nuclear membrane part of the endomembrane system? Why or why not? Defend your answer." hint="Check whether the nuclear envelope is continuous with a structure the section already places inside the endomembrane system." >}}
 Since the external surface of the nuclear membrane is continuous with the rough endoplasmic reticulum, which is part of the endomembrane system, then it is correct to say that it is part of the system.
+===CHECKS===
+the external surface of the nuclear membrane is continuous with the rough endoplasmic reticulum
+which is part of the endomembrane system
+it is correct to say that it is part of the system
 {{< /selfcheck >}}
 
 ### Recognize the relationship between the endomembrane system and its functions
@@ -192,8 +199,13 @@ synthesis of the protein on the lysosome; packaging in the vesicle; distribution
 
 {{< selfcheck question="In the context of cell biology, what do we mean by form follows function? What are at least two examples of this concept?" hint="Look back at the section's own arm-and-wing example, then think of a second body part or organelle whose shape matches what it does." >}}
 "Form follows function" refers to the idea that the function of a body part dictates the form of that body part. As an example, compare your arm to a bat's wing. While the bones of the two correspond, the parts serve different functions in each organism and their forms have adapted to follow that function.
+===CHECKS===
+the function of a body part dictates the form of that body part
+compare your arm to a bat's wing
+the bones of the two correspond
+the parts serve different functions in each organism and their forms have adapted to follow that function
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 4.4: The Endomembrane System and Proteins](https://openstax.org/books/biology-2e/pages/4-4-the-endomembrane-system-and-proteins) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with one re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the phagocytosis illustration is a drawn cartoon, not a photograph, despite its JPEG source); a longer extended description added for the three figures that are labeled diagrams or micrographs whose full reading is not carried by their captions (the ER-to-Golgi-to-membrane flow diagram, the labeled rough-ER micrograph, and the phagocytosis flow diagram); the first figure's alt shortened from over 600 characters to what the image shows, with its step-by-step walk-through moved into the longdesc; inline references to figures changed from the source's parenthetical figure links to descriptive phrases ("above," "below") since figures are not numbered here; the Link to Learning note's bare "here" replaced with descriptive link text; two Career Connection notes rendered as callouts with their bold names and italicized job titles; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (endomembrane system, endoplasmic reticulum) added from the glossary to round out both objective groups with an auto-graded item.</small>
+<small>This section is adapted from [Biology 2e, Section 4.4: The Endomembrane System and Proteins](https://openstax.org/books/biology-2e/pages/4-4-the-endomembrane-system-and-proteins) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with one re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the phagocytosis illustration is a drawn cartoon, not a photograph, despite its JPEG source); a longer extended description added for the three figures that are labeled diagrams or micrographs whose full reading is not carried by their captions (the ER-to-Golgi-to-membrane flow diagram, the labeled rough-ER micrograph, and the phagocytosis flow diagram); the first figure's alt shortened from over 600 characters to what the image shows, with its step-by-step walk-through moved into the longdesc; inline references to figures changed from the source's parenthetical figure links to descriptive phrases ("above," "below") since figures are not numbered here; the Link to Learning note's bare "here" replaced with descriptive link text; two Career Connection notes rendered as callouts with their bold names and italicized job titles; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (endomembrane system, endoplasmic reticulum) added from the glossary to round out both objective groups with an auto-graded item; and rubric checkpoints added to each self-check (the body self-check on the peripheral membrane protein included), decomposing its model answer (the source solution) into check-off clauses with no new claims — no new Practice items were needed, since both objective groups already carried the module's full Review Question and Critical Thinking Question sets at or above the raised per-objective and per-section floors.</small>

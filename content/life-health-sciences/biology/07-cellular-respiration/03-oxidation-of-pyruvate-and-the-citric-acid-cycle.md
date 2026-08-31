@@ -113,7 +113,30 @@ four
 
 {{< selfcheck question="What is the primary difference between a circular pathway and a linear pathway?" hint="Think about what happens to the pathway's final product, and whether the same trip through it can run again without fresh input." >}}
 In a circular pathway, the final product of the reaction is also the initial reactant. The pathway is self-perpetuating, as long as any of the intermediates of the pathway are supplied. Circular pathways are able to accommodate multiple entry and exit points, thus being particularly well suited for amphibolic pathways. In a linear pathway, one trip through the pathway completes the pathway, and a second trip would be an independent event.
+===CHECKS===
+the final product of the reaction is also the initial reactant
+the pathway is self-perpetuating, as long as any of the intermediates of the pathway are supplied
+circular pathways are able to accommodate multiple entry and exit points
+in a linear pathway, one trip through the pathway completes the pathway
+a second trip would be an independent event
 {{< /selfcheck >}}
+
+{{< multiplechoice
+  question="The citric acid cycle is a series of ________ and decarboxylation reactions that removes high-energy electrons and carbon dioxide."
+  answer="redox"
+  hint="The cycle's steps are described as this category of reaction, together with dehydration, hydration, and decarboxylation reactions."
+>}}
+condensation
+dehydration
+redox
+phosphorylation
+{{< /multiplechoice >}}
+
+{{< textin
+  question="The alternate name for the citric acid cycle, named after the scientist who first identified its steps in the 1930s in pigeon flight muscles, is the ________ cycle."
+  answer="Krebs"
+  hint="The section's glossary names this cycle after the scientist who traced its steps in pigeon flight muscles."
+>}}
 
 ### Describe how pyruvate, the product of glycolysis, is prepared for entry into the citric acid cycle
 
@@ -139,6 +162,12 @@ They energize the entry of the acetyl group into the citric acid cycle.
 They are converted to NADP.
 {{< /multiplechoice >}}
 
+{{< textin
+  question="The combination of an acetyl group derived from pyruvic acid and coenzyme A is called ________."
+  answer="acetyl CoA"
+  hint="This is the carrier compound that delivers the acetyl group derived from pyruvate into the citric acid cycle."
+>}}
+
 ---
 
-<small>This section is adapted from [Biology 2e, Section 7.3: Oxidation of Pyruvate and the Citric Acid Cycle](https://openstax.org/books/biology-2e/pages/7-3-oxidation-of-pyruvate-and-the-citric-acid-cycle) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: both figures re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" (each is a schematic molecular illustration, not a photograph); the source's spelled-out alt text ("upper case C lower case o upper case A") was rewritten into a short description of what each diagram shows, with the full numbered step-by-step walk-through moved into a `longdesc` added to each, since neither figure's full reading is carried by its caption; the two inline cross-references to the figures are rendered as "shown below" in place of the source's print figure numbers, since figures are not numbered here; the Link to Learning note is rendered as a callout with a descriptive link ("an animation of the citric acid cycle") in place of the source's bare "here"; the end-of-section Review Questions and the Critical Thinking Question are adapted into the closing interactive Practice block (four multiple choice and one self-check), with the two Review Questions on the citric acid cycle's own steps grouped under the circular-pathway objective and the two Review Questions on pyruvate's oxidation grouped under the pyruvate-preparation objective.</small>
+<small>This section is adapted from [Biology 2e, Section 7.3: Oxidation of Pyruvate and the Citric Acid Cycle](https://openstax.org/books/biology-2e/pages/7-3-oxidation-of-pyruvate-and-the-citric-acid-cycle) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: both figures re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" (each is a schematic molecular illustration, not a photograph); the source's spelled-out alt text ("upper case C lower case o upper case A") was rewritten into a short description of what each diagram shows, with the full numbered step-by-step walk-through moved into a `longdesc` added to each, since neither figure's full reading is carried by its caption; the two inline cross-references to the figures are rendered as "shown below" in place of the source's print figure numbers, since figures are not numbered here; the Link to Learning note is rendered as a callout with a descriptive link ("an animation of the citric acid cycle") in place of the source's bare "here"; the end-of-section Review Questions and the Critical Thinking Question are adapted into the closing interactive Practice block (four multiple choice and one self-check), with the two Review Questions on the citric acid cycle's own steps grouped under the circular-pathway objective and the two Review Questions on pyruvate's oxidation grouped under the pyruvate-preparation objective; rubric checkpoints added to the section's self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; a summary-derived select-the-term multiple choice added under the circular-pathway objective, naming the reaction category ("redox") the summary's own sentence pairs with decarboxylation; and two glossary recall `textin` items added (Krebs cycle under the circular-pathway objective, acetyl CoA under the pyruvate-preparation objective) to raise both objective groups and the section as a whole to the practice floor.</small>

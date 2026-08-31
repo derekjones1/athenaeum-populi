@@ -54,6 +54,10 @@ In a double stranded DNA molecule, the two strands run antiparallel to one anoth
 
 {{< selfcheck question="A mutation occurs, and cytosine is replaced with adenine. What impact do you think this will have on the DNA structure?" hint="Compare the size and ring structure of a purine (adenine) with a pyrimidine (cytosine), and think about what a size mismatch would do to the width of the double helix." >}}
 Adenine is larger than cytosine and will not be able to base pair properly with the guanine on the opposing strand. This will cause the DNA to bulge. DNA repair enzymes may recognize the bulge and replace the incorrect nucleotide.
+===CHECKS===
+adenine is larger than cytosine and will not be able to base pair properly with the guanine on the opposing strand
+this will cause the DNA to bulge
+DNA repair enzymes may recognize the bulge and replace the incorrect nucleotide
 {{< /selfcheck >}}
 
 ## RNA
@@ -131,6 +135,12 @@ nucleotides
 
 {{< selfcheck question="What are the structural differences between RNA and DNA?" hint="Compare the two nucleic acids' strand count (single- versus double-stranded), their sugars, and which four bases each one uses." >}}
 DNA has a double-helix structure. The sugar and the phosphate are on the outside of the helix and the nitrogenous bases are in the interior. The monomers of DNA are nucleotides containing deoxyribose, one of the four nitrogenous bases (A, T, G and C), and a phosphate group. RNA is usually single-stranded and is made of ribonucleotides that are linked by phosphodiester linkages. A ribonucleotide contains ribose (the pentose sugar), one of the four nitrogenous bases (A, U, G, and C), and the phosphate group.
+===CHECKS===
+DNA has a double-helix structure
+the sugar and the phosphate are on the outside of the helix and the nitrogenous bases are in the interior
+the monomers of DNA are nucleotides containing deoxyribose, one of the four nitrogenous bases (A, T, G and C), and a phosphate group
+RNA is usually single-stranded and is made of ribonucleotides that are linked by phosphodiester linkages
+a ribonucleotide contains ribose (the pentose sugar), one of the four nitrogenous bases (A, U, G, and C), and the phosphate group
 {{< /selfcheck >}}
 
 ### Explain DNA's structure and role
@@ -168,6 +178,12 @@ Complementary base pairing allows for easy editing of both strands of DNA.
 
 {{< selfcheck question="What are the four types of RNA and how do they function?" hint="Name each RNA type and match it to the step of protein synthesis it participates in." >}}
 The four types of RNA are messenger RNA, ribosomal RNA, transfer RNA, and microRNA. Messenger RNA carries the information from the DNA that controls all cellular activities. The mRNA binds to the ribosomes that are constructed of proteins and rRNA, and tRNA transfers the correct amino acid to the site of protein synthesis. microRNA regulates the availability of mRNA for translation.
+===CHECKS===
+the four types of RNA are messenger RNA, ribosomal RNA, transfer RNA, and microRNA
+messenger RNA carries the information from the DNA that controls all cellular activities
+the mRNA binds to the ribosomes that are constructed of proteins and rRNA
+tRNA transfers the correct amino acid to the site of protein synthesis
+microRNA regulates the availability of mRNA for translation
 {{< /selfcheck >}}
 
 {{< textin
@@ -177,6 +193,13 @@ The four types of RNA are messenger RNA, ribosomal RNA, transfer RNA, and microR
   hint="This RNA's common name describes its job: it carries a message."
 >}}
 
+{{< textin
+  question="The ________ regulates using mRNA for protein synthesis."
+  answer="microRNA"
+  accept="miRNA"
+  hint="This is the smallest of the four RNA types, named last in the section's summary of RNA functions."
+>}}
+
 ---
 
-<small>This section is adapted from [Biology 2e, Section 3.5: Nucleic Acids](https://openstax.org/books/biology-2e/pages/3-5-nucleic-acids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP and re-kinded from the manifest's guess to `diagram` for all three drawn figures (the nucleotide-component chart, the rendered double-helix model, and the ribosome illustration) since none is a camera photograph; a longer extended description added for the nucleotide-component figure and the ribosome figure, both labeled diagrams whose full reading is not carried by their captions; the Visual Connection kept in the body immediately after its figure, combining the source's embedded question with the separately printed Visual Connection Question into one self-check, with the printed solution as its model answer; inline references to figures changed from the source's numbered pointers to descriptive phrases ("the figure below") since figures are not numbered here; the DNA-and-RNA-features table kept as a Markdown table in the body; the Link to Learning note rendered as a callout with its URL kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; and three key-term recall items (nucleic acid, deoxyribonucleic acid/DNA, messenger RNA/mRNA) added from the glossary, with `accept` covering each term's other form, to round out thin objective groups.</small>
+<small>This section is adapted from [Biology 2e, Section 3.5: Nucleic Acids](https://openstax.org/books/biology-2e/pages/3-5-nucleic-acids) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP and re-kinded from the manifest's guess to `diagram` for all three drawn figures (the nucleotide-component chart, the rendered double-helix model, and the ribosome illustration) since none is a camera photograph; a longer extended description added for the nucleotide-component figure and the ribosome figure, both labeled diagrams whose full reading is not carried by their captions; the Visual Connection kept in the body immediately after its figure, combining the source's embedded question with the separately printed Visual Connection Question into one self-check, with the printed solution as its model answer; inline references to figures changed from the source's numbered pointers to descriptive phrases ("the figure below") since figures are not numbered here; the DNA-and-RNA-features table kept as a Markdown table in the body; the Link to Learning note rendered as a callout with its URL kept; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block; and three key-term recall items (nucleic acid, deoxyribonucleic acid/DNA, messenger RNA/mRNA) added from the glossary, with `accept` covering each term's other form, to round out thin objective groups; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived cloze added (microRNA, from the section summary's closing sentence on what regulates mRNA availability) since the third objective group was left with only two exercises after the glossary pass. The DNA-and-RNA-features table's Purines row is identical between the two columns ("Adenine, guanine" for both DNA and RNA) and so is not distinguishing between the categories; the table was judged against the sortbins criteria but not converted, since doing so was not needed to reach this section's practice floor and would not have served the specific objective group that was short.</small>

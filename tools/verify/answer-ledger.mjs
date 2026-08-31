@@ -51,11 +51,11 @@ export const LEDGER_PATH = 'data/verification/answer-ledger.json';
  * inner content, is the thing to verify, so its hash below has to include
  * that inner content or an edited model answer would keep its old verdict).
  */
-export const EXERCISE_KINDS = Object.freeze(['fillin', 'multiplechoice', 'graphplot', 'textin', 'selfcheck']);
+export const EXERCISE_KINDS = Object.freeze(['fillin', 'multiplechoice', 'graphplot', 'textin', 'selfcheck', 'sortbins']);
 
 /** The kinds `solve-check.mjs` hands to the orchestrator, and the results a
  * `solved` field may carry. */
-export const SOLVED_KINDS = new Set(['multiplechoice', 'textin']);
+export const SOLVED_KINDS = new Set(['multiplechoice', 'textin', 'sortbins']);
 export const SOLVED_RESULTS = new Set(['agrees', 'adjudicated']);
 
 /**

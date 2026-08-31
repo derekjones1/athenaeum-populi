@@ -115,6 +115,9 @@ reactions typically release energy by breaking bonds.
 {{< selfcheck question="Why are biological macromolecules considered organic?" hint="Look at the definition given for biological macromolecules early in this section — what two things does it say they contain?" >}}
 Biological macromolecules are organic, meaning they contain carbon and are
 bound to hydrogen.
+===CHECKS===
+they contain carbon
+are bound to hydrogen
 {{< /selfcheck >}}
 
 {{< mediafigure src="biology/Figure_03_Asses_01" alt="The generic structure of an amino acid: a central carbon bonded to an amino group (NH₂) on the left, a carboxyl group (C double-bonded to O and single-bonded to OH) on the right, a hydrogen atom above, and an R group below representing the variable side chain." kind="diagram" >}}
@@ -129,6 +132,10 @@ with the –OH group attached to the terminal carbon on another amino acid.
 Since both ends of the molecule can participate in condensation reactions,
 peptide bonds can be made in both directions to create a long amino acid
 chain.
+===CHECKS===
+amino acids can be linked into long chains through condensation reactions
+one of the hydrogen atoms bonded to the nitrogen atom of an amino acid reacts with the –OH group attached to the terminal carbon on another amino acid
+peptide bonds can be made in both directions to create a long amino acid chain
 {{< /selfcheck >}}
 
 {{< textin
@@ -178,6 +185,10 @@ In a dehydration synthesis reaction, the hydrogen of one monomer combines
 with the hydroxyl group of another monomer, releasing a molecule of water.
 This creates an opening in the outer shells of atoms in the monomers, which
 can share electrons and form covalent bonds.
+===CHECKS===
+the hydrogen of one monomer combines with the hydroxyl group of another monomer, releasing a molecule of water
+this creates an opening in the outer shells of atoms in the monomers
+can share electrons and form covalent bonds
 {{< /selfcheck >}}
 
 {{< textin
@@ -207,4 +218,6 @@ Critical Thinking question that depends on it; the Review Questions and
 Critical Thinking Questions adapted into the closing interactive Practice
 block (multiple choice and self-check, respectively); and two key-term
 recall items (polymer, hydrolysis) added from the glossary to round out both
-objective groups.</small>
+objective groups; rubric checkpoints added to each self-check, decomposing
+its model answer (the source solution) into check-off clauses with no new
+claims.</small>

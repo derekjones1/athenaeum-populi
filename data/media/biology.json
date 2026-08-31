@@ -3075,6 +3075,28 @@
       "alt": "A photograph shows an energy plant on a hillside with clouds of white steam immediately above the plant",
       "caption": "This geothermal energy plant transforms thermal energy from deep in the ground into electrical energy, which can be easily used. (credit: modification of work by the U.S. Department of Defense)"
     },
+    "Figure_07_00_02abc-d68d": {
+      "source": "media/Figure_07_00_02abc-d68d.jpg",
+      "sourceSha256": "80666a60f151d918d4ce15380b11ab54c50de1346eba724b49e42d63f765ccf7",
+      "module": "m66482",
+      "kind": "photo",
+      "width": 1500,
+      "height": 422,
+      "variants": [
+        {
+          "width": 800,
+          "height": 225,
+          "file": "Figure_07_00_02abc-d68d-800.webp"
+        },
+        {
+          "width": 1500,
+          "height": 422,
+          "file": "Figure_07_00_02abc-d68d-1500.webp"
+        }
+      ],
+      "alt": "Three images are shown. Part a shows a mother and baby hippopotamus. In part b, mature trees are pictured next to saplings. In part c, a mother and baby flamingo are shown.",
+      "caption": "Each of us, like the organisms shown above, begins life as a fertilized egg (zygote). After trillions of cell divisions, each of us develops into a complex, multicellular organism. (credit a: modification of work by Frank Wouters; credit b: modification of work by Ken Cole, USGS; credit c: modification of work by Martin Pettitt)"
+    },
     "Figure_07_01_00": {
       "source": "media/Figure_07_01_00.png",
       "sourceSha256": "ca65c0e1d4c7b24edd73ea28d6b2e8641af9cd4ebb1bc5511731c128cdf0d3bf",
@@ -4480,6 +4502,827 @@
       ],
       "alt": "This illustration shows the steps of binary fission in prokaryotes. Replication of the single, circular chromosome begins at the origin of replication and continues simultaneously in both directions. As the D N A is replicated, the cell elongates, and upper case F lower case t lower case s upper case Z proteins migrate toward the center of the cell where they form a ring. The upper F lower t lower s upper Z ring directs the formation of a septum that divides the cell in two once D N A replication is complete.",
       "caption": "These images show the steps of binary fission in prokaryotes. (credit: modification of work by “Mcstrother”/Wikimedia Commons)"
+    },
+    "Figure_11_01_01-1258": {
+      "source": "media/Figure_11_01_01-1258.jpg",
+      "sourceSha256": "c41bbd04c6b71bb2f4e0dc33a0186f58ce10a49b2ef2d98ea11e1cb35f26bd94",
+      "module": "m66483",
+      "kind": "photo",
+      "width": 544,
+      "height": 415,
+      "variants": [
+        {
+          "width": 544,
+          "height": 415,
+          "file": "Figure_11_01_01-1258-544.webp"
+        }
+      ],
+      "alt": "This illustration depicts two pairs of sister chromatids joined together to form homologous chromosomes. The chromatids are pinched together at the centromere and held together by the kinetochore. A protein lattice called a synaptonemal complex fuses the homologous chromosomes together along their entire length.",
+      "caption": "Early in prophase I, homologous chromosomes come together to form a synapse. The chromosomes are bound tightly together and in perfect alignment by a protein lattice called a synaptonemal complex and by cohesin proteins at the centromere."
+    },
+    "Figure_11_01_02": {
+      "source": "media/Figure_11_01_02.jpg",
+      "sourceSha256": "9b54286cd14efa036831150f42be5443aee56103f6f42362e09d4e1b2c07be1a",
+      "module": "m66483",
+      "kind": "photo",
+      "width": 800,
+      "height": 1121,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1121,
+          "file": "Figure_11_01_02-800.webp"
+        }
+      ],
+      "alt": "This illustration shows a pair of homologous chromosomes that are aligned. The ends of two nonsister chromatids of the homologous chromosomes cross over, and genetic material is exchanged. The non-sister chromatids between which genetic material was exchanged are called recombinant chromosomes. The other pair of non-sister chromatids that did not exchange genetic material are called non-recombinant chromosomes.",
+      "caption": "Crossover occurs between nonsister chromatids of homologous chromosomes. The result is an exchange of genetic material between homologous chromosomes (for clarity, only one recombination event between two of the four chromatids is represented)."
+    },
+    "Figure_11_01_03": {
+      "source": "media/Figure_11_01_03.png",
+      "sourceSha256": "8f4a854c61c09ede6fc68a4ea00d8b7818fa87e0d4853531e2b66a4129fb2680",
+      "module": "m66483",
+      "kind": "diagram",
+      "width": 1500,
+      "height": 1125,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_11_01_03-800.webp"
+        },
+        {
+          "width": 1500,
+          "height": 1125,
+          "file": "Figure_11_01_03-1500.webp"
+        }
+      ],
+      "alt": "This illustration shows that, in a cell with a set of two chromosomes, four possible arrangements of chromosomes can give rise to eight different kinds of gamete. These are the eight possible arrangements of chromosomes that can occur during meiosis of two chromosomes.",
+      "caption": "Random, independent assortment during metaphase I is demonstrated by considering a cell with a set of two chromosomes (n = 2). There are two possible homologous chromosome arrangements at the equatorial plane in metaphase I, that are then separated during anaphase I. The total possible number of different gametes is 2 n , where n equals the number of chromosomes in a set. In this example, there are four possible genetic combinations for the gametes. With n = 23 in human cells, there are over eight million possible combinations of paternal and maternal chromosomes. Credit: Rao, A.and Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "Figure_11_01_04": {
+      "source": "media/Figure_11_01_04.jpg",
+      "sourceSha256": "219ad0b3d5fdf38de67eb81e31d96a9391870623d0f7cc829c79baf5e03ff87f",
+      "module": "m66483",
+      "kind": "photo",
+      "width": 1200,
+      "height": 900,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_11_01_04-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 900,
+          "file": "Figure_11_01_04-1200.webp"
+        }
+      ],
+      "alt": "This illustration compares chromosome alignment in meiosis I and meiosis II. In prophase 1, homologous pairs of chromosomes are held together by chiasmata. In metaphase 1, homologous chromosome pairs line up at the metaphase plate. In anaphase 1, the homologous pair separates and the connections at the chiasmata are broken, but the sister chromatids remain attached at the centromere. In Telophase 1, a cleavage furrow forms. In prophase 2, the sister chromatids are held together at the centromere. In metaphase 2, single chromosomes (not pairs) line up at the cell's midpoint. In anaphase 2, the centromere connections are broken and the sister chromatids separate. In telophase 2 the haploid daughter cells are forming.",
+      "caption": "The process of chromosome alignment differs between meiosis I and meiosis II. In prophase I, pairs of homologous chromosomes form chiasmata which allow for crossing over events (genetic diversity). These pairs of homologous chromosomes arrange at the metaphase plate in metaphase I. In anaphase I, homologous chromosomes separate. Telophase I and cytokinesis result in haploid cells with 2 sister chromatids of each chromosome. In prophase II, spindle microtubules form and elongate and any nuclear envelope disappears. Sister chromatids arrange at the midpoint of the cells in metaphase II. In anaphase II, the sister chromatids separate. Telophase II and cytokinesis result in haploid cells with a single copy of each chromosome. Credit: Rao, A., Ryan, K., Fletcher, S. and Tag, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_11_01_05": {
+      "source": "media/Figure_11_01_05.jpg",
+      "sourceSha256": "01f192921cae16d81ffbb0bdedfad93718b4f0f2e9035c8d35271e74dedc5f54",
+      "module": "m66483",
+      "kind": "photo",
+      "width": 1119,
+      "height": 1568,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1121,
+          "file": "Figure_11_01_05-800.webp"
+        },
+        {
+          "width": 1119,
+          "height": 1568,
+          "file": "Figure_11_01_05-1119.webp"
+        }
+      ],
+      "alt": "This illustration outlines the stages of meiosis. In interphase, before meiosis begins, the chromosomes are duplicated. Meiosis I then proceeds through several stages. In prophase I, the chromosomes begin to condense and the nuclear envelope fragments. Homologous pairs of chromosomes line up, and chiasmata form between them. Crossing over occurs at the chiasmata. Spindle fibers emerge from the centrosomes. In prometaphase I, homologous chromosomes attach to the spindle microtubules. In metaphase I, homologous chromosomes line up at the metaphase plate. In anaphase I, the spindle microtubules pull the homologous pairs of chromosomes apart. In telophase I and cytokinesis, the sister chromatids arrive at the poles of the cell and begin to decondense. The nuclear envelope begins to form again, and cell division occurs. Meiosis II then proceeds through several stages. In prophase II, the sister chromatids condense and the nuclear envelope fragments. A new spindle begins to form. In prometaphase II, the sister chromatids become attached to the kinetochore. In metaphase II, the sister chromatids line up at the metaphase plate. In anaphase II, the sister chromatids are pulled apart by the shortening spindles. In telophase II and cytokinesis, the nuclear envelope forms again and cell division occurs, resulting in four haploid daughter cells.",
+      "caption": "An animal cell with a diploid number of four (2 n = 4) proceeds through the stages of meiosis to form four haploid daughter cells."
+    },
+    "Figure_11_01_06": {
+      "source": "media/Figure_11_01_06.jpg",
+      "sourceSha256": "0663622370e409a00dbaba9e441757119671964614991dcdd6b5c364801a90fe",
+      "module": "m66483",
+      "kind": "photo",
+      "width": 1118,
+      "height": 1032,
+      "variants": [
+        {
+          "width": 800,
+          "height": 738,
+          "file": "Figure_11_01_06-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 1032,
+          "file": "Figure_11_01_06-1118.webp"
+        }
+      ],
+      "alt": "This illustration compares meiosis and mitosis. In meiosis, there are two rounds of cell division, whereas there is only one round of cell division in mitosis. In both mitosis and meiosis, DNA synthesis occurs during S phase. Synapsis of homologous chromosomes occurs in prophase I of meiosis, but does not occur in mitosis. Crossover of chromosomes occurs in prophase I of meiosis, but does not occur in mitosis. Homologous pairs of chromosomes line up at the metaphase plate during metaphase I of meiosis, but not during mitosis. Sister chromatids line up at the metaphase plate during metaphase II of meiosis and metaphase of mitosis. The result of meiosis is four haploid daughter cells, and the result of mitosis is two diploid daughter cells.",
+      "caption": "Meiosis and mitosis are both preceded by one cycle of DNA replication; however, meiosis includes two nuclear divisions. The four daughter cells resulting from meiosis are haploid and genetically distinct. The daughter cells resulting from mitosis are diploid and identical to the parent cell."
+    },
+    "Figure_11_01_07_meiosis": {
+      "source": "media/Figure_11_01_07_meiosis.jpg",
+      "sourceSha256": "f6bc7d0b032f0f573587ccc09da4a095f3f484b71d2abfa70f0fe0e16892c443",
+      "module": "m66483",
+      "kind": "photo",
+      "width": 855,
+      "height": 813,
+      "variants": [
+        {
+          "width": 800,
+          "height": 760,
+          "file": "Figure_11_01_07_meiosis-800.webp"
+        },
+        {
+          "width": 855,
+          "height": 813,
+          "file": "Figure_11_01_07_meiosis-855.webp"
+        }
+      ],
+      "alt": "Three phases of meiosis are shown. In interphase, a pair of chromosomes replicate, resulting in a diploid cell with replicated chromosomes. In Meiosis 1, the chromosomes separate into haploid cells. In Meiosis 2, the sister chromosomes separate.",
+      "caption": "Overview of Meiosis. The production of gametes is a crucial process for sexually reproducing organisms. Meiosis is the mechanism used to reduce diploid cells to haploid gametes while introducing genetic diversity. Prior to meiosis, chromosomes are replicated in S-phase to ensure proper number of chromosomes in the resulting gametes. During meiosis, two successive rounds of division reduces the number of chromosomes (ploidy) of the cell by half. going from diploid cells to haploid gametes. Credit: Rao, A., Tag, A, Fletcher, S., and Ryan, K. Department of Biology, Texas A&M University."
+    },
+    "Figure_11_02_01-45df": {
+      "source": "media/Figure_11_02_01-45df.png",
+      "sourceSha256": "cea45b7d3826aa916cfe3421835bedd4be43ea31cd2f29e1d5bc858e7449e568",
+      "module": "m66484",
+      "kind": "diagram",
+      "width": 2236,
+      "height": 1499,
+      "variants": [
+        {
+          "width": 800,
+          "height": 536,
+          "file": "Figure_11_02_01-45df-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1072,
+          "file": "Figure_11_02_01-45df-1600.webp"
+        }
+      ],
+      "alt": "This illustration shows the life cycle of animals. Through meiosis, adult males produce haploid (1n) sperm, and adult females produce haploid eggs. Upon fertilization, a diploid (2n) zygote forms, which, through mitosis and cell division, grows into an adult.",
+      "caption": "In animals, sexually reproducing adults form haploid gametes, called egg and sperm, from diploid germ cells. Fusion of the two gametes gives rise to a fertilized egg cell, or zygote. The zygote will undergo multiple rounds of mitosis to produce a multicellular offspring. The germ cells are generated early in the development of the zygote."
+    },
+    "Figure_11_02_02": {
+      "source": "media/Figure_11_02_02.png",
+      "sourceSha256": "0b609c93891e9ab071099f60997d41568f2a7377b022fe90622b2494f06f9d85",
+      "module": "m66484",
+      "kind": "diagram",
+      "width": 2086,
+      "height": 1438,
+      "variants": [
+        {
+          "width": 800,
+          "height": 551,
+          "file": "Figure_11_02_02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1103,
+          "file": "Figure_11_02_02-1600.webp"
+        }
+      ],
+      "alt": "This illustration shows the life cycle of fungi. In fungi, the diploid (2n) zygospore undergoes meiosis to form haploid (1n) spores. Mitosis of the spores occurs to form hyphae. Hyphae can undergo asexual reproduction to form more spores, or they form plus and minus mating types that undergo nuclear fusion to form a zygospore.",
+      "caption": "Fungi, such as black bread mold ( Rhizopus nigricans ), have a haploid multicellular stage that produces specialized haploid cells by mitosis that fuse to form a diploid zygote. The zygote undergoes meiosis to produce haploid spores. Each spore gives rise to a multicellular haploid organism by mitosis. Above, different mating hyphae types (denoted as + and –) join to form a zygospore through nuclear fusion. (credit “zygomycota” micrograph: modification of work by “Fanaberka”/Wikimedia Commons)"
+    },
+    "Figure_11_02_03-30ef": {
+      "source": "media/Figure_11_02_03-30ef.jpg",
+      "sourceSha256": "9330b8a9eb8c09648131c8f9ce9a64d303f8c4c3af39bb0371530c7c8356c79f",
+      "module": "m66484",
+      "kind": "photo",
+      "width": 1118,
+      "height": 638,
+      "variants": [
+        {
+          "width": 800,
+          "height": 456,
+          "file": "Figure_11_02_03-30ef-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 638,
+          "file": "Figure_11_02_03-30ef-1118.webp"
+        }
+      ],
+      "alt": "This illustration shows the life cycle of fern plants. The diploid (2n) zygote undergoes mitosis to produce the sphorophyte, which is the familiar, leafy plant. Sporangia form on the underside of the leaves of the sphorophyte. Sporangia undergo meiosis to form haploid (1n) spores. The spores germinate and undergo mitosis to form a multicellular, leafy gametophyte. The gametophyte produces eggs and sperm. Upon fertilization, the egg and sperm form a diploid zygote.",
+      "caption": "Plants have a life cycle that alternates between a multicellular haploid organism and a multicellular diploid organism. In some plants, such as ferns, both the haploid and diploid plant stages are free-living. The diploid plant is called a sporophyte because it produces haploid spores by meiosis. The spores develop into multicellular, haploid plants that are called gametophytes because they produce gametes. The gametes of two individuals will fuse to form a diploid zygote that becomes the sporophyte. (credit “fern”: modification of work by Cory Zanker; credit “sporangia”: modification of work by \"Obsidian Soul\"/Wikimedia Commons; credit “gametophyte and sporophyte”: modification of work by “Vlmastra”/Wikimedia Commons)"
+    },
+    "Figure_12_00_01new": {
+      "source": "media/Figure_12_00_01new.jpg",
+      "sourceSha256": "56355d492f2e5b2f03ee50bc4c5ca915474940e408ad148566efaaad67761426",
+      "module": "m66485",
+      "kind": "photo",
+      "width": 1118,
+      "height": 596,
+      "variants": [
+        {
+          "width": 800,
+          "height": 426,
+          "file": "Figure_12_00_01new-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 596,
+          "file": "Figure_12_00_01new-1118.webp"
+        }
+      ],
+      "alt": "Photo shows pea-plant flower, with purple petals that fold back on themselves.",
+      "caption": "Experimenting with thousands of garden peas, Mendel uncovered the fundamentals of genetics. (credit: modification of work by Jerry Kirkhart)"
+    },
+    "Figure_12_01_01-3b21": {
+      "source": "media/Figure_12_01_01-3b21.jpg",
+      "sourceSha256": "be8c913ea56729b082a6ac363895aa96d4dea3eb4fb1123b68226b29776037a9",
+      "module": "m66486",
+      "kind": "photo",
+      "width": 450,
+      "height": 537,
+      "variants": [
+        {
+          "width": 450,
+          "height": 537,
+          "file": "Figure_12_01_01-3b21-450.webp"
+        }
+      ],
+      "alt": "Sketch of Gregor Mendel, a monk who wore reading glasses and a large cross.",
+      "caption": "Johann Gregor Mendel is considered the father of genetics."
+    },
+    "Figure_12_01_02": {
+      "source": "media/Figure_12_01_02.jpg",
+      "sourceSha256": "e90e33282b35d2252242ecf0d8063607a293adf61d4bc9f9c3df000290327715",
+      "module": "m66486",
+      "kind": "photo",
+      "width": 544,
+      "height": 1076,
+      "variants": [
+        {
+          "width": 544,
+          "height": 1076,
+          "file": "Figure_12_01_02-544.webp"
+        }
+      ],
+      "alt": "The diagram shows a cross between pea plants that are true-breeding for purple flower color and plants true-breeding for white flower color. This cross-fertilization of the upper P generation resulted in an upper case F subscript 1 baseline generation with all violet flowers. Self-fertilization of the upper F subscript one baseline generation resulted in an upper F subscript 2 baseline generation that consisted of 705 plants with violet flowers, and 224 plants with white flowers.",
+      "caption": "In one of his experiments on inheritance patterns, Mendel crossed plants that were true-breeding for violet flower color with plants true-breeding for white flower color (the P generation). The resulting hybrids in the F 1 generation all had violet flowers. In the F 2 generation, approximately three quarters of the plants had violet flowers, and one quarter had white flowers."
+    },
+    "Figure_12_02_02": {
+      "source": "media/Figure_12_02_02.png",
+      "sourceSha256": "11efa725d3fa4a7cc2204484c30bbea870a3141f1ac523add75b5564f9945f36",
+      "module": "m66487",
+      "kind": "diagram",
+      "width": 469,
+      "height": 700,
+      "variants": [
+        {
+          "width": 469,
+          "height": 700,
+          "file": "Figure_12_02_02-469.webp"
+        }
+      ],
+      "alt": "This illustration shows a monohybrid cross. In the upper P generation, one parent has a dominant yellow phenotype and the genotype upper Y upper Y, and the other parent has the recessive green phenotype and the genotype lower y lower y. Each parent produces one kind of gamete, resulting in an upper F subscript 1 baseline generation with a dominant yellow phenotype and the genotype upper Y lower y. Self-pollination of the upper F subscript 1 baseline generation results in an upper F subscript 2 baseline generation with a 3 to 1 ratio of yellow to green peas. One out of three of the yellow pea plants has a dominant genotype of upper Y upper Y, and 2 out of 3 have the heterozygous phenotype upper Y lower y. The homozygous recessive plant has the green phenotype and the genotype lower y lower y.",
+      "caption": "In the P generation, pea plants that are true-breeding for the dominant yellow phenotype are crossed with plants with the recessive green phenotype. This cross produces F 1 heterozygotes with a yellow phenotype. Punnett square analysis can be used to predict the genotypes of the F 2 generation."
+    },
+    "Figure_12_02_03": {
+      "source": "media/Figure_12_02_03.png",
+      "sourceSha256": "680945bcbdb584f8e6b307bbda77a5d42a786efa827d5741f4543b09fdc33d76",
+      "module": "m66487",
+      "kind": "diagram",
+      "width": 1088,
+      "height": 1350,
+      "variants": [
+        {
+          "width": 800,
+          "height": 992,
+          "file": "Figure_12_02_03-800.webp"
+        },
+        {
+          "width": 1088,
+          "height": 1350,
+          "file": "Figure_12_02_03-1088.webp"
+        }
+      ],
+      "alt": "In a test cross, a parent with a dominant phenotype but unknown genotype is crossed with a recessive parent. If the parent with the unknown phenotype is homozygous dominant, all of the resulting offspring will have at least one dominant allele. If the parent with the unknown phenotype is heterozygous, fifty percent of the offspring will inherit a recessive allele from both parents and will have the recessive phenotype.",
+      "caption": "A test cross can be performed to determine whether an organism expressing a dominant trait is a homozygote or a heterozygote."
+    },
+    "Figure_12_02_04": {
+      "source": "media/Figure_12_02_04.jpg",
+      "sourceSha256": "1c94c47a33ec0827d397084a14b66811b1f521a16c016270d7d7bae259880fbe",
+      "module": "m66487",
+      "kind": "photo",
+      "width": 544,
+      "height": 725,
+      "variants": [
+        {
+          "width": 544,
+          "height": 725,
+          "file": "Figure_12_02_04-544.webp"
+        }
+      ],
+      "alt": "Photo is of a snapdragon with a pink flower.",
+      "caption": "These pink flowers of a heterozygote snapdragon result from incomplete dominance. (credit: “storebukkebruse”/Flickr)"
+    },
+    "Figure_12_02_05": {
+      "source": "media/Figure_12_02_05.jpg",
+      "sourceSha256": "0bcdb045d03a7c9ba91d4643f9804c322121f46cb81e951f649989c8b2cc8cc6",
+      "module": "m66487",
+      "kind": "photo",
+      "width": 800,
+      "height": 574,
+      "variants": [
+        {
+          "width": 800,
+          "height": 574,
+          "file": "Figure_12_02_05-800.webp"
+        }
+      ],
+      "alt": "This illustration shows the four different variants for coat color in rabbits at the c allele. The genotype upper case C upper case C produces the wild type phenotype, which is brown. The genotype lower case c superscript c h baseline lower case c superscript c h baseline produces the chinchilla phenotype, which is black-tipped white fur. The genotype lower case c superscript h baseline, lower case c superscript h baseline, produces the Himalayan phenotype, which is white on the body and black on the extremities. The genotype lower case c lower case c produces the recessive phenotype, which is white.",
+      "caption": "Four different alleles exist for the rabbit coat color ( C ) gene."
+    },
+    "Figure_12_02_06": {
+      "source": "media/Figure_12_02_06.jpg",
+      "sourceSha256": "1c69b08aa086f75c767b79e974701637af4dd2d081c154965a7d1e99c038d919",
+      "module": "m66487",
+      "kind": "photo",
+      "width": 544,
+      "height": 536,
+      "variants": [
+        {
+          "width": 544,
+          "height": 536,
+          "file": "Figure_12_02_06-544.webp"
+        }
+      ],
+      "alt": "This photo shows Drosophila that has normal antennae on its head, and a mutant that has legs on its head.",
+      "caption": "As seen in comparing the wild-type Drosophila (left) and the Antennapedia mutant (right), the Antennapedia mutant has legs on its head in place of antennae."
+    },
+    "Figure_12_02_07": {
+      "source": "media/Figure_12_02_07.png",
+      "sourceSha256": "6b6007d953acd3807919509a38e310e5c7623ee1f6ad52c487160744401afd15",
+      "module": "m66487",
+      "kind": "diagram",
+      "width": 1947,
+      "height": 954,
+      "variants": [
+        {
+          "width": 800,
+          "height": 392,
+          "file": "Figure_12_02_07-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 784,
+          "file": "Figure_12_02_07-1600.webp"
+        }
+      ],
+      "alt": "Photo A shows the Anopheles gambiae mosquito, which carries malaria. Photo b shows a micrograph of sickle-shaped Plasmodium falciparum, the parasite that causes malaria. The Plasmodium is about 0.75 microns across.",
+      "caption": "The (a) Anopheles gambiae , or African malaria mosquito, acts as a vector in the transmission to humans of the malaria-causing parasite (b) Plasmodium falciparum , here visualized using false-color transmission electron microscopy. (credit a: James D. Gathany; credit b: Ute Frevert; false color by Margaret Shear; scale-bar data from Matt Russell)"
+    },
+    "Figure_12_02_08": {
+      "source": "media/Figure_12_02_08.jpg",
+      "sourceSha256": "15abf19570bd56b8e8142c25f4ffd25336a5eb9410798723e9bf1c55d8aa0d89",
+      "module": "m66487",
+      "kind": "photo",
+      "width": 544,
+      "height": 682,
+      "variants": [
+        {
+          "width": 544,
+          "height": 682,
+          "file": "Figure_12_02_08-544.webp"
+        }
+      ],
+      "alt": "Photo shows six fruit flies, each with a different eye color.",
+      "caption": "In Drosophila , several genes determine eye color. The genes for white and vermilion eye colors are located on the X chromosome. Others are located on the autosomes. Clockwise from top left are brown, cinnabar, sepia, vermilion, white, and red. Red eye color is wild-type and is dominant to white eye color."
+    },
+    "Figure_12_02_09": {
+      "source": "media/Figure_12_02_09.jpg",
+      "sourceSha256": "42e0125e7e43e2159ebb158ce66ccc2df5571f791d50af6ba3da3bb9f3864d82",
+      "module": "m66487",
+      "kind": "photo",
+      "width": 726,
+      "height": 730,
+      "variants": [
+        {
+          "width": 726,
+          "height": 730,
+          "file": "Figure_12_02_09-726.webp"
+        }
+      ],
+      "alt": "This illustration shows a Punnett square analysis of fruit fly eye color, which is a sex-linked trait. A red-eyed male fruit fly with the genotype X superscript upper case W baseline, Y, is crossed with a white-eyed female fruit fly with the genotype X superscript lower case w baseline, X superscript lower case w baseline. All of the female offspring acquire a dominant upper case W allele from the father and a recessive lower case w allele from the mother, and are therefore heterozygous dominant with red eye color. All of the male offspring acquire a recessive lower case w allele from the mother and a Y chromosome from the father and are therefore hemizygous recessive with white eye color.",
+      "caption": "Punnett square analysis is used to determine the ratio of offspring from a cross between a red-eyed male fruit fly and a white-eyed female fruit fly."
+    },
+    "Figure_12_02_10": {
+      "source": "media/Figure_12_02_10.jpg",
+      "sourceSha256": "3cc8f2b857b4cf511bd42191a60d28fbfee0f30b89942ff218c760a88b0dae9e",
+      "module": "m66487",
+      "kind": "photo",
+      "width": 544,
+      "height": 706,
+      "variants": [
+        {
+          "width": 544,
+          "height": 706,
+          "file": "Figure_12_02_10-544.webp"
+        }
+      ],
+      "alt": "Micrograph shows a neuron with nuclear inclusions characteristic of Huntington's disease.",
+      "caption": "The neuron in the center of this micrograph (yellow) has nuclear inclusions characteristic of Huntington’s disease (orange area in the center of the neuron). Huntington’s disease occurs when an abnormal dominant allele for the Huntington gene is present. (credit: Dr. Steven Finkbeiner, Gladstone Institute of Neurological Disease, The Taube-Koret Center for Huntington's Disease Research, and the University of California San Francisco/Wikimedia)"
+    },
+    "Figure_12_02_11": {
+      "source": "media/Figure_12_02_11.jpg",
+      "sourceSha256": "a9f1c48f2b1ae5b520462126c50b6022d137fb0f01c900a6c8cb392b135c2c65",
+      "module": "m66487",
+      "kind": "photo",
+      "width": 544,
+      "height": 478,
+      "variants": [
+        {
+          "width": 544,
+          "height": 478,
+          "file": "Figure_12_02_11-544.webp"
+        }
+      ],
+      "alt": "This is a pedigree of a family that carries the recessive disorder alkaptonuria. In the second generation, an unaffected mother and an affected father have three children. One child has the disorder, so the genotype of the mother must be upper case A lower case a, and the genotype of the father is lower case a lower case a. One unaffected child goes on to have two children, one affected and one unaffected. Because her husband was not affected, she and her husband must both be heterozygous. The genotype of their unaffected child is unknown, and is designated upper A question mark. In the third generation, the other unaffected child had no offspring. The affected third-generation child goes on to have one child with the disorder. Her husband is unaffected and is labeled 3. The first generation father is affected and is labeled 1; The first generation mother is unaffected and is labeled 2 The Visual Connection question asks the genotype of the three numbered individuals.",
+      "caption": "Alkaptonuria is a recessive genetic disorder in which two amino acids, phenylalanine and tyrosine, are not properly metabolized. Affected individuals may have darkened skin and brown urine, and may suffer joint damage and other complications. In this pedigree, individuals with the disorder are indicated in blue and have the genotype aa . Unaffected individuals are indicated in yellow and have the genotype AA or Aa . Note that it is often possible to determine a person’s genotype from the genotype of their offspring. For example, if neither parent has the disorder but their child does, they must be heterozygous. Two individuals on the pedigree have an unaffected phenotype but unknown genotype. Because they do not have the disorder, they must have at least one normal allele, so their genotype gets the “ A? ” designation."
+    },
+    "Figure_12_03_01": {
+      "source": "media/Figure_12_03_01.jpg",
+      "sourceSha256": "9260252e8c687b9a4560640d04ec6316e71210f8c8aa707e775d3a6fbc15aaca",
+      "module": "m66488",
+      "kind": "photo",
+      "width": 1500,
+      "height": 996,
+      "variants": [
+        {
+          "width": 800,
+          "height": 531,
+          "file": "Figure_12_03_01-800.webp"
+        },
+        {
+          "width": 1500,
+          "height": 996,
+          "file": "Figure_12_03_01-1500.webp"
+        }
+      ],
+      "alt": "Photo shows an albino alligator in the Swamp at the California Academy of Sciences.",
+      "caption": "The alligator in the photo expresses albinism, a recessive trait."
+    },
+    "Figure_12_03_02-0fc5": {
+      "source": "media/Figure_12_03_02-0fc5.png",
+      "sourceSha256": "2128fcd75c5e50053f84b078c02d1254de82194895dd4946c6d00af23f3597ef",
+      "module": "m66488",
+      "kind": "diagram",
+      "width": 1451,
+      "height": 1277,
+      "variants": [
+        {
+          "width": 800,
+          "height": 704,
+          "file": "Figure_12_03_02-0fc5-800.webp"
+        },
+        {
+          "width": 1451,
+          "height": 1277,
+          "file": "Figure_12_03_02-0fc5-1451.webp"
+        }
+      ],
+      "alt": "This illustration shows a dihybrid cross between pea plants. In the upper case P generation, a plant that has the homozygous dominant phenotype of round, yellow peas is crossed with a plant with the homozygous recessive phenotype of wrinkled, green peas. The resulting F subscript 1 baseline offspring have a heterozygous genotype and round, yellow peas. Self-pollination of the F subscript 1 baseline generation results in F subscript 2 baseline offspring with a phenotypic ratio of 9 colon 3 colon 3 colon 1 for yellow round, green round, yellow wrinkled and green wrinkled peas, respectively.",
+      "caption": "This dihybrid cross of pea plants involves the genes for seed color and texture."
+    },
+    "Figure_12_03_03": {
+      "source": "media/Figure_12_03_03.jpg",
+      "sourceSha256": "b474fc486fc080077c798e1811bc8651eb4202053dc095f80e046f7c47e17bc3",
+      "module": "m66488",
+      "kind": "photo",
+      "width": 1115,
+      "height": 397,
+      "variants": [
+        {
+          "width": 800,
+          "height": 285,
+          "file": "Figure_12_03_03-800.webp"
+        },
+        {
+          "width": 1115,
+          "height": 397,
+          "file": "Figure_12_03_03-1115.webp"
+        }
+      ],
+      "alt": "A forked-line diagram is shown for the F subscript 2 baseline generation of a trihybrid cross of pea plants with the dominant yellow, round, and tall phenotype with pea plants of the recessive green, wrinkled, dwarf phenotype. The top row shows that the color ratio is 3 yellow to 1 green in the F subscript 2 baseline generation. The second row shows that the probability that plants of either pea color having the round or wrinkled texture is 3 to 1. The third row shows that the probability of plants with either of the above textures having a round or wrinkled phenotype is 3 to 1. The probability of all three phenotypes occurring together is determined by multiplying each individual probability together. The probability ratio is 27 yellow slash round slash tall colon; 9 yellow slash round slash dwarf, colon, 9 yellow slash wrinked slash tall, colon, 3 yellow slash wrinkled slash dwarf, colon, 9 green slash round slash tall, colon, 3 green slash round slash dwarf, colon 3 green slash wrinkled slash tall, colon, 1 green slash wrinkled slash dwarf.",
+      "caption": "The forked-line method can be used to analyze a trihybrid cross. Here, the probability for color in the F 2 generation occupies the top row (3 yellow:1 green). The probability for shape occupies the second row (3 round: 1 wrinkled), and the probability for height occupies the third row (3 tall:1 dwarf). The probability for each possible combination of traits is calculated by multiplying the probability for each individual trait. Thus, the probability of F 2 offspring having yellow, round, and tall traits is 3 × 3 × 3, or 27."
+    },
+    "Figure_12_03_04": {
+      "source": "media/Figure_12_03_04.jpg",
+      "sourceSha256": "6157a16d9421da699ecc71910e8755766b24eca8b99ebd93badd8fbaf36b4201",
+      "module": "m66488",
+      "kind": "photo",
+      "width": 544,
+      "height": 822,
+      "variants": [
+        {
+          "width": 544,
+          "height": 822,
+          "file": "Figure_12_03_04-544.webp"
+        }
+      ],
+      "alt": "This illustration shows a pair of homologous chromosomes. One of the pair has the alleles upper case A upper case B upper case C, and the other has the alleles lower case a lower case b lower case c. During meiosis, crossover occurs between two of the chromosomes and genetic material is exchanged, resulting in one recombinant chromosome that has the alleles upper A upper B lower c and another that has the alleles lower a lower b upper C. The other two chromosomes are non-recombinant and have the same arrangement of genes as before meiosis.",
+      "caption": "The process of crossover, or recombination, occurs when two homologous chromosomes align during meiosis and exchange a segment of genetic material. Here, the alleles for gene C were exchanged. The result is two recombinant and two non-recombinant chromosomes (for clarity, only one recombination event between two of the four chromatids is represented)."
+    },
+    "Figure_12_03_05": {
+      "source": "media/Figure_12_03_05.jpg",
+      "sourceSha256": "0dd3b38ba42a81dae238340f76125bac9901d539adcd0aece59a1ad169b184a6",
+      "module": "m66488",
+      "kind": "photo",
+      "width": 800,
+      "height": 948,
+      "variants": [
+        {
+          "width": 800,
+          "height": 948,
+          "file": "Figure_12_03_05-800.webp"
+        }
+      ],
+      "alt": "A cross between two agouti mice with the heterozygous genotype upper A lower a upper C lower c is shown. Each mouse produces four different kinds of gametes, which are upper A upper C, and lower a upper C, and upper A lower c, and lower a lower c. A 4 by 4 Punnett square is used to determine the genotypic ratio of the offspring. The phenotypic ratio is 9 slash 16 agouti, 3 slash 16 black, and 4 slash 16 white.",
+      "caption": "In mice, the mottled agouti coat color ( A ) is dominant to a solid coloration, such as black or gray. A gene at a separate locus ( C ) is responsible for pigment production. The recessive c allele does not produce pigment, and a mouse with the homozygous recessive cc genotype is albino regardless of the allele present at the A locus. Thus, the C gene is epistatic to the A gene."
+    },
+    "Figure_12_03_06_new": {
+      "source": "media/Figure_12_03_06_new.jpg",
+      "sourceSha256": "00db767ab84ac81ba70323ee9189ee682d0efa30911d72610d02dd2cda73279d",
+      "module": "m66488",
+      "kind": "photo",
+      "width": 544,
+      "height": 512,
+      "variants": [
+        {
+          "width": 544,
+          "height": 512,
+          "file": "Figure_12_03_06_new-544.webp"
+        }
+      ],
+      "alt": "This figure shows all possible combinations of offspring resulting from a dihybrid cross of pea plants that are heterozygous for the tall slash dwarf and inflated slash constricted alleles.",
+      "caption": "This figure shows all possible combinations of offspring resulting from a dihybrid cross of pea plants that are heterozygous for the tall/dwarf and inflated/constricted alleles."
+    },
+    "Figure_13_00_01-8d8d": {
+      "source": "media/Figure_13_00_01-8d8d.jpg",
+      "sourceSha256": "77555c76a05d6ff88722934b962f09eb59e2a9715d336a650fd9dc9a327b7a0c",
+      "module": "m66490",
+      "kind": "photo",
+      "width": 1136,
+      "height": 467,
+      "variants": [
+        {
+          "width": 800,
+          "height": 329,
+          "file": "Figure_13_00_01-8d8d-800.webp"
+        },
+        {
+          "width": 1136,
+          "height": 467,
+          "file": "Figure_13_00_01-8d8d-1136.webp"
+        }
+      ],
+      "alt": "Electron micrograph shows a long, thin chromosome that has a banding pattern.",
+      "caption": "Chromosomes are threadlike nuclear structures consisting of DNA and proteins that serve as the repositories for genetic information. The chromosomes depicted here were isolated from a fruit fly’s salivary gland, stained with dye, and visualized under a microscope. Akin to miniature bar codes, chromosomes absorb different dyes to produce characteristic banding patterns, which allows for their routine identification. (credit: modification of work by “LPLT”/Wikimedia Commons; scale-bar data from Matt Russell)"
+    },
+    "Figure_13_01_01-dc41": {
+      "source": "media/Figure_13_01_01-dc41.jpg",
+      "sourceSha256": "1ff5fcfb62cfab3d7d99464954d4f7f5f575da43ef269e4e35f1d5cbf3a6f161",
+      "module": "m66491",
+      "kind": "photo",
+      "width": 1200,
+      "height": 619,
+      "variants": [
+        {
+          "width": 800,
+          "height": 412,
+          "file": "Figure_13_01_01-dc41-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 619,
+          "file": "Figure_13_01_01-dc41-1200.webp"
+        }
+      ],
+      "alt": "Part a is a photo of Walter Sutton. Part b is a photo of Theodor Boveri. Part c is a picture of Eleanor Carothers holding a grasshopper cage.",
+      "caption": "(a) Walter Sutton and (b) Theodor Boveri developed the Chromosomal Theory of Inheritance, which states that chromosomes carry the unit of heredity (genes). Eleanor Carothers (c), was the first to provide physical evidence supporting the theory."
+    },
+    "Figure_13_01_02": {
+      "source": "media/Figure_13_01_02.jpg",
+      "sourceSha256": "9d8d9b4a76b76cb565499d40e0e4d2218cb28572105a385a9f9eb122476096e4",
+      "module": "m66491",
+      "kind": "photo",
+      "width": 1044,
+      "height": 1371,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1050,
+          "file": "Figure_13_01_02-800.webp"
+        },
+        {
+          "width": 1044,
+          "height": 1371,
+          "file": "Figure_13_01_02-1044.webp"
+        }
+      ],
+      "alt": "The illustration shows the possible inheritance patterns of linked and unlinked genes. The example used includes fruit fly body color and wing length. Fruit flies may have a dominant gray color lowercase b superscript +, or a recessive black color lowercase b. They may have dominant long wings lowercase v g superscript +, or recessive short wings, lowercase v g. Three hypothetical inheritance patterns for a test cross between a heterozygous and a recessive fruit fly are shown, based on gene placement. The actual experimental results published by Thomas Hunt Morgan in 1912 are also shown. In the first hypothetical inheritance pattern in part a, the genes for the two characteristics are on different chromosomes. Independent assortment occurs so that the ratio of genotypes in the offspring is 1 b + b v g + v g colon 1 b b v g v g colon 1 b + b v g v g colon 1 b b v g + v g, and 50% of the offspring are nonparental types. In the second hypothetical inheritance pattern in part b, the genes are close together on the same chromosome so that no crossover occurs between them. The ratio of genotypes is 1 b + b v g + v g colon 1. b b v g v g, and none of the offspring are recombinant. In the third hypothetical inheritance pattern in part c, the genes are far apart on the same chromosome so that crossing over occurs 100% of the time. The ratio of genotypes is the same as for genes on two different chromosomes, and 50% of the offspring are recombinant, nonparental types. Part d shows that the number of offspring that Thomas Hunt Morgan actually observed was 965 colon 944 colon 206 colon 185, which is b + b v g + v g colon b b v g v g colon b + b v g v g colon b b v g + v g. Seventeen percent of the offspring were recombinant, indicating that the genes are on the same chromosome and crossing over occurs between them some of the time.",
+      "caption": "This figure shows unlinked and linked gene inheritance patterns. The example used includes fruit fly body color and wing length. Fruit flies may have a dominant gray color `b` + , or a recessive black color `b`. They may have dominant long wings vg + , or recessive short wings, vg. In (a), two genes are located on different chromosomes so independent assortment occurs during meiosis. The offspring have an equal chance of being the parental type (inheriting the same combination of traits as the parents) or a nonparental type (inheriting a different combination of traits than the parents). In (b), two genes are very close together on the same chromosome so that no crossing over occurs between them. Therefore, the genes are always inherited together and all the offspring are the parental type. In (c), two genes are far apart on the chromosome such that crossing over occurs during every meiotic event. The recombination frequency will be the same as if the genes were on separate chromosomes. (d) The actual recombination frequency of fruit fly wing length and body color that Thomas Morgan observed in 1912 was 17 percent. A crossover frequency between 0 percent and 50 percent indicates that the genes are on the same chromosome and crossover sometimes occurs."
+    },
+    "Figure_13_01_03": {
+      "source": "media/Figure_13_01_03.png",
+      "sourceSha256": "0b9ce5884cec75ce38a8b557f8532d2f4bd538b213e992484b9335b9f9c7b178",
+      "module": "m66491",
+      "kind": "diagram",
+      "width": 469,
+      "height": 482,
+      "variants": [
+        {
+          "width": 469,
+          "height": 482,
+          "file": "Figure_13_01_03-469.webp"
+        }
+      ],
+      "alt": "The illustration shows a Drosophila genetic map. The gene for aristae length occurs at 0 centimorgans, or lower case c upper case M. The gene for body color occurs at 48.5 lower c upper M. The gene for red versus cinnabar eye color occurs at 57.5 lower c upper M. The gene for wing length occurs at 65.5 lower c upper M, and the gene for red versus brown eye color occurs at 104.5 lower c upper M. One lower c upper M is equivalent to a recombination frequency of 0.01.",
+      "caption": "This genetic map orders Drosophila genes on the basis of recombination frequency."
+    },
+    "Figure_13_01_05-1b57": {
+      "source": "media/Figure_13_01_05-1b57.jpg",
+      "sourceSha256": "2bf72b46ddc3fccc386954fdec0296f7f77b91bac9e818ff64c228e398ad3fdf",
+      "module": "m66487",
+      "kind": "photo",
+      "width": 655,
+      "height": 719,
+      "variants": [
+        {
+          "width": 655,
+          "height": 719,
+          "file": "Figure_13_01_05-1b57-655.webp"
+        }
+      ],
+      "alt": "A diagram shows an unaffected male with a dominant allele and an unaffected carrier female with an x-linked recessive allele. Four figures of offspring are shown representing the various resulting genetic combinations: unaffected male offspring, unaffected female offspring, affected male offspring, and unaffected carrier female offspring.",
+      "caption": "The male offspring of a person who is a carrier of a recessive X-linked disorder will have a 50 percent chance of being affected. A female will not be affected, but she will have a 50 percent chance of being a carrier like the female parent."
+    },
+    "Figure_13_03_01": {
+      "source": "media/Figure_13_03_01.jpg",
+      "sourceSha256": "721c78cae91e8f11e4cd621745f445c3984cd2d18273410e7027bbd86fb877b1",
+      "module": "m66494",
+      "kind": "photo",
+      "width": 800,
+      "height": 218,
+      "variants": [
+        {
+          "width": 800,
+          "height": 218,
+          "file": "Figure_13_03_01-800.webp"
+        }
+      ],
+      "alt": "This is a karyotype of a human female. There are 22 homologous pairs of chromosomes and an XX chromosome pair.",
+      "caption": "This karyotype is of a female human. Notice that homologous chromosomes are the same size, and have the same centromere positions and banding patterns. A human male would have an XY chromosome pair instead of the XX pair. (credit: Andreas Blozer et al)"
+    },
+    "Figure_13_03_02-db42": {
+      "source": "media/Figure_13_03_02-db42.png",
+      "sourceSha256": "f9013fdaa6f6bc9d44d99d7402f6aa064ee9b10d68d6d9b1e9c9ff7d624668d1",
+      "module": "m66494",
+      "kind": "diagram",
+      "width": 1500,
+      "height": 1126,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_13_03_02-db42-800.webp"
+        },
+        {
+          "width": 1500,
+          "height": 1126,
+          "file": "Figure_13_03_02-db42-1500.webp"
+        }
+      ],
+      "alt": "This illustration shows nondisjunction that occurs during meiosis I. Nondisjunction during meiosis I occurs when a homologous pair fails to separate, and results in two gametes with n + 1 chromosomes, and two gametes with n minus 1 chromosomes. Nondisjunction during meiosis I I would occur when sister chromatids fail to separate, and results in one gamete with n + 1 chromosomes, one gamete with n minus 1 chromosomes, and two normal gametes.",
+      "caption": "Nondisjunction occurs when homologous chromosomes or sister chromatids fail to separate during meiosis, resulting in an abnormal chromosome number. Nondisjunction may occur during meiosis I or meiosis II. Credit: Rao, A. and Tag, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_13_03_03-dcd0": {
+      "source": "media/Figure_13_03_03-dcd0.jpg",
+      "sourceSha256": "521a2716debc3599970a3114ecd6296f0d91b676a729bb2ed91f5bc9f21cd9c2",
+      "module": "m66494",
+      "kind": "photo",
+      "width": 544,
+      "height": 490,
+      "variants": [
+        {
+          "width": 544,
+          "height": 490,
+          "file": "Figure_13_03_03-dcd0-544.webp"
+        }
+      ],
+      "alt": "This graph shows the risk of Down syndrome in the fetus with increasing maternal age. Risk dramatically increases past a maternal age of 35.",
+      "caption": "The incidence of having a fetus with trisomy 21 increases dramatically with maternal age."
+    },
+    "Figure_13_03_04-cfbf": {
+      "source": "media/Figure_13_03_04-cfbf.jpg",
+      "sourceSha256": "8fbe9c645f627fde0aecddfd7d9cce7fedf9935b44449760b45a3e9bdb9a6eb4",
+      "module": "m66494",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_13_03_04-cfbf-544.webp"
+        }
+      ],
+      "alt": "Photo shows an orange day lily, which is a plant with a large flower; the flower looks like it is bursting with orange petals.",
+      "caption": "As with many polyploid plants, this triploid orange daylily ( Hemerocallis fulva ) is particularly large and robust, and grows flowers with triple the number of petals of its diploid counterparts. (credit: Steve Karg)"
+    },
+    "Figure_13_03_05-caa3": {
+      "source": "media/Figure_13_03_05-caa3.jpg",
+      "sourceSha256": "8e3409403b30a8dc32729389ae063ccb7d3f885a3652258b1affba325ca7b188",
+      "module": "m66494",
+      "kind": "photo",
+      "width": 544,
+      "height": 605,
+      "variants": [
+        {
+          "width": 544,
+          "height": 605,
+          "file": "Figure_13_03_05-caa3-544.webp"
+        }
+      ],
+      "alt": "Photo shows a tortoiseshell cat with orange and black fur.",
+      "caption": "In cats, the gene for coat color is located on the X chromosome. In female cats' embryonic development, one of the two X chromosomes randomly inactivates in each cell, resulting in a tortoiseshell pattern if the cat has two different alleles for coat color. Male cats, having only one X chromosome, never exhibit a tortoiseshell coat color. (credit: Michael Bodega)"
+    },
+    "Figure_13_03_06": {
+      "source": "media/Figure_13_03_06.jpg",
+      "sourceSha256": "846cd7fffbf112db448a3b6253753e33a33195a163af63d1bccc8c72927ebf70",
+      "module": "m66494",
+      "kind": "photo",
+      "width": 544,
+      "height": 724,
+      "variants": [
+        {
+          "width": 544,
+          "height": 724,
+          "file": "Figure_13_03_06-544.webp"
+        }
+      ],
+      "alt": "Photos show a boy with cri du chat syndrome. In parts a, b, c, and d of the image, he is ages eight months, two years, four years, and nine years of age, respectively.",
+      "caption": "This figure shows an individual with cri-du-chat syndrome at ages eight months, two years, four years, and nine years of age. (credit: Paola Cerruti Mainardi)"
+    },
+    "Figure_13_03_07-a5d6": {
+      "source": "media/Figure_13_03_07-a5d6.jpg",
+      "sourceSha256": "642a17a18f1b677ba68db02617282910b109f22488efc01fa0bbc6424ac65d28",
+      "module": "m66494",
+      "kind": "photo",
+      "width": 544,
+      "height": 405,
+      "variants": [
+        {
+          "width": 544,
+          "height": 405,
+          "file": "Figure_13_03_07-a5d6-544.webp"
+        }
+      ],
+      "alt": "Illustration shows pericentric and paracentric inversions. In this example, the order of genes in the normal chromosome is A B C D E F, with the centromere between genes C and D. In the pericentric inversion the order is A B D C E F. In the paracentric inversion example, the resulting gene order is A B C D F E.",
+      "caption": "Pericentric inversions include the centromere, and paracentric inversions do not. A pericentric inversion can change the chromosome arms' relative lengths. A paracentric inversion cannot."
+    },
+    "Figure_13_03_08": {
+      "source": "media/Figure_13_03_08.jpg",
+      "sourceSha256": "8fdca741dacf96e3215de29e2efeb66d0da4cf1f0722d1e0e52929c7f518dc1f",
+      "module": "m66494",
+      "kind": "photo",
+      "width": 544,
+      "height": 347,
+      "variants": [
+        {
+          "width": 544,
+          "height": 347,
+          "file": "Figure_13_03_08-544.webp"
+        }
+      ],
+      "alt": "This illustration shows the inversion pairing that occurs when one chromosome undergoes inversion but the other does not. For chromosome alignment to occur during meiosis, one chromosome must form an inverted loop while the other conforms around it.",
+      "caption": "When one chromosome undergoes an inversion but the other does not, one chromosome must form an inverted loop to retain point-for-point interaction during synapsis. This inversion pairing is essential to maintaining gene alignment during meiosis and to allow for recombination."
+    },
+    "Figure_13_03_09": {
+      "source": "media/Figure_13_03_09.jpg",
+      "sourceSha256": "4d1d82d175a90bbeb46a2d8b42b965efa7f19bbe709d2e62c3d70d87ece38355",
+      "module": "m66494",
+      "kind": "photo",
+      "width": 544,
+      "height": 430,
+      "variants": [
+        {
+          "width": 544,
+          "height": 430,
+          "file": "Figure_13_03_09-544.webp"
+        }
+      ],
+      "alt": "Illustration shows a reciprocal translocation in which DNA is transferred from one chromosome to another. Some DNA is also transferred from the second chromosome back to the first. No genetic information is gained or lost in the process.",
+      "caption": "A reciprocal translocation occurs when a DNA segment transfers from one chromosome to another, nonhomologous chromosome. (credit: modification of work by National Human Genome Research/USA)"
     },
     "Figure_B06_03_05abcd_new": {
       "source": "media/Figure_B06_03_05abcd_new.png",

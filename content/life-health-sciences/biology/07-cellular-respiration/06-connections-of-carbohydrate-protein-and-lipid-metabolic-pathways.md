@@ -89,6 +89,18 @@ be assembled into a new polypeptide
 be converted directly into glycogen
 {{< /multiplechoice >}}
 
+{{< textin
+  question="Cholesterol synthesis starts with ________ groups."
+  answer="acetyl"
+  hint="The summary names the group cholesterol synthesis starts with, before the process runs in only one direction."
+>}}
+
+{{< textin
+  question="The sugars and storage carbohydrates catabolized during glycolysis include galactose, fructose, glycogen, and ________."
+  answer="pentose"
+  hint="The section's summary lists this fourth simple sugar last."
+>}}
+
 ### Explain why metabolic pathways are not considered closed systems
 
 {{< multiplechoice
@@ -104,8 +116,20 @@ Pathways only connect to each other during starvation
 
 {{< selfcheck question="Would you describe metabolic pathways as inherently wasteful or inherently economical? Why?" hint="Think about what happens to a pathway's own intermediates and how tightly the cell regulates their levels." >}}
 They are very economical. The substrates, intermediates, and products move between pathways and do so in response to finely tuned feedback inhibition loops that keep metabolism balanced overall. Intermediates in one pathway may occur in another, and they can move from one pathway to another fluidly in response to the needs of the cell.
+===CHECKS===
+they are very economical
+the substrates, intermediates, and products move between pathways
+in response to finely tuned feedback inhibition loops that keep metabolism balanced overall
+intermediates in one pathway may occur in another
+they can move from one pathway to another fluidly in response to the needs of the cell
 {{< /selfcheck >}}
+
+{{< textin
+  question="Metabolic pathways should be thought of as porous and interconnecting—that is, substances enter from other pathways, and intermediates ________ for other pathways."
+  answer="leave"
+  hint="The opening paragraph pairs what happens to substances entering a pathway with what happens to its own intermediates."
+>}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 7.6: Connections of Carbohydrate, Protein, and Lipid Metabolic Pathways](https://openstax.org/books/biology-2e/pages/7-6-connections-of-carbohydrate-protein-and-lipid-metabolic-pathways) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: both figures re-encoded as WebP (both are diagrams, confirming the manifest's guess); each figure's alt shortened to what it shows and teaches, with the arrow-by-arrow walk-through moved into a `longdesc` (the source alts were longer than the 600-character cap allows); the citric-acid-cycle figure's alt and longdesc also correct a source-alt omission — the amino-acid box linked to pyruvate includes tryptophan in the image, a sixth member the source's own alt text left out; inline references to the two figures changed from the source's print numbers ("Figure 7.19," "Figure 7.18") to descriptive phrases ("the flow chart below," "the illustration below"); the one Evolution Connection feature box rendered as a callout with its bold name and italicized title; the end-of-section Review Questions and the Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively). This module carries no glossary, so `## Key terms` is omitted rather than emitted empty. With only three source exercises across two objectives, one multiple-choice item under each objective group is author-written rather than sourced from an exercise or definition, so that every group reaches its two-item minimum and keeps an auto-graded item: the protein-entry question (first objective) is drawn strictly from the amino-group sentence in the section's own protein-connections paragraph, and the closed-systems question (second objective) is drawn strictly from the section's own opening paragraph, with its correct option quoting that paragraph and its distractors describing the opposite or an unsupported claim.</small>
+<small>This section is adapted from [Biology 2e, Section 7.6: Connections of Carbohydrate, Protein, and Lipid Metabolic Pathways](https://openstax.org/books/biology-2e/pages/7-6-connections-of-carbohydrate-protein-and-lipid-metabolic-pathways) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: both figures re-encoded as WebP (both are diagrams, confirming the manifest's guess); each figure's alt shortened to what it shows and teaches, with the arrow-by-arrow walk-through moved into a `longdesc` (the source alts were longer than the 600-character cap allows); the citric-acid-cycle figure's alt and longdesc also correct a source-alt omission — the amino-acid box linked to pyruvate includes tryptophan in the image, a sixth member the source's own alt text left out; inline references to the two figures changed from the source's print numbers ("Figure 7.19," "Figure 7.18") to descriptive phrases ("the flow chart below," "the illustration below"); the one Evolution Connection feature box rendered as a callout with its bold name and italicized title; the end-of-section Review Questions and the Critical Thinking Question adapted into the closing interactive Practice block (multiple choice and self-check respectively). This module carries no glossary, so `## Key terms` is omitted rather than emitted empty. With only three source exercises across two objectives, one multiple-choice item under each objective group is author-written rather than sourced from an exercise or definition, so that every group reaches its two-item minimum and keeps an auto-graded item: the protein-entry question (first objective) is drawn strictly from the amino-group sentence in the section's own protein-connections paragraph, and the closed-systems question (second objective) is drawn strictly from the section's own opening paragraph, with its correct option quoting that paragraph and its distractors describing the opposite or an unsupported claim; rubric checkpoints added to the section's self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; two summary-derived cloze `textin` items added under the first objective (the acetyl groups cholesterol synthesis starts with, and pentose as the fourth simple sugar the summary names); and one additional cloze `textin` written locally under the second objective, on the "leave" half of the opening paragraph's "enter... leave" pairing describing why pathways are porous (disclosed in the ledger), to raise the second objective's group and the section as a whole to the practice floor.; and the summary-derived sugar-list prompt rephrased from the source's "simple sugars" to "sugars and storage carbohydrates," since glycogen is a polysaccharide (source defect, erratum 137).</small>

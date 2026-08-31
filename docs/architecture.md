@@ -52,7 +52,7 @@ advertising, or learner-data store.
 
 The completed Prealgebra 2e, Elementary Algebra 2e, and Intermediate Algebra
 2e books remain reviewed Markdown, not generated output. A committed lock and
-318-section map under `data/openstax/` connect each page to a stable CNXML
+325-section map under `data/openstax/` connect each page to a stable CNXML
 module in the official OpenStax source repository. The upstream checkout is a
 sparse, ignored cache under `sources/openstax/`.
 
@@ -66,7 +66,7 @@ verification gates. See `docs/source/openstax-source-workflow.md`.
 The lock is bundle-keyed and each book carries its own `contentPath`, so the
 pipeline is not specific to `content/math`: Biology 2e is pinned at
 `biology-bundle` with `contentPath: "content/life-health-sciences/biology"`
-and `authoringStatus: "in-progress"` (units 1–2 authored) — its collection
+and `authoringStatus: "in-progress"` (units 1–3 authored) — its collection
 (which nests unit, chapter, and module) is mapped chapter by chapter as
 authoring proceeds, and
 `build-map`/`verify-map` state the book's local/upstream counts on every

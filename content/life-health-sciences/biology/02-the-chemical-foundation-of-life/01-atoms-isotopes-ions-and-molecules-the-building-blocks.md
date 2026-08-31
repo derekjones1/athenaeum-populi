@@ -65,6 +65,9 @@ Carbon has an atomic number of six, and two stable isotopes with mass numbers of
 
 {{< selfcheck question="How many neutrons do carbon-12 and carbon-13 have, respectively?" hint="Subtract the atomic number (the same six protons for both) from each isotope's mass number." >}}
 Carbon-12 has six neutrons. Carbon-13 has seven neutrons.
+===CHECKS===
+carbon-12 has six neutrons
+carbon-13 has seven neutrons
 {{< /selfcheck >}}
 
 ## Isotopes
@@ -117,6 +120,9 @@ Bohr diagrams indicate how many electrons fill each principal shell. Group 18 el
 
 {{< selfcheck question="An atom may give, take, or share electrons with another atom to achieve a full valence shell, the most stable electron configuration. Looking at the diagram above, how many electrons do elements in group 1 need to lose in order to achieve a stable electron configuration? How many electrons do elements in groups 14 and 17 need to gain to achieve a stable configuration?" hint="Compare each group's valence electron count against the eight electrons a full outer shell needs." >}}
 Elements in group 1 need to lose one electron to achieve a stable electron configuration. Elements in groups 14 and 17 need to gain four and one electrons, respectively, to achieve a stable configuration.
+===CHECKS===
+elements in group 1 need to lose one electron to achieve a stable electron configuration
+elements in groups 14 and 17 need to gain four and one electrons, respectively, to achieve a stable configuration
 {{< /selfcheck >}}
 
 Understanding that the periodic table's organization is based on the total number of protons (and electrons) helps us know how electrons distribute themselves among the shells. The periodic table is arranged in columns and rows based on the number of electrons and their location. Examine more closely some of the elements in the periodic table's far right column, shown above. The group 18 atoms helium (He), neon (Ne), and argon (Ar) all have filled outer electron shells, making it unnecessary for them to share electrons with other atoms to attain stability. They are highly stable as single atoms. Because they are non reactive, scientists coin them **inert** (or **noble gases**). Compare this to the group 1 elements in the left-hand column. These elements, including hydrogen (H), lithium (Li), and sodium (Na), all have one electron in their outermost shells. That means that they can achieve a stable configuration and a filled outer shell by donating or sharing one electron with another atom or a molecule such as water. Hydrogen will donate or share its electron to achieve this configuration, while lithium and sodium will donate their electron to become stable. As a result of losing a negatively charged electron, they become positively charged **ions**. Group 17 elements, including fluorine and chlorine, have seven electrons in their outmost shells, so they tend to fill this shell with an electron from other atoms or molecules, making them negatively charged ions. Group 14 elements, of which carbon is the most important to living systems, have four electrons in their outer shell allowing them to make several covalent bonds (discussed below) with other atoms. Thus, the periodic table's columns represent the potential shared state of these elements' outer electron shells that is responsible for their similar chemical characteristics.
@@ -292,6 +298,17 @@ Matter is anything that occupies space and has mass. It is comprised of elements
 
 {{< textin question="One of the 118 unique substances that cannot be broken down into smaller substances by ordinary chemical reactions is called a(n) ________." answer="element" accept="elements" hint="There are 118 of these, but only 98 occur naturally — they are the periodic table's basic building blocks." >}}
 
+{{< multiplechoice
+  question="The section states there are 118 known elements. How many of them occur naturally?"
+  answer="98"
+  hint="Re-read the section's opening paragraph — one number counts every known element, the other counts only those found in nature."
+>}}
+118
+98
+65
+4
+{{< /multiplechoice >}}
+
 ### Describe the interrelationship between protons, neutrons, and electrons
 
 {{< multiplechoice
@@ -342,7 +359,19 @@ nonpolar covalent bond
 
 {{< selfcheck question="What makes ionic bonds different from covalent bonds?" hint="Think about whether the electrons are transferred completely or shared, and which bond takes more energy to break." >}}
 Ionic bonds are created between ions. The electrons are not shared between the atoms, but rather are associated more with one ion than the other. Ionic bonds are strong bonds, but are weaker than covalent bonds, meaning it takes less energy to break an ionic bond compared with a covalent one.
+===CHECKS===
+ionic bonds are created between ions
+the electrons are not shared between the atoms, but are associated more with one ion than the other
+ionic bonds are weaker than covalent bonds
+it takes less energy to break an ionic bond compared with a covalent one
 {{< /selfcheck >}}
+
+{{< textin
+  question="Electrons can transfer, share, or cause charge disparities between atoms to create bonds, including ionic, covalent, and hydrogen bonds, as well as ________."
+  answer="van der Waals interactions"
+  accept="van der waals interaction"
+  hint="This weak interaction is not driven by electron transfer or sharing, but by temporary fluctuations in electron density — the summary's last-listed bond type."
+>}}
 
 ### Explain the ways in which naturally occurring elements combine to create molecules, cells, tissues, organ systems, and organisms
 
@@ -350,8 +379,18 @@ Ionic bonds are created between ions. The electrons are not shared between the a
 
 {{< selfcheck question="Why are hydrogen bonds and van der Waals interactions necessary for cells?" hint="Think about what gives proteins and DNA the three-dimensional shape they need to function." >}}
 Hydrogen bonds and van der Waals interactions form weak associations between different molecules or within different regions of the same molecule. They provide the structure and shape necessary for proteins and DNA within cells so that they function properly.
+===CHECKS===
+hydrogen bonds and van der Waals interactions form weak associations between different molecules or within different regions of the same molecule
+they provide the structure and shape necessary for proteins and DNA within cells so that they function properly
 {{< /selfcheck >}}
+
+{{< textin
+  question="The section summary states that naturally occurring elements combine in various ways to create molecules, which in turn combine to form cells, tissues, organ systems, and ________."
+  answer="organisms"
+  accept="organism"
+  hint="This is the top level of the hierarchy the summary's opening sentences build up to, from atom to element to molecule and beyond."
+>}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 2.1: Atoms, Isotopes, Ions, and Molecules: The Building Blocks](https://openstax.org/books/biology-2e/pages/2-1-atoms-isotopes-ions-and-molecules-the-building-blocks) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with `kind` set explicitly for all eleven — seven are line diagrams the media manifest had guessed were photos from their JPEG or PNG source files, and only the mammoth-excavation figure is a true photo; the periodic table, the Bohr-diagram grid, the water-formation diagram, the sodium/chlorine diagram, and the polar/nonpolar comparison table each had a source alt over the 600-character accessibility limit, so each was shortened to a structural description and gained a `longdesc` walking its content in reading order (the periodic table's `longdesc` also names the image's second, independent color code — text color marking each element's physical state as solid, liquid, or gas — which the source alt omitted entirely), and the mammoth-excavation photo's bare "Photo shows scientists unearthing a mammoth skeleton" alt was rewritten to describe what is visible; both Visual Connection questions are kept in the body immediately after their figures, rendered as self-check since both source solutions are prose rather than a keyed choice; feature boxes (one Evolution Connection, three Link to Learning notes — the source's `interactive` class throughout — and one Career Connection) rendered as callouts with their bold names, external simulation and video URLs kept and given descriptive link text; the section's two tables kept as Markdown tables, each with the source's title line as a bold caption above it, since neither table's cells include drawn chemistry that a table can't hold; the section's four display chemical equations set as Unicode text paragraphs with arrows rather than KaTeX, since they are chemistry, not mathematics; the two genuine numeric exponents in the atomic/electron mass sentence ($1.67 \times 10^{-24}$ grams, $9.11 \times 10^{-28}$ grams) are set in KaTeX rather than Unicode superscripts, since a superscript minus before a digit is a mathematical exponent and not an ion charge; inline pointers to figures and tables ("as Figure 2.x illustrates," "as Table 2.x shows") replaced with descriptive phrases ("the diagram above/below") since figures and tables are not numbered here; and the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with three key-term recall items (matter, element, molecule) added from the glossary to round out thin objective groups.</small>
+<small>This section is adapted from [Biology 2e, Section 2.1: Atoms, Isotopes, Ions, and Molecules: The Building Blocks](https://openstax.org/books/biology-2e/pages/2-1-atoms-isotopes-ions-and-molecules-the-building-blocks) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with `kind` set explicitly for all eleven — seven are line diagrams the media manifest had guessed were photos from their JPEG or PNG source files, and only the mammoth-excavation figure is a true photo; the periodic table, the Bohr-diagram grid, the water-formation diagram, the sodium/chlorine diagram, and the polar/nonpolar comparison table each had a source alt over the 600-character accessibility limit, so each was shortened to a structural description and gained a `longdesc` walking its content in reading order (the periodic table's `longdesc` also names the image's second, independent color code — text color marking each element's physical state as solid, liquid, or gas — which the source alt omitted entirely), and the mammoth-excavation photo's bare "Photo shows scientists unearthing a mammoth skeleton" alt was rewritten to describe what is visible; both Visual Connection questions are kept in the body immediately after their figures, rendered as self-check since both source solutions are prose rather than a keyed choice; feature boxes (one Evolution Connection, three Link to Learning notes — the source's `interactive` class throughout — and one Career Connection) rendered as callouts with their bold names, external simulation and video URLs kept and given descriptive link text; the section's two tables kept as Markdown tables, each with the source's title line as a bold caption above it, since neither table's cells include drawn chemistry that a table can't hold; the section's four display chemical equations set as Unicode text paragraphs with arrows rather than KaTeX, since they are chemistry, not mathematics; the two genuine numeric exponents in the atomic/electron mass sentence ($1.67 \times 10^{-24}$ grams, $9.11 \times 10^{-28}$ grams) are set in KaTeX rather than Unicode superscripts, since a superscript minus before a digit is a mathematical exponent and not an ion charge; inline pointers to figures and tables ("as Figure 2.x illustrates," "as Table 2.x shows") replaced with descriptive phrases ("the diagram above/below") since figures and tables are not numbered here; and the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with three key-term recall items (matter, element, molecule) added from the glossary to round out thin objective groups; rubric checkpoints added to each self-check, including the two body Visual Connection self-checks, decomposing each model answer (the source solution) into check-off clauses with no new claims; one summary-derived textin cloze added under the third objective from the section summary's own sentence naming van der Waals interactions among the bond types electrons create; one summary-derived textin cloze added under the fourth objective from the section summary's own sentence on elements combining into molecules, cells, tissues, organ systems, and organisms; and one multiple choice written locally under the first objective, strictly from the section's own opening paragraph distinguishing the 118 known elements from the 98 that occur naturally, since neither of the summary's first two sentences could be blanked without duplicating the two keyed recall items (matter, element) already in that group — disclosed in the ledger.</small>

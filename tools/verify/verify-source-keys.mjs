@@ -16,11 +16,17 @@
  *   textin          the answer must be a glossary term (or complete one with
  *                   the words the prompt places around the blank: "________
  *                   reasoning" keys `deductive` for "deductive reasoning"),
- *                   a bolded `<term>`, or at least a phrase the module prints
+ *                   a bolded `<term>`, a phrase of the module's summary
+ *                   section, or at least a phrase the module prints
  *   selfcheck       a model answer matched to a source exercise must be made
  *                   of the source solution's own words (token coverage ≥
  *                   MODEL_COVERAGE_FLOOR); a locally written self-check has no
  *                   source and is counted, not judged
+ *
+ *   sortbins        the bins must name a source table's data columns, and no
+ *                   item may read better under a different column than the
+ *                   one it is keyed to; a config matching no table is
+ *                   counted as unmatched, not judged
  *
  * A page item whose question matches no source exercise is COUNTED as
  * unmatched, never failed and never silently dropped, exactly as
@@ -63,6 +69,7 @@ import {
   loadSourceLock, bundleSourceDirectory,
 } from '../lib/openstax-source.mjs';
 import { shortcodes } from '../lib/content.mjs';
+import { parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
 
 /** A page question must share this much of a source problem's vocabulary to
  * count as a transcription of it; below this it is an author-written item. */
@@ -77,8 +84,10 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
 /**
  * Keys the page deliberately changes from the pinned source, each backed by a
  * confirmed erratum (docs/openstax-errata.md) and named in the page footer.
- * `kind: 'key'` — the page keys a different option; `kind: 'options'` — an
- * option's wording differs from the source list.
+ * `kind: 'key'` — the page keys a different option; `kind: 'solution'` — a
+ * selfcheck model answer corrects a wrong source solution; `kind: 'options'` — an
+ * option's wording differs from the source list; `kind: 'assignment'` — a
+ * sortbins bins an item against the source table (exercise = the table id).
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
@@ -115,6 +124,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     kind: 'key',
     erratum: 121,
     reason: 'source keys "cell plate", a plant-cell structure the module never mentions; the module says the FtsZ ring directs formation of a septum',
+  },
+  {
+    page: 'content/life-health-sciences/biology/12-mendels-experiments-and-heredity/03-laws-of-inheritance.md',
+    exercise: 'fs-idm70127392',
+    kind: 'solution',
+    erratum: 133,
+    reason: 'source solution answers the RrYY × rrYy seed-shape cross with flower-color genotypes (PpYY, PpYy, ppYY, ppYy) copied from an unrelated item; the page derives RrYY, RrYy, rrYY, rrYy with the same 1:1 ratio and 2 × 2 grid',
   },
 ]);
 
@@ -197,10 +213,31 @@ export function readModule(xml) {
   const terms = descendants(document, (node) => localName(node) === 'term')
     .map((term) => compact(textContent(term)))
     .filter(Boolean);
+  const tables = descendants(document, (node) => localName(node) === 'table').map((table) => {
+    const tgroup = firstElement(table, 'tgroup');
+    if (!tgroup) return null;
+    const rowsOf = (parent) => (parent
+      ? elementChildren(parent, 'row').map((row) => elementChildren(row, 'entry')
+        .map((entry) => normalizeWhitespace(textContent(entry))))
+      : []);
+    const headRows = rowsOf(firstElement(tgroup, 'thead'));
+    // The table's caption rides as a spanning single-entry thead row; the
+    // column headers are the LAST thead row (42 of the corpus's 64 tables
+    // carry summary="", so @summary is never the title).
+    const title = (headRows.find((row) => row.length === 1) || [''])[0];
+    const header = headRows.length ? headRows[headRows.length - 1] : [];
+    return { id: table.attributes.id || '', title, header, rows: rowsOf(firstElement(tgroup, 'tbody')) };
+  }).filter((table) => table && table.rows.length);
+  const summarySections = descendants(document, (node) => localName(node) === 'section'
+    && (node.attributes.class || '') === 'summary');
   return {
     exercises,
     glossary: new Set(glossary),
     terms: new Set(terms),
+    tables,
+    summary: summarySections.length
+      ? ` ${normalizeText(summarySections.map((node) => textContent(node)).join(' '))} `
+      : '',
     text: ` ${normalizeText(textContent(document))} `,
   };
 }
@@ -226,12 +263,28 @@ export function pageItems(markdown) {
       answer: sc.params.answer || '',
     });
   }
+  for (const sc of shortcodes(markdown, 'sortbins')) {
+    let config;
+    // The lint names an unparseable config; here it is simply not a page item.
+    try { config = parseSortbinsConfig(sc.inner.trim()); } catch { continue; }
+    items.push({
+      type: 'sortbins',
+      line: lineOf(markdown, sc.index),
+      question: sc.params.question || '',
+      bins: config.bins,
+      items: config.items,
+    });
+  }
   for (const sc of shortcodes(markdown, 'selfcheck')) {
     items.push({
       type: 'selfcheck',
       line: lineOf(markdown, sc.index),
       question: sc.params.question || '',
-      model: normalizeWhitespace(sc.inner),
+      // The optional ===CHECKS=== tail holds rubric checkpoints — clauses of
+      // the model answer restated for self-marking. Judging reads the model
+      // part only: the checkpoints repeat its words, and counting them twice
+      // would distort phraseCoverage against the source solution.
+      model: normalizeWhitespace(sc.inner.split(/^[ \t]*===CHECKS===[ \t]*$/m)[0]),
     });
   }
   return items;
@@ -292,7 +345,7 @@ export function judgeMultipleChoice(item, source) {
  * Where a textin answer comes from: 'glossary' (a term or one of its
  * parenthetical spellings), 'glossary-completed' (the prompt's words around
  * the blank complete the term), 'term' (a bolded `<term>` in the body),
- * 'body' (a phrase the module prints), or 'unsourced'.
+ * 'summary' (a phrase of the module's own summary section), 'body' (a phrase the module prints), or 'unsourced'.
  */
 export function judgeTextin(item, source) {
   const answer = compact(item.answer);
@@ -305,6 +358,14 @@ export function judgeTextin(item, source) {
     }
   }
   if (source.terms.has(answer)) return { status: 'term' };
+  // The module summary is source-keyed prose one register above the
+  // glossary: a summary-sentence cloze tests the concept, not the word.
+  // Reported as its own provenance so coverage of summary-derived items is
+  // visible; checked before 'body' only for the label — the summary is part
+  // of the module text either way. (A summary-derived MULTIPLECHOICE stays
+  // 'unmatched' by design: an author-written item resting on the ledger
+  // reading and the blind solve.)
+  if (source.summary.includes(` ${normalizeText(item.answer)} `)) return { status: 'summary' };
   if (source.text.includes(` ${normalizeText(item.answer)} `)) return { status: 'body' };
   return { status: 'unsourced', detail: `${JSON.stringify(item.answer)} is not a glossary term, a bolded term, or a phrase the module prints` };
 }
@@ -328,6 +389,91 @@ export function judgeSelfcheck(item, source) {
   };
 }
 
+/**
+ * A sortbins exercise against the module's tables. The bins must each name a
+ * distinct DATA column of one table's header (the first column is the row
+ * label); every item label is then measured against each column's rows (row
+ * label + that column's cell), and an item that reads strictly better under
+ * a different column than the one it is keyed to is a mis-binned item.
+ * Returns 'confirmed' | 'unmatched' | 'assignment-differs'. Conservative on
+ * purpose: the mapping is also blind-solved (solve-check), so this reading
+ * only fails an assignment the table itself contradicts.
+ */
+export function judgeSortbins(item, source) {
+  // First pass: bins are DATA COLUMNS (m66391's replication table —
+  // Property | Prokaryotes | Eukaryotes). Second pass: the TRANSPOSED
+  // layout, where the categories are rows (10.5's cell-division table —
+  // organisms down the side, aspects across the top); bins then match
+  // distinct row labels and an item is measured against its bin-row's
+  // cells. Both passes give every bin a distinct anchor, or the exercise is
+  // unmatched.
+  let match = null;
+  for (const table of source.tables) {
+    if (table.header.length < 2 || !table.rows.length) continue;
+    const columns = item.bins.map((bin) => {
+      let top = null;
+      for (let column = 1; column < table.header.length; column += 1) {
+        const score = tokenSimilarity(bin, table.header[column]);
+        if (!top || score > top.score) top = { score, column };
+      }
+      return top && top.score >= MATCH_FLOOR ? top.column : -1;
+    });
+    if (columns.includes(-1) || new Set(columns).size !== columns.length) continue;
+    match = { table, columns };
+    break;
+  }
+  if (!match) {
+    for (const table of source.tables) {
+      if (!table.rows.length) continue;
+      const rows = item.bins.map((bin) => {
+        let top = null;
+        for (let r = 0; r < table.rows.length; r += 1) {
+          const score = tokenSimilarity(bin, table.rows[r][0] || '');
+          if (!top || score > top.score) top = { score, row: r };
+        }
+        return top && top.score >= MATCH_FLOOR ? top.row : -1;
+      });
+      if (rows.includes(-1) || new Set(rows).size !== rows.length) continue;
+      match = { table, rows };
+      break;
+    }
+  }
+  if (!match) return { status: 'unmatched' };
+  const { table } = match;
+  const binName = (bin) => (match.columns
+    ? table.header[match.columns[bin]]
+    : (table.rows[match.rows[bin]] || [])[0] || '');
+  const coverageFor = (entry, bin) => {
+    if (match.columns) {
+      return Math.max(0, ...table.rows.map(
+        (row) => phraseCoverage(entry.label, `${row[0] || ''} ${row[match.columns[bin]] || ''}`),
+      ));
+    }
+    const row = table.rows[match.rows[bin]] || [];
+    const scores = [];
+    for (let c = 1; c < row.length; c += 1) {
+      scores.push(phraseCoverage(entry.label, `${table.header[c] || ''} ${row[c] || ''}`));
+    }
+    return Math.max(0, ...scores);
+  };
+  const mismatches = [];
+  let sourced = 0;
+  for (const entry of item.items) {
+    const keyed = coverageFor(entry, entry.bin);
+    if (keyed >= MODEL_COVERAGE_FLOOR) sourced += 1;
+    for (let bin = 0; bin < item.bins.length; bin += 1) {
+      if (bin === entry.bin) continue;
+      const rival = coverageFor(entry, bin);
+      if (rival >= MODEL_COVERAGE_FLOOR && rival > keyed) {
+        mismatches.push(`item ${JSON.stringify(entry.label)} reads as ${JSON.stringify(binName(bin))} in table ${table.id}, not the page's ${JSON.stringify(item.bins[entry.bin])}`);
+      }
+    }
+  }
+  if (mismatches.length) return { status: 'assignment-differs', table, detail: mismatches.join('\n    ') };
+  if (!sourced) return { status: 'unmatched' };
+  return { status: 'confirmed', table };
+}
+
 /* ---- corpus walk ---------------------------------------------------------- */
 
 export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose = false } = {}) {
@@ -338,8 +484,9 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
 
   const counts = {
     multiplechoice: { confirmed: 0, disclosed: 0, unmatched: 0, 'prose-key': 0 },
-    textin: { glossary: 0, 'glossary-completed': 0, term: 0, body: 0 },
-    selfcheck: { verbatim: 0, reworded: 0, unmatched: 0 },
+    textin: { glossary: 0, 'glossary-completed': 0, term: 0, summary: 0, body: 0 },
+    selfcheck: { verbatim: 0, reworded: 0, disclosed: 0, unmatched: 0 },
+    sortbins: { confirmed: 0, disclosed: 0, unmatched: 0 },
   };
   const failures = [];
   const notes = [];
@@ -383,7 +530,7 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
           const wanted = verdict.status === 'key-differs' ? 'key' : 'options';
           if (deviation && deviation.kind === wanted) {
             used.add(deviation);
-            counts.multiplechoice.disclosed += 1;
+            counts[item.type].disclosed += 1;
             notes.push(`${where} keys against the source on purpose (erratum ${deviation.erratum})`);
           } else {
             failures.push({
@@ -393,17 +540,48 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
             });
           }
         } else {
-          counts.multiplechoice[verdict.status] += 1;
-          if (verdict.status !== 'confirmed') notes.push(`${where} multiplechoice ${verdict.status}: ${item.question.slice(0, 80)}`);
+          counts[item.type][verdict.status] += 1;
+          if (verdict.status !== 'confirmed') notes.push(`${where} ${item.type} ${verdict.status}: ${item.question.slice(0, 80)}`);
         }
       } else if (item.type === 'textin') {
         const verdict = judgeTextin(item, source);
         if (verdict.status === 'unsourced') failures.push({ page: section.localPath, line: item.line, detail: verdict.detail });
         else counts.textin[verdict.status] += 1;
+      } else if (item.type === 'sortbins') {
+        const verdict = judgeSortbins(item, source);
+        if (verdict.status === 'assignment-differs') {
+          const deviation = deviationFor(section.localPath, verdict.table.id);
+          if (deviation && deviation.kind === 'assignment') {
+            used.add(deviation);
+            counts.sortbins.disclosed += 1;
+            notes.push(`${where} bins against the source table on purpose (erratum ${deviation.erratum})`);
+          } else {
+            failures.push({
+              page: section.localPath,
+              line: item.line,
+              detail: `${verdict.detail}\n    an intended correction needs an errata entry and a DISCLOSED_DEVIATIONS line (kind "assignment")`,
+            });
+          }
+        } else {
+          counts.sortbins[verdict.status] += 1;
+          if (verdict.status !== 'confirmed') notes.push(`${where} sortbins ${verdict.status}: ${item.question.slice(0, 80)}`);
+        }
       } else {
         const verdict = judgeSelfcheck(item, source);
-        if (verdict.status === 'diverges') failures.push({ page: section.localPath, line: item.line, detail: verdict.detail });
-        else {
+        if (verdict.status === 'diverges') {
+          const deviation = deviationFor(section.localPath, verdict.exercise.id);
+          if (deviation && deviation.kind === 'solution') {
+            used.add(deviation);
+            counts.selfcheck.disclosed += 1;
+            notes.push(`${where} model answer corrects the source solution on purpose (erratum ${deviation.erratum})`);
+          } else {
+            failures.push({
+              page: section.localPath,
+              line: item.line,
+              detail: `${verdict.detail}\n    an intended correction needs an errata entry and a DISCLOSED_DEVIATIONS line (kind "solution")`,
+            });
+          }
+        } else {
           counts.selfcheck[verdict.status] += 1;
           if (verdict.status !== 'verbatim') notes.push(`${where} selfcheck ${verdict.status}${verdict.coverage != null ? ` (coverage ${verdict.coverage.toFixed(2)})` : ''}: ${item.question.slice(0, 80)}`);
         }
@@ -425,7 +603,8 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
 
   const confirmed = counts.multiplechoice.confirmed
     + Object.values(counts.textin).reduce((a, b) => a + b, 0)
-    + counts.selfcheck.verbatim + counts.selfcheck.reworded;
+    + counts.selfcheck.verbatim + counts.selfcheck.reworded
+    + counts.sortbins.confirmed;
   return {
     counts, confirmed, failures, notes: verbose ? notes : [],
     sections: checked.length,
@@ -454,13 +633,14 @@ export function summaryLine({ counts, confirmed, failures, sections, sectionsSki
   const mc = counts.multiplechoice;
   const textin = Object.values(counts.textin).reduce((a, b) => a + b, 0);
   const selfcheck = counts.selfcheck.verbatim + counts.selfcheck.reworded;
+  const sortbins = counts.sortbins ?? { confirmed: 0, disclosed: 0, unmatched: 0 };
   const scope = sectionsSkipped
     ? ` (partial: ${sectionsSkipped} of ${sections + sectionsSkipped} mapped sections skipped, no checkout)`
     : '';
   return `${failures.length ? '✖' : sectionsSkipped ? '⊘' : '✓'} source-key cross-check${scope}: `
     + `${confirmed} keyed answers confirmed against the pinned CNXML across ${sections} mapped sections `
-    + `(multiplechoice ${mc.confirmed}, textin ${textin}, selfcheck ${selfcheck}); `
-    + `${mc.disclosed} disclosed correction(s); ${mc.unmatched + counts.selfcheck.unmatched} unmatched to any source exercise; `
+    + `(multiplechoice ${mc.confirmed}, textin ${textin}, selfcheck ${selfcheck}, sortbins ${sortbins.confirmed}); `
+    + `${mc.disclosed + counts.selfcheck.disclosed + sortbins.disclosed} disclosed correction(s); ${mc.unmatched + counts.selfcheck.unmatched + sortbins.unmatched} unmatched to any source exercise; `
     + `${mc['prose-key']} prose-keyed; ${failures.length} failure(s)`;
 }
 

@@ -135,7 +135,18 @@ Modern scientists refer to the plasma membrane as the fluid mosaic model. A phos
 
 {{< selfcheck question="Why do phospholipids tend to spontaneously orient themselves into something resembling a membrane?" hint="Think about which part of the molecule wants to face water and which part does not." >}}
 The hydrophobic, nonpolar regions must align with each other in order for the structure to have minimal potential energy and, consequently, higher stability. The fatty acid tails of the phospholipids cannot mix with water, but the phosphate "head" of the molecule can. Thus, the head orients to water, and the tail to other lipids.
+===CHECKS===
+the hydrophobic, nonpolar regions must align with each other
+minimal potential energy and higher stability
+the fatty acid tails cannot mix with water
+the head orients to water, and the tail to other lipids
 {{< /selfcheck >}}
+
+{{< textin
+  question="According to the section summary, plasma membranes are not static — they are dynamic and constantly in ________."
+  answer="flux"
+  hint="This is the state the summary contrasts with \"static\" in its closing sentence about the membrane's fluid nature."
+>}}
 
 ### Describe phospholipid, protein, and carbohydrate functions in membranes
 
@@ -177,6 +188,11 @@ channels through membrane
 
 {{< selfcheck question="How can a cell use an extracellular peripheral protein as the receptor to transmit a signal into the cell?" hint="A peripheral protein never crosses the membrane on its own — what must it recruit to reach the cytoplasm?" >}}
 Peripheral proteins can bind to other molecules in the extracellular space. However, they cannot directly transmit a signal to the inside of the cell since they do not have a transmembrane domain (region that goes through the plasma membrane to the inside of the cell). They must associate with integral membrane proteins in order to pass the signal to the inside of the cell.
+===CHECKS===
+peripheral proteins can bind to other molecules in the extracellular space
+they cannot directly transmit a signal to the inside of the cell
+they do not have a transmembrane domain
+they must associate with integral membrane proteins
 {{< /selfcheck >}}
 
 ### Discuss membrane fluidity
@@ -205,8 +221,12 @@ The cells from the Mediterranean coast animal will have a higher glycoprotein co
 
 {{< selfcheck question="Why is it advantageous for the cell membrane to be fluid in nature?" hint="Think about how a rigid membrane would behave compared to one whose parts can still move and flow." >}}
 The fluid characteristic of the cell membrane allows greater flexibility to the cell than it would if the membrane were rigid. It also allows the motion of membrane components, required for some types of membrane transport.
+===CHECKS===
+allows greater flexibility to the cell than it would if the membrane were rigid
+it also allows the motion of membrane components
+required for some types of membrane transport
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 5.1: Components and Structure](https://openstax.org/books/biology-2e/pages/5-1-components-and-structure) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with all five re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a molecular illustration, not a photograph); a longer extended description added for the three figures whose full reading is not carried by their captions (the fluid-mosaic-model overview, the three-view phospholipid figure, and the three-lipid-arrangement figure), with their alts correspondingly shortened to what each image shows and the walk-through moved into the longdesc — the phospholipid figure's alt additionally rewritten to name its three lettered sub-panels, which the source alt omitted; the T-cell/HIV figure's alt normalized from the source's letter-by-letter spelling ("C D 4," "H I V") to standard acronym spelling; feature boxes (one Evolution Connection, one Link to Learning, one Career Connection) rendered as callouts with their bold names, with the Link to Learning's vague "this site" link text replaced by a descriptive phrase naming the destination; inline references to the figures and the table changed from the source's cross-reference markers to descriptive phrases ("above," "below") since figures and tables are not numbered here; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and three key-term recall items (fluid mosaic model, integral protein, peripheral protein) added from the glossary, the latter two keyed on their modifying word alone with "protein" held in the prompt and accepted as a two-word alternate, to round out every objective group with an auto-graded item.</small>
+<small>This section is adapted from [Biology 2e, Section 5.1: Components and Structure](https://openstax.org/books/biology-2e/pages/5-1-components-and-structure) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with all five re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (every one is a molecular illustration, not a photograph); a longer extended description added for the three figures whose full reading is not carried by their captions (the fluid-mosaic-model overview, the three-view phospholipid figure, and the three-lipid-arrangement figure), with their alts correspondingly shortened to what each image shows and the walk-through moved into the longdesc — the phospholipid figure's alt additionally rewritten to name its three lettered sub-panels, which the source alt omitted; the T-cell/HIV figure's alt normalized from the source's letter-by-letter spelling ("C D 4," "H I V") to standard acronym spelling; feature boxes (one Evolution Connection, one Link to Learning, one Career Connection) rendered as callouts with their bold names, with the Link to Learning's vague "this site" link text replaced by a descriptive phrase naming the destination; inline references to the figures and the table changed from the source's cross-reference markers to descriptive phrases ("above," "below") since figures and tables are not numbered here; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and three key-term recall items (fluid mosaic model, integral protein, peripheral protein) added from the glossary, the latter two keyed on their modifying word alone with "protein" held in the prompt and accepted as a two-word alternate, to round out every objective group with an auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived recall item (flux, from the summary's closing sentence on the membrane's dynamic character) added under the first objective, since its group held only two items short of the three-item floor.</small>

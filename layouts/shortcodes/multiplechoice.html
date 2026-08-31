@@ -54,7 +54,7 @@
      generic "Answer choices". Interim name = question minus `$` delimiters
      (raw TeX possible); the component swaps in MathLive's spoken form at
      runtime, exactly like the option labels. */ -}}
-{{- $qplain := replaceRE `\$` "" $question -}}
+{{- $qplain := replaceRE `\$` "" ($question | markdownify | plainify) -}}
 <multiple-choice data-mode="{{ $mode }}" data-question="{{ $question }}"
   {{- if eq $mode "graph" }} data-answer-index="{{ .Get "answerIndex" }}"{{ else }} data-answer="{{ .Get "answer" }}"{{ end }}>
   <div class="ap-mc">
@@ -103,7 +103,7 @@
         {{- range (split (trim .Inner "\n") "\n") -}}
           {{- $opt := trim . " " -}}
           {{- with $opt -}}
-            {{- $optionLabel := replace . "$" "" -}}
+            {{- $optionLabel := replace ((. | markdownify | plainify) | string) "$" "" -}}
             <button type="button" disabled class="ap-mc-option" data-value="{{ . }}" aria-label="Answer choice: {{ $optionLabel }}">{{ partial "mathtext" . }}</button>
           {{- end -}}
         {{- end -}}

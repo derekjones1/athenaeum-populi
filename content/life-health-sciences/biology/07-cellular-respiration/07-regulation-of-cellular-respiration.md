@@ -104,10 +104,19 @@ aldolase
 
 {{< selfcheck question="How does citrate from the citric acid cycle affect glycolysis?" hint="Citrate is one of the molecules that binds phosphofructokinase's allosteric site." >}}
 Citrate can inhibit phosphofructokinase by feedback regulation.
+===CHECKS===
+citrate can inhibit phosphofructokinase
+by feedback regulation
 {{< /selfcheck >}}
 
 {{< selfcheck question="Why might negative feedback mechanisms be more common than positive feedback mechanisms in living cells?" hint="Consider which type of mechanism actually brings a process back under control, and which pushes it further away from a steady state." >}}
 Negative feedback mechanisms actually control a process; it can turn it off, whereas positive feedback accelerates the process, allowing the cell no control over it. Negative feedback naturally maintains homeostasis, whereas positive feedback drives the system away from equilibrium.
+===CHECKS===
+negative feedback mechanisms actually control a process
+it can turn it off
+positive feedback accelerates the process, allowing the cell no control over it
+negative feedback naturally maintains homeostasis
+positive feedback drives the system away from equilibrium
 {{< /selfcheck >}}
 
 {{< textin
@@ -115,6 +124,12 @@ Negative feedback mechanisms actually control a process; it can turn it off, whe
   answer="GLUT protein"
   accept="GLUT proteins|glucose transporter|glucose transporters|glucose transporter protein|glucose transporter proteins"
   hint="Insulin signaling moves this transporter's vesicles to the plasma membrane so glucose can enter the cell."
+>}}
+
+{{< textin
+  question="Enzyme control of the respiration pathways is a type of ________ mechanism, turning the enzymes off."
+  answer="negative feedback"
+  hint="The section's summary names the general category this enzyme-level control belongs to."
 >}}
 
 ### Identify the mechanism that controls the rate of the transport of electrons through the electron transport chain
@@ -132,8 +147,23 @@ slow down the pathway
 
 {{< selfcheck question="What change in the relative concentration of ADP and ATP causes the electron transport chain to slow down?" hint="Think about which one builds up when a cell's ATP usage falls, and which one accumulates once usage rises again." >}}
 As a cell's ATP usage decreases, the concentration of ADP in the cell falls while ATP begins to build up instead. It is this shift toward more ATP and less ADP that signals the electron transport chain to slow down.
+===CHECKS===
+as a cell's ATP usage decreases, the concentration of ADP in the cell falls
+ATP begins to build up instead
+this shift toward more ATP and less ADP that signals the electron transport chain to slow down
 {{< /selfcheck >}}
+
+{{< multiplechoice
+  question="According to the section's feedback-control table, elevated ATP has what effect on electron transport chain activity?"
+  answer="decrease the rate of electron transport"
+  hint="The table's row for the electron transport chain pairs each nucleotide with the direction it pushes the pathway's activity."
+>}}
+increase the rate of electron transport
+decrease the rate of electron transport
+have no effect on the rate of electron transport
+double the rate of electron transport
+{{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 7.7: Regulation of Cellular Respiration](https://openstax.org/books/biology-2e/pages/7-7-regulation-of-cellular-respiration) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the glycolysis-pathway figure re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a molecular illustration, not a photograph); a longdesc added to both figures, walking the GLUT4 fusion diagram panel by panel and the ten-step glycolysis pathway step by step, since neither figure's full content is carried by its caption; the glycolysis-pathway figure's source alt corrected — it named "phosphoglycerate kinase" as the third regulatory enzyme (step 10), but the image and the section's own prose agree the third regulatory step is catalyzed by pyruvate kinase (phosphoglycerate kinase catalyzes the unregulated step 7); the inline reference to the citric acid cycle's own figure (drawn in Section 7.3, not on this page) changed to a prose reference to that discussion, since the figure itself is not reproduced here; the reference to the summary table changed from a print pointer to "the table below," since tables are not numbered here; the Section Summary's "nucleosides" corrected to "nucleotides" to match the accurate term this same module uses one paragraph earlier for the identical list (ATP, ADP, AMP, NAD⁺) — logged as a source defect; the one Link to Learning note rendered as a callout with descriptive link text; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); one key-term recall item (GLUT protein) added from the glossary; and one self-check written locally from the section's own paragraph on ADP/ATP levels and the electron transport chain (no new claim), added so the electron-transport objective's group meets the block's minimum size.</small>
+<small>This section is adapted from [Biology 2e, Section 7.7: Regulation of Cellular Respiration](https://openstax.org/books/biology-2e/pages/7-7-regulation-of-cellular-respiration) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with the glycolysis-pathway figure re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (it is a molecular illustration, not a photograph); a longdesc added to both figures, walking the GLUT4 fusion diagram panel by panel and the ten-step glycolysis pathway step by step, since neither figure's full content is carried by its caption; the glycolysis-pathway figure's source alt corrected — it named "phosphoglycerate kinase" as the third regulatory enzyme (step 10), but the image and the section's own prose agree the third regulatory step is catalyzed by pyruvate kinase (phosphoglycerate kinase catalyzes the unregulated step 7); the inline reference to the citric acid cycle's own figure (drawn in Section 7.3, not on this page) changed to a prose reference to that discussion, since the figure itself is not reproduced here; the reference to the summary table changed from a print pointer to "the table below," since tables are not numbered here; the Section Summary's "nucleosides" corrected to "nucleotides" to match the accurate term this same module uses one paragraph earlier for the identical list (ATP, ADP, AMP, NAD⁺) — logged as a source defect; the one Link to Learning note rendered as a callout with descriptive link text; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); one key-term recall item (GLUT protein) added from the glossary; and one self-check written locally from the section's own paragraph on ADP/ATP levels and the electron transport chain (no new claim), added so the electron-transport objective's group meets the block's minimum size; rubric checkpoints added to all three self-checks, decomposing each model answer (the source solution) into check-off clauses with no new claims; the summary's own feedback-controls table read as a data table of pathway/enzyme/effector/effect combinations rather than sortbins material (its rows pair a specific enzyme with a specific effector and are not a clean category comparison); a summary-derived cloze `textin` item added under the first objective, naming "negative feedback" as the mechanism type the summary says enzyme control belongs to; and one multiple choice written locally under the second objective, reading the feedback-control table's own electron-transport-chain row (elevated ATP decreases pathway activity, disclosed in the ledger), to raise the second objective's group and the section as a whole to the practice floor.</small>

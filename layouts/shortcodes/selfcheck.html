@@ -11,6 +11,12 @@
   Params: question (required), hint (optional). `answer`, `accept`,
   `answerDisplay` are rejected — a self-check has no key.
 
+  The inner content may end with a `===CHECKS===` line followed by 2–6
+  rubric checkpoints — clauses of the model answer, one per line — rendered
+  as check-off boxes ("Did your answer mention:") under the model answer.
+  Still ungraded and unstored; the lint holds each clause to the model
+  answer's own words, and verify-source-keys judges only the model part.
+
   The shell is fully functional without JavaScript: a labelled <textarea>, a
   native <details> holding the model answer, and two rating buttons that ship
   natively `disabled` until <self-check> (assets/js/components/text/self-check.js)
@@ -25,6 +31,17 @@
 {{- if not $inner -}}
   {{- errorf "selfcheck shortcode needs a model answer as its inner content (%s)" .Position -}}
 {{- end -}}
+{{- $checkParts := split $inner "===CHECKS===" -}}
+{{- $model := trim (index $checkParts 0) "\n\t " -}}
+{{- $checks := slice -}}
+{{- if gt (len $checkParts) 1 -}}
+  {{- if not $model -}}
+    {{- errorf "selfcheck: the model answer above ===CHECKS=== is empty (%s)" .Position -}}
+  {{- end -}}
+  {{- range split (trim (index $checkParts 1) "\n\t ") "\n" -}}
+    {{- with trim . " \t" -}}{{- $checks = $checks | append . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
 {{- range (slice "answer" "accept" "answerDisplay" "answerMode" "answerForm") -}}
   {{- with $.Get . -}}
     {{- errorf "selfcheck does not take %q — a self-check has no key; its model answer is the inner content (%s)" . $.Position -}}
@@ -34,7 +51,7 @@
   {{- .Page.Store.Set "hasMath" true -}}
 {{- end -}}
 {{- $id := printf "ap-selfcheck-%s" (.Ordinal | string) -}}
-{{- $qplain := replaceRE `\$` "" $question -}}
+{{- $qplain := replaceRE `\$` "" ($question | markdownify | plainify) -}}
 <self-check data-question="{{ $question }}">
   <div class="ap-selfcheck">
     <p class="ap-selfcheck-question" id="{{ $id }}-question">{{ partial "mathtext" $question }}</p>
@@ -42,7 +59,17 @@
     <textarea class="ap-selfcheck-response" id="{{ $id }}-response" rows="4" aria-describedby="{{ $id }}-question" autocomplete="off"></textarea>
     <details class="ap-selfcheck-answer">
       <summary>Show model answer</summary>
-      <div class="ap-selfcheck-model">{{ $inner | markdownify }}</div>
+      <div class="ap-selfcheck-model">{{ $model | markdownify }}</div>
+      {{- if $checks }}
+      <div class="ap-selfcheck-checkpoints">
+        <p class="ap-selfcheck-checkpoints-lead">Did your answer mention:</p>
+        <ul class="ap-selfcheck-checkpoints-list">
+          {{- range $checks }}
+          <li class="ap-selfcheck-checkpoint"><label><input type="checkbox" disabled> {{ . }}</label></li>
+          {{- end }}
+        </ul>
+      </div>
+      {{- end }}
     </details>
     <div class="ap-selfcheck-marks" role="group" aria-label="Rate your response to: {{ $qplain }}">
       <button type="button" disabled class="ap-selfcheck-mark" data-verdict="correct" aria-pressed="false">Mark as correct</button>

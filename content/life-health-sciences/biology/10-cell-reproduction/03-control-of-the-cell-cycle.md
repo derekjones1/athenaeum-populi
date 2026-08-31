@@ -92,6 +92,10 @@ Rb halts the cell cycle and releases its hold in response to cell growth.
 
 {{< selfcheck question="Rb and other proteins that negatively regulate the cell cycle are sometimes called tumor suppressors. Why do you think the name tumor suppressor might be appropriate for these proteins?" hint="Think about what happens to cell division when a protein that normally halts the cycle stops working." >}}
 Rb and other negative regulatory proteins control cell division and therefore prevent the formation of tumors. Mutations that prevent these proteins from carrying out their function can result in cancer.
+===CHECKS===
+negative regulatory proteins control cell division
+they prevent the formation of tumors
+mutations in these proteins can result in cancer
 {{< /selfcheck >}}
 
 ## Summary
@@ -129,6 +133,17 @@ G0 checkpoint
   hint="Three of these occur in the cell cycle: near the end of G1, at the G2/M transition, and during metaphase."
 >}}
 
+{{< multiplechoice
+  question="According to the section, a lack of human growth hormone (HGH) can inhibit cell division, resulting in ________."
+  answer="dwarfism."
+  hint="Too little of the growth-promoting hormone stunts growth; too much produces the opposite condition."
+>}}
+gigantism.
+a multinucleate zygote.
+dwarfism.
+a shortened cell cycle.
+{{< /multiplechoice >}}
+
 ### Explain how the three internal “control checkpoints” occur at the end of G₁, at the G₂/M transition, and during metaphase
 
 {{< multiplechoice
@@ -155,6 +170,10 @@ anaphase
 
 {{< selfcheck question="Describe the general conditions that must be met at each of the three main cell-cycle checkpoints." hint="Work through the checkpoints in order — G1, G2, and M — and name what each one confirms before letting the cell proceed." >}}
 The G1 checkpoint monitors adequate cell growth, the state of the genomic DNA, adequate stores of energy, and materials for S phase. At the G2 checkpoint, DNA is checked to ensure that all chromosomes were duplicated and that there are no mistakes in newly synthesized DNA. Additionally, cell size and energy reserves are evaluated. The M checkpoint confirms the correct attachment of the mitotic spindle fibers to the kinetochores.
+===CHECKS===
+the G1 checkpoint monitors adequate cell growth
+at the G2 checkpoint DNA is checked to ensure all chromosomes were duplicated
+the M checkpoint confirms the correct attachment of the mitotic spindle fibers to the kinetochores
 {{< /selfcheck >}}
 
 ### Describe the molecules that control the cell cycle through positive and negative regulation
@@ -194,16 +213,27 @@ cyclin-dependent kinase (Cdk)
 
 {{< selfcheck question="Compare and contrast the roles of the positive cell-cycle regulators and negative regulators." hint="Name what a positive regulator does to the cycle, then what a negative regulator does, and give an example of each." >}}
 Positive cell regulators such as cyclin and Cdk perform tasks that advance the cell cycle to the next stage. Negative regulators such as Rb, p53, and p21 block the progression of the cell cycle until certain events have occurred.
+===CHECKS===
+positive regulators such as cyclin and Cdk advance the cell cycle
+negative regulators such as Rb, p53, and p21 block the progression of the cell cycle
 {{< /selfcheck >}}
 
 {{< selfcheck question="What steps are necessary for Cdk to become fully active?" hint="Two things have to happen to a Cdk molecule before it can phosphorylate its target proteins." >}}
 Cdk must bind to a cyclin, and it must be phosphorylated in the correct position to become fully active.
+===CHECKS===
+Cdk must bind to a cyclin
+it must be phosphorylated in the correct position
 {{< /selfcheck >}}
 
 {{< selfcheck question="Rb is a negative regulator that blocks the cell cycle at the G1 checkpoint until the cell achieves a requisite size. What molecular mechanism does Rb employ to halt the cell cycle?" hint="Think about what Rb binds to while it is dephosphorylated, and what happens to that partner when Rb is released." >}}
 Rb is active when it is dephosphorylated. In this state, Rb binds to E2F, which is a transcription factor required for the transcription and eventual translation of molecules required for the G1/S transition. E2F cannot transcribe certain genes when it is bound to Rb. As the cell increases in size, Rb becomes phosphorylated, inactivated, and releases E2F. E2F can then promote the transcription of the genes it controls, and the transition proteins will be produced.
+===CHECKS===
+Rb is active when it is dephosphorylated
+Rb binds to E2F, a transcription factor
+E2F cannot transcribe certain genes when bound to Rb
+as the cell grows Rb becomes phosphorylated and releases E2F
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 10.3: Control of the Cell Cycle](https://openstax.org/books/biology-2e/pages/10-3-control-of-the-cell-cycle) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP and three of the four re-kinded from the manifest's file-extension guess of "photo" to "diagram" (each is a labeled illustration or graph, not a photograph; the fourth was already guessed "diagram"), with a longdesc added to each since none of the four captions carries the full reading of its labels, arrows, or curves; the interactive note rendered as a Link to Learning callout with descriptive link text in place of "this website"; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check (with a hint added), since the source keys it with a prose solution rather than a lettered option, and not repeated in the closing Practice block; inline references to the source's print figure numbers ("()", "below") changed to "(below)" or "below" since figures are not numbered here; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and one key-term recall item (cell-cycle checkpoint) added from the glossary to complete the first objective's group with an auto-graded item.</small>
+<small>This section is adapted from [Biology 2e, Section 10.3: Control of the Cell Cycle](https://openstax.org/books/biology-2e/pages/10-3-control-of-the-cell-cycle) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP and three of the four re-kinded from the manifest's file-extension guess of "photo" to "diagram" (each is a labeled illustration or graph, not a photograph; the fourth was already guessed "diagram"), with a longdesc added to each since none of the four captions carries the full reading of its labels, arrows, or curves; the interactive note rendered as a Link to Learning callout with descriptive link text in place of "this website"; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check (with a hint added), since the source keys it with a prose solution rather than a lettered option, and not repeated in the closing Practice block; inline references to the source's print figure numbers ("()", "below") changed to "(below)" or "below" since figures are not numbered here; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and one key-term recall item (cell-cycle checkpoint) added from the glossary to complete the first objective's group with an auto-graded item; rubric checkpoints added to each self-check (the body Visual Connection included), decomposing its model answer (the source solution) into check-off clauses with no new claims; and one locally written multiple choice (HGH and dwarfism) added under the first objective, built strictly from the section's own sentence and disclosed in the ledger.</small>

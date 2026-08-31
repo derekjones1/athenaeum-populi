@@ -157,7 +157,7 @@ test('every disclosed deviation names a mapped page and an erratum number', () =
   for (const deviation of DISCLOSED_DEVIATIONS) {
     assert.ok(existsSync(new URL(deviation.page, `file://${repositoryRoot}`)), `${deviation.page} exists`);
     assert.ok(Number.isInteger(deviation.erratum) && deviation.erratum > 0, `${deviation.exercise} cites an erratum`);
-    assert.ok(['key', 'options'].includes(deviation.kind));
+    assert.ok(['key', 'options', 'solution'].includes(deviation.kind));
     assert.ok(deviation.reason.length > 20, 'the reason says what the module settles');
   }
 });
@@ -174,7 +174,14 @@ test('the corpus carries no undisclosed departure from a source key', {
   assert.deepEqual(failures, []);
   assert.deepEqual(skipped, {});
   assert.equal(sectionsSkipped, 0);
-  assert.equal(counts.multiplechoice.disclosed, DISCLOSED_DEVIATIONS.length, 'every listed deviation is exercised');
+  // A deviation may be exercised by any kind that judges against a source
+  // exercise or table.
+  assert.equal(
+    counts.multiplechoice.disclosed
+      + counts.selfcheck.disclosed + counts.sortbins.disclosed,
+    DISCLOSED_DEVIATIONS.length,
+    'every listed deviation is exercised',
+  );
   assert.ok(confirmed > 0);
 });
 
@@ -234,4 +241,149 @@ test('a checkout that is present is read in full: a module missing from it is st
     assert.ok(result.failures.some((failure) => failure.page === section.localPath
       && failure.detail.includes(`pinned module ${section.moduleId} is not checked out`)));
   });
+});
+
+
+/* ---- sortbins against a source comparison table --------------------------- */
+
+import { judgeSortbins } from './verify-source-keys.mjs';
+
+const TABLE_MODULE = `<document xmlns="http://cnx.rice.edu/cnxml">
+<content>
+<table id="tab-1" class="top-titled" summary=""><tgroup cols="3">
+<thead>
+<row><entry namest="col1" nameend="col3" align="left">Difference between Prokaryotic and Eukaryotic Replication</entry></row>
+<row><entry>Property</entry><entry>Prokaryotes</entry><entry>Eukaryotes</entry></row>
+</thead>
+<tbody>
+<row><entry>Origin of replication</entry><entry>Single</entry><entry>Multiple</entry></row>
+<row><entry>Telomerase</entry><entry>Not present</entry><entry>Present</entry></row>
+<row><entry>Sliding clamp</entry><entry>Sliding clamp</entry><entry>PCNA</entry></row>
+</tbody>
+</tgroup></table>
+</content>
+</document>`;
+
+const tableSource = readModule(TABLE_MODULE);
+
+test('readModule reads a CALS table: title from the spanning thead row, headers from the last', () => {
+  assert.equal(tableSource.tables.length, 1);
+  const [table] = tableSource.tables;
+  assert.equal(table.id, 'tab-1');
+  assert.equal(table.title, 'Difference between Prokaryotic and Eukaryotic Replication');
+  assert.deepEqual(table.header, ['Property', 'Prokaryotes', 'Eukaryotes']);
+  assert.equal(table.rows.length, 3);
+  assert.deepEqual(table.rows[0], ['Origin of replication', 'Single', 'Multiple']);
+});
+
+const sortbinsItem = (items, bins = ['Prokaryotes', 'Eukaryotes']) => ({
+  type: 'sortbins', question: 'Assign each replication property.', bins, items,
+});
+
+test('a sortbins whose items each read as their keyed column is confirmed', () => {
+  const verdict = judgeSortbins(sortbinsItem([
+    { label: 'Single origin of replication', bin: 0 },
+    { label: 'Multiple origins of replication', bin: 1 },
+    { label: 'Telomerase not present', bin: 0 },
+    { label: 'PCNA sliding clamp', bin: 1 },
+  ]), tableSource);
+  assert.equal(verdict.status, 'confirmed');
+  assert.equal(verdict.table.id, 'tab-1');
+});
+
+test('an item that reads strictly better under the other column is a mis-binned item', () => {
+  const verdict = judgeSortbins(sortbinsItem([
+    { label: 'Single origin of replication', bin: 1 },
+    { label: 'Multiple origins of replication', bin: 0 },
+    { label: 'Telomerase not present', bin: 0 },
+    { label: 'PCNA sliding clamp', bin: 1 },
+  ]), tableSource);
+  assert.equal(verdict.status, 'assignment-differs');
+  assert.match(verdict.detail, /Single origin of replication.*"Prokaryotes" in table tab-1/);
+});
+
+test('bins that name no table columns, or items no table row covers, are unmatched', () => {
+  assert.equal(judgeSortbins(sortbinsItem([
+    { label: 'Single origin of replication', bin: 0 },
+    { label: 'Multiple origins of replication', bin: 1 },
+  ], ['Plants', 'Animals']), tableSource).status, 'unmatched');
+  assert.equal(judgeSortbins(sortbinsItem([
+    { label: 'High ribosome density', bin: 0 },
+    { label: 'Membrane-bound organelles', bin: 1 },
+  ]), tableSource).status, 'unmatched');
+});
+
+
+
+test('pageItems strips a selfcheck rubric tail — checkpoints never distort source coverage', () => {
+  const markdown = `{{< selfcheck question="Describe the pathway of electron transfer from photosystem II to photosystem I." hint="h" >}}
+Electrons leave photosystem II, pass through plastoquinone to the cytochrome complex, then plastocyanin, and arrive at photosystem I.
+===CHECKS===
+electrons leave photosystem II
+pass through plastoquinone to the cytochrome complex
+arrive at photosystem I
+{{< /selfcheck >}}
+`;
+  const [item] = pageItems(markdown);
+  assert.equal(item.type, 'selfcheck');
+  assert.doesNotMatch(item.model, /===CHECKS===/);
+  assert.doesNotMatch(item.model, /electrons leave photosystem II\s*$/i);
+  assert.equal(judgeSelfcheck(item, source).status, 'verbatim', 'a checkpointed selfcheck still judges verbatim on its model part');
+});
+
+
+/* ---- summary provenance ---------------------------------------------------- */
+
+const SUMMARY_MODULE = `<document xmlns="http://cnx.rice.edu/cnxml">
+<content>
+<para>Body prose about replication machinery.</para>
+<section id="s1" class="summary"><title>Section Summary</title>
+<para>Replication in prokaryotes starts from a single origin of replication.</para></section>
+</content>
+</document>`;
+
+test('a textin answer drawn from the module summary reports the summary provenance', () => {
+  const summarySource = readModule(SUMMARY_MODULE);
+  const textin = (question, answer) => judgeTextin({ type: 'textin', question, answer }, summarySource).status;
+  assert.equal(textin('Prokaryotic replication starts from a ________ origin of replication.', 'single'), 'summary');
+  assert.equal(textin('Body prose describes replication ________.', 'machinery'), 'body');
+  assert.equal(textin('A packet of light energy is a ________.', 'photon'), 'unsourced');
+});
+
+
+/* ---- sortbins against a TRANSPOSED comparison table ----------------------- */
+
+const TRANSPOSED_MODULE = `<document xmlns="http://cnx.rice.edu/cnxml">
+<content>
+<table id="tab-t" class="top-titled" summary=""><tgroup cols="3">
+<thead>
+<row><entry namest="col1" nameend="col3">Cell Division Apparatus among Various Organisms</entry></row>
+<row><entry></entry><entry>Division of nuclear material</entry><entry>Separation of daughter cells</entry></row>
+</thead>
+<tbody>
+<row><entry>Prokaryotes</entry><entry>Occurs through binary fission.</entry><entry>FtsZ proteins assemble into a ring that pinches the cell in two.</entry></row>
+<row><entry>Animal cells</entry><entry>A mitotic spindle forms from the centrosomes. The nuclear envelope dissolves.</entry><entry>Microfilaments form a cleavage furrow that pinches the cell in two.</entry></row>
+</tbody>
+</tgroup></table>
+</content>
+</document>`;
+
+test('a sortbins keyed by a transposed table (categories as rows) is confirmed', () => {
+  const transposed = readModule(TRANSPOSED_MODULE);
+  const verdict = judgeSortbins(sortbinsItem([
+    { label: 'Division occurs through binary fission', bin: 0 },
+    { label: 'The nuclear envelope dissolves', bin: 1 },
+    { label: 'FtsZ proteins assemble into a ring', bin: 0 },
+    { label: 'Microfilaments form a cleavage furrow', bin: 1 },
+  ], ['Prokaryotes', 'Animal cells']), transposed);
+  assert.equal(verdict.status, 'confirmed');
+  assert.equal(verdict.table.id, 'tab-t');
+  const wrong = judgeSortbins(sortbinsItem([
+    { label: 'Division occurs through binary fission', bin: 1 },
+    { label: 'The nuclear envelope dissolves', bin: 0 },
+    { label: 'FtsZ proteins assemble into a ring', bin: 0 },
+    { label: 'Microfilaments form a cleavage furrow', bin: 1 },
+  ], ['Prokaryotes', 'Animal cells']), transposed);
+  assert.equal(wrong.status, 'assignment-differs');
+  assert.match(wrong.detail, /binary fission.*"Prokaryotes" in table tab-t/);
 });

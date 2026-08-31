@@ -31,6 +31,10 @@ The epidermal growth factor (EGF) receptor (EGFR) is a receptor tyrosine kinase 
 
 {{< selfcheck question="In certain cancers, the GTPase activity of the RAS G-protein is inhibited. This means that the RAS protein can no longer hydrolyze GTP into GDP. What effect would this have on downstream cellular events?" hint="GTP hydrolysis is what normally switches RAS back off; think about what happens to the kinases downstream of RAS if that off switch is broken." >}}
 ERK would become permanently activated, resulting in cell proliferation, migration, adhesion, and the growth of new blood vessels. Apoptosis would be inhibited.
+===CHECKS===
+ERK would become permanently activated
+resulting in cell proliferation, migration, adhesion, and the growth of new blood vessels
+apoptosis would be inhibited
 {{< /selfcheck >}}
 
 You can see that signaling pathways can get very complicated very quickly because most cellular proteins can affect different downstream events, depending on the conditions within the cell. A single pathway can branch off toward different endpoints based on the interplay between two or more signaling pathways, and the same ligands are often used to initiate different signals in different cell types. This variation in response is due to differences in protein expression in different cell types. Another complicating element is **signal integration** of the pathways, in which signals from two or more different cell-surface receptors merge to activate the same response in the cell. This process can ensure that multiple external requirements are met before a cell commits to a specific response.
@@ -122,6 +126,9 @@ EGF signaling would be unaffected.
 
 {{< selfcheck question="What would happen if the intracellular domain of a cell-surface receptor was switched with the domain from another receptor?" hint="The extracellular domain still recognizes the original ligand; ask which domain actually determines which pathway gets activated inside the cell." >}}
 The binding of the ligand to the extracellular domain would activate the pathway normally activated by the receptor donating the intracellular domain.
+===CHECKS===
+the binding of the ligand to the extracellular domain would activate the pathway
+normally activated by the receptor donating the intracellular domain
 {{< /selfcheck >}}
 
 ### Recognize the role of phosphorylation in the transmission of intracellular signals
@@ -139,6 +146,11 @@ They occur more frequently in the amino acid sequence of signaling proteins.
 
 {{< selfcheck question="If a cell developed a mutation in its *MAP2K1* gene (encodes the MEK protein) that prevented MEK from being recognized by phosphatases, how would the EGFR signaling cascade and the cell's behavior change?" hint="Phosphatases are what normally reverse phosphorylation; ask what happens downstream of MEK if that reversal can never happen." >}}
 EGF binding to EGFR initiates a signaling cascade that activates protein kinases through phosphorylation. Active Raf phosphorylates MEK, activating MEK's kinase activity. If MEK cannot be dephosphorylated, the signaling cascade downstream of MEK will continue to be active after the EGF signal is gone. Therefore, the cell will continue to proliferate and be resistant to cell death (apoptosis).
+===CHECKS===
+EGF binding to EGFR initiates a signaling cascade that activates protein kinases through phosphorylation
+active Raf phosphorylates MEK, activating MEK's kinase activity
+if MEK cannot be dephosphorylated, the signaling cascade downstream of MEK will continue to be active after the EGF signal is gone
+the cell will continue to proliferate and be resistant to cell death (apoptosis)
 {{< /selfcheck >}}
 
 {{< textin
@@ -163,6 +175,11 @@ They are the cleavage products of the inositol phospholipid, PIP₂.
 
 {{< selfcheck question="The same second messengers are used in many different cells, but the response to second messengers is different in each cell. How is this possible?" hint="Think about what varies between cell types even when the incoming signal and its second messenger are identical." >}}
 Different cells produce different proteins, including cell-surface receptors and signaling pathway components. Therefore, they respond to different ligands, and the second messengers activate different pathways. Signal integration can also change the end result of signaling.
+===CHECKS===
+different cells produce different proteins, including cell-surface receptors and signaling pathway components
+they respond to different ligands
+the second messengers activate different pathways
+signal integration can also change the end result of signaling
 {{< /selfcheck >}}
 
 {{< textin
@@ -174,4 +191,4 @@ Different cells produce different proteins, including cell-surface receptors and
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 9.2: Propagation of the Signal](https://openstax.org/books/biology-2e/pages/9-2-propagation-of-the-signal) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with three of the four re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (all four are line-drawn molecular illustrations, not photographs); an extended description added to all four since none is fully carried by its caption; the EGFR-cascade figure's alt shortened from over 600 characters to what the diagram shows, with its full walk-through moved into the longdesc, and its source alt's letter-spaced "M E K," "R A F," and "E R K" set as ordinary acronyms; the cAMP-formation and PIP₂-cleavage figures' alts similarly normalized from the source's letter-spaced "A M P," "A T P," and subscript-spelled "P I P subscript 2 baseline" / "I P subscript 3 baseline" to ordinary text and Unicode subscripts; inline print references to the four figures changed to "below," since figures are not numbered here; the phosphate-group ion charge (PO₄³⁻) and ion/second-messenger charges (Ca²⁺) set with Unicode superscripts; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (kinase, second messenger) added from the glossary so the phosphorylation and second-messenger objective groups each carry at least one auto-graded item beyond their single Review Question.</small>
+<small>This section is adapted from [Biology 2e, Section 9.2: Propagation of the Signal](https://openstax.org/books/biology-2e/pages/9-2-propagation-of-the-signal) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with three of the four re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (all four are line-drawn molecular illustrations, not photographs); an extended description added to all four since none is fully carried by its caption; the EGFR-cascade figure's alt shortened from over 600 characters to what the diagram shows, with its full walk-through moved into the longdesc, and its source alt's letter-spaced "M E K," "R A F," and "E R K" set as ordinary acronyms; the cAMP-formation and PIP₂-cleavage figures' alts similarly normalized from the source's letter-spaced "A M P," "A T P," and subscript-spelled "P I P subscript 2 baseline" / "I P subscript 3 baseline" to ordinary text and Unicode subscripts; inline print references to the four figures changed to "below," since figures are not numbered here; the phosphate-group ion charge (PO₄³⁻) and ion/second-messenger charges (Ca²⁺) set with Unicode superscripts; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check, since the source keys it with a prose solution rather than a lettered option; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and two key-term recall items (kinase, second messenger) added from the glossary so the phosphorylation and second-messenger objective groups each carry at least one auto-graded item beyond their single Review Question; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

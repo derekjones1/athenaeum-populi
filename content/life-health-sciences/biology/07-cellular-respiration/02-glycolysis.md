@@ -101,7 +101,17 @@ Glycolysis is the first pathway within the cytoplasm used in the breakdown of gl
 
 {{< selfcheck question="Nearly all organisms on Earth carry out some form of glycolysis. How does this fact support or not support the assertion that glycolysis is one of the oldest metabolic pathways?" hint="Think about what it would mean for a pathway's distribution across the tree of life if that pathway had evolved only recently, in one lineage." >}}
 If glycolysis evolved relatively late, it likely would not be as universal in organisms as it is. It probably evolved in very primitive organisms and persisted, with the addition of other pathways of carbohydrate metabolism that evolved later.
+===CHECKS===
+if glycolysis evolved relatively late, it likely would not be as universal in organisms as it is
+it probably evolved in very primitive organisms and persisted
+other pathways of carbohydrate metabolism evolved later
 {{< /selfcheck >}}
+
+{{< textin
+  question="The first part of glycolysis prepares the six-carbon ring of glucose for cleavage into ________ three-carbon sugars."
+  answer="two"
+  hint="The section's summary states how many three-carbon sugars the six-carbon ring is split into."
+>}}
 
 ### Compare the output of glycolysis in terms of ATP molecules and NADH molecules produced
 
@@ -118,8 +128,29 @@ Glucose becomes fructose.
 
 {{< selfcheck question="Because they lose their mitochondria during development, red blood cells cannot perform aerobic respiration; however, they do perform glycolysis in the cytoplasm. Why do all cells need an energy source, and what would happen if glycolysis were blocked in a red blood cell?" hint="Consider what ATP does for a cell's membrane pumps, and what a red blood cell's only ATP-producing pathway is." >}}
 All cells must consume energy to carry out basic functions, such as pumping ions across membranes. A red blood cell would lose its membrane potential if glycolysis were blocked, and it would eventually die.
+===CHECKS===
+all cells must consume energy to carry out basic functions, such as pumping ions across membranes
+a red blood cell would lose its membrane potential if glycolysis were blocked
+it would eventually die
 {{< /selfcheck >}}
+
+{{< textin
+  question="Two ATP molecules are invested in the first half of glycolysis and ________ ATP molecules are formed by substrate phosphorylation during the second half."
+  answer="four"
+  hint="The section's summary gives the count of ATP molecules formed by substrate phosphorylation in the second half."
+>}}
+
+{{< multiplechoice
+  question="Glycolysis produces a net gain of two ATP and two ________ molecules for the cell."
+  answer="NADH"
+  hint="This is the other high-energy electron carrier the pathway reduces, alongside its net ATP gain."
+>}}
+pyruvate
+NADH
+glucose
+ATP
+{{< /multiplechoice >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 7.2: Glycolysis](https://openstax.org/books/biology-2e/pages/7-2-glycolysis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" for all three (each is a schematic pathway illustration, not a photograph); the alt text for all three was rewritten from the source (the source alts for the two step-by-step figures ran 663 and 723 characters, spelling out each letter of "ATP"/"NADH" and using "dash" for hyphens) — each now gives a short summary of what the figure teaches, with the full step-by-step walk-through moved into a `longdesc`, added to each since none of their meanings is fully carried by its caption; the source's underline emphasis on "bi" in "fructose-1,6-bisphosphate" (a typographic cue about the bis- prefix, not a defining term) is dropped in favor of plain text; inline references to figures changed from the source's print numbers ("Figure 7.8," "Figure 7.9") to descriptive phrases ("below") since figures are not numbered here; the Link to Learning note is rendered as a callout with a descriptive link ("this interactive animation of glycolysis") in place of the source's bare "site"; the end-of-section Review Question and Critical Thinking Questions are adapted into the closing interactive Practice block (one multiple choice and two self-checks); and two key-term recall items (glycolysis, pyruvate) are added from the glossary to give the first objective's group an auto-graded item, with "pyruvic acid" accepted for pyruvate since the section itself treats the acid and its salt form as the same answer.</small>
+<small>This section is adapted from [Biology 2e, Section 7.2: Glycolysis](https://openstax.org/books/biology-2e/pages/7-2-glycolysis) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP and re-kinded from the manifest's file-extension guess of "photo" to "diagram" for all three (each is a schematic pathway illustration, not a photograph); the alt text for all three was rewritten from the source (the source alts for the two step-by-step figures ran 663 and 723 characters, spelling out each letter of "ATP"/"NADH" and using "dash" for hyphens) — each now gives a short summary of what the figure teaches, with the full step-by-step walk-through moved into a `longdesc`, added to each since none of their meanings is fully carried by its caption; the source's underline emphasis on "bi" in "fructose-1,6-bisphosphate" (a typographic cue about the bis- prefix, not a defining term) is dropped in favor of plain text; inline references to figures changed from the source's print numbers ("Figure 7.8," "Figure 7.9") to descriptive phrases ("below") since figures are not numbered here; the Link to Learning note is rendered as a callout with a descriptive link ("this interactive animation of glycolysis") in place of the source's bare "site"; the end-of-section Review Question and Critical Thinking Questions are adapted into the closing interactive Practice block (one multiple choice and two self-checks); two key-term recall items (glycolysis, pyruvate) are added from the glossary to give the first objective's group an auto-graded item, with "pyruvic acid" accepted for pyruvate since the section itself treats the acid and its salt form as the same answer; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and three summary-derived items added — a cloze textin on the number of three-carbon sugars from the first-half sentence (first objective), a cloze textin on the four ATP molecules formed in the second half, and a select-the-term multiple choice on the NADH molecules named in the pathway's net-gain sentence (both second objective) — to raise the second objective's group and the section as a whole to the practice floor.</small>

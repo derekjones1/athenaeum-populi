@@ -76,6 +76,9 @@ Glucose, galactose, and fructose are all hexoses. They are structural isomers, m
 
 {{< selfcheck question="What kind of sugars are these, aldose or ketose?" hint="An aldose's carbonyl group sits at the end of the carbon chain; a ketose's sits in the middle." >}}
 Glucose and galactose are aldoses. Fructose is a ketose.
+===CHECKS===
+glucose and galactose are aldoses
+fructose is a ketose
 {{< /selfcheck >}}
 
 Glucose, galactose, and fructose are isomeric monosaccharides (hexoses),
@@ -312,6 +315,10 @@ provide energy for muscle movement
 
 {{< selfcheck question="Why is it impossible for humans to digest food that contains cellulose?" hint="Think about which enzyme breaks the β 1-4 linkage, and which digestive systems have it." >}}
 The *β* 1-4 glycosidic linkage in cellulose cannot be broken down by human digestive enzymes. Herbivores such as cows, koalas, and buffalos are able to digest grass that is rich in cellulose and use it as a food source because bacteria and protists in their digestive systems, especially in the rumen, secrete the enzyme cellulase. Cellulases can break down cellulose into glucose monomers that can be used as an energy source by the animal.
+===CHECKS===
+the β 1-4 glycosidic linkage in cellulose cannot be broken down by human digestive enzymes
+bacteria and protists in their digestive systems secrete the enzyme cellulase
+cellulases can break down cellulose into glucose monomers
 {{< /selfcheck >}}
 
 ### Explain carbohydrate classifications
@@ -340,10 +347,21 @@ polysaccharides
 
 {{< selfcheck question="Describe the similarities and differences between glycogen and starch." hint="Think about which organisms store which molecule, and whether each is branched or unbranched." >}}
 Glycogen and starch are polysaccharides. They are the storage form of glucose. Glycogen is stored in animals in the liver and in muscle cells, whereas starch is stored in the roots, seeds, and leaves of plants. Starch has two different forms, one unbranched (amylose) and one branched (amylopectin), whereas glycogen is a single type of a highly branched molecule.
+===CHECKS===
+glycogen and starch are polysaccharides
+they are the storage form of glucose
+glycogen is stored in animals in the liver and in muscle cells
+starch is stored in the roots, seeds, and leaves of plants
+starch has two different forms, one unbranched (amylose) and one branched (amylopectin)
+glycogen is a single type of a highly branched molecule
 {{< /selfcheck >}}
 
 {{< selfcheck question="Describe the structural difference between the ketose and aldose forms of a three-carbon sugar with the chemical formula C₃H₆O₃, and name the family of enzymes that interconverts them in the human body." hint="One structure has its carbonyl group at an end of the chain; the other has it in the middle." >}}
 The human body switches carbohydrates between their aldose and ketose forms using a family of enzymes called isomerases. The ketose triose, dihydroxyacetone, has its carbonyl group double-bonded to the middle carbon. The aldose, glyceraldehyde, has its carbonyl group double-bonded to an end carbon of the chain.
+===CHECKS===
+the human body switches carbohydrates between their aldose and ketose forms using a family of enzymes called isomerases
+the ketose triose, dihydroxyacetone, has its carbonyl group double-bonded to the middle carbon
+the aldose, glyceraldehyde, has its carbonyl group double-bonded to an end carbon of the chain
 {{< /selfcheck >}}
 
 {{< textin
@@ -391,4 +409,4 @@ hydrogen; fructose
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 3.2: Carbohydrates](https://openstax.org/books/biology-2e/pages/3-2-carbohydrates) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with every structural-formula figure re-kinded from the manifest's guessed "photo" to "diagram" (Figures 03.02.01, 03.02.03, 03.02.04, 03.02.05, and 03.02.07 were guessed photo; only the bee photograph, Figure 03.02.08, was a photo); the source alt text for the maltose/lactose/sucrose figure (03.02.05) was corrected to name lactose's second monomer as galactose rather than glucose, matching the section's own prose, and reported as a source defect; the source alt text for the monosaccharide-comparison figure (03.02.01, over 600 characters) and the aldose/ketose Visual Connection figure (03.02.02, over 600 characters) was shortened, with the full structural walk-through moved to an extended description, and the Visual Connection figure's description was written to name only the drawn carbonyl positions, never the aldose/ketose classification the question asks for; a Career Connection and a Link to Learning note rendered as callouts with their bold names; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the third Critical Thinking question ("draw the ketose and aldose forms…") adapted from a drawing task into a descriptive self-check, since the browser components do not grade a drawn answer, and the two structure drawings printed with its solution are not shown — the model answer describes the structures in words; and four key-term recall items (carbohydrate, disaccharide, starch, glycogen) added from the glossary to round out the objective groups.</small>
+<small>This section is adapted from [Biology 2e, Section 3.2: Carbohydrates](https://openstax.org/books/biology-2e/pages/3-2-carbohydrates) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with every structural-formula figure re-kinded from the manifest's guessed "photo" to "diagram" (Figures 03.02.01, 03.02.03, 03.02.04, 03.02.05, and 03.02.07 were guessed photo; only the bee photograph, Figure 03.02.08, was a photo); the source alt text for the maltose/lactose/sucrose figure (03.02.05) was corrected to name lactose's second monomer as galactose rather than glucose, matching the section's own prose, and reported as a source defect; the source alt text for the monosaccharide-comparison figure (03.02.01, over 600 characters) and the aldose/ketose Visual Connection figure (03.02.02, over 600 characters) was shortened, with the full structural walk-through moved to an extended description, and the Visual Connection figure's description was written to name only the drawn carbonyl positions, never the aldose/ketose classification the question asks for; a Career Connection and a Link to Learning note rendered as callouts with their bold names; the Visual Connection question kept in the body immediately after its figure and rendered as a self-check; the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively), with the third Critical Thinking question ("draw the ketose and aldose forms…") adapted from a drawing task into a descriptive self-check, since the browser components do not grade a drawn answer, and the two structure drawings printed with its solution are not shown — the model answer describes the structures in words; and four key-term recall items (carbohydrate, disaccharide, starch, glycogen) added from the glossary to round out the objective groups; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

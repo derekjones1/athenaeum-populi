@@ -38,6 +38,11 @@
  * and surfaced 28 exercises, every one of which is now either revalued in
  * content or recorded below with its reason.
  *
+ * Sortbins has no replay population BY DESIGN, not by omission: its answer
+ * is the label→bin MAPPING, and prompt text cannot encode an assignment, so
+ * there is nothing a learner could pass by copying the prompt. (The
+ * blind-solve gate in solve-check.mjs still answers every sortbins.)
+ *
  * The allowlist is for SOUND coincidences, where the printed value IS the
  * correct answer by design: "Translate and solve: the difference of 4x and
  * 3x is 14" (x = 14), "One angle of a right triangle measures 45°, find the

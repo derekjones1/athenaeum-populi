@@ -105,6 +105,10 @@ four times
 
 {{< selfcheck question="Compare and contrast a human somatic cell to a human gamete." hint="Compare the chromosome count and pairing—2n or n—that each cell type carries." >}}
 Human somatic cells have 46 chromosomes: 22 pairs and 2 sex chromosomes that may or may not form a pair. This is the 2*n* or diploid condition. Human gametes have 23 chromosomes, one each of 23 unique chromosomes, one of which is a sex chromosome. This is the *n* or haploid condition.
+===CHECKS===
+somatic cells have 46 chromosomes: 22 pairs and 2 sex chromosomes
+gametes have 23 chromosomes
+the diploid and haploid conditions
 {{< /selfcheck >}}
 
 ### Distinguish between chromosomes, genes, and traits
@@ -129,6 +133,10 @@ chromatids.
 
 {{< selfcheck question="What is the relationship between a genome, chromosomes, and genes?" hint="Think of the whole, the packaged pieces it is divided into, and the functional segments found within those pieces." >}}
 The genome consists of the sum total of an organism's chromosomes. Each chromosome contains hundreds and sometimes thousands of genes, segments of DNA that code for a polypeptide or RNA, and a large amount of DNA with no known function.
+===CHECKS===
+the genome is the sum total of an organism's chromosomes
+each chromosome contains hundreds and sometimes thousands of genes
+genes are segments of DNA that code for a polypeptide or RNA
 {{< /selfcheck >}}
 
 ### Describe the mechanisms of chromosome compaction
@@ -162,10 +170,20 @@ sister chromatids.
   hint="Eight histone proteins form the core that a short stretch of DNA wraps around to form this structure."
 >}}
 
+{{< textin
+  question="Chromosome compaction happens during certain stages of the ________."
+  answer="cell cycle"
+  hint="The orderly sequence of a cell's life from one division to the next; compaction peaks just before mitosis."
+>}}
+
 {{< selfcheck question="Eukaryotic chromosomes are thousands of times longer than a typical cell. Explain how chromosomes can fit inside a eukaryotic nucleus." hint="Think through the levels of compaction in order, from the double helix wrapping around proteins to further coiling and packing." >}}
 The DNA double helix is wrapped around histone proteins to form structures called nucleosomes. Nucleosomes and the linker DNA in between them are coiled into a 30-nm fiber. During cell division, chromatin is further condensed by packing proteins.
+===CHECKS===
+DNA wraps around histone proteins to form nucleosomes
+nucleosomes and linker DNA coil into a 30-nm fiber
+chromatin is further condensed by packing proteins
 {{< /selfcheck >}}
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 10.1: Cell Division](https://openstax.org/books/biology-2e/pages/10-1-cell-division) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with two of the three re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the prokaryotic-cell illustration and the nucleosome/compaction diagram are both drawings; only the karyotype composite is a true photograph); a longdesc added for all three figures, which are labeled diagrams or a composite whose full reading is not carried by their captions alone; the karyotype figure's alt shortened from the source's process-focused walkthrough to what is visible, with that detail moved into the longdesc; the nucleosome/compaction figure's alt rewritten to remove the source's letter-spaced "D N A" artifact and shortened, with its full labeled walkthrough moved into the longdesc; the interactive note rendered as a Link to Learning callout with descriptive link text, keeping the source's URL; Review Question 1's keyed answer corrected from "half" to "twice" and reported as a source defect (module m66477, exercise fs-id1414909): a diploid cell has twice, not half, the chromosome number of a haploid cell, per the section's own worked numbers (46 vs. 23 chromosomes); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and three key-term recall items (genome, gene, nucleosome) added from the glossary to round out every objective group with a second auto-graded item.</small>
+<small>This section is adapted from [Biology 2e, Section 10.1: Cell Division](https://openstax.org/books/biology-2e/pages/10-1-cell-division) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP, with two of the three re-kinded from the manifest's file-extension guess of "photo" to "diagram" after inspection (the prokaryotic-cell illustration and the nucleosome/compaction diagram are both drawings; only the karyotype composite is a true photograph); a longdesc added for all three figures, which are labeled diagrams or a composite whose full reading is not carried by their captions alone; the karyotype figure's alt shortened from the source's process-focused walkthrough to what is visible, with that detail moved into the longdesc; the nucleosome/compaction figure's alt rewritten to remove the source's letter-spaced "D N A" artifact and shortened, with its full labeled walkthrough moved into the longdesc; the interactive note rendered as a Link to Learning callout with descriptive link text, keeping the source's URL; Review Question 1's keyed answer corrected from "half" to "twice" and reported as a source defect (module m66477, exercise fs-id1414909): a diploid cell has twice, not half, the chromosome number of a haploid cell, per the section's own worked numbers (46 vs. 23 chromosomes); the end-of-section Review Questions and Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); and three key-term recall items (genome, gene, nucleosome) added from the glossary to round out every objective group with a second auto-graded item; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims; and one summary-derived recall item added under the compaction objective from the section summary's own sentence.</small>

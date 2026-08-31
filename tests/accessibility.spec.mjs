@@ -41,6 +41,10 @@ const REPRESENTATIVE_PAGES = [
     path: '/life-health-sciences/biology/01-the-study-of-life/02-themes-and-concepts-of-biology/',
   },
   {
+    name: 'sort-bins exercise',
+    path: '/life-health-sciences/biology/10-cell-reproduction/05-prokaryotic-cell-division/',
+  },
+  {
     name: '404 page',
     path: '/404.html',
     title: 'Page not found – Athenaeum Populi',
@@ -65,6 +69,7 @@ async function waitForPageReady(page) {
     const graphs = [...document.querySelectorAll('graph-plot')];
     const textIns = [...document.querySelectorAll('text-in')];
     const selfChecks = [...document.querySelectorAll('self-check')];
+    const sortBins = [...document.querySelectorAll('sort-bins')];
 
     const fillInsReady = fillIns.every((exercise) => {
       const field = exercise.querySelector('math-field');
@@ -116,7 +121,13 @@ async function waitForPageReady(page) {
         ),
     );
 
-    return fillInsReady && choicesReady && graphsReady && textInsReady && selfChecksReady;
+
+    const sortBinsReady = sortBins.every((exercise) => {
+      const check = exercise.querySelector('.ap-sortbins-check');
+      return customElements.get('sort-bins') && check && !check.disabled;
+    });
+
+    return fillInsReady && choicesReady && graphsReady && textInsReady && selfChecksReady && sortBinsReady;
   });
 }
 

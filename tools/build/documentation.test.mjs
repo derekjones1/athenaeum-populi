@@ -103,6 +103,9 @@ test('the authoring playbook documents the authoring rules', () => {
   assert.match(authoring, /one `### ` group per section\s+objective/);
   assert.match(authoring, /at least two interactive\s+exercises/);
   assert.match(authoring, /at least five\s+exercises overall/);
+  // Per-book floors: the override table is real lint surface, so the playbook
+  // must say floors are per book or the biology floor reads as a global one.
+  assert.match(authoring, /Floors are per book/);
   assert.match(authoring, /one\s+component per part/);
   assert.match(authoring, /\*\*one\s+objective per Markdown list item\*\*/);
   // The missing-block rule is an ERROR now that the retrofit is finished; the
