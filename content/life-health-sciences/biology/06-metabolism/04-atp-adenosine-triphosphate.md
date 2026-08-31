@@ -134,8 +134,8 @@ The activation energy for hydrolysis is very low. Not only is ATP hydrolysis an 
 ===CHECKS===
 the activation energy for hydrolysis is very low
 ATP hydrolysis is an exergonic process with a large −ΔG
-ATP is a very unstable molecule that rapidly breaks down into ADP + P<sub>i</sub> if not utilized quickly
-this suggests a very low E<sub>A</sub> since it hydrolyzes so quickly
+ATP is a very unstable molecule that rapidly breaks down if not utilized quickly
+a very low activation energy since it hydrolyzes so quickly
 {{< /selfcheck >}}
 
 ---

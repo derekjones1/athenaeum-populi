@@ -2248,6 +2248,13 @@ export function lintHugo(src, filename = '', options = {}) {
       for (const checkpoint of checkpoints) {
         if (UNESCAPED_DOLLAR_RE.test(checkpoint)) {
           err(index, `${where}: checkpoint ${JSON.stringify(checkpoint)} must not contain \`$\` math — checkpoints are checkbox labels`);
+        } else if (/<[a-z][a-z0-9]*(\s[^>]*)?>/i.test(checkpoint)) {
+          // Checkpoint labels render as PLAIN TEXT (the component sets
+          // textContent, not innerHTML), so a raw tag prints as literal tag
+          // soup — caught on a rendered crop of 19.1's Hardy-Weinberg rubric
+          // (p<sup>2</sup> printed verbatim). Use a Unicode glyph (p²) or
+          // reword the clause; the model answer above may keep its HTML.
+          err(index, `${where}: checkpoint ${JSON.stringify(checkpoint)} contains a raw HTML tag — checkpoints render as plain text, so use a Unicode glyph or reword`);
         } else if (phraseCoverage(checkpoint, modelPart) < 0.8) {
           err(index, `${where}: checkpoint ${JSON.stringify(checkpoint)} is not covered by the model answer's own words — a checkpoint restates a clause of the model answer, never adds one`);
         }

@@ -91,6 +91,20 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/biology/19-the-evolution-of-populations/01-population-evolution.md',
+    exercise: 'fs-idp1822224',
+    kind: 'options',
+    erratum: 163,
+    reason: 'source option (a), the 12 yy / 8 YY / 4 Yy census, is itself out of Hardy-Weinberg proportions by the module\'s own arithmetic (observed .33/.17/.50 vs expected .17/.49/.34), making two options correct; the page carries an exactly-in-equilibrium 6 YY / 12 Yy / 6 yy census there (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/16-gene-expression/06-eukaryotic-translational-and-post-translational-gene-regulation.md',
+    exercise: 'fs-id1404412',
+    kind: 'key',
+    erratum: 154,
+    reason: 'source keys "protein function"; the module\'s own phosphorylation solution says modifying a protein "can alter accessibility to the chromosome" and "can alter translation (by altering the transcription factor binding or function)", so the other options are also true and the section supports "all of the above"',
+  },
+  {
     page: 'content/life-health-sciences/biology/08-photosynthesis/02-the-light-dependent-reactions-of-photosynthesis.md',
     exercise: 'fs-idm144749168',
     kind: 'key',

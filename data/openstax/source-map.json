@@ -58,8 +58,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 47,
       "upstreamSections": 208,
-      "localChapters": 13,
-      "mappedSections": 51,
+      "localChapters": 18,
+      "mappedSections": 75,
       "units": [
         {
           "index": 1,
@@ -618,6 +618,222 @@
       "moduleId": "m66494",
       "sourceTitle": "Chromosomal Basis of Inherited Disorders",
       "moduleSha256": "c24da22f2e75eec952b5108f8f0fb6a4c1e1fedb02a5c858717d9a5a2965ae1f"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/14-dna-structure-and-function/01-historical-basis-of-modern-understanding.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "14.1",
+      "moduleId": "m66386",
+      "sourceTitle": "Historical Basis of Modern Understanding",
+      "moduleSha256": "36b71279d57d089953db87675a24f978b47862942a33995910e03344c856dcd4"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/14-dna-structure-and-function/02-dna-structure-and-sequencing.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "14.2",
+      "moduleId": "m66387",
+      "sourceTitle": "DNA Structure and Sequencing",
+      "moduleSha256": "e0acd7dfb7f3c60cf7c73265e6543ddea32668352d6196e93492eb0c88da1b1a"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/14-dna-structure-and-function/03-basics-of-dna-replication.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "14.3",
+      "moduleId": "m66389",
+      "sourceTitle": "Basics of DNA Replication",
+      "moduleSha256": "6473bea5ced38148a767e81f6b0995bd5a4a39258aeffa6754e604355811f962"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/14-dna-structure-and-function/04-dna-replication-in-prokaryotes.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "14.4",
+      "moduleId": "m66390",
+      "sourceTitle": "DNA Replication in Prokaryotes",
+      "moduleSha256": "b1fea4bc0655859babbf617b56f7d1e8c2fbc11317971e17b76164b50f400ea9"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/14-dna-structure-and-function/05-dna-replication-in-eukaryotes.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "14.5",
+      "moduleId": "m66391",
+      "sourceTitle": "DNA Replication in Eukaryotes",
+      "moduleSha256": "ee8739c2c1b94f92d163cb01477e9a863c8c423bd17e570313cd2e5b3d2a9370"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/14-dna-structure-and-function/06-dna-repair.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "14.6",
+      "moduleId": "m66392",
+      "sourceTitle": "DNA Repair",
+      "moduleSha256": "162fa9120fdd5c7e12e041a5ac63eab3ed30e2ae433e9e9c8d7103ad7623b90d"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/15-genes-and-proteins/01-the-genetic-code.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "15.1",
+      "moduleId": "m66497",
+      "sourceTitle": "The Genetic Code",
+      "moduleSha256": "06c9189ec22978b2adf7fe575f8e2b6f742db214954b16864e937b20ab74fb41"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/15-genes-and-proteins/02-prokaryotic-transcription.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "15.2",
+      "moduleId": "m66498",
+      "sourceTitle": "Prokaryotic Transcription",
+      "moduleSha256": "b8c7339590339ffe430fb2b12c47c57f940bf7e7755869ce2f8c886d151d1a67"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/15-genes-and-proteins/03-eukaryotic-transcription.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "15.3",
+      "moduleId": "m66499",
+      "sourceTitle": "Eukaryotic Transcription",
+      "moduleSha256": "2f370cf390acfb4c54498f0377cd220200e73d4045de862d2c59617bb7c13cdc"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/15-genes-and-proteins/04-rna-processing-in-eukaryotes.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "15.4",
+      "moduleId": "m66500",
+      "sourceTitle": "RNA Processing in Eukaryotes",
+      "moduleSha256": "63d07cdf84d1a9048521ec0d2ccae1cb121380e44a20262bbaf080902e23be5a"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/15-genes-and-proteins/05-ribosomes-and-protein-synthesis.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "15.5",
+      "moduleId": "m66501",
+      "sourceTitle": "Ribosomes and Protein Synthesis",
+      "moduleSha256": "285dbffa67dccd00a95f772153ba7abe0d14e332d2a03a5067e81733ff863a69"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/16-gene-expression/01-regulation-of-gene-expression.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "16.1",
+      "moduleId": "m66503",
+      "sourceTitle": "Regulation of Gene Expression",
+      "moduleSha256": "f2f1ddb389982fdc5f916504fba3841ee22a077cd4574ca0621a24e44425bd37"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/16-gene-expression/02-prokaryotic-gene-regulation.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "16.2",
+      "moduleId": "m66504",
+      "sourceTitle": "Prokaryotic Gene Regulation",
+      "moduleSha256": "22349c4b2f440cec68f8afc6493003b8bf82864671b917e45e90cabeb68254db"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/16-gene-expression/03-eukaryotic-epigenetic-gene-regulation.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "16.3",
+      "moduleId": "m66505",
+      "sourceTitle": "Eukaryotic Epigenetic Gene Regulation",
+      "moduleSha256": "34d4910559074d9f6af843fe72da1db7801c67e901ce3109c74f7b1bdabcb199"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/16-gene-expression/04-eukaryotic-transcription-gene-regulation.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "16.4",
+      "moduleId": "m66506",
+      "sourceTitle": "Eukaryotic Transcription Gene Regulation",
+      "moduleSha256": "6e71e17bfe5c1efcc2d9575e1b98165d6711e22e5e7e687231bc70c18c832254"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/16-gene-expression/05-eukaryotic-post-transcriptional-gene-regulation.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "16.5",
+      "moduleId": "m66507",
+      "sourceTitle": "Eukaryotic Post-transcriptional Gene Regulation",
+      "moduleSha256": "3729c02b840724408e2cbe16ea7c006b688e36a040197fe2e85d380910b4f8d8"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/16-gene-expression/06-eukaryotic-translational-and-post-translational-gene-regulation.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "16.6",
+      "moduleId": "m66508",
+      "sourceTitle": "Eukaryotic Translational and Post-translational Gene Regulation",
+      "moduleSha256": "44ba71379c92cf1403341ad3ddf980984a281cb95b53804682ea51cdee59edc2"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/16-gene-expression/07-cancer-and-gene-regulation.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "16.7",
+      "moduleId": "m66509",
+      "sourceTitle": "Cancer and Gene Regulation",
+      "moduleSha256": "58988b5258ffc1ed0269d640106d4f0b1c83521e54aa340f10e24292600ae838"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/18-evolution-and-the-origin-of-species/01-understanding-evolution.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "18.1",
+      "moduleId": "m66518",
+      "sourceTitle": "Understanding Evolution",
+      "moduleSha256": "84c68accf8bf5fc96b2ecc4d09613f3385e9bb6894087f1697db4b007e43c097"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/18-evolution-and-the-origin-of-species/02-formation-of-new-species.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "18.2",
+      "moduleId": "m66520",
+      "sourceTitle": "Formation of New Species",
+      "moduleSha256": "692f33a4c9f0562d2097f33505b8534287a09ae91be47309803ab230d538039b"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/18-evolution-and-the-origin-of-species/03-reconnection-and-speciation-rates.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "18.3",
+      "moduleId": "m66521",
+      "sourceTitle": "Reconnection and Speciation Rates",
+      "moduleSha256": "00fdc53280591b4a220b821e1a1006a41965b01de29fca234c3261a4110c9688"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/19-the-evolution-of-populations/01-population-evolution.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "19.1",
+      "moduleId": "m66523",
+      "sourceTitle": "Population Evolution",
+      "moduleSha256": "853aa77512bb90f1fc7970126716a8912b359a0c7d6475ee99672b0c665ba7bc"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/19-the-evolution-of-populations/02-population-genetics.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "19.2",
+      "moduleId": "m66524",
+      "sourceTitle": "Population Genetics",
+      "moduleSha256": "15fb0d413f180102c93661047dba5f4c95b8e7bd68ba03261a4c0d6ab56db5a7"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/19-the-evolution-of-populations/03-adaptive-evolution.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "19.3",
+      "moduleId": "m66718",
+      "sourceTitle": "Adaptive Evolution",
+      "moduleSha256": "21bb4e04cf53abfba81ce0b057d1b2edd4948b4db78fb91a5b867e58069f87e9"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

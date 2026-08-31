@@ -182,12 +182,25 @@ function checkDir(dir, depth) {
   const pages = entries.filter((e) => e.isFile() && e.name.endsWith('.md') && e.name !== '_index.md').map((e) => e.name.replace(/\.md$/, ''));
 
   // --- numeric prefixes: all-or-none, zero-padded, sequential ---------------
+  // A book still being authored (its cover carries `authoring_status:`) may
+  // have unauthored chapters between authored ones — Biology landed chapters
+  // 18–19 while 17 was still unwritten — so at its book root the chapter
+  // numbers are held to strictly-increasing-and-unique instead of gap-free
+  // (verify-map checks them against the pinned collection); everywhere else,
+  // and for a finished book, sequential stays required.
+  const bookIndex = depth === 2 ? join(dir, '_index.md') : null;
+  const inProgressBookRoot = Boolean(bookIndex && existsSync(bookIndex)
+    && hasKey(frontOf(readFileSync(bookIndex, 'utf8')), 'authoring_status'));
   const nonIndex = [...folders, ...pages].filter((n) => !isKC(n, depth));
   const prefixed = nonIndex.filter((n) => /^\d+-/.test(n));
   if (prefixed.length) {
     for (const n of nonIndex) if (!/^\d{2}-/.test(n)) errors.push(`${rel}: '${n}' — siblings are numbered, so this needs a zero-padded prefix too`);
     const nums = prefixed.map((n) => parseInt(n.slice(0, 2), 10)).sort((a, b) => a - b);
-    nums.forEach((num, i) => { if (num !== i + 1) errors.push(`${rel}: numeric prefixes ${JSON.stringify(nums)} — expected sequential 1…${nums.length}`); });
+    if (inProgressBookRoot) {
+      nums.forEach((num, i) => { if (i && num <= nums[i - 1]) errors.push(`${rel}: numeric prefixes ${JSON.stringify(nums)} — expected strictly increasing (book in progress)`); });
+    } else {
+      nums.forEach((num, i) => { if (num !== i + 1) errors.push(`${rel}: numeric prefixes ${JSON.stringify(nums)} — expected sequential 1…${nums.length}`); });
+    }
   }
 
   // --- weights present + sequential among ordered children ------------------
@@ -198,7 +211,11 @@ function checkDir(dir, depth) {
     const missing = ordered.filter((o) => Number.isNaN(o.w));
     for (const m of missing) errors.push(`${rel}/${m.name}: missing \`weight:\` (Hugo sidebar order)`);
     const weights = ordered.filter((o) => !Number.isNaN(o.w)).map((o) => o.w).sort((a, b) => a - b);
-    weights.forEach((w, i) => { if (w !== i + 1) { errors.push(`${rel}: weights ${JSON.stringify(weights)} — expected sequential 1…${weights.length}`); } });
+    if (inProgressBookRoot) {
+      weights.forEach((w, i) => { if (i && w <= weights[i - 1]) errors.push(`${rel}: weights ${JSON.stringify(weights)} — expected strictly increasing (book in progress)`); });
+    } else {
+      weights.forEach((w, i) => { if (w !== i + 1) { errors.push(`${rel}: weights ${JSON.stringify(weights)} — expected sequential 1…${weights.length}`); } });
+    }
   }
 
   // --- non-overlapping Knowledge Check ranges --------------------------------

@@ -2485,6 +2485,19 @@ test('selfcheck rubric checkpoints — covered clauses pass, everything else is 
       .errors.some((e) => e.includes('must not contain `$` math')),
     'a checkpoint is a checkbox label — no math',
   );
+  // Checkpoint labels render as plain text (textContent), so raw HTML in one
+  // prints literally as tag soup; the model answer above the line keeps its.
+  assert(
+    lintHugo(checkpointed('The frequency of pp individuals is p<sup>2</sup> in the population.\n===CHECKS===\nthe frequency of pp individuals is p<sup>2</sup>\nin the population'), 'content/test.md')
+      .errors.some((e) => e.includes('contains a raw HTML tag')),
+    'a raw HTML tag inside a checkpoint is rejected',
+  );
+  assert.equal(
+    lintHugo(checkpointed('The frequency of pp individuals is p<sup>2</sup> in the population.\n===CHECKS===\nthe frequency of pp individuals is p²\nin the population'), 'content/test.md')
+      .errors.length,
+    0,
+    'HTML in the model answer with a Unicode-glyph checkpoint lints clean',
+  );
   assert(
     lintHugo(checkpointed('===CHECKS===\ncells divide to grow\nto repair tissue'), 'content/test.md')
       .errors.some((e) => e.includes('model answer above ===CHECKS=== is empty')),

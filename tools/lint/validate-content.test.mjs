@@ -183,6 +183,55 @@ try {
   assert.notEqual(misplacedCheck.status, 0, 'a misplaced Knowledge Check must fail');
   assert.match(misplacedCheck.stderr, /must place it immediately after Chapter 2/);
 
+  // A gap in chapter numbering (an unauthored middle chapter) fails a
+  // finished book but passes a book whose cover carries `authoring_status:`
+  // — Biology landed chapters 18–19 while 17 was still unwritten.
+  prepare();
+  const gapBook = join(fixture, 'math', 'gap-book');
+  write(
+    join(gapBook, '_index.md'),
+    `${frontmatter({ title: 'Gap Book', book: true })}`
+      + '## Chapters\n\n'
+      + '- **One** — the first chapter.\n'
+      + '- **Three** — a later chapter, its predecessor unwritten.\n',
+  );
+  for (const [number, title, weight] of [[1, 'One', 1], [3, 'Three', 3]]) {
+    const prefix = String(number).padStart(2, '0');
+    const chapter = join(gapBook, `${prefix}-${title.toLowerCase()}`);
+    write(
+      join(chapter, '_index.md'),
+      `${frontmatter({ title, weight, sourceChapter: number })}`
+        + '## Sections\n\n'
+        + `- **Topic ${number}** — a section description.\n`,
+    );
+    write(
+      join(chapter, `01-topic-${number}.md`),
+      `${frontmatter({
+        title: `Topic ${number}`,
+        weight: 1,
+        sourceSection: `${number}.1`,
+      })}${objectives([`Learn topic ${number}`, `Apply topic ${number}`])}Section body.\n`,
+    );
+  }
+  const gapWhileComplete = validate();
+  assert.notEqual(gapWhileComplete.status, 0, 'a chapter gap in a finished book must fail');
+  assert.match(gapWhileComplete.stderr, /expected sequential/);
+  const gapIndex = join(gapBook, '_index.md');
+  writeFileSync(
+    gapIndex,
+    readFileSync(gapIndex, 'utf8').replace("title: 'Gap Book'", "title: 'Gap Book'\nauthoring_status: in-progress"),
+  );
+  assert.equal(validate().status, 0, 'a chapter gap in an in-progress book must validate');
+  // Still strictly increasing: a duplicate chapter number fails even in progress.
+  const chapterThree = join(gapBook, '03-three', '_index.md');
+  writeFileSync(
+    chapterThree,
+    readFileSync(chapterThree, 'utf8').replace('weight: 3', 'weight: 1'),
+  );
+  const duplicateWeight = validate();
+  assert.notEqual(duplicateWeight.status, 0, 'a duplicate weight in an in-progress book must fail');
+  assert.match(duplicateWeight.stderr, /strictly increasing/);
+
   prepare();
   const firstCheck = join(book, 'knowledge-check-01-01.md');
   writeFileSync(

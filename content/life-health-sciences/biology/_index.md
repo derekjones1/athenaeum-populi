@@ -77,16 +77,41 @@ closes with how plants and animals are built and how ecosystems work.
   inheritance, genetic linkage and recombination-based chromosome maps, and
   the chromosomal errors — nondisjunction, aneuploidy, and structural
   rearrangements — behind inherited disorders.
+- **DNA Structure and Function** — the experiments that proved DNA is the
+  hereditary material, the double helix and how DNA is packaged and
+  sequenced, semi-conservative replication in prokaryotes and eukaryotes
+  with the enzymes that carry it out, and the repair mechanisms that catch
+  replication errors and mutations.
+- **Genes and Proteins** — the genetic code and its degeneracy, prokaryotic
+  and eukaryotic transcription, how eukaryotes process pre-mRNAs, rRNAs, and
+  tRNAs, and how ribosomes translate an mRNA into a polypeptide.
+- **Gene Expression** — the levels at which prokaryotes and eukaryotes
+  regulate gene expression, from operons through epigenetic, transcriptional,
+  post-transcriptional, translational, and post-translational control, and
+  how failures of that regulation drive cancer.
+
+### Unit 4: Evolutionary Processes
+
+- **Evolution and the Origin of Species** — how scientists arrived at the
+  theory of evolution by natural selection, what homologous and vestigial
+  structures reveal about common ancestry, how prezygotic and postzygotic
+  barriers keep species apart and allopatric and sympatric speciation and
+  adaptive radiation give rise to new ones, and what happens — and how
+  quickly — when diverging species reconnect in a hybrid zone.
+- **The Evolution of Populations** — how population genetics and the
+  Hardy-Weinberg principle describe evolution as a change in a population's
+  allele frequencies, the forces — natural selection, genetic drift, gene
+  flow, mutation, and nonrandom mating — that drive it, and the ways
+  natural selection shapes a population's variation.
 
 ## Planned contents
 
 Biology 2e has eight units and 47 chapters. Beyond the chapters listed
 above, the following are still to come, in this order:
 
-- **Unit 3: Genetics** (remaining chapters) — DNA Structure and Function;
-  Genes and Proteins; Gene Expression; Biotechnology and Genomics.
-- **Unit 4: Evolutionary Processes** — Evolution and the Origin of Species;
-  The Evolution of Populations; Phylogenies and the History of Life.
+- **Unit 3: Genetics** (remaining chapter) — Biotechnology and Genomics.
+- **Unit 4: Evolutionary Processes** (remaining chapter) — Phylogenies and
+  the History of Life.
 - **Unit 5: Biological Diversity** — Viruses; Prokaryotes: Bacteria and
   Archaea; Protists; Fungi; Seedless Plants; Seed Plants; Introduction to
   Animal Diversity; Invertebrates; Vertebrates.

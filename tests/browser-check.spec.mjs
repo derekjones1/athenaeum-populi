@@ -1181,13 +1181,14 @@ test('the biology sidebar nests chapters under their unit, and a math sidebar st
   // desktop list — so one unit appears twice; only the desktop copy is
   // visible at this viewport.
   const units = page.locator('aside .ap-sidebar-unit');
-  await expect(units).toHaveCount(6);
+  await expect(units).toHaveCount(8);
   const visible = page.locator('aside .ap-sidebar-unit:visible');
-  await expect(visible).toHaveCount(3);
+  await expect(visible).toHaveCount(4);
   await expect(visible.locator('> .ap-sidebar-unit-label')).toHaveText([
     'Unit 1: The Chemistry of Life',
     'Unit 2: The Cell',
     'Unit 3: Genetics',
+    'Unit 4: Evolutionary Processes',
   ]);
   // Each unit's own list holds exactly the authored chapters of that unit,
   // in source order, and every chapter or section link in the book sits
@@ -1209,12 +1210,20 @@ test('the biology sidebar nests chapters under their unit, and a math sidebar st
     'Meiosis and Sexual Reproduction',
     "Mendel's Experiments and Heredity",
     'Modern Understandings of Inheritance',
+    'DNA Structure and Function',
+    'Genes and Proteins',
+    'Gene Expression',
   ]);
-  // 13 chapter landings + 51 sections, rendered twice.
+  const unit4Titles = await visible.nth(3).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
+  expect(unit4Titles).toEqual([
+    'Evolution and the Origin of Species',
+    'The Evolution of Populations',
+  ]);
+  // 18 chapter landings + 75 sections, rendered twice.
   const bookLinks = page.locator('aside a[href^="/life-health-sciences/biology/"]:not([href="/life-health-sciences/biology/"])');
   const insideUnit = page.locator('aside .ap-sidebar-unit a[href^="/life-health-sciences/biology/"]');
-  expect(await bookLinks.count()).toBe(128);
-  expect(await insideUnit.count()).toBe(128);
+  expect(await bookLinks.count()).toBe(186);
+  expect(await insideUnit.count()).toBe(186);
   // The label is text, not a control: nothing to focus, nothing to click.
   await expect(page.locator('aside .ap-sidebar-unit-label a, aside .ap-sidebar-unit-label button')).toHaveCount(0);
 

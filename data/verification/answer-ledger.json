@@ -1,6 +1,10 @@
 {
  "schemaVersion": 1,
  "entries": {
+  "00018e0dbfb15812": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit"
+  },
   "0014cfbdce3d179f": {
    "verdict": "ok"
   },
@@ -15,6 +19,14 @@
   },
   "0035cfe053a5f4a6": {
    "verdict": "ok"
+  },
+  "003cf13ef13abcea": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1472236; source solution keys B, \"regulation of gene expression after translation,\" matching options transcribed verbatim in source order.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "003d4ac0320d8519": {
    "verdict": "ok",
@@ -263,6 +275,14 @@
    "verdict": "ok",
    "note": "2x+3y=8, 3x+5y=10 -> elimination gives x=10, y=-4. Node-verified both equations satisfied."
   },
+  "01dde8aef08b78a6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "01de6e1f9ffa7d12": {
    "verdict": "ok",
    "note": "f(x)=2x^2-4 is the bare printed expression; node check-answer.mjs confirms the printed \\lim retype grades incorrect against this key."
@@ -447,6 +467,14 @@
    "verdict": "ok",
    "note": "period of A tan(Bx) is pi/|B|; B=pi/6 gives P=6, independently computed."
   },
+  "032d0403a25c242b": {
+   "verdict": "ok",
+   "note": "Glossary textin for eukaryotic initiation factor-2 (eIF-2) (fs-id1452415); prompt is the glossary meaning, answer/accept name the term and its unhyphenated abbreviation.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "033b583f688c968c": {
    "verdict": "ok"
   },
@@ -517,6 +545,14 @@
   },
   "03e2f87179eb8480": {
    "verdict": "ok"
+  },
+  "03e7c167a1b9b5e0": {
+   "verdict": "ok",
+   "note": "Glossary recall; answer matches glossary term fs-id1280839 'intron'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "03ead94d7067d971": {
    "verdict": "ok"
@@ -851,6 +887,14 @@
   "05c10165da452df8": {
    "verdict": "ok"
   },
+  "05dc23ff1cb5d9b6": {
+   "verdict": "ok",
+   "note": "Review Question eip-758, source key D 'All of the above' verbatim.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "05e602916965b92b": {
    "verdict": "ok"
   },
@@ -952,6 +996,14 @@
   },
   "06b8a702d34d0de0": {
    "verdict": "ok"
+  },
+  "06c8a67ea261da12": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "06c95001f21f3ab7": {
    "verdict": "ok",
@@ -1100,6 +1152,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 248): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "07d8fc9a4de3bff3": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "07d90120a4ef2ce8": {
    "verdict": "ok"
   },
@@ -1221,6 +1281,10 @@
   "08c8bc2ca8211d3b": {
    "verdict": "ok"
   },
+  "0904c32ec985f0cb": {
+   "verdict": "ok",
+   "note": "Body VC1 (fig-ch14_02_01, note id fs-id1978249): the CNXML has no <exercise>/<solution> for this visual-connection note — only the second one (fs-id1973249) is keyed under Visual Connection Questions. Model answer composed strictly from the section's own definitions (nitrogenous = nitrogen-bearing; purine double ring vs pyrimidine single ring, verbatim from eip-837/caption; nucleoside vs nucleotide, verbatim from fs-id1912233) plus a general reading of the figure's own purine/pyrimidine ring drawings for how one base differs from another within its family. No claim beyond the section's text and the figure as drawn."
+  },
   "090bdf2ffb3bc43d": {
    "verdict": "ok"
   },
@@ -1278,6 +1342,14 @@
   },
   "0971b898335478dd": {
    "verdict": "ok"
+  },
+  "097647dbe0da06e3": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1341900, solution fs-id2345394: keyed option D, ligase. The section places helicase, single-strand binding proteins, and the origin of replication at fork formation itself; ligase acts later, sealing nicks after new strands are synthesized, so it is correctly the one 'not involved' in forming the fork.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "098fdb73bcc96f04": {
    "verdict": "ok"
@@ -1428,6 +1500,14 @@
   },
   "0ab08138ad141583": {
    "verdict": "ok"
+  },
+  "0ab609ad7de1e9f3": {
+   "verdict": "ok",
+   "note": "Glossary recall, term 'operator' (m66504 fs-idm154447904), prompt built from the trp-operon body prose rather than the generic glossary line so it names a distinguishing feature (between promoter and transcriptional start site).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0aba156d79baf14a": {
    "verdict": "ok"
@@ -2517,6 +2597,14 @@
   "12af426e539d4b11": {
    "verdict": "ok"
   },
+  "12b1a0f2be0ef5c0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "12b4b49dec42636b": {
    "verdict": "ok"
   },
@@ -2549,6 +2637,14 @@
   },
   "12f014c12453fd4f": {
    "verdict": "ok"
+  },
+  "12f0ddafe95318d2": {
+   "verdict": "ok",
+   "note": "Review Question fs-id2914875: source solution keys option D (sigma); section text confirms sigma alone confers transcriptional specificity.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "12fa03e12a6330b7": {
    "verdict": "ok"
@@ -2588,6 +2684,14 @@
   "135eeda38ec73066": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1361f25c3d2a2e0b": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -2656,8 +2760,32 @@
   "1408844a28e07b1b": {
    "verdict": "ok"
   },
+  "140cd4ba3b7972f2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "140d0fe1819810eb": {
+   "verdict": "ok",
+   "note": "MC eip-549 (promoter-length hypothesis); source solution B = 'Transcription of Gene A involves fewer transcription factors.' matches CNXML options verbatim.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "140d71f46ab93cde": {
    "verdict": "ok"
+  },
+  "140dd8b60f762803": {
+   "verdict": "ok",
+   "note": "Review Question fs-id2075108, solution fs-id1910465: keyed option B, RNA primer. Matches the section: 'RNA primase, synthesizes an RNA segment ... appropriately called the primer.'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "1416cb7e7c0401d4": {
    "verdict": "ok"
@@ -2673,6 +2801,14 @@
   },
   "143410d06c3b1b44": {
    "verdict": "ok"
+  },
+  "143d48a2abbd0bf9": {
+   "verdict": "ok",
+   "note": "Glossary recall (only glossary term in the module, fs-id1403064: term 'electrophoresis', meaning 'technique used to separate DNA fragments according to size'). accept='gel electrophoresis' is the compound form the section's own body text uses first.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "145094c0704cf943": {
    "verdict": "ok",
@@ -2783,6 +2919,10 @@
   "15643142763d9624": {
    "verdict": "ok"
   },
+  "156d0194d8d6ebc3": {
+   "verdict": "ok",
+   "note": "CT eip-523: model answer re-derived independently from the given 3'-...-5' template fragment (locate -10 consensus, find +1 site immediately after AAT, complement with U-for-T) and matches the source solution's sequence ACUAUCUUCGUGAGAUG exactly."
+  },
   "156db4cb0788db7c": {
    "verdict": "ok",
    "note": "D=det3([[4,-6,8],[-2,3,-4],[1,1,1]])=0 (run in Node). Row-checked: eq1 = -2*eq2 exactly (4x-6y+8z=10 is -2 times -2x+3y-4z=-5), so eq1/eq2 are the same plane; combined with eq3 there is no contradiction (elimination gives 0=0), so the system has infinitely many solutions, not no solution -- matches CNXML's own worked Example 6 pattern for this exact coefficient system (module's dependent-system example)."
@@ -2874,6 +3014,14 @@
    "verdict": "ok",
    "note": "node: Math.asin(6/10)=0.6435011087932844, rounds to 0.6435; triangle hyp=10, opposite=6 (Figure 9), matches source's 0.6435 radians."
   },
+  "16421a5807ea06b9": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "164501dfdf843c97": {
    "verdict": "ok"
   },
@@ -2905,6 +3053,14 @@
   },
   "167573f3dca27ce0": {
    "verdict": "ok"
+  },
+  "1676143b354cd239": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "16783e73a4162701": {
    "verdict": "ok",
@@ -3047,6 +3203,14 @@
   "1789b00c15bfa7fc": {
    "verdict": "ok",
    "note": "At x=6, f(6)=pi/6 exists (Condition 1 holds, defined by the 2<=x<=6 piece); left-hand limit=pi/6 and right-hand limit=12*pi both exist but differ -> Condition 2 fails (jump-type failure), independently derived since the source Try It 4 solution only names the x-value."
+  },
+  "1796111ef7ce78fb": {
+   "verdict": "ok",
+   "note": "Cloze textin from the module's own Section Summary sentence 3 ('...each strand serves as a template from which the new complementary strand is copied'); blanks the single content word 'template', which does not appear elsewhere in the prompt.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "179a054e420a4df2": {
    "verdict": "ok",
@@ -3293,6 +3457,15 @@
   "198fad2c1e8def20": {
    "verdict": "ok"
   },
+  "1992012c1dec7f3b": {
+   "verdict": "ok",
+   "note": "Cloze textin from the module's own Section Summary opening sentence ('...a process known as DNA replication'); blanks the two-word term, not present elsewhere in the prompt.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "module summary names the process 'DNA replication'; the accept list covers both spellings and the grader accepted the short form"
+   }
+  },
   "199409aad78ef3e6": {
    "verdict": "ok"
   },
@@ -3305,6 +3478,14 @@
   },
   "19a5a7bf4158cae9": {
    "verdict": "ok"
+  },
+  "19a9903d1851bb9b": {
+   "verdict": "ok",
+   "note": "Review Question (m66504 fs-idm153813744/fs-idm213368672), keyed B 'repressed'; cross-checked against Table 16.2 row (glucose +, lactose -, repressor binds, transcription No).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "19b31bce24866828": {
    "verdict": "ok"
@@ -3456,6 +3637,10 @@
   "1af0b915d8fb7433": {
    "verdict": "ok",
    "note": "Try It 1: A=[[2,6],[1,0],[1,-3]], B=[[3,-2],[1,5],[-4,3]]; independently summed in Node (row-by-row), row 2 = 1+1, 0+5 = 2,5. Matches CNXML ti_09_05_01."
+  },
+  "1af63e704c8645f5": {
+   "verdict": "ok",
+   "note": "Visual Connection selfcheck (module m66718, exercise fs-idm32008432): model answer matches the CNXML solution 'Moths have shifted to a lighter color.' verbatim."
   },
   "1af90fa0f3e58ee0": {
    "verdict": "ok"
@@ -3710,6 +3895,14 @@
   "1ceee5664a048538": {
    "verdict": "ok"
   },
+  "1cf044b9c5aed62b": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1406784, solution fs-id1512007: keyed option A, 5'-3'. The section states DNA polymerase 'is able to add nucleotides only in the 5' to 3' direction' — matches, and the other three options (3'-5', 5', 3') are each contradicted or incomplete.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "1cf7ffb0406f3835": {
    "verdict": "ok"
   },
@@ -3834,6 +4027,10 @@
   "1dd9ec78acf18fb8": {
    "verdict": "ok"
   },
+  "1ddd7472f0ba9b50": {
+   "verdict": "ok",
+   "note": "CT fs-id1444265: model answer matches source solution verbatim (T-for-U substitution; never identical)."
+  },
   "1dddbcda44a17807": {
    "verdict": "ok"
   },
@@ -3913,6 +4110,14 @@
   "1e680c2818c1d16d": {
    "verdict": "ok"
   },
+  "1e6c7107dddb634d": {
+   "verdict": "ok",
+   "note": "Exercise eip-891; key A '205bp' matches source solution 'A'; independently re-derived from exon lengths 50/70/130/30bp in order — 205bp is not a reachable order-preserving subset sum, 180/150/100 are — key confirmed correct.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "1e7dd0f003e94094": {
    "verdict": "ok"
   },
@@ -3959,6 +4164,14 @@
   },
   "1efde4d37d4c9f0b": {
    "verdict": "ok"
+  },
+  "1effa1d3e4bdbf8c": {
+   "verdict": "ok",
+   "note": "Glossary textin from definition fs-id1847065 (trans-acting element); prompt paraphrases the meaning, answer is the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "1f05af784efa9197": {
    "verdict": "ok"
@@ -4739,6 +4952,14 @@
    "verdict": "ok",
    "note": "cos(105deg)=cos(45+60); Math.cos(105 deg in rad) vs (sqrt2-sqrt6)/4 agree to 1e-12."
   },
+  "2511392d85a8f945": {
+   "verdict": "ok",
+   "note": "Glossary recall; answer matches glossary term fs-id1442805 'poly-A tail'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2513ee46a408f1a7": {
    "verdict": "ok"
   },
@@ -4940,6 +5161,10 @@
    "verdict": "ok",
    "note": "sinα=5/8,QI: cosα=√39/8; cos(2α)=1-2sin²α=1-2(25/64)=7/32 (node-checked)."
   },
+  "26cfe9eed0f2c70d": {
+   "verdict": "ok",
+   "note": "Locally written self-check, disclosed in the footer, drawn strictly from body paragraph fs-id1568624 ('Changes in epigenetic regulation, transcription, RNA stability, protein translation, and post-translational control can be detected in cancer.'); model answer and rubric clauses restate only that sentence's five items, no new claim. Added because the module's two Review Questions and two Critical Thinking Questions all map to objectives 1 and 3, leaving objective 2 without a source item."
+  },
   "26d6f45a92bff6be": {
    "verdict": "ok"
   },
@@ -5004,6 +5229,10 @@
   "276c73dc15dca37c": {
    "verdict": "ok",
    "note": "Practice (Descartes). Sign changes of x^4-x^2-1 (signs +,0,-,0,-1 -> effectively +,-,-): 1 change (1 positive); f(-x) is the same polynomial (only even powers plus a constant), also 1 change (1 negative). Matches CNXML solution for fs-id1165134061970."
+  },
+  "2772098f05e97f9c": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1511123; selfcheck model answer is the source solution verbatim; rubric checkpoints are verbatim clauses of the model answer, no new claims."
   },
   "278dfe0413da3254": {
    "verdict": "ok"
@@ -5143,6 +5372,14 @@
   "2880662d79de60c1": {
    "verdict": "ok"
   },
+  "2886e30da912c471": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "288a8b9e24fb3c0b": {
    "verdict": "ok"
   },
@@ -5226,6 +5463,15 @@
   "2935f0c5da5bc416": {
    "verdict": "ok",
    "note": "f(-i)=(1-i)/(-4-i); multiplied by conjugate (-4+i)/(-4+i): numerator (1-i)(-4+i)=-3+5i, denominator 16+1=17, giving -3/17+5/17 i; recomputed independently, matches CNXML ti_03_01_07 value (source spells it -3/17+5i/17)."
+  },
+  "29365899c78bacda": {
+   "verdict": "ok",
+   "note": "Glossary recall; answer matches glossary term fs-id1958502 'splicing'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "'pre-mRNA splicing' is the module's fuller phrase; accept list covers it and the grader accepted 'splicing'"
+   }
   },
   "293b5a62fa46a412": {
    "verdict": "ok"
@@ -5426,6 +5672,14 @@
   "2b0aaa4ac2958835": {
    "verdict": "ok"
   },
+  "2b15de8d1b40e3cd": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2b1a16497064b9da": {
    "verdict": "ok"
   },
@@ -5480,6 +5734,14 @@
   },
   "2b9d27ebc53198f8": {
    "verdict": "ok"
+  },
+  "2ba4b0251ce4e241": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "2ba8032ea6e62bdf": {
    "verdict": "ok"
@@ -5741,6 +6003,14 @@
   "2dfa8151c95a85d2": {
    "verdict": "ok"
   },
+  "2dfc2ae25cd1c525": {
+   "verdict": "ok",
+   "note": "glossary recall, definition fs-id1957596 (GC-rich box).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2e032bbd4c2bc205": {
    "verdict": "ok"
   },
@@ -5754,6 +6024,14 @@
   "2e18c3bc03f23267": {
    "verdict": "ok",
    "note": "lim_{x->3}(x^2-x-6)/(x^2-9) = (x+2)/(x+3) at x=3 = 5/6 = 0.8333..., rounds to 0.83; node-sampled at x=3+-0.1,0.01,0.001,0.0001 confirms convergence to 0.8333; matches the printed solution for fs-id1165135195366 (source exercise 31)."
+  },
+  "2e1d809a08878e59": {
+   "verdict": "ok",
+   "note": "MC fs-id1394736 (TF binding to enhancer); source solution B = 'increased transcription of a distant gene' verbatim.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "2e21e8d1e6f7df6c": {
    "verdict": "ok",
@@ -6024,8 +6302,20 @@
   "303196d0fac619e7": {
    "verdict": "ok"
   },
+  "303704e504b8dd6a": {
+   "verdict": "ok",
+   "note": "Glossary textin from definition fs-id1772000 (cis-acting element); prompt paraphrases the meaning, answer is the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "303a59ac2365093a": {
    "verdict": "ok"
+  },
+  "303d151d0ea7ffe6": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise fs-id1680861; selfcheck model answer matches the CNXML solution verbatim."
   },
   "303dc19ff3bf441b": {
    "verdict": "ok"
@@ -6069,6 +6359,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 41): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "3092230f81037e72": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "309ade03fe59da3c": {
    "verdict": "ok"
   },
@@ -6088,6 +6386,14 @@
   },
   "30da5dab312522a7": {
    "verdict": "ok"
+  },
+  "30e7aeb9d142f2f4": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "30ed3ca4594ba2df": {
    "verdict": "ok"
@@ -6179,6 +6485,14 @@
   "31971f50d51763af": {
    "verdict": "ok"
   },
+  "31993fa1b3fe529b": {
+   "verdict": "ok",
+   "note": "MC keyed C in module m66497 exercise fs-id1428699/solution fs-id1425193: 12 codons × 3 nucleotides/codon = 36, confirmed by independent arithmetic.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "31a10084ed2d0297": {
    "verdict": "ok"
   },
@@ -6242,6 +6556,14 @@
   "321466dfa0d697bf": {
    "verdict": "ok",
    "note": "4800 RPM = 4800*2*pi/60 = 160*pi rad/s = 502.6548... rad/s; d=120mm so r=60mm=0.06m; v = r*omega = 0.06*502.6548 = 30.159289474462014 m/s, rounds to 30.16 at 2dp (node computed); matches pinned CNXML solution '30.16 m/s' (line 3413)"
+  },
+  "3215b676d24ab02d": {
+   "verdict": "ok",
+   "note": "Review Question fs-id2739491; CNXML solution fs-id2075482 keys option D, 'telomerase' — matches.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "321a297cf0d7a463": {
    "verdict": "ok"
@@ -6326,6 +6648,10 @@
   "326cdaaa76620370": {
    "verdict": "ok"
   },
+  "326f048091c6f4c2": {
+   "verdict": "ok",
+   "note": "Critical Thinking Q fs-idm40145904: model answer transcribes the source solution verbatim (island dispersal into distinct niches)."
+  },
   "326f098fac57271c": {
    "verdict": "ok",
    "note": "Infinite geometric a1=2,r=1/3; S=a1/(1-r)=3 (node); matches CNXML ti_11_04_12."
@@ -6349,6 +6675,14 @@
   "32c34c4b02836713": {
    "verdict": "ok",
    "note": "r of sqrt3+i: Math.sqrt(3+1)=2."
+  },
+  "32cbf396e76a4e6c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "32d768143996887f": {
    "verdict": "ok"
@@ -7171,6 +7505,14 @@
     "result": "agrees"
    }
   },
+  "3933914aec922099": {
+   "verdict": "ok",
+   "note": "Review Question fs-id2626129, source solution fs-id2570415 keys option C 'patients with lots of the estrogen receptor expressed in their tumor'; options and order transcribed verbatim from list fs-id2385448.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "393421a5b447bfde": {
    "verdict": "ok"
   },
@@ -7343,6 +7685,10 @@
   },
   "3a605868d0021c50": {
    "verdict": "ok"
+  },
+  "3a6086d6d34f0c71": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise fs-id2008893/fs-id1385923 (m66392): model answer is the source solution verbatim, matching the section's xeroderma pigmentosa discussion of uncorrected mismatch/nucleotide-excision damage."
   },
   "3a62b78b880feab4": {
    "verdict": "ok",
@@ -7551,6 +7897,14 @@
    "verdict": "ok",
    "note": "QII: pi-3pi/4=pi/4; key p1325 #21"
   },
+  "3c5b00557e75ea83": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "3c5f96090fbdd378": {
    "verdict": "ok",
    "note": "k=-ln(2)/30; solving 1/200=e^{kt} gives t=229.3157<230, so 'less than'; matches CNXML."
@@ -7604,6 +7958,14 @@
   },
   "3cd1e77400cf9eb4": {
    "verdict": "ok"
+  },
+  "3cd6d036c786b6de": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3cda7772a0280011": {
    "verdict": "ok",
@@ -8250,6 +8612,14 @@
   "420ddd0777452290": {
    "verdict": "ok"
   },
+  "421db20cb32ae2d3": {
+   "verdict": "ok",
+   "note": "Review Question eip-979; CNXML solution eip-336 keys option C, 'DNA replication always occurs in the nucleus.' — matches (prokaryotes have no nucleus).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "422e5d8ef4490ad4": {
    "verdict": "ok"
   },
@@ -8331,6 +8701,10 @@
   },
   "42f11b52804b730a": {
    "verdict": "ok"
+  },
+  "42ff3837bec6744b": {
+   "verdict": "ok",
+   "note": "Critical Thinking Q fs-idm120483648: model answer transcribes the source solution verbatim (gametes with new n numbers form in one generation)."
   },
   "4300ecc061b0d28e": {
    "verdict": "ok"
@@ -8573,6 +8947,14 @@
    "verdict": "ok",
    "note": "-0.2x+0.4y=0.6, x-2y=-3: second solved for y gives y=(x+3)/2; substituting into the first is an identity (dependent). Node-verified for a sample x that both equations hold with y=(x+3)/2."
   },
+  "44c55ac01608132c": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise fs-id1259369; selfcheck model answer matches the CNXML solution verbatim."
+  },
+  "44ceaa88bc68a916": {
+   "verdict": "ok",
+   "note": "parent re-record after escaping the source solution's 8*2/12*2 asterisks (markdown was eating them as italics) and setting checkpoint exponents as Unicode p²/q²; substance unchanged, incl. the 2pq .49 correction (erratum 161)"
+  },
   "44d04e66220e7f95": {
    "verdict": "ok"
   },
@@ -8757,11 +9139,23 @@
    "verdict": "ok",
    "note": "Arguments equal: -2x^2-7x=x-2 => x^2+4x-1=0 => x=-2+/-sqrt5 (approx 0.236, -4.236); domain requires x-2>0 i.e. x>2, neither candidate qualifies, so no solution. Verified numerically; categorical multiplechoice."
   },
+  "467e24f7f2b4aea7": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit"
+  },
   "467f55bf6876783f": {
    "verdict": "ok"
   },
   "468234c672965010": {
    "verdict": "ok"
+  },
+  "468fbdc406d678e6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "469164e05edce1dc": {
    "verdict": "ok"
@@ -9050,6 +9444,14 @@
    "verdict": "ok",
    "note": "Try It 1: 3+4=7, addition principle (disjoint option groups)."
   },
+  "48354ec1f5f1ee72": {
+   "verdict": "ok",
+   "note": "CNXML fs-id2956539 (Review Q9, printed key b/semi-conservative), transcribed verbatim in source order.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "483a8b694d167b82": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 146): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -9057,6 +9459,14 @@
   "484455d759e4dd2d": {
    "verdict": "ok",
    "note": "m66427 Critical Thinking exercise fs-id2062496, solution fs-id1298633: 'Topics that fall inside the area of biological study include how diseases affect human bodies, how pollution impacts a species' habitat, and how plants respond to their environments. Topics that fall outside of biology ... include how metamorphic rock is formed and how planetary orbits function.' Page model answer restates the same five examples; all five ===CHECKS=== clauses restate them with no added claim."
+  },
+  "485271428add5737": {
+   "verdict": "ok",
+   "note": "Review Q fs-id2072168: source options and key (d, all of the above) transcribed verbatim; all three prior statements (allow transcription, move histones to open/close, are temporary) are supported by the section text.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4863dcf5730ea69d": {
    "verdict": "ok"
@@ -9103,6 +9513,10 @@
   "48a1cc2afcfebeab": {
    "verdict": "ok"
   },
+  "48a3db0085ae962b": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2200536: independently translated 5'-AUGGCCGGUUAUUAAGCA-3' codon by codon (AUG-GCC-GGU-UAU-UAA), confirming MAGY with a stop at the fifth codon, matching the source solution."
+  },
   "48a62f2ba777da9c": {
    "verdict": "ok"
   },
@@ -9121,6 +9535,10 @@
   },
   "48ce8a6f1c83f525": {
    "verdict": "ok"
+  },
+  "48d1c88917c9acbc": {
+   "verdict": "ok",
+   "note": "Critical Thinking eip-392, solution eip-527, transcribed verbatim. Matches the section's description of topoisomerase relieving over-winding ahead of the fork by nicking and resealing the helix; inhibiting it stalls helicase-driven unwinding."
   },
   "48f27516e0019c0b": {
    "verdict": "ok"
@@ -9262,6 +9680,14 @@
   },
   "49f64e7d1fb53570": {
    "verdict": "ok"
+  },
+  "49fb5ad6046f4640": {
+   "verdict": "ok",
+   "note": "summary sentence 5 select-the-term, author-written per playbook summary-item rule, blanking \"RNA polymerase II\"; all options and stem clauses appear in the module.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "49fc2589234cd05f": {
    "verdict": "ok"
@@ -9411,6 +9837,14 @@
   "4b668fb3178d2e70": {
    "verdict": "ok"
   },
+  "4b6b8ee49e67b7bf": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4b726b7f53c09995": {
    "verdict": "ok"
   },
@@ -9449,6 +9883,18 @@
   },
   "4bc1fdc45c090d4b": {
    "verdict": "ok"
+  },
+  "4be7624840ceaf8f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "4be7cd37a246879b": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1876408/fs-id2025774 (reverse epigenetic changes): question and solution transcribed verbatim as model answer; checkpoints are literal substrings."
   },
   "4bea8282bb314f8a": {
    "verdict": "ok"
@@ -9527,6 +9973,14 @@
   },
   "4c571dfdd9262297": {
    "verdict": "ok"
+  },
+  "4c58ab0b8c8deac1": {
+   "verdict": "ok",
+   "note": "Glossary recall; answer matches glossary term fs-id1519661 'RNA editing'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4c61b335b8b7d92a": {
    "verdict": "ok"
@@ -9633,6 +10087,14 @@
   "4d8eb4e93bcecb32": {
    "verdict": "ok"
   },
+  "4d9276f17db648e7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4da9f6ff87cc7738": {
    "verdict": "ok"
   },
@@ -9692,6 +10154,14 @@
   "4e2971ea7127f3c6": {
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 339): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "4e2e1331170d33ab": {
+   "verdict": "ok",
+   "note": "Glossary recall for 'poly-A tail'; answer/accept match the glossary term; hyphen-vs-space variant intentionally omitted from accept per docs/subjects/biology.md (already grading-normalized).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4e31bba84130b414": {
    "verdict": "ok"
@@ -9902,6 +10372,10 @@
   "4fdb7660deec2e97": {
    "verdict": "ok"
   },
+  "4fe856f4cc2e80b7": {
+   "verdict": "ok",
+   "note": "Visual Connection fs-idp10864432: transcribed verbatim from the module's own solution."
+  },
   "4fed68d4f36c4f3b": {
    "verdict": "ok",
    "note": "m66469 body text (Lactic Acid Fermentation paragraph): \"...in skeletal muscle that has an insufficient oxygen supply to allow aerobic respiration to continue (that is, in muscles used to the point of fatigue).\" Confirms answer \"fatigue\" verbatim.",
@@ -9972,6 +10446,14 @@
   },
   "50597fc85854923a": {
    "verdict": "ok"
+  },
+  "5059e098e70e83a1": {
+   "verdict": "ok",
+   "note": "Review Question fs-id2688539, source options/order kept, key D = 'histones' matches the section's own text (DNA is wrapped around histones to form nucleosomes).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "5068c71b9b87b450": {
    "verdict": "ok"
@@ -10093,6 +10575,14 @@
   "515ca4778732243a": {
    "verdict": "ok"
   },
+  "51649c644b6eaaa0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5166c4137797ed07": {
    "verdict": "ok",
    "note": "Summary sentence (m66428 Section Summary, fs-id1467930): 'Biology is very broad and includes many branches and subdisciplines. Examples include molecular biology, microbiology, neurobiology, zoology, and botany, among others.' Page stem merges the two summary sentences ('biology's branches and subdisciplines' + the enumerated list) but preserves the source's own list order and content; blanked term 'botany' does not appear elsewhere in the stem.",
@@ -10200,6 +10690,10 @@
   "525fc9bfaf535c49": {
    "verdict": "ok"
   },
+  "5263850db9e0adda": {
+   "verdict": "ok",
+   "note": "m66518 Critical Thinking fs-idp154022048; model answer is the source solution verbatim."
+  },
   "528634683a38b0cb": {
    "verdict": "ok"
   },
@@ -10212,6 +10706,14 @@
   },
   "52a6c85edb0819fc": {
    "verdict": "ok"
+  },
+  "52a7642852da9280": {
+   "verdict": "ok",
+   "note": "Glossary recall for term-00002 'Myc' (body) / glossary definition fs-id1477108 'myc — oncogene that causes cancer in many cancer cells'; prompt paraphrases the glossary meaning, answer matches the glossary term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "52ade887366f87bb": {
    "verdict": "ok"
@@ -10235,6 +10737,15 @@
   },
   "52f8c42943e4ef3a": {
    "verdict": "ok"
+  },
+  "52fda282276c080d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "settled FOR the key (D, \"b and c\") against m66523's own sentences: \"Sometimes, allele frequencies within a population change randomly with no advantage... We call this phenomenon genetic drift\" and \"We call an event that initiates an allele frequency change in an isolated part of the population... the founder effect\" — the captain's polydactyly spreading in a small isolated founding population is a founder effect, which the module frames as exactly such a random allele-frequency change, so genetic drift applies with it"
+   }
   },
   "5304fe1e1a094961": {
    "verdict": "ok",
@@ -10395,6 +10906,10 @@
   "5444aaa132aa329c": {
    "verdict": "ok"
   },
+  "5448e2bc87119ca8": {
+   "verdict": "ok",
+   "note": "Body Visual Connection selfcheck; model answer copied verbatim from CNXML solution fs-idp39733568 (exercise fs-idp101720928)."
+  },
   "5452bdf57924faaf": {
    "verdict": "ok"
   },
@@ -10406,6 +10921,10 @@
   },
   "5476050fef5cb61a": {
    "verdict": "ok"
+  },
+  "548110543592f7c8": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-idp12811312, model answer transcribed verbatim from the solution."
   },
   "54812071ab2ba67d": {
    "verdict": "ok"
@@ -10439,6 +10958,14 @@
   "54cf96b892db2b14": {
    "verdict": "ok",
    "note": "MC keyed 'peer review' matches CNXML exercise fs-id1694297 solution C in source option order (publication, public speaking, peer review, the scientific method); the 'Reporting Scientific Work' prose supports peer review uniquely for this description.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "54d21e8820b58f68": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -10659,6 +11186,10 @@
   "56a03bde49b87338": {
    "verdict": "ok"
   },
+  "56a7d33caabbce8d": {
+   "verdict": "ok",
+   "note": "Visual Connection question for fig-ch18_03_01 (m66521 exercise fs-idm52493472); model answer transcribes the CNXML <solution> verbatim (\"Fusion is most likely to occur because the two species will interact more and similar traits in food acquisition will be selected.\"); checked against the section's Reconnection prose, which supports fusion when barriers weaken."
+  },
   "56b2fa4a97c50395": {
    "verdict": "ok",
    "note": "u^2-u-110=0 -> u=11 (u=-10 rejected) -> x=ln11; key p1316 #45"
@@ -10798,6 +11329,10 @@
    "verdict": "ok",
    "note": "Reflected about x-axis (a<0), so range flips below the asymptote: (-\\infty,-2), matches CNXML solution."
   },
+  "5790021525323c8b": {
+   "verdict": "ok",
+   "note": "Body Visual Connection self-check, source fs-idm114664960/fs-idm85987600, p=0.8,q=0.2,n=500: VV=p^2*500=320, Vv=2pq*500=160, vv=q^2*500=20, violet=480, white=20 — independently re-derived and matches. Source solution's '160Vv' corrected to '160 Vv' (missing space, inconsistent with the same sentence's '320 VV' and '20 vv') — disclosed in footer."
+  },
   "5797846b12a64720": {
    "verdict": "ok"
   },
@@ -10872,6 +11407,14 @@
   "581df20f3b1c5237": {
    "verdict": "ok"
   },
+  "5820858afe66ca04": {
+   "verdict": "ok",
+   "note": "Exercise eip-953; key C 'Alternative splicing creates shorter mRNA transcripts.' matches source solution 'C'; verbatim options; defensible against section text (splicing changes isoform composition, not uniform transcript shortening).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "582262ef8d5efc43": {
    "verdict": "ok"
   },
@@ -10883,6 +11426,14 @@
   },
   "58326a49bbe2cde8": {
    "verdict": "ok"
+  },
+  "5836ae129817ddd8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "583a98491328b648": {
    "verdict": "ok"
@@ -10901,6 +11452,14 @@
   },
   "586c2667cb50d196": {
    "verdict": "ok"
+  },
+  "5871aa75fbe0f305": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "58817f1680f318a0": {
    "verdict": "ok",
@@ -10962,6 +11521,15 @@
   },
   "58edaf668e34e80e": {
    "verdict": "ok"
+  },
+  "58f1ee9f52b850fb": {
+   "verdict": "ok",
+   "note": "glossary recall, definition fs-id1786415 (small nuclear RNA).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "snRNA is the module's own abbreviation, covered by the accept list; primary answer agreed"
+   }
   },
   "58f8f4de8a7fdf22": {
    "verdict": "ok"
@@ -11080,6 +11648,14 @@
   "59bf6a346cbbe2dc": {
    "verdict": "ok"
   },
+  "59da8defd527a921": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1674486, source solution fs-id1361234 keys option C 'oncogenes'; options and order transcribed verbatim from list fs-id1719205.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "59eede310ce16cf0": {
    "verdict": "ok"
   },
@@ -11147,6 +11723,14 @@
   },
   "5a654bba2d6b6aa2": {
    "verdict": "ok"
+  },
+  "5a7280575aa9020f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "5a88f555abb01b41": {
    "verdict": "ok"
@@ -11291,6 +11875,14 @@
    "verdict": "ok",
    "note": "Practice: line through (-1,0) at t=0 and (3,-2) at t=1 -> x(t)=-1+4t,y(t)=-2t by linear interpolation; matches CNXML solution exactly."
   },
+  "5b863852e157480b": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5b8960618e22a39a": {
    "verdict": "ok"
   },
@@ -11328,6 +11920,14 @@
   },
   "5bbf07f972afd0d3": {
    "verdict": "ok"
+  },
+  "5bc932d557ad8dc4": {
+   "verdict": "ok",
+   "note": "Glossary recall; answer matches glossary term fs-id2762999 'exon'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "5bc99fb1d4ed41b1": {
    "verdict": "ok"
@@ -11427,6 +12027,15 @@
   "5c9871f5f75f46e4": {
    "verdict": "ok"
   },
+  "5c9d216f2df813ac": {
+   "verdict": "ok",
+   "note": "Review Question eip-874: matches source solution 'A' = Translation stalls after the initiation AUG codon is identified.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "settled FOR the key against m66501: 'The small subunit is responsible for binding the mRNA template, whereas the large subunit sequentially binds tRNAs' — initiation proceeds on the small subunit and completes AUG recognition, so a dead 60S stalls translation right after; the peptidyl-transfer failure I named is downstream of that stall"
+   }
+  },
   "5c9f61ed168a2588": {
    "verdict": "ok"
   },
@@ -11480,6 +12089,14 @@
   "5d27c1a3073d4e31": {
    "verdict": "ok",
    "note": "Repaired 2026-08-15. 2/(4-sqrt6) times (4+sqrt6)/(4+sqrt6) = 2(4+sqrt6)/10 = (4+sqrt6)/5 = 1.2898979...; the declared form left a common factor of 2 while every sibling in the section reduces."
+  },
+  "5d2ab2ee6f0a0f60": {
+   "verdict": "ok",
+   "note": "Review Question fs-id2897046, source key C '23 percent' verbatim; independently re-derived via A=T, G=C, A+T+G+C=100: A=T=27, so G=C=(100-54)/2=23.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "5d2adffe8e4c93ca": {
    "verdict": "ok"
@@ -11859,6 +12476,10 @@
   "60af392f31644419": {
    "verdict": "ok"
   },
+  "60b56f1c1817443a": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2763427, model answer is the source solution verbatim."
+  },
   "60b93b68c24d9e48": {
    "verdict": "ok"
   },
@@ -11911,6 +12532,14 @@
   },
   "611abb5cbe4391f2": {
    "verdict": "ok"
+  },
+  "611b060e7d9b16f3": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1414909/fs-id1837280 (m66392): source solution keys option B, 'DNA polymerase proofreading', matching the section's own text that proofreading corrects most errors during replication before mismatch repair or nucleotide excision repair are needed.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "61268feca7b0346f": {
    "verdict": "ok"
@@ -11973,6 +12602,15 @@
   },
   "61fc3991825f956a": {
    "verdict": "ok"
+  },
+  "6219973733b7995b": {
+   "verdict": "ok",
+   "note": "Glossary recall for 'microRNA (miRNA)'; answer/accept match the glossary term and abbreviation; answer text does not appear in the prompt.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "miRNA is the module's own abbreviation, covered by accept; grader agreed"
+   }
   },
   "622ddcb816fd44b9": {
    "verdict": "ok"
@@ -12092,6 +12730,10 @@
   },
   "63546b9132c3fee8": {
    "verdict": "ok"
+  },
+  "63683f0143a5cee6": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit"
   },
   "637469e06d570382": {
    "verdict": "ok"
@@ -12757,6 +13399,14 @@
   "6876f61759dd74d0": {
    "verdict": "ok"
   },
+  "68780156ec434f4d": {
+   "verdict": "ok",
+   "note": "CNXML eip-917 (Review Q11, printed key a), transcribed verbatim in source order; the correct option is the source's own first-listed option.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "687d0a776fa1eecb": {
    "verdict": "ok"
   },
@@ -12826,6 +13476,14 @@
   },
   "69106a6b81b0bd5d": {
    "verdict": "ok"
+  },
+  "691a5f8d04fa442d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "6929c661d79b4874": {
    "verdict": "ok"
@@ -12908,6 +13566,14 @@
   "69d1fa39ce2483ce": {
    "verdict": "ok",
    "note": "multiplechoice, Review Question 2 (CNXML exercise fs-id1770002). Options/order and keyed answer 'the movement of hydrogen ions across a mitochondrial membrane' (SOLUTION: C) match source verbatim; confirmed against the Chemiosmosis section text. The 'hydrogen atoms' distractor is not independently true — the section specifies ions (protons), not neutral atoms, cross the membrane.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "69e6def1347c080e": {
+   "verdict": "ok",
+   "note": "sortbins built from tab-ch14_05_01's own cell values (origin count, polymerase count, telomerase presence, RNA-primer removal, strand elongation); every item matches its source cell verbatim or near-verbatim.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -13050,6 +13716,10 @@
    "verdict": "ok",
    "note": "Try It 12: halving concentration is the mirror of Example 12's doubling; pH_new=-log(C/2)=P+log(2). log10(2)=0.301029996 (node), rounds to 0.301. No printed CNXML solution for this Try It, but it's the direct algebraic mirror of the worked Example immediately above it, which is fully solved in the source (P-log(2)≈P-0.301 for doubling)."
   },
+  "6acd47b3ccf3fa6c": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit"
+  },
   "6ad37a0399bf66ca": {
    "verdict": "ok"
   },
@@ -13111,6 +13781,14 @@
   "6b2877d06311ff09": {
    "verdict": "ok",
    "note": "deg num = deg den -> y=1/1=1; key p1297 #37"
+  },
+  "6b2c28d7a8ee51e9": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "6b37b28cdf84f0f8": {
    "verdict": "ok"
@@ -13202,6 +13880,14 @@
   "6c00f79be483744d": {
    "verdict": "ok"
   },
+  "6c05297844048db4": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6c07def88926e939": {
    "verdict": "ok"
   },
@@ -13216,6 +13902,10 @@
   },
   "6c1eaa689f826f02": {
    "verdict": "ok"
+  },
+  "6c1ebd8207749260": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1426300, model answer is the source solution verbatim."
   },
   "6c27d57f45917bd5": {
    "verdict": "ok"
@@ -13283,6 +13973,14 @@
   },
   "6c83fbee8e481ac3": {
    "verdict": "ok"
+  },
+  "6c8c50fae464f4a5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "6c979c036c229322": {
    "verdict": "ok"
@@ -13390,6 +14088,10 @@
   },
   "6d60682e83c7af13": {
    "verdict": "ok"
+  },
+  "6d6f5cc61932294f": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question eip-676; model answer copied verbatim from CNXML solution eip-628."
   },
   "6d74a00de634cd79": {
    "verdict": "ok",
@@ -13510,6 +14212,10 @@
   },
   "6e76057d0ffa7622": {
    "verdict": "ok"
+  },
+  "6e7e1433568804ca": {
+   "verdict": "ok",
+   "note": "parent re-record after setting the flower-population checkpoint exponents as Unicode q²/p² (checkpoint labels render as plain text); model answer unchanged, the verbatim source solution with its <sup> markup (erratum 159 normalization)"
   },
   "6e7e16a900fc3c8e": {
    "verdict": "ok",
@@ -13788,6 +14494,10 @@
   "70d89793a39b1e2c": {
    "verdict": "ok"
   },
+  "70db55ecf869011e": {
+   "verdict": "ok",
+   "note": "Visual Connection selfcheck (fs-idm138590288/fs-idm156177184): model answer transcribes the source solution verbatim; 2n+1 (extra material) survives more often than 2n-1 (missing material) matches genetics generally and the source's own reasoning."
+  },
   "70f146f253e6b5dc": {
    "verdict": "ok"
   },
@@ -13919,6 +14629,14 @@
   },
   "71f61922d9aa1c1e": {
    "verdict": "ok"
+  },
+  "71f7a056943fd438": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "720c83ecb3aa6b49": {
    "verdict": "ok",
@@ -14173,6 +14891,14 @@
   "74360c4fb36e5d24": {
    "verdict": "ok"
   },
+  "7437104c8a30105f": {
+   "verdict": "ok",
+   "note": "Glossary def-00001 'endonuclease' = 'enzymes that cleave the phosphodiester bond within a polynucleotide chain'; prompt is the meaning, answer the term, answer not present in prompt.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "743968eacefa83a1": {
    "verdict": "ok"
   },
@@ -14198,6 +14924,14 @@
   },
   "7468ed9de3e9e123": {
    "verdict": "ok"
+  },
+  "7477906a74b1537b": {
+   "verdict": "ok",
+   "note": "Glossary textin for GTP (fs-id2009484); prompt is the glossary meaning, answer/accept match the term as printed.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "74845e65b4652592": {
    "verdict": "ok"
@@ -14245,6 +14979,14 @@
   "74db99e573ed4209": {
    "verdict": "ok"
   },
+  "74e97e000857291e": {
+   "verdict": "ok",
+   "note": "Summary-derived cloze textin: blanks 'different for different species' from the section's own Section Summary sentence, no new claim.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "74eb067a12fa4beb": {
    "verdict": "ok"
   },
@@ -14282,6 +15024,14 @@
   },
   "755d7b2de68c0eef": {
    "verdict": "ok"
+  },
+  "7575e47559c26027": {
+   "verdict": "ok",
+   "note": "Review Question eip-252; options and keyed answer (option b, 'The large ribosomal subunit would not be able to interact with mRNA transcripts.') match the CNXML exactly.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "7578876f9ba0ebc8": {
    "verdict": "ok"
@@ -14349,6 +15099,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "76105831308ade0d": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2119483: model answer is the source solution reformatted into complete sentences with no new claim."
   },
   "76117f82c15b7c6a": {
    "verdict": "ok"
@@ -14615,6 +15369,14 @@
   "7802d8a0f7e736dd": {
    "verdict": "ok"
   },
+  "78085e98001b3b8c": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "78267b095efa48de": {
    "verdict": "ok"
   },
@@ -14781,6 +15543,14 @@
   "798dff5f304867a9": {
    "verdict": "ok"
   },
+  "798e3f796fd428f4": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "798ecc9f8ecf6687": {
    "verdict": "ok",
    "note": "m66466 critical-thinking solution fs-id1482920 (universality of glycolysis supporting its antiquity) matches the page's model answer verbatim; all three checks restate it with no added claim."
@@ -14822,6 +15592,10 @@
   "79d79b4f0e933f63": {
    "verdict": "ok"
   },
+  "79da96b34e59994a": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-idm78478960, model answer transcribed verbatim from the solution."
+  },
   "79e1caf405006a7e": {
    "verdict": "ok"
   },
@@ -14845,6 +15619,14 @@
   },
   "7a0b8a1574fb6b62": {
    "verdict": "ok"
+  },
+  "7a2082d255750ded": {
+   "verdict": "ok",
+   "note": "Glossary recall, term 'repressor' (m66504 fs-idm134406896), matches glossary meaning and body text.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "7a294e1073d4a538": {
    "verdict": "ok"
@@ -14952,6 +15734,10 @@
   "7ac41a8a062c351f": {
    "verdict": "ok",
    "note": "Both the embedded data-spec JSON ({\"at\":-2,\"label\":\"B\"}) and the circle at pixel cx=116 (the tick labeled '-2') confirm point B is at -2, matching the declared answer."
+  },
+  "7ac4ba0d68d0ab9f": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1720501, solution fs-id3165297. Independently recomputed: 1,200,000 bp / 900 nucleotides per second = 1333.33 s = 22.22 min, matching the printed '1333 seconds or 22.2 minutes' exactly. Ship as printed — the question gives an overall stated replication rate and asks a direct length/rate division, the same convention the source uses elsewhere in the section (its own 'approximately 1000 nucleotides added per second' claim for the 42-minute E. coli genome)."
   },
   "7ac648bceecbb1c5": {
    "verdict": "ok"
@@ -15078,6 +15864,14 @@
   },
   "7b84a9197d31e374": {
    "verdict": "ok"
+  },
+  "7b8fed81d3e4180d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "7b9f76bcb66222a0": {
    "verdict": "ok"
@@ -15268,6 +16062,14 @@
   "7c9a053301ef5bc3": {
    "verdict": "ok"
   },
+  "7c9bbd9f01f2d2aa": {
+   "verdict": "ok",
+   "note": "Locally written select-the-term item built from the section's own Summary sentence ('Telomerase, an enzyme with an inbuilt RNA template, extends the ends by copying the RNA template...'); all three distractors (helicase, primase, DNA ligase) are enzymes named elsewhere in this same module's body text. Disclosed in the footer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7c9d3b34fe13c583": {
    "verdict": "ok",
    "note": "m66459 visual-exercise fs-idp41379504, solution fs-id1786520 (rendered as selfcheck): model answer \"No. We can store chemical energy because of the need to overcome the barrier to its breakdown.\" matches source verbatim. Both CHECKS clauses restate it, no added claim."
@@ -15324,10 +16126,6 @@
   },
   "7d1eac30e9330e69": {
    "verdict": "ok"
-  },
-  "7d24884ec823dbdb": {
-   "verdict": "ok",
-   "note": "m66462 CT exercise fs-id2200033, solution fs-id1417244: model answer matches source verbatim (EA very low; exergonic with large −ΔG; ATP unstable, rapidly dissociates). All 4 CHECKS clauses restate the model answer, no added claim."
   },
   "7d30e37d8516ec73": {
    "verdict": "ok"
@@ -15449,6 +16247,14 @@
   "7de80f72088e1a98": {
    "verdict": "ok"
   },
+  "7e03b5477cbc09f3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7e0c0fa2319f7da8": {
    "verdict": "ok"
   },
@@ -15507,6 +16313,10 @@
   },
   "7e6b8f1f84062301": {
    "verdict": "ok"
+  },
+  "7e708d01bdf4bb6e": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question fs-id2020932, solution fs-id2080482 transcribed verbatim as the self-check model answer; preamble kept in full; rubric checkpoints are the model answer's own clauses (4), each an exact substring."
   },
   "7e7e1ae8bfda066c": {
    "verdict": "ok"
@@ -15588,6 +16398,10 @@
   },
   "7f07cd3f1b8e8e24": {
    "verdict": "ok"
+  },
+  "7f0ca94aff2a692b": {
+   "verdict": "ok",
+   "note": "m66518 Critical Thinking fs-idp6173936; model answer is the source solution verbatim."
   },
   "7f0fa927f6a9661f": {
    "verdict": "ok"
@@ -15733,6 +16547,14 @@
    "verdict": "ok",
    "note": "4x^2+y^2-24x+2y+21=0: complete the square, 4(x-3)^2-36+(y+1)^2-1+21=0 -> 4(x-3)^2+(y+1)^2=16 -> (x-3)^2/4+(y+1)^2/16=1; matches CNXML fs-id1388898; replayed printed general form through checkAnswer with form:conic-standard-form -> reports form."
   },
+  "808d1849ed435c15": {
+   "verdict": "ok",
+   "note": "Summary-derived select-the-term MC from the section's own Section Summary sentence ('...wound around histone proteins'); distractors (transcription factors, RNA polymerase, CpG islands) are all terms used elsewhere in this same module; author-written, disclosed in footer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "80906a1d805c7397": {
    "verdict": "ok"
   },
@@ -15742,6 +16564,10 @@
   },
   "8098f6fc2d87c811": {
    "verdict": "ok"
+  },
+  "80a7c388cd93fbeb": {
+   "verdict": "ok",
+   "note": "Selfcheck model answer transcribes module m66497 exercise eip-206/solution eip-5 verbatim; independently re-derived the reading frame from CUAUGUGUCGUAACAGCCGAUGACCCG (start codon AUG at position 3, triplets AUG UGU CGU AAC AGC CGA UGA, stop at UGA) and confirmed Met Cys Arg Asn Ser Arg."
   },
   "80ad1e1b8dfce290": {
    "verdict": "ok"
@@ -15810,6 +16636,14 @@
    "verdict": "ok",
    "note": "Matches m66454 exercise fs-idm71000712, solution fs-idm40512367 (microfilaments/microtubules in macrophage phagocytosis). Model answer verbatim; all four CHECKS restate it."
   },
+  "8121174f658e954e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "8129b01a4095fe60": {
    "verdict": "ok"
   },
@@ -15849,8 +16683,24 @@
    "verdict": "ok",
    "note": "Practice obj1-2: center(-3,4), vertex(1,4): a=4,a^2=16; focus(-3+2sqrt3,4): c=2sqrt3,c^2=12; b^2=16-12=4; (x+3)^2/16+(y-4)^2/4=1 matches CNXML fs-id1346675 solution."
   },
+  "816fbd517d0be91e": {
+   "verdict": "ok",
+   "note": "Selfcheck model answer transcribes module m66497 exercise fs-id2198100/solution fs-id2575162 verbatim; independently checked 4^4 = 256 ≥ 200 > 4^3 = 64, so four nucleotides is indeed the shortest sufficient codon length."
+  },
   "81767f3310ba4a82": {
    "verdict": "ok"
+  },
+  "81784d4ec0e8cd72": {
+   "verdict": "ok",
+   "note": "Glossary recall for 'untranslated region'; answer/accept match the glossary term and section's own abbreviation; answer text does not appear in the prompt.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "817d989caed98f6e": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-idm101801968, model answer transcribed verbatim from the solution."
   },
   "8180dc135ce5ef28": {
    "verdict": "ok"
@@ -16020,6 +16870,14 @@
   "82883e7b7c8ad84b": {
    "verdict": "ok"
   },
+  "8289cbf1091da5cf": {
+   "verdict": "ok",
+   "note": "Glossary recall, term 'inducer' (m66504 def-00001), matches glossary meaning.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "828e4b4b5bd2fc44": {
    "verdict": "ok"
   },
@@ -16038,6 +16896,14 @@
   },
   "82a83d22064c659d": {
    "verdict": "ok"
+  },
+  "82ad7206798f816c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "82adcd7511cb3afa": {
    "verdict": "ok"
@@ -16322,6 +17188,14 @@
   },
   "849d8bf5fe3341b8": {
    "verdict": "ok"
+  },
+  "84a9d0eda1b3fc6c": {
+   "verdict": "ok",
+   "note": "Glossary recall; answer matches glossary term fs-id2054588 'anticodon'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "84ab7f746a0986c7": {
    "verdict": "ok"
@@ -16824,6 +17698,14 @@
   "88fceb80e03314db": {
    "verdict": "ok"
   },
+  "891c98d068b6acca": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "893034aa75fe8352": {
    "verdict": "ok"
   },
@@ -17018,6 +17900,10 @@
   },
   "8aae8cc25da6bb0f": {
    "verdict": "ok"
+  },
+  "8ab6b9c5caa1aad9": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit"
   },
   "8ac82d86794ababb": {
    "verdict": "ok",
@@ -17409,6 +18295,14 @@
   "8e184063f0d4dc19": {
    "verdict": "ok"
   },
+  "8e19620df81742b5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "8e20178644ce7d77": {
    "verdict": "ok",
    "note": "same value as caf7458156c38afa: cos(pi/12)=(sqrt2+sqrt6)/4, confirmed numerically."
@@ -17586,6 +18480,14 @@
   "8fb2fce2d30ad17f": {
    "verdict": "ok"
   },
+  "8fb509afc5166e74": {
+   "verdict": "ok",
+   "note": "Review Question fs-id2187777; source solution keys D, the full five-level option, matching options transcribed verbatim in source order.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "8fb9c69b762de370": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 660): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -17602,6 +18504,14 @@
   },
   "8fdc9f35c0df6145": {
    "verdict": "ok"
+  },
+  "8fe67e767a5822b6": {
+   "verdict": "ok",
+   "note": "Visual Connection part 2 (fs-idp7053584): chloramphenicol blocks peptidyl transfer, which forms the peptide bond that grows the chain; matches source solution 'Chloramphenicol: c' = growth of the protein chain.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "8feb854e8c53bd50": {
    "verdict": "ok"
@@ -17712,6 +18622,14 @@
   "90d18ab799fc2d6a": {
    "verdict": "ok"
   },
+  "90d34ed9abcaca06": {
+   "verdict": "ok",
+   "note": "locally written strictly from the section's own comparison table (tab-ch15_03_01), no new claim, disclosed in footer per the last-resort Practice rule; keyed position 2nd, not first.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "90d7365bbf5d9ea7": {
    "verdict": "ok",
    "note": "a1=3, a_n=-3*a_(n-1) for n=2..5, computed by loop: 3,-9,27,-81,243 (source Algebraic #27, printed solution matches)."
@@ -17762,6 +18680,10 @@
   },
   "912e1c6994e96e15": {
    "verdict": "ok"
+  },
+  "914428aa3523f6dd": {
+   "verdict": "ok",
+   "note": "CT fs-id1385377: model answer matches source solution verbatim, reformatted into sentences with rubric checkpoints decomposing it."
   },
   "91466960e9d2bd83": {
    "verdict": "ok"
@@ -17926,6 +18848,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "92ca848a2d6f6d71": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit"
   },
   "92e43474fc296ae2": {
    "verdict": "ok"
@@ -18095,6 +19021,10 @@
   "943d313dc6c86ca8": {
    "verdict": "ok"
   },
+  "9442e0981f83e77b": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1286460, source solution kept verbatim as the model answer, decomposed into rubric checkpoints of the solution's own words."
+  },
   "9462753ad2ef860f": {
    "verdict": "ok"
   },
@@ -18104,8 +19034,20 @@
   "9466fae262ac9d18": {
    "verdict": "ok"
   },
+  "9467ee7a46abca9c": {
+   "verdict": "ok",
+   "note": "parent re-record after adding the model answer's own causal clause ('only the most fit males should be able to survive with it') to the rubric; model answer is the verbatim source solution for the handicap-principle CT question"
+  },
   "946ba09bfcd07b43": {
    "verdict": "ok"
+  },
+  "946ba6937ea7892c": {
+   "verdict": "ok",
+   "note": "Glossary fs-id2642866 'telomere' = 'DNA at the end of linear chromosomes'; prompt is the meaning, answer the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "946f4acc4b0cf6af": {
    "verdict": "ok"
@@ -18131,6 +19073,14 @@
   "94a727cc52f45297": {
    "verdict": "ok",
    "note": "Practice ambiguous part 2 (same triangle, gamma obtuse): gamma2=180-54.347=125.653 -> 125.7 deg (check beta2=180-35-125.653=19.347>0, valid). Matches CNXML 'gamma-prime approx 125.7'."
+  },
+  "94ab61c2af600e7e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "94ad2c2d043dacf4": {
    "verdict": "ok"
@@ -18200,6 +19150,14 @@
   "954c8885aaab4905": {
    "verdict": "ok"
   },
+  "954df23bb6d3e8b0": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9552c43ff6056da9": {
    "verdict": "ok"
   },
@@ -18246,6 +19204,14 @@
   },
   "95d478beec93120d": {
    "verdict": "ok"
+  },
+  "95ed3b8d108b17d1": {
+   "verdict": "ok",
+   "note": "Review Question eip-788, source key B matches section text (\"Enhancers and silencers affect the efficiency of transcription but are not necessary for transcription to proceed\").",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "96032fe8581e2175": {
    "verdict": "ok",
@@ -18294,6 +19260,14 @@
   "964c10b152c08243": {
    "verdict": "ok"
   },
+  "964c6bcbc9f0e909": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9655edb796790794": {
    "verdict": "ok"
   },
@@ -18314,6 +19288,14 @@
     "result": "agrees"
    }
   },
+  "967500786f5956f4": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'transition substitution' (fs-id2137494): prompt restates the glossary meaning; answer matches the glossary term exactly.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "967cd97cb9fff583": {
    "verdict": "ok"
   },
@@ -18322,6 +19304,10 @@
   },
   "967f18c963dc0bc1": {
    "verdict": "ok"
+  },
+  "9687c4db3ca799c8": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question 2 (exercise fs-idp49947168): model answer is the CNXML solution verbatim."
   },
   "968cc9316565fc57": {
    "verdict": "ok"
@@ -18350,6 +19336,14 @@
   "96aa72b2c1dbd1e4": {
    "verdict": "ok",
    "note": "-3x+y=-1 gives y=3x-1 and 2x+y=4 gives y=-2x+4, meeting at (1,2), which satisfies both printed equations; option 1 draws that pair and marks (1,2). Option 0 swaps the intercepts between the two slopes so the crossing moves to (-1,1); option 2 is a parallel pair with no solution. Rendered and inspected."
+  },
+  "96b44285e64c4469": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "96b7620341392737": {
    "verdict": "ok"
@@ -18512,6 +19506,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 506): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "97ec9706ad898ea8": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1313546: source solution keys option B; section text defines consensus sequences as 'similar across all promoters and across various bacterial species'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "97ecbc061cf42f56": {
    "verdict": "ok"
   },
@@ -18521,9 +19523,26 @@
   "97f09523b0f0510c": {
    "verdict": "ok"
   },
+  "97f0b60030e307f3": {
+   "verdict": "ok",
+   "note": "Locally written recall item from the section's own body sentence naming CpG islands (fs-id2261473); no glossary or Review/CT item tests DNA methylation with an auto-graded component, so this fills the objective group per the last-resort rule; disclosed in footer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "97f78a4940a44bba": {
    "verdict": "ok",
    "note": "Same ellipse: center (h,k)=(3,-1) from standard form derived above; matches CNXML fs-id1388898."
+  },
+  "97f8a2ae4d961c30": {
+   "verdict": "ok",
+   "note": "Glossary recall (fs-id1582580 gene expression); prompt is the glossary meaning, answer is the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "settled FOR the key against m66503: the module's own glossary defines gene expression as 'processes that control the turning on or turning off of a gene' — the item is authored from that definition; my general-knowledge 'gene regulation' loses to the module's own wording"
+   }
   },
   "97fc3795e2cca1b8": {
    "verdict": "ok",
@@ -18640,6 +19659,10 @@
   "98e6468a18f0e1fd": {
    "verdict": "ok"
   },
+  "98ff875539956a7c": {
+   "verdict": "ok",
+   "note": "Critical Thinking eip-49: independently translated both the original mRNA (AUG-GUA-AUA-ACA-CAU-GAG-GCC-UGA -> Met-Val-Ile-Thr-His-Glu-Ala, stop) and the mutated mRNA (AUG-GUU-AAU-AAC-ACA-UGA -> Met-Val-Asn-Asn-Thr, stop), both matching the source solution exactly."
+  },
   "9907b6dc78c599c8": {
    "verdict": "ok"
   },
@@ -18726,6 +19749,14 @@
   "99ef6b6c893c892d": {
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Test the equation $r=3\\sin(2\\theta)$ for symmetry. Which sym)"
+  },
+  "99f0f2b6a575b827": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "99fc13fc79bf1c0d": {
    "verdict": "ok"
@@ -18919,6 +19950,14 @@
   "9b6b92aeb0eb7c71": {
    "verdict": "ok"
   },
+  "9b7d4d74daa4bf7a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9b85a8bde7eaa24a": {
    "verdict": "ok"
   },
@@ -18950,6 +19989,14 @@
   },
   "9bb4cb237e447e3f": {
    "verdict": "ok"
+  },
+  "9bc21ad9ebc81459": {
+   "verdict": "ok",
+   "note": "Glossary recall, term 'activator' (m66504 fs-idm199704880), prompt built from the section's own body statement ('activators bind to the promoter site... to increase transcription') rather than the glossary's own meaning text, which this page's Key Terms corrects from 'operators' to 'promoters' as a disclosed erratum (see footer and source ledger).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "9bc3bc2b729b0b9a": {
    "verdict": "ok"
@@ -19063,6 +20110,10 @@
   "9cc802ddb8c238dd": {
    "verdict": "ok",
    "note": "c+a=1650, 4c+12a=14200. Substituting a=1650-c: 4c+12(1650-c)=14200 -> -8c=14200-19800=-5600 -> c=700. Node-verified c=700,a=950 satisfy both equations."
+  },
+  "9cd514221571eef8": {
+   "verdict": "ok",
+   "note": "Selfcheck fs-id2025518 (excess activator); model answer is the source solution verbatim; rubric clauses copy its own wording."
   },
   "9cdc9e3e75e0cf20": {
    "verdict": "ok",
@@ -19438,6 +20489,14 @@
    "verdict": "ok",
    "note": "Try It 2 (ti_09_02_02), CNXML system {x+y+z=2;y-3z=1;2x+y+5z=0}. Independently eliminated x from eqs (1) and (3) to get y-3z=4, which contradicts printed eq (2) y-3z=1 (4≠1) -- confirmed inconsistent via node. Matches CNXML 'No solution.'"
   },
+  "9fe90f9a97b351d4": {
+   "verdict": "ok",
+   "note": "Glossary recall: term 'peptidyl transferase', meaning transcribed from the module's own glossary definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9fec3fdf6de48729": {
    "verdict": "ok",
    "note": "Least-squares regression on the table (x=8,15,26,31,56; y=23,41,53,72,103) gives slope 1.6397... which rounds to 1.640, matching the declared answer."
@@ -19471,8 +20530,20 @@
   "a029df1d6d256335": {
    "verdict": "ok"
   },
+  "a02b975a1c5cba04": {
+   "verdict": "ok",
+   "note": "Critical Thinking Q fs-idm75358256: model answer transcribes the source solution verbatim (species fuse back together if the color barrier fails)."
+  },
   "a054db3739bd044b": {
    "verdict": "ok"
+  },
+  "a056277925baba43": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a0567b52cfeb62da": {
    "verdict": "ok"
@@ -19512,6 +20583,10 @@
   "a0992683c56189b3": {
    "verdict": "ok"
   },
+  "a09c3f50c7826bf1": {
+   "verdict": "ok",
+   "note": "Body Visual Connection selfcheck matches CNXML exercise fs-id2339974's solution verbatim ('Protein synthesis would be inhibited.')."
+  },
   "a09eb0d281fc0a4e": {
    "verdict": "ok"
   },
@@ -19540,6 +20615,10 @@
   },
   "a0d6e8f1a18082a4": {
    "verdict": "ok"
+  },
+  "a0f1c5f9e1497c51": {
+   "verdict": "ok",
+   "note": "Critical Thinking eip-843, model answer is the source solution verbatim."
   },
   "a0f71011b677a910": {
    "verdict": "ok"
@@ -19581,6 +20660,14 @@
   "a16f09789ab078fc": {
    "verdict": "ok"
   },
+  "a178446214fc2c00": {
+   "verdict": "ok",
+   "note": "Glossary textin from definition fs-id1631200 (transcription factor binding site); prompt paraphrases the meaning, answer is the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a18c47cec9a7a567": {
    "verdict": "ok"
   },
@@ -19592,6 +20679,14 @@
   },
   "a19400b5bd4d49d1": {
    "verdict": "ok"
+  },
+  "a19a00136cb9664b": {
+   "verdict": "ok",
+   "note": "Glossary recall from definition fs-id2962812 (transformation); meaning as prompt, term as answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a1bb2d87f8885db8": {
    "verdict": "ok"
@@ -19606,6 +20701,14 @@
   },
   "a1d12d4ba0afb000": {
    "verdict": "ok"
+  },
+  "a1def4e407399952": {
+   "verdict": "ok",
+   "note": "Select-the-term multiplechoice from Section Summary sentence 4 ('In the conservative model of replication, the parental DNA is conserved, and the daughter DNA is newly synthesized'), paraphrased so the term itself is not named in the stem; distractors semi-conservative/dispersive are the module's own other two model names (no fourth same-category term exists in the module, so 2 distractors rather than 3).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a1e1a948c2e185e9": {
    "verdict": "ok"
@@ -19707,6 +20810,14 @@
   },
   "a2981a9202d77cd8": {
    "verdict": "ok"
+  },
+  "a29f46a07e4d21a2": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a2b1ab882517a18f": {
    "verdict": "ok"
@@ -19834,6 +20945,10 @@
   },
   "a3b970e9872742b7": {
    "verdict": "ok"
+  },
+  "a3bbb77033655b3d": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1403064, solution fs-id1986827, transcribed verbatim. Matches the section: DNA polymerase 'requires a free 3'-OH group' that only a primer can supply."
   },
   "a3c6441c5611799d": {
    "verdict": "ok"
@@ -20254,6 +21369,10 @@
   "a6e8adf91e1a14e1": {
    "verdict": "ok"
   },
+  "a6eb87b8b99fcf5d": {
+   "verdict": "ok",
+   "note": "Selfcheck model answer transcribes module m66497 exercise fs-id889157/solution fs-id1280839 verbatim."
+  },
   "a6f6a0b8e4f46f6c": {
    "verdict": "ok",
    "note": "ln x=4 => x=e^4. Independently solved by isolating ln x."
@@ -20303,6 +21422,14 @@
   "a723bde959178e18": {
    "verdict": "ok"
   },
+  "a72409327e3b509d": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a72489fcf23b07e1": {
    "verdict": "ok"
   },
@@ -20326,6 +21453,14 @@
   },
   "a745271f078d8755": {
    "verdict": "ok"
+  },
+  "a7452cc90644e4c3": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a753c20aece48bec": {
    "verdict": "ok"
@@ -20458,6 +21593,14 @@
     "result": "agrees"
    }
   },
+  "a846f3b06e092ae1": {
+   "verdict": "ok",
+   "note": "Glossary recall for definition fs-id1956507 'DNA methylation — epigenetic modification that leads to gene silencing; a process involving adding a methyl group to the DNA molecule'; prompt is the meaning, answer is the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a84c7cd24a4ab650": {
    "verdict": "ok",
    "note": "Dart max height time: independently computed vertex of -16t^2+(64 sin52deg)t at t=-b/2a = 64*sin(52deg)/32 = 1.576... rounds to 1.6, matches source printed answer '1.6 seconds' exactly."
@@ -20468,6 +21611,14 @@
   "a851ca1b1537bc69": {
    "verdict": "ok",
    "note": "y=-4x^2 divided by -4: x^2=-(1/4)y; matches source exercise fs-id2195621's key x^2=-1/4y. Self-checked correct under the token; original span reports form."
+  },
+  "a85a27184e8bf079": {
+   "verdict": "ok",
+   "note": "Review Question fs-id2062496, source key B (TATA box) matches section text (both prokaryotes and eukaryotes have a TATA-box-like element).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a85cc807caafe9c3": {
    "verdict": "ok"
@@ -20531,12 +21682,25 @@
   "a8e00609c7b6d6c0": {
    "verdict": "ok"
   },
+  "a8e3cb2541960c41": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise eip-534; selfcheck model answer matches the CNXML solution verbatim (apostrophe/prime normalized)."
+  },
   "a8e3f31e218cdfde": {
    "verdict": "ok",
    "note": "Categorical MC built from CNXML/PDF printed solution to Verbal exercise fs-id1394594 (\"The inverse does not exist.\"); distractors are plausible-but-false claims about what a 0 determinant implies for the inverse."
   },
   "a8f8d46c6f7dc05a": {
    "verdict": "ok"
+  },
+  "a8fb11a4e8534018": {
+   "verdict": "ok",
+   "note": "Review Question eip-794, solution eip-637: keyed option B, DNA pol II. The section states DNA pol I 'is an important accessory enzyme in DNA replication, and along with DNA pol II, is primarily required for repair' — DNA pol II is the option among the four (DNA ligase, DNA pol II, primase, DNA pol I) most specifically tied to repair fidelity by that sentence, so many replication errors point to it; not contradicted by the section's own text. Reviewed, not an erratum.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "settled FOR the key against m66390: DNA pol I is 'an important accessory enzyme in DNA replication' as well as a repair enzyme, so a pol I mutant would not replicate otherwise normally; pol II is the repair-only option — erratum-free, key stands"
+   }
   },
   "a8fb1b2db98fdaf2": {
    "verdict": "ok"
@@ -20592,6 +21756,14 @@
   },
   "a93fb497e2acb811": {
    "verdict": "ok"
+  },
+  "a944932d9e26a49d": {
+   "verdict": "ok",
+   "note": "Glossary recall from fs-id3089319/fs-id888854, the section's only glossary term; meaning transcribed verbatim as prompt, term as answer; checked answer does not appear as a whole-word run in the question.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a94693fd04674bed": {
    "verdict": "ok"
@@ -20675,6 +21847,10 @@
   "aa00654cfa2c9364": {
    "verdict": "ok"
   },
+  "aa0bee9d49aacfb8": {
+   "verdict": "ok",
+   "note": "parent re-record after adding the model answer's fifth clause ('individuals would, as a whole, look essentially the same') to the rubric; model answer is the verbatim source solution for the Hardy-Weinberg-principle CT question"
+  },
   "aa0da1baf17f2d34": {
    "verdict": "ok"
   },
@@ -20688,6 +21864,14 @@
   "aa173196d44b3738": {
    "verdict": "ok",
    "note": "lim_{x->1}(10-10x^2)/(x^2-3x+2) = -10(1+x)/(x-2) at x=1 = 20 exactly; node-sampled and algebraically simplified; matches the printed solution for fs-id1165137770148 (source exercise 35, printed 20.00)."
+  },
+  "aa1b6191c583e164": {
+   "verdict": "ok",
+   "note": "Review Question eip-845 (table eip-651, Species A/B/C -10 and -35 sequences): source solution keys option D (A > C > B). Independently re-checked by counting mismatches against the -10 consensus TATAAT and -35 consensus TTGACA: Species A is closest (exact -35 match), Species C is next (one mismatch in each region), Species B is furthest (one -10 mismatch, two -35 mismatches) -- consistent with A > C > B.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "aa26feedb2549d0b": {
    "verdict": "ok",
@@ -20713,6 +21897,10 @@
   "aa33682980609491": {
    "verdict": "ok"
   },
+  "aa3f12599a02d6bb": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise eip-546/eip-563 (m66392): re-derived independently — aligning ATGGGGATATGGCAT (patient) against ATGGGGATATGAGCAT (normal) shows the patient is missing the 'A' at position 12 of the normal sequence, a single-base deletion causing a frameshift from that point on, matching the source solution."
+  },
   "aa473d162e984255": {
    "verdict": "ok"
   },
@@ -20722,6 +21910,14 @@
   "aa57aaf3c6cc70e7": {
    "verdict": "ok",
    "note": "Review Question fs-id1595608; keyed option C = 'accurate and complete DNA replication', matches source solution.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "aa59aaeb2a116478": {
+   "verdict": "ok",
+   "note": "Glossary recall, m66497 definition fs-id1803173 (codon).",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -20770,6 +21966,14 @@
   },
   "aabb38a12ef24394": {
    "verdict": "ok"
+  },
+  "aac2325b3963a99c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "aac4326bf61745c1": {
    "verdict": "ok"
@@ -21112,6 +22316,10 @@
    "verdict": "ok",
    "note": "2 sin x+1=0 -> sin x=-1/2 -> x=7pi/6,11pi/6 on [0,2pi); standard unit-circle solve, independently re-derived."
   },
+  "ace775e1354b1cfa": {
+   "verdict": "ok",
+   "note": "parent re-record after correcting the source solution's 2pq rounding slip (.48 → .49, erratum 161); model answer otherwise the verbatim source solution, checkpoints mirror its clauses, arithmetic re-derived exactly (p=20/48, q=28/48, 2pq=.48611 → .49)"
+  },
   "ace8787bf760b3cb": {
    "verdict": "ok"
   },
@@ -21140,6 +22348,14 @@
   "ad222de4c1a1e846": {
    "verdict": "ok",
    "note": "Matches the printed solution for fs-id1165135181688 (does not exist, source exercise 9): the figure's left branch approaches 2 at x=1 while the right branch (sqrt curve) starts at an open circle at 0, so the two-sided limit does not exist."
+  },
+  "ad2b17e84e667f4d": {
+   "verdict": "ok",
+   "note": "Glossary recall: definition id fs-id1340171 (rho-dependent termination); prompt paraphrases the meaning without containing the answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ad332becea12c309": {
    "verdict": "ok"
@@ -21218,6 +22434,10 @@
   "addc71b455e17d69": {
    "verdict": "ok"
   },
+  "addff2d253ff3e7f": {
+   "verdict": "ok",
+   "note": "Visual Connection note fs-id1461234/exercise fs-idp79573648: matches CNXML solution verbatim (No. Prokaryotes use different promoters than eukaryotes)."
+  },
   "ade1e0036466703b": {
    "verdict": "ok"
   },
@@ -21268,6 +22488,14 @@
   },
   "ae37ba735ed0c2fe": {
    "verdict": "ok"
+  },
+  "ae41be414d710487": {
+   "verdict": "ok",
+   "note": "Summary cloze from m66497 section.summary sentence 3 ('Genes are used to make mRNA by the process of transcription; mRNA is used to synthesize proteins by the process of translation.'); blanks the one content phrase 'transcription', which does not appear elsewhere in the surviving prompt.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ae436d210bab1a86": {
    "verdict": "ok"
@@ -21390,11 +22618,24 @@
    "verdict": "ok",
    "note": "m66459 CT exercise fs-id1863345, solution fs-id1871574: model answer matches source verbatim (\"The transition state is always higher in energy than the reactants and the products...regardless of whether...endergonic or exergonic.\", ∆ normalized to Δ). Both CHECKS clauses restate it, no added claim."
   },
+  "af7b1e288297aac3": {
+   "verdict": "ok",
+   "note": "Body VC2 (fig-ch14_02_06, note id fs-id1973249): matches exercise fs-idp2462496, solution is prose so rendered as selfcheck per the source solution verbatim, decomposed into rubric checkpoints."
+  },
   "af7ff2d5224971dc": {
    "verdict": "ok"
   },
   "af890fca49bc11a8": {
    "verdict": "ok"
+  },
+  "af91c876686a6a02": {
+   "verdict": "ok",
+   "note": "Glossary recall: term 'polysome', meaning transcribed from the module's own glossary definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "the module's body says 'called a polysome'; its figure label prints 'Polyribosome'; both covered, grader agreed"
+   }
   },
   "af95d83bbcc984b5": {
    "verdict": "ok"
@@ -21453,6 +22694,14 @@
   "b01235feebfde159": {
    "verdict": "ok",
    "note": "Practice obj1-1: point (5,0) gives b^2=25; focus (0,-2) gives c^2=4; c^2=a^2-b^2 => a^2=29; x^2/25+y^2/29=1. Node: 25+4=29. Independently derived from CNXML fs-id1374803/fs-id1304004's printed data (source solution: x^2/25+y^2/29=1)."
+  },
+  "b02ce42ba02d9d51": {
+   "verdict": "ok",
+   "note": "Review Question fs-id2709296, source options/order kept, key D = 'uracil' matches the section's own text (DNA has thymine, not uracil; only RNA has uracil).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "b031cc8800b8fe7c": {
    "verdict": "ok"
@@ -21526,6 +22775,14 @@
   },
   "b0bb0fc5531f7bf8": {
    "verdict": "ok"
+  },
+  "b0bf7377386c6b2a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "b0ca612f024ccad3": {
    "verdict": "ok"
@@ -21710,6 +22967,14 @@
    "verdict": "ok",
    "note": "Try It 4: csc(pi/6) and sec(pi/3) are cofunctions of complementary angles pi/6+pi/3=pi/2, so sec(pi/3)=csc(pi/6)=2; matches CNXML solution."
   },
+  "b212210d5f4fa16e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "b23ce77f3d198368": {
    "verdict": "ok"
   },
@@ -21788,6 +23053,10 @@
   "b319c918a0e941cd": {
    "verdict": "ok"
   },
+  "b31fc7d75cb6c82c": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question fs-id1443560; model answer is the source solution verbatim, rubric checkpoints restate its own clauses."
+  },
   "b32175abf3a73b6a": {
    "verdict": "ok"
   },
@@ -21825,6 +23094,10 @@
   "b346b1098464c1aa": {
    "verdict": "ok",
    "note": "(3+4i)/(2-i)*(2+i)/(2+i)=(6+3i+8i+4i^2)/(4+1)=(2+11i)/5=2/5+11/5 i; recomputed independently with node, matches CNXML end-of-section answer key; also cross-checked that the single-fraction form (2+11i)/5 grades equal to the authored 2/5+11/5 i via check-answer.mjs."
+  },
+  "b348a6f21e0098ba": {
+   "verdict": "ok",
+   "note": "Selfcheck eip-441 (downstream repressor experiment); model answer is the source solution verbatim; rubric clauses copy its own wording."
   },
   "b34e46403d7c8a85": {
    "verdict": "ok"
@@ -22150,6 +23423,14 @@
   "b5ef5280a457bfd0": {
    "verdict": "ok"
   },
+  "b5f2dc19f5895319": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "b5f54d9ab58b4831": {
    "verdict": "ok"
   },
@@ -22460,6 +23741,14 @@
    "verdict": "ok",
    "note": "g(x)=0.875^x has 0<b<1, a valid exponential base; independently confirmed."
   },
+  "b89cec9ecf2acb70": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "b8a41835554d1389": {
    "verdict": "ok",
    "note": "m66434 Critical Thinking Q2 <solution id=fs-idm199022944>: 'Some insects can walk on water... because of the surface tension of water. Surface tension results from cohesion, or the attraction between water molecules at the surface of the body of water...' Page model answer matches verbatim; both CHECKS clauses restate this with no added claim."
@@ -22477,6 +23766,10 @@
   },
   "b8b51dfa202610e8": {
    "verdict": "ok"
+  },
+  "b8b6689ff9b7fea5": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question fs-id2048357, solution fs-id2935760 transcribed verbatim as the self-check model answer; rubric checkpoints are the model answer's own clauses (4), each an exact substring."
   },
   "b8bdb926eafb30ac": {
    "verdict": "ok"
@@ -22561,6 +23854,14 @@
   "b94392dd7124f6e8": {
    "verdict": "ok"
   },
+  "b944d8d6febe5a95": {
+   "verdict": "ok",
+   "note": "Glossary recall, m66497 definition fs-id2123902 (central dogma): meaning paraphrased as the prompt, term as the answer; prompt does not contain the answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "b95556e8f3bbde10": {
    "verdict": "ok",
    "note": "Range of y=arccos x is [0,π] by definition (arccos's range equals cos's restricted domain); matches source."
@@ -22586,6 +23887,15 @@
   },
   "b97b4b3f520aa686": {
    "verdict": "ok"
+  },
+  "b987314951c51a3b": {
+   "verdict": "ok",
+   "note": "Review Question eip-338/eip-79 (m66392): source solution keys option B, 'slightly more mutations than average' — consistent with the section's text that most errors are corrected by proofreading and losing only the exonuclease function leaves other repair mechanisms (mismatch repair, nucleotide excision repair) intact.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "settled FOR the key against m66392: proofreading is only the first of the module's layered repair mechanisms — mismatch repair and nucleotide excision repair still operate downstream — so eliminating the exonuclease raises the adult load only slightly; key B stands"
+   }
   },
   "b9913461ac13bac7": {
    "verdict": "ok",
@@ -22705,6 +24015,10 @@
   },
   "ba9041288f961ba9": {
    "verdict": "ok"
+  },
+  "ba93876a8a1d45c9": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1286460, solution fs-id2936597, transcribed verbatim as the model answer. Matches the section: two forks form at the origin and extend bidirectionally; Okazaki fragments make the lagging strand's synthesis discontinuous."
   },
   "ba99b1119de94952": {
    "verdict": "ok"
@@ -22866,6 +24180,14 @@
   "bbf00ab4a3933515": {
    "verdict": "ok"
   },
+  "bbf09035ee778076": {
+   "verdict": "ok",
+   "note": "Review Question fs-id2904762: matches source solution 'C' = nucleolus.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "bbf8c723d58d14e0": {
    "verdict": "ok"
   },
@@ -22881,6 +24203,10 @@
   },
   "bc21b2e7d0f3ffc0": {
    "verdict": "ok"
+  },
+  "bc2437c9a0396c59": {
+   "verdict": "ok",
+   "note": "Selfcheck fs-id1942060 (promoter mutation); model answer is the source solution verbatim, already complete sentences; rubric clauses copy its own wording."
   },
   "bc34b6cd174d84e0": {
    "verdict": "ok"
@@ -23005,6 +24331,14 @@
   "bd06bc934f90abb3": {
    "verdict": "ok"
   },
+  "bd2694047fda8661": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "bd2c1a9f1080d95e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -23031,6 +24365,10 @@
   "bd491c03eb78c749": {
    "verdict": "ok",
    "note": "0.4-2+10-50+...: a1=0.4,r=-5,n=7; Sn=5208.4 (node); matches CNXML fs-id1165137784642 solution."
+  },
+  "bd4f6052f555be59": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question 1 (m66521 exercise fs-idm23889104); model answer transcribes the CNXML <solution> verbatim. Printed PDF p.489 Q24 confirms wording."
   },
   "bd4f6fc45ec7169d": {
    "verdict": "ok"
@@ -23111,6 +24449,22 @@
   "bdcdcddebb223e33": {
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L366 of 04-series-and-their-notations.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
+  },
+  "bdd52f33b6bd1be2": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1428536; keyed A 'methylation' matches solution fs-id1281610 and the section's own sentence that methylation adds stability to pre-rRNAs and pre-tRNAs.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "bde545d5575753c5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "bde8a19c78eca91a": {
    "verdict": "ok"
@@ -23343,6 +24697,15 @@
     "result": "agrees"
    }
   },
+  "bf9665df1b59463b": {
+   "verdict": "ok",
+   "note": "Glossary recall: term 'start codon', meaning transcribed from the module's own glossary definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "the module uses 'initiation codon' and 'start codon' for AUG; accept list covers the variants and the grader agreed"
+   }
+  },
   "bf9f60106518a5e7": {
    "verdict": "ok",
    "note": "Continuation of the same system as 9cc802ddb8c238dd: a=1650-700=950. Node-verified."
@@ -23429,6 +24792,14 @@
   "c0256c2b9ef492c9": {
    "verdict": "ok"
   },
+  "c033b9847c93b825": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'transversion substitution' (fs-id1450506): prompt restates the glossary meaning; answer matches the glossary term exactly.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c034fcaccb25616c": {
    "verdict": "ok"
   },
@@ -23477,6 +24848,10 @@
   },
   "c087f8b18976ebae": {
    "verdict": "ok"
+  },
+  "c089c3129538479b": {
+   "verdict": "ok",
+   "note": "Critical Thinking eip-784, source solution (advantage/disadvantage) kept verbatim as the model answer, decomposed into rubric checkpoints of the solution's own words."
   },
   "c09db71c3fe6cdef": {
    "verdict": "ok",
@@ -23710,6 +25085,14 @@
   "c24ee002c71ff66c": {
    "verdict": "ok"
   },
+  "c25ae026d6cbec24": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c26220883bddf78f": {
    "verdict": "ok"
   },
@@ -23768,6 +25151,14 @@
   },
   "c2e1ab92bbfa18b0": {
    "verdict": "ok"
+  },
+  "c2e44b9cfe30ed1d": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "c2e541aa7aad9824": {
    "verdict": "ok"
@@ -23907,6 +25298,14 @@
   },
   "c3d5e371ef4e37dd": {
    "verdict": "ok"
+  },
+  "c3e4b542529b8685": {
+   "verdict": "ok",
+   "note": "Review Question (m66504 fs-idm98160192/fs-idm101679744), keyed D 'b and c are both true', matches source solution and section text.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "c3e625f67074f745": {
    "verdict": "ok"
@@ -24066,6 +25465,14 @@
    "verdict": "ok",
    "note": "asymptotes of A sec(Bx) at pi/(2|B|)*k for odd k; B=3 gives smallest positive pi/6; matches source's own printed solution (period 2pi/3, asymptotes x=pi/6 *k odd)."
   },
+  "c527445ac6b9c68b": {
+   "verdict": "ok",
+   "note": "Review Question eip-953; independently recomputed 100+75+120=295 bp (excluding the two introns and the cap/tail), matching keyed option B '295bp' and CNXML solution eip-994.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c527a923096bf7b7": {
    "verdict": "ok",
    "note": "textin 'free energy' — prompt paraphrases the glossary definition ('Gibbs free energy is the usable energy...available to do work'); accept 'Gibbs free energy' covers the section's full name for the same quantity.",
@@ -24091,6 +25498,10 @@
   "c544591b4a6816dc": {
    "verdict": "ok",
    "note": "parent: 2x^2=9 -> x=+-3sqrt2/2, y=-x -> keyed pairs"
+  },
+  "c5464a7926a8c48f": {
+   "verdict": "ok",
+   "note": "CNXML eip-281 (Critical Thinking Q28); preamble kept in full. Model answer is the source solution verbatim (isotopes as Unicode superscript). Independently re-derived: conservative replication keeps the original 15N/15N duplex intact each round while only synthesizing new 14N/14N duplexes; after 2 rounds from a single 15N/15N molecule you get 1 (15N/15N) + 3 (14N/14N) = 4 molecules, i.e. 25%/75%, matching the source solution's percentages exactly. Checkpoints restate its five clauses."
   },
   "c54b990678785e14": {
    "verdict": "ok"
@@ -24231,6 +25642,14 @@
   "c64b05a58f48d166": {
    "verdict": "ok"
   },
+  "c66c9734160daaf0": {
+   "verdict": "ok",
+   "note": "CNXML fs-id2300016 (Review Q10, printed key c). 5′-AATGCTAC-3′ complements base-by-base to T-T-A-C-G-A-T-G; written antiparallel with 3′ aligned to the original's 5′ end gives 3′-TTACGATG-5′, matching source key C. Primes rendered as Unicode ′.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c66ddd0fe47f664b": {
    "verdict": "ok"
   },
@@ -24239,6 +25658,10 @@
   },
   "c67172d7a7b0f844": {
    "verdict": "ok"
+  },
+  "c67ca85babb57e51": {
+   "verdict": "ok",
+   "note": "Critical Thinking eip-409/eip-79 (HDAC9): question and solution transcribed verbatim as model answer; checkpoints are literal substrings of the model answer."
   },
   "c67efea0de6d4a48": {
    "verdict": "ok"
@@ -24263,6 +25686,10 @@
     "result": "agrees"
    }
   },
+  "c69e52484b6500db": {
+   "verdict": "ok",
+   "note": "CNXML fs-id1958775 (Critical Thinking Q27); model answer is the source solution verbatim, reformatted with the isotope as Unicode superscript (¹⁵N) and E. coli italicized. Checkpoints restate its two clauses."
+  },
   "c6a3be497cca1a2b": {
    "verdict": "ok"
   },
@@ -24281,6 +25708,15 @@
   },
   "c6bca6fb53017fd4": {
    "verdict": "ok"
+  },
+  "c6c3dbcd34889ecc": {
+   "verdict": "ok",
+   "note": "Summary-derived cloze from the Section Summary's first sentence (\"...contain the same DNA, not all cells...express the same proteins\"); blank is the sentence's final content phrase.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "the summary sentence blanks 'proteins' ('not all cells... express the same proteins'); 'genes' is the looser reading, key stands per the summary's own word"
+   }
   },
   "c6c6784031ec03bb": {
    "verdict": "ok"
@@ -24302,6 +25738,14 @@
   "c6f53471266e000f": {
    "verdict": "ok",
    "note": "sec(120°)=1/cos(120°)=1/(-1/2)=-2; node check 1/Math.cos(120°·π/180)=-2.000000000000001"
+  },
+  "c6f9412a904b56fb": {
+   "verdict": "ok",
+   "note": "Glossary textin from definition fs-id1968258 (enhancer); prompt paraphrases the meaning, answer is the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "c705c37bac1c56ef": {
    "verdict": "ok",
@@ -24369,6 +25813,15 @@
   "c75db1c268a1e583": {
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L305 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
+  },
+  "c75f34846d5110f3": {
+   "verdict": "ok",
+   "note": "Glossary textin for initiation complex (fs-id2746232); prompt is the glossary meaning, accept includes the body's own 'translation initiation complex' phrasing.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "glossary term is 'initiation complex'; the fuller phrase is descriptive; grader agreed"
+   }
   },
   "c768020a42864c90": {
    "verdict": "ok"
@@ -24508,6 +25961,14 @@
   "c8822349bfa943ac": {
    "verdict": "ok"
   },
+  "c88373ef5ab12aff": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c889e653c38929d7": {
    "verdict": "ok"
   },
@@ -24632,6 +26093,15 @@
   "c9843966296f3410": {
    "verdict": "ok"
   },
+  "c9897b4ec356540b": {
+   "verdict": "ok",
+   "note": "Summary-derived cloze from section.summary fs-id3321766 sentence 2 ('Changes at every level of eukaryotic gene expression can be detected in some form of cancer at some point in time.'); blanks the single content phrase 'eukaryotic gene expression', answer matches verbatim.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "the summary phrase is 'eukaryotic gene expression'; the bare 'gene expression' is its tail; grader agreed with the full phrase"
+   }
+  },
   "c989e75ee68f6f5b": {
    "verdict": "ok"
   },
@@ -24681,6 +26151,10 @@
   },
   "ca16f9b5ae1af8c7": {
    "verdict": "ok"
+  },
+  "ca181fd6c5267a34": {
+   "verdict": "ok",
+   "note": "m66518 Critical Thinking fs-idm56506992; model answer is the source solution, lightly punctuated into one clean sentence, no new claim."
   },
   "ca1b51b27c25b5cb": {
    "verdict": "ok",
@@ -24833,6 +26307,14 @@
   "cb4dd0ad2cc730e0": {
    "verdict": "ok"
   },
+  "cb56bcd42e925d8b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "cb5b5124e9bbe7dd": {
    "verdict": "ok",
    "note": "m66430 <solution id=fs-idp140338799638448>: 'Elements in group 1 need to lose one electron ... groups 14 and 17 need to gain four and one electrons, respectively.' Page model answer matches verbatim; both CHECKS clauses restate this with no added claim."
@@ -24863,6 +26345,18 @@
   "cb729aff1f572ede": {
    "verdict": "ok",
    "note": "Boulder: a1=6,d=8,n=10; a10=78,S10=420 (node); matches CNXML fs-id1165135181425 solution (420 feet)."
+  },
+  "cb76a1732e7463e4": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2926746, source solution kept verbatim as the model answer, decomposed into rubric checkpoints of the solution's own words."
+  },
+  "cb77b0eadeb88c32": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "cb84d4dacd328f62": {
    "verdict": "ok",
@@ -25120,6 +26614,14 @@
   "ce51893368807177": {
    "verdict": "ok"
   },
+  "ce524f07ba58436e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ce59f3d626a1dfde": {
    "verdict": "ok"
   },
@@ -25143,6 +26645,10 @@
   },
   "ce709240f2eec216": {
    "verdict": "ok"
+  },
+  "ce7464645b11bbf9": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2134312; selfcheck model answer is the source solution verbatim; rubric checkpoints are verbatim clauses of the model answer, no new claims."
   },
   "ce7cb28cd7b75469": {
    "verdict": "ok",
@@ -25434,6 +26940,14 @@
   "d15691b55c5306ad": {
    "verdict": "ok"
   },
+  "d15f83dad9d74cbe": {
+   "verdict": "ok",
+   "note": "Review Question eip-433; source solution keys D, \"Both A and B.\", matching options transcribed verbatim in source order.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "d16709bd9f1b9f85": {
    "verdict": "ok"
   },
@@ -25703,6 +27217,10 @@
   "d3f94294ade1247e": {
    "verdict": "ok"
   },
+  "d3f9641bea814be1": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id2126300, solution fs-id1286063, transcribed verbatim. Matches the section's description of fork events (helicase, SSB proteins, primase, DNA pol) and the stated effect of a helicase mutation."
+  },
   "d3fb077c1ec36d17": {
    "verdict": "ok",
    "note": "MC fs-id2077369: option B matches keyed solution B.",
@@ -25745,6 +27263,14 @@
   },
   "d43f5a654921615a": {
    "verdict": "ok"
+  },
+  "d44104d5826d0029": {
+   "verdict": "ok",
+   "note": "Glossary recall: definition id fs-id1450421 (transcription bubble); prompt paraphrases the meaning without containing the answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "d446a62beeeed86e": {
    "verdict": "ok"
@@ -25790,6 +27316,10 @@
   },
   "d4be95b81f2ea434": {
    "verdict": "ok"
+  },
+  "d4c78763ff10e880": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question fs-id2475955; model answer is the source solution's two paragraphs verbatim, rubric checkpoints restate its own clauses."
   },
   "d4c8211bba849dd7": {
    "verdict": "ok"
@@ -25950,6 +27480,14 @@
    "verdict": "ok",
    "note": "d=-4-3=-7, a_n=3-7(n-1)=10-7n; solve -60=10-7n -> n=10 (matches source key)."
   },
+  "d6351fb759e8344d": {
+   "verdict": "ok",
+   "note": "Glossary recall, m66497 definition fs-id1466536 (reading frame).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "d636c6dd2eb8cc04": {
    "verdict": "ok"
   },
@@ -26010,6 +27548,10 @@
   },
   "d6aa963adc132a4f": {
    "verdict": "ok"
+  },
+  "d6b4c74217559641": {
+   "verdict": "ok",
+   "note": "parent re-record after rewording two rubric checkpoints to drop raw HTML tags (checkpoint labels render as plain text); model answer unchanged, the verbatim source solution for the ATP-hydrolysis E_A question"
   },
   "d6baa0cfa5c84a8d": {
    "verdict": "ok"
@@ -26152,6 +27694,10 @@
   },
   "d7e537dd2793ce68": {
    "verdict": "ok"
+  },
+  "d7e81732a9f70c56": {
+   "verdict": "ok",
+   "note": "Visual Connection exercise fs-idp163052304/fs-idp122564624 (m66392): model answer is the source solution verbatim except the source's 'wont' corrected to 'won't' (typo fix, reported as a source defect)."
   },
   "d7e95cd3a82b93df": {
    "verdict": "ok"
@@ -26490,6 +28036,14 @@
   "dafee3286defdff6": {
    "verdict": "ok"
   },
+  "db05888cbe8a7620": {
+   "verdict": "ok",
+   "note": "Visual Connection part 1 (fs-idp7053584): tetracycline blocks the A site, which is where an incoming tRNA binds; matches source solution 'Tetracycline: a' = tRNA binding to the ribosome.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "db0ef133cea8a2c1": {
    "verdict": "ok",
    "note": "Try It 3 part a: 45-45-90 triangle legs s,s, hyp sqrt2 s; sin(pi/4)=s/(sqrt2 s)=1/sqrt2; matches CNXML solution."
@@ -26553,6 +28107,14 @@
   "db92cb4075f193c6": {
    "verdict": "ok",
    "note": "a=14,b=13,c=20, angle C: acos((14^2+13^2-20^2)/(2*14*13))=95.52deg -> 95.5, matches source key."
+  },
+  "dba1248e7df041a5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "dbb66f62a2634c11": {
    "verdict": "ok"
@@ -26689,6 +28251,10 @@
    "verdict": "ok",
    "note": "A=6500*e^{0.0725*20}=27710.24 (nearest cent). Computed via node."
   },
+  "dcbf25ca4f6d0a95": {
+   "verdict": "ok",
+   "note": "Critical Thinking eip-957/eip-548 (rat mothering study): question and solution transcribed verbatim as model answer; checkpoints are literal substrings."
+  },
   "dcc21a110f2a59f4": {
    "verdict": "ok"
   },
@@ -26822,6 +28388,14 @@
   "ddca7bbb0bd03b0a": {
    "verdict": "ok"
   },
+  "de049d2c84436092": {
+   "verdict": "ok",
+   "note": "Review Question (m66504 eip-886/eip-810), keyed A 'activator'; AraC promotes transcription when bound to arabinose, consistent with the section's activator definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "de07dac915856cf3": {
    "verdict": "ok"
   },
@@ -26891,6 +28465,14 @@
   "dea49d9cb626f4fc": {
    "verdict": "ok",
    "note": "a1=7, an=0.2a_{n-1}: 7, 1.4, 0.28, 0.056, 0.0112 by repeated multiplication. Matches CNXML Algebraic #23 solution."
+  },
+  "dea4bd5f011a42b7": {
+   "verdict": "ok",
+   "note": "glossary recall, definition fs-id1442805 (Octamer box).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "deaeab70e214fd94": {
    "verdict": "ok"
@@ -26968,6 +28550,14 @@
   "df4fd154e6e3e112": {
    "verdict": "ok",
    "note": "A=165-75=90; T(30)=145 gives k=ln(7/9)/30=-0.008377 (node computed); matches CNXML solution exactly."
+  },
+  "df533086d839bc1c": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1951731/fs-id2750351 (m66392): source solution keys option C, 'DNA polymerase', which is option 3 of 4 as transcribed in source order; matches the section's own proofreading paragraph.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "df57ee3e60b2cc57": {
    "verdict": "ok"
@@ -27073,6 +28663,14 @@
   },
   "e06c1c10f52f9d1f": {
    "verdict": "ok"
+  },
+  "e0701077520de77a": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e07097193bfbd95f": {
    "verdict": "ok"
@@ -27201,6 +28799,14 @@
   "e16b09f87dfc383d": {
    "verdict": "ok"
   },
+  "e1828e0cf694f63e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e183fd63a5382230": {
    "verdict": "ok"
   },
@@ -27221,6 +28827,14 @@
   "e198396c8318590c": {
    "verdict": "ok",
    "note": "multiplechoice, source Review Question fs-id1724046 in section fs-id1369088 (module m66463); solution letter A = \"They increase ∆G of reactions.\" The section text states directly enzymes 'do not change the reaction's ∆G,' so the keyed false statement is the only one contradicted by the section; the other three options (usually amino acids, lower activation energy, substrate-specific) are all affirmed by the section text.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "e19ca2f8a0404e79": {
+   "verdict": "ok",
+   "note": "MC keyed D in module m66497 exercise fs-id2024650/solution fs-id2682565: AUC and AUA both specifying isoleucine is the genetic code's degeneracy (multiple codons per amino acid), not complementarity, nonsense codons, or universality.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -27257,6 +28871,14 @@
   },
   "e1ca76fb17ce98cd": {
    "verdict": "ok"
+  },
+  "e1ce7bbe4207e256": {
+   "verdict": "ok",
+   "note": "summary sentence 2 select-the-term, author-written per playbook summary-item rule, blanking \"RNA polymerase I\"; all options and stem clauses appear in the module.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e1d3bb088e1e1dd0": {
    "verdict": "ok"
@@ -27377,6 +28999,15 @@
   },
   "e287e3668e1c7aa9": {
    "verdict": "ok"
+  },
+  "e2888478771ecb2a": {
+   "verdict": "ok",
+   "note": "Glossary recall: definition id fs-id2655268 (template strand); prompt paraphrases the meaning without containing the answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "the module names the same strand both 'template strand' and 'antisense strand'; grader accepted template strand"
+   }
   },
   "e290dba01b3c4b85": {
    "verdict": "ok"
@@ -27708,8 +29339,24 @@
   "e4ddb9bec0fc0810": {
    "verdict": "ok"
   },
+  "e4dddebf65dc4b74": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e4eaa9a3c15773e4": {
    "verdict": "ok"
+  },
+  "e4f07af3be088f80": {
+   "verdict": "ok",
+   "note": "Summary-derived cloze from the Section Summary sentence \"In prokaryotic cells, transcription and translation occur almost simultaneously.\"",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e4fb16130c3be65b": {
    "verdict": "ok"
@@ -27903,6 +29550,14 @@
     "result": "agrees"
    }
   },
+  "e6957584ba685d1c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e6a621b80a305c25": {
    "verdict": "ok"
   },
@@ -27946,11 +29601,23 @@
    "verdict": "ok",
    "note": "Degree 3 polynomial has at most 3-1=2 turning points. Matches CNXML ti_03_03_09."
   },
+  "e6e3a76815746c4b": {
+   "verdict": "ok",
+   "note": "m66518 Critical Thinking fs-idm14597648; model answer is the source solution verbatim."
+  },
   "e6e3b752de3dcf97": {
    "verdict": "ok"
   },
   "e6eced1a74465383": {
    "verdict": "ok"
+  },
+  "e701c56af3a79c16": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e703ea774c6d7d40": {
    "verdict": "ok"
@@ -28043,6 +29710,14 @@
   "e7c541e1a452e1da": {
    "verdict": "ok",
    "note": "3y=7-2x -> y=-2x/3+7/3, a linear function; key p1279 #1 \"Yes\""
+  },
+  "e7c6af23fe008a6d": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1435268, source key D 'radioactive phosphorus was found in the cell' verbatim.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e7c9b93b040d6042": {
    "verdict": "ok",
@@ -28317,6 +29992,14 @@
   "ea1e44e7bc2c8773": {
    "verdict": "ok"
   },
+  "ea28d4bbd4d16521": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ea3031a39798bf4b": {
    "verdict": "ok",
    "note": "SVG plots point D at cx=306,cy=206 on axes with origin(226,226) and 20px/unit; converting gives (3,-2), matching the declared answer."
@@ -28408,6 +30091,22 @@
   },
   "eb05c7b5baa537fb": {
    "verdict": "ok"
+  },
+  "eb0966ddbf1abd40": {
+   "verdict": "ok",
+   "note": "Locally-written multiplechoice (objective 2, thin because the Section Summary never mentions DNA sequencing at all despite it being one of the section's three objectives — a coverage gap in the source, not a wrong answer). Built strictly from fs-id1695688: a ddNTP 'differ[s] from the deoxynucleotides by the lack of a free 3' OH group ... the free 3' OH group needed to add another nucleotide is not available.' Distractors (5' phosphate group, 2'-OH group, nitrogenous base) are all terms the section itself uses for other parts of the nucleotide.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "eb1227f70e78983f": {
+   "verdict": "ok",
+   "note": "Review Question fs-id2991759: matches source solution 'A' = 20.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "eb16d757bbb50467": {
    "verdict": "ok",
@@ -28537,6 +30236,10 @@
   "ec0d032af87b6d3a": {
    "verdict": "ok",
    "note": "Constant summand 4 added 5 times: sum_{k=1}^{5}4; matches CNXML fs-id1165135333032 solution."
+  },
+  "ec1b53cf6ce2b4ab": {
+   "verdict": "ok",
+   "note": "Visual Connection (exercise fs-idm104376352, solution fs-idp76857456): keyed prose solution 'DNA ligase, as this enzyme joins together Okazaki fragments' matches the section's own statement that DNA ligase seals the nicks between Okazaki fragments; no other enzyme in the section text performs that joining step."
   },
   "ec1d23d12b2389e0": {
    "verdict": "ok"
@@ -29093,6 +30796,14 @@
    "verdict": "ok",
    "note": "Growth 2.6%/week means ratio 1.026 per week; formula P_n=293*1.026^n (a0=293). Source CNXML prints \"293\\cdot1.026a^{n}\" with a stray 'a', a transcription typo -- corrected here; confirmed against the pattern of Example 6 (P_n=284*1.04^n, no stray letter) and against part b's independently-computed value."
   },
+  "f07ebdda790173ce": {
+   "verdict": "ok",
+   "note": "Glossary recall for definition fs-id1766226 'histone acetylation — epigenetic modification that leads to gene expression; a process involving adding or removing an acetyl functional group'; prompt is the meaning, answer is the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f0859eb61d0e7166": {
    "verdict": "ok"
   },
@@ -29203,6 +30914,14 @@
   },
   "f128f35a831103b7": {
    "verdict": "ok"
+  },
+  "f132ff1ff4baaee6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f1377087d746416b": {
    "verdict": "ok",
@@ -29394,6 +31113,14 @@
   "f2adb0a5a0edc84c": {
    "verdict": "ok"
   },
+  "f2b05463e119e552": {
+   "verdict": "ok",
+   "note": "MC keyed C in module m66497 exercise eip-725/solution eip-585: reverse transcriptase making DNA from RNA reverses the DNA→RNA→protein central dogma flow; the other three options are consistent with (not contradictions of) the central dogma.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f2bd3d7f86d473e1": {
    "verdict": "ok"
   },
@@ -29495,6 +31222,14 @@
   "f3f0eb05139625bc": {
    "verdict": "ok"
   },
+  "f3f259b77ad2f903": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f3f652e2d404e19e": {
    "verdict": "ok",
    "note": "f(x)=2ln(x+3)-1: asymptote x=-3 matches the graphed asymptote; checked f(0)=2ln3-1≈1.2, f(5)=2ln8-1≈3.16 against the plotted curve's height at those x-values (visually consistent with the source PDF figure). Matches CNXML eip-id1525883/ti_04_04_11 solution f(x)=2ln(x+3)-1."
@@ -29579,6 +31314,14 @@
   "f4a0fb096b1f423d": {
    "verdict": "ok"
   },
+  "f4a92c467e31ac78": {
+   "verdict": "ok",
+   "note": "Exercise fs-id685962; key D 'either increase or decrease' matches source solution 'D' and the section text ('can increase or decrease the stability... depending on the specific RBP').",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f4aac13b4e245923": {
    "verdict": "ok",
    "note": "m66374 solution fs-idm200102079 (decreasing temperature's two effects on diffusion): model answer verbatim match. Four CHECKS clauses restate kinetic energy decrease, slower molecular speed, membrane compression/density increase, and slowed diffusion — all present in the solution."
@@ -29660,6 +31403,14 @@
   },
   "f52ac1b1aa9de7cf": {
    "verdict": "ok"
+  },
+  "f52bc6674654a2ad": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f530614ba4fa2afd": {
    "verdict": "ok"
@@ -29743,6 +31494,14 @@
   },
   "f5cb7aa48bd38377": {
    "verdict": "ok"
+  },
+  "f5cc886a1b475548": {
+   "verdict": "ok",
+   "note": "Glossary recall, term 'operon' (m66504 fs-idm14117600), prompt paraphrases the glossary meaning with no leak.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f5d6db63d1c574d2": {
    "verdict": "ok"
@@ -29865,6 +31624,14 @@
   "f6d8f970f27f039a": {
    "verdict": "ok"
   },
+  "f6da2e206753d99b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f6efc1dc2beb9929": {
    "verdict": "ok",
    "note": "textin recall from glossary definition fs-id1994591 (extracellular matrix); prompt is the meaning, answer is the term, term does not appear in prompt.",
@@ -29882,6 +31649,10 @@
   "f7189f91bb5848cd": {
    "verdict": "ok",
    "note": "Evaluated the reproduced model at x=16: 141.912+10.454*ln(16)=170.90 thousand, rounds to 171,000, matching CNXML's printed 'about 171,000 games'."
+  },
+  "f71a84a37ab2d491": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-id1805432, solution fs-id2114708, transcribed verbatim. Matches the section's definition of Okazaki fragments as short lagging-strand fragments synthesized away from the fork."
   },
   "f72892a9d521a787": {
    "verdict": "ok"
@@ -29983,6 +31754,14 @@
   "f7f3d39e75afb490": {
    "verdict": "ok"
   },
+  "f7fd437e0cdd6dc7": {
+   "verdict": "ok",
+   "note": "Review Q fs-id3112360: source options and key (a) transcribed verbatim; key matches section text (epigenetic marks are reversible additions to histones/DNA, never sequence mutation).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f7ff47245b4ad2f7": {
    "verdict": "ok",
    "note": "By the same base-ordering logic, h(x)=log_5(x) has the third-smallest base, so it is curve C. Matches CNXML fs-id1165137758154 solution C."
@@ -29990,6 +31769,10 @@
   "f81047ce7ecb7f58": {
    "verdict": "ok",
    "note": "(pi/6)(x+6) -> shift -6; key p1336 PT#17"
+  },
+  "f811ffd3387b7a0b": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question 2 (m66521 exercise fs-idm59561840); model answer transcribes the CNXML <solution> verbatim; checked against the Reconnection paragraph on fit-or-more-fit hybrids fusing the two species. Printed PDF p.489 Q25 confirms wording."
   },
   "f8184e6451f89b40": {
    "verdict": "ok"
@@ -30025,6 +31808,14 @@
   },
   "f83d7d945959ec7e": {
    "verdict": "ok"
+  },
+  "f842e0f7de984190": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f8498fed55ecd4cd": {
    "verdict": "ok",
@@ -30431,6 +32222,14 @@
   "fb2fe361983a1d96": {
    "verdict": "ok"
   },
+  "fb32e57316e5dd83": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "fb5869a7f80f30de": {
    "verdict": "ok"
   },
@@ -30546,6 +32345,14 @@
     "result": "agrees"
    }
   },
+  "fc553413edac0dca": {
+   "verdict": "ok",
+   "note": "Glossary recall: definition id fs-id1569194 (hairpin); prompt paraphrases the meaning without containing the answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "fc557f68cce7792d": {
    "verdict": "ok"
   },
@@ -30621,6 +32428,14 @@
   "fd04d8df9cc213c0": {
    "verdict": "ok"
   },
+  "fd04dcfc06d398e6": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "fd09b70d1d08f034": {
    "verdict": "ok"
   },
@@ -30635,6 +32450,15 @@
    "verdict": "ok",
    "note": "r=(4/3)/2=2/3; verified forward: 2*(2/3)=4/3, (4/3)*(2/3)=8/9, (8/9)*(2/3)=16/27, all match. Recursive formula a_n=(2/3)a_{n-1}; matches CNXML solution."
   },
+  "fd232adad460b899": {
+   "verdict": "ok",
+   "note": "MC fs-id1808039 (binding required to start transcription); source solution C = 'RNA polymerase' verbatim.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "settled FOR the key against m66506: 'the transcription of genes in eukaryotes requires the action of an RNA polymerase to bind to a DNA sequence upstream of a gene' — the module names RNA polymerase binding as the requirement; transcription factors act by enabling that binding"
+   }
+  },
   "fd2968aa30c7f756": {
    "verdict": "ok"
   },
@@ -30643,6 +32467,10 @@
   },
   "fd2fb6bf6819bd41": {
    "verdict": "ok"
+  },
+  "fd31dea1b0fb3479": {
+   "verdict": "ok",
+   "note": "Critical Thinking (m66504 fs-idm269564080/fs-idm101659264), model answer is the source solution verbatim."
   },
   "fd33a1fe71ce6a7d": {
    "verdict": "ok",
@@ -30691,6 +32519,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 57): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "fd8d3e88c4aadccb": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1419233, source key B (pre-mRNAs) matches section text (RNA polymerase II is extremely sensitive to alpha-amanitin and transcribes pre-mRNAs).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "fd8ef93abf643890": {
    "verdict": "ok",
    "note": "6x^2+13x-15 factors as (6x-5)(x+3) (sympy factor); zeros are x=5/6 and x=-3."
@@ -30707,6 +32543,14 @@
   "fdcb2c28e0ff53a4": {
    "verdict": "ok",
    "note": "Table (0,2)(pi/4,7)(pi/2,2)(3pi/4,-3)(pi,2)(5pi/4,7)(3pi/2,2): amplitude (7-(-3))/2=5, midline (7-3)/2=2, midline crossing rising at x=0 -> sine form, max at x=pi/4 -> B=2. y=5sin(2x)+2 numerically checked against all 7 table points (matches source exercise #7 solution)."
+  },
+  "fdd05c4596350778": {
+   "verdict": "ok",
+   "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "fdd2706e614bd32a": {
    "verdict": "ok"
@@ -30788,6 +32632,14 @@
   },
   "fe916f9d5ec23648": {
    "verdict": "ok"
+  },
+  "fe954c81b677dda4": {
+   "verdict": "ok",
+   "note": "Review Question fs-id1466731; keyed D '7-methylguanosine cap' matches solution fs-id2261966 and the section's own sentence that translation-initiation factors recognize the cap.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "fe9bf00655074524": {
    "verdict": "ok"
@@ -30962,6 +32814,15 @@
   },
   "ffecd0eb88d035c1": {
    "verdict": "ok"
+  },
+  "fff4513358f58503": {
+   "verdict": "ok",
+   "note": "Glossary recall, term 'transcriptional start site' (m66504 fs-idm147619424), matches glossary meaning.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "glossary term is 'transcriptional start site'; hyphenless variant covered by accept; grader agreed"
+   }
   }
  }
 }

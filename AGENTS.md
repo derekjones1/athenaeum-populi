@@ -8,7 +8,7 @@ the book you are authoring; for knowledge checks, also follow
 current build and deployment design. For the OpenStax math books — the three
 algebra books and Precalculus 2e, all four complete — also follow
 `docs/subjects/math.md` and `docs/source/openstax-source-workflow.md`.
-Biology 2e is pinned and `in-progress` (units 1–3, chapters 1–13, are authored); its
+Biology 2e is pinned and `in-progress` (chapters 1–16 and 18–19 — units 1–2, most of unit 3, and most of unit 4 — are authored); its
 subject-specific rules are in `docs/subjects/biology.md`, on top of the same
 source workflow.
 
@@ -35,10 +35,12 @@ source workflow.
   `biology-bundle` for Biology 2e. Books carry an `authoringStatus`; the four
   math books are `complete` (Precalculus 2e's last chapter landed on August
   29, 2026), so every upstream numbered section has a local page and chapter
-  parity is enforced book-wide. Biology is `in-progress`: units 1–3 (chapters
-  1–13, 51 sections) are authored under `content/life-health-sciences/biology`
-  and the other 34 chapters have no landing yet, so `build-map`/`verify-map`
-  print it as "13/47 chapters, 51/208 sections mapped" — visibly, never
+  parity is enforced book-wide. Biology is `in-progress`: chapters 1–16 and 18–19 (75
+  sections — units 1–2, unit 3 through Gene Expression, and unit 4 through
+  The Evolution of Populations) are authored under
+  `content/life-health-sciences/biology`
+  and the other 29 chapters have no landing yet, so `build-map`/`verify-map`
+  print it as "18/47 chapters, 75/208 sections mapped" — visibly, never
   silently — and the biology subject playbook (`docs/subjects/biology.md`)
   governs its authoring. A book still being written marks its
   unwritten chapter landings `authoring_status: scaffolded`, drops the marker
@@ -125,7 +127,7 @@ source workflow.
   package.json's `--min-verified`, `--min-replayed`, and `--min-exercises` in
   place
 - `npm run source:fetch` — fetch the ignored, sparse OpenStax source checkout
-- `npm run source:verify` — verify the committed 325-section map offline
+- `npm run source:verify` — verify the committed 349-section map offline
 - `npm run source:check` — report-only comparison against pinned CNXML
 - `npm run source:history` — review changes since the inferred PDF-era commits
 - `npm run source:media -- --book KEY --chapter N` — vendor a chapter's raster

@@ -5324,6 +5324,1518 @@
       "alt": "Illustration shows a reciprocal translocation in which DNA is transferred from one chromosome to another. Some DNA is also transferred from the second chromosome back to the first. No genetic information is gained or lost in the process.",
       "caption": "A reciprocal translocation occurs when a DNA segment transfers from one chromosome to another, nonhomologous chromosome. (credit: modification of work by National Human Genome Research/USA)"
     },
+    "Figure_14_00_01-6dd1": {
+      "source": "media/Figure_14_00_01-6dd1.jpg",
+      "sourceSha256": "e87164286ab8365ff6b4d0db5c5b9ee4f531241ff4c559b81f9f707126adad75",
+      "module": "m66385",
+      "kind": "photo",
+      "width": 1118,
+      "height": 448,
+      "variants": [
+        {
+          "width": 800,
+          "height": 320,
+          "file": "Figure_14_00_01-6dd1-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 448,
+          "file": "Figure_14_00_01-6dd1-1118.webp"
+        }
+      ],
+      "alt": "Photo shows Dolly the sheep, which has been stuffed and placed in a glass case.",
+      "caption": "Dolly the sheep was the first large mammal to be cloned."
+    },
+    "Figure_14_01_01-1dae": {
+      "source": "media/Figure_14_01_01-1dae.jpg",
+      "sourceSha256": "117b83eb33c841a53a1b9f14ec699fc564e618bb630b5ae70cb796daeed30ffa",
+      "module": "m66386",
+      "kind": "photo",
+      "width": 544,
+      "height": 748,
+      "variants": [
+        {
+          "width": 544,
+          "height": 748,
+          "file": "Figure_14_01_01-1dae-544.webp"
+        }
+      ],
+      "alt": "Photo of Friedrich Miescher.",
+      "caption": "Friedrich Miescher (1844–1895) discovered nucleic acids."
+    },
+    "Figure_14_01_02-46c8": {
+      "source": "media/Figure_14_01_02-46c8.jpg",
+      "sourceSha256": "1a28193c73e9bc02b7674ed4c9861eae887157639d7a32ba4456fe57193f16a7",
+      "module": "m66386",
+      "kind": "photo",
+      "width": 1000,
+      "height": 750,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_14_01_02-46c8-800.webp"
+        },
+        {
+          "width": 1000,
+          "height": 750,
+          "file": "Figure_14_01_02-46c8-1000.webp"
+        }
+      ],
+      "alt": "Four scenarios in an experiment are shown. In the first, living S cells are injected, and the mouse dies. In the second, living R cells are injected, and the mouse is healthy. In the third, heat-killed S cells are injected, and the mouse is healthy. In the fourth, mixture of heat-killed S cells and Living R cells are injected, and the mouse dies and living S cells are recovered.",
+      "caption": "Two strains of S. pneumoniae were used in Griffith’s transformation experiments. The R strain is non-pathogenic, whereas the S strain is pathogenic and causes death. When Griffith injected a mouse with the heat-killed S strain and a live R strain, the mouse died. The S strain was recovered from the dead mouse. Griffith concluded that something had passed from the heat-killed S strain to the R strain, transforming the R strain into the S strain in the process. Credit: Rao, A., Ryan, K. and Tag, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_14_01_03": {
+      "source": "media/Figure_14_01_03.png",
+      "sourceSha256": "40c323b82d09e84eec494ffe4a763c8d345bc2ee7b0cae89cb36ca8d7434808c",
+      "module": "m66386",
+      "kind": "diagram",
+      "width": 1600,
+      "height": 1389,
+      "variants": [
+        {
+          "width": 800,
+          "height": 694,
+          "file": "Figure_14_01_03-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1389,
+          "file": "Figure_14_01_03-1600.webp"
+        }
+      ],
+      "alt": "Illustration shows bacteria being infected by phage labeled with superscript 35 baseline upper case S, which is incorporated into the protein coat, or superscript 32 baseline upper case P, which is incorporated into the D N A. Infected bacteria were separated from phage by centrifugation and cultured. The bacteria that had been infected with phage containing superscript 32 baseline upper P labeled D N A made radioactive phage. The bacteria that had been infected with superscript 35 baseline upper S labeled phage produced unlabeled phage. The results support the hypothesis that D N A, and not protein, is the genetic material.",
+      "caption": "In Hershey and Chase's experiments, bacteria were infected with phage radiolabeled with either 35 S, which labels protein, or 32 P, which labels DNA. Only 32 P entered the bacterial cells, indicating that DNA is the genetic material."
+    },
+    "Figure_14_02_01": {
+      "source": "media/Figure_14_02_01.jpg",
+      "sourceSha256": "ccb85cf4d9f2d50a6e34f1815a8ab7ae5672a8c5800a446f19879c3ed5484237",
+      "module": "m66387",
+      "kind": "photo",
+      "width": 1118,
+      "height": 499,
+      "variants": [
+        {
+          "width": 800,
+          "height": 357,
+          "file": "Figure_14_02_01-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 499,
+          "file": "Figure_14_02_01-1118.webp"
+        }
+      ],
+      "alt": "llustration depicts the structure of a nucleoside, which is made up of a pentose with a nitrogenous base attached at the 1 prime position. There are two kinds of nitrogenous bases: pyrimidines, which have one six-membered ring, and purines, which have a six-membered ring fused to a five-membered ring. Cytosine, thymine, and uracil are pyrimidines, and adenine and guanine are purines. A nucleoside with one phosphate attached at the 5 prime position is called a nucleoside monophosphate. A nucleoside with two or three phosphates attached is called a nucleoside diphosphate or nucleoside triphosphate, respectively.",
+      "caption": "The purines have a double ring structure with a six-membered ring fused to a five-membered ring. Pyrimidines are smaller in size; they have a single six-membered ring structure."
+    },
+    "Figure_14_02_02": {
+      "source": "media/Figure_14_02_02.jpg",
+      "sourceSha256": "52628af1d82ee474eed02c7fa86ae8eabb68808abb267898c67968102f3451a6",
+      "module": "m66387",
+      "kind": "photo",
+      "width": 370,
+      "height": 436,
+      "variants": [
+        {
+          "width": 370,
+          "height": 436,
+          "file": "Figure_14_02_02-370.webp"
+        }
+      ],
+      "alt": "The x-ray diffraction pattern is symmetrical, with dots in an x-shape",
+      "caption": "The X-ray diffraction pattern of DNA, which helped to elucidate its double-helix structure."
+    },
+    "Figure_14_02_03abc-c0c6": {
+      "source": "media/Figure_14_02_03abc-c0c6.jpg",
+      "sourceSha256": "030740f91a4ebf7d3cc7cdb24eca5b07ee1ca1c94bcef2b3ac434feb49236688",
+      "module": "m66387",
+      "kind": "photo",
+      "width": 1117,
+      "height": 385,
+      "variants": [
+        {
+          "width": 800,
+          "height": 275,
+          "file": "Figure_14_02_03abc-c0c6-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 385,
+          "file": "Figure_14_02_03abc-c0c6-1117.webp"
+        }
+      ],
+      "alt": "Part A shows an illustration of a D N A double helix, which has a sugar phosphate backbone on the outside and nitrogenous base pairs on the inside. Part B shows base pairing between thymine and adenine, which form two hydrogen bonds, and between guanine and cytosine, which form three hydrogen bonds. Part C shows a molecular model of the D N A double helix. The outside of the helix alternates between wide gaps, called major grooves, and narrow gaps, called minor grooves.",
+      "caption": "DNA has (a) a double helix structure and (b) phosphodiester bonds; the dotted lines between Thymine and Adenine and Guanine and Cytosine represent hydrogen bonds. The (c) major and minor grooves are binding sites for DNA binding proteins during processes such as transcription (the copying of RNA from DNA) and replication."
+    },
+    "Figure_14_02_04ab-b7be": {
+      "source": "media/Figure_14_02_04ab-b7be.jpg",
+      "sourceSha256": "ffca9328634b1cf0879b14394f8793a71e4c7d2a08d89dcd504d5c22c73000cf",
+      "module": "m66387",
+      "kind": "photo",
+      "width": 800,
+      "height": 375,
+      "variants": [
+        {
+          "width": 800,
+          "height": 375,
+          "file": "Figure_14_02_04ab-b7be-800.webp"
+        }
+      ],
+      "alt": "Part A shows a template D N A strand and newly synthesized strands that were generated in the presence of dideoxynucleotides that terminate the chain at different points to generate fragments of different sizes. Each dideoxynucleotide is labeled a different color. Part B shows a sequence readout that was generated after the D N A fragments were separated on the basis of size. The color of the fragment indicates the identity of the nucleotide at the end of a given fragment. By reading the colors in order, the D N A sequence can be determined.",
+      "caption": "In Frederick Sanger's dideoxy chain termination method, dye-labeled dideoxynucleotides are used to generate DNA fragments that terminate at different points. The DNA is separated by capillary electrophoresis on the basis of size, and from the order of fragments formed, the DNA sequence can be read. The DNA sequence readout is shown on an electropherogram that is generated by a laser scanner."
+    },
+    "Figure_14_02_06_new": {
+      "source": "media/Figure_14_02_06_new.jpg",
+      "sourceSha256": "ca5e658cce2b984dfc3a1b20f1c3d60c3fc48ceff008238ad17f96cb2f9ae285",
+      "module": "m66387",
+      "kind": "photo",
+      "width": 725,
+      "height": 375,
+      "variants": [
+        {
+          "width": 725,
+          "height": 375,
+          "file": "Figure_14_02_06_new-725.webp"
+        }
+      ],
+      "alt": "Illustration shows a eukaryotic cell, which has a membrane-bound nucleus containing chromatin and a nucleolus, and a prokaryotic cell, which has DNA contained in an area of the cytoplasm called the nucleoid. The prokaryotic cell is much smaller than the eukaryotic cell.",
+      "caption": "A eukaryote contains a well-defined nucleus, whereas in prokaryotes, the chromosome lies in the cytoplasm in an area called the nucleoid."
+    },
+    "Figure_14_02_07-de13": {
+      "source": "media/Figure_14_02_07-de13.jpg",
+      "sourceSha256": "ed16f5cd84eabca11a0a60efd1c0a12928624366ebf327a8ac8999058199cfcd",
+      "module": "m66387",
+      "kind": "photo",
+      "width": 544,
+      "height": 875,
+      "variants": [
+        {
+          "width": 544,
+          "height": 875,
+          "file": "Figure_14_02_07-de13-544.webp"
+        }
+      ],
+      "alt": "Illustration shows the levels of organization of eukaryotic chromosomes, starting with the D N A double helix, which wraps around histone proteins. The entire D N A molecule wraps around many clusters of histone proteins, forming a structure that looks like beads on a string, which are nucleosomes coiled into a chromatin fiber. The chromatin is further condensed by wrapping around a protein core. The result is a compact chromosome, shown in duplicated form, which is the shape of an x.",
+      "caption": "These figures illustrate the compaction of the eukaryotic chromosome."
+    },
+    "Figure_14_02_09": {
+      "source": "media/Figure_14_02_09.png",
+      "sourceSha256": "96f01d57878d28c6216c9410aac8406157bd0fb7f986222a99d2ee79b672e00e",
+      "module": "m66387",
+      "kind": "diagram",
+      "width": 2014,
+      "height": 1334,
+      "variants": [
+        {
+          "width": 800,
+          "height": 530,
+          "file": "Figure_14_02_09-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1059,
+          "file": "Figure_14_02_09-1600.webp"
+        }
+      ],
+      "alt": "The first photo shows an agarose gel illuminated under UV light. The gel is nine lanes across. Each lane was loaded with a sample containing DNA fragments of differing size that have separated as they travel through the gel, from top to bottom. The DNA appears as thin, white bands on a black background. Lanes one and nine contain many bands from a DNA standard. These bands are closely spaced toward the top, and spaced farther apart further down the gel. Lanes two through eight contain one or two bands each. Some of these bands are identical in size and run the same distance into the gel. Others run a slightly different distance, indicating a small difference in size. The second image shows a person using a handheld device with eight pipettes holding DNA material. The person places the device's pipettes directly over a prepared gel inside an electrphoresis machine. The gel already contains several lines of material where the user has previouly loaded DNA material.",
+      "caption": "DNA can be separated on the basis of size using gel electrophoresis. (credit: James Jacob, Tompkins Cortland Community College)"
+    },
+    "Figure_14_03_01": {
+      "source": "media/Figure_14_03_01.jpg",
+      "sourceSha256": "2058dcc1f81c2c412291466c3e4948baa5fb267507144aefff42e617c9821ef8",
+      "module": "m66389",
+      "kind": "photo",
+      "width": 544,
+      "height": 640,
+      "variants": [
+        {
+          "width": 544,
+          "height": 640,
+          "file": "Figure_14_03_01-544.webp"
+        }
+      ],
+      "alt": "Illustration shows the conservative, semi-conservative, and dispersive models of D N A synthesis. In the conservative model, the D N A is replicated and both newly synthesized strands are paired together. In the semi-conservative model, each newly synthesized strand pairs with a parent strand. In the dispersive model, newly synthesized D N A is interspersed with parent D N A within both D N A strands.",
+      "caption": "The three suggested models of DNA replication. Gray indicates the original DNA strands, and blue indicates newly synthesized DNA."
+    },
+    "Figure_14_03_02": {
+      "source": "media/Figure_14_03_02.jpg",
+      "sourceSha256": "3128d9bd037909afe2e5a616060dc433631809b58322c1afce1ba171150d895b",
+      "module": "m66389",
+      "kind": "photo",
+      "width": 800,
+      "height": 698,
+      "variants": [
+        {
+          "width": 800,
+          "height": 698,
+          "file": "Figure_14_03_02-800.webp"
+        }
+      ],
+      "alt": "Illustration shows an experiment in which E coli was grown initially in media containing superscript 15 baseline upper case N nucleotides. When the D N A was extracted and run in an ultracentrifuge, a band of D N A appeared low in the tube. The culture was next placed in the superscript 14 baseline upper case N medium. After one generation, all of the D N A appeared in the middle of the tube, indicating that the D N A was a mixture of half superscript 14 baseline upper N and half superscript 15 baseline upper N, D N A. After two generations, half of the D N A appeared in the middle of the tube, and half appeared higher up, indicating that half the D N A contained 50% superscript 15 baseline upper N, and half contained superscript 14 baseline upper N only. In subsequent generations, more and more of the D N A appeared in the upper, superscript 14 baseline upper N band.",
+      "caption": "Meselson and Stahl experimented with E. coli grown first in heavy nitrogen ( 15 N) then in 14 N. DNA grown in 15 N (red band) is heavier than DNA grown in 14 N (orange band), and sediments to a lower level in cesium chloride solution in an ultracentrifuge. When DNA grown in 15 N is switched to media containing 14 N, after one round of cell division the DNA sediments halfway between the 15 N and 14 N levels, indicating that it now contains fifty percent 14 N. In subsequent cell divisions, an increasing amount of DNA contains 14 N only. These data support the semi-conservative replication model. (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "Figure_14_04_01-02d6": {
+      "source": "media/Figure_14_04_01-02d6.jpg",
+      "sourceSha256": "667fbae2182e76152cc1d6c083d1b0b3dd0aa8888db78ef5fe416e28d22fc222",
+      "module": "m66390",
+      "kind": "photo",
+      "width": 1200,
+      "height": 678,
+      "variants": [
+        {
+          "width": 800,
+          "height": 452,
+          "file": "Figure_14_04_01-02d6-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 678,
+          "file": "Figure_14_04_01-02d6-1200.webp"
+        }
+      ],
+      "alt": "Topoisomerase binds to D N A to relieve additional coiling. Helicase separates or unzips the two strands. Single-strand binding proteins attach to each D N A strand, and stablize s s D N A and keeps the strands open. While the strands are separated, Primase makes R N A Primer, which is five to ten nucleotides long. The R N A Primer is attached to the s s D N A strand.",
+      "caption": "First Components of DNA Replication. As DNA replication begins, DNA Helicase, a large enzyme, separates the two strands of DNA so that they can act as templates for replication. Single-strand binding proteins bind to each strand to stabilize and prevent them from reforming the double helix. Primase, an RNA polymerase, binds to the single stranded DNA and synthesizes a short RNA primer in the 5’ to 3’ direction that is antiparallel to the parental strand. This RNA primer allows for DNA polymerase to begin replicating the DNA. Topoisomerase binds to the double helix upstream of the replication fork to prevent additional coiling by making small cuts in one of the DNA strands. Credit: Rao, A., Ryan, K. Fletcher, S. and Tag, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_14_05_02": {
+      "source": "media/Figure_14_05_02.jpg",
+      "sourceSha256": "1ab42f3eab3b83e418e152e44bd6649790d66c609c68c1c9d699f9a0295db002",
+      "module": "m66391",
+      "kind": "photo",
+      "width": 544,
+      "height": 404,
+      "variants": [
+        {
+          "width": 544,
+          "height": 404,
+          "file": "Figure_14_05_02-544.webp"
+        }
+      ],
+      "alt": "Photo of Elizabeth Blackburn.",
+      "caption": "Elizabeth Blackburn, 2009 Nobel Laureate, is one of the scientists who discovered how telomerase works. (credit: US Embassy Sweden)"
+    },
+    "Figure_14_06_01": {
+      "source": "media/Figure_14_06_01.jpg",
+      "sourceSha256": "d16c47993d7260455b3ed7a8de28150ed85cbf00d149430f7521c922974c54cc",
+      "module": "m66392",
+      "kind": "photo",
+      "width": 544,
+      "height": 222,
+      "variants": [
+        {
+          "width": 544,
+          "height": 222,
+          "file": "Figure_14_06_01-544.webp"
+        }
+      ],
+      "alt": "Illustration shows D N A polymerase replicating a strand of D N A. The enzyme has accidentally inserted G opposite A, resulting in a bulge. The enzyme backs up to fix the error.",
+      "caption": "Proofreading by DNA polymerase corrects errors during replication."
+    },
+    "Figure_14_06_02": {
+      "source": "media/Figure_14_06_02.jpg",
+      "sourceSha256": "5faeb983b206c4a08931f0c818e8b963bac1fcfdf59e38c82c2bbc4e396f3a3b",
+      "module": "m66392",
+      "kind": "photo",
+      "width": 544,
+      "height": 575,
+      "variants": [
+        {
+          "width": 544,
+          "height": 575,
+          "file": "Figure_14_06_02-544.webp"
+        }
+      ],
+      "alt": "The top illustration shows a replicated D N A strand with G T base mismatch. The bottom illustration shows the repaired D N A, which has the correct G C base pairing.",
+      "caption": "In mismatch repair, the incorrectly added base is detected after replication. The mismatch repair proteins detect this base and remove it from the newly synthesized strand by nuclease action. The gap is now filled with the correctly paired base."
+    },
+    "Figure_14_06_03-3edf": {
+      "source": "media/Figure_14_06_03-3edf.jpg",
+      "sourceSha256": "dd5af1da1d3fc56a5e64f27be3d9a009828c1e2d3923d3fe35aa9610fcaff4b6",
+      "module": "m66392",
+      "kind": "photo",
+      "width": 800,
+      "height": 821,
+      "variants": [
+        {
+          "width": 800,
+          "height": 821,
+          "file": "Figure_14_06_03-3edf-800.webp"
+        }
+      ],
+      "alt": "Illustration shows a D N A strand in which a thymine dimer has formed. Excision repair enzyme cut out the section of D N A that contains the dimer so it can be replaced with normal base pairs. Nuclease cuts the D N A on each side of the dimer, and removes the single strand of D N A containing the dimer. DNA Polymerase synthesizes new D N A to repair the hole. D N A ligase forms the final phosphidiester bond between the new D N A and old D N A.",
+      "caption": "Nucleotide excision repairs thymine dimers. When exposed to UV light, thymines lying adjacent to each other can form thymine dimers. In normal cells, they are excised and replaced. Credit: Rao, A., Fletcher, S. and Tag, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_14_06_04": {
+      "source": "media/Figure_14_06_04.jpg",
+      "sourceSha256": "7d7cebeeb4d56add1522bf7b1a2b297584944366ffc7d44fe7efcec603d647e7",
+      "module": "m66392",
+      "kind": "photo",
+      "width": 1270,
+      "height": 1071,
+      "variants": [
+        {
+          "width": 800,
+          "height": 674,
+          "file": "Figure_14_06_04-800.webp"
+        },
+        {
+          "width": 1270,
+          "height": 1071,
+          "file": "Figure_14_06_04-1270.webp"
+        }
+      ],
+      "alt": "Photo shows a person with mottled skin lesions that result from xermoderma pigmentosa.",
+      "caption": "Xeroderma pigmentosa is a condition in which thymine dimerization from exposure to UV light is not repaired. Exposure to sunlight results in skin lesions. (credit: James Halpern et al.)"
+    },
+    "Figure_14_06_05": {
+      "source": "media/Figure_14_06_05.png",
+      "sourceSha256": "e88b8f151d5b47e505b5003570305906d6ad3bf3fe2490221c9b58a3062ba36a",
+      "module": "m66392",
+      "kind": "diagram",
+      "width": 469,
+      "height": 599,
+      "variants": [
+        {
+          "width": 469,
+          "height": 599,
+          "file": "Figure_14_06_05-469.webp"
+        }
+      ],
+      "alt": "Illustration shows different types of point mutations that result from a single amino acid substitution. In a silent mutation, no change in the amino acid sequence occurs. In a missense mutation, one amino acid is substituted for another. In a nonsense mutation, a stop codon is substituted for an amino acid. In a frameshift mutation, one or more bases is added or deleted, resulting in a change in the reading frame.",
+      "caption": "Mutations can lead to changes in the protein sequence encoded by the DNA."
+    },
+    "Figure_15_00_01-5eb1": {
+      "source": "media/Figure_15_00_01-5eb1.jpg",
+      "sourceSha256": "63bffff06a43facb450547185617229804aae16716c00d7c9be90bc75f3538f9",
+      "module": "m66495",
+      "kind": "photo",
+      "width": 1117,
+      "height": 415,
+      "variants": [
+        {
+          "width": 800,
+          "height": 297,
+          "file": "Figure_15_00_01-5eb1-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 415,
+          "file": "Figure_15_00_01-5eb1-1117.webp"
+        }
+      ],
+      "alt": "Molecular models show a DNA double helix that is packed in a chromosome in Part a, and two proteins are shown in Parts b and c.",
+      "caption": "Genes, which are carried on (a) chromosomes, are linearly organized instructions for making the RNA and protein molecules that are necessary for all of the processes of life. The (b) interleukin-2 protein and (c) alpha-2u-globulin protein are just two examples of the array of different molecular structures that are encoded by genes. (credit “chromosome: National Human Genome Research Institute; credit “interleukin-2”: Ramin Herati/Created from PDB 1M47 and rendered with Pymol; credit “alpha-2u-globulin”: Darren Logan/rendered with AISMIG)"
+    },
+    "Figure_15_01_01": {
+      "source": "media/Figure_15_01_01.jpg",
+      "sourceSha256": "b849ea8d623910b564ebc2321bea2a2e02e6e4abff6fd32c09dd8203e9e33df8",
+      "module": "m66497",
+      "kind": "photo",
+      "width": 1044,
+      "height": 968,
+      "variants": [
+        {
+          "width": 800,
+          "height": 741,
+          "file": "Figure_15_01_01-800.webp"
+        },
+        {
+          "width": 1044,
+          "height": 968,
+          "file": "Figure_15_01_01-1044.webp"
+        }
+      ],
+      "alt": "Structures of the twenty amino acids are given. Six amino acids; glycine, alanine, valine, leucine, methionine, and isoleucine; have R groups that are non-polar and aliphatic, meaning they do not have a ring. Six amino acids; serine, threonine, cysteine, proline, asparagine, and glutamate; have R groups that are polar but uncharged. Three amino acids; lysine, arginine, and histidine; have R groups that are positively charged. Two amino acids, glutamate and aspartate, have R groups that are negatively charged. Three amino acids; phenylalanine, tyrosine, and tryptophan; have nonpolar and aromatic (meaning they have a ring) R groups.",
+      "caption": "Structures of the 20 amino acids found in proteins are shown. Each amino acid is composed of an amino group ( N H 3 + ), a carboxyl group (COO - ), and a side chain (blue). The side chain may be nonpolar, polar, or charged, as well as large or small. It is the variety of amino acid side chains that gives rise to the incredible variation of protein structure and function."
+    },
+    "Figure_15_01_02": {
+      "source": "media/Figure_15_01_02.jpg",
+      "sourceSha256": "32b12ff2ed84d6adfcf3f89b38f83453b72f7cb891326f2417760d99d48a51e5",
+      "module": "m66497",
+      "kind": "photo",
+      "width": 544,
+      "height": 997,
+      "variants": [
+        {
+          "width": 544,
+          "height": 997,
+          "file": "Figure_15_01_02-544.webp"
+        }
+      ],
+      "alt": "To make a protein, genetic information encoded by the D N A must be transcribed onto an m R N A molecule. The R N A is then processed by splicing to remove exons and by the addition of a 5 prime cap and a poly A tail. A ribosome then reads the sequence on the m R N A, and uses this information to string amino acids into a protein.",
+      "caption": "Instructions on DNA are transcribed onto messenger RNA. Ribosomes are able to read the genetic information inscribed on a strand of messenger RNA and use this information to string amino acids together into a protein."
+    },
+    "Figure_15_01_03-d9f3": {
+      "source": "media/Figure_15_01_03-d9f3.jpg",
+      "sourceSha256": "c3717b9d12c56ae144d0a23f515f53206fe348095ae58dd9409c19e261749295",
+      "module": "m66497",
+      "kind": "photo",
+      "width": 1118,
+      "height": 472,
+      "variants": [
+        {
+          "width": 800,
+          "height": 337,
+          "file": "Figure_15_01_03-d9f3-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 472,
+          "file": "Figure_15_01_03-d9f3-1118.webp"
+        }
+      ],
+      "alt": "Photographs show a thin slice of a green kiwi fruit and a bowl of strawberries.",
+      "caption": "Do you think that a kiwi or a strawberry has more DNA per fruit? (credit “kiwi”: \"Kelbv\"/Flickr; credit: “strawberry”: Alisdair McDiarmid)"
+    },
+    "Figure_15_02_01-50f7": {
+      "source": "media/Figure_15_02_01-50f7.jpg",
+      "sourceSha256": "ca3e77f0ed2f764ad70d3a6ab9d7c1d5d550692e16bcb21801b1ad28a35dcfa5",
+      "module": "m66498",
+      "kind": "photo",
+      "width": 544,
+      "height": 243,
+      "variants": [
+        {
+          "width": 544,
+          "height": 243,
+          "file": "Figure_15_02_01-50f7-544.webp"
+        }
+      ],
+      "alt": "Illustration shows the sigma subunit of R N A polymerase bound to two consensus sequences that are 10 and 35 bases upstream of the transcription start site. R N A polymerase is bound to sigma.",
+      "caption": "The σ subunit of prokaryotic RNA polymerase recognizes consensus sequences found in the promoter region upstream of the transcription start site. The σ subunit dissociates from the polymerase after transcription has been initiated."
+    },
+    "Figure_15_02_02a": {
+      "source": "media/Figure_15_02_02a.jpg",
+      "sourceSha256": "c9343badd04f6b7ef76409906211ad6d9cee40066dfffd0197b433203dda26d7",
+      "module": "m66498",
+      "kind": "photo",
+      "width": 543,
+      "height": 283,
+      "variants": [
+        {
+          "width": 543,
+          "height": 283,
+          "file": "Figure_15_02_02a-543.webp"
+        }
+      ],
+      "alt": "Illustration shows R N A synthesis by R N A polymerase. The R N A strand is synthesized in the 5 prime to 3 prime direction.",
+      "caption": "Messenger RNA is a copy of protein-coding information in the coding strand of DNA, with the substitution of U in the RNA for T in the coding sequence. However, new RNA nucleotides base pair with the nucleotides of the template strand. RNA is synthesized in its 5'-3' direction, using the enzyme RNA polymerase. As the template is read, the DNA unwinds ahead of the polymerase and then rewinds behind it."
+    },
+    "Figure_15_02_03": {
+      "source": "media/Figure_15_02_03.png",
+      "sourceSha256": "d92c28447323d4d969518e9a263b1c5154c2715fd804a8e27e6dce483f095915",
+      "module": "m66497",
+      "kind": "diagram",
+      "width": 1088,
+      "height": 233,
+      "variants": [
+        {
+          "width": 800,
+          "height": 171,
+          "file": "Figure_15_02_03-800.webp"
+        },
+        {
+          "width": 1088,
+          "height": 233,
+          "file": "Figure_15_02_03-1088.webp"
+        }
+      ],
+      "alt": "Illustration shows a frameshift mutation in which the reading frame is altered by the deletion of two amino acids.",
+      "caption": "The deletion of two nucleotides shifts the reading frame of an mRNA and changes the entire protein message, creating a nonfunctional protein or terminating protein synthesis altogether."
+    },
+    "Figure_15_02_03-c021": {
+      "source": "media/Figure_15_02_03-c021.jpg",
+      "sourceSha256": "f7806286cf2e194fb6c0a2aa9a7697a3379659c0c00aafd853a9682ab106b82f",
+      "module": "m66498",
+      "kind": "photo",
+      "width": 544,
+      "height": 189,
+      "variants": [
+        {
+          "width": 544,
+          "height": 189,
+          "file": "Figure_15_02_03-c021-544.webp"
+        }
+      ],
+      "alt": "Illustration shows a portion of a D N A molecule. Multiple strands of m R N A hang off of the D N A at the locations where m R N A is being transcribed. Each m R N A strand has multiple ribosomes attached at different locations along its length, creating proteins. One m R N A strand with multiple ribosomes attached to it is labelled a polyribosome.",
+      "caption": "Multiple polymerases can transcribe a single bacterial gene while numerous ribosomes concurrently translate the mRNA transcripts into polypeptides. In this way, a specific protein can rapidly reach a high concentration in the bacterial cell."
+    },
+    "Figure_15_02_05": {
+      "source": "media/Figure_15_02_05.png",
+      "sourceSha256": "9659cfecfddc285fd608e2cdeff5d55b3e4fc89fea321a3cac7ade10f5e330b5",
+      "module": "m66497",
+      "kind": "diagram",
+      "width": 1112,
+      "height": 946,
+      "variants": [
+        {
+          "width": 800,
+          "height": 680,
+          "file": "Figure_15_02_05-800.webp"
+        },
+        {
+          "width": 1112,
+          "height": 946,
+          "file": "Figure_15_02_05-1112.webp"
+        }
+      ],
+      "alt": "Figure shows all 64 codons. Sixty-one of these code for amino acids, and three are stop codons.",
+      "caption": "This figure shows the genetic code for translating each nucleotide triplet in mRNA into an amino acid or a termination signal in a protein. (credit: modification of work by NIH)"
+    },
+    "Figure_15_03_01-cf10": {
+      "source": "media/Figure_15_03_01-cf10.jpg",
+      "sourceSha256": "3d9e782d891fccb04b529347b20275eb398d6f493f2a9f6e7e16553f25286010",
+      "module": "m66499",
+      "kind": "photo",
+      "width": 544,
+      "height": 724,
+      "variants": [
+        {
+          "width": 544,
+          "height": 724,
+          "file": "Figure_15_03_01-cf10-544.webp"
+        }
+      ],
+      "alt": "Illustration shows a series of transcription factors binding to the promoter, which is upstream of the gene. After all of the transcription factors are bound, R N A polymerase I I binds as well.",
+      "caption": "A generalized promoter of a gene transcribed by RNA polymerase II is shown. Transcription factors recognize the promoter. RNA polymerase II then binds and forms the transcription initiation complex."
+    },
+    "Figure_15_03_02-8243": {
+      "source": "media/Figure_15_03_02-8243.png",
+      "sourceSha256": "1320f9ab769d0a3a37d8630054584281514d16e67895a275682c798b2a92e618",
+      "module": "m66500",
+      "kind": "diagram",
+      "width": 900,
+      "height": 675,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_15_03_02-8243-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 675,
+          "file": "Figure_15_03_02-8243-900.webp"
+        }
+      ],
+      "alt": "An illustration shows that in Pre- m R N A processing, there is a primary R N A transcript including regions labeled, left to right, as exon 1, intron, exon 2, intron, and exon 3. The introns are cut and exons are spliced together to produce mRNA. After R N A processing, there is a spliced R N A with these parts, left to right are a 5 prime cap, a 5 prime untranslated region, exon 1, exon 2, exon 3, a 3 prime untranslated region, and a poly a tail. The 5 prime unstranslated region is not separate from exon 1, but is the beginning of exon 1. The 3 prime untranslated region is not separate from exon 3 but the final part of exon 3.",
+      "caption": "Eukaryotic pre-mRNA processing. In addition to 5’ Cap and 3’ Poly-A Tail addition, introns must be precisely removed and exons joined to generate a functional mRNA. Nucleotides upstream (towards the 5’cap) of the translation START codon are part of the 5’ untranslated region (5’ UTR). Nucleotides downstream (towards 3’end) of the STOP codon form the 3’ UTR. Both 5’ and 3’ UTRs are important for regulating translation initiation and mRNA stability. Credit: Rao, A., Ryan, K. Fletcher, S. and Tag, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_15_04_01": {
+      "source": "media/Figure_15_04_01.jpg",
+      "sourceSha256": "cad140839066d6687c21b75613ed6e1605bf31d8801f6d2765cac70605d56235",
+      "module": "m66500",
+      "kind": "photo",
+      "width": 544,
+      "height": 548,
+      "variants": [
+        {
+          "width": 544,
+          "height": 548,
+          "file": "Figure_15_04_01-544.webp"
+        }
+      ],
+      "alt": "Micrograph shows T. brucei, which has a u-shaped cell body and a long tail.",
+      "caption": "Trypanosoma brucei is the causative agent of sleeping sickness in humans. The mRNAs of this pathogen must be modified by the addition of nucleotides before protein synthesis can occur. (credit: modification of work by Torsten Ochsenreiter)"
+    },
+    "Figure_15_04_02-0563": {
+      "source": "media/Figure_15_04_02-0563.jpg",
+      "sourceSha256": "2dfb02c27dd8c52d57ae124034ab3e0275c94024567369993e5227bad155cc4d",
+      "module": "m66507",
+      "kind": "photo",
+      "width": 800,
+      "height": 760,
+      "variants": [
+        {
+          "width": 800,
+          "height": 760,
+          "file": "Figure_15_04_02-0563-800.webp"
+        }
+      ],
+      "alt": "Diagram shows five methods of alternative splicing of pre-mRNA. When exon skipping occurs, an exon is spliced out in one mature mRNA product and retained in another. When mutually exclusive exons are present in the pre-mRNA, only one is retained in the mature mRNA. When an alternative 5’ donor site is present, the location of the 5’ splice site is variable. When an alternative 3’ acceptor site is present, the location of the 3’ splice site is variable. Intron retention results in an intron being retained in one mature mRNA and spliced out in another.",
+      "caption": "There are five basic modes of alternative splicing."
+    },
+    "Figure_15_04_02-50c1": {
+      "source": "media/Figure_15_04_02-50c1.png",
+      "sourceSha256": "9eaa29fa40bb5638959dc13b1bbaf4b767149b069e821e450c5877a1cf43e92c",
+      "module": "m66500",
+      "kind": "diagram",
+      "width": 900,
+      "height": 675,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_15_04_02-50c1-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 675,
+          "file": "Figure_15_04_02-50c1-900.webp"
+        }
+      ],
+      "alt": "Illustration shows a spliceosome bound to m R N A. An intron is wrapped around small R N As associated with the spliceosome. When the splice is complete, the exons on either side of the intron are fused together, and the intron forms a ring structure.",
+      "caption": "Pre-mRNA splicing involves the precise removal of introns from the primary RNA transcript. The splicing process is catalyzed by protein complexes called spliceosomes that are composed of proteins and RNA molecules called small nuclear RNAs (snRNAs). Spliceosomes recognize sequences at the 5' and 3' end of the intron. Rao, A. and Ryan, K. Department of Biology, Texas A&M University."
+    },
+    "Figure_15_04_03": {
+      "source": "media/Figure_15_04_03.jpg",
+      "sourceSha256": "63c23cd0ed6ceaa8ab28a12ef34c5b80a18d7417ec11033f1fe5a463430e44d9",
+      "module": "m66500",
+      "kind": "photo",
+      "width": 544,
+      "height": 718,
+      "variants": [
+        {
+          "width": 544,
+          "height": 718,
+          "file": "Figure_15_04_03-544.webp"
+        }
+      ],
+      "alt": "The molecular model of phenylalanine t R N A is L shaped. At one end is the anticodon A A G. At the other end is the attachment site for the amino acid phenylalanine.",
+      "caption": "This is a space-filling model of a tRNA molecule that adds the amino acid phenylalanine to a growing polypeptide chain. The anticodon AAG binds the Codon UUC on the mRNA. The amino acid phenylalanine is attached to the other end of the tRNA."
+    },
+    "Figure_15_05_01-3c2f": {
+      "source": "media/Figure_15_05_01-3c2f.jpg",
+      "sourceSha256": "4419b7c331c0eb0f504d499f522a5c007f12da3d939a09d07c50cbadd3903be5",
+      "module": "m66501",
+      "kind": "photo",
+      "width": 420,
+      "height": 302,
+      "variants": [
+        {
+          "width": 420,
+          "height": 302,
+          "file": "Figure_15_05_01-3c2f-420.webp"
+        }
+      ],
+      "alt": "Illustration shows two amino acids side-by-side. Each amino acid has an amino group, a carboxyl group, and a side chain labeled R or R prime. Upon formation of a peptide bond, the amino group is joined to the carboxyl group. A water molecule is released in the process.",
+      "caption": "A peptide bond links the carboxyl end of one amino acid with the amino end of another, producing one water molecule during the process. For simplicity in this image, only the functional groups involved in the peptide bond are shown. The R and R' designations refer to the rest of each amino acid structure."
+    },
+    "Figure_15_05_02-c4f4": {
+      "source": "media/Figure_15_05_02-c4f4.png",
+      "sourceSha256": "3e8c81688638130c0f7b09e0a821adc000b64ff740c2e04e65483240d57da0d5",
+      "module": "m66501",
+      "kind": "diagram",
+      "width": 1200,
+      "height": 900,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_15_05_02-c4f4-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 900,
+          "file": "Figure_15_05_02-c4f4-1200.webp"
+        }
+      ],
+      "alt": "Illustration shows the steps of protein synthesis. First, the initiator tRNA recognizes the sequence AUG on an mRNA that is associated with the small ribosomal subunit. The large subunit then joins the complex. Next, a second tRNA is recruited at the A site. A peptide bond is formed between the first amino acid, which is at the P site, and the second amino acid, which is at the A site. The mRNA then shifts and the first tRNA is moved to the E site, where it dissociates from the ribosome. Another tRNA binds at the A site, and the process is repeated. Finally, entry of a release factor into the A site terminates translation and the components dissociate at the stop codon.",
+      "caption": "Translation begins when an initiator tRNA anticodon recognizes a start codon on mRNA bound to a small ribosomal subunit. The large ribosomal subunit joins the small subunit, and a second tRNA is recruited. As the mRNA moves relative to the ribosome, successive tRNAs move through the ribosome and the polypeptide chain is formed. Entry of a release factor into the A site terminates translation and the components dissociate."
+    },
+    "Figure_16_00_01-71d2": {
+      "source": "media/Figure_16_00_01-71d2.jpg",
+      "sourceSha256": "d57a5c6aa9305ee978a7e72a7ab20dd2f0bfd28fcd2b58623e4412da00f00649",
+      "module": "m66502",
+      "kind": "photo",
+      "width": 1117,
+      "height": 297,
+      "variants": [
+        {
+          "width": 800,
+          "height": 212,
+          "file": "Figure_16_00_01-71d2-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 297,
+          "file": "Figure_16_00_01-71d2-1117.webp"
+        }
+      ],
+      "alt": "Part A depicts a cross section of an eyeball, which has a lens at the front and a cluster of blood vessels at the back. Part B depicts a liver, which is shaped like a triangle. Beneath the liver is a lobe-shaped gall bladder connected to a pancreas by a stem-like vessel. Part C is a sketch, drawn by Leonardo Da Vinci, of a man standing erect with outstretched arms. Superimposed on this image, the man has his legs spread and his arms uplifted.",
+      "caption": "The genetic content of each somatic cell in an organism is the same, but not all genes are expressed in every cell. The control of which genes are expressed dictates whether a cell is, for example, (a) an eye cell or (b) a liver cell. It is the differential gene expression patterns that arise in different cells that give rise to (c) a complete organism."
+    },
+    "Figure_16_01_01-9c0a": {
+      "source": "media/Figure_16_01_01-9c0a.jpg",
+      "sourceSha256": "bdb41344f309279623c9c586b5c895edcb1e7561080a69ce499ba7a2aeac4323",
+      "module": "m66503",
+      "kind": "photo",
+      "width": 1200,
+      "height": 459,
+      "variants": [
+        {
+          "width": 800,
+          "height": 306,
+          "file": "Figure_16_01_01-9c0a-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 459,
+          "file": "Figure_16_01_01-9c0a-1200.webp"
+        }
+      ],
+      "alt": "Prokaryotic cells do not have a nucleus, and D N A is located in the cytoplasm. Ribosomes attach to the m R N A as it is being transcribed from D N A. Thus, transcription and translation occur simultaneously. In eukaryotic cells, the D N A is located in the nucleus, and ribosomes are located in the cytoplasm. After being transcribed, pre m R N A is processed in the nucleus to make the mature mRNA, which is then exported to the cytoplasm where ribosomes become associated with it and translation begins.",
+      "caption": "Regulation in prokaryotes and eukaryotes. A. Prokaryotic transcription and translation occur simultaneously in the cytoplasm, and regulation occurs primarily at the transcriptional level. B. Eukaryotic gene expression is regulated during transcription and RNA processing, which take place in the nucleus, and during protein translation, which takes place in the cytoplasm. Further regulation may occur through post-translational modifications of proteins in both prokaryotes and eukaryotes. Credit: Rao, A., Ryan, K. Fletcher, S. and Tag, A. Department of Biology, Texas A&M University."
+    },
+    "Figure_16_02_01-04e9": {
+      "source": "media/Figure_16_02_01-04e9.jpg",
+      "sourceSha256": "a64c984eece547f6695c83d7e8ce6c4e0a16fba47d8d854db350094398d1a093",
+      "module": "m66504",
+      "kind": "photo",
+      "width": 800,
+      "height": 523,
+      "variants": [
+        {
+          "width": 800,
+          "height": 523,
+          "file": "Figure_16_02_01-04e9-800.webp"
+        }
+      ],
+      "alt": "The t r p operon has a promoter, an operator, and five genes named t r p upper case E; t r p upper case D, t r p upper case C, t r p upper case B, and t r p upper case A that are located in sequential order on the D N A. R N A polymerase binds to the promoter. When tryptophan is present, the t r p repressor binds the operator and prevents the R N A polymerase from moving past the operator; therefore, R N A synthesis is blocked. In the absence of tryptophan, the repressor dissociates from the operator. R N A polymerase can now slide past the operator, and transcription begins.",
+      "caption": "The tryptophan operon. The five genes that are needed to synthesize tryptophan in E. coli are located next to each other in the trp operon. When tryptophan is plentiful, two tryptophan molecules bind the repressor protein at the operator sequence. This physically blocks the RNA polymerase from transcribing the tryptophan genes. When tryptophan is absent, the repressor protein does not bind to the operator and the genes are transcribed."
+    },
+    "Figure_16_02_02-994c": {
+      "source": "media/Figure_16_02_02-994c.jpg",
+      "sourceSha256": "2b0c02e817abdde372f10d934ea9c41024227ece515f3a1207c6f884db1f045b",
+      "module": "m66504",
+      "kind": "photo",
+      "width": 800,
+      "height": 474,
+      "variants": [
+        {
+          "width": 800,
+          "height": 474,
+          "file": "Figure_16_02_02-994c-800.webp"
+        }
+      ],
+      "alt": "The lac operon consists of a promoter, an operator, and three genes named lac Z, lac Y, and lac A that are located in sequential order on the D N A. In the absence of c A M P, the CAP protein does not bind the D N A. R N A polymerase binds the promoter, and transcription occurs at a slow rate. In the presence of c A M P, a C A P + c A M P complex binds to the promoter and increases R N A polymerase activity. As a result, the rate of R N A synthesis is increased.",
+      "caption": "Transcriptional activation by the CAP protein. When glucose levels fall, E. coli may use other sugars for fuel but must transcribe new genes to do so. As glucose supplies become limited, cAMP levels increase. This cAMP binds to the CAP protein, a positive regulator that binds to a promoter region upstream of the genes required to use other sugar sources."
+    },
+    "Figure_16_02_03": {
+      "source": "media/Figure_16_02_03.png",
+      "sourceSha256": "3d88f9902c6caa14bad246009f34f879d7dd569c31f1061f24cf9df4f0e041d8",
+      "module": "m66504",
+      "kind": "diagram",
+      "width": 469,
+      "height": 829,
+      "variants": [
+        {
+          "width": 469,
+          "height": 829,
+          "file": "Figure_16_02_03-469.webp"
+        }
+      ],
+      "alt": "The lac operon consists of a promoter, an operator, and three genes named lac Z, lac Y, and lac A. R N A polymerase binds to the promoter. In the absence of lactose, the lac repressor binds to the operator and prevents RNA polymerase from transcribing the operon. In the presence of lactose, the repressor is released from the operator, and transcription proceeds at a slow rate. Binding of the c A M P plus sign CAP complex to the promoter stimulates R N A polymerase activity and increases R N A synthesis. However, even in the presence of the c A M P plus sign CAP complex, R N A synthesis is blocked if the repressor binds to the promoter.",
+      "caption": "Regulation of the lac operon. Transcription of the lac operon is carefully regulated so that its expression only occurs when glucose is limited and lactose is present to serve as an alternative fuel source."
+    },
+    "Figure_16_03_01ab": {
+      "source": "media/Figure_16_03_01ab.jpg",
+      "sourceSha256": "141fcb7d4943fd56e55e0341ce5b6537bc09ab99fa86fb52a7d0c727ad27b983",
+      "module": "m66505",
+      "kind": "photo",
+      "width": 1117,
+      "height": 461,
+      "variants": [
+        {
+          "width": 800,
+          "height": 330,
+          "file": "Figure_16_03_01ab-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 461,
+          "file": "Figure_16_03_01ab-1117.webp"
+        }
+      ],
+      "alt": "Part A depicts a nucleosome composed of spherical histone proteins that are fused together. A double-stranded D N A helix wraps around the nucleosome twice. Free D N A extends from either end of the nucleosome. Part B is an electron micrograph of D N A that is associated with nucleosomes. Each nucleosome looks like a bead. The beads are connected together by free D N A. Nine beads strung together is approximately 150 n m across.",
+      "caption": "DNA is folded around histone proteins to create (a) nucleosome complexes. These nucleosomes control the access of proteins to the underlying DNA. When viewed through an electron microscope (b), the nucleosomes look like beads on a string. (credit “micrograph”: modification of work by Chris Woodcock)"
+    },
+    "Figure_16_03_02-2170": {
+      "source": "media/Figure_16_03_02-2170.png",
+      "sourceSha256": "8f51719a98502321f06b9363925eb5ba62e5f8809c1cd9f43b61efdae01924fd",
+      "module": "m66505",
+      "kind": "diagram",
+      "width": 725,
+      "height": 561,
+      "variants": [
+        {
+          "width": 725,
+          "height": 561,
+          "file": "Figure_16_03_02-2170-725.webp"
+        }
+      ],
+      "alt": "Nucleosomes are depicted as wheel like structures. The nucleosomes are made up of histones, and have D N A wrapped around the outside. Each histone has a tail that juts out from the wheel. When D N A and the histone tails are methylated, the nucleosomes pack tightly together so there is no free D N A. Transcription factors cannot bind, and genes are not expressed. Acetylation of histone tails results in a looser packing of the nucleosomes. Free D N A is exposed between the nucleosomes, and transcription factors are able to bind genes on this exposed D N A.",
+      "caption": "Nucleosomes can slide along DNA. When nucleosomes are spaced closely together (top), transcription factors cannot bind and gene expression is turned off. When the nucleosomes are spaced far apart (bottom), the DNA is exposed. Transcription factors can bind, allowing gene expression to occur. Modifications to the histones and DNA affect nucleosome spacing."
+    },
+    "Figure_16_03_03-6d14": {
+      "source": "media/Figure_16_03_03-6d14.jpg",
+      "sourceSha256": "9242d635a72af8b3e25f78103bec41e56ddb66f4c792aecf9c34e63b990a92fb",
+      "module": "m66505",
+      "kind": "photo",
+      "width": 800,
+      "height": 538,
+      "variants": [
+        {
+          "width": 800,
+          "height": 538,
+          "file": "Figure_16_03_03-6d14-800.webp"
+        }
+      ],
+      "alt": "Illustration shows a chromosome that is partially unraveled and magnified, revealing the DNA double helix that had been wound around histone proteins. Histones are proteins around which DNA winds for compaction and gene regulation. Methylation of D N A and chemical modification of histone tails are known as epigenetic changes. Epigenetic changes alter the spacing of nucleosomes and change gene expression. Epigenetic changes may result from development, either in utero or in childhood, environmental chemicals, drugs, aging, or diet. Epigenetic changes may result in cancer, autoimmune disease, mental disorders, and diabetes.",
+      "caption": "Histone proteins and DNA nucleotides can be modified chemically. Modifications affect nucleosome spacing and gene expression. (credit: modification of work by NIH)"
+    },
+    "Figure_16_04_01": {
+      "source": "media/Figure_16_04_01.jpg",
+      "sourceSha256": "0c91f5cc41ddb3607f1271cfeb7e69807470039aaab88c189fc8e4165ba968b5",
+      "module": "m66506",
+      "kind": "photo",
+      "width": 544,
+      "height": 637,
+      "variants": [
+        {
+          "width": 544,
+          "height": 637,
+          "file": "Figure_16_04_01-544.webp"
+        }
+      ],
+      "alt": "Eukaryotic gene expression is controlled by a promoter immediately adjacent to the gene, and an enhancer far upstream. The D N A folds over itself, bringing the enhancer next to the promoter. Transcription factors and mediator proteins are sandwiched between the promoter and the enhancer. Short D N A sequences within the enhancer called distal control elements bind activators, which in turn bind transcription factors and mediator proteins bound to the promoter. R N A polymerase binds the complex, allowing transcription to begin. Different genes have enhancers with different distal control elements, allowing differential regulation of transcription.",
+      "caption": "Interaction between proteins at the promoter and enhancer sites. An enhancer is a DNA sequence that promotes transcription. Each enhancer is made up of short DNA sequences called distal control elements. Activators bound to the distal control elements interact with mediator proteins and transcription factors. Two different genes may have the same promoter but different distal control elements, enabling differential gene expression."
+    },
+    "Figure_16_05_02": {
+      "source": "media/Figure_16_05_02.jpg",
+      "sourceSha256": "80ac20da9c6e1718ed6043bd271a76a75b6b0a93c330a97be65e6b9d7cb9557d",
+      "module": "m66507",
+      "kind": "photo",
+      "width": 800,
+      "height": 170,
+      "variants": [
+        {
+          "width": 800,
+          "height": 170,
+          "file": "Figure_16_05_02-800.webp"
+        }
+      ],
+      "alt": "In the mature R N A molecule, exons are spliced together between the 5 prime and 3 prime untranslated regions. A 5 prime cap is attached to the 5 prime untranslated region, and a poly A tail is attached to the 3 prime untranslated region. R N A binding proteins associate with the 5 prime and 3 prime untranslated regions.",
+      "caption": "RNA-binding proteins. The protein-coding region of this processed mRNA is flanked by 5' and 3' untranslated regions (UTRs). The presence of RNA-binding proteins at the 5' or 3' UTR influences the stability of the RNA molecule."
+    },
+    "Figure_16_05_03-becb": {
+      "source": "media/Figure_16_05_03-becb.jpg",
+      "sourceSha256": "cd995952516034443ebf5b3ad1c1dab8fb7dde52c15e95e8e2218619cb627920",
+      "module": "m66507",
+      "kind": "photo",
+      "width": 544,
+      "height": 155,
+      "variants": [
+        {
+          "width": 544,
+          "height": 155,
+          "file": "Figure_16_05_03-becb-544.webp"
+        }
+      ],
+      "alt": "A pre m R N A has four exons separated by three introns. The pre m R N A can be alternatively spliced to create two different mRNA molecules, each with three exons. One mRNA contains exons one, two, and three. The other mRNA contains exons one, three and four. Each of the two mRNA molecules will produce two different polypeptides.",
+      "caption": "Pre-mRNA can be alternatively spliced to create differently mature mRNAs which will ultimately lead to formation of different proteins from the same gene."
+    },
+    "Figure_16_06_01": {
+      "source": "media/Figure_16_06_01.jpg",
+      "sourceSha256": "a5fd9bd5eff271fe357c742502ab5b871ae86b43963b0bfbf19680ee3a7f7056",
+      "module": "m66508",
+      "kind": "photo",
+      "width": 469,
+      "height": 282,
+      "variants": [
+        {
+          "width": 469,
+          "height": 282,
+          "file": "Figure_16_06_01-469.webp"
+        }
+      ],
+      "alt": "The lower case e lower case I upper case F dash 2 protein is a translation factor that binds to the small 40 S ribosome subunit. When e I F dash 2 is phosphorylated, translation is blocked.",
+      "caption": "Gene expression can be controlled by factors that bind the translation initiation complex."
+    },
+    "Figure_16_06_02": {
+      "source": "media/Figure_16_06_02.png",
+      "sourceSha256": "6d16d201b4b6658814446a0e5f0ce1f80f39eae9c9755901790cdc025759a2d8",
+      "module": "m66508",
+      "kind": "diagram",
+      "width": 600,
+      "height": 204,
+      "variants": [
+        {
+          "width": 600,
+          "height": 204,
+          "file": "Figure_16_06_02-600.webp"
+        }
+      ],
+      "alt": "Multiple ubiquitin groups combine to bind to a protein. The tagged protein is then fed into the hollow tube of a proteasome. The proteasome degrades the protein. This produces ADP and amino acids, and the ubiquitin is also released.",
+      "caption": "Proteins with ubiquitin tags are marked for degradation within the proteasome."
+    },
+    "Figure_18_00_01ab-3e8c": {
+      "source": "media/Figure_18_00_01ab-3e8c.jpg",
+      "sourceSha256": "a10fa5be3367d22136398e5f621d48ab04cc09eef761a65ae801882bd70237f9",
+      "module": "m66516",
+      "kind": "photo",
+      "width": 1267,
+      "height": 381,
+      "variants": [
+        {
+          "width": 800,
+          "height": 240,
+          "file": "Figure_18_00_01ab-3e8c-800.webp"
+        },
+        {
+          "width": 1267,
+          "height": 381,
+          "file": "Figure_18_00_01ab-3e8c-1267.webp"
+        }
+      ],
+      "alt": "The photo on the left shows large, stalk-like saguaro cacti with multiple arms, and the photo on the right shows a lizard on a rock.",
+      "caption": "All organisms are products of evolution adapted to their environment. (a) Saguaro ( Carnegiea gigantea ) can soak up 750 liters of water in a single rain storm, enabling these cacti to survive the dry conditions of the Sonora desert in Mexico and the Southwestern United States. (b) The Andean semiaquatic lizard ( Potamites montanicola ) discovered in Peru in 2010 lives between 1,570 to 2,100 meters in elevation, and, unlike most lizards, is nocturnal and swims. Scientists still do not know how these cold-blood animals are able to move in the cold (10 to 15°C) temperatures of the Andean night. (credit a: modification of work by Gentry George, U.S. Fish and Wildlife Service; credit b: modification of work by Germán Chávez and Diego Vásquez, ZooKeys )"
+    },
+    "Figure_18_01_01-beaks": {
+      "source": "media/Figure_18_01_01-beaks.jpg",
+      "sourceSha256": "3f39a83ec8ac1c524ed19c61b74a739118212619ca129f3d107c8ffa565fa1b8",
+      "module": "m66518",
+      "kind": "photo",
+      "width": 544,
+      "height": 491,
+      "variants": [
+        {
+          "width": 544,
+          "height": 491,
+          "file": "Figure_18_01_01-beaks-544.webp"
+        }
+      ],
+      "alt": "Illustration shows four different species of finch from the Galapagos Islands. Beak shape ranges from broad and thick to narrow and thin.",
+      "caption": "Darwin observed that beak shape varies among finch species. He postulated that ancestral species' beaks had adapted over time to equip the finches to acquire different food sources."
+    },
+    "Figure_18_01_02ab": {
+      "source": "media/Figure_18_01_02ab.jpg",
+      "sourceSha256": "7665b64ab100ccc6ea39959c9ad77f3c05e6023d1d7c2ab85a80419f4ee7fd3b",
+      "module": "m66518",
+      "kind": "photo",
+      "width": 800,
+      "height": 541,
+      "variants": [
+        {
+          "width": 800,
+          "height": 541,
+          "file": "Figure_18_01_02ab-800.webp"
+        }
+      ],
+      "alt": "Images of Charles Darwin and Alfred Wallace are shown.",
+      "caption": "Both (a) Charles Darwin and (b) Alfred Wallace wrote scientific papers on natural selection that they presented together at the Linnean Society in 1858."
+    },
+    "Figure_18_01_03-0b39": {
+      "source": "media/Figure_18_01_03-0b39.jpg",
+      "sourceSha256": "001538baac3cbc17ac4fd11b0acb4cce57cc54ccbfa4d56ccc737cec88489976",
+      "module": "m66518",
+      "kind": "photo",
+      "width": 469,
+      "height": 352,
+      "variants": [
+        {
+          "width": 469,
+          "height": 352,
+          "file": "Figure_18_01_03-0b39-469.webp"
+        }
+      ],
+      "alt": "Photo shows a scientist next to a tranquilized polar bear laying on the snow.",
+      "caption": "A field biologist tranquilizes a polar bear for study. (credit: Karen Rhode)"
+    },
+    "Figure_18_01_04ab-e353": {
+      "source": "media/Figure_18_01_04ab-e353.jpg",
+      "sourceSha256": "4cded6e2456c662be62dab95345fdc446a10f299b6195f8d20550264fac3720c",
+      "module": "m66518",
+      "kind": "photo",
+      "width": 800,
+      "height": 395,
+      "variants": [
+        {
+          "width": 800,
+          "height": 395,
+          "file": "Figure_18_01_04ab-e353-800.webp"
+        }
+      ],
+      "alt": "Photo showing a Dense Blazing Star (Liatrus spicata) and a Purple Coneflower (Echinacea purpurea). The dense blazing star flower has purple strand like petals budding from its stem. The coneflower has a large circular center of the budding flower, with purple petals growing from it.",
+      "caption": "Flowering plants evolved from a common ancestor. Notice that the (a) dense blazing star ( Liatrus spicata ) and the (b) purple coneflower ( Echinacea purpurea ) vary in appearance, yet both share a similar basic morphology. (credit a: modification of work by Drew Avery; credit b: modification of work by Cory Zanker)"
+    },
+    "Figure_18_01_05-4164": {
+      "source": "media/Figure_18_01_05-4164.jpg",
+      "sourceSha256": "ec1cee77f542e33514a8320fb1804e02a4c21535f1845e345e659b69651201ae",
+      "module": "m66518",
+      "kind": "photo",
+      "width": 1117,
+      "height": 461,
+      "variants": [
+        {
+          "width": 800,
+          "height": 330,
+          "file": "Figure_18_01_05-4164-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 461,
+          "file": "Figure_18_01_05-4164-1117.webp"
+        }
+      ],
+      "alt": "Photo A shows a museum display of hominid skulls that vary in size and shape. Illustration B shows five extinct species related and similar in appearance to the modern horse. The species vary in size from that of a modern horse to that of a medium-sized dog.",
+      "caption": "In this (a) display, fossil hominids are arranged from oldest (bottom) to newest (top). As hominids evolved, the skull's shape changed. An artist’s rendition of (b) extinct species of the genus Equus reveals that these ancient species resembled the modern horse ( Equus ferus ) but varied in size."
+    },
+    "Figure_18_01_06-9f9f": {
+      "source": "media/Figure_18_01_06-9f9f.jpg",
+      "sourceSha256": "b8585402013588fc752cac1af4f75ac5d6b6e7923bfce4aeaeeebb1d6e49776a",
+      "module": "m66518",
+      "kind": "photo",
+      "width": 544,
+      "height": 387,
+      "variants": [
+        {
+          "width": 544,
+          "height": 387,
+          "file": "Figure_18_01_06-9f9f-544.webp"
+        }
+      ],
+      "alt": "Illustration compares a human arm, dog and bird legs, and a whale flipper. All appendages have the same bones, but the size and shape of these bones vary.",
+      "caption": "The similar construction of these appendages indicates that these organisms share a common ancestor."
+    },
+    "Figure_18_01_07ab": {
+      "source": "media/Figure_18_01_07ab.jpg",
+      "sourceSha256": "7ca06320a6cc370236ddca1e50f4c97e772ec5bd7eddb876536db37c96db4436",
+      "module": "m66518",
+      "kind": "photo",
+      "width": 800,
+      "height": 517,
+      "variants": [
+        {
+          "width": 800,
+          "height": 517,
+          "file": "Figure_18_01_07ab-800.webp"
+        }
+      ],
+      "alt": "The left photo depicts an arctic fox with white fur sleeping on white snow, and the right photo shows a ptarmigan bird with white plumage standing on white snow.",
+      "caption": "The white winter coat of the (a) arctic fox and the (b) ptarmigan’s plumage are adaptations to their environments. (credit a: modification of work by Keith Morehouse)"
+    },
+    "Figure_18_02_01abc": {
+      "source": "media/Figure_18_02_01abc.jpg",
+      "sourceSha256": "dec3f9c42c0ae6e3ac83578cb882413469cf44ba19596a449061a6eab0336534",
+      "module": "m66520",
+      "kind": "photo",
+      "width": 1117,
+      "height": 393,
+      "variants": [
+        {
+          "width": 800,
+          "height": 281,
+          "file": "Figure_18_02_01abc-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 393,
+          "file": "Figure_18_02_01abc-1117.webp"
+        }
+      ],
+      "alt": "Photo a shows a poodle with curly short fur. Photo b shows a cocker spaniel with long, wavy fur that has light brown parts and cream-colored markings on the face, forepaws, belly, hind legs, and tail. The poodle has longer legs than the cocker spaniel. The cockapoo in photo c has curly hair, like the poodle, and short legs, like the cocker spaniel.",
+      "caption": "The (a) poodle and (b) cocker spaniel can reproduce to produce a breed known as (c) the cockapoo. (credit a: modification of work by Sally Eller, Tom Reese; credit b: modification of work by Jeremy McWilliams; credit c: modification of work by Kathleen Conklin)"
+    },
+    "Figure_18_02_02ab-afd4": {
+      "source": "media/Figure_18_02_02ab-afd4.jpg",
+      "sourceSha256": "549ddfd6dde873a34bdbc993533a3455e158c08f6575d983705f619bd1c60519",
+      "module": "m66520",
+      "kind": "photo",
+      "width": 800,
+      "height": 317,
+      "variants": [
+        {
+          "width": 800,
+          "height": 317,
+          "file": "Figure_18_02_02ab-afd4-800.webp"
+        }
+      ],
+      "alt": "Photo a shows a picture of the African fish eagle in flight, and photo b shows the bald eagle perched on a post. Both birds have dark brown feathers on their bodies and wings, and white feathered heads.",
+      "caption": "The (a) African fish eagle is similar in appearance to the (b) bald eagle, but the two birds are members of different species. (credit a: modification of work by Nigel Wedge; credit b: modification of work by U.S. Fish and Wildlife Service)"
+    },
+    "Figure_18_02_03ab": {
+      "source": "media/Figure_18_02_03ab.jpg",
+      "sourceSha256": "99b7c4e21c9739262d592852d361f5db279d3db2e56600ba2412279a3c047652",
+      "module": "m66520",
+      "kind": "photo",
+      "width": 1117,
+      "height": 504,
+      "variants": [
+        {
+          "width": 800,
+          "height": 361,
+          "file": "Figure_18_02_03ab-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 504,
+          "file": "Figure_18_02_03ab-1117.webp"
+        }
+      ],
+      "alt": "Image (a) shows a sketch of lines branching into a tree shape. At the bottom are 11 vertical lines labeled A through L. These then are branched out as they move up across the page through fourteen rows labeled with Roman numerals. Some branches make a straight line from the bottom row to the top row, others keep branching out further at each row, and some are straight partway through the rows until they connect to an existing branch or form no connection and instead stop. The top four rows contain lines branching out from 6 locations on row 11 to 15 individual final designations on row 14. Illustration B shows the evolution of modern African and Asian elephants from a common ancestor, the Palaeomastodon. The Palaeomastodon was similar to modern elephants; however, it was smaller and had a long nose instead of a trunk. Side branches of the elephant evolutionary tree gave rise to mastodons and mammoths. The mammoth is more closely related to modern elephants than the mastodon.",
+      "caption": "The only illustration in Darwin's On the Origin of Species is (a) a diagram showing speciation events leading to biological diversity. The diagram shows similarities to phylogenetic charts that today illustrate the relationships of species. (b) Modern elephants evolved from the Palaeomastodon , a species that lived in Egypt 35–50 million years ago."
+    },
+    "Figure_18_02_04": {
+      "source": "media/Figure_18_02_04.jpg",
+      "sourceSha256": "849c00e9ef88cc8af311c2ec209f1d0bbc66c7b3cf3fdbb539dc1cb11b782b35",
+      "module": "m66520",
+      "kind": "photo",
+      "width": 544,
+      "height": 642,
+      "variants": [
+        {
+          "width": 544,
+          "height": 642,
+          "file": "Figure_18_02_04-544.webp"
+        }
+      ],
+      "alt": "The northern spotted owl lives in the Pacific Northwest, and the Mexican spotted owl lives in Mexico and the southwestern portion of the United States. The two owls are similar in appearance but with slightly different coloration.",
+      "caption": "The northern spotted owl and the Mexican spotted owl inhabit geographically separate locations with different climates and ecosystems. The owl is an example of allopatric speciation. (credit \"northern spotted owl\": modification of work by John and Karen Hollingsworth; credit \"Mexican spotted owl\": modification of work by Bill Radke)"
+    },
+    "Figure_18_02_05-feb4": {
+      "source": "media/Figure_18_02_05-feb4.jpg",
+      "sourceSha256": "51dd06686d748873efc7ceb9e206d4814fc1ca4450856b4fc6bc1754c9a8e9fd",
+      "module": "m66520",
+      "kind": "photo",
+      "width": 789,
+      "height": 800,
+      "variants": [
+        {
+          "width": 789,
+          "height": 800,
+          "file": "Figure_18_02_05-feb4-789.webp"
+        }
+      ],
+      "alt": "The illustration shows a wheel with the founder species at the hub. The spokes of the wheel are six modern honeycreeper bird species that evolved from the founder bird species. Five of these birds eat insects and or nectar and have long, thick beaks; these are the ‘Apapane, ‘Iwi, ‘Amakihi, ‘Akiapola'au and Maui Parrotbill. The Nihoa Finch has a short, fat beak and eats insects, seeds, and bird eggs.",
+      "caption": "The honeycreeper birds illustrate adaptive radiation. From one original species of bird, multiple others evolved, each with its own distinctive characteristics."
+    },
+    "Figure_18_02_06": {
+      "source": "media/Figure_18_02_06.png",
+      "sourceSha256": "13798ed7fa2ea017d4d4e50ba57dcf1316a2ca25f108e47067be07b86a1b6900",
+      "module": "m66520",
+      "kind": "diagram",
+      "width": 725,
+      "height": 498,
+      "variants": [
+        {
+          "width": 725,
+          "height": 498,
+          "file": "Figure_18_02_06-725.webp"
+        }
+      ],
+      "alt": "Aneuploidy results when chromosomes fail to separate correctly during meiosis. As a result, one gamete has one too many chromosomes, shown as n plus 1, and the other has one too few, shown as n minus 1. When the n + 1 gamete fuses with a normal gamete, the resulting zygote has 2 n + 1 chromosomes. When the n minus 1 gamete fuses with a normal gamete, the resulting zygote has 2 n minus 1 chromosomes.",
+      "caption": "Aneuploidy results when the gametes have too many or too few chromosomes due to nondisjunction during meiosis. In this example, the resulting offspring will have 2 n +1 or 2 n -1 chromosomes."
+    },
+    "Figure_18_02_07": {
+      "source": "media/Figure_18_02_07.jpg",
+      "sourceSha256": "76214de5e5156aa5fd28a20d8dee0044b58672af3f638f035aab658ec58db6de",
+      "module": "m66520",
+      "kind": "photo",
+      "width": 544,
+      "height": 254,
+      "variants": [
+        {
+          "width": 544,
+          "height": 254,
+          "file": "Figure_18_02_07-544.webp"
+        }
+      ],
+      "alt": "Autopolyploidy results in offspring with two sets of chromosomes. In the example shown, a diploid parent, 2 n produces polyploid offspring 4 n.",
+      "caption": "Autopolyploidy results when mitosis is not followed by cytokinesis."
+    },
+    "Figure_18_02_09ab": {
+      "source": "media/Figure_18_02_09ab.jpg",
+      "sourceSha256": "a56f6887e81f699857c1a8b186737089580ec1468e878409fa624b6c14c75eab",
+      "module": "m66520",
+      "kind": "photo",
+      "width": 800,
+      "height": 332,
+      "variants": [
+        {
+          "width": 800,
+          "height": 332,
+          "file": "Figure_18_02_09ab-800.webp"
+        }
+      ],
+      "alt": "Photo a shows Rana aurora, a beige frog with green spots. Photo b shows Rana boylii, a brown frog.",
+      "caption": "These two related frog species exhibit temporal reproductive isolation. (a) Rana aurora breeds earlier in the year than (b) Rana boylii . (credit a: modification of work by Mark R. Jennings, USFWS; credit b: modification of work by Alessandro Catenazzi)"
+    },
+    "Figure_18_02_10ab": {
+      "source": "media/Figure_18_02_10ab.jpg",
+      "sourceSha256": "4245d6ce047f88554189550d6cb8398ca4a140b110bc72cfc7b2b7ed37aeb9d2",
+      "module": "m66520",
+      "kind": "photo",
+      "width": 800,
+      "height": 362,
+      "variants": [
+        {
+          "width": 800,
+          "height": 362,
+          "file": "Figure_18_02_10ab-800.webp"
+        }
+      ],
+      "alt": "Illustration A shows the black Gryllus pennsylvanicus cricket on sandy soil, and illustration B shows the beige Gryllus firmus cricket in grass.",
+      "caption": "Speciation can occur when two populations occupy different habitats. The habitats need not be far apart. The cricket (a) Gryllus pennsylvanicus prefers sandy soil, and the cricket (b) Gryllus firmus prefers loamy soil. The two species can live in close proximity, but because of their different soil preferences, they became genetically isolated."
+    },
+    "Figure_18_02_11": {
+      "source": "media/Figure_18_02_11.jpg",
+      "sourceSha256": "0a57909cd3217040a15b8a704001c0150aaa140c9108db5f89883d4e71a6daed",
+      "module": "m66520",
+      "kind": "photo",
+      "width": 800,
+      "height": 150,
+      "variants": [
+        {
+          "width": 800,
+          "height": 150,
+          "file": "Figure_18_02_11-800.webp"
+        }
+      ],
+      "alt": "Illustrations show four different types of damselfly reproductive organs. Each organ has a hook, but the shape and length of the hook varies, as does the shape of the organ itself.",
+      "caption": "The shape of the male reproductive organ varies among male damselfly species, and is only compatible with the female of that species. Reproductive organ incompatibility keeps the species reproductively isolated."
+    },
+    "Figure_18_02_12": {
+      "source": "media/Figure_18_02_12.jpg",
+      "sourceSha256": "a2f0baa925ab18adbdf263c95c9070df06f38f9fb75adec4e4f2424162b88156",
+      "module": "m66520",
+      "kind": "photo",
+      "width": 800,
+      "height": 333,
+      "variants": [
+        {
+          "width": 800,
+          "height": 333,
+          "file": "Figure_18_02_12-800.webp"
+        }
+      ],
+      "alt": "Illustration a shows a bee collecting pollen from a bright purple foxglove flower. The bee's body fits inside the bell like flower. Illustration B shows a hummingbird drinking nectar from a long tube like trumpet creeper flower.",
+      "caption": "Some flowers have evolved to attract certain pollinators. The (a) wide foxglove flower is adapted for pollination by bees, while the (b) long, tube-shaped trumpet creeper flower is adapted for pollination by hummingbirds."
+    },
+    "Figure_18_02_13n": {
+      "source": "media/Figure_18_02_13n.jpg",
+      "sourceSha256": "1faa03c3527385c51dc09d9fe16b48821343a5282ca9a84727d2963ef9eed920",
+      "module": "m66520",
+      "kind": "photo",
+      "width": 1117,
+      "height": 254,
+      "variants": [
+        {
+          "width": 800,
+          "height": 182,
+          "file": "Figure_18_02_13n-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 254,
+          "file": "Figure_18_02_13n-1117.webp"
+        }
+      ],
+      "alt": "Illustrations show two species of cichlid fish which are similar in appearance except that one has thin lips, and one has thick lips.",
+      "caption": "Cichlid fish from Lake Apoyeque, Nicaragua, show evidence of sympatric speciation. Lake Apoyeque, a crater lake, is 1800 years old, but genetic evidence indicates that a single population of cichlid fish populated the lake only 100 years ago. Nevertheless, two populations with distinct morphologies and diets now exist in the lake, and scientists believe these populations may be in an early stage of speciation."
+    },
+    "Figure_18_03_01": {
+      "source": "media/Figure_18_03_01.png",
+      "sourceSha256": "16a7ded78331582a1a3388e75fb8a7d99e9c2465aefeb9695f4e06a2379b2a5e",
+      "module": "m66521",
+      "kind": "diagram",
+      "width": 725,
+      "height": 435,
+      "variants": [
+        {
+          "width": 725,
+          "height": 435,
+          "file": "Figure_18_03_01-725.webp"
+        }
+      ],
+      "alt": "Three different possible changes in the hybrid zone may occur over time. The first possible change, reinforcement, results when hybrids are less fit than either purebred species. Like a fork in the road, the species continue to diverge until hybridization no longer occurs. The second possible change, fusion, results when reproductive barriers weaken until two species become one. In this scenario species initially diverge, but then join together. In the third scenario, stability, fit hybrids continue to be produced at a steady rate.",
+      "caption": "After speciation has occurred, the two separate but closely related species may continue to produce offspring in an area called the hybrid zone. Reinforcement, fusion, or stability may result, depending on reproductive barriers and the relative fitness of the hybrids."
+    },
+    "Figure_18_03_02-96a7": {
+      "source": "media/Figure_18_03_02-96a7.png",
+      "sourceSha256": "d3e60d2ff53115741707098557159caec1d136c9b4261e015cc7ac9ac1a14ba9",
+      "module": "m66521",
+      "kind": "diagram",
+      "width": 1043,
+      "height": 750,
+      "variants": [
+        {
+          "width": 800,
+          "height": 575,
+          "file": "Figure_18_03_02-96a7-800.webp"
+        },
+        {
+          "width": 1043,
+          "height": 750,
+          "file": "Figure_18_03_02-96a7-1043.webp"
+        }
+      ],
+      "alt": "In the gradual speciation example, a founder species of bird diverges into one species with a hooked beak, and another with strait beak. Over time, through gradual intermediate stages, the hooked beak gets longer and thinner, and the straight beak gets shorter and fatter. In the punctuated equilibrium example, as in the graduated speciation example, the founder species diverges into one species with a hooked break and another with a straight beak. However, in this case the hooked and straight beaks remain unchanged for a significant period of time, and only then give rise to long, thin and short, fat beaks.",
+      "caption": "In (a) gradual speciation, species diverge at a slow, steady pace as traits change incrementally. In (b) punctuated equilibrium, species diverge quickly and then remain unchanged for long periods of time."
+    },
+    "Figure_19_00_01-fcb8": {
+      "source": "media/Figure_19_00_01-fcb8.jpg",
+      "sourceSha256": "3c5342d665a6159a377bbfb895675769365c9ee369afd40ff573d3f90bef1c6e",
+      "module": "m66522",
+      "kind": "photo",
+      "width": 1117,
+      "height": 481,
+      "variants": [
+        {
+          "width": 800,
+          "height": 344,
+          "file": "Figure_19_00_01-fcb8-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 481,
+          "file": "Figure_19_00_01-fcb8-1117.webp"
+        }
+      ],
+      "alt": "This photo collage shows a wolf, a cucumber-shaped protozoan, a sea sponge, a slime mold, lichen, the shore of a lake with algae and trees, a spiny lion fish, a mushroom, a sequoia, and a bee drinking nectar from a flower.",
+      "caption": "Living things may be single-celled or complex, multicellular organisms. They may be plants, animals, fungi, bacteria, or archaea. This diversity results from evolution. (credit \"wolf\": modification of work by Gary Kramer; credit \"coral\": modification of work by William Harrigan, NOAA; credit \"river\": modification of work by Vojtěch Dostál; credit \"fish\" modification of work by Christian Mehlführer; credit \"mushroom\": modification of work by Cory Zanker; credit \"tree\": modification of work by Joseph Kranak; credit \"bee\": modification of work by Cory Zanker)"
+    },
+    "Figure_19_02_01": {
+      "source": "media/Figure_19_02_01.jpg",
+      "sourceSha256": "cd17b4b3009b64b2b7147e2dc27bcb052fed821e3e4dfea761ac7a59c52e5e02",
+      "module": "m66524",
+      "kind": "photo",
+      "width": 544,
+      "height": 362,
+      "variants": [
+        {
+          "width": 544,
+          "height": 362,
+          "file": "Figure_19_02_01-544.webp"
+        }
+      ],
+      "alt": "This photo shows four kittens in a basket: two are gray, black, orange, and white, the third cat is orange and white, and the fourth cat is black.",
+      "caption": "The distribution of phenotypes in this litter of kittens illustrates population variation. (credit: Pieter Lanser)"
+    },
+    "Figure_19_02_02": {
+      "source": "media/Figure_19_02_02.png",
+      "sourceSha256": "b56f0922bb53b7a96d22c32424d81900aec21bc77d07fc525a1228a8204638f5",
+      "module": "m66524",
+      "kind": "diagram",
+      "width": 469,
+      "height": 1112,
+      "variants": [
+        {
+          "width": 469,
+          "height": 1112,
+          "file": "Figure_19_02_02-469.webp"
+        }
+      ],
+      "alt": "A population has 10 rabbits. 2 of these rabbits are homozygous dominant for the B allele and have brown coat color. 6 are heterozygous and also have brown coat color. Two are homozygous recessive and have white coat color. The frequency of the capital B allele, p, is .5 and the frequency of the small b allele, q, is also .5. Only 5 of the rabbits, including 2 homozygous dominant and 3 heterozygous individuals, produce offspring. 5 of the resulting offspring are homozygous dominant, 4 are heterozygous, and 1 is homozygous recessive. The frequency of alleles in the second generation is p=.7 and q=.3. Only 2 rabbits in the second generation produce offspring, and both of these are homozygous dominant. As a result, the recessive small b allele is lost in the third generation, and all of the rabbits are heterozygous dominant with brown coat color.",
+      "caption": "Genetic drift in a population can lead to eliminating an allele from a population by chance. In this example, rabbits with the brown coat color allele ( B ) are dominant over rabbits with the white coat color allele ( b ). In the first generation, the two alleles occur with equal frequency in the population, resulting in p and q values of .5. Only half of the individuals reproduce, resulting in a second generation with p and q values of .7 and .3, respectively. Only two individuals in the second generation reproduce, and by chance these individuals are homozygous dominant for brown coat color. As a result, in the third generation the recessive b allele is lost."
+    },
+    "Figure_19_02_03-b234": {
+      "source": "media/Figure_19_02_03-b234.jpg",
+      "sourceSha256": "6fe9337ed206c0590436852a7dc3a50ce6eef722de7bf83c897e7b776a9d11bf",
+      "module": "m66524",
+      "kind": "photo",
+      "width": 544,
+      "height": 507,
+      "variants": [
+        {
+          "width": 544,
+          "height": 507,
+          "file": "Figure_19_02_03-b234-544.webp"
+        }
+      ],
+      "alt": "This illustration shows a narrow-neck bottle filled with red, orange, and green marbles. The bottle is tipped so the marbles pour into a glass. Because of the bottleneck, only seven marbles escape, and these are all orange and green. The marbles in the bottle represent the original population, and the marbles in the glass represent the surviving population. Because of the bottleneck effect, the surviving population is less diverse than the original population.",
+      "caption": "A chance event or catastrophe can reduce the genetic variability within a population."
+    },
+    "Figure_19_02_04": {
+      "source": "media/Figure_19_02_04.jpg",
+      "sourceSha256": "d6db8afbd0c005f19e7a05121c9f1a9e4effe9349558dbbd81e28ca49fa37d4f",
+      "module": "m66524",
+      "kind": "photo",
+      "width": 547,
+      "height": 265,
+      "variants": [
+        {
+          "width": 547,
+          "height": 265,
+          "file": "Figure_19_02_04-547.webp"
+        }
+      ],
+      "alt": "This illustration shows an individual from a population of brown insects traveling toward a population of green insects.",
+      "caption": "Gene flow can occur when an individual travels from one geographic location to another."
+    },
+    "Figure_19_02_05": {
+      "source": "media/Figure_19_02_05.jpg",
+      "sourceSha256": "ba718c658761b9c1723e231a80f7a8242eb1b5cb2f9309f6bcade0103b376665",
+      "module": "m66524",
+      "kind": "photo",
+      "width": 544,
+      "height": 363,
+      "variants": [
+        {
+          "width": 544,
+          "height": 363,
+          "file": "Figure_19_02_05-544.webp"
+        }
+      ],
+      "alt": "This photo shows a person holding a baby alligator.",
+      "caption": "The temperature at which the eggs are incubated determine the American alligator's ( Alligator mississippiensis ) sex. Eggs incubated at 30°C produce females, and eggs incubated at 33°C produce males. (credit: Steve Hillebrand, USFWS)"
+    },
+    "Figure_19_03_01": {
+      "source": "media/Figure_19_03_01.png",
+      "sourceSha256": "634821f863c8483732b1af5699a8319e54639b0012fff8daef9a6f9c31f7e9ee",
+      "module": "m66718",
+      "kind": "diagram",
+      "width": 725,
+      "height": 895,
+      "variants": [
+        {
+          "width": 725,
+          "height": 895,
+          "file": "Figure_19_03_01-725.webp"
+        }
+      ],
+      "alt": "Part (a) shows a robin clutch size as an example of stabilizing selection. Robins typically lay four eggs. Larger clutches may result in malnourished chicks, while smaller clutches may result in no viable offspring. A wide bell curve indicates that, in the original population, there was a lot of variability in clutch size. Overlaying this wide bell curve is a narrow one that represents the clutch size after natural selection, which is much less variable. Part (b) shows moth color as an example of directional selection. Light-colored pepper moths are better camouflaged against a pristine environment, while dark-colored peppered moths are better camouflaged against a sooty environment. Thus, as the Industrial Revolution progressed in nineteenth-century England, the color of the moth population shifted from light to dark, an example of directional selection. A bell curve representing the original population and one representing the population after natural selection only slightly overlap. Part (c) shows rabbit coat color as an example of diversifying selection. In this hypothetical example, gray and Himalayan (gray and white) rabbits are better able to blend into their rocky environment than white ones. The original population is represented by a bell curve in which white is the most common coat color, while gray and Himalayan colors, on the right and left flank of the curve, are less common. After natural selection, the bell curve splits into two peaks, indicating gray and Himalayan coat color have become more common than the intermediate white coat color.",
+      "caption": "Different types of natural selection can impact the distribution of phenotypes within a population. In (a) stabilizing selection, an average phenotype is favored. In (b) directional selection, a change in the environment shifts the spectrum of observed phenotypes. In (c) diversifying selection, two or more extreme phenotypes are selected for, while the average phenotype is selected against."
+    },
+    "Figure_19_03_02-22c2": {
+      "source": "media/Figure_19_03_02-22c2.jpg",
+      "sourceSha256": "ec776272791147da353bf116718da5832b129450d2f51a821b3833ce8699368f",
+      "module": "m66718",
+      "kind": "photo",
+      "width": 544,
+      "height": 544,
+      "variants": [
+        {
+          "width": 544,
+          "height": 544,
+          "file": "Figure_19_03_02-22c2-544.webp"
+        }
+      ],
+      "alt": "Photo shows a mottled green and brown lizard sitting on a rock.",
+      "caption": "A yellow-throated side-blotched lizard is smaller than either the blue-throated or orange-throated males and appears a bit like the females of the species, allowing it to sneak copulations. (credit: “tinyfroglet”/Flickr)"
+    },
+    "Figure_19_03_03abc": {
+      "source": "media/Figure_19_03_03abc.jpg",
+      "sourceSha256": "b6dcf634c976ff90e35fd0d22a72130d10e6f156923412c5907c613caf928475",
+      "module": "m66718",
+      "kind": "photo",
+      "width": 1117,
+      "height": 367,
+      "variants": [
+        {
+          "width": 800,
+          "height": 263,
+          "file": "Figure_19_03_03abc-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 367,
+          "file": "Figure_19_03_03abc-1117.webp"
+        }
+      ],
+      "alt": "The photo on the left shows a peacock with a bright blue body and flared tail feathers standing next to a brown, drab peahen. The middle photo shows a large female spider sitting on a web next to its much smaller male counterpart. The photo on the right shows a brightly colored male wood duck swimming next to a drab brown female.",
+      "caption": "Sexual dimorphism in (a) peacocks and peahens, (b) Argiope appensa spiders (the female spider is the large one), and in (c) wood ducks. (credit “spiders”: modification of work by “Sanba38”/Wikimedia Commons; credit “duck”: modification of work by Kevin Cole)"
+    },
     "Figure_B06_03_05abcd_new": {
       "source": "media/Figure_B06_03_05abcd_new.png",
       "sourceSha256": "b533ddfb73b1cfba10ffcb98e785015d67f6dcb0233e8acead61abeba82572fe",
@@ -5345,6 +6857,150 @@
       ],
       "alt": "There are four photos show. The first photo shows a pile of wood chips and dirt, with small plants growing from this. The second photo shows a small baby bird breaking out of its egg as it hatches. The third photo shows a large patch of desert where someone has drawn patterns in the sand. The fourth photo shows a grassy hill outside where people climb into giant inflatable balls and roll down the hillside.",
       "caption": "This figure shows some examples of endergonic processes (ones that require energy) and exergonic processes (ones that release energy). These include (a) a compost pile decomposing, (b) a chick developing from a fertilized egg, (c) sand art destruction, and (d) a ball rolling down a hill. (credit a: modification of work by Natalie Maynor; credit b: modification of work by USDA; credit c: modification of work by “Athlex”/Flickr; credit d: modification of work by Harry Malsch)"
+    },
+    "Figure_B15_Ass_01": {
+      "source": "media/Figure_B15_Ass_01.png",
+      "sourceSha256": "0613812a884f2694fe50ccfcf207265a38122711105e6dc3e470266b73812ab5",
+      "module": "m66500",
+      "kind": "diagram",
+      "width": 405,
+      "height": 38,
+      "variants": [
+        {
+          "width": 405,
+          "height": 38,
+          "file": "Figure_B15_Ass_01-405.webp"
+        }
+      ],
+      "alt": "An illustration shows that before R N A processing, there is a primary R N A transcript including five boxes and their associated lengths in base pairs (abbreviated b p) labeled, left to right, as exon with 100 b p, intron with 50 b p, exon with 75 b p, intron with 90 b p and exon with 120 b p.",
+      "caption": ""
+    },
+    "Figure_B16_Ass_01": {
+      "source": "media/Figure_B16_Ass_01.png",
+      "sourceSha256": "a59ecfd1f914ef6899ca3a192d1219e094ca98b031541bc2306513ccb8e8c62a",
+      "module": "m66507",
+      "kind": "diagram",
+      "width": 483,
+      "height": 105,
+      "variants": [
+        {
+          "width": 483,
+          "height": 105,
+          "file": "Figure_B16_Ass_01-483.webp"
+        }
+      ],
+      "alt": "An illustration shows an R N A transcript including seven boxes and their associated lengths in base pairs (abbreviated b p) labeled, left to right, as exon with 50 b p, intron with 110 b p, exon with 70 b p, intron with 20 b p, exon with 130 b p, intron with 75 b p, and exon with 30 b p.",
+      "caption": ""
+    },
+    "Figure_B18_03_05": {
+      "source": "media/Figure_B18_03_05.jpg",
+      "sourceSha256": "787dcf59587cda96dbbdf3f1b7f774a90f7b567d64923795d9cbf9caec20c140",
+      "module": "m66520",
+      "kind": "photo",
+      "width": 801,
+      "height": 429,
+      "variants": [
+        {
+          "width": 800,
+          "height": 428,
+          "file": "Figure_B18_03_05-800.webp"
+        },
+        {
+          "width": 801,
+          "height": 429,
+          "file": "Figure_B18_03_05-801.webp"
+        }
+      ],
+      "alt": "Alloploidy results from viable matings between two species with different numbers of chromosomes. In the example shown, species one has two pairs of chromosomes, and species two has three pairs of chromosomes. When an unreduced gamete from species one (with two pairs of chromosomes) fuses with a normal gamete from species two (with three unpaired chromosomes), a hybrid zygote with seven chromosomes results. An offspring from this mating produces an unreduced gamete with seven chromosomes. If this unreduced gamete fuses with a normal gamete from species one, with three chromosomes, the resulting offspring will have ten viable chromosomes (five pairs of chromosomes).",
+      "caption": "Alloploidy results when two species mate to produce viable offspring. In this example, a normal gamete from one species fuses with a polyploidy gamete from another. Two matings are necessary to produce viable offspring."
+    },
+    "Figure_B19_01_02": {
+      "source": "media/Figure_B19_01_02.png",
+      "sourceSha256": "956b6f75c122338c51c9a07cb2d8c74d0b396e586c0ddeaaf73cd5d7b24870c6",
+      "module": "m66523",
+      "kind": "diagram",
+      "width": 1450,
+      "height": 1868,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1030,
+          "file": "Figure_B19_01_02-800.webp"
+        },
+        {
+          "width": 1450,
+          "height": 1868,
+          "file": "Figure_B19_01_02-1450.webp"
+        }
+      ],
+      "alt": "The Hardy-Weinberg principle is used to predict the genotypic distribution of offspring in a given population. In the example given, pea plants have two different alleles for pea color. The dominant capital Y allele results in yellow pea color, and the recessive small y allele results in green pea color. The distribution of individuals in a population of 500 is given. Of the 500 individuals, 245 are homozygous dominant (capital Y capital Y) and produce yellow peas. 210 are heterozygous (capital Y small y) and also produce yellow peas. 45 are homozygous recessive (small y small y) and produce green peas. The frequencies of homozygous dominant, heterozygous, and homozygous recessive individuals are 0.49, 0.42, and 0.09, respectively. Each of the 500 individuals provides two alleles to the gene pool, or 1000 total. The 245 homozygous dominant individuals provide two capital Y alleles to the gene pool, or 490 total. The 210 heterozygous individuals provide 210 capital Y and 210 small y alleles to the gene pool. The 45 homozygous recessive individuals provide two small y alleles to the gene pool, or 90 total. The number of capital Y alleles is 490 from homozygous dominant individuals plus 210 from homozygous recessive individuals, or 700 total. The number of small y alleles is 210 from heterozygous individuals plus 90 from homozygous recessive individuals, or 300 total. The allelic frequency is calculated by dividing the number of each allele by the total number of alleles in the gene pool. For the capital Y allele, the allelic frequency is 700 divided by 1000, or 0.7; this allelic frequency is called p. For the small y allele the allelic frequency is 300 divided by 1000, or 0.3; the allelic frequency is called q. Hardy-Weinberg analysis is used to determine the genotypic frequency in the offspring. The Hardy-Wienberg equation is p-squared plus 2pq plus q-squared equals 1. For the population given, the frequency is 0.7-squared plus 2 times .7 times .3 plus .3-squared equals one. The value for p-squared, 0.49, is the predicted frequency of homozygous dominant (capital Y capital Y) individuals. The value for 2pq, 0.42, is the predicted frequency of heterozygous (capital Y small y) individuals. The value for q-squared, .09, is the predicted frequency of homozygous recessive individuals. Note that the predicted frequency of genotypes in the offspring is the same as the frequency of genotypes in the parent population. If all the genotypic frequencies, .49 plus .42 plus .09, are added together, the result is one.",
+      "caption": "When populations are in the Hardy-Weinberg equilibrium, the allelic frequency is stable from generation to generation and we can determine the allele distribution from the Hardy-Weinberg equation. If the allelic frequency measured in the field differs from the predicted value, scientists can make inferences about what evolutionary forces are at play."
+    },
+    "Targeted_Protein_Formation-XZZ": {
+      "source": "media/Targeted_Protein_Formation-XZZ.jpg",
+      "sourceSha256": "095444a16e119262dc37a188b764749212814a6a02eb3820125426554aeeedea",
+      "module": "m66501",
+      "kind": "photo",
+      "width": 833,
+      "height": 625,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Targeted_Protein_Formation-XZZ-800.webp"
+        },
+        {
+          "width": 833,
+          "height": 625,
+          "file": "Targeted_Protein_Formation-XZZ-833.webp"
+        }
+      ],
+      "alt": "In the cytosol, the m R N A and Ribosome complex have a signal peptide that bonds with a signal recognition particle. Once combined, they interact with a translocation complex and signal recognition particle receptor protein in the E R Membrane. The protein is then removed from the ribosome complex and goes across the E R Membrane into the E R Lumen.",
+      "caption": "Proteins are co-translationally targeted into the ER for secretion. Proteins that will be secreted from the cell will contain a signal sequence at the N-terminus. The signal will be recognized by SRP as soon as the amino acids emerge from the ribosome, and the ribosome will be targeted to the translocation channel in the ER membrane. The rest of the protein will go directly from the ribosome, across the ER membrane and into the ER lumen. From the ER, proteins can be secreted from the cell via vesicle trafficking. Credit: Rao, A. and Ryan, K. Department of Biology, Texas A&M University."
+    },
+    "Telomeres-X": {
+      "source": "media/Telomeres-X.jpg",
+      "sourceSha256": "8d51d722547b5aa758d19a899d34855b010daff0220f01fa7746912b5add4139",
+      "module": "m66391",
+      "kind": "photo",
+      "width": 1050,
+      "height": 791,
+      "variants": [
+        {
+          "width": 800,
+          "height": 602,
+          "file": "Telomeres-X-800.webp"
+        },
+        {
+          "width": 1050,
+          "height": 791,
+          "file": "Telomeres-X-1050.webp"
+        }
+      ],
+      "alt": "The process of Telomere Replication is shown. The starting image has an unreplicated end, and is missing DNA on the lagging strang. Telomerase has an associated R N A that complements the 5 prime overhang at the end of the chromosome, creating an extension of the unreplicated end. The R N A template is used to synthesize the complementary strand, and telomerase again extends the unreplicated end. Telomerase then shifts, and the process is repeated. Next, primase and D N A polymerase synthesize the rest of the complementary strand. And the lagging strand is completed.",
+      "caption": "The ends of linear chromosomes are maintained by the action of the telomerase enzyme. Credit: Rao, A. and Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "aminoandtrna": {
+      "source": "media/aminoandtrna.jpg",
+      "sourceSha256": "b6dce0bd3a6294d51a22c1ca7eedaeb6b5190f82e885cfdc38d3e4625f689a52",
+      "module": "m66501",
+      "kind": "photo",
+      "width": 834,
+      "height": 626,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "aminoandtrna-800.webp"
+        },
+        {
+          "width": 834,
+          "height": 626,
+          "file": "aminoandtrna-834.webp"
+        }
+      ],
+      "alt": "Amino acid and t R N A enter the active site. In this case, the amino acid cysteine (abbreviated Cys) and Cys t R N A bind to the active site of aminoacyl t R N A synthetase. A T P is consumed, producing A M P and 2 inorganic phosphates. As a result, aminoacyl t R N A synthetase catalyzes covalent bonding of cysteine to Cys t R N A.",
+      "caption": "Charging of tRNAs with correct amino acids. Aminoacyl-tRNA synthetases catalyze covalent bond formation between the tRNA and the correct amino acid in preparation for translation. Because there are multiple amino acids, there are multiple different tRNA synthetases. All of the synthetases require energy, in the form of ATP, to make sure the correct amino acid is attached to the tRNA with the correct anticodon sequence. Credit: Rao, A., Ryan, K. and Tag, A. Department of Biology, Texas A&M University."
     },
     "celldivision": {
       "source": "media/celldivision.png",
@@ -5390,6 +7046,28 @@
       "alt": "A cell shows overlapping microtubules extending throughout the cell. At the center of the cell, sister chomratids line up. At their center are kinetochores. And at the very ends of the cell, away from the center, are centrosomes.",
       "caption": "Mitotic Cell at Metaphase. The microtubule spindle has completed the alignment of chromosomes at the metaphase plate in preparation for the separation of sister chromatids during anaphase. Credit: Fletcher, S., Ryan, K. and Rao, A., Department of Biology, Texas A&M University."
     },
+    "generegulation": {
+      "source": "media/generegulation.png",
+      "sourceSha256": "acf908f41637f662ecc814fc4e94da57ab67b6ce3aa62bbd1a0d596c59e18d5f",
+      "module": "m66503",
+      "kind": "diagram",
+      "width": 1200,
+      "height": 900,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "generegulation-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 900,
+          "file": "generegulation-1200.webp"
+        }
+      ],
+      "alt": "A cell diagram is shown. A signal leads to chromatin unpacking through histone acetylation, DNA methylation, which triggers DNA transcription, RNA processing by adding 5’ cap, poly A tail, and splicing of introns and exons, and m R N A to leaving the nucleus and entering the cytoplasm. In the cytoplasm, translation occurs, leading to formation of a polypeptide, its processing and modification to produce protein’s functional form, transport to designated cellular and extracellular destinations, eventual degradation of both the mRNA and the protein.",
+      "caption": "Locations of gene regulation. The regulation of gene expression occurs at multiple steps going from DNA to the functional gene product, usually a protein. It begins with chromatin structure making the DNA more or less accessible for transcription by RNA polymerase. In eukaryotes, the primary mRNA transcript must be processed before it can be translated in the cytoplasm. The final level of active protein in the cell depends not only on the rate of synthesis, but also on the rate of degradation of mRNA and protein. Credit: Rao, A. and Ryan, K. Department of Biology, Texas A&M University."
+    },
     "gradient": {
       "source": "media/gradient.png",
       "sourceSha256": "f394e90e12f4cc4acd99d43599d5b53fcafd94d6c2c67a374b67474fd3c16538",
@@ -5411,6 +7089,50 @@
       ],
       "alt": "This illustration shows a membrane bilayer with a potassium channel called a proton pump embedded in it. Hydrogen ions flow out of the cell through a proton pump, then back into the cell as part of the sucrose-proton cotransporter. Sucrose flows with the protons from the lower concentration outside the cell to the higher concentration inside the cell, which is against the concentration gradient.",
       "caption": "Proton Gradient provides energy for a secondary active transporter. The proton pump creates an electrochemical gradient of protons (hydrogen ions, H+) using ATP to drive primary active transport. This gradient allows for cotransport/secondary transport of sucrose against its concentration gradient as protons come down their concentration gradient via their membrane cotransporter protein. Credit: Rao, A. Tag, A. and Ryan, K. Department of Biology, Texas A&M University."
+    },
+    "ribosomestructure": {
+      "source": "media/ribosomestructure.png",
+      "sourceSha256": "cf125da0a44110abe844d598577a8802557f1eeeff08e8c649f67865bf724c43",
+      "module": "m66501",
+      "kind": "diagram",
+      "width": 1200,
+      "height": 1697,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1131,
+          "file": "ribosomestructure-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1697,
+          "file": "ribosomestructure-1200.webp"
+        }
+      ],
+      "alt": "Ribosome structure is shown with the E site, P site, and A site. The A site is labelled aminoacyl, the P site is labelled peptidyl, and the E site is labelled exit. As ribosomes move along m R N A, t R N As with amino acids attached bind to the A sites. The polypeptide is assembled at the P site, and the empty t R N A exits from the E site.",
+      "caption": "The ribosome and its function. The ribosome is responsible for translating the mRNA into protein. A. The ribosome consists of a large and small ribosomal subunit. Assembly of the subunits on the mRNA forms three tRNA binding sites. B. During translation, charged tRNAs enter the Acceptor site, and the anticodon on the tRNA base pairs with the codon in the mRNA. After the incoming amino acid forms a peptide bond with the growing polypeptide chain, the ribosome will move three nucleotides toward the 3’ end of the mRNA. This movement will transfer the tRNA with the growing polypeptide to the Peptidyl-tRNA binding site and allow the empty tRNA to exit at the Exit site. Credit: Rao, A., Ryan, K. and Fletcher, S. Department of Biology, Texas A&M University."
+    },
+    "translationtermination": {
+      "source": "media/translationtermination.png",
+      "sourceSha256": "40b9907597932ccd716a2ff4f009d3e5cdace9c37c7c715d33695aedeae38a71",
+      "module": "m66501",
+      "kind": "diagram",
+      "width": 1200,
+      "height": 900,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "translationtermination-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 900,
+          "file": "translationtermination-1200.webp"
+        }
+      ],
+      "alt": "The first section shows a ribosome reaching a stop codon on m R N A. The stop codon reaches the A site of the ribosome, and a release factor interacts with the A site as well. The second section shows the polypeptide being released. 2 G T P molecules go through hydrolysis, leading to the third section. In the third section, the ribosome subunits are shown separating, and the RNA is no longer connected to it.",
+      "caption": "Translation Termination is Active. Translation is terminated when a STOP codon is in the A-site of the ribosome. Since there are no tRNAs corresponding to the STOP codons, the Release Factor protein enters and catalyzes the hydrolysis between the last amino acid and its tRNA. This hydrolysis releases the free carboxyl terminus (C-term) of the protein. Additional factors use the energy in GTP hydrolysis to disassemble the large and small ribosomal subunits and mRNA. Credit: Rao, A. and Ryan, K. Department of Biology, Texas A&M University."
     }
   }
 }
