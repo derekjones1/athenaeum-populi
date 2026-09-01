@@ -58,8 +58,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 47,
       "upstreamSections": 208,
-      "localChapters": 23,
-      "mappedSections": 96,
+      "localChapters": 25,
+      "mappedSections": 105,
       "units": [
         {
           "index": 1,
@@ -1023,6 +1023,87 @@
       "moduleId": "m66556",
       "sourceTitle": "Ecology of Protists",
       "moduleSha256": "d009de4e88722aae7aed12ac8fd6ddf56ede7334457a163f87f882f6c4dd76c2"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/24-fungi/01-characteristics-of-fungi.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "24.1",
+      "moduleId": "m66558",
+      "sourceTitle": "Characteristics of Fungi",
+      "moduleSha256": "ccac4c7b308af58d8f8e115a2db9169d1c07bd2dee0de623761f6544ece34b22"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/24-fungi/02-classifications-of-fungi.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "24.2",
+      "moduleId": "m66559",
+      "sourceTitle": "Classifications of Fungi",
+      "moduleSha256": "d4caa8843ec9648176610db7e7c679a274b3267bc1ea64c6c975d25e27d17c65"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/24-fungi/03-ecology-of-fungi.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "24.3",
+      "moduleId": "m66560",
+      "sourceTitle": "Ecology of Fungi",
+      "moduleSha256": "0a47cda96c8d0123532d418a6293872813bef451b22210468215dadeb6ba114c"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/24-fungi/04-fungal-parasites-and-pathogens.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "24.4",
+      "moduleId": "m66562",
+      "sourceTitle": "Fungal Parasites and Pathogens",
+      "moduleSha256": "7ccd7f5f47737990290809d9330ca8418a3c20f3238f39b083e2e2e0391e3d13"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/24-fungi/05-importance-of-fungi-in-human-life.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "24.5",
+      "moduleId": "m66563",
+      "sourceTitle": "Importance of Fungi in Human Life",
+      "moduleSha256": "ce6083a4ef9b8eaabddf08114d14a0d3ee2c63ac021a632d417e2a5d8927c567"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/25-seedless-plants/01-early-plant-life.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "25.1",
+      "moduleId": "m66566",
+      "sourceTitle": "Early Plant Life",
+      "moduleSha256": "2653f423419e941172e2ed867e9e9d589aa9160d2d4325d40500c3c683fd7449"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/25-seedless-plants/02-green-algae-precursors-of-land-plants.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "25.2",
+      "moduleId": "m66567",
+      "sourceTitle": "Green Algae: Precursors of Land Plants",
+      "moduleSha256": "8deae87691fcadd60c006020c455485c70093a1fb5a36cc44cc193d5f0b4f8e6"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/25-seedless-plants/03-bryophytes.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "25.3",
+      "moduleId": "m66568",
+      "sourceTitle": "Bryophytes",
+      "moduleSha256": "e4d6124050caeeb169e272134f73dbb0462964fac96b80d196083eaecae153f9"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/25-seedless-plants/04-seedless-vascular-plants.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "25.4",
+      "moduleId": "m66570",
+      "sourceTitle": "Seedless Vascular Plants",
+      "moduleSha256": "daec7a6e9be8c310bb9be184e0822828b624589224ed86cab86e10f14c642d65"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

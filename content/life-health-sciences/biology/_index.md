@@ -130,14 +130,21 @@ closes with how plants and animals are built and how ecosystems work.
   metabolic variety of protists, the six eukaryotic supergroups and their
   representative members, and the roles of protists as producers,
   decomposers, and parasites.
+- **Fungi** — the shared traits, mycelium, nutrition, and reproduction of
+  fungi, their five phyla, their roles as decomposers and mutualists, the
+  fungal diseases of plants and humans, and fungi in food, industry,
+  medicine, and research.
+- **Seedless Plants** — the adaptations that carried plants onto land, the
+  green algae closest to them, the liverworts, hornworts, and mosses, and
+  the club mosses, horsetails, whisk ferns, and ferns with their vascular
+  tissue, roots, leaves, and life cycle.
 
 ## Planned contents
 
 Biology 2e has eight units and 47 chapters. Beyond the chapters listed
 above, the following are still to come, in this order:
 
-- **Unit 5: Biological Diversity** (remainder) — Fungi; Seedless Plants;
-  Seed Plants; Introduction to Animal Diversity; Invertebrates; Vertebrates.
+- **Unit 5: Biological Diversity** (remainder) — Seed Plants; Introduction to Animal Diversity; Invertebrates; Vertebrates.
 - **Unit 6: Plant Structure and Function** — Plant Form and Physiology; Soil
   and Plant Nutrition; Plant Reproduction.
 - **Unit 7: Animal Structure and Function** — The Animal Body: Basic Form

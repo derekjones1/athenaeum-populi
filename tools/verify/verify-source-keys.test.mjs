@@ -100,6 +100,42 @@ test('a multiplechoice is confirmed only when it keys the source option over the
   assert.equal(edited.status, 'options-differ');
 });
 
+test('two source exercises sharing a stem verbatim are told apart by the page item\'s options', () => {
+  // m66559 (§24.2) keys both of its Visual Connections to the stem "Which of
+  // the following statements is true?"; matching on the stem alone paired the
+  // page's basidiomycete item with the ascomycete exercise and reported a
+  // false key-differs.
+  const twin = readModule(`<document xmlns="http://cnx.rice.edu/cnxml">
+<metadata><md:content-id xmlns:md="x">m2</md:content-id></metadata>
+<content>
+<exercise id="ex-ascus"><problem><para>Which of the following statements is true?</para>
+<list list-type="enumerated" number-style="lower-alpha"><item>A dikaryotic ascus forms eight ascospores.</item><item>A diploid ascus forms eight ascospores.</item><item>A haploid zygote forms eight ascospores.</item></list></problem>
+<solution><para>A</para></solution></exercise>
+<exercise id="ex-basidium"><problem><para>Which of the following statements is true?</para>
+<list list-type="enumerated" number-style="lower-alpha"><item>A basidium is the fruiting body of a mushroom.</item><item>Plasmogamy yields four basidiospores.</item><item>A basidiocarp is the fruiting body of a mushroom.</item></list></problem>
+<solution><para>C</para></solution></exercise>
+</content>
+</document>`);
+  const basidium = {
+    type: 'multiplechoice',
+    question: 'Which of the following statements is true?',
+    answer: 'A basidiocarp is the fruiting body of a mushroom.',
+    options: ['A basidium is the fruiting body of a mushroom.', 'Plasmogamy yields four basidiospores.', 'A basidiocarp is the fruiting body of a mushroom.'],
+  };
+  assert.equal(judgeMultipleChoice(basidium, twin).status, 'confirmed');
+  const ascus = {
+    type: 'multiplechoice',
+    question: 'Which of the following statements is true?',
+    answer: 'A dikaryotic ascus forms eight ascospores.',
+    options: ['A dikaryotic ascus forms eight ascospores.', 'A diploid ascus forms eight ascospores.', 'A haploid zygote forms eight ascospores.'],
+  };
+  assert.equal(judgeMultipleChoice(ascus, twin).status, 'confirmed');
+  // The wrong key on the second twin is still caught against ITS exercise.
+  const wrong = judgeMultipleChoice({ ...basidium, answer: 'A basidium is the fruiting body of a mushroom.' }, twin);
+  assert.equal(wrong.status, 'key-differs');
+  assert.match(wrong.detail, /source ex-basidium keys C/);
+});
+
 test('an author-written multiplechoice and a prose-keyed source are counted, not judged', () => {
   assert.equal(judgeMultipleChoice({ ...mc('oxygen'), question: 'Which gas does aerobic respiration consume?' }, source).status, 'unmatched');
   assert.equal(judgeMultipleChoice({

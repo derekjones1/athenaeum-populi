@@ -91,6 +91,20 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/biology/25-seedless-plants/03-bryophytes.md',
+    exercise: 'fs-idp148910848',
+    kind: 'options',
+    erratum: 203,
+    reason: 'distractor "mosses" is also correct by the module\'s own sentence "Mosses have stomata only on the sporophyte"; the page reads "moss gametophytes", which that sentence makes false (key "hornworts" unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/25-seedless-plants/04-seedless-vascular-plants.md',
+    exercise: 'fs-idm28125280',
+    kind: 'key',
+    erratum: 194,
+    reason: 'source keys "Mosses decompose rocks and release nitrogen", which the module never says; its own sentence is "Because they establish symbiotic relationships with nitrogen-fixing cyanobacteria, mosses replenish the soil with nitrogen", so the page keys "Mosses harbor cyanobacteria that fix nitrogen"',
+  },
+  {
     page: 'content/life-health-sciences/biology/21-viruses/02-virus-infections-and-hosts.md',
     exercise: 'fs-idm138486528',
     kind: 'key',
@@ -341,11 +355,20 @@ export function pageItems(markdown) {
 
 const lineOf = (text, index) => text.slice(0, index).split('\n').length;
 
-function bestExercise(question, exercises) {
+function bestExercise(question, exercises, options = []) {
   let best = null;
   for (const exercise of exercises) {
     const score = tokenSimilarity(question, exercise.problem);
-    if (!best || score > best.score) best = { score, exercise };
+    // Two source exercises can share a stem verbatim — m66559 (§24.2) asks
+    // "Which of the following statements is true?" in both of its Visual
+    // Connections. The stem alone cannot tell them apart and the first one
+    // read used to win, so a page item's own option list breaks the tie.
+    const tie = options.length && exercise.options.length
+      ? tokenSimilarity(options.join(' '), exercise.options.join(' '))
+      : 0;
+    if (!best || score > best.score || (score === best.score && tie > best.tie)) {
+      best = { score, tie, exercise };
+    }
   }
   return best && best.score >= MATCH_FLOOR ? best.exercise : null;
 }
@@ -363,7 +386,7 @@ function bestExercise(question, exercises) {
  *   { status: 'options-differ', detail }      an option's wording differs
  */
 export function judgeMultipleChoice(item, source) {
-  const exercise = bestExercise(item.question, source.exercises);
+  const exercise = bestExercise(item.question, source.exercises, item.options || []);
   if (!exercise) return { status: 'unmatched' };
   if (exercise.keyed === null) return { status: 'prose-key', exercise };
   const sourceAnswer = exercise.options[exercise.keyed] || '';

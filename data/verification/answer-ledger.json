@@ -992,6 +992,14 @@
   "05ea0a90f0468085": {
    "verdict": "ok"
   },
+  "05f0ce7b959d4e1c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "05f2951ed1c8e4a5": {
    "verdict": "ok"
   },
@@ -1085,6 +1093,14 @@
   "06b8a702d34d0de0": {
    "verdict": "ok"
   },
+  "06b93535abbfddc9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "06c8a67ea261da12": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -1142,6 +1158,14 @@
   },
   "071a1046fd1e9e70": {
    "verdict": "ok"
+  },
+  "071bfdb402031eb6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "071e5424068673dd": {
    "verdict": "ok"
@@ -1311,6 +1335,14 @@
   },
   "0828539da008a0c3": {
    "verdict": "ok"
+  },
+  "08293ed020df5b04": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "082df281d95e64b5": {
    "verdict": "ok"
@@ -1494,6 +1526,14 @@
   "09d19f94553066ce": {
    "verdict": "ok"
   },
+  "09d3f71be61ec7ba": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "09d7fb8468d9ed11": {
    "verdict": "ok"
   },
@@ -1546,6 +1586,14 @@
   "0a16e58af40545fc": {
    "verdict": "ok"
   },
+  "0a29ce8a05ade040": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0a2ca05aa92fd31f": {
    "verdict": "ok"
   },
@@ -1574,6 +1622,14 @@
   "0a641f452638cf24": {
    "verdict": "ok",
    "note": "glossary definition fs-id2137674 (shotgun sequencing); prompt built from the meaning and the section's cut-and-reassemble description.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0a679954beb6728a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -1904,6 +1960,10 @@
   },
   "0c826a63b74d26da": {
    "verdict": "ok"
+  },
+  "0c859bcbdf66be04": {
+   "verdict": "ok",
+   "note": "CNXML fs-idm3674368/fs-idm58621312 solution transcribed verbatim as model answer."
   },
   "0c87fc140f18d188": {
    "verdict": "ok"
@@ -2271,6 +2331,14 @@
   "0eb1795ca275cba8": {
    "verdict": "ok"
   },
+  "0eb390040794414e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0ec5795275c94c42": {
    "verdict": "ok"
   },
@@ -2367,6 +2435,14 @@
   "0fa87c80b0e255b4": {
    "verdict": "ok",
    "note": "22.3 large amounts cloze: singular accept added; summary sentence",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0fb61cf19e722e0f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -3494,6 +3570,14 @@
    "verdict": "ok",
    "note": "m66373 solution fs-id1404963/fs-id1967384 ('Why is it advantageous for the cell membrane to be fluid...'): model answer verbatim match. Three CHECKS clauses restate flexibility, motion of membrane components, and requirement for membrane transport — all in the solution text."
   },
+  "180510c3801eb98d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "18095d5f7956f726": {
    "verdict": "ok"
   },
@@ -3756,6 +3840,14 @@
   "19cf64f4e33c3d44": {
    "verdict": "ok"
   },
+  "19dd9c393e272bf3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "19e6d01d78f5a225": {
    "verdict": "ok"
   },
@@ -3807,6 +3899,14 @@
   },
   "1a39f7c753a384dd": {
    "verdict": "ok"
+  },
+  "1a3a173a44464f21": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "1a3b89f6da887b31": {
    "verdict": "ok",
@@ -4143,6 +4243,10 @@
   },
   "1ccacebe33afa3ec": {
    "verdict": "ok"
+  },
+  "1ccb40b23a8d7301": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-idp104776864/fs-idp109034496, model answer transcribed verbatim."
   },
   "1cdd3d3ee12ddfcb": {
    "verdict": "ok",
@@ -4705,6 +4809,14 @@
   "20eb22e2dc36e951": {
    "verdict": "ok"
   },
+  "20f37c8f9a9e9bfc": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "20fc3dd32089e310": {
    "verdict": "ok"
   },
@@ -4732,6 +4844,14 @@
   "21163bd39056badd": {
    "verdict": "ok",
    "note": "f(0)=-2.5*sec(0)=-2.5*1=-2.5, computed directly; A negative flips Example 4's local min at 0 (2.5) to a local max (-2.5)."
+  },
+  "211949997c997492": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "2122070bb22a2183": {
    "verdict": "ok"
@@ -5086,6 +5206,14 @@
   "23977b0070f1d190": {
    "verdict": "ok",
    "note": "textin glossary recall: answer 'genome mapping' matches glossary definition fs-id2023354 verbatim.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "23983b82a2efc34e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -6184,6 +6312,14 @@
   "2c5f1d472436a7f6": {
    "verdict": "ok"
   },
+  "2c6734e28557bdd3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2c6c9ce925e9aea4": {
    "verdict": "ok"
   },
@@ -6201,6 +6337,10 @@
   "2c7c0b66467d95e0": {
    "verdict": "ok",
    "note": "node: 1/Math.cos(310°·π/180)=1.5557238268604126, rounds to 1.556; matches CNXML solution 1.556"
+  },
+  "2c828808dba82f1f": {
+   "verdict": "ok",
+   "note": "Critical Thinking eip-513/eip-211. Model answer's 'gametotangia' corrected to 'gametangia' (a one-off misspelling; the module spells the term 'gametangia' five other times and never 'gametotangia' anywhere) — reported as a source defect, no claim added or removed."
   },
   "2c88f71663963877": {
    "verdict": "ok"
@@ -6275,6 +6415,14 @@
   },
   "2d4d1f156ab9e2fe": {
    "verdict": "ok"
+  },
+  "2d4ee9aa7c07b227": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "2d55d688731727c3": {
    "verdict": "ok"
@@ -6733,6 +6881,15 @@
   "30471e7ba6aa9e89": {
    "verdict": "ok"
   },
+  "3050c445966b5fb5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "key stands: the module says \"The glomeromycetes do not reproduce sexually\", and Deuteromycota is not a modern phylum (the module: fungi that do not reproduce sexually \"used to be classified\" there); the solver misread \"modern phylum\""
+   }
+  },
   "30525e0285bdbcb4": {
    "verdict": "ok"
   },
@@ -6969,6 +7126,14 @@
   },
   "3205b44203e2ad03": {
    "verdict": "ok"
+  },
+  "320743fc2979f582": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "321306a89b306b3c": {
    "verdict": "ok"
@@ -7209,6 +7374,14 @@
    "verdict": "ok",
    "note": "Practice obj3, same equation rotated by theta=60: node -e rotate(1,3*Math.sqrt(3),4,0,1,-2,60) gives Ap=5.5, Cp=-0.5, Dp=sqrt3/2, Ep=0.5, F=-2; x2 -> 11x'^2-y'^2+sqrt3x'+y'-4=0. Matches source's printed solution exactly."
   },
+  "33776553eea4cb1a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "3377cf4814bcee50": {
    "verdict": "ok"
   },
@@ -7263,6 +7436,14 @@
   "33d8cce92ac210d0": {
    "verdict": "ok",
    "note": "Review Q2 (exercise fs-id2219667): CNXML solution fs-id1430811 = option D = \"only intermediate filaments\", matches keyed answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "33e5b1a0e6121d4c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -7406,6 +7587,10 @@
   },
   "355bdccece8a7c0e": {
    "verdict": "ok"
+  },
+  "355db894c9243dda": {
+   "verdict": "ok",
+   "note": "CNXML fs-idp52114640 solution transcribed verbatim as model answer."
   },
   "35608c36b48a3b6a": {
    "verdict": "ok",
@@ -7618,6 +7803,14 @@
   },
   "36d2d3c01c0a0dcd": {
    "verdict": "ok"
+  },
+  "36e4ca48939d2dc7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "36e694e6a13b1b1e": {
    "verdict": "ok"
@@ -8026,6 +8219,14 @@
   },
   "39584807abf1a458": {
    "verdict": "ok"
+  },
+  "3958d590c21755ca": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3960a8337cae503f": {
    "verdict": "ok"
@@ -8996,6 +9197,14 @@
    "verdict": "ok",
    "note": "2cos^2(theta)+cos(theta)=0 -> cos(theta)(2cos(theta)+1)=0 -> cos theta=0 (pi/2,3pi/2) or cos theta=-1/2 (2pi/3,4pi/3) on [0,2pi); domain added to match source's own key and the surrounding examples' convention (source Try It omits an explicit interval)."
   },
+  "40d2ab5a168b057a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "40ddc17efd595415": {
    "verdict": "ok"
   },
@@ -9020,6 +9229,14 @@
   },
   "40f49815ff1b4414": {
    "verdict": "ok"
+  },
+  "410090b978813793": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4106471ead931466": {
    "verdict": "ok",
@@ -9877,6 +10094,14 @@
   "46d7a9dbc3ef18ef": {
    "verdict": "ok"
   },
+  "46daa9b36ab28a34": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "46dafc9ec316d625": {
    "verdict": "ok"
   },
@@ -9930,6 +10155,14 @@
   "471c24720354a098": {
    "verdict": "ok"
   },
+  "471f94deaad75f6c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4732829dff03e7f2": {
    "verdict": "ok"
   },
@@ -9962,6 +10195,14 @@
   "474db17f45e8899a": {
    "verdict": "ok",
    "note": "Glossary recall, definition fs-id1417449 (term 'proto-oncogene'). Prompt paraphrases the meaning; accept list adds the plural.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "474fe7d716783a03": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -10068,6 +10309,10 @@
   "47de71828920d367": {
    "verdict": "ok"
   },
+  "47e52bc6b14dbc76": {
+   "verdict": "ok",
+   "note": "source selfcheck, exercise fs-idp18938784, model answer = solution fs-idm6442528 verbatim."
+  },
   "47e6c41476739d33": {
    "verdict": "ok"
   },
@@ -10092,6 +10337,14 @@
   },
   "47fec9953e1ec75d": {
    "verdict": "ok"
+  },
+  "480325c585a2c5ce": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4806066674f9d9d4": {
    "verdict": "ok"
@@ -10264,6 +10517,10 @@
   },
   "492b26613523f2b0": {
    "verdict": "ok"
+  },
+  "493dc6b162ab242d": {
+   "verdict": "ok",
+   "note": "m66566 critical-thinking eip-346, solution's bulleted list reformatted into complete sentences, no new claim added."
   },
   "4943bede8e9ca618": {
    "verdict": "ok"
@@ -10542,6 +10799,14 @@
   "4b5dd37ce40d55ee": {
    "verdict": "ok"
   },
+  "4b5f1ce2e119a0ea": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4b668fb3178d2e70": {
    "verdict": "ok"
   },
@@ -10591,6 +10856,15 @@
   },
   "4bc1fdc45c090d4b": {
    "verdict": "ok"
+  },
+  "4bd0bf774ae5e6a8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "key stands: the module says \"both charophytes and the land plants show apical growth—growth from the tips of the plant rather than throughout the plant body\", so option C is a SHARED trait that supports inclusion; lacking vascular tissue (D) is the feature that does not, as the source keys"
+   }
   },
   "4be7624840ceaf8f": {
    "verdict": "ok",
@@ -10745,6 +11019,10 @@
   "4d0a050bb8a703c3": {
    "verdict": "ok"
   },
+  "4d1bfe5f0d920e4d": {
+   "verdict": "ok",
+   "note": "source selfcheck, exercise eip-948, model answer merges solution eip-691 + eip-ds1837 verbatim (decomposer role, carbon cycle, nitrogen cycle) with no new claim."
+  },
   "4d222b55b8d56346": {
    "verdict": "ok",
    "note": "5*pi/3 rad (=300 deg) is in QIV; reference angle = 2*pi - 5*pi/3 = pi/3"
@@ -10777,6 +11055,14 @@
   "4d61902f2f63ccb0": {
    "verdict": "ok",
    "note": "m66530 glossary definition fs-idm3629840 (rooted): meaning used as prompt, term as answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "4d63bd01e4d1520a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -10963,6 +11249,14 @@
   },
   "4ea3acb348ba3ec0": {
    "verdict": "ok"
+  },
+  "4ea6d41c0e42e8c3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4eac865a0debef00": {
    "verdict": "ok"
@@ -11418,6 +11712,14 @@
   "523a2c200ce81a9f": {
    "verdict": "ok"
   },
+  "523e4a7f12693b21": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5250195800a8f46d": {
    "verdict": "ok"
   },
@@ -11459,6 +11761,10 @@
   },
   "52ade887366f87bb": {
    "verdict": "ok"
+  },
+  "52bf0f56fb711839": {
+   "verdict": "ok",
+   "note": "Critical Thinking eip-331/eip-991, model answer transcribed verbatim (bullet list)."
   },
   "52d0c0bcb86a6379": {
    "verdict": "ok"
@@ -11841,6 +12147,14 @@
   "5595baa3aadd00a7": {
    "verdict": "ok"
   },
+  "55a0999f87457fba": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "55a180d05785aa04": {
    "verdict": "ok"
   },
@@ -12046,6 +12360,10 @@
   },
   "5701710aa4a6e2a7": {
    "verdict": "ok"
+  },
+  "570a3e319bf7a11c": {
+   "verdict": "ok",
+   "note": "m66566 critical-thinking fs-idm121815136, solution verbatim as model answer."
   },
   "570a474ba779b0f4": {
    "verdict": "ok",
@@ -12689,6 +13007,14 @@
   "5b4b78b5f80e8057": {
    "verdict": "ok"
   },
+  "5b4ccb085f4fdf33": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5b50e416d3becf80": {
    "verdict": "ok"
   },
@@ -13152,6 +13478,14 @@
    "verdict": "ok",
    "note": "m=(17-5)/(3-7)=-3, b=5+21=26; key p1279 #5"
   },
+  "5ed0818a9b961d68": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5ed34c1bb01fc080": {
    "verdict": "ok"
   },
@@ -13174,6 +13508,14 @@
   "5f1aa56a05548441": {
    "verdict": "ok",
    "note": "textin: answer 'anabolic' (accept 'anabolism') matches glossary definition id fs-id2187720 verbatim ('pathways that require an energy input to synthesize complex molecules from simpler ones').",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5f1c9e9d3a14c852": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -13480,6 +13822,14 @@
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L373 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
+  "6145733fbc162864": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6172ec0676337387": {
    "verdict": "ok"
   },
@@ -13741,6 +14091,14 @@
   "63a0d240aa7dc0be": {
    "verdict": "ok"
   },
+  "63adc4bcf3ec0490": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "63b156b80262225c": {
    "verdict": "ok"
   },
@@ -13811,6 +14169,14 @@
   },
   "643c72f51a88c139": {
    "verdict": "ok"
+  },
+  "644f5170ad5ea7a6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "645f26ce81efc732": {
    "verdict": "ok",
@@ -14540,6 +14906,14 @@
   "6946a12b5726a250": {
    "verdict": "ok"
   },
+  "6947b207a982be56": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "69496eab282e5cf4": {
    "verdict": "ok"
   },
@@ -14619,6 +14993,14 @@
   "69ee3d238d8b5c10": {
    "verdict": "ok",
    "note": "Keyed option 'water and polymers' matches CNXML solution fs-id2195778 = C (m66438 Review Q1).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "69f403a45b1899a9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -15516,6 +15898,14 @@
   "706b43eb15a4810b": {
    "verdict": "ok"
   },
+  "706d0da7157101bb": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7070b82ca1a6543d": {
    "verdict": "ok",
    "note": "Section Exercise 37 part a: b=15, B=15deg, a=b/tan(15deg)=55.9808, computed with node; matches CNXML solution."
@@ -15543,6 +15933,14 @@
   "70b1e80d25a50571": {
    "verdict": "ok",
    "note": "fs-id2170891 (CNXML solution: sec x). tan(x)sin(x)+sec(x)cos^2(x) = sin^2x/cos x + cos x = (sin^2x+cos^2x)/cos x = sec x; confirmed numerically at x=1 (1.8508157176809257 vs sec(1)=1.8508157176809255)."
+  },
+  "70b34d3fe1a23536": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "70bf274fd1d50cfd": {
    "verdict": "ok"
@@ -16145,6 +16543,14 @@
     "result": "agrees"
    }
   },
+  "75b99175362a10da": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "75bb952300fba901": {
    "verdict": "ok"
   },
@@ -16164,6 +16570,14 @@
   "75e051f15fba03c9": {
    "verdict": "ok"
   },
+  "75e9e044a26f737d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "75f245163e53df09": {
    "verdict": "ok",
    "note": "parent: subtract -> 3x^2=3 -> x=+-1, y^2=9 -> four pairs (+-1,+-3)"
@@ -16177,6 +16591,14 @@
   "75fa0cc680eebe8f": {
    "verdict": "ok",
    "note": "Review Q fs-id2188234, keyed D = 'electrochemical gradient', 4th option in source order; matches glossary definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "7606866e99b840d4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -16400,6 +16822,14 @@
   },
   "778774e9bf4864c7": {
    "verdict": "ok"
+  },
+  "778d4218771f903d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "7797f22f625aef96": {
    "verdict": "ok"
@@ -16747,6 +17177,10 @@
   "7a088124605fe3cc": {
    "verdict": "ok"
   },
+  "7a095ed785daaa7e": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise fs-idp64289856: selfcheck model answer is the CNXML solution verbatim; checkpoints are its own clauses."
+  },
   "7a0b8a1574fb6b62": {
    "verdict": "ok"
   },
@@ -16967,6 +17401,14 @@
   },
   "7b41458135d990b4": {
    "verdict": "ok"
+  },
+  "7b514f7b528c298c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "7b537b2d395f3754": {
    "verdict": "ok"
@@ -17262,6 +17704,14 @@
     "result": "agrees"
    }
   },
+  "7d19b17f4343b96c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7d1eac30e9330e69": {
    "verdict": "ok"
   },
@@ -17354,6 +17804,14 @@
   "7da1fffe6f640e36": {
    "verdict": "ok"
   },
+  "7da7f0f51f6fbd38": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7da9da0d067e180b": {
    "verdict": "ok",
    "note": "textin built from m66376 glossary definition fs-id1439064 (exocytosis); prompt is the source meaning, answer is the glossary term, term does not appear in the prompt.",
@@ -17385,6 +17843,14 @@
    "verdict": "ok",
    "note": "m66540 exercise fs-idp242517296, solution transcribed near-verbatim as the model answer."
   },
+  "7dc5ae27f7b0742f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7dce4d8a27d29020": {
    "verdict": "ok",
    "note": "re-derived: g(x)=2^x+1 shifts f(x)=2^x up 1, moving the horizontal asymptote y=0 to y=1; matches recorded answer. Line y=1 has 9 lattice points (x=-4..4) inside grid xMin=-4,xMax=4,yMin=-2,yMax=8, well above the >=2 asymptote minimum."
@@ -17404,6 +17870,14 @@
   },
   "7de80f72088e1a98": {
    "verdict": "ok"
+  },
+  "7dfef695dce18d6e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "7e03b5477cbc09f3": {
    "verdict": "ok",
@@ -18044,6 +18518,14 @@
    "verdict": "ok",
    "note": "Using the f/g table (x=1..4; f=6,8,3,1; g=3,5,2,7): g(1)=3, then f(3)=3, so f(g(1))=3, matching the declared answer."
   },
+  "82718bcd629e4d6b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "827753680d8a008c": {
    "verdict": "ok"
   },
@@ -18121,6 +18603,14 @@
   "82c8f15ecb5a9dd4": {
    "verdict": "ok",
    "note": "01-the-process-of-meiosis.md line 357, model answer matches CNXML solution id=\"fs-id1275260\" verbatim; all four checks (new trait combinations, random tetrad orientation, equal chance maternal chromosomes face either pole, each gamete unique) restate that solution's own sentences."
+  },
+  "82d80749920c5457": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "82e337a8e08a3b94": {
    "verdict": "ok",
@@ -18649,6 +19139,14 @@
   "86090c389e6b2c14": {
    "verdict": "ok"
   },
+  "860915ac798d9cad": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "860b7f5037537271": {
    "verdict": "ok"
   },
@@ -19023,6 +19521,14 @@
   "89a3134e5298bcf7": {
    "verdict": "ok",
    "note": "Review Question fs-idp86366592, keyed D (oxygenation of the atmosphere). Confirmed against the Prokaryotic Metabolism subsection's account of cyanobacterial O₂ release building toward the aerobic-respiration threshold that let eukaryotes evolve.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "89b26d1bd466a202": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -20290,6 +20796,14 @@
    "verdict": "ok",
    "note": "Section Exercise 29 part 2: b = 7/tan(30deg) = 7 sqrt3 = 12.1244, computed with node; matches CNXML solution 'b=7 sqrt3'."
   },
+  "942a5022644c15e0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "94313154b4ed0c46": {
    "verdict": "ok",
    "note": "log_10(1,000,000)=6 is 10^6=1,000,000 by definition; matches CNXML Try It 1a."
@@ -20670,6 +21184,22 @@
   "96d3e1bc7fbdc0ed": {
    "verdict": "ok"
   },
+  "96dcc6faaa52ae6f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "96dd437112e17c9a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "96ddab5190355e4b": {
    "verdict": "ok"
   },
@@ -20711,6 +21241,14 @@
   "97208cdad3d7d7ed": {
    "verdict": "ok",
    "note": "Computed Math.log10(8500)=3.929419... -> 3.929 to the nearest thousandth; matches CNXML Try It 7 (8,500x case)."
+  },
+  "9726776d0f22fbd4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "97267947987c3a36": {
    "verdict": "ok"
@@ -20784,6 +21322,14 @@
   "97b4c79690db4b90": {
    "verdict": "ok",
    "note": "KC 7-12 (multiplechoice, line 891): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "97bf73ebf81fd6ca": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "97c1223dc9c3b53b": {
    "verdict": "ok"
@@ -20917,6 +21463,10 @@
     "result": "agrees"
    }
   },
+  "9890c4dbf59f6a00": {
+   "verdict": "ok",
+   "note": "m66567 critical-thinking exercise fs-idp56267088, solution transcribed verbatim as the model answer; rubric checkpoints decompose it into two clauses with no new claims."
+  },
   "98957b15b7ffeaf0": {
    "verdict": "ok",
    "note": "glossary definition fs-id1691113 (next-generation sequencing); accept aliases (deep sequencing, massively parallel sequencing) are named in the section's own text, not the glossary.",
@@ -21020,6 +21570,14 @@
   },
   "99886378338f3be0": {
    "verdict": "ok"
+  },
+  "99899ee643956b89": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "9994e0b052031485": {
    "verdict": "ok"
@@ -21374,6 +21932,10 @@
   "9bfeaf105bc2425a": {
    "verdict": "ok",
    "note": "Section Exercises Algebraic #23 (fs-id1165134368156), system {x+y+z=14;2y+3z=-14;-16y-24z=-112}. Independently confirmed inconsistency: -16y-24z is -8 times (2y+3z), so -8*(-14)=112, contradicting the printed RHS of -112. Matches CNXML key 'No solutions exist.'"
+  },
+  "9c0284c33bf46f68": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question fs-idm66901712; model answer is the source solution verbatim, checkpoints are its two clauses."
   },
   "9c0549ee79990014": {
    "verdict": "ok",
@@ -21920,6 +22482,14 @@
    "verdict": "ok",
    "note": "Critical Thinking Q fs-idm75358256: model answer transcribes the source solution verbatim (species fuse back together if the color barrier fails)."
   },
+  "a037499b248fab53": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a054db3739bd044b": {
    "verdict": "ok"
   },
@@ -22328,6 +22898,14 @@
   "a3a625848c32eba3": {
    "verdict": "ok"
   },
+  "a3acbc4579410b0b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a3ae3b9d82594a3f": {
    "verdict": "ok",
    "note": "point (-1/2,-√3/2): cot t=x/y=(-1/2)/(-√3/2)=1/√3=√3/3; matches CNXML solution"
@@ -22493,6 +23071,10 @@
   "a4e7b705087b1f48": {
    "verdict": "ok"
   },
+  "a4fa8a63877fde61": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-idp142657408/fs-idp149788288, model answer transcribed verbatim."
+  },
   "a4facedb118b661a": {
    "verdict": "ok",
    "note": "Practice #7 (CNXML fs-id1165133392614, (3x-79)/(x^2-5x-24), source solution 8/(x+3)-5/(x-8)). Independently solved: denominator factors (x+3)(x-8); 3x-79=A(x-8)+B(x+3); x=-3 gives A=8, x=8 gives B=-5; matches source. Cross-checked as exact-rational identity via node. Grader: self=correct under expanded, retype-of-printed=form."
@@ -22523,6 +23105,23 @@
   },
   "a545cc64bcc9e2fe": {
    "verdict": "ok"
+  },
+  "a546b54d0029423a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "key stands: the cloze blanks the summary sentence \"Land plants acquired traits that made it possible to colonize land and survive out of the water\" verbatim, and the hint points at the aquatic habitat; the solver paraphrased"
+   }
+  },
+  "a54cc3cefa7124cb": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a54cdfd3cc2e3d72": {
    "verdict": "ok",
@@ -22691,6 +23290,14 @@
    "verdict": "ok",
    "note": "TI6b: f(x)=x^3-3x, f'(x)=3x^2-3, f'(0)=-3 by direct substitution; confirmed numerically node central-difference -2.9999999999990004. Matches source Try It solution's fourth value (-3)."
   },
+  "a667fe363dad82b0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a669bfb3d1c7baec": {
    "verdict": "ok",
    "note": "node: 6500*(1+0.036/2)^(2*20) = 13268.5808... -> 13268.58; matches CNXML solution."
@@ -22788,6 +23395,14 @@
   "a6e01d9523acd466": {
    "verdict": "ok"
   },
+  "a6e2c6dd5e388446": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a6e8adf91e1a14e1": {
    "verdict": "ok"
   },
@@ -22811,6 +23426,14 @@
   },
   "a70a136d2cc80713": {
    "verdict": "ok"
+  },
+  "a70a775c58bd23bf": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a70ba0b748db28f1": {
    "verdict": "ok",
@@ -22941,6 +23564,14 @@
   },
   "a7bf3ec34834cccf": {
    "verdict": "ok"
+  },
+  "a7c144c611e6429c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a7cafd63aea2655b": {
    "verdict": "ok"
@@ -23439,6 +24070,14 @@
    "verdict": "ok",
    "note": "3x-y=0.6 -> y=3x-0.6; x-2y=1.3 -> solving gives unique x=-0.02,y=-0.66 (different slopes 3 vs 0.5), so consistent with one solution. Node-verified substitution satisfies both equations."
   },
+  "aadaa39e7d8f481c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "aadaa6789262593f": {
    "verdict": "ok"
   },
@@ -23517,6 +24156,14 @@
   "ab191043534ad02a": {
    "verdict": "ok"
   },
+  "ab1e62dc4d2c6008": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ab230acc2bc71650": {
    "verdict": "ok"
   },
@@ -23528,6 +24175,14 @@
   },
   "ab3038c1e5d423ac": {
    "verdict": "ok"
+  },
+  "ab330e603a19595f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ab33c707cab83edd": {
    "verdict": "ok"
@@ -23720,6 +24375,10 @@
   },
   "ac795ccec9aa2531": {
    "verdict": "ok"
+  },
+  "ac7a8ca02aa85c50": {
+   "verdict": "ok",
+   "note": "Body Visual Connection selfcheck (m66560 exercise fs-idm112715536); model answer matches the source solution verbatim, checkpoints are its two clauses."
   },
   "ac9615f12098d8d8": {
    "verdict": "ok"
@@ -24163,6 +24822,14 @@
   "afdf350daef81425": {
    "verdict": "ok"
   },
+  "afdfdb6de61be4ba": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "afeca79d27ecddc9": {
    "verdict": "ok"
   },
@@ -24229,6 +24896,14 @@
   "b064b4cba48d1340": {
    "verdict": "ok",
    "note": "tan^2x-sqrt3 tan x=0 -> tan x(tan x-sqrt3)=0 -> tan x=0 (0,pi) or tan x=sqrt3 (pi/3,4pi/3); union sorted matches source key."
+  },
+  "b07333154965ebcb": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "b075b3dd40bf8083": {
    "verdict": "ok",
@@ -24442,6 +25117,14 @@
   },
   "b1c8ed7bb3eb2754": {
    "verdict": "ok"
+  },
+  "b1cc48e4de53b854": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "b1cedce80d6187e7": {
    "verdict": "ok"
@@ -24934,6 +25617,10 @@
    "verdict": "ok",
    "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
+  "b5abf85c759959fc": {
+   "verdict": "ok",
+   "note": "CNXML eip-50/eip-756 solution transcribed verbatim as model answer."
+  },
   "b5b91267b82f8301": {
    "verdict": "ok"
   },
@@ -25093,6 +25780,10 @@
   },
   "b6e11efd7c5816ff": {
    "verdict": "ok"
+  },
+  "b6e5d80bcfe67765": {
+   "verdict": "ok",
+   "note": "Critical Thinking exercise fs-idp2066832: selfcheck model answer is the CNXML solution verbatim (source's own 'features includes' grammar kept as printed, a minor source typo not a content defect); checkpoints are one per phylum, its own clauses."
   },
   "b6e69c142c231c71": {
    "verdict": "ok"
@@ -25541,6 +26232,10 @@
     "result": "agrees"
    }
   },
+  "ba2a86257f1820e9": {
+   "verdict": "ok",
+   "note": "Critical Thinking eip-923; model answer is the source solution near-verbatim (rhizome weathering rock, network preventing erosion)."
+  },
   "ba3ae49b617fd74c": {
    "verdict": "ok"
   },
@@ -25758,6 +26453,10 @@
   },
   "bbcf8317efa31bf7": {
    "verdict": "ok"
+  },
+  "bbd53d48927894db": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question eip-142; model answer is the source solution verbatim, checkpoints are its three clauses."
   },
   "bbd55d10230846e0": {
    "verdict": "ok",
@@ -26266,6 +26965,22 @@
   "bef37dfc380fcc76": {
    "verdict": "ok"
   },
+  "befab0cdf518c88e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "bf0394cc763d9287": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "bf0ab2a3e708b158": {
    "verdict": "ok"
   },
@@ -26285,6 +27000,14 @@
   },
   "bf3377b9f1cfc46e": {
    "verdict": "ok"
+  },
+  "bf343ed18cba1995": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "bf34b559dea4fc4a": {
    "verdict": "ok",
@@ -26994,6 +27717,14 @@
     "result": "agrees"
    }
   },
+  "c3e51b46fdf1aba2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c3e625f67074f745": {
    "verdict": "ok"
   },
@@ -27244,6 +27975,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "c5a55fad1326dfad": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-idp14432288; model answer is the source solution verbatim (ferns, seed-plant-like traits)."
   },
   "c5a5f9dae59c8fba": {
    "verdict": "ok"
@@ -27496,6 +28231,10 @@
   },
   "c7358c2fc1aea141": {
    "verdict": "ok"
+  },
+  "c73e7f560f9eafdd": {
+   "verdict": "ok",
+   "note": "Critical Thinking eip-398 (Red Queen Hypothesis / Botrytis cinerea vs. red grapes); model answer is the source solution near-verbatim, one missing space between 'cinerea' and 'and' silently corrected (not a content change)."
   },
   "c73f13b92bd8d1db": {
    "verdict": "ok"
@@ -27923,6 +28662,14 @@
    "verdict": "ok",
    "note": "Practice #3: 7x*2y=14xy=2*7*x*y; product rule gives log_b(2)+log_b(7)+log_b(x)+log_b(y). Matches CNXML solution."
   },
+  "ca89483db3f18091": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ca8cca17990795cc": {
    "verdict": "ok"
   },
@@ -28091,6 +28838,14 @@
   "cb9ca1a6de475ea5": {
    "verdict": "ok"
   },
+  "cba0045064db431b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "cbad6d176fc9bc4a": {
    "verdict": "ok"
   },
@@ -28104,6 +28859,14 @@
   "cbc3ed204399c8d7": {
    "verdict": "ok",
    "note": "Given figure is sin(x)+2 per CNXML ti_06_01_06 solution f(x)=sin(x)+2; independently confirmed the figure's max 3/min 1 fits D=2, |A|=1."
+  },
+  "cbc69359e690fb89": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "cbd352cd3e34b79e": {
    "verdict": "ok"
@@ -28319,6 +29082,14 @@
   "ce11e1914b7c1c92": {
    "verdict": "ok",
    "note": "Section Exercise 7: cos(pi/3)=sin(pi/2-pi/3)=sin(pi/6); matches CNXML solution 'pi/6'."
+  },
+  "ce14a1d443d2b417": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ce1c83305af10bee": {
    "verdict": "ok"
@@ -28570,6 +29341,10 @@
   },
   "d054201ba2edb108": {
    "verdict": "ok"
+  },
+  "d056cfa4921d2374": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-idm102267760; model answer is the source solution near-verbatim, checkpoints decompose its own clauses."
   },
   "d05ef7c3d97591b7": {
    "verdict": "ok",
@@ -28889,6 +29664,14 @@
   "d2e3ba591977a05d": {
    "verdict": "ok",
    "note": "Practice (source fs-id1165135363342, a=32,b=24,gamma=75): Area=0.5*32*24*sin(75)=370.916 -> 370.9. Matches CNXML answer 370.9."
+  },
+  "d2f0b46def81d733": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "d306ccb6e9634eee": {
    "verdict": "ok"
@@ -29291,6 +30074,14 @@
   "d66d090e96ff4a69": {
    "verdict": "ok",
    "note": "Try It ti_07_01_01 adapted to a pure-number simplification: csc(t)*cos(t)*tan(t) = (1/sin t)(cos t)(sin t/cos t) = 1 for all t; confirmed numerically at t=1 (node: 1.0000000000000002)."
+  },
+  "d66ec3b1ddf10141": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "d66f3b1253534f5d": {
    "verdict": "ok"
@@ -29704,6 +30495,14 @@
   "d9f12ef424d89769": {
    "verdict": "ok"
   },
+  "da040ef79bb05038": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "da04271f407c2923": {
    "verdict": "ok",
    "note": "'Four more than a is at most 15' translates to a+4<=15; subtracting 4 gives a<=11, the keyed answer."
@@ -29927,6 +30726,14 @@
   "db92cb4075f193c6": {
    "verdict": "ok",
    "note": "a=14,b=13,c=20, angle C: acos((14^2+13^2-20^2)/(2*14*13))=95.52deg -> 95.5, matches source key."
+  },
+  "db9317f09ff5ff2b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "dba1248e7df041a5": {
    "verdict": "ok",
@@ -30188,6 +30995,10 @@
   "dd988b54491484b2": {
    "verdict": "ok"
   },
+  "dda36cc782833da6": {
+   "verdict": "ok",
+   "note": "m66566 critical-thinking fs-idp13659584, solution verbatim as model answer."
+  },
   "dda8ecc10bccb66f": {
    "verdict": "ok"
   },
@@ -30305,6 +31116,14 @@
   },
   "de9a5d292fbf800b": {
    "verdict": "ok"
+  },
+  "dea00bd9e45b9e8e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "dea49d9cb626f4fc": {
    "verdict": "ok",
@@ -30679,6 +31498,14 @@
   "e16b09f87dfc383d": {
    "verdict": "ok"
   },
+  "e17c216a1fca2b8b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e1828e0cf694f63e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -30689,6 +31516,10 @@
   },
   "e183fd63a5382230": {
    "verdict": "ok"
+  },
+  "e18a3f5563cdffec": {
+   "verdict": "ok",
+   "note": "parent re-verdict after the checkpoint edit: model answer is the source solution fs-idm... (superficial mycoses breach the keratinized layer; bacteria enter deeper tissues); the second checkpoint now restates the model answer's own clause"
   },
   "e18bda04b40f1504": {
    "verdict": "ok"
@@ -31044,6 +31875,14 @@
   },
   "e36d3ec79d47de3b": {
    "verdict": "ok"
+  },
+  "e36ef60b9ea162fe": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e37214623dc819da": {
    "verdict": "ok",
@@ -31616,6 +32455,14 @@
   "e71729c9ca39376d": {
    "verdict": "ok"
   },
+  "e7177d6f54375811": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e719de657e8ee226": {
    "verdict": "ok"
   },
@@ -31939,6 +32786,14 @@
    "verdict": "ok",
    "note": "Practice (source fs-id1165135664922, building height, angles 35/53deg, 250ft closer): angle at closer point (interior)=180-53=127; angle at top=180-35-127=18; distance from closer point to top=250*sin(35)/sin(18)=464.033; height=that*sin(53)=370.593 -> 371 ft (nearest foot). Matches CNXML answer 371 ft."
   },
+  "e9c59f3def1c0b46": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e9cf4bc7b4de51ae": {
    "verdict": "ok"
   },
@@ -32249,6 +33104,14 @@
     "result": "agrees"
    }
   },
+  "ec11083b4c7d21b3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ec1b53cf6ce2b4ab": {
    "verdict": "ok",
    "note": "Visual Connection (exercise fs-idm104376352, solution fs-idp76857456): keyed prose solution 'DNA ligase, as this enzyme joins together Okazaki fragments' matches the section's own statement that DNA ligase seals the nicks between Okazaki fragments; no other enzyme in the section text performs that joining step."
@@ -32357,6 +33220,14 @@
   },
   "ec9490c159a7e2d7": {
    "verdict": "ok"
+  },
+  "ec9b39c56031a87d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "eca3b00a98ac9b0e": {
    "verdict": "ok"
@@ -32556,6 +33427,14 @@
   },
   "ee11e06c01284d05": {
    "verdict": "ok"
+  },
+  "ee1d343387bcfc10": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ee26aafa39fe62a4": {
    "verdict": "ok",
@@ -32795,6 +33674,14 @@
   },
   "efebbe01aa376f61": {
    "verdict": "ok"
+  },
+  "efee4985b0025779": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "efffc0b3b1aa7b8f": {
    "verdict": "ok"
@@ -33643,6 +34530,14 @@
   "f6925a98c693cbce": {
    "verdict": "ok"
   },
+  "f696aee5a5c9da06": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f696efb9f1541d38": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 281): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -33778,6 +34673,14 @@
   "f7703bd17be370f8": {
    "verdict": "ok",
    "note": "Matrix already row-echelon [[1,0,0|31],[0,1,1|45],[0,0,1|87]]. Back-substitution: z=87, y=45-87=-42, x=31. Matches CNXML fs-id1165134431916 (31,-42,87) exactly."
+  },
+  "f7746dd2cdb222b7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f7846c9749037468": {
    "verdict": "ok"
@@ -34190,6 +35093,10 @@
   },
   "fa1a5c59e8f351a3": {
    "verdict": "ok"
+  },
+  "fa1e0f976ce4fce1": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question eip-795; model answer is the source solution verbatim (preamble kept), checkpoints are its three clauses."
   },
   "fa376b0ab766cad8": {
    "verdict": "ok",
@@ -34613,6 +35520,10 @@
   },
   "fd6fda823106677c": {
    "verdict": "ok"
+  },
+  "fd72f6beafd693dc": {
+   "verdict": "ok",
+   "note": "m66566 critical-thinking eip-777, solution's bulleted list reformatted into one sentence, no new claim added."
   },
   "fd736553b9441508": {
    "verdict": "ok"

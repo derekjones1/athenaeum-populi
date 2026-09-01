@@ -1224,12 +1224,12 @@ test('the biology sidebar nests chapters under their unit, and a math sidebar st
     'Phylogenies and the History of Life',
   ]);
   const unit5Titles = await visible.nth(4).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
-  expect(unit5Titles).toEqual(['Viruses', 'Prokaryotes: Bacteria and Archaea', 'Protists']);
-  // 23 chapter landings + 96 sections, rendered once.
+  expect(unit5Titles).toEqual(['Viruses', 'Prokaryotes: Bacteria and Archaea', 'Protists', 'Fungi', 'Seedless Plants']);
+  // 25 chapter landings + 105 sections, rendered once.
   const bookLinks = page.locator('aside a[href^="/life-health-sciences/biology/"]:not([href="/life-health-sciences/biology/"])');
   const insideUnit = page.locator('aside .ap-sidebar-unit a[href^="/life-health-sciences/biology/"]');
-  expect(await bookLinks.count()).toBe(119);
-  expect(await insideUnit.count()).toBe(119);
+  expect(await bookLinks.count()).toBe(130);
+  expect(await insideUnit.count()).toBe(130);
   // The desktop sidebar is the drawer list with its drawer-only rows hidden:
   // the shelf entry and the book's "Overview" row wrap the tree as
   // .ap-sidebar-shell (row hidden, indentation flattened from md up), and

@@ -8417,6 +8417,753 @@
       "alt": "The photo shows a slice of potato that has browned and appears rotten.",
       "caption": "Potato blight. These unappetizing remnants result from an infection with P . infestans , the causative agent of potato late blight. (credit: USDA)"
     },
+    "Figure_24_00_01abcf": {
+      "source": "media/Figure_24_00_01abcf.jpg",
+      "sourceSha256": "40b07166f7daf2072e2dbae96832474dce9dcc6075ad2eedc524cb8f2de55bdc",
+      "module": "m66557",
+      "kind": "photo",
+      "width": 1118,
+      "height": 457,
+      "variants": [
+        {
+          "width": 800,
+          "height": 327,
+          "file": "Figure_24_00_01abcf-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 457,
+          "file": "Figure_24_00_01abcf-1118.webp"
+        }
+      ],
+      "alt": "Left photo shows a cluster of mushrooms with bell-like domes attached to slender stalks. Middle photo shows a yellowish-orange fungus that grows in a cluster and is lobe-shaped. Right photo is a micrograph that shows a long, slender stalk that branches into long chains of spores that look like a string of beads.",
+      "caption": "Many species of fungus produce the familiar mushroom (a) which is a reproductive structure. This (b) coral fungus displays brightly colored fruiting bodies. This electron micrograph shows (c) the spore-bearing structures of Aspergillus , a type of toxic fungus found mostly in soil and plants. (credit “mushroom”: modification of work by Chris Wee; credit “coral fungus”: modification of work by Cory Zanker; credit “ Aspergillus ”: modification of work by Janice Haney Carr, Robert Simmons, CDC; scale-bar data from Matt Russell)"
+    },
+    "Figure_24_01_01": {
+      "source": "media/Figure_24_01_01.jpg",
+      "sourceSha256": "c45799a8892963f271abd35f2df3ce0b9e41778ff9075e41958780865ed76a81",
+      "module": "m66558",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_24_01_01-544.webp"
+        }
+      ],
+      "alt": "Photo shows two large mushrooms, each with a wide white base and a bright red cap. The caps are dotted with small white protrusions.",
+      "caption": "Amanita. The poisonous Amanita muscaria is native to temperate and boreal regions of North America. (credit: Christine Majul)"
+    },
+    "Figure_24_01_02": {
+      "source": "media/Figure_24_01_02.jpg",
+      "sourceSha256": "80c64d406c7c15fe01a60eccfae3f88445b01e4e3560991809a188b95264580d",
+      "module": "m66558",
+      "kind": "photo",
+      "width": 544,
+      "height": 375,
+      "variants": [
+        {
+          "width": 544,
+          "height": 375,
+          "file": "Figure_24_01_02-544.webp"
+        }
+      ],
+      "alt": "Micrograph shows clumps of small blue spheres. Each sphere is about 5 microns across.",
+      "caption": "Candida albicans. Candida albicans is a yeast cell and the agent of candidiasis and thrush . This organism has a similar morphology to coccus bacteria; however, yeast is a eukaryotic organism (note the nucleus). (credit: modification of work by Dr. Godon Roberstad, CDC; scale-bar data from Matt Russell)"
+    },
+    "Figure_24_01_03": {
+      "source": "media/Figure_24_01_03.jpg",
+      "sourceSha256": "f2e82ef98d9a7bd4e96b262bf25fafa3064e55882e565b58d4ac89abc599ca6a",
+      "module": "m66558",
+      "kind": "photo",
+      "width": 544,
+      "height": 403,
+      "variants": [
+        {
+          "width": 544,
+          "height": 403,
+          "file": "Figure_24_01_03-544.webp"
+        }
+      ],
+      "alt": "Photo depicts a light brown fungus growing in a Petri dish. The fungus has the appearance of wrinkled round skin surrounded by powdery residue. A hub-like indentation exists at the center of the fungus. Extending from this hub are folds that resemble spokes on a wheel.",
+      "caption": "A fungal mycelium. The mycelium of the fungus Neotestudina rosati can be pathogenic to humans. The fungus enters through a cut or scrape and develops a mycetoma , a chronic subcutaneous infection. (credit: CDC)"
+    },
+    "Figure_24_01_04abcf": {
+      "source": "media/Figure_24_01_04abcf.jpg",
+      "sourceSha256": "d7ede2f97b8942f529002adcbe248ca5c44e8f3f6c6da1d3df6bb6ad9b86488a",
+      "module": "m66558",
+      "kind": "photo",
+      "width": 1117,
+      "height": 829,
+      "variants": [
+        {
+          "width": 800,
+          "height": 593,
+          "file": "Figure_24_01_04abcf-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 829,
+          "file": "Figure_24_01_04abcf-1117.webp"
+        }
+      ],
+      "alt": "Part A is an illustration of septated hyphae. Cells within the septated hyphae are rectangular. Each cell has its own nucleus, and connects to other cells end to end in a long strand. Two branches occur in the hyphae. Part B is an illustration of coenocytic hyphae. Like the septated hyphae, the coenocytic hyphae consist of long, branched fibers. However, in coenocytic hyphae, there is no separation between the cells or nuclei. Part C is a light micrograph of septated hyphae from Phialophora richardsiae. The hyphae consists of a long chain of cells with multiple branches. Each branch is about 3 microns wide and varies from 3 to 20 microns in length.",
+      "caption": "Fungal hyphae. Fungal hyphae may be (a) septated or (b) coenocytic (coeno- = \"common\"; -cytic = \"cell\") with many nuclei present in a single hypha. A bright field light micrograph of (c) Phialophora richardsiae shows septa that divide the hyphae. (credit c: modification of work by Dr. Lucille Georg, CDC; scale-bar data from Matt Russell)"
+    },
+    "Figure_24_01_05abf": {
+      "source": "media/Figure_24_01_05abf.jpg",
+      "sourceSha256": "1fb940d3a65978dcccee1028675ac33e9025ab3a8ef50d9d76b966dcfe2c7e65",
+      "module": "m66558",
+      "kind": "photo",
+      "width": 848,
+      "height": 446,
+      "variants": [
+        {
+          "width": 800,
+          "height": 420,
+          "file": "Figure_24_01_05abf-800.webp"
+        },
+        {
+          "width": 848,
+          "height": 446,
+          "file": "Figure_24_01_05abf-848.webp"
+        }
+      ],
+      "alt": "Part A is a photo of a puffball mushroom, which is round and white. Part B is an illustration of a puffball mushroom releasing spores through its exploded top.",
+      "caption": "Puffball and spores. The (a) giant puffball mushroom releases (b) a cloud of spores when it reaches maturity. (credit a: modification of work by Roger Griffith; credit b: modification of work by Pearson Scott Foresman, donated to the Wikimedia Foundation)"
+    },
+    "Figure_24_01_06": {
+      "source": "media/Figure_24_01_06.jpg",
+      "sourceSha256": "95dfcf0686cacad18a82e125192e12902ca7b5884f6a8b001e84ab3b600ee291",
+      "module": "m66558",
+      "kind": "photo",
+      "width": 544,
+      "height": 430,
+      "variants": [
+        {
+          "width": 544,
+          "height": 430,
+          "file": "Figure_24_01_06-544.webp"
+        }
+      ],
+      "alt": "Micrograph shows budding yeast cells. The parent cells are stained dark blue and round, with smaller, teardrop shaped cells budding from them. The cells are about 2 microns across and 3 microns long.",
+      "caption": "Budding in Histoplasma . The dark cells in this bright field light micrograph are the pathogenic yeast Histoplasma capsulatum, seen against a backdrop of light blue tissue. Histoplasma primarily infects lungs but can spread to other tissues, causing histoplasmosis, a potentially fatal disease. (credit: modification of work by Dr. Libero Ajello, CDC; scale-bar data from Matt Russell)"
+    },
+    "Figure_24_01_08": {
+      "source": "media/Figure_24_01_08.jpg",
+      "sourceSha256": "f28fc1fa117e0258079b4206c1f1aed5d7131c5ec9d2ccf53771518361236379",
+      "module": "m66558",
+      "kind": "photo",
+      "width": 544,
+      "height": 371,
+      "variants": [
+        {
+          "width": 544,
+          "height": 371,
+          "file": "Figure_24_01_08-544.webp"
+        }
+      ],
+      "alt": "Micrograph shows several long, thread-like hyphae stained blue. One hypha has a round sporangium, about 35 microns in diameter, at the tip. The sporangium is dark blue at the neck, and grainy white and blue elsewhere. Spores that have already been released appear as small white ovals.",
+      "caption": "Sporangiospores. This bright field light micrograph shows the release of spores from a sporangium at the end of a hypha called a sporangiophore. The organism is a Mucor sp. fungus, a mold often found indoors. (credit: modification of work by Dr. Lucille Georg, CDC; scale-bar data from Matt Russell)"
+    },
+    "Figure_24_02_01": {
+      "source": "media/Figure_24_02_01.jpg",
+      "sourceSha256": "023c0ee548ca0770f26c22ec50a76121908f3f9a7a4e413e6da17e4fdad1fb5d",
+      "module": "m66559",
+      "kind": "photo",
+      "width": 544,
+      "height": 884,
+      "variants": [
+        {
+          "width": 544,
+          "height": 884,
+          "file": "Figure_24_02_01-544.webp"
+        }
+      ],
+      "alt": "Micrograph A shows an arthropod, which is a teardrop-shaped transparent organism about 90 microns across and 120 microns long. Tentacle-like appendages jut out from the front, wide end of the organism, and clusters of cilia-like appendages jut out from either side and the back. Transparent oval organisms about 20 microns across cling to the arthropod. Micrograph B shows a similar oval transparent organisms clinging to rod-shaped algae about 5 microns across and 200 microns long.",
+      "caption": "Chytrids. The chytrid Batrachochytrium dendrobatidis is seen in these light micrographs as transparent spheres growing on (a) a freshwater arthropod (water mite) and (b) algae. This chytrid causes skin diseases in many species of amphibians, resulting in species decline and extinction. (credit: modification of work by Johnson ML, Speare R., CDC)"
+    },
+    "Figure_24_02_03abf": {
+      "source": "media/Figure_24_02_03abf.jpg",
+      "sourceSha256": "c55d0055d96a87dc04ceaee2100d9a8637f92f83663c04db7eaa5410feb6b8ec",
+      "module": "m66559",
+      "kind": "photo",
+      "width": 1117,
+      "height": 425,
+      "variants": [
+        {
+          "width": 800,
+          "height": 304,
+          "file": "Figure_24_02_03abf-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 425,
+          "file": "Figure_24_02_03abf-1117.webp"
+        }
+      ],
+      "alt": "The photo in part A shows a thick layer of green mold growing on bread. Fuzzy white projections grow from the mold. Part B shows a photo of black tips in bread mold.",
+      "caption": "Rhizopus spores. Asexual sporangia grow at the end of stalks, which appear as (a) white fuzz seen on this bread mold, Rhizopus stolonifer . The black tips (b) of bread mold are the spore-containing sporangia. (credit b: modification of work by \"polandeze\"/Flickr)"
+    },
+    "Figure_24_02_05": {
+      "source": "media/Figure_24_02_05.jpg",
+      "sourceSha256": "b7f9fb65c318f884e5b4f3ccd97837c9c8a42be136cd1bc53045c6742c84fcaa",
+      "module": "m66559",
+      "kind": "photo",
+      "width": 425,
+      "height": 638,
+      "variants": [
+        {
+          "width": 425,
+          "height": 638,
+          "file": "Figure_24_02_05-425.webp"
+        }
+      ],
+      "alt": "Micrograph shows asci, which appear as multiple, sphere-like shapes fused together into a structure about 7 microns across, and ascospores, which are small, light blue ovals about two microns wide by three microns long released from the asci.",
+      "caption": "Ascospores. The bright field light micrograph shows ascospores being released from asci in the fungus Talaromyces flavus var. flavus . (credit: modification of work by Dr. Lucille Georg, CDC; scale-bar data from Matt Russell)"
+    },
+    "Figure_24_02_06": {
+      "source": "media/Figure_24_02_06.jpg",
+      "sourceSha256": "ac56dd8c3b5e3b09d0fda6949249fa7a7d4d5e6aa9b7be689074221c77b940be",
+      "module": "m66559",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_24_02_06-544.webp"
+        }
+      ],
+      "alt": "Photo shows toadstool mushrooms growing on a lawn, and forming a large circle.",
+      "caption": "Fairy ring. The fruiting bodies of a basidiomycete form a ring in a meadow, commonly called “fairy ring.” The best-known fairy ring fungus has the scientific name Marasmius oreades . The body of this fungus, its mycelium, is underground and grows outward in a circle. As it grows, the mycelium depletes the soil of nitrogen, causing the mycelia to grow away from the center and leading to the “fairy ring” of fruiting bodies where there is adequate soil nitrogen. (Credit: \"Cropcircles\"/Wikipedia Commons)]"
+    },
+    "Figure_24_02_08": {
+      "source": "media/Figure_24_02_08.jpg",
+      "sourceSha256": "6d8359cb5486c55201a402d8213bdb6e751d176b758580274e58e48f7e9c4b5d",
+      "module": "m66559",
+      "kind": "photo",
+      "width": 544,
+      "height": 377,
+      "variants": [
+        {
+          "width": 544,
+          "height": 377,
+          "file": "Figure_24_02_08-544.webp"
+        }
+      ],
+      "alt": "Micrograph shows Aspergillus mycelia, which look like long threads, and a spherical conidiophore about 40 microns across.",
+      "caption": "Aspergillus. Aspergillus niger is an asexually reproducing fungus (phylum Ascomycota) commonly found as a food contaminant. The spherical structure in this light micrograph is an asexual conidiophore. Molecular studies have placed Aspergillus with the ascomycetes and sexual cycles have been identified in some species. (credit: modification of work by Dr. Lucille Georg, CDC; scale-bar data from Matt Russell)"
+    },
+    "Figure_24_03_01": {
+      "source": "media/Figure_24_03_01.jpg",
+      "sourceSha256": "353b29f3d31c0ec6ffcc9de66126d553229303f9b934d2900d388541cb006d6c",
+      "module": "m66560",
+      "kind": "photo",
+      "width": 544,
+      "height": 363,
+      "variants": [
+        {
+          "width": 544,
+          "height": 363,
+          "file": "Figure_24_03_01-544.webp"
+        }
+      ],
+      "alt": "Photo shows two shell-shaped mushrooms growing on decaying wood.",
+      "caption": "Bracket fungi. Fungi are an important part of ecosystem nutrient cycles. These bracket fungi growing on the side of a tree are the fruiting structures of a basidiomycete. They receive their nutrients through their hyphae, which invade and decay the tree trunk. (credit: Cory Zanker)"
+    },
+    "Figure_24_03_02": {
+      "source": "media/Figure_24_03_02.jpg",
+      "sourceSha256": "f4d9320a646a9fcd6a3d4c85ec1d8f98da918e8d3633c13efd6ae47cf1e0269d",
+      "module": "m66560",
+      "kind": "photo",
+      "width": 544,
+      "height": 361,
+      "variants": [
+        {
+          "width": 544,
+          "height": 361,
+          "file": "Figure_24_03_02-544.webp"
+        }
+      ],
+      "alt": "Photo shows a shell-shaped shelf fungus growing up the trunk of a living tree.",
+      "caption": "Shelf fungi. Shelf fungi, so called because they grow on trees in a stack, attack and digest the trunk or branches of a tree. While some shelf fungi are found only on dead trees, others can parasitize living trees and cause eventual death, so they are considered serious tree pathogens. (credit: Cory Zanker)"
+    },
+    "Figure_24_03_03": {
+      "source": "media/Figure_24_03_03.png",
+      "sourceSha256": "26939816d6b2b5dd74521a23242c15dd254a3ba6e6499e3d732e0614f6f64c6c",
+      "module": "m66560",
+      "kind": "diagram",
+      "width": 725,
+      "height": 480,
+      "variants": [
+        {
+          "width": 725,
+          "height": 480,
+          "file": "Figure_24_03_03-725.webp"
+        }
+      ],
+      "alt": "The figure compares two types of mycorrhizae: ectomycorrhiza and arbuscular mycorrhiza. Part A is an illustration of an ectomycorrhiza mycorrhiza. In ectomycorrhiza, fungal hyphae form a structure called a Hartig net inside the root. The Hartig net forms rows of cells that extend straight down, and branch toward the outside of the root. A fungal mantle surrounds the root. Mycelia extend from the fungal mantle. In arbuscular mycorrhiza, the fungi form finger-like clusters that are connected to mycelia that extend from the root into the soil. Part B is a micrograph of arbuscular mycorrhiza, which appear as grape-like clusters in a root tip.",
+      "caption": "Two types of mycorrhizae. (a) Ectomycorrhizae and (b) arbuscular or endomycorrhizae have different mechanisms for interacting with the roots of plants. (credit b: MS Turmel, University of Manitoba, Plant Science Department)"
+    },
+    "Figure_24_03_04ab": {
+      "source": "media/Figure_24_03_04ab.jpg",
+      "sourceSha256": "2f92dd6de6023ff00cce996dd9313fe3ad0aece411d3238a08aef4b5a1dd22b4",
+      "module": "m66560",
+      "kind": "photo",
+      "width": 1087,
+      "height": 394,
+      "variants": [
+        {
+          "width": 800,
+          "height": 290,
+          "file": "Figure_24_03_04ab-800.webp"
+        },
+        {
+          "width": 1087,
+          "height": 394,
+          "file": "Figure_24_03_04ab-1087.webp"
+        }
+      ],
+      "alt": "Part A is a photograph showing a white fungal mantle that covers a tree-like structure that has grown from the side of a root. Part B is a micrograph showing ribbon-like hyphae surrounded by spores that are about 30 microns across.",
+      "caption": "Mycorrhizae. The (a) infection of Pinus radiata (Monterey pine) roots by the hyphae of Amanita muscaria (fly amanita) causes the pine tree to produce many small, branched rootlets. The Amanita hyphae cover these small roots with a white mantle. (b) Spores (the round bodies) and hyphae (thread-like structures) are evident in this light micrograph of an arbuscular mycorrhiza by a fungus on the root of a corn plant. (credit a: modification of work by Randy Molina, USDA; credit b: modification of work by Sara Wright, USDA-ARS; scale-bar data from Matt Russell)"
+    },
+    "Figure_24_03_05abcf": {
+      "source": "media/Figure_24_03_05abcf.jpg",
+      "sourceSha256": "5d6de15ea59d7376d07d45636caa503827ab6c733873c09a62f3eda60c8267fb",
+      "module": "m66560",
+      "kind": "photo",
+      "width": 1118,
+      "height": 300,
+      "variants": [
+        {
+          "width": 800,
+          "height": 214,
+          "file": "Figure_24_03_05abcf-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 300,
+          "file": "Figure_24_03_05abcf-1118.webp"
+        }
+      ],
+      "alt": "Different lichens are shown. Part A shows a lichen that appears like brown flecks on gray rock. Part B shows a moss-like lichen hanging from a tree. Part C shows lichen that have a wide, flat, convoluted shape.",
+      "caption": "Lichens. Lichens have many forms. They may be (a) crust-like, (b) hair-like, or (c) leaf-like. (credit a: modification of work by Jo Naylor; credit b: modification of work by \"djpmapleferryman\"/Flickr; credit c: modification of work by Cory Zanker)"
+    },
+    "Figure_24_03_06": {
+      "source": "media/Figure_24_03_06.jpg",
+      "sourceSha256": "1ed02493b28409da681c962c154b57505f6528c92b0f333b6f47e5ffaf25c116",
+      "module": "m66560",
+      "kind": "photo",
+      "width": 450,
+      "height": 562,
+      "variants": [
+        {
+          "width": 450,
+          "height": 562,
+          "file": "Figure_24_03_06-450.webp"
+        }
+      ],
+      "alt": "The lichen has multiple layers. The top layer, or upper cortex, is made up of compact fungal hyphae that provide protection to the lichen. Beneath this layer is the algal zone, where fungal hyphae wrap around the photosynthetic algal cells. Below the algal zone is a layer known as the medulla, which is comprised of more loosely arranged fungal hyphae. Beneath the medulla lies the lower cortex, which, like the upper cortex, is comprised of compact fungal hyphae that provide protection to the lichen. Projections beneath the lower cortex anchor the lichen to its substrate.",
+      "caption": "Structure of a lichen. This cross-section of a lichen thallus shows the (a) upper cortex of fungal hyphae, which provides protection; the (b) algal zone where photosynthesis occurs, the (c) medulla of fungal hyphae, and the (d) lower cortex, which also provides protection and may have (e) rhizines to anchor the thallus to the substrate."
+    },
+    "Figure_24_03_07": {
+      "source": "media/Figure_24_03_07.jpg",
+      "sourceSha256": "769170b4817b95e524af4bbd5ab850bf8ac582fb9fc4e4e7d98ff74859f395a9",
+      "module": "m66560",
+      "kind": "photo",
+      "width": 544,
+      "height": 443,
+      "variants": [
+        {
+          "width": 544,
+          "height": 443,
+          "file": "Figure_24_03_07-544.webp"
+        }
+      ],
+      "alt": "Photo shows an ant carrying a leaf over its head.",
+      "caption": "Leaf-cutter ant. A leaf-cutter ant transports a leaf that will feed a farmed fungus. (credit: Scott Bauer, USDA-ARS)"
+    },
+    "Figure_24_04_02abc": {
+      "source": "media/Figure_24_04_02abc.jpg",
+      "sourceSha256": "8eba71bb6aa8018e60d7aa72929caedec9a4ad5e9e031c3a2d3677e3a675aa7f",
+      "module": "m66562",
+      "kind": "photo",
+      "width": 1117,
+      "height": 328,
+      "variants": [
+        {
+          "width": 800,
+          "height": 235,
+          "file": "Figure_24_04_02abc-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 328,
+          "file": "Figure_24_04_02abc-1117.webp"
+        }
+      ],
+      "alt": "Part A is a photo of a red, ring-shaped skin lesion. Part B is a micrograph of long, thread-like mycelia and small, oval sporangia. Part C is a chest X-ray of a person with a fungal infection.",
+      "caption": "Fungal diseases of humans. (a) Ringworm presents as a red ring on skin; (b) Trichophyton violaceum , shown in this bright field light micrograph, causes superficial mycoses on the scalp; (c) Histoplasma capsulatum is an ascomycete that infects airways and causes symptoms similar to influenza. (credit a: modification of work by Dr. Lucille K. Georg, CDC; credit b: modification of work by Dr. Lucille K. Georg, CDC; credit c: modification of work by M. Renz, CDC; scale-bar data from Matt Russell)"
+    },
+    "Figure_24_05_01": {
+      "source": "media/Figure_24_05_01.jpg",
+      "sourceSha256": "ebad459ab0f4dff61dda30dea54b769e3a799354f64678e32f2a6dc500756a7d",
+      "module": "m66563",
+      "kind": "photo",
+      "width": 544,
+      "height": 443,
+      "variants": [
+        {
+          "width": 544,
+          "height": 443,
+          "file": "Figure_24_05_01-544.webp"
+        }
+      ],
+      "alt": "Photo shows a green, stump-shaped ash borer jutting from the bark of a tree with white fuzz (the parasitic fungus) on its body.",
+      "caption": "Fungal insect control. The emerald ash borer ( Agrilus planipennis ) is an insect that attacks ash trees. It is in turn parasitized by a pathogenic fungus ( Beauveria bassiana ) that holds promise as a biological insecticide. The parasitic fungus appears as white fuzz on the body of the insect. (credit: Houping Liu, USDA Agricultural Research Service)"
+    },
+    "Figure_25_00_01": {
+      "source": "media/Figure_25_00_01.jpg",
+      "sourceSha256": "93489a6099e11c51f0e1c5033e4dd1806927768ac19864db9ee4897092269d67",
+      "module": "m66565",
+      "kind": "photo",
+      "width": 1118,
+      "height": 451,
+      "variants": [
+        {
+          "width": 800,
+          "height": 322,
+          "file": "Figure_25_00_01-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 451,
+          "file": "Figure_25_00_01-1118.webp"
+        }
+      ],
+      "alt": "Photo shows a seedless plant growing under a large tree. The seedless plant has a long, slender stalk with thin, filamentous branches radiating out from it. The branches have no leaves.",
+      "caption": "Seedless plants, like these horsetails ( Equisetum sp.), thrive in damp, shaded environments under a tree canopy where dryness is rare. (credit: modification of work by Jerry Kirkhart)"
+    },
+    "Figure_25_01_01": {
+      "source": "media/Figure_25_01_01.jpg",
+      "sourceSha256": "44b4c64b27ec4e82441a02f2c8dfad6645dd52bc2c910ea4bca0edc102c246f0",
+      "module": "m66566",
+      "kind": "photo",
+      "width": 544,
+      "height": 311,
+      "variants": [
+        {
+          "width": 544,
+          "height": 311,
+          "file": "Figure_25_01_01-544.webp"
+        }
+      ],
+      "alt": "The plant life cycle has haploid and diploid stages. The cycle begins when haploid (1n) spores undergo mitosis to form a multicellular gametophyte. The gametophyte produces gametes, two of which fuse to form a diploid zygote. The diploid (2n) zygote undergoes mitosis to form a multicellular sporophyte. Meiosis of cells in the sporophyte produces 1n spores, completing the cycle.",
+      "caption": "Alternation of generations between the 1 n gametophyte and 2 n sporophyte is shown. Mitosis occurs in both gametophyte and sporophyte generations. Diploid sporophytes produce haploid spores by meiosis, while haploid gametophytes produce gametes by mitosis. (credit: Peter Coxhead)"
+    },
+    "Figure_25_01_02": {
+      "source": "media/Figure_25_01_02.jpg",
+      "sourceSha256": "9a0eaa3ead2df4aaa2558fb790edeca397fcc1d00b9bb648bc836ca38822079c",
+      "module": "m66566",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_25_01_02-544.webp"
+        }
+      ],
+      "alt": "Photo shows sporangia in seedless plant Bryum capillare.",
+      "caption": "Sporangia. Spore-producing sacs called sporangia grow at the ends of long, thin stalks in this photo of the moss Bryum capillare . (credit: Javier Martin)"
+    },
+    "Figure_25_01_03": {
+      "source": "media/Figure_25_01_03.jpg",
+      "sourceSha256": "98c79a0e877eaa1ea8f65b7bdd30599ac93a4d4fb922c7ce019b7fe705ef0d13",
+      "module": "m66566",
+      "kind": "photo",
+      "width": 544,
+      "height": 443,
+      "variants": [
+        {
+          "width": 544,
+          "height": 443,
+          "file": "Figure_25_01_03-544.webp"
+        }
+      ],
+      "alt": "The illustration shows the tip of a root tapering to a rounded end. The entire inside of the rounded tip is the apical meristem, whose cells are smaller than the more mature cells further from the tip. The apical meristem is surrounded on the outside of the root by a single layer of cells called the root cap.",
+      "caption": "Apical meristem at a root tip. Addition of new cells in a root occurs at the apical meristem. Subsequent enlargement of these cells causes the organ to grow and elongate. The root cap protects the fragile apical meristem as the root tip is pushed through the soil by cell elongation."
+    },
+    "Figure_25_01_05": {
+      "source": "media/Figure_25_01_05.png",
+      "sourceSha256": "8ff7fe31eada45f913275e9f2e9facbaa6d8b831f457d02441796242561ff88f",
+      "module": "m66566",
+      "kind": "diagram",
+      "width": 725,
+      "height": 399,
+      "variants": [
+        {
+          "width": 725,
+          "height": 399,
+          "file": "Figure_25_01_05-725.webp"
+        }
+      ],
+      "alt": "Table shows the division of Streptophytes: the green plants. This group includes Charophytes and Embryophytes. Embryophytes are land plants, which are subdivided into vascular and nonvascular plants. Nonvascular plants are all seedless, and are in the Bryophyte group, which is subdivided into liverworts, hornworts, and mosses. Vascular plants are divided into seedless and seed plants. Seedless plants are subdivided into Lycophytes, which include club mosses, quillworts, and spike mosses, and monilophytes, which include whisk ferns, horsetails, and ferns. Seed plants are in the Spermatophyte group and consist of gymnosperms and angiosperms.",
+      "caption": "Streptophytes. This table shows the major divisions of green plants."
+    },
+    "Figure_25_02_01abcd": {
+      "source": "media/Figure_25_02_01abcd.jpg",
+      "sourceSha256": "447b9a2b4e06b5c64e96d9ccb58440fc07784136dadee99b0ef53541fbe245fb",
+      "module": "m66567",
+      "kind": "photo",
+      "width": 1115,
+      "height": 1049,
+      "variants": [
+        {
+          "width": 800,
+          "height": 752,
+          "file": "Figure_25_02_01abcd-800.webp"
+        },
+        {
+          "width": 1115,
+          "height": 1049,
+          "file": "Figure_25_02_01abcd-1115.webp"
+        }
+      ],
+      "alt": "Light micrograph A shows rectangular Spirogyra cells linked in a chain. Light micrograph B shows a oval green desmid cell. Electron micrograph C shows egg-shaped Chlamydomonas cells attached to thin stalks. Photo D shows a colony of Ulva that resembles leaf lettuce.",
+      "caption": "Green algae. Charophyta include (a) Spirogyra and (b) desmids. Chlorophyta include (c) Chlamydomonas , and (d) Ulva . Desmids and Chlamydomonas are single-celled organisms, Spirogyra forms chains of cells, and Ulva forms multicellular structures resembling leaves, although the cells are not differentiated as they are in higher plants (credit b: modification of work by Derek Keats; credit c: modification of work by Dartmouth Electron Microscope Facility, Dartmouth College; credit d: modification of work by Holger Krisp; scale-bar data from Matt Russell)"
+    },
+    "Figure_25_02_02": {
+      "source": "media/Figure_25_02_02.jpg",
+      "sourceSha256": "ef170d0ae53c8862e5368fdc971c9778f8337f3af2977079966cbba3d4b8707e",
+      "module": "m66567",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_25_02_02-544.webp"
+        }
+      ],
+      "alt": "Chara is a water plant with a long, flexible green stem. Whorls of slender stalks periodically radiate from the stem.",
+      "caption": "Chara . The representative alga, Chara, is a noxious weed in Florida, where it clogs waterways. (credit: South Florida Information Access, U.S. Geological Survey)"
+    },
+    "Figure_25_03_01": {
+      "source": "media/Figure_25_03_01.jpg",
+      "sourceSha256": "541bc8be2cbfd3e9cabf1da96f28da8c6f73a8df6f58becc1768f54de4cae1fe",
+      "module": "m66568",
+      "kind": "photo",
+      "width": 544,
+      "height": 762,
+      "variants": [
+        {
+          "width": 544,
+          "height": 762,
+          "file": "Figure_25_03_01-544.webp"
+        }
+      ],
+      "alt": "The illustration shows a variety of liverworts, which all share a branched, leafy structure.",
+      "caption": "Liverworts. This 1904 drawing shows the variety of forms of Marchantiophyta."
+    },
+    "Figure_25_03_04": {
+      "source": "media/Figure_25_03_04.jpg",
+      "sourceSha256": "843cfff036170a85dab8c775b399085007bdeefe0ef38156bcb189db6d3d5bae",
+      "module": "m66568",
+      "kind": "photo",
+      "width": 544,
+      "height": 406,
+      "variants": [
+        {
+          "width": 544,
+          "height": 406,
+          "file": "Figure_25_03_04-544.webp"
+        }
+      ],
+      "alt": "The base of the hornwort plant, called the thallus, has a wrinkled, leaf-like appearance. The sporophytes, a cluster of slender green stalks with brown tips, grow from this wrinkled mass.",
+      "caption": "Hornwort sporophytes. Hornworts grow a tall and slender sporophyte. (credit: modification of work by Jason Hollinger)"
+    },
+    "Figure_25_03_05": {
+      "source": "media/Figure_25_03_05.jpg",
+      "sourceSha256": "aa5c6f3ecd4e9607b2b38369073931b970f6cc0fa39b8f9ff8a147364e674fdf",
+      "module": "m66568",
+      "kind": "photo",
+      "width": 800,
+      "height": 820,
+      "variants": [
+        {
+          "width": 800,
+          "height": 820,
+          "file": "Figure_25_03_05-800.webp"
+        }
+      ],
+      "alt": "In hornworts, the gametophyte is a haploid 1 n leaf-like structure with slender stalks called rhizoids underneath. Male sex organs called antheridia produce sperm, and female sex organs called archegonia produce eggs. Both male and female sex organs form just beneath the surface of the gametophyte, and are exposed to the surface as the organs mature. The sperm swims to the egg or is propelled by water. When the egg is fertilized, the embryo grows into a hollow tube-like structure called a sporophyte. Meiosis inside the sporophyte produces haploid 1 n spores. The spores are ejected from the top of the tube. They grow into new gametophytes, completing the cycle.",
+      "caption": "Reproductive cycle of hornworts. The alternation of generation in hornworts is shown. (credit: modification of work by “Smith609”/Wikimedia Commons based on original work by Mariana Ruiz Villareal)"
+    },
+    "Figure_25_03_07": {
+      "source": "media/Figure_25_03_07.jpg",
+      "sourceSha256": "5f3c305ddbc8f87293661a115343e321da1e91f9456894703cee7d595c677cb5",
+      "module": "m66568",
+      "kind": "photo",
+      "width": 544,
+      "height": 385,
+      "variants": [
+        {
+          "width": 544,
+          "height": 385,
+          "file": "Figure_25_03_07-544.webp"
+        }
+      ],
+      "alt": "In the photo, setae appear as long, slender, bent stems with oval-shaped capsules at the tips.",
+      "caption": "Moss sporophyte. This photograph shows the long slender stems, called setae, connected to capsules of the moss Thamnobryum alopecurum . The operculum and remnants of the calyptra are visible in some capsules. (credit: modification of work by Hermann Schachner)"
+    },
+    "Figure_25_04_01": {
+      "source": "media/Figure_25_04_01.jpg",
+      "sourceSha256": "c9f91c0c7d153bc78d38b906f7218ef0ba44e5f6da4c035e7d415a7ad2e25c2f",
+      "module": "m66570",
+      "kind": "photo",
+      "width": 544,
+      "height": 421,
+      "variants": [
+        {
+          "width": 544,
+          "height": 421,
+          "file": "Figure_25_04_01-544.webp"
+        }
+      ],
+      "alt": "In the photo, seed-like strobili are arranged around the slender stalks of a club moss.",
+      "caption": "Lycopodium . In the club mosses such as Lycopodium clavatum , sporangia are arranged in clusters called strobili. The generic name means \"wolf-foot\" from the resemblance of the branched sporophyte to a paw. The specific epithet clavatum refers to the club-shaped strobilus, and reflects the common name of the phylum. (credit: Cory Zanker)"
+    },
+    "Figure_25_04_02": {
+      "source": "media/Figure_25_04_02.jpg",
+      "sourceSha256": "ccf19d4b58e257b105e036aeb624f8e7d9bbedd3448caf48c7c0c6565b9228de",
+      "module": "m66570",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_25_04_02-544.webp"
+        }
+      ],
+      "alt": "In the photo, bushy horsetail plants grow in water.",
+      "caption": "Horsetails. Horsetails, named for the brushy appearance of the sporophyte, thrive in a marsh. (credit: Myriam Feldman)"
+    },
+    "Figure_25_04_03": {
+      "source": "media/Figure_25_04_03.jpg",
+      "sourceSha256": "76f8e965f81255f22116e6198802a4d431163a97c4121efa06e8394e99c9110e",
+      "module": "m66570",
+      "kind": "photo",
+      "width": 544,
+      "height": 725,
+      "variants": [
+        {
+          "width": 544,
+          "height": 725,
+          "file": "Figure_25_04_03-544.webp"
+        }
+      ],
+      "alt": "Photo shows a horsetail plant, which resembles a scrub brush, with a thick stem and whorls of thin leaves branching from the stem.",
+      "caption": "The jointed stem of a horsetail. Thin leaves originating at the joints are noticeable on the horsetail plant. Because silica deposited in the cell walls made these plants abrasive, horsetails were once used as scrubbing brushes and were nicknamed scouring rushes. (credit: Myriam Feldman)"
+    },
+    "Figure_25_04_04": {
+      "source": "media/Figure_25_04_04.jpg",
+      "sourceSha256": "3384dd9517947ccf2bbb367d5ecdab199da1c9b1540c982f43bd4a2b004fa02f",
+      "module": "m66570",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_25_04_04-544.webp"
+        }
+      ],
+      "alt": "Photo shows a whisk fern with many green stems that have small knobs along their length.",
+      "caption": "Psilotum . The whisk fern Psilotum nudum has conspicuous green stems with knob-shaped sporangia. (credit: Forest & Kim Starr)"
+    },
+    "Figure_25_04_05": {
+      "source": "media/Figure_25_04_05.jpg",
+      "sourceSha256": "60c9eb2deb156e17ea10e5d67a996f57d88eb0bff8578dc0563a2098f66b1f93",
+      "module": "m66570",
+      "kind": "photo",
+      "width": 544,
+      "height": 395,
+      "variants": [
+        {
+          "width": 544,
+          "height": 395,
+          "file": "Figure_25_04_05-544.webp"
+        }
+      ],
+      "alt": "Photo shows a potted tree fern.",
+      "caption": "A tree fern. Some specimens of this short tree-fern species can grow very tall. (credit: Adrian Pingstone)"
+    },
+    "Figure_25_04_06": {
+      "source": "media/Figure_25_04_06.jpg",
+      "sourceSha256": "21d6f2f54c42d527f139bf174cf87d3756d87d843fd00296fd9f5b7b403c92ad",
+      "module": "m66570",
+      "kind": "photo",
+      "width": 825,
+      "height": 315,
+      "variants": [
+        {
+          "width": 800,
+          "height": 305,
+          "file": "Figure_25_04_06-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 315,
+          "file": "Figure_25_04_06-825.webp"
+        }
+      ],
+      "alt": "Fiddleheads at the top of a maturing fern curl into a structure that resembles their namesake.",
+      "caption": "Fern fiddleheads. Croziers, or fiddleheads, are the tips of fern fronds. (credit a: modification of work by Cory Zanker; credit b: modification of work by Myriam Feldman)"
+    },
+    "Figure_25_04_10": {
+      "source": "media/Figure_25_04_10.jpg",
+      "sourceSha256": "2751b9b7f83095edc3e4df2fde7b7a6cae4b3fc4da08bb0eda790f8bdc15d9ed",
+      "module": "m66570",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_25_04_10-544.webp"
+        }
+      ],
+      "alt": "Photo shows a landscaped garden with a variety of flowers and bushes.",
+      "caption": "This landscaped border at a college campus was designed by students in the horticulture and landscaping department of the college. (credit: Myriam Feldman)"
+    },
+    "Figure_25_04_11": {
+      "source": "media/Figure_25_04_11.jpg",
+      "sourceSha256": "9eae4dae5d3bec4f14daa409e751950a7a7d13f51edffbf2627d695135d2293c",
+      "module": "m66570",
+      "kind": "photo",
+      "width": 544,
+      "height": 364,
+      "variants": [
+        {
+          "width": 544,
+          "height": 364,
+          "file": "Figure_25_04_11-544.webp"
+        }
+      ],
+      "alt": "The Sphagnum in the photo has the appearance of a bumpy red carpet with protruding black stalks.",
+      "caption": "Sphagnum moss. Sphagnum acutifolium is dried peat moss and can be used as fuel. (credit: Ken Goulding)"
+    },
     "Figure_B06_03_05abcd_new": {
       "source": "media/Figure_B06_03_05abcd_new.png",
       "sourceSha256": "b533ddfb73b1cfba10ffcb98e785015d67f6dcb0233e8acead61abeba82572fe",
@@ -9270,6 +10017,284 @@
       ],
       "alt": "The life cycle of T brucei begins when the tsetse fly takes a blood meal from a human host, and injects the parasite into the bloodstream (step 1). T brucei multiplies by binary fission in blood, lymph and spinal fluid (step 2). When another tsetse fly bites the infected person, it takes up the pathogen (step 3), which then multiplies by binary fission in the fly's midgut (step 4). T brucei transforms into an infectious stage (step 5) and enters the salivary gland, where it multiplies (step 6). The cycle is completed when the fly takes a blood meal from another human.",
       "caption": "Sleeping sickness. Trypanosoma brucei , the causative agent of sleeping sickness, spends part of its life cycle in the tsetse fly and part in humans. (credit: modification of work by CDC)"
+    },
+    "Figure_B24_01_07": {
+      "source": "media/Figure_B24_01_07.png",
+      "sourceSha256": "e340d13cb81261138e2a78eea90668e619c236f3903ae125d1d00db60a6d5873",
+      "module": "m66558",
+      "kind": "diagram",
+      "width": 1601,
+      "height": 1426,
+      "variants": [
+        {
+          "width": 800,
+          "height": 712,
+          "file": "Figure_B24_01_07-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1425,
+          "file": "Figure_B24_01_07-1600.webp"
+        }
+      ],
+      "alt": "The asexual and sexual stages of reproduction of fungi are shown. In the asexual life cycle, a haploid (1n) mycelium undergoes mitosis to form spores. Germination of the spores results in the formation of more mycelia. In the sexual life cycle, the mycelium undergoes plasmogamy, a process in which haploid cells fuse to form a heterokaryon (a cell with two or more haploid nuclei). This is called the heterokaryotic stage. The dikaryotic cells (cells with two more more nuclei) undergo karyogamy, a process in which the nuclei fuse to form a diploid (2n) zygote. The zygote undergoes meiosis to form haploid (1n) spores. Germination of the spores results in the formation of a multicellular mycelium.",
+      "caption": "Generalized fungal life cycle. Fungi may have both asexual and sexual stages of reproduction."
+    },
+    "Figure_B24_02_01": {
+      "source": "media/Figure_B24_02_01.jpg",
+      "sourceSha256": "11c5342b1cc2da3cb0a7df3c5076cf7f6c0781c0e2d1d5549b75b46e2860743b",
+      "module": "m66559",
+      "kind": "photo",
+      "width": 978,
+      "height": 629,
+      "variants": [
+        {
+          "width": 800,
+          "height": 514,
+          "file": "Figure_B24_02_01-800.webp"
+        },
+        {
+          "width": 978,
+          "height": 629,
+          "file": "Figure_B24_02_01-978.webp"
+        }
+      ],
+      "alt": "The image displays the phyologenetic tree for fungi. From a central source, branches include basidiomycota and ascomycota (which exist at the end of the same branch), glomeromycota, zygomycota, and chytridiomycota. Animalia are diplayed coming from a separate branch from the same source ancestor, but are not a part of the fungi.",
+      "caption": "Fungal phyla. Note: “-mycota” is used to designate a phylum while “-mycetes” formally denotes a class or is used informally to refer to all members of the phylum."
+    },
+    "Figure_B24_02_02": {
+      "source": "media/Figure_B24_02_02.jpg",
+      "sourceSha256": "2f271f6e6c89ecfc00317969ae5c63e396064d5cbb54e7d1d8e85f00ec6a97b3",
+      "module": "m66559",
+      "kind": "photo",
+      "width": 800,
+      "height": 921,
+      "variants": [
+        {
+          "width": 800,
+          "height": 921,
+          "file": "Figure_B24_02_02-800.webp"
+        }
+      ],
+      "alt": "The asexual and sexual life cycles of zygomycetes are shown. In the asexual life cycle, 1n spores undergo mitosis to form long chains of cells called mycelia. Germination results in the formation of more spores. In the sexual life cycle, spores germinate to form mycelia with two different mating types: plus and minus. If the plus and minus mating types are in close proximity, extensions called gametangia form between them. In a process called plasmogamy, the gametangia fuse to form a zygosporangium with multiple haploid nuclei. A thick, protective coat forms around the zygosporangium. In a process called karyogamy, the nuclei fuse to form a zygote with multiple diploid (2n) nuclei. The zygote undergoes meiosis and germination. A sporangium grows on a short stalk. Haploid spores are formed inside. The spores germinate, ending the cycle.",
+      "caption": "Zygomycete life cycle. Zygomycetes have asexual and sexual phases in their life cycles. In the asexual phase, spores are produced from haploid sporangia by mitosis (not shown). In the sexual phase, plus and minus haploid mating types conjugate to form a heterokaryotic zygosporangium. Karyogamy then produces a diploid zygote. Diploid cells in the zygote undergo meiosis and germinate to form a haploid sporangium, which releases the next generation of haploid spores."
+    },
+    "Figure_B24_02_04": {
+      "source": "media/Figure_B24_02_04.png",
+      "sourceSha256": "26b46b673025e25abe418f6ee0319bcd8c1b533232274ab87ab9d98bcb9c2fdb",
+      "module": "m66559",
+      "kind": "diagram",
+      "width": 1457,
+      "height": 1843,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1012,
+          "file": "Figure_B24_02_04-800.webp"
+        },
+        {
+          "width": 1457,
+          "height": 1843,
+          "file": "Figure_B24_02_04-1457.webp"
+        }
+      ],
+      "alt": "Ascomycetes have both sexual and asexual life cycles. In the asexual life cycle, the haploid (1n) mycelium branches into a chain of cells called the conidiophore. Spores bud from the end of the conidiophore and germinate to form more mycelia. In the sexual life cycle, a round structure called an antheridium buds from the male strain, and a similar structure called the ascogonium buds from the female strain. In a process called plasmogamy, the ascogonium and antheridium fuse to form a cell with multiple haploid nuclei. Mitosis and cell division result in the growth of many hyphae, which form a fruiting body called the ascocarp. The hyphae are dikaryotic, meaning they have two haploid nuclei. Asci form at the tips of these hyphae. In a process called karyogamy, the nuclei in the asci fuse to form a diploid (2n) zygote. The zygote undergoes meiosis without cell division, resulting in an ascus with four 1n nuclei arranged in a row. Each nucleus undergoes mitosis, resulting in eight ascospores, which are also arranged in a row at the tip of the hyphae. Dispersal and germination results in the growth of new mycelia.",
+      "caption": "Ascomycete life cycle. The lifecycle of an ascomycete is characterized by the production of asci during the sexual phase. In each ascus, the four nuclei produced by meiosis divide once mitotically for a total of eight haploid ascospores. The haploid phase is the predominant phase of the life cycle in Ascomycetes."
+    },
+    "Figure_B24_02_07": {
+      "source": "media/Figure_B24_02_07.png",
+      "sourceSha256": "5e255701b2ad617549050385e3d1210650a30eeca2222378f0c9a6c8190fd627",
+      "module": "m66559",
+      "kind": "diagram",
+      "width": 726,
+      "height": 892,
+      "variants": [
+        {
+          "width": 726,
+          "height": 892,
+          "file": "Figure_B24_02_07-726.webp"
+        }
+      ],
+      "alt": "The life cycle of basidiomycetes, better known as mushrooms, is shown. Basidiomycetes have a sexual life cycle that begins with the germination of 1n basidiospores into mycelia with plus and minus mating types. In a process called plasmogamy, the plus and minus mycelia form a dikaryotic mycelium. Under the right conditions, the dikaryotic mycelium grows into a basdiocarp, or mushroom. Gills on the underside of the mushroom cap contain cells called basidia. The basidia undergo karyogamy to form a 2n zygote. The zygote undergoes meiosis to form cells with four haploid (1n) nuclei. Cell division results in four basidiospores. Dispersal and germination of basidiospores ends the cycle.",
+      "caption": "Basidiomycete life cycle. The lifecycle of a basidiomycete has sexual and asexual reproduction with haploid and dikaryotic mycelia. Haploid primary mycelia fuse to form a dikaryotic secondary mycelium, which is the dominant stage of the life cycle, and produces the basidiocarp."
+    },
+    "Figure_B24_04_01abcd": {
+      "source": "media/Figure_B24_04_01abcd.png",
+      "sourceSha256": "3ca7943200dea0c9843466189fa890e38faa5c850041aae4226ee28cbfcc3bfc",
+      "module": "m66562",
+      "kind": "diagram",
+      "width": 408,
+      "height": 408,
+      "variants": [
+        {
+          "width": 408,
+          "height": 408,
+          "file": "Figure_B24_04_01abcd-408.webp"
+        }
+      ],
+      "alt": "Image displays various plants and fruits infected with fungal pathogens. (a) green mold on grapefruit, (b) powdery mildew covering zinnia flower and leaves, (c) red-colored rust on barley, (d) grey rot on grapes, which appears as a fibrous, almost cotton-like substance.",
+      "caption": "Fungal pathogens. Some fungal pathogens include (a) green mold on grapefruit, (b) powdery mildew on a zinnia, (c) stem rust on a sheaf of barley, and (d) grey rot on grapes. In wet conditions Botrytis cinerea, the fungus that causes grey rot, can destroy a grape crop. However, controlled infection of grapes by Botrytis results in noble rot, a condition that produces strong and much-prized dessert wines. (credit a: modification of work by Scott Bauer, USDA-ARS; credit b: modification of work by Stephen Ausmus, USDA-ARS; credit c: modification of work by David Marshall, USDA-ARS; credit d: modification of work by Joseph Smilanick, USDA-ARS)"
+    },
+    "Figure_B24_05_02": {
+      "source": "media/Figure_B24_05_02.png",
+      "sourceSha256": "a65978fb293c1b7c87043b9afe61276fe04d2968b7f1c8f16172b004546ab022",
+      "module": "m66563",
+      "kind": "diagram",
+      "width": 2211,
+      "height": 1160,
+      "variants": [
+        {
+          "width": 800,
+          "height": 419,
+          "file": "Figure_B24_05_02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 839,
+          "file": "Figure_B24_05_02-1600.webp"
+        }
+      ],
+      "alt": "Part a Photo shows a mushroom with a convoluted black cap. Part b shows a pile of sliced mushrooms similar to ones people would see in a food store.",
+      "caption": "Edible fungi. (a) The morel mushroom is an ascomycete greatly appreciated for its delicate taste. (credit: Jason Hollinger). (b) Basidiocarps of Agaricus ready for an omelet (credit: Mary Anne Clark)"
+    },
+    "Figure_B25_01_04_new": {
+      "source": "media/Figure_B25_01_04_new.png",
+      "sourceSha256": "97b52ca29cfffcd5cd14b9ac35654e820dd89de62e890615b3a9516f18421715",
+      "module": "m66566",
+      "kind": "diagram",
+      "width": 802,
+      "height": 544,
+      "variants": [
+        {
+          "width": 800,
+          "height": 542,
+          "file": "Figure_B25_01_04_new-800.webp"
+        },
+        {
+          "width": 802,
+          "height": 544,
+          "file": "Figure_B25_01_04_new-802.webp"
+        }
+      ],
+      "alt": "Part A is a photo of a rock marbled brown and black with multiple indentations and irregular, pockmarked features containing fossilized corms and rhizoids. A circle appears around a few large features to indicate the fossilized corms. Part B is a reconstruction of the fossilized remains that can be found in Part A, showing light green branches ending with larger brown bulbs.",
+      "caption": "Early vascular plant fossils. This Rhynie chert (a) contains fossilized material from vascular plants. Reconstruction of Cooksonia (b), is shown based upon the fossilized remains inside the circle in (a). (credit b: modification of work by Peter Coxhead based on original image by “Smith609”/Wikimedia Commons; scale-bar data from Matt Russell)"
+    },
+    "Figure_B25_03_03": {
+      "source": "media/Figure_B25_03_03.jpg",
+      "sourceSha256": "6ba3b3e7d46677603c450b722d2e20a861c013fc70ffb7573983b4112481a829",
+      "module": "m66568",
+      "kind": "photo",
+      "width": 800,
+      "height": 847,
+      "variants": [
+        {
+          "width": 800,
+          "height": 847,
+          "file": "Figure_B25_03_03-800.webp"
+        }
+      ],
+      "alt": "The liverwort has a flat, leaf-like structure called a thallus, which is haploid (1n). Root-like rhizoids grow from the bottom of the thallus. Gemma cups used for asexual reproduction grow on top of the thallus. A slender stalk extends from the thallus, and a haploid (1n) archegonial head sits at its top. The archegonial head is the female gametophyte. The archegonial head has fronds, like a palm tree. The underside of the archegonial head contains protrusions called archegonia, which house the eggs. Another stalk extends from another thallus, and a haploid (1n) antheridial head sits at its top. The antheridial head is the male gametophyte. The outside of the antheridial head has antheridia which release sperm. The haploid (1n) sperm swim through a hole in the bottom of the archegonium and fertilize the haploid (1n) egg to produce a diploid (2n) embryo. The embryo grows into a stalk called a seta. Meiosis produces haploid (1n) spores in a sac at the tip of the stalk. The sac bursts open, releasing the spores. The spores sprout, producing a new thallus and rhizoids.",
+      "caption": "Reproductive cycle of liverworts. The life cycle of a typical lobate liverwort is shown. This image shows a liverwort in which antheridia and archegonia are produced on separate gametophytes. (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "Figure_B25_03_06": {
+      "source": "media/Figure_B25_03_06.png",
+      "sourceSha256": "9d377c23130b4e94b31d9bf6ad797a2e7b53c8a1290efc3be4e159b74190bf28",
+      "module": "m66568",
+      "kind": "diagram",
+      "width": 939,
+      "height": 1415,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1205,
+          "file": "Figure_B25_03_06-800.webp"
+        },
+        {
+          "width": 939,
+          "height": 1415,
+          "file": "Figure_B25_03_06-939.webp"
+        }
+      ],
+      "alt": "In mosses, the mature haploid (1n) gametophyte is a slender, nonvascular stem with fuzzy, non-vascular leaves. Root-like rhizoids grow from the bottom. Male antheridia and female archegonia grow at the tip of the stem. Sperm fertilize the eggs, producing a diploid (2n) zygote inside a vase-like structure called a venter inside the archegonial head. The embryo grows into a sporophyte that projects like a flower from the vase. The sporophyte undergoes meiosis to produce haploid (1n) spores that grow to produce mature gametophytes, completing the cycle.",
+      "caption": "Reproductive cycle of mosses. This illustration shows the life cycle of mosses. (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "Figure_B25_03_10": {
+      "source": "media/Figure_B25_03_10.png",
+      "sourceSha256": "37b8fc14898d190b1ef5762d44be28faae8ee91924d53cf538060dfde4601545",
+      "module": "m66568",
+      "kind": "diagram",
+      "width": 544,
+      "height": 411,
+      "variants": [
+        {
+          "width": 544,
+          "height": 411,
+          "file": "Figure_B25_03_10-544.webp"
+        }
+      ],
+      "alt": "Photo shows a liverwort with lettuce-like leaves. The gemma cup, described in the paragraph and subsequent life-cycle diagram, is highlighted.",
+      "caption": "Liverwort gametophyte. A liverwort, Lunularia cruciata , displays its lobate, flat thallus. The organism in the photograph is in the gametophyte stage, but has not yet produced gametangia. Lunularia gametophytes produce crescent-shaped gemmae (circled), which contain asexual spores. The tiny white dots on the surface of the thallus are air pores."
+    },
+    "Figure_B25_04_01": {
+      "source": "media/Figure_B25_04_01.jpg",
+      "sourceSha256": "6e339f613e86f31d4a4d75bf6d16ac92557c512e9f33259fbae4e1159345abc9",
+      "module": "m66570",
+      "kind": "photo",
+      "width": 512,
+      "height": 384,
+      "variants": [
+        {
+          "width": 512,
+          "height": 384,
+          "file": "Figure_B25_04_01-512.webp"
+        }
+      ],
+      "alt": "Photo shows a cross section of a celery stalk, depicting a number of vascular bundles.",
+      "caption": "Vascular bundles in celery. This cross section of a celery stalk shows a number of vascular bundles. The xylem is on the inner part of each bundle. (credit: fir0002 | flagstaffotos.com.au [GFDL 1.2 (http://www.gnu.org/licenses/old-licenses/fdl-1.2.html)], via Wikimedia Commons. Image modified from source.)"
+    },
+    "Figure_B25_04_06": {
+      "source": "media/Figure_B25_04_06.png",
+      "sourceSha256": "2f9270264ad37e08b87cab62e04413a5d8ce63c6bd119983101caf9dd6148c12",
+      "module": "m66570",
+      "kind": "diagram",
+      "width": 825,
+      "height": 472,
+      "variants": [
+        {
+          "width": 800,
+          "height": 457,
+          "file": "Figure_B25_04_06-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 472,
+          "file": "Figure_B25_04_06-825.webp"
+        }
+      ],
+      "alt": "The fern life cycle begins with a diploid (2n) sporophyte, which is the fern plant. Sporangia are found on the bottom of the leaves. Sporangia undergo meiosis to form haploid (1n) spores. The spores germinate and grow into a haploid (1n) green gametophyte that resembles lettuce. The gametophyte contains antheridia that produce sperm, and archegonia that produce eggs. Inside the archegonium the sperm fertilizes the egg, forming a diploid (2n) zygote. The zygote undergoes mitosis to form a diploid (2n) sporophyte, ending the cycle.",
+      "caption": "Reproductive cycle of a fern. This life cycle of a fern shows alternation of generations with a dominant sporophyte stage. (credit \"fern\": modification of work by Cory Zanker; credit \"gametophyte\": modification of work by \"Vlmastra\"/Wikimedia Commons)"
+    },
+    "Figure_B25_04_09": {
+      "source": "media/Figure_B25_04_09.png",
+      "sourceSha256": "5787eba2b530ef0bcc604808c0e2293db10c045cdb26d029618b17a19b253067",
+      "module": "m66570",
+      "kind": "diagram",
+      "width": 825,
+      "height": 250,
+      "variants": [
+        {
+          "width": 800,
+          "height": 242,
+          "file": "Figure_B25_04_09-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 250,
+          "file": "Figure_B25_04_09-825.webp"
+        }
+      ],
+      "alt": "Photo A shows small bumps called sori on the underside of a fern frond. Photo B shows a young sporophyte with a fan-shaped leaf growing from a lettuce-like gametophyte.",
+      "caption": "Fern reproductive stages. Sori (a) appear as small bumps on the underside of a fern frond. (credit: Myriam Feldman). (b) Fern gametophyte and young sporophyte. The sporophyte and gametophyte are labeled. (credit: modification of work by \"Vlmastra\"/Wikimedia Commons)"
     },
     "Targeted_Protein_Formation-XZZ": {
       "source": "media/Targeted_Protein_Formation-XZZ.jpg",

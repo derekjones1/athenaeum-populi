@@ -485,6 +485,13 @@ Record every item in the source ledger with its exercise or definition id.
   contradicts, a distractor that is also true, a caption credit that names
   the wrong image) go in `docs/openstax-errata.md` without asking, with the
   module id, element id, and evidence.
+- **Two source exercises with the same stem.** `verify:source-keys` pairs
+  a page item with the source exercise whose stem reads most like it; when
+  two exercises in one module share a stem verbatim (m66559's two Visual
+  Connections both ask "Which of the following statements is true?") the
+  page item's option list breaks the tie. A `key-differs` report naming an
+  exercise whose options are not the page's is that collision, not a wrong
+  key — check the exercise id before editing anything.
 
 ## Done checklist (in addition to the core checklist)
 
