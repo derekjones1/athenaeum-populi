@@ -128,7 +128,7 @@ oncogene.
   question="A mutated version of a normal gene involved in the positive regulation of the cell cycle is called a(n) ________."
   answer="oncogene"
   accept="oncogenes"
-  hint="It is the mutated, cancer-causing form of a proto-oncogene."
+  hint="It is the mutated, cancer-causing form of a normal gene that promotes cell division; its prefix means 'tumor.'"
 >}}
 
 {{< textin

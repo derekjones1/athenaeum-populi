@@ -91,6 +91,27 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/biology/21-viruses/02-virus-infections-and-hosts.md',
+    exercise: 'fs-idm138486528',
+    kind: 'key',
+    erratum: 185,
+    reason: 'source keys "Newly released virions can infect adjacent cells" as the statement NOT true of viral replication, but the module\'s own Egress paragraph says released virions "are able to infect adjacent cells"; the page keys "Viral replication does not affect host cell function", contradicted by the cytopathic-effects sentence, and replaces the also-false first option ("A lysogenic cycle kills the host cell") with the module\'s own "In the lysogenic cycle, phage DNA is incorporated into the host genome"',
+  },
+  {
+    page: 'content/life-health-sciences/biology/21-viruses/03-prevention-and-treatment-of-viral-infections.md',
+    exercise: 'fs-idp41822000',
+    kind: 'options',
+    erratum: 176,
+    reason: 'distractor "Phage therapy" is also NOT used to treat active viral disease by the module\'s own account ("using bacteriophages in the treatment of bacterial infections"), making two options correct; the page reads "Acyclovir", which the module names as a drug against "active viral disease" (key "Antibiotics" unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/23-protists/01-eukaryotic-origins.md',
+    exercise: 'eip-197',
+    kind: 'options',
+    erratum: 183,
+    reason: 'source option reads "Archea"; the page spells it "Archaea" as the module does everywhere else (key unchanged)',
+  },
+  {
     page: 'content/life-health-sciences/biology/17-biotechnology-and-genomics/01-biotechnology.md',
     exercise: 'fs-id1768985',
     kind: 'key',

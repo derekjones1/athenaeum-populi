@@ -7272,6 +7272,1151 @@
       "alt": "Illustration shows a ring with the words, pool of primitive prokaryotes, in the middle. Three arrows point outward from the ring, pointing at the three domains, Bacteria, Archaea, and Eukarya, indicating that all three domains arose from a common pool of prokaryotes.",
       "caption": "According to the “ring of life” phylogenetic model, the three domains of life evolved from a pool of primitive prokaryotes."
     },
+    "Figure_21_00_01-9ea7": {
+      "source": "media/Figure_21_00_01-9ea7.jpg",
+      "sourceSha256": "1b72c87d2830c22c1a3789893bb171d53a75611ba33545848a7b3d0d76414ddd",
+      "module": "m66533",
+      "kind": "photo",
+      "width": 1117,
+      "height": 330,
+      "variants": [
+        {
+          "width": 800,
+          "height": 236,
+          "file": "Figure_21_00_01-9ea7-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 330,
+          "file": "Figure_21_00_01-9ea7-1117.webp"
+        }
+      ],
+      "alt": "The left electron micrograph shows the tobacco mosaic virus, which is shaped like a long, thin rectangle. The right photo shows an orchid leaf in varying states of decay. Initial symptoms are yellow and brown spots. Eventually, the entire leaf turns yellow with brown blotches, then completely brown.",
+      "caption": "The tobacco mosaic virus, seen here by transmission electron microscopy (left), was the first virus to be discovered. The virus causes disease in tobacco and other plants, such as the orchid (right). (credit a: USDA ARS; credit b: modification of work by USDA Forest Service, Department of Plant Pathology Archive North Carolina State University; scale-bar data from Matt Russell)"
+    },
+    "Figure_21_01_01ab": {
+      "source": "media/Figure_21_01_01ab.jpg",
+      "sourceSha256": "b7de55bc8beab56a109c99e592eb8b858e12f59544bef21e580279bcbdb3e013",
+      "module": "m66534",
+      "kind": "photo",
+      "width": 1117,
+      "height": 685,
+      "variants": [
+        {
+          "width": 800,
+          "height": 490,
+          "file": "Figure_21_01_01ab-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 685,
+          "file": "Figure_21_01_01ab-1117.webp"
+        }
+      ],
+      "alt": "Micrograph a shows a virus with a hexagonal head that stands on thin, bent legs. The virus sits on the surface of a cell that is so large that only a small fraction of its surface is visible. Micrograph b shows small bacterial cells that are about the size of the organelles in the adjacent colon cells.",
+      "caption": "Most virus particles are visible only by electron microscopy. In these transmission electron micrographs, (a) a virus is as dwarfed by the bacterial cell it infects, as (b) these E. coli cells are dwarfed by cultured colon cells. (credit a: modification of work by U.S. Dept. of Energy, Office of Science, LBL, PBD; credit b: modification of work by J.P. Nataro and S. Sears, unpub. data, CDC; scale-bar data from Matt Russell)"
+    },
+    "Figure_21_01_04ab": {
+      "source": "media/Figure_21_01_04ab.jpg",
+      "sourceSha256": "2c9145dfb8f503803ca3473161f114a7e62562c0a1b1f03726613077be355b97",
+      "module": "m66534",
+      "kind": "photo",
+      "width": 1117,
+      "height": 754,
+      "variants": [
+        {
+          "width": 800,
+          "height": 540,
+          "file": "Figure_21_01_04ab-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 754,
+          "file": "Figure_21_01_04ab-1117.webp"
+        }
+      ],
+      "alt": "Part a is an illustration of the rabies virus, which is bullet shaped. R N A is coiled inside a capsid, which is encased in a matrix protein lined viral envelope studded with glycoproteins. Part a below is a micrograph of a cluster of bullet shaped rabies viruses. Part b is a micrograph of variola virus, which has D N A encased in a bow shaped capsid. An oval matrix protein-lined envelope surrounds the capsid. Part b below shows irregular, bumpy lesions on the arms and legs of a person with smallpox.",
+      "caption": "Viruses can be classified according to their core genetic material and capsid design. (a) Rabies virus has a single-stranded RNA (ssRNA) core and an enveloped helical capsid, whereas (b) variola virus, the causative agent of smallpox, has a double-stranded DNA (dsDNA) core and a complex capsid. Rabies transmission occurs when saliva from an infected mammal enters a wound. The virus travels through neurons in the peripheral nervous system to the central nervous system, where it impairs brain function, and then travels to other tissues. The virus can infect any mammal, and most die within weeks of infection. Smallpox is a human virus transmitted by inhalation of the variola virus, localized in the skin, mouth, and throat, which causes a characteristic rash. Before its eradication in 1979, infection resulted in a 30 to 35 percent mortality rate. (credit “rabies diagram”: modification of work by CDC; “rabies micrograph”: modification of work by Dr. Fred Murphy, CDC; credit “small pox micrograph”: modification of work by Dr. Fred Murphy, Sylvia Whitfield, CDC; credit “smallpox photo”: modification of work by CDC; scale-bar data from Matt Russell)"
+    },
+    "Figure_21_01_06abcde": {
+      "source": "media/Figure_21_01_06abcde.jpg",
+      "sourceSha256": "56e376e2947740d2e9c02803ad26ced1b82f86134a163e24eecc3686c8158ca1",
+      "module": "m66534",
+      "kind": "photo",
+      "width": 1117,
+      "height": 720,
+      "variants": [
+        {
+          "width": 800,
+          "height": 515,
+          "file": "Figure_21_01_06abcde-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 720,
+          "file": "Figure_21_01_06abcde-1117.webp"
+        }
+      ],
+      "alt": "Micrograph a shows icosahedral polioviruses arranged in a grid; micrograph b shows two Epstein-Barr viruses with icosahedral capsids encased in an oval membrane; micrograph c shows a mumps virus capsid encased in an irregular membrane; micrograph d shows rectangular tobacco mosaic virus capsids; and micrograph e shows a spherical herpesvirus envelope studded with glycoproteins.",
+      "caption": "Transmission electron micrographs of various viruses show their capsid structures. The capsid of the (a) polio virus is naked icosahedral; (b) the Epstein-Barr virus capsid is enveloped icosahedral; (c) the mumps virus capsid is an enveloped helix; (d) the tobacco mosaic virus capsid is naked helical; and (e) the herpesvirus capsid is complex. (credit a: modification of work by Dr. Fred Murphy, Sylvia Whitfield; credit b: modification of work by Liza Gross; credit c: modification of work by Dr. F. A. Murphy, CDC; credit d: modification of work by USDA ARS; credit e: modification of work by Linda Stannard, Department of Medical Microbiology, University of Cape Town, South Africa, NASA; scale-bar data from Matt Russell)"
+    },
+    "Figure_21_02_01": {
+      "source": "media/Figure_21_02_01.png",
+      "sourceSha256": "b4bf776dd46dd8c63744d1d227e0bc0b24d70944048ad58f99516db57a927886",
+      "module": "m66535",
+      "kind": "diagram",
+      "width": 1042,
+      "height": 736,
+      "variants": [
+        {
+          "width": 800,
+          "height": 565,
+          "file": "Figure_21_02_01-800.webp"
+        },
+        {
+          "width": 1042,
+          "height": 736,
+          "file": "Figure_21_02_01-1042.webp"
+        }
+      ],
+      "alt": "The illustration shows the steps of an influenza virus infection. In step 1, influenza virus becomes attached to a target epithelial cell. In step 2, the cell engulfs the virus by endocytosis, and the virus becomes encased in the cell's plasma membrane. In step 3, the membrane dissolves, and the viral contents are released into the cytoplasm. Viral m R N A enters the nucleus, where it is replicated by viral R N A polymerase. In step 4, viral m R N A exits to the cytoplasm, where it is used to make viral proteins. In step 5, new viral particles are released into the extracellular fluid. The cell, which is not killed in the process, continues to make new virus.",
+      "caption": "The influenza reproductive cycle. In influenza virus infection, glycoproteins on the capsid attach to a host epithelial cell. Following this, the virus is engulfed. RNA and proteins are then made and assembled into new virions."
+    },
+    "Figure_21_02_02-545c": {
+      "source": "media/Figure_21_02_02-545c.jpg",
+      "sourceSha256": "cb4b703ac088f83c9adf08f4f82fd02a738d4f40a3b69be8629caa368044a8b2",
+      "module": "m66535",
+      "kind": "photo",
+      "width": 544,
+      "height": 637,
+      "variants": [
+        {
+          "width": 544,
+          "height": 637,
+          "file": "Figure_21_02_02-545c-544.webp"
+        }
+      ],
+      "alt": "The micrograph shows hexagonal bacteriophage capsids attached to a host bacterial cell by slender stalks.",
+      "caption": "Bacteriophages attached to a host cell (transmission electron micrograph). In bacteriophage with tails, like the one shown here, the tails serve as a passageway for transmission of the phage genome. (credit: modification of work by Dr. Graham Beards; scale-bar data from Matt Russell)"
+    },
+    "Figure_21_02_04ab": {
+      "source": "media/Figure_21_02_04ab.jpg",
+      "sourceSha256": "a5a2c95378b0261514bef6a468ce6ef7efded734fcf79a0fb60a69e1e6bb2069",
+      "module": "m66535",
+      "kind": "photo",
+      "width": 1117,
+      "height": 522,
+      "variants": [
+        {
+          "width": 800,
+          "height": 374,
+          "file": "Figure_21_02_04ab-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 522,
+          "file": "Figure_21_02_04ab-1117.webp"
+        }
+      ],
+      "alt": "Part a shows a micrograph of the varicella zoster virus, which has an icosahedral capsid surrounded by an irregularly shaped envelope. Part b shows a red, bumpy shingles rash on a person's face.",
+      "caption": "A latent virus infection. (a) Varicella-zoster, the virus that causes chickenpox, has an enveloped icosahedral capsid visible in this transmission electron micrograph. Its double-stranded DNA genome becomes incorporated in the host DNA and can reactivate after latency in the form of (b) shingles, often exhibiting a rash. (credit a: modification of work by Dr. Erskine Palmer, B. G. Martin, CDC; credit b: modification of work by “rosmary”/Flickr; scale-bar data from Matt Russell)"
+    },
+    "Figure_21_02_05-f075": {
+      "source": "media/Figure_21_02_05-f075.jpg",
+      "sourceSha256": "a789ad75af885904de6b24c3a1e8ccf3ac5b780937e76269ba8ea695a3f34a02",
+      "module": "m66535",
+      "kind": "photo",
+      "width": 544,
+      "height": 714,
+      "variants": [
+        {
+          "width": 544,
+          "height": 714,
+          "file": "Figure_21_02_05-f075-544.webp"
+        }
+      ],
+      "alt": "The micrograph shows an icosahedral virus with glycoproteins protruding from its capsid.",
+      "caption": "HPV, or human papillomavirus, has a naked icosahedral capsid visible in this transmission electron micrograph and a double-stranded DNA genome that is incorporated into the host DNA. The virus, which is sexually transmitted, is oncogenic and can lead to cervical cancer. (credit: modification of work by NCI, NIH; scale-bar data from Matt Russell)"
+    },
+    "Figure_21_03_01-70a3": {
+      "source": "media/Figure_21_03_01-70a3.jpg",
+      "sourceSha256": "25e610584aa742f61455b35591343377b818360cf668aa4758a46bb7307ceda7",
+      "module": "m66537",
+      "kind": "photo",
+      "width": 800,
+      "height": 767,
+      "variants": [
+        {
+          "width": 800,
+          "height": 767,
+          "file": "Figure_21_03_01-70a3-800.webp"
+        }
+      ],
+      "alt": "The illustration shows an overview of human viral diseases. Viruses that cause encephalitis or meningitis, or inflammation of the brain and surrounding tissues, include measles, arbovirus, rabies, J C virus, and L C M virus. The common cold is caused by rhinovirus, parainfluenza virus, and respiratory syncytial virus. Eye infections are caused by herpes simple virus, adenovirus, and cytomegalovirus. Pharyngitis, or inflammation of the pharynx, is caused by adenovirus, Epstein-Barr virus, and cytomegalovirus. Parotitis, or inflammation of the parotid glands, is caused by mumps virus. Gingivostomatitis, or inflammation of the oral mucosa, is caused by herpes simplex type I virus. Pneumonia is caused by influenza virus types A and B, parainfluenza virus, respiratory syncytial virus, adenovirus, and SARS coronavirus. Cardiovascular problems are caused by coxsackie B virus. Hepatitis is caused by hepatitis virus types A, B, C, D, and E. Myelitis in the spinal cord is caused by poliovirus and H L T V dash 1. Skin infections are caused by varicella-zoster virus, human herpesvirus 6, smallpox, molluscum contagiosum, human papillomavirus, parvovirus B 19, rubella, measles, and coxsackie A virus. Gastroenteritis, or digestive disease, is caused by adenovirus, rotavirus, norovirus, astrovirus, and coronavirus. Sexually transmitted diseases are caused by herpes simplex type 2, human papillomavirus, and H I V. Pancreatitis is caused by coxsackie B virus.",
+      "caption": "A sampling of human viruses. Viruses can cause dozens of ailments in humans, ranging from mild illnesses to serious diseases. (credit: modification of work by Mikael Häggström)"
+    },
+    "Figure_21_03_02-607c": {
+      "source": "media/Figure_21_03_02-607c.jpg",
+      "sourceSha256": "c681ea3e464151302c3002a480e7f4c9ddb9a570dda29347f0b6a3166fb86056",
+      "module": "m66537",
+      "kind": "photo",
+      "width": 1200,
+      "height": 799,
+      "variants": [
+        {
+          "width": 800,
+          "height": 532,
+          "file": "Figure_21_03_02-607c-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 799,
+          "file": "Figure_21_03_02-607c-1200.webp"
+        }
+      ],
+      "alt": "The photo shows a person receiving an injection in the arm.",
+      "caption": "Vaccinations are designed to boost immunity to a virus to prevent infection. (credit: Navy Medicine)"
+    },
+    "Figure_21_03_03ab": {
+      "source": "media/Figure_21_03_03ab.jpg",
+      "sourceSha256": "76572b94293b722069c04137bd30830506a92ef847af0fee9cd154e69ec27a42",
+      "module": "m66537",
+      "kind": "photo",
+      "width": 1117,
+      "height": 505,
+      "variants": [
+        {
+          "width": 800,
+          "height": 361,
+          "file": "Figure_21_03_03ab-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 505,
+          "file": "Figure_21_03_03ab-1117.webp"
+        }
+      ],
+      "alt": "Part a shows the structure of the influenza virus, which is icosahedral with a viral envelope. Neuraminidase and hemagglutinin are embedded in the envelope. Part b shows that Tamiflu prevents the step in influenza infection in which virions leave the cell.",
+      "caption": "Action of an antiviral drug. (a) Tamiflu inhibits a viral enzyme called neuraminidase (NA) found in the influenza viral envelope. (b) Neuraminidase cleaves the connection between viral hemagglutinin (HA), also found in the viral envelope, and glycoproteins on the host cell surface. Inhibition of neuraminidase prevents the virus from detaching from the host cell, thereby blocking further infection. (credit a: modification of work by M. Eickmann)"
+    },
+    "Figure_21_03_04-16dd": {
+      "source": "media/Figure_21_03_04-16dd.jpg",
+      "sourceSha256": "95cf774d853ea7155277b144315048e929d6ff3e823eec74744c1b0750585032",
+      "module": "m66537",
+      "kind": "photo",
+      "width": 1117,
+      "height": 1321,
+      "variants": [
+        {
+          "width": 800,
+          "height": 946,
+          "file": "Figure_21_03_04-16dd-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 1321,
+          "file": "Figure_21_03_04-16dd-1117.webp"
+        }
+      ],
+      "alt": "The illustration shows the steps in the H I V life cycle. In step 1, g p 120 glycoproteins in the viral envelope attach to a C D 4 receptor on the host cell membrane. The glycoproteins then attached to a co-receptor, C C R 5 or C X C R 4, and the viral envelope fuses with the cell membrane. In step 2, H I V R N A, reverse transcriptase, integrase, and other viral proteins are released into the host cell. In step 3, viral D N A is formed from R N A by reverse transcriptase. In step 4, Viral D N A is then transported across the nuclear membrane, where it integrates into the host D N A. In step 5, new viral R N A is made; it is used as genomic R N A and to make viral proteins. In step 6, new viral R N A and proteins move to the cell surface and a new, immature H I V forms. In the final step 7, the virus matures when a protease releases individual H I V proteins.",
+      "caption": "Life cycle of HIV. HIV, an enveloped, icosahedral virus, attaches to the CD4 receptor of an immune cell and fuses with the cell membrane. Viral contents are released into the cell, where viral enzymes convert the single-stranded RNA genome into DNA and incorporate it into the host genome. (credit: NIAID, NIH)"
+    },
+    "Figure_21_04_01ab": {
+      "source": "media/Figure_21_04_01ab.jpg",
+      "sourceSha256": "efc1178d7589f41fe515b562d50b84beda979ac6039281b68704f0c1e1daeb2d",
+      "module": "m66540",
+      "kind": "photo",
+      "width": 1117,
+      "height": 473,
+      "variants": [
+        {
+          "width": 800,
+          "height": 338,
+          "file": "Figure_21_04_01ab-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 473,
+          "file": "Figure_21_04_01ab-1117.webp"
+        }
+      ],
+      "alt": "Part A illustrates how normal prion protein, called P r P, is converted into the disease causing form P r P. P r P superscript lowercase s lowercase c may spontaneously form in brain tissue, may be introduced when a mutant form of the protein misfolds, or may introduced into the brain tissue by inoculation. The misfolded protein causes normal P r P already present in the brain to misfold. A chain reaction occurs, leading to a large amount of misfolded protein. Part B is a light microscopy image of prion-infected brain tissue.",
+      "caption": "Mad Cow Disease in humans. (a) Endogenous normal prion protein (PrP c ) is converted into the disease-causing form (PrP sc ) when it encounters this variant form of the protein. PrP sc may arise spontaneously in brain tissue, especially if a mutant form of the protein is present, or it may occur via the spread of misfolded prions consumed in food into brain tissue. (b) This prion-infected brain tissue, visualized using light microscopy, shows the vacuoles that give it a spongy texture, typical of transmissible spongiform encephalopathies. (credit b: modification of work by Dr. Al Jenny, USDA APHIS; scale-bar data from Matt Russell)"
+    },
+    "Figure_21_04_02": {
+      "source": "media/Figure_21_04_02.jpg",
+      "sourceSha256": "d33b162f6ee1d00dda844b3778eebb11a952505705deb4e7c6a6047db2ce2aae",
+      "module": "m66540",
+      "kind": "photo",
+      "width": 1118,
+      "height": 809,
+      "variants": [
+        {
+          "width": 800,
+          "height": 579,
+          "file": "Figure_21_04_02-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 809,
+          "file": "Figure_21_04_02-1118.webp"
+        }
+      ],
+      "alt": "The photo shows shriveled, cracked potatoes.",
+      "caption": "These potatoes have been infected by the potato spindle tuber viroid (PSTV), which is typically spread when infected knives are used to cut healthy potatoes, which are then planted. (credit: Pamela Roberts, University of Florida Institute of Food and Agricultural Sciences, USDA ARS)"
+    },
+    "Figure_21_04_03": {
+      "source": "media/Figure_21_04_03.jpg",
+      "sourceSha256": "5d7514eea1517b7091a85f897bde9a1181ab90e4fe507d43d609084becf0e302",
+      "module": "m66540",
+      "kind": "photo",
+      "width": 469,
+      "height": 630,
+      "variants": [
+        {
+          "width": 469,
+          "height": 630,
+          "file": "Figure_21_04_03-469.webp"
+        }
+      ],
+      "alt": "This photo shows a scientist in a field, measuring the length of an egg.",
+      "caption": "This virologist is engaged in fieldwork, sampling eggs from this nest for avian influenza. (credit: Don Becker, USGS EROS, U.S. Fish and Wildlife Service)"
+    },
+    "Figure_22_00_01-b1fc": {
+      "source": "media/Figure_22_00_01-b1fc.jpg",
+      "sourceSha256": "40a2d746358b4eaa5d6fe1ff780f49706c3da51ad443e5d10345f4f56d534cdc",
+      "module": "m66541",
+      "kind": "photo",
+      "width": 1118,
+      "height": 373,
+      "variants": [
+        {
+          "width": 800,
+          "height": 267,
+          "file": "Figure_22_00_01-b1fc-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 373,
+          "file": "Figure_22_00_01-b1fc-1118.webp"
+        }
+      ],
+      "alt": "The photo shows a hot spring with a vivid blue color in the middle and a golden color around the edge.",
+      "caption": "Certain prokaryotes can live in extreme environments such as the Morning Glory pool, a hot spring in Yellowstone National Park. The spring’s vivid blue color is from the prokaryotes that thrive in its very hot waters. (credit: modification of work by Jon Sullivan)"
+    },
+    "Figure_22_01_01": {
+      "source": "media/Figure_22_01_01.jpg",
+      "sourceSha256": "27a44a1a8c86f3aa169bb2cf0596e8590297f880d9a028097e142c966004bd47",
+      "module": "m66542",
+      "kind": "photo",
+      "width": 1117,
+      "height": 448,
+      "variants": [
+        {
+          "width": 800,
+          "height": 321,
+          "file": "Figure_22_01_01-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 448,
+          "file": "Figure_22_01_01-1117.webp"
+        }
+      ],
+      "alt": "The part a photo shows a reddish-yellow mound with small chimneys growing out of it. Part b micrograph shows rod-shaped bacteria about two microns long swimming over a thicker mat of bacteria.",
+      "caption": "A microbial mat. (a) This microbial mat, about one meter in diameter, is growing over a hydrothermal vent in the Pacific Ocean in a region known as the “Pacific Ring of Fire.” The mat’s colony of bacteria helps retain microbial nutrients. Chimneys such as the one indicated by the arrow allow gases to escape. (b) In this micrograph, bacteria are visualized using fluorescence microscopy. (credit a: modification of work by Dr. Bob Embley, NOAA PMEL, Chief Scientist; credit b: modification of work by Ricardo Murga, Rodney Donlan, CDC; scale-bar data from Matt Russell)"
+    },
+    "Figure_22_01_02ab": {
+      "source": "media/Figure_22_01_02ab.jpg",
+      "sourceSha256": "b040fb21241895fddbbc9a3f7e1c0c49435d49b9aa6e7f470126fc86a79f7be6",
+      "module": "m66542",
+      "kind": "photo",
+      "width": 1117,
+      "height": 406,
+      "variants": [
+        {
+          "width": 800,
+          "height": 290,
+          "file": "Figure_22_01_02ab-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 406,
+          "file": "Figure_22_01_02ab-1117.webp"
+        }
+      ],
+      "alt": "Photo A shows a mass of gray mounds in shallow water. Photo B shows a swirl pattern in white and gray marbled rock.",
+      "caption": "Stromatolites. (a) These living stromatolites are located in Shark Bay, Australia. (b) These fossilized stromatolites, found in Glacier National Park, Montana, are nearly 1.5 billion years old. (credit a: Robert Young; credit b: P. Carrara, NPS)"
+    },
+    "Figure_22_01_03": {
+      "source": "media/Figure_22_01_03.jpg",
+      "sourceSha256": "be43c7ba294aeb944fdb5a2f33fa330cf450678216de7474ea06bbd6e6e091e8",
+      "module": "m66542",
+      "kind": "photo",
+      "width": 544,
+      "height": 409,
+      "variants": [
+        {
+          "width": 544,
+          "height": 409,
+          "file": "Figure_22_01_03-544.webp"
+        }
+      ],
+      "alt": "This photo shows a woman squatting next to a stream of green-colored water.",
+      "caption": "Cyanobacteria. This hot spring in Yellowstone National Park flows toward the foreground. Cyanobacteria in the spring are green, and as water flows down the gradient, the intensity of the color increases as cell density increases. The water is cooler at the edges of the stream than in the center, causing the edges to appear greener. (credit: Graciela Brelles-Mariño)"
+    },
+    "Figure_22_01_04": {
+      "source": "media/Figure_22_01_04.jpg",
+      "sourceSha256": "70d3eff955fbd197cff1b7d8a66cdee7d7b2f22ef045130fbbd902a2682784b8",
+      "module": "m66542",
+      "kind": "photo",
+      "width": 450,
+      "height": 517,
+      "variants": [
+        {
+          "width": 450,
+          "height": 517,
+          "file": "Figure_22_01_04-450.webp"
+        }
+      ],
+      "alt": "This micrograph shows an oval Deinococcus cell about 2.5 microns in diameter, dividing.",
+      "caption": "Radiation-tolerant prokaryotes. Deinococcus radiodurans , visualized in this false color transmission electron micrograph, is a prokaryote that can tolerate very high doses of ionizing radiation. It has developed DNA repair mechanisms that allow it to reconstruct its chromosome even if it has been broken into hundreds of pieces by radiation or heat. (credit: modification of work by Michael Daly; scale-bar data from Matt Russell)"
+    },
+    "Figure_22_01_05": {
+      "source": "media/Figure_22_01_05.jpg",
+      "sourceSha256": "598252ba9cde408dd4a24b908a3721abfd5f5567b8d80b0e5eea6b312a5f5851",
+      "module": "m66542",
+      "kind": "photo",
+      "width": 1117,
+      "height": 457,
+      "variants": [
+        {
+          "width": 800,
+          "height": 327,
+          "file": "Figure_22_01_05-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 457,
+          "file": "Figure_22_01_05-1117.webp"
+        }
+      ],
+      "alt": "Photo A shows the Dead Sea and its accompanying brown shoreline. Micrograph B shows rod-shaped halobacteria.",
+      "caption": "Halophilic prokaryotes. (a) The Dead Sea is hypersaline. Nevertheless, salt-tolerant bacteria thrive in this sea. (b) These halobacteria cells can form salt-tolerant bacterial mats. (credit a: Julien Menichini; credit b: NASA; scale-bar data from Matt Russell)"
+    },
+    "Figure_22_01_06": {
+      "source": "media/Figure_22_01_06.jpg",
+      "sourceSha256": "8a65b22cd3ffe7751bd233d3f9ccc725a3549fa5ae127d489ba402fef9c8826f",
+      "module": "m66542",
+      "kind": "photo",
+      "width": 544,
+      "height": 363,
+      "variants": [
+        {
+          "width": 544,
+          "height": 363,
+          "file": "Figure_22_01_06-544.webp"
+        }
+      ],
+      "alt": "Two bacterial plates with red agar are shown. Both plates are covered with bacterial colonies. On the right plate, which contains hemolytic bacteria, the red agar has turned clear where bacteria are growing. On the left plate, which contains non-hemolytic bacteria, the agar is not clear.",
+      "caption": "Bacteria growing on blood agar plates. In these agar plates, the growth medium is supplemented with red blood cells. Blood agar becomes transparent in the presence of hemolytic Streptococcus , which destroys red blood cells and is used to diagnose Streptococcus infections. The plate on the left is inoculated with non-hemolytic Staphylococcus (large white colonies), and the plate on the right is inoculated with hemolytic Streptococcus (tiny clear colonies). If you look closely at the right plate, you can see that the agar surrounding the bacteria has turned clear. (credit: Bill Branson, NCI)"
+    },
+    "Figure_22_01_07": {
+      "source": "media/Figure_22_01_07.png",
+      "sourceSha256": "bb64719fd5118245b87c3efa0f0c8b933244a26c127dad958594d82a991613d2",
+      "module": "m66542",
+      "kind": "diagram",
+      "width": 725,
+      "height": 450,
+      "variants": [
+        {
+          "width": 725,
+          "height": 450,
+          "file": "Figure_22_01_07-725.webp"
+        }
+      ],
+      "alt": "During the first stage of biofilm development, a few bacteria adhere to a surface. During stage 2, the bacteria grow hairy appendages called pili. During stage 3, the microfilm grows into lumpy colonies. In stage 4, the microfilm grows into a more ball-like shape that is anchored to the surface by a smaller clump of bacteria. In stage 5, the ball of bacteria is larger, and bacteria with flagella swim away.",
+      "caption": "Development of a biofilm. Five stages of biofilm development are shown. During stage 1, initial attachment, bacteria adhere to a solid surface via weak van der Waals interactions (forces produced by induced electrical interactions between atoms). During stage 2, irreversible attachment, hairlike appendages called pili permanently anchor the bacteria to the surface. During stage 3, maturation I, the biofilm grows through cell division and recruitment of other bacteria. An extracellular matrix composed primarily of polysaccharides holds the biofilm together. During stage 4, maturation II, the biofilm continues to grow and takes on a more complex shape. During stage 5, dispersal, the biofilm matrix is partly broken down, allowing some bacteria to escape and colonize another surface. Micrographs of a Pseudomonas aeruginosa biofilm in each of the stages of development are shown. (credit: D. Davis, Don Monroe, PLoS)"
+    },
+    "Figure_22_02_02": {
+      "source": "media/Figure_22_02_02.jpg",
+      "sourceSha256": "a1f965b4e909dc3f7dd600058661ba1f07751748d5a53e587d568fbcebfb33c4",
+      "module": "m66545",
+      "kind": "photo",
+      "width": 544,
+      "height": 381,
+      "variants": [
+        {
+          "width": 544,
+          "height": 381,
+          "file": "Figure_22_02_02-544.webp"
+        }
+      ],
+      "alt": "In this illustration, the prokaryotic cell is rod shaped. The circular chromosome is concentrated in a region called the nucleoid. The fluid inside the cell is called the cytoplasm. Ribosomes, depicted as small circles, float in the cytoplasm. The cytoplasm is encased by a plasma membrane, which in turn is encased by a cell wall. A capsule surrounds the cell wall. The bacterium depicted has a flagellum protruding from one narrow end. Pili are small protrusions that project from the capsule all over the bacterium, like hair.",
+      "caption": "The features of a typical prokaryotic cell. Flagella, capsules, and pili are not found in all prokaryotes."
+    },
+    "Figure_22_02_03-8ae1": {
+      "source": "media/Figure_22_02_03-8ae1.jpg",
+      "sourceSha256": "f7a25c2139bbf9da052beea304f64db561420d20e39c3a272e1fcdf5a8ea6efd",
+      "module": "m66545",
+      "kind": "photo",
+      "width": 405,
+      "height": 375,
+      "variants": [
+        {
+          "width": 405,
+          "height": 375,
+          "file": "Figure_22_02_03-8ae1-405.webp"
+        }
+      ],
+      "alt": "The trunk of the phylogenetic tree is a universal ancestor. The tree forms two branches. One branch leads to the domain bacteria, which includes the phyla proteobacteria, chlamydias, spirochetes, cyanobacteria, and Gram-positive bacteria. The other branch branches again, into the eukarya and archaea domains. Domain archaea includes the phyla euryarchaeotes, crenarchaeotes, nanoarchaeotes, and korarchaeotes.",
+      "caption": "The three domains of living organisms. Bacteria and Archaea are both prokaryotes but differ enough to be placed in separate domains. An ancestor of modern Archaea is believed to have given rise to Eukarya, the third domain of life. Major groups of Archaea and Bacteria are shown."
+    },
+    "Figure_22_02_04f": {
+      "source": "media/Figure_22_02_04f.jpg",
+      "sourceSha256": "162041c57259f1b2c4332503dfa600ed309cf96f669d20b35347739903fb8349",
+      "module": "m66545",
+      "kind": "photo",
+      "width": 1118,
+      "height": 1415,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1012,
+          "file": "Figure_22_02_04f-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 1415,
+          "file": "Figure_22_02_04f-1118.webp"
+        }
+      ],
+      "alt": "Characteristics of the five classes of bacterial phylum proteobacteria are described. The classes are alpha, beta, gamma, delta and epsilon. Most species of Alpha Proteobacteria are photoautotrophic but some are symbionts of plants and animals, and others are pathogens. Eukaryotic mitochondria are thought to be derived from bacteria in this group. Representative organisms include Rhizobium, a nitrogen-fixing endosymbiont associated with the roots of legumes, and Rickettsia, an obligate intracellular parasite that causes typhus and Rocky Mountain Spotted Fever (but not rickets, which is caused by Vitamin D deficiency). A micrograph shows rod-shaped Rickettsia rickettsii inside a much larger eukaryotic cell. Beta Proteobacteria is a diverse group of bacteria. Some species play an important role in the nitrogen cycle. Representative organisms include Nitrosomas, which oxidize ammonia into nitrite, and Spirillum minus, which causes rat bite fever. A micrograph of spiral-shaped Spirillum minus is shown. Gamma Proteobacteria include many beneficial symbionts that populate the human gut, as well as familiar human pathogens. Some species from this subgroup oxidize sulfur compounds. Representative organisms include Escherichia coli, normally a beneficial microbe of the human gut, but some strains cause disease; Salmonella, certain strains of which cause food poisoning or typhoid fever; Yersinia pestis, the causative agent of Bubonic plague; Psuedomonas aeruganosa, which causes lung infections; Vibrio cholera, the causative agent of cholera; and Chromatium, sulfur-producing bacteria that oxidize sulfur, producing H2S. Micrograph shows rod-shaped Vibrio cholera, which are about 1 micron long. Some species of Delta Proteobacteria generate a spore-forming fruiting body in adverse conditions. Others reduce sulfate and sulfur. Representative organisms include Myxobacteria, which generate spore-forming fruiting bodies in adverse conditions, and Desulfovibrio vulgaris, an aneorobic, sulfate-reducing bacterium. Micrograph shows a bent rod-shaped Desulfovibrio vulgaris bacterium with a long flagellum. Epsilon Proteobacteria includes many species that inhabit the digestive tract of animals as symbionts or pathogens. Bacteria from this group have been found in deep-sea hydrothermal vents and cold seep habitats. Representative organisms include Campylobacter, which causes blood poisoning and intestinal inflammation, and Heliobacter pylori, which causes stomach ulcers. Micrograph shows short spiral, or s shaped, Campylobacter bacteria.",
+      "caption": "The Proteobacteria. Phylum Proteobacteria is one of up to 52 bacteria phyla. Proteobacteria is further subdivided into five classes, Alpha through Epsilon. (credit “Rickettsia rickettsii”: modification of work by CDC; credit “Spirillum minus”: modification of work by Wolframm Adlassnig; credit “Vibrio cholera”: modification of work by Janice Haney Carr, CDC; credit “Desulfovibrio vulgaris”: modification of work by Graham Bradley; credit “Campylobacter”: modification of work by De Wood, Pooley, USDA, ARS, EMU; scale-bar data from Matt Russell)"
+    },
+    "Figure_22_02_06f": {
+      "source": "media/Figure_22_02_06f.jpg",
+      "sourceSha256": "533a67551a7aebbc566b8e5fc33d1557c127c6d7eed5ba2cda5592adc7438cba",
+      "module": "m66545",
+      "kind": "photo",
+      "width": 1117,
+      "height": 1374,
+      "variants": [
+        {
+          "width": 800,
+          "height": 984,
+          "file": "Figure_22_02_06f-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 1374,
+          "file": "Figure_22_02_06f-1117.webp"
+        }
+      ],
+      "alt": "Characteristics of the four phyla of archaea are described. Euryarchaeotes includes methanogens, which produce methane as a metabolic waste product, and halobacteria, which live in an extreme saline environment. Methanogens cause flatulence in humans and other animals. Halobacteria can grow in large blooms that appear reddish, due to the presence of bacteriorhodopsin in the membrane. Bacteriorhodopsin is related to the retinal pigment rhodopsin. Micrograph shows rod shaped Halobacterium. Members of the ubiquitous Crenarchaeotes phylum play an important role in the fixation of carbon. Many members of this group are sulfur dependent extremophiles. Some are thermophilic or hyperthermophilic. Micrograph shows cocci shaped Sulfolobus, a genus which grows in volcanic springs at temperatures between 75 degrees and 80 degrees Celsius and at a lower case p upper case H between 2 and 3. The phylum Nanoarchaeotes currently contains only one species, Nanoarchaeum equitans, which has been isolated from the bottom of the Atlantic Ocean, and from the a hydrothermal vent at Yellowstone National Park. It is an obligate symbiont with Ignicoccus, another species of archaebacteria. Micrograph shows two small, round N. equitans cells attached to a larger Ignicoccus cell. Korarchaeotes are considered to be one of the most primitive forms of life and so far have only been found in the Obsidian Pool, a hot spring at Yellowstone National Park. Micrograph shows a variety of specimens from this group which vary in shape.",
+      "caption": "Archaeal phyla. Archaea are separated into four phyla: the Korarchaeota, Euryarchaeota, Crenarchaeota, and Nanoarchaeota. (credit “Halobacterium” : modification of work by NASA; credit “Nanoarchaeotum equitans” : modification of work by Karl O. Stetter; credit “Korarchaeota”: modification of work by Office of Science of the U.S. Dept. of Energy; scale-bar data from Matt Russell)"
+    },
+    "Figure_22_02_07f": {
+      "source": "media/Figure_22_02_07f.jpg",
+      "sourceSha256": "3c89d31cd4845b312d2b60e6961c2add02897e5d87956a8f53f5c49362017ead",
+      "module": "m66545",
+      "kind": "photo",
+      "width": 544,
+      "height": 570,
+      "variants": [
+        {
+          "width": 544,
+          "height": 570,
+          "file": "Figure_22_02_07f-544.webp"
+        }
+      ],
+      "alt": "This illustration compares phospholipids from Bacteria and Eukarya to those from Archaea. In Bacteria and Eukarya, fatty acids are attached to glycerol by an ester linkage, while in Archaea, isoprene chains are linked to glycerol by an ether linkage. In the ester linkage, the first carbon in the fatty acid chain has an oxygen double-bonded to it, whereas in the ether linkage, it does not. In Archaea, the isoprene chains have methyl groups branching off from them, whereas such branches are absent in Bacteria and Eukarya. Both types of phospholipids result in similar lipid bilayers.",
+      "caption": "Bacterial and archaeal phospholipids. Archaeal phospholipids differ from those found in Bacteria and Eukarya in two ways. First, they have branched phytanyl sidechains instead of linear ones. Second, an ether bond instead of an ester bond connects the lipid to the glycerol."
+    },
+    "Figure_22_02_08f": {
+      "source": "media/Figure_22_02_08f.png",
+      "sourceSha256": "d713e1eeb1ef115825b733edd49bcfeeb2d6304f86c33dbd07cee2235bf5464f",
+      "module": "m66545",
+      "kind": "diagram",
+      "width": 725,
+      "height": 321,
+      "variants": [
+        {
+          "width": 725,
+          "height": 321,
+          "file": "Figure_22_02_08f-725.webp"
+        }
+      ],
+      "alt": "The left illustration shows the cell wall of Gram-positive bacteria. The cell wall is a thick layer of peptidoglycan that exists outside the plasma membrane. A long, thin molecule called lipoteichoic acid anchors the cell wall to the cell membrane. The right illustration shows Gram-negative bacteria. In Gram-negative bacteria, a thin peptidoglycan cell wall is sandwiched between an outer and an inner plasma membrane. The space between the two membranes is called the periplasmic space. Lipoproteins anchor the cell wall to the outer membrane. Lipopolysaccharides protrude from the outer membrane. Porins are proteins in the outer membrane that allow entry of substances.",
+      "caption": "Cell walls in Gram-positive and Gram-negative bacteria. Bacteria are divided into two major groups: Gram positive and Gram negative. Both groups have a cell wall composed of peptidoglycan: in Gram-positive bacteria, the wall is thick, whereas in Gram-negative bacteria, the wall is thin. In Gram-negative bacteria, the cell wall is surrounded by an outer membrane that contains lipopolysaccharides and lipoproteins. Porins are proteins in this cell membrane that allow substances to pass through the outer membrane of Gram-negative bacteria. In Gram-positive bacteria, lipoteichoic acid anchors the cell wall to the cell membrane. (credit: modification of work by \"Franciscosp2\"/Wikimedia Commons)"
+    },
+    "Figure_22_04_02": {
+      "source": "media/Figure_22_04_02.jpg",
+      "sourceSha256": "705af0d19f88931e446b8ec6ecc01a2f8de1cae5ef9f1931a3af2c23b36eeeaa",
+      "module": "m66548",
+      "kind": "photo",
+      "width": 1117,
+      "height": 434,
+      "variants": [
+        {
+          "width": 800,
+          "height": 311,
+          "file": "Figure_22_04_02-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 434,
+          "file": "Figure_22_04_02-1117.webp"
+        }
+      ],
+      "alt": "Illustration A shows two men loading a dead body onto a cart. Another body lies in the street. Label beneath the illustration says, Plague in 1665. Micrograph B shows rod shaped bacteria. Photo C shows a man with black gangrene on his fingers, arm, nose and lips.",
+      "caption": "The Black Death. The (a) Great Plague of London killed an estimated 200,000 people, or about 20 percent of the city’s population. The causative agent, the (b) bacterium Yersinia pestis , is a Gram-negative, rod-shaped bacterium from the class Gammaproteobacteria. The disease is transmitted through the bite of an infected flea, which is carried on a rodent. Symptoms include swollen lymph nodes, fever, seizure, vomiting of blood, and (c) gangrene. (credit b: Rocky Mountain Laboratories, NIAID, NIH; scale-bar data from Matt Russell; credit c: Textbook of Military Medicine, Washington, D.C., U.S. Dept. of the Army, Office of the Surgeon General, Borden Institute)"
+    },
+    "Figure_22_04_03": {
+      "source": "media/Figure_22_04_03.jpg",
+      "sourceSha256": "208d9793a60336f095e96b9be609b608b1d6450e85a9c4bbc5d917c0825e6653",
+      "module": "m66548",
+      "kind": "photo",
+      "width": 804,
+      "height": 468,
+      "variants": [
+        {
+          "width": 800,
+          "height": 465,
+          "file": "Figure_22_04_03-800.webp"
+        },
+        {
+          "width": 804,
+          "height": 468,
+          "file": "Figure_22_04_03-804.webp"
+        }
+      ],
+      "alt": "Emerging or re-emerging bacterial diseases are shown on a world map. Multidrug resistant tuberculosis is emerging in North America, Europe, north Africa, and Asia. Vancomycin resistant Staphylococcus aureus and E coli O 1 5 7 colon H 7 are emerging in North America and East Asia. Lyme disease is spreading in North America. Cholera is emerging in Africa and South America. Diptheria and typhoid fever are re emerging in Asia.",
+      "caption": "Emerging diseases. The map shows regions where bacterial diseases are emerging or re-emerging. (credit: modification of work by NIH)"
+    },
+    "Figure_22_04_06f": {
+      "source": "media/Figure_22_04_06f.jpg",
+      "sourceSha256": "314c1eba7ee4d1fe754d206df812c9b447d563668cd929ba4199e96a88c095f2",
+      "module": "m66548",
+      "kind": "photo",
+      "width": 1117,
+      "height": 303,
+      "variants": [
+        {
+          "width": 800,
+          "height": 217,
+          "file": "Figure_22_04_06f-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 303,
+          "file": "Figure_22_04_06f-1117.webp"
+        }
+      ],
+      "alt": "Photo A shows round green seeds with stems sprouting from them. Micrograph B shows rod-shaped bacteria about 2 microns in length. Sketch C shows normal, disk-shaped red blood cells on the left. On the right, many of the red blood cells are incomplete or fragmented.",
+      "caption": "Foodborne pathogens. (a) Vegetable sprouts grown at an organic farm were the cause of an (b) E. coli outbreak that killed 32 people and sickened 3,800 in Germany in 2011. The strain responsible, E. coli O104:H4, produces Shiga toxin, a substance that inhibits protein synthesis in the host cell. The toxin (c) destroys red blood cells resulting in bloody diarrhea. Deformed red blood cells clog the capillaries of the kidney, which can lead to kidney failure, as happened to 845 patients in the 2011 outbreak. Kidney failure is usually reversible, but some patients experience kidney problems years later. (credit c: NIDDK, NIH)"
+    },
+    "Figure_22_04_07": {
+      "source": "media/Figure_22_04_07.jpg",
+      "sourceSha256": "bf3c8bc150767621259e9b0c381caadb077ef3012139948059bbac8b4df4e015",
+      "module": "m66548",
+      "kind": "photo",
+      "width": 469,
+      "height": 313,
+      "variants": [
+        {
+          "width": 469,
+          "height": 313,
+          "file": "Figure_22_04_07-469.webp"
+        }
+      ],
+      "alt": "This photo shows syringes, adhesive bandages, and alcohol swabs.",
+      "caption": "Vaccination. Vaccinations can slow the spread of communicable diseases. (credit: modification of work by Daniel Paquet)"
+    },
+    "Figure_22_05_01": {
+      "source": "media/Figure_22_05_01.jpg",
+      "sourceSha256": "f9b18646ac833cbf0c82bf1375991747645ed973a387e4bc5c7ec9d98fa02549",
+      "module": "m66549",
+      "kind": "photo",
+      "width": 544,
+      "height": 379,
+      "variants": [
+        {
+          "width": 544,
+          "height": 379,
+          "file": "Figure_22_05_01-544.webp"
+        }
+      ],
+      "alt": "This photo shows a legume root, which is thin and yellow with nodules sticking out of it.",
+      "caption": "Nitrogen-fixation nodules on soybean roots. Soybean ( Glycine max ) is a legume that interacts symbiotically with the soil bacterium Bradyrhizobium japonicum to form specialized structures on the roots called nodules where nitrogen fixation occurs. (credit: USDA)"
+    },
+    "Figure_22_05_03ab": {
+      "source": "media/Figure_22_05_03ab.jpg",
+      "sourceSha256": "8b01f3634762387cb9a2126e195d528b3f8f33a7342292585862d2e4214eb6fe",
+      "module": "m66549",
+      "kind": "photo",
+      "width": 1117,
+      "height": 391,
+      "variants": [
+        {
+          "width": 800,
+          "height": 280,
+          "file": "Figure_22_05_03ab-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 391,
+          "file": "Figure_22_05_03ab-1117.webp"
+        }
+      ],
+      "alt": "Part a: This photo shows two men in yellow raingear hosing off oil-drenched rocks on a sea-shore. Part b: This photo shows an oil-drenched bird sitting in oily water.",
+      "caption": "Prokaryotes and bioremediation. (a) Cleaning up oil after the Exxon Valdez spill in Alaska, workers hosed oil from beaches and then used a floating boom to corral the oil, which was finally skimmed from the water surface. Some species of bacteria are able to solubilize and degrade the oil. (b) One of the most catastrophic consequences of oil spills is the damage to fauna. (credit a: modification of work by NOAA; credit b: modification of work by GOLUBENKOV, NGO: Saving Taman)"
+    },
+    "Figure_22_05_04": {
+      "source": "media/Figure_22_05_04.jpg",
+      "sourceSha256": "f6869aeff72d84f9e074719ce4ae5e5172ee8b7fdf5911b9d9acf036b4ea41ad",
+      "module": "m66549",
+      "kind": "photo",
+      "width": 544,
+      "height": 319,
+      "variants": [
+        {
+          "width": 544,
+          "height": 319,
+          "file": "Figure_22_05_04-544.webp"
+        }
+      ],
+      "alt": "Micrograph shows small clusters of white rod-shaped bacteria against a dark background.",
+      "caption": "Clostridium difficile . This scanning electron micrograph shows Clostridium difficile , a Gram-positive, rod-shaped bacterium that causes severe diarrhea. Infection commonly occurs after the normal gut fauna are eradicated by antibiotics, and in the hospital can be deadly to seriously ill patients. (credit: modification of work by CDC, HHS; scale-bar data from Matt Russell)"
+    },
+    "Figure_23_01_01": {
+      "source": "media/Figure_23_01_01.jpg",
+      "sourceSha256": "ee4b98299a261a031032b992c21c254288accfc8a3d31fbb5932ae0fd1724b78",
+      "module": "m66552",
+      "kind": "photo",
+      "width": 544,
+      "height": 386,
+      "variants": [
+        {
+          "width": 544,
+          "height": 386,
+          "file": "Figure_23_01_01-544.webp"
+        }
+      ],
+      "alt": "This micrograph shows two round, membrane-bound organelles inside a cell. The organelles are about 400 nanometers (about 0.4 microns) across and have membranes running through the middle of them.",
+      "caption": "Mitochondria. In this transmission electron micrograph of mitochondria in a mammalian lung cell, the cristae, infoldings of the mitochondrial inner membrane, can be seen in cross-section. (credit: Louise Howard)"
+    },
+    "Figure_23_01_02": {
+      "source": "media/Figure_23_01_02.jpg",
+      "sourceSha256": "ec265b278cbff2e4883e43dc0c628d838d0627fc5262747d91166da6b228f724",
+      "module": "m66552",
+      "kind": "photo",
+      "width": 800,
+      "height": 316,
+      "variants": [
+        {
+          "width": 800,
+          "height": 316,
+          "file": "Figure_23_01_02-800.webp"
+        }
+      ],
+      "alt": "The illustration A shows a green, oval chloroplast with an outer membrane and an inner membrane. Thylakoids are disk-shaped and stack together like poker chips. Image B is a micrograph showing rectangular shapes that have small green spheres within.",
+      "caption": "Chloroplasts. (a) This chloroplast cross-section illustrates its elaborate inner membrane organization. Stacks of thylakoid membranes compartmentalize photosynthetic enzymes and provide scaffolding for chloroplast DNA. (b) In this micrograph of Elodea sp., the chloroplasts can be seen as small green spheres. (credit b: modification of work by Brandon Zierer; scale-bar data from Matt Russell)"
+    },
+    "Figure_23_01_03ab": {
+      "source": "media/Figure_23_01_03ab.jpg",
+      "sourceSha256": "532b385a0a251f676459f479998c9c2b036d7111096d30cee6c8281f4f096084",
+      "module": "m66552",
+      "kind": "photo",
+      "width": 1119,
+      "height": 473,
+      "variants": [
+        {
+          "width": 800,
+          "height": 338,
+          "file": "Figure_23_01_03ab-800.webp"
+        },
+        {
+          "width": 1119,
+          "height": 473,
+          "file": "Figure_23_01_03ab-1119.webp"
+        }
+      ],
+      "alt": "Part a shows red algae with lettuce-like leaves. Part b shows four oval green algae cells stacked next to each other. The green algae cells are about 2 micrometers across and 10 micrometers long.",
+      "caption": "Algae. (a) Red algae and (b) green algae (seen here by light microscopy) share similar DNA sequences with photosynthetic cyanobacteria. Scientists speculate that, in a process called endosymbiosis, an ancestral prokaryote engulfed a photosynthetic cyanobacterium that evolved into modern-day chloroplasts. (credit a: modification of work by Ed Bierman; credit b: modification of work by G. Fahnenstiel, NOAA; scale-bar data from Matt Russell)"
+    },
+    "Figure_23_01_04": {
+      "source": "media/Figure_23_01_04.png",
+      "sourceSha256": "660badb3ac3ca79cdbc6df08ec20d274b552361b7d17023070cb32b8dc9a249a",
+      "module": "m66552",
+      "kind": "diagram",
+      "width": 1043,
+      "height": 521,
+      "variants": [
+        {
+          "width": 800,
+          "height": 399,
+          "file": "Figure_23_01_04-800.webp"
+        },
+        {
+          "width": 1043,
+          "height": 521,
+          "file": "Figure_23_01_04-1043.webp"
+        }
+      ],
+      "alt": "The illustration shows steps that, according to the endosymbiotic theory, gave rise to eukaryotic organisms. In step 1, infoldings in the plasma membrane of an ancestral prokaryote gave rise to endomembrane components, including a nucleus and endoplasmic reticulum. In step 2, the first endosymbiotic event occurred: The ancestral eukaryote consumed aerobic bacteria that evolved into mitochondria. The results of step 2 branch in two directions. One direction led to modern heterotrophic eukaryotes with mitochondria but no chloroplasts. The other direction led to step 3, a second endosymbiotic event, where the early eukaryote consumed photosynthetic bacteria that evolved into chloroplasts. Step 3 led to modern photosynthetic eukaryotes with both mitochondria and chloroplasts.",
+      "caption": "The Endosymbiotic Theory. The first eukaryote may have originated from an ancestral prokaryote that had undergone membrane proliferation, compartmentalization of cellular function (into a nucleus, lysosomes, and an endoplasmic reticulum), and the establishment of endosymbiotic relationships with an aerobic prokaryote, and, in some cases, a photosynthetic prokaryote, to form mitochondria and chloroplasts, respectively."
+    },
+    "Figure_23_03_02": {
+      "source": "media/Figure_23_03_02.jpg",
+      "sourceSha256": "fc48ef9743f4cc466c0948c21881d4481bfef43dc2277be63e42d62ca354215d",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 544,
+      "height": 550,
+      "variants": [
+        {
+          "width": 544,
+          "height": 550,
+          "file": "Figure_23_03_02-544.webp"
+        }
+      ],
+      "alt": "The micrograph shows Giardia, which is shaped like a corn kernel and about 12 to 15 microns in length. Three whip-like flagella protrude from the middle of the parasite, and a whip-like tail protrudes from the narrow back end.",
+      "caption": "Giardia. The mammalian intestinal parasite Giardia lamblia , visualized here using scanning electron microscopy, is a waterborne protist that causes severe diarrhea when ingested. (credit: modification of work by Janice Carr, CDC; scale-bar data from Matt Russell)"
+    },
+    "Figure_23_03_04": {
+      "source": "media/Figure_23_03_04.jpg",
+      "sourceSha256": "f074bf0e811153c4c668c679d1d59d8f3df49ffea2ee151da23648ed727d3d9b",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 544,
+      "height": 428,
+      "variants": [
+        {
+          "width": 544,
+          "height": 428,
+          "file": "Figure_23_03_04-544.webp"
+        }
+      ],
+      "alt": "The illustration shows two dinoflagellates. The first is walnut-shaped, with a groove around the middle and another perpendicular groove that starts at the middle and extends back. Flagella fit in each groove. The second dinoflagellate is horseshoe-shaped, with the body extending from the wide part of the horseshoe toward the narrow end. Like the first dinoflagellate, this one has two perpendicular grooves, each containing a flagellum.",
+      "caption": "Dinoflagellates. The dinoflagellates exhibit great diversity in shape. Many are encased in cellulose armor and have two flagella that fit in grooves between the plates. Movement of these two perpendicular flagella causes a spinning motion."
+    },
+    "Figure_23_03_05": {
+      "source": "media/Figure_23_03_05.jpg",
+      "sourceSha256": "524cc4d9003b536268caf3e81fb88219590d460fa0a00d87e8286aed985e3c35",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 544,
+      "height": 363,
+      "variants": [
+        {
+          "width": 544,
+          "height": 363,
+          "file": "Figure_23_03_05-544.webp"
+        }
+      ],
+      "alt": "The breaking wave in this photo is an iridescent blue color.",
+      "caption": "Dinoflagellate bioluminescence. Bioluminescence is emitted from dinoflagellates in a breaking wave, as seen from the New Jersey coast. (credit: “catalano82”/Flickr)"
+    },
+    "Figure_23_03_06ab": {
+      "source": "media/Figure_23_03_06ab.jpg",
+      "sourceSha256": "551f60d6abb3e81e44f8c55c7438464e2abec42db2782fde4b51b8d037a5d758",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 800,
+      "height": 324,
+      "variants": [
+        {
+          "width": 800,
+          "height": 324,
+          "file": "Figure_23_03_06ab-800.webp"
+        }
+      ],
+      "alt": "The illustration on the left shows a shoe-shaped Paramecium. Short, hair-like cilia cover the outside of the cell. Inside are food vacuoles, a large macronucleus, and a small micronucleus. The Paramecium has two star-shaped contractile vacuoles. The mouth pore is an indentation located just where the foot narrows. A small opening called the anal pore is located at the wide end of the cell. The micrograph on the right is a Paramecium, which is about 50 microns across and 150 microns long.",
+      "caption": "Paramecium. Paramecium has a primitive mouth (called an oral groove) to ingest food, and an anal pore to eliminate waste. Contractile vacuoles allow the organism to excrete excess water. Cilia enable the organism to move. (credit “paramecium micrograph”: modification of work by NIH; scale-bar data from Matt Russell)"
+    },
+    "Figure_23_03_08": {
+      "source": "media/Figure_23_03_08.jpg",
+      "sourceSha256": "ca52fc045d0ed8b9071e53d7b2b4fdaaf0a6418a14c983220dafed1d4631511c",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 544,
+      "height": 538,
+      "variants": [
+        {
+          "width": 544,
+          "height": 538,
+          "file": "Figure_23_03_08-544.webp"
+        }
+      ],
+      "alt": "The illustration shows an egg-shaped stramenopile cell. Protruding from the narrow end of the cell is one hairless flagellum and one hairy flagellum.",
+      "caption": "Stramenopile flagella. This stramenopile cell has a single hairy flagellum and a secondary smooth flagellum."
+    },
+    "Figure_23_03_09": {
+      "source": "media/Figure_23_03_09.jpg",
+      "sourceSha256": "443709d40af365bc0f357ad7683d1a925fa192298e4c8403cbe148e35b16e113",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 544,
+      "height": 357,
+      "variants": [
+        {
+          "width": 544,
+          "height": 357,
+          "file": "Figure_23_03_09-544.webp"
+        }
+      ],
+      "alt": "This micrograph shows translucent blue diatoms, which range widely in size and shape. Many are tube- or diamond-shaped. One is disk-shaped with a visible hub. Another looks like a disk viewed from the end, with grooves in it.",
+      "caption": "Diatoms. Assorted diatoms, visualized here using light microscopy, live among annual sea ice in McMurdo Sound, Antarctica. Diatoms range in size from 2 to 200 µm. (credit: Prof. Gordon T. Taylor, Stony Brook University, NSF, NOAA)"
+    },
+    "Figure_23_03_10": {
+      "source": "media/Figure_23_03_10.png",
+      "sourceSha256": "b7e7e4f98a5bba951776b7483b94e1b47c242cc1709f7ead27db1683e30bafae",
+      "module": "m66555",
+      "kind": "diagram",
+      "width": 825,
+      "height": 489,
+      "variants": [
+        {
+          "width": 800,
+          "height": 474,
+          "file": "Figure_23_03_10-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 489,
+          "file": "Figure_23_03_10-825.webp"
+        }
+      ],
+      "alt": "The life cycle of the brown algae, Laminaria, begins when sporangia undergo meiosis, producing 1 n zoospores. The zoospores undergo mitosis, producing multicellular male and female gametophytes. The female gametophyte produces eggs, and the male gametophyte produces sperm. The sperm fertilizes the egg, producing a 2 n zygote. The zygote undergoes mitosis, producing a multicellular sporophyte. The mature sporophyte produces sporangia, completing the cycle. A photo inset shows the sporophyte stage, which resembles a plant with long, flat blade-like leaves attached to green stalks via bladder like connections. Both the blade and stalks are submerged. Sporangia are associated with the leaf like structures.",
+      "caption": "Alternation of generations in a brown alga. Several species of brown algae, such as the Laminaria shown here, have evolved life cycles in which both the haploid (gametophyte) and diploid (sporophyte) forms are multicellular. The gametophyte is different in structure than the sporophyte. (credit “laminaria photograph”: modification of work by Claire Fackler, CINMS, NOAA Photo Library)"
+    },
+    "Figure_23_03_11": {
+      "source": "media/Figure_23_03_11.jpg",
+      "sourceSha256": "edd5523656cfc7e66143394f75e5c018786a81f4e47e473f255e7037c93bf0da",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 544,
+      "height": 410,
+      "variants": [
+        {
+          "width": 544,
+          "height": 410,
+          "file": "Figure_23_03_11-544.webp"
+        }
+      ],
+      "alt": "The photo shows a mucous-like mass, covered in white fuzz, hanging from a rock.",
+      "caption": "Oomycetes. A saprobic oomycete engulfs a dead insect. (credit: modification of work by Thomas Bresson)"
+    },
+    "Figure_23_03_12": {
+      "source": "media/Figure_23_03_12.jpg",
+      "sourceSha256": "3ab4fa87a96f5f48eb218e2d1adfe9c4359f80d82b16ba3cf4be73f1af3ccd5b",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 544,
+      "height": 366,
+      "variants": [
+        {
+          "width": 544,
+          "height": 366,
+          "file": "Figure_23_03_12-544.webp"
+        }
+      ],
+      "alt": "The micrograph shows a semi-round cell with long, hair-like projections extending from it.",
+      "caption": "Rhizaria. Ammonia tepida , a Rhizaria species viewed here using phase contrast light microscopy, exhibits many threadlike pseudopodia. It also has a chambered calcium carbonate shell or test. (credit: modification of work by Scott Fay, UC Berkeley; scale-bar data from Matt Russell)"
+    },
+    "Figure_23_03_13": {
+      "source": "media/Figure_23_03_13.jpg",
+      "sourceSha256": "e266cbf36e5f841563a78e088af8afec4c587d00657daf6438b10a77c454016f",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 544,
+      "height": 434,
+      "variants": [
+        {
+          "width": 544,
+          "height": 434,
+          "file": "Figure_23_03_13-544.webp"
+        }
+      ],
+      "alt": "The photo shows small, white shells that look like clamshells, and shell fragments. Each cell is about 0.25 m m across.",
+      "caption": "Foraminiferan Tests. These shells from foraminifera sank to the sea floor. (credit: Deep East 2001, NOAA/OER)"
+    },
+    "Figure_23_03_14": {
+      "source": "media/Figure_23_03_14.jpg",
+      "sourceSha256": "bdf383a0be9080ff2fb18c21ebac81a94dca4bd559b6a62ba01615ed10839e24",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 544,
+      "height": 412,
+      "variants": [
+        {
+          "width": 544,
+          "height": 412,
+          "file": "Figure_23_03_14-544.webp"
+        }
+      ],
+      "alt": "The micrograph shows a tear drop-shaped white structure reminiscent of a shell. The structure is hollow and perfused with circular holes.",
+      "caption": "Radiolarian shell. This fossilized radiolarian shell was imaged using a scanning electron microscope. (credit: modification of work by Hannes Grobe, Alfred Wegener Institute; scale-bar data from Matt Russell)"
+    },
+    "Figure_23_03_15": {
+      "source": "media/Figure_23_03_15.jpg",
+      "sourceSha256": "f34c2a771dfdfe268f2538879e29248b18e6825e7071e088070233d9ec233e18",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 1117,
+      "height": 370,
+      "variants": [
+        {
+          "width": 800,
+          "height": 265,
+          "file": "Figure_23_03_15-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 370,
+          "file": "Figure_23_03_15-1117.webp"
+        }
+      ],
+      "alt": "The micrograph on the left shows a sphere about 400 microns across with round green cells about 50 microns across inside. The middle micrograph shows a similar view at higher magnification. The micrograph on the right shows a broken sphere that has released some of the cells, while other cells remain inside.",
+      "caption": "Volvox. Volvox aureus is a green alga in the supergroup Archaeplastida. This species exists as a colony, consisting of cells immersed in a gel-like matrix and intertwined with each other via hair-like cytoplasmic extensions. (credit: Dr. Ralf Wagner)"
+    },
+    "Figure_23_03_16": {
+      "source": "media/Figure_23_03_16.jpg",
+      "sourceSha256": "596e27a638f061c1ddef2d7d388004d2a0554228cba5641feeccb269b063db0e",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 544,
+      "height": 362,
+      "variants": [
+        {
+          "width": 544,
+          "height": 362,
+          "file": "Figure_23_03_16-544.webp"
+        }
+      ],
+      "alt": "This underwater photo shows fern-like plants growing on the sea bottom.",
+      "caption": "A multinucleate alga. Caulerpa taxifolia is a chlorophyte consisting of a single cell containing potentially thousands of nuclei. (credit: NOAA). An interesting question is how a single cell can produce such complex shapes."
+    },
+    "Figure_23_03_17": {
+      "source": "media/Figure_23_03_17.jpg",
+      "sourceSha256": "858b0d5cfbd70a151bbfb29fbccf8743f9b70d09f7be61b7af8f6d0ec519c639",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_23_03_17-544.webp"
+        }
+      ],
+      "alt": "The micrograph shows amoebas with lobe-like pseudopodia.",
+      "caption": "Amoeba. Amoebae with tubular and lobe-shaped pseudopodia are seen under a microscope. These isolates would be morphologically classified as amoebozoans."
+    },
+    "Figure_23_04_01": {
+      "source": "media/Figure_23_04_01.jpg",
+      "sourceSha256": "37d5237221b8f9fd7eac2ba0dece578479adfc75c8187e326b04790c6e347ff7",
+      "module": "m66556",
+      "kind": "photo",
+      "width": 544,
+      "height": 434,
+      "variants": [
+        {
+          "width": 544,
+          "height": 434,
+          "file": "Figure_23_04_01-544.webp"
+        }
+      ],
+      "alt": "This underwater photo shows coral polyps. Polyps are cup-shaped and have tentacles extending from the edge of the cup.",
+      "caption": "Coral with symbiotic dinoflagellates. Coral polyps obtain nutrition through a symbiotic relationship with dinoflagellates."
+    },
+    "Figure_23_04_02abcde": {
+      "source": "media/Figure_23_04_02abcde.jpg",
+      "sourceSha256": "6a5353c71e4ec03b6671aa40eb0a42749a3f236550ffcd02c34366454302946c",
+      "module": "m66556",
+      "kind": "photo",
+      "width": 461,
+      "height": 600,
+      "variants": [
+        {
+          "width": 461,
+          "height": 600,
+          "file": "Figure_23_04_02abcde-461.webp"
+        }
+      ],
+      "alt": "The photo collage shows mollusks, a crab, a dolphin, a penguin, and a school of fish.",
+      "caption": "Protists contribute to the food chain. Virtually all aquatic organisms depend directly or indirectly on protists for food. (credit “mollusks”: modification of work by Craig Stihler, USFWS; credit “crab”: modification of work by David Berkowitz; credit “dolphin”: modification of work by Mike Baird; credit “fish”: modification of work by Tim Sheerman-Chase; credit “penguin”: modification of work by Aaron Logan)"
+    },
+    "Figure_23_04_03": {
+      "source": "media/Figure_23_04_03.jpg",
+      "sourceSha256": "7fe9b57c9508ff440395664ede5fc979a5f8113db6d70fa9b6af5d9cf2f74cbe",
+      "module": "m66556",
+      "kind": "photo",
+      "width": 544,
+      "height": 544,
+      "variants": [
+        {
+          "width": 544,
+          "height": 544,
+          "file": "Figure_23_04_03-544.webp"
+        }
+      ],
+      "alt": "The micrograph shows round red blood cells, each about 8 microns across, infected with ring-shaped P falciparum.",
+      "caption": "Malaria parasite. Red blood cells are shown to be infected with P . falciparum , the causative agent of malaria. In this light microscopic image taken using a 100× oil immersion lens, the ring-shaped P . falciparum stains purple. (credit: modification of work by Michael Zahniser; scale-bar data from Matt Russell)"
+    },
+    "Figure_23_04_04": {
+      "source": "media/Figure_23_04_04.jpg",
+      "sourceSha256": "b28a63c603d79e426f1f409d6e39ddce0e974df65770f69653c31365dd808936",
+      "module": "m66556",
+      "kind": "photo",
+      "width": 544,
+      "height": 385,
+      "variants": [
+        {
+          "width": 544,
+          "height": 385,
+          "file": "Figure_23_04_04-544.webp"
+        }
+      ],
+      "alt": "The micrograph shows round red blood cells, about 8 microns across. Swimming among the red blood cells are ribbon-like trypanosomes. The trypanosomes are about three times as long as the red blood cells are wide.",
+      "caption": "Trypanosomes. Trypanosomes are shown among red blood cells. (credit: modification of work by Dr. Myron G. Shultz; scale-bar data from Matt Russell)"
+    },
+    "Figure_23_04_05": {
+      "source": "media/Figure_23_04_05.jpg",
+      "sourceSha256": "66ad54eec226b7a99d539dac6ebadda8a65598cda50309656699ea1853b8b203",
+      "module": "m66556",
+      "kind": "photo",
+      "width": 544,
+      "height": 384,
+      "variants": [
+        {
+          "width": 544,
+          "height": 384,
+          "file": "Figure_23_04_05-544.webp"
+        }
+      ],
+      "alt": "The photo shows a leaf infected with downy mildew and powdery mildew. Where the leaf is infected with downy mildew, it is yellow instead of green. Powdery mildew appears as a white fuzz on the leaf.",
+      "caption": "Protist plant infections. Both downy and powdery mildews on this grape leaf are caused by an infection of P . viticola . (credit: modification of work by USDA)"
+    },
+    "Figure_23_04_06": {
+      "source": "media/Figure_23_04_06.jpg",
+      "sourceSha256": "059f51bd64e1867786b6dda868c12eea0ee6a11dd5a782d64b83c0f201bff643",
+      "module": "m66556",
+      "kind": "photo",
+      "width": 544,
+      "height": 390,
+      "variants": [
+        {
+          "width": 544,
+          "height": 390,
+          "file": "Figure_23_04_06-544.webp"
+        }
+      ],
+      "alt": "The photo shows a slice of potato that has browned and appears rotten.",
+      "caption": "Potato blight. These unappetizing remnants result from an infection with P . infestans , the causative agent of potato late blight. (credit: USDA)"
+    },
     "Figure_B06_03_05abcd_new": {
       "source": "media/Figure_B06_03_05abcd_new.png",
       "sourceSha256": "b533ddfb73b1cfba10ffcb98e785015d67f6dcb0233e8acead61abeba82572fe",
@@ -7593,6 +8738,538 @@
       ],
       "alt": "Illustration A shows the web of life. The base of this web is an ancestral community of primitive cells. This pool of ancestral cells gave rise to the three domains of life, shown as bacteria, archaea, and eukarya. However, because of gene transfer and endosymbiosis events, connections occur between the branches at various points. Thus, eukaryotic chloroplasts and mitochondria originated in bacterial lineages, and archaea and bacteria have exchanged genes. The overall shape of the web has the ancestral community of primitive cells forming a horizontal base like the ground, multiple trunks extending up from it with some cross connections, continuing with tree-like branches reaching upward. Some of the branches also have horizontal cross connections between them, such as those for introducing chloroplasts and mitochondria into Eukarya. Part B is a photo of a multi-trunked Ficus tree.",
       "caption": "In W. Ford Doolittle's (a) phylogenetic model, the “tree of life” arose from a community of ancestral cells, has multiple trunks, and has connections between branches where horizontal gene transfer has occurred. Visually, this concept is better represented by (b) the multi-trunked Ficus than by an oak's single trunk similar to Darwin's tree in . (credit b: modification of work by \"psyberartist\"/Flickr)"
+    },
+    "Figure_B21_01_02": {
+      "source": "media/Figure_B21_01_02.jpg",
+      "sourceSha256": "b3605816d385928501f432c0fc0750c8e3d5b9d4aac0c77a0d2bde7581f518ff",
+      "module": "m66534",
+      "kind": "photo",
+      "width": 1292,
+      "height": 992,
+      "variants": [
+        {
+          "width": 800,
+          "height": 614,
+          "file": "Figure_B21_01_02-800.webp"
+        },
+        {
+          "width": 1292,
+          "height": 992,
+          "file": "Figure_B21_01_02-1292.webp"
+        }
+      ],
+      "alt": "Figure a is a helical virus which has a long linear structure. The outer proteins are small spheres arranged into a long, hollow tube. Inside the tube is the genetic material. Tobacco mosaic virus is an example of a helical virus. Figure b is an icosahedral virus which has a polyhedron structure. The example shown is human rhinovirus which has a pentagon structure. Complex viruses have a more complex structure in figure C. The example is variola which has an ovoid structure.",
+      "caption": "Viral capsids can be (a) helical, (b) polyhedral, or (c) have a complex shape. (credit a “micrograph”: modification of work by USDA ARS; credit b “micrograph”: modification of work by U.S. Department of Energy)"
+    },
+    "Figure_B21_02_01": {
+      "source": "media/Figure_B21_02_01.png",
+      "sourceSha256": "6f60e9ed74abe5e4e0d1795520c7d089419e15af0cf910bf299e74a6025009d6",
+      "module": "m66534",
+      "kind": "diagram",
+      "width": 725,
+      "height": 527,
+      "variants": [
+        {
+          "width": 725,
+          "height": 527,
+          "file": "Figure_B21_02_01-725.webp"
+        }
+      ],
+      "alt": "Illustration a shows bacteriophage T 4, which houses its D N A genome in a hexagonal head. A long, straight tail extends from the bottom of the head. Tail fibers attached to the base of the tail are bent, like spider legs. In b, adenovirus houses its D N A genome in a round capsid made from many small capsomere subunits. Glycoproteins extend from the capsomere, like pins from a pincushion. In c, the influenza virus houses its R N A genome and a bullet-shaped capsid. A spherical viral envelope, lined with matrix proteins, surrounds the capsid. Two different varieties of glycoprotein spike are embedded in the envelope. Approximately 80 percent of the spikes are hemagglutinin. The remaining 20 percent or so of the glycoprotein spikes consist of neuraminidase.",
+      "caption": "Complex Viruses. Viruses can be either complex or relatively simple in shape. This figure shows three relatively complex virions: the bacteriophage T4, with its DNA-containing head group and tail fibers that attach to host cells; adenovirus, which uses spikes from its capsid to bind to host cells; and the influenza virus, which uses glycoproteins embedded in its envelope to bind to host cells. The influenza virus also has matrix proteins, internal to the envelope, which help stabilize the virion’s shape. (credit “bacteriophage, adenovirus”: modification of work by NCBI, NIH; credit \"influenza virus\": modification of work by Dan Higgins, Centers for Disease Control and Prevention)"
+    },
+    "Figure_B21_03_01": {
+      "source": "media/Figure_B21_03_01.png",
+      "sourceSha256": "4973479d253b184917076853e3db33e2ce94b29a84cead81c5bfc5acdb9938b1",
+      "module": "m66535",
+      "kind": "diagram",
+      "width": 2082,
+      "height": 1465,
+      "variants": [
+        {
+          "width": 800,
+          "height": 563,
+          "file": "Figure_B21_03_01-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1126,
+          "file": "Figure_B21_03_01-1600.webp"
+        }
+      ],
+      "alt": "The bacteriophage lytic cycle begins when the phage attaches via a slender stalk to the host cell. Linear DNA from the viral head is injected into the host cell. The phage DNA circularizes, remaining separate from the host DNA. The phage DNA replicates, and new phage proteins are made. New phage particles are assembled. The cell lyses, releasing the phage. The bacteriophage lysogenic cycle begins the same way as the lytic cycle, with phage infecting a host cell. However, the phage DNA becomes incorporated into the host genome. The cell divides, and phage DNA is passed on to daughter cells. Under stressful conditions, the phage DNA is excised from the bacterial chromosome and enters the lytic cycle.",
+      "caption": "A temperate bacteriophage has both lytic and lysogenic cycles. In the lytic cycle, the phage replicates and lyses the host cell. In the lysogenic cycle, phage DNA is incorporated into the host genome, where it is passed on to subsequent generations. Environmental stressors such as starvation or exposure to toxic chemicals may cause the prophage to excise and enter the lytic cycle."
+    },
+    "Figure_B21_03_03a": {
+      "source": "media/Figure_B21_03_03a.jpg",
+      "sourceSha256": "6798421e771ad03a9346660a2d8b9f9f473871d62d300b67b700305c2ca63726",
+      "module": "m66534",
+      "kind": "photo",
+      "width": 1019,
+      "height": 1259,
+      "variants": [
+        {
+          "width": 800,
+          "height": 988,
+          "file": "Figure_B21_03_03a-800.webp"
+        },
+        {
+          "width": 1019,
+          "height": 1259,
+          "file": "Figure_B21_03_03a-1019.webp"
+        }
+      ],
+      "alt": "In the illustration an H I V virus attaches to a C D 4 molecule embedded in the plasma membrane of a host immune cell.",
+      "caption": "A virus and its host receptor protein. The HIV virus binds the CD4 receptor on the surface of human cells. CD4 receptors help white blood cells to communicate with other cells of the immune system when producing an immune response. (credit: modification of work by NIAID, NIH)"
+    },
+    "Figure_B22_02_01abc": {
+      "source": "media/Figure_B22_02_01abc.jpg",
+      "sourceSha256": "30ba4a929148b021b3942630f53ce25acd068240e7eeea6a9683e245bffb0891",
+      "module": "m66545",
+      "kind": "photo",
+      "width": 1120,
+      "height": 419,
+      "variants": [
+        {
+          "width": 800,
+          "height": 299,
+          "file": "Figure_B22_02_01abc-800.webp"
+        },
+        {
+          "width": 1120,
+          "height": 419,
+          "file": "Figure_B22_02_01abc-1120.webp"
+        }
+      ],
+      "alt": "Part a: The micrograph shows ball-shaped cocci about 800 nanometers across. Part b: The micrograph shows elongated, oval-shaped bacilli about 2000 nanometers long. Part c: The micrograph shows corkscrew-shaped spirilli that are quite long and 500 nanometers in diameter.",
+      "caption": "Common prokaryotic cell types. Prokaryotes fall into three basic categories based on their shape, visualized here using scanning electron microscopy: (a) cocci, or spherical (a pair is shown); (b) bacilli, or rod-shaped; and (c) spirilli, or spiral-shaped. (credit a: modification of work by Janice Haney Carr, Dr. Richard Facklam, CDC; credit c: modification of work by Dr. David Cox; scale-bar data from Matt Russell)"
+    },
+    "Figure_B22_02_08b": {
+      "source": "media/Figure_B22_02_08b.jpg",
+      "sourceSha256": "2233fdb70365b025f3dc6f5d06748cf1cd7dd900d0125adc41bea292658bcaac",
+      "module": "m66545",
+      "kind": "photo",
+      "width": 1118,
+      "height": 1190,
+      "variants": [
+        {
+          "width": 800,
+          "height": 851,
+          "file": "Figure_B22_02_08b-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 1190,
+          "file": "Figure_B22_02_08b-1118.webp"
+        }
+      ],
+      "alt": "This table describes the other four bacterial phyla classes. The first phylum described is chlamydias. All members of this group are obligate intracellular parasites of animal cells. Cells walls lack peptidoglycan. Micrograph shows a pap smear of cells infected with Chlamydia trachomatis. Chlamydia infection is the most common sexually transmitted disease and can lead to blindness. All members of the phylum Spirochetes have spiral-shaped cells. Most are free-living anaerobes, but some are pathogenic. Flagella run lengthwise in the periplasmic space between the inner and outer membrane. Representative species include Treponema pallidum, the causative agent of syphilis and Borrelia burgdorferi, the causative agent of Lyme disease Micrograph shows corkscrew-shaped Trepanema pallidum, about 1 micron across. Bacteria in the phylum Cyanobacteria, also known as blue-green algae, obtain their energy through photosynthesis. They are ubiquitous, found in terrestrial, marine, and freshwater environments. Eukaryotic chloroplasts are thought to be derived from bacteria in this group. The cyanobacterium Prochlorococcus is believed to be the most abundant photosynthetic organism on earth, responsible for generating half the world’s oxygen. Micrograph shows a long, thin rod-shaped species called Phormidium. Gram-positive Bacteria have a thick cell wall and lack an outer membrane. Soil-dwelling members of this subgroup decompose organic matter. Some species cause disease. Representative species include Bacillus anthracis, which causes anthrax; Clostridium botulinum, which causes botulism; Clostridium difficile, which causes diarrhea during antibiotic therapy; Streptomyces, from which many antibiotics, including streptomyocin, are derived; and Mycoplasmas, the smallest known bacteria, which lack a cell wall. Some are free-living, and some are pathogenic. Micrograph shows Clostridium difficile, which are rod-shaped and about 3 microns long.",
+      "caption": "Other bacterial phyla. Chlamydia, Spirochetes, Cyanobacteria, and Gram-positive bacteria are described in this table. Note that bacterial shape is not phylum-dependent; bacteria within a phylum may be cocci, rod-shaped, or spiral. (credit “Chlamydia trachomatis” : modification of work by Dr. Lance Liotta Laboratory, NCI; credit “Treponema pallidum” : modification of work by Dr. David Cox, CDC; credit “Phormidium” : modification of work by USGS; credit “Clostridium difficile” : modification of work by Lois S. Wiggs, CDC; scale-bar data from Matt Russell)"
+    },
+    "Figure_B22_02_10": {
+      "source": "media/Figure_B22_02_10.png",
+      "sourceSha256": "807f2e839d35ba8c452bdb9c236688234e786c5a71424667df59f096901a2a4f",
+      "module": "m66545",
+      "kind": "diagram",
+      "width": 825,
+      "height": 379,
+      "variants": [
+        {
+          "width": 800,
+          "height": 367,
+          "file": "Figure_B22_02_10-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 379,
+          "file": "Figure_B22_02_10-825.webp"
+        }
+      ],
+      "alt": "Illustration A shows transformation, where a small, circular piece of DNA is absorbed by a prokaryotic cell. The DNA then gets incorporated in the genome. Illustration B shows transduction, where a bacteriophage injects DNA into a prokaryotic cell. The DNA then gets incorporated in the genome. Illustration C shows conjugation, where two bacteria are connected by a pilus. A small loop of DNA is transferred from one cell to the other via the pilus.",
+      "caption": "Gene transfer mechanisms in prokaryotes. There are three mechanisms by which prokaryotes can exchange DNA. In (a) transformation, the cell takes up prokaryotic DNA directly from the environment. The DNA may remain separate as plasmid DNA or be incorporated into the host genome. In (b) transduction, a bacteriophage injects DNA into the cell that contains a small fragment of DNA from a different prokaryote. In (c) conjugation, DNA is transferred from one cell to another via a mating bridge, or pilus, that connects the two cells after the sex pilus draws the two bacteria close enough to form the bridge."
+    },
+    "Figure_B22_03_01": {
+      "source": "media/Figure_B22_03_01.png",
+      "sourceSha256": "a79b30710ea3e5c55765aa03935486dd1425cb2f96e03f86b744e1ef134c5121",
+      "module": "m66547",
+      "kind": "diagram",
+      "width": 2236,
+      "height": 1557,
+      "variants": [
+        {
+          "width": 800,
+          "height": 557,
+          "file": "Figure_B22_03_01-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1114,
+          "file": "Figure_B22_03_01-1600.webp"
+        }
+      ],
+      "alt": "An illustration shows the carbon lifecycle. Carbon dioxide in the atmosphere occurs by way of volcanic eruptions, animal, microbial and marine respiration, and human emissions - such as from factories. It is absorbed by terrestrial photosynthesis from plants, and marine photosynthesis. The weathering of terrestrial rocks turns into soil carbon, which then branches into either fossil carbon or directly to microbial respiration and decomposition. Fossil carbon also contributes to microbial respiration and decomposition. This decomposition has a leaching, or runoff effect, and enters the ocean as sediments. Those sediments can be uplifted and also end up contributing to microbial respiration and decomposition.",
+      "caption": "The carbon cycle. Prokaryotes play a significant role in continuously moving carbon through the biosphere. (credit: modification of work by John M. Evans and Howard Perlman, USGS)"
+    },
+    "Figure_B22_03_02": {
+      "source": "media/Figure_B22_03_02.png",
+      "sourceSha256": "5bc6462497388b32fce2bcedd143155b52ecc7937fb57aa3f30f4320d0153300",
+      "module": "m66547",
+      "kind": "diagram",
+      "width": 1489,
+      "height": 1159,
+      "variants": [
+        {
+          "width": 800,
+          "height": 622,
+          "file": "Figure_B22_03_02-800.webp"
+        },
+        {
+          "width": 1489,
+          "height": 1159,
+          "file": "Figure_B22_03_02-1489.webp"
+        }
+      ],
+      "alt": "This illustration shows the role of bacteria in the nitrogen cycle. Nitrogen-fixing bacteria in root nodules of legumes convert nitrogen gas, or upper case N 2, into organic nitrogen found in plants. Nitrogen-fixing soil bacteria produce ammonium ion, or upper N upper H 4 plus sign. Decomposers, including bacteria and fungi, decompose organic matter, also releasing upper N upper H 4 plus sign. Nitrification is the process by which nitrifying bacteria produce nitrites, shown as upper N upper O 2 negative, and nitrates, shown as upper N upper O 3 negative. Nitrates are assimilated by plants, then animals, then decomposers. Denitrifying bacteria convert nitrates to nitrogen gas, completing the cycle.",
+      "caption": "The nitrogen cycle. Prokaryotes play a key role in the nitrogen cycle. (credit: Environmental Protection Agency)"
+    },
+    "Figure_B22_04_03": {
+      "source": "media/Figure_B22_04_03.png",
+      "sourceSha256": "674bf559e7bf67e4464e2846b5ed088f01ec34ff27da7e2da271958f1cbc5b37",
+      "module": "m66548",
+      "kind": "diagram",
+      "width": 1088,
+      "height": 740,
+      "variants": [
+        {
+          "width": 800,
+          "height": 544,
+          "file": "Figure_B22_04_03-800.webp"
+        },
+        {
+          "width": 1088,
+          "height": 740,
+          "file": "Figure_B22_04_03-1088.webp"
+        }
+      ],
+      "alt": "The micrograph shows clusters of round bacteria clinging to a surface. Each bacterium is about 0.4 microns across.",
+      "caption": "MRSA. This scanning electron micrograph shows methicillin-resistant Staphylococcus aureus bacteria, commonly known as MRSA. S. aureus is not always pathogenic, but can cause diseases such as food poisoning and skin and respiratory infections. (credit: modification of work by Janice Haney Carr; scale-bar data from Matt Russell)"
+    },
+    "Figure_B22_04_07": {
+      "source": "media/Figure_B22_04_07.png",
+      "sourceSha256": "8e3e473213528781be8062098fe4a9edf2a1ff278faf80e567f4546a3858a133",
+      "module": "m66548",
+      "kind": "diagram",
+      "width": 825,
+      "height": 560,
+      "variants": [
+        {
+          "width": 800,
+          "height": 543,
+          "file": "Figure_B22_04_07-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 560,
+          "file": "Figure_B22_04_07-825.webp"
+        }
+      ],
+      "alt": "Micrograph shows pink rod-shaped bacteria.",
+      "caption": "Salmonella enterica. Salmonella enterica serovar Typhi, the causative agent of Typhoid fever, is a Gram-negative, rod-shaped gamma proteobacterium. Typhoid fever, which is spread through feces, causes intestinal hemorrhage, high fever, delirium, and dehydration. Today, between 16 and 33 million cases of this re-emerging disease occur annually, resulting in over 200,000 deaths. Carriers of the disease can be asymptomatic. In a famous case in the early 1900s, a cook named Mary Mallon (“Typhoid Mary”) unknowingly spread the disease to over fifty people, three of whom died. Other serotypes of Salmonella cause food poisoning. (credit: modification of work by NCI, CDC)"
+    },
+    "Figure_B22_04_08": {
+      "source": "media/Figure_B22_04_08.png",
+      "sourceSha256": "b164c155c77a2562dafccc767ce6cb4265e15cca8201f69fc4cccfd3f694303c",
+      "module": "m66548",
+      "kind": "diagram",
+      "width": 825,
+      "height": 356,
+      "variants": [
+        {
+          "width": 800,
+          "height": 345,
+          "file": "Figure_B22_04_08-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 356,
+          "file": "Figure_B22_04_08-825.webp"
+        }
+      ],
+      "alt": "Part A shows the red, bullseye-shaped rash of a person infected with Borrelia. Part B shows a micrograph of Borrelia, which look like tiny corkscrews. Part C shows the life cycle of the bacteria, which begins when Borrelia infect a tick egg. The egg hatches into larva, which feeds on a mouse, then into a nymph, which also feeds on a mouse. The nymph feeds again, this time on a deer, or sometimes a human.",
+      "caption": "Lyme Disease. Lyme disease often, but not always, results in (a) a characteristic bullseye rash. The disease is caused by a (b) Gram-negative spirochete bacterium of the genus Borrelia . The bacteria (c) infect ticks, which in turn infect mice. Deer are the preferred secondary host, but the ticks also may feed on humans. Untreated, the disease causes chronic disorders in the nervous system, eyes, joints, and heart. The disease is named after Lyme, Connecticut, where an outbreak occurred in 1995 and has subsequently spread. The disease is not new, however. Genetic evidence suggests that Ötzi the Iceman, a 5,300-year-old mummy found in the Alps, was infected with Borrelia . (credit a: James Gathany, CDC; credit b: CDC; scale-bar data from Matt Russell)"
+    },
+    "Figure_B22_05_02abcd": {
+      "source": "media/Figure_B22_05_02abcd.jpg",
+      "sourceSha256": "bde542b93ec323fcc171622f542079a6a0cb477eee90cff9374443b7bfe41cd3",
+      "module": "m66549",
+      "kind": "photo",
+      "width": 1118,
+      "height": 1024,
+      "variants": [
+        {
+          "width": 800,
+          "height": 732,
+          "file": "Figure_B22_05_02abcd-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 1024,
+          "file": "Figure_B22_05_02abcd-1118.webp"
+        }
+      ],
+      "alt": "The photo collage shows cheese, yogurt, wine, and beer and bread.",
+      "caption": "Some foods produced by microorganisms. Some of the products derived from the use of prokaryotes in early biotechnology include (a) cheese, (b) yogurt, (c) beer and bread, and (d) wine. (credit bread: modification of work by F. Rodrigo/Wikimedia Commons; credit wine: modification of work by Jon Sullivan; credit beer and bread: modification of work by Kris Miller; credit yogurt: modification of work by Jon Sullivan)"
+    },
+    "Figure_B23_00_01abc": {
+      "source": "media/Figure_B23_00_01abc.jpg",
+      "sourceSha256": "070bffe5498fb78089140e5dd9d2baddcd89413c6d9fad1fabd32661cbd74650",
+      "module": "m66550",
+      "kind": "photo",
+      "width": 1125,
+      "height": 306,
+      "variants": [
+        {
+          "width": 800,
+          "height": 217,
+          "file": "Figure_B23_00_01abc-800.webp"
+        },
+        {
+          "width": 1125,
+          "height": 306,
+          "file": "Figure_B23_00_01abc-1125.webp"
+        }
+      ],
+      "alt": "Part a is a micrograph of a round, transparent single-celled organism with long thin spines. Part b is a micrograph of an oval, transparent organism with ridges running along its length. The nucleus is visible as a large, round sphere. Cilia extend from the surface of the organism. Part c is an underwater photo of a kelp forest growing from the seabed.",
+      "caption": "Protists range from the microscopic, single-celled (a) Acanthocystis turfacea and the (b) ciliate Tetrahymena thermophila , both visualized here using light microscopy, to the enormous, multicellular (c) kelps (Chromalveolata) that extend for hundreds of feet in underwater “forests.” (credit a: modification of work by Yuiuji Tsukii; credit b: modification of work by Richard Robinson, Public Library of Science; credit c: modification of work by Kip Evans, NOAA; scale-bar data from Matt Russell)"
+    },
+    "Figure_B23_01_07": {
+      "source": "media/Figure_B23_01_07.png",
+      "sourceSha256": "8f15406c4f72d34d2ac721a4893902ab1de53f2b2bcb1f280835607ac542adf7",
+      "module": "m66552",
+      "kind": "diagram",
+      "width": 1448,
+      "height": 513,
+      "variants": [
+        {
+          "width": 800,
+          "height": 283,
+          "file": "Figure_B23_01_07-800.webp"
+        },
+        {
+          "width": 1448,
+          "height": 513,
+          "file": "Figure_B23_01_07-1448.webp"
+        }
+      ],
+      "alt": "According to the secondary endosymbiosis theory, plastids in modern chlorarachniophytes arose via two endosymbiotic events. In the first event, a cyanobacterium was engulfed by a heterotrophic eukaryote. Cyanobacteria have two membranes and the endosymbiosis event gave rise to a third membrane. One of these membranes was lost. Then, in a second endosymbiotic event, the cell was engulfed by another cell. The first cell became a plastid, an organelle with a vestigial nucleus and an organelle membrane inside it; thus, the plastid has the appearance of a cell within a cell.",
+      "caption": "Secondary endosymbiosis. The hypothesized process of several endosymbiotic events leading to the evolution of chlorarachniophytes is shown. In a primary endosymbiotic event, a heterotrophic eukaryote consumed a cyanobacterium. In a secondary endosymbiotic event, the cell resulting from primary endosymbiosis was consumed by a second cell. The resulting organelle became a plastid in modern chlorarachniophytes."
+    },
+    "Figure_B23_02_01": {
+      "source": "media/Figure_B23_02_01.jpg",
+      "sourceSha256": "345ec00d766b90b83afb8e4ea60029b178fb6144d2c5dc3d7a6d55973a0ef082",
+      "module": "m66554",
+      "kind": "photo",
+      "width": 544,
+      "height": 400,
+      "variants": [
+        {
+          "width": 544,
+          "height": 400,
+          "file": "Figure_B23_02_01-544.webp"
+        }
+      ],
+      "alt": "In this illustration, a eukaryotic cell is shown consuming a food particle. As the food particle is consumed, it is encapsulated in a vacuole. The vacuole fuses with a lysosome, and proteins inside the lysosome digest the food particle. Indigestible waste material is ejected from the cell when an exocytic vesicle fuses with the plasma membrane.",
+      "caption": "Phagocytosis. The stages of phagocytosis include the engulfment of a food particle, the digestion of the particle using hydrolytic enzymes contained within a lysosome, and the expulsion of undigested materials from the cell."
+    },
+    "Figure_B23_02_02": {
+      "source": "media/Figure_B23_02_02.jpg",
+      "sourceSha256": "a3164962a4a2afe3348e122e4bb3a356bb5f96170298ee3776a0742eefaddba3",
+      "module": "m66554",
+      "kind": "photo",
+      "width": 800,
+      "height": 299,
+      "variants": [
+        {
+          "width": 800,
+          "height": 299,
+          "file": "Figure_B23_02_02-800.webp"
+        }
+      ],
+      "alt": "Part a shows a shoe-shaped Paramecium, which is covered with fine, hair-like cilia. Part b shows an Amoeba, which is irregular in shape with long extensions of cytoplasm jutting out from the main body. The extensions are called pseudopods. Part c shows an oval Euglena, which has a narrow front end. A long, whip-like flagellum protrudes from the back end.",
+      "caption": "Locomotor organelles in protists. Protists use various methods for transportation. (a) Paramecium waves hair-like appendages called cilia to propel itself. (b) Amoeba uses lobe-like pseudopodia to anchor itself to a solid surface and pull itself forward. (c) Euglena uses a whip-like tail called a flagellum to propel itself."
+    },
+    "Figure_B23_03_01": {
+      "source": "media/Figure_B23_03_01.png",
+      "sourceSha256": "3007a6c4fc74df3505de66191183e5385876d2fc4bb26acd39e78029d40c82dd",
+      "module": "m66555",
+      "kind": "diagram",
+      "width": 485,
+      "height": 710,
+      "variants": [
+        {
+          "width": 485,
+          "height": 710,
+          "file": "Figure_B23_03_01-485.webp"
+        }
+      ],
+      "alt": "This image displays a proposed protist phylogeny. On the left, a common eukaryotic ancestor has one solid branch and other dotted branches connecting it to six supergroups. The solid branch leads to supergroup Archaeplastida. Within Archaeplastida, red algae branch off first, then Chlorophytes (a type of green algae), and finally Charophytes (another type of green algae) and land plants split. The first dotted branch splits into supergroups Amoebozoa and Opisthokonta. Amoebozoa includes slime molds, Gymnamoebas, and Entamoebas. Opisthokonta splits into one sub-branch containing fungi and Nucleariids, and another sub-branch containing Choanoflagellates and animals. The second dotted branch leads to supergroup Rhizaria, within which Radiolarians branch off first, and then forams and Cercozoans split. The third dotted branch leads to supergroup Chromalveolata, which is broken into two named sub-branches, the Alveolates and the Stramenopiles. Within the Alveolates sub-branch, Ciliates branch off first, then Dinoflagellates and Apicomplexans split. Within the Stramenopiles sub-branch, Oomycetes branch off first, then diatoms, golden algae, and brown algae split. The last dotted branch leads to supergroup Excavata, within which Euglenozoans branch off first, then Diplomonads and Parabasalids split.",
+      "caption": "Eukaryotic supergroups. This diagram shows a proposed classification of the domain Eukarya. Currently, the domain Eukarya is divided into six supergroups. Within each supergroup are multiple kingdoms. Although each supergroup is believed to be monophyletic, the dotted lines suggest evolutionary relationships among the supergroups that continue to be debated."
+    },
+    "Figure_B23_03_02": {
+      "source": "media/Figure_B23_03_02.jpg",
+      "sourceSha256": "04cf76fc76fd5a41072c4c954e8032210a05f38357357b1234c4eb364e31a149",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 640,
+      "height": 480,
+      "variants": [
+        {
+          "width": 640,
+          "height": 480,
+          "file": "Figure_B23_03_02-640.webp"
+        }
+      ],
+      "alt": "This light micrograph image shows Glaucocystis colonies comprised of green, oval-shaped cells loosely bound together by the extended cell wall of a prior generation.",
+      "caption": "Glaucocystis. (credit: By ja:User:NEON / commons:User:NEON_ja - Own work, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=1706641 )"
+    },
+    "Figure_B23_03_05ab": {
+      "source": "media/Figure_B23_03_05ab.png",
+      "sourceSha256": "086a097bc82eb1ecf62047b0f62e8e6ed5d695e6c6f473ceb32237be3618964e",
+      "module": "m66555",
+      "kind": "diagram",
+      "width": 825,
+      "height": 422,
+      "variants": [
+        {
+          "width": 800,
+          "height": 409,
+          "file": "Figure_B23_03_05ab-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 422,
+          "file": "Figure_B23_03_05ab-825.webp"
+        }
+      ],
+      "alt": "Illustration A shows an oval cell that has a narrow end and a wide end. The apical complex is located at the narrow end. The three branches of this complex narrow and join at the apical, or narrow, end of the cell. Illustration b shows the life cycle of Plasmodium, which causes malaria. The plasmodium life cycle begins when a mosquito takes a blood meal and injects Plasmodium into the bloodstream. The Plasmodium enters the liver where it multiplies, and eventually reenters the blood. In the blood it enters the ring stage, so called because the cell is curled into a ring shape. The Ring stage may multiply by mitosis or it may undergo meiosis, forming new 1n gametes of male or female sex types. When a mosquito takes a blood meal from an infected host the gametes are ingested. A smaller gamete sex type, called a microgamete, fertilizes a larger sex type, called a macrogamete, producting a 2n zygote. The zygote undergoes mitosis and differentiation. It enters the saliva where it can be injected into another host, completing the cycle.",
+      "caption": "Apicomplexa. (a) Apicomplexans are parasitic protists. They have a characteristic apical complex that enables them to infect host cells. (b) Plasmodium , the causative agent of malaria, has a complex life cycle typical of apicomplexans. (credit b: modification of work by CDC)"
+    },
+    "Figure_B23_03_07-jpg": {
+      "source": "media/Figure_B23_03_07.jpg",
+      "sourceSha256": "42c0d9273decdafd6cd6aa8467d0fee01e295ba045e554041f6de9f60f952c41",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 1024,
+      "height": 683,
+      "variants": [
+        {
+          "width": 800,
+          "height": 533,
+          "file": "Figure_B23_03_07-jpg-800.webp"
+        },
+        {
+          "width": 1024,
+          "height": 683,
+          "file": "Figure_B23_03_07-jpg-1024.webp"
+        }
+      ],
+      "alt": "The image shows several stages in the life cycle of Dictyostelium discoideum. It appears as fibers or very thin stalks topped with circular structures",
+      "caption": "Cellular Slime Mold. The image shows several stages in the life cycle of Dictyostelium discoideum , including aggregated cells, mobile slugs and their transformation into fruiting bodies with a cluster of spores supported by a stalk. (credit: By Usman Bashir (Own work) [CC BY-SA 4.0 ( http://creativecommons.org/licenses/by-sa/4.0 )], via Wikimedia Commons)"
+    },
+    "Figure_B23_03_07-png": {
+      "source": "media/Figure_B23_03_07.png",
+      "sourceSha256": "08d8a7053bc22a1a658e4926318b45342030bfe7ea2ce47846c4b43bc49c66fc",
+      "module": "m66555",
+      "kind": "diagram",
+      "width": 1406,
+      "height": 1876,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1067,
+          "file": "Figure_B23_03_07-png-800.webp"
+        },
+        {
+          "width": 1406,
+          "height": 1876,
+          "file": "Figure_B23_03_07-png-1406.webp"
+        }
+      ],
+      "alt": "The illustration shows the life cycle of Paramecium. The cycle begins (step 1) when two different mating types form a cytoplasmic bridge, becoming a conjugate pair. Each Paramecium has a macronucleus and a micronucleus. The micronuclei undergo meiosis (step 2), resulting in four haploid micronuclei in each parent cell. Three of these micronuclei disintegrate. The remaining micronuclei divide once by mitosis (step 3), resulting in two micronuclei per cell. The parent cells swap one of these micronuclei (step 4). The two haploid micronuclei then fuse, forming a diploid micronucleus (step 5). The micronucleus undergoes three rounds of mitosis (step 6), resulting in eight micronuclei. The original macronucleus dissolves, and four of the micronuclei become macronuclei (step 7). Two rounds of cell division (step 8) result in four daughter cells per each parent cell, each with one macronucleus and one micronucleus.",
+      "caption": "Conjugation in Paramecium. The complex process of sexual reproduction in Paramecium creates eight daughter cells from two original cells. Each cell has a macronucleus and a micronucleus. During sexual reproduction, the macronucleus dissolves and is replaced by a micronucleus. (credit “micrograph”: modification of work by Ian Sutton; scale-bar data from Matt Russell)"
+    },
+    "Figure_B23_03_08": {
+      "source": "media/Figure_B23_03_08.jpg",
+      "sourceSha256": "0578d0df642599266c5192d675d4116a0bc8ece907cd0c2f5dc7af67d26c202f",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 600,
+      "height": 450,
+      "variants": [
+        {
+          "width": 600,
+          "height": 450,
+          "file": "Figure_B23_03_08-600.webp"
+        }
+      ],
+      "alt": "A micrograph shows a colonial Choanoflagellate. It appears to be a central structure with a series of circular cells on its surface.",
+      "caption": "A Colonial Choanoflagellate. (credit: By Dhzanette ( http://en.wikipedia.org/wiki/Choanoflagellate ) [Public domain], via Wikimedia Commons)"
+    },
+    "Figure_B23_03_12": {
+      "source": "media/Figure_B23_03_12.jpg",
+      "sourceSha256": "25487ba5032981db1de56db1675812ac01dbb58b19f5e6e78da4f5a4639ae7ad",
+      "module": "m66555",
+      "kind": "photo",
+      "width": 640,
+      "height": 480,
+      "variants": [
+        {
+          "width": 640,
+          "height": 480,
+          "file": "Figure_B23_03_12-640.webp"
+        }
+      ],
+      "alt": "Image is a Chlorarachniophyte. It appears as a series of green cells with what appear to be fibers surrounding and connecting them.",
+      "caption": "A Chlorarachniophyte. This rhizarian is mixotrophic, and can obtain nutrients both by photosynthesis and by trapping various microorganisms with its network of pseudopodia. (credit: By ja:User:NEON / commons:User:NEON_ja (Own work) [CC BY-SA 2.5 ( http://creativecommons.org/licenses/by-sa/2.5 ) or CC BY-SA 2.5 ( http://creativecommons.org/licenses/by-sa/2.5 )], via Wikimedia Commons)"
+    },
+    "Figure_B23_03_18": {
+      "source": "media/Figure_B23_03_18.png",
+      "sourceSha256": "e24394034a96c8522a8406ebdbd56b2c27d8d702bad6dd1159d46455aa733c18",
+      "module": "m66555",
+      "kind": "diagram",
+      "width": 2247,
+      "height": 1874,
+      "variants": [
+        {
+          "width": 800,
+          "height": 667,
+          "file": "Figure_B23_03_18-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1334,
+          "file": "Figure_B23_03_18-1600.webp"
+        }
+      ],
+      "alt": "Illustration shows the plasmodium slime mold life cycle, which begins when 1n spores germinate, giving rise to cells that can convert between amoeboid and flagellated forms. Fertilization by fusion of either cell type results in a 2n zygote. The zygote undergoes mitosis without cytokinesis, resulting in a single-celled, multinucleate mass called a plasmodium, which is visible to the naked eye. A photo inset shows that the plasmodium is bright yellow and looks like vomit. As the plasmodium matures, holes form in the center of the mass. Stalks with bulb-shaped sporangia at the top grow up from the mass. Spores are released when the sporangia burst open, completing the cycle.",
+      "caption": "Plasmodial slime molds. The life cycle of the plasmodial slime mold is shown. The brightly colored plasmodium in the inset photo is a single-celled, multinucleate mass. (credit: modification of work by Dr. Jonatha Gott and the Center for RNA Molecular Biology, Case Western Reserve University)"
+    },
+    "Figure_B23_03_20": {
+      "source": "media/Figure_B23_03_20.png",
+      "sourceSha256": "8305ddb4971c88e7a49d3f93e250d6573e9a865faecb7fa57eadefae3ef6953a",
+      "module": "m66555",
+      "kind": "diagram",
+      "width": 796,
+      "height": 594,
+      "variants": [
+        {
+          "width": 796,
+          "height": 594,
+          "file": "Figure_B23_03_20-796.webp"
+        }
+      ],
+      "alt": "The life cycle of T brucei begins when the tsetse fly takes a blood meal from a human host, and injects the parasite into the bloodstream (step 1). T brucei multiplies by binary fission in blood, lymph and spinal fluid (step 2). When another tsetse fly bites the infected person, it takes up the pathogen (step 3), which then multiplies by binary fission in the fly's midgut (step 4). T brucei transforms into an infectious stage (step 5) and enters the salivary gland, where it multiplies (step 6). The cycle is completed when the fly takes a blood meal from another human.",
+      "caption": "Sleeping sickness. Trypanosoma brucei , the causative agent of sleeping sickness, spends part of its life cycle in the tsetse fly and part in humans. (credit: modification of work by CDC)"
     },
     "Targeted_Protein_Formation-XZZ": {
       "source": "media/Targeted_Protein_Formation-XZZ.jpg",

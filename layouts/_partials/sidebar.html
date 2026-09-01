@@ -44,38 +44,42 @@
     </div>
   {{- end -}}
   <div class="hextra-scrollbar hx:overflow-y-auto hx:overflow-x-hidden hx:p-4 hx:grow hx:md:h-[calc(100vh-var(--navbar-height)-var(--menu-height))]">
-    <ul class="hx:flex hx:flex-col hx:gap-1 hx:md:hidden">
-      <!-- Nav: top-level menu entries only, expanding just the current book
-           branch. Rendering the full site tree from site.Home here duplicated
-           the whole library into every page (and Math twice, since Home and
-           Math are both page-backed menu entries). -->
+    {{- /* Athenaeum: ONE list serves every width. Upstream Hextra renders
+         two — a phone-drawer list (top-level menu entries, the current book
+         expanded beneath its shelf) hidden from md up, and a desktop list
+         (the book tree alone) hidden below md — so every page shipped its
+         whole book tree twice, ~1.26 KiB per link per copy: a Biology page
+         at 23 chapters carried 300 KiB of <aside>, and each new section
+         grew EVERY page of the book by ~2.5 KiB (tools/build/audit-build.mjs,
+         maxMeanChromeBytes). Now the drawer list is the only list. The
+         entries only the drawer shows — the other shelves, Home, About, the
+         in-page heading list under the active item — carry hx:md:hidden, and
+         the two rows that wrap the tree (the shelf entry and the book's own
+         "Overview" row, each marked .ap-sidebar-shell) hide their link and
+         flatten their indentation from md up (assets/css/custom.css), so the
+         desktop reader sees exactly the tree the second list used to draw:
+         chapters at the left edge, units labelled, nothing else. The tree
+         itself is emitted once. The theme's sidebar.js is unaffected: the
+         collapsible buttons still sit in their <li>, and scrollToActiveItem
+         already picks the first active item with a visible box. */ -}}
+    <ul class="hx:flex hx:flex-col hx:gap-1">
       {{ template "sidebar-main" (dict "context" site.Home "pageURL" $pageURL "page" $context "toc" true "scope" true "navRoot" $navRoot) -}}
       {{ template "sidebar-footer" }}
-      {{- /* Athenaeum: contact link (see utils/contact-mailto.html). This ul
-           is the phone drawer, where the right rail's copy of the link never
-           exists — no width class needed. */ -}}
+      {{- /* Athenaeum: contact link (see utils/contact-mailto.html). Shown in
+           the phone drawer and the md–xl sidebar; .ap-contact-sidebar
+           (custom.css) hides it at xl+, where the right rail carries the same
+           link, so it renders exactly once at every width. */ -}}
       {{- with partial "utils/contact-mailto.html" $context -}}
-        <li class="hx:mt-5">{{ template "sidebar-item-link" dict "active" false "open" false "title" "Questions or concerns? Email us!" "link" . }}</li>
+        <li class="hx:mt-5 ap-contact-sidebar">{{ template "sidebar-item-link" dict "active" false "open" false "title" "Questions or concerns? Email us!" "link" . }}</li>
       {{- end -}}
     </ul>
 
-    <!-- Sidebar on large screen -->
     {{- if $disableSidebar -}}
+      {{- /* The aside itself is hx:md:hidden in this state, so the list
+           above is drawer-only; the placeholder keeps the desktop column. */ -}}
       {{- if $displayPlaceholder }}<div class="hx:max-xl:hidden hx:h-0 hx:w-64 hx:shrink-0"></div>{{ end -}}
       {{ .context.Store.Set "enableFooterSwitches" true }}
-    {{- else -}}
-      <ul class="hx:flex hx:flex-col hx:gap-1 hx:max-md:hidden">
-        {{ template "sidebar-main" (dict "context" $navRoot "page" $context  "pageURL" $pageURL) }}
-        {{ template "sidebar-footer" }}
-        {{- /* Athenaeum: contact link for tablet widths (md–xl), where the
-             left sidebar shows but the right rail — which carries the same
-             link — doesn't exist yet. .ap-contact-sidebar (custom.css) hides
-             it at xl+ so the link renders exactly once at every width. */ -}}
-        {{- with partial "utils/contact-mailto.html" $context -}}
-          <li class="hx:mt-5 ap-contact-sidebar">{{ template "sidebar-item-link" dict "active" false "open" false "title" "Questions or concerns? Email us!" "link" . }}</li>
-        {{- end -}}
-      </ul>
-    {{ end -}}
+    {{- end -}}
   </div>
   {{/* Hide theme switch when sidebar is disabled */}}
   {{ $switchesClass := cond $disableSidebar "hx:md:hidden" "" -}}
@@ -229,7 +233,7 @@
           {{- if eq (index $entry "type") "page" -}}
             {{- $item := index $entry "item" -}}
             {{- if $item.Params.sidebar.separator -}}
-              <li class="[word-break:break-word] hx:mt-5 hx:mb-2 hx:px-2 hx:py-1.5 hx:text-sm hx:font-semibold hx:text-gray-900 hx:first:mt-0 hx:dark:text-gray-100">
+              <li class="[word-break:break-word] hx:mt-5 hx:mb-2 hx:px-2 hx:py-1.5 hx:text-sm hx:font-semibold hx:text-gray-900 hx:first:mt-0 hx:dark:text-gray-100 hx:md:hidden">
                 <span class="hx:cursor-default">{{ index $entry "title" }}</span>
               </li>
             {{- else -}}
@@ -237,7 +241,11 @@
               {{- $expands := and $scope (ne $item.RelPermalink site.Home.RelPermalink) (or ($item.IsAncestor $page) $active) (or $item.Sections $item.RegularPages) -}}
               {{- $shouldOpen := or ($item.Params.sidebar.open) ($item.IsAncestor $page) $active | default true }}
               {{- if $scope }}{{ $shouldOpen = $expands }}{{ end }}
-              <li class="{{ if $shouldOpen }}open{{ end }}">
+              {{- /* Athenaeum: the entry that expands into the current book
+                   is the shell around the one shared tree (hidden row,
+                   flattened indentation from md up); every other entry is
+                   drawer-only. */ -}}
+              <li class="{{ if $shouldOpen }}open{{ end }}{{ if $expands }} ap-sidebar-shell{{ else }} hx:md:hidden{{ end }}">
                 {{- template "sidebar-item-link" dict "context" (cond $scope (cond $expands $item nil) $item) "active" $active "open" $shouldOpen "title" (index $entry "title") "link" $item.RelPermalink -}}
                 {{- if and $toc $active (ne $item.Params.toc false) -}}
                   {{- template "sidebar-toc" dict "page" $item -}}
@@ -256,7 +264,7 @@
               </li>
             {{- end -}}
           {{- else if eq (index $entry "type") "group" -}}
-            <li class="open">
+            <li class="open hx:md:hidden">
               <div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center">
                 <span class="hx:flex hx:grow hx:cursor-default hx:px-2 hx:py-1.5 hx:text-sm hx:font-semibold hx:text-gray-900 hx:dark:text-gray-100">
                   {{- index $entry "title" -}}
@@ -277,7 +285,7 @@
           {{- else -}}
             {{- $link := index $entry "link" -}}
             {{- $active := eq (strings.TrimSuffix "/" $pageURL) (strings.TrimSuffix "/" $link) -}}
-            <li>{{ template "sidebar-item-link" dict "active" $active "open" false "title" (index $entry "title") "link" $link }}</li>
+            <li class="hx:md:hidden">{{ template "sidebar-item-link" dict "active" $active "open" false "title" (index $entry "title") "link" $link }}</li>
           {{- end -}}
         {{- end -}}
       {{- else -}}
@@ -333,9 +341,11 @@
   {{- end -}}
 {{- end -}}
 
-{{- /* One expanded branch for the scoped (mobile) nav. When the reader is
-     inside a book, render that book's link plus its chapter/section tree and
-     nothing else from the subject. On the subject page itself (navRoot equals
+{{- /* One expanded branch for the scoped nav. When the reader is inside a
+     book, render that book's link plus its chapter/section tree and nothing
+     else from the subject; that tree is the ONLY copy on the page, and from
+     md up the book row (.ap-sidebar-shell) hides while its tree stays, so it
+     is also the desktop sidebar. On the subject page itself (navRoot equals
      the subject), render the subject's books as plain links without their
      trees. */ -}}
 {{- define "sidebar-scoped-branch" -}}
@@ -348,7 +358,7 @@
     <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'>
       {{- if and $navRoot (ne (strings.TrimSuffix "/" $navRoot.RelPermalink) (strings.TrimSuffix "/" $subject.RelPermalink)) -}}
         {{- $active := eq (strings.TrimSuffix "/" $pageURL) (strings.TrimSuffix "/" $navRoot.RelPermalink) -}}
-        <li class="hx:flex hx:flex-col open">
+        <li class="hx:flex hx:flex-col open ap-sidebar-shell">
           {{- template "sidebar-item-link" dict "context" $navRoot "active" $active "open" true "title" (partial "utils/title" $navRoot) "link" $navRoot.RelPermalink -}}
           {{- if and $toc $active (ne $navRoot.Params.toc false) -}}
             {{- template "sidebar-toc" dict "page" $navRoot -}}
@@ -376,7 +386,9 @@
 {{- define "sidebar-toc" -}}
   {{ $page := .page }}
   {{ with $page.Fragments.Headings }}
-    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'>
+    {{- /* Athenaeum: hx:md:hidden — the list is shared with the desktop
+         sidebar now, which never showed headings (the rail does, from xl). */ -}}
+    <ul class='hx:md:hidden hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'>
       {{- range . }}
         {{- with .Headings }}
           {{- range . -}}

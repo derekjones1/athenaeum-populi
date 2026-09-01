@@ -146,7 +146,7 @@ is regenerated from G3P
   question="The light-independent reactions of photosynthesis that convert carbon dioxide from the atmosphere into carbohydrates using the energy and reducing power of ATP and NADPH are known as the ________."
   answer="Calvin cycle"
   accept="Calvin-Benson cycle"
-  hint="It is also called the Calvin-Benson cycle, and its outdated name is the \"dark reaction.\""
+  hint="Its outdated name is the \"dark reaction,\" and it is named for the scientist who traced the path of carbon through it."
 >}}
 
 {{< textin

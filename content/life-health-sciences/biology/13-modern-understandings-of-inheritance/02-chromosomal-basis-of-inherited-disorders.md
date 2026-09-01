@@ -189,7 +189,7 @@ The number, size, shape, and banding pattern of chromosomes make them easily ide
   question="The chart cytologists create by cutting and pasting each of an individual's photographed chromosomes into an ordered arrangement is called a(n) ________."
   answer="karyogram"
   accept="karyograms|ideogram|ideograms"
-  hint="Another name for this chart is an ideogram."
+  hint="Geneticists read this chart to spot an extra, missing, or rearranged chromosome; its name ends in -gram."
 >}}
 
 ### Explain how nondisjunction leads to disorders in chromosome number

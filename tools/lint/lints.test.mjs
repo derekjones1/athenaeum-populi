@@ -1686,6 +1686,22 @@ test('textin shortcode rules', () => {
     'an answer printed whole inside its own question is a retype hazard',
   );
   assert(
+    lintHugo('{{< textin question="Name the organelle." answer="mitochondria" hint="The mitochondria make ATP." >}}', 'content/test.md')
+      .errors.some((e) => e.includes('appears as a whole-word run in the hint')),
+    'an answer printed whole inside its own hint is a retype hazard too (the hint is read by exactly the learner who does not know it)',
+  );
+  assert(
+    lintHugo('{{< textin question="Name the process." answer="biological nitrogen fixation" accept="BNF" hint="The section abbreviates this process BNF." >}}', 'content/test.md')
+      .errors.some((e) => e.includes('accept member "BNF" appears as a whole-word run in the hint')),
+    'an accept member printed in the hint is a retype hazard (22.5, August 2026)',
+  );
+  assert.equal(
+    lintHugo('{{< textin question="Name the organelle." answer="mitochondria" hint="It is the powerhouse of the cell." >}}', 'content/test.md')
+      .errors.filter((e) => e.includes('in the hint')).length,
+    0,
+    'a hint that does not print the answer passes',
+  );
+  assert(
     lintHugo('{{< textin question="Name it." answer="mitochondria" >}}', 'content/math/book/01-chapter/01-section.md')
       .errors.some((e) => e.includes('missing a hint')),
     'regular-section textin exercises require a hint',

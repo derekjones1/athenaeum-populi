@@ -58,8 +58,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 47,
       "upstreamSections": 208,
-      "localChapters": 20,
-      "mappedSections": 83,
+      "localChapters": 23,
+      "mappedSections": 96,
       "units": [
         {
           "index": 1,
@@ -906,6 +906,123 @@
       "moduleId": "m66532",
       "sourceTitle": "Perspectives on the Phylogenetic Tree",
       "moduleSha256": "129253102b75e9c3db31f16849ea466feac8f2b42e7ac061d48b3bf47e41dcd9"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/21-viruses/01-viral-evolution-morphology-and-classification.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "21.1",
+      "moduleId": "m66534",
+      "sourceTitle": "Viral Evolution, Morphology, and Classification",
+      "moduleSha256": "395990f246bff292202945688674ee534f3522e26ba4a95a48543c95b128f45b"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/21-viruses/02-virus-infections-and-hosts.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "21.2",
+      "moduleId": "m66535",
+      "sourceTitle": "Virus Infections and Hosts",
+      "moduleSha256": "78778bea97953e92b807ae387589973f6b76515196d51920ee5799671b0b2458"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/21-viruses/03-prevention-and-treatment-of-viral-infections.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "21.3",
+      "moduleId": "m66537",
+      "sourceTitle": "Prevention and Treatment of Viral Infections",
+      "moduleSha256": "e528e9a68db3464e80551e5e9328a98780452406996e2acc87d0a5027fee1a90"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/21-viruses/04-other-acellular-entities-prions-and-viroids.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "21.4",
+      "moduleId": "m66540",
+      "sourceTitle": "Other Acellular Entities: Prions and Viroids",
+      "moduleSha256": "b14a238e49101909a924021cd4aaaeabb7a5b575eb2f2909752dcd9279b0880f"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/01-prokaryotic-diversity.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "22.1",
+      "moduleId": "m66542",
+      "sourceTitle": "Prokaryotic Diversity",
+      "moduleSha256": "5662abe0a61af1e7b6353c3030982c474cd3ca2006e8c2ef681ab27deeba139d"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/02-structure-of-prokaryotes-bacteria-and-archaea.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "22.2",
+      "moduleId": "m66545",
+      "sourceTitle": "Structure of Prokaryotes: Bacteria and Archaea",
+      "moduleSha256": "341a4f3d33146be949f95bb59ea27e4b368158ba466fc294ed0dcc50c302fe1d"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/03-prokaryotic-metabolism.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "22.3",
+      "moduleId": "m66547",
+      "sourceTitle": "Prokaryotic Metabolism",
+      "moduleSha256": "081aea9ec3a002be608ecdf8b9d543b5bbb9676bd4ed2f21fcdd201d657ab187"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/04-bacterial-diseases-in-humans.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "22.4",
+      "moduleId": "m66548",
+      "sourceTitle": "Bacterial Diseases in Humans",
+      "moduleSha256": "53852ed0bb595ebace48fb30571c06996a23b37d4bbc0dc3d98b86ca54ee56e6"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/05-beneficial-prokaryotes.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "22.5",
+      "moduleId": "m66549",
+      "sourceTitle": "Beneficial Prokaryotes",
+      "moduleSha256": "90e650553a37ac2d2a18ce266a226b7e6706b74de341f9798429be1fe297b6ca"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/23-protists/01-eukaryotic-origins.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "23.1",
+      "moduleId": "m66552",
+      "sourceTitle": "Eukaryotic Origins",
+      "moduleSha256": "f9f36a4e5ccbc0a7e04535ab4129990dffa3322e1835f5c7f1da1a0a49bfb962"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/23-protists/02-characteristics-of-protists.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "23.2",
+      "moduleId": "m66554",
+      "sourceTitle": "Characteristics of Protists",
+      "moduleSha256": "db09ea4e0cdf6330d804bd6daa92bb836ca17999bfecc298ee14aac84795afce"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/23-protists/03-groups-of-protists.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "23.3",
+      "moduleId": "m66555",
+      "sourceTitle": "Groups of Protists",
+      "moduleSha256": "c7c0c1b6545a7aa4c38bf2f468c35c651d5d65fe58bc33af36083a5789cdf07c"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/23-protists/04-ecology-of-protists.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "23.4",
+      "moduleId": "m66556",
+      "sourceTitle": "Ecology of Protists",
+      "moduleSha256": "d009de4e88722aae7aed12ac8fd6ddf56ede7334457a163f87f882f6c4dd76c2"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

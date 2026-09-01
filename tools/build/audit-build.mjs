@@ -74,14 +74,22 @@ const filesWarnAt = 0.9;
 // an ordinary chapter commit (75 of 208 sections: 438 documents, 215.1 MiB;
 // the 94 biology pages carry a 239.1 KiB mean <aside> — 22.0 of their
 // 27.8 MiB — growing ~1.18 KiB per new section link on EVERY biology page,
-// with a 64.2 KiB mean outside the aside). At completion (208 sections + 47
-// chapter landings + the book root = 256 biology pages, aside ~429 KiB each)
-// biology projects to ~125 MiB; the finished math corpus holds ~187 MiB, and
-// a later biology knowledge-check campaign (~47 chapter pages at the same
-// aside) adds ~23 MiB — ~335 MiB projected. 400 MiB keeps ~19% headroom over
-// that; the duplication gates below (absolute bytes outside main#content)
-// still catch a doubled-chrome regression long before this total does.
-const maxTotalHtmlBytes = 400 * 1024 * 1024;
+// with a 64.2 KiB mean outside the aside). That projected ~335 MiB at book
+// completion and the cap went to 400.
+//
+// Re-based September 1, 2026, after sidebar.html stopped rendering the book
+// tree twice (one list now serves the phone drawer and the desktop sidebar).
+// Measured on the same 464-document corpus (23 biology chapters, 96
+// sections): 185.1 MiB total, down from 271.0; the 121 biology pages carry a
+// 159.4 KiB mean <aside> (was 299.5) and a 223.9 KiB mean page; the 333 math
+// pages a 109.9 KiB aside (was ~182 on Prealgebra). A biology aside now grows
+// ~0.63 KiB per new section link, so at completion (256 biology pages, aside
+// ~170 KiB, page ~235 KiB) biology holds ~59 MiB; math is finished at
+// 158.4 MiB; ~47 eventual biology knowledge-check pages add ~14 MiB —
+// ~231 MiB projected. 280 MiB keeps ~21% headroom over that. The duplication
+// gates below (absolute bytes outside main#content) still catch a
+// doubled-chrome regression long before this total does.
+const maxTotalHtmlBytes = 280 * 1024 * 1024;
 const maxPageBytes = 1.5 * 1024 * 1024;
 const maxPageElements = 35_000;
 // Duplicated non-content markup, as an ABSOLUTE mean per page.
@@ -99,11 +107,27 @@ const maxPageElements = 35_000;
 // Bytes outside main#content have neither weakness: the metric is absolute,
 // so it cannot be diluted by growth, and it counts every byte of chrome
 // wherever it sits. All three duplication shapes take it from 191.9 KiB to
-// ~368 KiB. 240 KiB is ~25% over today's mean and above the current per-page
-// maximum (233.9 KiB); a complete Precalculus lifts the mean to ~208 KiB,
-// still inside it.
+// ~368 KiB. 240 KiB was set at ~25% over a 192 KiB mean, when only the math
+// books existed and a complete Precalculus projected to ~208 KiB.
+//
+// Re-based September 1, 2026, twice in one day. Biology's 23rd chapter first
+// took the mean to 243.9 KiB, because a biology page's aside listed the WHOLE
+// book tree (23 landings + 96 sections = 238 links) twice — the phone drawer
+// list and the desktop list — at ~1.26 KiB per link per copy: 323 KiB of
+// chrome (aside 299.5) against 219.5 KiB on every other page. The cap went to
+// 320 for a few hours. Then layouts/_partials/sidebar.html was changed to
+// render ONE list for every width (the drawer's, with its drawer-only rows
+// hx:md:hidden and its two wrapper rows flattened by custom.css from md up),
+// and the same corpus measured 144.9 KiB mean chrome: biology pages 182.8
+// (aside 159.4), math pages 134.8, ~0.63 KiB per book link. The finished book
+// (255 links) puts a biology page near 194 KiB and the corpus mean, with the
+// eventual ~47 biology knowledge-check pages, near 161 KiB. 200 KiB is ~24%
+// over that projection, while the regression this gate exists for — the tree
+// emitted twice again — lands the mean near 266 KiB today and higher as the
+// book grows. Re-measure and raise deliberately, never by rounding up in
+// advance.
 const maxSidebarShare = 0.45;
-const maxMeanChromeBytes = 240 * 1024;
+const maxMeanChromeBytes = 200 * 1024;
 if (!existsSync(root)) throw new Error(`Built site not found: ${root} (run npm run build first)`);
 const built = walkFiles(root);
 const bytes = built.reduce((sum, file) => sum + statSync(file).size, 0);

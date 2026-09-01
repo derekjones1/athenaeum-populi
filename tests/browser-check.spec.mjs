@@ -887,11 +887,11 @@ test('every mediafigure image on both biology sections loads from its vendored m
 
 test('every rail and sidebar carries a contact mailto whose subject names the page', async ({ page }) => {
   // utils/contact-mailto.html: the "Questions or concerns?" link renders in
-  // the right rail (toc.html, xl+) and twice in the sidebar (sidebar.html:
-  // the phone drawer, and a tablet copy that custom.css hides at xl+ where
-  // the rail takes over) — same href in all three, subject pre-filled as
-  // "<Book> <section#> - <Title>" from the OpenStax front matter, so a
-  // reader's email arrives already saying where they were.
+  // the right rail (toc.html, xl+) and once in the sidebar (sidebar.html: a
+  // single <li> that serves the phone drawer and the md–xl sidebar, which
+  // custom.css hides at xl+ where the rail takes over) — same href in both,
+  // subject pre-filled as "<Book> <section#> - <Title>" from the OpenStax
+  // front matter, so a reader's email arrives already saying where they were.
   const cases = [
     ['/math/precalculus/05-trigonometric-functions/01-angles/',
       'mailto:contact@athenaeumpopuli.org?subject=Precalculus%205.1%20-%20Angles'],
@@ -906,7 +906,7 @@ test('every rail and sidebar carries a contact mailto whose subject names the pa
     await expect(railLink, `rail contact link on ${route}`).toHaveCount(1);
     await expect(railLink).toHaveAttribute('href', href);
     const sidebarLinks = page.locator('aside a[href^="mailto:"]');
-    await expect(sidebarLinks, `sidebar contact links on ${route}`).toHaveCount(2);
+    await expect(sidebarLinks, `sidebar contact links on ${route}`).toHaveCount(1);
     for (const link of await sidebarLinks.all()) {
       await expect(link).toHaveAttribute('href', href);
     }
@@ -1177,22 +1177,24 @@ test('the biology sidebar nests chapters under their unit, and a math sidebar st
   // <li>. Math collections have no units, so their sidebars must not gain a
   // label. Checked on a section page, where the whole book tree renders.
   await gotoBuiltPage(page, '/life-health-sciences/biology/02-the-chemical-foundation-of-life/02-water/');
-  // The aside renders the book tree twice — the phone drawer list and the
-  // desktop list — so one unit appears twice; only the desktop copy is
-  // visible at this viewport.
+  // The aside renders the book tree ONCE — one list serves the phone drawer
+  // and the desktop sidebar (sidebar.html) — so each unit appears exactly
+  // once in the DOM, and all five are visible at this viewport. A second
+  // copy here is the duplicated-chrome regression audit-build budgets for.
   const units = page.locator('aside .ap-sidebar-unit');
-  await expect(units).toHaveCount(8);
+  await expect(units).toHaveCount(5);
   const visible = page.locator('aside .ap-sidebar-unit:visible');
-  await expect(visible).toHaveCount(4);
+  await expect(visible).toHaveCount(5);
   await expect(visible.locator('> .ap-sidebar-unit-label')).toHaveText([
     'Unit 1: The Chemistry of Life',
     'Unit 2: The Cell',
     'Unit 3: Genetics',
     'Unit 4: Evolutionary Processes',
+    'Unit 5: Biological Diversity',
   ]);
   // Each unit's own list holds exactly the authored chapters of that unit,
   // in source order, and every chapter or section link in the book sits
-  // inside a unit — in both copies.
+  // inside a unit.
   const unit1Titles = await visible.nth(0).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
   expect(unit1Titles).toEqual(['The Study of Life', 'The Chemical Foundation of Life', 'Biological Macromolecules']);
   const unit2Titles = await visible.nth(1).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
@@ -1221,11 +1223,28 @@ test('the biology sidebar nests chapters under their unit, and a math sidebar st
     'The Evolution of Populations',
     'Phylogenies and the History of Life',
   ]);
-  // 20 chapter landings + 83 sections, rendered twice.
+  const unit5Titles = await visible.nth(4).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
+  expect(unit5Titles).toEqual(['Viruses', 'Prokaryotes: Bacteria and Archaea', 'Protists']);
+  // 23 chapter landings + 96 sections, rendered once.
   const bookLinks = page.locator('aside a[href^="/life-health-sciences/biology/"]:not([href="/life-health-sciences/biology/"])');
   const insideUnit = page.locator('aside .ap-sidebar-unit a[href^="/life-health-sciences/biology/"]');
-  expect(await bookLinks.count()).toBe(206);
-  expect(await insideUnit.count()).toBe(206);
+  expect(await bookLinks.count()).toBe(119);
+  expect(await insideUnit.count()).toBe(119);
+  // The desktop sidebar is the drawer list with its drawer-only rows hidden:
+  // the shelf entry and the book's "Overview" row wrap the tree as
+  // .ap-sidebar-shell (row hidden, indentation flattened from md up), and
+  // the other shelves, Home, and About are hx:md:hidden. So at 1280 the first
+  // visible sidebar link is the first chapter, sitting where the old desktop
+  // list drew it — the unit's own indent inside the aside's 1rem padding —
+  // and no shell row or foreign shelf shows.
+  const visibleTexts = (await page.locator('aside.hextra-sidebar-container a:visible').allInnerTexts()).map((t) => t.trim());
+  expect(visibleTexts[0]).toBe('The Study of Life');
+  expect(visibleTexts).not.toContain('Overview');
+  expect(visibleTexts).not.toContain('Home');
+  expect(visibleTexts).not.toContain('Math');
+  const firstChapter = await page.locator('aside.hextra-sidebar-container a:visible').first().boundingBox();
+  const aside = await page.locator('aside.hextra-sidebar-container').boundingBox();
+  expect(firstChapter.x - aside.x).toBe(40);
   // The label is text, not a control: nothing to focus, nothing to click.
   await expect(page.locator('aside .ap-sidebar-unit-label a, aside .ap-sidebar-unit-label button')).toHaveCount(0);
 

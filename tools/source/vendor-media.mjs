@@ -114,6 +114,35 @@ export function stemOf(source) {
   return path.basename(source).replace(/\.[^.]+$/, '');
 }
 
+/** Key every referenced image by a stem unique within the run. Two different
+ * source files can share a bare stem (m66555 references both
+ * Figure_B23_03_07.jpg and Figure_B23_03_07.png, two unrelated figures); such a
+ * stem gets its lower-cased extension appended (`Figure_B23_03_07-jpg`,
+ * `Figure_B23_03_07-png`) so both survive in the manifest and on disk. A stem
+ * referenced from one file only keeps its bare form, however many modules
+ * reference it. */
+export function assignStems(images) {
+  const sourcesByStem = new Map();
+  for (const image of images) {
+    const stem = stemOf(image.source);
+    if (!sourcesByStem.has(stem)) sourcesByStem.set(stem, new Set());
+    sourcesByStem.get(stem).add(image.source);
+  }
+  const seen = new Map();
+  for (const image of images) {
+    const bare = stemOf(image.source);
+    const stem = sourcesByStem.get(bare).size > 1
+      ? `${bare}-${path.extname(image.source).slice(1).toLowerCase()}`
+      : bare;
+    const prior = seen.get(stem);
+    if (prior && prior.source !== image.source) {
+      throw new Error(`two different files share the stem ${stem}: ${prior.source} and ${image.source}`);
+    }
+    if (!prior) seen.set(stem, image);
+  }
+  return seen;
+}
+
 /** Variant widths for a source of width W: ≤800 and ≤1600, never upscaled, deduped. */
 export function variantWidths(sourceWidth) {
   return [...new Set(TARGET_WIDTHS.map((w) => Math.min(w, sourceWidth)))].sort((a, b) => a - b);
@@ -176,15 +205,7 @@ function main(argv) {
   const manifestPath = path.join(repositoryRoot, 'data/media', `${options.book}.json`);
   const manifest = readManifest(manifestPath, { book: options.book, bundle: book.bundleKey, commit: bundle.commit });
   const outDir = path.join(repositoryRoot, 'static/media', options.book);
-  const seen = new Map();
-  for (const image of images) {
-    const stem = stemOf(image.source);
-    const prior = seen.get(stem);
-    if (prior && prior.source !== image.source) {
-      throw new Error(`two different files share the stem ${stem}: ${prior.source} and ${image.source}`);
-    }
-    if (!prior) seen.set(stem, image);
-  }
+  const seen = assignStems(images);
   console.log(`${seen.size} image(s) referenced by ${new Set(images.map((i) => i.module)).size} module(s)`);
   if (options.dryRun) {
     for (const [stem, image] of seen) console.log(`  ${stem}  ←  ${image.source}  (${image.module})`);

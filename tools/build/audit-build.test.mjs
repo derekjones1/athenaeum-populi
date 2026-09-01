@@ -360,9 +360,14 @@ try {
   //
   // The lesson body is deliberately large so the control page's share stays
   // inside its own budget — otherwise the share gate fires on the fixture and
-  // proves nothing about the chrome gate.
-  const nav = `<a href="/s/">${'section '.repeat(40)}</a>`.repeat(400); // ~132 KiB
-  const lesson = `<p>${'content '.repeat(40_000)}</p>`; // ~312 KiB, one element
+  // proves nothing about the chrome gate. The single sidebar is sized like a
+  // real biology aside (~160 KiB at 23 chapters once the tree renders once,
+  // September 2026), under the 200 KiB budget on its own and well over it
+  // once duplicated. Keep it in step with maxMeanChromeBytes: a fixture that
+  // doubles to less than the budget proves nothing (the 2025 fixture, 132 KiB,
+  // doubled to 264 and stopped tripping a 320 KiB budget).
+  const nav = `<a href="/s/">${'section '.repeat(40)}</a>`.repeat(485); // ~160 KiB
+  const lesson = `<p>${'content '.repeat(80_000)}</p>`; // ~624 KiB, one element
   const page = (chrome) => `<!doctype html><head></head>${chrome}<main id="content">${lesson}</main>`;
 
   prepare('<p>placeholder</p>');

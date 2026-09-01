@@ -52,7 +52,7 @@ advertising, or learner-data store.
 
 The completed Prealgebra 2e, Elementary Algebra 2e, and Intermediate Algebra
 2e books remain reviewed Markdown, not generated output. A committed lock and
-357-section map under `data/openstax/` connect each page to a stable CNXML
+370-section map under `data/openstax/` connect each page to a stable CNXML
 module in the official OpenStax source repository. The upstream checkout is a
 sparse, ignored cache under `sources/openstax/`.
 
@@ -77,6 +77,27 @@ that nests units, a `units` list (index, title, chapter numbers) that
 reads — matched to the book by `contentPath` — to nest the book's chapters
 under "Unit N: <title>" labels, so the sidebar's hierarchy for Biology is
 unit → chapter → section without the URL or directory layout changing.
+
+That sidebar renders one list for every width. Upstream Hextra emits two —
+a phone-drawer list (the top-level menu entries, with the current book's
+tree expanded beneath its shelf) hidden from md up, and a desktop list (the
+book tree alone) hidden below md — so every page shipped its book tree
+twice, ~1.26 KiB per link per copy; at 23 biology chapters that was 300 KiB
+of `<aside>` per page, growing ~2.5 KiB on every page of the book for each
+new section, and it drove both `audit-build` budgets. The override keeps
+only the drawer list: the rows only the drawer shows (the other shelves,
+Home, About, the in-page heading list under the active item) carry
+`hx:md:hidden`, and the two rows that wrap the tree — the shelf entry and
+the book's own "Overview" row — carry `.ap-sidebar-shell`, which
+`assets/css/custom.css` hides and un-indents from md up (48rem, the
+breakpoint the theme's own `sidebar.css` and `menu.js` use for the drawer),
+so the desktop reader sees exactly the tree the second list used to draw.
+The theme's `sidebar.js` needs no change: collapsible buttons still sit in
+their `<li>`, and its scroll-to-active already picks the first active item
+with a visible box. `audit-build`'s mean-chrome budget (200 KiB) is the
+gate against the tree coming back twice, and the browser suite pins the
+shape (five units and 119 book links in the DOM on a biology page, the
+first chapter as the first visible link, one sidebar contact link).
 
 ## Media and text-answer components
 

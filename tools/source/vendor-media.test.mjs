@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { extractModuleImages, kindOf, parseArgs, plainXmlText, stemOf, variantWidths } from './vendor-media.mjs';
+import { assignStems, extractModuleImages, kindOf, parseArgs, plainXmlText, stemOf, variantWidths } from './vendor-media.mjs';
 
 test('variantWidths never upscales and dedupes', () => {
   assert.deepEqual(variantWidths(430), [430]);
@@ -59,4 +59,17 @@ test('kindOf reads photo from a JPEG source and diagram from anything else', () 
   assert.equal(kindOf('media/Figure_01_01_04.JPEG'), 'photo');
   assert.equal(kindOf('media/Figure_01_01_03.png'), 'diagram');
   assert.equal(kindOf('media/Figure_01_02_17abcd.gif'), 'diagram');
+});
+
+test('assignStems keeps a bare stem unless two different files share it', () => {
+  const images = [
+    { module: 'm1', source: 'media/Figure_01_01_01.jpg' },
+    { module: 'm2', source: 'media/Figure_01_01_01.jpg' }, // same file, second module
+    { module: 'm3', source: 'media/Figure_B23_03_07.jpg' },
+    { module: 'm3', source: 'media/Figure_B23_03_07.png' },
+  ];
+  const seen = assignStems(images);
+  assert.deepEqual([...seen.keys()], ['Figure_01_01_01', 'Figure_B23_03_07-jpg', 'Figure_B23_03_07-png']);
+  assert.equal(seen.get('Figure_01_01_01').module, 'm1');
+  assert.equal(seen.get('Figure_B23_03_07-png').source, 'media/Figure_B23_03_07.png');
 });

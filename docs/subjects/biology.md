@@ -302,6 +302,11 @@ Formerly called blue-green algae, these (a) cyanobacteria … (credit a: modific
 - `src` is `biology/<stem>` where the stem is the source file name without
   its extension (the manifest key). Keep the source stem; it is how a file
   traces back to its module.
+  When two DIFFERENT source files share a stem (m66555 references both
+  `Figure_B23_03_07.jpg` and `Figure_B23_03_07.png`), `vendor-media` keys
+  each by stem plus lower-cased extension — `Figure_B23_03_07-jpg` and
+  `Figure_B23_03_07-png` — so select figures by the manifest's `module`
+  field, never by guessing the stem from the figure number.
 - The caption is the source caption, credit line included and verbatim
   (the credit is a license obligation, not decoration).
 - The first figure on a page may take `eager="true"`; every other figure is
@@ -404,7 +409,11 @@ meaning becomes the prompt, the term the answer.
   `ribozyme` must not pass for `ribosome`.
 - The answer must not appear in the question — the lint refuses the retype
   hazard — so a prompt for `cell theory` cannot say "the theory of cells".
-  Rephrase the meaning or pick a different term.
+  Rephrase the meaning or pick a different term. The same rule covers the
+  hint (the lint checks both since August 31, 2026): a hint that prints the
+  answer or an accept member (22.5's "The section abbreviates this process
+  BNF" beside `accept="BNF"`) hands the item to exactly the learner who
+  opens it — the unit-5 sweep found ten such hints on shipped pages.
 - Never a textin whose answer is a number, a formula, or a sentence: numbers
   are `fillin` territory, sentences are `selfcheck`.
 
@@ -488,18 +497,35 @@ Record every item in the source ledger with its exercise or definition id.
 
 ## Budgets to watch as the book grows
 
-- **HTML total.** `tools/build/audit-build.mjs` caps the built HTML at 400 MiB,
-  raised from 220 on 2026-08-31 when 75 authored sections measured 215.1 MiB.
-  The driver is the sidebar, not the prose: each biology page's `<aside>` was
-  239.1 KiB (22.0 of biology's 27.8 MiB) and grows ~1.18 KiB per new section
-  link on every biology page, while the mean outside the aside is 64.2 KiB.
-  The finished book (256 biology pages, aside ~429 KiB) projects to ~125 MiB
-  of biology + ~187 MiB math + ~23 MiB of eventual knowledge checks ≈ 335 MiB;
-  400 keeps ~19% headroom. The full projection lives in the comment above
-  `maxTotalHtmlBytes`. If the cap trips again, re-measure the aside mean and
-  raise deliberately with the new numbers; never by rounding up in advance.
+- **HTML total.** `tools/build/audit-build.mjs` caps the built HTML at 280 MiB.
+  The driver is the sidebar, not the prose: every biology page's `<aside>`
+  lists the whole book. Until 2026-09-01 that tree was rendered twice per
+  page (phone drawer + desktop list), the aside was 299.5 KiB at 23 chapters
+  and growing ~2.5 KiB per new section on every biology page, and the cap had
+  to go 220 → 400. `layouts/_partials/sidebar.html` now renders one list for
+  every width (drawer-only rows `hx:md:hidden`, the two wrapper rows flattened
+  by `.ap-sidebar-shell` in `custom.css` from md up): the same corpus measures
+  185.1 MiB (was 271.0), a biology aside 159.4 KiB growing ~0.63 KiB per new
+  section link. The finished book (256 biology pages, aside ~170 KiB) projects
+  to ~59 MiB of biology + 158 MiB math + ~14 MiB of eventual knowledge checks
+  ≈ 231 MiB; 280 keeps ~21% headroom. The full projection lives in the comment
+  above `maxTotalHtmlBytes`. If the cap trips again, re-measure the aside mean
+  and raise deliberately with the new numbers; never by rounding up in
+  advance.
 - **Sidebar share** (`maxSidebarShare 0.45`) is per page: the biology sidebar
   lists every chapter of the book, so re-check the audit line after each unit.
+- **Chrome per page** (`maxMeanChromeBytes 200 KiB`, the duplicated-chrome
+  gate) is the cap that guards the single-list sidebar: the book tree is
+  rendered once per page at ~0.63 KiB per link, so every section added grows
+  every biology page's chrome by ~0.6 KiB. Measured September 1, 2026 at 23
+  chapters, after the fix: biology pages 182.8 KiB (aside 159.4), math pages
+  134.8, corpus mean 144.9 (was 243.9 with the tree doubled); the finished
+  book projects to ~161 KiB mean, 200 keeps ~24% headroom, and the tree
+  emitted twice again lands the mean near 266. The browser suite pins the
+  shape too (`the biology sidebar nests chapters under their unit`: five
+  units and 119 book links in the DOM, first visible link the first chapter).
+  The rationale and projection live in the comment above
+  `maxMeanChromeBytes`.
 - **Browser suite time.** `tests/figures.spec.mjs` walks every route; its
   timeout scales with the route count, but watch its wall time in the
   browser-suite tail after each chapter.

@@ -121,7 +121,7 @@ b and c
   question="The rate at which a specific allele appears within a population is called its ________."
   answer="allele frequency"
   accept="gene frequency|allele frequencies|gene frequencies"
-  hint="The Key terms list gives 'gene frequency' as another name for the same rate."
+  hint="Population geneticists track how this rate shifts from one generation to the next; the Key terms list gives it a second, gene-based name."
 >}}
 
 ### Define the Hardy-Weinberg principle and discuss its importance

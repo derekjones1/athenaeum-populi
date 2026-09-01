@@ -187,7 +187,7 @@ alleles
   question="Reciprocal physical exchange of chromosome segments between paired chromosomes during meiosis is a process scientists call ________."
   answer="homologous recombination"
   accept="crossing over"
-  hint="Frans Janssens's 1909 observations of chiasmata were the first evidence of it; today it is also called “crossing over.”"
+  hint="Frans Janssens's 1909 observations of chiasmata were the first evidence of it; Sturtevant used its frequency between genes to build the first chromosome map."
 >}}
 
 {{< multiplechoice

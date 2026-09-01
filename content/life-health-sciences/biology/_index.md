@@ -115,14 +115,29 @@ closes with how plants and animals are built and how ecosystems work.
   data under maximum parsimony, and how horizontal gene transfer and
   genome fusion complicate the classic tree of life into webs and rings.
 
+### Unit 5: Biological Diversity
+
+- **Viruses** — how viruses were discovered, are built, and are classified,
+  the lytic and lysogenic replication cycles and the plant and animal
+  diseases viruses cause, vaccines and antiviral drugs, and the acellular
+  prions and viroids.
+- **Prokaryotes: Bacteria and Archaea** — the origins and extremophile
+  diversity of prokaryotes, how bacterial and archaeal cells are built and
+  differ, the nutritional types and the carbon and nitrogen cycles, the
+  bacterial diseases of history and today, and the prokaryotes that fix
+  nitrogen, share our bodies, make our food, and clean up pollution.
+- **Protists** — the endosymbiotic origin of eukaryotes, the structural and
+  metabolic variety of protists, the six eukaryotic supergroups and their
+  representative members, and the roles of protists as producers,
+  decomposers, and parasites.
+
 ## Planned contents
 
 Biology 2e has eight units and 47 chapters. Beyond the chapters listed
 above, the following are still to come, in this order:
 
-- **Unit 5: Biological Diversity** — Viruses; Prokaryotes: Bacteria and
-  Archaea; Protists; Fungi; Seedless Plants; Seed Plants; Introduction to
-  Animal Diversity; Invertebrates; Vertebrates.
+- **Unit 5: Biological Diversity** (remainder) — Fungi; Seedless Plants;
+  Seed Plants; Introduction to Animal Diversity; Invertebrates; Vertebrates.
 - **Unit 6: Plant Structure and Function** — Plant Form and Physiology; Soil
   and Plant Nutrition; Plant Reproduction.
 - **Unit 7: Animal Structure and Function** — The Animal Body: Basic Form

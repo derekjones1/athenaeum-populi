@@ -203,7 +203,7 @@ those traits that allowed them to better use the resources will increase in the 
   question="The more prolific reproduction of individuals with favorable traits that survive environmental change because of those traits, leading to evolutionary change, is called ________."
   answer="natural selection"
   accept="survival of the fittest"
-  hint="Darwin also called it “survival of the fittest.”"
+  hint="Darwin and Wallace proposed it as the mechanism of adaptive evolution; Darwin's alternative phrase for it names 'the fittest.'"
 >}}
 
 ### Define adaptation

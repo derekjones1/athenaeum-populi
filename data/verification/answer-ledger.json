@@ -5,6 +5,14 @@
    "verdict": "ok",
    "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit"
   },
+  "000f05165508518a": {
+   "verdict": "ok",
+   "note": "Review Q (eip-364), keyed A matches source solution and the module's horizontal/vertical transmission definitions.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0014cfbdce3d179f": {
    "verdict": "ok"
   },
@@ -217,6 +225,14 @@
   "018939c235e7b79d": {
    "verdict": "ok"
   },
+  "0192efc5db4981f0": {
+   "verdict": "ok",
+   "note": "Summary-derived cloze text-in, blanking 'common ancestor' from the section summary's second sentence; disclosed in footer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "01940fa70f4ced39": {
    "verdict": "ok"
   },
@@ -248,6 +264,14 @@
     "result": "agrees"
    }
   },
+  "01b6de7f5f8022b1": {
+   "verdict": "ok",
+   "note": "Review Question eip-197, keyed C (Eukaryote). Confirmed against the Mitochondria subsection's Monocercomonoides passage and characteristics list item 1 (nucleus is necessary and sufficient to define a eukaryote). Erratum: source option b prints 'Archea', a misspelling of 'Archaea' (the domain named throughout the module and in option order elsewhere); corrected on the page and disclosed in the footer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "01b7b2105065a098": {
    "verdict": "ok"
   },
@@ -263,6 +287,14 @@
   },
   "01bd4be2b4756fb3": {
    "verdict": "ok"
+  },
+  "01c13b39c3b4a368": {
+   "verdict": "ok",
+   "note": "21.4 viroid textin: hint reworded; answer per glossary",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "01c1ecc1fc5e8a1d": {
    "verdict": "ok"
@@ -801,6 +833,14 @@
    "verdict": "ok",
    "note": "C=(5/9)(F-32) at C=40: F = 40*9/5 + 32 = 72+32 = 104 degrees Fahrenheit."
   },
+  "050713da5721886b": {
+   "verdict": "ok",
+   "note": "m66548 Review Question eip-538: source solution D = Yersinia pestis; the sylvatic-plague/American-Southwest detail in the Bubonic Plagues subsection supports keying the New Mexico scenario to Y. pestis.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "05083a6739e26809": {
    "verdict": "ok"
   },
@@ -1057,6 +1097,14 @@
    "verdict": "ok",
    "note": "4p=-12->p=-3; directrix x=h-p=-1-(-3)=2; matches source key d:x=2."
   },
+  "06ce533ef6b666d4": {
+   "verdict": "ok",
+   "note": "Glossary recall, term-00002 'plankton' (fs-idp134719376).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "06dd5dea83edb35a": {
    "verdict": "ok"
   },
@@ -1116,6 +1164,14 @@
   "073616ae5c2e1e41": {
    "verdict": "ok",
    "note": "sinα=-4/5,QIV ⇒ cosα=3/5 (positive, QIV). α/2 is in QII (since 270°<α<360° ⇒ 135°<α/2<180°), so cosine is negative: cos(α/2)=-√((1-3/5)/2)=-√(1/5)=-2/√5 (node-checked, matches source's -2/√5)."
+  },
+  "073cf09eaee77fd6": {
+   "verdict": "ok",
+   "note": "23.3 Archaeplastida textin: plural accept added; answer per section prose",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0742dc944983e42c": {
    "verdict": "ok"
@@ -1185,6 +1241,10 @@
   },
   "07c87ac5453380b7": {
    "verdict": "ok"
+  },
+  "07d00864bfb9a448": {
+   "verdict": "ok",
+   "note": "22.3 soybean selfcheck: '(ex. Rhizobium)' restored from the source solution"
   },
   "07d12b64ab0cabb7": {
    "verdict": "ok"
@@ -1740,6 +1800,14 @@
   "0c08809f341d89f1": {
    "verdict": "ok"
   },
+  "0c0aad6a61ad31e5": {
+   "verdict": "ok",
+   "note": "22.4 glossary recall: 'CA-MRSA' meaning transcribed as the prompt, abbreviation as answer; accept includes 'community-associated MRSA,' the compound form used in the body prose.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0c0b189745892c51": {
    "verdict": "ok"
   },
@@ -1818,6 +1886,14 @@
   },
   "0c71ea119b27b592": {
    "verdict": "ok"
+  },
+  "0c72e06287f74e0f": {
+   "verdict": "ok",
+   "note": "22.4 foodborne disease textin: hint reworded to drop 'food poisoning' accept member; answer per glossary",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0c74a8a68c27dc7e": {
    "verdict": "ok"
@@ -1950,6 +2026,14 @@
   },
   "0d45085a4362f35a": {
    "verdict": "ok"
+  },
+  "0d4d2238a2f05e94": {
+   "verdict": "ok",
+   "note": "m66548 Review Question fs-idp17951280: source solution D = 'All statements are correct'; each of the three prior options (cystic fibrosis, dental plaque/catheters, open wounds/burns) is stated in the Biofilms and Disease subsection.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0d4f441a162aeb61": {
    "verdict": "ok",
@@ -2119,6 +2203,14 @@
    "verdict": "ok",
    "note": "Table (x=1,3,5,7,9,11; y=1,9,28,65,125,216) grows at rate 6.75/unit between x=1 and x=5 but 37.75/unit between x=7 and x=11 — clearly accelerating, not constant — so 'Nonlinear', matching the declared answer."
   },
+  "0e52aba23594cb31": {
+   "verdict": "ok",
+   "note": "Locally-written textin built strictly from the module's own sentence 'Helical capsids are long and cylindrical.'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0e566211c38cfc06": {
    "verdict": "ok"
   },
@@ -2242,6 +2334,14 @@
    "verdict": "ok",
    "note": "Algebraic exercise 9 (fs-id1165135190857): 6x^2-17x+12 = (2x-3)(3x-4); expression reduces to 3x-4 for x!=3/2; at x=3/2, 3(1.5)-4=0.5=1/2; matches CNXML solution 1/2."
   },
+  "0f5a8b5dd1c7a6a2": {
+   "verdict": "ok",
+   "note": "21.3 NOT-used MC: distractor Phage therapy replaced by Acyclovir (erratum 176); key Antibiotics per source solution C",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0f5c711b79c5a80e": {
    "verdict": "ok"
   },
@@ -2263,6 +2363,14 @@
   },
   "0fa1759de9a7d9a6": {
    "verdict": "ok"
+  },
+  "0fa87c80b0e255b4": {
+   "verdict": "ok",
+   "note": "22.3 large amounts cloze: singular accept added; summary sentence",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0fbcbea388f240b3": {
    "verdict": "ok"
@@ -2350,6 +2458,10 @@
   },
   "10624fa736cf4549": {
    "verdict": "ok"
+  },
+  "1064e2a4e7364e5f": {
+   "verdict": "ok",
+   "note": "CT2 (fs-idp90900816): model answer is the CNXML solution verbatim ('environmental conditions on Earth were extreme: high temperatures, lack of oxygen, high radiation')."
   },
   "106d4b1d826851ca": {
    "verdict": "ok"
@@ -2629,6 +2741,10 @@
   "125b85810a047134": {
    "verdict": "ok"
   },
+  "1261da59b868fe59": {
+   "verdict": "ok",
+   "note": "m66540 exercise fs-idp91453024, solution transcribed near-verbatim as the model answer."
+  },
   "12748020a56590fd": {
    "verdict": "ok"
   },
@@ -2815,6 +2931,14 @@
   },
   "139ae6dabc637861": {
    "verdict": "ok"
+  },
+  "13a63a53787ee69c": {
+   "verdict": "ok",
+   "note": "Glossary recall (hyperplasia, fs-idm56235312), meaning-to-term textin.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "13b5af65e72a7950": {
    "verdict": "ok",
@@ -3120,6 +3244,10 @@
   "1645faf27d0e3f63": {
    "verdict": "ok"
   },
+  "1647d96be7e2306e": {
+   "verdict": "ok",
+   "note": "Visual Connection (fs-idp121757008, keyed to fig-ch22_01_07): model answer is the CNXML solution paragraph verbatim (matrix/outer layer protects inner bacteria; proximity facilitates lateral gene transfer of resistance genes; an exo-enzyme-producing bacterium may protect neighbors)."
+  },
   "164fec702d0d88b7": {
    "verdict": "ok"
   },
@@ -3304,6 +3432,14 @@
     "result": "agrees"
    }
   },
+  "179772b7cf6ddc56": {
+   "verdict": "ok",
+   "note": "Review Q (fs-idm193317248), keyed D matches source solution and the bacteriophage definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "179a054e420a4df2": {
    "verdict": "ok",
    "note": "m66487 solution fs-id2010867 (pedigree individuals 1/2/3) matches page verbatim. Re-derived from the figure's own alt text (fig-ch12_02_03): individual 1 = affected first-gen father = aa; individual 2 = unaffected first-gen mother who must carry a because an affected child appears = Aa; individual 3 = unaffected husband of an affected (aa) woman whose child is also affected (aa), so he must supply an a allele = Aa. All three match the solution. CHECKS clauses restate the solution with no added claim."
@@ -3481,6 +3617,14 @@
    "verdict": "ok",
    "note": "(y+4)^2/100-(x-3)^2/64=1: center read directly from shifted binomials, (3,-4); matches source Try It 5 (kept 3 of its 5 requested quantities)."
   },
+  "18f362bf6776d006": {
+   "verdict": "ok",
+   "note": "Review Question fs-idm97968528; source solution C = chemotrophs, verified against the glossary definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "18f7089a096baf60": {
    "verdict": "ok"
   },
@@ -3505,14 +3649,6 @@
   "19337a947daadf9c": {
    "verdict": "ok",
    "note": "Glossary recall (definition id fs-idp29655616, term 'molecular systematics'); prompt reworded from 'molecular evidence' to 'DNA sequence data' to avoid the answer's own word 'molecular' appearing in the question.",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "193807a0664ae254": {
-   "verdict": "ok",
-   "note": "Glossary recall, definition fs-id2200726 (term 'oncogene'). Prompt is the meaning paraphrased away from the answer word; accept list adds the plural.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -3869,6 +4005,14 @@
   },
   "1bbbee5ef7118c10": {
    "verdict": "ok"
+  },
+  "1bbef61fc069b2b8": {
+   "verdict": "ok",
+   "note": "Visual Connection (fs-idm8433360), solution C — the gametophyte is haploid, not diploid, per the diagram's own 1n/2n labels.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "1bc627d3bcbbff18": {
    "verdict": "ok"
@@ -4263,6 +4407,14 @@
    "verdict": "ok",
    "note": "TI8a: piecewise graph (Figure 18 analog) reconstructed with breaks only at x=1 and x=3 (open circles at both), so continuous on (-inf,1)U(1,3)U(3,inf); matches source Try It solution's stated continuity intervals exactly."
   },
+  "1ebf08dbecaf58a6": {
+   "verdict": "ok",
+   "note": "Review Question fs-idm178498368, solution D (archaea).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "1ebf0d6b38cc5340": {
    "verdict": "ok"
   },
@@ -4391,6 +4543,14 @@
   "1fe9a5ab1179d7a7": {
    "verdict": "ok"
   },
+  "1ff3ec639a3c4a4b": {
+   "verdict": "ok",
+   "note": "Summary-derived cloze; blanks 'electron microscope' from the section's own Summary sentence.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "1ff60a84655237ba": {
    "verdict": "ok"
   },
@@ -4419,14 +4579,6 @@
   },
   "202bc150e8cc4a5c": {
    "verdict": "ok"
-  },
-  "20304b0fd9585eee": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "2030dd1bd58e6d7a": {
    "verdict": "ok"
@@ -4732,6 +4884,14 @@
   "2232bc85c8d765ee": {
    "verdict": "ok"
   },
+  "22366484c198acf3": {
+   "verdict": "ok",
+   "note": "m66549 exercise fs-idm36358320; source solution B = 'the use of prokaryotes to clean up pollutants', confirmed against section's bioremediation definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "223d8d2050326d65": {
    "verdict": "ok"
   },
@@ -4910,6 +5070,14 @@
   },
   "23925c653954782b": {
    "verdict": "ok"
+  },
+  "23934545ea2815b0": {
+   "verdict": "ok",
+   "note": "Review Question fs-idm27200192; source solution A = 'ammonia is released during the decomposition of nitrogen-containing organic compounds,' verified against the ammonification definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "2393913dd3fbe7d2": {
    "verdict": "ok",
@@ -5162,6 +5330,14 @@
   "25800d96f7981e39": {
    "verdict": "ok"
   },
+  "2585106da52993c2": {
+   "verdict": "ok",
+   "note": "m66549 exercise eip-717; source solution B = 'Lowering the pH to kill pathogenic bacteria', shipped as printed (defensible on source's own terms).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2589c931ec63df35": {
    "verdict": "ok",
    "note": "F=(9/5)C+32 at C=35: (9/5)(35)+32 = 63+32 = 95 degrees Fahrenheit."
@@ -5278,6 +5454,14 @@
   "2693ca350a8e6f9e": {
    "verdict": "ok"
   },
+  "2696c120de238cc0": {
+   "verdict": "ok",
+   "note": "Review Q (fs-idm150416560), keyed C matches source solution and reverse-transcriptase paragraph.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2699998e426a3fba": {
    "verdict": "ok"
   },
@@ -5332,6 +5516,14 @@
   },
   "26fada62482b92ca": {
    "verdict": "ok"
+  },
+  "27037a2d194381a2": {
+   "verdict": "ok",
+   "note": "m66549 glossary fs-idm34673072 'nodule'; prompt paraphrases the definition without using the term, answer matches, accept covers plural.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "27122803e2c856b8": {
    "verdict": "ok"
@@ -5648,6 +5840,14 @@
   "2948d44a232b6df6": {
    "verdict": "ok"
   },
+  "294b8f70908c5988": {
+   "verdict": "ok",
+   "note": "Glossary recall (gall, fs-idm131249840), meaning-to-term textin; accept covers the plural.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2953baeffb229e06": {
    "verdict": "ok"
   },
@@ -5705,6 +5905,14 @@
   },
   "2a23d2a1fa578924": {
    "verdict": "ok"
+  },
+  "2a255848578b583d": {
+   "verdict": "ok",
+   "note": "Glossary recall, fs-idm78553328 (ammonification).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "2a25cf6b3904d7d7": {
    "verdict": "ok"
@@ -5965,6 +6173,14 @@
   "2c5b4421aaf9107a": {
    "verdict": "ok"
   },
+  "2c5c3ae9c51c6272": {
+   "verdict": "ok",
+   "note": "Glossary recall, term-00001 'test' (fs-idp84644448).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2c5f1d472436a7f6": {
    "verdict": "ok"
   },
@@ -6170,6 +6386,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "2dfea727575945ae": {
+   "verdict": "ok",
+   "note": "Critical Thinking eip-353, solution eip-838, preamble kept, transcribed verbatim."
   },
   "2e032bbd4c2bc205": {
    "verdict": "ok"
@@ -6595,6 +6815,14 @@
    "verdict": "ok",
    "note": "m66473 critical-thinking solution fs-idp36862384 (grey wolf/Yellowstone). Page model answer matches verbatim. All four CHECKS clauses (apex predators, blocking sunlight prevents photosynthesis, kills many plants, wolf population decreases) restate the solution with no added claim."
   },
+  "311186ece2f2791f": {
+   "verdict": "ok",
+   "note": "Glossary recall (vertical transmission, fs-idm185025760), meaning-to-term textin.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "311e526c1cb3fb3e": {
    "verdict": "ok"
   },
@@ -6641,6 +6869,14 @@
   },
   "3170d80154766d64": {
    "verdict": "ok"
+  },
+  "3175c312e55f3974": {
+   "verdict": "ok",
+   "note": "Glossary recall: resuscitation, meaning transcribed from the glossary definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "317a6bb25533e1b4": {
    "verdict": "ok"
@@ -6778,6 +7014,15 @@
   "322f874fdd9d211f": {
    "verdict": "ok"
   },
+  "3232adb13d918a06": {
+   "verdict": "ok",
+   "note": "Summary-derived cloze textin from section.summary paragraph 2 ('...help train our immune systems to function properly'); blanked phrase is 2 words, not defined in apposition, answer not present elsewhere in prompt.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "key stands: summary says 'help train our immune systems'; the singular was already in accept"
+   }
+  },
   "3234e78f5f90861e": {
    "verdict": "ok"
   },
@@ -6831,6 +7076,14 @@
   },
   "326cdaaa76620370": {
    "verdict": "ok"
+  },
+  "326eb659ead814b4": {
+   "verdict": "ok",
+   "note": "21.2 not-true MC: key C per module's cytopathic-effects sentence (source key D contradicted by Egress paragraph, erratum 185); also-false option A replaced with the module's own lysogeny sentence",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "326f048091c6f4c2": {
    "verdict": "ok",
@@ -6888,6 +7141,15 @@
   },
   "330dea4e1d1db6ce": {
    "verdict": "ok"
+  },
+  "331f6a7428af1aab": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "key 'virus core' is the module's glossary term; 'core' added to accept so the natural short form grades correct"
+   }
   },
   "332273e176e0ce33": {
    "verdict": "ok",
@@ -7296,6 +7558,14 @@
     "result": "agrees"
    }
   },
+  "3689e7a96b36b4d4": {
+   "verdict": "ok",
+   "note": "Review Question fs-idm38396544, solution B (exterior to the cell membrane).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "368bf1899fd53f3f": {
    "verdict": "ok"
   },
@@ -7355,6 +7625,14 @@
   "36e9a61419f401e3": {
    "verdict": "ok"
   },
+  "36ebc46c378796d5": {
+   "verdict": "ok",
+   "note": "21.1 VC MC: hint reworded (pointed at the wrong paragraph); key 'Glycoproteins help the virus attach' matches fs-idm... source solution D",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "36f4a3836d967565": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 818): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -7413,6 +7691,14 @@
   },
   "3747ce45d9c47402": {
    "verdict": "ok"
+  },
+  "374c46ba3ecd8926": {
+   "verdict": "ok",
+   "note": "Source RQ fs-idp56983888; source solution is D, 'both b and c', keyed verbatim as printed (house convention for lettered-reference options, matches precedent in 18.1).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "375708114be6f4b3": {
    "verdict": "ok"
@@ -7551,6 +7837,14 @@
     "result": "agrees"
    }
   },
+  "37dac836074de1b8": {
+   "verdict": "ok",
+   "note": "m66554 exercise fs-idp237302288 (Review Q2): keyed option B 'mixotrophs' matches the CNXML solution and the Metabolism paragraph's own definition (photoautotrophic or heterotrophic routes).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "37dd88f8460ed102": {
    "verdict": "ok"
   },
@@ -7586,6 +7880,10 @@
    "verdict": "ok",
    "note": "Computed f(2)=8-18=-10 and f(4)=64-36=28 by node arithmetic for f(x)=x^3-9x. Matches CNXML fs-id1165135513620 solution."
   },
+  "38544f194e5d68b4": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-idm40981216; model answer is the source solution, lightly reformatted, with checkpoints decomposing it (no new claims)."
+  },
   "385b41c538e7ca2d": {
    "verdict": "ok"
   },
@@ -7602,6 +7900,15 @@
   },
   "386f0c774249af6e": {
    "verdict": "ok"
+  },
+  "38761a0b6e830f97": {
+   "verdict": "ok",
+   "note": "Review Question eip-113; source solution A = photolithotrophs. My first draft mis-keyed this to photoautotrophs from general recall rather than the module's own table taxonomy; re-derived from the question stem (light energy + water as an inorganic electron source, no carbon-source clause) and corrected to match the source key before recording this verdict — not a source defect.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "key stands: source solution A; the module's table defines photolithotroph as light energy with an inorganic electron source, exactly what the stem names (light; water oxidized for electrons); carbon source is not given, so photoautotroph is not derivable from the stem"
+   }
   },
   "389468736c7100f4": {
    "verdict": "ok"
@@ -8000,6 +8307,10 @@
   "3b56c5da15e2bd39": {
    "verdict": "ok"
   },
+  "3b59065d9ae12ae4": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question eip-10, preamble kept, source solution kept verbatim as the selfcheck model answer; matches the Endosymbiotic Theory subsection's nuclear-genome-vs-Archaea / metabolic-genes-vs-Bacteria passage."
+  },
   "3b5b5b782fb3af27": {
    "verdict": "ok"
   },
@@ -8015,6 +8326,14 @@
   "3b8f4e08fbe72048": {
    "verdict": "ok",
    "note": "Midline=(-1+-7)/2=-4, amplitude=|-1-(-4)|=3, starts at max at x=0 -> +cos shape: y=3cos(x)-4, matches CNXML ti_06_01_11 solution."
+  },
+  "3b8feea5b970520f": {
+   "verdict": "ok",
+   "note": "Summary-derived cloze textin from the section summary's opening sentence ('Viruses cause a variety of diseases in humans.'). Disclosed in footer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3b9996197ab452be": {
    "verdict": "ok",
@@ -8110,6 +8429,14 @@
   },
   "3c79c41cdff07d3b": {
    "verdict": "ok"
+  },
+  "3c8368c059de7be6": {
+   "verdict": "ok",
+   "note": "Review Question fs-idm73098672; source solution B = calcium, verified against the macronutrient/micronutrient lists in the section text.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3c85dbff82c196a7": {
    "verdict": "ok"
@@ -8216,9 +8543,21 @@
   "3d4d006a6686fc90": {
    "verdict": "ok"
   },
+  "3d5dc460e83891e8": {
+   "verdict": "ok",
+   "note": "m66540 exercise eip-784, solution transcribed near-verbatim as the model answer, decomposed into 5 rubric checkpoints."
+  },
   "3d6e28169c9a47bd": {
    "verdict": "ok",
    "note": "P(0)=175/(1+6.995)=21.89, rounds to 22, matching CNXML fs-id1661534 (Numeric #11)."
+  },
+  "3d6f92b20ec22dcc": {
+   "verdict": "ok",
+   "note": "Source RQ fs-idm54168336; source solution is D, 'vary in shape', keyed verbatim, options in source order.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3d7749138a4c853b": {
    "verdict": "ok"
@@ -8228,6 +8567,14 @@
   },
   "3d80e80aee9b317d": {
    "verdict": "ok"
+  },
+  "3d896eded00c42fe": {
+   "verdict": "ok",
+   "note": "m66554 exercise fs-idp130461296 (Review Q3): keyed option B 'a cilium' matches the CNXML solution.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3d8a33911ba78e52": {
    "verdict": "ok"
@@ -8489,6 +8836,14 @@
   "3fb86266b5d5bfa9": {
    "verdict": "ok"
   },
+  "3fc1cfb4061d8bc5": {
+   "verdict": "ok",
+   "note": "Locally-written MC built strictly from Table 21.1 (genome structure): row 'Segmented: genome is divided into multiple segments | Influenza viruses'; distractors are the table's other genome-structure examples.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "3fc812c4c4ae2cb9": {
    "verdict": "ok"
   },
@@ -8582,6 +8937,14 @@
   },
   "4084749b3a796f8c": {
    "verdict": "ok"
+  },
+  "408d09e34886f5bd": {
+   "verdict": "ok",
+   "note": "Glossary recall, definition fs-idm134729152 (transduction).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4090a23e285c43d0": {
    "verdict": "ok",
@@ -8875,6 +9238,14 @@
   "42806ac99107df01": {
    "verdict": "ok"
   },
+  "4282d85773de54f0": {
+   "verdict": "ok",
+   "note": "Locally written multiple choice built strictly from the Plant Viruses section's own sentence naming peony ring spot and rose mosaic virus as landscaping viruses vs. tomato/bean/cucumber as food-crop viruses; no new claim. Disclosed in footer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "429163f61357a8de": {
    "verdict": "ok",
    "note": "m66461 CT exercise fs-id2024135, solution fs-id2000265: model answer matches source verbatim (ant farm lower entropy before earthquake, higher/disordered after). Both CHECKS clauses restate it, no added claim."
@@ -8916,6 +9287,14 @@
   "42ed5949119c3839": {
    "verdict": "ok"
   },
+  "42f04b681c5a03ea": {
+   "verdict": "ok",
+   "note": "Locally written item (no source exercise/glossary term fit the food-processing objective's third slot): built strictly from the section's own sentence 'cheese and yogurt employ bacteria, while other microbes, such as yeast, a fungus, are used to produce bread, wine, and beer.' Keyed 'yogurt' (3rd of 4 options, not first), no new claim. Disclosed in footer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "42f11b52804b730a": {
    "verdict": "ok"
   },
@@ -8929,6 +9308,14 @@
   "43070fdfd3fb2448": {
    "verdict": "ok",
    "note": "Unshifted parent function asymptote is always y=0."
+  },
+  "4309421f094b9cdf": {
+   "verdict": "ok",
+   "note": "Review Question fs-idm220121616, solution B (Gram-negative bacteria).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "430def64e86daf3c": {
    "verdict": "ok"
@@ -8962,6 +9349,14 @@
   },
   "43663098a5df9a09": {
    "verdict": "ok"
+  },
+  "436cc3bba10b2851": {
+   "verdict": "ok",
+   "note": "RQ1 (fs-idm35076832): CNXML solution keys B = 'prokaryotes'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "437148c2d37cacb4": {
    "verdict": "ok"
@@ -9102,6 +9497,14 @@
   "446709d046f82598": {
    "verdict": "ok"
   },
+  "446c66a2a1fdea1c": {
+   "verdict": "ok",
+   "note": "Glossary recall, definition fs-idm116633488 (teichoic acid).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "446ed1549d6c7f2a": {
    "verdict": "ok"
   },
@@ -9143,6 +9546,14 @@
   "449bdb099b8353e9": {
    "verdict": "ok",
    "note": "exercise fs-id2936033; CNXML solution D = \"all of the above\"; section supports availability, legal/privacy issues, and informed treatment choices all at once.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "449c76a7c60a01ec": {
+   "verdict": "ok",
+   "note": "Review Question fs-idp317200, solution B (eukaryotic cells).",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -9522,12 +9933,24 @@
   "4732829dff03e7f2": {
    "verdict": "ok"
   },
+  "473436d927f6b773": {
+   "verdict": "ok",
+   "note": "Locally-written MC built strictly from Table 21.2 (capsid structure): row 'Naked helical | Tobacco mosaic virus'; distractors are the table's other capsid classes.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4735ed12142711d0": {
    "verdict": "ok",
    "note": "lim_{x->1}(x^2-1)/(x^2-3x+2) = (x+1)/(x-2) at x=1 = -2 exactly; node-sampled and algebraically simplified; matches the printed solution for fs-id1165137836967 (source exercise 33, printed -2.00)."
   },
   "473aa0b82c3753b3": {
    "verdict": "ok"
+  },
+  "473f1748002e16dc": {
+   "verdict": "ok",
+   "note": "eip-541, source solution used verbatim in substance as model answer (Gardasil vs. anti-HPV medication). Confirmed against the section's HPV/Gardasil discussion; no numeric or factual conflict found."
   },
   "4744f10c681809c2": {
    "verdict": "ok"
@@ -9563,6 +9986,14 @@
   },
   "4767902876f69347": {
    "verdict": "ok"
+  },
+  "476dcf85da49c3a5": {
+   "verdict": "ok",
+   "note": "Locally written MC (not a source exercise), built strictly from the body sentence on Ebola's animal vectors and 70-90% short-term fatality; no other option in the section matches both facts. Disclosed in ledger and footer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "476f05043c3876f1": {
    "verdict": "ok",
@@ -9646,6 +10077,14 @@
   "47ee1b71448ef438": {
    "verdict": "ok",
    "note": "Practice #19: combine x^2*x^(2/3) and y^3*y^(5/3) exponents (cube root as 1/3 power); verified by float substitution x=2,y=3 (node) equals (8/3)log(x)+(14/3)log(y). Matches CNXML solution."
+  },
+  "47f96d19ec03f532": {
+   "verdict": "ok",
+   "note": "Glossary recall, definition fs-idm127794960 (conjugation).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "47fa86319cfbc583": {
    "verdict": "ok",
@@ -9943,6 +10382,14 @@
   "4a22f972283a914d": {
    "verdict": "ok"
   },
+  "4a2ff316a73e279b": {
+   "verdict": "ok",
+   "note": "m66549 exercise fs-idm103620528; source solution D = 'xenobiotics', shipped as printed.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4a344edb4aab9949": {
    "verdict": "ok"
   },
@@ -9957,6 +10404,14 @@
   },
   "4a4741801afe641a": {
    "verdict": "ok"
+  },
+  "4a4f029e076d6724": {
+   "verdict": "ok",
+   "note": "Glossary recall, fs-idm75518800 (nitrification).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4a516316fdb3430d": {
    "verdict": "ok"
@@ -10032,6 +10487,14 @@
   "4ae4385e8a3cbccf": {
    "verdict": "ok",
    "note": "Visual-connection MC (fs-idm60512080). D is uniquely correct: overall photosynthesis's reactants are water and CO2, products are G3P and O2; the other options wrongly include ATP/NADPH/RuBP as overall reactants/products, which are internal intermediates, not net inputs/outputs.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "4afae0e2c9abc1dd": {
+   "verdict": "ok",
+   "note": "m66540 glossary term pathogen, meaning used as prompt verbatim.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -10299,6 +10762,15 @@
   "4d4af5bc5172a5a7": {
    "verdict": "ok"
   },
+  "4d4cd9fad5bc4000": {
+   "verdict": "ok",
+   "note": "Summary-derived cloze textin (Section Summary sentence 'The nuclear genome seems to be descended from an archaean ancestor.'), used to fill the second objective group. Disclosed in the ledger and footer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "key stands: the m66552 summary says 'descended from an archaean ancestor'; 'archaeal|archean' already in accept"
+   }
+  },
   "4d53416634826a7d": {
    "verdict": "ok"
   },
@@ -10343,6 +10815,14 @@
   "4d9276f17db648e7": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "4d9d42b364ed47cb": {
+   "verdict": "ok",
+   "note": "MC 'not a way protists contribute to the food web' — module exercise eip-968, solution B = 'They occupy the apex producer niche,' consistent with the section calling protists primary producers, not apex consumers.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -10440,6 +10920,15 @@
   },
   "4e5bea25437bda32": {
    "verdict": "ok"
+  },
+  "4e6494817404dc80": {
+   "verdict": "ok",
+   "note": "Summary-sourced cloze textin blanking 'economic damage' from the section's own summary sentence; surviving prompt does not contain the answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "key stands: the m66535 summary sentence reads 'responsible for significant economic damage in both crop plants and plants used for ornamentation' — singular; my plural was a misreading"
+   }
   },
   "4e6e32c2cdcda605": {
    "verdict": "ok"
@@ -10828,14 +11317,6 @@
   "515ca4778732243a": {
    "verdict": "ok"
   },
-  "51649c644b6eaaa0": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "5166c4137797ed07": {
    "verdict": "ok",
    "note": "Summary sentence (m66428 Section Summary, fs-id1467930): 'Biology is very broad and includes many branches and subdisciplines. Examples include molecular biology, microbiology, neurobiology, zoology, and botany, among others.' Page stem merges the two summary sentences ('biology's branches and subdisciplines' + the enumerated list) but preserves the source's own list order and content; blanked term 'botany' does not appear elsewhere in the stem.",
@@ -11069,6 +11550,14 @@
   "536627c5814f7f6b": {
    "verdict": "ok"
   },
+  "53707e21e39505d6": {
+   "verdict": "ok",
+   "note": "Glossary recall (chronic infection, fs-idm121246112), meaning-to-term textin; accept covers the plural.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "53728d3c6cba0450": {
    "verdict": "ok"
   },
@@ -11252,8 +11741,25 @@
   "54e0e86a6408afc3": {
    "verdict": "ok"
   },
+  "54e46223c4b5518b": {
+   "verdict": "ok",
+   "note": "22.2 Gram negative textin: plural accept added; answer per section",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "54e5051f41442db2": {
    "verdict": "ok"
+  },
+  "54ed9afdd8e2dd46": {
+   "verdict": "ok",
+   "note": "21.1 RQ8 MC: hint reworded to disambiguate via the segmented-genome row; key Rabies virus per source solution",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "key stands: the stem specifies a LINEAR RNA genome; the module's genome-structure table lists influenza viruses under 'segmented' and rabies under linear/single-stranded RNA, and the page's hint now points at that row"
+   }
   },
   "54ee8c6d36dd591a": {
    "verdict": "ok",
@@ -11337,6 +11843,14 @@
   },
   "55a180d05785aa04": {
    "verdict": "ok"
+  },
+  "55a6f5a1260ecb8d": {
+   "verdict": "ok",
+   "note": "Glossary recall (Group I); cross-checked against body text 'Group I viruses contain double-stranded DNA (dsDNA) as their genome.'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "55a9c73c5cbf1e5e": {
    "verdict": "ok",
@@ -11426,6 +11940,14 @@
   },
   "563c8e2fef68484e": {
    "verdict": "ok"
+  },
+  "56424458b96b4de6": {
+   "verdict": "ok",
+   "note": "Glossary recall, fs-idm102618160 (decomposer).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "564e704e1783daa7": {
    "verdict": "ok"
@@ -11541,6 +12063,14 @@
   },
   "571f57775febbc2c": {
    "verdict": "ok"
+  },
+  "57206079a7705e92": {
+   "verdict": "ok",
+   "note": "m66554 exercise fs-idp161765440 (Review Q1): keyed option D 'proteins' matches the CNXML solution; the section's own Cell Structure paragraph says the pellicle is 'interlocking protein strips.'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "5727277dd8e00d5a": {
    "verdict": "ok"
@@ -11877,6 +12407,14 @@
   "596d7357f2d7e9c1": {
    "verdict": "ok"
   },
+  "59765c919d0be55c": {
+   "verdict": "ok",
+   "note": "Glossary recall textin built from the module's own definition of 'plastid' (fs-idp19302432/fs-idp15801296), used to fill the third objective group alongside the endosymbiosis/endosymbiotic-theory items.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "59793e8aec56e1e1": {
    "verdict": "ok",
    "note": "Review Question fs-id1730970; CNXML solution fs-id1805502 keys B, the 2nd option 'cellulose' — matches.",
@@ -11908,6 +12446,14 @@
   },
   "59983a8154917d9a": {
    "verdict": "ok"
+  },
+  "599d773db62331e5": {
+   "verdict": "ok",
+   "note": "22.4 glossary recall: 'Black Death' meaning transcribed as the prompt, term as answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "59a39d59cc3978ba": {
    "verdict": "ok"
@@ -11943,6 +12489,14 @@
   "59facaa0345b62ae": {
    "verdict": "ok",
    "note": "(2p-5q)(3p-2q) expands to 6p^2-19pq+10q^2 (sympy). Positive last term with negative middle term forces both signs negative."
+  },
+  "59fcb200fa6f23a1": {
+   "verdict": "ok",
+   "note": "Glossary recall (horizontal transmission, fs-idp81520224), meaning-to-term textin.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "5a043f53944ba1b4": {
    "verdict": "ok"
@@ -12090,6 +12644,10 @@
   "5b01b7a31174509c": {
    "verdict": "ok"
   },
+  "5b112e0958754fad": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-idm18394736; model answer is the source solution, checkpoints decompose it with no new claims."
+  },
   "5b145b36308d0c47": {
    "verdict": "ok"
   },
@@ -12116,6 +12674,14 @@
   },
   "5b449131a6312cbe": {
    "verdict": "ok"
+  },
+  "5b471c18f94a5c39": {
+   "verdict": "ok",
+   "note": "m66549 glossary term-00004/fs-idp9074080 'biotechnology'; prompt is the definition verbatim, answer matches term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "5b474419a4ba5afe": {
    "verdict": "ok"
@@ -12313,6 +12879,10 @@
   "5c5c91b6d9e47368": {
    "verdict": "ok"
   },
+  "5c662fc5b1dbd15f": {
+   "verdict": "ok",
+   "note": "m66554 critical-thinking exercise eip-299: model answer is the CNXML solution's own sentences (definition-by-exclusion plus the two example lists), no new claim added."
+  },
   "5c7643d88f64ddf1": {
    "verdict": "ok"
   },
@@ -12498,6 +13068,10 @@
   "5df2b94508fe8db8": {
    "verdict": "ok"
   },
+  "5df53c3cc8677d25": {
+   "verdict": "ok",
+   "note": "Critical Thinking Q (fs-idm124909392), model answer matches source solution verbatim; checkpoints decompose it with no new claims."
+  },
   "5df61dd334d8fbae": {
    "verdict": "ok"
   },
@@ -12644,6 +13218,14 @@
     "result": "agrees"
    }
   },
+  "5f6d958666e19860": {
+   "verdict": "ok",
+   "note": "Glossary recall, fs-idp137763536 (nitrogen fixation); prompt uses 'N₂' rather than the word 'nitrogen' so no word of the two-word answer appears in the question.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5f76dac91e102553": {
    "verdict": "ok"
   },
@@ -12667,6 +13249,14 @@
   "5f91aca7b9627965": {
    "verdict": "ok"
   },
+  "5f9dce9ceb4c6af4": {
+   "verdict": "ok",
+   "note": "13.1 homologous recombination: hint reworded to drop 'crossing over' accept member; answer unchanged",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5fa712b4cb5c4907": {
    "verdict": "ok"
   },
@@ -12675,6 +13265,10 @@
   },
   "5fb0fd7bafffe23b": {
    "verdict": "ok"
+  },
+  "5fbe1ba1c09ca068": {
+   "verdict": "ok",
+   "note": "22.1 endolith selfcheck: model answer restored near-verbatim to source solution eip-440 (psychrophile; hypolith – low humidity/water)"
   },
   "5fbe481f785dc8dd": {
    "verdict": "ok"
@@ -12767,6 +13361,15 @@
   "6063647bd3bb92b0": {
    "verdict": "ok",
    "note": "Matches m66454 exercise fs-id802695, solution fs-id1322066 (centrioles vs. flagella). Model answer verbatim; CHECKS restate it."
+  },
+  "6064f9c097fcd327": {
+   "verdict": "ok",
+   "note": "Glossary recall, def-00003 (heterotroph).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "key stands: the m66547 glossary defines heterotroph verbatim as 'organism that obtains energy from organic molecules'"
+   }
   },
   "60659c09915db95e": {
    "verdict": "ok"
@@ -12977,6 +13580,14 @@
   "626ecdb780af0cf3": {
    "verdict": "ok"
   },
+  "6277c20382a68551": {
+   "verdict": "ok",
+   "note": "eip-891, source key D (Influenza A virus). Independently re-derived: Baltimore Group V is negative-sense ssRNA; of the four options only influenza carries a segmented genome (rabies, though Group V, is non-segmented; HIV-1 is Group VI; picornaviruses are Group IV). Key confirmed.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "629779e2099e3fb3": {
    "verdict": "ok"
   },
@@ -12997,6 +13608,14 @@
   },
   "62b4c014d3e0c1ca": {
    "verdict": "ok"
+  },
+  "62b4d0c8fd62d07f": {
+   "verdict": "ok",
+   "note": "Source RQ eip-798; source solution is B, 'Regressive', keyed verbatim, options in source order.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "62b779f5435c4fe5": {
    "verdict": "ok"
@@ -13137,6 +13756,14 @@
   "63dd548c0e47b81a": {
    "verdict": "ok"
   },
+  "63e22f2ac073ad29": {
+   "verdict": "ok",
+   "note": "Review Question fs-idp17275648, keyed D (chlorarachniophytes). Confirmed against the Evolution Connection box, which derives chlorarachniophyte plastids from a secondary endosymbiotic event; green algae and red algae are the primary-endosymbiosis lineages being engulfed, not the secondary-endosymbiosis product, and cyanobacteria are the original primary endosymbiont.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "63eea80afd160975": {
    "verdict": "ok"
   },
@@ -13189,8 +13816,24 @@
    "verdict": "ok",
    "note": "m66428 Critical Thinking exercise fs-id2583878, solution fs-id2171449: perspiration/thirst homeostasis example. Page model answer matches verbatim; both ===CHECKS=== clauses restate it with no added claim."
   },
+  "6460f9ac1f0862de": {
+   "verdict": "ok",
+   "note": "Glossary textin, definition id fs-idp58865824 (back mutation). Prompt paraphrases the glossary meaning without using 'back' or 'mutation'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "64692bae82610cd6": {
    "verdict": "ok"
+  },
+  "647010e8b2715965": {
+   "verdict": "ok",
+   "note": "23.4 parasites summary MC: also-supportable distractor 'pathogens' replaced with 'mixotrophs'; hint reworded to drop the answer word; stem is summary sentence 2 verbatim",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "6470f513bb86d9a0": {
    "verdict": "ok"
@@ -13446,6 +14089,14 @@
   "6640c7fd137c8e61": {
    "verdict": "ok"
   },
+  "6642cc3587261b6e": {
+   "verdict": "ok",
+   "note": "Glossary recall (virion); prompt is the glossary meaning verbatim ('individual virus particle outside a host cell').",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6660c3e84707212d": {
    "verdict": "ok"
   },
@@ -13513,6 +14164,14 @@
   },
   "66cc99c847c63274": {
    "verdict": "ok"
+  },
+  "66cc9e367ad847eb": {
+   "verdict": "ok",
+   "note": "Glossary recall, fs-idp74644320 (denitrification).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "66e6ba346ad490c7": {
    "verdict": "ok"
@@ -13845,6 +14504,10 @@
   "6906e8adbd951adc": {
    "verdict": "ok"
   },
+  "69081105e6ed647c": {
+   "verdict": "ok",
+   "note": "fs-idp49863504, source solution used as model answer with ONE numeric correction: the source solution says the virus takes 'a week' to reach the central nervous system, but the section's own body paragraph (para fs-idp39661408) says the bite-to-CNS progression 'may be two weeks or longer.' This is an internal contradiction within module m66537 between the body text and the critical-thinking solution (fs-idp21542736 says 'a week'). Corrected the model answer to 'two weeks or longer,' matching the body text, per the rule that a source solution the section's own text contradicts is corrected on the page and logged as a defect. Verdict is ok (not defect) because the corrected answer, not a known-wrong one, ships. Flagged for the errata file: module m66537, elements fs-idp39661408 (body, 'two weeks or longer') vs fs-idp21542736 (CT solution, 'a week')."
+  },
   "69106a6b81b0bd5d": {
    "verdict": "ok"
   },
@@ -14137,6 +14800,14 @@
   "6b1c6a554653fdc2": {
    "verdict": "ok"
   },
+  "6b23313d95ea9936": {
+   "verdict": "ok",
+   "note": "Sortbins built from table tab-ch22-02-01, one item per each of the 8 rows whose Bacteria/Archaea cells differ, each keyed against that row's cell values.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6b264282311da873": {
    "verdict": "ok"
   },
@@ -14163,6 +14834,14 @@
   },
   "6b37b28cdf84f0f8": {
    "verdict": "ok"
+  },
+  "6b39f027fe20ffcb": {
+   "verdict": "ok",
+   "note": "Locally written glossary recall (definition id fs-idp116983744, term 'mixotroph'), paraphrased from the section's own Metabolism sentence describing mixotrophs; no source counterpart to mis-key.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "6b42d39f70873130": {
    "verdict": "ok"
@@ -14487,6 +15166,10 @@
   "6db4625360ef6458": {
    "verdict": "ok"
   },
+  "6dc29af3f0a27ad6": {
+   "verdict": "ok",
+   "note": "Critical Thinking eip-395; model answer is the source solution (key feature + four example organisms), checkpoints decompose it with no new claims."
+  },
   "6dc4ce5cd146d525": {
    "verdict": "ok"
   },
@@ -14561,6 +15244,14 @@
   },
   "6e536b9a0ff3f28f": {
    "verdict": "ok"
+  },
+  "6e55d0b554646669": {
+   "verdict": "ok",
+   "note": "8.3 Calvin cycle: hint reworded to drop 'Calvin-Benson cycle' accept member; answer unchanged",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "6e5e624649fa4a9c": {
    "verdict": "ok"
@@ -14966,6 +15657,10 @@
   "71b036b4aaaf91a0": {
    "verdict": "ok"
   },
+  "71badb9bb4ff17a8": {
+   "verdict": "ok",
+   "note": "selfcheck (Critical Thinking fs-idm61985408, solution fs-idp62016352) — model answer is the source solution verbatim (italics added for Plasmodium/Anopheles per the module's own emphasis markup)."
+  },
   "71c0c6b6fe0c83a6": {
    "verdict": "ok"
   },
@@ -15236,6 +15931,10 @@
   "7427d569f688cba2": {
    "verdict": "ok"
   },
+  "74290a64b0b6ed2a": {
+   "verdict": "ok",
+   "note": "CT1 (fs-idm31610768): model answer restates the CNXML solution verbatim ('non-culturable...detected through molecular techniques, such as PCR')."
+  },
   "742a6f04ae48bdec": {
    "verdict": "ok",
    "note": "parent: option order seeded-shuffled for MC position balance; options and keyed answer text unchanged from previously verified form (Sketch the graph of $r=4\\sin(2\\theta)$. What type of curve i)"
@@ -15397,6 +16096,14 @@
   "7556dd94c144103a": {
    "verdict": "ok"
   },
+  "7558d8123730f5cc": {
+   "verdict": "ok",
+   "note": "Visual Connection (fs-idp41262304), solution C. Body note's list item 3 read 'macronucleii' (typo); corrected to 'macronuclei' to match the parallel keyed exercise in the module's own Visual Connection Questions section, which prints the correct spelling — disclosed in the footer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "755d7b2de68c0eef": {
    "verdict": "ok"
   },
@@ -15513,6 +16220,10 @@
   "76549f279217d8d8": {
    "verdict": "ok",
    "note": "|d|=sqrt(1/9+25/4)=sqrt(229)/6; unit = (-2/sqrt229, 15/sqrt229) = (-2sqrt229/229, 15sqrt229/229). node -e confirmed values match source's own answer exactly."
+  },
+  "765bd22ea2b40fba": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question fs-idm32276816; model answer = source solution with 'Responses will vary.' dropped as scaffolding and 'chemolitotrophs' corrected to 'chemolithotrophs' (source typo, logged as errata; the module's own prose uses 'chemolithotrophs' correctly elsewhere in the same section)."
   },
   "765e746682eb1279": {
    "verdict": "ok",
@@ -15820,6 +16531,14 @@
     "result": "agrees"
    }
   },
+  "787f55441bb04df3": {
+   "verdict": "ok",
+   "note": "Visual Connection Question fs-idm43664752; source solution D (4th option, the nitrification statement) verified against the section's own account of nitrification as ammonium→nitrite→nitrate.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "788328af436c67a6": {
    "verdict": "ok"
   },
@@ -15833,6 +16552,14 @@
   },
   "789bfcf4edcde1fc": {
    "verdict": "ok"
+  },
+  "789d8399d9ae1005": {
+   "verdict": "ok",
+   "note": "13.2 karyogram: hint reworded to drop 'ideogram' accept member; answer unchanged",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "78a3609717c0e282": {
    "verdict": "ok"
@@ -16331,6 +17058,14 @@
   "7bd283e26eae359b": {
    "verdict": "ok"
   },
+  "7be406b4fbff8883": {
+   "verdict": "ok",
+   "note": "Review Q (eip-379), keyed D matches source solution; consistent with the module's viral-receptor/attachment teaching.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7be6e714f2fc3acc": {
    "verdict": "ok",
    "note": "6x+42=6(x+7) -> shift -7; key p1336 PT#21"
@@ -16438,14 +17173,6 @@
   "7c7118e8a8a456a0": {
    "verdict": "ok"
   },
-  "7c71e934f2150d55": {
-   "verdict": "ok",
-   "note": "Glossary recall for 'Calvin cycle' (fs-idm58645024). Prompt is the glossary meaning; answer matches the defining term; accept covers the section's own alternate name (Calvin-Benson cycle).",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "7c740544727c5b80": {
    "verdict": "ok"
   },
@@ -16537,6 +17264,14 @@
   },
   "7d1eac30e9330e69": {
    "verdict": "ok"
+  },
+  "7d21addcdd150e95": {
+   "verdict": "ok",
+   "note": "m66549 exercise fs-idm24905408; source solution D = 'All of the above occur.', all three benefits (plant, soil, bacteria) confirmed stated in section text.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "7d30e37d8516ec73": {
    "verdict": "ok"
@@ -16646,6 +17381,10 @@
     "result": "agrees"
    }
   },
+  "7db83d3c952f5e1d": {
+   "verdict": "ok",
+   "note": "m66540 exercise fs-idp242517296, solution transcribed near-verbatim as the model answer."
+  },
   "7dce4d8a27d29020": {
    "verdict": "ok",
    "note": "re-derived: g(x)=2^x+1 shifts f(x)=2^x up 1, moving the horizontal asymptote y=0 to y=1; matches recorded answer. Line y=1 has 9 lattice points (x=-4..4) inside grid xMin=-4,xMax=4,yMin=-2,yMax=8, well above the >=2 asymptote minimum."
@@ -16698,6 +17437,14 @@
   "7e2bf7eaf106fa52": {
    "verdict": "ok"
   },
+  "7e34e56734fd75e5": {
+   "verdict": "ok",
+   "note": "Visual Connection 2 (fs-idp30136512), keyed C matches source solution; confirmed against diagram's own stress->lytic label.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7e35bae1b02c7379": {
    "verdict": "ok"
   },
@@ -16722,6 +17469,14 @@
   },
   "7e516bc0e3d87b97": {
    "verdict": "ok"
+  },
+  "7e587c309379eb0f": {
+   "verdict": "ok",
+   "note": "Source RQ fs-idp108174880; source solution is B, 'Viruses are acellular.', keyed verbatim, options in source order.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "7e5f1fda6de03ed4": {
    "verdict": "ok",
@@ -16941,6 +17696,10 @@
   "8057049125f1778c": {
    "verdict": "ok"
   },
+  "806190f3824fe45c": {
+   "verdict": "ok",
+   "note": "selfcheck (Critical Thinking eip-138, solution eip-581) — model answer is the source solution verbatim except 'zoocanthellae' corrected to 'zooxanthellae' (source typo — the same solution's own first sentence spells the term correctly, and it is spelled correctly throughout the rest of the section); reported as a suspected source defect in the ledger."
+  },
   "80679b15bdda6af9": {
    "verdict": "ok",
    "note": "2*6=12, coin outcomes times die outcomes (matches CNXML key)."
@@ -16950,14 +17709,6 @@
   },
   "807550918225cf61": {
    "verdict": "ok"
-  },
-  "807942d4497a4807": {
-   "verdict": "ok",
-   "note": "textin microfilament: prompt paraphrases glossary def fs-id1968369 plus body's \"actin filament\" alt name (fs-id1662602); accept list covers plural and the section's own alternate name; term/accepts not in prompt.",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "8079b473e5a68311": {
    "verdict": "ok"
@@ -17037,6 +17788,14 @@
   "81040be64e39613c": {
    "verdict": "ok",
    "note": "sin 60deg = sqrt3/2, numeric to 1e-15; key p1325 #17"
+  },
+  "810baa58989bce22": {
+   "verdict": "ok",
+   "note": "Review Question fs-idp45217456, solution D (bacteria and archaea).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "810fb617ab42853b": {
    "verdict": "ok"
@@ -17505,6 +18264,22 @@
    "verdict": "ok",
    "note": "Using the table above (x=0..9; f=7,6,5,8,4,0,2,1,9,3; g=9,5,6,2,1,8,7,3,4,0): g(5)=8, then f(8)=9, so f(g(5))=9, matching the declared answer."
   },
+  "83e74b49e861890e": {
+   "verdict": "ok",
+   "note": "23.2 alternation-of-generations MC: hint reworded (was near-verbatim key); key per source solution",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "83f0f597bc7ccb6f": {
+   "verdict": "ok",
+   "note": "Review Q (fs-idm107061648), keyed 'either RNA or DNA' matches source solution D and the oncogenic-viruses sentence.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "83f705a1a559594d": {
    "verdict": "ok"
   },
@@ -17558,6 +18333,14 @@
   "8433f52a7f7b4dfb": {
    "verdict": "ok",
    "note": "Least-squares regression on the table (units sold=46,48,50,52,54; profit=250,305,350,390,410) gives slope exactly 20.25, matching the declared answer."
+  },
+  "843c2614fe9dc38a": {
+   "verdict": "ok",
+   "note": "21.4 prion textin: hint reworded (named the section heading = answer); answer per glossary",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "843f1c214c9a1d49": {
    "verdict": "ok",
@@ -17768,6 +18551,14 @@
   },
   "85575bdb14f6c484": {
    "verdict": "ok"
+  },
+  "855a2f6a8e0218dd": {
+   "verdict": "ok",
+   "note": "21.1 virus first textin: question reworded to avoid repeating 'first'; answer per section prose",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "855c22f357b16ba7": {
    "verdict": "ok"
@@ -18041,6 +18832,14 @@
   "87eda911936d9af4": {
    "verdict": "ok"
   },
+  "87eecf96e30d33c2": {
+   "verdict": "ok",
+   "note": "MC 'carbon fixation is ___' — module exercise fs-idp175312, solution A = photosynthesis, matches printed option and section's own description of carbon fixation by primary producers.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "87f8bf71ea056d5d": {
    "verdict": "ok"
   },
@@ -18221,6 +19020,14 @@
   "899abdf2e44c3d71": {
    "verdict": "ok"
   },
+  "89a3134e5298bcf7": {
+   "verdict": "ok",
+   "note": "Review Question fs-idp86366592, keyed D (oxygenation of the atmosphere). Confirmed against the Prokaryotic Metabolism subsection's account of cyanobacterial O₂ release building toward the aerobic-respiration threshold that let eukaryotes evolve.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "89b50f9708b8d304": {
    "verdict": "ok"
   },
@@ -18332,6 +19139,14 @@
   },
   "8aac40ac6f54181e": {
    "verdict": "ok"
+  },
+  "8aad7adaca4c441d": {
+   "verdict": "ok",
+   "note": "m66554 exercise eip-487 (Review Q5): keyed option A 'Anaerobic heterotroph' matches the CNXML solution.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "8aae8cc25da6bb0f": {
    "verdict": "ok"
@@ -18490,6 +19305,14 @@
   },
   "8bed0af4b57fd58f": {
    "verdict": "ok"
+  },
+  "8bee5608c281e2a7": {
+   "verdict": "ok",
+   "note": "Glossary recall, definition fs-idm99839056 (transformation).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "8bff9943b75f2eb6": {
    "verdict": "ok",
@@ -19401,6 +20224,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 825): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "93bc02d742e8333f": {
+   "verdict": "ok",
+   "note": "RQ4 (fs-idp124475872): CNXML solution keys A = 'a salt concentration of at least 0.2 M', matching the glossary definition of halophile and the extremophiles table.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "93bc66af80bb2057": {
    "verdict": "ok"
   },
@@ -19614,6 +20445,14 @@
   },
   "9561576d56d4f782": {
    "verdict": "ok"
+  },
+  "956ac6259d7d721c": {
+   "verdict": "ok",
+   "note": "Glossary textin, definition id fs-idm24670560 (oncolytic virus). Prompt avoids the word 'virus' by saying 'agent' instead.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "9575913f40964656": {
    "verdict": "ok"
@@ -19957,6 +20796,10 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 506): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "97e85522be4c47ab": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-idp2230864, solution fs-idm43339376, framing 'Responses will vary. A possible answer is:' dropped as scaffolding."
+  },
   "97ec9706ad898ea8": {
    "verdict": "ok",
    "note": "Review Question fs-id1313546: source solution keys option B; section text defines consensus sequences as 'similar across all promoters and across various bacterial species'.",
@@ -20065,6 +20908,14 @@
   "988776c4eb4e9bc9": {
    "verdict": "ok",
    "note": "Expanded 0.2(x-2)(x+1)(x-5) by hand and with node: (x-2)(x+1)(x-5)=x^3-6x^2+3x+10, times 0.2 = 0.2x^3-1.2x^2+0.6x+2. Matches CNXML ti_03_03_09's y-intercept check (f(0)=2). Replayed the printed factored subject through checkAnswer with form:\"expanded\" -- it returns \"form\" (rejected), and the authored expanded answer self-grades \"correct\"."
+  },
+  "988a4e1067b55dc8": {
+   "verdict": "ok",
+   "note": "21.1 reverse transcriptase textin: plural accept added; answer per glossary",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "98957b15b7ffeaf0": {
    "verdict": "ok",
@@ -20294,6 +21145,10 @@
   "9a8e56613a8b37a9": {
    "verdict": "ok"
   },
+  "9aa542ee5fc6fcbd": {
+   "verdict": "ok",
+   "note": "Critical Thinking eip-568; source solution says 'Possible answers include' three items for a 'describe two ways' prompt — all three kept verbatim-near as the model answer, consistent with the source's own 'possible answers' framing; checkpoints decompose it with no new claims."
+  },
   "9aa7b8f1461b1693": {
    "verdict": "ok"
   },
@@ -20332,6 +21187,14 @@
   },
   "9aeaed3ef576c69c": {
    "verdict": "ok"
+  },
+  "9aed5a0294e594b0": {
+   "verdict": "ok",
+   "note": "Glossary recall, def-00002 (autotroph).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "9af2c93bcffbf50f": {
    "verdict": "ok",
@@ -20497,12 +21360,24 @@
   "9be99dabf1e6d89b": {
    "verdict": "ok"
   },
+  "9befa197f9ff8ae5": {
+   "verdict": "ok",
+   "note": "Glossary recall, definition fs-idm128766688 (capsule).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9beffa089a8868b9": {
    "verdict": "ok"
   },
   "9bfeaf105bc2425a": {
    "verdict": "ok",
    "note": "Section Exercises Algebraic #23 (fs-id1165134368156), system {x+y+z=14;2y+3z=-14;-16y-24z=-112}. Independently confirmed inconsistency: -16y-24z is -8 times (2y+3z), so -8*(-14)=112, contradicting the printed RHS of -112. Matches CNXML key 'No solutions exist.'"
+  },
+  "9c0549ee79990014": {
+   "verdict": "ok",
+   "note": "m66548 Critical Thinking fs-idm24024624: model answer is the source solution near-verbatim, decomposed into rubric checkpoints with no new claims."
   },
   "9c06c1159480ea77": {
    "verdict": "ok"
@@ -20733,6 +21608,14 @@
   "9dddbd0e1338fa5e": {
    "verdict": "ok"
   },
+  "9de51f5f757cd2a6": {
+   "verdict": "ok",
+   "note": "10.4 oncogene: hint reworded to drop 'proto-oncogene' (contains the answer); answer unchanged",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9de8c3f806ce24e2": {
    "verdict": "ok"
   },
@@ -20760,6 +21643,14 @@
   },
   "9e26ce9460a3ca1f": {
    "verdict": "ok"
+  },
+  "9e34f73b7f013a2e": {
+   "verdict": "ok",
+   "note": "Glossary recall, definition fs-idm98380544 (pilus).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "9e3a5c34f51e06b2": {
    "verdict": "ok",
@@ -21368,6 +22259,14 @@
   "a2e3cc4d278ef58f": {
    "verdict": "ok"
   },
+  "a2fbbcae5dbd4354": {
+   "verdict": "ok",
+   "note": "Glossary recall: extremophile, meaning transcribed from the glossary definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a3020a451a15f553": {
    "verdict": "ok",
    "note": "2cos(3theta)=-sqrt2 -> cos(3theta)=-sqrt2/2 -> 3theta=3pi/4+2k*pi or 5pi/4+2k*pi -> theta=pi/4+2k*pi/3 or 5pi/12+2k*pi/3; k=0,1,2 reproduces the six printed values (3pi/12=pi/4, kept unreduced as printed in the source key)."
@@ -21470,6 +22369,14 @@
   "a3de73249e149f40": {
    "verdict": "ok",
    "note": "Domain of log_3(x+4): x+4>0 -> x>-4 -> (-4,inf). Matches CNXML ti_04_04_04 solution."
+  },
+  "a3ee0321590d97ff": {
+   "verdict": "ok",
+   "note": "m66540 exercise fs-idm41041152, solution A = 'They are single-stranded RNA particles.' (matches section text; the other three options are each directly contradicted by the section).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a3fff50e4abcb836": {
    "verdict": "ok"
@@ -22235,6 +23142,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 317): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "a9207819bd4982d9": {
+   "verdict": "ok",
+   "note": "m66549 glossary fs-idp161075168 'bioremediation'; prompt is the definition verbatim, answer matches term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a922832eb7a6513a": {
    "verdict": "ok",
    "note": "option III is the recreated cotangent shape (decreasing branches, asymptotes at 0 and pi); matches source's printed answer 'III' for f(x)=cot x in the graph-matching exercise; all four option specs independently rendered and visually distinguished via svgshot."
@@ -22279,6 +23194,14 @@
   },
   "a93fb497e2acb811": {
    "verdict": "ok"
+  },
+  "a941ed5c15d9b132": {
+   "verdict": "ok",
+   "note": "Review Q (fs-idm23212144), keyed A matches source solution and Replication/Assembly paragraph.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a944932d9e26a49d": {
    "verdict": "ok",
@@ -22908,6 +23831,14 @@
   "ad5f38f09234cbd6": {
    "verdict": "ok"
   },
+  "ad64cf52c6ce9f51": {
+   "verdict": "ok",
+   "note": "Glossary textin, definition id fs-idm38097904 (phage therapy). Prompt avoids the substring 'phage' by saying 'viruses that target one specific type of bacterium' instead.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ad6eae80eb978577": {
    "verdict": "ok"
   },
@@ -23110,6 +24041,14 @@
    "verdict": "ok",
    "note": "2x-5y=-25 -> y=0.4x+5; -4x+5y=35 -> y=0.8x+7; intersection (-5,3). Node-verified both equations satisfied by (-5,3)."
   },
+  "af00efa8466971d0": {
+   "verdict": "ok",
+   "note": "Review Question fs-idp20931200, solution A (locomotion).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "af01d534b758f4ac": {
    "verdict": "ok",
    "note": "121^y=11 means y=1/2 since sqrt(121)=11=121^(1/2); matches CNXML Try It 3."
@@ -23153,6 +24092,14 @@
   "af3f3b7969800864": {
    "verdict": "ok",
    "note": "P(15,9)=1,816,214,400 (node BigInt fact(15)/fact(6)), matches CNXML key."
+  },
+  "af56c0c116e0d3d0": {
+   "verdict": "ok",
+   "note": "22.1 VBNC textin: re-keyed to the abbreviation VBNC with spelled-out forms accepted (5-word glossary term over the cap); question reworded to '... the dormant ____ state'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "af5a472b43275589": {
    "verdict": "ok"
@@ -23437,6 +24384,14 @@
     "result": "agrees"
    }
   },
+  "b18708e72e61b192": {
+   "verdict": "ok",
+   "note": "Review Question fs-idp48251952, keyed C (DNA-based genome). Confirmed by elimination against the section's numbered characteristics list: nuclear envelope, mitochondria, and cytoskeleton are each named there as eukaryote-defining traits, leaving DNA-based genome as the one characteristic common to prokaryotes and eukaryotes alike.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "b18c259e65064855": {
    "verdict": "ok",
    "note": "-300 + 360 = 60 deg, within [0,360)"
@@ -23639,6 +24594,10 @@
   "b33220ae0da2e555": {
    "verdict": "ok"
   },
+  "b339f166d0993f7a": {
+   "verdict": "ok",
+   "note": "Source CT eip-353; model answer is the source solution's four sentences joined into one paragraph, no new claim."
+  },
   "b33b65bc109c5896": {
    "verdict": "ok",
    "note": "Section Exercises Algebraic #11 (fs-id1165137823124), system {3x-4y+2z=-15;2x+4y+z=16;2x+3y+5z=20}. Independently solved by elimination and confirmed via node that (-1,4,2) satisfies all three equations exactly. Matches CNXML solution."
@@ -23663,6 +24622,14 @@
   },
   "b36523553d023b71": {
    "verdict": "ok"
+  },
+  "b37a070848432f10": {
+   "verdict": "ok",
+   "note": "Glossary recall, definition fs-idm117464256 (peptidoglycan).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "b37db8a5e83b3feb": {
    "verdict": "ok"
@@ -23907,6 +24874,10 @@
   "b55078ef89b0f4c3": {
    "verdict": "ok"
   },
+  "b556d158e2d713ee": {
+   "verdict": "ok",
+   "note": "m66554 critical-thinking exercise fs-idp135033984: model answer is the CNXML solution verbatim."
+  },
   "b55794c89b3b44c7": {
    "verdict": "ok"
   },
@@ -23920,6 +24891,14 @@
   },
   "b57cae684612c6f2": {
    "verdict": "ok"
+  },
+  "b5879cc0101872a8": {
+   "verdict": "ok",
+   "note": "Review Question fs-idm223022752, solution A (wall).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "b58a61a708798d00": {
    "verdict": "ok"
@@ -24295,6 +25274,14 @@
   "b87efb16316d5812": {
    "verdict": "ok"
   },
+  "b880ca26eb822fda": {
+   "verdict": "ok",
+   "note": "Glossary textin, definition id fs-idm57722208 (vaccine). Prompt paraphrases the glossary meaning without using the answer word; answer matches the term exactly.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "b88b3fcb3141779b": {
    "verdict": "ok"
   },
@@ -24514,6 +25501,14 @@
   "b9e5d32b3feb727b": {
    "verdict": "ok"
   },
+  "b9e6bcba090ae332": {
+   "verdict": "ok",
+   "note": "Review Question fs-idp120219344, solution D (Caulerpa).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "b9ec896e871bf926": {
    "verdict": "ok",
    "note": "Practice ex7: B=1 (no coefficient written) -> P=2\\pi, matches CNXML solution 2\\pi."
@@ -24711,6 +25706,14 @@
   },
   "bb7728407ac88318": {
    "verdict": "ok"
+  },
+  "bb7b68161b33dba4": {
+   "verdict": "ok",
+   "note": "23.1 histones cloze: singular accept added; summary sentence",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "bb7cfe05262d429e": {
    "verdict": "ok"
@@ -25042,6 +26045,14 @@
     "result": "agrees"
    }
   },
+  "bdcb2f3eaf25dbfa": {
+   "verdict": "ok",
+   "note": "Glossary recall: stromatolite, meaning transcribed from the glossary definition; answer/prompt checked for no retype leak.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "bdcdcddebb223e33": {
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L366 of 04-series-and-their-notations.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
@@ -25184,6 +26195,22 @@
   "bea152d355cbab2f": {
    "verdict": "ok"
   },
+  "bea5a712d617a2a6": {
+   "verdict": "ok",
+   "note": "22.4 MRSA textin: binomial italicized in the hint; answer per glossary",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "beaa2b716ba6ad1c": {
+   "verdict": "ok",
+   "note": "m66540 exercise fs-idp63929504, solution C = DNA (prions contain no DNA or RNA per the section text).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "beb144f781084841": {
    "verdict": "ok"
   },
@@ -25212,11 +26239,23 @@
    "verdict": "ok",
    "note": "(-1+2i)(-2+3i)=2-3i-4i+6i^2=2-7i-6=-4-7i; recomputed independently, matches CNXML end-of-section answer key."
   },
+  "bed8ef734180bb41": {
+   "verdict": "ok",
+   "note": "23.3 Paramecium daughter-cell MC: hint reworded to drop the word eight; key 8 per source solution",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "beddc1128f004f51": {
    "verdict": "ok"
   },
   "bede6c44d2c2a8d0": {
    "verdict": "ok"
+  },
+  "bee5fa0e2e29f7b9": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question fs-idp2026496, source solution kept verbatim as the selfcheck model answer; matches the Endosymbiotic Theory and Mitochondria/Plastids subsections."
   },
   "beeac6322950e1b0": {
    "verdict": "ok"
@@ -25384,6 +26423,14 @@
   },
   "bffc73ca1474b223": {
    "verdict": "ok"
+  },
+  "bfff7abc2bc278d7": {
+   "verdict": "ok",
+   "note": "Review Question eip-410, solution D (Ammonia tepida).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "c00bb3a9d664e728": {
    "verdict": "ok"
@@ -25560,6 +26607,14 @@
   "c14397dd9a0d0880": {
    "verdict": "ok"
   },
+  "c149140ef9f139e2": {
+   "verdict": "ok",
+   "note": "22.3 macronutrients cloze: singular accept added; summary sentence",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c157eaa17dd52e79": {
    "verdict": "ok"
   },
@@ -25622,6 +26677,14 @@
   },
   "c1a62ce7a08112f1": {
    "verdict": "ok"
+  },
+  "c1a868edc289a7b1": {
+   "verdict": "ok",
+   "note": "Glossary recall, 'hydrogenosome' (fs-idp64681696).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "c1ad0d7d856385ad": {
    "verdict": "ok"
@@ -25687,6 +26750,14 @@
   "c2408a98c51c687f": {
    "verdict": "ok"
   },
+  "c248e627f0f75a1c": {
+   "verdict": "ok",
+   "note": "22.2 S-layer textin: plural + 'surface layer' accepts added; answer per glossary",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c24c1754e26d72b3": {
    "verdict": "ok"
   },
@@ -25707,6 +26778,14 @@
   "c26ddb309ffb5f5c": {
    "verdict": "ok",
    "note": "3-x=4x-8 => x=11/5=2.2; domain checks: 3-x=0.8>0, 4x-8=0.8>0, both hold. Verified numerically."
+  },
+  "c26edc5d29a993b0": {
+   "verdict": "ok",
+   "note": "Summary-derived select-the-term multiple choice, blanking 'supergroups' from the summary's first sentence; distractors (domains, phyla, kingdoms) all appear elsewhere in the module. Disclosed in footer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "c2706628cfe4e6e1": {
    "verdict": "ok"
@@ -26020,6 +27099,14 @@
   "c4a7e2f11dc1627b": {
    "verdict": "ok"
   },
+  "c4a8b44607b4392c": {
+   "verdict": "ok",
+   "note": "m66548 Review Question fs-idp100756832: source solution A.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c4aa1e3ed764129f": {
    "verdict": "ok",
    "note": "IA KC 07-12 §8.7, Ch.8 Practice Test '(a) find the domain (b) graph the function (c) use the graph to determine the range' for g(x)=sqrt(x+2) (m81448); the key's part (b) prints a square-root graph starting at (-2,0) and passing through (-1,1) and (2,2). This is part (b) itself, so it becomes a graphplot rather than a recognition MC. Re-derived: sqrt(-2+2)=0, sqrt(-1+2)=1, sqrt(2+2)=2, giving exactly the key's three points. Authored {points:[[-2,0],[-1,1],[2,2]]}; all three are on the snap-1 lattice inside -4..8 by -4..4."
@@ -26198,6 +27285,10 @@
    "verdict": "ok",
    "note": "sin t=cos t=√2/2 ⇒ tan t=sin/cos=1"
   },
+  "c5e9d3354e12a4a1": {
+   "verdict": "ok",
+   "note": "m66549 exercise eip-696 (critical thinking); model answer is the source solution near-verbatim, checkpoints are direct clauses of it."
+  },
   "c5f5769ba119a986": {
    "verdict": "ok"
   },
@@ -26267,6 +27358,14 @@
   "c67172d7a7b0f844": {
    "verdict": "ok"
   },
+  "c67acb71d2b7d39a": {
+   "verdict": "ok",
+   "note": "RQ3 (fs-idp45747584): CNXML solution keys A = 'cyanobacteria', matching 'It was the ancestral cyanobacteria that began the oxygenation of the atmosphere.'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c67ca85babb57e51": {
    "verdict": "ok",
    "note": "Critical Thinking eip-409/eip-79 (HDAC9): question and solution transcribed verbatim as model answer; checkpoints are literal substrings of the model answer."
@@ -26335,14 +27434,6 @@
   },
   "c6caf6f54490178e": {
    "verdict": "ok"
-  },
-  "c6cc938c7ed9292f": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "c6dcba5b10acff6e": {
    "verdict": "ok"
@@ -26441,6 +27532,14 @@
   },
   "c768020a42864c90": {
    "verdict": "ok"
+  },
+  "c76beff4609a39af": {
+   "verdict": "ok",
+   "note": "Review Question eip-551, keyed B (lack of a membrane-bound structure surrounding the genome). Confirmed against characteristics list item 1, which the module calls the single characteristic 'both necessary and sufficient to define an organism as a eukaryote' -- a bacterium lacks it, so it is the one observation that reliably distinguishes a bacterium from the LECA (the other three options are hedged or shared in the module's own text).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "c7745aa11e910fd5": {
    "verdict": "ok"
@@ -26632,6 +27731,14 @@
   "c8f179ca6911dadd": {
    "verdict": "ok"
   },
+  "c8f6eaec41acd30c": {
+   "verdict": "ok",
+   "note": "Glossary recall (prophage, fs-idm17375424), meaning-to-term textin; accept covers the plural.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c8f92683b1283d89": {
    "verdict": "ok"
   },
@@ -26799,6 +27906,10 @@
   "ca4b38ddefe04d15": {
    "verdict": "ok"
   },
+  "ca4fc12e039ed9dc": {
+   "verdict": "ok",
+   "note": "Critical Thinking Q (eip-687), model answer matches source solution verbatim; checkpoints decompose it with no new claims."
+  },
   "ca5d507805f38a5b": {
    "verdict": "ok"
   },
@@ -26926,14 +28037,6 @@
   },
   "cb4dd0ad2cc730e0": {
    "verdict": "ok"
-  },
-  "cb56bcd42e925d8b": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "cb5b5124e9bbe7dd": {
    "verdict": "ok",
@@ -27345,6 +28448,14 @@
    "verdict": "ok",
    "note": "Section Exercises Algebraic #9 (fs-id1165133306920), system {x-y=0;x-z=5;x-y+z=-1}, candidate (4,4,-1). Independently substituted: all three equations true. Matches CNXML key 'Yes'."
   },
+  "cf3acf2d980707e2": {
+   "verdict": "ok",
+   "note": "22.4 MRSA MC: 'aureus' italicized per CNXML emphasis; key per source solution",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "cf3b5cfb0a7261fc": {
    "verdict": "ok"
   },
@@ -27446,6 +28557,14 @@
   "d026ca85ee3e28f5": {
    "verdict": "ok"
   },
+  "d041f72a8de3edfc": {
+   "verdict": "ok",
+   "note": "m66548 Review Question fs-idp166702752: source solution C = endemic; matches glossary 'endemic disease' definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "d04e947349e2992b": {
    "verdict": "ok"
   },
@@ -27533,6 +28652,10 @@
   },
   "d0e9a30cdf54c0f1": {
    "verdict": "ok"
+  },
+  "d0fa2d2c25e8af5b": {
+   "verdict": "ok",
+   "note": "m66549 exercise fs-idp102645024 (critical thinking); model answer is the source solution near-verbatim, checkpoints are direct clauses of it."
   },
   "d0ff3704f831006f": {
    "verdict": "ok"
@@ -27733,6 +28856,15 @@
   "d2b23bd8069278be": {
    "verdict": "ok",
    "note": "cramer2(4,3,23,2,-1,-1): D=-10,Dx=-20,Dy=-50 -> (2,5), run in Node; matches CNXML solution (2,5) (fs-id1408543)."
+  },
+  "d2b7b4a6440a7a1a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "key 'aerobic' is the glossary term ('aerobic: organisms that use oxygen'); 'aerobes|aerobe' added to accept"
+   }
   },
   "d2b804fa1e919a37": {
    "verdict": "ok"
@@ -27975,6 +29107,14 @@
   },
   "d4eb7334c27d3d5e": {
    "verdict": "ok"
+  },
+  "d4ed0f80fa3b4ce7": {
+   "verdict": "ok",
+   "note": "Review Q (fs-idp96144208), keyed B matches source solution and Attachment subsection text.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "d5011edec0626b8c": {
    "verdict": "ok",
@@ -28264,6 +29404,10 @@
    "verdict": "ok",
    "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
+  "d760c2db27733e80": {
+   "verdict": "ok",
+   "note": "Source CT eip-308; model answer is the source solution verbatim."
+  },
   "d764c79e7277e244": {
    "verdict": "ok"
   },
@@ -28492,6 +29636,14 @@
    "verdict": "ok",
    "note": "tan(5π/12)=(1-cos(5π/6))/sin(5π/6)=(1+√3/2)/(1/2)=2+√3 (node-checked to ~1e-15). Retype of the printed subject fails evaluated-trig, confirmed against the real grader."
   },
+  "d9637e8a90171e11": {
+   "verdict": "ok",
+   "note": "Glossary recall: biofilm, meaning transcribed from the glossary definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "d966e331d0cb99ba": {
    "verdict": "ok"
   },
@@ -28581,6 +29733,14 @@
   "da4200a5ec6232e4": {
    "verdict": "ok"
   },
+  "da5ec3dbbe850d46": {
+   "verdict": "ok",
+   "note": "RQ2 (fs-idp163375200): CNXML solution keys D = 'all of the above'; all three sub-claims (earliest life, hydrothermal-vent energy, multi-layered sheet of bacteria+archaea) are stated in the Microbial Mats subsection, so 'all of the above' is taught.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "da602335ed0e4d70": {
    "verdict": "ok",
    "note": "Heron a=1/2,b=1/3,c=1/4: s=13/24, Area=sqrt(s(s-1/2)(s-1/3)(s-1/4))=0.03703 -> 0.04 m^2, matches source key."
@@ -28588,6 +29748,14 @@
   "da6ea750c259c50b": {
    "verdict": "ok",
    "note": "0.2x^3-1.2x^2+0.6x+2: degree 3 (odd), leading coefficient 0.2 (positive), so as x->-inf f decreases and as x->inf f increases. Matches CNXML ti_03_03_05 solution."
+  },
+  "da70055feb4b1b3b": {
+   "verdict": "ok",
+   "note": "22.4 glossary recall: 'antibiotic' meaning transcribed as the prompt, term as answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "da759514e39d935e": {
    "verdict": "ok"
@@ -28636,6 +29804,14 @@
   },
   "dac3a71629acdb59": {
    "verdict": "ok"
+  },
+  "dacf4396ce252384": {
+   "verdict": "ok",
+   "note": "22.2 Gram positive textin: plural accept added; answer per section",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "dad1175dc5231416": {
    "verdict": "ok",
@@ -28775,6 +29951,14 @@
   },
   "dbd7f07250072488": {
    "verdict": "ok"
+  },
+  "dbd91ad228b19a88": {
+   "verdict": "ok",
+   "note": "Review Question fs-idm128928, keyed C (endosymbiosis). Confirmed directly against the Mitochondria subsection's three lines of endosymbiotic evidence.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "dbdf7dd839cac6e8": {
    "verdict": "ok",
@@ -29032,6 +30216,10 @@
   "ddca7bbb0bd03b0a": {
    "verdict": "ok"
   },
+  "ddf78728839faa7e": {
+   "verdict": "ok",
+   "note": "m66548 Critical Thinking fs-idp48620288: model answer is the source solution near-verbatim, decomposed into rubric checkpoints with no new claims."
+  },
   "de049d2c84436092": {
    "verdict": "ok",
    "note": "Review Question (m66504 eip-886/eip-810), keyed A 'activator'; AraC promotes transcription when bound to arabinose, consistent with the section's activator definition.",
@@ -29058,6 +30246,10 @@
   "de2e401acb03b002": {
    "verdict": "ok"
   },
+  "de3081710512f8c0": {
+   "verdict": "ok",
+   "note": "m66554 critical-thinking exercise fs-idp61504304: model answer is the CNXML solution verbatim (Giardia/G. lamblia italicized per source emphasis, checkpoints reworded plain since checkpoints render as plain text)."
+  },
   "de3791a388d48760": {
    "verdict": "ok",
    "note": "model answer is CNXML solution fs-id1435268 (m66480) verbatim; rubric checkpoints are clauses of that solution"
@@ -29076,6 +30268,14 @@
   },
   "de653756c3b6ebbe": {
    "verdict": "ok"
+  },
+  "de6932784de04a37": {
+   "verdict": "ok",
+   "note": "Review Question fs-idp147938368, solution C (parabasalids — hydrogenosomes).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "de6f0b673ff1b25e": {
    "verdict": "ok"
@@ -29212,6 +30412,10 @@
   "df63fee611717f96": {
    "verdict": "ok"
   },
+  "df66a49fabd57332": {
+   "verdict": "ok",
+   "note": "Visual Connection (fs-idp126858320/fs-idm33648512, fig-ch23_01_04): source solution kept verbatim as the selfcheck model answer; the diagram shows the aerobic-bacterium engulfment at step 2 preceding the photosynthetic-bacterium branch at step 3, and only the non-branching heterotroph path lacks the green plastid organelle, matching the keyed solution."
+  },
   "df689edf85b0b3fa": {
    "verdict": "ok"
   },
@@ -29245,6 +30449,14 @@
     "result": "agrees"
    }
   },
+  "dfa7db23ea284788": {
+   "verdict": "ok",
+   "note": "MC — module exercise fs-idm79453552, solution B = Trypanosoma brucei, matches the section's description of the trypanosome that alters its surface glycoprotein coat each generation.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "dfaa199475cc1db6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -29270,6 +30482,14 @@
   "dfc80ebb444eb463": {
    "verdict": "ok",
    "note": "node: -Math.pow(4, 2*(-1)+3) = -4; matches CNXML solution f(-1)=-4."
+  },
+  "dfd32dd03ddc2fd8": {
+   "verdict": "ok",
+   "note": "Glossary recall: thermophile, meaning transcribed from the glossary definition (60-80 degrees C optimal growth).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "dfd53c4fab0e78d5": {
    "verdict": "ok"
@@ -29825,8 +31045,24 @@
   "e36d3ec79d47de3b": {
    "verdict": "ok"
   },
+  "e37214623dc819da": {
+   "verdict": "ok",
+   "note": "19.1 allele frequency: hint reworded to drop 'gene frequency'; answer unchanged",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e37562b44d0b7408": {
    "verdict": "ok"
+  },
+  "e3766610f4a34ee4": {
+   "verdict": "ok",
+   "note": "21.3 gene therapy textin: plural accept added; answer per glossary",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e37ca3b427ed2c53": {
    "verdict": "ok",
@@ -30005,6 +31241,14 @@
   "e4b8cbf6a12ffe4d": {
    "verdict": "ok"
   },
+  "e4befea8d1920e04": {
+   "verdict": "ok",
+   "note": "4.5 microfilament: hint reworded to drop the accept member 'actin filament' (hint retype lint); answer/accept unchanged, re-read against glossary",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e4bf6b249c9b815d": {
    "verdict": "ok",
    "note": "pattern-fit to 9,-81,729,-6561,59049,...; verified (-1)^(n+1)*9^n reproduces all five terms by loop (CNXML Try It ti_11_01_04)."
@@ -30021,6 +31265,14 @@
   },
   "e4cd7710efde6aa3": {
    "verdict": "ok"
+  },
+  "e4d203bb4159859c": {
+   "verdict": "ok",
+   "note": "Glossary recall: alkaliphile, meaning transcribed from the glossary definition (pH nine or above).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e4d355af17214000": {
    "verdict": "ok"
@@ -30250,6 +31502,14 @@
     "result": "agrees"
    }
   },
+  "e6910d617292a019": {
+   "verdict": "ok",
+   "note": "22.5 BNF textin: hint reworded to drop the accept member 'BNF'; answer biological nitrogen fixation per glossary",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e6957584ba685d1c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -30308,6 +31568,10 @@
   "e6d63c8692894781": {
    "verdict": "ok",
    "note": "Degree 3 polynomial has at most 3-1=2 turning points. Matches CNXML ti_03_03_09."
+  },
+  "e6dcf8f19176ce79": {
+   "verdict": "ok",
+   "note": "selfcheck (Critical Thinking fs-idm63806336, solution fs-idm123593568) — model answer is the source solution verbatim."
   },
   "e6e3a76815746c4b": {
    "verdict": "ok",
@@ -30600,6 +31864,10 @@
   "e90a68a815319184": {
    "verdict": "ok"
   },
+  "e9124db929bf8424": {
+   "verdict": "ok",
+   "note": "Critical Thinking Q (fs-idm170417552), model answer matches source solution verbatim; checkpoints decompose it with no new claims."
+  },
   "e915bc63622e27fe": {
    "verdict": "ok"
   },
@@ -30707,6 +31975,14 @@
   },
   "ea1e44e7bc2c8773": {
    "verdict": "ok"
+  },
+  "ea21639ad2c853ff": {
+   "verdict": "ok",
+   "note": "Review Question fs-idm83225968; source solution B = producers, verified against the primary-producers sentence.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ea28d4bbd4d16521": {
    "verdict": "ok",
@@ -30964,6 +32240,14 @@
   "ec0d032af87b6d3a": {
    "verdict": "ok",
    "note": "Constant summand 4 added 5 times: sum_{k=1}^{5}4; matches CNXML fs-id1165135333032 solution."
+  },
+  "ec0d73eb521449fd": {
+   "verdict": "ok",
+   "note": "fs-idm100043872, source key D ('stimulate an immune response'), matching the glossary definition of vaccine verbatim in substance. Confirmed.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ec1b53cf6ce2b4ab": {
    "verdict": "ok",
@@ -31240,6 +32524,10 @@
   "edcfb245326d2f83": {
    "verdict": "ok"
   },
+  "edd32f2457efa468": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-idp4363264, solution fs-idm143870304, transcribed verbatim."
+  },
   "edd49270d332f2d5": {
    "verdict": "ok"
   },
@@ -31268,6 +32556,10 @@
   },
   "ee11e06c01284d05": {
    "verdict": "ok"
+  },
+  "ee26aafa39fe62a4": {
+   "verdict": "ok",
+   "note": "Source CT fs-idp169281232; model answer is the source solution, lightly joined into one paragraph, no new claim."
   },
   "ee276ecfe0da575a": {
    "verdict": "ok"
@@ -31381,6 +32673,10 @@
   "eecb8c85c1084467": {
    "verdict": "ok",
    "note": "315 deg is in QIV, reference angle 45 deg, sine negative in QIV: sin(315)=-sin(45)=-sqrt2/2; numerically Math.sin(315*pi/180)=-0.7071067811865474"
+  },
+  "eed02a2ea41e5cac": {
+   "verdict": "ok",
+   "note": "Visual Connection 1 (fs-idm133736704), model answer matches source solution verbatim."
   },
   "eeedd93195f954ac": {
    "verdict": "ok",
@@ -31516,11 +32812,23 @@
   "f008d6e4b3ec4b19": {
    "verdict": "ok"
   },
+  "f0126c1f7184ed97": {
+   "verdict": "ok",
+   "note": "Critical Thinking Q (fs-idm85811088), model answer matches source solution verbatim; checkpoints decompose it with no new claims."
+  },
   "f03c3065a8764e06": {
    "verdict": "ok"
   },
   "f04c276ca190f842": {
    "verdict": "ok"
+  },
+  "f05dbcb7a1eb6d6e": {
+   "verdict": "ok",
+   "note": "Glossary textin, definition id fs-idp74104128 (attenuation). Prompt paraphrases the glossary meaning; accept covers the verb form 'attenuating' used in the body prose.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f05fd312d775772f": {
    "verdict": "ok"
@@ -31645,6 +32953,14 @@
   },
   "f111193faed6df1c": {
    "verdict": "ok"
+  },
+  "f11ae35d0e618d24": {
+   "verdict": "ok",
+   "note": "RQ5 (eip-902): CNXML solution keys C = 'Most of the necessary culture conditions could be inferred for pathogenic prokaryotes.'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f11b047f8d44d3ab": {
    "verdict": "ok"
@@ -31914,6 +33230,14 @@
     "result": "agrees"
    }
   },
+  "f3580cb4bbcbb6fe": {
+   "verdict": "ok",
+   "note": "summary-derived cloze textin — blanks 'decomposers' from section.summary sentence 1 ('...as primary producers, as direct food sources, and as decomposers.'); no glossary exists in m66556, so this substitutes for a glossary recall item per the brief.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f3611dd6fc098def": {
    "verdict": "ok"
   },
@@ -32178,6 +33502,10 @@
   "f548bfd0b577e254": {
    "verdict": "ok"
   },
+  "f55bc621c7dfa3e2": {
+   "verdict": "ok",
+   "note": "Locally-written selfcheck (objective 'Discuss three hypotheses' left thin: 1 source item, no glossary/summary match); model answer is the module's own progressive-hypothesis sentence, no new claim."
+  },
   "f563375772bbdf39": {
    "verdict": "ok"
   },
@@ -32354,6 +33682,14 @@
   "f6b1c92a48197b22": {
    "verdict": "ok",
    "note": "parent: r=16^(1/4)=2, theta=(120+360k)/4 -> 30,120,210,300; each root^4 recomputed"
+  },
+  "f6b6497cd59947e0": {
+   "verdict": "ok",
+   "note": "Review Question fs-idm99890064, solution C (archaean prokaryotic cells).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f6b9ef64d127432b": {
    "verdict": "ok"
@@ -32557,6 +33893,10 @@
   "f83d7d945959ec7e": {
    "verdict": "ok"
   },
+  "f83eb4632d58d148": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question eip-464; question's 'this effect the carbon cycle' corrected to 'affect' (source grammar typo, logged as errata); model answer = source solution verbatim."
+  },
   "f83f85e3b33c7915": {
    "verdict": "ok",
    "note": "m66530 exercise fs-idp32012832 (Visual Connection): source solution transcribed near-verbatim as the selfcheck model answer; checkpoints decompose it into 5 clauses, each a verbatim substring of the model."
@@ -32681,6 +34021,14 @@
   },
   "f8f39536a824ca92": {
    "verdict": "ok"
+  },
+  "f90415463da9aeb2": {
+   "verdict": "ok",
+   "note": "18.1 natural selection: hint reworded to drop 'survival of the fittest'; answer unchanged",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f90c2399b6d9f3a0": {
    "verdict": "ok"
@@ -33193,6 +34541,14 @@
   },
   "fd0f2671cf84130b": {
    "verdict": "ok"
+  },
+  "fd12365b013ab548": {
+   "verdict": "ok",
+   "note": "Visual Connection MC keyed to option (a), matching CNXML solution A (fs-idm140419776 / fs-idm123993984).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "fd13b3f1f94eefd4": {
    "verdict": "ok",

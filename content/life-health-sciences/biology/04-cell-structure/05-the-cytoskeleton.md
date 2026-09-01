@@ -163,7 +163,7 @@ combines with a lysosome to digest the pathogen
   question="The narrowest of the three cytoskeletal fiber types, composed of two intertwined strands of the protein actin, is called a(n) ________."
   answer="microfilament"
   accept="microfilaments|actin filament|actin filaments"
-  hint="It is also called an actin filament, and its diameter is about 7 nm — the narrowest of the three."
+  hint="Its diameter is about 7 nm — the narrowest of the three — and it drives muscle contraction and the crawling of cells."
 >}}
 
 {{< textin

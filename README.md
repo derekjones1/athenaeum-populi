@@ -47,7 +47,7 @@ The completed OpenStax math books also have a pinned, report-only source
 reconciliation workflow, now shared by the `in-progress` Biology 2e.
 See
 [docs/source/openstax-source-workflow.md](docs/source/openstax-source-workflow.md) before
-changing those books. `npm run source:verify` checks the committed 357-section
+changing those books. `npm run source:verify` checks the committed 370-section
 map offline; after `npm run source:fetch`, `npm run source:check` audits the
 local pages without rewriting them.
 

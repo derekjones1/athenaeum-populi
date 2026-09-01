@@ -2215,6 +2215,16 @@ export function lintHugo(src, filename = '', options = {}) {
         err(index, `${where}: ${member.label} appears as a whole-word run in the question (normalized) — a learner can pass by retyping the prompt`);
       }
     }
+    // The hint is one click away and is read by exactly the learner who does
+    // not know the answer, so a hint that prints the answer or an accept
+    // member is the same retype hazard as a question that does (22.5's
+    // "The section abbreviates this process BNF" beside accept="BNF").
+    const hintNorm = normalizeText(params.hint || '');
+    for (const member of members) {
+      if (member.norm && containsWholeWordRun(hintNorm, member.norm)) {
+        err(index, `${where}: ${member.label} appears as a whole-word run in the hint (normalized) — a hint that prints the answer is a retype hazard; reword it`);
+      }
+    }
     if (isRegularSection && !(params.hint || '').trim()) {
       err(index, `${where}: regular-section exercise is missing a hint`);
     }
