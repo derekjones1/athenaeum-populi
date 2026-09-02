@@ -14,19 +14,19 @@
 ## Coverage
 
 - Books with mapped sections: 1
-- Numbered sections mapped: 83
-- Metadata matched without a flag: 83
+- Numbered sections mapped: 139
+- Metadata matched without a flag: 139
 - Intentional adaptations adjudicated: 0
 - Unresolved sections needing review: 0
 - Modules differing from the committed map: 0
-- Objectives automatically located: 245/245
-- Core instructional headings automatically located: 247/247
-- Local interactive questions inventoried: 1022
+- Objectives automatically located: 437/437
+- Core instructional headings automatically located: 429/429
+- Local interactive questions inventoried: 1851
 - Upstream Try It prompts with a likely local prompt match: n/a
 
 | Book | Bundle | Authoring status | Chapters | Sections mapped |
 |---|---|---|---:|---:|
-| biology | `biology-bundle` | in-progress | 20/47 | 83/208 |
+| biology | `biology-bundle` | in-progress | 32/47 | 139/208 |
 
 The prose percentage is five-word source-shingle traceability, not a quality
 score. Low values can reflect disclosed condensation, reformatted mathematics,
@@ -119,3 +119,59 @@ or intentionally omitted print material.
 | [biology 20.1](../../content/life-health-sciences/biology/20-phylogenies-and-the-history-of-life/01-organizing-life-on-earth.md) | `m66530` | metadata matched | 4/4 | 3/3 | 95% | 0/0 | 17 |
 | [biology 20.2](../../content/life-health-sciences/biology/20-phylogenies-and-the-history-of-life/02-determining-evolutionary-relationships.md) | `m66531` | metadata matched | 3/3 | 2/2 | 93% | 0/0 | 17 |
 | [biology 20.3](../../content/life-health-sciences/biology/20-phylogenies-and-the-history-of-life/03-perspectives-on-the-phylogenetic-tree.md) | `m66532` | metadata matched | 3/3 | 5/5 | 97% | 0/0 | 15 |
+| [biology 21.1](../../content/life-health-sciences/biology/21-viruses/01-viral-evolution-morphology-and-classification.md) | `m66534` | metadata matched | 6/6 | 4/4 | 98% | 0/0 | 19 |
+| [biology 21.2](../../content/life-health-sciences/biology/21-viruses/02-virus-infections-and-hosts.md) | `m66535` | metadata matched | 5/5 | 5/5 | 97% | 0/0 | 22 |
+| [biology 21.3](../../content/life-health-sciences/biology/21-viruses/03-prevention-and-treatment-of-viral-infections.md) | `m66537` | metadata matched | 2/2 | 2/2 | 100% | 0/0 | 13 |
+| [biology 21.4](../../content/life-health-sciences/biology/21-viruses/04-other-acellular-entities-prions-and-viroids.md) | `m66540` | metadata matched | 2/2 | 2/2 | 98% | 0/0 | 8 |
+| [biology 22.1](../../content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/01-prokaryotic-diversity.md) | `m66542` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 16 |
+| [biology 22.2](../../content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/02-structure-of-prokaryotes-bacteria-and-archaea.md) | `m66545` | metadata matched | 2/2 | 2/2 | 98% | 0/0 | 22 |
+| [biology 22.3](../../content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/03-prokaryotic-metabolism.md) | `m66547` | metadata matched | 3/3 | 2/2 | 98% | 0/0 | 19 |
+| [biology 22.4](../../content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/04-bacterial-diseases-in-humans.md) | `m66548` | metadata matched | 4/4 | 5/5 | 98% | 0/0 | 12 |
+| [biology 22.5](../../content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/05-beneficial-prokaryotes.md) | `m66549` | metadata matched | 4/4 | 3/3 | 98% | 0/0 | 12 |
+| [biology 23.1](../../content/life-health-sciences/biology/23-protists/01-eukaryotic-origins.md) | `m66552` | metadata matched | 3/3 | 2/2 | 97% | 0/0 | 12 |
+| [biology 23.2](../../content/life-health-sciences/biology/23-protists/02-characteristics-of-protists.md) | `m66554` | metadata matched | 3/3 | 5/5 | 99% | 0/0 | 9 |
+| [biology 23.3](../../content/life-health-sciences/biology/23-protists/03-groups-of-protists.md) | `m66555` | metadata matched | 3/3 | 6/6 | 96% | 0/0 | 17 |
+| [biology 23.4](../../content/life-health-sciences/biology/23-protists/04-ecology-of-protists.md) | `m66556` | metadata matched | 2/2 | 4/4 | 98% | 0/0 | 8 |
+| [biology 24.1](../../content/life-health-sciences/biology/24-fungi/01-characteristics-of-fungi.md) | `m66558` | metadata matched | 4/4 | 2/2 | 97% | 0/0 | 17 |
+| [biology 24.2](../../content/life-health-sciences/biology/24-fungi/02-classifications-of-fungi.md) | `m66559` | metadata matched | 2/2 | 6/6 | 97% | 0/0 | 14 |
+| [biology 24.3](../../content/life-health-sciences/biology/24-fungi/03-ecology-of-fungi.md) | `m66560` | metadata matched | 3/3 | 4/4 | 97% | 0/0 | 15 |
+| [biology 24.4](../../content/life-health-sciences/biology/24-fungi/04-fungal-parasites-and-pathogens.md) | `m66562` | metadata matched | 3/3 | 2/2 | 99% | 0/0 | 12 |
+| [biology 24.5](../../content/life-health-sciences/biology/24-fungi/05-importance-of-fungi-in-human-life.md) | `m66563` | metadata matched | 4/4 | 0/0 | 100% | 0/0 | 12 |
+| [biology 25.1](../../content/life-health-sciences/biology/25-seedless-plants/01-early-plant-life.md) | `m66566` | metadata matched | 3/3 | 4/4 | 99% | 0/0 | 15 |
+| [biology 25.2](../../content/life-health-sciences/biology/25-seedless-plants/02-green-algae-precursors-of-land-plants.md) | `m66567` | metadata matched | 3/3 | 3/3 | 99% | 0/0 | 9 |
+| [biology 25.3](../../content/life-health-sciences/biology/25-seedless-plants/03-bryophytes.md) | `m66568` | metadata matched | 4/4 | 3/3 | 96% | 0/0 | 15 |
+| [biology 25.4](../../content/life-health-sciences/biology/25-seedless-plants/04-seedless-vascular-plants.md) | `m66570` | metadata matched | 5/5 | 5/5 | 98% | 0/0 | 17 |
+| [biology 26.1](../../content/life-health-sciences/biology/26-seed-plants/01-evolution-of-seed-plants.md) | `m66572` | metadata matched | 4/4 | 2/2 | 99% | 0/0 | 14 |
+| [biology 26.2](../../content/life-health-sciences/biology/26-seed-plants/02-gymnosperms.md) | `m66573` | metadata matched | 4/4 | 2/2 | 95% | 0/0 | 17 |
+| [biology 26.3](../../content/life-health-sciences/biology/26-seed-plants/03-angiosperms.md) | `m66574` | metadata matched | 4/4 | 4/4 | 97% | 0/0 | 15 |
+| [biology 26.4](../../content/life-health-sciences/biology/26-seed-plants/04-the-role-of-seed-plants.md) | `m66575` | metadata matched | 3/3 | 4/4 | 98% | 0/0 | 13 |
+| [biology 27.1](../../content/life-health-sciences/biology/27-introduction-to-animal-diversity/01-features-of-the-animal-kingdom.md) | `m66577` | metadata matched | 3/3 | 2/2 | 98% | 0/0 | 14 |
+| [biology 27.2](../../content/life-health-sciences/biology/27-introduction-to-animal-diversity/02-features-used-to-classify-animals.md) | `m66578` | metadata matched | 2/2 | 2/2 | 97% | 0/0 | 13 |
+| [biology 27.3](../../content/life-health-sciences/biology/27-introduction-to-animal-diversity/03-animal-phylogeny.md) | `m66722` | metadata matched | 3/3 | 2/2 | 97% | 0/0 | 11 |
+| [biology 27.4](../../content/life-health-sciences/biology/27-introduction-to-animal-diversity/04-the-evolutionary-history-of-the-animal-kingdom.md) | `m66586` | metadata matched | 4/4 | 3/3 | 97% | 0/0 | 14 |
+| [biology 28.1](../../content/life-health-sciences/biology/28-invertebrates/01-phylum-porifera.md) | `m66394` | metadata matched | 2/2 | 2/2 | 97% | 0/0 | 11 |
+| [biology 28.2](../../content/life-health-sciences/biology/28-invertebrates/02-phylum-cnidaria.md) | `m66395` | metadata matched | 4/4 | 4/4 | 99% | 0/0 | 16 |
+| [biology 28.3](../../content/life-health-sciences/biology/28-invertebrates/03-superphylum-lophotrochozoa-flatworms-rotifers-and-nemerteans.md) | `m66396` | metadata matched | 3/3 | 3/3 | 98% | 0/0 | 11 |
+| [biology 28.4](../../content/life-health-sciences/biology/28-invertebrates/04-superphylum-lophotrochozoa-mollusks-and-annelids.md) | `m66397` | metadata matched | 6/6 | 2/2 | 99% | 0/0 | 23 |
+| [biology 28.5](../../content/life-health-sciences/biology/28-invertebrates/05-superphylum-ecdysozoa-nematodes-and-tardigrades.md) | `m66398` | metadata matched | 3/3 | 3/3 | 98% | 0/0 | 10 |
+| [biology 28.6](../../content/life-health-sciences/biology/28-invertebrates/06-superphylum-ecdysozoa-arthropods.md) | `m66399` | metadata matched | 3/3 | 1/1 | 99% | 0/0 | 21 |
+| [biology 28.7](../../content/life-health-sciences/biology/28-invertebrates/07-superphylum-deuterostomia.md) | `m66400` | metadata matched | 2/2 | 3/3 | 99% | 0/0 | 9 |
+| [biology 29.1](../../content/life-health-sciences/biology/29-vertebrates/01-chordates.md) | `m66588` | metadata matched | 3/3 | 3/3 | 96% | 0/0 | 12 |
+| [biology 29.2](../../content/life-health-sciences/biology/29-vertebrates/02-fishes.md) | `m66589` | metadata matched | 2/2 | 2/2 | 98% | 0/0 | 12 |
+| [biology 29.3](../../content/life-health-sciences/biology/29-vertebrates/03-amphibians.md) | `m66590` | metadata matched | 3/3 | 3/3 | 98% | 0/0 | 11 |
+| [biology 29.4](../../content/life-health-sciences/biology/29-vertebrates/04-reptiles.md) | `m66591` | metadata matched | 4/4 | 7/7 | 98% | 0/0 | 26 |
+| [biology 29.5](../../content/life-health-sciences/biology/29-vertebrates/05-birds.md) | `m66592` | metadata matched | 2/2 | 3/3 | 98% | 0/0 | 9 |
+| [biology 29.6](../../content/life-health-sciences/biology/29-vertebrates/06-mammals.md) | `m66593` | metadata matched | 4/4 | 3/3 | 99% | 0/0 | 15 |
+| [biology 29.7](../../content/life-health-sciences/biology/29-vertebrates/07-the-evolution-of-primates.md) | `m66594` | metadata matched | 4/4 | 3/3 | 98% | 0/0 | 14 |
+| [biology 30.1](../../content/life-health-sciences/biology/30-plant-form-and-physiology/01-the-plant-body.md) | `m66596` | metadata matched | 5/5 | 2/2 | 99% | 0/0 | 19 |
+| [biology 30.2](../../content/life-health-sciences/biology/30-plant-form-and-physiology/02-stems.md) | `m66597` | metadata matched | 5/5 | 3/3 | 97% | 0/0 | 21 |
+| [biology 30.3](../../content/life-health-sciences/biology/30-plant-form-and-physiology/03-roots.md) | `m66598` | metadata matched | 4/4 | 3/3 | 98% | 0/0 | 14 |
+| [biology 30.4](../../content/life-health-sciences/biology/30-plant-form-and-physiology/04-leaves.md) | `m66599` | metadata matched | 4/4 | 5/5 | 97% | 0/0 | 16 |
+| [biology 30.5](../../content/life-health-sciences/biology/30-plant-form-and-physiology/05-transport-of-water-and-solutes-in-plants.md) | `m66600` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 13 |
+| [biology 30.6](../../content/life-health-sciences/biology/30-plant-form-and-physiology/06-plant-sensory-systems-and-responses.md) | `m66601` | metadata matched | 5/5 | 5/5 | 98% | 0/0 | 21 |
+| [biology 31.1](../../content/life-health-sciences/biology/31-soil-and-plant-nutrition/01-nutritional-requirements-of-plants.md) | `m66603` | metadata matched | 3/3 | 2/2 | 97% | 0/0 | 15 |
+| [biology 31.2](../../content/life-health-sciences/biology/31-soil-and-plant-nutrition/02-the-soil.md) | `m66604` | metadata matched | 3/3 | 3/3 | 93% | 0/0 | 15 |
+| [biology 31.3](../../content/life-health-sciences/biology/31-soil-and-plant-nutrition/03-nutritional-adaptations-of-plants.md) | `m66605` | metadata matched | 3/3 | 5/5 | 95% | 0/0 | 18 |
+| [biology 32.1](../../content/life-health-sciences/biology/32-plant-reproduction/01-reproductive-development-and-structure.md) | `m66607` | metadata matched | 5/5 | 3/3 | 94% | 0/0 | 21 |
+| [biology 32.2](../../content/life-health-sciences/biology/32-plant-reproduction/02-pollination-and-fertilization.md) | `m66608` | metadata matched | 4/4 | 8/8 | 99% | 0/0 | 17 |
+| [biology 32.3](../../content/life-health-sciences/biology/32-plant-reproduction/03-asexual-reproduction.md) | `m66609` | metadata matched | 3/3 | 3/3 | 99% | 0/0 | 13 |

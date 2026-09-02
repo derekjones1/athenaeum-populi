@@ -79,6 +79,20 @@ test('walkMarkdown filters extensions and makes _index.md explicit', () => {
   }
 });
 
+test('a single page is its own one-entry walk, so page-taking tools need no directory', () => {
+  const root = scratchTree();
+  try {
+    const page = join(root, 'b-chapter', '02-second.md');
+    assert.deepEqual(walkFiles(page), [page]);
+    assert.deepEqual(walkMarkdown(page), [page]);
+    const landing = join(root, 'b-chapter', '_index.md');
+    assert.deepEqual(walkMarkdown(landing), [landing]);
+    assert.deepEqual(walkMarkdown(landing, { includeIndex: false }), []);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
 /* -------------------------------------------------------------- frontmatter */
 
 test('parseFrontmatter reads the flat key: value corpus', () => {

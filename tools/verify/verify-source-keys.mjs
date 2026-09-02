@@ -91,6 +91,41 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/biology/29-vertebrates/07-the-evolution-of-primates.md',
+    exercise: 'fs-idm71000698',
+    kind: 'options',
+    erratum: 222,
+    reason: 'source keys "three-color vision" as the human trait not shared by primates, a trait the module never mentions, while its distractor "Hip structure supporting bipedalism" is also not shared by the module\'s own text ("bipedalism ... differentiate humans from the other hominoids"); the page keeps the key and replaces that distractor and the unsourced olfactory one with traits from the module\'s shared-adaptations list (rotating shoulder joint; stereoscopic vision)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/27-introduction-to-animal-diversity/02-features-used-to-classify-animals.md',
+    exercise: 'fs-idp48306544',
+    kind: 'options',
+    erratum: 213,
+    reason: 'the module prints this Visual Connection twice; its exercise copy reads "Animals that display radial symmetry are diploblasts", which the module\'s own echinoderm sentence ("display modified radial symmetry as adults" — triploblasts) makes a second false statement, so the page keeps the body note\'s copy "Animals that display only radial symmetry during their lifespans are diploblasts" (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/28-invertebrates/04-superphylum-lophotrochozoa-mollusks-and-annelids.md',
+    exercise: 'fs-idm43860096',
+    kind: 'options',
+    erratum: 214,
+    reason: 'the module prints this Visual Connection twice; its exercise copy reads "Mollusks have a radula for grinding food", which the module\'s own "present in all groups except the bivalves" makes a second false statement, so the page keeps the body note\'s copy "Most mollusks have a radula for grinding food" (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/26-seed-plants/01-evolution-of-seed-plants.md',
+    exercise: 'fs-idp35796256',
+    kind: 'key',
+    erratum: 205,
+    reason: 'source keys "flower" as the structure besides the seed that diminishes reliance on water, but the module\'s own text says "Both seeds and pollen ... allowed seed plants to reduce or eliminate their dependence on water" and its summary repeats "Two major innovations were seeds and pollen"; the page keys "pollen"',
+  },
+  {
+    page: 'content/life-health-sciences/biology/27-introduction-to-animal-diversity/01-features-of-the-animal-kingdom.md',
+    exercise: 'fs-idm67872016',
+    kind: 'key',
+    erratum: 207,
+    reason: 'source keys "the gastrula stage" for the stage in which cell layers develop into tissues or organs, but the module\'s own sentence is that germ layers "develop into certain tissue types, organs, and organ systems during a process called organogenesis"; the page keys "the organogenesis stage"',
+  },
+  {
     page: 'content/life-health-sciences/biology/25-seedless-plants/03-bryophytes.md',
     exercise: 'fs-idp148910848',
     kind: 'options',
@@ -195,6 +230,13 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 133,
     reason: 'source solution answers the RrYY × rrYy seed-shape cross with flower-color genotypes (PpYY, PpYy, ppYY, ppYy) copied from an unrelated item; the page derives RrYY, RrYy, rrYY, rrYy with the same 1:1 ratio and 2 × 2 grid',
   },
+{
+    page: 'content/life-health-sciences/biology/30-plant-form-and-physiology/02-stems.md',
+    exercise: 'fs-idm51419472',
+    kind: 'key',
+    erratum: 223,
+    reason: 'source keys "A and B" (cortex and pith; phloem) and its solution names the epidermis, which is not an option; the module describes phloem as sieve-tube cells, companion cells, phloem parenchyma, and fibers and says only the cortex and pith are "composed of parenchyma cells" — the page keys A alone',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */
@@ -226,6 +268,8 @@ export const compact = (value) => normalizeText(value).replace(/\s+/g, '');
  * either nothing after it or a restatement of the option it names.
  */
 export function keyedOptionIndex(solution, options) {
+  const several = keyedOptionIndices(solution);
+  if (several) return several[0];
   const text = normalizeWhitespace(solution);
   const bare = text.match(/^([A-Ea-e])\s*[.:]?$/);
   if (bare) return bare[1].toUpperCase().charCodeAt(0) - 65;
@@ -238,6 +282,23 @@ export function keyedOptionIndex(solution, options) {
     if (option && tokenSimilarity(lettered[2], option) >= MATCH_FLOOR) return index;
   }
   return null;
+}
+
+/**
+ * A solution that keys MORE than one option — "A and B.", "B, D", "A & C: …"
+ * — as the 0-based indices it names, or null. Biology 2e prints a few of
+ * these (m66597's parenchyma Visual Connection keys "A and B" against a
+ * four-option list); a page must key exactly one option, so every such
+ * exercise is a key-differs that needs an erratum and a DISCLOSED_DEVIATIONS
+ * line. Without this the letter list read as prose and the gate never
+ * compared the page's key at all.
+ */
+export function keyedOptionIndices(solution) {
+  const text = normalizeWhitespace(solution);
+  const several = text.match(/^([A-Ea-e])((?:\s*(?:,|and|&|\/)\s*[A-Ea-e])+)\s*(?:[.:]|$)/);
+  if (!several) return null;
+  const letters = [several[1], ...[...several[2].matchAll(/(?:,|and|&|\/)\s*([A-Ea-e])/g)].map((m) => m[1])];
+  return letters.map((letter) => letter.toUpperCase().charCodeAt(0) - 65);
 }
 
 /** A glossary `<term>` and the spellings it licenses: "triacylglycerol (also,
@@ -266,6 +327,7 @@ export function readModule(xml) {
       options,
       solution: solutionText,
       keyed: options.length ? keyedOptionIndex(solutionText, options) : null,
+      keyedAll: options.length ? keyedOptionIndices(solutionText) : null,
     };
   }).filter((exercise) => exercise.problem);
   const glossary = descendants(document, (node) => localName(node) === 'definition')
@@ -389,6 +451,14 @@ export function judgeMultipleChoice(item, source) {
   const exercise = bestExercise(item.question, source.exercises, item.options || []);
   if (!exercise) return { status: 'unmatched' };
   if (exercise.keyed === null) return { status: 'prose-key', exercise };
+  if (exercise.keyedAll && exercise.keyedAll.length > 1) {
+    const letters = exercise.keyedAll.map((index) => String.fromCharCode(65 + index)).join(' and ');
+    return {
+      status: 'key-differs',
+      exercise,
+      detail: `source ${exercise.id} keys ${letters} (more than one option); page keys ${JSON.stringify(item.answer)}`,
+    };
+  }
   const sourceAnswer = exercise.options[exercise.keyed] || '';
   if (compact(sourceAnswer) !== compact(item.answer)) {
     return {

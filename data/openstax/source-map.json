@@ -58,8 +58,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 47,
       "upstreamSections": 208,
-      "localChapters": 25,
-      "mappedSections": 105,
+      "localChapters": 32,
+      "mappedSections": 139,
       "units": [
         {
           "index": 1,
@@ -1104,6 +1104,312 @@
       "moduleId": "m66570",
       "sourceTitle": "Seedless Vascular Plants",
       "moduleSha256": "daec7a6e9be8c310bb9be184e0822828b624589224ed86cab86e10f14c642d65"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/26-seed-plants/01-evolution-of-seed-plants.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "26.1",
+      "moduleId": "m66572",
+      "sourceTitle": "Evolution of Seed Plants",
+      "moduleSha256": "1da47621ce2b39ac5abb53dd0600bc037333122b11c2bf75ed7d26dfa474a9f5"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/26-seed-plants/02-gymnosperms.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "26.2",
+      "moduleId": "m66573",
+      "sourceTitle": "Gymnosperms",
+      "moduleSha256": "f87960babd3e8f618ad5471e78c326ac4a273ba73fabfdb9269da1ac2e2181f1"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/26-seed-plants/03-angiosperms.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "26.3",
+      "moduleId": "m66574",
+      "sourceTitle": "Angiosperms",
+      "moduleSha256": "b846b22d603319c735cedf52113313b629ece8c66a834766b81064d75a2b1e80"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/26-seed-plants/04-the-role-of-seed-plants.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "26.4",
+      "moduleId": "m66575",
+      "sourceTitle": "The Role of Seed Plants",
+      "moduleSha256": "81976a77adc22c5632c0f72b9e225d8e173e8177a550c2832b8ed581da3c0995"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/27-introduction-to-animal-diversity/01-features-of-the-animal-kingdom.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "27.1",
+      "moduleId": "m66577",
+      "sourceTitle": "Features of the Animal Kingdom",
+      "moduleSha256": "0650677e7aa2575894f1f68c61fcbb58b96cd4977929f81ed1e9f2b2c171ff95"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/27-introduction-to-animal-diversity/02-features-used-to-classify-animals.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "27.2",
+      "moduleId": "m66578",
+      "sourceTitle": "Features Used to Classify Animals",
+      "moduleSha256": "be7401be2beb7689ac3fa0b3d15d8a6acd68ce935aeb6e90776134ca07d6e88b"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/27-introduction-to-animal-diversity/03-animal-phylogeny.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "27.3",
+      "moduleId": "m66722",
+      "sourceTitle": "Animal Phylogeny",
+      "moduleSha256": "a10f867fd53baf7984ad896159142b1a31dfddb41fbfaf8ef8c77a470e4745d1"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/27-introduction-to-animal-diversity/04-the-evolutionary-history-of-the-animal-kingdom.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "27.4",
+      "moduleId": "m66586",
+      "sourceTitle": "The Evolutionary History of the Animal Kingdom",
+      "moduleSha256": "5220b3e994df85b0fa60a5f5a8525e937b2ac66215015ecdc9ff24b50481d062"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/28-invertebrates/01-phylum-porifera.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "28.1",
+      "moduleId": "m66394",
+      "sourceTitle": "Phylum Porifera",
+      "moduleSha256": "c30e29d03ba0a1f542478e1699baf62e992ceb59fbb54b37c8f24473d086ffd6"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/28-invertebrates/02-phylum-cnidaria.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "28.2",
+      "moduleId": "m66395",
+      "sourceTitle": "Phylum Cnidaria",
+      "moduleSha256": "7b062dcf0ee14bba62e7996b10ca2bb3b61967fabda3bb4b5b18339a5f52e9d3"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/28-invertebrates/03-superphylum-lophotrochozoa-flatworms-rotifers-and-nemerteans.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "28.3",
+      "moduleId": "m66396",
+      "sourceTitle": "Superphylum Lophotrochozoa: Flatworms, Rotifers, and Nemerteans",
+      "moduleSha256": "b1acd3dae5d26b3c1e5f49a63021f2da96098881101eb252d2f1cd269842813a"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/28-invertebrates/04-superphylum-lophotrochozoa-mollusks-and-annelids.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "28.4",
+      "moduleId": "m66397",
+      "sourceTitle": "Superphylum Lophotrochozoa: Mollusks and Annelids",
+      "moduleSha256": "ce5701b647c72634949cc5c23837fa16ca7ea5580f4c9efaaf7c515568c79801"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/28-invertebrates/05-superphylum-ecdysozoa-nematodes-and-tardigrades.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "28.5",
+      "moduleId": "m66398",
+      "sourceTitle": "Superphylum Ecdysozoa: Nematodes and Tardigrades",
+      "moduleSha256": "fc04750a73cda2603d2f941bef673bb6f53ec78162c0b04990bd64663c7de64d"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/28-invertebrates/06-superphylum-ecdysozoa-arthropods.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "28.6",
+      "moduleId": "m66399",
+      "sourceTitle": "Superphylum Ecdysozoa: Arthropods",
+      "moduleSha256": "615c229be50f22581c5b41eee1c0b355cb0544dc68a2dcd85be654cf07893261"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/28-invertebrates/07-superphylum-deuterostomia.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "28.7",
+      "moduleId": "m66400",
+      "sourceTitle": "Superphylum Deuterostomia",
+      "moduleSha256": "c35b6c18bbdb3b38b7ec71ea5e72dbd20bc8dc4daadbabedc92de3eaf42d6488"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/29-vertebrates/01-chordates.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "29.1",
+      "moduleId": "m66588",
+      "sourceTitle": "Chordates",
+      "moduleSha256": "8b31310d6359250ef1e75d1d1e09a17f6a83750afb7f72b8daece2e922da3977"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/29-vertebrates/02-fishes.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "29.2",
+      "moduleId": "m66589",
+      "sourceTitle": "Fishes",
+      "moduleSha256": "cc312c1d2245222308f61aec7388e9edbdd820ec1c62ea4c049915c3844855a6"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/29-vertebrates/03-amphibians.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "29.3",
+      "moduleId": "m66590",
+      "sourceTitle": "Amphibians",
+      "moduleSha256": "6ef61d29d0ab12cb962bb1c28777de2fe411d6afa232c9aafc7f11ab5b306f20"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/29-vertebrates/04-reptiles.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "29.4",
+      "moduleId": "m66591",
+      "sourceTitle": "Reptiles",
+      "moduleSha256": "37d847500d82145dc82e8a703d2e65cd5c7b47a085a99fc3701521e3fb66b5e1"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/29-vertebrates/05-birds.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "29.5",
+      "moduleId": "m66592",
+      "sourceTitle": "Birds",
+      "moduleSha256": "85cd20ab1faca0ca88a0728f88759ebcb5e1216e3400c1cf5eaad12ff8b38132"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/29-vertebrates/06-mammals.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "29.6",
+      "moduleId": "m66593",
+      "sourceTitle": "Mammals",
+      "moduleSha256": "c7171dd581f0d7eb1a0bcca2b65ad4d8715b5772595829fedecae8472e987f6d"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/29-vertebrates/07-the-evolution-of-primates.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "29.7",
+      "moduleId": "m66594",
+      "sourceTitle": "The Evolution of Primates",
+      "moduleSha256": "e22df793c53a5c2175771a82975667dec98fa0593f7076612320e1263822a993"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/30-plant-form-and-physiology/01-the-plant-body.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "30.1",
+      "moduleId": "m66596",
+      "sourceTitle": "The Plant Body",
+      "moduleSha256": "1fd5dfab912060faff527c4a2fcc7f6551b1bfb128a3a0aef8bf4463854d5205"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/30-plant-form-and-physiology/02-stems.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "30.2",
+      "moduleId": "m66597",
+      "sourceTitle": "Stems",
+      "moduleSha256": "d17d2ad80e355b0d2b6789788465f07839e8e74926df8187c554d20408db443d"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/30-plant-form-and-physiology/03-roots.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "30.3",
+      "moduleId": "m66598",
+      "sourceTitle": "Roots",
+      "moduleSha256": "df96484b006054f6c265e5ecc7e02e52b0df989126f891d71b4757672bfce943"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/30-plant-form-and-physiology/04-leaves.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "30.4",
+      "moduleId": "m66599",
+      "sourceTitle": "Leaves",
+      "moduleSha256": "f037a0d9141336879e1604d29381d1b44246cc3efa069c78ab936d1f0d9ca378"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/30-plant-form-and-physiology/05-transport-of-water-and-solutes-in-plants.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "30.5",
+      "moduleId": "m66600",
+      "sourceTitle": "Transport of Water and Solutes in Plants",
+      "moduleSha256": "d66b17995d93b01c5dd82d91cc76bbf5f1041853c542e05a42e4c3b4bfa56245"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/30-plant-form-and-physiology/06-plant-sensory-systems-and-responses.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "30.6",
+      "moduleId": "m66601",
+      "sourceTitle": "Plant Sensory Systems and Responses",
+      "moduleSha256": "bca58c2b16c859b26a2169931f73db795322a39617b3ca3d203e94c428af79d4"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/31-soil-and-plant-nutrition/01-nutritional-requirements-of-plants.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "31.1",
+      "moduleId": "m66603",
+      "sourceTitle": "Nutritional Requirements of Plants",
+      "moduleSha256": "d3c7c1bfe2c5f61e1bfcc6e60d8ec85778c78d81df3b21f108445d945a0103b4"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/31-soil-and-plant-nutrition/02-the-soil.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "31.2",
+      "moduleId": "m66604",
+      "sourceTitle": "The Soil",
+      "moduleSha256": "48d68bb7adaca9e7c4545165af9e7cce1d7a49818417184ee09e655ce86a4e31"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/31-soil-and-plant-nutrition/03-nutritional-adaptations-of-plants.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "31.3",
+      "moduleId": "m66605",
+      "sourceTitle": "Nutritional Adaptations of Plants",
+      "moduleSha256": "87c500165abdc0784c7659411a5e4be77a13603b7de9f606f471474edc4ea82c"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/32-plant-reproduction/01-reproductive-development-and-structure.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "32.1",
+      "moduleId": "m66607",
+      "sourceTitle": "Reproductive Development and Structure",
+      "moduleSha256": "a6cee8cb6b3df482b6149dc0b5455d458dab18d7ac41820b42e618743588f585"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/32-plant-reproduction/02-pollination-and-fertilization.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "32.2",
+      "moduleId": "m66608",
+      "sourceTitle": "Pollination and Fertilization",
+      "moduleSha256": "83fa27adf0c8b885f1fc54430231e2be9639cc3a5e315309e9931d5de2508361"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/32-plant-reproduction/03-asexual-reproduction.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "32.3",
+      "moduleId": "m66609",
+      "sourceTitle": "Asexual Reproduction",
+      "moduleSha256": "28c4f3b15803e8c2dcbecb220f5496261f95d9a01ba03c1cb95d6cd53a99c375"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

@@ -306,7 +306,10 @@ Formerly called blue-green algae, these (a) cyanobacteria … (credit a: modific
   `Figure_B23_03_07.jpg` and `Figure_B23_03_07.png`), `vendor-media` keys
   each by stem plus lower-cased extension — `Figure_B23_03_07-jpg` and
   `Figure_B23_03_07-png` — so select figures by the manifest's `module`
-  field, never by guessing the stem from the figure number.
+  field, never by guessing the stem from the figure number. Whitespace in
+  a source file name folds to `_` (m66400's `Figure 28.48ab.png.jpg` is the
+  stem `Figure_28.48ab.png` — only the last extension is dropped) because a
+  space would split the figure's `srcset` entry in two.
 - The caption is the source caption, credit line included and verbatim
   (the credit is a license obligation, not decoration).
 - The first figure on a page may take `eager="true"`; every other figure is
@@ -492,6 +495,14 @@ Record every item in the source ledger with its exercise or definition id.
   page item's option list breaks the tie. A `key-differs` report naming an
   exercise whose options are not the page's is that collision, not a wrong
   key — check the exercise id before editing anything.
+- **A source solution that keys two letters.** "A and B. The cortex, pith,
+  and epidermis are made of parenchyma cells." (m66597's Visual Connection)
+  keys two options against a list where only one is defensible.
+  `verify:source-keys` reads a letter list as more than one key and reports
+  `key-differs` whatever the page keys, so the item needs an erratum and a
+  `DISCLOSED_DEVIATIONS` line (kind `key`) naming the option the module's
+  own text supports; before this the letter list read as prose and the
+  page's key was never compared at all.
 
 ## Done checklist (in addition to the core checklist)
 
@@ -529,8 +540,8 @@ Record every item in the source ledger with its exercise or definition id.
   134.8, corpus mean 144.9 (was 243.9 with the tree doubled); the finished
   book projects to ~161 KiB mean, 200 keeps ~24% headroom, and the tree
   emitted twice again lands the mean near 266. The browser suite pins the
-  shape too (`the biology sidebar nests chapters under their unit`: five
-  units and 119 book links in the DOM, first visible link the first chapter).
+  shape too (`the biology sidebar nests chapters under their unit`: six
+  units and 171 book links in the DOM, first visible link the first chapter).
   The rationale and projection live in the comment above
   `maxMeanChromeBytes`.
 - **Browser suite time.** `tests/figures.spec.mjs` walks every route; its

@@ -208,17 +208,17 @@ test('formatTriesCoverage reports n/a rather than 0/0 for a book with no note.tr
   assert.equal(formatTriesCoverage(3, 5), '3/5');
 });
 
-test('committed provenance maps all 379 local sections exactly once', () => {
+test('committed provenance maps all 413 local sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 379);
-  assert.equal(result.actualCount, 379);
+  assert.equal(result.expectedCount, 413);
+  assert.equal(result.actualCount, 413);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
   assert.equal(counts['intermediate-algebra'].length, 70);
   assert.equal(counts.precalculus.length, 73);
-  assert.equal(counts.biology.length, 105);
+  assert.equal(counts.biology.length, 139);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
@@ -262,8 +262,8 @@ test('the Biology book is pinned and in progress, its local landings and mapped 
     authoringStatus: 'in-progress',
     upstreamChapters: 47,
     upstreamSections: 208,
-    localChapters: 25,
-    mappedSections: 105,
+    localChapters: 32,
+    mappedSections: 139,
     // The source's unit → chapter grouping, recorded so the sidebar can nest
     // chapters under their unit and so the grouping cannot drift from the
     // pinned collection. Every chapter 1–47 in exactly one unit.

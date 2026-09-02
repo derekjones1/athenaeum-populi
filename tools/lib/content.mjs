@@ -19,8 +19,8 @@
  * Everything is offset-preserving: masking blanks characters in place rather
  * than deleting them, so a diagnostic still points at the right source line.
  */
-import { readdirSync } from 'node:fs';
-import { join } from 'node:path';
+import { readdirSync, statSync } from 'node:fs';
+import { basename, join } from 'node:path';
 
 /** Replace every character except newlines with a space, keeping offsets. */
 export const blankPreservingOffsets = (s) => s.replace(/[^\n]/g, ' ');
@@ -42,6 +42,12 @@ export const blankPreservingOffsets = (s) => s.replace(/[^\n]/g, ' ');
  */
 export function walkFiles(root, { filter } = {}) {
   const found = [];
+  // A single file is its own one-entry walk, so every tool that takes a
+  // content root (`solve-check emit`, the ledger) also takes one page.
+  if (statSync(root).isFile()) {
+    const name = basename(root);
+    return !filter || filter(name, root) ? [root] : [];
+  }
   for (const entry of readdirSync(root, { withFileTypes: true }).sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0))) {
     const path = join(root, entry.name);
     if (entry.isDirectory()) found.push(...walkFiles(path, { filter }));

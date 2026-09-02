@@ -6,7 +6,7 @@ import path from 'node:path';
 import {
   DISCLOSED_DEVIATIONS, MODEL_COVERAGE_FLOOR,
   checkCorpus, compact, judgeMultipleChoice, judgeSelfcheck, judgeTextin,
-  keyedOptionIndex, pageItems, readModule, skipLines, summaryLine, termAlternates,
+  keyedOptionIndex, keyedOptionIndices, pageItems, readModule, skipLines, summaryLine, termAlternates,
 } from './verify-source-keys.mjs';
 import { BASELINE_SOURCES } from './baselines.mjs';
 import { bundleSourceDirectory, loadSourceLock } from '../lib/openstax-source.mjs';
@@ -27,6 +27,15 @@ test('a bare letter, a lettered restatement, and the option text all name an opt
   assert.equal(keyedOptionIndex('c.', OPTIONS), 2);
   assert.equal(keyedOptionIndex('D. The cytochrome complex is not involved.', OPTIONS), 3);
   assert.equal(keyedOptionIndex('ATP synthase', OPTIONS), 1);
+});
+
+test('a letter list keys several options; a page must then disclose its single key', () => {
+  assert.deepEqual(keyedOptionIndices('A and B. The cortex, pith, and epidermis are made of parenchyma cells.'), [0, 1]);
+  assert.deepEqual(keyedOptionIndices('B, D'), [1, 3]);
+  assert.deepEqual(keyedOptionIndices('a & c: both are inhibited.'), [0, 2]);
+  assert.equal(keyedOptionIndices('A typical body cell contains two matched sets of chromosomes.'), null);
+  assert.equal(keyedOptionIndices('A and its neighbours divide.'), null);
+  assert.equal(keyedOptionIndex('A and B. The cortex, pith, and epidermis are made of parenchyma cells.', OPTIONS), 0);
 });
 
 test('a prose solution that starts with the word "A" is prose, not a key', () => {

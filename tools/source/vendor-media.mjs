@@ -110,8 +110,12 @@ export function kindOf(source) {
   return /\.jpe?g$/i.test(source) ? 'photo' : 'diagram';
 }
 
+/** The manifest key and on-disk file prefix. Drops the extension and folds
+ * whitespace to `_`: m66400 references `media/Figure 28.48ab.png.jpg`, and a
+ * space in the stem would split the `srcset` entry (`Figure 28.48ab.png-800.webp
+ * 800w` reads as two candidates) — the stem still traces to its source file. */
 export function stemOf(source) {
-  return path.basename(source).replace(/\.[^.]+$/, '');
+  return path.basename(source).replace(/\.[^.]+$/, '').replace(/\s+/g, '_');
 }
 
 /** Key every referenced image by a stem unique within the run. Two different

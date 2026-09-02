@@ -138,15 +138,45 @@ closes with how plants and animals are built and how ecosystems work.
   green algae closest to them, the liverworts, hornworts, and mosses, and
   the club mosses, horsetails, whisk ferns, and ferns with their vascular
   tissue, roots, leaves, and life cycle.
+- **Seed Plants** — how seeds and pollen freed plants from water, the
+  gymnosperms with their cones and naked seeds, the angiosperms with their
+  flowers, double fertilization, and fruit, monocots and eudicots, and the
+  role of seed plants in herbivory, pollination, food, and medicine.
+- **Introduction to Animal Diversity** — the features that define animals,
+  embryonic development and the Hox genes, symmetry, germ layers, body
+  cavities and protostome versus deuterostome development, the modern
+  animal phylogeny, and the Ediacaran, Cambrian, and later history of the
+  animal kingdom.
+- **Invertebrates** — sponges, cnidarians, the lophotrochozoan flatworms,
+  rotifers, nemerteans, mollusks, and annelids, the ecdysozoan nematodes,
+  tardigrades, and arthropods, and the invertebrate deuterostomes: the
+  echinoderms and the invertebrate chordates.
+- **Vertebrates** — the chordate body plan and the vertebrate phylogeny,
+  the jawless and jawed fishes, amphibians and the move onto land, the
+  amniotic egg and the reptiles, the flight adaptations of birds, the
+  mammals and their clades, and the evolution of primates and hominins.
+
+### Unit 6: Plant Structure and Function
+
+- **Plant Form and Physiology** — the shoot and root systems and the
+  meristematic, dermal, vascular, and ground tissues, the anatomy and growth
+  of stems, roots, and leaves and their modifications, water potential,
+  transpiration, and the transport of water and photosynthates, and how
+  plants sense and respond to light, gravity, touch, hormones, and attack.
+- **Soil and Plant Nutrition** — the essential macronutrients and
+  micronutrients, how soil forms and is layered into horizons, and the
+  nutritional adaptations of parasites, saprophytes, epiphytes, and
+  insectivorous plants, mycorrhizae, and nitrogen-fixing root nodules.
+- **Plant Reproduction** — the flower, its whorls, and the development of
+  pollen and the embryo sac, pollination by wind, water, insects, birds,
+  and bats, double fertilization, seed and fruit development and dispersal,
+  and asexual reproduction, grafting, cuttings, and plant life spans.
 
 ## Planned contents
 
 Biology 2e has eight units and 47 chapters. Beyond the chapters listed
 above, the following are still to come, in this order:
 
-- **Unit 5: Biological Diversity** (remainder) — Seed Plants; Introduction to Animal Diversity; Invertebrates; Vertebrates.
-- **Unit 6: Plant Structure and Function** — Plant Form and Physiology; Soil
-  and Plant Nutrition; Plant Reproduction.
 - **Unit 7: Animal Structure and Function** — The Animal Body: Basic Form
   and Function; Animal Nutrition and the Digestive System; The Nervous
   System; Sensory Systems; The Endocrine System; The Musculoskeletal System;

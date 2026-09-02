@@ -42,6 +42,12 @@ test('stemOf drops the extension only', () => {
   assert.equal(stemOf('media/Figure_01_01_01-3978.jpg'), 'Figure_01_01_01-3978');
 });
 
+test('stemOf folds whitespace so the stem survives inside a srcset entry', () => {
+  // m66400's `Figure 28.48ab.png.jpg`: only the last extension is dropped,
+  // and the space becomes `_` (a space would split the srcset candidate).
+  assert.equal(stemOf('media/Figure 28.48ab.png.jpg'), 'Figure_28.48ab.png');
+});
+
 test('plainXmlText strips tags and decodes entities', () => {
   assert.equal(plainXmlText('<emphasis effect="italics">Homo</emphasis> sapiens &amp; co'), 'Homo sapiens & co');
 });
