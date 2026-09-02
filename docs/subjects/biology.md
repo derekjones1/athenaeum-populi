@@ -515,35 +515,41 @@ Record every item in the source ledger with its exercise or definition id.
 
 ## Budgets to watch as the book grows
 
-- **HTML total.** `tools/build/audit-build.mjs` caps the built HTML at 280 MiB.
-  The driver is the sidebar, not the prose: every biology page's `<aside>`
-  lists the whole book. Until 2026-09-01 that tree was rendered twice per
-  page (phone drawer + desktop list), the aside was 299.5 KiB at 23 chapters
-  and growing ~2.5 KiB per new section on every biology page, and the cap had
-  to go 220 → 400. `layouts/_partials/sidebar.html` now renders one list for
-  every width (drawer-only rows `hx:md:hidden`, the two wrapper rows flattened
-  by `.ap-sidebar-shell` in `custom.css` from md up): the same corpus measures
-  185.1 MiB (was 271.0), a biology aside 159.4 KiB growing ~0.63 KiB per new
-  section link. The finished book (256 biology pages, aside ~170 KiB) projects
-  to ~59 MiB of biology + 158 MiB math + ~14 MiB of eventual knowledge checks
-  ≈ 231 MiB; 280 keeps ~21% headroom. The full projection lives in the comment
-  above `maxTotalHtmlBytes`. If the cap trips again, re-measure the aside mean
-  and raise deliberately with the new numbers; never by rounding up in
-  advance.
-- **Sidebar share** (`maxSidebarShare 0.45`) is per page: the biology sidebar
-  lists every chapter of the book, so re-check the audit line after each unit.
-- **Chrome per page** (`maxMeanChromeBytes 200 KiB`, the duplicated-chrome
+- **HTML total.** `tools/build/audit-build.mjs` caps the built HTML at 350 MiB.
+  That is HTML only; the audit's summary line prints the all-files size,
+  which also counts ~59 MiB of vendored WebP, so read the gate's own line,
+  not the summary, when judging headroom. The driver is the sidebar, not the
+  prose: every biology page's `<aside>` lists the whole book. Until
+  2026-09-01 that tree was rendered twice per page (phone drawer + desktop
+  list) and the cap had to go 220 → 400; `layouts/_partials/sidebar.html`
+  now renders one list for every width (drawer-only rows `hx:md:hidden`, the
+  two wrapper rows flattened by `.ap-sidebar-shell` in `custom.css` from md
+  up), which took the same corpus from 271.0 to 185.1 MiB and the cap to 280.
+  Re-measured at 32 chapters (516 documents): 206.5 MiB of HTML; a biology
+  page is 283.3 KiB mean with a 217.5 KiB aside at 171 book links, and the
+  aside grows ~1.12 KiB per book link (an earlier note said 0.63 — it had
+  divided by the doubled link count). The finished book (255 book links plus
+  ~47 knowledge-check links, which the math books show do enter the tree,
+  ~304 biology pages at ~430 KiB) projects to ~128 MiB of biology + 158.4 MiB
+  of math ≈ 286 MiB; 350 keeps ~22% headroom. The full projection lives in
+  the comment above `maxTotalHtmlBytes`. If the cap trips again, re-measure
+  the aside mean and raise deliberately with the new numbers; never by
+  rounding up in advance — and consider shrinking the per-link markup
+  instead, since ~1.1 KiB per link on every page of the book is the cost.
+- **Sidebar share** (`maxSidebarShare 0.55`) is per page: the biology sidebar
+  lists every chapter of the book, so re-check the audit line after each
+  unit. Measured 35% at 32 chapters, projected ~50% at completion.
+- **Chrome per page** (`maxMeanChromeBytes 300 KiB`, the duplicated-chrome
   gate) is the cap that guards the single-list sidebar: the book tree is
-  rendered once per page at ~0.63 KiB per link, so every section added grows
-  every biology page's chrome by ~0.6 KiB. Measured September 1, 2026 at 23
-  chapters, after the fix: biology pages 182.8 KiB (aside 159.4), math pages
-  134.8, corpus mean 144.9 (was 243.9 with the tree doubled); the finished
-  book projects to ~161 KiB mean, 200 keeps ~24% headroom, and the tree
-  emitted twice again lands the mean near 266. The browser suite pins the
-  shape too (`the biology sidebar nests chapters under their unit`: six
-  units and 171 book links in the DOM, first visible link the first chapter).
-  The rationale and projection live in the comment above
-  `maxMeanChromeBytes`.
+  rendered once per page at ~1.12 KiB per link, so every section added grows
+  every biology page's chrome by about that. Measured September 1, 2026 at
+  32 chapters: biology pages 241.1 KiB (aside 217.5), math pages 131.6,
+  corpus mean 168.3; the finished book projects to ~252 KiB mean, 300 keeps
+  ~19% headroom, and the tree emitted twice again lands the mean near 312
+  today and ~480 at completion. The browser suite pins the shape too (`the
+  biology sidebar nests chapters under their unit`: six units and 171 book
+  links in the DOM, first visible link the first chapter). The rationale and
+  projection live in the comment above `maxMeanChromeBytes`.
 - **Browser suite time.** `tests/figures.spec.mjs` walks every route; its
   timeout scales with the route count, but watch its wall time in the
   browser-suite tail after each chapter.

@@ -89,7 +89,19 @@ const filesWarnAt = 0.9;
 // ~231 MiB projected. 280 MiB keeps ~21% headroom over that. The duplication
 // gates below (absolute bytes outside main#content) still catch a
 // doubled-chrome regression long before this total does.
-const maxTotalHtmlBytes = 280 * 1024 * 1024;
+//
+// Re-projected September 1, 2026 at 32 biology chapters (516 documents,
+// 206.5 MiB of HTML; NOT the all-files figure the summary line prints, which
+// also counts ~59 MiB of vendored WebP). The "~0.63 KiB per link" above was
+// wrong: it divided the aside by the DOUBLED link count. Measured growth is
+// ~1.12 KiB per book link (159.4 KiB at 119 links -> 217.5 KiB at 171), so a
+// biology page is 283.3 KiB mean (aside 217.5) today and, at completion (255
+// book links + ~47 knowledge-check links, which the math books show DO enter
+// the tree), ~430 KiB mean (aside ~364) across ~304 biology pages: ~128 MiB
+// of biology + 158.4 MiB math = ~286 MiB projected. 350 MiB keeps ~22%
+// headroom over that. The sidebar itself — ~1.1 KiB of markup per link on
+// every page of the book — is the thing to shrink if this trips again.
+const maxTotalHtmlBytes = 350 * 1024 * 1024;
 const maxPageBytes = 1.5 * 1024 * 1024;
 const maxPageElements = 35_000;
 // Duplicated non-content markup, as an ABSOLUTE mean per page.
@@ -126,8 +138,21 @@ const maxPageElements = 35_000;
 // emitted twice again — lands the mean near 266 KiB today and higher as the
 // book grows. Re-measure and raise deliberately, never by rounding up in
 // advance.
-const maxSidebarShare = 0.45;
-const maxMeanChromeBytes = 200 * 1024;
+//
+// Re-based September 1, 2026 at 32 biology chapters, with the corrected
+// growth rate (~1.12 KiB per book link, see maxTotalHtmlBytes): corpus mean
+// chrome 168.3 KiB (biology pages 241.1, aside 217.5 at 171 links; math pages
+// 131.6, aside 107.0). At completion (~302 links) a biology page carries
+// ~388 KiB of chrome and the corpus mean lands near 252 KiB, so 200 would
+// have tripped mid-unit-7 on an ordinary chapter commit. 300 KiB is ~19%
+// over that projection. The doubled-tree regression signature is ~312 KiB
+// on today's corpus (168 + a second copy of every aside) and ~480 at
+// completion, so the gate still catches it — with less margin today than
+// before, which is why audit-build.test.mjs sizes its fixture aside like a
+// real one (~220 KiB). Sidebar SHARE projects to ~50% at completion (35%
+// today), so it moves to 0.55; it is not the duplication gate (see above).
+const maxSidebarShare = 0.55;
+const maxMeanChromeBytes = 300 * 1024;
 if (!existsSync(root)) throw new Error(`Built site not found: ${root} (run npm run build first)`);
 const built = walkFiles(root);
 const bytes = built.reduce((sum, file) => sum + statSync(file).size, 0);

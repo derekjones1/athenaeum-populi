@@ -94,7 +94,7 @@ breakpoint the theme's own `sidebar.css` and `menu.js` use for the drawer),
 so the desktop reader sees exactly the tree the second list used to draw.
 The theme's `sidebar.js` needs no change: collapsible buttons still sit in
 their `<li>`, and its scroll-to-active already picks the first active item
-with a visible box. `audit-build`'s mean-chrome budget (200 KiB) is the
+with a visible box. `audit-build`'s mean-chrome budget (300 KiB) is the
 gate against the tree coming back twice, and the browser suite pins the
 shape (six units and 171 book links in the DOM on a biology page, the
 first chapter as the first visible link, one sidebar contact link).
