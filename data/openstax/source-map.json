@@ -58,8 +58,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 47,
       "upstreamSections": 208,
-      "localChapters": 32,
-      "mappedSections": 139,
+      "localChapters": 42,
+      "mappedSections": 182,
       "units": [
         {
           "index": 1,
@@ -1410,6 +1410,393 @@
       "moduleId": "m66609",
       "sourceTitle": "Asexual Reproduction",
       "moduleSha256": "28c4f3b15803e8c2dcbecb220f5496261f95d9a01ba03c1cb95d6cd53a99c375"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/33-the-animal-body-basic-form-and-function/01-animal-form-and-function.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "33.1",
+      "moduleId": "m66611",
+      "sourceTitle": "Animal Form and Function",
+      "moduleSha256": "0b61afc120433a1651a4ad46fbfdecf594d8937a53de2728bd665fdbb2c370f3"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/33-the-animal-body-basic-form-and-function/02-animal-primary-tissues.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "33.2",
+      "moduleId": "m66612",
+      "sourceTitle": "Animal Primary Tissues",
+      "moduleSha256": "e12bd422066f2c2b6e6347179e9b414585a1d2349a96e170ee5d26116646d9b0"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/33-the-animal-body-basic-form-and-function/03-homeostasis.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "33.3",
+      "moduleId": "m66613",
+      "sourceTitle": "Homeostasis",
+      "moduleSha256": "0d55169813bae27500dd747c6cbd9221e69c28622ff37bb065b310db10388876"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/01-digestive-systems.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "34.1",
+      "moduleId": "m66615",
+      "sourceTitle": "Digestive Systems",
+      "moduleSha256": "a61e6e1d80cecaa5a3dc725d71352bd196c92acea1e9e3df4d3e34ce3622662e"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/02-nutrition-and-energy-production.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "34.2",
+      "moduleId": "m66616",
+      "sourceTitle": "Nutrition and Energy Production",
+      "moduleSha256": "b206623ec08cbcbead1363157e442eff19363f131f05d54de348137a47799c03"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/03-digestive-system-processes.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "34.3",
+      "moduleId": "m66617",
+      "sourceTitle": "Digestive System Processes",
+      "moduleSha256": "42772cca3b3f289aa016caff9c8d48cde50c3c8fbcbdc1219081202887a5a0e2"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/04-digestive-system-regulation.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "34.4",
+      "moduleId": "m66618",
+      "sourceTitle": "Digestive System Regulation",
+      "moduleSha256": "7fe213abb620c4cb5cd98f5fb6cd9d71cfdc971439bb6d9cec4a7047f2789205"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/35-the-nervous-system/01-neurons-and-glial-cells.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "35.1",
+      "moduleId": "m66620",
+      "sourceTitle": "Neurons and Glial Cells",
+      "moduleSha256": "359080a54b13aa5dc2f5a2be603667f192b10057fc624cbcb34fbf5342b7d1d3"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/35-the-nervous-system/02-how-neurons-communicate.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "35.2",
+      "moduleId": "m66621",
+      "sourceTitle": "How Neurons Communicate",
+      "moduleSha256": "7bbdfac100fd96e85216cb9717bc7b05673514af47446b21411a1f5b813d4b9f"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/35-the-nervous-system/03-the-central-nervous-system.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "35.3",
+      "moduleId": "m66622",
+      "sourceTitle": "The Central Nervous System",
+      "moduleSha256": "e2de857839bbe5568bc754d537b7725b56b10aa03fae6d1b646c9037cc642591"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/35-the-nervous-system/04-the-peripheral-nervous-system.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "35.4",
+      "moduleId": "m66623",
+      "sourceTitle": "The Peripheral Nervous System",
+      "moduleSha256": "b09ab59e77283fa76b4536ec28af78bcecefe03dd28f92d2a10b7ec7fbd9c7ee"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/35-the-nervous-system/05-nervous-system-disorders.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "35.5",
+      "moduleId": "m66624",
+      "sourceTitle": "Nervous System Disorders",
+      "moduleSha256": "989fd04d84b79fbb325a528212328e89e8676a028556566f3d4fb6457b6060f4"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/36-sensory-systems/01-sensory-processes.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "36.1",
+      "moduleId": "m66402",
+      "sourceTitle": "Sensory Processes",
+      "moduleSha256": "d6f9d7578222946c054f525263acfb0050d69cc685cef0286ec0756cab1978fc"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/36-sensory-systems/02-somatosensation.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "36.2",
+      "moduleId": "m66404",
+      "sourceTitle": "Somatosensation",
+      "moduleSha256": "e902026a46a0786e293ec7ca7cbe99c49acde9213065e4c276dcb8187c3e236a"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/36-sensory-systems/03-taste-and-smell.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "36.3",
+      "moduleId": "m66405",
+      "sourceTitle": "Taste and Smell",
+      "moduleSha256": "d36c4f43ed17c3f4d56dd4b5a4375c478c6a3041bc6d0d84aaaa1816054fa6dd"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/36-sensory-systems/04-hearing-and-vestibular-sensation.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "36.4",
+      "moduleId": "m66407",
+      "sourceTitle": "Hearing and Vestibular Sensation",
+      "moduleSha256": "4638d174e640746876a5a506f1a7ffa774315f7ea9699383773292a2b9f50500"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/36-sensory-systems/05-vision.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "36.5",
+      "moduleId": "m66408",
+      "sourceTitle": "Vision",
+      "moduleSha256": "f2c74a6075f344eddfaa7fd209248b4d793277a898ad78370dc554f911ceaa1a"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/37-the-endocrine-system/01-types-of-hormones.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "37.1",
+      "moduleId": "m66626",
+      "sourceTitle": "Types of Hormones",
+      "moduleSha256": "04df4c72397f2c84515e60719a4469df3c270a80c8ae24189a989c25f1da2d9a"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/37-the-endocrine-system/02-how-hormones-work.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "37.2",
+      "moduleId": "m66628",
+      "sourceTitle": "How Hormones Work",
+      "moduleSha256": "a6dfd950e0a97a29291bff083abe12d6ca6fe1f5d8d652fee8272825cdce5692"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/37-the-endocrine-system/03-regulation-of-body-processes.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "37.3",
+      "moduleId": "m66629",
+      "sourceTitle": "Regulation of Body Processes",
+      "moduleSha256": "89faa104993e9d2f1f07261ab5d2b0020f7bbe8b59d536e9dfdaefd587a2a542"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/37-the-endocrine-system/04-regulation-of-hormone-production.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "37.4",
+      "moduleId": "m66630",
+      "sourceTitle": "Regulation of Hormone Production",
+      "moduleSha256": "879725b93aa4c1d1e92b37480fb9f0051e483cb7527657fd1aa81afee3d58b95"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/37-the-endocrine-system/05-endocrine-glands.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "37.5",
+      "moduleId": "m66631",
+      "sourceTitle": "Endocrine Glands",
+      "moduleSha256": "81ca184017eb37f2f1937e79c5ce218c6b56cbfb3ace7257213fe83879dab8eb"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/38-the-musculoskeletal-system/01-types-of-skeletal-systems.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "38.1",
+      "moduleId": "m66635",
+      "sourceTitle": "Types of Skeletal Systems",
+      "moduleSha256": "2a23f145702edc8b75c8a8e9b5443afd28fb4905230ad21758dd94f73f75de66"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/38-the-musculoskeletal-system/02-bone.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "38.2",
+      "moduleId": "m66638",
+      "sourceTitle": "Bone",
+      "moduleSha256": "dd9f55a1c37e0fc399a11650ae6b703618c8194a1640e76b1392acd99a20a956"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/38-the-musculoskeletal-system/03-joints-and-skeletal-movement.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "38.3",
+      "moduleId": "m66639",
+      "sourceTitle": "Joints and Skeletal Movement",
+      "moduleSha256": "45ac4f72f4aef3ae7dc6344c407669ca9c4af06af47a50eef6ac0e297f7dff86"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/38-the-musculoskeletal-system/04-muscle-contraction-and-locomotion.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "38.4",
+      "moduleId": "m66643",
+      "sourceTitle": "Muscle Contraction and Locomotion",
+      "moduleSha256": "7942ac4b7fa801904ac210c754fc3a5c3e8ba5b7c08fb4fca746c92cea6f0250"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/39-the-respiratory-system/01-systems-of-gas-exchange.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "39.1",
+      "moduleId": "m66645",
+      "sourceTitle": "Systems of Gas Exchange",
+      "moduleSha256": "7ca4f3031f0f657697d9cefff275d2a44efd3af6d22e387fbda1b814d7a3a466"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/39-the-respiratory-system/02-gas-exchange-across-respiratory-surfaces.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "39.2",
+      "moduleId": "m66646",
+      "sourceTitle": "Gas Exchange across Respiratory Surfaces",
+      "moduleSha256": "7adc80bd7168596af64f212a87d2ef01c45118b21a8f18ba890be2ef4c193fec"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/39-the-respiratory-system/03-breathing.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "39.3",
+      "moduleId": "m66647",
+      "sourceTitle": "Breathing",
+      "moduleSha256": "3ab3c7229bff22f640f46a34db2becff9ab5197d1f39eeada9432dafeb03018f"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/39-the-respiratory-system/04-transport-of-gases-in-human-bodily-fluids.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "39.4",
+      "moduleId": "m66648",
+      "sourceTitle": "Transport of Gases in Human Bodily Fluids",
+      "moduleSha256": "c3e1fd2d5c3d99096fe746928e68c2281c81ac5d30be9546ed9bf73ef37dea34"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/40-the-circulatory-system/01-overview-of-the-circulatory-system.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "40.1",
+      "moduleId": "m66650",
+      "sourceTitle": "Overview of the Circulatory System",
+      "moduleSha256": "b1ae2aa0fc8890d705d8dce37becd25bb319db1e9910230efcccb95c4aba5028"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/40-the-circulatory-system/02-components-of-the-blood.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "40.2",
+      "moduleId": "m66651",
+      "sourceTitle": "Components of the Blood",
+      "moduleSha256": "3dcd7f479b3438ac231bee76c5499f39fb7d258bcf8f145cd1c7a1d8d028a458"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/40-the-circulatory-system/03-mammalian-heart-and-blood-vessels.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "40.3",
+      "moduleId": "m66653",
+      "sourceTitle": "Mammalian Heart and Blood Vessels",
+      "moduleSha256": "e9ec1c242b9da022a3c4b66193bd917be31858ffbd350a996b4bda4d348bf401"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/40-the-circulatory-system/04-blood-flow-and-blood-pressure-regulation.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "40.4",
+      "moduleId": "m66654",
+      "sourceTitle": "Blood Flow and Blood Pressure Regulation",
+      "moduleSha256": "b911b5bdd9c41405d5c7bdfd6468b94fd607179ca50817db57465dde36d6299d"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/01-osmoregulation-and-osmotic-balance.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "41.1",
+      "moduleId": "m66656",
+      "sourceTitle": "Osmoregulation and Osmotic Balance",
+      "moduleSha256": "49fad891881e5c393f2cc3aeeab4ddb6468b1ed68c7475a2ac5f304b169479f8"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/02-the-kidneys-and-osmoregulatory-organs.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "41.2",
+      "moduleId": "m66658",
+      "sourceTitle": "The Kidneys and Osmoregulatory Organs",
+      "moduleSha256": "bd3088fbad154685bdc38585a271f0ab79163dc7810c3f7e72286208b07062f5"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/03-excretion-systems.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "41.3",
+      "moduleId": "m66659",
+      "sourceTitle": "Excretion Systems",
+      "moduleSha256": "0f0fbb1832ba965ac7dfc2510f60dde75fc7708178491c1932ec32129d27e4b3"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/04-nitrogenous-wastes.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "41.4",
+      "moduleId": "m66660",
+      "sourceTitle": "Nitrogenous Wastes",
+      "moduleSha256": "ba9facfd8cccebe41536c49e538c678da11af47114f4440d054c823d4a4c2c6c"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/05-hormonal-control-of-osmoregulatory-functions.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "41.5",
+      "moduleId": "m66661",
+      "sourceTitle": "Hormonal Control of Osmoregulatory Functions",
+      "moduleSha256": "241ba8e7c1e80508184cb9b67c2ff8aa30ed36cf45ba523994233bf503c740dc"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/42-the-immune-system/01-innate-immune-response.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "42.1",
+      "moduleId": "m66663",
+      "sourceTitle": "Innate Immune Response",
+      "moduleSha256": "a4c1c4aa531e3f852016bbbaeb0a28f6cc0962dd6bed35f541da3f06499d2387"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/42-the-immune-system/02-adaptive-immune-response.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "42.2",
+      "moduleId": "m66664",
+      "sourceTitle": "Adaptive Immune Response",
+      "moduleSha256": "5a088bf8d46f9ccfa725cce57901e1113046cabc398dee9ee51613536bf052a0"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/42-the-immune-system/03-antibodies.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "42.3",
+      "moduleId": "m66665",
+      "sourceTitle": "Antibodies",
+      "moduleSha256": "e1071a72ce664662ea0af0cc9530de7ab8241bd79bb25952796f8097acf22678"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/42-the-immune-system/04-disruptions-in-the-immune-system.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "42.4",
+      "moduleId": "m66666",
+      "sourceTitle": "Disruptions in the Immune System",
+      "moduleSha256": "88422cb30e7ade1790f00c628e9eff0975dcc360b2c07d3c68bd059a698e2aae"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

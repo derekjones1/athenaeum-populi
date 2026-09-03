@@ -14,19 +14,19 @@
 ## Coverage
 
 - Books with mapped sections: 1
-- Numbered sections mapped: 139
-- Metadata matched without a flag: 139
+- Numbered sections mapped: 169
+- Metadata matched without a flag: 169
 - Intentional adaptations adjudicated: 0
 - Unresolved sections needing review: 0
 - Modules differing from the committed map: 0
-- Objectives automatically located: 437/437
-- Core instructional headings automatically located: 429/429
-- Local interactive questions inventoried: 1851
+- Objectives automatically located: 521/521
+- Core instructional headings automatically located: 540/540
+- Local interactive questions inventoried: 2326
 - Upstream Try It prompts with a likely local prompt match: n/a
 
 | Book | Bundle | Authoring status | Chapters | Sections mapped |
 |---|---|---|---:|---:|
-| biology | `biology-bundle` | in-progress | 32/47 | 139/208 |
+| biology | `biology-bundle` | in-progress | 39/47 | 169/208 |
 
 The prose percentage is five-word source-shingle traceability, not a quality
 score. Low values can reflect disclosed condensation, reformatted mathematics,
@@ -175,3 +175,33 @@ or intentionally omitted print material.
 | [biology 32.1](../../content/life-health-sciences/biology/32-plant-reproduction/01-reproductive-development-and-structure.md) | `m66607` | metadata matched | 5/5 | 3/3 | 94% | 0/0 | 21 |
 | [biology 32.2](../../content/life-health-sciences/biology/32-plant-reproduction/02-pollination-and-fertilization.md) | `m66608` | metadata matched | 4/4 | 8/8 | 99% | 0/0 | 17 |
 | [biology 32.3](../../content/life-health-sciences/biology/32-plant-reproduction/03-asexual-reproduction.md) | `m66609` | metadata matched | 3/3 | 3/3 | 99% | 0/0 | 13 |
+| [biology 33.1](../../content/life-health-sciences/biology/33-the-animal-body-basic-form-and-function/01-animal-form-and-function.md) | `m66611` | metadata matched | 3/3 | 5/5 | 97% | 0/0 | 18 |
+| [biology 33.2](../../content/life-health-sciences/biology/33-the-animal-body-basic-form-and-function/02-animal-primary-tissues.md) | `m66612` | metadata matched | 4/4 | 4/4 | 96% | 0/0 | 21 |
+| [biology 33.3](../../content/life-health-sciences/biology/33-the-animal-body-basic-form-and-function/03-homeostasis.md) | `m66613` | metadata matched | 4/4 | 6/6 | 94% | 0/0 | 21 |
+| [biology 34.1](../../content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/01-digestive-systems.md) | `m66615` | metadata matched | 4/4 | 4/4 | 96% | 0/0 | 16 |
+| [biology 34.2](../../content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/02-nutrition-and-energy-production.md) | `m66616` | metadata matched | 5/5 | 2/2 | 98% | 0/0 | 20 |
+| [biology 34.3](../../content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/03-digestive-system-processes.md) | `m66617` | metadata matched | 4/4 | 3/3 | 97% | 0/0 | 19 |
+| [biology 34.4](../../content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/04-digestive-system-regulation.md) | `m66618` | metadata matched | 2/2 | 2/2 | 99% | 0/0 | 15 |
+| [biology 35.1](../../content/life-health-sciences/biology/35-the-nervous-system/01-neurons-and-glial-cells.md) | `m66620` | metadata matched | 3/3 | 2/2 | 97% | 0/0 | 15 |
+| [biology 35.2](../../content/life-health-sciences/biology/35-the-nervous-system/02-how-neurons-communicate.md) | `m66621` | metadata matched | 4/4 | 4/4 | 96% | 0/0 | 23 |
+| [biology 35.3](../../content/life-health-sciences/biology/35-the-nervous-system/03-the-central-nervous-system.md) | `m66622` | metadata matched | 2/2 | 2/2 | 96% | 0/0 | 14 |
+| [biology 35.4](../../content/life-health-sciences/biology/35-the-nervous-system/04-the-peripheral-nervous-system.md) | `m66623` | metadata matched | 2/2 | 2/2 | 96% | 0/0 | 12 |
+| [biology 35.5](../../content/life-health-sciences/biology/35-the-nervous-system/05-nervous-system-disorders.md) | `m66624` | metadata matched | 1/1 | 3/3 | 97% | 0/0 | 12 |
+| [biology 36.1](../../content/life-health-sciences/biology/36-sensory-systems/01-sensory-processes.md) | `m66402` | metadata matched | 3/3 | 3/3 | 99% | 0/0 | 19 |
+| [biology 36.2](../../content/life-health-sciences/biology/36-sensory-systems/02-somatosensation.md) | `m66404` | metadata matched | 3/3 | 3/3 | 98% | 0/0 | 12 |
+| [biology 36.3](../../content/life-health-sciences/biology/36-sensory-systems/03-taste-and-smell.md) | `m66405` | metadata matched | 3/3 | 3/3 | 98% | 0/0 | 13 |
+| [biology 36.4](../../content/life-health-sciences/biology/36-sensory-systems/04-hearing-and-vestibular-sensation.md) | `m66407` | metadata matched | 3/3 | 4/4 | 95% | 0/0 | 17 |
+| [biology 36.5](../../content/life-health-sciences/biology/36-sensory-systems/05-vision.md) | `m66408` | metadata matched | 3/3 | 4/4 | 97% | 0/0 | 19 |
+| [biology 37.1](../../content/life-health-sciences/biology/37-the-endocrine-system/01-types-of-hormones.md) | `m66626` | metadata matched | 2/2 | 3/3 | 98% | 0/0 | 11 |
+| [biology 37.2](../../content/life-health-sciences/biology/37-the-endocrine-system/02-how-hormones-work.md) | `m66628` | metadata matched | 2/2 | 2/2 | 91% | 0/0 | 16 |
+| [biology 37.3](../../content/life-health-sciences/biology/37-the-endocrine-system/03-regulation-of-body-processes.md) | `m66629` | metadata matched | 4/4 | 6/6 | 98% | 0/0 | 31 |
+| [biology 37.4](../../content/life-health-sciences/biology/37-the-endocrine-system/04-regulation-of-hormone-production.md) | `m66630` | metadata matched | 2/2 | 3/3 | 100% | 0/0 | 10 |
+| [biology 37.5](../../content/life-health-sciences/biology/37-the-endocrine-system/05-endocrine-glands.md) | `m66631` | metadata matched | 2/2 | 8/8 | 99% | 0/0 | 12 |
+| [biology 38.1](../../content/life-health-sciences/biology/38-the-musculoskeletal-system/01-types-of-skeletal-systems.md) | `m66635` | metadata matched | 3/3 | 5/5 | 98% | 0/0 | 15 |
+| [biology 38.2](../../content/life-health-sciences/biology/38-the-musculoskeletal-system/02-bone.md) | `m66638` | metadata matched | 3/3 | 3/3 | 98% | 0/0 | 15 |
+| [biology 38.3](../../content/life-health-sciences/biology/38-the-musculoskeletal-system/03-joints-and-skeletal-movement.md) | `m66639` | metadata matched | 2/2 | 4/4 | 97% | 0/0 | 20 |
+| [biology 38.4](../../content/life-health-sciences/biology/38-the-musculoskeletal-system/04-muscle-contraction-and-locomotion.md) | `m66643` | metadata matched | 2/2 | 6/6 | 98% | 0/0 | 14 |
+| [biology 39.1](../../content/life-health-sciences/biology/39-the-respiratory-system/01-systems-of-gas-exchange.md) | `m66645` | metadata matched | 2/2 | 5/5 | 96% | 0/0 | 11 |
+| [biology 39.2](../../content/life-health-sciences/biology/39-the-respiratory-system/02-gas-exchange-across-respiratory-surfaces.md) | `m66646` | metadata matched | 2/2 | 4/4 | 98% | 0/0 | 13 |
+| [biology 39.3](../../content/life-health-sciences/biology/39-the-respiratory-system/03-breathing.md) | `m66647` | metadata matched | 3/3 | 4/4 | 98% | 0/0 | 10 |
+| [biology 39.4](../../content/life-health-sciences/biology/39-the-respiratory-system/04-transport-of-gases-in-human-bodily-fluids.md) | `m66648` | metadata matched | 2/2 | 2/2 | 94% | 0/0 | 11 |

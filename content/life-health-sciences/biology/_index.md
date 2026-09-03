@@ -172,16 +172,61 @@ closes with how plants and animals are built and how ecosystems work.
   and bats, double fertilization, seed and fruit development and dispersal,
   and asexual reproduction, grafting, cuttings, and plant life spans.
 
+### Unit 7: Animal Structure and Function
+
+- **The Animal Body: Basic Form and Function** — body plans, symmetry, and
+  the limits diffusion and metabolism place on size and shape, the four
+  primary tissue types and their subtypes, and homeostasis, feedback loops,
+  and thermoregulation.
+- **Animal Nutrition and the Digestive System** — the digestive systems of
+  invertebrates, birds, ruminants, and humans, the essential nutrients,
+  vitamins, and minerals of a balanced diet and how food is converted to
+  energy, the ingestion, digestion, absorption, and elimination of
+  carbohydrates, proteins, and lipids, and the neural and hormonal
+  regulation of digestion.
+- **The Nervous System** — neurons and glial cells, resting and action
+  potentials and chemical and electrical synapses, the brain, spinal cord,
+  and meninges of the central nervous system, the autonomic and
+  sensory-somatic divisions of the peripheral nervous system, and
+  neurodegenerative, neurodevelopmental, and other neurological disorders.
+- **Sensory Systems** — how receptors transduce stimuli and the brain perceives
+  them, the mechanoreceptors and nociceptors of the skin, taste and smell,
+  hearing and the vestibular sense, and the path of light through the eye to
+  the visual cortex.
+- **The Endocrine System** — the lipid-derived, amino acid-derived, and
+  peptide hormones, intracellular and plasma membrane hormone receptors and
+  signaling pathways, the hormonal regulation of excretion, reproduction,
+  metabolism, blood calcium, growth, and stress, humoral, hormonal, and
+  neural control of hormone release, and the endocrine glands.
+- **The Musculoskeletal System** — hydrostatic skeletons, exoskeletons, and
+  the axial and appendicular endoskeleton, bone tissue, cells, growth, and
+  remodeling, the structural and functional classes of joints and the
+  movements they allow, and the sliding-filament model of muscle
+  contraction and locomotion.
+- **The Respiratory System** — gas exchange across skin, gills, tracheae, and
+  lungs, lung volumes and capacities and the partial pressures that drive
+  diffusion, the mechanics and regulation of breathing, and the transport
+  of oxygen and carbon dioxide in blood.
+- **The Circulatory System** — open and closed circulatory systems and the
+  vertebrate heart plans, the cellular and plasma components of blood, the
+  mammalian heart, its cycle and conduction, and the vessels, and how blood
+  flow and blood pressure are regulated.
+- **Osmotic Regulation and Excretion** — osmoregulation and osmotic balance,
+  the kidney and nephron and the three steps of urine formation, the
+  excretory systems of other animals, the nitrogenous wastes and why animals
+  differ in which they make, and the hormones that control kidney function.
+- **The Immune System** — the innate barriers, cells, and complement
+  system, the adaptive response of T cells, B cells, and memory, antibody
+  structure, classes, and function, and hypersensitivities, autoimmunity,
+  and immunodeficiency.
+
 ## Planned contents
 
 Biology 2e has eight units and 47 chapters. Beyond the chapters listed
 above, the following are still to come, in this order:
 
-- **Unit 7: Animal Structure and Function** — The Animal Body: Basic Form
-  and Function; Animal Nutrition and the Digestive System; The Nervous
-  System; Sensory Systems; The Endocrine System; The Musculoskeletal System;
-  The Respiratory System; The Circulatory System; Osmotic Regulation and
-  Excretion; The Immune System; Animal Reproduction and Development.
+- **Unit 7: Animal Structure and Function** (remainder) — Animal
+  Reproduction and Development.
 - **Unit 8: Ecology** — Ecology and the Biosphere; Population and Community
   Ecology; Ecosystems; Conservation Biology and Biodiversity.
 

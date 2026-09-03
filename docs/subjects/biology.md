@@ -255,6 +255,16 @@ Cases the cell chapters settled (unit 2):
   Unicode Δ; the one genuine equation, `ΔG = ΔH − TΔS`, is `$…$`. The source
   auditor folds a Unicode sub/superscript digit into its own token so that
   `CO₂` matches a `<sub>2</sub>` heading.
+- **Partial pressures (unit 7, ch. 39).** In prose, options, hints, and
+  selfcheck text a partial pressure is `P<sub>O₂</sub>` / `P<sub>CO₂</sub>`
+  (HTML sub around Unicode digits — the source's MathML `P O 2` has no
+  glyph form). The source's display equations (`P_atm = P_N₂ + P_O₂ + …`,
+  the alveolar-P_O₂ equation, the worked mm Hg arithmetic) are genuine
+  equations and go in `$…$` on their own lines with `P_{\text{O}_2}`. Inside
+  an `alt` or `longdesc` — plain-text attributes — spell it out: "oxygen
+  partial pressure (PO₂)". `verify-source-keys` strips inline HTML before
+  comparing an option with the source list, so `P<sub>O₂</sub>` matches
+  the source's "P O 2".
 - **An objective group left thin by the source may get an author-written item**
 — an objective no source item tests, or a group short of the book's floor
 after its source items and summary items are placed:
@@ -334,6 +344,11 @@ Formerly called blue-green algae, these (a) cyanobacteria … (credit a: modific
   and (b) are, or when it describes the picture but not the relationship
   the figure exists to show. The alt must not repeat the caption (lint) —
   the caption is already read after it.
+- `alt` and `longdesc` are plain text: no HTML tag inside either (lint). A
+  screen reader voices `<sub>` as tag soup and a raw `>` truncates the
+  `<img>` for every regex-based auditor (the build audit read 39.4's two
+  `P<sub>O₂</sub>` alts as malformed images). Use Unicode where a glyph
+  exists (`X ᵂ`, `cᶜʰ`, `p²`) and words where it does not.
 - `alt` is at most 600 characters (lint). Longer descriptions — flow charts,
   labeled anatomy, phylogenies, graphs with data — go in `longdesc`, which
   renders as a collapsed "Extended description" after the caption. A
@@ -547,7 +562,7 @@ Record every item in the source ledger with its exercise or definition id.
   corpus mean 168.3; the finished book projects to ~252 KiB mean, 300 keeps
   ~19% headroom, and the tree emitted twice again lands the mean near 312
   today and ~480 at completion. The browser suite pins the shape too (`the
-  biology sidebar nests chapters under their unit`: six units and 171 book
+  biology sidebar nests chapters under their unit`: seven units and 224 book
   links in the DOM, first visible link the first chapter). The rationale and
   projection live in the comment above `maxMeanChromeBytes`.
 - **Browser suite time.** `tests/figures.spec.mjs` walks every route; its

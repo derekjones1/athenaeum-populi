@@ -91,6 +91,69 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/biology/40-the-circulatory-system/03-mammalian-heart-and-blood-vessels.md',
+    exercise: 'fs-idm133142336',
+    kind: 'key',
+    erratum: 267,
+    reason: 'source keys "Blood in the pulmonary artery is deoxygenated" as the false statement, but the module\'s own text sends blood from the right ventricle "to the pulmonary arteries and on to the lungs for re-oxygenation" and has the left atrium receive "the oxygen-rich blood from the lungs via the pulmonary veins", so that option is true and "Blood in the pulmonary vein is deoxygenated" is the false one; the page keys that option',
+  },
+  {
+    page: 'content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/05-hormonal-control-of-osmoregulatory-functions.md',
+    exercise: 'fs-idm77856336',
+    kind: 'key',
+    erratum: 268,
+    reason: 'source keys "granular cells of the juxtaglomerular apparatus" for where renin is made, but the module\'s own table lists renin as produced in "Kidney nephrons" and its prose says it "is produced by the granular cells of the afferent and efferent arterioles", which makes "the kidneys" and "the nephrons" true as well; the page keys "all of the above"',
+  },
+  {
+    page: 'content/life-health-sciences/biology/38-the-musculoskeletal-system/04-muscle-contraction-and-locomotion.md',
+    exercise: 'fs-idm30541680',
+    kind: 'key',
+    erratum: 256,
+    reason: 'source keys "none of the above" for what a muscle fiber\'s ability to generate tension depends on, but the module\'s own text says "The number of cross-bridges formed between actin and myosin determine the amount of tension" and that maximal tension "occurs when thick and thin filaments overlap to the greatest degree", which makes the option "overlap of myosin and actin" true; the page keys that option',
+  },
+  {
+    page: 'content/life-health-sciences/biology/39-the-respiratory-system/02-gas-exchange-across-respiratory-surfaces.md',
+    exercise: 'fs-idp77276032',
+    kind: 'solution',
+    erratum: 257,
+    reason: 'the source solution says a doctor detects "a restrictive disease" such as fibrosis when a patient has increased resistance in the lungs, but the module\'s own text ties resistance to a low FEV1/FVC ratio "characteristic of asthma" (an obstructive condition) and the Breathing section defines restrictive disease as reduced compliance; the page\'s model answer says an obstructive condition such as asthma',
+  },
+  {
+    page: 'content/life-health-sciences/biology/36-sensory-systems/02-somatosensation.md',
+    exercise: 'fs-idm75363216',
+    kind: 'key',
+    erratum: 250,
+    reason: 'source keys "Merkel\'s disks; glabrous" for the receptor found only in one skin type that detects skin deflection, but the module\'s own text places Merkel\'s disks "both in skin that has hair and on glabrous skin" responding to light touch, and its glossary says hair receptors "detect hair movement and skin deflection"; the page keys "hair receptors; hairy"',
+  },
+  {
+    page: 'content/life-health-sciences/biology/36-sensory-systems/02-somatosensation.md',
+    exercise: 'fs-idp18848768',
+    kind: 'options',
+    erratum: 251,
+    reason: 'the exercise copy of the Visual Connection prints "Pacini corpuscles" where the note copy and the module body print "Pacinian corpuscles"; the page prints "Pacinian" (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/33-the-animal-body-basic-form-and-function/02-animal-primary-tissues.md',
+    exercise: 'fs-idp135609056',
+    kind: 'key',
+    erratum: 239,
+    reason: 'source keys "columnar" as the epithelial cell best adapted to aid diffusion, but the module\'s own text says simple squamous epithelia "facilitate diffusion in tissues, such as the areas of gas exchange in the lungs" and its glossary defines squamous epithelia as "specialized in aiding diffusion"; the page keys "squamous"',
+  },
+  {
+    page: 'content/life-health-sciences/biology/33-the-animal-body-basic-form-and-function/02-animal-primary-tissues.md',
+    exercise: 'fs-idp270762368',
+    kind: 'options',
+    erratum: 240,
+    reason: 'the source option reads "Pseudostratisfied columnar epithilia" (two typos in both printed copies of the Visual Connection); the page prints "Pseudostratified columnar epithelia" (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/01-digestive-systems.md',
+    exercise: 'fs-idp230293872',
+    kind: 'key',
+    erratum: 244,
+    reason: 'source keys "horse" as the pseudo-ruminant, an animal the module never names, while its own definition (a three-chambered stomach of omasum, abomasum, and reticulum with a large fermenting cecum; "such as camels and alpacas") describes camelids, not the single-stomached horse; the page replaces the keyed option with "camel" and keys it, distractors unchanged',
+  },
+  {
     page: 'content/life-health-sciences/biology/29-vertebrates/07-the-evolution-of-primates.md',
     exercise: 'fs-idm71000698',
     kind: 'options',
@@ -256,8 +319,10 @@ function proseOf(node, { withLists }) {
 
 /** Option and key text compared with every space removed: the source writes
  * `G<sub>1</sub>` (read as "G 1") where the page writes `G₁`, and `cis-trans`
- * where the page keeps the hyphen. */
-export const compact = (value) => normalizeText(value).replace(/\s+/g, '');
+ * where the page keeps the hyphen. Inline HTML on the page (`P<sub>O₂</sub>`
+ * for the source's MathML "P O 2") is stripped first so a tag name never
+ * leaks into the comparison. */
+export const compact = (value) => normalizeText(String(value ?? '').replace(/<[^>]+>/g, ' ')).replace(/\s+/g, '');
 
 /**
  * Which option a source `<solution>` names, as a 0-based index, or null when

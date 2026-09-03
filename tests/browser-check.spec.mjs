@@ -1179,12 +1179,12 @@ test('the biology sidebar nests chapters under their unit, and a math sidebar st
   await gotoBuiltPage(page, '/life-health-sciences/biology/02-the-chemical-foundation-of-life/02-water/');
   // The aside renders the book tree ONCE — one list serves the phone drawer
   // and the desktop sidebar (sidebar.html) — so each unit appears exactly
-  // once in the DOM, and all six are visible at this viewport. A second
+  // once in the DOM, and all seven are visible at this viewport. A second
   // copy here is the duplicated-chrome regression audit-build budgets for.
   const units = page.locator('aside .ap-sidebar-unit');
-  await expect(units).toHaveCount(6);
+  await expect(units).toHaveCount(7);
   const visible = page.locator('aside .ap-sidebar-unit:visible');
-  await expect(visible).toHaveCount(6);
+  await expect(visible).toHaveCount(7);
   await expect(visible.locator('> .ap-sidebar-unit-label')).toHaveText([
     'Unit 1: The Chemistry of Life',
     'Unit 2: The Cell',
@@ -1192,6 +1192,7 @@ test('the biology sidebar nests chapters under their unit, and a math sidebar st
     'Unit 4: Evolutionary Processes',
     'Unit 5: Biological Diversity',
     'Unit 6: Plant Structure and Function',
+    'Unit 7: Animal Structure and Function',
   ]);
   // Each unit's own list holds exactly the authored chapters of that unit,
   // in source order, and every chapter or section link in the book sits
@@ -1228,11 +1229,13 @@ test('the biology sidebar nests chapters under their unit, and a math sidebar st
   expect(unit5Titles).toEqual(['Viruses', 'Prokaryotes: Bacteria and Archaea', 'Protists', 'Fungi', 'Seedless Plants', 'Seed Plants', 'Introduction to Animal Diversity', 'Invertebrates', 'Vertebrates']);
   const unit6Titles = await visible.nth(5).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
   expect(unit6Titles).toEqual(['Plant Form and Physiology', 'Soil and Plant Nutrition', 'Plant Reproduction']);
-  // 32 chapter landings + 139 sections, rendered once.
+  const unit7Titles = await visible.nth(6).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
+  expect(unit7Titles).toEqual(['The Animal Body: Basic Form and Function', 'Animal Nutrition and the Digestive System', 'The Nervous System', 'Sensory Systems', 'The Endocrine System', 'The Musculoskeletal System', 'The Respiratory System', 'The Circulatory System', 'Osmotic Regulation and Excretion', 'The Immune System']);
+  // 42 chapter landings + 182 sections, rendered once.
   const bookLinks = page.locator('aside a[href^="/life-health-sciences/biology/"]:not([href="/life-health-sciences/biology/"])');
   const insideUnit = page.locator('aside .ap-sidebar-unit a[href^="/life-health-sciences/biology/"]');
-  expect(await bookLinks.count()).toBe(171);
-  expect(await insideUnit.count()).toBe(171);
+  expect(await bookLinks.count()).toBe(224);
+  expect(await insideUnit.count()).toBe(224);
   // The desktop sidebar is the drawer list with its drawer-only rows hidden:
   // the shelf entry and the book's "Overview" row wrap the tree as
   // .ap-sidebar-shell (row hidden, indentation flattened from md up), and

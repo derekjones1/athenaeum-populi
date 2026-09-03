@@ -50,6 +50,7 @@ test('compact folds the sub/superscript, delta, and hyphen spellings the page an
   assert.equal(compact('G₁ checkpoint'), compact('G 1 checkpoint'));
   assert.equal(compact('They increase ΔG of reactions.'), compact('They increase ∆G of reactions.'));
   assert.equal(compact('the conversion of CO₂ into an organic compound'), compact('the conversion of CO 2 into an organic compound'));
+  assert.equal(compact('P<sub>O₂</sub> is higher in air than in the lungs.'), compact('P O 2 is higher in air than in the lungs.'));
   assert.equal(compact('cis-trans isomers'), compact('cis - trans isomers'));
   assert.notEqual(compact('photosystem I'), compact('photosystem II'));
 });

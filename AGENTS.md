@@ -35,12 +35,13 @@ source workflow.
   `biology-bundle` for Biology 2e. Books carry an `authoringStatus`; the four
   math books are `complete` (Precalculus 2e's last chapter landed on August
   29, 2026), so every upstream numbered section has a local page and chapter
-  parity is enforced book-wide. Biology is `in-progress`: chapters 1–32 (139
+  parity is enforced book-wide. Biology is `in-progress`: chapters 1–42 (182
   sections — units 1–6, The Chemistry of Life through Plant Structure
-  and Function, all complete) are authored under
+  and Function, all complete, plus the first ten chapters of unit 7,
+  Animal Structure and Function) are authored under
   `content/life-health-sciences/biology`
-  and the other 15 chapters have no landing yet, so `build-map`/`verify-map`
-  print it as "32/47 chapters, 139/208 sections mapped" — visibly, never
+  and the other 5 chapters have no landing yet, so `build-map`/`verify-map`
+  print it as "42/47 chapters, 182/208 sections mapped" — visibly, never
   silently — and the biology subject playbook (`docs/subjects/biology.md`)
   governs its authoring. A book still being written marks its
   unwritten chapter landings `authoring_status: scaffolded`, drops the marker
@@ -127,7 +128,7 @@ source workflow.
   package.json's `--min-verified`, `--min-replayed`, and `--min-exercises` in
   place
 - `npm run source:fetch` — fetch the ignored, sparse OpenStax source checkout
-- `npm run source:verify` — verify the committed 413-section map offline
+- `npm run source:verify` — verify the committed 456-section map offline
 - `npm run source:check` — report-only comparison against pinned CNXML
 - `npm run source:history` — review changes since the inferred PDF-era commits
 - `npm run source:media -- --book KEY --chapter N` — vendor a chapter's raster

@@ -2390,6 +2390,17 @@ export function lintHugo(src, filename = '', options = {}) {
     } else if (caption && alt.replace(/\s+/g, ' ').trim().toLowerCase() === caption.replace(/\s+/g, ' ').trim().toLowerCase()) {
       err(index, `${where}: alt is identical to the caption after whitespace/case normalization — alt must describe the image, not repeat the caption`);
     }
+    // alt and longdesc are attribute text: a screen reader voices an HTML tag
+    // inside them as tag soup, and the raw `>` truncates the <img> for every
+    // regex-based auditor (39.4 shipped `P<sub>O₂</sub>` in an alt and the
+    // build audit read the image as malformed). Write the plain form instead
+    // ("oxygen partial pressure (PO₂)").
+    for (const field of ['alt', 'longdesc']) {
+      const value = params[field];
+      if (value && /<[a-z][^>]*>/i.test(value)) {
+        err(index, `${where}: ${field} contains an HTML tag — alt/longdesc are plain text, spell the markup out (e.g. "PO₂" for P<sub>O₂</sub>)`);
+      }
+    }
     if (params.eager !== undefined && params.eager !== 'true') {
       err(index, `${where}: eager must be "true" (or omitted)`);
     }

@@ -1797,6 +1797,18 @@ test('mediafigure shortcode rules', () => {
     'an alt over 600 characters is rejected',
   );
   assert(
+    lint('src="biology/fig-1" alt="A graph against P<sub>O₂</sub> in mm Hg."').some((e) => e.includes('alt contains an HTML tag')),
+    'an HTML tag inside an alt is rejected',
+  );
+  assert(
+    lint('src="biology/fig-1" alt="A graph." longdesc="The x-axis is P<sub>O₂</sub>."').some((e) => e.includes('longdesc contains an HTML tag')),
+    'an HTML tag inside a longdesc is rejected',
+  );
+  assert(
+    !lint('src="biology/fig-1" alt="A graph against oxygen partial pressure (PO₂), 0 < x."').some((e) => e.includes('contains an HTML tag')),
+    'a bare less-than sign in an alt is not a tag',
+  );
+  assert(
     lint('src="biology/fig-1" alt="A diagram." eager="yes"').some((e) => e.includes('eager must be')),
     'a non-"true" eager value is rejected',
   );

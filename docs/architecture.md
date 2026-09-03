@@ -52,7 +52,7 @@ advertising, or learner-data store.
 
 The completed Prealgebra 2e, Elementary Algebra 2e, and Intermediate Algebra
 2e books remain reviewed Markdown, not generated output. A committed lock and
-413-section map under `data/openstax/` connect each page to a stable CNXML
+456-section map under `data/openstax/` connect each page to a stable CNXML
 module in the official OpenStax source repository. The upstream checkout is a
 sparse, ignored cache under `sources/openstax/`.
 
@@ -96,7 +96,7 @@ The theme's `sidebar.js` needs no change: collapsible buttons still sit in
 their `<li>`, and its scroll-to-active already picks the first active item
 with a visible box. `audit-build`'s mean-chrome budget (300 KiB) is the
 gate against the tree coming back twice, and the browser suite pins the
-shape (six units and 171 book links in the DOM on a biology page, the
+shape (seven units and 224 book links in the DOM on a biology page, the
 first chapter as the first visible link, one sidebar contact link).
 
 ## Media and text-answer components
