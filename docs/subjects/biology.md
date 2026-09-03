@@ -174,7 +174,12 @@ Three cases the chemistry chapters settled (unit 1):
   10^{23}$`, `$9.11 \times 10^{-28}$`. A Unicode `10⁻⁷` is rejected (it is an
   exponent, not a charge), and a page that sets one exponent in `$…$` sets
   the neighbouring positive ones the same way so the two do not mix in a
-  sentence.
+  sentence. The lint rejects an ASCII digit followed by a Unicode
+  superscript digit (`4²`, `10⁸⁴`, `6.02 × 10²³`) anywhere outside `$…$`
+  except a figure spec or a mediafigure alt/longdesc, which cannot hold
+  KaTeX; a selfcheck rubric checkpoint is plain text too, so spell the
+  exponent out there ("four to the fourth power is 256") and put the same
+  words in the model answer beside the `$4^4$`.
 - **Display chemical equations are text, not KaTeX.** The source's
   `<equation>` blocks in 2.1 and 2.2 are reactions, not mathematics; each
   becomes its own short paragraph in Unicode with arrows — `2H₂O₂ → 2H₂O +

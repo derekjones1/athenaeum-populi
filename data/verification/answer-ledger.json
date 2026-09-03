@@ -3186,10 +3186,6 @@
   "118f7e8f6271ffd3": {
    "verdict": "ok"
   },
-  "11981b18035a2794": {
-   "verdict": "ok",
-   "note": "m66405 fs-idp12473408 keyed A (one); module text: 'each taste has only one corresponding type of receptor... each receptor is specific to its stimulus (tastant)'. No departure."
-  },
   "119c78606b88a58f": {
    "verdict": "ok"
   },
@@ -17598,10 +17594,6 @@
     "result": "agrees"
    }
   },
-  "6499b1c3d8cd6dee": {
-   "verdict": "ok",
-   "note": "m66408 summary-derived cloze textin, blanking 'electromagnetic radiation spectrum' from the Section Summary's own sentence 'Visible light travels in waves and is a very small slice of the electromagnetic radiation spectrum.' No new claim; locally built per the summary-item rule, disclosed in the footer."
-  },
   "649cf700a5ce2eb4": {
    "verdict": "ok"
   },
@@ -22278,10 +22270,6 @@
   "7f1713f9d54eb55f": {
    "verdict": "ok"
   },
-  "7f1990eed4991022": {
-   "verdict": "ok",
-   "note": "Glossary recall, term glabrous (fs-idm200979824) — meaning transcribed as prompt, answer is the term."
-  },
   "7f19f08051601bc6": {
    "verdict": "ok"
   },
@@ -22632,10 +22620,6 @@
   "816f7d38331b0f14": {
    "verdict": "ok",
    "note": "Practice obj1-2: center(-3,4), vertex(1,4): a=4,a^2=16; focus(-3+2sqrt3,4): c=2sqrt3,c^2=12; b^2=16-12=4; (x+3)^2/16+(y-4)^2/4=1 matches CNXML fs-id1346675 solution."
-  },
-  "816fbd517d0be91e": {
-   "verdict": "ok",
-   "note": "Selfcheck model answer transcribes module m66497 exercise fs-id2198100/solution fs-id2575162 verbatim; independently checked 4^4 = 256 ≥ 200 > 4^3 = 64, so four nucleotides is indeed the shortest sufficient codon length."
   },
   "81767f3310ba4a82": {
    "verdict": "ok"
@@ -29165,10 +29149,6 @@
     "by": "orchestrator",
     "result": "agrees"
    }
-  },
-  "a801c72147c48980": {
-   "verdict": "ok",
-   "note": "Glossary recall, term Merkel's disk (fs-idm4993712) — meaning transcribed as prompt, answer is the term."
   },
   "a8047ac8635acfc1": {
    "verdict": "ok",
@@ -38418,10 +38398,6 @@
   "de482777ef663530": {
    "verdict": "ok"
   },
-  "de517a5baf6c7493": {
-   "verdict": "ok",
-   "note": "m66407 glossary 'organ of Corti'."
-  },
   "de653756c3b6ebbe": {
    "verdict": "ok"
   },
@@ -38816,10 +38792,6 @@
   },
   "e0b59c73b8026622": {
    "verdict": "ok"
-  },
-  "e0b5ecd2020963d4": {
-   "verdict": "ok",
-   "note": "Glossary recall, term Ruffini ending (fs-idm217315984) — meaning transcribed as prompt, answer is the term."
   },
   "e0b8070725286345": {
    "verdict": "ok"
@@ -42388,6 +42360,14 @@
   },
   "f50185df4bc49b64": {
    "verdict": "ok"
+  },
+  "f50662556cc8c2c0": {
+   "verdict": "ok",
+   "note": "15.1 Critical Thinking (200 amino acids → shortest codon length); re-hashed after the model answer's 4⁴ = 256 was set as KaTeX with the words 'four to the fourth power' kept beside it so the plain-text rubric checkpoint stays covered; orchestrator re-derived 4³ = 64 < 200 ≤ 4⁴ = 256 → four nucleotides, matching the module's solution.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f50c559e437f417f": {
    "verdict": "ok"

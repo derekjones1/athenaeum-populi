@@ -2175,6 +2175,25 @@ test('a label the engine cannot draw is rejected, not dropped in silence', () =>
   );
 });
 
+test('a positive unicode superscript exponent after a digit is math set in the page font', () => {
+  // 15.1 shipped `4²`, `4³`, `10⁸⁴` under a footer note and 2.2 wrote
+  // Avogadro's number as `$6.02 \times 10^{23}$` in one sentence and
+  // `6.02 × 10²³` in the next; the minus rule never saw either.
+  const exp = (source, opts) => lintHugo(source, SECTION, opts)
+    .errors.filter((e) => e.includes('superscript exponent'));
+
+  assert(exp('There are only 16 two-nucleotide combinations (4²).\n').length > 0, 'a squared count in prose');
+  assert(exp('About 10⁸⁴ possible combinations exist.\n').length > 0, 'a multi-digit exponent in prose');
+  assert(exp('One mole is 6.02 × 10²³ molecules.\n').length > 0, 'scientific notation spelled with a superscript');
+  assert(exp('{{< selfcheck question="Why?" hint="Think." >}}\nBecause 4⁴ = 256.\n{{< /selfcheck >}}\n').length > 0,
+    'a selfcheck model answer is markdownified and can hold KaTeX, so it is held to the rule');
+  assert.deepEqual(exp('Calcium ions (Ca²⁺) and sulfate (SO₄²⁻) differ from carbon-12 (¹²C); the area is $4\\pi r^2$ and $10^{84}$ is math.\n'), [],
+    'ion charges, isotopes, and KaTeX exponents have no ASCII digit before the superscript');
+  const manifests = { biology: { figures: { 'fig-1': { file: 'fig-1.webp', width: 400, height: 300 } } } };
+  assert.deepEqual(exp('{{< mediafigure src="biology/fig-1" alt="Hardy-Weinberg worked example." longdesc="Three rows: p² + 2pq + q² = 1, then .7² + 2(.7)(.3) + .3² = 1." >}}\nCaption.\n{{< /mediafigure >}}\n', { mediaManifests: manifests }), [],
+    'a mediafigure alt/longdesc is an attribute with no typesetter');
+});
+
 test('a superscript exponent is math noise in prose and the only form a figure has', () => {
   // The SVG label layer has no typesetter: `f^{-1}(x)` prints those five
   // characters, which is how precalculus 3.8 shipped four inverse curves

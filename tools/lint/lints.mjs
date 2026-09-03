@@ -1271,6 +1271,33 @@ export function lintHugo(src, filename = '', options = {}) {
   for (const m of withoutFigureSpecs(src, blank).matchAll(/(?<![A-Za-z\u2080-\u2089)\u00B2\u00B3\u2074-\u2079])⁻|⁻(?=[\u2070\u00B9\u00B2\u00B3\u2074-\u2079])/g)) {
     err(m.index, 'unicode superscript minus — write a braced exponent like 10^{-3} (an ion charge such as `Cl⁻` or `HCO₃⁻` is allowed)');
   }
+  // A Unicode superscript DIGIT after an ASCII digit is a POSITIVE numeric
+  // exponent set in the page font — `4²`, `10⁸⁴`, `6.02 × 10²³` — the form
+  // the biology notation rule rejects (a numeric exponent is math: `$4^2$`,
+  // `$10^{84}$`). The minus rule above only sees the negative ones, so 15.1
+  // shipped four positive ones under a footer note and 2.2 shipped Avogadro's
+  // number both ways in adjacent sentences. The chemistry forms never have an
+  // ASCII digit in front of the superscript: an ion charge (`Ca²⁺`, `SO₄²⁻`)
+  // follows a letter or a SUBSCRIPT digit, and an isotope (`¹²C`) precedes its
+  // letter — so the rule is exactly digit-then-superscript-digit. Exempt on
+  // the same terms as every math rule: figure specs (SVG labels, no
+  // typesetter) and a mediafigure's alt/longdesc (an attribute cannot hold
+  // KaTeX, so `.7² + 2(.7)(.3)` is the only exponent a description can carry).
+  {
+    let plain = withoutFigureSpecs(mediaSrc, blank);
+    for (const sc of shortcodes(plain, 'mediafigure')) {
+      const spans = shortcodeParamSpans(sc.open);
+      for (const key of ['alt', 'longdesc']) {
+        const span = spans[key];
+        if (!span) continue;
+        const at = sc.openIndex + span.index;
+        plain = plain.slice(0, at) + blank(span.raw) + plain.slice(at + span.raw.length);
+      }
+    }
+    for (const m of plain.matchAll(/[0-9][⁰¹²³⁴-⁹]+/g)) {
+      err(m.index, `unicode superscript exponent ${JSON.stringify(m[0])} — a numeric exponent is math: write it inside $…$ as 10^{84} or 4^2 (figure specs and mediafigure alt/longdesc are exempt)`);
+    }
+  }
   // Mathematics in an EXERCISE is typeset, not spelled with lookalike
   // characters. Chapters 1-4 write every symbol as TeX inside `$…$`; the
   // first trigonometry pass wrote 25 question strings as raw `240°`,
