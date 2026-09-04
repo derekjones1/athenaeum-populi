@@ -18,3 +18,5 @@ import './components/text/sort-bins.js';
 import './navbar-compact.js';
 // Site chrome: makes exactly the display equations that overflow keyboard-reachable.
 import './scrollable-math.js';
+// Site chrome: the "On this page" rail as a right-hand drawer below xl.
+import './toc-drawer.js';

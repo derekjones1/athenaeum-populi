@@ -312,15 +312,115 @@ sort-bins:not(:defined) .ap-sortbins-check {
 
 /* --- Contact link ----------------------------------------------------------
    The "Questions or concerns? Email us!" mailto renders in two places: the
-   right rail's sticky bottom block (xl+, layouts/_partials/toc.html) and the
-   left sidebar (layouts/_partials/sidebar.html) for every width below that —
-   the phone drawer and the md–xl sidebar, one <li> serving both. This rule
-   retires the sidebar copy exactly where the rail takes over (80rem =
-   Tailwind's xl, the rail's own breakpoint), so the link appears once at
-   every width. The compiled theme CSS has no hx:xl:hidden utility to do
-   this, hence the bespoke class. */
+   right rail's sticky bottom block (layouts/_partials/toc.html) and the
+   left sidebar (layouts/_partials/sidebar.html) — the phone drawer and the
+   md–xl sidebar, one <li> serving both. This rule retires the sidebar copy
+   exactly where the rail is an inline column (80rem = Tailwind's xl), so
+   the link is on screen once at every width: below xl the rail is the
+   closed "On this page" drawer (next block), inert and off-canvas, and the
+   sidebar copy is the one a reader sees. The compiled theme CSS has no
+   hx:xl:hidden utility to do this, hence the bespoke class. */
 @media (min-width: 80rem) {
   .ap-contact-sidebar {
+    display: none;
+  }
+}
+
+/* --- "On this page" drawer -------------------------------------------------
+   The rail (layouts/_partials/toc.html, nav.hextra-toc) is one element at
+   every width. From xl (80rem) up it is the theme's inline column — nothing
+   here applies. Below xl, where the theme simply hid it, it is a right-hand
+   off-canvas panel: fixed to the viewport's right edge beneath the navbar,
+   the width of the rail column (or the viewport less a 3rem strip, so a
+   sliver of the page shows behind the scrim and says "this is a sheet"),
+   slid in by translate3d exactly the way the theme's own phone drawer is
+   (themes/hextra/assets/css/components/sidebar.css — same layer, z-15, same
+   easing, same navbar-plus-banner top padding, so it opens beneath the
+   cluster where the button that closes it lives). `visibility: hidden`
+   while closed keeps its links out of the focus order and the
+   accessibility tree even before assets/js/toc-drawer.js has run (which
+   also sets inert + aria-hidden, the theme's contract); the visibility
+   change is delayed on close so the panel finishes sliding out first, and
+   the site-wide reduced-motion rule zeroes the slide as it does the
+   theme's. The rail's inner div is sticky-with-max-height for the inline
+   column; in the panel it is a plain flex child that scrolls on its own.
+   The scrim is the click-to-close backdrop, one layer under the panel. The
+   navbar button (.ap-nav-toc, layouts/_partials/navbar.html) exists only
+   where the panel does — it is display:none from xl, the breakpoint the
+   rail returns at; there is no hx:xl:hidden utility in the compiled theme
+   CSS, hence the bespoke rule. Body scroll locks below md only, as the
+   theme's drawer does: at tablet widths a visible scrollbar disappearing
+   under the lock would shift the page. */
+.ap-nav-toc {
+  display: inline-flex;
+  min-width: 40px;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.ap-toc-scrim {
+  display: none;
+}
+@media (min-width: 80rem) {
+  .ap-nav-toc {
+    display: none;
+  }
+}
+@media (max-width: 79.99rem) {
+  nav.hextra-toc {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: min(16rem, calc(100vw - 3rem));
+    padding-top: calc(var(--navbar-height) + var(--hextra-banner-height));
+    padding-bottom: env(safe-area-inset-bottom);
+    background: var(--hx-color-white, #fff);
+    box-shadow: -1px 0 0 rgba(0, 0, 0, 0.06);
+    overscroll-behavior: contain;
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0);
+    transition: transform 0.4s cubic-bezier(0.52, 0.16, 0.04, 1), visibility 0s linear 0.4s;
+    will-change: transform;
+  }
+  .dark nav.hextra-toc {
+    background: var(--hx-color-dark, #111);
+    box-shadow: -1px 0 0 rgba(255, 255, 255, 0.1);
+  }
+  html.ap-toc-open nav.hextra-toc {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.4s cubic-bezier(0.52, 0.16, 0.04, 1), visibility 0s;
+  }
+  nav.hextra-toc > div {
+    position: static;
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: none;
+    overscroll-behavior: contain;
+  }
+  .ap-toc-scrim {
+    position: fixed;
+    inset: 0;
+    z-index: 14;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-tap-highlight-color: transparent;
+  }
+  html.ap-toc-open .ap-toc-scrim {
+    display: block;
+  }
+}
+@media (max-width: 47.99rem) {
+  html.ap-toc-open body {
+    overflow: hidden;
+  }
+}
+@media print {
+  .ap-toc-scrim {
     display: none;
   }
 }
@@ -460,15 +560,29 @@ sort-bins:not(:defined) .ap-sortbins-check {
 }
 @media (max-width: 47.99rem) {
   /* Below md the search box is not in the bar (the theme hides it), so the
-     cluster is just logo, button, hamburger: 9rem, packed to the right. */
+     cluster is just logo, button, hamburger: 9rem, packed to the right —
+     11.75rem when the "On this page" button is in it too (.ap-nav-has-toc,
+     set on the container by navbar.html for pages that have a heading
+     list; the button itself is display:none from xl, where the cluster's
+     16rem must stay the rail's width). */
   .ap-nav-compact {
     --ap-nav-cluster-width: 9rem;
+  }
+  .ap-nav-compact .ap-nav-has-toc {
+    --ap-nav-cluster-width: 11.75rem;
   }
   .ap-nav-compact .hextra-nav-container > nav {
     justify-content: flex-end;
   }
   .ap-nav-compact .hextra-hamburger-menu {
     margin-right: 0;
+  }
+}
+@media (min-width: 48rem) and (max-width: 79.99rem) {
+  /* Between md and xl the search box shares the cluster with the "On this
+     page" button; 19rem keeps the box wide enough to read its placeholder. */
+  .ap-nav-compact .ap-nav-has-toc {
+    --ap-nav-cluster-width: 19rem;
   }
 }
 @media (min-width: 48rem) {

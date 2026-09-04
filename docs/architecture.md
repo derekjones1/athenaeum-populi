@@ -162,16 +162,37 @@ the "On this page" rail column, so from xl up it sits above that rail, over
 space the article never uses, with the logo on the rail heading's left
 edge. Scrolling back to the top — by hand or with the button — restores the
 full bar; that button is the site's only scroll-to-top control (the theme's
-rail button is dropped in the `toc.html` override, since the rail exists
-only from xl up and a second, opacity-hidden copy added a duplicate stop
-for keyboard and screen-reader users). The sticky container keeps its 4rem
-in-flow height in both states so the article never jumps at the threshold:
+rail button is dropped in the `toc.html` override, since a second,
+opacity-hidden copy added a duplicate stop for keyboard and screen-reader
+users). The sticky container keeps its 4rem in-flow height in both states
+so the article never jumps at the threshold:
 only the painted backdrop shrinks to the cluster, the rest of the
 container's box passes pointer events through, the left sidebar rises to
 the viewport top, and the rail's sticky offset moves up to meet the
 cluster. Folded controls are `display: none`, so they leave the tab order
 rather than lingering invisibly. The browser suite asserts both shapes and
 axe-scans the compact cluster in both themes.
+
+The "On this page" rail is one element at every width. Hextra renders it
+only from xl (80rem) up — `hx:hidden hx:xl:block` — so phones and tablets
+never had a heading list except the copy the phone drawer prints under the
+active page. The `toc.html` override keeps the same `<nav>` in the DOM
+below xl and `custom.css` ("On this page drawer") makes it a right-hand
+off-canvas panel there: fixed beneath the navbar, the rail column's width,
+slid in by the same transform, layer, and easing as the theme's own phone
+drawer, `visibility: hidden` while closed. The navbar override adds the
+button that opens it (`.ap-nav-toc`, hidden from xl up; the compact
+cluster widens by one button where it is present), and
+`assets/js/toc-drawer.js` holds the state and the accessibility contract
+`menu.js` set for the left drawer: closed, the panel is inert and
+aria-hidden; open, main, footer, and the left sidebar are inert behind a
+click-to-close scrim, Tab cycles through the button and the panel's links,
+Escape and any heading link close it, and the two drawers never overlap.
+`utils/toc-drawer.html` decides, for the button and the scrim alike,
+whether a page has a heading list at all — a landing page with
+`toc: false` gets neither. The browser suite drives the drawer at phone
+and tablet widths, checks the hand-back to the inline rail past xl, and
+axe-scans the open panel in both themes.
 
 ## Search
 

@@ -1,12 +1,23 @@
 {{- /* Site override of Hextra's navbar.html (vendored theme, same version as
-     themes/hextra). The one change: a "Scroll to top" button, hidden until
-     assets/js/navbar-compact.js marks <html> `ap-nav-compact` once the
-     reader has scrolled into the article — at which point the shelf links,
-     Home/About, and the title text fold away and the bar becomes a small
-     top-right cluster of the logo, search, and this button, sized to the
-     "On this page" rail column (assets/css/custom.css, "Compact navbar on
-     scroll"). Keep the rest byte-identical to the theme file so a theme
-     upgrade is a diff of exactly this hook. */ -}}
+     themes/hextra). Two changes, both between the menu loop and the
+     hamburger:
+
+       1. A "Scroll to top" button, hidden until assets/js/navbar-compact.js
+          marks <html> `ap-nav-compact` once the reader has scrolled into
+          the article — at which point the shelf links, Home/About, and the
+          title text fold away and the bar becomes a small top-right cluster
+          of the logo, search, and this button, sized to the "On this page"
+          rail column (assets/css/custom.css, "Compact navbar on scroll").
+       2. An "On this page" button, shown only below xl (80rem), where the
+          rail is not an inline column but a right-hand drawer this button
+          opens (layouts/_partials/toc.html, assets/js/toc-drawer.js). It is
+          rendered only on pages that have a heading list —
+          utils/toc-drawer.html decides, for this button and for the
+          drawer's scrim alike — and the container then carries
+          .ap-nav-has-toc so the compact cluster widens by one button.
+
+     Keep the rest byte-identical to the theme file so a theme upgrade is a
+     diff of exactly these hooks. */ -}}
 {{- $navWidth := "hx:max-w-[90rem]" -}}
 {{- with .Site.Params.navbar.width -}}
   {{ if eq . "normal" -}}
@@ -18,8 +29,9 @@
 
 {{- $page := . -}}
 {{- $iconHeight := 24 -}}
+{{- $tocDrawer := partial "utils/toc-drawer.html" . -}}
 
-<div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden">
+<div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden{{ if $tocDrawer }} ap-nav-has-toc{{ end }}">
   <div
     class="hextra-nav-container-blur hx:pointer-events-none hx:absolute hx:z-[-1] hx:h-full hx:w-full hx:bg-white hx:dark:bg-dark hx:shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] hx:contrast-more:shadow-[0_0_0_1px_#000] hx:dark:shadow-[0_-1px_0_rgba(255,255,255,.1)_inset] hx:contrast-more:dark:shadow-[0_0_0_1px_#fff]"
   ></div>
@@ -67,6 +79,13 @@
         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
       </svg>
     </button>
+
+    {{- if $tocDrawer -}}
+    {{- $onThisPage := (T "onThisPage") | default "On this page" -}}
+    <button type="button" class="ap-nav-toc hx:cursor-pointer hx:rounded-sm hx:p-2 hx:text-current hx:active:bg-gray-400/20 hx:hextra-focus-visible-inset" aria-label="{{ $onThisPage }}" title="{{ $onThisPage }}" aria-expanded="false" aria-controls="ap-toc">
+      {{- partial "utils/icon.html" (dict "name" "document-text" "attributes" (printf "height=%d width=%d" $iconHeight $iconHeight)) -}}
+    </button>
+    {{- end -}}
 
     <button type="button" aria-label="{{ (T "menu") | default "Menu" }}" aria-expanded="false" class="hextra-hamburger-menu hx:cursor-pointer hx:-mr-2 hx:rounded-sm hx:p-2 hx:active:bg-gray-400/20 hx:md:hidden hx:hextra-focus-visible-inset">
       {{- partial "utils/icon.html" (dict "name" "hamburger-menu" "attributes" (printf "height=%d" $iconHeight)) -}}

@@ -5,9 +5,20 @@
      line pre-filled from the page being read — book title plus the OpenStax
      section/chapter number where the front matter carries one, e.g.
      "Precalculus 5.1 - Angles"; renders inline $...$ math in heading titles
-     through the mathtext partial instead of printing the raw TeX; and drops
+     through the mathtext partial instead of printing the raw TeX; drops
      the theme's own "Scroll to top" button, since the compact navbar carries
-     that control at every width. Everything else is verbatim theme code. */}}
+     that control at every width; and keeps the rail in the DOM at EVERY
+     width. The theme hides it below xl (hx:hidden hx:xl:block), so phones
+     and tablets never had an "On this page" list. Here the same <nav> —
+     one copy of the heading list per page, never two — is the inline rail
+     from xl up and, below xl, a right-hand off-canvas drawer opened by the
+     navbar's "On this page" button (layouts/_partials/navbar.html): the
+     drawing is in assets/css/custom.css ("On this page drawer"), the
+     open/close state, inert page, and focus trap in assets/js/toc-drawer.js.
+     The scrim div is the drawer's click-to-close backdrop; it is emitted
+     only where the button is (utils/toc-drawer.html decides for both) and
+     is display:none until the drawer opens. Everything else is verbatim
+     theme code. */}}
 {{- $toc := .Params.toc | default true -}}
 {{- $onThisPage := (T "onThisPage") | default "On this page"}}
 {{- $tags := (T "tags") | default "Tags"}}
@@ -16,8 +27,10 @@
      utils/contact-mailto.html partial, which sidebar.html and the
      contact-email shortcode also use. */}}
 {{- $contactHref := partial "utils/contact-mailto.html" . -}}
+{{- $drawer := partial "utils/toc-drawer.html" . -}}
 
-<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="{{ (T "tableOfContents") | default "Table of contents" }}">
+{{- if $drawer }}<div class="ap-toc-scrim"></div>{{ end -}}
+<nav id="ap-toc" class="hextra-toc hx:order-last hx:w-64 hx:shrink-0 hx:print:hidden hx:px-4" aria-label="{{ (T "tableOfContents") | default "Table of contents" }}">
   {{- if $toc }}
     <div class="hextra-scrollbar hx:sticky hx:top-16 hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4">
       {{- with .Fragments.Headings -}}

@@ -919,8 +919,9 @@ test('every mediafigure image on both biology sections loads from its vendored m
 
 test('every rail and sidebar carries a contact mailto whose subject names the page', async ({ page }) => {
   // utils/contact-mailto.html: the "Questions or concerns?" link renders in
-  // the right rail (toc.html, xl+) and once in the sidebar (sidebar.html: a
-  // single <li> that serves the phone drawer and the md–xl sidebar, which
+  // the right rail (toc.html — the inline column from xl up, the "On this
+  // page" drawer below) and once in the sidebar (sidebar.html: a single
+  // <li> that serves the phone drawer and the md–xl sidebar, which
   // custom.css hides at xl+ where the rail takes over) — same href in both,
   // subject pre-filled as "<Book> <section#> - <Title>" from the OpenStax
   // front matter, so a reader's email arrives already saying where they were.
@@ -1337,4 +1338,124 @@ test('a sort-bins grades the mapping with partial credit and returns misplaced i
   await card.locator('.ap-sortbins-check').click();
   await expect(card.locator('.ap-sortbins-feedback')).toHaveText(/^Correct/);
   expect(await card.locator('.ap-sortbins-item').first().getAttribute('aria-disabled')).toBe('true');
+});
+
+test('the "On this page" rail is a right-hand drawer below xl, opened from the navbar, and the inline rail from xl up', async ({ page }) => {
+  // layouts/_partials/toc.html keeps ONE rail element at every width. From
+  // xl (80rem) up it is the theme's inline column; below that, where the
+  // theme simply hid it, assets/css/custom.css ("On this page drawer") makes
+  // it an off-canvas panel on the right and assets/js/toc-drawer.js drives
+  // it from the navbar's "On this page" button (layouts/_partials/
+  // navbar.html): closed it is inert and aria-hidden, open it inerts the
+  // page behind its scrim, and the two drawers never overlap — opening this
+  // one closes the theme's hamburger drawer and the hamburger closes this.
+  const route = '/math/prealgebra/03-integers/03-subtract-integers/';
+  const state = () => page.evaluate(() => {
+    const html = document.documentElement;
+    const nav = document.querySelector('nav.hextra-toc');
+    const box = nav.getBoundingClientRect();
+    return {
+      open: html.classList.contains('ap-toc-open'),
+      fixed: getComputedStyle(nav).position === 'fixed',
+      // Flush with the viewport's right edge, the rail column's width.
+      onScreen: Math.abs(box.right - html.clientWidth) < 1 && Math.round(box.width) === 256,
+      ariaHidden: nav.getAttribute('aria-hidden'),
+      inert: nav.inert,
+      mainInert: document.querySelector('main').inert,
+      asideInert: document.querySelector('aside.hextra-sidebar-container').inert,
+      expanded: document.querySelector('.ap-nav-toc')?.getAttribute('aria-expanded') ?? null,
+      hamburgerOpen: document.querySelector('.hextra-hamburger-menu svg').classList.contains('open'),
+    };
+  });
+  const html = page.locator('html');
+  const drawer = page.locator('nav.hextra-toc');
+  const button = page.locator('.ap-nav-toc');
+  const hamburger = page.locator('.hextra-hamburger-menu');
+
+  await page.setViewportSize({ width: 390, height: 844 });
+  await gotoBuiltPage(page, route);
+  await expect(button).toBeVisible();
+  await expect(drawer).toBeHidden();
+  expect(await state()).toMatchObject({
+    open: false, fixed: true, ariaHidden: 'true', inert: true, mainInert: false, asideInert: true, expanded: 'false',
+  });
+
+  await button.click();
+  await expect(html).toHaveClass(/ap-toc-open/);
+  await expect(drawer).toBeVisible();
+  // The panel slides in over 0.4s; wait for it to settle against the edge.
+  await expect.poll(async () => (await state()).onScreen).toBe(true);
+  expect(await state()).toMatchObject({
+    open: true, fixed: true, onScreen: true, ariaHidden: null, inert: false, mainInert: true, asideInert: true, expanded: 'true',
+  });
+  // The panel is the page's own heading list: every link targets a heading
+  // inside the article, and every h2 is listed.
+  const targets = await drawer.locator('a[href^="#"]').evaluateAll((links) =>
+    links.map((link) => {
+      const target = document.getElementById(decodeURIComponent(link.getAttribute('href').slice(1)));
+      return Boolean(target && target.closest('main#content'));
+    }));
+  expect(targets.length).toBeGreaterThan(5);
+  expect(targets.every(Boolean), 'every drawer link targets a heading in the article').toBe(true);
+  const headings = (await page.locator('main#content h2').allInnerTexts()).map((text) => text.trim());
+  const listed = (await drawer.locator('a[href^="#"]').allInnerTexts()).map((text) => text.trim());
+  for (const heading of headings) expect(listed, `drawer lists "${heading}"`).toContain(heading);
+
+  // A heading link jumps and closes; focus follows the anchor, not the button.
+  await drawer.locator('a[href^="#"]').nth(1).click();
+  await expect(html).not.toHaveClass(/ap-toc-open/);
+  await expect(drawer).toBeHidden();
+  expect(page.url()).toContain('#');
+  expect(await state()).toMatchObject({ open: false, ariaHidden: 'true', inert: true, mainInert: false, expanded: 'false' });
+  await expect(button).not.toBeFocused();
+
+  // Escape closes and returns focus to the button; so does the scrim (clicked
+  // on the strip of page the 16rem panel leaves uncovered).
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await button.click();
+  await expect(html).toHaveClass(/ap-toc-open/);
+  await page.keyboard.press('Escape');
+  await expect(html).not.toHaveClass(/ap-toc-open/);
+  await expect(button).toBeFocused();
+  await button.click();
+  await expect(html).toHaveClass(/ap-toc-open/);
+  await page.locator('.ap-toc-scrim').click({ position: { x: 20, y: 400 } });
+  await expect(html).not.toHaveClass(/ap-toc-open/);
+
+  // One drawer at a time, in both directions.
+  await hamburger.click();
+  expect(await state()).toMatchObject({ hamburgerOpen: true, open: false, mainInert: true, asideInert: false });
+  await button.click();
+  expect(await state()).toMatchObject({ hamburgerOpen: false, open: true, mainInert: true, asideInert: true });
+  await hamburger.click();
+  expect(await state()).toMatchObject({ hamburgerOpen: true, open: false, mainInert: true, asideInert: false });
+  await hamburger.click();
+  expect(await state()).toMatchObject({ hamburgerOpen: false, open: false, mainInert: false, asideInert: true });
+
+  // Between md and xl: the sidebar is a column, the rail is still the drawer,
+  // and the open panel inerts that column too.
+  await page.setViewportSize({ width: 1000, height: 800 });
+  await expect(button).toBeVisible();
+  await expect(drawer).toBeHidden();
+  expect(await state()).toMatchObject({ open: false, fixed: true, ariaHidden: 'true', inert: true, asideInert: false });
+  await button.click();
+  await expect(drawer).toBeVisible();
+  await expect.poll(async () => (await state()).onScreen).toBe(true);
+  expect(await state()).toMatchObject({ open: true, fixed: true, onScreen: true, mainInert: true, asideInert: true });
+
+  // Widening past xl while open hands the element back to the layout as the
+  // inline rail: nothing fixed, nothing inert, no button.
+  await page.setViewportSize({ width: 1440, height: 800 });
+  await expect(button).toBeHidden();
+  await expect(drawer).toBeVisible();
+  expect(await state()).toMatchObject({
+    open: false, fixed: false, ariaHidden: null, inert: false, mainInert: false, asideInert: false,
+  });
+
+  // A page with no heading list (the shelf landing sets toc: false) renders
+  // neither the button nor the scrim.
+  await page.setViewportSize({ width: 390, height: 844 });
+  await gotoBuiltPage(page, '/math/');
+  await expect(page.locator('.ap-nav-toc')).toHaveCount(0);
+  await expect(page.locator('.ap-toc-scrim')).toHaveCount(0);
 });

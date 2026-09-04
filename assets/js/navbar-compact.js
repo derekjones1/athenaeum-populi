@@ -16,7 +16,8 @@
  * cluster's size and position, and the rails' matching sticky offsets are
  * decided in assets/css/custom.css ("Compact navbar on scroll") so the same
  * hook works at every width — below md the shelf links are already in the
- * hamburger drawer and the hamburger joins the cluster. Hidden controls are
+ * hamburger drawer and the hamburger joins the cluster, and below xl so
+ * does the "On this page" button (assets/js/toc-drawer.js). Hidden controls are
  * `display: none`, never opacity, so they leave the tab order with the
  * layout. The markup lives in layouts/_partials/navbar.html.
  */

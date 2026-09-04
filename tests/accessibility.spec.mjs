@@ -487,6 +487,72 @@ test('the open mobile drawer contains keyboard focus', async ({ page }) => {
   expect(await regionState()).toEqual({ main: false, footer: false, drawer: true });
 });
 
+test('the open "On this page" drawer contains keyboard focus and has no blocking axe violations', async ({
+  page,
+}, testInfo) => {
+  // The right-hand counterpart of the test above. Below xl the "On this
+  // page" rail is an off-canvas panel (assets/js/toc-drawer.js): closed it
+  // is inert, so its off-screen links never take focus; open, the page
+  // behind its scrim — main, footer, and the (already inert) phone drawer —
+  // is inert, and Tab cycles through the navbar button that closes it plus
+  // the panel's own links. The open panel is also a state no full-page scan
+  // reaches, so axe runs on it here, in both themes.
+  await page.setViewportSize({ width: 390, height: 844 });
+  const path = '/math/prealgebra/05-decimals/06-ratios-and-rate/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  const regionState = () => page.evaluate(() => ({
+    main: document.querySelector('main').inert,
+    footer: document.querySelector('footer').inert,
+    sidebar: document.querySelector('.hextra-sidebar-container').inert,
+    panel: document.querySelector('nav.hextra-toc').inert,
+  }));
+  expect(await regionState()).toEqual({ main: false, footer: false, sidebar: true, panel: true });
+
+  // Opened from the keyboard, focus lands inside the panel.
+  const button = page.locator('.ap-nav-toc');
+  await button.focus();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('html')).toHaveClass(/ap-toc-open/);
+  expect(await regionState()).toEqual({ main: true, footer: true, sidebar: true, panel: false });
+  const inTrap = () => page.evaluate(() => {
+    const active = document.activeElement;
+    return document.querySelector('nav.hextra-toc').contains(active)
+      || active === document.querySelector('.ap-nav-toc');
+  });
+  expect(await page.evaluate(() => document.querySelector('nav.hextra-toc').contains(document.activeElement)),
+    'keyboard open must move focus into the panel').toBe(true);
+  for (let i = 0; i < 12; i += 1) {
+    await page.keyboard.press('Tab');
+    expect(await inTrap(), `forward Tab ${i + 1} escaped the panel trap`).toBe(true);
+  }
+  for (let i = 0; i < 12; i += 1) {
+    await page.keyboard.press('Shift+Tab');
+    expect(await inTrap(), `Shift+Tab ${i + 1} escaped the panel trap`).toBe(true);
+  }
+
+  const results = await new AxeBuilder({ page })
+    .include('nav.hextra-toc')
+    .include('.hextra-nav-container')
+    .withTags(WCAG_TAGS)
+    .analyze();
+  const blocking = results.violations.filter((violation) =>
+    BLOCKING_IMPACTS.has(violation.impact),
+  );
+  expect(
+    blocking.length,
+    `Blocking axe violations in the open "On this page" drawer ` +
+      `(${currentTheme(testInfo)} theme):\n\n${formatViolations(blocking)}`,
+  ).toBe(0);
+
+  await page.keyboard.press('Escape');
+  await expect(page.locator('html')).not.toHaveClass(/ap-toc-open/);
+  expect(await regionState()).toEqual({ main: false, footer: false, sidebar: true, panel: true });
+  await expect(button).toBeFocused();
+});
+
 test('a blocked speech engine degrades labels instead of leaving raw TeX', async ({
   page,
 }) => {
