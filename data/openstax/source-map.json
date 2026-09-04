@@ -55,11 +55,11 @@
     "biology": {
       "bundle": "biology-bundle",
       "contentPath": "content/life-health-sciences/biology",
-      "authoringStatus": "in-progress",
+      "authoringStatus": "complete",
       "upstreamChapters": 47,
       "upstreamSections": 208,
-      "localChapters": 42,
-      "mappedSections": 182,
+      "localChapters": 47,
+      "mappedSections": 208,
       "units": [
         {
           "index": 1,
@@ -1797,6 +1797,240 @@
       "moduleId": "m66666",
       "sourceTitle": "Disruptions in the Immune System",
       "moduleSha256": "88422cb30e7ade1790f00c628e9eff0975dcc360b2c07d3c68bd059a698e2aae"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/43-animal-reproduction-and-development/01-reproduction-methods.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "43.1",
+      "moduleId": "m66668",
+      "sourceTitle": "Reproduction Methods",
+      "moduleSha256": "8e5270c8a434852258ed8707b0ac5154d87bfe85f44e9ea5ab6749050b3e7385"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/43-animal-reproduction-and-development/02-fertilization.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "43.2",
+      "moduleId": "m66671",
+      "sourceTitle": "Fertilization",
+      "moduleSha256": "7b6483897c8a8dbe87f9ae87904152b7f81387c7dad28dd850c247f1c3285411"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/43-animal-reproduction-and-development/03-human-reproductive-anatomy-and-gametogenesis.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "43.3",
+      "moduleId": "m66673",
+      "sourceTitle": "Human Reproductive Anatomy and Gametogenesis",
+      "moduleSha256": "6e0a315f7c5d6e77a2a13541f806dbb181ea797f6d8b99ac35e73371e5465fdb"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/43-animal-reproduction-and-development/04-hormonal-control-of-human-reproduction.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "43.4",
+      "moduleId": "m66674",
+      "sourceTitle": "Hormonal Control of Human Reproduction",
+      "moduleSha256": "deb11a10cca2e7fde9bab340e4d0147744a03046ea9fd47769a1d81bedfcded3"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/43-animal-reproduction-and-development/05-human-pregnancy-and-birth.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "43.5",
+      "moduleId": "m66677",
+      "sourceTitle": "Human Pregnancy and Birth",
+      "moduleSha256": "809d53069292d25f6154c948e29b1edca2d795e58bd836b25019452bc25ba8da"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/43-animal-reproduction-and-development/06-fertilization-and-early-embryonic-development.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "43.6",
+      "moduleId": "m66678",
+      "sourceTitle": "Fertilization and Early Embryonic Development",
+      "moduleSha256": "1306c273c85b913497f31c320b01eddf46546b1c695383e154f02245ebec9a74"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/43-animal-reproduction-and-development/07-organogenesis-and-vertebrate-axis-formation.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "43.7",
+      "moduleId": "m66679",
+      "sourceTitle": "Organogenesis and Vertebrate Axis Formation",
+      "moduleSha256": "9db9cf45ca3232de7fe4c5d39528424b2983254677881ef2b5b63d0cdc0a99c8"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/44-ecology-and-the-biosphere/01-the-scope-of-ecology.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "44.1",
+      "moduleId": "m66410",
+      "sourceTitle": "The Scope of Ecology",
+      "moduleSha256": "00fe8a5801b79ac453b6300258d3cc7fddcba85c1dede4dc9b5c47324f6e90f0"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/44-ecology-and-the-biosphere/02-biogeography.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "44.2",
+      "moduleId": "m66411",
+      "sourceTitle": "Biogeography",
+      "moduleSha256": "f9d938cff8a19d940b78d4c53c456124d783a761d937921f187935a1a0dcecfc"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/44-ecology-and-the-biosphere/03-terrestrial-biomes.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "44.3",
+      "moduleId": "m66420",
+      "sourceTitle": "Terrestrial Biomes",
+      "moduleSha256": "77afebe7981116a80dd9be355355e230af2a01212f8f7c082236827c9223a638"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/44-ecology-and-the-biosphere/04-aquatic-biomes.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "44.4",
+      "moduleId": "m66417",
+      "sourceTitle": "Aquatic Biomes",
+      "moduleSha256": "6f4edc23ef457eaf38d0134dadee57947f6b9a6e96a89c75981e69eb8e46d043"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/44-ecology-and-the-biosphere/05-climate-and-the-effects-of-global-climate-change.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "44.5",
+      "moduleId": "m66419",
+      "sourceTitle": "Climate and the Effects of Global Climate Change",
+      "moduleSha256": "1192cf2c509e23f64e4428f258624a6c78a8306c664787557bec7259c355cf50"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/45-population-and-community-ecology/01-population-demography.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "45.1",
+      "moduleId": "m66686",
+      "sourceTitle": "Population Demography",
+      "moduleSha256": "a963510941a1d2da4008936f41cd6f64cf20687765fcf67699144e7c74575433"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/45-population-and-community-ecology/02-life-histories-and-natural-selection.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "45.2",
+      "moduleId": "m66688",
+      "sourceTitle": "Life Histories and Natural Selection",
+      "moduleSha256": "445cd2d91a511f94dbb9026fbb7d7164197319670963746d2eae786b9f3dee42"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/45-population-and-community-ecology/03-environmental-limits-to-population-growth.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "45.3",
+      "moduleId": "m66690",
+      "sourceTitle": "Environmental Limits to Population Growth",
+      "moduleSha256": "5cf872760e6e16b79d7114139feffd474bf3159375c49b4e9b99125950cfeb63"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/45-population-and-community-ecology/04-population-dynamics-and-regulation.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "45.4",
+      "moduleId": "m66691",
+      "sourceTitle": "Population Dynamics and Regulation",
+      "moduleSha256": "31302259de3abfdea7e76f3c266f9cdd8123f1f7f272d1ad6253b21b40ef75d6"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/45-population-and-community-ecology/05-human-population-growth.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "45.5",
+      "moduleId": "m66696",
+      "sourceTitle": "Human Population Growth",
+      "moduleSha256": "b32eecc2a1d54ee59a835b91e5929e9fe7452c5af249d2533aeb4ab36d01a8dc"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/45-population-and-community-ecology/06-community-ecology.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "45.6",
+      "moduleId": "m66698",
+      "sourceTitle": "Community Ecology",
+      "moduleSha256": "d3c5c53433da706a363b66d54c2d970c60a6e035070fbbb8842a27f6ee03b4a1"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/45-population-and-community-ecology/07-behavioral-biology-proximate-and-ultimate-causes-of-behavior.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "45.7",
+      "moduleId": "m66699",
+      "sourceTitle": "Behavioral Biology: Proximate and Ultimate Causes of Behavior",
+      "moduleSha256": "c0daec2ab855bbead2b01397e2e54b3fb0aca94da9ed140624541b1eadcc7223"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/46-ecosystems/01-ecology-of-ecosystems.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "46.1",
+      "moduleId": "m66701",
+      "sourceTitle": "Ecology of Ecosystems",
+      "moduleSha256": "15a4171b876c627fe9d497635cc416340345fb32247d9ae0e8f1db077acf2196"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/46-ecosystems/02-energy-flow-through-ecosystems.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "46.2",
+      "moduleId": "m66702",
+      "sourceTitle": "Energy Flow through Ecosystems",
+      "moduleSha256": "d597021c8848903ac147073e19039cf9509cd2624c166d2b2c89a82fdcf5ec94"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/46-ecosystems/03-biogeochemical-cycles.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "46.3",
+      "moduleId": "m66705",
+      "sourceTitle": "Biogeochemical Cycles",
+      "moduleSha256": "f45d9ea99da16f5af788d8e7c6599806b266ebdc8e620494742007cd937a1c0a"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/47-conservation-biology-and-biodiversity/01-the-biodiversity-crisis.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "47.1",
+      "moduleId": "m66707",
+      "sourceTitle": "The Biodiversity Crisis",
+      "moduleSha256": "6b4737d42e1230199f0eaabd87307c88a65b8d5b0092ac570d0430d2399e8286"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/47-conservation-biology-and-biodiversity/02-the-importance-of-biodiversity-to-human-life.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "47.2",
+      "moduleId": "m66708",
+      "sourceTitle": "The Importance of Biodiversity to Human Life",
+      "moduleSha256": "d18a76457d47d7fed37d4a047e10fd19200e1f3890d3a3330011ec48a7ff5b0e"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/47-conservation-biology-and-biodiversity/03-threats-to-biodiversity.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "47.3",
+      "moduleId": "m66709",
+      "sourceTitle": "Threats to Biodiversity",
+      "moduleSha256": "7ad6a214dbacf22f87999191ecf0882c4aa8e09e8d26e0ce7c095adb352a95fc"
+    },
+    {
+      "localPath": "content/life-health-sciences/biology/47-conservation-biology-and-biodiversity/04-preserving-biodiversity.md",
+      "bundle": "biology-bundle",
+      "book": "biology",
+      "sourceSection": "47.4",
+      "moduleId": "m66710",
+      "sourceTitle": "Preserving Biodiversity",
+      "moduleSha256": "bde79a9f01a18fb703b37a3ade1f00b38c93045b17491a82c0d2fd245bef565a"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

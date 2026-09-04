@@ -65,6 +65,14 @@
     "result": "agrees"
    }
   },
+  "004f277fae072ecf": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'neritic zone' (fs-idm245749408).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "005ce4d895d3b50b": {
    "verdict": "ok"
   },
@@ -211,12 +219,29 @@
   "016da4ee3f9401c3": {
    "verdict": "ok"
   },
+  "016f3ed458163a0b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "016fa02a63057183": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
+   }
+  },
+  "017373446e46c357": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "the prompt is the glossary definition of ethology verbatim (\"biological study of animal behavior\"); behavioral biology is defined separately as \"study of the biology and evolution of behavior\"; key stands"
    }
   },
   "0181fb00c970fcce": {
@@ -443,6 +468,10 @@
   "0266b367498824e4": {
    "verdict": "ok"
   },
+  "02679f21f135af25": {
+   "verdict": "ok",
+   "note": "selfcheck fs-idm112725344 — model answer is the source solution verbatim; checkpoints decompose it clause by clause with no new claim."
+  },
   "0269699e27c742f0": {
    "verdict": "ok"
   },
@@ -587,6 +616,14 @@
     "result": "agrees"
    }
   },
+  "033905184483585d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "033b583f688c968c": {
    "verdict": "ok"
   },
@@ -599,9 +636,25 @@
   "033fe1ec0e8245fe": {
    "verdict": "ok"
   },
+  "0342544f00657cd7": {
+   "verdict": "ok",
+   "note": "fs-idm81430816; module keys A, primary spermatocyte; page keys the same option.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0349cfbf0363c966": {
    "verdict": "ok",
    "note": "Same ellipse: c^2=36-4=32,c=4sqrt2; foci (+-4sqrt2,0); matches CNXML fs-id1355522."
+  },
+  "034b441efd74d760": {
+   "verdict": "ok",
+   "note": "m66677 fs-idp71215264; source key B, 'first trimester'; page keys B; supported by 'Internal organs and body structures begin to develop during the first trimester. By five weeks, limb buds, eyes, the heart, and liver have been basically formed.'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "034ecef92423051f": {
    "verdict": "ok"
@@ -662,6 +715,10 @@
   },
   "03d34c1493ddae38": {
    "verdict": "ok"
+  },
+  "03ddcdc4fbca00c1": {
+   "verdict": "ok",
+   "note": "Locally authored selfcheck for the thin 'natural selection/life history patterns' objective, built strictly from the module's own sentences in fs-idm178752016 and fs-idm178436096 (no source counterpart); disclosed in the footer and ledger."
   },
   "03dfdb3a032821b1": {
    "verdict": "ok",
@@ -927,6 +984,14 @@
    "verdict": "ok",
    "note": "Point (-4,2) matches the answer JSON and checkGraphPlot grades it correct; matches the original multiplechoice's coordinates exactly."
   },
+  "04f6556a4c8a0d99": {
+   "verdict": "ok",
+   "note": "m66671 fs-idm65505280; source solution A = aquatic; matches page key.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "04f88f75fae4691c": {
    "verdict": "ok",
    "note": "Glossary recall (definition id fs-idp55211200, term 'maximum parsimony').",
@@ -1004,6 +1069,10 @@
   "052d085e955490cf": {
    "verdict": "ok",
    "note": "d=(a5-a3)/2=(17-7)/2=5; a2=a3-d=7-5=2."
+  },
+  "052ff8c9522ba300": {
+   "verdict": "ok",
+   "note": "body Visual Connection selfcheck, module m66702 exercise fs-idm113565312; model answer is the exercise <solution> text (the note's XML-comment copy has a stray 'ab' before 'Pyramids', dropped, no other difference); checkpoints decompose it clause by clause with no new claims."
   },
   "0537a8c3c17df4aa": {
    "verdict": "ok"
@@ -1237,6 +1306,14 @@
     "result": "agrees"
    }
   },
+  "068b95096c026d14": {
+   "verdict": "ok",
+   "note": "local item, not from a source exercise; built strictly from the prose sentence 'When a fossil fuel is burned, carbon dioxide is released. With the beginning of the Industrial Era, atmospheric carbon dioxide began to rise' — disclosed in the footer and report; distractors are the module's own three natural drivers from the following subsection.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0691745c82a17773": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 750): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -1464,6 +1541,14 @@
   "07aa870a80808038": {
    "verdict": "ok"
   },
+  "07af6fd5efa39596": {
+   "verdict": "ok",
+   "note": "Cloze textin from the module's own Section Summary sentence: 'Endemic species are species that are naturally found only in a specific geographic area.' Blanked phrase 'specific geographic area' (3 words) is verbatim from the summary.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "07b49d46f48d8de4": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -1515,6 +1600,14 @@
   "07d73df1a3629cf1": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 248): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "07d8a0a727d5c155": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "07d8fc9a4de3bff3": {
    "verdict": "ok",
@@ -1771,6 +1864,22 @@
   "097647dbe0da06e3": {
    "verdict": "ok",
    "note": "Review Question fs-id1341900, solution fs-id2345394: keyed option D, ligase. The section places helicase, single-strand binding proteins, and the origin of replication at fork formation itself; ligase acts later, sealing nicks after new strands are synthesized, so it is correctly the one 'not involved' in forming the fork.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "097d6b6d09564072": {
+   "verdict": "ok",
+   "note": "glossary textin, term 'quadrat' (fs-idp272304480); prompt paraphrases the glossary meaning, answer is the defined term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "097ebe35bafd84d7": {
+   "verdict": "ok",
+   "note": "glossary textin, term 'life table' (fs-idp139106400); prompt paraphrases the glossary meaning, answer is the defined term.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -2049,6 +2158,10 @@
   "0b10fdc81335cc25": {
    "verdict": "ok"
   },
+  "0b122991a70310fe": {
+   "verdict": "ok",
+   "note": "m66709 fs-idm2997248 (Critical Thinking): source solution reused verbatim as the model answer; four checkpoints decompose its four clauses (unsustainable resource use -> habitat destruction; unsustainable fishing/hunting; fossil fuels -> global warming) with no new claims."
+  },
   "0b21f13cb31b9b61": {
    "verdict": "ok"
   },
@@ -2063,6 +2176,18 @@
   "0b27c49d865065d1": {
    "verdict": "ok",
    "note": "Solved y=(x+1)^2-3 (x>=-1) for x: x=-1+sqrt(y+3) (positive root since x+1>=0), so f^{-1}(x)=sqrt(x+3)-1. Matches CNXML exercise fs-id1165137405850 (source #7), which has a solution."
+  },
+  "0b28ccc9cd49ac0c": {
+   "verdict": "ok",
+   "note": "glossary textin, term 'menopause' (def fs-idp5732384) — prompt paraphrases the meaning, answer matches the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "0b2de1b887d42298": {
+   "verdict": "ok",
+   "note": "fs-idm59103088: source solution used verbatim as model answer; checkpoints are its three clauses."
   },
   "0b386b233adafd80": {
    "verdict": "ok",
@@ -2101,6 +2226,14 @@
   "0b74a480665a48a5": {
    "verdict": "ok"
   },
+  "0b75c71476f4c591": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0b78b3a0df6ea354": {
    "verdict": "ok"
   },
@@ -2127,11 +2260,24 @@
   "0ba98cd2123e3611": {
    "verdict": "ok"
   },
+  "0bab07e322f09943": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "the prompt is the glossary definition of classical conditioning verbatim (\"association of a specific stimulus and response through conditioning\"); conditioned behavior is defined as the behavior itself, not the association; key stands"
+   }
+  },
   "0bb6ad2f5ba16c36": {
    "verdict": "ok"
   },
   "0bb7b756e08d33a5": {
    "verdict": "ok"
+  },
+  "0bc0cade67d9e0de": {
+   "verdict": "ok",
+   "note": "Local selfcheck (no source exercise); model answer paraphrases the module's own soil-ecosystem-services paragraph (fs-idp102268992) with no new claim."
   },
   "0bc3954c4dbed81c": {
    "verdict": "ok"
@@ -2147,6 +2293,14 @@
   },
   "0bdfbb38236045fc": {
    "verdict": "ok"
+  },
+  "0bed09cc669947ea": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0bf0f75943eea573": {
    "verdict": "ok",
@@ -2170,6 +2324,10 @@
   },
   "0c06735381a910ac": {
    "verdict": "ok"
+  },
+  "0c06e1396c3afbe3": {
+   "verdict": "ok",
+   "note": "m66677 fs-idm56956000 (Critical Thinking); model answer is the source solution verbatim; checkpoints decompose the three labor stages with no new claims."
   },
   "0c08809f341d89f1": {
    "verdict": "ok"
@@ -2266,6 +2424,14 @@
   },
   "0c693956dc1cf1a9": {
    "verdict": "ok"
+  },
+  "0c693cb36d3a5d52": {
+   "verdict": "ok",
+   "note": "glossary textin, term 'mark and recapture' (fs-idp135955376); prompt paraphrases the glossary meaning, answer is the defined term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0c69af0542703f06": {
    "verdict": "ok"
@@ -2520,6 +2686,14 @@
   },
   "0d8e8e7fa77be9e3": {
    "verdict": "ok"
+  },
+  "0d9248372f572191": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0d96637faeb8695d": {
    "verdict": "ok"
@@ -2846,6 +3020,14 @@
   "0f618dbf8c89e011": {
    "verdict": "ok"
   },
+  "0f7cdef8eb52f406": {
+   "verdict": "ok",
+   "note": "source multiplechoice: exercise fs-idp132626720 (Review Question), source options in source order (wind/disease-causing microbe/temperature/soil particle size), source solution key B = 'disease-causing microbe' — the only living thing among the four options, consistent with the glossary's 'biotic' = living components.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0f84671a35feb23a": {
    "verdict": "ok",
    "note": "(tan(3x/2)-tan(7x/5))/(1+tan(3x/2)tan(7x/5)) = tan(3x/2-7x/5) = tan(x/10) since 3/2-7/5=15/10-14/10=1/10; confirmed by numeric sampling at x=0.3,1.1,-0.7 (agree to 1e-6, tan near-singular so looser tolerance)."
@@ -3000,6 +3182,10 @@
    "verdict": "ok",
    "note": "m66592 exercise fs-idp147584800; selfcheck inner + 4 checks are the source solution verbatim, decomposed."
   },
+  "106f888ff10f317a": {
+   "verdict": "ok",
+   "note": "module m66702 Critical Thinking Question eip-433; model answer is the source solution verbatim; checkpoints decompose it clause by clause with no new claims."
+  },
   "1081f628323db066": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -3064,6 +3250,14 @@
   },
   "10eb5d1474e4f842": {
    "verdict": "ok"
+  },
+  "10ec4fa3f3409ec2": {
+   "verdict": "ok",
+   "note": "multiplechoice fs-idm4742656; source SOL: B 'The trophoblast is a germ layer.' (the false statement), matches option text verbatim and the body's own account that germ layers are the endoderm/mesoderm/ectoderm formed at gastrulation, not the trophoblast formed earlier at the blastocyst stage.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "10ec5065f4d353e7": {
    "verdict": "ok"
@@ -3205,6 +3399,10 @@
   "11ba964abeff67e6": {
    "verdict": "ok"
   },
+  "11bd270025c31ff3": {
+   "verdict": "ok",
+   "note": "source eip-869 (jaguars/keystone-species CT); model answer is the source solution verbatim"
+  },
   "11c5524ce58c50e6": {
    "verdict": "ok",
    "note": "Half-diameter 800mm: 800^2/1280=500; matches source TI6(b) exactly. Exact, no rounding."
@@ -3224,6 +3422,14 @@
   "11d68a4550b6147b": {
    "verdict": "ok",
    "note": "C/B=(-\\pi/6)/(\\pi/3)=-0.5 (Try It 9 phase-shift part, matches CNXML -1/2)."
+  },
+  "11d6f49624550bc0": {
+   "verdict": "ok",
+   "note": "Review Question, module m66420 exercise fs-idp82347056. Source solution keys 'D' = the fourth listed option 'tropical wet forests', matching this item's answer exactly — no departure.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "11d7da4923725d93": {
    "verdict": "ok"
@@ -3277,6 +3483,14 @@
   "1213094b49e97ccb": {
    "verdict": "ok",
    "note": "Glossary recall, term 'sphere of hydration' (id fs-idm186516288); accept='hydration shell' per the section's own synonym ('a sphere of hydration, or a hydration shell').",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "12152b9ed83bb0d8": {
+   "verdict": "ok",
+   "note": "m66677 fs-idp80601616; source key B, 'diffusion through the endometrium'; page keys B; directly supported by 'During the first two to four weeks of the first trimester, nutrition and waste are handled by the endometrial lining through diffusion.'",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -3370,6 +3584,14 @@
   "12807b9df2e869c8": {
    "verdict": "ok"
   },
+  "1283a29dedeb9f86": {
+   "verdict": "ok",
+   "note": "fs-idm37463664; module's printed key is C, seminiferous tubules, but the module's own sentences ('The seminal vesicle glands account for 60 percent of the bulk of semen'; 'Prostate gland secretions account for about 30 percent'; semen 'is a mixture of sperm and spermatic duct secretions (about 10 percent of the total) and fluids from accessory glands that contribute most of the semen's volume') make seminal vesicles the largest single contributor, not seminiferous tubules, which contribute no fluid volume; page keys B, seminal vesicles — disclosed departure, pre-flagged by the parent.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "12875e12eb1446ea": {
    "verdict": "ok"
   },
@@ -3430,6 +3652,15 @@
   "12c82527ae2c387d": {
    "verdict": "ok",
    "note": "model answer is CNXML solution fs-id1986681 (m66479) verbatim; rubric checkpoints are clauses of that solution"
+  },
+  "12cb99c12d69cb49": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "\"warning coloration\" is the module's own gloss and is already in the accept list; key stands"
+   }
   },
   "12ccaa73c1576cac": {
    "verdict": "ok"
@@ -3569,6 +3800,14 @@
   },
   "13e6324fc17ca6f3": {
    "verdict": "ok"
+  },
+  "13e6616e75dbb4d7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "13f2bc9ba83cfa5e": {
    "verdict": "ok"
@@ -3720,6 +3959,14 @@
     "note": "accept already carries \"tympanic membrane|eardrum|ear drum\"; module prints tympanic membrane six times. Key stands."
    }
   },
+  "14d26140ba9f9ad5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "14d578b153e4ca67": {
    "verdict": "ok"
   },
@@ -3794,6 +4041,10 @@
   "153e91a8ed6b066a": {
    "verdict": "ok"
   },
+  "15488efaf3e77a9b": {
+   "verdict": "ok",
+   "note": "m66701 fs-idp59754160: model answer is the CNXML <solution> verbatim (grazing food webs based on producers; detrital food webs based on decomposers; detrital webs keep grazing webs healthy and cycle nutrients)."
+  },
   "1548f8a264cbe647": {
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L337 of 04-series-and-their-notations.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
@@ -3806,6 +4057,14 @@
   },
   "1553841462326cae": {
    "verdict": "ok"
+  },
+  "1554289fc7c4c327": {
+   "verdict": "ok",
+   "note": "glossary textin: 'abiotic' = nonliving components of the environment (glossary fs-idp241168240); question paraphrases the body sentence 'the abiotic components (nonliving things) of that area... air, water, and soil,' answer matches the glossary term exactly.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "1558d2bb9fab2128": {
    "verdict": "ok",
@@ -3830,6 +4089,14 @@
   },
   "157e0079fbc767bc": {
    "verdict": "ok"
+  },
+  "1589780346466e1b": {
+   "verdict": "ok",
+   "note": "MC fs-idp107793584; source solution keys C, option text 'quadrat' — keyed as printed.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "1597becc0174c481": {
    "verdict": "ok",
@@ -3887,6 +4154,14 @@
   },
   "15d9a0dbb516aa71": {
    "verdict": "ok"
+  },
+  "15dd7f99255aefd2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "15e06a160f5eb6c4": {
    "verdict": "ok"
@@ -4079,6 +4354,14 @@
   "16f3e1d26153bcd1": {
    "verdict": "ok"
   },
+  "16f58571ff71d634": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "16f91d6b289399ca": {
    "verdict": "ok"
   },
@@ -4132,6 +4415,14 @@
   "17256bcd0e4e40b8": {
    "verdict": "ok"
   },
+  "172cc46bf0d880b9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "172d894cf1c6af5c": {
    "verdict": "ok"
   },
@@ -4148,6 +4439,14 @@
   },
   "1745900ac4f9a32f": {
    "verdict": "ok"
+  },
+  "174ff71e093a44a5": {
+   "verdict": "ok",
+   "note": "MC fs-idp188104608; source solution keys D, option text 'life table' — keyed as printed.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "176191dff0c51191": {
    "verdict": "ok"
@@ -4250,8 +4549,24 @@
    "verdict": "ok",
    "note": "Critical Thinking exercise fs-idp177675648 (why distinguish homology/analogy before building trees): source solution reproduced near-verbatim."
   },
+  "17f044a4b836a946": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "17f0b5bedb334193": {
    "verdict": "ok"
+  },
+  "17f517f420ef721f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "17f6049a3272bc48": {
    "verdict": "ok"
@@ -4261,6 +4576,14 @@
   },
   "17f86650b15897b3": {
    "verdict": "ok"
+  },
+  "17fc5c0e575e0c63": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "17fcf247eb91678b": {
    "verdict": "ok"
@@ -4553,6 +4876,14 @@
     "result": "agrees"
    }
   },
+  "198b52469375d666": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "198fad2c1e8def20": {
    "verdict": "ok"
   },
@@ -4658,6 +4989,14 @@
   },
   "19ff66631923dab9": {
    "verdict": "ok"
+  },
+  "1a0506fe6d7e9c40": {
+   "verdict": "ok",
+   "note": "MC fs-idm29405328 'Which of the following gives rise to the skin cells?' — CNXML SOL: A (ectoderm); page keys ectoderm, source options and order preserved.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "1a0bab485810b93b": {
    "verdict": "ok"
@@ -4813,6 +5152,14 @@
   },
   "1aceb1a0ab0c67d7": {
    "verdict": "ok"
+  },
+  "1ad35957756ca934": {
+   "verdict": "ok",
+   "note": "glossary textin, term 'inhibin' (def fs-idp61021872) — prompt paraphrases the meaning, answer matches the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "1ae911ce53a911e1": {
    "verdict": "ok"
@@ -4993,6 +5340,14 @@
    "verdict": "ok",
    "note": "c^2=25+36=61 -> foci (sqrt61,0),(-sqrt61,0); matches source fs-id2129321."
   },
+  "1bf031371a3da47d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "1bf23eb3f890548c": {
    "verdict": "ok"
   },
@@ -5090,6 +5445,14 @@
   "1c95b4c6e91c27a5": {
    "verdict": "ok"
   },
+  "1c9919132d870f12": {
+   "verdict": "ok",
+   "note": "Body Visual Connection, module m66420 exercise fs-idp44965632 (note copy and exercise copy identical). Source solution: 'C. Boreal forests are not dominated by deciduous trees.' Keyed to option C's text verbatim, matching the source key exactly — no departure.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "1c9d11c8ff9f65cf": {
    "verdict": "ok",
    "note": "Try It 5. Derived independently: zeros 5, 2i, -2i give base cubic x^3-5x^2+4x-20; f(1) of base = -20; a=10/-20=-1/2; f(x)=-1/2x^3+5/2x^2-2x+10, confirmed by node computation of f(1)=10. Matches CNXML ti_03_06_05 solution exactly."
@@ -5186,6 +5549,14 @@
   "1d12af7490c0bb55": {
    "verdict": "ok"
   },
+  "1d147dbb2a7ba77c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "1d1897f059653e35": {
    "verdict": "ok",
    "note": "Review Q fs-idm71000711; solution D=Golgi apparatus, confirmed by Golgi Apparatus section (adds sugar chains / sorts glycoproteins).",
@@ -5234,6 +5605,22 @@
   "1d31d9fced939a03": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1d3779cf92be5ccf": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1d3d52d906062598": {
+   "verdict": "ok",
+   "note": "source multiplechoice: exercise fs-idp212979968 (Review Question), source options in source order, source solution key D = 'ecosystem ecology'; question corrects the source's own typo 'though' to 'through' (confirmed by grep against the raw CNXML: 'The study of nutrient cycling though the environment') — reported as a source defect in the footer, key unaffected.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -5436,6 +5823,10 @@
   "1e500438e9b40c00": {
    "verdict": "ok"
   },
+  "1e513e0e61a89c3d": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-idp2875584; model answer is the source solution verbatim (already complete sentences). Checkpoints are its three clauses."
+  },
   "1e5eeb88b292fded": {
    "verdict": "ok"
   },
@@ -5503,6 +5894,18 @@
   "1ec79b0fd7eb14fb": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 101): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "1ece8beff3c64e2a": {
+   "verdict": "ok",
+   "note": "locally built selfcheck paraphrasing one paragraph (Levels of Ecological Study para 2) with no new claim: population size, physiology/behavior, plants/soils, sociology/urban ecology — all four checkpoints are clauses of that one source sentence. Disclosed in footer as a local item (objective 2 has no source Critical Thinking item)."
+  },
+  "1ed0aa56e1e2cd77": {
+   "verdict": "ok",
+   "note": "DEPARTURE: exercise fs-idm142904224, source SOL D 'economically underdeveloped'; keyed C 'economically developed' instead because the module's own text contradicts D — 'Other developed countries, such as Italy, have zero population growth' and the highest growth rates are placed 'in the less economically developed countries of Africa and Asia'. Disclosed in the footer and reported as a source defect; pre-flagged in the parent's brief.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "1eebba9ddb9f73ff": {
    "verdict": "ok"
@@ -5654,6 +6057,14 @@
   "1fe9a5ab1179d7a7": {
    "verdict": "ok"
   },
+  "1fee231825ae367b": {
+   "verdict": "ok",
+   "note": "glossary textin, term 'age structure', definition 'proportion of population members at specific age ranges' — matches, accept 'age structures' added for the plural used elsewhere in the module.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "1ff3ec639a3c4a4b": {
    "verdict": "ok",
    "note": "Summary-derived cloze; blanks 'electron microscope' from the section's own Summary sentence.",
@@ -5775,6 +6186,14 @@
     "by": "orchestrator",
     "result": "adjudicated",
     "note": "module has no climate-change sentence; the key is the source solution and no module text supports ectotherms \"expending energy to cool\" — key stands"
+   }
+  },
+  "206aee361699992a": {
+   "verdict": "ok",
+   "note": "textin from glossary term 'haze-effect cooling' (fs-idp7436272); prompt uses the body prose's fuller definition ('dust, ash, or other suspended particles block out sunlight'), which the section itself gives immediately after introducing the term — no new claim beyond the section's own sentence.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
    }
   },
   "207317c2b94ad6ae": {
@@ -5934,6 +6353,14 @@
     "result": "agrees"
    }
   },
+  "211b80161edc0823": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2122070bb22a2183": {
    "verdict": "ok"
   },
@@ -6049,6 +6476,10 @@
   "21c87c1975726934": {
    "verdict": "ok"
   },
+  "21e3079f554d4bd7": {
+   "verdict": "ok",
+   "note": "critical-thinking fs-idp47132288; model answer and checkpoints reuse the source solution's own sentences verbatim, including its own 'secondary oocyte and a second oocyte' wording (reviewed, not treated as errata — see footer), no new claims. [re-hashed after a parent edit; paired by page order]"
+  },
   "21ecaf32f7237300": {
    "verdict": "ok",
    "note": "Parent-authored, added to restore the missing third part of source exercise 27 (asymptote/domain/range). A vertical shift changes neither the inputs allowed nor the domain of 2^x, so the domain stays all reals: (-inf, inf)."
@@ -6116,6 +6547,14 @@
   "22366484c198acf3": {
    "verdict": "ok",
    "note": "m66549 exercise fs-idm36358320; source solution B = 'the use of prokaryotes to clean up pollutants', confirmed against section's bioremediation definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "223a632d3926be78": {
+   "verdict": "ok",
+   "note": "m66677 glossary fs-idp71224096 'infertility' — 'inability to conceive, carry, and deliver children'; prompt names the same referent as the answer.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -6207,6 +6646,14 @@
   "22aa8bfb173d724d": {
    "verdict": "ok"
   },
+  "22ae2aded1e4ccac": {
+   "verdict": "ok",
+   "note": "glossary textin, term 'spermatogenesis' ('process of producing haploid sperm'); prompt names the process, answer is the process term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "22c8334f02070a65": {
    "verdict": "ok"
   },
@@ -6283,6 +6730,14 @@
   "2333b7bd4baa2aaa": {
    "verdict": "ok",
    "note": "Glossary definition fs-id2316354, term \"heat\", meaning \"energy transferred from one system to another that is not work (energy of the molecules' motion or particles)\" — prompt is the meaning verbatim; accept=\"heat energy\" covers the synonym the section body itself bolds and uses throughout. Question contains no word of the answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2333f0762a07ea50": {
+   "verdict": "ok",
+   "note": "fs-idp148194704; module keys D, uterus; page keys the same option.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -6543,6 +6998,10 @@
   "24d62f27eef9d36c": {
    "verdict": "ok"
   },
+  "24f39cf11dbc926a": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question, module m66420 exercise fs-idp34311808. Model answer is the source solution verbatim (both desert/tundra have low water supply — desert via low precipitation, tundra via frozen water; both have low net primary productivity). No new claim added."
+  },
   "24f93a28c7891153": {
    "verdict": "ok"
   },
@@ -6588,6 +7047,10 @@
   },
   "253e7dbf4023a6d9": {
    "verdict": "ok"
+  },
+  "2545cf1a588966f9": {
+   "verdict": "ok",
+   "note": "m66677 fs-idm78708912 (Critical Thinking); model answer is the source solution verbatim, reused as complete sentences; checkpoints decompose it clause by clause with no new claims."
   },
   "2545ec30960289c1": {
    "verdict": "ok",
@@ -6737,6 +7200,14 @@
   "261121fd12ffc57b": {
    "verdict": "ok"
   },
+  "26117eb1743ac0bc": {
+   "verdict": "ok",
+   "note": "m66671; no source exercise tests this objective — author-written multiplechoice built strictly from the module's own sentence 'the development of a penis for direct delivery into the female's vagina in mammals'; disclosed in footer as a local item.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "26138f1195a2ee79": {
    "verdict": "ok",
    "note": "Practice ex15 (fs-id1165134277994): y=3sin(8(x+4))+5 -> 8(x+4)=8x-(-32), C/B=-32/8=-4, matches CNXML solution -4 (node-verified)."
@@ -6850,6 +7321,14 @@
   "26c1c28664a15856": {
    "verdict": "ok",
    "note": "Reproduced via OLS on debt vs ln(x), x=1..11 (years 2000-2010): a=141.9124, b=10.4537, matching CNXML fs-id1322269 (Try It #2)."
+  },
+  "26c2b4bfb3993d03": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "26c8064be9e41d68": {
    "verdict": "ok",
@@ -7026,6 +7505,14 @@
     "result": "agrees"
    }
   },
+  "27c2ea11d83fe8eb": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "27c4c90c76d114b1": {
    "verdict": "ok",
    "note": "m66645 exercise fs-idp14167264 (critical thinking); model answer transcribes the source solution verbatim."
@@ -7083,6 +7570,10 @@
   "280c25d90e9b9524": {
    "verdict": "ok"
   },
+  "281957994903afe3": {
+   "verdict": "ok",
+   "note": "selfcheck = source exercise fs-idp223910576 (Critical Thinking); model answer is the source solution verbatim, rubric checkpoints decompose its three clauses with no new claims."
+  },
   "281afcdeb2751040": {
    "verdict": "ok",
    "note": "csc(π/3)=1/sin(π/3)=1/(√3/2)=2/√3=2√3/3, rationalized as source does"
@@ -7117,6 +7608,14 @@
   },
   "2838d38346c483bf": {
    "verdict": "ok"
+  },
+  "283ef0128e55d4fa": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "284938df75b151e4": {
    "verdict": "ok"
@@ -7221,6 +7720,15 @@
   },
   "28d1354815ac72e2": {
    "verdict": "ok"
+  },
+  "28e62bc4c4711501": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "accept gap: the module names the form \"Emsleyan/Mertensian mimicry\" and a learner who types either half is right; accept widened"
+   }
   },
   "28e76674b85d821e": {
    "verdict": "ok"
@@ -7337,6 +7845,14 @@
   "298873a5e66c2e1a": {
    "verdict": "ok"
   },
+  "29893736f64f305e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "298ec21cf753ddc9": {
    "verdict": "ok",
    "note": "Try It 3 (CNXML ti_09_04_03, source solution 3/(x-1)+(2x-4)/(x^2+1)). Independently solved: 5x^2-6x+7=A(x^2+1)+(Bx+C)(x-1), x=1 gives A=3, then expand/compare coefficients gives B=2, C=-4; matches source. Cross-checked as exact-rational identity via node. Grader: self=correct, retype-of-printed=form."
@@ -7360,6 +7876,22 @@
   "29afa45474cdfd82": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "29d80bfe0504d863": {
+   "verdict": "ok",
+   "note": "glossary textin: 'heterospecifics' = individuals that are members of different species (glossary fs-idp166187056); accept 'heterospecific' likewise the section's own singular form.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "29da4995e23ac990": {
+   "verdict": "ok",
+   "note": "glossary textin: 'conspecifics' = individuals that are members of the same species (glossary fs-idp359775280); accept 'conspecific' is the singular adjective form the body text itself uses ('conspecific interactions').",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -7477,6 +8009,14 @@
   "2a713abfff316d3e": {
    "verdict": "ok"
   },
+  "2a78855ecf305de4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2a7a46548f32657a": {
    "verdict": "ok"
   },
@@ -7530,6 +8070,10 @@
   "2ad014b1e5fcead7": {
    "verdict": "ok"
   },
+  "2ad499367523712f": {
+   "verdict": "ok",
+   "note": "m66710 fs-idp75454816: model answer is the printed solution verbatim (larger preserves, buffer zones, round/square shape); three checkpoints each restate one of its three sentences."
+  },
   "2ad4e30ee9dd1056": {
    "verdict": "ok"
   },
@@ -7564,6 +8108,14 @@
   },
   "2b0aaa4ac2958835": {
    "verdict": "ok"
+  },
+  "2b1218df9b12ba15": {
+   "verdict": "ok",
+   "note": "fs-idm37013456; module keys A, one; page keys the same option.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "2b15de8d1b40e3cd": {
    "verdict": "ok",
@@ -7670,6 +8222,10 @@
   },
   "2bcf4e3392b64691": {
    "verdict": "ok"
+  },
+  "2bdd4ad19b108538": {
+   "verdict": "ok",
+   "note": "selfcheck fs-idp108486512 (What would happen if multiple sperm fused with one egg?); model answer = CNXML solution verbatim (polyspermy, genetically non-viable, dies within a few days)."
   },
   "2be16d78fb2ea7fe": {
    "verdict": "ok",
@@ -7852,6 +8408,10 @@
   "2cf2d532429262c4": {
    "verdict": "ok"
   },
+  "2cfa4c87e8f42bfd": {
+   "verdict": "ok",
+   "note": "Critical Thinking fs-idm88859952; model answer is the source solution reformatted into complete sentences (past-tense passive 'Adjustments are made' kept as printed, no new claims). Checkpoints are its three clauses."
+  },
   "2cffb32d13852fc8": {
    "verdict": "ok",
    "note": "Critical Thinking id fs-idm71000690: model answer is the source solution verbatim, decomposed into its four clauses."
@@ -8011,6 +8571,14 @@
   "2de9465e2d0d4a02": {
    "verdict": "ok"
   },
+  "2de9fe20eb3837b3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2defaae1a6737955": {
    "verdict": "ok",
    "note": "m66469 critical-thinking solution fs-id1798390 (fermentation = glycolysis only vs. anaerobic respiration = full pathway + alternate final electron acceptor) matches the page's model answer verbatim; all three checks restate it faithfully."
@@ -8069,6 +8637,10 @@
   },
   "2e08500e7c2c2c04": {
    "verdict": "ok"
+  },
+  "2e0ee1e41ea9a1cc": {
+   "verdict": "ok",
+   "note": "m66709 fs-idp67707456 (Critical Thinking): source solution reused verbatim as the model answer; three checkpoints decompose its three clauses (global warming shifts habitat up the mountain; exotic species as predator or disease vector such as chytridiomycosis; possible habitat destruction) with no new claims."
   },
   "2e118bc8e075624e": {
    "verdict": "ok",
@@ -8211,6 +8783,14 @@
    "note": "(2t+5)(5t-3) expands to 10t^2+19t-15 (sympy). Distractor (2t-5)(5t+3) expands to 10t^2-19t-15; 'It is prime' is false since it factors. Exactly one option is correct."
   },
   "2ec5c9f2095b6a12": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "2ec852e968cbde22": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -8432,6 +9012,14 @@
   "3021e7d7513672f1": {
    "verdict": "ok",
    "note": "VC selfcheck (body, note fs-idm151695328 / exercise fs-idm135591200, identical wording in both copies): model answer matches the CNXML solution fs-idm17120448 verbatim — Patient A hypothyroidism (decreased metabolism), Patient B hyperthyroidism (increased metabolism)."
+  },
+  "3023494c0713f82a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "302c28964f08fde7": {
    "verdict": "ok"
@@ -8884,6 +9472,14 @@
   "325dc3b52746b443": {
    "verdict": "ok"
   },
+  "32670ee7026972a2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "326cdaaa76620370": {
    "verdict": "ok"
   },
@@ -8977,6 +9573,14 @@
   },
   "32f691cce4976132": {
    "verdict": "ok"
+  },
+  "32fade3131fa173b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "330a09c9104dc256": {
    "verdict": "ok"
@@ -9420,6 +10024,14 @@
     "result": "agrees"
    }
   },
+  "35d7b6c952a5d64e": {
+   "verdict": "ok",
+   "note": "m66671 glossary 'viviparity' (fs-idp9077824); prompt is the glossary meaning, answer is the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "35d88cea9805c343": {
    "verdict": "ok"
   },
@@ -9459,6 +10071,14 @@
   },
   "360d6ca4ccea3d2e": {
    "verdict": "ok"
+  },
+  "3610847088faf6a8": {
+   "verdict": "ok",
+   "note": "MC = source exercise fs-idp16529472; source SOL C matches keyed option verbatim ('A windstorm blew down trees in the Boundary Waters Canoe Area in Minnesota on July 4, 1999.').",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3612578e635e91a3": {
    "verdict": "ok",
@@ -9583,6 +10203,14 @@
    "verdict": "ok",
    "note": "asymptote spacing pi/2 apart gives B=2 (independently derived); A=4 confirmed against source's printed text solution g(x)=4tan(2x), and f(pi/8)=4tan(pi/4)=4 checked by node -e."
   },
+  "36b7a77d8cb543c9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "36bb30ba7f1559b2": {
    "verdict": "ok"
   },
@@ -9663,6 +10291,10 @@
   "370a7b6bc37dd257": {
    "verdict": "ok",
    "note": "a1=-19, iterating an=an-1-1.4 five times -> -19,-20.4,-21.8,-23.2,-24.6 (matches source key)."
+  },
+  "3710243afc9487d1": {
+   "verdict": "ok",
+   "note": "fs-idm132388848 selfcheck; model answer is the source solution verbatim (two sentences), three-clause rubric decomposes both sentences with no new claim."
   },
   "3717485deb970608": {
    "verdict": "ok"
@@ -9778,6 +10410,14 @@
   },
   "379af0901f07307d": {
    "verdict": "ok"
+  },
+  "379c56fb3e5b141b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "37a0a8eca4c0af60": {
    "verdict": "ok"
@@ -10050,6 +10690,14 @@
   "3928169921b2059b": {
    "verdict": "ok"
   },
+  "392ed2db2cef52d0": {
+   "verdict": "ok",
+   "note": "glossary textin: definition id fs-idm29204080, term 'life history'; prompt names the same referent (an inherited resource-allocation pattern) as the keyed term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "392f1d491685264b": {
    "verdict": "ok",
    "note": "Review Q fs-id2004118: module text says peroxisome oxidation reactions 'release hydrogen peroxide' — produced during oxidation, not used in detox (detox is the enzyme step that follows). Matches keyed B.",
@@ -10185,6 +10833,14 @@
   },
   "39c24d38f026bbbe": {
    "verdict": "ok"
+  },
+  "39c775d733eb0600": {
+   "verdict": "ok",
+   "note": "glossary textin, term 'one-child policy', definition transcribed verbatim from the module's glossary — matches.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "39c7e66bcab99eaf": {
    "verdict": "ok",
@@ -10322,8 +10978,20 @@
    "verdict": "ok",
    "note": "Practice #23 (fs-id1165135367683): C=[[4,10],[-2,6],[5,9]], B=[[3,6,4],[-8,0,12]]; CB computed in Node = [[-68,24,136],[-54,-12,64],[-57,30,128]]. Matches CNXML solution exactly. Distractor options independently verified as wrong: transpose confusion, partial-sum (first term only) error, and a row-2 sign flip."
   },
+  "3a7fb05093bb18c1": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'benthic realm' (fs-idm29879376); accept 'benthic zone' per the glossary's own '(also, benthic zone)'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "3a83cc40a80e9875": {
    "verdict": "ok"
+  },
+  "3a8943ac3596df94": {
+   "verdict": "ok",
+   "note": "Critical Thinking selfcheck, m66411 exercise fs-idm68610512. Model answer is the CNXML solution verbatim."
   },
   "3a8dc9ed8fbe4010": {
    "verdict": "ok"
@@ -10360,6 +11028,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "3ace73ddaff3f5e4": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question fs-idm146703328 (module m66417); model answer and checkpoints reuse the source solution's own sentences with no new claim."
   },
   "3ad21c584cb79375": {
    "verdict": "ok"
@@ -10422,6 +11094,10 @@
   "3b2bc023e1f6c2a0": {
    "verdict": "ok"
   },
+  "3b2d521361650981": {
+   "verdict": "ok",
+   "note": "body Visual Connection, exercise fs-idm238521552 (prose-keyed): model answer is the source solution verbatim, 'Stage 4 represents a population that is decreasing.'"
+  },
   "3b2eacdef737479b": {
    "verdict": "ok"
   },
@@ -10439,6 +11115,14 @@
   "3b4d8ad27d1e3a2e": {
    "verdict": "ok",
    "note": "node: -2*Math.exp(-1-1) = -0.27067... -> -0.2707; matches CNXML solution."
+  },
+  "3b4e66f2a1f178a2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3b53dba5d523e3d3": {
    "verdict": "ok"
@@ -10886,6 +11570,14 @@
   "3e4634bfe146f061": {
    "verdict": "ok"
   },
+  "3e4b5e6ac466ff7f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "3e4bbd11d175c539": {
    "verdict": "ok"
   },
@@ -10956,6 +11648,14 @@
   },
   "3ebd6068d6c096a3": {
    "verdict": "ok"
+  },
+  "3ec324eef77652af": {
+   "verdict": "ok",
+   "note": "fs-idm30849536; module keys A, clitoris; page keys the same option.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3ec4a84130afff29": {
    "verdict": "ok"
@@ -11055,6 +11755,14 @@
   "3f300c2197d31476": {
    "verdict": "ok"
   },
+  "3f3c63cce19639e0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "3f3cf90073690b82": {
    "verdict": "ok"
   },
@@ -11074,6 +11782,14 @@
   "3f576fc1df8d845c": {
    "verdict": "ok",
    "note": "Critical Thinking selfcheck fs-idp32488864; model answer is the CNXML solution verbatim, checks decompose its two clauses."
+  },
+  "3f5c2838de74b711": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3f6234e56f84ac0f": {
    "verdict": "ok"
@@ -11103,6 +11819,15 @@
   },
   "3f7cab0b91e21dfb": {
    "verdict": "ok"
+  },
+  "3f9beeef37c72999": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "the source keys chemoautotrophs; the module's own sentence makes autotrophs the encompassing category (erratum, DISCLOSED_DEVIATIONS); page keys autotrophs"
+   }
   },
   "3f9c9d46f050c54f": {
    "verdict": "ok",
@@ -11197,6 +11922,14 @@
   },
   "3fea8778696995ca": {
    "verdict": "ok"
+  },
+  "3ff138272d9a37c4": {
+   "verdict": "ok",
+   "note": "multiplechoice fs-idp11431424; source SOL: D 'does not change significantly', matches option text verbatim and the body's 'cells divide without an increase in mass'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3ff847d13a058b76": {
    "verdict": "ok"
@@ -11457,11 +12190,27 @@
   "4148f73b278d787c": {
    "verdict": "ok"
   },
+  "415989849bad3a07": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "416041d4928afc3b": {
    "verdict": "ok"
   },
   "4160916a634816a4": {
    "verdict": "ok"
+  },
+  "4164e278264310da": {
+   "verdict": "ok",
+   "note": "textin from glossary term 'climate' (fs-idp265303760); prompt paraphrases the meaning, answer is the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "41651cdcc0d1acbe": {
    "verdict": "ok"
@@ -11575,6 +12324,14 @@
   "41fb073ba827eafb": {
    "verdict": "ok",
    "note": "x=y^2: at y=-2,-1,1,2 -> x=4,1,1,4, plus vertex (0,0); points [[0,0],[1,1],[1,-1],[4,2],[4,-2]] all re-derived by direct substitution and confirmed against pinned CNXML solution image alt text ('(4,2) and (4,-2)... (1,1)/(1,-1)... vertex (0,0)'). All 5 targets inside grid -2..6/-4..4 and on the integer snap lattice (validator accepted)."
+  },
+  "41fba27da31f093a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "420655cacc5dfe33": {
    "verdict": "ok",
@@ -11759,6 +12516,14 @@
   "430def64e86daf3c": {
    "verdict": "ok"
   },
+  "430e84eafcf9f6a4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "431369c08e931a6a": {
    "verdict": "ok"
   },
@@ -11798,6 +12563,14 @@
   },
   "4358ccb39697e629": {
    "verdict": "ok"
+  },
+  "43590ec016138d8b": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'net primary productivity' (fs-idp21617888). Prompt is the glossary meaning verbatim; answer matches the glossary term, accept the standard abbreviation NPP.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "435f3ed811e15a45": {
    "verdict": "ok"
@@ -11989,6 +12762,10 @@
   "445eb707b52cee6e": {
    "verdict": "ok"
   },
+  "4461b8a68e7e9453": {
+   "verdict": "ok",
+   "note": "selfcheck eip-18 (CDC life-table Critical Thinking item); model answer reuses the source solution's formula, its seven mortality rates in interval order (7.56, 2.94, 8.99, 12.6, 25.4, 58.97, 118.0, copied exactly with the source's own inconsistent decimal places — flagged as a concern, not corrected), and its two trend sentences, with the solution's ungrammatical 'very young children Americans' corrected to 'very young children' — disclosed in the footer and reported as a source defect. Independently recomputed each rate from the printed Number dying / Number surviving pairs (e.g. 756/100000*1000=7.56; 10479/88788*1000=118.03, source prints 118.0) and confirmed all seven match the source solution's table."
+  },
   "446660e913fd053e": {
    "verdict": "ok",
    "note": "glossary definition fs-id2278509 (whole-genome sequencing).",
@@ -12149,6 +12926,14 @@
   "44d04e66220e7f95": {
    "verdict": "ok"
   },
+  "44d623fc08b3987e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "44daf2b2d40ef945": {
    "verdict": "ok"
   },
@@ -12162,6 +12947,10 @@
   },
   "44df961c89681809": {
    "verdict": "ok"
+  },
+  "44ee988d3e8524d5": {
+   "verdict": "ok",
+   "note": "m66671 fs-idp136653232; model answer is the source CT solution verbatim, checkpoints decompose its own clauses with no new claims."
   },
   "44f3e2a01263dba7": {
    "verdict": "ok"
@@ -12189,6 +12978,15 @@
   "450e9d96cf62a146": {
    "verdict": "ok",
    "note": "parent: theta=45 deg rotation of x^2-10xy+y^2-24=0 computed exactly: A'=1/2-5+1/2=-4, C'=1/2+5+1/2=6 -> -4x'^2+6y'^2=24 -> y'^2/4-x'^2/6=1; source answer figure self-inconsistent (errata 62)"
+  },
+  "45110f392f112dae": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "module ranks no approach; photosynthesis is the sink the carbon cycle names; kept on source authority"
+   }
   },
   "451580e4f45a5462": {
    "verdict": "ok",
@@ -12266,6 +13064,14 @@
   },
   "45b071f6729b1fa1": {
    "verdict": "ok"
+  },
+  "45b2811959401221": {
+   "verdict": "ok",
+   "note": "glossary textin, term 'scrotum' ('sac containing testes; exterior to the body'); prompt names the sac, answer is the sac.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "45b577e1e61a6231": {
    "verdict": "ok",
@@ -12531,6 +13337,14 @@
   "46ecb80e5aeff562": {
    "verdict": "ok"
   },
+  "46efc815c6245e8c": {
+   "verdict": "ok",
+   "note": "VC2 fs-idm52941392, source SOL B — key matches option B verbatim, transcribed from Figure_B43_04_03's day-14 graph.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "46f0147ff6eb93c9": {
    "verdict": "ok"
   },
@@ -12695,6 +13509,14 @@
   },
   "479f1fc01a4319dd": {
    "verdict": "ok"
+  },
+  "479f32a842bdd090": {
+   "verdict": "ok",
+   "note": "glossary textin, term 'mortality rate' (fs-idp150183936); prompt paraphrases the glossary meaning, answer is the defined term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "47a1f4c3b02771e0": {
    "verdict": "ok"
@@ -12933,6 +13755,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-id2200536: independently translated 5'-AUGGCCGGUUAUUAAGCA-3' codon by codon (AUG-GCC-GGU-UAU-UAA), confirming MAGY with a stop at the fifth codon, matching the source solution."
   },
+  "48a61404d51748f5": {
+   "verdict": "ok",
+   "note": "fs-idm82695104: source SOL A (sexual reproduction); the glossary keys sexual reproduction as producing genetically unique offspring, and the other three options are all forms of asexual reproduction (genetically identical offspring).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "48a62f2ba777da9c": {
    "verdict": "ok"
   },
@@ -12967,6 +13797,14 @@
   "48d1c88917c9acbc": {
    "verdict": "ok",
    "note": "Critical Thinking eip-392, solution eip-527, transcribed verbatim. Matches the section's description of topoisomerase relieving over-winding ahead of the fork by nicking and resealing the helix; inhibiting it stalls helicase-driven unwinding."
+  },
+  "48f0a3ecd6cb4a93": {
+   "verdict": "ok",
+   "note": "body Visual Connection, fs-idp69205744; module keys D, 'The prostate gland is located in the testes,' identical wording in note and exercise copies; page keys the same option.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "48f27516e0019c0b": {
    "verdict": "ok"
@@ -13227,6 +14065,14 @@
   "4a3ac9b35e55c236": {
    "verdict": "ok"
   },
+  "4a3cf85103f8ff77": {
+   "verdict": "ok",
+   "note": "Locally authored cloze textin from the module's own sentence: 'The distribution of these biomes shows that the same biome can occur in geographically distinct areas with similar climates.' Answer 'climates' is the blanked content phrase; accept 'climate' (singular).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4a45032d39c79c01": {
    "verdict": "ok"
   },
@@ -13349,9 +14195,25 @@
    "verdict": "ok",
    "note": "m66601 exercise fs-idp66460592 (Critical Thinking): model answer reuses the source solution verbatim in complete sentences; checkpoints decompose its two clauses."
   },
+  "4b29ecffb3ba8e99": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4b2b66f132497257": {
    "verdict": "ok",
    "note": "Ordinary annuity, 450/month at 6% compounded monthly for (65-18)*12 = 564 payments: 450*((1+0.005)^564 - 1)/0.005 = 1409344.1866, which rounds to $1,409,344.19. Only the investor's name changed (upstream errata #16, m81420)."
+  },
+  "4b2e46d0216f6dea": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4b314de583701e52": {
    "verdict": "ok"
@@ -13486,6 +14348,14 @@
   },
   "4bfbc9c6e0755ce6": {
    "verdict": "ok"
+  },
+  "4bfcd5d25f6be3ea": {
+   "verdict": "ok",
+   "note": "local item, no source exercise; built strictly from the sentence 'During phase three, or orgasm, rhythmic, involuntary contractions of muscles occur,' disclosed in the footer for the same reason as the phase-order multiple choice.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4c02f55a925f2c31": {
    "verdict": "ok"
@@ -13651,8 +14521,24 @@
   "4cf1f588b6d6ef57": {
    "verdict": "ok"
   },
+  "4d052e148dc02981": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4d0a050bb8a703c3": {
    "verdict": "ok"
+  },
+  "4d0cd2bdd79008dc": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4d1bfe5f0d920e4d": {
    "verdict": "ok",
@@ -13714,9 +14600,21 @@
   "4d649c01fe8f40a6": {
    "verdict": "ok"
   },
+  "4d7020b81a5ab7a6": {
+   "verdict": "ok",
+   "note": "m66701 fs-idp110672288: model answer is the CNXML <solution> verbatim (freshwater rarest/diverse, ocean most common/most photosynthesis, terrestrial grouped into biomes)."
+  },
   "4d73abcd9a0e642b": {
    "verdict": "ok",
    "note": "Review Q fs-idm73905536. Sodium is a metal, not one of the functional groups the section names (hydroxyl, methyl, carbonyl, carboxyl, amino, phosphate, sulfhydryl - all shown in the functional-groups figure/table). Matches CNXML solution 'A' = 'sodium'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "4d76bf8a0730c435": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -13789,6 +14687,10 @@
     "result": "agrees"
    }
   },
+  "4dc1bf65cfd9b6c8": {
+   "verdict": "ok",
+   "note": "exercise eip-73 (Critical Thinking), model answer is the source solution verbatim (preamble about the Endangered Species Act kept in the question) — matches."
+  },
   "4dc280e697e8beba": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -13856,6 +14758,14 @@
   "4e31bba84130b414": {
    "verdict": "ok"
   },
+  "4e35022d3b0c51dc": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'endemic' (fs-idm18367808). Prompt asks 'is described as ________' to match the adjective glossary term rather than the body's compound 'endemic species'; accept 'endemic species' covers the compound form the section itself uses.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4e3811e10ddaba7c": {
    "verdict": "ok"
   },
@@ -13874,6 +14784,14 @@
   },
   "4e51c8ac5fa2f3e5": {
    "verdict": "ok"
+  },
+  "4e54bd6109af588c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4e5bea25437bda32": {
    "verdict": "ok"
@@ -13951,6 +14869,14 @@
   "4eb1ae2b89f89232": {
    "verdict": "ok",
    "note": "Practice (MC): of the four printed expressions, only (x^3+2y^2-z)^5 has a base with three unlike terms that cannot be rewritten as a binomial (the other three bases are, or reduce to, two-term expressions); matches CNXML solution for exercise fs-id1165137757975."
+  },
+  "4ebab4dc26cc1a35": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'above-ground biomass' (fs-idm142038672). Prompt is the glossary meaning verbatim; answer matches the glossary term, accept 'aboveground biomass' — the module itself prints the unhyphenated spelling twice (fs-idm103544816) alongside the hyphenated glossary form.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4ecbd5d7fe9fc807": {
    "verdict": "ok",
@@ -14066,6 +14992,14 @@
   "4f8c8195ea866e86": {
    "verdict": "ok"
   },
+  "4f8f8db2e723271b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4f90a3d0e7a90867": {
    "verdict": "ok"
   },
@@ -14150,6 +15084,30 @@
   },
   "5003395ae727cd34": {
    "verdict": "ok"
+  },
+  "500514526b4c1da4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "50196c1b9911f547": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "50206aedf2f6cb5d": {
+   "verdict": "ok",
+   "note": "glossary textin: definition id fs-idm14845536, term 'semelparity'; prompt names the same referent as the keyed term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "50215289ec65ba25": {
    "verdict": "ok"
@@ -14308,6 +15266,14 @@
     "result": "agrees"
    }
   },
+  "50f462db71ee8f07": {
+   "verdict": "ok",
+   "note": "Locally authored MC (module carries only 2 glossary terms + 5 exercises against the 3/group, 8/section floor). Built from the module's own repeated framing: 'The eight major terrestrial biomes on Earth are each distinguished by characteristic temperatures and amount of precipitation.' Distractors (elevation/latitude, soil pH/daylight length, wind speed/humidity) are not used by this module to distinguish biomes.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "510b130ab3bb723b": {
    "verdict": "ok"
   },
@@ -14429,6 +15395,14 @@
   "51b2c8d0032cbeab": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "51b592ebc25862e3": {
+   "verdict": "ok",
+   "note": "Review Question fs-idm257702896; CNXML solution keys B = 'carrying capacity', matches page answer.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -14973,6 +15947,15 @@
   "5561cae963a4b2d3": {
    "verdict": "ok"
   },
+  "556344a73498db0d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "accept gap: the summary cloze keys \"biotic components\" and a learner who types \"biotic\" is right; accept widened"
+   }
+  },
   "556694492633b5d2": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 757): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -15237,6 +16220,10 @@
   "56e0b552b0312e59": {
    "verdict": "ok"
   },
+  "56e6b51750639d0c": {
+   "verdict": "ok",
+   "note": "m66701 fs-idp303039312 (Visual Connection, prose-keyed): model answer is the CNXML <solution> verbatim (first law of thermodynamics; energy in = energy out as heat/respiration); checkpoints decompose its three clauses with no new claims."
+  },
   "56e9a41825780565": {
    "verdict": "ok",
    "note": "Locally authored MC (no CNXML exercise) built strictly from the Pain section's own sentence (\"Nociception starts at the sensory receptors, but pain … does not start until it is communicated to the brain\"), added because objective 3 has only two source/glossary items available and the landed floor needs three. Disclosed in footer and ledger.",
@@ -15270,6 +16257,10 @@
   },
   "570e7419724a53be": {
    "verdict": "ok"
+  },
+  "570fae3a9fa97630": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question, module m66420 exercise fs-idp32408304. Model answer is the source solution verbatim: 'Fire is less common in desert biomes than in temperate grasslands because deserts have low net primary productivity and, thus, very little plant biomass to fuel a fire.' No new claim added."
   },
   "5715f35a5da2da08": {
    "verdict": "ok"
@@ -15516,6 +16507,10 @@
   "583ecf988b5d280d": {
    "verdict": "ok"
   },
+  "584dd838258d31db": {
+   "verdict": "ok",
+   "note": "fs-idm98334320 selfcheck; model answer is the source solution verbatim, three-clause rubric decomposes its own sentence with no new claim."
+  },
   "58564ef202765c51": {
    "verdict": "ok"
   },
@@ -15536,6 +16531,14 @@
   "58817f1680f318a0": {
    "verdict": "ok",
    "note": "MC fs-id2077371: option D (All of the above.) matches keyed solution D.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "589109668d3bdf55": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'emergent vegetation' (fs-idp6812512).",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -15585,6 +16588,14 @@
    "verdict": "ok",
    "note": "pi/3 = 60 deg special angle, cos(pi/3) = 1/2, x-coordinate of point (1/2, sqrt3/2)"
   },
+  "58d56f720f9ed7e8": {
+   "verdict": "ok",
+   "note": "summary-sourced cloze textin from the module's own Section Summary sentence ('growing at an exponential rate').",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "58d6bc7bce90256f": {
    "verdict": "ok"
   },
@@ -15593,6 +16604,14 @@
   },
   "58edaf668e34e80e": {
    "verdict": "ok"
+  },
+  "58ef318161372bb0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "58f1ee9f52b850fb": {
    "verdict": "ok",
@@ -15748,6 +16767,14 @@
   "59bf6a346cbbe2dc": {
    "verdict": "ok"
   },
+  "59ccd018e49c1376": {
+   "verdict": "ok",
+   "note": "glossary textin, term meroblastic; prompt built from glossary definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "59da8defd527a921": {
    "verdict": "ok",
    "note": "Review Question fs-id1674486, source solution fs-id1361234 keys option C 'oncogenes'; options and order transcribed verbatim from list fs-id1719205.",
@@ -15814,6 +16841,10 @@
   },
   "5a1e5a43ce078faa": {
    "verdict": "ok"
+  },
+  "5a1f9dec489d0b9b": {
+   "verdict": "ok",
+   "note": "critical-thinking fs-idm106299904; model answer and checkpoints reuse the source solution's own sentences, reformatted by phase, no new claims."
   },
   "5a259235f0c5e2db": {
    "verdict": "ok"
@@ -16170,6 +17201,14 @@
   "5bd9261a15a3beb1": {
    "verdict": "ok"
   },
+  "5bdf8ec661f6dae5": {
+   "verdict": "ok",
+   "note": "author-written select-the-term MC built from the section's own Summary sentence ('Ecologists measure characteristics of populations: size, density, dispersion pattern, age structure, and sex ratio.'); all four options (life table, dispersion pattern, mortality rate, survivorship curve) are the module's own glossary terms. Disclosed as a locally written item — no source exercise tests this objective a third time.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5be6f0786f762592": {
    "verdict": "ok"
   },
@@ -16522,6 +17561,15 @@
     "result": "agrees"
    }
   },
+  "5db98bd5271697cc": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "accept gap: the summary cloze keys \"long-term effects\" and a learner who types \"consequences\" or \"effects\" is right; accept widened"
+   }
+  },
   "5dbb9e1d86f60575": {
    "verdict": "ok"
   },
@@ -16540,6 +17588,14 @@
   "5df2b94508fe8db8": {
    "verdict": "ok"
   },
+  "5df3146ecd4bf466": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5df53c3cc8677d25": {
    "verdict": "ok",
    "note": "Critical Thinking Q (fs-idm124909392), model answer matches source solution verbatim; checkpoints decompose it with no new claims."
@@ -16555,6 +17611,14 @@
   },
   "5e0d6bc4b1ffe6a3": {
    "verdict": "ok"
+  },
+  "5e0ff33bf18cdc2e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "5e13570d50e44ba7": {
    "verdict": "ok"
@@ -16650,6 +17714,14 @@
   "5ebd05c77fb6de3c": {
    "verdict": "ok"
   },
+  "5ec02c72c3db9793": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5ec1a699548cde36": {
    "verdict": "ok"
   },
@@ -16699,6 +17771,14 @@
   "5f1c9e9d3a14c852": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "5f1eb0ef839783bf": {
+   "verdict": "ok",
+   "note": "exercise fs-idm205371408, source SOL B, 'using large amounts of natural resources' — matches.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -16940,6 +18020,14 @@
   "60a3484257f90a1c": {
    "verdict": "ok"
   },
+  "60a582e7c78723b8": {
+   "verdict": "ok",
+   "note": "MC = source exercise fs-idp206966240; source SOL B matches keyed option verbatim ('volcanoes').",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "60a77c35cba816f2": {
    "verdict": "ok"
   },
@@ -17035,6 +18123,10 @@
     "result": "agrees"
    }
   },
+  "612217bd0a075aa7": {
+   "verdict": "ok",
+   "note": "local item, model answer paraphrases the section's lynx/hare paragraph with no new claim; disclosed in footer/ledger"
+  },
   "61268feca7b0346f": {
    "verdict": "ok"
   },
@@ -17094,6 +18186,22 @@
    "verdict": "ok",
    "note": "Repaired 2026-08-15. x+(3x+3)=-5 gives x=-2 and 3x+3=-3; the question asks for the SMALLER, so -3. Was -2 (the larger)."
   },
+  "61cdc1e91d7f59b2": {
+   "verdict": "ok",
+   "note": "m66671 glossary 'cloaca' (fs-idp113629616); prompt is the glossary meaning, answer is the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "61e1f2e16b85231b": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'channel' (fs-idm23327328).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "61e5454199d76f65": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -17129,6 +18237,14 @@
   "61fc3991825f956a": {
    "verdict": "ok"
   },
+  "6208377eff26e688": {
+   "verdict": "ok",
+   "note": "Review Question MC, m66411 exercise fs-idm66852096. Options in source order (elevation, rainfall, latitude, temperature); CNXML solution keys C = latitude.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6212b65d64aad948": {
    "verdict": "ok",
    "note": "m66530 glossary definition fs-idp209954400 (phylogenetic tree): meaning used as prompt; accept='phylogenetic trees' (regular plural).",
@@ -17154,6 +18270,10 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idm155168720, solution fs-idm84854080 (m66622). Model answer is the source solution verbatim; the two sentences split into three checkpoints (sensory-to-brain, motor-to-body, reflexes), each a clause of the model answer."
   },
+  "6223a32a5fe09ee5": {
+   "verdict": "ok",
+   "note": "selfcheck fs-idp55851648: model answer is the source solution verbatim, in complete sentences already."
+  },
   "622955a9c37700f9": {
    "verdict": "ok",
    "note": "false negative — glossary def fs-id2925815 (\"incorrect test result that should have been positive\").",
@@ -17167,6 +18287,14 @@
   },
   "6248047631d19b9f": {
    "verdict": "ok"
+  },
+  "624826889671774b": {
+   "verdict": "ok",
+   "note": "textin from glossary term 'greenhouse effect' (fs-idp12898672); prompt paraphrases the meaning, answer is the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "625819632e07d82c": {
    "verdict": "ok",
@@ -17557,6 +18685,14 @@
     "result": "agrees"
    }
   },
+  "646235ae3dbedacf": {
+   "verdict": "ok",
+   "note": "Glossary recall textin. Glossary definition: permafrost — 'perennially frozen portion of the Arctic tundra soil.' Prompt asks for exactly that referent (the frozen soil layer), keyed 'permafrost', not 'Arctic tundra'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "64692bae82610cd6": {
    "verdict": "ok"
   },
@@ -17743,11 +18879,27 @@
   "655da9809db06f6f": {
    "verdict": "ok"
   },
+  "65603d46185e1891": {
+   "verdict": "ok",
+   "note": "fs-idm71478992, source SOL D (progesterone) — key kept on source authority ('The progesterone facilitates the regrowth of the uterine lining'); distractor 'estrogen' replaced with 'inhibin' because the module's own text ('Estradiol is the reproductive hormone in females that assists in endometrial regrowth'; 'estrogen levels rise ... The endometrium begins to regrow') makes estrogen also true — disclosed departure, pre-flagged by the parent brief.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6564c74082e383f1": {
    "verdict": "ok"
   },
   "65682d197b32b004": {
    "verdict": "ok"
+  },
+  "656ba1b12f05a555": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "656bfb8c16574b0d": {
    "verdict": "ok"
@@ -17959,6 +19111,14 @@
   "66aba182789b80d1": {
    "verdict": "ok"
   },
+  "66ac7409a160fb87": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "66b6bcddfac9c9ae": {
    "verdict": "ok",
    "note": "textin cytoskeleton: prompt paraphrases glossary def fs-id1774415 (term fs-id1526841); term not in prompt.",
@@ -18139,6 +19299,14 @@
    "verdict": "ok",
    "note": "r of 3i: modulus is |3i|=3 directly (x=0,y=3)."
   },
+  "676f31243f6616f3": {
+   "verdict": "ok",
+   "note": "Visual Connection, exercise fs-idm35270928 (module m66417): the module prints this question twice. The rendered <exercise> copy keys B, 'the photic zone, the intertidal zone, the neritic zone, and the oceanic zone', matching the module's own text (abyssal zone is dark per the module, so the note copy's commented-out draft solution of C is not module-consistent). Keyed B, the exercise copy's own key — not a re-key. See Source defects in the page footer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "677bc8ebd4a3aa01": {
    "verdict": "ok"
   },
@@ -18309,6 +19477,22 @@
   },
   "685d830d3ce60630": {
    "verdict": "ok"
+  },
+  "685ea71363ae642d": {
+   "verdict": "ok",
+   "note": "glossary textin, term 'menstrual cycle' (def fs-idm23279920) — prompt paraphrases the meaning, answer matches the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "685fe7edcb6dd2ce": {
+   "verdict": "ok",
+   "note": "glossary textin, term 'oogenesis' ('process of producing haploid eggs'); prompt names the process, answer is the process term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "6863fb7c67b9a6b0": {
    "verdict": "ok"
@@ -18884,6 +20068,14 @@
     "result": "agrees"
    }
   },
+  "6b77077459016554": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6b7bb813b08945a2": {
    "verdict": "ok"
   },
@@ -18905,6 +20097,14 @@
   },
   "6b9b715b1be0b13b": {
    "verdict": "ok"
+  },
+  "6b9c7de2103de0c2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "6baf33857a1c0807": {
    "verdict": "ok",
@@ -18964,6 +20164,14 @@
     "result": "agrees"
    }
   },
+  "6c07bba46e19f178": {
+   "verdict": "ok",
+   "note": "MC fs-idp40022656 'The ribs form from the ________.' — CNXML SOL: D (somites); page keys somites, source options and order preserved.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6c07def88926e939": {
    "verdict": "ok"
   },
@@ -19000,6 +20208,14 @@
   },
   "6c40d13175ccfe09": {
    "verdict": "ok"
+  },
+  "6c442f6d82174d66": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "6c492e70e1639203": {
    "verdict": "ok"
@@ -19082,6 +20298,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idp171620256; model answer is the source solution verbatim."
   },
+  "6ca2cdffe8c2f158": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6ca71a7653339149": {
    "verdict": "ok",
    "note": "Practice (source fs-id1165137898663, park, streets meet 80deg, sides 180ft/215ft): Area=0.5*180*215*sin(80)=19056.03 -> 19,056 sq ft. Matches CNXML answer '19,056 ft2' exactly."
@@ -19121,6 +20345,14 @@
   "6cec189f4b54bc79": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "6cf29424c0750c72": {
+   "verdict": "ok",
+   "note": "fs-idp135004256; module keys C, seminiferous tubules; page keys the same option.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -19300,6 +20532,10 @@
   "6e0114e9493a3d65": {
    "verdict": "ok"
   },
+  "6e0d99ebc097fa1b": {
+   "verdict": "ok",
+   "note": "locally built selfcheck paraphrasing one paragraph (Ecosystem Ecology para 1) with no new claim: extension of the other three levels, biotic/abiotic components with examples, nutrients/energy movement — all three checkpoints are clauses of that one source paragraph's sentences. Disclosed in footer as a local item."
+  },
   "6e12d6681107cf8a": {
    "verdict": "ok"
   },
@@ -19401,6 +20637,14 @@
   "6e99d0c10d664a09": {
    "verdict": "ok"
   },
+  "6e9f6ec5042013ea": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6ea2f06f8bac7fa5": {
    "verdict": "ok",
    "note": "Section exercise fs-id1165134047625: k=y*w/(xz)=10*6/15=4, so y=4xz/w. Verified with node arithmetic; matches CNXML solution."
@@ -19455,6 +20699,14 @@
   "6ed1d6df0b58e607": {
    "verdict": "ok"
   },
+  "6ed7843d118bef63": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'photic zone' (fs-idm224794784).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6eeb55d671fdc564": {
    "verdict": "ok",
    "note": "(y-3)^2=-12(x+1): h=-1,k=3 -> vertex (-1,3); matches source key V:(-1,3)."
@@ -19465,6 +20717,10 @@
   "6eef464b1b6a78c1": {
    "verdict": "ok",
    "note": "asin(2/20)=5.7392deg->5.7deg (node); rekeyed 5.7^\\circ with degrees form per source key and corpus convention. Parent re-derivation after edit."
+  },
+  "6eef5ff320420f04": {
+   "verdict": "ok",
+   "note": "locally authored selfcheck paraphrasing the module's biotic-potential paragraph (fs-idm73293856), no new claims — disclosed in the footer (thin-group filler)."
   },
   "6ef8b39623444848": {
    "verdict": "ok",
@@ -19555,6 +20811,14 @@
    "verdict": "ok",
    "note": "m66443 CT solution fs-id1479424 (RNA vs DNA structural differences) verbatim; five CHECKS clauses restate its sentences."
   },
+  "6fb8ad75c00c82f4": {
+   "verdict": "ok",
+   "note": "glossary textin, term trophoblast; prompt built from glossary definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6fc141c7a5b075a5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -19587,6 +20851,14 @@
   "6fe28c45e3e011e2": {
    "verdict": "ok",
    "note": "Locally authored notation-reading item on Example 4: L = 7^5 = 16807, matching Example 4's own worked solution and the CNXML ('16,807')."
+  },
+  "6ff2f5ee6a3e4585": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "6ff857969c6e23a6": {
    "verdict": "ok",
@@ -19941,6 +21213,10 @@
   "721d2b7a1d2012fe": {
    "verdict": "ok"
   },
+  "722091f417881cbc": {
+   "verdict": "ok",
+   "note": "fs-idm111379936 selfcheck. Model answer reuses the source solution verbatim; checkpoints decompose its four clauses with no new claims."
+  },
   "72232b8aed0c2d40": {
    "verdict": "ok",
    "note": "parent re-record after option shuffle: s(2)=96 is the height after 2 s, 96 ft; -16(4)+80(2)=96 checked."
@@ -20018,6 +21294,14 @@
   "7278cf2d4cd4eefd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "727ac11135a94454": {
+   "verdict": "ok",
+   "note": "glossary textin: definition id fs-idm9733952, term 'iteroparity'; prompt names the same referent as the keyed term.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -20168,6 +21452,14 @@
   "73e76f6da0d98a22": {
    "verdict": "ok"
   },
+  "73f0d4ec94627a3c": {
+   "verdict": "ok",
+   "note": "glossary fs-idm171595824 (parthenogenesis); prompt is the glossary meaning, answer is exactly the defined term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "74025230a1683507": {
    "verdict": "ok"
   },
@@ -20241,6 +21533,14 @@
   },
   "743968eacefa83a1": {
    "verdict": "ok"
+  },
+  "743fb610f785e454": {
+   "verdict": "ok",
+   "note": "Visual Connection MC beside Figure_45_03_02; CNXML exercise fs-idp14262368 solution keys A, matching option A verbatim (seal carrying capacity and population both decrease). Note copy and exercise copy identical apart from the exercise copy's stray 'b ' label, dropped on the page.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "74441aefdeb7e4b6": {
    "verdict": "ok"
@@ -20408,6 +21708,10 @@
   "7578876f9ba0ebc8": {
    "verdict": "ok"
   },
+  "757ef202379aa68e": {
+   "verdict": "ok",
+   "note": "m66710 fs-idp17512400: model answer is the printed solution verbatim (one sentence); the two checkpoints split its subordinate and main clauses, adding no new claim."
+  },
   "758c820fdbf5dbad": {
    "verdict": "ok"
   },
@@ -20430,6 +21734,14 @@
   "75af23f3062681e3": {
    "verdict": "ok",
    "note": "fs-id866358: keyed option A (adhere to cell surfaces) matches the source solution; fimbriae are described in the section text as the structure bacteria use to attach to a host cell.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "75b067dd3e937842": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -20512,6 +21824,14 @@
   "761fd3c311bc6301": {
    "verdict": "ok"
   },
+  "7631f041b755fbb1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7633b4755a334cbf": {
    "verdict": "ok"
   },
@@ -20560,6 +21880,14 @@
   "766814f0b5c4a8bb": {
    "verdict": "ok"
   },
+  "7674aef89e2a4ef4": {
+   "verdict": "ok",
+   "note": "MC fs-idm26065904: source keys A, few offspring; page keys 'few offspring'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "76a04c4aecd02ffb": {
    "verdict": "ok",
    "note": "m66459 visual-exercise fs-idm57896784, solution fs-id1772383 (rendered as selfcheck per page footer since the source keys it with prose, not a lettered option): model answer matches source verbatim for all four photos (compost exergonic/entropy up; egg endergonic/entropy down; sand art exergonic/no enthalpy change/entropy up; ball rolling exergonic/enthalpy down/no entropy change). All 4 CHECKS clauses restate the model answer (parentheticals dropped, no new claims)."
@@ -20600,6 +21928,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "76bc85168636db4d": {
+   "verdict": "ok",
+   "note": "m66701 eip-676: model answer is the CNXML <solution> verbatim (conceptual = big-picture/descriptive, limited on resistance/resilience conclusions; analytical = predictive but loses complexity)."
   },
   "76be003423e13645": {
    "verdict": "ok"
@@ -20871,6 +22203,14 @@
    "verdict": "ok"
   },
   "78367fbf7273b248": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "78375483910b182c": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -21537,6 +22877,14 @@
   "7b84a9197d31e374": {
    "verdict": "ok"
   },
+  "7b8dde194298053b": {
+   "verdict": "ok",
+   "note": "locally authored MC from the module's own sentence 'A consequence of exponential human population growth is a reduction in time that it takes to add a particular number of humans to the Earth' — disclosed in the footer (thin-group filler for the exponential-growth objective, which the source's own keyed exercises do not test).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7b8fed81d3e4180d": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -21548,6 +22896,14 @@
   "7b967e92aab9be92": {
    "verdict": "ok",
    "note": "Glossary recall (definition id fs-idp48289568, term 'shared ancestral character'); prompt avoids the answer's own words ('shared', 'ancestral', 'character').",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "7b96adf1c068d42a": {
+   "verdict": "ok",
+   "note": "m66677 glossary fs-idm4116720 'gestation' — 'length of time for fetal development to birth'; prompt names the same referent as the answer.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -21905,6 +23261,14 @@
   "7d3449e451577375": {
    "verdict": "ok"
   },
+  "7d39dcb531289952": {
+   "verdict": "ok",
+   "note": "glossary fs-idm67464448 (sexual reproduction); prompt is the glossary meaning, answer is exactly the defined term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7d3c6a53716deefd": {
    "verdict": "ok",
    "note": "Practice #7 (MC): ln(1/4^k)=ln(4^-k)=-k ln(4); power rule. Matches CNXML solution."
@@ -21959,6 +23323,14 @@
   "7d773683f0ff2575": {
    "verdict": "ok"
   },
+  "7d7e6497f61c873f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7d87a04d957a8655": {
    "verdict": "ok"
   },
@@ -21970,6 +23342,14 @@
   },
   "7d981d1377b5e819": {
    "verdict": "ok"
+  },
+  "7d98723e72af1795": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "7d9b8089fa9fecdd": {
    "verdict": "ok"
@@ -21987,6 +23367,14 @@
     "by": "orchestrator",
     "result": "adjudicated",
     "note": "the module never states where sodium is most concentrated and lists blood plasma, extracellular fluid, and intracellular fluid as three compartments; source key kept on source authority (blood plasma is not made true by any module sentence)"
+   }
+  },
+  "7da4e33cae6fabe2": {
+   "verdict": "ok",
+   "note": "Review Question MC, m66411 exercise fs-idm245558256. Options in source order (water, nutrients, heat, sunlight); CNXML solution keys D = sunlight.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
    }
   },
   "7da7f0f51f6fbd38": {
@@ -22056,6 +23444,10 @@
   "7de80f72088e1a98": {
    "verdict": "ok"
   },
+  "7dfcc9f6a3a88e55": {
+   "verdict": "ok",
+   "note": "Local self-check paraphrasing The Role of Captive Breeding's own sentences on inefficiency/failure on reintroduction and zoo facilities being too limited for the number of at-risk species; no new claim."
+  },
   "7dfeb21f844e9416": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -22099,6 +23491,10 @@
   },
   "7e14699669c527b1": {
    "verdict": "ok"
+  },
+  "7e15a869d7d672af": {
+   "verdict": "ok",
+   "note": "m66671 fs-idp77492064; model answer is the source CT solution verbatim, checkpoints decompose its own clauses with no new claims."
   },
   "7e18c9cdc2fd09a7": {
    "verdict": "ok"
@@ -22282,8 +23678,20 @@
   "7f3d08f619b0432f": {
    "verdict": "ok"
   },
+  "7f46f81e2fdc16d7": {
+   "verdict": "ok",
+   "note": "m66701 eip-82: model answer is the CNXML <solution> verbatim (ecologist recreates the ecosystem in a controlled environment and controls variables/species to ask specific questions)."
+  },
   "7f471d0742571643": {
    "verdict": "ok"
+  },
+  "7f4d5d8f1a6d06e8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "7f54c27f2d1715e5": {
    "verdict": "ok",
@@ -22296,6 +23704,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "7f568676e6e35984": {
+   "verdict": "ok",
+   "note": "Selfcheck matches CNXML m66708 exercise fs-idm31196944 solution verbatim."
   },
   "7f6521dc08f07832": {
    "verdict": "ok",
@@ -22374,6 +23786,14 @@
   },
   "7ffcdd38477532c1": {
    "verdict": "ok"
+  },
+  "8003b0b218020e2f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "800aa8d1b76a64c4": {
    "verdict": "ok"
@@ -22500,6 +23920,14 @@
   },
   "80d40ee59e26814e": {
    "verdict": "ok"
+  },
+  "80ef6eb995119970": {
+   "verdict": "ok",
+   "note": "Locally authored multiple choice for the thin 'natural selection/life history patterns' objective, built strictly from fs-idm178436096 ('may not affect populations that are well below their carrying capacity ... as population size increases, this competition intensifies'); no source counterpart; disclosed in the footer and ledger.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "80f1f4e2676afac9": {
    "verdict": "ok"
@@ -22872,6 +24300,10 @@
   "829d29b55fbe58b1": {
    "verdict": "ok"
   },
+  "82a07eaa5e7747bf": {
+   "verdict": "ok",
+   "note": "m66701 fs-idp244160944: model answer is the CNXML <solution> verbatim (food webs = interacting/interconnected, more accurate; food chains = linear, easier to model)."
+  },
   "82a696e01abb18f0": {
    "verdict": "ok",
    "note": "y^2=3-x^2 -> x^2+y^2=3 -> r^2=3 -> r=sqrt(3). Matches CNXML solution r=sqrt(3). exact-radical form verified against grader (self-grades correct, rejects retype of printed equation)."
@@ -23175,6 +24607,14 @@
   "840f08ca6e19a721": {
    "verdict": "ok"
   },
+  "841aa0abedbe864e": {
+   "verdict": "ok",
+   "note": "MC fs-idp82590032; source solution keys A, option text 'Type I' — keyed as printed.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "841e2e7e0261688e": {
    "verdict": "ok",
    "note": "2x-7y=2, 3x+y=-20 -> solved by addition (multiply 2nd by 7, add): x=-6, y=-2. Node-verified both equations."
@@ -23246,6 +24686,14 @@
   },
   "845c2973e4f07f40": {
    "verdict": "ok"
+  },
+  "8463a054957d0b08": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "846d8b7f246bdbb2": {
    "verdict": "ok"
@@ -23499,6 +24947,14 @@
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L313 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
+  "85713df1b9bc59ef": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "85762832f0378b51": {
    "verdict": "ok"
   },
@@ -23555,6 +25011,14 @@
   },
   "85bc9730dd9679cd": {
    "verdict": "ok"
+  },
+  "85c275333a3954fa": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "85c3bb5dc444745e": {
    "verdict": "ok"
@@ -23683,6 +25147,14 @@
   "868d11e87d99d7ae": {
    "verdict": "ok"
   },
+  "868d8dd29e4f5e77": {
+   "verdict": "ok",
+   "note": "glossary textin from definition fs-idp81359264/id somite: 'group of cells separated by small spaces that form from the mesoderm and give rise to connective tissue' used verbatim as prompt; answer 'somite' matches the glossary term (accept 'somites', the section's own plural usage).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "8690fa956cfa2dfd": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 797): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -23701,6 +25173,14 @@
   },
   "86bdd41251fb6f22": {
    "verdict": "ok"
+  },
+  "86c0df9d9252bfd8": {
+   "verdict": "ok",
+   "note": "local item (disclosed in footer + ledger): built strictly from the Vertebrate Axis Formation paragraph's Spemann and Mangold sentence ('This suggested that the dorsal cells were genetically programmed to form the notochord and define the axis.'); no new claim; needed because neither the 3-term glossary nor the summary otherwise covers the axis-formation objective enough to meet the 3-item/1-auto-graded floor.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "86c5d0486f942fe8": {
    "verdict": "ok"
@@ -23856,6 +25336,14 @@
     "result": "agrees"
    }
   },
+  "878544997c1e0f17": {
+   "verdict": "ok",
+   "note": "m66677 fs-idm43088464; source key C, 'sterilization'; page keys C; supported by 'Tubal ligation and vasectomy are considered permanent prevention, while other methods are reversible and provide short-term contraception.'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "8789d207fe79e2b3": {
    "verdict": "ok"
   },
@@ -23927,6 +25415,14 @@
   "880b8ccb4d77048d": {
    "verdict": "ok",
    "note": "m66405 fs-idp20836080 critical thinking; selfcheck model answer is the source solution verbatim. No departure."
+  },
+  "880f69b7440fbf9a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "8811e9e0526a6880": {
    "verdict": "ok"
@@ -24022,6 +25518,14 @@
   },
   "88d163c7a032a682": {
    "verdict": "ok"
+  },
+  "88e01e880851d6a5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "88e0e6c05555281d": {
    "verdict": "ok",
@@ -24307,6 +25811,10 @@
   "8a970f7e0dc4f523": {
    "verdict": "ok"
   },
+  "8a9a3e804955f947": {
+   "verdict": "ok",
+   "note": "Local selfcheck (no source exercise); model answer is the module's own Wild Food Sources sentence on fishery collapse verbatim, no new claim added."
+  },
   "8aa2fb1e5cd2102d": {
    "verdict": "ok"
   },
@@ -24510,6 +26018,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 86): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "8bd8a1f67359cf12": {
+   "verdict": "ok",
+   "note": "glossary textin, term 'ovarian cycle' (def fs-idm30622720) — prompt paraphrases the meaning, answer matches the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "8be4fbb2d8ce7b8a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -24666,6 +26182,14 @@
   "8cd5f0ffb1385363": {
    "verdict": "ok"
   },
+  "8ce2ebf42b7aa742": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "8ce3a6ae447ffdc7": {
    "verdict": "ok"
   },
@@ -24788,8 +26312,24 @@
   "8db16924f7c71047": {
    "verdict": "ok"
   },
+  "8dbe78aba355c136": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "8dc54c2b3bde9266": {
    "verdict": "ok"
+  },
+  "8dc68513237e8342": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "8dcbaeee9b471b05": {
    "verdict": "ok",
@@ -24923,6 +26463,14 @@
     "result": "agrees"
    }
   },
+  "8eb723a855bff814": {
+   "verdict": "ok",
+   "note": "m66671 fs-idp176671776; source solution C = ovoviviparity; matches page key.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "8eb985b7367a0763": {
    "verdict": "ok"
   },
@@ -24934,6 +26482,10 @@
   },
   "8ed1b84e0315c3bb": {
    "verdict": "ok"
+  },
+  "8ed6ec857b264fd0": {
+   "verdict": "ok",
+   "note": "eip-328 selfcheck. Model answer reuses the source solution, with \"(partial pressure of oxygen)\" corrected to \"(partial pressure of carbon dioxide)\" — the passage discusses only CO2 and never otherwise mentions oxygen; disclosed in footer as a source defect. Checkpoints decompose the corrected solution's clauses with no new claims."
   },
   "8ee4ee898a287c69": {
    "verdict": "ok",
@@ -24974,6 +26526,14 @@
   "8f2523fbdfb26e08": {
    "verdict": "ok",
    "note": "product: r=2sqrt3*2=4sqrt3, angle=150+30=180; 4sqrt3*cos(180deg)=-4sqrt3, sin term 0. node: r1*r2*Math.cos(Math.PI)=-6.928203230275509=-4*Math.sqrt(3)."
+  },
+  "8f2ccf36390bf83e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "8f36b2a72c14d94c": {
    "verdict": "ok"
@@ -25019,6 +26579,14 @@
   },
   "8f8b2a52ce64aadd": {
    "verdict": "ok"
+  },
+  "8f8be0f4d8469203": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "8f9bbc661b97fb5e": {
    "verdict": "ok",
@@ -25146,6 +26714,14 @@
   "90451fd0c3c95453": {
    "verdict": "ok"
   },
+  "904788a0e4ad9081": {
+   "verdict": "ok",
+   "note": "MC fs-idp18708688: source keys D, fecundity; page keys 'fecundity'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "904986f3de128853": {
    "verdict": "ok",
    "note": "Practice: x=2t+1,y=3sqrt(t) -> t=(x-1)/2, y=3sqrt((x-1)/2); node-verified residual ~0 over t=0..5; matches CNXML solution."
@@ -25234,6 +26810,10 @@
   },
   "90b5dfd85ad2363a": {
    "verdict": "ok"
+  },
+  "90c573d6aa31332c": {
+   "verdict": "ok",
+   "note": "module m66702 Critical Thinking Question eip-726; model answer is the source solution verbatim; checkpoints decompose it clause by clause with no new claims."
   },
   "90d18ab799fc2d6a": {
    "verdict": "ok"
@@ -25368,11 +26948,27 @@
   "91bc953d90c98a6d": {
    "verdict": "ok"
   },
+  "91cdf3e4705524fa": {
+   "verdict": "ok",
+   "note": "Review Question fs-idm162787312 (module m66417), source-keyed B, 'salt water and fresh water', supported by the module's opening sentence on estuaries.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "91d4e14e280542c5": {
    "verdict": "ok"
   },
   "91d595ab2898e620": {
    "verdict": "ok"
+  },
+  "91def6f6f616986c": {
+   "verdict": "ok",
+   "note": "fs-idm47940992: source SOL D (hermaphroditism); \"Self fertilization is common in animals that have limited mobility or are not motile\" and hermaphroditism is the only sexual (non-asexual) option among the four.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "91e0952b938286c5": {
    "verdict": "ok"
@@ -25425,6 +27021,10 @@
     "result": "agrees"
    }
   },
+  "923a4d95f7ba6cc4": {
+   "verdict": "ok",
+   "note": "selfcheck fs-idp6429424 (yolk concentration question); model answer = CNXML solution verbatim."
+  },
   "923d97e8fa5de530": {
    "verdict": "ok"
   },
@@ -25448,6 +27048,14 @@
   "928117d72fb79938": {
    "verdict": "ok"
   },
+  "928455d23ecdf2cb": {
+   "verdict": "ok",
+   "note": "Review Question fs-idm266378560; CNXML solution keys C = 'biotic potential', matches page answer. Prompt's source typo 'increased' corrected to 'increase' (disclosed in footer, not a key change).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "928898aa8dd008c0": {
    "verdict": "ok",
    "note": "-4x^2+24x+16y^2-128y+156=0: -4(x^2-6x+9)+16(y^2-8y+16)=-156-36+256=64; divide by 64 -> (y-4)^2/4-(x-3)^2/16=1; expanded back and confirmed equal to the original general form; matches source fs-id2272094."
@@ -25469,6 +27077,14 @@
   },
   "92a2bb0a3cec5130": {
    "verdict": "ok"
+  },
+  "92a4ea6482ab5ed9": {
+   "verdict": "ok",
+   "note": "m66677 fs-idm175851088; source key B, 'hormonal'; page keys B; supported by the Contraceptive Methods table, where hormonal methods (8%, 3%, less than 1%) each read lower than barrier (15-24%), natural family planning (12-25%), and withdrawal (27%).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "92a9a5cfc93b7506": {
    "verdict": "ok",
@@ -25601,6 +27217,14 @@
    "verdict": "ok",
    "note": "Practice obj2-1a: x^2/16+y^2/9=1, a^2=16>b^2=9 major axis x, vertices (+-4,0); matches CNXML fs-id1331349 solution."
   },
+  "9398a1ad23f1d7c9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "93a7d338b99e0319": {
    "verdict": "ok"
   },
@@ -25681,6 +27305,14 @@
   "9401b3835702e1f5": {
    "verdict": "ok"
   },
+  "94072d32c574bbf6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "94093ecfc1829a81": {
    "verdict": "ok",
    "note": "Distinct y-coordinates of the six listed points {0,5,-6,-2,2,-4} sorted: -6,-4,-2,0,2,5; graded unordered."
@@ -25730,6 +27362,14 @@
   },
   "94633879005a0780": {
    "verdict": "ok"
+  },
+  "9464d150b887c47d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "9466fae262ac9d18": {
    "verdict": "ok"
@@ -25987,6 +27627,14 @@
     "result": "agrees"
    }
   },
+  "96326196ecfaab08": {
+   "verdict": "ok",
+   "note": "VC1 fs-idm152976656, source SOL C — key matches option C verbatim, transcribed from Figure_B43_04_02's three panels.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "963281b89b575212": {
    "verdict": "ok"
   },
@@ -26080,6 +27728,14 @@
   },
   "967f18c963dc0bc1": {
    "verdict": "ok"
+  },
+  "968067d56cc4fe7f": {
+   "verdict": "ok",
+   "note": "MC eip-831; source solution keys A, option text 'Being a member of a larger group provides protection for each individual from predators.' — keyed as printed.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "9687c4db3ca799c8": {
    "verdict": "ok",
@@ -26676,6 +28332,10 @@
     "result": "agrees"
    }
   },
+  "999e169320020405": {
+   "verdict": "ok",
+   "note": "locally authored selfcheck paraphrasing the module's migration/public-health paragraph (fs-idm171579728), no new claims — disclosed in the footer (thin-group filler)."
+  },
   "99a708db69d9f07c": {
    "verdict": "ok"
   },
@@ -26735,6 +28395,10 @@
   },
   "9a19846a22aec403": {
    "verdict": "ok"
+  },
+  "9a1c7b765e08194c": {
+   "verdict": "ok",
+   "note": "Body Visual Connection selfcheck; matches CNXML m66708 exercise fs-idp4784704 solution verbatim (\"The ground is permanently frozen so the seeds will keep even if the electricity fails.\")."
   },
   "9a1cd846f074780b": {
    "verdict": "ok",
@@ -26880,6 +28544,14 @@
    "verdict": "ok",
    "note": "m66592 exercise fs-idp64819776; selfcheck inner + 3 checks are the source solution verbatim, decomposed."
   },
+  "9ae8052177d33f0c": {
+   "verdict": "ok",
+   "note": "m66671 glossary 'internal fertilization' (fs-idp100753120); prompt is the glossary meaning, answer is the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9ae9e6dc4ef4c5a9": {
    "verdict": "ok"
   },
@@ -26935,6 +28607,14 @@
   },
   "9b28314cf638cdb2": {
    "verdict": "ok"
+  },
+  "9b2bb283dede42d0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "9b2bddffd7a756ff": {
    "verdict": "ok",
@@ -27163,6 +28843,14 @@
   "9c598d1be966433d": {
    "verdict": "ok"
   },
+  "9c5c29aee90c8ea5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9c663f149bdd5cac": {
    "verdict": "ok",
    "note": "Glossary recall, term-00022/fs-id1778556 'paleontology'. Locally authored recall item; meaning matches the glossary definition exactly; 'palaeontology' accepted as the British spelling.",
@@ -27210,6 +28898,10 @@
   "9cc802ddb8c238dd": {
    "verdict": "ok",
    "note": "c+a=1650, 4c+12a=14200. Substituting a=1650-c: 4c+12(1650-c)=14200 -> -8c=14200-19800=-5600 -> c=700. Node-verified c=700,a=950 satisfy both equations."
+  },
+  "9cd45b26b8c6a66b": {
+   "verdict": "ok",
+   "note": "selfcheck fs-idm52907504, model answer reuses source solution verbatim (Pavlov's dogs), checkpoints decompose it with no new claims"
   },
   "9cd514221571eef8": {
    "verdict": "ok",
@@ -27276,6 +28968,14 @@
   "9d1e5774d3b5ee2b": {
    "verdict": "ok",
    "note": "m66648 exercise fs-idp32317168; model answer matches the CNXML solution verbatim: 'Carbon monoxide has a higher affinity for hemoglobin than oxygen. This means that carbon monoxide will preferentially bind to hemoglobin over oxygen. Administration of 100 percent oxygen is an effective therapy because at that concentration, oxygen will displace the carbon monoxide from the hemoglobin.'"
+  },
+  "9d29f6a5c4010b1c": {
+   "verdict": "ok",
+   "note": "glossary textin, term zona pellucida; prompt built from glossary definition 'protective layer of glycoproteins on the mammalian egg'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "9d2fd275201fec16": {
    "verdict": "ok",
@@ -27464,6 +29164,14 @@
     "result": "agrees"
    }
   },
+  "9e68c9cb5c54781a": {
+   "verdict": "ok",
+   "note": "local item, no source exercise; built strictly from the section's own phase-by-phase prose (excitement, plateau, orgasm, resolution in that order), disclosed in the footer since the sexual-response objective has no glossary term or table to draw from.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9e6e2f60b7047d53": {
    "verdict": "ok"
   },
@@ -27641,6 +29349,14 @@
   "9f7d15ff39f31306": {
    "verdict": "ok"
   },
+  "9f882dcb6adc59cd": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9f8c5abfa1803a94": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 791): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -27677,6 +29393,18 @@
   },
   "9fc0d1b9d9ed1749": {
    "verdict": "ok"
+  },
+  "9fcd95506fc16e29": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "9fd1c08cc63d337a": {
+   "verdict": "ok",
+   "note": "selfcheck eip-485 (solution eip-636/eip-607a): model answer is the source's two-paragraph solution verbatim."
   },
   "9fd6d4f0c9438fc1": {
    "verdict": "ok",
@@ -27741,6 +29469,10 @@
   "a0203f7cc099226b": {
    "verdict": "ok"
   },
+  "a024d279214b9cef": {
+   "verdict": "ok",
+   "note": "module m66702 Critical Thinking Question fs-idm3091920; model answer is the source solution verbatim; checkpoints decompose it clause by clause with no new claims."
+  },
   "a025a6ae5679d0ae": {
    "verdict": "ok"
   },
@@ -27752,6 +29484,14 @@
    "note": "Critical Thinking Q fs-idm75358256: model answer transcribes the source solution verbatim (species fuse back together if the color barrier fails)."
   },
   "a037499b248fab53": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "a0437358e8cbd5c6": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -27852,6 +29592,14 @@
   "a0c22d46517e1606": {
    "verdict": "ok"
   },
+  "a0cca0149119337a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a0cff59578508a27": {
    "verdict": "ok"
   },
@@ -27911,6 +29659,10 @@
   },
   "a1208cc8ef39cfeb": {
    "verdict": "ok"
+  },
+  "a1233ba856cf6b14": {
+   "verdict": "ok",
+   "note": "body VC selfcheck fs-idm34844256; model answer is the source solution verbatim: 'Smaller animals require less food and other resources, so the environment can support more of them.'"
   },
   "a128446cc83490c3": {
    "verdict": "ok",
@@ -28055,6 +29807,10 @@
   },
   "a23657d9e299bfab": {
    "verdict": "ok"
+  },
+  "a237f04d6731f5c7": {
+   "verdict": "ok",
+   "note": "Selfcheck reuses CNXML m66708 exercise fs-idp2467040's main solution sentence (secondary plant compounds / animal toxins), omitting only the parenthetical alternate answer about antibiotics."
   },
   "a23b116c005a8818": {
    "verdict": "ok",
@@ -28496,6 +30252,15 @@
   "a4ae5bbc85fae327": {
    "verdict": "ok"
   },
+  "a4afa4b28383057e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "general-knowledge fern spike would key B; the module is silent on fern spores, so the source key A stands on source authority"
+   }
+  },
   "a4ba50565dfce0f1": {
    "verdict": "ok"
   },
@@ -28522,6 +30287,14 @@
   },
   "a4ff49ea36c842ce": {
    "verdict": "ok"
+  },
+  "a502b80ab42fe81e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a50ac14e7e55d9f8": {
    "verdict": "ok"
@@ -28623,6 +30396,14 @@
    "verdict": "ok",
    "note": "Denominator x^4-5x^2+4=(x^2-1)(x^2-4) zero at x=±1,±2; matches CNXML source answer 'All reals x≠-1,-2,1,2'."
   },
+  "a58938e037d3f1f1": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a58f32d7912abd92": {
    "verdict": "ok"
   },
@@ -28641,6 +30422,14 @@
   },
   "a59af4f540e76ea0": {
    "verdict": "ok"
+  },
+  "a5aa2b5896bed521": {
+   "verdict": "ok",
+   "note": "author-written MC built strictly from the Survivorship Curves section's own sentence ('Birds are an example of an intermediate or Type II survivorship curve because birds die more or less equally at each age interval.'); options parallel the source's own Type I/II/III/IV list from fs-idp82590032. Disclosed as a locally written item.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a5ad120519c4baaf": {
    "verdict": "ok",
@@ -28848,6 +30637,14 @@
   },
   "a68f4b9ad30c628d": {
    "verdict": "ok"
+  },
+  "a69320ad99fcc810": {
+   "verdict": "ok",
+   "note": "m66677 glossary fs-idm92647504 'placenta' — 'organ that supports the diffusion of nutrients and waste between the pregnant person's and fetus' blood'; prompt names the same referent as the answer; term appears at its defining occurrence in the body.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a694c273aca4f3ef": {
    "verdict": "ok"
@@ -29110,6 +30907,14 @@
     "result": "agrees"
    }
   },
+  "a7c34a70f160f9b6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a7cafd63aea2655b": {
    "verdict": "ok"
   },
@@ -29161,6 +30966,10 @@
   "a806657428566694": {
    "verdict": "ok",
    "note": "(x-4)^2/36+(y-2)^2/20=1: center (h,k)=(4,2) read directly from standard form; matches CNXML fs-id1361228."
+  },
+  "a80b120e45b2e102": {
+   "verdict": "ok",
+   "note": "selfcheck from CT fs-idp121762688; model answer is the CNXML solution verbatim ('Animal bodies have lateral-medial...organism development.'), with the body's own grammar fix (genes leads -> genes lead) applied — matches this module's own CT solution wording, which already prints 'genes lead'; 4 checkpoints each restate a clause with no new claim."
   },
   "a81733ff7817fc28": {
    "verdict": "ok",
@@ -29244,6 +31053,14 @@
   },
   "a85cc807caafe9c3": {
    "verdict": "ok"
+  },
+  "a86a148d6a81d7bc": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a86d91b02198576e": {
    "verdict": "ok"
@@ -29354,6 +31171,10 @@
   "a900478c128a8c24": {
    "verdict": "ok"
   },
+  "a90d99f6f3121f9b": {
+   "verdict": "ok",
+   "note": "module m66702 Critical Thinking Question fs-idm6769312; model answer is the source solution verbatim; checkpoints decompose it clause by clause with no new claims."
+  },
   "a9100d60f298637f": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 317): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
@@ -29404,6 +31225,14 @@
   },
   "a937ec4efc3fc5e1": {
    "verdict": "ok"
+  },
+  "a93a39ebece44ccb": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a93b7078100d1ddb": {
    "verdict": "ok"
@@ -29677,6 +31506,14 @@
   "aaaa56f2eed6f4c1": {
    "verdict": "ok",
    "note": "locally authored selfcheck built strictly from the Morphology section's own sentence on rhynchocoel hydrostatic pressure (disclosed in footer); Nemertea-cavity objective group otherwise had only one source exercise"
+  },
+  "aaaf726933302b1b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "aab26dd56dda0864": {
    "verdict": "ok",
@@ -30097,6 +31934,10 @@
   },
   "acc35f3e5db13c2c": {
    "verdict": "ok"
+  },
+  "acc44535d3968443": {
+   "verdict": "ok",
+   "note": "Critical Thinking selfcheck, m66411 exercise fs-idp14281392. Model answer is the CNXML solution verbatim."
   },
   "acc5eb9add35b8a6": {
    "verdict": "ok",
@@ -30649,6 +32490,14 @@
   "aff496b102d79093": {
    "verdict": "ok"
   },
+  "aff5abb5943846ac": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "b00c5a42e6a9318d": {
    "verdict": "ok",
    "note": "glossary fs-id1703590 (prokaryote): prompt is the source meaning verbatim, answer is the keyed term; accept covers the plural.",
@@ -30894,6 +32743,10 @@
    "verdict": "ok",
    "note": "cos^3t=cost -> cost(cos^2t-1)=0 -> cost=0 (pi/2,3pi/2) or cos^2t=1 i.e. sint=0 (0,pi); union matches source key."
   },
+  "b14eb89fdd590805": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question eip-63; model answer is the CNXML solution (eip-926/eip-142) verbatim, checkpoints are its four clauses."
+  },
   "b14fd84bc7b01747": {
    "verdict": "ok"
   },
@@ -31132,6 +32985,14 @@
   "b2e5db0acfebbf8d": {
    "verdict": "ok",
    "note": "textin glossary recall: answer 'genomics' matches glossary definition fs-id1815339/fs-id1815343 (term/meaning) verbatim.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "b2ed8bfa4e100f92": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -31419,6 +33280,14 @@
    "verdict": "ok",
    "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
+  "b4d6250fca6faba0": {
+   "verdict": "ok",
+   "note": "Summary-derived select-the-term multiple choice from the section summary's own sentence 'Density and temperature shape the structure of aquatic systems.' Distractors (salinity, light, pH, nutrients, oxygen, pressure) are all terms used elsewhere in the module's own text. Author-written item, no source key.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "b4dacfab86d384a9": {
    "verdict": "ok"
   },
@@ -31647,6 +33516,14 @@
     "result": "agrees"
    }
   },
+  "b5f39795503dc0a5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "b5f54d9ab58b4831": {
    "verdict": "ok"
   },
@@ -31679,6 +33556,14 @@
   "b615d703cb1570f5": {
    "verdict": "ok"
   },
+  "b62474bfef070907": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "b631151fd812b535": {
    "verdict": "ok"
   },
@@ -31698,6 +33583,14 @@
   },
   "b651934e03b3135a": {
    "verdict": "ok"
+  },
+  "b652dc8216b81adb": {
+   "verdict": "ok",
+   "note": "fs-idm171491232, source SOL B (LH) — key matches.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "b658d5ee04572126": {
    "verdict": "ok"
@@ -31742,6 +33635,10 @@
   },
   "b6770668225d4b8e": {
    "verdict": "ok"
+  },
+  "b6782904ab356f80": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question fs-idm128160368 (module m66417); model answer and checkpoints reuse the source solution's own sentences with no new claim."
   },
   "b67a484d93f2a2d0": {
    "verdict": "ok"
@@ -31881,6 +33778,15 @@
    "verdict": "ok",
    "note": "#39 (fs-id2155191): cos58°+cos12°=2cos35°cos23°; computed in node: 2*cos(35°)*cos(23°)=1.5080668649670106, rounds to 1.5081, matches CNXML solution '2cos(35°)cos(23°), 1.5081'."
   },
+  "b75f564fc9f1b3b4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "accept gap: the glossary keys \"species dispersion pattern\" and the section also says \"dispersion pattern\"; accept widened"
+   }
+  },
   "b75f936cbe14f9c7": {
    "verdict": "ok"
   },
@@ -31964,6 +33870,15 @@
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
+   }
+  },
+  "b80b72ee112bd0c7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "the glossary defines assimilation with exactly this wording; net consumer productivity is the energy content available to the next level — key stands"
    }
   },
   "b80d5c634afd286f": {
@@ -32145,6 +34060,10 @@
   },
   "b910c8c75a13dedb": {
    "verdict": "ok"
+  },
+  "b91107b2771aa5a0": {
+   "verdict": "ok",
+   "note": "fs-idm113313088 selfcheck. Model answer reuses the source solution verbatim; checkpoints decompose its three clauses with no new claims."
   },
   "b9111c7b7fe705a9": {
    "verdict": "ok"
@@ -32467,6 +34386,14 @@
    "verdict": "ok",
    "note": "Practice #7 (fs-id1165135481913): C=[[1,5],[8,92],[12,6]], D=[[10,14],[7,2],[5,61]]; C+D computed in Node = [[11,19],[15,94],[17,67]], row 2 = 15,94. Matches CNXML solution."
   },
+  "baef2d6cb9266337": {
+   "verdict": "ok",
+   "note": "fs-idm55845888, source SOL C (GnRH) — key matches.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "baf4c6850099e0dd": {
    "verdict": "ok"
   },
@@ -32535,6 +34462,14 @@
   "bb4d206c4864ad6e": {
    "verdict": "ok",
    "note": "Review Q4 (fs-id1462637), solution B = prometaphase; matches the Prometaphase paragraph's kinetochore/spindle-attachment description.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "bb627b75d160e556": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -32788,11 +34723,27 @@
   "bcf4a42a0d8a1ab0": {
    "verdict": "ok"
   },
+  "bcfcf5caa4f548d7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "bd0196eb31bee315": {
    "verdict": "ok"
   },
   "bd01f3dad9a92347": {
    "verdict": "ok"
+  },
+  "bd02b2939b1fb468": {
+   "verdict": "ok",
+   "note": "Author-written select-the-term MC, summary-sourced from the module's own sentence 'Net primary productivity is a measure of the amount of biomass produced by a biome.' Distractors (above-ground biomass, thermocline, biosphere) are the module's own terms; none is also correct by the module's text.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "bd06bc934f90abb3": {
    "verdict": "ok"
@@ -32994,8 +34945,24 @@
    "verdict": "ok",
    "note": "parent re-derivation: solved from the printed question with node arithmetic and replayed through checkAnswer after adding answerForm/fixing hint or option TeX; value unchanged from the agent-derived key"
   },
+  "bdee21d2a1cf7856": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "bdf06e669e46c089": {
    "verdict": "ok"
+  },
+  "be00d080c75d170b": {
+   "verdict": "ok",
+   "note": "textin from glossary term 'clathrates' (fs-idp39080832); prompt paraphrases the meaning, answer is the term; accept singular form.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "be012f21d651a3c0": {
    "verdict": "ok",
@@ -33028,6 +34995,14 @@
   "be3a11a2b63a8f18": {
    "verdict": "ok",
    "note": "In-page Try It (ti_09_07_02). Computed A^-1 for [[1,-1],[2,3]] via adjugate/det formula in exact rational arithmetic: det=5, A^-1=[[3/5,1/5],[-2/5,1/5]]. Matches source's printed inverse exactly; keyed row 2."
+  },
+  "be3af14ff1d91bf2": {
+   "verdict": "ok",
+   "note": "fs-idp21199008, source SOL B (LH) — key matches.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "be3c61c4389642a8": {
    "verdict": "ok"
@@ -33130,6 +35105,14 @@
     "result": "agrees"
    }
   },
+  "bea84689f7699f3d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "beaa2b716ba6ad1c": {
    "verdict": "ok",
    "note": "m66540 exercise fs-idp63929504, solution C = DNA (prions contain no DNA or RNA per the section text).",
@@ -33172,6 +35155,15 @@
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
+   }
+  },
+  "bed93c1c5b227ff7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "accept gap: the key is \"J-shaped growth curve\" and a learner who types \"J-shaped curve\", the section's own shorter form, is right; accept widened"
    }
   },
   "beddc1128f004f51": {
@@ -33257,6 +35249,14 @@
    "verdict": "ok",
    "note": "Section Exercise 37 part b: c=b/sin(15deg)=57.9555, computed with node; matches CNXML solution."
   },
+  "bf3ec0b8506bac4f": {
+   "verdict": "ok",
+   "note": "glossary textin, term holoblastic; prompt built from glossary definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "bf42b6c32c5111e6": {
    "verdict": "ok"
   },
@@ -33299,6 +35299,14 @@
   "bf84fe379010ea5b": {
    "verdict": "ok"
   },
+  "bf91350751595434": {
+   "verdict": "ok",
+   "note": "MC fs-idm109424304: source keys B, iteroparity; page keys 'iteroparity'. Source's own option A prints the misspelling 'semiparity' (for 'semelparity') — kept as printed per running guidance for this module; not a key departure.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "bf925adedda9f1b2": {
    "verdict": "ok",
    "note": "Slope 4/3 through (2,-2) means y = (4/3)x - 14/3, rising steeply; option 1 draws slope 1.3333333333333333 intercept -4.666666666666667. Option 0 is the sign-inverted -4/3 and option 2 the reciprocal 3/4. All three mark (2,-2), so only the slope differs. Rendered and inspected."
@@ -33318,6 +35326,14 @@
     "by": "orchestrator",
     "result": "adjudicated",
     "note": "the module uses 'initiation codon' and 'start codon' for AUG; accept list covers the variants and the grader agreed"
+   }
+  },
+  "bf975ff47e83cc23": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
    }
   },
   "bf9f60106518a5e7": {
@@ -33354,6 +35370,14 @@
   },
   "bfbf2428329047e1": {
    "verdict": "ok"
+  },
+  "bfc18a0fd9c82fe1": {
+   "verdict": "ok",
+   "note": "summary-sourced cloze textin from the module's own Section Summary sentence ('migration, agriculture, medical advances, and communication').",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "bfc669802926e78f": {
    "verdict": "ok",
@@ -33876,6 +35900,14 @@
   "c2afc96c1e57afc4": {
    "verdict": "ok"
   },
+  "c2c234bb72bbc0ab": {
+   "verdict": "ok",
+   "note": "m66677 fs-idp160654912; source key A, 'oxytocin'; page keys A; supported by 'nerve impulses are sent to the hypothalamus, which signals for the release of oxytocin from the posterior pituitary. The oxytocin causes the smooth muscle in the uterine wall to contract.'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c2e0567e6ea8857a": {
    "verdict": "ok"
   },
@@ -33971,6 +36003,14 @@
   "c3500b7e60931fc7": {
    "verdict": "ok"
   },
+  "c35196a3654922af": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'aphotic zone' (fs-idm243319840).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c36d62381035e132": {
    "verdict": "ok",
    "note": "Try It ti_07_01_02 adapted to single-trig-function: cot(t)/csc(t) = (cos t/sin t)/(1/sin t) = cos t; confirmed numerically at t=1 (0.5403023058681397 vs cos(1)=0.5403023058681398) and via checkAnswer self-grade correct, subject-vs-key grades incorrect (not correct)."
@@ -34029,6 +36069,15 @@
   },
   "c3b5dd1f920ddec0": {
    "verdict": "ok"
+  },
+  "c3bc581316d6bced": {
+   "verdict": "ok",
+   "note": "Glossary textin from definition fs-idp10002256 (zero population growth); prompt asks for the name of the condition the meaning describes, answer matches the term exactly; accept ZPG added as the corpus-standard abbreviation for this term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "\"ZPG\" is the section's own abbreviation and is already in the accept list; key stands"
+   }
   },
   "c3bcf79e35f834cc": {
    "verdict": "ok"
@@ -34156,6 +36205,14 @@
     "result": "agrees"
    }
   },
+  "c466a67ae516cc3e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c46b0af9cddbccd5": {
    "verdict": "ok"
   },
@@ -34209,6 +36266,14 @@
   "c4aa1e3ed764129f": {
    "verdict": "ok",
    "note": "IA KC 07-12 §8.7, Ch.8 Practice Test '(a) find the domain (b) graph the function (c) use the graph to determine the range' for g(x)=sqrt(x+2) (m81448); the key's part (b) prints a square-root graph starting at (-2,0) and passing through (-1,1) and (2,2). This is part (b) itself, so it becomes a graphplot rather than a recognition MC. Re-derived: sqrt(-2+2)=0, sqrt(-1+2)=1, sqrt(2+2)=2, giving exactly the key's three points. Authored {points:[[-2,0],[-1,1],[2,2]]}; all three are on the snap-1 lattice inside -4..8 by -4..4."
+  },
+  "c4ab2731ee155963": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "c4bcac7886ec4968": {
    "verdict": "ok",
@@ -34384,6 +36449,14 @@
     "result": "agrees"
    }
   },
+  "c592af5b0432643b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c5a55fad1326dfad": {
    "verdict": "ok",
    "note": "Critical Thinking fs-idp14432288; model answer is the source solution verbatim (ferns, seed-plant-like traits)."
@@ -34471,6 +36544,14 @@
   "c6132476a380097e": {
    "verdict": "ok",
    "note": "135 deg is QII, reference angle 45 deg, cosine negative in QII: cos(135)=-cos(45)=-sqrt2/2; numerically Math.cos(135*pi/180)=-0.7071067811865475"
+  },
+  "c61a9e0ed6a11a0c": {
+   "verdict": "ok",
+   "note": "fs-idp65241328: source SOL B (fragmentation); \"Fragmentation is the breaking of the body into two parts with subsequent regeneration\" is the only option keyed to bodily damage.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "c61e33ebaa16c540": {
    "verdict": "ok"
@@ -34729,6 +36810,14 @@
   "c75c57094d6c6e63": {
    "verdict": "ok"
   },
+  "c75ca5c4104a8b0b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c75cf987f4d36ae4": {
    "verdict": "ok"
   },
@@ -34918,6 +37007,14 @@
   "c870f2a349cf8284": {
    "verdict": "ok"
   },
+  "c871ea6eabf7b17b": {
+   "verdict": "ok",
+   "note": "textin from glossary term 'Milankovitch cycles' (fs-idp38626128); prompt paraphrases the meaning plus the body's numeric range, answer is the term; accept singular form.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c87801b26cd9d37e": {
    "verdict": "ok"
   },
@@ -35003,6 +37100,14 @@
     "result": "agrees"
    }
   },
+  "c8f0585de602f76d": {
+   "verdict": "ok",
+   "note": "m66677 fs-idp58574848; source key A, 'placenta'; page keys A; supported by 'The placenta has taken over the functions of nutrition and waste and the production of estrogen and progesterone from the corpus luteum, which has degenerated.'",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c8f179ca6911dadd": {
    "verdict": "ok"
   },
@@ -35080,6 +37185,10 @@
    "verdict": "ok",
    "note": "log_7 n=2 => n=7^2=49. Verified numerically (5*log_7(49)=10)."
   },
+  "c9559174743c4b0a": {
+   "verdict": "ok",
+   "note": "selfcheck = source exercise fs-idp36178688 (Critical Thinking); model answer is the source solution verbatim, rubric checkpoints decompose its four clauses with no new claims."
+  },
   "c9580c5e7fd10814": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -35155,6 +37264,14 @@
   },
   "c9a04ee54fd2602e": {
    "verdict": "ok"
+  },
+  "c9b35f4b48e860a9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "c9b787f5fa65c936": {
    "verdict": "ok"
@@ -35332,6 +37449,14 @@
   },
   "ca8cca17990795cc": {
    "verdict": "ok"
+  },
+  "ca90cb98e9da54d3": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'biogeography' (fs-idm103541392). Prompt is the glossary meaning verbatim; answer matches the glossary term exactly.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ca93e6c9d5a86922": {
    "verdict": "ok",
@@ -35587,6 +37712,14 @@
    "verdict": "ok",
    "note": "parent: option order set for position balance; answer re-derived in this session (conic type from A,C / discriminant B^2-4AC; rotation effect; theta from cot 2theta) — For the equation $Ax^2+Bxy+Cy^2+Dx+Ey+F=0$, what information"
   },
+  "cbe25939f7f95277": {
+   "verdict": "ok",
+   "note": "Author-written select-the-term multiple choice built from the module's own section-summary closing sentence ('Assisted reproductive technologies may help individuals who have infertility problems.'); not from a source exercise (this module's Review/Critical Thinking sets do not test infertility); disclosed in the footer. Distractors (contraception, gestation, labor) are the module's own terms.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "cbe7731832740dc2": {
    "verdict": "ok"
   },
@@ -35630,6 +37763,14 @@
   },
   "cc33bc87ddca2461": {
    "verdict": "ok"
+  },
+  "cc375e7c3926e889": {
+   "verdict": "ok",
+   "note": "glossary fs-idm167087216 (budding); prompt is the glossary meaning, answer is exactly the defined term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "cc391e47228020ba": {
    "verdict": "ok"
@@ -35708,6 +37849,14 @@
   },
   "ccb7a167fe63fb4f": {
    "verdict": "ok"
+  },
+  "ccc498c7633b2e3d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ccc7e0fd7cf3d6cd": {
    "verdict": "ok"
@@ -35810,6 +37959,14 @@
   },
   "cdb6fa95c41a3b4a": {
    "verdict": "ok"
+  },
+  "cdc62beed9b894c5": {
+   "verdict": "ok",
+   "note": "m66671 fs-idp325930864; source solution A = oviparity; matches page key.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "cdc7aff7ab0b71ab": {
    "verdict": "ok"
@@ -35947,6 +38104,14 @@
    "verdict": "ok",
    "note": "g(6)=1/3*7^4 computed with node: 800.3333333333334 = 2401/3 exactly; matches CNXML solution 800+1/3≈800.3333."
   },
+  "cec64a291a735345": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "cecadc9750676d6f": {
    "verdict": "ok"
   },
@@ -36043,6 +38208,14 @@
   "cf75daa2651c294e": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "cf7bd062968cbc60": {
+   "verdict": "ok",
+   "note": "locally built cloze textin from the page's own sentence (Levels of Ecological Study para 2, conservation-biologist paragraph): '...which might be derived through studies in sociology and urban ecology' — answer 'sociology' is the blanked word, verbatim from the source sentence; disclosed in footer as a local item (objective 2 has no source exercise or glossary term).",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -36171,6 +38344,14 @@
   "d0441e0b8557c611": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "d04d3fabe53236b9": {
+   "verdict": "ok",
+   "note": "locally authored multiple choice for the thin Menopause group, built strictly from the section's own sentence ('Supplementation of estrogen in the form of hormone replacement therapy (HRT) can prevent bone loss') with distractors drawn from the module's own terms (GnRH, IVF, ART) — disclosed in the footer and ledger.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -36341,6 +38522,14 @@
    "verdict": "ok",
    "note": "With h=12 fixed, V=(1/3)pi r^2(12)=4 pi r^2, so r^2=V/(4pi), r=sqrt(V/(4pi)) (r>=0 physical domain). Cross-checked with checkAnswer against an independently-built alternate LaTeX spelling (sqrt(V)/sqrt(4pi)) -- graded correct. Matches CNXML exercise fs-id1165135209080 (Real-World Applications, cone volume with 12-inch height), which has a solution."
   },
+  "d12d1323c7a854c6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "d130ece6e5d30e56": {
    "verdict": "ok"
   },
@@ -36451,6 +38640,10 @@
   },
   "d21480a02c0fee3f": {
    "verdict": "ok"
+  },
+  "d219c089006cb612": {
+   "verdict": "ok",
+   "note": "fs-idp76672512 selfcheck. Model answer reuses the source solution verbatim; checkpoints decompose its clauses with no new claims."
   },
   "d2211a5a8aa5b4b8": {
    "verdict": "ok",
@@ -36569,6 +38762,14 @@
   "d2dd4efd5504bb60": {
    "verdict": "ok"
   },
+  "d2dd711bd7ca49ea": {
+   "verdict": "ok",
+   "note": "Locally authored sortbins (module has no comparison table; brief permits a biome-features-by-biome sortbins built strictly from the module's own sentences). Each item cited to a module sentence in the source ledger (Tropical Wet Forest: evergreen/broad-leaf sentence, tree-species/canopy sentence; Savanna: grassland/scattered-trees sentence, forbs/few-trees sentence; Chaparral: shrubs/fire-adapted sentence, seed-germination-after-fire sentence; Arctic Tundra: 10-12-week growing season sentence, plants-or-lichens ground-cover sentence). No bin-label content word appears in any item label.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "d2e3ba591977a05d": {
    "verdict": "ok",
    "note": "Practice (source fs-id1165135363342, a=32,b=24,gamma=75): Area=0.5*32*24*sin(75)=370.916 -> 370.9. Matches CNXML answer 370.9."
@@ -36583,6 +38784,22 @@
   },
   "d306ccb6e9634eee": {
    "verdict": "ok"
+  },
+  "d3101e727c62d7ac": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "d3153a39e2144d69": {
+   "verdict": "ok",
+   "note": "glossary textin, term inner cell mass; prompt built from glossary definition, reworded from the source's 'inner layer of cells in the blastocyst' to avoid the answer's own words appearing in the prompt.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "d31a5742faf91cfe": {
    "verdict": "ok"
@@ -36657,6 +38874,14 @@
   },
   "d3ab9d1e618e4376": {
    "verdict": "ok"
+  },
+  "d3b0275d162aa58a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "d3b0d21ccf27daa5": {
    "verdict": "ok",
@@ -37101,6 +39326,14 @@
   "d65f72c486ac0f99": {
    "verdict": "ok"
   },
+  "d65f94f2186d706a": {
+   "verdict": "ok",
+   "note": "textin from glossary term 'global climate change' (fs-idm33770960); prompt paraphrases the meaning, answer is the term; accept 'climate change' added since the module itself uses that shorthand throughout the body prose.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "d665d3d6ec940457": {
    "verdict": "ok"
   },
@@ -37194,6 +39427,14 @@
     "result": "agrees"
    }
   },
+  "d6e6e484ef3bade4": {
+   "verdict": "ok",
+   "note": "m66671 glossary 'external fertilization' (fs-idp203686384); prompt is the glossary meaning, answer is the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "d6ecde0d5515311c": {
    "verdict": "ok"
   },
@@ -37226,6 +39467,14 @@
   },
   "d7398460c2aa0f11": {
    "verdict": "ok"
+  },
+  "d747bca1e7714aba": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "d74d45205bce9619": {
    "verdict": "ok"
@@ -37266,6 +39515,14 @@
   "d77146de5d1dd853": {
    "verdict": "ok",
    "note": "The endpoints (-4,-3) and (-10,-11) are given directly in the preceding text; distance = sqrt((-6)^2+(-8)^2) = sqrt(100) = 10, matching the declared answer exactly."
+  },
+  "d773d331dc16a25e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "d77be884d4b5dbbf": {
    "verdict": "ok",
@@ -37387,8 +39644,24 @@
    "verdict": "ok",
    "note": "parent: r=5sqrt2/sqrt2=5, theta=pi-2pi/3=pi/3"
   },
+  "d822115bf4d86c40": {
+   "verdict": "ok",
+   "note": "Review Question, module m66420 exercise fs-idp59080928. Source solution keys 'C' = the third listed option 'Arctic tundras', matching this item's answer exactly — no departure.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "d8278a928869d8f6": {
    "verdict": "ok"
+  },
+  "d8321f2eb4f6eab8": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'pelagic realm' (fs-idm141432416); prompt paraphrases the glossary meaning without using the answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "d8339e59584860b4": {
    "verdict": "ok"
@@ -37569,6 +39842,14 @@
   "d987f146185bd134": {
    "verdict": "ok"
   },
+  "d989a7178b268321": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "d98f37b32d0c0c8b": {
    "verdict": "ok"
   },
@@ -37681,6 +39962,10 @@
   },
   "da3513e7e5eff831": {
    "verdict": "ok"
+  },
+  "da3d13d81cfba600": {
+   "verdict": "ok",
+   "note": "source fs-idp9154144 (competitive exclusion CT); model answer is the source solution verbatim"
   },
   "da4200a5ec6232e4": {
    "verdict": "ok"
@@ -37914,12 +40199,28 @@
   "db79470ea401f8a2": {
    "verdict": "ok"
   },
+  "db7efd0092e6ce14": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "db81abccbdb74ee6": {
    "verdict": "ok"
   },
   "db84f5660c1b7ebb": {
    "verdict": "ok",
    "note": "fs-idp12473408 keyed A \"one\" per the CNXML solution; parent rewrote the hint, which near-quoted the key (\"one-to-one\")",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "db8bf40ad489cd9f": {
+   "verdict": "ok",
+   "note": "local item, not from a source exercise; built strictly from the Figure 44.28 caption sentence 'The atmospheric concentration of CO2 has risen steadily since the beginning of industrialization' — disclosed in the footer and report; thin-group fill for the Industrial Revolution/CO2 objective, which the module tests with no Review or Critical Thinking item.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -38144,12 +40445,28 @@
   "dca3d655f5db5b83": {
    "verdict": "ok"
   },
+  "dca4c0ceb9e15495": {
+   "verdict": "ok",
+   "note": "glossary textin: definition id fs-idp176649712, term 'energy budget'; prompt names the same referent as the keyed term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "dca85764ec041789": {
    "verdict": "ok"
   },
   "dcb7504510763717": {
    "verdict": "ok",
    "note": "A=6500*e^{0.0725*20}=27710.24 (nearest cent). Computed via node."
+  },
+  "dcbb489f10a25a9b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "dcbf25ca4f6d0a95": {
    "verdict": "ok",
@@ -38219,6 +40536,14 @@
   "dd318056ea3efed0": {
    "verdict": "ok",
    "note": "9+3+1+1/3+1/9: a1=9,r=1/3,n=5; Sn=121/9≈13.444 (node, exact rational 121/9); matches CNXML fs-id1165135203490 solution."
+  },
+  "dd32776f1909e4aa": {
+   "verdict": "ok",
+   "note": "exercise fs-idm80509840, source SOL B, 'economically underdeveloped' — matches.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "dd33e4f93f6cb4e9": {
    "verdict": "ok",
@@ -38522,6 +40847,14 @@
    "verdict": "ok",
    "note": "7*tan(x)/(3x) = (7/3)*(tan x / x) -> 7/3 exactly as x->0 (tan x / x -> 1); node-sampled; matches the printed solution for fs-id1165135188629 (source exercise 39)."
   },
+  "df0e8b1af9010c39": {
+   "verdict": "ok",
+   "note": "Summary-derived cloze textin from the section summary's own sentence 'Freshwater biomes include lakes, ponds, rivers, streams, and wetlands.', blanking the final ≤4-word content phrase.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "df15a924405f863d": {
    "verdict": "ok"
   },
@@ -38620,6 +40953,14 @@
   "dfa40507df6e7d2a": {
    "verdict": "ok",
    "note": "glossary definition fs-id2279649 (chain termination method); accept aliases (dideoxy method, Sanger method) are the section's own alternate names for this method.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "dfa7428008aeee04": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'thermocline' (fs-idm143618064). Prompt is the glossary meaning verbatim; answer matches the glossary term.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -38733,6 +41074,14 @@
   },
   "e03b9686208a7995": {
    "verdict": "ok"
+  },
+  "e0524dd35b87b48f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e05efb08acdcbf36": {
    "verdict": "ok"
@@ -38910,6 +41259,14 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idp55772880: model answer transcribes the CNXML solution verbatim in four checkpoint clauses, no new claims. Solution itself calls the four subphyla 'superclasses,' departing from the rest of the module's own usage 'subphyla' — kept as printed (defensible source wording, not a claim the section's own text contradicts) and noted in the report, not treated as a defect."
   },
+  "e14b9374d91d00bb": {
+   "verdict": "ok",
+   "note": "locally built multiplechoice from the page's own opening sentence: '...mathematics, statistics, biochemistry, molecular biology, physiology, evolution, biodiversity, geology, and climatology.' Answer 'climatology' is the last field in that list; distractors astronomy/linguistics/economics do not appear anywhere in the module's text (checked by grep against the raw CNXML). Disclosed in footer as a local item.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e1527f5e51a028b0": {
    "verdict": "ok"
   },
@@ -38919,6 +41276,14 @@
   "e15d8a5af9577465": {
    "verdict": "ok",
    "note": "TI3: cos(11π/12)cos(π/12)=(1/2)[cos(5π/6)+cos(π)]=(1/2)(-√3/2-1)=(-2-√3)/4; confirmed numerically in node (Math.cos in radians) to 1e-9, matches CNXML solution exactly."
+  },
+  "e166c555c95c80d2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e16897d8aa1d0c4e": {
    "verdict": "ok",
@@ -39151,6 +41516,14 @@
    "verdict": "ok",
    "note": "parent re-record after option shuffle: f'(30)=-20 is the rate at 12:30 p.m., losing 20 gal/min (source solution)."
   },
+  "e253b2a0bff1faf5": {
+   "verdict": "ok",
+   "note": "Glossary recall textin. Glossary definition: canopy — 'branches and foliage of trees that form a layer of overhead coverage in a forest.' Prompt asks for exactly that referent (the layer itself), keyed 'canopy'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e2543e9ff74f165f": {
    "verdict": "ok",
    "note": "Solved 68/(1+16e^(-0.28x))=20 for x: x=-ln(0.15)/0.28=6.775, rounds to 6.8, matching CNXML fs-id1394672 (koi, #19)."
@@ -39166,6 +41539,14 @@
   "e257070621808c4a": {
    "verdict": "ok",
    "note": "textin built from the glossary definition of horizontal gene transfer (HGT) (fs-idp68760976); answer matches the term exactly, accept HGT is the section's own abbreviation; no whole-word run of the answer appears in the question.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "e269d28ebad4286c": {
+   "verdict": "ok",
+   "note": "m66671 glossary 'spermatheca' (fs-idp11586624); prompt is the glossary meaning, answer is the term.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -39336,6 +41717,14 @@
   "e35986a65d74afb9": {
    "verdict": "ok"
   },
+  "e359e8d982ade790": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e36052d6c9bcf558": {
    "verdict": "ok"
   },
@@ -39394,11 +41783,23 @@
     "note": "accept already carries \"nearsightedness\", which the module prints twice. Key stands."
    }
   },
+  "e38aa22aec627492": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e38bc3da2ccf0d0e": {
    "verdict": "ok"
   },
   "e3920c8fc20214e9": {
    "verdict": "ok"
+  },
+  "e39e9b9620487101": {
+   "verdict": "ok",
+   "note": "selfcheck eip-45, model answer reuses source solution verbatim (aural/pheromone signal range and population density), checkpoints decompose it with no new claims"
   },
   "e3b83b76f85554e4": {
    "verdict": "ok"
@@ -39576,6 +41977,14 @@
   },
   "e48a316e3b184fea": {
    "verdict": "ok"
+  },
+  "e48aa92e4a4dc7f5": {
+   "verdict": "ok",
+   "note": "glossary textin: 'ecology' = study of interaction between living things and their environment (glossary fs-idp215337104); prompt names exactly this referent, answer matches term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "e48d7950ba05fa8b": {
    "verdict": "ok"
@@ -39883,6 +42292,14 @@
     "result": "agrees"
    }
   },
+  "e65486e5189fbcd4": {
+   "verdict": "ok",
+   "note": "glossary fs-idm183746848 (asexual reproduction); prompt names the referent (\"a form of reproduction that produces offspring genetically identical to the parent\") and the answer is exactly the defined term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e657544c13a98495": {
    "verdict": "ok"
   },
@@ -39902,6 +42319,15 @@
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
+   }
+  },
+  "e6806ab7a5f00de8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "accept gap: the summary sentence keys \"axis\" and a learner who types \"axes\" is right; accept widened"
    }
   },
   "e68311f247e2836e": {
@@ -39982,6 +42408,14 @@
    "verdict": "ok",
    "note": "Degree 3 polynomial has at most 3-1=2 turning points. Matches CNXML ti_03_03_09."
   },
+  "e6d664a74f4de013": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e6dc48d6001669d8": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -40045,6 +42479,14 @@
     "result": "agrees"
    }
   },
+  "e71882a6a7cb32a2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "e719de657e8ee226": {
    "verdict": "ok"
   },
@@ -40064,6 +42506,14 @@
    "verdict": "ok"
   },
   "e73bf2e0494f20b0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "e7497b4ca840f4a3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -40392,6 +42842,10 @@
   "e962fb96704aaa80": {
    "verdict": "ok"
   },
+  "e96524ba164e5809": {
+   "verdict": "ok",
+   "note": "Body VC selfcheck, m66411 exercise fs-idp98793296 (note copy identical). Model answer is the CNXML solution verbatim: 'Tropical lakes don't freeze, so they don't undergo spring turnover in the same way temperate lakes do. However, stratification does occur, as well as seasonal turnover.'"
+  },
   "e97b6838c035e521": {
    "verdict": "ok"
   },
@@ -40672,6 +43126,14 @@
   "eb485e22e3ddffa2": {
    "verdict": "ok"
   },
+  "eb48b6b3db756d0f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "eb5f55c38b54ac96": {
    "verdict": "ok",
    "note": "x^2=8y: p=2, latus endpoints (2p,p)=(4,2) and (-2p,p)=(-4,2); matches source TI2."
@@ -40687,6 +43149,14 @@
   },
   "eb6fad34d37482ad": {
    "verdict": "ok"
+  },
+  "eb746d707e9cc94e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "eb7b44a7152a2fbe": {
    "verdict": "ok"
@@ -40717,6 +43187,14 @@
     "result": "agrees"
    }
   },
+  "ebc09762aa3ef004": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ebc0e152a31616d5": {
    "verdict": "ok"
   },
@@ -40728,6 +43206,14 @@
   },
   "ebc7b55f277079a8": {
    "verdict": "ok"
+  },
+  "ebc814a87548799f": {
+   "verdict": "ok",
+   "note": "fs-idm62799008: source SOL A (asexual); \"In a stable or predictable environment, asexual reproduction is an effective means of reproduction because all the offspring will be adapted to that environment\" supports A uniquely, no other option supportable.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ebcd987f52f290e7": {
    "verdict": "ok"
@@ -40793,6 +43279,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "ec193cae2379f6c9": {
+   "verdict": "ok",
+   "note": "Local self-check built strictly from the Changing Human Behavior paragraph on the ESA's listing difficulty, delisting controversy, and individual-species focus; no claim beyond that paragraph."
   },
   "ec1b53cf6ce2b4ab": {
    "verdict": "ok",
@@ -41272,6 +43762,14 @@
   "eea39c198f5b15a4": {
    "verdict": "ok"
   },
+  "eea799cfb6709475": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "eeae7beb1eea41b9": {
    "verdict": "ok"
   },
@@ -41714,6 +44212,10 @@
   "f11b047f8d44d3ab": {
    "verdict": "ok"
   },
+  "f11bf10c30ecf60b": {
+   "verdict": "ok",
+   "note": "selfcheck fs-idp39153568; model answer is the source solution verbatim (penguin mark-and-release estimate)."
+  },
   "f11f371a7228915b": {
    "verdict": "ok"
   },
@@ -41749,6 +44251,14 @@
   },
   "f14c66caa459e8b6": {
    "verdict": "ok"
+  },
+  "f166453316f705fd": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f16b7683138dea86": {
    "verdict": "ok"
@@ -41816,6 +44326,14 @@
   "f1cd2ebc1964c627": {
    "verdict": "ok",
    "note": "parent: source key (photosystem II) contradicts the module text; page keys photosystem I per erratum 115 — verified against fs-idm16256512 and the water-splitting/cytochrome passages",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f1e0684c1b377648": {
+   "verdict": "ok",
+   "note": "summary-sourced cloze on the module's own section.summary sentence fs-idp51599040 (\"...it may mean the release of sperm and eggs into the environment\"); no new claim, blanked phrase is a single content word not appearing elsewhere in the surviving prompt.",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -41914,6 +44432,14 @@
   },
   "f23e5d05c772828b": {
    "verdict": "ok"
+  },
+  "f23eddd0a09140fe": {
+   "verdict": "ok",
+   "note": "textin from glossary term 'solar intensity' (fs-idp133556656); prompt uses the corrected wording ('power or energy') matching the section's own prose sentence rather than the glossary's own text, which drops the 'or' — reported as a source defect in the footer and report; the keyed page term is unaffected.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f240d3b516dc2c8f": {
    "verdict": "ok"
@@ -42078,6 +44604,14 @@
   "f3611dd6fc098def": {
    "verdict": "ok"
   },
+  "f382819502e8e984": {
+   "verdict": "ok",
+   "note": "glossary textin, term 'survivorship curve' (fs-idp187955776); prompt paraphrases the glossary meaning, answer is the defined term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f391c9987801646c": {
    "verdict": "ok"
   },
@@ -42135,6 +44669,14 @@
   },
   "f3ded21075b0fa48": {
    "verdict": "ok"
+  },
+  "f3e65d71cf9203c0": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'coral reef' (fs-idp53906752); accept 'coral reefs'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f3f0eb05139625bc": {
    "verdict": "ok"
@@ -42347,6 +44889,14 @@
   "f4eb76524d53a0a6": {
    "verdict": "ok"
   },
+  "f4f1df3b34bdcf3a": {
+   "verdict": "ok",
+   "note": "m66677 glossary fs-idm36792832 'contraception' — '(also, birth control) various means used to prevent pregnancy'; accept 'birth control' is the glossary's own parenthetical synonym.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f4f2282f3c381064": {
    "verdict": "ok"
   },
@@ -42423,6 +44973,14 @@
   "f53641ec0616f854": {
    "verdict": "ok"
   },
+  "f537f3f18119e3b6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f53e855739ed797f": {
    "verdict": "ok"
   },
@@ -42449,6 +45007,14 @@
   },
   "f563375772bbdf39": {
    "verdict": "ok"
+  },
+  "f56f9bb4ee23413c": {
+   "verdict": "ok",
+   "note": "glossary textin, term gastrulation; prompt built from glossary definition.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f57197359fc247df": {
    "verdict": "ok"
@@ -42503,6 +45069,14 @@
   },
   "f5cb7aa48bd38377": {
    "verdict": "ok"
+  },
+  "f5cc713c7a20b3fc": {
+   "verdict": "ok",
+   "note": "summary-sourced cloze: 'organismal, population, community, and ecosystem' printed verbatim in section.summary; answer 'ecosystem' is the blanked list item, not present elsewhere in prompt.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f5cc886a1b475548": {
    "verdict": "ok",
@@ -42640,6 +45214,14 @@
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 281): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
   },
+  "f697aad2fac97246": {
+   "verdict": "ok",
+   "note": "glossary fs-idm15105120 (fission); accept=\"binary fission\" is the glossary's own parenthetical synonym (\"also, binary fission\").",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f69913b5f7ca5527": {
    "verdict": "ok"
   },
@@ -42739,6 +45321,14 @@
     "result": "agrees"
    }
   },
+  "f712b1e6af31b7da": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f7189f91bb5848cd": {
    "verdict": "ok",
    "note": "Evaluated the reproduced model at x=16: 141.912+10.454*ln(16)=170.90 thousand, rounds to 171,000, matching CNXML's printed 'about 171,000 games'."
@@ -42757,6 +45347,14 @@
    "verdict": "ok",
    "note": "Matches m66449 exercise fs-id1419640, solution fs-id1416034 (ribosomes abundant in muscle cells). Reworded ('made by the ribosomes'→'that ribosomes make') with no added claim; CHECKS restate it."
   },
+  "f735b47b510c2e40": {
+   "verdict": "ok",
+   "note": "Review Question fs-idm150035168; CNXML solution keys A = 'logistic', matches page answer.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f737d1e52360b3a4": {
    "verdict": "ok",
    "note": "s = r*theta = 5.02*(pi/3) = 5.2569317070069195, rounds to 5.26 at 2dp (node computed)"
@@ -42767,6 +45365,10 @@
   },
   "f741cd7c3cb67e92": {
    "verdict": "ok"
+  },
+  "f74421fc2f197937": {
+   "verdict": "ok",
+   "note": "selfcheck from CT fs-idm61820352; model answer is the CNXML solution verbatim ('Organs form from the germ layers through the process of differentiation...cellular signaling cascades.'); 4 checkpoints each restate a clause of that solution with no new claim."
   },
   "f74846dc4f9408ba": {
    "verdict": "ok"
@@ -42850,6 +45452,14 @@
   },
   "f7d9cc5a0da1e0ea": {
    "verdict": "ok"
+  },
+  "f7de73352aeb5709": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'biome' (fs-idp116856272). Prompt is the glossary meaning verbatim; answer matches the glossary term, accept plural 'biomes'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f7e256241e05c28d": {
    "verdict": "ok"
@@ -43056,8 +45666,16 @@
   "f8bcabaf6f63c43e": {
    "verdict": "ok"
   },
+  "f8bce9ebe67bc402": {
+   "verdict": "ok",
+   "note": "source selfcheck: exercise fs-idp316645872 (Critical Thinking), question and model answer transcribed verbatim from the CNXML solution; checkpoints are its three sentences verbatim, no new claim."
+  },
   "f8be6f5afbf8bf82": {
    "verdict": "ok"
+  },
+  "f8c26927db54034a": {
+   "verdict": "ok",
+   "note": "exercise fs-idm271075408 (Critical Thinking), model answer is the source solution verbatim — matches."
   },
   "f8c4d4dc0756d99b": {
    "verdict": "ok",
@@ -43118,6 +45736,14 @@
   "f90e0bd36ed80317": {
    "verdict": "ok"
   },
+  "f91417f9cdd1d02d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f9151807fb06067d": {
    "verdict": "ok"
   },
@@ -43133,6 +45759,10 @@
   },
   "f92ece265511e684": {
    "verdict": "ok"
+  },
+  "f9322831909193fd": {
+   "verdict": "ok",
+   "note": "Locally authored selfcheck; model answer transcribes fs-idm224130976's range figures (3,000,000 to 310,000 sq mi) verbatim, no new claim; disclosed in footer."
   },
   "f934053947522d08": {
    "verdict": "ok"
@@ -43265,6 +45895,10 @@
   "f9d68a405833e66e": {
    "verdict": "ok"
   },
+  "f9d786aa40b75927": {
+   "verdict": "ok",
+   "note": "selfcheck fs-idp120215168 — model answer is the source solution verbatim; checkpoints decompose it clause by clause with no new claim."
+  },
   "f9e3d1ecfca70a14": {
    "verdict": "ok",
    "note": "sec^2x=1 -> cos^2x=1 -> cos x=+-1 -> x=0,pi on [0,2pi); standard."
@@ -43302,12 +45936,28 @@
   "fa0e0d6ade246686": {
    "verdict": "ok"
   },
+  "fa1549a724dc0ddd": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "fa1a5c59e8f351a3": {
    "verdict": "ok"
   },
   "fa1e0f976ce4fce1": {
    "verdict": "ok",
    "note": "Critical Thinking Question eip-795; model answer is the source solution verbatim (preamble kept), checkpoints are its three clauses."
+  },
+  "fa30b3af68c8a3eb": {
+   "verdict": "ok",
+   "note": "glossary textin: 'biotic' = living components of the environment (glossary fs-idp167420576); question paraphrases the body sentence 'all the biotic components (living things) in an area,' answer matches the glossary term exactly.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "fa376b0ab766cad8": {
    "verdict": "ok",
@@ -43327,6 +45977,10 @@
   "fa4f95cae5305b07": {
    "verdict": "ok"
   },
+  "fa4fc1ec4fd9f570": {
+   "verdict": "ok",
+   "note": "source selfcheck: exercise fs-idp233903200 (Critical Thinking), question and model answer transcribed verbatim from the CNXML solution; checkpoints decompose the model answer's own three clauses (organismal/population similarity, community/ecosystem difficulty, why) with no new claim."
+  },
   "fa52ada734afa1b3": {
    "verdict": "ok"
   },
@@ -43341,6 +45995,10 @@
   },
   "fa6621e547455ec5": {
    "verdict": "ok"
+  },
+  "fa66257b74b0db4a": {
+   "verdict": "ok",
+   "note": "Locally authored selfcheck combining fs-idm41957168's two logistic-model sentences with no new claim; disclosed in footer."
   },
   "fa76272ff70fb3bd": {
    "verdict": "ok"
@@ -43404,6 +46062,14 @@
   "fadfcd99c99bf6ce": {
    "verdict": "ok"
   },
+  "faeb53e439f52ffa": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "faf18e7b0b6d4239": {
    "verdict": "ok"
   },
@@ -43465,6 +46131,14 @@
    "verdict": "ok"
   },
   "fb32e57316e5dd83": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "fb43d771c42c87a5": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -43665,6 +46339,14 @@
   },
   "fc9f20ff5479475a": {
    "verdict": "ok"
+  },
+  "fca9d647a8a8d81e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "fcaeef3434ea1e1b": {
    "verdict": "ok",
@@ -43981,6 +46663,14 @@
   "fe802bb1ff9b66d6": {
    "verdict": "ok"
   },
+  "fe84c3966d53f2dd": {
+   "verdict": "ok",
+   "note": "Glossary textin, term 'algal bloom' (fs-idm149779568); accept 'algal blooms'.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "fe87031436942774": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -44107,6 +46797,14 @@
     "result": "agrees"
    }
   },
+  "ff1a5e257feae81f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ff1e67983228e56c": {
    "verdict": "ok"
   },
@@ -44155,6 +46853,14 @@
   "ff4e3f35bc20bcf0": {
    "verdict": "ok",
    "note": "Locally authored substitution (not in source, disclosed in footer): a=-3 is the printed subscript for lim_{x->-3}(2x^2+1)=19."
+  },
+  "ff507989d4dd0221": {
+   "verdict": "ok",
+   "note": "glossary textin, term 'seminal vesicle' ('secretory accessory gland in males; contributes to semen'); prompt names the gland, answer is the gland, accept list adds the plural.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ff6aa687f0357814": {
    "verdict": "ok"
@@ -44269,6 +46975,18 @@
     "result": "adjudicated",
     "note": "glossary term is 'transcriptional start site'; hyphenless variant covered by accept; grader agreed"
    }
+  },
+  "fff579a64c21eac0": {
+   "verdict": "ok",
+   "note": "textin from glossary term 'weather' (fs-idp65186928); prompt paraphrases the meaning plus the body's '48-hour cycles' detail, answer is the term.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "fff742a3660bd19b": {
+   "verdict": "ok",
+   "note": "Critical Thinking Question fs-idm161415696; model answer is the CNXML solution verbatim, checkpoints are its three clauses."
   }
  }
 }

@@ -16472,6 +16472,2148 @@
       "alt": "Illustration shows the symptoms of lupus, which include a face rash, ulcers in the mouth and nose, muscle aches, inflammation of the pericardium and poor circulation in the fingers and toes.",
       "caption": "Systemic lupus erythematosus is characterized by autoimmunity to the individual’s own DNA and/or proteins, which leads to varied dysfunction of the organs. (credit: modification of work by Mikael Häggström)"
     },
+    "Figure_43_00_01-a299": {
+      "source": "media/Figure_43_00_01-a299.jpg",
+      "sourceSha256": "2dd4e920c348c387ff6b69736c33d688542b64fc1422417021b1437ad24efe8c",
+      "module": "m66667",
+      "kind": "photo",
+      "width": 1118,
+      "height": 345,
+      "variants": [
+        {
+          "width": 800,
+          "height": 247,
+          "file": "Figure_43_00_01-a299-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 345,
+          "file": "Figure_43_00_01-a299-1118.webp"
+        }
+      ],
+      "alt": "Photo shows a yellow seahorse with its tail curled around a fragment of coral.",
+      "caption": "Female seahorses produce eggs for reproduction that are then fertilized by the male. Unlike almost all other animals, the male seahorse then gestates the young until birth. (credit: modification of work by \"cliff1066\"/Flickr)"
+    },
+    "Figure_43_01_01": {
+      "source": "media/Figure_43_01_01.jpg",
+      "sourceSha256": "2b6da215c37bd15120e3deb46e55d765caa0f31e4dd2d2940f29d133dfcd5f7b",
+      "module": "m66668",
+      "kind": "photo",
+      "width": 800,
+      "height": 532,
+      "variants": [
+        {
+          "width": 800,
+          "height": 532,
+          "file": "Figure_43_01_01-800.webp"
+        }
+      ],
+      "alt": "Image shows many coral polyps clustered together. Each Polyp is cup-shaped, with tentacles radiating out from the rim.",
+      "caption": "Coral polyps reproduce asexually by fission. (credit: G. P. Schmahl, NOAA FGBNMS Manager)"
+    },
+    "Figure_43_01_02": {
+      "source": "media/Figure_43_01_02.jpg",
+      "sourceSha256": "ca14c66b1b6f27c66ccaa1dc481ac63a65c8bb766ce9a2c519e4213a81c2aea1",
+      "module": "m66668",
+      "kind": "photo",
+      "width": 1117,
+      "height": 575,
+      "variants": [
+        {
+          "width": 800,
+          "height": 412,
+          "file": "Figure_43_01_02-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 575,
+          "file": "Figure_43_01_02-1117.webp"
+        }
+      ],
+      "alt": "Illustration shows a hydra, which has a stalk-like body with tentacles growing out the top. A smaller hydra is budding from the side of the stalk.",
+      "caption": "Hydra reproduce asexually through budding."
+    },
+    "Figure_43_01_03": {
+      "source": "media/Figure_43_01_03.jpg",
+      "sourceSha256": "19477e2795a755ceaa2a4fde4b39f6c683bdbbb3a8b67510225430f5ce2bf363",
+      "module": "m66668",
+      "kind": "photo",
+      "width": 544,
+      "height": 458,
+      "variants": [
+        {
+          "width": 544,
+          "height": 458,
+          "file": "Figure_43_01_03-544.webp"
+        }
+      ],
+      "alt": "Illustration shows a sea star with one long arm and four very short arms.",
+      "caption": "Sea stars can reproduce through fragmentation. The large arm, a fragment from another sea star, is developing into a new individual."
+    },
+    "Figure_43_01_04": {
+      "source": "media/Figure_43_01_04.jpg",
+      "sourceSha256": "01de76b73a888e23d84bc88c6d404a5cd00fd410e506a997c919e8f6987d9c27",
+      "module": "m66668",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_43_01_04-544.webp"
+        }
+      ],
+      "alt": "Photo shows a land snail.",
+      "caption": "Many snails are hermaphrodites. When two individuals mate, they can produce up to one hundred eggs each. (credit: Assaf Shtilman)"
+    },
+    "Figure_43_02_01": {
+      "source": "media/Figure_43_02_01.jpg",
+      "sourceSha256": "13ebf009385eb86f419c69b9ef3113b2776046565614830e6f0afc0a49ec224c",
+      "module": "m66671",
+      "kind": "photo",
+      "width": 544,
+      "height": 364,
+      "variants": [
+        {
+          "width": 544,
+          "height": 364,
+          "file": "Figure_43_02_01-544.webp"
+        }
+      ],
+      "alt": "Photo shows many salmon swimming up a shallow creek.",
+      "caption": "Salmon reproduce through spawning. (credit: Dan Bennett)"
+    },
+    "Figure_43_02_02": {
+      "source": "media/Figure_43_02_02.jpg",
+      "sourceSha256": "8d77394041baafa16be27ae3c1ac46f0aabca41f89d25336646e269e4f14505f",
+      "module": "m66671",
+      "kind": "photo",
+      "width": 544,
+      "height": 607,
+      "variants": [
+        {
+          "width": 544,
+          "height": 607,
+          "file": "Figure_43_02_02-544.webp"
+        }
+      ],
+      "alt": "Photo shows mating toads.",
+      "caption": "During sexual reproduction in toads, the male grasps the female from behind and externally fertilizes the eggs as they are deposited. (credit: \"OakleyOriginals\"/Flickr)"
+    },
+    "Figure_43_03_01": {
+      "source": "media/Figure_43_03_01.png",
+      "sourceSha256": "1e625bf06f6ed224e4868252d2fcd35471cf70ba25342f8b539c303d139ae720",
+      "module": "m66673",
+      "kind": "diagram",
+      "width": 488,
+      "height": 433,
+      "variants": [
+        {
+          "width": 488,
+          "height": 433,
+          "file": "Figure_43_03_01-488.webp"
+        }
+      ],
+      "alt": "Illustration shows a cross section of the penis and testes. The penis widens at the end, into the glans, which is surrounded by the foreskin. The urethra opens at the middle of the glans after running through the middle of the penis to the bladder. The tissue surrounding the urethra is the Corpus spongiosum, and above the Corpus spongiosum is the Corpus cavernosum. The testes, located immediately behind the penis, are covered by the scrotum. Seminiferous tubules are located in the testes. The epididymis partly surrounds the sac containing the seminiferous tubules. The Vas deferens is a tube connecting the seminiferous tubules to the ejaculatory duct, which begins in the prostate gland. The prostate gland is located behind and below the bladder. The seminal vesicle, located above the prostate, also connects to the ejaculatory duct. The bulbourethral gland connects to the urethra where the urethra enters the penis.",
+      "caption": "The reproductive structures of the human male are shown."
+    },
+    "Figure_43_03_02ab": {
+      "source": "media/Figure_43_03_02ab.jpg",
+      "sourceSha256": "8210da56025b3aa8bc28b5fe26cf10bad7e8e67143a112b612bf73f8c939afe3",
+      "module": "m66673",
+      "kind": "photo",
+      "width": 1117,
+      "height": 419,
+      "variants": [
+        {
+          "width": 800,
+          "height": 300,
+          "file": "Figure_43_03_02ab-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 419,
+          "file": "Figure_43_03_02ab-1117.webp"
+        }
+      ],
+      "alt": "Micrograph shows human sperm, which have an oval head about 3 microns across and a very long flagellum. Illustration shows that the head is surrounded by the acrosome. The part of the tail closest to the head, called the neck, is thicker than the rest.",
+      "caption": "Human sperm, visualized using scanning electron microscopy, have a flagellum, neck, and head. (credit b: modification of work by Mariana Ruiz Villareal; scale-bar data from Matt Russell)"
+    },
+    "Figure_43_03_03ab": {
+      "source": "media/Figure_43_03_03ab.jpg",
+      "sourceSha256": "1cc88f5e1ee50db458a65b7a4d3f0e177d959685c8de48d0db89cc1407478cf4",
+      "module": "m66673",
+      "kind": "photo",
+      "width": 500,
+      "height": 711,
+      "variants": [
+        {
+          "width": 500,
+          "height": 711,
+          "file": "Figure_43_03_03ab-500.webp"
+        }
+      ],
+      "alt": "Side and front views of female reproductive organs are shown. The vagina is wide at the bottom, and narrows into the cervix. Above the cervix is the uterus, which is shaped like a triangle pointing down. Fallopian tubes extend from the top sides of the uterus. The Fallopian tubes curve back in toward the uterus, and end in fingerlike appendages called fimbriae. The ovaries are located between the fimbriae and the uterus. The urethra is located in front of the vagina, and the rectum is located behind. The clitoris is a structure located in front of the urethra. The labia minora and labia majora are folds of tissue on either side of the vagina.",
+      "caption": "The reproductive structures of the human female are shown. (credit a: modification of work by Gray's Anatomy; credit b: modification of work by CDC)"
+    },
+    "Figure_43_03_05": {
+      "source": "media/Figure_43_03_05.jpg",
+      "sourceSha256": "db3dcb9381d0df16510eba898533ea1e0c753eb484901d7075bbb0f8f262b603",
+      "module": "m66673",
+      "kind": "photo",
+      "width": 544,
+      "height": 762,
+      "variants": [
+        {
+          "width": 544,
+          "height": 762,
+          "file": "Figure_43_03_05-544.webp"
+        }
+      ],
+      "alt": "Spermatogenesis begins when the 2 n spermatogonium undergoes mitosis, producing more spermatagonia. The spermatogonia undergo meiosis I, producing haploid 1 n secondary spermatocytes, and meiosis I I, producing spermatids. Differentiation of the spermatids results in mature sperm.",
+      "caption": "During spermatogenesis, four sperm result from each primary spermatocyte."
+    },
+    "Figure_43_03_06": {
+      "source": "media/Figure_43_03_06.jpg",
+      "sourceSha256": "6a75587d27595de80f92922d40b75a802a0137dd9129d13f25c08079543ea205",
+      "module": "m66673",
+      "kind": "photo",
+      "width": 544,
+      "height": 594,
+      "variants": [
+        {
+          "width": 544,
+          "height": 594,
+          "file": "Figure_43_03_06-544.webp"
+        }
+      ],
+      "alt": "Oogenesis begins when the 2 n oogonium undergoes mitosis, producing a primary oocyte. The primary oocytes arrest in prophase I before birth. After puberty, meiosis of one oocyte per menstrual cycle continues, resulting in a 1 n secondary oocyte that arrests in metaphase I I and a polar body. Upon ovulation and sperm entry, meiosis is completed and fertilization occurs, resulting in a polar body, shown as 1 n, and a fertilized egg, 2 n.",
+      "caption": "The process of oogenesis occurs in the ovary’s outermost layer."
+    },
+    "Figure_43_04_01": {
+      "source": "media/Figure_43_04_01.jpg",
+      "sourceSha256": "64c1be60f182dd20152a6156544329944e967e08e15be198c191c66060718b81",
+      "module": "m66674",
+      "kind": "photo",
+      "width": 1117,
+      "height": 476,
+      "variants": [
+        {
+          "width": 800,
+          "height": 341,
+          "file": "Figure_43_04_01-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 476,
+          "file": "Figure_43_04_01-1117.webp"
+        }
+      ],
+      "alt": "Hormonal control of the male reproductive system is mediated by the hypothalamus, anterior pituitary and testes. The hypothalamus releases GnRH, causing the anterior pituitary to release LH and FSH. FSH and LH both act on the testes. FSH stimulates the Sertoli cells in the testes to facilitate spermatogenesis and to secrete inhibin. LH causes the Leydig cells in the testes to secrete testosterone. Testosterone further stimulates spermatogenesis by the Sertoli cells, but inhibits GnRH, LH, and FSH production by the hypothalamus and anterior pituitary. Inhibin secreted by Sertoli cells also inhibits FSH and LH production by the anterior pituitary.",
+      "caption": "Hormones control sperm production in a negative feedback system."
+    },
+    "Figure_43_05_01ab": {
+      "source": "media/Figure_43_05_01ab.jpg",
+      "sourceSha256": "1e5db29e15a679be2142aadccb624a3aed09a1fe3f3fe17374105519d512d2e0",
+      "module": "m66678",
+      "kind": "photo",
+      "width": 800,
+      "height": 322,
+      "variants": [
+        {
+          "width": 800,
+          "height": 322,
+          "file": "Figure_43_05_01ab-800.webp"
+        }
+      ],
+      "alt": "Part A is a micrograph that shows a sperm whose head is touching the surface of an egg. The egg is much larger than the sperm. Part B is an illustration that shows the surface of the egg, which is coated with a zona pellucida. The sperm penetrates the zona pellucida, then the egg plasma membrane and releases its D N A into the egg cytoplasm. At this point, changes in proteins just inside the egg's cell membrane occur, preventing entry of other sperm.",
+      "caption": "(a) Fertilization is the process in which sperm and egg fuse to form a zygote. (b) Acrosomal reactions help the sperm degrade the glycoprotein matrix protecting the egg and allow the sperm to transfer its nucleus. (credit: (b) modification of work by Mariana Ruiz Villareal; scale-bar data from Matt Russell)"
+    },
+    "Figure_43_05_04": {
+      "source": "media/Figure_43_05_04.jpg",
+      "sourceSha256": "9a318497f54c619fefe9570cca7d1d2b3c23666f6eab5c3e10c9346c1a519f46",
+      "module": "m66678",
+      "kind": "photo",
+      "width": 1117,
+      "height": 264,
+      "variants": [
+        {
+          "width": 800,
+          "height": 189,
+          "file": "Figure_43_05_04-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 264,
+          "file": "Figure_43_05_04-1117.webp"
+        }
+      ],
+      "alt": "Illustration shows cells associated with the internal endoderm, the middle mesoderm, and the external ectoderm. Lung, thyroid and digestive tissues are associated with the endoderm. Muscle, kidney and blood cells are associated with the mesoderm. Skin, neurons, and pigment cells are associated with the ectoderm.",
+      "caption": "The three germ layers give rise to different cell types in the animal body. (credit: modification of work by NIH, NCBI)"
+    },
+    "Figure_43_05_05": {
+      "source": "media/Figure_43_05_05.jpg",
+      "sourceSha256": "64281e6e28cc84a1ab9a304487bf8477da92e00241046323c82cf649e19fae24",
+      "module": "m66678",
+      "kind": "photo",
+      "width": 800,
+      "height": 614,
+      "variants": [
+        {
+          "width": 800,
+          "height": 614,
+          "file": "Figure_43_05_05-800.webp"
+        }
+      ],
+      "alt": "Illustration shows a tree with words such as genetics, statistics, medicine, economics, and genealogy associated with the roots. The word eugenics is emblazoned across the upper trunk. To the side of the tree is the text that reads, Eugenics is the self-direction of human evolution.",
+      "caption": "This logo from the Second International Eugenics Conference in New York City in September of 1921 shows how eugenics attempted to merge several fields of study with the goal of producing a genetically superior human race."
+    },
+    "Figure_43_06_01": {
+      "source": "media/Figure_43_06_01.jpg",
+      "sourceSha256": "cfa03aee0b1e1d9509d3df6b2dfc809c4b3c320dbcc5fc17283a6218ecb9ad8b",
+      "module": "m66679",
+      "kind": "photo",
+      "width": 544,
+      "height": 812,
+      "variants": [
+        {
+          "width": 544,
+          "height": 812,
+          "file": "Figure_43_06_01-544.webp"
+        }
+      ],
+      "alt": "Illustration shows a flat sheet. The middle of the sheet is the neural plate, and the epidermis is at either end. The neural plate border separates the neural plate from the epidermis. During convergence the plate folds, bringing the neural folds together. The neural folds fuse, forming the neural plate into a neural tube. The epidermis separates and folds around the outside.",
+      "caption": "The central region of the ectoderm forms the neural tube, which gives rise to the brain and the spinal cord."
+    },
+    "Figure_43_06_02": {
+      "source": "media/Figure_43_06_02.jpg",
+      "sourceSha256": "c5197702a1812db4b44bc5d1421973c68365e7dda4ae9bf37fcfe2588b50875a",
+      "module": "m66679",
+      "kind": "photo",
+      "width": 544,
+      "height": 580,
+      "variants": [
+        {
+          "width": 544,
+          "height": 580,
+          "file": "Figure_43_06_02-544.webp"
+        }
+      ],
+      "alt": "Embryo resembles a segmented earthworm with a bulging head.",
+      "caption": "In this five-week old human embryo, somites are segments along the length of the body. (credit: modification of work by Ed Uthman)"
+    },
+    "Figure_43_07_01": {
+      "source": "media/Figure_43_07_01.jpg",
+      "sourceSha256": "1a8c34354e84da5bf6cc432b929ceaa0759f1da90a40ed9313b45349fed8eccd",
+      "module": "m66677",
+      "kind": "photo",
+      "width": 1117,
+      "height": 900,
+      "variants": [
+        {
+          "width": 800,
+          "height": 644,
+          "file": "Figure_43_07_01-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 900,
+          "file": "Figure_43_07_01-1117.webp"
+        }
+      ],
+      "alt": "Upon ovulation, an oocyte is released from the ovary and enters the fallopian tubule. Fertilization by a sperm occurs at day zero, resulting in a single-celled zygote. Around day two, the zygote undergoes cell division. More cell divisions occur on the third and fourth day, resulting in four-cell and eight-cell stages. By this time the cell mass has traveled to the end of the fallopian tube. Around day five the cell mass enters the uterus and differentiates into a blastocyst that is hollow inside (a fluid-filled cavity called a blastocoel), with an inner cell mass off to one side. The layer of cells on the outside of the blastocyst is called the trophoblast. Around day eight or nine the blastocyst implants in the wall of the uterus, with the inner cell mass facing the wall.",
+      "caption": "In humans, fertilization occurs soon after the oocyte leaves the ovary. Implantation occurs eight or nine days later. (credit: Ed Uthman)"
+    },
+    "Figure_43_07_02": {
+      "source": "media/Figure_43_07_02.jpg",
+      "sourceSha256": "56ab88b9be2b8f213737c960713d580a389ae184f241574484e5a1f428782983",
+      "module": "m66677",
+      "kind": "photo",
+      "width": 544,
+      "height": 816,
+      "variants": [
+        {
+          "width": 544,
+          "height": 816,
+          "file": "Figure_43_07_02-544.webp"
+        }
+      ],
+      "alt": "Photo shows a human fetus, with a large bent head and a dark eye, fingers on its arm and a leg bud. The spine is visible through the back, and the stomach protrudes out as far as the leg bud.",
+      "caption": "Fetal development is shown at nine weeks gestation. (credit: Ed Uthman)"
+    },
+    "Figure_43_07_03": {
+      "source": "media/Figure_43_07_03.jpg",
+      "sourceSha256": "cea7cb0e5309aa3315026bdeabe15b58157d19680752f776f2c7bd044d86f4ef",
+      "module": "m66677",
+      "kind": "photo",
+      "width": 544,
+      "height": 688,
+      "variants": [
+        {
+          "width": 544,
+          "height": 688,
+          "file": "Figure_43_07_03-544.webp"
+        }
+      ],
+      "alt": "The second trimester fetus has long arms and legs, and is attached to the placenta, which is round and larger than the fetus.",
+      "caption": "This fetus is just entering the second trimester, when the placenta takes over more of the functions performed as the baby develops. (credit: National Museum of Health and Medicine)"
+    },
+    "Figure_43_07_04": {
+      "source": "media/Figure_43_07_04.jpg",
+      "sourceSha256": "b6279a9851b8d676268ea06944aa16830a17488fbf43e227b285ebff732e1401",
+      "module": "m66677",
+      "kind": "photo",
+      "width": 544,
+      "height": 625,
+      "variants": [
+        {
+          "width": 544,
+          "height": 625,
+          "file": "Figure_43_07_04-544.webp"
+        }
+      ],
+      "alt": "Illustration shows a third trimester fetus, which is a fully developed baby. The fetus is up-side down and pressing on the cervix. The thick umbilical cord extends from the fetus' belly to the uterine wall.",
+      "caption": "There is rapid fetal growth during the third trimester. (credit: modification of work by Gray’s Anatomy)"
+    },
+    "Figure_43_07_05": {
+      "source": "media/Figure_43_07_05.jpg",
+      "sourceSha256": "93428d1a039ca6ac5098999585f6f433581972f6a3af401d69cfd7938c5e499b",
+      "module": "m66677",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_43_07_05-544.webp"
+        }
+      ],
+      "alt": "Micrograph shows a needle injecting sperm into an egg.",
+      "caption": "A sperm is inserted into an egg for fertilization during intracytoplasmic sperm injection (ICSI). (credit: scale-bar data from Matt Russell)"
+    },
+    "Figure_44_00_01abc-ca30": {
+      "source": "media/Figure_44_00_01abc-ca30.jpg",
+      "sourceSha256": "0f1aeabf016b04f9e2cc40e8f61e715a97b7f6ba0e211fbb2895bc18a5db4d0f",
+      "module": "m66409",
+      "kind": "photo",
+      "width": 1489,
+      "height": 600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 322,
+          "file": "Figure_44_00_01abc-ca30-800.webp"
+        },
+        {
+          "width": 1489,
+          "height": 600,
+          "file": "Figure_44_00_01abc-ca30-1489.webp"
+        }
+      ],
+      "alt": "Photo (a) shows a deer tick on a leaf. The tick has a brown oval body with a smaller, round oval toward the front. The head and legs are black. Photo (b) shows an arm with a red, circular rash enclosed in a ring-like rash. Photo (c) shows a brown mouse with a white belly and legs and large, round ears.",
+      "caption": "The (a) deer tick carries the bacterium that produces Lyme disease in humans, often evident in (b) a symptomatic bull’s eye rash. The (c) white-footed mouse is one well-known host to deer ticks carrying the Lyme disease bacterium. (credit a: modification of work by Scott Bauer, USDA ARS; credit b: modification of work by James Gathany, CDC; credit c: modification of work by Rob Ireton)"
+    },
+    "Figure_44_01_02": {
+      "source": "media/Figure_44_01_02.jpg",
+      "sourceSha256": "8ef25baf88ab715e0d8dc81ca2b7bf0f2339cc1773220fa5bea7e0f3d8cf56cc",
+      "module": "m66410",
+      "kind": "photo",
+      "width": 544,
+      "height": 387,
+      "variants": [
+        {
+          "width": 544,
+          "height": 387,
+          "file": "Figure_44_01_02-544.webp"
+        }
+      ],
+      "alt": "Photo depicts a Karner blue butterfly, which has light blue wings with gold ovals and black dots around the edges.",
+      "caption": "The Karner blue butterfly ( Lycaeides melissa samuelis ) is a rare butterfly that lives only in open areas with few trees or shrubs, such as pine barrens and oak savannas. It can only lay its eggs on lupine plants. (credit: modification of work by J & K Hollingsworth, USFWS)"
+    },
+    "Figure_44_01_03": {
+      "source": "media/Figure_44_01_03.jpg",
+      "sourceSha256": "e748d03770cfbdc7ee4a33173bac39c58418aa7a777fe4e26067b45b02cef350",
+      "module": "m66410",
+      "kind": "photo",
+      "width": 450,
+      "height": 800,
+      "variants": [
+        {
+          "width": 450,
+          "height": 800,
+          "file": "Figure_44_01_03-450.webp"
+        }
+      ],
+      "alt": "This photo depicts a wild lupine flower, which is long and thin with clam-shaped petals radiating out from the center. The bottom third of the flower is blue, the middle is pink and blue, and the top is green.",
+      "caption": "The wild lupine ( Lupinus perennis ) is the only known host plant for the Karner blue butterfly."
+    },
+    "Figure_44_01_04": {
+      "source": "media/Figure_44_01_04.jpg",
+      "sourceSha256": "5cc5d8d60ef21fe1922e9476b0ca550d0a0f024f26106f913f60a7cc435926d6",
+      "module": "m66410",
+      "kind": "photo",
+      "width": 469,
+      "height": 312,
+      "variants": [
+        {
+          "width": 469,
+          "height": 312,
+          "file": "Figure_44_01_04-469.webp"
+        }
+      ],
+      "alt": "This photo shows a woman looking into a small cage with its door open. The cage sits on short prairie grass, next to a hole with dirt around the rim. In the background sits a second, closed cage.",
+      "caption": "This landscape ecologist is releasing a black-footed ferret into its native habitat as part of a study. (credit: USFWS Mountain Prairie Region, NPS)"
+    },
+    "Figure_44_02_01ab": {
+      "source": "media/Figure_44_02_01ab.jpg",
+      "sourceSha256": "7cc4f777f12c8939b3237eb9616fb011935bfd7873543287d27a10cf57c77096",
+      "module": "m66411",
+      "kind": "photo",
+      "width": 1117,
+      "height": 609,
+      "variants": [
+        {
+          "width": 800,
+          "height": 436,
+          "file": "Figure_44_02_01ab-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 609,
+          "file": "Figure_44_02_01ab-1117.webp"
+        }
+      ],
+      "alt": "Photo (a) depicts a wallaby, a member of the kangaroo family. The wallaby is brown with white flecks on its fur and a light brown underbelly. Its hands are clasped together. Photo (b) shows an echidna. Like a porcupine, the echidna has a compact body covered with brown and white quills. It has a long, slender snout.",
+      "caption": "Australia is home to many endemic species. The (a) wallaby ( Wallabia bicolor ), a medium-sized member of the kangaroo family, is a pouched mammal, or marsupial. The (b) echidna ( Tachyglossus aculeatus ) is an egg-laying mammal. (credit a: modification of work by Derrick Coetzee; credit b: modification of work by Allan Whittome)"
+    },
+    "Figure_44_02_02": {
+      "source": "media/Figure_44_02_02.jpg",
+      "sourceSha256": "8e6ac66e647ab697f824ba11501c657c0251211573d29b6f5c6b3fce98a643f6",
+      "module": "m66411",
+      "kind": "photo",
+      "width": 544,
+      "height": 490,
+      "variants": [
+        {
+          "width": 544,
+          "height": 490,
+          "file": "Figure_44_02_02-544.webp"
+        }
+      ],
+      "alt": "The photo shows a white flower with seven smooth, diamond-shaped petals radiating out from a yellow center. The flower is surrounded by waxy green leaves.",
+      "caption": "Listed as federally endangered, the forest gardenia is a small tree with distinctive flowers. It is found only in five of the Hawaiian Islands in small populations consisting of a few individual specimens. (credit: Forest & Kim Starr)"
+    },
+    "Figure_44_02_03": {
+      "source": "media/Figure_44_02_03.jpg",
+      "sourceSha256": "701f93c0ae1956846d134801cae27777c218ed96ee973ebd0c8da9c2d8f9ea77",
+      "module": "m66411",
+      "kind": "photo",
+      "width": 544,
+      "height": 544,
+      "variants": [
+        {
+          "width": 544,
+          "height": 544,
+          "file": "Figure_44_02_03-544.webp"
+        }
+      ],
+      "alt": "This photo shows a white flower with five diamond-shaped petals radiating out from a green center. Faint purple lines radiate out from the center of each petal toward the tip. Five stalk-like stamens with pink-tipped anthers extend from the flower’s green center.",
+      "caption": "The spring beauty is an ephemeral spring plant that flowers early in the spring to avoid competing with larger forest trees for sunlight. (credit: John Beetham)"
+    },
+    "Figure_44_02_05": {
+      "source": "media/Figure_44_02_05.png",
+      "sourceSha256": "6b7978c9d5b803c6c7d4a67ab91ae6397a5700f81bcde534b9d7636a58bfbded",
+      "module": "m66411",
+      "kind": "diagram",
+      "width": 725,
+      "height": 501,
+      "variants": [
+        {
+          "width": 725,
+          "height": 501,
+          "file": "Figure_44_02_05-725.webp"
+        }
+      ],
+      "alt": "The illustration shows a cross-section of a lake in four different seasons. In winter, the surface of the lake is frozen with a temperature of 0 degrees upper case C. The temperature at the bottom of the lake is 4 degrees upper case C, and the temperature just beneath the surface is 2 degrees C. During the spring turnover, the surface ice melts and warms to 4 degrees C. At this temperature, the surface water is denser than the 2 degree C water beneath; therefore, it sinks. In summertime, the surface of the lake is 21 degrees C, and the temperature decreases with depth, to 4 degrees C at the bottom. During the fall turnover, the warm surface water cools to about 10 degrees C; thus, it becomes denser and sinks.",
+      "caption": "The spring and fall turnovers are important processes in freshwater lakes that act to move the nutrients and oxygen at the bottom of deep lakes to the top. Turnover occurs because water has a maximum density at 4 °C. Surface water temperature changes as the seasons progress, and denser water sinks."
+    },
+    "Figure_44_02_06": {
+      "source": "media/Figure_44_02_06.jpg",
+      "sourceSha256": "a2f90673a4610dd25bdd41157123f4719943cd57928e50529ee73878722fc993",
+      "module": "m66411",
+      "kind": "photo",
+      "width": 544,
+      "height": 358,
+      "variants": [
+        {
+          "width": 544,
+          "height": 358,
+          "file": "Figure_44_02_06-544.webp"
+        }
+      ],
+      "alt": "Photo shows two pine cones that are tightly closed and attached to a branch.",
+      "caption": "The mature cones of the jack pine (Pinus banksiana) open only when exposed to high temperatures, such as during a forest fire. A fire is likely to kill most vegetation, so a seedling that germinates after a fire is more likely to receive ample sunlight than one that germinates under normal conditions. (credit: USDA)"
+    },
+    "Figure_44_03_01": {
+      "source": "media/Figure_44_03_01.png",
+      "sourceSha256": "5e517f401922f97b2ed997c2ded5154c480d465d267f5e1fb98028e628cfd488",
+      "module": "m66420",
+      "kind": "diagram",
+      "width": 1045,
+      "height": 488,
+      "variants": [
+        {
+          "width": 800,
+          "height": 373,
+          "file": "Figure_44_03_01-800.webp"
+        },
+        {
+          "width": 1045,
+          "height": 488,
+          "file": "Figure_44_03_01-1045.webp"
+        }
+      ],
+      "alt": "This world map shows the eight major biomes, polar ice, and mountains. Tropical forests, deserts and savannas are found primarily in South America, Africa, and Australia. Tropical forests also dominate Southeast Asia. Deserts dominate the Middle East and are found in the southwestern United States. Chaparral is found all around the Mediterranean Sea, in southern Australia, on the southern tip of Africa, and in California in southwestern North America. Temperate forests dominate the eastern United States, Europe, and Eastern Asia. Temperate grasslands dominate the midwestern United States and parts of Asia, and are also found in South America. The boreal forest is found in northern Canada, Europe, and Asia, and tundra exists to the north of the boreal forest in each of these regions. Mountainous regions run the length of North and South America, and are found in northern India, Africa, and parts of Europe. Polar ice covers Greenland.",
+      "caption": "Each of the world’s major biomes is distinguished by characteristic temperatures and amounts of precipitation. Polar ice and mountains are also shown."
+    },
+    "Figure_44_03_02": {
+      "source": "media/Figure_44_03_02.jpg",
+      "sourceSha256": "4154bad073e5ac01d28d2bb1c4c7bfa2399ebf1dad050e4c6df3625da9606476",
+      "module": "m66420",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_44_03_02-544.webp"
+        }
+      ],
+      "alt": "This photo depicts a section of the Madre de Dios River, which is brown with mud. Trees line the edge of the river.",
+      "caption": "Tropical wet forests, such as these forests along the Madre de Dios river, Peru, near the Amazon River, have high species diversity. (credit: Roosevelt Garcia)"
+    },
+    "Figure_44_03_03": {
+      "source": "media/Figure_44_03_03.jpg",
+      "sourceSha256": "6665c5dbd6cc3401cbc72e9d4dd2da1e98aa1c36d3980109919f750c55ac3c63",
+      "module": "m66420",
+      "kind": "photo",
+      "width": 800,
+      "height": 533,
+      "variants": [
+        {
+          "width": 800,
+          "height": 533,
+          "file": "Figure_44_03_03-800.webp"
+        }
+      ],
+      "alt": "A grassy slope plain is covered in vegetation, whether it be grass, small bushes, or small trees.",
+      "caption": "Savannas, like this one in Taita Hills Wildlife Sanctuary in Kenya, are dominated by grasses. (credit: Christopher T. Cooper)"
+    },
+    "Figure_44_03_04": {
+      "source": "media/Figure_44_03_04.jpg",
+      "sourceSha256": "0c7aa1e9b531bb25ede2393cc15842af892a77a8853246b761deea4aa6ec1d62",
+      "module": "m66420",
+      "kind": "photo",
+      "width": 544,
+      "height": 816,
+      "variants": [
+        {
+          "width": 544,
+          "height": 816,
+          "file": "Figure_44_03_04-544.webp"
+        }
+      ],
+      "alt": "This photo shows a sandy desert dotted with scrubby bushes. An ocotillo plant dominates the picture. It has long, thin unbranched stems that grow straight up from the base of the plant and radiate out slightly. The plant has no leaves.",
+      "caption": "To reduce water loss, many desert plants have tiny leaves or no leaves at all. The leaves of ocotillo ( Fouquieria splendens ), shown here in the Sonora Desert near Gila Bend, Arizona, appear only after rainfall, and then are shed."
+    },
+    "Figure_44_03_05": {
+      "source": "media/Figure_44_03_05.jpg",
+      "sourceSha256": "9ed36c7a3d885f0ee46db122fa34376d14cbba1468c029c9e10d838557b5d510",
+      "module": "m66420",
+      "kind": "photo",
+      "width": 870,
+      "height": 653,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_44_03_05-800.webp"
+        },
+        {
+          "width": 870,
+          "height": 653,
+          "file": "Figure_44_03_05-870.webp"
+        }
+      ],
+      "alt": "Photo depicts a landscape with many shrubs, dormant grass, a few trees, and mountains in the background.",
+      "caption": "The chaparral is dominated by shrubs. (credit: Miguel Vieira)"
+    },
+    "Figure_44_03_06": {
+      "source": "media/Figure_44_03_06.jpg",
+      "sourceSha256": "082a03e879e5d120b1d022d74591ee0dc19238691f5dc90fe9640bc3c85ca6d3",
+      "module": "m66420",
+      "kind": "photo",
+      "width": 800,
+      "height": 522,
+      "variants": [
+        {
+          "width": 800,
+          "height": 522,
+          "file": "Figure_44_03_06-800.webp"
+        }
+      ],
+      "alt": "This photo shows a bison, which is dark brown in color with an even darker head. The hind part of the animal has short fur, and the front of the animal has longer, curly fur.",
+      "caption": "The American bison ( Bison bison ), more commonly called the buffalo, is a grazing mammal that once populated American prairies in huge numbers. (credit: Jack Dykinga, USDA Agricultural Research Service)"
+    },
+    "Figure_44_03_07": {
+      "source": "media/Figure_44_03_07.jpg",
+      "sourceSha256": "0fc03183aeefd4451df02e8c4699f4d7ae288598dc6c4d4618a16c0a5cf4794c",
+      "module": "m66420",
+      "kind": "photo",
+      "width": 800,
+      "height": 600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_44_03_07-800.webp"
+        }
+      ],
+      "alt": "Photo shows a deciduous forest with many tall trees, some smaller trees and grass, and lots of dead leaves on the forest floor. Sunlight filters down to the forest floor.",
+      "caption": "Deciduous trees are the dominant plant in the temperate forest. (credit: Oliver Herold)"
+    },
+    "Figure_44_03_08": {
+      "source": "media/Figure_44_03_08.jpg",
+      "sourceSha256": "45ef27a28ba6bb18781aec36297b4af8fc7eda4eae4400c611c6e0e93d0ec623",
+      "module": "m66420",
+      "kind": "photo",
+      "width": 800,
+      "height": 527,
+      "variants": [
+        {
+          "width": 800,
+          "height": 527,
+          "file": "Figure_44_03_08-800.webp"
+        }
+      ],
+      "alt": "The photo shows a boreal forest with a uniform low layer of plants and tall conifers scattered throughout the landscape. The snowcapped mountains of the Alaska Range are in the background.",
+      "caption": "The boreal forest (taiga) has low lying plants and conifer trees. (credit: L.B. Brubaker)"
+    },
+    "Figure_44_03_09": {
+      "source": "media/Figure_44_03_09.jpg",
+      "sourceSha256": "df7949b104986122520c479fa32f205e50f9b28f415430c44a9e3ee9372d4a90",
+      "module": "m66420",
+      "kind": "photo",
+      "width": 544,
+      "height": 366,
+      "variants": [
+        {
+          "width": 544,
+          "height": 366,
+          "file": "Figure_44_03_09-544.webp"
+        }
+      ],
+      "alt": "This photo shows a flat plain covered with shrub. Many of the shrubs are covered in pink flowers.",
+      "caption": "Low-growing plants such as shrub willow dominate the tundra landscape, shown here in the Arctic National Wildlife Refuge. (credit: USFWS Arctic National Wildlife Refuge)"
+    },
+    "Figure_44_04_01": {
+      "source": "media/Figure_44_04_01.png",
+      "sourceSha256": "cadb8146197bd55bdcd8b1012f139eb3a5965817400c40d4b55c76d097244d44",
+      "module": "m66417",
+      "kind": "diagram",
+      "width": 725,
+      "height": 443,
+      "variants": [
+        {
+          "width": 725,
+          "height": 443,
+          "file": "Figure_44_04_01-725.webp"
+        }
+      ],
+      "alt": "The illustration divides the ocean into different zones based on depth. The top layer, called the photic zone, extends from the surface to 200 m. The aphotic zone extends from 200 to 4,000 m. The abyssal zone extends from 4,000 m to the ocean bottom. The ocean is also divided into zones based on distance from the shore. The intertidal zone extends from high to low tide. The neritic zone extends from the intertidal zone to the point at which ocean depth is about 200 m. At about this depth, the continental shelf ends in a steep slope to the ocean bottom. The oceanic zone is the area of open ocean. The entire ocean bottom is the benthic zone. It extends from the shore, along the bottom of shallow water, and continues along the bottom down to the greatest ocean depths. All of the ocean's open water, above the entire benthic realm, including the photic, aphotic, and abyssal zones, is referred to as the pelagic realm.",
+      "caption": "The ocean is divided into different zones based on water depth and distance from the shoreline."
+    },
+    "Figure_44_04_02": {
+      "source": "media/Figure_44_04_02.jpg",
+      "sourceSha256": "5c29c791d6f281d6f79b4f268c85272ded95739ae8ace11b8f1913179f3f38c8",
+      "module": "m66417",
+      "kind": "photo",
+      "width": 544,
+      "height": 373,
+      "variants": [
+        {
+          "width": 544,
+          "height": 373,
+          "file": "Figure_44_04_02-544.webp"
+        }
+      ],
+      "alt": "Photo shows sea urchins, mussel shells, and starfish in a rocky intertidal zone.",
+      "caption": "Sea urchins, mussel shells, and starfish are often found in the intertidal zone, shown here in Kachemak Bay, Alaska. (credit: NOAA)"
+    },
+    "Figure_44_04_03": {
+      "source": "media/Figure_44_04_03.jpg",
+      "sourceSha256": "a03f64602cb5cdea90efc66efbf07181a9b55bbe10bc4b2a4c96da7aaae61216",
+      "module": "m66417",
+      "kind": "photo",
+      "width": 544,
+      "height": 728,
+      "variants": [
+        {
+          "width": 544,
+          "height": 728,
+          "file": "Figure_44_04_03-544.webp"
+        }
+      ],
+      "alt": "In this photo, several fish are swimming among coral. The coral at the front of the photo is blue with branched arms. Further back are anvil-shaped corals.",
+      "caption": "Coral reefs are formed by the calcium carbonate skeletons of coral organisms, which are marine invertebrates in the phylum Cnidaria. (credit: Terry Hughes)"
+    },
+    "Figure_44_04_04": {
+      "source": "media/Figure_44_04_04.jpg",
+      "sourceSha256": "52a992d4c0c8ef8e8933ce746d622724258425266547143cd20955a27d00964d",
+      "module": "m66417",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_44_04_04-544.webp"
+        }
+      ],
+      "alt": "This photo shows a body of water whose surface is mostly covered with thick, green algae, appearing as a mossy, fuzzy substance.",
+      "caption": "The uncontrolled growth of algae in this lake has resulted in an algal bloom. (credit: Jeremy Nettleton)"
+    },
+    "Figure_44_04_05": {
+      "source": "media/Figure_44_04_05.jpg",
+      "sourceSha256": "a6126436ce5cb5a10ec013645c62f1d05b41cb83800ac4b3643ebc4820d06ed9",
+      "module": "m66417",
+      "kind": "photo",
+      "width": 800,
+      "height": 533,
+      "variants": [
+        {
+          "width": 800,
+          "height": 533,
+          "file": "Figure_44_04_05-800.webp"
+        }
+      ],
+      "alt": "This photo shows mangrove trees growing in black water. The trunks of the mangroves widen and split toward the bottom. A white bird stands in the water among the trees.",
+      "caption": "Located in southern Florida, Everglades National Park is vast array of wetland environments, including sawgrass marshes, cypress swamps, and estuarine mangrove forests. Here, a great egret walks among cypress trees. (credit: NPS)"
+    },
+    "Figure_44_05_01": {
+      "source": "media/Figure_44_05_01.jpg",
+      "sourceSha256": "26f0d6c4f3c5c57a813cbb44ca7e2e378ca40fe7960e86c255715da1ea75e621",
+      "module": "m66419",
+      "kind": "photo",
+      "width": 544,
+      "height": 822,
+      "variants": [
+        {
+          "width": 544,
+          "height": 822,
+          "file": "Figure_44_05_01-544.webp"
+        }
+      ],
+      "alt": "Top graph plots temperature change in degrees Celsius versus years before present, beginning 400,000 years ago. Temperature shows a cyclical variation, from about 2 degrees Celsius above todays average temperature, to about 8 degrees below. Carbon dioxide levels also show a cyclical variation. The graph shows that the current trend is the carbon dioxide levels are rising. In the past, it cycled between 180 and 300 parts per million. The temperature and carbon dioxide cycles, which repeat at about a hundred thousand year scale, closely mirror one another.",
+      "caption": "Ice at the Russian Vostok station in East Antarctica was laid down over the course of 420,000 years and reached a depth of over 3,000 m. By measuring the amount of CO 2 trapped in the ice, scientists have determined past atmospheric CO 2 concentrations. Temperatures relative to modern day were determined from the amount of deuterium (a nonradioactive isotope of hydrogen) present."
+    },
+    "Figure_44_05_02": {
+      "source": "media/Figure_44_05_02.jpg",
+      "sourceSha256": "9fef49d7bdbb2a83bf0fbeae26fe55fb1238a79608a8b8eaaf76f6087e34f595",
+      "module": "m66419",
+      "kind": "photo",
+      "width": 544,
+      "height": 429,
+      "variants": [
+        {
+          "width": 544,
+          "height": 429,
+          "file": "Figure_44_05_02-544.webp"
+        }
+      ],
+      "alt": "Atmospheric carbon dioxide concentration (ppm) is plotted against year, from 19 60 to 20 10. Carbon dioxide concentration has steadily risen in the timeframe shown, from an approximate concentration of 320 in the year 19 55, to a concentration of 365 in the year 19 95, and close to 400 in the year 2005.",
+      "caption": "The atmospheric concentration of CO 2 has risen steadily since the beginning of industrialization."
+    },
+    "Figure_44_05_03": {
+      "source": "media/Figure_44_05_03.jpg",
+      "sourceSha256": "683796fb10712ad7b7be60ee1509364753657fa4d884896eaee12573bd141e72",
+      "module": "m66419",
+      "kind": "photo",
+      "width": 544,
+      "height": 729,
+      "variants": [
+        {
+          "width": 544,
+          "height": 729,
+          "file": "Figure_44_05_03-544.webp"
+        }
+      ],
+      "alt": "This photo shows a smokestack from a factory churning gray smoke into the air.",
+      "caption": "The burning of fossil fuels in industry and by vehicles releases carbon dioxide and other greenhouse gases into the atmosphere. (credit: “Pöllö”/Wikimedia Commons)"
+    },
+    "Figure_44_05_04": {
+      "source": "media/Figure_44_05_04.jpg",
+      "sourceSha256": "afa2f763037a70581868c93bcacef108fd18f1650c0ec48fe05aad0aaaaee316",
+      "module": "m66419",
+      "kind": "photo",
+      "width": 1118,
+      "height": 441,
+      "variants": [
+        {
+          "width": 800,
+          "height": 315,
+          "file": "Figure_44_05_04-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 441,
+          "file": "Figure_44_05_04-1118.webp"
+        }
+      ],
+      "alt": "A series of photos shows the Grinnel Glacier in the years 19 38, 19 81, 19 98 and 2009. In 19 38, the lake beneath the glacier was completely frozen. In 19 81, about one-third of the lake was thawed. In 19 98, two-thirds of the lake was thawed. In 2009, it was covered with chunks of ice, but otherwise it was completely thawed. At the same time, the glacier itself has steadily receded.",
+      "caption": "The effect of global warming can be seen in the continuing retreat of Grinnel Glacier. The mean annual temperature in the park has increased 1.33 °C since 1900. The loss of a glacier results in the loss of summer meltwaters, sharply reducing seasonal water supplies and severely affecting local ecosystems. (credit: modification of work by USGS)"
+    },
+    "Figure_45_00_01-16d7": {
+      "source": "media/Figure_45_00_01-16d7.jpg",
+      "sourceSha256": "5f6ba015af3f6b4c8893c754bd97deabeefe240b067cc6b4f24b60f99fa477e5",
+      "module": "m66682",
+      "kind": "photo",
+      "width": 1117,
+      "height": 330,
+      "variants": [
+        {
+          "width": 800,
+          "height": 236,
+          "file": "Figure_45_00_01-16d7-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 330,
+          "file": "Figure_45_00_01-16d7-1117.webp"
+        }
+      ],
+      "alt": "Main photo shows fish jumping out of the water, and inset photo shows a pile of dead fish in a container.",
+      "caption": "Asian carp jump out of the water in response to electrofishing. The Asian carp in the photograph on the right were harvested from the Little Calumet River in Illinois in May, 2010, using rotenone, a toxin often used as an insecticide, in an effort to learn more about the population of the species. (credit left image: modification of work by USGS; credit right image: modification of work by Lt. David French, USCG)"
+    },
+    "Figure_45_01_01": {
+      "source": "media/Figure_45_01_01.png",
+      "sourceSha256": "1551401c6a2f61e65df9f390cb23bfbb45acf6e704bc910781543caf9396bd3e",
+      "module": "m66686",
+      "kind": "diagram",
+      "width": 725,
+      "height": 508,
+      "variants": [
+        {
+          "width": 725,
+          "height": 508,
+          "file": "Figure_45_01_01-725.webp"
+        }
+      ],
+      "alt": "Graph plots log density in kilometers squared versus log body mass in grams. The values are inversely proportional, so that density decreases linearly with increasing body mass.",
+      "caption": "Australian mammals show a typical inverse relationship between population density and body size."
+    },
+    "Figure_45_01_02": {
+      "source": "media/Figure_45_01_02.jpg",
+      "sourceSha256": "f29542d8018d05b83577f3a0147fc82eab270d90f667d5214161066a75aab4da",
+      "module": "m66686",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_45_01_02-544.webp"
+        }
+      ],
+      "alt": "Photo shows a person looking down at a grid set on a patch of grass.",
+      "caption": "A scientist uses a quadrat to measure population size and density. (credit: NPS Sonoran Desert Network)"
+    },
+    "Figure_45_01_03abc": {
+      "source": "media/Figure_45_01_03abc.jpg",
+      "sourceSha256": "ad1885ce4e76b9de7283d2971d316b8397acf38e7343c4cbf28595a3b35f93ad",
+      "module": "m66686",
+      "kind": "photo",
+      "width": 1115,
+      "height": 361,
+      "variants": [
+        {
+          "width": 800,
+          "height": 259,
+          "file": "Figure_45_01_03abc-800.webp"
+        },
+        {
+          "width": 1115,
+          "height": 361,
+          "file": "Figure_45_01_03abc-1115.webp"
+        }
+      ],
+      "alt": "Photo A shows two bighorn sheep, one with a collar around its neck. Photo B shows a condor in flight with a tag on its wing. Photo C shows a man holding a salmon with a tag on its back.",
+      "caption": "Mark and recapture is used to measure the population size of mobile animals such as (a) bighorn sheep, (b) the California condor, and (c) salmon. (credit a: modification of work by Neal Herbert, NPS; credit b: modification of work by Pacific Southwest Region USFWS; credit c: modification of work by Ingrid Taylar)"
+    },
+    "Figure_45_01_04": {
+      "source": "media/Figure_45_01_04.jpg",
+      "sourceSha256": "63eb415f5f6365e84b033d6df577ce43e90a50446ed7d3dc6c0884b2486a3108",
+      "module": "m66686",
+      "kind": "photo",
+      "width": 1117,
+      "height": 393,
+      "variants": [
+        {
+          "width": 800,
+          "height": 281,
+          "file": "Figure_45_01_04-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 393,
+          "file": "Figure_45_01_04-1117.webp"
+        }
+      ],
+      "alt": "Photo (a) shows penguins, which maintain a defined territory and therefore have a uniform distribution. Photo (b) shows a field of dandelions whose seeds are dispersed by wind, resulting in a random distribution patter. Photo (c) shows elephants, which travel in herds resulting in a clumped distribution pattern.",
+      "caption": "Species may have uniform, random, or clumped distribution. Territorial birds such as penguins tend to have uniform distribution. Plants such as dandelions with wind-dispersed seeds tend to be randomly distributed. Animals such as elephants that travel in groups exhibit clumped distribution. (credit a: modification of work by Ben Tubby; credit b: modification of work by Rosendahl; credit c: modification of work by Rebecca Wood)"
+    },
+    "Figure_45_01_05": {
+      "source": "media/Figure_45_01_05.jpg",
+      "sourceSha256": "e318eafbae4fc577b9259f2aaea7258b6f715932bd92d43a0d10ac572003f4ff",
+      "module": "m66686",
+      "kind": "photo",
+      "width": 544,
+      "height": 513,
+      "variants": [
+        {
+          "width": 544,
+          "height": 513,
+          "file": "Figure_45_01_05-544.webp"
+        }
+      ],
+      "alt": "Graph plots the log of number of individuals surviving versus time. Three curves are shown, representing Type I, Type II, and Type III survivorship patterns. Birds exhibit a Type II survivorship curve, which decreases linearly with time. Humans show a Type I survivorship curve, which starts with a gentle slope that becomes increasingly steep with time. Trees show a Type III survivorship pattern, which starts with a steep slope that becomes less steep with time.",
+      "caption": "Survivorship curves show the distribution of individuals in a population according to age. Humans and most mammals have a Type I survivorship curve because death primarily occurs in the older years. Birds have a Type II survivorship curve, as death at any age is equally probable. Trees have a Type III survivorship curve because very few survive the younger years, but after a certain age, individuals are much more likely to survive."
+    },
+    "Figure_45_02_01-8c51": {
+      "source": "media/Figure_45_02_01-8c51.jpg",
+      "sourceSha256": "82df23442e03e5a422e5f4e0e18a1a96249b018c2e1eb3d02f6f7a982d499b81",
+      "module": "m66688",
+      "kind": "photo",
+      "width": 825,
+      "height": 197,
+      "variants": [
+        {
+          "width": 800,
+          "height": 191,
+          "file": "Figure_45_02_01-8c51-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 197,
+          "file": "Figure_45_02_01-8c51-825.webp"
+        }
+      ],
+      "alt": "Photo (a) shows a salmon swimming. Photo (b) shows pronghorn antelope running on a plain. Photo (c) shows chimpanzees.",
+      "caption": "The (a) Chinook salmon mates once and dies. The (b) pronghorn antelope mates during specific times of the year during its reproductive life. Primates, such as humans and (c) chimpanzees, may mate on any day, independent of ovulation. (credit a: modification of work by Roger Tabor, USFWS; credit b: modification of work by Mark Gocke, USDA; credit c: modification of work by “Shiny Things”/Flickr)"
+    },
+    "Figure_45_02_02": {
+      "source": "media/Figure_45_02_02.jpg",
+      "sourceSha256": "d36c5f43f6df0d291de5849b181916d6ea7a3c58c3f4df539ccec680a878ef39",
+      "module": "m66688",
+      "kind": "photo",
+      "width": 544,
+      "height": 126,
+      "variants": [
+        {
+          "width": 544,
+          "height": 126,
+          "file": "Figure_45_02_02-544.webp"
+        }
+      ],
+      "alt": "Table compares the change in percentage of large versus small females mated for sperm-depleted males versus non-depleted males. Non-depleted males preferred large over small females by 8 percent. Sperm depleted males had a greater preference for large females: 15 percent. Error for both measurements was plus or minus 5 percent.",
+      "caption": "Male fruit flies that had previously mated (sperm-depleted) picked larger, more fecund females more often than those that had not mated (non-sperm-depleted). This change in behavior causes an increase in the efficiency of a limited reproductive resource: sperm."
+    },
+    "Figure_45_03_01": {
+      "source": "media/Figure_45_03_01.jpg",
+      "sourceSha256": "c902a802296e10faa83a7308c22a710265be11d9fa1ccad5d9841e36505f3c3f",
+      "module": "m66690",
+      "kind": "photo",
+      "width": 800,
+      "height": 357,
+      "variants": [
+        {
+          "width": 800,
+          "height": 357,
+          "file": "Figure_45_03_01-800.webp"
+        }
+      ],
+      "alt": "Both graphs (a) and (b) plot population size versus time. In graph (a), exponential growth results in a curve that gets increasingly steep, resulting in a J-shape. In graph (b), logistic growth results in a curve that gets increasingly steep, then levels off when the carrying capacity is reached, resulting in an S-shape",
+      "caption": "When resources are unlimited, populations exhibit exponential growth, resulting in a J-shaped curve. When resources are limited, populations exhibit logistic growth. In logistic growth, population expansion decreases as resources become scarce, and it levels off when the carrying capacity of the environment is reached, resulting in an S-shaped curve."
+    },
+    "Figure_45_03_02": {
+      "source": "media/Figure_45_03_02.png",
+      "sourceSha256": "c0202d48b0db012ff253f9854038ff7fd7be7ace8b75d7d61fb0687027571e9f",
+      "module": "m66690",
+      "kind": "diagram",
+      "width": 1042,
+      "height": 1114,
+      "variants": [
+        {
+          "width": 800,
+          "height": 855,
+          "file": "Figure_45_03_02-800.webp"
+        },
+        {
+          "width": 1042,
+          "height": 1114,
+          "file": "Figure_45_03_02-1042.webp"
+        }
+      ],
+      "alt": "Graph (a) plots amount of yeast versus time of growth in hours. The curve rises steeply, and then plateaus at the carrying capacity. Data points tightly follow the curve. Graph (b) plots the number of harbor seals versus time in years. Again, the curve rises steeply then plateaus at the carrying capacity, but this time there is much more scatter in the data. A micrograph of yeast cells, which are oval in shape, and a photo of a harbor seal are shown.",
+      "caption": "(a) Yeast grown in ideal conditions in a test tube show a classical S-shaped logistic growth curve, whereas (b) a natural population of seals shows real-world fluctuation."
+    },
+    "Figure_45_04_01": {
+      "source": "media/Figure_45_04_01.jpg",
+      "sourceSha256": "9bfc3cf5cd66645345815e3641f42ba4a1c276c37685a5253cdea47960798ce8",
+      "module": "m66691",
+      "kind": "photo",
+      "width": 544,
+      "height": 387,
+      "variants": [
+        {
+          "width": 544,
+          "height": 387,
+          "file": "Figure_45_04_01-544.webp"
+        }
+      ],
+      "alt": "Graph of fecundity as a function of population plots number of eggs per female versus number of worms. The number of eggs decreases rapidly at first, then levels off between 30 to 50 worms.",
+      "caption": "In this population of roundworms, fecundity (number of eggs) decreases with population density. N.A. Croll et al., “The Population Biology and Control of Ascaris lumbricoides in a Rural Community in Iran.” Transactions of the Royal Society of Tropical Medicine and Hygiene 76, no. 2 (1982): 187-197, doi:10.1016/0035-9203(82)90272-3."
+    },
+    "Figure_45_04_02": {
+      "source": "media/Figure_45_04_02.png",
+      "sourceSha256": "49693f227886ae714118504f1bb6f9b4cfdd335e7c5cbd2bb87ab8636c5e5ba6",
+      "module": "m66691",
+      "kind": "diagram",
+      "width": 2740,
+      "height": 755,
+      "variants": [
+        {
+          "width": 800,
+          "height": 220,
+          "file": "Figure_45_04_02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 441,
+          "file": "Figure_45_04_02-1600.webp"
+        }
+      ],
+      "alt": "Three depictions of mammoths are shown. They are large, elephant like creatures covered in fur, and they have long tusks. Photo (a) shows a painting of mammoths walking in the snow. Photo (b) shows a stuffed mammoth sitting in a museum display case. Photo (c) shows a mummified baby mammoth, also in a display case.",
+      "caption": "The three photos include: (a) 1916 mural of a mammoth herd from the American Museum of Natural History, (b) the only stuffed mammoth in the world, from the Museum of Zoology located in St. Petersburg, Russia, and (c) a one-month-old baby mammoth, named Lyuba, discovered in Siberia in 2007. (credit a: modification of work by Charles R. Knight; credit b: modification of work by “Tanapon”/Flickr; credit c: modification of work by Matt Howry)"
+    },
+    "Figure_45_04_03ab": {
+      "source": "media/Figure_45_04_03ab.jpg",
+      "sourceSha256": "c6653830df0b9efe43a106413a98acc12a1eb45b9eca901839a67c7e0241a27a",
+      "module": "m66691",
+      "kind": "photo",
+      "width": 1117,
+      "height": 839,
+      "variants": [
+        {
+          "width": 800,
+          "height": 601,
+          "file": "Figure_45_04_03ab-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 839,
+          "file": "Figure_45_04_03ab-1117.webp"
+        }
+      ],
+      "alt": "Part A, K-selected species, shows photos of an oak tree and an elephant. Part B, r-selected species, shows photos of a dandelion and a jellyfish.",
+      "caption": "(a) Elephants are considered K-selected species as they live long, mature late, and provide long-term parental care to few offspring. Oak trees produce many offspring that do not receive parental care, but are considered K-selected species based on longevity and late maturation. (b) Dandelions and jellyfish are both considered r-selected species as they mature early, have short lifespans, and produce many offspring that receive no parental care."
+    },
+    "Figure_45_05_01": {
+      "source": "media/Figure_45_05_01.jpg",
+      "sourceSha256": "4c071879072f3a76740f4787bb4fc76c9a37c569b12f1521e0c11ae877b01505",
+      "module": "m66696",
+      "kind": "photo",
+      "width": 800,
+      "height": 477,
+      "variants": [
+        {
+          "width": 800,
+          "height": 477,
+          "file": "Figure_45_05_01-800.webp"
+        }
+      ],
+      "alt": "Graph plots the world population growth from 1000 A D to the present. The curve starts out flat, and then becomes increasingly steep. A sharp increase in population occurs around 1900. In 1000 A D the population was around 265 million. In 2000 it was around 6 billion. Populations of various parts of the world are also plotted, including Africa, Asia, Europe, Latin America, and Northern America. With the exception of Europe, the change in population in each region is similar to the change in world population. In Europe, the population is now stagnant.",
+      "caption": "Human population growth since year 1000 is exponential (dark blue line). Notice that while the population in Asia (yellow line), which has many economically underdeveloped countries, is increasing exponentially, the population in Europe (light blue line), where most of the countries are economically developed, is growing much more slowly."
+    },
+    "Figure_45_05_02": {
+      "source": "media/Figure_45_05_02.jpg",
+      "sourceSha256": "4c5e20eeab3ecb363bc4507f2f2597b8d72acec8cb9a06edc19614af4a7be555",
+      "module": "m66696",
+      "kind": "photo",
+      "width": 800,
+      "height": 470,
+      "variants": [
+        {
+          "width": 800,
+          "height": 470,
+          "file": "Figure_45_05_02-800.webp"
+        }
+      ],
+      "alt": "Bar graph shows the number of years it has taken to add each billion people to the world population. By 1800, there were about a billion people on Earth. It took 130 years, until 19 30, for the number to reach two billion. Thirty years later, in 19 60, the number reached three billion, and 15 years after that, in 19 75, the number reached four billion. The population reached five billion in 19 87, and six billion in 19 99, each twelve years apart. In 2012, the world population was nearly seven billion. The population is projected to reach 8 billion in 20 28, and 9 billion in 20 54, indicating that it will take more years between each increase in billions of people.",
+      "caption": "The time between the addition of each billion human beings to Earth decreases over time. (credit: modification of work by Ryan T. Cragun)"
+    },
+    "Figure_45_05_03": {
+      "source": "media/Figure_45_05_03.png",
+      "sourceSha256": "e091de882b66a53629421e6ae6744ae8a167804d12ac911bafc05cc715a5d2a4",
+      "module": "m66696",
+      "kind": "diagram",
+      "width": 1043,
+      "height": 301,
+      "variants": [
+        {
+          "width": 800,
+          "height": 231,
+          "file": "Figure_45_05_03-800.webp"
+        },
+        {
+          "width": 1043,
+          "height": 301,
+          "file": "Figure_45_05_03-1043.webp"
+        }
+      ],
+      "alt": "For the four different age structure diagrams shown, the base represents birth and the apex occurs around age 70. The age structure diagram for stage 1, rapid growth, is shaped like a deflated triangle that starts out wide at the base and rapidly decreases to a narrow apex, indicating that the number of individuals decreases rapidly with age. The age structure diagram for stage 2, slow growth, is triangular in shape, indicating that the number of individuals decreases steadily with age. The age structure diagram for stage 3, stable growth, is rounded at the top, indicating that the number of individuals per age group decreases gradually at first, then decreases more rapidly for the older portion of the population. The final age structure diagram, stage 4, widens from the base to middle age, and then narrows to a rounded top. The population type indicated by this diagram is not given, as this is part of the Visual Connection question.",
+      "caption": "Typical age structure diagrams are shown. The rapid growth diagram narrows to a point, indicating that the number of individuals decreases rapidly with age. In the slow growth model, the number of individuals decreases steadily with age. Stable population diagrams are rounded on the top, showing that the number of individuals per age group decreases gradually, and then decreases more rapidly for the older part of the population."
+    },
+    "Figure_45_05_04": {
+      "source": "media/Figure_45_05_04.jpg",
+      "sourceSha256": "605dba556ff3ea075bcb8ae2d8905b772ecc17617917c6e162ff33e077edd63b",
+      "module": "m66696",
+      "kind": "photo",
+      "width": 1117,
+      "height": 508,
+      "variants": [
+        {
+          "width": 800,
+          "height": 364,
+          "file": "Figure_45_05_04-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 508,
+          "file": "Figure_45_05_04-1117.webp"
+        }
+      ],
+      "alt": "Percent population growth, which ranges from zero percent to three plus percent, is shown on a world map. Eastern europe, Northern Asia, Greenland and South Africa are experiencing zero percent population growth. The United States, Canada, the southern part of South America, China, Japan, western Europe and Australia are experiencing zero to one percent population growth. Mexico, the northern part of South America, and parts of Africa, the Middle East and Asia are experiencing one percent population growth. Most of Africa and parts of the Middle East and Asia are experiencing two percent population growth. Some parts of Africa are experiencing three percent population growth.",
+      "caption": "The percent growth rate of population in different countries is shown. Notice that the highest growth is occurring in less economically developed countries in Africa and Asia."
+    },
+    "Figure_45_06_01": {
+      "source": "media/Figure_45_06_01.jpg",
+      "sourceSha256": "c3a0a1a5eb382a934fa7ed7f13304e9f92b1a6ad08f5dcacccfc473e84d1738f",
+      "module": "m66698",
+      "kind": "photo",
+      "width": 800,
+      "height": 411,
+      "variants": [
+        {
+          "width": 800,
+          "height": 411,
+          "file": "Figure_45_06_01-800.webp"
+        }
+      ],
+      "alt": "The graph plots number of animals, either hare or lynx, in thousands versus time in years. The number of hares fluctuates between 10,000 at the low points, and 75,000 to 150,000 at the high points. There are typically fewer lynxes than hares, but the trend in number of lynxes follows the number of hares; meaning that more hares trends to more lynx as well",
+      "caption": "The cycling of lynx and snowshoe hare populations in Northern Ontario is an example of predator-prey dynamics."
+    },
+    "Figure_45_06_02abcd": {
+      "source": "media/Figure_45_06_02abcd.jpg",
+      "sourceSha256": "300203e6fd8f04db56fd2f17f13e859951a8f4fcdf7f555293032424582691de",
+      "module": "m66698",
+      "kind": "photo",
+      "width": 1113,
+      "height": 967,
+      "variants": [
+        {
+          "width": 800,
+          "height": 695,
+          "file": "Figure_45_06_02abcd-800.webp"
+        },
+        {
+          "width": 1113,
+          "height": 967,
+          "file": "Figure_45_06_02abcd-1113.webp"
+        }
+      ],
+      "alt": "Photo a shows the long, sharp thorns of a honey locust tree. Photo b shows a turtle perched on a log, and has its long neck and head extending out from its large shell. Photo c shows the pink, bell-shaped flowers of a foxglove. Photo d shows a millipede curled into a ball.",
+      "caption": "The (a) honey locust tree ( Gleditsia triacanthos ) uses thorns, a mechanical defense, against herbivores, while the (b) Florida red-bellied turtle ( Pseudemys nelsoni) uses its shell as a mechanical defense against predators. (c) Foxglove ( Digitalis sp.) uses a chemical defense: toxins produced by the plant can cause nausea, vomiting, hallucinations, convulsions, or death when consumed. (d) The North American millipede ( Narceus americanus ) uses both mechanical and chemical defenses: when threatened, the millipede curls into a defensive ball and produces a noxious substance that irritates eyes and skin. (credit a: modification of work by Huw Williams; credit b: modification of work by “JamieS93”/Flickr; credit c: modification of work by Philip Jägenstedt; credit d: modification of work by Cory Zanker)"
+    },
+    "Figure_45_06_03-a5a9": {
+      "source": "media/Figure_45_06_03-a5a9.jpg",
+      "sourceSha256": "c735ae559b6e3e215603665f4546482d35cbfde7a28a33bba4ae2cf59b219289",
+      "module": "m66698",
+      "kind": "photo",
+      "width": 825,
+      "height": 290,
+      "variants": [
+        {
+          "width": 800,
+          "height": 281,
+          "file": "Figure_45_06_03-a5a9-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 290,
+          "file": "Figure_45_06_03-a5a9-825.webp"
+        }
+      ],
+      "alt": "Photo a shows a green walking stick insect that resembles the stem on which it sits. Photo b shows a green chameleon that resembles a leaf.",
+      "caption": "(a) The tropical walking stick and (b) the chameleon use body shape and/or coloration to prevent detection by predators. (credit a: modification of work by Linda Tanner; credit b: modification of work by Frank Vassen)"
+    },
+    "Figure_45_06_04ab": {
+      "source": "media/Figure_45_06_04ab.jpg",
+      "sourceSha256": "74a0c4d8e1d3bd5e13c98b27d704aada13e7317dd19bddd06c8037bd314a5823",
+      "module": "m66698",
+      "kind": "photo",
+      "width": 1115,
+      "height": 407,
+      "variants": [
+        {
+          "width": 800,
+          "height": 292,
+          "file": "Figure_45_06_04ab-800.webp"
+        },
+        {
+          "width": 1115,
+          "height": 407,
+          "file": "Figure_45_06_04ab-1115.webp"
+        }
+      ],
+      "alt": "Photo A shows a bright red frog sitting on a leaf. Photo B shows a skunk, whose body is covered in black fur, but has 2 prominent white stripes extending down its back and tail.",
+      "caption": "(a) The strawberry poison dart frog ( Oophaga pumilio ) uses aposematic coloration to warn predators that it is toxic, while the (b) striped skunk ( Mephitis mephitis ) uses aposematic coloration to warn predators of the unpleasant odor it produces. (credit a: modification of work by Jay Iwasaki; credit b: modification of work by Dan Dzurisin)"
+    },
+    "Figure_45_06_05-5e19": {
+      "source": "media/Figure_45_06_05-5e19.jpg",
+      "sourceSha256": "2765b7f5fb84ef42b03d69475d569b25a61a483d1faeb4f48a527f576257aba5",
+      "module": "m66698",
+      "kind": "photo",
+      "width": 825,
+      "height": 299,
+      "variants": [
+        {
+          "width": 800,
+          "height": 290,
+          "file": "Figure_45_06_05-5e19-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 299,
+          "file": "Figure_45_06_05-5e19-825.webp"
+        }
+      ],
+      "alt": "Photos A and B show virtually identical looking insects. Both have smooth black faces and legs, but their body is covered in a white fuzzy looking material.",
+      "caption": "Batesian mimicry occurs when a harmless species mimics the coloration of a harmful species, as is seen with the (a) bumblebee and (b) bee-like robber fly. (credit a, b: modification of work by Cory Zanker)"
+    },
+    "Figure_45_06_06": {
+      "source": "media/Figure_45_06_06.jpg",
+      "sourceSha256": "195ce64769dd995ffd242253e9aaa20eb06cf7a23d74d7af5fc4ccff23fec770",
+      "module": "m66698",
+      "kind": "photo",
+      "width": 544,
+      "height": 546,
+      "variants": [
+        {
+          "width": 544,
+          "height": 546,
+          "file": "Figure_45_06_06-544.webp"
+        }
+      ],
+      "alt": "Photos show four pairs of butterflies that are virtually identical to one another in color and banding pattern.",
+      "caption": "Several unpleasant-tasting Heliconius butterfly species share a similar color pattern with better-tasting varieties, an example of Müllerian mimicry. (credit: Joron M, Papa R, Beltrán M, Chamberlain N, Mavárez J, et al.)"
+    },
+    "Figure_45_06_07abc": {
+      "source": "media/Figure_45_06_07abc.jpg",
+      "sourceSha256": "e3e6f590fbb2190a0c470151a206446818337e889eed66ee6275e58530b7d344",
+      "module": "m66698",
+      "kind": "photo",
+      "width": 1115,
+      "height": 807,
+      "variants": [
+        {
+          "width": 800,
+          "height": 579,
+          "file": "Figure_45_06_07abc-800.webp"
+        },
+        {
+          "width": 1115,
+          "height": 807,
+          "file": "Figure_45_06_07abc-1115.webp"
+        }
+      ],
+      "alt": "Graphs a, b, and c all plot number of cells versus time in days. In Graph (a), P. aurelia is grown alone. In graph (b), P. caudatum is grown alone. In graph (c), both species are grown together. When grown apart, the two species both exhibit logistic growth and grow to a relatively high cell density. When the two species are grown together, P. aurelia shows logistic growth to nearly the same cell density as it exhibited when grown alone, but P. caudatum hardly grows at all, and eventually its population drops to zero.",
+      "caption": "Paramecium aurelia and Paramecium caudatum grow well individually, but when they compete for the same resources, the P. aurelia outcompetes the P. caudatum ."
+    },
+    "Figure_45_06_08": {
+      "source": "media/Figure_45_06_08.jpg",
+      "sourceSha256": "28ee6f5d46406c58c4d5fc51d933fba997d5d19e75ee18589065a8a7edae3c1c",
+      "module": "m66698",
+      "kind": "photo",
+      "width": 544,
+      "height": 540,
+      "variants": [
+        {
+          "width": 544,
+          "height": 540,
+          "file": "Figure_45_06_08-544.webp"
+        }
+      ],
+      "alt": "Photo shows a yellow bird building a nest in a tree.",
+      "caption": "The southern masked-weaver bird is starting to make a nest in a tree in Zambezi Valley, Zambia. This is an example of a commensal relationship, in which one species (the bird) benefits, while the other (the tree) neither benefits nor is harmed. (credit: “Hanay”/Wikimedia Commons)"
+    },
+    "Figure_45_06_09-df2c": {
+      "source": "media/Figure_45_06_09-df2c.jpg",
+      "sourceSha256": "0c6d25bea1318d33d81957412eccdfaeb2e82eb352dcd1657a683a893bbf6a43",
+      "module": "m66698",
+      "kind": "photo",
+      "width": 825,
+      "height": 297,
+      "variants": [
+        {
+          "width": 800,
+          "height": 288,
+          "file": "Figure_45_06_09-df2c-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 297,
+          "file": "Figure_45_06_09-df2c-825.webp"
+        }
+      ],
+      "alt": "Photo (a) shows yellow termites and photo b shows a tree covered with lichen; the tree's bark appears covered in a mossy, fuzzy substance.",
+      "caption": "(a) Termites form a mutualistic relationship with symbiotic protozoa in their guts, which allow both organisms to obtain energy from the cellulose the termite consumes. (b) Lichen is a fungus that has symbiotic photosynthetic algae living inside its cells. (credit a: modification of work by Scott Bauer, USDA; credit b: modification of work by Cory Zanker)"
+    },
+    "Figure_45_06_11": {
+      "source": "media/Figure_45_06_11.jpg",
+      "sourceSha256": "7a26f371f072ac44dfc9a107dad2fb768a7c9209a9f37578e045729f70212f9f",
+      "module": "m66698",
+      "kind": "photo",
+      "width": 544,
+      "height": 362,
+      "variants": [
+        {
+          "width": 544,
+          "height": 362,
+          "file": "Figure_45_06_11-544.webp"
+        }
+      ],
+      "alt": "Photo shows pink brain-like coral and long, finger-like coral growing on a reef. Fish swim among the coral.",
+      "caption": "Coral is the foundation species of coral reef ecosystems. (credit: Jim E. Maragos, USFWS)"
+    },
+    "Figure_45_06_12": {
+      "source": "media/Figure_45_06_12.jpg",
+      "sourceSha256": "86219ea6f5d0ab9d9e2ad5c8df6463384e5d5ac846f8af8e73c7c0404d3dff38",
+      "module": "m66698",
+      "kind": "photo",
+      "width": 544,
+      "height": 524,
+      "variants": [
+        {
+          "width": 544,
+          "height": 524,
+          "file": "Figure_45_06_12-544.webp"
+        }
+      ],
+      "alt": "Map shows the special distribution of mammal species richness in North and South America. The highest number of mammal species, 179-228 per square kilometer, occurs in the Amazon region of South America. Species richness is generally highest in tropical latitudes, and then decreases to the north and south, with very few species in the Arctic regions.",
+      "caption": "The greatest species richness for mammals in North and South America is associated with the equatorial latitudes. (credit: modification of work by NASA, CIESIN, Columbia University)"
+    },
+    "Figure_45_06_13": {
+      "source": "media/Figure_45_06_13.jpg",
+      "sourceSha256": "8f487441d6f9cb54bd3d009e8630d5058c6ed0f4ff27fc8505ed80ab64bab9a4",
+      "module": "m66698",
+      "kind": "photo",
+      "width": 544,
+      "height": 362,
+      "variants": [
+        {
+          "width": 544,
+          "height": 362,
+          "file": "Figure_45_06_13-544.webp"
+        }
+      ],
+      "alt": "Photo shows a reddish-brown sea star.",
+      "caption": "The Pisaster ochraceus sea star is a keystone species. (credit: Jerry Kirkhart)"
+    },
+    "Figure_45_06_14": {
+      "source": "media/Figure_45_06_14.jpg",
+      "sourceSha256": "26050db0135154552fe9edc683179e7030046218881afc9a2d3740a917c66329",
+      "module": "m66698",
+      "kind": "photo",
+      "width": 1064,
+      "height": 637,
+      "variants": [
+        {
+          "width": 800,
+          "height": 479,
+          "file": "Figure_45_06_14-800.webp"
+        },
+        {
+          "width": 1064,
+          "height": 637,
+          "file": "Figure_45_06_14-1064.webp"
+        }
+      ],
+      "alt": "Photo A shows purple loosestrife, a tall, thin purple flower. Photo B shows many tiny zebra mussels attached to a manmade object in a lake. Photo C shows buckthorn, a bushy plant with yellow flowers. Photo D shows garlic mustard, a small plant with white flowers. Photo E shows an emerald ash borer, a bright green insect resembling a cricket. Photo F shows a starling.",
+      "caption": "In the United States, invasive species like (a) purple loosestrife ( Lythrum salicaria ) and the (b) zebra mussel ( Dreissena polymorpha ) threaten certain aquatic ecosystems. Some forests are threatened by the spread of (c) common buckthorn ( Rhamnus cathartica ), (d) garlic mustard ( Alliaria petiolata ), and (e) the emerald ash borer ( Agrilus planipennis ). The (f) European starling ( Sturnus vulgaris ) may compete with native bird species for nest holes. (credit a: modification of work by Liz West; credit b: modification of work by M. McCormick, NOAA; credit c: modification of work by E. Dronkert; credit d: modification of work by Dan Davison; credit e: modification of work by USDA; credit f: modification of work by Don DeBold)"
+    },
+    "Figure_45_06_15": {
+      "source": "media/Figure_45_06_15.jpg",
+      "sourceSha256": "7223943070a497334c1f5a6a26a9791054b5eea9c93f577c7f6498639a77bca6",
+      "module": "m66698",
+      "kind": "photo",
+      "width": 544,
+      "height": 398,
+      "variants": [
+        {
+          "width": 544,
+          "height": 398,
+          "file": "Figure_45_06_15-544.webp"
+        }
+      ],
+      "alt": "Photo shows a succulent plant growing in bare earth.",
+      "caption": "During primary succession in lava on Maui, Hawaii, succulent plants are the pioneer species. (credit: Forest and Kim Starr)"
+    },
+    "Figure_45_06_16": {
+      "source": "media/Figure_45_06_16.jpg",
+      "sourceSha256": "7980fa7fe27650cc3f6c6857197147ae4d0da68d47d87fe63684b7caea3fd757",
+      "module": "m66698",
+      "kind": "photo",
+      "width": 750,
+      "height": 271,
+      "variants": [
+        {
+          "width": 750,
+          "height": 271,
+          "file": "Figure_45_06_16-750.webp"
+        }
+      ],
+      "alt": "The three illustrations show secondary succession of an oak and hickory forest. The first illustration shows a plot of land covered with pioneer species, including grasses and perennials. The second illustration shows the same plot of land later covered with intermediate species, including shrubs, pines, oak, and hickory. The third illustration shows the plot of land covered with a climax community of mature oak and hickory. This community remains stable until the next disturbance.",
+      "caption": "Secondary succession is shown in an oak and hickory forest after a forest fire."
+    },
+    "Figure_45_07_01": {
+      "source": "media/Figure_45_07_01.jpg",
+      "sourceSha256": "8d65cabfd9a1052d832590c9c16b250b538b56f9c4043f0a598ec3d0a622ee5e",
+      "module": "m66699",
+      "kind": "photo",
+      "width": 544,
+      "height": 448,
+      "variants": [
+        {
+          "width": 544,
+          "height": 448,
+          "file": "Figure_45_07_01-544.webp"
+        }
+      ],
+      "alt": "Photo shows a white fish whose underbelly is reddish below its head. Below the fish is a diamond-shaped object that resembles a fishing lure; it is white on the top and red on the bottom, with an eye at the front.",
+      "caption": "Male three-spined stickleback fish exhibit a fixed action pattern. During mating season, the males, which develop a bright red belly, react strongly to red-bottomed objects that in no way resemble fish."
+    },
+    "Figure_45_07_02": {
+      "source": "media/Figure_45_07_02.jpg",
+      "sourceSha256": "0b80369ee155ab33db7cf65acf87cf96abd9213babebbc261d90446e245946c0",
+      "module": "m66699",
+      "kind": "photo",
+      "width": 800,
+      "height": 534,
+      "variants": [
+        {
+          "width": 800,
+          "height": 534,
+          "file": "Figure_45_07_02-800.webp"
+        }
+      ],
+      "alt": "Photo shows a heard of wildebeests crossing a river.",
+      "caption": "Wildebeests migrate in a clockwise fashion over 1800 miles each year in search of rain-ripened grass. (credit: Eric Inafuku)"
+    },
+    "Figure_45_07_03": {
+      "source": "media/Figure_45_07_03.jpg",
+      "sourceSha256": "9489cd721e46e16acaee6dd1a623432d2060b4086352b2fc9c5e74ff6aaee57d",
+      "module": "m66699",
+      "kind": "photo",
+      "width": 800,
+      "height": 565,
+      "variants": [
+        {
+          "width": 800,
+          "height": 565,
+          "file": "Figure_45_07_03-800.webp"
+        }
+      ],
+      "alt": "Photo shows long-legged storks standing in water. These birds have long, thick beaks that are pointed at the tips. One has its head down, with its beak open and searching in the water.",
+      "caption": "The painted stork uses its long beak to forage. (credit: J.M. Garg)"
+    },
+    "Figure_45_07_04": {
+      "source": "media/Figure_45_07_04.jpg",
+      "sourceSha256": "d868cd04ec2221d5c4d8795d17ff38f8457fc424dec602368eb77dcc26b55953",
+      "module": "m66699",
+      "kind": "photo",
+      "width": 544,
+      "height": 363,
+      "variants": [
+        {
+          "width": 544,
+          "height": 363,
+          "file": "Figure_45_07_04-544.webp"
+        }
+      ],
+      "alt": "Photo shows a stork sitting on a nest, flapping its wings.",
+      "caption": "This stork’s courtship display is designed to attract potential mates. (credit: Linda “jinterwas”/Flickr)"
+    },
+    "Figure_45_07_05": {
+      "source": "media/Figure_45_07_05.jpg",
+      "sourceSha256": "5e5b9361ba65b6be63eb43c59ca3ed7116a7a6b04232b675c4ff02ceb9fb738f",
+      "module": "m66699",
+      "kind": "photo",
+      "width": 825,
+      "height": 297,
+      "variants": [
+        {
+          "width": 800,
+          "height": 288,
+          "file": "Figure_45_07_05-800.webp"
+        },
+        {
+          "width": 825,
+          "height": 297,
+          "file": "Figure_45_07_05-825.webp"
+        }
+      ],
+      "alt": "Photo (a) shows a yellow sea horse; (b) shows a pipefish, which is green and tubular with a long snout.",
+      "caption": "Polyandrous mating, in which one female mates with many males, occurs in the (a) seahorse and the (b) pipefish. (credit a: modification of work by Brian Gratwicke; credit b: modification of work by Stephen Childs)"
+    },
+    "Figure_45_07_06": {
+      "source": "media/Figure_45_07_06.jpg",
+      "sourceSha256": "7414af0167810d47582ff1ceb705b8359ca12600a5678e9be7e8c209b07aa33d",
+      "module": "m66699",
+      "kind": "photo",
+      "width": 544,
+      "height": 362,
+      "variants": [
+        {
+          "width": 544,
+          "height": 362,
+          "file": "Figure_45_07_06-544.webp"
+        }
+      ],
+      "alt": "Photo shows a mother duck walking across a field of grass. She is trailed by 7 small ducklings.",
+      "caption": "The attachment of ducklings to their mother is an example of imprinting. (credit: modification of work by Mark Harkin)"
+    },
+    "Figure_45_07_07": {
+      "source": "media/Figure_45_07_07.jpg",
+      "sourceSha256": "e536193ebb2375972cac7401e6fd295a349a2d09dad187f0518b4b75a881f547",
+      "module": "m66699",
+      "kind": "photo",
+      "width": 1117,
+      "height": 332,
+      "variants": [
+        {
+          "width": 800,
+          "height": 237,
+          "file": "Figure_45_07_07-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 332,
+          "file": "Figure_45_07_07-1117.webp"
+        }
+      ],
+      "alt": "In the unconditioned response, a dog salivates in response to seeing food. The dog is then conditioned by the ringing of a bell every time it sees food. After conditioning, the dog salivates in response to the bell, even if no food is present. This is called a conditioned response.",
+      "caption": "In the classic Pavlovian response, the dog becomes conditioned to associate the ringing of the bell with food."
+    },
+    "Figure_45_07_08": {
+      "source": "media/Figure_45_07_08.jpg",
+      "sourceSha256": "bc28572b83b80c40f3b8a564bb63ba9b8db208054f80d2b10ccaf2114e5544ce",
+      "module": "m66699",
+      "kind": "photo",
+      "width": 544,
+      "height": 363,
+      "variants": [
+        {
+          "width": 544,
+          "height": 363,
+          "file": "Figure_45_07_08-544.webp"
+        }
+      ],
+      "alt": "Photo shows dolphins lying on the edge of their tank, being fed fish by their trainers.",
+      "caption": "The training of dolphins by rewarding them with food is an example of positive reinforcement operant conditioning. (credit: Roland Tanglao)"
+    },
+    "Figure_45_07_09": {
+      "source": "media/Figure_45_07_09.jpg",
+      "sourceSha256": "4777c2816f6bb23ec76272c9c5bcb8f4c1f1c3e1db186e1c5b0b4fbc13e13c8c",
+      "module": "m66699",
+      "kind": "photo",
+      "width": 800,
+      "height": 589,
+      "variants": [
+        {
+          "width": 800,
+          "height": 589,
+          "file": "Figure_45_07_09-800.webp"
+        }
+      ],
+      "alt": "A diagram shows a rat maze that has several turns and dead ends. Next to this maze is a graph showing the average error of the rats navigating the maze plotted versus the day of the experiment. Rats that are rewarded at the end of each run learn the maze quickly, and the number of errors they make in navigating the maze rapidly drops from six on day one to one on day eleven. Rats that are not rewarded on the first two days but are rewarded from day three learn the maze slowly at first, but quickly after the reward is present. Rats that are not rewarded on the first six days but are rewarded starting at day seven gradually reduce the number of errors over the first six days, but rapidly reduce their errors after a reward is present.",
+      "caption": "Group I (the green solid line) found food at the end of each trial, group II (the blue dashed line) found food starting on day seven, and group III (the red dotted line) found food starting at day three. Notice that rats given food earlier learned faster and eventually caught up to the control group. The orange dots on the group II and III lines show the days when food rewards were added to the mazes."
+    },
+    "Figure_46_00_00": {
+      "source": "media/Figure_46_00_00.jpg",
+      "sourceSha256": "446010598b050f18d898b7c4b81cb73162f9672653120085d2a82bf343d8b59d",
+      "module": "m66700",
+      "kind": "photo",
+      "width": 1117,
+      "height": 450,
+      "variants": [
+        {
+          "width": 800,
+          "height": 322,
+          "file": "Figure_46_00_00-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 450,
+          "file": "Figure_46_00_00-1117.webp"
+        }
+      ],
+      "alt": "Left photo shows a long, straight highway in the middle of a desert. Right photo shows a mouse.",
+      "caption": "In the southwestern United States, rainy weather causes an increase in production of pinyon nuts, causing the deer mouse population to explode. Deer mice may carry a virus called Sin Nombre (a hantavirus) that causes respiratory disease in humans and has a high fatality rate. In 1992–1993, wet El Niño weather caused a Sin Nombre epidemic. Navajo healers, who were aware of the link between this disease and weather, predicted the outbreak. (credit \"highway\": modification of work by Phillip Capper; credit \"mouse\": modification of work by USFWS)"
+    },
+    "Figure_46_01_01ab": {
+      "source": "media/Figure_46_01_01ab.jpg",
+      "sourceSha256": "ecf2c59d39ec21113f9a3895870b1ea4a6c01b8c694b9215aee854920c67c183",
+      "module": "m66701",
+      "kind": "photo",
+      "width": 1117,
+      "height": 515,
+      "variants": [
+        {
+          "width": 800,
+          "height": 369,
+          "file": "Figure_46_01_01ab-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 515,
+          "file": "Figure_46_01_01ab-1117.webp"
+        }
+      ],
+      "alt": "Left photo shows a rocky tide pool with seaweed and snails. Right photo shows the Amazon Rainforest landscape, with seemingly every inch of land covered by plants of some kind.",
+      "caption": "A (a) tidal pool ecosystem in Matinicus Island in Maine is a small ecosystem, while the (b) Amazon Rainforest in Brazil is a large ecosystem. (credit a: modification of work by “takomabibelot”/Flickr; credit b: modification of work by Ivan Mlinaric)"
+    },
+    "Figure_46_01_02ab": {
+      "source": "media/Figure_46_01_02ab.jpg",
+      "sourceSha256": "8c30bd737a99b507d4ea46b9fe95403bc541c61878ca5b56d1bfb9faf5be22e2",
+      "module": "m66701",
+      "kind": "photo",
+      "width": 1113,
+      "height": 447,
+      "variants": [
+        {
+          "width": 800,
+          "height": 321,
+          "file": "Figure_46_01_02ab-800.webp"
+        },
+        {
+          "width": 1113,
+          "height": 447,
+          "file": "Figure_46_01_02ab-1113.webp"
+        }
+      ],
+      "alt": "Photo (a) shows saguaro cacti that look like telephone poles with arms extended from them. Photo (b) shows a barren plain of red soil littered with rocks.",
+      "caption": "Desert ecosystems, like all ecosystems, can vary greatly. The desert in (a) Saguaro National Park, Arizona, has abundant plant life, while the rocky desert of (b) Boa Vista island, Cape Verde, Africa, is devoid of plant life. (credit a: modification of work by Jay Galvin; credit b: modification of work by Ingo Wölbern)"
+    },
+    "Figure_46_01_03": {
+      "source": "media/Figure_46_01_03.jpg",
+      "sourceSha256": "4db930a3db0a943d022155faf72fea5e168b5b4dce896abf1dc98610ccd5a5e7",
+      "module": "m66701",
+      "kind": "photo",
+      "width": 544,
+      "height": 1066,
+      "variants": [
+        {
+          "width": 544,
+          "height": 1066,
+          "file": "Figure_46_01_03-544.webp"
+        }
+      ],
+      "alt": "In this illustration the bottom trophic level is the primary producer, which is green algae. The primary consumers are mollusks, or snails. The secondary consumers are small fish called slimy sculpin. The tertiary and apex consumer is Chinook salmon.",
+      "caption": "These are the trophic levels of a food chain in Lake Ontario at the United States-Canada border. Energy and nutrients flow from photosynthetic green algae at the bottom to the top of the food chain: the Chinook salmon."
+    },
+    "Figure_46_01_04": {
+      "source": "media/Figure_46_01_04.jpg",
+      "sourceSha256": "1a499da4837f2b0f45a6fdeaab6a50bb211f0ba1e50abe44ed3ed49cdc18c2ee",
+      "module": "m66701",
+      "kind": "photo",
+      "width": 800,
+      "height": 424,
+      "variants": [
+        {
+          "width": 800,
+          "height": 424,
+          "file": "Figure_46_01_04-800.webp"
+        }
+      ],
+      "alt": "Graph shows energy content in different trophic levels. The energy content of primary producers is over 20,000 kilocalories per meter squared per year. The energy content of primary consumers is much smaller, about 3,400 kilocalories per meter squared per year. The energy content of secondary consumers is 383 kilocalories per meter squared per year, and the energy content of tertiary consumers is only 21 kilocalories per meter squared per year.",
+      "caption": "The relative energy in trophic levels in a Silver Springs, Florida, ecosystem is shown. Each trophic level has less energy available and supports fewer organisms at the next level."
+    },
+    "Figure_46_01_06": {
+      "source": "media/Figure_46_01_06.jpg",
+      "sourceSha256": "3bde6f1e22fd10f95594ea0df43fbfb998a5e0807ad3ab3cae72b1a4a33b59a0",
+      "module": "m66701",
+      "kind": "photo",
+      "width": 469,
+      "height": 310,
+      "variants": [
+        {
+          "width": 469,
+          "height": 310,
+          "file": "Figure_46_01_06-469.webp"
+        }
+      ],
+      "alt": "Photo shows two small fish swimming above a rocky bottom.",
+      "caption": "The three-spined stickleback evolved from a saltwater fish to freshwater fish. (credit: Barrett Paul, USFWS)"
+    },
+    "Figure_46_01_07-b018": {
+      "source": "media/Figure_46_01_07-b018.png",
+      "sourceSha256": "68c97f941ece094a1e095968beb377f35d87bb266c296473bc5c6e9ac00ec7f6",
+      "module": "m66701",
+      "kind": "diagram",
+      "width": 469,
+      "height": 951,
+      "variants": [
+        {
+          "width": 469,
+          "height": 951,
+          "file": "Figure_46_01_07-b018-469.webp"
+        }
+      ],
+      "alt": "Flow chart shows that the ecosystem absorbs 1,700,00 calories per meter squared per year of sunlight. Primary producers have a gross productivity of 20,810 calories per meter squared per year. 13,187 calories per meter squared per year is lost to respiration and heat, so the net productivity of primary producers is 7,623 calories per meter squared per year. 4,250 calories per meter squared per year is passed on to decomposers, and the remaining 3,373 calories per meter squared per year is passed on to primary consumers. Thus, the gross productivity of primary consumers is 3,373 calories per meter squared per year. 2,270 calories per meter squared per year is lost to heat and respiration, resulting in a net productivity for primary consumers of 1,103 calories per meter squared per year. 720 calories per meter squared per year is lost to decomposers, and 383 calories per meter squared per year becomes the gross productivity of secondary consumers. 272 calories per meter squared per year is lost to heat and respiration, so the net productivity for secondary consumers is 111 calories per meter squared per year. 90 calories per meter squared per year is lost to decomposers, and the remaining 21 calories per meter squared per year becomes the gross productivity of tertiary consumers. Sixteen calories per meter squared per year is lost to respiration and heat, so the net productivity of tertiary consumers is 5 calories per meter squared per year. All this energy is lost to decomposers. In total, decomposers use 5,065 calories per meter squared per year of energy, and 20,810 calories per meter squared per year is lost to respiration and heat.",
+      "caption": "This conceptual model shows the flow of energy through a spring ecosystem in Silver Springs, Florida. Notice that the energy decreases with each increase in trophic level."
+    },
+    "Figure_46_02_01": {
+      "source": "media/Figure_46_02_01.jpg",
+      "sourceSha256": "176450730a44e1563bd356f7933d906aafa5f8a57633a1173806fc9dd859af01",
+      "module": "m66702",
+      "kind": "photo",
+      "width": 800,
+      "height": 600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_46_02_01-800.webp"
+        }
+      ],
+      "alt": "Photo shows shrimp, lobster, and white crabs crawling on a rocky ocean floor littered with mussels.",
+      "caption": "Swimming shrimp, a few squat lobsters, and hundreds of vent mussels are seen at a hydrothermal vent at the bottom of the ocean. As no sunlight penetrates to this depth, the ecosystem is supported by chemoautotrophic bacteria and organic material that sinks from the ocean’s surface. This picture was taken in 2006 at the submerged NW Eifuku volcano off the coast of Japan by the National Oceanic and Atmospheric Administration (NOAA). The summit of this highly active volcano lies 1535 m below the surface."
+    },
+    "Figure_46_02_02": {
+      "source": "media/Figure_46_02_02.png",
+      "sourceSha256": "e342b56c76d9ca55bcbb30c4c8d1c043773b5688a61ffb502dda7bd403defb7c",
+      "module": "m66702",
+      "kind": "diagram",
+      "width": 1043,
+      "height": 783,
+      "variants": [
+        {
+          "width": 800,
+          "height": 600,
+          "file": "Figure_46_02_02-800.webp"
+        },
+        {
+          "width": 1043,
+          "height": 783,
+          "file": "Figure_46_02_02-1043.webp"
+        }
+      ],
+      "alt": "Section A, biomass, indicated by dry mass g slash m squared. On the left is a pyramid diagram of dry biomass in grams per meter squared in Silver Springs, Florida. The biomass of plants is 809. The biomass of primary consumers, including herbivorous insects and snails is 37. The biomass of secondary consumer fishes is 11, and the biomass of tertiary consumer fishes is 5. Primary, secondary and tertiary decomposers have a combined biomass of 5. On the right is a pyramid diagram of dry biomass in grams per meter squared in the English Channel. The biomass is 4 phytoplankton and 21 zooplankton. Section B, number of individuals per 0.1 hectare. On the left is a pyramid diagram of the number of individuals per 0.1 hectare in a summer grassland. There are 1,500,000 grass plants, 200,000 herbivorous insects, 90,000 predatory insects, and 1 bird On the right is a pyramid diagram of organisms per 0.1 hectare in a temperate forest. There are 200 trees, 150,000 herbivorous insects, 120,000 predatory insects, and 5 birds. Section C, energy, k cal slash m squared slash year. In Silver Springs Florida, the energy of plants is 20,810. The energy of primary consumers, including insects and snails, is 3,368. The energy of secondary consumer fishes is 383, and the energy of tertiary consumer fishes is 21. The energy of decomposers, including fungi and bacteria, is 5,060.",
+      "caption": "Ecological pyramids depict the (a) biomass, (b) number of organisms, and (c) energy in each trophic level."
+    },
+    "Figure_46_02_03": {
+      "source": "media/Figure_46_02_03.jpg",
+      "sourceSha256": "bec17554ce89efa521a6ecff348028bdef0892308acd1f2a09aa2005560a5253",
+      "module": "m66702",
+      "kind": "photo",
+      "width": 544,
+      "height": 515,
+      "variants": [
+        {
+          "width": 544,
+          "height": 515,
+          "file": "Figure_46_02_03-544.webp"
+        }
+      ],
+      "alt": "The illustration is a graph that plots total P C Bs in micrograms per gram of dry weight versus nitrogen 15 enrichment. It shows that P C Bs become increasingly concentrated at higher trophic levels. The slope of the graph becomes increasingly steep from phytoplankton, the primary consumer, to walleye, the tertiary consumer.",
+      "caption": "This chart shows the PCB concentrations found at the various trophic levels in the Saginaw Bay ecosystem of Lake Huron. Numbers on the x-axis reflect enrichment with heavy isotopes of nitrogen ( 15 N), which is a marker for increasing trophic level. Notice that the fish in the higher trophic levels accumulate more PCBs than those in lower trophic levels. (credit: Patricia Van Hoof, NOAA, GLERL)"
+    },
+    "Figure_46_03_01": {
+      "source": "media/Figure_46_03_01.jpg",
+      "sourceSha256": "6fbe21e5197ae2d03018325c760293b9d07ffb3244ded6d3660c5f391c12062c",
+      "module": "m66705",
+      "kind": "photo",
+      "width": 800,
+      "height": 350,
+      "variants": [
+        {
+          "width": 800,
+          "height": 350,
+          "file": "Figure_46_03_01-800.webp"
+        }
+      ],
+      "alt": "The pie chart shows that 97.5 percent of water on Earth, or 1,365,000,000 k m cubed, is salt water. The remaining 2.5 percent, or 35,000,000 kilometers cubed, is fresh water. Of the fresh water, 68.9 percent is frozen in glaciers or permanent snow cover. 30.8 percent is groundwater, which is soil moisture, swamp water, and permafrost. The remaining 0.3 percent is in lakes and rivers.",
+      "caption": "Only 2.5 percent of water on Earth is fresh water, and less than 1 percent of fresh water is easily accessible to living things."
+    },
+    "Figure_46_03_02": {
+      "source": "media/Figure_46_03_02.jpg",
+      "sourceSha256": "49caadcf38b3dfea2a70e0fbde41a801117c9e6013925742b7b04826b2b76b84",
+      "module": "m66705",
+      "kind": "photo",
+      "width": 544,
+      "height": 529,
+      "variants": [
+        {
+          "width": 544,
+          "height": 529,
+          "file": "Figure_46_03_02-544.webp"
+        }
+      ],
+      "alt": "Bars on the graph show the average residence time for water molecules in various reservoirs. The residence time for glaciers and permafrost is 1,000 to 10,000 years. The residence time for groundwater is 2 weeks to 10,000 years. The residence time for oceans and seas is 4,000 years. The residence time for lakes and reservoirs is 10 years. The residence time for swamps is 1 to ten years. The residence time for soil moisture is 2 weeks to 1 year. The residence time for rivers is 2 weeks. The atmospheric residence time is 1.5 weeks. The biospheric residence time, or residence time in living organisms, is 1 week.",
+      "caption": "This graph shows the average residence time for water molecules in the Earth’s water reservoirs."
+    },
+    "Figure_46_03_05": {
+      "source": "media/Figure_46_03_05.jpg",
+      "sourceSha256": "59d38b5b87cc8a654812d66463a656cea56aef1aedabdb1e7261b8746b2b747b",
+      "module": "m66705",
+      "kind": "photo",
+      "width": 498,
+      "height": 175,
+      "variants": [
+        {
+          "width": 498,
+          "height": 175,
+          "file": "Figure_46_03_05-498.webp"
+        }
+      ],
+      "alt": "In step 1, atmospheric carbon dioxide dissolves in water. In step 2 dissolved carbon dioxide, which is written as upper case C upper case O subscript 2 baseline, reacts with water, written as upper case H subscript 2 baseline upper case O, to form carbonic acid which is upper H subscript 2 baseline upper C upper O subscript 3 baseline. In step 3, carbonic acid dissociates into a proton, shown as upper case H plus sign, and a bicarbonate ion, shown as upper H upper C upper O subscript 3 negative. In step 4 the bicarbonate ion dissociates into another proton and a carbonate ion, shown as upper C upper O subscript 3 baseline superscript two negative.",
+      "caption": "Carbon dioxide reacts with water to form bicarbonate and carbonate ions."
+    },
+    "Figure_46_03_09ab": {
+      "source": "media/Figure_46_03_09ab.png",
+      "sourceSha256": "b71ee575bd8502aa6a95c1412fb97c8069bf3042eea1e8837de0ef5a1668a7bf",
+      "module": "m66705",
+      "kind": "diagram",
+      "width": 544,
+      "height": 506,
+      "variants": [
+        {
+          "width": 544,
+          "height": 506,
+          "file": "Figure_46_03_09ab-544.webp"
+        }
+      ],
+      "alt": "Satellite image shows the Chesapeake Bay. Inset is a photo of a man holding a clump of oysters.",
+      "caption": "This (a) satellite image shows the Chesapeake Bay, an ecosystem affected by phosphate and nitrate runoff. A (b) member of the Army Corps of Engineers holds a clump of oysters being used as a part of the oyster restoration effort in the bay. (credit a: modification of work by NASA/MODIS; credit b: modification of work by U.S. Army)"
+    },
+    "Figure_46_03_11": {
+      "source": "media/Figure_46_03_11.jpg",
+      "sourceSha256": "134c6e44f69686440d5635ae70ffabee2663a6ccdb0bd4d7e2c376a54a9c4a5e",
+      "module": "m66705",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_46_03_11-544.webp"
+        }
+      ],
+      "alt": "This photo shows a white pyramid-shaped mound with gray steam escaping from it.",
+      "caption": "At this sulfur vent in Lassen Volcanic National Park in northeastern California, the yellowish sulfur deposits are visible near the mouth of the vent."
+    },
+    "Figure_47_00_01": {
+      "source": "media/Figure_47_00_01.jpg",
+      "sourceSha256": "92b6a051def09d3384f79d707eb8372915fce0d2296bc094725e1894c201953b",
+      "module": "m66706",
+      "kind": "photo",
+      "width": 1118,
+      "height": 542,
+      "variants": [
+        {
+          "width": 800,
+          "height": 388,
+          "file": "Figure_47_00_01-800.webp"
+        },
+        {
+          "width": 1118,
+          "height": 542,
+          "file": "Figure_47_00_01-1118.webp"
+        }
+      ],
+      "alt": "Satellite image shows a large blue lake surrounded by green land.",
+      "caption": "Lake Victoria in Africa, shown in this satellite image, was the site of one of the most extraordinary evolutionary findings on the planet, as well as a casualty of devastating biodiversity loss. (credit: modification of work by Rishabh Tatiraju, using NASA World Wind software)"
+    },
+    "Figure_47_01_01abf": {
+      "source": "media/Figure_47_01_01abf.jpg",
+      "sourceSha256": "db9510f40b10125546941a253c05200cb5ead70c619ca258e5cd1ba6662e21d3",
+      "module": "m66707",
+      "kind": "photo",
+      "width": 544,
+      "height": 836,
+      "variants": [
+        {
+          "width": 544,
+          "height": 836,
+          "file": "Figure_47_01_01abf-544.webp"
+        }
+      ],
+      "alt": "Photo a shows a coral reef. Some of the coral is lobe-shaped, with bumpy pink protrusions, and the other coral has long, slender beige branches. Fish swim among the coral. Photo b shows a rolling prairie, with nothing but tall brown grass as far as the eye can see.",
+      "caption": "The variety of ecosystems on Earth—from (a) coral reef to (b) prairie—enables a great diversity of species to exist. (credit a: modification of work by Jim Maragos, USFWS; credit b: modification of work by Jim Minnerath, USFWS)"
+    },
+    "Figure_47_01_02": {
+      "source": "media/Figure_47_01_02.jpg",
+      "sourceSha256": "48d7ba428c3d3bd764108d6835656e7f86c06e350a8d215ae83c525fb969d4ee",
+      "module": "m66707",
+      "kind": "photo",
+      "width": 800,
+      "height": 463,
+      "variants": [
+        {
+          "width": 800,
+          "height": 463,
+          "file": "Figure_47_01_02-800.webp"
+        }
+      ],
+      "alt": "The number of amphibian species in different areas is specified on a world map. The greatest number of species, 61-144, are found in the Amazon region of South America and in parts of Africa. Between 21 and 60 species are found in other parts of South America and Africa, and in the eastern United States and Southeast Asia. Other parts of the world have between 1 and 20 amphibian species, with the fewest species occurring at northern and southern latitudes. Generally, more amphibian species are found in warmer, wetter climates.",
+      "caption": "This map illustrates the number of amphibian species across the globe and shows the trend toward higher biodiversity at lower latitudes. A similar pattern is observed for most taxonomic groups. The white areas indicate a lack of data in this particular study."
+    },
+    "Figure_47_01_03": {
+      "source": "media/Figure_47_01_03.jpg",
+      "sourceSha256": "186845305ebe2488aa1f7d1a0e001411c82c5c13baa9cb99f8038cff5cd08d09",
+      "module": "m66707",
+      "kind": "photo",
+      "width": 800,
+      "height": 460,
+      "variants": [
+        {
+          "width": 800,
+          "height": 460,
+          "file": "Figure_47_01_03-800.webp"
+        }
+      ],
+      "alt": "Biodiversity hotspots are indicated on a world map. Most hotspots occur in coastal regions and on islands. Some of the hotspots include New Zealand, Madagascar, Thailand, Vietnam, the west coast of Central America, and southwest Austrailia. Some other areas indicated are the California cost, labeled as the California floristic province, the Mediterranean Basin, and the Carribean islands.",
+      "caption": "Conservation International has identified 34 biodiversity hotspots, which cover only 2.3 percent of the Earth’s surface but have endemic to them 42 percent of the terrestrial vertebrate species and 50 percent of the world’s plants."
+    },
+    "Figure_47_01_05": {
+      "source": "media/Figure_47_01_05.png",
+      "sourceSha256": "b1b5ef9043324253bd409c686cdeaea95d1412c82a46366509bbc620db002e4e",
+      "module": "m66707",
+      "kind": "diagram",
+      "width": 469,
+      "height": 314,
+      "variants": [
+        {
+          "width": 469,
+          "height": 314,
+          "file": "Figure_47_01_05-469.webp"
+        }
+      ],
+      "alt": "Photo shows sedimentary rock with a distinct white band in the middle representing the K dash P g boundary. The rock below this layer, which has fine bands of dark and light gray, is distinct in appearance from the smoother, redder rock above.",
+      "caption": "In 1980, Luis and Walter Alvarez, Frank Asaro, and Helen Michels discovered, across the world, a spike in the concentration of iridium within the sedimentary layer at the K–Pg boundary. These researchers hypothesized that this iridium spike was caused by an asteroid impact that resulted in the K–Pg mass extinction. In the photo, the iridium layer is the light band. (credit: USGS)"
+    },
+    "Figure_47_01_06": {
+      "source": "media/Figure_47_01_06.jpg",
+      "sourceSha256": "ea22dfcaaf8cfb3b42596be2740f5481da195451c03bb54a9cf05db2580987b0",
+      "module": "m66707",
+      "kind": "photo",
+      "width": 544,
+      "height": 422,
+      "variants": [
+        {
+          "width": 544,
+          "height": 422,
+          "file": "Figure_47_01_06-544.webp"
+        }
+      ],
+      "alt": "A graph plots the number of species present versus area in meters squared. The number of species present increases as a power function, such that the slope of the curve increases sharply at first, then more gradually as area increases.",
+      "caption": "Studies have shown that the number of species present increases with the size of the habitat. (credit: modification of work by Adam B. Smith)"
+    },
+    "Figure_47_02_01": {
+      "source": "media/Figure_47_02_01.jpg",
+      "sourceSha256": "403cc4af066774a8eb175b873cdd9ec79af8d78a23c088624d403c14257a1b64",
+      "module": "m66708",
+      "kind": "photo",
+      "width": 544,
+      "height": 408,
+      "variants": [
+        {
+          "width": 544,
+          "height": 408,
+          "file": "Figure_47_02_01-544.webp"
+        }
+      ],
+      "alt": "Photo shows white and pink periwinkle flowers. Each flower has five triangular petals, with the narrow end of the petal meeting at the flowers center. Pairs of waxy oval leaves grow perpendicular to one another on a separate stem.",
+      "caption": "Catharanthus roseus , the Madagascar periwinkle, has various medicinal properties. Among other uses, it is a source of vincristine, a drug used in the treatment of lymphomas. (credit: Forest and Kim Starr)"
+    },
+    "Figure_47_02_02": {
+      "source": "media/Figure_47_02_02.png",
+      "sourceSha256": "1fa2f95fbc4ed02dd021fb004fbb50f9bff8307188524e43cf8dde1d5aa01282",
+      "module": "m66708",
+      "kind": "diagram",
+      "width": 469,
+      "height": 358,
+      "variants": [
+        {
+          "width": 469,
+          "height": 358,
+          "file": "Figure_47_02_02-469.webp"
+        }
+      ],
+      "alt": "The photo shows a tall structure with a bunker-like door that disappears into a snowbank.",
+      "caption": "The Svalbard Global Seed Vault is a storage facility for seeds of Earth’s diverse crops. (credit: Mari Tefre, Svalbard Global Seed Vault)"
+    },
+    "Figure_47_04_01": {
+      "source": "media/Figure_47_04_01.png",
+      "sourceSha256": "ac5f2cf5e39d5a0466ceaca35f0538bbc890da02881fe2af5f67041124ea2677",
+      "module": "m66710",
+      "kind": "diagram",
+      "width": 469,
+      "height": 425,
+      "variants": [
+        {
+          "width": 469,
+          "height": 425,
+          "file": "Figure_47_04_01-469.webp"
+        }
+      ],
+      "alt": "Bar graph shows the percentage of animal species, by group, that are critically endangered, endangered, or vulnerable. Approximately 20 percent of mammal species are on the I U C N Red List. Of these, about 10 percent are vulnerable, 7 percent are endangered, and 4 percent are critically endangered. Approximately 12 percent of bird species are on the Red List. Of these, about 6 percent are vulnerable, 4 percent are endangered, and 2 percent are critically endangered. Approximately 5 percent of reptile species are on the Red List. Of these, about 3 percent are vulnerable, 2 percent are endangered, and 1 percent are critically endangered. Approximately 29 percent of amphibian species are on the Red List. Of these, about 10 percent are vulnerable, 12 percent are endangered, and 7 percent are critically endangered. Approximately 4 percent of fish species are on the Red List. Of these, about 2 percent are vulnerable, 1 percent are endangered, and 1 percent are critically endangered. Less than 1 percent of insect species fall on the Red List. Approximately 1.5 percent of mollusk species are on the Red List. Of these, about 1 percent are vulnerable, and 0.25 percent each are endangered or critically endangered. Approximately 3 percent of plant species are on the Red List. Of these, about 2 percent are vulnerable, .5 percent each are endangered or critically endangered.",
+      "caption": "This chart shows the percentage of various animal species, by group, on the IUCN Red List as of 2007."
+    },
+    "Figure_47_04_02abcd": {
+      "source": "media/Figure_47_04_02abcd.jpg",
+      "sourceSha256": "ff0eb1541638d465d580ab0a5ae01719555b81281dbb2f77f916ed5c7a377c37",
+      "module": "m66710",
+      "kind": "photo",
+      "width": 800,
+      "height": 597,
+      "variants": [
+        {
+          "width": 800,
+          "height": 597,
+          "file": "Figure_47_04_02abcd-800.webp"
+        }
+      ],
+      "alt": "Photo A shows a pack of wolves walking on snow. Photo B shows an elk. Photo C shows a river running through a meadow with a few copses of trees, some living and some dead. Photo D shows a beaver.",
+      "caption": "(a) The Gibbon wolf pack in Yellowstone National Park, March 1, 2007, represents a keystone species. The reintroduction of wolves into Yellowstone National Park in 1995 led to a change in the grazing behavior of (b) elk. To avoid predation, the elk no longer grazed exposed stream and riverbeds, such as (c) the Lamar Riverbed in Yellowstone. This allowed willow and cottonwood seedlings to grow and recolonized large areas. The seedlings decreased erosion and provided shading to the creek, which improved fish habitat. A new colony of (d) beaver may also have benefited from the habitat change. (credit a: modification of work by Doug Smith, NPS; credit c: modification of work by Jim Peaco, NPS; credit d: modification of work by “Shiny Things”/Flickr)"
+    },
     "Figure_B06_03_05abcd_new": {
       "source": "media/Figure_B06_03_05abcd_new.png",
       "sourceSha256": "b533ddfb73b1cfba10ffcb98e785015d67f6dcb0233e8acead61abeba82572fe",
@@ -19268,6 +21410,521 @@
       ],
       "alt": "Illustration shows ragweed pollen attached to the surface of a B cell. The B cell is activated, producing plasma cells that release I g E. The I g E is presented on the surface of a mast cell. Upon a second exposure, binding of the antigen to the I g E primed mast cells causes the release of chemical mediators that elicit an allergic reaction.",
       "caption": "On first exposure to an allergen, an IgE antibody is synthesized by plasma cells in response to a harmless antigen. The IgE molecules bind to mast cells, and on secondary exposure, the mast cells release histamines and other modulators that affect the symptoms of allergy. (credit: modification of work by NIH)"
+    },
+    "Figure_B43_03_06ab": {
+      "source": "media/Figure_B43_03_06ab.jpg",
+      "sourceSha256": "39fc3ac409844ab433d9c55505d74c952babe3904451af2912db393d63eed787",
+      "module": "m66673",
+      "kind": "photo",
+      "width": 1119,
+      "height": 453,
+      "variants": [
+        {
+          "width": 800,
+          "height": 324,
+          "file": "Figure_B43_03_06ab-800.webp"
+        },
+        {
+          "width": 1119,
+          "height": 453,
+          "file": "Figure_B43_03_06ab-1119.webp"
+        }
+      ],
+      "alt": "Illustration A shows a cross section of a human ovary, which is oval with a stem-like structure at one end that anchors it to the uterus. The central part of the ovary is the medulla, and the outer part is the cortex. Follicles exist in the cortex. Small, immature follicles are located near this stem-like structure. As a follicle matures, it grows and moves toward the edge of the ovary opposite the stem, it ruptures, releasing the egg. The follicle is now called a corpus luteum. The corpus luteum matures and moves back toward the stem, along the opposite edge of the ovary from which the follicle matured. The corpus luteum shrinks and eventually disintegrates. The light micrograph in illustration B shows an oval follicle with a large oocyte located at the center. Around the oocyte are much smaller cells.",
+      "caption": "Oocytes develop in (a) follicles, located in the ovary. At the beginning of the menstrual cycle, the follicle matures. At ovulation, the follicle ruptures, releasing the egg. The follicle becomes a corpus luteum, which eventually degenerates. The (b) follicle in this light micrograph has an oocyte at its center. (credit a: modification of work by NIH; scale-bar data from Matt Russell)"
+    },
+    "Figure_B43_04_02": {
+      "source": "media/Figure_B43_04_02.png",
+      "sourceSha256": "a2066cc47fa08d539eedc0d1acfbd99c5f91442d16a30e672c6d7ff4fdf964d1",
+      "module": "m66674",
+      "kind": "diagram",
+      "width": 950,
+      "height": 964,
+      "variants": [
+        {
+          "width": 800,
+          "height": 811,
+          "file": "Figure_B43_04_02-800.webp"
+        },
+        {
+          "width": 950,
+          "height": 964,
+          "file": "Figure_B43_04_02-950.webp"
+        }
+      ],
+      "alt": "Hormone levels during the follicular phase, ovulation, and the luteal phase are compared. During the follicular phase, L H and F S H secreted from the pituitary stimulate several follicles to grow. The follicles produce low levels of estradiol that inhibit G n R H secretion by the hypothalamus, keeping L H and F S H levels low. Low levels of estradiol also cause the endometrial arteries to constrict, resulting in menstruation. During the time leading up to ovulation, L H and F S H stimulate maturation of one of the follicles. The growing follicle begins to produce high levels of estradiol, which stimulates G n R H secretion by the hypothalamus. As a result, L H and F S H levels rise, resulting in ovulation about a day later. Estradiol also causes the endometrium to thicken. After ovulation, the ovarian cycle enters the luteal phase. L H from the pituitary stimulates growth of the corpus luteum from the ruptured follicle. The corpus luteum secretes estradiol and progesterone that block G n R H production by the hypothalamus and L H and F S H production by the pituitary. Estradiol and progesterone also cause the endometrium to further develop.",
+      "caption": "The ovarian and menstrual cycles of female reproduction are regulated by hormones produced by the hypothalamus, pituitary, and ovaries."
+    },
+    "Figure_B43_04_03": {
+      "source": "media/Figure_B43_04_03.png",
+      "sourceSha256": "75b7e7d552978b0abf03816ce841f2ddc8b34aa6ca29050ae07c32ea5d2d0044",
+      "module": "m66674",
+      "kind": "diagram",
+      "width": 725,
+      "height": 855,
+      "variants": [
+        {
+          "width": 725,
+          "height": 855,
+          "file": "Figure_B43_04_03-725.webp"
+        }
+      ],
+      "alt": "The menstrual cycle encompasses both an ovarian cycle and a uterine cycle. The uterine cycle is divided into menstrual flow, the proliferative phase and the secretory phase. The ovarian cycle is separated into follicular and luteal phases. At day zero the uterine cycle enters the menstrual phase and the ovarian cycle enters the follicular phase. Menstruation begins, and the follicle inside the uterus begins to grow. The level of the pituitary hormone F S H rises slightly, while L H levels remain low. The levels of ovarian hormones estradiol and progesterone remain low. After menses the uterine cycle enters the proliferative phase and the follicle continues to grow. The level of the ovarian hormone estradiol begins to rapidly rise. Toward the end of the proliferative phase, levels of the pituitary hormones F S H and L H rise as well. Around day fourteen, just after the levels of estrogen, progesterone and estradiol reach their peak, ovulation occurs. The follicle ruptures, releasing the oocyte. The ovarian cycle enters the luteal phase. The follicle grows into a corpus luteum and then degenerates. The uterus enters the secretory phase. Progesterone levels increase and estradiol levels, which had dropped after ovulation, increase as well. Toward the end of the secretory phase estrogen and progesterone levels decrease, reaching their baseline levels around day 28. At this point menstruation begins.",
+      "caption": "Rising and falling hormone levels result in progression of the ovarian and menstrual cycles. (credit: modification of work by Mikael Häggström)"
+    },
+    "Figure_B43_04_04": {
+      "source": "media/Figure_B43_04_04.png",
+      "sourceSha256": "2887223116d442e6d9529021bd896b6b040fec1eb61fcf6896916e41ed55c841",
+      "module": "m66674",
+      "kind": "diagram",
+      "width": 1089,
+      "height": 1539,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1130,
+          "file": "Figure_B43_04_04-800.webp"
+        },
+        {
+          "width": 1089,
+          "height": 1539,
+          "file": "Figure_B43_04_04-1089.webp"
+        }
+      ],
+      "alt": "Micrograph shows a spherical egg growing on the surface of a tissue.",
+      "caption": "This mature egg follicle may rupture and release an egg. (credit: scale-bar data from Matt Russell)"
+    },
+    "Figure_B43_05_02ab": {
+      "source": "media/Figure_B43_05_02ab.png",
+      "sourceSha256": "a0ce017d82ca373ae152cc22f1920e59141bd83fa8148407afb71aeb61e2eea7",
+      "module": "m66678",
+      "kind": "diagram",
+      "width": 1698,
+      "height": 497,
+      "variants": [
+        {
+          "width": 800,
+          "height": 234,
+          "file": "Figure_B43_05_02ab-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 468,
+          "file": "Figure_B43_05_02ab-1600.webp"
+        }
+      ],
+      "alt": "Part A illustration shows a fertilized egg divided into two, four, eight, and sixteen cells. Part B shows a hollow ball of cells. The cells on the surface are called the blastoderm, and the hollow center is called the blastocoel.",
+      "caption": "(a) During cleavage, the zygote rapidly divides into multiple cells without increasing in size. (b) The cells rearrange themselves to form a hollow ball with a fluid-filled or yolk-filled cavity called the blastula."
+    },
+    "Figure_B43_05_03": {
+      "source": "media/Figure_B43_05_03.png",
+      "sourceSha256": "5a718a35e699582923ecf76aa4da15b9415a8652a35dddb455974aab65429a8d",
+      "module": "m66678",
+      "kind": "diagram",
+      "width": 1154,
+      "height": 783,
+      "variants": [
+        {
+          "width": 800,
+          "height": 543,
+          "file": "Figure_B43_05_03-800.webp"
+        },
+        {
+          "width": 1154,
+          "height": 783,
+          "file": "Figure_B43_05_03-1154.webp"
+        }
+      ],
+      "alt": "Illustration shows a hollow ball of cells with an inner cell mass clustered to one side. The exterior is called the trophoblast.",
+      "caption": "The rearrangement of the cells in the mammalian blastula to two layers—the inner cell mass and the trophoblast—results in the formation of the blastocyst."
+    },
+    "Figure_B43_06_03": {
+      "source": "media/Figure_B43_06_03.jpg",
+      "sourceSha256": "c15b9a7bce66b71512505f72cbd6159be31088c487ef1763bca5807441d6617d",
+      "module": "m66679",
+      "kind": "photo",
+      "width": 1117,
+      "height": 518,
+      "variants": [
+        {
+          "width": 800,
+          "height": 371,
+          "file": "Figure_B43_06_03-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 518,
+          "file": "Figure_B43_06_03-1117.webp"
+        }
+      ],
+      "alt": "Illustration shows a fish dissected by lines into anterior (front) and posterior (rear) ends and dorsal (top) and ventral (bottom) surfaces. It also indicates that where the fish's fin contacts its body is the proximal end, and the outer edge of the fin is the distal end.",
+      "caption": "Animal bodies have three axes for symmetry. (credit: modification of work by NOAA)"
+    },
+    "Figure_B44_01_04": {
+      "source": "media/Figure_B44_01_04.png",
+      "sourceSha256": "9f74f7599f9c37511fd68aa16d892d61af3df699bccd7f0c1485902292579c94",
+      "module": "m66410",
+      "kind": "diagram",
+      "width": 2060,
+      "height": 1085,
+      "variants": [
+        {
+          "width": 800,
+          "height": 421,
+          "file": "Figure_B44_01_04-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 842,
+          "file": "Figure_B44_01_04-1600.webp"
+        }
+      ],
+      "alt": "The figure gives an overview of some biological levels of organization with example photos. Each individual pine tree (pictured) in a forest is an organism. Together, all the pine trees in a forest (pictured) make up a population. All the plant and animal species comprise a community, pictured as a marmot on a forest floor. Those three levels are grouped in a box with an arrow to the larger level of an ecosystem, which includes living organisms and the environment they live in. An example is a coastal ecosystem in the southeastern United states, pictured as a body of water, behind which is a stand of tall grasses developing into more dense vegetation and trees as distance from the water increases. A final arrow points to the level of a biosphere, encompassing all ecosystems on Earth and pictured as a map of the Earth showing vegetation patterns.",
+      "caption": "Ecologists study within several biological levels of organization. (credit “organisms”: modification of work by yeowatzup”/Flickr; credit “populations”: modification of work by \"Crystl\"/Flickr; credit “communities”: modification of work by US Fish and Wildlife Service; credit “ecosystems”: modification of work by Tom Carlisle, US Fish and Wildlife Service Headquarters; credit “biosphere”: NASA)"
+    },
+    "Figure_B44_02_04": {
+      "source": "media/Figure_B44_02_04.png",
+      "sourceSha256": "884a0069d05ff8207af4214c7660af5c411644e5dd597d0bbeb05e8a650a06b8",
+      "module": "m66411",
+      "kind": "diagram",
+      "width": 938,
+      "height": 852,
+      "variants": [
+        {
+          "width": 800,
+          "height": 726,
+          "file": "Figure_B44_02_04-800.webp"
+        },
+        {
+          "width": 938,
+          "height": 852,
+          "file": "Figure_B44_02_04-938.webp"
+        }
+      ],
+      "alt": "Arrows in the illustration indicate that the prevailing wind direction is from the coastline toward the open ocean. The wind pushes the surface water away from shore, inducing a current in this direction. A counter-current flows from the depths toward shore, where it meets the surface current. The counter-current brings nutrients from the depths up toward the surface near the shoreline.",
+      "caption": "Ocean upwelling is an important process that recycles nutrients and energy in the ocean. As wind (green arrows) pushes offshore, it causes water from the ocean bottom (red arrows) to move to the surface, bringing up nutrients from the ocean depths."
+    },
+    "Figure_B44_26": {
+      "source": "media/Figure_B44_26.png",
+      "sourceSha256": "8616bab749f2470a1437d5752bc5a6954dd3a7f082a48bfa9a4114dc22161e37",
+      "module": "m66419",
+      "kind": "diagram",
+      "width": 1051,
+      "height": 1309,
+      "variants": [
+        {
+          "width": 800,
+          "height": 996,
+          "file": "Figure_B44_26-800.webp"
+        },
+        {
+          "width": 1051,
+          "height": 1309,
+          "file": "Figure_B44_26-1051.webp"
+        }
+      ],
+      "alt": "In the first image, a group of scientists uses a drill to extract an ice core in a polar environment. In the second, an ice core is displayed, showing air bubbles trapped within.",
+      "caption": "Scientists drill for ice cores in polar regions. The ice contains air bubbles and biological substances that provide important information for researchers. (credit: a: Helle Astrid Kjær; b: National Ice Core Laboratory, USGS)"
+    },
+    "Figure_B45_06_09ab": {
+      "source": "media/Figure_B45_06_09ab.png",
+      "sourceSha256": "adb3d12aa9811fb50eb67975f7c5c5b7677108a445bf904bdd79ebda6f9a5959",
+      "module": "m66698",
+      "kind": "diagram",
+      "width": 2237,
+      "height": 1461,
+      "variants": [
+        {
+          "width": 800,
+          "height": 522,
+          "file": "Figure_B45_06_09ab-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1045,
+          "file": "Figure_B45_06_09ab-1600.webp"
+        }
+      ],
+      "alt": "The life cycle of a tapeworm begins when eggs or tapeworm segments in the feces (1) are ingested by pigs or humans (2). The embryos hatch, penetrate the intestinal wall, and circulate to the musculature in both pigs and humans (3). This figure shows how humans may acquire a tapeworm infection by ingesting raw or undercooked meat (4). Infection may result in cysts in the musculature, brains, and eyes, or in tapeworms in the intestine. Tapeworms attach themselves to the intestine via a hook-like structure called the scolex (5). Adult tapeworms are then present in the small intestine (6). Tapeworm segments and eggs are excreted in the feces, completing the cycle.",
+      "caption": "This diagram shows the life cycle of a pork tapeworm ( Taenia solium ), a human worm parasite. (credit: modification of work by CDC)"
+    },
+    "Figure_B46_01_05": {
+      "source": "media/Figure_B46_01_05.png",
+      "sourceSha256": "978005dbe9f869778407830f542544d227e7a4eb9931bdeca208c011097e64e3",
+      "module": "m66701",
+      "kind": "diagram",
+      "width": 975,
+      "height": 439,
+      "variants": [
+        {
+          "width": 800,
+          "height": 360,
+          "file": "Figure_B46_01_05-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 439,
+          "file": "Figure_B46_01_05-975.webp"
+        }
+      ],
+      "alt": "The bottom level of the illustration shows primary producers, which include diatoms, green algae, blue-green algae, and flagellates. The next level includes the primary consumers that eat primary producers. These include invertebrates such as waterfleas and mussels. Primary consumers are in turn eaten by secondary consumers, which are typically small fish and shrimp. The small fish are eaten by larger fish, the tertiary, or apex consumers. Finally, all fish are eaten by the sea lamprey. For the most part, every organism at a given level eats every organism in the level below and nothing else, but there are exceptions. For example, not all secondary consumers eat all primary consumers. Lake whitefish only eat zebra and quagga mussels, round goby eat all primary consumers, and the other secondary consumers eat every primary consumer except for the zebra and quagga mussels. The secondary consumer yellow perch eats two other secondary consumers from its own level, the slimy sculpin and the rainbow smelt, in addition to eating primary consumers from the level below. Some organisms can also skip a level. The secondary consumer opossum shrimp eats most primary consumers in the level immediately below and all of the primary producers two levels below. Sea lamprey eat all tertiary and secondary consumers. Thus, the food web is complex with interwoven layers.",
+      "caption": "This food web shows the interactions between organisms across trophic levels in the Lake Ontario ecosystem. Primary producers are outlined in green, primary consumers in orange, secondary consumers in blue, and tertiary (apex) consumers in purple. Arrows point from an organism that is consumed to the organism that consumes it. Notice how some lines point to more than one trophic level. For example, the opossum shrimp eats both primary producers and primary consumers. (credit: NOAA, GLERL)"
+    },
+    "Figure_B46_03_03": {
+      "source": "media/Figure_B46_03_03.png",
+      "sourceSha256": "0f92dd8289b0df1b7b5ec3116c7bbf42fb31356f1c1d85208e75776c4635f55a",
+      "module": "m66705",
+      "kind": "diagram",
+      "width": 2236,
+      "height": 1557,
+      "variants": [
+        {
+          "width": 800,
+          "height": 557,
+          "file": "Figure_B46_03_03-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1114,
+          "file": "Figure_B46_03_03-1600.webp"
+        }
+      ],
+      "alt": "Illustration shows the water cycle. Water enters the atmosphere through evaporation, evapotranspiration, sublimation, and volcanic steam. Condensation in the atmosphere turns water vapor into clouds. Water from the atmosphere returns to the Earth via precipitation or desublimation. Some of this water infiltrates the ground to become groundwater. Seepage, freshwater springs, and plant uptake return some of this water to the surface. The remaining water seeps into the oceans. The remaining surface water enters streams and freshwater lakes, where it eventually enters the ocean via surface runoff. Some water also enters the ocean via underwater vents or volcanoes.",
+      "caption": "Water from the land and oceans enters the atmosphere by evaporation or sublimation, where it condenses into clouds and falls as rain or snow. Precipitated water may enter freshwater bodies or infiltrate the soil. The cycle is complete when surface or groundwater reenters the ocean. (credit: modification of work by John M. Evans and Howard Perlman, USGS)"
+    },
+    "Figure_B46_03_04_carbon": {
+      "source": "media/Figure_B46_03_04_carbon.jpg",
+      "sourceSha256": "8ff62065275fc3d252c986b1468923e5e7f7035a157da73faf8913f708b42c80",
+      "module": "m66705",
+      "kind": "photo",
+      "width": 1117,
+      "height": 778,
+      "variants": [
+        {
+          "width": 800,
+          "height": 557,
+          "file": "Figure_B46_03_04_carbon-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 778,
+          "file": "Figure_B46_03_04_carbon-1117.webp"
+        }
+      ],
+      "alt": "The illustration shows the carbon cycle. Carbon enters the atmosphere as carbon dioxide gas that is released from human emissions, respiration and decomposition, and volcanic emissions. Carbon dioxide is removed from the atmosphere by marine and terrestrial photosynthesis. Carbon from the weathering of rocks and decomposition of organisms becomes soil carbon, which over time can become fossil carbon. Carbon enters the ocean from land via leaching and runoff. Uplifting of ocean sediments can return carbon to land.",
+      "caption": "Carbon dioxide gas exists in the atmosphere and is dissolved in water. Photosynthesis converts carbon dioxide gas to organic carbon, and respiration cycles the organic carbon back into carbon dioxide gas. Long-term storage of organic carbon occurs when matter from living organisms is buried deep underground and becomes fossilized. Volcanic activity and, more recently, human emissions, bring this stored carbon back into the carbon cycle. (credit: modification of work by John M. Evans and Howard Perlman, USGS)"
+    },
+    "Figure_B46_03_05": {
+      "source": "media/Figure_B46_03_05.png",
+      "sourceSha256": "35246f345d8b221a918cfdf15ce5b02cc5ad5079f3a8dae2112948f701246208",
+      "module": "m66705",
+      "kind": "diagram",
+      "width": 2086,
+      "height": 1452,
+      "variants": [
+        {
+          "width": 800,
+          "height": 557,
+          "file": "Figure_B46_03_05-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1113,
+          "file": "Figure_B46_03_05-1600.webp"
+        }
+      ],
+      "alt": "This illustration shows the nitrogen cycle. Nitrogen gas from the atmosphere is fixed into organic nitrogen by nitrogen-fixing bacteria. This organic nitrogen enters terrestrial food webs, and it leaves the food webs as nitrogenous wastes in the soil. Ammonification of this nitrogenous waste by bacteria and fungi in the soil converts the organic nitrogen to ammonium ion, or upper N upper H 4 plus. Ammonium is converted to nitrite, or upper N upper O 2 minus, then to nitrate, or upper N upper O 3 minus by nitrifying bacteria. Denitrifying bacteria convert the nitrate back into nitrogen gas, which re-enters the atmosphere. Nitrogen from runoff and fertilizers enters the ocean, where it enters marine food webs. Some organic nitrogen falls to the ocean floor as sediment. Other organic nitrogen in the ocean is converted to nitrite and nitrate ions, which is then converted to nitrogen gas in a process analogous to the one that occurs on land.",
+      "caption": "Nitrogen enters the living world from the atmosphere via nitrogen-fixing bacteria. This nitrogen and nitrogenous waste from animals is then processed back into gaseous nitrogen by soil bacteria, which also supply terrestrial food webs with the organic nitrogen they need. (credit: modification of work by John M. Evans and Howard Perlman, USGS)"
+    },
+    "Figure_B46_03_06": {
+      "source": "media/Figure_B46_03_06.png",
+      "sourceSha256": "27ddf72ac9ced20942200c2fa125e050129ade14a371311f4a9503aca7490ae5",
+      "module": "m66705",
+      "kind": "diagram",
+      "width": 2236,
+      "height": 1557,
+      "variants": [
+        {
+          "width": 800,
+          "height": 557,
+          "file": "Figure_B46_03_06-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1114,
+          "file": "Figure_B46_03_06-1600.webp"
+        }
+      ],
+      "alt": "The illustration shows the phosphorus cycle. Phosphate enters the atmosphere from volcanic aerosols. As this aerosol precipitates to Earth, it enters terrestrial food webs. Some of the phosphate from terrestrial food webs dissolves in streams and lakes, and the remainder enters the soil. Another source of phosphate is fertilizers. Phosphate enters the ocean via leaching and runoff, where it becomes dissolved in ocean water or enters marine food webs. Some phosphate falls to the ocean floor where it becomes sediment. If uplifting occurs, this sediment can return to land.",
+      "caption": "In nature, phosphorus exists as the phosphate ion (PO 4 3− ). Weathering of rocks and volcanic activity releases phosphate into the soil, water, and air, where it becomes available to terrestrial food webs. Phosphate enters the oceans via surface runoff, groundwater flow, and river flow. Phosphate dissolved in ocean water cycles into marine food webs. Some phosphate from the marine food webs falls to the ocean floor, where it forms sediment. (credit: modification of work by John M. Evans and Howard Perlman, USGS)"
+    },
+    "Figure_B46_03_07": {
+      "source": "media/Figure_B46_03_07.png",
+      "sourceSha256": "541d1a390524330604531a702921ea1beb017e56afb132e76e94dd6dd9d36212",
+      "module": "m66705",
+      "kind": "diagram",
+      "width": 2236,
+      "height": 1276,
+      "variants": [
+        {
+          "width": 800,
+          "height": 456,
+          "file": "Figure_B46_03_07-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 913,
+          "file": "Figure_B46_03_07-1600.webp"
+        }
+      ],
+      "alt": "World map shows areas where dead zones occur. Dead zones are present along the eastern and western shore of the United States, in the North and Mediterranean Seas and off the east coast of Asia.",
+      "caption": "Dead zones occur when phosphorus and nitrogen from fertilizers cause excessive growth of microorganisms, which depletes oxygen and kills fauna. Worldwide, large dead zones are found in coastal areas of high population density. (credit: NASA Earth Observatory)"
+    },
+    "Figure_B46_03_09-sulfur": {
+      "source": "media/Figure_B46_03_09-sulfur.jpg",
+      "sourceSha256": "ccfe7c23184ae84d188e7a68d066e5af0898ae46fbe825a3cd5db70821b9bcdf",
+      "module": "m66705",
+      "kind": "photo",
+      "width": 1117,
+      "height": 778,
+      "variants": [
+        {
+          "width": 800,
+          "height": 557,
+          "file": "Figure_B46_03_09-sulfur-800.webp"
+        },
+        {
+          "width": 1117,
+          "height": 778,
+          "file": "Figure_B46_03_09-sulfur-1117.webp"
+        }
+      ],
+      "alt": "This illustration shows the sulfur cycle. Sulfur enters the atmosphere as sulfur dioxide, or upper S upper O 2, via human emissions, decomposition of upper H 2 upper S, and volcanic eruptions. Precipitation and fallout from the atmosphere return sulfur to the Earth, where it enters terrestrial ecosystems. Sulfur enters the oceans via runoff, where it becomes incorporated in marine ecosystems. Some marine sulfur becomes pyrite, which is trapped in sediment. If upwelling occurs, the pyrite enters the soil and is converted to soil sulfates.",
+      "caption": "Sulfur dioxide from the atmosphere becomes available to terrestrial and marine ecosystems when it is dissolved in precipitation as weak sulfurous acid or when it falls directly to the Earth as fallout. Weathering of rocks also makes sulfates available to terrestrial ecosystems. Decomposition of living organisms returns sulfates to the ocean, soil, and atmosphere. (credit: modification of work by John M. Evans and Howard Perlman, USGS)"
+    },
+    "Figure_B47_01_04-extinctions": {
+      "source": "media/Figure_B47_01_04-extinctions.jpg",
+      "sourceSha256": "6a98720cea52bccc08684baea027174c9c1e59f514496b10182bd9ca75c4c6de",
+      "module": "m66707",
+      "kind": "photo",
+      "width": 800,
+      "height": 492,
+      "variants": [
+        {
+          "width": 800,
+          "height": 492,
+          "file": "Figure_B47_01_04-extinctions-800.webp"
+        }
+      ],
+      "alt": "The chart shows percent extinction intensity of eliminated marine genera versus time in millions of years before present. Extinction intensity spikes at boundaries between periods, including the end of the Ordovician which had 30 percent extinction occurrences of marine genera approximately 450 million years ago. The late Devonian had approximately 25 percent extinction occurrences of marine genera at roughly 375 million years ago. The end of the Permian had 50 percent extinction occurrences of marine genera approximately 250 million years ago. The end of the Triassic had roughly 30 percent extinction occurrences of marine genera 200 million years ago. And the end of the Cretaceous periods had over 30 percent extinction occurrences of marine genera roughly 70 million years ago.",
+      "caption": "Percent extinction occurrences of marine genera as reflected in the fossil record have fluctuated throughout Earth’s history. Sudden and dramatic losses of biodiversity, called mass extinctions , have occurred five times."
+    },
+    "Figure_B47_03_01": {
+      "source": "media/Figure_B47_03_01.jpg",
+      "sourceSha256": "920f5972fe9b387dd48ff8abaa12e78743dd76ea30bac3434d1b61aac6813f64",
+      "module": "m66709",
+      "kind": "photo",
+      "width": 800,
+      "height": 577,
+      "variants": [
+        {
+          "width": 800,
+          "height": 577,
+          "file": "Figure_B47_03_01-800.webp"
+        }
+      ],
+      "alt": "The graph plots atmospheric carbon dioxide concentration in parts per million over time (years before present). Historically, carbon dioxide levels have fluctuated in a cyclical manner, from about 280 parts per million at the peak to about 180 parts per million at the low point. This cycle repeated every one hundred thousand years or so, from about 425,000 years ago until recently. Prior to the industrial revolution, the atmospheric carbon dioxide concentration was at a high point in the cycle. Since then the carbon dioxide level has rapidly climbed to its current level of 395 parts per million. This carbon dioxide level is far higher than any previously recorded levels.",
+      "caption": "Atmospheric carbon dioxide levels fluctuate in a cyclical manner. However, the burning of fossil fuels in recent history has caused a dramatic increase in the levels of carbon dioxide in the Earth’s atmosphere, which have now reached levels never before seen in human history. Scientists predict that the addition of this “greenhouse gas” to the atmosphere is resulting in climate change that will significantly impact biodiversity in the coming century."
+    },
+    "Figure_B47_03_02": {
+      "source": "media/Figure_B47_03_02.png",
+      "sourceSha256": "ecede0311f94529de54d1f0e833426660496dd529af0fa01a4b6335579f9fec1",
+      "module": "m66709",
+      "kind": "diagram",
+      "width": 1606,
+      "height": 2365,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1178,
+          "file": "Figure_B47_03_02-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2356,
+          "file": "Figure_B47_03_02-1600.webp"
+        }
+      ],
+      "alt": "Photo A shows an orangutan hanging from a wire in a lush rainforest filled with many different kinds of vegetation. Photo B shows a tiger. Map C shows the islands of Borneo and Sumatra in the south Pacific, just northwest of Australia. Sumatra is in the country of Indonesia. Half of Borneo is in Indonesia, and half is in Malaysia. Photo D shows a gray elephant. Photo E shows rolling hills covered with homogenous short, bushy oil palm trees.",
+      "caption": "(a) One of three species of orangutan, Pongo pygmaeus, is found only in the rainforests of Borneo, and another species of orangutan ( Pongo abelii ) is found only in the rainforests of Sumatra. These animals are examples of the exceptional biodiversity of (c) the islands of Sumatra and Borneo. Other species include the (b) Sumatran tiger ( Panthera tigris sumatrae ) and the (d) Sumatran elephant ( Elephas maximus sumatranus ), both critically endangered species. Rainforest habitat is being removed to make way for (e) oil palm plantations such as this one in Borneo’s Sabah Province. (credit a: modification of work by Thorsten Bachner; credit b: modification of work by Dick Mudde; credit c: modification of work by U.S. CIA World Factbook; credit d: modification of work by “Nonprofit Organizations”/Flickr; credit e: modification of work by Dr. Lian Pin Koh)"
+    },
+    "Figure_B47_03_03": {
+      "source": "media/Figure_B47_03_03.jpg",
+      "sourceSha256": "7a8fff52185f8f9169e9dc88109a7b49583184daa297755e8a9cbabe30eeac7e",
+      "module": "m66709",
+      "kind": "photo",
+      "width": 544,
+      "height": 423,
+      "variants": [
+        {
+          "width": 544,
+          "height": 423,
+          "file": "Figure_B47_03_03-544.webp"
+        }
+      ],
+      "alt": "Photo shows a snake mottled brown and tan, with a forked tongue sticking out of its mouth.",
+      "caption": "The brown tree snake, Boiga irregularis , is an exotic species that has caused numerous extinctions on the island of Guam since its accidental introduction in 1950. (credit: NPS)"
+    },
+    "Figure_B47_03_04": {
+      "source": "media/Figure_B47_03_04.jpg",
+      "sourceSha256": "e9c14da024c2f1a4bd7142fd629f0eb81a5f4268e924200e7f9843bfc6b0e6c6",
+      "module": "m66709",
+      "kind": "photo",
+      "width": 544,
+      "height": 618,
+      "variants": [
+        {
+          "width": 544,
+          "height": 618,
+          "file": "Figure_B47_03_04-544.webp"
+        }
+      ],
+      "alt": "Photo shows a dead frog laying upside-down on a rock. The frog has bright red lesions on its hind quarters.",
+      "caption": "This Limosa Harlequin Frog ( Atelopus limosus ), an endangered species from Panama, died from a fungal disease called chytridiomycosis. The red lesions are symptomatic of the disease. (credit: Brian Gratwicke)"
+    },
+    "Figure_B47_03_05": {
+      "source": "media/Figure_B47_03_05.jpg",
+      "sourceSha256": "9b40d678e2e15d673c8b9c03ac24b990eba8962d05a79ef805fe31cbc100ef6f",
+      "module": "m66709",
+      "kind": "photo",
+      "width": 544,
+      "height": 607,
+      "variants": [
+        {
+          "width": 544,
+          "height": 607,
+          "file": "Figure_B47_03_05-544.webp"
+        }
+      ],
+      "alt": "Photo shows a bat hanging from the roof of a cave. The bat has a powdery white residue on its head and wings.",
+      "caption": "This little brown bat in Greeley Mine, Vermont, March 26, 2009, was found to have white-nose syndrome. (credit: Marvin Moriarty, USFWS)"
+    },
+    "Figure_B47_03_06": {
+      "source": "media/Figure_B47_03_06.jpg",
+      "sourceSha256": "d20ddb8d0323b7f3189026589e233816da63b2d7f0d55c7c05ed727df8f3eda4",
+      "module": "m66709",
+      "kind": "photo",
+      "width": 545,
+      "height": 742,
+      "variants": [
+        {
+          "width": 545,
+          "height": 742,
+          "file": "Figure_B47_03_06-545.webp"
+        }
+      ],
+      "alt": "Map A compares the historic and current ranges of grizzly bears with the range of polar bears. Historically, grizzly bear habitat extended from Mexico through the western United States and into the mid-latitudes of Canada. But in recent years this range has expanded northward, to the northern tip of Canada and throughout Alaska. This range now overlaps with the polar bear range in the northern extremes of Alaska in Canada.",
+      "caption": "Since 2008, grizzly bears ( Ursus arctos horribilis ) have been spotted farther north than their historic range, a possible consequence of climate change. As a result, grizzly bear habitat now overlaps polar bear ( Ursus maritimus ) habitat. The two species of bears, which are capable of mating and producing viable offspring, are considered separate “ecological” species because historically they lived in different habitats and never met. However, in 2006 a hunter shot a wild grizzly-polar bear hybrid known as a grolar bear, the first wild hybrid ever found."
     },
     "Targeted_Protein_Formation-XZZ": {
       "source": "media/Targeted_Protein_Formation-XZZ.jpg",

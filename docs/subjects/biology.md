@@ -84,8 +84,9 @@ collections have no units, stay flat. URLs do not carry the unit
 (`/life-health-sciences/biology/02-…/01-…/`): the directory layout, the
 lints, the validator, and the provenance map all key on book → chapter →
 section, and nesting a unit directory would change published routes for no
-gain. A unit with no authored chapter yet does not appear in the sidebar; it
-waits on the cover's "Planned contents" list. A chapter landing is created when its first
+gain. While the book was being written, a unit with no authored chapter did not
+appear in the sidebar; it waited on the cover's "Planned contents" list,
+which came off the cover when the last chapter landed. A chapter landing is created when its first
 section lands, never earlier — the book stays `authoringStatus: scaffolded`
 in the lock until unit 1 is complete, `in-progress` after that, and
 `complete` only when all 208 sections exist. The cover's `seo_title:`
@@ -556,6 +557,10 @@ Record every item in the source ledger with its exercise or definition id.
   the aside mean and raise deliberately with the new numbers; never by
   rounding up in advance — and consider shrinking the per-link markup
   instead, since ~1.1 KiB per link on every page of the book is the cost.
+  **Measured at completion (September 3, 2026, 47 chapters, 600 HTML
+  documents): 254.3 MiB of HTML** — under the ~286 MiB projection and 27%
+  below the 350 cap, so the cap did not move. The audit's all-files summary
+  line read 348.9 MiB at the same build; do not mistake it for the gate.
 - **Sidebar share** (`maxSidebarShare 0.55`) is per page: the biology sidebar
   lists every chapter of the book, so re-check the audit line after each
   unit. Measured 35% at 32 chapters, projected ~50% at completion.
@@ -567,7 +572,7 @@ Record every item in the source ledger with its exercise or definition id.
   corpus mean 168.3; the finished book projects to ~252 KiB mean, 300 keeps
   ~19% headroom, and the tree emitted twice again lands the mean near 312
   today and ~480 at completion. The browser suite pins the shape too (`the
-  biology sidebar nests chapters under their unit`: seven units and 224 book
+  biology sidebar nests chapters under their unit`: eight units and 255 book
   links in the DOM, first visible link the first chapter). The rationale and
   projection live in the comment above `maxMeanChromeBytes`.
 - **Browser suite time.** `tests/figures.spec.mjs` walks every route; its

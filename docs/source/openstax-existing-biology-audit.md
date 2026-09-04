@@ -14,19 +14,19 @@
 ## Coverage
 
 - Books with mapped sections: 1
-- Numbered sections mapped: 169
-- Metadata matched without a flag: 169
+- Numbered sections mapped: 208
+- Metadata matched without a flag: 208
 - Intentional adaptations adjudicated: 0
 - Unresolved sections needing review: 0
 - Modules differing from the committed map: 0
-- Objectives automatically located: 521/521
-- Core instructional headings automatically located: 540/540
-- Local interactive questions inventoried: 2326
+- Objectives automatically located: 651/651
+- Core instructional headings automatically located: 672/672
+- Local interactive questions inventoried: 2877
 - Upstream Try It prompts with a likely local prompt match: n/a
 
 | Book | Bundle | Authoring status | Chapters | Sections mapped |
 |---|---|---|---:|---:|
-| biology | `biology-bundle` | in-progress | 39/47 | 169/208 |
+| biology | `biology-bundle` | complete | 47/47 | 208/208 |
 
 The prose percentage is five-word source-shingle traceability, not a quality
 score. Low values can reflect disclosed condensation, reformatted mathematics,
@@ -113,7 +113,7 @@ or intentionally omitted print material.
 | [biology 18.1](../../content/life-health-sciences/biology/18-evolution-and-the-origin-of-species/01-understanding-evolution.md) | `m66518` | metadata matched | 5/5 | 4/4 | 99% | 0/0 | 16 |
 | [biology 18.2](../../content/life-health-sciences/biology/18-evolution-and-the-origin-of-species/02-formation-of-new-species.md) | `m66520` | metadata matched | 5/5 | 5/5 | 97% | 0/0 | 18 |
 | [biology 18.3](../../content/life-health-sciences/biology/18-evolution-and-the-origin-of-species/03-reconnection-and-speciation-rates.md) | `m66521` | metadata matched | 2/2 | 2/2 | 90% | 0/0 | 10 |
-| [biology 19.1](../../content/life-health-sciences/biology/19-the-evolution-of-populations/01-population-evolution.md) | `m66523` | metadata matched | 2/2 | 2/2 | 94% | 0/0 | 10 |
+| [biology 19.1](../../content/life-health-sciences/biology/19-the-evolution-of-populations/01-population-evolution.md) | `m66523` | metadata matched | 2/2 | 2/2 | 95% | 0/0 | 10 |
 | [biology 19.2](../../content/life-health-sciences/biology/19-the-evolution-of-populations/02-population-genetics.md) | `m66524` | metadata matched | 4/4 | 6/6 | 97% | 0/0 | 13 |
 | [biology 19.3](../../content/life-health-sciences/biology/19-the-evolution-of-populations/03-adaptive-evolution.md) | `m66718` | metadata matched | 2/2 | 6/6 | 97% | 0/0 | 10 |
 | [biology 20.1](../../content/life-health-sciences/biology/20-phylogenies-and-the-history-of-life/01-organizing-life-on-earth.md) | `m66530` | metadata matched | 4/4 | 3/3 | 95% | 0/0 | 17 |
@@ -143,7 +143,7 @@ or intentionally omitted print material.
 | [biology 25.4](../../content/life-health-sciences/biology/25-seedless-plants/04-seedless-vascular-plants.md) | `m66570` | metadata matched | 5/5 | 5/5 | 98% | 0/0 | 17 |
 | [biology 26.1](../../content/life-health-sciences/biology/26-seed-plants/01-evolution-of-seed-plants.md) | `m66572` | metadata matched | 4/4 | 2/2 | 99% | 0/0 | 14 |
 | [biology 26.2](../../content/life-health-sciences/biology/26-seed-plants/02-gymnosperms.md) | `m66573` | metadata matched | 4/4 | 2/2 | 95% | 0/0 | 17 |
-| [biology 26.3](../../content/life-health-sciences/biology/26-seed-plants/03-angiosperms.md) | `m66574` | metadata matched | 4/4 | 4/4 | 97% | 0/0 | 15 |
+| [biology 26.3](../../content/life-health-sciences/biology/26-seed-plants/03-angiosperms.md) | `m66574` | metadata matched | 4/4 | 4/4 | 98% | 0/0 | 15 |
 | [biology 26.4](../../content/life-health-sciences/biology/26-seed-plants/04-the-role-of-seed-plants.md) | `m66575` | metadata matched | 3/3 | 4/4 | 98% | 0/0 | 13 |
 | [biology 27.1](../../content/life-health-sciences/biology/27-introduction-to-animal-diversity/01-features-of-the-animal-kingdom.md) | `m66577` | metadata matched | 3/3 | 2/2 | 98% | 0/0 | 14 |
 | [biology 27.2](../../content/life-health-sciences/biology/27-introduction-to-animal-diversity/02-features-used-to-classify-animals.md) | `m66578` | metadata matched | 2/2 | 2/2 | 97% | 0/0 | 13 |
@@ -204,4 +204,43 @@ or intentionally omitted print material.
 | [biology 39.1](../../content/life-health-sciences/biology/39-the-respiratory-system/01-systems-of-gas-exchange.md) | `m66645` | metadata matched | 2/2 | 5/5 | 96% | 0/0 | 11 |
 | [biology 39.2](../../content/life-health-sciences/biology/39-the-respiratory-system/02-gas-exchange-across-respiratory-surfaces.md) | `m66646` | metadata matched | 2/2 | 4/4 | 98% | 0/0 | 13 |
 | [biology 39.3](../../content/life-health-sciences/biology/39-the-respiratory-system/03-breathing.md) | `m66647` | metadata matched | 3/3 | 4/4 | 98% | 0/0 | 10 |
-| [biology 39.4](../../content/life-health-sciences/biology/39-the-respiratory-system/04-transport-of-gases-in-human-bodily-fluids.md) | `m66648` | metadata matched | 2/2 | 2/2 | 94% | 0/0 | 11 |
+| [biology 39.4](../../content/life-health-sciences/biology/39-the-respiratory-system/04-transport-of-gases-in-human-bodily-fluids.md) | `m66648` | metadata matched | 2/2 | 2/2 | 95% | 0/0 | 11 |
+| [biology 40.1](../../content/life-health-sciences/biology/40-the-circulatory-system/01-overview-of-the-circulatory-system.md) | `m66650` | metadata matched | 3/3 | 2/2 | 97% | 0/0 | 15 |
+| [biology 40.2](../../content/life-health-sciences/biology/40-the-circulatory-system/02-components-of-the-blood.md) | `m66651` | metadata matched | 3/3 | 5/5 | 97% | 0/0 | 12 |
+| [biology 40.3](../../content/life-health-sciences/biology/40-the-circulatory-system/03-mammalian-heart-and-blood-vessels.md) | `m66653` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 14 |
+| [biology 40.4](../../content/life-health-sciences/biology/40-the-circulatory-system/04-blood-flow-and-blood-pressure-regulation.md) | `m66654` | metadata matched | 2/2 | 3/3 | 95% | 0/0 | 10 |
+| [biology 41.1](../../content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/01-osmoregulation-and-osmotic-balance.md) | `m66656` | metadata matched | 5/5 | 4/4 | 99% | 0/0 | 17 |
+| [biology 41.2](../../content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/02-the-kidneys-and-osmoregulatory-organs.md) | `m66658` | metadata matched | 4/4 | 3/3 | 94% | 0/0 | 15 |
+| [biology 41.3](../../content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/03-excretion-systems.md) | `m66659` | metadata matched | 3/3 | 3/3 | 96% | 0/0 | 11 |
+| [biology 41.4](../../content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/04-nitrogenous-wastes.md) | `m66660` | metadata matched | 2/2 | 2/2 | 93% | 0/0 | 10 |
+| [biology 41.5](../../content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/05-hormonal-control-of-osmoregulatory-functions.md) | `m66661` | metadata matched | 2/2 | 5/5 | 99% | 0/0 | 10 |
+| [biology 42.1](../../content/life-health-sciences/biology/42-the-immune-system/01-innate-immune-response.md) | `m66663` | metadata matched | 5/5 | 4/4 | 98% | 0/0 | 18 |
+| [biology 42.2](../../content/life-health-sciences/biology/42-the-immune-system/02-adaptive-immune-response.md) | `m66664` | metadata matched | 4/4 | 4/4 | 96% | 0/0 | 23 |
+| [biology 42.3](../../content/life-health-sciences/biology/42-the-immune-system/03-antibodies.md) | `m66665` | metadata matched | 3/3 | 3/3 | 99% | 0/0 | 11 |
+| [biology 42.4](../../content/life-health-sciences/biology/42-the-immune-system/04-disruptions-in-the-immune-system.md) | `m66666` | metadata matched | 2/2 | 2/2 | 99% | 0/0 | 9 |
+| [biology 43.1](../../content/life-health-sciences/biology/43-animal-reproduction-and-development/01-reproduction-methods.md) | `m66668` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 13 |
+| [biology 43.2](../../content/life-health-sciences/biology/43-animal-reproduction-and-development/02-fertilization.md) | `m66671` | metadata matched | 3/3 | 2/2 | 99% | 0/0 | 11 |
+| [biology 43.3](../../content/life-health-sciences/biology/43-animal-reproduction-and-development/03-human-reproductive-anatomy-and-gametogenesis.md) | `m66673` | metadata matched | 3/3 | 2/2 | 96% | 0/0 | 15 |
+| [biology 43.4](../../content/life-health-sciences/biology/43-animal-reproduction-and-development/04-hormonal-control-of-human-reproduction.md) | `m66674` | metadata matched | 3/3 | 2/2 | 96% | 0/0 | 14 |
+| [biology 43.5](../../content/life-health-sciences/biology/43-animal-reproduction-and-development/05-human-pregnancy-and-birth.md) | `m66677` | metadata matched | 4/4 | 4/4 | 98% | 0/0 | 15 |
+| [biology 43.6](../../content/life-health-sciences/biology/43-animal-reproduction-and-development/06-fertilization-and-early-embryonic-development.md) | `m66678` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 12 |
+| [biology 43.7](../../content/life-health-sciences/biology/43-animal-reproduction-and-development/07-organogenesis-and-vertebrate-axis-formation.md) | `m66679` | metadata matched | 2/2 | 2/2 | 97% | 0/0 | 9 |
+| [biology 44.1](../../content/life-health-sciences/biology/44-ecology-and-the-biosphere/01-the-scope-of-ecology.md) | `m66410` | metadata matched | 4/4 | 5/5 | 98% | 0/0 | 15 |
+| [biology 44.2](../../content/life-health-sciences/biology/44-ecology-and-the-biosphere/02-biogeography.md) | `m66411` | metadata matched | 4/4 | 2/2 | 98% | 0/0 | 14 |
+| [biology 44.3](../../content/life-health-sciences/biology/44-ecology-and-the-biosphere/03-terrestrial-biomes.md) | `m66420` | metadata matched | 2/2 | 8/8 | 97% | 0/0 | 10 |
+| [biology 44.4](../../content/life-health-sciences/biology/44-ecology-and-the-biosphere/04-aquatic-biomes.md) | `m66417` | metadata matched | 3/3 | 4/4 | 98% | 0/0 | 16 |
+| [biology 44.5](../../content/life-health-sciences/biology/44-ecology-and-the-biosphere/05-climate-and-the-effects-of-global-climate-change.md) | `m66419` | metadata matched | 4/4 | 3/3 | 97% | 0/0 | 15 |
+| [biology 45.1](../../content/life-health-sciences/biology/45-population-and-community-ecology/01-population-demography.md) | `m66686` | metadata matched | 4/4 | 3/3 | 97% | 0/0 | 15 |
+| [biology 45.2](../../content/life-health-sciences/biology/45-population-and-community-ecology/02-life-histories-and-natural-selection.md) | `m66688` | metadata matched | 2/2 | 1/1 | 98% | 0/0 | 9 |
+| [biology 45.3](../../content/life-health-sciences/biology/45-population-and-community-ecology/03-environmental-limits-to-population-growth.md) | `m66690` | metadata matched | 3/3 | 2/2 | 93% | 0/0 | 12 |
+| [biology 45.4](../../content/life-health-sciences/biology/45-population-and-community-ecology/04-population-dynamics-and-regulation.md) | `m66691` | metadata matched | 4/4 | 4/4 | 98% | 0/0 | 16 |
+| [biology 45.5](../../content/life-health-sciences/biology/45-population-and-community-ecology/05-human-population-growth.md) | `m66696` | metadata matched | 4/4 | 3/3 | 94% | 0/0 | 14 |
+| [biology 45.6](../../content/life-health-sciences/biology/45-population-and-community-ecology/06-community-ecology.md) | `m66698` | metadata matched | 5/5 | 5/5 | 98% | 0/0 | 25 |
+| [biology 45.7](../../content/life-health-sciences/biology/45-population-and-community-ecology/07-behavioral-biology-proximate-and-ultimate-causes-of-behavior.md) | `m66699` | metadata matched | 6/6 | 6/6 | 99% | 0/0 | 28 |
+| [biology 46.1](../../content/life-health-sciences/biology/46-ecosystems/01-ecology-of-ecosystems.md) | `m66701` | metadata matched | 4/4 | 2/2 | 97% | 0/0 | 19 |
+| [biology 46.2](../../content/life-health-sciences/biology/46-ecosystems/02-energy-flow-through-ecosystems.md) | `m66702` | metadata matched | 3/3 | 5/5 | 97% | 0/0 | 15 |
+| [biology 46.3](../../content/life-health-sciences/biology/46-ecosystems/03-biogeochemical-cycles.md) | `m66705` | metadata matched | 2/2 | 5/5 | 95% | 0/0 | 13 |
+| [biology 47.1](../../content/life-health-sciences/biology/47-conservation-biology-and-biodiversity/01-the-biodiversity-crisis.md) | `m66707` | metadata matched | 3/3 | 2/2 | 97% | 0/0 | 12 |
+| [biology 47.2](../../content/life-health-sciences/biology/47-conservation-biology-and-biodiversity/02-the-importance-of-biodiversity-to-human-life.md) | `m66708` | metadata matched | 3/3 | 4/4 | 98% | 0/0 | 10 |
+| [biology 47.3](../../content/life-health-sciences/biology/47-conservation-biology-and-biodiversity/03-threats-to-biodiversity.md) | `m66709` | metadata matched | 3/3 | 4/4 | 99% | 0/0 | 13 |
+| [biology 47.4](../../content/life-health-sciences/biology/47-conservation-biology-and-biodiversity/04-preserving-biodiversity.md) | `m66710` | metadata matched | 5/5 | 3/3 | 98% | 0/0 | 16 |

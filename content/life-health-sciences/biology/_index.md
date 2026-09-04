@@ -5,7 +5,6 @@ license: CC BY-NC-SA 4.0
 source: OpenStax Biology 2e
 seo_title: "Biology – Free Interactive Biology Textbook | Athenaeum Populi"
 linkTitle: "Overview"
-authoring_status: scaffolded
 cascade:
   type: docs
 ---
@@ -15,12 +14,6 @@ ecology of the whole planet. This book is the two-semester majors course:
 it starts with the chemical building blocks of living things and the cell,
 moves through genetics and evolution, surveys the diversity of life, and
 closes with how plants and animals are built and how ecosystems work.
-
-{{< callout type="warning" >}}
-  **This book is being written.** Chapters are published as they are
-  finished and verified, in order; the list below shows what is available
-  now and what is planned.
-{{< /callout >}}
 
 {{< callout type="info" >}}
   **Prerequisites:** none. High-school biology and chemistry help, but every
@@ -219,16 +212,33 @@ closes with how plants and animals are built and how ecosystems work.
   system, the adaptive response of T cells, B cells, and memory, antibody
   structure, classes, and function, and hypersensitivities, autoimmunity,
   and immunodeficiency.
+- **Animal Reproduction and Development** — asexual and sexual
+  reproduction and external and internal fertilization, human reproductive
+  anatomy and gametogenesis, the hormonal control of reproduction, pregnancy,
+  birth, and contraception, and fertilization, cleavage, gastrulation,
+  organogenesis, and axis formation in the embryo.
 
-## Planned contents
+### Unit 8: Ecology
 
-Biology 2e has eight units and 47 chapters. Beyond the chapters listed
-above, the following are still to come, in this order:
-
-- **Unit 7: Animal Structure and Function** (remainder) — Animal
-  Reproduction and Development.
-- **Unit 8: Ecology** — Ecology and the Biosphere; Population and Community
-  Ecology; Ecosystems; Conservation Biology and Biodiversity.
+- **Ecology and the Biosphere** — the levels of ecological study,
+  biogeography and the abiotic factors that set species distributions, the
+  terrestrial and aquatic biomes, and climate, weather, and the causes and
+  effects of global climate change.
+- **Population and Community Ecology** — population size, density,
+  dispersion, and demography, life histories, exponential and logistic
+  growth and its limits, population regulation, human population growth,
+  community interactions and succession, and the proximate and ultimate
+  causes of animal behavior.
+- **Ecosystems** — the types of ecosystems and how ecologists model them,
+  food chains and food webs, how energy flows and is lost between trophic
+  levels, ecological pyramids, and the biogeochemical cycles of water,
+  carbon, nitrogen, phosphorus, and sulfur and how human activity disrupts
+  them.
+- **Conservation Biology and Biodiversity** — how biodiversity is measured
+  and where it is concentrated, the five mass extinctions and today's
+  extinction rates, why biodiversity matters to human life, the threats of
+  habitat loss, overharvesting, exotic species, and climate change, and the
+  laws, preserves, restoration, and captive breeding that protect it.
 
 ## About this edition
 

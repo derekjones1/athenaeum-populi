@@ -44,10 +44,10 @@ for cumulative knowledge checks. Content lives under `content/` in the
 hierarchy Subject → Book → Chapter → Section.
 
 The completed OpenStax math books also have a pinned, report-only source
-reconciliation workflow, now shared by the `in-progress` Biology 2e.
+reconciliation workflow, now shared by the completed Biology 2e.
 See
 [docs/source/openstax-source-workflow.md](docs/source/openstax-source-workflow.md) before
-changing those books. `npm run source:verify` checks the committed 456-section
+changing those books. `npm run source:verify` checks the committed 482-section
 map offline; after `npm run source:fetch`, `npm run source:check` audits the
 local pages without rewriting them.
 

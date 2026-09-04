@@ -167,7 +167,7 @@ test('the source lock pins one upstream bundle per book', () => {
   assert.equal(lock.books.get('prealgebra').authoringStatus, 'complete');
   assert.equal(lock.bundles['college-algebra-bundle'].moduleScope, 'mapped-collections');
   assert.equal(lock.books.get('biology').bundleKey, 'biology-bundle');
-  assert.equal(lock.books.get('biology').authoringStatus, 'in-progress');
+  assert.equal(lock.books.get('biology').authoringStatus, 'complete');
   assert.equal(lock.books.get('biology').contentPath, 'content/life-health-sciences/biology');
   assert.equal(lock.bundles['biology-bundle'].moduleScope, 'mapped-collections');
 });
@@ -208,17 +208,17 @@ test('formatTriesCoverage reports n/a rather than 0/0 for a book with no note.tr
   assert.equal(formatTriesCoverage(3, 5), '3/5');
 });
 
-test('committed provenance maps all 430 local sections exactly once', () => {
+test('committed provenance maps all 482 local sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 456);
-  assert.equal(result.actualCount, 456);
+  assert.equal(result.expectedCount, 482);
+  assert.equal(result.actualCount, 482);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
   assert.equal(counts['intermediate-algebra'].length, 70);
   assert.equal(counts.precalculus.length, 73);
-  assert.equal(counts.biology.length, 182);
+  assert.equal(counts.biology.length, 208);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
@@ -259,11 +259,11 @@ test('the Biology book is pinned and in progress, its local landings and mapped 
   assert.deepEqual(result.map.books.biology, {
     bundle: 'biology-bundle',
     contentPath: 'content/life-health-sciences/biology',
-    authoringStatus: 'in-progress',
+    authoringStatus: 'complete',
     upstreamChapters: 47,
     upstreamSections: 208,
-    localChapters: 42,
-    mappedSections: 182,
+    localChapters: 47,
+    mappedSections: 208,
     // The source's unit → chapter grouping, recorded so the sidebar can nest
     // chapters under their unit and so the grouping cannot drift from the
     // pinned collection. Every chapter 1–47 in exactly one unit.

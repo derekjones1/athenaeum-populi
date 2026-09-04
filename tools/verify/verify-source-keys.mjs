@@ -300,6 +300,34 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     erratum: 223,
     reason: 'source keys "A and B" (cortex and pith; phloem) and its solution names the epidermis, which is not an option; the module describes phloem as sieve-tube cells, companion cells, phloem parenchyma, and fibers and says only the cortex and pith are "composed of parenchyma cells" — the page keys A alone',
   },
+  {
+    page: 'content/life-health-sciences/biology/43-animal-reproduction-and-development/03-human-reproductive-anatomy-and-gametogenesis.md',
+    exercise: 'fs-idm37463664',
+    kind: 'key',
+    erratum: 276,
+    reason: 'source keys "seminiferous tubules" for where most of the semen is made, but the module\'s own text says "The seminal vesicle glands account for 60 percent of the bulk of semen", "Prostate gland secretions account for about 30 percent", and that spermatic duct secretions are "about 10 percent of the total"; the page keys "seminal vesicles"',
+  },
+  {
+    page: 'content/life-health-sciences/biology/43-animal-reproduction-and-development/04-hormonal-control-of-human-reproduction.md',
+    exercise: 'fs-idm71478992',
+    kind: 'options',
+    erratum: 278,
+    reason: 'source keys "progesterone" for the hormone that causes endometrial regrowth and lists "estrogen" as a distractor, but the module\'s own text says "Estradiol is the reproductive hormone in females that assists in endometrial regrowth" and that the endometrium "begins to regrow" as estrogen levels rise, so that distractor is also true; the page keeps the key and replaces "estrogen" with "inhibin", which the module gives only an FSH-inhibiting role',
+  },
+  {
+    page: 'content/life-health-sciences/biology/45-population-and-community-ecology/05-human-population-growth.md',
+    exercise: 'fs-idm142904224',
+    kind: 'key',
+    erratum: 290,
+    reason: 'source keys "economically underdeveloped" for a country with zero population growth, but the module\'s own text says "Other developed countries, such as Italy, have zero population growth" and places the highest growth "in less economically developed countries of Africa and Asia"; the page keys "economically developed"',
+  },
+  {
+    page: 'content/life-health-sciences/biology/46-ecosystems/02-energy-flow-through-ecosystems.md',
+    exercise: 'fs-idm130633648',
+    kind: 'key',
+    erratum: 298,
+    reason: 'source keys "chemoautotrophs" as the term that encompasses all organisms that make their own food using inorganic molecules, but the module\'s own text says "Photosynthetic and chemosynthetic organisms are both grouped into a category known as autotrophs: organisms capable of synthesizing their own food (more specifically, capable of using inorganic carbon as a carbon source)"; chemoautotrophs is the subset that excludes the photoautotrophs; the page keys "autotrophs"',
+  },
 ]);
 
 /* ---- source side ---------------------------------------------------------- */

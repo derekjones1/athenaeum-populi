@@ -101,6 +101,8 @@ const filesWarnAt = 0.9;
 // of biology + 158.4 MiB math = ~286 MiB projected. 350 MiB keeps ~22%
 // headroom over that. The sidebar itself — ~1.1 KiB of markup per link on
 // every page of the book — is the thing to shrink if this trips again.
+// Measured at completion (September 3, 2026; 47 biology chapters, 600 HTML
+// documents): 254.3 MiB of HTML, under the projection; the cap stayed at 350.
 const maxTotalHtmlBytes = 350 * 1024 * 1024;
 const maxPageBytes = 1.5 * 1024 * 1024;
 const maxPageElements = 35_000;
