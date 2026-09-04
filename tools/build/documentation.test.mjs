@@ -20,6 +20,7 @@ import { fileURLToPath } from 'node:url';
 import { relative, sep } from 'node:path';
 import { ANSWER_FORM_TOKENS } from '../../assets/js/lib/math/check-answer.mjs';
 import { walkMarkdown } from '../lib/content.mjs';
+import { BOOK_RULES } from '../lint/lints.mjs';
 
 const repositoryRoot = new URL('../../', import.meta.url);
 const repositoryRootPath = fileURLToPath(repositoryRoot);
@@ -56,6 +57,10 @@ const GENERATED_OR_LOCAL_DOCS = new Set([
   'openstax-existing-biology-audit.md',
   'openstax-upstream-history-audit.md',
   'openstax-errata.md',
+  // A gitignored local planning note (never committed, absent in CI): walking
+  // it here made the command-parity gate pass locally on a claim CI could not
+  // see.
+  'accounts-plan.md',
 ]);
 const AGENT_DOCS = ['AGENTS.md', 'README.md', 'CLAUDE.md'];
 const PROSE_DOCS = [
@@ -74,7 +79,7 @@ test('the playbooks live in docs/ only', () => {
   // linked to those routes and they were absent from the nav and the legacy
   // route manifest, so the mirror was deleted rather than kept in sync. Guard
   // against it coming back.
-  for (const name of ['authoring-playbook.md', 'knowledge-check-playbook.md']) {
+  for (const name of ['authoring-playbook.md', 'knowledge-check-playbook-math.md', 'knowledge-check-playbook-life-sciences.md']) {
     assert.ok(
       exists(`docs/${name}`),
       `docs/${name} is the canonical location for this playbook`,
@@ -145,15 +150,79 @@ test('AGENTS.md documents the ledger result-file shape the merge reads', () => {
   assert.match(agents, /fail the merge with nothing written/);
 });
 
-test('the knowledge-check playbook documents the overlap and identity rules', () => {
-  const knowledgeChecks = read('docs/knowledge-check-playbook.md');
-  assert.match(knowledgeChecks, /must not overlap/);
-  assert.match(knowledgeChecks, /filename, title,\s+`source_chapters`/);
-  assert.match(knowledgeChecks, /exercise, problem, and solution element IDs/);
-  // Knowledge-check questions are ledger-covered exercises like any other,
-  // and this playbook overloads the word "ledger" for its source-audit notes
-  // — so the verify list must name the answer ledger explicitly.
-  assert.match(knowledgeChecks, /\*\*answer ledger\*\*/);
+test('the core owns the shared knowledge-check rules and both editions point at it', () => {
+  // The overlap/identity rule used to be stated verbatim in both editions;
+  // it lives once in the core now, and each edition delegates.
+  const core = read('docs/authoring-playbook.md');
+  assert.match(core, /### Knowledge Checks \(both editions\)/);
+  assert.match(core, /must not overlap/);
+  assert.match(core, /filename, title,\s+`source_chapters`/);
+  for (const name of ['knowledge-check-playbook-math.md', 'knowledge-check-playbook-life-sciences.md']) {
+    const knowledgeChecks = read(`docs/${name}`);
+    assert.match(knowledgeChecks, /authoring-playbook\.md[^\n]*Knowledge Checks/, `${name} points at the core's shared rules`);
+    assert.doesNotMatch(knowledgeChecks, /must not overlap/, `${name} no longer restates the overlap rule`);
+    // Knowledge-check questions are ledger-covered exercises like any other,
+    // and these playbooks overload the word "ledger" for their source-audit
+    // notes — so the verify list must name the answer ledger explicitly.
+    assert.match(knowledgeChecks, /\*\*answer ledger\*\*/, name);
+  }
+  assert.match(read('docs/knowledge-check-playbook-math.md'), /exercise, problem, and solution element IDs/);
+});
+
+test('the biology subject playbook states its lint-backed rules', () => {
+  // The only subject playbook that had no assertion at all. The practice
+  // floor is derived from the lint's own table rather than restated here.
+  const biology = read('docs/subjects/biology.md');
+  const floor = BOOK_RULES['life-health-sciences/biology'].practice;
+  const stated = biology.match(/floor is (\d+) exercises per objective group and (\d+) per section/);
+  assert.ok(stated, 'docs/subjects/biology.md must state the practice floor in digits');
+  assert.equal(Number(stated[1]), floor.perObjective, 'the per-objective floor matches BOOK_RULES');
+  assert.equal(Number(stated[2]), floor.perSection, 'the per-section floor matches BOOK_RULES');
+  assert.match(biology, /data\/media\/<book>\.json|data\/media\/biology\.json/, 'the mediafigure manifest rule');
+  assert.match(biology, /knowledge-check-playbook-life-sciences\.md/, 'the KC playbook pointer');
+  assert.match(biology, /None of the eight unit Knowledge Checks is authored yet/, 'the honest status of the unit checks');
+});
+
+test('the math playbook states the graph-recognition companion rule the lint enforces', () => {
+  assert.match(read('docs/subjects/math.md'), /carries at least one `mode="graph"` multiplechoice/);
+});
+
+test('the graphplot-conversion ledger stays retired', () => {
+  // Retired once every entry was adjudicated `keep`; a tool with no queue
+  // and no ratchet drifted (8 unread candidates went unnoticed). Its docs
+  // went with it — a doc naming `graphable:` sends an agent to a command
+  // package.json no longer defines.
+  assert.equal(exists('tools/verify/graphplot-conversion.mjs'), false);
+  assert.equal(exists('data/verification/graphplot-conversion-ledger.json'), false);
+  for (const name of Object.keys(packageJson.scripts)) assert.doesNotMatch(name, /^graphable:/);
+  for (const path of PROSE_DOCS) assert.doesNotMatch(read(path), /graphable:|graphplot-conversion/, path);
+});
+
+test('the upstream-history audit report is as fresh as the section map', () => {
+  // The report is committed, and it once sat 253 sections behind the map
+  // ("precalculus … scaffolded, 28 sections mapped") for a month: the
+  // workflow doc pins the regeneration command, but nothing pinned that it
+  // had been run.
+  const sourceMap = JSON.parse(read('data/openstax/source-map.json'));
+  const report = read('docs/source/openstax-upstream-history-audit.md');
+  assert.equal(
+    Number(capture('docs/source/openstax-upstream-history-audit.md', /Mapped local sections: (\d+)/, 'the mapped-section count')),
+    sourceMap.sections.length,
+    'regenerate with `npm run source:history -- --output docs/source/openstax-upstream-history-audit.md`',
+  );
+  assert.doesNotMatch(report, /scaffolded/, 'no book is scaffolded any more');
+});
+
+test('the life-sciences knowledge-check playbook documents its quota, unit placement, and source rules', () => {
+  // These three rules are what make a biology Knowledge Check different from
+  // a math one; the quota is real lint surface (KC_SECTION_QUOTAS in
+  // tools/lint/lints.mjs), so the playbook must state the number.
+  const lifeSciences = read('docs/knowledge-check-playbook-life-sciences.md');
+  assert.match(lifeSciences, /exactly three items/i);
+  assert.match(lifeSciences, /one page per unit/i);
+  assert.match(lifeSciences, /may not duplicate a section Practice item/i);
+  assert.match(lifeSciences, /at least one auto-graded item/);
+  assert.match(lifeSciences, /===CHECKS===/);
 });
 
 test('the OpenStax workflow doc documents every pinned bundle', () => {
@@ -356,17 +425,20 @@ const VERSION_CLAIMS = [
     ['hugo.toml', /v(\d+(?:\.\d+)*) for Hugo/],
     ['AGENTS.md', /KaTeX (\d+(?:\.\d+)*) CSS/],
     ['docs/architecture.md', /KaTeX (\d+(?:\.\d+)*) assets/],
+    ['README.md', /KaTeX (\d+(?:\.\d+)*), MathLive/],
   ]],
   ['MathLive', [
     ['package.json', /"mathlive": "(\d+(?:\.\d+)*)"/],
     ['package.json', /MathLive (\d+(?:\.\d+)*) and/],
     ['docs/architecture.md', /MathLive (\d+(?:\.\d+)*) and/],
+    ['README.md', /MathLive (\d+(?:\.\d+)*), and/],
   ]],
   ['compute-engine', [
     ['package.json', /"@cortex-js\/compute-engine": "(\d+(?:\.\d+)*)"/],
     ['package.json', /compute-engine (\d+(?:\.\d+)*) are pinned/],
     ['docs/architecture.md', /compute-engine` (\d+(?:\.\d+)*) are excluded/],
     ['docs/subjects/math.md', /Measured against the pinned\s+(\d+(?:\.\d+)*) the engine/],
+    ['README.md', /compute-engine (\d+(?:\.\d+)*)\./],
   ]],
   ['Pagefind', [
     ['package.json', /"pagefind": "(\d+(?:\.\d+)*)"/],
@@ -430,12 +502,12 @@ test('the vendored theme records what it is and how it may be changed', () => {
 test('the mapped-section count in the docs matches the source map', () => {
   const sourceMap = JSON.parse(read('data/openstax/source-map.json'));
   const mapped = sourceMap.sections.length;
+  // ONE prose site, deliberately. The count used to be restated in five docs
+  // and derived-then-checked in each — a tax on every authoring session. The
+  // workflow doc describes the map, so it is the one place the number is
+  // stated; every other doc says "the committed section map".
   const sites = [
-    ['AGENTS.md', /verify the committed (\d+)-section map/],
-    ['README.md', /checks the committed (\d+)-section/],
-    ['docs/architecture.md', /(\d+)-section map under `data\/openstax\/`/],
     ['docs/source/openstax-source-workflow.md', /connects all (\d+) authored/],
-    ['docs/authoring-playbook.md', /All (\d+) mapped\s+sections carry the block/],
   ];
   for (const [path, pattern] of sites) {
     assert.equal(

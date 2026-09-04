@@ -18,26 +18,28 @@ import { quadraticThroughVertex } from '../../lib/math/graph-algebra.mjs';
 // The one U+2212 formatter. This file used to carry its own copy, so a change
 // to the shared one silently missed the point-handle labels.
 import { mathMinus as fmt } from '../../lib/math/graph-core.mjs';
+import { mountHintToggle } from '../../lib/shared/hint-toggle.mjs';
+import { TONE } from '../../lib/shared/colors.mjs';
+import { focusGuard } from '../../lib/shared/focus.mjs';
 
 const SVGNS = 'http://www.w3.org/2000/svg';
 const camelToKebab = (s) => s.replace(/[A-Z]/g, (m) => '-' + m.toLowerCase());
 
-// The `--ap-*` fallback hexes below duplicate assets/css/custom.css, which is
-// the source of truth for the palette. They exist only for the moment before
-// the stylesheet applies; keep them in step with custom.css when it changes.
+// Status → shared feedback tone (colors.mjs owns the palette fallbacks).
+// Every partial-credit status is a warning: right in part, not yet right.
 const COLOR = {
-  correct: 'var(--ap-success, #1a7f37)',
-  incorrect: 'var(--ap-error, #b42318)',
-  needMore: 'var(--ap-muted, #6f6e69)',
-  slopeRight: 'var(--ap-warning, #9a6700)',
-  interceptRight: 'var(--ap-warning, #9a6700)',
-  systemPartial: 'var(--ap-warning, #9a6700)',
-  vertexRight: 'var(--ap-warning, #9a6700)',
-  shapeRight: 'var(--ap-warning, #9a6700)',
-  pointsPartial: 'var(--ap-warning, #9a6700)',
-  asymptotePartial: 'var(--ap-warning, #9a6700)',
-  notCollinear: 'var(--ap-warning, #9a6700)',
-  notOnParabola: 'var(--ap-warning, #9a6700)',
+  correct: TONE.success,
+  incorrect: TONE.error,
+  needMore: TONE.muted,
+  slopeRight: TONE.warning,
+  interceptRight: TONE.warning,
+  systemPartial: TONE.warning,
+  vertexRight: TONE.warning,
+  shapeRight: TONE.warning,
+  pointsPartial: TONE.warning,
+  asymptotePartial: TONE.warning,
+  notCollinear: TONE.warning,
+  notOnParabola: TONE.warning,
 };
 // Instruction sentences spell counts out ("three points"), matching the prose
 // register of the fixed strings below. plotPoints is capped at 12, so the
@@ -140,27 +142,7 @@ class GraphPlotElement extends HTMLElement {
 
     this.wrap.append(instr, this.svg, row, this.feedback);
 
-    if (this.hintHTML) {
-      const hintId = `ap-graphplot-hint-${++idSequence}`;
-      const hintBtn = document.createElement('button');
-      hintBtn.type = 'button';
-      hintBtn.className = 'ap-fillin-hint-toggle';
-      hintBtn.textContent = 'Show hint';
-      hintBtn.setAttribute('aria-expanded', 'false');
-      hintBtn.setAttribute('aria-controls', hintId);
-      const hint = document.createElement('p');
-      hint.id = hintId;
-      hint.className = 'ap-fillin-hint';
-      hint.hidden = true;
-      hint.innerHTML = this.hintHTML;
-      hintBtn.addEventListener('click', () => {
-        const show = hint.hidden;
-        hint.hidden = !show;
-        hintBtn.textContent = show ? 'Hide hint' : 'Show hint';
-        hintBtn.setAttribute('aria-expanded', String(show));
-      });
-      this.wrap.append(hintBtn, hint);
-    }
+    mountHintToggle(this.wrap, this.hintHTML);
   }
 
   _instructionsText() {
@@ -420,14 +402,11 @@ class GraphPlotElement extends HTMLElement {
     this.status = status;
     if (status === 'correct') {
       this.done = true;
-      // Disabling the focused Check button drops focus to <body>. Move focus
-      // to the result first whenever it is anywhere inside the component.
-      const hadFocus = this.contains(document.activeElement);
+      // Disabling the focused Check button drops focus to <body>; hand focus
+      // to the verdict first whenever it sits inside the component (focus.mjs).
+      const restoreFocus = focusGuard(this);
       this.feedback.innerHTML = this.answerDisplayHTML ? `Correct — ${this.answerDisplayHTML}.` : 'Correct!';
-      if (hadFocus) {
-        this.feedback.setAttribute('tabindex', '-1');
-        this.feedback.focus();
-      }
+      restoreFocus(this.feedback);
       this.checkBtn.disabled = this.clearBtn.disabled = this.addBtn.disabled = true;
     } else {
       this.feedback.textContent = this._message(status);

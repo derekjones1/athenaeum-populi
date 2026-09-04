@@ -1,19 +1,31 @@
 /**
  * One-command verification for a section page (Hugo edition).
  *
- *   node tools/verify/verify-section.mjs content/math/<book>/<ch>/<sec>.md [...]
+ *   node tools/verify/verify-section.mjs [--skip-lint] content/<subject>/<book>/<ch>/<sec>.md [...]
  *
  * Runs, per file:
  *   1. mechanical lints (tools/lint/lints.mjs)
  *   2. KaTeX render of every $…$ / $$…$$ math run (catches broken LaTeX)
  *   3. every {{< fillin >}} answer through the REAL grader (check-answer.mjs):
- *      it must self-grade 'correct' — a malformed/ungradeable answer fails here
+ *      it must self-grade 'correct' under its own answerForm — a
+ *      malformed, ungradeable, or mistagged answer fails here
  *   4. prop-math: question / hint / answerDisplay $…$ runs must render, no
  *      unpaired bare "$" (money must be \$)
  *   5. {{< multiplechoice >}} (text): answer must be one of the options
+ *   6. {{< graphplot >}}: the config parses through the browser's own schema
+ *   7. {{< textin >}}: answer and every accept member self-grade 'correct'
+ *      through the word grader; {{< sortbins >}}: the config parses through
+ *      the real parser and the keyed assignment grades 'correct'
+ *   8. {{< selfcheck >}}: the inner model answer is present
+ *   9. {{< mediafigure >}}: src resolves to a vendored manifest entry, alt
+ *      is present
  *
- * Exit 0 + "ALL CLEAN" = passes. ⚠ = human glance and does not fail. Uses
- * KaTeX plus the production answer grader.
+ * Steps 1–2 are the pass `npm run lint` makes over the whole corpus;
+ * verify-all passes `--skip-lint` so `npm test` runs them once, not twice.
+ * An author's per-page run keeps them.
+ *
+ * Exit 1 on any ✗, else `✓ N section(s) verified.` — every finding fails;
+ * there is no non-failing tier.
  */
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -23,10 +35,19 @@ import { parseGraphPlotConfig } from '../../assets/js/lib/math/graph-plot-config
 import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 import { checkSortbins, parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
 import { lintHugo } from '../lint/lints.mjs';
-import { hasUnpairedDollar, mathSpans, shortcodes } from '../lib/content.mjs';
+import { parseCliArgs } from '../lib/cli.mjs';
+import { hasUnpairedDollar, maskCode, mathSpans, shortcodes } from '../lib/content.mjs';
 
-const files = process.argv.slice(2);
-if (!files.length) { console.error('usage: node tools/verify/verify-section.mjs <file.md> [...]'); process.exit(2); }
+const usage = (detail) => {
+  if (detail) console.error(`verify-section: ${detail}`);
+  console.error('usage: node tools/verify/verify-section.mjs [--skip-lint] <file.md> [...]');
+  process.exit(2);
+};
+let cli;
+try { cli = parseCliArgs(process.argv.slice(2), { boolFlags: ['skip-lint'], positional: { name: 'file' } }); } catch (error) { usage(error.message); }
+const files = cli.positional;
+const skipLint = cli.bool('skip-lint');
+if (!files.length) usage();
 
 let fail = 0;
 // Failures go to stderr, like every other verifier in tools/: a caller that
@@ -85,20 +106,20 @@ for (const f of files) {
   console.log(`\n== ${f}`);
   currentFile = f;
   const src = readFileSync(f, 'utf8');
-  const interactiveSrc = src
-    .replace(/```[\s\S]*?```/g, ' ')
-    .replace(/`[^`\n]*`/g, ' ');
+  const interactiveSrc = maskCode(src);
 
-  // 1. mechanical lints — every rule is an error, there is no warning level
-  lintHugo(src, f).errors.forEach(bad);
+  if (!skipLint) {
+    // 1. mechanical lints — every rule is an error, there is no warning level
+    lintHugo(src, f).errors.forEach(bad);
 
-  // 2. body math
-  for (const { tex, display } of mathSpans(src, { maskCode: true })) {
-    try { katex.renderToString(tex, { displayMode: display, throwOnError: true, strict: 'ignore' }); }
-    catch (e) {
-      bad(display
-        ? `display math fails KaTeX — ${e.message.slice(0, 70)}`
-        : `inline math "$${tex.slice(0, 40)}$" fails KaTeX — ${e.message.slice(0, 60)}`);
+    // 2. body math
+    for (const { tex, display } of mathSpans(src, { maskCode: true })) {
+      try { katex.renderToString(tex, { displayMode: display, throwOnError: true, strict: 'ignore' }); }
+      catch (e) {
+        bad(display
+          ? `display math fails KaTeX — ${e.message.slice(0, 70)}`
+          : `inline math "$${tex.slice(0, 40)}$" fails KaTeX — ${e.message.slice(0, 60)}`);
+      }
     }
   }
 
@@ -167,7 +188,7 @@ for (const f of files) {
         }
       }
     }
-    for (const name of ['question', 'hint', 'answerDisplay']) propMath(where, name, p[name]);
+    for (const name of ['question', 'hint']) propMath(where, name, p[name]);
   }
 
   // 7b. sortbins — config through the REAL parser (the same module the

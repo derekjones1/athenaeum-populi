@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import test from 'node:test';
 import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -15,22 +16,24 @@ function verify() {
   });
 }
 
-try {
-  writeFileSync(
-    join(docs, 'architecture.md'),
-    '---\ntitle: Architecture\n---\n\nReact, JSX, MDX, and Nextra metadata are not valid authoring formats.\n',
-  );
-  assert.equal(verify().status, 0, 'accurate negative descriptions of legacy tools should pass');
+test('content verifier: stale affirmative MDX instructions rejected without false positives', () => {
+  try {
+    writeFileSync(
+      join(docs, 'architecture.md'),
+      '---\ntitle: Architecture\n---\n\nReact, JSX, MDX, and Nextra metadata are not valid authoring formats.\n',
+    );
+    assert.equal(verify().status, 0, 'accurate negative descriptions of legacy tools should pass');
 
-  writeFileSync(
-    join(docs, 'architecture.md'),
-    '---\ntitle: Architecture\n---\n\nCreate `content/example.mdx` and register it in `_meta.js`.\n',
-  );
-  const stale = verify();
-  assert.notEqual(stale.status, 0);
-  assert.match(stale.stderr, /stale MDX file paths|stale Nextra metadata files/);
-} finally {
-  rmSync(fixture, { recursive: true, force: true });
-}
+    writeFileSync(
+      join(docs, 'architecture.md'),
+      '---\ntitle: Architecture\n---\n\nCreate `content/example.mdx` and register it in `_meta.js`.\n',
+    );
+    const stale = verify();
+    assert.notEqual(stale.status, 0);
+    assert.match(stale.stderr, /stale MDX file paths|stale Nextra metadata files/);
+  } finally {
+    rmSync(fixture, { recursive: true, force: true });
+  }
 
-console.log('content verifier: stale affirmative MDX instructions rejected without false positives');
+  console.log('content verifier: stale affirmative MDX instructions rejected without false positives');
+});

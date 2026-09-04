@@ -44,7 +44,6 @@
 }
 
 /* Comfortable reading measure for long-form study material. */
-.hextra-content,
 .content {
   line-height: 1.7;
 }
@@ -93,15 +92,41 @@ nav.hextra-toc a {
   outline-offset: 2px;
 }
 
-/* --- Interactive exercise components ----------------------------------- */
-.ap-fillin {
+/* --- Shared exercise-card families ------------------------------------------
+   Six components, one card: the same bordered box, question line, action
+   button, disabled dimming, and feedback line. Each family is stated ONCE
+   here and overridden in a component's own block only where it genuinely
+   differs (sort-bins is wider; graph-plot's question sits tighter above its
+   instruction line; a multiple-choice option pads wider than an action
+   button). Six near-identical copies used to drift one property at a time. */
+.ap-fillin, .ap-mc, .ap-graphplot, .ap-textin, .ap-selfcheck, .ap-sortbins {
   border: 1px solid var(--ap-border, #d6d3cd);
   border-radius: 8px;
   padding: 1rem 1.25rem;
   margin: 1.5rem 0;
   max-width: 560px;
 }
-.ap-fillin-question { display: block; font-size: 16px; margin: 0 0 12px; }
+.ap-fillin-question, .ap-mc-question, .ap-graphplot-question, .ap-textin-question,
+.ap-selfcheck-question, .ap-sortbins-question { display: block; font-size: 16px; margin: 0 0 12px; }
+.ap-fillin-check, .ap-graphplot-btn, .ap-textin-check, .ap-selfcheck-mark,
+.ap-sortbins-place, .ap-sortbins-check {
+  font: inherit;
+  font-size: 15px;
+  padding: 6px 14px;
+  border: 1px solid var(--ap-border, #d6d3cd);
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+.ap-fillin-check:disabled, .ap-graphplot-btn:disabled, .ap-textin-check:disabled,
+.ap-selfcheck-mark:disabled, .ap-sortbins-place:disabled, .ap-sortbins-check:disabled,
+.ap-sortbins-item:disabled,
+.ap-sortbins-place[aria-disabled="true"], .ap-sortbins-check[aria-disabled="true"] { cursor: default; opacity: 0.55; }
+/* graph-plot writes its verdict into an .ap-fillin-feedback line too. */
+.ap-fillin-feedback, .ap-mc-feedback, .ap-textin-feedback, .ap-selfcheck-feedback,
+.ap-sortbins-feedback { font-size: 15px; margin: 10px 0 0; min-height: 22px; }
+
+/* --- Interactive exercise components ----------------------------------- */
 .ap-fillin-row { display: flex; gap: 8px; align-items: stretch; }
 .ap-fillin-field {
   flex: 1;
@@ -130,17 +155,6 @@ math-field.ap-fillin-field::part(placeholder) {
   color: #9ca3af;
 }
 
-.ap-fillin-check {
-  font: inherit;
-  font-size: 15px;
-  padding: 6px 14px;
-  border: 1px solid var(--ap-border, #d6d3cd);
-  border-radius: 6px;
-  background: transparent;
-  cursor: pointer;
-}
-.ap-fillin-check:disabled { cursor: default; opacity: 0.6; }
-.ap-fillin-feedback { font-size: 15px; margin: 10px 0 0; min-height: 22px; }
 .ap-fillin-hint-toggle {
   font: inherit;
   font-size: 13px;
@@ -198,14 +212,6 @@ ap-figure { display: block; }
 }
 
 /* --- <multiple-choice> ---------------------------------------------------- */
-.ap-mc {
-  border: 1px solid var(--ap-border, #d6d3cd);
-  border-radius: 8px;
-  padding: 1rem 1.25rem;
-  margin: 1.5rem 0;
-  max-width: 560px;
-}
-.ap-mc-question { display: block; font-size: 16px; margin: 0 0 12px; }
 .ap-mc-options { display: flex; flex-wrap: wrap; gap: 8px; }
 .ap-mc-option {
   font: inherit;
@@ -234,31 +240,13 @@ ap-figure { display: block; }
 .ap-mc-option.is-incorrect { border-color: var(--ap-error, #b42318); background: #fbeae8; }
 .dark .ap-mc-option.is-correct { background: rgba(63,185,80,0.12); }
 .dark .ap-mc-option.is-incorrect { background: rgba(248,81,73,0.12); }
-.ap-mc-feedback { font-size: 15px; margin: 10px 0 0; min-height: 22px; }
 
 /* --- <graph-plot> --------------------------------------------------------- */
-.ap-graphplot {
-  border: 1px solid var(--ap-border, #d6d3cd);
-  border-radius: 8px;
-  padding: 1rem 1.25rem;
-  margin: 1.5rem 0;
-  max-width: 560px;
-}
-.ap-graphplot-question { display: block; font-size: 16px; margin: 0 0 4px; }
+.ap-graphplot-question { margin: 0 0 4px; } /* tighter above the instruction line */
 .ap-graphplot-instructions { font-size: 13px; color: var(--ap-muted, #6f6e69); margin: 0 0 10px; }
 .ap-graphplot-svg { display: block; margin: 0 auto; max-width: 100%; height: auto; }
 .ap-graphplot-svg circle[role="button"]:focus-visible { outline: 2px solid hsl(var(--primary-hue) var(--primary-saturation) 50%); }
 .ap-graphplot-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
-.ap-graphplot-btn {
-  font: inherit;
-  font-size: 15px;
-  padding: 6px 14px;
-  border: 1px solid var(--ap-border, #d6d3cd);
-  border-radius: 6px;
-  background: transparent;
-  cursor: pointer;
-}
-.ap-graphplot-btn:disabled { cursor: default; opacity: 0.55; }
 .ap-graphplot-add { font-size: 13px; color: var(--ap-muted, #6f6e69); }
 
 /* --- Sidebar collapse: remove collapsed branches from focus/AT ------------
@@ -296,7 +284,11 @@ ap-figure { display: block; }
    until the element is defined; if JS never arrives, they stay visibly
    inactive. Between `:defined` and the name gate the `:disabled` rule above
    keeps them dimmed, so the dimming never blinks off and back on. */
-multiple-choice:not(:defined) .ap-mc-option {
+multiple-choice:not(:defined) .ap-mc-option,
+self-check:not(:defined) .ap-selfcheck-mark,
+sort-bins:not(:defined) .ap-sortbins-item,
+sort-bins:not(:defined) .ap-sortbins-place,
+sort-bins:not(:defined) .ap-sortbins-check {
   pointer-events: none;
   opacity: 0.55;
   cursor: default;
@@ -494,14 +486,6 @@ multiple-choice:not(:defined) .ap-mc-option {
 /* --- <text-in> ------------------------------------------------------------
    Short text answers (a term, a name). Same card as .ap-fillin; the field is a
    plain <input>, so there is no MathLive placeholder part to style. */
-.ap-textin {
-  border: 1px solid var(--ap-border, #d6d3cd);
-  border-radius: 8px;
-  padding: 1rem 1.25rem;
-  margin: 1.5rem 0;
-  max-width: 560px;
-}
-.ap-textin-question { display: block; font-size: 16px; margin: 0 0 12px; }
 .ap-textin-row { display: flex; gap: 8px; align-items: stretch; }
 .ap-textin-field {
   flex: 1;
@@ -519,27 +503,8 @@ multiple-choice:not(:defined) .ap-mc-option {
 .ap-textin-field::placeholder { color: #6f6e69; opacity: 1; }
 .dark .ap-textin-field::placeholder { color: #b0afa6; }
 .ap-textin-field:read-only { opacity: 0.8; }
-.ap-textin-check {
-  font: inherit;
-  font-size: 15px;
-  padding: 6px 14px;
-  border: 1px solid var(--ap-border, #d6d3cd);
-  border-radius: 6px;
-  background: transparent;
-  cursor: pointer;
-}
-.ap-textin-check:disabled { cursor: default; opacity: 0.6; }
-.ap-textin-feedback { font-size: 15px; margin: 10px 0 0; min-height: 22px; }
 
 /* --- <self-check> --------------------------------------------------------- */
-.ap-selfcheck {
-  border: 1px solid var(--ap-border, #d6d3cd);
-  border-radius: 8px;
-  padding: 1rem 1.25rem;
-  margin: 1.5rem 0;
-  max-width: 560px;
-}
-.ap-selfcheck-question { display: block; font-size: 16px; margin: 0 0 12px; }
 .ap-selfcheck-label { display: block; font-size: 13px; color: var(--ap-muted, #6f6e69); margin-bottom: 4px; }
 .ap-selfcheck-response {
   display: block;
@@ -565,19 +530,7 @@ multiple-choice:not(:defined) .ap-mc-option {
 .ap-selfcheck-model > :first-child { margin-top: 0; }
 .ap-selfcheck-model > :last-child { margin-bottom: 0; }
 .ap-selfcheck-marks { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
-.ap-selfcheck-mark {
-  font: inherit;
-  font-size: 15px;
-  padding: 6px 14px;
-  border: 1px solid var(--ap-border, #d6d3cd);
-  border-radius: 6px;
-  background: transparent;
-  cursor: pointer;
-}
-.ap-selfcheck-mark:disabled { cursor: default; opacity: 0.55; }
 .ap-selfcheck-mark[aria-pressed="true"] { border-color: currentColor; font-weight: 600; }
-.ap-selfcheck-feedback { font-size: 15px; margin: 10px 0 0; min-height: 22px; }
-self-check:not(:defined) .ap-selfcheck-mark { pointer-events: none; opacity: 0.55; cursor: default; }
 .ap-selfcheck-checkpoints { margin: 10px 0 0; }
 .ap-selfcheck-checkpoints-lead { font-size: 14px; font-weight: 600; margin: 0 0 6px; }
 .ap-selfcheck-checkpoints-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
@@ -589,14 +542,7 @@ self-check:not(:defined) .ap-selfcheck-checkpoint input { pointer-events: none; 
    bins sit side by side. Buttons ship natively `disabled` until the
    component wires them (the `:not(:defined)` rule is the visual half of
    that contract, like multiple-choice's). */
-.ap-sortbins {
-  border: 1px solid var(--ap-border, #d6d3cd);
-  border-radius: 8px;
-  padding: 1rem 1.25rem;
-  margin: 1.5rem 0;
-  max-width: 720px;
-}
-.ap-sortbins-question { display: block; font-size: 16px; margin: 0 0 12px; }
+.ap-sortbins { max-width: 720px; }
 .ap-sortbins-tray { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; min-height: 38px; }
 .ap-sortbins-item {
   font: inherit;
@@ -637,26 +583,7 @@ self-check:not(:defined) .ap-selfcheck-checkpoint input { pointer-events: none; 
   min-height: 24px;
 }
 .ap-sortbins-place,
-.ap-sortbins-check {
-  font: inherit;
-  font-size: 15px;
-  padding: 6px 14px;
-  border: 1px solid var(--ap-border, #d6d3cd);
-  border-radius: 6px;
-  background: transparent;
-  cursor: pointer;
-  align-self: flex-start;
-}
-.ap-sortbins-place:disabled,
-.ap-sortbins-check:disabled,
-.ap-sortbins-item:disabled { cursor: default; opacity: 0.55; }
-.ap-sortbins-place[aria-disabled="true"],
-.ap-sortbins-check[aria-disabled="true"] { cursor: default; opacity: 0.55; }
-.ap-sortbins-feedback { font-size: 15px; margin: 10px 0 0; min-height: 22px; }
-sort-bins:not(:defined) .ap-sortbins-item,
-sort-bins:not(:defined) .ap-sortbins-place,
-sort-bins:not(:defined) .ap-sortbins-check { pointer-events: none; opacity: 0.55; cursor: default; }
-
+.ap-sortbins-check { align-self: flex-start; }
 
 /* --- mediafigure (vendored raster figures) ---------------------------------
    Photos and diagrams from the source book, served from /media/<book>/. Never

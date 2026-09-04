@@ -56,7 +56,7 @@ const W = {
 const DEFAULT_ADVANCE = 700
 
 /** Headroom for wider sans-serif fallbacks (DejaVu ≈ +8%) in the fit pass. */
-export const FIT_SAFETY = 1.1
+const FIT_SAFETY = 1.1
 
 /** Exact advance-sum width of `text` at `fontSize` px (placement scoring). */
 export function measureTextWidth(text, fontSize, { italic = false } = {}) {
@@ -69,7 +69,7 @@ export function measureTextWidth(text, fontSize, { italic = false } = {}) {
 }
 
 /** Conservative width for the viewBox fit pass. */
-export function fitTextWidth(text, fontSize, opts) {
+function fitTextWidth(text, fontSize, opts) {
   return measureTextWidth(text, fontSize, opts) * FIT_SAFETY
 }
 

@@ -11,22 +11,24 @@
 
 - `prealgebra-bundle` — [https://github.com/openstax/osbooks-prealgebra-bundle](https://github.com/openstax/osbooks-prealgebra-bundle), pinned `38cae454e644abf9f0a623e876994553881597c9`, audited checkout `38cae454e644abf9f0a623e876994553881597c9`
 - `college-algebra-bundle` — [https://github.com/openstax/osbooks-college-algebra-bundle](https://github.com/openstax/osbooks-college-algebra-bundle), pinned `789b54099106b071d1d32bfcee454fed72eb4768`, audited checkout `789b54099106b071d1d32bfcee454fed72eb4768`
+- `biology-bundle` — [https://github.com/openstax/osbooks-biology-bundle](https://github.com/openstax/osbooks-biology-bundle), pinned `63f8b6f8d129dd1582989bb755011e9a6d523471`, audited checkout `63f8b6f8d129dd1582989bb755011e9a6d523471`
 
 ## Coverage
 
-- Books with mapped sections: 4
-- Numbered sections mapped: 274
-- Metadata matched without a flag: 265
-- Intentional adaptations adjudicated: 7
-- Unresolved sections needing review: 2
+- Books with mapped sections: 5
+- Numbered sections mapped: 482
+- Metadata matched without a flag: 474
+- Intentional adaptations adjudicated: 8
+- Unresolved sections needing review: 0
 - Modules differing from the committed map: 0
-- Objectives automatically located: 1034/1038
-- Core instructional headings automatically located: 1108/1114
-- Local interactive questions inventoried: 7545
+- Objectives automatically located: 1687/1689
+- Core instructional headings automatically located: 1780/1786
+- Local interactive questions inventoried: 10422
 - Upstream Try It prompts with a likely local prompt match: 3847/4580
 
 | Book | Bundle | Authoring status | Chapters | Sections mapped |
 |---|---|---|---:|---:|
+| biology | `biology-bundle` | complete | 47/47 | 208/208 |
 | elementary-algebra | `prealgebra-bundle` | complete | 10/10 | 71/71 |
 | intermediate-algebra | `prealgebra-bundle` | complete | 12/12 | 70/70 |
 | prealgebra | `prealgebra-bundle` | complete | 11/11 | 60/60 |
@@ -40,6 +42,214 @@ or intentionally omitted print material.
 
 | Local section | Module | Status | Objectives | Headings | Prose trace | Try Its likely | Local interactions |
 |---|---|---|---:|---:|---:|---:|---:|
+| [biology 1.1](../../content/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology.md) | `m66427` | metadata matched | 4/4 | 4/4 | 96% | 0/0 | 14 |
+| [biology 1.2](../../content/life-health-sciences/biology/01-the-study-of-life/02-themes-and-concepts-of-biology.md) | `m66428` | metadata matched | 4/4 | 4/4 | 97% | 0/0 | 17 |
+| [biology 2.1](../../content/life-health-sciences/biology/02-the-chemical-foundation-of-life/01-atoms-isotopes-ions-and-molecules-the-building-blocks.md) | `m66430` | metadata matched | 4/4 | 9/9 | 94% | 0/0 | 14 |
+| [biology 2.2](../../content/life-health-sciences/biology/02-the-chemical-foundation-of-life/02-water.md) | `m66434` | metadata matched | 4/4 | 7/7 | 95% | 0/0 | 13 |
+| [biology 2.3](../../content/life-health-sciences/biology/02-the-chemical-foundation-of-life/03-carbon.md) | `m66436` | metadata matched | 2/2 | 4/4 | 95% | 0/0 | 9 |
+| [biology 3.1](../../content/life-health-sciences/biology/03-biological-macromolecules/01-synthesis-of-biological-macromolecules.md) | `m66438` | metadata matched | 2/2 | 2/2 | 95% | 0/0 | 8 |
+| [biology 3.2](../../content/life-health-sciences/biology/03-biological-macromolecules/02-carbohydrates.md) | `m66440` | metadata matched | 3/3 | 2/2 | 96% | 0/0 | 13 |
+| [biology 3.3](../../content/life-health-sciences/biology/03-biological-macromolecules/03-lipids.md) | `m66441` | metadata matched | 6/6 | 4/4 | 97% | 0/0 | 19 |
+| [biology 3.4](../../content/life-health-sciences/biology/03-biological-macromolecules/04-proteins.md) | `m66442` | metadata matched | 4/4 | 4/4 | 96% | 0/0 | 14 |
+| [biology 3.5](../../content/life-health-sciences/biology/03-biological-macromolecules/05-nucleic-acids.md) | `m66443` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 10 |
+| [biology 4.1](../../content/life-health-sciences/biology/04-cell-structure/01-studying-cells.md) | `m66445` | metadata matched | 3/3 | 2/2 | 98% | 0/0 | 13 |
+| [biology 4.2](../../content/life-health-sciences/biology/04-cell-structure/02-prokaryotic-cells.md) | `m66446` | metadata matched | 4/4 | 1/1 | 96% | 0/0 | 13 |
+| [biology 4.3](../../content/life-health-sciences/biology/04-cell-structure/03-eukaryotic-cells.md) | `m66449` | metadata matched | 4/4 | 8/8 | 97% | 0/0 | 14 |
+| [biology 4.4](../../content/life-health-sciences/biology/04-cell-structure/04-the-endomembrane-system-and-proteins.md) | `m66452` | metadata matched | 2/2 | 3/3 | 96% | 0/0 | 10 |
+| [biology 4.5](../../content/life-health-sciences/biology/04-cell-structure/05-the-cytoskeleton.md) | `m66454` | metadata matched | 4/4 | 3/3 | 97% | 0/0 | 16 |
+| [biology 4.6](../../content/life-health-sciences/biology/04-cell-structure/06-connections-between-cells-and-cellular-activities.md) | `m66455` | metadata matched | 3/3 | 2/2 | 97% | 0/0 | 12 |
+| [biology 5.1](../../content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/01-components-and-structure.md) | `m66373` | metadata matched | 3/3 | 2/2 | 98% | 0/0 | 11 |
+| [biology 5.2](../../content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/02-passive-transport.md) | `m66374` | metadata matched | 3/3 | 6/6 | 98% | 0/0 | 16 |
+| [biology 5.3](../../content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/03-active-transport.md) | `m66375` | metadata matched | 2/2 | 3/3 | 93% | 0/0 | 16 |
+| [biology 5.4](../../content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/04-bulk-transport.md) | `m66376` | metadata matched | 2/2 | 2/2 | 97% | 0/0 | 9 |
+| [biology 6.1](../../content/life-health-sciences/biology/06-metabolism/01-energy-and-metabolism.md) | `m66457` | metadata matched | 2/2 | 2/2 | 96% | 0/0 | 8 |
+| [biology 6.2](../../content/life-health-sciences/biology/06-metabolism/02-potential-kinetic-free-and-activation-energy.md) | `m66459` | metadata matched | 4/4 | 3/3 | 68% | 0/0 | 15 |
+| [biology 6.3](../../content/life-health-sciences/biology/06-metabolism/03-the-laws-of-thermodynamics.md) | `m66461` | metadata matched | 2/2 | 2/2 | 98% | 0/0 | 8 |
+| [biology 6.4](../../content/life-health-sciences/biology/06-metabolism/04-atp-adenosine-triphosphate.md) | `m66462` | metadata matched | 2/2 | 0/0 | 100% | 0/0 | 9 |
+| [biology 6.5](../../content/life-health-sciences/biology/06-metabolism/05-enzymes.md) | `m66463` | metadata matched | 3/3 | 2/2 | 98% | 0/0 | 11 |
+| [biology 7.1](../../content/life-health-sciences/biology/07-cellular-respiration/01-energy-in-living-systems.md) | `m66465` | metadata matched | 2/2 | 2/2 | 98% | 0/0 | 8 |
+| [biology 7.2](../../content/life-health-sciences/biology/07-cellular-respiration/02-glycolysis.md) | `m66466` | metadata matched | 2/2 | 3/3 | 98% | 0/0 | 8 |
+| [biology 7.3](../../content/life-health-sciences/biology/07-cellular-respiration/03-oxidation-of-pyruvate-and-the-citric-acid-cycle.md) | `m66467` | metadata matched | 2/2 | 3/3 | 99% | 0/0 | 8 |
+| [biology 7.4](../../content/life-health-sciences/biology/07-cellular-respiration/04-oxidative-phosphorylation.md) | `m66468` | metadata matched | 2/2 | 3/3 | 92% | 0/0 | 11 |
+| [biology 7.5](../../content/life-health-sciences/biology/07-cellular-respiration/05-metabolism-without-oxygen.md) | `m66469` | metadata matched | 2/2 | 1/1 | 90% | 0/0 | 9 |
+| [biology 7.6](../../content/life-health-sciences/biology/07-cellular-respiration/06-connections-of-carbohydrate-protein-and-lipid-metabolic-pathways.md) | `m66470` | metadata matched | 2/2 | 3/3 | 99% | 0/0 | 8 |
+| [biology 7.7](../../content/life-health-sciences/biology/07-cellular-respiration/07-regulation-of-cellular-respiration.md) | `m66471` | metadata matched | 2/2 | 2/2 | 97% | 0/0 | 8 |
+| [biology 8.1](../../content/life-health-sciences/biology/08-photosynthesis/01-overview-of-photosynthesis.md) | `m66473` | metadata matched | 3/3 | 3/3 | 94% | 0/0 | 13 |
+| [biology 8.2](../../content/life-health-sciences/biology/08-photosynthesis/02-the-light-dependent-reactions-of-photosynthesis.md) | `m66474` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 15 |
+| [biology 8.3](../../content/life-health-sciences/biology/08-photosynthesis/03-using-light-energy-to-make-organic-molecules.md) | `m66475` | metadata matched | 3/3 | 2/2 | 98% | 0/0 | 15 |
+| [biology 9.1](../../content/life-health-sciences/biology/09-cell-communication/01-signaling-molecules-and-cellular-receptors.md) | `m66378` | metadata matched | 3/3 | 3/3 | 96% | 0/0 | 14 |
+| [biology 9.2](../../content/life-health-sciences/biology/09-cell-communication/02-propagation-of-the-signal.md) | `m66379` | metadata matched | 3/3 | 2/2 | 94% | 0/0 | 10 |
+| [biology 9.3](../../content/life-health-sciences/biology/09-cell-communication/03-response-to-the-signal.md) | `m66380` | metadata matched | 3/3 | 5/5 | 97% | 0/0 | 13 |
+| [biology 9.4](../../content/life-health-sciences/biology/09-cell-communication/04-signaling-in-single-celled-organisms.md) | `m66383` | metadata matched | 2/2 | 2/2 | 95% | 0/0 | 11 |
+| [biology 10.1](../../content/life-health-sciences/biology/10-cell-reproduction/01-cell-division.md) | `m66477` | metadata matched | 3/3 | 2/2 | 99% | 0/0 | 11 |
+| [biology 10.2](../../content/life-health-sciences/biology/10-cell-reproduction/02-the-cell-cycle.md) | `m66478` | metadata matched | 4/4 | 3/3 | 96% | 0/0 | 17 |
+| [biology 10.3](../../content/life-health-sciences/biology/10-cell-reproduction/03-control-of-the-cell-cycle.md) | `m66479` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 13 |
+| [biology 10.4](../../content/life-health-sciences/biology/10-cell-reproduction/04-cancer-and-the-cell-cycle.md) | `m66480` | metadata matched | 4/4 | 2/2 | 94% | 0/0 | 14 |
+| [biology 10.5](../../content/life-health-sciences/biology/10-cell-reproduction/05-prokaryotic-cell-division.md) | `m66481` | metadata matched | 2/2 | 1/1 | 98% | 0/0 | 10 |
+| [biology 11.1](../../content/life-health-sciences/biology/11-meiosis-and-sexual-reproduction/01-the-process-of-meiosis.md) | `m66483` | metadata matched | 4/4 | 3/3 | 97% | 0/0 | 21 |
+| [biology 11.2](../../content/life-health-sciences/biology/11-meiosis-and-sexual-reproduction/02-sexual-reproduction.md) | `m66484` | metadata matched | 3/3 | 1/1 | 95% | 0/0 | 14 |
+| [biology 12.1](../../content/life-health-sciences/biology/12-mendels-experiments-and-heredity/01-mendels-experiments-and-the-laws-of-probability.md) | `m66486` | metadata matched | 3/3 | 4/4 | 98% | 0/0 | 12 |
+| [biology 12.2](../../content/life-health-sciences/biology/12-mendels-experiments-and-heredity/02-characteristics-and-traits.md) | `m66487` | metadata matched | 4/4 | 3/3 | 96% | 0/0 | 20 |
+| [biology 12.3](../../content/life-health-sciences/biology/12-mendels-experiments-and-heredity/03-laws-of-inheritance.md) | `m66488` | metadata matched | 4/4 | 6/6 | 97% | 0/0 | 15 |
+| [biology 13.1](../../content/life-health-sciences/biology/13-modern-understandings-of-inheritance/01-chromosomal-theory-and-genetic-linkage.md) | `m66491` | metadata matched | 5/5 | 2/2 | 96% | 0/0 | 17 |
+| [biology 13.2](../../content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md) | `m66494` | metadata matched | 4/4 | 7/7 | 98% | 0/0 | 17 |
+| [biology 14.1](../../content/life-health-sciences/biology/14-dna-structure-and-function/01-historical-basis-of-modern-understanding.md) | `m66386` | metadata matched | 3/3 | 0/0 | 100% | 0/0 | 9 |
+| [biology 14.2](../../content/life-health-sciences/biology/14-dna-structure-and-function/02-dna-structure-and-sequencing.md) | `m66387` | metadata matched | 3/3 | 1/1 | 95% | 0/0 | 11 |
+| [biology 14.3](../../content/life-health-sciences/biology/14-dna-structure-and-function/03-basics-of-dna-replication.md) | `m66389` | metadata matched | 2/2 | 0/0 | 100% | 0/0 | 8 |
+| [biology 14.4](../../content/life-health-sciences/biology/14-dna-structure-and-function/04-dna-replication-in-prokaryotes.md) | `m66390` | metadata matched | 2/2 | 0/0 | 100% | 0/0 | 11 |
+| [biology 14.5](../../content/life-health-sciences/biology/14-dna-structure-and-function/05-dna-replication-in-eukaryotes.md) | `m66391` | metadata matched | 2/2 | 1/1 | 97% | 0/0 | 8 |
+| [biology 14.6](../../content/life-health-sciences/biology/14-dna-structure-and-function/06-dna-repair.md) | `m66392` | metadata matched | 2/2 | 0/0 | 100% | 0/0 | 13 |
+| [biology 15.1](../../content/life-health-sciences/biology/15-genes-and-proteins/01-the-genetic-code.md) | `m66497` | metadata matched | 2/2 | 1/1 | 97% | 0/0 | 10 |
+| [biology 15.2](../../content/life-health-sciences/biology/15-genes-and-proteins/02-prokaryotic-transcription.md) | `m66498` | metadata matched | 3/3 | 3/3 | 98% | 0/0 | 10 |
+| [biology 15.3](../../content/life-health-sciences/biology/15-genes-and-proteins/03-eukaryotic-transcription.md) | `m66499` | metadata matched | 4/4 | 2/2 | 97% | 0/0 | 15 |
+| [biology 15.4](../../content/life-health-sciences/biology/15-genes-and-proteins/04-rna-processing-in-eukaryotes.md) | `m66500` | metadata matched | 3/3 | 2/2 | 96% | 0/0 | 13 |
+| [biology 15.5](../../content/life-health-sciences/biology/15-genes-and-proteins/05-ribosomes-and-protein-synthesis.md) | `m66501` | metadata matched | 2/2 | 3/3 | 99% | 0/0 | 12 |
+| [biology 16.1](../../content/life-health-sciences/biology/16-gene-expression/01-regulation-of-gene-expression.md) | `m66503` | metadata matched | 3/3 | 1/1 | 99% | 0/0 | 11 |
+| [biology 16.2](../../content/life-health-sciences/biology/16-gene-expression/02-prokaryotic-gene-regulation.md) | `m66504` | metadata matched | 2/2 | 3/3 | 94% | 0/0 | 12 |
+| [biology 16.3](../../content/life-health-sciences/biology/16-gene-expression/03-eukaryotic-epigenetic-gene-regulation.md) | `m66505` | metadata matched | 3/3 | 1/1 | 93% | 0/0 | 10 |
+| [biology 16.4](../../content/life-health-sciences/biology/16-gene-expression/04-eukaryotic-transcription-gene-regulation.md) | `m66506` | metadata matched | 2/2 | 3/3 | 99% | 0/0 | 10 |
+| [biology 16.5](../../content/life-health-sciences/biology/16-gene-expression/05-eukaryotic-post-transcriptional-gene-regulation.md) | `m66507` | metadata matched | 2/2 | 2/2 | 97% | 0/0 | 10 |
+| [biology 16.6](../../content/life-health-sciences/biology/16-gene-expression/06-eukaryotic-translational-and-post-translational-gene-regulation.md) | `m66508` | metadata matched | 3/3 | 2/2 | 92% | 0/0 | 10 |
+| [biology 16.7](../../content/life-health-sciences/biology/16-gene-expression/07-cancer-and-gene-regulation.md) | `m66509` | metadata matched | 3/3 | 6/6 | 99% | 0/0 | 9 |
+| [biology 17.1](../../content/life-health-sciences/biology/17-biotechnology-and-genomics/01-biotechnology.md) | `m66511` | metadata matched | 3/3 | 9/9 | 97% | 0/0 | 14 |
+| [biology 17.2](../../content/life-health-sciences/biology/17-biotechnology-and-genomics/02-mapping-genomes.md) | `m66512` | metadata matched | 3/3 | 3/3 | 98% | 0/0 | 11 |
+| [biology 17.3](../../content/life-health-sciences/biology/17-biotechnology-and-genomics/03-whole-genome-sequencing.md) | `m66513` | metadata matched | 2/2 | 3/3 | 99% | 0/0 | 11 |
+| [biology 17.4](../../content/life-health-sciences/biology/17-biotechnology-and-genomics/04-applying-genomics.md) | `m66514` | metadata matched | 2/2 | 6/6 | 88% | 0/0 | 10 |
+| [biology 17.5](../../content/life-health-sciences/biology/17-biotechnology-and-genomics/05-genomics-and-proteomics.md) | `m66515` | metadata matched | 3/3 | 2/2 | 99% | 0/0 | 14 |
+| [biology 18.1](../../content/life-health-sciences/biology/18-evolution-and-the-origin-of-species/01-understanding-evolution.md) | `m66518` | metadata matched | 5/5 | 4/4 | 99% | 0/0 | 16 |
+| [biology 18.2](../../content/life-health-sciences/biology/18-evolution-and-the-origin-of-species/02-formation-of-new-species.md) | `m66520` | metadata matched | 5/5 | 5/5 | 97% | 0/0 | 18 |
+| [biology 18.3](../../content/life-health-sciences/biology/18-evolution-and-the-origin-of-species/03-reconnection-and-speciation-rates.md) | `m66521` | metadata matched | 2/2 | 2/2 | 90% | 0/0 | 10 |
+| [biology 19.1](../../content/life-health-sciences/biology/19-the-evolution-of-populations/01-population-evolution.md) | `m66523` | metadata matched | 2/2 | 2/2 | 95% | 0/0 | 10 |
+| [biology 19.2](../../content/life-health-sciences/biology/19-the-evolution-of-populations/02-population-genetics.md) | `m66524` | metadata matched | 4/4 | 6/6 | 97% | 0/0 | 13 |
+| [biology 19.3](../../content/life-health-sciences/biology/19-the-evolution-of-populations/03-adaptive-evolution.md) | `m66718` | metadata matched | 2/2 | 6/6 | 97% | 0/0 | 10 |
+| [biology 20.1](../../content/life-health-sciences/biology/20-phylogenies-and-the-history-of-life/01-organizing-life-on-earth.md) | `m66530` | metadata matched | 4/4 | 3/3 | 95% | 0/0 | 17 |
+| [biology 20.2](../../content/life-health-sciences/biology/20-phylogenies-and-the-history-of-life/02-determining-evolutionary-relationships.md) | `m66531` | metadata matched | 3/3 | 2/2 | 93% | 0/0 | 17 |
+| [biology 20.3](../../content/life-health-sciences/biology/20-phylogenies-and-the-history-of-life/03-perspectives-on-the-phylogenetic-tree.md) | `m66532` | metadata matched | 3/3 | 5/5 | 97% | 0/0 | 15 |
+| [biology 21.1](../../content/life-health-sciences/biology/21-viruses/01-viral-evolution-morphology-and-classification.md) | `m66534` | metadata matched | 6/6 | 4/4 | 98% | 0/0 | 19 |
+| [biology 21.2](../../content/life-health-sciences/biology/21-viruses/02-virus-infections-and-hosts.md) | `m66535` | metadata matched | 5/5 | 5/5 | 97% | 0/0 | 22 |
+| [biology 21.3](../../content/life-health-sciences/biology/21-viruses/03-prevention-and-treatment-of-viral-infections.md) | `m66537` | metadata matched | 2/2 | 2/2 | 100% | 0/0 | 13 |
+| [biology 21.4](../../content/life-health-sciences/biology/21-viruses/04-other-acellular-entities-prions-and-viroids.md) | `m66540` | metadata matched | 2/2 | 2/2 | 98% | 0/0 | 8 |
+| [biology 22.1](../../content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/01-prokaryotic-diversity.md) | `m66542` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 16 |
+| [biology 22.2](../../content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/02-structure-of-prokaryotes-bacteria-and-archaea.md) | `m66545` | metadata matched | 2/2 | 2/2 | 98% | 0/0 | 22 |
+| [biology 22.3](../../content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/03-prokaryotic-metabolism.md) | `m66547` | metadata matched | 3/3 | 2/2 | 98% | 0/0 | 19 |
+| [biology 22.4](../../content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/04-bacterial-diseases-in-humans.md) | `m66548` | metadata matched | 4/4 | 5/5 | 98% | 0/0 | 12 |
+| [biology 22.5](../../content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/05-beneficial-prokaryotes.md) | `m66549` | metadata matched | 4/4 | 3/3 | 98% | 0/0 | 12 |
+| [biology 23.1](../../content/life-health-sciences/biology/23-protists/01-eukaryotic-origins.md) | `m66552` | metadata matched | 3/3 | 2/2 | 97% | 0/0 | 12 |
+| [biology 23.2](../../content/life-health-sciences/biology/23-protists/02-characteristics-of-protists.md) | `m66554` | metadata matched | 3/3 | 5/5 | 99% | 0/0 | 9 |
+| [biology 23.3](../../content/life-health-sciences/biology/23-protists/03-groups-of-protists.md) | `m66555` | metadata matched | 3/3 | 6/6 | 96% | 0/0 | 17 |
+| [biology 23.4](../../content/life-health-sciences/biology/23-protists/04-ecology-of-protists.md) | `m66556` | metadata matched | 2/2 | 4/4 | 98% | 0/0 | 8 |
+| [biology 24.1](../../content/life-health-sciences/biology/24-fungi/01-characteristics-of-fungi.md) | `m66558` | metadata matched | 4/4 | 2/2 | 97% | 0/0 | 17 |
+| [biology 24.2](../../content/life-health-sciences/biology/24-fungi/02-classifications-of-fungi.md) | `m66559` | metadata matched | 2/2 | 6/6 | 97% | 0/0 | 14 |
+| [biology 24.3](../../content/life-health-sciences/biology/24-fungi/03-ecology-of-fungi.md) | `m66560` | metadata matched | 3/3 | 4/4 | 97% | 0/0 | 15 |
+| [biology 24.4](../../content/life-health-sciences/biology/24-fungi/04-fungal-parasites-and-pathogens.md) | `m66562` | metadata matched | 3/3 | 2/2 | 99% | 0/0 | 12 |
+| [biology 24.5](../../content/life-health-sciences/biology/24-fungi/05-importance-of-fungi-in-human-life.md) | `m66563` | metadata matched | 4/4 | 0/0 | 100% | 0/0 | 12 |
+| [biology 25.1](../../content/life-health-sciences/biology/25-seedless-plants/01-early-plant-life.md) | `m66566` | metadata matched | 3/3 | 4/4 | 99% | 0/0 | 15 |
+| [biology 25.2](../../content/life-health-sciences/biology/25-seedless-plants/02-green-algae-precursors-of-land-plants.md) | `m66567` | metadata matched | 3/3 | 3/3 | 99% | 0/0 | 9 |
+| [biology 25.3](../../content/life-health-sciences/biology/25-seedless-plants/03-bryophytes.md) | `m66568` | metadata matched | 4/4 | 3/3 | 96% | 0/0 | 15 |
+| [biology 25.4](../../content/life-health-sciences/biology/25-seedless-plants/04-seedless-vascular-plants.md) | `m66570` | metadata matched | 5/5 | 5/5 | 98% | 0/0 | 17 |
+| [biology 26.1](../../content/life-health-sciences/biology/26-seed-plants/01-evolution-of-seed-plants.md) | `m66572` | metadata matched | 4/4 | 2/2 | 99% | 0/0 | 14 |
+| [biology 26.2](../../content/life-health-sciences/biology/26-seed-plants/02-gymnosperms.md) | `m66573` | metadata matched | 4/4 | 2/2 | 95% | 0/0 | 17 |
+| [biology 26.3](../../content/life-health-sciences/biology/26-seed-plants/03-angiosperms.md) | `m66574` | metadata matched | 4/4 | 4/4 | 98% | 0/0 | 15 |
+| [biology 26.4](../../content/life-health-sciences/biology/26-seed-plants/04-the-role-of-seed-plants.md) | `m66575` | metadata matched | 3/3 | 4/4 | 98% | 0/0 | 13 |
+| [biology 27.1](../../content/life-health-sciences/biology/27-introduction-to-animal-diversity/01-features-of-the-animal-kingdom.md) | `m66577` | metadata matched | 3/3 | 2/2 | 98% | 0/0 | 14 |
+| [biology 27.2](../../content/life-health-sciences/biology/27-introduction-to-animal-diversity/02-features-used-to-classify-animals.md) | `m66578` | metadata matched | 2/2 | 2/2 | 97% | 0/0 | 13 |
+| [biology 27.3](../../content/life-health-sciences/biology/27-introduction-to-animal-diversity/03-animal-phylogeny.md) | `m66722` | metadata matched | 3/3 | 2/2 | 97% | 0/0 | 11 |
+| [biology 27.4](../../content/life-health-sciences/biology/27-introduction-to-animal-diversity/04-the-evolutionary-history-of-the-animal-kingdom.md) | `m66586` | metadata matched | 4/4 | 3/3 | 97% | 0/0 | 14 |
+| [biology 28.1](../../content/life-health-sciences/biology/28-invertebrates/01-phylum-porifera.md) | `m66394` | metadata matched | 2/2 | 2/2 | 97% | 0/0 | 11 |
+| [biology 28.2](../../content/life-health-sciences/biology/28-invertebrates/02-phylum-cnidaria.md) | `m66395` | metadata matched | 4/4 | 4/4 | 99% | 0/0 | 16 |
+| [biology 28.3](../../content/life-health-sciences/biology/28-invertebrates/03-superphylum-lophotrochozoa-flatworms-rotifers-and-nemerteans.md) | `m66396` | metadata matched | 3/3 | 3/3 | 98% | 0/0 | 11 |
+| [biology 28.4](../../content/life-health-sciences/biology/28-invertebrates/04-superphylum-lophotrochozoa-mollusks-and-annelids.md) | `m66397` | metadata matched | 6/6 | 2/2 | 99% | 0/0 | 23 |
+| [biology 28.5](../../content/life-health-sciences/biology/28-invertebrates/05-superphylum-ecdysozoa-nematodes-and-tardigrades.md) | `m66398` | metadata matched | 3/3 | 3/3 | 98% | 0/0 | 10 |
+| [biology 28.6](../../content/life-health-sciences/biology/28-invertebrates/06-superphylum-ecdysozoa-arthropods.md) | `m66399` | metadata matched | 3/3 | 1/1 | 99% | 0/0 | 21 |
+| [biology 28.7](../../content/life-health-sciences/biology/28-invertebrates/07-superphylum-deuterostomia.md) | `m66400` | metadata matched | 2/2 | 3/3 | 99% | 0/0 | 9 |
+| [biology 29.1](../../content/life-health-sciences/biology/29-vertebrates/01-chordates.md) | `m66588` | metadata matched | 3/3 | 3/3 | 96% | 0/0 | 12 |
+| [biology 29.2](../../content/life-health-sciences/biology/29-vertebrates/02-fishes.md) | `m66589` | metadata matched | 2/2 | 2/2 | 98% | 0/0 | 12 |
+| [biology 29.3](../../content/life-health-sciences/biology/29-vertebrates/03-amphibians.md) | `m66590` | metadata matched | 3/3 | 3/3 | 98% | 0/0 | 11 |
+| [biology 29.4](../../content/life-health-sciences/biology/29-vertebrates/04-reptiles.md) | `m66591` | metadata matched | 4/4 | 7/7 | 98% | 0/0 | 26 |
+| [biology 29.5](../../content/life-health-sciences/biology/29-vertebrates/05-birds.md) | `m66592` | metadata matched | 2/2 | 3/3 | 98% | 0/0 | 9 |
+| [biology 29.6](../../content/life-health-sciences/biology/29-vertebrates/06-mammals.md) | `m66593` | metadata matched | 4/4 | 3/3 | 99% | 0/0 | 15 |
+| [biology 29.7](../../content/life-health-sciences/biology/29-vertebrates/07-the-evolution-of-primates.md) | `m66594` | metadata matched | 4/4 | 3/3 | 98% | 0/0 | 14 |
+| [biology 30.1](../../content/life-health-sciences/biology/30-plant-form-and-physiology/01-the-plant-body.md) | `m66596` | metadata matched | 5/5 | 2/2 | 99% | 0/0 | 19 |
+| [biology 30.2](../../content/life-health-sciences/biology/30-plant-form-and-physiology/02-stems.md) | `m66597` | metadata matched | 5/5 | 3/3 | 97% | 0/0 | 21 |
+| [biology 30.3](../../content/life-health-sciences/biology/30-plant-form-and-physiology/03-roots.md) | `m66598` | metadata matched | 4/4 | 3/3 | 98% | 0/0 | 14 |
+| [biology 30.4](../../content/life-health-sciences/biology/30-plant-form-and-physiology/04-leaves.md) | `m66599` | metadata matched | 4/4 | 5/5 | 97% | 0/0 | 16 |
+| [biology 30.5](../../content/life-health-sciences/biology/30-plant-form-and-physiology/05-transport-of-water-and-solutes-in-plants.md) | `m66600` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 13 |
+| [biology 30.6](../../content/life-health-sciences/biology/30-plant-form-and-physiology/06-plant-sensory-systems-and-responses.md) | `m66601` | metadata matched | 5/5 | 5/5 | 98% | 0/0 | 21 |
+| [biology 31.1](../../content/life-health-sciences/biology/31-soil-and-plant-nutrition/01-nutritional-requirements-of-plants.md) | `m66603` | metadata matched | 3/3 | 2/2 | 97% | 0/0 | 15 |
+| [biology 31.2](../../content/life-health-sciences/biology/31-soil-and-plant-nutrition/02-the-soil.md) | `m66604` | metadata matched | 3/3 | 3/3 | 93% | 0/0 | 15 |
+| [biology 31.3](../../content/life-health-sciences/biology/31-soil-and-plant-nutrition/03-nutritional-adaptations-of-plants.md) | `m66605` | metadata matched | 3/3 | 5/5 | 95% | 0/0 | 18 |
+| [biology 32.1](../../content/life-health-sciences/biology/32-plant-reproduction/01-reproductive-development-and-structure.md) | `m66607` | metadata matched | 5/5 | 3/3 | 94% | 0/0 | 21 |
+| [biology 32.2](../../content/life-health-sciences/biology/32-plant-reproduction/02-pollination-and-fertilization.md) | `m66608` | metadata matched | 4/4 | 8/8 | 99% | 0/0 | 17 |
+| [biology 32.3](../../content/life-health-sciences/biology/32-plant-reproduction/03-asexual-reproduction.md) | `m66609` | metadata matched | 3/3 | 3/3 | 99% | 0/0 | 13 |
+| [biology 33.1](../../content/life-health-sciences/biology/33-the-animal-body-basic-form-and-function/01-animal-form-and-function.md) | `m66611` | metadata matched | 3/3 | 5/5 | 97% | 0/0 | 18 |
+| [biology 33.2](../../content/life-health-sciences/biology/33-the-animal-body-basic-form-and-function/02-animal-primary-tissues.md) | `m66612` | metadata matched | 4/4 | 4/4 | 96% | 0/0 | 21 |
+| [biology 33.3](../../content/life-health-sciences/biology/33-the-animal-body-basic-form-and-function/03-homeostasis.md) | `m66613` | metadata matched | 4/4 | 6/6 | 94% | 0/0 | 21 |
+| [biology 34.1](../../content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/01-digestive-systems.md) | `m66615` | metadata matched | 4/4 | 4/4 | 96% | 0/0 | 16 |
+| [biology 34.2](../../content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/02-nutrition-and-energy-production.md) | `m66616` | metadata matched | 5/5 | 2/2 | 98% | 0/0 | 20 |
+| [biology 34.3](../../content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/03-digestive-system-processes.md) | `m66617` | metadata matched | 4/4 | 3/3 | 97% | 0/0 | 19 |
+| [biology 34.4](../../content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/04-digestive-system-regulation.md) | `m66618` | metadata matched | 2/2 | 2/2 | 99% | 0/0 | 15 |
+| [biology 35.1](../../content/life-health-sciences/biology/35-the-nervous-system/01-neurons-and-glial-cells.md) | `m66620` | metadata matched | 3/3 | 2/2 | 97% | 0/0 | 15 |
+| [biology 35.2](../../content/life-health-sciences/biology/35-the-nervous-system/02-how-neurons-communicate.md) | `m66621` | metadata matched | 4/4 | 4/4 | 96% | 0/0 | 23 |
+| [biology 35.3](../../content/life-health-sciences/biology/35-the-nervous-system/03-the-central-nervous-system.md) | `m66622` | metadata matched | 2/2 | 2/2 | 96% | 0/0 | 14 |
+| [biology 35.4](../../content/life-health-sciences/biology/35-the-nervous-system/04-the-peripheral-nervous-system.md) | `m66623` | metadata matched | 2/2 | 2/2 | 96% | 0/0 | 12 |
+| [biology 35.5](../../content/life-health-sciences/biology/35-the-nervous-system/05-nervous-system-disorders.md) | `m66624` | metadata matched | 1/1 | 3/3 | 97% | 0/0 | 12 |
+| [biology 36.1](../../content/life-health-sciences/biology/36-sensory-systems/01-sensory-processes.md) | `m66402` | metadata matched | 3/3 | 3/3 | 99% | 0/0 | 19 |
+| [biology 36.2](../../content/life-health-sciences/biology/36-sensory-systems/02-somatosensation.md) | `m66404` | metadata matched | 3/3 | 3/3 | 98% | 0/0 | 12 |
+| [biology 36.3](../../content/life-health-sciences/biology/36-sensory-systems/03-taste-and-smell.md) | `m66405` | metadata matched | 3/3 | 3/3 | 98% | 0/0 | 13 |
+| [biology 36.4](../../content/life-health-sciences/biology/36-sensory-systems/04-hearing-and-vestibular-sensation.md) | `m66407` | metadata matched | 3/3 | 4/4 | 95% | 0/0 | 17 |
+| [biology 36.5](../../content/life-health-sciences/biology/36-sensory-systems/05-vision.md) | `m66408` | metadata matched | 3/3 | 4/4 | 97% | 0/0 | 19 |
+| [biology 37.1](../../content/life-health-sciences/biology/37-the-endocrine-system/01-types-of-hormones.md) | `m66626` | metadata matched | 2/2 | 3/3 | 98% | 0/0 | 11 |
+| [biology 37.2](../../content/life-health-sciences/biology/37-the-endocrine-system/02-how-hormones-work.md) | `m66628` | metadata matched | 2/2 | 2/2 | 91% | 0/0 | 16 |
+| [biology 37.3](../../content/life-health-sciences/biology/37-the-endocrine-system/03-regulation-of-body-processes.md) | `m66629` | metadata matched | 4/4 | 6/6 | 98% | 0/0 | 31 |
+| [biology 37.4](../../content/life-health-sciences/biology/37-the-endocrine-system/04-regulation-of-hormone-production.md) | `m66630` | metadata matched | 2/2 | 3/3 | 100% | 0/0 | 10 |
+| [biology 37.5](../../content/life-health-sciences/biology/37-the-endocrine-system/05-endocrine-glands.md) | `m66631` | metadata matched | 2/2 | 8/8 | 99% | 0/0 | 12 |
+| [biology 38.1](../../content/life-health-sciences/biology/38-the-musculoskeletal-system/01-types-of-skeletal-systems.md) | `m66635` | metadata matched | 3/3 | 5/5 | 98% | 0/0 | 15 |
+| [biology 38.2](../../content/life-health-sciences/biology/38-the-musculoskeletal-system/02-bone.md) | `m66638` | metadata matched | 3/3 | 3/3 | 98% | 0/0 | 15 |
+| [biology 38.3](../../content/life-health-sciences/biology/38-the-musculoskeletal-system/03-joints-and-skeletal-movement.md) | `m66639` | metadata matched | 2/2 | 4/4 | 97% | 0/0 | 20 |
+| [biology 38.4](../../content/life-health-sciences/biology/38-the-musculoskeletal-system/04-muscle-contraction-and-locomotion.md) | `m66643` | metadata matched | 2/2 | 6/6 | 98% | 0/0 | 14 |
+| [biology 39.1](../../content/life-health-sciences/biology/39-the-respiratory-system/01-systems-of-gas-exchange.md) | `m66645` | metadata matched | 2/2 | 5/5 | 96% | 0/0 | 11 |
+| [biology 39.2](../../content/life-health-sciences/biology/39-the-respiratory-system/02-gas-exchange-across-respiratory-surfaces.md) | `m66646` | metadata matched | 2/2 | 4/4 | 98% | 0/0 | 13 |
+| [biology 39.3](../../content/life-health-sciences/biology/39-the-respiratory-system/03-breathing.md) | `m66647` | metadata matched | 3/3 | 4/4 | 98% | 0/0 | 10 |
+| [biology 39.4](../../content/life-health-sciences/biology/39-the-respiratory-system/04-transport-of-gases-in-human-bodily-fluids.md) | `m66648` | metadata matched | 2/2 | 2/2 | 95% | 0/0 | 11 |
+| [biology 40.1](../../content/life-health-sciences/biology/40-the-circulatory-system/01-overview-of-the-circulatory-system.md) | `m66650` | metadata matched | 3/3 | 2/2 | 97% | 0/0 | 15 |
+| [biology 40.2](../../content/life-health-sciences/biology/40-the-circulatory-system/02-components-of-the-blood.md) | `m66651` | metadata matched | 3/3 | 5/5 | 97% | 0/0 | 12 |
+| [biology 40.3](../../content/life-health-sciences/biology/40-the-circulatory-system/03-mammalian-heart-and-blood-vessels.md) | `m66653` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 14 |
+| [biology 40.4](../../content/life-health-sciences/biology/40-the-circulatory-system/04-blood-flow-and-blood-pressure-regulation.md) | `m66654` | metadata matched | 2/2 | 3/3 | 95% | 0/0 | 10 |
+| [biology 41.1](../../content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/01-osmoregulation-and-osmotic-balance.md) | `m66656` | metadata matched | 5/5 | 4/4 | 99% | 0/0 | 17 |
+| [biology 41.2](../../content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/02-the-kidneys-and-osmoregulatory-organs.md) | `m66658` | metadata matched | 4/4 | 3/3 | 94% | 0/0 | 15 |
+| [biology 41.3](../../content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/03-excretion-systems.md) | `m66659` | metadata matched | 3/3 | 3/3 | 96% | 0/0 | 11 |
+| [biology 41.4](../../content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/04-nitrogenous-wastes.md) | `m66660` | metadata matched | 2/2 | 2/2 | 93% | 0/0 | 10 |
+| [biology 41.5](../../content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/05-hormonal-control-of-osmoregulatory-functions.md) | `m66661` | metadata matched | 2/2 | 5/5 | 99% | 0/0 | 10 |
+| [biology 42.1](../../content/life-health-sciences/biology/42-the-immune-system/01-innate-immune-response.md) | `m66663` | metadata matched | 5/5 | 4/4 | 98% | 0/0 | 18 |
+| [biology 42.2](../../content/life-health-sciences/biology/42-the-immune-system/02-adaptive-immune-response.md) | `m66664` | metadata matched | 4/4 | 4/4 | 96% | 0/0 | 23 |
+| [biology 42.3](../../content/life-health-sciences/biology/42-the-immune-system/03-antibodies.md) | `m66665` | metadata matched | 3/3 | 3/3 | 99% | 0/0 | 11 |
+| [biology 42.4](../../content/life-health-sciences/biology/42-the-immune-system/04-disruptions-in-the-immune-system.md) | `m66666` | metadata matched | 2/2 | 2/2 | 99% | 0/0 | 9 |
+| [biology 43.1](../../content/life-health-sciences/biology/43-animal-reproduction-and-development/01-reproduction-methods.md) | `m66668` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 13 |
+| [biology 43.2](../../content/life-health-sciences/biology/43-animal-reproduction-and-development/02-fertilization.md) | `m66671` | metadata matched | 3/3 | 2/2 | 99% | 0/0 | 11 |
+| [biology 43.3](../../content/life-health-sciences/biology/43-animal-reproduction-and-development/03-human-reproductive-anatomy-and-gametogenesis.md) | `m66673` | metadata matched | 3/3 | 2/2 | 96% | 0/0 | 15 |
+| [biology 43.4](../../content/life-health-sciences/biology/43-animal-reproduction-and-development/04-hormonal-control-of-human-reproduction.md) | `m66674` | metadata matched | 3/3 | 2/2 | 96% | 0/0 | 14 |
+| [biology 43.5](../../content/life-health-sciences/biology/43-animal-reproduction-and-development/05-human-pregnancy-and-birth.md) | `m66677` | metadata matched | 4/4 | 4/4 | 98% | 0/0 | 15 |
+| [biology 43.6](../../content/life-health-sciences/biology/43-animal-reproduction-and-development/06-fertilization-and-early-embryonic-development.md) | `m66678` | metadata matched | 3/3 | 3/3 | 97% | 0/0 | 12 |
+| [biology 43.7](../../content/life-health-sciences/biology/43-animal-reproduction-and-development/07-organogenesis-and-vertebrate-axis-formation.md) | `m66679` | metadata matched | 2/2 | 2/2 | 97% | 0/0 | 9 |
+| [biology 44.1](../../content/life-health-sciences/biology/44-ecology-and-the-biosphere/01-the-scope-of-ecology.md) | `m66410` | metadata matched | 4/4 | 5/5 | 98% | 0/0 | 15 |
+| [biology 44.2](../../content/life-health-sciences/biology/44-ecology-and-the-biosphere/02-biogeography.md) | `m66411` | metadata matched | 4/4 | 2/2 | 98% | 0/0 | 14 |
+| [biology 44.3](../../content/life-health-sciences/biology/44-ecology-and-the-biosphere/03-terrestrial-biomes.md) | `m66420` | metadata matched | 2/2 | 8/8 | 97% | 0/0 | 10 |
+| [biology 44.4](../../content/life-health-sciences/biology/44-ecology-and-the-biosphere/04-aquatic-biomes.md) | `m66417` | metadata matched | 3/3 | 4/4 | 98% | 0/0 | 16 |
+| [biology 44.5](../../content/life-health-sciences/biology/44-ecology-and-the-biosphere/05-climate-and-the-effects-of-global-climate-change.md) | `m66419` | metadata matched | 4/4 | 3/3 | 97% | 0/0 | 15 |
+| [biology 45.1](../../content/life-health-sciences/biology/45-population-and-community-ecology/01-population-demography.md) | `m66686` | metadata matched | 4/4 | 3/3 | 97% | 0/0 | 15 |
+| [biology 45.2](../../content/life-health-sciences/biology/45-population-and-community-ecology/02-life-histories-and-natural-selection.md) | `m66688` | metadata matched | 2/2 | 1/1 | 98% | 0/0 | 9 |
+| [biology 45.3](../../content/life-health-sciences/biology/45-population-and-community-ecology/03-environmental-limits-to-population-growth.md) | `m66690` | metadata matched | 3/3 | 2/2 | 93% | 0/0 | 12 |
+| [biology 45.4](../../content/life-health-sciences/biology/45-population-and-community-ecology/04-population-dynamics-and-regulation.md) | `m66691` | metadata matched | 4/4 | 4/4 | 98% | 0/0 | 16 |
+| [biology 45.5](../../content/life-health-sciences/biology/45-population-and-community-ecology/05-human-population-growth.md) | `m66696` | metadata matched | 4/4 | 3/3 | 94% | 0/0 | 14 |
+| [biology 45.6](../../content/life-health-sciences/biology/45-population-and-community-ecology/06-community-ecology.md) | `m66698` | metadata matched | 5/5 | 5/5 | 98% | 0/0 | 25 |
+| [biology 45.7](../../content/life-health-sciences/biology/45-population-and-community-ecology/07-behavioral-biology-proximate-and-ultimate-causes-of-behavior.md) | `m66699` | metadata matched | 6/6 | 6/6 | 99% | 0/0 | 28 |
+| [biology 46.1](../../content/life-health-sciences/biology/46-ecosystems/01-ecology-of-ecosystems.md) | `m66701` | metadata matched | 4/4 | 2/2 | 97% | 0/0 | 19 |
+| [biology 46.2](../../content/life-health-sciences/biology/46-ecosystems/02-energy-flow-through-ecosystems.md) | `m66702` | metadata matched | 3/3 | 5/5 | 97% | 0/0 | 15 |
+| [biology 46.3](../../content/life-health-sciences/biology/46-ecosystems/03-biogeochemical-cycles.md) | `m66705` | metadata matched | 2/2 | 5/5 | 95% | 0/0 | 13 |
+| [biology 47.1](../../content/life-health-sciences/biology/47-conservation-biology-and-biodiversity/01-the-biodiversity-crisis.md) | `m66707` | metadata matched | 3/3 | 2/2 | 97% | 0/0 | 12 |
+| [biology 47.2](../../content/life-health-sciences/biology/47-conservation-biology-and-biodiversity/02-the-importance-of-biodiversity-to-human-life.md) | `m66708` | metadata matched | 3/3 | 4/4 | 98% | 0/0 | 10 |
+| [biology 47.3](../../content/life-health-sciences/biology/47-conservation-biology-and-biodiversity/03-threats-to-biodiversity.md) | `m66709` | metadata matched | 3/3 | 4/4 | 99% | 0/0 | 13 |
+| [biology 47.4](../../content/life-health-sciences/biology/47-conservation-biology-and-biodiversity/04-preserving-biodiversity.md) | `m66710` | metadata matched | 5/5 | 3/3 | 98% | 0/0 | 16 |
 | [elementary-algebra 1.1](../../content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md) | `m82452` | metadata matched | 3/3 | 3/3 | 62% | 15/22 | 21 |
 | [elementary-algebra 1.2](../../content/math/elementary-algebra/01-foundations/02-use-the-language-of-algebra.md) | `m82453` | metadata matched | 5/5 | 5/5 | 8% | 20/36 | 21 |
 | [elementary-algebra 1.3](../../content/math/elementary-algebra/01-foundations/03-add-and-subtract-integers.md) | `m82454` | metadata matched | 4/4 | 4/4 | 37% | 23/32 | 44 |
@@ -169,7 +379,7 @@ or intentionally omitted print material.
 | [intermediate-algebra 9.8](../../content/math/intermediate-algebra/09-quadratic-equations-and-functions/08-solve-quadratic-inequalities.md) | `m81406` | metadata matched | 2/2 | 2/2 | 52% | 10/10 | 17 |
 | [intermediate-algebra 10.1](../../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/01-finding-composite-and-inverse-functions.md) | `m81408` | metadata matched | 3/3 | 3/3 | 81% | 16/18 | 29 |
 | [intermediate-algebra 10.2](../../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/02-evaluate-and-graph-exponential-functions.md) | `m81409` | metadata matched | 3/3 | 3/3 | 60% | 14/16 | 23 |
-| [intermediate-algebra 10.3](../../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/03-evaluate-and-graph-logarithmic-functions.md) | `m81410` | metadata matched | 5/5 | 5/5 | 71% | 18/20 | 57 |
+| [intermediate-algebra 10.3](../../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/03-evaluate-and-graph-logarithmic-functions.md) | `m81410` | metadata matched | 5/5 | 5/5 | 72% | 18/20 | 57 |
 | [intermediate-algebra 10.4](../../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/04-use-the-properties-of-logarithms.md) | `m81411` | metadata matched | 2/2 | 2/2 | 77% | 15/20 | 25 |
 | [intermediate-algebra 10.5](../../content/math/intermediate-algebra/10-exponential-and-logarithmic-functions/05-solve-exponential-and-logarithmic-equations.md) | `m81450` | metadata matched | 3/3 | 3/3 | 74% | 14/16 | 25 |
 | [intermediate-algebra 11.1](../../content/math/intermediate-algebra/11-conics/01-distance-and-midpoint-formulas-circles.md) | `m81452` | metadata matched | 4/4 | 4/4 | 66% | 22/22 | 33 |
@@ -263,41 +473,41 @@ or intentionally omitted print material.
 | [precalculus 3.9](../../content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md) | `m49353` | adapted-verified | 3/3 | 4/5 | 50% | 0/0 | 12 |
 | [precalculus 4.1](../../content/math/precalculus/04-exponential-and-logarithmic-functions/01-exponential-functions.md) | `m49361` | metadata matched | 4/4 | 7/7 | 10% | 0/0 | 27 |
 | [precalculus 4.2](../../content/math/precalculus/04-exponential-and-logarithmic-functions/02-graphs-of-exponential-functions.md) | `m49362` | metadata matched | 2/2 | 3/3 | 41% | 0/0 | 31 |
-| [precalculus 4.3](../../content/math/precalculus/04-exponential-and-logarithmic-functions/03-logarithmic-functions.md) | `m49363` | metadata matched | 5/5 | 6/6 | 43% | 0/0 | 21 |
-| [precalculus 4.4](../../content/math/precalculus/04-exponential-and-logarithmic-functions/04-graphs-of-logarithmic-functions.md) | `m49364` | metadata matched | 2/2 | 4/4 | 26% | 0/0 | 20 |
+| [precalculus 4.3](../../content/math/precalculus/04-exponential-and-logarithmic-functions/03-logarithmic-functions.md) | `m49363` | metadata matched | 5/5 | 6/6 | 47% | 0/0 | 21 |
+| [precalculus 4.4](../../content/math/precalculus/04-exponential-and-logarithmic-functions/04-graphs-of-logarithmic-functions.md) | `m49364` | metadata matched | 2/2 | 4/4 | 27% | 0/0 | 20 |
 | [precalculus 4.5](../../content/math/precalculus/04-exponential-and-logarithmic-functions/05-logarithmic-properties.md) | `m49365` | metadata matched | 6/6 | 7/7 | 17% | 0/0 | 28 |
-| [precalculus 4.6](../../content/math/precalculus/04-exponential-and-logarithmic-functions/06-exponential-and-logarithmic-equations.md) | `m49366` | metadata matched | 5/5 | 6/6 | 43% | 0/0 | 30 |
-| [precalculus 4.7](../../content/math/precalculus/04-exponential-and-logarithmic-functions/07-exponential-and-logarithmic-models.md) | `m49367` | metadata matched | 5/5 | 6/6 | 8% | 0/0 | 27 |
+| [precalculus 4.6](../../content/math/precalculus/04-exponential-and-logarithmic-functions/06-exponential-and-logarithmic-equations.md) | `m49366` | metadata matched | 5/5 | 6/6 | 45% | 0/0 | 30 |
+| [precalculus 4.7](../../content/math/precalculus/04-exponential-and-logarithmic-functions/07-exponential-and-logarithmic-models.md) | `m49367` | metadata matched | 5/5 | 6/6 | 9% | 0/0 | 27 |
 | [precalculus 4.8](../../content/math/precalculus/04-exponential-and-logarithmic-functions/08-fitting-exponential-models-to-data.md) | `m49368` | metadata matched | 3/3 | 3/3 | 22% | 0/0 | 19 |
 | [precalculus 5.1](../../content/math/precalculus/05-trigonometric-functions/01-angles.md) | `m49371` | metadata matched | 5/5 | 7/7 | 41% | 0/0 | 27 |
-| [precalculus 5.2](../../content/math/precalculus/05-trigonometric-functions/02-unit-circle-sine-and-cosine-functions.md) | `m49372` | metadata matched | 3/3 | 6/6 | 65% | 0/0 | 23 |
-| [precalculus 5.3](../../content/math/precalculus/05-trigonometric-functions/03-the-other-trigonometric-functions.md) | `m49374` | metadata matched | 5/5 | 6/6 | 39% | 0/0 | 35 |
-| [precalculus 5.4](../../content/math/precalculus/05-trigonometric-functions/04-right-triangle-trigonometry.md) | `m49384` | adapted-verified | 5/5 | 2/3 | 49% | 0/0 | 23 |
-| [precalculus 6.1](../../content/math/precalculus/06-periodic-functions/01-graphs-of-the-sine-and-cosine-functions.md) | `m49387` | metadata matched | 2/2 | 6/6 | 15% | 0/0 | 28 |
-| [precalculus 6.2](../../content/math/precalculus/06-periodic-functions/02-graphs-of-the-other-trigonometric-functions.md) | `m49389` | objective-needs-review | 4/6 | 8/8 | 4% | 0/0 | 21 |
-| [precalculus 6.3](../../content/math/precalculus/06-periodic-functions/03-inverse-trigonometric-functions.md) | `m49390` | metadata matched | 4/4 | 4/4 | 38% | 0/0 | 25 |
-| [precalculus 7.1](../../content/math/precalculus/07-trigonometric-identities-and-equations/01-simplifying-and-verifying-trigonometric-identities.md) | `m49393` | metadata matched | 2/2 | 3/3 | 51% | 0/0 | 11 |
-| [precalculus 7.2](../../content/math/precalculus/07-trigonometric-identities-and-equations/02-sum-and-difference-identities.md) | `m49395` | metadata matched | 5/5 | 6/6 | 21% | 0/0 | 15 |
-| [precalculus 7.3](../../content/math/precalculus/07-trigonometric-identities-and-equations/03-double-angle-half-angle-and-reduction-formulas.md) | `m49396` | metadata matched | 4/4 | 5/5 | 33% | 0/0 | 14 |
-| [precalculus 7.4](../../content/math/precalculus/07-trigonometric-identities-and-equations/04-sum-to-product-and-product-to-sum-formulas.md) | `m49397` | metadata matched | 2/2 | 3/3 | 38% | 0/0 | 15 |
+| [precalculus 5.2](../../content/math/precalculus/05-trigonometric-functions/02-unit-circle-sine-and-cosine-functions.md) | `m49372` | metadata matched | 3/3 | 6/6 | 69% | 0/0 | 23 |
+| [precalculus 5.3](../../content/math/precalculus/05-trigonometric-functions/03-the-other-trigonometric-functions.md) | `m49374` | metadata matched | 5/5 | 6/6 | 43% | 0/0 | 35 |
+| [precalculus 5.4](../../content/math/precalculus/05-trigonometric-functions/04-right-triangle-trigonometry.md) | `m49384` | adapted-verified | 5/5 | 2/3 | 51% | 0/0 | 23 |
+| [precalculus 6.1](../../content/math/precalculus/06-periodic-functions/01-graphs-of-the-sine-and-cosine-functions.md) | `m49387` | metadata matched | 2/2 | 6/6 | 16% | 0/0 | 28 |
+| [precalculus 6.2](../../content/math/precalculus/06-periodic-functions/02-graphs-of-the-other-trigonometric-functions.md) | `m49389` | metadata matched | 6/6 | 8/8 | 5% | 0/0 | 21 |
+| [precalculus 6.3](../../content/math/precalculus/06-periodic-functions/03-inverse-trigonometric-functions.md) | `m49390` | metadata matched | 4/4 | 4/4 | 44% | 0/0 | 25 |
+| [precalculus 7.1](../../content/math/precalculus/07-trigonometric-identities-and-equations/01-simplifying-and-verifying-trigonometric-identities.md) | `m49393` | metadata matched | 2/2 | 3/3 | 54% | 0/0 | 11 |
+| [precalculus 7.2](../../content/math/precalculus/07-trigonometric-identities-and-equations/02-sum-and-difference-identities.md) | `m49395` | metadata matched | 5/5 | 6/6 | 24% | 0/0 | 15 |
+| [precalculus 7.3](../../content/math/precalculus/07-trigonometric-identities-and-equations/03-double-angle-half-angle-and-reduction-formulas.md) | `m49396` | metadata matched | 4/4 | 5/5 | 35% | 0/0 | 14 |
+| [precalculus 7.4](../../content/math/precalculus/07-trigonometric-identities-and-equations/04-sum-to-product-and-product-to-sum-formulas.md) | `m49397` | metadata matched | 2/2 | 3/3 | 40% | 0/0 | 15 |
 | [precalculus 7.5](../../content/math/precalculus/07-trigonometric-identities-and-equations/05-solving-trigonometric-equations.md) | `m49398` | metadata matched | 7/7 | 7/7 | 20% | 0/0 | 19 |
-| [precalculus 7.6](../../content/math/precalculus/07-trigonometric-identities-and-equations/06-modeling-with-trigonometric-functions.md) | `m49399` | metadata matched | 4/4 | 5/5 | 57% | 0/0 | 14 |
+| [precalculus 7.6](../../content/math/precalculus/07-trigonometric-identities-and-equations/06-modeling-with-trigonometric-functions.md) | `m49399` | metadata matched | 4/4 | 5/5 | 58% | 0/0 | 14 |
 | [precalculus 8.1](../../content/math/precalculus/08-further-applications-of-trigonometry/01-non-right-triangles-law-of-sines.md) | `m49404` | metadata matched | 3/3 | 5/5 | 23% | 0/0 | 17 |
-| [precalculus 8.2](../../content/math/precalculus/08-further-applications-of-trigonometry/02-non-right-triangles-law-of-cosines.md) | `m49405` | metadata matched | 3/3 | 4/4 | 62% | 0/0 | 14 |
-| [precalculus 8.3](../../content/math/precalculus/08-further-applications-of-trigonometry/03-polar-coordinates.md) | `m49406` | metadata matched | 5/5 | 6/6 | 49% | 0/0 | 17 |
-| [precalculus 8.4](../../content/math/precalculus/08-further-applications-of-trigonometry/04-polar-coordinates-graphs.md) | `m49407` | metadata matched | 2/2 | 3/3 | 32% | 0/0 | 19 |
-| [precalculus 8.5](../../content/math/precalculus/08-further-applications-of-trigonometry/05-polar-form-of-complex-numbers.md) | `m49408` | metadata matched | 8/8 | 8/8 | 39% | 0/0 | 27 |
-| [precalculus 8.6](../../content/math/precalculus/08-further-applications-of-trigonometry/06-parametric-equations.md) | `m49409` | metadata matched | 4/4 | 4/4 | 69% | 0/0 | 15 |
-| [precalculus 8.7](../../content/math/precalculus/08-further-applications-of-trigonometry/07-parametric-equations-graphs.md) | `m49411` | metadata matched | 2/2 | 2/2 | 60% | 0/0 | 11 |
-| [precalculus 8.8](../../content/math/precalculus/08-further-applications-of-trigonometry/08-vectors.md) | `m49412` | metadata matched | 7/7 | 10/10 | 64% | 0/0 | 23 |
+| [precalculus 8.2](../../content/math/precalculus/08-further-applications-of-trigonometry/02-non-right-triangles-law-of-cosines.md) | `m49405` | metadata matched | 3/3 | 4/4 | 63% | 0/0 | 14 |
+| [precalculus 8.3](../../content/math/precalculus/08-further-applications-of-trigonometry/03-polar-coordinates.md) | `m49406` | metadata matched | 5/5 | 6/6 | 50% | 0/0 | 17 |
+| [precalculus 8.4](../../content/math/precalculus/08-further-applications-of-trigonometry/04-polar-coordinates-graphs.md) | `m49407` | metadata matched | 2/2 | 3/3 | 33% | 0/0 | 19 |
+| [precalculus 8.5](../../content/math/precalculus/08-further-applications-of-trigonometry/05-polar-form-of-complex-numbers.md) | `m49408` | metadata matched | 8/8 | 8/8 | 42% | 0/0 | 27 |
+| [precalculus 8.6](../../content/math/precalculus/08-further-applications-of-trigonometry/06-parametric-equations.md) | `m49409` | metadata matched | 4/4 | 4/4 | 70% | 0/0 | 15 |
+| [precalculus 8.7](../../content/math/precalculus/08-further-applications-of-trigonometry/07-parametric-equations-graphs.md) | `m49411` | metadata matched | 2/2 | 2/2 | 66% | 0/0 | 11 |
+| [precalculus 8.8](../../content/math/precalculus/08-further-applications-of-trigonometry/08-vectors.md) | `m49412` | metadata matched | 7/7 | 10/10 | 65% | 0/0 | 23 |
 | [precalculus 9.1](../../content/math/precalculus/09-systems-of-equations-and-inequalities/01-systems-of-linear-equations-two-variables.md) | `m49420` | metadata matched | 5/5 | 7/7 | 57% | 1/1 | 21 |
 | [precalculus 9.2](../../content/math/precalculus/09-systems-of-equations-and-inequalities/02-systems-of-linear-equations-three-variables.md) | `m49419` | metadata matched | 3/3 | 3/3 | 45% | 0/0 | 11 |
-| [precalculus 9.3](../../content/math/precalculus/09-systems-of-equations-and-inequalities/03-systems-of-nonlinear-equations-and-inequalities-two-variables.md) | `m49431` | metadata matched | 4/4 | 4/4 | 43% | 0/0 | 12 |
+| [precalculus 9.3](../../content/math/precalculus/09-systems-of-equations-and-inequalities/03-systems-of-nonlinear-equations-and-inequalities-two-variables.md) | `m49431` | metadata matched | 4/4 | 4/4 | 44% | 0/0 | 12 |
 | [precalculus 9.4](../../content/math/precalculus/09-systems-of-equations-and-inequalities/04-partial-fractions.md) | `m49432` | metadata matched | 4/4 | 4/4 | 39% | 0/0 | 12 |
 | [precalculus 9.5](../../content/math/precalculus/09-systems-of-equations-and-inequalities/05-matrices-and-matrix-operations.md) | `m49433` | metadata matched | 3/3 | 3/3 | 55% | 0/0 | 11 |
 | [precalculus 9.6](../../content/math/precalculus/09-systems-of-equations-and-inequalities/06-solving-systems-with-gaussian-elimination.md) | `m49434` | metadata matched | 4/4 | 4/4 | 43% | 0/0 | 17 |
 | [precalculus 9.7](../../content/math/precalculus/09-systems-of-equations-and-inequalities/07-solving-systems-with-inverses.md) | `m49435` | metadata matched | 2/2 | 3/3 | 44% | 0/0 | 12 |
-| [precalculus 9.8](../../content/math/precalculus/09-systems-of-equations-and-inequalities/08-solving-systems-with-cramers-rule.md) | `m49436` | heading-needs-review | 5/5 | 5/6 | 35% | 0/0 | 17 |
+| [precalculus 9.8](../../content/math/precalculus/09-systems-of-equations-and-inequalities/08-solving-systems-with-cramers-rule.md) | `m49436` | adapted-verified | 5/5 | 5/6 | 35% | 0/0 | 17 |
 | [precalculus 10.1](../../content/math/precalculus/10-analytic-geometry/01-the-ellipse.md) | `m49438` | metadata matched | 4/4 | 5/5 | 56% | 0/2 | 24 |
 | [precalculus 10.2](../../content/math/precalculus/10-analytic-geometry/02-the-hyperbola.md) | `m49439` | metadata matched | 5/5 | 6/6 | 64% | 0/0 | 30 |
 | [precalculus 10.3](../../content/math/precalculus/10-analytic-geometry/03-the-parabola.md) | `m49440` | metadata matched | 4/4 | 5/5 | 29% | 0/0 | 33 |
@@ -312,24 +522,8 @@ or intentionally omitted print material.
 | [precalculus 11.7](../../content/math/precalculus/11-sequences-probability-and-counting-theory/07-probability.md) | `m49450` | metadata matched | 5/5 | 7/7 | 63% | 0/0 | 19 |
 | [precalculus 12.1](../../content/math/precalculus/12-introduction-to-calculus/01-finding-limits-numerical-and-graphical-approaches.md) | `m49452` | metadata matched | 3/3 | 3/3 | 62% | 0/0 | 24 |
 | [precalculus 12.2](../../content/math/precalculus/12-introduction-to-calculus/02-finding-limits-properties-of-limits.md) | `m49453` | metadata matched | 4/4 | 4/4 | 63% | 0/0 | 28 |
-| [precalculus 12.3](../../content/math/precalculus/12-introduction-to-calculus/03-continuity.md) | `m49454` | metadata matched | 3/3 | 4/4 | 56% | 0/0 | 19 |
+| [precalculus 12.3](../../content/math/precalculus/12-introduction-to-calculus/03-continuity.md) | `m49454` | metadata matched | 3/3 | 4/4 | 57% | 0/0 | 19 |
 | [precalculus 12.4](../../content/math/precalculus/12-introduction-to-calculus/04-derivatives.md) | `m49455` | metadata matched | 4/4 | 6/6 | 65% | 0/0 | 27 |
-
-## Flag details
-
-### precalculus 6.2 — Graphs of the Other Trigonometric Functions
-
-Flags: `objective-needs-review`
-
-- Objective (80% token coverage): Analyze the graph of y=tan x.
-- Objective (75% token coverage): Graph variations of y=tan x.
-
-### precalculus 9.8 — Solving Systems with Cramer's Rule
-
-Flags: `heading-needs-review`
-
-- Source heading (0% best title similarity): Review Exercises
-
 
 ## Adjudicated intentional adaptations
 
@@ -360,4 +554,8 @@ Flags: `heading-needs-review`
 ### precalculus 5.4 — Right Triangle Trigonometry
 
 - **adapted-verified:** Section 5.4 is the LAST section of chapter 5, and m49384 carries the whole chapter's end matter after its own Section Exercises: a 'Review Exercises' set (whose subsections link back to m49371, m49372, m49374 and m49384) and a 'Practice Test'; the printed book carries both under 'Chapter Review' (PDF pages 618 onward), after section 5.4 ends. The audit reads those as source headings of 5.4 with no local counterpart and raises heading-needs-review. They are deliberately absent: both cover all four sections of chapter 5, so folding their items into 5.4's Practice block would attribute chapter-wide material to one section and hide the other three sections' skills inside a right-triangle page. Section 5.4's own six headings are all present, in source order, and the section-final Practice block draws only from the module's own '5.4 Section Exercises' set. Do not 'resolve' this flag by transcribing chapter review material into the section page; chapter-level assessment belongs in a Knowledge Check page, not here. Same adjudication as content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md (m49353), whose covers_note predicted this recurrence.
+
+### precalculus 9.8 — Solving Systems with Cramer's Rule
+
+- **adapted-verified:** Section 9.8 is the LAST section of chapter 9, and m49436 carries the whole chapter's end matter after its own Section Exercises: a 'Review Exercises' set whose subsections link back to every section of the chapter. The audit reads that as a source heading of 9.8 with no local counterpart and raises heading-needs-review at 0% title similarity. It is deliberately absent: the set covers all eight sections of chapter 9, so folding its items into 9.8's Practice block would attribute chapter-wide material to one section and hide the other seven sections' skills inside a Cramer's-rule page. Section 9.8's own headings are all present, in source order, and the section-final Practice block draws only from the module's own '9.8 Section Exercises' set. Do not 'resolve' this flag by transcribing chapter review material into the section page; chapter-level assessment belongs in a Knowledge Check page, not here. Same adjudication as 3.9 (m49353) and 5.4 (m49384), whose covers_note predicted this recurrence.
 

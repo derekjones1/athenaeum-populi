@@ -15,15 +15,26 @@ import {
   readdirSync,
   statSync,
 } from 'node:fs';
+import { parseCliArgs } from '../lib/cli.mjs';
 import { walkMarkdown } from '../lib/content.mjs';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
 
-const root = process.argv[2] || 'content';
+let root;
+try {
+  root = parseCliArgs(process.argv.slice(2), { positional: { max: 1, name: 'content root' } }).positional[0] ?? 'content';
+} catch (error) {
+  console.error(`verify-all: ${error.message}`);
+  console.error('usage: node tools/verify/verify-all.mjs [content-root]');
+  process.exit(2);
+}
 if (!existsSync(root)) throw new Error(`Content root not found: ${root}`);
 
 const files = walkMarkdown(root);
-const verify = spawnSync(process.execPath, ['tools/verify/verify-section.mjs', ...files], {
+// `--skip-lint`: steps 1–2 of the per-page verifier (the mechanical lints and
+// the KaTeX render) are exactly the pass `npm run lint` makes over the same
+// files in the same `npm test`, so they run once, there.
+const verify = spawnSync(process.execPath, ['tools/verify/verify-section.mjs', '--skip-lint', ...files], {
   encoding: 'utf8',
   maxBuffer: 32 * 1024 * 1024,
 });

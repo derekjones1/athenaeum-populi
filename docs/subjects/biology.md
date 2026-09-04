@@ -87,9 +87,9 @@ section, and nesting a unit directory would change published routes for no
 gain. While the book was being written, a unit with no authored chapter did not
 appear in the sidebar; it waited on the cover's "Planned contents" list,
 which came off the cover when the last chapter landed. A chapter landing is created when its first
-section lands, never earlier — the book stays `authoringStatus: scaffolded`
-in the lock until unit 1 is complete, `in-progress` after that, and
-`complete` only when all 208 sections exist. The cover's `seo_title:`
+section lands, never earlier — the book stayed `authoringStatus: scaffolded`
+in the lock until unit 1 was complete, `in-progress` after that, and became
+`complete` on September 3, 2026, when the 208th section landed. The cover's `seo_title:`
 override reads "Biology – Free Interactive Biology Textbook" because the
 generic shelf form would say "…Life & Health Sciences Textbook".
 
@@ -281,7 +281,7 @@ after its source items and summary items are placed:
 
 ## Media: vendored figures
 
-Biology 2e is image-dependent (about 1,500 raster figures). They ship as
+Biology 2e is image-dependent (well over a thousand raster figures). They ship as
 vendored WebP under `static/media/biology/`, referenced by the `mediafigure`
 shortcode and recorded in `data/media/biology.json`. That manifest is the
 contract: the shortcode fails the build on a stem it does not hold, the lint
@@ -307,13 +307,7 @@ runs it because the outputs are committed. Re-running is a no-op for
 unchanged sources. Commit the WebP files and the manifest with the pages
 that use them.
 
-**Using a figure:**
-
-```
-{{</* mediafigure src="biology/Figure_01_01_01-3978" alt="…" */>}}
-Formerly called blue-green algae, these (a) cyanobacteria … (credit a: modification of work by NASA; credit b: …)
-{{</* /mediafigure */>}}
-```
+**Using a figure** (the shortcode is shown in the core, §3):
 
 - `src` is `biology/<stem>` where the stem is the source file name without
   its extension (the manifest key). Keep the source stem; it is how a file
@@ -384,13 +378,11 @@ answers). They map onto components as follows:
 
 **Multiple choice.** Options are the source's, in the source's order, each
 on its own line of the shortcode body; `answer` is the keyed option verbatim.
-Write a strategy hint (regular sections only). Text-mode distractor rules:
-options parallel in grammar and length band, no "all/none of the above"
-added locally, no option that is also correct (a source distractor that is
-also true is an erratum — log it and replace the option, disclosing the
-change). The corpus-wide answer-position gate measures biology on its own
-once it has 50 MCs; if it fails, reorder with a deterministic seeded shuffle
-and say so in `Changes:` — never hand-pick positions.
+Write a strategy hint (regular sections only). The text-mode distractor
+rules are the core's (`docs/authoring-playbook.md` §3). The corpus-wide
+answer-position gate measures biology on its own; if it fails, reorder with
+a deterministic seeded shuffle and say so in `Changes:` — never hand-pick
+positions.
 
 **Self-check** (`selfcheck`). The question is the source's; the inner
 content is the source solution, lightly reformatted into complete sentences
@@ -405,16 +397,8 @@ requirement for this book is a lint error, landed with the practice
 retrofit.
 
 **Text recall** (`textin`). Built from the section's own glossary: the
-meaning becomes the prompt, the term the answer.
-
-```
-{{</* textin
-  question="A suggested and testable explanation for an event is called a ________."
-  answer="hypothesis"
-  accept="hypotheses"
-  hint="It is proposed before the experiment, and an experiment can disprove it."
-*/>}}
-```
+meaning becomes the prompt, the term the answer. The shortcode is shown in
+the core (§3); the rules specific to a glossary-built item:
 
 - `textin` is **unpaired**, exactly like `fillin`: `{{</* textin … */>}}` with no
   closing tag and no self-closing slash. A closing `{{</* /textin */>}}` makes Hugo
@@ -479,8 +463,7 @@ playbook §3.
 **The `## Practice` block** follows the core rule — one `### ` group per
 objective in callout order, every item from the source's keyed sets, the
 summary, or the glossary, every regular-section item hinted — at this book's
-landed floor: **at least three exercises per group, at least eight per
-section** (the core default elsewhere is two/five) — plus the biology rule that **each group holds
+landed floor: **the practice floor is 3 exercises per objective group and 8 per section** (the core default elsewhere is two/five) — plus the biology rule that **each group holds
 at least one auto-graded item** (`multiplechoice`, `textin`, or `sortbins`). Place a
 Review Question under the objective it tests, its Critical Thinking item
 under the objective it argues, and fill thin groups with glossary recall.
@@ -525,6 +508,20 @@ Record every item in the source ledger with its exercise or definition id.
   own text supports; before this the letter list read as prose and the
   page's key was never compared at all.
 
+## Knowledge checks
+
+**None of the eight unit Knowledge Checks is authored yet** —
+`find content -name 'knowledge-check-*.md'` lists only the math pages. The
+sections are complete; the unit checks are this book's next content
+programme, and the quota in `BOOK_RULES` (`tools/lint/lints.mjs`) and the
+life-sciences playbook are in place for when they land.
+
+Cumulative assessments for this book will be one page per unit, written to
+`docs/knowledge-check-playbook-life-sciences.md`: fixed three items per
+section (lint-enforced), author-written from the module text, no hints,
+subsection provenance in the ledgers. Read that playbook, not the math
+edition, before building one.
+
 ## Done checklist (in addition to the core checklist)
 
 - [ ] chapter media vendored, every alt read against the image, `longdesc` on every diagram whose meaning is not in its caption
@@ -534,52 +531,36 @@ Record every item in the source ledger with its exercise or definition id.
 - [ ] footer: CC BY-NC-SA 4.0, deep link, full `Changes:` clause
 - [ ] `npm run verify-section`, `npm test`, ledger verdicts merged, `node tools/source/openstax-source.mjs build-map` rerun and the map committed
 
-## Budgets to watch as the book grows
+## Build budgets: the completion measurement record
 
-- **HTML total.** `tools/build/audit-build.mjs` caps the built HTML at 350 MiB.
-  That is HTML only; the audit's summary line prints the all-files size,
-  which also counts ~59 MiB of vendored WebP, so read the gate's own line,
-  not the summary, when judging headroom. The driver is the sidebar, not the
+The book is complete, so these are no longer projections — they are what
+the finished corpus measured, and the caps it sits under. The caps live in
+`tools/build/audit-build.mjs`; if one trips, re-measure and raise it
+deliberately with the new numbers, never by rounding up in advance.
+
+- **HTML total** (`maxTotalHtmlBytes`, 350 MiB). Measured at completion
+  (September 3, 2026, 47 chapters, 600 HTML documents): **254.3 MiB** of
+  HTML, 27% under the cap. The audit's summary line prints the all-files
+  size, which also counts the vendored WebP — read the gate's own line, not
+  the summary, when judging headroom. The driver is the sidebar, not the
   prose: every biology page's `<aside>` lists the whole book. Until
   2026-09-01 that tree was rendered twice per page (phone drawer + desktop
-  list) and the cap had to go 220 → 400; `layouts/_partials/sidebar.html`
-  now renders one list for every width (drawer-only rows `hx:md:hidden`, the
-  two wrapper rows flattened by `.ap-sidebar-shell` in `custom.css` from md
-  up), which took the same corpus from 271.0 to 185.1 MiB and the cap to 280.
-  Re-measured at 32 chapters (516 documents): 206.5 MiB of HTML; a biology
-  page is 283.3 KiB mean with a 217.5 KiB aside at 171 book links, and the
-  aside grows ~1.12 KiB per book link (an earlier note said 0.63 — it had
-  divided by the doubled link count). The finished book (255 book links plus
-  ~47 knowledge-check links, which the math books show do enter the tree,
-  ~304 biology pages at ~430 KiB) projects to ~128 MiB of biology + 158.4 MiB
-  of math ≈ 286 MiB; 350 keeps ~22% headroom. The full projection lives in
-  the comment above `maxTotalHtmlBytes`. If the cap trips again, re-measure
-  the aside mean and raise deliberately with the new numbers; never by
-  rounding up in advance — and consider shrinking the per-link markup
-  instead, since ~1.1 KiB per link on every page of the book is the cost.
-  **Measured at completion (September 3, 2026, 47 chapters, 600 HTML
-  documents): 254.3 MiB of HTML** — under the ~286 MiB projection and 27%
-  below the 350 cap, so the cap did not move. The audit's all-files summary
-  line read 348.9 MiB at the same build; do not mistake it for the gate.
-- **Sidebar share** (`maxSidebarShare 0.55`) is per page: the biology sidebar
-  lists every chapter of the book, so re-check the audit line after each
-  unit. Measured 35% at 32 chapters, projected ~50% at completion.
-- **Chrome per page** (`maxMeanChromeBytes 300 KiB`, the duplicated-chrome
-  gate) is the cap that guards the single-list sidebar: the book tree is
-  rendered once per page at ~1.12 KiB per link, so every section added grows
-  every biology page's chrome by about that. Measured September 1, 2026 at
-  32 chapters: biology pages 241.1 KiB (aside 217.5), math pages 131.6,
-  corpus mean 168.3; the finished book projects to ~252 KiB mean, 300 keeps
-  ~19% headroom, and the tree emitted twice again lands the mean near 312
-  today and ~480 at completion. The browser suite pins the shape too (`the
-  biology sidebar nests chapters under their unit`: eight units and 255 book
-  links in the DOM, first visible link the first chapter). The rationale and
-  projection live in the comment above `maxMeanChromeBytes`.
+  list); `layouts/_partials/sidebar.html` now renders one list for every
+  width (drawer-only rows `hx:md:hidden`, the two wrapper rows flattened by
+  `.ap-sidebar-shell` in `custom.css` from md up), which is what brought the
+  corpus under the cap.
+- **Chrome per page** (`maxMeanChromeBytes`, 300 KiB) is the cap that guards
+  the single-list sidebar: the book tree is rendered once per page at about
+  1.1 KiB per link, so a tree emitted twice again would put the mean well
+  over the cap. The browser suite pins the shape too (`the biology sidebar
+  nests chapters under their unit`: the unit nesting, the first chapter as
+  the first visible link).
+- **Sidebar share** (`maxSidebarShare`, 0.55) is per page; the biology
+  sidebar lists every chapter of the book.
 - **Browser suite time.** `tests/figures.spec.mjs` walks every route; its
-  timeout scales with the route count, but watch its wall time in the
-  browser-suite tail after each chapter.
-- **Chapter close-out** also runs `npm run source:check -- --bundle
-  biology-bundle` (report-only): units 1–2 audit clean — 44/44 sections,
-  every objective and heading located, 0 unresolved review items — and a
-  heading the audit cannot locate is the signal that a page renamed or
-  dropped a source section.
+  timeout scales with the route count.
+- **Source audit.** `npm run source:check -- --bundle biology-bundle`
+  (report-only) audits the finished book clean — 208/208 sections, every
+  objective and heading located, 0 unresolved review items — and a heading
+  the audit cannot locate is the signal that a page renamed or dropped a
+  source section.

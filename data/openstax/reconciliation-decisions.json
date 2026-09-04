@@ -177,6 +177,20 @@
    ],
    "rationale": "Section 5.4 is the LAST section of chapter 5, and m49384 carries the whole chapter's end matter after its own Section Exercises: a 'Review Exercises' set (whose subsections link back to m49371, m49372, m49374 and m49384) and a 'Practice Test'; the printed book carries both under 'Chapter Review' (PDF pages 618 onward), after section 5.4 ends. The audit reads those as source headings of 5.4 with no local counterpart and raises heading-needs-review. They are deliberately absent: both cover all four sections of chapter 5, so folding their items into 5.4's Practice block would attribute chapter-wide material to one section and hide the other three sections' skills inside a right-triangle page. Section 5.4's own six headings are all present, in source order, and the section-final Practice block draws only from the module's own '5.4 Section Exercises' set. Do not 'resolve' this flag by transcribing chapter review material into the section page; chapter-level assessment belongs in a Knowledge Check page, not here. Same adjudication as content/math/precalculus/03-polynomial-and-rational-functions/09-modeling-using-variation.md (m49353), whose covers_note predicted this recurrence.",
    "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap."
+  },
+  {
+   "localPath": "content/math/precalculus/09-systems-of-equations-and-inequalities/08-solving-systems-with-cramers-rule.md",
+   "bundle": "college-algebra-bundle",
+   "moduleId": "m49436",
+   "covers": [
+    "heading-needs-review"
+   ],
+   "status": "adapted-verified",
+   "sourceItems": [
+    "Review Exercises"
+   ],
+   "rationale": "Section 9.8 is the LAST section of chapter 9, and m49436 carries the whole chapter's end matter after its own Section Exercises: a 'Review Exercises' set whose subsections link back to every section of the chapter. The audit reads that as a source heading of 9.8 with no local counterpart and raises heading-needs-review at 0% title similarity. It is deliberately absent: the set covers all eight sections of chapter 9, so folding its items into 9.8's Practice block would attribute chapter-wide material to one section and hide the other seven sections' skills inside a Cramer's-rule page. Section 9.8's own headings are all present, in source order, and the section-final Practice block draws only from the module's own '9.8 Section Exercises' set. Do not 'resolve' this flag by transcribing chapter review material into the section page; chapter-level assessment belongs in a Knowledge Check page, not here. Same adjudication as 3.9 (m49353) and 5.4 (m49384), whose covers_note predicted this recurrence.",
+   "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap."
   }
  ],
  "upstreamDriftDecisions": [

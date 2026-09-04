@@ -3,12 +3,13 @@
 #
 # Security baseline for every response. A Content-Security-Policy is
 # deliberately NOT set here yet, but the reason is narrower than it used to
-# be. Measured against the current build (275 pages): ZERO inline <script>
-# blocks and zero inline event handlers, so `script-src 'self'` needs no
-# allowlist and no nonce. What still blocks a clean policy:
+# be. The build carries ZERO inline <script> blocks and zero inline event
+# handlers (the only inline scripts are `application/ld+json` data blocks),
+# so `script-src 'self'` needs no allowlist and no nonce. What still blocks
+# a clean policy:
 #
-#   - 1,353 inline `style=` attributes (KaTeX sizing plus the vendored theme's
-#     search partial) require `style-src 'unsafe-inline'`;
+#   - inline `style=` attributes on every page (KaTeX sizing plus the
+#     vendored theme's search partial) require `style-src 'unsafe-inline'`;
 #   - Pagefind runs WebAssembly in a worker -> `'wasm-unsafe-eval'` and
 #     `worker-src 'self'`;
 #   - MathLive's read-aloud builds audio as a blob URL -> `media-src blob:`,

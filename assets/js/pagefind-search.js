@@ -11,18 +11,14 @@
   const state = new WeakMap();
   let pagefindPromise;
 
+  // Only the slugs `titleCase` cannot reproduce: the three shelves whose
+  // names carry an ampersand. Every other shelf and every book title-cases
+  // from its slug, so a new book needs no entry here — a hardcoded list once
+  // silently stopped covering a book the day it was published.
   const labels = {
-    math: 'Math',
-    'physical-sciences': 'Physical Sciences',
     'life-health-sciences': 'Life & Health Sciences',
     'engineering-computing': 'Engineering & Computing',
     'social-sciences-business': 'Social Sciences & Business',
-    humanities: 'Humanities',
-    prealgebra: 'Prealgebra',
-    'elementary-algebra': 'Elementary Algebra',
-    'intermediate-algebra': 'Intermediate Algebra',
-    precalculus: 'Precalculus',
-    biology: 'Biology',
   };
 
   function loadPagefind() {

@@ -2,35 +2,28 @@
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { join, relative, sep } from 'node:path';
-import { walkFiles } from '../lib/content.mjs';
+import { parseCliArgs } from '../lib/cli.mjs';
+import { loadMediaManifests, walkFiles } from '../lib/content.mjs';
 import { htmlAttribute, hasFileBackedCssImage, MAIN_CONTENT_RE } from '../lib/html.mjs';
 
-const root = process.argv[2] || 'public';
+let cli;
+try {
+  cli = parseCliArgs(process.argv.slice(2), { valueFlags: ['data-dir'], positional: { max: 2, name: 'build root' } });
+} catch (error) {
+  console.error(`audit-build: ${error.message}`);
+  console.error('usage: node tools/build/audit-build.mjs [public-root] [media-data-dir | --data-dir <dir>]');
+  process.exit(2);
+}
+const root = cli.positional[0] ?? 'public';
 // The media manifest directory: `--data-dir <dir>` or a bare second
 // positional argument, so audit-build.test.mjs can point this at a fixture
 // manifest without touching the repository's real data/media. Every
 // manifest's every variant file is the sole allowlisted exception to the
 // "no file-backed images" rule below, and only inside its own
-// <figure class="ap-mediafigure">.
-const mediaDataDirFlagIndex = process.argv.indexOf('--data-dir');
-const mediaDataDir = mediaDataDirFlagIndex !== -1
-  ? process.argv[mediaDataDirFlagIndex + 1]
-  : (process.argv[3] && !process.argv[3].startsWith('--') ? process.argv[3] : 'data/media');
-function loadMediaManifests(dir) {
-  const manifests = new Map();
-  if (!existsSync(dir)) return manifests;
-  for (const file of readdirSync(dir)) {
-    if (!file.endsWith('.json')) continue;
-    try {
-      manifests.set(file.slice(0, -'.json'.length), JSON.parse(readFileSync(join(dir, file), 'utf8')));
-    } catch {
-      // A malformed manifest allowlists nothing for that book — the mediafigure
-      // shortcode itself already refuses to build against one, so this can
-      // only ever be a hand-corrupted fixture, not real vendored content.
-    }
-  }
-  return manifests;
-}
+// <figure class="ap-mediafigure">. A malformed manifest allowlists nothing
+// for that book — the mediafigure shortcode itself refuses to build against
+// one, so that can only ever be a hand-corrupted fixture.
+const mediaDataDir = cli.flag('data-dir') ?? cli.positional[1] ?? 'data/media';
 const mediaManifests = loadMediaManifests(mediaDataDir);
 // "media/<book>/<file>" for every vendored variant across every manifest —
 // the ONLY file-backed image paths this audit allows anywhere in the build.
@@ -85,7 +78,8 @@ const filesWarnAt = 0.9;
 // pages a 109.9 KiB aside (was ~182 on Prealgebra). A biology aside now grows
 // ~0.63 KiB per new section link, so at completion (256 biology pages, aside
 // ~170 KiB, page ~235 KiB) biology holds ~59 MiB; math is finished at
-// 158.4 MiB; ~47 eventual biology knowledge-check pages add ~14 MiB —
+// 158.4 MiB; the biology knowledge-check pages — budgeted at ~47 here,
+// settled at 8 (one per unit) on September 3, 2026 — add ~14 MiB at 47 —
 // ~231 MiB projected. 280 MiB keeps ~21% headroom over that. The duplication
 // gates below (absolute bytes outside main#content) still catch a
 // doubled-chrome regression long before this total does.
@@ -96,7 +90,8 @@ const filesWarnAt = 0.9;
 // wrong: it divided the aside by the DOUBLED link count. Measured growth is
 // ~1.12 KiB per book link (159.4 KiB at 119 links -> 217.5 KiB at 171), so a
 // biology page is 283.3 KiB mean (aside 217.5) today and, at completion (255
-// book links + ~47 knowledge-check links, which the math books show DO enter
+// book links + ~47 knowledge-check links (now 8, one per unit — the
+// projection stands, with more headroom), which the math books show DO enter
 // the tree), ~430 KiB mean (aside ~364) across ~304 biology pages: ~128 MiB
 // of biology + 158.4 MiB math = ~286 MiB projected. 350 MiB keeps ~22%
 // headroom over that. The sidebar itself — ~1.1 KiB of markup per link on
@@ -135,7 +130,8 @@ const maxPageElements = 35_000;
 // and the same corpus measured 144.9 KiB mean chrome: biology pages 182.8
 // (aside 159.4), math pages 134.8, ~0.63 KiB per book link. The finished book
 // (255 links) puts a biology page near 194 KiB and the corpus mean, with the
-// eventual ~47 biology knowledge-check pages, near 161 KiB. 200 KiB is ~24%
+// eventual biology knowledge-check pages (budgeted at 47; 8 are planned),
+// near 161 KiB. 200 KiB is ~24%
 // over that projection, while the regression this gate exists for — the tree
 // emitted twice again — lands the mean near 266 KiB today and higher as the
 // book grows. Re-measure and raise deliberately, never by rounding up in

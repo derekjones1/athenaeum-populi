@@ -2,13 +2,15 @@
  * Search-result breadcrumb labels stay in step with the content tree.
  *
  * assets/js/pagefind-search.js renders each result's context as
- * "Shelf › Book" from the first two URL segments, through a hand-maintained
- * slug → label map. Nothing else reads that map, so a shelf or book added
- * without an entry degrades silently to a title-cased slug — Precalculus
- * shipped that way for a whole book. The contract asserted here is the one
- * the map exists to satisfy: every shelf (depth 1) and book (depth 2)
- * directory under content/ has an entry, and the entry is the page's own
- * front-matter title, so search says exactly what the breadcrumb says.
+ * "Shelf › Book" from the first two URL segments: a slug → label map for
+ * the names title-casing cannot reproduce (the ampersand shelves), and
+ * `titleCase(slug)` for everything else. The contract asserted here is the
+ * rendered one: for every shelf (depth 1) and book (depth 2) directory under
+ * content/, the context the search UI would print equals the page's own
+ * front-matter title, so search says exactly what the breadcrumb says. And
+ * the map holds ONLY what the fallback cannot derive — a hand-maintained
+ * entry per book once silently stopped covering a book the day it was
+ * published, so a new book must need no entry at all.
  */
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -19,11 +21,20 @@ import { parseFrontmatter } from '../lib/content.mjs';
 const repositoryRoot = new URL('../../', import.meta.url).pathname;
 const contentRoot = join(repositoryRoot, 'content');
 
+const searchSource = readFileSync(join(repositoryRoot, 'assets/js/pagefind-search.js'), 'utf8');
+
 function labelMap() {
-  const source = readFileSync(join(repositoryRoot, 'assets/js/pagefind-search.js'), 'utf8');
-  const literal = source.match(/const labels = (\{[\s\S]*?\});/);
+  const literal = searchSource.match(/const labels = (\{[\s\S]*?\});/);
   assert.ok(literal, 'pagefind-search.js declares `const labels = {...};`');
   return Function(`"use strict"; return (${literal[1]});`)();
+}
+
+// The fallback, read out of the same source so this test can never assert a
+// title-casing rule the UI does not actually apply.
+function titleCaseFn() {
+  const fn = searchSource.match(/function titleCase\(slug\) \{[\s\S]*?\n  \}/);
+  assert.ok(fn, 'pagefind-search.js declares `function titleCase(slug)`');
+  return Function(`"use strict"; ${fn[0]} return titleCase;`)();
 }
 
 function subdirectories(root) {
@@ -51,16 +62,19 @@ function titleOf(directory) {
   return attributes.title;
 }
 
-test('every shelf and book directory has a search label equal to its own title', () => {
+test('every shelf and book renders a search context equal to its own title', () => {
   const labels = labelMap();
+  const titleCase = titleCaseFn();
   for (const [slug, directory] of expectedLabels()) {
-    assert.equal(labels[slug], titleOf(directory), `labels['${slug}'] matches the title in ${directory}/_index.md`);
+    assert.equal(labels[slug] ?? titleCase(slug), titleOf(directory), `the search context for '${slug}' matches the title in ${directory}/_index.md`);
   }
 });
 
-test('no search label names a shelf or book that does not exist', () => {
+test('the label map holds only the slugs the title-case fallback cannot reproduce', () => {
   const known = expectedLabels();
-  for (const slug of Object.keys(labelMap())) {
+  const titleCase = titleCaseFn();
+  for (const [slug, label] of Object.entries(labelMap())) {
     assert.ok(known.has(slug), `labels['${slug}'] has a content/ directory at depth 1 or 2`);
+    assert.notEqual(titleCase(slug), label, `labels['${slug}'] is redundant — titleCase already produces ${JSON.stringify(label)}`);
   }
 });

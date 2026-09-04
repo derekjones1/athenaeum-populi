@@ -220,46 +220,11 @@ behind — intermediate algebra 9.6 acquired one exactly that way. Inside
 separator and is correct; the lint fires only on spans that open no
 environment.
 
-## Multiple choice (graph mode): migrating legacy options
-
-This extends the core's "Multiple choice (graph mode)" usage block and its
-distractor rules with the one-time procedure for converting an older
-prerendered-`<svg>` graph-choice exercise to spec options.
-
-**Migrating a legacy graph-choice exercise to spec options.** Unlike the
-figure migration above, this rewrites the exercise's own body, so the
-answer ledger participates by design — a converted exercise is a re-read
-exercise. Per page:
-
-1. Convert each option `<svg>` to its spec. Legacy options carry no
-   `data-spec`, so reconstruct like any pre-spec figure: recover grid,
-   objects, and labels from the SVG geometry, fit analytic primitives
-   (never `smoothCurves`), and keep each option's `aria-label` verbatim.
-   Only the option bodies change: question, hint, `answerIndex`, and option
-   ORDER must stay semantically identical.
-2. Verify old vs new side by side the same way the core playbook's §3
-   requires for figures:
-   render each new spec with `toSvgString`, lay it beside the old option
-   SVG in a throwaway gallery, screenshot, and inspect every pair. The
-   wrong options matter as much as the right one — a distractor that
-   drifted is a changed exercise.
-3. Re-verify the exercise and record it: the rewritten body has a new
-   hash, so `npm test` fails at `verify:ledger` until the record exists.
-   Run `node tools/verify/answer-ledger.mjs prune content` to drop the stranded
-   old records, then `npm run ledger:list -- --unverified`, independently
-   confirm the `answerIndex` option is the correct graph (read the specs,
-   not the old key), write result files, and `npm run ledger:merge <dir>`.
-4. Gates: `npm run verify-section -- <page>`, `npm test`, `npm run build`,
-   the figure layout spec, and `node tools/build/screenshot-page.mjs <route>`
-   for light/dark crops. The exercise count is unchanged, so no baseline
-   moves; the all-same-`answerIndex` lint rule still applies across the
-   page.
-
-## GraphPlot: answer shapes and the conversion ledger
+## GraphPlot: answer shapes and graph recognition
 
 This continues the core's `graphplot` usage block with every supported
-`answer` shape, the grading contract each one carries, and the adjudicated
-queue that converts multiple-choice and fill-in exercises to graphplots.
+`answer` shape, the grading contract each one carries, and the rule that
+pairs every graph-production exercise with graph recognition.
 
 `answer` shapes: `{slope,intercept}`, `{x}`, `{y}`, `{system:[…]}`,
 `{asymptotes:[…]}`, `{quadratic:{a,b,c}}`, `{points:[[x,y],…]}`. A `points`
@@ -343,223 +308,72 @@ GraphPlot configuration is validated during `npm test`: grid bounds and steps
 must be finite, minimums must be below maximums, snap/grid/tick steps must be
 positive, and the answer shape must match one of the supported forms.
 
-**Converting an MC/fillin exercise to a graphplot (the conversion
-ledger).** `data/verification/graphplot-conversion-ledger.json` is the
-adjudicated queue of multiple-choice and fillin exercises that should
-become graphplots — each `convert` entry names the answer form (`mode`) and
-sketches the answer/grid (`proposal`), each `keep` entry says why the
-exercise stays as it is, so a conversion session never starts by re-reading
-the corpus.
+**Graph production and recognition.** Any regular section carrying two or
+more `graphplot` exercises also carries at least one `mode="graph"` multiplechoice —
+recognizing a correct graph among plausible wrong ones is a distinct skill
+from producing one, and a section that asks the learner to draw graphs must
+also ask them to judge one. A lone graphplot needs no companion: a section
+that barely covers graphing is not the unit to protect the skill in. The
+lint reports a section with two or more graphplots and no recognition MC as
+an error; Knowledge Checks are exempt (they are cumulative assessments, not
+sections, and the math edition's playbook governs their mix). There is no
+upper bound: intermediate algebra §3.4 keeps two
+recognition MCs beside three graphplots because its distractors encode
+boundary style and shading, which no answer form grades. What CAN be a
+graphplot is bounded by the answer forms the engine has — line, points,
+system, quadratic, asymptotes; the queue of MC/fillin exercises that could
+become graphplots was adjudicated to zero across every book in August 2026
+and its ledger retired, so adding an answer form is the only thing that
+reopens it. When one lands, the corpus is the queue: re-read the sections
+whose graph asks it now covers (curve families with no form — exponential,
+logarithmic, radical, absolute value, piecewise, conic, inequality regions
+— stay static figures with a `fillin` or `multiplechoice` about them).
 
-**Commit the ledger file.** It is the whole point of the tool, and it was
-lost once already: the file was never committed, `readConversionLedger`
-returned an empty ledger for a missing path, and `stats` reported "0
-adjudicated, 335 unread" — indistinguishable from a queue nobody had
-started. Every command except `merge` now refuses to run without it
-(`init` creates it deliberately; `--ledger <path>` points at another one,
-which is how the tests avoid writing this one).
+Hazards a conversion or a new graphplot must clear, learned the hard way:
 
-**The queue is currently at zero.** All 335 graph-topic MC/fillin
-exercises are adjudicated `keep`: the corpus's graph-production exercises
-are already graphplots (138 of them) with one `mode="graph"` recognition
-multiple choice per section (33). What remains flagged is graph *reads*,
-number-line inequalities whose answer is interval notation, curve families
-with no answer form (exponential, logarithmic, radical, absolute value,
-piecewise, conic, inequality regions), asymptote-equation asks, graphing-
-calculator estimates, and algebra steps whose prompt merely says "graph".
-Adding an answer form to the engine is what would reopen this queue —
-re-run `npm run graphable:candidates` after doing so, since `prune` plus a
-new form is the only way new `convert` work appears. To convert:
-
-1. `npm run graphable:list -- --verdict convert` — pick entries (the
-   current file:line travels with each one).
-2. Treat the `proposal` as a hypothesis: re-derive the answer independently
-   from the prompt (run the arithmetic), pick grid/snap so validation's
-   reachability guards pass, and keep the pedagogical ask intact — reword
-   the question only as far as "…and place it/them on the grid" requires.
-   Two proposal fields are known-unreliable and must not be copied:
-   - A proposal that says to author a fractional slope "in the engine's
-     exact-fraction spelling" is **wrong**. The config is JSON and
-     `parseGraphPlotConfig` requires `typeof value === 'number'`, so
-     $\tfrac13$ is `0.3333333333333333` and $-\tfrac{14}{3}$ is
-     `-4.666666666666667`. The grader's `1e-9` tolerance absorbs the float
-     error; the lattice points a learner can actually place divide exactly.
-   - The proposed `grid` is a default, not a reading of the page. **Follow
-     the section's existing graphplot convention** (`grep -n '"answer"'` the
-     file) — the proposals lean on −6..6, where $y = 2.5x - 5$ reaches
-     exactly three lattice points and `plotPoints: 3` leaves the learner no
-     choice at all.
-3. **Read the converted exercise against the page immediately above it.**
-   A fill-in that asked for one intermediate value ("let $y = 0$, solve for
-   $x$") can sit under the worked example of the *same* equation without
-   harm; the graphplot that replaces it cannot, because the example's
-   three-point solution table now IS the answer, and the exercise becomes
-   transcription. When that happens, check the pinned CNXML for the Try It
-   that actually follows the example — a page that substituted the example's
-   own equation for the source Try It has a fidelity defect the conversion
-   merely exposed, and restoring the source equation fixes both.
-
-   **The worse variant: the exercise's own answer graph, pre-rendered above
-   it.** Intermediate algebra 9.6 carried it eight times — a prompt sentence
-   ("Graph $f(x)=\ldots$ by using its properties."), then a
-   `<div class="ap-figure">` holding the solved graph with the vertex named in
-   its `aria-label`, then a fill-in asking for that vertex. The static answer
-   is *why* the fill-in only ever asked for one scalar, and a screen-reader
-   user was handed the answer verbatim. Delete the figure and replace the whole
-   prompt + figure + fill-in triad with one blank-grid `graphplot`. Check the
-   CNXML first: on 9.6 it carried no figure there at all, which is what
-   identified the answer graph as a local artifact rather than a
-   transcription. `grep -n 'aria-label="The graph of' <file>` finds the shape.
-4. **Every section that has graphing questions keeps at least one of them a
-   graph-recognition multiple choice — decide it per section, and never
-   escalate it.** Recognizing a correct graph among plausible wrong ones is
-   a distinct skill from producing one, and the ledger adjudicates one
-   exercise at a time, so it cannot see what a section is left holding. Count
-   the section's graphing questions — the `graphplot`s it already has plus
-   every entry the queue wants converted, Practice block included — and
-   apply the rule mechanically:
-
-   - **More than one graphing question in the section:** keep exactly one as
-     a `mode="graph"` multiple choice and convert every other, the Practice
-     block's included. Keep the one with the most diagnostic distractors —
-     reversed coordinates, an inverted slope sign, a swapped intercept, a
-     vertex off by a unit. If none of the section's candidates is already a
-     recognition MC, author the keeper as one (spec-first options, per
-     "Multiple choice (graph mode)" above); a converted exercise turned back
-     into a recognition MC counts.
-   - **Exactly one graphing question in the section:** convert it. A lone
-     item is worth more as production practice than as recognition, and the
-     section is not the right unit to protect a skill it barely covers.
-
-   The count is per section, not per chapter or per book. Audit the whole
-   corpus against it with:
-
-   ```sh
-   for f in $(grep -rl 'graphplot\|mode="graph"' --include='*.md' content/math/ \
-               | grep -v '/knowledge-check-'); do
-     gp=$(grep -c '{{< graphplot' $f); mc=$(grep -c 'mode="graph"' $f)
-     tot=$((gp+mc))
-     if { [ $tot -gt 1 ] && [ $mc -ne 1 ]; } || { [ $tot -eq 1 ] && [ $mc -ne 0 ]; }
-       then echo "VIOLATION gp=$gp mc=$mc $f"; fi
-   done
-   ```
-
-   **`knowledge-check-XX-YY.md` pages are outside this *counting* rule**, for
-   the same reason they are exempt from the 2–3 question cap: they are
-   cumulative assessments, not sections, and the section is the unit the rule
-   is about. They are **not** outside conversion. Until August 18, 2026 the
-   conversion ledger said otherwise — every graph-topic entry on a knowledge
-   check carried `keep` with "knowledge-check page — automatic keep" — and that
-   blanket adjudication is retired. A knowledge check gets the same pass a
-   section does, with its own classification, described below.
-
-   **Classifying a knowledge check's graph questions.** A cumulative
-   assessment mixes three kinds of graph-related item, and each has exactly
-   one treatment:
-
-   - **Identification** — the skill is recognizing or classifying a graph
-     ("which description gives the graph of…", "identify the type of graph",
-     "which way does it open"). It stays a `multiplechoice`, but its options
-     become rendered figures, spec-first per "Multiple choice (graph mode)"
-     above, instead of prose descriptions. Each distractor figure depicts
-     exactly the misconception its prose distractor described: do not invent
-     new distractors, drop options, or reorder them.
-   - **Disguised graphing** — the item is a `multiplechoice` or `fillin` only
-     because a drawn graph could not be graded, and the learner has to
-     construct the graph mentally to answer. The tell is in the source: an
-     instruction that says "graph", and an Answer Key that prints a figure
-     inside the exercise's `<solution>`. Convert it to a `graphplot`.
-   - **Already right** — everything else. That includes graph-*reading* items
-     whose figure the source prints inside `<problem>` (a given, not a leaked
-     answer), value asks the source poses as values, and anything no answer
-     form can grade — a shaded half-plane above all.
-
-   Three rules govern what the buckets do not settle:
-
-   - **Match the source section's interaction level.** If the section a
-     knowledge-check item points back to now asks learners to graph, the item
-     should too; where that section carries no `graphplot` at all, do not
-     introduce one on the knowledge check.
-   - **A rendered figure can leak the answer to a NEIGHBOURING item.** An
-     identification question's option figures print the object's vertex,
-     intercepts and asymptotes, and its `ariaLabel` names them in words — so a
-     property fill-in about the same object, anywhere near it, stops being
-     derivable and becomes readable. This is the pre-rendered-answer-graph
-     hazard one item over, and nothing gates it. Read the items on both sides
-     before settling the option specs, and put the identification question
-     *after* the property questions about the same object.
-   - **Say what the conversion costs.** A drawn graph takes far longer than an
-     MC click, and a knowledge check is already long. Converting several items
-     on one page is a length decision — report it in the handoff rather than
-     making it silently.
-
-   Prealgebra, Elementary Algebra and Intermediate Algebra are compliant.
-   Precalculus is not yet, because its conversion queue has not been worked;
-   bring each section into line as its conversion lands, and promote this
-   check to a lint error once the last book is clean — it is mechanical, and
-   nothing but the outstanding backlog is keeping it out of
-   `tools/lint/lints.mjs`.
-
-   **One adjudicated exception, and the reason the promotion is not automatic:**
-   intermediate algebra §3.4 (Graph Linear Inequalities in Two Variables)
-   holds three `graphplot`s and *two* `mode="graph"` MCs. Neither MC can
-   become a graphplot — their distractors encode dashed-versus-solid boundary
-   style and which side of the line is shaded, and there is no answer form
-   that grades shading — so "convert every other" has nothing to convert, and
-   demoting one to a prose-option MC would trade a rendered-graph item for a
-   worse one purely to satisfy a counter. The rule as written assumes every
-   surplus recognition MC *could* have been a graphplot. Before this check
-   becomes a lint error, that clause needs restating (the natural form: a
-   section keeps at least one recognition MC, and converts every recognition
-   MC a graphplot answer form can express).
-5. **Sweep for exercises the conversion strands but the queue never named.**
-   A workaround is often a *pair* — "what is the $x$-coordinate of the
-   intersection?" followed by "…and the $y$-coordinate?" — and the ledger
-   adjudicates only the first. Grep the neighbourhood for `For the same`
-   and for a hint that cites a value no exercise on the page produces any
-   more; that hint is the tell. Delete the residue rather than leaving a
-   fill-in whose hint refers to a deleted answer.
-6. Do not restate what the component already prints. `<graph-plot>` emits
-   its own instruction line ("Place two points on each line — the first two
-   make one line, the next two the other"), so a question ending in the same
-   sentence renders it twice.
-7. The rewritten exercise is a re-read exercise: `node
-   tools/verify/answer-ledger.mjs prune content` drops the stranded old record,
-   then record the new verdict per the core playbook's §4.
-8. `node tools/verify/graphplot-conversion.mjs prune content` — the conversion
-   strands the queue entry; pruning it is how the queue burns down.
-9. If a converted fillin is named in `SOUND_COINCIDENCES`
-   (`tools/verify/verify-replay.mjs`), delete that entry — its exercise no longer
-   exists, and the allowlist test fails with "the question prefix must name
-   exactly ONE fillin, matched 0". This is the common case, not an edge one:
-   "graph $x = a$, what is the $x$-value…" fillins are exempted *because*
-   the prompt states its own answer, which is the same workaround that put
-   them in the conversion queue.
-10. If the section keeps a provenance footer describing its component
-    choices, reconcile it; then `npm run verify-section -- <page>` and `npm
-    test`. Converting a fillin moves the replay floor, so end the session
-    with `npm run baseline:update`. Merging two exercises into one graphplot
-    also lowers the exercise-count floor, which the tool refuses without
-    `--allow-decrease` — account for the drop before passing it (removed
-    fillins' scalar printed spans should bracket the replay delta).
-11. Run `npm run ci`, not just `npm test`: adding graphplots *above* an
-    existing one renumbers the page, and any Playwright spec that reached
-    its card by position silently retargets. Select a `graph-plot` in a test
-    by its authored config —
-    ``graph-plot[data-config*='"slope":3,"intercept":-1']`` — never by
-    `.nth(n)`.
-
-New graph-topic exercises land in the queue automatically: `npm run
-graphable:candidates` surfaces any graph-topic MC/fillin with no ledger
-entry (three deliberately conservative signals — MC with rendered-graph
-options, graph/sketch/plot prompts, asymptote prompts; widen
-`isGraphTopic` in `tools/verify/graphplot-conversion.mjs` to grow the queue), and
-`npm run graphable:merge <dir>` folds a reading pass's verdicts in with the
-answer ledger's conflict-refusing contract. The decision it refuses to let
-file order settle is the verdict *and* the `mode`: two passes that both say
-`convert` but disagree on the answer form have read the exercise
-differently. `note` and `proposal` are prose (the proposal is a hypothesis
-the converter re-derives), so differing wording merges, first file winning.
+- **The exercise's own answer graph, pre-rendered above it.** Intermediate
+  algebra 9.6 once carried a prompt ("Graph $f(x)=\ldots$ by using its
+  properties."), then a static figure holding the solved graph with the
+  vertex named in its `aria-label`, then a fill-in asking for that vertex —
+  a screen-reader user was handed the answer verbatim. One blank-grid
+  `graphplot` replaces the whole triad. Check the pinned CNXML first: on 9.6
+  it carried no figure there at all, which is what identified the answer
+  graph as a local artifact. `grep -n 'aria-label="The graph of' <file>`
+  finds the shape.
+- **A rendered figure can leak the answer to a NEIGHBOURING item.** A
+  recognition MC's option figures print the object's vertex, intercepts and
+  asymptotes, and its `ariaLabel` names them in words — so a property
+  fill-in about the same object, anywhere near it, stops being derivable and
+  becomes readable. Read the items on both sides before settling the option
+  specs, and put the recognition question *after* the property questions
+  about the same object.
+- **A graphplot under the worked example of the same equation is
+  transcription.** The example's three-point solution table IS the answer.
+  Check the CNXML for the Try It that actually follows the example — a page
+  that substituted the example's own equation has a fidelity defect the
+  graphplot merely exposes, and restoring the source equation fixes both.
+- **Fractional slopes are JSON numbers.** `parseGraphPlotConfig` requires
+  `typeof value === 'number'`, so $\tfrac13$ is `0.3333333333333333`; the
+  grader's `1e-9` tolerance absorbs the float error, and the lattice points
+  a learner can actually place divide exactly. Follow the section's existing
+  grid convention (`grep -n '"answer"'` the file) rather than a default
+  window that leaves `plotPoints: 3` exactly three lattice points.
+- **Do not restate what the component already prints.** `<graph-plot>`
+  emits its own instruction line ("Place two points on each line — the
+  first two make one line, the next two the other"), so a question ending in
+  the same sentence renders it twice.
+- **A rewritten exercise is a re-read exercise.** `node
+  tools/verify/answer-ledger.mjs prune content` drops the stranded record;
+  then record the new verdict per the core playbook's §4. If the replaced
+  fillin is named in `SOUND_COINCIDENCES` (`tools/verify/verify-replay.mjs`),
+  delete that entry — its exercise no longer exists, and the allowlist test
+  fails with "matched 0". Converting a fillin moves the replay floor, so end
+  the session with `npm run baseline:update`.
+- **Run `npm run ci`, not just `npm test`,** when a graphplot lands above an
+  existing one: the page renumbers, and any Playwright spec that reached its
+  card by position silently retargets. Select a `graph-plot` in a test by
+  its authored config — ``graph-plot[data-config*='"slope":3,"intercept":-1']``
+  — never by `.nth(n)`.
 
 ## Static figures: graph-core rules
 
@@ -671,8 +485,8 @@ conversion is mechanical), and author NEW figures spec-first always.
 
 **Converting a chapter to spec-first figures.** The conversion state is the
 content itself — a page still carrying `<div class="ap-figure"
-data-spec=…>` (or pre-spec `<svg>` option blocks) is unconverted; a page
-whose figures are all `apfigure` shortcodes and spec options is done. No
+data-spec=…>` is unconverted; a page whose figures are all `apfigure`
+shortcodes is done (graph-option bodies are already specs everywhere). No
 separate ledger records this, so nothing can drift. Start from the queue:
 
 ```
@@ -740,8 +554,9 @@ so it is not mechanical.
 
 **Hand-written SVG in a bare `<div class="ap-figure">`** (no `data-spec`) is
 the oldest form and the only one with nothing to copy: no gate can build it,
-so the spec has to be reconstructed from the drawing the way a pre-spec
-option is. Some of these are shapes the engine has no primitive for — bar
+so the spec has to be reconstructed from the drawing: recover the grid,
+objects, and labels from the SVG geometry and fit analytic primitives
+(never `smoothCurves`). Some of these are shapes the engine has no primitive for — bar
 charts, schematic diagrams with funnels and mapping arrows. Extend
 `graph-core` with the primitive rather than hand-assembling the picture out
 of `polygons` and `texts`; a figure spelled out coordinate by coordinate is

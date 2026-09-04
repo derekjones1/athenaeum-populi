@@ -10,12 +10,13 @@ import {
   formatTriesCoverage,
   loadSourceLock,
   normalizeSemanticText,
+  normalizeText,
   parseCollectionXml,
   parseLocalSection,
   parseModuleXml,
   parseXml,
+  phraseCoverage,
   verifyCommittedSourceMap,
-  normalizeText,
 } from '../lib/openstax-source.mjs';
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -399,4 +400,28 @@ test('normalizeText tokenizes a Unicode sub/superscript digit the way a stripped
   assert.equal(normalizeText('G₀ Phase'), normalizeText('G 0 Phase'));
   assert.equal(normalizeText('10⁻⁷'), normalizeText('10 - 7'));
   assert.notEqual(normalizeText('CO₂'), normalizeText('CO'));
+});
+
+test('a KaTeX-set function name survives into the plain text the objective audit reads', () => {
+  // precalculus 6.2 states "Analyze the graph of $y=\\tan x$" verbatim, and the
+  // audit flagged it at 80% coverage for a year: the macro sweep erased
+  // `\\tan`, so the word "tan" never appeared in the page text. Every named
+  // function is a word of its objective.
+  const section = parseLocalSection([
+    '---',
+    'title: Graphs of the Other Trigonometric Functions',
+    'source_section: "6.2"',
+    '---',
+    '',
+    '{{< callout type="info" >}}',
+    '**By the end of this section, you will be able to:**',
+    '',
+    '- Analyze the graph of $y=\\tan x$',
+    '- Graph variations of $y=\\tan x$',
+    '{{< /callout >}}',
+    '',
+    'The tangent function $\\tan x=\\tfrac{\\sin x}{\\cos x}$ is periodic.',
+  ].join('\n'));
+  assert.equal(phraseCoverage('Analyze the graph of y=tan x.', section.plainText), 1);
+  assert.equal(phraseCoverage('Graph variations of y=tan x.', section.plainText), 1);
 });

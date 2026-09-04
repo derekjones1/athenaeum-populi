@@ -32,16 +32,16 @@
  * arrangement they built.
  */
 import { checkSortbins, parseSortbinsConfig } from '../../lib/text/check-sortbins.mjs';
+import { hintSlotHTML, mountHintToggle } from '../../lib/shared/hint-toggle.mjs';
+import { TONE } from '../../lib/shared/colors.mjs';
+import { focusGuard } from '../../lib/shared/focus.mjs';
 
-let hintSequence = 0;
-
-// The `--ap-*` fallback hexes duplicate assets/css/custom.css (the palette's
-// source of truth) for the moment before the stylesheet applies.
+// Status → shared feedback tone (colors.mjs owns the palette fallbacks).
 const COLOR = {
-  correct: 'var(--ap-success, #1a7f37)',
-  partial: 'var(--ap-warning, #9a6700)',
-  incorrect: 'var(--ap-error, #b42318)',
-  needMore: 'var(--ap-muted, #6f6e69)',
+  correct: TONE.success,
+  partial: TONE.warning,
+  incorrect: TONE.error,
+  needMore: TONE.muted,
 };
 
 class SortBinsElement extends HTMLElement {
@@ -92,27 +92,7 @@ class SortBinsElement extends HTMLElement {
     this.checkButton.disabled = false;
 
     const hintTpl = this.querySelector('template[data-slot="hint"]');
-    if (hintTpl) {
-      const hintId = `ap-sortbins-hint-${++hintSequence}`;
-      const hintBtn = document.createElement('button');
-      hintBtn.type = 'button';
-      hintBtn.className = 'ap-fillin-hint-toggle';
-      hintBtn.textContent = 'Show hint';
-      hintBtn.setAttribute('aria-expanded', 'false');
-      hintBtn.setAttribute('aria-controls', hintId);
-      const hint = document.createElement('p');
-      hint.id = hintId;
-      hint.className = 'ap-fillin-hint';
-      hint.hidden = true;
-      hint.innerHTML = hintTpl.innerHTML;
-      hintBtn.addEventListener('click', () => {
-        const show = hint.hidden;
-        hint.hidden = !show;
-        hintBtn.textContent = show ? 'Hide hint' : 'Show hint';
-        hintBtn.setAttribute('aria-expanded', String(show));
-      });
-      wrap.append(hintBtn, hint);
-    }
+    mountHintToggle(wrap, hintSlotHTML(this));
   }
 
   _toggleItem(btn) {
@@ -168,15 +148,12 @@ class SortBinsElement extends HTMLElement {
       // aria-disabled on every control, never native disabled, so a reader
       // can still review the arrangement; the `done` guards block
       // interaction.
-      const hadFocus = this.contains(document.activeElement);
+      const restoreFocus = focusGuard(this);
       [...this.itemButtons, ...this.placeButtons, this.checkButton].forEach((b) => {
         b.setAttribute('aria-disabled', 'true');
       });
       this._say('Correct!', 'correct');
-      if (hadFocus) {
-        this.feedback.setAttribute('tabindex', '-1');
-        this.feedback.focus();
-      }
+      restoreFocus(this.feedback);
       return;
     }
     if (result.status === 'needMore') {

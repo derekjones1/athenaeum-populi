@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { lintHugo, NAMED_FORM_ASKS } from './lints.mjs';
+import { BOOK_RULES, bookRulesFor, lintHugo, NAMED_FORM_ASKS } from './lints.mjs';
 import { checkAnswer, parseAnswerForm } from '../../assets/js/lib/math/check-answer.mjs';
 
 const imageCases = [
@@ -124,20 +124,6 @@ test('a print-source “Try It” label is rejected in a learner-facing field', 
       lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
         .some((error) => error.includes('print-source “Try It” label')),
       `expected print-source label lint for ${JSON.stringify(source)}`,
-    );
-  }
-});
-
-test('React/JSX syntax inside inline SVG is rejected', () => {
-  for (const source of [
-    '<svg role="img" aria-label="A plot" style={{ color: "red" }}><path d="M0 0"/></svg>',
-    '<svg role="img" aria-label="A plot">{[1,2].map((x) => <circle cx={x}/>)}</svg>',
-    '<svg role="img" aria-label="A plot"><path strokeWidth="2" d="M0 0"/></svg>',
-  ]) {
-    assert(
-      lintHugo(source, 'content/math/book/01-chapter/01-section.md').errors
-        .some((error) => /React|JSX/.test(error)),
-      `expected React/JSX SVG lint for ${JSON.stringify(source)}`,
     );
   }
 });
@@ -1744,7 +1730,7 @@ test('selfcheck shortcode rules', () => {
     'regular-section selfcheck exercises require a hint',
   );
   assert.equal(
-    lintHugo('{{< selfcheck question="Why?" >}}\nModel.\n{{< /selfcheck >}}', 'content/math/book/knowledge-check-01-06.md').errors.length,
+    lintHugo('{{< selfcheck question="Why?" >}}\nModel words here.\n===CHECKS===\nmodel words\nwords here\n{{< /selfcheck >}}', 'content/math/book/knowledge-check-01-06.md').errors.length,
     0,
     'knowledge-check selfcheck exercises intentionally omit hints',
   );
@@ -2078,7 +2064,7 @@ test('answerDisplay on a multiplechoice is an error, not a silent no-op', () => 
   const SECTION = 'content/math/book/01-chapter/01-section.md';
   const mc = (extra) => `{{< multiplechoice question="Which is larger?" answer="yes"${extra} hint="Compare." >}}\nyes\nno\n{{< /multiplechoice >}}`;
   const errorsOf = (src) => lintHugo(src, SECTION).errors
-    .filter((error) => error.includes('answerDisplay is not supported'));
+    .filter((error) => error.includes('does not take "answerDisplay"'));
 
   assert.equal(errorsOf(mc(' answerDisplay="$yes$"')).length, 1);
   assert.equal(errorsOf(mc('')).length, 0);
@@ -2320,11 +2306,14 @@ const LINE_SPEC = '{"ariaLabel":"The line y = 2x.","lines":[{"slope":2,"intercep
 const CURVE_SPEC = '{"ariaLabel":"The parabola y = x squared.","quadratics":[{"a":1}]}';
 const LEGACY_SVG = '<svg role="img" aria-label="A line." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><line x1="0" y1="0" x2="10" y2="10" stroke="currentColor"/></svg>';
 
-test('spec-JSON graph options lint clean, alone and mixed with legacy SVG', () => {
-  for (const opts of [[LINE_SPEC, CURVE_SPEC], [LINE_SPEC, LEGACY_SVG]]) {
-    const errors = lintHugo(MC_GRAPH(opts), SECTION).errors.filter((e) => e.includes('option'));
-    assert.deepEqual(errors, []);
-  }
+test('spec-JSON graph options lint clean, and a prerendered <svg> option is refused', () => {
+  const clean = lintHugo(MC_GRAPH([LINE_SPEC, CURVE_SPEC]), SECTION).errors.filter((e) => e.includes('option'));
+  assert.deepEqual(clean, []);
+  // The pre-spec form stayed "still valid" for a year while twelve options
+  // carried it; they were converted in September 2026 and the branch is
+  // closed — an <svg> option now fails the lint (and the template errorf's).
+  const legacy = lintHugo(MC_GRAPH([LINE_SPEC, LEGACY_SVG]), SECTION).errors;
+  assert(legacy.some((e) => e.includes('option 1: must be a graph-core spec JSON object — prerendered <svg> options are no longer accepted')), legacy.join('; '));
 });
 
 test('a spec-JSON graph option is validated like an apfigure body', () => {
@@ -2617,31 +2606,47 @@ test("practice floors are per book — biology's landed floor is 3/8, math keeps
     `eight exercises satisfy biology's landed floor: ${lintHugo(eight, bioPath).errors.join('; ')}`,
   );
   assert(
-    lintHugo(eight, bioPath, { practiceFloors: { 'life-health-sciences/biology': { perObjective: 3, perSection: 9 } } })
+    lintHugo(eight, bioPath, { bookRules: { 'life-health-sciences/biology': { practice: { perObjective: 3, perSection: 9 } } } })
       .errors.some((e) => e.includes('at least 9 are required')),
     'an override can still raise a floor for a future retrofit run',
   );
 });
 
-test('a book can require selfcheck rubrics, per book', () => {
+test('bookRulesFor merges an override key by key over the published profile', () => {
+  assert.deepEqual(bookRulesFor('math/prealgebra'), BOOK_RULES.default, 'an unlisted book gets the defaults');
+  assert.deepEqual(bookRulesFor(''), BOOK_RULES.default, 'a page outside any book gets the defaults');
+  assert.deepEqual(bookRulesFor('life-health-sciences/biology'), BOOK_RULES['life-health-sciences/biology']);
+  const partial = bookRulesFor('life-health-sciences/biology', {
+    'life-health-sciences/biology': { knowledgeCheck: { perSection: 4, autoGraded: 2 } },
+  });
+  assert.deepEqual(partial.knowledgeCheck, { perSection: 4, autoGraded: 2 }, 'the overridden key moves');
+  assert.deepEqual(partial.practice, BOOK_RULES['life-health-sciences/biology'].practice, 'the other key keeps the published value');
+  const fresh = bookRulesFor('physical-sciences/chemistry', {
+    'physical-sciences/chemistry': { practice: { perObjective: 1, perSection: 4 } },
+  });
+  assert.deepEqual(fresh.practice, { perObjective: 1, perSection: 4 });
+  assert.equal(fresh.knowledgeCheck, null, 'a new book has no quota until one is published');
+});
+
+test('every regular-section selfcheck requires a rubric, whatever the book', () => {
+  // The requirement used to be keyed per book, which made it an exemption in
+  // disguise: every selfcheck in the corpus is biology and carries a rubric,
+  // so the only thing the book gate could ever do was let a math selfcheck
+  // ship rubric-less. The corpus was clean, so the rule is unconditional.
   const bare = '{{< selfcheck question="Why?" hint="h" >}}\nModel words here.\n{{< /selfcheck >}}';
-  const bioPath = 'content/life-health-sciences/biology/01-x/01-y.md';
-  const opts = { rubricRequiredBooks: ['life-health-sciences/biology'] };
+  for (const path of ['content/life-health-sciences/biology/01-x/01-y.md', 'content/math/precalculus/01-x/01-y.md']) {
+    assert(
+      lintHugo(bare, path).errors.some((e) => e.includes('requires rubric checkpoints')),
+      `a bare selfcheck on ${path} is refused`,
+    );
+  }
   assert(
-    lintHugo(bare, bioPath).errors.some((e) => e.includes('requires rubric checkpoints')),
-    'biology requires rubrics by default — the landed retrofit',
-  );
-  assert(
-    lintHugo(bare, bioPath, opts).errors.some((e) => e.includes('requires rubric checkpoints')),
-    'a rubric-required book rejects a bare selfcheck',
-  );
-  assert(
-    !lintHugo(bare, 'content/math/precalculus/01-x/01-y.md', opts).errors.some((e) => e.includes('requires rubric checkpoints')),
-    'other books are untouched by the requirement',
+    !lintHugo(bare, 'content/test.md').errors.some((e) => e.includes('requires rubric checkpoints')),
+    'a fragment outside any section (a documentation example) is exempt',
   );
   const withRubric = '{{< selfcheck question="Why?" hint="h" >}}\nModel words here.\n===CHECKS===\nmodel words\nwords here\n{{< /selfcheck >}}';
   assert(
-    !lintHugo(withRubric, bioPath, opts).errors.some((e) => e.includes('requires rubric checkpoints')),
+    !lintHugo(withRubric, 'content/math/precalculus/01-x/01-y.md').errors.some((e) => e.includes('requires rubric checkpoints')),
     'a checkpointed selfcheck satisfies the requirement',
   );
 });
@@ -2681,4 +2686,188 @@ test('a raw newline inside a shortcode param is rejected — Hugo refuses it', (
     !lintHugo(single, 'content/test.md').errors.some((e) => e.includes('contains a raw newline')),
     'single-line params are untouched',
   );
+});
+
+// ---- Knowledge Check per-section quota ------------------------------------
+const kcMC = (q, i) => `{{< multiplechoice question="${q} ${i}?" answer="yes" >}}\nyes\nno\n{{< /multiplechoice >}}`;
+const kcTextin = (q, i) => `{{< textin question="${q} ${i} name it." answer="mitochondria" >}}`;
+const kcSelfcheck = (q, i) => `{{< selfcheck question="${q} ${i} why?" >}}\nModel words here.\n===CHECKS===\nmodel words\nwords here\n{{< /selfcheck >}}`;
+const kcItems = (n, kind = kcMC, tag = 'q') => Array.from({ length: n }, (_, i) => kind(tag, i)).join('\n\n');
+const kcPage = (counts, kind) => [
+  '---\ntitle: "Knowledge Check: Chapters 1–2"\n---',
+  '## Chapter 1: One',
+  `### 1.1 First\n\n${kcItems(counts[0], kind, 'a')}`,
+  `### 1.2 Second\n\n${kcItems(counts[1], kind, 'b')}`,
+  '## Chapter 2: Two',
+  `### 2.1 Third\n\n${kcItems(counts[2], kind, 'c')}`,
+].join('\n\n');
+const bioKC = 'content/life-health-sciences/biology/knowledge-check-01-02.md';
+const mathKC = 'content/math/precalculus/knowledge-check-01-02.md';
+
+test("a life-sciences Knowledge Check holds exactly the book's quota per section", () => {
+  const short = lintHugo(kcPage([3, 2, 3]), bioKC).errors;
+  assert.equal(short.length, 1, `one quota error expected: ${short.join('; ')}`);
+  assert.match(short[0], /`### 1\.2` has 2 item\(s\) — this book's quota is exactly 3/);
+  const long = lintHugo(kcPage([3, 3, 4]), bioKC).errors;
+  assert(long.some((e) => e.includes('`### 2.1` has 4 item(s)')), 'four items overshoot the exact quota');
+  assert.equal(lintHugo(kcPage([3, 3, 3]), bioKC).errors.length, 0, 'three everywhere is clean');
+  assert.equal(lintHugo(kcPage([3, 2, 3]), mathKC).errors.length, 0, 'math Knowledge Checks have no quota');
+  assert(
+    lintHugo(kcPage([3, 3, 3]), bioKC, { bookRules: { 'life-health-sciences/biology': { knowledgeCheck: { perSection: 4, autoGraded: 1 } } } })
+      .errors.some((e) => e.includes('quota is exactly 4')),
+    'an override can move the quota for a future book or retrofit',
+  );
+  assert(
+    lintHugo(kcPage([3, 2, 3]), mathKC, { bookRules: { 'math/precalculus': { knowledgeCheck: { perSection: 3, autoGraded: 1 } } } })
+      .errors.some((e) => e.includes('quota is exactly 3')),
+    'a quota published for a math book would apply there too — the rule is per profile, not per shelf',
+  );
+});
+
+test('a Knowledge Check section group ends at the next chapter heading', () => {
+  // 1.2 is the last section of chapter 1 and 2.1 the first of chapter 2: if the
+  // `##` did not terminate 1.2's group, 1.2 would read as 2 + 4 = 6 and 2.1 as 4.
+  const errors = lintHugo(kcPage([3, 2, 4]), bioKC).errors;
+  assert(errors.some((e) => e.includes('`### 1.2` has 2 item(s)')), '1.2 counts only its own items');
+  assert(errors.some((e) => e.includes('`### 2.1` has 4 item(s)')), '2.1 counts only its own items');
+});
+
+test('a life-sciences Knowledge Check section needs an auto-graded item and refuses fillin', () => {
+  const allSelf = lintHugo(kcPage([3, 3, 3], kcSelfcheck), bioKC).errors;
+  assert.equal(allSelf.filter((e) => e.includes('has no auto-graded item')).length, 3, `every all-selfcheck section errors: ${allSelf.join('; ')}`);
+  assert.equal(lintHugo(kcPage([3, 3, 3], kcTextin), bioKC).errors.length, 0, 'textin is auto-graded');
+  const withFillin = kcPage([3, 3, 3]).replace(kcMC('a', 0), '{{< fillin question="Compute a 0." answer="1" >}}');
+  assert(
+    lintHugo(withFillin, bioKC).errors.some((e) => e.includes('fillin/graphplot on a life-sciences Knowledge Check')),
+    'fillin is refused on a quota book',
+  );
+  const loose = `---\ntitle: x\n---\n\n${kcMC('z', 0)}\n\n## Chapter 1: One\n\n### 1.1 First\n\n${kcItems(3)}`;
+  assert(
+    lintHugo(loose, bioKC).errors.some((e) => e.includes('sits above the first `### N.M`')),
+    'an item outside every section group errors',
+  );
+});
+
+test('a Knowledge Check selfcheck needs a rubric but no hint', () => {
+  const bare = '{{< selfcheck question="Why?" >}}\nModel words here.\n{{< /selfcheck >}}';
+  for (const path of [bioKC, mathKC]) {
+    assert(
+      lintHugo(bare, path).errors.some((e) => e.includes('requires rubric checkpoints')),
+      `a bare selfcheck on ${path} is refused — with no hint and no key, the rubric is what makes it self-gradable`,
+    );
+  }
+  assert(
+    !lintHugo(kcPage([3, 3, 3], kcSelfcheck), bioKC).errors.some((e) => e.includes('missing a hint')),
+    'Knowledge Check items never need hints',
+  );
+});
+
+/* ---------------------------------------------------- once-untested rules */
+
+// Thirteen `err()` sites had never been executed by any test (a coverage
+// run found them), so a regression in any of them would have shipped
+// silently. One fixture each; the message substring is the contract.
+test('each once-untested rule still fires on its own construct', () => {
+  const fires = (source, needle, path = SECTION) => assert(
+    lintHugo(source, path).errors.some((e) => e.includes(needle)),
+    `expected ${JSON.stringify(needle)} for ${JSON.stringify(source.slice(0, 80))}: ${lintHugo(source, path).errors.join('; ')}`,
+  );
+  const fillinWith = (attrs) => `{{< fillin question="Find it." ${attrs} hint="h" >}}`;
+  fires('Compute $\\dfrac{1}{2}$.', '\\dfrac is banned');
+  fires('$$\\begin{array}{r@{}l} a & b \\end{array}$$', 'array column spec uses @{…}');
+  fires('| a | b |\n|---|---|\n| $x=1$<br/>$y=2$ | c |', 'table cell joins math spans with <br/>');
+  fires('<div style="background: url(figure.png)">x</div>', 'file-backed image');
+  fires('<style>.a { background-image: url("figure.png"); }</style>', 'file-backed image');
+  fires(fillinWith('answer="1" answerMode="ordered"'), 'answerMode must be "expression" or "unordered"');
+  fires(fillinWith('answer="1" answerMode="unordered"'), 'unordered answer needs at least two comma-separated members');
+  fires('{{< fillin question="Express the ratio of 2 to 5 as a percent." answer="40\\%" hint="h" >}}', 'add "percent" to answerForm');
+  fires(fillinWith('answer="10^-3"'), 'unbraced negative exponent');
+  fires(fillinWith('answer="x \\neq 2"'), 'true/false statement (contains \\neq)');
+  fires('{{< multiplechoice question="Which?" answer="a" >}}\na\nb\n{{< /multiplechoice >}}', 'regular-section exercise is missing a hint');
+  fires('{{< multiplechoice question="Which?" hint="h" >}}\na\nb\n{{< /multiplechoice >}}', 'multiplechoice: missing non-empty answer');
+  fires('{{< multiplechoice question="Which?" answer="c" hint="h" >}}\na\nb\n{{< /multiplechoice >}}', 'is not one of the options');
+  fires(`${MC_GRAPH([LINE_SPEC, CURVE_SPEC])}\n\n${MC_GRAPH([CURVE_SPEC, LINE_SPEC])}`, 'use answerIndex=0 — vary the correct position');
+});
+
+/* -------------------------------------------- data-spec entity decoding */
+
+test('a legacy data-spec is decoded in one pass, by the same decoder the figure tools use', () => {
+  // The lint once carried its own five-replace decoder, which disagreed with
+  // html.mjs on `&#039;`, `&apos;`, and `&#34;` — the same attribute, read by
+  // three tools, through two decoders. One of each divergent spelling, plus
+  // the double-encoded `&amp;lt;` a single pass must NOT decode twice.
+  const legacy = (spec) => `<div class="ap-figure" data-spec='${spec}'><svg role="img" aria-label="A line."></svg></div>`;
+  for (const spec of [
+    '{"ariaLabel":"Tom&#39;s line","type":"graph"}',
+    '{"ariaLabel":"Tom&apos;s line","type":"graph"}',
+    '{"ariaLabel":"a &amp;lt; b","type":"graph"}',
+    '{"ariaLabel":"hi",&#34;type&#34;:"graph"}',
+  ]) {
+    const errors = lintHugo(legacy(spec), SECTION).errors.filter((e) => e.includes('data-spec'));
+    assert.deepEqual(errors, [], `${spec} must parse: ${errors.join('; ')}`);
+  }
+  assert(
+    lintHugo(legacy('{"ariaLabel":"broken'), SECTION).errors.some((e) => e.includes('data-spec is not valid JSON')),
+    'a genuinely broken attribute is still reported',
+  );
+});
+
+/* ------------------------------------------- media manifests from disk */
+
+test('mediafigure resolves against the manifests on disk when a caller supplies none', () => {
+  // Every other test hands the lint a manifest object, so the production
+  // disk path — the one `npm run lint` actually takes — was never executed
+  // by a test. A real stem from data/media/biology.json lints clean; a
+  // bogus one names the manifest.
+  const page = (stem) => `{{< mediafigure src="biology/${stem}" alt="A described image." >}}\nA caption.\n{{< /mediafigure >}}`;
+  const bioPath = 'content/life-health-sciences/biology/01-x/01-y.md';
+  const clean = lintHugo(page('Figure_01_00_00'), bioPath).errors.filter((e) => e.includes('mediafigure'));
+  assert.deepEqual(clean, [], `a vendored stem resolves from disk: ${clean.join('; ')}`);
+  assert(
+    lintHugo(page('no-such-stem'), bioPath).errors.some((e) => e.includes('"no-such-stem" is not in data/media/biology.json')),
+    'an unvendored stem is reported against the on-disk manifest',
+  );
+});
+
+/* ------------------------------------------------ unknown shortcode params */
+
+test('a param the template never reads is an error on every shortcode, with the reason', () => {
+  // Two biology multiple choices shipped `accept="…"` — a textin habit —
+  // and Hugo silently ignored it. One allowlist per shortcode now.
+  const mc = '{{< multiplechoice question="Which?" answer="a" accept="b" hint="h" >}}\na\nb\n{{< /multiplechoice >}}';
+  const errors = lintHugo(mc, SECTION).errors;
+  assert(errors.some((e) => e.includes('multiplechoice does not take "accept"') && e.includes('it takes question, answer, answerIndex, hint, mode')), errors.join('; '));
+  assert(
+    lintHugo('{{< fillin question="Find it." answer="1" hint="h" placeholdr="x" >}}', SECTION).errors
+      .some((e) => e.includes('fillin does not take "placeholdr"')),
+    'a misspelled param is caught on a shortcode that used to reject nothing',
+  );
+  assert(
+    lintHugo('{{< graphplot question="Graph it." ariaLabel="A grid." hint="h" answerMode="unordered" >}}\n{"answer":{"slope":1,"intercept":0},"grid":{"xMin":-5,"xMax":5,"yMin":-5,"yMax":5}}\n{{< /graphplot >}}', SECTION).errors
+      .some((e) => e.includes('graphplot does not take "answerMode"')),
+    'graphplot, which used to accept anything',
+  );
+  assert.deepEqual(
+    lintHugo('{{< textin question="Name it." answer="cell" accept="cells" hint="h" >}}', SECTION).errors.filter((e) => e.includes('does not take')),
+    [],
+    'every read param passes',
+  );
+  // Hextra's callout is not ours to police.
+  assert.deepEqual(
+    lintHugo('{{< callout type="info" emoji="x" >}}\nNote.\n{{< /callout >}}', SECTION).errors.filter((e) => e.includes('does not take')),
+    [],
+  );
+});
+
+/* ------------------------------------------- graph production ↔ recognition */
+
+test('a section with two or more graphplots must also carry a graph-recognition multiple choice', () => {
+  const graphplot = '{{< graphplot question="Graph $y=x$." ariaLabel="A grid." hint="h" >}}\n{"answer":{"slope":1,"intercept":0},"grid":{"xMin":-5,"xMax":5,"yMin":-5,"yMax":5}}\n{{< /graphplot >}}';
+  const two = `${graphplot}\n\n${graphplot.replace('y=x', 'y=2x')}`;
+  const needle = 'graphplot exercises but no mode="graph" multiplechoice';
+  assert(lintHugo(two, SECTION).errors.some((e) => e.includes(needle)), 'two graphplots on a section with no recognition MC errors');
+  assert(!lintHugo(graphplot, SECTION).errors.some((e) => e.includes(needle)), 'a lone graphplot needs no companion');
+  assert(!lintHugo(`${two}\n\n${MC_GRAPH([LINE_SPEC, CURVE_SPEC])}`, SECTION).errors.some((e) => e.includes(needle)), 'one recognition MC satisfies it');
+  assert(!lintHugo(two, 'content/math/book/knowledge-check-01-06.md').errors.some((e) => e.includes(needle)), 'Knowledge Checks are exempt');
+  assert(!lintHugo(MC_GRAPH([LINE_SPEC, CURVE_SPEC]), SECTION).errors.some((e) => e.includes(needle)), 'no graphplots, no requirement');
 });

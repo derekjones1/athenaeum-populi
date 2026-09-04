@@ -68,6 +68,7 @@ import {
   normalizeText, normalizeWhitespace, tokenSimilarity, phraseCoverage,
   loadSourceLock, bundleSourceDirectory,
 } from '../lib/openstax-source.mjs';
+import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { shortcodes } from '../lib/content.mjs';
 import { parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
 
@@ -882,14 +883,20 @@ export function summaryLine({ counts, confirmed, failures, sections, sectionsSki
 /* ---- CLI ------------------------------------------------------------------ */
 
 if (process.argv[1] && path.resolve(process.argv[1]) === new URL(import.meta.url).pathname) {
-  const args = process.argv.slice(2);
-  const contentRoot = args.find((a) => !a.startsWith('--')) || 'content';
-  const verbose = args.includes('--verbose');
-  const minArg = args.find((a) => a.startsWith('--min-confirmed'));
-  const minConfirmed = minArg
-    ? Number(minArg.includes('=') ? minArg.split('=')[1] : args[args.indexOf(minArg) + 1])
-    : null;
-  if (minArg && (!Number.isInteger(minConfirmed) || minConfirmed < 0)) {
+  let contentRoot;
+  let verbose;
+  let minConfirmed;
+  try {
+    const cli = parseCliArgs(process.argv.slice(2), {
+      valueFlags: ['min-confirmed'],
+      boolFlags: ['verbose'],
+      positional: { max: 1, name: 'content root' },
+    });
+    contentRoot = cli.positional[0] ?? 'content';
+    verbose = cli.bool('verbose');
+    minConfirmed = integerFlag(cli, 'min-confirmed');
+  } catch (error) {
+    console.error(`verify-source-keys: ${error.message}`);
     console.error('usage: node tools/verify/verify-source-keys.mjs [content-root] [--min-confirmed N] [--verbose]');
     process.exit(2);
   }

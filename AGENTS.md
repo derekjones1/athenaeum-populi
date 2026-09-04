@@ -3,8 +3,9 @@
 The Hugo migration is complete; this repository is the production
 architecture. For content work, follow `docs/authoring-playbook.md` — the
 subject-neutral core — plus the subject playbook under `docs/subjects/` for
-the book you are authoring; for knowledge checks, also follow
-`docs/knowledge-check-playbook.md`. See `docs/architecture.md` for the
+the book you are authoring; for knowledge checks, also follow the
+subject's edition — `docs/knowledge-check-playbook-math.md` or
+`docs/knowledge-check-playbook-life-sciences.md`. See `docs/architecture.md` for the
 current build and deployment design. For the OpenStax math books — the three
 algebra books and Precalculus 2e, all four complete — also follow
 `docs/subjects/math.md` and `docs/source/openstax-source-workflow.md`.
@@ -32,36 +33,32 @@ source workflow.
   changes into `content/` automatically.
 - The lock pins one commit per upstream bundle: `prealgebra-bundle` for the
   three algebra books, `college-algebra-bundle` for Precalculus 2e, and
-  `biology-bundle` for Biology 2e. Books carry an `authoringStatus`; the four
-  math books are `complete` (Precalculus 2e's last chapter landed on August
-  29, 2026), so every upstream numbered section has a local page and chapter
-  parity is enforced book-wide. Biology is `complete` too (its last
-  chapter, Conservation Biology and Biodiversity, landed on September 3,
-  2026): all 47 chapters and 208 sections — units 1–8, The Chemistry of
-  Life through Ecology — are authored under
-  `content/life-health-sciences/biology`, so `build-map`/`verify-map`
-  print it as "47/47 chapters, 208/208 sections mapped", and the biology
-  subject playbook (`docs/subjects/biology.md`) governs its authoring. A book still being written marks its
-  unwritten chapter landings `authoring_status: scaffolded`, drops the marker
-  from a chapter as soon as it has a section page, and reruns
-  `node tools/source/openstax-source.mjs build-map` after authoring. Every
-  book's lock entry also carries a `contentPath` — the `content/` directory
-  the tooling walks for that book — so a book need not live under
-  `content/math`.
+  `biology-bundle` for Biology 2e. Every book carries `authoringStatus:
+  complete` (the four math books since August 29, 2026; Biology 2e since
+  September 3, 2026), so every upstream numbered section has a local page,
+  chapter parity is enforced book-wide, and `build-map`/`verify-map` report
+  every book at full coverage. Biology 2e's sections live under
+  `content/life-health-sciences/biology` (each lock entry carries a
+  `contentPath`, so a book need not live under `content/math`) and its
+  subject playbook (`docs/subjects/biology.md`) governs its authoring; its
+  eight unit Knowledge Checks are not yet authored. A book still being
+  written follows the scaffolded-chapter procedure in
+  `docs/source/openstax-source-workflow.md`.
 
 ## Commands
 
 - `npm run serve` — local Hugo server
 - `npm run serve:public` — serve the built `public/` with no livereload
-- `npm test` — unit tests, content validation, answer cross-check, math
-  lint, figure label readability
+- `npm test` — unit tests, content validation, per-page verification, the
+  answer cross-check, the source-key and answer-ledger gates, math lint,
+  figure label readability
 - `npm run check:figures` — build every spec-first figure and fail on any
   label printed across other ink (part of `npm test`); legacy `data-spec`
   figures are previewed as their eventual spec-first re-renders, non-gating
 - `npm run figures:status -- <dir>` — the figure-engine conversion queue,
   derived from the content itself: which pages are already spec-first
-  (skip them) and which still carry legacy `data-spec` figures, pre-spec
-  `<svg>` options, or hand-written SVG with no spec at all; "convert this
+  (skip them) and which still carry legacy `data-spec` figures or
+  hand-written SVG with no spec at all; "convert this
   chapter" starts here (workflow in `docs/subjects/math.md`)
 - `npm run figures:convert -- [--dry-run] [--gallery out.html] <path>` —
   the mechanical half of that conversion: rewrites legacy `data-spec` divs
@@ -88,12 +85,12 @@ source workflow.
   current answer-verification record (see "The answer ledger" below); holds a
   `--min-exercises` FLOOR and a `--max-unverifiable` CEILING so it can go
   vacuous in neither direction, and `--require-solved <prefix>` refuses a
-  `multiplechoice` or `textin` under a prose shelf whose record carries no
-  orchestrator solve
+  `multiplechoice`, `textin`, or `sortbins` under a prose shelf whose record
+  carries no orchestrator solve
 - `npm run solve:emit -- <root> --out <dir>` / `npm run solve:compare -- <answers.json> content --out <dir>`
   — the orchestrator's own pass over a prose book's graded questions: `emit`
-  writes every multiplechoice and textin with the key, accept list, and hint
-  stripped; the orchestrator answers them in writing; `compare` grades the
+  writes every multiplechoice, textin, and sortbins with the key, accept
+  list, and hint stripped; the orchestrator answers them in writing; `compare` grades the
   answers against the live keys (the real text grader for textin), prints
   every disagreement and "also defensible" flag, refuses to record one until
   it carries an `adjudicated` note settled against the CNXML, and writes the
@@ -103,21 +100,6 @@ source workflow.
   (`--shard i/n`, `--kind`, `--unverified`, `--verdict`, `--context N`)
 - `npm run ledger:merge <dir>` — fold pass result files into the ledger;
   result files that disagree about a hash fail the merge with nothing written
-- `npm run graphable:candidates` / `npm run graphable:list` /
-  `npm run graphable:merge <dir>` / `npm run graphable:stats` — the
-  graphplot-conversion ledger
-  (`data/verification/graphplot-conversion-ledger.json`): an adjudicated
-  queue of the MC/fillin exercises that could be authored as interactive
-  `graphplot` exercises instead. `candidates` emits the unread queue
-  (`--shard i/n`); `list --verdict convert` is where a conversion session
-  starts; merge has the answer ledger's conflict-refusing contract, and
-  `node tools/verify/graphplot-conversion.mjs prune content` retires entries whose
-  exercise was converted or edited (workflow in
-  `docs/subjects/math.md`). The queue is currently EMPTY — all 448
-  are adjudicated `keep` — so `list --verdict convert` printing `[]` is the
-  true state, not a missing ledger: every command but `merge` now fails
-  loudly if the file is absent, `init` creates it, and `--ledger <path>`
-  points at another one
 - `npm run build` — clean production build plus global Pagefind
 - `npm run check:build` — route, link, search, SEO (composed titles,
   breadcrumb/entity JSON-LD), and file-count gates
@@ -126,7 +108,7 @@ source workflow.
   package.json's `--min-verified`, `--min-replayed`, and `--min-exercises` in
   place
 - `npm run source:fetch` — fetch the ignored, sparse OpenStax source checkout
-- `npm run source:verify` — verify the committed 482-section map offline
+- `npm run source:verify` — verify the committed section map offline
 - `npm run source:check` — report-only comparison against pinned CNXML
 - `npm run source:history` — review changes since the inferred PDF-era commits
 - `npm run source:media -- --book KEY --chapter N` — vendor a chapter's raster
@@ -149,7 +131,7 @@ wrong — do not exempt the page. When authoring moves any published floor
 ## The answer ledger
 
 `verify:answers` re-derives an answer only where it can mechanically recognize
-what the prompt asks; 79% of what it skips is skipped as "prompt class not
+what the prompt asks; most of what it skips is skipped as "prompt class not
 mechanically checkable", and it never reads `multiplechoice` or `graphplot` at
 all. `verify:source-keys` covers the prose books' `multiplechoice`, `textin`,
 and `selfcheck` items by comparing each to the pinned module's own key — but
@@ -211,9 +193,9 @@ verdict prints the change; that is the legitimate re-read flow.
 `node tools/verify/answer-ledger.mjs prune content` drops records stranded by an
 edit.
 
-The pass was calibrated before it was trusted: 26 provably-wrong answers were
-seeded into a blind sample of 90 real exercises, and the method caught 26/26
-with zero false alarms on the 64 untouched ones. Re-run that calibration if the
+The pass was calibrated before it was trusted — provably-wrong answers
+seeded into a blind sample of real exercises, every one caught with no false
+alarm on the untouched rest — and that calibration is re-run whenever the
 method changes.
 
 ## Reviews and verification protocol
@@ -266,11 +248,13 @@ Both entry points drive the installed Chrome through
 - `tools/build/screenshot-page.mjs` launches with `executablePath` pointing at the
   shim.
 - `tools/build/screenshot-components.mjs </route/> [outDir] [--only kind,kind]`
-  crops every fill-in, text-in, multiple-choice, self-check, graph-plot,
-  spec-first figure, mediafigure, and callout on a built page in both themes,
+  crops every fill-in, text-in, multiple-choice, self-check, sort-bins,
+  graph-plot, spec-first figure, mediafigure, and callout on a built page in
+  both themes,
   each driven into its reviewable state first (a wrong answer graded, a model
   answer revealed, an extended description opened); the component-level
-  review the Biology pilot did by hand, one PNG per component per theme.
+  review the first Biology chapters did by hand, one PNG per component per
+  theme.
 - `playwright.config.mjs` sets the same `executablePath` in its shared
   `launchOptions`.
 

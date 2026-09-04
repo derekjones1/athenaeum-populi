@@ -8,7 +8,8 @@ list, and the do-not-commit-unless-asked etiquette.
 For content work read `docs/authoring-playbook.md` — the subject-neutral
 core — plus the subject playbook under `docs/subjects/` (`math.md` or
 `biology.md`) for the book you are authoring; for cumulative assessments
-also read `docs/knowledge-check-playbook.md`; for the OpenStax math books
+also read the subject's edition, `docs/knowledge-check-playbook-math.md` or
+`docs/knowledge-check-playbook-life-sciences.md`; for the OpenStax math books
 follow `docs/source/openstax-source-workflow.md` and treat the pinned CNXML
 commit in `data/openstax/source-lock.json` as the transcription authority.
 Verify with `npm run verify-section -- <page>` and `npm test` before

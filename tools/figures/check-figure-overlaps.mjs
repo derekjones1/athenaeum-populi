@@ -30,20 +30,25 @@
  * not a near miss. `--near N` widens every text box by N px to also surface
  * uncomfortably tight placements.
  */
-import { readFileSync, readdirSync, statSync } from 'node:fs'
-import { join } from 'node:path'
+import { readFileSync } from 'node:fs'
 import { buildGraph, buildNumberLine, buildFigure } from '../../assets/js/lib/math/graph-core.mjs'
 import { measureTextWidth } from '../../assets/js/lib/math/text-metrics.mjs'
-import { shortcodes } from '../lib/content.mjs'
+import { parseCliArgs } from '../lib/cli.mjs'
+import { maskCode, shortcodes, walkMarkdown } from '../lib/content.mjs'
 import { decodeHtmlEntities, openTagRe, htmlAttribute } from '../lib/html.mjs'
 
-const args = process.argv.slice(2)
-const asJson = args.includes('--json')
-const statusMode = args.includes('--status')
-const nearIx = args.indexOf('--near')
-const NEAR = nearIx >= 0 ? Number(args[nearIx + 1]) : 0
-const roots = args.filter((a, i) => !a.startsWith('--') && (nearIx < 0 || i !== nearIx + 1))
-if (!roots.length) roots.push('content')
+let cli
+try {
+  cli = parseCliArgs(process.argv.slice(2), { boolFlags: ['json', 'status'], valueFlags: ['near'] })
+} catch (error) {
+  console.error(`check-figure-overlaps: ${error.message}`)
+  console.error('usage: node tools/figures/check-figure-overlaps.mjs [--status] [--json] [--near N] [path…]')
+  process.exit(2)
+}
+const asJson = cli.bool('json')
+const statusMode = cli.bool('status')
+const NEAR = Number(cli.flag('near') ?? 0)
+const roots = cli.positional.length ? cli.positional : ['content']
 
 const BUILDERS = { graph: buildGraph, numberline: buildNumberLine, figure: buildFigure }
 
@@ -222,22 +227,9 @@ function collisions(built) {
 
 // ---------------------------------------------------------------------------
 // figure discovery, one page at a time
-const mdFiles = (root) => {
-  const st = statSync(root)
-  if (st.isFile()) return [root]
-  const out = []
-  for (const name of readdirSync(root)) {
-    const p = join(root, name)
-    const s = statSync(p)
-    if (s.isDirectory()) out.push(...mdFiles(p))
-    else if (name.endsWith('.md')) out.push(p)
-  }
-  return out.sort()
-}
 
 function figureSpecs(src) {
   const specs = []
-  let prerendered = 0
   for (const { params, inner, closed } of shortcodes(src, 'apfigure')) {
     if (!closed) continue
     specs.push({ kind: params.kind || 'graph', json: inner.trim(), where: 'apfigure' })
@@ -246,7 +238,7 @@ function figureSpecs(src) {
     if (!closed || params.mode !== 'graph') continue
     inner.split(/^===OPT===$/m).forEach((opt, i) => {
       const body = opt.trim()
-      if (!body.startsWith('{')) { prerendered++; return } // pre-spec <svg> option: no spec to build
+      if (!body.startsWith('{')) return // the lint rejects a non-spec option; nothing here to build
       specs.push({ kind: null, json: body, where: `mc option ${i}` })
     })
   }
@@ -267,24 +259,22 @@ function figureSpecs(src) {
   for (const m of src.matchAll(openTagRe('div'))) {
     if (/class="ap-figure"/.test(m[0]) && !htmlAttribute(m[0], 'data-spec')) unspecced++
   }
-  return { specs, prerendered, unspecced }
+  return { specs, unspecced }
 }
 
 // ---------------------------------------------------------------------------
 // --status: the conversion queue, derived from the content itself
 if (statusMode) {
   const rows = []
-  for (const file of roots.flatMap(mdFiles)) {
-    const src = readFileSync(file, 'utf8')
-      .replace(/```[\s\S]*?```/g, ' ')
-      .replace(/`[^`\n]*`/g, ' ')
-    const { specs, prerendered, unspecced } = figureSpecs(src)
+  for (const file of roots.flatMap((root) => walkMarkdown(root))) {
+    const src = maskCode(readFileSync(file, 'utf8'))
+    const { specs, unspecced } = figureSpecs(src)
     const legacy = specs.filter((s) => s.legacy).length
     const specFirst = specs.length - legacy
-    if (!specs.length && !prerendered && !unspecced) continue // no figures — nothing to convert
-    const behind = legacy + prerendered + unspecced
+    if (!specs.length && !unspecced) continue // no figures — nothing to convert
+    const behind = legacy + unspecced
     const state = behind === 0 ? 'converted' : specFirst === 0 ? 'TODO' : 'mixed'
-    rows.push({ file, specFirst, legacy, prerendered, unspecced, state })
+    rows.push({ file, specFirst, legacy, unspecced, state })
   }
   if (asJson) {
     console.log(JSON.stringify({ pages: rows }, null, 2))
@@ -293,7 +283,6 @@ if (statusMode) {
       const parts = []
       if (r.specFirst) parts.push(`${r.specFirst} spec-first`)
       if (r.legacy) parts.push(`${r.legacy} legacy`)
-      if (r.prerendered) parts.push(`${r.prerendered} pre-spec option`)
       if (r.unspecced) parts.push(`${r.unspecced} hand-written SVG (no spec)`)
       console.log(`${r.state.padEnd(9)} ${r.file}  (${parts.join(', ')})`)
     }
@@ -310,14 +299,11 @@ if (statusMode) {
 }
 
 let figures = 0, dirty = 0, grazeOnly = 0, failed = 0
-let legacyFigures = 0, legacyDirty = 0, skippedPrerendered = 0
+let legacyFigures = 0, legacyDirty = 0
 const report = []
-for (const file of roots.flatMap(mdFiles)) {
-  const src = readFileSync(file, 'utf8')
-    .replace(/```[\s\S]*?```/g, ' ')
-    .replace(/`[^`\n]*`/g, ' ')
-  const { specs, prerendered } = figureSpecs(src)
-  skippedPrerendered += prerendered
+for (const file of roots.flatMap((root) => walkMarkdown(root))) {
+  const src = maskCode(readFileSync(file, 'utf8'))
+  const { specs } = figureSpecs(src)
   for (const { kind, json, where, legacy } of specs) {
     if (legacy) legacyFigures++
     else figures++
@@ -342,7 +328,7 @@ for (const file of roots.flatMap(mdFiles)) {
 }
 
 if (asJson) {
-  console.log(JSON.stringify({ figures, dirty, grazeOnly, legacyFigures, legacyDirty, skippedPrerendered, failed, report }, null, 2))
+  console.log(JSON.stringify({ figures, dirty, grazeOnly, legacyFigures, legacyDirty, failed, report }, null, 2))
 } else {
   for (const r of report) {
     if (!r.error && r.found.every((c) => c.graze)) continue // grazes stay out of the console noise
@@ -357,7 +343,6 @@ if (asJson) {
     + `${dirty} with real overlaps, ${grazeOnly} with only ≤${GRAZE}px grazes or print-tolerated digit crossings.`)
   console.log(`${legacyFigures} legacy figure(s) previewed as spec-first re-renders: `
     + `${legacyDirty} would need label work at conversion (⚠, non-gating).`)
-  if (skippedPrerendered) console.log(`${skippedPrerendered} pre-spec <svg> option figure(s) carry no spec to check.`)
   if (failed) console.log(`${failed} spec(s) failed to build.`)
 }
 process.exit(failed || dirty ? 1 : 0)

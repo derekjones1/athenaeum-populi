@@ -34,12 +34,22 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { spawn } from 'node:child_process';
 import { BASELINE_SOURCES, planBaselineUpdate } from './baselines.mjs';
+import { parseCliArgs } from '../lib/cli.mjs';
 
-const args = process.argv.slice(2);
-const flags = new Set(args.filter((a) => a.startsWith('--')));
-const root = args.find((a) => !a.startsWith('--')) || 'content';
-const dryRun = flags.has('--dry-run');
-const allowDecrease = flags.has('--allow-decrease');
+let cli;
+try {
+  cli = parseCliArgs(process.argv.slice(2), {
+    boolFlags: ['dry-run', 'allow-decrease'],
+    positional: { max: 1, name: 'content root' },
+  });
+} catch (error) {
+  console.error(`update-baselines: ${error.message}`);
+  console.error('usage: node tools/verify/update-baselines.mjs [content-root] [--dry-run] [--allow-decrease]');
+  process.exit(2);
+}
+const root = cli.positional[0] ?? 'content';
+const dryRun = cli.bool('dry-run');
+const allowDecrease = cli.bool('allow-decrease');
 
 const run = (argv) => new Promise((resolve, reject) => {
   const child = spawn(process.execPath, argv);

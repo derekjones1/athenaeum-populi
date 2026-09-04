@@ -823,6 +823,130 @@ test('a text-in input is named by its question and stays clean after a correct a
   ).toBe(0);
 });
 
+/**
+ * The graded states of the four components the two scans above do not
+ * reach. Each shares almost no code with fill-in or text-in — a clean graded
+ * fill-in says nothing about a graded sort-bins — and the self-check's
+ * revealed model answer and rubric (663 rubrics, thousands of checkbox/label
+ * pairs across the corpus) had never met axe at all: the <details> is closed
+ * on load, so every earlier scan skipped its subtree.
+ */
+async function expectNoBlockingViolations(page, label, testInfo) {
+  // Scan from the top of the document: axe's target-size rule judges each
+  // control at the CURRENT scroll position (see the graded fill-in test).
+  await page.evaluate(() => window.scrollTo(0, 0));
+  const results = await new AxeBuilder({ page }).withTags(WCAG_TAGS).analyze();
+  const blocking = results.violations.filter((violation) => BLOCKING_IMPACTS.has(violation.impact));
+  expect(
+    blocking.length,
+    `Blocking axe violations on ${label} (${currentTheme(testInfo)} theme):\n\n${formatViolations(blocking)}`,
+  ).toBe(0);
+}
+
+test('a graded multiple-choice has no serious or critical axe violations', async ({
+  page,
+}, testInfo) => {
+  const path = '/math/elementary-algebra/09-roots-and-radicals/01-simplify-and-use-square-roots/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  const card = page.locator('multiple-choice[data-answer="5"]');
+  await expect(card).toHaveCount(1);
+  await expect
+    .poll(async () => card.evaluate((el) => el.querySelectorAll('.ap-mc-option:not([disabled])').length), { timeout: 20_000 })
+    .toBeGreaterThan(0);
+  await card.scrollIntoViewIfNeeded();
+  // Wrong first (every option stays answerable, the live region speaks),
+  // then right: every option becomes aria-disabled — the completed-state
+  // model — and the verdict lands in the live region.
+  await card.locator('.ap-mc-option', { hasText: /^7$/ }).click();
+  await expect(card.locator('.ap-mc-feedback')).toHaveText(/^Not quite/);
+  await card.locator('.ap-mc-option[data-value="5"]').click();
+  await expect(card.locator('.ap-mc-feedback')).toHaveText(/^Correct/);
+
+  await expectNoBlockingViolations(page, 'a graded multiple-choice', testInfo);
+});
+
+test('a revealed, rated self-check (model answer and rubric open) has no serious or critical axe violations', async ({
+  page,
+}, testInfo) => {
+  const path = '/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  const card = page.locator('self-check').first();
+  await card.scrollIntoViewIfNeeded();
+  // Reveal the model answer and its rubric, tick a checkpoint, rate it.
+  await card.locator('.ap-selfcheck-answer summary').click();
+  await expect(card.locator('details.ap-selfcheck-answer')).toHaveAttribute('open', '');
+  const checkpoints = card.locator('.ap-selfcheck-checkpoints input[type="checkbox"]');
+  expect(await checkpoints.count()).toBeGreaterThanOrEqual(2);
+  await checkpoints.first().check();
+  await card.locator('.ap-selfcheck-mark[data-verdict="correct"]').click();
+  await expect(card.locator('.ap-selfcheck-feedback')).toHaveText(/^Marked as correct/);
+
+  await expectNoBlockingViolations(page, 'a revealed and rated self-check', testInfo);
+});
+
+test('a graded sort-bins (partial credit, items returned to the tray) has no serious or critical axe violations', async ({
+  page,
+}, testInfo) => {
+  const path = '/life-health-sciences/biology/10-cell-reproduction/05-prokaryotic-cell-division/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  const card = page.locator('sort-bins');
+  await expect(card).toHaveCount(1);
+  await card.scrollIntoViewIfNeeded();
+  const places = card.locator('.ap-sortbins-place');
+  const tray = card.locator('.ap-sortbins-tray .ap-sortbins-item');
+  // Everything into the last bin: the ownership cap means this is never the
+  // key, so grading returns the misplaced items to the tray — the partial
+  // state, where buttons have physically moved while focus may sit on one.
+  const bins = await places.count();
+  while (await tray.count()) {
+    await tray.first().click();
+    await places.nth(bins - 1).click();
+  }
+  await card.locator('.ap-sortbins-check').click();
+  await expect(card.locator('.ap-sortbins-feedback')).toHaveText(/placed correctly/);
+
+  await expectNoBlockingViolations(page, 'a graded sort-bins', testInfo);
+});
+
+test('a graded graph-plot (points placed, verdict shown) has no serious or critical axe violations', async ({
+  page,
+}, testInfo) => {
+  const path = '/math/elementary-algebra/04-graphs/02-graph-linear-equations-in-two-variables/';
+  await page.goto(path, { waitUntil: 'domcontentloaded' });
+  await assertProductionBuild(page, path);
+  await waitForPageReady(page);
+
+  const card = page
+    .locator(String.raw`graph-plot[data-config*='"slope":3,"intercept":-1']`)
+    .filter({ has: page.locator('.ap-graphplot-question') });
+  await expect(card).toHaveCount(1);
+  await expect
+    .poll(async () => card.evaluate((el) => Boolean(el.g) && typeof el.buildGraph === 'function'), { timeout: 20_000 })
+    .toBe(true);
+  await card.scrollIntoViewIfNeeded();
+  // Three points through the keyboard path, then Check: the graded SVG
+  // rebuilds its role="application" grid with focusable role="button"
+  // handles, and the verdict lands in the live region.
+  const addPoint = card.getByRole('button', { name: 'Add point' });
+  await addPoint.click();
+  await addPoint.click();
+  await addPoint.click();
+  await expect.poll(async () => card.evaluate((el) => el.pts.length)).toBe(3);
+  await card.getByRole('button', { name: 'Check' }).click();
+  await expect.poll(async () => card.evaluate((el) => el.status)).not.toBe('idle');
+
+  await expectNoBlockingViolations(page, 'a graded graph-plot', testInfo);
+});
+
 test('every mediafigure image has alt text, and a longdesc summary is keyboard-operable', async ({
   page,
 }) => {

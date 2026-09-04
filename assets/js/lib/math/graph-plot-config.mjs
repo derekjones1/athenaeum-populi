@@ -7,7 +7,7 @@ const finite = (value) => typeof value === 'number' && Number.isFinite(value);
 // A readability ceiling, not an engine limit: past a dozen handles the grid is
 // crowded enough that dragging and checking stop being instructive. Typical
 // precalculus point-plotting exercises ask for about five.
-export const MAX_ANSWER_POINTS = 12;
+const MAX_ANSWER_POINTS = 12;
 
 function validatePoints(points) {
   if (!Array.isArray(points) || points.length === 0) {

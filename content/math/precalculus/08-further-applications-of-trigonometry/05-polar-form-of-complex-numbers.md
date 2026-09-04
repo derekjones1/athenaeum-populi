@@ -533,6 +533,21 @@ $$
 {"answer": {"points": [[0,2]]}, "grid": {"xLabel": "Real", "yLabel": "Imaginary"}}
 {{< /graphplot >}}
 
+{{< multiplechoice
+  question="Which graph shows the complex number $6-2i$ plotted in the complex plane?"
+  mode="graph"
+  answerIndex="1"
+  hint="The real part is the horizontal coordinate and the imaginary part the vertical one: $6-2i$ sits $6$ units to the right of the origin and $2$ units down."
+>}}
+{"ariaLabel":"A point plotted at negative 6 on the real axis and 2 on the imaginary axis.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"tickLabels":true,"xTickStep":2,"yTickStep":2,"xLabel":"Real","yLabel":"Imaginary","points":[{"at":[-6,2]}]}
+===OPT===
+{"ariaLabel":"A point plotted at 6 on the real axis and negative 2 on the imaginary axis.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"tickLabels":true,"xTickStep":2,"yTickStep":2,"xLabel":"Real","yLabel":"Imaginary","points":[{"at":[6,-2]}]}
+===OPT===
+{"ariaLabel":"A point plotted at negative 2 on the real axis and 6 on the imaginary axis.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"tickLabels":true,"xTickStep":2,"yTickStep":2,"xLabel":"Real","yLabel":"Imaginary","points":[{"at":[-2,6]}]}
+===OPT===
+{"ariaLabel":"A point plotted at 6 on the real axis and 2 on the imaginary axis.","xMin":-7,"xMax":7,"yMin":-7,"yMax":7,"tickLabels":true,"xTickStep":2,"yTickStep":2,"xLabel":"Real","yLabel":"Imaginary","points":[{"at":[6,2]}]}
+{{< /multiplechoice >}}
+
 ### Find the absolute value of a complex number
 
 {{< fillin

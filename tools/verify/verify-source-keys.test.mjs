@@ -208,6 +208,25 @@ test('every disclosed deviation names a mapped page and an erratum number', () =
   }
 });
 
+// The erratum file is a gitignored local scratchpad, so this only has
+// something to resolve against on an authoring machine; in CI it is skipped
+// by name, the same shape as the bundle-absent skip below. Without it, a
+// deviation could cite an erratum number that names nothing — the tool's
+// header promises each is "backed by a confirmed erratum", and until now
+// nothing read the file to see.
+const errataPath = path.join(repositoryRoot, 'docs/openstax-errata.md');
+test('every disclosed deviation cites an erratum that exists in the local errata file', {
+  skip: !existsSync(errataPath) && 'docs/openstax-errata.md is gitignored and absent here — run on the authoring machine',
+}, () => {
+  const numbered = new Set(
+    [...readFileSync(errataPath, 'utf8').matchAll(/^### (\d+)\. /gm)].map((m) => Number(m[1])),
+  );
+  assert.ok(numbered.size > 0, 'the errata file numbers its entries as `### N. …`');
+  for (const deviation of DISCLOSED_DEVIATIONS) {
+    assert.ok(numbered.has(deviation.erratum), `${deviation.exercise} cites erratum ${deviation.erratum}, which docs/openstax-errata.md does not carry`);
+  }
+});
+
 // `/sources/` is gitignored, so this only has a corpus to read on a machine
 // that has run `npm run source:fetch`; in CI it is skipped by name, exactly as
 // the real-checkout test in tools/source/openstax-source.test.mjs is. The

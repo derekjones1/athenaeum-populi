@@ -1,4 +1,4 @@
-# Knowledge Check Playbook (Hugo edition)
+# Knowledge Check Playbook — Mathematics
 
 A Knowledge Check is a cumulative, book-level self-test — not a section. It is
 the one deliberate departure from section-page exercise patterns: **quizzes have
@@ -9,33 +9,29 @@ first. The core's source-fidelity, component, verification, and handoff
 rules all apply here, and so does the math playbook's notation and
 `answerForm` vocabulary.
 
-Like the authoring playbook, this playbook currently governs the OpenStax
-mathematics books; adapt it, alongside a reviewed subject playbook, before
-building cumulative assessments for another subject (Biology 2e's is
-`docs/subjects/biology.md`, but Biology has no knowledge checks yet).
+This edition governs the OpenStax mathematics books (the three algebra books
+and Precalculus 2e). The life-sciences edition,
+`docs/knowledge-check-playbook-life-sciences.md`, shares the philosophy —
+cumulative, grouped by the chapter and section each item comes from, no
+hints, every item ledgered and independently solved — and differs where the
+source does: its items are author-written at a fixed per-section count
+because Biology 2e has no chapter-level exercise pool.
 
 ## Placement
 
-- File: `content/<subject>/<book>/knowledge-check-XX-YY.md` (book level, next to
-  the chapter folders), where `XX-YY` is the chapter range (e.g.
-  `knowledge-check-01-06.md`).
-- Frontmatter: `title`, `description`, `source_chapters: "1-6"`, and a `weight`
-  that slots it between the right chapters in the sidebar/pager (e.g. after
-  chapter 6 → weight one past chapter 6). Knowledge checks are exempt from the
-  numeric-prefix rule; the validator knows this.
-- A book's Knowledge Check ranges must not overlap. The filename, title,
-  `source_chapters`, chapter headings, and sidebar placement must describe the
-  same range. If a published range is renamed, add a Hugo `aliases` entry for
-  the old URL.
+The placement and identity rules every edition shares — file name and
+location, frontmatter, non-overlapping ranges, the numeric-prefix exemption,
+`aliases` on rename, no hints, the waived 2–3 cap, real components only —
+live in `docs/authoring-playbook.md` §3 "Knowledge Checks (both editions)".
+For a math book, `XX-YY` is the chapter range the check covers (e.g.
+`knowledge-check-01-06.md`, weight one past chapter 6): one check per half
+of the book, or whatever split the chapter count makes even.
 
 ## Content rules
 
-- **Cumulative:** questions cover every chapter in the range, grouped by the
-  section they come from, so a miss points the reader to the exact section.
-  Use one `## Chapter N` heading per chapter and one `### N.M` heading per
-  authored section; do not silently omit a section.
-- **No hints.** Never add a `hint=` to a `{{</* fillin */>}}` or
-  `{{</* multiplechoice */>}}` on a Knowledge Check — the lint rejects it.
+- **Cumulative, grouped by section** (the core's rule): one `## Chapter N`
+  heading per chapter and one `### N.M` heading per authored section; do
+  not silently omit a section.
 - Every question comes from the source textbook's chapter Practice Tests (or
   Review Exercises), graded against the book's official Answer Key. Use only an
   item whose answer is visibly present in the key. OpenStax often prints only
@@ -58,23 +54,24 @@ building cumulative assessments for another subject (Biology 2e's is
   in the key" means the graph. All graphplot validation applies unchanged
   (lattice reachability, `plotPoints` slack, the three-point rule). Where
   the family has no answer form (exponential, logarithmic, and trigonometric
-  curves stay static figures, per the graphplot conversion ledger's
-  adjudications), property fill-ins and recognition MCs remain the right
-  representation — do not force a conversion. A multipart source item
+  curves stay static figures), property fill-ins and recognition MCs remain
+  the right representation — do not force a conversion. A multipart source item
   ("standard form, vertex, intercepts, and graph") may contribute its graph
   part as the graphplot; record the split in the ledger like any other
   part-selection.
 - Use `answerMode="unordered"` when an item asks for a set of roots or solutions
   whose order is immaterial. Do not use it for ordered pairs/triples, sequences,
   or any prompt that prescribes an order.
-- The normal 2–3 consecutive-question limit is intentionally waived on a
-  cumulative Knowledge Check. Still select for coverage rather than repetition.
+- **Distribution.** Every section in the range is represented; beyond that
+  the count per section follows the source pool — usually two or three
+  items, chosen for coverage of the section's skills, never a fixed quota.
+  A section whose Review Exercises are all one skill gets one or two items;
+  one whose pool spans several gets more. (The life-sciences edition fixes
+  the count per section and lints it; the math books do not.)
 - Remove print-only labels such as `Try It 7.31` and standalone `(a)` markers
   from learner-facing component fields. Preserve every source item number in
-  the source ledger.
-- Do not use static “Check answer” disclosures or file-backed textbook images.
-  Questions must use the real components; required figures must be recreated
-  semantically and checked against the PDF.
+  the source ledger. Required figures are recreated semantically (spec-first)
+  and checked against the PDF.
 
 ## Source and answer audit
 

@@ -19,7 +19,7 @@
  * Everything is offset-preserving: masking blanks characters in place rather
  * than deleting them, so a diagnostic still points at the right source line.
  */
-import { readdirSync, statSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { basename, join } from 'node:path';
 
 /** Replace every character except newlines with a space, keeping offsets. */
@@ -69,6 +69,44 @@ export function walkMarkdown(root, { includeIndex = true } = {}) {
   return walkFiles(root, {
     filter: (name) => name.endsWith('.md') && (includeIndex || name !== '_index.md'),
   });
+}
+
+/**
+ * "shelf/book" for a page inside a book — the two path segments after
+ * `content/` — or '' for anything else: a shelf or site landing, a page
+ * directly under a shelf, or a test fragment path with no `content/` segment.
+ *
+ * The one derivation for every per-book rule. The lint's practice floors and
+ * Knowledge Check quotas keyed this with a path regex while the
+ * multiple-choice distribution gate keyed it by splitting a relative path,
+ * and the two agreed by luck rather than by construction.
+ */
+export function bookKeyOf(filePath) {
+  const parts = String(filePath).split(/[\\/]+/).filter((part) => part && part !== '.');
+  const at = parts.indexOf('content');
+  // Shelf, book, and at least one more segment: the page inside the book.
+  return at === -1 || parts.length < at + 4 ? '' : `${parts[at + 1]}/${parts[at + 2]}`;
+}
+
+/**
+ * Every `<book>.json` media manifest under `dir`, keyed by book name. A
+ * malformed manifest is treated as absent: the lint's "no manifest" error
+ * and the build audit's empty allowlist both name the real fix (re-run
+ * vendor-media) rather than a JSON parse trace. A missing directory is an
+ * empty map — a book with no media has no manifest to load.
+ */
+export function loadMediaManifests(dir) {
+  const manifests = new Map();
+  if (!existsSync(dir)) return manifests;
+  for (const file of readdirSync(dir).sort()) {
+    if (!file.endsWith('.json')) continue;
+    try {
+      manifests.set(file.slice(0, -'.json'.length), JSON.parse(readFileSync(join(dir, file), 'utf8')));
+    } catch {
+      // Treated as absent — see above.
+    }
+  }
+  return manifests;
 }
 
 /* ---------------------------------------------------------- frontmatter */
@@ -181,6 +219,23 @@ export const PAIRED_SHORTCODES = Object.freeze({
 });
 
 /**
+ * Every parameter each template reads — the `.Get` census of
+ * layouts/shortcodes/. A param outside this set is one Hugo accepts and
+ * nobody reads, which is how an `accept=` on a multiple choice shipped
+ * grading nothing. `callout` is Hextra's own shortcode and is not listed.
+ */
+export const SHORTCODE_PARAMS = Object.freeze({
+  fillin: new Set(['question', 'answer', 'answerDisplay', 'answerForm', 'answerMode', 'hint', 'placeholder']),
+  multiplechoice: new Set(['question', 'answer', 'answerIndex', 'hint', 'mode']),
+  graphplot: new Set(['question', 'answerDisplay', 'ariaLabel', 'hint', 'snap']),
+  apfigure: new Set(['kind']),
+  textin: new Set(['question', 'answer', 'accept', 'hint']),
+  selfcheck: new Set(['question', 'hint']),
+  sortbins: new Set(['question', 'hint']),
+  mediafigure: new Set(['src', 'alt', 'kind', 'longdesc', 'eager']),
+});
+
+/**
  * Iterate every `{{< name … >}}` shortcode in `src`.
  *
  * Yields `{ params, inner, index, end, open, closed }`:
@@ -264,6 +319,28 @@ export function malformedShortcodeParams(open) {
   return bad;
 }
 
+/* ------------------------------------------------------------- masking */
+
+/**
+ * Blank fenced code blocks and inline code spans in place — offsets kept —
+ * so a tool that reads exercises or math never sees documentation ABOUT
+ * them. `svg: true` also blanks inline `<svg>…</svg>`, which is figure
+ * markup rather than authored text.
+ *
+ * One masker for the whole toolchain: seven copies existed, and four of them
+ * replaced with a single space, destroying every offset a diagnostic needs.
+ * A single-backtick span, deliberately — the matched-run form
+ * `maskDocumentation` uses would swallow a LaTeX left-double-quote (``…''
+ * inside a \text{}) and blank real math along with it — and an inline span
+ * never crosses a line break, or a stray backtick would mask half a page.
+ */
+export function maskCode(source, { svg = false } = {}) {
+  const masked = source
+    .replace(/```[\s\S]*?```/g, blankPreservingOffsets)
+    .replace(/`[^`\n]*`/g, blankPreservingOffsets);
+  return svg ? masked.replace(/<svg\b[\s\S]*?<\/svg>/gi, blankPreservingOffsets) : masked;
+}
+
 /* ----------------------------------------------------------- math spans */
 
 // A single-character sentinel keeps offsets exact: `\$` (two characters)
@@ -296,17 +373,9 @@ const shieldEscapedDollars = (s) => s.replaceAll('\\$', `\\${NUL}`);
  * the whole run — delimiters included — inside `source`, and `tex` is sliced
  * back out of the caller's original string, escapes intact.
  */
-export function mathSpans(source, { maskCode = false, allowNewlines = false } = {}) {
+export function mathSpans(source, { maskCode: mask = false, allowNewlines = false } = {}) {
   let scan = shieldEscapedDollars(source);
-  if (maskCode) {
-    // A single-backtick span, deliberately: the matched-run form (`` `+ ``…)
-    // that `maskDocumentation` uses would swallow a LaTeX left-double-quote
-    // (``…'' inside a \text{}) and blank real math along with it.
-    scan = scan
-      .replace(/```[\s\S]*?```/g, blankPreservingOffsets)
-      .replace(/`[^`]*`/g, blankPreservingOffsets)
-      .replace(/<svg\b[\s\S]*?<\/svg>/gi, blankPreservingOffsets);
-  }
+  if (mask) scan = maskCode(scan, { svg: true });
   const runs = [];
   let inlineScan = scan;
   for (const m of scan.matchAll(/\$\$([\s\S]+?)\$\$/g)) {

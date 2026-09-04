@@ -105,9 +105,10 @@ import {
 // strategy, and one set of HTML readers, so this lint and the verifiers can
 // never disagree about what a page says.
 import {
-  malformedShortcodeParams, mathSpans, PAIRED_SHORTCODES, shortcodeParamSpans, shortcodes,
+  bookKeyOf, loadMediaManifests, malformedShortcodeParams, mathSpans, PAIRED_SHORTCODES,
+  SHORTCODE_PARAMS, shortcodeParams, shortcodeParamSpans, shortcodes,
 } from '../lib/content.mjs';
-import { hasFileBackedCssImage, htmlAttribute, openTagRe } from '../lib/html.mjs';
+import { decodeHtmlEntities, hasFileBackedCssImage, htmlAttribute, openTagRe } from '../lib/html.mjs';
 // The one objectives-callout parser, shared with the structure validator and
 // the source audit so the three tools never diagnose the callout differently.
 import { parseObjectivesCallout } from '../lib/openstax-source.mjs';
@@ -118,33 +119,68 @@ import { normalizeText } from '../../assets/js/lib/text/check-text.mjs';
 // Coverage measure for selfcheck rubric checkpoints — the same token-set
 // coverage verify-source-keys holds model answers to.
 import { phraseCoverage } from '../lib/openstax-source.mjs';
-import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 
+/** Why a component refuses the params it does not read — the sentence the author needs. */
+const UNKNOWN_PARAM_WHY = {
+  multiplechoice: 'the chosen option is the answer, and the key is `answer` (text) or `answerIndex` (graph)',
+  textin: 'it grades words, not values; use fillin for a math answer, and the keyed word is its own display',
+  selfcheck: 'a self-check has no key; its model answer is the inner content',
+  sortbins: 'the key is the config\'s bin indexes in the inner JSON',
+  graphplot: 'the answer and grid are the inner JSON config',
+  apfigure: 'the figure is its spec JSON; only `kind` rides on the tag',
+  mediafigure: 'the caption is the inner content',
+};
+const MEDIA_MANIFEST_DIR = path.join(REPO_ROOT, 'data/media');
+
 /**
- * Every `data/media/<book>.json` manifest on disk, keyed by book. Read
- * lazily (only when a mediafigure shortcode is actually found) and cached
- * per lintHugo call via the caller-supplied `mediaManifests` option so tests
- * never have to touch disk.
+ * Per-book rule profiles, keyed "shelf/book" (`bookKeyOf`). A book absent
+ * from the table gets `default`, key by key.
+ *
+ * `practice` — the section-final `## Practice` floors. Different content
+ * earns different floors, and a book's raised floor lands as an error only
+ * once its corpus is clean (AGENTS.md: retrofit first, then the rule).
+ * Biology's landed with the practice retrofit (August 2026): every section
+ * carries rubric'd selfchecks, summary-derived items, and — where a source
+ * table supports one — a sortbins, so the corpus was clean before the
+ * number moved.
+ *
+ * `knowledgeCheck` — the per-section quota on a cumulative Knowledge Check.
+ * `null` means no quota: the math Knowledge Checks sample each chapter's
+ * Review Exercises and Practice Test, so their per-section counts follow the
+ * source pool. Biology's are author-written from the module text at a FIXED
+ * count per section — every section of the range is tested with the same
+ * weight, and a miss points at exactly one section — so the count is exact,
+ * not a floor. `autoGraded` mirrors the Practice rule: a section represented
+ * only by selfchecks is not tested. A quota book grades words, so it refuses
+ * `fillin` and `graphplot` on its Knowledge Checks too.
+ *
+ * Exported so the documentation gate can derive the numbers the playbooks
+ * state; `options.bookRules` lets a test (or a future book's retrofit run)
+ * exercise a profile before it is published here.
  */
-function loadMediaManifestsFromDisk() {
-  const manifests = new Map();
-  const dir = path.join(REPO_ROOT, 'data/media');
-  if (!existsSync(dir)) return manifests;
-  for (const file of readdirSync(dir)) {
-    if (!file.endsWith('.json')) continue;
-    try {
-      manifests.set(file.slice(0, -'.json'.length), JSON.parse(readFileSync(path.join(dir, file), 'utf8')));
-    } catch {
-      // A malformed manifest is treated as absent below — the "no manifest"
-      // error names the real fix (re-run vendor-media) rather than a JSON
-      // parse trace.
-    }
-  }
-  return manifests;
+export const BOOK_RULES = Object.freeze({
+  default: {
+    practice: { perObjective: 2, perSection: 5 },
+    knowledgeCheck: null,
+  },
+  'life-health-sciences/biology': {
+    practice: { perObjective: 3, perSection: 8 },
+    knowledgeCheck: { perSection: 3, autoGraded: 1 },
+  },
+});
+
+/** The profile for one book, with an override merged key by key over the table. */
+export function bookRulesFor(bookKey, overrides) {
+  const base = BOOK_RULES[bookKey] ?? {};
+  const over = overrides?.[bookKey] ?? {};
+  return {
+    practice: over.practice ?? base.practice ?? BOOK_RULES.default.practice,
+    knowledgeCheck: over.knowledgeCheck ?? base.knowledgeCheck ?? BOOK_RULES.default.knowledgeCheck,
+  };
 }
 
 /** Get a manifest by book name from either a Map or a plain object. */
@@ -1101,7 +1137,7 @@ export function lintHugo(src, filename = '', options = {}) {
   let diskMediaManifests;
   const mediaManifestFor = (book) => {
     if (options.mediaManifests) return manifestEntry(options.mediaManifests, book);
-    if (diskMediaManifests === undefined) diskMediaManifests = loadMediaManifestsFromDisk();
+    if (diskMediaManifests === undefined) diskMediaManifests = loadMediaManifests(MEDIA_MANIFEST_DIR);
     return manifestEntry(diskMediaManifests, book);
   };
   const err = (i, msg) => errors.push(`L${lineOf(src, i)}: ${msg}`);
@@ -1127,11 +1163,9 @@ export function lintHugo(src, filename = '', options = {}) {
   const isKnowledgeCheck = /knowledge-check-\d+-\d+\.md$/.test(filename);
   const isRegularSection = /[/\\]content[/\\][^/\\]+[/\\][^/\\]+[/\\]\d{2}-[^/\\]+[/\\]\d{2}-[^/\\]+\.md$/i
     .test(filename.replace(/^\.?[/\\]?/, '/'));
-  // "shelf/book" for per-book rules (practice floors, rubric requirements):
-  // the two path segments after content/, or '' for a page outside a book.
-  const bookMatch = filename.replace(/^\.?[/\\]?/, '/')
-    .match(/[/\\]content[/\\]([^/\\]+)[/\\]([^/\\]+)[/\\]/);
-  const bookKey = bookMatch ? `${bookMatch[1]}/${bookMatch[2]}` : '';
+  // The book's rule profile (practice floors, Knowledge Check quota), keyed
+  // "shelf/book" by the one shared derivation.
+  const bookRules = bookRulesFor(bookKeyOf(filename), options.bookRules);
 
   // ---- frontmatter YAML that Hugo cannot parse -----------------------------
   // A plain YAML scalar ends at its first `: `, so
@@ -1507,26 +1541,13 @@ export function lintHugo(src, filename = '', options = {}) {
       err(m.index, 'inline SVG needs role="img" and a non-empty aria-label or aria-labelledby');
     }
   }
-  for (const m of htmlMediaSrc.matchAll(/<svg\b[\s\S]*?<\/svg>/gi)) {
-    const svg = m[0];
-    if (/\bstyle\s*=\s*\{\{/i.test(svg)) {
-      err(m.index, 'inline SVG contains React `style={{…}}` syntax — use ordinary SVG attributes');
-    }
-    if (/\{\s*[\w$.]+\s*\.map\s*\(|\{\s*[\s\S]*?=>[\s\S]*?\}/.test(svg)) {
-      err(m.index, 'inline SVG contains an unevaluated JSX expression — render explicit SVG elements');
-    }
-    const jsxAttribute = /\b(?:strokeWidth|strokeDasharray|strokeLinecap|strokeLinejoin|fontSize|fontStyle|fontWeight|textAnchor|fillRule|clipRule)\s*=/i.exec(svg);
-    if (jsxAttribute) {
-      err(m.index + jsxAttribute.index, `inline SVG uses JSX attribute ${JSON.stringify(jsxAttribute[0].replace(/\s*=.*/, ''))} — use its kebab-case SVG spelling`);
-    }
-  }
-
   // ---- figure curve precision ----------------------------------------------
-  // Figures rendered by tools/figures/render-figure.mjs carry their generating JSON in
-  // a data-spec attribute. When present it must parse, and any smoothCurves
-  // use must carry the explicit freeform acknowledgment.
-  const decodeEntities = (value) => value
-    .replace(/&quot;/g, '"').replace(/&#0*39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+  // Legacy figures — a pasted `<div class="ap-figure">` — carry their
+  // generating JSON in a data-spec attribute. When present it must parse, and
+  // any smoothCurves use must carry the explicit freeform acknowledgment. The
+  // attribute is decoded by the same single-pass decoder the figure tools
+  // read it with (html.mjs): a local copy once disagreed with it on three
+  // entity spellings.
   // Where an author HAS acknowledged source art with no formula, the spline it
   // produces is the correct output, so the bezier check below must not fire on
   // it. Anything else — a hand-pasted spline with no spec at all — still does.
@@ -1538,9 +1559,9 @@ export function lintHugo(src, filename = '', options = {}) {
     if (!raw) continue;
     let spec;
     try {
-      spec = JSON.parse(decodeEntities(raw));
+      spec = JSON.parse(decodeHtmlEntities(raw));
     } catch {
-      err(m.index, 'ap-figure data-spec is not valid JSON — regenerate the figure with tools/figures/render-figure.mjs and paste its output verbatim');
+      err(m.index, 'ap-figure data-spec is not valid JSON — this is a legacy figure; convert it to an apfigure spec (`npm run figures:convert`) rather than repairing the attribute');
       continue;
     }
     const curves = Array.isArray(spec.smoothCurves) ? spec.smoothCurves : [];
@@ -1637,6 +1658,19 @@ export function lintHugo(src, filename = '', options = {}) {
       for (const fragment of malformedShortcodeParams(open)) {
         err(index, `${name}: parameter ${JSON.stringify(fragment)} is not \`name="value"\` — Hugo reads it but every tool here drops it, so the value would be graded by nothing`);
       }
+      // A param the template never reads is silently ignored by Hugo — two
+      // biology multiple choices shipped an `accept=` that graded nothing.
+      // One allowlist per shortcode (from the templates' `.Get` census) and
+      // one rule, so every component refuses what it does not read. Hextra's
+      // callout has no entry and is not policed.
+      const takes = SHORTCODE_PARAMS[name];
+      if (takes) {
+        for (const param of Object.keys(shortcodeParams(open))) {
+          if (takes.has(param)) continue;
+          const why = UNKNOWN_PARAM_WHY[name] ? ` — ${UNKNOWN_PARAM_WHY[name]}` : '';
+          err(index, `${name} does not take ${JSON.stringify(param)}${why}; it takes ${[...takes].join(', ')}`);
+        }
+      }
       // Hugo's shortcode parser refuses a raw newline inside a quoted param
       // ("unterminated quoted string in shortcode parameter-argument") even
       // though this repository's PARAM_VALUE grammar would read it — a
@@ -1694,24 +1728,8 @@ export function lintHugo(src, filename = '', options = {}) {
   // while the retrofit ran; the last of the 212 mapped sections landed on
   // August 9, 2026, so there is no longer a section the warning could name.
   // See docs/authoring-playbook.md, "The section-final Practice block".
-  // Practice floors are PER BOOK: different content earns different floors,
-  // and a book's raised floor lands as an error only once its corpus is
-  // clean (AGENTS.md: retrofit first, then the rule). The key is
-  // "shelf/book", exactly as mc-distribution.test.mjs keys its per-book
-  // fairness gate. `options.practiceFloors` lets a retrofit run (and the
-  // tests) exercise a floor before it is published here.
-  // Biology's raised floor landed with the practice retrofit (August 2026):
-  // every section carries rubric'd selfchecks, summary-derived items, and —
-  // where a source table supports one — a sortbins, so the corpus was clean
-  // before the number moved (AGENTS.md: retrofit first, then the rule).
-  const PRACTICE_FLOORS = {
-    default: { perObjective: 2, perSection: 5 },
-    'life-health-sciences/biology': { perObjective: 3, perSection: 8 },
-    ...(options.practiceFloors || {}),
-  };
-  const practiceFloor = PRACTICE_FLOORS[bookKey] || PRACTICE_FLOORS.default;
-  const MIN_PER_OBJECTIVE = practiceFloor.perObjective;
-  const MIN_PER_SECTION = practiceFloor.perSection;
+  // Practice floors are PER BOOK — the `practice` profile in BOOK_RULES.
+  const { perObjective: MIN_PER_OBJECTIVE, perSection: MIN_PER_SECTION } = bookRules.practice;
   const headings = [...mediaSrc.matchAll(/^## +(.+?)[ \t]*$/gm)]
     .map((m) => ({ index: m.index, end: m.index + m[0].length, title: m[1].trim() }));
   // Case-insensitive: a title-case `## Key Concepts` must not slip out of
@@ -2099,13 +2117,6 @@ export function lintHugo(src, filename = '', options = {}) {
     if (isRegularSection && !(params.hint || '').trim()) {
       err(index, `multiplechoice (${q.slice(0, 40)}…): regular-section exercise is missing a hint`);
     }
-    // `answerDisplay` is not a multiplechoice parameter. The template never
-    // rendered it and no page has ever used it, so an author who reached for
-    // the fillin habit would have had it silently swallowed — and this loop
-    // was the only thing in the repository that made it look supported.
-    if (params.answerDisplay !== undefined) {
-      err(index, 'multiplechoice: answerDisplay is not supported — the chosen option is already the answer on screen');
-    }
     for (const name of ['question', 'hint']) {
       if (/\bTry\s+It(?:s)?\s+\d+(?:\.\d+)+(?:\s*\([a-z]\))?[.:]?/i.test(params[name] || '')) {
         err(index, `multiplechoice (${q.slice(0, 40)}…): ${name} contains a print-source “Try It” label — keep the source number in working notes`);
@@ -2121,12 +2132,15 @@ export function lintHugo(src, filename = '', options = {}) {
         if (opts.length < 2) err(index, 'multiplechoice(graph): at least two options are required');
         if (Number(params.answerIndex) >= opts.length) err(index, `multiplechoice(graph): answerIndex ${params.answerIndex} but only ${opts.length} option(s)`);
         graphAnswerIndexes.push({ index, n: Number(params.answerIndex) });
-        // A spec-JSON option (block starting with `{`) is validated exactly
-        // like an apfigure body; its kind rides inside the JSON. Prerendered
-        // <svg> options stay covered by the inline-SVG accessibility rule.
+        // Every option is a spec JSON object, validated exactly like an
+        // apfigure body; its kind rides inside the JSON. The prerendered
+        // <svg> form was retired when the last twelve were converted.
         opts.forEach((opt, optIndex) => {
           const block = opt.trim();
-          if (!block.startsWith('{')) return;
+          if (!block.startsWith('{')) {
+            err(index, `multiplechoice(graph) option ${optIndex}: must be a graph-core spec JSON object — prerendered <svg> options are no longer accepted; author the option spec-first`);
+            return;
+          }
           for (const problem of figureSpecErrors(block, undefined)) {
             err(index, `multiplechoice(graph) option ${optIndex}: ${problem}`);
           }
@@ -2146,6 +2160,16 @@ export function lintHugo(src, filename = '', options = {}) {
   }
   if (graphAnswerIndexes.length >= 2 && new Set(graphAnswerIndexes.map((x) => x.n)).size === 1) {
     err(graphAnswerIndexes[0].index, `all ${graphAnswerIndexes.length} graph multiplechoice(s) use answerIndex=${graphAnswerIndexes[0].n} — vary the correct position`);
+  }
+  // A section that asks the learner to DRAW graphs also asks them to
+  // RECOGNIZE one: recognizing a correct graph among plausible wrong ones is
+  // a distinct skill from producing it. Two or more graphplots is the
+  // threshold — a section with a lone graphplot barely covers graphing and
+  // is not the unit to protect a skill in (eleven sections carry exactly
+  // one). Knowledge Checks are cumulative assessments, not sections, and are
+  // exempt (docs/subjects/math.md, "Graph production and recognition").
+  if (isRegularSection && graphplots.length >= 2 && !multiplechoices.some((sc) => sc.closed && sc.params.mode === 'graph')) {
+    err(graphplots[0].index, `section has ${graphplots.length} graphplot exercises but no mode="graph" multiplechoice — a section that asks the learner to draw graphs also asks them to recognize one (docs/subjects/math.md, "Graph production and recognition")`);
   }
 
   // ---- graphplot shortcode rules -------------------------------------------
@@ -2194,12 +2218,7 @@ export function lintHugo(src, filename = '', options = {}) {
     const answer = params.answer || '';
     if (!q.trim()) err(index, 'textin: missing non-empty question');
     if (!answer.trim()) err(index, `${where}: missing non-empty answer`);
-    for (const name of ['answerMode', 'answerForm']) {
-      if (params[name] !== undefined) {
-        err(index, `${where}: textin does not take ${JSON.stringify(name)} — it grades words, not values; use fillin for a math answer`);
-      }
-    }
-    for (const name of ['question', 'answer', 'accept', 'hint', 'answerDisplay']) {
+    for (const name of ['question', 'answer', 'accept', 'hint']) {
       const value = params[name];
       if (value !== undefined && UNESCAPED_DOLLAR_RE.test(value)) {
         err(index, `${where}: ${name} must not contain \`$\` math — a text field has no spoken-math name; use multiplechoice for a prompt that needs math`);
@@ -2274,12 +2293,14 @@ export function lintHugo(src, filename = '', options = {}) {
     // covered by the model part's own words — a checkpoint that brings new
     // words is a new claim in disguise.
     const checkParts = inner.split(/^[ \t]*===CHECKS===[ \t]*$/m);
-    // Books listed here require every regular-section selfcheck to carry a
-    // rubric. Enabled per book once its corpus is clean; biology landed with
-    // the practice retrofit (August 2026).
-    const RUBRIC_REQUIRED_BOOKS = new Set(['life-health-sciences/biology', ...(options.rubricRequiredBooks || [])]);
-    if (checkParts.length === 1 && isRegularSection && RUBRIC_REQUIRED_BOOKS.has(bookKey)) {
-      err(index, `${where}: this book requires rubric checkpoints — add a ===CHECKS=== line with 2–6 clauses of the model answer`);
+    // Every regular-section selfcheck carries a rubric — the corpus was clean
+    // (663 of 663) before this became unconditional, so it is a rule, not a
+    // retrofit. A Knowledge Check selfcheck needs one too: with no hint
+    // (quizzes never have them) and no key, the rubric is the only thing that
+    // makes the item self-gradable. A fragment outside any section (a doc
+    // example) is exempt.
+    if (checkParts.length === 1 && (isRegularSection || isKnowledgeCheck)) {
+      err(index, `${where}: selfcheck requires rubric checkpoints — add a ===CHECKS=== line with 2–6 clauses of the model answer`);
     }
     if (checkParts.length > 2) {
       err(index, `${where}: more than one ===CHECKS=== line — one model answer, one checkpoint list`);
@@ -2303,11 +2324,6 @@ export function lintHugo(src, filename = '', options = {}) {
         } else if (phraseCoverage(checkpoint, modelPart) < 0.8) {
           err(index, `${where}: checkpoint ${JSON.stringify(checkpoint)} is not covered by the model answer's own words — a checkpoint restates a clause of the model answer, never adds one`);
         }
-      }
-    }
-    for (const name of ['answer', 'accept', 'answerDisplay', 'answerMode', 'answerForm']) {
-      if (params[name] !== undefined) {
-        err(index, `${where}: selfcheck does not take ${JSON.stringify(name)} — a self-check has no key; its model answer is the inner content`);
       }
     }
     if (isRegularSection && !(params.hint || '').trim()) {
@@ -2337,11 +2353,6 @@ export function lintHugo(src, filename = '', options = {}) {
     const rawInner = sortbinsRawInner.get(index) ?? inner;
     const where = `sortbins (${(params.question || '?').slice(0, 40)}…)`;
     if (!(params.question || '').trim()) err(index, 'sortbins: missing non-empty question');
-    for (const name of ['answer', 'accept', 'answerDisplay', 'answerMode', 'answerForm']) {
-      if (params[name] !== undefined) {
-        err(index, `${where}: sortbins does not take ${JSON.stringify(name)} — the key is the config's bin indexes in the inner JSON`);
-      }
-    }
     if ([params.question, params.hint, rawInner].some((v) => UNESCAPED_DOLLAR_RE.test(v || ''))) {
       err(index, `${where}: sortbins must not contain \`$\` math — labels become button names, and a button has no spoken-math name`);
     }
@@ -2477,6 +2488,39 @@ export function lintHugo(src, filename = '', options = {}) {
   if (isKnowledgeCheck) {
     for (const m of src.matchAll(/\bhint="/g)) {
       err(m.index, 'hint on a Knowledge Check — quizzes never have hints; delete the attribute');
+    }
+  }
+
+  // ---- Knowledge Check per-section quota (per book) -------------------------
+  // The `knowledgeCheck` profile in BOOK_RULES; null means the book has no
+  // quota. No page carries one yet — Biology's unit Knowledge Checks are not
+  // authored — so this block is exercised by the tests until they land.
+  const kcQuota = isKnowledgeCheck ? bookRules.knowledgeCheck : null;
+  if (kcQuota) {
+    for (const { index } of [...fillins, ...graphplots]) {
+      err(index, 'fillin/graphplot on a life-sciences Knowledge Check — this book grades words (multiplechoice, textin, sortbins) and rubric\'d selfchecks only');
+    }
+    const sectionGroups = [...mediaSrc.matchAll(/^### +(\d+\.\d+)\b.*$/gm)]
+      .map((m) => ({ index: m.index, end: m.index + m[0].length, id: m[1] }));
+    // A section group ends at the next `###` OR the next `##` (chapter)
+    // heading — otherwise a chapter's last section would swallow the next
+    // chapter's first items.
+    const boundaries = [...mediaSrc.matchAll(/^##{1,2} +\S/gm)].map((m) => m.index);
+    const limitOf = (start) => boundaries.find((b) => b > start) ?? mediaSrc.length;
+    const loose = practiceQuestions.find(({ index }) => !sectionGroups.length || index < sectionGroups[0].index);
+    if (loose) {
+      err(loose.index, 'Knowledge Check item sits above the first `### N.M` section heading — every item belongs to a section group');
+    }
+    for (const group of sectionGroups) {
+      const limit = limitOf(group.end);
+      const within = ({ index }) => index >= group.end && index < limit;
+      const count = practiceQuestions.filter(within).length;
+      if (count !== kcQuota.perSection) {
+        err(group.index, `Knowledge Check section \`### ${group.id}\` has ${count} item(s) — this book's quota is exactly ${kcQuota.perSection} per section`);
+      }
+      if (autoGradedQuestions.filter(within).length < kcQuota.autoGraded) {
+        err(group.index, `Knowledge Check section \`### ${group.id}\` has no auto-graded item (multiplechoice, textin, or sortbins) — a section of only selfchecks is not tested`);
+      }
     }
   }
 

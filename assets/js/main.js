@@ -16,3 +16,5 @@ import './components/text/self-check.js';
 import './components/text/sort-bins.js';
 // Site chrome (not a component): folds the sticky navbar down while reading.
 import './navbar-compact.js';
+// Site chrome: makes exactly the display equations that overflow keyboard-reachable.
+import './scrollable-math.js';

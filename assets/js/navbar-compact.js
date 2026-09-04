@@ -23,8 +23,8 @@
 
 const THRESHOLD_PX = 96;
 
-export function initCompactNavbar(root = document) {
-  const container = root.querySelector('.hextra-nav-container');
+function initCompactNavbar() {
+  const container = document.querySelector('.hextra-nav-container');
   if (!container) return;
   const home = container.querySelector('nav > a');
   const button = container.querySelector('.ap-nav-top');

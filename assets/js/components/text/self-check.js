@@ -11,16 +11,18 @@
  * carries `===CHECKS===` checkpoints) and writes their result to the live
  * region — with a "You checked N of M points" count when a rubric exists.
  */
-let hintSequence = 0;
+import { hintSlotHTML, mountHintToggle } from '../../lib/shared/hint-toggle.mjs';
+import { TONE } from '../../lib/shared/colors.mjs';
 
 const MESSAGES = {
   correct: 'Marked as correct.',
   review: 'Marked for review — reread the section, then try the question again.',
 };
 
+// Status → shared feedback tone (colors.mjs owns the palette fallbacks).
 const COLOR = {
-  correct: 'var(--ap-success, #1a7f37)',
-  review: 'var(--ap-warning, #9a6700)',
+  correct: TONE.success,
+  review: TONE.warning,
 };
 
 class SelfCheckElement extends HTMLElement {
@@ -44,27 +46,7 @@ class SelfCheckElement extends HTMLElement {
     this.checkpoints.forEach((box) => { box.disabled = false; });
 
     const hintTpl = this.querySelector('template[data-slot="hint"]');
-    if (hintTpl && wrap) {
-      const hintId = `ap-selfcheck-hint-${++hintSequence}`;
-      const hintBtn = document.createElement('button');
-      hintBtn.type = 'button';
-      hintBtn.className = 'ap-fillin-hint-toggle';
-      hintBtn.textContent = 'Show hint';
-      hintBtn.setAttribute('aria-expanded', 'false');
-      hintBtn.setAttribute('aria-controls', hintId);
-      const hint = document.createElement('p');
-      hint.id = hintId;
-      hint.className = 'ap-fillin-hint';
-      hint.hidden = true;
-      hint.innerHTML = hintTpl.innerHTML;
-      hintBtn.addEventListener('click', () => {
-        const show = hint.hidden;
-        hint.hidden = !show;
-        hintBtn.textContent = show ? 'Hide hint' : 'Show hint';
-        hintBtn.setAttribute('aria-expanded', String(show));
-      });
-      wrap.append(hintBtn, hint);
-    }
+    if (wrap) mountHintToggle(wrap, hintSlotHTML(this));
   }
 
   _mark(btn) {

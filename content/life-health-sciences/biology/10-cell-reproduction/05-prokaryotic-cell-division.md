@@ -74,7 +74,6 @@ cytokinesis
 {{< multiplechoice
   question="FtsZ proteins direct the formation of a ________ that will eventually form the new cell walls of the daughter cells."
   answer="septum"
-  accept="septa"
   hint="This section names the structure that forms between the daughter nucleoids as the FtsZ ring recruits membrane and cell wall material."
 >}}
 contractile ring

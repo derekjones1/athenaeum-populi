@@ -4,8 +4,8 @@
 // full-page image of a long section is 40,000 px tall and unreadable, and a
 // component's interesting state (a wrong answer's feedback, a revealed model
 // answer, an opened extended description) never appears in a static capture.
-// This tool is the review step the Biology pilot did by hand: one PNG per
-// component per theme, named by component kind and index.
+// This tool is the review step the first Biology chapters did by hand: one
+// PNG per component per theme, named by component kind and index.
 //
 // Usage:
 //   npm run build            (or have public/ current)
@@ -38,7 +38,7 @@ export const KINDS = Object.freeze({
   'text-in': { selector: 'text-in', action: 'wrong-textin' },
   'multiple-choice': { selector: 'multiple-choice', action: 'choose-second' },
   'self-check': { selector: 'self-check', action: 'open-selfcheck' },
-  'graph-plot': { selector: 'graph-plot', action: null },
+  'graph-plot': { selector: 'graph-plot', action: 'place-points-then-check' },
   'sort-bins': { selector: 'sort-bins', action: 'wrong-sortbins' },
   'ap-figure': { selector: 'ap-figure', action: null },
   mediafigure: { selector: 'figure.ap-mediafigure', action: 'open-details' },
@@ -112,6 +112,17 @@ async function drive(el, action, page) {
       }
       await el.locator('.ap-sortbins-check').click()
       await page.waitForTimeout(150)
+      return
+    }
+    case 'place-points-then-check': {
+      // The keyboard path: "Add point" drops each point on a free lattice
+      // location, so a full set is (almost always) a wrong answer, and Check
+      // then shows the graded state — the one no static capture reaches.
+      await page.waitForFunction((node) => node.querySelector('.ap-graphplot-btn') && !node.querySelector('.ap-graphplot-add')?.disabled, await el.elementHandle(), { timeout: 15_000 }).catch(() => {})
+      const addPoint = el.getByRole('button', { name: 'Add point' })
+      for (let i = 0; i < 12 && !(await addPoint.isDisabled()); i += 1) await addPoint.click()
+      await el.getByRole('button', { name: 'Check' }).click()
+      await page.waitForTimeout(250)
       return
     }
     case 'choose-second': {

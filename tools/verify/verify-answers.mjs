@@ -60,8 +60,9 @@ import { existsSync, readFileSync } from 'node:fs';
 import {
   ce, preprocess, splitTopLevelCommas, spellDegreesAsQuantity,
 } from '../../assets/js/lib/math/check-answer.mjs';
+import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import {
-  blankPreservingOffsets, mathSpans, shortcodeParams, shortcodes, walkMarkdown,
+  maskCode, mathSpans, shortcodeParams, shortcodes, walkMarkdown,
 } from '../lib/content.mjs';
 
 /* ------------------------------------------------------------------ parsing */
@@ -1263,9 +1264,7 @@ export function analyzeFillin({ question = '', answer, answerMode }) {
 export function extractFillins(source) {
   // Blank out code fences and inline code in place (newlines kept) so the
   // reported line numbers stay true to the file.
-  const cleaned = source
-    .replace(/```[\s\S]*?```/g, blankPreservingOffsets)
-    .replace(/`[^`\n]*`/g, blankPreservingOffsets);
+  const cleaned = maskCode(source);
   const fillins = [];
   for (const { params, index } of shortcodes(cleaned, 'fillin')) {
     fillins.push({ line: cleaned.slice(0, index).split('\n').length, params });
@@ -1274,8 +1273,6 @@ export function extractFillins(source) {
 }
 
 function main() {
-  const args = process.argv.slice(2);
-  const root = args.find((a) => !a.startsWith('--')) || 'content';
   // Coverage ratchet. This tool reports 0 failures both when every answer is
   // right and when it has quietly stopped being able to READ them — a parser
   // change that pushes a class into "out of scope" shrinks the checked set
@@ -1283,13 +1280,17 @@ function main() {
   // that into a failure. Wired into `npm test` via the `verify:answers`
   // script; `npm run baseline:update` recounts reality and rewrites the floor
   // after an authoring session, in the same commit as the content.
-  const minVerifiedArg = args.find((a) => a.startsWith('--min-verified'));
-  const minVerified = minVerifiedArg
-    ? Number(minVerifiedArg.includes('=')
-      ? minVerifiedArg.split('=')[1]
-      : args[args.indexOf(minVerifiedArg) + 1])
-    : null;
-  if (minVerifiedArg && (!Number.isInteger(minVerified) || minVerified < 0)) {
+  let root;
+  let minVerified;
+  try {
+    const cli = parseCliArgs(process.argv.slice(2), {
+      valueFlags: ['min-verified'],
+      positional: { max: 1, name: 'content root' },
+    });
+    root = cli.positional[0] ?? 'content';
+    minVerified = integerFlag(cli, 'min-verified');
+  } catch (error) {
+    console.error(`verify-answers: ${error.message}`);
     console.error('usage: node tools/verify/verify-answers.mjs [content-root] [--min-verified N]');
     process.exit(2);
   }

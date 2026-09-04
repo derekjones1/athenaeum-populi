@@ -10,13 +10,14 @@
 
 - `prealgebra-bundle` — [https://github.com/openstax/osbooks-prealgebra-bundle](https://github.com/openstax/osbooks-prealgebra-bundle), review target `38cae454e644abf9f0a623e876994553881597c9`
 - `college-algebra-bundle` — [https://github.com/openstax/osbooks-college-algebra-bundle](https://github.com/openstax/osbooks-college-algebra-bundle), review target `789b54099106b071d1d32bfcee454fed72eb4768`
+- `biology-bundle` — [https://github.com/openstax/osbooks-biology-bundle](https://github.com/openstax/osbooks-biology-bundle), review target `63f8b6f8d129dd1582989bb755011e9a6d523471`
 
 ## Coverage
 
-- Mapped local sections: 229
-- Sections changed upstream: 15
-- Content-level changes: 10
-- Markup/metadata-only changes: 5
+- Mapped local sections: 482
+- Sections changed upstream: 40
+- Content-level changes: 32
+- Markup/metadata-only changes: 8
 - Changed Try It records: 3
 - Changed Try Its where local math matches the PDF-era form: 1
 - Local-impact drift decisions recorded: 4
@@ -26,18 +27,129 @@
 - prealgebra (`prealgebra-bundle`): `d2cea8f95118f0eb436d4406a8fc8a8e0e00e8c8`
 - elementary-algebra (`prealgebra-bundle`): `d2cea8f95118f0eb436d4406a8fc8a8e0e00e8c8`
 - intermediate-algebra (`prealgebra-bundle`): `c1bbed4b86ff5c80686d339a6ca5e4e48fae2483`
-- precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864` — scaffolded, 28 sections mapped
+- precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864`
+- biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
 
 ## Changed mapped sections
 
-### elementary-algebra 1.2 — [content/math/elementary-algebra/01-foundations/02-use-the-language-of-algebra.md](../content/math/elementary-algebra/01-foundations/02-use-the-language-of-algebra.md)
+### biology 13.2 — [content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md](../../content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md)
+
+Module `m66494`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 15.2 — [content/life-health-sciences/biology/15-genes-and-proteins/02-prokaryotic-transcription.md](../../content/life-health-sciences/biology/15-genes-and-proteins/02-prokaryotic-transcription.md)
+
+Module `m66498`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 17.1 — [content/life-health-sciences/biology/17-biotechnology-and-genomics/01-biotechnology.md](../../content/life-health-sciences/biology/17-biotechnology-and-genomics/01-biotechnology.md)
+
+Module `m66511`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 21.2 — [content/life-health-sciences/biology/21-viruses/02-virus-infections-and-hosts.md](../../content/life-health-sciences/biology/21-viruses/02-virus-infections-and-hosts.md)
+
+Module `m66535`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 22.4 — [content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/04-bacterial-diseases-in-humans.md](../../content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/04-bacterial-diseases-in-humans.md)
+
+Module `m66548`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 22.5 — [content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/05-beneficial-prokaryotes.md](../../content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/05-beneficial-prokaryotes.md)
+
+Module `m66549`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 23.3 — [content/life-health-sciences/biology/23-protists/03-groups-of-protists.md](../../content/life-health-sciences/biology/23-protists/03-groups-of-protists.md)
+
+Module `m66555`; markup-or-metadata-only. Changed lanes: raw XML only.
+
+
+### biology 25.2 — [content/life-health-sciences/biology/25-seedless-plants/02-green-algae-precursors-of-land-plants.md](../../content/life-health-sciences/biology/25-seedless-plants/02-green-algae-precursors-of-land-plants.md)
+
+Module `m66567`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 26.2 — [content/life-health-sciences/biology/26-seed-plants/02-gymnosperms.md](../../content/life-health-sciences/biology/26-seed-plants/02-gymnosperms.md)
+
+Module `m66573`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 27.1 — [content/life-health-sciences/biology/27-introduction-to-animal-diversity/01-features-of-the-animal-kingdom.md](../../content/life-health-sciences/biology/27-introduction-to-animal-diversity/01-features-of-the-animal-kingdom.md)
+
+Module `m66577`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 31.2 — [content/life-health-sciences/biology/31-soil-and-plant-nutrition/02-the-soil.md](../../content/life-health-sciences/biology/31-soil-and-plant-nutrition/02-the-soil.md)
+
+Module `m66604`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 32.3 — [content/life-health-sciences/biology/32-plant-reproduction/03-asexual-reproduction.md](../../content/life-health-sciences/biology/32-plant-reproduction/03-asexual-reproduction.md)
+
+Module `m66609`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 33.3 — [content/life-health-sciences/biology/33-the-animal-body-basic-form-and-function/03-homeostasis.md](../../content/life-health-sciences/biology/33-the-animal-body-basic-form-and-function/03-homeostasis.md)
+
+Module `m66613`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 35.5 — [content/life-health-sciences/biology/35-the-nervous-system/05-nervous-system-disorders.md](../../content/life-health-sciences/biology/35-the-nervous-system/05-nervous-system-disorders.md)
+
+Module `m66624`; markup-or-metadata-only. Changed lanes: raw XML only.
+
+
+### biology 36.4 — [content/life-health-sciences/biology/36-sensory-systems/04-hearing-and-vestibular-sensation.md](../../content/life-health-sciences/biology/36-sensory-systems/04-hearing-and-vestibular-sensation.md)
+
+Module `m66407`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 38.2 — [content/life-health-sciences/biology/38-the-musculoskeletal-system/02-bone.md](../../content/life-health-sciences/biology/38-the-musculoskeletal-system/02-bone.md)
+
+Module `m66638`; content-changed. Changed lanes: headings.
+
+
+### biology 41.1 — [content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/01-osmoregulation-and-osmotic-balance.md](../../content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/01-osmoregulation-and-osmotic-balance.md)
+
+Module `m66656`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 42.2 — [content/life-health-sciences/biology/42-the-immune-system/02-adaptive-immune-response.md](../../content/life-health-sciences/biology/42-the-immune-system/02-adaptive-immune-response.md)
+
+Module `m66664`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 42.3 — [content/life-health-sciences/biology/42-the-immune-system/03-antibodies.md](../../content/life-health-sciences/biology/42-the-immune-system/03-antibodies.md)
+
+Module `m66665`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 44.3 — [content/life-health-sciences/biology/44-ecology-and-the-biosphere/03-terrestrial-biomes.md](../../content/life-health-sciences/biology/44-ecology-and-the-biosphere/03-terrestrial-biomes.md)
+
+Module `m66420`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 44.4 — [content/life-health-sciences/biology/44-ecology-and-the-biosphere/04-aquatic-biomes.md](../../content/life-health-sciences/biology/44-ecology-and-the-biosphere/04-aquatic-biomes.md)
+
+Module `m66417`; content-changed. Changed lanes: instructionalText.
+
+
+### biology 45.5 — [content/life-health-sciences/biology/45-population-and-community-ecology/05-human-population-growth.md](../../content/life-health-sciences/biology/45-population-and-community-ecology/05-human-population-growth.md)
+
+Module `m66696`; content-changed. Changed lanes: instructionalText.
+
+
+### elementary-algebra 1.2 — [content/math/elementary-algebra/01-foundations/02-use-the-language-of-algebra.md](../../content/math/elementary-algebra/01-foundations/02-use-the-language-of-algebra.md)
 
 Module `m82453`; content-changed. Changed lanes: instructionalText.
 
 Decision: **retain-local-equivalent.** Current upstream swaps which rectangle dimension is six less than the other. The local PDF-era version is mathematically equivalent and internally consistent; the current upstream summary table still describes the older orientation.
 
 
-### elementary-algebra 2.7 — [content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/07-solve-linear-inequalities.md](../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/07-solve-linear-inequalities.md)
+### elementary-algebra 2.7 — [content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/07-solve-linear-inequalities.md](../../content/math/elementary-algebra/02-solving-linear-equations-and-inequalities/07-solve-linear-inequalities.md)
 
 Module `m82470`; content-changed. Changed lanes: tries.
 
@@ -48,7 +160,7 @@ Decision: **retain-local-upstream-inconsistent.** Current upstream changes the r
   - Current: Solve the inequality (2)/(5)z−(1)/(3)z<(1)/(15)z​+(3)/(5) , graph the solution on the number line, and write the solution in interval notation.
   - Local: Solve the inequality $\tfrac{2}{5}z - \tfrac{1}{3}z < \tfrac{1}{15}z - \tfrac{3}{5}$. Which describes its solution?
 
-### elementary-algebra 4.6 — [content/math/elementary-algebra/04-graphs/06-find-the-equation-of-a-line.md](../content/math/elementary-algebra/04-graphs/06-find-the-equation-of-a-line.md)
+### elementary-algebra 4.6 — [content/math/elementary-algebra/04-graphs/06-find-the-equation-of-a-line.md](../../content/math/elementary-algebra/04-graphs/06-find-the-equation-of-a-line.md)
 
 Module `m82486`; content-changed. Changed lanes: tries.
 
@@ -56,19 +168,19 @@ Module `m82486`; content-changed. Changed lanes: tries.
   - Before: Find an equation of a line with slope m=(2)/(3) and containing thepoint (9,2) .
   - Current: Find an equation of a line with slope m=(2)/(3) and containing the point (9,2) .
 
-### elementary-algebra 8.8 — [content/math/elementary-algebra/08-rational-expressions-and-equations/08-solve-uniform-motion-and-work-applications.md](../content/math/elementary-algebra/08-rational-expressions-and-equations/08-solve-uniform-motion-and-work-applications.md)
+### elementary-algebra 8.8 — [content/math/elementary-algebra/08-rational-expressions-and-equations/08-solve-uniform-motion-and-work-applications.md](../../content/math/elementary-algebra/08-rational-expressions-and-equations/08-solve-uniform-motion-and-work-applications.md)
 
 Module `m82543`; markup-or-metadata-only. Changed lanes: raw XML only.
 
 
-### intermediate-algebra 1.1 — [content/math/intermediate-algebra/01-foundations/01-use-the-language-of-algebra.md](../content/math/intermediate-algebra/01-foundations/01-use-the-language-of-algebra.md)
+### intermediate-algebra 1.1 — [content/math/intermediate-algebra/01-foundations/01-use-the-language-of-algebra.md](../../content/math/intermediate-algebra/01-foundations/01-use-the-language-of-algebra.md)
 
 Module `m81422`; content-changed. Changed lanes: instructionalText.
 
 Decision: **retain-local-equivalent.** Current upstream swaps which rectangle dimension is fourteen less than the other. The local PDF-era version is mathematically equivalent and internally consistent; the current upstream summary remains phrased for the older orientation.
 
 
-### intermediate-algebra 2.5 — [content/math/intermediate-algebra/02-solving-linear-equations/05-solve-linear-inequalities.md](../content/math/intermediate-algebra/02-solving-linear-equations/05-solve-linear-inequalities.md)
+### intermediate-algebra 2.5 — [content/math/intermediate-algebra/02-solving-linear-equations/05-solve-linear-inequalities.md](../../content/math/intermediate-algebra/02-solving-linear-equations/05-solve-linear-inequalities.md)
 
 Module `m81366`; content-changed. Changed lanes: tries.
 
@@ -76,50 +188,65 @@ Module `m81366`; content-changed. Changed lanes: tries.
   - Before: Solve the inequality (2)/(5)z−(1)/(3)z<(1)/(15)z​−(3)/(5) , graph the solution on the number line, and write the solution in interval notation.
   - Current: Solve the inequality (2)/(5)z−(1)/(3)z<(1)/(15)z​+(3)/(5) , graph the solution on the number line, and write the solution in interval notation.
 
-### prealgebra 6.3 — [content/math/prealgebra/06-percents/03-solve-sales-tax-commission-and-discount-applications.md](../content/math/prealgebra/06-percents/03-solve-sales-tax-commission-and-discount-applications.md)
+### prealgebra 6.3 — [content/math/prealgebra/06-percents/03-solve-sales-tax-commission-and-discount-applications.md](../../content/math/prealgebra/06-percents/03-solve-sales-tax-commission-and-discount-applications.md)
 
 Module `m81307`; markup-or-metadata-only. Changed lanes: raw XML only.
 
 
-### prealgebra 9.4 — [content/math/prealgebra/09-math-models-and-geometry/04-use-properties-of-rectangles-triangles-and-trapezoids.md](../content/math/prealgebra/09-math-models-and-geometry/04-use-properties-of-rectangles-triangles-and-trapezoids.md)
+### prealgebra 9.4 — [content/math/prealgebra/09-math-models-and-geometry/04-use-properties-of-rectangles-triangles-and-trapezoids.md](../../content/math/prealgebra/09-math-models-and-geometry/04-use-properties-of-rectangles-triangles-and-trapezoids.md)
 
 Module `m81332`; markup-or-metadata-only. Changed lanes: raw XML only.
 
 
-### prealgebra 11.2 — [content/math/prealgebra/11-graphs/02-graphing-linear-equations.md](../content/math/prealgebra/11-graphs/02-graphing-linear-equations.md)
+### prealgebra 11.2 — [content/math/prealgebra/11-graphs/02-graphing-linear-equations.md](../../content/math/prealgebra/11-graphs/02-graphing-linear-equations.md)
 
 Module `m81345`; content-changed. Changed lanes: instructionalText.
 
 
-### prealgebra 11.4 — [content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md](../content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md)
+### prealgebra 11.4 — [content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md](../../content/math/prealgebra/11-graphs/04-understand-slope-of-a-line.md)
 
 Module `m81354`; markup-or-metadata-only. Changed lanes: raw XML only.
 
 
-### precalculus 1.5 — [content/math/precalculus/01-functions/05-transformation-of-functions.md](../content/math/precalculus/01-functions/05-transformation-of-functions.md)
+### precalculus 1.5 — [content/math/precalculus/01-functions/05-transformation-of-functions.md](../../content/math/precalculus/01-functions/05-transformation-of-functions.md)
 
 Module `m49312`; markup-or-metadata-only. Changed lanes: raw XML only.
 
 
-### precalculus 3.3 — [content/math/precalculus/03-polynomial-and-rational-functions/03-power-functions-and-polynomial-functions.md](../content/math/precalculus/03-polynomial-and-rational-functions/03-power-functions-and-polynomial-functions.md)
+### precalculus 3.3 — [content/math/precalculus/03-polynomial-and-rational-functions/03-power-functions-and-polynomial-functions.md](../../content/math/precalculus/03-polynomial-and-rational-functions/03-power-functions-and-polynomial-functions.md)
 
 Module `m49346`; content-changed. Changed lanes: instructionalText.
 
 
-### precalculus 3.4 — [content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md](../content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md)
+### precalculus 3.4 — [content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md](../../content/math/precalculus/03-polynomial-and-rational-functions/04-graphs-of-polynomial-functions.md)
 
 Module `m49347`; content-changed. Changed lanes: instructionalText.
 
 Decision: **retain-local-equivalent.** Between the inferred PDF-era commit d1bd19c6 and the pinned review commit 789b5409, upstream changed this Try It's prompt from 'the function of degree 7' to 'degree 9' and updated nothing else. The edit contradicts the exercise's own printed solution, which gives a zero of -5 with multiplicity 3, a zero of -1 with multiplicity 2, and a zero of 3 with multiplicity 2 — summing to 7, not 9 — and it contradicts the figure's own alt text, which says 'degree 6'. Three different degrees now appear in one exercise. The PDF-era 'degree 7' is the reading consistent with the solution, with the drawn curve, and with the multiplicity arithmetic the exercise is teaching, so the local page retains it and carries a visible source note. Logged upstream in docs/openstax-errata.md. Do not apply the pinned commit's '9' in a later audit without upstream also fixing the solution.
 
 
-### precalculus 3.6 — [content/math/precalculus/03-polynomial-and-rational-functions/06-zeros-of-polynomial-functions.md](../content/math/precalculus/03-polynomial-and-rational-functions/06-zeros-of-polynomial-functions.md)
+### precalculus 3.6 — [content/math/precalculus/03-polynomial-and-rational-functions/06-zeros-of-polynomial-functions.md](../../content/math/precalculus/03-polynomial-and-rational-functions/06-zeros-of-polynomial-functions.md)
 
 Module `m49349`; content-changed. Changed lanes: instructionalText.
 
 
-### precalculus 4.4 — [content/math/precalculus/04-exponential-and-logarithmic-functions/04-graphs-of-logarithmic-functions.md](../content/math/precalculus/04-exponential-and-logarithmic-functions/04-graphs-of-logarithmic-functions.md)
+### precalculus 4.4 — [content/math/precalculus/04-exponential-and-logarithmic-functions/04-graphs-of-logarithmic-functions.md](../../content/math/precalculus/04-exponential-and-logarithmic-functions/04-graphs-of-logarithmic-functions.md)
 
 Module `m49364`; content-changed. Changed lanes: instructionalText.
+
+
+### precalculus 8.4 — [content/math/precalculus/08-further-applications-of-trigonometry/04-polar-coordinates-graphs.md](../../content/math/precalculus/08-further-applications-of-trigonometry/04-polar-coordinates-graphs.md)
+
+Module `m49407`; markup-or-metadata-only. Changed lanes: raw XML only.
+
+
+### precalculus 11.5 — [content/math/precalculus/11-sequences-probability-and-counting-theory/05-counting-principles.md](../../content/math/precalculus/11-sequences-probability-and-counting-theory/05-counting-principles.md)
+
+Module `m49448`; content-changed. Changed lanes: instructionalText.
+
+
+### precalculus 12.3 — [content/math/precalculus/12-introduction-to-calculus/03-continuity.md](../../content/math/precalculus/12-introduction-to-calculus/03-continuity.md)
+
+Module `m49454`; content-changed. Changed lanes: instructionalText.
 
 

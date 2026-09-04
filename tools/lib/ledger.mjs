@@ -1,88 +1,25 @@
 /**
- * The scaffolding both adjudication ledgers are built from.
+ * The scaffolding the answer ledger is built from: a hash-keyed JSON file, a
+ * `merge` that folds a batch of result files and refuses the whole batch on
+ * a conflicting decision, a `prune` that retires records stranded by an
+ * edit, and `--shard i/n` so a reading pass can be split.
  *
- * `answer-ledger.mjs` records that a reading pass re-derived an exercise's
- * answer; `graphplot-conversion.mjs` records whether a graph-topic exercise
- * should become an interactive graphplot. Different verdicts, same machine:
- * a hash-keyed JSON file, a `merge` that folds a batch of result files and
- * refuses the whole batch on a conflicting decision, a `prune` that retires
- * records stranded by an edit, and `--shard i/n` so a reading pass can be
- * split.
- *
- * That machine used to exist TWICE, character for character apart from the
- * path constant. The merge contract is the part that hurts: it was corrected
- * once already (comparing the mode as well as the verdict, so file order
- * could not silently pick an answer form), and a correction applied to one
- * copy and not the other leaves the two queues quietly disagreeing about what
- * counts as a conflict. One copy, parameterized by path and record shape.
+ * It is parameterized by path and record shape because a second ledger (the
+ * graphplot-conversion queue, retired once every entry was adjudicated)
+ * once shared it — and before that the machine existed TWICE, character for
+ * character apart from the path constant, with the merge contract corrected
+ * in one copy and not the other. Keep it one copy: a future adjudication
+ * queue plugs in here rather than forking it.
  */
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
 /**
- * The command line, parsed rather than positionally assumed — the same lesson
- * `parseReplayArgs` records: a flag's VALUE is not a positional argument.
- * `graphplot-conversion.mjs candidates --shard 1/4` filtered out only tokens
- * beginning with `--`, so '1/4' became `positional[0]` and therefore the
- * content root, and the run died on `ENOENT: scandir '1/4'` — a path the
- * caller never typed, for an argument documented as optional.
- *
- * Unknown flags are an error rather than a silently ignored boolean, so a
- * misspelled `--verdcit convert` cannot look like a clean empty result.
- */
-export function parseLedgerArgs(argv, { commands, valueFlags = [], boolFlags = [] }) {
-  const wantsValue = new Set([...valueFlags, 'ledger']);
-  const known = new Set([...wantsValue, ...boolFlags]);
-  const command = argv[0];
-  if (!command || !commands.includes(command)) {
-    throw new Error(`command must be one of: ${commands.join(', ')}`);
-  }
-  const positional = [];
-  const flags = new Map();
-  for (let i = 1; i < argv.length; i += 1) {
-    const token = argv[i];
-    if (!token.startsWith('--')) {
-      positional.push(token);
-      continue;
-    }
-    const eq = token.indexOf('=');
-    const name = eq === -1 ? token.slice(2) : token.slice(2, eq);
-    if (!known.has(name)) throw new Error(`unknown flag --${name}`);
-    if (eq !== -1) {
-      flags.set(name, token.slice(eq + 1));
-      continue;
-    }
-    if (!wantsValue.has(name)) {
-      flags.set(name, true);
-      continue;
-    }
-    const value = argv[i + 1];
-    if (value === undefined || value.startsWith('--')) {
-      throw new Error(`--${name} needs a value`);
-    }
-    flags.set(name, value);
-    i += 1;
-  }
-  return {
-    command,
-    positional,
-    flag: (name) => (flags.has(name) ? flags.get(name) : null),
-    bool: (name) => flags.get(name) === true,
-  };
-}
-
-/**
  * Read a ledger. `required` is the difference between "there is no queue yet"
- * and "the queue is GONE", which is not a distinction to leave to inference.
- *
- * The graphplot-conversion ledger was never committed: `readConversionLedger`
- * fell back to an empty ledger, so `stats` reported "0 adjudicated, 335
- * unread" and `list --verdict convert` printed `[]` — both indistinguishable
- * from a queue nobody had started, while every recorded convert/keep verdict
- * from the reading pass was gone. A tool whose whole purpose is durability
- * must not report the absence of its own storage as a clean empty result. So
- * the commands that READ a queue insist the file exists; only `merge`, which
- * creates it, does not.
+ * and "the queue is GONE", which is not a distinction to leave to inference:
+ * a tool whose whole purpose is durability must not report the absence of
+ * its own storage as a clean empty result. The commands that READ a ledger
+ * insist the file exists; only `merge`, which creates it, does not.
  */
 export function readLedger(path, { required = false } = {}) {
   if (!existsSync(path)) {

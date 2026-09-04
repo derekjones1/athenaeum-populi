@@ -67,6 +67,7 @@
  * skip. Usage: node tools/verify/verify-replay.mjs [content-root]
  */
 import { readFileSync } from 'node:fs';
+import { integerFlag, parseCliArgs } from '../lib/cli.mjs';
 import { relative } from 'node:path';
 import { availableParallelism } from 'node:os';
 import { execFile } from 'node:child_process';
@@ -267,29 +268,11 @@ function replayFile(file) {
  * bumped without being read, which is how a ratchet becomes a rubber stamp.
  */
 export function parseReplayArgs(argv) {
-  let root = null;
-  let minReplayed = null;
-  let file = null;
-  for (let i = 0; i < argv.length; i += 1) {
-    const arg = argv[i];
-    if (arg === '--file') {
-      file = argv[i + 1] ?? null;
-      i += 1;
-    } else if (arg.startsWith('--min-replayed')) {
-      const written = arg.includes('=') ? arg.slice(arg.indexOf('=') + 1) : argv[++i];
-      if (!/^\d+$/.test(String(written ?? ''))) {
-        throw new Error(`--min-replayed needs a whole number, got ${JSON.stringify(written ?? null)}`);
-      }
-      minReplayed = Number(written);
-    } else if (arg.startsWith('--')) {
-      throw new Error(`unknown option ${JSON.stringify(arg)} (usage: verify-replay.mjs [content-root] [--min-replayed N])`);
-    } else if (root === null) {
-      root = arg;
-    } else {
-      throw new Error(`unexpected argument ${JSON.stringify(arg)} (the content root is already ${JSON.stringify(root)})`);
-    }
-  }
-  return { root: root ?? 'content', minReplayed, file };
+  const cli = parseCliArgs(argv, {
+    valueFlags: ['min-replayed', 'file'],
+    positional: { max: 1, name: 'content root' },
+  });
+  return { root: cli.positional[0] ?? 'content', minReplayed: integerFlag(cli, 'min-replayed'), file: cli.flag('file') };
 }
 
 async function orchestrate({ root, minReplayed }) {

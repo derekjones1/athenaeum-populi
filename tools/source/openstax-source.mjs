@@ -53,7 +53,10 @@ checkout location and therefore needs exactly one --bundle.
 
 The audit never rewrites content pages. The build-map command only refreshes
 data/openstax/source-map.json and is intended for reviewed source-lock
-updates; it always rebuilds every bundle so the committed map stays complete.`);
+updates and for authoring that adds mapped sections; it always rebuilds every
+bundle so the committed map stays complete. With every book complete, a run
+is a no-op unless the map is stale — verify-map (npm run source:verify) is
+the routine check.`);
 }
 
 function parseArguments(argv) {

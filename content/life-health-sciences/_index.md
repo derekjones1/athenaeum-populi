@@ -6,8 +6,6 @@ toc: false
 # you open a book), matching the Math shelf.
 sidebar:
   hide: true
-aliases:
-  - /biology/
 ---
 
 The life sciences shelf opens with a full college biology course and will

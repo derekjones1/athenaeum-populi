@@ -18,10 +18,17 @@
 import { readFileSync } from 'node:fs';
 import katex from 'katex';
 import { lintHugo } from './lints.mjs';
+import { parseCliArgs } from '../lib/cli.mjs';
 import { mathSpans, walkMarkdown } from '../lib/content.mjs';
 
-const args = process.argv.slice(2);
-const root = args.find((a) => !a.startsWith('--')) || 'content';
+let root;
+try {
+  root = parseCliArgs(process.argv.slice(2), { positional: { max: 1, name: 'content root' } }).positional[0] ?? 'content';
+} catch (error) {
+  console.error(`lint-all: ${error.message}`);
+  console.error('usage: node tools/lint/lint-all.mjs [content-root]');
+  process.exit(2);
+}
 
 let errors = 0, files = 0;
 for (const f of walkMarkdown(root)) {

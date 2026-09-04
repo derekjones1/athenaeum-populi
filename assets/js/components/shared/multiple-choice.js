@@ -22,13 +22,13 @@
  */
 import { engineUrl } from '@params';
 import { plainMathText, speakableMathText } from '../../lib/shared/speakable-label.mjs';
+import { hintSlotHTML, mountHintToggle } from '../../lib/shared/hint-toggle.mjs';
+import { TONE } from '../../lib/shared/colors.mjs';
 
-// The `--ap-*` fallback hexes below duplicate assets/css/custom.css, which is
-// the source of truth for the palette. They exist only for the moment before
-// the stylesheet applies; keep them in step with custom.css when it changes.
+// Status → shared feedback tone (colors.mjs owns the palette fallbacks).
 const COLOR = {
-  correct: 'var(--ap-success, #1a7f37)',
-  incorrect: 'var(--ap-error, #b42318)',
+  correct: TONE.success,
+  incorrect: TONE.error,
 };
 
 // How long the options may stay in their server-rendered `disabled` state
@@ -42,7 +42,6 @@ const COLOR = {
 // interval (playwright.config.mjs `expect.timeout`, helpers.mjs' focus polls).
 const LABEL_GATE_MS = 10_000;
 
-let hintSequence = 0;
 
 class MultipleChoiceElement extends HTMLElement {
   connectedCallback() {
@@ -105,27 +104,7 @@ class MultipleChoiceElement extends HTMLElement {
     }
 
     const hintTpl = this.querySelector('template[data-slot="hint"]');
-    if (hintTpl) {
-      const hintId = `ap-mc-hint-${++hintSequence}`;
-      const hintBtn = document.createElement('button');
-      hintBtn.type = 'button';
-      hintBtn.className = 'ap-fillin-hint-toggle';
-      hintBtn.textContent = 'Show hint';
-      hintBtn.setAttribute('aria-expanded', 'false');
-      hintBtn.setAttribute('aria-controls', hintId);
-      const hint = document.createElement('p');
-      hint.id = hintId;
-      hint.className = 'ap-fillin-hint';
-      hint.hidden = true;
-      hint.innerHTML = hintTpl.innerHTML;
-      hintBtn.addEventListener('click', () => {
-        const show = hint.hidden;
-        hint.hidden = !show;
-        hintBtn.textContent = show ? 'Hide hint' : 'Show hint';
-        hintBtn.setAttribute('aria-expanded', String(show));
-      });
-      wrap.append(hintBtn, hint);
-    }
+    mountHintToggle(wrap, hintSlotHTML(this));
   }
 
   /**

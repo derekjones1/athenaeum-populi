@@ -587,6 +587,12 @@ function markdownPlainText(markdown) {
     .replace(/<[^>]+>/g, ' ')
     .replace(/\\(?:tfrac|frac|dfrac|cfrac)\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g, ' $1 over $2 ')
     .replace(/\\text\{([^{}]*)\}/g, ' $1 ')
+    // A named function or operator IS a word of the objective ("Analyze the
+    // graph of y=tan x"): keep its name before the macro sweep below erases
+    // it, or the objective can never be located in a page that sets it in
+    // KaTeX — precalculus 6.2's two tan objectives audited at 75–80% for a
+    // year on exactly this.
+    .replace(/\\(sin|cos|tan|sec|csc|cot|arcsin|arccos|arctan|sinh|cosh|tanh|ln|log|exp)\b/g, ' $1 ')
     .replace(/\\[A-Za-z]+\*?/g, ' ')
     .replace(/[`*_~#$|>{}\[\]()]/g, ' '));
 }

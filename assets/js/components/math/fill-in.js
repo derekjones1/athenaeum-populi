@@ -23,8 +23,10 @@
  */
 import { engineUrl } from '@params';
 import { plainMathText, speakableMathText } from '../../lib/shared/speakable-label.mjs';
+import { mountHintToggle } from '../../lib/shared/hint-toggle.mjs';
+import { TONE } from '../../lib/shared/colors.mjs';
+import { focusGuard } from '../../lib/shared/focus.mjs';
 
-let hintSequence = 0;
 
 const MESSAGES = {
   idle: '',
@@ -37,15 +39,13 @@ const MESSAGES = {
   // `correct` is built per-instance (may include the answerDisplay).
 };
 
-// The `--ap-*` fallback hexes below duplicate assets/css/custom.css, which is
-// the source of truth for the palette. They exist only for the moment before
-// the stylesheet applies; keep them in step with custom.css when it changes.
+// Status → shared feedback tone (colors.mjs owns the palette fallbacks).
 const COLOR = {
-  correct: 'var(--ap-success, #1a7f37)',
-  incorrect: 'var(--ap-error, #b42318)',
-  invalid: 'var(--ap-error, #b42318)',
-  form: 'var(--ap-warning, #9a6700)',
-  empty: 'var(--ap-muted, #6f6e69)',
+  correct: TONE.success,
+  incorrect: TONE.error,
+  invalid: TONE.error,
+  form: TONE.warning,
+  empty: TONE.muted,
 };
 
 class FillInElement extends HTMLElement {
@@ -118,29 +118,8 @@ class FillInElement extends HTMLElement {
     wrap.append(form, feedback);
 
     // --- optional hint toggle --------------------------------------------
-    if (this.hintHTML) {
-      const hintId = `ap-fillin-hint-${++hintSequence}`;
-      const hintBtn = document.createElement('button');
-      hintBtn.type = 'button';
-      hintBtn.className = 'ap-fillin-hint-toggle';
-      hintBtn.textContent = 'Show hint';
-      hintBtn.setAttribute('aria-expanded', 'false');
-      hintBtn.setAttribute('aria-controls', hintId);
-
-      const hint = document.createElement('p');
-      hint.id = hintId;
-      hint.className = 'ap-fillin-hint';
-      hint.hidden = true;
-      hint.innerHTML = this.hintHTML;
-
-      hintBtn.addEventListener('click', () => {
-        const show = hint.hidden;
-        hint.hidden = !show;
-        hintBtn.textContent = show ? 'Hide hint' : 'Show hint';
-        hintBtn.setAttribute('aria-expanded', String(show));
-      });
-      wrap.append(hintBtn, hint);
-    }
+    // --- optional hint toggle (shared; see lib/shared/hint-toggle.mjs) ----
+    mountHintToggle(wrap, this.hintHTML);
 
     form.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -296,23 +275,15 @@ class FillInElement extends HTMLElement {
     this.status = status;
     if (status === 'correct') {
       this.done = true;
-      // Locking the field (or disabling the button) while focus is ANYWHERE
-      // inside the component drops focus to <body>, stranding a keyboard or
-      // screen-reader user at the top of the document right after they
-      // succeed. An Enter-key submission leaves focus on the math-field host
-      // (MathLive's shadow sink), not the button, so test containment — not
-      // just the button — and capture it BEFORE readonly/lock tears the
-      // focused sink down.
-      const hadFocus = this.contains(document.activeElement);
+      // Capture focus containment BEFORE readonly/lock tears the focused
+      // MathLive sink down, then hand focus to the verdict (focus.mjs).
+      const restoreFocus = focusGuard(this);
       this.field.setAttribute('readonly', '');
       this._lockFieldForDisplay();
       this.feedback.innerHTML = this.answerDisplayHTML
         ? `Correct — ${this.answerDisplayHTML}.`
         : 'Correct!';
-      if (hadFocus) {
-        this.feedback.setAttribute('tabindex', '-1');
-        this.feedback.focus();
-      }
+      restoreFocus(this.feedback);
       this.button.disabled = true;
     } else {
       this.feedback.textContent = (status === 'form' && formMessage) || MESSAGES[status] || '';

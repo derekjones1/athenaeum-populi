@@ -36,9 +36,10 @@
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { relative, resolve } from 'node:path';
-import { walkMarkdown, shortcodes, blankPreservingOffsets } from '../lib/content.mjs';
+import { parseCliArgs } from '../lib/cli.mjs';
+import { maskCode, shortcodes, walkMarkdown } from '../lib/content.mjs';
 import {
-  mergeResults, parseLedgerArgs, pruneLedger, readLedger as readLedgerAt, shardSlice,
+  mergeResults, pruneLedger, readLedger as readLedgerAt, shardSlice,
 } from '../lib/ledger.mjs';
 
 export const LEDGER_PATH = 'data/verification/answer-ledger.json';
@@ -78,9 +79,7 @@ export function extractExercises(root) {
     const source = readFileSync(file, 'utf8');
     // Code fences are documentation ABOUT shortcodes, not exercises. Blank
     // them in place so line numbers stay true to the file.
-    const cleaned = source
-      .replace(/```[\s\S]*?```/g, blankPreservingOffsets)
-      .replace(/`[^`\n]*`/g, blankPreservingOffsets);
+    const cleaned = maskCode(source);
     for (const kind of EXERCISE_KINDS) {
       for (const sc of shortcodes(cleaned, kind)) {
         const raw = cleaned.slice(sc.index, sc.end);
@@ -112,9 +111,9 @@ function usage(detail) {
 function main() {
   let cli;
   try {
-    cli = parseLedgerArgs(process.argv.slice(2), {
+    cli = parseCliArgs(process.argv.slice(2), {
       commands: ['check', 'list', 'merge', 'prune', 'stats'],
-      valueFlags: ['kind', 'verdict', 'shard', 'context', 'min-exercises', 'max-unverifiable', 'require-solved'],
+      valueFlags: ['kind', 'verdict', 'shard', 'context', 'min-exercises', 'max-unverifiable', 'require-solved', 'ledger'],
       boolFlags: ['unverified'],
     });
   } catch (error) {

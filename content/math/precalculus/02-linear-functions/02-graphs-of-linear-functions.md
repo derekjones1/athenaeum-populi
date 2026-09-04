@@ -1062,6 +1062,21 @@ negative reciprocals of each other.
 {"answer":{"y":3,"plotPoints":3},"grid":{"xMin":-8,"xMax":8,"yMin":-8,"yMax":8}}
 {{< /graphplot >}}
 
+{{< multiplechoice
+  question="Which graph shows the linear function $f(x)=3x+2$?"
+  mode="graph"
+  answerIndex="2"
+  hint="Read the slope and the $y$-intercept from $f(x)=3x+2$: the line crosses the $y$-axis at $(0,2)$ and rises $3$ units for every $1$ unit to the right."
+>}}
+{"ariaLabel":"A line falling from left to right through (negative 1, 2), (0, negative 1), and (1, negative 4).","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"xTickStep":2,"yTickStep":2,"lines":[{"slope":-3,"intercept":-1}]}
+===OPT===
+{"ariaLabel":"A line rising from left to right through (negative 2, 0), (0, 2), and (2, 4).","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"xTickStep":2,"yTickStep":2,"lines":[{"slope":1,"intercept":2}]}
+===OPT===
+{"ariaLabel":"A line rising from left to right through (negative 1, negative 1), (0, 2), and (1, 5).","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"xTickStep":2,"yTickStep":2,"lines":[{"slope":3,"intercept":2}]}
+===OPT===
+{"ariaLabel":"A horizontal line through (0, 2).","xMin":-8,"xMax":8,"yMin":-8,"yMax":8,"tickLabels":true,"xTickStep":2,"yTickStep":2,"lines":[{"y":2}]}
+{{< /multiplechoice >}}
+
 ### Write the equation for a linear function from the graph of a line
 
 {{< apfigure kind="graph" >}}

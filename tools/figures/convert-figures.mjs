@@ -29,9 +29,10 @@
  * any figure shows geometry drift or fails to build, so the conversion of a
  * whole chapter can be gated on it.
  */
-import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs'
-import { join } from 'node:path'
+import { readFileSync, writeFileSync } from 'node:fs'
 import { toSvgString, buildGraph, buildNumberLine, buildFigure } from '../../assets/js/lib/math/graph-core.mjs'
+import { parseCliArgs } from '../lib/cli.mjs'
+import { walkMarkdown } from '../lib/content.mjs'
 import { openTagSource, htmlAttribute, decodeHtmlEntities } from '../lib/html.mjs'
 
 const BUILDERS = { graph: buildGraph, numberline: buildNumberLine, figure: buildFigure }
@@ -350,16 +351,7 @@ export function convertPage(src) {
 }
 
 // ---------------------------------------------------------------------------
-const mdFiles = (root) => {
-  if (statSync(root).isFile()) return [root]
-  const out = []
-  for (const name of readdirSync(root)) {
-    const p = join(root, name)
-    if (statSync(p).isDirectory()) out.push(...mdFiles(p))
-    else if (name.endsWith('.md')) out.push(p)
-  }
-  return out.sort()
-}
+const mdFiles = (root) => walkMarkdown(root)
 
 const MARK = { identical: '=', label: '~', gapped: '~', geometry: '!!', error: 'xx' }
 
@@ -419,15 +411,23 @@ function tidyPins(roots, dryRun) {
 }
 
 function main(argv) {
-  const dryRun = argv.includes('--dry-run')
-  const galleryIx = argv.indexOf('--gallery')
-  const galleryPath = galleryIx >= 0 ? argv[galleryIx + 1] : null
-  const roots = argv.filter((a, i) => !a.startsWith('--') && (galleryIx < 0 || i !== galleryIx + 1))
-  if (!roots.length) {
-    console.error('usage: node tools/figures/convert-figures.mjs [--dry-run] [--tidy-pins] [--gallery out.html] <path…>')
+  const usage = 'usage: node tools/figures/convert-figures.mjs [--dry-run] [--tidy-pins] [--gallery out.html] <path…>'
+  let cli
+  try {
+    cli = parseCliArgs(argv, { boolFlags: ['dry-run', 'tidy-pins'], valueFlags: ['gallery'] })
+  } catch (error) {
+    console.error(`convert-figures: ${error.message}`)
+    console.error(usage)
     return 2
   }
-  if (argv.includes('--tidy-pins')) return tidyPins(roots, dryRun)
+  const dryRun = cli.bool('dry-run')
+  const galleryPath = cli.flag('gallery')
+  const roots = cli.positional
+  if (!roots.length) {
+    console.error(usage)
+    return 2
+  }
+  if (cli.bool('tidy-pins')) return tidyPins(roots, dryRun)
   let converted = 0, bad = 0
   const drifted = []
   for (const file of roots.flatMap(mdFiles)) {

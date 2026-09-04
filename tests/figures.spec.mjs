@@ -161,7 +161,10 @@ test('legacy pasted figures still render their SVG untouched', async ({ page }) 
   // build tree once per legacy route inside a filter.
   const specFirst = new Set(routesContaining('<ap-figure'));
   const legacy = routesContaining('data-spec').filter((r) => !specFirst.has(r));
-  expect(legacy.length).toBeGreaterThan(0);
+  // The queue burns down page by page (`npm run figures:status`); once no
+  // legacy-only page remains this test has nothing to open, and should be
+  // deleted with the last conversion rather than asserting the backlog.
+  test.skip(legacy.length === 0, 'no legacy-only figure page remains — delete this test with the last conversion');
   await gotoBuiltPage(page, legacy[0]);
   expect(await page.locator('div.ap-figure svg').count()).toBeGreaterThan(0);
 });

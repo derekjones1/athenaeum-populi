@@ -1,9 +1,9 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFileSync } from 'node:fs';
-import { sep, relative } from 'node:path';
-import { walkMarkdown, shortcodes } from '../lib/content.mjs';
-import { unescapeParamValue } from '../lib/content.mjs';
+import {
+  bookKeyOf, shortcodes, unescapeParamValue, walkMarkdown,
+} from '../lib/content.mjs';
 
 /**
  * Correct-answer position must stay near uniform across the corpus.
@@ -30,17 +30,15 @@ function collect(root) {
   const perBook = new Map();
   const all = { counts: [0, 0, 0, 0], expected: [0, 0, 0, 0], n: 0 };
   for (const file of walkMarkdown(root)) {
-    // Segment 0 of the root-relative path is the SHELF
-    // (math/life-health-sciences/…); segment 1 is the BOOK. The key is
-    // "shelf/book" together, not book alone, since a book name is only
-    // unique within its shelf. Segment 2 would be a chapter directory, which
-    // once (when segment 0 alone was the book, under content/math) silently
-    // made the per-book test a per-chapter test over only the three chapters
-    // with ≥50 questions. A page shallower than shelf/book/… (a shelf or
-    // site landing page) has no book to key by and is skipped.
-    const segments = relative(root, file).split(sep);
-    if (segments.length < 3) continue;
-    const book = `${segments[0]}/${segments[1]}`;
+    // Keyed "shelf/book" — the same derivation the lint's per-book rules use
+    // — not book alone, since a book name is only unique within its shelf,
+    // and never a chapter, which once (when the book was the first segment
+    // under content/math) silently made this a per-chapter test over only
+    // the three chapters with ≥50 questions. A page shallower than
+    // shelf/book/… (a shelf or site landing page) has no book to key by and
+    // is skipped.
+    const book = bookKeyOf(file);
+    if (!book) continue;
     const src = readFileSync(file, 'utf8');
     const choiceShortcodes = [...shortcodes(src, 'multiplechoice')]
       .filter((sc) => (sc.params.mode || 'text') !== 'graph');

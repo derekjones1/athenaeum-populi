@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import test from 'node:test';
 import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { basename, dirname, join } from 'node:path';
@@ -18,79 +19,81 @@ function check() {
   return spawnSync(process.execPath, [tool.pathname, fixture], { encoding: 'utf8' });
 }
 
-try {
-  write('index.html', '<main id="content"><a href="/chapter/#part">Chapter</a><a href="https://openstax.org/">Source</a><a href="mailto:reader@example.test">Email</a><video poster="/media/poster.bin"></video><img srcset="/media/a.bin 1x, /media/b.bin 2x"></main>');
-  write('chapter/index.html', '<h2 id="part">Part</h2>');
-  write('media/poster.bin');
-  write('media/a.bin');
-  write('media/b.bin');
-  assert.equal(check().status, 0, 'valid href, poster, and srcset references should pass');
+test('internal links: extended URL attributes and unsafe protocols covered', () => {
+  try {
+    write('index.html', '<main id="content"><a href="/chapter/#part">Chapter</a><a href="https://openstax.org/">Source</a><a href="mailto:reader@example.test">Email</a><video poster="/media/poster.bin"></video><img srcset="/media/a.bin 1x, /media/b.bin 2x"></main>');
+    write('chapter/index.html', '<h2 id="part">Part</h2>');
+    write('media/poster.bin');
+    write('media/a.bin');
+    write('media/b.bin');
+    assert.equal(check().status, 0, 'valid href, poster, and srcset references should pass');
 
-  write('index.html', '<main id="content"><form action="/missing-submit/"></form></main>');
-  assert.match(check().stderr, /missing \/missing-submit\//, 'form actions must be checked');
+    write('index.html', '<main id="content"><form action="/missing-submit/"></form></main>');
+    assert.match(check().stderr, /missing \/missing-submit\//, 'form actions must be checked');
 
-  write('index.html', '<main id="content"><video poster="/missing-poster.bin"></video></main>');
-  assert.match(check().stderr, /missing \/missing-poster\.bin/, 'poster URLs must be checked');
+    write('index.html', '<main id="content"><video poster="/missing-poster.bin"></video></main>');
+    assert.match(check().stderr, /missing \/missing-poster\.bin/, 'poster URLs must be checked');
 
-  write('index.html', '<main id="content"><img srcset="/media/a.bin 1x, /missing-2x.bin 2x"></main>');
-  assert.match(check().stderr, /missing \/missing-2x\.bin/, 'every srcset candidate must be checked');
+    write('index.html', '<main id="content"><img srcset="/media/a.bin 1x, /missing-2x.bin 2x"></main>');
+    assert.match(check().stderr, /missing \/missing-2x\.bin/, 'every srcset candidate must be checked');
 
-  write('index.html', '<main id="content"><a href="javascript:alert(1)">Unsafe</a></main>');
-  assert.match(check().stderr, /forbidden or unsupported javascript:/, 'javascript URLs must fail');
+    write('index.html', '<main id="content"><a href="javascript:alert(1)">Unsafe</a></main>');
+    assert.match(check().stderr, /forbidden or unsupported javascript:/, 'javascript URLs must fail');
 
-  write('index.html', '<main id="content"><a href=" \tjava\nscript:alert(1)">Unsafe</a></main>');
-  assert.match(
-    check().stderr,
-    /forbidden or unsupported javascript:/,
-    'WHATWG normalization must happen before scheme validation',
-  );
-
-  write('index.html', '<main id="content"><a href="&Tab;javascript&colon;alert(1)">Unsafe</a></main>');
-  assert.match(
-    check().stderr,
-    /forbidden or unsupported javascript:/,
-    'HTML character references must not disguise an active scheme',
-  );
-
-  for (const scheme of ['data:text/html,unsafe', 'blob:https://athenaeumpopuli.org/id', 'file:///etc/passwd']) {
-    write('index.html', `<main id="content"><a href="${scheme}">Unsupported</a></main>`);
+    write('index.html', '<main id="content"><a href=" \tjava\nscript:alert(1)">Unsafe</a></main>');
     assert.match(
       check().stderr,
-      /forbidden or unsupported/,
-      `${scheme.split(':', 1)[0]} URLs must not bypass the active-URL policy`,
+      /forbidden or unsupported javascript:/,
+      'WHATWG normalization must happen before scheme validation',
     );
+
+    write('index.html', '<main id="content"><a href="&Tab;javascript&colon;alert(1)">Unsafe</a></main>');
+    assert.match(
+      check().stderr,
+      /forbidden or unsupported javascript:/,
+      'HTML character references must not disguise an active scheme',
+    );
+
+    for (const scheme of ['data:text/html,unsafe', 'blob:https://athenaeumpopuli.org/id', 'file:///etc/passwd']) {
+      write('index.html', `<main id="content"><a href="${scheme}">Unsupported</a></main>`);
+      assert.match(
+        check().stderr,
+        /forbidden or unsupported/,
+        `${scheme.split(':', 1)[0]} URLs must not bypass the active-URL policy`,
+      );
+    }
+
+    // Typed image-set(): the type("image/avif") MIME string is metadata, not a
+    // path, and candidates after it must still be inspected. A [^)]*-based
+    // capture false-failed the valid declaration and never saw the second
+    // candidate.
+    write('index.html', '<main id="content"><p>Semantic content.</p></main>');
+    write('img/example.avif');
+    write('img/example.webp');
+    write('css/site.css', '.hero{background-image:image-set("/img/example.avif" type("image/avif") 1x, "/img/example.webp" type("image/webp") 2x)}');
+    assert.equal(check().status, 0, 'a valid typed image-set must pass, with type() MIME strings ignored');
+
+    write('css/site.css', '.hero{background-image:image-set("/img/example.avif" type("image/avif") 1x, "/img/missing.webp" type("image/webp") 2x)}');
+    assert.match(check().stderr, /missing CSS url target \/img\/missing\.webp/, 'the candidate AFTER a type() clause must still be checked');
+
+    write('css/site.css', '.hero{background-image:-webkit-image-set("/img/missing.avif" 1x)}');
+    assert.match(check().stderr, /missing CSS url target \/img\/missing\.avif/, '-webkit-image-set string candidates must be checked');
+    rmSync(join(fixture, 'css'), { recursive: true, force: true });
+
+    writeFileSync(outside, 'outside the build root');
+    write(
+      'index.html',
+      `<main id="content"><a href="/..%2f${basename(outside)}">Traversal</a></main>`,
+    );
+    assert.match(
+      check().stderr,
+      /target escapes the build root/,
+      'percent-encoded separators must not resolve to files outside the build root',
+    );
+  } finally {
+    rmSync(fixture, { recursive: true, force: true });
+    rmSync(outside, { force: true });
   }
 
-  // Typed image-set(): the type("image/avif") MIME string is metadata, not a
-  // path, and candidates after it must still be inspected. A [^)]*-based
-  // capture false-failed the valid declaration and never saw the second
-  // candidate.
-  write('index.html', '<main id="content"><p>Semantic content.</p></main>');
-  write('img/example.avif');
-  write('img/example.webp');
-  write('css/site.css', '.hero{background-image:image-set("/img/example.avif" type("image/avif") 1x, "/img/example.webp" type("image/webp") 2x)}');
-  assert.equal(check().status, 0, 'a valid typed image-set must pass, with type() MIME strings ignored');
-
-  write('css/site.css', '.hero{background-image:image-set("/img/example.avif" type("image/avif") 1x, "/img/missing.webp" type("image/webp") 2x)}');
-  assert.match(check().stderr, /missing CSS url target \/img\/missing\.webp/, 'the candidate AFTER a type() clause must still be checked');
-
-  write('css/site.css', '.hero{background-image:-webkit-image-set("/img/missing.avif" 1x)}');
-  assert.match(check().stderr, /missing CSS url target \/img\/missing\.avif/, '-webkit-image-set string candidates must be checked');
-  rmSync(join(fixture, 'css'), { recursive: true, force: true });
-
-  writeFileSync(outside, 'outside the build root');
-  write(
-    'index.html',
-    `<main id="content"><a href="/..%2f${basename(outside)}">Traversal</a></main>`,
-  );
-  assert.match(
-    check().stderr,
-    /target escapes the build root/,
-    'percent-encoded separators must not resolve to files outside the build root',
-  );
-} finally {
-  rmSync(fixture, { recursive: true, force: true });
-  rmSync(outside, { force: true });
-}
-
-console.log('internal links: extended URL attributes and unsafe protocols covered');
+  console.log('internal links: extended URL attributes and unsafe protocols covered');
+});

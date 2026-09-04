@@ -727,6 +727,38 @@ test('a text-in grades wrong then right, and an Enter-key submission focuses the
   ).toBe(true);
 });
 
+test('the shared hint toggle discloses a fill-in hint and a self-check hint the same way', async ({ page }) => {
+  // One implementation (assets/js/lib/shared/hint-toggle.mjs) mounts every
+  // component's "Show hint": the button names the hint it controls, flips
+  // aria-expanded, and reveals the hint paragraph — asserted on a math
+  // component and a prose one, since the six components share nothing else.
+  await gotoBuiltPage(page, '/math/prealgebra/09-math-models-and-geometry/07-solve-a-formula-for-a-specific-variable/');
+  const fillin = page.locator('fill-in[data-answer="r=d/t"]');
+  await expect(fillin).toHaveCount(1);
+  const disclose = async (card) => {
+    const toggle = card.locator('.ap-fillin-hint-toggle');
+    await expect(toggle).toHaveCount(1);
+    await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+    const hint = card.locator('.ap-fillin-hint');
+    await expect(hint).toBeHidden();
+    expect(await toggle.getAttribute('aria-controls')).toBe(await hint.getAttribute('id'));
+    await toggle.scrollIntoViewIfNeeded();
+    await toggle.click();
+    await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+    await expect(toggle).toHaveText('Hide hint');
+    await expect(hint).toBeVisible();
+    await toggle.click();
+    await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+    await expect(hint).toBeHidden();
+  };
+  await disclose(fillin);
+
+  await gotoBuiltPage(page, '/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology/');
+  const selfcheck = page.locator('self-check').first();
+  await waitForUpgrade(selfcheck, (el) => Boolean(el.querySelector('.ap-fillin-hint-toggle')));
+  await disclose(selfcheck);
+});
+
 test('a text-in accepts its alternate spelling and ignores case and a leading article', async ({ page }) => {
   await gotoBuiltPage(
     page,

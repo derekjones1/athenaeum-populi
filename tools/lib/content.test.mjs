@@ -12,8 +12,11 @@ import { tmpdir } from 'node:os';
 import { join, relative, sep } from 'node:path';
 
 import {
+  bookKeyOf,
   hasUnpairedDollar,
+  loadMediaManifests,
   malformedShortcodeParams,
+  maskCode,
   mathSpans,
   parseFrontmatter,
   shortcodeParams,
@@ -324,4 +327,63 @@ test('a code-fenced callout example does not lint as authored content', () => {
     errorsMatching('{{< callout type="info" >}}\n**Heading.**\n{{< /callout >}}', 'no explanatory content').length,
     1,
   );
+});
+
+/* ------------------------------------------------------ per-book keying */
+
+test('bookKeyOf is the one "shelf/book" derivation, for every path shape', () => {
+  // A page inside a book, however deep, and the book's own landing.
+  assert.equal(bookKeyOf('content/math/prealgebra/01-whole-numbers/01-introduction.md'), 'math/prealgebra');
+  assert.equal(bookKeyOf('content/math/prealgebra/_index.md'), 'math/prealgebra');
+  assert.equal(bookKeyOf('content/life-health-sciences/biology/knowledge-check-01-03.md'), 'life-health-sciences/biology');
+  // Absolute, `./`-prefixed, and Windows-separated spellings agree.
+  assert.equal(bookKeyOf('/repo/content/math/prealgebra/01-x/01-y.md'), 'math/prealgebra');
+  assert.equal(bookKeyOf('./content/math/prealgebra/01-x/01-y.md'), 'math/prealgebra');
+  assert.equal(bookKeyOf('content\\math\\prealgebra\\01-x\\01-y.md'), 'math/prealgebra');
+  // A shelf landing, the site landing, a page directly under a shelf, and a
+  // fragment path with no content/ segment have no book to key by.
+  assert.equal(bookKeyOf('content/math/_index.md'), '');
+  assert.equal(bookKeyOf('content/_index.md'), '');
+  assert.equal(bookKeyOf('content/test.md'), '');
+  assert.equal(bookKeyOf('fragment.md'), '');
+  assert.equal(bookKeyOf(''), '');
+});
+
+/* -------------------------------------------------------------- masking */
+
+test('maskCode blanks fences and inline spans in place, keeping every offset', () => {
+  const source = 'before `code $x$` and\n```\n$y$\n```\nafter $z$';
+  const masked = maskCode(source);
+  assert.equal(masked.length, source.length, 'offsets are preserved');
+  assert.equal(masked.split('\n').length, source.split('\n').length, 'newlines survive the mask');
+  assert.equal(masked.indexOf('$z$'), source.indexOf('$z$'), 'unmasked text keeps its position');
+  assert.doesNotMatch(masked, /\$x\$|\$y\$/, 'masked math is gone');
+});
+
+test('maskCode keeps an inline span on one line and masks SVG only when asked', () => {
+  // A stray backtick must not swallow the rest of the page.
+  const stray = 'a ` b\n$m$ c ` d';
+  assert.match(maskCode(stray), /\$m\$/, 'a backtick pair crossing a newline is not a span');
+  const svg = 'x <svg><text>$1$</text></svg> $2$';
+  assert.match(maskCode(svg), /\$1\$/, 'SVG is kept by default');
+  assert.doesNotMatch(maskCode(svg, { svg: true }), /\$1\$/, 'svg: true blanks figure markup');
+  assert.match(maskCode(svg, { svg: true }), /\$2\$/);
+  assert.equal(maskCode(svg, { svg: true }).length, svg.length);
+});
+
+/* -------------------------------------------------------- media manifests */
+
+test('loadMediaManifests reads every <book>.json, skips the rest, and treats a malformed one as absent', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'ap-lib-media-'));
+  try {
+    writeFileSync(join(dir, 'good.json'), JSON.stringify({ figures: { stem: { alt: 'x' } } }));
+    writeFileSync(join(dir, 'bad.json'), '{ not json');
+    writeFileSync(join(dir, 'notes.txt'), '{"figures":{}}');
+    const manifests = loadMediaManifests(dir);
+    assert.deepEqual([...manifests.keys()], ['good']);
+    assert.equal(manifests.get('good').figures.stem.alt, 'x');
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+  assert.equal(loadMediaManifests(join(tmpdir(), 'ap-lib-media-does-not-exist')).size, 0, 'a missing directory is an empty map');
 });

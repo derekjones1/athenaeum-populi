@@ -25,15 +25,20 @@ the active production architecture after the completed framework migration.
   and corrects only elements that measure wrong (re-probing on resize/zoom
   and font arrival, undoing itself when the engine state is healthy). The
   browser suite pins both halves: shim shipped, inert on a healthy engine,
-  and every display block's rows on the math axis.
+  and every display block's rows on the math axis. A display equation wider
+  than the article scrolls horizontally rather than painting over the rail,
+  and `assets/js/scrollable-math.js` makes exactly the blocks that overflow
+  keyboard-focusable (a scrollable region a keyboard user cannot reach fails
+  WCAG 2.1.1; the graded-state axe scans caught three on one page).
 - Static diagrams are accessible inline SVG. New figures are authored as
   graph-core spec JSON in the `apfigure` shortcode and rendered in the
   browser by the `<ap-figure>` component (measured text metrics plus a
   viewBox fit pass, so labels cannot clip); older pages still carry
   prerendered SVG with its generating `data-spec`, and both forms are
   lint-validated. Interactive practice uses the `fillin`, `multiplechoice`,
-  and `graphplot` shortcodes; graph-mode multiplechoice options may be
-  authored as the same spec JSON and render through `<ap-figure>`.
+  `graphplot`, `textin`, `selfcheck`, and `sortbins` shortcodes; graph-mode
+  multiplechoice options are authored as the same spec JSON and render
+  through `<ap-figure>`.
 
 ## Browser runtime
 
@@ -50,10 +55,11 @@ advertising, or learner-data store.
 
 ## OpenStax source provenance
 
-The completed Prealgebra 2e, Elementary Algebra 2e, and Intermediate Algebra
-2e books remain reviewed Markdown, not generated output. A committed lock and
-482-section map under `data/openstax/` connect each page to a stable CNXML
-module in the official OpenStax source repository. The upstream checkout is a
+The five completed books — Prealgebra 2e, Elementary Algebra 2e,
+Intermediate Algebra 2e, Precalculus 2e, and Biology 2e — remain reviewed
+Markdown, not generated output. A committed lock and section map under
+`data/openstax/` (`source-lock.json`, `source-map.json`) connect each page
+to a stable CNXML module in the official OpenStax source repository. The upstream checkout is a
 sparse, ignored cache under `sources/openstax/`.
 
 `npm run source:verify` validates the committed mapping without network
@@ -82,9 +88,8 @@ That sidebar renders one list for every width. Upstream Hextra emits two —
 a phone-drawer list (the top-level menu entries, with the current book's
 tree expanded beneath its shelf) hidden from md up, and a desktop list (the
 book tree alone) hidden below md — so every page shipped its book tree
-twice, ~1.26 KiB per link per copy; at 23 biology chapters that was 300 KiB
-of `<aside>` per page, growing ~2.5 KiB on every page of the book for each
-new section, and it drove both `audit-build` budgets. The override keeps
+twice, ~1.26 KiB per link per copy, and that doubled tree drove both
+`audit-build` budgets. The override keeps
 only the drawer list: the rows only the drawer shows (the other shelves,
 Home, About, the in-page heading list under the active item) carry
 `hx:md:hidden`, and the two rows that wrap the tree — the shelf entry and
@@ -96,8 +101,8 @@ The theme's `sidebar.js` needs no change: collapsible buttons still sit in
 their `<li>`, and its scroll-to-active already picks the first active item
 with a visible box. `audit-build`'s mean-chrome budget (300 KiB) is the
 gate against the tree coming back twice, and the browser suite pins the
-shape (eight units and 255 book links in the DOM on a biology page, the
-first chapter as the first visible link, one sidebar contact link).
+shape (the unit nesting on a biology page, the first chapter as the first
+visible link, one sidebar contact link).
 
 ## Media and text-answer components
 
@@ -118,15 +123,18 @@ missing from the build fails). Every other embedding form stays banned. On
 the dark theme a diagram sits on a white plate and a photo is left alone,
 driven by the manifest's kind and overridable per figure.
 
-Two components serve prose subjects beside the math ones: `<text-in>`
+Three components serve prose subjects beside the math ones: `<text-in>`
 (`layouts/shortcodes/textin.html`, `assets/js/components/text/text-in.js`),
 a plain text field graded by `assets/js/lib/text/check-text.mjs` —
 normalized exact match against the key plus an author-listed `accept` list,
-deliberately without fuzzy tolerance; and `<self-check>`
+deliberately without fuzzy tolerance; `<self-check>`
 (`selfcheck.html`, `self-check.js`), a written response with a model
-answer revealed by a native `<details>` and a self-mark that writes only a
-live region, functional without JavaScript. Both follow the fill-in's
-accessibility contract (named control before it is interactive, `role=status`
+answer and rubric revealed by a native `<details>` and a self-mark that
+writes only a live region, functional without JavaScript; and `<sort-bins>`
+(`sortbins.html`, `sort-bins.js`), a categorize-into-bins exercise graded by
+`assets/js/lib/text/check-sortbins.mjs` as the label→bin mapping, with
+partial credit and no drag — click-to-pick-up, "Place here" per bin. All
+three follow the fill-in's accessibility contract (named control before it is interactive, `role=status`
 feedback, focus retained on success, honest no-JS state) and are covered by
 the browser suite, whose axe scans also caught that Hextra's blue info
 callout fails AA for muted figure captions and its own links — fixed in
@@ -173,43 +181,34 @@ that the generated bundle loads and that representative content is indexed.
 
 ## Verification
 
-`npm test` is the repository-wide checked-source gate. It runs unit tests,
-validates the complete content hierarchy and frontmatter, verifies every
-authored page through the real answer grader and KaTeX, checks shortcode and
-graph configuration, re-derives every mechanically checkable fill-in answer
-from its own printed question (`verify:answers`), compares every prose-book
-key, textin answer, and self-check model answer to the pinned CNXML's own
-solution and glossary (`verify:source-keys`), asserts that every exercise
-carries a current answer-ledger record (`verify:ledger`), and enforces the
-current documentation and authoring rules. It also verifies the committed
-OpenStax map's integrity offline; it does not fetch upstream or run
-`source:check` or `source:history`. The one gate that reads the pinned
-CNXML itself, `verify:source-keys`, skips a bundle whose gitignored checkout
-is absent and says so — CI has no `sources/`, so that comparison is a local
-gate, run on an authoring machine before the push (the ledger and replay
-gates, which run everywhere, still hold every key to its recorded verdict).
+`npm test` is the repository-wide checked-source gate; `npm run build`
+creates a clean Hugo production build and the Pagefind index;
+`npm run check:build` verifies the built artifact (routes, links, search
+coverage and exclusions, the SEO surface, generated assets, the 20,000-file
+ceiling); and `npm run ci` composes them with the replay gate and the
+Playwright suites —
+the GitHub workflow runs exactly that script, so the pipeline is encoded
+once. What each gate contains is `package.json`'s `test`, `check:build`, and
+`ci` scripts, and AGENTS.md §Commands describes every command; this document
+keeps only the two facts that are architectural:
 
-`npm run build` creates a clean Hugo production build and the Pagefind index.
-`npm run check:build` then verifies routes, internal links, search coverage,
-the SEO surface (corpus-unique composed `<title>`s, canonicals, and the
-breadcrumb/entity JSON-LD — see `tools/build/check-seo.mjs`),
-generated assets, and the 20,000-file ceiling. `npm run test:a11y` runs
-axe-core in Chromium against representative pages in light and dark themes,
-failing on serious or critical WCAG violations. It never measures a
-dev server: Playwright builds `public/` and serves it through
-`npm run serve:public` on port 1315, and the suite refuses to run against a
-page carrying a livereload script or unloaded stylesheets. Set
-`PLAYWRIGHT_SKIP_BUILD=1` when a current build already exists, or `BASE_URL`
-to test a deployment. `npm run test:e2e` drives the grader end-to-end through
-a real MathLive field (`tests/browser-check.spec.mjs`, light scheme only —
-its checks are colour-scheme-independent), `tests/figures.spec.mjs` renders
-every page carrying a spec-first figure in both colour schemes and fails on
-any label outside its fitted viewBox, and `npm run test:browser` runs
-every Playwright suite in a single server startup. `npm run ci` combines the
-source, replay, built-artifact, and browser gates — the replay gate
-(`npm run verify:replay`) re-runs every printed question span through the
-grader so no exercise is passable by retyping its own prompt; the GitHub
-workflow runs exactly that script, so the pipeline is encoded once.
+- The one gate that reads the pinned CNXML itself, `verify:source-keys`,
+  skips a bundle whose gitignored checkout is absent and says so — CI has no
+  `sources/`, so that comparison is a local gate, run on an authoring machine
+  before the push (the ledger and replay gates, which run everywhere, still
+  hold every key to its recorded verdict).
+- The browser suites never measure a dev server: Playwright builds `public/`
+  and serves it through `npm run serve:public` on port 1315, and every spec
+  refuses a page carrying a livereload script or unloaded stylesheets. Set
+  `PLAYWRIGHT_SKIP_BUILD=1` when a current build already exists, or
+  `BASE_URL` to test a deployment. `npm run test:e2e` drives the grader
+  end-to-end through a real MathLive field (`tests/browser-check.spec.mjs`,
+  light scheme only — its checks are colour-scheme-independent),
+  `npm run test:a11y` runs axe-core against representative pages and graded
+  component states in both schemes (`tests/accessibility.spec.mjs`),
+  `tests/figures.spec.mjs` renders every page carrying a spec-first figure
+  in both schemes and fails on any label outside its fitted viewBox, and
+  `npm run test:browser` runs every suite in one server startup.
 
 ## Deployment
 

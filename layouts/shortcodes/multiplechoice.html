@@ -8,11 +8,11 @@
                      option string (matched verbatim, delimiters and all).
     GRAPH (mode="graph"): inner content = options separated by a line
                      `===OPT===`; `answerIndex` = 0-based correct option.
-                     An option that starts with `{` is a graph-core spec JSON
-                     (same language as the apfigure shortcode; optional "kind"
-                     key: graph | numberline | figure, default graph) rendered
-                     in the browser by <ap-figure>. Anything else is a
-                     prerendered <svg> block — the legacy form, still valid.
+                     Every option is a graph-core spec JSON object (same
+                     language as the apfigure shortcode; optional "kind" key:
+                     graph | numberline | figure, default graph) rendered in
+                     the browser by <ap-figure>. The prerendered <svg> form
+                     was retired in September 2026 and now errorf's.
 
   Params: question (req), hint, answer | (mode + answerIndex).
 */ -}}
@@ -35,11 +35,14 @@
     {{- errorf "multiplechoice shortcode needs a non-empty 'answer' in text mode (%s)" .Position -}}
   {{- end -}}
 {{- end -}}
-{{- /* `answerDisplay` is not a multiplechoice parameter — the correct option is
-     already on screen, so there is nothing to reveal. Reject it rather than
-     accept and ignore it, which is what made it look supported. */ -}}
-{{- with .Get "answerDisplay" -}}
-  {{- errorf "multiplechoice does not support 'answerDisplay' — the chosen option is the answer (%s)" $.Position -}}
+{{- /* The params this template reads are question, answer, answerIndex, hint,
+     and mode. Anything else is rejected rather than accepted and ignored,
+     which is what made `answerDisplay` look supported and let an `accept=`
+     ship on two pages grading nothing. */ -}}
+{{- range (slice "answerDisplay" "accept" "answerMode" "answerForm" "placeholder") -}}
+  {{- with $.Get . -}}
+    {{- errorf "multiplechoice does not take %q — the chosen option is the answer, keyed by 'answer' (text) or 'answerIndex' (graph) (%s)" . $.Position -}}
+  {{- end -}}
 {{- end -}}
 {{- /* mathtext.html has no .Page to reach the Store with, so this is the
      only place that can flag a page as needing the math runtime for a
@@ -96,7 +99,7 @@
             {{- end -}}
             <button type="button" disabled class="ap-mc-option ap-mc-option-graph" data-index="{{ $i }}"><ap-figure data-kind="{{ $kind }}" data-spec="{{ $spec }}" role="img" aria-label="{{ $aria }}"></ap-figure></button>
           {{- else -}}
-            <button type="button" disabled class="ap-mc-option ap-mc-option-graph" data-index="{{ $i }}">{{ $svg | safeHTML }}</button>
+            {{- errorf "multiplechoice(graph) option %d must be a graph-core spec JSON object — prerendered <svg> options were retired once the last were converted (%s)" $i $.Position -}}
           {{- end -}}
         {{- end -}}
       {{- else -}}

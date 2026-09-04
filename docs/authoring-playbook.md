@@ -37,8 +37,9 @@ so independent solving against the source Answer Key remains required.
 
 Before writing:
 
-1. Read `AGENTS.md`, this playbook, and—when applicable—the Knowledge Check
-   playbook. Inspect `git status` and preserve unrelated work.
+1. Read `AGENTS.md`, this playbook, and—when applicable—the subject's
+   Knowledge Check playbook (`docs/knowledge-check-playbook-math.md` or
+   `docs/knowledge-check-playbook-life-sciences.md`). Inspect `git status` and preserve unrelated work.
 2. For an OpenStax math book listed in
    `data/openstax/source-lock.json`, follow
    `docs/source/openstax-source-workflow.md`: use the pinned CNXML as the
@@ -196,6 +197,11 @@ List every authored section once. Do not copy visible print prefixes such as
 `10.1`, and do not fall back to a bare linked outline or title-only bullets.
 The content lint enforces the descriptive bullet shape.
 
+## 2. Writing patterns
+
+Notation, math, and table conventions are per subject: `docs/subjects/math.md`
+§2 for the math books, `docs/subjects/biology.md` "Notation" for Biology.
+
 ## 3. Exercises and components (shortcodes)
 
 **Fill-in (free-response math, graded in the browser):**
@@ -230,8 +236,9 @@ lets a coin-flip pass. Use `multiplechoice` with the alternatives themselves as
 options (`yes`/`no`, `rational`/`irrational`, `Quadrant I`–`Quadrant IV`). The
 lint rejects a fill-in whose question maps digits to named alternatives.
 
-Every retained source “Try It” or check must become a real `fillin`,
-`multiplechoice`, or `graphplot` component. Never ship a static prompt followed
+Every retained source “Try It” or check must become a real interactive
+component — `fillin`, `multiplechoice`, `graphplot`, `textin`, `selfcheck`,
+or `sortbins`, whichever matches the response. Never ship a static prompt followed
 by `<details><summary>Check answer</summary>` or plain answer prose. Choose the
 component that matches the learner's response; if the source interaction cannot
 be represented faithfully, choose another source item or record the smallest
@@ -318,13 +325,9 @@ Watch for a system whose two lines share a $y$-intercept: every
 intercept-preserving distractor then crosses at the same point, so the
 intercepts are what you have to vary. The lint validates every spec option exactly like an `apfigure` body
 (it must parse, carry the `ariaLabel`, and build through the real engine),
-and the figure layout gate covers option figures automatically. Prerendered
-`<svg>` option blocks (the pre-spec form) remain valid and keep their
-`aria-label` requirement; author NEW graph options spec-first always.
-
-The one-time procedure for migrating a legacy prerendered-`<svg>` graph-choice
-exercise to spec options is documented per subject; for math, see
-`docs/subjects/math.md`.
+and the figure layout gate covers option figures automatically. Every option
+is a spec: a prerendered `<svg>` option block fails both the lint and the
+build (the last twelve were converted in September 2026).
 
 **Graph it yourself (GraphPlot):** config (answer + grid) is JSON in the body.
 
@@ -340,9 +343,9 @@ exercise to spec options is documented per subject; for math, see
 ```
 
 Every supported `answer` shape, the grading contract each one carries, and
-the adjudicated conversion ledger that turns multiple-choice/fill-in
-exercises into graphplots are documented per subject; for math, see
-`docs/subjects/math.md`.
+the graph-recognition companion rule (a section that asks the learner to
+draw a graph also asks them to recognize one) are documented per subject;
+for math, see `docs/subjects/math.md`.
 
 **Callouts / cards** (Hextra shortcodes):
 
@@ -410,8 +413,9 @@ Publishing lets other scientists verify, challenge, and reproduce the work.
 
 `question` and an optional `hint` are the only params; `answer`, `accept`,
 and `answerDisplay` are rejected — a self-check has no key. The inner content
-is the model answer, in Markdown. The inner content may end with a
-`===CHECKS===` line followed by 2–6 rubric checkpoints — one clause of the
+is the model answer, in Markdown. On a numbered section or a Knowledge Check
+the inner content must end with a `===CHECKS===` line followed by 2–6 rubric
+checkpoints (the lint requires the rubric wherever a learner meets the item) — one clause of the
 model answer per line, rendered as check-off boxes ("Did your answer
 mention:") under the revealed model answer, so self-marking is against a
 checklist instead of a wall of prose:
@@ -496,7 +500,8 @@ matter — before `## Practice`.
 
 Inside it, **one `### ` group per section objective, in the order the
 objectives callout lists them, each holding at least two interactive
-exercises** (`fillin`, `multiplechoice`, and `graphplot` in any mix). Each
+exercises** (`fillin`, `multiplechoice`, `graphplot`, `textin`, `selfcheck`,
+and `sortbins` in any mix — see the auto-graded rule below). Each
 group heading repeats its objective verbatim; the lint compares them ignoring
 case, spacing, and trailing punctuation. A section needs at least five
 exercises overall, so a one- or two-objective section carries more than the
@@ -533,9 +538,7 @@ multipart source item expands into one exercise per part.
   prints only odd-numbered answers, but parity can change by chapter —
   inspect the actual key pages rather than assuming. Record every item in the
   source ledger with the same evidence required for any retained exercise,
-  and independently solve each one against the key. Supply is not the
-  constraint: the mapped corpus averages 45 answered exercises per section
-  against a minimum demand of about 8.
+  and independently solve each one against the key.
 - **Coverage.** Every objective gets its own group. Where an objective's own
   exercise group is thin, draw a covering item from the section's Mixed
   Practice or Everyday Math group rather than repeating one skill.
@@ -579,6 +582,36 @@ The grading engine's own notational limits, and the closed-class record of
 fill-ins that were passable by retyping their own prompt, are documented per
 subject; for math, see `docs/subjects/math.md`.
 
+### Knowledge Checks (both editions)
+
+A Knowledge Check is a cumulative self-test at book level (math: a chapter
+range) or unit level (life sciences: one page per unit) — not a section. The
+rules every edition shares live here; each subject's edition
+(`docs/knowledge-check-playbook-math.md`,
+`docs/knowledge-check-playbook-life-sciences.md`) adds how its items are
+sourced and counted.
+
+- **Placement.** `content/<subject>/<book>/knowledge-check-XX-YY.md`, at
+  book level beside the chapter folders, `XX-YY` the zero-padded chapter
+  range. Frontmatter: `title`, `description`, `source_chapters: "1-6"`, and
+  a `weight` one past its last chapter (chapters and checks share one weight
+  sequence — §1). Knowledge checks are exempt from the numeric-prefix rule;
+  the validator knows this.
+- **One range, stated once.** A book's Knowledge Check ranges must not overlap.
+  The filename, title, `source_chapters`, chapter headings, and sidebar
+  placement must describe the same range. If a published range is renamed,
+  add a Hugo `aliases` entry for the old URL.
+- **Cumulative and grouped.** Items cover every chapter in the range, under
+  one `## Chapter N` heading per chapter and one `### N.M` heading per
+  authored section, so a miss points the reader at exactly one section.
+- **No hints.** Quizzes never have them; the lint reads the whole file and
+  rejects any `hint=`.
+- **The 2–3 consecutive-question limit is waived** on a cumulative check —
+  still select for coverage, never repetition.
+- **Real components only.** No print-only labels, no static "Check answer"
+  disclosures, no file-backed textbook images (a life-sciences check may use
+  `mediafigure` for a figure-reading item).
+
 ## 4. Verify (the workflow)
 
 From the repository root:
@@ -593,17 +626,15 @@ From the repository root:
    exercise is what creates the obligation, and `npm test` fails at
    `verify:ledger` until the record exists.
    `npm run ledger:list -- --unverified` prints every unrecorded exercise
-   with its hash; write one or more result files
-   (`{"results": [{"hash": "…", "verdict": "ok" | "defect" | "unverifiable",
-   "note": "…"}]}`) from the step-2 derivations — never from the authored
-   key — and fold them in with `npm run ledger:merge <dir>`. After editing
+   with its hash; write one or more result files in the shape AGENTS.md
+   §The answer ledger documents, from the step-2 derivations — never from
+   the authored key — and fold them in with `npm run ledger:merge <dir>`. After editing
    existing exercises, `node tools/verify/answer-ledger.mjs prune content` drops the
    records stranded by their old text.
 4. `npm run verify-section -- content/<subject>/<book>/<ch>/<sec>.md`
    — lints, renders every math run, and confirms that each fill-in answer is
-   parseable by the real grader. Fix every ✗. Warnings on a page you authored
-   or revised are defects, not backlog: clear them, or say in the handoff
-   which pre-existing ones you left and why (§5).
+   parseable by the real grader. Fix every ✗: every finding fails the run,
+   and there is no warning tier to leave for later (§5).
 5. Run `npm test`. It includes whole-repository structure validation,
    per-page real-grader verification, the corpus-wide answer cross-checks
    (`npm run verify:answers` — every mechanically checkable answer is
@@ -648,15 +679,11 @@ carried zero of each, and the warning channel was deleted with them. There is
 no non-blocking rule left in the repository and no category of
 known-defective content to grandfather.
 
-The Practice retrofit that used to live here is finished. All 482 mapped
-sections carry the block (the documentation test pins that count to the live
-map, so authoring a new mapped section means bumping it here). The final
-block landed on August 9, 2026; the lint rule was promoted from a warning to
-an error the same day, and the published backlog count was deleted along with
-the `--check-docs` flag and the tooling that maintained it. Precalculus 2e's
-final chapter landed on August 29, 2026 with its blocks, so no scaffolded
-chapter remains; a future book's sections will each need theirs as they land —
-as an error on the page being written, not as a worklist.
+The Practice retrofit that used to live here is finished: every mapped
+section carries the block, the rule is an error, and the backlog count and
+the `--check-docs` tooling that maintained it are gone. A future book's
+sections each need theirs as they land — as an error on the page being
+written, not as a worklist.
 
 Everything else that used to live here has been fixed rather than documented:
 numerically coded categorical answers are `multiplechoice`, four-digit numbers

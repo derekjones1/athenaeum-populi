@@ -4600,6 +4600,10 @@
     "result": "agrees"
    }
   },
+  "18054353c048a965": {
+   "verdict": "ok",
+   "note": "y < (2/3)x − 5: test (0,0) → 0 < −5 is false, so the shaded half-plane excludes the origin (below the line); < is strict, so the boundary is dashed → option 1 (dashed, below). Options 0 (dashed, above) and 2 (solid, below) each differ in exactly one feature; re-derived from the legacy SVG geometry and re-rendered spec-first."
+  },
   "18095d5f7956f726": {
    "verdict": "ok"
   },
@@ -6774,6 +6778,14 @@
   },
   "2372ec3bde71a28c": {
    "verdict": "ok"
+  },
+  "237a16671d25cf4b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "237a207d0d0e1167": {
    "verdict": "ok",
@@ -9026,6 +9038,10 @@
   },
   "303196d0fac619e7": {
    "verdict": "ok"
+  },
+  "3033cba157e2f737": {
+   "verdict": "ok",
+   "note": "2x + y = 2 ⇒ y = −2x + 2: y-intercept (0,2), slope −2, so the line falls to the right through (1,0) and (2,−2) → option 0. Option 1 is y = 2x + 2 (rises), option 2 is y = −2x − 2 (intercept −2). Re-derived from the legacy SVG line endpoints on the −7..7 grid."
   },
   "303704e504b8dd6a": {
    "verdict": "ok",
@@ -11782,14 +11798,6 @@
   "3f576fc1df8d845c": {
    "verdict": "ok",
    "note": "Critical Thinking selfcheck fs-idp32488864; model answer is the CNXML solution verbatim, checks decompose its two clauses."
-  },
-  "3f5c2838de74b711": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "3f6234e56f84ac0f": {
    "verdict": "ok"
@@ -16102,6 +16110,14 @@
   "561d3f58c6e336f9": {
    "verdict": "ok"
   },
+  "561e7d0d47b0dd17": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5620e17b3e55fc75": {
    "verdict": "ok"
   },
@@ -17350,14 +17366,6 @@
   },
   "5c9568c737f4d123": {
    "verdict": "ok"
-  },
-  "5c96268c913ae4f2": {
-   "verdict": "ok",
-   "note": "parent: option or stem wording adjusted per errata 116/121 or restored to the source; key re-read against the CNXML solution and section text",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "5c9871f5f75f46e4": {
    "verdict": "ok"
@@ -18912,9 +18920,6 @@
    "note": "parent re-record after option shuffle: average velocity 110/2=55 mi/h over the interval; the 62 mi/h reading at an instant is the instantaneous velocity (source Verbal solution)."
   },
   "6581397b04197d94": {
-   "verdict": "ok"
-  },
-  "658396a4d3c3a107": {
    "verdict": "ok"
   },
   "65856be88791e2bc": {
@@ -24723,9 +24728,6 @@
     "result": "agrees"
    }
   },
-  "8497ab44c2ace9c8": {
-   "verdict": "ok"
-  },
   "8498ea1734abc873": {
    "verdict": "ok"
   },
@@ -27480,6 +27482,10 @@
   },
   "94f743a03d7a7e3c": {
    "verdict": "ok"
+  },
+  "9503a4e556b14bd6": {
+   "verdict": "ok",
+   "note": "f(x) = 3x + 2: y-intercept (0,2), slope 3 → through (−1,−1), (0,2), (1,5) → option 2 (lines slope 3, intercept 2). Distractors are the other functions of the same source set — y = −3x − 1 (falls), y = x + 2 (same intercept, slope 1), y = 2 (horizontal). Source: m50389 section exercises “match the given linear equation with its graph”, item f(x)=3x+2 keyed A; recognition MC authored for the graph-recognition rule."
   },
   "9511f8f0aef85e51": {
    "verdict": "ok"
@@ -30501,10 +30507,6 @@
    "verdict": "ok",
    "note": "m66375 solution fs-id1341960 ('Where does the cell get energy for active transport?'): model answer verbatim match. Two CHECKS clauses restate ATP from metabolism and powering pump activity."
   },
-  "a60a6736bf324fcf": {
-   "verdict": "ok",
-   "note": "Restored multiplechoice, retained as one of prealgebra ch11's two graph-recognition items. Derivation: 2x + y = 2 solved for y gives y = -2x + 2, slope -2 (falling), y-intercept (0, 2); at x=1, y=0 and at x=2, y=-2. Option [0] is labelled with exactly those three points and is the key (answerIndex=0) -- correct. Option [1] rises through (1, 4), i.e. slope +2 (slope sign inverted); option [2] crosses at (0, -2), i.e. intercept sign inverted. Both distractors are wrong, so exactly one option grades correct."
-  },
   "a619dcd00744775f": {
    "verdict": "ok"
   },
@@ -30978,6 +30980,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "a819ee40249b72ad": {
+   "verdict": "ok",
+   "note": "6 − 2i has real part 6 and imaginary part −2, so it plots at (6, −2): 6 units right, 2 down → option 1. Distractors are its sign/coordinate swaps (−6,2), (−2,6), (6,2). Source: m49408 plotting exercise 6−2i (printed solution figure CNX_Precalc_Figure_08_05_208); recognition MC authored for the graph-recognition rule."
   },
   "a81d80afc006bab6": {
    "verdict": "ok",
@@ -35653,9 +35659,6 @@
   "c177cb845fb04a31": {
    "verdict": "ok"
   },
-  "c1833f124297dbbf": {
-   "verdict": "ok"
-  },
   "c184a6700cf9f706": {
    "verdict": "ok"
   },
@@ -36481,6 +36484,10 @@
   "c5c1e9c992acb892": {
    "verdict": "ok",
    "note": "re-derived: f(x)=(x+2)^2-3=x^2+4x+1, vertex (-2,-3) on lattice; matches CNXML Try It (fs-id1169149089502); grid -6..2/-5..5 gives 5 reachable points (gpcheck slack 2)."
+  },
+  "c5c26492d8f3a217": {
+   "verdict": "ok",
+   "note": "f(x) = √(x+2): domain x ≥ −2, so the curve starts at (−2,0) and rises through (−1,1), (2,2), (7,3) → option 0 (curves kind sqrt, h = −2). Option 1 is √(x−2) (starts at (2,0)); option 2 is −√(x+2) (reflected). Specs lifted verbatim from the legacy options' own data-spec attributes."
   },
   "c5c6f340131277b0": {
    "verdict": "ok"
@@ -42621,6 +42628,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "e808ce89b921dae4": {
+   "verdict": "ok",
+   "note": "y ≥ (5/2)x − 4: test (0,0) → 0 ≥ −4 is true, so the shaded half-plane contains the origin; ≥ is inclusive, so the boundary is solid → option 0 (solid, above, contains origin). Specs re-derived from the legacy SVG geometry: boundary through (−1.1,−6.75)–(4.3,6.75), slope 2.5, intercept −4, on a −7..7 grid; all three options re-rendered spec-first and compared side by side."
   },
   "e80b21f543bd2a4d": {
    "verdict": "ok",

@@ -1,6 +1,6 @@
 # OpenStax source reconciliation
 
-The math books have a report-only connection to the official OpenStax
+Every pinned book has a report-only connection to the official OpenStax
 publishing sources. The connection maps and audits the existing Hugo pages; it
 does **not** regenerate them or accept upstream changes automatically.
 
@@ -179,7 +179,8 @@ build date of 2026-04-20. That is the same inference rule that reproduces the
 three existing books' baselines exactly, but it remains an inference: a strong
 comparison candidate, not a proven OpenStax build ID.
 
-While the book was being written, each unwritten chapter landing declared
+**Scaffolded chapters (any future book).** While Precalculus was being
+written, each unwritten chapter landing declared
 `authoring_status: scaffolded` in its frontmatter — the marker that allowed an
 empty `## Sections` overview past the chapter-landing lint and the content
 validator's bullets-match-pages check. No chapter carries it any more, and
@@ -190,10 +191,10 @@ landing once its first section page exists, list the section in the landing's
 `## Sections` overview, then rerun `node tools/source/openstax-source.mjs build-map`
 and commit the refreshed map; `build-map` fails if a marker outlives the first
 authored section in its chapter, so an unwritten chapter can never be mistaken
-for a finished one.
-When all 73 sections exist, change the book's `authoringStatus` to `complete`
-in the lock; from then on the tooling enforces full chapter-by-chapter parity
-with the upstream collection and the book joins the audited section matrix.
+for a finished one. When a future book's every section exists, change its
+`authoringStatus` to `complete` in the lock; from then on the tooling
+enforces full chapter-by-chapter parity with the upstream collection and the
+book joins the audited section matrix.
 
 ## Biology 2e
 
@@ -227,12 +228,13 @@ the math books (`summary`, `multiple-choice`, `critical-thinking`,
 `section-exercises`, `writing`), all excluded from the audited core
 instructional text the same way. Its modules also carry no `note.try`
 elements at all — Biology has no math-style Try It prompts — so the audit
-reports that lane as `n/a` rather than a misleading `0/0`. When biology
-sections are authored, their interactive exercises will lean on `textin`
-(short-text answers, graded by normalized exact match — the word counterpart
-of `fillin`, which cannot take words) and `selfcheck` (an ungraded
-free-response prompt with a revealable model answer) alongside the existing
-`multiplechoice`; the audit's local-interaction scan recognizes all of these.
+reports that lane as `n/a` rather than a misleading `0/0`. Biology's
+interactive exercises lean on `textin` (short-text answers, graded by
+normalized exact match — the word counterpart of `fillin`, which cannot take
+words), `selfcheck` (an ungraded free-response prompt with a revealable
+model answer), and `sortbins` (categorize-into-bins, graded as the mapping)
+alongside `multiplechoice`; the audit's local-interaction scan recognizes
+all of these.
 
 Once a chapter's modules are ready to vendor, `npm run source:media` renders
 the raster figures a chapter references into `static/media/<book>/` as WebP at
@@ -355,7 +357,7 @@ changes, or after authoring new sections.
 
 ## Source authority for future work
 
-For the mapped math books:
+For every mapped book:
 
 - pinned CNXML is the semantic/transcription source for text, objectives,
   MathML, element IDs, exercise/solution pairing, and figure metadata;

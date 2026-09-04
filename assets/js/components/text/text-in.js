@@ -22,8 +22,10 @@
  */
 import { checkText } from '../../lib/text/check-text.mjs';
 import { plainMathText } from '../../lib/shared/speakable-label.mjs';
+import { mountHintToggle } from '../../lib/shared/hint-toggle.mjs';
+import { TONE } from '../../lib/shared/colors.mjs';
+import { focusGuard } from '../../lib/shared/focus.mjs';
 
-let hintSequence = 0;
 
 const MESSAGES = {
   idle: '',
@@ -31,12 +33,11 @@ const MESSAGES = {
   incorrect: 'Not quite — try again.',
 };
 
-// The `--ap-*` fallback hexes duplicate assets/css/custom.css (the palette's
-// source of truth) for the moment before the stylesheet applies.
+// Status → shared feedback tone (colors.mjs owns the palette fallbacks).
 const COLOR = {
-  correct: 'var(--ap-success, #1a7f37)',
-  incorrect: 'var(--ap-error, #b42318)',
-  empty: 'var(--ap-muted, #6f6e69)',
+  correct: TONE.success,
+  incorrect: TONE.error,
+  empty: TONE.muted,
 };
 
 class TextInElement extends HTMLElement {
@@ -46,15 +47,12 @@ class TextInElement extends HTMLElement {
 
     this.answer = this.dataset.answer || '';
     this.accept = this.dataset.accept || '';
-    this.placeholder = this.dataset.placeholder || 'Your answer';
     this.status = 'idle';
     this.done = false;
 
     const wrap = this.querySelector('.ap-textin');
     this.wrap = wrap;
 
-    const adTpl = this.querySelector('template[data-slot="answer-display"]');
-    this.answerDisplayHTML = adTpl ? adTpl.innerHTML : '';
     const hintTpl = this.querySelector('template[data-slot="hint"]');
     this.hintHTML = hintTpl ? hintTpl.innerHTML : '';
 
@@ -67,7 +65,7 @@ class TextInElement extends HTMLElement {
     field.autocomplete = 'off';
     field.autocapitalize = 'off';
     field.spellcheck = false;
-    field.placeholder = this.placeholder;
+    field.placeholder = 'Your answer';
     // The question names the control (a description of the box — "Your
     // answer" — is not a name). Questions are prose by lint, so the plain
     // form is the final name; no speech serializer is needed.
@@ -93,27 +91,7 @@ class TextInElement extends HTMLElement {
 
     wrap.append(form, feedback);
 
-    if (this.hintHTML) {
-      const hintId = `ap-textin-hint-${++hintSequence}`;
-      const hintBtn = document.createElement('button');
-      hintBtn.type = 'button';
-      hintBtn.className = 'ap-fillin-hint-toggle';
-      hintBtn.textContent = 'Show hint';
-      hintBtn.setAttribute('aria-expanded', 'false');
-      hintBtn.setAttribute('aria-controls', hintId);
-      const hint = document.createElement('p');
-      hint.id = hintId;
-      hint.className = 'ap-fillin-hint';
-      hint.hidden = true;
-      hint.innerHTML = this.hintHTML;
-      hintBtn.addEventListener('click', () => {
-        const show = hint.hidden;
-        hint.hidden = !show;
-        hintBtn.textContent = show ? 'Hide hint' : 'Show hint';
-        hintBtn.setAttribute('aria-expanded', String(show));
-      });
-      wrap.append(hintBtn, hint);
-    }
+    mountHintToggle(wrap, this.hintHTML);
 
     form.addEventListener('submit', (event) => {
       event.preventDefault();
@@ -130,19 +108,13 @@ class TextInElement extends HTMLElement {
     this.status = status;
     if (status === 'correct') {
       this.done = true;
-      // Disabling the control while focus sits inside the component would
-      // drop focus to <body>; capture containment first, then move focus to
-      // the feedback so a keyboard or screen-reader user stays put.
-      const hadFocus = this.contains(document.activeElement);
+      // Capture focus containment before the lock, then hand focus to the
+      // verdict so a keyboard or screen-reader user stays put (focus.mjs).
+      const restoreFocus = focusGuard(this);
       this.field.readOnly = true;
       this.field.setAttribute('aria-readonly', 'true');
-      this.feedback.innerHTML = this.answerDisplayHTML
-        ? `Correct — ${this.answerDisplayHTML}.`
-        : 'Correct!';
-      if (hadFocus) {
-        this.feedback.setAttribute('tabindex', '-1');
-        this.feedback.focus();
-      }
+      this.feedback.textContent = 'Correct!';
+      restoreFocus(this.feedback);
       this.button.disabled = true;
     } else {
       this.feedback.textContent = MESSAGES[status] || '';

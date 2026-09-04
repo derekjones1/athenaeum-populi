@@ -163,10 +163,11 @@ test('the command line is parsed, not positionally assumed', async (t) => {
   });
 
   await t.test('a non-integer floor is a usage error, not a silent zero', () => {
-    for (const argv of [['--min-replayed'], ['--min-replayed', 'lots'], ['--min-replayed=']]) {
+    for (const argv of [['--min-replayed', 'lots'], ['--min-replayed=']]) {
       assert.throws(() => parseReplayArgs(argv), /--min-replayed needs a whole number/, argv.join(' '));
     }
-    assert.throws(() => parseReplayArgs(['--nope']), /unknown option/);
+    assert.throws(() => parseReplayArgs(['--min-replayed']), /--min-replayed needs a value/);
+    assert.throws(() => parseReplayArgs(['--nope']), /unknown flag/);
     assert.throws(() => parseReplayArgs(['content', 'other']), /unexpected argument/);
   });
 });

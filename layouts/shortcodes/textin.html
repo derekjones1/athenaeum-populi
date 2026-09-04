@@ -10,9 +10,11 @@
     answer     (required) the keyed answer, plain text
     accept     optional `|`-separated alternates (plural, British spelling,
                abbreviation) graded as correct too
-    answerDisplay   optional pretty form echoed on success
     hint       optional hint
-    placeholder     empty-field prompt (default "Your answer")
+
+  Nothing else: `answerDisplay` and `placeholder` were accepted for a year
+  and set by no page (the keyed word IS the display; the field's prompt is
+  always "Your answer"), so they are refused rather than silently ignored.
 
   Grading lives in assets/js/lib/text/check-text.mjs; the <text-in> component
   (assets/js/components/text/text-in.js) upgrades this static shell.
@@ -27,24 +29,24 @@
     {{- errorf "textin does not take %q — it grades words, not values; use fillin for a math answer (%s)" . $.Position -}}
   {{- end -}}
 {{- end -}}
-{{- range (slice "question" "answer" "accept" "hint" "answerDisplay") -}}
+{{- range (slice "answerDisplay" "placeholder") -}}
+  {{- with $.Get . -}}
+    {{- errorf "textin does not take %q — the keyed word is the display and the field prompt is fixed (%s)" . $.Position -}}
+  {{- end -}}
+{{- end -}}
+{{- range (slice "question" "answer" "accept" "hint") -}}
   {{- $value := $.Get . | default "" -}}
   {{- if findRE `(^|[^\\])\$` (printf "%v" $value) -}}
     {{- errorf "textin %q must not contain `$` math — a text field has no spoken-math name; use multiplechoice for a prompt that needs math (%s)" . $.Position -}}
   {{- end -}}
 {{- end -}}
-{{- $placeholder := .Get "placeholder" | default "Your answer" -}}
 <text-in
   data-answer="{{ $answer }}"
   {{ with .Get "accept" }}data-accept="{{ . }}"{{ end }}
-  data-placeholder="{{ $placeholder }}"
   data-question="{{ $question }}">
   <div class="ap-textin">
     <p class="ap-textin-question">{{ partial "mathtext" $question }}</p>
     <noscript><p class="ap-noscript-notice">Interactive practice requires JavaScript.</p></noscript>
-    {{- with .Get "answerDisplay" }}
-      <template data-slot="answer-display">{{ partial "mathtext" . }}</template>
-    {{- end }}
     {{- with .Get "hint" }}
       <template data-slot="hint">{{ partial "mathtext" . }}</template>
     {{- end }}

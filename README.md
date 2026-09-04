@@ -6,7 +6,10 @@ server, account system, advertising, or tracking.
 
 ## Local development
 
-Requirements: Hugo extended 0.164.0, Node.js 22, and npm.
+Requirements: Hugo extended 0.164.0, Node.js 22, and npm. Runtime
+dependencies, pinned in `package.json` because grading and rendering are
+version-sensitive: KaTeX 0.16.22, MathLive 0.110.0, and
+@cortex-js/compute-engine 0.58.0.
 
 ```sh
 npm ci
@@ -24,7 +27,7 @@ serves the site.
 ## Verification
 
 ```sh
-npm test              # grader, graph, content, math, and answer-ledger checks
+npm test              # unit tests, content, answer, source-key, ledger, lint, and figure gates
 npm run build         # clean Hugo production build + global Pagefind index
 npm run check:build   # routes, links, search coverage, and artifact audit
 npm run test:a11y     # axe WCAG checks in Chromium, light and dark themes
@@ -39,16 +42,19 @@ index at `public/pagefind/`.
 Follow [docs/authoring-playbook.md](docs/authoring-playbook.md) — the
 subject-neutral core — plus the subject playbook under
 [docs/subjects/](docs/subjects/) for the book (`math.md` or `biology.md`) for
-sections, and [docs/knowledge-check-playbook.md](docs/knowledge-check-playbook.md)
-for cumulative knowledge checks. Content lives under `content/` in the
+sections, and the subject's knowledge-check playbook —
+[docs/knowledge-check-playbook-math.md](docs/knowledge-check-playbook-math.md)
+or
+[docs/knowledge-check-playbook-life-sciences.md](docs/knowledge-check-playbook-life-sciences.md)
+— for cumulative knowledge checks. Content lives under `content/` in the
 hierarchy Subject → Book → Chapter → Section.
 
-The completed OpenStax math books also have a pinned, report-only source
-reconciliation workflow, now shared by the completed Biology 2e.
-See
+Every book — the four OpenStax math books and Biology 2e, all complete
+(Biology's unit Knowledge Checks are not yet authored) — has a pinned,
+report-only source reconciliation workflow. See
 [docs/source/openstax-source-workflow.md](docs/source/openstax-source-workflow.md) before
-changing those books. `npm run source:verify` checks the committed 482-section
-map offline; after `npm run source:fetch`, `npm run source:check` audits the
+changing a book. `npm run source:verify` checks the committed section map
+offline; after `npm run source:fetch`, `npm run source:check` audits the
 local pages without rewriting them.
 
 The active build, browser, search, verification, and deployment design is

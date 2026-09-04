@@ -1,9 +1,12 @@
 /**
- * render-figure.mjs — author helper for NEW static figures.
+ * render-figure.mjs — print a spec as standalone SVG, for QA and for the
+ * legacy side-by-side comparison `figures:convert` makes.
  *
- * Hugo cannot run the graph-core geometry at template time, so authored
- * figures are inlined as prerendered SVG. Run this helper when authoring a new
- * figure, then paste its SVG output into the section.
+ * NEW figures are authored as `apfigure` shortcodes (the spec JSON is the
+ * page content and `<ap-figure>` renders it in the browser) — never by
+ * pasting this tool's output: the `<div class="ap-figure" data-spec>` it
+ * prints is the LEGACY form that `figures:status` counts as the conversion
+ * backlog. Use it to eyeball a spec, or to reproduce an old figure's SVG.
  *
  *   node tools/figures/render-figure.mjs graph '{"ariaLabel":"…","lines":[{"slope":2,"intercept":1}]}'
  *   node tools/figures/render-figure.mjs numberline '{"ariaLabel":"…","min":-5,"max":5,"marker":{"at":3,"type":"paren"},"shade":"right"}'

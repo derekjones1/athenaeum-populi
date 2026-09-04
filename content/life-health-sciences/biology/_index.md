@@ -7,6 +7,10 @@ seo_title: "Biology – Free Interactive Biology Textbook | Athenaeum Populi"
 linkTitle: "Overview"
 cascade:
   type: docs
+# The legacy pre-Hugo route: it pointed at the shelf while the shelf had no
+# books, and lands on the book now that Biology 2e is complete.
+aliases:
+  - /biology/
 ---
 
 Biology is the study of life, from the chemistry inside a single cell to the

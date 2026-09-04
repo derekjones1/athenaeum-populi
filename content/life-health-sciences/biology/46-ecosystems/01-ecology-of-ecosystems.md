@@ -200,7 +200,6 @@ terrestrial ecosystems are very diverse and are grouped based on their species a
 {{< multiplechoice
   question="A re-created ecosystem in a laboratory environment is known as a ________."
   answer="microcosm"
-  accept="microcosms"
   hint="The word is built from a prefix meaning 'small' plus 'world' — think about rebuilding an entire ecosystem indoors, as opposed to only partitioning off a piece of a natural one."
 >}}
 mesocosm
