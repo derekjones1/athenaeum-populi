@@ -515,6 +515,23 @@ second blank in a sentence already asked.
   exercise and solution (not the page), every figure alt against the PDF
   page, and every glossary item against the source definition; report
   defects to the parent, which owns the errata file and the ledger merge.
+- **External links.** `npm run check:external-links` (report-only, needs
+  the network; `--only-openstax` restricts it to the `openstax.org/l/`
+  redirects, `--json out.json` keeps the table) follows every external URL
+  printed in the content tree and classifies the answer: `ok`, `blocked` (a
+  403/406/429 to a script is a bot wall, not a dead page), `unreachable`
+  (a TLS or DNS failure in Node's fetch — confirm with `curl -L` before
+  believing it), `error`, or `dead` (404/410). Nothing had followed the
+  book's 198 Link to Learning redirects before the September 5, 2026
+  completion audit; four had rotted (errata 314–317). A confirmed dead
+  link is not kept as a link: the callout keeps the sentence and names the
+  resource and its site in plain text ("the 3-D animation of an ice lattice
+  structure (*Ice Movie Resources* at janewhitney.com)") so a reader can
+  search for it, the footer's `Changes:` clause discloses the redirect, the
+  destination, and the date it returned 404, and the erratum records the
+  same. A 302/redirect chain that never lands (the NRCS careers page in
+  31.2) is left linked and noted, not removed — only a confirmed 404/410
+  on a full GET counts.
 - **Errata.** Confirmed source defects (a keyed answer the section
   contradicts, a distractor that is also true, a caption credit that names
   the wrong image) go in `docs/openstax-errata.md` without asking, with the
@@ -570,6 +587,45 @@ duplicating a section Practice item (lint-enforced, exact after
 normalization — `tools/lib/practice-index.mjs` indexes every section page
 and every sibling Knowledge Check; the playbook states the rule), no hints,
 subsection provenance in the ledgers. Read that playbook, not the math edition, before building one.
+
+## Completion audit record (September 5, 2026)
+
+After the last Knowledge Check landed, the book was declared complete on
+the strength of one more pass that the per-section gates do not perform:
+a cold random sample read by fresh checkers, the way the Knowledge Check
+audit had already sampled its own items. The draw (seeded, stratified by
+unit) was 174 Practice items and 62 figures over 8 Sonnet checkers, one
+per unit, briefed to answer each item before opening the page, then to
+check page against CNXML, and to read every sampled image before judging
+its alt and longdesc. Results, after the parent verified every flag on
+the image or the module:
+
+- **Items:** 0 wrong keys, 0 unprinted or also-defensible distractors,
+  0 rubric defects in 174. Two real item defects: a hint that restated
+  the glossary definition of its key (19.3 diversifying selection) and an
+  accept list missing the noun phrase its stem invites (20.1 "rooted" →
+  "rooted tree"). One checker "defect" was a disclosed adjudication
+  (8.3's double-keyed option, erratum 116) and was not a defect.
+- **Figures:** 5 alt/longdesc defects in 62 — a scan path described in
+  the wrong direction with the wrong colours (10.2), an inset whose
+  colour-to-bone mapping omitted the shape the caption names (29.6), a
+  "numbered carbons" claim with no numbers drawn (3.2), "pink buds"
+  inherited from a source alt the photo contradicts (26.2, erratum 319),
+  and "embryo" for a nine-week fetus (43.5). One source defect the sample
+  surfaced without a page fix: a micrograph's printed scale bar reads
+  150 μm where the source alt says 150 nm (16.3, erratum 318).
+- **A class no gate saw:** a shortcode parameter written twice. Hugo's
+  `.Get` keeps the last value and drops the rest silently, so a textin
+  with `accept="greenhouse gasses"` on one line and `accept="greenhouse
+  gas"` on the next graded only the second. A corpus scan found two such
+  textins and one mediafigure with a repeated `kind`; the lint now refuses
+  a repeated parameter on any shortcode.
+
+Rates to plan the next book's sample by: about 1 alt defect in 12
+figures read cold against the image, about 1 hint or accept defect in 90
+items, and no key defects — the key pipeline (source cross-check, checker,
+orchestrator solve) holds; the figure descriptions are where a completion
+sample earns its cost.
 
 ## Done checklist (in addition to the core checklist)
 

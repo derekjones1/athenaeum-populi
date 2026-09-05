@@ -43,7 +43,8 @@
     "source:history": "node tools/source/openstax-source.mjs history",
     "source:status": "node tools/source/openstax-source.mjs status",
     "source:media": "node tools/source/vendor-media.mjs",
-    "test:e2e": "playwright test tests/browser-check.spec.mjs"
+    "test:e2e": "playwright test tests/browser-check.spec.mjs",
+    "check:external-links": "node tools/build/check-external-links.mjs content"
   },
   "engines": {
     "node": ">=22"

@@ -253,6 +253,7 @@ appear closely related but are not
 {{< textin
   question="A phylogenetic tree with a single ancestral lineage to which all represented organisms relate is called ________."
   answer="rooted"
+  accept="rooted tree|rooted phylogenetic tree"
   hint="This kind of tree is typically drawn from the bottom or left."
 >}}
 

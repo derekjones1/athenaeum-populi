@@ -1674,6 +1674,24 @@ export function lintHugo(src, filename = '', options = {}) {
       // One allowlist per shortcode (from the templates' `.Get` census) and
       // one rule, so every component refuses what it does not read. Hextra's
       // callout has no entry and is not policed.
+      // A param written twice reaches Hugo's `.Get` once — the LAST value
+      // wins and the first is dropped without a word. A biology textin
+      // shipped `accept="greenhouse gasses"` on one line and
+      // `accept="greenhouse gas"` on the next; the built page graded only the
+      // second, so the spelling variant the author meant to take was refused.
+      // The corpus-wide scan that found it (the September 5, 2026 biology
+      // completion audit) found one more textin and one mediafigure with a
+      // repeated `kind`; every tool here reads the same last-wins map, so
+      // nothing downstream could have noticed.
+      {
+        const seen = new Set();
+        for (const match of open.matchAll(/(?:^|\s)([A-Za-z][A-Za-z0-9]*)=(?=")/g)) {
+          if (seen.has(match[1])) {
+            err(index, `${name}: parameter ${JSON.stringify(match[1])} is written more than once — Hugo keeps only the last value and drops the rest silently; join alternatives into one value (accept="a|b") or delete the repeat`);
+          }
+          seen.add(match[1]);
+        }
+      }
       const takes = SHORTCODE_PARAMS[name];
       if (takes) {
         for (const param of Object.keys(shortcodeParams(open))) {

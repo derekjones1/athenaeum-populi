@@ -45,6 +45,38 @@ const REPRESENTATIVE_PAGES = [
     path: '/life-health-sciences/biology/10-cell-reproduction/05-prokaryotic-cell-division/',
   },
   {
+    name: 'biology unit 1 knowledge check (chapters 01–03)',
+    path: '/life-health-sciences/biology/knowledge-check-01-03/',
+  },
+  {
+    name: 'biology unit 2 knowledge check (chapters 04–10)',
+    path: '/life-health-sciences/biology/knowledge-check-04-10/',
+  },
+  {
+    name: 'biology unit 3 knowledge check (chapters 11–17)',
+    path: '/life-health-sciences/biology/knowledge-check-11-17/',
+  },
+  {
+    name: 'biology unit 4 knowledge check (chapters 18–20)',
+    path: '/life-health-sciences/biology/knowledge-check-18-20/',
+  },
+  {
+    name: 'biology unit 5 knowledge check (chapters 21–29)',
+    path: '/life-health-sciences/biology/knowledge-check-21-29/',
+  },
+  {
+    name: 'biology unit 6 knowledge check (chapters 30–32)',
+    path: '/life-health-sciences/biology/knowledge-check-30-32/',
+  },
+  {
+    name: 'biology unit 7 knowledge check (chapters 33–43)',
+    path: '/life-health-sciences/biology/knowledge-check-33-43/',
+  },
+  {
+    name: 'biology unit 8 knowledge check (chapters 44–47)',
+    path: '/life-health-sciences/biology/knowledge-check-44-47/',
+  },
+  {
     name: '404 page',
     path: '/404.html',
     title: 'Page not found – Athenaeum Populi',

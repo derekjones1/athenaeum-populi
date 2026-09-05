@@ -33,7 +33,7 @@ The gestation period is divided into three equal periods or trimesters. During t
 
 Internal organs and body structures begin to develop during the first trimester. By five weeks, limb buds, eyes, the heart, and liver have been basically formed. By eight weeks, the term fetus applies, and the body is essentially formed, as shown below. The individual is about five centimeters (two inches) in length and many of the organs, such as the lungs and liver, are not yet functioning. Exposure to any toxins is especially dangerous during the first trimester, as all of the body's organs and structures are going through initial development. Anything that affects that development can have a severe effect on the fetus' survival.
 
-{{< mediafigure src="biology/Figure_43_07_02" kind="photo" alt="A close-up photo of a human embryo shows a large, bent head with a dark eye, an arm with visible fingers, and a small leg bud, resting against reddish tissue; the spine is visible through the back, and the rounded stomach protrudes as far as the leg bud." >}}
+{{< mediafigure src="biology/Figure_43_07_02" kind="photo" alt="A close-up photo of a human fetus shows a large, bent head with a dark eye, an arm with visible fingers, and a small leg bud, resting against reddish tissue; the spine is visible through the back, and the rounded stomach protrudes as far as the leg bud." >}}
 Fetal development is shown at nine weeks gestation. (credit: Ed Uthman)
 {{< /mediafigure >}}
 

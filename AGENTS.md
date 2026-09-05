@@ -103,6 +103,10 @@ source workflow.
 - `npm run build` — clean production build plus global Pagefind
 - `npm run check:build` — route, link, search, SEO (composed titles,
   breadcrumb/entity JSON-LD), and file-count gates
+- `npm run check:external-links` — report-only: follow every external URL in
+  the content tree (`--only-openstax` for the Link to Learning redirects)
+  and list the dead, blocked, and unreachable ones; needs the network, so it
+  is not in `test` or `ci`
 - `npm run ci` — complete local equivalent of CI
 - `npm run baseline:update` — recount the three published floors and rewrite
   package.json's `--min-verified`, `--min-replayed`, and `--min-exercises` in

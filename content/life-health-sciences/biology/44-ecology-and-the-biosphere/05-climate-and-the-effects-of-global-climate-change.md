@@ -257,8 +257,7 @@ human activity, through emissions from the burning of fossil fuels, has caused a
 {{< textin
   question="Atmospheric gases such as carbon dioxide and methane that absorb and emit radiation, trapping heat in Earth's atmosphere, are called ________."
   answer="greenhouse gases"
-  accept="greenhouse gasses"
-  accept="greenhouse gas"
+  accept="greenhouse gasses|greenhouse gas"
   hint="This section names five such gases affecting Earth, including water vapor, nitrous oxide, and ozone alongside the two named in the question."
 >}}
 

@@ -528,7 +528,7 @@
   },
   "02867e8c62c60b55": {
    "verdict": "ok",
-   "note": "KC 5 24.1 § body Cell Structure and Function (fs-idp33278112), m66558 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 5 24.1 § body Cell Structure and Function (fs-idp33278112), m66558 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -1767,7 +1767,7 @@
   },
   "08002b594d2c90aa": {
    "verdict": "ok",
-   "note": "KC 5 29.3 § body Anura: Frogs (fs-idm166225856), m66590 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 5 29.3 § body Anura: Frogs (fs-idm166225856), m66590 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -2754,7 +2754,7 @@
   },
   "0cc40703f8d6fee5": {
    "verdict": "ok",
-   "note": "KC 7 37.4 § body Hormonal Stimuli (the anterior pituitary/thyroid sentences), m66630 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 7 37.4 § body Hormonal Stimuli (the anterior pituitary/thyroid sentences), m66630 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -3668,11 +3668,10 @@
   },
   "11a10a6242b10eef": {
    "verdict": "ok",
-   "note": "KC 8 46.1 § glossary apex consumer (fs-idp29124704, meaning fs-idp223620112); body Food Chains and Food Webs (fs-idp121534288, para fs-idp199093264), m66701 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 8 46.1 § glossary apex consumer (fs-idp29124704, meaning fs-idp223620112); body Food Chains and Food Webs (fs-idp121534288, para fs-idp199093264), m66701 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
-    "result": "adjudicated",
-    "note": "m66701 glossary: \"apex consumer — organism at the top of the food chain\"; the module never prints \"apex predator\". Key stands."
+    "result": "agrees"
    }
   },
   "11ad41642266c641": {
@@ -4429,11 +4428,10 @@
   },
   "1581b7183ea52456": {
    "verdict": "ok",
-   "note": "KC 7 38.2 § body opening paragraph (fs-idm84548880); glossary calcification, m66638 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 7 38.2 § body opening paragraph (fs-idm84548880); glossary calcification, m66638 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
-    "result": "adjudicated",
-    "note": "m66641: \"Calcification is the process of deposition of mineral salts on the collagen fiber matrix that crystallizes and hardens the tissue\" — the module's term is calcification and it never prints \"mineralization\". Key stands."
+    "result": "agrees"
    }
   },
   "1582db780837dd97": {
@@ -5454,7 +5452,7 @@
   },
   "1a03f81adf8095b4": {
    "verdict": "ok",
-   "note": "KC 3 16.3 § body, intro paragraph (fs-id2261473 region; the module opening), m66505 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 3 16.3 § body, intro paragraph (fs-id2261473 region; the module opening), m66505 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -7807,7 +7805,7 @@
   },
   "257921d28a3501ff": {
    "verdict": "ok",
-   "note": "KC 2 4.1 § body Microscopy (fs-id1448007), m66445 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 2 4.1 § body Microscopy (fs-id1448007), m66445 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -9199,6 +9197,14 @@
   "2c5f1d472436a7f6": {
    "verdict": "ok"
   },
+  "2c6053af1d20f89a": {
+   "verdict": "ok",
+   "note": "Review Q (m66718), key C diversifying selection matches the source solution; hint rewritten September 5, 2026 (completion-audit checker: the old hint restated the glossary definition) to point at the module's rabbit-coat-color example — parent re-read against the module; re-solved cold by the orchestrator",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2c6734e28557bdd3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -9254,7 +9260,7 @@
   },
   "2cbecc1ea6aee9ef": {
    "verdict": "ok",
-   "note": "KC 5 27.2 § body Embryonic Development of the Mouth (fs-idp54796832), m66578 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 5 27.2 § body Embryonic Development of the Mouth (fs-idp54796832), m66578 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -11646,7 +11652,7 @@
   },
   "38a43d818e70e2b1": {
    "verdict": "ok",
-   "note": "KC 4 20.1 § body Classification Levels (fs-idm41635904), m66530 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 4 20.1 § body Classification Levels (fs-idm41635904), m66530 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -11675,7 +11681,7 @@
   },
   "38b87940dba6fbf2": {
    "verdict": "ok",
-   "note": "KC 2 6.2 § body Free Energy (fs-id1366956), m66459 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 2 6.2 § body Free Energy (fs-id1366956), m66459 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -15588,14 +15594,6 @@
   "4b484fb48a40bf86": {
    "verdict": "ok"
   },
-  "4b4cdf1ca3143c38": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "4b4ec8ac1c3ab444": {
    "verdict": "ok",
    "note": "KC 5 29.1 § glossary lancelet (fs-idm93024560), m66588 — parent re-read against the module",
@@ -15989,14 +15987,6 @@
   "4d53416634826a7d": {
    "verdict": "ok"
   },
-  "4d61902f2f63ccb0": {
-   "verdict": "ok",
-   "note": "m66530 glossary definition fs-idm3629840 (rooted): meaning used as prompt, term as answer.",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "4d63bd01e4d1520a": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -16030,7 +16020,7 @@
   },
   "4d812c3cf2431c8b": {
    "verdict": "ok",
-   "note": "KC 3 16.5 § body RNA Splicing, the First Stage of Post-transcriptional Control (fs-id2019050), m66507 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 3 16.5 § body RNA Splicing, the First Stage of Post-transcriptional Control (fs-id2019050), m66507 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -16139,7 +16129,7 @@
   },
   "4df66e33c901e892": {
    "verdict": "ok",
-   "note": "KC 5 26.3 § body Fruit (fs-idp88842288), m66574 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 5 26.3 § body Fruit (fs-idp88842288), m66574 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -16376,7 +16366,7 @@
   },
   "4f2ff02d92a0eb8e": {
    "verdict": "ok",
-   "note": "KC 5 27.1 § body The Role of Homeobox (Hox) Genes in Animal Development (fs-idp153697760), m66577 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 5 27.1 § body The Role of Homeobox (Hox) Genes in Animal Development (fs-idp153697760), m66577 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -17014,7 +17004,7 @@
   },
   "526cd6e8b16fb240": {
    "verdict": "ok",
-   "note": "KC 6 30.1 § body Plant Tissues (fs-idm243748304), m66596 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 6 30.1 § body Plant Tissues (fs-idm243748304), m66596 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -17655,7 +17645,7 @@
   },
   "5633eff8c252576a": {
    "verdict": "ok",
-   "note": "KC 2 10.1 § body Genomic DNA (fs-id1235767), m66477 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 2 10.1 § body Genomic DNA (fs-id1235767), m66477 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -19475,7 +19465,7 @@
   },
   "5f42cbf163f9eddd": {
    "verdict": "ok",
-   "note": "KC 5 23.1 § body Endosymbiotic Theory (fs-idp100923312), m66552 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 5 23.1 § body Endosymbiotic Theory (fs-idp100923312), m66552 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -19915,7 +19905,7 @@
   },
   "61789c70c736ba21": {
    "verdict": "ok",
-   "note": "KC 5 27.3 § body Modern Advances in Phylogenetic Understanding Come from Molecular Analyses (fs-idp44881632), m66722 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 5 27.3 § body Modern Advances in Phylogenetic Understanding Come from Molecular Analyses (fs-idp44881632), m66722 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -21027,7 +21017,7 @@
   },
   "66f79a6c2e40bda4": {
    "verdict": "ok",
-   "note": "KC 5 27.2 § body Presence or Absence of a Coelom (fs-idp95334880), m66578 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 5 27.2 § body Presence or Absence of a Coelom (fs-idp95334880), m66578 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -22052,7 +22042,7 @@
   },
   "6bc487ff2159b911": {
    "verdict": "ok",
-   "note": "KC 7 37.4 § body Humoral Stimuli, m66630 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 7 37.4 § body Humoral Stimuli, m66630 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -23010,7 +23000,7 @@
   },
   "70d9c889016857a9": {
    "verdict": "ok",
-   "note": "KC 7 40.2 § body Plasma and Serum (fs-idm88428032), m66651 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 7 40.2 § body Plasma and Serum (fs-idm88428032), m66651 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -23498,7 +23488,7 @@
   },
   "73d8570ef8184262": {
    "verdict": "ok",
-   "note": "KC 7 35.3 § glossary amygdala (fs-idm151037968); body Limbic System (fs-idm85572480), m66622 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 7 35.3 § glossary amygdala (fs-idm151037968); body Limbic System (fs-idm85572480), m66622 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -23693,7 +23683,7 @@
   },
   "74d99f8b0c6095a3": {
    "verdict": "ok",
-   "note": "KC 3 11.2 § body, opening discussion of sexual versus asexual reproduction (before the Red Queen note), m66484 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 3 11.2 § body, opening discussion of sexual versus asexual reproduction (before the Red Queen note), m66484 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -23752,6 +23742,14 @@
   },
   "754045e9d2b2b075": {
    "verdict": "ok"
+  },
+  "754f73feb8eec60d": {
+   "verdict": "ok",
+   "note": "glossary recall (m66524 rooted); accept widened September 5, 2026 to take \"rooted tree\" / \"rooted phylogenetic tree\" (completion-audit checker: the prompt's \"is called ________\" invites the noun phrase) — parent re-read against the glossary; re-solved cold by the orchestrator",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "7556dd94c144103a": {
    "verdict": "ok"
@@ -24370,7 +24368,7 @@
   },
   "7839ed29002c7028": {
    "verdict": "ok",
-   "note": "KC 4 19.3 § body module introduction (fs-idp42444224), m66718 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 4 19.3 § body module introduction (fs-idp42444224), m66718 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -25006,7 +25004,7 @@
   },
   "7b4a65832f933f7a": {
    "verdict": "ok",
-   "note": "KC 7 35.5 § body Attention Deficit Hyperactivity Disorder (ADHD) (fs-idm91984784), m66624 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 7 35.5 § body Attention Deficit Hyperactivity Disorder (ADHD) (fs-idm91984784), m66624 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -26380,6 +26378,14 @@
   "81e95169c9f0a49d": {
    "verdict": "ok"
   },
+  "81ecd2fde33adcee": {
+   "verdict": "ok",
+   "note": "glossary/summary recall (one-way valves, m66650); two accept= params merged into one September 5, 2026 (Hugo kept only the last, so the variants were never graded) — value set unchanged; parent re-read; re-solved cold by the orchestrator",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "81f2392f48e472e7": {
    "verdict": "ok"
   },
@@ -27708,11 +27714,10 @@
   },
   "87ecc16d550fad1c": {
    "verdict": "ok",
-   "note": "KC 7 41.5 § body Atrial Natriuretic Peptide Hormone, m66661 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 7 41.5 § body Atrial Natriuretic Peptide Hormone, m66661 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
-    "result": "adjudicated",
-    "note": "m66661: \"It is released by cells in the atrium of the heart in response to high blood pressure and in patients with sleep apnea\"; hemorrhaging is the module's ADH vasoconstriction context. Key stands."
+    "result": "agrees"
    }
   },
   "87eda911936d9af4": {
@@ -28141,11 +28146,10 @@
   },
   "8a7d4a3726dba943": {
    "verdict": "ok",
-   "note": "KC 5 29.2 § body Class Petromyzontida: Lampreys (fs-idp99241536), m66589 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 5 29.2 § body Class Petromyzontida: Lampreys (fs-idp99241536), m66589 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
-    "result": "adjudicated",
-    "note": "m66589: \"The Agnatha (jawless fishes)—the hagfishes and lampreys—have a distinct cranium\", and the cranium \"is seen in hagfishes, which evolved earlier than lampreys\" — a cartilaginous skull is not a feature lampreys have and hagfishes lack; the true cerebellum is listed among the features lampreys share with gnathostomes. Key stands."
+    "result": "agrees"
    }
   },
   "8a8ceea817b0c643": {
@@ -28538,7 +28542,7 @@
   },
   "8c809e1abe40b0c9": {
    "verdict": "ok",
-   "note": "KC 4 18.2 § body Sympatric Speciation (fs-idm74920656), m66520 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 4 18.2 § body Sympatric Speciation (fs-idm74920656), m66520 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -28849,6 +28853,14 @@
   "8e627abc6865da37": {
    "verdict": "ok",
    "note": "2 cans cover 200 square feet, so 1 can covers 200/2 = 100 square feet."
+  },
+  "8e681ccad1f176f6": {
+   "verdict": "ok",
+   "note": "glossary recall (greenhouse gases, m66714); two accept= params merged into one September 5, 2026 (Hugo kept only \"greenhouse gas\", so \"greenhouse gasses\" was never accepted) — parent re-read; re-solved cold by the orchestrator",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "8e69f8c4693bf94b": {
    "verdict": "ok",
@@ -29649,11 +29661,10 @@
   },
   "938b72e0fc8c7bee": {
    "verdict": "ok",
-   "note": "KC 5 25.3 § body Hornworts (fs-idp37789488), m66568 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 5 25.3 § body Hornworts (fs-idp37789488), m66568 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
-    "result": "adjudicated",
-    "note": "m66568 Hornworts: \"Thin branched cells called pseudoelaters surround the spores and help propel them farther\" — the module names pseudoelaters, not elaters. Key stands."
+    "result": "agrees"
    }
   },
   "938f9b8454cf4664": {
@@ -29953,7 +29964,7 @@
   },
   "95140ae3e0fba0ae": {
    "verdict": "ok",
-   "note": "KC 2 4.6 § body Tight Junctions (fs-id1744740), m66455 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 2 4.6 § body Tight Junctions (fs-id1744740), m66455 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -30880,7 +30891,7 @@
   },
   "99b60a06942efca0": {
    "verdict": "ok",
-   "note": "KC 3 16.2 § body The *lac* Operon: An Inducible Operon (fs-idm146228272), m66504 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 3 16.2 § body The *lac* Operon: An Inducible Operon (fs-idm146228272), m66504 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -30923,11 +30934,10 @@
   },
   "99f5413bd1d3e274": {
    "verdict": "ok",
-   "note": "KC 5 22.3 § body Prokaryotes and the Nitrogen Cycle (fs-idm32389088), m66547 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 5 22.3 § body Prokaryotes and the Nitrogen Cycle (fs-idm32389088), m66547 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
-    "result": "adjudicated",
-    "note": "m66542: \"Ammonia released into the atmosphere, however, represents only 15 percent of the total nitrogen released\" — 12 percent is not printed. Key stands."
+    "result": "agrees"
    }
   },
   "99fc13fc79bf1c0d": {
@@ -31694,7 +31704,7 @@
   },
   "9de380647b2be9a8": {
    "verdict": "ok",
-   "note": "KC 7 42.2 § glossary clonal selection (fs-idp21067840); body B Lymphocytes (fs-idm78332688), m66664 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 7 42.2 § glossary clonal selection (fs-idp21067840); body B Lymphocytes (fs-idm78332688), m66664 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -31931,7 +31941,7 @@
   },
   "9f1b3da27c9e842c": {
    "verdict": "ok",
-   "note": "KC 7 36.4 § body Sound (fs-idp188300560), m66407 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 7 36.4 § body Sound (fs-idp188300560), m66407 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -35798,7 +35808,7 @@
   },
   "b22393e030c5fd4d": {
    "verdict": "ok",
-   "note": "KC 3 16.1 § body, figure caption \"Locations of gene regulation\" (fs-id2626522 region), m66503 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 3 16.1 § body, figure caption \"Locations of gene regulation\" (fs-id2626522 region), m66503 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -37669,7 +37679,7 @@
   },
   "bc2831d2d2afb527": {
    "verdict": "ok",
-   "note": "KC 3 12.1 § glossary discontinuous variation (fs-id2197332), m66486 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 3 12.1 § glossary discontinuous variation (fs-id2197332), m66486 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -38983,7 +38993,7 @@
   },
   "c2640ede8105d41f": {
    "verdict": "ok",
-   "note": "KC 6 30.3 § body Root Growth and Anatomy (fs-idp18220384), m66598 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 6 30.3 § body Root Growth and Anatomy (fs-idp18220384), m66598 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -39298,7 +39308,7 @@
   },
   "c3f3d66854a338fd": {
    "verdict": "ok",
-   "note": "KC 3 12.2 § body Codominance (fs-id2026469), m66487 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 3 12.2 § body Codominance (fs-id2026469), m66487 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -39572,11 +39582,10 @@
   },
   "c52c7fd9ce0bc755": {
    "verdict": "ok",
-   "note": "KC 2 6.5 § body Feedback Inhibition in Metabolic Pathways (fs-id2018714), m66463 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 2 6.5 § body Feedback Inhibition in Metabolic Pathways (fs-id2018714), m66463 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
-    "result": "adjudicated",
-    "note": "m66463: \"when relative ADP levels are high compared to ATP, the cell is triggered to produce more ATP through sugar catabolism\" — feedback inhibition is the module's name for ATP slowing the pathway, not the ATP-producing process. Key stands."
+    "result": "agrees"
    }
   },
   "c531c2c5fdc83c4f": {
@@ -41578,7 +41587,7 @@
   },
   "cf2b6a5373849fdf": {
    "verdict": "ok",
-   "note": "KC 3 15.2 § body Initiation of Transcription in Prokaryotes (fs-id2321141), m66498 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 3 15.2 § body Initiation of Transcription in Prokaryotes (fs-id2321141), m66498 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -41747,7 +41756,7 @@
   },
   "d033e80b9d211358": {
    "verdict": "ok",
-   "note": "KC 6 30.1 § body Plant Tissues (fs-idm243748304), m66596 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 6 30.1 § body Plant Tissues (fs-idm243748304), m66596 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -44024,14 +44033,6 @@
    "verdict": "ok",
    "note": "A=6500*e^{0.0725*20}=27710.24 (nearest cent). Computed via node."
   },
-  "dcbb489f10a25a9b": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
   "dcbf25ca4f6d0a95": {
    "verdict": "ok",
    "note": "Critical Thinking eip-957/eip-548 (rat mothering study): question and solution transcribed verbatim as model answer; checkpoints are literal substrings."
@@ -44233,7 +44234,7 @@
   },
   "ddb5568b86ff235a": {
    "verdict": "ok",
-   "note": "KC 3 14.2 § body DNA structure and base pairing (fs-id2317138), m66387 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 3 14.2 § body DNA structure and base pairing (fs-id2317138), m66387 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -44309,7 +44310,7 @@
   },
   "de57b3af5579ebb2": {
    "verdict": "ok",
-   "note": "KC 3 14.2 § body DNA Packaging in Cells (fs-id2962722), m66387 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 3 14.2 § body DNA Packaging in Cells (fs-id2962722), m66387 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -45355,7 +45356,7 @@
   },
   "e3380b0d5a011b0d": {
    "verdict": "ok",
-   "note": "KC 4 19.1 § body Population Genetics (fs-idm10186960), m66523 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 4 19.1 § body Population Genetics (fs-idm10186960), m66523 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -45512,7 +45513,7 @@
   },
   "e3fd400947163988": {
    "verdict": "ok",
-   "note": "KC 6 31.3 § body Mycorrhizae: The Symbiotic Relationship between Fungi and Roots (fs-idm58935600), m66605 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 6 31.3 § body Mycorrhizae: The Symbiotic Relationship between Fungi and Roots (fs-idm58935600), m66605 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -45751,7 +45752,7 @@
   },
   "e4e75a01bc1a06ab": {
    "verdict": "ok",
-   "note": "KC 2 8.2 § body What Is Light Energy? (fs-idp36564064), m66474 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 2 8.2 § body What Is Light Energy? (fs-idp36564064), m66474 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -46141,14 +46142,6 @@
   },
   "e6eced1a74465383": {
    "verdict": "ok"
-  },
-  "e701c56af3a79c16": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "e703ea774c6d7d40": {
    "verdict": "ok"
@@ -46619,7 +46612,7 @@
   },
   "e9a2223b1e685712": {
    "verdict": "ok",
-   "note": "KC 8 47.2 § body Wild Food Sources (fs-idp127942592, para fs-idm53895440), m66708 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 8 47.2 § body Wild Food Sources (fs-idp127942592, para fs-idm53895440), m66708 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -46694,7 +46687,7 @@
   },
   "e9fc8e5bdd207ab7": {
    "verdict": "ok",
-   "note": "KC 7 41.5 § body Mineralocorticoids (fs-idp114630528), m66661 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 7 41.5 § body Mineralocorticoids (fs-idp114630528), m66661 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -48480,7 +48473,7 @@
   },
   "f334c09c75c2fc81": {
    "verdict": "ok",
-   "note": "KC 5 21.4 § body Prions (the BSE paragraph), m66540 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 5 21.4 § body Prions (the BSE paragraph), m66540 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -49146,7 +49139,7 @@
   },
   "f6453f24dd8915fc": {
    "verdict": "ok",
-   "note": "KC 5 23.2 § body Motility (fs-idp308677072), m66554 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact)",
+   "note": "KC 5 23.2 § body Motility (fs-idp308677072), m66554 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"

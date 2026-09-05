@@ -170,7 +170,7 @@ the male will earn more matings and greater reproductive success
 {{< multiplechoice
   question="Which type of selection results in greater genetic variability in a population?"
   answer="diversifying selection"
-  hint="It is the type that favors two or more distinct phenotypes over the intermediate one."
+  hint="Think about which outcome leaves a population with more kinds of individuals rather than fewer — the module illustrates it with rabbit coat color in part (c) of its selection figure."
 >}}
 stabilizing selection
 directional selection

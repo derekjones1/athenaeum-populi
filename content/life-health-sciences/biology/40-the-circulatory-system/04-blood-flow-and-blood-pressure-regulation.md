@@ -104,8 +104,8 @@ Blood primarily moves through the body by the rhythmic movement of smooth muscle
 
 {{< textin
   question="Blood is prevented from flowing backward in the veins by ________."
-  answer="one-way valves" accept="one-way valve|valves|valve"
-  accept="valves"
+  answer="one-way valves"
+  accept="one-way valve|valves|valve"
   hint="Veins move blood against gravity, and this structure keeps it from sliding backward between heartbeats."
 >}}
 

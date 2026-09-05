@@ -1638,6 +1638,21 @@ test('textin shortcode rules', () => {
     'answerMode is rejected — textin grades words, not values',
   );
   assert(
+    lintHugo('{{< textin question="Name it." answer="greenhouse gases" accept="greenhouse gasses" accept="greenhouse gas" hint="h" >}}', 'content/test.md')
+      .errors.some((e) => e.includes('parameter "accept" is written more than once')),
+    'a repeated named parameter is rejected — Hugo keeps only the last value',
+  );
+  assert(
+    !lintHugo('{{< textin question="Name it." answer="greenhouse gases" accept="greenhouse gasses|greenhouse gas" hint="h" >}}', 'content/test.md')
+      .errors.some((e) => e.includes('written more than once')),
+    'one accept with joined alternatives is not a repeat',
+  );
+  assert(
+    !lintHugo('{{< fillin question="Solve $x=2$ for $y$ when $y=x$." answer="2" hint="h" >}}', 'content/test.md')
+      .errors.some((e) => e.includes('written more than once')),
+    'math like x= inside a quoted value is not a parameter name',
+  );
+  assert(
     lintHugo('{{< textin question="Name it." answer="a" answerForm="exact" hint="h" >}}', 'content/test.md')
       .errors.some((e) => e.includes('does not take "answerForm"')),
     'answerForm is rejected — textin grades words, not values',
