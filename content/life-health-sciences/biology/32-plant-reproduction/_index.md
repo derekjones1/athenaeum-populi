@@ -7,7 +7,7 @@ description: >-
   mechanisms, advantages, and disadvantages of natural and artificial
   asexual reproduction.
 source_chapter: "32"
-weight: 33
+weight: 37
 ---
 
 {{< mediafigure src="biology/Figure_32_00_01abc" alt="Photo A shows a bee drinking nectar from a wide, flat purple flower. Photo B shows a hummingbird drinking nectar from a long, tube-shaped red flower. Photo C shows a butterfly drinking nectar from a flat, wide orange flower." kind="photo" eager="true" >}}

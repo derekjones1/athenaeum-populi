@@ -9,7 +9,7 @@ description: >-
   and how beneficial prokaryotes fix nitrogen, colonize the body, process
   food, and remediate pollution.
 source_chapter: "22"
-weight: 23
+weight: 26
 ---
 
 {{< mediafigure src="biology/Figure_22_00_01-b1fc" alt="The photo shows a hot spring with a vivid blue color in the middle and a golden color around the edge." kind="photo" eager="true" >}}

@@ -40,8 +40,8 @@ source workflow.
   every book at full coverage. Biology 2e's sections live under
   `content/life-health-sciences/biology` (each lock entry carries a
   `contentPath`, so a book need not live under `content/math`) and its
-  subject playbook (`docs/subjects/biology.md`) governs its authoring; its
-  eight unit Knowledge Checks are not yet authored. A book still being
+  subject playbook (`docs/subjects/biology.md`) governs its authoring; all
+  eight of its unit Knowledge Checks are authored (September 4–5, 2026). A book still being
   written follows the scaffolded-chapter procedure in
   `docs/source/openstax-source-workflow.md`.
 

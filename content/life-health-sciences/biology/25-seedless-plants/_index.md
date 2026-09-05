@@ -7,7 +7,7 @@ description: >-
   water to land; and how bryophytes and seedless vascular plants each solved
   reproduction, structural support, and water transport without seeds.
 source_chapter: "25"
-weight: 26
+weight: 29
 ---
 
 {{< mediafigure src="biology/Figure_25_00_01" alt="Photo shows a seedless plant growing under a large tree. The seedless plant has a long, slender stalk with thin, filamentous branches radiating out from it. The branches have no leaves." kind="photo" eager="true" >}}

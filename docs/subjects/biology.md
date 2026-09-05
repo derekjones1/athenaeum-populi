@@ -537,25 +537,39 @@ second blank in a sentence already asked.
 
 ## Knowledge checks
 
-**One of the eight unit Knowledge Checks is authored: Unit 1 (Chapters
-1–3), `knowledge-check-01-03.md`, 30 items over 10 sections, landed
-September 4, 2026 as the pilot** — the remaining seven are this book's
-next content programme, with the quota in `BOOK_RULES`
-(`tools/lint/lints.mjs`) and the life-sciences playbook in place for them.
-The pilot's shape: one Sonnet author per chapter writing a scratch block at
-a mirrored `content/…` path, one Sonnet checker per chapter, the parent
-assembling, fixing, blind-solving, and running the gates. What the pilot
-taught is in the playbook's "Content rules" (stems that stand alone,
-distractors as the module's answer to a different question) and in the
-checker brief (sibling-hint leaks).
+**All eight unit Knowledge Checks are authored: Units 1–3 (Chapters
+1–17; 30, 102, and 90 items) landed September 4, 2026, and Units 4–8
+(Chapters 18–20, 27 items; 21–29, 132 items; 30–32, 36 items; 33–43, 150
+items; 44–47, 57 items) landed September 5, 2026** — 624 items over the
+book's 208 sections, at the quota in `BOOK_RULES` (`tools/lint/lints.mjs`)
+under the life-sciences playbook.
+The run shape: one Sonnet author per chapter writing a scratch block at a
+mirrored `content/…` path plus a machine-readable provenance file, one
+Sonnet checker per chapter, the parent assembling, fixing, blind-solving,
+and running the gates. What the runs taught is in the playbook's "Content
+rules" (stems that stand alone, distractors as the module's answer to a
+different question, the Greek-letter lint, clozes that blank a term, stems
+that do not repeat the key's own word) and in the checker brief
+(sibling-hint leaks, near-duplicates by eye, reverse recall). A
+September 5, 2026 reverse-recall sweep of all eight checks (one checker per
+unit reading each item beside its section page's Practice block) then
+replaced 55 items whose fact a section item, hint, distractor, or rubric
+already gave — the life-sciences playbook now names that sweep as a wave of
+its own. The units 2–3
+run's checkers found real defects in 6 of 14 chapters — a giveaway stem, a
+distractor the module never prints, three glossary recalls the section page
+already made, two grader gaps — and the units 4–6 run's found 11 across 9
+of 15 chapters, with the parent's own read replacing eleven more items
+(free-phrase summary clozes, giveaway stems, format tells), so neither the
+checker wave nor the parent read is optional.
 
-Cumulative assessments for this book will be one page per unit, written to
+Cumulative assessments for this book are one page per unit, written to
 `docs/knowledge-check-playbook-life-sciences.md`: fixed three items per
 section (lint-enforced), author-written from the module text, no stem
 duplicating a section Practice item (lint-enforced, exact after
-normalization — `tools/lib/practice-index.mjs` indexes every section page;
-the playbook states the rule), no hints, subsection provenance in the
-ledgers. Read that playbook, not the math edition, before building one.
+normalization — `tools/lib/practice-index.mjs` indexes every section page
+and every sibling Knowledge Check; the playbook states the rule), no hints,
+subsection provenance in the ledgers. Read that playbook, not the math edition, before building one.
 
 ## Done checklist (in addition to the core checklist)
 

@@ -118,10 +118,14 @@ What is specific to a unit-level check:
   is exact, not a similarity score: a check item is a duplicate when its
   normalized stem (case, punctuation, blanks, Markdown emphasis, and math
   delimiters ignored) equals the stem of any item on any section page of
-  the book, body self-checks included, unless both are multiple choices
-  with different option sets; or when a cloze's stem with its answer
-  written back into the blank equals a section cloze's, so moving the
-  blank along one summary sentence is still the same item. Near-paraphrase
+  the book, body self-checks included, or on any of the book's other
+  Knowledge Checks (the index carries the sibling checks too, since
+  September 5, 2026; the check under lint is dropped by file name, so a
+  scratch copy is never compared with the committed page of its own
+  range), unless both are multiple choices with different option sets; or
+  when a cloze's stem with its answer written back into the blank equals a
+  section cloze's, so moving the blank along one summary sentence is still
+  the same item. Near-paraphrase
   is deliberately not measured: the sections' own contrast twins ("before"
   and "after zygote formation") share nine words in ten, so no threshold
   separates a lazy rewording from a legitimate twin — that judgement stays
@@ -138,6 +142,53 @@ What is specific to a unit-level check:
   sciences?"). The Unit 1 pilot's authors wrote eight such stems in thirty;
   the lint now rejects `this/the/that section|chapter|module|page` inside a
   Knowledge Check question.
+- **A cloze blanks a term, not a phrase.** The blank in a summary or body
+  cloze is a word or name the module bolds, defines, or uses as a name
+  (`branch point`, `conditioned reconstruction`, `lateral line`), never a
+  verb phrase, a list tail, or a plain adjective: "scientists must ________
+  that allows them…" keyed `collect accurate information`, "the ________
+  that scientists use today" keyed `most common model`, "also found in
+  ________" keyed `snow`, "essential for the ________ of most plants" keyed
+  `growth` all mark a correct learner wrong for `gather accurate data`,
+  `standard model`, `hosts`, or `survival`. The units 4–6 run's authors
+  wrote nine of these in 195 items; every one was replaced. A cloze whose
+  blank is the only word that can complete it ("four extraembryonic
+  ________") tests nothing and is replaced too.
+- **The stem may not repeat the key's own word.** "Two leaves connecting
+  *opposite* each other" keyed `opposite`, "transport *yolk* nutrients"
+  keyed `the yolk sac`, "which named *bacteriophage*" over three options
+  that are not phages: a learner matches the word without the biology.
+  Cover the key and ask whether the stem names it. Corpus-wide the
+  mechanical version of this rule (a content word of the key in the stem
+  and in no distractor) hits 36 of 1,123 biology multiple choices, most of
+  them ordinary shared vocabulary, so it is a checker duty, not a lint.
+- **Reverse recall is the same item, and a hint counts.** A section page
+  that asks "Frogs belong to which order?" → `Anura` has already tested the
+  fact; a check textin "A tail-less amphibian of the clade Anura is called a
+  ________" → `frog` is the same fact backwards. So is a check item whose
+  key and defining fact a section item's `hint=`, distractor, rubric clause,
+  or body self-check already prints ("in exactly the same location, or
+  locus"; "the type found in more than 80 percent of terrestrial plants").
+  The duplicate-stem lint cannot see any of this, and the per-chapter
+  checkers of the eight unit runs missed it at about one item in eleven:
+  the September 5, 2026 sweep — one Sonnet checker per unit reading every
+  check item beside its section page's Practice block and body self-checks,
+  with the parent adjudicating 77 flags down to 55 — replaced 55 of 624
+  items. Run that sweep as its own wave, after the module-fidelity
+  checkers and before the blind solve; its bar is the three cases above,
+  not a term merely appearing on the page, and not a fact re-asked from a
+  different sentence or with a different keyed emphasis. Each replacement
+  is built from a different sentence of the module, checked by a second
+  Sonnet against the CNXML and the section page (body self-checks
+  included), and blind-solved before it is ledgered like any other item.
+- **Format tells.** The key must sit in the distractors' case, length band,
+  and grammatical form: not the only capitalised option (`Kuru` beside
+  lowercase diseases), not the only one without a parenthetical, not the
+  only plain-text name among italic genus names, not the only option
+  missing an article. Options must all belong to the stem's category (a
+  "which type of cell" stem does not offer "an autopolyploid individual"; a
+  "which type of spore" stem does not offer "sporangium"). Three options
+  are allowed, so drop an odd option rather than keep it.
 - **A distractor is the module's answer to a different question.** "Every
   option printed in the module" is easy to satisfy with a fact that is ALSO
   a correct completion of the stem — atomic mass for "protons and neutrons
@@ -151,6 +202,14 @@ What is specific to a unit-level check:
   its pages, so ~200 new items on one page can move it: spread keyed
   positions as you write, and if the gate fails, reorder with a
   deterministic seeded shuffle and say so in `Changes:` — never hand-pick.
+- **Notation inside a stem, key, or option** follows `docs/subjects/biology.md`
+  §Notation, plus one rule that section pages settled and the units 2–3 run
+  hit again: a bare Greek letter outside math (α, β, γ) fails the lint's
+  unicode-math rule unless it is a hyphenated nomenclature prefix
+  (β-adrenergic, α-helix), so a subunit or a factor is spelled out —
+  "alpha subunit", "beta-gamma subunit" — in a shortcode param. Molecule
+  and proton counts are multiple choices, never textins; ratios and
+  probabilities likewise.
 - `mediafigure` is allowed when an item genuinely needs the figure (a
   Visual-Connection-style ask); the stem must already be vendored in the
   media manifest. A figure whose caption or alt names the answer leaks it —
@@ -183,7 +242,16 @@ record is written (Verify, step 3), its `note` starts with
 Inspect the pinned CNXML module as the semantic source; the PDF is the
 edition and visual evidence for figures and tables. If the module's summary,
 body, and glossary disagree with each other, stop and document the
-discrepancy in `docs/openstax-errata.md` — do not silently pick one.
+discrepancy in `docs/openstax-errata.md` — do not silently pick one. Before
+logging, grep the errata file for the module id: a defect a section page
+already disclosed may carry an editorial decision the check must follow
+(erratum 150's "guanine diphosphate" page deliberately builds no recall on
+the term, and the units 2–3 run first logged it twice and then keyed an
+item on it). A term whose only source is a known defect is not an anchor.
+Read every distractor against the book's OTHER chapters too: chapter 16
+frames p53 as a transcription factor, chapter 10 as a G1-checkpoint
+regulator, and "a cell-cycle checkpoint protein" was a second key by the
+book's own framing until it was replaced.
 
 ## Verify
 
@@ -201,7 +269,11 @@ keys hidden.
    Practice block — and report defects to the parent.
 3. Orchestrator blind solve: `npm run solve:emit` on the page, then
    `npm run solve:compare`; settle every disagreement against the module's
-   text (source outranks general knowledge). Record each verdict and its
+   text (source outranks general knowledge). Emit the packets from each
+   chapter's scratch block and answer them BEFORE reading the block with
+   its keys (the Unit 8 run did; the parent read for tells and giveaways
+   comes after), so the solve is blind in fact and not only in tooling; a
+   parent fix re-hashes the item, so re-emit and re-answer that one. Record each verdict and its
    `solved` block in the **answer ledger** (AGENTS.md §The answer ledger,
    `npm run ledger:merge` last, after every other edit — hashes depend on
    the final text): every item needs a record, and `npm test` fails at

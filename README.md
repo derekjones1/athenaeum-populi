@@ -50,7 +50,7 @@ or
 hierarchy Subject → Book → Chapter → Section.
 
 Every book — the four OpenStax math books and Biology 2e, all complete
-(Biology's unit Knowledge Checks are not yet authored) — has a pinned,
+(all eight of Biology's unit Knowledge Checks are authored) — has a pinned,
 report-only source reconciliation workflow. See
 [docs/source/openstax-source-workflow.md](docs/source/openstax-source-workflow.md) before
 changing a book. `npm run source:verify` checks the committed section map

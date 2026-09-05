@@ -7,7 +7,7 @@ description: >-
   classify by structure and enable different kinds of skeletal movement;
   and how skeletal muscle contracts to produce locomotion.
 source_chapter: "38"
-weight: 39
+weight: 44
 ---
 
 {{< mediafigure src="biology/Figure_38_00_01f-9911" alt="Photo shows a man with prosthetic legs stretching out while playing baseball." kind="photo" eager="true" >}}

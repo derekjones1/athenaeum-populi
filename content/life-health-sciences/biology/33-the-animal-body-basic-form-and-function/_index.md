@@ -6,7 +6,7 @@ description: >-
   nervous tissues; and how homeostasis maintains an animal's internal
   balance through feedback mechanisms and thermoregulation.
 source_chapter: "33"
-weight: 34
+weight: 39
 ---
 
 {{< mediafigure src="biology/Figure_33_00_01-ee9c" alt="Photo shows a white arctic fox that blends in with the snow." kind="photo" eager="true" >}}

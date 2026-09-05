@@ -8,7 +8,7 @@ description: >-
   relationships of plants, animals, and fungi within them; and how
   protists shape ecosystems, both as beneficial members and as pathogens.
 source_chapter: "23"
-weight: 24
+weight: 27
 ---
 
 {{< mediafigure src="biology/Figure_B23_00_01abc" alt="Part a is a micrograph of a round, transparent single-celled organism with long thin spines. Part b is a micrograph of an oval, transparent organism with ridges running along its length. The nucleus is visible as a large, round sphere. Cilia extend from the surface of the organism. Part c is an underwater photo of a kelp forest growing from the seabed." kind="photo" eager="true" >}}

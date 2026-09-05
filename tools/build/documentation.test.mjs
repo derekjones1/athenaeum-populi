@@ -183,7 +183,7 @@ test('the biology subject playbook states its lint-backed rules', () => {
   // The status line tracks the authored unit checks by count, so a landed
   // check that forgets the playbook is caught here; "None … yet" was the
   // wording until Unit 1 landed on September 4, 2026.
-  assert.match(biology, /\*\*One of the eight unit Knowledge Checks is authored: Unit 1/, 'the honest status of the unit checks');
+  assert.match(biology, /\*\*All eight unit Knowledge Checks are authored: Units 1–3/, 'the honest status of the unit checks');
   assert.doesNotMatch(biology, /None of the eight unit Knowledge Checks is authored yet/);
   // The duplicate-stem rule became a lint on September 4, 2026; both the
   // subject playbook and the life-sciences edition must say so, and the

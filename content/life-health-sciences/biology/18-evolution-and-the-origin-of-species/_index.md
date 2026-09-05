@@ -2,7 +2,7 @@
 title: Evolution and the Origin of Species
 description: How scientists arrived at the theory of evolution by natural selection, what adaptation and homologous and vestigial structures reveal about common ancestry, how reproductive barriers separate populations into new species through allopatric and sympatric speciation, and what happens — and how quickly — when diverging species reconnect in a hybrid zone.
 source_chapter: "18"
-weight: 19
+weight: 21
 ---
 
 {{< mediafigure src="biology/Figure_18_00_01ab-3e8c" alt="The photo on the left shows large, stalk-like saguaro cacti with multiple arms, and the photo on the right shows a lizard on a rock." kind="photo" eager="true" >}}

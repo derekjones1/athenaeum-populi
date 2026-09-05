@@ -19,6 +19,7 @@ import {
   normalizeStem,
   practiceItems,
   sameItem,
+  isKnowledgeCheckPage,
 } from './practice-index.mjs';
 
 test('normalizeStem folds the spellings two authors give one sentence', () => {
@@ -78,7 +79,7 @@ test('practiceItems reads every kind in source order with its line, and duplicat
   assert.deepEqual(stem.map((i) => i.kind), ['selfcheck']);
 });
 
-test('loadPracticeIndex reads a book\'s section pages only, caches, and refuses a missing directory', () => {
+test('loadPracticeIndex reads a book\'s section pages and its Knowledge Checks, caches, and refuses a missing directory', () => {
   const root = mkdtempSync(join(tmpdir(), 'practice-index-'));
   try {
     const book = join(root, 'content', 'life-health-sciences', 'biology');
@@ -88,11 +89,16 @@ test('loadPracticeIndex reads a book\'s section pages only, caches, and refuses 
     writeFileSync(join(book, '01-the-study-of-life', '_index.md'), '---\ntitle: Ch 1\n---\n');
     writeFileSync(join(book, '01-the-study-of-life', '01-science.md'), '---\ntitle: 1.1\n---\n{{< textin question="Science is ________." answer="systematic" >}}\n');
     writeFileSync(join(book, '02-chemistry', '01-atoms.md'), '---\ntitle: 2.1\n---\n{{< selfcheck question="Why do atoms bond?" >}}\nStability.\n===CHECKS===\nstability\n{{< /selfcheck >}}\n');
-    writeFileSync(join(book, 'knowledge-check-01-02.md'), '---\ntitle: KC\n---\n{{< textin question="Check item that must not index." answer="x" >}}\n');
+    writeFileSync(join(book, 'knowledge-check-01-02.md'), '---\ntitle: KC\n---\n{{< textin question="Check item that a sibling check must not re-ask." answer="x" >}}\n');
     clearPracticeIndexCache();
     const index = loadPracticeIndex(book);
-    assert.equal(index.pages, 2, 'two section pages; the landing and the check are skipped');
-    assert.deepEqual(index.items.map((i) => i.question), ['Science is ________.', 'Why do atoms bond?']);
+    assert.equal(index.pages, 2, 'two section pages; the landing is skipped and the check is not a section page');
+    assert.deepEqual(
+      index.items.map((i) => i.question),
+      ['Science is ________.', 'Why do atoms bond?', 'Check item that a sibling check must not re-ask.'],
+      'the check\'s items index too — the lint drops the check under lint by file name',
+    );
+    assert.ok(isKnowledgeCheckPage(index.items[2].file) && !isKnowledgeCheckPage(index.items[0].file));
     assert.equal(loadPracticeIndex(book), index, 'the second load is the cached object');
     assert.equal(loadPracticeIndexForBook('life-health-sciences/biology', join(root, 'content')), index, 'the book-key loader joins the content root and the key');
     assert.throws(() => loadPracticeIndex(join(root, 'nope')), /is not a directory — run from the repository root/);

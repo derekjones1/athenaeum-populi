@@ -9,7 +9,7 @@ description: >-
   waste; how animals eliminate nitrogenous wastes; and the hormones that
   synchronize the body's osmoregulatory functions.
 source_chapter: "41"
-weight: 42
+weight: 47
 ---
 
 {{< mediafigure src="biology/Figure_41_00_01-98f9" alt="Photo shows two garbage trucks dumping their contents into a landfill." kind="photo" eager="true" >}}

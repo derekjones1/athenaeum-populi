@@ -8,7 +8,7 @@ description: >-
   that regulate hormone production; and the major endocrine glands of the
   human body.
 source_chapter: "37"
-weight: 38
+weight: 43
 ---
 
 {{< mediafigure src="biology/Figure_37_00_01abc-c452" alt="Photo A shows a tadpole. Photo b shows a frog that has developed legs but still has the tail of a tadpole. Photo C shows a fully grown frog." kind="photo" eager="true" >}}

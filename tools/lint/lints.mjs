@@ -109,7 +109,7 @@ import {
   SHORTCODE_PARAMS, shortcodeParams, shortcodeParamSpans, shortcodes,
 } from '../lib/content.mjs';
 import { decodeHtmlEntities, hasFileBackedCssImage, htmlAttribute, openTagRe } from '../lib/html.mjs';
-import { duplicatesOf, practiceItems, sameItem } from '../lib/practice-index.mjs';
+import { duplicatesOf, practiceItems, sameItem, isKnowledgeCheckPage } from '../lib/practice-index.mjs';
 // The one objectives-callout parser, shared with the structure validator and
 // the source audit so the three tools never diagnose the callout differently.
 import { parseObjectivesCallout } from '../lib/openstax-source.mjs';
@@ -2540,8 +2540,8 @@ export function lintHugo(src, filename = '', options = {}) {
 
   // ---- Knowledge Check per-section quota (per book) -------------------------
   // The `knowledgeCheck` profile in BOOK_RULES; null means the book has no
-  // quota. No page carries one yet — Biology's unit Knowledge Checks are not
-  // authored — so this block is exercised by the tests until they land.
+  // quota. Biology's eight unit Knowledge Checks (September 4–5, 2026) are
+  // the pages that carry one; the tests exercise the block on fixtures.
   const kcQuota = isKnowledgeCheck ? bookRules.knowledgeCheck : null;
   if (kcQuota) {
     for (const { index } of [...fillins, ...graphplots]) {
@@ -2588,12 +2588,19 @@ export function lintHugo(src, filename = '', options = {}) {
       } catch (error) {
         err(0, `Knowledge Check duplicate-stem rule cannot run: ${error.message}`);
       }
+      // The index carries the book's other Knowledge Checks too (a sibling
+      // unit check re-asking a stem is the same defect); the check under
+      // lint is dropped by file name, so a scratch copy verified at a
+      // mirrored path is not reported against the committed page of the
+      // same range.
+      const self = path.basename(filename);
       for (const item of index ? practiceItems(mediaSrc) : []) {
-        const duplicates = duplicatesOf(index, item.signature);
+        const duplicates = duplicatesOf(index, item.signature).filter((hit) => path.basename(hit.file) !== self);
         if (!duplicates.length) continue;
         const [first] = duplicates;
         const more = duplicates.length > 1 ? ` and ${duplicates.length - 1} more` : '';
-        err(item.index, `Knowledge Check ${item.kind} duplicates a section Practice item (${first.file} line ${first.line}${more}): ${JSON.stringify(item.question.slice(0, 80))} — write a fresh stem from the module; a fact may be re-asked with a different stem, a multiple choice with a different option set`);
+        const what = isKnowledgeCheckPage(first.file) ? 'an item on another Knowledge Check' : 'a section Practice item';
+        err(item.index, `Knowledge Check ${item.kind} duplicates ${what} (${first.file} line ${first.line}${more}): ${JSON.stringify(item.question.slice(0, 80))} — write a fresh stem from the module; a fact may be re-asked with a different stem, a multiple choice with a different option set`);
       }
     }
   }

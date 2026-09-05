@@ -7,7 +7,7 @@ description: >-
   and how the organs of the digestive system, under neural and hormonal
   regulation, digest food and absorb nutrients.
 source_chapter: "34"
-weight: 35
+weight: 40
 ---
 
 {{< mediafigure src="biology/Figure_34_00_01-7a33" alt="Photo shows a variety of fresh vegetables being sold at a market." kind="photo" eager="true" >}}

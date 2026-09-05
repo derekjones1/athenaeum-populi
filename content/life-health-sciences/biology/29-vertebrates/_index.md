@@ -7,7 +7,7 @@ description: >-
   origins of flight and of mammalian endothermy; and the derived features and
   evolutionary history that led to the primates and to modern humans.
 source_chapter: "29"
-weight: 30
+weight: 33
 ---
 
 {{< mediafigure src="biology/Figure_B29_00_01abc" alt="Photos show a tiger with a cub, a gorilla, and an eagle." kind="photo" eager="true" >}}

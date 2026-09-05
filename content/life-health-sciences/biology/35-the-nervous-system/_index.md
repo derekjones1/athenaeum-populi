@@ -8,7 +8,7 @@ description: >-
   peripheral nervous system are organized; and the symptoms, causes, and
   treatment of common nervous system disorders.
 source_chapter: "35"
-weight: 36
+weight: 41
 ---
 
 {{< mediafigure src="biology/Figure_35_00_01-75fd" alt="Photo shows a woman, upside-down with an arched back, going over a horizontal bar at a track and field event." kind="photo" eager="true" >}}

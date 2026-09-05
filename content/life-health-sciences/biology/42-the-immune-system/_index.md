@@ -8,7 +8,7 @@ description: >-
   antibodies; and the hypersensitivity and autoimmunity that disrupt the
   immune system.
 source_chapter: "42"
-weight: 43
+weight: 48
 ---
 
 {{< mediafigure src="biology/Figure_42_00_01-352f" alt="Micrograph shows a blood smear. The neutrophil and eosinophil are similar in structure, but the eosinophil is larger. Both are filled with granular structures, and have three purple-stained nuclei. These white blood cells are surrounded with donut-shaped red blood cells." kind="photo" eager="true" >}}

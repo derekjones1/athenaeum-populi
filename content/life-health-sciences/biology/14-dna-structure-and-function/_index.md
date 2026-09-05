@@ -2,7 +2,7 @@
 title: DNA Structure and Function
 description: How DNA was identified as the genetic material, the structure and sequencing of DNA, and how DNA replicates and repairs itself in prokaryotes and eukaryotes.
 source_chapter: "14"
-weight: 15
+weight: 16
 ---
 
 {{< mediafigure src="biology/Figure_14_00_01-6dd1" alt="Photo shows Dolly the sheep, which has been stuffed and placed in a glass case." kind="photo" eager="true" >}}

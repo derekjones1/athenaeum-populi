@@ -8,7 +8,7 @@ description: >-
   resistance, and V/Q mismatch; and how oxygen and carbon dioxide are
   transported between the lungs and body tissues.
 source_chapter: "39"
-weight: 40
+weight: 45
 ---
 
 {{< mediafigure src="biology/Figure_39_00_01" alt="An X-ray on the left shows a dog heart, which appears as a white, oblong mass, surrounded by virtually transparent lung tissue. The photo on the right shows a dog." kind="photo" eager="true" >}}

@@ -8,7 +8,7 @@ description: >-
   plants sense light, gravity, and touch and respond with hormones and
   defenses.
 source_chapter: "30"
-weight: 31
+weight: 35
 ---
 
 {{< mediafigure src="biology/Figure_30_00_01-9a16" alt="Photo shows a plant with oval leaves that oppose each other on long, thin branches." kind="photo" eager="true" >}}

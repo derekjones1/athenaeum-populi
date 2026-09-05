@@ -2,7 +2,7 @@
 title: Meiosis and Sexual Reproduction
 description: How meiosis reduces a diploid cell to haploid gametes through two rounds of division, and how the resulting genetic variation underlies the three life-cycle strategies of sexually reproducing organisms.
 source_chapter: "11"
-weight: 12
+weight: 13
 ---
 
 {{< mediafigure src="biology/Figure_07_00_02abc-d68d" alt="Three images are shown. Part a shows a mother and baby hippopotamus. In part b, mature trees are pictured next to saplings. In part c, a mother and baby flamingo are shown." kind="photo" eager="true" >}}

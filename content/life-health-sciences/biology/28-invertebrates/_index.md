@@ -8,7 +8,7 @@ description: >-
   superphylum Deuterostomia — the roughly 97 percent of animal species that
   lack a cranium and vertebral column.
 source_chapter: "28"
-weight: 29
+weight: 32
 ---
 
 {{< mediafigure src="biology/Figure_28_00_01" alt="The photo shows an orange starfish on a rock underwater." kind="photo" eager="true" >}}

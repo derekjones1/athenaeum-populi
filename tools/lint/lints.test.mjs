@@ -2815,6 +2815,25 @@ test('a cloze that moves the blank along the same sentence is the same item; a c
   assert.equal(duplicateErrors(twin).length, 0, 'before/after twins differ by a word and reconstruct to different sentences');
 });
 
+test('a Knowledge Check stem that repeats a sibling Knowledge Check is refused, but the check under lint is never compared with itself', () => {
+  // The index carries the book's other checks; a scratch copy of the
+  // committed page of the same range shares its file name and is the same
+  // page, so its own items must not read as duplicates.
+  const SIBLING = 'content/life-health-sciences/biology/knowledge-check-11-17.md';
+  const stem = '{{< textin question="A hypothesis that experimental results can disprove is ________." answer="falsifiable" >}}';
+  const indexed = (file) => buildPracticeIndex([
+    ...practiceItems(sectionSrc).map((item) => ({ file: SECTION_PAGE, ...item })),
+    ...practiceItems(stem).map((item) => ({ file, ...item })),
+  ]);
+  const sibling = lintKC(kcGroup(stem), bioKC, { loadPracticeIndex: () => indexed(SIBLING) }).errors.filter((e) => e.includes('duplicates'));
+  assert.equal(sibling.length, 1, sibling.join('; '));
+  assert.match(sibling[0], /Knowledge Check textin duplicates an item on another Knowledge Check \(content\/life-health-sciences\/biology\/knowledge-check-11-17\.md line 1\)/);
+  const self = lintKC(kcGroup(stem), bioKC, { loadPracticeIndex: () => indexed(bioKC) }).errors.filter((e) => e.includes('duplicates'));
+  assert.equal(self.length, 0, `the page's own committed copy is not a sibling: ${self.join('; ')}`);
+  const scratch = lintKC(kcGroup(stem), `/tmp/scratch/${bioKC}`, { loadPracticeIndex: () => indexed(bioKC) }).errors.filter((e) => e.includes('duplicates'));
+  assert.equal(scratch.length, 0, `a scratch copy at a mirrored path is the same page: ${scratch.join('; ')}`);
+});
+
 test('two multiple choices share a stem only when they share an option set; any other kind pair is a duplicate on the stem alone', () => {
   const sameOptions = kcGroup('{{< multiplechoice question="Which of the following organisms is a prokaryote?" answer="E. coli" >}}\nE. coli\ncharophyte algae\namoeba\ninfluenza A virus\n{{< /multiplechoice >}}');
   assert.equal(duplicateErrors(sameOptions).length, 1, 'the same options in another order are the same item');

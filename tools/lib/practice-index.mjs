@@ -119,6 +119,9 @@ export function practiceItems(src) {
 /** A section page: `<book>/<NN-chapter>/<NN-section>.md`, never a landing or a Knowledge Check. */
 const isSectionPage = (path) => /[\\/]\d{2}-[^\\/]+[\\/]\d{2}-[^\\/]+\.md$/.test(path);
 
+/** A cumulative check at book level: `<book>/knowledge-check-XX-YY.md`. */
+export const isKnowledgeCheckPage = (path) => /[\\/]knowledge-check-\d{2}-\d{2}\.md$/.test(path);
+
 /**
  * Index a list of `{ file, ...item }` records by stem and by sentence, so a
  * lookup is a Map hit rather than a scan. Exported so a test can build an
@@ -159,9 +162,14 @@ const cache = new Map();
 
 /**
  * Load (and cache) the practice index of one book directory —
- * `content/<shelf>/<book>` — from its section pages. Knowledge Check pages
- * and chapter landings are not indexed: a check must not be compared with
- * itself, and a landing carries no items.
+ * `content/<shelf>/<book>` — from its section pages and its Knowledge
+ * Checks. Chapter landings are not indexed (a landing carries no items).
+ * A check is indexed so that a sibling check in the same book cannot re-ask
+ * its stem (Biology's eight unit checks share one book and one glossary
+ * vocabulary); the lint drops the hits whose file name is the check under
+ * lint, so a check is never compared with itself — nor a scratch copy with
+ * the committed page of the same range, which the non-overlap rule makes
+ * the same page. `pages` counts section pages only.
  *
  * Throws when `bookDir` is not a directory: the lint callers derive it from
  * the page's book key and the working directory, and a Knowledge Check
@@ -179,8 +187,8 @@ export function loadPracticeIndex(bookDir) {
   const items = [];
   let pages = 0;
   for (const file of walkMarkdown(bookDir, { includeIndex: false })) {
-    if (!isSectionPage(file)) continue;
-    pages++;
+    if (!isSectionPage(file) && !isKnowledgeCheckPage(file)) continue;
+    if (isSectionPage(file)) pages++;
     const rel = relative(process.cwd(), file) || file;
     for (const item of practiceItems(readFileSync(file, 'utf8'))) items.push({ file: rel, ...item });
   }
