@@ -10,7 +10,7 @@ description: >-
   the interactions among species that structure ecological communities;
   and the proximate and ultimate causes of animal behavior.
 source_chapter: "45"
-weight: 45
+weight: 46
 ---
 
 {{< mediafigure src="biology/Figure_45_00_01-16d7" alt="Main photo shows fish jumping out of the water, and inset photo shows a pile of dead fish in a container." kind="photo" eager="true" >}}

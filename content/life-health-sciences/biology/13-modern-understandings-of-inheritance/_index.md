@@ -2,7 +2,7 @@
 title: Modern Understandings of Inheritance
 description: How the chromosomal theory of inheritance ties genes to chromosome behavior in meiosis, and how errors in chromosome number or structure cause inherited disorders.
 source_chapter: "13"
-weight: 13
+weight: 14
 ---
 
 {{< mediafigure src="biology/Figure_13_00_01-8d8d" alt="A color micrograph of dye-stained chromosomes glowing green and orange against a dark background: one long, thin, banded strand extends to the upper left, while the rest coil into a dense tangle of thicker banded strands at the lower right, beside a 25 µm scale bar." kind="photo" eager="true" >}}

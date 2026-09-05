@@ -20,6 +20,7 @@ import katex from 'katex';
 import { lintHugo } from './lints.mjs';
 import { parseCliArgs } from '../lib/cli.mjs';
 import { mathSpans, walkMarkdown } from '../lib/content.mjs';
+import { loadPracticeIndexForBook } from '../lib/practice-index.mjs';
 
 let root;
 try {
@@ -34,7 +35,11 @@ let errors = 0, files = 0;
 for (const f of walkMarkdown(root)) {
   files++;
   const src = readFileSync(f, 'utf8');
-  for (const e of lintHugo(src, f).errors) { errors++; console.log(`LINT  ${f} ${e}`); }
+  // A Knowledge Check's duplicate-stem rule reads the book's section pages
+  // through this loader (tools/lib/practice-index.mjs) — from `content/`
+  // under the working directory, never from the page's own directory, so a
+  // scratch copy of a check is compared against the real sections.
+  for (const e of lintHugo(src, f, { loadPracticeIndex: loadPracticeIndexForBook }).errors) { errors++; console.log(`LINT  ${f} ${e}`); }
   for (const { tex, display } of mathSpans(src, { maskCode: true })) {
     // throwOnError catches real parse errors; strict:'ignore' silences benign
     // "unknown symbol" warnings (e.g. an em-dash inside a money-dollar span).

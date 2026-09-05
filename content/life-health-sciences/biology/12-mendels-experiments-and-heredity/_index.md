@@ -2,7 +2,7 @@
 title: Mendel's Experiments and Heredity
 description: How Mendel's pea-plant experiments established the laws of probability, dominance, and segregation that describe inheritance in diploid organisms.
 source_chapter: "12"
-weight: 12
+weight: 13
 ---
 
 {{< mediafigure src="biology/Figure_12_00_01new" alt="Photo shows pea-plant flower, with purple petals that fold back on themselves." kind="photo" eager="true" >}}

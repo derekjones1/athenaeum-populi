@@ -431,6 +431,14 @@
    "verdict": "ok",
    "note": "System of y = -4x (slope -4, intercept 0) and y = -4 (horizontal). Member 1 lattice points inside -7..7: (0,0), (1,-4). Member 2 lattice points: (0,-4), (2,-4). The two lines intersect where -4x = -4, i.e. x = 1, at (1,-4)."
   },
+  "02461630274b0271": {
+   "verdict": "ok",
+   "note": "KC 1 2.1 § body Ions and Ionic Bonds (fs-idp140338797093616), m66430 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "024a83c6a37d477c": {
    "verdict": "ok"
   },
@@ -772,6 +780,10 @@
   },
   "042e7edd1ac8fd61": {
    "verdict": "ok"
+  },
+  "044101bb4ca7a63f": {
+   "verdict": "ok",
+   "note": "KC 1 3.5 § body DNA and RNA (fs-id1802488), m66443 — parent re-read against the module"
   },
   "0443759d7643546b": {
    "verdict": "ok"
@@ -1844,6 +1856,10 @@
   "095ebd22ed357d7e": {
    "verdict": "ok"
   },
+  "0962b0856d071812": {
+   "verdict": "ok",
+   "note": "KC 1 2.1 § body Covalent Bonds and Other Bonds and Interactions (fs-idp140338805329568), m66430 — parent re-read against the module"
+  },
   "096ce8b701b42a85": {
    "verdict": "ok"
   },
@@ -2372,6 +2388,14 @@
   },
   "0c26d3f60432fff2": {
    "verdict": "ok"
+  },
+  "0c27627d3e2bb12e": {
+   "verdict": "ok",
+   "note": "KC 1 2.3 § body Hydrocarbon Chains (fs-idm174673488), m66436 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0c386164317e4f9d": {
    "verdict": "ok",
@@ -3043,14 +3067,6 @@
   },
   "0fa1759de9a7d9a6": {
    "verdict": "ok"
-  },
-  "0fa87c80b0e255b4": {
-   "verdict": "ok",
-   "note": "22.3 large amounts cloze: singular accept added; summary sentence",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "0fad612381ec2786": {
    "verdict": "ok",
@@ -4534,6 +4550,10 @@
     "result": "agrees"
    }
   },
+  "17d9358342676c30": {
+   "verdict": "ok",
+   "note": "KC 1 2.3 § body Enantiomers (fs-idp79470160), m66436 — parent re-read against the module"
+  },
   "17e2834df9bbb5bb": {
    "verdict": "ok"
   },
@@ -5266,6 +5286,14 @@
   "1b906b98871d8c1f": {
    "verdict": "ok"
   },
+  "1b96dfaf5b25a03e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "1b99b97f78b36cdf": {
    "verdict": "ok"
   },
@@ -5321,6 +5349,14 @@
    "verdict": "ok"
   },
   "1bd3622660ba1911": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1bdb259935b2f962": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -6956,6 +6992,10 @@
   "248285014d6403d0": {
    "verdict": "ok"
   },
+  "2482cb1b6c1d41ed": {
+   "verdict": "ok",
+   "note": "KC 1 3.4 § note Evolution Connection (fs-id1432930), m66442 — parent re-read against the module"
+  },
   "2489144e89ffff7d": {
    "verdict": "ok"
   },
@@ -7133,6 +7173,14 @@
   "2590d44ca8d24644": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "259152ca01bc446e": {
+   "verdict": "ok",
+   "note": "KC 1 3.3 § body Steroids (fs-id1831602), m66441 — parent re-read against the module",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -10304,6 +10352,14 @@
   "370a1b0735fa6c48": {
    "verdict": "ok"
   },
+  "370a4d30bacb3bab": {
+   "verdict": "ok",
+   "note": "KC 1 3.2 § body Polysaccharides (fs-id2051550), m66440 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "370a7b6bc37dd257": {
    "verdict": "ok",
    "note": "a1=-19, iterating an=an-1-1.4 five times -> -19,-20.4,-21.8,-23.2,-24.6 (matches source key)."
@@ -10663,6 +10719,10 @@
   },
   "38d0b8db496a18ed": {
    "verdict": "ok"
+  },
+  "38d3c40c79912a2c": {
+   "verdict": "ok",
+   "note": "KC 1 3.2 § body Benefits of Carbohydrates (fs-id2584042), m66440 — parent re-read against the module"
   },
   "38e726ecf73b82dc": {
    "verdict": "ok"
@@ -11387,6 +11447,14 @@
   },
   "3ce2246a951bd50d": {
    "verdict": "ok"
+  },
+  "3ce2a3e0f242128f": {
+   "verdict": "ok",
+   "note": "KC 1 3.5 § body RNA (fs-id1780679), table tab-ch03-05-01, m66443 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "3ce344e188948764": {
    "verdict": "ok"
@@ -12384,12 +12452,28 @@
     "result": "agrees"
    }
   },
+  "4220d4cf5a03b94b": {
+   "verdict": "ok",
+   "note": "KC 1 3.3 § body Waxes (fs-id1970730) + glossary wax, m66441 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "422e5d8ef4490ad4": {
    "verdict": "ok"
   },
   "4230ec28667fb1a6": {
    "verdict": "ok",
    "note": "Try It 2, rewrite 13x^2-6sqrt3xy+7y^2=16 without x'y' term. cot(2theta)=(13-7)/(-6sqrt3)=-1/sqrt3 -> theta=60 deg. node -e rotate(13,-6*Math.sqrt(3),7,0,0,-16,60) gives Ap~4, Cp~16, F=-16 -> 4x'^2+16y'^2=16 -> x'^2/4+y'^2/1=1. Matches source solution exactly. Replayed the printed span 13x^2-6sqrt3xy+7y^2=16 against the answer under conic-standard-form: result 'incorrect' (never 'correct'); answer self-grades 'correct'."
+  },
+  "42344e3e8168d493": {
+   "verdict": "ok",
+   "note": "KC 1 3.1 § body Hydrolysis (fs-id1808810), m66438 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "423823d9a032c23b": {
    "verdict": "ok"
@@ -13817,6 +13901,14 @@
   "48f27516e0019c0b": {
    "verdict": "ok"
   },
+  "48f369000207b6b9": {
+   "verdict": "ok",
+   "note": "KC 1 2.2 § body pH, Buffers, Acids, and Bases (fs-idp8439904), m66434 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "48f77ee9fd0b8511": {
    "verdict": "ok"
   },
@@ -14478,6 +14570,15 @@
   "4c85783901f5501b": {
    "verdict": "ok"
   },
+  "4c8ab5ae606c209a": {
+   "verdict": "ok",
+   "note": "KC 1 2.1 § body Atomic Number and Mass (fs-idp140338797638496), m66430 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "m66430 §Atomic Number and Mass: 'Together, the number of protons and neutrons determine an element's mass number'; the same paragraph defines atomic weight as 'the calculated mean of the atomic weights of its naturally occurring isotopes' — a property of the element's isotope mix, not of one atom's nucleon count. Key stands."
+   }
+  },
   "4c91df978803a673": {
    "verdict": "ok"
   },
@@ -14494,6 +14595,14 @@
   },
   "4cb8041f5be482a0": {
    "verdict": "ok"
+  },
+  "4cc2ce3b977d5bd6": {
+   "verdict": "ok",
+   "note": "KC 1 1.1 § glossary falsifiable (fs-id2026060), m66427 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "4cc4f6ddf6528954": {
    "verdict": "ok",
@@ -19437,6 +19546,14 @@
   "6835c91c922d3951": {
    "verdict": "ok"
   },
+  "6839c2cbcb3f404d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "68432a92e4eecdaf": {
    "verdict": "ok"
   },
@@ -19758,6 +19875,14 @@
   "69d1fa39ce2483ce": {
    "verdict": "ok",
    "note": "multiplechoice, Review Question 2 (CNXML exercise fs-id1770002). Options/order and keyed answer 'the movement of hydrogen ions across a mitochondrial membrane' (SOLUTION: C) match source verbatim; confirmed against the Chemiosmosis section text. The 'hydrogen atoms' distractor is not independently true — the section specifies ions (protons), not neutral atoms, cross the membrane.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "69dcbc57f1206aff": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -21093,6 +21218,10 @@
    "verdict": "ok",
    "note": "theta of 3i: Math.atan2(3,0)=1.5707963267948966=pi/2."
   },
+  "716a2107679b17e6": {
+   "verdict": "ok",
+   "note": "KC 1 1.1 § body Scientific Ethics (eip-847), m66427 — parent re-read against the module"
+  },
   "7174964459330c94": {
    "verdict": "ok"
   },
@@ -21710,6 +21839,14 @@
     "result": "agrees"
    }
   },
+  "7577e3e29bc778e0": {
+   "verdict": "ok",
+   "note": "KC 1 1.2 § glossary evolution (fs-id1650865), m66428 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "7578876f9ba0ebc8": {
    "verdict": "ok"
   },
@@ -21778,14 +21915,6 @@
   },
   "75e051f15fba03c9": {
    "verdict": "ok"
-  },
-  "75e9e044a26f737d": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "75f245163e53df09": {
    "verdict": "ok",
@@ -23166,14 +23295,6 @@
   "7cd0f84ca82b0a6f": {
    "verdict": "ok",
    "note": "CTQ fs-idp53056576; model answer is the source solution verbatim, decomposed into 2 rubric checkpoints, no new claim."
-  },
-  "7ce54fa481e056a1": {
-   "verdict": "ok",
-   "note": "Summary cloze: blanks 'Carbohydrates' from the summary's second sentence; surviving prompt does not contain the answer.",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "7ce595836eeca470": {
    "verdict": "ok",
@@ -25439,6 +25560,14 @@
   "882461048d863c55": {
    "verdict": "ok"
   },
+  "8824d06b72713c58": {
+   "verdict": "ok",
+   "note": "KC 1 2.3 § body Hydrocarbon Rings (fs-idm181888704), m66436 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "88339328d24fff30": {
    "verdict": "ok"
   },
@@ -27191,6 +27320,14 @@
   "9332999192d5c6f6": {
    "verdict": "ok"
   },
+  "933eb5f12108b2f9": {
+   "verdict": "ok",
+   "note": "KC 1 1.2 § body Adaptation (adaptation), m66428 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "935a2e49fc82cc16": {
    "verdict": "ok"
   },
@@ -27996,6 +28133,14 @@
   },
   "97ab224cf451345a": {
    "verdict": "ok"
+  },
+  "97b3865910237698": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "97b4c79690db4b90": {
    "verdict": "ok",
@@ -28946,6 +29091,14 @@
   "9cfa8c82963693f7": {
    "verdict": "ok"
   },
+  "9d001df50c72ddc1": {
+   "verdict": "ok",
+   "note": "KC 1 2.2 § body Water's Solvent Properties (fs-idm109112880), m66434 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9d01489da499a1ad": {
    "verdict": "ok"
   },
@@ -29660,6 +29813,10 @@
    "verdict": "ok",
    "note": "Table gives Mississippi $25,200 to $71,400 (rate $924/yr) and Hawaii $74,400 to $272,700 (rate $3,966/yr) from 1950-2000; Hawaii's rate is far higher, matching the declared answer."
   },
+  "a11ec05fe1cc64d6": {
+   "verdict": "ok",
+   "note": "KC 1 3.3 § body Omega Fatty Acids (fs-id2890621), m66441 — parent re-read against the module"
+  },
   "a120591a9b6cf794": {
    "verdict": "ok"
   },
@@ -30250,6 +30407,14 @@
   },
   "a4a5e7d506da1281": {
    "verdict": "ok"
+  },
+  "a4a9922447d3aa9f": {
+   "verdict": "ok",
+   "note": "KC 1 3.4 § body Denaturation and Protein Folding (fs-id1429764) + glossary chaperone (fs-id2317789), m66442 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a4ab1b9fc2958a1d": {
    "verdict": "ok",
@@ -31516,14 +31681,6 @@
   "aaaf726933302b1b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "aab26dd56dda0864": {
-   "verdict": "ok",
-   "note": "Review Question fs-idp150766624: key A = carbohydrates; matches solution and 'The primary source of energy for animals is carbohydrates, mainly glucose.'",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -33246,6 +33403,14 @@
   },
   "b46cfbf9d987231c": {
    "verdict": "ok"
+  },
+  "b47548f15df41ca4": {
+   "verdict": "ok",
+   "note": "KC 1 1.1 § body Natural Sciences (fs-id1876646), m66427 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "b47c8b35161f344f": {
    "verdict": "ok"
@@ -35412,6 +35577,14 @@
   "bfe4f075dc97d755": {
    "verdict": "ok"
   },
+  "bfe59e8d470c3c8c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "bff168300ba38fa6": {
    "verdict": "ok"
   },
@@ -35642,6 +35815,14 @@
   },
   "c15e905cdf70fe57": {
    "verdict": "ok"
+  },
+  "c15fa088802c0c6c": {
+   "verdict": "ok",
+   "note": "KC 1 3.5 § glossary transcription (fs-id1479001), m66443 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "c164f6043cebb5fd": {
    "verdict": "ok"
@@ -37373,6 +37554,10 @@
   "ca2adaf87a68a242": {
    "verdict": "ok"
   },
+  "ca2b1cb4db45f526": {
+   "verdict": "ok",
+   "note": "KC 1 3.1 § body Dehydration Synthesis (fs-id1266915), m66438 — parent re-read against the module"
+  },
   "ca2d73b9a166be39": {
    "verdict": "ok"
   },
@@ -38324,6 +38509,10 @@
   "d026ca85ee3e28f5": {
    "verdict": "ok"
   },
+  "d0330cf52bc25904": {
+   "verdict": "ok",
+   "note": "KC 1 1.2 § body Branches of Biological Study (fs-id1998058), m66428 — parent re-read against the module"
+  },
   "d03d7b34648be3dd": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -38780,14 +38969,6 @@
   "d2e3ba591977a05d": {
    "verdict": "ok",
    "note": "Practice (source fs-id1165135363342, a=32,b=24,gamma=75): Area=0.5*32*24*sin(75)=370.916 -> 370.9. Matches CNXML answer 370.9."
-  },
-  "d2f0b46def81d733": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
   },
   "d306ccb6e9634eee": {
    "verdict": "ok"
@@ -40185,6 +40366,14 @@
   },
   "db53f4478e26a4ad": {
    "verdict": "ok"
+  },
+  "db593116c1633615": {
+   "verdict": "ok",
+   "note": "KC 1 3.4 § body Types and Functions of Proteins (fs-id846709), table tab-ch03-04-01, m66442 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "db5ee21207e3cd9d": {
    "verdict": "ok",
@@ -43030,6 +43219,14 @@
     "result": "agrees"
    }
   },
+  "eaa9bb2f99b877e8": {
+   "verdict": "ok",
+   "note": "KC 1 3.2 § body Disaccharides (fs-id2016502), m66440 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "eab104067c4ecc3d": {
    "verdict": "ok",
    "note": "Visual Connection MC (m66420 visual-exercise, genetic-map figure): keyed D re-derived from the map's own centimorgan positions — red/brown eye (104.5) to aristae (0) is the largest span on the chromosome, so that pair recombines more often than wing length (65.5) to body color (48.5, 17 cM apart); the other options contradict the map's distances or the linkage rule. Restored from its visualcheck form (same question, options, and key) after the component was reverted; key re-derived and blind-solved this campaign.",
@@ -43646,14 +43843,6 @@
   "ee1b4406fb41ac99": {
    "verdict": "ok",
    "note": "Review Question fs-idp270948128, source solution C 'duodenum'. Section text (Small Intestine): 'Digestive juices from the pancreas, liver, and gallbladder ... enter the duodenum.'",
-   "solved": {
-    "by": "orchestrator",
-    "result": "agrees"
-   }
-  },
-  "ee1d343387bcfc10": {
-   "verdict": "ok",
-   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -45181,6 +45370,14 @@
   "f649c3cc233859b8": {
    "verdict": "ok"
   },
+  "f64bcb97f00f5fe9": {
+   "verdict": "ok",
+   "note": "KC 1 3.1 § glossary monomer (fs-id1797970), m66438 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f65e6cab04c6250b": {
    "verdict": "ok",
    "note": "m66407 fs-idp44793136 — model answer is the CNXML solution verbatim."
@@ -46156,6 +46353,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "fb4d260d2dd1bc95": {
+   "verdict": "ok",
+   "note": "KC 1 2.2 § body Water's Polarity (fs-idm174636784), m66434 — parent re-read against the module"
   },
   "fb5869a7f80f30de": {
    "verdict": "ok"

@@ -8,7 +8,7 @@ description: >-
   phosphorus, and sulfur, including how human activities have altered
   them.
 source_chapter: "46"
-weight: 46
+weight: 47
 ---
 
 {{< mediafigure src="biology/Figure_46_00_00" alt="Left photo shows a long, straight highway in the middle of a desert. Right photo shows a mouse." kind="photo" eager="true" >}}

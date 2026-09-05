@@ -8,7 +8,7 @@ description: >-
   Cambrian explosion, and the mass extinctions that shaped animal
   evolutionary history.
 source_chapter: "27"
-weight: 27
+weight: 28
 ---
 
 {{< mediafigure src="biology/Figure_27_00_01" alt="Photo shows a mottled brown chameleon that blends into the leaf it sits on." kind="photo" eager="true" >}}

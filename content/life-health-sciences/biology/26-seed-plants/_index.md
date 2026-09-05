@@ -7,7 +7,7 @@ description: >-
   dominant plants of most terrestrial ecosystems; and the role seed plants
   play in pollination, ecosystems, and human life.
 source_chapter: "26"
-weight: 26
+weight: 27
 ---
 
 {{< mediafigure src="biology/Figure_26_00_01abcd" alt="Photo A shows a palm tree on a beach. Photo B shows a field of wheat. Photo C shows white cotton balls on a cotton plant. Photo D shows a red poppy flower." kind="photo" eager="true" >}}

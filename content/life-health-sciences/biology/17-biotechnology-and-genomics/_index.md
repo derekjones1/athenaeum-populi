@@ -8,7 +8,7 @@ description: >-
   pharmacogenomics and disease-risk prediction to the study of a genome's
   proteome — to whole biological systems.
 source_chapter: "17"
-weight: 17
+weight: 18
 ---
 
 {{< mediafigure src="biology/Figure_B17_00_01-b67b" alt="The left part of this image is an illustration of a gene chip. The chip is a grid comprising nine columns and 21 rows. Most cells in the grid are blue, but some are green, yellow, or red. The green, yellow, or red color shows that DNA has hybridized with the chip, indicating the presence of a particular gene. The right part of the image is a satellite image of Spain, with a small region outlined in a square. This image is meant to reinforce the concept that, like regions of the world, DNA can be mapped." kind="diagram" eager="true" >}}

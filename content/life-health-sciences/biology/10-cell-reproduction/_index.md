@@ -2,7 +2,7 @@
 title: Cell Reproduction
 description: How prokaryotic and eukaryotic genomes are organized and how binary fission, the cell cycle, and its checkpoints govern cell division — and what happens when that control fails in cancer.
 source_chapter: "10"
-weight: 10
+weight: 11
 ---
 
 {{< mediafigure src="biology/Figure_10_00_02abc" alt="Three panels: (a) a black-and-white scanning electron micrograph of a dumbbell-shaped two-cell embryo, (b) a black-and-white scanning electron micrograph of a rounder, sixteen-cell embryo made of many bumpy lobes, and (c) a color photograph of an adult sea urchin, a spiny orange-and-white ball resting on a reef." kind="photo" eager="true" >}}

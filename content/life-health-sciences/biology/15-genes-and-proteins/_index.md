@@ -2,7 +2,7 @@
 title: Genes and Proteins
 description: How the genetic code specifies proteins, how prokaryotic and eukaryotic cells transcribe and process RNA, and how ribosomes translate that RNA into protein.
 source_chapter: "15"
-weight: 15
+weight: 16
 ---
 
 {{< mediafigure src="biology/Figure_15_00_01-5eb1" alt="Molecular models show a DNA double helix that is packed in a chromosome in Part a, and two proteins are shown in Parts b and c." kind="diagram" eager="true" >}}

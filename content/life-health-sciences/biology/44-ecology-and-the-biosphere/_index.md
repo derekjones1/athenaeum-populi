@@ -8,7 +8,7 @@ description: >-
   the abiotic factors and zones that define aquatic biomes; and the
   natural and human-driven factors behind global climate change.
 source_chapter: "44"
-weight: 44
+weight: 45
 ---
 
 {{< mediafigure src="biology/Figure_44_00_01abc-ca30" alt="Photo (a) shows a deer tick on a leaf. The tick has a brown oval body with a smaller, round oval toward the front. The head and legs are black. Photo (b) shows an arm with a red, circular rash enclosed in a ring-like rash. Photo (c) shows a brown mouse with a white belly and legs and large, round ears." kind="photo" eager="true" >}}

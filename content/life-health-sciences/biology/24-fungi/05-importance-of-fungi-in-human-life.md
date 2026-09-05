@@ -103,17 +103,21 @@ it was one of Louis Pasteur's achievements to purify reliable strains of baker's
 
 ### Describe the importance of fungi in the chemical and pharmaceutical industries
 
-{{< textin
-  question="Secondary metabolites of fungi are used as ________, such as antibiotics and anticoagulants."
-  answer="medicines"
-  accept="medicine"
-  hint="What broad category do antibiotics and anticoagulants both belong to?"
+{{< multiplechoice
+  question="Fungi naturally produce antibiotics in order to ________."
+  answer="kill or inhibit the growth of bacteria"
+  hint="The section explains what the antibiotics do for the fungus in its own natural environment, not what people use them for."
 >}}
+reduce the risk of rejection after organ transplant
+control the population of damaging pests
+kill or inhibit the growth of bacteria
+ferment sugars into CO₂ and ethyl alcohol
+{{< /multiplechoice >}}
 
 {{< multiplechoice
   question="Secondary metabolites of fungi are used as medicines, such as ________ and anticoagulants."
   answer="antibiotics"
-  hint="Named earlier in this section as compounds fungi produce to kill or inhibit competing bacteria."
+  hint="Penicillin and the cephalosporins, named in the secondary-metabolites paragraph, are examples of this drug class."
 >}}
 steroid hormones
 antibiotics
@@ -142,9 +146,10 @@ yeast cells are easily lysed to purify the proteins
 {{< /multiplechoice >}}
 
 {{< textin
-  question="Fungi are model organisms for the study of eukaryotic genetics and ________."
-  answer="metabolism"
-  hint="Named at the very end of the Summary, alongside genetics, as what fungi are studied for."
+  question="Many advances in modern genetics were achieved by the use of the red bread mold ________."
+  answer="Neurospora crassa"
+  accept="Neurospora|N. crassa"
+  hint="Named in the model-organisms paragraph beside the yeast whose genes led researchers to analogous human genes."
 >}}
 
 {{< multiplechoice
@@ -160,4 +165,4 @@ decomposers
 
 ---
 
-<small>This section is adapted from [Biology 2e, Section 24.5: Importance of Fungi in Human Life](https://openstax.org/books/biology-2e/pages/24-5-importance-of-fungi-in-human-life) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure B24.05.02's alt text rewritten from the manifest's terse "Part a … Part b …" phrasing to a plain description of each photographed panel, and its `kind` corrected from the manifest's diagram guess to photo (both panels are photographs, not diagrams); two inline print figure cross-references ("Figure 24.28", "Figure 24.29") changed to descriptive phrases ("see the photo below") since figures are not numbered here; the fermentation paragraph's CO<sub>2</sub> set as Unicode CO₂; this module has no glossary, so its "Key terms" heading is omitted; the three Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); six cloze text-recall and select-the-term multiple-choice items added from the section summary, and one text-recall item (the immunosuppressant drug cyclosporine) added from the section's own prose, in place of the usual glossary-derived recall items; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>
+<small>This section is adapted from [Biology 2e, Section 24.5: Importance of Fungi in Human Life](https://openstax.org/books/biology-2e/pages/24-5-importance-of-fungi-in-human-life) by Mary Ann Clark, Jung Choi, Matthew Douglas, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/biology-2e). Changes: figures re-encoded as WebP; Figure B24.05.02's alt text rewritten from the manifest's terse "Part a … Part b …" phrasing to a plain description of each photographed panel, and its `kind` corrected from the manifest's diagram guess to photo (both panels are photographs, not diagrams); two inline print figure cross-references ("Figure 24.28", "Figure 24.29") changed to descriptive phrases ("see the photo below") since figures are not numbered here; the fermentation paragraph's CO<sub>2</sub> set as Unicode CO₂; this module has no glossary, so its "Key terms" heading is omitted; the three Review Questions and two Critical Thinking Questions adapted into the closing interactive Practice block (multiple choice and self-check respectively); four cloze text-recall and select-the-term multiple-choice items added from the section summary, and three items added from the section's own prose in place of the usual glossary-derived recall items — text-recall items for the immunosuppressant drug cyclosporine and the red bread mold Neurospora crassa, and a multiple choice on why fungi produce antibiotics, with distractors drawn from the other fungal-product roles the same paragraphs name; rubric checkpoints added to each self-check, decomposing its model answer (the source solution) into check-off clauses with no new claims.</small>

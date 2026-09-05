@@ -2,7 +2,7 @@
 title: Cell Structure
 description: The cell theory, the differences between prokaryotic and eukaryotic cells, and the organelles, cytoskeleton, and intercellular connections that give eukaryotic cells their structure.
 source_chapter: "4"
-weight: 4
+weight: 5
 ---
 
 {{< mediafigure src="biology/Figure_04_00_00-2013" alt="Three microscopy panels side by side: (a) a pink- and purple-stained tissue section packed with round, dark purple cell nuclei, (b) a light micrograph of transparent, blue-stained rectangular plant cells with thick cell walls, and (c) a false-color gold scanning electron micrograph of oval and round bacterial cells on a black background, with one thin pilus connecting two of them." kind="photo" eager="true" >}}

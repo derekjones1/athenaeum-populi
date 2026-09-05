@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { BOOK_RULES, bookRulesFor, lintHugo, NAMED_FORM_ASKS } from './lints.mjs';
+import { buildPracticeIndex, practiceItems } from '../lib/practice-index.mjs';
 import { checkAnswer, parseAnswerForm } from '../../assets/js/lib/math/check-answer.mjs';
 
 const imageCases = [
@@ -2703,22 +2704,27 @@ const kcPage = (counts, kind) => [
 ].join('\n\n');
 const bioKC = 'content/life-health-sciences/biology/knowledge-check-01-02.md';
 const mathKC = 'content/math/precalculus/knowledge-check-01-02.md';
+// A quota book's check also runs the duplicate-stem rule, which needs the
+// section side: these tests supply an empty index unless they are about
+// duplicates, so a quota assertion sees quota errors only.
+const noSections = { loadPracticeIndex: () => buildPracticeIndex([]) };
+const lintKC = (src, path = bioKC, extra = {}) => lintHugo(src, path, { ...noSections, ...extra });
 
 test("a life-sciences Knowledge Check holds exactly the book's quota per section", () => {
-  const short = lintHugo(kcPage([3, 2, 3]), bioKC).errors;
+  const short = lintKC(kcPage([3, 2, 3]), bioKC).errors;
   assert.equal(short.length, 1, `one quota error expected: ${short.join('; ')}`);
   assert.match(short[0], /`### 1\.2` has 2 item\(s\) — this book's quota is exactly 3/);
-  const long = lintHugo(kcPage([3, 3, 4]), bioKC).errors;
+  const long = lintKC(kcPage([3, 3, 4]), bioKC).errors;
   assert(long.some((e) => e.includes('`### 2.1` has 4 item(s)')), 'four items overshoot the exact quota');
-  assert.equal(lintHugo(kcPage([3, 3, 3]), bioKC).errors.length, 0, 'three everywhere is clean');
-  assert.equal(lintHugo(kcPage([3, 2, 3]), mathKC).errors.length, 0, 'math Knowledge Checks have no quota');
+  assert.equal(lintKC(kcPage([3, 3, 3]), bioKC).errors.length, 0, 'three everywhere is clean');
+  assert.equal(lintKC(kcPage([3, 2, 3]), mathKC).errors.length, 0, 'math Knowledge Checks have no quota');
   assert(
-    lintHugo(kcPage([3, 3, 3]), bioKC, { bookRules: { 'life-health-sciences/biology': { knowledgeCheck: { perSection: 4, autoGraded: 1 } } } })
+    lintKC(kcPage([3, 3, 3]), bioKC, { bookRules: { 'life-health-sciences/biology': { knowledgeCheck: { perSection: 4, autoGraded: 1 } } } })
       .errors.some((e) => e.includes('quota is exactly 4')),
     'an override can move the quota for a future book or retrofit',
   );
   assert(
-    lintHugo(kcPage([3, 2, 3]), mathKC, { bookRules: { 'math/precalculus': { knowledgeCheck: { perSection: 3, autoGraded: 1 } } } })
+    lintKC(kcPage([3, 2, 3]), mathKC, { bookRules: { 'math/precalculus': { knowledgeCheck: { perSection: 3, autoGraded: 1 } } } })
       .errors.some((e) => e.includes('quota is exactly 3')),
     'a quota published for a math book would apply there too — the rule is per profile, not per shelf',
   );
@@ -2727,23 +2733,23 @@ test("a life-sciences Knowledge Check holds exactly the book's quota per section
 test('a Knowledge Check section group ends at the next chapter heading', () => {
   // 1.2 is the last section of chapter 1 and 2.1 the first of chapter 2: if the
   // `##` did not terminate 1.2's group, 1.2 would read as 2 + 4 = 6 and 2.1 as 4.
-  const errors = lintHugo(kcPage([3, 2, 4]), bioKC).errors;
+  const errors = lintKC(kcPage([3, 2, 4]), bioKC).errors;
   assert(errors.some((e) => e.includes('`### 1.2` has 2 item(s)')), '1.2 counts only its own items');
   assert(errors.some((e) => e.includes('`### 2.1` has 4 item(s)')), '2.1 counts only its own items');
 });
 
 test('a life-sciences Knowledge Check section needs an auto-graded item and refuses fillin', () => {
-  const allSelf = lintHugo(kcPage([3, 3, 3], kcSelfcheck), bioKC).errors;
+  const allSelf = lintKC(kcPage([3, 3, 3], kcSelfcheck), bioKC).errors;
   assert.equal(allSelf.filter((e) => e.includes('has no auto-graded item')).length, 3, `every all-selfcheck section errors: ${allSelf.join('; ')}`);
-  assert.equal(lintHugo(kcPage([3, 3, 3], kcTextin), bioKC).errors.length, 0, 'textin is auto-graded');
+  assert.equal(lintKC(kcPage([3, 3, 3], kcTextin), bioKC).errors.length, 0, 'textin is auto-graded');
   const withFillin = kcPage([3, 3, 3]).replace(kcMC('a', 0), '{{< fillin question="Compute a 0." answer="1" >}}');
   assert(
-    lintHugo(withFillin, bioKC).errors.some((e) => e.includes('fillin/graphplot on a life-sciences Knowledge Check')),
+    lintKC(withFillin).errors.some((e) => e.includes('fillin/graphplot on a life-sciences Knowledge Check')),
     'fillin is refused on a quota book',
   );
   const loose = `---\ntitle: x\n---\n\n${kcMC('z', 0)}\n\n## Chapter 1: One\n\n### 1.1 First\n\n${kcItems(3)}`;
   assert(
-    lintHugo(loose, bioKC).errors.some((e) => e.includes('sits above the first `### N.M`')),
+    lintKC(loose).errors.some((e) => e.includes('sits above the first `### N.M`')),
     'an item outside every section group errors',
   );
 });
@@ -2752,13 +2758,123 @@ test('a Knowledge Check selfcheck needs a rubric but no hint', () => {
   const bare = '{{< selfcheck question="Why?" >}}\nModel words here.\n{{< /selfcheck >}}';
   for (const path of [bioKC, mathKC]) {
     assert(
-      lintHugo(bare, path).errors.some((e) => e.includes('requires rubric checkpoints')),
+      lintKC(bare, path).errors.some((e) => e.includes('requires rubric checkpoints')),
       `a bare selfcheck on ${path} is refused — with no hint and no key, the rubric is what makes it self-gradable`,
     );
   }
   assert(
-    !lintHugo(kcPage([3, 3, 3], kcSelfcheck), bioKC).errors.some((e) => e.includes('missing a hint')),
+    !lintKC(kcPage([3, 3, 3], kcSelfcheck), bioKC).errors.some((e) => e.includes('missing a hint')),
     'Knowledge Check items never need hints',
+  );
+});
+
+// ---- Knowledge Check duplicate-stem rule -----------------------------------
+// The section side is a fixture page indexed the way lint-all and
+// verify-section index the real book; the check side is one section group
+// at the quota, so the only errors in play are duplicates.
+const SECTION_PAGE = 'content/life-health-sciences/biology/04-cell-structure/02-prokaryotic-cells.md';
+const sectionSrc = [
+  '{{< multiplechoice question="Which of the following organisms is a prokaryote?" answer="E. coli" hint="h" >}}',
+  'amoeba\ninfluenza A virus\ncharophyte algae\nE. coli\n{{< /multiplechoice >}}',
+  '{{< textin question="Prokaryotes are single-celled organisms of the domains ________." answer="Bacteria and Archaea" hint="h" >}}',
+  '{{< textin question="A reproductive isolation mechanism that occurs before zygote formation is called a(n) ________." answer="prezygotic barrier" hint="h" >}}',
+  '{{< selfcheck question="Explain why not all microbes are harmful." hint="h" >}}\nSome are helpful.\n===CHECKS===\nsome are helpful\n{{< /selfcheck >}}',
+].join('\n\n');
+const sectionIndex = () => buildPracticeIndex(practiceItems(sectionSrc).map((item) => ({ file: SECTION_PAGE, ...item })));
+const withSections = { loadPracticeIndex: sectionIndex };
+const kcGroup = (...items) => [
+  '---\ntitle: "Knowledge Check: Chapters 1–1"\n---',
+  '## Chapter 1: One',
+  `### 1.1 First\n\n${[...items, kcMC('filler', 1), kcMC('filler', 2)].slice(0, 3).join('\n\n')}`,
+].join('\n\n');
+const duplicateErrors = (src) => lintKC(src, bioKC, withSections).errors.filter((e) => e.includes('duplicates a section Practice item'));
+
+test('a Knowledge Check stem that repeats a section item verbatim is refused, naming the page and line', () => {
+  const copied = kcGroup('{{< textin question="Prokaryotes are single-celled organisms of the domains ________." answer="Bacteria and Archaea" >}}');
+  const errors = duplicateErrors(copied);
+  assert.equal(errors.length, 1, errors.join('; '));
+  assert.match(errors[0], /Knowledge Check textin duplicates a section Practice item \(content\/life-health-sciences\/biology\/04-cell-structure\/02-prokaryotic-cells\.md line 9\)/);
+  assert.match(errors[0], /write a fresh stem from the module/);
+  const selfcheck = kcGroup('{{< selfcheck question="Explain why not all microbes are harmful." >}}\nWords.\n===CHECKS===\nwords\n{{< /selfcheck >}}');
+  assert.equal(duplicateErrors(selfcheck).length, 1, 'a selfcheck stem counts too');
+  const fresh = kcGroup('{{< textin question="Name the two domains whose members are all prokaryotes." answer="Bacteria and Archaea" >}}');
+  assert.equal(duplicateErrors(fresh).length, 0, 'the same fact behind a different stem is allowed');
+});
+
+test('stem equality ignores case, punctuation, blanks, and Markdown emphasis', () => {
+  const respelled = kcGroup('{{< textin question="*Prokaryotes* are single celled organisms of the domains ____!" answer="Bacteria and Archaea" >}}');
+  assert.equal(duplicateErrors(respelled).length, 1, 'a respelling of the same sentence is the same stem');
+});
+
+test('a cloze that moves the blank along the same sentence is the same item; a contrast twin is not', () => {
+  const moved = kcGroup('{{< textin question="________ are single-celled organisms of the domains Bacteria and Archaea." answer="Prokaryotes" >}}');
+  const errors = duplicateErrors(moved);
+  assert.equal(errors.length, 1, errors.join('; '));
+  assert.match(errors[0], /line 9/, 'the section cloze on that sentence is named');
+  const twin = kcGroup('{{< textin question="A reproductive isolation mechanism that occurs after zygote formation is called a(n) ________." answer="postzygotic barrier" >}}');
+  assert.equal(duplicateErrors(twin).length, 0, 'before/after twins differ by a word and reconstruct to different sentences');
+});
+
+test('two multiple choices share a stem only when they share an option set; any other kind pair is a duplicate on the stem alone', () => {
+  const sameOptions = kcGroup('{{< multiplechoice question="Which of the following organisms is a prokaryote?" answer="E. coli" >}}\nE. coli\ncharophyte algae\namoeba\ninfluenza A virus\n{{< /multiplechoice >}}');
+  assert.equal(duplicateErrors(sameOptions).length, 1, 'the same options in another order are the same item');
+  const otherOptions = kcGroup('{{< multiplechoice question="Which of the following organisms is a prokaryote?" answer="Halobacterium" >}}\nHalobacterium\nParamecium\nyeast\nmoss\n{{< /multiplechoice >}}');
+  assert.equal(duplicateErrors(otherOptions).length, 0, 'a different option set is a different keyed emphasis');
+  const clozeAsChoice = kcGroup('{{< multiplechoice question="Prokaryotes are single-celled organisms of the domains ________." answer="Bacteria and Archaea" >}}\nBacteria and Archaea\nBacteria and Eukarya\nArchaea and Eukarya\n{{< /multiplechoice >}}');
+  assert.equal(duplicateErrors(clozeAsChoice).length, 1, 'a section textin re-asked as a multiple choice is still its stem');
+});
+
+test('the duplicate-stem rule refuses to run silently', () => {
+  const page = kcGroup('{{< textin question="Fresh stem here." answer="term" >}}');
+  const unsupplied = lintHugo(page, bioKC).errors;
+  assert(unsupplied.some((e) => e.includes('cannot run: lintHugo was called without options.loadPracticeIndex')), unsupplied.join('; '));
+  const failing = lintHugo(page, bioKC, { loadPracticeIndex: () => { throw new Error('content/x is not a directory'); } }).errors;
+  assert(failing.some((e) => e.includes('cannot run: content/x is not a directory')), 'a loader failure is reported in its own words');
+  assert.equal(lintHugo(page, mathKC).errors.length, 0, 'a book with no quota needs no loader');
+  const key = [];
+  lintHugo(page, bioKC, { loadPracticeIndex: (bookKey) => { key.push(bookKey); return buildPracticeIndex([]); } });
+  assert.deepEqual(key, ['life-health-sciences/biology'], 'the loader is asked for the page\'s own book');
+  // A scratch copy at a path with no book segment used to pass with every
+  // per-book rule silently unapplied — the quota included.
+  const stray = lintHugo(page, 'scratch/knowledge-check-01-02.md').errors;
+  assert(stray.some((e) => e.includes('Knowledge Check page has no book key')), stray.join('; '));
+  assert(!lintHugo(page, `scratch/${bioKC}`, withSections).errors.some((e) => e.includes('no book key')), 'a mirrored scratch path carries the key');
+});
+
+test('a Knowledge Check stem stands alone — "this section" has no referent on a cumulative page', () => {
+  const page = kcGroup('{{< textin question="According to this section, the smallest unit of a polymer is a ________." answer="monomer" >}}');
+  const errors = lintKC(page, bioKC, withSections).errors.filter((e) => e.includes('stem says'));
+  assert.equal(errors.length, 1, errors.join('; '));
+  assert.match(errors[0], /stem says "this section"/);
+  assert.equal(lintHugo(page, mathKC).errors.filter((e) => e.includes('stem says')).length, 1, 'every book\'s Knowledge Check, quota or not');
+  const chapter = kcGroup('{{< selfcheck question="What example does the chapter give?" >}}\nM.\n===CHECKS===\nm\n{{< /selfcheck >}}');
+  assert.match(lintKC(chapter, bioKC, withSections).errors.find((e) => e.includes('stem says')) ?? '', /"the chapter"/);
+  const section = '{{< textin question="According to this section, x is ________." answer="y" hint="h" >}}';
+  assert.equal(lintHugo(section, SECTION).errors.filter((e) => e.includes('stem says')).length, 0, 'a section page may point at itself');
+});
+
+// ---- each thing once (practice.distinctItems) -------------------------------
+test('a biology page asks each thing once: one sentence clozed twice, or a repeated stem, is an error on the later item', () => {
+  const bio = 'content/life-health-sciences/biology/22-prokaryotes/03-metabolism.md';
+  const page = (...items) => `## Practice\n\n### Objective\n\n${items.join('\n\n')}`;
+  const only = (src, path = bio) => lintHugo(src, path).errors.filter((e) => e.includes('duplicates an earlier item on this page'));
+  const clozeA = '{{< textin question="Nutrients required in ________ are called macronutrients." answer="large amounts" hint="h" >}}';
+  const clozeB = '{{< textin question="Nutrients required in large amounts are called ________." answer="macronutrients" hint="h" >}}';
+  const twin = '{{< textin question="Nutrients required in trace amounts are called ________." answer="micronutrients" hint="h" >}}';
+  const errors = only(page(clozeA, clozeB));
+  assert.equal(errors.length, 1, errors.join('; '));
+  assert.match(errors[0], /^L\d+: textin duplicates an earlier item on this page \(line 5, textin "Nutrients required in ________ are called macronutrients\."\)/);
+  assert.equal(only(page(clozeB, twin)).length, 0, 'a contrast twin reconstructs to a different sentence');
+  assert.equal(only(page(clozeA, clozeB), 'content/math/prealgebra/01-x/01-y.md').length, 0, 'math books do not opt in — a math stem\'s operators are its content');
+  const mc = (answer, options) => `{{< multiplechoice question="Which statement is true?" answer="${answer}" hint="h" >}}\n${options.join('\n')}\n{{< /multiplechoice >}}`;
+  assert.equal(only(page(mc('a', ['a', 'b']), mc('c', ['c', 'd']))).length, 0, 'a generic stem with another option set is another item');
+  assert.equal(only(page(mc('a', ['a', 'b']), mc('b', ['b', 'a']))).length, 1, 'the same options in another order are the same item');
+  const selfcheck = '{{< selfcheck question="Nutrients required in large amounts are called ________." hint="h" >}}\nM.\n===CHECKS===\nm\n{{< /selfcheck >}}';
+  assert.equal(only(page(clozeB, selfcheck)).length, 1, 'a selfcheck repeating a textin stem is the same stem');
+  assert.equal(
+    lintHugo(page(clozeA, clozeB), bio, { bookRules: { 'life-health-sciences/biology': { practice: { perObjective: 3, perSection: 8 } } } }).errors.filter((e) => e.includes('duplicates an earlier item')).length,
+    0,
+    'a profile without distinctItems does not run the rule',
   );
 });
 

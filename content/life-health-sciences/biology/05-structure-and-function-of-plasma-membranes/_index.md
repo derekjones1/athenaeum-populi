@@ -2,7 +2,7 @@
 title: Structure and Function of Plasma Membranes
 description: The fluid mosaic model of the plasma membrane and the passive, active, and bulk transport processes that move substances across it.
 source_chapter: "5"
-weight: 5
+weight: 6
 ---
 
 {{< mediafigure src="biology/Figure_05_00_00" alt="The ornate marble concourse of Grand Central Terminal, its tall arched windows and gilded moldings lit gold, a green ceiling painted with constellations overhead, and crowds of people moving across the floor below." kind="photo" eager="true" >}}

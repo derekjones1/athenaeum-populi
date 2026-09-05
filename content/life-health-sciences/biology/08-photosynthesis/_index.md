@@ -2,7 +2,7 @@
 title: Photosynthesis
 description: How photosynthesis captures light energy and uses it to build organic molecules through the light-dependent reactions and the Calvin cycle.
 source_chapter: "8"
-weight: 8
+weight: 9
 ---
 
 {{< mediafigure src="biology/Figure_08_00_01-951e" alt="An oval-projection world map on a black background: oceans are shaded blue to purple with bands of green, yellow, and red marking higher chlorophyll concentrations near coastlines and equatorial upwelling zones, while land is shaded green to tan by vegetation density, with two color-scale legends below the map." kind="photo" longdesc="The ocean legend, labeled Ocean Chlorophyll a Concentration in mg/m3, runs from dark purple at .01 through blue, cyan, green, yellow, and orange to red at 50. The land legend, labeled Relative amount of Land Vegetation, runs from blue-green at Maximum through green and yellow to tan at Minimum." eager="true" >}}

@@ -2,7 +2,7 @@
 title: Cell Communication
 description: How cells receive, transduce, and respond to chemical signals, from multicellular signaling mechanisms to quorum sensing in single-celled organisms.
 source_chapter: "9"
-weight: 9
+weight: 10
 ---
 
 {{< mediafigure src="biology/Figure_09_01_00-79cf" alt="A dense, sunlit outdoor crowd fills a riverside festival ground, with a stage and tents in the background and a bridge over water visible beyond them." kind="photo" eager="true" >}}

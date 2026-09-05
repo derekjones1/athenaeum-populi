@@ -112,11 +112,40 @@ What is specific to a unit-level check:
   again with a different stem and, for a multiple choice, a different keyed
   emphasis or option set; a glossary term already recalled on the section
   page may be recalled here from a differently worded meaning. Check the
-  section's `## Practice` block before writing.
+  section's `## Practice` block before writing. The lint enforces this as
+  an error — the `knowledgeCheck` profile's **duplicate-stem rule**, with
+  the section side indexed by `tools/lib/practice-index.mjs` — and the rule
+  is exact, not a similarity score: a check item is a duplicate when its
+  normalized stem (case, punctuation, blanks, Markdown emphasis, and math
+  delimiters ignored) equals the stem of any item on any section page of
+  the book, body self-checks included, unless both are multiple choices
+  with different option sets; or when a cloze's stem with its answer
+  written back into the blank equals a section cloze's, so moving the
+  blank along one summary sentence is still the same item. Near-paraphrase
+  is deliberately not measured: the sections' own contrast twins ("before"
+  and "after zygote formation") share nine words in ten, so no threshold
+  separates a lazy rewording from a legitimate twin — that judgement stays
+  with the independent checker.
 - **Spread across the section.** Where the section has three or more body
   `##` subsections, draw the three items from three different ones; with
   fewer, take the balance from the summary and glossary. Do not let a
   section's three items all test one paragraph.
+- **A stem stands alone.** On a cumulative page the only referent a stem
+  has is its `### N.M` heading, so "according to this section", "the
+  example this section gives", or "the chapter's classification" points at
+  nothing the learner can see. Write the fact into the stem instead
+  ("Which pair of disciplines builds on both the life and the physical
+  sciences?"). The Unit 1 pilot's authors wrote eight such stems in thirty;
+  the lint now rejects `this/the/that section|chapter|module|page` inside a
+  Knowledge Check question.
+- **A distractor is the module's answer to a different question.** "Every
+  option printed in the module" is easy to satisfy with a fact that is ALSO
+  a correct completion of the stem — atomic mass for "protons and neutrons
+  determine its…", a polar bear's fur for "an example of adaptation". Take
+  each distractor from a sentence that answers a neighbouring question (the
+  micronutrients' roles beside a macronutrient stem; the other properties
+  of life beside an adaptation stem) and check it against the stem as if it
+  were the key.
 - Multiple-choice options are three or four, parallel in grammar and length
   band. The corpus-wide answer-position gate measures this book across all
   its pages, so ~200 new items on one page can move it: spread keyed
@@ -179,8 +208,15 @@ keys hidden.
    `verify:ledger` until it exists, since `--require-solved` covers this
    book's Knowledge Checks like its sections.
 4. Run `npm run verify-section -- content/.../knowledge-check-XX-YY.md`; it
-   runs the lints (quota, auto-graded floor, rubric, no-hint), self-grades
-   every `textin`, and checks every `mediafigure` resolves.
+   runs the lints (quota, auto-graded floor, rubric, no-hint, duplicate
+   stem), self-grades every `textin`, and checks every `mediafigure`
+   resolves. Run it from the repository root, and give a scratch copy of
+   the page a path that ends in
+   `content/life-health-sciences/biology/knowledge-check-XX-YY.md`: the
+   book's rule profile is keyed by that path, and the duplicate-stem index
+   is read from `content/` under the working directory. A Knowledge Check
+   at a path with no `content/<shelf>/<book>/` segment is a lint error
+   ("no book key") rather than a page with no quota and no comparison.
 5. Run `npm test`; it validates the complete `content/` tree, every
    Knowledge Check range, heading, and weight, real-grader parseability, the
    answer-position gate, and all authoring lints. Move the baselines with

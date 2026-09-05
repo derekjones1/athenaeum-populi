@@ -2,7 +2,7 @@
 title: Gene Expression
 description: How cells regulate which genes they express — at the epigenetic, transcriptional, post-transcriptional, translational, and post-translational levels — and how disruptions to that regulation can cause cancer.
 source_chapter: "16"
-weight: 16
+weight: 17
 ---
 
 {{< mediafigure src="biology/Figure_16_00_01-71d2" alt="Part A depicts a cross section of an eyeball, which has a lens at the front and a cluster of blood vessels at the back. Part B depicts a liver, which is shaped like a triangle. Beneath the liver is a lobe-shaped gall bladder connected to a pancreas by a stem-like vessel. Part C is a sketch, drawn by Leonardo Da Vinci, of a man standing erect with outstretched arms. Superimposed on this image, the man has his legs spread and his arms uplifted." kind="diagram" eager="true" >}}

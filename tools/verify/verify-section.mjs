@@ -37,6 +37,7 @@ import { checkSortbins, parseSortbinsConfig } from '../../assets/js/lib/text/che
 import { lintHugo } from '../lint/lints.mjs';
 import { parseCliArgs } from '../lib/cli.mjs';
 import { hasUnpairedDollar, maskCode, mathSpans, shortcodes } from '../lib/content.mjs';
+import { loadPracticeIndexForBook } from '../lib/practice-index.mjs';
 
 const usage = (detail) => {
   if (detail) console.error(`verify-section: ${detail}`);
@@ -109,8 +110,12 @@ for (const f of files) {
   const interactiveSrc = maskCode(src);
 
   if (!skipLint) {
-    // 1. mechanical lints — every rule is an error, there is no warning level
-    lintHugo(src, f).errors.forEach(bad);
+    // 1. mechanical lints — every rule is an error, there is no warning level.
+    //    The Knowledge Check duplicate-stem rule reads the book's section
+    //    pages from `content/` under the working directory (so a scratch
+    //    copy of a check at a mirrored path is compared with the real
+    //    sections), through tools/lib/practice-index.mjs.
+    lintHugo(src, f, { loadPracticeIndex: loadPracticeIndexForBook }).errors.forEach(bad);
 
     // 2. body math
     for (const { tex, display } of mathSpans(src, { maskCode: true })) {

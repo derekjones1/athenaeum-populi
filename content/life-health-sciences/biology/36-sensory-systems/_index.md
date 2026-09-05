@@ -7,7 +7,7 @@ description: >-
   transduces sound and the vestibular system detects balance and movement;
   and how the eye transduces light into vision.
 source_chapter: "36"
-weight: 36
+weight: 37
 ---
 
 {{< mediafigure src="biology/Figure_36_00_01" alt="Photo shows a shark swimming toward the camera." kind="photo" eager="true" >}}

@@ -2,7 +2,7 @@
 title: The Evolution of Populations
 description: How population genetics and the Hardy-Weinberg principle describe evolution as a change in a population's allele frequencies, the genetic and environmental sources of variation that natural selection, genetic drift, gene flow, mutation, and nonrandom mating act on, and the different ways natural selection can shape a population's variation.
 source_chapter: "19"
-weight: 19
+weight: 20
 ---
 
 {{< mediafigure src="biology/Figure_19_00_01-fcb8" alt="This photo collage shows nine photos: a wolf, a teal branching coral colony, a slime mold, lichen, the shore of a lake with algae and trees, a spiny lion fish, a white mushroom, a sequoia photographed from below, and a bee drinking nectar from a flower." kind="photo" eager="true" >}}

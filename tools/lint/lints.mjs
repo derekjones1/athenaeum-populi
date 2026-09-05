@@ -109,6 +109,7 @@ import {
   SHORTCODE_PARAMS, shortcodeParams, shortcodeParamSpans, shortcodes,
 } from '../lib/content.mjs';
 import { decodeHtmlEntities, hasFileBackedCssImage, htmlAttribute, openTagRe } from '../lib/html.mjs';
+import { duplicatesOf, practiceItems, sameItem } from '../lib/practice-index.mjs';
 // The one objectives-callout parser, shared with the structure validator and
 // the source audit so the three tools never diagnose the callout differently.
 import { parseObjectivesCallout } from '../lib/openstax-source.mjs';
@@ -148,6 +149,16 @@ const MEDIA_MANIFEST_DIR = path.join(REPO_ROOT, 'data/media');
  * table supports one — a sortbins, so the corpus was clean before the
  * number moved.
  *
+ * `practice.distinctItems` — every item on a page of the book is distinct
+ * under the practice-index signature (tools/lib/practice-index.mjs): no two
+ * share a normalized stem (two multiple choices may, with different option
+ * sets), and no two clozes reconstruct to one sentence with the blank moved.
+ * Biology opted in on September 4, 2026, when the rule found four pairs of
+ * retrofit summary items built on one summary sentence (22.3, 24.5 twice,
+ * 34.2) and they were rewritten from other anchors. The math books do not:
+ * the signature reads words and drops signs and operators, so `2 + 4` and
+ * `-2 + (-4)` are one stem to it — a math stem's operators ARE its content.
+ *
  * `knowledgeCheck` — the per-section quota on a cumulative Knowledge Check.
  * `null` means no quota: the math Knowledge Checks sample each chapter's
  * Review Exercises and Practice Test, so their per-section counts follow the
@@ -168,7 +179,7 @@ export const BOOK_RULES = Object.freeze({
     knowledgeCheck: null,
   },
   'life-health-sciences/biology': {
-    practice: { perObjective: 3, perSection: 8 },
+    practice: { perObjective: 3, perSection: 8, distinctItems: true },
     knowledgeCheck: { perSection: 3, autoGraded: 1 },
   },
 });
@@ -1713,6 +1724,23 @@ export function lintHugo(src, filename = '', options = {}) {
   const practiceQuestions = [...fillins, ...multiplechoices, ...graphplots, ...textins, ...sortbins, ...selfchecks]
     .sort((a, b) => a.index - b.index);
 
+  // ---- each thing once (per book) ------------------------------------------
+  // `practice.distinctItems` in BOOK_RULES. A page that asks one thing twice
+  // — the same stem, or one summary sentence clozed at two blanks — pads its
+  // practice floor without testing anything more, and the retrofit produced
+  // exactly that beside a source item four times. The later item is the one
+  // reported: the earlier one is usually the source exercise.
+  if (bookRules.practice?.distinctItems) {
+    const items = practiceItems(mediaSrc);
+    for (let i = 0; i < items.length; i++) {
+      for (let j = 0; j < i; j++) {
+        if (!sameItem(items[i].signature, items[j].signature)) continue;
+        err(items[i].index, `${items[i].kind} duplicates an earlier item on this page (line ${items[j].line}, ${items[j].kind} ${JSON.stringify(items[j].question.slice(0, 60))}): ${JSON.stringify(items[i].question.slice(0, 60))} — the same stem, or the same sentence with the blank moved; ask each thing once`);
+        break;
+      }
+    }
+  }
+
   // ---- section-final Practice block ----------------------------------------
   // Every numbered section closes with a `## Practice` heading — the last
   // heading before the attribution footer, after the end-matter headings
@@ -2489,6 +2517,25 @@ export function lintHugo(src, filename = '', options = {}) {
     for (const m of src.matchAll(/\bhint="/g)) {
       err(m.index, 'hint on a Knowledge Check — quizzes never have hints; delete the attribute');
     }
+    // Every per-book Knowledge Check rule (the quota, the duplicate-stem
+    // rule) is keyed by the page's book, and a scratch copy verified at a
+    // path with no `content/<shelf>/<book>/` segment has none — it used to
+    // pass with the profile silently unapplied. Loud instead: the author
+    // mirrors the content path and gets the real rules.
+    if (!bookKeyOf(filename)) {
+      err(0, 'Knowledge Check page has no book key — its path must contain content/<shelf>/<book>/ (mirror it for a scratch copy) so the book\'s quota and duplicate-stem rules apply');
+    }
+    // A stem on a cumulative page has no referent but its `### N.M`
+    // heading: "according to this section" points at nothing the learner
+    // can see. The Unit 1 biology pilot's authors wrote eight such stems in
+    // thirty (September 4, 2026); the math checks, sampled from Review
+    // Exercises, carry none. Every book's Knowledge Check.
+    for (const item of practiceItems(mediaSrc)) {
+      const referent = item.question.match(/\b(?:this|the|that)\s+(?:section|chapter|module|page)\b/i);
+      if (referent) {
+        err(item.index, `Knowledge Check ${item.kind} stem says ${JSON.stringify(referent[0])} — a cumulative page has no such referent; write the fact into the stem: ${JSON.stringify(item.question.slice(0, 70))}`);
+      }
+    }
   }
 
   // ---- Knowledge Check per-section quota (per book) -------------------------
@@ -2520,6 +2567,33 @@ export function lintHugo(src, filename = '', options = {}) {
       }
       if (autoGradedQuestions.filter(within).length < kcQuota.autoGraded) {
         err(group.index, `Knowledge Check section \`### ${group.id}\` has no auto-graded item (multiplechoice, textin, or sortbins) — a section of only selfchecks is not tested`);
+      }
+    }
+
+    // ---- no stem duplicates a section Practice item -------------------------
+    // The section pages already carry every source exercise, so a check
+    // that re-asks one tests recall of the page, not the biology. The
+    // section side comes from the caller's loader (tools/lib/practice-index.mjs
+    // says what "the same item" means and why it is exact rather than a
+    // similarity score); the check's own items are reduced by the same
+    // function. No loader is an error, not a pass: a rule that silently
+    // compares against nothing would let every duplicate through while
+    // looking enforced.
+    if (typeof options.loadPracticeIndex !== 'function') {
+      err(0, 'Knowledge Check duplicate-stem rule cannot run: lintHugo was called without options.loadPracticeIndex (lint-all and verify-section supply it)');
+    } else {
+      let index = null;
+      try {
+        index = options.loadPracticeIndex(bookKeyOf(filename));
+      } catch (error) {
+        err(0, `Knowledge Check duplicate-stem rule cannot run: ${error.message}`);
+      }
+      for (const item of index ? practiceItems(mediaSrc) : []) {
+        const duplicates = duplicatesOf(index, item.signature);
+        if (!duplicates.length) continue;
+        const [first] = duplicates;
+        const more = duplicates.length > 1 ? ` and ${duplicates.length - 1} more` : '';
+        err(item.index, `Knowledge Check ${item.kind} duplicates a section Practice item (${first.file} line ${first.line}${more}): ${JSON.stringify(item.question.slice(0, 80))} — write a fresh stem from the module; a fact may be re-asked with a different stem, a multiple choice with a different option set`);
       }
     }
   }

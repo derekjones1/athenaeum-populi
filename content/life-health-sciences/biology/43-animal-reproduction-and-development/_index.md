@@ -11,7 +11,7 @@ description: >-
   cleavage give rise to the early embryo; and how organogenesis and
   axis formation build the vertebrate body plan.
 source_chapter: "43"
-weight: 43
+weight: 44
 ---
 
 {{< mediafigure src="biology/Figure_43_00_01-a299" alt="Photo shows a yellow seahorse with its tail curled around a fragment of coral." kind="photo" eager="true" >}}

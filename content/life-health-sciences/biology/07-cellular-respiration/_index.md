@@ -2,7 +2,7 @@
 title: Cellular Respiration
 description: How cells extract energy from glucose through glycolysis, the citric acid cycle, oxidative phosphorylation, and fermentation, and how cellular respiration is regulated.
 source_chapter: "7"
-weight: 7
+weight: 8
 ---
 
 {{< mediafigure src="biology/Figure_07_00_01-aeea" alt="A geothermal power plant's long building sits on a green, tree-covered hillside, with thick white steam billowing from cooling towers on its roof and drifting across the slope behind it." kind="photo" eager="true" >}}

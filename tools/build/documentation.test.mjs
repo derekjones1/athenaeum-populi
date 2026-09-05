@@ -180,7 +180,25 @@ test('the biology subject playbook states its lint-backed rules', () => {
   assert.equal(Number(stated[2]), floor.perSection, 'the per-section floor matches BOOK_RULES');
   assert.match(biology, /data\/media\/<book>\.json|data\/media\/biology\.json/, 'the mediafigure manifest rule');
   assert.match(biology, /knowledge-check-playbook-life-sciences\.md/, 'the KC playbook pointer');
-  assert.match(biology, /None of the eight unit Knowledge Checks is authored yet/, 'the honest status of the unit checks');
+  // The status line tracks the authored unit checks by count, so a landed
+  // check that forgets the playbook is caught here; "None … yet" was the
+  // wording until Unit 1 landed on September 4, 2026.
+  assert.match(biology, /\*\*One of the eight unit Knowledge Checks is authored: Unit 1/, 'the honest status of the unit checks');
+  assert.doesNotMatch(biology, /None of the eight unit Knowledge Checks is authored yet/);
+  // The duplicate-stem rule became a lint on September 4, 2026; both the
+  // subject playbook and the life-sciences edition must say so, and the
+  // edition must state that it is exact rather than a similarity score.
+  assert.match(biology, /no stem\s+duplicating a section Practice item \(lint-enforced/, 'the duplicate-stem lint');
+  // The each-thing-once rule is opt-in per book profile; the playbook must
+  // name the flag and say why the math books stay out.
+  assert.match(biology, /\*\*Each thing once\.\*\*/, 'the within-page distinct-items rule');
+  assert.match(biology, /`distinctItems` in the book's `practice` profile/, 'names the BOOK_RULES flag');
+  assert.equal(BOOK_RULES['life-health-sciences/biology'].practice.distinctItems, true, 'biology is opted in');
+  assert.notEqual(BOOK_RULES.default.practice.distinctItems, true, 'the default profile is not');
+  const lifeSciences = read('docs/knowledge-check-playbook-life-sciences.md');
+  assert.match(lifeSciences, /\*\*duplicate-stem rule\*\*/, 'the edition names the lint rule');
+  assert.match(lifeSciences, /Near-paraphrase\s+is deliberately not measured/, 'the edition states the similarity decision');
+  assert.match(lifeSciences, /ends in\s+`content\/life-health-sciences\/biology\/knowledge-check-XX-YY\.md`/, 'the scratch-path trap is written down');
 });
 
 test('the math playbook states the graph-recognition companion rule the lint enforces', () => {

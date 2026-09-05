@@ -394,7 +394,12 @@ clause of the source solution as it appears in the model answer (decompose
 the solution's own sentences — never add a claim it does not make), so the
 learner self-marks against the source's actual points. The rubric
 requirement for this book is a lint error, landed with the practice
-retrofit.
+retrofit. The lint proves each checkpoint against the model answer by
+word overlap (`phraseCoverage`, 0.8, no stemming, no stopword list), so a
+checkpoint is the model answer's own words in the model answer's own
+inflections: "complexes" for the model's "complex", or a connector the
+model does not use, drops a short clause under the bar. Copy the clause;
+do not restate it.
 
 **Text recall** (`textin`). Built from the section's own glossary: the
 meaning becomes the prompt, the term the answer. The shortcode is shown in
@@ -422,6 +427,13 @@ the core (§3); the rules specific to a glossary-built item:
   answer or an accept member (22.5's "The section abbreviates this process
   BNF" beside `accept="BNF"`) hands the item to exactly the learner who
   opens it — the unit-5 sweep found ten such hints on shipped pages.
+  The same care extends to the OTHER items' hints on the page: adding an
+  item keyed "glucose" beside a sibling whose hint says "converted to
+  glucose" hands it over just the same (two of the four September 4, 2026
+  rewrites did exactly this and the checker caught both). That one is a
+  checker duty, not a lint — ordinary vocabulary ("element", "polymer")
+  recurs in sibling hints 486 times across the book — so a checker reads
+  every hint on the page against every new key.
 - Never a textin whose answer is a number, a formula, or a sentence: numbers
   are `fillin` territory, sentences are `selfcheck`.
 
@@ -469,6 +481,21 @@ Review Question under the objective it tests, its Critical Thinking item
 under the objective it argues, and fill thin groups with glossary recall.
 Record every item in the source ledger with its exercise or definition id.
 
+**Each thing once.** Every item on a biology page — body self-checks and the
+Practice block alike — is distinct under the practice-index signature
+(`tools/lib/practice-index.mjs`): no two items share a normalized stem (two
+multiple choices may, if their option sets differ), and no two clozes
+reconstruct to the same sentence with the blank moved. The lint reports the
+later item as an error (`distinctItems` in the book's `practice` profile,
+`BOOK_RULES`). Biology only: the signature reads words and drops signs and
+operators, so a math stem's `2 + 4` and `-2 + (-4)` are one stem to it, and
+the math books are not opted in. The rule landed on September 4, 2026, when
+it found four pairs (22.3, 24.5 twice, 34.2), each two retrofit summary
+items built on one summary sentence; one of each pair was rewritten from a
+body passage of the same module. A thin objective group reaches for a
+different summary sentence, a glossary term, or a body passage — never a
+second blank in a sentence already asked.
+
 ## Verification
 
 - `npm run verify-section -- <page>` runs the lints and self-grades every
@@ -510,17 +537,25 @@ Record every item in the source ledger with its exercise or definition id.
 
 ## Knowledge checks
 
-**None of the eight unit Knowledge Checks is authored yet** —
-`find content -name 'knowledge-check-*.md'` lists only the math pages. The
-sections are complete; the unit checks are this book's next content
-programme, and the quota in `BOOK_RULES` (`tools/lint/lints.mjs`) and the
-life-sciences playbook are in place for when they land.
+**One of the eight unit Knowledge Checks is authored: Unit 1 (Chapters
+1–3), `knowledge-check-01-03.md`, 30 items over 10 sections, landed
+September 4, 2026 as the pilot** — the remaining seven are this book's
+next content programme, with the quota in `BOOK_RULES`
+(`tools/lint/lints.mjs`) and the life-sciences playbook in place for them.
+The pilot's shape: one Sonnet author per chapter writing a scratch block at
+a mirrored `content/…` path, one Sonnet checker per chapter, the parent
+assembling, fixing, blind-solving, and running the gates. What the pilot
+taught is in the playbook's "Content rules" (stems that stand alone,
+distractors as the module's answer to a different question) and in the
+checker brief (sibling-hint leaks).
 
 Cumulative assessments for this book will be one page per unit, written to
 `docs/knowledge-check-playbook-life-sciences.md`: fixed three items per
-section (lint-enforced), author-written from the module text, no hints,
-subsection provenance in the ledgers. Read that playbook, not the math
-edition, before building one.
+section (lint-enforced), author-written from the module text, no stem
+duplicating a section Practice item (lint-enforced, exact after
+normalization — `tools/lib/practice-index.mjs` indexes every section page;
+the playbook states the rule), no hints, subsection provenance in the
+ledgers. Read that playbook, not the math edition, before building one.
 
 ## Done checklist (in addition to the core checklist)
 

@@ -7,7 +7,7 @@ description: >-
   mammalian heart and blood vessels and the cardiac cycle; and how blood
   flow and blood pressure are regulated through the body.
 source_chapter: "40"
-weight: 40
+weight: 41
 ---
 
 {{< mediafigure src="biology/Figure_40_00_01-0a98" alt="Photo shows intersecting highways and secondary roads." kind="photo" eager="true" >}}

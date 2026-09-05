@@ -2,7 +2,7 @@
 title: Metabolism
 description: The forms of energy and the laws of thermodynamics that govern metabolism, and the roles of ATP and enzymes in cellular chemical reactions.
 source_chapter: "6"
-weight: 6
+weight: 7
 ---
 
 {{< mediafigure src="biology/Figure_06_00_01-db8f" alt="A hummingbird with its wings blurred in motion hovers beside a red flower-shaped feeder, its long thin beak inserted into one of the feeder's yellow-rimmed ports." kind="photo" eager="true" >}}

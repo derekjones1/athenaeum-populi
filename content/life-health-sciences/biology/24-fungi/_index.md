@@ -8,7 +8,7 @@ description: >-
   as parasites and pathogens of plants, animals, and humans; and how humans
   rely on fungi for food, fermentation, and medicine.
 source_chapter: "24"
-weight: 24
+weight: 25
 ---
 
 {{< mediafigure src="biology/Figure_24_00_01abcf" alt="Part a is a photo of a cluster of tan mushrooms with bell-shaped caps on slender stalks, growing among moss. Part b is a photo of a bright yellow-orange coral fungus with lobed, finger-like branches growing among moss. Part c is an electron micrograph of a slender fungal stalk that branches into long chains of round spores, with a 10 µm scale bar." kind="photo" eager="true" >}}

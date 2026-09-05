@@ -8,7 +8,7 @@ description: >-
   drugs are used against major human viral illnesses; and how prions and
   viroids act as acellular infectious agents distinct from viruses.
 source_chapter: "21"
-weight: 21
+weight: 22
 ---
 
 {{< mediafigure src="biology/Figure_21_00_01-9ea7" alt="The left electron micrograph shows the tobacco mosaic virus, which is shaped like a long, thin rectangle. The right photo shows an orchid leaf in varying states of decay. Initial symptoms are yellow and brown spots. Eventually, the entire leaf turns yellow with brown blotches, then completely brown." kind="photo" eager="true" >}}

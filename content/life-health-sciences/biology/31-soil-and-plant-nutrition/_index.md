@@ -7,7 +7,7 @@ description: >-
   including mycorrhizae and nitrogen fixation, to make better use of
   nutritional resources.
 source_chapter: "31"
-weight: 31
+weight: 32
 ---
 
 {{< mediafigure src="biology/Figure_31_00_01ab" alt="Left photo shows a dark green seedling with three leaves. The seedling is growing on a plot of dark-brown soil. Right photo shows a variety of red, orange, green and yellow squashes." kind="photo" eager="true" >}}

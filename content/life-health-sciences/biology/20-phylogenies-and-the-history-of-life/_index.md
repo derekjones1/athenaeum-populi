@@ -8,7 +8,7 @@ description: >-
   transfer and the web and ring models have complicated the single-tree
   picture of life's history.
 source_chapter: "20"
-weight: 20
+weight: 21
 ---
 
 {{< mediafigure src="biology/Figure_20_00_01" alt="Photo shows a bee collecting nectar from a flower." kind="photo" eager="true" >}}
