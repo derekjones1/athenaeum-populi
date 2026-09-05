@@ -1229,10 +1229,11 @@ test('the biology sidebar nests chapters under their unit, and a math sidebar st
     'Unit 8: Ecology',
   ]);
   // Each unit's own list holds exactly the authored chapters of that unit,
-  // in source order, and every chapter or section link in the book sits
-  // inside a unit.
+  // in source order, closed by the unit's Knowledge Check (one page per
+  // unit, weighted after its last chapter), and every chapter, section, or
+  // check link in the book sits inside a unit.
   const unit1Titles = await visible.nth(0).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
-  expect(unit1Titles).toEqual(['The Study of Life', 'The Chemical Foundation of Life', 'Biological Macromolecules']);
+  expect(unit1Titles).toEqual(['The Study of Life', 'The Chemical Foundation of Life', 'Biological Macromolecules', 'Knowledge Check: Unit 1 — Chapters 1–3']);
   const unit2Titles = await visible.nth(1).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
   expect(unit2Titles).toEqual([
     'Cell Structure',
@@ -1242,6 +1243,7 @@ test('the biology sidebar nests chapters under their unit, and a math sidebar st
     'Photosynthesis',
     'Cell Communication',
     'Cell Reproduction',
+    'Knowledge Check: Unit 2 — Chapters 4–10',
   ]);
   const unit3Titles = await visible.nth(2).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
   expect(unit3Titles).toEqual([
@@ -1252,26 +1254,28 @@ test('the biology sidebar nests chapters under their unit, and a math sidebar st
     'Genes and Proteins',
     'Gene Expression',
     'Biotechnology and Genomics',
+    'Knowledge Check: Unit 3 — Chapters 11–17',
   ]);
   const unit4Titles = await visible.nth(3).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
   expect(unit4Titles).toEqual([
     'Evolution and the Origin of Species',
     'The Evolution of Populations',
     'Phylogenies and the History of Life',
+    'Knowledge Check: Unit 4 — Chapters 18–20',
   ]);
   const unit5Titles = await visible.nth(4).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
-  expect(unit5Titles).toEqual(['Viruses', 'Prokaryotes: Bacteria and Archaea', 'Protists', 'Fungi', 'Seedless Plants', 'Seed Plants', 'Introduction to Animal Diversity', 'Invertebrates', 'Vertebrates']);
+  expect(unit5Titles).toEqual(['Viruses', 'Prokaryotes: Bacteria and Archaea', 'Protists', 'Fungi', 'Seedless Plants', 'Seed Plants', 'Introduction to Animal Diversity', 'Invertebrates', 'Vertebrates', 'Knowledge Check: Unit 5 — Chapters 21–29']);
   const unit6Titles = await visible.nth(5).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
-  expect(unit6Titles).toEqual(['Plant Form and Physiology', 'Soil and Plant Nutrition', 'Plant Reproduction']);
+  expect(unit6Titles).toEqual(['Plant Form and Physiology', 'Soil and Plant Nutrition', 'Plant Reproduction', 'Knowledge Check: Unit 6 — Chapters 30–32']);
   const unit7Titles = await visible.nth(6).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
-  expect(unit7Titles).toEqual(['The Animal Body: Basic Form and Function', 'Animal Nutrition and the Digestive System', 'The Nervous System', 'Sensory Systems', 'The Endocrine System', 'The Musculoskeletal System', 'The Respiratory System', 'The Circulatory System', 'Osmotic Regulation and Excretion', 'The Immune System', 'Animal Reproduction and Development']);
+  expect(unit7Titles).toEqual(['The Animal Body: Basic Form and Function', 'Animal Nutrition and the Digestive System', 'The Nervous System', 'Sensory Systems', 'The Endocrine System', 'The Musculoskeletal System', 'The Respiratory System', 'The Circulatory System', 'Osmotic Regulation and Excretion', 'The Immune System', 'Animal Reproduction and Development', 'Knowledge Check: Unit 7 — Chapters 33–43']);
   const unit8Titles = await visible.nth(7).locator('> ul > li > .hextra-sidebar-item a > span').allInnerTexts();
-  expect(unit8Titles).toEqual(['Ecology and the Biosphere', 'Population and Community Ecology', 'Ecosystems', 'Conservation Biology and Biodiversity']);
-  // 47 chapter landings + 208 sections, rendered once.
+  expect(unit8Titles).toEqual(['Ecology and the Biosphere', 'Population and Community Ecology', 'Ecosystems', 'Conservation Biology and Biodiversity', 'Knowledge Check: Unit 8 — Chapters 44–47']);
+  // 47 chapter landings + 208 sections + 8 unit Knowledge Checks, rendered once.
   const bookLinks = page.locator('aside a[href^="/life-health-sciences/biology/"]:not([href="/life-health-sciences/biology/"])');
   const insideUnit = page.locator('aside .ap-sidebar-unit a[href^="/life-health-sciences/biology/"]');
-  expect(await bookLinks.count()).toBe(255);
-  expect(await insideUnit.count()).toBe(255);
+  expect(await bookLinks.count()).toBe(263);
+  expect(await insideUnit.count()).toBe(263);
   // The desktop sidebar is the drawer list with its drawer-only rows hidden:
   // the shelf entry and the book's "Overview" row wrap the tree as
   // .ap-sidebar-shell (row hidden, indentation flattened from md up), and
