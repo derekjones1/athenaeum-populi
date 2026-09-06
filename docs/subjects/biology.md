@@ -495,6 +495,144 @@ units, or steps rather than categories is not sortbins material — transcribe
 it and move on. Syntax and the interleave/giveaway rules are in the core
 playbook §3.
 
+**Both table orientations qualify, and every qualifying table gets its
+sortbins** *(life sciences, Sep 6 2026)*. The categories may run along
+the columns (prokaryote | eukaryote) or down the rows (a "Vegetative
+Cells" row against an "Endospores" row; a stain-type column whose 2–4 rows
+are the categories and whose other columns are their attributes) —
+`judgeSortbins` reads both. A table with more than four category rows
+takes the four the page's objective serves, or two sortbins under two
+objectives, never a five-bin item. When a body Check Your Understanding
+self-check or a Short Answer already asks the table's contrast ("What kinds
+of specimens are best examined using TEM? SEM?"), convert THAT item into
+the sortbins rather than adding a second item beside it — each thing is
+asked once (`distinctItems`), and the campaign's aim is a more
+deterministic answer form, not a longer Practice block. A page authored
+before this rule is retrofitted the same way: enumerate its Markdown
+tables, skip the quantity/unit/step tables, and give each remaining one a
+sortbins under the objective it serves or in the self-check it already
+answers.
+
+**Unkeyed source questions: graded when the module fixes the answer**
+*(life sciences, Sep 6 2026)*. Biology keys every exercise; Microbiology
+prints no key for its Short Answer, Critical Thinking, and Check Your
+Understanding questions, and a book that transcribes all of them as
+`selfcheck` ends up more than half self-graded. The decision (Derek's) is
+to keep the question count where the source puts it and change the ANSWER
+FORM wherever a deterministic one is honest: an unkeyed source question
+becomes a graded item when ONE artifact of the same module fixes its
+whole answer, and stays a `selfcheck` otherwise. The four honest forms:
+
+- **A single body (or summary) sentence states the answer** →
+  `multiplechoice`: the source question verbatim as the stem, the key in
+  the sentence's own words, 2–4 distractors that are the module's own
+  sibling terms or phrases of the same kind (other components, other
+  scientists, other stains — never an invented option, never a claim the
+  module does not make); or a `textin` when the answer is a defined term
+  or a name of ≤4 words the sentence prints verbatim ("Name the device
+  that is used to create thin sections…" → `ultramicrotome`).
+- **The question offers its own alternatives** ("low or high frequency",
+  "reflect, absorb, or transmit", "positive, negative, or differential",
+  a Critical Thinking item printed with lettered options but no
+  `<solution>`) → `multiplechoice` whose options are exactly those
+  alternatives, in the question's order, keyed by the module sentence that
+  settles it. The stem keeps the source's wording, alternatives included.
+- **A comparison table or a compare-and-contrast pair of the module fixes
+  a category assignment** ("Explain the difference between simple and
+  compound microscopes", "What kinds of specimens are best examined using
+  TEM? SEM?", "Compare and contrast monotrichous, amphitrichous,
+  lophotrichous, and peritrichous flagella") → `sortbins`: the bins are
+  the categories the question names, the items the module's own
+  distinguishing phrases, 4–12 of them, interleaved, no bin-label word on
+  an item. A "which of these" question over the page's own list of
+  structures ("Which of the following are important for adherence…")
+  is the same form with applies/does-not-apply bins.
+- **A lettered figure question whose key is a lettered panel or label the
+  figure prints** ("Which of the micrographs above is a good example of
+  staphylococci?") → `mediafigure` + `multiplechoice` with the letters as
+  options, keyed from the image. The checker reads the key from the image
+  independently, and the ledger note says `figure-keyed`.
+
+It **stays a `selfcheck`** when the honest answer needs several module
+sentences assembled (explain / describe / why questions whose module answer
+is a paragraph), when the source asks the learner to speculate or argue,
+when the answer is a list longer than a form holds (label nine microscope
+parts), when any distractor would also be defensible from the module, or
+when the key would need an inference the module does not print (the
+L-form Gram-stain colour is reasoned, not stated — it stays prose).
+"Explain" and "why" in the stem are a signal, not a verdict: "Explain why
+dispersion occurs when white light passes through a prism" is one
+sentence of the module and converts; "Explain how historical
+understandings of disease contributed to attempts to treat and contain
+disease" is five and does not.
+
+Provenance is what makes the conversion honest, so every converted item:
+keeps the source stem verbatim (a referent added for "this section" or
+"above", nothing else — a `sortbins` may append the sort instruction the
+form needs, "…by sorting each phrase under the microscope it describes",
+or carry the instruction alone when the source question is a bare
+"Name…" whose categories the bins already print; the ledger note quotes
+the source question either way); names in its ledger note the ONE sentence, table,
+or figure that fixes the key (`§ <subsection>`, quoted); is answered by
+the checker from that artifact with the key covered and by the
+orchestrator's blind solve like every other graded item; and is counted
+in the footer's `Changes:` clause ("N of the source's unkeyed
+Short Answer and Critical Thinking questions and M Check Your
+Understanding questions are graded from the module's own sentences,
+tables, or figures rather than answered in prose; the source prints no
+key for them"). `verify-source-keys` reports such a `multiplechoice` as
+`unkeyed` (the matched exercise prints no solution) and a converted Check
+Your Understanding item as `unmatched` (a `<note>` is not an exercise);
+neither is a defect and neither is confirmed — the ledger note and the
+solve are the readings. The old rule, "never key a question the source
+does not key", survives as its checker duty: a converted item whose key
+needs anything beyond the named artifact is a defect, reported with the
+sentence that is missing. A hint on a converted item follows the usual
+rules and must not print the key or the bin assignment.
+
+**What the first retrofit's checkers caught** (Microbiology chapters 1–3,
+Sep 6 2026: 66 conversions plus three table items on eleven pages, 13
+defects across three Sonnet checkers, one per chapter), so the next run
+checks for them on purpose:
+
+- **A pre-existing hint becomes a leak the moment a self-check turns
+  graded.** Five of the thirteen. A hint on an untouched Practice item
+  that stated "the other factor is wavelength", or the module's
+  defining acid-fast sentence, was harmless beside a self-check and hands
+  over the key once the same fact is a `multiplechoice` or a bin. The
+  page-wide read of every hint against every key must include the hints
+  the diff did not touch, and the fix is to reword the OLDER hint.
+- **Two new items built from one set of techniques re-ask each other.**
+  A "which techniques are differential" `sortbins` and an "is endospore
+  staining differential" `multiplechoice`, each honest against its own
+  sentence, asked the same fact twice. Check new items against each
+  other, not only against the module.
+- **A shared trait is not a sortbins item.** "A compound microscope with
+  two or more lenses" is true of brightfield and of darkfield (the module
+  defines darkfield as a modified brightfield). Every item must be true of
+  exactly one bin by the module's own words.
+- **An organism must be named, not described.** "A common gram-negative
+  bacterium found in the gut" for *E. coli* is invented; the module only
+  says *E. coli* shows a peritrichous arrangement. Label the item with the
+  name the module prints.
+- **A table cell with a qualifier does not generalize.** "Nearly all
+  endospore-producing bacteria gram-positive as vegetative cells" is not
+  "vegetative cells stain gram-positive"; drop the row rather than
+  flatten it, and say so in the footer.
+- **A distractor the page itself contradicts** ("their ribosomes are
+  smaller than prokaryotic ribosomes") is invented even though it is
+  wrong; build it from a module sentence.
+- **A conversion that re-asks a source item's fact stays prose.** "How
+  are viruses different" keyed on acellularity beside the source's "Which
+  of the following is acellular?" is reverse recall; it went back to a
+  `selfcheck`.
+- **Vary the key's position.** Authors building options from a module
+  sentence put the key first by reflex: 24 of 33 converted four-option
+  items keyed A, and the corpus-wide `mc-distribution` test failed the
+  book at 45% first-option. Place the key at a different position on each
+  new item (source-keyed items and "the question's own alternatives" items
+  keep their printed order); the parent rotated 17 keys after the fact.
+
 **The `## Practice` block** follows the core rule — one `### ` group per
 objective in callout order, every item from the source's keyed sets, the
 summary, or the glossary, every regular-section item hinted — at this book's

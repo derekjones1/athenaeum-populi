@@ -4,6 +4,67 @@
   "bundle": "microbiology",
   "commit": "633850257fbd3ccf6187b9428c55e80b69236382",
   "figures": {
+    "Figure_10_02_01": {
+      "source": "media/Figure_10_02_01.jpg",
+      "sourceSha256": "08df4b4ad10580a0c4bd0a603022e7e38067b17e35d9d1e48ace713adcfd7e36",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 800,
+      "height": 561,
+      "variants": [
+        {
+          "width": 800,
+          "height": 561,
+          "file": "Figure_10_02_01-800.webp"
+        }
+      ],
+      "alt": "Like a clock, the cell cycles from interphase to the mitotic phase and back to interphase. Most of the cell cycle is spent in interphase, which is subdivided into G1, S, and G2 phases. Cell growth occurs during G1, DNA synthesis occurs during S, and more growth occurs during G2. The mitotic phase consists of mitosis, in which the nuclear chromatin is divided, and cytokinesis, in which the cytoplasm is divided, resulting in two daughter cells.",
+      "caption": "The cell cycle consists of interphase and the mitotic phase. During interphase, the cell grows and the nuclear DNA is duplicated. Interphase is followed by the mitotic phase. During the mitotic phase, the duplicated chromosomes are segregated and distributed into daughter nuclei. The cytoplasm is usually divided as well, resulting in two daughter cells. (attribution: Biology 2e , Rice University, OpenStax, under CC BY 4.0 license)"
+    },
+    "Figure_10_02_02": {
+      "source": "media/Figure_10_02_02.png",
+      "sourceSha256": "b42dbb56ab4d824ce42eedd7f423a328b1d465272bca66a81393ec9f911cba5b",
+      "module": "m58793",
+      "kind": "diagram",
+      "width": 975,
+      "height": 762,
+      "variants": [
+        {
+          "width": 800,
+          "height": 625,
+          "file": "Figure_10_02_02-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 762,
+          "file": "Figure_10_02_02-975.webp"
+        }
+      ],
+      "alt": "This diagram shows the five phases of mitosis and cytokinesis. During prophase, the chromosomes condense and become visible, spindle fibers emerge from the centrosomes, the nuclear envelope breaks down, and the nucleolus disappears. During prometaphase, the chromosomes continue to condense and kinetochores appear at the centromeres. Mitotic spindle microtubules attach to the kinetochores, and centrosomes move toward opposite poles. During metaphase, the mitotic spindle is fully developed, and centrosomes are at opposite poles of the cell. Chromosomes line up at the metaphase plate and each sister chromatid is attached to a spindle fiber originating from the opposite pole. During anaphase, the cohesin proteins that were binding the sister chromatids together break down. The sister chromatids, which are now called chromosomes, move toward opposite poles of the cell. Non-kinetochore spindle fibers lengthen, elongating the cell. During telophase, chromosomes arrive at the opposite poles and begin to decondense. The nuclear envelope reforms. During cytokinesis in animals, a cleavage furrow separates the two daughter cells. In plants, a cell plate separates the two cells.",
+      "caption": "Karyokinesis (or mitosis) is divided into five stages—prophase, prometaphase, metaphase, anaphase, and telophase. The pictures at the bottom were taken by fluorescence microscopy (hence, the black background) of cells artificially stained by fluorescent dyes: blue fluorescence indicates DNA (chromosomes) and green fluorescence indicates microtubules (spindle apparatus). (attribution: Biology 2e , Rice University, OpenStax, under CC BY 4.0 license)"
+    },
+    "Figure_11_01_06": {
+      "source": "media/Figure_11_01_06.jpg",
+      "sourceSha256": "d6a92f9a3888e69d847d36a41ee28227c311139caca4b2ae3cfa033f4257728a",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 975,
+      "height": 900,
+      "variants": [
+        {
+          "width": 800,
+          "height": 738,
+          "file": "Figure_11_01_06-800.webp"
+        },
+        {
+          "width": 975,
+          "height": 900,
+          "file": "Figure_11_01_06-975.webp"
+        }
+      ],
+      "alt": "This illustration compares meiosis and mitosis. In meiosis, there are two rounds of cell division, whereas there is only one round of cell division in mitosis. In both mitosis and meiosis, DNA synthesis occurs during S phase. Synapsis of homologous chromosomes occurs in prophase I of meiosis, but does not occur in mitosis. Crossover of chromosomes occurs in prophase I of meiosis, but does not occur in mitosis. Homologous pairs of chromosomes line up at the metaphase plate during metaphase I of meiosis, but not during mitosis. Sister chromatids line up at the metaphase plate during metaphase II of meiosis and metaphase of mitosis. The result of meiosis is four haploid daughter cells, and the result of mitosis is two diploid daughter cells.",
+      "caption": "Meiosis and mitosis are both preceded by one cycle of DNA replication; however, meiosis includes two nuclear divisions. The four daughter cells resulting from meiosis are haploid and genetically distinct. The daughter cells resulting from mitosis are diploid and identical to the parent cell. (credit: Biology 2e , Rice University, OpenStax, under CC BY 4.0 license)"
+    },
     "OSC_Microbio_01_00_splash": {
       "source": "media/OSC_Microbio_01_00_splash.jpg",
       "sourceSha256": "ef8fffaa20232cc08dd7aa0483cefe587168812bf87100c0a2444653e1694cfe",
@@ -1394,6 +1455,1185 @@
       ],
       "alt": "Micrograph a shows clear spirals on a black background. Micrograph b shows purple spirals on a clear background. Micrograph c shows three-dimensional spirals.",
       "caption": "(a) Living, unstained Treponema pallidum spirochetes can be viewed under a darkfield microscope. (b) In this brightfield image, a modified Steiner silver stain is used to visualized T. pallidum spirochetes. Though the stain kills the cells, it increases the contrast to make them more visible. (c) While not used for standard diagnostic testing, T. pallidum can also be examined using scanning electron microscopy. (credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by Centers for Disease Control and Prevention; credit c: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_03_00_splash": {
+      "source": "media/OSC_Microbio_03_00_splash.jpg",
+      "sourceSha256": "ab93aa9f635217b4546878e65555ff0fc44acf5e5e395ff90000329db05685fb",
+      "module": "m58789",
+      "kind": "photo",
+      "width": 2025,
+      "height": 898,
+      "variants": [
+        {
+          "width": 800,
+          "height": 354,
+          "file": "OSC_Microbio_03_00_splash-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 709,
+          "file": "OSC_Microbio_03_00_splash-1600.webp"
+        }
+      ],
+      "alt": "Photos of various mirobes. A) a triangular cell approximately 10 µm long with long flagella. B) Many rod shaped cells approximately 10 µm long. C) Round cells approximately 85 µm in diameter. D) a portion of a large oval over 200 µm in length with smaller spherical structures inside. E) Long, ribbon shaped cells approximately 20 µm in length. F) Many long spiral cells.",
+      "caption": "Microorganisms vary visually in their size and shape, as can be observed microscopically; but they also vary in invisible ways, such as in their metabolic capabilities. (credit a, e, f: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by NIAID; credit c: modification of work by CSIRO; credit d: modification of work by “Microscopic World”/YouTube)"
+    },
+    "OSC_Microbio_03_01_Pasteur": {
+      "source": "media/OSC_Microbio_03_01_Pasteur.jpg",
+      "sourceSha256": "a78d30941c34cae0e53e3cd4d0ddfee0196f9578e6ec3563c1a3021160a792c7",
+      "module": "m58790",
+      "kind": "photo",
+      "width": 1100,
+      "height": 1117,
+      "variants": [
+        {
+          "width": 800,
+          "height": 812,
+          "file": "OSC_Microbio_03_01_Pasteur-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 1117,
+          "file": "OSC_Microbio_03_01_Pasteur-1100.webp"
+        }
+      ],
+      "alt": "a) Photo of Louis Pasteur b) Photo of Pasteur’s flask – a round flask that is only opened to the outside through a long S-shaped tube. c) A drawing of Pasteur’s experiment. The top diagram shows the swan-neck flask from (b) containing broth that is being boiled to kill microorganisms in the broth. Dust, particles, and bacteria settle in the bend of the flask. After the boiling process the cooled flask remains sterile because the curve of the bend of the flask prevents bacteria and particles in air from entering the main reservoir and contaminating the broth. So, no contamination occurs. The bottom diagram shows the same flask being boiled. Next, the swan-neck is removed and the flask is opened to the environment. When the neck of the flask is broken off, bacteria reach the sterile broth and organism growth occurs. This is seen as cloudiness in the broth.",
+      "caption": "(a) French scientist Louis Pasteur, who definitively refuted the long-disputed theory of spontaneous generation. (b) The unique swan-neck feature of the flasks used in Pasteur’s experiment allowed air to enter the flask but prevented the entry of bacterial and fungal spores. (c) Pasteur’s experiment consisted of two parts. In the first part, the broth in the flask was boiled to sterilize it. When this broth was cooled, it remained free of contamination. In the second part of the experiment, the flask was boiled and then the neck was broken off. The broth in this flask became contaminated. (credit b: modification of work by “Wellcome Images”/Wikimedia Commons)"
+    },
+    "OSC_Microbio_03_01_Rediexpt": {
+      "source": "media/OSC_Microbio_03_01_Rediexpt.jpg",
+      "sourceSha256": "d1232c4d16533b35f7758bee2a84296689c721341ad97ba29f4fdc34a9ed17e2",
+      "module": "m58790",
+      "kind": "photo",
+      "width": 1049,
+      "height": 562,
+      "variants": [
+        {
+          "width": 800,
+          "height": 428,
+          "file": "OSC_Microbio_03_01_Rediexpt-800.webp"
+        },
+        {
+          "width": 1049,
+          "height": 562,
+          "file": "OSC_Microbio_03_01_Rediexpt-1049.webp"
+        }
+      ],
+      "alt": "An open container with meat has flies and the formation of maggots in meat. A cork-sealed container of meat has no flies and no formation of maggots in meat. A gauze covered container of meat has flies and maggots on the surface of the gauze but no maggots in the meat.",
+      "caption": "Francesco Redi’s experimental setup consisted of an open container, a container sealed with a cork top, and a container covered in mesh that let in air but not flies. Maggots only appeared on the meat in the open container. However, maggots were also found on the gauze of the gauze-covered container."
+    },
+    "OSC_Microbio_03_01_historsci": {
+      "source": "media/OSC_Microbio_03_01_historsci.jpg",
+      "sourceSha256": "859e8ba87ea277a2d8d8202ba42e8f4a306d2b0cec12c81887c8fdefd7045100",
+      "module": "m58790",
+      "kind": "photo",
+      "width": 900,
+      "height": 349,
+      "variants": [
+        {
+          "width": 800,
+          "height": 310,
+          "file": "OSC_Microbio_03_01_historsci-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 349,
+          "file": "OSC_Microbio_03_01_historsci-900.webp"
+        }
+      ],
+      "alt": "a) drawing of Francesco Redi. B) drawing of John Needham c) drawing of Lazzaro Spallanzani.",
+      "caption": "(a) Francesco Redi, who demonstrated that maggots were the offspring of flies, not products of spontaneous generation. (b) John Needham, who argued that microbes arose spontaneously in broth from a “life force.” (c) Lazzaro Spallanzani, whose experiments with broth aimed to disprove those of Needham."
+    },
+    "OSC_Microbio_03_02_Endosymbio": {
+      "source": "media/OSC_Microbio_03_02_Endosymbio.jpg",
+      "sourceSha256": "357127762732f93cf183c6dc6aa5d99c2a81972a799cb5aa6d78ba261ef779c8",
+      "module": "m58791",
+      "kind": "photo",
+      "width": 1300,
+      "height": 732,
+      "variants": [
+        {
+          "width": 800,
+          "height": 450,
+          "file": "OSC_Microbio_03_02_Endosymbio-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 732,
+          "file": "OSC_Microbio_03_02_Endosymbio-1300.webp"
+        }
+      ],
+      "alt": "Diagram of the endosymbiotic theory. Step 1 shows a cell labeled proto-eukaryote; the cell contains an outer membrane and DNA inside. The text reads: infoldings in the plasm amembrane of an ancestral cell gave rise to endomembrane components, including a nucleus and endoplasmic reticulum. The cell now contains DNA within a membrane (the nucleus). Outside are many folds labeled endoplasmic reticulum. Step 2 reads: In a first endosymbiotic event, the ancestral eukaryote consumed aerobic bacteria that evolved into mitochondria. The cell how shows a small oval entering the larger cell; the small oval is labeled aerobic bacterium. Once the small oval is in the cell, it is now labeled mitochondrion. The larger cell is now labeled modern heterotrophic eukaryote. Step 3 reads: in a second endosymbiotic event, the early eukaryote consumed photosynthetic bacteria that evolved into chloroplast. The cell is shown engulfing another small oval labeled photosynthetic bacterium. Once the oval is inside the larger cell is now labeled modern photosynthetic eukaryote.",
+      "caption": "According to the endosymbiotic theory, mitochondria and chloroplasts are each derived from the uptake of bacteria. These bacteria established a symbiotic relationship with their host cell that eventually led to the bacteria evolving into mitochondria and chloroplasts."
+    },
+    "OSC_Microbio_03_02_GermTimeln": {
+      "source": "media/OSC_Microbio_03_02_GermTimeln.jpg",
+      "sourceSha256": "84c30a1f64fddcbd53e7cfbf240a3cd7084bfe9f4d50b22316fdcfc2527aba80",
+      "module": "m58791",
+      "kind": "photo",
+      "width": 1200,
+      "height": 945,
+      "variants": [
+        {
+          "width": 800,
+          "height": 630,
+          "file": "OSC_Microbio_03_02_GermTimeln-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 945,
+          "file": "OSC_Microbio_03_02_GermTimeln-1200.webp"
+        }
+      ],
+      "alt": "A timeline. To the far left are the ancient Greeks who proposed the Miasma Theory. In 1546 Fracastoro begins early version of Germ Theory in De Contagione et Contagiosis Morbis. In 1665 Hooke observes cork cells under a microscope. In 1674 van Leeuwenhoek observes single-celled organisms. In 1847 Semmelweis demonstrates that hand washing reduces puerperal infections. In 1854 Snow demonstrates that cholera bacteria were transmitted in contaminated drinking water. In 1856 Pasteur discovers microbial fermentation while studying the cause of spoilage in beer and wine. In 1862 Pasteur disproves spontaneous generation with swan-neck flask experiment. In 1867 Lister begins using carbolic acid as a disinfectant during surgery. From 1867 – 1906 Koch and his workers determine causative agents for many bacterial infections.",
+      "caption": "(credit “swan-neck flask”: modification of work by Wellcome Images)"
+    },
+    "OSC_Microbio_03_02_Hooke": {
+      "source": "media/OSC_Microbio_03_02_Hooke.jpg",
+      "sourceSha256": "11da78c8e6acd01c226c951922bb01e7fa4b84267438da6915160c5ab35a7fb4",
+      "module": "m58791",
+      "kind": "photo",
+      "width": 500,
+      "height": 500,
+      "variants": [
+        {
+          "width": 500,
+          "height": 500,
+          "file": "OSC_Microbio_03_02_Hooke-500.webp"
+        }
+      ],
+      "alt": "A drawing make by Hooke that shows many small rectangles in rows making up larger structures.",
+      "caption": "Robert Hooke (1635–1703) was the first to describe cells based upon his microscopic observations of cork. This illustration was published in his work Micrographia ."
+    },
+    "OSC_Microbio_03_02_ListerKoch": {
+      "source": "media/OSC_Microbio_03_02_ListerKoch.jpg",
+      "sourceSha256": "e6d766fa0cefe9403ce669da4b7cc16936371a71ed17fe0535cb5b3534f3b748",
+      "module": "m58791",
+      "kind": "photo",
+      "width": 701,
+      "height": 467,
+      "variants": [
+        {
+          "width": 701,
+          "height": 467,
+          "file": "OSC_Microbio_03_02_ListerKoch-701.webp"
+        }
+      ],
+      "alt": "a) Photo of Joseph Lister b) Photo of Robert Koch",
+      "caption": "(a) Joseph Lister developed procedures for the proper care of surgical wounds and the sterilization of surgical equipment. (b) Robert Koch established a protocol to determine the cause of infectious disease. Both scientists contributed significantly to the acceptance of the germ theory of disease."
+    },
+    "OSC_Microbio_03_02_Semmelweis": {
+      "source": "media/OSC_Microbio_03_02_Semmelweis.jpg",
+      "sourceSha256": "9efd3f28ade1d361988a851a8e5531ef4661eb790985e42e6479b50d604cac3f",
+      "module": "m58791",
+      "kind": "photo",
+      "width": 392,
+      "height": 460,
+      "variants": [
+        {
+          "width": 392,
+          "height": 460,
+          "file": "OSC_Microbio_03_02_Semmelweis-392.webp"
+        }
+      ],
+      "alt": "Photo of Ignaz Semmelweis",
+      "caption": "Ignaz Semmelweis (1818–1865) was a proponent of the importance of handwashing to prevent transfer of disease between patients by physicians."
+    },
+    "OSC_Microbio_03_02_VirchowRem": {
+      "source": "media/OSC_Microbio_03_02_VirchowRem.jpg",
+      "sourceSha256": "9abadce59bdf30815fc750c001741346714bf68afd4ecb1070e1611a19c9131c",
+      "module": "m58791",
+      "kind": "photo",
+      "width": 900,
+      "height": 551,
+      "variants": [
+        {
+          "width": 800,
+          "height": 489,
+          "file": "OSC_Microbio_03_02_VirchowRem-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 551,
+          "file": "OSC_Microbio_03_02_VirchowRem-900.webp"
+        }
+      ],
+      "alt": "a) Photo of Rudolf Virchow. B) Photo of Robert Remak",
+      "caption": "(a) Rudolf Virchow (1821–1902) popularized the cell theory in an 1855 essay entitled “Cellular Pathology .” (b) The idea that all cells originate from other cells was first published in 1852 by his contemporary and former colleague Robert Remak (1815–1865)."
+    },
+    "OSC_Microbio_03_02_pneumonia": {
+      "source": "media/OSC_Microbio_03_02_pneumonia.jpg",
+      "sourceSha256": "32e767f16ce0c0ae15ed74170cd848a33cc9689e02ffc67653f3e5ae4456fd61",
+      "module": "m58791",
+      "kind": "photo",
+      "width": 700,
+      "height": 356,
+      "variants": [
+        {
+          "width": 700,
+          "height": 356,
+          "file": "OSC_Microbio_03_02_pneumonia-700.webp"
+        }
+      ],
+      "alt": "Chest X-rays show ribs and other bones as white and the lungs as black. The left image has significant white cloudiness in the lungs. This lung infiltrate is suggestive of pneumonia. Normal lungs show a smooth, even black color throughout the lungs.",
+      "caption": "This is a chest radiograph typical of pneumonia. Because X-ray images are negative images, a “shadow” is seen as a white area within the lung that should otherwise be black. In this case, the left lung shows a shadow as a result of pockets in the lung that have become filled with fluid. (credit left: modification of work by “Christaras A”/Wikimedia Commons)"
+    },
+    "OSC_Microbio_03_03_BaFlagella": {
+      "source": "media/OSC_Microbio_03_03_BaFlagella.jpg",
+      "sourceSha256": "e6e13a8abb09d658967af8e68edd4410ac988db3ca18d503ba38770899f94d31",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 1300,
+      "height": 692,
+      "variants": [
+        {
+          "width": 800,
+          "height": 426,
+          "file": "OSC_Microbio_03_03_BaFlagella-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 692,
+          "file": "OSC_Microbio_03_03_BaFlagella-1300.webp"
+        }
+      ],
+      "alt": "A diagram showing the attachment point of flagella in gram-positive and gram-negative bacteria. The gram-positive diagram shows the filament on the outside of the cell wall; a bent elbow labeled hook connects the filament to the cell wall. A thin line between the filament and hook is labeled junction. The hook connects to a rod which connects to a basal body in the inner membrane. The basal body is a complex structure with a C-ring on the bottom. In the center of this ring is a sphere labeled type III secretion protein. Outside of this are oval structures labeled stator. On top of the secretion protein is a ring labeled MS-ring. The gram-negative flagellum is similar. There is a filament attached to a junction attached to hook. In the outer membrane is a ring labeled L-ring that connects to a rod in the periplasmic space. A P-ring sits in the cell wall. In the inner membrane is the C-ring, type III secretion system, MS ring and stator.",
+      "caption": "The basic structure of a bacterial flagellum consists of a basal body, hook, and filament. The basal body composition and arrangement differ between gram-positive and gram-negative bacteria. (credit: modification of work by “LadyofHats”/Mariana Ruiz Villareal)"
+    },
+    "OSC_Microbio_03_03_Capsules": {
+      "source": "media/OSC_Microbio_03_03_Capsules.jpg",
+      "sourceSha256": "55230d690374654d07350e6fe6a32f00241a15b414220f0bff0d9390beddaa0c",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 1300,
+      "height": 506,
+      "variants": [
+        {
+          "width": 800,
+          "height": 311,
+          "file": "OSC_Microbio_03_03_Capsules-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 506,
+          "file": "OSC_Microbio_03_03_Capsules-1300.webp"
+        }
+      ],
+      "alt": "a) A diagram showing the outer structures of bacterial cells. The thick outer layer is labeled capsule. Below that is a thinner cell wall and below that is an even thinner plasma membrane. B) A micrograph showing capsules as clearings outside of red stained cells; the background of the micrograph is a pale pink.",
+      "caption": "(a) Capsules are a type of glycocalyx composed of an organized layer of polysaccharides. (b) A capsule stain of Pseudomonas aeruginosa , a bacterial pathogen capable of causing many different types of infections in humans. (credit b: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_03_03_CellWalls": {
+      "source": "media/OSC_Microbio_03_03_CellWalls.jpg",
+      "sourceSha256": "9856b7abb5634675508ac6e8375ce873203f0bed8957a3fd3df9169e6a45a277",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 1088,
+      "height": 469,
+      "variants": [
+        {
+          "width": 800,
+          "height": 345,
+          "file": "OSC_Microbio_03_03_CellWalls-800.webp"
+        },
+        {
+          "width": 1088,
+          "height": 469,
+          "file": "OSC_Microbio_03_03_CellWalls-1088.webp"
+        }
+      ],
+      "alt": "The gram-positive bacterial cell wall diagram shows a plasma membrane on top of the cytoplasm. The cell wall is shown as a thick layer of peptidoglycans connected to the plasma membrane by techoic acids. The gram-negative cell wall also has a plasma membrane on top of the cytoplasm. On top of the plasma membrane is a thin periplasmic space. On top of that is a thin peptidoglycan cell wall. On top of that is an outer membrane that contains murein lipoproteins that connect the outer membrane to the peptidoglycan cell wall. Lipid A, O antigens, and lipopolysaccharides sit on top of the outer membrane. Proins are tubes that connect the outside of the outer membrane with the region of the peptidoglycan cell wall.",
+      "caption": "Bacteria contain two common cell wall structural types. Gram-positive cell walls are structurally simple, containing a thick layer of peptidoglycan with embedded teichoic acid external to the plasma membrane. B. Zuber et al. “Granular Layer in the Periplasmic Space of Gram-Positive Bacteria and Fine Structures of Enterococcus gallinarum and Streptococcus gordonii Septa Revealed by Cryo-Electron Microscopy of Vitreous Sections.” Journal of Bacteriology 188 no. 18 (2006):6652–6660 Gram-negative cell walls are structurally more complex, containing a thin layer of peptidoglycan and an outer membrane containing lipopolysaccharide. (credit: modification of work by “Franciscosp2”/Wikimedia Commons)"
+    },
+    "OSC_Microbio_03_03_DirectRand": {
+      "source": "media/OSC_Microbio_03_03_DirectRand.jpg",
+      "sourceSha256": "2a19868e76984f31095b865115dde41c6e140483b02f8376d19fadb2601d2319",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 1019,
+      "height": 747,
+      "variants": [
+        {
+          "width": 800,
+          "height": 586,
+          "file": "OSC_Microbio_03_03_DirectRand-800.webp"
+        },
+        {
+          "width": 1019,
+          "height": 747,
+          "file": "OSC_Microbio_03_03_DirectRand-1019.webp"
+        }
+      ],
+      "alt": "A diagram showing the run and tumble motion of bacteria. In the run, the bundeled flagella move in a counter clockwise rotation and the cell moves in a straight line. In the tumble, the flagella separate due to a clockwise rotation and the bacterial cell floats with no particular direction. This is followed by another run. If there is an attractant (a chemical gradient) the bacterial cell moves towards the attractant and the length of the run is extended.",
+      "caption": "Without a chemical gradient, flagellar rotation cycles between counterclockwise (run) and clockwise (tumble) with no overall directional movement. However, when a chemical gradient of an attractant exists, the length of runs is extended, while the length of tumbles is decreased. This leads to chemotaxis: an overall directional movement toward the higher concentration of the attractant."
+    },
+    "OSC_Microbio_03_03_ExStaph_img": {
+      "source": "media/OSC_Microbio_03_03_ExStaph_img.jpg",
+      "sourceSha256": "d12a7edaf3f162a01ba3ba610cdf4fe31ed994be40cca12cb00457ed5eda8d6f",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 1200,
+      "height": 232,
+      "variants": [
+        {
+          "width": 800,
+          "height": 154,
+          "file": "OSC_Microbio_03_03_ExStaph_img-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 232,
+          "file": "OSC_Microbio_03_03_ExStaph_img-1200.webp"
+        }
+      ],
+      "alt": "A) A micrograph of rods in a cluster. B) a micrograph of individual rods. C) A micrograph of spheres in a chain. D) a micrograph of spheres in a cluster.",
+      "caption": "(credit a: modification of work by U.S. Department of Agriculture; credit b: modification of work by Centers for Disease Control and Prevention; credit c: modification of work by NIAID)"
+    },
+    "OSC_Microbio_03_03_FimbrPili": {
+      "source": "media/OSC_Microbio_03_03_FimbrPili.jpg",
+      "sourceSha256": "ec51b709e9156c9d69bd049ca4853862973df859cd39c1c70be3ffc2f7dc0a84",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 300,
+      "height": 325,
+      "variants": [
+        {
+          "width": 300,
+          "height": 325,
+          "file": "OSC_Microbio_03_03_FimbrPili-300.webp"
+        }
+      ],
+      "alt": "A micrograph of two cells connected by two long strings labeled pilli.",
+      "caption": "Bacteria may produce two different types of protein appendages that aid in surface attachment. Fimbriae typically are more numerous and shorter, whereas pili (shown here) are longer and less numerous per cell. (credit: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_03_03_FlagellaAr": {
+      "source": "media/OSC_Microbio_03_03_FlagellaAr.jpg",
+      "sourceSha256": "bdaca3161b2976ed226d0f6e0b4574772c11057d4faed99adce11aed13c1725a",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 1193,
+      "height": 207,
+      "variants": [
+        {
+          "width": 800,
+          "height": 139,
+          "file": "OSC_Microbio_03_03_FlagellaAr-800.webp"
+        },
+        {
+          "width": 1193,
+          "height": 207,
+          "file": "OSC_Microbio_03_03_FlagellaAr-1193.webp"
+        }
+      ],
+      "alt": "Diagrams of flagellar arrangements. Monotrichous bacteria have a single flagellum at one end. Amphitrichouls bacteria have one flagellum at each end. Lophotrichous bacteria have a tuft of flagella at one end. Peritrichous bacteria have flagella all the way around the outside of the cell.",
+      "caption": "Flagellated bacteria may exhibit multiple arrangements of their flagella. Common arrangements include monotrichous, amphitrichous, lophotrichous, or peritrichous."
+    },
+    "OSC_Microbio_03_03_IncBodies": {
+      "source": "media/OSC_Microbio_03_03_IncBodies.jpg",
+      "sourceSha256": "0bb5c96f273acfe46e1be9e3b325533d219fe3b6f8edb9cd6abadf037cd0f718",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 1098,
+      "height": 768,
+      "variants": [
+        {
+          "width": 800,
+          "height": 559,
+          "file": "OSC_Microbio_03_03_IncBodies-800.webp"
+        },
+        {
+          "width": 1098,
+          "height": 768,
+          "file": "OSC_Microbio_03_03_IncBodies-1098.webp"
+        }
+      ],
+      "alt": "a) A micrograph showing gray spheres each containing 2-8 smaller white spheres. The gray spheres are approximately 600 nm in diameter B) A micrograph showing thin ribbons of approximately 100 µm length; each ribbon contains many dark spots in a line down the center of the ribbon. C) A micrograph showing a gray sphere of approximately 4 µm diameter with a cluster of smaller white spheres at the bottom of the larger sphere. D) A micrograph showing a larger sphere of approximately 10 µm diameter with many smaller spheres of approximately 1 µm diameter inside of the larger sphere. 3) a micrograph showing a long ribbon over 500 nm in length with small dots in the center. A closeup shows the dots to be a chain of spheres approximately 20 nm in diameter.",
+      "caption": "Prokaryotic cells may have various types of inclusions. (a) A transmission electron micrograph of polyhydroxybutryrate lipid droplets. (b) A light micrograph of volutin granules. (c) A phase-contrast micrograph of sulfur granules. (d) A transmission electron micrograph of gas vacuoles. (e) A transmission electron micrograph of magnetosomes. (credit b, c, d: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_03_03_LPS": {
+      "source": "media/OSC_Microbio_03_03_LPS.jpg",
+      "sourceSha256": "b20ef178890aa7f92f10515a39981605d672de27951bf7d33bb411faa8f56da5",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 458,
+      "height": 807,
+      "variants": [
+        {
+          "width": 458,
+          "height": 807,
+          "file": "OSC_Microbio_03_03_LPS-458.webp"
+        }
+      ],
+      "alt": "A diagram of the outer membrane of gram-negative bacteria. At the top of the diagram is a long chain of structures labeled O antigen. Below that is a shorter chain labeled core. Below that are two spheres labeled lipid A. Attached to the lipid A are squiggly tails labeled fatty acids.",
+      "caption": "The outer membrane of a gram-negative bacterial cell contains lipopolysaccharide (LPS), a toxin composed of Lipid A embedded in the outer membrane, a core polysaccharide, and the O side chain."
+    },
+    "OSC_Microbio_03_03_Nucleoid": {
+      "source": "media/OSC_Microbio_03_03_Nucleoid.jpg",
+      "sourceSha256": "b120bad1914d7bab4f365fe35d0a249a3b40efdaa1cab066d71bb918177233c5",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 634,
+      "height": 276,
+      "variants": [
+        {
+          "width": 634,
+          "height": 276,
+          "file": "OSC_Microbio_03_03_Nucleoid-634.webp"
+        }
+      ],
+      "alt": "A micrograph of an oval cell with a lighter region in the center of the cell. The lighter region takes up approximately one third of the volume of the cell and is labeled nucleoid.",
+      "caption": "The nucleoid region (the area enclosed by the green dashed line) is a condensed area of DNA found within prokaryotic cells. Because of the density of the area, it does not readily stain and appears lighter in color when viewed with a transmission electron microscope."
+    },
+    "OSC_Microbio_03_03_PartsProk_img": {
+      "source": "media/OSC_Microbio_03_03_PartsProk_img.jpg",
+      "sourceSha256": "1efe5b618795954af815c1f1b032a4b0439107de7e59480712e2656b5b8c07b2",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 700,
+      "height": 670,
+      "variants": [
+        {
+          "width": 700,
+          "height": 670,
+          "file": "OSC_Microbio_03_03_PartsProk_img-700.webp"
+        }
+      ],
+      "alt": "A diagram of a bacterial cell. The thick outer structure of the cell is not lableled. The next layer in (a thinner structure) is labeled E. A much thinner structure inside of that is labeled F. Inside of F is the main body of the cell. Small dots are labeled B. A long line forming a loop is labeled C. On the outside of the cell, short projectsions are labeled A and a long projection is labeled D.",
+      "caption": ""
+    },
+    "OSC_Microbio_03_03_Peptidogly": {
+      "source": "media/OSC_Microbio_03_03_Peptidogly.jpg",
+      "sourceSha256": "15159404069aa2ea4630954b227b2cf4fff8df28a8f0ef07726187d02fab8b66",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 1089,
+      "height": 586,
+      "variants": [
+        {
+          "width": 800,
+          "height": 430,
+          "file": "OSC_Microbio_03_03_Peptidogly-800.webp"
+        },
+        {
+          "width": 1089,
+          "height": 586,
+          "file": "OSC_Microbio_03_03_Peptidogly-1089.webp"
+        }
+      ],
+      "alt": "The diagram of the gram-positive cell wall shows alternative NAG (N-acetylglucosamine) and NAM (N-acetylmuramic acid) in a chain; these are shown as alternative red and blue spheres. The chains or red and blue spheres are connected to other chains with smaller yellow spheres in a chain labeled pentapeptide and smaller green spheres labeled tetrapeptide. Each NAG in the chain is connected to the NAG in the chains next to it by both a tetrapeptide connected to a pentapeptide. The diagram of the gram-negative cell wall has the same NAG and NAM chains. But this time they are linked with a kirect line to the chains next to them.",
+      "caption": "Peptidoglycan is composed of polymers of alternating NAM and NAG subunits, which are cross-linked by peptide bridges linking NAM subunits from various glycan chains. This provides the cell wall with tensile strength in two dimensions."
+    },
+    "OSC_Microbio_03_03_PlasmaMem": {
+      "source": "media/OSC_Microbio_03_03_PlasmaMem.jpg",
+      "sourceSha256": "a1110747bf5480d0bf0513a2117f9f5679ad0f3dde3268161448e0d2ea1b4c00",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 1200,
+      "height": 658,
+      "variants": [
+        {
+          "width": 800,
+          "height": 438,
+          "file": "OSC_Microbio_03_03_PlasmaMem-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 658,
+          "file": "OSC_Microbio_03_03_PlasmaMem-1200.webp"
+        }
+      ],
+      "alt": "A drawing of the plasma membrane. The top of the diagram is labeled outside of cell, the bottom is labeled cytoplasm. Separating these two regions is the membrane which is made of mostly a phospholipid bilayer. Each phospholipid is drawn as a sphere with 2 tails. There are two layers of phospholipids making up the bilayer; each phospholipid layer has the sphere towards the outside of the bilayer and the two tails towards the inside of the bilayer. Embedded within the phospholipid bilayer are a variety of large proteins. Protein channels span the entire bilayer and have a pore in the center that connects the outside of the cell with the cytoplasm. Peripheral proteins sit on one side of the phospholipid bilayer. Transmembrane proteins span the bilayer. Glycolipids have long carbohydrate chains (shown as a chain of hexagons) attached to a single phospholipid; the carbohydrates are always on the outside of the membrane. Glycoproteins have a long carbohydrate chain attached to a protein; the carbohydrates are on the outside of the membrane. The cytoskeleton is shown as a thin layer of line just under the inside of the phospholipid bilayer.",
+      "caption": "The bacterial plasma membrane is a phospholipid bilayer with a variety of embedded proteins that perform various functions for the cell. Note the presence of glycoproteins and glycolipids, whose carbohydrate components extend out from the surface of the cell. The abundance and arrangement of these proteins and lipids can vary greatly between species."
+    },
+    "OSC_Microbio_03_03_Plasmolysi": {
+      "source": "media/OSC_Microbio_03_03_Plasmolysi.jpg",
+      "sourceSha256": "c9d4e1a48c838359814610f7fb9bfbcb2dcc5c2fc863b7cb7530412b5660edb7",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 901,
+      "height": 612,
+      "variants": [
+        {
+          "width": 800,
+          "height": 543,
+          "file": "OSC_Microbio_03_03_Plasmolysi-800.webp"
+        },
+        {
+          "width": 901,
+          "height": 612,
+          "file": "OSC_Microbio_03_03_Plasmolysi-901.webp"
+        }
+      ],
+      "alt": "a) In an isotonic solution there is no net movement of water particles. The cell membrane is attached to the cell wall. The drawing shows a rectangular cell; the cell membrane is just inside the cell wall. Arrows indicate that water is moving both in and out. B) In a hypertonic solution water partices move out of the cell. The cell membrane shrinks and detaches from the cell wall (plasmolysis). The diagram shows a cell that has shriveled. Points of the cell membrane are still attached to the cell wall but most of the cell membrane has pulled away from the cell wall resulting in a star-shaped cell. Arrows show water leaving the cell. In a hypertonic solution water particles move into the cell. The cell wall counteracts osmotic pressure to prevent swelling and lysing. The image shows the same rectangular cell as in the isotonic solution except that the cell and cell wall are bulging outwards a bit. Arrows show water entering the cell.",
+      "caption": "In prokaryotic cells, the cell wall provides some protection against changes in osmotic pressure, allowing it to maintain its shape longer. The cell membrane is typically attached to the cell wall in an isotonic medium (left). In a hypertonic medium, the cell membrane detaches from the cell wall and contracts (plasmolysis) as water leaves the cell. In a hypotonic medium (right), the cell wall prevents the cell membrane from expanding to the point of bursting, although lysis will eventually occur if too much water is absorbed."
+    },
+    "OSC_Microbio_03_03_ProkArrang": {
+      "source": "media/OSC_Microbio_03_03_ProkArrang.jpg",
+      "sourceSha256": "0a16a91543182997956b8815871462c6834c2d39d6e1c5868f2a9ac8155d35c6",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 900,
+      "height": 1058,
+      "variants": [
+        {
+          "width": 800,
+          "height": 940,
+          "file": "OSC_Microbio_03_03_ProkArrang-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 1058,
+          "file": "OSC_Microbio_03_03_ProkArrang-900.webp"
+        }
+      ],
+      "alt": "Common prokaryotic cell arrangments. The term Coccus (plural cocci) is the name for a single coccus (a single round cell). The term diplococcus (plural diplococci) is the name for a pair of two cocci (two spheres attached together). The term tetrad (plural tetrads) is the name for a grouping of four cells arranged in a square. The term streptococcus (plural streptococci) is the name for a chain of cocci; the spheres are connected into a long chain. The term staphylococcus (plural staphylococci) is the name for a cluster of cocci; the spheres are connected into a bundle. The term bacillus (plural bacilli) is the name for a single rod. The term diplobacillus (plural diplobacilli) is the name for a pair of rods. The term streptobacillus (plural streptobacilli) is the name for a chain of rods; the rectangles are connected into a long chain. The term palisade (plural palisades) is the name for a v- or l-shaped formation of rods.",
+      "caption": ""
+    },
+    "OSC_Microbio_03_03_ProkCell-dd83": {
+      "source": "media/OSC_Microbio_03_03_ProkCell-dd83.jpg",
+      "sourceSha256": "a963d13d33418017e97ef7a070e87ebb6af0ff26993dcb5ee0d67acf813538d8",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 900,
+      "height": 768,
+      "variants": [
+        {
+          "width": 800,
+          "height": 682,
+          "file": "OSC_Microbio_03_03_ProkCell-dd83-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 768,
+          "file": "OSC_Microbio_03_03_ProkCell-dd83-900.webp"
+        }
+      ],
+      "alt": "A diagram of a rod-shaped prokaryotic cell. The thick outer layer is called the capsule, inside of that is a thinner cell wall and inside of that is an even thinner plasma membrane. Inside of the plasma membrane is a fluid called the cytoplasm, little dots called ribosomes, small spheres called inclusions, a small loop of DNA called a plasmid, and a large folded loo of DNA called the nucleoid. Long projections start at the plasma membrane and extend out of the capsule; these are called flagella (singular: flagellum). A shorter projection is labeled pilus. And many very short projections are labeled fimbriae.",
+      "caption": "A typical prokaryotic cell contains a cell membrane, chromosomal DNA that is concentrated in a nucleoid, ribosomes, and a cell wall. Some prokaryotic cells may also possess flagella, pili, fimbriae, and capsules."
+    },
+    "OSC_Microbio_03_03_ProkTable": {
+      "source": "media/OSC_Microbio_03_03_ProkTable.jpg",
+      "sourceSha256": "0902a9e0d31f665e62ddc8841ccaa64bd02f6ac4fd3e54238a78189a3996776d",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 1186,
+      "height": 1619,
+      "variants": [
+        {
+          "width": 800,
+          "height": 1092,
+          "file": "OSC_Microbio_03_03_ProkTable-800.webp"
+        },
+        {
+          "width": 1186,
+          "height": 1619,
+          "file": "OSC_Microbio_03_03_ProkTable-1186.webp"
+        }
+      ],
+      "alt": "Common Prokaryotic Cell Shapes. The term Coccus (plural: cocci) is the name given to round, spherical shapes. The term bacillus (plural: bacilli) is the name given to rod shaped cells. These cells are shaped like long rounded rectangles. The term vibrio (plural vibrios) is the name given to curved rods, these cells have a shape like a long comma. The term coccobacillus (plural coccobacilli) is the name for short rods; these cells look like ovals. The term spirillum (plural spirilla) is the name for long spiral cells; these look like cork screws. The term spirochete (plural spirochetes) is the name for long, loose helical spiral shaped cells. These look similar to the spirillum but are more floppy.",
+      "caption": "(credit “Coccus” micrograph: modification of work by Janice Haney Carr, Centers for Disease Control and Prevention; credit “Coccobacillus” micrograph: modification of work by Janice Carr, Centers for Disease Control and Prevention; credit “Spirochete” micrograph: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_03_03_Ribosome": {
+      "source": "media/OSC_Microbio_03_03_Ribosome.jpg",
+      "sourceSha256": "67ccd37afa7bcd2cc07bd0e56212e16186edd9da7655c2c2877b554a57f9cfbb",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 789,
+      "height": 207,
+      "variants": [
+        {
+          "width": 789,
+          "height": 207,
+          "file": "OSC_Microbio_03_03_Ribosome-789.webp"
+        }
+      ],
+      "alt": "A drawing showing that the complete ribosome is made of a small subunit and a large subunit. The small subunit is about half the size of the large one. The small subunit has a size of 30S, the large subunit has a size of 50S and the complete ribosome (containing both the small and large subunit) has a size of 70S.",
+      "caption": "Prokaryotic ribosomes (70S) are composed of two subunits: the 30S (small subunit) and the 50S (large subunit), each of which are composed of protein and rRNA components."
+    },
+    "OSC_Microbio_03_03_RunTumble": {
+      "source": "media/OSC_Microbio_03_03_RunTumble.jpg",
+      "sourceSha256": "da5f5741892b28817ad81a80f8305fe8f408ec6d4e163c2e26636086864fa4a7",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 865,
+      "height": 413,
+      "variants": [
+        {
+          "width": 800,
+          "height": 382,
+          "file": "OSC_Microbio_03_03_RunTumble-800.webp"
+        },
+        {
+          "width": 865,
+          "height": 413,
+          "file": "OSC_Microbio_03_03_RunTumble-865.webp"
+        }
+      ],
+      "alt": "A diagram showing the run and tumble of bacterial motion. The tumble is when a clockwise rotation of flagella cause the bacterial cell to tumble about. The run is when a counter-clockwise rotation of the flagella cause the bacterial cell to move in a linear direction.",
+      "caption": "Bacteria achieve directional movement by changing the rotation of their flagella. In a cell with peritrichous flagella, the flagella bundle when they rotate in a counterclockwise direction, resulting in a run. However, when the flagella rotate in a clockwise direction, the flagella are no longer bundled, resulting in tumbles."
+    },
+    "OSC_Microbio_03_03_Sporulation": {
+      "source": "media/OSC_Microbio_03_03_Sporulation.jpg",
+      "sourceSha256": "fc29b823087ef61c930c8c3149c47bd5247656033e6536a384d1aaebce9f92b3",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 1300,
+      "height": 789,
+      "variants": [
+        {
+          "width": 800,
+          "height": 485,
+          "file": "OSC_Microbio_03_03_Sporulation-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 789,
+          "file": "OSC_Microbio_03_03_Sporulation-1300.webp"
+        }
+      ],
+      "alt": "a) A diagram showing the process of sporulation. Step 1 – the DNA replicates. The image shows a rod shaped cell with 2 loops of DNA; one in the center and one towards the end of the cell. Step 2 – Membranes form around the DNA. The drawing shows lines encircling the loop of DNA at the end of the cell. Step 3 – Forespore forms additional membranes. The lines around the loop of DNA are thickened. Step 4 – Protective cortex forms around the spore. The lines around the loop of DNA are thickened even more. Step 5 – protein coat forma around the cortex. The lines around the loop of DNA are thickened even more and the outer cell lyses. Step 6 – the endospore is released. A small spherical structure with DNA inside of many thick layers is shown. B) A micrograph of an endospore shows a dark central core inside a lighter region; these are surrounded by thick layers on the outside. C) a micrograph showing red rods in chains; many of the rods have a green dot in their center.",
+      "caption": "(a) Sporulation begins following asymmetric cell division. The forespore becomes surrounded by a double layer of membrane, a cortex, and a protein coat, before being released as a mature endospore upon disintegration of the mother cell. (b) An electron micrograph of a Carboxydothermus hydrogenoformans endospore. (c) These Bacillus spp. cells are undergoing sporulation. The endospores have been visualized using Malachite Green stain. (credit b: modification of work by Jonathan Eisen)"
+    },
+    "OSC_Microbio_03_03_Tonicity": {
+      "source": "media/OSC_Microbio_03_03_Tonicity.jpg",
+      "sourceSha256": "a739c7ed95fc95bf0434a03e5badd41d22d8651005af313d111bcedddde35d25",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 1187,
+      "height": 610,
+      "variants": [
+        {
+          "width": 800,
+          "height": 411,
+          "file": "OSC_Microbio_03_03_Tonicity-800.webp"
+        },
+        {
+          "width": 1187,
+          "height": 610,
+          "file": "OSC_Microbio_03_03_Tonicity-1187.webp"
+        }
+      ],
+      "alt": "a) An isotonic solution is a solution that has the same solute concentration as another solution. There is no net movement of water particles, and the overall concentration on both sides of the cell membrane remains constant. The image shows a cell with 20% solute (80% water) in a beaker containing 20% solute (80% water). Arrows in and out indicate that water moves both into and out of the cell. b) A hypertonic solution is a solution that has a higher solute concentration than another solution. Water particles will move out of the cell, causing crenation. The cell in this image still has 20% solute concentration (80% water) but the cell is now in a beaker containing 40% solute concentration (60% water). An arrow shows water moving out of the cell and the cell shriveling. C) A hypotonic solution is a solution that has a lower solute concentration than another solution. Water particles will move into the cell, causing the cell to expand and eventually lyse. The cell in this diagram still has 20% solute concentration (80% water) but is now in a beaker containing 10% solute concentration (90% water). An arrow shows water mving into the cell and the cell swelling.",
+      "caption": "In cells that lack a cell wall, changes in osmotic pressure can lead to crenation in hypertonic environments or cell lysis in hypotonic environments."
+    },
+    "OSC_Microbio_03_03_Transport": {
+      "source": "media/OSC_Microbio_03_03_Transport.jpg",
+      "sourceSha256": "e155bda59a0910e6452762a60275872e100e2c5d753b1e2ba3279ac806a8b425",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 1197,
+      "height": 483,
+      "variants": [
+        {
+          "width": 800,
+          "height": 323,
+          "file": "OSC_Microbio_03_03_Transport-800.webp"
+        },
+        {
+          "width": 1197,
+          "height": 483,
+          "file": "OSC_Microbio_03_03_Transport-1197.webp"
+        }
+      ],
+      "alt": "Active Transport. A diagram with a phospholipid bilayer (plasma membrane) along the middle. Above the bilayer is the extracellular fluid and below is the cytoplasm. There are more sodium ions in the extracellular fluid than in the cytoplasm. There are more potassium ions in the cytoplasm than in the extracellular fluid. A protein in the membrane is shown moving sodium from the cytoplasm to the extracellular fluid. The same membrane is shown moving potassium from the extracellular fluid to the cytoplasm. As the protein moves these ions, it also breaks down ATP to ADP.",
+      "caption": "Active transport against a concentration gradient via a membrane pump that requires energy. (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "OSC_Microbio_03_03_acidfast": {
+      "source": "media/OSC_Microbio_03_03_acidfast.jpg",
+      "sourceSha256": "4e7ea08482efa72d1ff34000ef7bacaa7a20a1f1c3cddfdff9ffa0c0736476d5",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 1200,
+      "height": 472,
+      "variants": [
+        {
+          "width": 800,
+          "height": 314,
+          "file": "OSC_Microbio_03_03_acidfast-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 472,
+          "file": "OSC_Microbio_03_03_acidfast-1200.webp"
+        }
+      ],
+      "alt": "A) A diagram of gram-positive acid-fast bacteria. The plasma membrane is shown on top of the cytoplasm and a thick layer of peptidoglycan makes up the cell wall outside the plasma membrane. Teichoic acids connect the peptidoglycans to the plasma membrane. On top of the peptidoglycans are mycolic acids, lipomannan and arabinoglycans. B) A micrograph of red cells labeled acid fast bacteria.",
+      "caption": "(a) Some gram-positive bacteria, including members of the Mycobacteriaceae, produce waxy mycolic acids found exterior to their structurally-distinct peptidoglycan. (b) The acid-fast staining protocol detects the presence of cell walls that are rich in mycolic acid. Acid-fast cells are stained red by carbolfuschin. (credit a: modification of work by “Franciscosp2”/Wikimedia Commons; credit b: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_03_03_facdiff": {
+      "source": "media/OSC_Microbio_03_03_facdiff.jpg",
+      "sourceSha256": "4a3591e31d8de09024fa7a97f123aa2b51449ca3dc9fb36c2ebfc484925591f0",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 499,
+      "height": 472,
+      "variants": [
+        {
+          "width": 499,
+          "height": 472,
+          "file": "OSC_Microbio_03_03_facdiff-499.webp"
+        }
+      ],
+      "alt": "Facilitated diffusion. A diagram with a phospholipid bilayer (plasma membrane) in the middle of the image. There are many hexagons in the extracellular fluid above the membrane and few hexagons in the cytoplasm below the membrane. A protein channel is shown transporting the hexagons across the membrane from the extracellular fluid to the cytoplasm.",
+      "caption": "Facilitated diffusion down a concentration gradient through a membrane protein. (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "OSC_Microbio_03_03_simplediff": {
+      "source": "media/OSC_Microbio_03_03_simplediff.jpg",
+      "sourceSha256": "cdf8a729ea8aaa3d22d1149ca31756672f65f3fece90d0b3fcf714d22b9f3cae",
+      "module": "m58792",
+      "kind": "photo",
+      "width": 1097,
+      "height": 502,
+      "variants": [
+        {
+          "width": 800,
+          "height": 366,
+          "file": "OSC_Microbio_03_03_simplediff-800.webp"
+        },
+        {
+          "width": 1097,
+          "height": 502,
+          "file": "OSC_Microbio_03_03_simplediff-1097.webp"
+        }
+      ],
+      "alt": "Simple diffusion. A diagram with a phospholipid bilayer (plasma membrane) along the middle. Above the bilayer is the extracellular fluid and below is the cytoplasm. At the far left there are many hexagons in the extracellular fluid above the bilayer and none in the cytoplasm below. At a later time shown in the middle of the timeline there are a few hexagons in the cytoplasm and still many in the extracellular fluid. At the last timeframe shown on the right there are equal numbers of hexagons in the extracellular fluid as in the cytoplasm.",
+      "caption": "Simple diffusion down a concentration gradient directly across the phospholipid bilayer. (credit: modification of work by Mariana Ruiz Villareal)"
+    },
+    "OSC_Microbio_03_04_AniCell_img": {
+      "source": "media/OSC_Microbio_03_04_AniCell_img.jpg",
+      "sourceSha256": "d0dc9b43ed8e151d469f7949d1470126d08c598f1b31c0eb59a3f1fa2b35d4b7",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 700,
+      "height": 659,
+      "variants": [
+        {
+          "width": 700,
+          "height": 659,
+          "file": "OSC_Microbio_03_04_AniCell_img-700.webp"
+        }
+      ],
+      "alt": "Image of a cell. the outside line is labeled A. A long projection to the outside is labeled H. A large sphere in the cell has an outer line labeled B. A smaller sphere in the larger sphere is labeled C. Outside of this sphere but still inside the cell are folds of membranes with dots labeled F. Another set of folded membranes in a stack is labeld G; smaller spheres are coming off of these stacks. An oval structure with lines inside is labeld D and two small tubes are labeled E.",
+      "caption": ""
+    },
+    "OSC_Microbio_03_04_Centrosome": {
+      "source": "media/OSC_Microbio_03_04_Centrosome.jpg",
+      "sourceSha256": "2b6f1457b930175037f22f7097bce4901b7cabaa925df9ececb6f3be1100b795",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1045,
+      "height": 401,
+      "variants": [
+        {
+          "width": 800,
+          "height": 307,
+          "file": "OSC_Microbio_03_04_Centrosome-800.webp"
+        },
+        {
+          "width": 1045,
+          "height": 401,
+          "file": "OSC_Microbio_03_04_Centrosome-1045.webp"
+        }
+      ],
+      "alt": "a) Centrosomes are shown as short tubes. The outside of these tubes is made of 9 sets of microtubule triplets. These sets are held together by lines labeled centrioles. B) Centrosomes are shown on the two poles of a cell. Lines connect the centrosomes to chromosomes in the center of the cell.",
+      "caption": "(a) A centrosome is composed of two centrioles positioned at right angles to each other. Each centriole is composed of nine triplets of microtubules held together by accessory proteins. (b) In animal cells, the centrosomes (arrows) serve as microtubule-organizing centers of the mitotic spindle during mitosis."
+    },
+    "OSC_Microbio_03_04_Chloroplas": {
+      "source": "media/OSC_Microbio_03_04_Chloroplas.jpg",
+      "sourceSha256": "147360320f3551d9a3eccd59f85540dd2e31deac68080e2ad79b260c3edfe81d",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 696,
+      "height": 486,
+      "variants": [
+        {
+          "width": 696,
+          "height": 486,
+          "file": "OSC_Microbio_03_04_Chloroplas-696.webp"
+        }
+      ],
+      "alt": "The cholorplast is shown as an oval structure with an outer membrane. The inner membrane folds into pancake like stacks called grana (stacks of thylakoids). One individual stack from the grana is called a thylakoid. The space inside the thylakoid is called the thylakoid lumen. The aqueous fluid outside the thylakoids but inside the inner membrane is the stroma. The space between the inner and outer membranes is the intermembrane space.",
+      "caption": "Photosynthesis takes place in chloroplasts, which have an outer membrane and an inner membrane. Stacks of thylakoids called grana form a third membrane layer."
+    },
+    "OSC_Microbio_03_04_Cytoskel": {
+      "source": "media/OSC_Microbio_03_04_Cytoskel.jpg",
+      "sourceSha256": "ac9d978e11ef65b0d39485eaad115a0c3fdd55cb26f2ce12039a972554786d59",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1200,
+      "height": 576,
+      "variants": [
+        {
+          "width": 800,
+          "height": 384,
+          "file": "OSC_Microbio_03_04_Cytoskel-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 576,
+          "file": "OSC_Microbio_03_04_Cytoskel-1200.webp"
+        }
+      ],
+      "alt": "A micrograph shows many lines emminating from the nucleus and extending throughout the cell. These are shown in diagram form as small spheres forming the outside of a long tube. Each pair of spheres is a tubulin dimer and columns of these dimers can be seen on the outside of the large tube they form. The diameter of the tube is 25 µm. The same micrograph shows lines throughout the cell; these are drawn as spheres forming a braided structures (a double helix). The diameter of the helix is 7 nm. The spheres are labeled actin subunit. Another micrograph shows many lines forming a webbing in the cell. These are drawn as a rope; each strand of the rope is labeled fibrous subunit (keratins coiled together). The diameter of the rope is 8 – 12 nm.",
+      "caption": "The cytoskeleton is a network of microfilaments, intermediate filaments, and microtubules found throughout the cytoplasm of a eukaryotic cell. In these fluorescently labeled animal cells, the microtubules are green, the actin microfilaments are red, the nucleus is blue, and keratin (a type of intermediate filament) is yellow."
+    },
+    "OSC_Microbio_03_04_ECM": {
+      "source": "media/OSC_Microbio_03_04_ECM.jpg",
+      "sourceSha256": "ed7cf6c2303dd5eeb101694bc8444595abfc87e0a21a7153cafb5a577de2b157",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1165,
+      "height": 961,
+      "variants": [
+        {
+          "width": 800,
+          "height": 660,
+          "file": "OSC_Microbio_03_04_ECM-800.webp"
+        },
+        {
+          "width": 1165,
+          "height": 961,
+          "file": "OSC_Microbio_03_04_ECM-1165.webp"
+        }
+      ],
+      "alt": "A drawing of the plasma membrane with proteins shown in the membrane. One of these proteins is labeled integrin. Attached to this and other proteins are long strands made of a chain of hexagons labeled polysaccharides. Branches off this chain of hexagons are labeled proteins and branches of the proteins are labeled carbohydrates. These proteoglycan complexes (made of polysaccharides, proteins, and carbohydrates) are attached to proteins in the membranes via fibronectins. Larger chains on the outside of the membrane are not visibly attached to the membrane and are labeled collagen fibers. Smaller chains on the inside surface of the membrane are labeled microfilaments of cytoskeleton.",
+      "caption": "The extracellular matrix is composed of protein and carbohydrate components. It protects cells from physical stresses and transmits signals arriving at the outside edges of the tissue to cells deeper within the tissue."
+    },
+    "OSC_Microbio_03_04_ER": {
+      "source": "media/OSC_Microbio_03_04_ER.jpg",
+      "sourceSha256": "876840e5cca8f60f46052eafc64363fb5b9865ce6cdb8cab2bf505b23c14b472",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1300,
+      "height": 403,
+      "variants": [
+        {
+          "width": 800,
+          "height": 248,
+          "file": "OSC_Microbio_03_04_ER-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 403,
+          "file": "OSC_Microbio_03_04_ER-1300.webp"
+        }
+      ],
+      "alt": "a) A small diagram of the cell highlighting the nucleus and endoplasmic reticulum. The nucleus is a large sphere in the cell and the endoplasmic reticulum is a series of webbed membranes just outside the nucleus. B) A micrograph showing these same structures. Outside the nuclear envelope are many lines labeled rough endoplasmic reticulum. A smaller set of lines is labeled mitochondrion overlaying part of the RER.",
+      "caption": "The rough endoplasmic reticulum is studded with ribosomes for the synthesis of membrane proteins (which give it its rough appearance)."
+    },
+    "OSC_Microbio_03_04_Endocytos": {
+      "source": "media/OSC_Microbio_03_04_Endocytos.jpg",
+      "sourceSha256": "f0f315492ade28e6643c90a251f5a3cb3fa836a715f941b65c47aa1a7bea30f9",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1300,
+      "height": 668,
+      "variants": [
+        {
+          "width": 800,
+          "height": 411,
+          "file": "OSC_Microbio_03_04_Endocytos-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 668,
+          "file": "OSC_Microbio_03_04_Endocytos-1300.webp"
+        }
+      ],
+      "alt": "a) Phagocytosis. A large particle outside of the cell is engulfed by a folding of the plasma membrane. This folding continues until the large particle is fully wrapped in a vacuole and is taken into the cell. b) Pinocytosis. Small particles are taken in through infoldings of the membrane. The membrane folds to form a vesicle that brings the small particles into the cell. Receptor-mediated endocytosis. Particles such as sugars bind to receptors on the membrane. The membrane then folds inward to form a coated vesicle. Inside this vesicle are the receptors still bound to the sugar.",
+      "caption": "Three variations of endocytosis are shown. (a) In phagocytosis, the cell membrane surrounds the particle and pinches off to form an intracellular vacuole. (b) In pinocytosis, the cell membrane surrounds a small volume of fluid and pinches off, forming a vesicle. (c) In receptor-mediated endocytosis, the uptake of substances is targeted to a specific substance (a ligand) that binds at the receptor on the external cell membrane. (credit: modification of work by Mariana Ruiz Villarreal)"
+    },
+    "OSC_Microbio_03_04_Endomemb": {
+      "source": "media/OSC_Microbio_03_04_Endomemb.jpg",
+      "sourceSha256": "62e8ac121038e5f9b0ce3ce66e9d2b959b4982174bb19078ebf1aab291ac95bd",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 696,
+      "height": 448,
+      "variants": [
+        {
+          "width": 696,
+          "height": 448,
+          "file": "OSC_Microbio_03_04_Endomemb-696.webp"
+        }
+      ],
+      "alt": "A diagram showing the nucleus. A sphere in the center of the nucleus is labeled nucleolus. Lines within the nucleus are labeled chromatin. The fluid of the nucleus is labeled nucleoplasm. The outer region just inside the nuclear envelope is labeled nuclear lamina. The outside of the nucleus is labeled nuclear envelop and pores in the envelope are labeled nuclear pores. The nuclear envelope is continuous with and becomes the endoplasmic reticulum; a webbing of membranes outside the nucleus. Regions of the endoplasmic reticulum with dots are labeled rough endoplasmic reticulum (RER) and regions without dots are labeled smooth endoplasmic reticulum (SER). The RER and SER are continuous with each other.",
+      "caption": "The endomembrane system is composed of a series of membranous intracellular structures that facilitate movement of materials throughout the cell and to the cell membrane."
+    },
+    "OSC_Microbio_03_04_EukPlasMem": {
+      "source": "media/OSC_Microbio_03_04_EukPlasMem.jpg",
+      "sourceSha256": "d63f486ba48f70bd355fe19a6ad1c8755a03f9764c269ebd5047f7ce71e5a87e",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1200,
+      "height": 659,
+      "variants": [
+        {
+          "width": 800,
+          "height": 439,
+          "file": "OSC_Microbio_03_04_EukPlasMem-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 659,
+          "file": "OSC_Microbio_03_04_EukPlasMem-1200.webp"
+        }
+      ],
+      "alt": "A drawing of the plasma membrane. The top of the diagram is labeled outside of cell, the bottom is labeled cytoplasm. Separating these two regions is the membrane which is made of mostly a phospholipid bilayer. Each phospholipid is drawn as a sphere with 2 tails. There are two layers of phospholipids making up the bilayer; each phospholipid layer has the sphere towards the outside of the bilayer and the two tails towards the inside of the bilayer. Embedded within the phospholipid bilayer are a variety of large proteins. Glycolipids have long carbohydrate chains (shown as a chain of hexagons) attached to a single phospholipid; the carbohydrates are always on the outside of the membrane. Glycoproteins have a long carbohydrate chain attached to a protein; the carbohydrates are on the outside of the membrane. The cytoskeleton is shown as a thin layer of line just under the inside of the phospholipid bilayer.",
+      "caption": "The eukaryotic plasma membrane is composed of a lipid bilayer with many embedded or associated proteins. It contains cholesterol for the maintenance of membrane, as well as glycoproteins and glycolipids that are important in the recognition other cells or pathogens."
+    },
+    "OSC_Microbio_03_04_EukShapes": {
+      "source": "media/OSC_Microbio_03_04_EukShapes.jpg",
+      "sourceSha256": "9182bbc39045ae633761ba2a0eac31dcf90bb59e60e76cd79c352493c934203e",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1300,
+      "height": 788,
+      "variants": [
+        {
+          "width": 800,
+          "height": 485,
+          "file": "OSC_Microbio_03_04_EukShapes-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 788,
+          "file": "OSC_Microbio_03_04_EukShapes-1300.webp"
+        }
+      ],
+      "alt": "a) A micrograph of a spherical cell approximately 4 µm in diameter. B) A micrograph of wavy ribbon shaped cells approximately 10 µm in length. C) a micrograph of a bell shaped cell approximately 50µm in diameter with a tail approximately 200 µm in length. D) An oval shaped cell approximately 100 µm in length. A ring shaped cell approximately 4 µm in diameter; the ring shaped cell is inside a red blood cell.",
+      "caption": "Eukaryotic cells come in a variety of cell shapes. (a) Spheroid Chromulina alga. (b) Fusiform shaped Trypanosoma . (c) Bell-shaped Vorticella . (d) Ovoid Paramecium . (e) Ring-shaped Plasmodium ovale . (credit a: modification of work by NOAA; credit b, e: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_03_04_Flagellum": {
+      "source": "media/OSC_Microbio_03_04_Flagellum.jpg",
+      "sourceSha256": "2eb12bc5269a49c5c8ed40b7222a4256930705b462e00069ad03def3c5b85ce2",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1299,
+      "height": 1201,
+      "variants": [
+        {
+          "width": 800,
+          "height": 739,
+          "file": "OSC_Microbio_03_04_Flagellum-800.webp"
+        },
+        {
+          "width": 1299,
+          "height": 1201,
+          "file": "OSC_Microbio_03_04_Flagellum-1299.webp"
+        }
+      ],
+      "alt": "a) A micrograph of a cross section of a flagellum showing a ring of 9 sets of structures that are made of smaller rings. In the center are two more complete smaller rings. B) A micrograph showing a flagellum. This shows a star shaped structure in the cell attached to the long lines that make up the filament of the flagellum. A diagram shows the triplet centriole in the cell as part of the basal body that attaches the filament to the cell. The diagram also shows a cross section of the filament. The outer ring is made of 9 sets of the following: a ring labeled subfiber A, a ring labeled subfiber B, a projection labeled radial spoke with a small end labeled spoke head, a projection towards the center labeled inner dynein, and a projection towards the outside labeled outer dynein. Each of these 9 sets are connected to the ones next to it via a line called nexin. These 9 sets form a ring; in the center of this ring are 2 small circles labeled central singlet microtubule. These two are attached to each other by a line labeled central bridge. C) A cell with flagella on either end. D) A cell with many small cilia along the outside and an indentation labeled mouth.",
+      "caption": "(a) Eukaryotic flagella and cilia are composed of a 9+2 array of microtubules, as seen in this transmission electron micrograph cross-section. (b) The sliding of these microtubules relative to each other causes a flagellum to bend. (c) An illustration of Trichomonas vaginalis , a flagellated protozoan parasite that causes vaginitis. (d) Many protozoans, like this Paramecium , have numerous cilia that aid in locomotion as well as in feeding. Note the mouth opening shown here. (credit d: modification of work by University of Vermont/National Institutes of Health)"
+    },
+    "OSC_Microbio_03_04_Golgi": {
+      "source": "media/OSC_Microbio_03_04_Golgi.jpg",
+      "sourceSha256": "99979dded328ec241ed7c29f1321c727367f150f2c25144af9bec8b44bc10c04",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1300,
+      "height": 537,
+      "variants": [
+        {
+          "width": 800,
+          "height": 330,
+          "file": "OSC_Microbio_03_04_Golgi-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 537,
+          "file": "OSC_Microbio_03_04_Golgi-1300.webp"
+        }
+      ],
+      "alt": "A small diagram of the cell outlining the Golgi complex which is a series of stacked membranes in the cell. A more detailed diagram shows the stacked membranes labeled cisternae and the inner regions of the stacks labeled lumen. Small spheres on the top are show transport vesicles from ER fuse with the cis face of the golgi. Small spheres on the bottom show newly formed secretory vesicles emerging from the trans face of the golgi. A micrograph shows the golgi in the cell as a stack of lines forming a semi-circle.",
+      "caption": "A transmission electron micrograph (left) of a Golgi apparatus in a white blood cell. The illustration (right) shows the cup-shaped, stacked disks and several transport vesicles. The Golgi apparatus modifies lipids and proteins, producing glycolipids and glycoproteins, respectively, which are commonly inserted into the plasma membrane."
+    },
+    "OSC_Microbio_03_04_IntFilam": {
+      "source": "media/OSC_Microbio_03_04_IntFilam.jpg",
+      "sourceSha256": "c7a965d9fe363717d165d7e08e782161525e41314fff7572a9e866313f1987a1",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1299,
+      "height": 508,
+      "variants": [
+        {
+          "width": 800,
+          "height": 313,
+          "file": "OSC_Microbio_03_04_IntFilam-800.webp"
+        },
+        {
+          "width": 1299,
+          "height": 508,
+          "file": "OSC_Microbio_03_04_IntFilam-1299.webp"
+        }
+      ],
+      "alt": "a) Intermediate filaments are shown as a rope-like structure. B) These are found in the nuclear lamina (lamina intermediate filaments) which are just under the nuclear envelope. C) Intermediate filaments are also found in desmosomes. Desmosomes are connections between two cells (shown here as two small regions of plasma membranes next to each other. The intermediate filaments connect these two membranes together across the extracellular space. A micrograph shows these as dark lines running across the membranes between two cells.",
+      "caption": "(a) Intermediate filaments are composed of multiple strands of polymerized subunits. They are more permanent than other cytoskeletal structures and serve a variety of functions. (b) Intermediate filaments form much of the nuclear lamina. (c) Intermediate filaments form the desmosomes between cells in some animal tissues. (credit c “illustration”: modification of work by Mariana Ruiz Villareal)"
+    },
+    "OSC_Microbio_03_04_Microtub": {
+      "source": "media/OSC_Microbio_03_04_Microtub.jpg",
+      "sourceSha256": "fc150237474de4cdf3dbc1793871811dfd7c03c7e56f416cf79ebcc706c5ced0",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1300,
+      "height": 457,
+      "variants": [
+        {
+          "width": 800,
+          "height": 281,
+          "file": "OSC_Microbio_03_04_Microtub-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 457,
+          "file": "OSC_Microbio_03_04_Microtub-1300.webp"
+        }
+      ],
+      "alt": "A) a computer simulation shows micrtububles as spheres forming a rube structure. This can be drawn as spheres forming a ring; stacks of these rings form the tube. Each ring is 13 polymerized dimers of alpha-tubulin and beta-tubulin. C) The long tubes that are formed create a structure similar to a railroad track; motor proteins move along the microtubule track to carry vesicles throughout the cell.",
+      "caption": "(a) Microtubules are hollow structures composed of polymerized tubulin dimers. (b) They are involved in several cellular processes, including the movement of organelles throughout the cytoplasm. Motor proteins carry organelles along microtubule tracks that crisscross the entire cell. (credit b: modification of work by National Institute on Aging)"
+    },
+    "OSC_Microbio_03_04_Mitochond": {
+      "source": "media/OSC_Microbio_03_04_Mitochond.jpg",
+      "sourceSha256": "8d63f0db2a520811dbc13e2fd359cf602f6538949e4c1ad008c70bb2d626bd81",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1200,
+      "height": 347,
+      "variants": [
+        {
+          "width": 800,
+          "height": 231,
+          "file": "OSC_Microbio_03_04_Mitochond-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 347,
+          "file": "OSC_Microbio_03_04_Mitochond-1200.webp"
+        }
+      ],
+      "alt": "The mitochondria is shown as a long oval structure. The outside of the structure is an outer membrane. Inside of that is an inner membrane that folds back and forth filling most of the inner part of the mitochondrion. The folds of the inner membrane are labeled cristae and the fluid inside the inner membrane is the mitochondrial matrix. The space between the inner and outer membranes is the inner membrane space. Inside the mitochondrial matrix are found DNA, ribosomes and granules.",
+      "caption": "Each mitochondrion is surrounded by two membranes, the inner of which is extensively folded into cristae and is the site of the intermembrane space. The mitochondrial matrix contains the mitochondrial DNA, ribosomes, and metabolic enzymes. The transmission electron micrograph of a mitochondrion, on the right, shows both membranes, including cristae and the mitochondrial matrix. (credit “micrograph”: modification of work by Matthew Britton; scale-bar data from Matt Russell)"
+    },
+    "OSC_Microbio_03_04_NucEnv": {
+      "source": "media/OSC_Microbio_03_04_NucEnv.jpg",
+      "sourceSha256": "ff3dec34b3495ecad36ba8e22d0d5232ffd548a769043b6f9f3bdbdc9aea7d1a",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 500,
+      "height": 518,
+      "variants": [
+        {
+          "width": 500,
+          "height": 518,
+          "file": "OSC_Microbio_03_04_NucEnv-500.webp"
+        }
+      ],
+      "alt": "A micrograph showing an oval cell with a large oval nucleus. The nucleus is red with a bright green outline labeled nuclear lamina. Green lines criss-cross the rest of the cell outside the nucleus.",
+      "caption": "In this fluorescent microscope image, all the intermediate filaments have been stained with a bright green fluorescent stain. The nuclear lamina is the intense bright green ring around the faint red nuclei."
+    },
+    "OSC_Microbio_03_04_Nucleolus": {
+      "source": "media/OSC_Microbio_03_04_Nucleolus.jpg",
+      "sourceSha256": "2b7e2ff6e781d6b32032d04530b9cb97c599d43bc5a38da55df0ab77e842aa93",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1300,
+      "height": 458,
+      "variants": [
+        {
+          "width": 800,
+          "height": 282,
+          "file": "OSC_Microbio_03_04_Nucleolus-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 458,
+          "file": "OSC_Microbio_03_04_Nucleolus-1300.webp"
+        }
+      ],
+      "alt": "a) A diagram showing the nucleus. A sphere in the center of the nucleus is labeled nucleolus. Lines within the nucleus are labeled chromatin. The fluid of the nucleus is labeled nucleoplasm. The outer region just inside the nuclear envelope is labeled nuclear lamina. The outside of the nucleus is labeled nuclear envelop and pores in the envelope are labeled nuclear pores. The nuclear envelope is continuous with and becomes the endoplasmic reticulum; a webbing of membranes outside the nucleus. B) A micrograph showing these same structures. The nucleolus is a dark region inside the nucleus which is composed of many lighter lines. The nuclear envelop forms the outside of the nucleus and a pore is seen as a light region in the envelope. Outside the envelope are many lines labeled rough endoplasmic reticulum. A smaller set of lines is labeled mitochondrion overlaying part of the RER.",
+      "caption": "(a) The nucleolus is the dark, dense area within the nucleus. It is the site of rRNA synthesis and preribosomal assembly. (b) Electron micrograph showing the nucleolus."
+    },
+    "OSC_Microbio_03_04_NucleusTEM": {
+      "source": "media/OSC_Microbio_03_04_NucleusTEM.jpg",
+      "sourceSha256": "64f3bb9ac740b556d2bb3c2052b6c5b6ebda8a43968d83f0fe8927a9a3cc3e96",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 500,
+      "height": 375,
+      "variants": [
+        {
+          "width": 500,
+          "height": 375,
+          "file": "OSC_Microbio_03_04_NucleusTEM-500.webp"
+        }
+      ],
+      "alt": "A micrograph of a portion of an oval cell. In the center is a darker spherical structure.",
+      "caption": "Eukaryotic cells have a well-defined nucleus surrounded by a nuclear membrane. The nucleus of this mammalian lung cell is located in the bottom right corner of the image. The large, dark, oval-shaped structure within the nucleus is the nucleolus."
+    },
+    "OSC_Microbio_03_04_Peroxisome": {
+      "source": "media/OSC_Microbio_03_04_Peroxisome.jpg",
+      "sourceSha256": "235525afac1c0614247d846ed96a3e766f95c6c61aabdad1be513434182a7f78",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1200,
+      "height": 498,
+      "variants": [
+        {
+          "width": 800,
+          "height": 332,
+          "file": "OSC_Microbio_03_04_Peroxisome-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 498,
+          "file": "OSC_Microbio_03_04_Peroxisome-1200.webp"
+        }
+      ],
+      "alt": "A diagram of the cell outlines the peroxisomes which are small spheres in the cell. A micrograph shows a close-up of the peroxisome which is a sphere within the cell.",
+      "caption": "A transmission electron micrograph (left) of a cell containing a peroxisome. The illustration (right) shows the location of peroxisomes in a cell. These eukaryotic structures play a role in lipid biosynthesis and breaking down various molecules. They may also have other specialized functions depending on the cell type. (credit “micrograph”: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_03_04_actin": {
+      "source": "media/OSC_Microbio_03_04_actin.jpg",
+      "sourceSha256": "fa1db3c45cf5bd682bf48cdbe953e315117b0c24c754249e5b145c3bd155a4e2",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1294,
+      "height": 995,
+      "variants": [
+        {
+          "width": 800,
+          "height": 615,
+          "file": "OSC_Microbio_03_04_actin-800.webp"
+        },
+        {
+          "width": 1294,
+          "height": 995,
+          "file": "OSC_Microbio_03_04_actin-1294.webp"
+        }
+      ],
+      "alt": "a) A diagram of the plasma membrane shows the filaments of the cytoskeleton as thin lines on the cytoplasmic side of the membrane. B) A closeup of the filaments shows spheres labeled actin subunits forming into a long chain labeled actin filaments. C)examples of how actin is used in various cells. Some cells use actin for amoeboid movement. This is done when actin polymerizes and depolymerizes to allow a portion of the cell to project out, attach to a surface and pull the rest of the cell behind it. Cytoplasmic streaming is the movement of cytoplasm due to the actions of actin. Contractile ring formation during cytokinesis is when actin pinches a dividing cell off into two separate cells. Muscle contraction in animals is when actin strands are pulled together by myosin; this shortens the length of the muscle cell and contracts the muscle.",
+      "caption": "(a) A microfilament is composed of a pair of actin filaments. (b) Each actin filament is a string of polymerized actin monomers. (c) The dynamic nature of actin, due to its polymerization and depolymerization and its association with myosin, allows microfilaments to be involved in a variety of cellular processes, including ameboid movement, cytoplasmic streaming, contractile ring formation during cell division, and muscle contraction in animals."
+    },
+    "OSC_Microbio_03_04_eukcell-109a": {
+      "source": "media/OSC_Microbio_03_04_eukcell-109a.jpg",
+      "sourceSha256": "c9b27fecab0ea062bc1a1d97785542aafbfd1de82909512fa151b4c7a4a73682",
+      "module": "m58793",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1054,
+      "variants": [
+        {
+          "width": 800,
+          "height": 648,
+          "file": "OSC_Microbio_03_04_eukcell-109a-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1054,
+          "file": "OSC_Microbio_03_04_eukcell-109a-1300.webp"
+        }
+      ],
+      "alt": "A diagram of a large cell. The outside of the cell is a thin line labeled plasma membrane. A long projection outside of the plasma membrane is labeled flagellum. Shorter projections outside the membrane are labeled cilia. Just under the plasma membrane are lines labeled microtubules and microfilaments. The fluid inside the plasma membrane is labeled cytoplasm. In the cytoplasm are small dots labeled ribosomes. These dots are either floating in the cytoplasm or attached to a webbed membrane labeled rough endoplasmic reticulum. Some regions of the webbed membrane do not have dots; these regions of the membrane are called smooth endoplasmic reticulum. Other structures in the cytoplasm include an oval with a webbed line inside of it; this is labeled the mitochondrion. Spheres in the cytoplasm are labeled peroxisome and lysosome. A pancake stack of membranes is labeled golgi complex. Two short tubes are labeled centrosomes. A large sphere in the cell is labeled nucleus. The outer membrane of this sphere is the nuclear envelope. Holes in the nuclear envelope are called nuclear pores. A smaller sphere in the nucleus is labeled nucleolus.",
+      "caption": "An illustration of a generalized, single-celled eukaryotic organism. Note that cells of eukaryotic organisms vary greatly in terms of structure and function, and a particular cell may not have all of the structures shown here."
     }
   }
 }

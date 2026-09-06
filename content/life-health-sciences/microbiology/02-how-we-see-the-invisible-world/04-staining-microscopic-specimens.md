@@ -74,29 +74,38 @@ Sample micrographs for each differential stain. (credit "Gram stain": modificati
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain why it is important to fix a specimen before viewing it under a light microscope." hint="Think about what fixation does to the cells themselves, not just to the slide." >}}
-Fixation attaches cells to a slide and kills the microorganisms in the specimen, stopping their movement and metabolism while preserving the integrity of their cellular components for observation.
-===CHECKS===
-attaches cells to a slide
-kills the microorganisms in the specimen, stopping their movement and metabolism
-preserving the integrity of their cellular components for observation
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="Explain why it is important to fix a specimen before viewing it under a light microscope."
+  answer="It kills the microorganisms in the specimen, stopping their movement and metabolism while preserving the integrity of their cellular components for observation."
+  hint="Think about what fixation does to the cells themselves, not just to the slide."
+>}}
+It colors certain features of the specimen to enhance contrast.
+It kills the microorganisms in the specimen, stopping their movement and metabolism while preserving the integrity of their cellular components for observation.
+It places the specimen on the slide in a drop of liquid.
+It prevents the specimen from becoming charged by an electron beam.
+{{< /multiplechoice >}}
 
-{{< selfcheck question="What types of specimens should be chemically fixed as opposed to heat-fixed?" hint="Think about which kind of specimen — cells in suspension or a solid tissue sample — heat could damage." >}}
-Chemical fixatives are often preferable to heat for tissue specimens. Chemical agents such as acetic acid, ethanol, methanol, formaldehyde (formalin), and glutaraldehyde can denature proteins, stop biochemical reactions, and stabilize cell structures in tissue samples.
-===CHECKS===
-chemical fixatives are often preferable to heat for tissue specimens
-chemical agents ... can denature proteins, stop biochemical reactions
-stabilize cell structures in tissue samples
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="What types of specimens should be chemically fixed as opposed to heat-fixed?"
+  answer="tissue specimens"
+  hint="Think about which kind of specimen — cells in suspension or a solid tissue sample — heat could damage."
+>}}
+tissue specimens
+urine samples
+skin scrapings
+bacterial smears
+{{< /multiplechoice >}}
 
-{{< selfcheck question="Why might an acidic dye react differently with a given specimen than a basic dye?" hint="Think about the charge of a typical cell wall and which ion of each dye type is the chromophore." >}}
-Because cells typically have negatively charged cell walls, the positive chromophores in basic dyes tend to stick to the cell walls, making them positive stains. The negatively charged chromophores in acidic dyes are repelled by negatively charged cell walls, making them negative stains.
-===CHECKS===
-cells typically have negatively charged cell walls
-the positive chromophores in basic dyes tend to stick to the cell walls, making them positive stains
-the negatively charged chromophores in acidic dyes are repelled by negatively charged cell walls, making them negative stains
-{{< /selfcheck >}}
+{{< sortbins question="Why might an acidic dye react differently with a given specimen than a basic dye? Sort each phrase under the type of simple stain it describes." hint="Think about the charge of a typical cell wall and which ion of each dye type is the chromophore." >}}
+{"bins": ["Basic", "Acidic", "Negative"],
+ "items": [
+  {"label": "crystal violet", "bin": 0},
+  {"label": "eosin", "bin": 1},
+  {"label": "India ink", "bin": 2},
+  {"label": "tends to bind nucleic acids and proteins, giving a positive result", "bin": 0},
+  {"label": "binds proteins that carry a positive charge", "bin": 1},
+  {"label": "colors the background rather than the specimen", "bin": 2}]}
+{{< /sortbins >}}
 
 **Check Your Understanding**
 
@@ -108,13 +117,16 @@ absorbed by the background but not by the cells or organisms in the specimen
 producing an outline or silhouette of the organisms against a colorful background
 {{< /selfcheck >}}
 
-{{< selfcheck question="Explain the difference between simple and differential staining." hint="Think about how many dyes each technique uses and whether every organism in the sample ends up the same color." >}}
-In simple staining, a single dye is used to emphasize particular structures in the specimen, so a simple stain will generally make all of the organisms in a sample appear to be the same color, even if the sample contains more than one type of organism. In contrast, differential staining distinguishes organisms based on their interactions with multiple stains, so two organisms in a differentially stained sample may appear to be different colors.
-===CHECKS===
-a single dye is used to emphasize particular structures in the specimen
-make all of the organisms in a sample appear to be the same color, even if the sample contains more than one type of organism
-distinguishes organisms based on their interactions with multiple stains
-{{< /selfcheck >}}
+{{< sortbins question="Explain the difference between simple and differential staining by sorting each named technique under the category it belongs to." hint="Think about how many dyes each technique uses and whether every organism in the sample ends up the same color." >}}
+{"bins": ["Simple", "Differential"],
+ "items": [
+  {"label": "basic stains", "bin": 0},
+  {"label": "Gram stain", "bin": 1},
+  {"label": "acidic stains", "bin": 0},
+  {"label": "acid-fast stain", "bin": 1},
+  {"label": "negative stains", "bin": 0},
+  {"label": "flagella stain", "bin": 1}]}
+{{< /sortbins >}}
 
 ## Gram Staining
 
@@ -139,28 +151,38 @@ In this specimen, the gram-positive bacterium *Staphylococcus aureus* retains cr
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain the role of Gram's iodine in the Gram stain procedure." hint="Think about what a mordant does to the crystal violet dye once it is inside the cell wall." >}}
-Gram's iodine acts as a mordant, a substance used to set or stabilize stains or dyes; it acts like a trapping agent that complexes with the crystal violet, making the crystal violet–iodine complex clump and stay contained in thick layers of peptidoglycan in the cell walls.
-===CHECKS===
-acts as a mordant, a substance used to set or stabilize stains or dyes
-acts like a trapping agent that complexes with the crystal violet
-making the crystal violet–iodine complex clump and stay contained in thick layers of peptidoglycan
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="Explain the role of Gram's iodine in the Gram stain procedure."
+  answer="mordant"
+  hint="Think about what a mordant does to the crystal violet dye once it is inside the cell wall."
+>}}
+decolorizing agent
+primary stain
+mordant
+counterstain
+{{< /multiplechoice >}}
 
-{{< selfcheck question="Explain the role of alcohol in the Gram stain procedure." hint="Think about how the thickness of a cell's peptidoglycan layer affects how easily this step removes the crystal violet dye." >}}
-Alcohol serves as the decolorizing agent. Cells that have thick peptidoglycan layers in their cell walls are much less affected by it; they generally retain the crystal violet dye and remain purple. However, the decolorizing agent more easily washes the dye out of cells with thinner peptidoglycan layers, making them again colorless.
-===CHECKS===
-alcohol serves as the decolorizing agent
-cells that have thick peptidoglycan layers ... generally retain the crystal violet dye and remain purple
-more easily washes the dye out of cells with thinner peptidoglycan layers, making them again colorless
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="Explain the role of alcohol in the Gram stain procedure."
+  answer="decolorizing agent"
+  hint="Think about how the thickness of a cell's peptidoglycan layer affects how easily this step removes the crystal violet dye."
+>}}
+mordant
+decolorizing agent
+primary stain
+counterstain
+{{< /multiplechoice >}}
 
-{{< selfcheck question="What color are gram-positive and gram-negative cells, respectively, after the Gram stain procedure?" hint="Think about which dye is retained by thick peptidoglycan layers and which dye colors the cells that lose it." >}}
-The purple, crystal-violet stained cells are referred to as gram-positive cells, while the red, safranin-dyed cells are gram-negative.
-===CHECKS===
-the purple, crystal-violet stained cells are referred to as gram-positive cells
-the red, safranin-dyed cells are gram-negative
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="What color are gram-positive and gram-negative cells, respectively, after the Gram stain procedure?"
+  answer="purple and red"
+  hint="Think about which dye is retained by thick peptidoglycan layers and which dye colors the cells that lose it."
+>}}
+red and purple
+blue and pink
+green and pink
+purple and red
+{{< /multiplechoice >}}
 
 {{< callout type="info" >}}
 **Clinical Focus.** *Part 3*
@@ -219,13 +241,16 @@ One common negative staining technique for identifying encapsulated yeast and ba
 
 **Check Your Understanding**
 
-{{< selfcheck question="How does negative staining help us visualize capsules?" hint="Think about which part of the specimen the dye actually colors when the capsule itself resists most basic dyes." >}}
-Capsules do not absorb most basic dyes, so a negative staining technique is used: the dye stains the background but does not penetrate the capsules, which appear like halos around the borders of the cell.
-===CHECKS===
-capsules do not absorb most basic dyes
-the dye stains the background but does not penetrate the capsules
-which appear like halos around the borders of the cell
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="How does negative staining help us visualize capsules?"
+  answer="The dye stains the background but does not penetrate the capsules, which appear like halos around the borders of the cell."
+  hint="Think about which part of the specimen the dye actually colors when the capsule itself resists most basic dyes."
+>}}
+The dye stains the background but does not penetrate the capsules, which appear like halos around the borders of the cell.
+The primary stain colors the capsule directly, adding color to it so it stands out.
+Heat pushes a green dye into the capsule so it appears bluish-green.
+A mordant traps dye within the capsule, making it visible directly.
+{{< /multiplechoice >}}
 
 ## Endospore Staining
 
@@ -239,13 +264,15 @@ Endospore-staining techniques are important for identifying *Bacillus*, *Clostri
 
 **Check Your Understanding**
 
-{{< selfcheck question="Is endospore staining an example of positive, negative, or differential staining?" hint="Think back to how many different stains this technique applies, and to the earlier sentence that named it among the differential techniques." >}}
-Differential staining techniques commonly used in clinical settings include Gram staining, acid-fast staining, endospore staining, flagella staining, and capsule staining, so endospore staining is a differential stain. This fits because endospore staining uses two stains — heat pushes the primary stain, malachite green, into the endospore, and the cell is then counterstained pink with safranin — to differentiate endospores from the rest of the cell.
-===CHECKS===
-differential staining techniques commonly used in clinical settings include ... endospore staining
-uses two stains ... to differentiate endospores from the rest of the cell
-the cell is then counterstained pink with safranin
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="Is endospore staining an example of positive, negative, or differential staining?"
+  answer="differential"
+  hint="Think back to how many different stains this technique applies, and to the earlier sentence that named it among the differential techniques."
+>}}
+positive
+negative
+differential
+{{< /multiplechoice >}}
 
 ## Flagella Staining
 
@@ -277,12 +304,11 @@ critical point drying ... is used to displace the water from the specimen
 sputter-coated with metal ... prevents the specimen from becoming charged by the SEM's electron beam
 {{< /selfcheck >}}
 
-{{< selfcheck question="Name the device that is used to create thin sections of specimens for electron microscopy." hint="This device's name combines a prefix meaning very small with the word for an instrument that cuts thin slices." >}}
-Thin sections are cut using a specialized device called an ultramicrotome.
-===CHECKS===
-thin sections are cut
-using a specialized device called an ultramicrotome
-{{< /selfcheck >}}
+{{< textin
+  question="Name the device that is used to create thin sections of specimens for electron microscopy."
+  answer="ultramicrotome"
+  hint="This device's name combines a prefix meaning very small with the word for an instrument that cuts thin slices."
+>}}
 
 {{< callout type="info" >}}
 **Micro Connection.** *Using Microscopy to Diagnose Syphilis*
@@ -308,13 +334,16 @@ Sample preparation for two-photon microscopy is similar to fluorescence microsco
 
 **Check Your Understanding**
 
-{{< selfcheck question="What is the main difference between preparing a sample for fluorescence microscopy versus light microscopy?" hint="Think about what kind of dye replaces an ordinary stain for this microscopy type." >}}
-Samples for fluorescence and confocal microscopy are prepared similarly to samples for light microscopy, except that the dyes used are fluorochromes rather than ordinary stains, and the stains are often diluted in liquid before being applied to the slide.
-===CHECKS===
-prepared similarly to samples for light microscopy
-except that the dyes are fluorochromes
-stains are often diluted in liquid before applying to the slide
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="What is the main difference between preparing a sample for fluorescence microscopy versus light microscopy?"
+  answer="Fluorochromes are used instead of ordinary stains."
+  hint="Think about what kind of dye replaces an ordinary stain for this microscopy type."
+>}}
+Fluorochromes are used instead of ordinary stains.
+The specimen must be embedded in plastic resin.
+The specimen must be sputter-coated with metal.
+The specimen must be dehydrated with an ethanol series.
+{{< /multiplechoice >}}
 
 {{< callout type="info" >}}
 **Link to Learning**
@@ -399,13 +428,16 @@ chemical fixation
   hint="This is the opposite of the staining approach that uses more than one dye and can make different organisms appear as different colors."
 >}}
 
-{{< selfcheck question="If a mixed sample containing two different species of bacteria is stained with a simple stain, would the two species look different from each other afterward? Explain your answer." hint="Think about how many dyes a simple stain applies, and whether that lets different organisms end up different colors." >}}
-No — a simple stain uses a single dye, and it will generally make all of the organisms in a sample appear to be the same color, even if the sample contains more than one type of organism, so the two species would not look different from each other under a simple stain alone.
-===CHECKS===
-a simple stain uses a single dye
-make all of the organisms in a sample appear to be the same color, even if the sample contains more than one type of organism
-the two species would not look different from each other under a simple stain alone
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="If a mixed sample containing two different species of bacteria is stained with a simple stain, would the two species look different from each other afterward? Explain your answer."
+  answer="No — a simple stain uses a single dye, so it generally makes every organism in a sample appear to be the same color, even if the sample contains more than one type of organism."
+  hint="Think about how many dyes a simple stain applies, and whether that lets different organisms end up different colors."
+>}}
+No — a simple stain uses a single dye, so it generally makes every organism in a sample appear to be the same color, even if the sample contains more than one type of organism.
+Yes — a simple stain uses more than one dye, so different organisms end up different colors.
+Yes — a simple stain distinguishes organisms based on their interactions with multiple stains.
+No — a simple stain colors the background rather than the organisms, so no organism shows color at all.
+{{< /multiplechoice >}}
 
 ### Describe the unique features of commonly used stains
 
@@ -451,7 +483,7 @@ iodine
   question="Ziehl-Neelsen staining, a type of ________ staining, is diagnostic for *Mycobacterium tuberculosis*."
   answer="acid-fast"
   accept="acidfast"
-  hint="This staining approach differentiates gram-positive cells with waxy mycolic acids in their cell walls from those without, using carbolfuchsin as the primary stain."
+  hint="Both Ziehl-Neelsen and Kinyoun are variants of the same staining approach; one uses heat to help the primary stain penetrate the cell wall."
 >}}
 
 {{< textin
@@ -461,13 +493,16 @@ iodine
   hint="This procedure applies crystal violet, then a mordant, then a decolorizing agent, and finally a safranin counterstain."
 >}}
 
-{{< selfcheck question="How could you identify whether a particular bacterial sample contained specimens with mycolic acid-rich cell walls?" hint="Think about which staining technique distinguishes cells with waxy cell-wall components from those without, and what color the two groups end up after its counterstain." >}}
-An acid-fast stain is able to differentiate two types of gram-positive cells: those that have waxy mycolic acids in their cell walls, and those that do not. Using the Ziehl-Neelsen or Kinyoun technique, carbolfuchsin is applied as the primary stain; the waxy, acid-fast cells retain the carbolfuchsin even after a decolorizing agent (an acid-alcohol solution) is applied, while a secondary counterstain, methylene blue, renders non–acid-fast cells blue. So a bacterial sample with mycolic acid-rich cell walls could be identified with this stain: cells that retain the red or pink carbolfuchsin color rather than turning blue have mycolic acid-rich, acid-fast cell walls.
-===CHECKS===
-acid-fast stain is able to differentiate two types of gram-positive cells: those that have waxy mycolic acids in their cell walls, and those that do not
-the waxy, acid-fast cells retain the carbolfuchsin even after a decolorizing agent ... is applied
-a secondary counterstain, methylene blue, renders non–acid-fast cells blue
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="How could you identify whether a particular bacterial sample contained specimens with mycolic acid-rich cell walls?"
+  answer="Acid-fast stain"
+  hint="Think about which staining technique distinguishes cells with waxy cell-wall components from those without, and what color the two groups end up after its counterstain."
+>}}
+Gram stain
+Acid-fast stain
+Endospore stain
+Capsule stain
+{{< /multiplechoice >}}
 
 {{< selfcheck question="You use the Gram staining procedure to stain an L-form bacterium (a bacterium that lacks a cell wall). What color will the bacterium be after the staining procedure is finished?" hint="Think about what a mordant needs to trap dye inside a cell, and what happens to the decolorizing step when that structure is missing entirely." >}}
 Gram's iodine acts as a mordant that traps the crystal violet–iodine complex in thick layers of peptidoglycan in the cell wall. Because an L-form bacterium lacks a cell wall, it has no peptidoglycan to retain the crystal violet–iodine complex, so the decolorizing agent would wash the purple dye out of the cell just as it does from a thin-walled, gram-negative cell. The cell would then pick up the pink safranin counterstain, so the L-form bacterium would appear pink, the color of a gram-negative cell.
@@ -479,4 +514,4 @@ the L-form bacterium would appear pink, the color of a gram-negative cell
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 2.4: Staining Microscopic Specimens](https://openstax.org/books/microbiology/pages/2-4-staining-microscopic-specimens) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP, with `kind="photo"` set explicitly on twelve photographic figures and `kind="diagram"` on the two drawn/labeled figures (the Gram stain process table and the indirect-immunofluorescence schematic), overriding the media manifest's JPEG-based guess; alts rewritten for all fourteen figures to describe what is visibly drawn or photographed, since this chapter's source alts contain defects (the Gram-stain-process alt misspells "purple" as "pruple," and the two stain-table alts misspell "fuchsin" as "fuschsin," "India ink" as "india in k," and contain a 1,000-character run-on of cells) rather than reused; a longdesc added for the Gram stain process figure (required) and the indirect-immunofluorescence diagram, walking each in reading order; the two summary tables printed as images in the source (Simple Stains, Differential Stains) are transcribed as Markdown tables from the image, checked against the printed page, because the source alt for both misspells several dye names (the Differential Stains image itself prints "pararosaline" in its flagella-stain row; the transcribed table prints pararosaniline, the spelling this section's own text uses, and the image's spelling is reported as a source defect) — the source images are kept immediately after their tables for their sample micrographs only, with alts limited to the micrograph column and not re-transcribing the table cells; both tables are placed at the point in the text where the module's own sentence introduces them ("provides more detail" / "provides more detail on these differential staining techniques"), not at their later position in the source's print layout, where they are typeset at the end of the Flagella Staining section for page-fit reasons that do not apply to a continuously scrolling page; feature boxes rendered as callouts; the fourteen Check Your Understanding bullets rendered as body self-checks, with model answers and rubrics assembled from this section's own preceding text, the source's single five-bullet box split into two labeled "Check Your Understanding" runs of three and two so no more than three self-checks run back to back without intervening prose or a figure; the Clinical Focus box's *Part 3* now names all three earlier parts of the case — it began in Section 2.1, continued in Section 2.3, and continues in the Resolution below — replacing the source's "Jump to the next / Go back to the previous Clinical Focus box" links, and the Resolution names where the case began, since it is not accurate to call Part 2 "where the case began" once a case runs across three sections; the Link to Learning sentence's title, which the source printed twice in a row (once as plain text, once repeated as the link text), is printed once as the Markdown link text; the end-of-section Multiple Choice and Fill in the Blank questions and the unkeyed Short Answer and Critical Thinking questions are adapted into the closing interactive Practice block, sorted under the objective each supports; model answers for one short-answer and one critical-thinking question are written from this section's own text, because the source prints no answer key for either; five filler items (one multiple choice and one self-check for the first objective, one text-recall and one self-check for the second, both from this section's own body sentences) fill out the first two objective groups, which the source's own exercise set does not reach on its own; key terms compiled from the module's twenty-three defined terms and the book's Glossary appendix (all twenty-three taken from the glossary; none from a defining sentence); the *Treponema pallidum* figure's caption is printed verbatim, including the source's "used to visualized" (reported as a source defect rather than corrected, because the caption rule keeps the source's wording); the µm figure in the syphilis Micro Connection is set with the micro sign (µ), not the Greek letter mu, per the book's notation rule; cross-references to Sections 2.1 and 2.3 rendered as absolute links, since both pages exist.</small>
+<small>This section is adapted from [Microbiology, Section 2.4: Staining Microscopic Specimens](https://openstax.org/books/microbiology/pages/2-4-staining-microscopic-specimens) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP, with `kind="photo"` set explicitly on twelve photographic figures and `kind="diagram"` on the two drawn/labeled figures (the Gram stain process table and the indirect-immunofluorescence schematic), overriding the media manifest's JPEG-based guess; alts rewritten for all fourteen figures to describe what is visibly drawn or photographed, since this chapter's source alts contain defects (the Gram-stain-process alt misspells "purple" as "pruple," and the two stain-table alts misspell "fuchsin" as "fuschsin," "India ink" as "india in k," and contain a 1,000-character run-on of cells) rather than reused; a longdesc added for the Gram stain process figure (required) and the indirect-immunofluorescence diagram, walking each in reading order; the two summary tables printed as images in the source (Simple Stains, Differential Stains) are transcribed as Markdown tables from the image, checked against the printed page, because the source alt for both misspells several dye names (the Differential Stains image itself prints "pararosaline" in its flagella-stain row; the transcribed table prints pararosaniline, the spelling this section's own text uses, and the image's spelling is reported as a source defect) — the source images are kept immediately after their tables for their sample micrographs only, with alts limited to the micrograph column and not re-transcribing the table cells; both tables are placed at the point in the text where the module's own sentence introduces them ("provides more detail" / "provides more detail on these differential staining techniques"), not at their later position in the source's print layout, where they are typeset at the end of the Flagella Staining section for page-fit reasons that do not apply to a continuously scrolling page; feature boxes rendered as callouts; of the fourteen Check Your Understanding bullets, eleven are now graded — eight `multiplechoice`, two `sortbins` (one built from the Simple Stains table, one classifying named techniques as simple or differential), and one `textin` — from this section's own sentences and tables (11 Check Your Understanding questions graded from the module's own sentences or tables rather than answered in prose; the source prints no key for them), and three (why acid-fast stains are useful; why cells must be dehydrated before electron microscopy; and the difference between a positive and a negative stain) remain body self-checks with model answers and rubrics assembled from this section's own preceding text, because each combines more than one module sentence rather than resting on a single one; the source's single five-bullet box split into two labeled "Check Your Understanding" runs of three and two so no more than three self-checks run back to back without intervening prose or a figure; a second sortbins for the Differential Stains table was considered and skipped, since four of its five rows' distinguishing facts (Gram stain's mordant/decolorizer/counterstain roles and color outcome; acid-fast stain's mycolic-acid identification; endospore staining's classification; capsule staining's background-only mechanism) are already asked by converted items elsewhere on the page, leaving only the flagella-stain row untested — not enough for a second 4-item sortbins without repeating a fact; the Clinical Focus box's *Part 3* now names all three earlier parts of the case — it began in Section 2.1, continued in Section 2.3, and continues in the Resolution below — replacing the source's "Jump to the next / Go back to the previous Clinical Focus box" links, and the Resolution names where the case began, since it is not accurate to call Part 2 "where the case began" once a case runs across three sections; the Link to Learning sentence's title, which the source printed twice in a row (once as plain text, once repeated as the link text), is printed once as the Markdown link text; the end-of-section Multiple Choice and Fill in the Blank questions and the unkeyed Short Answer and Critical Thinking questions are adapted into the closing interactive Practice block, sorted under the objective each supports; of the two, the Short Answer question (identifying mycolic-acid-rich cell walls) is now a `multiplechoice` graded from this section's own sentence, among the differential-stain names this section's tables print (1 of the source's unkeyed Short Answer questions is graded from the module's own sentence rather than answered in prose; the source prints no key for it), and the model answer for the remaining Critical Thinking question is written from this section's own text, because the source prints no answer key for it; five filler items (one multiple choice and one self-check for the first objective, one text-recall and one self-check for the second, both from this section's own body sentences) fill out the first two objective groups, which the source's own exercise set does not reach on its own — the first objective's filler self-check (whether two species look different under a simple stain) is now a `multiplechoice`, and the second objective's filler self-check (why capsule staining needs no heat-fixing) remains a self-check, because the module states only the one reason and no alternative module-printed mechanism exists to build defensible wrong options from; key terms compiled from the module's twenty-three defined terms and the book's Glossary appendix (all twenty-three taken from the glossary; none from a defining sentence); the *Treponema pallidum* figure's caption is printed verbatim, including the source's "used to visualized" (reported as a source defect rather than corrected, because the caption rule keeps the source's wording); the µm figure in the syphilis Micro Connection is set with the micro sign (µ), not the Greek letter mu, per the book's notation rule; cross-references to Sections 2.1 and 2.3 rendered as absolute links, since both pages exist.</small>

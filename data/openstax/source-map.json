@@ -168,8 +168,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 26,
       "upstreamSections": 127,
-      "localChapters": 2,
-      "mappedSections": 7
+      "localChapters": 3,
+      "mappedSections": 11
     }
   },
   "sections": [
@@ -2107,6 +2107,42 @@
       "moduleId": "m58788",
       "sourceTitle": "Staining Microscopic Specimens",
       "moduleSha256": "938d2b0b4690cbe5320a775a2426395f3574a127f8d4e5b15937d8e9cfd01f6d"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/03-the-cell/01-spontaneous-generation.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "3.1",
+      "moduleId": "m58790",
+      "sourceTitle": "Spontaneous Generation",
+      "moduleSha256": "4db95ef03ee741e1b2b3ba274a3202fc3b7782943a2a44838525f8adf8781b30"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/03-the-cell/02-foundations-of-modern-cell-theory.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "3.2",
+      "moduleId": "m58791",
+      "sourceTitle": "Foundations of Modern Cell Theory",
+      "moduleSha256": "df5cb8cd93db62a28608fe32c116240b603a0a83e1cafac25833abbec0d0b345"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/03-the-cell/03-unique-characteristics-of-prokaryotic-cells.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "3.3",
+      "moduleId": "m58792",
+      "sourceTitle": "Unique Characteristics of Prokaryotic Cells",
+      "moduleSha256": "7e021bc22bd2e9433e2cc6e9f2dd716d60991d97155ae20225c43b2a6afcaa3f"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/03-the-cell/04-unique-characteristics-of-eukaryotic-cells.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "3.4",
+      "moduleId": "m58793",
+      "sourceTitle": "Unique Characteristics of Eukaryotic Cells",
+      "moduleSha256": "27c8b385fbd73e16a7dfe32d657fd3f0b8d6e09c8aae7d157be06791f717a255"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

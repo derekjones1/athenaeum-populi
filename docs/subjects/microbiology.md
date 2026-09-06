@@ -18,7 +18,10 @@ a lint. Later chapters keep the same discipline: a correction that is not
 folded back into a rule will be made again. **Chapter 2, *How We See the
 Invisible World*, followed the same day** with the same three-pass shape
 (four sections, 42 Practice items, 34 body self-checks, 45 figures, eleven
-errata); every rule marked *(chapter 2)* below came from it.
+errata); every rule marked *(chapter 2)* below came from it. **Chapter 3,
+*The Cell*, followed on September 6** (four sections, 60 Practice items, 21
+body self-checks, 60 figures, fourteen errata); rules marked *(chapter 3)*
+came from it.
 
 ## Source and authority
 
@@ -152,6 +155,23 @@ section.
   domain); §1.3's sentence is about the organisms, so the organism entry is
   the one that belongs on the page, and the choice is recorded in the
   ledger.
+- **The appendix's ONLY entry may define a different sense** *(chapter 3)*.
+  §3.3 defines *basal body* as the bacterial flagellar motor; the appendix's
+  one *basal body* entry is the eukaryotic nine-triplet structure. §3.4's
+  *flagella* meets the same wall (the appendix entry is the prokaryotic
+  filament). Treat it as no entry: the meaning comes from the module's
+  defining sentence, counted in the footer as sentence-derived, with the
+  reason in the ledger. The reverse case also exists: *morphology* has no
+  entry under its own headword but *cell morphology* is the module's sense,
+  so the nearest-headword entry is used and the choice recorded. A headword
+  that differs from the body's term only by number or by a parenthetical
+  abbreviation (`ribosomes` ↔ `ribosome`, `nucleoid-associated proteins
+  (NAPs)` ↔ `nucleoid-associated protein (NAP)`) is the same entry.
+- **The bold term is lower-cased unless it is a proper noun** — even when
+  its defining occurrence opens a sentence *(chapter 3)*. Three §3.3 bullets
+  and one §3.4 bullet shipped capitalized (*Volutin*, *Flagella*,
+  *Polyhydroxybutyrate (PHB)*, *Receptor-mediated endocytosis*) until the
+  checkers read them against the appendix headwords.
 - **A `no-emphasis` term's appendix entry may define a different chapter's
   sense.** §1.1 prints `fermentation` as an index entry, and the appendix
   defines it as the metabolic pathway that regenerates NAD⁺ — the later
@@ -172,9 +192,9 @@ Biology keyed every exercise. Microbiology keys some sets and not others:
 | Fill in the Blank | `section.fill-in-the-blank` | yes (279/279) | `textin` — the sentence with its blank as the prompt, the key as the answer, when the key is ≤4 words; a longer key becomes a `multiplechoice` whose options are the module's own terms |
 | True/False | `section.true-false` | yes (43/43) | `multiplechoice` with exactly two options, `True` and `False` in that order, the hint naming the sentence the statement tests |
 | Matching | `section.matching` | yes (15/15) | one `multiplechoice` per row — the description is the stem, the terms of the table are the options (the biology rule) |
-| Short Answer | `section.short-answer` | **no** (2 of 226) | `selfcheck` with an **author-written** model answer |
-| Critical Thinking | `section.critical-thinking` | **no** (0 of 159) | `selfcheck` with an **author-written** model answer |
-| Check Your Understanding | `note.check-your-understanding` in the body (417, up to 10 per section) | **no** | body `selfcheck` at the note's position — see 3 |
+| Short Answer | `section.short-answer` | **no** (2 of 226) | a graded item when ONE module sentence, table, or figure fixes the answer (biology's "Unkeyed source questions" rule); otherwise `selfcheck` with an **author-written** model answer |
+| Critical Thinking | `section.critical-thinking` | **no** (0 of 159) | the same rule: graded when the module fixes it, `selfcheck` when it asks for a paragraph or a speculation |
+| Check Your Understanding | `note.check-your-understanding` in the body (417, up to 10 per section) | **no** | a body item at the note's position — graded (`multiplechoice`, `textin`, `sortbins`) when the module fixes the answer, else `selfcheck` — see 3 |
 | Art Connection | an `<exercise>` whose problem holds a figure (13) | mostly | `mediafigure` first, then the item, as biology's Visual Connections |
 
 The graded items — multiple choice, fill-in, true/false, matching — are
@@ -223,14 +243,55 @@ answer is allowed only under these conditions**, all of them:
   settled by the module's sentences, never by what a microbiologist would
   add.
 
-Never turn an unkeyed prose question into a graded item by keying it
-yourself: a short-answer question with a one-word answer is still a
-`selfcheck`, because nothing upstream fixes the accept list. **A Critical
-Thinking item printed with lettered options but no `<solution>`** *(chapter
-2)* — §2.1's "In [the electromagnetic spectrum figure], which of the following
-has the lowest energy?" — is the same case: it becomes a `selfcheck` whose
-question names the figure by description and lists the options in prose, and
-whose model answer is the module's own sentence about energy and wavelength.
+**Which unkeyed questions are graded anyway** *(retrofit, Sep 6 2026;
+this replaces the pilot's "never key a question the source does not key")*.
+Biology's "Unkeyed source questions: graded when the module fixes the
+answer" rule is the life-sciences rule and this book is where it bites:
+an unkeyed Short Answer, Critical Thinking, or Check Your Understanding
+question becomes a `multiplechoice`, `textin`, or `sortbins` when ONE
+sentence, table, or lettered figure of the module fixes its whole answer,
+and stays a `selfcheck` when the answer is a paragraph, a speculation, a
+long list, or an inference. Chapters 1–3 were retrofitted under it on
+Sep 6 2026 — 115 self-checks (69 in the body) became 55, with 93
+`multiplechoice`, 45 `textin`, and 22 `sortbins` (three of them built
+from tables that had none) — taking the book from 54% to 26% self-check
+by item count, the question count unchanged except for the three table
+items and one merged pair of Check Your Understanding bullets; a new
+chapter applies the rule as it is authored, and its checker applies the
+"What the first retrofit's checkers caught" list in biology's playbook. The pilot's example
+still holds in the other direction: §2.1's lettered Critical Thinking item
+("which of the following has the lowest energy?") is exactly the
+"question offers its own alternatives" form — a `multiplechoice` over the
+four printed alternatives, keyed by the module's energy–wavelength
+sentence. Nothing upstream fixes an accept list, so a converted `textin`
+is used only for a defined term or a name the sentence prints verbatim;
+everything else that converts is a `multiplechoice` or a `sortbins`, whose
+options and bins the module prints.
+
+**A source question may use a word the module's body never uses**
+*(chapter 3)*. §3.1's Check Your Understanding bullet asks "What was the
+control group in Pasteur's experiment and what did it show?" and the module
+never says "control". The question is transcribed verbatim (it is the
+source's), and identifying WHICH condition the question names — the flask
+whose swan neck stayed intact — is answering the question, not adding a
+claim; everything after that identification is module sentences. Record the
+adjudication in the ledger. What is still forbidden is importing a fact the
+module lacks to make the identification.
+
+**A "select all that apply" Multiple Choice becomes a `sortbins`** *(chapter
+3)*: §3.3's "Which of the following are important for adherence to
+surfaces?" is keyed C, D upstream, and the single-answer `multiplechoice`
+cannot hold a two-answer key. The bins are "applies" / "does not apply" in
+the stem's own words, every source option is a label, and the footer says
+so.
+
+**A Short Answer that the body's Check Your Understanding already asks is
+dropped even when the group does not need refilling** *(chapter 3)*: §3.4's
+"Name at least two ways that prokaryotic flagella are different from
+eukaryotic flagella" reworded the Flagella and Cilia box's bullet and shipped
+with the same three rubric clauses until the checker read the two side by
+side. The `distinctItems` lint is exact-match and sees none of this; the
+checker's enumeration is the gate.
 
 Three rules the pilot added about which source items can be used at all:
 
@@ -356,6 +417,16 @@ the third) stays at its document-order position.
 The other three feature-box images (splash photos, Art Connection figures,
 ordinary figures) are ordinary `mediafigure`s.
 
+**An Art Connection may be a Short Answer, and may carry a `<figure>`**
+*(chapter 3)*. §3.3's "Label the parts of the prokaryotic cell" Art
+Connection sits in the module's Short Answer set, not Critical Thinking, and
+its second one (`ExStaph_img`) is a real `<figure>` with a credit-only
+caption. The rendering is the same — `mediafigure` then item, in the
+objective's Practice group, author-written descriptive caption with the
+source credit appended — and the alt must not name the chemical identity of
+a lettered part ("a tangled loop of DNA is marked C" hands over C = nucleoid;
+"a long tangled loop is marked C" does not).
+
 **Art Connection, in detail** *(pilot)*. The shape is not biology's Visual
 Connection: it is an `<exercise>` whose `<problem>` holds a bare inline
 `<media>`, never a `<figure>`, so it has an alt but **no caption and no
@@ -467,6 +538,16 @@ Two things the scan found that change how a figure is authored:
   figure (§1.3's bacterial shapes: six drawn icons above six micrographs) is
   a `diagram`, because the drawn half is what the caption teaches — record
   the call in the ledger so a later checker sees it was made, not missed.
+- **Write the alt from the rendering the site serves, not from the CNXML
+  alt's claims** *(chapter 3)*. §3.4's endomembrane-system figure carries
+  nuclear labels in its source alt (nucleolus, chromatin, nuclear pores,
+  lamina) that the artwork does not print; an author who starts from the
+  source alt inherits them. Chapter 3's alt errata (350–351, 356–359)
+  include a thousand-fold unit error ("25 µm" for a 25-nm microtubule), a
+  mislabelled tonicity panel, one nucleus where the image labels two, and a
+  dozen misspellings — open every image. A longdesc is owed wherever a drawn
+  panel carries labels the alt and caption do not name (§3.4's flagellum
+  panel has a dozen); a checker counts the labels.
 - Stems are the source file names (`OSC_Microbio_01_01_lumbar`,
   `OSC_Microbio_01_03_ArtConnect_img`, and in the later chapters
   `Figure_10_02_01`); an `ArtConnect`/`ArtCon` stem is the figure of an
@@ -487,7 +568,8 @@ Practice items against a floor of 9, 8, and 12.
 The sources for items, in preference order when a group
 runs thin: the section's own Multiple Choice, Fill in the Blank,
 True/False, and Matching items; its Short Answer and Critical Thinking
-questions as self-checks under the policy in "What is different" 2; a
+questions — graded where the module fixes the answer, self-checks
+otherwise, under the policy in "What is different" 2; a
 summary item (biology's cloze or select-the-term forms, from the module's
 `<section class="summary">`); a cloze or select-the-term item built
 strictly from a BODY sentence of the same module (biology's rule, and the
@@ -519,7 +601,9 @@ Everything in biology's Verification section, plus:
 
 - `npm run verify:source-keys` reports an author-written model answer as
   `unkeyed` (its question transcribes a source exercise the source does not
-  key) or `unmatched` (no source exercise at all). Both are correct. What it
+  key) or `unmatched` (no source exercise at all), and a `multiplechoice`
+  converted from an unkeyed Short Answer or Critical Thinking question as
+  `unkeyed` too. All are correct. What it
   must never report for this book is a graded item (`multiplechoice`,
   `textin`, `sortbins`) keyed differently from the source without a
   `DISCLOSED_DEVIATIONS` entry and an erratum. Chapter 1 reads as 15
@@ -539,6 +623,12 @@ Everything in biology's Verification section, plus:
   against the module; `kind` present and right on every figure; and a
   word-by-word diff of the page against the CNXML for undisclosed one-word
   corrections.
+- **A True/False hint must not assert the tested fact** *(chapter 3)*:
+  "the size class of ribosome that both mitochondria and prokaryotic cells
+  share" is the verdict. Point at what to compare, never at the result.
+  **A distractor can leak the next item's key** *(chapter 3)*: §3.4 printed
+  "cytokinesis" as a wrong option directly above the `textin` keyed
+  *cytokinesis*. Grep the option lists too.
 - **Sibling-hint leaks are the recurring defect of this book** *(pilot)*.
   Three of the chapter's four real item defects were one item's hint
   printing another item's answer, and no lint can see them. Microbiology's
@@ -569,7 +659,13 @@ Everything in biology's Verification section, plus:
   visualized" and a Link to Learning that prints its title twice. **Figure
   alt text is where this book's source defects concentrate**; budget the
   checker's time accordingly, and open every table image rather than
-  trusting its alt.
+  trusting its alt. Chapter 3 logged fourteen (346–359), eleven of them alt
+  defects and one a CALS table's `summary` attribute — transcribe a table
+  from its cells, never from `summary`.
+- **A PNAS author list pasted with its affiliation superscripts** ("J.A.
+  Garnetta", "L. Gana, S. Chena, G.J. Jensena") is a source defect the
+  checker's word-diff catches *(chapter 3)*: cite the real surnames, disclose
+  in the footer, log it.
 
 ## Knowledge checks
 
@@ -618,7 +714,8 @@ checker finding is a hypothesis — log the errata, and run the gates.
 ## Done checklist (in addition to the core and biology checklists)
 
 - [ ] `## Key terms` derived from the module's defined terms in body order (distinct terms, one bullet each), definitions from the Glossary appendix, sentence-derived ones counted in the footer
-- [ ] every unkeyed prose question a `selfcheck` whose model answer and rubric trace to sentences of the same module; the footer states how many
+- [ ] every unkeyed prose question either graded from ONE named module sentence, table, or figure (ledger note quotes it; the footer counts them) or a `selfcheck` whose model answer and rubric trace to sentences of the same module (the footer counts those too)
+- [ ] every comparison table on the page has its sortbins (in the self-check that asks its contrast, or under the objective it serves); quantity/unit/step tables skipped
 - [ ] every Check Your Understanding bullet a body selfcheck at its position; no Practice item re-asks one; a stem repeated by the source reworded to name its referent
 - [ ] every Disease Profile table transcribed as Markdown; every other figure vendored with an explicit, image-checked `kind`
 - [ ] Clinical Focus parts titled and chained with an absolute site-root link or plain text, never a dangling link, and never calling the previous part the beginning of the case

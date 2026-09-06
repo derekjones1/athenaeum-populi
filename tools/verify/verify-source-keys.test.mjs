@@ -156,6 +156,23 @@ test('an author-written multiplechoice and a prose-keyed source are counted, not
   }, source).status, 'prose-key');
 });
 
+test('a multiplechoice matched to a source exercise that prints no solution is unkeyed, not prose-keyed', () => {
+  // Microbiology's Short Answer / Critical Thinking questions: the page may
+  // grade one from the module's own sentence (the life-sciences rule), and
+  // this tool has no key to confirm it against — it counts it, never fails it.
+  const unkeyed = readModule(`<document xmlns="http://cnx.rice.edu/cnxml"><content>
+    <exercise id="sa1"><problem><para>Which has a higher frequency: red light or green light?</para></problem></exercise>
+  </content></document>`);
+  const verdict = judgeMultipleChoice({
+    type: 'multiplechoice',
+    question: 'Which has a higher frequency: red light or green light?',
+    answer: 'green light',
+    options: ['red light', 'green light'],
+  }, unkeyed);
+  assert.equal(verdict.status, 'unkeyed');
+  assert.equal(verdict.exercise.id, 'sa1');
+});
+
 test('a textin answer must come from the module', () => {
   const textin = (question, answer) => judgeTextin({ type: 'textin', question, answer }, source).status;
   assert.equal(textin('The distance between consecutive points of a wave is its ________.', 'wavelength'), 'glossary');

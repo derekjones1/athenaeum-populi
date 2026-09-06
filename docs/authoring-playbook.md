@@ -495,8 +495,10 @@ item label (the giveaway rule, textin's answer-in-question hazard in bin
 form). Interaction is click-to-pick-up, "Place here" per bin, "Check bins"
 to grade — keyboard-complete with no drag. Grading is partial-credit and
 diagnostic: misplaced items return to the tray with a "N of M placed
-correctly" count. Which source tables qualify and how the source cross-check
-reads them are subject-specific; see `docs/subjects/biology.md`.
+correctly" count. Which source tables qualify (the categories may run along
+either axis), when an unkeyed prose question converts into one, and how the
+source cross-check reads them are subject-specific; see
+`docs/subjects/biology.md`.
 
 **Media figure (`mediafigure`)** — a vendored raster figure (photo,
 micrograph, diagram) with its alt text, caption, and optional extended

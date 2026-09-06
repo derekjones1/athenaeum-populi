@@ -37,14 +37,14 @@ pathogens that cause them.
   naming and classifying microbes, and the types of microorganisms.
 - **How We See the Invisible World** — the properties of light, the history
   of microscopy, the instruments of microscopy, and staining specimens.
-
-## Planned contents
-
-Microbiology has 26 chapters. The remaining 24 will appear in this order:
-
 - **The Cell** — spontaneous generation, the foundations of modern cell
   theory, and the unique characteristics of prokaryotic and eukaryotic
   cells.
+
+## Planned contents
+
+Microbiology has 26 chapters. The remaining 23 will appear in this order:
+
 - **Prokaryotic Diversity** — habitats, relationships, and microbiomes;
   the proteobacteria, other gram-negative and phototrophic bacteria,
   gram-positive bacteria, deeply branching bacteria, and archaea.

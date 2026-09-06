@@ -65,23 +65,25 @@ Some archaea live in extreme environments, such as the Morning Glory pool, a hot
 
 **Check Your Understanding**
 
-{{< selfcheck question="What are the two main types of prokaryotic organisms?" hint="Prokaryotes fall into exactly two domains discussed in this section." >}}
-The two main types of prokaryotic organisms are bacteria and archaea.
-===CHECKS===
-bacteria
-archaea
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="What are the two main types of prokaryotic organisms?"
+  answer="Bacteria and archaea"
+  hint="Prokaryotes fall into exactly two domains discussed in this section."
+>}}
+Protists and fungi
+Bacteria and archaea
+Algae and protozoa
+Molds and yeasts
+{{< /multiplechoice >}}
 
-{{< selfcheck question="Name some of the defining characteristics of bacteria and archaea." hint="Compare what each group's cell wall is made of, where each is found, and whether either includes human pathogens." >}}
-Bacteria are prokaryotic because their genetic material is not housed within a true nucleus, most have cell walls that contain peptidoglycan, and they are found in nearly every habitat on Earth, including within and on humans, where most are harmless or helpful but some are pathogens. Archaea are also unicellular prokaryotic organisms, but unlike most bacteria their cell walls do not contain peptidoglycan and are often composed of a similar substance called pseudopeptidoglycan, and although archaea live in nearly every habitat on Earth, none have been shown to be human pathogens.
-===CHECKS===
-genetic material is not housed within a true nucleus
-most have cell walls that contain peptidoglycan
-found in nearly every habitat on Earth, including within and on humans
-some are pathogens
-cell walls do not contain peptidoglycan and are often composed of a similar substance called pseudopeptidoglycan
-none have been shown to be human pathogens
-{{< /selfcheck >}}
+{{< sortbins question="Sort each characteristic of bacteria and archaea to the group it describes." hint="Compare what each group's cell wall contains and whether either group is known to cause human disease." >}}
+{"bins": ["Bacteria", "Archaea"],
+ "items": [
+  {"label": "Cell walls typically contain peptidoglycan", "bin": 0},
+  {"label": "Cell walls typically composed of pseudopeptidoglycan", "bin": 1},
+  {"label": "Some cause disease in humans and other animals", "bin": 0},
+  {"label": "None have been shown to cause human disease", "bin": 1}]}
+{{< /sortbins >}}
 
 ## Eukaryotic Microorganisms
 
@@ -121,14 +123,14 @@ Large colonies of microscopic fungi can often be observed with the naked eye, as
 
 **Check Your Understanding**
 
-{{< selfcheck question="Name two types of protists and two types of fungi." hint="This section names two examples under each of the two eukaryotic groups it introduces." >}}
-Two types of protists named in this section are algae and protozoa. Two types of fungi named in this section are molds and yeasts.
-===CHECKS===
-algae
-protozoa
-molds
-yeasts
-{{< /selfcheck >}}
+{{< sortbins question="Sort each organism type to the eukaryotic group it belongs to." hint="This section names two examples under each of the two eukaryotic groups it introduces." >}}
+{"bins": ["Protists", "Fungi"],
+ "items": [
+  {"label": "Algae", "bin": 0},
+  {"label": "Molds", "bin": 1},
+  {"label": "Protozoa", "bin": 0},
+  {"label": "Yeasts", "bin": 1}]}
+{{< /sortbins >}}
 
 {{< selfcheck question="Name some of the defining characteristics of protists and fungi." hint="Think about how each type gets its energy or nutrients, its cell structure, and where it is typically found." >}}
 Algae are photosynthetic protists with cellulose cell walls that can be unicellular or multicellular. Protozoa are diverse protists: some protozoa are photosynthetic and others feed on organic material, and some are free-living while others are parasitic. Molds are multicellular fungi made up of long filaments that form visible colonies, found in environments from soil to rotting food. Yeasts are unicellular fungi found in many environments, and some have beneficial uses, while others can spoil food or cause disease.
@@ -161,13 +163,16 @@ Viruses can infect all types of cells, from human cells to the cells of other mi
 
 **Check Your Understanding**
 
-{{< selfcheck question="Are helminths microorganisms? Explain why or why not." hint="Think about what makes something 'micro' and whether that applies to the adult worm versus its eggs and larvae." >}}
-Helminths are not technically microorganisms, because most are large enough to see without a microscope. However, they fall within the field of microbiology because diseases caused by helminths involve microscopic eggs and larvae.
-===CHECKS===
-helminths are not technically microorganisms
-most are large enough to see without a microscope
-diseases caused by helminths involve microscopic eggs and larvae
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="Are helminths microorganisms? Explain why or why not."
+  answer="Large enough to see without a microscope, though their eggs and larvae are microscopic"
+  hint="Think about what makes something 'micro' and whether that applies to the adult worm versus its eggs and larvae."
+>}}
+Unicellular, like most protists, and too small to see without a microscope
+Large enough to see without a microscope, though their eggs and larvae are microscopic
+Acellular, like a virus, and made only of protein and genetic material
+Smaller than a typical bacterium, which is about 1 µm across
+{{< /multiplechoice >}}
 
 {{< selfcheck question="How are viruses different from other microorganisms?" hint="Think about what a virus is (and is not) made of, and whether it fits within the three domains of life." >}}
 Unlike other microorganisms, viruses are acellular, meaning they are not composed of cells, and they do not fall within any of the three domains of life. A virus consists only of proteins and genetic material, either DNA or RNA but never both.
@@ -320,15 +325,14 @@ protozoan
 A partial version of the size-scale chart above, redrawn with four of its objects removed.
 {{< /mediafigure >}}
 
-{{< selfcheck question="Where would a virus, bacterium, animal cell, and a prion belong on this chart?" hint="Use the size comparisons given earlier in this section, plus what you now know about how a prion compares to a virus." >}}
-A virus would sit around 100 nm, about ten times smaller than a bacterium, which is roughly 1 µm; an animal cell is much larger, on the order of 10 to 100 µm. A prion would sit below all of these, since prions are extremely small—about one-tenth the size of a typical virus—and, like a virus, are acellular and contain no genetic material.
-===CHECKS===
-a virus would sit around 100 nm, about ten times smaller than a bacterium
-an animal cell is much larger, on the order of 10 to 100 µm
-a prion would sit below all of these
-prions are extremely small, about one-tenth the size of a typical virus
-prions are acellular and contain no genetic material
-{{< /selfcheck >}}
+{{< sortbins question="Sort each of these to the size range it falls into." hint="Use the size comparisons given earlier in this section, plus what you now know about how a prion compares to a virus." >}}
+{"bins": ["About 100 nm or smaller", "About 1 µm", "10–100 µm"],
+ "items": [
+  {"label": "Virus", "bin": 0},
+  {"label": "Bacterium", "bin": 1},
+  {"label": "Animal cell", "bin": 2},
+  {"label": "Prion", "bin": 0}]}
+{{< /sortbins >}}
 
 {{< selfcheck question="Describe the actual and relative sizes of a virus, a bacterium, and a plant or animal cell." hint="Compare the typical size of each using the units and comparisons given earlier in this section." >}}
 A typical animal cell measures roughly 10 µm across, though it is still microscopic; a plant or animal cell more generally ranges from about 10 to 100 µm. Bacterial cells are typically about 1 µm. Viruses can be about 10 times smaller than bacteria, with a typical virus measuring around 100 nm.
@@ -340,13 +344,14 @@ viruses can be about 10 times smaller than bacteria
 a typical virus measuring around 100 nm
 {{< /selfcheck >}}
 
-{{< selfcheck question="Contrast the behavior of a virus outside versus inside a cell." hint="Contrast what a virus is capable of when it has no host against what it can do once inside one." >}}
-Outside of a host organism, a virus is inert: it consists only of proteins and genetic material—either DNA or RNA, but never both. Once a virus incorporates itself into a host cell, it co-opts the host's cellular mechanisms to multiply and infect other hosts.
-===CHECKS===
-outside of a host organism, a virus is inert
-consists only of proteins and genetic material, either DNA or RNA, but never both
-co-opts the host's cellular mechanisms to multiply and infect other hosts
-{{< /selfcheck >}}
+{{< sortbins question="Sort each behavior to whether it describes a virus outside a host cell or inside one." hint="Contrast what a virus is capable of when it has no host against what it can do once inside one." >}}
+{"bins": ["Outside a host cell", "Inside a host cell"],
+ "items": [
+  {"label": "Is inert", "bin": 0},
+  {"label": "Takes over existing molecular machinery to multiply", "bin": 1},
+  {"label": "Consists only of proteins and genetic material", "bin": 0},
+  {"label": "Spreads to infect other organisms", "bin": 1}]}
+{{< /sortbins >}}
 
 ### Describe the similarities and differences between archaea and bacteria
 
@@ -396,4 +401,4 @@ virology
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 1.3: Types of Microorganisms](https://openstax.org/books/microbiology/pages/1-3-types-of-microorganisms) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all 11 figures re-encoded as WebP; `kind` set explicitly on every figure after inspection, overriding the media manifest's file-type guess on four of them (the sizes chart and the Art Connection chart are drawn diagrams despite being JPEGs; the shared bacterial-shapes reference figure is treated as a diagram; the field-work photos are photos despite being the chapter's one PNG); the sizes-chart alt rewritten into a left-to-right walkthrough (correcting an apparent source typo, "a from egg," to the pictured frog egg) with an added extended description, the field-work alt rewritten to describe what each photo shows (also correcting an apparent source typo, "centerfuge," to centrifuge), the two-panel worm and virus alts tightened from "Figure a/Figure b" phrasing to parenthetical (a)/(b) form, and a caption written for the Art Connection chart since the source prints none; the Link to Learning, Eye on Ethics, and Clinical Focus notes rendered as callouts, with the Eye on Ethics and Clinical Focus footnote citations kept as parentheticals after the sentences they support; the source's "Go back to the previous Clinical Focus box" link replaced with a plain sentence to this chapter's preceding section; the Units of Length table transcribed as a Markdown table with its metric-equivalent exponents set as math; the six Check Your Understanding questions rendered as body self-checks with author-written rubrics from the same subsection's text, and two of the six ("Name some of the defining characteristics of each type," repeated verbatim for two different comparisons in the source) reworded to name what each asks about, since an accessible-name component cannot rely on the print position that disambiguated them; all five Multiple Choice and all four Fill in the Blank questions adapted into the closing Practice block; two of three Short Answer questions and both Critical Thinking questions (one paired with the Art Connection figure) adapted as self-checks whose model answers and rubrics are author-written from this section's own text, since the source prints no answer key for either set; one Short Answer question ("Describe the differences between bacteria and archaea") omitted from Practice because it duplicates the body's Check Your Understanding question already answered in place; three further Practice items author-written to round out a thin objective group — two clozes built from single sentences of the module's own Summary and one cloze from a body sentence of the Archaea paragraph, none introducing a new claim; key terms compiled from the module's 18 distinct defined terms and the book's Glossary appendix, including the three (*microbiology*, *parasitology*, *protozoology*) recovered from a glossary formatting defect already on record (erratum 320) — none needed a sentence-derived substitute — and one further apparent glossary typo corrected on this page ("cell wells" to "cell walls" in the *bacteria* definition, reported for the errata file); a footnote citation's misspelled "Encylopaedia Britannica" corrected to "Encyclopaedia Britannica" (also reported); the *archaea* Key terms bullet uses the appendix's organism-sense entry rather than its domain-sense "Archaea" entry, matching how this module uses the word.</small>
+<small>This section is adapted from [Microbiology, Section 1.3: Types of Microorganisms](https://openstax.org/books/microbiology/pages/1-3-types-of-microorganisms) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: all 11 figures re-encoded as WebP; `kind` set explicitly on every figure after inspection, overriding the media manifest's file-type guess on four of them (the sizes chart and the Art Connection chart are drawn diagrams despite being JPEGs; the shared bacterial-shapes reference figure is treated as a diagram; the field-work photos are photos despite being the chapter's one PNG); the sizes-chart alt rewritten into a left-to-right walkthrough (correcting an apparent source typo, "a from egg," to the pictured frog egg) with an added extended description, the field-work alt rewritten to describe what each photo shows (also correcting an apparent source typo, "centerfuge," to centrifuge), the two-panel worm and virus alts tightened from "Figure a/Figure b" phrasing to parenthetical (a)/(b) form, and a caption written for the Art Connection chart since the source prints none; the Link to Learning, Eye on Ethics, and Clinical Focus notes rendered as callouts, with the Eye on Ethics and Clinical Focus footnote citations kept as parentheticals after the sentences they support; the source's "Go back to the previous Clinical Focus box" link replaced with a plain sentence to this chapter's preceding section; the Units of Length table transcribed as a Markdown table with its metric-equivalent exponents set as math; two of the six Check Your Understanding questions remain body self-checks with author-written rubrics from the same subsection's text ("Name some of the defining characteristics of protists and fungi," kept in prose because it would re-ask its sibling's sort-into-bins bins, and "How are viruses different from other microorganisms," kept in prose because the Practice block's source Multiple Choice already grades the acellular fact); the other four are graded from the module's own sentences, a table, or the module's own paired terms rather than answered in prose, since the source prints no key for them; all five Multiple Choice and all four Fill in the Blank questions adapted into the closing Practice block; two of three Short Answer questions ("Name three structures that various protozoa use for locomotion" and "Describe the actual and relative sizes of a virus, a bacterium, and a plant or animal cell") remain self-checks whose model answers and rubrics are author-written from this section's own text, since the source prints no answer key for them and the module names no further locomotion structures or size-scale entries to build honest multiple-choice distractors from; one Short Answer question ("Describe the differences between bacteria and archaea") omitted from Practice because it duplicates the body's Check Your Understanding question already answered in place; both Critical Thinking questions (one paired with the Art Connection figure) are now graded from the module's own size comparisons and its own contrast between a virus outside and inside a host cell, rather than answered in prose; three further Practice items author-written to round out a thin objective group — two clozes built from single sentences of the module's own Summary and one cloze from a body sentence of the Archaea paragraph, none introducing a new claim; key terms compiled from the module's 18 distinct defined terms and the book's Glossary appendix, including the three (*microbiology*, *parasitology*, *protozoology*) recovered from a glossary formatting defect already on record (erratum 320) — none needed a sentence-derived substitute — and one further apparent glossary typo corrected on this page ("cell wells" to "cell walls" in the *bacteria* definition, reported for the errata file); a footnote citation's misspelled "Encylopaedia Britannica" corrected to "Encyclopaedia Britannica" (also reported); the *archaea* Key terms bullet uses the appendix's organism-sense entry rather than its domain-sense "Archaea" entry, matching how this module uses the word; 4 of the source's body Check Your Understanding questions and both of its unkeyed Critical Thinking questions are graded from the module's own sentences, tables, or figures rather than answered in prose; the source prints no key for them: "what are the two main types of prokaryotic organisms" is now a `multiplechoice` keyed by the module's own two-domain framing, with distractors the module's other paired eukaryotic groups; "name some of the defining characteristics of bacteria and archaea" is now a sort-into-bins item built from the module's own cell-wall-composition and human-pathogen sentences; "name two types of protists and two types of fungi" is now a sort-into-bins item built from the module's own named examples; "are helminths microorganisms" is now a `multiplechoice` keyed by the module's own size sentence, with distractors the module's descriptions of protists, viruses, and bacteria; "where would a virus, bacterium, animal cell, and a prion belong on this chart" is now a sort-into-bins item built from the module's own size figures, keeping the `mediafigure` beside it; "contrast the behavior of a virus outside versus inside a cell" is now a sort-into-bins item built from the module's own two-state description.</small>

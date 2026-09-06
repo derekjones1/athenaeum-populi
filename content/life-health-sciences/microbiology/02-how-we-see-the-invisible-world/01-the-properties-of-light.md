@@ -48,19 +48,24 @@ In addition to interfering with each other, light waves can also interact with s
 
 **Check Your Understanding**
 
-{{< selfcheck question="If a light wave has a long wavelength, is it likely to have a low or high frequency?" hint="Think about how many wave peaks pass a point per unit time when the peaks are spaced farther apart." >}}
-A light wave with a long wavelength has widely spaced peaks, so fewer peaks pass a point in a given unit of time. A wave with a wide wavelength has a low frequency.
-===CHECKS===
-widely spaced peaks, so fewer peaks pass a point in a given unit of time
-a wave with a wide wavelength has a low frequency
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="If a light wave has a long wavelength, is it likely to have a low or high frequency?"
+  answer="low frequency"
+  hint="Think about how many wave peaks pass a point per unit time when the peaks are spaced farther apart."
+>}}
+low frequency
+high frequency
+{{< /multiplechoice >}}
 
-{{< selfcheck question="If an object is transparent, does it reflect, absorb, or transmit light?" hint="Transparency and opacity describe how much light passes through a material versus how much is blocked." >}}
-A transparent object transmits light: it allows a large proportion of light to pass through it, rather than reflecting or absorbing most of the light that strikes it.
-===CHECKS===
-a transparent object transmits light
-allows a large proportion of light to pass through it
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="If an object is transparent, does it reflect, absorb, or transmit light?"
+  answer="transmit light"
+  hint="Transparency and opacity describe how much light passes through a material versus how much is blocked."
+>}}
+reflect light
+absorb light
+transmit light
+{{< /multiplechoice >}}
 
 ## Lenses and Refraction
 
@@ -88,21 +93,27 @@ Images are commonly manipulated by controlling the distances between the object,
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain how a lens focuses light at the image point." hint="Think about what a lens does to light that strikes its curved boundary from many different points." >}}
-A lens is an object with a curved boundary that collects all of the light that strikes it and refracts it so that it all meets at a single point, the image point (focus).
-===CHECKS===
-a lens ... collects all of the light that strikes it and refracts it
-so that it all meets at a single point, the image point
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="Explain how a lens focuses light at the image point."
+  answer="It refracts light so that it all meets at a single point."
+  hint="Think about what a lens does to light that strikes its curved boundary from many different points."
+>}}
+It reflects light so that it all meets at a single point.
+It absorbs light so that it all meets at a single point.
+It refracts light so that it all meets at a single point.
+It diffracts light so that it all meets at a single point.
+{{< /multiplechoice >}}
 
-{{< selfcheck question="Name some factors that affect the focal length of a lens." hint="Think about what changes when the object, the lens, and the screen are moved relative to one another, or when the lens itself changes shape." >}}
-The focal length depends on the distances between the object, the lens, and the screen, and on the curvature of the lens: for a given curvature, moving the object closer to the lens moves the focal point farther away, and more curvature moves the focal point closer to the lens.
-===CHECKS===
-depends on the distances between the object, the lens, and the screen
-and on the curvature of the lens
-moving the object closer to the lens moves the focal point farther away
-more curvature moves the focal point closer to the lens
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="Name some factors that affect the focal length of a lens."
+  answer="the distances between the object, the lens, and the screen, and the curvature of the lens"
+  hint="This is about where images come into focus, not about how sharp or magnified they appear."
+>}}
+the wavelength and numerical aperture of the light
+the magnification and contrast of the image
+the reflectance and absorbance of the lens material
+the distances between the object, the lens, and the screen, and the curvature of the lens
+{{< /multiplechoice >}}
 
 ## Electromagnetic Spectrum and Color
 
@@ -124,20 +135,25 @@ The fluorescent dyes absorbed by these bovine pulmonary artery endothelial cells
 
 **Check Your Understanding**
 
-{{< selfcheck question="Which has a higher frequency: red light or green light?" hint="Think about which end of the visible spectrum — red or violet — has the lowest frequency." >}}
-Green light has a higher frequency than red light. The lowest frequency of visible light appears as the color red, whereas the highest appears as the color violet, and green sits between red and violet on the visible spectrum.
-===CHECKS===
-green light has a higher frequency than red light
-the lowest frequency of visible light appears as the color red
-the highest appears as the color violet
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="Which has a higher frequency: red light or green light?"
+  answer="green light"
+  hint="Think about which end of the visible spectrum — red or violet — has the lowest frequency."
+>}}
+red light
+green light
+{{< /multiplechoice >}}
 
-{{< selfcheck question="Explain why dispersion occurs when white light passes through a prism." hint="Think about whether every frequency of light bends by the same amount when it enters a new medium." >}}
-White light passed through a prism separates into a rainbow-like spectrum because, for a given material, the refractive index is different for different frequencies of light, so different colors are refracted in different directions.
-===CHECKS===
+{{< multiplechoice
+  question="Explain why dispersion occurs when white light passes through a prism."
+  answer="because, for a given material, the refractive index is different for different frequencies of light"
+  hint="Think about whether every frequency of light bends by the same amount when it enters a new medium."
+>}}
+because the prism reflects different colors of light in different directions
+because the prism absorbs different colors of light by different amounts
 because, for a given material, the refractive index is different for different frequencies of light
-different colors are refracted in different directions
-{{< /selfcheck >}}
+because the prism causes different colors of light to fluoresce
+{{< /multiplechoice >}}
 
 {{< selfcheck question="Why do fluorescent dyes emit a different color of light than they absorb?" hint="Think about how much of the absorbed energy comes back out in a single emitted photon." >}}
 Fluorescent dyes absorb energy that causes electrons to jump to higher energy states; when the electrons fall back down, not all of the absorbed energy is emitted in a given photon, so the emitted photons are of lower energy, and thus lower frequency, than the absorbed ones — which shifts the emitted color.
@@ -163,29 +179,27 @@ Even when a microscope has high resolution, it can be difficult to distinguish s
 
 **Check Your Understanding**
 
-{{< selfcheck question="Explain the difference between magnification and resolution." hint="One of these terms is about size; the other is about telling two close points apart." >}}
-Magnification is the ability of a lens to enlarge the image of an object compared to the real object, while resolution is the ability to tell that two separate points or objects are separate — a high-resolution image appears sharp, while a low-resolution one appears fuzzy, regardless of how large the image is.
-===CHECKS===
-magnification is the ability of a lens to enlarge the image of an object
-resolution is the ability to tell that two separate points or objects are separate
-a high-resolution image appears sharp, whereas a low-resolution image appears fuzzy
-{{< /selfcheck >}}
+{{< sortbins question="Sort each phrase under the imaging property it describes." hint="One property is about how large the image is, one about how fine a detail it can separate, and one about how easily a structure stands out from its surroundings." >}}
+{"bins": ["Magnification", "Resolution", "Contrast"],
+ "items": [
+  {"label": "enlarges the image of an object compared to the real object", "bin": 0},
+  {"label": "the ability to tell that two separate points or objects are separate", "bin": 1},
+  {"label": "visible differences between the parts of a specimen", "bin": 2},
+  {"label": "the image appears 10 times the size of the object as viewed with the naked eye", "bin": 0},
+  {"label": "images appear sharp rather than fuzzy", "bin": 1},
+  {"label": "dyes that bind to some structures but not others help distinguish parts of a specimen", "bin": 2}]}
+{{< /sortbins >}}
 
-{{< selfcheck question="Explain the difference between resolution and contrast." hint="One of these is about telling two points apart; the other is about seeing differences between structures that are hard to make out at all." >}}
-Resolution is the ability to tell that two separate points or objects are separate, while contrast refers to visible differences between the parts of a specimen — increasing contrast helps distinguish structures in specimens that are relatively transparent, even at high resolution.
-===CHECKS===
-resolution is the ability to tell that two separate points or objects are separate
-contrast ... visible differences between the parts of a specimen
-increasing contrast helps distinguish structures ... that are relatively transparent
-{{< /selfcheck >}}
-
-{{< selfcheck question="Name two factors that affect resolution." hint="One factor is a property of the light or electron beam itself; the other is a property of the lens." >}}
-Two factors affect resolution: wavelength, since shorter wavelengths are able to resolve smaller objects, and numerical aperture, a measure of a lens's ability to gather light — the higher the numerical aperture, the better the resolution.
-===CHECKS===
-wavelength, since shorter wavelengths are able to resolve smaller objects
-numerical aperture, a measure of a lens's ability to gather light
-the higher the numerical aperture, the better the resolution
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="Name two factors that affect resolution."
+  answer="wavelength and numerical aperture"
+  hint="One factor is a property of the light or electron beam itself; the other is a property of the lens."
+>}}
+magnification and contrast
+wavelength and numerical aperture
+reflectance and transmittance
+amplitude and frequency
+{{< /multiplechoice >}}
 
 ## Summary
 
@@ -262,14 +276,16 @@ opaque
   hint="This wave property is distinct from wavelength (peak-to-peak distance) and frequency (rate of vibration)."
 >}}
 
-{{< selfcheck question="Looking at the electromagnetic spectrum figure above, which of these has the lowest energy — visible light, X-rays, ultraviolet rays, or infrared rays?" hint="Energy rises with frequency and falls with wavelength; find which of the four regions sits farthest toward the long-wavelength, low-frequency end of the spectrum shown in the figure above." >}}
-Higher-frequency waves carry more energy than lower-frequency waves, and higher frequency corresponds to shorter wavelength. In the electromagnetic spectrum figure above, infrared radiation has a longer wavelength and lower frequency than visible light, ultraviolet rays, and X-rays, so of the four, infrared rays have the lowest energy.
-===CHECKS===
-higher-frequency waves carry more energy than lower-frequency waves
-higher frequency corresponds to shorter wavelength
-infrared radiation has a longer wavelength and lower frequency than visible light, ultraviolet rays, and X-rays
-infrared rays have the lowest energy
-{{< /selfcheck >}}
+{{< multiplechoice
+  question="Looking at the electromagnetic spectrum figure above, which of these has the lowest energy — visible light, X-rays, ultraviolet rays, or infrared rays?"
+  answer="infrared rays"
+  hint="Energy rises with frequency and falls with wavelength; find which of the four regions sits farthest toward the long-wavelength, low-frequency end of the spectrum shown in the figure above."
+>}}
+visible light
+X-rays
+ultraviolet rays
+infrared rays
+{{< /multiplechoice >}}
 
 ### Explain how lenses are used in microscopy to manipulate visible and ultraviolet (UV) light
 
@@ -293,9 +309,9 @@ mirror
 {{< textin
   question="A measure of a lens's ability to gather light, where a higher value means better resolution, is called its ________."
   answer="numerical aperture"
-  hint="This property of a lens is one of two factors that affect resolution; the other factor is wavelength."
+  hint="This property of a lens is one of two factors that affect resolution; the other is a property of the light itself."
 >}}
 
 ---
 
-<small>This section is adapted from [Microbiology, Section 2.1: The Properties of Light](https://openstax.org/books/microbiology/pages/2-1-the-properties-of-light) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP, with `kind="diagram"` set on the wave, refraction, focal-length, and electromagnetic-spectrum figures (each drawn or containing a drawn panel) and `kind="photo"` set on the transparency/opacity, refractive-index, and fluorescence-micrograph figures, overriding the media manifest's JPEG-based guess; source alts rewritten for all seven figures to describe what is visibly drawn or photographed, and a longdesc added for the electromagnetic-spectrum chart walking its regions and number lines in reading order; the refraction figure's source alt, which names the diagram's refracted-ray arrow "the reflected ray" a second time (duplicating the label already given to the first arrow), is corrected in the rewritten alt and reported as a source defect, as is the electromagnetic-spectrum figure's alt, whose "10 superscript 24 Hzon the left" runs two words together; the source's "10⨯" multiplication glyph is set as "10×" (U+00D7) per house notation; feature boxes rendered as callouts; the ten Check Your Understanding bullets across four boxes rendered as body self-checks, with model answers and rubrics assembled from this section's own preceding text; the Clinical Focus box's "Jump to the next Clinical Focus box" link replaced with a plain sentence linking to Section 2.3; the two cross-references to Sections 2.3 and 2.4 rendered as absolute links to those pages; the end-of-section Multiple Choice, Fill in the Blank, Short Answer, and Critical Thinking questions adapted into the closing interactive Practice block, sorted under the objective each supports; the Short Answer question "Explain how a prism separates white light into different colors" is not used in Practice because it duplicates, reworded, the Check Your Understanding bullet "Explain why dispersion occurs when white light passes through a prism," which is kept in the body; the Critical Thinking item "In [the electromagnetic spectrum figure], which of the following has the lowest energy?" is rendered as a self-check naming the figure by description and listing its four options in prose, rather than as a graded multiple choice, because the source prints no `<solution>` for it; that self-check's model answer is written from this section's own text and the figure, since the source prints no answer key for Critical Thinking questions, and it is the only author-written model answer on the page; the first objective group is filled out with a body-sentence text-recall item for "amplitude" and the second objective group, whose module carries no Multiple Choice, Fill in the Blank, True/False, or Matching item testing it, is filled out with a select-the-term multiple choice built from a body sentence about convex lenses, a cloze built from this section's own summary sentence about lenses, and a term-recall item built from the "numerical aperture" Key terms entry; key terms compiled from the module's twenty-two defined terms and the book's Glossary appendix (all twenty-two taken from the glossary; none from a defining sentence).</small>
+<small>This section is adapted from [Microbiology, Section 2.1: The Properties of Light](https://openstax.org/books/microbiology/pages/2-1-the-properties-of-light) by Nina Parker, Mark Schneegurt, Anh-Hue Thi Tu, Philip Lister, Brian M. Forster, and OpenStax, © OpenStax, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Access the original for free at [openstax.org](https://openstax.org/details/books/microbiology). Changes: figures re-encoded as WebP, with `kind="diagram"` set on the wave, refraction, focal-length, and electromagnetic-spectrum figures (each drawn or containing a drawn panel) and `kind="photo"` set on the transparency/opacity, refractive-index, and fluorescence-micrograph figures, overriding the media manifest's JPEG-based guess; source alts rewritten for all seven figures to describe what is visibly drawn or photographed, and a longdesc added for the electromagnetic-spectrum chart walking its regions and number lines in reading order; the refraction figure's source alt, which names the diagram's refracted-ray arrow "the reflected ray" a second time (duplicating the label already given to the first arrow), is corrected in the rewritten alt and reported as a source defect, as is the electromagnetic-spectrum figure's alt, whose "10 superscript 24 Hzon the left" runs two words together; the source's "10⨯" multiplication glyph is set as "10×" (U+00D7) per house notation; feature boxes rendered as callouts; of the ten Check Your Understanding bullets across four boxes, one (why fluorescent dyes emit a different color than they absorb) remains a body self-check with a model answer and rubric assembled from this section's own preceding text, and the other nine are rendered as `multiplechoice` or `sortbins`, graded from this section's own sentences (the magnification-vs-resolution and resolution-vs-contrast bullets share one sort-into-bins item, "Sort each phrase under the imaging property it describes"); the Clinical Focus box's "Jump to the next Clinical Focus box" link replaced with a plain sentence linking to Section 2.3; the two cross-references to Sections 2.3 and 2.4 rendered as absolute links to those pages; the end-of-section Multiple Choice, Fill in the Blank, Short Answer, and Critical Thinking questions adapted into the closing interactive Practice block, sorted under the objective each supports; the Short Answer question "Explain how a prism separates white light into different colors" is not used in Practice because it duplicates, reworded, the Check Your Understanding bullet "Explain why dispersion occurs when white light passes through a prism," which is graded in the body; the Critical Thinking item "In [the electromagnetic spectrum figure], which of the following has the lowest energy?" is rendered as a `multiplechoice` naming the figure by description and listing its four printed alternatives (visible light, X-rays, ultraviolet rays, infrared rays) as options, keyed by this section's energy–frequency–wavelength sentences, even though the source prints no `<solution>` for it; 1 of the source's unkeyed Critical Thinking questions and 9 Check Your Understanding questions are graded from the module's own sentences or figure rather than answered in prose — the source prints no key for them; the first objective group is filled out with a body-sentence text-recall item for "amplitude" and the second objective group, whose module carries no Multiple Choice, Fill in the Blank, True/False, or Matching item testing it, is filled out with a select-the-term multiple choice built from a body sentence about convex lenses, a cloze built from this section's own summary sentence about lenses, and a term-recall item built from the "numerical aperture" Key terms entry; key terms compiled from the module's twenty-two defined terms and the book's Glossary appendix (all twenty-two taken from the glossary; none from a defining sentence).</small>

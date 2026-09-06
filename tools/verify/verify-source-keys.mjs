@@ -30,6 +30,14 @@
  *                   Check Your Understanding questions are list items in a
  *                   <note>, not <exercise>s, so a self-check built from one
  *                   reports 'unmatched', not 'unkeyed'.)
+ *   multiplechoice  one matched to a source exercise that prints NO
+ *                   solution is 'unkeyed' too: the life-sciences rule
+ *                   (docs/subjects/biology.md, "Unkeyed source questions")
+ *                   lets an unkeyed prose question be graded when ONE
+ *                   sentence, table, or lettered figure of the module fixes
+ *                   its answer, and that reading is the ledger note plus
+ *                   the orchestrator's blind solve — there is no source key
+ *                   for this tool to confirm, so it counts and notes it.
  *
  *   sortbins        the bins must name a source table's data columns, and no
  *                   item may read better under a different column than the
@@ -601,6 +609,16 @@ function bestExercise(question, exercises, options = []) {
  *   { status: 'unmatched' }                   no source exercise reads like it
  *                                             (an author-written item, or a
  *                                             math page's converted fill-in)
+ *   { status: 'unkeyed' }                     the source prints NO solution at
+ *                                             all — an unkeyed Short Answer,
+ *                                             Critical Thinking, or lettered
+ *                                             Critical Thinking question the
+ *                                             page grades from the module's
+ *                                             own sentence, table, or figure
+ *                                             (docs/subjects/biology.md, "Unkeyed
+ *                                             source questions"); the ledger
+ *                                             note and the blind solve are
+ *                                             its readings, not this one
  *   { status: 'prose-key' }                   the source solution names no option
  *   { status: 'key-differs', detail }         page keys another option
  *   { status: 'options-differ', detail }      an option's wording differs
@@ -608,6 +626,7 @@ function bestExercise(question, exercises, options = []) {
 export function judgeMultipleChoice(item, source) {
   const exercise = bestExercise(item.question, source.exercises, item.options || []);
   if (!exercise) return { status: 'unmatched' };
+  if (!normalizeWhitespace(exercise.solution)) return { status: 'unkeyed', exercise };
   if (exercise.keyed === null) return { status: 'prose-key', exercise };
   if (exercise.keyedAll && exercise.keyedAll.length > 1) {
     const letters = exercise.keyedAll.map((index) => String.fromCharCode(65 + index)).join(' and ');
@@ -1063,7 +1082,7 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
   const sections = map.sections.filter((section) => (section.localPath + '/').startsWith(prefix) || contentRoot === 'content');
 
   const counts = {
-    multiplechoice: { confirmed: 0, disclosed: 0, unmatched: 0, 'prose-key': 0 },
+    multiplechoice: { confirmed: 0, disclosed: 0, unmatched: 0, 'prose-key': 0, unkeyed: 0 },
     textin: { glossary: 0, 'glossary-completed': 0, term: 0, summary: 0, body: 0 },
     selfcheck: { verbatim: 0, reworded: 0, disclosed: 0, unmatched: 0, unkeyed: 0 },
     sortbins: { confirmed: 0, disclosed: 0, unmatched: 0 },
@@ -1246,7 +1265,7 @@ export function summaryLine({ counts, confirmed, failures, sections, sectionsSki
   const selfcheck = counts.selfcheck.verbatim + counts.selfcheck.reworded;
   const sortbins = counts.sortbins ?? { confirmed: 0, disclosed: 0, unmatched: 0 };
   const fillin = counts.fillin ?? { confirmed: 0, disclosed: 0, unmatched: 0, figure: 0, unkeyed: 0, symbolic: 0 };
-  const unkeyed = counts.selfcheck.unkeyed ?? 0;
+  const unkeyed = (counts.selfcheck.unkeyed ?? 0) + (mc.unkeyed ?? 0);
   const scope = sectionsSkipped
     ? ` (partial: ${sectionsSkipped} of ${sections + sectionsSkipped} mapped sections skipped, no checkout)`
     : '';
