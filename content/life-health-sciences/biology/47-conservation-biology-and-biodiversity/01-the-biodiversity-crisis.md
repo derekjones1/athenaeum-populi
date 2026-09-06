@@ -234,7 +234,7 @@ Five mass extinctions with losses of more than 50 percent of extant species are 
 {{< textin
   question="A species found in only one location is called a(n) ________."
   answer="endemic species"
-  accept="endemic|endemics"
+  accept="endemic"
   hint="Lake Victoria's now-vanished cichlids were an example of this kind of species — restricted to a single lake and nowhere else on Earth."
 >}}
 
@@ -306,7 +306,6 @@ an impact crater off the Yucatán Peninsula that is the right size and age to ha
 {{< textin
   question="The complete disappearance of a species from Earth is called ________."
   answer="extinction"
-  accept="extinctions"
   hint="This section opens by contrasting the everyday, background rate of this process with five much larger spikes recorded in the fossil record."
 >}}
 

@@ -192,7 +192,7 @@ urochordates
 {{< textin
   question="A bony, cartilaginous, or fibrous structure that surrounds the brain, jaw, and facial bones is called a ________."
   answer="cranium"
-  accept="crania|craniums"
+  accept="crania"
   hint="Animals that have this structure, together with all vertebrates, make up the clade Craniata."
 >}}
 

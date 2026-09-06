@@ -88,7 +88,6 @@ researchers compare protein profiles between cells and identify proteins and gen
 {{< textin
   question="The entire set of proteins that a cell type produces is called a(n) ________."
   answer="proteome"
-  accept="proteomes"
   hint="Genes code for mRNAs, and mRNAs encode this entire set — the protein-level counterpart of a genome."
 >}}
 
@@ -107,7 +106,6 @@ researchers compare protein profiles between cells and identify proteins and gen
 {{< textin
   question="The complete set of metabolites related to an organism's genetic makeup is called the ________."
   answer="metabolome"
-  accept="metabolomes"
   hint="Metabolomics is the study of this complete set."
 >}}
 
@@ -138,21 +136,18 @@ a unique set of proteins present in a diseased state
 {{< textin
   question="An individual protein that is uniquely produced in a diseased state is called a(n) ________."
   answer="biomarker"
-  accept="biomarkers"
   hint="CA-125 and PSA are two examples named in the section."
 >}}
 
 {{< textin
   question="A set of proteins with altered expression levels in a diseased state is called a(n) ________."
   answer="protein signature"
-  accept="protein signatures"
   hint="This is a set of many proteins together, more reliable than a single one alone."
 >}}
 
 {{< textin
   question="An incorrect test result that should have been positive is called a(n) ________."
   answer="false negative"
-  accept="false negatives"
   hint="This is the main problem limiting biomarkers for early cancer detection."
 >}}
 

@@ -141,7 +141,6 @@ peptide bonds can be made in both directions to create a long amino acid chain
 {{< textin
   question="A chain of monomer residues linked together by covalent bonds is called a ________."
   answer="polymer"
-  accept="polymers"
   hint="Repeating this kind of unit over and over is what builds a macromolecule out of smaller building blocks."
 >}}
 

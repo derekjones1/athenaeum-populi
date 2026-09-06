@@ -216,7 +216,6 @@ it mostly consists of humus
 {{< textin
   question="A soil that has no dominant particle size, containing a mixture of sand, silt, and humus, is called a ________."
   answer="loam"
-  accept="loams"
   hint="It is the balanced mix of sand, silt, clay, and humus that gardeners prize — no single particle size dominates."
 >}}
 
@@ -236,14 +235,12 @@ humus : soil profile
 {{< textin
   question="The vertical section of a soil, made up of distinct layers, is called the ________."
   answer="soil profile"
-  accept="soil profiles"
   hint="Soil scientists divide this vertical section into zones called horizons."
 >}}
 
 {{< textin
   question="A soil layer with distinct physical and chemical properties that differ from those of other layers is called a ________."
   answer="horizon"
-  accept="horizons"
   hint="A soil profile is built from a stack of these zones."
 >}}
 

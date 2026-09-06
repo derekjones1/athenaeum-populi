@@ -875,7 +875,7 @@ test('with JavaScript off, text-in shows its notice and self-check keeps its nat
   }
 });
 
-test('every mediafigure image on both biology sections loads from its vendored media path', async ({ page }) => {
+test('every mediafigure image on both biology sections and a microbiology section loads from its vendored media path', async ({ page }) => {
   const errors = [];
   const onConsole = (msg) => { if (msg.type() === 'error') errors.push(msg.text()); };
   page.on('console', onConsole);
@@ -883,6 +883,8 @@ test('every mediafigure image on both biology sections loads from its vendored m
   for (const route of [
     '/life-health-sciences/biology/01-the-study-of-life/01-the-science-of-biology/',
     '/life-health-sciences/biology/01-the-study-of-life/02-themes-and-concepts-of-biology/',
+    // Microbiology vendors its media under its own manifest (data/media/microbiology.json).
+    '/life-health-sciences/microbiology/01-an-invisible-world/01-what-our-ancestors-knew/',
   ]) {
     await gotoBuiltPage(page, route);
     const images = page.locator('.ap-mediafigure img');
@@ -908,8 +910,10 @@ test('every mediafigure image on both biology sections loads from its vendored m
       expect(attrs.height, `${route} image ${i} missing height`).toBeTruthy();
       expect(attrs.alt, `${route} image ${i} missing alt`).toBeTruthy();
       expect(attrs.decoding, `${route} image ${i} missing decoding`).toBe('async');
-      expect(attrs.currentSrc, `${route} image ${i} not served from /media/biology/`)
-        .toMatch(/\/media\/biology\//);
+      // Each book vendors its media under /media/<book>/ (data/media/<book>.json).
+      const book = route.split('/')[2];
+      expect(attrs.currentSrc, `${route} image ${i} not served from /media/${book}/`)
+        .toContain(`/media/${book}/`);
     }
   }
 

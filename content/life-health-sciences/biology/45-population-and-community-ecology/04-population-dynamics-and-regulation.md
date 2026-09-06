@@ -240,7 +240,7 @@ K-selected species
 {{< textin
   question="A modern model of population dynamics that incorporates many features of the r- and K-selection theory is called a(n) ________."
   answer="demographic-based population model"
-  accept="demographic-based models|demographic-based population models|demographic-based model"
+  accept="demographic-based model"
   hint="Population biologists built this newer kind of model after finding that r- and K-selection theory ignored one important thing: how mortality changes with age."
 >}}
 

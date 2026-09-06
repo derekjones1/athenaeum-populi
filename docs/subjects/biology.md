@@ -178,9 +178,21 @@ Three cases the chemistry chapters settled (unit 1):
   sentence. The lint rejects an ASCII digit followed by a Unicode
   superscript digit (`4²`, `10⁸⁴`, `6.02 × 10²³`) anywhere outside `$…$`
   except a figure spec or a mediafigure alt/longdesc, which cannot hold
-  KaTeX; a selfcheck rubric checkpoint is plain text too, so spell the
+  KaTeX — and the same two places are exempt from the minus rule, so an
+  alt or longdesc may write `10⁻¹⁸ m` (the minus rule did not exempt them
+  until microbiology 2.1's electromagnetic-spectrum description needed
+  negative exponents and its author spelled them out as words);
+  a selfcheck rubric checkpoint is plain text too, so spell the
   exponent out there ("four to the fourth power is 256") and put the same
   words in the model answer beside the `$4^4$`.
+- **Money is `\$`, never a bare `$`.** Hugo's goldmark passthrough pairs ANY
+  two bare `$` in a paragraph into inline math, so "costs between $300,000
+  and $500,000" typesets as KaTeX garbage on the two dollar signs alone — the
+  book has no chemistry-side use for a literal dollar sign inside math, so
+  every one in prose is currency and must be escaped (`\$300,000`). The lint
+  flags a bare `$N,NNN` whose digit grouping and trailing context read as
+  money rather than a math digit-group list (`10{,}000`) or a comma-list of
+  numbers (`$1,2,3$`).
 - **Display chemical equations are text, not KaTeX.** The source's
   `<equation>` blocks in 2.1 and 2.2 are reactions, not mathematics; each
   becomes its own short paragraph in Unicode with arrows — `2H₂O₂ → 2H₂O +
@@ -251,10 +263,11 @@ Cases the cell chapters settled (unit 2):
   Connection.** *Cancer Biologist.*` — the `<note>`'s `<title>` follows the
   bold name in italics; a reference list the box ends with is kept as a
   parenthetical after the sentence it supports rather than dropped.
-- **`accept` lists the plural of every multi-word answer** (`glucose
-  transporters`, `integral membrane proteins`, `septa`) and the compound
-  form the section itself uses (`integral membrane protein` for a textin
-  keyed `integral`); every checker in unit 2 found one missing.
+- **`accept` lists the irregular plural of an answer** (`septa`, `bacteria`,
+  `hypotheses`) and the compound form the section itself uses (`integral
+  membrane protein` for a textin keyed `integral`); every checker in unit 2
+  found one missing. A regular plural (`glucose transporters`) is folded by
+  the grader since September 2026 and is a lint error in `accept`.
 - **`P<sub>i</sub>`** is the one sanctioned inline HTML subscript (no
   Unicode subscript letter exists); everything with a glyph — `H⁺`, `CO₂`,
   `FADH₂`, `Ca²⁺`, `PO₄³⁻`, `G₁`, `IP₃` — uses it. ΔG/ΔH/ΔS in prose are the
@@ -361,6 +374,12 @@ that use them.
 - Read every vendored image at review: open the WebP, compare it with the
   PDF page, and confirm the alt and any `longdesc` against what is actually
   drawn, not against the source alt text.
+- A mediafigure directly above an item — only whitespace between its closing
+  tag and the next `textin`/`multiplechoice`/`selfcheck` — may not print that
+  item's answer in `alt` or `longdesc` (lint): microbiology 2.3 once shipped
+  an Art Connection alt that named every labeled part ("the rotating turret
+  (2)…") the selfcheck directly below it asked the learner to label. Describe
+  what the figure shows, never what the item beside it asks for.
 
 ## Exercises
 
@@ -414,11 +433,15 @@ the core (§3); the rules specific to a glossary-built item:
   recall item.
 - `accept` lists the spellings a correct learner might type, `|`-separated
   (`accept="a|b|c"` — a comma joins the items into one member the grader
-  can never match, and the lint rejects it): plural,
-  British spelling (`fertilisation`), a standard abbreviation (`DNA` for a
-  keyed `deoxyribonucleic acid`, or the reverse). Grading already ignores
-  case, diacritics, punctuation, hyphen-versus-space, and a leading
-  article, so do not list those. There is no typo tolerance by design:
+  can never match, and the lint rejects it): an irregular plural (`septa`,
+  `bacteria`), British spelling (`fertilisation`), a standard abbreviation
+  (`DNA` for a keyed `deoxyribonucleic acid`, or the reverse). Grading
+  already ignores case, diacritics, punctuation, hyphen-versus-space, and a
+  leading article, and folds a regular plural (a trailing `s` or `es`) onto
+  every listed form, so do not list those. An accept member that normalizes to the
+  answer (hyphen versus space, a leading article, `400 X` versus `400 x`)
+  is rejected by `verify-section` — list only spellings the grader would
+  otherwise miss. There is no typo tolerance by design:
   `ribozyme` must not pass for `ribosome`.
 - The answer must not appear in the question — the lint refuses the retype
   hazard — so a prompt for `cell theory` cannot say "the theory of cells".

@@ -76,14 +76,12 @@ A vascular plant consists of two organ systems: the shoot system and the root sy
 {{< textin
   question="The aboveground portion of a plant, consisting of nonreproductive parts such as leaves and stems and reproductive parts such as flowers and fruits, is called the ________."
   answer="shoot system"
-  accept="shoot systems"
   hint="This organ system generally grows above ground, where it absorbs the light needed for photosynthesis."
 >}}
 
 {{< textin
   question="The belowground portion of a plant that supports it and absorbs water and minerals is called the ________."
   answer="root system"
-  accept="root systems"
   hint="This organ system is usually underground, unlike the vegetative and reproductive parts above ground."
 >}}
 
@@ -109,14 +107,14 @@ permanent tissue
 {{< textin
   question="Plant tissue containing cells that constantly divide and contribute to plant growth is called ________."
   answer="meristematic tissue"
-  accept="meristematic|meristematic tissues"
+  accept="meristematic"
   hint="This tissue's cells are undifferentiated or incompletely differentiated, letting them keep dividing rather than settle into a permanent role."
 >}}
 
 {{< textin
   question="Plant tissue composed of cells that are no longer actively dividing is called ________."
   answer="permanent tissue"
-  accept="permanent|permanent tissues"
+  accept="permanent"
   hint="Once meristematic cells differentiate, they take on this specialized, non-dividing role — the endpoint of tissue development, not the region where it starts growing."
 >}}
 
@@ -133,28 +131,24 @@ it can continue to grow even when the tip of the plant is removed by grazing or 
 {{< textin
   question="The plant region of continuous growth is called a ________."
   answer="meristem"
-  accept="meristems"
   hint="Meristematic tissue cells are found here — it names the place, not the tissue type itself."
 >}}
 
 {{< textin
   question="Meristematic tissue located at the tips of stems and roots, which enables a plant to extend in length, is called the ________."
   answer="apical meristem"
-  accept="apical meristems"
   hint="This region sits at the very tip — of the shoot or the root — where the plant lengthens rather than thickens."
 >}}
 
 {{< textin
   question="Meristematic tissue that enables a plant to increase in thickness or girth is called the ________."
   answer="lateral meristem"
-  accept="lateral meristems"
   hint="This meristem runs along the side of stems and roots in a maturing plant, rather than sitting at a growing tip."
 >}}
 
 {{< textin
   question="Meristematic tissue located at nodes and the bases of leaf blades, found only in monocots, is called the ________."
   answer="intercalary meristem"
-  accept="intercalary meristems"
   hint="This meristem lets a mowed grass blade keep lengthening from its base, even after the tip is cut off."
 >}}
 
@@ -183,21 +177,20 @@ phloem tissue carries sugars from the sites of photosynthesis to the rest of the
 {{< textin
   question="Plant tissue that covers and protects the plant is called ________."
   answer="dermal tissue"
-  accept="dermal|dermal tissues"
+  accept="dermal"
   hint="This simple tissue covers the outer surface of the plant and controls gas exchange."
 >}}
 
 {{< textin
   question="Tissue made up of xylem and phloem that transports food and water throughout the plant is called ________."
   answer="vascular tissue"
-  accept="vascular|vascular tissues"
+  accept="vascular"
   hint="This complex tissue is made of two specialized conducting tissues that always lie adjacent to each other."
 >}}
 
 {{< textin
   question="Strands of stem tissue made up of xylem and phloem form a structure called a ________."
   answer="vascular bundle"
-  accept="vascular bundles"
   hint="In roots, this same xylem-and-phloem strand structure is instead called the vascular stele or vascular cylinder."
 >}}
 

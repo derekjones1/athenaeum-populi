@@ -120,21 +120,19 @@ amino acid-derived and peptide hormones cannot diffuse across plasma membranes
 {{< textin
   question="A hormone derived from amino acids is called a(n) ________."
   answer="amino acid-derived hormone"
-  accept="amino acid-derived hormones"
   hint="This chemical name typically ends in '-ine,' and includes epinephrine, norepinephrine, thyroxine, and melatonin."
 >}}
 
 {{< textin
   question="A hormone derived mostly from cholesterol is called a(n) ________."
   answer="lipid-derived hormone"
-  accept="lipid-derived hormones|lipid hormone|lipid hormones"
+  accept="lipid hormone"
   hint="This class can diffuse straight across the plasma membrane, unlike the other two classes, and its chemical names typically end in '-ol' or '-one.'"
 >}}
 
 {{< textin
   question="A hormone composed of a polypeptide chain is called a ________."
   answer="peptide hormone"
-  accept="peptide hormones"
   hint="This class ranges from short chains such as antidiuretic hormone and oxytocin to large glycoproteins such as follicle-stimulating hormone."
 >}}
 

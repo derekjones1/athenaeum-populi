@@ -230,14 +230,14 @@ Behaviors are responses to stimuli. They can either be instinctual/innate behavi
 {{< textin
   question="Instinctual behavior that is not altered by changes in the environment is called ________."
   answer="innate behavior"
-  accept="innate behaviors|innate behaviour|innate behaviours"
+  accept="innate behaviour"
   hint="The text says this kind of activity is 'hard wired' into the system and carries no risk of being learned incorrectly — the opposite of the flexible, environment-shaped kind of activity described in the next sentence."
 >}}
 
 {{< textin
   question="Behavior that responds to changes in the environment is called ________."
   answer="learned behavior"
-  accept="learned behaviors|learned behaviour|learned behaviours"
+  accept="learned behaviour"
   hint="Unlike its 'hard-wired' counterpart, this kind of activity is described as riskier but flexible, dynamic, and adjustable to what the environment presents."
 >}}
 
@@ -279,7 +279,6 @@ Behaviors are responses to stimuli. They can either be instinctual/innate behavi
 {{< textin
   question="A series of instinctual behaviors that, once initiated, always goes to completion regardless of changes in the environment is called a(n) ________."
   answer="fixed action pattern"
-  accept="fixed action patterns"
   hint="The stickleback example in this section keeps attacking a red-bottomed object even though it looks nothing like a real fish — the behavior runs to its end no matter what the stimulus actually turns out to be."
 >}}
 
@@ -300,7 +299,6 @@ Behaviors are responses to stimuli. They can either be instinctual/innate behavi
 {{< textin
   question="A method of communication between animals — including those obtained by the senses of smell, hearing, sight, or touch — is called a ________."
   answer="signal"
-  accept="signals"
   hint="This word covers every stimulus type this section lists for animal-to-animal communication: chemical, aural, visual, and tactile."
 >}}
 
@@ -328,21 +326,18 @@ animals that use aural cues to acquire mates probably have a lower population de
 {{< textin
   question="A series of ritualized visual behaviors designed to attract and convince a member of the opposite sex to mate is called a ________."
   answer="courtship display"
-  accept="courtship displays"
   hint="The common stork's wing-flapping performance on its nest, pictured in this section, is this section's example of this mate-attracting ritual."
 >}}
 
 {{< textin
   question="A visual display by a species member to discourage other members of the same species or different species is called a(n) ________."
   answer="aggressive display"
-  accept="aggressive displays"
   hint="A dog baring its teeth to make another dog back down is this section's example of this threat-communicating behavior."
 >}}
 
 {{< textin
   question="A visual display used to distract predators away from a nesting site is called a ________."
   answer="distraction display"
-  accept="distraction displays"
   hint="The killdeer's faked broken-wing performance, linked in this section's video, is an example of this altruistic, predator-luring behavior."
 >}}
 

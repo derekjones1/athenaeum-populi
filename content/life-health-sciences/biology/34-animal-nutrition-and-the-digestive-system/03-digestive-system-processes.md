@@ -197,28 +197,24 @@ gut bacteria interacting with the lactose molecules causes symptoms of lactose i
 {{< textin
   question="The enzyme that breaks down maltose into glucose is called ________."
   answer="maltase"
-  accept="maltases"
   hint="It acts on the disaccharide produced when amylase breaks down starch and glycogen."
 >}}
 
 {{< textin
   question="The enzyme that breaks down sucrose into glucose and fructose is called ________."
   answer="sucrase"
-  accept="sucrases"
   hint="This brush-border enzyme acts on the sugar also known as table sugar."
 >}}
 
 {{< textin
   question="The enzyme that breaks down lactose into glucose and galactose is called ________."
   answer="lactase"
-  accept="lactases"
   hint="This brush-border enzyme acts on the sugar also known as milk sugar."
 >}}
 
 {{< textin
   question="The pancreatic protease that breaks down protein and acts on peptides in the duodenum is called ________."
   answer="trypsin"
-  accept="trypsins"
   hint="It is produced by the pancreas and released into the duodenum along with elastase and chymotrypsin."
 >}}
 
@@ -274,7 +270,6 @@ the esophagus
 {{< textin
   question="A small lipid globule formed when fatty acids and monoglycerides recombine inside the intestinal absorptive cells is called a ________."
   answer="chylomicron"
-  accept="chylomicrons"
   hint="These leave the absorptive cells by exocytosis and enter the lymphatic vessels before reaching the blood."
 >}}
 

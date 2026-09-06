@@ -117,7 +117,7 @@ having organs that specialize in this process and that operate separately from o
 {{< textin
   question="An excretory cell found in flatworms is called a(n) ________."
   answer="flame cell"
-  accept="flame cells|protonephridia|protonephridium"
+  accept="protonephridia|protonephridium"
   hint="It's named for how its tuft of beating cilia looks when viewed under a microscope."
 >}}
 
@@ -131,7 +131,6 @@ having organs that specialize in this process and that operate separately from o
 {{< textin
   question="The pore through which a nephridium releases waste to the exterior is called the ________."
   answer="nephridiopore"
-  accept="nephridiopores"
   hint="Its name combines the structure it drains with the word for an opening to the outside."
 >}}
 

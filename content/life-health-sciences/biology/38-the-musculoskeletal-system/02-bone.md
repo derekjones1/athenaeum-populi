@@ -251,7 +251,6 @@ spongy bone is prominent in areas of bones that are not heavily stressed or at w
 {{< textin
   question="A small, flat, irregularly shaped bone found between the flat bones of the skull is called a ________."
   answer="sutural bone"
-  accept="sutural bones"
   hint="These bones vary in number, shape, size, and position, and are found only in one part of the skeleton."
 >}}
 
@@ -291,7 +290,6 @@ osteoblasts are bone cells that are responsible for bone formation
 {{< textin
   question="A bone cell responsible for bone formation is called an ________."
   answer="osteoblast"
-  accept="osteoblasts"
   hint="This cell secretes new bone matrix and later becomes trapped within it as a less active cell type."
 >}}
 

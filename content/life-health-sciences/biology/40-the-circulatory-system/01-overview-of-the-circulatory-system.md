@@ -137,7 +137,7 @@ blood then returns to the heart
 {{< textin
   question="The cavity into which blood is pumped in an open circulatory system is called the ________."
   answer="hemocoel"
-  accept="hemocoels|haemocoel|haemocoels"
+  accept="haemocoel"
   hint="This is the body cavity the pumped fluid fills as it circulates around an insect's organs before reentering the heart."
 >}}
 

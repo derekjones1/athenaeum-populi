@@ -23,6 +23,13 @@ reviewed commit. Every book belongs to exactly one bundle.
   — Biology 2e. This bundle also ships Concepts of Biology and Biology for AP
   Courses, so it too is `moduleScope: "mapped-collections"`, scoped to the
   modules the Biology 2e collection actually references.
+- [`openstax/osbooks-microbiology`](https://github.com/openstax/osbooks-microbiology)
+  — Microbiology. A single-book repository (one entry in
+  `META-INF/books.xml`, no `-bundle` suffix upstream), so its bundle key is
+  plain `microbiology` and the whole `modules/` tree is checked out
+  (`moduleScope: "bundle"`, 159 modules: a preface, 26 chapter
+  introductions, 127 numbered sections, and five appendices including the
+  book-wide glossary).
 
 Books carry an `authoringStatus`. `complete` means every upstream numbered
 section is authored locally and chapter-by-chapter parity is enforced;
@@ -30,7 +37,8 @@ section is authored locally and chapter-by-chapter parity is enforced;
 pages are still being written, so parity is only checked for what exists.
 Biology was `in-progress` while it was written, so `build-map`/`verify-map`
 printed it as, e.g., `45/47 chapters, 201/208 sections mapped` — visibly, not
-silently — until its last chapter landed; it is `complete` now.
+silently — until its last chapter landed; it is `complete` now. Microbiology
+is `in-progress` and prints as `2/26 chapters, 7/127 sections mapped`.
 
 Every book's lock entry also carries a `contentPath` (for example
 `content/math/precalculus`, `content/life-health-sciences/biology`): the
@@ -83,6 +91,17 @@ npm run source:check -- --bundle prealgebra-bundle
 `source:check` currently audits regular numbered sections only. It inventories
 their interactions but does not certify Knowledge Check prompts or answers.
 
+The CNXML parser knows both module shapes OpenStax uses: objectives in the
+metadata `<md:abstract>` (the math bundles, Biology 2e) or, when that element
+is empty, in a leading `<section class="learning-objectives">` (Microbiology),
+and it excludes every end-matter section class any pinned bundle uses
+(`summary`, `multiple-choice`, `fill-in-the-blank`, `true-false`, `matching`,
+`short-answer`, `critical-thinking`, …) from the core-heading comparison. A
+new bundle whose modules use a class not in that list shows up as
+`heading-needs-review` on every section; add the class to
+`EXCLUDED_CORE_SECTION_CLASSES` in `tools/lib/openstax-source.mjs` rather
+than adjudicating the sections.
+
 To save the reports in the ignored source area:
 
 ```sh
@@ -113,7 +132,7 @@ not a publishing instruction.
 - `data/openstax/source-lock.json` (schema 2) records each bundle's
   official repository, current reviewed commit, module scope, and license,
   plus every book's collection, inferred PDF-era commit, and authoring status.
-- `data/openstax/source-map.json` (schema 2) connects all 482 authored
+- `data/openstax/source-map.json` (schema 2) connects all 489 authored
   local section paths to stable OpenStax module IDs and module SHA-256
   fingerprints, attributes each section to its bundle, and records per-book
   chapter and section coverage against the upstream collection.
@@ -161,6 +180,25 @@ source exercises were intentionally omitted. The point-in-time record of the
 FIRST reconciliation (the three algebra books, at the initial
 `38cae454e644abf9f0a623e876994553881597c9` lock, before any Precalculus
 section was mapped) is in this file's git history.
+
+## Microbiology
+
+OpenStax Microbiology was pinned on September 5, 2026 at
+`633850257fbd3ccf6187b9428c55e80b69236382` (the upstream head of that day,
+"errata image changes", July 8, 2026). Its `authoredBaselineCommit` is the
+same commit with confidence `inferred-from-local-pdf-date`: the local
+`sources/microbiology_-_WEB.pdf` was generated on September 2, 2026, after
+that commit, and its copyright page prints no revision number (only
+"original publication year 2016"), so the pin and the PDF are taken to be
+the same edition until a section audit says otherwise. The book was `scaffolded` until its pilot chapter — chapter 1, *An
+Invisible World* — was authored on September 5, 2026, and is `in-progress`
+from that day: `content/life-health-sciences/microbiology/_index.md` lists
+chapters 1–2 under `## Chapters` with the remaining twenty-four on its
+"Planned contents" list (chapter 2, *How We See the Invisible World*, landed
+the same day), and `verify-map` prints `2/26 chapters, 7/127 sections
+mapped`.
+Its subject playbook is `docs/subjects/microbiology.md`; the collection is
+flat (no units), so the map records no `units` key for it.
 
 ## Precalculus 2e
 

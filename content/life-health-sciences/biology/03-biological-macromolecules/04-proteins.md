@@ -181,14 +181,12 @@ Proteins are organized at four levels: primary, secondary, tertiary, and (option
 {{< textin
   question="A catalyst in a biochemical reaction, usually a complex or conjugated protein, is called a(n) ________."
   answer="enzyme"
-  accept="enzymes"
   hint="It speeds up a reaction, such as digestion, without itself being consumed."
 >}}
 
 {{< textin
   question="A chemical-signaling molecule, usually a small protein or steroid, secreted by endocrine cells to control or regulate a specific physiological process is called a(n) ________."
   answer="hormone"
-  accept="hormones"
   hint="Insulin, which helps regulate the blood glucose level, is an example."
 >}}
 
@@ -219,14 +217,12 @@ chaperones
 {{< textin
   question="The monomer of a protein — a central carbon bonded to an amino group, a carboxyl group, a hydrogen atom, and a variable side chain — is called a(n) ________."
   answer="amino acid"
-  accept="amino acids"
   hint="Twenty common types of this monomer, each with a different side chain, link together to build every protein."
 >}}
 
 {{< textin
   question="A long chain of amino acids joined together by peptide bonds is called a ________."
   answer="polypeptide"
-  accept="polypeptides"
   hint="The term is often used loosely to mean the same thing as \"protein,\" though the two are technically distinct."
 >}}
 

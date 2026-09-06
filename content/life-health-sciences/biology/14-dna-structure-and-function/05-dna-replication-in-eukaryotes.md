@@ -103,7 +103,6 @@ Eukaryotic DNA replication involves more polymerases than prokaryotic replicatio
 {{< textin
   question="Enzymes that cleave the phosphodiester bond within a polynucleotide chain are called a(n) ________."
   answer="endonuclease"
-  accept="endonucleases"
   hint="Reread the sentence about RNase H removing the displaced primer RNA on the lagging strand — this is its other name in the text."
 >}}
 
@@ -138,7 +137,6 @@ the ends are protected
 {{< textin
   question="The DNA at the end of a linear chromosome, made of a repetitive sequence that codes for no particular gene, is called a ________."
   answer="telomere"
-  accept="telomeres"
   hint="Its human repeat unit is the six-base-pair sequence TTAGGG."
 >}}
 

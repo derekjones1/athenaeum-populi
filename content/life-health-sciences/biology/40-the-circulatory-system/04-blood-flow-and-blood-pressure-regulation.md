@@ -91,21 +91,19 @@ Blood primarily moves through the body by the rhythmic movement of smooth muscle
 {{< textin
   question="A specialized organ that contains a large number of macrophages that clean the lymph before the fluid is returned to the heart is called a ________."
   answer="lymph node"
-  accept="lymph nodes"
   hint="This structure sits along the lymphatic vessels and filters out bacteria and viruses using white blood cells before the fluid rejoins the bloodstream."
 >}}
 
 {{< textin
   question="A small muscle that controls blood circulation in the capillary beds is called a ________."
   answer="precapillary sphincter"
-  accept="precapillary sphincters"
   hint="When these rings of smooth muscle close, blood bypasses the capillary bed entirely through the thoroughfare channel."
 >}}
 
 {{< textin
   question="Blood is prevented from flowing backward in the veins by ________."
   answer="one-way valves"
-  accept="one-way valve|valves|valve"
+  accept="one-way valve|valve"
   hint="Veins move blood against gravity, and this structure keeps it from sliding backward between heartbeats."
 >}}
 

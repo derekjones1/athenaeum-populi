@@ -125,6 +125,44 @@ test('CNXML extraction keeps math signs and excludes chapter review material', (
   assert.deepEqual(module.tries[0].solutionMath, ['x>1']);
 });
 
+test('CNXML extraction reads Microbiology objectives from a learning-objectives section and excludes its end matter', () => {
+  // Microbiology's modules carry an empty <md:abstract/>; the objectives are
+  // the first content section, and the end matter uses four exercise classes
+  // the math bundles and Biology 2e never do. Before this shape was taught to
+  // the parser every Microbiology section audited as objective-needs-review
+  // (0 source objectives vs 3 local) and heading-needs-review ("Learning
+  // Objectives", "Fill in the Blank", ... counted as missing core headings).
+  const module = parseModuleXml(`
+    <document xmlns="urn:cnxml">
+      <title>What Our Ancestors Knew</title>
+      <metadata xmlns:md="urn:md">
+        <md:content-id>m58781</md:content-id>
+        <md:abstract/>
+        <md:uuid>u1</md:uuid>
+      </metadata>
+      <content>
+        <section id="lo" class="learning-objectives"><title>Learning Objectives</title>
+          <para>By the end of this section, you will be able to:</para>
+          <list><item>Describe how our ancestors improved food</item><item>Describe key historical events</item></list>
+        </section>
+        <note class="microbiology clinical-focus"><title>Part 1</title><para>Cora has a headache.</para></note>
+        <section id="a"><title>Fermented Foods and Beverages</title><para>People enjoyed beer.</para></section>
+        <section id="b"><title>The Birth of Microbiology</title><para>Leeuwenhoek looked.</para></section>
+        <section class="summary"><title>Key Concepts and Summary</title><para>Omitted</para></section>
+        <section class="multiple-choice"><title>Multiple Choice</title><para>Omitted</para></section>
+        <section class="fill-in-the-blank"><title>Fill in the Blank</title><para>Omitted</para></section>
+        <section class="true-false"><title>True/False</title><para>Omitted</para></section>
+        <section class="matching"><title>Matching</title><para>Omitted</para></section>
+        <section class="short-answer"><title>Short Answer</title><para>Omitted</para></section>
+        <section class="critical-thinking"><title>Critical Thinking</title><para>Omitted</para></section>
+      </content>
+    </document>
+  `);
+  assert.deepEqual(module.objectives, ['Describe how our ancestors improved food', 'Describe key historical events']);
+  assert.deepEqual(module.coreHeadings, ['Fermented Foods and Beverages', 'The Birth of Microbiology']);
+  assert.doesNotMatch(module.instructionalText, /Omitted|By the end of this section/);
+});
+
 test('semantic normalization distinguishes an upstream sign change', () => {
   const before = normalizeSemanticText(String.raw`$\tfrac{1}{15}z - \tfrac{3}{5}$`);
   const after = normalizeSemanticText(String.raw`$\tfrac{1}{15}z + \tfrac{3}{5}$`);
@@ -151,10 +189,10 @@ test('every mapped module id is collected for a collection-scoped sparse checkou
 
 test('the source lock pins one upstream bundle per book', () => {
   const lock = loadSourceLock(repositoryRoot);
-  assert.deepEqual(lock.bundleKeys, ['prealgebra-bundle', 'college-algebra-bundle', 'biology-bundle']);
+  assert.deepEqual(lock.bundleKeys, ['prealgebra-bundle', 'college-algebra-bundle', 'biology-bundle', 'microbiology']);
   assert.deepEqual(
     [...lock.books.keys()].sort(),
-    ['biology', 'elementary-algebra', 'intermediate-algebra', 'precalculus', 'prealgebra'].sort(),
+    ['biology', 'elementary-algebra', 'intermediate-algebra', 'microbiology', 'precalculus', 'prealgebra'].sort(),
   );
   for (const [book, config] of lock.books) {
     assert.ok(lock.bundles[config.bundleKey], `${book} resolves to a declared bundle`);
@@ -171,6 +209,12 @@ test('the source lock pins one upstream bundle per book', () => {
   assert.equal(lock.books.get('biology').authoringStatus, 'complete');
   assert.equal(lock.books.get('biology').contentPath, 'content/life-health-sciences/biology');
   assert.equal(lock.bundles['biology-bundle'].moduleScope, 'mapped-collections');
+  // A single-book upstream repository (no `-bundle` suffix, one entry in
+  // META-INF/books.xml): the whole modules tree is the book, so `bundle` scope.
+  assert.equal(lock.books.get('microbiology').bundleKey, 'microbiology');
+  assert.equal(lock.books.get('microbiology').authoringStatus, 'in-progress');
+  assert.equal(lock.books.get('microbiology').contentPath, 'content/life-health-sciences/microbiology');
+  assert.equal(lock.bundles.microbiology.moduleScope, 'bundle');
 });
 
 test('loadSourceLock rejects a book missing contentPath, naming the book', () => {
@@ -209,17 +253,18 @@ test('formatTriesCoverage reports n/a rather than 0/0 for a book with no note.tr
   assert.equal(formatTriesCoverage(3, 5), '3/5');
 });
 
-test('committed provenance maps all 482 local sections exactly once', () => {
+test('committed provenance maps all 489 local sections exactly once', () => {
   const result = verifyCommittedSourceMap(repositoryRoot);
   assert.deepEqual(result.errors, []);
-  assert.equal(result.expectedCount, 482);
-  assert.equal(result.actualCount, 482);
+  assert.equal(result.expectedCount, 489);
+  assert.equal(result.actualCount, 489);
   const counts = Object.groupBy(result.map.sections, (entry) => entry.book);
   assert.equal(counts.prealgebra.length, 60);
   assert.equal(counts['elementary-algebra'].length, 71);
   assert.equal(counts['intermediate-algebra'].length, 70);
   assert.equal(counts.precalculus.length, 73);
   assert.equal(counts.biology.length, 208);
+  assert.equal(counts.microbiology.length, 7);
   const representative = result.map.sections.find((entry) => (
     entry.book === 'intermediate-algebra' && entry.sourceSection === '3.1'
   ));
@@ -230,6 +275,8 @@ test('committed provenance maps all 482 local sections exactly once', () => {
     'intermediate-algebra': 'prealgebra-bundle',
     precalculus: 'college-algebra-bundle',
     biology: 'biology-bundle',
+    // a single-book upstream repository: the bundle key is the book key
+    microbiology: 'microbiology',
   };
   for (const entry of result.map.sections) {
     assert.equal(entry.bundle, bundleForBook[entry.book], `${entry.localPath} is attributed to its pinned bundle`);
@@ -250,8 +297,26 @@ test('the Precalculus book is mapped complete, every upstream section authored',
   });
   assert.deepEqual(
     Object.keys(result.map.bundles).sort(),
-    ['biology-bundle', 'college-algebra-bundle', 'prealgebra-bundle'],
+    ['biology-bundle', 'college-algebra-bundle', 'microbiology', 'prealgebra-bundle'],
   );
+});
+
+test('the Microbiology book is pinned and in progress, its partial coverage counted visibly', () => {
+  // `scaffolded` until chapter 1 landed on September 5, 2026; `in-progress`
+  // from that day, so the partial count prints on its own line instead of
+  // disappearing into a clean run (docs/source/openstax-source-workflow.md).
+  const result = verifyCommittedSourceMap(repositoryRoot);
+  assert.deepEqual(result.errors, []);
+  assert.deepEqual(result.map.books.microbiology, {
+    bundle: 'microbiology',
+    contentPath: 'content/life-health-sciences/microbiology',
+    authoringStatus: 'in-progress',
+    upstreamChapters: 26,
+    upstreamSections: 127,
+    localChapters: 2,
+    mappedSections: 7,
+  });
+  assert.equal(result.map.books.microbiology.units, undefined, 'Microbiology is a flat collection');
 });
 
 test('the Biology book is pinned and in progress, its local landings and mapped sections counted visibly', () => {

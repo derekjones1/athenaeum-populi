@@ -128,7 +128,6 @@ animal toxins, such as snake venom, can also be used as drugs
 {{< textin
   question="A compound produced as a byproduct of plant metabolic processes, usually toxic but sequestered by the plant to defend against herbivores, is known as a ________."
   answer="secondary plant compound"
-  accept="secondary plant compounds"
   hint="Think about what a plant produces to poison the animals that try to eat it, and how many of these compounds humans have turned into drugs."
 >}}
 

@@ -93,6 +93,31 @@
           "authoringStatus": "complete"
         }
       }
+    },
+    "microbiology": {
+      "repository": "https://github.com/openstax/osbooks-microbiology",
+      "gitUrl": "https://github.com/openstax/osbooks-microbiology.git",
+      "branch": "main",
+      "commit": "633850257fbd3ccf6187b9428c55e80b69236382",
+      "commitDate": "2026-07-08T21:09:26Z",
+      "sourceDir": "sources/openstax/osbooks-microbiology",
+      "moduleScope": "bundle",
+      "license": {
+        "name": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
+        "spdx": "CC-BY-NC-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "books": {
+        "microbiology": {
+          "sourceSlug": "microbiology",
+          "collectionId": "col12087",
+          "collectionPath": "collections/microbiology.collection.xml",
+          "contentPath": "content/life-health-sciences/microbiology",
+          "authoredBaselineCommit": "633850257fbd3ccf6187b9428c55e80b69236382",
+          "authoredBaselineConfidence": "inferred-from-local-pdf-date",
+          "authoringStatus": "in-progress"
+        }
+      }
     }
   }
 }

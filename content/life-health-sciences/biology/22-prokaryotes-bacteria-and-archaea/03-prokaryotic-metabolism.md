@@ -180,21 +180,21 @@ the temperatures are very high in the hydrothermal vent, so the prokaryotes woul
 {{< textin
   question="An organism that produces organic molecules from small inorganic compounds is called a(n) ________."
   answer="autotroph"
-  accept="autotrophs|autotrophic"
+  accept="autotrophic"
   hint="This is the opposite nutritional strategy from an organism that must obtain carbon from organic compounds."
 >}}
 
 {{< textin
   question="An organism that obtains energy from organic molecules is called a(n) ________."
   answer="heterotroph"
-  accept="heterotrophs|heterotrophic"
+  accept="heterotrophic"
   hint="This is the opposite nutritional strategy from an organism that synthesizes its own organic molecules from carbon dioxide."
 >}}
 
 {{< textin
   question="Organisms that use oxygen are described as ________."
   answer="aerobic"
-  accept="aerobes|aerobe"
+  accept="aerobe"
   hint="Its energy pathway uses oxygen as the terminal electron acceptor."
 >}}
 
@@ -240,7 +240,6 @@ less carbon dioxide would be released back into the atmosphere
 {{< textin
   question="An organism that carries out the decomposition of dead organisms is called a ________."
   answer="decomposer"
-  accept="decomposers"
   hint="Both bacteria and fungi that break down dead plants and animals share this name."
 >}}
 

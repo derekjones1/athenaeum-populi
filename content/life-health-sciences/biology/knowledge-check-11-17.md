@@ -57,7 +57,6 @@ these steps are homologous chromosome pairing and synapsis, crossover exchanges,
 {{< textin
   question="In asexually reproducing organisms, the only source of genetic variation is ________."
   answer="mutation"
-  accept="mutations"
 >}}
 
 {{< selfcheck question="How do meiosis and fertilization together let a sexually reproducing organism alternate between haploid and diploid stages?" >}}
@@ -85,7 +84,6 @@ self-fertilizing within individual flowers
 {{< textin
   question="Mendel worked with traits inherited in distinct classes, such as violet versus white flowers, rather than a continuous range of forms — an inheritance pattern known as ________."
   answer="discontinuous variation"
-  accept="discontinuous variations"
 >}}
 
 {{< selfcheck question="What is the difference between an empirical probability and a theoretical probability, and where does each come from?" >}}
@@ -144,7 +142,6 @@ law of dominance
 {{< textin
   question="A cross between two true-breeding parents that express different traits for two characteristics is called a ________ cross."
   answer="dihybrid"
-  accept="dihybrids"
 >}}
 
 {{< selfcheck question="What happens to maternal and paternal alleles during recombination between homologous chromosomes, and does this change the order of the genes?" >}}
@@ -172,7 +169,7 @@ Eleanor Carothers
 {{< textin
   question="Offspring whose allele combination differs from their parents', produced by crossing over during meiosis, are called a ________."
   answer="nonparental type"
-  accept="recombinant type|nonparental types|recombinant types|nonparental (recombinant) type"
+  accept="recombinant type|nonparental (recombinant) type"
 >}}
 
 {{< selfcheck question="Why did Mendel consistently observe independent assortment among the seven traits he studied in pea plants, even though homologous recombination is a common genetic process?" >}}
@@ -198,7 +195,6 @@ bright-field microscopy
 {{< textin
   question="An individual who has exactly the expected number of chromosomes for their species, such as 22 pairs of autosomes and one pair of sex chromosomes in humans, is called ________."
   answer="euploid"
-  accept="euploids"
 >}}
 
 {{< selfcheck question="What chromosomal change produces cri-du-chat syndrome, and what symptom gives the syndrome its name?" >}}
@@ -300,7 +296,6 @@ DNA pol III
 {{< textin
   question="A ring-shaped protein that binds to the DNA and holds the DNA polymerase in place while it continues adding nucleotides is called the ________."
   answer="sliding clamp"
-  accept="sliding clamps"
 >}}
 
 {{< selfcheck question="Why does the leading strand need only one primer, while the lagging strand needs a new primer for each Okazaki fragment?" >}}
@@ -346,7 +341,6 @@ helps to account for the lower replication rate in eukaryotes
 {{< textin
   question="A variation in the nucleotide sequence of a genome is called a ________."
   answer="mutation"
-  accept="mutations"
 >}}
 
 {{< multiplechoice
@@ -400,7 +394,6 @@ this is powerful evidence that all of life on Earth shares a common origin
 {{< textin
   question="A shorter, circular DNA molecule that may contain one or a few genes and can be transferred independently of the bacterial chromosome during cell division is called a ________."
   answer="plasmid"
-  accept="plasmids"
 >}}
 
 {{< multiplechoice
@@ -477,7 +470,6 @@ the tRNA folds to position the anticodon at the other end
 {{< textin
   question="A tRNA that interacts with the start codon, binds directly to the ribosome's P site, and links to a special methionine to begin a polypeptide chain is called the ________."
   answer="initiator tRNA"
-  accept="initiator tRNAs"
 >}}
 
 {{< multiplechoice
@@ -542,7 +534,7 @@ allolactose
 {{< textin
   question="The series of genes necessary to synthesize tryptophan in prokaryotic cells is called the ________."
   answer="trp operon"
-  accept="trp operons|tryptophan operon|tryptophan operons"
+  accept="tryptophan operon"
 >}}
 
 {{< selfcheck question="Explain how a drop in glucose levels leads to increased transcription of the genes needed to process an alternative sugar source, in terms of cAMP and CAP." >}}
@@ -707,7 +699,6 @@ medicines can be designed to specifically target diseased cells without harming 
 {{< textin
   question="A single-stranded overhang left by a restriction endonuclease's staggered cut, able to anneal with a complementary overhang, is called a ________."
   answer="sticky end"
-  accept="sticky ends"
 >}}
 
 {{< selfcheck question="What is parthenogenesis, and how does fertilization determine whether an insect or reptile's parthenogenic egg develops into a male or a female?" >}}
@@ -723,7 +714,6 @@ an unfertilized egg remains haploid and develops into a male
 {{< textin
   question="A gene or sequence on a chromosome with a known location that is associated with a specific trait is called a ________."
   answer="genetic marker"
-  accept="genetic markers"
 >}}
 
 {{< multiplechoice
@@ -749,7 +739,7 @@ microsatellite polymorphisms are similar to VNTRs, but the repeat unit is very s
 {{< textin
   question="An individual DNA monomer that is missing a hydroxyl group at the site where another nucleotide normally attaches is called a ________."
   answer="dideoxynucleotide"
-  accept="dideoxynucleotides|ddNTP|ddNTPs"
+  accept="ddNTP"
 >}}
 
 {{< multiplechoice

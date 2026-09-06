@@ -241,7 +241,6 @@ the resulting eukaryote would retain features from both original cells
 {{< textin
   question="A group of related organelles in plant cells involved in the storage of starches, fats, proteins, and pigments is called a ________."
   answer="plastid"
-  accept="plastids"
   hint="Chloroplasts, which capture light energy for photosynthesis, are one type of this organelle."
 >}}
 

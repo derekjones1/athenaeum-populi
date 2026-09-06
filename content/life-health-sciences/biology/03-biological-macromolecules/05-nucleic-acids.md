@@ -129,7 +129,6 @@ nucleotides
 {{< textin
   question="A biological macromolecule that carries the cell's genetic blueprint and instructions for the cell's functioning is called a ________."
   answer="nucleic acid"
-  accept="nucleic acids"
   hint="This is the name for the whole class of molecule that DNA and RNA both belong to."
 >}}
 

@@ -123,7 +123,6 @@ uses labeled dNTPs
 {{< textin
   question="A larger DNA sequence assembled from overlapping shorter sequences is called a ________."
   answer="contig"
-  accept="contigs"
   hint="In the section's torn-photograph analogy, this is the reconstructed picture built from the overlapping pieces."
 >}}
 
@@ -171,7 +170,6 @@ all of the above
 {{< textin
   question="A species that researchers study and use as a stand-in to understand biological processes shared with other species is called a ________."
   answer="model organism"
-  accept="model organisms"
   hint="The section names several examples — the mouse, the fruit fly, the nematode, and humans among them."
 >}}
 

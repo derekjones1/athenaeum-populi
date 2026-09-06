@@ -137,7 +137,6 @@ the population of grey wolves will decrease
 {{< textin
   question="An organism that consumes organic substances or other organisms for food, because it cannot make its own, is called a ________."
   answer="heterotroph"
-  accept="heterotrophs"
   hint="Animals, fungi, and most other bacteria fall into this category, in contrast to organisms that make their own food using sunlight."
 >}}
 

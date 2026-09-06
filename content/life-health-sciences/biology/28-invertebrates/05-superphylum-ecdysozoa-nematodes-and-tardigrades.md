@@ -137,7 +137,7 @@ in addition to species that reproduce parthenogenetically
 {{< textin
   question="The phylum of worm-like triploblastic, pseudocoelomate animals that can be free-living or parasitic is called ________."
   answer="Nematoda"
-  accept="nematode|nematodes"
+  accept="nematode"
   hint="Its name comes from the Greek word for “thread,” and it includes all true roundworms."
 >}}
 

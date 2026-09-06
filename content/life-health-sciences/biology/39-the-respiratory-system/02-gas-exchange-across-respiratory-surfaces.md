@@ -202,14 +202,14 @@ this ratio changes with alterations in lung function that arise from diseases su
 {{< textin
   question="The additional amount of air that can be exhaled after a normal exhalation is called the ________."
   answer="expiratory reserve volume"
-  accept="ERV|expiratory reserve volumes"
+  accept="ERV"
   hint="This volume, together with tidal volume and the inhaling-side reserve volume, sums to vital capacity."
 >}}
 
 {{< textin
   question="The amount of air remaining in the lung after a maximal expiration is called the ________."
   answer="residual volume"
-  accept="RV|residual volumes"
+  accept="RV"
   hint="This is the only lung volume that cannot be measured directly, because it is impossible to completely empty the lungs of air."
 >}}
 

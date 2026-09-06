@@ -231,7 +231,6 @@ For fertilization to occur in angiosperms, pollen has to be transferred to the s
 {{< textin
   question="The pollen tube gains entry into the ovule sac through the ________."
   answer="micropyle"
-  accept="micropyles"
   hint="The pollen tube is guided there by chemicals secreted by the synergids inside the embryo sac."
 >}}
 
@@ -264,7 +263,6 @@ the polar nuclei
 {{< textin
   question="A pigment pattern on a flower that guides an insect to the nectaries is called a ________."
   answer="nectar guide"
-  accept="nectar guides"
   hint="Bees can see these regions on flower petals, but humans typically cannot."
 >}}
 

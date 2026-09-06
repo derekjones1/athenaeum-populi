@@ -181,14 +181,13 @@ The number, size, shape, and banding pattern of chromosomes make them easily ide
 {{< textin
   question="The number and appearance of an individual's chromosomes — including their length, banding pattern, and centromere position — is called a(n) ________."
   answer="karyotype"
-  accept="karyotypes"
   hint="Cytologists capture this by photographing an individual's chromosomes."
 >}}
 
 {{< textin
   question="The chart cytologists create by cutting and pasting each of an individual's photographed chromosomes into an ordered arrangement is called a(n) ________."
   answer="karyogram"
-  accept="karyograms|ideogram|ideograms"
+  accept="ideogram"
   hint="Geneticists read this chart to spot an extra, missing, or rearranged chromosome; its name ends in -gram."
 >}}
 
@@ -291,7 +290,7 @@ synapse
 {{< textin
   question="The detachment, 180° rotation, and reinsertion of part of a chromosome is called a(n) ________."
   answer="chromosome inversion"
-  accept="inversion|inversions|chromosomal inversion|chromosome inversions"
+  accept="inversion|chromosomal inversion"
   hint="It can be pericentric or paracentric, depending on whether it includes the centromere."
 >}}
 
@@ -305,7 +304,6 @@ synapse
 {{< textin
   question="The process by which a chromosome segment dissociates and reattaches to a different, nonhomologous chromosome is called a(n) ________."
   answer="translocation"
-  accept="translocations"
   hint="A reciprocal one exchanges segments between two nonhomologous chromosomes with no net gain or loss of genetic material."
 >}}
 

@@ -298,7 +298,6 @@ cause the cell to uptake excessive water.
 {{< textin
   question="A biological macromolecule with a 1:2:1 ratio of carbon to hydrogen to oxygen that serves as an energy source and provides structural support, including the arthropod exoskeleton, is called a ________."
   answer="carbohydrate"
-  accept="carbohydrates"
   hint="Its name literally combines \"carbo-\" (carbon) and \"hydrate\" (water)."
 >}}
 
@@ -367,7 +366,6 @@ the aldose, glyceraldehyde, has its carbonyl group double-bonded to an end carbo
 {{< textin
   question="Two monosaccharides joined together by a glycosidic bond form a ________."
   answer="disaccharide"
-  accept="disaccharides"
   hint="Di- means \"two\" — count the sugar units being joined."
 >}}
 

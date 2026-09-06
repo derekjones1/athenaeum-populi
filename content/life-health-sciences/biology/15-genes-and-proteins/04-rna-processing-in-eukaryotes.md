@@ -134,7 +134,6 @@ each has the potential to be exported to the cytoplasm for translation
 {{< textin
   question="The modification added to the 5′ end of pre-mRNAs to protect the transcript from degradation and assist translation is called the ________."
   answer="7-methylguanosine cap"
-  accept="7-methylguanosine caps"
   hint="It is added by a phosphate linkage while the transcript is still being synthesized."
 >}}
 
@@ -147,7 +146,6 @@ each has the potential to be exported to the cytoplasm for translation
 {{< textin
   question="The approximately 200-adenine-residue modification added to the 3′ end of a pre-mRNA to protect it from degradation and assist its export from the nucleus is called the ________."
   answer="poly-A tail"
-  accept="poly-A tails"
   hint="An enzyme called poly-A polymerase adds this string of A residues after cleavage at the AAUAAA site."
 >}}
 
@@ -156,14 +154,12 @@ each has the potential to be exported to the cytoplasm for translation
 {{< textin
   question="The sequence present in protein-coding mRNA after completion of pre-mRNA splicing is called a(n) ________."
   answer="exon"
-  accept="exons"
   hint="Its name signals that it is the part of the sequence that gets expressed."
 >}}
 
 {{< textin
   question="A non–protein-coding intervening sequence that is spliced out of mRNA during processing is called a(n) ________."
   answer="intron"
-  accept="introns"
   hint="Its name signals that it intervenes between the coding sequences."
 >}}
 
@@ -205,14 +201,12 @@ splicing
 {{< textin
   question="The three-nucleotide sequence in a tRNA molecule that corresponds to an mRNA codon is called the ________."
   answer="anticodon"
-  accept="anticodons"
   hint="It sits at the opposite end of the folded tRNA from the amino-acid attachment site."
 >}}
 
 {{< textin
   question="Pre-rRNAs and pre-tRNAs may be processed by ________, splicing, methylation, and chemical conversion of nucleotides."
   answer="intramolecular cleavage"
-  accept="intramolecular cleavages"
   hint="Enzymes cut a single long precursor molecule into the separate rRNA or tRNA subunits it spans."
 >}}
 

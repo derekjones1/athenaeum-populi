@@ -191,7 +191,7 @@ crossing point.
 We check by choosing a test point in that wedge, such as $(-1, -1)$:
 
 {{< fillin
-  question="Solve the system $y >= 2x - 1$ and $y < x + 1$ by graphing, then test the point $(-1, -1)$. Substitute it into $y < x + 1$ and simplify the right side."
+  question="Solve the system $y >= 2x - 1$ and $y < x + 1$ by graphing, then test the point $(-1, -1)$. Substitute it into $y < x + 1$, simplify the right side, and write the resulting statement."
   answer="-1<0"
   answerDisplay="$-1 < 0$, true"
   hint="Substitute $x = -1$ into $x + 1$: $-1 + 1$ simplifies to 0."
@@ -266,7 +266,7 @@ There is no point in both shaded regions, so this system has **no
 solution**.
 
 {{< fillin
-  question="For the system $4x + 3y >= 12$ and $y < -\tfrac{4}{3} x + 1$, substitute $x = 0$, $y = 0$ into $4x + 3y >= 12$ and simplify the left side."
+  question="For the system $4x + 3y >= 12$ and $y < -\tfrac{4}{3} x + 1$, substitute $x = 0$, $y = 0$ into $4x + 3y >= 12$, simplify the left side, and write the resulting statement."
   answer="0>=12"
   answerDisplay="$0 >= 12$, false"
   hint="$4(0) + 3(0)$ simplifies to 0, so the inequality becomes $0 >= 12$."

@@ -216,21 +216,19 @@ would cause the subsequent branches to be inaccurate
 {{< textin
   question="A set of organisms all descended from a single common ancestor is called a ________."
   answer="monophyletic group"
-  accept="monophyletic groups|clade|clades"
+  accept="clade"
   hint="Vertebrata and Amniota, in the tree figure, are both examples."
 >}}
 
 {{< textin
   question="A trait on a phylogenetic tree that every organism on the tree has in common is called a ________."
   answer="shared ancestral character"
-  accept="shared ancestral characters"
   hint="In the Vertebrata figure, having a vertebral column is this kind of trait for every tip shown."
 >}}
 
 {{< textin
   question="A trait that arose at some point along a phylogenetic tree and belongs only to one particular clade is called a ________."
   answer="shared derived character"
-  accept="shared derived characters"
   hint="In the Vertebrata figure, the amniotic egg is this kind of trait for lizards, rabbits, and humans, but not fish or lampreys."
 >}}
 

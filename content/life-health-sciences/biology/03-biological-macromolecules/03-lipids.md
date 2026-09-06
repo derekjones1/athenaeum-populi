@@ -170,7 +170,7 @@ glycogen is a large branched carbohydrate that cannot be compacted for storage
 {{< textin
   question="A fat molecule made of three fatty acids linked to a glycerol molecule is called a ________."
   answer="triacylglycerol"
-  accept="triglyceride|triacylglycerols|triglycerides"
+  accept="triglyceride"
   hint="This is the storage form of fat in adipocytes, and its name describes the three fatty acid chains it carries."
 >}}
 
@@ -209,14 +209,13 @@ some restaurants are banning trans fats because they cause higher levels of LDL,
 {{< textin
   question="A long-chain hydrocarbon with one or more double bonds in its carbon chain is called a(n) ________."
   answer="unsaturated fatty acid"
-  accept="unsaturated fatty acids"
   hint="Oleic acid, with a double bond at its eighth carbon, is an example."
 >}}
 
 {{< textin
   question="A polyunsaturated fat that the human body requires but cannot make itself, and so must obtain from the diet, is called a(n) ________."
   answer="omega fat"
-  accept="omega fatty acid|omega fats|omega fatty acids|essential fatty acid|essential fatty acids"
+  accept="omega fatty acid|essential fatty acid"
   hint="Alpha-linolenic acid (ALA), EPA, and DHA are examples, and salmon and tuna are good dietary sources."
 >}}
 
@@ -236,7 +235,6 @@ the double bond in hydrocarbon chains
 {{< textin
   question="The major constituent of plasma membranes, made of two fatty acids and a phosphate-containing group attached to a glycerol backbone, is called a ________."
   answer="phospholipid"
-  accept="phospholipids"
   hint="It has a hydrophilic head and two hydrophobic tails."
 >}}
 
@@ -251,7 +249,6 @@ the double bond in hydrocarbon chains
 {{< textin
   question="A lipid built from four fused hydrocarbon rings forming a planar structure is called a ________."
   answer="steroid"
-  accept="steroids"
   hint="Cholesterol and cortisol both belong to this class of lipid."
 >}}
 
@@ -287,7 +284,6 @@ attached to the intracellular surface
 {{< textin
   question="A fat formed artificially by hydrogenating oils, which rearranges its double bonds compared with naturally occurring lipids, is called a ________."
   answer="trans fat"
-  accept="trans fats"
   hint="Margarine and shortening are often made this way, and eating a lot of it raises LDL cholesterol."
 >}}
 

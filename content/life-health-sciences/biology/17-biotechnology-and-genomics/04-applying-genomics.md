@@ -125,7 +125,6 @@ all of the above
 {{< textin
   question="Growth of a single cell type in the laboratory is called ________."
   answer="pure culture"
-  accept="pure cultures"
   hint="This is the traditional way microbiology was taught before researchers turned to studying whole microbial communities."
 >}}
 

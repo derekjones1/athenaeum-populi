@@ -177,6 +177,8 @@ const extra = [
   // label is stripped textually, and the name guard does not apply to it:
   // the prompt said f(x), the author wrote y, and both mean the output.
   ['f(x)=-7x+3', 'y=-7x+3', 'correct'],
+  ['f^{-1}(x)=\\frac{x^{4}+7}{6}', '\\frac{x^4+7}{6}', 'correct'],
+  ['f^{-1}(x)=\\frac{x^{4}+8}{6}', '\\frac{x^4+7}{6}', 'incorrect'],
   ['f(x)=-7x+3', '-7x+3', 'correct'],
   ['f\\left(x\\right)=-7x+3', 'y=-7x+3', 'correct'], // MathLive smart fences around the argument
   ['f(x)=-7x+3', 'f(x)=-7x+3', 'correct'], // an author may write the label too — grading is reflexive

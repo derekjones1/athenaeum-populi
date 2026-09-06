@@ -142,14 +142,13 @@ insectivorous
 {{< textin
   question="A plant that is dependent on its host for survival is called a ________."
   answer="parasitic plant"
-  accept="parasitic plants|parasite|parasites"
+  accept="parasite"
   hint="This plant's suckers invade a host's stem and tap into its vascular bundles for water and nutrients — the dodder is a well-known example."
 >}}
 
 {{< textin
   question="A plant that does not have chlorophyll and gets its food from dead matter is called a ________."
   answer="saprophyte"
-  accept="saprophytes"
   hint="Unlike fungi (which are commonly, but incorrectly, given this same name), most of these rare plants don't digest dead matter directly — they parasitize a fungus that already has."
 >}}
 
@@ -167,21 +166,19 @@ nitrogen-fixing nodule
 {{< textin
   question="A plant in a symbiotic relationship with bacteria or fungi is called a ________."
   answer="symbiont"
-  accept="symbionts"
   hint="This kind of plant's special adaptations include forming root nodules or partnering with mycorrhizal fungi — the general term for one partner in any mutualistic pairing."
 >}}
 
 {{< textin
   question="A plant that grows on other plants but is not dependent upon them for nutrition is called an ________."
   answer="epiphyte"
-  accept="epiphytes"
   hint="This plant's clinging aerial roots pull nutrients from humus trapped in tree crevices, while its other aerial roots absorb moisture straight from the air."
 >}}
 
 {{< textin
   question="A plant with specialized leaves that attract and digest insects is called a(n) ________."
   answer="insectivorous plant"
-  accept="insectivorous plants|insectivorous"
+  accept="insectivorous"
   hint="The Venus flytrap is the best-known example: sensitive hairs inside the trap trigger the leaf to snap shut around its prey."
 >}}
 
@@ -239,7 +236,7 @@ Calvin cycle
 {{< textin
   question="The specialized root structures that contain rhizobia bacteria, where nitrogen fixation takes place, are called ________."
   answer="nodules"
-  accept="nodule|root nodules|root nodule"
+  accept="nodule|root nodule"
   hint="These bulbous swellings form on legume roots — soybean roots studied under a microscope show masses of bacteria packed inside them."
 >}}
 

@@ -96,7 +96,7 @@ cells lose the ability to self-destruct
 {{< textin
   question="Rapidly reproducing cancer cells that crowd out normal blood cells cause the blood cancer called ________."
   answer="leukemia"
-  accept="leukaemia|leukemias"
+  accept="leukaemia"
   hint="A cancer of the blood rather than a solid tumor — the summary names it in parentheses."
 >}}
 
@@ -127,14 +127,12 @@ oncogene.
 {{< textin
   question="A mutated version of a normal gene involved in the positive regulation of the cell cycle is called a(n) ________."
   answer="oncogene"
-  accept="oncogenes"
   hint="It is the mutated, cancer-causing form of a normal gene that promotes cell division; its prefix means 'tumor.'"
 >}}
 
 {{< textin
   question="A normal gene that becomes an oncogene when it is mutated is called a(n) ________."
   answer="proto-oncogene"
-  accept="proto-oncogenes"
   hint="It codes for a positive cell-cycle regulator before any mutation occurs."
 >}}
 
@@ -143,7 +141,7 @@ oncogene.
 {{< textin
   question="A segment of DNA that codes for regulator proteins that prevent a cell from undergoing uncontrolled division is called a(n) ________."
   answer="tumor suppressor gene"
-  accept="tumor suppressor genes|tumour suppressor gene|tumour suppressor genes"
+  accept="tumour suppressor gene"
   hint="Rb, p53, and p21 are the best-understood proteins in this category."
 >}}
 

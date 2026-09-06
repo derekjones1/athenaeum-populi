@@ -205,21 +205,21 @@ a radula near the mouth used for scraping food
 {{< textin
   question="The phylum of protostomes with soft bodies and no segmentation is called ________."
   answer="Mollusca"
-  accept="mollusks|mollusk|molluscs|mollusc"
+  accept="mollusk|mollusc"
   hint="Its name literally means 'soft' body, from early descriptions of unshelled cuttlefish."
 >}}
 
 {{< textin
   question="The phylum of vermiform animals with metamerism is called ________."
   answer="Annelida"
-  accept="annelids|annelid"
+  accept="annelid"
   hint="Its name comes from the Latin word for a small ring, describing the animal's ring-like segments."
 >}}
 
 {{< textin
   question="The larval stage shared by most aquatic mollusks and many polychaetes, with bands of cilia around a toplike body, is called a ________."
   answer="trochophore"
-  accept="trochophores|trochophore larva|trochophore larvae"
+  accept="trochophore larva|trochophore larvae"
   hint="It unites the mollusks and the annelids in common ancestry as lophotrochozoans."
 >}}
 

@@ -154,14 +154,12 @@ The pigments of the first part of photosynthesis, the light-dependent reactions,
 {{< textin
   question="A photosynthetic pigment (yellow-orange-red) that functions to dispose of excess energy is called a(n) ________."
   answer="carotenoid"
-  accept="carotenoids"
   hint="It also gives carrots and tomatoes their color, and is unrelated to chlorophyll's green."
 >}}
 
 {{< textin
   question="A distinct quantity, or packet, of light energy is called a ________."
   answer="photon"
-  accept="photons"
   hint="Chlorophyll absorbs one of these at a time, exciting an electron to a higher energy state."
 >}}
 

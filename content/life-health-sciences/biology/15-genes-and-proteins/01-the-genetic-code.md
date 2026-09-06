@@ -178,14 +178,12 @@ stop the translation at UGA because that triplet encodes a stop codon
 {{< textin
   question="Three consecutive nucleotides in mRNA that specify the insertion of an amino acid, or the release of a polypeptide chain during translation, are called a ________."
   answer="codon"
-  accept="codons"
   hint="AUG, UAA, and UGA are all examples of this three-nucleotide unit."
 >}}
 
 {{< textin
   question="A shift of one or two nucleotides in the sequence of triplets that specifies a particular protein completely abolishes synthesis of that protein by changing its ________."
   answer="reading frame"
-  accept="reading frames"
   hint="The AUG start codon sets where this begins near the 5′ end of the mRNA."
 >}}
 

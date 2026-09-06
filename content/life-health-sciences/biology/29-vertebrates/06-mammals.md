@@ -121,21 +121,19 @@ platypuses.
 {{< textin
   question="An egg-laying mammal is called a ________."
   answer="monotreme"
-  accept="monotremes"
   hint="This group includes the platypus and the echidnas, which retain their eggs through about two-thirds of the developmental period before laying them in a nest."
 >}}
 
 {{< textin
   question="The group of mammals whose very immature young typically complete their development inside a pouch, and which includes the kangaroo, koala, bandicoot, and Tasmanian devil, is called a ________."
   answer="marsupial"
-  accept="marsupials"
   hint="Most species in this group live in Australia, New Guinea, and nearby islands, and their embryos are nourished before birth by a yolk-sac placenta with no intervening egg shell."
 >}}
 
 {{< textin
   question="Mammals whose species all possess a complex placenta connecting a fetus to the mother are known as ________ mammals."
   answer="eutherian"
-  accept="eutherians|eutheria|placental|placentals|placental mammal|placental mammals"
+  accept="eutheria|placental|placental mammal"
   hint="This clade, together with the marsupials, forms the therian mammals; unlike marsupials, its complex placenta lets the fetus complete far more of its development before birth."
 >}}
 
@@ -213,7 +211,6 @@ eutherian mammals also possess a specialized structure that links the two cerebr
 {{< textin
   question="The skin gland that produces a lipid mixture called sebum, providing water resistance and lubrication for hair, is the ________."
   answer="sebaceous gland"
-  accept="sebaceous glands"
   hint="This type of gland is located over most of the body, unlike the sweat-producing glands that are limited to certain areas in most mammals."
 >}}
 

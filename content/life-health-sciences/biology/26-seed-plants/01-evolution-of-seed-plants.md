@@ -131,7 +131,6 @@ allowed them to survive drought conditions
 {{< textin
   question="The structure containing an embryo, storage tissue, and a protective coat is called a ________."
   answer="seed"
-  accept="seeds"
   hint="This structure lets a plant disperse its next generation through both space and time, remaining dormant until conditions favor growth."
 >}}
 
@@ -151,14 +150,12 @@ Eocene (present)
 {{< textin
   question="A transitional group of plants that resembled conifers because they produced wood, yet still reproduced like ferns, is called a ________."
   answer="progymnosperm"
-  accept="progymnosperms"
   hint="This group, including the extinct genus *Archaeopteris*, dominated late Devonian forests before true gymnosperms replaced them."
 >}}
 
 {{< textin
   question="The Greek-derived term for a seed plant — literally 'seed' plus 'plant' — is a ________."
   answer="spermatophyte"
-  accept="spermatophytes"
   hint="Every plant in this category is heterosporous, producing separate megaspores and microspores."
 >}}
 
@@ -189,21 +186,18 @@ root
 {{< textin
   question="The structure that contains the male gametophyte of a seed plant is called a ________."
   answer="pollen grain"
-  accept="pollen grains"
   hint="It is encased in a protective coat and can be carried by wind, water, or a pollinator to reach a female gametophyte."
 >}}
 
 {{< textin
   question="The extension that grows from a pollen grain and delivers a sperm nucleus to the egg cell is called a ________."
   answer="pollen tube"
-  accept="pollen tubes"
   hint="It forms after the structure carrying it reaches the female gametophyte, delivering sperm without any need for a film of water."
 >}}
 
 {{< textin
   question="In a seed plant, the female gametophyte is also known as the ________."
   answer="ovule"
-  accept="ovules"
   hint="In the earliest known seed ferns, such as *Elkinsia*, this structure was enclosed and protected within a cupule."
 >}}
 
@@ -221,14 +215,12 @@ plants needed to repel others
 {{< textin
   question="Branches specialized for reproduction in some seed-bearing plants, containing male organs, female organs, or both, are called a ________."
   answer="flower"
-  accept="flowers"
   hint="Its distinctive size, shape, color, and smell often reflect the nature of its pollinator, in a relationship called coevolution."
 >}}
 
 {{< textin
   question="Thickened tissue derived from the ovary wall that protects the embryo after fertilization and helps disperse seeds is called ________."
   answer="fruit"
-  accept="fruits"
   hint="Tomatoes, green peppers, corn, and avocados are all examples of this structure."
 >}}
 

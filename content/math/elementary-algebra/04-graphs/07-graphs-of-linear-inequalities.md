@@ -257,7 +257,7 @@ solution, so we shade the side of the boundary line that does *not* include
 $(1, 0)$.
 
 {{< fillin
-  question="Graph the linear inequality $y > -3x$ by testing the point $(1, 0)$. Is $(1, 0)$ a solution?"
+  question="Graph the linear inequality $y > -3x$ by testing the point $(1, 0)$. Substitute the point into the inequality and write the resulting statement (a true statement means the point is a solution)."
   answer="0>-3"
   answerDisplay="$0 > -3$, true"
   hint="Substitute $x = 1$, $y = 0$ into $y > -3x$ and simplify."

@@ -219,7 +219,7 @@ test('merge keeps a solved result, validates its shape, and --require-solved gat
   assert.equal(run(dir, ['check', 'content']).code, 0, 'without --require-solved the gate is unchanged');
   const unsolved = run(dir, ['check', 'content', '--require-solved', 'content/life-health-sciences']);
   assert.equal(unsolved.code, 1);
-  assert.match(unsolved.out, /1 exercise\(s\) under content\/life-health-sciences have no orchestrator solve/);
+  assert.match(unsolved.out, /2 exercise\(s\) under content\/life-health-sciences have no orchestrator solve/);
 
   // a malformed solve is refused
   mkdirSync(join(dir, 'bad'));
@@ -234,6 +234,7 @@ test('merge keeps a solved result, validates its shape, and --require-solved gat
   mkdirSync(join(dir, 'solved'));
   writeFileSync(join(dir, 'solved/solve.json'), JSON.stringify({ results: [
     { hash: prose[1].hash, verdict: 'ok', note: 'kept', solved: { by: 'orchestrator', result: 'agrees' } },
+    ...prose.filter((e) => e.kind === 'fillin').map((e) => ({ hash: e.hash, verdict: 'ok', solved: { by: 'orchestrator', result: 'agrees' } })),
   ] }));
   assert.equal(run(dir, ['merge', 'solved']).code, 0);
   const ledger = JSON.parse(readFileSync(join(dir, 'data/verification/answer-ledger.json'), 'utf8'));

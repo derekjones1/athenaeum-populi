@@ -183,7 +183,7 @@ Human cells are much more similar to fungi cells than bacteria or viruses.
 {{< textin
   question="Fungal infections are difficult to cure, since fungi, like their hosts, are ________, and cladistically related closely to Kingdom Animalia."
   answer="eukaryotic"
-  accept="eukaryotes|eukaryote"
+  accept="eukaryote"
   hint="Antibiotics work by targeting a kind of cell that fungi are not — the same kind of cell that fungi share with their animal or plant hosts."
 >}}
 

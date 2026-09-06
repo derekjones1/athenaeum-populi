@@ -336,7 +336,7 @@ cell fragment found in the tissue
 {{< textin
   question="A space in cartilage and bone that contains living cells is called a ________."
   answer="lacuna"
-  accept="lacunae|lacunas"
+  accept="lacunae"
   hint="Osteocytes and chondrocytes both sit inside these small cavities within their tissue's matrix."
 >}}
 
@@ -376,7 +376,7 @@ The discs control the heart rate.
 {{< textin
   question="The line that extends along the end of a cardiac muscle cell, joining it to the next cell in the row and helping pass an electrical impulse between them, is called the ________."
   answer="intercalated disc"
-  accept="intercalated discs|intercalated disk|intercalated disks"
+  accept="intercalated disk"
   hint="Cardiac cells are shorter than skeletal muscle fibers, and each one connects end to end to its neighbor at this membrane structure."
 >}}
 

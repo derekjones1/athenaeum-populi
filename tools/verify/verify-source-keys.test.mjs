@@ -5,9 +5,11 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import {
   DISCLOSED_DEVIATIONS, MODEL_COVERAGE_FLOOR,
-  checkCorpus, compact, judgeMultipleChoice, judgeSelfcheck, judgeTextin,
-  keyedOptionIndex, keyedOptionIndices, pageItems, readModule, skipLines, summaryLine, termAlternates,
+  answerValues, checkCorpus, compact, judgeFillin, judgeMultipleChoice, judgeSelfcheck, judgeTextin,
+  keyedOptionIndex, keyedOptionIndices, latexNumbers, latexShape, mathmlValues, numberWords, pageItems, readModule,
+  skipLines, summaryLine, termAlternates, textNumbers, unitTotals, valuesAgree,
 } from './verify-source-keys.mjs';
+import { parseXml } from '../lib/openstax-source.mjs';
 import { BASELINE_SOURCES } from './baselines.mjs';
 import { bundleSourceDirectory, loadSourceLock } from '../lib/openstax-source.mjs';
 
@@ -180,7 +182,35 @@ test('a self-check model answer is measured by how much of it comes from the sou
   assert.equal(selfcheck('Why might an organism benefit from more than one pigment?').status, 'diverges');
 });
 
-test('pageItems reads the three graded shortcode kinds with their line numbers', () => {
+test('a self-check whose matched source question is UNKEYED is counted, not judged', () => {
+  // Microbiology prints no answer for its Short Answer, Critical Thinking, and
+  // Check Your Understanding questions; the model answer is author-written from
+  // the module. The question still matches its source exercise, so the item is
+  // not `unmatched` — measuring it against an empty solution scores 0 and used
+  // to read as `diverges`, which fails the run.
+  const unkeyedSource = readModule(`<document xmlns="http://cnx.rice.edu/cnxml">
+    <content>
+      <section class="short-answer"><title>Short Answer</title>
+        <exercise id="sa-1"><problem><para>Why was the invention of the microscope important for microbiology?</para></problem></exercise>
+      </section>
+    </content>
+  </document>`);
+  const verdict = judgeSelfcheck({
+    type: 'selfcheck',
+    question: 'Why was the invention of the microscope important for microbiology?',
+    model: 'Microbes could not be seen before the microscope, so their existence could only be theorized.',
+  }, unkeyedSource);
+  assert.equal(verdict.status, 'unkeyed');
+  assert.equal(verdict.exercise.id, 'sa-1');
+  // and the keyed case still works the same way it always did
+  assert.equal(judgeSelfcheck({
+    type: 'selfcheck',
+    question: 'Describe the pathway of electron transfer from photosystem II to photosystem I.',
+    model: 'Electrons leave photosystem II, pass through plastoquinone to the cytochrome complex, then plastocyanin, and arrive at photosystem I.',
+  }, source).status, 'verbatim');
+});
+
+test('pageItems reads the four graded shortcode kinds with their line numbers', () => {
   const items = pageItems([
     '# Page',
     '{{< multiplechoice question="Q1?" answer="b" >}}',
@@ -191,10 +221,93 @@ test('pageItems reads the three graded shortcode kinds with their line numbers',
     '{{< selfcheck question="S?" >}}',
     'Model answer.',
     '{{< /selfcheck >}}',
+    '{{< fillin question="Solve: $x+1=3$." answer="2" >}}',
   ].join('\n'));
-  assert.deepEqual(items.map((item) => [item.type, item.line]), [['multiplechoice', 2], ['textin', 6], ['selfcheck', 7]]);
+  assert.deepEqual(items.map((item) => [item.type, item.line]), [['multiplechoice', 2], ['fillin', 10], ['textin', 6], ['selfcheck', 7]]);
   assert.deepEqual(items[0].options, ['a', 'b']);
-  assert.equal(items[2].model, 'Model answer.');
+  assert.equal(items[3].model, 'Model answer.');
+  assert.equal(items[1].answer, '2');
+});
+
+/* ---- math fill-ins -------------------------------------------------------- */
+
+test('numbers are read from prose, number words, grouped figures, and dashes alike', () => {
+  assert.deepEqual(textNumbers('207,500 to 2,225,000; 8,22; −3.2; .6 seconds; –68 ft/sec; $40'), [207500, 2225000, 8, 22, -3.2, 0.6, -68, 40]);
+  assert.deepEqual(numberWords('thirty-two 49-cent stamps and twelve, one-fourth, ten-thousands, twice, negative twenty-three'), [32, 12, 2, 23]);
+  assert.deepEqual(unitTotals('4 lbs. 8 oz.; 9 ft 2 in; 2 hours 15 minutes'), [72, 110, 135]);
+});
+
+test('MathML values: fractions are quotients, a minus sign is a sign, a mixed number is a sum, and "3,333.33" is one number', () => {
+  const math = (inner) => parseXml(`<p xmlns:m="http://www.w3.org/1998/Math/MathML"><m:math>${inner}</m:math></p>`);
+  assert.deepEqual(mathmlValues(math('<m:mo>−</m:mo><m:mfrac><m:mn>3</m:mn><m:mn>8</m:mn></m:mfrac>')), [-0.375, 3, 8]);
+  assert.deepEqual(mathmlValues(math('<m:mn>2</m:mn><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac>')), [2, 0.5, 2.5, 1, 2]);
+  assert.deepEqual(mathmlValues(math('<m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>11</m:mn>')), [-11]);
+  // Grouped digits keep both readings unless the group starts with 0.
+  assert.deepEqual(mathmlValues(math('<m:mn>3</m:mn><m:mo>,</m:mo><m:mn>333.33</m:mn>')), [3333.33, 3, 333.33]);
+  assert.deepEqual(mathmlValues(math('<m:mn>84</m:mn><m:mo>,</m:mo><m:mn>000</m:mn>')), [84000]);
+  assert.deepEqual(mathmlValues(math('<m:mn>7</m:mn><m:mo>,</m:mo><m:mo>−</m:mo><m:mn>21</m:mn>')), [7, -21]);
+});
+
+test('a page key is its values; a symbolic key is not judged', () => {
+  assert.deepEqual(answerValues('-\\frac{3}{8}'), [-0.375]);
+  assert.deepEqual(answerValues('2\\frac{1}{2}'), [2.5]);
+  assert.deepEqual(answerValues('-2,-8'), [-2, -8]);
+  assert.deepEqual(answerValues('(12,8)'), [12, 8]);
+  assert.deepEqual(answerValues('207500,222500'), [207500, 222500]);
+  assert.equal(answerValues('-x-3'), null);
+  assert.equal(answerValues('(10,\\infty)'), null);
+  assert.equal(answerValues('\\sqrt{2}'), null);
+  assert.deepEqual(latexNumbers('Solve $3(w + 5)^2 = 27$ and $\\frac{1}{2}$, two decimal places, \\$25,000'), [3, 5, 2, 27, 1, 2, 0.5, 2, 25000]);
+  assert.deepEqual(latexShape('$a_n = 3^n + 4$ and $\\tfrac{n!}{(n+1)!}$ at $30^\\circ$'), [1, 1, 0, 2]);
+});
+
+test('values agree when one is the other rounded to its printed places, and not otherwise', () => {
+  assert.ok(valuesAgree(165 / 74, 2.2));
+  assert.ok(valuesAgree(18.1, 18));
+  assert.ok(valuesAgree(0.375, 3 / 8));
+  assert.ok(!valuesAgree(5.4, 5.5));
+  assert.ok(!valuesAgree(7.2, 3.2));
+  assert.ok(!valuesAgree(155, 156));
+});
+
+const MATH_MODULE = `<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<content>
+<exercise id="ex-example"><problem><para>Write the first five terms of the sequence whose general term is <m:math><m:msub><m:mi>a</m:mi><m:mi>n</m:mi></m:msub><m:mo>=</m:mo><m:mn>4</m:mn><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>3</m:mn></m:math>.</para></problem>
+<solution><para>The first five terms are <m:math><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>13</m:mn><m:mo>,</m:mo><m:mn>17</m:mn></m:math>.</para></solution></exercise>
+<exercise id="ex-field"><problem><para>The distance between opposite corners of a rectangular field is four more than the width of the field. The length of the field is twice its width. Find the distance between the opposite corners. Round to the nearest tenth.</para></problem>
+<solution><para>The distance to the opposite corner is 3.2.</para></solution></exercise>
+<exercise id="ex-stamps"><problem><para>Eric paid $19.88 for stamps. The number of 49-cent stamps was eight more than twice the number of 35-cent stamps. How many of each did he buy?</para></problem>
+<solution><para>Eric bought thirty-two 49-cent stamps and twelve 35-cent stamps.</para></solution></exercise>
+<exercise id="ex-system"><problem><para>Translate to a system of equations: the sum of two numbers is negative twenty-three. One number is 7 less than the other.</para></problem>
+<solution><para><m:math><m:mi>m</m:mi><m:mo>+</m:mo><m:mi>n</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>23</m:mn></m:math>, <m:math><m:mi>m</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>7</m:mn></m:math></para></solution></exercise>
+<exercise id="ex-graph"><problem><para>Find the slope of the line shown.</para><media alt="a line"><image src="line.png"/></media></problem>
+<solution><para>The slope is 2.</para></solution></exercise>
+</content></document>`;
+
+test('a fillin is confirmed by the source solution, matched by prose, numbers in order, and math shape', () => {
+  const source = readModule(MATH_MODULE);
+  const sequence = (formula, answer) => judgeFillin({ question: `Write the first five terms of the sequence whose general term is $a_n=${formula}$. Enter the terms separated by commas.`, answer }, source);
+  assert.equal(sequence('4n-3', '1,5,9,13,17').status, 'confirmed');
+  assert.equal(sequence('4n-3', '1,5,9,13,18').status, 'key-differs');
+  // Same words, same numbers, different order or shape: a page variant, not this exercise.
+  assert.equal(sequence('3n-4', '-1,2,5,8,11').status, 'unmatched');
+  assert.equal(sequence('3^n+4', '7,13,31,85,247').status, 'unmatched');
+});
+
+test('a fillin rounds against the source, reads number words, and is not judged from a figure or a restated problem', () => {
+  const source = readModule(MATH_MODULE);
+  const field = (answer) => judgeFillin({ question: 'The distance between opposite corners of a rectangular field is four more than the width of the field. The length of the field is twice its width. Find the distance between the opposite corners. Round to the nearest tenth.', answer }, source);
+  assert.equal(field('3.2').status, 'confirmed');
+  assert.equal(field('7.2').status, 'key-differs');
+  assert.match(field('7.2').detail, /ex-field/);
+  const stamps = judgeFillin({ question: 'Eric paid \\$19.88 for stamps. The number of 49-cent stamps was eight more than twice the number of 35-cent stamps. How many of each did he buy? Enter the 49-cent count, then the 35-cent count.', answer: '32, 12' }, source);
+  assert.equal(stamps.status, 'confirmed');
+  const system = judgeFillin({ question: 'Translate to a system of equations and solve: the sum of two numbers is negative twenty-three. One number is 7 less than the other. Find the smaller.', answer: '-15' }, source);
+  assert.equal(system.status, 'unkeyed');
+  assert.equal(judgeFillin({ question: 'Find the slope of the line shown.', answer: '\\frac{2}{5}' }, source).status, 'figure');
+  assert.equal(judgeFillin({ question: 'Using the map above, find the distance.', answer: '350' }, source).status, 'figure');
+  assert.equal(judgeFillin({ question: 'Find the slope of the line through $(1,2)$ and $(3,4)$.', answer: '1' }, source).status, 'unmatched');
+  assert.equal(judgeFillin({ question: 'Translate to a system of equations: the sum of two numbers is negative twenty-three. One number is 7 less than the other.', answer: 'm+n=-23' }, source).status, 'symbolic');
 });
 
 /* ---- the corpus ----------------------------------------------------------- */
@@ -243,7 +356,7 @@ test('the corpus carries no undisclosed departure from a source key', {
   // exercise or table.
   assert.equal(
     counts.multiplechoice.disclosed
-      + counts.selfcheck.disclosed + counts.sortbins.disclosed,
+      + counts.selfcheck.disclosed + counts.sortbins.disclosed + counts.fillin.disclosed,
     DISCLOSED_DEVIATIONS.length,
     'every listed deviation is exercised',
   );

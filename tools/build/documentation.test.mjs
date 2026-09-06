@@ -243,6 +243,33 @@ test('the life-sciences knowledge-check playbook documents its quota, unit place
   assert.match(lifeSciences, /===CHECKS===/);
 });
 
+test('the microbiology subject playbook states its lint-backed rules and its answer-key policy', () => {
+  const micro = read('docs/subjects/microbiology.md');
+  const floor = BOOK_RULES['life-health-sciences/microbiology'].practice;
+  const stated = micro.match(/\*\*(\d+) exercises per objective group and (\d+) per section/);
+  assert.ok(stated, 'docs/subjects/microbiology.md must state the practice floor in digits');
+  assert.equal(Number(stated[1]), floor.perObjective);
+  assert.equal(Number(stated[2]), floor.perSection);
+  assert.equal(floor.distinctItems, true, 'microbiology is opted in to distinctItems');
+  assert.match(micro, /`distinctItems`/, 'names the BOOK_RULES flag');
+  // The policy the scan found this book needs and biology never did: the
+  // source prints no answers for its prose questions, so a model answer is
+  // author-written under stated conditions. The chapter-1 pilot then split
+  // how the cross-check reports one: `unkeyed` when the QUESTION transcribes
+  // a source exercise the source does not key (Short Answer, Critical
+  // Thinking), `unmatched` when there is no source exercise at all (a Check
+  // Your Understanding note). Before `unkeyed` existed, the first of those
+  // scored zero coverage against an empty solution and failed the gate, so
+  // the playbook has to name both statuses or an author will read a passing
+  // `unkeyed` as a defect.
+  assert.match(micro, /author-written model\s+answer is allowed only under these conditions/);
+  assert.match(micro, /\*\*`unkeyed`\*\* when it transcribes a source/);
+  assert.match(micro, /\*\*`unmatched`\*\* when it has\s+no source counterpart/);
+  assert.match(micro, /No per-module|Microbiology has none/, 'states that there is no per-module glossary');
+  assert.match(micro, /source:media -- --book microbiology/);
+  assert.match(micro, /## Knowledge checks\n\nNot decided\./, 'the KC placement decision is recorded as open, not silently made');
+});
+
 test('the OpenStax workflow doc documents every pinned bundle', () => {
   const openStaxWorkflow = read('docs/source/openstax-source-workflow.md');
   assert.match(openStaxWorkflow, /report-only connection/);

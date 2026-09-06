@@ -163,7 +163,6 @@ this percentage allows an estimation of the size of the penguin population
 {{< textin
   question="A square made of various materials, used to determine population size and density in slow-moving or stationary organisms, is called a ________."
   answer="quadrat"
-  accept="quadrats"
   hint="Ecologists stake out or place one of this shape to sample plants like daffodils or giant redwoods."
 >}}
 
@@ -189,7 +188,7 @@ Clumped population distributions ensure that at least one member of the populati
 {{< textin
   question="The spatial location of individuals of a given species within a habitat at a particular point in time is called a ________."
   answer="species dispersion pattern"
-  accept="species dispersion patterns|species distribution pattern|species distribution patterns|dispersion pattern|dispersion patterns"
+  accept="species distribution pattern|dispersion pattern"
   hint="Uniform, random, and clumped are the three named arrangements of this kind."
 >}}
 
@@ -220,14 +219,12 @@ life table
 {{< textin
   question="The proportion of a population surviving to the beginning of an age interval that dies during that interval is called the ________."
   answer="mortality rate"
-  accept="mortality rates"
   hint="It's the value in a life table's mortality column, found by dividing deaths by survivors and multiplying by 1000."
 >}}
 
 {{< textin
   question="A table showing the life expectancy of a population member based on its age is called a ________."
   answer="life table"
-  accept="life tables"
   hint="Insurance companies originally developed this actuarial tool to estimate human life expectancy."
 >}}
 
@@ -279,7 +276,6 @@ Type IV
 {{< textin
   question="A graph of the number of surviving population members plotted against the relative age of the member is called a ________."
   answer="survivorship curve"
-  accept="survivorship curves"
   hint="This graph type comes in three named patterns, seen in humans, birds, and trees."
 >}}
 

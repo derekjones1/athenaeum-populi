@@ -129,7 +129,6 @@ Phagocytic autotroph
 {{< textin
   question="A protist that facultatively obtains nutrition by either photoautotrophic or heterotrophic routes, depending on whether sunlight or organic nutrients are available, is called a(n) ________."
   answer="mixotroph"
-  accept="mixotrophs"
   hint="It combines two nutritional strategies in one name."
 >}}
 

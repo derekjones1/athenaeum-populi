@@ -177,21 +177,18 @@ destroy the tight junctions so that it can enter the body between the epithelial
 {{< textin
   question="A protein adherence that seals two adjacent animal cells together so that no material can leak between them is called a ________."
   answer="tight junction"
-  accept="tight junctions"
   hint="Claudins and occludins are the two main proteins that create it."
 >}}
 
 {{< textin
   question="A channel between two adjacent animal cells that allows ions, nutrients, and low molecular weight substances to pass between them, enabling the cells to communicate, is called a ________."
   answer="gap junction"
-  accept="gap junctions"
   hint="Six connexin proteins in each cell's membrane arrange into a donut-shaped connexon that lines this channel."
 >}}
 
 {{< textin
   question="A linkage between adjacent epithelial cells that forms when cadherins in the plasma membrane attach to intermediate filaments is called a ________."
   answer="desmosome"
-  accept="desmosomes"
   hint="It acts like a spot weld holding two cells together in tissues that stretch, such as skin, heart, and muscle."
 >}}
 

@@ -116,7 +116,6 @@ All of the above occur.
 {{< textin
   question="Soil bacteria called rhizobia interact symbiotically with legume roots to form specialized structures, called ________, where nitrogen fixation occurs."
   answer="nodule"
-  accept="nodules"
   hint="These structures give the soybean's roots their bumpy appearance in the photograph above."
 >}}
 

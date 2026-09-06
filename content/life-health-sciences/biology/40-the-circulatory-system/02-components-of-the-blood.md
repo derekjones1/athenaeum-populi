@@ -59,7 +59,7 @@ One reason that HIV poses significant management challenges is because the virus
 
 ## Platelets and Coagulation Factors
 
-Blood must clot to heal wounds and prevent excess blood loss. Small cell fragments called platelets (thrombocytes) are attracted to the wound site where they adhere by extending many projections and releasing their contents. These contents activate other platelets and also interact with other coagulation factors, which convert fibrinogen, a water-soluble protein present in blood serum into fibrin (a non-water soluble protein), causing the blood to clot. Many of the clotting factors require vitamin K to work, and vitamin K deficiency can lead to problems with blood clotting. Many platelets converge and stick together at the wound site forming a platelet plug (also called a fibrin clot), as illustrated below (b). The plug or clot lasts for a number of days and stops the loss of blood. Platelets are formed from the disintegration of larger cells called megakaryocytes, like that shown below (a). For each megakaryocyte, 2000–3000 platelets are formed with 150,000 to 400,000 platelets present in each cubic millimeter of blood. Each platelet is disc shaped and 2–4 μm in diameter. They contain many small vesicles but do not contain a nucleus.
+Blood must clot to heal wounds and prevent excess blood loss. Small cell fragments called platelets (thrombocytes) are attracted to the wound site where they adhere by extending many projections and releasing their contents. These contents activate other platelets and also interact with other coagulation factors, which convert fibrinogen, a water-soluble protein present in blood serum into fibrin (a non-water soluble protein), causing the blood to clot. Many of the clotting factors require vitamin K to work, and vitamin K deficiency can lead to problems with blood clotting. Many platelets converge and stick together at the wound site forming a platelet plug (also called a fibrin clot), as illustrated below (b). The plug or clot lasts for a number of days and stops the loss of blood. Platelets are formed from the disintegration of larger cells called megakaryocytes, like that shown below (a). For each megakaryocyte, 2000–3000 platelets are formed with 150,000 to 400,000 platelets present in each cubic millimeter of blood. Each platelet is disc shaped and 2–4 µm in diameter. They contain many small vesicles but do not contain a nucleus.
 
 {{< mediafigure src="biology/Figure_40_02_04ab" kind="diagram" alt="Two panels: (a) a large, irregularly shaped Megakaryocyte shedding small, spindle-shaped Platelets, some pointed to by a forked leader line; (b) a wedge-shaped cross-section of a blood vessel packed with red blood cells, with a leader line labeling a tangled Fibrin clot at a breach in the vessel wall." longdesc="In panel (a), one leader line labels Megakaryocyte, the single large, irregularly lobed cell at center; a second leader line labeled Platelets forks into two branches, each pointing to one of the many small, spindle-shaped fragments scattered around it. In panel (b), one leader line labels Fibrin clot, a tangled, thread-like mass at a wedge-shaped breach in the vessel wall; the vessel's interior is otherwise filled with numerous unlabeled red blood cells." >}}
 (a) Platelets are formed from large cells called megakaryocytes. The megakaryocyte breaks up into thousands of fragments that become platelets. (b) Platelets are required for clotting of the blood. The platelets collect at a wound site in conjunction with other clotting factors, such as fibrinogen, to form a fibrin clot that prevents blood loss and allows the wound to heal.
@@ -97,9 +97,9 @@ Specific components of the blood include red blood cells, white blood cells, pla
 
 - **plasma** — liquid component of blood that is left after the cells are removed.
 - **platelet** — (also, thrombocyte) small cellular fragment that collects at wounds, cross-reacts with clotting factors, and forms a plug to prevent blood loss.
-- **red blood cell** — small (7–8 μm) biconcave cell without mitochondria (and in mammals without nuclei) that is packed with hemoglobin, giving the cell its red color; transports oxygen through the body.
+- **red blood cell** — small (7–8 µm) biconcave cell without mitochondria (and in mammals without nuclei) that is packed with hemoglobin, giving the cell its red color; transports oxygen through the body.
 - **serum** — plasma without the coagulation factors.
-- **white blood cell** — large (30 μm) cell with nuclei of which there are many types with different roles including the protection of the body from viruses and bacteria, and cleaning up dead cells and other waste.
+- **white blood cell** — large (30 µm) cell with nuclei of which there are many types with different roles including the protection of the body from viruses and bacteria, and cleaning up dead cells and other waste.
 
 ## Practice
 
@@ -126,7 +126,7 @@ none of the above
 {{< textin
   question="A small cellular fragment that collects at wounds and forms a plug to prevent blood loss is called a ________."
   answer="platelet"
-  accept="platelets|thrombocyte|thrombocytes"
+  accept="thrombocyte"
   hint="Megakaryocytes break apart into thousands of these tiny fragments, which converge at a wound to help it clot."
 >}}
 
@@ -168,14 +168,14 @@ they fight disease
 {{< textin
   question="A small biconcave cell packed with hemoglobin that transports oxygen through the body is called a(n) ________."
   answer="red blood cell"
-  accept="red blood cells|erythrocyte|erythrocytes|RBC|RBCs"
+  accept="erythrocyte|RBC"
   hint="In mammals, this cell type lacks a nucleus and mitochondria at maturity, leaving more room for the oxygen-carrying pigment."
 >}}
 
 {{< textin
   question="A large cell with a nucleus that protects the body from viruses and bacteria and cleans up dead cells and waste is called a(n) ________."
   answer="white blood cell"
-  accept="white blood cells|leukocyte|leukocytes|leucocyte|leucocytes|WBC|WBCs"
+  accept="leukocyte|leucocyte|WBC"
   hint="Unlike the oxygen-carrying cells, this type has a nucleus and multiplies continually to fight invaders."
 >}}
 

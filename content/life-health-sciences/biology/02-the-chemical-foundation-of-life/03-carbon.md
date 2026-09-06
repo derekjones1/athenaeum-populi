@@ -273,7 +273,6 @@ four
 {{< textin
   question="A molecule made up of only carbon and hydrogen atoms is called a ________."
   answer="hydrocarbon"
-  accept="hydrocarbons"
   hint="Methane, ethane, and benzene are all examples of this kind of molecule."
 >}}
 
@@ -310,14 +309,12 @@ carbonyl
 {{< textin
   question="A group of atoms that occurs within a molecule and confers a specific chemical property on it is called a ________."
   answer="functional group"
-  accept="functional groups"
   hint="Hydroxyl, methyl, and carboxyl are all examples of this kind of group."
 >}}
 
 {{< textin
   question="A carbon chain or ring in which an atom of another element, such as nitrogen or oxygen, takes the place of one of the backbone carbons is called a ________."
   answer="substituted hydrocarbon"
-  accept="substituted hydrocarbons"
   hint="Pyridine, with a nitrogen in its ring, is an example."
 >}}
 

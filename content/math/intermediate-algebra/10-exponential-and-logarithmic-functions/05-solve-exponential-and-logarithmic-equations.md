@@ -211,7 +211,7 @@ A=Pe^{rt}
 $$
 {{< /callout >}}
 
-**Example 10.43.** Jermael’s parents put $10,000 in investments for his college expenses on his first birthday. They hope the investments will be worth $50,000 when he turns 18. If the interest compounds continuously, approximately what rate of growth will they need to achieve their goal?
+**Example 10.43.** Jermael’s parents put \$10,000 in investments for his college expenses on his first birthday. They hope the investments will be worth \$50,000 when he turns 18. If the interest compounds continuously, approximately what rate of growth will they need to achieve their goal?
 
 **Solution.**
 

@@ -8,7 +8,7 @@
  * bundle: everything this element needs is in the shared components bundle.
  *
  * The shortcode (layouts/shortcodes/textin.html) renders the static shell:
- *   <text-in data-answer="cell" data-accept="cells" data-question="…">
+ *   <text-in data-answer="hypothesis" data-accept="hypotheses" data-question="…">
  *     <div class="ap-textin">
  *       <p class="ap-textin-question">…</p>
  *       <noscript>…</noscript>

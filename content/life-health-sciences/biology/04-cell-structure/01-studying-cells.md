@@ -30,7 +30,7 @@ The optics of a microscope’s lenses change the image orientation that the user
 
 ### Light Microscopes
 
-To give you a sense of cell size, a typical human red blood cell is about eight millionths of a meter or eight micrometers (abbreviated as eight μm) in diameter. A pin head is about two thousandths of a meter (two mm) in diameter. That means about 250 red blood cells could fit on a pinhead.
+To give you a sense of cell size, a typical human red blood cell is about eight millionths of a meter or eight micrometers (abbreviated as eight µm) in diameter. A pin head is about two thousandths of a meter (two mm) in diameter. That means about 250 red blood cells could fit on a pinhead.
 
 Most student microscopes are **light microscopes** (below). Visible light passes and bends through the lens system to enable the user to see the specimen. Light microscopes are advantageous for viewing living organisms, but since individual cells are generally transparent, their components are not distinguishable unless they are colored with special stains. Staining, however, usually kills the cells.
 
@@ -132,14 +132,12 @@ high temperatures
 {{< textin
   question="An instrument that magnifies an object using a beam of visible light that passes and bends through a lens system to visualize a specimen is called a(n) ________."
   answer="light microscope"
-  accept="light microscopes"
   hint="Its light beam does not kill the specimen, unlike the electron-based alternative."
 >}}
 
 {{< textin
   question="An instrument that magnifies an object using an electron beam that passes and bends through a lens system to visualize a specimen is called a(n) ________."
   answer="electron microscope"
-  accept="electron microscopes"
   hint="It requires a vacuum for its electron beam, so it cannot image a living specimen."
 >}}
 

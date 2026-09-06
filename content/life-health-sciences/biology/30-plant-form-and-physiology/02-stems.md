@@ -324,7 +324,7 @@ conditions that prevailed during each growing season
 {{< textin
   question="In woody plants, especially trees, ________ may form as growth slows at the end of each season."
   answer="annual rings"
-  accept="annual ring|annual growth rings|annual growth ring|growth rings|growth ring"
+  accept="annual ring|annual growth ring|growth ring"
   hint="Counting these bands, and examining their size and cell-wall thickness, can reveal a tree's age and past growing conditions."
 >}}
 

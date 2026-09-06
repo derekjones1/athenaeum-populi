@@ -186,7 +186,6 @@ temperature
 {{< textin
   question="An ecological community of plants, animals, and other organisms that is adapted to a characteristic set of environmental conditions is called a ________."
   answer="biome"
-  accept="biomes"
   hint="The abiotic factors this section describes — light, temperature, water, nutrients — together determine which large-scale community of this kind exists in a given place."
 >}}
 

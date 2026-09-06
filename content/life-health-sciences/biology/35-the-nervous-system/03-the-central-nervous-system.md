@@ -175,7 +175,6 @@ pituitary
 {{< textin
   question="A membrane that covers and protects the central nervous system is called a ________."
   answer="meninge"
-  accept="meninges"
   hint="There are three of these layers around the brain and spinal cord, named for how hard, web-like, or soft each one is."
 >}}
 

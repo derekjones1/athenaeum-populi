@@ -191,7 +191,6 @@ terrestrial ecosystems are very diverse and are grouped based on their species a
 {{< textin
   question="A community of living organisms together with their interactions with the surrounding, nonliving physical environment is called a(n) ________."
   answer="ecosystem"
-  accept="ecosystems"
   hint="This term names the whole system — the organisms plus the nonliving surroundings they interact with — not just the organisms by themselves."
 >}}
 
@@ -218,7 +217,6 @@ since the ecologist is populating the environment, they can control the variable
 {{< textin
   question="A portion of a natural setting that is partitioned off and used for controlled experiments, without fully recreating the ecosystem indoors, is called a ________."
   answer="mesocosm"
-  accept="mesocosms"
   hint="This is the option that still uses a piece of the original natural setting, rather than rebuilding an ecosystem entirely in an indoor or outdoor laboratory."
 >}}
 
@@ -252,14 +250,13 @@ analytical modeling predicts how the ecosystem's relationships change in respons
 {{< textin
   question="An ecosystem model built from flow charts that show how the living and nonliving parts of a system interact is called a(n) ________."
   answer="conceptual model"
-  accept="compartment model|conceptual models|compartment models"
+  accept="compartment model"
   hint="This is the descriptive, flow-chart type of model, not the kind built from mathematical formulas or from complex computer code."
 >}}
 
 {{< textin
   question="An ecosystem model built using complex computer programs to holistically predict how disturbances will affect a system is called a(n) ________."
   answer="simulation model"
-  accept="simulation models"
   hint="This is the most computationally demanding of the three model types, capable of running individual-based modeling of every organism."
 >}}
 

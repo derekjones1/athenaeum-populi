@@ -195,7 +195,7 @@ these features allow gases to easily diffuse across the cells
 {{< textin
   question="The terminal region of the lung where gas exchange occurs is called a(n) ________."
   answer="alveolus"
-  accept="alveoli|air sac|air sacs"
+  accept="alveoli|air sac"
   hint="This is the single tiny sac at the very end of the branching airway — millions of them together give the lung its sponge-like texture."
 >}}
 

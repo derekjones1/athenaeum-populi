@@ -145,7 +145,7 @@ different organisms will make different amounts of ATP using their electron tran
 {{< textin
   question="A nonprotein molecule bound to a protein that facilitates the protein's function is called a ________."
   answer="prosthetic group"
-  accept="prosthetic groups|prosthetic cofactor|prosthetic cofactors"
+  accept="prosthetic cofactor"
   hint="FMN, in complex I, is one example of this kind of nonpeptide helper molecule."
 >}}
 
@@ -165,7 +165,7 @@ the movement of glucose through the cell membrane
 {{< textin
   question="The membrane-embedded protein complex that adds a phosphate to ADP using energy from protons diffusing through it is called ________."
   answer="ATP synthase"
-  accept="F1F0 ATP synthase|ATP synthases"
+  accept="F1F0 ATP synthase"
   hint="Hydrogen ions turn this molecular machine as they flow down their electrochemical gradient into the matrix."
 >}}
 

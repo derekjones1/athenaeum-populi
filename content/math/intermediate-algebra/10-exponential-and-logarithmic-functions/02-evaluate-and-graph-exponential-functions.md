@@ -496,14 +496,14 @@ Exponential growth is typically seen in the growth of populations of humans or a
 |  | The researcher will find 40,343 viruses. |
 
 {{< fillin
-  question="A bacteria culture starts with 50 bacteria and grows by $15\%$ each hour. How many bacteria will there be after 8 hours?"
+  question="A bacteria culture starts with 50 bacteria and grows continuously at a rate of $15\%$ per hour, so $A=A_0e^{rt}$. How many bacteria will there be after 8 hours? Round to the nearest whole bacterium."
   answer="166"
   answerDisplay="166 bacteria"
   hint="This culture grows continuously, so use $A=A_0e^{rt}$ with $A_0=50$, $r=0.15$, and $t=8$, then round to the nearest whole bacterium."
 >}}
 
 {{< fillin
-  question="A virus culture starts with 100 viruses and grows by $10\%$ each hour. How many viruses will there be after 24 hours?"
+  question="A virus culture starts with 100 viruses and grows continuously at a rate of $10\%$ per hour, so $A=A_0e^{rt}$. How many viruses will there be after 24 hours? Round to the nearest whole virus."
   answer="1102"
   answerDisplay="$1{,}102$ viruses"
   hint="This culture grows continuously, so use $A=A_0e^{rt}$ with $A_0=100$, $r=0.10$, and $t=24$, then round to the nearest whole virus."

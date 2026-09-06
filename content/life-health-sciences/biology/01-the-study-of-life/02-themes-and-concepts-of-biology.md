@@ -483,7 +483,6 @@ at the branch tips
 {{< textin
   question="A diagram that shows the evolutionary relationships among species, based on their shared or differing genetic or physical traits, is called a ________."
   answer="phylogenetic tree"
-  accept="phylogenetic trees"
   hint="Woese built one of these for Bacteria, Archaea, and Eukarya."
 >}}
 

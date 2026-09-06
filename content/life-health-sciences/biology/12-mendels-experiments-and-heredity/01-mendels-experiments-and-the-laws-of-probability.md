@@ -172,7 +172,7 @@ prevent accidental or unintentional fertilizations
 {{< textin
   question="The process of mating two individuals that differ, with the goal of achieving a certain characteristic in their offspring, is called ________."
   answer="hybridization"
-  accept="hybridizations|hybridisation|hybridisations"
+  accept="hybridisation"
   hint="Mendel performed this by manually transferring pollen between two true-breeding pea plants that differed in a trait."
 >}}
 
@@ -212,7 +212,7 @@ F₁ and F₂ offspring would be analyzed to determine if offspring traits were 
 {{< textin
   question="A trait that produces the same physical appearance in an individual whether it is present as two copies or paired with a different, non-expressed version of the trait is described as ________."
   answer="dominant"
-  accept="dominant trait|dominant traits"
+  accept="dominant trait"
   hint="Mendel found this kind of trait was inherited unchanged, appearing in 100 percent of the F₁ generation whenever it was one of the two traits crossed."
 >}}
 

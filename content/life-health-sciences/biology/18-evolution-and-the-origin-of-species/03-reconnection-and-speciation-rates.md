@@ -100,7 +100,6 @@ bringing all organisms under the umbrella of one species
 {{< textin
   question="The area where two closely related species continue to interact and reproduce with each other, producing offspring with mixed traits, is called a ________."
   answer="hybrid zone"
-  accept="hybrid zones"
   hint="It is where reinforcement, fusion, or stability plays out after speciation."
 >}}
 

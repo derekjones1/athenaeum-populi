@@ -267,7 +267,6 @@ stimulates TSH release.
 {{< textin
   question="A corticosteroid that affects ion and water balance is called a ________."
   answer="mineralocorticoid"
-  accept="mineralocorticoids"
   hint="Aldosterone is the section's example of this class of adrenal-cortex hormone."
 >}}
 
@@ -319,14 +318,14 @@ contractions increase in intensity as blood levels of oxytocin rise until the bi
 {{< textin
   question="A hormone that regulates the gonads, including FSH and LH, is called a ________."
   answer="gonadotropin"
-  accept="gonadotropins|gonadotrophin|gonadotrophins"
+  accept="gonadotrophin"
   hint="This category of pituitary hormone is named for the reproductive organs it acts on."
 >}}
 
 {{< textin
   question="A group of steroid hormones, including estradiol, that are produced by the ovaries and control the maturation of the ova is called ________."
   answer="estrogens"
-  accept="estrogen|oestrogens|oestrogen"
+  accept="estrogen|oestrogen"
   hint="Low levels of this hormone group have been connected to osteoporosis, while high levels correlate with increased cancer risk."
 >}}
 

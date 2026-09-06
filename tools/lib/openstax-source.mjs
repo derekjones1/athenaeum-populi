@@ -12,6 +12,13 @@ import { mathSpans, parseFrontmatter, shortcodeParams, walkMarkdown } from './co
 // content primitives so the structure validator and this audit cannot drift.
 export { parseFrontmatter };
 
+// Every `<section class>` a pinned OpenStax module uses for something other
+// than instructional prose. The math bundles and Biology 2e use the first
+// eight; Microbiology puts its objectives in a `learning-objectives` section
+// (its `<md:abstract/>` is empty — see `parseModuleXml`) and adds four
+// end-matter exercise classes of its own. A class missing here surfaces as a
+// `heading-needs-review` on every section of the book, so keep this list the
+// union of every bundle's classes, not the current bundle's.
 const EXCLUDED_CORE_SECTION_CLASSES = new Set([
   'key-concepts',
   'section-exercises',
@@ -21,6 +28,11 @@ const EXCLUDED_CORE_SECTION_CLASSES = new Set([
   'critical-thinking',
   'visual-exercise',
   'free-response',
+  'learning-objectives',
+  'fill-in-the-blank',
+  'true-false',
+  'matching',
+  'short-answer',
 ]);
 
 const MATCH_STOPWORDS = new Set([
@@ -478,10 +490,21 @@ export function parseModuleXml(xml) {
   const metadata = firstElement(document, 'metadata');
   const content = firstElement(document, 'content');
   if (!metadata || !content) throw new Error('CNXML needs metadata and content');
+  // Objectives live in `<md:abstract>` (math bundles, Biology 2e) or, when
+  // that element is empty, in the first `<section class="learning-objectives">`
+  // of the content (Microbiology). Either way they are the list items.
   const abstract = firstElement(metadata, 'abstract');
-  const objectives = abstract
+  let objectives = abstract
     ? descendants(abstract, (node) => localName(node) === 'item').map((item) => normalizeWhitespace(textContent(item)))
     : [];
+  if (!objectives.length) {
+    const objectiveSection = elementChildren(content, 'section')
+      .find((section) => section.attributes.class === 'learning-objectives');
+    if (objectiveSection) {
+      objectives = descendants(objectiveSection, (node) => localName(node) === 'item')
+        .map((item) => normalizeWhitespace(textContent(item)));
+    }
+  }
   const sections = coreInstructionalSections(content);
   const tryNotes = sections.flatMap((section) => descendants(
     section,
@@ -1044,6 +1067,20 @@ export function verifyCommittedSourceMap(repositoryRoot, lock = loadSourceLock(r
     if (summary.bundle !== config.bundleKey) errors.push(`source map book ${bookKey} is attributed to bundle ${summary.bundle}`);
     if (summary.contentPath !== config.contentPath) {
       errors.push(`source map book ${bookKey} records contentPath ${summary.contentPath}, lock says ${config.contentPath}`);
+    }
+    // The cover's `authoring_status` is a copy of the lock's `authoringStatus`
+    // (the cover is what the site and validate-content read; the lock is what
+    // the audit reads). A complete book's cover carries no such key; any other
+    // status must match the lock word for word, so the two cannot drift.
+    const coverPath = path.join(repositoryRoot, config.contentPath, '_index.md');
+    if (existsSync(coverPath)) {
+      const coverStatus = parseFrontmatter(readFileSync(coverPath, 'utf8')).attributes.authoring_status ?? null;
+      const expectedStatus = config.authoringStatus === 'complete' ? null : config.authoringStatus;
+      if (coverStatus !== expectedStatus) {
+        errors.push(`${config.contentPath}/_index.md: cover authoring_status ${JSON.stringify(coverStatus)} `
+          + `does not match the source lock's ${JSON.stringify(config.authoringStatus)} for ${bookKey}`
+          + (expectedStatus === null ? ' (a complete book declares none)' : ''));
+      }
     }
     // Units are generated from the pinned collection, so offline the check is
     // structural: every chapter 1..upstreamChapters in exactly one unit, units

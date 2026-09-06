@@ -298,7 +298,7 @@ coordinates are $(0, 0)$ is the origin. (e) Since $x = 0$, the point whose
 coordinates are $(0, -1)$ is on the $y$-axis.
 
 {{< fillin
-  question="A point has coordinates $(0, -3)$. Which axis does it lie on?"
+  question="A point has coordinates $(0, -3)$. Which axis does it lie on? Enter x or y."
   answer="y"
   hint="If the $x$-coordinate is $0$, the point lies straight up or down from the origin."
 >}}

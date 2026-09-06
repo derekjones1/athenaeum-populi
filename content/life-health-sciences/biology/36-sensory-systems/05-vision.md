@@ -281,14 +281,12 @@ this activates the bipolar cells
 {{< textin
   question="The strongly photosensitive, achromatic photoreceptor located in the outer edges of the retina that detects dim light and supports peripheral and nighttime vision is called a ________."
   answer="rod"
-  accept="rods"
   hint="This photoreceptor type outnumbers its color-detecting counterpart at the retina's edges but is scarce at the fovea."
 >}}
 
 {{< textin
   question="The weakly photosensitive, chromatic photoreceptor located near the center of the retina that responds to bright light and supports daytime color vision is called a ________."
   answer="cone"
-  accept="cones"
   hint="This photoreceptor type is concentrated at the fovea and comes in three varieties tuned to different wavelengths."
 >}}
 

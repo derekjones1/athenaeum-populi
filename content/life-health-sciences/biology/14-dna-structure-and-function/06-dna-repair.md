@@ -97,28 +97,28 @@ deletion of an "A" in the 12th position of the coding region
 {{< textin
   question="A mutation that results from exposure to chemicals, UV rays, x-rays, or some other environmental agent is called a(n) ________."
   answer="induced mutation"
-  accept="induced|induced mutations"
+  accept="induced"
   hint="Charlotte Auerbach and J.M Robson discovered that mustard gas can cause this kind of mutation."
 >}}
 
 {{< textin
   question="A mutation that occurs without any exposure to an environmental agent, as a result of natural reactions taking place within the body, is called a(n) ________."
   answer="spontaneous mutation"
-  accept="spontaneous|spontaneous mutations"
+  accept="spontaneous"
   hint="It is the opposite category from a mutation caused by chemicals, UV rays, or x-rays."
 >}}
 
 {{< textin
   question="Replacing a purine with a different purine, or a pyrimidine with a different pyrimidine, is a ________."
   answer="transition substitution"
-  accept="transition|transitions"
+  accept="transition"
   hint="The text's example is a purine such as adenine being replaced by the purine guanine."
 >}}
 
 {{< textin
   question="Replacing a purine with a pyrimidine, or a pyrimidine with a purine, is a ________."
   answer="transversion substitution"
-  accept="transversion|transversions"
+  accept="transversion"
   hint="The text's example is cytosine, a pyrimidine, being replaced by adenine, a purine."
 >}}
 
@@ -167,14 +167,12 @@ gene function may be affected or it may not be expressed
 {{< textin
   question="The type of repair mechanism in which mismatched bases are removed after replication is called ________."
   answer="mismatch repair"
-  accept="mismatch repairs"
   hint="In E. coli, this repair machinery can tell the two strands apart because only the parental strand carries methyl groups."
 >}}
 
 {{< textin
   question="The type of DNA repair mechanism in which the wrong base, along with a few nucleotides upstream or downstream, is removed is called ________."
   answer="nucleotide excision repair"
-  accept="nucleotide excision repairs"
   hint="This mechanism is often used to remove thymine dimers formed after UV exposure."
 >}}
 

@@ -129,7 +129,6 @@ G0 checkpoint
 {{< textin
   question="A mechanism that monitors a eukaryotic cell's preparedness to advance through the various cell-cycle stages is called a cell-cycle ________."
   answer="checkpoint"
-  accept="checkpoints"
   hint="Three of these occur in the cell cycle: near the end of G1, at the G2/M transition, and during metaphase."
 >}}
 

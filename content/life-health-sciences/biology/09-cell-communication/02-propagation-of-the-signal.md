@@ -156,7 +156,6 @@ the cell will continue to proliferate and be resistant to cell death (apoptosis)
 {{< textin
   question="An enzyme that catalyzes the transfer of a phosphate group from ATP to another molecule is called a ________."
   answer="kinase"
-  accept="kinases"
   hint="Various ones are named for the substrate they phosphorylate."
 >}}
 
@@ -185,7 +184,6 @@ signal integration can also change the end result of signaling
 {{< textin
   question="A small, non-protein molecule that propagates a signal within the cell after activation of a receptor causes its release is called a ________."
   answer="second messenger"
-  accept="second messengers"
   hint="Calcium ions, cAMP, DAG, and IP₃ are all examples."
 >}}
 

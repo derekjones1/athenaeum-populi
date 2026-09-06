@@ -187,7 +187,6 @@ animals and fungi store polysaccharides as glycogen, while plants store them as 
 {{< textin
   question="A general term for a unicellular fungus is a ________."
   answer="yeast"
-  accept="yeasts"
   hint="Saccharomyces and Candida are common examples of this kind of unicellular fungus."
 >}}
 
@@ -245,7 +244,7 @@ having a large surface area increases the amount of digested molecules that are 
 {{< textin
   question="An organism that derives its nutrients from decaying organic matter is called a ________."
   answer="saprobe"
-  accept="saprobes|saprophyte|saprophytes"
+  accept="saprophyte"
   hint="Fungi that break down dead wood's cellulose and lignin play this ecological role."
 >}}
 

@@ -183,7 +183,6 @@ interior or exterior, depending on the particular cell
 {{< textin
   question="An external structure that enables a prokaryote to attach to surfaces and protects it from dehydration is called a ________."
   answer="capsule"
-  accept="capsules"
   hint="It sits outside the cell wall and also helps resist attack by phagocytic cells."
 >}}
 
@@ -197,7 +196,7 @@ interior or exterior, depending on the particular cell
 {{< textin
   question="A protein layer found on the outer surface of both archaeal and bacterial cell walls is called the ________."
   answer="S-layer"
-  accept="S-layer protein|S-layer proteins|surface layer"
+  accept="S-layer protein|surface layer"
   hint="Its name is abbreviated with a capital letter and a hyphen."
 >}}
 
@@ -328,7 +327,6 @@ the gram stain detects peptidoglycan
 {{< textin
   question="A polymer associated with the cell wall of Gram-positive bacteria, sometimes linked to membrane lipids to form a lipid-anchored form, is called ________."
   answer="teichoic acid"
-  accept="teichoic acids"
   hint="Its lipid-linked form anchors the cell wall to the cell membrane."
 >}}
 

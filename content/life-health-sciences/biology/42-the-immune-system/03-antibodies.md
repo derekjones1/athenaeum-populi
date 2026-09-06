@@ -154,7 +154,7 @@ immune memory
 {{< textin
   question="A protein produced by plasma cells after stimulation by an antigen is called a(n) ________."
   answer="antibody"
-  accept="antibodies|immunoglobulin|immunoglobulins|Ig"
+  accept="antibodies|immunoglobulin|Ig"
   hint="Each of this molecule's five classes is denoted by an abbreviation ending in a different letter, such as one ending in M or one ending in G."
 >}}
 

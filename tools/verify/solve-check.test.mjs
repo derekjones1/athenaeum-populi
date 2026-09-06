@@ -4,7 +4,7 @@ import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
-import { compareAnswers, emitPackets, gradeAnswer, packetItem } from './solve-check.mjs';
+import { compareAnswers, emitPackets, gradeAnswer, isResidualFillin, maskedContext, packetItem } from './solve-check.mjs';
 import { extractExercises } from './answer-ledger.mjs';
 
 const TOOL = new URL('./solve-check.mjs', import.meta.url).pathname;
@@ -34,6 +34,13 @@ cytochrome complex
 {{< selfcheck question="Not handed to the solver." >}}
 Model answer.
 {{< /selfcheck >}}
+
+{{< fillin
+  question="Jaime has \\$2.60 in dimes and nickels. The number of dimes is 14 more than the number of nickels. Enter the number of nickels, then dimes."
+  answer="8,22"
+  answerMode="unordered"
+  hint="Let n be the nickels."
+>}}
 `;
 
 function scratch() {
@@ -63,6 +70,52 @@ test('a packet carries the question and options only — never the key, accept l
   assert.doesNotMatch(serialized, /carotenoids/);
 });
 
+test('a fillin packet carries the question and the answer shape — never the key or hint — and is graded by the math grader', () => {
+  const fillin = exercisesIn(scratch()).find((exercise) => exercise.kind === 'fillin');
+  const item = packetItem(fillin);
+  assert.equal(item.answerMode, 'unordered');
+  assert.ok(!('answer' in item) && !('hint' in item));
+  assert.ok(!JSON.stringify(item).includes('8,22') && !JSON.stringify(item).includes('Let n be'));
+  assert.equal(gradeAnswer(fillin, '22,8').status, 'agrees');
+  assert.equal(gradeAnswer(fillin, '8, 22').status, 'agrees');
+  assert.equal(gradeAnswer(fillin, '8,21').status, 'disagrees');
+  assert.equal(gradeAnswer(fillin, '').status, 'unrecognized');
+});
+
+test('the residual is the fill-ins no mechanical reading confirmed and no record explains', () => {
+  const [mechanical, wordy] = [
+    { kind: 'fillin', hash: 'a', path: 'content/math/x.md', line: 1, params: { question: 'Solve: $2x=6$.', answer: '3' } },
+    { kind: 'fillin', hash: 'b', path: 'content/math/x.md', line: 9, params: { question: 'Jaime has 8 nickels and 22 dimes. How many coins?', answer: '30' } },
+  ];
+  const ledger = { entries: { b: { verdict: 'ok' } } };
+  const empty = new Map();
+  assert.equal(isResidualFillin(mechanical, { sourceStatus: empty, ledger }), false, 'verify-answers reads it');
+  assert.equal(isResidualFillin(wordy, { sourceStatus: empty, ledger }), true);
+  assert.equal(isResidualFillin(wordy, { sourceStatus: new Map([['content/math/x.md:9', 'confirmed']]), ledger }), false, 'the source solution confirmed it');
+  assert.equal(isResidualFillin(wordy, { sourceStatus: new Map([['content/math/x.md:9', 'unmatched']]), ledger }), true);
+  assert.equal(isResidualFillin(wordy, { sourceStatus: empty, ledger: { entries: { b: { verdict: 'ok', note: 'derived: 8+22' } } } }), false, 'a derivation note is a third reading');
+  assert.equal(isResidualFillin(wordy, { sourceStatus: empty, ledger: { entries: { b: { verdict: 'ok', solved: { by: 'x', result: 'agrees' } } } } }), false);
+  assert.equal(isResidualFillin({ ...wordy, kind: 'textin' }, { sourceStatus: empty, ledger }), false);
+});
+
+test('page context above an item carries prose and earlier questions, never a key, accept list, hint, or model answer', () => {
+  const context = maskedContext(PAGE, PAGE.split('\n').length, 80);
+  assert.doesNotMatch(context, /photosystem I"|carotenoid|A hint the solver|Another hint|Model answer|8,22|Let n be/);
+  assert.match(context, /Which complex is not involved/);
+  assert.match(context, /disposes of excess energy/);
+  assert.match(context, /model answer removed/);
+  const dir = scratch();
+  const previous = process.cwd();
+  process.chdir(dir);
+  try {
+    const [items] = emitPackets('content', { context: 80 }).values();
+    assert.ok(items.every((item) => typeof item.pageContext === 'string'));
+    assert.doesNotMatch(JSON.stringify(items), /carotenoid"|8,22|Let n be/);
+    const [onlyOne] = emitPackets('content', { only: new Set([items[2].hash]) }).values();
+    assert.deepEqual(onlyOne.map((item) => item.hash), [items[2].hash]);
+  } finally { process.chdir(previous); }
+});
+
 test('emit groups packets by page and leaves self-checks out', () => {
   const dir = scratch();
   const previous = process.cwd();
@@ -71,7 +124,7 @@ test('emit groups packets by page and leaves self-checks out', () => {
     const packets = emitPackets('content');
     assert.equal(packets.size, 1);
     const [items] = packets.values();
-    assert.deepEqual(items.map((i) => i.kind), ['multiplechoice', 'textin']);
+    assert.deepEqual(items.map((i) => i.kind), ['multiplechoice', 'textin', 'fillin']);
   } finally { process.chdir(previous); }
 });
 

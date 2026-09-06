@@ -147,14 +147,12 @@ the cell loses a positive charge at every cycle of the pump
 {{< textin
   question="The combined concentration difference and electrical charge difference that act on an ion across a membrane are together called its ________."
   answer="electrochemical gradient"
-  accept="electrochemical gradients"
   hint="It is the sum of two separate forces: where the ion is more concentrated, and which side of the membrane is more positively or negatively charged."
 >}}
 
 {{< textin
   question="A pump that creates a charge imbalance across the membrane, contributing to the membrane potential, is called a(n) ________."
   answer="electrogenic pump"
-  accept="electrogenic pumps"
   hint="The sodium-potassium pump described in this section is a specific example — three positive ions leave for every two that enter."
 >}}
 
@@ -199,21 +197,18 @@ the NCX is a secondary active transport process
 {{< textin
   question="A carrier protein that transports only one specific ion or molecule is called a(n) ________."
   answer="uniporter"
-  accept="uniporters"
   hint="Its name reflects that it carries a single kind of cargo, unlike the two-substance carriers described alongside it."
 >}}
 
 {{< textin
   question="A carrier protein that transports two different ions or molecules together in the same direction is called a(n) ________."
   answer="symporter"
-  accept="symporters"
   hint="Contrast its shared direction of travel with the carrier that sends its two substances opposite ways."
 >}}
 
 {{< textin
   question="A carrier protein that transports two different ions or molecules in opposite directions is called a(n) ________."
   answer="antiporter"
-  accept="antiporters"
   hint="The sodium-potassium pump is a well-known example: it moves sodium one way and potassium the other."
 >}}
 

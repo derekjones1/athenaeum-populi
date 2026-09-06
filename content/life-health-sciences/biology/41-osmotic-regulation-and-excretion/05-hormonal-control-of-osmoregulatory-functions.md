@@ -147,7 +147,7 @@ thyroxine
 
 {{< textin
   question="A compound that increases the diameter of blood vessels is called a ________."
-  answer="vasodilator" accept="vasodilators"
+  answer="vasodilator"
   hint="Atrial natriuretic peptide has this effect on blood vessels; the opposite effect would narrow them rather than widen them."
 >}}
 

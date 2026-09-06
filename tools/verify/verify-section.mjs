@@ -20,6 +20,11 @@
  *   9. {{< mediafigure >}}: src resolves to a vendored manifest entry, alt
  *      is present
  *
+ * After the checks, a section page (one with a `## Practice` heading) prints
+ * an informational `facts:` panel — figure/selfcheck/practice-item/key-term/
+ * cross-link counts — never a failure; compare it against the footer's
+ * `Changes:` counts before reporting a discrepancy.
+ *
  * Steps 1–2 are the pass `npm run lint` makes over the whole corpus;
  * verify-all passes `--skip-lint` so `npm test` runs them once, not twice.
  * An author's per-page run keeps them.
@@ -101,6 +106,55 @@ function propMath(where, name, val) {
     try { katex.renderToString(tex, { throwOnError: true, strict: 'ignore' }); }
     catch (e) { bad(`${where}: ${name} math "$${tex.slice(0, 40)}$" fails KaTeX — ${e.message.slice(0, 60)}`); }
   }
+}
+
+/**
+ * The informational `facts:` panel for one section page, or `null` when the
+ * page has no `## Practice` heading (a math or index page). Splits the page
+ * at that heading so a body selfcheck (a Check Your Understanding) is
+ * counted separately from a Practice-block one; every other count reads the
+ * whole page (a figure can appear anywhere).
+ */
+function factsPanel(src, interactiveSrc) {
+  const practiceIndex = src.search(/^##[ \t]+Practice\b/m);
+  if (practiceIndex === -1) return null;
+  const bodySrc = interactiveSrc.slice(0, practiceIndex);
+  const practiceSrc = interactiveSrc.slice(practiceIndex);
+
+  const figures = [...shortcodes(interactiveSrc, 'mediafigure')];
+  const byKind = new Map();
+  const longdescStems = [];
+  for (const { params: p } of figures) {
+    const kind = p.kind || 'unspecified';
+    byKind.set(kind, (byKind.get(kind) || 0) + 1);
+    if ((p.longdesc || '').trim()) {
+      const stem = (p.src || '').split('/').pop();
+      if (stem) longdescStems.push(stem);
+    }
+  }
+  const kindPart = [...byKind.entries()].map(([kind, n]) => `${kind} ${n}`).join(', ');
+  const longdescPart = `longdesc ${longdescStems.length}`
+    + (longdescStems.length ? `: ${longdescStems.join(', ')}` : '');
+
+  const bodySelfchecks = [...shortcodes(bodySrc, 'selfcheck')].filter((sc) => sc.closed).length;
+  const practiceSelfchecks = [...shortcodes(practiceSrc, 'selfcheck')].filter((sc) => sc.closed).length;
+  const multiplechoice = [...shortcodes(practiceSrc, 'multiplechoice')].filter((sc) => sc.closed).length;
+  const textin = [...shortcodes(practiceSrc, 'textin')].length;
+  const sortbins = [...shortcodes(practiceSrc, 'sortbins')].filter((sc) => sc.closed).length;
+  const practiceTotal = multiplechoice + textin + practiceSelfchecks + sortbins;
+
+  const keyTerms = src.match(/\n##[ \t]+Key terms\b([\s\S]*?)(?=\n##[ \t]|$)/);
+  const keyTermsCount = keyTerms ? (keyTerms[1].match(/^-\s+\*\*/gm) || []).length : 0;
+
+  const crossLinks = [...src.matchAll(/\[[^\]]*\]\((\/[^)\s]*)\)/g)].length;
+
+  return `  facts: figures ${figures.length} (${kindPart}, ${longdescPart}), `
+    + `body selfchecks ${bodySelfchecks}, `
+    + `practice items ${practiceTotal} (multiplechoice ${multiplechoice}, textin ${textin}, `
+    + `selfcheck ${practiceSelfchecks}, sortbins ${sortbins}), `
+    + `key terms ${keyTermsCount}, `
+    + `model answers author-written: selfchecks total ${bodySelfchecks + practiceSelfchecks}, `
+    + `cross-links ${crossLinks}`;
 }
 
 for (const f of files) {
@@ -248,6 +302,11 @@ for (const f of files) {
     }
     if (!(p.alt || '').trim()) bad(`${where}: alt is empty`);
   }
+
+  // Informational facts panel — never a failure, and only for section pages
+  // (those with a `## Practice` heading); math and index pages print nothing.
+  const facts = factsPanel(src, interactiveSrc);
+  if (facts) console.log(facts);
 }
 
 if (fail) {

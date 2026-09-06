@@ -246,7 +246,7 @@ bryophytes make sporangium to produce spores
 {{< textin
   question="The tangle of single-celled filaments that forms from a haploid moss spore is called a ________."
   answer="protonema"
-  accept="protonemata|protonemas"
+  accept="protonemata"
   hint="Cells akin to an apical meristem divide within this tangle and give rise to the gametophore."
 >}}
 

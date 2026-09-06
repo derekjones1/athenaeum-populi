@@ -107,7 +107,7 @@ none of the above
 {{< textin
   question="A membrane that allows only certain solutes to pass through is called a ________."
   answer="semi-permeable membrane"
-  accept="semi-permeable membranes|semipermeable membrane|semipermeable membranes"
+  accept="semipermeable membrane"
   hint="The pleural, serous, and cell membranes of the body are all examples of this kind of barrier."
 >}}
 
@@ -166,14 +166,13 @@ active transport is the movement against a concentration gradient
 {{< textin
   question="A solute that breaks down into ions when dissolved in water is called a(n) ________."
   answer="electrolyte"
-  accept="electrolytes"
   hint="Athletes are told to replace these, along with fluids, after heavy sweating."
 >}}
 
 {{< textin
   question="A solute that does not break down into ions when dissolved in water is called a(n) ________."
   answer="non-electrolyte"
-  accept="non-electrolytes|nonelectrolyte|nonelectrolytes"
+  accept="nonelectrolyte"
   hint="Glucose is the module's own example of this kind of solute."
 >}}
 
@@ -182,7 +181,7 @@ active transport is the movement against a concentration gradient
 {{< textin
   question="The gram equivalent of the molecular weight of a substance is called a ________."
   answer="mole"
-  accept="moles|mol"
+  accept="mol"
   hint="Sodium chloride's molecular weight is 58.44, so one of these weighs 58.44 grams."
 >}}
 
@@ -214,14 +213,12 @@ ureotelic animals
 {{< textin
   question="An organism that changes its tonicity based on its environment is called a(n) ________."
   answer="osmoconformer"
-  accept="osmoconformers"
   hint="Most marine invertebrates fit this pattern, matching their body fluids to the surrounding seawater."
 >}}
 
 {{< textin
   question="An organism that maintains its tonicity irrespective of its environment is called a(n) ________."
   answer="osmoregulator"
-  accept="osmoregulators"
   hint="Euryhaline fish like the salmon use this strategy to survive in both freshwater and seawater."
 >}}
 

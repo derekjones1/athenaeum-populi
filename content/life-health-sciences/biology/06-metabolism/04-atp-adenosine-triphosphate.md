@@ -119,7 +119,7 @@ providing energy to coupled reactions
 {{< textin
   question="The high-energy bonds that connect the phosphate groups within an ATP molecule are called ________ bonds."
   answer="phosphoanhydride"
-  accept="phosphoanhydride bond|phosphoanhydride bonds"
+  accept="phosphoanhydride bond"
   hint="Two of these bonds link the three phosphate groups to each other; breaking one releases the free energy ATP hydrolysis is known for."
 >}}
 

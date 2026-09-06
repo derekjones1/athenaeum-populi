@@ -82,7 +82,6 @@ chaparral
 {{< textin
   question="The boreal forest is also known as the coniferous forest or, by its other name, the ________."
   answer="taiga"
-  accept="taigas"
 >}}
 
 {{< selfcheck question="Why are deciduous trees the dominant plant in temperate forests, and what effect does their winter leaf loss have on the biome's net primary productivity compared to tropical wet forests?" >}}
@@ -203,7 +202,6 @@ they risk that they will not survive to reproductive age
 {{< textin
   question="The number of organisms added to a population in each reproductive generation is called the ________."
   answer="population growth rate"
-  accept="population growth rates"
 >}}
 
 {{< multiplechoice
@@ -342,7 +340,6 @@ apex consumers
 {{< textin
   question="The organism positioned at the very top of a food chain, with no higher-level consumers preying on it, is called a(n) ________."
   answer="apex consumer"
-  accept="apex consumers"
 >}}
 
 {{< selfcheck question="What is a holistic ecosystem model, and why is this type of ecosystem study limited in practice?" >}}
@@ -422,7 +419,6 @@ a large asteroid impact
 {{< textin
   question="A geographical region containing high numbers of endemic species along with a large percentage of degraded habitat, a conservation concept originated by Norman Myers in 1988, is called a ________."
   answer="biodiversity hotspot"
-  accept="biodiversity hotspots"
 >}}
 
 {{< selfcheck question="What are three hypotheses proposed to explain why species biodiversity increases as latitude declines toward the equator?" >}}

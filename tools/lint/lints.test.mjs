@@ -2196,6 +2196,23 @@ test('a positive unicode superscript exponent after a digit is math set in the p
     'a mediafigure alt/longdesc is an attribute with no typesetter');
 });
 
+test('a unit prefix is the micro sign, not the Greek mu', () => {
+  // The two glyphs are indistinguishable on screen and the text grader folds
+  // them (NFKD maps U+00B5 to U+03BC), so nothing renders or grades wrong —
+  // but Pagefind indexes them apart, and the corpus carried both because each
+  // transcription inherited whichever character its source module used.
+  const mu = (source) => lintHugo(source, SECTION)
+    .errors.filter((e) => e.includes('Greek small letter mu'));
+
+  assert(mu('A red blood cell is about 8 \u03BCm across.\n').length > 0, 'a Greek mu before a unit in prose');
+  assert(mu('{{< mediafigure src="biology/fig-1" alt="A scale bar reading 150 \u03BCm." >}}\nCaption.\n{{< /mediafigure >}}\n').length > 0,
+    'an alt attribute is prose to a search index too');
+  assert.deepEqual(mu('A red blood cell is about 8 \u00B5m across, and 1 \u00B5m = $10^{-6}$ m.\n'), [],
+    'the micro sign itself is the house spelling');
+  assert.deepEqual(mu('The population mean \u03BC and the coefficient of friction \u03BC are Greek letters, not unit prefixes.\n'), [],
+    'a bare Greek mu is untouched — the rule is exactly mu-then-Latin-letter');
+});
+
 test('a superscript exponent is math noise in prose and the only form a figure has', () => {
   // The SVG label layer has no typesetter: `f^{-1}(x)` prints those five
   // characters, which is how precalculus 3.8 shipped four inverse curves
@@ -2220,6 +2237,16 @@ test('a superscript exponent is math noise in prose and the only form a figure h
       + '"texts":[{"at":[1,1],"text":"f⁻¹(x)"}]}')),
     [],
     'inside a figure spec the superscript IS the exponent',
+  );
+  // Microbiology 2.1's EM-spectrum longdesc has to name 10⁻¹⁸ and 10⁻¹² m
+  // wavelengths; the author spelled them as words because this rule, unlike
+  // the positive-exponent rule, did not exempt the attribute.
+  const manifests = { biology: { figures: { 'fig-1': { file: 'fig-1.webp', width: 400, height: 300 } } } };
+  assert.deepEqual(
+    lintHugo('{{< mediafigure src="biology/fig-1" alt="The spectrum from 10⁻¹⁸ m gamma rays to 10³ m radio waves." longdesc="Frequencies run from 10²⁴ Hz down to 10⁵ Hz." >}}\nCaption.\n{{< /mediafigure >}}\n', SECTION, { mediaManifests: manifests })
+      .errors.filter((e) => e.includes('superscript minus')),
+    [],
+    'a mediafigure alt/longdesc is an attribute with no typesetter — the minus is exempt on the same terms as the digit',
   );
 });
 
@@ -3020,4 +3047,84 @@ test('a section with two or more graphplots must also carry a graph-recognition 
   assert(!lintHugo(`${two}\n\n${MC_GRAPH([LINE_SPEC, CURVE_SPEC])}`, SECTION).errors.some((e) => e.includes(needle)), 'one recognition MC satisfies it');
   assert(!lintHugo(two, 'content/math/book/knowledge-check-01-06.md').errors.some((e) => e.includes(needle)), 'Knowledge Checks are exempt');
   assert(!lintHugo(MC_GRAPH([LINE_SPEC, CURVE_SPEC]), SECTION).errors.some((e) => e.includes(needle)), 'no graphplots, no requirement');
+});
+
+/* ------------------------------------------------- currency read as math */
+
+test('a bare $N,NNN reads as the start of inline math, unless it is really a math digit-group list', () => {
+  const money = (source) => lintHugo(source, SECTION).errors.filter((e) => e.includes('reads as the start of inline math'));
+
+  assert(money('The renovation costs between $300,000 and $500,000 to complete.\n').length > 0,
+    'a prose currency pair, which Hugo pairs into one bogus math span');
+  assert(money('Jermael’s parents put $10,000 in investments for his first birthday, hoping it is worth $50,000 when he turns 18.\n').length > 0,
+    'a single unescaped $50,000 followed by prose still opens a math span Hugo never closes on this $');
+  assert.deepEqual(money('The three amounts are $1,2,3$ in thousands.\n'), [], 'single-digit comma list, not a currency shape at all');
+  assert.deepEqual(money('The counts are $800,400,200$.\n'), [], 'a closed comma-list of three-digit groups');
+  assert.deepEqual(money('The counts are $800,400,200,100,50$.\n'), [], 'a closed comma-list whose last member is not a full three-digit group');
+  assert.deepEqual(money('The ids are $13,103,1003,10{,}003$.\n'), [], 'a closed comma-list mixing raw and grouped digits, no prose word');
+  assert.deepEqual(money('| Substitute the values into the formula. | $50,000=10,000{e}^{r}$ |\n'), [],
+    'real math in a table cell — an operator, not a word, follows the last group');
+  assert.deepEqual(money('Hector invests \\$300,000 at age 21.\n'), [], 'escaped currency is already correct');
+  const figureSpec = '{{< apfigure kind="graph" >}}\n{"ariaLabel":"A curve.","lines":[{"slope":1,"intercept":0}]}\n{{< /apfigure >}}';
+  assert(money(`He earned $300,000 last year.\n\n${figureSpec}\n`).length > 0,
+    'the rule still catches the prose sentence beside an unrelated figure spec');
+  assert.deepEqual(money(figureSpec), [], 'a figure spec body is not prose the rule should read');
+});
+
+/* --------------------------------- a figure answering the item beside it */
+
+test('a mediafigure directly above an item may not print that item\'s answer', () => {
+  const manifests = { biology: { figures: { 'fig-1': { file: 'fig-1.webp', width: 400, height: 300 } } } };
+  const lint = (source) => lintHugo(source, SECTION, { mediaManifests: manifests })
+    .errors.filter((e) => e.includes('prints the answer of the item directly below it'));
+
+  const figure = (alt, longdesc = '') => `{{< mediafigure src="biology/fig-1" alt="${alt}"${longdesc ? ` longdesc="${longdesc}"` : ''} >}}\nA caption.\n{{< /mediafigure >}}`;
+
+  // The Art Connection incident: the alt names the part the textin answer is.
+  const textin = '{{< textin question="What structure rotates the flagellum?" answer="rotating turret" hint="h" >}}';
+  assert(lint(`${figure('A diagram of the rotating turret (2) and the hook (3).')}\n${textin}`).length > 0,
+    'the alt states the textin answer directly beneath it');
+
+  // A paragraph of commentary between the figure and the item breaks adjacency.
+  assert.deepEqual(lint(`${figure('A diagram of the rotating turret (2) and the hook (3).')}\n\nThis structure is central to motility.\n\n${textin}`), [],
+    'a paragraph sits between the figure and the item, so they are not adjacent');
+
+  // An adjacent selfcheck whose rubric checkpoint is covered by the longdesc.
+  const selfcheck = '{{< selfcheck question="Describe the flagellum\'s rotary motor." hint="h" >}}\n'
+    + 'The rotary motor spins the flagellum using a proton gradient across the membrane.\n'
+    + '===CHECKS===\n'
+    + 'the rotary motor spins the flagellum\n'
+    + 'the proton gradient across the membrane\n'
+    + '{{< /selfcheck >}}';
+  assert(lint(`${figure('A labelled diagram.', 'The rotary motor spins the flagellum using a proton gradient across the membrane.')}\n${selfcheck}`).length > 0,
+    'the longdesc states a rubric checkpoint of the adjacent selfcheck verbatim');
+
+  // Sharing one ordinary word is not the incident this rule polices.
+  assert.deepEqual(lint(`${figure('A diagram of the bacterial cell wall.')}\n${textin}`), [],
+    'the alt shares only one unrelated word with the textin answer');
+});
+
+// The grader folds a regular plural (form + s / + es) onto every accepted
+// form (September 6, 2026), so a listed regular plural is dead weight and a
+// prompt that prints the folded plural is a retype hazard.
+test('textin: a regular-plural accept member is redundant; an irregular plural is not', () => {
+  const redundant = lintHugo('{{< textin question="Name the unit." answer="cell" accept="cells" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(redundant.some((e) => e.includes('accept member "cells" is the regular plural of answer "cell"')), redundant.join('\n'));
+  const esForm = lintHugo('{{< textin question="Name it." answer="gas" accept="gases" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(esForm.some((e) => e.includes('is the regular plural of answer "gas"')), esForm.join('\n'));
+  const viaMember = lintHugo('{{< textin question="Name it." answer="microRNA" accept="miRNA|miRNAs" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(viaMember.some((e) => e.includes('accept member "miRNAs" is the regular plural of accept member "miRNA"')), viaMember.join('\n'));
+  const irregular = lintHugo('{{< textin question="Name it." answer="hypothesis" accept="hypotheses" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(!irregular.some((e) => e.includes('regular plural')), irregular.join('\n'));
+  const singular = lintHugo('{{< textin question="Name them." answer="organisms" accept="organism" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(!singular.some((e) => e.includes('regular plural')), 'a singular alternate of a plural key is not a fold');
+});
+
+test('textin: a question or hint that prints the folded plural of a member is a retype hazard', () => {
+  const q = lintHugo('{{< textin question="Ribosomes build proteins; name one such organelle." answer="ribosome" hint="h" >}}', 'content/test.md').errors;
+  assert.ok(q.some((e) => e.includes('answer "ribosome"\'s plural "ribosomes" appears as a whole-word run in the question')), q.join('\n'));
+  const h = lintHugo('{{< textin question="Name the organelle." answer="ribosome" hint="Think of ribosomes." >}}', 'content/test.md').errors;
+  assert.ok(h.some((e) => e.includes('plural "ribosomes" appears as a whole-word run in the hint')), h.join('\n'));
+  const clean = lintHugo('{{< textin question="Name the organelle that builds proteins." answer="ribosome" hint="Ribosomal RNA is part of it." >}}', 'content/test.md').errors;
+  assert.ok(!clean.some((e) => e.includes('whole-word run')), clean.join('\n'));
 });

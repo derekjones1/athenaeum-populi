@@ -169,21 +169,20 @@ this causes the cell to produce multiple copies of the target gene, amplifying t
 {{< textin
   question="The cellular protein that binds to a hormone is called a ________."
   answer="hormone receptor"
-  accept="hormone receptors"
   hint="Only cells carrying this molecule for a given hormone are affected by it, even though the hormone itself circulates throughout the whole body."
 >}}
 
 {{< textin
   question="A hormone receptor located in the cytoplasm or nucleus of a cell is called a(n) ________."
   answer="intracellular hormone receptor"
-  accept="intracellular hormone receptors|intracellular receptor|intracellular receptors"
+  accept="intracellular receptor"
   hint="Only a lipid-soluble hormone that can cross the plasma membrane ever reaches this kind of receptor."
 >}}
 
 {{< textin
   question="A hormone receptor on the surface of the plasma membrane of a cell is called a(n) ________."
   answer="plasma membrane hormone receptor"
-  accept="plasma membrane hormone receptors|cell surface receptor|cell surface receptors"
+  accept="cell surface receptor"
   hint="A hormone that cannot dissolve in the lipid bilayer binds here instead, at the cell's outer surface, and never actually enters the cell."
 >}}
 

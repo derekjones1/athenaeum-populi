@@ -170,7 +170,7 @@ split an irregular figure into rectangles — try splitting this one a
 different way and check that you still get the same total area.)
 
 {{< fillin
-  question="An irregular figure looks like a narrow column 3 units wide and 6 units tall, with a wider arm attached across its top: the whole figure is 8 units wide at the top, and that top arm is 2 units tall. Find the total (shaded) area."
+  question="An irregular figure is 6 units tall. Its bottom 4 units are a column 3 units wide; its top 2 units are a bar 8 units wide. Find the total (shaded) area in square units."
   answer="28"
   hint="Split into two rectangles: the column is 3 units wide by 6 units tall, and the top arm's extra width beyond the column is $(8 - 3) = 5$ units, at height 2. Add: $3 \cdot 6 + (8-3) \cdot 2$."
 >}}

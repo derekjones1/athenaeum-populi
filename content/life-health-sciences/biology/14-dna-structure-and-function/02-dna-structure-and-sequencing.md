@@ -211,7 +211,6 @@ maintaining more genetic material requires more energy, and introduces the possi
 {{< textin
   question="According to the section summary, most prokaryotes contain a single, ________."
   answer="circular chromosome"
-  accept="circular chromosomes"
   hint="This is the shape of the one chromosome that carries nearly all of a prokaryote's DNA."
 >}}
 

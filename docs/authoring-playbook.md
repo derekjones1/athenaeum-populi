@@ -16,9 +16,11 @@ source-first, component, and verification rules are subject-neutral. Each
 subject has its own playbook under `docs/subjects/` — currently
 [`math.md`](subjects/math.md) for the four OpenStax math books (Prealgebra
 2e, Elementary Algebra 2e, Intermediate Algebra 2e, and Precalculus 2e) and
-[`biology.md`](subjects/biology.md) for Biology 2e — which adds notation,
-media, and exercise-type rules on top of this core, and wins where it
-differs. Read this core first, then the subject playbook for the book you
+[`biology.md`](subjects/biology.md) for Biology 2e, and
+[`microbiology.md`](subjects/microbiology.md) for OpenStax Microbiology,
+which inherits the biology rules and records where that book differs. A
+subject playbook adds notation, media, and exercise-type rules on top of
+this core, and wins where it differs. Read this core first, then the subject playbook for the book you
 are authoring.
 
 ## 0. Source-first workflow (required for AI agents)
@@ -30,10 +32,15 @@ substitution, evaluate-at prompts by substitution, re-expression prompts by
 value equivalence — all numeric, against the printed question only), while
 `npm run verify:source-keys` compares a prose book's multiple-choice keys,
 textin answers, and self-check model answers to the pinned module's own
-solutions and glossary. They
-cannot prove that the transcription is faithful, and the cross-check cannot
-see word problems, rounding asks, or anything whose subject lives in prose,
-so independent solving against the source Answer Key remains required.
+solutions and glossary, and a math page's fill-in keys to the printed
+solution of the source exercise each transcribes (word problems and rounding
+asks included — the classes `verify:answers` cannot parse). They cannot
+prove that the transcription is faithful, and a fill-in that transcribes no
+keyed source exercise (an author variant, a figure read, a knowledge-check
+item) is read by neither, so `npm run verify:fillin-residual` refuses any
+such item whose ledger record carries neither a derivation note nor a blind
+solve (`solve:emit -- content/math --residual-fillins`): independent solving
+remains required, and the record of it is what the gate checks.
 
 Before writing:
 
@@ -71,10 +78,22 @@ Before writing:
      official answer, and independent calculation disagree, confirmed against
      the raw CNXML plus one independent check — record the discrepancy with
      the evidence, then correct the local page to the module's own
-     mathematics, place a visible source note beside the correction, record
-     the local handling in `data/openstax/reconciliation-decisions.json`,
-     and log the defect (rule 5). This is the reviewed resolution; it does not
-     require a human's approval. The upstream files still do not change.
+     mathematics and log the defect (rule 5). This is the reviewed
+     resolution; it does not require a human's approval. The upstream files
+     still do not change. How loudly the correction is disclosed scales with
+     what was corrected:
+     - **A corrected claim, value, answer, or figure label** carries a
+       visible source note beside it on the page AND an entry in
+       `data/openstax/reconciliation-decisions.json`, so a later audit
+       cannot silently reverse it.
+     - **A one-word typo** — a misspelling, a malformed binomial, a wrong
+       journal volume — is corrected in place with no inline note and no
+       decisions entry: an interruption mid-sentence costs the reader more
+       than it tells them, and nothing in the audit reads a single word.
+       The footer's `Changes:` clause names it and the errata entry records
+       it, and those two are not optional; a silent one-word departure from
+       the source is a defect of its own, and a checker's last pass is to
+       diff the page against the module for exactly that.
    - **Locally authored fields → just fix them.** Content with no source
      counterpart — `hint` text, distractor bodies, aria labels, and other
      scaffolding this playbook requires you to write — is not source content
@@ -201,6 +220,15 @@ The content lint enforces the descriptive bullet shape.
 
 Notation, math, and table conventions are per subject: `docs/subjects/math.md`
 §2 for the math books, `docs/subjects/biology.md` "Notation" for Biology.
+
+**Footnotes.** A source `<footnote>` that is a citation becomes an inline
+parenthetical citation after the sentence it supports — author, title,
+publication, year, pages — with a bare access URL dropped and a DOI kept.
+Hugo has no footnote apparatus in this template and a citation is source
+content, so it neither moves to the end nor disappears. Books differ wildly
+in how heavily they footnote (Microbiology §1.1 carries eight; most Biology
+sections carry none), which is why the rule lives here rather than in one
+subject playbook.
 
 ## 3. Exercises and components (shortcodes)
 
@@ -399,7 +427,13 @@ must not contain `$…$` math — a text field has no spoken-math name; use
 spellings graded as correct too, **`|`-separated** (`accept="a|b|c"` — a
 comma joins the items into one member the grader can never match, and the
 lint rejects it); grading already ignores case, diacritics, punctuation,
-hyphen-versus-space, and a leading article.
+hyphen-versus-space, and a leading article, and it accepts the **regular
+plural** of every listed form (a typed `cells` for `cell`, `gases` for
+`gas` — exactly a trailing `s` or `es`, one direction only, no stemming), so
+list only an irregular plural (`hypotheses` above, `septa`, `bacteria`); a
+regular plural in `accept` is a lint error. A prompt or hint that prints a
+member's regular plural is the same retype hazard as one that prints the
+member.
 
 **Self-check (`selfcheck`)** — a free-response prompt with a model answer to
 compare against. Nothing is graded or stored: the learner writes, reveals
@@ -634,15 +668,41 @@ From the repository root:
 4. `npm run verify-section -- content/<subject>/<book>/<ch>/<sec>.md`
    — lints, renders every math run, and confirms that each fill-in answer is
    parseable by the real grader. Fix every ✗: every finding fails the run,
-   and there is no warning tier to leave for later (§5).
+   and there is no warning tier to leave for later (§5). For a section page (one
+   with a `## Practice` heading), it also prints an informational `facts:`
+   panel — figure counts by `kind` and which stems carry a `longdesc`, body vs.
+   Practice selfcheck counts, Practice item counts by type, the Key terms
+   bullet count, and the internal (`/…`) link count. It never fails the run;
+   compare its counts against the footer's `Changes:` clause before reporting
+   a discrepancy — a mismatch usually means the footer's count is stale, not
+   that the page is wrong.
+   Then run `npm run source:diff -- content/<subject>/<book>/<ch>/<sec>.md`
+   (needs the pinned CNXML checked out — `npm run source:fetch`; it skips
+   loudly, exit 0, when the checkout is absent). It diffs the page's prose
+   against its pinned module: ADDED lists page sentences with no source
+   coverage (a legitimate cross-reference rewrite is fine; a claim the source
+   never makes is not), NEAR-MISS WORDS lists page spellings close to an
+   unused source word (a silently "corrected" or miscopied term — inflections
+   and the page's own cross-reference words are already excluded) — a hit
+   disclosed in the footer's `Changes:` clause is suppressed automatically —
+   and MODEL-ANSWER SENTENCES lists selfcheck model-answer sentences whose
+   vocabulary the whole module (end matter and solutions included) does not
+   cover. That last check is weak by construction: a paraphrase built from
+   the module's own words scores as covered, so a clean report does not
+   prove every model-answer claim traces to the module — the checker still
+   reads each self-check answer beside the module. An independent checker
+   runs the tool and must explain every ADDED sentence, every undisclosed
+   NEAR-MISS word, and every MODEL-ANSWER sentence.
 5. Run `npm test`. It includes whole-repository structure validation,
    per-page real-grader verification, the corpus-wide answer cross-checks
    (`npm run verify:answers` — every mechanically checkable answer is
    re-derived numerically from its own question; `npm run verify:source-keys`
-   — every prose-book key is compared to the pinned source's own), the
-   answer-ledger gate (which, for a prose shelf, also requires the
-   orchestrator's own solve of every graded item — see the subject
-   playbook),
+   — every prose-book key and every transcribed math fill-in is compared to
+   the pinned source's own solution; `npm run verify:fillin-residual` — no
+   math fill-in ships with neither of those nor a recorded derivation or
+   blind solve), the answer-ledger gate (which, for a prose shelf, also
+   requires the orchestrator's own solve of every graded item — see the
+   subject playbook),
    unit tests, repo-wide
    authoring lints, documentation consistency checks, and KaTeX parsing.
    `npm run validate` remains available as a focused structure-only command.

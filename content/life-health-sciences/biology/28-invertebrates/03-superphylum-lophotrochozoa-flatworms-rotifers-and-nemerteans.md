@@ -163,7 +163,6 @@ The nemerteans are probably simple eucoelomates. These ribbon-shaped animals als
 {{< textin
   question="The muscular, jawed pharynx unique to rotifers, which receives food carried in by the corona's beating cilia, is called the ________."
   answer="mastax"
-  accept="mastaxes"
   hint="Masticated food leaves this structure and passes near digestive and salivary glands on its way to the stomach."
 >}}
 
@@ -176,7 +175,7 @@ The nemerteans are probably simple eucoelomates. These ribbon-shaped animals als
 {{< textin
   question="Nemerteans bear a specialized ________ enclosed within a rhynchocoel."
   answer="proboscis"
-  accept="proboscises|proboscides"
+  accept="proboscides"
   hint="This structure acts like a retractable harpoon or tentacle that the worm extends to capture food."
 >}}
 

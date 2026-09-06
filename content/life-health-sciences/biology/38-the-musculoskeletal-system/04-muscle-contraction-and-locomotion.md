@@ -194,14 +194,12 @@ myofilament
 {{< textin
   question="Long cylindrical structures that lie parallel to the muscle fiber are called ________."
   answer="myofibril"
-  accept="myofibrils"
   hint="Within each muscle fiber are hundreds to thousands of these structures, each running the fiber's whole length and only about 1.2 µm across."
 >}}
 
 {{< textin
   question="The functional unit of skeletal muscle is called a ________."
   answer="sarcomere"
-  accept="sarcomeres"
   hint="This is the segment of a myofibril bounded by two consecutive Z discs, and it is what shortens when a muscle contracts."
 >}}
 

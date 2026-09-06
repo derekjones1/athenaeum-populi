@@ -122,7 +122,7 @@ it dies within a few days
 {{< textin
   question="The series of biochemical reactions that let a sperm break through that protective egg layer is called the ________."
   answer="acrosomal reaction"
-  accept="acrosomal reactions|acrosome reaction|acrosome reactions"
+  accept="acrosome reaction"
   hint="These reactions release digestive enzymes from a structure at the front of the sperm head, named after that same structure."
 >}}
 

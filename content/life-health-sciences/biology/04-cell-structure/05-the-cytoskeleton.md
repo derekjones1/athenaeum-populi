@@ -162,21 +162,19 @@ combines with a lysosome to digest the pathogen
 {{< textin
   question="The narrowest of the three cytoskeletal fiber types, composed of two intertwined strands of the protein actin, is called a(n) ________."
   answer="microfilament"
-  accept="microfilaments|actin filament|actin filaments"
+  accept="actin filament"
   hint="Its diameter is about 7 nm — the narrowest of the three — and it drives muscle contraction and the crawling of cells."
 >}}
 
 {{< textin
   question="A cytoskeletal component made of several intertwined fibrous protein strands that bears tension, supports cell-cell junctions, and anchors cells to extracellular structures is called a(n) ________."
   answer="intermediate filament"
-  accept="intermediate filaments"
   hint="Its diameter, 8 to 10 nm, falls between the other two fiber types, which is how it got its name."
 >}}
 
 {{< textin
   question="The widest of the three cytoskeletal fiber types, which resists compression, serves as a track for organelle movement, and pulls replicated chromosomes apart during cell division, is called a(n) ________."
   answer="microtubule"
-  accept="microtubules"
   hint="At about 25 nm across, it is the widest of the three, and it forms the core of centrioles, cilia, and flagella."
 >}}
 

@@ -196,14 +196,12 @@ progesterone
 {{< textin
   question="The cycle of preparation of an egg for ovulation and the conversion of the follicle to the corpus luteum is called the ________."
   answer="ovarian cycle"
-  accept="ovarian cycles"
   hint="This cycle is named for the organ where follicles grow and the corpus luteum forms — not for the uterine lining."
 >}}
 
 {{< textin
   question="The cycle of the degradation and regrowth of the endometrium is called the ________."
   answer="menstrual cycle"
-  accept="menstrual cycles"
   hint="This cycle is named for the process the endometrium goes through each month, not for the ovary."
 >}}
 

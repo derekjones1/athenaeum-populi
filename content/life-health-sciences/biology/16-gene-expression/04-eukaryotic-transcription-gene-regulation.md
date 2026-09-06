@@ -84,14 +84,12 @@ a transcription factor
 {{< textin
   question="Transcription factor binding sites within the promoter that regulate transcription of the adjacent gene are known as a ________."
   answer="cis-acting element"
-  accept="cis-acting elements"
   hint="The Latin prefix means 'on the same side' — the site sits on the same chromosome as the gene it controls."
 >}}
 
 {{< textin
   question="A sequence of DNA to which a transcription factor binds is called a ________."
   answer="transcription factor binding site"
-  accept="transcription factor binding sites"
   hint="Name the DNA sequence itself, not the protein that recognizes it."
 >}}
 
@@ -126,14 +124,12 @@ initiation of the recruitment of RNA polymerase
 {{< textin
   question="A segment of DNA that can sit upstream, downstream, thousands of nucleotides away, or on another chromosome, and that increases transcription of a specific gene, is called a(n) ________."
   answer="enhancer"
-  accept="enhancers"
   hint="Its name describes what it does to transcription."
 >}}
 
 {{< textin
   question="A transcription factor binding site located outside the promoter, or on another chromosome, that influences transcription of a particular gene is called a ________."
   answer="trans-acting element"
-  accept="trans-acting elements"
   hint="The Latin prefix means 'across' or 'on the other side' — it sits apart from the gene it controls, unlike its promoter-adjacent counterpart."
 >}}
 

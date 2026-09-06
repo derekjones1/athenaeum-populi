@@ -149,7 +149,6 @@ provide early detection of different types of cancer
 {{< textin
   question="A representation of the actual distance, measured in nucleotides, between genes or genetic markers is called a ________."
   answer="physical map"
-  accept="physical maps"
   hint="It is the section's second boxed definition, right after genetic map — its scale is nucleotides, not chromosome position."
 >}}
 
@@ -191,7 +190,7 @@ cytogenetic mapping
 {{< textin
   question="Variation between individuals in the length of DNA fragments produced by restriction endonucleases is known by the abbreviation ________."
   answer="RFLP"
-  accept="restriction fragment length polymorphism|RFLPs|restriction fragment length polymorphisms"
+  accept="restriction fragment length polymorphism"
   hint="The section gives its phonetic nickname, \"rif-lips,\" right after naming the abbreviation."
 >}}
 

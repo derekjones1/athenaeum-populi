@@ -166,7 +166,6 @@ species
 {{< textin
   question="The domain division in the taxonomic classification system is called a ________."
   answer="kingdom"
-  accept="kingdoms"
   hint="Bacteria, Archaea, and Eukarya are the three domains; this next level divides each of them further."
 >}}
 
@@ -246,7 +245,6 @@ appear closely related but are not
 {{< textin
   question="A diagram that reflects the evolutionary relationships among organisms or groups of organisms is called a ________."
   answer="phylogenetic tree"
-  accept="phylogenetic trees"
   hint="Scientists consider this diagram to be a hypothesis of the evolutionary past."
 >}}
 

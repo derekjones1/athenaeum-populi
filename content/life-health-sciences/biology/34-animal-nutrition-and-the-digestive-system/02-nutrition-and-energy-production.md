@@ -178,7 +178,6 @@ may develop many serious health problems
 {{< textin
   question="The diet must be balanced to provide the minerals and vitamins that are required for ________."
   answer="cellular function"
-  accept="cellular functions"
   hint="This is what minerals and vitamins are ultimately needed for — the ongoing work every one of the body's cells must carry out."
 >}}
 
@@ -252,21 +251,18 @@ not having minerals in the diet can be potentially harmful
 {{< textin
   question="A nutrient that cannot be synthesized by the body and must be obtained from food is called an ________."
   answer="essential nutrient"
-  accept="essential nutrients"
   hint="Vitamins and minerals are both examples of this kind of nutrient."
 >}}
 
 {{< textin
   question="An inorganic, elemental molecule that carries out important roles in the body is called a ________."
   answer="mineral"
-  accept="minerals"
   hint="Calcium, sodium, and potassium are examples, each obtained from food rather than made by the body."
 >}}
 
 {{< textin
   question="An organic substance necessary in small amounts to sustain life is called a ________."
   answer="vitamin"
-  accept="vitamins"
   hint="This class of essential organic molecule acts as a coenzyme and comes in both fat-soluble and water-soluble forms."
 >}}
 

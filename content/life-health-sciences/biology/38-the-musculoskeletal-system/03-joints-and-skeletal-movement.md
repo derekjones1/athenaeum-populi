@@ -246,14 +246,12 @@ symphysis
 {{< textin
   question="A joint held together by fibrous connective tissue is called a ________."
   answer="fibrous joint"
-  accept="fibrous joints"
   hint="This structural category has no cavity between the bones, so most examples barely move at all."
 >}}
 
 {{< textin
   question="A short fiber of connective tissue that holds the skull bones tightly in place, found only in the skull, is called a ________."
   answer="suture"
-  accept="sutures"
   hint="This is the only fibrous joint type found nowhere else in the body."
 >}}
 
@@ -274,14 +272,13 @@ symphysis
 {{< textin
   question="A joint in which the oval-shaped end of one bone fits into a similarly oval-shaped hollow of another bone is called a ________."
   answer="condyloid joint"
-  accept="condyloid joints|ellipsoidal joint|ellipsoidal joints"
+  accept="ellipsoidal joint"
   hint="The wrist and finger joints that move both side to side and up and down are this type."
 >}}
 
 {{< textin
   question="A joint with a rounded, ball-like end of one bone fitting into a cuplike socket of another bone is called a ________."
   answer="ball-and-socket joint"
-  accept="ball-and-socket joints"
   hint="The shoulder and hip are the two examples this section gives of this joint type."
 >}}
 
@@ -343,7 +340,6 @@ as the foot lands, the knee extends the leg and the hip retracts the femur
 {{< textin
   question="Movement that occurs when relatively flat bone surfaces move past each other is called ________."
   answer="gliding movement"
-  accept="gliding movements"
   hint="The carpal and tarsal bones are the section's examples of joints that produce this kind of movement, with very little rotation or angular change."
 >}}
 

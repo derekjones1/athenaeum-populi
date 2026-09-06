@@ -90,14 +90,12 @@ consumption of infected meat
 {{< textin
   question="An agent with the ability to cause disease is called a ________."
   answer="pathogen"
-  accept="pathogens"
   hint="The section's opening sentence uses this general term for both prions and viroids."
 >}}
 
 {{< textin
   question="An infectious particle that consists of protein and replicates without DNA or RNA is called a ________."
   answer="prion"
-  accept="prions"
   hint="The first of the two acellular agents this section covers — a misfolded protein with no nucleic acid at all."
 >}}
 
@@ -134,7 +132,6 @@ not translated to produce proteins
 {{< textin
   question="A plant pathogen that produces only a single, specific RNA molecule is called a ________."
   answer="viroid"
-  accept="viroids"
   hint="The second of the two acellular agents this section covers; it infects plants only."
 >}}
 

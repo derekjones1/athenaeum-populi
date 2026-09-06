@@ -300,21 +300,19 @@ ventilation removes the ethylene gas that speeds up fruit ripening
 {{< textin
   question="The plant hormone that influences cell elongation in phototropism and gravitropism, apical dominance, and root growth is called ________."
   answer="auxin"
-  accept="auxins"
   hint="This hormone's name comes from the Greek word for 'to grow,' and IAA is its only naturally occurring, physiologically active form."
 >}}
 
 {{< textin
   question="The plant hormone that promotes cytokinesis (cell division) is called a ________."
   answer="cytokinin"
-  accept="cytokinins"
   hint="It was first identified through its effect on plant embryos cultured with the liquid endosperm of coconuts."
 >}}
 
 {{< textin
   question="The group of about 125 closely related plant hormones that stimulate shoot elongation, seed germination, and fruit and flower maturation are called ________."
   answer="gibberellin"
-  accept="gibberellins|GA|GAs"
+  accept="GA"
   hint="Growers apply an antagonist of this hormone group to trees under power lines to reduce how often they need pruning."
 >}}
 

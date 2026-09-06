@@ -219,7 +219,6 @@ homology
 {{< textin
   question="A small leaf with a simple vascular system and a single unbranched vein running through its center is called a ________."
   answer="microphyll"
-  accept="microphylls"
   hint="This leaf type is seen in club mosses and probably preceded the evolution of larger, multi-veined leaves."
 >}}
 
@@ -282,7 +281,6 @@ they form large leaves and branching roots
 {{< textin
   question="A seedless vascular plant that lost both roots and leaves through reductive evolution, photosynthesizing instead through its green, dichotomously branching stems, is a ________."
   answer="whisk fern"
-  accept="whisk ferns"
   hint="This class, Psilotopsida, is now thought to be more closely related to ferns than to other seedless vascular plants."
 >}}
 

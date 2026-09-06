@@ -115,14 +115,12 @@ ACUAUCUUCGUGAGAUG as the transcribed mRNA sequence
 {{< textin
   question="The region of locally unwound DNA that allows mRNA to be transcribed is called the ________."
   answer="transcription bubble"
-  accept="transcription bubbles"
   hint="It forms where the double helix partially unwinds so RNA polymerase can read the exposed strand."
 >}}
 
 {{< textin
   question="The strand of DNA that specifies the complementary mRNA molecule is called the ________."
   answer="template strand"
-  accept="template strands"
   hint="Transcription always proceeds from this same DNA strand for a given gene."
 >}}
 
@@ -190,7 +188,6 @@ because A–U bonds are less thermostable, the core enzyme falls away
 {{< textin
   question="The structure RNA forms when it folds back on itself and creates intramolecular hydrogen bonds between complementary nucleotides is called a ________."
   answer="hairpin"
-  accept="hairpins"
   hint="This RNA structure causes the polymerase to stall during rho-independent termination."
 >}}
 

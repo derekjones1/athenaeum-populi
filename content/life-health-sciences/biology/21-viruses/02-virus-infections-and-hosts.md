@@ -270,7 +270,6 @@ it now has two methods to disseminate through the bacteria population
 {{< textin
   question="Phage DNA that has become incorporated into the host cell's genome is called a ________."
   answer="prophage"
-  accept="prophages"
   hint="It forms during the lysogenic cycle, when the phage genome joins the bacterial chromosome."
 >}}
 
@@ -315,7 +314,6 @@ either RNA or DNA
 {{< textin
   question="A viral illness such as hepatitis C that persists in the body for a long period of time is called a ________."
   answer="chronic infection"
-  accept="chronic infections"
   hint="Its opposite in this section is the short, sharp pattern called an acute disease."
 >}}
 
@@ -328,7 +326,6 @@ either RNA or DNA
 {{< textin
   question="A plant tumor caused by a virus is known as a ________."
   answer="gall"
-  accept="galls"
   hint="This symptom appears when a virus causes abnormally high cell growth and division in the plant."
 >}}
 

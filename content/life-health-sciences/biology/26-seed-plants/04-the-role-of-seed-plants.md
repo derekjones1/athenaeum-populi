@@ -243,14 +243,12 @@ plant life balances ecosystems, protects watersheds, mitigates erosion, moderate
 {{< textin
   question="A cultivated plant is called a ________."
   answer="crop"
-  accept="crops"
   hint="Rice, wheat, and potatoes dominate this category of agricultural plants."
 >}}
 
 {{< textin
   question="A seed from a plant that was grown historically, but has not been used in modern agriculture on a large scale, is a ________."
   answer="heirloom seed"
-  accept="heirloom seeds"
   hint="Preserving these is one line of action for protecting plant biodiversity, alongside a DNA-based species-identification technique."
 >}}
 

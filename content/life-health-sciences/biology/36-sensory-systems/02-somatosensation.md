@@ -143,21 +143,20 @@ hair receptors
 {{< textin
   question="An unencapsulated, slowly-adapting mechanoreceptor in the skin that responds to touch is called a ________."
   answer="Merkel's disk"
-  accept="Merkel's disks|Merkel disk|Merkel disks"
+  accept="Merkel disk"
   hint="This receptor is densely packed in the fingertips and lips, with small, well-defined receptive fields well suited to sensing edges."
 >}}
 
 {{< textin
   question="A slowly-adapting, encapsulated mechanoreceptor in the skin that responds to skin stretch and joint position is called a ________."
   answer="Ruffini ending"
-  accept="Ruffini endings|bulbous corpuscle|bulbous corpuscles"
+  accept="bulbous corpuscle"
   hint="This receptor sits deep in the epidermis near its base, and detects warmth from a position deeper than the skin's cold detectors."
 >}}
 
 {{< textin
   question="An encapsulated mechanoreceptor in the skin that responds to deep pressure and vibration is called a ________."
   answer="Pacinian corpuscle"
-  accept="Pacinian corpuscles"
   hint="This receptor sits deep in the dermis of both glabrous and hairy skin and is structurally similar to Meissner's corpuscles, but rapidly adapts to high-frequency vibration rather than fine, sustained touch."
 >}}
 

@@ -189,21 +189,21 @@ Humans
 {{< textin
   question="The clade of New World monkeys, named for their broad noses, is called ________."
   answer="Platyrrhini"
-  accept="platyrrhines|platyrrhine"
+  accept="platyrrhine"
   hint="Its name literally means 'flat-nosed' and describes the arboreal monkeys of Central and South America."
 >}}
 
 {{< textin
   question="The clade of Old World monkeys, named for their narrow, downward-pointed noses, is called ________."
   answer="Catarrhini"
-  accept="catarrhines|catarrhine"
+  accept="catarrhine"
   hint="Its counterpart clade name describes the broad-nosed monkeys of the New World instead."
 >}}
 
 {{< textin
   question="A bush baby, potto, lemur, or loris — one of the wet-nosed primates rather than a monkey or ape — is called a ________."
   answer="prosimian"
-  accept="prosimians|strepsirrhine|strepsirrhines"
+  accept="strepsirrhine"
   hint="The section contrasts these wet-nosed primates with the tarsiers and simians of the dry-nosed branch."
 >}}
 
@@ -226,7 +226,6 @@ lacking a prominent chin
 {{< textin
   question="A species that is more closely related to humans than to chimpanzees is called a ________."
   answer="hominin"
-  accept="hominins"
   hint="This term designates the species that evolved after the split of the primate line leading to humans."
 >}}
 

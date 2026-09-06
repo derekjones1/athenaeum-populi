@@ -122,7 +122,7 @@ positive feedback drives the system away from equilibrium
 {{< textin
   question="An integral membrane protein that transports glucose across the plasma membrane is called a(n) ________."
   answer="GLUT protein"
-  accept="GLUT proteins|glucose transporter|glucose transporters|glucose transporter protein|glucose transporter proteins"
+  accept="glucose transporter|glucose transporter protein"
   hint="Insulin signaling moves this transporter's vesicles to the plasma membrane so glucose can enter the cell."
 >}}
 

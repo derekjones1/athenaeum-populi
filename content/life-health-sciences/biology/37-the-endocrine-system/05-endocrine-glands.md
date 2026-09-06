@@ -246,7 +246,7 @@ their release is stimulated by neural impulses from the sympathetic nervous syst
 {{< textin
   question="The clusters of endocrine cells in the pancreas are called the ________."
   answer="islets of Langerhans"
-  accept="pancreatic islets|pancreatic islet|islet of Langerhans"
+  accept="pancreatic islet|islet of Langerhans"
   hint="These clusters contain alpha cells and beta cells, which release glucagon and insulin."
 >}}
 

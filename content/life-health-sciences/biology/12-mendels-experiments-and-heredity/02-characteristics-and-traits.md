@@ -255,7 +255,7 @@ these would correspond to axial, axial, and terminal phenotypes, respectively
 {{< textin
   question="Having two different alleles for a given gene on the homologous chromosome describes an organism that is ________ for that gene."
   answer="heterozygous"
-  accept="heterozygote|heterozygotes"
+  accept="heterozygote"
   hint="This is the genotype that Mendel's F₁ hybrid offspring all shared for the trait being crossed."
 >}}
 
@@ -273,14 +273,12 @@ the phenotypic ratio will be 1 tall:1 dwarf
 {{< textin
   question="A visual representation of a genetic cross, in which the gametes of each parent are listed along the top and side of a grid and the possible offspring genotypes are recombined at each box, is called a ________."
   answer="Punnett square"
-  accept="Punnett squares"
   hint="It was devised by the British geneticist Reginald Punnett."
 >}}
 
 {{< textin
   question="The result of a cross between two true-breeding parents that differ in only one characteristic is called a ________ cross."
   answer="monohybrid"
-  accept="monohybrids"
   hint="Mendel performed seven of these crosses, one for each pea-plant characteristic he studied."
 >}}
 
@@ -298,7 +296,7 @@ the F₂ generation phenotypes would be used to determine the unknown F₀ genot
 {{< textin
   question="A cross between a dominant-expressing individual of unknown genotype and a homozygous recessive individual, used to reveal whether the unknown parent is heterozygous or homozygous, is called a ________."
   answer="test cross"
-  accept="test crosses|testcross|testcrosses"
+  accept="testcross"
   hint="Mendel used this technique to distinguish a homozygous dominant individual from a heterozygous one."
 >}}
 
@@ -380,7 +378,7 @@ they cannot carry it because an individual needs two X chromosomes to be a carri
 {{< textin
   question="Having only one allele for a characteristic, as in the X-linked genes of an XY male, is described as being ________ for that characteristic."
   answer="hemizygous"
-  accept="hemizygote|hemizygotes"
+  accept="hemizygote"
   hint="This describes a male's relationship to any gene located on the X chromosome, since he has only one copy."
 >}}
 

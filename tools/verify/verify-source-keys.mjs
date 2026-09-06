@@ -21,12 +21,37 @@
  *   selfcheck       a model answer matched to a source exercise must be made
  *                   of the source solution's own words (token coverage ≥
  *                   MODEL_COVERAGE_FLOOR); a locally written self-check has no
- *                   source and is counted, not judged
+ *                   source and is counted, not judged, and so is one whose
+ *                   matched source exercise is UNKEYED — Microbiology prints
+ *                   no answer for its Short Answer and Critical Thinking
+ *                   questions, so those model answers are author-written
+ *                   from the module by policy (docs/subjects/microbiology.md)
+ *                   and there is nothing to compare them against. (Its
+ *                   Check Your Understanding questions are list items in a
+ *                   <note>, not <exercise>s, so a self-check built from one
+ *                   reports 'unmatched', not 'unkeyed'.)
  *
  *   sortbins        the bins must name a source table's data columns, and no
  *                   item may read better under a different column than the
  *                   one it is keyed to; a config matching no table is
  *                   counted as unmatched, not judged
+ *
+ *   fillin          (math pages) every number the page keys must be printed
+ *                   by the CNXML `<solution>` of the exercise the question
+ *                   transcribes — fractions and mixed numbers are read off
+ *                   the MathML, number words ("thirty-two") off the prose,
+ *                   and a value the page rounds to fewer places than the
+ *                   source (or the source to fewer than the page) still
+ *                   agrees. The exercise is matched by prose AND by the
+ *                   numbers in the question, because a Try It and its
+ *                   Example share every word but the values. A symbolic
+ *                   answer ($-x-3$, an interval) is counted, not judged; so
+ *                   is a question whose source solution prints no value (a
+ *                   figure-only solution). `verify-answers` re-derives what
+ *                   it can from the question alone; this is the OTHER third
+ *                   reading, for the word problems and rounding asks it
+ *                   cannot parse — and it is the only gate that sees a
+ *                   source solution that is itself wrong (errata 342–344).
  *
  * A page item whose question matches no source exercise is COUNTED as
  * unmatched, never failed and never silently dropped, exactly as
@@ -323,6 +348,27 @@ export const DISCLOSED_DEVIATIONS = Object.freeze([
     reason: 'source keys "economically underdeveloped" for a country with zero population growth, but the module\'s own text says "Other developed countries, such as Italy, have zero population growth" and places the highest growth "in less economically developed countries of Africa and Asia"; the page keys "economically developed"',
   },
   {
+    page: 'content/math/elementary-algebra/10-quadratic-equations/04-solve-applications-modeled-by-quadratic-equations.md',
+    exercise: 'fs-id1166502223035',
+    kind: 'key',
+    erratum: 342,
+    reason: 'source prints "The distance to the opposite corner is 3.2" for a field whose width w satisfies w^2+(2w)^2=(w+4)^2, so w=1+sqrt(5)≈3.236 and the asked-for diagonal is w+4≈7.236; 3.2 is the width rounded, and the page keys 7.2',
+  },
+  {
+    page: 'content/math/elementary-algebra/10-quadratic-equations/04-solve-applications-modeled-by-quadratic-equations.md',
+    exercise: 'fs-id1166502222992',
+    kind: 'key',
+    erratum: 343,
+    reason: 'source prints the ball reaching 48 feet "on the way down in 5.5 seconds", but -16t^2+96t=48 gives t=3±sqrt(6), and 3+sqrt(6)=5.449… rounds to 5.4; the page keys 0.6 and 5.4',
+  },
+  {
+    page: 'content/math/intermediate-algebra/02-solving-linear-equations/07-solve-absolute-value-inequalities.md',
+    exercise: 'fs-id1167835534335',
+    kind: 'key',
+    erratum: 344,
+    reason: 'source prints the production range as "207,500 to 2,225,000 bottles", but 215,000+7,500=222,500; the page keys 207500 and 222500',
+  },
+  {
     page: 'content/life-health-sciences/biology/46-ecosystems/02-energy-flow-through-ecosystems.md',
     exercise: 'fs-idm130633648',
     kind: 'key',
@@ -415,9 +461,19 @@ export function readModule(xml) {
     const list = problem ? descendants(problem, (node) => localName(node) === 'list')[0] : null;
     const options = list ? elementChildren(list, 'item').map((item) => normalizeWhitespace(textContent(item))) : [];
     const solutionText = solution ? proseOf(solution, { withLists: true }) : '';
+    const problemText = problem ? proseOf(problem, { withLists: false }) : '';
     return {
       id: exercise.attributes.id || '',
-      problem: problem ? proseOf(problem, { withLists: false }) : '',
+      problem: problemText,
+      // The numbers a fill-in judgment reads: the problem's, to tell a Try
+      // It from the Example it shadows; the solution's, to confirm a key.
+      problemValues: problem ? mathmlValues(problem) : [],
+      problemShape: problem ? mathmlShape(problem) : [0, 0, 0, 0],
+      solutionValues: solution ? mathmlValues(solution).concat(unitTotals(solutionText)) : [],
+      // A problem that shows a figure may be answered from a figure the page
+      // draws differently (its own graph, its own fraction diagram), so its
+      // solution cannot confirm the page's key.
+      figure: problem ? descendants(problem, (node) => ['media', 'image'].includes(localName(node))).length > 0 : false,
       options,
       solution: solutionText,
       keyed: options.length ? keyedOptionIndex(solutionText, options) : null,
@@ -472,6 +528,14 @@ export function pageItems(markdown) {
       question: sc.params.question || '',
       answer: sc.params.answer || '',
       options: sc.inner.split('\n').map((line) => line.trim()).filter(Boolean),
+    });
+  }
+  for (const sc of shortcodes(markdown, 'fillin')) {
+    items.push({
+      type: 'fillin',
+      line: lineOf(markdown, sc.index),
+      question: sc.params.question || '',
+      answer: sc.params.answer || '',
     });
   }
   for (const sc of shortcodes(markdown, 'textin')) {
@@ -608,12 +672,26 @@ export function judgeTextin(item, source) {
 
 /**
  * A selfcheck model answer against the source solution its question matches:
- * 'verbatim', 'reworded' (coverage ≥ MODEL_COVERAGE_FLOOR), 'diverges', or
- * 'unmatched' when no source exercise reads like the question.
+ * 'verbatim', 'reworded' (coverage ≥ MODEL_COVERAGE_FLOOR), 'diverges',
+ * 'unmatched' when no source exercise reads like the question, or 'unkeyed'
+ * when the matched exercise carries no solution at all.
+ *
+ * 'unkeyed' is not a weaker 'unmatched': the QUESTION is transcribed from the
+ * source and the match is real; what is absent is the answer. Biology keyed
+ * every exercise, so this case could not arise; Microbiology keys its
+ * multiple-choice, fill-in, true/false, and matching sets and prints no
+ * answer for 224 of its 226 Short Answer and all 159 of its Critical Thinking
+ * questions, whose model answers this project writes from the module's own
+ * sentences under a policy the checker and the blind solve enforce instead.
+ * Measuring such a model answer against an empty solution scores 0 and would
+ * fail every one of them. (The book's Check Your Understanding questions are
+ * not exercises at all — bulleted items inside a <note> — so readModule never
+ * sees them and their self-checks report 'unmatched'.)
  */
 export function judgeSelfcheck(item, source) {
   const exercise = bestExercise(item.question, source.exercises);
   if (!exercise) return { status: 'unmatched' };
+  if (!normalizeWhitespace(exercise.solution)) return { status: 'unkeyed', exercise };
   const coverage = phraseCoverage(item.model, exercise.solution);
   if (coverage >= 0.95) return { status: 'verbatim', exercise, coverage };
   if (coverage >= MODEL_COVERAGE_FLOOR) return { status: 'reworded', exercise, coverage };
@@ -710,6 +788,272 @@ export function judgeSortbins(item, source) {
   return { status: 'confirmed', table };
 }
 
+/* ---- math fill-ins -------------------------------------------------------- */
+
+const ONES = Object.freeze({
+  zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10,
+  eleven: 11, twelve: 12, thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19,
+});
+const TENS = Object.freeze({ twenty: 20, thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy: 70, eighty: 80, ninety: 90 });
+const MULTIPLES = Object.freeze({ twice: 2, double: 2, doubled: 2, triple: 3, tripled: 3, thrice: 3, half: 0.5, dozen: 12 });
+
+/** The values the number words of a printed solution name ("thirty-two
+ * 49-cent stamps", "five drinks", "twenty-six"). An ordinal or a fraction word
+ * ("one-fourth", "ten-thousands") names no value. Signs are not read: the
+ * callers compare magnitudes where these matter. */
+export function numberWords(text) {
+  const values = [];
+  for (const word of String(text).toLowerCase().split(/[^a-z-]+/)) {
+    if (!word) continue;
+    const [head, tail, more] = word.split('-');
+    if (more !== undefined) continue;
+    if (head in TENS && (tail === undefined || tail in ONES)) values.push(TENS[head] + (tail ? ONES[tail] : 0));
+    else if (head in ONES && tail === undefined) values.push(ONES[head]);
+    else if (head in MULTIPLES && tail === undefined) values.push(MULTIPLES[head]);
+  }
+  return values;
+}
+
+/** Every number in a run of text. A thousands-grouped figure (207,500) is
+ * one number; a bare comma between short runs (8,22) separates two; a
+ * Unicode minus is a minus. */
+const NUMBER_RE = /(?<![\d.])-?(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?(?!\d)|(?<![\d.])-?\.\d+/g;
+export function textNumbers(text) {
+  return [...String(text).replace(/[\u2212\u2013]/g, '-').replace(/\$/g, '').matchAll(NUMBER_RE)]
+    .map((m) => Number(m[0].replace(/,/g, '')))
+    .filter(Number.isFinite);
+}
+
+/** A mixed-unit measurement's total in the smaller unit: "4 lbs. 8 oz." is
+ * 72 ounces, "9 ft 2 in" is 110 inches — the form a page keys so the value is
+ * gradable as one number. */
+export function unitTotals(text) {
+  const totals = [];
+  const plain = String(text).replace(/[\u2212\u2013]/g, '-');
+  for (const m of plain.matchAll(/(\d+(?:\.\d+)?)\s*(?:lbs?|pounds?)\.?\s*(?:,|and)?\s*(\d+(?:\.\d+)?)\s*(?:oz|ounces?)\b/gi)) totals.push(16 * Number(m[1]) + Number(m[2]));
+  for (const m of plain.matchAll(/(\d+(?:\.\d+)?)\s*(?:ft|feet|foot)\.?\s*(?:,|and)?\s*(\d+(?:\.\d+)?)\s*(?:in|inches|inch)\b/gi)) totals.push(12 * Number(m[1]) + Number(m[2]));
+  for (const m of plain.matchAll(/(\d+(?:\.\d+)?)\s*(?:yd|yards?)\.?\s*(?:,|and)?\s*(\d+(?:\.\d+)?)\s*(?:ft|feet|foot)\b/gi)) totals.push(3 * Number(m[1]) + Number(m[2]));
+  for (const m of plain.matchAll(/(\d+(?:\.\d+)?)\s*(?:hours?|hr|h)\.?\s*(?:,|and)?\s*(\d+(?:\.\d+)?)\s*(?:minutes?|min)\b/gi)) totals.push(60 * Number(m[1]) + Number(m[2]));
+  return totals;
+}
+
+/** Numbers and number words in the order the text prints them — order is
+ * what tells a Try It from the Example it shadows. */
+export function proseValues(text) {
+  const values = [];
+  const plain = String(text).replace(/[\u2212\u2013]/g, '-').replace(/\$/g, '');
+  const token = new RegExp(`${NUMBER_RE.source}|[a-zA-Z]+(?:-[a-zA-Z]+)*`, 'g');
+  for (const m of plain.matchAll(token)) {
+    if (/\d/.test(m[0])) values.push(...textNumbers(m[0]));
+    else values.push(...numberWords(m[0]));
+  }
+  return values;
+}
+
+const isElement = (node, name) => typeof node !== 'string' && localName(node) === name;
+const fracValue = (mfrac) => {
+  const [num, den] = elementChildren(mfrac).map((part) => mathmlValues(part));
+  return num && den && num.length === 1 && den.length === 1 && den[0] !== 0 ? num[0] / den[0] : null;
+};
+
+/**
+ * The numeric values a CNXML subtree prints, MathML read structurally: an
+ * `<m:mfrac>` is its quotient (its numerator and denominator are listed too,
+ * so a twin guard on "3 125" still sees the digits), a `<m:mn>` after a minus
+ * `<m:mo>` is negative, and an `<m:mn>` followed by an `<m:mfrac>` is a mixed
+ * number. Prose numbers come through `textNumbers`.
+ */
+export function mathmlValues(node) {
+  const values = [];
+  const visit = (candidate) => {
+    if (typeof candidate === 'string') { values.push(...proseValues(candidate)); return; }
+    const kids = (candidate.children || []).filter((kid) => typeof kid !== 'string' || kid.trim());
+    for (let i = 0; i < kids.length; i += 1) {
+      const kid = kids[i];
+      if (typeof kid === 'string') { values.push(...proseValues(kid)); continue; }
+      const prev = kids[i - 1];
+      const negated = prev !== undefined && isElement(prev, 'mo') && /^[\u2212\u2013-]$/.test(textContent(prev).trim());
+      if (isElement(kid, 'mfrac')) {
+        const quotient = fracValue(kid);
+        if (quotient !== null) {
+          values.push(negated ? -quotient : quotient);
+          if (prev !== undefined && isElement(prev, 'mn')) {
+            const whole = textNumbers(textContent(prev));
+            if (whole.length === 1) values.push(whole[0] + quotient);
+          }
+        }
+        visit(kid);
+        continue;
+      }
+      if (isElement(kid, 'mn')) {
+        // "$3,333.33" is marked up as mn 3 · mo , · mn 333.33 — one number;
+        // "7, −21, 63, −189, 567" is marked up the same way and is five.
+        // Both readings are kept: a value is confirmed by being printed,
+        // and a spurious grouped reading never hides a printed one.
+        // A group that starts with 0 ("84,000") is only ever a thousands
+        // group, so that reading is the only one kept and the parts are not.
+        const text = textContent(kid).trim();
+        let own = textNumbers(text);
+        if (/^\d{1,3}$/.test(text)) {
+          let grouped = text;
+          for (let j = i; kids[j + 1] !== undefined && isElement(kids[j + 1], 'mo') && textContent(kids[j + 1]).trim() === ','
+            && kids[j + 2] !== undefined && isElement(kids[j + 2], 'mn') && /^\d{3}(?:\.\d+)?$/.test(textContent(kids[j + 2]).trim()); j += 2) {
+            const group = textContent(kids[j + 2]).trim();
+            grouped = `${grouped},${group}`;
+            if (group.startsWith('0')) { own = textNumbers(grouped); i = j + 2; grouped = ''; if (true) break; }
+            values.push(...textNumbers(grouped).map((value) => (negated ? -value : value)));
+            if (grouped.includes('.')) break;
+          }
+        }
+        values.push(...(negated ? own.map((value) => -value) : own));
+        continue;
+      }
+      visit(kid);
+    }
+  };
+  visit(node);
+  return values;
+}
+
+/** The shape of the math in a question — how many powers, fractions, roots,
+ * and factorials it writes — so that $a_n = 3^n + 4$ is told from
+ * $a_n = 3n - 4$, which prints the same numbers in the same order. */
+export function latexShape(latex) {
+  const text = String(latex).replace(/\^\\circ/g, '');
+  return [
+    (text.match(/\^/g) || []).length,
+    (text.match(/\\[td]?frac\b/g) || []).length,
+    (text.match(/\\sqrt\b/g) || []).length,
+    (text.match(/!/g) || []).length,
+  ];
+}
+export function mathmlShape(node) {
+  const count = (name) => descendants(node, (candidate) => localName(candidate) === name).length;
+  return [count('msup') + count('msubsup'), count('mfrac'), count('msqrt') + count('mroot'), (textContent(node).match(/!/g) || []).length];
+}
+
+/** The numbers a page question prints, LaTeX and prose alike: a `\frac{a}{b}`
+ * contributes a, b, and a/b; number words count; commands and braces do not. */
+export function latexNumbers(latex) {
+  const withFractions = String(latex).replace(
+    /\\[td]?frac\{(-?[\d.]+)\}\{(-?[\d.]+)\}/g,
+    (m, a, b) => ` ${a} ${b} ${Number(b) ? Number(a) / Number(b) : ''} `,
+  );
+  const plain = withFractions.replace(/\\[a-zA-Z]+/g, ' ').replace(/[{}^_$]/g, ' ');
+  return proseValues(plain);
+}
+
+/**
+ * The values a fill-in key holds, or null when the key is symbolic (a letter
+ * outside a fraction, an interval, a radical). A list or tuple key is its
+ * members; a mixed number and a signed fraction are their values.
+ */
+export function answerValues(answer) {
+  let text = String(answer)
+    .replace(/\\[,;!]|\\left|\\right|\\%|\\\$|\^\\circ|\u00b0/g, ' ')
+    .replace(/\u2212/g, '-');
+  text = text.replace(
+    /(?<![\d.])(-?)(\d+)\s*\\[td]?frac\{(\d+)\}\{(\d+)\}/g,
+    (m, sign, whole, a, b) => ` ${sign}${Number(whole) + Number(a) / Number(b)} `,
+  );
+  text = text.replace(
+    /(-?)\\[td]?frac\{(-?[\d.]+)\}\{(-?[\d.]+)\}/g,
+    (m, sign, a, b) => ` ${sign}${Number(a) / Number(b)} `,
+  );
+  if (/[a-zA-Z\\]/.test(text)) return null;
+  const parts = text.split(/[,;()[\]\s]+/).filter(Boolean);
+  const values = parts.map((part) => Number(part.replace(/^\+/, '')));
+  if (!values.length || values.some((value) => !Number.isFinite(value))) return null;
+  return values;
+}
+
+const decimalsOf = (value) => {
+  const text = String(value);
+  const dot = text.indexOf('.');
+  return dot === -1 ? 0 : text.length - dot - 1;
+};
+
+/** Two printed values agree when they are equal, or when the one printed to
+ * fewer decimal places is the other rounded to that many: a page that keys
+ * $\frac{165}{74}$ hours agrees with a source that prints 2.2, and a page
+ * that keys 5.4 does NOT agree with a source that prints 5.5. */
+export function valuesAgree(pageValue, sourceValue) {
+  if (Math.abs(pageValue - sourceValue) < 1e-9) return true;
+  const places = Math.min(decimalsOf(pageValue), decimalsOf(sourceValue));
+  return Math.abs(pageValue - sourceValue) <= 0.5 * 10 ** -places + 1e-9;
+}
+
+/** The prose of a page question with its inline math lifted out, for the
+ * same token comparison the other judgments use against a source stem. */
+const questionProse = (question) => normalizeText(String(question).replace(/\$[^$]*\$/g, ' ').replace(/\\\$/g, '$'));
+
+/**
+ * One fillin against its source exercise. Returns
+ *   { status: 'confirmed' }
+ *   { status: 'unmatched' }              no source exercise reads like it with
+ *                                        the same numbers in its stem
+ *   { status: 'figure', exercise }       the source problem shows a figure the
+ *                                        page may draw differently — not judged
+ *   { status: 'unkeyed', exercise }      the source solution prints no value
+ *                                        beyond the problem's own
+ *   { status: 'symbolic', exercise }     the key is not a number or a list of
+ *                                        numbers — not judged here
+ *   { status: 'key-differs', detail }    a keyed value the solution does not print
+ */
+export function judgeFillin(item, source) {
+  const prose = questionProse(item.question);
+  const wanted = latexNumbers(item.question).map(Math.abs);
+  // The page may append an answer instruction that restates a number
+  // ("Enter the 49-cent count, then the 35-cent count."); the source's
+  // numbers must equal the page's either with or without such sentences.
+  const wantedWithoutInstructions = latexNumbers(
+    String(item.question).replace(/(?:^|(?<=[.?!]\s))(?:Enter|Give|Express|Write|Report|Type|Answer|List|State)\b[^.?!]*[.?!]?/g, ' '),
+  ).map(Math.abs);
+  const shape = latexShape(item.question);
+  // A page question that reads a figure of its own ("the map above", "the
+  // graph shown") is answered from what the page draws, which the source
+  // solution cannot vouch for.
+  if (/\b(?:figure|graph|table|map|diagram|chart|picture|data|measurements?|number line|plot)\b[^.]{0,30}\b(?:above|below|shown)\b|\b(?:shown|pictured)\b|\b(?:in|from|on|using) the (?:figure|graph|table|diagram|chart|map|plot)\b/i.test(item.question)) return { status: 'figure' };
+  let best = null;
+  for (const exercise of source.exercises) {
+    const score = tokenSimilarity(prose, exercise.problem);
+    if (score < MATCH_FLOOR) continue;
+    // The numbers must agree in ORDER: a Try It shares every word of its
+    // Example but the values, a page variant of "$a_n = 4n - 3$" reads
+    // "$a_n = 3n - 4$" with the same numbers swapped, and a page item with no
+    // number in its stem would otherwise match any exercise that reads like it.
+    const have = exercise.problemValues.map(Math.abs);
+    const sameList = (list) => list.length === have.length && list.every((n, i) => Math.abs(n - have[i]) < 1e-9);
+    if (!sameList(wanted) && !sameList(wantedWithoutInstructions)) continue;
+    if (shape.some((n, i) => n !== exercise.problemShape[i])) continue;
+    if (!best || score > best.score) best = { score, exercise };
+  }
+  if (!best) return { status: 'unmatched' };
+  const { exercise } = best;
+  if (exercise.figure) return { status: 'figure', exercise };
+  const values = answerValues(item.answer);
+  if (!values) return { status: 'symbolic', exercise };
+  // A solution that only restates the problem's own numbers (a "translate to
+  // a system" Try It whose printed answer is the system) keys nothing.
+  const fresh = exercise.solutionValues.filter((value) => !exercise.problemValues.some((given) => Math.abs(Math.abs(given) - Math.abs(value)) < 1e-9));
+  if (!fresh.length) return { status: 'unkeyed', exercise };
+  // "Answer as a fraction with denominator 8": the page fixes the form, and
+  // the source's count of eighths (2) is the page's numerator (2/8).
+  const denominator = String(item.question).match(/\bdenominator\s+(\d+)\b/i);
+  const numerator = denominator ? String(item.answer).match(/^\s*-?\\[td]?frac\{(-?\d+)\}\{(\d+)\}\s*$/) : null;
+  const candidates = numerator && numerator[2] === denominator[1] ? [Number(numerator[1])] : values;
+  const missing = candidates.filter((value) => !exercise.solutionValues.some((printed) => valuesAgree(value, printed)));
+  if (missing.length) {
+    return {
+      status: 'key-differs',
+      exercise,
+      detail: `fillin keys ${JSON.stringify(item.answer)} (value${missing.length > 1 ? 's' : ''} ${missing.join(', ')} not printed) `
+        + `but source ${exercise.id} solves it as ${JSON.stringify(exercise.solution.slice(0, 140))}`,
+    };
+  }
+  return { status: 'confirmed', exercise };
+}
+
 /* ---- corpus walk ---------------------------------------------------------- */
 
 export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose = false } = {}) {
@@ -721,11 +1065,13 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
   const counts = {
     multiplechoice: { confirmed: 0, disclosed: 0, unmatched: 0, 'prose-key': 0 },
     textin: { glossary: 0, 'glossary-completed': 0, term: 0, summary: 0, body: 0 },
-    selfcheck: { verbatim: 0, reworded: 0, disclosed: 0, unmatched: 0 },
+    selfcheck: { verbatim: 0, reworded: 0, disclosed: 0, unmatched: 0, unkeyed: 0 },
     sortbins: { confirmed: 0, disclosed: 0, unmatched: 0 },
+    fillin: { confirmed: 0, disclosed: 0, unmatched: 0, figure: 0, unkeyed: 0, symbolic: 0 },
   };
   const failures = [];
   const notes = [];
+  const verdicts = [];
   const used = new Set();
   const deviationFor = (page, exercise) => DISCLOSED_DEVIATIONS.find(
     (entry) => entry.page === page && entry.exercise === exercise,
@@ -733,13 +1079,18 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
 
   // A bundle with no checkout directory at all is skipped wholesale (see the
   // header); its sections are tallied here, keyed by bundle, so the caller can
-  // say exactly what went unread. A present checkout is read in full.
+  // say exactly what went unread. A present checkout is read in full. Every
+  // absent bundle is named, even one with no mapped section yet (a
+  // scaffolded book): the skip line is how a CI run says the bundle was not
+  // there, and silence would read as "read and clean".
   const skipped = {};
+  for (const bundleKey of lock.bundleKeys) {
+    if (!existsSync(bundleSourceDirectory(repositoryRoot, lock, bundleKey))) skipped[bundleKey] = 0;
+  }
   const checked = [];
   for (const section of sections) {
-    const sourceDir = bundleSourceDirectory(repositoryRoot, lock, section.bundle);
-    if (existsSync(sourceDir)) checked.push(section);
-    else skipped[section.bundle] = (skipped[section.bundle] || 0) + 1;
+    if (section.bundle in skipped) skipped[section.bundle] += 1;
+    else checked.push(section);
   }
 
   for (const section of checked) {
@@ -778,6 +1129,26 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
         } else {
           counts[item.type][verdict.status] += 1;
           if (verdict.status !== 'confirmed') notes.push(`${where} ${item.type} ${verdict.status}: ${item.question.slice(0, 80)}`);
+        }
+      } else if (item.type === 'fillin') {
+        const verdict = judgeFillin(item, source);
+        verdicts.push({ page: section.localPath, line: item.line, type: 'fillin', status: verdict.status });
+        if (verdict.status === 'key-differs') {
+          const deviation = deviationFor(section.localPath, verdict.exercise.id);
+          if (deviation && deviation.kind === 'key') {
+            used.add(deviation);
+            counts.fillin.disclosed += 1;
+            notes.push(`${where} keys against the source solution on purpose (erratum ${deviation.erratum})`);
+          } else {
+            failures.push({
+              page: section.localPath,
+              line: item.line,
+              detail: `${verdict.detail}\n    an intended correction needs an errata entry and a DISCLOSED_DEVIATIONS line (kind "key")`,
+            });
+          }
+        } else {
+          counts.fillin[verdict.status] += 1;
+          if (verdict.status !== 'confirmed') notes.push(`${where} fillin ${verdict.status}: ${item.question.slice(0, 80)}`);
         }
       } else if (item.type === 'textin') {
         const verdict = judgeTextin(item, source);
@@ -840,9 +1211,13 @@ export function checkCorpus(repositoryRoot, { contentRoot = 'content', verbose =
   const confirmed = counts.multiplechoice.confirmed
     + Object.values(counts.textin).reduce((a, b) => a + b, 0)
     + counts.selfcheck.verbatim + counts.selfcheck.reworded
-    + counts.sortbins.confirmed;
+    + counts.sortbins.confirmed
+    + counts.fillin.confirmed;
   return {
     counts, confirmed, failures, notes: verbose ? notes : [],
+    // Every fill-in's judgment, for solve-check's residual: the items neither
+    // verify-answers nor this gate could read are the ones a solver answers.
+    verdicts,
     sections: checked.length,
     skipped,
     sectionsSkipped: Object.values(skipped).reduce((a, b) => a + b, 0),
@@ -870,14 +1245,17 @@ export function summaryLine({ counts, confirmed, failures, sections, sectionsSki
   const textin = Object.values(counts.textin).reduce((a, b) => a + b, 0);
   const selfcheck = counts.selfcheck.verbatim + counts.selfcheck.reworded;
   const sortbins = counts.sortbins ?? { confirmed: 0, disclosed: 0, unmatched: 0 };
+  const fillin = counts.fillin ?? { confirmed: 0, disclosed: 0, unmatched: 0, figure: 0, unkeyed: 0, symbolic: 0 };
+  const unkeyed = counts.selfcheck.unkeyed ?? 0;
   const scope = sectionsSkipped
     ? ` (partial: ${sectionsSkipped} of ${sections + sectionsSkipped} mapped sections skipped, no checkout)`
     : '';
   return `${failures.length ? '✖' : sectionsSkipped ? '⊘' : '✓'} source-key cross-check${scope}: `
     + `${confirmed} keyed answers confirmed against the pinned CNXML across ${sections} mapped sections `
-    + `(multiplechoice ${mc.confirmed}, textin ${textin}, selfcheck ${selfcheck}, sortbins ${sortbins.confirmed}); `
-    + `${mc.disclosed + counts.selfcheck.disclosed + sortbins.disclosed} disclosed correction(s); ${mc.unmatched + counts.selfcheck.unmatched + sortbins.unmatched} unmatched to any source exercise; `
-    + `${mc['prose-key']} prose-keyed; ${failures.length} failure(s)`;
+    + `(multiplechoice ${mc.confirmed}, textin ${textin}, selfcheck ${selfcheck}, sortbins ${sortbins.confirmed}, fillin ${fillin.confirmed}); `
+    + `${mc.disclosed + counts.selfcheck.disclosed + sortbins.disclosed + fillin.disclosed} disclosed correction(s); ${mc.unmatched + counts.selfcheck.unmatched + sortbins.unmatched + fillin.unmatched} unmatched to any source exercise; `
+    + `${mc['prose-key']} prose-keyed; ${unkeyed} matched to an unkeyed source question; `
+    + `fillin ${fillin.figure ?? 0} figure-only, ${fillin.unkeyed} unkeyed, ${fillin.symbolic} symbolic; ${failures.length} failure(s)`;
 }
 
 /* ---- CLI ------------------------------------------------------------------ */

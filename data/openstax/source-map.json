@@ -13,6 +13,10 @@
     "biology-bundle": {
       "repository": "https://github.com/openstax/osbooks-biology-bundle",
       "commit": "63f8b6f8d129dd1582989bb755011e9a6d523471"
+    },
+    "microbiology": {
+      "repository": "https://github.com/openstax/osbooks-microbiology",
+      "commit": "633850257fbd3ccf6187b9428c55e80b69236382"
     }
   },
   "books": {
@@ -157,6 +161,15 @@
           ]
         }
       ]
+    },
+    "microbiology": {
+      "bundle": "microbiology",
+      "contentPath": "content/life-health-sciences/microbiology",
+      "authoringStatus": "in-progress",
+      "upstreamChapters": 26,
+      "upstreamSections": 127,
+      "localChapters": 2,
+      "mappedSections": 7
     }
   },
   "sections": [
@@ -2031,6 +2044,69 @@
       "moduleId": "m66710",
       "sourceTitle": "Preserving Biodiversity",
       "moduleSha256": "bde79a9f01a18fb703b37a3ade1f00b38c93045b17491a82c0d2fd245bef565a"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/01-an-invisible-world/01-what-our-ancestors-knew.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "1.1",
+      "moduleId": "m58781",
+      "sourceTitle": "What Our Ancestors Knew",
+      "moduleSha256": "0f8d05e887dc669016b1a9eefff0eb863f68460682a0663232ad749b2b268ff8"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/01-an-invisible-world/02-a-systematic-approach.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "1.2",
+      "moduleId": "m58782",
+      "sourceTitle": "A Systematic Approach",
+      "moduleSha256": "7bd838bf96a015ac39e6d854482cdae6571f9995ce8a21f8eed212e75b3a26ad"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/01-an-invisible-world/03-types-of-microorganisms.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "1.3",
+      "moduleId": "m58783",
+      "sourceTitle": "Types of Microorganisms",
+      "moduleSha256": "afa59ac2923515d640f5377f24722317b440d5b87822c5d0c8ca1717613498a3"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/02-how-we-see-the-invisible-world/01-the-properties-of-light.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "2.1",
+      "moduleId": "m58785",
+      "sourceTitle": "The Properties of Light",
+      "moduleSha256": "ab6c5ee0dacbf553e4e36dbbf363a86a907e677a18fffe0e031f33862e107b72"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/02-how-we-see-the-invisible-world/02-peering-into-the-invisible-world.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "2.2",
+      "moduleId": "m58786",
+      "sourceTitle": "Peering Into the Invisible World",
+      "moduleSha256": "a1c1ac0560b901c109f8998ea551b20a0acbd15df62bdc8a36afa9b3f6aaee70"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/02-how-we-see-the-invisible-world/03-instruments-of-microscopy.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "2.3",
+      "moduleId": "m58787",
+      "sourceTitle": "Instruments of Microscopy",
+      "moduleSha256": "d5be943f4046db6244bafeccea2007c0bd05856416e1785fd156be11e27b1010"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/02-how-we-see-the-invisible-world/04-staining-microscopic-specimens.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "2.4",
+      "moduleId": "m58788",
+      "sourceTitle": "Staining Microscopic Specimens",
+      "moduleSha256": "938d2b0b4690cbe5320a775a2426395f3574a127f8d4e5b15937d8e9cfd01f6d"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

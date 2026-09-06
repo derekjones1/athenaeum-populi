@@ -131,7 +131,6 @@ this increases the likelihood the next generation is well-adapted to its environ
 {{< textin
   question="The allocation of energy resources for body maintenance, reproduction, and parental care is called an organism's ________."
   answer="energy budget"
-  accept="energy budgets"
   hint="Picture it as an accounting ledger: what comes in from feeding has to be divided among staying alive, growing, and producing the next generation."
 >}}
 

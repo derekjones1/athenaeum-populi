@@ -178,7 +178,6 @@ Internal receptors are found in the cell cytoplasm. Here, they bind ligand molec
 {{< textin
   question="A molecule produced by a signaling cell that binds a specific receptor, delivering a signal in the process, is called a ________."
   answer="ligand"
-  accept="ligands"
   hint="Its own name says what it does: it binds."
 >}}
 

@@ -154,28 +154,28 @@ to alter their activity
 {{< textin
   question="A protein that binds just upstream or downstream of an mRNA's protein-coding region to increase or decrease its stability is called a(n) ________."
   answer="RNA-binding protein"
-  accept="RNA-binding proteins|RBP|RBPs"
+  accept="RBP"
   hint="This section abbreviates the term with three letters, always ending in P for protein."
 >}}
 
 {{< textin
   question="A segment of an RNA molecule that lies before or after the protein-coding region and is not itself translated into protein is called a(n) ________."
   answer="untranslated region"
-  accept="untranslated regions|UTR|UTRs"
+  accept="UTR"
   hint="The section names two of these regions, one on each side of the protein-coding sequence."
 >}}
 
 {{< textin
   question="A series of adenine nucleotides attached to the 3′ end of an mRNA to protect it from degradation is called the ________."
   answer="poly-A tail"
-  accept="poly-A tails|polyA tail"
+  accept="polyA tail"
   hint="It is a long chain of a single repeated nucleotide, attached opposite the end that gets the 5′ cap."
 >}}
 
 {{< textin
   question="Short RNA molecules only 21 to 24 nucleotides long that bind to RNA molecules and can lead to their degradation are called ________."
   answer="microRNAs"
-  accept="microRNA|miRNA|miRNAs"
+  accept="microRNA|miRNA"
   hint="Dicer chops the longer pre-form of this molecule into its mature, functional form."
 >}}
 

@@ -131,7 +131,6 @@ The gametophyte is the longest phase of the life cycle.
 {{< textin
   question="A seed plant with naked seeds exposed on modified leaves or in cones is called a(n) ________."
   answer="gymnosperm"
-  accept="gymnosperms"
   hint="Its name comes from the Greek for “naked seed.”"
 >}}
 
@@ -189,21 +188,19 @@ Gnetophyta
 {{< textin
   question="The dominant phylum of gymnosperms with the greatest variety of trees is called the ________."
   answer="conifer"
-  accept="conifers|Coniferophyta"
+  accept="Coniferophyta"
   hint="This phylum includes pines, spruces, firs, cedars, sequoias, and yews."
 >}}
 
 {{< textin
   question="A gymnosperm that grows in tropical climates and resembles a palm tree, and belongs to the phylum Cycadophyta, is called a(n) ________."
   answer="cycad"
-  accept="cycads"
   hint="Its large cones may be pollinated by beetles instead of wind, which is unusual for a gymnosperm."
 >}}
 
 {{< textin
   question="A gymnosperm of the group that has only one extant species, a tree with fan-shaped leaves, is called a(n) ________."
   answer="ginkgophyte"
-  accept="ginkgophytes"
   hint="Its one living species is cultivated in monasteries and city parks partly for its resistance to pollution."
 >}}
 
@@ -246,7 +243,7 @@ female gametophytes
 {{< textin
   question="The diploid mother cell that undergoes meiosis inside the ovule to produce the large spores of a heterosporous plant is called a ________."
   answer="megasporocyte"
-  accept="megasporocytes|megaspore mother cell|megaspore mother cells"
+  accept="megaspore mother cell"
   hint="This is the larger of the two mother cells; the smaller one, which produces male gametophytes, is prefixed 'micro-' instead."
 >}}
 

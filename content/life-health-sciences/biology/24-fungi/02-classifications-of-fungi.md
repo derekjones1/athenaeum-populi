@@ -233,7 +233,7 @@ Basidiomycota have multicellular bodies; features include sexual spores in the b
 {{< textin
   question="In zygomycetes, the thick-coated structure that protects the developing zygote from desiccation until conditions favor germination is called a ________."
   answer="zygospore"
-  accept="zygospores|zygosporangium|zygosporangia"
+  accept="zygosporangium|zygosporangia"
   hint="This structure's parent phylum's two mating strains are labeled type + and type – in this section."
 >}}
 

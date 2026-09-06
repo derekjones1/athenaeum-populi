@@ -311,7 +311,6 @@ under ideal conditions, energy from 18 molecules of ATP is required to synthesiz
 {{< textin
   question="A series of interconnected biochemical reactions that convert a substrate molecule or molecules, step-by-step, through a series of metabolic intermediates, eventually yielding a final product or products, is called a ________."
   answer="metabolic pathway"
-  accept="metabolic pathways"
 >}}
 
 ### 6.2 Potential, Kinetic, Free, and Activation Energy
@@ -396,7 +395,6 @@ the reactants are ATP and a water molecule
 {{< textin
   question="An inorganic ion, such as iron or magnesium, required for optimal enzyme activity is called a ________."
   answer="cofactor"
-  accept="cofactors"
 >}}
 
 {{< multiplechoice
@@ -460,7 +458,7 @@ the concentration of ADP is low
 {{< textin
   question="In the second step of glycolysis, the enzyme that converts glucose-6-phosphate into fructose-6-phosphate is a(n) ________."
   answer="isomerase"
-  accept="isomerases|phosphoglucose isomerase"
+  accept="phosphoglucose isomerase"
 >}}
 
 {{< selfcheck question="Why can glucose-6-phosphate no longer leave the cell once hexokinase has phosphorylated glucose in the first step of glycolysis?" >}}
@@ -591,7 +589,7 @@ glucose-6-phosphate
 {{< textin
   question="A molecule that binds an allosteric site on an enzyme, increasing or decreasing its activity depending on conditions, is called a(n) ________."
   answer="allosteric effector"
-  accept="allosteric effectors|allosteric regulator|allosteric regulators"
+  accept="allosteric regulator"
 >}}
 
 {{< selfcheck question="How is pyruvate kinase's activity controlled by phosphorylation and dephosphorylation?" >}}
@@ -697,7 +695,6 @@ The alpha subunit and beta-gamma subunit reassociate to form the inactive G-prot
 {{< textin
   question="The region of a cell-surface receptor that is located on the cell surface and binds an external ligand is called the ________."
   answer="extracellular domain"
-  accept="extracellular domains"
 >}}
 
 {{< selfcheck question="How does autocrine signaling during early development help ensure that a group of neighboring cells reach the correct developmental outcome?" >}}
@@ -713,7 +710,6 @@ ensuring the proper developmental outcome
 {{< textin
   question="A chemical compound formed when two molecules, often identical, join together to form a stable complex is called a ________."
   answer="dimer"
-  accept="dimers"
 >}}
 
 {{< multiplechoice
@@ -807,7 +803,7 @@ blood type
 {{< textin
   question="In a prokaryote, the region of the cell that contains the single, circular chromosome is called the ________."
   answer="nucleoid"
-  accept="nucleoids|nucleoid region"
+  accept="nucleoid region"
 >}}
 
 {{< selfcheck question="How much genetic difference typically exists between any pair of human homologous chromosomes, and which chromosome pair is the exception to that uniformity?" >}}
@@ -832,7 +828,6 @@ astral microtubules
 {{< textin
   question="The microtubule apparatus that orchestrates the movement of chromosomes during mitosis is called the ________."
   answer="mitotic spindle"
-  accept="mitotic spindles"
 >}}
 
 {{< selfcheck question="What are the two named portions of the mitotic phase, and what does each one accomplish?" >}}
@@ -858,7 +853,6 @@ eight minutes
 {{< textin
   question="A protein whose concentration fluctuates throughout the cell cycle and that must bind to a Cdk to help regulate the cell's progress through its checkpoints is called a ________."
   answer="cyclin"
-  accept="cyclins"
 >}}
 
 {{< selfcheck question="Why is the cell cycle of a fertilized fruit fly egg completed in only about eight minutes?" >}}

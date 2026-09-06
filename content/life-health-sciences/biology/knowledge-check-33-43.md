@@ -114,7 +114,6 @@ ruminant stomach
 {{< textin
   question="A ring-like muscle that forms valves controlling the movement of materials through the digestive tract is called a ________."
   answer="sphincter"
-  accept="sphincters"
 >}}
 
 {{< selfcheck question="How does the stomach protect its own lining from being digested by the enzyme pepsin?" >}}
@@ -130,7 +129,6 @@ the stomach has a thick mucus lining that protects the underlying tissue from th
 {{< textin
   question="The enzyme humans lack that would let them derive glucose from the polysaccharide cellulose is called ________."
   answer="cellulase"
-  accept="cellulases"
 >}}
 
 {{< sortbins question="Sort each amino acid according to whether the human body must consume it in the diet or can anabolize (build) it for itself." >}}
@@ -252,7 +250,7 @@ about −55 mV
 {{< textin
   question="The postsynaptic glutamate receptor normally blocked by magnesium ions until the membrane depolarizes, at which point calcium ions can pass into the postsynaptic cell through it, is called the ________ receptor."
   answer="NMDA"
-  accept="NMDA receptor|NMDA receptors|N-Methyl-D-aspartate"
+  accept="NMDA receptor|N-Methyl-D-aspartate"
 >}}
 
 {{< selfcheck question="After a neurotransmitter has bound receptors on the postsynaptic membrane, in what three ways can it be removed from the synaptic cleft?" >}}
@@ -321,7 +319,7 @@ the glossopharyngeal nerve carries a mix of sensory and motor fibers, with a rol
 {{< textin
   question="A nervous system disorder characterized by the progressive loss of neurological functioning, usually caused by neuron death, is called a ________."
   answer="neurodegenerative disorder"
-  accept="neurodegenerative disease|neurodegenerative disorders|neurodegenerative diseases"
+  accept="neurodegenerative disease"
 >}}
 
 {{< multiplechoice
@@ -378,7 +376,6 @@ this neuron constitutes the sensory receptor
 {{< textin
   question="A tension receptor related to muscle spindles that detects the force of muscle contraction is called a ________."
   answer="Golgi tendon organ"
-  accept="Golgi tendon organs"
 >}}
 
 {{< multiplechoice
@@ -414,7 +411,6 @@ umami
 {{< textin
   question="A cluster of gustatory receptors located within the papillae on the tongue is called a ________."
   answer="taste bud"
-  accept="taste buds"
 >}}
 
 {{< selfcheck question="Trace the path taste signals take from the taste cells to the primary gustatory cortex, naming the two brain structures they pass through in order." >}}
@@ -518,7 +514,6 @@ In the nucleus of the target cell.
 {{< textin
   question="The hormone that binds to a plasma membrane receptor is called a first messenger, and the cellular component it activates is called a ________."
   answer="second messenger"
-  accept="second messengers"
 >}}
 
 {{< selfcheck question="How does the plasma membrane hormone receptor pathway amplify the effect of a single hormone molecule binding its receptor?" >}}
@@ -638,7 +633,7 @@ allowing for movement
 {{< textin
   question="Any place at which two bones are joined is called a(n) ________."
   answer="articulation"
-  accept="articulations|joint|joints"
+  accept="joint"
 >}}
 
 ### 38.2 Bone
@@ -702,7 +697,7 @@ the shoulder and hip
 {{< textin
   question="The area of the sarcolemma on a muscle fiber that interacts with the neuron is called the ________."
   answer="motor end plate"
-  accept="motor endplate|motor endplates|motor end plates"
+  accept="motor endplate"
 >}}
 
 {{< multiplechoice
@@ -973,7 +968,6 @@ cortical radiate artery
 {{< textin
   question="The upper limit on the amount of solute that can be transported out of the renal tubules during reabsorption is called the ________."
   answer="transport maximum"
-  accept="transport maximums"
 >}}
 
 {{< selfcheck question="How do the macula densa and juxtaglomerular cells work together, and what do they ultimately help regulate?" >}}
@@ -1018,7 +1012,7 @@ Na⁺
 {{< textin
   question="An agent that prevents cell destruction by reactive oxygen species is called a(n) ________."
   answer="antioxidant"
-  accept="antioxidants|anti-oxidant|anti-oxidants"
+  accept="anti-oxidant"
 >}}
 
 {{< multiplechoice
@@ -1075,7 +1069,6 @@ its actions suppress the actions of aldosterone, ADH, and renin
 {{< textin
   question="A leukocyte that, like a neutrophil, releases chemicals to stimulate the inflammatory response is called a(n) ________."
   answer="basophil"
-  accept="basophils"
 >}}
 
 {{< multiplechoice
@@ -1135,7 +1128,7 @@ molecular mimicry
 {{< textin
   question="An enzyme that randomly excises segments from the light chain gene and splices one V segment to one J segment is called ________."
   answer="DNA recombinase"
-  accept="recombinase|recombinases|DNA recombinases"
+  accept="recombinase"
 >}}
 
 {{< selfcheck question="Antibodies protect the body against extracellular pathogens in three distinct ways after binding them. Describe neutralization, opsonization, and complement fixation." >}}

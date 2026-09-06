@@ -34,7 +34,6 @@ animals
 {{< textin
   question="The protein subunit that makes up a viral capsid is called a ________."
   answer="capsomere"
-  accept="capsomeres"
 >}}
 
 {{< selfcheck question="Why can't the methods scientists use to classify prokaryotic and eukaryotic cells by shared genomic sequence, such as 16S rRNA analysis, be applied to classify most viruses by common ancestry?" >}}
@@ -143,7 +142,6 @@ extremophiles
 {{< textin
   question="An organism that grows in a high sugar concentration is called a(n) ________."
   answer="osmophile"
-  accept="osmophiles"
 >}}
 
 {{< selfcheck question="What are Koch's postulates, and what two criteria do they set for identifying an organism as the cause of a disease?" >}}
@@ -225,7 +223,7 @@ bacteria called methane oxidizers oxidize the methane to carbon dioxide
 {{< textin
   question="A disease that primarily infects animals but can be transmitted to humans is called a ________."
   answer="zoonosis"
-  accept="zoonoses|zoonotic disease|zoonotic diseases"
+  accept="zoonoses|zoonotic disease"
 >}}
 
 {{< selfcheck question="Once a biofilm infection is established in the body, why is it especially difficult to eradicate with antibiotics?" >}}
@@ -410,7 +408,6 @@ Basidiomycota
 {{< textin
   question="The fruiting body of an ascomycete, formed by the growth of many hyphae, is called a(n) ________."
   answer="ascocarp"
-  accept="ascocarps"
 >}}
 
 {{< selfcheck question="Describe how sexual reproduction proceeds in the zygomycetes, from the fusion of compatible mating strains to the formation of new haploid spores." >}}
@@ -437,7 +434,6 @@ the forest floor
 {{< textin
   question="In an endomycorrhizal association, the branched structure that forms when fungal hyphae grow inside a plant root cell is called a ________."
   answer="arbuscule"
-  accept="arbuscules"
 >}}
 
 {{< selfcheck question="Explain why some fungi, such as the fungus that produces black truffles, depend on being eaten by an animal to disperse their spores." >}}
@@ -567,7 +563,7 @@ than the Charales or the Coleochaetales
 {{< textin
   question="Liverworts reproduce asexually by spreading small, complete pieces of plant called ________, produced in a cup on the thallus and splashed out by raindrops."
   answer="gemmae"
-  accept="gemma|gemmas"
+  accept="gemma"
 >}}
 
 {{< selfcheck question="How do the calyptra and operculum protect a moss sporangium before its spores are released?" >}}
@@ -648,7 +644,7 @@ mitosis
 {{< textin
   question="In pines, the cone that contains two ovules per scale is called the ________."
   answer="ovulate cone"
-  accept="ovulate cones|female cone|female cones"
+  accept="female cone"
 >}}
 
 {{< selfcheck question="Why are conifers more susceptible than deciduous trees to leaf infestations?" >}}
@@ -673,7 +669,6 @@ eight
 {{< textin
   question="Winged maple seeds, also called whirligigs or 'helicopters,' have the botanical name ________."
   answer="samara"
-  accept="samaras"
 >}}
 
 {{< selfcheck question="In angiosperms, what distinguishes a monoecious plant from a dioecious plant, and what are examples of each?" >}}
@@ -700,7 +695,6 @@ increased emissions of pollutants
 {{< textin
   question="The plant *Atropa belladonna*, whose compound atropine is used to dilate eye pupils for eye exams, is commonly called the ________."
   answer="deadly nightshade"
-  accept="deadly nightshades"
 >}}
 
 {{< selfcheck question="How do acacia ants (*Pseudomyrmex* spp.) benefit Mexican acacia trees, and what do the trees provide the ants in return?" >}}
@@ -1023,7 +1017,6 @@ the post-anal tail and the endostyle
 {{< textin
   question="A member of Cephalochordata that is named for its blade-like shape is called a ________."
   answer="lancelet"
-  accept="lancelets"
 >}}
 
 {{< selfcheck question="What does the term 'tetrapod' mean, and which extant vertebrate groups does it include?" >}}
@@ -1049,7 +1042,6 @@ sensory barbels around the mouth
 {{< textin
   question="In fishes, a gas-filled organ derived from the gut that helps control buoyancy is called the ________."
   answer="swim bladder"
-  accept="swim bladders"
 >}}
 
 {{< selfcheck question="Which bony fishes have reverted to a primarily cartilaginous skeleton, and what do nearly all other bony fishes have instead?" >}}

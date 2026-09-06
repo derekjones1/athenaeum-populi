@@ -174,7 +174,6 @@ the fitting together of two jigsaw puzzle pieces
 {{< textin
   question="A chemical reactant to which an enzyme binds, and upon which it acts, is called the enzyme's ________."
   answer="substrate"
-  accept="substrates"
   hint="An enzyme is specific to this molecule (or these molecules) the way a lock is specific to its key."
 >}}
 
@@ -217,7 +216,7 @@ vitamins cannot be produced in the human body and must be obtained in the diet
 {{< textin
   question="A small organic molecule, such as a vitamin or its derivative, required to enhance an enzyme's activity is called a(n) ________."
   answer="coenzyme"
-  accept="coenzymes|co-enzyme|co-enzymes"
+  accept="co-enzyme"
   hint="Unlike a cofactor, this helper molecule is organic — built on a carbon-and-hydrogen framework."
 >}}
 

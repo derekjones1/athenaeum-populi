@@ -1143,12 +1143,14 @@ function bareLatex(latex) {
 }
 
 /**
- * Strip a written `y=`/`x=`/`f(x)=` label off bareLatex() output. The label
+ * Strip a written `y=`/`x=`/`f(x)=`/`f^{-1}(x)=` label off bareLatex() output. The label
  * is written, not parsed: `f(x)=…` boxes as an equation on a function
  * application, which no equation unwrap in the grader reads.
  */
 function stripWrittenLabel(bare) {
-  const label = bare.match(/^[a-zA-Z](?:_\{p+\})?\s*(?:\(\s*(?:[a-zA-Z]|-?\d+(?:\.\d+)?)\s*\))?\s*=/);
+  // `f^{-1}(x)=` is a label too: an inverse-formula ask answered in the
+  // notation the question used.
+  const label = bare.match(/^[a-zA-Z](?:_\{p+\})?(?:\^\{-1\})?\s*(?:\(\s*(?:[a-zA-Z]|-?\d+(?:\.\d+)?)\s*\))?\s*=/);
   return label ? bare.slice(label[0].length) : bare;
 }
 
@@ -3283,7 +3285,9 @@ export function checkForm(studentRaw, spec) {
  * a numeral (`f'(3)=6`, `f(2)=5`) for the LABEL reading only: an application
  * at a number is a value, never the output quantity `y` of an equation.
  */
-const FUNCTION_APPLICATION_RE = /^[a-zA-Z](?:_\{p+\})?\s*(?:\\left\s*)?\(\s*([a-zA-Z]|-?\d+(?:\.\d+)?)\s*(?:\\right\s*)?\)\s*/;
+// `f^{-1}(x)` is an application too — an inverse-formula ask answered in
+// the notation the question used.
+const FUNCTION_APPLICATION_RE = /^[a-zA-Z](?:_\{p+\})?(?:\^\{-1\})?\s*(?:\\left\s*)?\(\s*([a-zA-Z]|-?\d+(?:\.\d+)?)\s*(?:\\right\s*)?\)\s*/;
 /** A written Leibniz label, `\frac{dy}{dx}=…` — stripped the way `f'(x)=` is. */
 const LEIBNIZ_LABEL_RE = /^\\[tdc]?frac\s*\{\s*d[a-zA-Z]?\s*\}\s*\{\s*d[a-zA-Z]\s*\}\s*=(?![=<>])/;
 

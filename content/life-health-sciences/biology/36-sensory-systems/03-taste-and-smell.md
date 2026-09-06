@@ -207,7 +207,6 @@ the dogs are a better choice because their sense of smell is more sensitive due 
 {{< textin
   question="A dendrite of a specialized neuron that responds to specific inhaled molecules is called an ________."
   answer="olfactory receptor"
-  accept="olfactory receptors"
   hint="Humans have about 12 million of these; bloodhounds have about 4 billion."
 >}}
 
@@ -221,7 +220,6 @@ the dogs are a better choice because their sense of smell is more sensitive due 
 {{< textin
   question="A neuron with two processes extending from the cell body, typically in opposite directions, is called a ________."
   answer="bipolar neuron"
-  accept="bipolar neurons"
   hint="Every olfactory sensory neuron in the nose is built this way, with a single dendrite buried in the epithelium and an axon leading to the olfactory bulb."
 >}}
 

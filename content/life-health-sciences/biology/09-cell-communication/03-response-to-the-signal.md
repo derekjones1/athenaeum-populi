@@ -93,14 +93,12 @@ A phosphatase degrades second messengers in the cell.
 {{< textin
   question="A ligand that binds to cell-surface receptors and stimulates a cell to divide is called a ________."
   answer="growth factor"
-  accept="growth factors"
   hint="Most bind to receptor tyrosine kinases (RTKs), which activate the RAS/MAP kinase pathway."
 >}}
 
 {{< textin
   question="The enzyme that degrades cAMP into AMP, terminating a signal, is called ________."
   answer="phosphodiesterase"
-  accept="phosphodiesterases"
   hint="Its name describes what it does to a phosphodiester bond."
 >}}
 
@@ -163,7 +161,6 @@ PKC is activated during growth factor cascades, but is inactivated during immune
 {{< textin
   question="A molecule that binds to a protein — usually an enzyme — and keeps it from functioning is called a(n) ________."
   answer="inhibitor"
-  accept="inhibitors"
   hint="Iκ-B plays this role toward NF-κB until PKC phosphorylates it."
 >}}
 

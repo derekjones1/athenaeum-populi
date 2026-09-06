@@ -211,7 +211,6 @@ the brain uses this slight difference in timing to determine the location of the
 {{< textin
   question="One of the three bones of the middle ear is called an ________."
   answer="ossicle"
-  accept="ossicles"
   hint="These three tiny bones—nicknamed the hammer, anvil, and stirrup—transfer energy from the tympanum to the inner ear."
 >}}
 
@@ -256,7 +255,6 @@ a situation of reduced gravity would likely impair vestibular sensation
 {{< textin
   question="One of three half-circular, fluid-filled tubes in the vestibular labyrinth that monitors angular acceleration and deceleration is called a ________."
   answer="semicircular canal"
-  accept="semicircular canals"
   hint="One of these three tubes lies horizontally, while the other two sit at about 45-degree angles to it."
 >}}
 

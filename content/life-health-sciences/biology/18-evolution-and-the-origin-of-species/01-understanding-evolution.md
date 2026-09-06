@@ -222,7 +222,6 @@ both a and c
 {{< textin
   question="A heritable trait or behavior that helps an organism's survival and reproduction in its present environment is called an ________."
   answer="adaptation"
-  accept="adaptations"
   hint="A platypus's webbed feet and a cheetah's speed are both examples."
 >}}
 
@@ -278,7 +277,6 @@ the structure remains present because it had a function in the ancestor
 {{< textin
   question="A physical structure with no apparent function, present because a distant ancestor's version of it did have one, is called a ________."
   answer="vestigial structure"
-  accept="vestigial structures"
   hint="Wings on flightless birds and hind leg bones in whales are examples."
 >}}
 

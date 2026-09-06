@@ -212,7 +212,6 @@ when offspring of the same parents reproduce
 {{< textin
   question="The offspring of two closely related individuals that are not of the same species is called a(n) ________."
   answer="hybrid"
-  accept="hybrids"
   hint="A bald eagle × African fish eagle cross would produce one; a poodle × cocker spaniel cross would not, since both are the same species."
 >}}
 
@@ -270,14 +269,12 @@ Two species of insects produce infertile offspring.
 {{< textin
   question="A reproductive isolation mechanism that occurs before zygote formation is called a(n) ________."
   answer="prezygotic barrier"
-  accept="prezygotic barriers"
   hint="Its name comes from the prefix meaning “before.”"
 >}}
 
 {{< textin
   question="A reproductive isolation mechanism that occurs after zygote formation is called a(n) ________."
   answer="postzygotic barrier"
-  accept="postzygotic barriers"
   hint="Hybrid inviability and hybrid sterility are both examples of this kind of barrier."
 >}}
 

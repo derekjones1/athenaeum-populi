@@ -10,9 +10,15 @@
  * author-listed alternates. There is deliberately NO fuzzy tolerance: an
  * edit-distance rule would accept `ribozyme` for `ribosome`, and a subject
  * whose vocabulary is full of near-miss pairs (mitosis/meiosis,
- * glycogen/glucagon) cannot afford it. The author names the accepted spellings
- * (plural, British, abbreviation) in `accept`; the lint checks they are
- * distinct and not printed in the question.
+ * glycogen/glucagon) cannot afford it. The one fold beyond normalization is
+ * the regular English plural: a typed answer that is an accepted form plus a
+ * trailing `s` or `es` grades correct (`cells` for `cell`, `hypotheses` is
+ * NOT `hypothesis` + s, so an irregular plural is still listed). It is one
+ * direction only — a plural key does not accept its singular — and there is
+ * no stemming behind it, so `ribosomes` ≠ `ribosome` + anything but `s`.
+ * The author names every other accepted spelling (irregular plural,
+ * British, abbreviation) in `accept`; the lint checks they are distinct, not
+ * a plural the fold already covers, and not printed in the question.
  */
 
 const DIACRITICS = /[̀-ͯ]/g;
@@ -46,10 +52,25 @@ export function acceptedForms(answer, accept = '') {
 }
 
 /**
+ * The regular plurals the grader folds onto one normalized form: exactly
+ * `form + "s"` and `form + "es"`, nothing else. Exported so the lint can
+ * name an accept member the fold already covers and a question that prints
+ * a folded form.
+ */
+export function pluralFolds(form) {
+  return form ? [`${form}s`, `${form}es`] : [];
+}
+
+/** Does a normalized input match a normalized form, directly or as its regular plural? */
+export function matchesForm(normalized, form) {
+  return normalized === form || pluralFolds(form).includes(normalized);
+}
+
+/**
  * @returns {'empty'|'correct'|'incorrect'}
  */
 export function checkText(input, answer, { accept = '' } = {}) {
   const normalized = normalizeText(input);
   if (!normalized) return 'empty';
-  return acceptedForms(answer, accept).includes(normalized) ? 'correct' : 'incorrect';
+  return acceptedForms(answer, accept).some((form) => matchesForm(normalized, form)) ? 'correct' : 'incorrect';
 }

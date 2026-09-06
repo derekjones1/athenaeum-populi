@@ -206,7 +206,7 @@ parental types
 {{< textin
   question="The map-distance unit Sturtevant used for his first chromosome map, in which a 0.01 recombination frequency corresponds to a distance of 1, is abbreviated with two letters."
   answer="centimorgan"
-  accept="cM|centimorgans|map unit|map units"
+  accept="cM|map unit"
   hint="It is spelled out in the Key terms list above."
 >}}
 

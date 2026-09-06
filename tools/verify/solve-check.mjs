@@ -8,14 +8,25 @@
  * the question. This tool makes that reading a recorded, required step:
  *
  *   emit     writes every solved-kind exercise (multiplechoice, textin,
- *            sortbins) under a root as a packet
+ *            sortbins, fillin) under a root as a packet
  *            with the key, accept list, and hint STRIPPED — question and
  *            options only, plus the exercise hash — for the orchestrator to
- *            answer in writing before any key is looked at
+ *            answer in writing before any key is looked at.
+ *            `--residual-fillins` narrows a math root to the fill-ins
+ *            neither mechanical reading could confirm: `verify-answers`
+ *            could not parse the ask and `verify-source-keys` matched no
+ *            printed source solution (or the item is on a page with no
+ *            source module — a knowledge check) — and whose ledger record
+ *            carries neither a derivation note nor a solve. That residual is
+ *            the population a written solve is FOR; the rest already has a
+ *            durable third reading.
  *   compare  grades those written answers against the live keys (an option
  *            match for multiplechoice; the real `check-text` grader for
  *            textin, so a right answer the accept list rejects surfaces as
- *            an accept-list gap), prints every disagreement and every option
+ *            an accept-list gap; the real math grader for fillin, with the
+ *            exercise's own answerMode and answerForm, so a solver's
+ *            equivalent form counts and a value the form rule rejects still
+ *            counts as agreeing on the value), prints every disagreement and every option
  *            the solver called "also defensible", and writes a ledger result
  *            file recording the outcome on each exercise
  *
@@ -39,19 +50,31 @@
  *         "alsoDefensible": "…optional other option…",
  *         "adjudicated": "…required when the answer disagrees with the key…" } ] }
  *
+ *   residual lists every fill-in under a root that still lacks a third
+ *            reading (the `--residual-fillins` population) and exits
+ *            non-zero when there is one — the gate that keeps a new math
+ *            fill-in from shipping on the author's arithmetic alone. It
+ *            needs the pinned CNXML: with a bundle absent (CI, a fresh
+ *            clone) it says so and applies no rule, exactly as
+ *            verify-source-keys does.
+ *
  * Usage:
- *   node tools/verify/solve-check.mjs emit <content-root-or-page> [--out packets-dir]
+ *   node tools/verify/solve-check.mjs emit <content-root-or-page> [--out packets-dir] [--residual-fillins] [--context N] [--only hashes.json]
  *   node tools/verify/solve-check.mjs compare <answers.json> [content-root] [--out results-dir]
+ *   node tools/verify/solve-check.mjs residual <content-root>
  */
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, join, resolve } from 'node:path';
 import { extractExercises, readLedger } from './answer-ledger.mjs';
+import { maskCode } from '../lib/content.mjs';
 import { checkText } from '../../assets/js/lib/text/check-text.mjs';
 import { normalizeText } from '../lib/openstax-source.mjs';
 import { checkSortbins, parseSortbinsConfig } from '../../assets/js/lib/text/check-sortbins.mjs';
+import { checkAnswer } from '../../assets/js/lib/math/check-answer.mjs';
+import { analyzeFillin } from './verify-answers.mjs';
 
-export const SOLVED_KINDS = Object.freeze(['multiplechoice', 'textin', 'sortbins']);
+export const SOLVED_KINDS = Object.freeze(['multiplechoice', 'textin', 'sortbins', 'fillin']);
 
 const compact = (value) => normalizeText(value).replace(/\s+/g, '');
 
@@ -76,18 +99,64 @@ export function packetItem(exercise) {
     item.bins = cfg.bins;
     item.items = cfg.items.map((entry) => entry.label);
   }
+  if (exercise.kind === 'fillin') {
+    // The answer's SHAPE is not the key: an unordered list, a required form
+    // ("fraction", "solved:x") tell the solver how to write what they find.
+    if (exercise.params.answerMode) item.answerMode = exercise.params.answerMode;
+    if (exercise.params.answerForm) item.answerForm = exercise.params.answerForm;
+  }
   return item;
 }
 
-export function emitPackets(root) {
+/**
+ * The fill-ins a written solve is for: out of `verify-answers`' reach, not
+ * confirmed by `verify-source-keys` (`sourceStatus` maps `path:line` to that
+ * gate's fillin verdict; a page absent from the map has no module to
+ * confirm against), and recorded in the ledger with neither a derivation
+ * note nor a solve. Everything else already carries a durable third reading.
+ */
+export function isResidualFillin(exercise, { sourceStatus, ledger }) {
+  if (exercise.kind !== 'fillin') return false;
+  if (analyzeFillin(exercise.params).status !== 'skip') return false;
+  const status = sourceStatus.get(`${exercise.path}:${exercise.line}`);
+  if (status === 'confirmed' || status === 'disclosed') return false;
+  const record = ledger?.entries?.[exercise.hash];
+  if (record && (record.note || record.solved)) return false;
+  return true;
+}
+
+/**
+ * Page text above an exercise with every key masked, for a question that
+ * reads "the table above" or "that same line": the `answer`, `accept`,
+ * `hint`, and `answerDisplay` params of every shortcode in the window are
+ * blanked, a `selfcheck`'s model answer is dropped, and code fences are
+ * masked. What is left is the page's prose, figures, tables, and earlier
+ * QUESTIONS — never an answer.
+ */
+export function maskedContext(pageSource, line, lines) {
+  const window = maskCode(pageSource).split('\n').slice(Math.max(0, line - 1 - lines), line - 1).join('\n');
+  return window
+    .replace(/\{\{<\s*selfcheck\b[\s\S]*?\{\{<\s*\/selfcheck\s*>\}\}/g, '{{< selfcheck (model answer removed) >}}')
+    .replace(/\b(answer|accept|hint|answerDisplay)="(?:[^"\\]|\\.)*"/g, '$1="…"');
+}
+
+export function emitPackets(root, { residualFillins = null, context = 0, only = null } = {}) {
   const byPage = new Map();
   const seen = new Set();
+  const pages = new Map();
   for (const exercise of extractExercises(root)) {
     if (!SOLVED_KINDS.includes(exercise.kind)) continue;
+    if (residualFillins && !isResidualFillin(exercise, residualFillins)) continue;
+    if (only && !only.has(exercise.hash)) continue;
     if (seen.has(exercise.hash)) continue;
     seen.add(exercise.hash);
     if (!byPage.has(exercise.path)) byPage.set(exercise.path, []);
-    byPage.get(exercise.path).push(packetItem(exercise));
+    const item = packetItem(exercise);
+    if (context > 0) {
+      if (!pages.has(exercise.path)) pages.set(exercise.path, readFileSync(exercise.path, 'utf8'));
+      item.pageContext = maskedContext(pages.get(exercise.path), exercise.line, context);
+    }
+    byPage.get(exercise.path).push(item);
   }
   return byPage;
 }
@@ -127,6 +196,20 @@ export function gradeAnswer(exercise, written) {
       return { status: 'agrees', detail: `all ${cfg.items.length} assignments` };
     }
     return { status: 'disagrees', detail: wrong.join('; ') };
+  }
+  if (exercise.kind === 'fillin') {
+    if (typeof written !== 'string' || !written.trim()) return { status: 'unrecognized', detail: 'a fillin answer is the LaTeX a learner would type' };
+    let verdict;
+    try {
+      verdict = checkAnswer(written, exercise.params.answer || '', { mode: exercise.params.answerMode, form: exercise.params.answerForm });
+    } catch (error) {
+      return { status: 'unrecognized', detail: `grader threw on "${written}": ${error.message.slice(0, 80)}` };
+    }
+    if (verdict === 'invalid' || verdict === 'empty') return { status: 'unrecognized', detail: `"${written}" does not parse (${verdict})` };
+    // 'form' is the right VALUE in a form the exercise does not accept — the
+    // key is confirmed; the form rule is the page's, not the solver's.
+    if (verdict === 'correct' || verdict === 'form') return { status: 'agrees', detail: `${written}${verdict === 'form' ? ' (form differs)' : ''}` };
+    return { status: 'disagrees', detail: `solver: "${written}"; key: "${exercise.params.answer}" (${verdict})` };
   }
   const verdict = checkText(written, exercise.params.answer || '', { accept: exercise.params.accept || '' });
   if (verdict === 'correct') return { status: 'agrees', detail: written };
@@ -196,21 +279,52 @@ export function compareAnswers(answersFile, root, ledger) {
   return { report, results, unresolved };
 }
 
+/** What `isResidualFillin` needs: every mapped page's fill-in verdict from
+ * the source-key gate and the ledger. The gate needs the pinned CNXML on
+ * disk; a bundle it cannot read leaves its pages' fill-ins unconfirmed,
+ * which lands them in the residual — the safe side — and the skip lines
+ * say so. */
+export async function residualContext() {
+  const { checkCorpus, skipLines } = await import('./verify-source-keys.mjs');
+  const { loadSourceLock } = await import('../lib/openstax-source.mjs');
+  const corpus = checkCorpus(process.cwd(), { contentRoot: 'content' });
+  const skipped = skipLines(process.cwd(), loadSourceLock(process.cwd()), corpus.skipped);
+  for (const line of skipped) console.error(line);
+  const sourceStatus = new Map(corpus.verdicts.map((v) => [`${v.page}:${v.line}`, v.status]));
+  return { context: { sourceStatus, ledger: readLedger() }, skipped: skipped.length > 0 };
+}
+
 /* ---- CLI ------------------------------------------------------------------ */
 
 if (process.argv[1] && resolve(process.argv[1]) === new URL(import.meta.url).pathname) {
   const [command, ...rest] = process.argv.slice(2);
-  const positional = rest.filter((a) => !a.startsWith('--'));
+  const valued = new Set(['--out', '--context', '--only']);
+  const positional = rest.filter((a, i) => !a.startsWith('--') && !valued.has(rest[i - 1]));
   const outIndex = rest.indexOf('--out');
   const out = outIndex === -1 ? null : rest[outIndex + 1];
 
   if (command === 'emit') {
     const root = positional[0];
     if (!root || !existsSync(root)) {
-      console.error('usage: node tools/verify/solve-check.mjs emit <content-root-or-page> [--out packets-dir]');
+      console.error('usage: node tools/verify/solve-check.mjs emit <content-root-or-page> [--out packets-dir] [--residual-fillins] [--context N] [--only hashes.json]');
       process.exit(2);
     }
-    const packets = emitPackets(root);
+    let residualFillins = null;
+    if (rest.includes('--residual-fillins')) {
+      const { context: residual } = await residualContext();
+      residualFillins = residual;
+    }
+    const contextIndex = rest.indexOf('--context');
+    const context = contextIndex === -1 ? 0 : Number(rest[contextIndex + 1]) || 0;
+    // `--only <file>`: a JSON array of hashes, or one hash per line — the
+    // follow-up pass for the items a solver marked UNSEEN.
+    const onlyIndex = rest.indexOf('--only');
+    let only = null;
+    if (onlyIndex !== -1) {
+      const text = readFileSync(rest[onlyIndex + 1], 'utf8');
+      only = new Set(text.trim().startsWith('[') ? JSON.parse(text) : text.split(/\s+/).filter(Boolean));
+    }
+    const packets = emitPackets(root, { residualFillins, context, only });
     let items = 0;
     for (const list of packets.values()) items += list.length;
     if (out) {
@@ -256,6 +370,32 @@ if (process.argv[1] && resolve(process.argv[1]) === new URL(import.meta.url).pat
     process.exit(unresolved ? 1 : 0);
   }
 
-  console.error('usage: node tools/verify/solve-check.mjs <emit|compare> …');
+  if (command === 'residual') {
+    const root = positional[0] || 'content';
+    if (!existsSync(root)) {
+      console.error('usage: node tools/verify/solve-check.mjs residual <content-root>');
+      process.exit(2);
+    }
+    const { context, skipped } = await residualContext();
+    const seen = new Set();
+    const residual = [];
+    for (const exercise of extractExercises(root)) {
+      if (seen.has(exercise.hash) || !isResidualFillin(exercise, context)) continue;
+      seen.add(exercise.hash);
+      residual.push(exercise);
+    }
+    if (skipped) {
+      console.log(`⊘ fill-in third-reading gate not applied: a source bundle is not checked out, so ${residual.length} fill-in(s) under ${root} could not be judged against a source solution`);
+      process.exit(0);
+    }
+    for (const exercise of residual) console.error(`✗ ${exercise.path}:${exercise.line} fillin has no third reading: ${(exercise.params.question || '').slice(0, 80)}`);
+    console.log(`${residual.length ? '✖' : '✓'} fill-in third reading: ${residual.length} fill-in(s) under ${root} that verify-answers cannot read, no source solution confirms, and no ledger note or solve explains`);
+    if (residual.length) {
+      console.error('  · derive each one and record a note, or answer it blind: `npm run solve:emit -- <root> --residual-fillins --out <dir>`, then `npm run solve:compare` and `npm run ledger:merge`');
+    }
+    process.exit(residual.length ? 1 : 0);
+  }
+
+  console.error('usage: node tools/verify/solve-check.mjs <emit|compare|residual> …');
   process.exit(2);
 }

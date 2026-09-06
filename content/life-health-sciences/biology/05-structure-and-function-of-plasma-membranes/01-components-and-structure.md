@@ -175,14 +175,14 @@ channels through membrane
 {{< textin
   question="A protein that integrates completely into the membrane structure, with its hydrophobic membrane-spanning region interacting with the phospholipid bilayer's hydrophobic core, is called a(n) ________ protein."
   answer="integral"
-  accept="integral protein|integral membrane protein|integral proteins|integral membrane proteins"
+  accept="integral protein|integral membrane protein"
   hint="This kind of protein usually spans the whole membrane, unlike one that sits only on the surface."
 >}}
 
 {{< textin
   question="A protein located on the membrane's exterior or interior surface, attached to an integral protein or to phospholipids without crossing the membrane, is called a(n) ________ protein."
   answer="peripheral"
-  accept="peripheral protein|peripheral membrane protein|peripheral proteins|peripheral membrane proteins"
+  accept="peripheral protein|peripheral membrane protein"
   hint="This kind of protein sits only on one surface of the membrane, never spanning it."
 >}}
 

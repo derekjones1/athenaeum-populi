@@ -8,8 +8,9 @@
     question   (required) prose prompt — no `$…$` math (a text field has no
                speech serializer; use multiplechoice when the prompt needs math)
     answer     (required) the keyed answer, plain text
-    accept     optional `|`-separated alternates (plural, British spelling,
-               abbreviation) graded as correct too
+    accept     optional `|`-separated alternates (irregular plural, British
+               spelling, abbreviation) graded as correct too; a regular
+               s/es plural is folded by the grader and need not be listed
     hint       optional hint
 
   Nothing else: `answerDisplay` and `placeholder` were accepted for a year

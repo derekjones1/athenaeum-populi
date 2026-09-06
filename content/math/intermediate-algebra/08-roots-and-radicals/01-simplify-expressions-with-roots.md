@@ -346,21 +346,21 @@ Estimate each root between two consecutive whole numbers: (a) $\sqrt{105}$ (b) $
 | $\sqrt[3]{43}$ is between their cube roots. | $3<\sqrt[3]{43}<4$ |
 
 {{< fillin
-  question="Estimate each root between two consecutive whole numbers: $\sqrt{38}$"
+  question="Estimate each root between two consecutive whole numbers: $\sqrt{38}$. Write the answer as the inequality $a < \sqrt{38} < b$ with the root in the middle and the two whole numbers filled in."
   answer="6 < \sqrt{38} < 7"
   answerDisplay="$6 < \sqrt{38} < 7$"
   hint="Compare the radicand with consecutive perfect powers for the indicated root."
 >}}
 
 {{< fillin
-  question="Estimate each root between two consecutive whole numbers: $\sqrt[3]{93}$"
+  question="Estimate each root between two consecutive whole numbers: $\sqrt[3]{93}$. Write the answer as the inequality $a < \sqrt[3]{93} < b$ with the root in the middle and the two whole numbers filled in."
   answer="4 < \sqrt[3]{93} < 5"
   answerDisplay="$4 < \sqrt[3]{93} < 5$"
   hint="Compare the radicand with consecutive perfect powers for the indicated root."
 >}}
 
 {{< fillin
-  question="Estimate each root between two consecutive whole numbers: $\sqrt{84}$"
+  question="Estimate each root between two consecutive whole numbers: $\sqrt{84}$. Write the answer as the inequality $a < \sqrt{84} < b$ with the root in the middle and the two whole numbers filled in."
   answer="9 < \sqrt{84} < 10"
   answerDisplay="$9 < \sqrt{84} < 10$"
   hint="Compare the radicand with consecutive perfect powers for the indicated root."
@@ -826,14 +826,14 @@ a real number
 ### Estimate and approximate roots
 
 {{< fillin
-  question="Estimate each root between two consecutive whole numbers, smaller value first: $\sqrt{70}$"
+  question="Estimate each root between two consecutive whole numbers: $\sqrt{70}$. Write the answer as the inequality $a < \sqrt{70} < b$ with the root in the middle and the two whole numbers filled in."
   answer="8 < \sqrt{70} < 9"
   answerDisplay="$8 < \sqrt{70} < 9$"
   hint="Bracket the radicand between consecutive perfect squares and take their square roots."
 >}}
 
 {{< fillin
-  question="Estimate each root between two consecutive whole numbers, smaller value first: $\sqrt[3]{71}$"
+  question="Estimate each root between two consecutive whole numbers: $\sqrt[3]{71}$. Write the answer as the inequality $a < \sqrt[3]{71} < b$ with the root in the middle and the two whole numbers filled in."
   answer="4 < \sqrt[3]{71} < 5"
   answerDisplay="$4 < \sqrt[3]{71} < 5$"
   hint="Bracket the radicand between consecutive perfect cubes and take their cube roots."

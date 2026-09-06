@@ -98,7 +98,6 @@ the process of differentiation is regulated by cellular signaling cascades
 {{< textin
   question="A tube-like structure that forms from the ectoderm and gives rise to the brain and spinal cord is called the ________."
   answer="neural tube"
-  accept="neural tubes"
   hint="This structure rolls up from the flat plate at the embryo's dorsal midline, closing the epidermis over the top as it forms."
 >}}
 
@@ -111,7 +110,6 @@ the process of differentiation is regulated by cellular signaling cascades
 {{< textin
   question="A group of cells separated by small spaces that forms from the mesoderm and gives rise to connective tissue is called a ________."
   answer="somite"
-  accept="somites"
   hint="Clusters of these cells are visible as segments along the length of a five-week human embryo, flanking the developing neural tube."
 >}}
 

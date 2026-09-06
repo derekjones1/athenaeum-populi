@@ -120,7 +120,7 @@ Transcription in eukaryotes involves one of three types of polymerases, dependin
 {{< textin
   question="The cluster of transcription factors and other proteins that assembles on a promoter to recruit RNA polymerase II is called the ________."
   answer="preinitiation complex"
-  accept="pre-initiation complex|preinitiation complexes"
+  accept="pre-initiation complex"
   hint="Its formation is the step that immediately precedes elongation."
 >}}
 
@@ -157,7 +157,7 @@ the FACT complex
 {{< textin
   question="The class of molecules synthesized by RNA polymerase III that has a variety of functions, including splicing pre-mRNAs and regulating transcription factors, is called ________."
   answer="small nuclear RNA"
-  accept="small nuclear RNAs|snRNA|snRNAs"
+  accept="snRNA"
   hint="RNA polymerase III also produces the 5S rRNA and tRNAs, but this class handles pre-mRNA splicing."
 >}}
 
@@ -226,21 +226,19 @@ There is no difference. Both are transcription factor-binding sequences in DNA.
 {{< textin
   question="A conserved eukaryotic promoter sequence found at approximately -80 that is essential for binding transcription factors is called a ________."
   answer="CAAT box"
-  accept="CAAT boxes"
   hint="Its consensus sequence is GGCCAATCT."
 >}}
 
 {{< textin
   question="A nonessential eukaryotic promoter sequence with the motif GGCG, which binds cellular factors to increase transcription efficiency and may occur several times in a promoter, is called a ________."
   answer="GC-rich box"
-  accept="GC-rich boxes"
   hint="Its name describes the composition of its four-base motif."
 >}}
 
 {{< textin
   question="A nonessential eukaryotic promoter sequence with the motif ATTTGCAT, which binds cellular factors to increase transcription efficiency and may occur several times in a promoter, is called an ________."
   answer="Octamer box"
-  accept="octamer|octamer boxes"
+  accept="octamer"
   hint="Its eight-base motif gives it its name."
 >}}
 

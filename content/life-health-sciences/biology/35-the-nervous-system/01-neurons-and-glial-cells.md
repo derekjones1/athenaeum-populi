@@ -180,7 +180,6 @@ this ensures the signal is rapidly propagated to the rest of the body
 {{< textin
   question="The junction between two neurons where neuronal signals are communicated is called a ________."
   answer="synapse"
-  accept="synapses"
   hint="Neurotransmitters cross this narrow gap between an axon terminal and the next cell's receiving surface."
 >}}
 
@@ -241,14 +240,14 @@ satellite glia
 {{< textin
   question="The glial cell that provides nutrients and structural support for neurons in the peripheral nervous system is called ________."
   answer="satellite glia"
-  accept="satellite cells|satellite cell|satellite glial cells|satellite glial cell"
+  accept="satellite cell|satellite glial cell"
   hint="In the PNS, this cell type surrounds the neuron's cell body rather than its axon."
 >}}
 
 {{< textin
   question="The glia that scavenge and degrade dead cells and protect the brain from invading microorganisms are called ________."
   answer="microglia"
-  accept="microglial cells|microglial cell|microglial"
+  accept="microglial cell|microglial"
   hint="This is the brain's resident immune cell, small and spiky with many fine projections."
 >}}
 

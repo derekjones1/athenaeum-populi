@@ -168,7 +168,6 @@ renders prey immobile
 {{< textin
   question="The specialized stinging cell found in Cnidaria is called a ________."
   answer="cnidocyte"
-  accept="cnidocytes"
   hint="This cell type replaces the sponge's choanocyte as the phylum's defining feature, and houses the harpoon-like nematocyst."
 >}}
 

@@ -181,7 +181,6 @@ a high proportion of older individuals is seen mostly in countries with zero gro
 {{< textin
   question="The proportion of a population at different age ranges is called its ________."
   answer="age structure"
-  accept="age structures"
   hint="The section defines this in bold right where it introduces how population growth relates to a country's level of economic development."
 >}}
 

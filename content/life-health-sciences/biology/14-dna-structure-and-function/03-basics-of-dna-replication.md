@@ -60,7 +60,6 @@ During cell division, each daughter cell receives a copy of each molecule of DNA
 {{< textin
   question="During DNA replication, the two strands of the double helix separate, and each strand serves as a ________ from which the new complementary strand is copied."
   answer="template"
-  accept="templates"
   hint="Think of it as the mold that the new, complementary strand is built against."
 >}}
 

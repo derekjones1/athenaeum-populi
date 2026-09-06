@@ -197,7 +197,6 @@ high radiation
 {{< textin
   question="A layered sedimentary structure formed when prokaryotes in a microbial mat precipitate minerals out of water is called a ________."
   answer="stromatolite"
-  accept="stromatolites"
   hint="Some are still forming today in places like California's Anza-Borrego Desert State Park."
 >}}
 
@@ -224,21 +223,18 @@ a hypolith (survival in a low humidity/water environment)
 {{< textin
   question="An organism adapted to grow under extreme or harsh conditions is called a(n) ________."
   answer="extremophile"
-  accept="extremophiles"
   hint="Its name literally means 'lover of extremes.'"
 >}}
 
 {{< textin
   question="An organism that grows optimally at temperatures between 60 and 80 °C is called a ________."
   answer="thermophile"
-  accept="thermophiles"
   hint="Its optimal range sits just below the even hotter range that defines a hyperthermophile."
 >}}
 
 {{< textin
   question="An organism with an optimal growth pH of nine or above is called a(n) ________."
   answer="alkaliphile"
-  accept="alkaliphiles"
   hint="Its name pairs with 'acidophile' — but at the opposite end of the pH scale."
 >}}
 
@@ -279,7 +275,6 @@ such as PCR
 {{< textin
   question="A microbial community held together by a gummy-textured matrix, made mostly of secreted polysaccharides, is called a ________."
   answer="biofilm"
-  accept="biofilms"
   hint="It commonly clogs pipes and colonizes surfaces such as kitchen counters, sinks, and teeth."
 >}}
 

@@ -96,14 +96,13 @@ fibrous root systems are found in monocots; tap root systems are found in dicots
 {{< textin
   question="A root system with a main root that grows vertically and only a few lateral roots, found in dicots, is called a ________."
   answer="tap root system"
-  accept="taproot system|tap root systems|taproot systems"
+  accept="taproot system"
   hint="This root type penetrates deep into the soil; dandelions are a familiar example, since pulling one often snaps this main root and leaves it to regrow a new shoot."
 >}}
 
 {{< textin
   question="A root system in which roots arise from the base of the stem in a cluster, forming a dense network closer to the soil surface, is called a ________."
   answer="fibrous root system"
-  accept="fibrous root systems"
   hint="Lawn grasses and cereal crops like wheat, rice, and corn — all monocots — grow this shallow, erosion-resisting tangle of many small roots instead of one dominant root."
 >}}
 
@@ -123,7 +122,6 @@ zone of cell division
 {{< textin
   question="The protective cells that cover the tip of a growing root are collectively called the ________."
   answer="root cap"
-  accept="root caps"
   hint="It is continuously replaced because it gets damaged easily as the root pushes through soil, and it covers the tip where the zone of cell division sits."
 >}}
 
@@ -156,7 +154,6 @@ lateral roots
 {{< textin
   question="A hair-like extension of a root epidermal cell that increases the root's surface area and aids in absorbing water and minerals is called a ________."
   answer="root hair"
-  accept="root hairs"
   hint="These first appear where the zone of elongation ends and the zone of maturation begins."
 >}}
 
@@ -170,7 +167,6 @@ lateral roots
 {{< textin
   question="The waxy region on endodermal cell walls that forces water and solutes to cross the plasma membrane instead of slipping between cells is called the ________."
   answer="Casparian strip"
-  accept="Casparian strips"
   hint="This structure is made of a waxy substance called suberin, and it ensures that only materials the root needs pass through the endodermis while toxic substances and pathogens are excluded."
 >}}
 
@@ -190,7 +186,6 @@ aerial roots
 {{< textin
   question="An aboveground root that arises from a plant part other than the radicle of the plant embryo is called a(n) ________."
   answer="adventitious root"
-  accept="adventitious roots"
   hint="Unlike a typical root system that begins at the embryo's radicle, this one grows directly from the shoot, above the ground."
 >}}
 

@@ -219,7 +219,6 @@ the antipodal cells
 {{< textin
   question="The primitive, leaf-like organ that develops in the zygote — one in monocots, two in eudicots — is called a ________."
   answer="cotyledon"
-  accept="cotyledons"
   hint="It serves as a conduit transmitting broken-down food reserves from storage inside the seed to the developing embryo."
 >}}
 
@@ -256,14 +255,13 @@ a basal angiosperm
 {{< textin
   question="The group of angiosperms whose embryos have one cotyledon and pollen with a single furrow is called the ________."
   answer="monocot"
-  accept="monocots"
   hint="This group includes lilies, orchids, grasses, and palms, and rarely produces true woody tissue."
 >}}
 
 {{< textin
   question="The related group of angiosperms whose embryos possess two cotyledons is called the ________."
   answer="dicot"
-  accept="eudicot|dicots|eudicots"
+  accept="eudicot"
   hint="Members of this group make up two-thirds of all flowering plants and typically produce pollen with three furrows."
 >}}
 

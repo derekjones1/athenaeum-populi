@@ -1,0 +1,1399 @@
+{
+  "schemaVersion": 1,
+  "book": "microbiology",
+  "bundle": "microbiology",
+  "commit": "633850257fbd3ccf6187b9428c55e80b69236382",
+  "figures": {
+    "OSC_Microbio_01_00_splash": {
+      "source": "media/OSC_Microbio_01_00_splash.jpg",
+      "sourceSha256": "ef8fffaa20232cc08dd7aa0483cefe587168812bf87100c0a2444653e1694cfe",
+      "module": "m58780",
+      "kind": "photo",
+      "width": 1300,
+      "height": 600,
+      "variants": [
+        {
+          "width": 800,
+          "height": 369,
+          "file": "OSC_Microbio_01_00_splash-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 600,
+          "file": "OSC_Microbio_01_00_splash-1300.webp"
+        }
+      ],
+      "alt": "A photograph of a person in a protective coverall and gloves who is holding an oil covered sea turtle. The person looks sad and disgusted.",
+      "caption": "A veterinarian gets ready to clean a sea turtle covered in oil following the Deepwater Horizon oil spill in the Gulf of Mexico in 2010. After the spill, the population of a naturally occurring oil-eating marine bacterium called Alcanivorax borkumensis skyrocketed, helping to get rid of the oil. Scientists are working on ways to genetically engineer this bacterium to be more efficient in cleaning up future spills. (credit: modification of work by NOAA’s National Ocean Service)"
+    },
+    "OSC_Microbio_01_01_PastKoch": {
+      "source": "media/OSC_Microbio_01_01_PastKoch.jpg",
+      "sourceSha256": "e0f9b1896da7cbc41986fe51ad10a1ac471d9565776faba046325f63f1446154",
+      "module": "m58781",
+      "kind": "photo",
+      "width": 1100,
+      "height": 682,
+      "variants": [
+        {
+          "width": 800,
+          "height": 496,
+          "file": "OSC_Microbio_01_01_PastKoch-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 682,
+          "file": "OSC_Microbio_01_01_PastKoch-1100.webp"
+        }
+      ],
+      "alt": "Figure a is a drawing of Louis Pasteur in his lab. Figure b is a photograph of Robert Koch.",
+      "caption": "(a) Louis Pasteur (1822–1895) is credited with numerous innovations that advanced the fields of microbiology and immunology. (b) Robert Koch (1843–1910) identified the specific microbes that cause anthrax, cholera, and tuberculosis."
+    },
+    "OSC_Microbio_01_01_Petri": {
+      "source": "media/OSC_Microbio_01_01_Petri.jpg",
+      "sourceSha256": "d41848e96fcf401b51b8d077e599d259855eebb8f2b179cce0a08f5675825522",
+      "module": "m58781",
+      "kind": "photo",
+      "width": 1100,
+      "height": 499,
+      "variants": [
+        {
+          "width": 800,
+          "height": 363,
+          "file": "OSC_Microbio_01_01_Petri-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 499,
+          "file": "OSC_Microbio_01_01_Petri-1100.webp"
+        }
+      ],
+      "alt": "Figure a is a photograph of a round disk streaked with lines. The thickest lines go back and forth along an area spanning one fifth of the plate. The next fifth of the plate also has thick lines. The next fifth of the plate has thinner lines that are made of tiny dots. The final fifth of the pate only has large dots. Figure b shows a hand holding a metal rod that is the diameter of a pretzel stick; projecting from tis is a thick wire that is formed into a loop at the end.",
+      "caption": "(a) This Petri dish filled with agar has been streaked with Legionella , the bacterium responsible for causing Legionnaire’s disease. (b) An inoculation loop like this one can be used to streak bacteria on agar in a Petri dish. (credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by Jeffrey M. Vinocur)"
+    },
+    "OSC_Microbio_01_01_ancients": {
+      "source": "media/OSC_Microbio_01_01_ancients.jpg",
+      "sourceSha256": "0fa1cdb86e43d488aab10d09c81023952c1bf5fa7e7a01eeba0a11bbf5c8e02f",
+      "module": "m58781",
+      "kind": "photo",
+      "width": 1101,
+      "height": 518,
+      "variants": [
+        {
+          "width": 800,
+          "height": 376,
+          "file": "OSC_Microbio_01_01_ancients-800.webp"
+        },
+        {
+          "width": 1101,
+          "height": 518,
+          "file": "OSC_Microbio_01_01_ancients-1101.webp"
+        }
+      ],
+      "alt": "Figure a is a drawing of a bust of Hippocrates. Figure b is a photo of a sculpture of Thucydides’s head. Figure c is a photo of a sculpture of Marcus Terentius Varro.",
+      "caption": "(a) Hippocrates, the “father of Western medicine,” believed that diseases had natural, not supernatural, causes. (b) The historian Thucydides observed that survivors of the Athenian plague were subsequently immune to the infection. (c) Marcus Terentius Varro proposed that disease could be caused by “certain minute creatures . . . which cannot be seen by the eye.” (credit c: modification of work by Alessandro Antonelli)"
+    },
+    "OSC_Microbio_01_01_cloaca": {
+      "source": "media/OSC_Microbio_01_01_cloaca.jpg",
+      "sourceSha256": "452a7c2d8f41bfb024a6a7891f4ce7b691a045d59b2dc1b3d0b6c10d23d0b23a",
+      "module": "m58781",
+      "kind": "photo",
+      "width": 1301,
+      "height": 1272,
+      "variants": [
+        {
+          "width": 800,
+          "height": 782,
+          "file": "OSC_Microbio_01_01_cloaca-800.webp"
+        },
+        {
+          "width": 1301,
+          "height": 1272,
+          "file": "OSC_Microbio_01_01_cloaca-1301.webp"
+        }
+      ],
+      "alt": "Figure a is a map of a city containing a stadium, forum, and other structures. Running through the center of the city is a red line. Figure b is a photograph of a corner of a room. There is a trough between the walls and the floor. This trough is covered with stone benches that have large holes (as for a toilet) in the bench. The holes span the top and front of the bench. There are six holes visible in the bench that runs along one side of the image and two more in the bench along the other side. The image does not show the entire room so there are likely more available spots in this room.",
+      "caption": "(a) The Cloaca Maxima , or “Greatest Sewer” (shown in red), ran through ancient Rome. It was an engineering marvel that carried waste away from the city and into the river Tiber. (b) These ancient latrines emptied into the Cloaca Maxima ."
+    },
+    "OSC_Microbio_01_01_ferment": {
+      "source": "media/OSC_Microbio_01_01_ferment.jpg",
+      "sourceSha256": "f378b9abb7a2347e3d66eb3b4eecdb5ed86c7544df9c9fa5340e6b2eb9b7c2dc",
+      "module": "m58781",
+      "kind": "photo",
+      "width": 1200,
+      "height": 367,
+      "variants": [
+        {
+          "width": 800,
+          "height": 244,
+          "file": "OSC_Microbio_01_01_ferment-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 367,
+          "file": "OSC_Microbio_01_01_ferment-1200.webp"
+        }
+      ],
+      "alt": "The figure on the left shows oval cells with smaller oval cells budding from the larger cells. An arrow points to a mason jar containing a creamy textured thick liquid. Another arrow points to a loaf of bread.",
+      "caption": "A microscopic view of Saccharomyces cerevisiae , the yeast responsible for making bread rise (left). Yeast is a microorganism. Its cells metabolize the carbohydrates in flour (middle) and produce carbon dioxide, which causes the bread to rise (right). (credit middle: modification of work by Janus Sandsgaard; credit right: modification of work by “MDreibelbis”/Flickr)"
+    },
+    "OSC_Microbio_01_01_lumbar": {
+      "source": "media/OSC_Microbio_01_01_lumbar.jpg",
+      "sourceSha256": "72d355505abd1f056630c0c11c2a58095bc5bb96f8d6676b371747df29ccbc43",
+      "module": "m58781",
+      "kind": "photo",
+      "width": 1093,
+      "height": 561,
+      "variants": [
+        {
+          "width": 800,
+          "height": 410,
+          "file": "OSC_Microbio_01_01_lumbar-800.webp"
+        },
+        {
+          "width": 1093,
+          "height": 561,
+          "file": "OSC_Microbio_01_01_lumbar-1093.webp"
+        }
+      ],
+      "alt": "Figure a is a drawing of a person lying on their side with their back showing. An overlay drawing shows the location of the spine with an arrow pointing to between two vertebrae in the lower back. Figure b is a photograph of a covered test tube containing a clear liquid",
+      "caption": "(a) A lumbar puncture is used to take a sample of a patient’s cerebrospinal fluid (CSF) for testing. A needle is inserted between two vertebrae of the lower back, called the lumbar region. (b) CSF should be clear, as in this sample. Abnormally cloudy CSF may indicate an infection but must be tested further to confirm the presence of microorganisms. (credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by James Heilman)"
+    },
+    "OSC_Microbio_01_02_Haeckel": {
+      "source": "media/OSC_Microbio_01_02_Haeckel.jpg",
+      "sourceSha256": "35d308bb2eb9e20eb6a4d620bc0947f77dff433baed37854403eb5438e355c0f",
+      "module": "m58782",
+      "kind": "photo",
+      "width": 901,
+      "height": 586,
+      "variants": [
+        {
+          "width": 800,
+          "height": 520,
+          "file": "OSC_Microbio_01_02_Haeckel-800.webp"
+        },
+        {
+          "width": 901,
+          "height": 586,
+          "file": "OSC_Microbio_01_02_Haeckel-901.webp"
+        }
+      ],
+      "alt": "A drawing of a tree. The base of the tree reads: Radix Monera. This branches into three branches labeled Plantae, Protista, and Animalia. Each of these branches branch further; each new branch Is labeled in small text and clusters of branches are identified. For example, clusters of branches in the protista include: Diatomase, flagellate, protoplasta, and spongae.",
+      "caption": "Ernst Haeckel’s rendering of the tree of life, from his 1866 book General Morphology of Organisms , contained three kingdoms: Plantae, Protista, and Animalia. He later added a fourth kingdom, Monera, for unicellular organisms lacking a nucleus."
+    },
+    "OSC_Microbio_01_02_Linnaeus": {
+      "source": "media/OSC_Microbio_01_02_Linnaeus.jpg",
+      "sourceSha256": "44425ac362db646339f12ad0f84852d280cc2c0872d2581e2af60f1f91c54fe7",
+      "module": "m58782",
+      "kind": "photo",
+      "width": 500,
+      "height": 698,
+      "variants": [
+        {
+          "width": 500,
+          "height": 698,
+          "file": "OSC_Microbio_01_02_Linnaeus-500.webp"
+        }
+      ],
+      "alt": "A painting of Carolus Linnaeus holding a flower.",
+      "caption": "Swedish botanist, zoologist, and physician Carolus Linnaeus developed a new system for categorizing plants and animals. In this 1853 portrait by Hendrik Hollander, Linnaeus is holding a twinflower, named Linnaea borealis in his honor."
+    },
+    "OSC_Microbio_01_02_TreeArtCon_img": {
+      "source": "media/OSC_Microbio_01_02_TreeArtCon_img.jpg",
+      "sourceSha256": "b05d3946efbc902dd5feb16c4bd44c9fcd3c6b33b27a0f00943819aa1fc3616e",
+      "module": "m58782",
+      "kind": "photo",
+      "width": 835,
+      "height": 500,
+      "variants": [
+        {
+          "width": 800,
+          "height": 479,
+          "file": "OSC_Microbio_01_02_TreeArtCon_img-800.webp"
+        },
+        {
+          "width": 835,
+          "height": 500,
+          "file": "OSC_Microbio_01_02_TreeArtCon_img-835.webp"
+        }
+      ],
+      "alt": "The phylogenetic Tree of Life. A drawing of branching lines. The central line at the bottom branches into two main branches. On the left branch is a purple branch that contains the following sub-branches: Green filamentous bacteria, Gram positives, Cyanobacteria, Proteobacteria, and Spirocheres. The branch to the right subdivides into a red and a brown branch. The brown branch contains the following sub-branches: Smile molds, Plants, Fungi and Animals. The red branch contains the following sub-branches: Thermoproteus, Methanococcus, Methanobacterium, and Halophiles.",
+      "caption": ""
+    },
+    "OSC_Microbio_01_02_TreesTIME": {
+      "source": "media/OSC_Microbio_01_02_TreesTIME.jpg",
+      "sourceSha256": "f831630df6b3bb5c8445c1bc9092008fc73bb853d15153a907f04d5d1e36a217",
+      "module": "m58782",
+      "kind": "photo",
+      "width": 1300,
+      "height": 860,
+      "variants": [
+        {
+          "width": 800,
+          "height": 529,
+          "file": "OSC_Microbio_01_02_TreesTIME-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 860,
+          "file": "OSC_Microbio_01_02_TreesTIME-1300.webp"
+        }
+      ],
+      "alt": "This timeline begins with Carolus Linnaeus who developed a new way to categorize plants and animals in 1758. The image above Linnaeus shows a forked line with one branch labeled plants and the other labeled animals. In 1866, Ernst Haeckel wrote General Morphology of Organisms, proposing four kingdoms. The image above Haeckel shows a central line with Monera branching off the bottom, protists branching off next, then plants and finally animals. In 1969 Robert Whittaker proposed adding a fifth kingdom – fungi – to the tree of life. The image above Whittaker is the same as the one above Haeckel but includes an additional branch labeled fungi between plants and animals.",
+      "caption": "This timeline shows how the shape of the tree of life has changed over the centuries. Even today, the taxonomy of living organisms is continually being reevaluated and refined with advances in technology."
+    },
+    "OSC_Microbio_01_02_Woese": {
+      "source": "media/OSC_Microbio_01_02_Woese.jpg",
+      "sourceSha256": "535d66a7b1422438efd2b98994d4cf2e881183d6a50bf15ecd7bbfdc5c3e5842",
+      "module": "m58782",
+      "kind": "photo",
+      "width": 901,
+      "height": 594,
+      "variants": [
+        {
+          "width": 800,
+          "height": 527,
+          "file": "OSC_Microbio_01_02_Woese-800.webp"
+        },
+        {
+          "width": 901,
+          "height": 594,
+          "file": "OSC_Microbio_01_02_Woese-901.webp"
+        }
+      ],
+      "alt": "The phylogenetic Tree of Life. A drawing of branching lines. The central line at the bottom branches into two main branches. On the left branch is the bacterial group. The branch to the right subdivides to the Archaea and Eukarya groups. Additional branches on the Eukarya group from bottom to top are: Diplomonads, Microsporidia, Trichomonads, Flagellates, Entamoebae, Smile molds, Ciliates, Plants, Fungi and Animals (which has a star labeled “you are here). Brances along the Archaea group from bottom to top are: Pyrodicticu, Thermoproteus, T. celer, Methanococcus, Methanobacterium, Methanosarcina, and Halophiles. Branches in the Bacterial group from bottom to top are: Aquifex, Thermotoga, Green filamentous bacteria, Bacteroides Cytophaga, Gram positives, Planctomyces, Cyanobacteria, Proteobacteria, and Spirocheres.",
+      "caption": "Woese and Fox’s phylogenetic tree contains three domains: Bacteria, Archaea, and Eukarya. Domains Archaea and Bacteria contain all prokaryotic organisms, and Eukarya contains all eukaryotic organisms. (credit: modification of work by Eric Gaba)"
+    },
+    "OSC_Microbio_01_03_ArtConnect_img": {
+      "source": "media/OSC_Microbio_01_03_ArtConnect_img.jpg",
+      "sourceSha256": "5da6e8923b5a601c5d8ca7cda1a2d2ab22bf84d944392aac72585ee0c359a317",
+      "module": "m58783",
+      "kind": "photo",
+      "width": 1300,
+      "height": 616,
+      "variants": [
+        {
+          "width": 800,
+          "height": 379,
+          "file": "OSC_Microbio_01_03_ArtConnect_img-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 616,
+          "file": "OSC_Microbio_01_03_ArtConnect_img-1300.webp"
+        }
+      ],
+      "alt": "A bar along the bottom indicates size of various objects. At the far right is a from egg at approximately 1 mm. To the left are a human egg and a pollen grain at approximately 0.1 mm. Next is a red blood cell at just under 10 µm. Next is a mitochondrion at approximately 1 µm. Next are proteins which range from 5-10 nm. Next are lipids which range from 2-5 nm. Next is C60 (fullerene molecule) which is approximately 1 nm. Finally, atoms are approximately 0.1 nm.",
+      "caption": ""
+    },
+    "OSC_Microbio_01_03_algae": {
+      "source": "media/OSC_Microbio_01_03_algae.jpg",
+      "sourceSha256": "cd0f6a5cc7d3e0a7d9d757d2a8214f24f95b790746ad2061796fb0108910fc06",
+      "module": "m58783",
+      "kind": "photo",
+      "width": 700,
+      "height": 460,
+      "variants": [
+        {
+          "width": 700,
+          "height": 460,
+          "file": "OSC_Microbio_01_03_algae-700.webp"
+        }
+      ],
+      "alt": "A light micrograph with a black background and glowing cells. The cells have many different shapes ranging from circular to stacks of rectangles to almond shaped. A scale bar indicates how much space 100 microns takes up in this figure.",
+      "caption": "Assorted diatoms, a kind of algae, live in annual sea ice in McMurdo Sound, Antarctica. Diatoms range in size from 2 μm to 200 μm and are visualized here using light microscopy. (credit: modification of work by National Oceanic and Atmospheric Administration)"
+    },
+    "OSC_Microbio_01_03_archaea": {
+      "source": "media/OSC_Microbio_01_03_archaea.jpg",
+      "sourceSha256": "7e4dc67c0f15f85dee126bcf562b5dc9aad7a6372f73c487fdb713c8f333527b",
+      "module": "m58783",
+      "kind": "photo",
+      "width": 900,
+      "height": 474,
+      "variants": [
+        {
+          "width": 800,
+          "height": 421,
+          "file": "OSC_Microbio_01_03_archaea-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 474,
+          "file": "OSC_Microbio_01_03_archaea-900.webp"
+        }
+      ],
+      "alt": "A photograph of a pool of water that changes in color from orange on the edges to blue in the center.",
+      "caption": "Some archaea live in extreme environments, such as the Morning Glory pool, a hot spring in Yellowstone National Park. The color differences in the pool result from the different communities of microbes that are able to thrive at various water temperatures."
+    },
+    "OSC_Microbio_01_03_atwork": {
+      "source": "media/OSC_Microbio_01_03_atwork.png",
+      "sourceSha256": "d7f4bdf35c656a49eeffd5549669b44e1e1053042863044e97018b425c5832ef",
+      "module": "m58783",
+      "kind": "diagram",
+      "width": 1723,
+      "height": 1039,
+      "variants": [
+        {
+          "width": 800,
+          "height": 482,
+          "file": "OSC_Microbio_01_03_atwork-800.webp"
+        },
+        {
+          "width": 1600,
+          "height": 965,
+          "file": "OSC_Microbio_01_03_atwork-1600.webp"
+        }
+      ],
+      "alt": "(a) A person in a field measuring an egg. (b) A person prepares an assay with a centerfuge.",
+      "caption": "(a) A virologist samples eggs from this nest to be tested for the influenza A virus, which causes avian flu in birds. (b) A biologist performs a procedure to identify an organism that causes ulcerations in humans (credit a: U.S. Fish and Wildlife Service; credit b: James Gathany / CDC; Public Domain)"
+    },
+    "OSC_Microbio_01_03_bacteria": {
+      "source": "media/OSC_Microbio_01_03_bacteria.jpg",
+      "sourceSha256": "8a2b4ad31a006bae4ebeb45f38ecf83fe88e759e062b349b490bd46878d32600",
+      "module": "m58783",
+      "kind": "photo",
+      "width": 1200,
+      "height": 293,
+      "variants": [
+        {
+          "width": 800,
+          "height": 195,
+          "file": "OSC_Microbio_01_03_bacteria-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 293,
+          "file": "OSC_Microbio_01_03_bacteria-1200.webp"
+        }
+      ],
+      "alt": "Each shape designation includes a drawing and a micrograph. Coccus is a spherical shape. Bacillus is a rod shape. Vibrio is the shape of a comma. Coccobacillus is an elongated oval. Spirillum is a rigid spiral. Spirochete is a flexible spiral.",
+      "caption": "Common bacterial shapes. Note how coccobacillus is a combination of spherical (coccus) and rod-shaped (bacillus). (credit “Coccus”: modification of work by Janice Haney Carr, Centers for Disease Control and Prevention; credit “Coccobacillus”: modification of work by Janice Carr, Centers for Disease Control and Prevention; credit “Spirochete”: Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_01_03_giardia": {
+      "source": "media/OSC_Microbio_01_03_giardia.jpg",
+      "sourceSha256": "f9672f21de731cd1eb408b81c16a1452a35556e70d1ee75949ef714a717bd4e0",
+      "module": "m58783",
+      "kind": "photo",
+      "width": 500,
+      "height": 506,
+      "variants": [
+        {
+          "width": 500,
+          "height": 506,
+          "file": "OSC_Microbio_01_03_giardia-500.webp"
+        }
+      ],
+      "alt": "An SEM micrograph showing a triangular cell with three long, thin projections; one from the end and two from the middle of the cell. The cell is approximately 3 x 8 µm in size.",
+      "caption": "Giardia lamblia , an intestinal protozoan parasite that infects humans and other mammals, causing severe diarrhea. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_01_03_mold": {
+      "source": "media/OSC_Microbio_01_03_mold.jpg",
+      "sourceSha256": "e6ae84e5dfb860e8b0521966695807b1249bf39a2f7301ddf13dad1c6fa9b218",
+      "module": "m58783",
+      "kind": "photo",
+      "width": 700,
+      "height": 495,
+      "variants": [
+        {
+          "width": 700,
+          "height": 495,
+          "file": "OSC_Microbio_01_03_mold-700.webp"
+        }
+      ],
+      "alt": "A photograph of a box of moldy oranges.",
+      "caption": "Large colonies of microscopic fungi can often be observed with the naked eye, as seen on the surface of these moldy oranges."
+    },
+    "OSC_Microbio_01_03_sizes": {
+      "source": "media/OSC_Microbio_01_03_sizes.jpg",
+      "sourceSha256": "d8067e3a446eac135ccbd628ec2241f55007270916f696532a9304c83ce73dec",
+      "module": "m58783",
+      "kind": "photo",
+      "width": 1300,
+      "height": 770,
+      "variants": [
+        {
+          "width": 800,
+          "height": 474,
+          "file": "OSC_Microbio_01_03_sizes-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 770,
+          "file": "OSC_Microbio_01_03_sizes-1300.webp"
+        }
+      ],
+      "alt": "A bar along the bottom indicates size of various objects. At the far right is a from egg at approximately 1 mm. To the left are a human egg and a pollen grain at approximately 0.1 mm. Next are a standard plant and animal cell which range from 10 – 100 µm. Next is a red blood cell at just under 10 µm. Next are a mitochondrion and bacterial cell at approximately 1 µm. Next is a smallpox virus at approximately 500 nm. Next is a flu virus at approximately 100 nm. Next is a polio virus at approximately 50 nm. Next are proteins which range from 5-10 nm. Next are lipids which range from 2-5 nm. Next is C60 (fullerene molecule) which is approximately 1 nm. Finally, atoms are approximately 0.1 nm. Light microscopes can be used to view items larger than 100 nm (the size of a flu virus). Electron microscopes are useful for materials from 1.5 nm (larger than an atom) to 1 µm (the size of many bacteria).",
+      "caption": "The relative sizes of various microscopic and nonmicroscopic objects. Note that a typical virus measures about 100 nm, 10 times smaller than a typical bacterium (~1 µm), which is at least 10 times smaller than a typical plant or animal cell (~10–100 µm). An object must measure about 100 µm to be visible without a microscope."
+    },
+    "OSC_Microbio_01_03_virus": {
+      "source": "media/OSC_Microbio_01_03_virus.jpg",
+      "sourceSha256": "08e8b0fcdfc48af2526d1c91196e04ec004443cdd3ed347d75356aa26af1fe9e",
+      "module": "m58783",
+      "kind": "photo",
+      "width": 1200,
+      "height": 522,
+      "variants": [
+        {
+          "width": 800,
+          "height": 348,
+          "file": "OSC_Microbio_01_03_virus-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 522,
+          "file": "OSC_Microbio_01_03_virus-1200.webp"
+        }
+      ],
+      "alt": "Figure A is a TEM micrograph showing large circles with many small projections protruding outwards from the edge of the circles. A scale bar shows how large 50 nanometers is relative to this micrograph. Figure B is a TEM micrograph showing long red strands forming a knot-like structure.",
+      "caption": "(a) Members of the Coronavirus family can cause respiratory infections like the common cold, severe acute respiratory syndrome (SARS), and Middle East respiratory syndrome (MERS). Here they are viewed under a transmission electron microscope (TEM). (b) Ebolavirus, a member of the Filovirus family, as visualized using a TEM. (credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by Thomas W. Geisbert)"
+    },
+    "OSC_Microbio_01_03_worms": {
+      "source": "media/OSC_Microbio_01_03_worms.jpg",
+      "sourceSha256": "52d927ffcb5dc05d63b99fce755ac7125ea27943dd9988de53a3aeeddd6fb7b5",
+      "module": "m58783",
+      "kind": "photo",
+      "width": 1100,
+      "height": 413,
+      "variants": [
+        {
+          "width": 800,
+          "height": 300,
+          "file": "OSC_Microbio_01_03_worms-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 413,
+          "file": "OSC_Microbio_01_03_worms-1100.webp"
+        }
+      ],
+      "alt": "Figure a is a photograph of a long, flat, white worm folded back and forth on a black background. Figure b shows a lesion on a patient. A worm is being pulled out of the lesion and being wrapped around a matchstick",
+      "caption": "(a) The beef tapeworm, Taenia saginata , infects both cattle and humans. T. saginata eggs are microscopic (around 50 µm), but adult worms like the one shown here can reach 4–10 m, taking up residence in the digestive system. (b) An adult guinea worm, Dracunculus medinensis , is removed through a lesion in the patient’s skin by winding it around a matchstick. (credit a, b: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_01_03_yeast": {
+      "source": "media/OSC_Microbio_01_03_yeast.jpg",
+      "sourceSha256": "92e5ac69163d3e66b6e4e3a6a706bddf8c6874b73803c4e24becf26d27a84e4a",
+      "module": "m58783",
+      "kind": "photo",
+      "width": 700,
+      "height": 483,
+      "variants": [
+        {
+          "width": 700,
+          "height": 483,
+          "file": "OSC_Microbio_01_03_yeast-700.webp"
+        }
+      ],
+      "alt": "A light micrograph with a clear background and blue cells. A long row of cells forms a central strand. Attached to this are clusters of many spherical cells. Each cell is approximately 5 µm in size and contains a nucleus.",
+      "caption": "Candida albicans is a unicellular fungus, or yeast. It is the causative agent of vaginal yeast infections as well as oral thrush, a yeast infection of the mouth that commonly afflicts infants. C. albicans has a morphology similar to that of coccus bacteria; however, yeast is a eukaryotic organism (note the nuclei) and is much larger. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_02_00_Splash": {
+      "source": "media/OSC_Microbio_02_00_Splash.jpg",
+      "sourceSha256": "f23b9b648ef0236a2f80d53ae0f29ffa6177c031a5e2d08c737e0fc5c1a7f76f",
+      "module": "m58784",
+      "kind": "photo",
+      "width": 1330,
+      "height": 439,
+      "variants": [
+        {
+          "width": 800,
+          "height": 264,
+          "file": "OSC_Microbio_02_00_Splash-800.webp"
+        },
+        {
+          "width": 1330,
+          "height": 439,
+          "file": "OSC_Microbio_02_00_Splash-1330.webp"
+        }
+      ],
+      "alt": "The left image shows a clear background with chains of solid purple rods and larger circular cells. The larger cells contain darker purple blotches inside each cell. The right image shows a black background with thin, glowing spirals.",
+      "caption": "Different types of microscopy are used to visualize different structures. Brightfield microscopy (left) renders a darker image on a lighter background, producing a clear image of these Bacillus anthracis cells in cerebrospinal fluid (the rod-shaped bacterial cells are surrounded by larger white blood cells). Darkfield microscopy (right) increases contrast, rendering a brighter image on a darker background, as demonstrated by this image of the bacterium Borrelia burgdorferi , which causes Lyme disease. (credit left: modification of work by Centers for Disease Control and Prevention; credit right: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_02_01_Emspectrum": {
+      "source": "media/OSC_Microbio_02_01_Emspectrum.jpg",
+      "sourceSha256": "941b34416c248b7ffd142f71106b973ca91fffc8ddcb7cbbc54e3fee6f7bea16",
+      "module": "m58785",
+      "kind": "photo",
+      "width": 1269,
+      "height": 564,
+      "variants": [
+        {
+          "width": 800,
+          "height": 355,
+          "file": "OSC_Microbio_02_01_Emspectrum-800.webp"
+        },
+        {
+          "width": 1269,
+          "height": 564,
+          "file": "OSC_Microbio_02_01_Emspectrum-1269.webp"
+        }
+      ],
+      "alt": "A series of scales indicate that the image shows the lowest wavelength (10 superscript -18 m) on the left and the highest wavelength (10 superscript 6 m) on the right. The frequencies range from over 10 superscript 24 Hzon the left to 1 Hz on the right. The energies range from 10 superscript 12 ev on the left to 10 superscript -12 on the right. The types of radiation listed above these scales (from left to right) is: cosmic radiation, gamma rays, X-rays, ultra-violet, visible, infrared, Terahertz radiation, radar, television and radion broadcasting, and AC circuits. The visible light portion of the spectrum is pulled out and shows blue light at 400 nm, green light at 500 nm, yellow light at 600 nm, and red light at 700 nm.",
+      "caption": "The electromagnetic spectrum ranges from high-frequency gamma rays to low-frequency radio waves. Visible light is the relatively small range of electromagnetic frequencies that can be sensed by the human eye. On the electromagnetic spectrum, visible light falls between ultraviolet and infrared light. (credit: modification of work by Johannes Ahlmann)"
+    },
+    "OSC_Microbio_02_01_Fluorescen": {
+      "source": "media/OSC_Microbio_02_01_Fluorescen.jpg",
+      "sourceSha256": "dbd43028d9a990d47d3c0fb9c84bf25e829f62a939a3249a63d87fe5a02cd716",
+      "module": "m58785",
+      "kind": "photo",
+      "width": 492,
+      "height": 353,
+      "variants": [
+        {
+          "width": 492,
+          "height": 353,
+          "file": "OSC_Microbio_02_01_Fluorescen-492.webp"
+        }
+      ],
+      "alt": "An image shows a large cell in the foreground and other cells further in the background. Each cell has an irregular shape with a large blue circle in the center. Green lines surround the blue circle and span out towards the edges of the cell. The rest of the cell is red with a bright red edge. The background of the image is black.",
+      "caption": "The fluorescent dyes absorbed by these bovine pulmonary artery endothelial cells emit brilliant colors when excited by ultraviolet light under a fluorescence microscope. Various cell structures absorb different dyes. The nuclei are stained blue with 4’,6-diamidino-2-phenylindole (DAPI); microtubles are marked green by an antibody bound to FITC; and actin filaments are labeled red with phalloidin bound to tetramethylrhodamine (TRITC). (credit: National Institutes of Health)"
+    },
+    "OSC_Microbio_02_01_Focal": {
+      "source": "media/OSC_Microbio_02_01_Focal.jpg",
+      "sourceSha256": "8554d5f0d651d0f65d8c21b5a23d8ce1756032e8b9703f463b8c3ecd57130993",
+      "module": "m58785",
+      "kind": "photo",
+      "width": 1235,
+      "height": 350,
+      "variants": [
+        {
+          "width": 800,
+          "height": 226,
+          "file": "OSC_Microbio_02_01_Focal-800.webp"
+        },
+        {
+          "width": 1235,
+          "height": 350,
+          "file": "OSC_Microbio_02_01_Focal-1235.webp"
+        }
+      ],
+      "alt": "Diagram a (prism) shows a clear pyramid with light entering one surface. The light leaving the other surface is bent and is the refracted light. A dotted line indicates the path the original light beam would have taken had it not bent. The region above the dotted line is labeled high refractive index; the region below the line is labeled low refractive index. Diagram b (convex lens) shows a lens with a bulge in the center. Light enters one either side of the dome and is focused to a point past the lens and in line with the center of the dome. The point at which the light focuses is the focal point; the distance from the focal point to the center of the lens is the focal length. Diagram c (concave lens) shows a lens that curves inward on either side. Light entering this lens is bent outwards, away from the center of the lens’s curve. A dotted line shows the linear path backwards for each of the bent light beams. The point at which all the dotted lines meet (which is on the other side of the lens) is the focal point.",
+      "caption": "(a) A lens is like a collection of prisms, such as the one shown here. (b) When light passes through a convex lens, it is refracted toward a focal point on the other side of the lens. The focal length is the distance to the focal point. (c) Light passing through a concave lens is refracted away from a focal point in front of the lens."
+    },
+    "OSC_Microbio_02_01_Freqwave": {
+      "source": "media/OSC_Microbio_02_01_Freqwave.jpg",
+      "sourceSha256": "0b0e9c9e208f36907582e983c87b2e69857fce49349d67bdd523aa6c9bd3df08",
+      "module": "m58785",
+      "kind": "photo",
+      "width": 900,
+      "height": 253,
+      "variants": [
+        {
+          "width": 800,
+          "height": 225,
+          "file": "OSC_Microbio_02_01_Freqwave-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 253,
+          "file": "OSC_Microbio_02_01_Freqwave-900.webp"
+        }
+      ],
+      "alt": "Figure a shows a wavy line with evenly repeating waves upwards and downwards. A straight line through the center of the wavy line indicates the base of the waves. The distance from the peak of one wave to another is the wavelength. The distance from the baseline to the peak of a wave or the distance from the baseline to the trough of a wave is called the amplitude. Figure b shows three waves with unit time labeled across the bottom. The top line has waves that are widely spread apart. Waves with a wide wavelength have a low frequency. The bottom line has waves that are close together. Waves with a narrow wavelength have a high frequency. The middle line has a medium wavelength and therefore a medium frequency.",
+      "caption": "(a) The amplitude is the height of a wave, whereas the wavelength is the distance between one peak and the next. (b) These waves have different frequencies, or rates of vibration. The wave at the top has the lowest frequency, since it has the fewest peaks per unit time. The wave at the bottom has the highest frequency."
+    },
+    "OSC_Microbio_02_01_Refractind": {
+      "source": "media/OSC_Microbio_02_01_Refractind.jpg",
+      "sourceSha256": "8c8837ba45a8841a5596431b436513fe50899f366d4052adc84e5034185c4e52",
+      "module": "m58785",
+      "kind": "photo",
+      "width": 458,
+      "height": 325,
+      "variants": [
+        {
+          "width": 458,
+          "height": 325,
+          "file": "OSC_Microbio_02_01_Refractind-458.webp"
+        }
+      ],
+      "alt": "A photo shows a pole being placed in water. The pole looks like it bends where it hits the water.",
+      "caption": "This straight pole appears to bend at an angle as it enters the water. This optical illusion is due to the large difference between the refractive indices of air and water."
+    },
+    "OSC_Microbio_02_01_Refraction": {
+      "source": "media/OSC_Microbio_02_01_Refraction.jpg",
+      "sourceSha256": "4ce5616b66f8117053208d13fee48491302a118209738790998b4a4b56e10993",
+      "module": "m58785",
+      "kind": "photo",
+      "width": 1100,
+      "height": 396,
+      "variants": [
+        {
+          "width": 800,
+          "height": 288,
+          "file": "OSC_Microbio_02_01_Refraction-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 396,
+          "file": "OSC_Microbio_02_01_Refraction-1100.webp"
+        }
+      ],
+      "alt": "Picture a shows a light beam aimed at a piece of glass. When the light beam hits the transparent glass material it bends by approximately 45°. This bent light ray is the refracted ray. The opaque material which the glass is sitting upon does not have any light shining through it. Diagram b shows an arrow labeled incident ray pointing at a 45° angle down towards a shaded region. At the point where the incident ray reaches the shaded region, two other arrows begin. One of these arrows points at a 90° angle from the incident ray (and away from the shaded region) and is the reflected ray. The second arrow continues through the shaded region but at a slightly bent angle from the incident ray. This second arrow is the reflected ray.",
+      "caption": "(a) Refraction occurs when light passes from one medium, such as air, to another, such as glass, changing the direction of the light rays. (b) As shown in this diagram, light rays passing from one medium to another may be either refracted or reflected."
+    },
+    "OSC_Microbio_02_01_Transparen": {
+      "source": "media/OSC_Microbio_02_01_Transparen.jpg",
+      "sourceSha256": "758ee0e3cdf90142196b79c043bfc528fb17c761f3553ab4b17a33d9ce7515fb",
+      "module": "m58785",
+      "kind": "photo",
+      "width": 900,
+      "height": 344,
+      "variants": [
+        {
+          "width": 800,
+          "height": 305,
+          "file": "OSC_Microbio_02_01_Transparen-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 344,
+          "file": "OSC_Microbio_02_01_Transparen-900.webp"
+        }
+      ],
+      "alt": "Figure a shows the tips of a person’s gloved hands holding a clear plate with a lid. The plate contains a reddish material in the bottom of the plate. Figure b shows a piece of metal in a person’s hands. The material is dark with some shiny regions.",
+      "caption": "(a) A Petri dish is made of transparent plastic or glass, which allows transmission of a high proportion of light. This transparency allows us to see through the sides of the dish to view the contents. (b) This slice of an iron meteorite is opaque (i.e., it has opacity). Light is not transmitted through the material, making it impossible to see the part of the hand covered by the object. (credit a: modification of work by Umberto Salvagnin; credit b: modification of work by “Waifer X”/Flickr)"
+    },
+    "OSC_Microbio_02_02_Hooke": {
+      "source": "media/OSC_Microbio_02_02_Hooke.jpg",
+      "sourceSha256": "94d7cd8a169472066fde782d79020ee4b5c822a10772988647dbd7209679715d",
+      "module": "m58786",
+      "kind": "photo",
+      "width": 900,
+      "height": 552,
+      "variants": [
+        {
+          "width": 800,
+          "height": 490,
+          "file": "OSC_Microbio_02_02_Hooke-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 552,
+          "file": "OSC_Microbio_02_02_Hooke-900.webp"
+        }
+      ],
+      "alt": "The microscope drawing in a shows a tube with an eyepiece at the top and a small lens pointed at the circle on the base of the apparatus. A larger lens focuses light from a candle at the circle on the base of the apparatus. Figure b shows a drawing of a leaf at the bottom above that is a black circle with two large, irregular shaped regions. Each of these regions is filled with tiny white rectangles arranged in rows.",
+      "caption": "Robert Hooke used his (a) compound microscope to view (b) cork cells. Both of these engravings are from his seminal work Micrographia , published in 1665."
+    },
+    "OSC_Microbio_02_02_Janssen": {
+      "source": "media/OSC_Microbio_02_02_Janssen.jpg",
+      "sourceSha256": "92142f45a5a942c85ea17232e7d69221a44b303aa2c535f6627f72f12d7d0b03",
+      "module": "m58786",
+      "kind": "photo",
+      "width": 500,
+      "height": 606,
+      "variants": [
+        {
+          "width": 500,
+          "height": 606,
+          "file": "OSC_Microbio_02_02_Janssen-500.webp"
+        }
+      ],
+      "alt": "A photo of Zaccharias Janssen is shown",
+      "caption": "Zaccharias Janssen, along with his father Hans, may have invented the telescope, the simple microscope, and the compound microscope during the late 1500s or early 1600s. The historical evidence is inconclusive."
+    },
+    "OSC_Microbio_02_02_VanLeeuwen": {
+      "source": "media/OSC_Microbio_02_02_VanLeeuwen.jpg",
+      "sourceSha256": "4b5c823579dae34237600c1de6d5199e7623a574f3855316bef0ce361d2bce3f",
+      "module": "m58786",
+      "kind": "photo",
+      "width": 1200,
+      "height": 409,
+      "variants": [
+        {
+          "width": 800,
+          "height": 272,
+          "file": "OSC_Microbio_02_02_VanLeeuwen-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 409,
+          "file": "OSC_Microbio_02_02_VanLeeuwen-1200.webp"
+        }
+      ],
+      "alt": "Photo a is of Antonie van Leeuwenhoek. Photo b is of a small metal plate with a long screw attached along its length. The tip of the screw is a fine point that sits just in front of an opening on the plate. Photo c is a portrait of Galileo Galilei.",
+      "caption": "(a) Antonie van Leeuwenhoek (1632–1723) is credited as being the first person to observe microbes, including bacteria, which he called “animalcules” and “wee little beasties.” (b) Even though van Leeuwenhoek’s microscopes were simple microscopes (as seen in this replica), they were more powerful and provided better resolution than the compound microscopes of his day. (c) Though more famous for developing the telescope, Galileo Galilei (1564–1642) was also one of the pioneers of microscopy. (credit b: modification of work by “Wellcome Images”/Wikimedia Commons)"
+    },
+    "OSC_Microbio_02_03_Biofilms": {
+      "source": "media/OSC_Microbio_02_03_Biofilms.jpg",
+      "sourceSha256": "af075fd4ba14868dd78c9d467298efb44a62fd0e2dcbfc89c4285152d64f1e9f",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 1300,
+      "height": 911,
+      "variants": [
+        {
+          "width": 800,
+          "height": 560,
+          "file": "OSC_Microbio_02_03_Biofilms-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 911,
+          "file": "OSC_Microbio_02_03_Biofilms-1300.webp"
+        }
+      ],
+      "alt": "The stages of a biofilm are shown. In stage 1 (initial attachment), a few flagellated cells attach to a surface. In stage 2 (irreversible attachment) clumps of cells are found on the surface. In stage 3 (maturation) the clumps have enlarged. In stage 4 (maturation 2) the clumps have fused and enlarged greatly. In stage 5 (dispersal) the large clump releases flagellated cells away from the surface. These stages are also shown in micrographs: 1) small dots, 2) larger clumps, 3)larger clump, 4) a large mass, 5) a large mass with an opening at the top.",
+      "caption": "A biofilm forms when planktonic (free-floating) bacteria of one or more species adhere to a surface, produce slime, and form a colony. (credit: Public Library of Science)"
+    },
+    "OSC_Microbio_02_03_Brightfiel": {
+      "source": "media/OSC_Microbio_02_03_Brightfiel.jpg",
+      "sourceSha256": "4f7a0280739ad30141b75fc3351df41c69a5bb52ff18a852c8ff3695c47b7b7f",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 889,
+      "height": 757,
+      "variants": [
+        {
+          "width": 800,
+          "height": 681,
+          "file": "OSC_Microbio_02_03_Brightfiel-800.webp"
+        },
+        {
+          "width": 889,
+          "height": 757,
+          "file": "OSC_Microbio_02_03_Brightfiel-889.webp"
+        }
+      ],
+      "alt": "A photo of a microscope is shown. The base contains a light source (the illuminator, #7) and a knob to adjust light intensity (rheostat). Attached at one end of the base is an arm with a stage (#9) to hold the specimen projecting out halfway up the arm. The center of the stage has an opening to allow light from the illuminator through. Below this opening are the diaphragm and condenser (#8). Above this opening are four lenses (objective lenses, #3) on a revolving nose piece (#2) that holds the multiple objectives. Above the objective lenses are two eye pieces (#1) called the ocular lenses. Attached to the bottom of the stage are two knobs for moving the slide (x-y mechanical stage knobs). On the arm below the stage are 2 knobs for focusing the image. The larger knob (#4) is the coarse focus, and the smaller knob (#5) is the fine focus.",
+      "caption": "Components of a typical brightfield microscope."
+    },
+    "OSC_Microbio_02_03_Brightfiel_img": {
+      "source": "media/OSC_Microbio_02_03_Brightfiel_img.jpg",
+      "sourceSha256": "5450dd7fe46e7bece34c19ce51256418487b2fa90a5d61f07e30da4c1c290217",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 500,
+      "height": 757,
+      "variants": [
+        {
+          "width": 500,
+          "height": 757,
+          "file": "OSC_Microbio_02_03_Brightfiel_img-500.webp"
+        }
+      ],
+      "alt": "A photo of a microscope is shown. The base contains a light source (#7) and a knob (#10). Attached at one end of the base is an arm with a projection to hold the specimen (#9). The center of #9 has an opening to allow light through. Below this opening are #6 & #8 (6 is above 8). Above this opening are four lenses (#3) attached to #2. Above the objective is #1. Attached to the bottom of the stage are two knobs (#9). On the arm below the stage are two knobs: #4 is larger than #5.",
+      "caption": ""
+    },
+    "OSC_Microbio_02_03_Confocal": {
+      "source": "media/OSC_Microbio_02_03_Confocal.jpg",
+      "sourceSha256": "096b6ee9e17f74c127643dc06af2434d9fd0bdff602edc1f6e5ce9901d1142f4",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 680,
+      "height": 372,
+      "variants": [
+        {
+          "width": 680,
+          "height": 372,
+          "file": "OSC_Microbio_02_03_Confocal-680.webp"
+        }
+      ],
+      "alt": "A micrograph showing purple spheres (cells) clustered in dark gray bundles (bulk glycans).",
+      "caption": "Confocal microscopy can be used to visualize structures such as this roof-dwelling cyanobacterium biofilm. (credit: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_02_03_DICmicro": {
+      "source": "media/OSC_Microbio_02_03_DICmicro.jpg",
+      "sourceSha256": "f5b3855279820968c634c353cb3bb5f18c8afc6127f16b807f6fd7a4aa4ad32c",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 500,
+      "height": 397,
+      "variants": [
+        {
+          "width": 500,
+          "height": 397,
+          "file": "OSC_Microbio_02_03_DICmicro-500.webp"
+        }
+      ],
+      "alt": "A micrograph shows a chain of rectangles that have thick edges. The chains branch and have clusters of spheres on the ends. The entire image is variations of gray but the difference in depth between cells in front and behind each other is distinguishable.",
+      "caption": "A DIC image of Fonsecaea pedrosoi grown on modified Leonian’s agar. This fungus causes chromoblastomycosis, a chronic skin infection common in tropical and subtropical climates."
+    },
+    "OSC_Microbio_02_03_Darkfield": {
+      "source": "media/OSC_Microbio_02_03_Darkfield.jpg",
+      "sourceSha256": "dd6cd5a43d90470937a1f8340ca1c969916e9d5950005bb83f4d35df9e75a6f2",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 700,
+      "height": 665,
+      "variants": [
+        {
+          "width": 700,
+          "height": 665,
+          "file": "OSC_Microbio_02_03_Darkfield-700.webp"
+        }
+      ],
+      "alt": "A diagram showing the light path in a darkfield microscope. Light travels from the light source to an opaque light stop which blocks the center of the light beam. The outer beams are focused by a condenser lens onto the sample on the slide. The sample scatters some of the light. Another objective lens blocks direct illumination but transmits scattered light.",
+      "caption": "An opaque light stop inserted into a brightfield microscope is used to produce a darkfield image. The light stop blocks light traveling directly from the illuminator to the objective lens, allowing only light reflected or refracted off the specimen to reach the eye."
+    },
+    "OSC_Microbio_02_03_DirectFl": {
+      "source": "media/OSC_Microbio_02_03_DirectFl.jpg",
+      "sourceSha256": "01866faeedd5b347e9720dd2d1e9a97ea774667a3e407d2e34861e566f3b0657",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 900,
+      "height": 709,
+      "variants": [
+        {
+          "width": 800,
+          "height": 630,
+          "file": "OSC_Microbio_02_03_DirectFl-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 709,
+          "file": "OSC_Microbio_02_03_DirectFl-900.webp"
+        }
+      ],
+      "alt": "Micrograph a shows fluorescent green spheres on a black background. Micrograph b shows fluorescent worm shapes on a black background. Diagram c depicts the process of direct immunofluorescence. In direct immunofluorescence a fluorochrome is attached to a primary antibody and the primary antibody is attached to the antigen. In indirect immunofluorescence the fluorochrome is attached to a secondary antibody. The secondary antibody is attached to the primary antibody; and the primary antibody is attached to the antigen.",
+      "caption": "(a) A direct immunofluorescent stain is used to visualize Neisseria gonorrhoeae , the bacterium that causes gonorrhea. (b) An indirect immunofluorescent stain is used to visualize larvae of Schistosoma mansoni , a parasitic worm that causes schistosomiasis, an intestinal disease common in the tropics. (c) In direct immunofluorescence, the stain is absorbed by a primary antibody, which binds to the antigen. In indirect immunofluorescence, the stain is absorbed by a secondary antibody, which binds to a primary antibody that has bound to the antigen. (credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_02_03_ElMicSchem": {
+      "source": "media/OSC_Microbio_02_03_ElMicSchem.jpg",
+      "sourceSha256": "aca4aa8a1900dfcf5194dc8f78ee4b9fa027e7b937ff1ad9aa084029f253b033",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 1074,
+      "height": 635,
+      "variants": [
+        {
+          "width": 800,
+          "height": 473,
+          "file": "OSC_Microbio_02_03_ElMicSchem-800.webp"
+        },
+        {
+          "width": 1074,
+          "height": 635,
+          "file": "OSC_Microbio_02_03_ElMicSchem-1074.webp"
+        }
+      ],
+      "alt": "The TEM diagram show a high voltage wire attached to an electron gun which releases a beam of electrons. The electron beam passes by the first condenser lens (connected to a condenser aperture), then the second condenser lens (also connected to a condenser aperture), and then through the specimen on the specimen holder and air lock (which is also connected to an objective lens and aperture). Finally, the electron beam travels to the fluorescent screen and camera. The SEM begins with an electron gun that fires electron beams through an anode, through a condenser lens, through scanning coils and on to the sample on the stage. A backscatter electron detector detects electrons that travel directly back from the sample; secondary electron detectors detect electrons that travel to the sides.",
+      "caption": "These schematic illustrations compare the components of transmission electron microscopes and scanning electron microscopes."
+    },
+    "OSC_Microbio_02_03_ElecMicTb-c3a9": {
+      "source": "media/OSC_Microbio_02_03_ElecMicTb-c3a9.jpg",
+      "sourceSha256": "5786c9923b88420782a8cda12b3a8c42d20c7d8ad2cd8de796bc260e9f8a21dd",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 1300,
+      "height": 549,
+      "variants": [
+        {
+          "width": 800,
+          "height": 338,
+          "file": "OSC_Microbio_02_03_ElecMicTb-c3a9-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 549,
+          "file": "OSC_Microbio_02_03_ElecMicTb-c3a9-1300.webp"
+        }
+      ],
+      "alt": "Table of electron microscopes which use electron beams focused with magnets to produce an image. Magnification: 20–100,000 x or more. Transmission electron microscopes (TEM) use electron means that pass through a specimen to visual small images; useful to observe small, thin specimens such as tissue sections and subcellular structures. The sample image (Ebola virus) shows a tube shaped into a letter d at one end. Scanning electron microscopes (SEM) use electron beams to visualize surfaces; useful to observe the three-dimensional surface details of specimens. The sample image (Campylobactor jejuni) shows thick three-dimensional spirals.",
+      "caption": "(credit “TEM”: modification of work by American Society for Microbiology; credit “SEM”: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_02_03_LightMicTb": {
+      "source": "media/OSC_Microbio_02_03_LightMicTb.jpg",
+      "sourceSha256": "9147f75328c70e0f1eeb6d4d0a3ce812ab6183eae98ddb77476e07640ef53864",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1591,
+      "variants": [
+        {
+          "width": 800,
+          "height": 979,
+          "file": "OSC_Microbio_02_03_LightMicTb-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1591,
+          "file": "OSC_Microbio_02_03_LightMicTb-1300.webp"
+        }
+      ],
+      "alt": "A table of light microscope types. These use visible or ultraviolet light to produce an image. Magnification: up to about 1000x. Brightfield microscopes are commonly used in a wide variety of laboratory applications as the standard microscope and produce an image on a bright background. The sample image of Bacillus sp. shows red rods on a clear background; small green dots in the red cells indicate endospores. Darkfield microscopes increase contrast without staining by producing a bright image on a dark background. These are especially useful for viewing live specimens. The sample image (Borrelia burgdorferi) shows bright spirals on a dark background. Phase contrast microscopes use refraction and interference caused by structures in the specimen to create high-contrast, high-resolution images without staining, making it useful for viewing live specimens and structures such as endospores and organelles. The sample image (Pseudomonas sp.) shows dark rods with a bright halo. Differential interference contrast (DIC) uses interference patters to enhance contrast between different features of a specimen to produce high-contrast images of living organisms with a three-dimensional appearance, making it especially useful in distinguishing structures within live, unstained specimens. Images viewed reveal detailed structures within cells. The sample image (Escherichia coli 0157:H7) shows small three-dimensional ovals. Fluorescence uses fluorescent stains to produce an image. Fluorescent microscopes can be used to identify pathogens, to find particular species, to distinguish living from dead, or to find location of particular molecules within a cell; also used for immunofluorescence. The sample image (Pseuodomonas putida stained with fluorescent dyes to visualize capsule) shows a green rod on a black background. Confocal microscopes use a laser to scan multiple z-planes successively, producing numerous two-dimensional, high-resolution images at various depths that can be constructed into a three-dimensional image by a computer, making this useful for examining thick specimens such as biofilms. The sample image (mouse intestine cells stained with fluorescent dye) shows cells of various colors on a dark background.",
+      "caption": "(credit “Brightfield”: modification of work by American Society for Microbiology; credit “Darkfield”: modification of work by American Society for Microbiology; credit “Phase contrast”: modification of work by American Society for Microbiology; credit “DIC”: modification of work by American Society for Microbiology; credit “Fluorescence”: modification of work by American Society for Microbiology; credit “Confocal”: modification of work by American Society for Microbiology; credit “Two-photon”: modification of work by Alberto Diaspro, Paolo Bianchini, Giuseppe Vicidomini, Mario Faretta, Paola Ramoino, Cesare Usai)"
+    },
+    "OSC_Microbio_02_03_OilLens": {
+      "source": "media/OSC_Microbio_02_03_OilLens.jpg",
+      "sourceSha256": "0289297f6cbdc3d51816af531155015af751e6010dc3f7f6429f5e8cd28cb61a",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 1101,
+      "height": 534,
+      "variants": [
+        {
+          "width": 800,
+          "height": 388,
+          "file": "OSC_Microbio_02_03_OilLens-800.webp"
+        },
+        {
+          "width": 1101,
+          "height": 534,
+          "file": "OSC_Microbio_02_03_OilLens-1101.webp"
+        }
+      ],
+      "alt": "Photograph a shows a close-up of a lens from a brightfield microscope. The lens is nearly touching the slide below it and there is oil spanning the space between the lens and the slide. Diagram b light traveling from the light source through the microscope slide. Without oil, the light refracts as it passes through the glass. Many of these refracted light beams do not meet the lens of the microscope. With immersion oil, the light beams travel from the slide, through the immersion oil, to the microscope lens with minimal refraction.",
+      "caption": "(a) Oil immersion lenses like this one are used to improve resolution. (b) Because immersion oil and glass have very similar refractive indices, there is a minimal amount of refraction before the light reaches the lens. Without immersion oil, light scatters as it passes through the air above the slide, degrading the resolution of the image."
+    },
+    "OSC_Microbio_02_03_Pcimage": {
+      "source": "media/OSC_Microbio_02_03_Pcimage.jpg",
+      "sourceSha256": "bc72e68b7fa612c9c687de1274d7678cb14967794114c320f79fa0d7c333cdd0",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 900,
+      "height": 374,
+      "variants": [
+        {
+          "width": 800,
+          "height": 332,
+          "file": "OSC_Microbio_02_03_Pcimage-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 374,
+          "file": "OSC_Microbio_02_03_Pcimage-900.webp"
+        }
+      ],
+      "alt": "Two micrographs of a cell on a dark background are shown. In the brightfield image the cell is a faint circle with a small grey circle in the center. In the phase-contrast image the cell is a bright circle with a bright circle in the center.",
+      "caption": "This figure compares a brightfield image (left) with a phase-contrast image (right) of the same unstained simple squamous epithelial cells. The cells are in the center and bottom right of each photograph (the irregular item above the cells is acellular debris). Notice that the unstained cells in the brightfield image are almost invisible against the background, whereas the cells in the phase-contrast image appear to glow against the background, revealing far more detail."
+    },
+    "OSC_Microbio_02_03_Phasecontr": {
+      "source": "media/OSC_Microbio_02_03_Phasecontr.jpg",
+      "sourceSha256": "34a7d06bfd16bfbcd37ee8ef1fe3b33d4e4935ae8674302dd42def613037a5fd",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 868,
+      "height": 794,
+      "variants": [
+        {
+          "width": 800,
+          "height": 731,
+          "file": "OSC_Microbio_02_03_Phasecontr-800.webp"
+        },
+        {
+          "width": 868,
+          "height": 794,
+          "file": "OSC_Microbio_02_03_Phasecontr-868.webp"
+        }
+      ],
+      "alt": "A diagram shows the path of light through a phase-contrast microscope. Light from the light source travels to the annular ring in the condenser which produces a cone of light focused on the specimen. The specimen refracts or reflects light. Light traveling directly from the condenser lens (undiffracted light) and light traveling through the specimen (diffracted light) are out of phase when they pass through the objective and phase plates. Wavelengths in phase or out of phase either add together or cancel out each other.",
+      "caption": "This diagram of a phase-contrast microscope illustrates phase differences between light passing through the object and background. These differences are produced by passing the rays through different parts of a phase plate. The light rays are superimposed in the image plane, producing contrast due to their interference."
+    },
+    "OSC_Microbio_02_03_SEMTEM": {
+      "source": "media/OSC_Microbio_02_03_SEMTEM.jpg",
+      "sourceSha256": "d4eaef5757373a7e9373f16920616222c6f6090ef25789d8c2563fbea02e2a40",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 553,
+      "height": 415,
+      "variants": [
+        {
+          "width": 553,
+          "height": 415,
+          "file": "OSC_Microbio_02_03_SEMTEM-553.webp"
+        }
+      ],
+      "alt": "Photograph A shows a transmission electron microscope: a large-tube shaped machine attached to a desk next to a computer. Photograph b shows a scanning electron microscope: a machine with many projections sitting on a desk next to a computer.",
+      "caption": "A transmission electron microscope (TEM)."
+    },
+    "OSC_Microbio_02_03_SEMvsTEM": {
+      "source": "media/OSC_Microbio_02_03_SEMvsTEM.jpg",
+      "sourceSha256": "9d80b3889bff0eafdbfa0b7884dae48b24b9ad6ddcbe7416c6c38590ce8713c5",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 900,
+      "height": 448,
+      "variants": [
+        {
+          "width": 800,
+          "height": 398,
+          "file": "OSC_Microbio_02_03_SEMvsTEM-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 448,
+          "file": "OSC_Microbio_02_03_SEMvsTEM-900.webp"
+        }
+      ],
+      "alt": "Figure a shows A TEM micrograph with a clear background and a dark cell in the center. A double line outlines the edge of the cell and webs of material inside the cell are visible. Figure b shows an SEM micrograph that has large purple clusters on a green background with small holes. The three dimensionality of the purple clusters is apparent.",
+      "caption": "(a) This TEM image of cells in a biofilm shows well-defined internal structures of the cells because of varying levels of opacity in the specimen. (b) This color-enhanced SEM image of the bacterium Staphylococcus aureus illustrates the ability of scanning electron microscopy to render three-dimensional images of the surface structure of cells. (credit a: modification of work by American Society for Microbiology; credit b: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_02_03_SSBiofilm": {
+      "source": "media/OSC_Microbio_02_03_SSBiofilm.jpg",
+      "sourceSha256": "10c9c587de1575822433c8447fc8db6c37990ea369223661ff56aaa3671ff536",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 700,
+      "height": 368,
+      "variants": [
+        {
+          "width": 700,
+          "height": 368,
+          "file": "OSC_Microbio_02_03_SSBiofilm-700.webp"
+        }
+      ],
+      "alt": "A micrograph with a black background containing many bright rectangles in clumps is shown.",
+      "caption": "In this image, multiple species of bacteria grow in a biofilm on stainless steel (stained with DAPI for epifluorescence miscroscopy). (credit: Ricardo Murga, Rodney Donlan)"
+    },
+    "OSC_Microbio_02_03_ScanMicTb": {
+      "source": "media/OSC_Microbio_02_03_ScanMicTb.jpg",
+      "sourceSha256": "9ff41e37ae0702c69df2916e133d9a4564fb7fd3bf9e2b062092dbf3d30bfd02",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 1300,
+      "height": 724,
+      "variants": [
+        {
+          "width": 800,
+          "height": 445,
+          "file": "OSC_Microbio_02_03_ScanMicTb-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 724,
+          "file": "OSC_Microbio_02_03_ScanMicTb-1300.webp"
+        }
+      ],
+      "alt": "A table of scanning probe microscopes with very sharp probes that are passed over the surface of the specimen and interact with it directly. Magnification: 100–100,000,000x or more. A scanning tunneling microscope (STM) uses a probe passed horizontally at a constant distance just above the specimen while the intensity of the current is measured; can map the structure of surfaces at the atomic level; works best on conducting materials but can also be used to examine organic materials such as DNA if fixed on a surface. The sample image (of a gold surface) shows small circles in repeating rows. Atomic force microscopes (AFM) are used in several ways, including using a laser focused on a cantilever to measure the bending of the tip or a probe passed above the specimen while the height needs to maintain a constant current is measured; useful to observe specimens at the atomic level and can be more easily used with nonconducting samples. The sample image (carboxymethylated nanocellulse absorbed on a silica surface) shows long strands throughout.",
+      "caption": ""
+    },
+    "OSC_Microbio_02_03_Syphilis": {
+      "source": "media/OSC_Microbio_02_03_Syphilis.jpg",
+      "sourceSha256": "605650f629fc304d51df720eadb42676e100a377dde445a30cfb40899e91445f",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 500,
+      "height": 375,
+      "variants": [
+        {
+          "width": 500,
+          "height": 375,
+          "file": "OSC_Microbio_02_03_Syphilis-500.webp"
+        }
+      ],
+      "alt": "A micrograph shows a black background with a few small white spirals.",
+      "caption": "Use of a darkfield microscope allows us to view living, unstained samples of the spirochete Treponema pallidum . Similar to a photographic negative, the spirochetes appear bright against a dark background. (credit: Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_02_03_TEMvsLight": {
+      "source": "media/OSC_Microbio_02_03_TEMvsLight.jpg",
+      "sourceSha256": "25b06545eac37e33b1e6b6ca4428f9f307495e95cf58255cbee11cd4e9bb183c",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 802,
+      "height": 678,
+      "variants": [
+        {
+          "width": 800,
+          "height": 676,
+          "file": "OSC_Microbio_02_03_TEMvsLight-800.webp"
+        },
+        {
+          "width": 802,
+          "height": 678,
+          "file": "OSC_Microbio_02_03_TEMvsLight-802.webp"
+        }
+      ],
+      "alt": "Diagrams comparing TEM and light microscopes are shown. In the light microscope light from the light source is focused by the condenser onto the specimen. The light is then further focused by the objective lens and the ocular lens and finally reaches the viewer. In a TEM, an electron gun releases electrons through a tube. These electrons are focused on the specimen by electromagnets on the edge of the tube. The electron beam then reaches the objective lens and finally the viewer.",
+      "caption": "Electron microscopes use magnets to focus electron beams similarly to the way that light microscopes use lenses to focus light."
+    },
+    "OSC_Microbio_02_04_Acidfast": {
+      "source": "media/OSC_Microbio_02_04_Acidfast.jpg",
+      "sourceSha256": "ebc996f8086709aa48f515818bc67a287a56008bd0b3248d144315ce3700632b",
+      "module": "m58788",
+      "kind": "photo",
+      "width": 700,
+      "height": 361,
+      "variants": [
+        {
+          "width": 700,
+          "height": 361,
+          "file": "OSC_Microbio_02_04_Acidfast-700.webp"
+        }
+      ],
+      "alt": "A micrograph shows red chains of cells on a blue background.",
+      "caption": "Ziehl-Neelsen staining has rendered these Mycobacterium tuberculosis cells red and the surrounding growth indicator medium blue. (credit: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_02_04_CapsuStain": {
+      "source": "media/OSC_Microbio_02_04_CapsuStain.jpg",
+      "sourceSha256": "f2f595f0ad1aca557c5dda84690b6813520e8ce3071b7f6535e124e911697cf7",
+      "module": "m58788",
+      "kind": "photo",
+      "width": 1200,
+      "height": 373,
+      "variants": [
+        {
+          "width": 800,
+          "height": 248,
+          "file": "OSC_Microbio_02_04_CapsuStain-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 373,
+          "file": "OSC_Microbio_02_04_CapsuStain-1200.webp"
+        }
+      ],
+      "alt": "Micrograph a shows clear circles on a black background. Micrograph b shows red rods with a clear halo on a dark background.",
+      "caption": "(a) India-ink was used to stain the background around these cells of the yeast Cryptococcus neoformans . The halos surrounding the cells are the polysaccharide capsules. (b) Crystal violet and copper sulfate dyes cannot penetrate the encapsulated Bacillus cells in this negatively stained sample. Encapsulated cells appear to have a light-blue halo. (credit a: modification of work by American Society for Microbiology; credit b: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_02_04_Endospores": {
+      "source": "media/OSC_Microbio_02_04_Endospores.jpg",
+      "sourceSha256": "9cbee98a22f7ef617e86839aa15a4340cb8577ba9fea92ba8b8d17cad1f35445",
+      "module": "m58788",
+      "kind": "photo",
+      "width": 900,
+      "height": 378,
+      "variants": [
+        {
+          "width": 800,
+          "height": 336,
+          "file": "OSC_Microbio_02_04_Endospores-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 378,
+          "file": "OSC_Microbio_02_04_Endospores-900.webp"
+        }
+      ],
+      "alt": "A micrograph shows chains of red rods. Each red rod contains a green oval. An arrow pointing to the green ovals states: green endospore inside bacterial cells.",
+      "caption": "A stained preparation of Bacillus subtilis showing endospores as green and the vegetative cells as pink. (credit: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_02_04_Fixation": {
+      "source": "media/OSC_Microbio_02_04_Fixation.jpg",
+      "sourceSha256": "1d9a219d80378ba2e04cab48812285b4482fb5add58150ae10036a30c4f0f0b2",
+      "module": "m58788",
+      "kind": "photo",
+      "width": 1300,
+      "height": 337,
+      "variants": [
+        {
+          "width": 800,
+          "height": 207,
+          "file": "OSC_Microbio_02_04_Fixation-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 337,
+          "file": "OSC_Microbio_02_04_Fixation-1300.webp"
+        }
+      ],
+      "alt": "Photograph a shows a slide sitting on a flat heating surface. Photograph b shows a person holding a slide in front of a heated metal cylinder. Photograph c shows a bit of tissue in a container of clear liquid. Caption reads Fixing tissue: fixation to preserve tissue and maintain life-like structure; place into fixative (eg 10% formalin).",
+      "caption": "(a) A specimen can be heat-fixed by using a slide warmer like this one. (b) Another method for heat-fixing a specimen is to hold a slide with a smear over a microincinerator. (c) This tissue sample is being fixed in a solution of formalin (also known as formaldehyde). Chemical fixation kills microorganisms in the specimen, stopping degradation of the tissues and preserving their structure so that they can be examined later under the microscope. (credit a: modification of work by Nina Parker; credit b: modification of work by Nina Parker; credit c: modification of work by “University of Bristol”/YouTube)"
+    },
+    "OSC_Microbio_02_04_FlagStain": {
+      "source": "media/OSC_Microbio_02_04_FlagStain.jpg",
+      "sourceSha256": "7091e33e29c51a8206c93eef955bee7138e5964967b6ee3b741a551260d7bf00",
+      "module": "m58788",
+      "kind": "photo",
+      "width": 500,
+      "height": 268,
+      "variants": [
+        {
+          "width": 500,
+          "height": 268,
+          "file": "OSC_Microbio_02_04_FlagStain-500.webp"
+        }
+      ],
+      "alt": "Three red rectangles on a clear background are shown. Each rectangle has many thin, wiggly lines projecting from it.",
+      "caption": "A flagella stain of Bacillus cereus , a common cause of foodborne illness, reveals that the cells have numerous flagella, used for locomotion. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_02_04_GramProc": {
+      "source": "media/OSC_Microbio_02_04_GramProc.jpg",
+      "sourceSha256": "2d92734a0e4fd72e92f6b3373ce821f5156e9113851a3804fb8ac3c2d1ca7c56",
+      "module": "m58788",
+      "kind": "photo",
+      "width": 1100,
+      "height": 843,
+      "variants": [
+        {
+          "width": 800,
+          "height": 613,
+          "file": "OSC_Microbio_02_04_GramProc-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 843,
+          "file": "OSC_Microbio_02_04_GramProc-1100.webp"
+        }
+      ],
+      "alt": "A table shows the Gram stain process. Each row consists of a column describing the step and a column describing the effect. Additional columns show drawings to support the description in the effects column. Step 1: Crystal Violet, the primary stain, is added to the specimen smear. This stains cells purple or blue. The Gram-positive and Gram-negative cells all look purple. Step 2: Iodine, the mordant, makes the dye less soluble so it adheres to cell walls. The cells remain purple or blue. The Gram-positive and Gram-negative cells all look purple. Step 3: Alcohol, the decolorizer, washes away stain from Gram-negative cell walls. Gram-positive cells remain purple or blue, Gram-negative cells are colorless. Step 4: Safranin, the counterstain, allows dye adherence to Gram-negative cells. Gram-positive cells remain a pruple or blue. Gram-negative cells appear pink or red.",
+      "caption": "Gram-staining is a differential staining technique that uses a primary stain and a secondary counterstain to distinguish between gram-positive and gram-negative bacteria."
+    },
+    "OSC_Microbio_02_04_Gramstain": {
+      "source": "media/OSC_Microbio_02_04_Gramstain.jpg",
+      "sourceSha256": "e1554136152389cf1eb149a106586995a5b359f4e7d2feaf900d6f477ace4f9c",
+      "module": "m58788",
+      "kind": "photo",
+      "width": 500,
+      "height": 312,
+      "variants": [
+        {
+          "width": 500,
+          "height": 312,
+          "file": "OSC_Microbio_02_04_Gramstain-500.webp"
+        }
+      ],
+      "alt": "A micrograph shows purple circles and pink rods.",
+      "caption": "In this specimen, the gram-positive bacterium Staphylococcus aureus retains crystal violet dye even after the decolorizing agent is added. Gram-negative Escherichia coli , the most common Gram stain quality-control bacterium, is decolorized, and is only visible after the addition of the pink counterstain safranin. (credit: modification of work by Nina Parker)"
+    },
+    "OSC_Microbio_02_04_IndIrectFl": {
+      "source": "media/OSC_Microbio_02_04_IndIrectFl.jpg",
+      "sourceSha256": "7571827860d604264be27dc9fa2b637091aff1189293903ca626ee6b26e27126",
+      "module": "m58788",
+      "kind": "photo",
+      "width": 471,
+      "height": 259,
+      "variants": [
+        {
+          "width": 471,
+          "height": 259,
+          "file": "OSC_Microbio_02_04_IndIrectFl-471.webp"
+        }
+      ],
+      "alt": "Fluorochromes are attached to secondary antibodies (unstained). Two secondary antibodies are attached to a single primary antibody (unstained). The primary antibody is attached to a spiral labeled T. pallidum cell",
+      "caption": "Indirect immunofluorescence can be used to identify T. pallidum , the causative agent of syphilis, in a specimen."
+    },
+    "OSC_Microbio_02_04_Microtome": {
+      "source": "media/OSC_Microbio_02_04_Microtome.jpg",
+      "sourceSha256": "1ac7e60e7186c93aa9e1a872df408a0e722b08290f487e359e4280ff4d96461e",
+      "module": "m58788",
+      "kind": "photo",
+      "width": 900,
+      "height": 369,
+      "variants": [
+        {
+          "width": 800,
+          "height": 328,
+          "file": "OSC_Microbio_02_04_Microtome-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 369,
+          "file": "OSC_Microbio_02_04_Microtome-900.webp"
+        }
+      ],
+      "alt": "Photograph a shows a blue solid specimen sits below a mechanical dial. Photograph b shows a person holding a dial on a machine.",
+      "caption": "(a) An ultramicrotome used to prepare specimens for a TEM. (b) A technician uses an ultramicrotome to slice a specimen into thin sections. (credit a: modification of work by “Frost Museum”/Flickr; credit b: modification of work by U.S. Fish and Wildlife Service Northeast Region)"
+    },
+    "OSC_Microbio_02_04_Posnegstai": {
+      "source": "media/OSC_Microbio_02_04_Posnegstai.jpg",
+      "sourceSha256": "79a9bcc76cd38e3045192a462d1e22b1c47046c5b4eac58d8712085bb872cc00",
+      "module": "m58788",
+      "kind": "photo",
+      "width": 1300,
+      "height": 425,
+      "variants": [
+        {
+          "width": 800,
+          "height": 261,
+          "file": "OSC_Microbio_02_04_Posnegstai-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 425,
+          "file": "OSC_Microbio_02_04_Posnegstai-1300.webp"
+        }
+      ],
+      "alt": "Micrograph a shows chains of purple rectangles on a clear background. Micrograph B shows a purple cell on a clear background; the cell looks like a jelly with an umbrella top and long projections. Micrograph C shows clear chains of rectangles on a dark background.",
+      "caption": "(a) These Bacillus anthracis cells have absorbed crystal violet, a basic positive stain. (b) This specimen of Spinoloricus , a microscopic marine organism, has been stained with rose bengal, a positive acidic stain. (c) These B. megaterium appear to be white because they have not absorbed the negative red stain applied to the slide. (credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by Roberto Danovaro, Antonio Pusceddu, Cristina Gambi, Iben Heiner, Reinhardt Mobjerg Kristensen; credit c: modification of work by Anh-Hue Tu)"
+    },
+    "OSC_Microbio_02_04_STMAFM": {
+      "source": "media/OSC_Microbio_02_04_STMAFM.jpg",
+      "sourceSha256": "729d774c9aa13895d1e4a0a0b5e79bad0e46ec862112e74add4c568643f265f5",
+      "module": "m58787",
+      "kind": "photo",
+      "width": 700,
+      "height": 359,
+      "variants": [
+        {
+          "width": 700,
+          "height": 359,
+          "file": "OSC_Microbio_02_04_STMAFM-700.webp"
+        }
+      ],
+      "alt": "Micrograph a shows circle arranged in repeating rows. Micrograph b shows long strands in a pile.",
+      "caption": "STMs and AFMs allow us to view images at the atomic level. (a) This STM image of a pure gold surface shows individual atoms of gold arranged in columns. (b) This AFM image shows long, strand-like molecules of nanocellulose, a laboratory-created substance derived from plant fibers. (credit a: modification of work by “Erwinrossen”/Wikimedia Commons)"
+    },
+    "OSC_Microbio_02_04_StaintablA": {
+      "source": "media/OSC_Microbio_02_04_StaintablA.jpg",
+      "sourceSha256": "928a1246ff3e7b6c5cbc8b46911ff6402b5a3b49ac424b0330536a4b91982e79",
+      "module": "m58788",
+      "kind": "photo",
+      "width": 1300,
+      "height": 988,
+      "variants": [
+        {
+          "width": 800,
+          "height": 608,
+          "file": "OSC_Microbio_02_04_StaintablA-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 988,
+          "file": "OSC_Microbio_02_04_StaintablA-1300.webp"
+        }
+      ],
+      "alt": "A table of simple stains is shown. Basic stains include: methylene blue, crystal violet, malachite green, basic fuschsin, carbolfuschsin, and safranin. Basic stains stain negatively charged molecules and structures, such as nucleic acids and proteins. The outcome of this positive stain is dark cells on a light background. Acidic stains include eosine, acid fuchsin, rose Bengal, and Congo red. Acid stains stain positively charged molecules and structures such as proteins. Acidic stains can either be positive or negative stains depending on the cell’s chemistry. Negative stains include india in k and nigrosine. Negative stains stain the background, not the specimen and produce a dark background with a light specimen.",
+      "caption": "(credit “basic stains”: modification of work by Centers for Disease Control and Prevention; credit “Acidic stains”: modification of work by Roberto Danovaro, Antonio Dell’Anno, Antonio Pusceddu, Cristina Gambi, Iben Heiner, Reinhardt Mobjerg Kristensen; credit “Negative stains”: modification of work by Anh-Hue Tu)"
+    },
+    "OSC_Microbio_02_04_StaintablB": {
+      "source": "media/OSC_Microbio_02_04_StaintablB.jpg",
+      "sourceSha256": "e27227604198dc74da2ebef45f0b3fa7871af0307c5933611051290f559343f4",
+      "module": "m58788",
+      "kind": "photo",
+      "width": 1300,
+      "height": 1602,
+      "variants": [
+        {
+          "width": 800,
+          "height": 986,
+          "file": "OSC_Microbio_02_04_StaintablB-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 1602,
+          "file": "OSC_Microbio_02_04_StaintablB-1300.webp"
+        }
+      ],
+      "alt": "A table of differential stains is shown. The Gram stain uses crystal violet, Gram’s iodine, ethanol (decolorizer), and safranin. The purpose of the Gram stain is to distinguish cells by cell-wall type (Gram-positive, Gram-negative). Gram-positive cells stain purple/violet. Gram-negative cells stain pink. The acid fast stain: after staining with basic fuchsin, acid-fast bacteria resist decolonization by acid-alcohol. Non-acid-fast bacteria are counterstained with methylene blue. The acid-fast stain is used to distinguish acid-fast bacteria such as M. tuberculosis, from non-acid-fast cells. Acid-fast bacteria are red; non-acid-fast cells are blue. The Endospore stain uses heat to stain endospores with malachite green (Schaeffer-Fulton procedure), then cell is washed and counterstained with safranin. The endospore stain is used to distinguish organisms with endospores from those without; used to study the endospore. Endospores appear bluish-green; other structures appear pink to red. Flagella stain: flagella are coated with a tannic acid or potassium alum mordant, then stained using either pararosaline or basic fuchsin. The flagella stain is used to view and study flagella in bacteria that have them. Flagella are visible as thin strands if present. Capsule stain: negative staining with india ink or nigrosine is used to stain the background, leaving a clear area of the cell and the capsule Counterstaining can be used to stain the cell while leaving the capsule clear. The capsule stain is used to distinguish cells with capsules from those without. Capsules appear clear or as halos if present.",
+      "caption": "(credit “Gram stain”: modification of work by Nina Parker; credit “Acid-fast stain”: modification of work by American Society for Microbiology; credit “Endospore stain”: modification of work by American Society for Microbiology; credit “Capsule stain” : modification of work by American Society for Microbiology; credit “Flagella stain”: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_02_04_StaphGram": {
+      "source": "media/OSC_Microbio_02_04_StaphGram.jpg",
+      "sourceSha256": "e3059ff618b8f792f4336fc506042d779aa98dec3c240445154d8d98ae58d9e5",
+      "module": "m58788",
+      "kind": "photo",
+      "width": 500,
+      "height": 369,
+      "variants": [
+        {
+          "width": 500,
+          "height": 369,
+          "file": "OSC_Microbio_02_04_StaphGram-500.webp"
+        }
+      ],
+      "alt": "A micrograph shows purple circles in random clusters.",
+      "caption": "(credit: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_02_04_Syphilis": {
+      "source": "media/OSC_Microbio_02_04_Syphilis.jpg",
+      "sourceSha256": "2278678b55e5f916f4ff8ed9df0c3a4618ee737643b92bd9961673920d550461",
+      "module": "m58788",
+      "kind": "photo",
+      "width": 1100,
+      "height": 404,
+      "variants": [
+        {
+          "width": 800,
+          "height": 294,
+          "file": "OSC_Microbio_02_04_Syphilis-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 404,
+          "file": "OSC_Microbio_02_04_Syphilis-1100.webp"
+        }
+      ],
+      "alt": "Micrograph a shows clear spirals on a black background. Micrograph b shows purple spirals on a clear background. Micrograph c shows three-dimensional spirals.",
+      "caption": "(a) Living, unstained Treponema pallidum spirochetes can be viewed under a darkfield microscope. (b) In this brightfield image, a modified Steiner silver stain is used to visualized T. pallidum spirochetes. Though the stain kills the cells, it increases the contrast to make them more visible. (c) While not used for standard diagnostic testing, T. pallidum can also be examined using scanning electron microscopy. (credit a: modification of work by Centers for Disease Control and Prevention; credit b: modification of work by Centers for Disease Control and Prevention; credit c: modification of work by Centers for Disease Control and Prevention)"
+    }
+  }
+}

@@ -116,7 +116,7 @@ import { parseObjectivesCallout } from '../lib/openstax-source.mjs';
 // The real textin grading normalizer, so the word-count/retype-hazard/
 // duplicate-accept-member rules below reason about a textin answer exactly
 // the way check-text.mjs will grade it.
-import { normalizeText } from '../../assets/js/lib/text/check-text.mjs';
+import { normalizeText, pluralFolds } from '../../assets/js/lib/text/check-text.mjs';
 // Coverage measure for selfcheck rubric checkpoints — the same token-set
 // coverage verify-source-keys holds model answers to.
 import { phraseCoverage } from '../lib/openstax-source.mjs';
@@ -179,6 +179,12 @@ export const BOOK_RULES = Object.freeze({
     knowledgeCheck: null,
   },
   'life-health-sciences/biology': {
+    practice: { perObjective: 3, perSection: 8, distinctItems: true },
+    knowledgeCheck: { perSection: 3, autoGraded: 1 },
+  },
+  // Same shape of book as Biology 2e (prose, vocabulary-heavy, keyed
+  // end-of-section sets), so the same floor; see docs/subjects/microbiology.md.
+  'life-health-sciences/microbiology': {
     practice: { perObjective: 3, perSection: 8, distinctItems: true },
     knowledgeCheck: { perSection: 3, autoGraded: 1 },
   },
@@ -1313,7 +1319,23 @@ export function lintHugo(src, filename = '', options = {}) {
   // superscript digit and is not itself followed by a superscript digit. An
   // exponent (`10⁻³`, `f⁻¹`) always has a superscript digit after the sign,
   // so the two never overlap.
-  for (const m of withoutFigureSpecs(src, blank).matchAll(/(?<![A-Za-z\u2080-\u2089)\u00B2\u00B3\u2074-\u2079])⁻|⁻(?=[\u2070\u00B9\u00B2\u00B3\u2074-\u2079])/g)) {
+  // A mediafigure's alt/longdesc is exempt on the same terms as the positive
+  // rule below: an attribute cannot hold KaTeX, so `10⁻¹⁸` is the only way an
+  // EM-spectrum description can name its frequencies (microbiology 2.1).
+  const withoutMediaText = (text) => {
+    let plain = text;
+    for (const sc of shortcodes(plain, 'mediafigure')) {
+      const spans = shortcodeParamSpans(sc.open);
+      for (const key of ['alt', 'longdesc']) {
+        const span = spans[key];
+        if (!span) continue;
+        const at = sc.openIndex + span.index;
+        plain = plain.slice(0, at) + blank(span.raw) + plain.slice(at + span.raw.length);
+      }
+    }
+    return plain;
+  };
+  for (const m of withoutMediaText(withoutFigureSpecs(mediaSrc, blank)).matchAll(/(?<![A-Za-z\u2080-\u2089)\u00B2\u00B3\u2074-\u2079])⁻|⁻(?=[\u2070\u00B9\u00B2\u00B3\u2074-\u2079])/g)) {
     err(m.index, 'unicode superscript minus — write a braced exponent like 10^{-3} (an ion charge such as `Cl⁻` or `HCO₃⁻` is allowed)');
   }
   // A Unicode superscript DIGIT after an ASCII digit is a POSITIVE numeric
@@ -1329,19 +1351,23 @@ export function lintHugo(src, filename = '', options = {}) {
   // typesetter) and a mediafigure's alt/longdesc (an attribute cannot hold
   // KaTeX, so `.7² + 2(.7)(.3)` is the only exponent a description can carry).
   {
-    let plain = withoutFigureSpecs(mediaSrc, blank);
-    for (const sc of shortcodes(plain, 'mediafigure')) {
-      const spans = shortcodeParamSpans(sc.open);
-      for (const key of ['alt', 'longdesc']) {
-        const span = spans[key];
-        if (!span) continue;
-        const at = sc.openIndex + span.index;
-        plain = plain.slice(0, at) + blank(span.raw) + plain.slice(at + span.raw.length);
-      }
-    }
+    const plain = withoutMediaText(withoutFigureSpecs(mediaSrc, blank));
     for (const m of plain.matchAll(/[0-9][⁰¹²³⁴-⁹]+/g)) {
       err(m.index, `unicode superscript exponent ${JSON.stringify(m[0])} — a numeric exponent is math: write it inside $…$ as 10^{84} or 4^2 (figure specs and mediafigure alt/longdesc are exempt)`);
     }
+  }
+  // One codepoint per glyph: the micrometre prefix is the MICRO SIGN (U+00B5),
+  // never the Greek small letter mu (U+03BC). The two render identically and
+  // the text grader folds them together (its NFKD pass maps U+00B5 onto
+  // U+03BC), so nothing looks or grades wrong — but Pagefind indexes them as
+  // different characters, so a reader searching one spelling misses every page
+  // that used the other, and the corpus carried both (110 micro signs against
+  // 12 mus, some in the same book) because each transcription inherited
+  // whichever character its source module happened to use. The rule is exactly
+  // mu-then-Latin-letter, which is always a unit prefix; a bare Greek mu (a
+  // mean, a coefficient of friction) is untouched.
+  for (const m of src.matchAll(/\u03BC(?=[A-Za-z])/g)) {
+    err(m.index, 'Greek small letter mu before a unit (μm) — a unit prefix is the micro sign µ (U+00B5); the glyphs are identical but search treats them as different characters');
   }
   // Mathematics in an EXERCISE is typeset, not spelled with lookalike
   // characters. Chapters 1-4 write every symbol as TeX inside `$…$`; the
@@ -1418,6 +1444,36 @@ export function lintHugo(src, filename = '', options = {}) {
   // values in the 1000–2099 band are skipped rather than risk flagging a year.
   for (const { index, value, grouped } of ungroupedDigitRuns(mediaSrc, blank)) {
     err(index, `ungrouped ${value.length}-digit number ${value} in math — write it as ${grouped} (four-digit years are the exception)`);
+  }
+  // Currency read as math. Hugo's goldmark passthrough (hugo.toml) pairs ANY
+  // two bare `$` in a paragraph into inline math, so "costs between $300,000
+  // and $500,000" typesets as KaTeX garbage — the corpus writes money as
+  // `\$` instead (1,057 escaped occurrences). Inside real math the corpus
+  // groups digits as `10{,}000` (`groupDigits` above), and a comma-list of
+  // numbers is written `$1,2,3$` or `$800,400,200$` — every group there is
+  // followed by another comma or the closing `$`, never by prose. So a
+  // currency amount and a math digit-group list share one shape
+  // (`\d{1,3}(,\d{3})+`) up to what follows the last group: prose puts a
+  // word there, math puts an operator, a brace, or another `$`. Checking the
+  // text from the `$` to the next `$` (or end of line, for the case an
+  // unescaped `$` never closes) for a whitespace-bounded alphabetic word is
+  // what tells the two apart without also catching `10,000{e}^{r\cdot 17}`,
+  // whose only "word" (`cdot`) sits right after a backslash, never
+  // whitespace.
+  {
+    const noFigures = withoutFigureSpecs(mediaSrc, blank);
+    for (const m of noFigures.matchAll(/(?<!\\)\$(\d{1,3}(?:,\d{3})+)(?![\d,])/g)) {
+      const rest = noFigures.slice(m.index + m[0].length);
+      let boundary = rest.length;
+      const eol = rest.indexOf('\n');
+      if (eol >= 0) boundary = Math.min(boundary, eol);
+      const nextDollar = rest.indexOf('$');
+      if (nextDollar >= 0) boundary = Math.min(boundary, nextDollar);
+      const window = rest.slice(0, boundary);
+      if (/(^|\s)[A-Za-z]{3,}(?=\s|$)/.test(window)) {
+        err(m.index, `\`$${m[1]}\` reads as the start of inline math — money is written \\$${m[1]} (a math digit group is 10{,}000)`);
+      }
+    }
   }
   // TeX discards ordinary source whitespace in math mode. Catch the
   // high-confidence prose joins that caused visible "Ifn" / "squareof"
@@ -2301,8 +2357,24 @@ export function lintHugo(src, filename = '', options = {}) {
         }
       }
     }
-    const qNorm = normalizeText(q);
+    // The grader folds a regular plural (form + s / + es) onto every accepted
+    // form, so an accept member that IS that plural of the answer or of
+    // another member grades nothing the item did not already grade. Landed
+    // September 6, 2026 with the corpus re-audit that stripped 582 such
+    // members; an irregular plural (`hypotheses`, `septa`, `bacteria`) is
+    // not a fold and stays listed.
     for (const member of members) {
+      if (member.label.startsWith('answer ')) continue; // the key itself is never redundant
+      const covering = members.find((other) => other !== member && pluralFolds(other.norm).includes(member.norm));
+      if (covering) {
+        err(index, `${where}: ${member.label} is the regular plural of ${covering.label} — grading already folds a trailing s/es, so remove it (an irregular plural still needs listing)`);
+      }
+    }
+    // Every spelling the grader will take — the members and their folded
+    // plurals — is a retype hazard if the prompt prints it.
+    const graded = members.flatMap((member) => [member, ...pluralFolds(member.norm).map((norm) => ({ norm, label: `${member.label}'s plural ${JSON.stringify(norm)}` }))]);
+    const qNorm = normalizeText(q);
+    for (const member of graded) {
       if (member.norm && containsWholeWordRun(qNorm, member.norm)) {
         err(index, `${where}: ${member.label} appears as a whole-word run in the question (normalized) — a learner can pass by retyping the prompt`);
       }
@@ -2312,7 +2384,7 @@ export function lintHugo(src, filename = '', options = {}) {
     // member is the same retype hazard as a question that does (22.5's
     // "The section abbreviates this process BNF" beside accept="BNF").
     const hintNorm = normalizeText(params.hint || '');
-    for (const member of members) {
+    for (const member of graded) {
       if (member.norm && containsWholeWordRun(hintNorm, member.norm)) {
         err(index, `${where}: ${member.label} appears as a whole-word run in the hint (normalized) — a hint that prints the answer is a retype hazard; reword it`);
       }
@@ -2490,6 +2562,93 @@ export function lintHugo(src, filename = '', options = {}) {
     }
     if (params.kind !== undefined && !["photo", "diagram"].includes(params.kind)) {
       err(index, `${where}: kind must be "photo" or "diagram" (or omitted to take the manifest's guess)`);
+    }
+  }
+
+  // ---- a figure answering the item beside it -------------------------------
+  // Microbiology 2.3 shipped an Art Connection mediafigure whose alt named
+  // every part ("the rotating turret (2)…") that the selfcheck directly
+  // below it asked the learner to label — the figure did the item's work for
+  // it. "Directly below" is load-bearing: only whitespace between the
+  // figure's closing tag and the next interactive shortcode counts as
+  // adjacent, so a figure with a paragraph of its own commentary before the
+  // item is untouched.
+  {
+    const interactiveShortcodes = [
+      ...fillins.map((s) => ({ ...s, kind: 'fillin' })),
+      ...multiplechoices.map((s) => ({ ...s, kind: 'multiplechoice' })),
+      ...textins.map((s) => ({ ...s, kind: 'textin' })),
+      ...selfchecks.map((s) => ({ ...s, kind: 'selfcheck' })),
+      ...sortbins.map((s) => ({ ...s, kind: 'sortbins' })),
+    ].sort((a, b) => a.index - b.index);
+    for (const { params, index, end, closed } of shortcodes(mediaSrc, 'mediafigure')) {
+      if (!closed) continue; // the unclosed-shortcode rule above already named it
+      const next = interactiveShortcodes.find((s) => s.index >= end);
+      if (!next) continue;
+      if (mediaSrc.slice(end, next.index).trim()) continue; // something sits between them
+      // alt + longdesc ONLY, never the paired caption: the caption is a
+      // sentence the author already wrote ABOUT this figure, so it shares
+      // topic vocabulary with an adjacent item on the same fact by design —
+      // measured against the full corpus, folding the caption in caught
+      // "carbon" beside a carbon-isotope selfcheck and "a downstream
+      // cellular response" beside its own multiplechoice, neither one the
+      // verbatim-labeling hazard this rule exists to catch (which lives in
+      // the accessibility text, read by nobody who can already see the
+      // image). Held to alt/longdesc alone, the corpus is clean.
+      const figText = normalizeText(`${params.alt || ''} ${params.longdesc || ''}`);
+      const where = `mediafigure (${(params.src || '?').trim()})`;
+      // A one-word "answer" (`answer="Water"`) or one-word checkpoint
+      // (`no`) is common enough in ordinary prose about the same topic that
+      // it matches the alt/longdesc of an unrelated figure by chance — the
+      // corpus carried both. The genuine hazard is always a multi-word
+      // phrase (a named part, a full checkpoint clause), so a one-word
+      // member proves nothing and is skipped.
+      const isMultiWord = (s) => normalizeText(s).split(' ').filter(Boolean).length >= 2;
+      if (next.kind === 'textin') {
+        const members = [next.params.answer, ...(next.params.accept || '').split('|')].filter(Boolean).filter(isMultiWord);
+        for (const member of members) {
+          if (containsWholeWordRun(figText, normalizeText(member))) {
+            err(index, `${where}: its alt/longdesc prints the answer of the item directly below it (${JSON.stringify(member)}) — describe what is shown, never what the item asks for`);
+            break;
+          }
+        }
+      } else if (next.kind === 'multiplechoice') {
+        const answer = next.params.answer;
+        if (answer && isMultiWord(answer) && containsWholeWordRun(figText, normalizeText(answer))) {
+          err(index, `${where}: its alt/longdesc prints the answer of the item directly below it (${JSON.stringify(answer)}) — describe what is shown, never what the item asks for`);
+        }
+      } else if (next.kind === 'selfcheck' && next.closed) {
+        // `phraseCoverage`, the rubric-checkpoint helper used everywhere
+        // else in this file, is a bag-of-words score: it asks whether the
+        // checkpoint's words are ALL somewhere in the reference text, not
+        // whether they say the same thing in the same order. A model
+        // answer is written FROM its checkpoints, so that bag is exactly
+        // right there — but here the reference is a figure's own alt/
+        // longdesc, which describes everything the figure shows, and a
+        // checkpoint on the same figure inevitably shares its nouns
+        // ("carbon", "Golgi apparatus", "Class Mammalia") without the
+        // figure having stated the checkpoint's actual claim. Measured
+        // against the corpus, phraseCoverage — at any threshold up to and
+        // including 100% — read a multi-row taxonomy longdesc as "printing"
+        // a checkpoint about which two rows a pair of animals share, when
+        // the longdesc never says any such thing; only a `containsWholeWordRun`
+        // demand — the checkpoint's own clause verbatim, in order, the same
+        // bar the textin/multiplechoice branches above already hold
+        // themselves to — told the genuine labeling hazard (a checkpoint
+        // copied straight out of the alt) apart from ordinary shared
+        // vocabulary, and left the corpus clean.
+        const checkParts = next.inner.split(/^[ \t]*===CHECKS===[ \t]*$/m);
+        if (checkParts.length === 2) {
+          const checkpoints = checkParts[1].split('\n').map((l) => l.trim())
+            .filter(Boolean).filter((c) => normalizeText(c).split(' ').filter(Boolean).length >= 3);
+          for (const checkpoint of checkpoints) {
+            if (containsWholeWordRun(figText, normalizeText(checkpoint))) {
+              err(index, `${where}: its alt/longdesc prints the answer of the item directly below it (${JSON.stringify(checkpoint)}) — describe what is shown, never what the item asks for`);
+              break;
+            }
+          }
+        }
+      }
     }
   }
 

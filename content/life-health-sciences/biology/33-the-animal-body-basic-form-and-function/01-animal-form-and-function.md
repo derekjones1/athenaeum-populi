@@ -198,14 +198,14 @@ pericardial cavity
 {{< textin
   question="The plane cutting through an animal that separates it into front and back portions is called the ________."
   answer="frontal plane"
-  accept="coronal plane|frontal (coronal) plane|frontal|coronal|frontal planes|coronal planes"
+  accept="coronal plane|frontal (coronal) plane|frontal|coronal"
   hint="The section also calls this plane by a second name, the one used for the similarly angled plane in dental and skull anatomy."
 >}}
 
 {{< textin
   question="The plane cutting through an animal that separates it into right and left sides, without requiring the two sides to be equal, is called the ________."
   answer="sagittal plane"
-  accept="sagittal|sagittal planes"
+  accept="sagittal"
   hint="A more exact version of this plane, one that splits the body into precisely equal right and left halves, adds the prefix 'mid-' to the same term."
 >}}
 
@@ -238,7 +238,6 @@ this limits animals with an open circulatory system to fairly small volumes, so 
 {{< textin
   question="An ingrowth of an animal's exoskeleton that functions as an attachment site for muscles is called an ________."
   answer="apodeme"
-  accept="apodemes"
   hint="On a crab's claw, this structure sits above and below the fulcrum, similar in role to a tendon in an animal with an endoskeleton."
 >}}
 

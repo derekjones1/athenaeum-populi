@@ -98,7 +98,6 @@ atomic weight
 {{< textin
   question="An ion necessary for nerve impulse conduction, muscle contractions, and water balance is called a(n) ________."
   answer="electrolyte"
-  accept="electrolytes"
 >}}
 
 {{< selfcheck question="Why does nitrogen's triple covalent bond make it hard for living organisms to use nitrogen gas from the atmosphere?" >}}
@@ -147,7 +146,6 @@ double
 {{< textin
   question="A molecule consisting of closed rings of carbon atoms with alternating single and double bonds is called a(n) ________."
   answer="aromatic hydrocarbon"
-  accept="aromatic hydrocarbons"
 >}}
 
 {{< selfcheck question="Why can't a molecule's D and L enantiomers be superimposed on each other?" >}}
@@ -175,7 +173,6 @@ peptidase
 {{< textin
   question="The smallest unit of a larger molecule that is a polymer is called a ________."
   answer="monomer"
-  accept="monomers"
 >}}
 
 {{< selfcheck question="How can one kind of monomer combine to form several different polymers, and what example illustrates this?" >}}
@@ -220,7 +217,6 @@ sucrose
 {{< textin
   question="A lipid made of long-chain fatty acids esterified to long-chain alcohols, which forms a protective coating on some feathers and leaf surfaces, is called a ________."
   answer="wax"
-  accept="waxes"
 >}}
 
 {{< selfcheck question="What health benefits are associated with omega-3 fatty acids?" >}}
@@ -250,7 +246,7 @@ triacylglycerols
 {{< textin
   question="A protein that assists another protein during the folding process is called a ________."
   answer="chaperone"
-  accept="chaperonin|chaperones|chaperonins"
+  accept="chaperonin"
 >}}
 
 {{< multiplechoice

@@ -11,7 +11,12 @@ algebra books and Precalculus 2e, all four complete — also follow
 `docs/subjects/math.md` and `docs/source/openstax-source-workflow.md`.
 Biology 2e is pinned and `complete` (all 47 chapters, 208 sections, authored September 3, 2026); its
 subject-specific rules are in `docs/subjects/biology.md`, on top of the same
-source workflow.
+source workflow. OpenStax Microbiology is pinned and `in-progress` (26
+chapters, 127 sections; chapters 1–2 authored September 5, 2026, chapter 1
+as the pilot); its rules are in
+`docs/subjects/microbiology.md`, which also records how it differs from
+Biology 2e (unkeyed prose exercises, no per-module glossary, new box and
+item types).
 
 ## Stack and constraints
 
@@ -32,12 +37,16 @@ source workflow.
   and current upstream `main` as a review candidate. Never synchronize upstream
   changes into `content/` automatically.
 - The lock pins one commit per upstream bundle: `prealgebra-bundle` for the
-  three algebra books, `college-algebra-bundle` for Precalculus 2e, and
-  `biology-bundle` for Biology 2e. Every book carries `authoringStatus:
-  complete` (the four math books since August 29, 2026; Biology 2e since
-  September 3, 2026), so every upstream numbered section has a local page,
-  chapter parity is enforced book-wide, and `build-map`/`verify-map` report
-  every book at full coverage. Biology 2e's sections live under
+  three algebra books, `college-algebra-bundle` for Precalculus 2e,
+  `biology-bundle` for Biology 2e, and `microbiology` for OpenStax
+  Microbiology (a single-book repository, `osbooks-microbiology`, so the
+  bundle key has no `-bundle` suffix). The five finished books carry
+  `authoringStatus: complete` (the four math books since August 29, 2026;
+  Biology 2e since September 3, 2026), so every upstream numbered section
+  has a local page, chapter parity is enforced book-wide, and
+  `build-map`/`verify-map` report them at full coverage; Microbiology is
+  `in-progress` (pinned September 5, 2026, its first two chapters authored
+  the same day) and is reported as `2/26 chapters, 7/127 sections mapped`. Biology 2e's sections live under
   `content/life-health-sciences/biology` (each lock entry carries a
   `contentPath`, so a book need not live under `content/math`) and its
   subject playbook (`docs/subjects/biology.md`) governs its authoring; all
@@ -71,9 +80,13 @@ source workflow.
   cannot go quiet on part of the corpus (parallel, minutes — part of
   `npm run ci`, not `npm test`)
 - `npm run verify:source-keys` — compare every `multiplechoice` key, `textin`
-  answer, and `selfcheck` model answer on a mapped page against the pinned
-  CNXML's own `<solution>` and glossary — the third, agent-free reading of a
-  prose book's keys (the math books get theirs from `verify:answers`); a key
+  answer, `selfcheck` model answer, and math `fillin` key on a mapped page
+  against the pinned CNXML's own `<solution>` and glossary — the third,
+  agent-free reading of a prose book's keys, and of the math fill-ins
+  `verify:answers` cannot parse (word problems, rounding asks): a fill-in is
+  matched to its source exercise by prose, by the numbers in the stem in
+  order, and by the shape of its math, and every value it keys must be one
+  the source solution prints (rounding to the printed places allowed); a key
   that departs from the source on purpose must be listed in the tool's
   `DISCLOSED_DEVIATIONS` with its erratum number; holds an EXACT
   `--min-confirmed` baseline (part of `npm test`). Needs the pinned bundles
@@ -81,16 +94,26 @@ source workflow.
   CI, a fresh clone — is skipped by name on stderr with no floor applied,
   never failed, so the gate has teeth only on a machine that has fetched
   every bundle; run it locally before pushing
+- `npm run verify:fillin-residual` — refuse a math `fillin` that has NO third
+  reading: `verify:answers` cannot parse its ask, no source solution confirms
+  it (unmatched, figure-only, symbolic, unkeyed, or a knowledge-check page
+  with no module), and its ledger record carries neither a derivation note
+  nor a solve. Clear one by deriving it and recording a note, or by the
+  blind solve below (`solve:emit -- content/math --residual-fillins`). Needs
+  the pinned bundles like `verify:source-keys`; with one absent it prints
+  the count it could not judge and applies no rule (part of `npm test`)
 - `npm run verify:ledger` — assert every exercise in the corpus carries a
   current answer-verification record (see "The answer ledger" below); holds a
   `--min-exercises` FLOOR and a `--max-unverifiable` CEILING so it can go
   vacuous in neither direction, and `--require-solved <prefix>` refuses a
-  `multiplechoice`, `textin`, or `sortbins` under a prose shelf whose record
-  carries no orchestrator solve
+  `multiplechoice`, `textin`, `sortbins`, or `fillin` under a prose shelf
+  whose record carries no orchestrator solve
 - `npm run solve:emit -- <root> --out <dir>` / `npm run solve:compare -- <answers.json> content --out <dir>`
-  — the orchestrator's own pass over a prose book's graded questions: `emit`
-  writes every multiplechoice, textin, and sortbins with the key, accept
-  list, and hint stripped; the orchestrator answers them in writing; `compare` grades the
+  — the orchestrator's own pass over a prose book's graded questions, and
+  the blind solve of the math fill-ins no mechanical reading reaches: `emit`
+  writes every multiplechoice, textin, sortbins, and fillin with the key,
+  accept list, and hint stripped (`--residual-fillins` keeps only the
+  fill-ins `verify:fillin-residual` would refuse); the orchestrator answers them in writing; `compare` grades the
   answers against the live keys (the real text grader for textin), prints
   every disagreement and "also defensible" flag, refuses to record one until
   it carries an `adjudicated` note settled against the CNXML, and writes the
@@ -146,9 +169,19 @@ book's graded items get one more reading: the orchestrator answers every
 multiplechoice and textin with the keys hidden (`solve:emit` /
 `solve:compare`), settles each disagreement against the module's text, and
 the ledger record carries the result; `verify:ledger --require-solved`
-makes that reading a condition of green for the life-sciences shelf. Reading a prompt is exactly what a parser cannot do, so that population is
-covered by a reading pass instead, and `data/verification/answer-ledger.json`
-makes the result durable.
+makes that reading a condition of green for the life-sciences shelf. A math
+fill-in gets the same third reading from whichever tool can give it:
+`verify:answers` re-derives it from the question where the ask is parseable;
+`verify:source-keys` compares the rest to the printed source solution where
+the exercise transcribes one; what neither reaches (about 1,900 items on
+September 6, 2026 — figure reads, symbolic keys, author variants, knowledge
+checks) was answered blind by Opus solvers with keys hidden, graded by the
+live math grader, every disagreement adjudicated against the CNXML, and
+recorded as `solved` on the ledger record; `verify:fillin-residual` refuses
+any new fill-in that arrives without one of the three. Reading a prompt is
+exactly what a parser cannot do, so that population is covered by a reading
+pass instead, and `data/verification/answer-ledger.json` makes the result
+durable.
 
 An exercise's identity is the sha256 of its own source with whitespace runs
 collapsed. Reflowing a shortcode keeps its verdict; changing any semantic

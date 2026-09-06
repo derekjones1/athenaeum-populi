@@ -157,7 +157,6 @@ heterotrophy
 {{< textin
   question="An organism capable of synthesizing its own food using energy from inorganic molecules is called a ________."
   answer="chemoautotroph"
-  accept="chemoautotrophs"
   hint="This organism lives in places without sunlight, such as dark caves or hydrothermal vents, and uses an inorganic energy source such as hydrogen sulfide instead of sunlight."
 >}}
 
@@ -248,7 +247,7 @@ this pyramid would appear to be the opposite of the energy flow pyramid
 {{< textin
   question="A graphical representation of different trophic levels in an ecosystem based on organism numbers, biomass, or energy content is called a(n) ________."
   answer="ecological pyramid"
-  accept="ecological pyramids|Eltonian pyramid|Eltonian pyramids"
+  accept="Eltonian pyramid"
   hint="This shape-based model, pioneered by Charles Elton in the 1920s, plots numbers, biomass, or energy from bottom to top through a food web's trophic levels."
 >}}
 

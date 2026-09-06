@@ -274,7 +274,6 @@ providing a source of water
 {{< textin
   question="The group of green algae considered the closest living relative of land plants is called a ________."
   answer="charophyte"
-  accept="charophytes"
   hint="This section's opening paragraph names this group alongside the Chlorophytes as sharing chlorophyll a and b with land plants."
 >}}
 

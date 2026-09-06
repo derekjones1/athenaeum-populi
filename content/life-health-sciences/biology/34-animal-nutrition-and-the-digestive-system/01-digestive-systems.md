@@ -301,7 +301,6 @@ the four-compartment chamber provides larger space and microbial support for dig
 {{< textin
   question="An animal with a stomach divided into four compartments is called a ________."
   answer="ruminant"
-  accept="ruminants"
   hint="Cows, sheep, and goats are the section's examples of this animal type, whose entire diet is roughage."
 >}}
 

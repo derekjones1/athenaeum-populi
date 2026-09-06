@@ -181,14 +181,12 @@ meiosis in the sporophyte forms spores again, in a process called alternation of
 {{< textin
   question="The multicellular stage of a plant that gives rise to haploid gametes or spores is called the ________."
   answer="gametophyte"
-  accept="gametophytes"
   hint="This stage is haploid and produces gametes by mitosis, not meiosis."
 >}}
 
 {{< textin
   question="The multicellular diploid stage in plants that forms after the fusion of male and female gametes is called the ________."
   answer="sporophyte"
-  accept="sporophytes"
   hint="This stage is diploid and eventually produces spores by meiosis."
 >}}
 
@@ -208,7 +206,6 @@ tapetum
 {{< textin
   question="The type of cell in the embryo sac that secretes chemicals to guide the pollen tube toward the egg is called a ________."
   answer="synergid"
-  accept="synergids"
   hint="There are two of these cells, positioned right beside the egg cell at the micropylar end of the embryo sac."
 >}}
 
@@ -319,14 +316,12 @@ male and female flowers on the same plant is monoecious, while separate plants i
 {{< textin
   question="A bract on the central axis of a male gymnosperm cone, where microspores develop, is called a ________."
   answer="microsporophyll"
-  accept="microsporophylls"
   hint="A male cone bears roughly 20 of these bracts, each producing hundreds of pollen grains."
 >}}
 
 {{< textin
   question="A bract on the central axis of a female gymnosperm cone that carries the megaspore mother cells is called a ________."
   answer="megasporophyll"
-  accept="megasporophylls"
   hint="A female cone bears roughly 15 of these bracts, each containing an ovule with the megaspore mother cell inside."
 >}}
 

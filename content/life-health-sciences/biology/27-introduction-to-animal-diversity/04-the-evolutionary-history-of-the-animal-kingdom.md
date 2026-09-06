@@ -239,7 +239,7 @@ this allowed the phylum to continue to evolve rather than become altogether exti
 {{< textin
   question="An event or environmental condition that wipes out the majority of species within a relatively short geological time period is called a ________."
   answer="mass extinction"
-  accept="mass extinctions|mass extinction event|mass extinction events"
+  accept="mass extinction event"
   hint="The largest such event closed out the Permian period, eliminating an estimated 95 percent of the species alive at the time."
 >}}
 

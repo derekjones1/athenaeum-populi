@@ -218,14 +218,12 @@ annelid segmentation is usually more uniform with the intestine extending throug
 {{< textin
   question="The second pair of appendages in Chelicerata, used for general sensing of the environment and manipulation of food, is called the ________."
   answer="pedipalp"
-  accept="pedipalps"
   hint="This appendage took over some of the sensory functions of the antennae that chelicerates have secondarily lost."
 >}}
 
 {{< textin
   question="In some chelicerates, such as sea spiders, an additional pair of appendages present between the chelicerae and pedipalps is called an ________."
   answer="oviger"
-  accept="ovigers"
   hint="Males of the species that carry this appendage use it to carry their eggs."
 >}}
 
@@ -244,14 +242,14 @@ annelid segmentation is usually more uniform with the intestine extending throug
 {{< textin
   question="The fused head and thorax seen in some arthropods, covered by a protective plate called the carapace, is called the ________."
   answer="cephalothorax"
-  accept="cephalothoraxes|cephalothoraces"
+  accept="cephalothoraces"
   hint="In crustaceans, this fused body region forms one of two tagmata, alongside the abdomen."
 >}}
 
 {{< textin
   question="The internal body cavity present in arthropods, through which fluid is moved by a tubular dorsal vessel, is called the ________."
   answer="hemocoel"
-  accept="hemocoels|haemocoel|haemocoels"
+  accept="haemocoel"
   hint="This central cavity is where hemolymph pools, rather than staying inside dedicated blood vessels."
 >}}
 
@@ -317,7 +315,6 @@ the Chelicerata, including the spiders and scorpions and their kin
 {{< textin
   question="An animal in which both male and female gonads are present in the same individual is called a ________."
   answer="hermaphrodite"
-  accept="hermaphrodites"
   hint="Some crustacean species, such as barnacles, exhibit this reproductive condition."
 >}}
 

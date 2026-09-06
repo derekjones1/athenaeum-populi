@@ -58,7 +58,6 @@ a body cell
 {{< textin
   question="Polyploidy formed by the reproduction of individuals from two different species, producing a viable offspring, is called a(n) ________."
   answer="allopolyploid"
-  accept="allopolyploids"
 >}}
 
 {{< selfcheck question="How does habitat isolation, illustrated by a cricket population divided by a flood, differ from behavioral isolation, illustrated by fireflies, as forms of reproductive isolation?" >}}
@@ -191,7 +190,7 @@ phylum
 {{< textin
   question="The point where a single lineage on a phylogenetic tree splits into two distinct new lineages is called a ________."
   answer="branch point"
-  accept="branch points|branchpoint|branchpoints"
+  accept="branchpoint"
 >}}
 
 {{< selfcheck question="Why might two closely related lineages end up looking more different from each other than either does from a more distantly related lineage?" >}}

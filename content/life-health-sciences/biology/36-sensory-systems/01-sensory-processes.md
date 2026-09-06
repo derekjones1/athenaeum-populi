@@ -217,28 +217,24 @@ perception of stimuli, which occurs in the brain, will be halted
 {{< textin
   question="The membrane potential in a sensory receptor that arises in response to detecting a stimulus is called the ________."
   answer="receptor potential"
-  accept="receptor potentials"
   hint="It is produced right at the sensory receptor, and its magnitude is graded with the strength of the stimulus."
 >}}
 
 {{< textin
   question="A specialized neuron, or another cell associated with a neuron, that is modified to receive a specific kind of sensory input is called a ________."
   answer="sensory receptor"
-  accept="sensory receptors"
   hint="Stimulating this cell activates an associated afferent neuron, which carries information about the stimulus toward the central nervous system."
 >}}
 
 {{< textin
   question="A sensory receptor modified to respond to mechanical disturbance, such as being bent, touch, pressure, motion, or sound, is called a ________."
   answer="mechanoreceptor"
-  accept="mechanoreceptors"
   hint="This receptor type opens gated ion channels in its membrane when its dendrites are compressed or bent, shown in the figure above."
 >}}
 
 {{< textin
   question="The region in space in which a stimulus can activate a given sensory receptor is called that receptor's ________."
   answer="receptive field"
-  accept="receptive fields"
   hint="For touch this region must be in contact with the body; for hearing or vision it can be very far away."
 >}}
 

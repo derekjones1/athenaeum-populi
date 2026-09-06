@@ -176,14 +176,12 @@ connecting the sensory and motor neurons in the spinal cord instead of the brain
 {{< textin
   question="A sensory and/or motor nerve that emanates from the brain is called a ________."
   answer="cranial nerve"
-  accept="cranial nerves"
   hint="Humans have twelve of these, each with its own name, and they differ from nerves that instead emerge from the vertebral column."
 >}}
 
 {{< textin
   question="A nerve that projects between skin or muscle and the spinal cord is called a ________."
   answer="spinal nerve"
-  accept="spinal nerves"
   hint="Humans have 31 of these, and unlike its cranial counterpart, it emerges from the vertebral column rather than the skull."
 >}}
 

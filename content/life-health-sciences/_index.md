@@ -8,8 +8,8 @@ sidebar:
   hide: true
 ---
 
-The life sciences shelf opens with a full college biology course and will
-grow toward microbiology, anatomy and physiology, nursing, and nutrition.
+The life sciences shelf opens with a full college biology course and is
+growing toward microbiology, anatomy and physiology, nursing, and nutrition.
 Every book here follows the same rules as the rest of the library: openly
 licensed sources, interactive exercises on every page, free forever, no
 accounts.
@@ -17,5 +17,6 @@ accounts.
 ## Available books
 
 {{< cards >}}
-  {{< card link="/life-health-sciences/biology" title="Biology" subtitle="A complete introductory biology course — the chemistry of life, cells, genetics, evolution, the diversity of life, plant and animal form and function, and ecology. Being written; chapters appear as they are finished." >}}
+  {{< card link="/life-health-sciences/biology" title="Biology" subtitle="A complete introductory biology course — the chemistry of life, cells, genetics, evolution, the diversity of life, plant and animal form and function, and ecology." >}}
+  {{< card link="/life-health-sciences/microbiology" title="Microbiology" subtitle="An allied-health microbiology course — seeing, classifying, and growing microbes, their biochemistry and genetics, infection and immunity, antimicrobial drugs, and the diseases of each body system. Being written; chapters appear as they are finished." >}}
 {{< /cards >}}

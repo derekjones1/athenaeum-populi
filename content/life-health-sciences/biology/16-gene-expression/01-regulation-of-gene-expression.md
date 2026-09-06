@@ -166,7 +166,6 @@ eukaryotic cells also control protein translation to increase or decrease the ov
 {{< textin
   question="Heritable changes that do not involve changes in the DNA sequence describe the ________ level of gene regulation."
   answer="epigenetic"
-  accept="epigenetics"
   hint="This is the level of regulation that controls how tightly DNA is packaged, before transcription factors can even bind it."
 >}}
 

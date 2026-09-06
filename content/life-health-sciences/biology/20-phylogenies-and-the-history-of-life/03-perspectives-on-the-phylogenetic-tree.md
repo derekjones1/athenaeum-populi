@@ -163,7 +163,7 @@ gene transfer agents
 {{< textin
   question="A bacteriophage-like particle that transfers random genomic segments from one species of prokaryote to another is called a ________."
   answer="gene transfer agent"
-  accept="gene transfer agents|GTA|GTAs"
+  accept="GTA"
   hint="Scientists characterized the first one of these in 1974 using purple, non-sulfur bacteria."
 >}}
 
@@ -201,7 +201,7 @@ the insect consumed fungi for food
 {{< textin
   question="The fusion of two prokaryotic genomes, presumably by endosymbiosis, is called ________."
   answer="genome fusion"
-  accept="genomic fusion|genome fusions"
+  accept="genomic fusion"
   hint="Scientists believe this is the ultimate form of horizontal gene transfer."
 >}}
 

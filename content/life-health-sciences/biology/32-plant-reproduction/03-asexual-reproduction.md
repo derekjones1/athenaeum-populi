@@ -139,14 +139,12 @@ artificial methods include grafting, cutting, layering, and micropropagation
 {{< textin
   question="The part of a plant that is grafted onto the root stock of another plant is called the ________."
   answer="scion"
-  accept="scions"
   hint="This piece supplies the desired stem and, eventually, the flowers and fruit, while its partner in the union supplies the roots."
 >}}
 
 {{< textin
   question="The method of asexual reproduction in which a portion of the stem containing nodes and internodes is placed in moist soil and allowed to root is called a ________."
   answer="cutting"
-  accept="cuttings"
   hint="Coleus and money plant are propagated this way, and some species — like the African violet — will even root when the stem piece is left undisturbed in water."
 >}}
 

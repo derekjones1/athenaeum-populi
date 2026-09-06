@@ -204,7 +204,6 @@ the chromosome number does not need to be reduced, and meiosis is not involved
 {{< textin
   question="A multicellular haploid life-cycle stage that produces gametes is called a ________."
   answer="gametophyte"
-  accept="gametophytes"
   hint="This is the free-living moss plant, or the small plant that bears the egg and sperm on a fern."
 >}}
 

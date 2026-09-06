@@ -176,7 +176,6 @@ mitochondria
 {{< textin
   question="A chemical messenger that regulates cell differentiation, proliferation, gene expression, and cell trafficking to affect immune responses is called a ________."
   answer="cytokine"
-  accept="cytokines"
   hint="At least 40 types of this kind of signaling molecule exist in humans, and interferons and interleukins are both examples of it."
 >}}
 
@@ -189,7 +188,6 @@ mitochondria
 {{< textin
   question="A large phagocytic cell that engulfs foreign particles and pathogens is called a ________."
   answer="macrophage"
-  accept="macrophages"
   hint="Monocytes differentiate into this cell type after moving from the blood into infected tissue."
 >}}
 
@@ -222,7 +220,6 @@ interferon
 {{< textin
   question="A protease that enters a target cell through perforin's pore and induces that cell to undergo apoptosis is called a ________."
   answer="granzyme"
-  accept="granzymes"
   hint="NK cells and killer T cells both release this protease alongside perforin in the immunological synapse."
 >}}
 
@@ -247,7 +244,7 @@ this would destroy the transplanted organ
 {{< textin
   question="MHC I molecules function to display fragments of proteins from infectious agents within a cell to ________."
   answer="T cells"
-  accept="T lymphocytes|T cell|T lymphocyte"
+  accept="T cell|T lymphocyte"
   hint="These are the lymphocytes that mature in the thymus gland, one of the two adaptive-immune-system cell types introduced alongside NK cells."
 >}}
 

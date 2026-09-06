@@ -220,7 +220,6 @@ when someone is standing or sitting upright, the pleural pressure gradient leads
 {{< textin
   question="An area in the lung that lacks proper ventilation or perfusion is called ________."
   answer="dead space"
-  accept="dead spaces"
   hint="This kind of lung tissue can develop from either an anatomical block or a functional problem such as infection or edema."
 >}}
 

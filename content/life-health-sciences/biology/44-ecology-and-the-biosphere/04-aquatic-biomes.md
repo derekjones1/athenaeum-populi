@@ -240,7 +240,6 @@ some shoreline organisms have hard exoskeletons that provide protection while al
 {{< textin
   question="Ocean ridges formed by marine invertebrates living in warm, shallow waters within the photic zone are called a(n) ________."
   answer="coral reef"
-  accept="coral reefs"
   hint="These structures are built primarily by cnidarians — relatives of sea anemones — that secrete a hard mineral skeleton."
 >}}
 
@@ -258,7 +257,6 @@ the low pH slows the rate of decomposition
 {{< textin
   question="A rapid increase of algae in an aquatic system is called a(n) ________."
   answer="algal bloom"
-  accept="algal blooms"
   hint="This event can turn a lake's surface green, and when nutrient runoff feeds it, a die-off and oxygen crash can follow once the algae decompose."
 >}}
 

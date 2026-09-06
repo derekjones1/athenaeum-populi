@@ -184,7 +184,6 @@ can introduce premature start or stop sites
 {{< textin
   question="The mRNA triplet from which translation begins, and which always specifies methionine, is called the ________."
   answer="start codon"
-  accept="start codons"
   hint="It is usually AUG, though rarely GUG."
 >}}
 
@@ -221,14 +220,13 @@ tRNAs cannot exit the E site of the ribosome.
 {{< textin
   question="An mRNA molecule that is simultaneously being translated by many ribosomes, all moving in the same direction, is called a ________."
   answer="polysome"
-  accept="polysomes"
   hint="The complete mRNA/poly-ribosome structure gets this single name."
 >}}
 
 {{< textin
   question="The sequence (AGGAGG) upstream of the first AUG codon that interacts with rRNA to position the 30S ribosomal subunit on a prokaryotic mRNA is called the ________."
   answer="Shine-Dalgarno sequence"
-  accept="Shine-Dalgarno|Shine-Dalgarno sequences"
+  accept="Shine-Dalgarno"
   hint="Eukaryotic ribosomes have no counterpart to it; they instead recognize the 5′ cap."
 >}}
 

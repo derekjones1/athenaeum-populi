@@ -124,7 +124,7 @@ Habitat restoration has the potential to restore ecosystems to previous biodiver
 {{< textin
   question="A molecular genetic method that identifies a unique genetic sequence to associate with a species is called ________."
   answer="DNA barcoding"
-  accept="DNA barcode|DNA barcodes|barcoding|DNA bar coding"
+  accept="DNA barcode|barcoding|DNA bar coding"
   hint="This technique reads a short stretch of a mitochondrial gene (cytochrome c oxidase 1) the way a retail scanner reads a printed pattern to identify a product."
 >}}
 

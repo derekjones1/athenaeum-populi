@@ -198,7 +198,7 @@ entering the plant tissues rather than simply residing on the leaf surface
 {{< textin
   question="Any illness resulting from the consumption of contaminated food, or of the pathogenic bacteria, viruses, or other parasites that contaminate food, is called a ________."
   answer="foodborne disease"
-  accept="foodborne diseases|food poisoning"
+  accept="food poisoning"
   hint="Salmonella and E. coli O157:H7 outbreaks from contaminated produce or meat are the section's examples of it."
 >}}
 
@@ -227,7 +227,6 @@ after a while, there will be only resistant bacteria
 {{< textin
   question="A biological substance that, in low concentration, is antagonistic to the growth of prokaryotes, is called an ________."
   answer="antibiotic"
-  accept="antibiotics"
   hint="Its name comes from the Greek for 'against' and 'life.'"
 >}}
 

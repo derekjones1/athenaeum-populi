@@ -328,7 +328,7 @@ $y$-axis.
 </div>
 
 {{< fillin
-  question="A point has coordinates (0, 2). Which axis does it lie on?"
+  question="A point has coordinates (0, 2). Which axis does it lie on? Enter x or y."
   answer="y"
   hint="If the x-coordinate is 0, the point lies straight up or down from the origin, on the y-axis."
 >}}

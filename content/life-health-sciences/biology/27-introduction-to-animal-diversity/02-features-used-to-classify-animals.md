@@ -172,14 +172,14 @@ space for a circulatory system to distribute fluids and gases
 {{< textin
   question="An animal whose body cavity is completely lined with mesodermal tissue — an annelid, mollusk, arthropod, echinoderm, or chordate — is called a(n) ________."
   answer="eucoelomate"
-  accept="eucoelomates|coelomate|coelomates"
+  accept="coelomate"
   hint="This term names the group with a true coelom, as opposed to the group whose cavity is only partly lined by mesoderm."
 >}}
 
 {{< textin
   question="The lined body cavity that houses the digestive, urinary, and reproductive systems along with the heart, lungs, and major blood vessels is called a(n) ________."
   answer="coelom"
-  accept="coeloms|coelomic cavity"
+  accept="coelomic cavity"
   hint="Its subdivisions in mammals include the thoracic and abdominal cavities."
 >}}
 
@@ -213,7 +213,6 @@ deuterostomes, with radial and indeterminate cleavage
 {{< textin
   question="An animal in which the mouth develops at the same site where the primitive gut first opened to the outside of the embryo is a(n) ________."
   answer="protostome"
-  accept="protostomes"
   hint="Its name literally means 'mouth first.'"
 >}}
 

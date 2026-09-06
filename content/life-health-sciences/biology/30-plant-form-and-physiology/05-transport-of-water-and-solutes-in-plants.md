@@ -218,14 +218,12 @@ sieve-tube elements, companion cells
 {{< textin
   question="An organ that produces photosynthate for a plant is called a ________."
   answer="source"
-  accept="sources"
   hint="This is where photosynthesis actually happens — think of the highest leaves versus the lowest ones, and which way each sends its sugars."
 >}}
 
 {{< textin
   question="A growing part of a plant, such as a root or young leaf, that requires photosynthate is called a ________."
   answer="sink"
-  accept="sinks"
   hint="Seeds, tubers, and bulbs can serve as this or as the structure that produces photosynthate, depending on the plant's stage of development and the season."
 >}}
 

@@ -231,7 +231,7 @@ SSRI medications inhibit the reuptake of serotonin into the presynaptic neuron
 {{< textin
   question="The neurodevelopmental disorder characterized by impaired social interaction and communication abilities is called ________."
   answer="autism spectrum disorder"
-  accept="ASD|autism|autism spectrum disorders"
+  accept="ASD|autism"
   hint="This spectrum disorder is four times more prevalent in males than females, and up to 30 percent of patients with it also develop a seizure disorder."
 >}}
 

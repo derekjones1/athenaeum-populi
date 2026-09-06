@@ -211,21 +211,18 @@ The three types of skeleton designs are hydrostatic skeletons, exoskeletons, and
 {{< textin
   question="A skeleton that consists of aqueous fluid held under pressure in a closed body compartment is called a ________."
   answer="hydrostatic skeleton"
-  accept="hydrostatic skeletons"
   hint="This is the skeleton design that lets soft-bodied invertebrates such as sea anemones and earthworms move using pressure from an internal fluid compartment, rather than any hard structure."
 >}}
 
 {{< textin
   question="A secreted, external skeleton that consists of a hard encasement on the surface of an organism is called a(n) ________."
   answer="exoskeleton"
-  accept="exoskeletons"
   hint="Crabs, lobsters, and insects carry this hard casing on the outside of the body, and must periodically shed it because it does not grow as the animal does."
 >}}
 
 {{< textin
   question="A skeleton of living cells that produces a hard, mineralized tissue located within the soft tissue of organisms is called a(n) ________."
   answer="endoskeleton"
-  accept="endoskeletons"
   hint="Humans and horses share this skeleton type, built from living, mineralized tissue that lies inside the body rather than surrounding it or replaced by an external casing."
 >}}
 

@@ -219,28 +219,25 @@ the allantois stores nitrogenous wastes produced by the embryo and facilitates r
 {{< textin
   question="An animal that produces a terrestrially adapted egg protected by amniotic membranes is called a(n) ________."
   answer="amniote"
-  accept="amniotes"
   hint="This animal's egg carries four extraembryonic membranes that let it develop away from water."
 >}}
 
 {{< textin
   question="The membrane that protects the embryo from mechanical shock and prevents dehydration is the ________."
   answer="amnion"
-  accept="amnions"
   hint="It forms the fluid-filled cavity that gives the embryo its own aquatic environment."
 >}}
 
 {{< textin
   question="The membrane that surrounds the embryo and yolk sac, facilitating gas exchange with the environment, is the ________."
   answer="chorion"
-  accept="chorions"
   hint="It develops from a fold in the body wall, along with the amnion."
 >}}
 
 {{< textin
   question="The membrane of the egg that stores the embryo's nitrogenous wastes and also aids respiration is the ________."
   answer="allantois"
-  accept="allantoides|allantoises"
+  accept="allantoides"
   hint="It is an extension of the embryo's hindgut."
 >}}
 
@@ -260,21 +257,18 @@ Testudines and Sphenodontia
 {{< textin
   question="An animal having no temporal fenestrae in the cranium is called a(n) ________."
   answer="anapsid"
-  accept="anapsids"
   hint="Turtles appear to belong to this group, though molecular evidence says otherwise."
 >}}
 
 {{< textin
   question="A mammal having one temporal fenestra in the skull is called a(n) ________."
   answer="synapsid"
-  accept="synapsids"
   hint="This fenestra fused ancestrally from two separate openings."
 >}}
 
 {{< textin
   question="An animal having two temporal fenestrae in the cranium is called a(n) ________."
   answer="diapsid"
-  accept="diapsids"
   hint="Dinosaurs, birds, and most other living reptiles belong to this skull-fenestrae group."
 >}}
 
@@ -288,7 +282,6 @@ Testudines and Sphenodontia
 {{< textin
   question="A reptile or a bird, as distinguished from the mammal-line synapsids, is called a(n) ________."
   answer="sauropsid"
-  accept="sauropsids"
   hint="This early amniote line split further into the anapsids and the diapsids."
 >}}
 
@@ -380,14 +373,12 @@ Archosaurs
 {{< textin
   question="A modern crocodilian or bird, or an extinct pterosaur or dinosaur, belongs to the group called ________."
   answer="archosaur"
-  accept="archosaurs"
   hint="This is the diapsid lineage that, per the section, includes the dinosaurs, the pterosaurs, and today's crocodilians and birds."
 >}}
 
 {{< textin
   question="Modern lizards, snakes, and tuataras belong to the group called ________."
   answer="lepidosaur"
-  accept="lepidosaurs"
   hint="This diapsid lineage's name translates to 'scaly lizard.'"
 >}}
 

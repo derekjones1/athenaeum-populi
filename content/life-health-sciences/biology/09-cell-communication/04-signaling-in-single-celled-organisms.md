@@ -112,7 +112,6 @@ second messenger
 {{< textin
   question="The signaling molecule that budding yeast cells secrete to tell nearby yeast cells they are ready to mate is called ________."
   answer="mating factor"
-  accept="mating factors"
   hint="A yeast cell that receives it stops its normal growth cycle and starts a signaling cascade."
 >}}
 
@@ -164,7 +163,6 @@ Inhibit quorum sensing
 {{< textin
   question="A signaling molecule that bacteria secrete to communicate with other bacteria of the same kind is called a(n) ________."
   answer="autoinducer"
-  accept="autoinducers"
   hint="Acyl-homoserine lactone, or AHL, is one small, hydrophobic example of this kind of molecule."
 >}}
 

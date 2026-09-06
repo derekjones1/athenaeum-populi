@@ -173,7 +173,6 @@ the organogenesis stage
 {{< textin
   question="A collection of cells formed during embryogenesis that will give rise to future body tissues is called a ________."
   answer="germ layer"
-  accept="germ layers"
   hint="Ectoderm, endoderm, and, in triploblastic animals, mesoderm are examples, established as the zygote develops into an embryo."
 >}}
 
@@ -213,7 +212,7 @@ a mutated or duplicated Hox gene could affect where a leg is on a fruit fly or h
 {{< textin
   question="A master control gene that can turn on or off large numbers of other genes during embryogenesis is called a ________."
   answer="Hox gene"
-  accept="Hox genes|homeobox gene|homeobox genes"
+  accept="homeobox gene"
   hint="This class of genes was first sequenced in the fruit fly, and the order of its members along the chromosome mirrors the animal's own head-to-tail axis."
 >}}
 

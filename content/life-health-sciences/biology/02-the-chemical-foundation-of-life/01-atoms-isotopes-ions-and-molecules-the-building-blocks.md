@@ -296,7 +296,7 @@ Matter is anything that occupies space and has mass. It is comprised of elements
 
 {{< textin question="Anything that has mass and occupies space is called ________." answer="matter" hint="This is the most general scientific word for anything with mass, whether living or not." >}}
 
-{{< textin question="One of the 118 unique substances that cannot be broken down into smaller substances by ordinary chemical reactions is called a(n) ________." answer="element" accept="elements" hint="There are 118 of these, but only 98 occur naturally — they are the periodic table's basic building blocks." >}}
+{{< textin question="One of the 118 unique substances that cannot be broken down into smaller substances by ordinary chemical reactions is called a(n) ________." answer="element" hint="There are 118 of these, but only 98 occur naturally — they are the periodic table's basic building blocks." >}}
 
 {{< multiplechoice
   question="The section states there are 118 known elements. How many of them occur naturally?"
@@ -375,7 +375,7 @@ it takes less energy to break an ionic bond compared with a covalent one
 
 ### Explain the ways in which naturally occurring elements combine to create molecules, cells, tissues, organ systems, and organisms
 
-{{< textin question="A chemical structure consisting of at least two atoms held together by one or more chemical bonds is called a ________." answer="molecule" accept="molecules" hint="Two or more of these, bonded together, from the simplest gas to the largest protein." >}}
+{{< textin question="A chemical structure consisting of at least two atoms held together by one or more chemical bonds is called a ________." answer="molecule" hint="Two or more of these, bonded together, from the simplest gas to the largest protein." >}}
 
 {{< selfcheck question="Why are hydrogen bonds and van der Waals interactions necessary for cells?" hint="Think about what gives proteins and DNA the three-dimensional shape they need to function." >}}
 Hydrogen bonds and van der Waals interactions form weak associations between different molecules or within different regions of the same molecule. They provide the structure and shape necessary for proteins and DNA within cells so that they function properly.

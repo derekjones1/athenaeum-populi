@@ -190,7 +190,7 @@ phosphorus enables food energy to be converted into chemical energy through oxid
 {{< textin
   question="The combination of ________, along with water, carbon dioxide, and sunlight, produce the energy that allows plants to grow."
   answer="organic compounds"
-  accept="organic compound|organic molecules|organic molecule"
+  accept="organic compound|organic molecule"
 >}}
 
 ### 31.2 The Soil
@@ -208,7 +208,6 @@ phosphorus enables food energy to be converted into chemical energy through oxid
 {{< textin
   question="The area of soil affected by root secretions and microorganisms is called the ________."
   answer="rhizosphere"
-  accept="rhizospheres"
 >}}
 
 {{< selfcheck question="Why do sediments carried by a fast-moving river differ from those carried by a slow-moving river?" >}}
@@ -253,7 +252,6 @@ they do not have the necessary enzymes to convert it into biologically useful fo
 {{< textin
   question="The thicker, outer covering of a pollen grain, which contains the waterproofing substance sporopollenin, is called the ________."
   answer="exine"
-  accept="exines"
 >}}
 
 {{< multiplechoice

@@ -11,10 +11,11 @@
 - `prealgebra-bundle` — [https://github.com/openstax/osbooks-prealgebra-bundle](https://github.com/openstax/osbooks-prealgebra-bundle), review target `38cae454e644abf9f0a623e876994553881597c9`
 - `college-algebra-bundle` — [https://github.com/openstax/osbooks-college-algebra-bundle](https://github.com/openstax/osbooks-college-algebra-bundle), review target `789b54099106b071d1d32bfcee454fed72eb4768`
 - `biology-bundle` — [https://github.com/openstax/osbooks-biology-bundle](https://github.com/openstax/osbooks-biology-bundle), review target `63f8b6f8d129dd1582989bb755011e9a6d523471`
+- `microbiology` — [https://github.com/openstax/osbooks-microbiology](https://github.com/openstax/osbooks-microbiology), review target `633850257fbd3ccf6187b9428c55e80b69236382`
 
 ## Coverage
 
-- Mapped local sections: 482
+- Mapped local sections: 489
 - Sections changed upstream: 40
 - Content-level changes: 32
 - Markup/metadata-only changes: 8
@@ -29,6 +30,7 @@
 - intermediate-algebra (`prealgebra-bundle`): `c1bbed4b86ff5c80686d339a6ca5e4e48fae2483`
 - precalculus (`college-algebra-bundle`): `d1bd19c69107ba7f45775670809ae161d63db864`
 - biology (`biology-bundle`): `5c58838d2594bc5817127fdc47e127c30b44f2c2`
+- microbiology (`microbiology`): `633850257fbd3ccf6187b9428c55e80b69236382` — in-progress, 7 sections mapped
 
 ## Changed mapped sections
 

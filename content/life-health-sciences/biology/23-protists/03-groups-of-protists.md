@@ -344,7 +344,6 @@ cannot be considered truly multicellular
 {{< textin
   question="A foram's porous shell, built from various organic materials and typically hardened with calcium carbonate, is called a ________."
   answer="test"
-  accept="tests"
   hint="Foraminiferans, or forams, are named partly for this structure."
 >}}
 
@@ -368,7 +367,7 @@ fungi spores use the flagellum for locomotion
 {{< textin
   question="The land plants are believed to have evolved from a common ancestor shared with the red and green algae, protist members of the supergroup ________."
   answer="Archaeplastida"
-  accept="Archaeplastid|Archaeplastids"
+  accept="Archaeplastid"
   hint="This supergroup's chloroplasts trace to an ancient endosymbiosis between a heterotrophic protist and a cyanobacterium."
 >}}
 
@@ -444,7 +443,6 @@ mitosis of the micronucleus after meiosis instead of direct meiotic production o
 {{< textin
   question="The anaerobic Excavata organelle that outputs hydrogen gas as a byproduct, likely evolved from mitochondria, is called a ________."
   answer="hydrogenosome"
-  accept="hydrogenosomes"
   hint="Parabasalids carry this modified-mitochondrion organelle."
 >}}
 

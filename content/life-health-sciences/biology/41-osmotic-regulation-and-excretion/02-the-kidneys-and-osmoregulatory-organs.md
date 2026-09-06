@@ -224,7 +224,6 @@ it is not constantly maintained
 {{< textin
   question="The organ that performs excretory and osmoregulatory functions is called the ________."
   answer="kidney"
-  accept="kidneys"
   hint="It comes in a pair and is the organ this whole section is about."
 >}}
 
@@ -274,14 +273,14 @@ present in blood capillaries.
 {{< textin
   question="The part of the renal tubule that lies close to the glomerulus is called the ________."
   answer="PCT"
-  accept="proximal convoluted tubule|proximal convoluted tubules|PCTs"
+  accept="proximal convoluted tubule"
   hint="This segment stays in the renal cortex and is named for its position immediately after the glomerulus."
 >}}
 
 {{< textin
   question="The part of the renal tubule that is the most distant from the glomerulus is called the ________."
   answer="DCT"
-  accept="distal convoluted tubule|distal convoluted tubules|DCTs"
+  accept="distal convoluted tubule"
   hint="This is the last segment of the renal tubule, and it empties its contents into the collecting ducts."
 >}}
 

@@ -99,7 +99,6 @@ four times
 {{< textin
   question="The total genetic information of a cell or organism is called its ________."
   answer="genome"
-  accept="genomes"
   hint="In prokaryotes it is a single circular DNA molecule; in eukaryotes it is several linear ones."
 >}}
 
@@ -127,7 +126,6 @@ chromatids.
 {{< textin
   question="A physical and functional unit of heredity — a sequence of DNA that codes for a protein — is called a ________."
   answer="gene"
-  accept="genes"
   hint="Homologous chromosomes carry these in exactly the same location, or locus."
 >}}
 
@@ -166,7 +164,6 @@ sister chromatids.
 {{< textin
   question="The beadlike subunit of chromatin, formed by DNA wrapped around a core of histone proteins, is called a ________."
   answer="nucleosome"
-  accept="nucleosomes"
   hint="Eight histone proteins form the core that a short stretch of DNA wraps around to form this structure."
 >}}
 

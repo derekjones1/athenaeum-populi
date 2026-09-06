@@ -77,6 +77,12 @@ const REPRESENTATIVE_PAGES = [
     path: '/life-health-sciences/biology/knowledge-check-44-47/',
   },
   {
+    // Microbiology's distinctive mix: Clinical Focus callouts, a large
+    // self-check set, tables, mediafigures, and a flat (unit-less) sidebar.
+    name: 'microbiology section (clinical focus, self-checks, tables)',
+    path: '/life-health-sciences/microbiology/01-an-invisible-world/01-what-our-ancestors-knew/',
+  },
+  {
     name: '404 page',
     path: '/404.html',
     title: 'Page not found – Athenaeum Populi',

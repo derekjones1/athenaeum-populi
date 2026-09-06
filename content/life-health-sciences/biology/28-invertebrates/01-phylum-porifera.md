@@ -198,21 +198,19 @@ the organism can feed only on particles smaller than the cells themselves
 {{< textin
   question="The sponge cell that functions to generate a water current and to trap and ingest food particles by phagocytosis is called a ________."
   answer="choanocyte"
-  accept="choanocytes|collar cell|collar cells"
+  accept="collar cell"
   hint="This cell type's beating flagella draw water into the sponge, and some can differentiate into sperm for sexual reproduction."
 >}}
 
 {{< textin
   question="The structure produced by asexual reproduction in freshwater sponges, in which the morphology is inverted, is called a ________."
   answer="gemmule"
-  accept="gemmules"
   hint="Reinforced with spicules and able to withstand harsh conditions, this structure lets a freshwater sponge recolonize a habitat once conditions improve."
 >}}
 
 {{< textin
   question="The sponge cell with multiple functions, including nutrient delivery, egg formation, sperm delivery, and cell differentiation, is called an ________."
   answer="amoebocyte"
-  accept="amoebocytes"
   hint="This cell type moves throughout the mesohyl in an amoeba-like fashion."
 >}}
 

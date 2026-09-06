@@ -175,7 +175,7 @@ Rotifera
 {{< textin
   question="The phylum whose members possess a notochord, a dorsal hollow nerve cord, an endostyle, pharyngeal slits, and a post-anal tail at some point in development is called ________."
   answer="Chordata"
-  accept="chordates|chordate"
+  accept="chordate"
   hint="This phylum includes the vertebrates along with the invertebrate urochordates and cephalochordates."
 >}}
 

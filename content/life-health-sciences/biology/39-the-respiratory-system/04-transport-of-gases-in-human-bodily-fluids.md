@@ -130,7 +130,6 @@ carbon monoxide will preferentially bind to hemoglobin over oxygen
 {{< textin
   question="The centralized iron-containing structure that is surrounded by the alpha and beta subunits of hemoglobin and binds a single oxygen molecule is called the ________."
   answer="heme group"
-  accept="heme groups"
   hint="Each of hemoglobin's four subunits surrounds one of these; together they hold the iron that gives blood its red color."
 >}}
 
@@ -176,7 +175,6 @@ very little carbon dioxide, only 15 percent, would be transported away from the 
 {{< textin
   question="The system that carries the majority of carbon dioxide out of the tissues while limiting the change to blood pH is called the ________."
   answer="bicarbonate buffer system"
-  accept="bicarbonate buffer systems"
   hint="It converts CO₂ into an unstable acid inside red blood cells, then into an ion exchanged for chloride at the tissues and back again at the lungs."
 >}}
 

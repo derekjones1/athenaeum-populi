@@ -246,7 +246,6 @@ nuclei
 {{< textin
   question="A rigid covering outside the plasma membrane that protects a plant cell, provides structural support, and gives it shape is called the ________."
   answer="cell wall"
-  accept="cell walls"
   hint="Fungal and some protistan cells have this structure too, but animal cells do not."
 >}}
 
@@ -276,7 +275,7 @@ the hydrophilic heads are exposed to the aqueous cytoplasm and extracellular spa
 {{< textin
   question="A phospholipid bilayer with embedded or attached proteins that separates a cell's internal contents from its surrounding environment is called the ________."
   answer="plasma membrane"
-  accept="cell membrane|plasma membranes|cell membranes"
+  accept="cell membrane"
   hint="Integral and peripheral proteins sit in and on this structure, along with embedded cholesterol."
 >}}
 

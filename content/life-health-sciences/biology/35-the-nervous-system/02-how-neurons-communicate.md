@@ -263,7 +263,6 @@ they also save energy for the cell since voltage-gated ion channels and sodium-p
 {{< textin
   question="A brief reversal of the resting membrane potential, carried from dendrite to axon terminal within a neuron, is called an ________."
   answer="action potential"
-  accept="action potentials"
   hint="This all-or-nothing event briefly flips the membrane from about −70 mV to roughly +40 mV before the cell resets."
 >}}
 
@@ -319,7 +318,6 @@ this can cause excitatory or inhibitory postsynaptic potentials depending on the
 {{< textin
   question="A small membrane-bound structure that contains a neurotransmitter is called a ________."
   answer="synaptic vesicle"
-  accept="synaptic vesicles"
   hint="Calcium entering the axon terminal causes many of these to fuse with the presynaptic membrane and dump their contents outward."
 >}}
 
@@ -332,14 +330,14 @@ this can cause excitatory or inhibitory postsynaptic potentials depending on the
 {{< textin
   question="A depolarization of a postsynaptic membrane caused by neurotransmitter molecules released from a presynaptic cell is called an ________."
   answer="excitatory postsynaptic potential"
-  accept="EPSP|EPSPs|excitatory postsynaptic potentials"
+  accept="EPSP"
   hint="Acetylcholine binding at a neuromuscular junction produces one of these by letting Na⁺ into the postsynaptic cell, making it more likely to fire."
 >}}
 
 {{< textin
   question="A hyperpolarization of a postsynaptic membrane caused by neurotransmitter molecules released from a presynaptic cell is called an ________."
   answer="inhibitory postsynaptic potential"
-  accept="IPSP|inhibitory postsynaptic potentials|IPSPs"
+  accept="IPSP"
   hint="GABA binding causes one of these by opening Cl⁻ channels, making the neuron less likely to fire."
 >}}
 

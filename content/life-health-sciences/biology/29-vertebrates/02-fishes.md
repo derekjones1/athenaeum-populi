@@ -147,28 +147,24 @@ the ability to use new nutrient sources may be one reason gnathostomes replaced 
 {{< textin
   question="An eel-like jawless fish that lives on the ocean floor and is a scavenger is called a ________."
   answer="hagfish"
-  accept="hagfishes"
   hint="This eel-like scavenger of the ocean floor, in the class Myxini, releases slime from its glands to slip from a predator's grip."
 >}}
 
 {{< textin
   question="A jawless fish characterized by a toothed, funnel-like sucking mouth is called a ________."
   answer="lamprey"
-  accept="lampreys"
   hint="Many species of this fish spend part of their life cycle as an ectoparasite on other fish."
 >}}
 
 {{< textin
   question="A vertebrate that possesses true jaws is called a ________."
   answer="gnathostome"
-  accept="gnathostomes"
   hint="Its name translates from the Greek as 'jaw-mouth.'"
 >}}
 
 {{< textin
   question="One of the earliest jawless fish, covered in bone, is called an ________."
   answer="ostracoderm"
-  accept="ostracoderms"
   hint="Its name translates as 'shell-skin,' for the bony armor covering its body — unlike present-day jawless fishes, which have none."
 >}}
 

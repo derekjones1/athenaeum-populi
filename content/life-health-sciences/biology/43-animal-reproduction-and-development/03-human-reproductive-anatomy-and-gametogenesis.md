@@ -219,7 +219,6 @@ uterus
 {{< textin
   question="The secretory accessory gland in males that contributes to semen and lies along the posterior border of the urinary bladder is called the ________."
   answer="seminal vesicle"
-  accept="seminal vesicles"
   hint="This gland makes a thick, yellowish, alkaline solution containing fructose and prostaglandins — it is one of three accessory glands, not the tube that carries sperm away from the testes."
 >}}
 

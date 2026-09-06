@@ -763,7 +763,7 @@ Applied science: what strategies might be found to prevent cancer from reproduci
 {{< textin
   question="Improving crop yields, finding cures for disease, and rehabilitating storm-displaced wildlife are all goals of this type of science, which aims to solve real-world problems."
   answer="applied science"
-  accept="applied|applied sciences"
+  accept="applied"
   hint="Contrast this with the type of science that seeks knowledge for its own sake."
 >}}
 

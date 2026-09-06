@@ -119,7 +119,7 @@ that conclusion has since been disproven
 {{< textin
   question="Plants can absorb inorganic nutrients and water through their ________, and carbon dioxide from the environment."
   answer="root system"
-  accept="roots|root|root systems"
+  accept="root"
   hint="Fine hairs on this organ are the entry point, and the xylem carries what they take up upward to the leaves."
 >}}
 
@@ -177,14 +177,13 @@ chlorosis
 {{< textin
   question="A nutrient that is required in large amounts for plant growth is called a ________."
   answer="macronutrient"
-  accept="macronutrients"
   hint="Carbon, hydrogen, oxygen, nitrogen, phosphorus, potassium, calcium, magnesium, and sulfur all belong to this group."
 >}}
 
 {{< textin
   question="A nutrient required in only small amounts is called a ________."
   answer="micronutrient"
-  accept="micronutrients|trace element|trace elements"
+  accept="trace element"
   hint="Boron, chlorine, manganese, iron, zinc, copper, molybdenum, nickel, silicon, and sodium all belong to this group."
 >}}
 

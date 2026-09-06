@@ -206,14 +206,12 @@ these agents were later shown to be unrelated to bacteria and were classified as
 {{< textin
   question="An individual virus particle outside a host cell is called a ________."
   answer="virion"
-  accept="virions"
   hint="The section's first paragraph on detection calls a single virus particle by this name."
 >}}
 
 {{< textin
   question="Viruses are tiny, noncellular entities that usually can be seen only with a(n) ________."
   answer="electron microscope"
-  accept="electron microscopes"
   hint="This instrument was developed in the late 1930s and gave scientists their first good view of viruses like TMV."
 >}}
 
@@ -359,7 +357,6 @@ genome structure classification does not distinguish between the two viruses
 {{< textin
   question="The enzyme found in Baltimore groups VI and VII that converts single-stranded RNA into double-stranded DNA is called ________."
   answer="reverse transcriptase"
-  accept="reverse transcriptases"
   hint="HIV, a Group VI virus, depends on this enzyme to make a DNA copy of its RNA genome before integrating it into the host genome."
 >}}
 

@@ -162,7 +162,6 @@ the vaccine also controls the spread of disease
 {{< textin
   question="A weakened preparation of virus components, viruses, or other agents that produces an immune response is called a ________."
   answer="vaccine"
-  accept="vaccines"
   hint="It may be made from live, killed, or subunit forms of a pathogen."
 >}}
 
@@ -176,7 +175,6 @@ the vaccine also controls the spread of disease
 {{< textin
   question="A live virus vaccine reverting to its disease-causing form is known as a ________."
   answer="back mutation"
-  accept="back mutations"
   hint="This is what let a 2007 Nigerian polio vaccine cause an epidemic."
 >}}
 
@@ -190,7 +188,6 @@ the vaccine also controls the spread of disease
 {{< textin
   question="A laboratory-engineered agent that specifically infects and kills cancer cells is called a(n) ________."
   answer="oncolytic virus"
-  accept="oncolytic viruses"
   hint="The modified adenovirus H101, used in China against head and neck cancers, is an example."
 >}}
 

@@ -125,14 +125,12 @@ an inducible operon is activated or repressed depending on the needs of the cell
 {{< textin
   question="A collection of genes involved in the same pathway that are transcribed together as a single mRNA in prokaryotic cells is called a(n) ________."
   answer="operon"
-  accept="operons"
   hint="The lac and trp examples in this section are both named this way."
 >}}
 
 {{< textin
   question="In the trp operon, the DNA region between the promoter and the transcriptional start site, to which the repressor protein can bind, is called the ________."
   answer="operator"
-  accept="operators"
   hint="It sits downstream of the promoter and is where the trp repressor binds when tryptophan is present."
 >}}
 
@@ -178,21 +176,18 @@ only if glucose is not available in the environment
 {{< textin
   question="A protein that binds to a prokaryotic promoter sequence to increase transcription of a gene is called a(n) ________."
   answer="activator"
-  accept="activators"
   hint="It is a positive regulator — the opposite of a repressor."
 >}}
 
 {{< textin
   question="A protein that binds to the operator of a prokaryotic gene to prevent its transcription is called a(n) ________."
   answer="repressor"
-  accept="repressors"
   hint="Two molecules of tryptophan must bind this protein before it can bind the trp operator."
 >}}
 
 {{< textin
   question="A small molecule, produced by the cell or present in its environment, that can activate or repress transcription depending on the cell's needs is called a(n) ________."
   answer="inducer"
-  accept="inducers"
   hint="Allolactose and cAMP both act as one of these in this section's examples."
 >}}
 

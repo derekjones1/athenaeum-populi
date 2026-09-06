@@ -174,7 +174,6 @@ blood glucose levels never go back down to normal levels
 {{< textin
   question="A change of the set point in a homeostatic system is called an ________."
   answer="alteration"
-  accept="alterations"
   hint="Medication that lowers an elevated blood pressure set point to a healthier level is an example of this kind of change."
 >}}
 
@@ -209,14 +208,14 @@ a positive feedback loop would continue the stimulus and result in harm to the a
 {{< textin
   question="Feedback to a control mechanism that increases or decreases a stimulus instead of maintaining it is called a ________."
   answer="negative feedback loop"
-  accept="negative feedback|negative feedback loops"
+  accept="negative feedback"
   hint="Blood glucose rising after a meal, then falling again as insulin is released, is an example of this kind of loop."
 >}}
 
 {{< textin
   question="Feedback to a control mechanism that continues the direction of a stimulus is called a ________."
   answer="positive feedback loop"
-  accept="positive feedback|positive feedback loops"
+  accept="positive feedback"
   hint="Uterine contractions that keep growing stronger as more oxytocin is released during childbirth are an example of this kind of loop."
 >}}
 

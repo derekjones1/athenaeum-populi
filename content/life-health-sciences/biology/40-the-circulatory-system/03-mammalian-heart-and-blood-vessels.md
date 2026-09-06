@@ -238,14 +238,12 @@ capillaries are distributed as beds, complex networks that link arteries and vei
 {{< textin
   question="The small vessel that connects an artery to a capillary bed is called a(n) ________."
   answer="arteriole"
-  accept="arterioles"
   hint="This vessel sits on the artery side of a capillary bed, one step smaller than a minor artery."
 >}}
 
 {{< textin
   question="The blood vessel that connects a capillary bed to a vein is called a(n) ________."
   answer="venule"
-  accept="venules"
   hint="This vessel sits on the vein side of a capillary bed, one step larger than a capillary."
 >}}
 

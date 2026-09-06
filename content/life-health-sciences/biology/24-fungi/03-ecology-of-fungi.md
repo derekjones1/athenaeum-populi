@@ -177,7 +177,7 @@ an endophyte
 {{< textin
   question="A mutualistic association between fungi and vascular plant roots is called a ________."
   answer="mycorrhiza"
-  accept="mycorrhizae|mycorrhizas|mycorrhizal association"
+  accept="mycorrhizae|mycorrhizal association"
   hint="This is the Greek-derived term (myco- fungus, rhizo- root) for the fungal partner in this relationship."
 >}}
 
@@ -205,7 +205,6 @@ allows the photosynthetic partner to survive in environments unfavorable to plan
 {{< textin
   question="A close association between a fungus and a photosynthetic alga or bacterium that benefits both partners is called a ________."
   answer="lichen"
-  accept="lichens"
   hint="This symbiotic partnership can survive extreme drought by becoming completely desiccated."
 >}}
 
