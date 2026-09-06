@@ -192,6 +192,74 @@
    ],
    "rationale": "Section 9.8 is the LAST section of chapter 9, and m49436 carries the whole chapter's end matter after its own Section Exercises: a 'Review Exercises' set whose subsections link back to every section of the chapter. The audit reads that as a source heading of 9.8 with no local counterpart and raises heading-needs-review at 0% title similarity. It is deliberately absent: the set covers all eight sections of chapter 9, so folding its items into 9.8's Practice block would attribute chapter-wide material to one section and hide the other seven sections' skills inside a Cramer's-rule page. Section 9.8's own headings are all present, in source order, and the section-final Practice block draws only from the module's own '9.8 Section Exercises' set. Do not 'resolve' this flag by transcribing chapter review material into the section page; chapter-level assessment belongs in a Knowledge Check page, not here. Same adjudication as 3.9 (m49353) and 5.4 (m49384), whose covers_note predicted this recurrence.",
    "covers_note": "The flag is a structural artifact of the last-section module bundling the chapter's end matter, not a transcription gap."
+  },
+  {
+   "localPath": "content/life-health-sciences/microbiology/02-how-we-see-the-invisible-world/01-the-properties-of-light.md",
+   "bundle": "microbiology",
+   "moduleId": "m58785",
+   "sourceElementIds": [
+    "fs-id1167794056678"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 374,
+   "rationale": "The fluorochrome example sentence says Texas red is excited by blue light and FITC absorbs invisible ultraviolet light. Manufacturer spectral data (Thermo Fisher Molecular Probes Handbook: Texas Red sulfonyl chloride absorption 588 nm; fluorescein/FITC peak excitation 488-495 nm) place Texas red's excitation in the orange and FITC's in the visible blue. The local sentence states orange and blue, carries a visible Source note, and the footer discloses the change. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/microbiology/01-an-invisible-world/01-what-our-ancestors-knew.md",
+   "bundle": "microbiology",
+   "moduleId": "m58781",
+   "sourceElementIds": [
+    "fs-id1171360545639"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 377,
+   "rationale": "The source dates the Athenian plague 'between 430 and 410 BC'. Thucydides describes the outbreak of 430 BC and its recurrence ending in 426 BC, and the modern review (Littman, Mount Sinai Journal of Medicine 76 [2009]: 456-467, doi:10.1002/msj.20137) dates it 430-426 BC; no source supports 410. The local page prints 426 BC with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/microbiology/01-an-invisible-world/02-a-systematic-approach.md",
+   "bundle": "microbiology",
+   "moduleId": "m58782",
+   "sourceElementIds": [
+    "fs-id1171358982476"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 378,
+   "rationale": "The source says Haloquadratum walsbyi cells 'are arranged in square clusters of four cells'. The primary morphology paper (Bolhuis et al., 'Morphological and Structural Aspects of the Extremely Halophilic Archaeon Haloquadratum walsbyi', PMC3084702) describes flat square cells joined in fragile postage-stamp sheets, not fixed quartets; the genus name refers to the square cell shape. The local page says sheets of square cells with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/microbiology/03-the-cell/02-foundations-of-modern-cell-theory.md",
+   "bundle": "microbiology",
+   "moduleId": "m58791",
+   "sourceElementIds": [
+    "fs-id1172100564193"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 379,
+   "rationale": "The prose dates John Snow's water-source cholera study to 1848 while the same module's timeline figure dates it to 1854, the year of the Broad Street and water-company investigations. The page follows the module's own figure, with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/02-the-chemical-foundation-of-life/01-atoms-isotopes-ions-and-molecules-the-building-blocks.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66430",
+   "sourceElementIds": [
+    "fs-idp140338806078224",
+    "eip-idm257115376"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 375,
+   "rationale": "The Ions paragraph gives sodium 11 neutrons and chlorine 17 neutrons. Sodium is monoisotopic (sodium-23: 11 protons, 12 neutrons; NIST Atomic Weights and Isotopic Compositions), and the same module's Atomic Number and Mass paragraph gives chlorine's majority isotope 17 protons and 18 neutrons, so the Ions paragraph contradicts its own section. The local page prints 12 and 18 with a visible Source note and discloses the change in its footer. Found by the prose claim pass sample, September 6, 2026. ALSO (erratum 376): The Carbon Dating box says carbon-14 decays to nitrogen-14 'by a process called beta decay-electrons or positrons emission.' Carbon-14 decays 100% by beta-minus (electron) emission to nitrogen-14 (LNHB Table de Radionucleides; NNDC/ENSDF); positron emission would lower the atomic number, not raise it to nitrogen. The local page says electron emission with a visible Source note and footer disclosure. Found by the prose claim pass sample, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/microbiology/03-the-cell/04-unique-characteristics-of-eukaryotic-cells.md",
+   "bundle": "microbiology",
+   "moduleId": "m58793",
+   "sourceElementIds": [
+    "fs-id1172098545691",
+    "fs-id1172098704816"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 380,
+   "rationale": "The source says Golgi observed the stacked membranes in Plasmodium cells. Golgi's 1898 communication described the internal reticular apparatus in neurons of the cerebellum and spinal ganglia (Bentivoglio et al., Frontiers in Neuroanatomy 13 [2019], doi:10.3389/fnana.2019.00003); his malaria work was separate. The page says nerve cells with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026. ALSO (erratum 381): The source dates de Duve's discovery of lysosomes to the 1960s. The primary paper is de Duve et al., Biochemical Journal 60 (1955): 604-617; the 1960s work was peroxisomes (Bonetta, Journal of Cell Biology 169 [2005]: 705, doi:10.1083/jcb1695fta2). The page says 1955 with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026."
   }
  ],
  "upstreamDriftDecisions": [
@@ -368,6 +436,30 @@
    "status": "correct-local-source-defect",
    "errataEntry": 59,
    "rationale": "The source figure labels its green plane 3x+y+2z=0, the sign-flipped spelling of the equation Example 6 itself prints as 3x+y-2z=0 (PDF art at 300dpi and CNXML alt agree with each other and disagree with the example). The local recreation of the figure labels the plane 3x+y-2z=0 to match the example, with a visible Source note beside the figure and the correction disclosed in the footer; the example algebra is unaffected either way."
+  },
+  {
+   "localPath": "content/life-health-sciences/microbiology/04-prokaryotic-diversity/02-proteobacteria.md",
+   "bundle": "microbiology",
+   "moduleId": "m58796",
+   "sourceElementIds": [
+    "fs-id1172100990327",
+    "fs-id1172098310018"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 367,
+   "rationale": "Three source claims fail against the module or independent taxonomy evidence. The Deltaproteobacteria table calls Desulfovibrio 'formerly Desufuromonas'; LPSN identifies Desufuromonas as a misspelling of the separate valid genus Desulfuromonas, not a former name of Desulfovibrio, so the local table omits the parenthetical and places a visible Source note below it. The section summary says nitrogen-fixing Alphaproteobacteria convert atmospheric nitrogen to nitrites, while this book's §§4.1 and 8.7 identify ammonia as the product of nitrogen fixation and reserve nitrite/nitrate production for nitrification; the local summary says ammonia and carries a visible Source note. The Glossary says all Alphaproteobacteria are oligotrophs, while this module's defining paragraph says only some species are; the local definition follows the module and carries a visible Source note. All three corrections are disclosed in the attribution footer."
+  },
+  {
+   "localPath": "content/life-health-sciences/microbiology/04-prokaryotic-diversity/03-nonproteobacteria-gram-negative-bacteria-and-phototrophic-bacteria.md",
+   "bundle": "microbiology",
+   "moduleId": "m58797",
+   "sourceElementIds": [
+    "fs-id1172100896627",
+    "fs-id1172100940484"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 368,
+   "rationale": "The cyanobacteria discussion contains two substantive scientific errors. It says nitrogen fixation converts molecular nitrogen to nitrites and nitrates, while this book's §§4.1 and 8.7 identify ammonia as the direct product and nitrification as the later oxidation to nitrite and nitrate. It also calls cyanophycin a secondary photosynthetic pigment alongside phycocyanin; this book's §8.6 lists phycocyanin but not cyanophycin among photosynthetic pigments, and Watzer and Forchhammer (Applied and Environmental Microbiology 84, e01298-18; doi:10.1128/AEM.01298-18) experimentally describe cyanophycin as a carbon/nitrogen storage polymer. The local page corrects both claims, carries a visible Source note beside each, and discloses both in its attribution footer."
   }
  ]
 }

@@ -125,6 +125,20 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/microbiology/04-prokaryotic-diversity/06-archaea.md',
+    exercise: 'fs-id1172097276615',
+    kind: 'options',
+    erratum: 373,
+    reason: 'the source distractor "They are always anaerobes." is true by the module\'s own Art Connection caption (methanogens among "obligate anaerobic" organisms in an oxygen-free rumen), so the item was double-keyed; the page replaces that option with a false bacteriorhodopsin statement (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/microbiology/04-prokaryotic-diversity/04-gram-positive-bacteria.md',
+    exercise: 'fs-id1172100813972',
+    kind: 'options',
+    erratum: 370,
+    reason: 'the source option reads "Streptococcus pneumonia", omitting the terminal e from the species epithet; the page prints the valid binomial "Streptococcus pneumoniae" (key unchanged)',
+  },
+  {
     page: 'content/life-health-sciences/biology/40-the-circulatory-system/03-mammalian-heart-and-blood-vessels.md',
     exercise: 'fs-idm133142336',
     kind: 'key',

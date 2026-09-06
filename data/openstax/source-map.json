@@ -168,8 +168,8 @@
       "authoringStatus": "in-progress",
       "upstreamChapters": 26,
       "upstreamSections": 127,
-      "localChapters": 3,
-      "mappedSections": 11
+      "localChapters": 4,
+      "mappedSections": 17
     }
   },
   "sections": [
@@ -2143,6 +2143,60 @@
       "moduleId": "m58793",
       "sourceTitle": "Unique Characteristics of Eukaryotic Cells",
       "moduleSha256": "27c8b385fbd73e16a7dfe32d657fd3f0b8d6e09c8aae7d157be06791f717a255"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/04-prokaryotic-diversity/01-prokaryote-habitats-relationships-and-microbiomes.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "4.1",
+      "moduleId": "m58795",
+      "sourceTitle": "Prokaryote Habitats, Relationships, and Microbiomes",
+      "moduleSha256": "332704f457f87d65c428c276fcf6da6ad3a642fad7f0fb409349c8cfbb385583"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/04-prokaryotic-diversity/02-proteobacteria.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "4.2",
+      "moduleId": "m58796",
+      "sourceTitle": "Proteobacteria",
+      "moduleSha256": "ac89dde32fa32499f948b98090ecb347da563c1acacd886feafd9b869ddd0d0e"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/04-prokaryotic-diversity/03-nonproteobacteria-gram-negative-bacteria-and-phototrophic-bacteria.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "4.3",
+      "moduleId": "m58797",
+      "sourceTitle": "Nonproteobacteria Gram-Negative Bacteria and Phototrophic Bacteria",
+      "moduleSha256": "04366a1d2807fa8d30b878b6877e5d4eed8c6633b4042c0026fe69d7b356c42d"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/04-prokaryotic-diversity/04-gram-positive-bacteria.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "4.4",
+      "moduleId": "m58798",
+      "sourceTitle": "Gram-Positive Bacteria",
+      "moduleSha256": "9d38cc44010ae01a34eb90cca40fbc15bd17423fac3ff6d08e5979d95fe0fa92"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/04-prokaryotic-diversity/05-deeply-branching-bacteria.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "4.5",
+      "moduleId": "m58799",
+      "sourceTitle": "Deeply Branching Bacteria",
+      "moduleSha256": "27b7410fd2f2e00998700cc4093c032a41abfb09610b7f4f08cca80dd12cc345"
+    },
+    {
+      "localPath": "content/life-health-sciences/microbiology/04-prokaryotic-diversity/06-archaea.md",
+      "bundle": "microbiology",
+      "book": "microbiology",
+      "sourceSection": "4.6",
+      "moduleId": "m58800",
+      "sourceTitle": "Archaea",
+      "moduleSha256": "33977e974d64b6f9a004eb0a185058d9fb7ec1496c54009288d63319ed56cf14"
     },
     {
       "localPath": "content/math/elementary-algebra/01-foundations/01-introduction-to-whole-numbers.md",

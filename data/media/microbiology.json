@@ -2634,6 +2634,591 @@
       ],
       "alt": "A diagram of a large cell. The outside of the cell is a thin line labeled plasma membrane. A long projection outside of the plasma membrane is labeled flagellum. Shorter projections outside the membrane are labeled cilia. Just under the plasma membrane are lines labeled microtubules and microfilaments. The fluid inside the plasma membrane is labeled cytoplasm. In the cytoplasm are small dots labeled ribosomes. These dots are either floating in the cytoplasm or attached to a webbed membrane labeled rough endoplasmic reticulum. Some regions of the webbed membrane do not have dots; these regions of the membrane are called smooth endoplasmic reticulum. Other structures in the cytoplasm include an oval with a webbed line inside of it; this is labeled the mitochondrion. Spheres in the cytoplasm are labeled peroxisome and lysosome. A pancake stack of membranes is labeled golgi complex. Two short tubes are labeled centrosomes. A large sphere in the cell is labeled nucleus. The outer membrane of this sphere is the nuclear envelope. Holes in the nuclear envelope are called nuclear pores. A smaller sphere in the nucleus is labeled nucleolus.",
       "caption": "An illustration of a generalized, single-celled eukaryotic organism. Note that cells of eukaryotic organisms vary greatly in terms of structure and function, and a particular cell may not have all of the structures shown here."
+    },
+    "OSC_Microbio_04_00_splash": {
+      "source": "media/OSC_Microbio_04_00_splash.jpg",
+      "sourceSha256": "3bf23653bc070505fad29898cb67ec4f4b9bcbfa79dcf332bebf04bdaed9547b",
+      "module": "m58794",
+      "kind": "photo",
+      "width": 1300,
+      "height": 415,
+      "variants": [
+        {
+          "width": 800,
+          "height": 255,
+          "file": "OSC_Microbio_04_00_splash-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 415,
+          "file": "OSC_Microbio_04_00_splash-1300.webp"
+        }
+      ],
+      "alt": "A micrograph of a rod shaped cell with long projections. The cell is approximately 5 µm long. Another micrograph showing many rod shaped cells attached to a matrix.",
+      "caption": "The bacterium Shewanella lives in the deep sea, where there is little oxygen diffused in the water. It is able to survive in this harsh environment by attaching to the sea floor and using long appendages, called “nanocables,” to sense oxygen. (credit a: modification of work by NASA; credit b: modification of work by Liza Gross)"
+    },
+    "OSC_Microbio_04_01_DeadSea": {
+      "source": "media/OSC_Microbio_04_01_DeadSea.jpg",
+      "sourceSha256": "93b949ceda823f6945e15579ea5bddf8921339c881751731952950a2b4954ce3",
+      "module": "m58795",
+      "kind": "photo",
+      "width": 1300,
+      "height": 521,
+      "variants": [
+        {
+          "width": 800,
+          "height": 320,
+          "file": "OSC_Microbio_04_01_DeadSea-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 521,
+          "file": "OSC_Microbio_04_01_DeadSea-1300.webp"
+        }
+      ],
+      "alt": "a) A photo of blue water and red sand. B) A micrograph of a cluster of rod shaped cells.",
+      "caption": "(a) Some prokaryotes, called halophiles, can thrive in extremely salty environments such as the Dead Sea, pictured here. (b) The archaeon Halobacterium salinarum , shown here in an electron micrograph, is a halophile that lives in the Dead Sea. (credit a: modification of work by Jullen Menichini; credit b: modification of work by NASA)"
+    },
+    "OSC_Microbio_04_01_LegumeRoot": {
+      "source": "media/OSC_Microbio_04_01_LegumeRoot.jpg",
+      "sourceSha256": "c365dd0bc048ea1f455beb713c6945e92678d6dffd796ee362b8b39fa562aa09",
+      "module": "m58795",
+      "kind": "photo",
+      "width": 1300,
+      "height": 443,
+      "variants": [
+        {
+          "width": 800,
+          "height": 272,
+          "file": "OSC_Microbio_04_01_LegumeRoot-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 443,
+          "file": "OSC_Microbio_04_01_LegumeRoot-1300.webp"
+        }
+      ],
+      "alt": "A) photo of roots with small nodules labeled root nodules. A micrograph of a root nodule. A thick cell wall is on the outside. Lines inside are labeled endoplasmic reticulum. Large ovals in clear structures are labeled bacteroids.",
+      "caption": "(a) Nitrogen-fixing bacteria such as Rhizobium live in the root nodules of legumes such as clover. (b) This micrograph of the root nodule shows bacteroids (bacterium-like cells or modified bacterial cells) within the plant cells. The bacteroids are visible as darker ovals within the larger plant cell. (credit a: modification of work by USDA)"
+    },
+    "OSC_Microbio_04_02_ArtConn1_img": {
+      "source": "media/OSC_Microbio_04_02_ArtConn1_img.jpg",
+      "sourceSha256": "c95ac209f9fda2fd492eeaa1886935be90e6e7554ed1c64806bcd119032f00ed",
+      "module": "m58796",
+      "kind": "photo",
+      "width": 700,
+      "height": 490,
+      "variants": [
+        {
+          "width": 700,
+          "height": 490,
+          "file": "OSC_Microbio_04_02_ArtConn1_img-700.webp"
+        }
+      ],
+      "alt": "A micrograph of a rod shaped cell with many long projections.",
+      "caption": "(credit: American Society for Microbiology)"
+    },
+    "OSC_Microbio_04_02_Chlamydia": {
+      "source": "media/OSC_Microbio_04_02_Chlamydia.jpg",
+      "sourceSha256": "a4e47a967c81127e3306ec510858bc6b7e58bdc6c530dbe0e67ebd3f3e24b42b",
+      "module": "m58797",
+      "kind": "photo",
+      "width": 1064,
+      "height": 1008,
+      "variants": [
+        {
+          "width": 800,
+          "height": 758,
+          "file": "OSC_Microbio_04_02_Chlamydia-800.webp"
+        },
+        {
+          "width": 1064,
+          "height": 1008,
+          "file": "OSC_Microbio_04_02_Chlamydia-1064.webp"
+        }
+      ],
+      "alt": "A diagram showing the life cycle of Chlamydia. An epithelial cell is infected by small spheres labeldd elementary bodies. Within 12 hours, these form into reticulate bodies which divide to form inclusions within 24 hours. Within the inclusions more elementary bodies are formed and within 72 hours these are released when the cell ruptures.",
+      "caption": "Chlamydia begins infection of a host when the metabolically inactive elementary bodies enter an epithelial cell. Once inside the host cell, the elementary bodies turn into active reticulate bodies. The reticulate bodies multiply and release more elementary bodies when the cell dies after the Chlamydia uses all of the host cell’s ATP. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_04_02_Hpylori": {
+      "source": "media/OSC_Microbio_04_02_Hpylori.jpg",
+      "sourceSha256": "503ccd43474365ba8f50251d10404d6570f99f9e899de9ce34651d199c9cd66d",
+      "module": "m58796",
+      "kind": "photo",
+      "width": 700,
+      "height": 467,
+      "variants": [
+        {
+          "width": 700,
+          "height": 467,
+          "file": "OSC_Microbio_04_02_Hpylori-700.webp"
+        }
+      ],
+      "alt": "A micrograph of a rod shaped cell with many long projections.",
+      "caption": "Helicobacter pylori can cause chronic gastritis, which can lead to ulcers and stomach cancer."
+    },
+    "OSC_Microbio_04_02_Legionella": {
+      "source": "media/OSC_Microbio_04_02_Legionella.jpg",
+      "sourceSha256": "c9ba85b1a6c56cfa7d1f63cd25d5e447b554085feb1a276fe203c03607f4f2df",
+      "module": "m58796",
+      "kind": "photo",
+      "width": 1100,
+      "height": 395,
+      "variants": [
+        {
+          "width": 800,
+          "height": 287,
+          "file": "OSC_Microbio_04_02_Legionella-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 395,
+          "file": "OSC_Microbio_04_02_Legionella-1100.webp"
+        }
+      ],
+      "alt": "A) A micrograph of rod shaped cells. B) A photograph of an air conditioner.",
+      "caption": "(a) Legionella pneumophila , the causative agent of Legionnaires disease, thrives in warm water. (b) Outbreaks of Legionnaires disease often originate in the air conditioning units of large buildings when water in or near the system becomes contaminated with L. pneumophila. (credit a: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_04_02_Myxobac": {
+      "source": "media/OSC_Microbio_04_02_Myxobac.jpg",
+      "sourceSha256": "acb7b019f64c003fcf88997a4aa4feae44e344973bebdf8ef05b9890d75ab2e2",
+      "module": "m58796",
+      "kind": "photo",
+      "width": 900,
+      "height": 566,
+      "variants": [
+        {
+          "width": 800,
+          "height": 503,
+          "file": "OSC_Microbio_04_02_Myxobac-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 566,
+          "file": "OSC_Microbio_04_02_Myxobac-900.webp"
+        }
+      ],
+      "alt": "An image of a round structure labeled fruiting body. Smaller spheres on this structure are labeled sporangium containing myxospores.",
+      "caption": "Myxobacteria form fruiting bodies. (credit: modification of work by Michiel Vos)"
+    },
+    "OSC_Microbio_04_02_Neisseria": {
+      "source": "media/OSC_Microbio_04_02_Neisseria.jpg",
+      "sourceSha256": "40dabf6ad5ebc8f758deaf762dd8d8980a3ae6f626ecdcefc122c6a4f9e74d70",
+      "module": "m58796",
+      "kind": "photo",
+      "width": 677,
+      "height": 372,
+      "variants": [
+        {
+          "width": 677,
+          "height": 372,
+          "file": "OSC_Microbio_04_02_Neisseria-677.webp"
+        }
+      ],
+      "alt": "A photograph showing round domes on a brown background.",
+      "caption": "Neisseria meningitidis growing in colonies on a chocolate agar plate. (credit: Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_04_02_RRicketsii": {
+      "source": "media/OSC_Microbio_04_02_RRicketsii.jpg",
+      "sourceSha256": "7c474dd010bf45082a428ad18ea692e33dace85fb8ce231113dd617f3c376737",
+      "module": "m58796",
+      "kind": "photo",
+      "width": 596,
+      "height": 402,
+      "variants": [
+        {
+          "width": 596,
+          "height": 402,
+          "file": "OSC_Microbio_04_02_RRicketsii-596.webp"
+        }
+      ],
+      "alt": "A micrograph of blue cells labeled tick hemolymph cells. Inside of these cells are small red cells labeled R. rickettsia.",
+      "caption": "Rickettsias require special staining methods to see them under a microscope. Here, R. rickettsii , which causes Rocky Mountain spotted fever, is shown infecting the cells of a tick. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_04_02_Salmonella": {
+      "source": "media/OSC_Microbio_04_02_Salmonella.jpg",
+      "sourceSha256": "a9ad9804198fbdcf92eee029cdf5c95db81811ba1c9a669df3e29faba2e4fa36",
+      "module": "m58796",
+      "kind": "photo",
+      "width": 700,
+      "height": 442,
+      "variants": [
+        {
+          "width": 700,
+          "height": 442,
+          "file": "OSC_Microbio_04_02_Salmonella-700.webp"
+        }
+      ],
+      "alt": "A micrograph of many rod shaped cells.",
+      "caption": "Salmonella typhi is the causative agent of typhoid fever. (credit: Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_04_02_Xray": {
+      "source": "media/OSC_Microbio_04_02_Xray.jpg",
+      "sourceSha256": "669dbb62752e11799d5f0715a0a7c15e6448d1719129446b2a7933e936f9936d",
+      "module": "m58796",
+      "kind": "photo",
+      "width": 500,
+      "height": 459,
+      "variants": [
+        {
+          "width": 500,
+          "height": 459,
+          "file": "OSC_Microbio_04_02_Xray-500.webp"
+        }
+      ],
+      "alt": "An X-ray showing ribs and other structures as white and the lungs as black. Light white webbings in the lungs are highlighted with white triangles. A dark region in this white webbing is outlined with black arrows.",
+      "caption": "This anteroposterior radiograph shows the presence of bilateral pulmonary infiltrate (white triangles) and “caving formation” (black arrows) present in the right apical region. (credit: Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_04_02_vibrionale": {
+      "source": "media/OSC_Microbio_04_02_vibrionale.jpg",
+      "sourceSha256": "fa4e609a3c91339f9828693371816ae6a76f2b770b30812f9cec3c2abd6148e3",
+      "module": "m58796",
+      "kind": "photo",
+      "width": 1300,
+      "height": 438,
+      "variants": [
+        {
+          "width": 800,
+          "height": 269,
+          "file": "OSC_Microbio_04_02_vibrionale-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 438,
+          "file": "OSC_Microbio_04_02_vibrionale-1300.webp"
+        }
+      ],
+      "alt": "a) A photograph of shining green dots on a black backround. B) A photograph of a glowing squid.",
+      "caption": "(a) Aliivibrio fischeri is a bioluminescent bacterium. (b) A. fischeri colonizes and lives in a mutualistic relationship with the Hawaiian bobtail squid ( Euprymna scolopes ). (credit a: modification of work by American Society for Microbiology; credit b: modification of work by Margaret McFall-Ngai)"
+    },
+    "OSC_Microbio_04_03_Cyanobact": {
+      "source": "media/OSC_Microbio_04_03_Cyanobact.jpg",
+      "sourceSha256": "bf7b2b076f101aeaf9de5807c0979b1f0a0e2a4626a65f254f3f4f3780e00fa7",
+      "module": "m58797",
+      "kind": "photo",
+      "width": 1100,
+      "height": 459,
+      "variants": [
+        {
+          "width": 800,
+          "height": 334,
+          "file": "OSC_Microbio_04_03_Cyanobact-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 459,
+          "file": "OSC_Microbio_04_03_Cyanobact-1100.webp"
+        }
+      ],
+      "alt": "a) A micrograph of green spherical cells. B) A photo of a green lake",
+      "caption": "(a) Microcystis aeruginosa is a type of cyanobacteria commonly found in freshwater environments. (b) In warm temperatures, M. aeruginosa and other cyanobacteria can multiply rapidly and produce neurotoxins, resulting in blooms that are harmful to fish and other aquatic animals. (credit a: modification of work by Dr. Barry H. Rosen/U.S. Geological Survey; credit b: modification of work by NOAA)"
+    },
+    "OSC_Microbio_04_03_bacteroide": {
+      "source": "media/OSC_Microbio_04_03_bacteroide.jpg",
+      "sourceSha256": "3b25a924b63dfde8d6d7874484bbbaac8ff749fc2c0608ebafea600734fbea29",
+      "module": "m58797",
+      "kind": "photo",
+      "width": 700,
+      "height": 525,
+      "variants": [
+        {
+          "width": 700,
+          "height": 525,
+          "file": "OSC_Microbio_04_03_bacteroide-700.webp"
+        }
+      ],
+      "alt": "A micrograph of many rod shaped cells.",
+      "caption": "Bacteroides comprise up to 30% of the normal microbiota in the human gut. (credit: NOAA)"
+    },
+    "OSC_Microbio_04_03_chromatium": {
+      "source": "media/OSC_Microbio_04_03_chromatium.jpg",
+      "sourceSha256": "0393f7ad2510127a094e356686a7ff567c3162698b88276885ecab2b3aa06036",
+      "module": "m58797",
+      "kind": "photo",
+      "width": 607,
+      "height": 478,
+      "variants": [
+        {
+          "width": 607,
+          "height": 478,
+          "file": "OSC_Microbio_04_03_chromatium-607.webp"
+        }
+      ],
+      "alt": "A thick glass tube filled with purple regions labeled purple bacteria and green regions labeled green bacteria.",
+      "caption": "Purple and green sulfur bacteria use bacteriochlorophylls to perform photosynthesis."
+    },
+    "OSC_Microbio_04_03_planctomyc": {
+      "source": "media/OSC_Microbio_04_03_planctomyc.jpg",
+      "sourceSha256": "49d0aaec1472c0b03396c3c1d95eef6cc936341085457fae619b742ebd9a8e6f",
+      "module": "m58797",
+      "kind": "photo",
+      "width": 700,
+      "height": 365,
+      "variants": [
+        {
+          "width": 700,
+          "height": 365,
+          "file": "OSC_Microbio_04_03_planctomyc-700.webp"
+        }
+      ],
+      "alt": "a) A micrograph of an oval cell with long projections attached to a root-shaped structure labeled holdfast. The oval cell is approximately 500 nm in diameter. B) A micrograph of a similar looking cell with a long projection that is not attached to a holdfast.",
+      "caption": "(a) Sessile Planctomycetes have a holdfast that allows them to adhere to surfaces in aquatic environments. (b) Swarmers are motile and lack a holdfast. (credit: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_04_03_spirochete": {
+      "source": "media/OSC_Microbio_04_03_spirochete.jpg",
+      "sourceSha256": "0f709e4238ce1b669ef71b9347b0b9605c0c8ff4793883ab8bd66fdf9f4c20f2",
+      "module": "m58797",
+      "kind": "photo",
+      "width": 1300,
+      "height": 911,
+      "variants": [
+        {
+          "width": 800,
+          "height": 560,
+          "file": "OSC_Microbio_04_03_spirochete-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 911,
+          "file": "OSC_Microbio_04_03_spirochete-1300.webp"
+        }
+      ],
+      "alt": "A light micrograph of long spiral shaped cells. A TEM cross-section of these shows a circle outlined by a cell membrane. Inside the cell is the cytoplasm and a darker region labeled nucleoid. Outside of this is the periplasmic space and outside of that is an outer membrane. A bulge within the periplasmic space is labeled axial filament. Small dots within the axial filament are labeled endoflagella. An SEM from the original light micrograph shows what looks like a thin rope wound around a thicker rope. The thin rope is labeled axial filament.",
+      "caption": "Spirochetes are typically observed using darkfield microscopy (left). However, electron microscopy (top center, bottom center) provides a more detailed view of their cellular morphology. The flagella found between the inner and outer membranes of spirochetes wrap around the bacterium, causing a twisting motion used for locomotion. (credit “spirochetes” micrograph: modification of work by Centers for Disease Control and Prevention; credit “SEM/TEM”: modification of work by Guyard C, Raffel SJ, Schrumpf ME, Dahlstrom E, Sturdevant D, Ricklefs SM, Martens C, Hayes SF, Fischer ER, Hansen BT, Porcella SF, Schwan TG)"
+    },
+    "OSC_Microbio_04_04_Actinobac": {
+      "source": "media/OSC_Microbio_04_04_Actinobac.jpg",
+      "sourceSha256": "70ca7e0eb0aa0f93122ae005fcea45a4868e959d5e5cf3bc59bb483e5d687c3c",
+      "module": "m58798",
+      "kind": "photo",
+      "width": 1300,
+      "height": 372,
+      "variants": [
+        {
+          "width": 800,
+          "height": 229,
+          "file": "OSC_Microbio_04_04_Actinobac-800.webp"
+        },
+        {
+          "width": 1300,
+          "height": 372,
+          "file": "OSC_Microbio_04_04_Actinobac-1300.webp"
+        }
+      ],
+      "alt": "a) A micrograph of branched cells. B) A micrograph of cells arranged in a V-shape – these are labeled palisades. C) A micrograph of corn-flake shaped cells with a nucleus. Smaller cells outside of these are identified with an arrow.",
+      "caption": "(a) Actinomyces israelii (false-color scanning electron micrograph [SEM]) has a branched structure. (b) Corynebacterium diphtheria causes the deadly disease diphtheria. Note the distinctive palisades. (c) The gram-variable bacterium Gardnerella vaginalis causes bacterial vaginosis. This micrograph shows a Pap smear from a person with vaginosis. (credit a: modification of work by “GrahamColm”/Wikimedia Commons; credit b: modification of work by Centers for Disease Control and Prevention; credit c: modification of work by Mwakigonja AR, Torres LM, Mwakyoma HA, Kaaya EE)"
+    },
+    "OSC_Microbio_04_04_ArtConn2_img": {
+      "source": "media/OSC_Microbio_04_04_ArtConn2_img.jpg",
+      "sourceSha256": "1d0164b376d590f6e2442a26b939117024186c1781d6135600352d8785aa3f57",
+      "module": "m58798",
+      "kind": "photo",
+      "width": 900,
+      "height": 590,
+      "variants": [
+        {
+          "width": 800,
+          "height": 524,
+          "file": "OSC_Microbio_04_04_ArtConn2_img-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 590,
+          "file": "OSC_Microbio_04_04_ArtConn2_img-900.webp"
+        }
+      ],
+      "alt": "A micrograph showing clusters of spherical cells.",
+      "caption": "(credit: modification of work by Janice Haney Carr/Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_04_04_Bacillus": {
+      "source": "media/OSC_Microbio_04_04_Bacillus.jpg",
+      "sourceSha256": "5988e50af764bdf4561720d6e180d284a36a38638dae5a6daa07d4a49a4b08a2",
+      "module": "m58798",
+      "kind": "photo",
+      "width": 1100,
+      "height": 489,
+      "variants": [
+        {
+          "width": 800,
+          "height": 355,
+          "file": "OSC_Microbio_04_04_Bacillus-800.webp"
+        },
+        {
+          "width": 1100,
+          "height": 489,
+          "file": "OSC_Microbio_04_04_Bacillus-1100.webp"
+        }
+      ],
+      "alt": "a) A micrograph of rod shaped cells in a chain. B) A photograph of colonies on agar. The agar is red and the colonies are white and fluffy looking.",
+      "caption": "(a) In this gram-stained specimen, the violet rod-shaped cells forming chains are the gram-positive bacteria Bacillus cereus . The small, pink cells are the gram-negative bacteria Escherichia coli . (b) In this culture, white colonies of B. cereus have been grown on sheep blood agar. (credit a: modification of work by “Bibliomaniac 15”/Wikimedia Commons; credit b: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_04_04_Clostridia": {
+      "source": "media/OSC_Microbio_04_04_Clostridia.jpg",
+      "sourceSha256": "0f29335c67a08f03b065f872efb50173fcd34d5f2169c90d386abf8174283628",
+      "module": "m58798",
+      "kind": "photo",
+      "width": 700,
+      "height": 414,
+      "variants": [
+        {
+          "width": 700,
+          "height": 414,
+          "file": "OSC_Microbio_04_04_Clostridia-700.webp"
+        }
+      ],
+      "alt": "A micrograph of many rod shaped cells.",
+      "caption": "Clostridioides difficile , a gram-positive, rod-shaped bacterium, causes severe colitis and diarrhea, often after the normal gut microbiota is eradicated by antibiotics. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_04_04_SAureus": {
+      "source": "media/OSC_Microbio_04_04_SAureus.jpg",
+      "sourceSha256": "5c30358e7c2dc679937af02fee5fc5ed6c04951e0a5582a3eaaa3a9215732ee0",
+      "module": "m58798",
+      "kind": "photo",
+      "width": 700,
+      "height": 472,
+      "variants": [
+        {
+          "width": 700,
+          "height": 472,
+          "file": "OSC_Microbio_04_04_SAureus-700.webp"
+        }
+      ],
+      "alt": "A micrograph of clusters of spherical cells.",
+      "caption": "This SEM of Staphylococcus aureus illustrates the typical “grape-like” clustering of cells. (credit: modification of work by Centers for Disease Control and Prevention)"
+    },
+    "OSC_Microbio_04_04_Strep": {
+      "source": "media/OSC_Microbio_04_04_Strep.jpg",
+      "sourceSha256": "0aec21913b0f0b476df3e45c5fa4154001c4695e97755f417d3b949732140167",
+      "module": "m58798",
+      "kind": "photo",
+      "width": 814,
+      "height": 408,
+      "variants": [
+        {
+          "width": 800,
+          "height": 401,
+          "file": "OSC_Microbio_04_04_Strep-800.webp"
+        },
+        {
+          "width": 814,
+          "height": 408,
+          "file": "OSC_Microbio_04_04_Strep-814.webp"
+        }
+      ],
+      "alt": "a) A micrograph of spherical cells in a chain. B) A photograph of colonies on agar. The agar is red, and there is a clearing around each colony.",
+      "caption": "(a) A gram-stained specimen of Streptococcus pyogenes shows the chains of cocci characteristic of this organism’s morphology. (b) S. pyogenes on blood agar shows characteristic lysis of red blood cells, indicated by the halo of clearing around colonies. (credit a, b: modification of work by American Society for Microbiology)"
+    },
+    "OSC_Microbio_04_05_DeepBranch": {
+      "source": "media/OSC_Microbio_04_05_DeepBranch.jpg",
+      "sourceSha256": "7a9dbc8866bfbe1cfe59e17d71aa868726301115ed2cff9ad5dd298e9e8490e4",
+      "module": "m58799",
+      "kind": "photo",
+      "width": 901,
+      "height": 590,
+      "variants": [
+        {
+          "width": 800,
+          "height": 524,
+          "file": "OSC_Microbio_04_05_DeepBranch-800.webp"
+        },
+        {
+          "width": 901,
+          "height": 590,
+          "file": "OSC_Microbio_04_05_DeepBranch-901.webp"
+        }
+      ],
+      "alt": "A diagram of a phylogenetic tree. At the base is the label LUCA This branches into two branches. The branch on the left is the bacteria, the branch to the right branches again to form the archaea and Eukarya. The lowest branch of the bacteria is the acetothermus (which is starred). Branches above that include (from bottom to top): aquifex, thermotoga, green filamentous bacteria, bacteroides, cytophaga, planctomyces, gram positives, cyanobacteria, porteiobacteria and spirochetes. Branches of the arcaea from bottom to top: pyrodicticum, thermoproteus, Thermococcus, methanococcus, methanobacterium, methanosarcina, and halophies. Branches of the Eukarya from bottom to top: diplomonads, microsporidia, trichomonads, flagellates, entamoebae, slime molds, ciliates, plants, animals, and fungi.",
+      "caption": "The star on this phylogenetic tree of life shows the position of the deeply branching bacteria Acetothermus . (credit: modification of work by Eric Gaba)"
+    },
+    "OSC_Microbio_04_05_Dradiodura": {
+      "source": "media/OSC_Microbio_04_05_Dradiodura.jpg",
+      "sourceSha256": "f5681f08e194dbc8f45cb3961f2939cea6c4ebaf9387c959926c0a6fe6d23966",
+      "module": "m58799",
+      "kind": "photo",
+      "width": 500,
+      "height": 575,
+      "variants": [
+        {
+          "width": 500,
+          "height": 575,
+          "file": "OSC_Microbio_04_05_Dradiodura-500.webp"
+        }
+      ],
+      "alt": "A micrograph of four round cells forming a square.",
+      "caption": "Deinococcus radiodurans , or “Conan the Bacterium,” survives in the harshest conditions on earth."
+    },
+    "OSC_Microbio_04_06_ArtConn4_img": {
+      "source": "media/OSC_Microbio_04_06_ArtConn4_img.jpg",
+      "sourceSha256": "ebdb8b0a1c6be281e203495d41df195e0af63a6ab7b87162fa48a1d62d254599",
+      "module": "m58800",
+      "kind": "photo",
+      "width": 700,
+      "height": 467,
+      "variants": [
+        {
+          "width": 700,
+          "height": 467,
+          "file": "OSC_Microbio_04_06_ArtConn4_img-700.webp"
+        }
+      ],
+      "alt": "A photo of bubbles on water.",
+      "caption": "(credit: Chad Skeers)"
+    },
+    "OSC_Microbio_04_06_Halobact": {
+      "source": "media/OSC_Microbio_04_06_Halobact.jpg",
+      "sourceSha256": "3e334593494e5712b6f2936253c181a6d8cfb5aaea63819382ba279a97f4b158",
+      "module": "m58800",
+      "kind": "photo",
+      "width": 900,
+      "height": 517,
+      "variants": [
+        {
+          "width": 800,
+          "height": 459,
+          "file": "OSC_Microbio_04_06_Halobact-800.webp"
+        },
+        {
+          "width": 900,
+          "height": 517,
+          "file": "OSC_Microbio_04_06_Halobact-900.webp"
+        }
+      ],
+      "alt": "A photograph of red, white and pink fields.",
+      "caption": "Halobacteria growing in these salt ponds gives them a distinct purple color. (credit: modification of work by Tony Hisgett)"
+    },
+    "OSC_Microbio_04_06_Sulfolobus": {
+      "source": "media/OSC_Microbio_04_06_Sulfolobus.jpg",
+      "sourceSha256": "fc7dcc27f17b3e95eeddce3477ccee285ddafc4fee74ecd9caf15abae57d6188",
+      "module": "m58800",
+      "kind": "photo",
+      "width": 501,
+      "height": 518,
+      "variants": [
+        {
+          "width": 501,
+          "height": 518,
+          "file": "OSC_Microbio_04_06_Sulfolobus-501.webp"
+        }
+      ],
+      "alt": "A mircrograph of a spherical cell with diamond-shpaed structures inside it.",
+      "caption": "Sulfolobus , an archaeon of the class Crenarchaeota, oxidizes sulfur and stores sulfuric acid in its granules."
+    },
+    "OSC_Microbio_04_06_TB": {
+      "source": "media/OSC_Microbio_04_06_TB.jpg",
+      "sourceSha256": "abee14754dc95db52ba5038ce94aa1b8042fbcd92ce4b66a4329a2c22f46b4bb",
+      "module": "m58798",
+      "kind": "photo",
+      "width": 700,
+      "height": 466,
+      "variants": [
+        {
+          "width": 700,
+          "height": 466,
+          "file": "OSC_Microbio_04_06_TB-700.webp"
+        }
+      ],
+      "alt": "A photograph of colonies on agar. The agar is blue and the colonies look like a pile of beads.",
+      "caption": "M. tuberculosis grows on Löwenstein-Jensen (LJ) agar in distinct colonies. (credit: Centers for Disease Control and Prevention)"
     }
   }
 }

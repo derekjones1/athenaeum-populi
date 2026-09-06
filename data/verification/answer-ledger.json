@@ -1,6 +1,14 @@
 {
  "schemaVersion": 1,
  "entries": {
+  "0000182a4b80f8d9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "00018e0dbfb15812": {
    "verdict": "ok",
    "note": "re-hashed by a post-checker parent edit (accept/hint/description addition or a disclosed source-solution correction, errata 147-153); orchestrator re-read the item against the pinned module's solution/glossary and the section text before and after the edit"
@@ -70,6 +78,14 @@
   "0040775ab3342562": {
    "verdict": "ok"
   },
+  "004415afd84e2b69": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "0046c5a779806f72": {
    "verdict": "ok"
   },
@@ -115,6 +131,14 @@
   },
   "007d205d0c300f32": {
    "verdict": "ok"
+  },
+  "0083b9eea72dbc74": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "00883b645f75f31f": {
    "verdict": "ok"
@@ -413,6 +437,14 @@
   "01c7ec3eb8c4b989": {
    "verdict": "ok"
   },
+  "01cccbfefe5200c3": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "01cff9c9be1d2582": {
    "verdict": "ok",
    "note": "from (y-4)^2/4-(x-3)^2/16=1: a^2=4 -> a=2, vertical axis -> vertices (3,6),(3,2); matches source fs-id2272094."
@@ -661,6 +693,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "02c13de7782e60aa": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -1416,6 +1456,14 @@
   },
   "054ccacfcd91e013": {
    "verdict": "ok"
+  },
+  "054d4bf9f061d7c8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "055156ef87e028f1": {
    "verdict": "ok",
@@ -2295,6 +2343,14 @@
   },
   "08c8bc2ca8211d3b": {
    "verdict": "ok"
+  },
+  "08c9a8b6793e94b4": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0902a2404e4983d6": {
    "verdict": "ok",
@@ -3821,6 +3877,14 @@
   },
   "0edc59877dc9bbdf": {
    "verdict": "ok"
+  },
+  "0ee1af1e94c8a316": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "0ef38fd1a58ac05f": {
    "verdict": "ok",
@@ -6941,6 +7005,10 @@
    "verdict": "ok",
    "note": "parent re-derivation (Aug 28 2026 ch.11 pass): fillin L429 of 07-probability.md — re-hashed by a parent wording/token edit after the author's verdict; value re-derived by script by the parent and confirmed against the CNXML solution"
   },
+  "1b803954675328a6": {
+   "verdict": "ok",
+   "note": "m58800 § Euryarchaeota: the module defines methanogens as archaea that reduce carbon dioxide with hydrogen and produce methane, explaining the bog bubbles."
+  },
   "1b81527223b3fa7a": {
    "verdict": "ok",
    "note": "KC 3 17.1 § body Nucleic Acid Fragment Amplification by Polymerase Chain Reaction (fs-id2645776), m66511 — parent re-read against the module",
@@ -6956,6 +7024,10 @@
   "1b8bfb4e68f34040": {
    "verdict": "ok",
    "note": "(-4+4i)-(-6+9i)=(-4+6)+(4-9)i=2-5i; recomputed independently, matches CNXML end-of-section answer key."
+  },
+  "1b8c084d50ab2223": {
+   "verdict": "ok",
+   "note": "m58796 § Gammaproteobacteria: Pseudomonaceae, Pasteurellaceae, and Enterobacteriaceae are all named families."
   },
   "1b8c2390f907c01a": {
    "verdict": "ok",
@@ -7226,6 +7298,14 @@
   },
   "1c847b7595ef928a": {
    "verdict": "ok"
+  },
+  "1c8b980813db430d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "1c8cfec15c3a331a": {
    "verdict": "ok"
@@ -7804,6 +7884,14 @@
   "1ee00082e5526117": {
    "verdict": "ok",
    "note": "KC 1 2.1 § body Ions and Ionic Bonds (fs-idp140338797093616), m66430 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "1ee3ec24d3a113f6": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -9138,6 +9226,14 @@
   "24d62f27eef9d36c": {
    "verdict": "ok"
   },
+  "24d9dcc8edb45c63": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "24e3798b0122f809": {
    "verdict": "ok",
    "note": "KC 5 22.1 § glossary osmophile (fs-idm32971808), m66542 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
@@ -9811,6 +9907,14 @@
     "result": "agrees"
    }
   },
+  "27cca5b09bc783ea": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "27d8692ad476afc1": {
    "verdict": "ok",
    "note": "k=6/2=3, y=3*8*3=72; key p1298 #51"
@@ -9887,6 +9991,14 @@
   },
   "281e960d34984682": {
    "verdict": "ok"
+  },
+  "282421518f816fa5": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "282598a04de48cb1": {
    "verdict": "ok"
@@ -10298,6 +10410,14 @@
    "verdict": "ok",
    "note": "(1^2+1)/(2*1-3) = 2/(-1) = -2."
   },
+  "29fae7e927b8d4d7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "2a00c4e31bd293bb": {
    "verdict": "ok"
   },
@@ -10646,6 +10766,14 @@
   },
   "2b49c86fb9a564da": {
    "verdict": "ok"
+  },
+  "2b5431f64ae2e8e9": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "2b62a17f35f60b61": {
    "verdict": "ok",
@@ -11411,6 +11539,14 @@
   "2e18c3bc03f23267": {
    "verdict": "ok",
    "note": "lim_{x->3}(x^2-x-6)/(x^2-9) = (x+2)/(x+3) at x=3 = 5/6 = 0.8333..., rounds to 0.83; node-sampled at x=3+-0.1,0.01,0.001,0.0001 confirms convergence to 0.8333; matches the printed solution for fs-id1165135195366 (source exercise 31)."
+  },
+  "2e1980539bf85c4a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "2e1d809a08878e59": {
    "verdict": "ok",
@@ -12276,6 +12412,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "31e2aedae53ab137": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -13447,6 +13591,14 @@
   "36bdfdf60d6ecfd5": {
    "verdict": "ok"
   },
+  "36be7af6c0f479ea": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "36c11b4a7514763d": {
    "verdict": "ok"
   },
@@ -13990,6 +14142,14 @@
     "result": "agrees"
    }
   },
+  "38b77002e4752e57": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "38b87940dba6fbf2": {
    "verdict": "ok",
    "note": "KC 2 6.2 § body Free Energy (fs-id1366956), m66459 — parent re-read against the module; replaced in the September 5, 2026 reverse-recall sweep (the earlier item re-asked a section Practice fact); re-solved cold by the orchestrator (Fable) on September 5, 2026 after the sweep replacements — the September 5 sweep solve had been run by a Sonnet agent",
@@ -14149,6 +14309,14 @@
    }
   },
   "3958d590c21755ca": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "395b576d945547a9": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
@@ -14346,6 +14514,14 @@
     "result": "agrees"
    }
   },
+  "39f391fbfc390b16": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "3a05dff67990b030": {
    "verdict": "ok"
   },
@@ -14506,6 +14682,14 @@
    "verdict": "ok",
    "note": "Practice #13 (Algebraic): f(x)=(5-2x)/(3+2x), quotient rule gives f'(x) = [(-2)(3+2x)-(5-2x)(2)]/(3+2x)^2 = -16/(3+2x)^2; confirmed numerically node at x=1: -0.64 matches -16/25=-0.64. Matches source exercise 13 solution."
   },
+  "3ab2eb6e05c75c2a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "3ac12c534845a432": {
    "verdict": "ok",
    "solved": {
@@ -14617,6 +14801,10 @@
   },
   "3b41b8adc399c925": {
    "verdict": "ok"
+  },
+  "3b44cd6f601e766d": {
+   "verdict": "ok",
+   "note": "m58800 § Crenarchaeota: aquatic distribution, ocean abundance, qualified hyperthermophily, and Sulfolobus conditions all trace to the module."
   },
   "3b45a9eac77a9caa": {
    "verdict": "ok",
@@ -14852,6 +15040,14 @@
   "3c42d5151573f086": {
    "verdict": "ok",
    "note": "KC 6 30.2 § body Vascular Tissue (fs-idp64528080), m66597 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "3c449308aa62395a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -15976,6 +16172,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "4160e7f1f5d8397e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -17552,6 +17756,14 @@
    "verdict": "ok",
    "note": "m66645 exercise fs-idm49856704 (critical thinking); model answer transcribes the source solution verbatim."
   },
+  "477668a04e8ef147": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "478190bf732bd476": {
    "verdict": "ok"
   },
@@ -17925,6 +18137,14 @@
   "48ce8a6f1c83f525": {
    "verdict": "ok"
   },
+  "48d033d1b4bf3f54": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "48d1c88917c9acbc": {
    "verdict": "ok",
    "note": "Critical Thinking eip-392, solution eip-527, transcribed verbatim. Matches the section's description of topoisomerase relieving over-winding ahead of the fork by nicking and resealing the helix; inhibiting it stalls helicase-driven unwinding."
@@ -18122,6 +18342,14 @@
   },
   "49ce21aa477b2978": {
    "verdict": "ok"
+  },
+  "49dfb4d6cc8ca65b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "49e07faebd1af51e": {
    "verdict": "ok",
@@ -19729,6 +19957,14 @@
   "508f40467ff75217": {
    "verdict": "ok"
   },
+  "509362289ff25d0a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5097c021ad84533d": {
    "verdict": "ok",
    "note": "m66378 critical-thinking solution fs-id1986146 (two paragraphs) verbatim match to page model answer, including the source's own 'it could be large or polar (it is a small, polar molecule)' phrasing. All 5 CHECKS clauses trace to sentences in that solution; no added claim."
@@ -20312,6 +20548,14 @@
     "result": "agrees"
    }
   },
+  "53991a288357667e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "53a22466816e5024": {
    "verdict": "ok"
   },
@@ -20419,6 +20663,10 @@
   },
   "54377096a4fbe4cd": {
    "verdict": "ok"
+  },
+  "543e5c375df24090": {
+   "verdict": "ok",
+   "note": "m58798 § Low G+C Gram-positive Bacteria: each organism-disease example is explicitly named in the prose or comparison table."
   },
   "543f25d48887da83": {
    "verdict": "ok"
@@ -21331,6 +21579,14 @@
    "verdict": "ok",
    "note": "KC 7 43.3 § body Male Reproductive Anatomy (fs-idp844928), m66673 — parent re-read against the module"
   },
+  "582d626ae98a2c94": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "582e6386d08497c7": {
    "verdict": "ok"
   },
@@ -21426,6 +21682,14 @@
   "58817f1680f318a0": {
    "verdict": "ok",
    "note": "MC fs-id2077371: option D (All of the above.) matches keyed solution D.",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "588ace52f1b687d2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -22991,6 +23255,14 @@
    "verdict": "ok",
    "note": "Section exercise fs-id1165137731890: k=24*128=3072; length=3072/64=48 inches. Verified with node arithmetic; matches CNXML solution."
   },
+  "5eedc6348d4a12e7": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "5f0178c3fd017078": {
    "verdict": "ok"
   },
@@ -23387,6 +23659,14 @@
   "60b93b68c24d9e48": {
    "verdict": "ok"
   },
+  "60bbdb71fc276666": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "60bc80add8da9188": {
    "verdict": "ok",
    "note": "KC 2 7.2 § body First Half of Glycolysis (Energy-Requiring Steps) (fs-id2221367), m66466 — parent re-read against the module",
@@ -23699,6 +23979,14 @@
   },
   "626666122ca3b35a": {
    "verdict": "ok"
+  },
+  "626c56ebc0ec7ee8": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "626ecdb780af0cf3": {
    "verdict": "ok"
@@ -24505,6 +24793,14 @@
   "6581397b04197d94": {
    "verdict": "ok"
   },
+  "65830be3a9dca388": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "65879b6f075f37d3": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -24875,6 +25171,14 @@
   },
   "67179131b85c1289": {
    "verdict": "ok"
+  },
+  "6718134c3b8d4872": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "671cfb82847cec4b": {
    "verdict": "ok",
@@ -25281,6 +25585,14 @@
   },
   "68a3fd2d6fcf40ce": {
    "verdict": "ok"
+  },
+  "68a608e65e86a09b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "68b0b2fcdc48cb46": {
    "verdict": "ok",
@@ -26048,6 +26360,10 @@
     "result": "agrees"
    }
   },
+  "6bc50a0b1318e824": {
+   "verdict": "ok",
+   "note": "m58799: the module links deeply branching bacteria to hypotheses about ancient life and identifies industrial molecular-hydrogen production by Thermotogae."
+  },
   "6bc6d3457c4e97d9": {
    "verdict": "ok",
    "note": "Try It: x=y^3-2y with y(t)=t substituted directly gives x(t)=t^3-2t; matches CNXML solution."
@@ -26338,6 +26654,15 @@
     "result": "agrees"
    }
   },
+  "6cf2f3f986302cdb": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "Pinned module m58799 contrasts ultraviolet, nonionizing, and ionizing radiation, then states that D. radiodurans withstands doses of ionizing radiation; source exercise fs-id1172100905378 keys that precise type. The page key therefore stands."
+   }
+  },
   "6cfb6c6b528e53e5": {
    "verdict": "ok"
   },
@@ -26515,6 +26840,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "6da3fdac62a42780": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -26932,6 +27265,14 @@
   "6f4b2b61c74c103c": {
    "verdict": "ok"
   },
+  "6f501b5e795eb03b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "6f5f9d30a0dcc3f0": {
    "verdict": "ok"
   },
@@ -27280,6 +27621,10 @@
     "result": "agrees"
    }
   },
+  "7115b794af1231ed": {
+   "verdict": "ok",
+   "note": "m58796 § Epsilonproteobacteria: Campylobacter-enteritis and Helicobacter-gastritis/ulcer pairings are stated in the module."
+  },
   "7119403ddb5348dd": {
    "verdict": "ok",
    "note": "parent: option order rotated for position balance; answer re-derived earlier in this session (conic type from A,C / discriminant; rotation effect; theta from cot 2theta) — What effect does the $xy$ term have on the graph of a conic "
@@ -27521,6 +27866,14 @@
     "result": "agrees"
    }
   },
+  "7218755c57b75fda": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "721d2b7a1d2012fe": {
    "verdict": "ok"
   },
@@ -27664,6 +28017,14 @@
   "72dee531e2552cad": {
    "verdict": "ok",
    "note": "KC 7 34.2 § body Organic Precursors (fs-idm162453888), m66616 — parent re-read against the module; re-hashed on 2026-09-06 by the plural-folding retrofit: regular-plural accept member(s) removed because the grader now folds a trailing s/es onto every accepted form; the key, question, hint, and every other accept member are unchanged, and the item was covered by the corpus re-audit (eight Sonnet auditors over all 1,444 textin items)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "72e701a8b35437e0": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -31799,6 +32160,14 @@
   "8447b0a1031e2183": {
    "verdict": "ok"
   },
+  "844bc2a6821a2b6f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "844c23a4f23a63bd": {
    "verdict": "ok",
    "note": "m66427 Critical Thinking exercise fs-id2171449, solution fs-id1687414: car-won't-start example, battery hypothesis, change/charge-battery experiment, hypothesis accepted if it starts. Page model answer restates the same worked example; all five ===CHECKS=== clauses restate it with no added claim."
@@ -32913,6 +33282,14 @@
   "88efc14688a24a73": {
    "verdict": "ok",
    "note": "m66408 Review Question fs-idp10755680, solution B — the lens loses flexibility with age (presbyopia).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "88f0641ab554b2ae": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -35479,6 +35856,18 @@
   "94f743a03d7a7e3c": {
    "verdict": "ok"
   },
+  "94fc5487df9cb708": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "95009d8be8d96df7": {
+   "verdict": "ok",
+   "note": "m58798 § Low G+C Gram-positive Bacteria: the module classifies streptococci by Lancefield groups and hemolysis on blood agar."
+  },
   "9503a4e556b14bd6": {
    "verdict": "ok",
    "note": "f(x) = 3x + 2: y-intercept (0,2), slope 3 → through (−1,−1), (0,2), (1,5) → option 2 (lines slope 3, intercept 2). Distractors are the other functions of the same source set — y = −3x − 1 (falls), y = x + 2 (same intercept, slope 1), y = 2 (horizontal). Source: m50389 section exercises “match the given linear equation with its graph”, item f(x)=3x+2 keyed A; recognition MC authored for the graph-recognition rule."
@@ -36212,6 +36601,14 @@
     "by": "orchestrator",
     "result": "adjudicated",
     "note": "settled FOR the key against m66503: the module's own glossary defines gene expression as 'processes that control the turning on or turning off of a gene' — the item is authored from that definition; my general-knowledge 'gene regulation' loses to the module's own wording"
+   }
+  },
+  "97fac3c8494f34ab": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
    }
   },
   "97fc3795e2cca1b8": {
@@ -37054,6 +37451,14 @@
     "result": "agrees"
    }
   },
+  "9be3fcf17c61d45e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9be826ed74a85ded": {
    "verdict": "ok"
   },
@@ -37309,6 +37714,14 @@
   "9cfa8c82963693f7": {
    "verdict": "ok"
   },
+  "9cffd213407aa31f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "9d001df50c72ddc1": {
    "verdict": "ok",
    "note": "KC 1 2.2 § body Water's Solvent Properties (fs-idm109112880), m66434 — parent re-read against the module",
@@ -37554,6 +37967,14 @@
   "9e159c0b7bc6bbd7": {
    "verdict": "ok",
    "note": "node: Math.acos(3/5)=0.9272952180016123, rounds to 0.93 (source Algebraic #19, solution 0.93)."
+  },
+  "9e205de99f20732a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "9e235bf299260c49": {
    "verdict": "ok"
@@ -39289,6 +39710,14 @@
     "result": "agrees"
    }
   },
+  "a5c764dc1704d11f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "a5d940242a37cccb": {
    "verdict": "ok",
    "solved": {
@@ -39523,6 +39952,14 @@
   },
   "a69d7b910fc2a454": {
    "verdict": "ok"
+  },
+  "a6a351bee1c5aa03": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "a6a805b1654e57a9": {
    "verdict": "ok",
@@ -41172,6 +41609,14 @@
   "acec012a15ee4f43": {
    "verdict": "ok",
    "note": "38.4 m66643 fs-idm29371104 (Critical Thinking Question). Model answer is the source solution verbatim; checkpoints decompose it with no new claims."
+  },
+  "acf03d0a3aa3df50": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "acf41fdb44931b5a": {
    "verdict": "ok",
@@ -43545,6 +43990,14 @@
    "verdict": "ok",
    "note": "#39 (fs-id2155191): cos58°+cos12°=2cos35°cos23°; computed in node: 2*cos(35°)*cos(23°)=1.5080668649670106, rounds to 1.5081, matches CNXML solution '2cos(35°)cos(23°), 1.5081'."
   },
+  "b75f9030fc63140f": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "b75f936cbe14f9c7": {
    "verdict": "ok",
    "solved": {
@@ -43602,6 +44055,10 @@
   },
   "b78ac0aa7d40b114": {
    "verdict": "ok"
+  },
+  "b7a371417e728967": {
+   "verdict": "ok",
+   "note": "m58796 § Alphaproteobacteria: the table identifies obligate or facultative intracellular relationships for the named human pathogens."
   },
   "b7aaa5eb6c72b391": {
    "verdict": "ok",
@@ -43665,6 +44122,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "b804839f5ce6e2d6": {
+   "verdict": "ok",
+   "note": "m58795 § Cooperation: Cooperative Behavior: model answer uses the module's definitions of cooperative and competitive interactions."
   },
   "b80b72ee112bd0c7": {
    "verdict": "ok",
@@ -44145,6 +44606,10 @@
   },
   "ba16082d7d777f10": {
    "verdict": "ok"
+  },
+  "ba2411aabe60b098": {
+   "verdict": "ok",
+   "note": "m58797 § The CFB Group and Planctomycetes: the model answer's genera, sequence relationship, morphology, anaerobiosis, and fermentation all trace to the module."
   },
   "ba2a86257f1820e9": {
    "verdict": "ok",
@@ -44775,6 +45240,10 @@
   "bcccab76d26a6b9b": {
    "verdict": "ok"
   },
+  "bcd2087555e7a9ee": {
+   "verdict": "ok",
+   "note": "m58795 opening classification discussion: traditional phenotype-based criteria and newer nucleotide-sequence criteria are both stated in the module."
+  },
   "bcddfcd709023513": {
    "verdict": "ok"
   },
@@ -45363,6 +45832,14 @@
   "bf1e4ac7889cc9a9": {
    "verdict": "ok"
   },
+  "bf23a11c266f108e": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "bf2a54db39c81477": {
    "verdict": "ok",
    "note": "IA KC 01-06 §3.4, converted from prose options to rendered figures. Re-derived: y > 3/2 x + 5 is strict, so the boundary line is dashed, and 'y greater than' shades the half-plane above it — option 3, which draws y = 3/2 x + 5 dashed with the region containing (0,10) shaded. The three distractors render the three printed prose distractors exactly: solid+above (0), dashed+below (1), solid+below (2). Option order and answer position are unchanged from the prose version."
@@ -45582,6 +46059,14 @@
   "bfd0238b899e7084": {
    "verdict": "ok",
    "note": "f(x)=3log(x-2)+1: asymptote at x=2 (argument x-2=0), unaffected by stretch/vertical shift. Matches CNXML ti_04_04_07 solution domain (2,inf)/asymptote x=2."
+  },
+  "bfd6e205116bad39": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "bfde7693d81e0605": {
    "verdict": "ok"
@@ -46380,6 +46865,14 @@
   "c35196a3654922af": {
    "verdict": "ok",
    "note": "Glossary textin, term 'aphotic zone' (fs-idm243319840).",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "c359f432e1345473": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
@@ -47340,6 +47833,14 @@
    "verdict": "ok",
    "note": "sec(120°)=1/cos(120°)=1/(-1/2)=-2; node check 1/Math.cos(120°·π/180)=-2.000000000000001"
   },
+  "c7044fb05ae70064": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "c705c37bac1c56ef": {
    "verdict": "ok",
    "note": "v = r*omega = (6378+242 km)*0.25 rad/hr = 6620*0.25 = 1655 km/hr; matches pinned CNXML solution '1655 kilometers per hour' (line 2570)"
@@ -47748,6 +48249,15 @@
   },
   "c889e653c38929d7": {
    "verdict": "ok"
+  },
+  "c88e10cdb4d2ed3d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "adjudicated",
+    "note": "Pinned module m58797 § Spirochetes distinguishes four T. pallidum subspecies and states that T. pallidum pallidum specifically causes syphilis; source exercise fs-id1172100937750 keys the same subspecies. The more precise page key therefore stands."
+   }
   },
   "c896b157f6519129": {
    "verdict": "ok",
@@ -48677,6 +49187,14 @@
    "verdict": "ok",
    "note": "r=8/(4-5cosθ), ÷4 → e=5/4>1 hyperbola, ep=2, p=1.6, directrix x=-p=-1.6; vertices θ=0→r=-8→(-8,0), θ=π→r=8/9→(-8/9,0). Matches Algebraic 'graph the conic' exercise fs-id1479120 (solution figure-only). Correct option is index 1; curve polylines and all 4 options' geometry independently re-sampled and verified against the focus-directrix relation (residual <1e-4) after finding the ORIGINAL page's polyline points for this MC failed that check by several units — replaced with correct samples."
   },
+  "cc70165d899f2497": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "cc714f828595da95": {
    "verdict": "ok",
    "solved": {
@@ -48793,6 +49311,14 @@
   "cceb9891ee7528a8": {
    "verdict": "ok",
    "note": "Whispering chamber 480x320: a=240,a^2=57600; b=160,b^2=25600; x^2/57600+y^2/25600=1 matches CNXML fs-id1403957 part (a)."
+  },
+  "cd01798b4d1a7b06": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "cd03864ef7c6d519": {
    "verdict": "ok",
@@ -49075,6 +49601,14 @@
   "ce7cb28cd7b75469": {
    "verdict": "ok",
    "note": "Practice #23: power rule on each term then product/quotient rules; verified by float substitution x=2,y=3,z=4 (node) equals log(xz^3/sqrt(y)). Matches CNXML solution."
+  },
+  "ce7f98f8e6d62a58": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "ce945766b3fe2208": {
    "verdict": "ok",
@@ -50276,6 +50810,14 @@
     "result": "agrees"
    }
   },
+  "d45d7513ea57ea10": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "d461b6437c0fe89b": {
    "verdict": "ok",
    "note": "orchestrator solve (solve-check.mjs)",
@@ -51173,6 +51715,14 @@
   "d83e585761cb05ae": {
    "verdict": "ok"
   },
+  "d841bcfc7c7b4feb": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "d842b29fd416589b": {
    "verdict": "ok"
   },
@@ -51570,6 +52120,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "da4bed0a5c92a768": {
+   "verdict": "ok",
+   "note": "m58795 § Prokaryotes and the Carbon and Nitrogen Cycles: carbon conversion, nitrogen fixation to ammonia, and Rhizobium-legume dependence are supported by the module."
   },
   "da5aff09ebbf87fb": {
    "verdict": "ok",
@@ -52365,6 +52919,14 @@
     "result": "agrees"
    }
   },
+  "ddbc2687deb30aad": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "ddc0bfb223f86941": {
    "verdict": "ok",
    "note": "m66577 Critical Thinking fs-idp26321328: model answer is the source solution verbatim."
@@ -52496,6 +53058,14 @@
   },
   "de78440cfddb9f78": {
    "verdict": "ok"
+  },
+  "de7db7bfed72acdc": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "de8536eea9b047b5": {
    "verdict": "ok",
@@ -53571,6 +54141,10 @@
    "verdict": "ok",
    "note": "Critical Thinking fs-idm134256784, selfcheck. Model answer is the source solution verbatim; checkpoints decompose its own sentences with no new claim."
   },
+  "e2c752a648924f46": {
+   "verdict": "ok",
+   "note": "m58796 § Gammaproteobacteria: the module's coliform/noncoliform paragraph supports every metabolic distinction and identifies the pathogen-bearing category."
+  },
   "e2d9012dbbc4f6ed": {
    "verdict": "ok",
    "note": "selfcheck = CNXML fs-idm139425264 (critical thinking); model answer is the CNXML solution verbatim, decomposed into three checkpoint clauses with no new claims."
@@ -53883,6 +54457,14 @@
    "verdict": "ok",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "e420493c6f62aed2": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -54492,6 +55074,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "e69246ebf2bd4cec": {
+   "verdict": "ok",
+   "note": "m58795 § Symbiosis: model answer faithfully contrasts the outcomes in commensalism and amensalism."
   },
   "e6957584ba685d1c": {
    "verdict": "ok",
@@ -55164,6 +55750,10 @@
   "e9a4538435dd84b1": {
    "verdict": "ok"
   },
+  "e9a47fd117f8a9f8": {
+   "verdict": "ok",
+   "note": "m58795 § Prokaryote Habitats: model answer traces to the module's examples of ubiquitous and extreme habitats."
+  },
   "e9ac109d031a3c8f": {
    "verdict": "ok"
   },
@@ -55464,6 +56054,14 @@
   "eae4cc2864783a5e": {
    "verdict": "ok",
    "note": "Critical Thinking Q2 (fs-id2321141/fs-id1987001, module m66514) — model answer is the keyed solution verbatim; checkpoints restate it."
+  },
+  "eb04d1652580c18b": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "eb05c7b5baa537fb": {
    "verdict": "ok",
@@ -56994,6 +57592,14 @@
     "result": "agrees"
    }
   },
+  "f1bd85b9a4cc252c": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f1c2666751fd7e8c": {
    "verdict": "ok"
   },
@@ -57430,6 +58036,14 @@
   "f3a727ebdb82753e": {
    "verdict": "ok",
    "note": "Figure-read item (Section Exercises Q43/fs-id1165135397089): CNXML solution prints (5, pi); alt text describes point on fifth concentric circle along the negative polar axis, matching r=5, theta=pi."
+  },
+  "f3a82935dcaaa014": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "f3ade6306f66992f": {
    "verdict": "ok"
@@ -58121,6 +58735,14 @@
     "result": "agrees"
    }
   },
+  "f67223ccfcc3293a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "f67231e0f5261a88": {
    "verdict": "ok",
    "solved": {
@@ -58284,6 +58906,10 @@
     "by": "orchestrator",
     "result": "agrees"
    }
+  },
+  "f6f109a704039864": {
+   "verdict": "ok",
+   "note": "m58795 § The Human Microbiome: antibiotic-associated changes to vaginal, intestinal, and respiratory microbiota are supported by the module."
   },
   "f6f2a7d246dc56dc": {
    "verdict": "ok"
@@ -58508,6 +59134,14 @@
    "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "opus-solver (8 book groups + context pass + reworded pass), adjudicated by the orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f810224799110e67": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
     "result": "agrees"
    }
   },
@@ -59515,6 +60149,14 @@
   "fc2c2353e309c88f": {
    "verdict": "ok"
   },
+  "fc2d4f84c550355d": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "fc34259783261881": {
    "verdict": "ok",
    "note": "m66430 Critical Thinking Q1 <solution id=fs-idp140338803654160>: 'Ionic bonds are created between ions... it takes less energy to break an ionic bond compared with a covalent one.' Page model answer matches verbatim; all four CHECKS clauses restate this content with no added claim."
@@ -59721,6 +60363,10 @@
    "verdict": "ok",
    "note": "log(S)=c iff b^c=S with b=10,c=-2,S=1/100: 10^{-2}=1/100. Verified 10^-2=0.01 numerically."
   },
+  "fd4a5a973e165c40": {
+   "verdict": "ok",
+   "note": "m58797 § Phototrophic Bacteria: the module supports the photosynthetic type, atmospheric role, habitats, forms, heterocysts, and harmful blooms in the model answer."
+  },
   "fd4bcea76333a6b2": {
    "verdict": "ok",
    "solved": {
@@ -59818,6 +60464,14 @@
   },
   "fda74cf1698f1b50": {
    "verdict": "ok"
+  },
+  "fdaa98c917039299": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "fdb326f619eb3256": {
    "verdict": "ok",

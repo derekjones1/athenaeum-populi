@@ -40,14 +40,14 @@ pathogens that cause them.
 - **The Cell** — spontaneous generation, the foundations of modern cell
   theory, and the unique characteristics of prokaryotic and eukaryotic
   cells.
-
-## Planned contents
-
-Microbiology has 26 chapters. The remaining 23 will appear in this order:
-
 - **Prokaryotic Diversity** — habitats, relationships, and microbiomes;
   the proteobacteria, other gram-negative and phototrophic bacteria,
   gram-positive bacteria, deeply branching bacteria, and archaea.
+
+## Planned contents
+
+Microbiology has 26 chapters. The remaining 22 will appear in this order:
+
 - **The Eukaryotes of Microbiology** — unicellular eukaryotic parasites,
   parasitic helminths, fungi, algae, and lichens.
 - **Acellular Pathogens** — viruses and the viral life cycle; isolating,

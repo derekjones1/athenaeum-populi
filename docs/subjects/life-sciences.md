@@ -666,6 +666,46 @@ second blank in a sentence already asked.
   exercise and solution (not the page), every figure alt against the PDF
   page, and every key-term item against the source definition; report
   defects to the parent, which owns the errata file and the ledger merge.
+- **Prose claim pass** *(chapter 4 of Microbiology, September 6, 2026)*.
+  The key, transcription, and figure readings above prove the page says
+  what the module says; none of them asks whether the module is right.
+  Microbiology's chapters 1–3 shipped with fourteen errata, every one a
+  typo, a garbled alt, or a table summary — because nobody was asked to
+  read the prose as a scientist. Chapter 4's author did, and found three
+  substantive errors the module states as fact (nitrogen fixation
+  "to nitrites", cyanophycin "a photosynthetic pigment", a genus "formerly"
+  a misspelling of a different genus; errata 367–368). So the checker's
+  brief now carries a fourth reading, and it is required, not optional:
+  - **What is read.** Every quantitative or mechanistic claim in the
+    section prose, summary, key-term definitions, and figure captions — a
+    product, a reactant, a number with a unit, a mechanism, a taxonomic
+    placement, a "formerly"/"also called" — not style, not emphasis.
+  - **Evidence, in order.** First the rest of the same book (a claim one
+    section makes that another section contradicts is a defect on the
+    module's own terms; cite both element ids). Then, only if the book is
+    silent, ONE citable primary or standard reference (a journal article
+    with a DOI, LPSN for nomenclature, a named reference text with an
+    edition). General knowledge, a training-memory "I believe", or a
+    web summary is not evidence and does not overrule the module.
+  - **What happens.** In-book contradiction or a citation → correct the
+    claim on the page with a visible source note, a
+    `reconciliation-decisions.json` entry, a footer `Changes:` sentence,
+    and an erratum quoting the passage and the evidence — the same
+    handling as a corrected key. A suspicion with no evidence either way
+    → ship as printed and list it under "Reviewed and *not* errata" with
+    the reason, so the next reader does not re-investigate it. A claim
+    that is loose but defensible on the module's own terms → as printed,
+    same list. Distractors are claims too: a distractor that is true — by
+    the module, the book, or a citation — is a double-keyed item (see the
+    text-mode distractor rule); replace it, disclose it, log it.
+  - **Where the retroactive sweep stands.** `docs/source/claim-pass-ledger.md`
+    lists every chapter of every life-sciences book with its pass status,
+    date, and errata; update it when a chapter lands.
+  - **Who.** The chapter's independent checker, on every section, before
+    the orchestrator's solve pass; the parent verifies every flagged
+    claim against the cited evidence before editing. A checker that
+    reports "no claim findings" must say which claims it checked and
+    against what, not just that it found nothing.
 - **External links.** `npm run check:external-links` (report-only, needs
   the network; `--only-openstax` restricts it to the `openstax.org/l/`
   redirects, `--json out.json` keeps the table) follows every external URL
@@ -739,5 +779,6 @@ its cost.
 - [ ] every feature box a callout with its bold name; every Link to Learning URL kept
 - [ ] `## Summary` and `## Key terms` transcribed in full, in source order
 - [ ] Practice: every group has an auto-graded item; every source exercise set represented; key-term recall items lint-clean; every comparison table has its `sortbins`; every unkeyed question that ONE module artifact fixes is graded, and every pre-existing hint on the page read against every new key
+- [ ] prose claim pass run by the checker on every section; every corrected claim carries a source note, a decisions entry, a footer sentence, and an erratum; every dismissed suspicion is in "Reviewed and *not* errata"
 - [ ] footer: CC BY-NC-SA 4.0, deep link, full `Changes:` clause
 - [ ] `npm run verify-section`, `npm test`, ledger verdicts merged, `node tools/source/openstax-source.mjs build-map` rerun and the map committed
