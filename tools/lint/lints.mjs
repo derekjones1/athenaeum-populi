@@ -1313,7 +1313,7 @@ export function lintHugo(src, filename = '', options = {}) {
   // all, which is why `x²` and `x⁶` are already written that way throughout the
   // figures. Writing `f^{-1}(x)` there prints those five characters verbatim.
   // The other legitimate home of the character is an ion charge in chemistry
-  // prose — `Cl⁻`, `HCO₃⁻`, `COO⁻`, `SO₄²⁻` — which the biology playbook
+  // prose — `Cl⁻`, `HCO₃⁻`, `COO⁻`, `SO₄²⁻` — which the life-sciences playbook
   // prescribes (formulas are Unicode, never `$…$`). A charge is a TRAILING
   // sign: it follows a letter, a subscript digit, a closing paren, or a
   // superscript digit and is not itself followed by a superscript digit. An

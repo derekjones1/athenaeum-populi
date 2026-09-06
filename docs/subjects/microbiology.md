@@ -2,11 +2,13 @@
 
 The subject-specific half of the authoring rules for OpenStax
 **Microbiology**. `docs/authoring-playbook.md` is the shared core and
-governs every book; `docs/subjects/biology.md` is the life-sciences
+governs every book; `docs/subjects/life-sciences.md` is the life-sciences
 baseline this book inherits — its media pipeline, image-accessibility
-policy, notation, `textin`/`selfcheck`/`sortbins` rules, reading-pass
-verdicts, and the three-reading answer discipline all apply here
-unchanged unless a rule below says otherwise. Read all three before
+policy, notation, `textin`/`selfcheck`/`sortbins` rules, the answer-form
+rules for unkeyed questions, reading-pass verdicts, and the three-reading
+answer discipline all apply here unchanged unless a rule below says
+otherwise (`docs/subjects/biology.md` is Biology 2e's own delta file and
+is not required reading here). Read all three before
 authoring a microbiology section. This document was written from the
 September 5, 2026 scan of the pinned source and revised the same day by the
 **pilot: chapter 1, *An Invisible World*, three sections, 57 interactive
@@ -86,13 +88,14 @@ absent once the lock says `complete`), `tools/source/openstax-source.test.mjs`
 `docs/source/openstax-source-workflow.md` all name the status and the
 mapped-section count.
 Chapter close-out pins the mapped-section count in the same six places the
-biology playbook lists.
+life-sciences playbook lists.
 
 ## What is different from Biology 2e
 
 The scan compared the two books' CNXML element by element. Five things
 differ enough to need their own rule; everything not listed here follows
-`docs/subjects/biology.md`.
+`docs/subjects/life-sciences.md` (the baseline Biology 2e was written
+against, so "biology's rule" below means the baseline's).
 
 ### 1. Terms and the `## Key terms` block
 
@@ -245,7 +248,7 @@ answer is allowed only under these conditions**, all of them:
 
 **Which unkeyed questions are graded anyway** *(retrofit, Sep 6 2026;
 this replaces the pilot's "never key a question the source does not key")*.
-Biology's "Unkeyed source questions: graded when the module fixes the
+The life-sciences playbook's "Unkeyed source questions: graded when the module fixes the
 answer" rule is the life-sciences rule and this book is where it bites:
 an unkeyed Short Answer, Critical Thinking, or Check Your Understanding
 question becomes a `multiplechoice`, `textin`, or `sortbins` when ONE
@@ -258,7 +261,7 @@ from tables that had none) — taking the book from 54% to 26% self-check
 by item count, the question count unchanged except for the three table
 items and one merged pair of Check Your Understanding bullets; a new
 chapter applies the rule as it is authored, and its checker applies the
-"What the first retrofit's checkers caught" list in biology's playbook. The pilot's example
+"What the first retrofit's checkers caught" list in the life-sciences playbook. The pilot's example
 still holds in the other direction: §2.1's lettered Critical Thinking item
 ("which of the following has the lowest energy?") is exactly the
 "question offers its own alternatives" form — a `multiplechoice` over the
@@ -479,7 +482,7 @@ equation), plus:
   attribute cannot hold KaTeX. The superscript-minus lint exempted figure
   specs but not alt/longdesc until §2.1's electromagnetic-spectrum
   description needed six exponents and its author spelled them out as words;
-  the lint and the biology playbook now agree.
+  the lint and the life-sciences playbook now agree.
 - **Whitespace lost around a cross-reference is not a disclosed typo**
   *(chapter 2)*. §2.1's CNXML reads `(<link …/>).The lowest frequency`, and
   the print book reproduces the missing space. The page rewrites that
@@ -711,7 +714,7 @@ lets the parent check an author's "the module has no X" claim in seconds.
 checker finding against the image or the raw CNXML before acting on it — a
 checker finding is a hypothesis — log the errata, and run the gates.
 
-## Done checklist (in addition to the core and biology checklists)
+## Done checklist (in addition to the core and life-sciences checklists)
 
 - [ ] `## Key terms` derived from the module's defined terms in body order (distinct terms, one bullet each), definitions from the Glossary appendix, sentence-derived ones counted in the footer
 - [ ] every unkeyed prose question either graded from ONE named module sentence, table, or figure (ledger note quotes it; the footer counts them) or a `selfcheck` whose model answer and rubric trace to sentences of the same module (the footer counts those too)

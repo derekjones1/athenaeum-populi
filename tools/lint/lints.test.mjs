@@ -2230,7 +2230,7 @@ test('a superscript exponent is math noise in prose and the only form a figure h
   assert.deepEqual(
     minus('Bicarbonate ions (HCO₃⁻) bind hydrogen ions (H⁺); chloride is Cl⁻, sulfate is SO₄²⁻, and the carboxyl group ionizes to COO⁻.\n'),
     [],
-    'a trailing ion charge in chemistry prose is the biology playbook\'s own notation',
+    'a trailing ion charge in chemistry prose is the life-sciences playbook\'s own notation',
   );
   assert.deepEqual(
     minus(APFIG('graph', '{"ariaLabel":"A curve and its inverse.",'

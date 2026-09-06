@@ -6,8 +6,9 @@ stack rules, the source-fidelity and provenance requirements, the command
 list, and the do-not-commit-unless-asked etiquette.
 
 For content work read `docs/authoring-playbook.md` — the subject-neutral
-core — plus the subject playbook under `docs/subjects/` (`math.md`, `biology.md`,
-or `microbiology.md`) for the book you are authoring; for cumulative assessments
+core — plus the subject playbook under `docs/subjects/` (`math.md`, or
+`life-sciences.md` plus the book's `biology.md` / `microbiology.md`) for the
+book you are authoring; for cumulative assessments
 also read the subject's edition, `docs/knowledge-check-playbook-math.md` or
 `docs/knowledge-check-playbook-life-sciences.md`; for the OpenStax math books
 follow `docs/source/openstax-source-workflow.md` and treat the pinned CNXML

@@ -16,11 +16,14 @@ source-first, component, and verification rules are subject-neutral. Each
 subject has its own playbook under `docs/subjects/` — currently
 [`math.md`](subjects/math.md) for the four OpenStax math books (Prealgebra
 2e, Elementary Algebra 2e, Intermediate Algebra 2e, and Precalculus 2e) and
-[`biology.md`](subjects/biology.md) for Biology 2e, and
-[`microbiology.md`](subjects/microbiology.md) for OpenStax Microbiology,
-which inherits the biology rules and records where that book differs. A
-subject playbook adds notation, media, and exercise-type rules on top of
-this core, and wins where it differs. Read this core first, then the subject playbook for the book you
+[`life-sciences.md`](subjects/life-sciences.md) for every book on the
+life-health-sciences shelf, under which each book has a short delta file —
+[`biology.md`](subjects/biology.md) for Biology 2e and
+[`microbiology.md`](subjects/microbiology.md) for OpenStax Microbiology —
+recording its source, its CNXML-to-page mappings, and where it differs from
+the baseline. A subject playbook adds notation, media, and exercise-type
+rules on top of this core, and wins where it differs; a book file wins over
+its subject playbook. Read this core first, then the subject playbook for the book you
 are authoring.
 
 ## 0. Source-first workflow (required for AI agents)
@@ -219,7 +222,7 @@ The content lint enforces the descriptive bullet shape.
 ## 2. Writing patterns
 
 Notation, math, and table conventions are per subject: `docs/subjects/math.md`
-§2 for the math books, `docs/subjects/biology.md` "Notation" for Biology.
+§2 for the math books, `docs/subjects/life-sciences.md` "Notation" for the life sciences.
 
 **Footnotes.** A source `<footnote>` that is a citation becomes an inline
 parenthetical citation after the sentence it supports — author, title,
@@ -498,7 +501,7 @@ diagnostic: misplaced items return to the tray with a "N of M placed
 correctly" count. Which source tables qualify (the categories may run along
 either axis), when an unkeyed prose question converts into one, and how the
 source cross-check reads them are subject-specific; see
-`docs/subjects/biology.md`.
+`docs/subjects/life-sciences.md`.
 
 **Media figure (`mediafigure`)** — a vendored raster figure (photo,
 micrograph, diagram) with its alt text, caption, and optional extended
@@ -518,7 +521,7 @@ characters) and the inner content is the caption, credit line included. The
 math books' prohibition on every other file-backed image form (`![]()`,
 `<img>`, `{{< figure >}}`, CSS images) is unchanged; the vendoring pipeline,
 the image-accessibility policy, and every other detail of this component are
-subject-specific — for biology, see `docs/subjects/biology.md`.
+subject-specific — for the life sciences, see `docs/subjects/life-sciences.md`.
 
 ### The section-final `## Practice` block
 
@@ -547,9 +550,9 @@ Floors are per book. The defaults above — at least two interactive
 exercises per objective group, at least five per section — hold everywhere,
 and a book may publish a HIGHER floor in the lint's per-book table once its
 corpus already meets it (the retrofit lands first, then the rule, never a
-grandfathered warning). Biology's floor is three exercises per
-objective group and eight per section, landed with the practice retrofit;
-see `docs/subjects/biology.md`.
+grandfathered warning). The life-sciences floor is three exercises per
+objective group and eight per section, landed with Biology's practice
+retrofit; see `docs/subjects/life-sciences.md`.
 
 ```md
 ## Practice

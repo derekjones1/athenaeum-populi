@@ -189,10 +189,6 @@ test('the biology subject playbook states its lint-backed rules', () => {
   // subject playbook and the life-sciences edition must say so, and the
   // edition must state that it is exact rather than a similarity score.
   assert.match(biology, /no stem\s+duplicating a section Practice item \(lint-enforced/, 'the duplicate-stem lint');
-  // The each-thing-once rule is opt-in per book profile; the playbook must
-  // name the flag and say why the math books stay out.
-  assert.match(biology, /\*\*Each thing once\.\*\*/, 'the within-page distinct-items rule');
-  assert.match(biology, /`distinctItems` in the book's `practice` profile/, 'names the BOOK_RULES flag');
   assert.equal(BOOK_RULES['life-health-sciences/biology'].practice.distinctItems, true, 'biology is opted in');
   assert.notEqual(BOOK_RULES.default.practice.distinctItems, true, 'the default profile is not');
   const lifeSciences = read('docs/knowledge-check-playbook-life-sciences.md');
@@ -241,6 +237,38 @@ test('the life-sciences knowledge-check playbook documents its quota, unit place
   assert.match(lifeSciences, /may not duplicate a section Practice item/i);
   assert.match(lifeSciences, /at least one auto-graded item/);
   assert.match(lifeSciences, /===CHECKS===/);
+});
+
+test('the life-sciences subject playbook holds the shared rules the book files point at', () => {
+  // Split out of docs/subjects/biology.md on September 6, 2026: the
+  // notation, media, exercise-form, and verification rules every
+  // life-health-sciences book inherits live here; a book file records only
+  // its source and its deltas. The rules with lint surface must be stated
+  // in the shared file, not in one book's.
+  const lifeSciences = read('docs/subjects/life-sciences.md');
+  for (const book of ['life-health-sciences/biology', 'life-health-sciences/microbiology']) {
+    const floor = BOOK_RULES[book].practice;
+    const stated = lifeSciences.match(/floor is (\d+) exercises per objective group and (\d+) per section/);
+    assert.ok(stated, 'docs/subjects/life-sciences.md must state the practice floor in digits');
+    assert.equal(Number(stated[1]), floor.perObjective, `${book}: the per-objective floor matches BOOK_RULES`);
+    assert.equal(Number(stated[2]), floor.perSection, `${book}: the per-section floor matches BOOK_RULES`);
+    assert.equal(BOOK_RULES[book].practice.distinctItems, true, `${book} is opted in to distinctItems`);
+  }
+  // The each-thing-once rule is opt-in per book profile; the playbook must
+  // name the flag and say why the math books stay out.
+  assert.match(lifeSciences, /\*\*Each thing once\.\*\*/, 'the within-page distinct-items rule');
+  assert.match(lifeSciences, /`distinctItems` in the book's `practice` profile/, 'names the BOOK_RULES flag');
+  assert.match(lifeSciences, /data\/media\/<book>\.json/, 'the mediafigure manifest rule');
+  assert.match(lifeSciences, /\*\*Unkeyed source questions: graded when the module fixes the answer\*\*/, 'the unkeyed-question rule');
+  assert.match(lifeSciences, /\*\*Both table orientations qualify/, 'the comparison-table sortbins rule');
+  assert.match(lifeSciences, /===CHECKS===/, 'the selfcheck rubric rule');
+  assert.match(lifeSciences, /knowledge-check-playbook-life-sciences\.md/, 'the KC playbook pointer');
+  // Every book file and the core must point at the shared file, and no
+  // pointer may still name biology.md as the life-sciences baseline.
+  for (const name of ['docs/subjects/biology.md', 'docs/subjects/microbiology.md', 'docs/authoring-playbook.md', 'docs/knowledge-check-playbook-life-sciences.md', 'AGENTS.md', 'README.md', 'CLAUDE.md']) {
+    assert.match(read(name), /docs\/subjects\/life-sciences\.md|subjects\/life-sciences\.md|`life-sciences\.md`/, `${name} points at the life-sciences playbook`);
+  }
+  assert.doesNotMatch(read('docs/subjects/microbiology.md'), /biology\.md` is the life-sciences\s+baseline/, 'microbiology no longer inherits from biology.md');
 });
 
 test('the microbiology subject playbook states its lint-backed rules and its answer-key policy', () => {

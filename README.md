@@ -41,7 +41,8 @@ index at `public/pagefind/`.
 
 Follow [docs/authoring-playbook.md](docs/authoring-playbook.md) — the
 subject-neutral core — plus the subject playbook under
-[docs/subjects/](docs/subjects/) for the book (`math.md` or `biology.md`) for
+[docs/subjects/](docs/subjects/) for the book (`math.md`, or `life-sciences.md`
+plus the book's own `biology.md` / `microbiology.md`) for
 sections, and the subject's knowledge-check playbook —
 [docs/knowledge-check-playbook-math.md](docs/knowledge-check-playbook-math.md)
 or

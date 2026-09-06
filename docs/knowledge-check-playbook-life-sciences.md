@@ -4,9 +4,11 @@ A Knowledge Check is a cumulative, unit-level self-test — not a section. It is
 the one deliberate departure from section-page exercise patterns: **quizzes
 have no hints.**
 
-Read and follow `docs/authoring-playbook.md` and `docs/subjects/biology.md`
-first. The core's source-fidelity, component, verification, and handoff
-rules all apply here, and so do the biology playbook's component rules
+Read and follow `docs/authoring-playbook.md` and
+`docs/subjects/life-sciences.md` first, then the book's own delta file
+(`docs/subjects/biology.md`, `docs/subjects/microbiology.md`). The core's
+source-fidelity, component, verification, and handoff rules all apply
+here, and so do the life-sciences playbook's component rules
 (`textin` shape and accept lists, multiple-choice distractor discipline,
 `selfcheck` rubrics, `sortbins` construction, `mediafigure` manifest rule).
 
@@ -89,7 +91,7 @@ What is specific to a unit-level check:
 - **Author-written from the module.** Every item is built from the pinned
   CNXML module of the section it sits under, with **no new claim**:
   - a **summary** sentence, as a cloze `textin` or a select-the-term
-    `multiplechoice`, exactly as `docs/subjects/biology.md` "Summary items"
+    `multiplechoice`, exactly as `docs/subjects/life-sciences.md` "Summary items"
     prescribes;
   - a **glossary** definition, as a `textin` recall item (meaning as the
     prompt, term as the answer, one to four words, accept list of the
@@ -99,7 +101,7 @@ What is specific to a unit-level check:
     the same module — no "all of the above", no option that is also
     correct: read every distractor as a possible second key);
   - a **comparison table** with categorical columns, as a `sortbins`
-    (columns become bins, rows become items — the biology playbook's
+    (columns become bins, rows become items — the life-sciences playbook's
     construction rule);
   - an explanation the module gives, as a `selfcheck` whose model answer is
     made of the module's own sentences and whose `===CHECKS===` rubric
@@ -202,7 +204,7 @@ What is specific to a unit-level check:
   its pages, so ~200 new items on one page can move it: spread keyed
   positions as you write, and if the gate fails, reorder with a
   deterministic seeded shuffle and say so in `Changes:` — never hand-pick.
-- **Notation inside a stem, key, or option** follows `docs/subjects/biology.md`
+- **Notation inside a stem, key, or option** follows `docs/subjects/life-sciences.md`
   §Notation, plus one rule that section pages settled and the units 2–3 run
   hit again: a bare Greek letter outside math (α, β, γ) fails the lint's
   unicode-math rule unless it is a hyphenated nomenclature prefix

@@ -10,8 +10,9 @@ current build and deployment design. For the OpenStax math books — the three
 algebra books and Precalculus 2e, all four complete — also follow
 `docs/subjects/math.md` and `docs/source/openstax-source-workflow.md`.
 Biology 2e is pinned and `complete` (all 47 chapters, 208 sections, authored September 3, 2026); its
-subject-specific rules are in `docs/subjects/biology.md`, on top of the same
-source workflow. OpenStax Microbiology is pinned and `in-progress` (26
+subject-specific rules are in `docs/subjects/life-sciences.md` (the shelf's
+baseline) plus `docs/subjects/biology.md` (the book's delta), on top of the
+same source workflow. OpenStax Microbiology is pinned and `in-progress` (26
 chapters, 127 sections; chapters 1–2 authored September 5, 2026, chapter 1
 as the pilot, chapter 3 on September 6); its rules are in
 `docs/subjects/microbiology.md`, which also records how it differs from
@@ -49,7 +50,8 @@ item types).
   the same day and chapter 3 on September 6) and is reported as `3/26 chapters, 11/127 sections mapped`. Biology 2e's sections live under
   `content/life-health-sciences/biology` (each lock entry carries a
   `contentPath`, so a book need not live under `content/math`) and its
-  subject playbook (`docs/subjects/biology.md`) governs its authoring; all
+  subject playbooks (`docs/subjects/life-sciences.md` plus
+  `docs/subjects/biology.md`) govern its authoring; all
   eight of its unit Knowledge Checks are authored (September 4–5, 2026). A book still being
   written follows the scaffolded-chapter procedure in
   `docs/source/openstax-source-workflow.md`.

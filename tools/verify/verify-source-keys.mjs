@@ -32,7 +32,7 @@
  *                   reports 'unmatched', not 'unkeyed'.)
  *   multiplechoice  one matched to a source exercise that prints NO
  *                   solution is 'unkeyed' too: the life-sciences rule
- *                   (docs/subjects/biology.md, "Unkeyed source questions")
+ *                   (docs/subjects/life-sciences.md, "Unkeyed source questions")
  *                   lets an unkeyed prose question be graded when ONE
  *                   sentence, table, or lettered figure of the module fixes
  *                   its answer, and that reading is the ledger note plus
@@ -69,7 +69,7 @@
  * value verify-answers and the ledger already cover.
  *
  * A key the page changes ON PURPOSE (the module's own text contradicts the
- * source key; see docs/subjects/biology.md, "A source key that the module's
+ * source key; see docs/subjects/life-sciences.md, "A source key that the module's
  * own text contradicts") is listed in DISCLOSED_DEVIATIONS with its erratum
  * number. Every entry must still be exercised — a listed deviation the corpus
  * no longer carries is a stale allowlist and fails the run — and every
@@ -111,7 +111,7 @@ export const MATCH_FLOOR = 0.5;
 
 /** The share of a self-check model answer's tokens that must come from the
  * source solution. A half of a two-part solution scores 1; the light
- * reformattings the biology playbook allows score ≥ 0.8; a model answer that
+ * reformattings the life-sciences playbook allows score ≥ 0.8; a model answer that
  * brings its own claims falls well under. */
 export const MODEL_COVERAGE_FLOOR = 0.7;
 
@@ -615,7 +615,7 @@ function bestExercise(question, exercises, options = []) {
  *                                             Critical Thinking question the
  *                                             page grades from the module's
  *                                             own sentence, table, or figure
- *                                             (docs/subjects/biology.md, "Unkeyed
+ *                                             (docs/subjects/life-sciences.md, "Unkeyed
  *                                             source questions"); the ledger
  *                                             note and the blind solve are
  *                                             its readings, not this one
