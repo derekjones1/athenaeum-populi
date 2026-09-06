@@ -156,8 +156,10 @@ if (!statOrNull(root)?.isDirectory()) {
   process.exit(1);
 }
 
+// PORT=0 asks the kernel for a free port; the readiness line reports the
+// bound port so a caller (the test) can read it back instead of guessing.
 server.listen(port, host, () => {
-  console.log(`Serving public/ at http://${host}:${port}/`);
+  console.log(`Serving public/ at http://${host}:${server.address().port}/`);
 });
 
 for (const signal of ['SIGINT', 'SIGTERM']) {
