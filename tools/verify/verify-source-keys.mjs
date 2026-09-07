@@ -125,6 +125,27 @@ export const MODEL_COVERAGE_FLOOR = 0.7;
  */
 export const DISCLOSED_DEVIATIONS = Object.freeze([
   {
+    page: 'content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/04-digestive-system-regulation.md',
+    exercise: 'fs-idp144627040',
+    kind: 'options',
+    erratum: 442,
+    reason: 'the source distractor "gastric inhibitory peptide" is true by the module\'s own sentence that it "also inhibits acid production", so the item was double-keyed; the page replaces that option with "secretin" (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/30-plant-form-and-physiology/04-leaves.md',
+    exercise: 'fs-idp28882000',
+    kind: 'options',
+    erratum: 437,
+    reason: 'the source distractor "epidermis" is true by the module\'s own sentence "Guard cells are the only epidermal cells to contain chloroplasts", so the item was double-keyed; the page replaces that option with "endodermis" (key unchanged)',
+  },
+  {
+    page: 'content/life-health-sciences/biology/08-photosynthesis/02-the-light-dependent-reactions-of-photosynthesis.md',
+    exercise: 'fs-idm133225312',
+    kind: 'key',
+    erratum: 393,
+    reason: 'the source keys "2" photons to fully reduce one NADP⁺ to NADPH, following a single electron through the two photosystems; NADP⁺ takes up two electrons (m66465 defines the NAD(P)⁺/NAD(P)H couple as two electrons and a proton) and each needs one photon per photosystem, so the page keys "4"',
+  },
+  {
     page: 'content/life-health-sciences/microbiology/04-prokaryotic-diversity/06-archaea.md',
     exercise: 'fs-id1172097276615',
     kind: 'options',

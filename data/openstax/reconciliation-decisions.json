@@ -260,6 +260,682 @@
    "status": "correct-local-source-defect",
    "errataEntry": 380,
    "rationale": "The source says Golgi observed the stacked membranes in Plasmodium cells. Golgi's 1898 communication described the internal reticular apparatus in neurons of the cerebellum and spinal ganglia (Bentivoglio et al., Frontiers in Neuroanatomy 13 [2019], doi:10.3389/fnana.2019.00003); his malaria work was separate. The page says nerve cells with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026. ALSO (erratum 381): The source dates de Duve's discovery of lysosomes to the 1960s. The primary paper is de Duve et al., Biochemical Journal 60 (1955): 604-617; the 1960s work was peroxisomes (Bonetta, Journal of Cell Biology 169 [2005]: 705, doi:10.1083/jcb1695fta2). The page says 1955 with a visible Source note and footer disclosure. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/02-the-chemical-foundation-of-life/02-water.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66434",
+   "sourceElementIds": [
+    "fs-idm194704288"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 382,
+   "rationale": "Ice being less dense than liquid water is called a phenomenon 'we do not see when other liquids solidify'; gallium, bismuth, silicon, germanium, and antimony also expand on solidifying. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/02-the-chemical-foundation-of-life/03-carbon.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66436",
+   "sourceElementIds": [
+    "fs-idp65728176",
+    "fs-idp57674448"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 383,
+   "rationale": "The glossary defines an aliphatic hydrocarbon as a linear chain while the body classes single-bonded rings (cyclopentane, cyclohexane) as aliphatic; the key term follows the body. ALSO (erratum 384): beta-carotene is offered as a hydrocarbon with an aromatic portion, but its end rings are cyclohexene rings (IUPAC 2,6,6-trimethylcyclohex-1-ene) and the page omits the example with a Source note. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/03-biological-macromolecules/04-proteins.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66442",
+   "sourceElementIds": [
+    "fs-id1506615",
+    "fs-id2216741",
+    "fig-ch03_04_05"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 385,
+   "rationale": "Cysteine is listed as an essential amino acid; this book's own table (m66616, tab-ch34_02_04) makes cysteine non-essential and lysine essential, and the page prints lysine. ALSO (erratum 386): 'a difference in the 44th position' for human versus yeast cytochrome c should be differences at 44 positions (Kimball, Biology, Taxonomy). ALSO (erratum 387): the hemoglobin beta-chain is 146 mature residues (UniProt P68871), not 147. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/04-cell-structure/05-the-cytoskeleton.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66454",
+   "sourceElementIds": [
+    "fs-idm40512368",
+    "fs-idm71000713"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 388,
+   "rationale": "The critical-thinking solution calls the gram-negative lipopolysaccharide layer a capsule; this book's m66545 describes it as the outer envelope/membrane and defines the capsule as a separate optional structure. The page's self-check model answer says outer membrane. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/05-structure-and-function-of-plasma-membranes/04-bulk-transport.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66376",
+   "sourceElementIds": [
+    "fs-id1760012"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 389,
+   "rationale": "The glossary says pinocytosis imports macromolecules; the module's own text ('cell drinking', water) and its transport table (small molecules, liquids/water) say otherwise. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/08-photosynthesis/01-overview-of-photosynthesis.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66473",
+   "sourceElementIds": [
+    "fs-idp15776"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 391,
+   "rationale": "The Carboniferous is dated 350 to 200 million years ago; the period ran about 359 to 299 million years ago (ICS chart), and the page prints 350 to 300. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/08-photosynthesis/02-the-light-dependent-reactions-of-photosynthesis.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66474",
+   "sourceElementIds": [
+    "fs-idm101449600",
+    "fs-idm133225312"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 392,
+   "rationale": "Water splitting is said to release two electrons and two hydrogen atoms; the module's own photosystem II description names protons in the lumen and the page says protons. ALSO (erratum 393): the photons-per-NADPH review question is keyed 2; the reduction takes two electrons (m66465 fs-id1405882 defines NAD(P)H as accepting two electrons and a proton) and one photon per photosystem per electron, so the page keys 4, disclosed in DISCLOSED_DEVIATIONS (kind key). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/08-photosynthesis/03-using-light-energy-to-make-organic-molecules.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66475",
+   "sourceElementIds": [
+    "fs-idm104644592"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 394,
+   "rationale": "The Evolution Connection says photosystems make ATP and NADH; the module's own opening paragraph and the rest of the chapter say NADPH. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/09-cell-communication/01-signaling-molecules-and-cellular-receptors.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66378",
+   "sourceElementIds": [
+    "fs-id2336863"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 395,
+   "rationale": "GTP is expanded as guanosine 3-phosphate; it is guanosine triphosphate (PubChem CID 135398633). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/10-cell-reproduction/02-the-cell-cycle.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66478",
+   "sourceElementIds": [
+    "fs-id2135035"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 396,
+   "rationale": "The G1 glossary entry says growth happens 'during mitosis'; the module's own text places G1 in interphase before the mitotic phase. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/11-meiosis-and-sexual-reproduction/01-the-process-of-meiosis.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66483",
+   "sourceElementIds": [
+    "fs-id2054667"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 397,
+   "rationale": "The Evolution Connection footnote misquotes Ramesh, Malik, and Logsdon (2005) as 'A Phylogenetic Inventory of Meiotic Genes'; the published title is 'A Phylogenomic Inventory…' (PubMed 15668177). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/13-modern-understandings-of-inheritance/01-chromosomal-theory-and-genetic-linkage.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66491",
+   "sourceElementIds": [
+    "fs-id2021443"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 398,
+   "rationale": "Mendel is said to have begun studying heredity in 1843; this book's own m66486 dates the start of his research to 1856, and the page follows it. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/13-modern-understandings-of-inheritance/02-chromosomal-basis-of-inherited-disorders.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66494",
+   "sourceElementIds": [
+    "fs-id1807698"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 399,
+   "rationale": "An unfertilized egg developing into offspring is called haplodiploidy; that is the hymenopteran sex-determination system, and the phenomenon described is parthenogenesis (this book's m66571; Britannica). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/14-dna-structure-and-function/02-dna-structure-and-sequencing.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66387",
+   "sourceElementIds": [
+    "fs-id2962722",
+    "fs-id2317138"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 400,
+   "rationale": "The stretched-out E. coli chromosome is given as 1.1 mm; at the module's own 0.34 nm per base pair, 4.6 million base pairs are about 1.6 mm. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/14-dna-structure-and-function/05-dna-replication-in-eukaryotes.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66391",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 401,
+   "rationale": "RNase H is called 'AKA flap endonuclease'; they are distinct primer-removal enzymes (RNase H2 and FEN1), and the page names both; the endonuclease recall item's hint was reworded to match. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/15-genes-and-proteins/03-eukaryotic-transcription.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66499",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 402,
+   "rationale": "Alpha-amanitin is attributed to the fly agaric (Amanita muscaria), whose toxins are ibotenic acid and muscimol; amatoxins come from the death cap, Amanita phalloides (Wieland 1986). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/15-genes-and-proteins/04-rna-processing-in-eukaryotes.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66500",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 403,
+   "rationale": "A typical E. coli mRNA is said to last no more than five seconds; bacterial mRNA half-lives average a few minutes (Rauhut and Klug, FEMS Microbiol. Rev. 23:353). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/16-gene-expression/06-eukaryotic-translational-and-post-translational-gene-regulation.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66508",
+   "sourceElementIds": [
+    "fs-id2956204"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 404,
+   "rationale": "The glossary names GDP 'guanine diphosphate'; it is guanosine diphosphate, as the same glossary's GTP entry and m66378/m66628 say. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/16-gene-expression/07-cancer-and-gene-regulation.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66509",
+   "sourceElementIds": [
+    "fs-id1461234"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 405,
+   "rationale": "'Burkett's Lymphoma' is Burkitt lymphoma, after Denis Burkitt (Sun et al., PNAS 100:8164). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/17-biotechnology-and-genomics/01-biotechnology.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66511",
+   "sourceElementIds": [
+    "fs-id843472"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 406,
+   "rationale": "Dolly is said to have lived seven years; born July 5, 1996, euthanized February 14, 2003, she lived six. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/17-biotechnology-and-genomics/03-whole-genome-sequencing.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66513",
+   "sourceElementIds": [
+    "fs-id1770472"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 407,
+   "rationale": "The phiX174 genome is given as 5368 base pairs (it is 5,386; RefSeq NC_001422.1). ALSO (erratum 408): Venter's Haemophilus influenzae genome is dated to the 1980s; it was published in 1995 (Fleischmann et al., Science 269:496). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/18-evolution-and-the-origin-of-species/01-understanding-evolution.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66518",
+   "sourceElementIds": [
+    "fs-idm13442992"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 409,
+   "rationale": "The Grants' finch study is dated 'every year since 1976'; it began in 1973 (Grant and Grant, Science 296:707). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/19-the-evolution-of-populations/02-population-genetics.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66524",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 410,
+   "rationale": "Fanconi anemia is said to cause 'blood marrow' abnormalities; it is a bone marrow failure syndrome, and the book says bone marrow elsewhere. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/21-viruses/02-virus-infections-and-hosts.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66535",
+   "sourceElementIds": [
+    "fs-idm16378990"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 411,
+   "rationale": "'Reverse transcription never occurs in uninfected host cells' is contradicted by this book's own telomerase description (m66391); the page scopes the claim to the viral enzyme. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/21-viruses/01-viral-evolution-morphology-and-classification.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66534",
+   "sourceElementIds": [
+    "fs-idp53608960"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 412,
+   "rationale": "'Adolph Meyer' is Adolf Mayer, author of the 1886 tobacco-mosaic transmission work. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/21-viruses/03-prevention-and-treatment-of-viral-infections.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66537",
+   "sourceElementIds": [
+    "fs-idp55980176"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 413,
+   "rationale": "'George Hitchens' is George H. Hitchings, Elion's 1988 Nobel co-laureate. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/01-prokaryotic-diversity.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66542",
+   "sourceElementIds": [
+    "fs-idm56401744"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 414,
+   "rationale": "Prokaryotic cells 'outnumber human body cells by about ten to one' is superseded by Sender, Fuchs, and Milo (PLOS Biology 2016), who count a ratio near 1:1; the page says at least as numerous. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/22-prokaryotes-bacteria-and-archaea/04-bacterial-diseases-in-humans.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66548",
+   "sourceElementIds": [
+    "fs-idm81635040",
+    "fs-idp95005568"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 415,
+   "rationale": "The Lyme, Connecticut outbreak is dated 1995; the cases were investigated in 1975 (Steere et al. 1977). ALSO (erratum 416): the 2011 German E. coli outbreak 'killed 32 people'; the Robert Koch Institute's final count is 53 deaths among 3,842 cases. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/24-fungi/05-importance-of-fungi-in-human-life.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66563",
+   "sourceElementIds": [
+    "fs-idp127215088"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 417,
+   "rationale": "Pasteur's brewer's-yeast work is dated 'the late 1850s'; the studies and the 1873 patent date to the 1870s. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/24-fungi/02-classifications-of-fungi.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66559",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 418,
+   "rationale": "The mycorrhiza review question's stem is true of two distractors by §24.3 (ectomycorrhizal Ascomycota and Basidiomycota); the page rewords the stem to the module's own 'all of which are involved in close associations with the roots of trees', options and key unchanged. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/25-seedless-plants/01-early-plant-life.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66566",
+   "sourceElementIds": [
+    "fs-idm66561584"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 419,
+   "rationale": "The glossary calls charophyte 'other term for green algae'; the module's own opening names chlorophytes and charophytes as the two green-algal groups. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/26-seed-plants/01-evolution-of-seed-plants.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66572",
+   "sourceElementIds": [
+    "fs-idp49354208",
+    "fs-idp138838992"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 420,
+   "rationale": "Progymnosperms are called 'the first naked seed plants' in a sentence that says they released spores like ferns; the page calls them forerunners of the seed plants. ALSO (erratum 422): the glossary equates ovule with female gametophyte, against m66574's anatomy; the page defines the ovule as the structure in which the gametophyte develops. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/26-seed-plants/03-angiosperms.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66574",
+   "sourceElementIds": [
+    "fs-idm91968544"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 421,
+   "rationale": "'The corolla in lilies and tulips consists of three sepals and three petals' contradicts the paragraph's own definition of corolla; the page says perianth. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/26-seed-plants/02-gymnosperms.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66573",
+   "sourceElementIds": [
+    "fs-idp140319568",
+    "fs-idp21939120"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 423,
+   "rationale": "The glossary calls the megasporocyte and microsporocyte spores; the module's own text has them undergo meiosis to produce the spores, and the page's key terms say so. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/27-introduction-to-animal-diversity/01-features-of-the-animal-kingdom.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66577",
+   "sourceElementIds": [
+    "fs-idm76248592"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 424,
+   "rationale": "Placozoa are called 'tiny parasitic creatures'; they are free-living (Animal Diversity Web). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/28-invertebrates/04-superphylum-lophotrochozoa-mollusks-and-annelids.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66397",
+   "sourceElementIds": [
+    "fs-idm23198080",
+    "fs-idm6067008"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 425,
+   "rationale": "The summary says seven molluscan classes; the body names eight. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/28-invertebrates/05-superphylum-ecdysozoa-nematodes-and-tardigrades.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66398",
+   "sourceElementIds": [
+    "fig-ch28_04_03"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 426,
+   "rationale": "The guinea worm 'infects about 3.5 million people annually' is the 1986 baseline; the caption now dates it and notes the near-eradication. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/28-invertebrates/06-superphylum-ecdysozoa-arthropods.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66399",
+   "sourceElementIds": [
+    "fs-idp252469232"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 427,
+   "rationale": "The end-Permian extinction is dated 240 million years ago; it is about 252 (ICS chart). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/29-vertebrates/06-mammals.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66593",
+   "sourceElementIds": [
+    "fs-idp60789520",
+    "fs-idp66865056"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 428,
+   "rationale": "Mammals 'about 5,200 species' while placentals alone are 'about 6,000'; the page says more than 6,000 (Mammal Diversity Database). ALSO (erratum 431): the glossary restricts mammary glands to females against the body's statement that both sexes of monotremes and eutherians have them. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/29-vertebrates/04-reptiles.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66591",
+   "sourceElementIds": [
+    "fs-idp80739120"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 429,
+   "rationale": "Ichthyosaurs are listed among the archosaurs while the module's own figure places them with lepidosaurs; they belong to neither (Motani 2005), and the page drops them from the list. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/29-vertebrates/05-birds.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66592",
+   "sourceElementIds": [
+    "fs-idm17832487"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 430,
+   "rationale": "The summary says counter-current gas exchange; the body describes cross-current, and the page's summary says cross-current. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/29-vertebrates/03-amphibians.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66590",
+   "sourceElementIds": [
+    "fs-idm204156752"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 432,
+   "rationale": "'All salamanders except one, the fire salamander, are oviparous' is false: alpine salamanders and Lyciasalamandra are viviparous (Buckley, eLS 2012). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/30-plant-form-and-physiology/05-transport-of-water-and-solutes-in-plants.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66600",
+   "sourceElementIds": [
+    "fs-idm113764608",
+    "fs-idm89093776"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 433,
+   "rationale": "1.5 MPa is converted at 140 psi per MPa to 210 psi; one MPa is 145.04 psi, so about 218. ALSO (erratum 434): the gravitational potential is given as -0.1 MPa per meter and 10 MPa for the tallest trees; rho g h is about 0.01 MPa per meter, about 1 MPa. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/30-plant-form-and-physiology/06-plant-sensory-systems-and-responses.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66601",
+   "sourceElementIds": [
+    "fs-idp6903008",
+    "fs-idp52556160"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 435,
+   "rationale": "Darwin's 1880 title is printed 'The Power of Movements in Plants'; it is 'Movement'. ALSO (erratum 436): 'glycol cyanide' in cassava is linamarin (McMahon, White, and Sayre 1995). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/30-plant-form-and-physiology/04-leaves.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66599",
+   "sourceElementIds": [
+    "fs-idp28882000",
+    "fs-idp31909760"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 437,
+   "rationale": "The chloroplast review question's 'epidermis' distractor is true by the module's own guard-cell sentence; the page replaces it with 'endodermis', disclosed in DISCLOSED_DEVIATIONS (kind options). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/32-plant-reproduction/03-asexual-reproduction.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66609",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 438,
+   "rationale": "Garlic is given as a corm; it forms a bulb by this book's §30.2 and the module's own figure alt, and the page drops it from the corm sentence. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/32-plant-reproduction/02-pollination-and-fertilization.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66608",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 439,
+   "rationale": "Teosinte is said to have been first cultivated by 'the ancient Mayans'; maize domestication is Balsas valley, about 8,700 years ago (Ranere et al. 2009). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/01-digestive-systems.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66615",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 440,
+   "rationale": "The appendix 'has an insignificant role in immunity'; this book's §42.2 names it a mucosal immune induction site, and the page says a minor role. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/02-nutrition-and-energy-production.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66616",
+   "sourceElementIds": [
+    "tab-ch34_02_05"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 441,
+   "rationale": "The vitamin table credits vitamin D with blood clotting, the function its own vitamin K row assigns to vitamin K; the page drops the clause. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/34-animal-nutrition-and-the-digestive-system/04-digestive-system-regulation.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66618",
+   "sourceElementIds": [
+    "fs-idp144627040"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 442,
+   "rationale": "The acid-secretion review question's 'gastric inhibitory peptide' distractor is true by the module's own text; the page replaces it with secretin, disclosed in DISCLOSED_DEVIATIONS (kind options). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/35-the-nervous-system/02-how-neurons-communicate.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66621",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 443,
+   "rationale": "An IPSP is called a hyperpolarization of the presynaptic membrane; the term, the EPSP sentence, and the glossary say postsynaptic. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/35-the-nervous-system/04-the-peripheral-nervous-system.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66623",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 444,
+   "rationale": "The olfactory nerve is said to carry smell to the brainstem; this book's §36.3 ends it in the olfactory bulb, and the page says to the brain. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/36-sensory-systems/02-somatosensation.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66404",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 445,
+   "rationale": "The muscle spindle glossary says the spindle shortens the muscle; it senses stretch and drives the reflex that does (Purves, Neuroscience 2nd ed.). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/40-the-circulatory-system/02-components-of-the-blood.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66651",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 446,
+   "rationale": "Camels are said to have nucleated red blood cells; camelid erythrocytes are anucleate ellipsoids (Schalm's Veterinary Hematology). ALSO (erratum 447): white blood cells are given as 30 µm; they are about 12–20 µm (Junqueira's Basic Histology). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/40-the-circulatory-system/04-blood-flow-and-blood-pressure-regulation.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66654",
+   "sourceElementIds": [
+    "fig-ch40_04_02"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 448,
+   "rationale": "The caption says over 1,500 liters of the daily cardiac output is filtered at the capillaries; estimates are 8–30 liters a day, and the page says roughly 20. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/02-the-kidneys-and-osmoregulatory-organs.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66658",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 449,
+   "rationale": "The juxtaglomerular complex is said to secrete erythropoietin; it is made by peritubular interstitial fibroblasts (Bachmann et al. 1993). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/41-osmotic-regulation-and-excretion/01-osmoregulation-and-osmotic-balance.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66656",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 450,
+   "rationale": "The milliosmole is defined as milliequivalents per kilogram; osmoles count particles, not charge. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/42-the-immune-system/03-antibodies.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66665",
+   "sourceElementIds": [
+    "fs-idm36621536"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 451,
+   "rationale": "Light-chain VJ recombination is credited with over a million combinations; 40 x 5 is 200, and the million comes from pairing with the heavy chain (Janeway, Immunobiology 5th ed.). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/43-animal-reproduction-and-development/04-hormonal-control-of-human-reproduction.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66674",
+   "sourceElementIds": [
+    "fs-idp108162320",
+    "fs-idm110164992"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 452,
+   "rationale": "The morula is given 30-60 cells; it is the 16- to 32-cell stage (Langman's Medical Embryology). ALSO (erratum 453): the LH glossary entry credits LH with lactation, which this book assigns to prolactin; the page drops the clause. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/43-animal-reproduction-and-development/01-reproduction-methods.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66668",
+   "sourceElementIds": [
+    "fs-idm106900496"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 454,
+   "rationale": "'Blacktop shark' is the blacktip shark, Carcharhinus limbatus (Chapman et al. 2008). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/44-ecology-and-the-biosphere/05-climate-and-the-effects-of-global-climate-change.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66419",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 455,
+   "rationale": "1950 atmospheric CO2 is given as about 280 ppm, the pre-industrial value; the Law Dome record gives about 310 ppm (MacFarling Meure et al. 2006). The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/45-population-and-community-ecology/07-behavioral-biology-proximate-and-ultimate-causes-of-behavior.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66699",
+   "sourceElementIds": [
+    "fs-idp194005680"
+   ],
+   "status": "correct-local-source-defect",
+   "errataEntry": 456,
+   "rationale": "The kin-selection glossary says 'sacrificing one's own life'; the module's own text defines it as lowering individual fitness, and the page's key term says so. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
+  },
+  {
+   "localPath": "content/life-health-sciences/biology/46-ecosystems/01-ecology-of-ecosystems.md",
+   "bundle": "biology-bundle",
+   "moduleId": "m66701",
+   "sourceElementIds": [],
+   "status": "correct-local-source-defect",
+   "errataEntry": 457,
+   "rationale": "Odum's Silver Springs study is dated the 1940s; the module's own cited paper (Odum 1957) reports early-1950s fieldwork. The local page corrects the claim with a visible Source note and discloses the change in its footer. Found by the prose claim pass, September 6, 2026."
   }
  ],
  "upstreamDriftDecisions": [

@@ -130,11 +130,22 @@ test('every mediafigure image on every page renders without a broken img or cons
     const count = await page.locator('.ap-mediafigure img').count();
     expect(count, `${route} matched discovery but has no mediafigure img`).toBeGreaterThan(0);
 
-    // Lazy-loaded images only fetch near the viewport, so bring each into
-    // view from inside the page (one evaluation, no per-image round trips)
-    // and then wait for all of them to complete.
+    // The shortcode ships every image `loading="lazy"`, and Chrome only
+    // starts a lazy image once its intersection check (run after the
+    // frame's rAF callbacks) finds it within ~1250px of the viewport. A
+    // scroll-then-rAF walk therefore observes each scroll position only
+    // after the NEXT image has already been scrolled to, so an image that
+    // sits below the initial threshold and more than the margin away from
+    // its successor is never started at all — Microbiology §4.6's first
+    // figure did exactly that under CI's Linux font metrics (taller text,
+    // wider gaps) while passing on macOS by a couple of hundred pixels.
+    // This gate is about the vendored file and its manifest path, not the
+    // lazy-load heuristic, so switch each image to eager (which resumes a
+    // deferred load per the HTML spec) and still bring it into view so
+    // layout-dependent errors on the page surface too.
     await page.evaluate(async () => {
       for (const img of document.querySelectorAll('.ap-mediafigure img')) {
+        img.loading = 'eager';
         img.scrollIntoView({ block: 'center' });
         await new Promise((resolve) => requestAnimationFrame(resolve));
       }

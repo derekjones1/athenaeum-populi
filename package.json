@@ -27,7 +27,7 @@
     "validate": "node tools/lint/validate-content.mjs content",
     "verify:content": "node tools/verify/verify-all.mjs content",
     "verify:answers": "node tools/verify/verify-answers.mjs content --min-verified 3160",
-    "verify:source-keys": "node tools/verify/verify-source-keys.mjs content --min-confirmed 3837",
+    "verify:source-keys": "node tools/verify/verify-source-keys.mjs content --min-confirmed 3833",
     "verify:fillin-residual": "node tools/verify/solve-check.mjs residual content/math",
     "verify:replay": "node tools/verify/verify-replay.mjs content --min-replayed 9619",
     "verify:ledger": "node tools/verify/answer-ledger.mjs check content --min-exercises 12083 --max-unverifiable 0 --require-solved content/life-health-sciences",

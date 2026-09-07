@@ -4707,6 +4707,14 @@
     "result": "agrees"
    }
   },
+  "12295ae4e9ded94a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "122e250f02052415": {
    "verdict": "ok",
    "note": "Glossary recall: cholecystokinin, accept CCK (the abbreviation the section itself uses); referent matches keyed term.",
@@ -16088,6 +16096,14 @@
     "result": "agrees"
    }
   },
+  "4103575b83432d77": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
   "4106471ead931466": {
    "verdict": "ok",
    "note": "y = 3 is a horizontal line (no x-dependence). Snap-lattice points inside -7..7: (0,3), (3,3), (-3,3)."
@@ -16736,6 +16752,10 @@
   },
   "43a9cca373408f44": {
    "verdict": "ok"
+  },
+  "43ad4c46b63d0c1a": {
+   "verdict": "ok",
+   "note": "orchestrator read (prose claim pass, September 6, 2026): model answer corrected from the source solution's 'capsule made of lipopolysaccharides' to outer membrane per m66545; erratum 388, DISCLOSED_DEVIATIONS kind solution; rubric clause updated to match"
   },
   "43af255a837a6bf8": {
    "verdict": "ok",
@@ -20276,6 +20296,14 @@
   },
   "51e978478b341287": {
    "verdict": "ok"
+  },
+  "51eaedba8db6434a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "52002219d24252c3": {
    "verdict": "ok"
@@ -32782,6 +32810,14 @@
   "8690fa956cfa2dfd": {
    "verdict": "ok",
    "note": "KC 7-12 (fillin, line 797): re-derived by the parent from the printed question with exact/numeric computation, independently re-derived by a checker agent, and matched to the printed Answer Key."
+  },
+  "869c48e388bd157a": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
   },
   "86a5b0a4b78337eb": {
    "verdict": "ok",
@@ -58148,6 +58184,14 @@
   "f43853513dd55d20": {
    "verdict": "ok",
    "note": "KC 7 41.1 § body Osmoregulators and Osmoconformers (fs-idm71869712), m66656 — parent re-read against the module",
+   "solved": {
+    "by": "orchestrator",
+    "result": "agrees"
+   }
+  },
+  "f43b789470df49dc": {
+   "verdict": "ok",
+   "note": "orchestrator solve (solve-check.mjs)",
    "solved": {
     "by": "orchestrator",
     "result": "agrees"
